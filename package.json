@@ -1,0 +1,12 @@
+{
+  "name": "vedomostni-hry-kviz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vědomostní kvízová hra (zeměpis) — otázky, fondy, export balíčků",
+  "scripts": {
+    "import-questions": "node scripts/import-questions.js",
+    "import-images": "node scripts/import-images.js",
+    "import-audio": "node scripts/import-audio.js",
+    "export-deck": "node scripts/export-deck.js"
+  }
+}

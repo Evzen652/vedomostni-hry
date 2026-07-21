@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Vědomostní hra — poznávej země světa</title>
+<meta name="description" content="Vědomostní párty hra o zemích světa — sólo, párty i školní režim, s hláškami a hlasem.">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div id="quiz-root">
+    <div class="qz-shell" id="qz-shell">
+      <button class="qz-close" id="qz-close" title="Domů (úvodní stránka)">×</button>
+      <div class="qz-host" id="qz-host">
+        <div class="qz-host-av" id="qz-host-av"><img src="assets/logo.jpg" alt="Hostitel — sova"></div>
+        <div class="qz-host-bubble" id="qz-host-bubble">Vítej, cestovateli!</div>
+      </div>
+      <div id="qz-body" style="display:flex;flex-direction:column;flex:1"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

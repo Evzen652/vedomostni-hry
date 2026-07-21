@@ -1,0 +1,283 @@
+/* ===================== VĚDOMOSTNÍ HRA — malovaný svět =====================
+   Samostatná appka (hra.html). Sdílí s glóbem jen data (localStorage), ne kód. */
+@font-face{ font-family:'Nunito'; font-style:normal; font-weight:200 1000; font-display:swap;
+  src:url('assets/fonts/nunito-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Nunito'; font-style:normal; font-weight:200 1000; font-display:swap;
+  src:url('assets/fonts/nunito-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+#quiz-root {
+  --paper:#f7efe0; --paper2:#fffaf0; --ink:#3d3229; --muted:#8a7a66;
+  --teal:#2a7f7f; --coral:#e2725b; --ochre:#d9a441; --leaf:#7ba05b; --ok:#4e9e6f; --bad:#cf5f4e;
+  position: fixed; inset: 0; z-index: 50; overflow-y: auto;
+  background: radial-gradient(1200px 600px at 30% -10%, #fdf7ea 0%, transparent 60%), #efe4cf;
+  color: var(--ink); font-family: 'Nunito', system-ui, sans-serif;
+  display: flex; flex-direction: column; align-items: center; padding: 20px 12px 40px;
+}
+#quiz-root.qz-hidden, .qz-hidden { display: none !important; }
+.qz-shell {
+  width: min(980px, 96vw); position: relative; border-radius: 26px; overflow: hidden;
+  background: radial-gradient(1200px 500px at 20% -10%, #fdf7ea 0%, transparent 60%), var(--paper);
+  border: 2px solid #d8c9ad; box-shadow: 0 22px 54px rgba(90,70,40,.28), inset 0 0 0 6px #fffdf6;
+  min-height: 560px; display: flex; flex-direction: column;
+}
+.qz-shell::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.5;
+  background: repeating-linear-gradient(0deg, rgba(160,130,90,.028) 0 2px, transparent 2px 5px),
+              repeating-linear-gradient(90deg, rgba(160,130,90,.02) 0 3px, transparent 3px 7px); }
+.qz-close {
+  position: absolute; top: 12px; right: 14px; z-index: 8; width: 34px; height: 34px; border-radius: 50%;
+  border: 1.6px solid #d8c9ad; background: var(--paper2); color: var(--ink); font-size: 18px; cursor: pointer;
+  box-shadow: 0 2px 0 #d8c9ad;
+}
+
+/* postava hostitele */
+.qz-host { position: absolute; left: 14px; top: 12px; z-index: 8; display: flex; align-items: center; gap: 10px; max-width: 60%; }
+.qz-host-av { width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0; border: 2.5px solid #fffdf6; outline: 2px solid #d8c9ad;
+  background: radial-gradient(circle at 40% 34%, #f6d789, #d9a441 70%); display: flex; align-items: center; justify-content: center; font-size: 24px;
+  box-shadow: 0 6px 14px rgba(120,90,40,.3); overflow: hidden; }
+.qz-host-av img { width: 100%; height: 100%; object-fit: cover; }
+.qz-host-bubble { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 14px 14px 14px 4px;
+  padding: 7px 12px; font-size: 12.5px; font-style: italic; color: var(--muted); box-shadow: 0 3px 0 #e3d5b8; }
+
+.qz-screen { display: flex; flex-direction: column; flex: 1; }
+
+/* ---- start ---- */
+.qz-start { align-items: center; justify-content: center; text-align: center; gap: 16px; padding: 40px 24px; }
+.qz-start h2 { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 650; }
+.qz-start p { color: var(--muted); font-size: 14px; max-width: 460px; }
+.qz-bands { display: flex; gap: 10px; }
+.qz-chip { background: var(--paper2); border: 1.6px solid #d8c9ad; border-radius: 20px; font-size: 13px; padding: 8px 18px;
+  color: var(--ink); cursor: pointer; box-shadow: 0 2px 0 #d8c9ad; font-family: inherit; }
+.qz-chip.on { background: var(--teal); border-color: var(--teal); color: #fffdf6; box-shadow: 0 2px 0 #1f5f5c; }
+.qz-go { background: var(--coral); color: #fffdf6; font-family: 'Nunito', sans-serif; font-size: 19px; font-weight: 650;
+  border: none; border-radius: 16px; padding: 14px 40px; cursor: pointer; box-shadow: 0 4px 0 #b1543f, 0 10px 24px rgba(226,114,91,.35); }
+
+/* ---- play ---- */
+.qz-play { position: relative; padding-bottom: 16px; }
+.qz-top { display: flex; gap: 8px; padding: 14px 16px 0; position: relative; z-index: 2; align-items: center; flex-wrap: wrap; }
+.qz-progress { font-family: 'Nunito', sans-serif; font-size: 13px; color: var(--muted); }
+.qz-scorepill { margin-left: auto; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px;
+  padding: 6px 14px; font-family: 'Nunito', sans-serif; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; display: flex; gap: 8px; align-items: center; }
+.qz-scorepill b { font-size: 17px; }
+.qz-streak { color: var(--ochre); font-size: 12px; font-weight: 700; }
+
+.qz-picframe { position: relative; margin: 12px 16px 0; height: 280px; border-radius: 18px; overflow: hidden;
+  border: 3px solid #fffdf6; outline: 2px solid #d8c9ad; box-shadow: 0 10px 26px rgba(120,90,50,.28);
+  transition: height .35s ease, filter .35s ease; }
+.qz-picframe.small { height: 140px; filter: saturate(.7) brightness(.94); }
+.qz-pic { width: 100%; height: 100%; object-fit: cover; display: block; }
+.qz-pic-fallback { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  background: linear-gradient(160deg, #f4d9a6 0%, #e6b98a 55%, #cf9f77 100%); }
+.qz-pic-fallback .flag { font-size: 68px; filter: drop-shadow(0 4px 6px rgba(0,0,0,.2)); }
+.qz-pic-fallback .sec { font-family: 'Nunito', sans-serif; font-style: italic; font-size: 16px; color: #6b5030; }
+.qz-pictag { position: absolute; left: 12px; bottom: 10px; z-index: 2; background: rgba(255,250,240,.94); border: 1.4px solid #dccdb0;
+  border-radius: 12px 4px 12px 4px; font-size: 11px; font-style: italic; color: var(--muted); padding: 4px 11px; }
+
+/* medailonek glóbu (malovaný) */
+.qz-medal { position: absolute; right: 24px; z-index: 6; width: 132px; height: 132px; border-radius: 50%; overflow: hidden;
+  top: 218px; transition: top .35s ease, width .35s ease, height .35s ease;
+  background: radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
+  border: 3px solid #fffdf6; outline: 2px solid #d8c9ad;
+  box-shadow: inset -10px -8px 20px rgba(20,60,55,.35), 0 10px 22px rgba(60,90,80,.35); }
+.qz-picframe.small ~ .qz-medal { top: 88px; width: 108px; height: 108px; }
+.qz-medal .land { position: absolute; background: #a9bf77; border-radius: 52% 48% 60% 40%/58% 46% 54% 42%;
+  box-shadow: inset -3px -4px 8px rgba(90,110,50,.45); }
+.qz-medal .land.a { width: 34%; height: 24%; left: 12%; top: 26%; transform: rotate(-10deg); }
+.qz-medal .land.b { width: 46%; height: 30%; left: 40%; top: 18%; background: var(--coral);
+  box-shadow: inset -3px -4px 8px rgba(150,50,30,.4), 0 0 0 3px #fffdf6, 0 0 18px rgba(226,114,91,.5); }
+.qz-medalcap { position: absolute; right: 20px; z-index: 6; width: 140px; text-align: center; top: 356px;
+  font-family: 'Nunito', sans-serif; font-style: italic; font-size: 12px; color: var(--muted); transition: top .35s ease; }
+.qz-picframe.small ~ .qz-medalcap { top: 202px; }
+
+.qz-box { margin: 14px 16px 2px; position: relative; z-index: 2; background: var(--paper2);
+  border: 2px solid #dccdb0; border-radius: 20px; padding: 18px 20px; box-shadow: 0 5px 0 #e3d5b8, 0 16px 34px rgba(120,90,50,.18);
+  display: flex; flex-direction: column; gap: 12px; }
+.qz-meta { display: flex; align-items: center; gap: 10px; font-size: 11.5px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+.qz-q { font-family: 'Nunito', sans-serif; font-size: clamp(19px, 2.5vw, 25px); font-weight: 650; line-height: 1.3; }
+.qz-quip { font-style: italic; color: var(--muted); font-size: 14px; margin-top: -6px; }
+.qz-ans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.qz-ans.two { grid-template-columns: 1fr 1fr; }
+.qz-a { background: #fff; border: 1.8px solid #dccdb0; border-radius: 14px; text-align: center; padding: 14px 8px 12px;
+  font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; cursor: pointer; position: relative;
+  transition: transform .1s, box-shadow .1s; color: var(--ink); }
+.qz-a:hover:not(.locked) { transform: translateY(-2px); box-shadow: 0 5px 0 #e3d5b8; }
+.qz-a small { display: block; font-family: 'Nunito', sans-serif; font-size: 10px; color: var(--muted); font-weight: 600; letter-spacing: .06em; margin-top: 3px; }
+.qz-a.locked { cursor: default; }
+.qz-a.ok { border-color: var(--ok); background: #eef6ee; box-shadow: 0 3px 0 var(--ok); }
+.qz-a.ok small { color: var(--ok); }
+.qz-a.bad { border-color: var(--bad); background: #fbeeec; box-shadow: 0 3px 0 var(--bad); }
+.qz-a.bad small { color: var(--bad); }
+.qz-a.dim { opacity: .5; }
+
+/* estimate vstup */
+.qz-est { display: flex; gap: 10px; align-items: center; }
+.qz-est input { flex: 1; font-family: 'Nunito', sans-serif; font-size: 22px; padding: 12px 14px; border-radius: 14px;
+  border: 1.8px solid #dccdb0; background: #fff; color: var(--ink); text-align: center; }
+.qz-est .unit { font-family: 'Nunito', sans-serif; color: var(--muted); font-size: 16px; }
+.qz-est button { background: var(--teal); color: #fffdf6; border: none; border-radius: 14px; padding: 12px 22px;
+  font-family: 'Nunito', sans-serif; font-weight: 650; font-size: 16px; cursor: pointer; box-shadow: 0 4px 0 #1f5f5c; }
+.qz-estline { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-top: 4px; }
+.qz-estline b { color: var(--ink); font-size: 16px; }
+
+/* hláška (hvězda revealu) */
+.qz-hlaska { background: linear-gradient(135deg, #fdf3d7, #fbe9d2); border: 2px solid var(--ochre); border-radius: 16px;
+  padding: 14px 18px; box-shadow: 0 4px 0 #c78f35; }
+.qz-hlaska.gold { border-color: #e6b800; background: linear-gradient(135deg, #fff2b0, #ffe07a); box-shadow: 0 4px 0 #c79a00; }
+.qz-hl { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #a8752a; margin-bottom: 5px; font-family: 'Nunito', sans-serif; font-weight: 700; }
+.qz-ht { font-family: 'Nunito', sans-serif; font-size: clamp(16px, 2.1vw, 20px); line-height: 1.45; font-weight: 560; }
+.qz-frow { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.qz-expl { font-size: 12.5px; color: var(--muted); flex: 1; min-width: 200px; }
+.qz-expl a { color: var(--teal); text-decoration: none; font-weight: 600; }
+.qz-more { background: none; border: 1.5px solid var(--teal); color: var(--teal); border-radius: 10px; padding: 5px 12px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.qz-next { background: var(--teal); color: #fffdf6; font-family: 'Nunito', sans-serif; font-weight: 650; border: none;
+  border-radius: 13px; padding: 11px 26px; font-size: 15px; cursor: pointer; box-shadow: 0 4px 0 #1f5f5c; }
+
+/* zlatý blik */
+.qz-goldflash { position: absolute; inset: 0; z-index: 20; pointer-events: none; background: radial-gradient(circle, rgba(255,215,0,.55), transparent 70%);
+  animation: qzGold .9s ease-out forwards; }
+@keyframes qzGold { 0% { opacity: 0; } 20% { opacity: 1; } 100% { opacity: 0; } }
+
+/* karta „Víc o tom" */
+.qz-cardov { position: absolute; inset: 0; z-index: 12; background: rgba(61,50,41,.55); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.qz-cardbox { width: min(440px, 94%); max-height: 88%; overflow-y: auto; background: var(--paper2); border-radius: 18px; border: 2px solid #dccdb0;
+  box-shadow: 0 20px 50px rgba(0,0,0,.4); }
+.qz-cardimg { width: 100%; height: 170px; object-fit: cover; background: linear-gradient(160deg,#f4d9a6,#cf9f77); display: block; }
+.qz-cardbody { padding: 16px 18px 18px; }
+.qz-cardbody h3 { font-family: 'Nunito', sans-serif; font-size: 19px; margin-bottom: 8px; }
+.qz-cardbody p { font-size: 14px; line-height: 1.5; color: var(--ink); }
+.qz-cardvoice { font-family: 'Nunito', sans-serif; font-style: italic; color: var(--muted); margin-top: 10px; }
+.qz-cardclose { margin-top: 14px; background: var(--coral); color: #fffdf6; border: none; border-radius: 12px; padding: 10px 20px;
+  font-family: 'Nunito', sans-serif; font-weight: 650; cursor: pointer; box-shadow: 0 3px 0 #b1543f; }
+
+/* konec sóla */
+.qz-end { align-items: center; justify-content: center; text-align: center; gap: 16px; padding: 46px 24px; }
+.qz-end h2 { font-family: 'Nunito', sans-serif; font-size: 30px; }
+.qz-endscore { font-family: 'Nunito', sans-serif; font-size: 52px; font-weight: 700; color: var(--coral); }
+.qz-endrow { display: flex; gap: 12px; }
+
+@media (max-width: 767px) {
+  .qz-ans { grid-template-columns: 1fr 1fr; }
+  .qz-picframe { height: 210px; }
+  .qz-medal { width: 96px; height: 96px; top: 170px; right: 16px; }
+  .qz-host { max-width: 52%; }
+  .qz-host-bubble { display: none; }
+}
+
+/* výběr režimu / setup párty / scoreboard / steal / ceremoniál */
+.qz-shell { transition: transform .4s ease; }
+.qz-modepick { align-items: center; justify-content: center; text-align: center; gap: 18px; padding: 44px 24px; }
+.qz-modepick h2 { font-family: 'Nunito', sans-serif; font-size: 30px; }
+.qz-modes { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.qz-mode { width: 220px; background: var(--paper2); border: 2px solid #dccdb0; border-radius: 18px; padding: 22px 18px; cursor: pointer;
+  box-shadow: 0 4px 0 #e3d5b8; font-family: inherit; text-align: center; transition: transform .12s, box-shadow .12s; }
+.qz-mode:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; }
+.qz-mode .ic { display: flex; align-items: center; justify-content: center; margin-bottom: 6px; }
+.qz-mode .ic-img { width: 96px; height: 96px; object-fit: cover; border-radius: 14px; border: 3px solid #fffdf6; outline: 2px solid #e3d5b8;
+  box-shadow: 0 5px 14px rgba(120,90,50,.28); display: block; transition: transform .15s; }
+.qz-mode:hover .ic-img { transform: translateY(-2px) rotate(-1.5deg); }
+.qz-mode .ic-fb { align-items: center; justify-content: center; }
+.qz-mode .ic svg { width: 58px; height: 58px; display: block; filter: drop-shadow(0 3px 4px rgba(120,90,50,.22)); }
+.qz-mode:hover .ic svg { transform: translateY(-1px) rotate(-2deg); transition: transform .15s; }
+.qz-mode .t { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 650; margin: 6px 0 4px; }
+.qz-mode .d { font-size: 12.5px; color: var(--muted); }
+/* úvodní obrazovka: velký točící se glóbus za kartami režimů */
+.qz-modepick { position: relative; }
+.qz-globebg { position: absolute; inset: 0; margin: auto; width: min(500px, 78%); height: min(500px, 78%);
+  border-radius: 50%; overflow: hidden; opacity: .28; pointer-events: none; z-index: 0;
+  box-shadow: inset -18px -14px 40px rgba(20,50,60,.35); }
+.qz-globebg canvas { width: 100% !important; height: 100% !important; display: block; }
+.qz-modepick h2, .qz-modes, .qz-resume { position: relative; z-index: 1; }
+
+/* výběr tématu: kontinent → země → sekce */
+.qz-pick { align-items: center; text-align: center; gap: 16px; padding: 26px 22px 36px; }
+.qz-pick h2 { font-family: 'Nunito', sans-serif; font-size: 26px; font-weight: 800; }
+.qz-pickhead { width: 100%; max-width: 760px; display: flex; align-items: center; gap: 12px; }
+.qz-back { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 12px; padding: 7px 14px; cursor: pointer;
+  font-family: inherit; font-size: 13px; font-weight: 700; color: var(--ink); box-shadow: 0 3px 0 #e3d5b8; }
+.qz-back:hover { transform: translateY(-1px); }
+.qz-crumbs { font-size: 13px; color: var(--muted); font-weight: 600; }
+.qz-crumbs b { color: var(--teal); }
+.qz-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; width: 100%; max-width: 760px; }
+.qz-tile { position: relative; background: var(--paper2); border: 2px solid #dccdb0; border-radius: 16px; padding: 18px 12px 14px; cursor: pointer;
+  box-shadow: 0 4px 0 #e3d5b8; font-family: inherit; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  transition: transform .12s, box-shadow .12s; color: var(--ink); }
+.qz-tile:hover:not(.soon) { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; border-color: var(--teal); }
+.qz-tile-ic { font-size: 40px; line-height: 1; margin-bottom: 2px; }
+.qz-tile-t { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; }
+.qz-tile-sub { font-size: 12px; color: var(--muted); font-weight: 600; }
+.qz-tile.soon { opacity: .55; cursor: not-allowed; box-shadow: 0 4px 0 #e8ddc6; }
+.qz-tile.soon .qz-tile-ic { filter: grayscale(.5); }
+.qz-tbadge { position: absolute; top: 8px; right: 8px; background: var(--ochre); color: #fffdf6; font-size: 9px; font-weight: 800;
+  letter-spacing: .06em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; box-shadow: 0 2px 5px rgba(0,0,0,.2); }
+.qz-pick-empty { grid-column: 1 / -1; color: var(--muted); font-size: 14px; padding: 26px; }
+
+.qz-setup { padding: 20px 22px; gap: 12px; overflow-y: auto; }
+.qz-setup h2 { font-family: 'Nunito', sans-serif; font-size: 24px; text-align: center; margin-bottom: 2px; }
+.qz-setcard { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 14px; padding: 12px 14px; box-shadow: 0 3px 0 #e3d5b8; }
+.qz-setcard h3 { font-family: 'Nunito', sans-serif; font-size: 15px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.qz-setcard h3 .n { width: 22px; height: 22px; border-radius: 50%; background: var(--ochre); color: #fffdf6; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; }
+.qz-prow { display: flex; align-items: center; gap: 8px; padding: 5px 0; flex-wrap: wrap; }
+.qz-pav { width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fffdf6; font-size: 13px; flex-shrink: 0; box-shadow: inset -2px -3px 5px rgba(0,0,0,.2); }
+.qz-pname-in { flex: 1; min-width: 90px; font-family: inherit; font-size: 14px; padding: 6px 10px; border-radius: 9px; border: 1.4px solid #dccdb0; background: #fff; color: var(--ink); }
+.qz-page-in { width: 58px; font-family: inherit; font-size: 13px; padding: 6px 8px; border-radius: 9px; border: 1.4px solid #dccdb0; background: #fff; color: var(--ink); text-align: center; }
+.qz-bandtag { font-size: 11px; color: #fffdf6; border-radius: 12px; padding: 3px 9px; }
+.qz-bandtag.deti { background: var(--leaf); } .qz-bandtag.dospeli { background: var(--teal); }
+.qz-sides { display: flex; gap: 4px; }
+.qz-side { width: 26px; height: 26px; border-radius: 8px; border: 1.4px solid #dccdb0; background: #fff; cursor: pointer; font-size: 13px; color: var(--muted); padding: 0; }
+.qz-side.on { background: var(--coral); border-color: var(--coral); color: #fffdf6; }
+.qz-prem { background: none; border: none; color: var(--bad); cursor: pointer; font-size: 16px; padding: 2px 6px; }
+.qz-addp { color: var(--teal); font-size: 13px; font-weight: 600; cursor: pointer; background: none; border: none; padding: 6px 0 0; font-family: inherit; }
+.qz-setrow { display: flex; gap: 10px; flex-wrap: wrap; }
+.qz-setrow .qz-setcard { flex: 1; min-width: 150px; }
+.qz-opt { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; padding: 3px 0; }
+.qz-sw { width: 44px; height: 24px; border-radius: 14px; background: #cdbfa2; position: relative; transition: background .15s; flex-shrink: 0; }
+.qz-sw.on { background: var(--teal); }
+.qz-sw::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fffdf6; transition: left .15s; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+.qz-sw.on::after { left: 23px; }
+.qz-setnote { font-size: 11.5px; color: var(--muted); font-style: italic; text-align: center; }
+
+.qz-scoreboard { display: flex; gap: 8px; padding: 14px 16px 0; flex-wrap: wrap; position: relative; z-index: 3; }
+.qz-pl { flex: 1; min-width: 120px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px; padding: 7px 10px;
+  display: flex; align-items: center; gap: 8px; opacity: .72; box-shadow: 0 3px 0 #e3d5b8; cursor: pointer; font-family: inherit; color: var(--ink); }
+.qz-pl.active { opacity: 1; border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); }
+.qz-plmeta { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
+.qz-plname { font-size: 13px; font-weight: 650; }
+.qz-plturn { font-size: 10px; color: var(--coral); font-weight: 700; }
+.qz-plscore { margin-left: auto; font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; }
+.qz-subtop { display: flex; align-items: center; gap: 10px; padding: 8px 16px 0; position: relative; z-index: 3; }
+.qz-mute { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 10px; padding: 5px 10px; cursor: pointer; font-size: 15px; box-shadow: 0 2px 0 #e3d5b8; }
+
+.qz-steal { border-top: 1.5px dashed #cdbfa2; margin-top: 4px; padding-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+
+.qz-standings { display: flex; flex-direction: column; gap: 8px; width: min(520px, 92%); }
+.qz-standrow { display: flex; align-items: center; gap: 10px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 12px; padding: 8px 12px; box-shadow: 0 3px 0 #e3d5b8; }
+.qz-standrow.win { border-color: var(--ochre); box-shadow: 0 3px 0 var(--ochre); }
+.qz-rank { font-size: 18px; width: 30px; text-align: center; }
+.qz-standname { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; }
+.qz-standscore { margin-left: auto; font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 700; }
+.qz-masternote { background: linear-gradient(135deg, #fff2b0, #ffe07a); border: 2px solid #e6b800; border-radius: 12px;
+  padding: 9px 14px; font-size: 13.5px; color: #6b5300; box-shadow: 0 3px 0 #c79a00; text-align: center; }
+
+/* režim Škola / projektor — velké písmo na plátno */
+.qz-school .qz-q { font-size: clamp(26px, 4vw, 40px); line-height: 1.25; }
+.qz-school .qz-quip { font-size: 18px; }
+.qz-school .qz-a { font-size: clamp(20px, 2.6vw, 26px); padding: 20px 10px 18px; }
+.qz-school .qz-ht { font-size: clamp(20px, 2.6vw, 28px); }
+.qz-school .qz-meta { font-size: 14px; }
+.qz-school .qz-picframe { height: clamp(280px, 40vh, 380px); }
+.qz-school .qz-est input { font-size: 30px; }
+
+/* časomíra + rozehrané výpravy */
+.qz-timerbar { height: 8px; border-radius: 5px; background: #e7dcc2; overflow: hidden; margin-bottom: 6px; }
+.qz-timerbar > div { height: 100%; width: 100%; background: linear-gradient(90deg, var(--leaf), var(--ochre), var(--coral)); }
+.qz-resume { margin-top: 18px; width: min(520px, 94%); text-align: left; }
+.qz-resume-h { font-family: 'Nunito', sans-serif; font-size: 15px; color: var(--muted); margin-bottom: 8px; }
+.qz-resume-item { display: flex; align-items: center; gap: 10px; width: 100%; background: var(--paper2); border: 1.6px solid #dccdb0;
+  border-radius: 12px; padding: 8px 12px; box-shadow: 0 3px 0 #e3d5b8; cursor: pointer; margin-bottom: 8px; font-family: inherit; color: var(--ink); }
+.qz-resume-faces { display: flex; }
+.qz-face { width: 24px; height: 24px; border-radius: 50%; color: #fffdf6; font-size: 12px; display: inline-flex; align-items: center;
+  justify-content: center; margin-right: -6px; border: 2px solid var(--paper2); }
+.qz-resume-meta { flex: 1; font-size: 13px; }
+.qz-resume-del { margin-left: auto; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 15px; padding: 2px 6px; }
+.qz-resume-del:hover { color: var(--bad); }

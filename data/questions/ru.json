@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ru-q-hlavni-mesto",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Místa",
+    "difficulty": 1,
+    "type": "choice",
+    "question": "Které město je hlavním městem Ruska?",
+    "quip_question": "Rozjezd zlehka — ať se nikdo nespálí hned na startu.",
+    "answer": "Moskva",
+    "distractors": [
+      "Petrohrad",
+      "Novosibirsk",
+      "Jekatěrinburg"
+    ],
+    "quip_correct": "Moskva, jasně. Tenhle rozjezd byl jen na rozehřátí prstů.",
+    "quip_wrong": {
+      "deti": "Ouha! Je to Moskva. Ale nic si z toho nedělej — aspoň víš, kam se podívat příště.",
+      "dospeli": "Moskva. Ale oceňuju, s jakou jistotou sis vybral něco jiného."
+    },
+    "distractor_quips": {
+      "Petrohrad": "Petrohrad — krásné město, špatná odpověď. Klasika všech kvízů."
+    },
+    "explanation": "Hlavním městem Ruska je Moskva, zároveň největší město země.",
+    "source_url": "https://en.wikipedia.org/wiki/Moscow",
+    "source_card": "ru-mista-transsib",
+    "image_prompt": "Fotorealistický snímek panoramatu Moskvy za soumraku od řeky, rozsvícená historická věžovitá silueta v dálce, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+  },
+  {
+    "id": "ru-q-pasma",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Lidé",
+    "difficulty": 1,
+    "type": "choice",
+    "question": "Kolika časovými pásmy se rozkládá Rusko?",
+    "quip_question": "Malá nápověda: víc, než kolik jich zvládneš prospat.",
+    "answer": "11",
+    "distractors": [
+      "3",
+      "7",
+      "24"
+    ],
+    "quip_correct": {
+      "deti": "Jedenáct! Když v Moskvě snídají, na druhém konci už jdou spát.",
+      "dospeli": "Jedenáct. Jeden stát — a přesto v něm věčně někde svítá i stmívá."
+    },
+    "quip_wrong": "Vedle — je jich jedenáct. Rusko je prostě větší, než se vejde do hlavy.",
+    "golden_wrong": "24",
+    "golden_quip": "24?! To by měl každý poledník vlastní budík. Tahle drzost se dnes výjimečně odměňuje — body máš!",
+    "distractor_quips": {
+      "3": {
+        "deti": "Tři? To by musela být zemička jako dlaň!",
+        "dospeli": "Tři? To je tak akorát na jednu širší Evropu."
+      }
+    },
+    "explanation": "Rusko má 11 časových pásem (UTC+2 až UTC+12) — nejvíc ze všech zemí na jednom souvislém území.",
+    "source_url": "https://en.wikipedia.org/wiki/Time_in_Russia",
+    "source_card": "ru-lide-pasma",
+    "image_prompt": "Fotorealistický snímek východu slunce nad zasněženou sibiřskou tajgou, dlouhé stíny stromů, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+  },
+  {
+    "id": "ru-q-bajkal-nej",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Příroda",
+    "difficulty": 2,
+    "type": "choice",
+    "question": "Které jezero je nejhlubší na světě?",
+    "quip_question": "Pozor — chyták by se tu utopil.",
+    "answer": "Bajkal",
+    "distractors": [
+      "Kaspické moře",
+      "Tanganika",
+      "Viktoriino jezero"
+    ],
+    "quip_correct": "Bajkal! Prasklina do planety, až po okraj plná křišťálové vody.",
+    "quip_wrong": {
+      "deti": "Je to Bajkal — tak hluboký, že by se do něj schovala celá hora.",
+      "dospeli": "Bajkal. Sibiřská liga — tam se ostatní jezera jezdí jen dívat."
+    },
+    "distractor_quips": {
+      "Kaspické moře": "Kaspické? To se ještě ani nerozhodlo, jestli je jezero, nebo moře."
+    },
+    "explanation": "Bajkal na Sibiři je s hloubkou 1 642 m nejhlubší jezero světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
+    "source_card": "ru-priroda-bajkal",
+    "image_prompt": "Fotorealistický snímek jezera Bajkal v zimě, průzračný modrý led s prasklinami, hory na obzoru, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+  },
+  {
+    "id": "ru-q-elbrus",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Příroda",
+    "difficulty": 2,
+    "type": "choice",
+    "question": "Jak se jmenuje nejvyšší hora Ruska?",
+    "answer": "Elbrus",
+    "distractors": [
+      "Kazbek",
+      "Belucha",
+      "Narodnaja"
+    ],
+    "quip_correct": "Elbrus! Výš už se v Rusku dostaneš jen letadlem.",
+    "quip_wrong": "Elbrus. Ty ostatní jsou taky pořádné hory — jen jim chybí pár pater.",
+    "explanation": "Elbrus na Kavkaze měří 5 642 m; je nejvyšší horou Ruska a bývá počítán i za nejvyšší horu Evropy.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Elbrus",
+    "image_prompt": "Fotorealistický snímek zasněženého dvouvrcholového masivu na Kavkaze za jasného rána, alpské louky v popředí, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+  },
+  {
+    "id": "ru-q-transsib-cil",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Místa",
+    "difficulty": 2,
+    "type": "choice",
+    "question": "Ve kterém městě končí Transsibiřská magistrála vedoucí z Moskvy?",
+    "quip_question": "Nápověda od průvodce: sbal si na hóóódně dlouhou cestu.",
+    "answer": "Vladivostok",
+    "distractors": [
+      "Irkutsk",
+      "Magadan",
+      "Novosibirsk"
+    ],
+    "quip_correct": "Vladivostok! Konečná, prosím vystupovat — po týdnu ve vlaku.",
+    "quip_wrong": {
+      "deti": "Vladivostok — až úplně na konci, u moře!",
+      "dospeli": "Vladivostok. Ta ostatní města jsou jen zastávky na protažení nohou."
+    },
+    "explanation": "Transsibiřská magistrála vede z Moskvy do Vladivostoku u Japonského moře a měří 9 288 km.",
+    "source_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
+    "source_card": "ru-mista-transsib",
+    "image_prompt": "Fotorealistický snímek dálkového vlaku projíždějícího podzimní sibiřskou tajgou, zlaté modříny, mlha nad krajinou, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+  },
+  {
+    "id": "ru-q-kaliningrad",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Historie",
+    "difficulty": 3,
+    "type": "choice",
+    "question": "Mezi kterými státy leží ruská exkláva Kaliningrad?",
+    "answer": "Polsko a Litva",
+    "distractors": [
+      "Finsko a Estonsko",
+      "Ukrajina a Bělorusko",
+      "Lotyšsko a Estonsko"
+    ],
+    "quip_correct": "Přesně — kousek Ruska zaklíněný v Evropě jak zatoulaný dílek puzzle.",
+    "quip_wrong": "Polsko a Litva. Zeměpisný chyták, co potrápí i mapové nadšence.",
+    "explanation": "Kaliningradská oblast je od zbytku Ruska oddělená a sousedí s Polskem a Litvou; do roku 1945 šlo o německý Königsberg.",
+    "source_url": "https://en.wikipedia.org/wiki/Kaliningrad",
+    "source_card": "ru-historie-kaliningrad",
+    "image_prompt": "Fotorealistický snímek baltského pobřeží s dunami a klidným mořem za podvečerního světla, kousky jantaru na písku v popředí, bez textu, bez lidí v popředí, 16:9"
+  },
+  {
+    "id": "ru-q-volha",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Příroda",
+    "difficulty": 3,
+    "type": "choice",
+    "question": "Která řeka je nejdelší v Evropě?",
+    "answer": "Volha",
+    "distractors": [
+      "Dunaj",
+      "Dněpr",
+      "Rýn"
+    ],
+    "quip_correct": "Volha! Matka ruských řek — a královna těch evropských.",
+    "quip_wrong": {
+      "deti": "Je to Volha! Dunaj je slavnější, ale na délku nestačí.",
+      "dospeli": "Volha. Dunaj má lepší PR, ale metr nelže."
+    },
+    "explanation": "Volha měří přibližně 3 530 km a je nejdelší řekou Evropy; celý její tok leží v Rusku.",
+    "source_url": "https://en.wikipedia.org/wiki/Volga",
+    "image_prompt": "Fotorealistický letecký snímek široké majestátní řeky vinoucí se letní rovinatou krajinou s lesy a písčinami, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+  },
+  {
+    "id": "ru-q-pelmene",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "type": "choice",
+    "question": "Co jsou ruské pelmeně?",
+    "quip_question": "Otázka, po které dostaneš hlad. Za to neručíme.",
+    "answer": "Vařené taštičky plněné masem",
+    "distractors": [
+      "Studená polévka z červené řepy",
+      "Sladký smažený koblížek",
+      "Nápoj z kyselého mléka"
+    ],
+    "quip_correct": "Mňam, přesně tak. A teď se celý stůl těší na večeři.",
+    "quip_wrong": {
+      "deti": "Jsou to taštičky s masem — něco jako naše plněné knedlíčky!",
+      "dospeli": "Taštičky s masem. Ale chápu — po tomhle kvízu už zní dobře všechno."
+    },
+    "explanation": "Pelmeně jsou vařené taštičky z těsta plněné mletým masem, klasika ruské kuchyně.",
+    "source_url": "https://en.wikipedia.org/wiki/Pelmeni",
+    "source_card": "ru-jidlo-pelmene",
+    "image_prompt": "Fotorealistický snímek misky kouřících pelmeňů se zakysanou smetanou a koprem na dřevěném stole, měkké teplé světlo, bez textu, bez lidí, 16:9"
+  },
+  {
+    "id": "ru-q-metro",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Místa",
+    "difficulty": 2,
+    "type": "choice",
+    "question": "Čím je proslulé moskevské metro?",
+    "answer": "Stanicemi zdobenými jako paláce",
+    "distractors": [
+      "Jízdou úplně bez řidičů",
+      "Tím, že vede celé nad zemí",
+      "Nejmenšími vagóny na světě"
+    ],
+    "quip_correct": "Ano! Jedeš do práce a projíždíš plesovým sálem.",
+    "quip_wrong": "Paláce pod zemí — mramor, lustry, mozaiky. Jiný svět, jen o patro níž.",
+    "explanation": "Řada stanic moskevského metra je zdobena mramorem, mozaikami a lustry; nejslavnější pocházejí ze sovětské éry.",
+    "source_url": "https://en.wikipedia.org/wiki/Moscow_Metro",
+    "image_prompt": "IKONICKÁ PAMÁTKA — zvaž skutečnou fotku. Jinak: fotorealistický ilustrativní snímek honosné podzemní haly metra s mramorovými sloupy, mozaikami a lustry, teplé světlo, bez textu, bez lidí, 16:9"
+  },
+  {
+    "id": "ru-q-bajkal-hloubka",
+    "cc": "ru",
+    "country": "Rusko",
+    "section": "Příroda",
+    "difficulty": 2,
+    "type": "estimate",
+    "question": "Jak hluboký je Bajkal v nejhlubším místě? (v metrech)",
+    "quip_question": "Tipuj směle — dolů je to daleko.",
+    "numeric_answer": 1642,
+    "unit": "metrů",
+    "quip_correct": "Trefa jak od sonaru! Bajkalu bys mohl dělat hloubkoměr.",
+    "quip_wrong": "S tímhle tipem bys nedosáhl ani na dno bazénu.",
+    "explanation": "Bajkal měří v nejhlubším místě 1 642 m — víc než kterékoli jiné jezero na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
+    "source_card": "ru-priroda-bajkal",
+    "image_prompt": "Fotorealistický snímek pohledu z útesu na temně modrou hladinu obrovského jezera mizícího za obzorem, skály v popředí, přirozené světlo, bez textu, bez lidí, 16:9"
+  }
+]

@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="cs"><head><meta charset="UTF-8">
+<title>Balíček karet — Rusko</title>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<style>
+  @font-face{ font-family:'Nunito'; font-style:normal; font-weight:200 1000; font-display:swap;
+    src:url('../assets/fonts/nunito-latin-ext.woff2') format('woff2');
+    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+  @font-face{ font-family:'Nunito'; font-style:normal; font-weight:200 1000; font-display:swap;
+    src:url('../assets/fonts/nunito-latin.woff2') format('woff2');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @page { size: A4; margin: 8mm; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Nunito', sans-serif; color: #2a2018; margin: 0; }
+  .note { padding: 10px 14px; font-family: 'Nunito', sans-serif; font-size: 12px; color: #555; background: #fbf3df; }
+  .page { display: grid; grid-template-columns: repeat(3, 63mm); grid-auto-rows: 88mm; gap: 0; page-break-after: always; }
+  .card { width: 63mm; height: 88mm; border: 1px dashed #bbb; padding: 5mm; overflow: hidden; display: flex; flex-direction: column; }
+  .ch { display: flex; justify-content: space-between; font-family: 'Nunito', sans-serif; font-size: 8pt; color: #a08a5e; text-transform: uppercase; letter-spacing: .06em; }
+  .q { font-size: 12pt; font-weight: 700; line-height: 1.25; margin: 3mm 0 2mm; }
+  .qq { font-size: 9pt; font-style: italic; color: #7a6a52; margin-bottom: 2mm; }
+  .opts { margin-top: auto; display: flex; flex-direction: column; gap: 1.4mm; }
+  .opt { font-size: 10pt; border: 1px solid #ddd; border-radius: 2mm; padding: 1.4mm 2mm; }
+  .opt b { color: #c0622f; }
+  .back { background: #fdfaf2; }
+  .ans { font-size: 13pt; font-weight: 700; color: #2a7f4f; margin: 3mm 0 2mm; }
+  .bq { font-size: 10pt; font-style: italic; color: #6b5a3e; margin-bottom: 2mm; }
+  .expl { font-size: 8.5pt; color: #555; line-height: 1.3; }
+  .qrrow { margin-top: auto; display: flex; align-items: center; gap: 2mm; }
+  .qr { width: 18mm; height: 18mm; }
+  .qr img, .qr canvas, .qr table { width: 18mm !important; height: 18mm !important; }
+  .qrcap { font-family: 'Nunito', sans-serif; font-size: 7.5pt; color: #999; }
+  @media print { .note { display: none; } .card { border-color: #ddd; } }
+</style></head><body>
+<div class="note">Balíček „Rusko" · 9 karet (přeskočeno 1 odhadovacích).
+  Tiskni <b>oboustranně, překlopení po delší straně, měřítko 100 %</b>, pak ořízni podle přerušovaných čar. QR míří na: https://TVUJ-WEB/hricka.html#country=ru</div>
+<div class="page"><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#1</span></div>
+      <div class="q">Které město je hlavním městem Ruska?</div>
+      <div class="qq">„Rozjezd zlehka — ať se nikdo nespálí hned na startu."</div>
+      <div class="opts"><div class="opt"><b>A</b> Petrohrad</div><div class="opt"><b>B</b> Jekatěrinburg</div><div class="opt"><b>C</b> Novosibirsk</div><div class="opt"><b>D</b> Moskva</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#2</span></div>
+      <div class="q">Kolika časovými pásmy se rozkládá Rusko?</div>
+      <div class="qq">„Malá nápověda: víc, než kolik jich zvládneš prospat."</div>
+      <div class="opts"><div class="opt"><b>A</b> 3</div><div class="opt"><b>B</b> 7</div><div class="opt"><b>C</b> 24</div><div class="opt"><b>D</b> 11</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#3</span></div>
+      <div class="q">Které jezero je nejhlubší na světě?</div>
+      <div class="qq">„Pozor — chyták by se tu utopil."</div>
+      <div class="opts"><div class="opt"><b>A</b> Tanganika</div><div class="opt"><b>B</b> Viktoriino jezero</div><div class="opt"><b>C</b> Kaspické moře</div><div class="opt"><b>D</b> Bajkal</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#4</span></div>
+      <div class="q">Jak se jmenuje nejvyšší hora Ruska?</div>
+      
+      <div class="opts"><div class="opt"><b>A</b> Kazbek</div><div class="opt"><b>B</b> Belucha</div><div class="opt"><b>C</b> Narodnaja</div><div class="opt"><b>D</b> Elbrus</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#5</span></div>
+      <div class="q">Ve kterém městě končí Transsibiřská magistrála vedoucí z Moskvy?</div>
+      <div class="qq">„Nápověda od průvodce: sbal si na hóóódně dlouhou cestu."</div>
+      <div class="opts"><div class="opt"><b>A</b> Irkutsk</div><div class="opt"><b>B</b> Magadan</div><div class="opt"><b>C</b> Novosibirsk</div><div class="opt"><b>D</b> Vladivostok</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#6</span></div>
+      <div class="q">Mezi kterými státy leží ruská exkláva Kaliningrad?</div>
+      
+      <div class="opts"><div class="opt"><b>A</b> Finsko a Estonsko</div><div class="opt"><b>B</b> Lotyšsko a Estonsko</div><div class="opt"><b>C</b> Ukrajina a Bělorusko</div><div class="opt"><b>D</b> Polsko a Litva</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#7</span></div>
+      <div class="q">Která řeka je nejdelší v Evropě?</div>
+      
+      <div class="opts"><div class="opt"><b>A</b> Dunaj</div><div class="opt"><b>B</b> Dněpr</div><div class="opt"><b>C</b> Rýn</div><div class="opt"><b>D</b> Volha</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#8</span></div>
+      <div class="q">Co jsou ruské pelmeně?</div>
+      <div class="qq">„Otázka, po které dostaneš hlad. Za to neručíme."</div>
+      <div class="opts"><div class="opt"><b>A</b> Studená polévka z červené řepy</div><div class="opt"><b>B</b> Nápoj z kyselého mléka</div><div class="opt"><b>C</b> Sladký smažený koblížek</div><div class="opt"><b>D</b> Vařené taštičky plněné masem</div></div>
+    </div><div class="card front">
+      <div class="ch"><span class="reg">Rusko</span><span class="num">#9</span></div>
+      <div class="q">Čím je proslulé moskevské metro?</div>
+      
+      <div class="opts"><div class="opt"><b>A</b> Jízdou úplně bez řidičů</div><div class="opt"><b>B</b> Nejmenšími vagóny na světě</div><div class="opt"><b>C</b> Tím, že vede celé nad zemí</div><div class="opt"><b>D</b> Stanicemi zdobenými jako paláce</div></div>
+    </div></div>
+<div class="page"><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#3</span></div>
+    <div class="ans">✓ Bajkal</div>
+    <div class="bq">„Bajkal! Prasklina do planety, až po okraj plná křišťálové vody."</div>
+    <div class="expl">Bajkal na Sibiři je s hloubkou 1 642 m nejhlubší jezero světa.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#2</span></div>
+    <div class="ans">✓ 11</div>
+    <div class="bq">„Jedenáct. Jeden stát — a přesto v něm věčně někde svítá i stmívá."</div>
+    <div class="expl">Rusko má 11 časových pásem (UTC+2 až UTC+12) — nejvíc ze všech zemí na jednom souvislém území.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#1</span></div>
+    <div class="ans">✓ Moskva</div>
+    <div class="bq">„Moskva, jasně. Tenhle rozjezd byl jen na rozehřátí prstů."</div>
+    <div class="expl">Hlavním městem Ruska je Moskva, zároveň největší město země.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#6</span></div>
+    <div class="ans">✓ Polsko a Litva</div>
+    <div class="bq">„Přesně — kousek Ruska zaklíněný v Evropě jak zatoulaný dílek puzzle."</div>
+    <div class="expl">Kaliningradská oblast je od zbytku Ruska oddělená a sousedí s Polskem a Litvou; do roku 1945 šlo o německý Königsberg.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#5</span></div>
+    <div class="ans">✓ Vladivostok</div>
+    <div class="bq">„Vladivostok! Konečná, prosím vystupovat — po týdnu ve vlaku."</div>
+    <div class="expl">Transsibiřská magistrála vede z Moskvy do Vladivostoku u Japonského moře a měří 9 288 km.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#4</span></div>
+    <div class="ans">✓ Elbrus</div>
+    <div class="bq">„Elbrus! Výš už se v Rusku dostaneš jen letadlem."</div>
+    <div class="expl">Elbrus na Kavkaze měří 5 642 m; je nejvyšší horou Ruska a bývá počítán i za nejvyšší horu Evropy.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#9</span></div>
+    <div class="ans">✓ Stanicemi zdobenými jako paláce</div>
+    <div class="bq">„Ano! Jedeš do práce a projíždíš plesovým sálem."</div>
+    <div class="expl">Řada stanic moskevského metra je zdobena mramorem, mozaikami a lustry; nejslavnější pocházejí ze sovětské éry.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#8</span></div>
+    <div class="ans">✓ Vařené taštičky plněné masem</div>
+    <div class="bq">„Mňam, přesně tak. A teď se celý stůl těší na večeři."</div>
+    <div class="expl">Pelmeně jsou vařené taštičky z těsta plněné mletým masem, klasika ruské kuchyně.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div><div class="card back">
+    <div class="ch"><span class="reg">Rusko</span><span class="num">#7</span></div>
+    <div class="ans">✓ Volha</div>
+    <div class="bq">„Volha! Matka ruských řek — a královna těch evropských."</div>
+    <div class="expl">Volha měří přibližně 3 530 km a je nejdelší řekou Evropy; celý její tok leží v Rusku.</div>
+    <div class="qrrow"><div class="qr" data-url="https://TVUJ-WEB/hricka.html#country=ru"></div><div class="qrcap">Rusko v appce</div></div>
+  </div></div>
+<script>
+  (function(){
+    document.querySelectorAll(".qr").forEach(function(el){
+      var url = el.getAttribute("data-url");
+      try {
+        var qr = qrcode(0, "M"); qr.addData(url); qr.make();
+        el.innerHTML = qr.createImgTag(4, 0);
+      } catch(e){ el.innerHTML = '<div style="font-size:6pt;word-break:break-all;color:#999">'+url+'</div>'; }
+    });
+  })();
+</script>
+</body></html>

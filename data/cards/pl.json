@@ -1,0 +1,637 @@
+[
+  {
+    "id": "pl-mista-krakow",
+    "country": "Polsko",
+    "section": "Místa",
+    "headline": "Královský Wawel a obří tržní náměstí",
+    "fact": "Historické centrum Krakova s hradem Wawel a jedním z největších středověkých náměstí Evropy patřilo roku 1978 k vůbec prvním památkám zapsaným na seznam UNESCO.",
+    "voice": "Z věže mariánského kostela zní každou hodinu přerušený hejnał.",
+    "source_url": "https://whc.unesco.org/en/list/29/",
+    "source_quote": "Historic Centre of Kraków, inscribed 1978; the main market square and the royal Wawel castle",
+    "visual_type": "photo",
+    "image_prompt": "Rynek Główny in Kraków with St. Mary's Basilica and the Cloth Hall at golden hour, wide 16:9 travel photo",
+    "ll": [
+      19.94,
+      50.06
+    ]
+  },
+  {
+    "id": "pl-mista-wieliczka",
+    "country": "Polsko",
+    "section": "Místa",
+    "headline": "Katedrála vytesaná v soli",
+    "fact": "Solný důl ve Wieliczce ukrývá stovky metrů pod zemí kaple, sochy i lustry vytesané z kamenné soli; i on byl mezi úplně prvními zápisy UNESCO roku 1978.",
+    "voice": "Podzemní kaple svaté Kingy má oltář i lustry ze soli.",
+    "source_url": "https://whc.unesco.org/en/list/32/",
+    "source_quote": "Wieliczka and Bochnia Royal Salt Mines, inscribed 1978; chapels and statues sculpted in the salt",
+    "visual_type": "photo",
+    "image_prompt": "Underground St. Kinga's Chapel in Wieliczka Salt Mine, salt chandeliers and carved walls, 16:9",
+    "ll": [
+      20.06,
+      49.98
+    ]
+  },
+  {
+    "id": "pl-mista-malbork",
+    "country": "Polsko",
+    "section": "Místa",
+    "headline": "Největší cihlový hrad na světě",
+    "fact": "Malbork, sídlo velmistrů Řádu německých rytířů, je největší cihlový hrad na světě a podle plochy největší pevnost v Evropě.",
+    "voice": "Postavili ho křižáci nad řekou Nogat ve 13. století.",
+    "source_url": "https://www.britannica.com/place/Malbork-castle",
+    "source_quote": "Encompassing 52 acres, Malbork Castle is Europe's largest fortress by land area",
+    "visual_type": "photo",
+    "image_prompt": "Malbork Castle, vast red-brick Gothic Teutonic fortress reflected in the Nogat river, 16:9",
+    "ll": [
+      19.03,
+      54.04
+    ]
+  },
+  {
+    "id": "pl-mista-warszawa",
+    "country": "Polsko",
+    "section": "Místa",
+    "headline": "Staré Město postavené znovu z popela",
+    "fact": "Za druhé světové války bylo přes 85 % varšavského historického jádra zničeno; Poláci ho po válce znovu postavili podle dobových plánů a obrazů.",
+    "voice": "Předlohou byly i veduty malíře Canaletta.",
+    "source_url": "https://whc.unesco.org/en/list/30/",
+    "source_quote": "more than 85% of Warsaw's historic centre was destroyed by Nazi troops",
+    "visual_type": "photo",
+    "image_prompt": "Colourful reconstructed Old Town Market Square in Warsaw with Baroque townhouses, 16:9",
+    "ll": [
+      21.01,
+      52.23
+    ]
+  },
+  {
+    "id": "pl-mista-torun",
+    "country": "Polsko",
+    "section": "Místa",
+    "headline": "Gotické město Koperníkovo",
+    "fact": "Středověká Toruň nad Vislou, rodiště Mikuláše Koperníka, se dochovala s gotickými kostely a cihlovými měšťanskými domy a je zapsána na seznamu UNESCO.",
+    "voice": "Proslula i perníkem — toruňské pierniki se pečou dodnes.",
+    "source_url": "https://whc.unesco.org/en/list/835/",
+    "source_quote": "Medieval Town of Toruń; the house in which Nicolaus Copernicus was reputedly born",
+    "visual_type": "photo",
+    "image_prompt": "Gothic old town of Toruń on the Vistula, brick townhouses and church towers, 16:9",
+    "ll": [
+      18.6,
+      53.01
+    ]
+  },
+  {
+    "id": "pl-priroda-bialowieza",
+    "country": "Polsko",
+    "section": "Příroda",
+    "headline": "Prales, kde vládne zubr",
+    "fact": "Bělověžský prales je největší a nejzachovalejší zbytek původního nížinného lesa v Evropě a domov nejpočetnější populace zubra evropského.",
+    "voice": "Zubr se sem po vyhubení ve volné přírodě vrátil díky chovu.",
+    "source_url": "https://whc.unesco.org/en/list/33/",
+    "source_quote": "the largest and best-preserved unit of mixed lowland forest in Europe; the largest population of European bison",
+    "visual_type": "photo",
+    "image_prompt": "European bison standing in the misty primeval Białowieża Forest, ancient trees, 16:9",
+    "ll": [
+      23.84,
+      52.7
+    ]
+  },
+  {
+    "id": "pl-priroda-rysy",
+    "country": "Polsko",
+    "section": "Příroda",
+    "headline": "Nejvyšší vrchol Polska",
+    "fact": "Nejvyšší horou Polska jsou Rysy (2 499 m) ve Vysokých Tatrách; vrchol leží přímo na polsko-slovenské hranici.",
+    "voice": "Poslední úsek jistí ocelové řetězy vsazené do skály.",
+    "source_url": "https://national-parks.org/poland/tatra/",
+    "source_quote": "Rysy ... the highest peak in the park as well as the country ... 2,499 m",
+    "visual_type": "photo",
+    "image_prompt": "Rocky summit of Rysy in the High Tatras above Morskie Oko lake, dramatic peaks, 16:9",
+    "ll": [
+      20.09,
+      49.18
+    ]
+  },
+  {
+    "id": "pl-priroda-slowinski",
+    "country": "Polsko",
+    "section": "Příroda",
+    "headline": "Polská Sahara, která putuje",
+    "fact": "V národním parku Słowiński leží nejvýjimečnější pás pohyblivých písečných dun v Evropě; vítr je posouvá o několik metrů ročně a postupně jimi pohřbívá les.",
+    "voice": "Posouvající se písek odkrývá pařezy dávno pohřbeného lesa.",
+    "source_url": "https://www.poland.travel/en/slowinski-national-park/",
+    "source_quote": "the most exceptional in Europe belt of moving dunes ... the sand moving a few or even a dozen metres annually",
+    "visual_type": "photo",
+    "image_prompt": "Vast white shifting sand dunes of Słowiński National Park meeting pine forest and the Baltic Sea, 16:9",
+    "ll": [
+      17.55,
+      54.75
+    ]
+  },
+  {
+    "id": "pl-priroda-wisla",
+    "country": "Polsko",
+    "section": "Příroda",
+    "headline": "Visla, hlavní tepna země",
+    "fact": "Nejdelší polská řeka Visla měří 1 047 km — pramení v Beskydech, protéká Krakovem i Varšavou a u Gdaňsku se vlévá do Baltského moře.",
+    "voice": "Poláci jí říkají „královna polských řek“.",
+    "source_url": "https://www.britannica.com/place/Vistula-River",
+    "source_quote": "the largest river of Poland ... a length of 651 miles (1,047 kilometres)",
+    "visual_type": "photo",
+    "image_prompt": "Vistula river winding through Kraków at sunset with Wawel Castle on the bank, 16:9",
+    "ll": [
+      21.01,
+      52.23
+    ]
+  },
+  {
+    "id": "pl-priroda-mazury",
+    "country": "Polsko",
+    "section": "Příroda",
+    "headline": "Kraj tisíce jezer",
+    "fact": "Mazurská jezerní plošina má přes 2 000 ledovcových jezer — největší z nich je Śniardwy — a patří k nejoblíbenějším místům pro jachtaře v Polsku.",
+    "voice": "Za mlhavého rána tu jezera splývají s oblohou.",
+    "source_url": "https://www.britannica.com/place/Masurian-Lakeland",
+    "source_quote": "There are more than 2,000 lakes in the Masurian Lake District, with Śniardwy being the largest",
+    "visual_type": "photo",
+    "image_prompt": "Sailing boats on a calm Masurian lake at dawn, forested shores, misty water, 16:9",
+    "ll": [
+      21.7,
+      53.9
+    ]
+  },
+  {
+    "id": "pl-lide-kopernik",
+    "country": "Polsko",
+    "section": "Lidé",
+    "headline": "Ten, kdo „zastavil Slunce“",
+    "fact": "Astronom Mikuláš Koperník, narozený roku 1473 v Toruni, ucelenně doložil, že Země a planety obíhají kolem Slunce, a odstartoval tím moderní vědu.",
+    "voice": "Jeho převratné dílo vyšlo tiskem až v roce jeho smrti.",
+    "source_url": "https://www.britannica.com/biography/Nicolaus-Copernicus",
+    "source_quote": "born ... 1473, in Toruń ... proposed that the Sun was the center of the solar system",
+    "visual_type": "photo",
+    "image_prompt": "Historic portrait-style illustration of Nicolaus Copernicus with an armillary sphere, 16:9",
+    "ll": [
+      18.6,
+      53.01
+    ]
+  },
+  {
+    "id": "pl-lide-chopin",
+    "country": "Polsko",
+    "section": "Lidé",
+    "headline": "Klavírní básník polské duše",
+    "fact": "Skladatel Fryderyk Chopin, narozený roku 1810 v Żelazowé Woli u Varšavy, povýšil polské lidové tance mazurku a poloneza na koncertní klavírní hudbu.",
+    "voice": "Podle jeho přání je jeho srdce uloženo ve Varšavě.",
+    "source_url": "https://culture.pl/en/artist/fryderyk-chopin-frederic-chopin",
+    "source_quote": "Fryderyk Chopin ... born on 1st March 1810 ... in Żelazowa Wola",
+    "visual_type": "photo",
+    "image_prompt": "Elegant grand piano in a 19th-century Polish manor interior, warm light, 16:9",
+    "ll": [
+      20.13,
+      52.26
+    ]
+  },
+  {
+    "id": "pl-lide-curie",
+    "country": "Polsko",
+    "section": "Lidé",
+    "headline": "Dvě Nobelovky — jediná na světě",
+    "fact": "Varšavská rodačka Maria Skłodowská-Curie je dodnes jediným člověkem s Nobelovou cenou ve dvou vědních oborech — za fyziku (1903) a za chemii (1911).",
+    "voice": "Nový prvek polonium pojmenovala po své rodné vlasti.",
+    "source_url": "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/",
+    "source_quote": "the only person to be awarded Nobel Prizes in two scientific categories (Physics 1903, Chemistry 1911)",
+    "visual_type": "photo",
+    "image_prompt": "Vintage laboratory with glowing glassware evoking Marie Curie's radium research, 16:9",
+    "ll": [
+      21.01,
+      52.23
+    ]
+  },
+  {
+    "id": "pl-lide-jan-pavel",
+    "country": "Polsko",
+    "section": "Lidé",
+    "headline": "Papež z Wadowic",
+    "fact": "Karol Wojtyła z Wadowic se roku 1978 stal papežem Janem Pavlem II. — prvním neitalským papežem po 455 letech a vůbec prvním ze slovanské země.",
+    "voice": "Atentát na Svatopetrském náměstí v roce 1981 přežil.",
+    "source_url": "https://www.britannica.com/biography/Saint-John-Paul-II",
+    "source_quote": "the first non-Italian pope in 455 years and the first ever from a Slavic country",
+    "visual_type": "photo",
+    "image_prompt": "St. Peter's Square in Vatican City with crowds, warm evening light, respectful wide view, 16:9",
+    "ll": [
+      19.49,
+      49.88
+    ]
+  },
+  {
+    "id": "pl-lide-walesa",
+    "country": "Polsko",
+    "section": "Lidé",
+    "headline": "Elektrikář, který otřásl režimem",
+    "fact": "Lech Wałęsa vedl v gdaňských loděnicích stávku, z níž vznikla Solidarita; roku 1983 dostal Nobelovu cenu za mír a v roce 1990 byl zvolen polským prezidentem.",
+    "voice": "Cenu v Oslu převzala jeho žena — bál se, že ho nepustí zpět.",
+    "source_url": "https://www.nobelprize.org/prizes/peace/1983/walesa/facts/",
+    "source_quote": "Nobel Peace Prize 1983 ... In 1990 ... Wałęsa was elected President of Poland",
+    "visual_type": "photo",
+    "image_prompt": "Gdańsk shipyard cranes with a Solidarność banner, documentary style, 16:9",
+    "ll": [
+      18.65,
+      54.35
+    ]
+  },
+  {
+    "id": "pl-jidlo-pierogi",
+    "country": "Polsko",
+    "section": "Jídlo",
+    "headline": "Nejslavnější polské jídlo",
+    "fact": "Pierogi — vařené plněné taštičky se sýrem a bramborem, zelím s houbami, masem i ovocem — jsou považovány za nejslavnější polský pokrm.",
+    "voice": "Verzi „ruskie“ plní bramborem a tvarohem — Rusko v tom nehledej.",
+    "source_url": "https://culture.pl/en/article/polands-most-famous-dish-pierogi",
+    "source_quote": "Pierogi are without a doubt Poland's most famous dish",
+    "visual_type": "photo",
+    "image_prompt": "Plate of golden pan-fried pierogi topped with crispy onions and sour cream, 16:9"
+  },
+  {
+    "id": "pl-jidlo-bigos",
+    "country": "Polsko",
+    "section": "Jídlo",
+    "headline": "Lovecký guláš na mnoho ohřátí",
+    "fact": "Bigos je vydatný jednohrnec z kysaného i čerstvého zelí, několika druhů masa a klobásy; dusí se dlouhé hodiny a s každým ohřátím chutná lépe.",
+    "voice": "Tradičně se vařil pro myslivce i na svatby.",
+    "source_url": "https://culture.pl/en/work/polish-food-101-bigos",
+    "visual_type": "photo",
+    "image_prompt": "Rustic pot of bigos hunter's stew with sausage and cabbage, dark wooden table, 16:9"
+  },
+  {
+    "id": "pl-jidlo-zurek",
+    "country": "Polsko",
+    "section": "Jídlo",
+    "headline": "Kyselá polévka v bochníku",
+    "fact": "Żurek je kyselá polévka z kvašené žitné mouky, podávaná s vejcem a bílou klobásou, často naservírovaná ve vydlabaném bochníku chleba; nesmí chybět o Velikonocích.",
+    "voice": "Kvásek („zakwas“) se v Polsku prodává i v lahvích.",
+    "source_url": "https://culture.pl/en/article/ten-meals-from-ten-polish-regions",
+    "visual_type": "photo",
+    "image_prompt": "Żurek sour rye soup served inside a round bread bowl with egg and sausage, 16:9"
+  },
+  {
+    "id": "pl-jidlo-oscypek",
+    "country": "Polsko",
+    "section": "Jídlo",
+    "headline": "Uzený ovčí sýr z Tater",
+    "fact": "Oscypek je vřetenovitý uzený ovčí sýr, který pastevci v Tatrách vyrábějí ručně po staletí; dnes má chráněné označení původu Evropské unie.",
+    "voice": "Na jarmarku ho grilují a podávají s brusinkami.",
+    "source_url": "https://www.fondazioneslowfood.com/en/slow-food-presidia/oscypek/",
+    "source_quote": "Oscypek has been made by hand for centuries ... in the Tatra Mountains",
+    "visual_type": "photo",
+    "image_prompt": "Spindle-shaped smoked oscypek cheeses with decorative patterns on a market stall, 16:9",
+    "ll": [
+      19.95,
+      49.3
+    ]
+  },
+  {
+    "id": "pl-jidlo-paczki",
+    "country": "Polsko",
+    "section": "Jídlo",
+    "headline": "Koblihy na Tučný čtvrtek",
+    "fact": "Pączki jsou nadýchané smažené koblihy plněné marmeládou nebo povidly a polité polevou; tradičně se jimi hoduje na „Tučný čtvrtek“ (Tłusty Czwartek) před začátkem postu.",
+    "voice": "Na Tučný čtvrtek jich Poláci snědí neskutečné množství.",
+    "source_url": "https://culture.pl/en/article/the-comforts-of-polish-comfort-foods",
+    "visual_type": "photo",
+    "image_prompt": "Tray of glazed Polish pączki doughnuts dusted with sugar, one cut to show jam, 16:9"
+  },
+  {
+    "id": "pl-historie-krest-966",
+    "country": "Polsko",
+    "section": "Historie",
+    "headline": "Rok 966: zrození Polska",
+    "fact": "Za počátek polského státu se pokládá rok 966, kdy kníže Měšek I. přijal křest a přivedl Polsko do latinského (západního) křesťanství.",
+    "voice": "Křtem se Měšek bránil nucené christianizaci ze západu.",
+    "source_url": "https://www.britannica.com/biography/Mieszko-I",
+    "source_quote": "Mieszko accepted Christianity from Rome in 966 ... the true beginning of Polish history",
+    "visual_type": "photo",
+    "image_prompt": "Atmospheric illustration of an early medieval Piast baptism ceremony, 966 AD, 16:9",
+    "ll": [
+      16.93,
+      52.41
+    ]
+  },
+  {
+    "id": "pl-historie-unie-lublin",
+    "country": "Polsko",
+    "section": "Historie",
+    "headline": "Unie dvou národů",
+    "fact": "Lublinská unie roku 1569 spojila Polské království a Litevské velkoknížectví v Rzeczpospolitou obou národů — jeden z největších a nejlidnatějších států tehdejší Evropy.",
+    "voice": "Šlechta si volila krále — někdy i cizince.",
+    "source_url": "https://www.britannica.com/place/Polish-Lithuanian-Commonwealth",
+    "source_quote": "the Polish-Lithuanian Commonwealth, one of the largest and most populous states of 16th- and 17th-century Europe",
+    "visual_type": "photo",
+    "image_prompt": "Ornate historical map of the Polish-Lithuanian Commonwealth with old parchment texture, 16:9",
+    "ll": [
+      22.57,
+      51.25
+    ]
+  },
+  {
+    "id": "pl-historie-ustava-1791",
+    "country": "Polsko",
+    "section": "Historie",
+    "headline": "První ústava Evropy",
+    "fact": "Ústava z 3. května 1791 byla první moderní psanou ústavou v Evropě a po americké druhou na světě.",
+    "voice": "3. květen je dodnes polským státním svátkem.",
+    "source_url": "https://www.britannica.com/topic/Constitution-of-1791-Polish-history",
+    "source_quote": "the first modern written constitution in Europe",
+    "visual_type": "photo",
+    "image_prompt": "Historical painting-style scene of the proclamation of the 3 May 1791 Constitution, 16:9",
+    "ll": [
+      21.01,
+      52.25
+    ]
+  },
+  {
+    "id": "pl-historie-deleni",
+    "country": "Polsko",
+    "section": "Historie",
+    "headline": "123 let bez vlastního státu",
+    "fact": "Trojím dělením v letech 1772–1795 si Rusko, Prusko a Rakousko rozebraly Polsko, které pak na 123 let zmizelo z mapy Evropy — samostatnost obnovilo až roku 1918.",
+    "voice": "Přesto si Poláci udrželi jazyk i národní vědomí.",
+    "source_url": "https://www.britannica.com/topic/history-of-Poland/Partitioned-Poland",
+    "source_quote": "the three partitions (1772, 1793, 1795) ... Poland disappeared from the map of Europe",
+    "visual_type": "photo",
+    "image_prompt": "Antique 18th-century map of Europe showing partitioned Poland, sepia tones, 16:9"
+  },
+  {
+    "id": "pl-historie-solidarita",
+    "country": "Polsko",
+    "section": "Historie",
+    "headline": "Solidarita nastartovala pád komunismu",
+    "fact": "V gdaňských loděnicích vznikl roku 1980 svaz Solidarita — první nezávislý odborový svaz v sovětském bloku, jenž se stal počátkem pádu komunismu ve východní Evropě.",
+    "voice": "Do svazu se během roku přihlásilo na 10 milionů lidí.",
+    "source_url": "https://www.britannica.com/topic/Solidarity",
+    "source_quote": "Solidarity ... the Soviet bloc's first independent labour union",
+    "visual_type": "photo",
+    "image_prompt": "Historic 1980 Gdańsk shipyard strike scene with Solidarność banner, documentary style, 16:9",
+    "ll": [
+      18.65,
+      54.35
+    ]
+  },
+  {
+    "id": "pl-kultura-wigilia",
+    "country": "Polsko",
+    "section": "Kultura & tradice",
+    "headline": "Štědrý večer o dvanácti chodech",
+    "fact": "Na Štědrý večer (Wigilia) Poláci lámou oplatek a přejí si, k večeři zasednou o dvanácti bezmasých chodech a jedno místo u stolu nechávají volné pro nečekaného hosta.",
+    "voice": "Večeře začíná, až se na nebi objeví první hvězda.",
+    "source_url": "https://culture.pl/en/article/polish-christmas-eve-traditions",
+    "visual_type": "photo",
+    "image_prompt": "Festive Polish Christmas Eve table with white cloth, oplatek wafer, twelve meatless dishes, candlelight, 16:9"
+  },
+  {
+    "id": "pl-kultura-szopki",
+    "country": "Polsko",
+    "section": "Kultura & tradice",
+    "headline": "Krakovské betlémy zapsané v UNESCO",
+    "fact": "Krakovské betlémy (szopki) — barevné stavbičky inspirované krakovskými památkami — jsou od roku 2018 na reprezentativním seznamu nehmotného dědictví UNESCO.",
+    "voice": "Každý první prosincový čtvrtek je tvůrci vystaví na Hlavním náměstí.",
+    "source_url": "https://ich.unesco.org/en/RL/nativity-scene-szopka-tradition-in-krakow-01362",
+    "source_quote": "inscribed in 2018 on the Representative List of the Intangible Cultural Heritage of Humanity",
+    "visual_type": "photo",
+    "image_prompt": "Colourful ornate Kraków szopka nativity crib with towers and lights resembling Kraków monuments, 16:9",
+    "ll": [
+      19.94,
+      50.06
+    ]
+  },
+  {
+    "id": "pl-kultura-smigus",
+    "country": "Polsko",
+    "section": "Kultura & tradice",
+    "headline": "Velikonoční vodní bitva",
+    "fact": "Na velikonoční pondělí („śmigus-dyngus\") se lidé pro štěstí a zdraví navzájem polévají vodou — z tradice se stala celonárodní vodní bitva.",
+    "voice": "Nejlíp je zůstat doma nebo mít po ruce kbelík.",
+    "source_url": "https://culture.pl/en/article/smigus-dyngus-polands-national-water-fight-day",
+    "visual_type": "photo",
+    "image_prompt": "Children splashing water with buckets in a Polish village on Easter Monday, sunny spring day, 16:9"
+  },
+  {
+    "id": "pl-kultura-gorale",
+    "country": "Polsko",
+    "section": "Kultura & tradice",
+    "headline": "Góralé pod Tatrami",
+    "fact": "V Podhalí pod Tatrami žijí Górale — horalé se svébytným krojem, dřevěnou architekturou a temperamentní muzikou o životě pastevců.",
+    "voice": "Jejich nápěvy zpracovali i skladatelé Szymanowski a Kilar.",
+    "source_url": "https://culture.pl/en/article/the-story-of-podhale-folk-art",
+    "visual_type": "photo",
+    "image_prompt": "Polish Podhale highlanders in traditional embroidered folk costume playing folk music, wooden Zakopane-style house, 16:9",
+    "ll": [
+      19.95,
+      49.3
+    ]
+  },
+  {
+    "id": "pl-kultura-pisanki",
+    "country": "Polsko",
+    "section": "Kultura & tradice",
+    "headline": "Malovaná velikonoční vajíčka",
+    "fact": "Zdobení velikonočních vajíček (pisanki) voskem a barvami je v Polsku staleté lidové umění s pestrými krajovými vzory.",
+    "voice": "Každý region má vlastní vzory i techniku.",
+    "source_url": "https://culture.pl/en/article/polish-easter-traditions",
+    "visual_type": "photo",
+    "image_prompt": "Traditional Polish pisanki decorated Easter eggs with intricate wax patterns in a basket, spring light, 16:9"
+  },
+  {
+    "id": "pl-sport-lewandowski",
+    "country": "Polsko",
+    "section": "Sport",
+    "headline": "Kapitán a kanonýr",
+    "fact": "Fotbalista a kapitán reprezentace Robert Lewandowski, jeden z nejlepších útočníků světa, získal cenu FIFA The Best pro nejlepšího hráče roku 2020 i 2021.",
+    "voice": "V jednom zápase Bundesligy dal pět gólů za devět minut.",
+    "source_url": "https://fcbayern.com/en/news/2022/01/robert-lewandowski-wins-best-fifa-mens-player-2021",
+    "source_quote": "Robert Lewandowski wins Best FIFA Men's Player 2021 (defending his 2020 title)",
+    "visual_type": "photo",
+    "image_prompt": "Football striker in red-and-white Poland kit celebrating a goal in a packed stadium, dynamic action, 16:9"
+  },
+  {
+    "id": "pl-sport-stoch",
+    "country": "Polsko",
+    "section": "Sport",
+    "headline": "Král skokanských můstků",
+    "fact": "Skoky na lyžích jsou v Polsku národní vášní; skokan Kamil Stoch získal na zimních olympiádách tři zlaté medaile.",
+    "voice": "Diváci sledují závody u obrazovek po statisících.",
+    "source_url": "https://www.olympics.com/en/athletes/kamil-stoch",
+    "source_quote": "three Olympic gold medals in ski jumping (Sochi 2014, PyeongChang 2018)",
+    "visual_type": "photo",
+    "image_prompt": "Ski jumper in mid-flight against a blue winter sky above a large ski jump hill, crowd below, 16:9",
+    "ll": [
+      19.95,
+      49.3
+    ]
+  },
+  {
+    "id": "pl-sport-volejbal",
+    "country": "Polsko",
+    "section": "Sport",
+    "headline": "Volejbalová velmoc",
+    "fact": "Volejbal patří v Polsku k nejsledovanějším sportům; mužská reprezentace patří ke světové špičce a v roce 2025 ovládla prestižní Ligu národů.",
+    "voice": "Haly při reprezentačních zápasech bývají beznadějně vyprodané.",
+    "source_url": "https://www.olympics.com/en/news/poland-takes-men-s-volleyball-nations-league-2025-crown",
+    "source_quote": "Poland dominate final against Italy to win the men's Volleyball Nations League 2025 title",
+    "visual_type": "photo",
+    "image_prompt": "Men's volleyball players in red jerseys spiking the ball at the net in a packed arena, 16:9"
+  },
+  {
+    "id": "pl-sport-swiatek",
+    "country": "Polsko",
+    "section": "Sport",
+    "headline": "Tenisová světová jednička",
+    "fact": "Tenistka Iga Świątek se stala světovou jedničkou a jako první polský hráč vůbec vyhrála grandslam — několikrát triumfovala na Roland Garros.",
+    "voice": "Antuka v Paříži je její vysněný povrch.",
+    "source_url": "https://www.britannica.com/biography/Iga-Swiatek",
+    "source_quote": "the first Polish player to win a Grand Slam singles title; reached world No. 1",
+    "visual_type": "photo",
+    "image_prompt": "Female tennis player in action on a red clay court, dramatic afternoon light, 16:9"
+  },
+  {
+    "id": "pl-sport-stadion",
+    "country": "Polsko",
+    "section": "Sport",
+    "headline": "Stadion se zatahovací střechou",
+    "fact": "Národní stadion ve Varšavě, postavený pro fotbalové EURO 2012, má zatahovací střechu a je největší fotbalovou arénou Polska.",
+    "voice": "Střecha se rozvine z „hnízda\" na stožáru nad středem hřiště.",
+    "source_url": "https://stadiumdb.com/tournaments/euro/2012/stadion_narodowy",
+    "source_quote": "National Stadium in Warsaw, built for UEFA Euro 2012, has a retractable roof; largest football arena in Poland",
+    "visual_type": "photo",
+    "image_prompt": "Modern national football stadium in Warsaw lit red and white at dusk with a retractable roof, 16:9",
+    "ll": [
+      21.045,
+      52.239
+    ]
+  },
+  {
+    "id": "pl-jazyk-slovanstina",
+    "country": "Polsko",
+    "section": "Jazyk & slova",
+    "headline": "Bratranec češtiny",
+    "fact": "Polština je západoslovanský jazyk blízký češtině a slovenštině; mluví jí přes 40 milionů lidí v Polsku i po celém světě.",
+    "voice": "Čech a Polák si leccos domluví, ale „szukać\" znamená jen hledat.",
+    "source_url": "https://www.britannica.com/topic/Polish-language",
+    "source_quote": "more than 40 million people spoke Polish ... West Slavic language, closely related to Czech and Slovak",
+    "visual_type": "photo",
+    "image_prompt": "Open Polish dictionary with letters, warm library light, close-up, 16:9"
+  },
+  {
+    "id": "pl-jazyk-jazykolam",
+    "country": "Polsko",
+    "section": "Jazyk & slova",
+    "headline": "Brouk, co bzučí v rákosí",
+    "fact": "Slavný polský jazykolam zní „W Szczebrzeszynie chrząszcz brzmi w trzcinie\" — tedy „V Szczebrzeszyně bzučí brouk v rákosí\".",
+    "voice": "Městečko Szczebrzeszyn má kvůli němu i sochu brouka.",
+    "source_url": "https://culture.pl/en/article/10-craziest-polish-tongue-twisters",
+    "visual_type": "photo",
+    "image_prompt": "Whimsical bronze beetle statue on a small Polish town square, sunny day, 16:9",
+    "ll": [
+      22.98,
+      50.7
+    ]
+  },
+  {
+    "id": "pl-jazyk-souhlasky",
+    "country": "Polsko",
+    "section": "Jazyk & slova",
+    "headline": "Shluky souhlásek",
+    "fact": "Polština miluje shluky souhlásek — slovo „źdźbło\" (stéblo) má pět souhlásek hned za sebou a jen jednu samohlásku.",
+    "voice": "Digrafy sz, cz, rz nebo szcz nejsou pro cizince žádná legrace.",
+    "source_url": "https://culture.pl/en/article/the-9-most-unpronounceable-words-in-polish",
+    "visual_type": "photo",
+    "image_prompt": "Close-up of Polish text with consonant clusters highlighted, typographic, 16:9"
+  },
+  {
+    "id": "pl-jazyk-pozdravy",
+    "country": "Polsko",
+    "section": "Jazyk & slova",
+    "headline": "Řekni to polsky",
+    "fact": "Dobrý den se řekne „dzień dobry\", neformálně se zdraví „cześć\" (čau) a poděkuješ „dziękuję\".",
+    "voice": "„Na zdrowie!\" se hodí na přípitek i po kýchnutí.",
+    "source_url": "https://culture.pl/en/article/the-polish-language-a-cheatsheet-for-beginners",
+    "visual_type": "photo",
+    "image_prompt": "Friendly greeting speech bubbles with Polish words on a colourful background, 16:9"
+  },
+  {
+    "id": "pl-umeni-matejko",
+    "country": "Polsko",
+    "section": "Umění",
+    "headline": "Malíř polských dějin",
+    "fact": "Malíř Jan Matejko zachytil na monumentálních plátnech klíčové okamžiky polských dějin, třeba bitvu u Grunwaldu, a vedl krakovskou uměleckou akademii.",
+    "voice": "Jeho plátna jsou tak velká, že zaberou celou stěnu.",
+    "source_url": "https://culture.pl/en/artist/jan-matejko",
+    "visual_type": "photo",
+    "image_prompt": "Grand historical oil painting in an ornate gilded frame in a museum hall, 16:9",
+    "ll": [
+      19.94,
+      50.06
+    ]
+  },
+  {
+    "id": "pl-umeni-wajda",
+    "country": "Polsko",
+    "section": "Umění",
+    "headline": "Režisér s čestným Oscarem",
+    "fact": "Filmový režisér Andrzej Wajda dostal roku 2000 čestného Oscara za celoživotní dílo; jeho filmy jako Člověk ze železa reflektují polské dějiny.",
+    "voice": "Film „Člověk ze železa\" podpořil hnutí Solidarita.",
+    "source_url": "https://www.britannica.com/biography/Andrzej-Wajda",
+    "source_quote": "In 2000 Wajda received an Honorary Academy Award for five decades of extraordinary film direction",
+    "visual_type": "photo",
+    "image_prompt": "Vintage film director's chair, clapperboard and reels on a stage, warm spotlight, 16:9"
+  },
+  {
+    "id": "pl-umeni-szymborska",
+    "country": "Polsko",
+    "section": "Umění",
+    "headline": "Nobelovka za poezii",
+    "fact": "Básnířka Wisława Szymborská získala roku 1996 Nobelovu cenu za literaturu za poezii plnou ironie, lehkosti a překvapivých otázek.",
+    "voice": "Ve své řeči řekla, že nejdůležitější věta zní „nevím\".",
+    "source_url": "https://www.nobelprize.org/prizes/literature/1996/szymborska/facts/",
+    "source_quote": "The Nobel Prize in Literature 1996 was awarded to Wisława Szymborska",
+    "visual_type": "photo",
+    "image_prompt": "Open handwritten poetry notebook with a pen beside a cup of tea, soft light, 16:9"
+  },
+  {
+    "id": "pl-umeni-chopin-soutez",
+    "country": "Polsko",
+    "section": "Umění",
+    "headline": "Olympiáda klavíristů",
+    "fact": "Ve Varšavě se od roku 1927 koná Mezinárodní chopinovská klavírní soutěž — každých pět let, jen ze skladeb Chopina; patří k nejstarším a nejprestižnějším na světě.",
+    "voice": "New York Times jí přezdívá „olympiáda klavírního světa\".",
+    "source_url": "https://www.chopin.pl/miedzynarodowy_konkurs.en.html",
+    "source_quote": "held first in 1927 and every five years since 1955; one of the oldest events of its type in the world",
+    "visual_type": "photo",
+    "image_prompt": "Grand concert hall with a black grand piano on stage under warm spotlights, 16:9",
+    "ll": [
+      21.01,
+      52.23
+    ]
+  },
+  {
+    "id": "pl-umeni-plakat",
+    "country": "Polsko",
+    "section": "Umění",
+    "headline": "Polská škola plakátu",
+    "fact": "Polská plakátová škola proslavila zemi malířským a poetickým filmovým i divadelním plakátem, obdivovaným po celém světě pro odvahu a nápad.",
+    "voice": "Místo fotek herců sázela na malbu a metaforu.",
+    "source_url": "https://culture.pl/en/article/6-legends-of-the-polish-poster-school",
+    "visual_type": "photo",
+    "image_prompt": "Wall of bold artistic vintage Polish film posters with painterly graphic design, 16:9"
+  },
+  {
+    "id": "pl-jazyk-mesice",
+    "country": "Polsko",
+    "section": "Jazyk & slova",
+    "headline": "Domácí názvy měsíců",
+    "fact": "Polské názvy měsíců jsou domácí, ne latinské — „listopad\" znamená padání listí a „sierpień\" (srpen) odkazuje na srp při žních.",
+    "voice": "Podobně jako čeština popisují měsíce podle přírody.",
+    "source_url": "https://culture.pl/en/article/the-baffling-world-of-polish-months",
+    "visual_type": "photo",
+    "image_prompt": "Autumn leaves falling over a Polish calendar page, cosy seasonal mood, 16:9"
+  }
+]

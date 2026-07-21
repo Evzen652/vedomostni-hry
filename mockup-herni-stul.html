@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expedice — malovaný mockup: setup + herní stůl</title>
+<style>
+  :root{
+    --paper:#f7efe0; --paper2:#fffaf0; --ink:#3d3229; --muted:#8a7a66;
+    --teal:#2a7f7f; --coral:#e2725b; --ochre:#d9a441; --leaf:#7ba05b;
+    --ok:#4e9e6f; --bad:#cf5f4e;
+    --p1:#e2725b; --p2:#2a7f7f; --p3:#d9a441; --p4:#8a6fae;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:#efe4cf; color:var(--ink);
+    font-family:"Segoe UI", system-ui, sans-serif;
+    padding:30px 14px 70px; display:flex; flex-direction:column; align-items:center; gap:12px;
+  }
+  h1{font-family:Georgia,"Times New Roman",serif; font-size:24px; font-weight:600;}
+  p.lead{color:var(--muted); font-size:13.5px; max-width:740px; text-align:center;}
+  .label{
+    font-family:Georgia,serif; color:var(--muted); font-size:13px; font-style:italic;
+    margin:30px 0 10px; text-align:center;
+  }
+
+  .tablet{
+    width:min(980px,96vw); border-radius:28px; overflow:hidden; position:relative;
+    background:
+      radial-gradient(1200px 500px at 20% -10%, #fdf7ea 0%, transparent 60%),
+      var(--paper);
+    border:2px solid #d8c9ad;
+    box-shadow:0 26px 60px rgba(90,70,40,.28), inset 0 0 0 6px #fffdf6;
+  }
+  /* papírové zrno */
+  .tablet::after{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.5;
+    background:
+      repeating-linear-gradient(0deg, rgba(160,130,90,.028) 0 2px, transparent 2px 5px),
+      repeating-linear-gradient(90deg, rgba(160,130,90,.02) 0 3px, transparent 3px 7px);
+  }
+
+  /* ozdobná cestovní čára */
+  .route{position:absolute; pointer-events:none; opacity:.6;}
+  .route svg{display:block;}
+
+  /* ======= SETUP ======= */
+  .setup{display:flex; gap:0; min-height:560px; position:relative;}
+  .setL{width:44%; position:relative; display:flex; align-items:center; justify-content:center; padding:26px;}
+  .setR{width:56%; padding:26px 30px 26px 6px; display:flex; flex-direction:column; gap:14px;}
+
+  .title{font-family:Georgia,serif; font-size:30px; font-weight:650; letter-spacing:.01em;}
+  .subtitle{color:var(--muted); font-size:13px; margin-top:-8px;}
+
+  /* malovaný glóbus */
+  .pglobe{
+    width:min(330px,92%); aspect-ratio:1; border-radius:50%; position:relative; overflow:hidden;
+    background:
+      radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
+    box-shadow:
+      inset -20px -18px 46px rgba(20,60,55,.35),
+      inset 10px 12px 30px rgba(255,255,255,.35),
+      0 18px 40px rgba(60,90,80,.3);
+    border:3px solid #fffdf6; outline:2px solid #d8c9ad;
+  }
+  .pland{position:absolute; background:#a9bf77; border-radius:52% 48% 60% 40%/58% 46% 54% 42%;
+    box-shadow:inset -4px -6px 10px rgba(90,110,50,.45), inset 3px 4px 8px rgba(255,255,240,.5);}
+  .pland.a{width:36%; height:24%; left:10%; top:24%; transform:rotate(-12deg);}
+  .pland.b{width:44%; height:30%; left:42%; top:16%; transform:rotate(7deg); background:#b9c98a;}
+  .pland.c{width:24%; height:17%; left:30%; top:60%; transform:rotate(9deg);}
+  .pland.sel{background:var(--coral); box-shadow:inset -4px -6px 10px rgba(150,50,30,.4), 0 0 0 3px #fffdf6, 0 0 22px rgba(226,114,91,.55);}
+  .pin{position:absolute; font-size:20px; transform:translate(-50%,-90%); filter:drop-shadow(0 3px 3px rgba(0,0,0,.25));}
+  .globehint{
+    position:absolute; bottom:16px; left:50%; transform:translateX(-50%); white-space:nowrap;
+    font-family:Georgia,serif; font-style:italic; font-size:13px; color:var(--muted);
+  }
+  .shortcuts{position:absolute; top:18px; left:50%; transform:translateX(-50%); display:flex; gap:7px;}
+  .chip{
+    background:var(--paper2); border:1.6px solid #d8c9ad; border-radius:20px;
+    font-size:12px; padding:5px 13px; color:var(--ink); white-space:nowrap;
+    box-shadow:0 2px 0 #d8c9ad;
+  }
+  .chip.on{background:var(--teal); border-color:var(--teal); color:#fffdf6; box-shadow:0 2px 0 #1f5f5c;}
+
+  .card{
+    background:var(--paper2); border:1.6px solid #dccdb0; border-radius:16px;
+    padding:13px 16px; box-shadow:0 3px 0 #e3d5b8;
+  }
+  .cardtitle{font-family:Georgia,serif; font-size:15px; font-weight:650; margin-bottom:9px; display:flex; align-items:center; gap:8px;}
+  .cardtitle .n{
+    width:22px; height:22px; border-radius:50%; background:var(--ochre); color:#fffdf6;
+    font-size:12px; display:inline-flex; align-items:center; justify-content:center; font-family:system-ui;
+  }
+
+  .prow{display:flex; align-items:center; gap:9px; padding:5px 0; font-size:13.5px;}
+  .pav{width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; color:#fffdf6; font-size:13px; flex-shrink:0; box-shadow:inset -2px -3px 5px rgba(0,0,0,.2);}
+  .pnm{font-weight:650; width:76px;}
+  .age{background:#fff; border:1.4px solid #dccdb0; border-radius:9px; padding:3px 9px; font-size:12.5px; color:var(--muted);}
+  .band{font-size:11px; color:#fffdf6; border-radius:12px; padding:3px 10px;}
+  .band.d{background:var(--leaf);} .band.a{background:var(--teal);}
+  .diff{margin-left:auto; display:flex; gap:3px;}
+  .star{color:#e0d3b5; font-size:14px;} .star.on{color:var(--ochre);}
+  .addp{color:var(--teal); font-size:12.5px; margin-top:4px; font-weight:600;}
+
+  .chips{display:flex; gap:7px; flex-wrap:wrap;}
+
+  .row2{display:flex; gap:14px;}
+  .row2 .card{flex:1;}
+  .toggle{display:flex; align-items:center; gap:10px; font-size:13.5px;}
+  .sw{width:52px; height:28px; border-radius:16px; background:var(--teal); position:relative; box-shadow:inset 0 2px 4px rgba(0,0,0,.2); flex-shrink:0;}
+  .sw::after{content:""; position:absolute; top:3px; right:4px; width:22px; height:22px; border-radius:50%; background:#fffdf6; box-shadow:0 2px 3px rgba(0,0,0,.25);}
+  .len{display:flex; gap:7px;}
+
+  .go{
+    align-self:flex-end; background:var(--coral); color:#fffdf6;
+    font-family:Georgia,serif; font-size:18px; font-weight:650; letter-spacing:.02em;
+    border-radius:16px; padding:13px 34px; box-shadow:0 4px 0 #b1543f, 0 10px 24px rgba(226,114,91,.35);
+  }
+  .poolnote{font-size:11.5px; color:var(--muted); font-style:italic; text-align:right; margin-top:-6px;}
+
+  /* ======= OTÁZKA / REVEAL ======= */
+  .play{position:relative; min-height:600px; display:flex; flex-direction:column;}
+  /* malovaná scéna: tajga kvašem */
+  .scene{position:absolute; inset:0;}
+  .sky{position:absolute; inset:0 0 34% 0; background:linear-gradient(180deg,#f4d9a6 0%, #eebf8a 45%, #df9b77 100%);}
+  .sun{position:absolute; left:16%; top:12%; width:70px; height:70px; border-radius:50%;
+    background:radial-gradient(circle,#fff3cf 0%, #f6d789 60%, transparent 72%); opacity:.95;}
+  .hillsFar{position:absolute; left:0; right:0; top:30%; height:22%;
+    background:radial-gradient(60% 100% at 25% 100%, #b7a58c 99%, transparent), radial-gradient(70% 110% at 75% 100%, #a89478 99%, transparent);
+    filter:blur(1px); opacity:.8;}
+  .forest{position:absolute; left:0; right:0; top:40%; height:22%;}
+  .tree{position:absolute; bottom:0; width:0; height:0; border-left:14px solid transparent; border-right:14px solid transparent; border-bottom:58px solid #4d6b52; filter:drop-shadow(0 3px 2px rgba(60,60,40,.3));}
+  .tree.s{transform:scale(.7); border-bottom-color:#5d7d5e;}
+  .snow{position:absolute; left:0; right:0; top:56%; bottom:0;
+    background:linear-gradient(180deg,#fbf3e2 0%, #f0e2c8 55%, #e4d1b0 100%);
+    clip-path:polygon(0 14%, 100% 2%, 100% 100%, 0 100%);}
+  .ptrain{position:absolute; top:53%; left:10%; width:58%; height:6.5%;
+    background:linear-gradient(180deg,#c8563f 0 58%, #8e3b2b 58% 100%);
+    border-radius:10px; box-shadow:0 6px 14px rgba(120,70,40,.35); border:2px solid #6f2f22;}
+  .ptrain::before{content:""; position:absolute; inset:20% 5% auto 5%; height:32%;
+    background:repeating-linear-gradient(90deg,#f7e9c9 0 24px, transparent 24px 38px); border-radius:4px;}
+  .ptrain::after{content:""; position:absolute; right:-6%; top:-52%; width:13%; height:155%;
+    background:linear-gradient(180deg,#4b5a63,#31404a); border-radius:10px 16px 6px 6px; border:2px solid #26343c;}
+  .smoke{position:absolute; top:38%; left:66%; width:60px; height:40px;
+    background:radial-gradient(closest-side,#fdf6e7 55%, transparent), radial-gradient(closest-side,#f4e7cd 55%, transparent);
+    background-size:34px 26px, 26px 20px; background-position:0 12px, 30px 0; background-repeat:no-repeat; opacity:.9;}
+  .fade{position:absolute; left:0; right:0; bottom:0; height:52%;
+    background:linear-gradient(180deg, transparent 0%, rgba(247,239,224,.6) 40%, var(--paper) 78%);}
+
+  .brush{ /* štítek jako tah štětcem */
+    position:absolute; right:16px; top:16px; z-index:3;
+    background:var(--paper2); border:1.6px solid #dccdb0; border-radius:14px 4px 14px 4px;
+    font-size:11px; color:var(--muted); padding:5px 12px; font-style:italic;
+  }
+
+  .pscore2{display:flex; gap:8px; padding:14px 16px 0; position:relative; z-index:2;}
+  .pl{
+    flex:1; background:var(--paper2); border:1.6px solid #dccdb0; border-radius:13px;
+    padding:7px 11px; display:flex; align-items:center; gap:8px; opacity:.72; box-shadow:0 3px 0 #e3d5b8;
+  }
+  .pl.active{opacity:1; border-color:var(--coral); box-shadow:0 3px 0 var(--coral);}
+  .plname{font-size:13px; font-weight:650;} .plmeta{font-size:10px; color:var(--muted);}
+  .plscore{margin-left:auto; font-family:Georgia,serif; font-size:16px; font-weight:650;}
+
+  .qbox{
+    margin:auto 18px 18px; position:relative; z-index:2;
+    background:var(--paper2); border:2px solid #dccdb0; border-radius:20px;
+    padding:18px 20px; box-shadow:0 5px 0 #e3d5b8, 0 16px 34px rgba(120,90,50,.18);
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .qmeta{display:flex; align-items:center; gap:10px; font-size:11.5px; color:var(--muted); letter-spacing:.08em; text-transform:uppercase;}
+  .qq{font-family:Georgia,serif; font-size:clamp(19px,2.5vw,25px); font-weight:650; line-height:1.3;}
+  .qquip{font-style:italic; color:var(--muted); font-size:14px; margin-top:-6px;}
+  .ans4{display:grid; grid-template-columns:repeat(4,1fr); gap:10px;}
+  .a{
+    background:#fff; border:1.8px solid #dccdb0; border-radius:14px; text-align:center;
+    padding:14px 8px 12px; font-family:Georgia,serif; font-size:19px; font-weight:650;
+    box-shadow:0 3px 0 #e3d5b8; position:relative;
+  }
+  .a small{display:block; font-family:system-ui; font-size:10px; color:var(--muted); font-weight:600; letter-spacing:.06em; margin-top:2px;}
+  .a.ok{border-color:var(--ok); background:#eef6ee; box-shadow:0 3px 0 var(--ok);}
+  .a.ok small{color:var(--ok);}
+  .a.bad{border-color:var(--bad); background:#fbeeec; box-shadow:0 3px 0 var(--bad);}
+  .a.bad small{color:var(--bad);}
+  .voice2{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--muted); font-style:italic;}
+  .eq{display:inline-flex; gap:2px; align-items:flex-end; height:11px;}
+  .eq i{width:3px; background:var(--coral); border-radius:2px; animation:eq 1s infinite ease-in-out;}
+  .eq i:nth-child(1){height:5px}.eq i:nth-child(2){height:11px;animation-delay:.15s}
+  .eq i:nth-child(3){height:7px;animation-delay:.3s}.eq i:nth-child(4){height:10px;animation-delay:.45s}
+  @keyframes eq{0%,100%{transform:scaleY(.5)}50%{transform:scaleY(1)}}
+
+  .hlaska{
+    background:linear-gradient(135deg,#fdf3d7,#fbe9d2);
+    border:2px solid var(--ochre); border-radius:16px; padding:14px 18px;
+    box-shadow:0 4px 0 #c78f35;
+  }
+  .hl{font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#a8752a; margin-bottom:5px; display:flex; align-items:center; gap:8px; font-family:system-ui;}
+  .ht{font-family:Georgia,serif; font-size:clamp(16px,2.1vw,20px); line-height:1.45; font-weight:560;}
+  .expl{font-size:12.5px; color:var(--muted);}
+  .expl a{color:var(--teal); text-decoration:none; font-weight:600;}
+  .frow{display:flex; justify-content:space-between; align-items:center; gap:12px;}
+  .next{background:var(--teal); color:#fffdf6; font-family:Georgia,serif; font-weight:650; border-radius:13px; padding:11px 26px; font-size:15px; box-shadow:0 4px 0 #1f5f5c;}
+  .steal2{font-size:12px; color:#8a6fae; font-weight:700;}
+
+  /* zarámovaný obraz k otázce */
+  .play2{position:relative; display:flex; flex-direction:column; padding-bottom:16px;}
+  .picframe{
+    position:relative; margin:10px 16px 0; height:290px; border-radius:18px; overflow:hidden;
+    border:3px solid #fffdf6; outline:2px solid #d8c9ad;
+    box-shadow:0 10px 26px rgba(120,90,50,.28);
+  }
+  .pictag{
+    position:absolute; left:12px; bottom:10px; z-index:2;
+    background:rgba(255,250,240,.94); border:1.4px solid #dccdb0;
+    border-radius:12px 4px 12px 4px; font-size:11px; font-style:italic;
+    color:var(--muted); padding:4px 11px;
+  }
+  /* glóbus-medailon — viditelný během celé hry, otáčí se za otázkou */
+  .medal{
+    position:absolute; right:26px; bottom:-30px; z-index:5;
+    width:150px; height:150px; border-radius:50%; overflow:hidden;
+    background:radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
+    border:3px solid #fffdf6; outline:2px solid #d8c9ad;
+    box-shadow:inset -10px -8px 20px rgba(20,60,55,.35), 0 10px 22px rgba(60,90,80,.35);
+  }
+  .medalcap{
+    position:absolute; right:16px; bottom:-56px; z-index:5; width:130px; text-align:center;
+    font-family:Georgia,serif; font-style:italic; font-size:11.5px; color:var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<h1>Expedice — malovaná podoba</h1>
+<p class="lead">Tři obrazovky: nastavení hry, otázka, reveal. Vše v jednom výtvarném světě — teplý papír, kvašové ilustrace, patkové titulky. Malovaná tajga je CSS náhrada: v appce tam bude ilustrace z Gemini (<i>img/ru-q-pasma.jpg</i>, jednotný malířský styl).</p>
+
+<div class="label">Obrazovka 1 · Nastavení hry — „Nová výprava"</div>
+
+<div class="tablet">
+  <div class="setup">
+    <div class="setL">
+      <div class="shortcuts">
+        <span class="chip">Celý svět</span><span class="chip on">Evropa</span><span class="chip">Náhodných 10</span>
+      </div>
+      <div class="pglobe">
+        <div class="pland a"></div>
+        <div class="pland b sel"></div>
+        <div class="pland c"></div>
+        <span class="pin" style="left:62%; top:30%;">📍</span>
+      </div>
+      <div class="globehint">ťukni na zemi, nebo si nech vybrat…</div>
+    </div>
+
+    <div class="setR">
+      <div class="title">Nová výprava</div>
+      <div class="subtitle">Vybraná oblast: <b>Evropa</b> · 44 zemí</div>
+
+      <div class="card">
+        <div class="cardtitle"><span class="n">1</span>Kdo hraje?</div>
+        <div class="prow"><span class="pav" style="background:var(--p1)">A</span><span class="pnm">Anička</span><span class="age">9 let</span><span class="band d">děti</span><span class="diff"><span class="star on">★</span><span class="star on">★</span><span class="star">★</span></span></div>
+        <div class="prow"><span class="pav" style="background:var(--p2)">T</span><span class="pnm">Táta</span><span class="age">44 let</span><span class="band a">dospělí</span><span class="diff"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></div>
+        <div class="prow"><span class="pav" style="background:var(--p3)">V</span><span class="pnm">Vojta</span><span class="age">15 let</span><span class="band d">děti</span><span class="diff"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></div>
+        <div class="prow"><span class="pav" style="background:var(--p4)">M</span><span class="pnm">Markéta</span><span class="age">41 let</span><span class="band a">dospělí</span><span class="diff"><span class="star on">★</span><span class="star on">★</span><span class="star">★</span></span></div>
+        <div class="addp">+ přidat hráče (max 6) · věk určí pásmo i obtížnost, hvězdičkami doladíš</div>
+      </div>
+
+      <div class="card">
+        <div class="cardtitle"><span class="n">2</span>Témata</div>
+        <div class="chips">
+          <span class="chip on">Místa</span><span class="chip on">Příroda</span><span class="chip on">Lidé</span><span class="chip">Jídlo</span><span class="chip on">Historie</span>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="card">
+          <div class="cardtitle"><span class="n">3</span>Hlas</div>
+          <div class="toggle"><span class="sw"></span> s hlasem — tablet čte otázky i hlášky</div>
+        </div>
+        <div class="card">
+          <div class="cardtitle"><span class="n">4</span>Délka</div>
+          <div class="len"><span class="chip">rychlá · 6</span><span class="chip on">klasik · 10</span><span class="chip">maraton · 20</span></div>
+        </div>
+      </div>
+
+      <div class="poolnote">✓ pro tento výběr je připraveno 312 otázek</div>
+      <div class="go">Vyrazit! →</div>
+    </div>
+  </div>
+</div>
+
+<div class="label">Obrazovka 2 · Otázka — obrázek k otázce jako zarámovaný obraz</div>
+
+<div class="tablet">
+  <div class="play2">
+    <div class="pscore2">
+      <div class="pl active"><span class="pav" style="background:var(--p1); width:22px;height:22px;font-size:11px;">A</span><span><span class="plname">Anička</span><br><span class="plmeta">na tahu</span></span><span class="plscore">1200</span></div>
+      <div class="pl"><span class="pav" style="background:var(--p2); width:22px;height:22px;font-size:11px;">T</span><span><span class="plname">Táta</span></span><span class="plscore">1800</span></div>
+      <div class="pl"><span class="pav" style="background:var(--p3); width:22px;height:22px;font-size:11px;">V</span><span><span class="plname">Vojta</span></span><span class="plscore">900</span></div>
+      <div class="pl"><span class="pav" style="background:var(--p4); width:22px;height:22px;font-size:11px;">M</span><span><span class="plname">Markéta</span></span><span class="plscore">1500</span></div>
+    </div>
+
+    <div class="picframe">
+      <div class="scene">
+        <div class="sky"></div><div class="sun"></div><div class="hillsFar"></div>
+        <div class="forest">
+          <span class="tree" style="left:4%"></span><span class="tree s" style="left:11%"></span>
+          <span class="tree" style="left:19%"></span><span class="tree s" style="left:27%"></span>
+          <span class="tree" style="left:36%"></span><span class="tree s" style="left:44%"></span>
+          <span class="tree" style="left:56%"></span><span class="tree s" style="left:64%"></span>
+          <span class="tree" style="left:78%"></span><span class="tree s" style="left:86%"></span>
+          <span class="tree" style="left:93%"></span>
+        </div>
+        <div class="snow"></div><div class="ptrain"></div><div class="smoke"></div>
+      </div>
+      <div class="pictag">🖌 obrázek k otázce · img/ru-q-pasma.jpg</div>
+    </div>
+    <div class="medal" style="position:absolute; right:26px; top:292px;"><div class="pland a" style="width:36%;height:24%;left:10%;top:26%;"></div><div class="pland b sel" style="width:46%;height:30%;left:40%;top:18%;"></div></div>
+    <div class="medalcap" style="position:absolute; right:26px; top:448px; width:150px;">glóbus → Rusko</div>
+
+    <div class="qbox" style="margin:14px 16px 2px; position:static;">
+      <div class="qmeta">🇷🇺 Rusko · Fakta · otázka 4/10 <span class="voice2" style="margin-left:auto"><span class="eq"><i></i><i></i><i></i><i></i></span>hlas čte…</span></div>
+      <div class="qq">Kolika časovými pásmy se rozkládá Rusko?</div>
+      <div class="qquip">„Malá nápověda: víc, než kolik jich zvládneš prospat."</div>
+      <div class="ans4">
+        <div class="a">3<small>A</small></div>
+        <div class="a">7<small>B</small></div>
+        <div class="a">11<small>C</small></div>
+        <div class="a">24<small>D</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="label">Obrazovka 3 · Reveal — obraz se zmenší a ztlumí, hláška je hvězda</div>
+
+<div class="tablet">
+  <div class="play2">
+    <div class="pscore2">
+      <div class="pl active"><span class="pav" style="background:var(--p1); width:22px;height:22px;font-size:11px;">A</span><span><span class="plname">Anička</span><br><span class="plmeta">tipla D</span></span><span class="plscore">1200</span></div>
+      <div class="pl"><span class="pav" style="background:var(--p2); width:22px;height:22px;font-size:11px;">T</span><span><span class="plname">Táta</span></span><span class="plscore">1800</span></div>
+      <div class="pl"><span class="pav" style="background:var(--p3); width:22px;height:22px;font-size:11px;">V</span><span><span class="plname">Vojta</span></span><span class="plscore">900</span></div>
+      <div class="pl"><span class="pav" style="background:var(--p4); width:22px;height:22px;font-size:11px;">M</span><span><span class="plname">Markéta</span></span><span class="plscore">1500</span></div>
+    </div>
+
+    <div class="picframe" style="height:150px; filter:saturate(.7) brightness(.94);">
+      <div class="scene">
+        <div class="sky"></div><div class="sun"></div><div class="hillsFar"></div>
+        <div class="forest">
+          <span class="tree" style="left:4%"></span><span class="tree s" style="left:11%"></span>
+          <span class="tree" style="left:19%"></span><span class="tree s" style="left:27%"></span>
+          <span class="tree" style="left:36%"></span><span class="tree s" style="left:44%"></span>
+          <span class="tree" style="left:56%"></span><span class="tree s" style="left:64%"></span>
+          <span class="tree" style="left:78%"></span><span class="tree s" style="left:86%"></span>
+          <span class="tree" style="left:93%"></span>
+        </div>
+        <div class="snow"></div><div class="ptrain"></div><div class="smoke"></div>
+      </div>
+      <div class="pictag">⚡ Steal: Táta může sebrat!</div>
+    </div>
+    <div class="medal" style="position:absolute; right:26px; top:150px; width:118px; height:118px;"><div class="pland a" style="width:36%;height:24%;left:10%;top:26%;"></div><div class="pland b sel" style="width:46%;height:30%;left:40%;top:18%;"></div></div>
+    <div class="medalcap" style="position:absolute; right:26px; top:272px; width:118px;">Rusko</div>
+
+    <div class="qbox" style="margin:14px 16px 2px; position:static;">
+      <div class="ans4" style="grid-template-columns:1fr 1fr;">
+        <div class="a ok">11<small>SPRÁVNĚ</small></div>
+        <div class="a bad">24<small>ANIČČIN TIP</small></div>
+      </div>
+      <div class="hlaska">
+        <div class="hl"><span class="eq"><i></i><i></i><i></i><i></i></span>Hláška</div>
+        <div class="ht">„24? To by měl každý den snídani v jinou hodinu! Je jich jedenáct — i tak rekord světa."</div>
+      </div>
+      <div class="frow">
+        <div class="expl">Rusko má 11 časových pásem — nejvíc na světě. <a href="#">🔗 zdroj</a></div>
+        <div class="next">Další otázka →</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

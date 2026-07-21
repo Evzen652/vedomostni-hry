@@ -1,0 +1,9 @@
+# Claude Code lokální nastavení (per-stroj, neverzovat)
+.claude/settings.local.json
+
+# závislosti (kdyby se v budoucnu přidaly)
+node_modules/
+
+# OS smetí
+.DS_Store
+Thumbs.db
