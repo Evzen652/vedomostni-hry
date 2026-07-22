@@ -203,7 +203,11 @@
   box-shadow: 0 4px 0 #e3d5b8; font-family: inherit; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 4px;
   transition: transform .12s, box-shadow .12s; color: var(--ink); }
 .qz-tile:hover:not(.soon) { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; border-color: var(--teal); }
-.qz-tile-ic { font-size: 40px; line-height: 1; margin-bottom: 2px; }
+.qz-tile-ic { font-size: 40px; line-height: 1; margin-bottom: 2px; display: flex; align-items: center; justify-content: center; }
+.qz-tile-ic .ic-img { width: 92px; height: 92px; object-fit: cover; border-radius: 14px; display: block;
+  border: 3px solid #fffdf6; outline: 2px solid #e3d5b8; box-shadow: 0 6px 16px rgba(120,90,50,.24); transition: transform .12s; }
+.qz-tile:hover:not(.soon) .ic-img { transform: translateY(-2px) rotate(-1.5deg); }
+.qz-tile-ic .ic-fb { font-size: 40px; line-height: 1; align-items: center; justify-content: center; }
 .qz-tile-t { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; }
 .qz-tile-sub { font-size: 12px; color: var(--muted); font-weight: 600; }
 .qz-tile.soon { opacity: .55; cursor: not-allowed; box-shadow: 0 4px 0 #e8ddc6; }

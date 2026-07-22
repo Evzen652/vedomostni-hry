@@ -81,6 +81,8 @@
   // sekce („specifikace") — pořadí a ikony jako u karet na glóbu
   const SECTION_ORDER = ["Místa","Příroda","Lidé","Kultura & tradice","Umění","Sport","Jazyk & slova","Jídlo","Historie"];
   const SECTION_EMOJI = { "Místa":"📍","Příroda":"🌿","Lidé":"👥","Kultura & tradice":"🎭","Umění":"🎨","Sport":"🏆","Jazyk & slova":"🔤","Jídlo":"🍽️","Historie":"🏛️" };
+  // slugy pro ilustrace (assets/section-{slug}.jpg) — obrázek nahradí emoji, jakmile existuje
+  const SECTION_SLUG = { "Místa":"mista","Příroda":"priroda","Lidé":"lide","Kultura & tradice":"kultura","Umění":"umeni","Sport":"sport","Jazyk & slova":"jazyk","Jídlo":"jidlo","Historie":"historie" };
   let sessionMastered = [];
   function loadProg(){ try { const p=JSON.parse(localStorage.getItem(PROGRESS_KEY)||"{}"); return { correct:p.correct||{}, mastered:p.mastered||{} }; } catch(e){ return { correct:{}, mastered:{} }; } }
   function saveProg(p){ try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(p)); } catch(e){} }
@@ -336,11 +338,14 @@
     return `<div class="qz-pickhead"><button class="qz-back" id="qz-back">← zpět</button>
       <div class="qz-crumbs">${crumbs}</div></div>`;
   }
-  function tileHtml(o){ // {ic,t,sub,soon,attr}
+  function tileHtml(o){ // {ic,img,t,sub,soon,attr}
     const soon = o.soon ? " soon" : "";
+    const icInner = o.img
+      ? `<img class="ic-img" src="${o.img}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${o.ic}</span>`
+      : o.ic;
     return `<button class="qz-tile${soon}" ${o.attr||""} ${o.soon?"disabled":""}>
       ${o.soon?`<span class="qz-tbadge">Brzy</span>`:""}
-      <span class="qz-tile-ic">${o.ic}</span>
+      <span class="qz-tile-ic">${icInner}</span>
       <span class="qz-tile-t">${esc(o.t)}</span>
       ${o.sub?`<span class="qz-tile-sub">${esc(o.sub)}</span>`:""}</button>`;
   }
@@ -351,7 +356,7 @@
     const tiles = CONTINENTS.map(c => {
       const has = contHasQuestions(c.id);
       const n = countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length;
-      return tileHtml({ ic:c.emoji, t:c.name, sub: has ? (n+" "+plur(n,"země","země","zemí")) : "připravujeme",
+      return tileHtml({ ic:c.emoji, img:`assets/cont-${c.id}.jpg`, t:c.name, sub: has ? (n+" "+plur(n,"země","země","zemí")) : "připravujeme",
         soon:!has, attr:`data-cont="${c.id}"` });
     }).join("");
     body.innerHTML = `<div class="qz-screen qz-pick">
@@ -371,7 +376,7 @@
     const ccs = countriesInCont(cont);
     const tiles = ccs.length ? ccs.map(cc => {
       const n = qsForCc(cc).length;
-      return tileHtml({ ic:COUNTRY_FLAG[cc]||"🏳️", t:COUNTRY_BY_CC[cc]||cc,
+      return tileHtml({ ic:COUNTRY_FLAG[cc]||"🏳️", img:`assets/country-${cc}.jpg`, t:COUNTRY_BY_CC[cc]||cc,
         sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "brzy otázky",
         soon:!n, attr:`data-cc="${cc}"` });
     }).join("") : `<div class="qz-pick-empty">Tady zatím žádné země nejsou — brzy.</div>`;
@@ -390,10 +395,10 @@
     document.getElementById("qz-shell").style.transform="";
     const all = qsForCc(cc);
     const bySec = {}; for(const q of all){ const s=q.section||"—"; (bySec[s]=bySec[s]||[]).push(q); }
-    const allTile = tileHtml({ ic:"🎲", t:"Vše", sub: all.length+" "+plur(all.length,"otázka","otázky","otázek"), attr:`data-sec="__all__"` });
+    const allTile = tileHtml({ ic:"🎲", img:"assets/section-vse.jpg", t:"Vše", sub: all.length+" "+plur(all.length,"otázka","otázky","otázek"), attr:`data-sec="__all__"` });
     const secTiles = SECTION_ORDER.map(s => {
       const n = (bySec[s]||[]).length;
-      return tileHtml({ ic:SECTION_EMOJI[s]||"•", t:s,
+      return tileHtml({ ic:SECTION_EMOJI[s]||"•", img:`assets/section-${SECTION_SLUG[s]||"x"}.jpg`, t:s,
         sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "—",
         soon:!n, attr:`data-sec="${esc(s)}"` });
     }).join("");

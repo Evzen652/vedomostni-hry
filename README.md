@@ -18,4 +18,7 @@ npx http-server -p 8777 -c-1
   Kanonická verze karet žije v projektu Glóbus; sem se kopíruje ručně.
 - `img/` — obrázky
 - `assets/` — loga, fonty, dlaždice
-- `scripts/` — import otázek/obrázků/audia, export balíčku
+- `scripts/` — import otázek/obrázků/audia, export balíčku, generátor ilustrací (`gen-illustrations.ps1`)
+
+## Ilustrace
+Jak se tvoří malované ilustrace (pollinations.ai, styl, časté pasti) je popsané v [CLAUDE.md](CLAUDE.md).
