@@ -54,7 +54,7 @@
 
 /* ---- play ---- */
 .qz-play { position: relative; padding-bottom: 16px; }
-.qz-top { display: flex; gap: 8px; padding: 14px 16px 0; position: relative; z-index: 2; align-items: center; flex-wrap: wrap; }
+.qz-top { display: flex; gap: 8px; padding: 58px 16px 0; position: relative; z-index: 2; align-items: center; flex-wrap: wrap; }
 .qz-progress { font-family: 'Nunito', sans-serif; font-size: 13px; color: var(--muted); }
 .qz-scorepill { margin-left: auto; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px;
   padding: 6px 14px; font-family: 'Nunito', sans-serif; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; display: flex; gap: 8px; align-items: center; }
@@ -190,7 +190,7 @@
 .qz-modepick h2, .qz-modes, .qz-resume { position: relative; z-index: 1; }
 
 /* výběr tématu: kontinent → země → sekce */
-.qz-pick { align-items: center; text-align: center; gap: 16px; padding: 26px 22px 36px; }
+.qz-pick { align-items: center; text-align: center; gap: 16px; padding: 70px 22px 36px; }
 .qz-pick h2 { font-family: 'Nunito', sans-serif; font-size: 26px; font-weight: 800; }
 .qz-pickhead { width: 100%; max-width: 760px; display: flex; align-items: center; gap: 12px; }
 .qz-back { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 12px; padding: 7px 14px; cursor: pointer;
@@ -241,7 +241,7 @@
 .qz-sw.on::after { left: 23px; }
 .qz-setnote { font-size: 11.5px; color: var(--muted); font-style: italic; text-align: center; }
 
-.qz-scoreboard { display: flex; gap: 8px; padding: 14px 16px 0; flex-wrap: wrap; position: relative; z-index: 3; }
+.qz-scoreboard { display: flex; gap: 8px; padding: 58px 16px 0; flex-wrap: wrap; position: relative; z-index: 3; }
 .qz-pl { flex: 1; min-width: 120px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px; padding: 7px 10px;
   display: flex; align-items: center; gap: 8px; opacity: .72; box-shadow: 0 3px 0 #e3d5b8; cursor: pointer; font-family: inherit; color: var(--ink); }
 .qz-pl.active { opacity: 1; border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); }
