@@ -41,9 +41,28 @@
     <line x1="39" y1="39" x2="49" y2="21" stroke="#efe1c3" stroke-width="2.4" stroke-linecap="round"/>
     <rect x="8" y="45" width="48" height="3.4" rx="1.7" fill="#d9a441"/></svg>`;
 
+  // --- malé ikonky HUD (jednotné s paletou; velikost 1em, inline; žádné emoji) ---
+  const _sw = 'style="width:1em;height:1em;vertical-align:-0.14em;flex:none;display:inline-block"';
+  const ICO_STAR  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" stroke="#b98b3e" stroke-width="1" stroke-linejoin="round" d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 22l-5.3 2.8 1.1-5.9L3.5 15l5.9-.8z"/></svg>`;
+  const ICO_CLOCK = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="8" fill="#fdf7ea" stroke="#e2725b" stroke-width="2"/><path d="M12 9v4l3 2" stroke="#e2725b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 3h6" stroke="#e2725b" stroke-width="2" stroke-linecap="round"/></svg>`;
+  const ICO_BOLT  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#8a6fae" d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>`;
+  const ICO_SND   = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#3d3229"/><path d="M16 9c1.6 1.5 1.6 4.5 0 6M18.7 6.5c3 3 3 8 0 11" stroke="#3d3229" stroke-width="2" stroke-linecap="round"/></svg>`;
+  const ICO_SNDX  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#3d3229"/><path d="M17 10l5 4M22 10l-5 4" stroke="#3d3229" stroke-width="2" stroke-linecap="round"/></svg>`;
+  const ICO_GLOBE = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" fill="#2a7f7f"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" stroke="#fdf7ea" stroke-width="1.3"/></svg>`;
+  const ICO_SPARK = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6z"/></svg>`;
+  const ICO_TROPHY= `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M7 4h10v4a5 5 0 01-10 0V4z" fill="#d9a441" stroke="#b98b3e" stroke-width="1.4"/><path d="M7 6H4v1a3 3 0 003 3M17 6h3v1a3 3 0 01-3 3" stroke="#b98b3e" stroke-width="1.5"/><path d="M12 13v3M9.5 20h5M10.5 20l.4-4h2.2l.4 4" stroke="#b98b3e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const ICO_BRUSH = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M14 4l6 6-8 8-4 1 1-4z" fill="#e2725b" stroke="#b1543f" stroke-width="1.2" stroke-linejoin="round"/><path d="M4 20c2-4 5-4 6-3s1 4-3 6c-2 .6-3-1-3-3z" fill="#d9a441" stroke="#b98b3e" stroke-width="1.2"/></svg>`;
+  const ICO_FOLDER= `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M3 6h6l2 2h10v11H3z" fill="#d9a441" stroke="#b98b3e" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 10h18" stroke="#b98b3e" stroke-width="1.2"/></svg>`;
+  const ICO_LINK  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M9 15l6-6M8 12l-2 2a3.5 3.5 0 005 5l2-2M16 12l2-2a3.5 3.5 0 00-5-5l-2 2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const ICO_BOOK  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 5c3-1.2 6-1.2 8 0v15c-2-1.2-5-1.2-8 0zM20 5c-3-1.2-6-1.2-8 0v15c2-1.2 5-1.2 8 0z" fill="#fdf7ea" stroke="#2a7f7f" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+  const _MEDALCOL = ["#d9a441","#b9b3a6","#c08457"];
+  function medalSvg(i){ const c=_MEDALCOL[i]; if(!c) return (i+1)+"."; return `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M8 3l3 6M16 3l-3 6" stroke="#e2725b" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="6.2" fill="${c}" stroke="#00000022" stroke-width="1"/><circle cx="12" cy="15" r="3" fill="#ffffff40"/></svg>`; }
+  function arrowSvg(deg){ return `<svg style="width:1em;height:1em;vertical-align:-0.14em;display:inline-block;transform:rotate(${deg}deg)" viewBox="0 0 24 24" fill="none"><path d="M12 5v13M6 12l6 6 6-6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
+  function flagStamp(cc, cls){ return `<img class="${cls||"qz-stamp"}" src="assets/country-${cc}.jpg" alt="" onerror="this.style.display='none'">`; }
+
   let data = null, csVoice = null;
   const COLORS = ["#e2725b","#2a7f7f","#d9a441","#8a6fae","#7ba05b","#4e9e6f"];
-  const SIDES = [{k:"dole",deg:0,ic:"⬇"},{k:"nahoře",deg:180,ic:"⬆"},{k:"vlevo",deg:90,ic:"⬅"},{k:"vpravo",deg:270,ic:"➡"}];
+  const SIDES = [{k:"dole",deg:0},{k:"nahoře",deg:180},{k:"vlevo",deg:90},{k:"vpravo",deg:270}];
   const S = { mode:"solo", order:[], idx:0, band:"dospeli", answered:false,
               players:[], turn:0, round:1, totalRounds:5, qServed:0,
               voice:false, steal:false, rotate:"auto", manualRot:null,
@@ -164,7 +183,7 @@
     const allowSteal = S.mode==="party" && S.steal && q.type!=="estimate" && S.players.length>1;
     box.innerHTML = `
       <div class="qz-ans two"><div class="qz-a ok locked">${correctLabel}<small>SPRÁVNĚ</small></div>
-      <div class="qz-a bad locked">⏱<small>ČAS VYPRŠEL</small></div></div>
+      <div class="qz-a bad locked">${ICO_CLOCK}<small>ČAS VYPRŠEL</small></div></div>
       <div class="qz-hlaska"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}"</div></div>
       ${allowSteal ? stealHtml(q, "__timeout__") : frowHtml(q)}`;
     if(allowSteal) wireSteal(q, "__timeout__"); else wireFrow(q);
@@ -299,12 +318,12 @@
     document.getElementById("qz-shell").style.transform="";
     const saves=loadSaves(); const ids=Object.keys(saves).sort((a,b)=>saves[b].ts-saves[a].ts).slice(0,4);
     const resumeHtml = ids.length ? `<div class="qz-resume">
-      <div class="qz-resume-h">📂 Rozehrané výpravy</div>
+      <div class="qz-resume-h">${ICO_FOLDER} Rozehrané výpravy</div>
       ${ids.map(id=>{ const m=saves[id].meta;
         const where = m.mode==="party" ? ("kolo "+m.round+"/"+m.totalRounds) : ("otázka "+((m.idx||0)+1)+"/"+m.count);
         return `<div class="qz-resume-item" data-resume="${id}">
           <span class="qz-resume-faces">${(m.players||[]).map(p=>`<span class="qz-face" style="background:${p.color}">${esc((p.name||"?")[0])}</span>`).join("")}</span>
-          <span class="qz-resume-meta">${COUNTRY_FLAG[m.cc]||""} ${m.mode==="party"?"Párty":(m.school?"Škola":"Sólo")} · ${where}</span>
+          <span class="qz-resume-meta">${m.cc?flagStamp(m.cc):""} ${m.mode==="party"?"Párty":(m.school?"Škola":"Sólo")} · ${where}</span>
           <button class="qz-resume-del" data-del="${id}" title="smazat">✕</button></div>`; }).join("")}
     </div>` : "";
     body.innerHTML = `<div class="qz-screen qz-modepick">
@@ -403,8 +422,8 @@
         soon:!n, attr:`data-sec="${esc(s)}"` });
     }).join("");
     body.innerHTML = `<div class="qz-screen qz-pick">
-      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${FLAG} ${esc(COUNTRY)} › <b>Téma</b>`)}
-      <h2>${FLAG} ${esc(COUNTRY)} — vyber téma</h2>
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${flagStamp(cc)} ${esc(COUNTRY)} › <b>Téma</b>`)}
+      <h2>${flagStamp(cc)} ${esc(COUNTRY)} — vyber téma</h2>
       <div class="qz-tiles qz-tiles-sec">${allTile}${secTiles}</div></div>`;
     body.querySelector("#qz-back").addEventListener("click", () => renderCountryPick(S.sel.cont));
     body.querySelectorAll(".qz-tile[data-sec]:not(.soon)").forEach(b =>
@@ -421,7 +440,7 @@
     say("Vyber úroveň a promítni to třídě.");
     document.getElementById("qz-shell").style.transform="";
     body.innerHTML = `<div class="qz-screen qz-start">
-      <h2>🏫 Škola / projektor — ${FLAG} ${COUNTRY}</h2>
+      <h2>Škola / projektor — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <p>Otázky velké na plátno, třída odpovídá společně. Zvol obtížnost:</p>
       <div class="qz-bands">
         <button class="qz-chip" data-lvl="1">★ Lehká</button>
@@ -446,13 +465,13 @@
   function renderStart(){
     say("Vítej! Vyber, komu mám vyprávět — a vyrážíme.");
     body.innerHTML = `<div class="qz-screen qz-start">
-      <h2>${FLAG} ${COUNTRY} — sólo výprava</h2>
+      <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
       <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Odpovídej, a hlavně si užij hlášky. A kdo ví — možná někde číhá tajná „zlatá" špatná odpověď…</p>
       <div>
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Pro koho hraju?</div>
         <div class="qz-bands">
-          <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">🧒 děti</button>
-          <button class="qz-chip${S.band==="dospeli"?" on":""}" data-band="dospeli">🧑 dospělí</button>
+          <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">děti</button>
+          <button class="qz-chip${S.band==="dospeli"?" on":""}" data-band="dospeli">dospělí</button>
         </div>
       </div>
       <button class="qz-go" id="qz-start-go">Vyrazit! →</button>
@@ -486,11 +505,11 @@
       <input class="qz-pname-in" placeholder="jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name">
       <input class="qz-page-in" type="number" placeholder="věk" value="${esc(p.age||"")}" data-f="age">
       <span class="qz-bandtag ${p.band}">${p.band==="deti"?"děti":"dospělí"}</span>
-      <span class="qz-sides">${SIDES.map(s=>`<button class="qz-side${p.side===s.k?" on":""}" data-side="${s.k}" title="${s.k}">${s.ic}</button>`).join("")}</span>
+      <span class="qz-sides">${SIDES.map(s=>`<button class="qz-side${p.side===s.k?" on":""}" data-side="${s.k}" title="${s.k}">${arrowSvg(s.deg)}</button>`).join("")}</span>
       ${S.players.length>2?`<button class="qz-prem" data-rem="${i}" title="odebrat">✕</button>`:""}
     </div>`;
     body.innerHTML = `<div class="qz-screen qz-setup">
-      <h2>🎉 Nová výprava — ${FLAG} ${COUNTRY}</h2>
+      <h2>${ICO_SPARK} Nová výprava — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <div class="qz-setcard">
         <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">věk určí pásmo i hlášky</span></h3>
         <div id="qz-players">${S.players.map(prow).join("")}</div>
@@ -516,7 +535,7 @@
           </div>
         </div>
       </div>
-      <div class="qz-setnote">Fond: ${data.questions.length} otázek · ${FLAG} ${esc(COUNTRY)}${(S.sel&&S.sel.section&&S.sel.section!=="__all__")?" · "+esc(S.sel.section):""} · hráči ${S.players.length}</div>
+      <div class="qz-setnote">Fond: ${data.questions.length} otázek · ${flagStamp(S.sel&&S.sel.cc)} ${esc(COUNTRY)}${(S.sel&&S.sel.section&&S.sel.section!=="__all__")?" · "+esc(S.sel.section):""} · hráči ${S.players.length}</div>
       <button class="qz-go" id="qz-setup-go" style="align-self:center">Vyrazit! →</button>
     </div>`;
     // wiring
@@ -556,8 +575,8 @@
   function picframeHtml(q){
     return `<div class="qz-picframe" id="qz-pic">
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
-      <div class="qz-pic-fallback" id="qz-pic-fb"><span class="flag">${FLAG}</span><span class="sec">${esc(q.section||COUNTRY)}</span></div>
-      <div class="qz-pictag">🖌 obrázek k otázce · ${esc(q.country||COUNTRY)}</div>
+      <div class="qz-pic-fallback" id="qz-pic-fb"><span class="flag">${flagStamp(q.cc,"qz-flagbig")}</span><span class="sec">${esc(q.section||COUNTRY)}</span></div>
+      <div class="qz-pictag">${ICO_BRUSH} obrázek k otázce · ${esc(q.country||COUNTRY)}</div>
     </div>
     <div class="qz-medal" id="qz-medal"></div>
     <div class="qz-medalcap">glóbus → ${esc(q.country||COUNTRY)}</div>`;
@@ -578,18 +597,18 @@
         <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">na tahu</span>':""}</span>
         <span class="qz-plscore" data-score="${i}">${p.score}</span></button>`).join("");
       return `<div class="qz-scoreboard">${pills}</div>
-        <div class="qz-subtop"><span class="qz-progress">kolo ${S.round}/${S.totalRounds} · otázka ${n}</span><button class="qz-mute" id="qz-mute">${S.voice?"🔊":"🔇"}</button></div>`;
+        <div class="qz-subtop"><span class="qz-progress">kolo ${S.round}/${S.totalRounds} · otázka ${n}</span><button class="qz-mute" id="qz-mute">${S.voice?ICO_SND:ICO_SNDX}</button></div>`;
     }
     return `<div class="qz-top">
       <span class="qz-progress">otázka ${n}/${total}</span>
       <span style="margin-left:auto;display:flex;gap:8px;align-items:center">
-        <button class="qz-mute" id="qz-mute">${S.voice?"🔊":"🔇"}</button>
-        ${S.school?"":`<span class="qz-scorepill">⭐ <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak">série ${cur().streak}×</span>`:""}</span>`}
+        <button class="qz-mute" id="qz-mute">${S.voice?ICO_SND:ICO_SNDX}</button>
+        ${S.school?"":`<span class="qz-scorepill">${ICO_STAR} <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak">série ${cur().streak}×</span>`:""}</span>`}
       </span></div>`;
   }
   function wireTop(q){
     const mb=body.querySelector("#qz-mute");
-    if(mb) mb.addEventListener("click", () => { S.voice=!S.voice; mb.textContent=S.voice?"🔊":"🔇"; if(!S.voice) stopTTS(); else speakCurrent(q); });
+    if(mb) mb.addEventListener("click", () => { S.voice=!S.voice; mb.innerHTML=S.voice?ICO_SND:ICO_SNDX; if(!S.voice) stopTTS(); else speakCurrent(q); });
     body.querySelectorAll(".qz-pl[data-turn]").forEach(b => b.addEventListener("click", () => {
       if(S.mode!=="party") return; S.manualRot=sideDeg(S.players[+b.dataset.turn].side); applyRotation();
     }));
@@ -613,7 +632,7 @@
       ${picframeHtml(q)}
       <div class="qz-box" id="qz-box">
         <div class="qz-timerbar" id="qz-timerbar" style="display:none"><div></div></div>
-        <div class="qz-meta">${FLAG} ${esc(COUNTRY)} · ${esc(q.section||"")} · ${"★".repeat(q.difficulty||1)}${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
+        <div class="qz-meta">${flagStamp(q.cc)} ${esc(COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff">${"★".repeat(q.difficulty||1)}</span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
         <div class="qz-q">${esc(q.question)}</div>
         ${q.quip_question?`<div class="qz-quip">„${esc(resolveQuip(q.quip_question,b))}"</div>`:""}
         ${ansHtml}
@@ -635,9 +654,9 @@
 
   function frowHtml(q){
     return `<div class="qz-frow">
-      <div class="qz-expl">${esc(q.explanation||"")} ${q.source_url?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">🔗 zdroj</a>`:""}</div>
+      <div class="qz-expl">${esc(q.explanation||"")} ${q.source_url?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
       <div style="display:flex;gap:8px;align-items:center">
-        ${(q.source_card && data.cardsById[q.source_card])?`<button class="qz-more" id="qz-more">📖 Víc o tom</button>`:""}
+        ${(q.source_card && data.cardsById[q.source_card])?`<button class="qz-more" id="qz-more">${ICO_BOOK} Víc o tom</button>`:""}
         <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka →":"Konec →"}</button>
       </div>
     </div>`;
@@ -671,10 +690,10 @@
         ${correct?"":`<div class="qz-a bad locked">${esc(choice)}<small>${S.mode==="party"?esc(P.name):"TVŮJ TIP"}</small></div>`}
       </div>
       <div class="qz-hlaska${gold?" gold":""}">
-        <div class="qz-hl">${gold?"💰 zlatá odpověď":"hláška"}${gained?` · +${gained}`:""}</div>
+        <div class="qz-hl">${gold?ICO_STAR+" zlatá odpověď":"hláška"}${gained?` · +${gained}`:""}</div>
         <div class="qz-ht">„${esc(quipText||"")}"</div>
       </div>
-      ${masteredNow?`<div class="qz-masternote">🌍 <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ✨</div>`:""}
+      ${masteredNow?`<div class="qz-masternote">${ICO_GLOBE} <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ${ICO_SPARK}</div>`:""}
       ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`;
     if(allowSteal) wireSteal(q, choice); else wireFrow(q);
   }
@@ -683,7 +702,7 @@
     const stealer=S.players[(S.turn+1)%S.players.length];
     const remaining=shuffle([q.answer, ...(q.distractors||[])].filter(a=>String(a)!==String(wrongChoice)));
     return `<div class="qz-steal" id="qz-steal">
-      <div class="qz-hl" style="color:#8a6fae">⚡ Steal — ${esc(stealer.name)} může sebrat body</div>
+      <div class="qz-hl" style="color:#8a6fae">${ICO_BOLT} Steal — ${esc(stealer.name)} může sebrat body</div>
       <div class="qz-ans">${remaining.map((a,i)=>`<button class="qz-a" data-si="${i}">${esc(a)}</button>`).join("")}</div>
       <button class="qz-chip" id="qz-steal-skip">Přeskočit</button>
     </div>`;
@@ -720,7 +739,7 @@
     box.innerHTML = `
       <div class="qz-estline"><span>Tip${S.mode==="party"?" ("+esc(P.name)+")":""}: <b>${fmt(val)} ${esc(q.unit||"")}</b></span><span>Správně: <b>${fmt(ans)} ${esc(q.unit||"")}</b></span></div>
       <div class="qz-hlaska"><div class="qz-hl">hláška${gained?` · +${gained}`:""}</div><div class="qz-ht">„${esc(quipText)}"</div></div>
-      ${masteredNow?`<div class="qz-masternote">🌍 <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ✨</div>`:""}
+      ${masteredNow?`<div class="qz-masternote">${ICO_GLOBE} <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ${ICO_SPARK}</div>`:""}
       ${frowHtml(q)}`;
     wireFrow(q);
   }
@@ -733,7 +752,7 @@
       ${hasImg?`<img class="qz-cardimg" src="img/${esc(c.id)}.jpg" alt="" onerror="this.style.display='none'">`:""}
       <div class="qz-cardbody">
         <h3>${esc(c.headline||c.country||"")}</h3>
-        <p>${esc(c.fact||"")} ${c.source_url?`<a href="${esc(c.source_url)}" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none">🔗 zdroj</a>`:""}</p>
+        <p>${esc(c.fact||"")} ${c.source_url?`<a href="${esc(c.source_url)}" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none">${ICO_LINK} zdroj</a>`:""}</p>
         ${c.voice?`<p class="qz-cardvoice">${esc(c.voice)}</p>`:""}
         <button class="qz-cardclose">Zpět ke hře</button>
       </div>
@@ -761,17 +780,16 @@
     const winner=sorted[0];
     const vic = (data.fondy && data.fondy.victory) ? pick(resolveQuip(data.fondy.victory, winner.band)) : "Máme vítěze!";
     say(vic); if(S.voice) speakTTS(winner.name+" vyhrává! "+vic);
-    const medals=["🥇","🥈","🥉"];
     const rows=sorted.map((p,i)=>`<div class="qz-standrow${i===0?" win":""}">
-      <span class="qz-rank">${medals[i]||(i+1)+"."}</span>
+      <span class="qz-rank">${medalSvg(i)}</span>
       <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
       <span class="qz-standname">${esc(p.name)}</span>
       <span class="qz-standscore">${p.score}</span></div>`).join("");
     body.innerHTML=`<div class="qz-screen qz-end">
-      <h2>🏆 ${esc(winner.name)} vítězí!</h2>
+      <h2>${ICO_TROPHY} ${esc(winner.name)} vítězí!</h2>
       <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}"</div></div>
       <div class="qz-standings">${rows}</div>
-      ${sessionMastered.length?`<div class="qz-masternote">🌍 Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ✨</div>`:""}
+      ${sessionMastered.length?`<div class="qz-masternote">${ICO_GLOBE} Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ${ICO_SPARK}</div>`:""}
       <div class="qz-endrow"><button class="qz-go" id="qz-again">Odveta →</button><button class="qz-chip" id="qz-home">Domů →</button></div>
     </div>`;
     body.querySelector("#qz-again").addEventListener("click", startParty);
@@ -788,7 +806,7 @@
       <h2>Výprava dokončena!</h2>
       <div class="qz-endscore">${score}</div>
       <p style="color:var(--muted)">z ${S.order.length} otázek · teoretické maximum ${max} bodů</p>
-      ${sessionMastered.length?`<div class="qz-masternote">🌍 Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ✨</div>`:""}
+      ${sessionMastered.length?`<div class="qz-masternote">${ICO_GLOBE} Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ${ICO_SPARK}</div>`:""}
       <div class="qz-endrow">
         <button class="qz-go" id="qz-again">Hrát znovu →</button>
         <button class="qz-chip" id="qz-home">Domů →</button>

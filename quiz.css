@@ -228,7 +228,7 @@
 .qz-bandtag { font-size: 11px; color: #fffdf6; border-radius: 12px; padding: 3px 9px; }
 .qz-bandtag.deti { background: var(--leaf); } .qz-bandtag.dospeli { background: var(--teal); }
 .qz-sides { display: flex; gap: 4px; }
-.qz-side { width: 26px; height: 26px; border-radius: 8px; border: 1.4px solid #dccdb0; background: #fff; cursor: pointer; font-size: 13px; color: var(--muted); padding: 0; }
+.qz-side { width: 26px; height: 26px; border-radius: 8px; border: 1.4px solid #dccdb0; background: #fff; cursor: pointer; font-size: 15px; color: var(--muted); padding: 0; display: inline-flex; align-items: center; justify-content: center; }
 .qz-side.on { background: var(--coral); border-color: var(--coral); color: #fffdf6; }
 .qz-prem { background: none; border: none; color: var(--bad); cursor: pointer; font-size: 16px; padding: 2px 6px; }
 .qz-addp { color: var(--teal); font-size: 13px; font-weight: 600; cursor: pointer; background: none; border: none; padding: 6px 0 0; font-family: inherit; }
@@ -250,7 +250,15 @@
 .qz-plturn { font-size: 10px; color: var(--coral); font-weight: 700; }
 .qz-plscore { margin-left: auto; font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; }
 .qz-subtop { display: flex; align-items: center; gap: 10px; padding: 8px 16px 0; position: relative; z-index: 3; }
-.qz-mute { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 10px; padding: 5px 10px; cursor: pointer; font-size: 15px; box-shadow: 0 2px 0 #e3d5b8; }
+.qz-mute { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 10px; padding: 5px 10px; cursor: pointer; font-size: 15px; box-shadow: 0 2px 0 #e3d5b8; display: inline-flex; align-items: center; }
+
+/* razítko vlajky = malá ilustrace země (nahrazuje vlajkové emoji) */
+.qz-stamp { width: 1.5em; height: 1.5em; border-radius: 5px; object-fit: cover; vertical-align: -0.42em;
+  border: 1.5px solid #fffdf6; outline: 1px solid #d8c9ad; box-shadow: 0 1px 3px rgba(120,90,50,.28); }
+.qz-flagbig { width: 92px; height: 92px; border-radius: 16px; object-fit: cover;
+  border: 3px solid #fffdf6; outline: 2px solid #d8c9ad; box-shadow: 0 8px 20px rgba(120,90,50,.26); }
+.qz-diff { display: inline-flex; align-items: center; gap: 1px; color: #d9a441; letter-spacing: 0; }
+.qz-meta .qz-stamp { vertical-align: middle; }
 
 .qz-steal { border-top: 1.5px dashed #cdbfa2; margin-top: 4px; padding-top: 10px; display: flex; flex-direction: column; gap: 8px; }
 
