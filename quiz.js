@@ -441,7 +441,7 @@
     document.getElementById("qz-shell").style.transform="";
     body.innerHTML = `<div class="qz-screen qz-start">
       <h2>Škola / projektor — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
-      <p>Otázky velké na plátno, třída odpovídá společně. Zvol obtížnost:</p>
+      <p>Velké otázky na plátno, celá třída hádá naráz — trocha vědění, hromada smíchu. Zvol obtížnost:</p>
       <div class="qz-bands">
         <button class="qz-chip" data-lvl="1">★ Lehká</button>
         <button class="qz-chip" data-lvl="2">★★ Střední</button>
@@ -466,9 +466,9 @@
     say("Vítej! Vyber, komu mám vyprávět — a vyrážíme.");
     body.innerHTML = `<div class="qz-screen qz-start">
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
-      <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Odpovídej, a hlavně si užij hlášky. A kdo ví — možná někde číhá tajná „zlatá" špatná odpověď…</p>
+      <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Většinu do večeře zapomeneš — ten smích naštěstí ne. A někde číhá tajná „zlatá" špatná odpověď: jediná, na kterou budeš pyšný.</p>
       <div>
-        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Pro koho hraju?</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-bands">
           <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">děti</button>
           <button class="qz-chip${S.band==="dospeli"?" on":""}" data-band="dospeli">dospělí</button>
