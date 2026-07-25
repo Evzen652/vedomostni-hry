@@ -36,7 +36,9 @@
   .tname{ font-family:'Nunito', sans-serif; font-size:21px; font-weight:650; }
   .tstat{ font-size:13px; font-weight:700; color:var(--muted); }
   .tstat.play{ color:#fffdf6; background:var(--coral); padding:9px 24px; border-radius:14px;
-    box-shadow:0 4px 0 #b1543f, 0 8px 18px rgba(226,114,91,.35); font-family:'Nunito', sans-serif; font-size:15px; }
+    box-shadow:0 4px 0 #b1543f, 0 8px 18px rgba(226,114,91,.35); font-family:'Nunito', sans-serif; font-size:15px;
+    display:inline-flex; align-items:center; gap:7px; }
+  .tstat.play .arrow-ico{ width:22px; height:15px; flex:none; }
   .topic.soon{ opacity:.7; }
   .topic.soon .frame{ filter:saturate(.85); }
   .topic.soon .badge{ position:absolute; top:12px; right:12px; background:var(--ochre); color:#fffdf6;
@@ -50,14 +52,16 @@
   <header>
     <img class="logo" src="assets/logo.jpg" alt="Vědomostní hry — logo">
     <h1>Vědomostní hry</h1>
-    <p class="sub">Hlavní města zase zapomenete — smích vám ale zůstane.</p>
   </header>
 
   <div class="topics">
     <a class="topic" href="hra.html">
       <div class="frame"><img src="assets/topic-zemepis.jpg" alt="Zeměpis"></div>
       <div class="tname">Zeměpis</div>
-      <div class="tstat play">Hrát →</div>
+      <div class="tstat play">Hrát <svg class="arrow-ico" viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M2.5 13c9-3.4 21-2.6 29-2" stroke="#fffdf6" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M23.5 4.5c3.5 2.4 6.7 4.4 10 6.4-3.4 2.2-7 4-10.8 6.4" stroke="#fffdf6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg></div>
     </a>
     <div class="topic soon">
       <div class="badge">Brzy</div>
@@ -72,7 +76,5 @@
       <div class="tstat">Připravujeme</div>
     </div>
   </div>
-
-  <p class="foot">Sólo · s partou u stolu · ve škole · 2–6 hráčů · na jednom tabletu · napříč generacemi · další témata brzy</p>
 </body>
 </html>

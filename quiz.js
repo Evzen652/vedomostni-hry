@@ -58,6 +58,8 @@
   const _MEDALCOL = ["#d9a441","#b9b3a6","#c08457"];
   function medalSvg(i){ const c=_MEDALCOL[i]; if(!c) return (i+1)+"."; return `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M8 3l3 6M16 3l-3 6" stroke="#e2725b" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="6.2" fill="${c}" stroke="#00000022" stroke-width="1"/><circle cx="12" cy="15" r="3" fill="#ffffff40"/></svg>`; }
   function arrowSvg(deg){ return `<svg style="width:1em;height:1em;vertical-align:-0.14em;display:inline-block;transform:rotate(${deg}deg)" viewBox="0 0 24 24" fill="none"><path d="M12 5v13M6 12l6 6 6-6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
+  function handArrowSvg(flip){ return `<svg style="width:1.5em;height:.95em;vertical-align:-.15em;display:inline-block${flip?";transform:scaleX(-1)":""}" viewBox="0 0 40 24" fill="none"><path d="M2.5 13c9-3.4 21-2.6 29-2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M23.5 4.5c3.5 2.4 6.7 4.4 10 6.4-3.4 2.2-7 4-10.8 6.4" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
+  function checkSvg(){ return `<svg viewBox="0 0 40 32" fill="none"><path d="M4 17c3 3.5 6 7.5 9.5 9.5C19.5 20 25 13.5 35 5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
   function flagStamp(cc, cls){ return `<img class="${cls||"qz-stamp"}" src="assets/country-${cc}.jpg" alt="" onerror="this.style.display='none'">`; }
 
   let data = null, csVoice = null;
@@ -292,20 +294,35 @@
     data.cardsById = data.cardsByCc[cc];
   }
   // dostupnost otázek
-  function qsForCc(cc){ return (data.qByCc && data.qByCc[cc]) || []; }
+  function qsForCc(cc){
+    if(!data.qByCc) return [];
+    if(Array.isArray(cc)) return cc.flatMap(c => data.qByCc[c] || []);
+    return data.qByCc[cc] || [];
+  }
   function countriesInCont(cont){ return Object.keys(COUNTRY_BY_CC).filter(cc => COUNTRY_CONT[cc]===cont); }
   function contHasQuestions(cont){ return countriesInCont(cont).some(cc => qsForCc(cc).length>0); }
-  // nastaví vybranou zemi + načte karty; pool otázek pak dořeší applyPool()
-  async function selectCountry(cc){
-    S.sel = S.sel || {}; S.sel.cc = cc; S.sel.cont = COUNTRY_CONT[cc];
-    COUNTRY = COUNTRY_BY_CC[cc] || cc.toUpperCase(); FLAG = COUNTRY_FLAG[cc] || "🏳️";
-    await loadCardsFor(cc);
+  // nastaví vybrané země + načte karty; pool otázek pak dořeší applyPool()
+  async function selectCountries(ccs){
+    S.sel = S.sel || {}; S.sel.ccs = ccs; S.sel.cc = ccs.length === 1 ? ccs[0] : null;
+    if(ccs.length === 1){
+      const cc = ccs[0]; COUNTRY = COUNTRY_BY_CC[cc] || cc.toUpperCase(); FLAG = COUNTRY_FLAG[cc] || "🏳️";
+      await loadCardsFor(cc);
+    } else {
+      COUNTRY = ccs.length + " " + plur(ccs.length, "země", "země", "zemí"); FLAG = "";
+      await Promise.all(ccs.map(cc => loadCardsFor(cc)));
+      data.cardsById = Object.assign({}, ...ccs.map(cc => data.cardsByCc[cc] || {}));
+    }
   }
+  async function selectCountry(cc){ await selectCountries([cc]); }
   // sestaví fond otázek podle vybrané země a sekce (null/„__all__" = vše)
   function applyPool(){
-    const all = qsForCc(S.sel && S.sel.cc);
+    const cc = S.sel && (S.sel.ccs || S.sel.cc);
+    const all = qsForCc(cc);
     const sec = S.sel && S.sel.section;
-    const pool = (sec && sec!=="__all__") ? all.filter(q => (q.section||"")===sec) : all;
+    let pool;
+    if (!sec || sec === "__all__") { pool = all; }
+    else if (Array.isArray(sec)) { pool = all.filter(q => sec.includes(q.section||"")); }
+    else { pool = all.filter(q => (q.section||"") === sec); }
     data.questions = pool.length ? pool : all;
   }
 
@@ -330,9 +347,9 @@
       <div class="qz-globebg" id="qz-globebg"></div>
       <h2>Zeměpis</h2>
       <div class="qz-modes">
-        <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo</div><div class="d">Trénuj sám. Otázky, hlášky a kus světa jen pro tebe.</div></button>
-        <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty · 2–6</div><div class="d">Jeden tablet, celý stůl. Hostitel čte, vy se smějete.</div></button>
-        <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola</div><div class="d">Otázky na projektor, třída hádá společně.</div></button>
+        <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo</div><div class="d">Nikdo nezmerčí, co nevíš. Ty to ale brzo zjistíš...</div></button>
+        <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty hra</div><div class="d">2 až 6 hráčů. Jeden bude tvrdit, že věděl.</div></button>
+        <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola</div><div class="d">Třída hádá. Aspoň někdo musí něco vědět...</div></button>
       </div>
       ${resumeHtml}
     </div>`;
@@ -353,18 +370,20 @@
   function plur(n, one, few, many){ n=Math.abs(n); if(n===1) return one; if(n>=2&&n<=4) return few; return many; }
   const MODE_LABEL = { solo:"Sólo", party:"Párty", school:"Škola" };
   function beginPick(mode){ S.pickMode=mode; S.sel={}; renderContinentPick(); }
+  function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?s[0]:s.length+" témata"; return s; }
   function pickHeadHtml(crumbs){
-    return `<div class="qz-pickhead"><button class="qz-back" id="qz-back">← zpět</button>
+    return `<div class="qz-pickhead"><button class="qz-back" id="qz-back">${handArrowSvg(true)} zpět</button>
       <div class="qz-crumbs">${crumbs}</div></div>`;
   }
-  function tileHtml(o){ // {ic,img,t,sub,soon,attr}
+  function tileHtml(o){ // {ic,img,t,sub,soon,attr,selectable}
     const soon = o.soon ? " soon" : "";
     const icInner = o.img
       ? `<img class="ic-img" src="${o.img}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${o.ic}</span>`
       : o.ic;
+    const check = o.selectable ? `<span class="qz-tile-check">${checkSvg()}</span>` : "";
     return `<button class="qz-tile${soon}" ${o.attr||""} ${o.soon?"disabled":""}>
       ${o.soon?`<span class="qz-tbadge">Brzy</span>`:""}
-      <span class="qz-tile-ic">${icInner}</span>
+      <span class="qz-tile-ic">${icInner}${check}</span>
       <span class="qz-tile-t">${esc(o.t)}</span>
       ${o.sub?`<span class="qz-tile-sub">${esc(o.sub)}</span>`:""}</button>`;
   }
@@ -376,36 +395,65 @@
       const has = contHasQuestions(c.id);
       const n = countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length;
       return tileHtml({ ic:c.emoji, img:`assets/cont-${c.id}.jpg`, t:c.name, sub: has ? (n+" "+plur(n,"země","země","zemí")) : "připravujeme",
-        soon:!has, attr:`data-cont="${c.id}"` });
+        soon:!has, selectable:true, attr:`data-cont="${c.id}"` });
     }).join("");
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › <b>Kontinent</b>`)}
       <h2>Vyber kontinent</h2>
-      <div class="qz-tiles">${tiles}</div></div>`;
+      <div class="qz-tiles">${tiles}</div>
+      <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cont-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>
+    </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderModePick);
-    body.querySelectorAll(".qz-tile[data-cont]:not(.soon)").forEach(b =>
-      b.addEventListener("click", () => renderCountryPick(b.dataset.cont)));
+    const selected = new Set();
+    const startBtn = body.querySelector("#qz-cont-start");
+    body.querySelectorAll(".qz-tile[data-cont]:not(.soon)").forEach(b => {
+      b.addEventListener("click", () => {
+        const cont = b.dataset.cont;
+        if(selected.has(cont)){ selected.delete(cont); b.classList.remove("sel"); }
+        else { selected.add(cont); b.classList.add("sel"); }
+        startBtn.disabled = selected.size === 0;
+      });
+    });
+    startBtn.addEventListener("click", () => { if(selected.size) renderCountryPick([...selected]); });
   }
 
-  function renderCountryPick(cont){
-    S.sel.cont = cont;
-    const c = CONTINENTS.find(x=>x.id===cont);
+  function renderCountryPick(conts){
+    const contsArr = Array.isArray(conts) ? conts : [conts];
+    S.sel = S.sel || {}; S.sel.conts = contsArr;
+    const contNames = contsArr.map(id => { const c = CONTINENTS.find(x=>x.id===id); return c ? c.name : id; });
+    const contLabel = contsArr.length === 1 ? contNames[0] : contsArr.length + " kontinenty";
     say("A do které země?");
     document.getElementById("qz-shell").style.transform="";
-    const ccs = countriesInCont(cont);
-    const tiles = ccs.length ? ccs.map(cc => {
+    const ccList = contsArr.flatMap(cont => countriesInCont(cont));
+    const hasSome = ccList.some(cc => qsForCc(cc).length > 0);
+    const tiles = ccList.length ? ccList.map(cc => {
       const n = qsForCc(cc).length;
       return tileHtml({ ic:COUNTRY_FLAG[cc]||"🏳️", img:`assets/country-${cc}.jpg`, t:COUNTRY_BY_CC[cc]||cc,
         sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "brzy otázky",
-        soon:!n, attr:`data-cc="${cc}"` });
+        soon:!n, selectable:true, attr:`data-cc="${cc}"` });
     }).join("") : `<div class="qz-pick-empty">Tady zatím žádné země nejsou — brzy.</div>`;
     body.innerHTML = `<div class="qz-screen qz-pick">
-      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(c?c.name:"")} › <b>Země</b>`)}
-      <h2>${esc(c?c.name:"")} — vyber zemi</h2>
-      <div class="qz-tiles">${tiles}</div></div>`;
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(contLabel)} › <b>Země</b>`)}
+      <h2>${esc(contLabel)} — vyber zemi</h2>
+      <div class="qz-tiles">${tiles}</div>
+      ${hasSome ? `<div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cc-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>` : ""}
+    </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderContinentPick);
-    body.querySelectorAll(".qz-tile[data-cc]:not(.soon)").forEach(b =>
-      b.addEventListener("click", async () => { await selectCountry(b.dataset.cc); renderSectionPick(); }));
+    const selected = new Set();
+    const startBtn = body.querySelector("#qz-cc-start");
+    body.querySelectorAll(".qz-tile[data-cc]:not(.soon)").forEach(b => {
+      b.addEventListener("click", () => {
+        const cc = b.dataset.cc;
+        if(selected.has(cc)){ selected.delete(cc); b.classList.remove("sel"); }
+        else { selected.add(cc); b.classList.add("sel"); }
+        if(startBtn) startBtn.disabled = selected.size === 0;
+      });
+    });
+    if(startBtn) startBtn.addEventListener("click", async () => {
+      if(!selected.size) return;
+      await selectCountries([...selected]);
+      renderSectionPick();
+    });
   }
 
   function renderSectionPick(){
@@ -414,20 +462,45 @@
     document.getElementById("qz-shell").style.transform="";
     const all = qsForCc(cc);
     const bySec = {}; for(const q of all){ const s=q.section||"—"; (bySec[s]=bySec[s]||[]).push(q); }
-    const allTile = tileHtml({ ic:"🎲", img:"assets/section-vse.jpg", t:"Vše", sub: all.length+" "+plur(all.length,"otázka","otázky","otázek"), attr:`data-sec="__all__"` });
     const secTiles = SECTION_ORDER.map(s => {
       const n = (bySec[s]||[]).length;
       return tileHtml({ ic:SECTION_EMOJI[s]||"•", img:`assets/section-${SECTION_SLUG[s]||"x"}.jpg`, t:s,
         sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "—",
-        soon:!n, attr:`data-sec="${esc(s)}"` });
+        soon:!n, selectable:true, attr:`data-sec="${esc(s)}"` });
     }).join("");
+    const allTile = tileHtml({ ic:"🎲", img:"assets/section-vse.jpg", t:"Vše", selectable:true,
+      sub: all.length+" "+plur(all.length,"otázka","otázky","otázek"), attr:`data-sec="__all__"` });
     body.innerHTML = `<div class="qz-screen qz-pick">
-      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${flagStamp(cc)} ${esc(COUNTRY)} › <b>Téma</b>`)}
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(COUNTRY)} › <b>Téma</b>`)}
       <h2>${flagStamp(cc)} ${esc(COUNTRY)} — vyber téma</h2>
-      <div class="qz-tiles qz-tiles-sec">${allTile}${secTiles}</div></div>`;
-    body.querySelector("#qz-back").addEventListener("click", () => renderCountryPick(S.sel.cont));
-    body.querySelectorAll(".qz-tile[data-sec]:not(.soon)").forEach(b =>
-      b.addEventListener("click", () => { S.sel.section = b.dataset.sec; applyPool(); afterPick(); }));
+      <div class="qz-tiles qz-tiles-sec">${secTiles}${allTile}</div>
+      <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
+    </div>`;
+    body.querySelector("#qz-back").addEventListener("click", () => renderCountryPick(S.sel.conts || [S.sel.cont]));
+    const selected = new Set();
+    const startBtn = body.querySelector("#qz-sec-start");
+    function syncStart(){
+      startBtn.disabled = selected.size === 0;
+    }
+    body.querySelectorAll(".qz-tile[data-sec]:not(.soon)").forEach(b => {
+      b.addEventListener("click", () => {
+        const sec = b.dataset.sec;
+        if(sec === "__all__"){
+          if(selected.has("__all__")){ selected.clear(); b.classList.remove("sel"); }
+          else { selected.clear(); body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel")); selected.add("__all__"); b.classList.add("sel"); }
+        } else {
+          if(selected.has("__all__")){ selected.delete("__all__"); body.querySelector(".qz-tile[data-sec='__all__']")?.classList.remove("sel"); }
+          if(selected.has(sec)){ selected.delete(sec); b.classList.remove("sel"); }
+          else { selected.add(sec); b.classList.add("sel"); }
+        }
+        syncStart();
+      });
+    });
+    startBtn.addEventListener("click", () => {
+      if(!selected.size) return;
+      S.sel.section = selected.has("__all__") ? "__all__" : [...selected];
+      applyPool(); afterPick();
+    });
   }
   function afterPick(){
     if(S.pickMode==="party") renderSetup();
@@ -439,7 +512,9 @@
   function renderSchoolStart(){
     say("Vyber úroveň a promítni to třídě.");
     document.getElementById("qz-shell").style.transform="";
+    const _cLabel2=esc(COUNTRY);
     body.innerHTML = `<div class="qz-screen qz-start">
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${_cLabel2} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>Škola / projektor — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <p>Velké otázky na plátno, celá třída hádá naráz — trocha vědění, hromada smíchu. Zvol obtížnost:</p>
       <div class="qz-bands">
@@ -448,6 +523,7 @@
         <button class="qz-chip on" data-lvl="3">★★★ Vše</button>
       </div>
     </div>`;
+    body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     body.querySelectorAll("[data-lvl]").forEach(b => b.addEventListener("click", () => startSchool(+b.dataset.lvl)));
   }
   function startSchool(level){
@@ -464,7 +540,9 @@
 
   function renderStart(){
     say("Vítej! Vyber, komu mám vyprávět — a vyrážíme.");
+    const _cLabel=esc(COUNTRY);
     body.innerHTML = `<div class="qz-screen qz-start">
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${_cLabel} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
       <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Většinu do večeře zapomeneš — ten smích naštěstí ne. A někde číhá tajná „zlatá" špatná odpověď: jediná, na kterou budeš pyšný.</p>
       <div>
@@ -476,6 +554,7 @@
       </div>
       <button class="qz-go" id="qz-start-go">Vyrazit! →</button>
     </div>`;
+    body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     body.querySelectorAll(".qz-chip[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; renderStart(); }));
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
@@ -508,7 +587,9 @@
       <span class="qz-sides">${SIDES.map(s=>`<button class="qz-side${p.side===s.k?" on":""}" data-side="${s.k}" title="${s.k}">${arrowSvg(s.deg)}</button>`).join("")}</span>
       ${S.players.length>2?`<button class="qz-prem" data-rem="${i}" title="odebrat">✕</button>`:""}
     </div>`;
+    const _cLabel3=esc(COUNTRY);
     body.innerHTML = `<div class="qz-screen qz-setup">
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${_cLabel3} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>${ICO_SPARK} Nová výprava — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <div class="qz-setcard">
         <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">věk určí pásmo i hlášky</span></h3>
@@ -539,6 +620,7 @@
       <button class="qz-go" id="qz-setup-go" style="align-self:center">Vyrazit! →</button>
     </div>`;
     // wiring
+    body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     body.querySelectorAll(".qz-prow").forEach(row => {
       const i = +row.dataset.i;
       row.querySelector('[data-f="name"]').addEventListener("input", e => { S.players[i].name=e.target.value; row.querySelector(".qz-pav").textContent=(e.target.value||"?")[0]; });
