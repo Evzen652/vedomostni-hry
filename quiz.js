@@ -421,7 +421,7 @@
     const contsArr = Array.isArray(conts) ? conts : [conts];
     S.sel = S.sel || {}; S.sel.conts = contsArr;
     const contNames = contsArr.map(id => { const c = CONTINENTS.find(x=>x.id===id); return c ? c.name : id; });
-    const contLabel = contsArr.length === 1 ? contNames[0] : contsArr.length + " kontinenty";
+    const contLabel = contsArr.length === 1 ? contNames[0] : contsArr.length + " " + plur(contsArr.length, "kontinent", "kontinenty", "kontinentů");
     say("A do které země?");
     document.getElementById("qz-shell").style.transform="";
     const ccList = contsArr.flatMap(cont => countriesInCont(cont));
