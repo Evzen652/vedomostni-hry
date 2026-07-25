@@ -473,7 +473,7 @@
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(COUNTRY)} › <b>Téma</b>`)}
       <h2>${flagStamp(cc)} ${esc(COUNTRY)} — vyber téma</h2>
-      <div class="qz-tiles qz-tiles-sec">${secTiles}${allTile}</div>
+      <div class="qz-tiles qz-tiles-sec">${secTiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", () => renderCountryPick(S.sel.conts || [S.sel.cont]));
