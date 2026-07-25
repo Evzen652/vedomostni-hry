@@ -457,7 +457,7 @@
   }
 
   function renderSectionPick(){
-    const cc = S.sel.cc;
+    const cc = S.sel.ccs || S.sel.cc;
     say(`${COUNTRY} — a na co se zaměříme?`);
     document.getElementById("qz-shell").style.transform="";
     const all = qsForCc(cc);
