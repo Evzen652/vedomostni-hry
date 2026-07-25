@@ -227,7 +227,8 @@
   box-shadow: 0 4px 0 #b1543f, 0 8px 18px rgba(226,114,91,.3); transition: transform .14s, box-shadow .14s; }
 .qz-btn-start:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 0 #b1543f, 0 12px 24px rgba(226,114,91,.35); }
 .qz-btn-start:disabled { opacity: .38; cursor: not-allowed; box-shadow: 0 3px 0 #cca090; }
-.qz-tiles-sec { grid-template-columns: repeat(3, 1fr); }
+.qz-tiles-sec { grid-template-columns: repeat(2, 1fr); }
+@media (min-width:600px) { .qz-tiles-sec { grid-template-columns: repeat(3, 1fr); } }
 .qz-pick-empty { grid-column: 1 / -1; color: var(--muted); font-size: 14px; padding: 26px; }
 
 .qz-setup { padding: 58px 22px 20px; gap: 12px; overflow-y: auto; }
