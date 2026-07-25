@@ -65,7 +65,7 @@
   let data = null, csVoice = null;
   const COLORS = ["#e2725b","#2a7f7f","#d9a441","#8a6fae","#7ba05b","#4e9e6f"];
   const SIDES = [{k:"dole",deg:0},{k:"nahoře",deg:180},{k:"vlevo",deg:90},{k:"vpravo",deg:270}];
-  const S = { mode:"solo", order:[], idx:0, band:"dospeli", answered:false,
+  const S = { mode:"solo", order:[], idx:0, band:"dospeli", kidsMax:2, answered:false,
               players:[], turn:0, round:1, totalRounds:5, qServed:0,
               voice:false, steal:false, rotate:"auto", manualRot:null,
               school:false, timer:0, saveId:null };
@@ -551,18 +551,27 @@
           <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">děti</button>
           <button class="qz-chip${S.band==="dospeli"?" on":""}" data-band="dospeli">dospělí</button>
         </div>
+        ${S.band==="deti"?`<div style="font-size:12px;color:var(--muted);margin:8px 0 6px">Věk:</div>
+        <div class="qz-bands">
+          <button class="qz-chip${S.kidsMax===1?" on":""}" data-kmax="1">6–9 let</button>
+          <button class="qz-chip${S.kidsMax>=2?" on":""}" data-kmax="2">10–14 let</button>
+        </div>`:""}
       </div>
       <button class="qz-go" id="qz-start-go">Vyrazit! →</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     body.querySelectorAll(".qz-chip[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; renderStart(); }));
+    body.querySelectorAll(".qz-chip[data-kmax]").forEach(ch => ch.addEventListener("click", () => { S.kidsMax=+ch.dataset.kmax; renderStart(); }));
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
 
   function startGame(){
     S.mode="solo";
     S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, streak:0, side:"dole" }];
-    S.turn=0; S.order=shuffle(data.questions); S.idx=0; sessionMastered=[]; S.school=false; newSave();
+    S.turn=0;
+    let pool = data.questions;
+    if(S.band==="deti"){ const f=pool.filter(q=>(q.difficulty||1)<=S.kidsMax); if(f.length) pool=f; }
+    S.order=shuffle(pool); S.idx=0; sessionMastered=[]; S.school=false; newSave();
     const shg=document.getElementById("qz-shell"); shg.classList.remove("qz-school"); shg.style.transform="";
     renderQuestion();
   }
