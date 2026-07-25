@@ -45,7 +45,7 @@
 .qz-start { align-items: center; justify-content: flex-start; text-align: center; gap: 16px; padding: 70px 24px 40px; }
 .qz-start h2 { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 650; }
 .qz-start p { color: var(--muted); font-size: 14px; max-width: 460px; }
-.qz-bands { display: flex; gap: 10px; }
+.qz-bands { display: flex; gap: 10px; width: 100%; }
 .qz-chip { background: var(--paper2); border: 1.6px solid #d8c9ad; border-radius: 20px; font-size: 13px; padding: 8px 18px;
   color: var(--ink); cursor: pointer; box-shadow: 0 2px 0 #d8c9ad; font-family: inherit; }
 .qz-bands .qz-chip { flex: 1; text-align: center; }

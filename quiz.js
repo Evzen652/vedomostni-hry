@@ -545,7 +545,7 @@
       ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${_cLabel} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
       <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Většinu do večeře zapomeneš — ten smích naštěstí ne. A někde číhá tajná „zlatá" špatná odpověď: jediná, na kterou budeš pyšný.</p>
-      <div>
+      <div style="align-self:stretch">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-bands">
           <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">děti</button>
