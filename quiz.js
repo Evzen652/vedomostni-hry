@@ -561,7 +561,7 @@
           <button class="qz-chip${S.kidsMax>=2?" on":""}" data-kmax="2">10–14 let</button>
         </div>`:""}
       </div>
-      <button class="qz-go" id="qz-start-go">Jdeme na to ${handArrowSvg(false)}</button>
+      <button class="qz-go" id="qz-start-go" style="margin-top:20px">Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     body.querySelectorAll(".qz-chip[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; renderStart(); }));
