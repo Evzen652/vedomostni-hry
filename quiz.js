@@ -552,8 +552,8 @@
       <div style="width:min(100%,270px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-bands">
-          <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">děti</button>
-          <button class="qz-chip${S.band==="dospeli"?" on":""}" data-band="dospeli">dospělí</button>
+          <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">Děti</button>
+          <button class="qz-chip${S.band==="dospeli"?" on":""}" data-band="dospeli">Dospělí</button>
         </div>
         ${S.band==="deti"?`<div style="font-size:12px;color:var(--muted);margin:8px 0 6px">Věk:</div>
         <div class="qz-bands">
