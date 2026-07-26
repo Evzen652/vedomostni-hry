@@ -723,13 +723,13 @@
     }
     body.innerHTML = `<div class="qz-screen qz-play">
       ${topHtml(n,total)}
-      ${picframeHtml(q)}
       <div class="qz-box" id="qz-box">
         <div class="qz-timerbar" id="qz-timerbar" style="display:none"><div></div></div>
         <div class="qz-meta">${flagStamp(q.cc)} ${esc(COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff">${"★".repeat(q.difficulty||1)}</span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
         <div class="qz-q">${esc(q.question)}</div>
         ${ansHtml}
       </div>
+      ${picframeHtml(q)}
     </div>`;
     wirePic(); wireTop(q); mountGlobeMedal(q.cc);
     if(q.type==="estimate"){
