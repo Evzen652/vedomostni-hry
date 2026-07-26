@@ -728,7 +728,6 @@
         <div class="qz-timerbar" id="qz-timerbar" style="display:none"><div></div></div>
         <div class="qz-meta">${flagStamp(q.cc)} ${esc(COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff">${"★".repeat(q.difficulty||1)}</span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
         <div class="qz-q">${esc(q.question)}</div>
-        ${q.quip_question?`<div class="qz-quip">„${esc(resolveQuip(q.quip_question,b))}"</div>`:""}
         ${ansHtml}
       </div>
     </div>`;
