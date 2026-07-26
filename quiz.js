@@ -548,7 +548,7 @@
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(contsLabel())} › ${_cLabel} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
-      <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. U některých je schovaná „zlatá" špatná odpověď — netrefíš se přesně, ale za chytrý odhad získáš aspoň polovinu bodů.</p>
+      <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Ukaž, co vlastně víš — a co si jen myslíš, že víš.</p>
       <div style="width:min(100%,270px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-bands">
