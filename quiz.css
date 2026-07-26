@@ -80,7 +80,7 @@
   align-items: center; justify-content: center; gap: 12px; }
 .qz-globecap { font-family: 'Nunito', sans-serif; font-style: italic; font-size: 16px; color: #4a6b64; font-weight: 700;
   letter-spacing: .02em; }
-.qz-medal { position: relative; flex-shrink: 0; width: 150px; height: 150px; border-radius: 50%; overflow: hidden;
+.qz-medal { position: relative; flex-shrink: 0; width: 220px; height: 220px; border-radius: 50%; overflow: hidden;
   background: radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
   border: 3px solid #fffdf6; outline: 2px solid #d8c9ad;
   box-shadow: inset -10px -8px 20px rgba(20,60,55,.35), 0 10px 22px rgba(60,90,80,.35); }
