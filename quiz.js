@@ -220,7 +220,7 @@
   }
 
   // ---- reálný 3D glóbus v medailonku (natáčí se na zemi otázky) ----
-  const EARTH_TEX = "https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg";
+  const EARTH_TEX = "assets/earth.jpg";   // bundled lokálně (offline-only); zdroj: three-globe blue-marble, zmenšeno na 1024×512
   const COUNTRY_LL = { ru:[100,62], pl:[19.3,52], sk:[19.5,48.7] };   // přibližný střed země pro natočení
   let g3 = null;
   function initGlobe3d(){
