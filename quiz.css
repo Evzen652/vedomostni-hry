@@ -74,21 +74,19 @@
 .qz-pictag { position: absolute; left: 12px; bottom: 10px; z-index: 2; background: rgba(255,250,240,.94); border: 1.4px solid #dccdb0;
   border-radius: 12px 4px 12px 4px; font-size: 11px; font-style: italic; color: var(--muted); padding: 4px 11px; }
 
-/* medailonek glóbu (malovaný) */
-.qz-medal { position: absolute; right: 24px; z-index: 6; width: 132px; height: 132px; border-radius: 50%; overflow: hidden;
-  top: 218px; transition: top .35s ease, width .35s ease, height .35s ease;
+/* medailonek glóbu (malovaný) — malý odznak v rohu rámu, bez překryvu */
+.qz-globebadge { position: absolute; right: 12px; bottom: 10px; z-index: 6; display: flex; align-items: center; gap: 7px;
+  background: rgba(255,250,240,.94); border: 1.4px solid #dccdb0; border-radius: 4px 12px 4px 12px; padding: 4px 12px 4px 4px; }
+.qz-globebadge .cap { font-family: 'Nunito', sans-serif; font-style: italic; font-size: 11px; color: var(--muted); }
+.qz-medal { position: relative; flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; overflow: hidden;
   background: radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
-  border: 3px solid #fffdf6; outline: 2px solid #d8c9ad;
-  box-shadow: inset -10px -8px 20px rgba(20,60,55,.35), 0 10px 22px rgba(60,90,80,.35); }
-.qz-picframe.small ~ .qz-medal { top: 88px; width: 108px; height: 108px; }
+  border: 2px solid #fffdf6; outline: 1.4px solid #d8c9ad;
+  box-shadow: inset -4px -3px 8px rgba(20,60,55,.35); }
 .qz-medal .land { position: absolute; background: #a9bf77; border-radius: 52% 48% 60% 40%/58% 46% 54% 42%;
   box-shadow: inset -3px -4px 8px rgba(90,110,50,.45); }
 .qz-medal .land.a { width: 34%; height: 24%; left: 12%; top: 26%; transform: rotate(-10deg); }
 .qz-medal .land.b { width: 46%; height: 30%; left: 40%; top: 18%; background: var(--coral);
   box-shadow: inset -3px -4px 8px rgba(150,50,30,.4), 0 0 0 3px #fffdf6, 0 0 18px rgba(226,114,91,.5); }
-.qz-medalcap { position: absolute; right: 20px; z-index: 6; width: 140px; text-align: center; top: 356px;
-  font-family: 'Nunito', sans-serif; font-style: italic; font-size: 12px; color: var(--muted); transition: top .35s ease; }
-.qz-picframe.small ~ .qz-medalcap { top: 202px; }
 
 .qz-box { margin: 14px 16px 2px; position: relative; z-index: 2; background: var(--paper2);
   border: 2px solid #dccdb0; border-radius: 20px; padding: 18px 20px; box-shadow: 0 5px 0 #e3d5b8, 0 16px 34px rgba(120,90,50,.18);
@@ -162,7 +160,6 @@
 @media (max-width: 767px) {
   .qz-ans { grid-template-columns: 1fr 1fr; }
   .qz-picframe { height: 210px; }
-  .qz-medal { width: 96px; height: 96px; top: 170px; right: 16px; }
   .qz-host { max-width: 52%; }
   .qz-host-bubble { display: none; }
 }

@@ -672,9 +672,8 @@
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
       <div class="qz-pic-fallback" id="qz-pic-fb"><span class="flag">${flagStamp(q.cc,"qz-flagbig")}</span><span class="sec">${esc(q.section||COUNTRY)}</span></div>
       <div class="qz-pictag">${ICO_BRUSH} obrázek k otázce · ${esc(q.country||COUNTRY)}</div>
-    </div>
-    <div class="qz-medal" id="qz-medal"></div>
-    <div class="qz-medalcap">glóbus → ${esc(q.country||COUNTRY)}</div>`;
+      <div class="qz-globebadge"><span class="qz-medal" id="qz-medal"></span><span class="cap">${esc(q.country||COUNTRY)}</span></div>
+    </div>`;
   }
   function wirePic(){
     const img=body.querySelector("#qz-pic-img"), fb=body.querySelector("#qz-pic-fb");
