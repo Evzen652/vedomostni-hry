@@ -561,7 +561,7 @@
           <button class="qz-chip${S.kidsMax>=2?" on":""}" data-kmax="2">10–14 let</button>
         </div>`:""}
       </div>
-      <button class="qz-go" id="qz-start-go">Vyrazit! →</button>
+      <button class="qz-go" id="qz-start-go">Vyrazit! ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     body.querySelectorAll(".qz-chip[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; renderStart(); }));
@@ -630,7 +630,7 @@
         </div>
       </div>
       <div class="qz-setnote">Fond: ${data.questions.length} otázek · ${flagStamp(S.sel&&S.sel.cc)} ${esc(COUNTRY)}${(S.sel&&S.sel.section&&S.sel.section!=="__all__")?" · "+esc(S.sel.section):""} · hráči ${S.players.length}</div>
-      <button class="qz-go" id="qz-setup-go" style="align-self:center">Vyrazit! →</button>
+      <button class="qz-go" id="qz-setup-go" style="align-self:center">Vyrazit! ${handArrowSvg(false)}</button>
     </div>`;
     // wiring
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
@@ -752,7 +752,7 @@
       <div class="qz-expl">${esc(q.explanation||"")} ${q.source_url?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
       <div style="display:flex;gap:8px;align-items:center">
         ${(q.source_card && data.cardsById[q.source_card])?`<button class="qz-more" id="qz-more">${ICO_BOOK} Víc o tom</button>`:""}
-        <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka →":"Konec →"}</button>
+        <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
       </div>
     </div>`;
   }
@@ -885,7 +885,7 @@
       <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}"</div></div>
       <div class="qz-standings">${rows}</div>
       ${sessionMastered.length?`<div class="qz-masternote">${ICO_GLOBE} Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ${ICO_SPARK}</div>`:""}
-      <div class="qz-endrow"><button class="qz-go" id="qz-again">Odveta →</button><button class="qz-chip" id="qz-home">Domů →</button></div>
+      <div class="qz-endrow"><button class="qz-go" id="qz-again">Odveta ${handArrowSvg(false)}</button><button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-again").addEventListener("click", startParty);
     body.querySelector("#qz-home").addEventListener("click", close);
@@ -903,8 +903,8 @@
       <p style="color:var(--muted)">z ${S.order.length} otázek · teoretické maximum ${max} bodů</p>
       ${sessionMastered.length?`<div class="qz-masternote">${ICO_GLOBE} Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ${ICO_SPARK}</div>`:""}
       <div class="qz-endrow">
-        <button class="qz-go" id="qz-again">Hrát znovu →</button>
-        <button class="qz-chip" id="qz-home">Domů →</button>
+        <button class="qz-go" id="qz-again">Hrát znovu ${handArrowSvg(false)}</button>
+        <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>
       </div>
     </div>`;
     body.querySelector("#qz-again").addEventListener("click", startGame);
