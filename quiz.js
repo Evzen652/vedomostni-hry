@@ -371,6 +371,11 @@
   const MODE_LABEL = { solo:"Sólo", party:"Párty", school:"Škola" };
   function beginPick(mode){ S.pickMode=mode; S.sel={}; renderContinentPick(); }
   function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?s[0]:s.length+" témata"; return s; }
+  function contsLabel(){
+    const contsArr = (S.sel && S.sel.conts) || [];
+    const contNames = contsArr.map(id => { const c = CONTINENTS.find(x=>x.id===id); return c ? c.name : id; });
+    return contsArr.length === 1 ? contNames[0] : contsArr.length + " " + plur(contsArr.length, "kontinent", "kontinenty", "kontinentů");
+  }
   function pickHeadHtml(crumbs){
     return `<div class="qz-pickhead"><button class="qz-back" id="qz-back">${handArrowSvg(true)} zpět</button>
       <div class="qz-crumbs">${crumbs}</div></div>`;
@@ -420,8 +425,7 @@
   function renderCountryPick(conts){
     const contsArr = Array.isArray(conts) ? conts : [conts];
     S.sel = S.sel || {}; S.sel.conts = contsArr;
-    const contNames = contsArr.map(id => { const c = CONTINENTS.find(x=>x.id===id); return c ? c.name : id; });
-    const contLabel = contsArr.length === 1 ? contNames[0] : contsArr.length + " " + plur(contsArr.length, "kontinent", "kontinenty", "kontinentů");
+    const contLabel = contsLabel();
     say("A do které země?");
     document.getElementById("qz-shell").style.transform="";
     const ccList = contsArr.flatMap(cont => countriesInCont(cont));
@@ -471,7 +475,7 @@
     const allTile = tileHtml({ ic:"🎲", img:"assets/section-vse.jpg", t:"Vše", selectable:true,
       sub: all.length+" "+plur(all.length,"otázka","otázky","otázek"), attr:`data-sec="__all__"` });
     body.innerHTML = `<div class="qz-screen qz-pick">
-      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(COUNTRY)} › <b>Téma</b>`)}
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(contsLabel())} › ${esc(COUNTRY)} › <b>Téma</b>`)}
       <h2>${flagStamp(cc)} ${esc(COUNTRY)} — vyber téma</h2>
       <div class="qz-tiles qz-tiles-sec">${secTiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
@@ -514,7 +518,7 @@
     document.getElementById("qz-shell").style.transform="";
     const _cLabel2=esc(COUNTRY);
     body.innerHTML = `<div class="qz-screen qz-start">
-      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${_cLabel2} › <b>${esc(selSectionLabel())}</b>`)}
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(contsLabel())} › ${_cLabel2} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>Škola / projektor — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <p>Velké otázky na plátno, celá třída hádá naráz — trocha vědění, hromada smíchu. Zvol obtížnost:</p>
       <div class="qz-bands">
@@ -542,7 +546,7 @@
     say("Vítej! Vyber, komu mám vyprávět — a vyrážíme.");
     const _cLabel=esc(COUNTRY);
     body.innerHTML = `<div class="qz-screen qz-start">
-      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${_cLabel} › <b>${esc(selSectionLabel())}</b>`)}
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(contsLabel())} › ${_cLabel} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
       <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Většinu do večeře zapomeneš — ten smích naštěstí ne. A někde číhá tajná „zlatá" špatná odpověď: jediná, na kterou budeš pyšný.</p>
       <div style="width:min(100%,270px)">
@@ -598,7 +602,7 @@
     </div>`;
     const _cLabel3=esc(COUNTRY);
     body.innerHTML = `<div class="qz-screen qz-setup">
-      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${_cLabel3} › <b>${esc(selSectionLabel())}</b>`)}
+      ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(contsLabel())} › ${_cLabel3} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>${ICO_SPARK} Nová výprava — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <div class="qz-setcard">
         <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">věk určí pásmo i hlášky</span></h3>
