@@ -64,6 +64,7 @@
 
 .qz-picframe { position: relative; margin: 12px 16px 0; height: 280px; border-radius: 18px; overflow: hidden;
   border: 3px solid #fffdf6; outline: 2px solid #d8c9ad; box-shadow: 0 10px 26px rgba(120,90,50,.28);
+  background: radial-gradient(120% 130% at 50% 15%, #eef5f2 0%, #d6e6e0 48%, #bcd4cd 100%);
   transition: height .35s ease, filter .35s ease; }
 .qz-picframe.small { height: 140px; filter: saturate(.7) brightness(.94); }
 .qz-pic { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -74,19 +75,30 @@
 .qz-pictag { position: absolute; left: 12px; bottom: 10px; z-index: 2; background: rgba(255,250,240,.94); border: 1.4px solid #dccdb0;
   border-radius: 12px 4px 12px 4px; font-size: 11px; font-style: italic; color: var(--muted); padding: 4px 11px; }
 
-/* medailonek glóbu (malovaný) — malý odznak v rohu rámu, bez překryvu */
-.qz-globebadge { position: absolute; right: 12px; bottom: 10px; z-index: 6; display: flex; align-items: center; gap: 7px;
-  background: rgba(255,250,240,.94); border: 1.4px solid #dccdb0; border-radius: 4px 12px 4px 12px; padding: 4px 12px 4px 4px; }
-.qz-globebadge .cap { font-family: 'Nunito', sans-serif; font-style: italic; font-size: 11px; color: var(--muted); }
-.qz-medal { position: relative; flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; overflow: hidden;
+/* glóbus (malovaný 3D) — u otázky hrdina uprostřed, u odpovědi malý odznak v rohu */
+.qz-globewrap { position: absolute; inset: 0; z-index: 6; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px; }
+.qz-globecap { font-family: 'Nunito', sans-serif; font-style: italic; font-size: 16px; color: #4a6b64; font-weight: 700;
+  letter-spacing: .02em; }
+.qz-medal { position: relative; flex-shrink: 0; width: 150px; height: 150px; border-radius: 50%; overflow: hidden;
   background: radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
-  border: 2px solid #fffdf6; outline: 1.4px solid #d8c9ad;
-  box-shadow: inset -4px -3px 8px rgba(20,60,55,.35); }
+  border: 3px solid #fffdf6; outline: 2px solid #d8c9ad;
+  box-shadow: inset -10px -8px 20px rgba(20,60,55,.35), 0 10px 22px rgba(60,90,80,.35); }
 .qz-medal .land { position: absolute; background: #a9bf77; border-radius: 52% 48% 60% 40%/58% 46% 54% 42%;
   box-shadow: inset -3px -4px 8px rgba(90,110,50,.45); }
 .qz-medal .land.a { width: 34%; height: 24%; left: 12%; top: 26%; transform: rotate(-10deg); }
 .qz-medal .land.b { width: 46%; height: 30%; left: 40%; top: 18%; background: var(--coral);
   box-shadow: inset -3px -4px 8px rgba(150,50,30,.4), 0 0 0 3px #fffdf6, 0 0 18px rgba(226,114,91,.5); }
+/* u otázky: fotka + popisek skryté, glóbus vyplní rám */
+.qz-picframe:not(.small) .qz-pic,
+.qz-picframe:not(.small) .qz-pic-fallback,
+.qz-picframe:not(.small) .qz-pictag { opacity: 0; pointer-events: none; }
+/* u odpovědi (.small): odhalí se fotka, glóbus se zmenší do rohového odznaku */
+.qz-picframe.small .qz-globewrap { inset: auto; right: 12px; bottom: 10px; flex-direction: row; gap: 7px;
+  background: rgba(255,250,240,.94); border: 1.4px solid #dccdb0; border-radius: 4px 12px 4px 12px; padding: 4px 12px 4px 4px; }
+.qz-picframe.small .qz-medal { width: 32px; height: 32px; border-width: 2px; outline-width: 1.4px;
+  box-shadow: inset -4px -3px 8px rgba(20,60,55,.35); }
+.qz-picframe.small .qz-globecap { font-size: 11px; color: var(--muted); font-weight: 400; }
 
 .qz-box { margin: 14px 16px 2px; position: relative; z-index: 2; background: var(--paper2);
   border: 2px solid #dccdb0; border-radius: 20px; padding: 18px 20px; box-shadow: 0 5px 0 #e3d5b8, 0 16px 34px rgba(120,90,50,.18);
