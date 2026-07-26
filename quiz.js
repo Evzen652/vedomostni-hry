@@ -543,12 +543,12 @@
   if(closeBtn) closeBtn.addEventListener("click", close);
 
   function renderStart(){
-    say("Vítej! Vyber, komu mám vyprávět — a vyrážíme.");
+    say("Řekni mi, kdo dnes cestuje — a hned vyrážíme.");
     const _cLabel=esc(COUNTRY);
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(`${MODE_LABEL[S.pickMode]||""} › ${esc(contsLabel())} › ${_cLabel} › <b>${esc(selSectionLabel())}</b>`)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
-      <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Většinu do večeře zapomeneš — ten smích naštěstí ne. A někde číhá tajná „zlatá" špatná odpověď: jediná, na kterou budeš pyšný.</p>
+      <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. U některých je schovaná „zlatá" špatná odpověď — netrefíš se přesně, ale za chytrý odhad získáš aspoň polovinu bodů.</p>
       <div style="width:min(100%,270px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-bands">
@@ -561,7 +561,7 @@
           <button class="qz-chip${S.kidsMax>=2?" on":""}" data-kmax="2">10–14 let</button>
         </div>`:""}
       </div>
-      <button class="qz-go" id="qz-start-go">Vyrazit! ${handArrowSvg(false)}</button>
+      <button class="qz-go" id="qz-start-go">Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     body.querySelectorAll(".qz-chip[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; renderStart(); }));
@@ -630,7 +630,7 @@
         </div>
       </div>
       <div class="qz-setnote">Fond: ${data.questions.length} otázek · ${flagStamp(S.sel&&S.sel.cc)} ${esc(COUNTRY)}${(S.sel&&S.sel.section&&S.sel.section!=="__all__")?" · "+esc(S.sel.section):""} · hráči ${S.players.length}</div>
-      <button class="qz-go" id="qz-setup-go" style="align-self:center">Vyrazit! ${handArrowSvg(false)}</button>
+      <button class="qz-go" id="qz-setup-go" style="align-self:center">Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     // wiring
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
