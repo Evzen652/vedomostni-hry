@@ -62,9 +62,9 @@
 .qz-scorepill b { font-size: 17px; }
 .qz-streak { color: var(--ochre); font-size: 12px; font-weight: 700; }
 
-.qz-picframe { position: relative; margin: 12px 16px 0; height: 280px; border-radius: 18px; overflow: hidden;
+.qz-picframe { position: relative; margin: 12px 16px 0; height: 300px; border-radius: 18px; overflow: hidden;
   border: 3px solid #fffdf6; outline: 2px solid #d8c9ad; box-shadow: 0 10px 26px rgba(120,90,50,.28);
-  background: radial-gradient(120% 130% at 50% 15%, #eef5f2 0%, #d6e6e0 48%, #bcd4cd 100%);
+  background: radial-gradient(120% 130% at 50% 18%, #e6f1ed 0%, #c6ddd6 50%, #a7c6bd 100%);
   transition: height .35s ease, filter .35s ease; }
 .qz-picframe.small { height: 140px; filter: saturate(.7) brightness(.94); }
 .qz-pic { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -77,7 +77,23 @@
 
 /* glóbus (malovaný 3D) — u otázky hrdina uprostřed, u odpovědi malý odznak v rohu */
 .qz-globewrap { position: absolute; inset: 0; z-index: 6; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 12px; }
+  align-items: center; justify-content: center; gap: 14px; }
+.qz-globe-stage { position: relative; display: flex; align-items: center; justify-content: center; }
+/* atmosférická záře za glóbem */
+.qz-globe-stage::before { content: ""; position: absolute; width: 128%; height: 128%; border-radius: 50%; z-index: 0;
+  background: radial-gradient(circle, rgba(126,206,224,.55) 0%, rgba(126,206,224,.18) 55%, rgba(126,206,224,0) 72%);
+  filter: blur(4px); animation: qz-breathe 5.5s ease-in-out infinite; }
+/* pomalu rotující tečkovaný orbit */
+.qz-orbit { position: absolute; width: 118%; height: 118%; border-radius: 50%; z-index: 0;
+  border: 1.5px dashed rgba(74,107,100,.4); animation: qz-spin 46s linear infinite; }
+/* pulzující značka „tady jsi" na zemi (glóbus je natočen zemí k pozorovateli) */
+.qz-beacon { position: absolute; z-index: 7; width: 13px; height: 13px; border-radius: 50%; background: var(--coral);
+  box-shadow: 0 0 0 3px #fffdf6, 0 2px 6px rgba(0,0,0,.35); }
+.qz-beacon::after { content: ""; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--coral);
+  animation: qz-ping 1.9s ease-out infinite; }
+@keyframes qz-spin { to { transform: rotate(360deg); } }
+@keyframes qz-ping { 0% { transform: scale(1); opacity: .85; } 100% { transform: scale(2.8); opacity: 0; } }
+@keyframes qz-breathe { 0%,100% { opacity: .7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
 .qz-globecap { font-family: 'Nunito', sans-serif; font-style: italic; font-size: 16px; color: #4a6b64; font-weight: 700;
   letter-spacing: .02em; }
 .qz-medal { position: relative; flex-shrink: 0; width: 220px; height: 220px; border-radius: 50%; overflow: hidden;
@@ -99,6 +115,7 @@
 .qz-picframe.small .qz-medal { width: 32px; height: 32px; border-width: 2px; outline-width: 1.4px;
   box-shadow: inset -4px -3px 8px rgba(20,60,55,.35); }
 .qz-picframe.small .qz-globecap { font-size: 11px; color: var(--muted); font-weight: 400; }
+.qz-picframe.small .qz-orbit, .qz-picframe.small .qz-beacon, .qz-picframe.small .qz-globe-stage::before { display: none; }
 
 .qz-box { margin: 14px 16px 2px; position: relative; z-index: 2; background: var(--paper2);
   border: 2px solid #dccdb0; border-radius: 20px; padding: 18px 20px; box-shadow: 0 5px 0 #e3d5b8, 0 16px 34px rgba(120,90,50,.18);

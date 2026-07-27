@@ -672,7 +672,7 @@
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
       <div class="qz-pic-fallback" id="qz-pic-fb"><span class="flag">${flagStamp(q.cc,"qz-flagbig")}</span><span class="sec">${esc(q.section||COUNTRY)}</span></div>
       <div class="qz-pictag">${ICO_BRUSH} obrázek k otázce · ${esc(q.country||COUNTRY)}</div>
-      <div class="qz-globewrap"><span class="qz-medal" id="qz-medal"></span><span class="qz-globecap">${esc(q.country||COUNTRY)}</span></div>
+      <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-orbit"></span><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${esc(q.country||COUNTRY)}</span></div>
     </div>`;
   }
   function wirePic(){
