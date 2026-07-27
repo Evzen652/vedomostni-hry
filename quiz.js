@@ -771,7 +771,8 @@
     else { P.streak=0; const dq=q.distractor_quips&&q.distractor_quips[choice]; quipText = dq?resolveQuip(dq,b):resolveQuip(q.quip_wrong,b); }
     P.score+=gained; updateScorePill(S.turn);
     const masteredNow = correct ? recordCorrect(q.cc) : false;
-    say(quipText||""); if(S.voice) speakTTS(quipText);
+    // bublina hostitele = krátký verdikt; vtipná hláška žije v panelu HLÁŠKA (ať se netočí dvakrát)
+    say(gold ? "Zlatá odpověď!" : (correct ? "Správně!" : "Tentokrát vedle.")); if(S.voice) speakTTS(quipText);
     if(masteredNow && S.voice) speakTTS((COUNTRY_BY_CC[q.cc]||"Země")+" je zvládnutá! Rozsvítila se na glóbu.");
     const pic=body.querySelector("#qz-pic"); if(pic) pic.classList.add("small");
     if(gold){ const gf=document.createElement("div"); gf.className="qz-goldflash"; document.getElementById("qz-shell").appendChild(gf); setTimeout(()=>gf.remove(),950); }
@@ -825,7 +826,8 @@
     P.score+=gained; updateScorePill(S.turn);
     const masteredNow = close ? recordCorrect(q.cc) : false;
     const quipText=resolveQuip(close?q.quip_correct:q.quip_wrong, b)||"";
-    say(quipText); if(S.voice) speakTTS(quipText);
+    // bublina hostitele = krátký verdikt; vtipná hláška žije v panelu HLÁŠKA (ať se netočí dvakrát)
+    say(close ? "Dobrý odhad!" : "Tentokrát vedle."); if(S.voice) speakTTS(quipText);
     if(masteredNow && S.voice) speakTTS((COUNTRY_BY_CC[q.cc]||"Země")+" je zvládnutá! Rozsvítila se na glóbu.");
     const pic=body.querySelector("#qz-pic"); if(pic) pic.classList.add("small");
     const box=body.querySelector("#qz-box");
