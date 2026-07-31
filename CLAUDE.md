@@ -17,6 +17,14 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-07-31 — Tlačítko „Více o…" musí být u KAŽDÉ odpovědi, s tématem v 6. pádu.**
+  Popisek se skládá z pole **`about`** u otázky (6. pád, např. `"Bajkalu"`, `"časových pásmech Ruska"`) —
+  česky se pád odvodit nedá (`Volha → o Volze`, `Elbrus → o Elbrusu`), proto je v datech, ne v kódu.
+  **Každá nová otázka musí `about` mít**; bez něj naskočí neurčité „Více o tom".
+  Tlačítko se zobrazuje vždy, i když otázka nemá `source_card` — pak se karta složí z otázky samotné
+  (`openMore()`: fotka `img/{id}.jpg` + `explanation`). Nikdy ho neschovávej podle dostupnosti karty.
+  Obě tlačítka v patičce (`.qz-fbtns`) jsou stejně široká — proto má i `.qz-next` průhledný rámeček
+  1,5 px a obě mají `min-width: 0`, jinak by se lišila o šířku rámečku a delšího textu.
 - **2026-07-31 — Hrací obrazovka je od 900 px dvousloupcová: text vlevo, okno (glóbus → fotka) vpravo.**
   Každá otázka má mít vlastní fotku `img/{id}.jpg` (16:9, fotorealistická, ~1200 px na šířku, JPG q84;
   zadání je v poli `image_prompt` u otázky). Fotky **nejsou ve vysokém rozlišení**, proto dostávají jen
@@ -24,8 +32,9 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   takže se nic neořezává; `object-position: 50% 38%` je jen pojistka pro fotku, co 16:9 není.
   Rám je **jedno okno**: u otázky v něm žije glóbus (fotka schovaná — spoiler), u odpovědi se fotka
   odhalí (`.revealed`), dojede zblízka a glóbus se vyfadeuje — layout se přitom ani nehne.
-  Zemi/téma říká **jediný** štítek `.qz-piccap` v rohu fotky — nikdy nedávej druhý popisek země
-  (dřív se překrývaly „obrázek k otázce · Rusko" a rohový glóbus se stejným textem).
+  **Fotka nemá žádný popisek** — zemi a téma říká řádek `.qz-meta` nad otázkou, takže cokoli
+  v rohu snímku je jen duplicita (dřív se tam překrývaly „obrázek k otázce · Rusko" a rohový
+  glóbus se stejným textem; pak i štítek `.qz-piccap`, taky odstraněn). Nedávej to tam znovu.
   V užším sloupci jsou odpovědi 2×2 a `<small>` v dlaždici je u odpovědi štítek nad textem
   („SPRÁVNĚ", „TVŮJ TIP") — do kolečka pro písmeno A–D se celé slovo nevejde.
   Pod 900 px se vše vrací do jednoho sloupce (fotka pod textem).

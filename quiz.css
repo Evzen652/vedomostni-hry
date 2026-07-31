@@ -43,7 +43,7 @@
 
 /* ---- start ---- */
 .qz-start { align-items: center; justify-content: flex-start; text-align: center; gap: 16px; padding: 70px 24px 40px; }
-.qz-start h2 { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 650; }
+.qz-start h2 { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 650; color: var(--teal); }
 .qz-start p { color: var(--muted); font-size: 14px; max-width: 460px; }
 .qz-bands { display: flex; gap: 10px; width: 100%; }
 .qz-chip { background: var(--paper2); border: 1.6px solid #d8c9ad; border-radius: 20px; font-size: 13px; padding: 8px 18px;
@@ -70,19 +70,7 @@
 .qz-picframe.revealed { height: clamp(200px, 26vh, 280px); }
 /* 16:9 fotka v širokém pásu se ořízne — držet horizont, ne spodní popředí */
 .qz-pic { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; display: block; }
-/* teplý závoj dole — usadí štítek, fotku skoro neztmaví */
-.qz-pic-scrim { position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: 0; transition: opacity .5s .1s ease;
-  background: linear-gradient(to top, rgba(48,34,20,.55) 0%, rgba(48,34,20,.18) 32%, rgba(48,34,20,0) 60%); }
-.qz-picframe.revealed .qz-pic-scrim { opacity: 1; }
-/* štítek jako z cestovního deníku, přišpendlený do rohu fotky */
-.qz-piccap { position: absolute; left: 14px; bottom: 12px; z-index: 3; display: flex; align-items: center; gap: 10px;
-  background: rgba(255,250,240,.96); border: 1.4px solid #dccdb0; border-radius: 14px 5px 14px 5px;
-  padding: 7px 16px 7px 8px; box-shadow: 0 8px 20px rgba(50,34,18,.38); }
-.qz-capstamp { width: 38px; height: 38px; border-radius: 10px 3px 10px 3px; object-fit: cover; flex: none;
-  border: 2px solid #fffdf6; outline: 1px solid #d8c9ad; }
-.qz-piccap-t { display: flex; flex-direction: column; line-height: 1.2; }
-.qz-piccap-t b { font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 800; color: var(--ink); }
-.qz-piccap-t i { font-size: 12px; color: var(--muted); }
+/* Fotka je bez popisku schválně — zemi i téma říká řádek .qz-meta nad otázkou. */
 /* fallback, dokud otázka nemá fotku: razítko země místo snímku */
 .qz-pic-fallback { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
   background: linear-gradient(160deg, #f4d9a6 0%, #e6b98a 55%, #cf9f77 100%); }
@@ -92,8 +80,6 @@
 .qz-picframe.revealed .qz-pic-fallback .qz-flagbig { width: 76px; height: 76px; border-radius: 13px; }
 .qz-picframe.revealed .qz-pic-fb-text .country { font-family: 'Nunito', sans-serif; font-weight: 750; font-size: 16px; color: var(--ink); }
 .qz-picframe.revealed .qz-pic-fallback .sec { font-size: 13px; }
-/* bez fotky štítek nemá co popisovat — fallback říká totéž */
-.qz-picframe.qz-pic-broken .qz-piccap, .qz-picframe.qz-pic-broken .qz-pic-scrim { display: none; }
 
 /* glóbus (malovaný 3D) — u otázky hrdina uprostřed, u odpovědi malý odznak v rohu */
 .qz-globewrap { position: absolute; inset: 0; z-index: 6; display: flex;
@@ -129,15 +115,12 @@
 .qz-medal .land.a { width: 34%; height: 24%; left: 12%; top: 26%; transform: rotate(-10deg); }
 .qz-medal .land.b { width: 46%; height: 30%; left: 40%; top: 18%; background: var(--coral);
   box-shadow: inset -3px -4px 8px rgba(150,50,30,.4), 0 0 0 3px #fffdf6, 0 0 18px rgba(226,114,91,.5); }
-/* u otázky: fotka i štítek schované (žádný spoiler), glóbus vyplní rám */
+/* u otázky: fotka schovaná (žádný spoiler), glóbus vyplní rám */
 .qz-picframe:not(.revealed) .qz-pic,
-.qz-picframe:not(.revealed) .qz-pic-fallback,
-.qz-picframe:not(.revealed) .qz-piccap { opacity: 0; pointer-events: none; }
-/* u odpovědi je hrdinou fotka: dojede zblízka, glóbus se odklidí (zemi říká štítek) */
+.qz-picframe:not(.revealed) .qz-pic-fallback { opacity: 0; pointer-events: none; }
+/* u odpovědi je hrdinou fotka: dojede zblízka a glóbus se odklidí */
 @keyframes qz-picin { from { opacity: 0; transform: scale(1.07); } to { opacity: 1; transform: none; } }
-@keyframes qz-capin { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .qz-picframe.revealed .qz-pic { animation: qz-picin .6s cubic-bezier(.22,.9,.3,1) both; }
-.qz-picframe.revealed .qz-piccap { animation: qz-capin .45s .2s ease-out both; }
 .qz-picframe.revealed .qz-globewrap { opacity: 0; pointer-events: none; transition: opacity .3s ease; }
 
 .qz-box { margin: 14px 16px 2px; position: relative; z-index: 2; background: var(--paper2);
@@ -148,6 +131,8 @@
 .qz-quip { font-style: italic; color: var(--muted); font-size: 14px; margin-top: -6px; }
 .qz-ans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
 .qz-ans.two { grid-template-columns: 1fr 1fr; }
+/* uhodnutá odpověď stojí sama — ať zabere celou šířku karty, ne půlku s dírou vedle */
+.qz-ans.one { grid-template-columns: 1fr; }
 .qz-a { background: #fff; border: 1.8px solid #dccdb0; border-radius: 14px; text-align: center; padding: 14px 8px 12px;
   font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; cursor: pointer;
   transition: transform .1s, box-shadow .1s; color: var(--ink); position: relative; overflow: visible; }
@@ -181,14 +166,25 @@
   padding: 14px 18px; box-shadow: 0 4px 0 #c78f35; }
 .qz-hlaska.gold { border-color: #e6b800; background: linear-gradient(135deg, #fff2b0, #ffe07a); box-shadow: 0 4px 0 #c79a00; }
 .qz-hl { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #a8752a; margin-bottom: 5px; font-family: 'Nunito', sans-serif; font-weight: 700; }
+/* zisk bodů je věta, ne štítek — verzálky s velkým prostrkáním by ji dělaly křiklavou */
+.qz-hl.points { text-transform: none; letter-spacing: .02em; font-size: 12.5px; }
 .qz-ht { font-family: 'Nunito', sans-serif; font-size: clamp(16px, 2.1vw, 20px); line-height: 1.45; font-weight: 560; }
 .qz-frow { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .qz-expl { font-size: 12.5px; color: var(--muted); flex: 1; min-width: 200px; }
 .qz-expl a { color: var(--teal); text-decoration: none; font-weight: 600; }
-.qz-more { background: none; border: 1.5px solid var(--teal); color: var(--teal); border-radius: 10px; padding: 5px 12px;
-  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; }
-.qz-next { background: var(--teal); color: #fffdf6; font-family: 'Nunito', sans-serif; font-weight: 650; border: none;
-  border-radius: 13px; padding: 11px 26px; font-size: 15px; cursor: pointer; box-shadow: 0 4px 0 #1f5f5c; }
+/* obě tlačítka stejně široká — flex: 1 1 0 je rozdělí napůl bez ohledu na délku textu */
+.qz-fbtns { display: flex; gap: 8px; align-items: stretch; flex: 1; min-width: 240px; }
+/* box-sizing: bez něj by se rámeček „Více" přičetl k šířce a tlačítka by se lišila o 3 px.
+   min-width: 0: výchozí `auto` nedovolí zúžit pod šířku textu, takže by delší popisek
+   („Více o časových pásmech Ruska") ukradl místo sousedovi a půlky by nebyly stejné. */
+.qz-fbtns > button { flex: 1 1 0; min-width: 0; box-sizing: border-box; text-align: center;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+.qz-more { background: none; border: 1.5px solid var(--teal); color: var(--teal); border-radius: 13px; padding: 11px 16px;
+  font-size: 14px; font-weight: 700; cursor: pointer; font-family: 'Nunito', sans-serif; }
+/* průhledný rámeček stejné tloušťky jako u „Více" — jinak se obě tlačítka liší o jeho šířku */
+.qz-next { background: var(--teal); color: #fffdf6; font-family: 'Nunito', sans-serif; font-weight: 650;
+  border: 1.5px solid transparent; border-radius: 13px; padding: 11px 16px; font-size: 15px; cursor: pointer;
+  box-shadow: 0 4px 0 #1f5f5c; }
 
 /* zlatý blik */
 .qz-goldflash { position: absolute; inset: 0; z-index: 20; pointer-events: none; background: radial-gradient(circle, rgba(255,215,0,.55), transparent 70%);
@@ -209,16 +205,15 @@
 
 /* konec sóla */
 .qz-end { align-items: center; justify-content: center; text-align: center; gap: 16px; padding: 46px 24px; }
-.qz-end h2 { font-family: 'Nunito', sans-serif; font-size: 30px; }
-.qz-endscore { font-family: 'Nunito', sans-serif; font-size: 52px; font-weight: 700; color: var(--coral); }
+.qz-end h2 { font-family: 'Nunito', sans-serif; font-size: 30px; color: var(--teal); }
+/* z holého čísla je věta — 52 px by přeteklo, korálová zůstává jako akcent proti tyrkysovému nadpisu */
+.qz-endscore { font-family: 'Nunito', sans-serif; font-size: clamp(24px, 4vw, 34px); font-weight: 700; color: var(--coral); }
 .qz-endrow { display: flex; gap: 12px; }
 
 @media (max-width: 767px) {
   .qz-ans { grid-template-columns: 1fr 1fr; }
   .qz-picframe { height: 210px; }
   .qz-picframe.revealed { height: 190px; }
-  .qz-piccap { left: 10px; bottom: 10px; gap: 8px; padding: 6px 13px 6px 6px; }
-  .qz-capstamp { width: 32px; height: 32px; }
   .qz-host { max-width: 52%; }
   .qz-host-bubble { display: none; }
 }
@@ -302,7 +297,7 @@
 .qz-pick-empty { grid-column: 1 / -1; color: var(--muted); font-size: 14px; padding: 26px; }
 
 .qz-setup { padding: 58px 22px 20px; gap: 12px; overflow-y: auto; }
-.qz-setup h2 { font-family: 'Nunito', sans-serif; font-size: 24px; text-align: center; margin-bottom: 2px; }
+.qz-setup h2 { font-family: 'Nunito', sans-serif; font-size: 24px; text-align: center; margin-bottom: 2px; color: var(--teal); }
 .qz-setcard { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 14px; padding: 12px 14px; box-shadow: 0 3px 0 #e3d5b8; }
 .qz-setcard h3 { font-family: 'Nunito', sans-serif; font-size: 15px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
 .qz-setcard h3 .n { width: 22px; height: 22px; border-radius: 50%; background: var(--ochre); color: #fffdf6; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; }
@@ -367,9 +362,6 @@
 .qz-school .qz-picframe { height: clamp(280px, 40vh, 380px); }
 /* na plátně je fotka odměna pro celou třídu — ať zůstane velká */
 .qz-school .qz-picframe.revealed { height: clamp(260px, 38vh, 360px); }
-.qz-school .qz-capstamp { width: 46px; height: 46px; }
-.qz-school .qz-piccap-t b { font-size: 19px; }
-.qz-school .qz-piccap-t i { font-size: 15px; }
 .qz-school .qz-est input { font-size: 30px; }
 
 /* časomíra + rozehrané výpravy */
@@ -406,4 +398,19 @@
   .qz-play > .qz-picframe.revealed { grid-area: pic; margin: 68px 0 0; width: 100%; height: auto; aspect-ratio: 16 / 9; }
   /* v užším sloupci jsou 2×2 odpovědi čitelnější a líp se do nich trefuje */
   .qz-play .qz-ans { grid-template-columns: 1fr 1fr; }
+  .qz-play .qz-ans.one { grid-template-columns: 1fr; }
+}
+
+/* ---- přístupnost ----
+   Viditelný fokus: bez něj hráč na klávesnici (a projektor ve třídě) neví, kde stojí.
+   :focus-visible = jen při ovládání klávesnicí, myš rámeček nerozsvítí. */
+#quiz-root :focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; border-radius: 6px; }
+
+/* Kdo má v systému „omezit pohyb", nemá se mu nic samo točit ani přijíždět.
+   Rotaci 3D glóbu vypíná zvlášť quiz.js (konstanta REDUCED_MOTION). */
+@media (prefers-reduced-motion: reduce) {
+  #quiz-root *, #quiz-root *::before, #quiz-root *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
 }

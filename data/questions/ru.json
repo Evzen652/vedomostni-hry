@@ -25,7 +25,8 @@
     "explanation": "Hlavním městem Ruska je Moskva, zároveň největší město země.",
     "source_url": "https://en.wikipedia.org/wiki/Moscow",
     "source_card": "ru-mista-transsib",
-    "image_prompt": "Fotorealistický snímek panoramatu Moskvy za soumraku od řeky, rozsvícená historická věžovitá silueta v dálce, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+    "image_prompt": "Fotorealistický snímek panoramatu Moskvy za soumraku od řeky, rozsvícená historická věžovitá silueta v dálce, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "about": "Moskvě"
   },
   {
     "id": "ru-q-pasma",
@@ -58,7 +59,8 @@
     "explanation": "Rusko má 11 časových pásem (UTC+2 až UTC+12) — nejvíc ze všech zemí na jednom souvislém území.",
     "source_url": "https://en.wikipedia.org/wiki/Time_in_Russia",
     "source_card": "ru-lide-pasma",
-    "image_prompt": "Fotorealistický snímek východu slunce nad zasněženou sibiřskou tajgou, dlouhé stíny stromů, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+    "image_prompt": "Fotorealistický snímek východu slunce nad zasněženou sibiřskou tajgou, dlouhé stíny stromů, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "about": "časových pásmech Ruska"
   },
   {
     "id": "ru-q-bajkal-nej",
@@ -86,7 +88,8 @@
     "explanation": "Bajkal na Sibiři je s hloubkou 1 642 m nejhlubší jezero světa.",
     "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
     "source_card": "ru-priroda-bajkal",
-    "image_prompt": "Fotorealistický snímek jezera Bajkal v zimě, průzračný modrý led s prasklinami, hory na obzoru, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+    "image_prompt": "Fotorealistický snímek jezera Bajkal v zimě, průzračný modrý led s prasklinami, hory na obzoru, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "about": "Bajkalu"
   },
   {
     "id": "ru-q-elbrus",
@@ -106,7 +109,8 @@
     "quip_wrong": "Elbrus. Ty ostatní jsou taky pořádné hory — jen jim chybí pár pater.",
     "explanation": "Elbrus na Kavkaze měří 5 642 m; je nejvyšší horou Ruska a bývá počítán i za nejvyšší horu Evropy.",
     "source_url": "https://en.wikipedia.org/wiki/Mount_Elbrus",
-    "image_prompt": "Fotorealistický snímek zasněženého dvouvrcholového masivu na Kavkaze za jasného rána, alpské louky v popředí, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+    "image_prompt": "Fotorealistický snímek zasněženého dvouvrcholového masivu na Kavkaze za jasného rána, alpské louky v popředí, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "about": "Elbrusu"
   },
   {
     "id": "ru-q-transsib-cil",
@@ -131,7 +135,8 @@
     "explanation": "Transsibiřská magistrála vede z Moskvy do Vladivostoku u Japonského moře a měří 9 288 km.",
     "source_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
     "source_card": "ru-mista-transsib",
-    "image_prompt": "Fotorealistický snímek dálkového vlaku projíždějícího podzimní sibiřskou tajgou, zlaté modříny, mlha nad krajinou, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+    "image_prompt": "Fotorealistický snímek dálkového vlaku projíždějícího podzimní sibiřskou tajgou, zlaté modříny, mlha nad krajinou, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "about": "Transsibiřské magistrále"
   },
   {
     "id": "ru-q-kaliningrad",
@@ -152,7 +157,8 @@
     "explanation": "Kaliningradská oblast je od zbytku Ruska oddělená a sousedí s Polskem a Litvou; do roku 1945 šlo o německý Königsberg.",
     "source_url": "https://en.wikipedia.org/wiki/Kaliningrad",
     "source_card": "ru-historie-kaliningrad",
-    "image_prompt": "Fotorealistický snímek baltského pobřeží s dunami a klidným mořem za podvečerního světla, kousky jantaru na písku v popředí, bez textu, bez lidí v popředí, 16:9"
+    "image_prompt": "Fotorealistický snímek baltského pobřeží s dunami a klidným mořem za podvečerního světla, kousky jantaru na písku v popředí, bez textu, bez lidí v popředí, 16:9",
+    "about": "Kaliningradu"
   },
   {
     "id": "ru-q-volha",
@@ -175,7 +181,8 @@
     },
     "explanation": "Volha měří přibližně 3 530 km a je nejdelší řekou Evropy; celý její tok leží v Rusku.",
     "source_url": "https://en.wikipedia.org/wiki/Volga",
-    "image_prompt": "Fotorealistický letecký snímek široké majestátní řeky vinoucí se letní rovinatou krajinou s lesy a písčinami, přirozené světlo, bez textu, bez lidí v popředí, 16:9"
+    "image_prompt": "Fotorealistický letecký snímek široké majestátní řeky vinoucí se letní rovinatou krajinou s lesy a písčinami, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "about": "Volze"
   },
   {
     "id": "ru-q-pelmene",
@@ -200,7 +207,8 @@
     "explanation": "Pelmeně jsou vařené taštičky z těsta plněné mletým masem, klasika ruské kuchyně.",
     "source_url": "https://en.wikipedia.org/wiki/Pelmeni",
     "source_card": "ru-jidlo-pelmene",
-    "image_prompt": "Fotorealistický snímek misky kouřících pelmeňů se zakysanou smetanou a koprem na dřevěném stole, měkké teplé světlo, bez textu, bez lidí, 16:9"
+    "image_prompt": "Fotorealistický snímek misky kouřících pelmeňů se zakysanou smetanou a koprem na dřevěném stole, měkké teplé světlo, bez textu, bez lidí, 16:9",
+    "about": "pelmeních"
   },
   {
     "id": "ru-q-metro",
@@ -220,7 +228,8 @@
     "quip_wrong": "Paláce pod zemí — mramor, lustry, mozaiky. Jiný svět, jen o patro níž.",
     "explanation": "Řada stanic moskevského metra je zdobena mramorem, mozaikami a lustry; nejslavnější pocházejí ze sovětské éry.",
     "source_url": "https://en.wikipedia.org/wiki/Moscow_Metro",
-    "image_prompt": "IKONICKÁ PAMÁTKA — zvaž skutečnou fotku. Jinak: fotorealistický ilustrativní snímek honosné podzemní haly metra s mramorovými sloupy, mozaikami a lustry, teplé světlo, bez textu, bez lidí, 16:9"
+    "image_prompt": "IKONICKÁ PAMÁTKA — zvaž skutečnou fotku. Jinak: fotorealistický ilustrativní snímek honosné podzemní haly metra s mramorovými sloupy, mozaikami a lustry, teplé světlo, bez textu, bez lidí, 16:9",
+    "about": "moskevském metru"
   },
   {
     "id": "ru-q-bajkal-hloubka",
@@ -238,6 +247,7 @@
     "explanation": "Bajkal měří v nejhlubším místě 1 642 m — víc než kterékoli jiné jezero na světě.",
     "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
     "source_card": "ru-priroda-bajkal",
-    "image_prompt": "Fotorealistický snímek pohledu z útesu na temně modrou hladinu obrovského jezera mizícího za obzorem, skály v popředí, přirozené světlo, bez textu, bez lidí, 16:9"
+    "image_prompt": "Fotorealistický snímek pohledu z útesu na temně modrou hladinu obrovského jezera mizícího za obzorem, skály v popředí, přirozené světlo, bez textu, bez lidí, 16:9",
+    "about": "Bajkalu"
   }
 ]

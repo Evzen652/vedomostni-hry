@@ -126,7 +126,16 @@
   const SAVES_KEY = "hricka_quiz_saves";
   let wakeLock = null, timerHandle = null;
   function loadSaves(){ try { return JSON.parse(localStorage.getItem(SAVES_KEY)||"{}"); } catch(e){ return {}; } }
-  function writeSaves(o){ try { localStorage.setItem(SAVES_KEY, JSON.stringify(o)); } catch(e){} }
+  // Dohrané hry maže clearSave(), opuštěné by se ale hromadily donekonečna (úvodní obrazovka
+  // jich stejně ukazuje jen pár) — proto se při každém zápisu nechá jen SAVES_MAX nejnovějších.
+  const SAVES_MAX = 10;
+  function writeSaves(o){
+    try {
+      const stare = Object.keys(o).sort((a,b)=>(o[b].ts||0)-(o[a].ts||0)).slice(SAVES_MAX);
+      for(const id of stare) delete o[id];
+      localStorage.setItem(SAVES_KEY, JSON.stringify(o));
+    } catch(e){}
+  }
   function serializeState(){
     return { mode:S.mode, school:!!S.school, band:S.band, cc:(S.sel&&S.sel.cc)||"ru", section:(S.sel&&S.sel.section)||null,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
@@ -189,7 +198,7 @@
     const box=body.querySelector("#qz-box");
     const allowSteal = S.mode==="party" && S.steal && q.type!=="estimate" && S.players.length>1;
     box.innerHTML = `
-      <div class="qz-ans two"><div class="qz-a ok locked">${correctLabel}<small>SPRÁVNĚ</small></div>
+      <div class="qz-ans two"><div class="qz-a ok locked">${correctLabel}<small>Správná odpověď</small></div>
       <div class="qz-a bad locked">${ICO_CLOCK}<small>ČAS VYPRŠEL</small></div></div>
       <div class="qz-hlaska"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}"</div></div>
       ${allowSteal ? stealHtml(q, "__timeout__") : frowHtml(q)}`;
@@ -226,6 +235,8 @@
 
   // ---- reálný 3D glóbus v medailonku (natáčí se na zemi otázky) ----
   const EARTH_TEX = "assets/earth.jpg";   // bundled lokálně (offline-only); zdroj: three-globe blue-marble, zmenšeno na 1024×512
+  // CSS animace řeší @media (prefers-reduced-motion), rotace glóbu je ale v JS — vypnout ji musíme tady
+  const REDUCED_MOTION = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const COUNTRY_LL = { ru:[100,62], pl:[19.3,52], sk:[19.5,48.7] };   // přibližný střed země pro natočení
   let g3 = null;
   function initGlobe3d(){
@@ -244,9 +255,10 @@
       scene.add(earth);
       g3={ renderer, scene, camera, earth, canvas:cv, targetY:0, curY:0, targetX:0, curX:0, auto:false };
       (function loop(){ requestAnimationFrame(loop); if(!g3) return;
-        if(g3.auto) g3.curY += 0.0015;                       // klidová rotace (~70 s/otáčka)
+        if(REDUCED_MOTION){ g3.curY=g3.targetY; g3.curX=g3.targetX; }   // bez rotace, rovnou na místo
+        else if(g3.auto) g3.curY += 0.0015;                  // klidová rotace (~70 s/otáčka)
         else g3.curY += (g3.targetY-g3.curY)*0.08;           // natočení na zemi otázky
-        g3.curX += (g3.targetX-g3.curX)*0.08;
+        if(!REDUCED_MOTION) g3.curX += (g3.targetX-g3.curX)*0.08;
         g3.earth.rotation.y=g3.curY; g3.earth.rotation.x=g3.curX;
         if(!g3.canvas.isConnected) return;                   // nerenderuj, když glóbus není vidět (výkon)
         g3.renderer.render(g3.scene,g3.camera);
@@ -373,6 +385,7 @@
 
   // ---- výběr tématu: kontinent → země → sekce (jako u glóbu) ----
   function plur(n, one, few, many){ n=Math.abs(n); if(n===1) return one; if(n>=2&&n<=4) return few; return many; }
+  function pointsLabel(n){ return `Získáváš ${n} ${plur(n,"bod","body","bodů")}`; }
   const MODE_LABEL = { solo:"Sólo", party:"Párty", school:"Škola" };
   function beginPick(mode){ S.pickMode=mode; S.sel={}; renderContinentPick(); }
   function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?s[0]:s.length+" témata"; return s; }
@@ -704,9 +717,7 @@
     const country = esc(q.country||COUNTRY), section = esc(q.section||"");
     return `<div class="qz-picframe" id="qz-pic">
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
-      <span class="qz-pic-scrim"></span>
       <div class="qz-pic-fallback" id="qz-pic-fb">${flagStamp(q.cc,"qz-flagbig")}<span class="qz-pic-fb-text"><span class="country">${country}</span><span class="sec">${section}</span></span></div>
-      <figcaption class="qz-piccap">${flagStamp(q.cc,"qz-capstamp")}<span class="qz-piccap-t"><b>${country}</b>${section?`<i>${section}</i>`:""}</span></figcaption>
       <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-orbit"></span><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
     </div>`;
   }
@@ -734,18 +745,24 @@
         <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">na tahu</span>':""}</span>
         <span class="qz-plscore" data-score="${i}">${p.score}</span></button>`).join("");
       return `<div class="qz-scoreboard">${pills}</div>
-        <div class="qz-subtop"><span class="qz-progress">kolo ${S.round}/${S.totalRounds} · otázka ${n}</span><button class="qz-mute" id="qz-mute">${S.voice?ICO_SND:ICO_SNDX}</button></div>`;
+        <div class="qz-subtop"><span class="qz-progress">kolo ${S.round}/${S.totalRounds} · otázka ${n}</span><button class="qz-mute" id="qz-mute" aria-label="${S.voice?"Vypnout hlas":"Zapnout hlas"}" aria-pressed="${S.voice}">${S.voice?ICO_SND:ICO_SNDX}</button></div>`;
     }
     return `<div class="qz-top">
       <span class="qz-progress">otázka ${n}/${total}</span>
       <span style="margin-left:auto;display:flex;gap:8px;align-items:center">
-        <button class="qz-mute" id="qz-mute">${S.voice?ICO_SND:ICO_SNDX}</button>
+        <button class="qz-mute" id="qz-mute" aria-label="${S.voice?"Vypnout hlas":"Zapnout hlas"}" aria-pressed="${S.voice}">${S.voice?ICO_SND:ICO_SNDX}</button>
         ${S.school?"":`<span class="qz-scorepill">${ICO_STAR} <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak">série ${cur().streak}×</span>`:""}</span>`}
       </span></div>`;
   }
   function wireTop(q){
     const mb=body.querySelector("#qz-mute");
-    if(mb) mb.addEventListener("click", () => { S.voice=!S.voice; mb.innerHTML=S.voice?ICO_SND:ICO_SNDX; if(!S.voice) stopTTS(); else speakCurrent(q); });
+    if(mb) mb.addEventListener("click", () => {
+      S.voice=!S.voice;
+      mb.innerHTML=S.voice?ICO_SND:ICO_SNDX;
+      mb.setAttribute("aria-label", S.voice?"Vypnout hlas":"Zapnout hlas");
+      mb.setAttribute("aria-pressed", String(S.voice));
+      if(!S.voice) stopTTS(); else speakCurrent(q);
+    });
     body.querySelectorAll(".qz-pl[data-turn]").forEach(b => b.addEventListener("click", () => {
       if(S.mode!=="party") return; S.manualRot=sideDeg(S.players[+b.dataset.turn].side); applyRotation();
     }));
@@ -788,18 +805,20 @@
     requestWake(); autosave(); startTimer(q);
   }
 
+  // popisek tlačítka „Více o…" — 6. pád je v datech (pole `about`), česky se odvodit nedá
+  function moreLabel(q){ return q.about ? `Více o ${q.about}` : "Více o tom"; }
   function frowHtml(q){
     return `<div class="qz-frow">
       <div class="qz-expl">${esc(q.explanation||"")} ${(SHOW_SOURCE_LINK && q.source_url)?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
-      <div style="display:flex;gap:8px;align-items:center">
-        ${(q.source_card && data.cardsById[q.source_card])?`<button class="qz-more" id="qz-more">${ICO_BOOK} Víc o tom</button>`:""}
+      <div class="qz-fbtns">
+        <button class="qz-more" id="qz-more">${ICO_BOOK} ${esc(moreLabel(q))}</button>
         <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
       </div>
     </div>`;
   }
   function wireFrow(q){
     body.querySelector("#qz-next").addEventListener("click", next);
-    const m=body.querySelector("#qz-more"); if(m) m.addEventListener("click", () => openCard(q.source_card));
+    const m=body.querySelector("#qz-more"); if(m) m.addEventListener("click", () => openMore(q));
   }
 
   function updateScorePill(i){ const el=body.querySelector(`.qz-plscore[data-score="${i}"]`); if(el) el.textContent=S.players[i].score; }
@@ -822,12 +841,12 @@
     const box=body.querySelector("#qz-box");
     const allowSteal = S.mode==="party" && S.steal && !correct && !gold && q.type!=="estimate" && S.players.length>1;
     box.innerHTML = `
-      <div class="qz-ans two">
-        <div class="qz-a ok locked">${esc(q.answer)}<small>SPRÁVNĚ</small></div>
+      <div class="qz-ans ${correct?"one":"two"}">
+        <div class="qz-a ok locked">${esc(q.answer)}<small>Správná odpověď</small></div>
         ${correct?"":`<div class="qz-a bad locked">${esc(choice)}<small>${S.mode==="party"?esc(P.name):"TVŮJ TIP"}</small></div>`}
       </div>
       <div class="qz-hlaska${gold?" gold":""}">
-        ${(gold||gained)?`<div class="qz-hl">${gold?`${ICO_STAR} zlatá odpověď${gained?` · +${gained}`:""}`:`+${gained}`}</div>`:""}
+        ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
         <div class="qz-ht">„${esc(quipText||"")}"</div>
       </div>
       ${masteredNow?`<div class="qz-masternote">${ICO_GLOBE} <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ${ICO_SPARK}</div>`:""}
@@ -876,18 +895,28 @@
     const box=body.querySelector("#qz-box");
     box.innerHTML = `
       <div class="qz-estline"><span>Tip${S.mode==="party"?" ("+esc(P.name)+")":""}: <b>${fmt(val)} ${esc(q.unit||"")}</b></span><span>Správně: <b>${fmt(ans)} ${esc(q.unit||"")}</b></span></div>
-      <div class="qz-hlaska">${gained?`<div class="qz-hl">+${gained}</div>`:""}<div class="qz-ht">„${esc(quipText)}"</div></div>
+      <div class="qz-hlaska">${gained?`<div class="qz-hl points">${pointsLabel(gained)}</div>`:""}<div class="qz-ht">„${esc(quipText)}"</div></div>
       ${masteredNow?`<div class="qz-masternote">${ICO_GLOBE} <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ${ICO_SPARK}</div>`:""}
       ${frowHtml(q)}`;
     wireFrow(q);
   }
 
+  // „Více o…" je u KAŽDÉ odpovědi. Když otázka nemá navázanou kartu z Glóbu,
+  // složí se náhradní karta z otázky samotné (její fotka + vysvětlení).
+  function openMore(q){
+    const c = q.source_card && data.cardsById[q.source_card];
+    if(c) return openCard(q.source_card);
+    cardOverlay({ headline: q.answer || q.question, fact: q.explanation, source_url: q.source_url },
+                `img/${esc(q.id)}.jpg`, true);
+  }
   function openCard(id){
     const c=data.cardsById[id]; if(!c) return;
+    cardOverlay(c, `img/${esc(c.id)}.jpg`, c.visual_type!=="typographic");
+  }
+  function cardOverlay(c, imgSrc, hasImg){
     const ov=document.createElement("div"); ov.className="qz-cardov";
-    const hasImg = c.visual_type!=="typographic";
     ov.innerHTML = `<div class="qz-cardbox">
-      ${hasImg?`<img class="qz-cardimg" src="img/${esc(c.id)}.jpg" alt="" onerror="this.style.display='none'">`:""}
+      ${hasImg?`<img class="qz-cardimg" src="${imgSrc}" alt="" onerror="this.style.display='none'">`:""}
       <div class="qz-cardbody">
         <h3>${esc(c.headline||c.country||"")}</h3>
         <p>${esc(c.fact||"")} ${(SHOW_SOURCE_LINK && c.source_url)?`<a href="${esc(c.source_url)}" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none">${ICO_LINK} zdroj</a>`:""}</p>
@@ -942,7 +971,7 @@
     say(vic); if(S.voice) speakTTS(vic);
     body.innerHTML = `<div class="qz-screen qz-end">
       <h2>Výprava dokončena!</h2>
-      <div class="qz-endscore">${score}</div>
+      <div class="qz-endscore">${S.school?"Třída získala":"Získal(a) jsi"} ${score} ${plur(score,"bod","body","bodů")}</div>
       <p style="color:var(--muted)">z ${S.order.length} otázek · teoretické maximum ${max} bodů</p>
       ${sessionMastered.length?`<div class="qz-masternote">${ICO_GLOBE} Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ${ICO_SPARK}</div>`:""}
       <div class="qz-endrow">
