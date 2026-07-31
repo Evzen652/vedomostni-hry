@@ -4,6 +4,7 @@
   "private": true,
   "description": "Vědomostní kvízová hra (zeměpis) — otázky, fondy, export balíčků",
   "scripts": {
+    "validate": "node scripts/validate-data.js",
     "import-questions": "node scripts/import-questions.js",
     "import-images": "node scripts/import-images.js",
     "import-audio": "node scripts/import-audio.js",
