@@ -28,26 +28,23 @@ for (const f of qFiles) {
     if (!q.about) bad(`${where}: chybí "about" (6. pád pro tlačítko „Více o…") — viz CLAUDE.md`);
     if (q.difficulty != null && ![1, 2, 3].includes(q.difficulty)) bad(`${where}: difficulty=${q.difficulty}, čekáno 1–3`);
 
-    if (q.type === "choice") {
-      if (!q.answer) bad(`${where}: choice bez "answer"`);
-      if (!Array.isArray(q.distractors) || q.distractors.length < 1) bad(`${where}: choice bez distraktorů`);
-      else {
-        const all = [q.answer, ...q.distractors].map(String);
-        if (new Set(all).size !== all.length) bad(`${where}: odpověď se opakuje mezi distraktory`);
-        if (q.distractors.length !== 3) warn(`${where}: ${q.distractors.length} distraktory (jinde 3 → mřížka A–D)`);
-      }
-      if (q.golden_wrong != null) {
-        if (!(q.distractors || []).map(String).includes(String(q.golden_wrong)))
-          bad(`${where}: golden_wrong "${q.golden_wrong}" není mezi distraktory → nedá se zvolit`);
-        if (!q.golden_quip) bad(`${where}: golden_wrong bez golden_quip`);
-      }
-      for (const k of Object.keys(q.distractor_quips || {}))
-        if (!(q.distractors || []).map(String).includes(String(k)))
-          bad(`${where}: distractor_quips má klíč "${k}", který mezi distraktory není`);
-    } else if (q.type === "estimate") {
-      if (typeof q.numeric_answer !== "number") bad(`${where}: estimate bez číselné "numeric_answer"`);
-      if (!q.unit) warn(`${where}: estimate bez "unit"`);
-    } else bad(`${where}: neznámý type "${q.type}"`);
+    // jediný podporovaný typ je "choice" (výběr ze 4) — appka žádný jiný nenabízí
+    if (q.type !== "choice") bad(`${where}: type "${q.type}", čekáno "choice"`);
+    if (!q.answer) bad(`${where}: chybí "answer"`);
+    if (!Array.isArray(q.distractors) || q.distractors.length < 1) bad(`${where}: chybí distraktory`);
+    else {
+      const all = [q.answer, ...q.distractors].map(String);
+      if (new Set(all).size !== all.length) bad(`${where}: odpověď se opakuje mezi distraktory`);
+      if (q.distractors.length !== 3) warn(`${where}: ${q.distractors.length} distraktory (jinde 3 → mřížka A–D)`);
+    }
+    if (q.golden_wrong != null) {
+      if (!(q.distractors || []).map(String).includes(String(q.golden_wrong)))
+        bad(`${where}: golden_wrong "${q.golden_wrong}" není mezi distraktory → nedá se zvolit`);
+      if (!q.golden_quip) bad(`${where}: golden_wrong bez golden_quip`);
+    }
+    for (const k of Object.keys(q.distractor_quips || {}))
+      if (!(q.distractors || []).map(String).includes(String(k)))
+        bad(`${where}: distractor_quips má klíč "${k}", který mezi distraktory není`);
 
     if (!q.quip_correct) warn(`${where}: chybí quip_correct`);
     if (!q.quip_wrong) warn(`${where}: chybí quip_wrong`);

@@ -151,23 +151,15 @@
 .qz-a.bad small { color: var(--bad); }
 .qz-a.dim { opacity: .5; }
 
-/* estimate vstup */
-.qz-est { display: flex; gap: 10px; align-items: center; }
-.qz-est input { flex: 1; font-family: 'Nunito', sans-serif; font-size: 22px; padding: 12px 14px; border-radius: 14px;
-  border: 1.8px solid #dccdb0; background: #fff; color: var(--ink); text-align: center; }
-.qz-est .unit { font-family: 'Nunito', sans-serif; color: var(--muted); font-size: 16px; }
-.qz-est button { background: var(--teal); color: #fffdf6; border: none; border-radius: 14px; padding: 12px 22px;
-  font-family: 'Nunito', sans-serif; font-weight: 650; font-size: 16px; cursor: pointer; box-shadow: 0 4px 0 #1f5f5c; }
-.qz-estline { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-top: 4px; }
-.qz-estline b { color: var(--ink); font-size: 16px; }
-
 /* hláška (hvězda revealu) */
 .qz-hlaska { background: linear-gradient(135deg, #fdf3d7, #fbe9d2); border: 2px solid var(--ochre); border-radius: 16px;
   padding: 14px 18px; box-shadow: 0 4px 0 #c78f35; }
 .qz-hlaska.gold { border-color: #e6b800; background: linear-gradient(135deg, #fff2b0, #ffe07a); box-shadow: 0 4px 0 #c79a00; }
 .qz-hl { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #a8752a; margin-bottom: 5px; font-family: 'Nunito', sans-serif; font-weight: 700; }
-/* zisk bodů je věta, ne štítek — verzálky s velkým prostrkáním by ji dělaly křiklavou */
-.qz-hl.points { text-transform: none; letter-spacing: .02em; font-size: 12.5px; }
+/* zisk bodů je věta, ne štítek — verzálky s velkým prostrkáním by ji dělaly křiklavou.
+   Stojí pod hláškou, takže odsazení patří nahoru (na rozdíl od štítků „čas"/„vyhlášení"). */
+.qz-hl.points { text-transform: none; letter-spacing: .02em; font-size: 12.5px;
+  margin: 8px 0 0; }
 .qz-ht { font-family: 'Nunito', sans-serif; font-size: clamp(16px, 2.1vw, 20px); line-height: 1.45; font-weight: 560; }
 .qz-frow { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .qz-expl { font-size: 12.5px; color: var(--muted); flex: 1; min-width: 200px; }
@@ -304,12 +296,16 @@
 .qz-prow { display: flex; align-items: center; gap: 8px; padding: 5px 0; flex-wrap: wrap; }
 .qz-pav { width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fffdf6; font-size: 13px; flex-shrink: 0; box-shadow: inset -2px -3px 5px rgba(0,0,0,.2); }
 .qz-pname-in { flex: 1; min-width: 90px; font-family: inherit; font-size: 14px; padding: 6px 10px; border-radius: 9px; border: 1.4px solid #dccdb0; background: #fff; color: var(--ink); }
-.qz-page-in { width: 58px; font-family: inherit; font-size: 13px; padding: 6px 8px; border-radius: 9px; border: 1.4px solid #dccdb0; background: #fff; color: var(--ink); text-align: center; }
-.qz-bandtag { font-size: 11px; color: #fffdf6; border-radius: 12px; padding: 3px 9px; }
-.qz-bandtag.deti { background: var(--leaf); } .qz-bandtag.dospeli { background: var(--teal); }
-.qz-sides { display: flex; gap: 4px; }
-.qz-side { width: 26px; height: 26px; border-radius: 8px; border: 1.4px solid #dccdb0; background: #fff; cursor: pointer; font-size: 15px; color: var(--muted); padding: 0; display: inline-flex; align-items: center; justify-content: center; }
-.qz-side.on { background: var(--coral); border-color: var(--coral); color: #fffdf6; }
+/* chybějící jméno: bublina hostitele je nahoře stránky, u dlouhého formuláře snadno mimo
+   viditelnou oblast — proto chyba musí být vidět přímo na poli, kam se scrolluje */
+.qz-pname-in.err { border-color: var(--bad); background: #fbeeec; animation: qz-shake .35s; }
+@keyframes qz-shake { 20%,60% { transform: translateX(-4px); } 40%,80% { transform: translateX(4px); } }
+/* přímý přepínač děti/dospělí — nahrazuje dřívější číselný vstup věku, ten appka
+   stejně nikde nepoužívala k ničemu jinému než k odvození tohohle binárního pásma */
+.qz-bandtoggle { display: flex; border-radius: 12px; overflow: hidden; border: 1.4px solid #dccdb0; flex-shrink: 0; }
+.qz-bandbtn { font-size: 11px; color: var(--muted); background: #fff; border: none; padding: 5px 10px; cursor: pointer; font-family: inherit; }
+.qz-bandbtn.deti.on { background: var(--leaf); color: #fffdf6; }
+.qz-bandbtn.dospeli.on { background: var(--teal); color: #fffdf6; }
 .qz-prem { background: none; border: none; color: var(--bad); cursor: pointer; font-size: 16px; padding: 2px 6px; }
 .qz-addp { color: var(--teal); font-size: 13px; font-weight: 600; cursor: pointer; background: none; border: none; padding: 6px 0 0; font-family: inherit; }
 .qz-setrow { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -362,7 +358,6 @@
 .qz-school .qz-picframe { height: clamp(280px, 40vh, 380px); }
 /* na plátně je fotka odměna pro celou třídu — ať zůstane velká */
 .qz-school .qz-picframe.revealed { height: clamp(260px, 38vh, 360px); }
-.qz-school .qz-est input { font-size: 30px; }
 
 /* časomíra + rozehrané výpravy */
 .qz-timerbar { height: 8px; border-radius: 5px; background: #e7dcc2; overflow: hidden; margin-bottom: 6px; }

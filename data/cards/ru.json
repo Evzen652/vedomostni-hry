@@ -1,73 +1,2839 @@
 [
   {
     "id": "ru-mista-transsib",
-    "cc": "ru",
     "country": "Rusko",
     "section": "Místa",
+    "topic": "Transsibiřská magistrála",
     "headline": "Nejdelší železnice světa",
-    "fact": "Transsibiřská magistrála měří 9 288 km z Moskvy do Vladivostoku; mezi jejími konci je časový rozdíl sedm hodin.",
-    "voice": "Sedm dní ve vlaku — nastoupíš v Evropě a vystoupíš skoro u Japonska.",
+    "fact": "Transsibiřská magistrála měří 9 288 km z Moskvy do Vladivostoku.",
     "source_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
-    "source_quote": "total distance to Vladivostok at 9,288 km … the longest railway line in the world",
-    "visual_type": "photo"
+    "source_quote": "9,288 km … the longest railway line in the world",
+    "voice": "Sedm dní ve vlaku — nastoupíš v Evropě a vystoupíš skoro u Japonska.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek dálkového vlaku projíždějícího podzimní sibiřskou tajgou, zlaté modříny, mlha nad krajinou, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "tags": ["socioekonomicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sedm hodin rozdílu na jedné trati",
+        "fact": "Mezi konci trati je sedmihodinový časový posun. Magistrála je páteří osídlení Sibiře — města podél ní rostla právě díky železnici.",
+        "voice": "Zavoláš domů z vlaku a musíš si nejdřív spočítat, kolik je vlastně hodin.",
+        "source_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
+        "source_quote": "connects … Moscow … with … Vladivostok",
+        "image_prompt": "Fotorealistický snímek interiéru sibiřského dálkového vlaku, cestující u okna, za oknem ubíhající podzimní tajga, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Železnice, která tvoří osídlení",
+        "fact": "Ukázka, jak dopravní osa utváří prostorové rozložení obyvatel: řídce osídlená Sibiř má lidnatější pás právě podél magistrály. Infrastruktura tu není jen následek osídlení, ale jeho příčina.",
+        "voice": "Nejdřív přijely koleje, teprve pak lidé — obvykle to bývá naopak.",
+        "source_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
+        "source_quote": "spurred … settlement",
+        "image_prompt": "Fotorealistický letecký snímek sibiřské železniční tratě a pásu zástavby podél ní v jinak řídce osídlené krajině, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-regiony-rozloha",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Rozloha",
+    "headline": "Největší země světa",
+    "fact": "Rusko je s rozlohou přes 17 milionů km² největší země světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Russia",
+    "source_quote": "the largest country in the world by area … 17,098,246 km2",
+    "voice": "Vejdou se do něj skoro dvě Kanady — a Kanada je druhá největší.",
+    "visual_type": "typographic",
+    "tags": ["regionalni-geografie", "kartografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Země přes dva světadíly",
+        "fact": "Rusko zabírá zhruba osminu veškeré souše a rozkládá se přes dva světadíly — Evropu i Asii. Tradiční hranicí mezi nimi je pohoří Ural.",
+        "voice": "Jedna cesta z jednoho konce na druhý, a přitom neopustíš stejný stát ani nepřekročíš oceán.",
+        "source_url": "https://en.wikipedia.org/wiki/Russia",
+        "source_quote": "spanning Eastern Europe and North Asia"
+      },
+      "kartograf": {
+        "headline": "Jádro na západě, prázdno na východě",
+        "fact": "Transkontinentální stát s výrazným kontrastem jádra a periferie: obyvatelstvo i ekonomika se koncentrují v evropské části na západě, zatímco obří asijská Sibiř je řídce osídlená. Rozloha sama tak vytváří vnitřní asymetrii.",
+        "voice": "Většina lidí žije natěsno na kraji mapy, zbytek země zeje skoro prázdnotou.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia",
+        "source_quote": "population is concentrated in the … European part"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-kreml",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Moskevský Kreml",
+    "headline": "Pevnost v srdci Moskvy",
+    "fact": "Moskevský Kreml je opevněný komplex s pěti paláci a čtyřmi katedrálami, sídlo ruského prezidenta a společně s Rudým náměstím památka UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Moscow_Kremlin",
+    "source_quote": "the Kremlin comprises five palaces, four cathedrals, and an enclosing wall",
+    "voice": "Za jeho zdmi se rozhoduje o celé zemi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Moskevského Kremlu při západu slunce, cihlové hradby a věže, zlaté kupole katedrál v pozadí, bez lidí, 16:9",
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sídlo moci od středověku",
+        "fact": "Kreml je nejstarší částí Moskvy a od středověku sídlem moci — nejdřív carů, dnes prezidenta. Jeho hradby a věže vznikaly postupně od 15. století.",
+        "voice": "Jiní vládci přišli a odešli, hradby zůstaly stát na svém.",
+        "source_url": "https://en.wikipedia.org/wiki/Moscow_Kremlin",
+        "image_prompt": "Fotorealistický detailní snímek starých cihlových hradeb a věží Moskevského Kremlu z 15. století, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Opevněné jádro, kolem nějž rostlo město",
+        "fact": "Kreml je typický příklad opevněného mocenského jádra, kolem kterého historicky rostlo město — podobný půdorys (pevnost obklopená tržištěm a předměstími) mají i jiná ruská města.",
+        "voice": "Nejdřív pevnost, pak tržiště kolem ní, pak město — v Rusku to jinak nešlo.",
+        "source_url": "https://en.wikipedia.org/wiki/Moscow_Kremlin",
+        "image_prompt": "Fotorealistický letecký snímek historického jádra ruského města s pevností uprostřed a soustřednými okruhy zástavby kolem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-vladivostok",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Vladivostok",
+    "headline": "Konečná stanice u Tichého oceánu",
+    "fact": "Vladivostok je největší ruský přístav u Tichého oceánu a východní konečná Transsibiřské magistrály.",
+    "source_url": "https://en.wikipedia.org/wiki/Vladivostok",
+    "source_quote": "Vladivostok remains the largest Russian port on the Pacific Ocean.",
+    "voice": "Blíž má k Aljašce a Austrálii než k Moskvě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek přístavu Vladivostok s mostem přes Zlatý roh, lodě v zálivu, večerní světlo, bez textu, 16:9",
+    "tags": ["socioekonomicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sedm hodin před Moskvou",
+        "fact": "Vladivostok leží v časovém pásmu o 7 hodin před Moskvou — geograficky je blíž Anchorage na Aljašce nebo australskému Darwinu než ruské metropoli.",
+        "voice": "Ve Vladivostoku si dáváš snídani, v Moskvě lidé ještě spí předešlý večer.",
+        "source_url": "https://en.wikipedia.org/wiki/Vladivostok",
+        "image_prompt": "Fotorealistický snímek nábřeží Vladivostoku za časného rána, východ slunce nad Tichým oceánem, lodě v přístavu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kde se železnice potká s oceánem",
+        "fact": "Vladivostok ukazuje extrémní protaženost Ruska: jde o stejný stát jako Moskva, ale jiný kontinent, jiné moře a téměř jiný den. Přístav propojuje transkontinentální železnici s tichomořskými námořními trasami.",
+        "voice": "Stejný pas, stejná vlajka, a přesto úplně jiný svět na obzoru.",
+        "source_url": "https://en.wikipedia.org/wiki/Vladivostok",
+        "image_prompt": "Fotorealistický snímek nákladního přístavu Vladivostok s kontejnery a železniční tratí končící u mola, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-sochi",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Sočí",
+    "headline": "Subtropické město u Černého moře",
+    "fact": "Sochi je největší ruské lázeňské město na pobřeží Černého moře a v roce 2014 hostilo zimní olympijské hry.",
+    "source_url": "https://en.wikipedia.org/wiki/Sochi",
+    "source_quote": "the largest resort city in Russia",
+    "voice": "Palmy na pláži a o pár desítek kilometrů dál zasněžené vrcholky Kavkazu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pobřeží Sochi u Černého moře, subtropická vegetace, hory Kavkazu v pozadí, slunečný den, bez lidí v popředí, 16:9",
+    "tags": ["regionalni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Podhůří Kavkazu mění klima",
+        "fact": "Sochi leží v podhůří Kavkazu, což mu dává neobvykle mírné, téměř subtropické klima na jinak chladné ruské mapě. Olympijské hry 2014 se konaly zároveň na pobřeží i v horách.",
+        "voice": "Ráno lyžuješ na sněhu, odpoledne se opaluješ na pláži — a nikam přitom nejedeš.",
+        "source_url": "https://en.wikipedia.org/wiki/Sochi",
+        "image_prompt": "Fotorealistický snímek subtropické promenády v Sochi s palmami, v pozadí zasněžené štíty Kavkazu, slunečný den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mikroklima, které se vymyká mapě",
+        "fact": "Sochi je výjimka potvrzující pravidlo: klima Ruska určuje hlavně zeměpisná šířka a vzdálenost od moře, ale pohoří Kavkazu tu vytváří lokální mikroklima, které se vymyká celostátnímu vzorci.",
+        "voice": "Kdyby o klimatu rozhodovala jen zeměpisná šířka, tohle místo by tu vůbec nemělo být.",
+        "source_url": "https://en.wikipedia.org/wiki/Sochi",
+        "image_prompt": "Fotorealistický kontrastní snímek: palmy na pobřeží a zasněžené kavkazské hory v jednom záběru, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-sachalin",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Sachalin",
+    "headline": "Ostrov na kraji Ruska",
+    "fact": "Sachalin je největší ruský ostrov, dlouhý 948 km, ležící v Dálném východě jen asi 40 km od japonského Hokkaida.",
+    "source_url": "https://en.wikipedia.org/wiki/Sakhalin",
+    "source_quote": "Sakhalin is the largest island in Russia, being 948 km (589 mi) long",
+    "voice": "Odtud je blíž do Japonska než na ruskou pevninu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek skalnatého pobřeží ostrova Sachalin, husté jehličnaté lesy, moře, zamračená obloha, bez lidí, 16:9",
+    "tags": ["regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sporný ostrov mezi mocnostmi",
+        "fact": "Sachalin odděluje Ochotské moře od Japonského moře a v minulosti byl sporným územím mezi Ruskem a Japonskem — jeho jižní část patřila v letech 1905–1945 Japonsku.",
+        "voice": "Půl století patřil jinému státu — hranice se tu měnila rychleji než pár generací.",
+        "source_url": "https://en.wikipedia.org/wiki/Sakhalin",
+        "image_prompt": "Fotorealistický snímek zamlženého pobřeží Sachalinu s osamělým majákem, chladné severské světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ropa a zemětřesení na okraji desky",
+        "fact": "Sachalin leží na okraji kontinentálního šelfu v seizmicky aktivní oblasti (setkání tektonických desek), což z něj dělá zdroj ropy a plynu, ale i oblast s vysokým rizikem zemětřesení.",
+        "voice": "Bohatství pod nohama a půda, která se pod nimi občas otřese.",
+        "source_url": "https://en.wikipedia.org/wiki/Sakhalin",
+        "image_prompt": "Fotorealistický snímek ropné plošiny u pobřeží Sachalinu v neklidném moři, zamračená obloha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-murmansk",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Murmansk",
+    "headline": "Největší město za polárním kruhem",
+    "fact": "Murmansk je největší město na světě ležící za polárním kruhem, a přesto má díky Golfskému proudu přístav, který nezamrzá.",
+    "source_url": "https://en.wikipedia.org/wiki/Murmansk",
+    "source_quote": "Being a non-freezing port due to the warm North Atlantic Current, Murmansk resembles cities of its size across western Russia.",
+    "voice": "Zima jako na severním pólu, ale přístav funguje celý rok.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek přístavu Murmansk v zimě, ledoborec u mola, sníh, nízké slunce nad obzorem, bez textu, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Golfský proud drží přístav živý",
+        "fact": "Teplý Severoatlantický proud (pokračování Golfského proudu) drží vodu u Murmansku nezamrzlou i v zimě, ačkoli leží stovky kilometrů za polárním kruhem — bez něj by tu byl přístav k ničemu.",
+        "voice": "Bez teplého proudu odkudsi od Mexika by tu byl led místo lodí.",
+        "source_url": "https://en.wikipedia.org/wiki/Murmansk",
+        "image_prompt": "Fotorealistický snímek nezamrzlého přístavu Murmansk v zimě, otevřená voda mezi ledem, lodě u zasněženého mola, 16:9"
+      },
+      "kartograf": {
+        "headline": "Když proud přepíše zeměpisnou šířku",
+        "fact": "Murmansk je učebnicový příklad, jak mořské proudy přepisují klimatickou logiku zeměpisné šířky: totéž pásmo je jinde pod ledem, tady umožňuje celoroční námořní dopravu a strategický přístup k Severnímu ledovému oceánu.",
+        "voice": "Stejná zeměpisná šířka jinde znamená věčný led, tady znamená otevřený přístav.",
+        "source_url": "https://en.wikipedia.org/wiki/Murmansk",
+        "image_prompt": "Fotorealistický letecký snímek arktického pobřeží: otevřená nezamrzlá zátoka Murmansku obklopená sněhem a ledem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-norilsk",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Norilsk",
+    "headline": "Průmyslové město na věčně zmrzlé půdě",
+    "fact": "Norilsk s více než 175 000 obyvateli je nejsevernější velké město světa, postavené na permafrostu kvůli těžbě niklu a dalších kovů.",
+    "source_url": "https://en.wikipedia.org/wiki/Norilsk",
+    "source_quote": "It is the world's northernmost city with more than 175,000 inhabitants",
+    "voice": "Město, kam se dá dostat jen letadlem nebo lodí — silnice nikam nevede.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek panelových domů v Norilsku v zimě, sníh, průmyslové komíny v dálce, ponuré světlo, bez lidí, 16:9",
+    "tags": ["socioekonomicka-geografie", "fyzicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Domy na pilotách v permafrostu",
+        "fact": "Norilsk stojí na jednom z největších světových ložisek niklu, mědi a palladia. Kvůli permafrostu se domy staví na pilotách zaražených hluboko do zmrzlé půdy, jinak by teplo z budov led rozpustilo.",
+        "voice": "Kdyby dům stál rovnou na zemi, vlastní teplo by mu půdu pod nohama rozpustilo.",
+        "source_url": "https://en.wikipedia.org/wiki/Norilsk",
+        "image_prompt": "Fotorealistický detailní snímek panelového domu v Norilsku stojícího na betonových pilotách zaražených do zmrzlé půdy, sníh, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město, které drží jen ruda",
+        "fact": "Norilsk existuje jen díky nerostnému bohatství — bez ložisek kovů by tu ve výjimečně nehostinných podmínkách žádné velké město nevzniklo. Je to extrémní příklad, jak surovinová geografie dokáže přepsat sídelní mapu.",
+        "voice": "Vezmi kov ze země a nezbyde důvod, proč by tu vůbec někdo měl bydlet.",
+        "source_url": "https://en.wikipedia.org/wiki/Norilsk",
+        "image_prompt": "Fotorealistický snímek obřího povrchového dolu a hutního provozu u Norilsku v arktické krajině, průmyslové komíny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-volha",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Volha",
+    "headline": "Matka řek",
+    "fact": "Volha je s délkou 3 531 km nejdelší řeka Evropy a Rusové jí přezdívají 'Volha-matuška', tedy matička Volha.",
+    "source_url": "https://en.wikipedia.org/wiki/Volga",
+    "source_quote": "The longest river in Europe and the longest endorheic basin river in the world.",
+    "voice": "Podél ní vyrostla města, obchod i celá ruská literatura.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek řeky Volhy za soumraku, klidná hladina, ruské město na břehu, teplé světlo, bez textu, 16:9",
+    "tags": ["fyzicka-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obchodní tepna do arabského světa",
+        "fact": "Volha odedávna spojovala Skandinávii a slovanská území s Persií a arabským světem — podél ní vznikala středověká obchodní města. Ústí do Kaspického moře, které nemá odtok do oceánu.",
+        "voice": "Loď plná zboží tu kdysi propojovala Skandinávii s Bagdádem, aniž by minula moře.",
+        "source_url": "https://en.wikipedia.org/wiki/Volga",
+        "image_prompt": "Fotorealistický snímek historických kupeckých lodí na řece Volze u středověkého ruského města, ranní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Páteř evropského Ruska",
+        "fact": "Volha je páteří evropského Ruska podobně jako Transsibiřská magistrála páteří Sibiře — řeka určovala, kde vznikala města a kudy vedl obchod, dávno předtím, než existovaly železnice.",
+        "voice": "Než vznikly koleje, o tom, kde bude město, rozhodovala řeka.",
+        "source_url": "https://en.wikipedia.org/wiki/Volga",
+        "image_prompt": "Fotorealistický letecký snímek řeky Volhy s řetězcem měst podél obou břehů, široká krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-novosibirsk",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Novosibirsk",
+    "headline": "Milionové město, které vyrostlo z mostu",
+    "fact": "Novosibirsk je největší sibiřské město; založeno bylo roku 1893 u přechodu Transsibiřské magistrály přes řeku Ob.",
+    "source_url": "https://en.wikipedia.org/wiki/Novosibirsk",
+    "source_quote": "Novosibirsk took fewer than seventy years to achieve this milestone",
+    "voice": "Ještě před sto lety tu nebylo nic — jen most přes řeku.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Milion lidí za sedmdesát let",
+        "fact": "Novosibirsk vznikl doslova z železničního mostu přes Ob a na milion obyvatel dosáhl už za necelých sedmdesát let — neobvykle rychlý růst i na ruské poměry.",
+        "voice": "Rychlejší růst než u leckterého města se stoletým náskokem.",
+        "source_url": "https://en.wikipedia.org/wiki/Novosibirsk"
+      },
+      "kartograf": {
+        "headline": "Kde se křížily most a magistrála",
+        "fact": "Novosibirsk je názorný důkaz, jak dopravní infrastruktura zakládá města: bez křížení magistrály a řeky by tu velkoměsto nevzniklo. Podobný vzorec se opakuje podél celé transsibiřské trasy.",
+        "voice": "Bez toho jednoho křížení řeky a trati by tu dnes bylo jen pole.",
+        "source_url": "https://en.wikipedia.org/wiki/Novosibirsk"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-kazan",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Kazaň",
+    "headline": "Kreml s katedrálou i mešitou vedle sebe",
+    "fact": "Kazaň, hlavní město Tatarstánu, má v Kremlu vedle sebe pravoslavnou katedrálu i mešitu Kul Šarif — symbol soužití ruské a tatarské kultury.",
+    "source_url": "https://en.wikipedia.org/wiki/Kazan",
+    "source_quote": "Kazan is renowned for its vibrant mix of Tatar and Russian cultures.",
+    "voice": "Dvě víry, jedna pevnost, jedno město.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Kazaňského Kremlu, bíle-modrá mešita Kul Šarif a pravoslavná katedrála vedle sebe, jasná obloha, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Republika s vlastním jazykem",
+        "fact": "Tatarstán je republika v rámci Ruska s vlastním turkickým jazykem a převážně muslimským obyvatelstvem — Kazaňský Kreml se stavbou mešity vedle katedrály (dokončena 2005) hlásí k oběma tradicím zároveň.",
+        "voice": "Jiný jazyk, jiná víra, stejný pas — a jedna pevnost, kde si obě dýchají na dosah.",
+        "source_url": "https://en.wikipedia.org/wiki/Kazan",
+        "image_prompt": "Fotorealistický snímek mešity Kul Šarif v Kazani zblízka, modré kupole a bílé minarety, jasná obloha, 16:9"
+      },
+      "kartograf": {
+        "headline": "Federace mnoha identit",
+        "fact": "Kazaň připomíná, že Rusko není etnicky ani nábožensky jednotné — je to federace, jejíž součástí jsou republiky s vlastní identitou. Soužití v jednom Kremlu je architektonickým vyjádřením širšího mnohonárodního uspořádání státu.",
+        "voice": "Jedna vlajka nahoře, uvnitř republika republik.",
+        "source_url": "https://en.wikipedia.org/wiki/Kazan",
+        "image_prompt": "Fotorealistický snímek pravoslavné katedrály a mešity Kazaňského Kremlu stojících vedle sebe za soumraku, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ru-mista-ural",
+    "country": "Rusko",
+    "section": "Místa",
+    "topic": "Ural",
+    "headline": "Pohoří, které dělí Rusko na dvě půlky",
+    "fact": "Pohoří Ural tvoří tradiční hranici mezi Evropou a Asií a protíná ho i milionové město Jekatěrinburg.",
+    "source_url": "https://en.wikipedia.org/wiki/Ural_Mountains",
+    "source_quote": "The mountain range forms part of the conventional boundary between the continents of Europe and Asia.",
+    "voice": "Ráno se probudíš v Evropě, večer usneš v Asii — a přitom neopustíš stejné město.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zvlněných zalesněných hřebenů pohoří Ural, podzimní barvy, ranní mlha v údolích, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejstarší a nejnižší hory",
+        "fact": "Ural je jedno z nejstarších pohoří světa, dnes už silně zvětralé a nízké. Leží blízko Volha-uralské oblasti a odděluje evropskou (hustěji osídlenou) část Ruska od řídce osídlené Sibiře.",
+        "voice": "Kdysi to byly velehory — dnes je přejdeš skoro bez povšimnutí.",
+        "source_url": "https://en.wikipedia.org/wiki/Yekaterinburg",
+        "image_prompt": "Fotorealistický snímek nízkých zvětralých zalesněných hřebenů Uralu, ranní mlha, podzimní barvy, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice, kterou nakreslili lidé",
+        "fact": "Hranice kontinentů podél Uralu je dohoda, ne přírodní danost — geologicky je Eurasie jeden souvislý blok. Ukazuje to, že i 'pevné' hranice na mapách mohou být výsledkem konvence, kterou lidé v 18. století zavedli z praktických důvodů.",
+        "voice": "Pod nohama jeden souvislý kus země, na mapě rovnou dva světadíly.",
+        "source_url": "https://en.wikipedia.org/wiki/Ural_Mountains",
+        "image_prompt": "Fotorealistický snímek kamenného obelisku 'hranice Evropy a Asie' v pohoří Ural u lesní cesty, 16:9"
+      }
+    }
   },
   {
     "id": "ru-priroda-bajkal",
-    "cc": "ru",
     "country": "Rusko",
     "section": "Příroda",
-    "headline": "Drží pětinu sladké vody světa",
-    "fact": "Bajkal je nejhlubší jezero světa (1 642 m) a obsahuje zhruba pětinu nezamrzlé sladké vody planety.",
-    "voice": "Tak čisté, že místy dohlédneš desítky metrů pod hladinu.",
+    "topic": "Bajkal",
+    "headline": "Jezero, co drží pětinu sladké vody světa",
+    "fact": "Bajkal je nejhlubší jezero světa — na dně je hluboký 1 642 metrů.",
     "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
-    "source_quote": "the deepest lake in the world … 1,642 metres; around 19% of the unfrozen fresh water on the planet",
-    "visual_type": "photo"
+    "source_quote": "the deepest lake in the world … 1,642 metres",
+    "voice": "Tak čistý, že za dobrého dne dohlédneš desítky metrů pod hladinu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jezera Bajkal v zimě, průzračný modrý led s prasklinami, hory na obzoru, přirozené světlo, bez textu, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Bajkal je nejhlubší a zároveň nejstarší jezero světa; sám drží zhruba pětinu veškeré nezamrzlé sladké vody na planetě.",
+        "voice": "Jedno jezero, a přece pětina veškeré nezamrzlé sladké vody na planetě.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
+        "source_quote": "contains … around 20% of the world's unfrozen fresh water"
+      },
+      "kartograf": {
+        "fact": "Bajkal je tektonická riftová propadlina stará přibližně 25 milionů let, kde se zemská kůra pomalu roztahuje. Dlouhá izolace dala vzniknout extrémnímu endemismu (např. tuleň bajkalský) a jezero drží ~20 % povrchové nezamrzlé sladké vody Země.",
+        "voice": "Země se tu 25 milionů let pomalu trhá — a výsledkem je jezero jako žádné jiné.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
+        "source_quote": "Lake Baikal is a rift lake … the oldest lake in the world"
+      }
+    }
+  },
+  {
+    "id": "ru-klima-ojmjakon",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Ojmjakon",
+    "headline": "Nejchladnější obydlené místo světa",
+    "fact": "V sibiřské vesnici Ojmjakon naměřili −67,7 °C — je to nejchladnější trvale obydlené místo na Zemi.",
+    "source_url": "https://www.guinnessworldrecords.com/world-records/lowest-temperature-inhabited",
+    "source_quote": "coldest permanently inhabited place in the world",
+    "voice": "Škola se tu zavírá, až když je pořádná zima — a to je pořádná zima hodně nízko.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek malé sibiřské vesnice v hlubokém mrazu za soumraku, dřevěné domy, kouř z komínů stoupá rovně vzhůru, ojíněné stromy, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
+    "tags": ["fyzicka-geografie", "podnebi", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Proč tak extrémní zima? Ojmjakon leží daleko od moře (kontinentalita), vysoko na severu a v horské kotlině, kde se studený vzduch drží jako v míse.",
+        "voice": "Moře by tu mráz zmírnilo, jenže moře je odsud pěkně daleko.",
+        "source_url": "https://en.wikipedia.org/wiki/Oymyakon",
+        "source_quote": "Oymyakon … Pole of Cold … valley"
+      },
+      "kartograf": {
+        "fact": "Kontinentalita: pevnina bez tepelné setrvačnosti oceánu se rychle ohřívá i ochlazuje, což dává obrovskou roční amplitudu teplot. V úzké kotlině navíc vzniká teplotní inverze — nejstudenější vzduch klesá a hromadí se u dna.",
+        "voice": "Studený vzduch si sedne na dno kotliny a zůstane tam ležet.",
+        "source_url": "https://en.wikipedia.org/wiki/Continental_climate",
+        "source_quote": "large annual temperature ranges"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-gejzir",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Údolí gejzírů",
+    "headline": "Údolí, kde země chrlí horkou vodu",
+    "fact": "Na Kamčatce leží Údolí gejzírů s asi devadesáti gejzíry a mnoha horkými prameny — jedna z největších koncentrací gejzírů na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Valley_of_Geysers",
+    "source_quote": "This six-kilometre-long basin with approximately ninety geysers and many hot springs is situated on the Kamchatka Peninsula.",
+    "voice": "Sníh na svazích a pod ním vroucí prameny — sopečná krajina naživo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Údolí gejzírů na Kamčatce, pára stoupající z gejzírů, hornatá sopečná krajina, ranní světlo, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Gejzíry vznikají tam, kde se podzemní voda ohřívá sopečnou aktivitou a pod tlakem prudce uniká na povrch. Kamčatka leží na Tichomořském ohnivém kruhu s desítkami aktivních sopek.",
+        "voice": "Pod nohama vře, nad hlavou padá sníh — Kamčatka nedodržuje jednoduchá pravidla.",
+        "source_url": "https://en.wikipedia.org/wiki/Valley_of_Geysers"
+      },
+      "kartograf": {
+        "fact": "Rozmístění gejzírů kopíruje hranice tektonických desek — Kamčatka leží přesně tam, kde se pacifická deska podsouvá pod euroasijskou. Sopečná a gejzírová aktivita je tak přímým otiskem deskové tektoniky na povrchu.",
+        "voice": "Kde se jedna deska podsouvá pod druhou, tam ze země stříká vroucí voda.",
+        "source_url": "https://en.wikipedia.org/wiki/Valley_of_Geysers"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-tajga",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Tajga",
+    "headline": "Největší les na Zemi",
+    "fact": "Sibiřská tajga je se svými 17 miliony km² největší souvislý lesní biom na planetě — pokrývá přes 11 % veškeré souše.",
+    "source_url": "https://en.wikipedia.org/wiki/Taiga",
+    "source_quote": "The taiga, or boreal forest, is the world's largest land biome.",
+    "voice": "Jehličnaté moře, které by pokrylo celou Evropu — a ještě by zbylo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký záběr nekonečné sibiřské tajgy, jehličnaté lesy táhnoucí se k horizontu, ranní mlha, bez lidí a budov, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tajga tvoří pás mezi tundrou na severu a stepí na jihu a je domovem medvědů, rysů i sibiřských tygrů. Ukládá obrovské množství uhlíku, dvakrát víc na plochu než tropický deštný prales.",
+        "voice": "Strom vedle stromu stovky kilometrů daleko, a v nich schovaný medvěd i tygr.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiga"
+      },
+      "kartograf": {
+        "fact": "Tajga funguje jako obří zásobník uhlíku — samotné panenské boreální lesy ho drží víc, než je aktuálně v celé atmosféře. Její kácení nebo požáry proto mají globální klimatický dopad, ne jen lokální.",
+        "voice": "V kmenech a půdě je zamčeno víc uhlíku, než je teď volně v celém vzduchu nad námi.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiga"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-permafrost",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Permafrost",
+    "headline": "Půda, která je zmrzlá tisíce let",
+    "fact": "Věčně zmrzlá půda (permafrost) pokrývá velkou část Sibiře a ukrývá stovky miliard tun uhlíku uvězněného v ledu.",
+    "source_url": "https://en.wikipedia.org/wiki/Permafrost",
+    "source_quote": "permafrost contains organic matter equivalent to 1400–1650 billion tons of pure carbon",
+    "voice": "Půda, do které by se dalo kopat stovky let a pořád by byla zmrzlá.",
+    "visual_type": "typographic",
+    "tags": ["fyzicka-geografie", "podnebi", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Permafrost drží krajinu i budovy pohromadě jako přírodní beton. Když se oteplí a led roztaje, půda se propadá a bortí — v některých severních ruských městech už kvůli tomu popraskala až čtyři pětiny budov.",
+        "voice": "Země, která donedávna držela domy pohromadě jako beton, teď pod nimi měkne.",
+        "source_url": "https://en.wikipedia.org/wiki/Permafrost"
+      },
+      "kartograf": {
+        "fact": "Tání permafrostu je zpětnovazební smyčka: teplota stoupá → led taje → uvolňuje se metan → teplota stoupá rychleji. Navíc podkopává samotnou infrastrukturu, na které stojí sibiřská města — klima tu doslova podráží nohy ekonomice.",
+        "voice": "Čím víc taje, tím rychleji taje dál — sama sobě si topí pod nohama.",
+        "source_url": "https://en.wikipedia.org/wiki/Permafrost"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-ladoga",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Ladožské jezero",
+    "headline": "Největší jezero Evropy",
+    "fact": "Ladožské jezero poblíž Petrohradu je největší jezero ležící celé v Evropě a druhé největší v Rusku po Bajkalu.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Ladoga",
+    "source_quote": "the largest lake located entirely in Europe",
+    "voice": "Za druhé světové války po jeho zamrzlém ledu vedla jediná cesta ven z obleženého Leningradu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek Ladožského jezera, klidná hladina, severská krajina na břehu, chladné světlo, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ladožské jezero bylo za obležení Leningradu (1941–1944) jedinou spojnicí města se zbytkem země — v zimě po něm vedla takzvaná 'Cesta života' přes led.",
+        "voice": "Přežití celého města záviselo na tom, jestli led vydrží další náklaďák.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Ladoga"
+      },
+      "kartograf": {
+        "fact": "Ladoga ukazuje, jak fyzická geografie umí rozhodovat o dějinách: zamrzlé jezero se v kritické chvíli změnilo z překážky v jedinou dopravní tepnu, na které závisely životy statisíců lidí.",
+        "voice": "Kus zamrzlé vody se v tu chvíli stal důležitější než celá armáda.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Ladoga"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-elbrus",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Elbrus",
+    "headline": "Nejvyšší hora Evropy stojí v Rusku",
+    "fact": "Sopka Elbrus na Kavkaze měří 5 642 m a podle běžně uznávané konvence je nejvyšší horou Evropy.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Elbrus",
+    "source_quote": "the highest mountain in Russia and Europe",
+    "voice": "Vyšší než Mont Blanc — a mnozí by hádali, že je to naopak.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zasněženého vrcholu hory Elbrus na Kavkaze, dvě zaoblené sopečné kupole, jasná modrá obloha, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Elbrus je vyhaslá sopka se dvěma vrcholy na hranici Ruska s Gruzií. Je vyšší než nejvyšší hora Alp (Mont Blanc), přesto o ní lidé mimo Rusko slyší mnohem méně.",
+        "voice": "Vyšší než nejslavnější hora Alp, a přesto o ní skoro nikdo mimo Rusko neslyšel.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Elbrus"
+      },
+      "kartograf": {
+        "fact": "Titul 'nejvyšší hora Evropy' záleží na tom, kudy vedeme hranici kontinentu — pokud bereme hlavní hřeben Kavkazu jako hranici, vychází Evropě Elbrus; jiná konvence by dala přednost Mont Blancu. I superlativy jsou otázkou definice.",
+        "voice": "Stačí posunout čáru na mapě jinam, a nejvyšší hora Evropy se hned jmenuje jinak.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Elbrus"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-tygr",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Sibiřský tygr",
+    "headline": "Největší kočka světa žije na Sibiři",
+    "fact": "Sibiřský (amurský) tygr je největší kočkovitá šelma na světě a žije v lesích ruského Dálného východu; ve volné přírodě jich zbývá jen kolem 750.",
+    "source_url": "https://en.wikipedia.org/wiki/Siberian_tiger",
+    "source_quote": "often considered to be the largest tiger",
+    "voice": "Šelma, která by se vešla do bytu — a přesto se dokáže skoro neviditelně schovat v lese.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sibiřského tygra kráčejícího zasněženým lesem, husrá zimní srst, přirozené světlo, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sibiřský tygr žije hlavně v pohoří Sichote-Aliň na ruském Dálném východě. Je ohrožený kvůli pytláctví a ničení lesů — jeho přežití dnes závisí na přísně chráněných rezervacích.",
+        "voice": "Zvíře velké jako pohovka se dokáže v lese ztratit úplně beze zbytku.",
+        "source_url": "https://en.wikipedia.org/wiki/Siberian_tiger"
+      },
+      "kartograf": {
+        "fact": "Sibiřský tygr je tzv. deštníkový druh: chránit jeho rozlehlé teritorium znamená chránit celý lesní ekosystém Dálného východu, který na tygrovi závisí. Jeho úbytek nebo přežití je tak indikátorem stavu celé oblasti.",
+        "voice": "Zachráníš jednu kočku, a s ní se zachrání celý les, který na ní visí.",
+        "source_url": "https://en.wikipedia.org/wiki/Siberian_tiger"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-jenisej",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Sibiřské řeky",
+    "headline": "Veletok, který teče na sever do ledu",
+    "fact": "Jenisej je jedna ze tří velkých sibiřských řek, které tečou na sever do Severního ledového oceánu; drénuje do něj víc vody než kterákoli jiná řeka.",
+    "source_url": "https://en.wikipedia.org/wiki/Yenisei_River",
+    "source_quote": "the largest to drain into the Arctic Ocean",
+    "voice": "Zatímco evropské řeky míří k teplému jihu, sibiřské tečou vstříc ledu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý letecký snímek řeky Jenisej vinoucí se sibiřskou krajinou, podzimní barvy, bez lidí a staveb, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Jenisej, Ob a Lena patří mezi nejdelší řeky světa a všechny míří na sever — na rozdíl od většiny velkých řek na jiných kontinentech, které tečou spíš k teplejším oblastem.",
+        "voice": "Nejdelší řeky světa tu neplynou k teplu, ale rovnou do ledu.",
+        "source_url": "https://en.wikipedia.org/wiki/Yenisei_River"
+      },
+      "kartograf": {
+        "fact": "Sever směřující tok sibiřských řek má důsledek: na jaře se rozmrzá dřív jejich jižní (teplejší) část, zatímco ústí na severu je ještě zamrzlé. Voda se tak hromadí a způsobuje rozsáhlé jarní záplavy — směr toku určuje i typ přírodní katastrofy.",
+        "voice": "Řeka se probudí na jihu dřív než na severu, a voda se pak nemá kam vejít.",
+        "source_url": "https://en.wikipedia.org/wiki/Yenisei_River"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-medved",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Wrangelův ostrov",
+    "headline": "Ostrov s nejhustším doupátkem ledních medvědů",
+    "fact": "Wrangelův ostrov v Severním ledovém oceánu má nejvyšší hustotu doupat ledních medvědů na světě a je památkou UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Wrangel_Island",
+    "source_quote": "Wrangel Island is a breeding ground for polar bears having the highest density of dens in the world",
+    "voice": "Kus tundry na kraji mapy, kam medvědice přicházejí přivést mláďata na svět.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ledního medvěda na tundře Wrangelova ostrova, zasněžená krajina, chladné světlo, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Odlehlost a izolace udělaly z Wrangelova ostrova útočiště pro polární faunu — kromě medvědů tu žijí i pižmoni a zůstal tu poslední doložený výskyt mamutů, kteří tu přežili do doby faraonů.",
+        "voice": "Zatímco v Egyptě stavěli pyramidy, na tomhle ostrově ještě chodili mamuti.",
+        "source_url": "https://en.wikipedia.org/wiki/Wrangel_Island"
+      },
+      "kartograf": {
+        "fact": "Ostrovní izolace v Arktidě funguje jako přírodní laboratoř: nepřístupnost pro člověka i predátory umožnila zachovat unikátní koncentraci druhů na malé ploše — proto UNESCO chrání celý ostrov jako přírodní systém, ne jednotlivé druhy zvlášť.",
+        "voice": "Nikdo sem nemohl snadno dorazit, a tak tu zůstalo, co jinde dávno zmizelo.",
+        "source_url": "https://en.wikipedia.org/wiki/Wrangel_Island"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-cernozem",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Černozem",
+    "headline": "Černá půda, ze které roste nejvíc obilí",
+    "fact": "Černozem, tmavá úrodná půda jižního Ruska, patří k nejplodnějším půdám na světě a je základem ruské obilnice.",
+    "source_url": "https://en.wikipedia.org/wiki/Chernozem",
+    "source_quote": "Chernozem is very fertile and can produce high agricultural yields with its high moisture-storage capacity.",
+    "voice": "Barva půdy, díky které je jižní Rusko a Ukrajina obilnicí Evropy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tmavé úrodné černozemě na okraji obdělaného pole, jižní ruská step, jasné denní světlo, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Černozem vzniká tisíce let hromaděním humusu ve stepním klimatu s mírnými srážkami — typicky ve stepích jižního Ruska a Ukrajiny i na severoamerických prériích. Vysoký obsah živin z ní dělá jednu z nejcennějších půd planety.",
+        "voice": "Tisíce let odumřelé trávy nakonec daly nejbohatší půdu na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Chernozem"
+      },
+      "kartograf": {
+        "fact": "Pás černozemě přímo vysvětluje, proč se právě tady soustředí obilnářství a proč je oblast jižního Ruska a Ukrajiny geopoliticky tak citlivá — úrodnost půdy dělá z regionu klíčového světového vývozce pšenice.",
+        "voice": "Kdo drží tenhle pruh černé půdy, drží kus světové sýpky.",
+        "source_url": "https://en.wikipedia.org/wiki/Chernozem"
+      }
+    }
+  },
+  {
+    "id": "ru-priroda-tundra",
+    "country": "Rusko",
+    "section": "Příroda",
+    "topic": "Tundra",
+    "headline": "Kraj, kde nevyroste jediný strom",
+    "fact": "Na dalekém severu Ruska za polárním kruhem se rozkládá tundra — půda je tam zmrzlá tak hluboko, že v ní nemůže vyrůst žádný strom.",
+    "source_url": "https://en.wikipedia.org/wiki/Tundra",
+    "source_quote": "The soil there is frozen from 25 to 90 cm (10 to 35 in) down, making it impossible for trees to grow there.",
+    "voice": "Místo lesa jen mechy, lišejníky a nízké keříky, kam oko dohlédne.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek arktické tundry v létě, nízká vegetace, mechy a lišejníky, ploché rozlehlé území až k horizontu, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tundra leží severně od tajgy, tam kde je i léto příliš krátké a chladné na růst stromů. Rostou tu jen mechy, lišejníky a trpasličí keře přizpůsobené mrazu a krátkému vegetačnímu období.",
+        "voice": "Léto tu trvá tak krátce, že to na jediný strom prostě nestačí.",
+        "source_url": "https://en.wikipedia.org/wiki/Tundra"
+      },
+      "kartograf": {
+        "fact": "Hranice mezi tundrou a tajgou přesně kopíruje izotermu léta — tam, kde průměrná teplota nejteplejšího měsíce klesne pod určitou hodnotu, stromy už nedokážou dokončit svůj růstový cyklus. Vegetační pásy Ruska jsou tak čitelnou mapou teploty.",
+        "voice": "O tom, kde končí les, nerozhoduje mráz v zimě, ale pár stupňů v tom nejteplejším měsíci.",
+        "source_url": "https://en.wikipedia.org/wiki/Tundra"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-pasma",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Časová pásma",
+    "headline": "Když Moskva obědvá, východ už spí",
+    "fact": "Rusko má 11 časových pásem — víc než kterákoli jiná země na souvislém území.",
+    "source_url": "https://en.wikipedia.org/wiki/Time_in_Russia",
+    "source_quote": "eleven time zones",
+    "voice": "Novoroční půlnoc putuje zemí od východu na západ celé hodiny.",
+    "visual_type": "typographic",
+    "tags": ["kartografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Jedenáct pásem (UTC+2 až UTC+12) je přímý důsledek obrovské rozlohy Ruska v zeměpisné délce — táhne se skoro přes polovinu severní polokoule.",
+        "voice": "Než dozní přípitek na východě, na západě lidé ještě čekají na půlnoc.",
+        "source_url": "https://en.wikipedia.org/wiki/Time_in_Russia",
+        "source_quote": "UTC+02:00 … UTC+12:00"
+      },
+      "kartograf": {
+        "fact": "Časová pásma jsou průnikem astronomie (poledníky) a politiky (rozhodnutí státu). Rusko počet pásem měnilo — v roce 2010 je zredukovalo na 9 a v roce 2014 vrátilo na 11 — pěkný důkaz, že hranice v mapě netvoří jen příroda.",
+        "voice": "I hranice mezi 'dneškem' a 'včerejškem' si tu stát čas od času sám přerýsoval.",
+        "source_url": "https://en.wikipedia.org/wiki/Time_in_Russia",
+        "source_quote": "number of time zones was reduced … from eleven to nine … reverted"
+      }
+    }
   },
   {
     "id": "ru-jidlo-maslenice",
     "country": "Rusko",
     "section": "Jídlo",
+    "topic": "Maslenica",
     "headline": "Palačinky na oslavu slunce",
     "fact": "Blíny se v Rusku tradičně pečou na Maslenici, týdenním svátku loučení se zimou, kde svým kulatým tvarem a zlatou barvou symbolizují slunce.",
-    "voice": "Týden, kdy se smaží, jí a slaví, než přijde půst.",
     "source_url": "https://cs.wikipedia.org/wiki/Maslenice",
+    "voice": "Týden, kdy se smaží, jí a slaví, než přijde půst.",
     "visual_type": "typographic",
-    "image_prompt": "Hromada zlatavých ruských blínů na talíři, teplé sluneční světlo, symbol slunce"
-  },
-  {
-    "id": "ru-lide-pasma",
-    "cc": "ru",
-    "country": "Rusko",
-    "section": "Lidé",
-    "headline": "Když Moskva obědvá, východ už spí",
-    "fact": "Rusko má 11 časových pásem — ze všech zemí nejvíc na jednom souvislém území.",
-    "voice": "Novoroční půlnoc tu putuje zemí celé hodiny.",
-    "source_url": "https://www.timeanddate.com/time/country-with-the-most-time-zones.html",
-    "source_quote": "Ten of its 11 time zones cover a contiguous landmass",
-    "visual_type": "typographic"
+    "image_prompt": "Hromada zlatavých ruských blínů na talíři, teplé sluneční světlo, symbol slunce",
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Maslenice je možná nejstarší dochovaný slovanský svátek — sahá do pohanských dob, kdy lidé oslavovali návrat slunce a konec zimy. Později ji pravoslavná církev zařadila jako veselý týden těsně před přísným půstem.",
+        "voice": "Slavili slunce ještě dřív, než tu byla církev, co by jim to zakázala.",
+        "source_url": "https://en.wikipedia.org/wiki/Maslenitsa",
+        "source_quote": "Maslenitsa may be the oldest surviving Slavic holiday."
+      },
+      "kartograf": {
+        "fact": "Maslenice je příklad synkretismu: církev nezrušila starý pohanský svátek slunovratu, ale zabudovala ho do vlastního kalendáře jako předěl před půstem. Podobný vzorec — nový systém pohlcuje starší lidové tradice — se opakuje napříč evropskými svátky.",
+        "voice": "Církev starý svátek nezrušila, jen mu dala nové místo v kalendáři.",
+        "source_url": "https://en.wikipedia.org/wiki/Maslenitsa"
+      }
+    }
   },
   {
     "id": "ru-jidlo-pelmene",
-    "cc": "ru",
     "country": "Rusko",
     "section": "Jídlo",
+    "topic": "Pelmeně",
     "headline": "Taštičky, které přežijí sibiřskou zimu",
     "fact": "Pelmeně jsou vařené těstové taštičky plněné mletým masem; na Sibiři se tradičně zmrazovaly venku do zásoby na zimu.",
-    "voice": "Uvařené za pět minut, ze stolu zmizí za dvě.",
     "source_url": "https://en.wikipedia.org/wiki/Pelmeni",
     "source_quote": "dumplings … filled with minced meat; traditionally stored frozen",
-    "visual_type": "photo"
+    "voice": "Uvařené za pět minut, ze stolu zmizí za dvě.",
+    "visual_type": "photo",
+    "tags": ["regionalni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Pelmeně se rozšířily s ruskou kolonizací Uralu a Sibiře; podle jedné teorie jde o zjednodušenou obdobu čínských jiaozi, kterou do oblasti přinesli Mongolové. Lovci a cestovatelé si brali pytle zmrazených pelmeňů na dlouhé výpravy do tajgy.",
+        "voice": "Recept putoval z Číny přes Mongolsko, než skončil na sibiřském stole.",
+        "source_url": "https://en.wikipedia.org/wiki/Pelmeni",
+        "source_quote": "they can be stored frozen for a long time and are easily cooked"
+      },
+      "kartograf": {
+        "fact": "Pelmeně ukazují, jak jídlo kopíruje trasy obchodu a kolonizace: technika plněných taštiček putovala z Číny přes Mongolsko na Ural, kde ji dotvořilo drsné klima — mrazivá zima proměnila jídlo v přenosnou, dlouho skladovatelnou zásobu.",
+        "voice": "Mrazivá zima udělala z obyčejné taštičky zásobu na týdny dopředu.",
+        "source_url": "https://en.wikipedia.org/wiki/Pelmeni"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-boršč",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Boršč",
+    "headline": "Polévka barvy červené řepy",
+    "fact": "Boršč je kyselá polévka z červené řepy, oblíbená v Rusku i po celé východní Evropě.",
+    "source_url": "https://en.wikipedia.org/wiki/Borscht",
+    "source_quote": "a sour soup, made with meat stock, vegetables and seasonings, common in Eastern Europe, Central Europe and Northern Asia",
+    "voice": "Sytá polévka, po které je talíř jasně rudý.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek misky borščé s lžící smetany, čerstvý koprový list navrch, teplé domácí světlo, 16:9",
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Boršč má kořeny ve starším slovanském pokrmu, ale dnešní podobu s červenou řepou získal postupně. Rozšířil se s ruskou expanzí a emigrací až do Severní Ameriky.",
+        "voice": "Recept cestoval s lidmi tak daleko, že ho dnes vaří i za oceánem.",
+        "source_url": "https://en.wikipedia.org/wiki/Borscht"
+      },
+      "kartograf": {
+        "fact": "Boršč patří mezi jídla, o jejichž 'původ' se vedou spory mezi Ruskem, Ukrajinou a dalšími zeměmi — dobrá ukázka, že kuchyně se šíří přes hranice rychleji, než se politicky uzná.",
+        "voice": "O to, čí je vlastně tahle polévka, se dodnes vedou hádky přes hranice.",
+        "source_url": "https://en.wikipedia.org/wiki/Borscht"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-kaviar",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Kaviár",
+    "headline": "Nejdražší kuličky na světě",
+    "fact": "Ruský kaviár z jeseterů Kaspického moře patří k nejvzácnějším pochoutkám světa, ale kvůli přelovení ho Rusko od roku 2007 zakázalo lovit ve volné přírodě.",
+    "source_url": "https://en.wikipedia.org/wiki/Caviar",
+    "source_quote": "Overfishing, smuggling and pollution caused by sewage entry into the Caspian Sea have considerably reduced the sea's sturgeon population.",
+    "voice": "Kdysi pokrm carů, dnes chráněný druh na talíři.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek černého kaviáru na perleťové lžičce, elegantní servírování, tmavé pozadí, 16:9",
+    "tags": ["socioekonomicka-geografie", "fyzicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Nejcennější je kaviár z jesetera velkého (beluga) z Kaspického moře. Přelovení a pytláctví ale populaci jeseterů natolik zdecimovaly, že vývoz divokého kaviáru byl v letech 2002–2011 celosvětově zakázán.",
+        "voice": "Ryba, ze které kaviár pochází, plavala v moři dřív, než vznikly první státy kolem něj.",
+        "source_url": "https://en.wikipedia.org/wiki/Caviar"
+      },
+      "kartograf": {
+        "fact": "Kaviárový příběh je učebnicový případ tragédie společných zdrojů: sdílené moře (Kaspik) mezi několika státy, žádná jednotná kontrola lovu, a výsledkem je kolaps populace ryby, která se vyvíjela miliony let.",
+        "voice": "Moře patřilo všem okolo, a tak si ho nakonec nehlídal skoro nikdo.",
+        "source_url": "https://en.wikipedia.org/wiki/Caviar"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-kvas",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Kvas",
+    "headline": "Nápoj kvašený z chleba",
+    "fact": "Kvas je lehce kvašený nápoj z žitného chleba, který se v Rusku pije už přes tisíc let.",
+    "source_url": "https://en.wikipedia.org/wiki/Kvass",
+    "source_quote": "A fermented, cereal-based, low-alcoholic beverage of cloudy appearance.",
+    "voice": "Chuť jako chleba, ale k pití — a skoro žádný alkohol.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sklenice kvasu s pěnou, vedle krajíc žitného chleba, letní světlo, 16:9",
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "První písemná zmínka o kvasu pochází z Nestorova letopisu z roku 988, kdy se popisují oslavy křtu knížete Vladimíra Velikého. Do domácností patřil jako běžný nápoj až do průmyslové výroby na konci 19. století.",
+        "voice": "Nápoj starý přes tisíc let, a přitom pořád stojí na kuchyňském stole.",
+        "source_url": "https://en.wikipedia.org/wiki/Kvass"
+      },
+      "kartograf": {
+        "fact": "Kvas vznikl jako způsob, jak využít přebytečný nebo tvrdý chléb — kvašení prodlužuje trvanlivost potravin a zároveň dodává tekutinu. Podobný princip 'nic nepřijde nazmar' najdeme v tradiční kuchyni napříč chudšími zemědělskými společnostmi.",
+        "voice": "Vznikl jen proto, aby se nemusel vyhazovat tvrdý chléb.",
+        "source_url": "https://en.wikipedia.org/wiki/Kvass"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-vodka",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Vodka",
+    "headline": "'Malá voda', o kterou se dva národy hádají",
+    "fact": "Vodka v ruštině znamená 'malá voda'; o to, kdo ji vynalezl, se dodnes přou Rusko a Polsko.",
+    "source_url": "https://en.wikipedia.org/wiki/Vodka",
+    "source_quote": "There is some not very comradely disagreement between Russia and Poland as to which of them originated it.",
+    "voice": "Malé jméno pro nápoj s velkým vlivem na dějiny.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "V carském Rusku tvořil prodej vodky až 40 % státních příjmů — stát měl na jejím pití přímý finanční zájem. V roce 1911 tvořila vodka 89 % veškerého alkoholu vypitého v Rusku.",
+        "voice": "Skoro polovina carské pokladny stála na jediném nápoji.",
+        "source_url": "https://en.wikipedia.org/wiki/Vodka"
+      },
+      "kartograf": {
+        "fact": "Vodka je příklad, jak se obyčejný nápoj propojí se státní mocí: kontrola nad jeho výrobou a prodejem byla po staletí (od carů po dnešek) nástrojem, jak si stát zajišťoval příjmy i politický vliv.",
+        "voice": "Kdo ovládal lahev, ovládal i pěkný kus státního rozpočtu.",
+        "source_url": "https://en.wikipedia.org/wiki/Vodka"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-olivier",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Salát Olivier",
+    "headline": "Salát, bez kterého nejde slavit Nový rok",
+    "fact": "Salát Olivier — brambory, mrkev, hrášek, vejce a majonéza — je nepostradatelným pokrmem ruských novoročních oslav.",
+    "source_url": "https://en.wikipedia.org/wiki/Olivier_salad",
+    "source_quote": "Olivier's salad quickly became immensely popular with Hermitage regulars and became the restaurant's signature dish.",
+    "voice": "Bez téhle mísy na stole prostě není v Rusku Silvestr.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek mísy salátu Olivier na sváteční novoroční tabuli, svíčky v pozadí, teplé světlo, 16:9",
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Recept vytvořil v 60. letech 19. století belgicko-francouzský šéfkuchař Lucien Olivier v moskevské restauraci Hermitage; postupem času se z drahé restaurační speciality stal dostupný domácí pokrm pro každého.",
+        "voice": "Kdysi tajný recept jedné restaurace, dnes ho umí uvařit skoro každá babička.",
+        "source_url": "https://en.wikipedia.org/wiki/Olivier_salad"
+      },
+      "kartograf": {
+        "fact": "Olivier je příklad, jak se elitní restaurační recept 'zlidoví': za sovětské éry se z něj stal dostupný, standardizovaný pokrm pro masy — jídlo tak nese stopu přechodu od carské k sovětské společnosti.",
+        "voice": "Za sovětů se z luxusu pro pár lidí stalo jídlo pro úplně všechny.",
+        "source_url": "https://en.wikipedia.org/wiki/Olivier_salad"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-cerny-chleba",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Žitný chléb",
+    "headline": "Tmavý chléb, který vydrží déle",
+    "fact": "Tmavý žitný chléb je v Rusku základní potravinou — žito na rozdíl od pšenice snáší i chudší půdu a chladnější podnebí.",
+    "source_url": "https://en.wikipedia.org/wiki/Rye_bread",
+    "source_quote": "it will not rise as high as wheat bread but will be moister with a substantially longer shelf life",
+    "voice": "Ke každému jídlu patří krajíc tmavého chleba.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bochníku tmavého žitného chleba na dřevěném prkénku, krájené plátky, přirozené světlo, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Žito roste tam, kde je pěstování pšenice nespolehlivé kvůli chladu nebo chudší půdě — proto se stalo hlavní obilninou velké části Ruska. Žitný chléb navíc vydrží čerstvý déle než pšeničný.",
+        "voice": "Kde by pšenice zklamala, tam žito prostě vydrží.",
+        "source_url": "https://en.wikipedia.org/wiki/Rye_bread"
+      },
+      "kartograf": {
+        "fact": "Volba obilniny na talíři je vlastně mapa klimatu: hranice mezi 'pšeničnými' a 'žitnými' kuchyněmi Evropy zhruba kopíruje hranici mezi mírnějším a drsnějším zemědělským pásmem.",
+        "voice": "Podle chleba na talíři bys skoro poznal, jak drsné je tam počasí.",
+        "source_url": "https://en.wikipedia.org/wiki/Rye_bread"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-samovar",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Samovar",
+    "headline": "Kovový vařič, kolem kterého se sedá celá rodina",
+    "fact": "Samovar je kovová nádoba na ohřívání vody na čaj, která stála ve středu ruské pohostinnosti a čajové kultury.",
+    "source_url": "https://en.wikipedia.org/wiki/Samovar",
+    "source_quote": "The samovar is well known outside of the country and has spread through Russian culture",
+    "voice": "Čaj z něj teče pomalu — a s ním i dlouhé rozhovory u stolu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého mosazného samovaru na stole s šálky čaje, teplé večerní světlo, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Samovar sloužil napříč společenskými vrstvami — od chudých rodin po šlechtu — a symbolizoval pomalé, společné posezení u čaje, ne rychlé občerstvení.",
+        "voice": "U stejného kotlíku sedal chudák i šlechtic, jen ne ve stejný den.",
+        "source_url": "https://en.wikipedia.org/wiki/Samovar"
+      },
+      "kartograf": {
+        "fact": "Samovar ukazuje, jak předmět denní potřeby může nést sociální funkci: nejde jen o ohřev vody, ale o rituál, který strukturuje čas rodiny i hostů — podobnou roli má čajový obřad v jiných kulturách.",
+        "voice": "Nejde o to, jak rychle se čaj ohřeje, ale jak dlouho se u něj dá sedět.",
+        "source_url": "https://en.wikipedia.org/wiki/Samovar"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-pirozky",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Pirožky",
+    "headline": "Kapesní jídlo na cestu",
+    "fact": "Pirožky jsou pečené nebo smažené plněné bochánky s masem, zeleninou nebo ovocem — oblíbené jako rychlé jídlo z ulice.",
+    "source_url": "https://en.wikipedia.org/wiki/Pirozhki",
+    "source_quote": "Pirozhki are a popular street food and comfort food.",
+    "voice": "Teplý pirožek z ruky prodavače je rychlejší než kterýkoli fast food.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek čerstvě upečených zlatavých pirožků na plechu, pára stoupající vzhůru, teplé světlo, 16:9",
+    "tags": ["regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Náplň pirožků se liší podle regionu i sezóny — od zelí a brambor po tvaroh a ovoce. Tvar loďky umožňuje snadné pečení i smažení a pohodlné jedení za chůze.",
+        "voice": "Tvar si vybrali tak, aby se to dalo sníst jednou rukou za chůze.",
+        "source_url": "https://en.wikipedia.org/wiki/Pirozhki"
+      },
+      "kartograf": {
+        "fact": "Pirožky jsou typický příklad 'přenosné' kuchyně, která vznikla v zemi s obřími vzdálenostmi — jídlo, které se dá vzít na cestu a sníst za chůze, tam kde je zdaleka do dalšího jídla.",
+        "voice": "Kde je do dalšího jídla klidně den cesty, tam se peče jídlo, co vydrží v kapse.",
+        "source_url": "https://en.wikipedia.org/wiki/Pirozhki"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-sci",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Šči",
+    "headline": "Zelná polévka stará přes tisíc let",
+    "fact": "Šči, polévka ze zelí nebo kysaného zelí, patří k ruské kuchyni už od 10. století; staré ruské přísloví říká: 'Šči a kaše jsou naše jídlo.'",
+    "source_url": "https://en.wikipedia.org/wiki/Shchi",
+    "source_quote": "Shchi and kasha are our food",
+    "voice": "Prostá polévka, která krmila ruské rodiny po celá staletí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek misky šči (zelné polévky) se lžící zakysané smetany, dřevěný stůl, teplé domácí světlo, 16:9",
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Šči se dalo v zimě zmrazit a vzít na cestu jako pevný blok, který se pak rozehřál nad ohněm — praktická vlastnost, díky které se stalo cestovní i vojenskou stravou.",
+        "voice": "V zimě ji zmrazili na kámen a vzali s sebou — rozpustila se až nad ohněm.",
+        "source_url": "https://en.wikipedia.org/wiki/Shchi"
+      },
+      "kartograf": {
+        "fact": "Šči a boršč spolu ukazují, jak se jednoduchý recept (zelenina + kvašení) přizpůsobuje dostupným plodinám: na severu a ve středním Rusku dominuje zelí, na jihu a Ukrajině řepa — obě polévky mají stejnou logiku, jinou surovinu.",
+        "voice": "Na severu zelí, na jihu řepa — recept je stejný, jen se mění, co roste za humny.",
+        "source_url": "https://en.wikipedia.org/wiki/Shchi"
+      }
+    }
+  },
+  {
+    "id": "ru-jidlo-pernik",
+    "country": "Rusko",
+    "section": "Jídlo",
+    "topic": "Tulský perník",
+    "headline": "Medové sušenky slavného města Tuly",
+    "fact": "Пряник (pränik) je tradiční ruský medový perník; nejproslulejší je ten z města Tuly, kde se peče už po staletí.",
+    "source_url": "https://en.wikipedia.org/wiki/Pryanik",
+    "source_quote": "Traditional sweet-baked goods in Russia, Ukraine, Belarus, Czechia, Slovenia, Poland",
+    "voice": "Voňavý dárek, který si Rusové dávají k čaji i o svátcích.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zdobených tulských perníků na dřevěném talíři, vedle šálek čaje, teplé domácí světlo, 16:9",
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Perník se pekl z mouky a medu a jeho výroba se v Rusku i dalších slovanských zemích předávala po generace. Tulský perník bývá zdobený ražeb otiskem se vzorem nebo nápisem.",
+        "voice": "Do těsta se otiskl vzor, ještě než ho kdokoliv ochutnal.",
+        "source_url": "https://en.wikipedia.org/wiki/Pryanik"
+      },
+      "kartograf": {
+        "fact": "Regionální specialita jako tulský perník ukazuje, jak se z obyčejného jídla stane součást identity města — podobně jako jiná evropská města proslavil konkrétní recept, který místní chrání jako 'svůj'.",
+        "voice": "Stejně jako jinde ve světě, i tady dal jeden recept jméno celému městu.",
+        "source_url": "https://en.wikipedia.org/wiki/Pryanik"
+      }
+    }
   },
   {
     "id": "ru-historie-kaliningrad",
-    "cc": "ru",
     "country": "Rusko",
     "section": "Historie",
+    "topic": "Kaliningrad",
     "headline": "Kus Ruska, který nesousedí s Ruskem",
     "fact": "Kaliningradská oblast je ruská exkláva mezi Polskem a Litvou; do roku 1945 to byl německý Königsberg.",
-    "voice": "Kousek Ruska, ze kterého je do Ruska daleko.",
     "source_url": "https://en.wikipedia.org/wiki/Kaliningrad",
     "source_quote": "exclave … between Poland and Lithuania; known as Königsberg until 1946",
-    "visual_type": "photo"
+    "voice": "Kousek Ruska, ze kterého je do Ruska daleko.",
+    "visual_type": "photo",
+    "tags": ["regionalni-geografie", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Území připadlo SSSR po 2. světové válce na postupimské konferenci roku 1945; německé obyvatelstvo bylo mezi lety 1947–1948 vysídleno a nahradili ho sovětští osadníci. Město bylo v roce 1946 přejmenováno po sovětském politikovi Michailu Kalininovi.",
+        "voice": "Obyvatelé se vyměnili skoro do posledního, jen jméno města zůstalo dlouho staré.",
+        "source_url": "https://en.wikipedia.org/wiki/Kaliningrad",
+        "source_quote": "The Conference has agreed in principle to the proposal of the Soviet Government concerning the ultimate transfer to the Soviet Union of the city of Koenigsberg."
+      },
+      "kartograf": {
+        "fact": "Kaliningrad je dnes vojensky klíčová exkláva — sídlo ruské Baltské flotily, obklopená členy NATO a EU (Polsko, Litva). Poválečné přesuny hranic tu vytvořily trvalý geopolitický uzel: území odříznuté od mateřského státu, ale strategicky nepostradatelné.",
+        "voice": "Vojensky klíčové místo, které se ke zbytku vlastního státu dostane jen po moři nebo přes cizí území.",
+        "source_url": "https://en.wikipedia.org/wiki/Kaliningrad"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-rurik",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Rurikovci",
+    "headline": "Kníže, u kterého ruský stát začíná",
+    "fact": "Za počátek ruského státu se tradičně považuje rok 862, kdy se varjažský kníže Rurik usadil v Novgorodu.",
+    "source_url": "https://en.wikipedia.org/wiki/Rurik_dynasty",
+    "source_quote": "Rurik...established himself at Novgorod in the year 862.",
+    "voice": "Podle staré kroniky si Slované sami pozvali cizího vládce, aby jim vládl.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické rekonstrukce varjažského knížete přijíždějícího lodí ke starému Novgorodu, ranní mlha nad řekou, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Rurikovci pak vládli ruským zemím jako dynastie víc než 700 let, až do konce 16. století. Z jejich državy postupně vznikla Kyjevská Rus, ze které se odvozuje jak Rusko, tak Ukrajina a Bělorusko.",
+        "voice": "Jedna rodina na trůně přes 700 let — a z jejího území dnes vzešly rovnou tři státy.",
+        "source_url": "https://en.wikipedia.org/wiki/Rurik_dynasty"
+      },
+      "kartograf": {
+        "fact": "Příběh 'pozvaného' vládce z ciziny je typickým zakladatelským mýtem raných států — podobné vyprávění (příchod cizí elity, která přinese řád) se objevuje i u jiných středověkých monarchií v Evropě.",
+        "voice": "Podobný příběh o pozvaném cizím vládci vypráví o svých počátcích nejeden středověký stát.",
+        "source_url": "https://en.wikipedia.org/wiki/Rurik_dynasty"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-perestrojka",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Perestrojka",
+    "headline": "Reforma, která rozložila impérium",
+    "fact": "Michail Gorbačov v 80. letech spustil perestrojku — pokus o restrukturalizaci sovětského hospodářství, který nakonec uspíšil rozpad celého Sovětského svazu.",
+    "source_url": "https://en.wikipedia.org/wiki/Perestroika",
+    "source_quote": "The purported goal of perestroika was not to end the planned economy, but rather to make socialism work more efficiently.",
+    "voice": "Chtěl systém opravit, a nakonec ho tím rozebral.",
+    "visual_type": "typographic",
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Gorbačov chtěl socialismus zefektivnit, ne zrušit — inspiroval se prvky tržní ekonomiky. Reformy ale prohloubily nedostatek zboží a uvolnily politické i národnostní napětí, které se dřív dařilo držet pod pokličkou.",
+        "voice": "Snažil se přidat trochu trhu, a přitom povolil ventil, který se pak nedal zavřít.",
+        "source_url": "https://en.wikipedia.org/wiki/Perestroika"
+      },
+      "kartograf": {
+        "fact": "Perestrojka je učebnicový příklad, jak reforma shora může nechtěně uvolnit síly, které vedou k pádu celého systému — snaha o částečnou změnu otevřela prostor požadavkům na změnu úplnou, včetně nezávislosti jednotlivých svazových republik.",
+        "voice": "Stačilo pustit trochu páry, a celý systém pod tlakem praskl.",
+        "source_url": "https://en.wikipedia.org/wiki/Perestroika"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-mongol",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Mongolská nadvláda",
+    "headline": "240 let pod cizí nadvládou",
+    "fact": "Ruská knížectví byla přes 240 let pod nadvládou Mongolů — od invaze roku 1237 až do konce 15. století.",
+    "source_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Rus%27",
+    "voice": "Skoro čtvrt tisíciletí platili ruští knížata daně cizímu chánovi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické rekonstrukce mongolských jezdců na stepi u ruského opevněného města, večerní světlo, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Mongolové srovnali se zemí desítky měst, ale zároveň udělali z Moskvy prostředníka mezi sebou a ostatními ruskými knížaty — právě tahle role nakonec umožnila Moskvě zesílit a časem se Mongolů zbavit.",
+        "voice": "Vybírat daně pro cizího pána se nakonec vyplatilo — hlavně tomu, kdo je vybíral.",
+        "source_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Rus%27"
+      },
+      "kartograf": {
+        "fact": "Paradox mongolské nadvlády: okupační mocnost nechtěně vytvořila podmínky pro vzestup svého budoucího přemožitele. Moskva zesílila právě díky pozici výběrčího daní pro chána — mocenské centrum se tak zrodilo z nástroje cizí kontroly.",
+        "voice": "Moc, která Moskvu ovládala, jí sama dala nástroj, kterým se jí nakonec zbavila.",
+        "source_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Rus%27"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-ivan-hrozny",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Ivan Hrozný",
+    "headline": "První, komu se říkalo car",
+    "fact": "Ivan IV. Hrozný se roku 1547 stal prvním panovníkem korunovaným titulem car celého Ruska.",
+    "source_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible",
+    "source_quote": "He was the first Russian monarch to be crowned the tsar of all Russia",
+    "voice": "Od té chvíle měl ruský vládce nový, silnější titul než jen kníže.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek korunovačního obřadu v moskevské katedrále, zlaté ikony, svíce, historický kostým, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Korunovace proběhla v moskevském Chrámu Nanebevzetí Panny Marie. Titul car (odvozený od latinského Caesar) měl vyjádřit, že se ruský vládce vyrovná byzantským císařům, a posílit centralizovanou moc panovníka.",
+        "voice": "Jméno jednoho římského vojevůdce doputovalo přes staletí až do moskevské korunovace.",
+        "source_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible"
+      },
+      "kartograf": {
+        "fact": "Zavedení titulu car bylo symbolickým i mocenským krokem: šlo o budování legitimity nově sjednoceného státu vůči zbytku Evropy. Podobně si i jiné vzmáhající se mocnosti v historii přizpůsobovaly tituly, aby vyjádřily nový status.",
+        "voice": "Nový titul měl jasně říct zbytku Evropy: tenhle vládce je vám rovný.",
+        "source_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-napoleon",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Napoleonovo tažení",
+    "headline": "Armáda, kterou porazila zima",
+    "fact": "Napoleon vtrhl do Ruska roku 1812 s víc než 450 000 vojáky; z tažení se vrátilo jen asi 120 000 z nich.",
+    "source_url": "https://en.wikipedia.org/wiki/French_invasion_of_Russia",
+    "source_quote": "More than half of the soldiers perished from starvation, exhaustion, typhus, and the unforgiving continental climate.",
+    "voice": "Rusko neporazila jen armáda — dorazila ho vzdálenost a mráz.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ustupující francouzské armády ve sněhu na ruské pláni, zasněžená pustina, ponuré světlo, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ruská armáda se místo boje stahovala hlouběji do vnitrozemí a spalovala za sebou úrodu i vlastní hlavní město Moskvu. Napoleon tak dobyl vypálenou, opuštěnou metropoli a musel ustupovat do zimy bez zásob.",
+        "voice": "Napoleon nakonec dobyl město, ve kterém nezbylo skoro nic k dobytí.",
+        "source_url": "https://en.wikipedia.org/wiki/French_invasion_of_Russia"
+      },
+      "kartograf": {
+        "fact": "Tažení 1812 je klasická ukázka, jak obrovská vzdálenost a klima fungují jako obranná zbraň samy o sobě: nešlo o vojenskou převahu, ale o to, že prostor a mráz zničily zásobovací linie útočníka rychleji, než dokázal dosáhnout cíle.",
+        "voice": "Někdy neporazí armádu armáda, ale samotná vzdálenost, kterou musí ujít.",
+        "source_url": "https://en.wikipedia.org/wiki/French_invasion_of_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-romanovci",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Romanovci",
+    "headline": "Dynastie, která vládla 300 let a skončila popravou",
+    "fact": "Romanovci vládli Rusku přes 300 let (1613–1917); poslední car Mikuláš II. byl s celou rodinou roku 1918 zastřelen bolševiky.",
+    "source_url": "https://en.wikipedia.org/wiki/House_of_Romanov",
+    "source_quote": "the entire Russian Imperial Romanov family, along with several of their retainers, were executed by Bolshevik revolutionaries",
+    "voice": "Tři století jedné rodiny na trůně skončila jedinou nocí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrétní snímek ve stylu staré fotografie carské rodiny, sépiové tóny, historický kostým, 16:9",
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Romanovci nastoupili na trůn roku 1613 po období zmatků (tzv. smutném čase) a vládli až do únorové revoluce 1917. Popravu rodiny v Jekatěrinburgu bolševici dlouho tajili.",
+        "voice": "Tři sta let vlády, a přesto o jejím konci svět dlouho ani nevěděl.",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Romanov"
+      },
+      "kartograf": {
+        "fact": "Konec Romanovců symbolizuje přelom mezi dvěma epochami: dědičná monarchie ustoupila revolučnímu státu, který ideově stavěl na jejím úplném popření. Násilný konec dynastie měl signalizovat nezvratnost této změny.",
+        "voice": "Nová moc chtěla dát jasně najevo, že návrat ke staré už není možný.",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Romanov"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-revoluce",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Revoluce 1917",
+    "headline": "Rok, kdy padl car a nastoupili bolševici",
+    "fact": "V roce 1917 proběhly v Rusku dvě revoluce: únorová svrhla cara, říjnová přivedla k moci bolševiky vedené Leninem.",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_Revolution",
+    "source_quote": "Peace, land, and bread",
+    "voice": "Za jediný rok se Rusko změnilo z carství na úplně nový typ státu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický černobílý snímek davu na ulici ruského města v roce 1917, transparenty, revoluční atmosféra, 16:9",
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Bolševici slibovali lidem 'mír, půdu a chléb' — přesně to, co za první světové války nejvíc chybělo. Tento jednoduchý slib jim pomohl získat podporu vyčerpaného obyvatelstva.",
+        "voice": "Stačilo slíbit přesně to, co lidem za války nejvíc chybělo.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_Revolution"
+      },
+      "kartograf": {
+        "fact": "Rok 1917 ukazuje typický vzorec revolucí: první, umírněnější fáze (únor) odstraní starý režim, ale nedokáže vyřešit krizi, která ho svrhla, a otevře prostor pro radikálnější sílu (říjen), jež nakonec převezme moc.",
+        "voice": "Nejdřív padne starý režim, a teprve pak přijde ten, kdo skutečně převezme moc.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_Revolution"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-leningrad",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Obležení Leningradu",
+    "headline": "900 dní obležení",
+    "fact": "Obležení Leningradu za 2. světové války trvalo 872 dní a stálo život více než milion civilistů — hlavně kvůli hladu.",
+    "source_url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
+    "source_quote": "More than one million died at Leningrad amid mass starvation, epidemic, cannibalism and daily barrages",
+    "voice": "Skoro dva a půl roku bez zásob, ale město se nevzdalo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický černobílý dokumentární snímek zasněženého Leningradu za obležení, prázdné ulice, ponurá atmosféra, bez lidí v popředí, 16:9",
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Německá vojska město obklíčila a odřízla od zásob; jedinou spojnicí se zbytkem země byla v zimě zamrzlá 'Cesta života' přes Ladožské jezero. Obležení trvalo od září 1941 do ledna 1944.",
+        "voice": "Jediná cesta ven vedla po ledu, a i ta fungovala jen v zimě.",
+        "source_url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+      },
+      "kartograf": {
+        "fact": "Leningrad je extrémní příklad obléhací války v moderní době: fyzická izolace města dokázala způsobit víc obětí než přímé boje. Geografie (poloha u jezera, jediná zásobovací trasa) tu přímo rozhodovala o životě a smrti.",
+        "voice": "Obklíčení samo o sobě dokázalo zabít víc lidí, než kolik jich padlo v boji.",
+        "source_url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-sssr",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Sovětský svaz",
+    "headline": "Stát, který zabíral šestinu souše",
+    "fact": "Sovětský svaz vznikl roku 1922 a rozpadl se roku 1991; Rusko je jeho hlavním nástupnickým státem.",
+    "source_url": "https://en.wikipedia.org/wiki/Soviet_Union",
+    "source_quote": "The Soviet Union was the world's largest country",
+    "voice": "Nejrozlehlejší stát v dějinách lidstva vydržel necelých sedmdesát let.",
+    "visual_type": "typographic",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "SSSR spojoval patnáct republik pod jednou vládou v Moskvě. Po jeho rozpadu v roce 1991 se z těchto republik staly samostatné státy — Rusko, Ukrajina, Kazachstán a další.",
+        "voice": "Patnáct republik pod jednou vládou, a přes noc z nich bylo patnáct různých zemí.",
+        "source_url": "https://en.wikipedia.org/wiki/Soviet_Union"
+      },
+      "kartograf": {
+        "fact": "Rozpad SSSR v roce 1991 je jedna z největších náhlých změn politické mapy 20. století — jeden obří stát se přes noc rozdělil na patnáct nových, což ovlivnilo hranice, ekonomiky i identitu stovek milionů lidí dodnes.",
+        "voice": "Jeden obří stát zmizel z mapy rychleji, než se dá jeho historie vůbec vyprávět.",
+        "source_url": "https://en.wikipedia.org/wiki/Soviet_Union"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-gagarin",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Gagarinův let",
+    "headline": "První člověk ve vesmíru",
+    "fact": "Sovětský kosmonaut Jurij Gagarin roku 1961 jako první člověk v dějinách obletěl Zemi ve vesmíru.",
+    "source_url": "https://en.wikipedia.org/wiki/Vostok_1",
+    "source_quote": "the first human orbital spaceflight in history",
+    "voice": "108 minut, které z něj udělaly nejslavnějšího muže planety.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek rakety Vostok při startu, plameny a kouř, jasná obloha, historická kosmodrom scéna, 16:9",
+    "tags": ["dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Let lodi Vostok 1 trval necelé dvě hodiny a odstartoval kosmický závod mezi USA a SSSR. O čtyři roky dřív, roku 1957, vypustil Sovětský svaz i první umělou družici Sputnik 1.",
+        "voice": "Necelé dvě hodiny ve vesmíru stačily na to, aby ho znal celý svět.",
+        "source_url": "https://en.wikipedia.org/wiki/Sputnik_1"
+      },
+      "kartograf": {
+        "fact": "Gagarinův let byl vyvrcholením sovětské technologické a propagandistické strategie studené války — prvenství ve vesmíru mělo dokázat nadřazenost systému, a proto do něj stát investoval obrovské prostředky bez ohledu na cenu.",
+        "voice": "Nešlo jen o let do vesmíru — šlo o to, komu svět uvěří, že je napřed.",
+        "source_url": "https://en.wikipedia.org/wiki/Vostok_1"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-narody",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Národy",
+    "headline": "Přes 190 národů v jedné zemi",
+    "fact": "V Rusku žije přes 190 různých národů a etnických skupin; etničtí Rusové tvoří zhruba 72 % obyvatel.",
+    "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia",
+    "source_quote": "Russia is a multinational state, with many subnational entities",
+    "voice": "Jedna vlajka, ale desítky jazyků, vír a kuchyní.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Mnohé národy mají uvnitř Ruska vlastní republiky (Tatarstán, Čečensko, Jakutsko…), často s vlastním jazykem a kulturou. Rozmístění menšin kopíruje historické oblasti jejich osídlení.",
+        "voice": "Přejedeš hranici republiky, a najednou slyšíš úplně jiný jazyk se stejným pasem v kapse.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia"
+      },
+      "kartograf": {
+        "fact": "Rusko je federace budovaná zčásti na národnostním principu: části území jsou vázané na konkrétní etnika. Etnická mapa je tak zároveň mapou politickou a zdrojem napětí mezi centrem a regiony.",
+        "voice": "Kde na mapě končí jeden národ, tam většinou začíná i jiná politická hranice.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-dacha",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Dača",
+    "headline": "Druhý domov na víkendy a léto",
+    "fact": "Dača je ruský venkovský domek na letní a víkendové pobyty; navštěvuje ji přes 60 % Rusů a mnozí si na ní pěstují vlastní zeleninu.",
+    "source_url": "https://en.wikipedia.org/wiki/Dacha",
+    "source_quote": "a seasonal or year-round second home, often located in the exurbs",
+    "voice": "Ve městě práce, o víkendu záhon rajčat a okurek.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dřevěné ruské dači se zahradou plnou zeleniny, letní odpoledne, teplé světlo, bez lidí, 16:9",
+    "tags": ["socioekonomicka-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Slovo dača znamená 'dar' — původně šlo o pozemky, které car věnoval věrným poddaným. Za sovětských nedostatků byla úroda z dači pro mnohé rodiny životně důležitá.",
+        "voice": "Kdysi dar od cara, pak záchrana před prázdnou spíží, dnes prostě víkend na chalupě.",
+        "source_url": "https://en.wikipedia.org/wiki/Dacha"
+      },
+      "kartograf": {
+        "fact": "Dačová kultura je sociální pojistka zděděná ze sovětské éry: vlastní pěstování jako doplněk k městskému příjmu. Dnes je to spíš zvyk a odpočinek než nutnost, ale krajina kolem velkých měst je pořád posetá zahrádkářskými koloniemi.",
+        "voice": "Vlastní záhon jako pojistka pro případ, že by obchody zase zely prázdnotou.",
+        "source_url": "https://en.wikipedia.org/wiki/Dacha"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-nenci",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Nenci",
+    "headline": "Lidé, kteří žijí se sobími stády",
+    "fact": "Nenci jsou domorodý národ ruské Arktidy, který po staletí kočuje po tundře se stády sobů.",
+    "source_url": "https://en.wikipedia.org/wiki/Nenets_people",
+    "source_quote": "Their main subsistence comes from hunting and reindeer herding.",
+    "voice": "Celý jejich svět — dům, doprava i jídlo — závisí na sobech.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek nenecké rodiny se stádem sobů na zasněžené tundře, tradiční kožešinové oblečení, chladné světlo, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Nenci žijí hlavně na Jamalském poloostrově a stěhují se za pastvou sobů stovky kilometrů ročně. Bydlí v přenosných kuželovitých stanech zvaných mja, přizpůsobených častému stěhování.",
+        "voice": "Stan se sbalí za pár hodin, protože sobi nečekají, až budeš hotový.",
+        "source_url": "https://en.wikipedia.org/wiki/Nenets_people"
+      },
+      "kartograf": {
+        "fact": "Kočovné sobí hospodářství je dokonalá adaptace na tundru, kde zemědělství nefunguje: sob dokáže žít z lišejníku, který jinému hospodářskému zvířeti nestačí. Životní styl je tak přímým odrazem toho, co daný biom vůbec umožňuje.",
+        "voice": "Kde nevyroste ani obilí, tam sob dokáže žít z pouhého lišejníku.",
+        "source_url": "https://en.wikipedia.org/wiki/Nenets_people"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-starovery",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Staroobřadci",
+    "headline": "Komunity, které se skrývaly 300 let",
+    "fact": "Starověrci jsou pravoslavní křesťané, kteří v 17. století odmítli církevní reformy a raději odešli do odlehlých koutů Sibiře, kde jejich potomci žijí izolovaně dodnes.",
+    "source_url": "https://en.wikipedia.org/wiki/Old_Believers",
+    "source_quote": "Old Believers understood themselves to be God's elect, chosen to preserve true Christianity in a fallen world.",
+    "voice": "Rodiny, které se před staletími schovaly do tajgy — a některé tam zůstaly dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staroobřadnické vesnice hluboko v sibiřské tajze, dřevěné roubené domy, tradiční oděv, přirozené světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Rozkol nastal po reformách patriarchy Nikona v letech 1653–1656; ti, kdo je odmítli, byli roku 1667 prohlášeni za kacíře. Aby unikli pronásledování, uchýlili se do nejodlehlejších částí Sibiře a Uralu.",
+        "voice": "Odmítli jednu reformu, a útěk před ní je zavedl na kraj světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Old_Believers"
+      },
+      "kartograf": {
+        "fact": "Staroobřadecké vesnice jsou živý příklad, jak náboženský konflikt formuje osídlení: izolace v odlehlé tajze, kterou si komunita zvolila kvůli útěku, se stala i důvodem, proč si po staletí uchovala jazyk a zvyky beze změny.",
+        "voice": "Schovali se tak důkladně, že jim čas v odlehlé tajze skoro nechal ujít staletí.",
+        "source_url": "https://en.wikipedia.org/wiki/Old_Believers"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-kozaci",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Kozáci",
+    "headline": "Jezdci, kteří hlídali jižní hranici",
+    "fact": "Kozáci byli polokočovná jezdecká společenství jižního Ruska a Ukrajiny, která po staletí střežila stepní hranici výměnou za vlastní samosprávu.",
+    "source_url": "https://en.wikipedia.org/wiki/Cossacks",
+    "source_quote": "semi-nomadic and semi-militarized people, who were allowed a great degree of self-governance",
+    "voice": "Jízda, šavle a nezávislost — takový byl kozácký způsob života.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kozáckého jezdce na koni ve stepní krajině jižního Ruska, tradiční kroj, večerní světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kozáci hlídali stepní hranici carství i Polsko-litevské unie proti nájezdům z Krymu a byli proslulí jako jezdecké vojsko. Výměnou za vojenskou službu si udrželi značnou samosprávu.",
+        "voice": "Za hlídání hranice si vyjednali něco, co jinde poddaní nemívali — vlastní pravidla.",
+        "source_url": "https://en.wikipedia.org/wiki/Cossacks"
+      },
+      "kartograf": {
+        "fact": "Kozácké osídlení stepi je příklad, jak stát řeší obranu odlehlé hranice — místo drahé stálé armády dá pohraničním komunitám autonomii výměnou za vojenskou povinnost. Stejný princip 'hraničářů' znají i jiné říše na svých okrajích.",
+        "voice": "Místo drahé armády na hranici stát radši dal pohraničním jezdcům volnou ruku.",
+        "source_url": "https://en.wikipedia.org/wiki/Cossacks"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-pravoslavi",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Náboženství",
+    "headline": "Víra, která formovala ruskou kulturu",
+    "fact": "Nejrozšířenější náboženskou tradicí v Rusku je pravoslavné křesťanství, ke kterému se hlásí většina věřících obyvatel.",
+    "source_url": "https://en.wikipedia.org/wiki/Religion_in_Russia",
+    "source_quote": "Orthodox Christianity is the most widely professed religion in Russia, with significant minorities of non-religious people and adherents of other faiths.",
+    "voice": "Zlaté kupole na obzoru jsou v Rusku skoro všude.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek interiéru pravoslavného chrámu, ikonostas, svíce, teplé zlatavé světlo, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Rusko přijalo křesťanství z Byzance v 10. století a pravoslaví se stalo součástí národní identity. Vedle něj tu žijí i významné menšiny muslimů, buddhistů a lidí bez vyznání.",
+        "voice": "Vedle zlatých kupolí najdeš stejně tak minaret nebo buddhistický chrám.",
+        "source_url": "https://en.wikipedia.org/wiki/Religion_in_Russia"
+      },
+      "kartograf": {
+        "fact": "Náboženská mapa Ruska kopíruje historii dobývání a přičleňování území: pravoslaví dominuje slovanskému jádru, islám v republikách jako Tatarstán nebo Čečensko, buddhismus u mongolských národů jako Burjati a Kalmykové.",
+        "voice": "Kde jaká víra převládá, prozradí spíš dějiny dobývání než náhoda.",
+        "source_url": "https://en.wikipedia.org/wiki/Religion_in_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-kalmykia",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Kalmycko",
+    "headline": "Buddhistický kout Evropy",
+    "fact": "Kalmykia je jediná oblast v Evropě, kde je buddhismus většinovým náboženstvím — žijí tu potomci mongolských Ojratů.",
+    "source_url": "https://en.wikipedia.org/wiki/Kalmykia",
+    "source_quote": "Kalmykia is the only polity within the European continent where Buddhism is the majoritary religion.",
+    "voice": "Buddhistický chrám na evropské stepi — kombinace, kterou nečekáš.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek buddhistického chrámu (chošlíku) v kalmycké stepi, jasná obloha, tradiční zlaté prvky architektury, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kalmykové jsou potomci Ojratských Mongolů, kteří se ze Sibiře přesunuli k dolní Volze začátkem 17. století a založili Kalmycký chanát. Dodnes praktikují tibetský buddhismus.",
+        "voice": "Mongolský kmen se vydal na západ, a na dolní Volze prostě zůstal už napořád.",
+        "source_url": "https://en.wikipedia.org/wiki/Kalmykia"
+      },
+      "kartograf": {
+        "fact": "Kalmykia je důkaz, že etnické a náboženské hranice se nemusí krýt s kontinentálními — mongolský buddhistický národ dorazil do geografické Evropy a zůstal, takže na mapě náboženství vzniká ostrůvek uprostřed jinak křesťansko-muslimského prostoru.",
+        "voice": "Geograficky je to Evropa, nábožensky a jazykově kus Mongolska přeneseného přes celý kontinent.",
+        "source_url": "https://en.wikipedia.org/wiki/Kalmykia"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-hustota",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Hustota osídlení",
+    "headline": "Obrovská země, kde skoro nikdo nebydlí",
+    "fact": "Rusko má i přes svou obrovskou rozlohu jen asi 8,5 obyvatele na km² — čtyři pětiny lidí žijí v evropské části západně od Uralu.",
+    "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia",
+    "source_quote": "Russia has a population density of 8.5 inhabitants per square kilometre (22 inhabitants/mi2)",
+    "voice": "Na mapě obr, v terénu spousta prázdné krajiny.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sibiř tvoří přes tři čtvrtiny území Ruska, ale žije v ní jen zlomek obyvatel. Lidé se soustředí kolem velkých měst a dopravních tras, zatímco obrovské plochy tajgy a tundry zůstávají prakticky liduprázdné.",
+        "voice": "Projedeš stovky kilometrů tajgy, a nepotkáš skoro živou duši.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia"
+      },
+      "kartograf": {
+        "fact": "Nízká průměrná hustota obyvatel skrývá extrémní nerovnoměrnost: evropské jádro má hustotu srovnatelnou se západní Evropou, zatímco asijská část je řidčeji osídlená než Sahara. Průměr je tu zavádějící číslo.",
+        "voice": "Jedno číslo za celou zemi skrývá dva úplně jiné světy.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-urbanizace",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Města",
+    "headline": "Země šestnácti milionových měst",
+    "fact": "Rusko je vysoce urbanizovaná země — má šestnáct měst s více než milionem obyvatel.",
+    "source_url": "https://en.wikipedia.org/wiki/Russia",
+    "source_quote": "a highly urbanised country, with sixteen of its urban areas having more than 1 million inhabitants",
+    "voice": "Většina Rusů dnes žije spíš v paneláku než na venkově.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Urbanizace zrychlila hlavně za sovětské industrializace ve 20. století, kdy lidé masově odcházeli z vesnic do nových průmyslových měst. Dnes žije naprostá většina Rusů ve městech.",
+        "voice": "Za pár desetiletí se z venkovského národa stal národ paneláků.",
+        "source_url": "https://en.wikipedia.org/wiki/Russia"
+      },
+      "kartograf": {
+        "fact": "Vysoká urbanizace při nízké celkové hustotě obyvatel je typický vzorec pro rozlehlé, řídce osídlené státy: lidé se soustředí do ostrůvků měst propojených dopravními trasami, zatímco mezi nimi zůstává řídce osídlené nebo prázdné území.",
+        "voice": "Lidé se nakupili do pár ostrůvků a mezi nimi zbylo skoro nic.",
+        "source_url": "https://en.wikipedia.org/wiki/Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-porodnost",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Úbytek obyvatel",
+    "headline": "Země, které ubývá obyvatel",
+    "fact": "Ruská porodnost klesla na 1,37 dítěte na ženu — hluboko pod hranici 2,1, která je potřeba k udržení počtu obyvatel.",
+    "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia",
+    "source_quote": "Russia has a low fertility rate with 1.37 children per woman in 2025, below 2.1 children per woman, which must be the number reached to maintain its population.",
+    "voice": "Rodí se míň dětí, než kolik jich bude jednou potřeba na jejich rodiče.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ruská populace klesá od roku 1991, kdy vrcholila na 148,7 milionu. Úmrtnost převyšuje porodnost už řadu let a pandemie covidu-19 pokles ještě prohloubila.",
+        "voice": "Země je pořád stejně velká, lidí v ní ale rok od roku míň.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia"
+      },
+      "kartograf": {
+        "fact": "Demografický pokles má dlouhodobé ekonomické i geopolitické důsledky — méně lidí v produktivním věku znamená méně pracovní síly a vojáků na obrovské území, které je potřeba spravovat a bránit.",
+        "voice": "Míň lidí znamená míň rukou na práci i na hranice, které je potřeba hlídat.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-lide-jakuti",
+    "country": "Rusko",
+    "section": "Lidé",
+    "topic": "Jakuti",
+    "headline": "Koně, kteří přežijí i nejtužší mrazy",
+    "fact": "Jakuti (Sachové) jsou největší domorodý národ Sibiře; chovají vlastní plemena koní a skotu vyšlechtěná tak, aby přežila extrémní mrazy Jakutska.",
+    "source_url": "https://en.wikipedia.org/wiki/Sakha_people",
+    "source_quote": "The northern Yakuts were largely hunters, fishermen and reindeer herders, while the southern Yakuts raised cattle and horses.",
+    "voice": "Kůň, který celou zimu stojí venku v mrazu pod −50 °C, a nevadí mu to.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek chundelatých jakutských koní na zasněžené pastvině v Jakutsku, mrazivá zimní krajina, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Jakutů žije v Rusku přes 500 000, mluví turkickým jazykem a jejich republika Jakutsko je největší správní jednotkou na Zemi. Severní Jakuti byli spíš lovci a rybáři, jižní chovali dobytek a koně.",
+        "voice": "Jejich republika je na mapě tak obří, že by sama o sobě byla jednou z největších zemí světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Sakha_people"
+      },
+      "kartograf": {
+        "fact": "Jakutské plemeno koní je učebnicový příklad extrémní adaptace hospodářského zvířete na klima: hustá srst a schopnost přežít venku celou zimu umožnily chov dobytka v podmínkách, kde by evropská plemena bez umělého přístřeší nepřežila.",
+        "voice": "Evropský kůň by tu mráz nepřežil, tenhle ho prostě přečká venku.",
+        "source_url": "https://en.wikipedia.org/wiki/Sakha_people"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-matrjoska",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Matrjoška",
+    "headline": "Panenka schovaná v panence",
+    "fact": "Ruská matrjoška je dřevěná panenka, uvnitř které se ukrývá menší a menší; první sada vznikla v 90. letech 19. století.",
+    "source_url": "https://en.wikipedia.org/wiki/Matryoshka_doll",
+    "source_quote": "The first Russian nested doll set was carved in 1890s",
+    "voice": "Otevřeš jednu a uvnitř čeká další — a další, a další.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sady ručně malovaných ruských matrjošek seřazených od největší po nejmenší, teplé světlo, jednobarevné pozadí, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Matrjošku navrhl malíř Sergej Maljutin a vysoustružil Vasilij Zvjozdočkin; brzy se stala světově známým symbolem Ruska. Tradičně představuje matku a rodinu ukrytou uvnitř.",
+        "voice": "Jeden malíř a jeden soustružník vytvořili suvenýr, který zná celý svět.",
+        "source_url": "https://en.wikipedia.org/wiki/Matryoshka_doll"
+      },
+      "kartograf": {
+        "fact": "Matrjoška ukazuje, jak se lokální řemeslo promění v národní symbol a exportní 'brand' — obraz země, který putuje světem zároveň jako suvenýr i jako klišé.",
+        "voice": "Z jedné dílny se stal obraz celé země, který se vozí domů v kufru.",
+        "source_url": "https://en.wikipedia.org/wiki/Matryoshka_doll"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-bana",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Baňa",
+    "headline": "Sauna, kde tě šlehají březovými větvičkami",
+    "fact": "V ruské bani (parní lázni) se lidé tradičně jemně šlehají svazkem březových větviček zvaným věnik, aby prohřáli tělo a povzbudili prokrvení.",
+    "source_url": "https://en.wikipedia.org/wiki/Banya_(sauna)",
+    "voice": "Horká pára, vůně břízy a pak skok do sněhu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický interiér tradiční dřevěné ruské baně, horká pára, svazek březových větviček (věnik) na lavici, teplé světlo, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Baňa byla po staletí místem setkávání napříč společenskými vrstvami — chodilo se do ní obvykle v sobotu. Věnik se dělá z břízy, dubu nebo eukalyptu.",
+        "voice": "V jedné páře si byli všichni rovní, aspoň na tu jednu sobotu.",
+        "source_url": "https://en.wikipedia.org/wiki/Banya_(sauna)"
+      },
+      "kartograf": {
+        "fact": "Baňa je kulturní adaptace na tuhou zimu: společné vytápěné místo mělo funkci hygienickou, zdravotní i sociální. Podobné parní lázně najdeme napříč severní Eurasií (finská sauna) — podobné klima plodí podobné kulturní odpovědi.",
+        "voice": "Stejně tuhá zima jinde v Evropě vynalezla skoro totéž — jen jinak pojmenované.",
+        "source_url": "https://en.wikipedia.org/wiki/Banya_(sauna)"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-usanka",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Ušanka",
+    "headline": "Kožešinová čepice, která přežije i −60 °C",
+    "fact": "Ušanka je ruská kožešinová čepice s klapkami na uši, které se dají svázat nahoře, nebo stáhnout dolů proti mrazu.",
+    "source_url": "https://en.wikipedia.org/wiki/Ushanka",
+    "source_quote": "A Russian fur hat with ear-covering flaps that can be tied up on the crown of the cap.",
+    "voice": "V hlubokém mrazu rozhodují klapky na uši o tom, jestli ti neomrznou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrét ušanky (kožešinové čepice s klapkami) na dřevěném stojanu, sněhové pozadí, přirozené světlo, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Nejkvalitnější ušanky z norkové kožešiny ochrání i v arktickém mrazu okolo −70 °C. Dnešní podoba čepice se vyvinula z hlubší historie a za sovětské éry se rozšířila napříč armádami Varšavské smlouvy.",
+        "voice": "Čepice, která musí zvládnout mráz, na jaký si evropská zima ani nevzpomene.",
+        "source_url": "https://en.wikipedia.org/wiki/Ushanka"
+      },
+      "kartograf": {
+        "fact": "Ušanka je učebnicový příklad, jak podnebí formuje oděv: tvar a materiál čepice přímo odpovídají extrémům kontinentálního klimatu Ruska, a proto se stejný střih používá i v armádách jiných chladných zemí.",
+        "voice": "Tvar téhle čepice si nevymyslela móda, ale teploměr hluboko pod nulou.",
+        "source_url": "https://en.wikipedia.org/wiki/Ushanka"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-chochloma",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Chochloma",
+    "headline": "Dřevo, které vypadá jako zlaté",
+    "fact": "Chochloma je tradiční ruské zdobení dřeva červenou, černou a 'zlatou' barvou — zlatý efekt vzniká bez pravého zlata, jen speciálním lakem přes hliníkový prášek.",
+    "source_url": "https://en.wikipedia.org/wiki/Khokhloma",
+    "source_quote": "It is known for its curved linear features depicting vivid small flowers.",
+    "voice": "Vypadá draze, ale trik je jen ve vrstvě laku.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dřevěné mísy s tradičním chochloma zdobením — červená, černá a zlatá barva, květinové vzory, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Technika vznikla ve vesnici Chochloma v Nižněnovgorodské oblasti v 17. století — naučili ji místní řemeslníky staroobřadci prchající před pronásledováním, kteří uměli napodobit zlacení bez drahého kovu.",
+        "voice": "Recept na 'zlato bez zlata' přinesli lidé, co utíkali před vlastní církví.",
+        "source_url": "https://en.wikipedia.org/wiki/Khokhloma"
+      },
+      "kartograf": {
+        "fact": "Chochloma ukazuje, jak si chudší region vytvořil vlastní, levnější náhražku luxusu (zlacení nádobí) — technika navíc putovala spolu se staroobřadci prchajícími do odlehlých oblastí, takže nese stopu náboženského pronásledování.",
+        "voice": "Kde nebylo na skutečné zlato, tam si poradili s trochou laku a šikovnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Khokhloma"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-gzhel",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Gžel",
+    "headline": "Modrobílý porcelán z jedné vesnice",
+    "fact": "Gžel je tradiční ruský modrobílý porcelán, který se vyrábí ve vesnici Gžel a okolí jihovýchodně od Moskvy už od roku 1802.",
+    "source_url": "https://en.wikipedia.org/wiki/Gzhel",
+    "source_quote": "About thirty villages located southeast of Moscow produce pottery and ship it throughout Russia.",
+    "voice": "Bílý porcelán a modrá barva — a hned poznáš, odkud pochází.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek modrobílého gželského porcelánu — konvice a talíře s modrými květinovými vzory, bílé pozadí, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kolem třiceti vesnic v oblasti Gžel se specializovalo na hrnčířství a keramiku, kterou pak rozváželo po celém Rusku. Charakteristický je kobaltově modrý vzor na bílém podkladu.",
+        "voice": "Celý kraj třiceti vesnic se domluvil na jedné barvě, a svět si ji dodnes pamatuje.",
+        "source_url": "https://en.wikipedia.org/wiki/Gzhel"
+      },
+      "kartograf": {
+        "fact": "Gžel je příklad regionální řemeslné specializace: díky kvalitní místní hlíně se celá oblast desítek vesnic zaměřila na jedno řemeslo a stala se natolik proslulou, že její jméno dnes znamená konkrétní styl, ne jen místo.",
+        "voice": "Jméno vesnice se časem stalo jménem stylu, ne jen bodem na mapě.",
+        "source_url": "https://en.wikipedia.org/wiki/Gzhel"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-ded-moroz",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Dědeček Mráz",
+    "headline": "Dědeček Mráz místo Santy",
+    "fact": "Ruským Santa Clausem je Dědeček Mráz, který nosí dárky na Nový rok, ne na Vánoce, a doprovází ho vnučka Sněhurka.",
+    "source_url": "https://en.wikipedia.org/wiki/Ded_Moroz",
+    "source_quote": "He is often depicted bringing presents to well-behaved children",
+    "voice": "Stejná role jako Santa, ale jiný termín i jiná parta.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Dědečka Mráze v dlouhém modrém nebo červeném kožichu s holí, zasněžená novoroční scéna, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Postava má předkřesťanské kořeny jako ztělesnění zimy. Sovětská moc ho nejdřív zakázala jako nevhodnou pro ateistický stát, ale roku 1935 ho vrátila zpátky — spojeného s Novým rokem místo Vánoc.",
+        "voice": "Nejdřív ho stát zakázal, pak si ho sám přivedl zpátky — jen pod jiným svátkem.",
+        "source_url": "https://en.wikipedia.org/wiki/Ded_Moroz"
+      },
+      "kartograf": {
+        "fact": "Přesun svátku dárků z Vánoc na Nový rok ukazuje, jak politická moc dokáže přeprogramovat lidovou tradici: obsah (dárky, kouzelná postava) zůstal, ale náboženský kontext byl nahrazen sekulárním.",
+        "voice": "Dárky zůstaly, kouzelná postava taky — změnilo se jen to, čí je to svátek.",
+        "source_url": "https://en.wikipedia.org/wiki/Ded_Moroz"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-balalajka",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Balalajka",
+    "headline": "Trojúhelníkové housle ruské lidové hudby",
+    "fact": "Balalajka je trojúhelníkový strunný nástroj se třemi strunami, který se stal symbolem ruské lidové hudby.",
+    "source_url": "https://en.wikipedia.org/wiki/Balalaika",
+    "source_quote": "Balalaikas are often used for Russian folk music and dancing.",
+    "voice": "Jeden pohled na trojúhelníkové tělo a hned víš, že je to Rusko.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dřevěné balalajky opřené o stěnu, detailní textura dřeva a strun, teplé světlo, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Za sovětské éry stát cíleně podporoval balalajkové orchestry jako 'lidový', proletářský nástroj — pomohlo to udělat z balalajky celonárodní symbol, i když se dřív hrála spíš na venkově.",
+        "voice": "Nástroj z venkovské chalupy stát povýšil na symbol celého národa.",
+        "source_url": "https://en.wikipedia.org/wiki/Balalaika"
+      },
+      "kartograf": {
+        "fact": "Balalajka je příklad, jak stát dokáže z lidového nástroje udělat oficiální národní symbol — organizovaná podpora orchestrů shora proměnila regionální venkovský nástroj v ikonu, kterou dnes svět spojuje s celým Ruskem.",
+        "voice": "Stačilo pár orchestrů se státní podporou, a venkovský nástroj se stal značkou celé země.",
+        "source_url": "https://en.wikipedia.org/wiki/Balalaika"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-palech",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Palešská miniatura",
+    "headline": "Malované pohádky na malé krabičce",
+    "fact": "Palešská miniatura jsou drobné malby s výjevy z ruských pohádek na lakovaných krabičkách; vznikly, když ikonopisci po revoluci 1917 přesměrovali své umění na světské náměty.",
+    "source_url": "https://en.wikipedia.org/wiki/Palekh_miniature",
+    "source_quote": "Instead of religious imagery, the first Palekh boxes depicted fairytales and folklore scenes.",
+    "voice": "Celý pohádkový příběh se vejde na víčko krabičky velikosti dlaně.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek černé lakované krabičky s ručně malovanou pohádkovou scénou zlatou a barevnou temperou, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Technika vznikla roku 1923 ve vesnici Palech, kde ikonopisci po zákazu náboženského umění přenesli svou dovednost (tempera, zlacení) na sekulární výjevy inspirované ruskými pohádkami a lidovými příběhy.",
+        "voice": "Ruce, co dřív malovaly svaté, začaly malovat draky a hrdiny z pohádek.",
+        "source_url": "https://en.wikipedia.org/wiki/Palekh_miniature"
+      },
+      "kartograf": {
+        "fact": "Palešská miniatura je příklad, jak politická změna přesměruje řemeslnou tradici, aniž by ji zničila: dovednost zůstala, jen si našla nový, ideologicky přijatelný obsah — z ikon se stalo umění pro sběratele.",
+        "voice": "Dovednost přežila i zákaz — jen si musela najít jiný obsah, který projde.",
+        "source_url": "https://en.wikipedia.org/wiki/Palekh_miniature"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-bogatyr",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Bogatyr",
+    "headline": "Ruský rytíř z lidových eposů",
+    "fact": "Bogatyr je hrdinský bojovník ruských lidových eposů (bylin), obdoba západního rytíře — nejznámější je Ilja Muromec.",
+    "source_url": "https://en.wikipedia.org/wiki/Bogatyr",
+    "source_quote": "Warriors of immense strength, courage and bravery, rarely using magic while fighting enemies.",
+    "voice": "Síla, odvaha a meč — žádná kouzla, jen obyčejná lidská udatnost.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické rekonstrukce ruského bogatyra v brnění na koni, stepní krajina, večerní světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Bogatyři se objevují v bylinách — starých ruských epických básních vyprávěných u dvora knížete Vladimíra Kyjevského. Bojují proti drakům, obrům i cizím nájezdníkům jako obránci ruské země.",
+        "voice": "Vyprávěly se u dvora jako zprávy z fronty — jen s dráčky navíc.",
+        "source_url": "https://en.wikipedia.org/wiki/Bogatyr"
+      },
+      "kartograf": {
+        "fact": "Postava bogatyra plnila stejnou funkci jako rytíř v západní Evropě: lidový hrdina, který legitimizuje obranu území a vlády. Podobné hrdinské archetypy vznikají napříč kulturami tam, kde je potřeba symbolicky ospravedlnit boj o hranice.",
+        "voice": "Každá země si na obranu svých hranic nakonec vymyslí svého hrdinu.",
+        "source_url": "https://en.wikipedia.org/wiki/Bogatyr"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-kupala",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Ivan Kupala",
+    "headline": "Noc, kdy se skáče přes oheň",
+    "fact": "Svátek Ivana Kupaly o letním slunovratu slaví oheň a vodu — lidé skáčou přes ohně a pletou věnce z květin.",
+    "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day",
+    "source_quote": "The main feature of the Kupala Night is the cleansing bonfires.",
+    "voice": "Kdo přeskočí oheň nejvýš, bude prý mít nejvíc štěstí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek lidí skákajících přes noční táborák o letní slunovratu, věnce z květin, teplá záře ohně, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Svátek spojuje předkřesťanský slovanský rituál plodnosti a ohně s křesťanským svátkem narození Jana Křtitele — typický příklad, jak církev převzala starší lidový svátek a dala mu nový výklad.",
+        "voice": "Pohanský oheň dostal křesťanské jméno, ale skákat přes něj se nepřestalo.",
+        "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day"
+      },
+      "kartograf": {
+        "fact": "Kupalská noc je další ukázka synkretismu (podobně jako Maslenice): pohanský rituál vázaný na astronomický jev (slunovrat) přežil pod křesťanským jménem — kalendář svátků tak často skrývá mnohem starší vrstvu.",
+        "voice": "Kalendář svátků často schovává mnohem starší oslavu, jen pod jiným jménem.",
+        "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-baba-jaga",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Baba Jaga",
+    "headline": "Čarodějnice v chaloupce na kuřích nožkách",
+    "fact": "Baba Jaga je postava slovanských pohádek — stará žena, která žije v chaloupce stojící na kuřích nožkách a v příbězích bývá jak zlá, tak nápomocná.",
+    "source_url": "https://en.wikipedia.org/wiki/Baba_Yaga",
+    "source_quote": "she is described as a repulsive or ferocious-looking old woman who fries and eats children, while in others she is depicted as a nice old woman who helps the hero",
+    "voice": "Nikdy nevíš, jestli tě sní, nebo ti poradí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický ilustrativní snímek dřevěné chaloupky na kuřích nožkách v temném lese, měsíční svit, pohádková atmosféra, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Baba Jaga cestuje v hmoždíři, kterým řídí, a stopy za sebou zametá koštětem. Její dvojznačnost — zlá i hodná zároveň — z ní dělá jednu z nejzajímavějších postav slovanských pohádek.",
+        "voice": "Jednou hrozba, podruhé pomoc — nikdy předem nevíš, která to bude.",
+        "source_url": "https://en.wikipedia.org/wiki/Baba_Yaga"
+      },
+      "kartograf": {
+        "fact": "Baba Jaga je typický archetyp 'strážkyně prahu' mezi světem živých a mrtvých v lidové mytologii — les jako hranice, chaloupka jako brána. Podobné postavy strážící přechod mezi světy najdeme napříč mytologiemi.",
+        "voice": "Chaloupka v lese je tu vlastně brána — a ona ta, co rozhoduje, kdo projde.",
+        "source_url": "https://en.wikipedia.org/wiki/Baba_Yaga"
+      }
+    }
+  },
+  {
+    "id": "ru-kultura-chleb-sul",
+    "country": "Rusko",
+    "section": "Kultura & tradice",
+    "topic": "Chléb a sůl",
+    "headline": "Chléb a sůl na uvítanou",
+    "fact": "Tradičním ruským uvítáním vzácných hostů — třeba i novomanželů po svatbě — je nabídnutí chleba a soli.",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_wedding_traditions",
+    "source_quote": "the couple is greeted by family members with bread and salt",
+    "voice": "Ukousneš si kousek chleba namočený v soli a jsi vítán.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kulatého bochníku chleba s miskou soli uprostřed, vyšívaný ubrus, slavnostní příležitost, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Zvyk chléb-sůl (chleb-sol) se používá při svatbách i při přivítání vzácných návštěv obecně — chléb symbolizuje hojnost a pohostinnost, sůl ochranu a přátelství.",
+        "voice": "Sousto chleba se solí řekne 'vítej' rychleji než kterákoli věta.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_wedding_traditions"
+      },
+      "kartograf": {
+        "fact": "Rituál chleba a soli je starý slovanský symbol pohostinnosti, který přežil napříč staletími a politickými systémy — používal se při carských uvítáních i v sovětské diplomacii, protože nesl univerzální, nenáboženský význam.",
+        "voice": "Carové i sovětští funkcionáři vítali hosty úplně stejným gestem.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_wedding_traditions"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-vasil",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Chrám Vasila Blaženého",
+    "headline": "Cibulové kupole jako z pohádky",
+    "fact": "Chrám Vasila Blaženého na Rudém náměstí s barevnými cibulovými kupolemi nechal v letech 1555–1561 postavit car Ivan Hrozný.",
+    "source_url": "https://en.wikipedia.org/wiki/Saint_Basil%27s_Cathedral",
+    "source_quote": "It was built from 1555 to 1561 on orders from Ivan the Terrible",
+    "voice": "Devět kupolí a žádné dvě nejsou stejné.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Chrámu Vasila Blaženého na Rudém náměstí v Moskvě, barevné cibulové kupole, jasná obloha, bez davů lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Stavba slaví ruské vítězství nad Kazaňským chanátem; tvoří ji devět kaplí seskupených kolem ústřední věže. Od roku 1990 je součástí památky UNESCO (Kreml a Rudé náměstí).",
+        "voice": "Devět kaplí kolem jedné věže slaví jedno jediné vítězství.",
+        "source_url": "https://en.wikipedia.org/wiki/Saint_Basil%27s_Cathedral"
+      },
+      "kartograf": {
+        "fact": "Cibulové kupole jsou charakteristickým znakem ruské pravoslavné architektury — jejich tvar podle jednoho výkladu lépe odvádí sníh a zároveň nese náboženskou symboliku. Chrám slouží i jako politický monument moci.",
+        "voice": "Stejný tvar střechy má odvést sníh i ukázat, kdo tu vládne.",
+        "source_url": "https://en.wikipedia.org/wiki/Saint_Basil%27s_Cathedral"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-louskacek",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Louskáček",
+    "headline": "Balet, který o Vánocích zní po celém světě",
+    "fact": "Balet Louskáček složil ruský skladatel Petr Iljič Čajkovskij; poprvé se hrál roku 1892 v Petrohradě.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Nutcracker",
+    "source_quote": "an 1892 two-act classical ballet by Pyotr Ilyich Tchaikovsky",
+    "voice": "Melodie, kterou nejspíš znáš, i když nevíš odkud.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek klasické baletní scény z Louskáčka, tanečníci na jevišti ve světle reflektorů, zimní vánoční kulisa, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Čajkovskij patří k nejhranějším skladatelům světa (Labutí jezero, Louskáček). Louskáček se stal celosvětovou vánoční tradicí — u velkých amerických baletních souborů tvoří tržby z něj kolem 40 % ročního příjmu.",
+        "voice": "Bez jednoho baletu by leckterý divadelní soubor sotva zaplatil zbytek sezóny.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Nutcracker"
+      },
+      "kartograf": {
+        "fact": "Ruská baletní a hudební škola 19. století (Mariinské divadlo, později Ruské sezóny) se stala světovým etalonem klasického baletu — příklad, kdy se národní umělecká tradice stane mezinárodním standardem.",
+        "voice": "Jedna národní tradice se stala měřítkem, podle kterého se hodnotí balet všude jinde.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Nutcracker"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-labuti-jezero",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Labutí jezero",
+    "headline": "Balet, kterému nejdřív nikdo nerozuměl",
+    "fact": "Balet Labutí jezero od Čajkovského měl premiéru roku 1877 a přestože ho publikum zprvu nepřijalo, je dnes jedním z nejhranějších baletů světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Swan_Lake",
+    "source_quote": "it is now one of the most popular ballets of all time.",
+    "voice": "Propadák, který se stal klasikou — jen to chvíli trvalo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek baletek v bílých kostýmech labutí na jevišti, měkké dramatické osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Premiéra v Bolšoj těatru dopadla špatně kvůli slabé choreografii a orchestraci — teprve pozdější přepracování po skladatelově smrti udělalo z Labutího jezera legendu.",
+        "voice": "Publikum ho při premiéře odmítlo — slávu si počkalo, až skladatel nebyl naživu, aby ji viděl.",
+        "source_url": "https://en.wikipedia.org/wiki/Swan_Lake"
+      },
+      "kartograf": {
+        "fact": "Příběh Labutího jezera ukazuje, že umělecký úspěch není daný hned při vzniku — dílo se stává klasikou často až díky pozdější reinterpretaci, ne díky původnímu provedení.",
+        "voice": "Úspěch nepřišel s prvním uvedením, ale až s tím, co po něm přišlo o roky později.",
+        "source_url": "https://en.wikipedia.org/wiki/Swan_Lake"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-bolsoj",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Bolšoj těatr",
+    "headline": "Divadlo, které dalo jméno baletu",
+    "fact": "Moskevský Bolšoj těatr, založený roku 1776, patří k nejslavnějším operním a baletním scénám světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Bolshoi_Theatre",
+    "source_quote": "The Bolshoi Ballet and Bolshoi Opera are among the oldest and best known ballet and opera companies in the world.",
+    "voice": "Slovo 'bolšoj' znamená prostě 'velký' — a divadlo tomu jménu dělá čest.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fasády Bolšoj těatru v Moskvě, sloupořadí, socha koňského spřežení na štítu, večerní osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Bolšoj těatr existuje coby soubor od roku 1776, samotná dnešní budova pochází z 19. století. Uvedly se tu premiéry mnoha klíčových ruských baletů a oper.",
+        "voice": "Jméno slibovalo jen velikost — dodalo k tomu i pověst na dvě staletí dopředu.",
+        "source_url": "https://en.wikipedia.org/wiki/Bolshoi_Theatre"
+      },
+      "kartograf": {
+        "fact": "Bolšoj těatr je institucionální kotva ruské vysoké kultury — soustředění nejlepších umělců na jedno místo po staletí vytvořilo prestižní značku, která dodnes definuje, co znamená 'ruský balet' pro celý svět.",
+        "voice": "Stačí jedna budova, kde se soustředí nejlepší, a vznikne značka na věky.",
+        "source_url": "https://en.wikipedia.org/wiki/Bolshoi_Theatre"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-kandinskij",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Kandinskij",
+    "headline": "Malíř, který jako první namaloval jen barvy a tvary",
+    "fact": "Vasilij Kandinskij je ruský malíř, který je považován za jednoho z průkopníků abstraktního umění — jako první maloval obrazy bez jakéhokoli konkrétního motivu.",
+    "source_url": "https://en.wikipedia.org/wiki/Wassily_Kandinsky",
+    "source_quote": "Colour is the keyboard, the eyes are the harmony, the soul is the piano.",
+    "voice": "Žádný strom, žádná tvář — jen barvy, tvary a pocit.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek galerie s abstraktním obrazem plným barevných tvarů ve stylu Kandinského, měkké osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kandinskij tvořil svá první čistě abstraktní díla mezi lety 1910 a 1914. Věřil, že barvy a tvary dokážou vyjádřit emoce a hudbu přímo, bez nutnosti zobrazovat skutečné předměty.",
+        "voice": "Poprvé namaloval obraz, na kterém nebylo vůbec nic, co by šlo pojmenovat.",
+        "source_url": "https://en.wikipedia.org/wiki/Wassily_Kandinsky"
+      },
+      "kartograf": {
+        "fact": "Kandinského krok k čisté abstrakci byl zlom v dějinách umění srovnatelný s vynálezem perspektivy — poprvé se malba nemusela vztahovat k viditelnému světu vůbec, což otevřelo cestu celému 20. století moderního umění.",
+        "voice": "Obraz se najednou nemusel podobat ničemu skutečnému — a tím se otevřelo celé století.",
+        "source_url": "https://en.wikipedia.org/wiki/Wassily_Kandinsky"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-repin",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Repin",
+    "headline": "Obraz mužů táhnoucích loď proti proudu",
+    "fact": "Ilja Repin je nejproslulejší ruský realistický malíř; jeho nejznámější obraz Burlaci na Volze zachycuje dělníky táhnoucí loď proti proudu řeky.",
+    "source_url": "https://en.wikipedia.org/wiki/Ilya_Repin",
+    "source_quote": "He became one of the most renowned artists in Russia in the 19th century.",
+    "voice": "Jeden obraz, a hned cítíš tu dřinu na zádech.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek inspirovaný obrazem Burlaci na Volze — skupina mužů táhnoucí loď podél řeky, drsné sluneční světlo, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Obraz Burlaci na Volze (1873) udělal z Repina vůdčí postavu ruského kritického realismu — směru, který se záměrně díval na tvrdý život obyčejných lidí, ne jen na šlechtu.",
+        "voice": "Stačí se podívat na jejich záda, a únava je skoro cítit i přes plátno.",
+        "source_url": "https://en.wikipedia.org/wiki/Ilya_Repin"
+      },
+      "kartograf": {
+        "fact": "Repinovo dílo je příkladem umění jako sociální kritiky: realistické zobrazení dřiny burlaků (táhačů lodí) upozorňovalo na sociální nerovnost v carském Rusku — umění tu plnilo skoro novinářskou funkci.",
+        "voice": "Malba tu neukazovala krásu, ale nespravedlnost — a upozorňovala na ni skoro jako dnešní reportáž.",
+        "source_url": "https://en.wikipedia.org/wiki/Ilya_Repin"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-dostojevskij",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Dostojevskij",
+    "headline": "Spisovatel, který nahlížel hluboko do lidské duše",
+    "fact": "Fjodor Dostojevskij patří k nejvlivnějším spisovatelům světové literatury; v románu Zločin a trest zkoumá psychologii viny a morálky.",
+    "source_url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky",
+    "source_quote": "He is regarded as one of the greatest novelists in both Russian and world literature",
+    "voice": "Knihy, po kterých přemýšlíš dny, ne minuty.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré knihy položené na dřevěném stole, měkké okenní světlo, atmosféra 19. století, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Zločin a trest (1866) sleduje muže, který spáchá vraždu a pak se psychicky hroutí pod tíhou viny — Dostojevskij v knize zkoumá, co se stane s myslí člověka, který překročí morální hranici.",
+        "voice": "Sleduje vraha ne kvůli činu, ale kvůli tomu, co se mu potom honí hlavou.",
+        "source_url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+      },
+      "kartograf": {
+        "fact": "Dostojevského psychologický realismus ovlivnil pozdější filozofické směry jako existencialismus — jeho romány se ptají méně 'co se stalo' a víc 'proč to člověk udělal', což z literatury dělá nástroj zkoumání lidské psychiky.",
+        "voice": "Míň ho zajímalo, co se stalo, a mnohem víc, proč to člověk vůbec udělal.",
+        "source_url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-cechov",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Čechov",
+    "headline": "Lékař, který psal nejlepší divadelní hry",
+    "fact": "Anton Čechov je jeden z nejuznávanějších dramatiků a povídkářů světa; napsal mimo jiné hry Racek, Strýček Váňa a Višňový sad.",
+    "source_url": "https://en.wikipedia.org/wiki/Anton_Chekhov",
+    "source_quote": "Medicine is my lawful wife, and literature is my mistress.",
+    "voice": "Ve dne léčil pacienty, večer psal hry, které hrají dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek prázdného jeviště divadla s otevřenou oponou, teplé reflektorové světlo, atmosféra ruského divadla, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Čechov byl zároveň praktikující lékař a spisovatel — sám říkal, že medicína je jeho manželka a literatura milenka. Jeho hry se soustředí na obyčejné lidi a jejich nevyřčené touhy víc než na velké dramatické zvraty.",
+        "voice": "Přes den diagnózy, večer dialogy — a sám říkal, že literatura je jen ta milenka.",
+        "source_url": "https://en.wikipedia.org/wiki/Anton_Chekhov"
+      },
+      "kartograf": {
+        "fact": "Čechovovo drama změnilo divadlo tím, že místo velkých akcí ukazovalo tichá, každodenní zklamání postav — tento styl 'podtextu' (co se neřekne nahlas) ovlivnil moderní dramatiku po celém světě.",
+        "voice": "Nejdůležitější věty v jeho hrách jsou často ty, co postavy vůbec nevysloví.",
+        "source_url": "https://en.wikipedia.org/wiki/Anton_Chekhov"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-faberge",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Fabergého vajíčka",
+    "headline": "Vajíčka dražší než celé paláce",
+    "fact": "Carl Fabergé vytvářel pro ruskou carskou rodinu drahokamy zdobená vajíčka — každé bylo unikátní a skrývalo uvnitř překvapení.",
+    "source_url": "https://en.wikipedia.org/wiki/Peter_Carl_Faberg%C3%A9",
+    "source_quote": "Expensive things interest me little if the value is merely in so many diamonds or pearls.",
+    "voice": "Obyčejné velikonoční vajíčko, jen z drahokamů a zlata.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek zlatého zdobeného Fabergého vejce s drahokamy, tmavé pozadí, dramatické osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Fabergého firma mezi lety 1882–1917 vyrobila 150 000 až 200 000 šperků a dekorativních předmětů, ale nejslavnější zůstávají carská vajíčka objednaná Alexandrem III. a Mikulášem II. pro jejich manželky.",
+        "voice": "Objednávka od cara pro vlastní ženu se změnila v jeden z nejslavnějších řemeslných kousků historie.",
+        "source_url": "https://en.wikipedia.org/wiki/Peter_Carl_Faberg%C3%A9"
+      },
+      "kartograf": {
+        "fact": "Fabergého vajíčka jsou symbolem konce carské éry — extrémní luxus úzké elity těsně před revolucí, která tento svět smetla. Dnes jsou vzácným sběratelským artiklem právě proto, že jich vzniklo tak málo a éra, která je zrodila, náhle skončila.",
+        "voice": "Vznikala jako vrchol luxusu těsně předtím, než revoluce smetla svět, který si je mohl dovolit.",
+        "source_url": "https://en.wikipedia.org/wiki/Peter_Carl_Faberg%C3%A9"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-rublev",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Andrej Rublev",
+    "headline": "Nejslavnější malíř ikon středověkého Ruska",
+    "fact": "Andrej Rublev je nejvýznamnější malíř pravoslavných ikon středověkého Ruska; jeho mistrovským dílem je ikona Trojice z počátku 15. století.",
+    "source_url": "https://en.wikipedia.org/wiki/Andrei_Rublev",
+    "source_quote": "one of the greatest medieval Russian painters of Orthodox Christian icons and frescoes",
+    "voice": "Obraz starý přes 600 let, a pořád jeden z nejobdivovanějších na světě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré pravoslavné ikony ve stylu Andreje Rubleva, zlaté pozadí, jemné barvy, muzejní osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ikona Trojice vychází z biblického příběhu o pohostinnosti Abraháma, ale Rublev z kompozice vypustil postavy Abraháma a Sáry a soustředil se čistě na tajemství Boží Trojice.",
+        "voice": "Vypustil z obrazu postavy, aby nezůstalo nic, co by odvádělo pozornost od tajemství samotného.",
+        "source_url": "https://en.wikipedia.org/wiki/Andrei_Rublev"
+      },
+      "kartograf": {
+        "fact": "Rublevovo dílo ukazuje, jak náboženské umění dokáže dosáhnout univerzální estetické hodnoty nezávisle na víře diváka — jeho ikony obdivují i lidé mimo pravoslaví, čistě pro kompozici a barevnost.",
+        "voice": "Obdivují ho i lidé, kteří nevěří ani slovo z toho, co obraz vypráví.",
+        "source_url": "https://en.wikipedia.org/wiki/Andrei_Rublev"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-rachmaninov",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Rachmaninov",
+    "headline": "Skladatel s rukama jako by měl o prst navíc",
+    "fact": "Sergej Rachmaninov byl ruský skladatel a klavírní virtuos, proslulý extrémně náročnými klavírními koncerty, které dodnes patří k nejtěžším skladbám vůbec.",
+    "source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+    "source_quote": "I left behind my desire to compose: losing my country, I lost myself also.",
+    "voice": "Jeho skladby zahraje jen pianista s opravdu velkýma rukama.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek rukou hrajících na klavír, teplé koncertní osvětlení, atmosféra klasického koncertu, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Rachmaninov je považován za posledního velkého představitele romantismu v ruské klasické hudbě; jeho 2. a 3. klavírní koncert patří k nejobtížnějším dílům klavírního repertoáru vůbec.",
+        "voice": "Napsal hudbu, na kterou obyčejná dlaň prostě nedosáhne.",
+        "source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff"
+      },
+      "kartograf": {
+        "fact": "Rachmaninov po revoluci 1917 emigroval a sám říkal, že ztrátou vlasti ztratil i chuť tvořit — jeho příběh je příkladem, jak politický zvrat dokáže přerušit uměleckou kariéru bez ohledu na talent.",
+        "voice": "Ztratil domov, a s ním na čas i chuť psát další notu.",
+        "source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff"
+      }
+    }
+  },
+  {
+    "id": "ru-umeni-ikony",
+    "country": "Rusko",
+    "section": "Umění",
+    "topic": "Ikony",
+    "headline": "Obraz, který má být oknem do nebe",
+    "fact": "Ruské pravoslavné ikony jsou náboženské malby na dřevě, které věřící nechápou jako pouhou dekoraci, ale jako okno k posvátnému.",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_icon",
+    "source_quote": "Icons are considered to be the Gospel in paint",
+    "voice": "Malba, ke které se lidé modlí, ne jen dívají.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek stěny pokryté pravoslavnými ikonami (ikonostas) v chrámu, zlaté rámy, svíce, tlumené světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tradice malby ikon přišla do Kyjevské Rusi z Byzance po přijetí křesťanství roku 988. Na rozdíl od západního náboženského umění se ikony maluje podle přísně daných pravidel, ne podle volné fantazie malíře.",
+        "voice": "Malíř tu nesměl malovat, co chtěl — jen to, co přesně předepisovalo pravidlo.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_icon"
+      },
+      "kartograf": {
+        "fact": "Ikony ukazují, jak silně dokáže náboženská tradice ovlivnit celý vizuální jazyk kultury — po staletí byly hlavním, téměř jediným typem obrazového umění v Rusku, než se v 19.–20. století prosadila i sekulární malba.",
+        "voice": "Než přišla světská malba, tohle bylo prakticky jediné, co si Rusko na plátno malovalo.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_icon"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-sachy",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Šachy",
+    "headline": "Země, která vládla světovým šachům",
+    "fact": "Sovětští šachisté ovládali mistrovství světa téměř nepřetržitě — od roku 1948 drželi titul dlouhá desetiletí.",
+    "source_url": "https://en.wikipedia.org/wiki/World_Chess_Championship",
+    "source_quote": "An unbroken line of FIDE champions had thus been established from 1948 to 1972",
+    "voice": "Šachy tu nebyly koníček, ale národní disciplína.",
+    "visual_type": "typographic",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Stát šachy cíleně podporoval jako národní zábavu už od časů Lenina; vznikla tak 'sovětská šachová škola' s tréninkem od dětství, která vychovala řadu mistrů světa (Botvinnik, Karpov, Kasparov).",
+        "voice": "Od Lenina po Kasparova vedla jedna přímá čára systematické výchovy mistrů.",
+        "source_url": "https://en.wikipedia.org/wiki/Soviet_chess_school",
+        "source_quote": "supported by state leaders in the Soviet Union as a national pastime"
+      },
+      "kartograf": {
+        "fact": "Šachová dominance ukazuje, jak se sport stává nástrojem státní prestiže: systematická podpora shora (kluby, trenéři, turnaje) proměnila individuální talent v opakovatelný, řízený úspěch.",
+        "voice": "Talent tu nebyl náhoda — byl to výsledek stejného systému, který fungoval znovu a znovu.",
+        "source_url": "https://en.wikipedia.org/wiki/Soviet_chess_school"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-bandy",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Bandy",
+    "headline": "Hokej s míčkem na ledě velkém jako fotbal",
+    "fact": "Bandy — 'ruský hokej' — se hraje s míčkem na ledě velkém jako fotbalové hřiště; v Rusku ho hraje přes milion lidí.",
+    "source_url": "https://en.wikipedia.org/wiki/Bandy",
+    "source_quote": "In Russia, it is estimated that more than one million people play bandy.",
+    "voice": "Jedenáct na jedenáct, zahnuté hole a malý míček na ledě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zápasu bandy na velkém zamrzlém kluzišti, hráči na bruslích se zahnutými holemi, zimní den, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Bandy je považováno za předchůdce ledního hokeje — do 20. let 20. století se obě hry ani jasně nerozlišovaly. Dnes ho na špičkové úrovni hrají hlavně Rusko a Švédsko.",
+        "voice": "Dvě hry, co se dlouho vůbec nerozlišovaly, se nakonec rozdělily úplně.",
+        "source_url": "https://en.wikipedia.org/wiki/Bandy",
+        "source_quote": "bandy can be seen as a precursor to ice hockey"
+      },
+      "kartograf": {
+        "fact": "Velikost hřiště (jako fotbalové) není náhoda — bandy vzniklo tam, kde zamrzají rozlehlé plochy řek a jezer. Sport tak odráží fyzickogeografické podmínky severní Eurasie: dlouhá zima a velké zamrzlé plochy.",
+        "voice": "Hřiště velké jako fotbalové mohlo vzniknout jen tam, kde v zimě zamrzne stejně obří plocha.",
+        "source_url": "https://en.wikipedia.org/wiki/Bandy"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-hokej",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Lední hokej",
+    "headline": "Sport, který ovládal světová mistrovství desítky let",
+    "fact": "Lední hokej patří k nejoblíbenějším sportům Ruska; Sovětský svaz dominoval mistrovstvím světa i olympijským turnajům od 50. do 80. let 20. století.",
+    "source_url": "https://en.wikipedia.org/wiki/Ice_hockey_in_Russia",
+    "source_quote": "The Soviet Union would dominate the hockey world championship and Olympic tournaments from the 1950s to 1980s.",
+    "voice": "Půl století, ve kterém prakticky nikdo jiný neměl šanci.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hráčů ledního hokeje na kluzišti, rychlý pohyb, ostré osvětlení haly, bez viditelných log, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sovětský hokejový systém stavěl na centralizovaném tréninku a dlouhodobé přípravě hráčů od dětství, podobně jako u šachu — sport byl nástrojem státní prestiže ve studené válce.",
+        "voice": "Hráče vychovávali stejným systémem jako šachisty — jen místo šachovnice měli led.",
+        "source_url": "https://en.wikipedia.org/wiki/Ice_hockey_in_Russia"
+      },
+      "kartograf": {
+        "fact": "Hokejová i šachová dominance SSSR mají stejný vzorec: systematická státní investice do jednoho odvětví dokáže během pár desetiletí vytvořit trvalou mezinárodní převahu, i když jde jen o sport nebo hru.",
+        "voice": "Stačí pár desetiletí soustavné investice, a i obyčejná hra se změní v národní dominanci.",
+        "source_url": "https://en.wikipedia.org/wiki/Ice_hockey_in_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-gymnastika",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Moderní gymnastika",
+    "headline": "Nejvíc zlata v moderní gymnastice",
+    "fact": "Ruský tým vyhrál v moderní gymnastice na olympiádách víc zlatých medailí než kterýkoli jiný stát — od roku 2000 do 2016 vyhrál v soutěži skupin úplně každý titul.",
+    "source_url": "https://en.wikipedia.org/wiki/Rhythmic_gymnastics",
+    "source_quote": "The Russian group has won five of the eight group exercises held in the Olympics",
+    "voice": "Stuhy, míče a obruče — a skoro pokaždé ruské zlato.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek gymnastky s barevnou stuhou během vystoupení, dynamický pohyb, sportovní hala, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Moderní gymnastika se na olympijský program dostala v roce 1996 a Rusko od té doby v soutěži družstev prohrálo jen výjimečně. Sport vyžaduje kombinaci flexibility, přesnosti a dlouholetého tréninku od raného dětství.",
+        "voice": "Za třicet let soutěží prohráli jen párkrát — zbytek zlata zůstal doma.",
+        "source_url": "https://en.wikipedia.org/wiki/Rhythmic_gymnastics"
+      },
+      "kartograf": {
+        "fact": "Podobně jako u baletu, i u moderní gymnastiky drží Rusko výhodu díky propracovanému systému výběru a tréninku talentovaných dětí — sportovní dominance tu vzniká stejným mechanismem jako umělecká excelence.",
+        "voice": "Umělecká i sportovní dokonalost tu vznikají naprosto stejným postupem: vybrat malé a trénovat roky.",
+        "source_url": "https://en.wikipedia.org/wiki/Rhythmic_gymnastics"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-krasobrusleni",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Krasobruslení",
+    "headline": "42 let neporažení v párovém krasobruslení",
+    "fact": "Od roku 1964 do roku 2006 vyhrál sovětský nebo ruský pár zlato v krasobruslení na úplně každé zimní olympiádě — 42 let neporažitelnosti.",
+    "source_url": "https://en.wikipedia.org/wiki/Figure_skating_in_Russia",
+    "source_quote": "At every Winter Olympics from 1964 through 2006, a Soviet or Russian pair won gold.",
+    "voice": "Jedenáct olympiád po sobě, a zlato vždycky patřilo jim.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek krasobruslařského páru během zdvihu na ledové ploše, dramatické osvětlení haly, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Neporažitelnou sérii přerušil až rok 2010, kdy zlato poprvé získal čínský pár; Rusko se ale na vrchol vrátilo hned v roce 2014 na domácí olympiádě v Sočí.",
+        "voice": "Sérii nakonec přerušila jiná země — ale jen do další olympiády, kterou hostili sami.",
+        "source_url": "https://en.wikipedia.org/wiki/Figure_skating_in_Russia"
+      },
+      "kartograf": {
+        "fact": "Čtyřicetidvouletá série je jedním z nejdelších sportovních monopolů v dějinách olympijských her — ukazuje, jak dlouho dokáže systematicky budovaná sportovní škola udržet náskok, než ji jiná země dokáže dohnat.",
+        "voice": "Čtyřicet dva let museli soupeři čekat, než na ně konečně vyzráli.",
+        "source_url": "https://en.wikipedia.org/wiki/Figure_skating_in_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-sambo",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Sambo",
+    "headline": "Bojové umění vynalezené pro Rudou armádu",
+    "fact": "Sambo je bojový sport vzniklý v Sovětském svazu ve 20. letech 20. století, který kombinuje techniky juda, zápasu a boxu.",
+    "source_url": "https://en.wikipedia.org/wiki/Sambo_(martial_art)",
+    "source_quote": "Sambo is a combat sport and essentially a mixed martial art, as it utilizes techniques from other classical martial arts",
+    "voice": "Směs stylů navržená tak, aby fungovala doopravdy, ne jen na koberci.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dvou zápasníků samba v souboji na žíněnce, sportovní hala, dramatické osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sambo vzniklo jako systém pro zlepšení boje muže proti muži pro potřeby armády — vzalo si nejúčinnější prvky juda, klasického i volného zápasu a lidových bojových stylů národů SSSR.",
+        "voice": "Nevznikalo pro turnaje, ale pro to, aby vojáci přežili skutečnou rvačku.",
+        "source_url": "https://en.wikipedia.org/wiki/Sambo_(martial_art)"
+      },
+      "kartograf": {
+        "fact": "Sambo je příklad záměrně 'sestaveného' bojového systému — na rozdíl od stylů, které se vyvíjely staletí, ho stát cíleně navrhl syntézou existujících technik pro konkrétní vojenský účel.",
+        "voice": "Zatímco jiné styly rostly staletí samy, tenhle někdo posadil k stolu a navrhl za pár let.",
+        "source_url": "https://en.wikipedia.org/wiki/Sambo_(martial_art)"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-karelin",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Alexandr Karelin",
+    "headline": "Zápasník, kterého 6 let nikdo nebodoval",
+    "fact": "Alexandr Karelin je považován za nejlepšího řecko-římského zápasníka historie; šest let v řadě mu na mezinárodních turnajích nikdo nedal ani bod.",
+    "source_url": "https://en.wikipedia.org/wiki/Alexander_Karelin",
+    "source_quote": "Nobody even had a chance to beat him.",
+    "voice": "887 vítězství, jen 2 prohry — a jedna z nich rozbila celou legendu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řecko-římského zápasníka ve chvíli vítězství na turnaji, sportovní hala, dramatické osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Karelin vyhrál devět mistrovství světa a měl na seniorské úrovni bilanci 887 výher a jen 2 proher. Jeho šestiletou sérii bez bodové ztráty ukončil až Američan Rulon Gardner na olympiádě 2000.",
+        "voice": "Šest let mu soupeři nedokázali vzít jediný bod — a pak přišel jeden zápas, co změnil všechno.",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Karelin"
+      },
+      "kartograf": {
+        "fact": "Karelinova kariéra je extrémní příklad toho, jak dlouho dokáže vydržet individuální dominance jednoho sportovce — na rozdíl od týmových sérií (hokej, krasobruslení) tu jde o jedince, který systém prostě předčil.",
+        "voice": "Tady nešlo o systém ani o tým — jeden člověk prostě předčil všechny ostatní.",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Karelin"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-moskva1980",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Moskva 1980",
+    "headline": "Olympiáda, kterou bojkotovaly desítky zemí",
+    "fact": "Moskva hostila letní olympijské hry 1980, ale kvůli sovětské invazi do Afghánistánu je bojkotovalo 66 zemí v čele s USA.",
+    "source_url": "https://en.wikipedia.org/wiki/1980_Summer_Olympics",
+    "source_quote": "Eighty nations were represented at the Moscow Olympics, the smallest number since 1956.",
+    "voice": "Sportovní svátek, který se změnil v politický spor.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek olympijského stadionu v Moskvě s hořícím olympijským ohněm, slavnostní atmosféra, 16:9",
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Americký prezident Jimmy Carter vyzval SSSR k odchodu z Afghánistánu do měsíce, jinak USA hry bojkotují. Sovětská armáda neodešla a olympiády v Moskvě se zúčastnilo nejméně zemí od roku 1956.",
+        "voice": "Ultimátum kvůli válce v Afghánistánu vyprázdnilo stadiony rychleji než kterýkoli soupeř.",
+        "source_url": "https://en.wikipedia.org/wiki/1980_Summer_Olympics"
+      },
+      "kartograf": {
+        "fact": "Bojkot olympiády 1980 je učebnicový příklad, jak se sport stává rukojmím geopolitiky — sportovní akce, která má být nadnárodní, se proměnila v přímý nástroj politického protestu proti válce.",
+        "voice": "Hry, co měly spojovat svět, se na pár týdnů proměnily v nástroj protestu.",
+        "source_url": "https://en.wikipedia.org/wiki/1980_Summer_Olympics"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-fotbal",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Fotbal",
+    "headline": "Nejoblíbenější míčová hra Ruska",
+    "fact": "Fotbal je nejpopulárnější kolektivní sport v Rusku; v roce 2018 tu jako první zemi v historii hostil mistrovství světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Football_in_Russia",
+    "source_quote": "Association football is the most popular sport in Russia, closely contesting ice hockey.",
+    "voice": "V zimě hokej, ale fotbal má pořád nejvíc fanoušků.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fotbalového stadionu plného diváků při zápase, večerní osvětlení, dramatická atmosféra, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Rusko získalo pořadatelství mistrovství světa 2010 a v roce 2018 se stalo dosud územně největší zemí, která šampionát hostila — zápasy se hrály od Kaliningradu na západě až po Jekatěrinburg na Uralu.",
+        "voice": "Zápasy dělily tisíce kilometrů — fanoušci cestovali skoro jako na jinou olympiádu.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_Russia"
+      },
+      "kartograf": {
+        "fact": "Fotbalový šampionát 2018 v Rusku ukázal geografický rozsah země v praxi — fanoušci museli cestovat mezi stadiony vzdálenými tisíce kilometrů, což se u žádné jiné hostitelské země MS v takové míře nestalo.",
+        "voice": "Žádný jiný pořadatel MS nedonutil fanoušky přeletět takový kus vlastního území.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-tenis",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Tenis",
+    "headline": "Země s celou řadou tenisových jedniček",
+    "fact": "Rusko vychovalo hned tři mužské tenisty, kteří se dostali na 1. místo světového žebříčku — Marata Safina, Jevgenije Kafelnikova a Daniila Medveděva.",
+    "source_url": "https://en.wikipedia.org/wiki/Tennis_in_Russia",
+    "source_quote": "Russia also boasts three former number 1 men's players",
+    "voice": "Malý stát na žebříčku, velký na kurtu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tenisového kurtu při zápase, hráč v pohybu, ostré sluneční světlo, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ruský tenis je silný na mužské i ženské straně žebříčku zároveň — mezi elitou se pravidelně objevují jak muži, tak ženy, což je mezi tenisovými velmocemi neobvyklé.",
+        "voice": "Zatímco jinde bývá silná jen jedna strana žebříčku, tady září obě zároveň.",
+        "source_url": "https://en.wikipedia.org/wiki/Tennis_in_Russia"
+      },
+      "kartograf": {
+        "fact": "Tenisový úspěch Ruska navazuje na obecný vzorec sovětské a postsovětské sportovní politiky: systematický výběr a trénink talentovaných dětí funguje napříč disciplínami, od šachu přes gymnastiku až po tenis.",
+        "voice": "Je jedno, jestli jde o šachovnici nebo kurt — systém výchovy talentů je pořád ten samý.",
+        "source_url": "https://en.wikipedia.org/wiki/Tennis_in_Russia"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-bezky",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Běžecké lyžování",
+    "headline": "Sport, který zpopularizoval sám Lenin",
+    "fact": "Běžecké lyžování se v Rusku pěstuje tam, kde je sníh po většinu roku; jeho popularitu v Sovětském svazu od roku 1919 osobně podporoval Vladimir Lenin.",
+    "source_url": "https://en.wikipedia.org/wiki/Cross-country_skiing",
+    "source_quote": "Vladimir Lenin helped popularize the activity in the Soviet Union.",
+    "voice": "Sport, který se dá provozovat prakticky přede dveřmi celou zimu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek běžkaře na zasněžené stopě mezi lesy, ranní mlha, přirozené světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Dlouhá sněhová sezóna dělá z běžeckého lyžování přirozený národní sport v severských i ruských podmínkách — nevyžaduje drahé vybavení jako sjezdové lyžování a dá se provozovat téměř kdekoli za městem.",
+        "voice": "Netřeba drahé vybavení ani hory — stačí sníh, který tu leží skoro půl roku.",
+        "source_url": "https://en.wikipedia.org/wiki/Cross-country_skiing"
+      },
+      "kartograf": {
+        "fact": "To, že popularizaci sportu osobně podpořil Lenin, ukazuje, jak i sovětský stát využíval fyzickou aktivitu jako nástroj budování 'nového člověka' — sport nebyl jen zábava, ale součást ideologického programu.",
+        "voice": "I obyčejné lyžování se dalo použít jako nástroj, jak vychovat ideálního občana.",
+        "source_url": "https://en.wikipedia.org/wiki/Cross-country_skiing"
+      }
+    }
+  },
+  {
+    "id": "ru-sport-soci2014",
+    "country": "Rusko",
+    "section": "Sport",
+    "topic": "Soči 2014",
+    "headline": "Nejdražší olympiáda v dějinách",
+    "fact": "Zimní olympijské hry v Sočí 2014 byly s náklady kolem 51 miliard dolarů nejdražšími olympijskými hrami v historii.",
+    "source_url": "https://en.wikipedia.org/wiki/2014_Winter_Olympics",
+    "source_quote": "The 2014 Winter Olympics were the most expensive Games in the history of the Olympics.",
+    "voice": "Čtyřikrát dráž, než se původně plánovalo.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Původní rozpočet počítal s 12 miliardami dolarů, konečná cena ale dosáhla asi 51 miliard — víc než odhadovaná cena letních her v Pekingu 2008, které do té doby držely rekord.",
+        "voice": "Rozpočet nakonec vzrostl tolikrát, že by se za rozdíl dala postavit další olympiáda.",
+        "source_url": "https://en.wikipedia.org/wiki/2014_Winter_Olympics"
+      },
+      "kartograf": {
+        "fact": "Soči bylo subtropické letovisko bez zimní sportovní infrastruktury — obří náklady odrážely to, že se muselo vybudovat od nuly, včetně nové silnice a železnice do hor, kde předtím žádná pořádná nebyla.",
+        "voice": "Museli sem přivézt zimní sporty tam, kde předtím nebyla ani pořádná silnice do hor.",
+        "source_url": "https://en.wikipedia.org/wiki/2014_Winter_Olympics"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-azbuka",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Cyrilice",
+    "headline": "Písmo pojmenované po světci",
+    "fact": "Ruština se píše azbukou (cyrilicí) — písmem, které vychází z řecké abecedy a je pojmenované po svatém Cyrilovi.",
+    "source_url": "https://en.wikipedia.org/wiki/Cyrillic_script",
+    "source_quote": "The script is named in honor of Saint Cyril.",
+    "voice": "Některá písmena poznáš, jiná tě napálí — В se čte jako 'v'.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Cyrilice vznikla v 9.–10. století v Prvním bulharském státě (Preslavská literární škola) a rozšířila se spolu s pravoslavím. Dnes ji jako oficiální písmo používá kolem 250 milionů lidí.",
+        "voice": "Písmo vzniklo o kus dál na jihu a rozšířilo se dřív, než vůbec vzniklo Rusko.",
+        "source_url": "https://en.wikipedia.org/wiki/Cyrillic_script",
+        "source_quote": "derived from the Greek uncial script letters"
+      },
+      "kartograf": {
+        "fact": "Rozšíření azbuky kopíruje historickou hranici vlivu východního (pravoslavného) křesťanství. Písmo je tak kulturní mapou: hranice mezi cyrilicí a latinkou zhruba odpovídá hranici byzantského a západního civilizačního okruhu.",
+        "voice": "Kde končí cyrilice a začíná latinka, tam většinou skončila i byzantská církev.",
+        "source_url": "https://en.wikipedia.org/wiki/Cyrillic_script"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-rozsah",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Rozšíření ruštiny",
+    "headline": "Nejrozšířenější mateřština Evropy",
+    "fact": "Ruština je s asi 145 miliony rodilých mluvčích nejrozšířenější mateřštinou Evropy a jedním ze šesti úředních jazyků OSN.",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_language",
+    "source_quote": "one of the six official languages of the United Nations",
+    "voice": "Domluvíš se s ní od Baltu po Pacifik.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ruština je z hlediska území nejrozšířenějším jazykem Eurasie; jako dorozumívací jazyk zůstala i v mnoha zemích bývalého Sovětského svazu. Je dokonce jedním ze dvou úředních jazyků na Mezinárodní vesmírné stanici.",
+        "voice": "Domluvíš se jí dokonce i na oběžné dráze — je jedním ze dvou jazyků vesmírné stanice.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_language",
+        "source_quote": "the most geographically widespread language of Eurasia"
+      },
+      "kartograf": {
+        "fact": "Dosah jazyka je dědictvím imperiální a sovětské expanze: ruština funguje jako lingua franca postsovětského prostoru — příklad, jak se politické hranice minulosti přetavují do současné jazykové geografie.",
+        "voice": "Kam kdysi sahala moc impéria, tam dnes pořád sahá i jeho jazyk.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_language"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-pady",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Pády",
+    "headline": "Šest pádů, které mění celé slovo",
+    "fact": "Ruština má šest gramatických pádů — podle pádu se mění koncovka podstatných jmen, přídavných jmen i zájmen.",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_grammar",
+    "source_quote": "Russian grammar employs an Indo-European inflectional structure, with considerable adaptation.",
+    "voice": "Stejné slovo, sedm různých tváří podle toho, co zrovna dělá ve větě.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Šest pádů (1. pád, 2. pád atd.) určuje roli slova ve větě — kdo co dělá, komu, s čím. Zvlášť obtížné bývají pro cizince slovesa pohybu, která mají v ruštině spoustu různých tvarů podle způsobu a směru pohybu.",
+        "voice": "Jedno sloveso pohybu se dokáže rozpadnout na tucet různých tvarů podle směru a způsobu.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_grammar"
+      },
+      "kartograf": {
+        "fact": "Pádový systém dělá z ruštiny jazyk s pružným slovosledem — protože roli slova ve větě nese koncovka, ne pozice, dá se pořadí slov měnit kvůli důrazu, aniž by se změnil základní význam.",
+        "voice": "Díky koncovkám si slova můžou ve větě přeskakovat, jak chtějí, a věta pořád dává smysl.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_grammar"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-pismena",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Tvrdý a měkký znak",
+    "headline": "Dvě písmena, která se vůbec nevyslovují",
+    "fact": "Ruská abeceda má 33 písmen; dvě z nich — tvrdý a měkký znak — nemají vlastní hlásku a jen mění výslovnost sousedního písmene.",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_orthography",
+    "source_quote": "no phoneme is ever represented with more than one letter.",
+    "voice": "Dvě písmena v abecedě, která si sama nikdy nepřečteš nahlas.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tvrdý znak (ъ) a měkký znak (ь) fungují jako gramatická signalizace — měkký znak třeba změkčuje předchozí souhlásku nebo označuje ženský rod, aniž by sám cokoli 'zněl'.",
+        "voice": "Písmeno, co samo nikdy nezazní, a přesto dokáže změnit zvuk celého slova.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_orthography"
+      },
+      "kartograf": {
+        "fact": "Ruský pravopis je na rozdíl od českého velmi důsledně fonetický — každá hláska má v podstatě jedno pevné písmeno. Tvrdý a měkký znak jsou výjimkou, která ukazuje, jak i 'logický' pravopisný systém potřebuje speciální značky pro jevy, které nejdou zapsat jinak.",
+        "voice": "I jazyk, který se čte skoro přesně tak, jak se píše, potřebuje pár záhadných výjimek.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_orthography"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-patronymikum",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Jméno po otci",
+    "headline": "Jméno po tátovi uprostřed",
+    "fact": "Rusové mají tradičně tři jména — křestní, patronymikum odvozené od jména otce a příjmení.",
+    "source_url": "https://en.wikipedia.org/wiki/Patronymic",
+    "source_quote": "a Russian language patronymic",
+    "voice": "Uprostřed jména se skrývá, jak se jmenoval tvůj táta.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Patronymikum se tvoří příponou -ovič nebo -evič pro muže a -ovna nebo -evna pro ženy — třeba Ivan, syn Petra, je Ivan Petrovič. Formální oslovení celým jménem a patronymem vyjadřuje úctu.",
+        "voice": "Podle prostředního jména hned poznáš jméno otce, i když ho nikdy nepotkáš.",
+        "source_url": "https://en.wikipedia.org/wiki/Patronymic"
+      },
+      "kartograf": {
+        "fact": "Třídílný jmenný systém (jméno–patronymikum–příjmení) je společný pro východoslovanské národy a nese v sobě starší patriarchální strukturu společnosti — jméno samo o sobě zaznamenává rodinnou linii po otci.",
+        "voice": "Rodinná linie se tu nezapisuje do rodokmenu, ale rovnou do jména samotného.",
+        "source_url": "https://en.wikipedia.org/wiki/Patronymic"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-car",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Slovo car",
+    "headline": "Titul, který pochází od Caesara",
+    "fact": "Slovo car pochází z latinského titulu 'caesar', kterým se označovali římští císaři.",
+    "source_url": "https://en.wikipedia.org/wiki/Tsar",
+    "source_quote": "The title tsar is derived from the Latin title caesar, used for the Roman emperors.",
+    "voice": "Jméno jednoho římského vládce se stalo titulem pro úplně jiné panovníky o staletí později.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Titul car nejdřív přijal bulharský vládce Simeon I. roku 913, později ho použili i srbští panovníci. V Rusku ho jako první formálně nesl Ivan IV. Hrozný od roku 1547.",
+        "voice": "Než titul dorazil do Moskvy, stihl si razítko dát už u bulharského i srbského dvora.",
+        "source_url": "https://en.wikipedia.org/wiki/Tsar"
+      },
+      "kartograf": {
+        "fact": "Putování slova 'caesar' od Říma přes gótštinu až k slovanskému 'caru' je jazyková stopa politického vlivu: kdo přijme cizí titul pro svého vládce, hlásí se tím symbolicky k prestiži říše, ze které titul pochází.",
+        "voice": "Přijmout cizí titul pro vlastního vládce znamená přihlásit se k prestiži říše, odkud pochází.",
+        "source_url": "https://en.wikipedia.org/wiki/Tsar"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-mamut",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Slovo mamut",
+    "headline": "Slovo, které svět dostal ze Sibiře",
+    "fact": "Anglické slovo 'mammoth' (mamut) pochází ze sibiřského jazyka mansijštiny přes ruštinu a doslova znamená 'zemní roh'.",
+    "source_url": "https://en.wikipedia.org/wiki/Mammoth",
+    "source_quote": "the word 'mammoth' likely originates from *mān-oŋt, a word in the Mansi languages of western Siberia meaning 'earth horn'",
+    "voice": "Jméno vzniklo, protože si lidé mysleli, že kly jsou rohy zvířete žijícího pod zemí.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "fyzicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Domorodí obyvatelé Sibiře nacházeli obří kly mamutů zamrzlé v permafrostu a věřili, že patří obřímu tvoru žijícímu pod zemí — odtud pojmenování 'zemní roh'. Slovo pak přes ruštinu proniklo do angličtiny a dalších jazyků.",
+        "voice": "Nikdo živého mamuta neviděl, a přesto mu obyvatelé Sibiře dali jméno jen podle klů v ledu.",
+        "source_url": "https://en.wikipedia.org/wiki/Mammoth"
+      },
+      "kartograf": {
+        "fact": "Cesta slova 'mamut' ze sibiřské mansijštiny do světových jazyků je přímo propojená s permafrostem — jen díky zmrzlé půdě se pozůstatky mamutů zachovaly natolik dobře, že o nich mohly vzniknout legendy, které daly zvířeti jméno.",
+        "voice": "Bez zmrzlé půdy by se kosti nezachovaly a slovo by nejspíš nikdy nevzniklo.",
+        "source_url": "https://en.wikipedia.org/wiki/Mammoth"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-zdrobneliny",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Zdrobněliny",
+    "headline": "Jedno jméno, desítky přezdívek",
+    "fact": "Z jednoho ruského jména jako Alexandr vznikají desítky zdrobnělin — Saša, Saňa, Šura — podle toho, jak blízký je vztah mezi mluvčími.",
+    "source_url": "https://en.wikipedia.org/wiki/Russian_name",
+    "source_quote": "One can create many forms with different degrees of affection and familiarity by adding the corresponding suffixes to the auxiliary stem.",
+    "voice": "Podle přezdívky hned poznáš, jak blízko si dva lidé jsou.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Zdrobněliny mají několik úrovní — plné jméno, krátký tvar, zdrobnělina a mazlivá zdrobnělina (třeba příponami -enka, -onka, -ečka pro děti nebo blízké přátele). Volba tvaru signalizuje míru důvěrnosti.",
+        "voice": "Jedno jméno se dá poskládat do tak deseti různých podob podle toho, komu patříš.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_name"
+      },
+      "kartograf": {
+        "fact": "Bohatství ruských zdrobnělin je gramatický nástroj sociální vzdálenosti: jazyk umožňuje jemně odstupňovat vztah mezi lidmi jen výběrem varianty jména, aniž by bylo potřeba cokoli říct navíc.",
+        "voice": "Stačí vybrat správnou variantu jména, a řekneš tím víc než celou větou.",
+        "source_url": "https://en.wikipedia.org/wiki/Russian_name"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-ty-vy",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Tykání a vykání",
+    "headline": "Dvě slova pro 'ty' podle toho, komu vykáš",
+    "fact": "Ruština rozlišuje neformální oslovení 'ty' (ты) a formální, zdvořilé 'vy' (вы) — podobně jako čeština tykání a vykání.",
+    "source_url": "https://en.wikipedia.org/wiki/T%E2%80%93V_distinction",
+    "voice": "Špatná volba mezi 'ty' a 'vy' dokáže hned prozradit, jak dobře znáš etiketu.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "'Ty' je vyhrazeno pro blízké přátele a rodinu, případně jako urážka; 've formálním psaném projevu se dokonce píše 'Vy' s velkým počátečním písmenem jako projev úcty.",
+        "voice": "Stejné slovo dokáže znamenat buď blízké přátelství, nebo přímou urážku.",
+        "source_url": "https://en.wikipedia.org/wiki/T%E2%80%93V_distinction"
+      },
+      "kartograf": {
+        "fact": "Rozlišení tykání a vykání kóduje do gramatiky sociální hierarchii a blízkost vztahu — jazyky jako angličtina tento rozdíl ztratily, zatímco slovanské jazyky včetně ruštiny a češtiny si ho podržely jako mocný společenský signál.",
+        "voice": "Angličtina si tenhle rozdíl kdysi taky měla, jen ho po cestě někde ztratila.",
+        "source_url": "https://en.wikipedia.org/wiki/T%E2%80%93V_distinction"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-vid-slovesa",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Slovesný vid",
+    "headline": "Sloveso, které nese informaci, jestli je děj dokončený",
+    "fact": "Ruská slovesa mají vid — dokonavý a nedokonavý — který říká, jestli je děj dokončený, nebo probíhá; angličtina ani čeština to nemá tak důsledně zabudované v každém slovese.",
+    "source_url": "https://en.wikipedia.org/wiki/Grammatical_aspect",
+    "source_quote": "Russian, like other Slavic languages, uses different lexical entries for the different aspects",
+    "voice": "Jedno malé slovo v sobě nese, jestli je práce hotová, nebo ještě běží.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Pro 'psát' a 'napsat' má ruština dvě různá slovesa místo jednoho s příponou — dokonavý a nedokonavý vid tak nejsou jen gramatická nuance, ale prakticky samostatná slova, která se musí učit zvlášť.",
+        "voice": "Pro jednu činnost tu existují rovnou dvě různá slova podle toho, jestli skončila.",
+        "source_url": "https://en.wikipedia.org/wiki/Grammatical_aspect"
+      },
+      "kartograf": {
+        "fact": "Slovesný vid je typický rys všech slovanských jazyků (včetně češtiny) a patří k tomu nejtěžšímu, co se cizinci učí — angličtina podobné rozlišení vyjadřuje opisně (jsem psal vs. napsal jsem), ruština ho má vetkané přímo do slovníku.",
+        "voice": "Co si angličtina musí opsat celou větou, ruština vyřeší jen výběrem jiného slova.",
+        "source_url": "https://en.wikipedia.org/wiki/Grammatical_aspect"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-sponove-sloveso",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Věta bez slovesa",
+    "headline": "Věta bez slovesa 'být'",
+    "fact": "V přítomném čase ruština obvykle úplně vynechává sloveso 'být' — věta 'já člověk' (я человек) znamená 'já jsem člověk', bez jediného slovesa.",
+    "source_url": "https://en.wikipedia.org/wiki/Copula_(linguistics)",
+    "source_quote": "Russian: я человек, ya chelovek 'I (am a) human'",
+    "voice": "Kde čeština potřebuje sloveso, ruština si prostě vystačí bez něj.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sloveso 'быть' (být) v ruštině v přítomném čase téměř mizí — používá se jen v minulém a budoucím čase. V přítomnosti nese informaci o podmětu a přísudku prostě jen slovosled a kontext.",
+        "voice": "V přítomném čase sloveso 'být' prostě zmizí, a věta se bez něj obejde úplně v pohodě.",
+        "source_url": "https://en.wikipedia.org/wiki/Copula_(linguistics)"
+      },
+      "kartograf": {
+        "fact": "Nulová spona (chybějící sloveso 'být') je jev, který ruština sdílí s dalšími jazyky napříč světem (arabština, hebrejština) — ukazuje, že věta se dá stavět i bez prvku, který čeština a angličtina považují za nepostradatelný.",
+        "voice": "Sloveso, bez kterého si čeština nedovede větu představit, jinde ve světě klidně chybí.",
+        "source_url": "https://en.wikipedia.org/wiki/Copula_(linguistics)"
+      }
+    }
+  },
+  {
+    "id": "ru-jazyk-slovosled",
+    "country": "Rusko",
+    "section": "Jazyk & slova",
+    "topic": "Volný slovosled",
+    "headline": "Slova, která si dovolí přeskakovat po větě",
+    "fact": "Díky pádovým koncovkám může ruština prohazovat pořadí slov ve větě mnohem volněji než angličtina, aniž by se změnil základní význam.",
+    "source_url": "https://en.wikipedia.org/wiki/Word_order",
+    "voice": "Stejná slova, jiné pořadí — a věta pořád znamená totéž, jen s jiným důrazem.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Zatímco v angličtině pozice slova ve větě určuje, kdo je podmět a kdo předmět, v ruštině to prozradí pádová koncovka — proto se dá pořadí měnit třeba kvůli zdůraznění, aniž by věta přestala dávat smysl.",
+        "voice": "Přehazuj slova, jak chceš — koncovka stejně prozradí, kdo je komu čím.",
+        "source_url": "https://en.wikipedia.org/wiki/Word_order"
+      },
+      "kartograf": {
+        "fact": "Volnost slovosledu je přímý důsledek bohaté pádové morfologie — jazyky s málo pády (angličtina) potřebují pevný slovosled, aby věta byla srozumitelná, zatímco jazyky s mnoha pády (ruština, latina) si mohou dovolit flexibilitu, protože informaci nese sama koncovka.",
+        "voice": "Čím víc práce udělá koncovka, tím míň musí hlídat pořadí slov ve větě.",
+        "source_url": "https://en.wikipedia.org/wiki/Word_order"
+      }
+    }
+  },
+  {
+    "id": "ru-historie-petrohrad",
+    "country": "Rusko",
+    "section": "Historie",
+    "topic": "Petrohrad",
+    "headline": "Město postavené jako okno do Evropy",
+    "fact": "Petrohrad založil roku 1703 car Petr Veliký jako 'okno do Evropy' — nový přímořský přístav a bránu k Západu.",
+    "source_url": "https://en.wikipedia.org/wiki/Saint_Petersburg",
+    "source_quote": "traditionally called the 'Window to Europe'",
+    "voice": "Nové hlavní město vyrostlé na bažinách u moře.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického centra Petrohradu s řekou Něvou, barokní paláce, zlaté věže, podvečerní světlo, bez textu, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Petr Veliký chtěl Rusko přiblížit Evropě, proto přesunul hlavní město z vnitrozemské Moskvy k Baltu (bylo jím v letech 1712–1918). Město vyrostlo na bažinaté půdě a jeho stavba stála životy desítek tisíc nevolníků.",
+        "voice": "Aby vzniklo město u moře, muselo nejdřív zmizet hodně bažiny — a s ní i hodně životů.",
+        "source_url": "https://en.wikipedia.org/wiki/Saint_Petersburg"
+      },
+      "kartograf": {
+        "fact": "Založení Petrohradu je učebnicový příklad geopolitického rozhodnutí: umístění hlavního města k moři mělo obrátit orientaci země od izolovaného vnitrozemí k námořnímu obchodu a Evropě — poloha jako nástroj modernizace.",
+        "voice": "Přesunout hlavní město k moři byl jeho způsob, jak natočit celou zemi k Evropě.",
+        "source_url": "https://en.wikipedia.org/wiki/Saint_Petersburg"
+      }
+    }
   }
 ]

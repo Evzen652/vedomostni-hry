@@ -3,120 +3,811 @@
     "id": "sk-mista-bratislavsky-hrad",
     "country": "Slovensko",
     "section": "Místa",
+    "topic": "Bratislavský hrad",
     "headline": "Hrad se čtyřmi věžemi nad Dunajem",
     "fact": "Bratislavský hrad se čtyřmi nárožními věžemi je dominantou hlavního města a tyčí se na skalním ostrohu nad Dunajem.",
     "voice": "Místní mu pro jeho tvar říkají „obrácený stůl“.",
     "source_url": "https://cs.wikipedia.org/wiki/Bratislavsk%C3%BD_hrad",
     "source_quote": "hrad se čtyřmi nárožními věžemi nad Dunajem",
     "visual_type": "photo",
-    "image_prompt": "Bílý Bratislavský hrad se čtyřmi věžemi na kopci nad řekou Dunaj za soumraku"
+    "image_prompt": "Bílý Bratislavský hrad se čtyřmi věžemi na kopci nad řekou Dunaj za soumraku",
+    "ll": [17.1000, 48.1425],
+    "levels": {
+      "cestovatel": {
+        "fact": "Hrad stojí na izolovaném skalním kopci Malých Karpat přímo nad Dunajem uprostřed Bratislavy. Dnešní barokní podobu získal při rozsáhlé rekonstrukci od roku 1957, po požáru a letech chátrání.",
+        "source_url": "https://en.wikipedia.org/wiki/Bratislava_Castle",
+        "source_quote": "The massive rectangular building with four corner towers stands on an isolated rocky hill of the Little Carpathians, directly above the Danube river",
+        "voice": "Generace řemeslníků ho stavěly a přestavovaly, než dostal dnešní bílou podobu.",
+        "image_prompt": "Fotorealistický snímek Bratislavského hradu zevnitř nádvoří, bílé barokní fasády, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "fact": "Poloha hradu — skalní ostroh nad řekou uprostřed města — je typická pro středoevropská panovnická sídla: kombinuje obrannou výhodu terénu s kontrolou důležité vodní a obchodní cesty, jakou byl Dunaj.",
+        "source_url": "https://en.wikipedia.org/wiki/Bratislava_Castle",
+        "voice": "Kdo ovládal kopec nad řekou, ovládal i cestu, která pod ním protékala.",
+        "image_prompt": "Fotorealistický letecký snímek Bratislavského hradu na kopci nad meandrem Dunaje, okolní město, denní světlo, 16:9"
+      }
+    }
   },
   {
     "id": "sk-mista-spissky-hrad",
     "country": "Slovensko",
     "section": "Místa",
+    "topic": "Spišský hrad",
     "headline": "Jeden z největších hradních komplexů Evropy",
     "fact": "Spišský hrad patří k největším hradním komplexům ve střední Evropě a od roku 1993 je zapsán na seznamu světového dědictví UNESCO.",
     "voice": "Z jeho hradeb dohlédneš přes celý Spiš.",
     "source_url": "https://cs.wikipedia.org/wiki/Spi%C5%A1sk%C3%BD_hrad",
     "source_quote": "jeden z největších hradních areálů ve střední Evropě, na seznamu UNESCO od roku 1993",
     "visual_type": "photo",
-    "image_prompt": "Rozlehlá kamenná zřícenina Spišského hradu na zeleném návrší pod modrou oblohou"
+    "image_prompt": "Rozlehlá kamenná zřícenina Spišského hradu na zeleném návrší pod modrou oblohou",
+    "ll": [20.7417, 49.0008],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zřícenina od jednoho ničivého požáru",
+        "fact": "Hrad zpustl po ničivém požáru v roce 1780, po kterém ho už nikdo trvale neobýval; návštěvníci dnes procházejí rozlehlou zříceninou o rozloze necelých 4 hektarů.",
+        "source_url": "https://en.wikipedia.org/wiki/Spi%C5%A1_Castle",
+        "source_quote": "In 1780, the castle was destroyed in a fire.",
+        "voice": "Od požáru v 18. století žije uvnitř hradeb už jen vítr a turisté.",
+        "image_prompt": "Fotorealistický snímek zříceniny centrální věže Spišského hradu, kamenné zdi bez střechy, modrá obloha, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pevnost na hranici uherského státu",
+        "fact": "První písemná zmínka o Spišském hradě pochází z roku 1120, kdy sloužil jako pohraniční pevnost na severní hranici tehdejšího uherského státu a strážil obchodní cestu na Spiši.",
+        "source_url": "https://en.wikipedia.org/wiki/Spi%C5%A1_Castle",
+        "source_quote": "The oldest written reference to the castle is from 1120.",
+        "voice": "Hranici tehdy nehlídali celníci, ale posádka na kopci s výhledem do daleka.",
+        "image_prompt": "Fotorealistický letecký snímek rozlehlé zříceniny Spišského hradu na kopci nad okolní krajinou Spiše, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-mista-devin",
+    "country": "Slovensko",
+    "section": "Místa",
+    "topic": "Hrad Devín",
+    "headline": "Hrad na soutoku dvou velkých řek",
+    "fact": "Zřícenina hradu Devín stojí na skalním ostrohu přímo nad soutokem řek Dunaj a Morava, dnes na okraji Bratislavy.",
+    "source_url": "https://en.wikipedia.org/wiki/Dev%C3%ADn_Castle",
+    "source_quote": "The cliff (elevation 212 meters) is an ideal place for a fort due to its position at the confluence of the Danube and Morava rivers.",
+    "voice": "Odtud vidíš dvě řeky, jak se spojují v jednu, a hranici hned za nimi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zříceniny hradu Devín na skalním ostrohu nad soutokem Dunaje a Moravy, podzimní odpoledne, 16:9",
+    "ll": [16.9694, 48.1733],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pevnost, kterou vyhodil do povětří Napoleon",
+        "fact": "Za napoleonských válek francouzské dělostřelectvo v roce 1809 ostřelovalo Bratislavu a ustupující vojáci pak hrad Devín vyhodili do povětří — od té doby zůstává jen zříceninou.",
+        "source_url": "https://en.wikipedia.org/wiki/Dev%C3%ADn_Castle",
+        "source_quote": "Only in 1809, after the Siege of Pressburg, was the castle...destroyed by the retreating forces of Napoleon I of France.",
+        "voice": "Napoleonovi vojáci tu nechali víc trosek než celá staletí předtím.",
+        "image_prompt": "Fotorealistický detailní snímek zbořených kamenných zdí hradu Devín, mechem porostlé kameny, 16:9"
+      },
+      "kartograf": {
+        "headline": "Místo, kde Velká Morava hlídala hranici",
+        "fact": "V 9. století tu vzniklo velkomoravské opevnění, které chránilo obchodní cesty na hranici tehdejší říše — poloha na soutoku dvou řek dělala z Devína přirozený strážní bod už za dob římského limitu.",
+        "source_url": "https://en.wikipedia.org/wiki/Dev%C3%ADn_Castle",
+        "source_quote": "During the Great Moravian period, Devín was the center of a larger agglomeration.",
+        "voice": "Než sem přišli Slované, hlídali tu hranici říše už římští vojáci.",
+        "image_prompt": "Fotorealistický letecký snímek soutoku Dunaje a Moravy s hradním kopcem Devín, hraniční krajina, 16:9"
+      }
+    }
   },
   {
     "id": "sk-priroda-gerlachovsky-stit",
     "country": "Slovensko",
     "section": "Příroda",
+    "topic": "Gerlachovský štít a Vysoké Tatry",
     "headline": "Nejvyšší vrchol Karpat",
     "fact": "Gerlachovský štít ve Vysokých Tatrách je s výškou 2 655 metrů nejvyšší horou Slovenska i celých Karpat.",
     "voice": "Na vrchol se dostaneš jen s horským vůdcem.",
     "source_url": "https://cs.wikipedia.org/wiki/Gerlachovsk%C3%BD_%C5%A1t%C3%ADt",
     "source_quote": "2 655 m n. m., nejvyšší vrchol Tater i Karpat",
     "visual_type": "photo",
-    "image_prompt": "Skalnatý vrchol Gerlachovského štítu ve Vysokých Tatrách se zbytky sněhu"
+    "image_prompt": "Skalnatý vrchol Gerlachovského štítu ve Vysokých Tatrách se zbytky sněhu",
+    "ll": [20.1356, 49.1689],
+    "levels": {
+      "cestovatel": {
+        "fact": "Gerlachovský štít měří 2 654,4 m a je nejvyšším bodem nejen Slovenska, ale celého karpatského oblouku, který se táhne přes sedm zemí střední a východní Evropy.",
+        "source_url": "https://en.wikipedia.org/wiki/Gerlachovsk%C3%BD_%C5%A1t%C3%ADt",
+        "source_quote": "the highest peak in the High Tatras, in Slovakia, and in the Carpathian Mountains",
+        "voice": "Jeden vrchol, sedm zemí pod ním, a přece nejvyšší ze všech.",
+        "image_prompt": "Fotorealistický snímek skalnatého vrcholu Gerlachovského štítu za jasného dne, výhled na okolní karpatský hřeben, 16:9"
+      },
+      "kartograf": {
+        "fact": "Vysoké Tatry patří spolu s jižními Karpaty k jediným pohořím s opravdu alpským charakterem v celém 1200 kilometrů dlouhém karpatském oblouku — i proto tu na poměrně malé ploše najdeš 29 vrcholů vyšších než 2 500 metrů.",
+        "source_url": "https://en.wikipedia.org/wiki/High_Tatras",
+        "source_quote": "The High Tatras, having 29 peaks over 2,500 metres (8,200 ft) AMSL are, with the Southern Carpathians, the only mountain ranges with an alpine character and habitats in the entire 1,200 kilometres (750 mi) length of the Carpathian Mountains system.",
+        "voice": "Na tak malém prostoru se vejde skoro třicet vrcholů, které by jinde platily za velehory.",
+        "image_prompt": "Fotorealistický letecký snímek horského hřebene Vysokých Tater s množstvím ostrých vrcholů, 16:9"
+      }
+    }
   },
   {
     "id": "sk-priroda-demanovska-jaskyna",
     "country": "Slovensko",
     "section": "Příroda",
+    "topic": "Demänovská ledová jeskyně",
     "headline": "Ledová jeskyně v Nízkých Tatrách",
     "fact": "Demänovská ledová jeskyně patří mezi nejznámější zpřístupněné jeskyně Slovenska a její ledová výzdoba drží i v létě.",
     "voice": "I v horkém červenci si tam vezmi bundu.",
     "source_url": "https://cs.wikipedia.org/wiki/Dem%C3%A4novsk%C3%A1_ledov%C3%A1_jeskyn%C4%9B",
     "source_quote": "jedna z nejznámějších zpřístupněných jeskyní Slovenska s celoroční ledovou výzdobou",
     "visual_type": "photo",
-    "image_prompt": "Modře nasvícená ledová výzdoba uvnitř Demänovské ledové jeskyně"
+    "image_prompt": "Modře nasvícená ledová výzdoba uvnitř Demänovské ledové jeskyně",
+    "ll": [19.5667, 49.0019],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jeskyně známá už ze 13. století",
+        "fact": "Jeskyně je poprvé písemně zmíněná už v roce 1299, což z ní dělá jednu z nejstarších doložených jeskyní v Evropě; pro veřejnost byla nově zpřístupněna po rekonstrukci dřevěných schodů a zavedení elektrického osvětlení v roce 1952.",
+        "source_url": "https://en.wikipedia.org/wiki/Dem%C3%A4novsk%C3%A1_Ice_Cave",
+        "source_quote": "It was first mentioned in 1299 and is one of oldest known caves in Europe.",
+        "voice": "Než tam zavedli elektřinu, chodilo se dovnitř jen s pochodní v ruce.",
+        "image_prompt": "Fotorealistický snímek dřevěného schodiště uvnitř Demänovské jeskyně, ledové útvary, tlumené osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Většina jeskyně zůstává skryta i turistům",
+        "fact": "Z celkově zmapovaných chodeb je pro turisty zpřístupněno jen kolem 680 metrů — typický poměr u krasových jeskyní, kde většina podzemního systému zůstává kvůli bezpečnosti a ochraně přírody nepřístupná.",
+        "source_url": "https://en.wikipedia.org/wiki/Dem%C3%A4novsk%C3%A1_Ice_Cave",
+        "source_quote": "with 680 m accessible out of the 1,975 m.",
+        "voice": "Většina jeskyně zůstává schovaná ve tmě i před samotnými turisty.",
+        "image_prompt": "Fotorealistický letecký snímek Demänovské doliny s ústím jeskyně v horské krajině Nízkých Tater, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-priroda-slovensky-raj",
+    "country": "Slovensko",
+    "section": "Příroda",
+    "topic": "Slovenský ráj",
+    "headline": "Národní park plný roklí a žebříků",
+    "fact": "Národní park Slovenský ráj chrání husté kaňony a soutěsky, kterými se turisté musí prodírat po žebřících, řetězech a lávkách připevněných přímo do skály.",
+    "source_url": "https://en.wikipedia.org/wiki/Slovak_Paradise_National_Park",
+    "source_quote": "The park offers about 300 km of hiking trails, often equipped with ladders, chains and bridges.",
+    "voice": "Turistická značka tu občas vede rovnou po kovovém žebříku přilepeném ke skále.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek turisty šplhajícího po kovovém žebříku v úzké soutěsce se skalními stěnami a vodopádem, Slovenský ráj, 16:9",
+    "ll": [20.4167, 48.9167],
+    "levels": {
+      "cestovatel": {
+        "headline": "Podzemní svět s ledem, co drží celý rok",
+        "fact": "V krasovém podzemí parku leží kolem 350 jeskyní, veřejnosti je ale zpřístupněná jen Dobšinská ledová jeskyně, která je od roku 2000 na seznamu světového dědictví UNESCO.",
+        "source_url": "https://en.wikipedia.org/wiki/Slovak_Paradise_National_Park",
+        "source_quote": "The Slovak Paradise contains about 350 caves, but only Dobšiná Ice Cave...is open to the public.",
+        "voice": "Stovky jeskyní čekají potmě pod nohama turistů, kteří o nich ani netuší.",
+        "image_prompt": "Fotorealistický snímek ledové výzdoby uvnitř Dobšinské ledové jeskyně, modré nasvícení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Park vyhlášený kvůli unikátnímu terénu",
+        "fact": "Oblast Slovenského ráje byla přeřazena na národní park 18. ledna 1988 — krasový terén s dlouhodobým rozpouštěním vápence tu vytvořil hustotu roklí a vodopádů, jakou jinde v Karpatech nenajdete.",
+        "source_url": "https://en.wikipedia.org/wiki/Slovak_Paradise_National_Park",
+        "source_quote": "The area was recategorized into a national park on 18 January 1988.",
+        "voice": "Voda tu tisíce let trpělivě řezala kaňony, které dnes turisté zdolají za pár hodin.",
+        "image_prompt": "Fotorealistický letecký snímek krasové krajiny Slovenského ráje s hlubokými roklemi a hustým lesem, 16:9"
+      }
+    }
   },
   {
     "id": "sk-lide-stefanik",
     "country": "Slovensko",
     "section": "Lidé",
+    "topic": "Milan Rastislav Štefánik",
     "headline": "Astronom, generál a spoluzakladatel Československa",
     "fact": "Milan Rastislav Štefánik byl astronom, francouzský generál a politik, jenž patřil ke spoluzakladatelům Československa.",
     "voice": "Létal, pozoroval hvězdy a zakládal státy.",
     "source_url": "https://cs.wikipedia.org/wiki/Milan_Rastislav_%C5%A0tef%C3%A1nik",
     "source_quote": "astronom, generál a jeden ze zakladatelů Československa",
     "visual_type": "portrait",
-    "image_prompt": "Dobový černobílý portrét M. R. Štefánika v generálské uniformě"
+    "image_prompt": "Dobový černobílý portrét M. R. Štefánika v generálské uniformě",
+    "levels": {
+      "cestovatel": {
+        "fact": "Jako astronom pracoval na pařížské observatoři Meudon a v roce 1907 získal Prix Jules Janssen, nejvyšší ocenění Francouzské astronomické společnosti. V květnu 1915 za 1. světové války odletěl jako pilot 30 misí nad nepřátelským územím a později pomohl založit Československou národní radu.",
+        "source_url": "https://en.wikipedia.org/wiki/Milan_Rastislav_%C5%A0tef%C3%A1nik",
+        "source_quote": "In 1907, Štefánik received the Prix Jules Janssen, the highest award of the Société astronomique de France. ... In May 1915, he flew a total of 30 missions over enemy territory.",
+        "voice": "Ve dne počítal dráhy hvězd, v noci létal nad frontou.",
+        "image_prompt": "Fotorealistický dobový snímek vojenského letadla z první světové války na polním letišti, soumrak, 16:9"
+      },
+      "kartograf": {
+        "fact": "Štefánik zemřel 4. května 1919 při leteckém neštěstí u Bratislavy za nejasných okolností — oficiální verze mluví o přehřátí motoru při přistání, podle jiné teorie šlo o omylem sestřelené letadlo vlastní armádou. Jeho příběh ukazuje, jak snadno se v chaosu vznikajícího státu ztrácejí jasné odpovědi.",
+        "source_url": "https://en.wikipedia.org/wiki/Milan_Rastislav_%C5%A0tef%C3%A1nik",
+        "source_quote": "the wheels touched the landing path, after which the cooling water immediately started leaking. That caused the overheating of the engines. During the second landing attempt, one of the engines exploded, resulting in catastrophe.",
+        "voice": "Smrt zůstala nevyjasněná stejně jako mnohé jiné z chaosu vznikajícího státu.",
+        "image_prompt": "Fotorealistický dobový snímek trosek letadla na kopci nad Bratislavou, ranní mlha, 16:9"
+      }
+    }
   },
   {
     "id": "sk-lide-warhol",
     "country": "Slovensko",
     "section": "Lidé",
+    "topic": "Andy Warhol",
     "headline": "Kořeny krále pop-artu na východě",
     "fact": "Rodiče Andyho Warhola, ikony pop-artu, pocházeli z východoslovenské vesnice Miková; v Medzilaborcích má muzeum jeho děl.",
     "voice": "Z Mikové do New Yorku – a zpátky na plakáty.",
     "source_url": "https://cs.wikipedia.org/wiki/Andy_Warhol",
     "source_quote": "rodiče pocházeli z obce Miková na východním Slovensku",
     "visual_type": "photo",
-    "image_prompt": "Pestrobarevné pop-artové plátno ve stylu Andyho Warhola v galerii"
+    "image_prompt": "Pestrobarevné pop-artové plátno ve stylu Andyho Warhola v galerii",
+    "levels": {
+      "cestovatel": {
+        "headline": "Jméno vzniklé z tiskové chyby",
+        "fact": "Warhol se narodil v USA jako Andrew Warhola; příjmení si zkrátil poté, co ho jedna redakce omylem otiskla bez posledního písmene, a on si zkrácenou verzi ponechal.",
+        "source_url": "https://en.wikipedia.org/wiki/Andy_Warhol",
+        "source_quote": "born Andrew Warhola Jr.; August 6, 1928 – February 22, 1987",
+        "voice": "Stačila jedna tisková chyba a ze jména Warhola bylo najednou Warhol.",
+        "image_prompt": "Fotorealistický snímek staré tiskařské sazby s uměleckým podpisem, vintage papír, měkké světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Chudý kraj, co poslal rodinu za oceán",
+        "fact": "Warholovi rodiče patřili k rusínské menšině a emigrovali z Mikové na severovýchodě dnešního Slovenska do USA — typický příklad chudé horské oblasti, odkud na přelomu století odcházely celé rodiny za prací za oceán.",
+        "source_url": "https://en.wikipedia.org/wiki/Andy_Warhol",
+        "source_quote": "His parents were working-class Rusyn emigrants from Mikó, Austria-Hungary (now Miková in northeast Slovakia).",
+        "voice": "Kraj poslal do světa chudé rodiny, a jedna z nich mu nakonec přinesla světovou slávu zpátky.",
+        "image_prompt": "Fotorealistický snímek horské vesnice na východním Slovensku, dřevěné domy, podzimní krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-lide-dubcek",
+    "country": "Slovensko",
+    "section": "Lidé",
+    "topic": "Alexander Dubček",
+    "headline": "Reformátor, co dal komunismu lidskou tvář",
+    "fact": "Alexander Dubček se v lednu 1968 stal prvním tajemníkem Komunistické strany Československa a odstartoval reformní období známé jako Pražské jaro.",
+    "source_url": "https://cs.wikipedia.org/wiki/Alexander_Dub%C4%8Dek",
+    "source_quote": "byl Oldřichem Cerníkem navržen tehdejší první tajemník ÚV KSS Alexander Dubček",
+    "voice": "Slovák v čele Prahy nabídl zemi na pár měsíců úplně jiný směr.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový černobílý portrét Alexandra Dubčeka v obleku, vážný výraz, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Z vysoké funkce rovnou mezi dělníky",
+        "fact": "Po srpnové invazi 1968 byl Dubček postupně zbaven funkcí a v roce 1970 vyloučen z komunistické strany; následující roky pracoval jako řadový zaměstnanec lesní správy na Slovensku.",
+        "source_url": "https://cs.wikipedia.org/wiki/Alexander_Dub%C4%8Dek",
+        "source_quote": "v témže roce byl i vyloučen z KSČ",
+        "voice": "Muž, který ještě nedávno řídil celou zemi, najednou trávil dny v lese s pilou.",
+        "image_prompt": "Fotorealistický snímek lesní krajiny na Slovensku, dělník s pracovním nářadím mezi stromy, 16:9"
+      },
+      "kartograf": {
+        "headline": "Návrat do politiky po dvaceti letech",
+        "fact": "Po sametové revoluci byl Dubček 28. prosince 1989 zvolen předsedou Federálního shromáždění a tuto funkci zastával až do roku 1992 — jeho návrat symbolicky spojil reformy roku 1968 s pádem komunismu o dvacet let později.",
+        "source_url": "https://cs.wikipedia.org/wiki/Alexander_Dub%C4%8Dek",
+        "source_quote": "28. prosince 1989 byl zvolen předsedou Federálního shromáždění. V této funkci, kterou vykonával až do roku 1992",
+        "voice": "Stejný muž stál na politickém pódiu na začátku i na konci komunistické éry v Československu.",
+        "image_prompt": "Fotorealistický snímek jednací síně Federálního shromáždění v Praze na konci roku 1989, slavnostní atmosféra, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-kultura-fujara",
+    "country": "Slovensko",
+    "section": "Kultura & tradice",
+    "topic": "Fujara",
+    "headline": "Flétna vyšší než dospělý člověk",
+    "fact": "Fujara je obří slovenská lidová pastýřská píšťala dlouhá až 2 metry, kterou UNESCO zapsalo na seznam nehmotného kulturního dědictví lidstva.",
+    "source_url": "https://en.wikipedia.org/wiki/Fujara",
+    "source_quote": "The atypical design produces a deep, meditative timbre.",
+    "voice": "Jen tři dírky, a přesto dokáže zahrát celou melodii.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dřevěné fujary opřené o stěnu salaše, tradiční zdobení, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Fujara pochází ze středního Slovenska a hraje se na ni pomocí přefukování — hráč mění tón dechem, ne prsty na dírkách. Na seznam UNESCO byla poprvé zapsána už v roce 2005.",
+        "source_url": "https://en.wikipedia.org/wiki/Fujara",
+        "source_quote": "The fujara was added to the UNESCO list of Masterpieces of the Oral and Intangible Heritage of Humanity in 2005.",
+        "voice": "Prsty nehrají skoro nic, všechnu práci odvádí dech.",
+        "image_prompt": "Fotorealistický snímek pastýře hrajícího na fujaru na horské louce, letní den, 16:9"
+      },
+      "kartograf": {
+        "fact": "Fujara je typickým pastýřským nástrojem — vznikla tam, kde měli ovčáci na horských pastvinách dlouhé hodiny osamění a čas na zdokonalování hudebního umění, které vyžaduje roky cviku.",
+        "source_url": "https://en.wikipedia.org/wiki/Fujara",
+        "voice": "Samota na pastvinách dala vzniknout nástroji, na který nikam nespěcháš.",
+        "image_prompt": "Fotorealistický snímek horské salaše s ovcemi na pastvině slovenských hor, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-kultura-vychodna",
+    "country": "Slovensko",
+    "section": "Kultura & tradice",
+    "topic": "Folklórní festival Východná",
+    "headline": "Nejstarší celostátní folklórní festival na Slovensku",
+    "fact": "Folklórní festival ve Východné je nejstarším a největším celostátním folklórním festivalem s mezinárodní účastí na Slovensku.",
+    "source_url": "https://sk.wikipedia.org/wiki/Folkl%C3%B3rny_festival_V%C3%BDchodn%C3%A1",
+    "source_quote": "Folklórny festival Východná je najstarší a najrozsiahlejší celoslovenský festival s medzinárodnou účasťou na našom území.",
+    "voice": "Jedna horská obec si tu jednou do roka nasazuje kroj za celé Slovensko.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek folklórního průvodu v krojích na amfiteátru ve Východné, hory v pozadí, slunečný den, 16:9",
+    "ll": [20.0000, 49.1667],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vznikl z místní přehlídky jednoho souboru",
+        "fact": "Festival vznikl z místní přehlídky folklórního souboru Kriváň z Východné a postupně se rozrostl na celostátní slavnost, kam dnes přijíždějí soubory z celého Slovenska i ze zahraničí.",
+        "source_url": "https://ich.unesco.org/es/actividades/folklore-festival-vychodna-00331",
+        "source_quote": "Folklore Festival Východná is an international exhibition of traditional folklore in Slovakia, which respects the UNESCO Convention for the Safeguarding of the Intangible Cultural Heritage.",
+        "voice": "Jedna vesnická skupina zpěváků nakonec přivítala soubory z půl světa.",
+        "image_prompt": "Fotorealistický snímek lidových hudebníků a tanečníků na pódiu festivalu ve Východné, pestré kroje, 16:9"
+      },
+      "kartograf": {
+        "headline": "Proč zrovna podtatranská vesnice",
+        "fact": "Festival se koná v podtatranské obci Východná právě proto, že odlehlejší horské regiony jako Liptov a Orava si díky vzdálenosti od center udržely silnější lidové tradice než rychleji se měnící velká města.",
+        "source_url": "https://sk.wikipedia.org/wiki/Folkl%C3%B3rny_festival_V%C3%BDchodn%C3%A1",
+        "voice": "Čím dál od velkoměsta, tím déle vydrží kroj i písnička v rodinné truhle.",
+        "image_prompt": "Fotorealistický letecký snímek horské vesnice Východná pod Vysokými Tatrami, tradiční domy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-kultura-drotarstvo",
+    "country": "Slovensko",
+    "section": "Kultura & tradice",
+    "topic": "Drotárstvo",
+    "headline": "Řemeslo, které umí ohýbat drát bez svařování",
+    "fact": "Drotárstvo, tradiční slovenské zpracování drátu, bylo v roce 2019 zapsáno na seznam UNESCO jako nehmotné kulturní dědictví lidstva.",
+    "source_url": "https://ich.unesco.org/en/RL/drotarstvo-wire-craft-and-art-01478",
+    "source_quote": "Inscribed in 2019 (14.COM) on the Representative List of the Intangible Cultural Heritage of Humanity",
+    "voice": "Bez svářečky, bez pájky, jen ruce a kus drátu — a vznikne umělecké dílo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého drotára pletoucího ozdobný předmět z drátu, dílna, teplé světlo, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Řemeslníci, co chodili po Evropě s drátem na zádech",
+        "fact": "Slovenští drotáři na přelomu 19. a 20. století chodili po celé Evropě opravovat hrnce a nádobí drátem; jen v severozápadním Slovensku jich koncem 19. století bylo přes 150 vesnic.",
+        "source_url": "https://ich.unesco.org/en/RL/drotarstvo-wire-craft-and-art-01478",
+        "source_quote": "By the end of the 19th century, there were more than 150 wire craft villages in northwestern Slovakia.",
+        "voice": "Balík drátu na zádech, pár nástrojů v kapse, a mohl vyrazit třeba přes celý kontinent.",
+        "image_prompt": "Fotorealistický dobový snímek putujícího drotára s košem drátěného zboží na zádech na venkovské cestě, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řemeslo, co vzniklo z chudoby hor",
+        "fact": "Drotárstvo se rozvinulo v chudých horských oblastech severozápadního Slovenska a na Spiši, kde místní krajina neuživila rolníky jen ze zemědělství — drát se tak stal způsobem, jak si vydělat mimo sezónu.",
+        "source_url": "https://ich.unesco.org/en/RL/drotarstvo-wire-craft-and-art-01478",
+        "voice": "Tam, kde půda nestačila uživit rodinu, začal ji živit obyčejný kus drátu.",
+        "image_prompt": "Fotorealistický snímek horské vesnice na severozápadním Slovensku, chudé hospodářství, podzimní krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-umeni-drevene-kostoly",
+    "country": "Slovensko",
+    "section": "Umění",
+    "topic": "Dřevěné kostely slovenských Karpat",
+    "headline": "Kostely postavené bez jediného hřebíku",
+    "fact": "Dřevěné kostely slovenských Karpat jsou zapsány na seznamu UNESCO; některé evangelické kostely musely být postaveny bez kovových hřebíků.",
+    "source_url": "https://en.wikipedia.org/wiki/Wooden_churches_of_the_Slovak_Carpathians",
+    "voice": "Celá stavba drží pohromadě jen díky tesařskému umění, žádný kov.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního dřevěného kostela ve slovenských Karpatech, strmá šindelová střecha, horská krajina, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Zákaz kovových hřebíků u tzv. artikulárních evangelických kostelů (třeba v Hronseku či Ladomirové) plynul z přísných omezení po Šopronském sněmu, který evangelíkům dovolil stavět kostely jen za tvrdých podmínek.",
+        "source_url": "https://en.wikipedia.org/wiki/Wooden_churches_of_the_Slovak_Carpathians",
+        "voice": "Někde nesměl být v celé stavbě jediný kus kovu, a přesto drží dodnes.",
+        "image_prompt": "Fotorealistický snímek interiéru dřevěného artikulárního kostela, dřevěné trámy a lavice, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "fact": "Stavby bez hřebíků jsou přímý otisk náboženské a politické represe — omezení kladená mocí (žádný kov, krátká lhůta na stavbu) nutila stavitele k mimořádné tesařské zručnosti, která dnes dělá z kostelů světové unikáty.",
+        "source_url": "https://en.wikipedia.org/wiki/Wooden_churches_of_the_Slovak_Carpathians",
+        "voice": "Čím přísnější zákaz, tím důmyslnější řešení museli tesaři vymyslet.",
+        "image_prompt": "Fotorealistický snímek exteriéru dřevěného kostela s šindelovou střechou v horské krajině, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-umeni-fulla",
+    "country": "Slovensko",
+    "section": "Umění",
+    "topic": "Ľudovít Fulla",
+    "headline": "Zakladatel slovenské výtvarné moderny",
+    "fact": "Ľudovít Fulla, malíř a grafik narozený v Ružomberku, patří k zakladatelské generaci slovenského moderního umění.",
+    "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_Fulla",
+    "source_quote": "He is considered one of the most important figures of Slovak creative art in the 20th century.",
+    "voice": "Než se ve světě prosadila slovenská moderna, musel si ji nejdřív někdo vymyslet.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek galerie s barevnými obrazy ve stylu slovenské moderny inspirované lidovým uměním, denní světlo, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Studia v Praze, inspirace na venkově",
+        "fact": "Fulla se umělecky formoval v pražském modernistickém prostředí, ale do svých obrazů vědomě vracel motivy slovenského lidového umění a dětské kresby.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_Fulla",
+        "source_quote": "predominantly inspired by the Prague modernist milieu",
+        "voice": "Nasál ducha velkoměstské avantgardy a namaloval jím vesnici, ze které pocházel.",
+        "image_prompt": "Fotorealistický snímek malířského ateliéru s barevnými plátny inspirovanými lidovým uměním, štětce a palety, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malíř, co reprezentoval malý národ ve světě",
+        "fact": "Fulla žil v letech 1902 až 1980 a svá díla vystavoval na mezinárodních přehlídkách jako Benátské bienále — malá slovenská výtvarná scéna se tak díky jedné osobnosti dostala na stejná pódia jako umění velkých evropských zemí.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_Fulla",
+        "source_quote": "27 February 1902, Ružomberok – 21 April 1980, Bratislava",
+        "voice": "Jedno jméno dokázalo na mezinárodní scéně zastoupit celou generaci slovenských výtvarníků.",
+        "image_prompt": "Fotorealistický snímek benátského výstavního pavilonu bienále, historická architektura, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-umeni-danubiana",
+    "country": "Slovensko",
+    "section": "Umění",
+    "topic": "Danubiana Meulensteen Art Museum",
+    "headline": "Galerie tvarovaná jako loď uprostřed Dunaje",
+    "fact": "Muzeum moderního umění Danubiana stojí na poloostrově uprostřed Dunaje jižně od Bratislavy a jeho budova připomíná tvar lodi.",
+    "source_url": "https://de.wikipedia.org/wiki/Danubiana_Meulensteen_Art_Museum",
+    "source_quote": "Es befindet sich etwa 15 Kilometer vom Stadtzentrum entfernt auf dem halbinselförmigen Ende eines Dammes des Stausees von Gabčíkovo am Südufer der Donau.",
+    "voice": "Umění se tu dívá na řeku ze všech stran najednou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek moderní oválné budovy galerie Danubiana na poloostrově v řece Dunaj, sochy v okolní zahradě, 16:9",
+    "ll": [17.1900, 48.0206],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sochařská zahrada nad hladinou řeky",
+        "fact": "Kolem budovy se rozkládá sochařská zahrada o rozloze zhruba 8 000 m², kde je pod otevřeným nebem vystaveno na čtyři desítky soch.",
+        "source_url": "https://de.wikipedia.org/wiki/Danubiana_Meulensteen_Art_Museum",
+        "source_quote": "Rings um das Gebäude liegt der Skulpturengarten mit rund 8.000 Quadratmetern Fläche, wo etwa 40 verschiedene Skulpturen präsentiert werden.",
+        "voice": "Procházka mezi sochami tu vede po zahradě, kterou ze tří stran obepíná voda.",
+        "image_prompt": "Fotorealistický snímek sochařské zahrady u galerie Danubiana s moderními sochami a řekou v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Muzeum na hranici tří zemí",
+        "fact": "Muzeum otevřelo 9. září 2000 díky spolupráci slovenského galeristy Vincenta Polakoviče a nizozemského sběratele Gerarda Meulensteena; poloha na Dunaji blízko hranic Slovenska, Rakouska a Maďarska z něj dělá symbolický most mezi třemi zeměmi.",
+        "source_url": "https://de.wikipedia.org/wiki/Danubiana_Meulensteen_Art_Museum",
+        "source_quote": "Die Eröffnung erfolgte am 9. September 2000.",
+        "voice": "Jedna budova na řece dokáže spojit tři sousední státy víc než leckterá smlouva.",
+        "image_prompt": "Fotorealistický letecký snímek řeky Dunaj s hranicemi tří zemí a galerií Danubiana na poloostrově, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-sport-sagan",
+    "country": "Slovensko",
+    "section": "Sport",
+    "topic": "Peter Sagan a jeho tři tituly mistra světa",
+    "headline": "Cyklista, který vyhrál mistrovství světa třikrát za sebou",
+    "fact": "Slovenský cyklista Peter Sagan jako první muž v historii vyhrál mistrovství světa v silniční cyklistice tři roky po sobě (2015–2017).",
+    "source_url": "https://en.wikipedia.org/wiki/Peter_Sagan",
+    "source_quote": "the first male rider to accomplish this",
+    "voice": "Tři roky, tři duhové dresy mistra světa.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek profesionálního cyklisty v duhovém dresu mistra světa při závodě, dynamický pohyb, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sagan za kariéru vybojoval velké množství profesionálních vítězství a proslul agresivním stylem jízdy i výbušným finišem — dresu mistra světa se říká 'duhový' podle jeho pruhů.",
+        "source_url": "https://en.wikipedia.org/wiki/Peter_Sagan",
+        "voice": "Soupeři věděli, co přijde, a stejně to nedokázali zastavit.",
+        "image_prompt": "Fotorealistický snímek cyklisty v cílové rovince se zdviženýma rukama, dav v pozadí, 16:9"
+      },
+      "kartograf": {
+        "fact": "Saganova série tří titulů v řadě je v cyklistice extrémně vzácná, protože silniční závod závisí na spolupráci celého týmu a náhodných faktorech (pády, počasí) víc než individuální sporty — udržet vrchol tři roky proto vyžaduje mimořádnou konzistenci.",
+        "source_url": "https://en.wikipedia.org/wiki/Peter_Sagan",
+        "voice": "Tři sezóny bez ztráty formy — to se v pelotonu nepodaří skoro nikomu.",
+        "image_prompt": "Fotorealistický snímek pelotonu profesionálních cyklistů v zatáčce silniční trati, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-sport-ms2002-hokej",
+    "country": "Slovensko",
+    "section": "Sport",
+    "topic": "Hokejové zlato z MS 2002",
+    "headline": "Hokejové zlato ve Švédsku",
+    "fact": "Slovenský hokejový tým vyhrál v roce 2002 mistrovství světa v ledním hokeji, které se odehrálo ve švédském Göteborgu, Karlstadu a Jönköpingu.",
+    "source_url": "https://en.wikipedia.org/wiki/2002_IIHF_World_Championship",
+    "source_quote": "The 2002 IIHF World Championship was held between 26 April and 11 May 2002 in Gothenburg, Karlstad and Jönköping, Sweden.",
+    "voice": "Jedna sezóna, tři švédská města, a uprostřed toho všeho slovenské zlato.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hokejistů v modrých dresech slavících vítězství na ledě, konfety, arénové osvětlení, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rozhodující gól v samotném závěru finále",
+        "fact": "Rozhodující branku ve finále proti Rusku vstřelil v závěrečné minutě třetí třetiny útočník Peter Bondra, čímž Slovensko zvítězilo 4:3.",
+        "source_url": "https://en.wikipedia.org/wiki/2002_IIHF_World_Championship",
+        "source_quote": "Russia 3–4 Slovakia",
+        "voice": "Do poslední minuty nikdo nevěděl, komu takový večer nakonec patří.",
+        "image_prompt": "Fotorealistický snímek hokejisty v modrém dresu slavícího gól, ruce nahoře, aréna v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jediný slovenský titul mistra světa v hokeji",
+        "fact": "Od osamostatnění Slovenska v roce 1993 se slovenský tým stal mistrem světa v ledním hokeji jen jednou, právě v roce 2002 — malá země tak dokázala na krátkou chvíli porazit hokejové velmoci jako Rusko.",
+        "source_url": "https://en.wikipedia.org/wiki/2002_IIHF_World_Championship",
+        "source_quote": "(1st title)",
+        "voice": "Malá země si na pár týdnů uvěřila, že porazí kohokoli na ledě.",
+        "image_prompt": "Fotorealistický snímek zaplněného hokejového stadionu s fanoušky v modrých barvách, dramatické osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-sport-vlhova",
+    "country": "Slovensko",
+    "section": "Sport",
+    "topic": "Petra Vlhová",
+    "headline": "První slovenská olympijská medailistka v lyžování",
+    "fact": "Petra Vlhová se stala první slovenskou lyžařkou, která vybojovala olympijskou medaili, když v roce 2022 v Pekingu vyhrála zlato ve slalomu.",
+    "source_url": "https://en.wikipedia.org/wiki/Petra_Vlhov%C3%A1",
+    "source_quote": "She became the first Slovak alpine skier to win an Olympic medal by winning gold in slalom in Beijing.",
+    "voice": "Do osmého kola dne to vypadalo na zklamání, pak přišla jedna jízda, co změnila všechno.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek lyžařky v cíli slalomové trati se zvednutými pažemi, sněžné hory v pozadí, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Z osmého místa rovnou na zlato",
+        "fact": "Po první jízdě slalomu byla Vlhová na osmém místě se ztrátou přes půl sekundy na vedoucí lyžařku, ve druhém kole ale zajela nejrychlejší čas dne a zlato získala už jen s náskokem osmi setin sekundy.",
+        "source_url": "https://en.wikipedia.org/wiki/Petra_Vlhov%C3%A1",
+        "source_quote": "She was in 8th place after the first round, 0.72 seconds behind Lena Dürr, but then produced the fastest run on the second leg to win gold by 0.08 seconds ahead of reigning world champion Katharina Liensberger.",
+        "voice": "Necelá desetina vteřiny dělila zlato od stříbra — o to větší drama na druhé jízdě.",
+        "image_prompt": "Fotorealistický detailní snímek lyžařky v prudké zatáčce mezi slalomovými brankami, sníh vysoko, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá lyžařská země s velkým šampionem",
+        "fact": "Slovensko nemá tradici alpského lyžování srovnatelnou s Rakouskem nebo Švýcarskem, přesto právě odtud pochází olympijská vítězka ve slalomu — důkaz, že v individuálních sportech dokáže mimořádný talent překonat chybějící sportovní infrastrukturu celé země.",
+        "source_url": "https://en.wikipedia.org/wiki/Petra_Vlhov%C3%A1",
+        "voice": "Zázemí velkých lyžařských velmocí nahradila jedna výjimečná sportovkyně sama.",
+        "image_prompt": "Fotorealistický snímek horského lyžařského střediska na Slovensku, malý vlek, zasněžené kopce, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-jazyk-cestina",
+    "country": "Slovensko",
+    "section": "Jazyk & slova",
+    "topic": "Vzájemná srozumitelnost slovenštiny a češtiny",
+    "headline": "Jazyk, kterému Češi rozumí skoro beze zbytku",
+    "fact": "Slovenština je češtině natolik podobná, že jsou si tyto dva jazyky navzájem velmi dobře srozumitelné.",
+    "source_url": "https://en.wikipedia.org/wiki/Slovak_language",
+    "source_quote": "Slovak is closely related to Czech, to the point of very high mutual intelligibility",
+    "voice": "Slovák a Čech se domluví, i kdyby každý mluvil svým jazykem.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Vzájemná srozumitelnost pramení ze společného vývoje obou jazyků ze západoslovanského základu a z dlouhého soužití v jednom společném státě, kdy Slováci i Češi běžně slýchali oba jazyky v médiích.",
+        "source_url": "https://en.wikipedia.org/wiki/Slovak_language",
+        "voice": "Desítky let společných rozhlasových vln nakonec spojily uši víc než hranice rozdělily státy.",
+        "image_prompt": "Fotorealistický snímek starého rozhlasového přijímače v obývacím pokoji, retro interiér, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "fact": "Slovensko-česká srozumitelnost je vzácný případ, kdy dva samostatné úřední jazyky dvou různých států zůstávají prakticky vzájemně srozumitelné bez učení — na rozdíl třeba od jiných blízce příbuzných, ale málo srozumitelných jazykových dvojic.",
+        "source_url": "https://en.wikipedia.org/wiki/Slovak_language",
+        "voice": "Dvě sousední řeči zůstávají srozumitelné bez jediné hodiny učení.",
+        "image_prompt": "Fotorealistický snímek pohraniční krajiny mezi Českem a Slovenskem, řeka a kopce, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-jazyk-stur-kodifikacia",
+    "country": "Slovensko",
+    "section": "Jazyk & slova",
+    "topic": "Štúrova kodifikace spisovné slovenštiny",
+    "headline": "Jazyk kodifikovaný na jedné faře",
+    "fact": "Ľudovít Štúr se svými spolupracovníky se v červenci 1843 na faře v Hlbokém dohodli na podobě nové spisovné slovenštiny založené na středoslovenském nářečí.",
+    "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_%C5%A0t%C3%BAr",
+    "source_quote": "From 11 to 16 July 1843, at the parish house of J. M. Hurban in Hlboké, the leaders of the Slovak national movement – Štúr, J. M. Hurban, and M.M. Hodža – agreed on how to codify the new Slovak language standard",
+    "voice": "Během pár dní na venkovské faře vznikl jazyk, kterým dodnes mluví miliony lidí.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Piš, jak slyšíš",
+        "fact": "Nová spisovná slovenština se řídila fonetickým pravopisem — slova se psala tak, jak se vyslovují, na rozdíl od jazyků, kde se výslovnost od psané podoby výrazně liší.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_%C5%A0t%C3%BAr",
+        "source_quote": "he listed reasons for the introduction of the new language, which was based on central Slovak dialects and used phonetic spelling",
+        "voice": "Kdo uměl mluvit, uměl už napůl i psát podle nových pravidel.",
+        "image_prompt": "Fotorealistický detailní snímek rukou psaného slovenského textu z 19. století, brk a inkoust, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk jako důkaz samostatného národa",
+        "fact": "Štúrovci zvolili středoslovenské nářečí záměrně jako nejrozšířenější mezi Slováky — kodifikací vlastního spisovného jazyka chtěli dokázat, že Slováci tvoří samostatnou slovanskou větev, a ne jen součást jazykové jednoty s Čechy, jak tvrdila starší generace kolem Jána Kollára.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_%C5%A0t%C3%BAr",
+        "source_quote": "On 2 February 1843, in Pressburg, Štúr and his friends decided to create a new Slovak language standard (later used as a basis for contemporary literary Slovak), based on central Slovak dialects",
+        "voice": "Vlastní pravopis se stal politickým prohlášením dřív, než ho kdokoli stihl použít v básni.",
+        "image_prompt": "Fotorealistický snímek staré mapy slovenských nářečí střední Evropy z 19. století, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-jazyk-slabikotvorne-rl",
+    "country": "Slovensko",
+    "section": "Jazyk & slova",
+    "topic": "Slabikotvorné r a l",
+    "headline": "Souhlásky, které si hrají na samohlásky",
+    "fact": "Ve slovenštině dokážou souhlásky r a l vytvořit slabiku i bez jakékoli samohlásky vedle sebe — typickým příkladem je slovo 'vlk', které má jednu slabiku, přestože neobsahuje a, e, i, o ani u.",
+    "source_url": "https://www.istream.sk/toto-su-priklady-na-slabikotvorne-spoluhlasky-co-su-a-ako-ich-rozpoznat/",
+    "source_quote": "Jednoslabičné slová: vlk, trh, mrk. Slová s viac slabikami: prst, štrk, hrdlo, vrták.",
+    "voice": "Jedno písmeno tu dělá práci za celou samohlásku.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo bez klasické samohlásky uprostřed",
+        "fact": "Slova jako 'prst', 'vlk' nebo 'vrták' ukazují, že souhláska r nebo l dokáže stát uprostřed slova mezi dvěma dalšími souhláskami a přitom nést celou slabiku sama.",
+        "source_url": "https://www.istream.sk/toto-su-priklady-na-slabikotvorne-spoluhlasky-co-su-a-ako-ich-rozpoznat/",
+        "source_quote": "Jednoslabičné slová: vlk, trh, mrk. Slová s viac slabikami: prst, štrk, hrdlo, vrták.",
+        "voice": "Slovo 'prst' se obejde bez jediné samohlásky, a přesto ho každý vysloví napoprvé.",
+        "image_prompt": "Fotorealistický snímek dětské učebnice slovenštiny otevřené na stránce s příklady slov, školní prostředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rys, který slovenština sdílí s dalšími jazyky",
+        "fact": "Slabikotvorné r a l patří mezi charakteristické rysy více slovanských jazyků, ale slovenština i čeština je využívají obzvlášť často — právě proto v obou jazycích existují celé věty poskládané jen z takových souhlásek bez klasických samohlásek.",
+        "source_url": "https://www.istream.sk/toto-su-priklady-na-slabikotvorne-spoluhlasky-co-su-a-ako-ich-rozpoznat/",
+        "voice": "Sousední jazyky sdílejí stejný trik, jen ho každý používá v jiných slovech.",
+        "image_prompt": "Fotorealistický snímek staré jazykové mapy střední Evropy s vyznačenými slovanskými jazyky, archivní tón, 16:9"
+      }
+    }
   },
   {
     "id": "sk-jidlo-bryndza",
     "country": "Slovensko",
     "section": "Jídlo",
-    "headline": "Sýr chráněný Evropskou unií (aktualizováno)",
+    "topic": "Bryndza",
+    "headline": "Sýr chráněný Evropskou unií",
     "fact": "Bryndza je tradiční slovenský ovčí sýr, který od roku 2008 nese ochrannou známku CHZO Evropské unie.",
     "voice": "Na halušky bez ní se na Slovensku ani nesahá.",
     "source_url": "https://cs.wikipedia.org/wiki/Brynza",
     "source_quote": "chráněná od roku 2008",
     "visual_type": "photo",
-    "image_prompt": "Miska bílé bryndze s kouskem chleba, dřevěný stůl"
+    "image_prompt": "Miska bílé bryndze s kouskem chleba, dřevěný stůl",
+    "levels": {
+      "cestovatel": {
+        "headline": "Sýr, který se drtí a mele, ne krájí",
+        "fact": "Bryndza se podle oficiální specifikace vyrábí drcením a mletím zralého ovčího hrudkového sýra, který se následně smíchá se solí nebo speciálním slaným nálevem.",
+        "source_url": "https://www.indprop.gov.sk/swift_data/source/pdf/specifikacie_op_oz/slovenska_bryndza.pdf",
+        "source_quote": "Charakteristickým znakom výroby Slovenskej bryndze je drvenie a mletie vyzretého ovčieho alebo zmesi ovčieho a kravského hrudkového syra a ich miešanie so soľou alebo špeciálne pripraveným soľným roztokom",
+        "voice": "Recept zní jednoduše — sýr, sůl, mlýnek — a přesto ho jinde neumí napodobit stejně.",
+        "image_prompt": "Fotorealistický detailní snímek čerstvě vyrobené bryndze na dřevěné desce, salašnické prostředí, přírodní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sýr jako produkt salašnického chovu",
+        "fact": "Ovce plemene valaška a cigája, jejichž mléko se na bryndzu používá, se odedávna pasou na horských loukách slovenských Karpat — bryndza je tak přímým produktem salašnického chovu, který dokázal využít krajinu nevhodnou pro pěstování obilí.",
+        "source_url": "https://www.indprop.gov.sk/swift_data/source/pdf/specifikacie_op_oz/slovenska_bryndza.pdf",
+        "voice": "Kde neroste obilí, tam se dá alespoň pást ovce a vyrábět z jejího mléka sýr.",
+        "image_prompt": "Fotorealistický snímek stáda ovcí na horské pastvině slovenských Karpat, salaš v pozadí, letní den, 16:9"
+      }
+    }
   },
   {
     "id": "sk-jidlo-halusky",
     "country": "Slovensko",
     "section": "Jídlo",
+    "topic": "Bryndzové halušky",
     "headline": "Národní jídlo z brambor a bryndzy",
     "fact": "Bryndzové halušky s ovčí bryndzou a opečenou slaninou jsou považovány za slovenské národní jídlo.",
     "voice": "Recept se předává z babičky na vnučku.",
     "source_url": "https://cs.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky",
     "source_quote": "bramborové halušky s bryndzou, slovenské národní jídlo",
     "visual_type": "photo",
-    "image_prompt": "Talíř bryndzových halušek posypaných kousky opečené slaniny"
+    "image_prompt": "Talíř bryndzových halušek posypaných kousky opečené slaniny",
+    "levels": {
+      "cestovatel": {
+        "fact": "Bramborové halušky tvarem připomínají italské gnocchi a vznikly jako levné jídlo pro horaly, kteří v drsných horských podmínkách dokázali vypěstovat hlavně brambory. Tradičně se podávají s pitím žinčicou.",
+        "source_url": "https://en.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky",
+        "source_quote": "boiled lumps of potato dough similar in appearance to gnocchi",
+        "voice": "Tvarem gnocchi, chutí ale úplně jinde — v horách, ne ve Středomoří.",
+        "image_prompt": "Fotorealistický detailní snímek vařených bramborových halušek na talíři, 16:9"
+      },
+      "kartograf": {
+        "fact": "Bryndzové halušky jsou učebnicový příklad hornaté kuchyně: kombinace brambor (jediná spolehlivá plodina v drsném terénu) a ovčího sýra (produkt salašnického chovu na horských pastvinách) přesně kopíruje to, co dané prostředí umožňovalo vypěstovat.",
+        "source_url": "https://en.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky",
+        "voice": "Talíř halušek je vlastně jídelníček celého horského kraje na jednom místě.",
+        "image_prompt": "Fotorealistický snímek horské krajiny slovenských Karpat s malým hospodářstvím, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-jidlo-kapustnica",
+    "country": "Slovensko",
+    "section": "Jídlo",
+    "topic": "Kapustnica",
+    "headline": "Polévka, která zahajuje štědrovečerní večeři",
+    "fact": "Kapustnica je tradiční hustá slovenská polévka z kysaného zelí, která se na Štědrý den podává jako první chod štědrovečerní večeře.",
+    "source_url": "https://cs.wikipedia.org/wiki/Kapustnica",
+    "source_quote": "Kapustnica je tradiční slovenská hustá polévka. Připravuje se z kyselého zelí, podle kterého má pokrm název",
+    "voice": "Než na stůl dorazí cokoli dalšího, rodina už dávno voní kysaným zelím.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek misky kapustnice s uzeným masem a klobásou, štědrovečerní stůl, teplé světlo, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Dvě různé verze na jednom stole",
+        "fact": "Postní katolická verze kapustnice na Štědrý den se připravuje bez masa a zahušťuje se bílými haluškami, smetanou nebo bramborami, zatímco sváteční verze s masem obsahuje uzené maso i klobásu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Kapustnica",
+        "source_quote": "Do postní katolické vánoční (připravované na Štědrý den) se nedává maso, zahušťuje se například bílými hladkými haluškami, smetanou a rozetřenými bramborami.",
+        "voice": "Stejný název polévky, a přitom na různých rodinných stolech úplně jiná chuť.",
+        "image_prompt": "Fotorealistický snímek dvou misek kapustnice vedle sebe, jedna bez masa, druhá s uzeninou, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kysané zelí jako zásoba na celou zimu",
+        "fact": "Kysané zelí bylo odedávna základní zimní potravinou chudších vrstev obyvatelstva, protože fermentace dokázala uchovat zeleninu i vitamíny na měsíce dopředu — kapustnica je tak dokladem toho, jak venkovská kuchyně řešila nedostatek čerstvé zeleniny v zimě.",
+        "source_url": "https://cs.wikipedia.org/wiki/Kapustnica",
+        "voice": "Sud kysaného zelí ve sklepě znamenal jistotu, že rodina zimu přečká se zásobou vitamínů.",
+        "image_prompt": "Fotorealistický snímek dřevěného sudu s kysaným zelím ve staré venkovské spíži, teplé světlo, 16:9"
+      }
+    }
   },
   {
     "id": "sk-historie-velka-morava",
     "country": "Slovensko",
     "section": "Historie",
+    "topic": "Velká Morava a Konstantin s Metodějem",
     "headline": "Jádro Velkomoravské říše",
     "fact": "Území dnešního Slovenska tvořilo v 9. století jádro Velkomoravské říše, kam přišli věrozvěstové Konstantin a Metoděj.",
     "voice": "Odtud se šířilo písmo hlaholice.",
     "source_url": "https://cs.wikipedia.org/wiki/Velk%C3%A1_Morava",
     "source_quote": "raně středověký stát v 9. století na území dnešního Slovenska a Moravy",
     "visual_type": "illustration",
-    "image_prompt": "Historizující ilustrace velkomoravského hradiště s dřevěnými valy"
+    "image_prompt": "Historizující ilustrace velkomoravského hradiště s dřevěnými valy",
+    "levels": {
+      "cestovatel": {
+        "fact": "Na pozvání knížete Rastislava přišli věrozvěstové Konstantin a Metoděj. Konstantin vytvořil hlaholici a přeložil náboženské texty do staroslověnštiny — položil tak základ slovanského písemnictví.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Moravia",
+        "voice": "Dva bratři z Byzance přinesli písmo, které přežilo i zánik říše, jež si o ně řekla.",
+        "image_prompt": "Fotorealistický snímek rekonstruovaného velkomoravského hradiště s dřevěnými valy, ranní mlha, 16:9"
+      },
+      "kartograf": {
+        "fact": "Velká Morava byla prvním významným státním útvarem západních Slovanů — pozvání misionářů nebylo jen náboženské rozhodnutí, ale i politický tah: vlastní liturgický jazyk a písmo posilovaly nezávislost na sousedních franských a byzantských mocnostech.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Moravia",
+        "source_quote": "The first major state that was predominantly West Slavic to emerge.",
+        "voice": "Vlastní písmo bylo přesnější zbraní proti závislosti na sousedech než jakákoli armáda.",
+        "image_prompt": "Fotorealistický letecký snímek archeologického naleziště velkomoravského hradiště v krajině, 16:9"
+      }
+    }
   },
   {
     "id": "sk-historie-vznik-1993",
     "country": "Slovensko",
     "section": "Historie",
+    "topic": "Vznik samostatného Slovenska",
     "headline": "Samostatnost bez jediného výstřelu",
     "fact": "Samostatná Slovenská republika vznikla 1. ledna 1993 poklidným rozdělením Československa.",
     "voice": "Dějepis tomu říká „sametový rozvod“.",
     "source_url": "https://cs.wikipedia.org/wiki/Slovensko",
     "source_quote": "vznik samostatné Slovenské republiky 1. ledna 1993",
     "visual_type": "photo",
-    "image_prompt": "Slovenská vlajka vlající před budovou Národní rady v Bratislavě"
+    "image_prompt": "Slovenská vlajka vlající před budovou Národní rady v Bratislavě",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rozdělení bez referenda",
+        "fact": "Rozdělení Československa proběhlo bez referenda — přestože ústavní zákon referendum umožňoval, politici obou zemí ho nikdy vážně nenavrhli a o rozdělení rozhodli přímo v parlamentu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Z%C3%A1nik_%C4%8Ceskoslovenska",
+        "source_quote": "nebylo pořádání referenda o rozdělení federace podle tohoto zákona nikdy vážně navrženo",
+        "voice": "O osudu společného státu nakonec rozhodli politici, ne referendum občanů.",
+        "image_prompt": "Fotorealistický snímek jednací síně federálního parlamentu v Praze na počátku 90. let, prázdné lavice poslanců, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rozvod, který obešel se bez jediného výstřelu",
+        "fact": "Zahraniční média nazvala klidné rozdělení Československa 'sametovým rozvodem' — Česko a Slovensko se tak 1. ledna 1993 stala dvěma samostatnými nástupnickými státy jedné federace, aniž by došlo k jakémukoli ozbrojenému incidentu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Z%C3%A1nik_%C4%8Ceskoslovenska",
+        "source_quote": "Rozdělení Československa, v anglických médiích známé jako „Sametový rozvod“ (\"Velvet Divorce\")",
+        "voice": "Jedna federace zmizela z mapy a hned nazítří ji nahradily dva sousední státy.",
+        "image_prompt": "Fotorealistický snímek staré mapy střední Evropy s nově vyznačenou hranicí mezi Českem a Slovenskem, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "sk-historie-snp",
+    "country": "Slovensko",
+    "section": "Historie",
+    "topic": "Slovenské národní povstání",
+    "headline": "Ozbrojený odpor uprostřed války",
+    "fact": "Slovenské národní povstání vypuklo 29. srpna 1944 jako ozbrojený odpor proti vstupu německého wehrmachtu na slovenské území, jeho centrem se stala Banská Bystrica.",
+    "source_url": "https://en.wikipedia.org/wiki/Slovak_National_Uprising",
+    "source_quote": "the town of Banská Bystrica as its centre.",
+    "voice": "Na dva měsíce se jedno město stalo srdcem ozbrojeného odporu uprostřed války.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový snímek partyzánů a vojáků na náměstí v Banské Bystrici v roce 1944, zamračená obloha, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Šedesát tisíc vojáků proti přesile",
+        "fact": "Do bojů se zapojilo celkem kolem 60 000 povstaleckých vojáků a až 18 000 partyzánů, mezi nimiž bojovali i zahraniční dobrovolníci, například z Francie.",
+        "source_url": "https://en.wikipedia.org/wiki/Slovak_National_Uprising",
+        "source_quote": "In total: 60,000 rebelling soldiers 7,000–18,000 partisans",
+        "voice": "Proti přesile stálo tehdy skoro osmdesát tisíc lidí ochotných riskovat vše.",
+        "image_prompt": "Fotorealistický dobový snímek povstalecké armády pochodující horskou krajinou středního Slovenska, 1944, 16:9"
+      },
+      "kartograf": {
+        "headline": "Povstání, které padlo, ale nebylo zbytečné",
+        "fact": "Německé jednotky povstání potlačily 27. října 1944 dobytím Banské Bystrice a velitel Rudolf Viest v noci na 28. října nařídil přechod na partyzánský způsob boje — vojenská porážka ale politicky posílila poválečné postavení Československa mezi vítěznými spojenci.",
+        "source_url": "https://en.wikipedia.org/wiki/Slovak_National_Uprising",
+        "source_quote": "With the capture of Banská Bystrica, the uprising against the 'protective power' and the Tiso regime collapsed.",
+        "voice": "Prohraná bitva se nakonec počítala jako výhra u jednacího stolu po válce.",
+        "image_prompt": "Fotorealistický letecký snímek horské krajiny středního Slovenska s partyzánskou základnou, podzim 1944, 16:9"
+      }
+    }
   }
 ]

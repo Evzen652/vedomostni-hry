@@ -59,7 +59,6 @@
   const ICO_BOOK  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 5c3-1.2 6-1.2 8 0v15c-2-1.2-5-1.2-8 0zM20 5c-3-1.2-6-1.2-8 0v15c2-1.2 5-1.2 8 0z" fill="#fdf7ea" stroke="#2a7f7f" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
   const _MEDALCOL = ["#d9a441","#b9b3a6","#c08457"];
   function medalSvg(i){ const c=_MEDALCOL[i]; if(!c) return (i+1)+"."; return `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M8 3l3 6M16 3l-3 6" stroke="#e2725b" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="6.2" fill="${c}" stroke="#00000022" stroke-width="1"/><circle cx="12" cy="15" r="3" fill="#ffffff40"/></svg>`; }
-  function arrowSvg(deg){ return `<svg style="width:1em;height:1em;vertical-align:-0.14em;display:inline-block;transform:rotate(${deg}deg)" viewBox="0 0 24 24" fill="none"><path d="M12 5v13M6 12l6 6 6-6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
   function handArrowSvg(flip){ return `<svg style="width:1.5em;height:.95em;vertical-align:-.15em;display:inline-block${flip?";transform:scaleX(-1)":""}" viewBox="0 0 40 24" fill="none"><path d="M2.5 13c9-3.4 21-2.6 29-2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M23.5 4.5c3.5 2.4 6.7 4.4 10 6.4-3.4 2.2-7 4-10.8 6.4" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
   function checkSvg(){ return `<svg viewBox="0 0 40 32" fill="none"><path d="M4 17c3 3.5 6 7.5 9.5 9.5C19.5 20 25 13.5 35 5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
   function flagStamp(cc, cls){ return `<img class="${cls||"qz-stamp"}" src="assets/country-${cc}.jpg" alt="" onerror="this.style.display='none'">`; }
@@ -76,7 +75,6 @@
               school:false, timer:0, saveId:null };
 
   const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  const fmt = n => (typeof n==="number" ? n.toLocaleString("cs") : n);
   const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
   const pick = a => Array.isArray(a) ? a[Math.floor(Math.random()*a.length)] : a;
   function resolveQuip(quip, band){ if(quip==null) return null; if(typeof quip==="string") return quip; return quip[band] ?? quip.default ?? Object.values(quip)[0]; }
@@ -86,7 +84,21 @@
   function cur(){ return S.players[S.turn] || {name:"Ty", band:S.band, color:COLORS[0], score:0, streak:0, side:"dole"}; }
   function bandOf(){ return S.mode==="party" ? cur().band : S.band; }
   function qCurrent(){ return S.mode==="party" ? S.order[S.qServed % S.order.length] : S.order[S.idx]; }
-  function ageBand(age){ const a=parseInt(age,10); return (!isNaN(a) && a<15) ? "deti" : "dospeli"; }
+
+  // ---- zapamatovaná jména hráčů (jen párty — sólo/škola mají pevné jméno) ----
+  const NAMES_KEY = "hricka_quiz_names";
+  const NAMES_MAX = 12;
+  function loadRecentNames(){ try { return JSON.parse(localStorage.getItem(NAMES_KEY)||"[]"); } catch(e){ return []; } }
+  function rememberNames(names){
+    try {
+      const prev = loadRecentNames();
+      const merged = [...names, ...prev].filter(n=>n && n.trim());
+      // odstraň duplicity bez ohledu na velikost písmen, ponech první (nejnovější) výskyt
+      const seen = new Set(), out = [];
+      for (const n of merged) { const k=n.trim().toLowerCase(); if(!seen.has(k)){ seen.add(k); out.push(n.trim()); } }
+      localStorage.setItem(NAMES_KEY, JSON.stringify(out.slice(0, NAMES_MAX)));
+    } catch(e){}
+  }
 
   // ---- progres / mastery (sdílený s glóbem přes localStorage) ----
   const PROGRESS_KEY = "hricka_progress";
@@ -140,7 +152,7 @@
     return { mode:S.mode, school:!!S.school, band:S.band, cc:(S.sel&&S.sel.cc)||"ru", section:(S.sel&&S.sel.section)||null,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
       turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, rotate:S.rotate, timer:S.timer||0,
-      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score, streak:p.streak, age:p.age })),
+      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score, streak:p.streak })),
       sessionMastered:sessionMastered.slice() };
   }
   function autosave(){
@@ -194,11 +206,10 @@
     const quipText=pick((data.fondy&&data.fondy.timeout)||["Čas vypršel!"]);
     say(quipText); if(S.voice) speakTTS("Čas vypršel! "+quipText);
     revealPic();
-    const correctLabel = q.type==="estimate" ? (fmt(q.numeric_answer)+" "+esc(q.unit||"")) : esc(q.answer);
     const box=body.querySelector("#qz-box");
-    const allowSteal = S.mode==="party" && S.steal && q.type!=="estimate" && S.players.length>1;
+    const allowSteal = S.mode==="party" && S.steal && S.players.length>1;
     box.innerHTML = `
-      <div class="qz-ans two"><div class="qz-a ok locked">${correctLabel}<small>Správná odpověď</small></div>
+      <div class="qz-ans two"><div class="qz-a ok locked">${esc(q.answer)}<small>Správná odpověď</small></div>
       <div class="qz-a bad locked">${ICO_CLOCK}<small>ČAS VYPRŠEL</small></div></div>
       <div class="qz-hlaska"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}"</div></div>
       ${allowSteal ? stealHtml(q, "__timeout__") : frowHtml(q)}`;
@@ -627,20 +638,22 @@
   function ensureSetup(){
     if(S.players.length>=2) return;
     S.players = [
-      { name:"", age:"9",  band:"deti",    color:COLORS[0], side:"dole",   score:0, streak:0 },
-      { name:"", age:"40", band:"dospeli", color:COLORS[1], side:"nahoře", score:0, streak:0 }
+      { name:"", band:"deti",    color:COLORS[0], side:"dole",   score:0, streak:0 },
+      { name:"", band:"dospeli", color:COLORS[1], side:"nahoře", score:0, streak:0 }
     ];
   }
   function renderSetup(){
     ensureSetup();
-    say("Sesbírej posádku — jména, věk, kde kdo sedí.");
+    say("Sesbírej posádku — jména a věkové pásmo.");
     document.getElementById("qz-shell").style.transform="";
+    const recentNames = loadRecentNames();
     const prow = (p,i) => `<div class="qz-prow" data-i="${i}">
       <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
-      <input class="qz-pname-in" placeholder="jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name">
-      <input class="qz-page-in" type="number" placeholder="věk" value="${esc(p.age||"")}" data-f="age">
-      <span class="qz-bandtag ${p.band}">${p.band==="deti"?"děti":"dospělí"}</span>
-      <span class="qz-sides">${SIDES.map(s=>`<button class="qz-side${p.side===s.k?" on":""}" data-side="${s.k}" title="${s.k}">${arrowSvg(s.deg)}</button>`).join("")}</span>
+      <input class="qz-pname-in" placeholder="jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off">
+      <span class="qz-bandtoggle">
+        <button class="qz-bandbtn deti${p.band==="deti"?" on":""}" data-band="deti">děti</button>
+        <button class="qz-bandbtn dospeli${p.band==="dospeli"?" on":""}" data-band="dospeli">dospělí</button>
+      </span>
       ${S.players.length>2?`<button class="qz-prem" data-rem="${i}" title="odebrat">✕</button>`:""}
     </div>`;
     const _cLabel3=esc(COUNTRY);
@@ -650,8 +663,9 @@
       ${pickHeadHtml(steps)}
       <h2>${ICO_SPARK} Nová výprava — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <div class="qz-setcard">
-        <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">věk určí pásmo i hlášky</span></h3>
+        <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">podle věku přitvrdíme, nebo přimhouříme oko</span></h3>
         <div id="qz-players">${S.players.map(prow).join("")}</div>
+        <datalist id="qz-names-list">${recentNames.map(n=>`<option value="${esc(n)}">`).join("")}</datalist>
         ${S.players.length<6?`<button class="qz-addp" id="qz-addp">+ přidat hráče</button>`:""}
       </div>
       <div class="qz-setrow">
@@ -682,12 +696,11 @@
     bindPickHead(steps);
     body.querySelectorAll(".qz-prow").forEach(row => {
       const i = +row.dataset.i;
-      row.querySelector('[data-f="name"]').addEventListener("input", e => { S.players[i].name=e.target.value; row.querySelector(".qz-pav").textContent=(e.target.value||"?")[0]; });
-      row.querySelector('[data-f="age"]').addEventListener("input", e => { S.players[i].age=e.target.value; S.players[i].band=ageBand(e.target.value); const tag=row.querySelector(".qz-bandtag"); tag.className="qz-bandtag "+S.players[i].band; tag.textContent=S.players[i].band==="deti"?"děti":"dospělí"; });
-      row.querySelectorAll(".qz-side").forEach(b => b.addEventListener("click", () => { S.players[i].side=b.dataset.side; renderSetup(); }));
+      row.querySelector('[data-f="name"]').addEventListener("input", e => { S.players[i].name=e.target.value; row.querySelector(".qz-pav").textContent=(e.target.value||"?")[0]; e.target.classList.remove("err"); });
+      row.querySelectorAll(".qz-bandbtn").forEach(b => b.addEventListener("click", () => { S.players[i].band=b.dataset.band; renderSetup(); }));
       const rem=row.querySelector(".qz-prem"); if(rem) rem.addEventListener("click", () => { S.players.splice(+rem.dataset.rem,1); renderSetup(); });
     });
-    const add=body.querySelector("#qz-addp"); if(add) add.addEventListener("click", () => { const i=S.players.length; S.players.push({ name:"", age:"", band:"dospeli", color:COLORS[i%COLORS.length], side:SIDES[i%SIDES.length].k, score:0, streak:0 }); renderSetup(); });
+    const add=body.querySelector("#qz-addp"); if(add) add.addEventListener("click", () => { const i=S.players.length; S.players.push({ name:"", band:"dospeli", color:COLORS[i%COLORS.length], side:SIDES[i%SIDES.length].k, score:0, streak:0 }); renderSetup(); });
     body.querySelectorAll("[data-rounds]").forEach(b => b.addEventListener("click", () => { S.totalRounds=+b.dataset.rounds; renderSetup(); }));
     body.querySelectorAll("[data-timer]").forEach(b => b.addEventListener("click", () => { S.timer=+b.dataset.timer; renderSetup(); }));
     body.querySelectorAll(".qz-opt").forEach(o => o.addEventListener("click", () => {
@@ -699,8 +712,18 @@
     }));
     body.querySelector("#qz-setup-go").addEventListener("click", () => {
       const named = S.players.filter(p=>(p.name||"").trim());
-      if(named.length<2){ say("Potřebuju aspoň dvě jména, ať vím, koho vítat."); return; }
+      if(named.length<2){
+        say("Potřebuju aspoň dvě jména, ať vím, koho vítat.");
+        let first=null;
+        body.querySelectorAll(".qz-prow").forEach(row => {
+          const inp=row.querySelector('[data-f="name"]');
+          if(!inp.value.trim()){ inp.classList.add("err"); if(!first) first=inp; }
+        });
+        if(first){ first.scrollIntoView({block:"center", behavior:REDUCED_MOTION?"auto":"smooth"}); first.focus(); }
+        return;
+      }
       S.players = named.map((p,i)=>({ ...p, name:p.name.trim(), color:COLORS[i%COLORS.length], score:0, streak:0 }));
+      rememberNames(S.players.map(p=>p.name));
       startParty();
     });
   }
@@ -774,33 +797,20 @@
     const total = S.mode==="party" ? S.totalRounds*S.players.length : S.order.length;
     const n = S.mode==="party" ? (S.qServed+1) : (S.idx+1);
     say(q.quip_question ? "„"+resolveQuip(q.quip_question,b)+"“" : "Tak schválně…");
-    let ansHtml, answers=null;
-    if(q.type==="estimate"){
-      ansHtml = `<div class="qz-est"><input id="qz-est-input" type="number" inputmode="numeric" placeholder="tvůj tip"><span class="unit">${esc(q.unit||"")}</span><button id="qz-est-go">Tipnout</button></div>`;
-    } else {
-      answers = shuffle([q.answer, ...(q.distractors||[])]);
-      ansHtml = `<div class="qz-ans${answers.length<=2?" two":""}">${answers.map((a,i)=>`<button class="qz-a" data-i="${i}">${esc(a)}<small>${"ABCD"[i]||""}</small></button>`).join("")}</div>`;
-    }
+    const answers = shuffle([q.answer, ...(q.distractors||[])]);
+    const ansHtml = `<div class="qz-ans${answers.length<=2?" two":""}">${answers.map((a,i)=>`<button class="qz-a" data-i="${i}">${esc(a)}<small>${"ABCD"[i]||""}</small></button>`).join("")}</div>`;
     body.innerHTML = `<div class="qz-screen qz-play">
       ${topHtml(n,total)}
       <div class="qz-box" id="qz-box">
         <div class="qz-timerbar" id="qz-timerbar" style="display:none"><div></div></div>
-        <div class="qz-meta">${flagStamp(q.cc)} ${esc(COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff" title="obtížnost: ${DIFF_LABEL[q.difficulty||1]||"těžká"}">${ICO_STAR_DIFF.repeat(q.difficulty||1)}<i>${DIFF_LABEL[q.difficulty||1]||"těžká"}</i></span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
+        <div class="qz-meta">${esc(COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff" title="obtížnost: ${DIFF_LABEL[q.difficulty||1]||"těžká"}">${ICO_STAR_DIFF.repeat(q.difficulty||1)}<i>${DIFF_LABEL[q.difficulty||1]||"těžká"}</i></span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
         <div class="qz-q">${esc(q.question)}</div>
         ${ansHtml}
       </div>
       ${picframeHtml(q)}
     </div>`;
     wirePic(); wireTop(q); mountGlobeMedal(q.cc);
-    if(q.type==="estimate"){
-      const inp=body.querySelector("#qz-est-input");
-      const go=()=>submitEstimate(q, parseFloat(inp.value));
-      body.querySelector("#qz-est-go").addEventListener("click", go);
-      inp.addEventListener("keydown", e=>{ if(e.key==="Enter") go(); });
-      setTimeout(()=>inp.focus(), 50);
-    } else {
-      body.querySelectorAll("#qz-box .qz-a").forEach(btn => btn.addEventListener("click", () => answer(q, answers[+btn.dataset.i])));
-    }
+    body.querySelectorAll("#qz-box .qz-a").forEach(btn => btn.addEventListener("click", () => answer(q, answers[+btn.dataset.i])));
     speakCurrent(q);
     requestWake(); autosave(); startTimer(q);
   }
@@ -839,15 +849,15 @@
     revealPic();
     if(gold){ const gf=document.createElement("div"); gf.className="qz-goldflash"; document.getElementById("qz-shell").appendChild(gf); setTimeout(()=>gf.remove(),950); }
     const box=body.querySelector("#qz-box");
-    const allowSteal = S.mode==="party" && S.steal && !correct && !gold && q.type!=="estimate" && S.players.length>1;
+    const allowSteal = S.mode==="party" && S.steal && !correct && !gold && S.players.length>1;
     box.innerHTML = `
       <div class="qz-ans ${correct?"one":"two"}">
         <div class="qz-a ok locked">${esc(q.answer)}<small>Správná odpověď</small></div>
         ${correct?"":`<div class="qz-a bad locked">${esc(choice)}<small>${S.mode==="party"?esc(P.name):"TVŮJ TIP"}</small></div>`}
       </div>
       <div class="qz-hlaska${gold?" gold":""}">
-        ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
         <div class="qz-ht">„${esc(quipText||"")}"</div>
+        ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
       </div>
       ${masteredNow?`<div class="qz-masternote">${ICO_GLOBE} <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ${ICO_SPARK}</div>`:""}
       ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`;
@@ -877,41 +887,24 @@
   }
   function finishSteal(q){ const st=body.querySelector("#qz-steal"); if(st){ const tmp=document.createElement("div"); tmp.innerHTML=frowHtml(q); st.replaceWith(tmp.firstElementChild); } wireFrow(q); }
 
-  function submitEstimate(q, val){
-    if(S.answered || isNaN(val)) return; S.answered=true; clearTimer();
-    const b=bandOf(), P=cur(), ans=q.numeric_answer, base=(q.difficulty||1)*100;
-    const rel=Math.abs(val-ans)/Math.max(1,Math.abs(ans));
-    let gained=0, close=false;
-    if(rel<=0.15){ gained=base; close=true; P.streak++; }
-    else if(rel<=0.4){ gained=Math.round(base/2); close=true; P.streak=0; }
-    else { P.streak=0; }
-    P.score+=gained; updateScorePill(S.turn);
-    const masteredNow = close ? recordCorrect(q.cc) : false;
-    const quipText=resolveQuip(close?q.quip_correct:q.quip_wrong, b)||"";
-    // bublina hostitele = krátký verdikt; vtipná hláška žije v panelu HLÁŠKA (ať se netočí dvakrát)
-    say(close ? "Dobrý odhad!" : "Tentokrát vedle."); if(S.voice) speakTTS(quipText);
-    if(masteredNow && S.voice) speakTTS((COUNTRY_BY_CC[q.cc]||"Země")+" je zvládnutá! Rozsvítila se na glóbu.");
-    revealPic();
-    const box=body.querySelector("#qz-box");
-    box.innerHTML = `
-      <div class="qz-estline"><span>Tip${S.mode==="party"?" ("+esc(P.name)+")":""}: <b>${fmt(val)} ${esc(q.unit||"")}</b></span><span>Správně: <b>${fmt(ans)} ${esc(q.unit||"")}</b></span></div>
-      <div class="qz-hlaska">${gained?`<div class="qz-hl points">${pointsLabel(gained)}</div>`:""}<div class="qz-ht">„${esc(quipText)}"</div></div>
-      ${masteredNow?`<div class="qz-masternote">${ICO_GLOBE} <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ${ICO_SPARK}</div>`:""}
-      ${frowHtml(q)}`;
-    wireFrow(q);
-  }
-
   // „Více o…" je u KAŽDÉ odpovědi. Když otázka nemá navázanou kartu z Glóbu,
   // složí se náhradní karta z otázky samotné (její fotka + vysvětlení).
+  // bez karty z Glóbu nemáme žádný text navíc — vysvětlení už čte hráč pod odpovědí,
+  // takže tahle karta záměrně BEZ textu opakuje jen fotku a téma jako pohlednici
   function openMore(q){
     const c = q.source_card && data.cardsById[q.source_card];
     if(c) return openCard(q.source_card);
-    cardOverlay({ headline: q.answer || q.question, fact: q.explanation, source_url: q.source_url },
-                `img/${esc(q.id)}.jpg`, true);
+    cardOverlay({ headline: q.answer || q.question }, `img/${esc(q.id)}.jpg`, true);
   }
+  // Karta má vždycky základní fakt + dvě hlubší úrovně (cestovatel, kartograf) — ty appka
+  // dřív vůbec nečetla. Otázka svoje "explanation" často odvozuje právě ze základního faktu
+  // karty, takže "Více o..." by ho jen zopakovalo. Nejhlubší dostupná úroveň je typicky úplně
+  // jiný úhel pohledu (ne přeformulovaná stejná věta), takže se s vysvětlením prakticky nekryje.
   function openCard(id){
     const c=data.cardsById[id]; if(!c) return;
-    cardOverlay(c, `img/${esc(c.id)}.jpg`, c.visual_type!=="typographic");
+    const deep = c.levels && (c.levels.kartograf || c.levels.cestovatel);
+    const shown = deep ? { ...c, headline:deep.headline||c.headline, fact:deep.fact, voice:deep.voice } : c;
+    cardOverlay(shown, `img/${esc(c.id)}.jpg`, c.visual_type!=="typographic");
   }
   function cardOverlay(c, imgSrc, hasImg){
     const ov=document.createElement("div"); ov.className="qz-cardov";
@@ -919,7 +912,7 @@
       ${hasImg?`<img class="qz-cardimg" src="${imgSrc}" alt="" onerror="this.style.display='none'">`:""}
       <div class="qz-cardbody">
         <h3>${esc(c.headline||c.country||"")}</h3>
-        <p>${esc(c.fact||"")} ${(SHOW_SOURCE_LINK && c.source_url)?`<a href="${esc(c.source_url)}" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none">${ICO_LINK} zdroj</a>`:""}</p>
+        ${c.fact?`<p>${esc(c.fact)} ${(SHOW_SOURCE_LINK && c.source_url)?`<a href="${esc(c.source_url)}" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none">${ICO_LINK} zdroj</a>`:""}</p>`:""}
         ${c.voice?`<p class="qz-cardvoice">${esc(c.voice)}</p>`:""}
         <button class="qz-cardclose">Zpět ke hře</button>
       </div>
