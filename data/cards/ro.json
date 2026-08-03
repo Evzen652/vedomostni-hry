@@ -1,0 +1,860 @@
+[
+  {
+    "id": "ro-mista-bukurest",
+    "country": "Rumunsko",
+    "section": "Místa",
+    "topic": "Bukurešť",
+    "headline": "Paříž východu",
+    "fact": "Bukurešť si na přelomu 19. a 20. století vysloužila přezdívku 'Paříž východu' díky secesní architektuře a bulváru Calea Victoriei, který připomínal pařížské Champs-Élysées.",
+    "source_url": "https://en.wikipedia.org/wiki/Bucharest",
+    "source_quote": "the extravagant architecture and cosmopolitan high culture of this period won Bucharest the nickname of 'Paris of the East', with the Calea Victoriei as its Champs-Élysées",
+    "voice": "Bulvár, po kterém by se nestyděl projít ani Pařížan.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bulváru Calea Victoriei v Bukurešti, secesní paláce, stromořadí, večerní světlo, bez textu, 16:9",
+    "ll": [26.1025, 44.4268],
+    "tags": ["regionalni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obří palác, který vidíš z vesmíru",
+        "fact": "V centru Bukurešti stojí Palác parlamentu — s podlahovou plochou 365 000 m² je největší civilní administrativní budovou světa a patří i k nejtěžším stavbám na planetě.",
+        "source_url": "https://en.wikipedia.org/wiki/Palace_of_the_Parliament",
+        "source_quote": "the largest civilian administrative building in the world ... floor area of 365,000 m2 ... the heaviest building in the world",
+        "voice": "Budova tak obří, že se do ní vejde skoro celé staré město.",
+        "image_prompt": "Fotorealistický snímek Paláce parlamentu v Bukurešti, monumentální bílá fasáda, široké schodiště, jasná obloha, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Diktátorský sen, který spolkl čtvrť starého města",
+        "fact": "Aby vznikl prostor pro Palác parlamentu, nechal Ceaușescu zbourat rozsáhlou historickou čtvrť Bukurešti — megalomanská stavba je tak čitelným otiskem komunistické moci v mapě města dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Palace_of_the_Parliament",
+        "voice": "Jedna stavba, a s ní zmizela celá čtvrť starého města.",
+        "image_prompt": "Fotorealistický letecký snímek Paláce parlamentu a rozlehlého bulváru Unirii v Bukurešti, geometrická urbanistická kompozice, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-mista-bran",
+    "country": "Rumunsko",
+    "section": "Místa",
+    "topic": "Bran",
+    "headline": "Hrad, který turisté znají jako Drákulův",
+    "fact": "Hrad Bran v Transylvánii postavili sasové roku 1377 jako pevnost a celní stanoviště; s Vladem Țepešem, jenž mu vtiskl přezdívku 'Drákula', ho spojuje hlavně turistický marketing.",
+    "source_url": "https://en.wikipedia.org/wiki/Bran_Castle",
+    "source_quote": "The first documented mention of Bran Castle is the act issued by Louis I of Hungary on 19 November 1377 ... The claimed connection between the castle and the Dracula legend is tourism-driven",
+    "voice": "Slavnější je jako pověst, než kdy byl jako skutečná pevnost.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hradu Bran na skalním ostrohu v Transylvánii, věže s červenými střechami, podzimní lesy v okolí, bez lidí, 16:9",
+    "ll": [25.3672, 45.5149],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vlad Țepeš tudy možná jen projížděl",
+        "fact": "Historikové dnes soudí, že Vlad III. Țepeš na hradě Bran nikdy nesídlil ani nebyl vězněn — nanejvýš tudy při svých taženích několikrát projel průsmykem pod hradem.",
+        "source_url": "https://en.wikipedia.org/wiki/Bran_Castle",
+        "source_quote": "Vlad III Dracula, also known as Vlad the Impaler, never lived in Castle Bran",
+        "voice": "Legenda se do hradu nastěhovala dávno po tom, co z něj zmizela historie.",
+        "image_prompt": "Fotorealistický detailní snímek gotických věží hradu Bran za soumraku, mlha v údolí, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jak se z celnice stala turistická ikona",
+        "fact": "Bran byl původně strategická celnice na obchodní stezce mezi Transylvánií a Valašskem; teprve moderní turistický průmysl z něj po vydání Stokerova románu udělal 'Drákulův hrad', ačkoli v knize samotné vůbec není zmíněn.",
+        "source_url": "https://en.wikipedia.org/wiki/Bran_Castle",
+        "source_quote": "is not mentioned in the novel Dracula, and there is no evidence that Stoker ever visited either Transylvania or Bran Castle",
+        "voice": "Knize, která ho proslavila, na tenhle hrad vůbec nedošlo.",
+        "image_prompt": "Fotorealistický letecký snímek hradu Bran a horského průsmyku mezi Transylvánií a Valašskem, podzimní krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-mista-constanta",
+    "country": "Rumunsko",
+    "section": "Místa",
+    "topic": "Constanța",
+    "headline": "Nejstarší rumunské město založili Řekové",
+    "fact": "Přístav Constanța na pobřeží Černého moře vznikl kolem roku 600 př. n. l. jako řecká osada Tomis a je tak nejstarším nepřetržitě osídleným městem Rumunska.",
+    "source_url": "https://en.wikipedia.org/wiki/Constan%C8%9Ba",
+    "source_quote": "the oldest continuously inhabited city in Romania, founded around 600 BC",
+    "voice": "Než vznikl Řím, v Tomis se už obchodovalo s vínem a olivami.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek přístavu Constanța u Černého moře, historické kasino na promenádě, večerní světlo, bez lidí v popředí, 16:9",
+    "ll": [28.6383, 44.1598],
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Místo vyhnanství římského básníka",
+        "fact": "Do Tomis, dnešní Constanțy, poslal roku 8 n. l. římský císař Augustus do vyhnanství básníka Ovidia — ten si v tamní samotě stěžoval na drsné pobřeží ve svých elegiích až do konce života.",
+        "source_url": "https://en.wikipedia.org/wiki/Constan%C8%9Ba",
+        "source_quote": "In AD 8, the Roman poet Ovid (43 BC-17 AD) was banished to Tomis by Emperor Augustus for the last eight years of his life.",
+        "voice": "Trest za pár nevhodných veršů, který básník oplakával až do smrti.",
+        "image_prompt": "Fotorealistický snímek antických sloupů a mozaiky v archeologickém parku Constanța, ranní světlo, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přístav na křižovatce impérií",
+        "fact": "Constanța ležela na okraji všech velkých říší, které se u Černého moře vystřídaly — od řeckých osadníků přes Řím po Osmanskou říši — a její poloha na obchodní trase z ní dělala cenný, ale zranitelný přístav.",
+        "source_url": "https://en.wikipedia.org/wiki/Constan%C8%9Ba",
+        "voice": "Kdo ovládl tenhle kousek pobřeží, měl v ruce obchod na půl kontinentu.",
+        "image_prompt": "Fotorealistický letecký snímek přístavu Constanța s loděmi a starým majákem, Černé moře na obzoru, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-priroda-karpaty",
+    "country": "Rumunsko",
+    "section": "Příroda",
+    "topic": "Karpaty",
+    "headline": "Horský oblouk s nejvíc medvědy v Evropské unii",
+    "fact": "Rumunské Karpaty hostí největší populaci hnědých medvědů v Evropě mimo Rusko — odhaduje se, že tvoří asi 43 % veškerých medvědů žijících v EU.",
+    "source_url": "https://wwfcee.org/our-offices/romania/romanias-bear-dilemma-a-call-for-thoughtful-management-not-panic",
+    "source_quote": "Romania is home to the largest brown bear population in Europe (excluding Russia), accounting for approximately 43% of the total bear population in the EU.",
+    "voice": "Necelá tisícovka kilometrů hor, a v nich víc medvědů než kdekoli jinde v unii.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zalesněných hor rumunských Karpat, hnědý medvěd na okraji lesa, ranní mlha v údolí, přirozené světlo, bez textu, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Karpatský oblouk obepíná celou zemi",
+        "fact": "Karpaty v Rumunsku tvoří výrazný půlkruhový oblouk, který obepíná Transylvánii a odděluje ji od nížin Valašska a Moldávie na jihu a východě.",
+        "source_url": "https://en.wikipedia.org/wiki/Carpathian_Mountains",
+        "source_quote": "surround Transcarpathia and Transylvania in a large semicircle, sweeping towards the southeast",
+        "voice": "Jedno pohoří, a přesto tři různé kraje s vlastní historií po obou stranách hřebene.",
+        "image_prompt": "Fotorealistický letecký snímek karpatského horského oblouku v Rumunsku, zalesněná úbočí, vesnice v údolí, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Třetí nejdelší pohoří Evropy",
+        "fact": "Karpaty jsou se svými zhruba 1 500 km třetím nejdelším evropským pohořím po Uralu a Skandinávských horách; jejich rumunský oblouk historicky fungoval jako přirozená hranice mezi Uherským královstvím a valašsko-moldavskými knížectvími.",
+        "source_url": "https://en.wikipedia.org/wiki/Carpathian_Mountains",
+        "source_quote": "Roughly 1,500 km (930 mi) long ... the third-longest European mountain range",
+        "voice": "Kde končí jeden hřeben, tam po staletí končila i jedna vláda a začínala druhá.",
+        "image_prompt": "Fotorealistický panoramatický snímek karpatského pohoří s hradem na vrcholu kopce, typická transylvánská krajina, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-priroda-delta",
+    "country": "Rumunsko",
+    "section": "Příroda",
+    "topic": "Delta Dunaje",
+    "headline": "Nejzachovalejší delta Evropy, plná ptactva",
+    "fact": "Delta Dunaje patří k nejzachovalejším říčním deltám na kontinentu a od roku 1991 je na seznamu světového dědictví UNESCO; žije v ní přes 320 druhů ptáků, včetně vzácného pelikána kadeřavého.",
+    "source_url": "https://en.wikipedia.org/wiki/Danube_Delta",
+    "source_quote": "the best preserved [river delta] on the continent ... In 1991, the Romanian part of the Danube Delta became part of UNESCO's list of World Heritage Sites ... over 320 species of birds found in the delta",
+    "voice": "Kanál za kanálem rákosí, a v nich schovaný svět, kam auto nedojede.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek delty Dunaje, rákosové kanály, hejno pelikánů na vodě, ranní světlo, bez lidí, 16:9",
+    "ll": [29.7204, 45.1591],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hranice, kterou tvoří sama řeka",
+        "fact": "Delta leží na hranici Rumunska s Ukrajinou a je tak přeshraniční biosférickou rezervací — voda a rákosí tu propojují dvě země víc, než je dělí.",
+        "source_url": "https://en.wikipedia.org/wiki/Danube_Delta",
+        "source_quote": "established as a biosphere reserve, shared by Romania and Ukraine",
+        "voice": "Řeka, která místo aby dělila státy, propojila je do jedné chráněné krajiny.",
+        "image_prompt": "Fotorealistický snímek rákosových kanálů delty Dunaje za úsvitu, rybářský člun, klidná voda, 16:9"
+      },
+      "kartograf": {
+        "headline": "Naplavenina, která pořád roste",
+        "fact": "Delta Dunaje vzniká neustálým usazováním naplavenin z celého povodí veletoku — řeka sem přináší sedimenty z Alp až po Karpaty, a pobřeží se tak stále pomalu posouvá dál do Černého moře.",
+        "source_url": "https://en.wikipedia.org/wiki/Danube_Delta",
+        "voice": "Řeka sem tisíce let nosí kousky hor, a pobřeží se tak samo posouvá dál do moře.",
+        "image_prompt": "Fotorealistický letecký snímek ústí delty Dunaje do Černého moře, viditelné usazeniny a rozvětvené kanály, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-priroda-scarisoara",
+    "country": "Rumunsko",
+    "section": "Příroda",
+    "topic": "Scărișoara",
+    "headline": "Podzemní ledovec starý tisíce let",
+    "fact": "V Apuseňském pohoří ukrývá jeskyně Scărișoara podzemní ledový blok o objemu 75 000 m³, jehož nejstarší vrstvy jsou staré až 3 500 let.",
+    "source_url": "https://en.wikipedia.org/wiki/Sc%C4%83ri%C8%99oara_Cave",
+    "source_quote": "The ice within the cave has an estimated volume of 75,000 cubic metres ... formed 3,500 years ago",
+    "voice": "Led, který přežil pod zemí déle než většina staveb na povrchu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek interiéru ledové jeskyně Scărișoara, mohutné ledové sloupy a jezírka, studené modré světlo, bez lidí, 16:9",
+    "ll": [22.8103, 46.4761],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jeskyně, kam slunce nesvítí, a přesto je v ní led",
+        "fact": "Zvláštní tvar jeskyně funguje jako přírodní chladnička: studený vzduch v zimě klesá dovnitř propastí a zůstává uvězněný uvnitř, takže led v jeskyni nikdy úplně neroztaje ani v létě.",
+        "source_url": "https://en.wikipedia.org/wiki/Sc%C4%83ri%C8%99oara_Cave",
+        "voice": "Jáma funguje jako past na studený vzduch — jednou dovnitř, a už ven nemůže.",
+        "image_prompt": "Fotorealistický snímek vstupní propasti do jeskyně Scărișoara, sníh a led na dně, denní světlo shora, 16:9"
+      },
+      "kartograf": {
+        "headline": "Archiv klimatu ukrytý v ledu",
+        "fact": "Vrstvy ledu v jeskyni Scărișoara fungují podobně jako grónské ledovcové vrty — vědci z nich čtou historii klimatu regionu za posledních tisíciletí, protože každá vrstva uchovává stopu tehdejšího počasí.",
+        "source_url": "https://en.wikipedia.org/wiki/Sc%C4%83ri%C8%99oara_Cave",
+        "voice": "Každá ledová vrstva je stránka v knize o počasí starých tisíciletí.",
+        "image_prompt": "Fotorealistický detailní snímek vrstveného ledu v jeskyni Scărișoara, viditelné vrstvy jako letokruhy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-lide-vlad-tepes",
+    "country": "Rumunsko",
+    "section": "Lidé",
+    "topic": "Vlad Țepeš",
+    "headline": "Vládce, který dal jméno slavnému upírovi",
+    "fact": "Valašský vojvoda Vlad III. vládl ve 15. století a přezdívku 'Țepeš' (Narážeč na kůl) získal podle svého oblíbeného způsobu poprav; jeho jméno později inspirovalo postavu hraběte Drákuly.",
+    "source_url": "https://en.wikipedia.org/wiki/Vlad_the_Impaler",
+    "source_quote": "This sobriquet is connected to the impalement that was his favorite method of execution ... It is suggested that Vlad's patronymic inspired the name of Bram Stoker's literary vampire, Count Dracula.",
+    "voice": "Skutečný vládce z masa a kostí stál na počátku jedné z nejslavnějších postav hororu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrétní styl obrazu valašského vojvody z 15. století v dobovém oděvu, tmavé pozadí, malba ve stylu staré kroniky, 16:9",
+    "ll": [25.4558, 44.9346],
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vládce, který děsil i osmanské vojsko",
+        "fact": "V roce 1462 nechal Vlad na hranici s Osmanskou říší postavit celý 'les naražených těl' jako odstrašující varování — podle jeho vlastního hlášení tehdy zahynulo přes 23 000 lidí.",
+        "source_url": "https://en.wikipedia.org/wiki/Vlad_the_Impaler",
+        "source_quote": "more than '23,884 Turks and Bulgarians' had been killed at his order during the campaign",
+        "voice": "Válku vyhrával hlavně strachem, který šířil ještě dřív, než vytáhl do boje.",
+        "image_prompt": "Fotorealistická atmosférická malba valašského vojenského tábora u řeky v 15. století, dramatické večerní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jak z historické postavy vznikl literární mýtus",
+        "fact": "Bram Stoker si pro svého upíra vypůjčil jen Vladovo jméno a pověst krutého vládce z německých letáků 15. století — se skutečnou biografií valašského vojvody, natož s upíry, román Drákula nijak nepracuje.",
+        "source_url": "https://en.wikipedia.org/wiki/Vlad_the_Impaler",
+        "source_quote": "Vlad is not mentioned in Stoker's notes for the novel.",
+        "voice": "Legenda si vzala jméno a nechala za sebou celého skutečného člověka.",
+        "image_prompt": "Fotorealistický snímek staré tištěné německé brožury z 15. století s dřevorytem, na dřevěném stole, teplé světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-lide-coanda",
+    "country": "Rumunsko",
+    "section": "Lidé",
+    "topic": "Henri Coandă",
+    "headline": "Rumunský inženýr, po němž se jmenuje fyzikální jev",
+    "fact": "Vynálezce Henri Coandă popsal jev, kdy se proud vzduchu nebo kapaliny přimyká k zakřivenému povrchu, a roku 1934 si ho nechal patentovat — dnes se mu podle něj říká Coandův efekt a využívají ho křídla letadel i klimatizace.",
+    "source_url": "https://en.wikipedia.org/wiki/Henri_Coand%C4%83",
+    "source_quote": "In 1934 he was granted a French patent related to the Coandă Effect.",
+    "voice": "Objev, který nese jeho jméno, dodnes drží ve vzduchu tvary křídel letadel.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek proudu vody přimykajícího se k zakřivenému povrchu lžíce, makro detail, laboratorní světlo, 16:9",
+    "tags": ["socioekonomicka-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Letoun, kterému se říká 'první tryskáč'",
+        "fact": "V roce 1910 Coandă na pařížském leteckém salonu představil experimentální letoun s neobvyklou pohonnou jednotkou bez vrtule; podle dobových zdrojů vůbec nebyl schopen letu, ačkoli sám Coandă později tvrdil, že šlo o motorové tryskadlo, které skutečně vzlétlo.",
+        "source_url": "https://en.wikipedia.org/wiki/Henri_Coand%C4%83",
+        "source_quote": "designed and built an aircraft known as the Coandă-1910 ... displayed publicly at the second International Aeronautic Salon in Paris that year ... Years later ... Coandă started making claims that it was a motorjet, and that it actually flew.",
+        "voice": "O tom, jestli tenhle podivný stroj vůbec vzlétl, se historikové dodnes hádají.",
+        "image_prompt": "Fotorealistický černobílý archivní snímek raného letadla s neobvyklou konstrukcí motoru na letištní ploše, 16:9"
+      },
+      "kartograf": {
+        "headline": "Efekt, který je všude kolem, a nikdo si ho nevšimne",
+        "fact": "Coandův efekt vysvětluje, proč se proud vody přimkne k zakřivenému povrchu lžíce místo aby odstříkl rovně — stejný princip drží pohromadě proudění vzduchu kolem křídla letadla a využívají ho i moderní systémy řízení letu bez klapek.",
+        "source_url": "https://en.wikipedia.org/wiki/Coand%C4%83_effect",
+        "source_quote": "The Coandă effect is the tendency of a fluid jet to stay attached to a surface of any form.",
+        "voice": "Fyzika, kterou máš doma na lžíci pod tekoucím kohoutkem, a nikdy sis jí nevšiml.",
+        "image_prompt": "Fotorealistický snímek proudění vzduchu kolem křídla letadla vizualizovaného kouřem v aerodynamickém tunelu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-lide-wiesel",
+    "country": "Rumunsko",
+    "section": "Lidé",
+    "topic": "Elie Wiesel",
+    "headline": "Chlapec ze Sighetu, který svědčil o holokaustu",
+    "fact": "Spisovatel Elie Wiesel se narodil v rumunském Sighetu Marmației a přežil koncentrační tábory Osvětim a Buchenwald; za svědectví o holokaustu, mimo jiné v knize Noc, dostal roku 1986 Nobelovu cenu míru.",
+    "source_url": "https://www.nobelpeaceprize.org/laureates/1986",
+    "source_quote": "for being a messenger to mankind: his message is one of peace, atonement and dignity",
+    "voice": "Z rumunského maloměsta vzešlo jedno z nejsilnějších svědectví o hrůze 20. století.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek malého karpatského města Sighetu Marmației, dřevěné domy a synagoga, ranní světlo, bez lidí, 16:9",
+    "ll": [23.8903, 47.9256],
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kniha, která začínala jako 900 stran jidiš",
+        "fact": "Wieselova kniha Noc vznikla nejdřív jako devítisetstránkové jidiš vzpomínky, které pak sám zhustil do krátkého francouzského textu — dnes patří k nejčtenějším svědectvím o holokaustu na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Elie_Wiesel",
+        "source_quote": "wrote an initial 900-page Yiddish version titled Un di velt hot geshvign",
+        "voice": "Z devíti set stran vzpomínek zbyla tenká kniha, kterou dnes čtou školáci po celém světě.",
+        "image_prompt": "Fotorealistický snímek staré popsané notesu a černobílých fotografií na dřevěném stole, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Maramureš jako místo, odkud zmizela celá komunita",
+        "fact": "Před druhou světovou válkou žila v Sighetu a okolním Maramureši početná židovská komunita — válka a deportace do Osvětimi ji téměř úplně vymazaly, a Wieselovo dílo je dnes jedním z mála trvalých svědectví o jejím zániku.",
+        "source_url": "https://en.wikipedia.org/wiki/Elie_Wiesel",
+        "voice": "Celý svět, ve kterém vyrůstal, zmizel dřív, než mohl dospět.",
+        "image_prompt": "Fotorealistický snímek staré synagogy v Maramureši, opuštěné ulice, podzimní světlo, bez lidí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-kultura-martisor",
+    "country": "Rumunsko",
+    "section": "Kultura & tradice",
+    "topic": "Mărțișor",
+    "headline": "Červenobílá šňůrka, která volá jaro",
+    "fact": "Prvního března si Rumuni a Moldavané navzájem darují mărțișor — ozdobu ze dvou spletených červených a bílých nití s přívěškem — jako přání zdraví a příchodu jara.",
+    "source_url": "https://en.wikipedia.org/wiki/M%C4%83r%C8%9Bi%C8%99or",
+    "source_quote": "an object made from two intertwined red and white strings with hanging tassels",
+    "voice": "Kousek nitě, který slibuje, že zima právě skončila.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek tradičních rumunských mărțișor ozdob z červené a bílé nitě s drobným přívěškem, jarní květiny v pozadí, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tradice zapsaná v UNESCO",
+        "fact": "Mărțișor zapsalo UNESCO v roce 2017 na seznam nehmotného kulturního dědictví jako společnou tradici Rumunska, Moldavska, Bulharska a Severní Makedonie — v každé zemi se slaví s drobně jinými zvyky.",
+        "source_url": "https://www.romania-insider.com/martisor-intangible-cultural-heritage",
+        "source_quote": "Martisorul has entered the UNESCO Intangible Heritage list ... submitted by Romania, Bulgaria, Macedonia, and the Republic of Moldova",
+        "voice": "Jedna nit, a přitom čtyři země, které si ji stejně tak váží.",
+        "image_prompt": "Fotorealistický snímek pouličního stánku s mărțișor ozdobami v rumunském městě na začátku března, jarní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pozůstatek římského Nového roku",
+        "fact": "Mărțișor má kořeny v římské oslavě nového roku, který ve starém kalendáři začínal 1. března — tradice tak přežila pád impéria i staletí jiných kalendářů a dodnes drží datum svého antického původu.",
+        "source_url": "https://en.wikipedia.org/wiki/M%C4%83r%C8%9Bi%C8%99or",
+        "source_quote": "The tradition originates from the Roman celebration of the New Year on 1 March.",
+        "voice": "Datum si tahle tradice nese z dob, kdy ještě březen býval prvním měsícem roku.",
+        "image_prompt": "Fotorealistický snímek staré římské mozaiky s motivem jara vedle moderní rumunské ulice, symbolické prolnutí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-kultura-bukovina",
+    "country": "Rumunsko",
+    "section": "Kultura & tradice",
+    "topic": "Malované kláštery Bukoviny",
+    "headline": "Kostely pomalované zvenku jako obří komiks",
+    "fact": "Osm pravoslavných klášterů v Bukovině z konce 15. a 16. století pokrývají unikátní vnější fresky s biblickými výjevy; od roku 1993 jsou na seznamu světového dědictví UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Painted_churches_of_northern_Moldavia",
+    "source_quote": "Eight Romanian Orthodox Churches located in Suceava County and built from the late 15th century to the late 16th century are listed by UNESCO as a World Heritage Site, since 1993.",
+    "voice": "Bibli tu čtou z fasády, ne z knihy uvnitř.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek malovaného kláštera Voroneț v Bukovině, sytě modré vnější fresky s biblickými výjevy, jasná obloha, bez lidí, 16:9",
+    "ll": [25.8667, 47.5167],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Modř, kterou se dodnes nepodařilo napodobit",
+        "fact": "Klášter Voroneț je proslulý sytě modrým odstínem fresek zvaným 'voroněťská modř' — malíři ho namíchali v 16. století a jeho přesné složení se dodnes nepodařilo spolehlivě napodobit.",
+        "source_url": "https://rolandia.eu/en/blog/unesco-sites/voronet-monastery",
+        "source_quote": "famous worldwide for the blue coloring used in its exterior frescoes ... a distinctive hue known as 'Voronet blue'",
+        "voice": "Barva, kterou malíři namíchali před pěti sty lety a nikdo ji přesně nezopakoval.",
+        "image_prompt": "Fotorealistický detailní snímek fresky s intenzivní modrou barvou na zdi kláštera Voroneț, ostré sluneční světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malby jako obrazová bible pro negramotné",
+        "fact": "Vnější fresky moldavských klášterů sloužily jako srozumitelná 'obrazová bible' pro tehdy většinou negramotné venkovské obyvatelstvo — velké kompozice jako Poslední soud tak vyprávěly víru řečí, kterou nebylo třeba umět číst.",
+        "source_url": "https://en.wikipedia.org/wiki/Painted_churches_of_northern_Moldavia",
+        "voice": "Kdo neuměl číst, přečetl si víru rovnou ze zdi kostela.",
+        "image_prompt": "Fotorealistický širokoúhlý snímek celé vnější zdi moldavského kláštera pokryté freskami, vesničané v pozadí, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-kultura-sapanta",
+    "country": "Rumunsko",
+    "section": "Kultura & tradice",
+    "topic": "Veselý hřbitov",
+    "headline": "Hřbitov, kde náhrobky vyprávějí vtipy",
+    "fact": "Na Veselém hřbitově v Săpânțe zdobí přes 800 dřevěných křížů barevné malby a veršované epitafy, které si ze zesnulých s láskou dobírají — tradici v roce 1935 založil řezbář Stan Ioan Pătraș.",
+    "source_url": "https://en.wikipedia.org/wiki/Merry_Cemetery",
+    "source_quote": "In 1935, Pătraș carved the first epitaph and, as of the 1960s, more than 800 of such oak wood crosses came into sight.",
+    "voice": "Smrt tu má na náhrobku vtip místo truchlivého verše.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Veselého hřbitova v Săpânțe, řada barevných dřevěných křížů s malbami, slunečný den, 16:9",
+    "ll": [23.6917, 47.9733],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jeden řezbář, jeden osobitý styl",
+        "fact": "Stan Ioan Pătraș si sám vymýšlel obrázky i říkanky ke každému kříži podle toho, jaký byl zesnulý člověk zač — po jeho smrti v řemesle pokračovali jeho žáci a hřbitov roste dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Merry_Cemetery",
+        "voice": "Jeden člověk vymyslel způsob, jak si s vesnicí navždy popovídat i po smrti.",
+        "image_prompt": "Fotorealistický detailní snímek ručně malovaného dřevěného kříže s naivní malbou a textem, Veselý hřbitov, 16:9"
+      },
+      "kartograf": {
+        "headline": "Smích místo smutku jako místní tradice",
+        "fact": "Săpânța se svým veřejným humorem o smrti vymyká zavedené evropské představě hřbitova jako přísně vážného místa — ukazuje, že i postoj ke smrti je kulturně podmíněný, ne univerzální.",
+        "source_url": "https://en.wikipedia.org/wiki/Merry_Cemetery",
+        "source_quote": "diverges from the prevalent belief, culturally shared within European societies, that views death as something indelibly solemn",
+        "voice": "I to, jak moc smíme truchlit s úsměvem, se mění od vesnice k vesnici.",
+        "image_prompt": "Fotorealistický širokoúhlý snímek celého Veselého hřbitova v Săpânțe s dřevěnou kostelní věží v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-umeni-brancusi",
+    "country": "Rumunsko",
+    "section": "Umění",
+    "topic": "Constantin Brâncuși",
+    "headline": "Sochař, který sochařství zbavil zbytečných detailů",
+    "fact": "Sochař Constantin Brâncuși, rodák z vesnice Hobița, je považován za jednoho z otců moderního sochařství — jeho zjednodušené tvary jako Pták v prostoru ovlivnily sochaře po celém světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Constantin_Brancusi",
+    "source_quote": "one of the most influential sculptors of the 20th century and a pioneer of modernism",
+    "voice": "Z ptáka nechal jen tvar letu — všechno ostatní odsekl.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek lesklé bronzové sochy Pták v prostoru od Brâncușiho v muzejní síni, měkké světlo, 16:9",
+    "ll": [23.2833, 45.0333],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nekonečný sloup jako pomník vojákům",
+        "fact": "V rodném kraji Gorj postavil Brâncuși v letech 1937-1938 v Târgu Jiu sochařský komplex s Nekonečným sloupem vysokým přes 29 metrů, věnovaný padlým rumunským vojákům první světové války.",
+        "source_url": "https://en.wikipedia.org/wiki/Constantin_Brancusi",
+        "source_quote": "the iconic Endless Column rising 29.33 meters",
+        "voice": "Sloup, který se táhne k obloze na památku těch, co se domů nevrátili.",
+        "image_prompt": "Fotorealistický snímek Nekonečného sloupu Constantina Brâncușiho v Târgu Jiu, kovová socha proti obloze, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cesta od venkovského řezbáře k Paříži",
+        "fact": "Brâncuși vyrostl mezi lidovými dřevořezbami rumunského venkova a část cesty do Paříže tehdy absolvoval pěšky — právě spojení lidové tradice a pařížské avantgardy z něj udělalo klíčovou postavu moderního umění.",
+        "source_url": "https://en.wikipedia.org/wiki/Constantin_Brancusi",
+        "voice": "Kus cesty do světového umění ušel doslova pěšky, krok za krokem.",
+        "image_prompt": "Fotorealistický snímek dřevěné rumunské venkovské chalupy s tradičními vyřezávanými ornamenty, ranní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-umeni-enescu",
+    "country": "Rumunsko",
+    "section": "Umění",
+    "topic": "George Enescu",
+    "headline": "Hudebník, kterého Casals srovnával s Mozartem",
+    "fact": "Skladatel a houslista George Enescu platí za jednoho z největších hudebníků rumunské historie; jeho Rumunské rapsodie z folklorních motivů patří k nejhranějším rumunským skladbám vůbec.",
+    "source_url": "https://en.wikipedia.org/wiki/George_Enescu",
+    "source_quote": "He is regarded as one of the greatest musicians in Romanian history.",
+    "voice": "Vesnické nápěvy proměnil v hudbu, kterou hraje symfonický orchestr.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starých houslí a rukopisu partitury na dřevěném stole, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Festival, který nese jeho jméno",
+        "fact": "Na počest George Enescua se v Bukurešti koná mezinárodní hudební festival, jeden z velkých klasických festivalů ve východní Evropě, kam jezdí orchestry a sólisté z celého světa.",
+        "source_url": "https://en.wikipedia.org/wiki/George_Enescu",
+        "voice": "Město mu každé dva roky na pár týdnů propůjčí všechna svá pódia.",
+        "image_prompt": "Fotorealistický snímek symfonického orchestru na pódiu velkého koncertního sálu v Bukurešti, večerní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Učitel, který formoval světové housle",
+        "fact": "Enescu později učil na hudebních školách v USA a mezi jeho žáky patřil i legendární houslista Yehudi Menuhin — Enescuův vliv se tak nešířil jen skladbami, ale i celou generací houslistů, kterou vychoval.",
+        "source_url": "https://en.wikipedia.org/wiki/George_Enescu",
+        "source_quote": "He will remain for me the absoluteness through which I judge others.",
+        "voice": "Jeho hudba zní dodnes i v rukou žáků jeho žáků.",
+        "image_prompt": "Fotorealistický snímek učitele a studenta s houslemi v hudební třídě, měkké denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-umeni-mungiu",
+    "country": "Rumunsko",
+    "section": "Umění",
+    "topic": "Nová vlna",
+    "headline": "Rumunský film, který dobyl Cannes",
+    "fact": "Režisér Cristian Mungiu se roku 2007 stal prvním rumunským filmařem, který získal Zlatou palmu v Cannes — za drama '4 měsíce, 3 týdny a 2 dny' o nelegálním potratu v komunistickém Rumunsku.",
+    "source_url": "https://en.wikipedia.org/wiki/4_Months,_3_Weeks_and_2_Days",
+    "source_quote": "At the 2007 Cannes Film Festival, Cristian Mungiu became the first Romanian filmmaker to win the Palme d'Or, the festival's highest honour.",
+    "voice": "Tichý komorní film porazil v Cannes velká hollywoodská jména.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek prázdné chodby komunistické internátní koleje v Rumunsku 80. let, chladné světlo, bez lidí, kinematografický styl, 16:9",
+    "tags": ["kulturni-geografie", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Filmy, které natáčely skutečnost komunistické éry",
+        "fact": "Vlna rumunských filmařů po přelomu tisíciletí natáčela syrové, téměř dokumentární příběhy z komunistické minulosti země — bez velké hudby a efektů, jen s dlouhými nehybnými záběry, které diváka nechají v napětí jako svědka.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_New_Wave",
+        "voice": "Kamera se ani nehne, a přesto ti nedovolí odvrátit oči.",
+        "image_prompt": "Fotorealistický filmový záběr rumunské ulice z 80. let s panelovými domy, šedivé počasí, bez lidí v popředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá kinematografie s velkým renomé",
+        "fact": "Rumunská nová vlna ukázala, že i země s malým filmovým rozpočtem může udávat směr světové kinematografii — silné vyprávění a osobní pohled na nedávnou historii dokázaly nahradit efekty i hvězdné herce.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_New_Wave",
+        "voice": "Bez velkého rozpočtu, a přesto s hlasem, který slyšel celý filmový svět.",
+        "image_prompt": "Fotorealistický snímek malého filmového plátna v art-house kině, diváci v tmavém sále, projekční světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-sport-comaneci",
+    "country": "Rumunsko",
+    "section": "Sport",
+    "topic": "Nadia Comăneci",
+    "headline": "Čtrnáctiletá dívka, na kterou tabule nestačila",
+    "fact": "Na olympiádě v Montrealu 1976 získala rumunská gymnastka Nadia Comăneci na bradlech první dokonalou desítku v historii olympijské gymnastiky — tehdy jí bylo pouhých 14 let.",
+    "source_url": "https://en.wikipedia.org/wiki/Nadia_Comaneci",
+    "source_quote": "she was awarded the first perfect 10 in Olympic gymnastics for her routine on the uneven bars",
+    "voice": "Byla tak dokonalá, že na ni výsledková tabule neuměla ani zareagovat.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek gymnastky na bradlech v olympijské hale 70. let, soustředěný výraz, sportovní osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tabule uměla zobrazit jen číslo 1.00",
+        "fact": "Výsledková tabule v Montrealu tehdy ukázala místo desítky číslo 1.00 — výrobce Omega totiž vůbec nepočítal s tím, že by někdo mohl dostat plný počet bodů, a displej na to nebyl technicky připravený.",
+        "source_url": "https://en.wikipedia.org/wiki/Nadia_Comaneci",
+        "source_quote": "the scoreboard displayed her perfect 10 as '1.00' because Omega SA ... had not programmed the display to show a 10",
+        "voice": "Stroj prostě nevěřil tomu, co právě uviděl.",
+        "image_prompt": "Fotorealistický snímek olympijské výsledkové tabule s čísly, sportovní hala 70. let, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jedna desítka změnila pravidla gymnastiky",
+        "fact": "Comăneciová v Montrealu přidala k té první ještě šest dalších desítek a odvezla si tři zlaté medaile — její výkon donutil rozhodčí i konstruktéry přístrojů přehodnotit, na co všechno musí být systém hodnocení připravený.",
+        "source_url": "https://en.wikipedia.org/wiki/Nadia_Comaneci",
+        "source_quote": "Comăneci went on to earn six additional perfect 10s during the remainder of the Montreal Games, winning three gold medals overall",
+        "voice": "Jeden výkon, a najednou musel celý sport přepsat vlastní pravidla.",
+        "image_prompt": "Fotorealistický snímek gymnastky přebírající zlatou medaili na olympijském stupni vítězů, 70. léta, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-sport-halep",
+    "country": "Rumunsko",
+    "section": "Sport",
+    "topic": "Simona Halep",
+    "headline": "První Rumunka, co ovládla Wimbledon",
+    "fact": "Tenistka Simona Halep byla 64 týdnů světovou jedničkou žebříčku WTA, vyhrála French Open 2018 a jako první Rumunka v historii i Wimbledon 2019.",
+    "source_url": "https://en.wikipedia.org/wiki/Simona_Halep",
+    "source_quote": "ranked as the world No. 1 ... for 64 weeks ... became the first Romanian to win a Wimbledon singles title",
+    "voice": "Kurt v Londýně jí patřil, aniž by ztratila víc než pár her za set.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tenistky v akci na trávníkovém kurtu Wimbledonu, slunečné odpoledne, 16:9",
+    "tags": ["kulturni-geografie", "aktualni-temata", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obrat, který rozhodl o první grandslamové trofeji",
+        "fact": "Ve finále French Open 2018 prohrávala Halepová se Sloane Stephensovou o set a brejk, přesto zápas otočila a získala svůj první grandslamový titul.",
+        "source_url": "https://en.wikipedia.org/wiki/Simona_Halep",
+        "source_quote": "She then came from a set and a break down against No. 10 Sloane Stephens to win her first career Grand Slam title.",
+        "voice": "Nejtěžší zápasy kariéry se hrají, když už to vypadá prohrané.",
+        "image_prompt": "Fotorealistický snímek tenistky slavící vítězství na antukovém kurtu Roland Garros, konfety, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nejrychlejší finále, jaké si Wimbledon pamatuje",
+        "fact": "Finále Wimbledonu 2019 zvládla Halepová za necelou hodinu a soupeřce nechala jen dvě hry v každém setu — takto jednostranné finále je ve světě vrcholového tenisu mimořádně vzácné.",
+        "source_url": "https://en.wikipedia.org/wiki/Simona_Halep",
+        "source_quote": "she won the championship easily in under an hour, losing just two games in each set",
+        "voice": "Zápas skončil dřív, než diváci stihli dopít čaj o páté.",
+        "image_prompt": "Fotorealistický snímek prázdného centrálního kurtu Wimbledonu s trávou a bílými čárami, ranní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-sport-hagi",
+    "country": "Rumunsko",
+    "section": "Sport",
+    "topic": "Gheorghe Hagi",
+    "headline": "Karpatský Maradona",
+    "fact": "Fotbalista Gheorghe Hagi, přezdívaný 'Maradona z Karpat', hrál za oba velké rivaly Real Madrid i Barcelonu a jako kapitán dovedl Rumunsko do čtvrtfinále mistrovství světa 1994.",
+    "source_url": "https://en.wikipedia.org/wiki/Gheorghe_Hagi",
+    "source_quote": "Nicknamed 'The Maradona of the Carpathians' ... Hagi is one of the few footballers to have played for both Spanish rival clubs Real Madrid and Barcelona.",
+    "voice": "Přezdívku po největším fotbalistovi světa si vysloužil vlastní kouzelnou levačkou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fotbalisty v rumunském dresu kopajícího do míče na stadionu, 90. léta, dynamický záběr, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Gól, který ohromil mistrovství světa",
+        "fact": "Na mistrovství světa 1994 vstřelil Hagi proti Kolumbii famózní lob z pětatřiceti metrů bez rotace míče — jeden z nejpamátnějších gólů celého turnaje, po němž ho zařadili do All Star týmu šampionátu.",
+        "source_url": "https://en.wikipedia.org/wiki/Gheorghe_Hagi",
+        "source_quote": "a spectacular 35-meter lob from the side of the field, with the ball not spinning in the air ... Hagi was named in the Team of the Tournament",
+        "voice": "Gól z takové dálky, že brankář stihl jen sledovat, jak míč padá do sítě.",
+        "image_prompt": "Fotorealistický snímek fotbalisty střílejícího gól obloukem přes brankáře na velkém stadionu, 90. léta, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá fotbalová země s velkou generací",
+        "fact": "Hagiho generace v devadesátých letech dokázala, že i fotbalově menší středoevropská země se může na chvíli prosadit mezi světovou špičku — po jeho odchodu se Rumunsku podobný úspěch na velkém turnaji dlouho nepodařilo zopakovat.",
+        "source_url": "https://en.wikipedia.org/wiki/Gheorghe_Hagi",
+        "voice": "Jedna generace stačila k tomu, aby se o malé zemi mluvilo na celém světě.",
+        "image_prompt": "Fotorealistický snímek rumunského fotbalového týmu slavícího na hřišti po vítězném zápase, 90. léta, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-jazyk-latinsky-ostrov",
+    "country": "Rumunsko",
+    "section": "Jazyk & slova",
+    "topic": "Latinský ostrov",
+    "headline": "Jazyk, který zůstal sám mezi slovanskými sousedy",
+    "fact": "Rumunština je jediný velký románský jazyk východní Evropy — vyvíjela se obklopená slovansky mluvícími národy, a bývá proto přirovnávána k 'ostrovu latiny ve slovanském moři'.",
+    "source_url": "https://lingodigest.com/romanian-a-latin-island-in-a-slavic-sea/",
+    "source_quote": "Romanian has been a linguistic island, a bastion of Latinity in a sea dominated by Slavic and other non-Romance languages.",
+    "voice": "Všude kolem slovanština, a uprostřed přežívá kus latiny.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré latinské a azbukové cedule vedle sebe na rumunské ulici, detail, 16:9",
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova, kterým rozumí i Ital",
+        "fact": "Základní rumunská slova jako 'apă' (voda), 'casă' (dům) nebo 'inimă' (srdce) mají zřetelně latinský základ podobný italštině nebo španělštině — mluvčí těchto jazyků si tak s rumunštinou dokážou leccos domluvit.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_language",
+        "voice": "Ital a Rumun se leckdy domluví rychleji, než by čekali.",
+        "image_prompt": "Fotorealistický snímek rumunského nápisu na kavárně v historickém centru, slunečný den, 16:9"
+      },
+      "kartograf": {
+        "headline": "22 milionů mluvčích v moři jiných jazyků",
+        "fact": "Rumunštinou mluví asi 22 milionů lidí jako mateřským jazykem — dost na to, aby jazyk snadno přežil, a přesto zůstává osamocený uprostřed regionu, kde okolní země hovoří slovanskými nebo uherskými jazyky.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_language",
+        "source_quote": "it is spoken by 22 million people as a first language",
+        "voice": "Dost mluvčích na to, aby jazyk přežil, a přesto žádný jazykový příbuzný v sousedství.",
+        "image_prompt": "Fotorealistický snímek mapy jihovýchodní Evropy s vyznačenými jazykovými oblastmi, stará mapa, detail, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-jazyk-azbuka",
+    "country": "Rumunsko",
+    "section": "Jazyk & slova",
+    "topic": "Přechod na latinku",
+    "headline": "Jak si rumunština vzala zpátky latinská písmena",
+    "fact": "Rumunština se dlouho psala cyrilicí a na latinku přešla postupně mezi lety 1830 a 1862 jako symbolické přihlášení k římským kořenům národa; dnešní podoba pravopisu se ustálila v roce 1881.",
+    "source_url": "https://en.wikipedia.org/wiki/Romanian_language",
+    "source_quote": "Between 1830 and 1860 'transitional alphabets' were used ... The Latin alphabet became official at different dates in Wallachia and Transylvania - 1860, and Moldova - 1862 ... The current orthography ... was fully implemented in 1881.",
+    "voice": "Národ si nejdřív vybral abecedu, a teprve pak dal najevo, ke komu patří.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré rumunské cyrilské knihy vedle novější knihy tištěné latinkou, knihovna, teplé světlo, 16:9",
+    "tags": ["jazykoveda", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Písmo jako politické prohlášení",
+        "fact": "Změna z cyrilice na latinku nebyla jen pravopisná úprava — pro rumunské vzdělance tehdejší doby šlo o symbolický krok, kterým se země přihlásila k latinskému původu a odklonila od byzantsko-slovanské tradice psaní.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_Cyrillic_alphabet",
+        "voice": "Nová písmena měla světu ukázat, ke komu Rumuni vlastně patří.",
+        "image_prompt": "Fotorealistický snímek starých tištěných rumunských novin s cyrilským i latinským písmem vedle sebe, detail, 16:9"
+      },
+      "kartograf": {
+        "headline": "Abeceda jako nástroj národní identity",
+        "fact": "Přechod k latince byl součástí širšího národního obrození, ve kterém si Rumuni budovali identitu na římském dědictví — volbou písma se, podobně jako jiné evropské národy té doby, sami rozhodli, ke které kulturní tradici se chtějí hlásit.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_language",
+        "voice": "I abeceda dokáže být prohlášením o tom, kam národ patří.",
+        "image_prompt": "Fotorealistický snímek starých tiskových liter s latinkou v tiskárně 19. století, detail, teplé světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-jazyk-slovanske-slova",
+    "country": "Rumunsko",
+    "section": "Jazyk & slova",
+    "topic": "Slovanské výpůjčky",
+    "headline": "Latinský základ s výraznou slovanskou příchutí",
+    "fact": "Přestože je rumunština románský jazyk, kolem 20 % její dnešní slovní zásoby má slovanský původ — nejvíc jich najdeme mezi příslovci a v náboženském slovníku.",
+    "source_url": "https://en.wikipedia.org/wiki/Slavic_influence_on_Romanian",
+    "source_quote": "about 20% of the Romanian vocabulary is still of Slavic origin ... Religious vocabulary: 25%",
+    "voice": "Kostra věty je latinská, ale spousta cihel v ní je slovanských.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého rumunského rukopisu s viditelně odlišnými slovy vedle sebe, detail písma, knihovna, 16:9",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Soužití, které jazyk neskrývá",
+        "fact": "Slovanská slova se do rumunštiny dostala během staletí sousedství a míšení se slovanskými národy od raného středověku — jazyk je tak živým dokladem toho, s kým si Rumuni po staletí sousedili a obchodovali.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_language",
+        "voice": "Jazyk nosí ve slovníku otisk každého souseda, se kterým kdy mluvil.",
+        "image_prompt": "Fotorealistický snímek staré vesnické tržnice ve východní Evropě 19. století, obchodníci a zboží, malebné prostředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "19. století slovanská slova částečně vytlačilo",
+        "fact": "V 19. století probíhalo záměrné 're-latinizování' rumunštiny, kdy vzdělanci nahrazovali starší slovanské a turecké výpůjčky novými slovy z francouzštiny a latiny — dnešní nižší podíl slovanských slov je tak výsledkem vědomého jazykového plánování, ne jen přirozeného vývoje.",
+        "source_url": "https://en.wikipedia.org/wiki/Slavic_influence_on_Romanian",
+        "source_quote": "the 19th-century re-latinization movement reduced earlier influence",
+        "voice": "Slovník si jazykovědci přestavěli skoro jako nábytek v obýváku.",
+        "image_prompt": "Fotorealistický snímek staré rumunské tiskárny a slovníku z 19. století na dřevěném stole, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-jidlo-sarmale",
+    "country": "Rumunsko",
+    "section": "Jídlo",
+    "topic": "Sarmale",
+    "headline": "Zelné závitky, které jsou národním jídlem",
+    "fact": "Sarmale — zelné listy plněné mletým masem a rýží — se v Rumunsku považují za národní jídlo a tradičně se podávají o Vánocích a Velikonocích.",
+    "source_url": "https://en.wikipedia.org/wiki/Sarmale",
+    "source_quote": "Sarmale are a central part of Romanian cuisine and are the country's national dish.",
+    "voice": "Talíř, který na sváteční stůl patří stejně jistě jako cukroví.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek talíře rumunských sarmale — zelných závitků s masem — podávaných se zakysanou smetanou a kukuřičnou kaší, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept, který putoval z Osmanské říše",
+        "fact": "Sarmale mají kořeny v osmanské kuchyni — turecké slovo 'sarma' znamená prostě 'zavinuté' — a podobný pokrm dnes najdeš od Balkánu přes Turecko až po Persii, každá země ho ale připravuje trochu jinak.",
+        "source_url": "https://en.wikipedia.org/wiki/Sarmale",
+        "source_quote": "sarma originated in the Ottoman cuisine ... also known by its Turkish name 'sarma,' which means 'wrap' or 'wrapped thing'",
+        "voice": "Jedno jídlo, a přesto tucet zemí, které si na něj dělají nárok.",
+        "image_prompt": "Fotorealistický snímek plnění zelných listů masem a rýží na dřevěném prkénku v kuchyni, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo jako mapa staré říše",
+        "fact": "Rozšíření sarmale přesně kopíruje bývalé hranice Osmanské říše — od Balkánu po Blízký východ najdeš plněné listy pod různými jmény všude tam, kam kdysi sahala osmanská nadvláda a s ní i její kuchyně.",
+        "source_url": "https://en.wikipedia.org/wiki/Sarmale",
+        "voice": "Na talíři se dá vyčíst, kam kdysi sahala hranice impéria.",
+        "image_prompt": "Fotorealistický snímek historické mapy Osmanské říše na starém papíru vedle talíře balkánského jídla, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-jidlo-mamaliga",
+    "country": "Rumunsko",
+    "section": "Jídlo",
+    "topic": "Mămăligă",
+    "headline": "Kukuřičná kaše, která krmila celé generace",
+    "fact": "Mămăligă, kaše z kukuřičné mouky podobná italské polentě, se v rumunských zemích stala základní potravou chudších venkovanů poté, co tu kukuřice od 17. století nahradila dřívější prosnou kaši.",
+    "source_url": "https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83",
+    "source_quote": "Corn then became an important food, especially in the fight against famine, which prevailed in the 17th and 18th centuries ... had been made with millet flour",
+    "voice": "Prostý talíř kaše, který kdysi rozhodoval o tom, jestli vesnice přežije hladomor.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zlaté kukuřičné kaše mămăligă na dřevěném prkénku, se salašnickým sýrem a smetanou, venkovská kuchyně, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sesterský pokrm italské polenty",
+        "fact": "Kukuřičná kaše podobná mămăliza se vaří i v Itálii jako polenta, v Maďarsku jako puliszka nebo v Bulharsku jako kačamak — kukuřice se po připlutí z Ameriky rozšířila po Evropě už v 16. století.",
+        "source_url": "https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83",
+        "source_quote": "Similar dishes are also eaten in Italy, Switzerland, Southern France, Slovenia, Croatia and Brazil, often with the name polenta ... spread in Europe in the 16th century",
+        "voice": "Jedna plodina z Ameriky, a najednou má celá střední Evropa podobnou kaši na talíři.",
+        "image_prompt": "Fotorealistický snímek kukuřičného pole při západu slunce, rumunská krajina, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nová plodina, která zachránila venkov před hladem",
+        "fact": "Příchod kukuřice z Ameriky v 16. a 17. století je učebnicový příklad tzv. kolumbovské výměny — nová plodina se rychle stala klíčovou obranou proti hladomorům, protože rostla i tam, kde tradiční obiloviny selhávaly.",
+        "source_url": "https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83",
+        "source_quote": "introduced into Spain by Hernan Cortes from Mexico in 1530 and spread in Europe in the 16th century",
+        "voice": "Rostlina z jiného kontinentu nakonec rozhodla o tom, co bude několik století ležet na rumunském talíři.",
+        "image_prompt": "Fotorealistický snímek starého mlýnku na kukuřičnou mouku ve venkovské chalupě, prachové částice ve světle, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-jidlo-mici",
+    "country": "Rumunsko",
+    "section": "Jídlo",
+    "topic": "Mici",
+    "headline": "Grilovaná pochoutka bez střívka",
+    "fact": "Mici (mititei) jsou grilované válečky z mletého hovězího, jehněčího a vepřového masa s kořením, podávané bez střívka — Rumuni jich podle odhadů sní kolem 440 milionů kusů ročně.",
+    "source_url": "https://en.wikipedia.org/wiki/Mici",
+    "source_quote": "an estimated 440 million mici consumed each year in Romania",
+    "voice": "Klobása, které chybí střívko, a nikomu to nevadí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek grilovaných rumunských mici na roštu s uhlím, kouř stoupá vzhůru, hořčice v misce vedle, 16:9",
+    "tags": ["kulturni-geografie", "aktualni-temata", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejoblíbenější grilovačka na 1. máje",
+        "fact": "Mici se v Rumunsku nejvíc grilují o prvním máji a dalších jarních svátcích — jen během prvního máje 2019 jich lidé podle odhadů snědli na 30 milionů kusů.",
+        "source_url": "https://en.wikipedia.org/wiki/Mici",
+        "source_quote": "30 million mititei being eaten in Romania on the first day of May in 2019",
+        "voice": "Jeden den v roce, a spotřebuje se jich skoro tolik jako jindy za měsíc.",
+        "image_prompt": "Fotorealistický snímek rodinného grilování mici na zahradě na 1. máje, slunečný den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Balkánský recept, co zdomácněl v Bukurešti",
+        "fact": "Podle tradovaného příběhu mici vznikly už ve 14. století na jihu Balkánu pod osmanskou nadvládou, odkud recept postupně putoval na sever a v Rumunsku se stal natolik oblíbeným, že export tvoří jen zlomek celkové domácí spotřeby.",
+        "source_url": "https://en.wikipedia.org/wiki/Mici",
+        "source_quote": "A popular story claims that 'mici' or 'mititei' were invented in the late 14th century and that they originated from southern Serbia ... between 5% and 10% of all the mici produced in Romania were exported",
+        "voice": "Recept přišel odjinud, ale doma se z něj stala skoro národní hrdost.",
+        "image_prompt": "Fotorealistický snímek rušné rumunské restaurační zahrádky s grilem a hosty u piva, letní večer, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-historie-dacie",
+    "country": "Rumunsko",
+    "section": "Historie",
+    "topic": "Dácie a Řím",
+    "headline": "Válka, po které vznikl rumunský národ",
+    "fact": "Římský císař Trajan dobyl v letech 101 až 106 n. l. Dácii a připojil ji k impériu jako provincii; vítězství si nechal navěky zvěčnit na Trajánově sloupu v Římě.",
+    "source_url": "https://en.wikipedia.org/wiki/Roman_Dacia",
+    "source_quote": "Roman sources officially list Dacia as an imperial province on 11 August 106 AD",
+    "voice": "Sloup v Římě dodnes vypráví příběh, který začal daleko na Dunaji.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Trajánova sloupu v Římě s vytesanými reliéfy bitevních scén, jasná obloha, 16:9",
+    "ll": [23.3103, 45.6203],
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Odkud se vzalo jméno 'Rumun'",
+        "fact": "Po dobytí Dácie sem Řím přivedl osadníky a vojáky z celé říše — smíšení místních Dáků s římskými přistěhovalci a jejich latinou je základem teorie, podle které si Rumuni dodnes říkají 'římané' (rumâni/români).",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_Dacia",
+        "source_quote": "the Latin language spoken in Dacia ... became the Romanian language, making the Romanians descendants of the Daco-Romans",
+        "voice": "Jméno národa v sobě dodnes nese vzpomínku na římské legie.",
+        "image_prompt": "Fotorealistický snímek archeologických římských ruin v Rumunsku, kamenné základy a sloupy, podzimní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Spor, který historikové nevyřešili",
+        "fact": "O tom, co se s románskou populací Dácie dělo po odchodu římské správy, se historikové dodnes přou — jedna teorie tvrdí, že Rumuni jsou přímí potomci Daco-Římanů na místě, druhá je odvozuje z Balkánu jižně od Dunaje.",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_Dacia",
+        "source_quote": "the fate after the Roman withdrawal is controversial",
+        "voice": "O původu celého národa se vede spor, který ani archeologie zatím nerozsoudila.",
+        "image_prompt": "Fotorealistický snímek staré mapy jihovýchodní Evropy s vyznačenou římskou Dácií, historický styl, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-historie-sjednoceni",
+    "country": "Rumunsko",
+    "section": "Historie",
+    "topic": "Velké sjednocení",
+    "headline": "Den, kdy se Transylvánie stala Rumunskem",
+    "fact": "1. prosince 1918 vyhlásilo shromáždění více než 1 200 zástupců v Alba Iulii sjednocení Transylvánie s Rumunskem — datum se dodnes slaví jako rumunský státní svátek.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Union_Day",
+    "source_quote": "1,228 elected representatives of the Romanians in Transylvania, Banat, Crișana, and Maramureș ... Great Union Day is a Romanian national holiday celebrated on 1 December to mark the 1918 Great Union.",
+    "voice": "Jedno shromáždění v malém sedmihradském městě rozhodlo o hranicích na další století.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického náměstí v Alba Iulii s pamětní síní Velkého sjednocení, slavnostní atmosféra, denní světlo, 16:9",
+    "ll": [23.5697, 46.0733],
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Král, který sjednocení stvrdil",
+        "fact": "Rozhodnutí shromáždění v Alba Iulii formálně potvrdil o pár dní později král Ferdinand I., čímž se z revolučního prohlášení stala platná státní hranice uznaná i navenek.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Union_Day",
+        "source_quote": "The lands named in the resolution of the Alba-Iulia National Assembly ... are and remain forever united with the Kingdom of Romania.",
+        "voice": "Podpis krále proměnil provolání davu v hranici na mapě.",
+        "image_prompt": "Fotorealistický snímek historického královského paláce v Bukurešti, slavnostní výzdoba, 16:9"
+      },
+      "kartograf": {
+        "headline": "Konec první světové války přerýsoval celou mapu regionu",
+        "fact": "Sjednocení Rumunska bylo součástí širšího rozpadu Rakouska-Uherska po první světové válce, kdy na troskách staré monarchie vznikla i další nová hraniční uspořádání ve střední Evropě, například Československo.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Union_Day",
+        "voice": "Jedna prohraná válka jedné říše dala vzniknout hranicím hned několika nových států.",
+        "image_prompt": "Fotorealistický snímek staré mapy střední Evropy z roku 1919 s novými hranicemi, historický styl, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ro-historie-revoluce",
+    "country": "Rumunsko",
+    "section": "Historie",
+    "topic": "Revoluce 1989",
+    "headline": "Jediná krvavá revoluce roku 1989",
+    "fact": "Zatímco komunistické režimy ve zbytku východního bloku padaly v roce 1989 pokojně, v Rumunsku skončila vláda Nicolae Ceaușesca násilným povstáním a jeho popravou na Boží hod vánoční 1989.",
+    "source_url": "https://en.wikipedia.org/wiki/Romanian_Revolution",
+    "source_quote": "the only one that violently overthrew a country's leadership and executed its leader",
+    "voice": "Zatímco jinde stačilo pár týdnů demonstrací, tady musela padnout i hlava diktátora.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dokumentární snímek davu na náměstí v rumunském městě v prosinci 1989, transparenty, zimní počasí, 16:9",
+    "ll": [26.0967, 44.4394],
+    "tags": ["dejiny", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Poslední projev, který se zvrhl",
+        "fact": "Ceaușescu se 21. prosince 1989 pokusil promluvit k davu z balkonu v Bukurešti tak jako mnohokrát předtím — tentokrát ho ale dav uprostřed proslovu začal pískat a křičet, a další den uprchl z budovy strany vrtulníkem ze střechy.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_Revolution",
+        "source_quote": "a high-pitched scream was heard in the distance. Within seconds, this developed into widespread shouting and screaming ... Ceaușescu and Elena fled into a lift headed for the roof",
+        "voice": "Balkon, ze kterého roky vládl, se najednou obrátil proti němu.",
+        "image_prompt": "Fotorealistický dokumentární snímek balkonu vládní budovy v Bukurešti s davem lidí dole, prosinec 1989, 16:9"
+      },
+      "kartograf": {
+        "headline": "Soud, který trval dvě hodiny",
+        "fact": "Ceaușescu a jeho manželku odsoudil narychlo svolaný vojenský tribunál na Štědrý den 1989 k trestu smrti po pouhých dvou hodinách jednání — bleskový proces bez odvolání byl tak úplným opakem zdlouhavých revolucí jinde v regionu.",
+        "source_url": "https://en.wikipedia.org/wiki/Romanian_Revolution",
+        "source_quote": "The trial lasted for about two hours and delivered death sentences to the couple",
+        "voice": "Dvě hodiny rozhodly o konci vlády, která trvala desítky let.",
+        "image_prompt": "Fotorealistický dokumentární snímek opuštěné soudní síně s dřevěným nábytkem, chladné zimní světlo, 16:9"
+      }
+    }
+  }
+]

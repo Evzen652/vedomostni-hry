@@ -1,0 +1,944 @@
+[
+  {
+    "id": "ar-mista-iguazu",
+    "country": "Argentina",
+    "section": "Místa",
+    "topic": "Vodopády Iguazú",
+    "headline": "Skoro třikrát širší než Niagara",
+    "fact": "Vodopády Iguazú na hranici Argentiny a Brazílie se rozkládají v podkovovitém tvaru přes téměř tři kilometry a jsou třikrát širší než Niagara Falls.",
+    "source_url": "https://en.wikipedia.org/wiki/Iguazu_Falls",
+    "source_quote": "extend for 2.7 km … nearly three times wider than Niagara Falls",
+    "voice": "Když je poprvé spatřila Eleanor Rooseveltová, prý zvolala: 'Chudák Niagara!'",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek vodopádů Iguazú — vodní záclona a oblak mlhy, džungle ze všech stran, dramatické světlo, bez lidí, 16:9",
+    "ll": [
+      -54.4429,
+      -25.6953
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hrdlo ďábla: vodopád jako zánik světa",
+        "fact": "Nejmohutnější část Iguazú se nazývá Garganta del Diablo — Hrdlo ďábla. V užké soutěsce se sráží voda ze čtyřiceti oddělených kaskád; hluk je slyšet z mnoha kilometrů a ve vzduchu je neustálý déšť mlhy.",
+        "source_url": "https://en.wikipedia.org/wiki/Devil%27s_Throat_(waterfall)",
+        "source_quote": "the Devil's Throat … a U-shaped waterfall and the most impressive part of Iguazú",
+        "voice": "Stůjte u okraje a dívejte se dolů. To je konec světa.",
+        "image_prompt": "Fotorealistický snímek pohledu do Hrdla ďábla na Iguazú — voda padá do propasti a stoupá oblak páry, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Trojmezí a sdílená ochrana přírody",
+        "fact": "Iguazú leží na trojmezí Argentiny, Brazílie a Paraguaye. Oba národní parky (argentinský a brazilský) jsou zapsány na listině UNESCO, a přestože státní hranice vodu rozděluje, ekosystém přesahuje hranice — příklad celosvětové výzvy sdílení ochrany přírody.",
+        "source_url": "https://en.wikipedia.org/wiki/Iguazu_National_Park",
+        "source_quote": "a UNESCO World Heritage Site … spanning the border between Argentina and Brazil",
+        "voice": "Příroda nectí hranice, státy ano. Kdo chrání, co hranice rozdělí?",
+        "image_prompt": "Fotorealistický letecký snímek Iguazú — zelená džungle a vodopády na hranici dvou zemí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-mista-patagonie",
+    "country": "Argentina",
+    "section": "Místa",
+    "topic": "Argentinská Patagonie",
+    "headline": "Nejmíň obydlená krajina mimo polární oblasti",
+    "fact": "Argentinská Patagonie je obrovská stepní a hornatá oblast na jihu země; je jednou z nejřídčeji osídlených oblastí světa, kde na čtvereční kilometr připadají jen zlomky obyvatel.",
+    "source_url": "https://en.wikipedia.org/wiki/Patagonia",
+    "source_quote": "Patagonia … one of the least densely populated regions in the world",
+    "voice": "Dny jízdy bez vesnice. Vítr jako jediný soused.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek argentinské patagoniánské stepi — nekonečná tráva a vzdálené Andes, dramatická oblačnost, bez lidí a bez staveb, 16:9",
+    "ll": [
+      -68.0,
+      -45.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ledovec Perito Moreno: živoucí hora ledu",
+        "fact": "Ledovec Perito Moreno v Patagonii je vzácností — roste místo ústupu. Pravidelně se prolamuje do jezera Argentina v dramatickém přirozeném spektáklu. Je jedním z nejpřístupnějších ledovců na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Perito_Moreno_Glacier",
+        "source_quote": "Perito Moreno Glacier … one of the few glaciers in the world that is not retreating",
+        "voice": "Ledovec, který roste. V době klimatických změn je to zpráva.",
+        "image_prompt": "Fotorealistický snímek ledovce Perito Moreno — modrý ledový čelní líc se prolamuje do ledovcového jezera, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sporné hranice na konci světa",
+        "fact": "Patagonie byla po staletí předmětem sporu mezi Argentinou a Chile. Hranici v Andách definovaly mezinárodní arbitráže. Spory o ostrůvky v Beaglově průplavu málem vedly k válce v roce sedmdesát osm.",
+        "source_url": "https://en.wikipedia.org/wiki/Beagle_conflict",
+        "source_quote": "The Beagle conflict was a territorial dispute … nearly led to armed conflict in 1978",
+        "voice": "Hranice v horách a na konci světa jsou těžko dohodnutelné.",
+        "image_prompt": "Fotorealistický letecký snímek Andského hřebene jako přirozené hranice mezi Argentinou a Chile, ledovce a jezera, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-mista-ba",
+    "country": "Argentina",
+    "section": "Místa",
+    "topic": "Buenos Aires",
+    "headline": "Paříž Jižní Ameriky s vlastním rytmem",
+    "fact": "Buenos Aires je hlavní a největší město Argentiny; jeho architektura, kavárny a kulturní scéna mu vynesly přezdívku 'Paříž Jižní Ameriky'.",
+    "source_url": "https://en.wikipedia.org/wiki/Buenos_Aires",
+    "source_quote": "Buenos Aires is often called the 'Paris of South America'",
+    "voice": "Asado, tango, Borges a protestní demonstrace — vše najednou na jedné ulici.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek barevné čtvrti La Boca v Buenos Aires — pestrobarevné domy Caminita, přirozené světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Argentinská identita mezi Evropou a Amerikou",
+        "fact": "Argentina přijala ve vlnách miliony evropských přistěhovalců — Italy, Španěly, Němce, Židy. Buenos Aires má více italsky znějících příjmení než průměrné italské město. Tato multikulturní sedimentace formuje argentinskou identitu dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Immigration_to_Argentina",
+        "source_quote": "Argentina was one of the major destinations for European immigration … particularly from Italy and Spain",
+        "voice": "Argentinec je Ital, co mluví španělsky a myslí si, že je Francouz.",
+        "image_prompt": "Fotorealistický snímek kavárny v Buenos Aires s art déco interiérem, marmolové stoly, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přístavní město a mocenské centrum jihu kontinentu",
+        "fact": "Buenos Aires leží na Río de la Plata — ústí dvou obrovských jihoamerických řek. Geografická poloha z něj udělala přirozený export-import hub pro celý Jižní kužel kontinentu a sídlo kontinentálního obchodu.",
+        "source_url": "https://en.wikipedia.org/wiki/Buenos_Aires",
+        "source_quote": "situated on the western shore of the Río de la Plata … on the southeastern coast of the South American continent",
+        "voice": "Kde se řeky stékají, tam vyrůstají města.",
+        "image_prompt": "Fotorealistický letecký snímek Buenos Aires na břehu Río de la Plata, moderní metropole a vodní šíře, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-priroda-pampas",
+    "country": "Argentina",
+    "section": "Příroda",
+    "topic": "Pampas",
+    "headline": "Trávobylinné moře, které živí svět hovězím",
+    "fact": "Argentinské pampas jsou rozsáhlé úrodné roviny s bohatou černozemí; jsou základem argentinského zemědělství a jednou z nejproduktivnějších zemědělských oblastí světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Pampas",
+    "source_quote": "The Pampas … one of the world's major agricultural regions … exceptionally fertile soils",
+    "voice": "Nekonečná tráva, vítr a kde-kdo gaucho na koni.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek argentinských pampas — nekonečná travnatá rovina za úsvitu, dramatická obloha, bez lidí, 16:9",
+    "ll": [
+      -63.0,
+      -34.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Gaucho: volný jezdec jako kulturní symbol",
+        "fact": "Gaucho je tradiční argentinský a uruguayský pastevec — jezdec pampasů, symbol svobody a nezávislosti. Jeho obraz hraje v argentinské národní identitě podobnou roli jako cowboy v americké.",
+        "source_url": "https://en.wikipedia.org/wiki/Gaucho",
+        "source_quote": "The gaucho … a symbol of national identity in Argentina and Uruguay",
+        "voice": "Pampa a gaucho — země si vytváří své hrdiny.",
+        "image_prompt": "Fotorealistický snímek argentinského gaucha na koni uprostřed pampasů, tradiční oblečení a boleadoras, zlaté světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Monokultura a zranitelnost zemědělského systému",
+        "fact": "Pampas jsou dnes z velké části přeměněny na monokultury sóji a pšenice, které Argentina vyváží jako major commodity. Intenzivní zemědělství způsobuje erozi půdy a ztrátu biodiverzity — model, který se opakuje v celé Jižní Americe.",
+        "source_url": "https://en.wikipedia.org/wiki/Soy_agriculture_in_Argentina",
+        "source_quote": "Argentina is one of the world's largest exporters of soy … raising concerns about deforestation",
+        "voice": "Úrodná půda: největší bohatství i největší pokušení.",
+        "image_prompt": "Fotorealistický letecký snímek argentinských polí sóji na pampasech — geometrická pole do obzoru, zlaté světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-priroda-valdes",
+    "country": "Argentina",
+    "section": "Příroda",
+    "topic": "Poloostrov Valdés",
+    "headline": "Kde velryby líhnou mláďata na jižním Atlantiku",
+    "fact": "Poloostrov Valdés v Patagonii je hnízdiště jižní velryby pravé a místo, kde orky loví tuleně přímo na pláži; UNESCO ho zapsalo jako světové přírodní dědictví.",
+    "source_url": "https://en.wikipedia.org/wiki/Pen%C3%ADnsula_Vald%C3%A9s",
+    "source_quote": "Península Valdés … a UNESCO Natural World Heritage Site … important for the conservation of marine mammals",
+    "voice": "Orca plující na pláž za tuleněm — příroda bez cenzury.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jižní velryby pravé s mládětem u poloostrova Valdés, modré atlantické moře, 16:9",
+    "ll": [
+      -64.0,
+      -42.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Orky a jejich kulturní lov",
+        "fact": "Na Valdésu se skupiny ork naučily záměrně najíždět na pláž a chytat tuleně — tento způsob lovu se předává z generace na generaci a je jedním ze zdokumentovaných příkladů kulturního přenosu chování u zvířat.",
+        "source_url": "https://en.wikipedia.org/wiki/Orca#Cultural_behavior",
+        "source_quote": "Orcas … intentional stranding … to catch prey … a learned behaviour passed between generations",
+        "voice": "Velryba s kulturou: to mění, co si myslíme o inteligenci.",
+        "image_prompt": "Fotorealistický snímek orky na okraji pláže poloostrova Valdés při lovu, dramatický atlantický příboj, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mořská ochrana a ekonomika přirozené turistiky",
+        "fact": "Poloostrov Valdés je ukázkou úspěšné ochrany mořských savců v kombinaci s ekologickým turismem. Model udržitelné turistiky jako alternativy k průmyslovému rybolovu je studovaný po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Pen%C3%ADnsula_Vald%C3%A9s",
+        "source_quote": "the area is protected … and is a major ecotourism destination",
+        "voice": "Ochrana přírody a ekonomika nemusí být nepřátelé.",
+        "image_prompt": "Fotorealistický letecký snímek poloostrova Valdés, skalnaté atlantické pobřeží, moře modré jako sklo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-lide-borges",
+    "country": "Argentina",
+    "section": "Lidé",
+    "topic": "Jorge Luis Borges",
+    "headline": "Básník labyrintů a nekonečných knihoven",
+    "fact": "Jorge Luis Borges je argentinský spisovatel považovaný za jednoho z nejvlivnějších autorů světové literatury; jeho povídky zkoumají nekonečno, bludiště a zrcadla reality.",
+    "source_url": "https://en.wikipedia.org/wiki/Jorge_Luis_Borges",
+    "source_quote": "Borges … is considered one of the most significant writers of the 20th century",
+    "voice": "Knihovna, která obsahuje všechny knihy. Borges to napsal a matematiků se z toho dodnes chvěje.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické knihovny v Buenos Aires s vysokými regály a spirálním schodištěm, teplé světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slepota jako dar a prokletí",
+        "fact": "Borges oslepl ve středním věku — přesto pokračoval ve tvorbě diktováním. Paradoxně jmenován ředitelem argentinské národní knihovny v době, kdy přestal vidět. Říkal, že osud se mu krutě vysmál.",
+        "source_url": "https://en.wikipedia.org/wiki/Jorge_Luis_Borges",
+        "source_quote": "Borges went blind … was appointed Director of the National Public Library … at the time of his blindness",
+        "voice": "Největší čtenář se stal slepým — a diktoval dál.",
+        "image_prompt": "Fotorealistický snímek argentinské Národní knihovny (Biblioteca Nacional) v Buenos Aires, moderní brutalistická architektura, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Buenos Aires jako literární světové město",
+        "fact": "Buenos Aires je jedním z měst s nejvyšší koncentrací knihkupectví na světě a UNESCO ho označilo jako Město knihy. Spojení evropské emigrace, literárních kaváren a silné vydavatelské tradice vytvořilo výjimečné literární prostředí.",
+        "source_url": "https://en.wikipedia.org/wiki/Buenos_Aires",
+        "source_quote": "Buenos Aires … designated as a UNESCO Creative City of Design",
+        "voice": "Město, kde vychází více knih než filmů — a hrdé na to.",
+        "image_prompt": "Fotorealistický snímek Buenos Aires knihkupectví El Ateneo v historickém divadle, regály knih ve zlatém sálu, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-kultura-tango",
+    "country": "Argentina",
+    "section": "Kultura & tradice",
+    "topic": "Tango",
+    "headline": "Tanec zrozený z přistěhovaleckého smutku",
+    "fact": "Tango vzniklo v Buenos Aires na přelomu devatenáctého a dvacátého století v chudinských čtvrtích přistěhovalců; UNESCO ho zapsalo do seznamu nehmotného kulturního dědictví.",
+    "source_url": "https://en.wikipedia.org/wiki/Tango",
+    "source_quote": "Tango … originated in the working-class neighborhoods of Buenos Aires … inscribed on the UNESCO list of Intangible Cultural Heritage",
+    "voice": "Dva těla, jedna vůle — a dost místa na bolest.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek páru tančícího tango na ulici La Boca v Buenos Aires, noční světla, dramatická póza, 16:9",
+    "ll": [
+      -58.3629,
+      -34.6345
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bandonéon: nástroj pro cizince v cizí zemi",
+        "fact": "Klíčovým nástrojem tanga je bandonéon — malý knoflíkový akordeon přivezený německými přistěhovalci. Přišel z Evropy, ale stal se zcela argentinským. Tango je tedy synkretická hudba z nástrojů přistěhovalců.",
+        "source_url": "https://en.wikipedia.org/wiki/Band%C3%B3ne%C3%B3n",
+        "source_quote": "the bandoneón … became strongly associated with tango music in Argentina",
+        "voice": "Německý nástroj, italský tanečník, španělský text — a argentinská duše.",
+        "image_prompt": "Fotorealistický snímek muzikanta hrajícího na bandonéon v osvětlené milonze v Buenos Aires, atmosférické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tango jako cestovatel: z přístavů do světa",
+        "fact": "Tango prošlo v dvacátém století globalizací — z chudinských předměstí Buenos Aires do pařížských salonů a newyorských divadel. Je příkladem, jak kultura migruje a mění se v přijímající společnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Tango",
+        "source_quote": "Tango spread rapidly from Buenos Aires to Paris and other European cities",
+        "voice": "To, co vyrostlo v bídě, přijali bohatí jako vysoké umění.",
+        "image_prompt": "Fotorealistický snímek Buenos Aires noční čtvrtě San Telmo s tanečníky tanga a barevnými světly, atmosféra, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-jidlo-asado",
+    "country": "Argentina",
+    "section": "Jídlo",
+    "topic": "Asado",
+    "headline": "Rituál u ohně, ne jen grilování",
+    "fact": "Asado je argentinský způsob přípravy masa na dřevěném ohni nebo uhlí; je více než jídlo — je to společenský rituál, slavnost a způsob trávení času s rodinou.",
+    "source_url": "https://en.wikipedia.org/wiki/Asado",
+    "source_quote": "Asado … is not just a meal but a social event in Argentine culture",
+    "voice": "Asador nepospíchá. Maso na roštu čeká, než bude připraveno.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek asado — maso na roštu nad dřevěným ohněm v argentinském pampasovém prostředí, dým, zlaté světlo, 16:9",
+    "ll": [
+      -63.0,
+      -34.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Malbec: víno k asadu jako přirozená dvojice",
+        "fact": "Argentinské malbec — původem francouzská odrůda vína — se v Mendoze přizpůsobilo specifickým klimatickým podmínkám Andského podhůří a vyvinulo zcela odlišný charakter. Dnes je Argentina jedním z předních světových exportérů malbec.",
+        "source_url": "https://en.wikipedia.org/wiki/Malbec",
+        "source_quote": "Argentina … has become the world's leading producer of Malbec",
+        "voice": "Francouzská réva si v Andách vytvořila novou identitu.",
+        "image_prompt": "Fotorealistický snímek argentinských vinic v Mendoze u paty And, řady révy a hory v pozadí, zlatá hodina, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hovězí jako vývozní artikl a kulturní identita",
+        "fact": "Argentina je tradičně jedním z předních světových vývozců hovězího masa. Rozsáhlé pampasy umožnily chov dobytka ve velkém měřítku. Hovězí je přitom natolik zakotveno v kultuře, že průměrný Argentinec sní výrazně více masa než průměrný Evropan.",
+        "source_url": "https://en.wikipedia.org/wiki/Agriculture_in_Argentina",
+        "source_quote": "Argentina … one of the world's leading exporters of beef",
+        "voice": "Přírodní zdroje formují kulturu jídla na staletí.",
+        "image_prompt": "Fotorealistický letecký snímek argentinské farmy s dobytkem na pampasové rovině, zelená pastvina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-historie-evita",
+    "country": "Argentina",
+    "section": "Historie",
+    "topic": "Eva Perón",
+    "headline": "Žena lidu, která se stala legendou",
+    "fact": "Eva Perón — Evita — byla manželkou argentinského prezidenta Juana Peróna a stala se symbolem sociální spravedlnosti pro chudé; zemřela mladá a stala se ikonou argentinského peronismu.",
+    "source_url": "https://en.wikipedia.org/wiki/Eva_Per%C3%B3n",
+    "source_quote": "Eva Perón … became a cultural icon in Argentina",
+    "voice": "Milovaná a nenáviděná. Argentina ji nikdy nepřestala zmiňovat.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hřbitova La Recoleta v Buenos Aires s mausoleem rodiny Duarte — secesní náhrobky a cypřiše, přirozené světlo, 16:9",
+    "ll": [
+      -58.3939,
+      -34.5874
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Chudé dítě z pampy u prezidentského pultu",
+        "fact": "Eva vzešla z chudoby na argentinském venkově a bez formálního vzdělání se stala nejmocnější ženou země. Vedla nadaci pro chudé, pomáhala ženám získat volební právo a bojovala za práva dělníků.",
+        "source_url": "https://en.wikipedia.org/wiki/Eva_Per%C3%B3n",
+        "source_quote": "Eva worked to extend labor rights, women's suffrage, and establish a large social aid program",
+        "voice": "Z pampy do Casa Rosada: cesta, kterou nečekal nikdo.",
+        "image_prompt": "Fotorealistický snímek prezidentského paláce Casa Rosada v Buenos Aires, historická růžová fasáda, Plaza de Mayo, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Peronismus: hnutí, které tvaruje politiku dodnes",
+        "fact": "Peronismus — politické hnutí Juana a Evy Perón — je stále živou silou v argentinské politice. Zahrnuje levicové i pravicové proudy; jeho přitažlivost pro chudé třídy a odpor elit definují argentinskou politiku již desítky let.",
+        "source_url": "https://en.wikipedia.org/wiki/Peronism",
+        "source_quote": "Peronism … continues to play a significant role in Argentine politics",
+        "voice": "Politické hnutí z padesátých let — a Argentina ho stále nedokáže opustit.",
+        "image_prompt": "Fotorealistický snímek Plaza de Mayo v Buenos Aires s shromážděním lidí, historické budovy kolem náměstí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-sport-polo",
+    "country": "Argentina",
+    "section": "Sport",
+    "topic": "Polo",
+    "headline": "Argentinská polo šlechta a nejlepší koně světa",
+    "fact": "Argentina je globálně dominantní silou v polosportu; argentinští hráči jsou považováni za nejlepší na světě a argentinský criollo je ceněné polo-plemeno.",
+    "source_url": "https://en.wikipedia.org/wiki/Polo_in_Argentina",
+    "source_quote": "Argentina is considered the dominant force in international polo",
+    "voice": "Kůň a hráč jako jeden organismus. Polo v Argentině je umění.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek polo zápasu v argentinské pampasové krajině — hráči na koních v akci, dramatické světlo, 16:9",
+    "ll": [
+      -63.0,
+      -34.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Gauchovská tradice jako základ polové dominance",
+        "fact": "Argentinská dominance v polo vychází z gauchovské kultury práce s koňmi. Rozsáhlé pampasy umožnily chov polo-koní ve velkém měřítku a gauchovské ježdění od dětství dalo hráčům přirozený základ.",
+        "source_url": "https://en.wikipedia.org/wiki/Polo_in_Argentina",
+        "source_quote": "Argentina's polo tradition is deeply rooted in its gaucho heritage",
+        "voice": "Kůň není jen nástroj — je to životní styl.",
+        "image_prompt": "Fotorealistický snímek mladého jezdce cvičícího polo s koněm na argentinské pampasové farmě, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport jako měkká moc a export identity",
+        "fact": "Argentinské polo-koně a trenéři jsou exportovány do celého světa. Je to příklad, kdy přírodní zdroje (pastvy pro koně) a kulturní tradice (gaucho) vytvořily komparativní výhodu, která se promítla do globálního exportu.",
+        "source_url": "https://en.wikipedia.org/wiki/Polo_in_Argentina",
+        "source_quote": "Argentine polo players and horses are exported worldwide",
+        "voice": "I kůň může být exportní produkt — a diplomatický nástroj.",
+        "image_prompt": "Fotorealistický snímek polo koní argentinského plemene criollo na pastvině s Andami v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-umeni-piazzolla",
+    "country": "Argentina",
+    "section": "Umění",
+    "topic": "Astor Piazzolla",
+    "headline": "Muž, který dal tangu klasickou hudbu",
+    "fact": "Astor Piazzolla byl argentinský skladatel, který transformoval tradiční tango do nové formy — nuevo tango — kombinující prvky jazz a klasické hudby.",
+    "source_url": "https://en.wikipedia.org/wiki/Astor_Piazzolla",
+    "source_quote": "Piazzolla … revolutionized the traditional tango into a new style … nuevo tango",
+    "voice": "Konzervativci mu nadávali. Svět mu tlieskal.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bandonéonu a not na dřevěném stole v osvětleném hudebním sálu Buenos Aires, atmosférické světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Paříž jako škola, Buenos Aires jako duše",
+        "fact": "Piazzolla studoval klasickou kompozici v Paříži u Nadii Boulanger. Ta mu řekla, aby neopouštel tango — je to jeho identita. Vrátil se a tango proměnil. Mistr studuje u Pařížanky, ale píše o Argentině.",
+        "source_url": "https://en.wikipedia.org/wiki/Astor_Piazzolla",
+        "source_quote": "Nadia Boulanger … encouraged Piazzolla to develop his unique style of tango",
+        "voice": "Pedagog, který řekl: 'Nezapomínej, odkud jsi.'",
+        "image_prompt": "Fotorealistický snímek Paříže a argentinské vlajky v kompozici — metafora kultivace argentinského génia v Evropě, 16:9"
+      },
+      "kartograf": {
+        "headline": "Buenos Aires jako latinskoamerické kulturní centrum",
+        "fact": "Buenos Aires je centrem latinskoamerické hudby, divadla a literatury. Díky migraci a koncentraci vzdělání a kultury je jedním z globálních měst, kde se produkuje kulturní obsah exportovaný po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Buenos_Aires",
+        "source_quote": "Buenos Aires … one of the major cultural centres of Latin America",
+        "voice": "Město, které exportuje kulturu víc než sóju.",
+        "image_prompt": "Fotorealistický snímek Teatro Colón v Buenos Aires — neoklasická fasáda slavné opery, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-jazyk-lunfardo",
+    "country": "Argentina",
+    "section": "Jazyk & slova",
+    "topic": "Lunfardo",
+    "headline": "Podsvětní slang, který dobyl Buenos Aires",
+    "fact": "Lunfardo je argot vzniklý v Buenos Aires na přelomu devatenáctého a dvacátého století mezi přistěhovalci a kriminálním světem; dnes je součástí běžné argentinské španělštiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Lunfardo",
+    "source_quote": "Lunfardo … originated in the lower classes of Buenos Aires … now widely used throughout Argentina",
+    "voice": "Jazyky ulic přežívají věky — a stanou se literaturou.",
+    "visual_type": "typographic",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vesre: argentinský způsob obrácení slabik",
+        "fact": "Lunfardo používá techniku zvanou vesre — obrácení slabik v slově (vesre = reversa). 'Café' se stane 'feca', 'tango' se stane 'gotan'. Je to jazyková hra zrozená z touhy po kódu, který cizinci nerozumí.",
+        "source_url": "https://en.wikipedia.org/wiki/Lunfardo",
+        "source_quote": "vesre … reversal of syllables … a feature of Lunfardo",
+        "voice": "Obrátit slabiky je jednoduchý trik s dlouhou tradicí.",
+        "image_prompt": "Fotorealistický snímek novinových titulků nebo graffiti v argentinské španělštině na ulici Buenos Aires, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přistěhovalecký jazyk jako kulturní tavící kotlík",
+        "fact": "Lunfardo vznikl mísením italštiny, španělštiny, angličtiny a dalších přistěhovaleckých jazyků. Je linguistickým dokladem toho, jak masová migrace mění jazyk — a jazyková mapa Buenos Aires odráží vlny přistěhovalectví.",
+        "source_url": "https://en.wikipedia.org/wiki/Lunfardo",
+        "source_quote": "Lunfardo absorbed words from Italian, Spanish, and other immigrant languages",
+        "voice": "Jazyk je zrcadlem toho, kdo přišel a zůstal.",
+        "image_prompt": "Fotorealistický snímek barevné ulice La Boca v Buenos Aires s nápisem v lunfardu, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-priroda-parana",
+    "country": "Argentina",
+    "section": "Příroda",
+    "topic": "Řeka Paraná a mokřady",
+    "headline": "Druhá největší řeka Jižní Ameriky teče přes Argentina",
+    "fact": "Řeka Paraná je druhou největší řekou Jižní Ameriky po Amazonce; ústí do Río de la Plata a formuje rozsáhlé mokřady s bohatou biodiverzitou v severovýchodní Argentině.",
+    "source_url": "https://en.wikipedia.org/wiki/Paran%C3%A1_River",
+    "source_quote": "the Paraná River … the second largest river in South America … forms extensive wetlands",
+    "voice": "Tam, kde se Paraná mísí s Paraguají, vznikají mokřady větší než Belgie.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řeky Paraná v Argentině — obrovský tok s ostrovy a mokřady, ranní mlha, džungle po stranách, 16:9",
+    "ll": [
+      -59.0,
+      -27.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mesopotamia: Argentina mezi dvěma řekami",
+        "fact": "Severovýchodní Argentina mezi Parankou a Uruguayí se nazývá Mesopotamia — analogie k historickému Mezopotámii. Je to vlhký, subtropický region s národním parkem Iberá — jedním z největších sladkovodních mokřadů světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Corrientes_Province",
+        "source_quote": "Mesopotamia Argentina … region between the Paraná and Uruguay rivers",
+        "voice": "Argentina není jen Patagonie a Buenos Aires. Taky jsou tu bažiny.",
+        "image_prompt": "Fotorealistický snímek mokřadů Iberá v argentinské Mesopotamii — kaimani, kapybary a ptáci u vodní hladiny, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Itaipu: hydroenergie jako geopolitika",
+        "fact": "Na horní Paraně leží přehrada Itaipu — jedním z největších hydroelektráren světa, sdílených Brazílií a Paraguayí. Tok Parany a jeho energetický potenciál jsou předmětem mezistátních smluv a geopolitického vlivu.",
+        "source_url": "https://en.wikipedia.org/wiki/Itaipu_Dam",
+        "source_quote": "Itaipu Dam … one of the largest hydroelectric plants in the world … on the Paraná River",
+        "voice": "Řeka jako elektřina. A elektřina jako moc.",
+        "image_prompt": "Fotorealistický letecký snímek přehrady Itaipu na Paraně — obrovská betonová hráz, zelená krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-lide-sanmartin",
+    "country": "Argentina",
+    "section": "Lidé",
+    "topic": "José de San Martín",
+    "headline": "Osvoboditel tří zemí z jednoho sedla",
+    "fact": "José de San Martín je národním hrdinou Argentiny, Chile i Peru; vedl osvobozenecké armády přes Andy a osvobodil velkou část Jižní Ameriky od španělské nadvlády.",
+    "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_de_San_Mart%C3%ADn",
+    "source_quote": "José de San Martín … one of the liberators of Argentina, Chile, and Peru",
+    "voice": "Tři země, jedno jméno. San Martín.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jezdecké sochy José de San Martína na náměstí v Buenos Aires, historická architektura, přirozené světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přechod And: logistický zázrak",
+        "fact": "San Martínova armáda přešla v lednu Andské pohoří přes pět průsmyků najednou — koordinovaný tah, při němž Španělé nevěděli, kde útok přijde. Byl to vojenský i logistický výkon bez přirovnání.",
+        "source_url": "https://en.wikipedia.org/wiki/Crossing_of_the_Andes",
+        "source_quote": "the Crossing of the Andes … considered one of the greatest military feats in history",
+        "voice": "Hannibal měl slony. San Martín měl muly a koordinaci.",
+        "image_prompt": "Fotorealistický snímek andského průsmyku Uspallata, strmé hory a historická silnice, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nezávislost jako geopolitický projekt",
+        "fact": "San Martínova strategie nebyla jen vojenská — chápal, že svoboda Argentiny závisí na osvobození Chile a Peru, protože Španělé by jinak operovali z pobřeží. Myslel v geopolitickém systému, ne v hranicích jednoho státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_de_San_Mart%C3%ADn",
+        "source_quote": "San Martín understood that Argentine independence required the liberation of Chile and Peru",
+        "voice": "Svoboda jednoho státu závisí na svobodě sousedů.",
+        "image_prompt": "Fotorealistický snímek andské krajiny na hranici Argentiny a Chile, historická stezka, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-lide-fangio",
+    "country": "Argentina",
+    "section": "Lidé",
+    "topic": "Juan Manuel Fangio",
+    "headline": "Pětinásobný mistr Formule 1 z Buenos Aires",
+    "fact": "Juan Manuel Fangio je argentinský závodní pilot, který byl pětinásobným mistrem světa Formule 1; mnozí ho považují za největšího závodního pilota v historii.",
+    "source_url": "https://en.wikipedia.org/wiki/Juan_Manuel_Fangio",
+    "source_quote": "Juan Manuel Fangio … five-time Formula One World Champion … widely regarded as one of the greatest drivers of all time",
+    "voice": "Pět titulů. Z Mendozy. Bez moderní technologie.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického závodního vozu z padesátých let na závodní dráze, atmosféra zlaté éry F1, přirozené světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Automobilismus v Argentině: od Fangia k Villeneuvovi",
+        "fact": "Argentina má bohatou tradici automobilismu; rodina Villeneuvů (Gilles a Jacques) pochází z Quebecku, ale argentinskí piloti jako Carlos Reutemann a Fangio vybudovali zlatou éru argentinského motorsportu.",
+        "source_url": "https://en.wikipedia.org/wiki/Argentine_Grand_Prix",
+        "source_quote": "Argentina … a strong tradition in motorsport … hosted the Argentine Grand Prix",
+        "voice": "Někdy malá země vydá velkého závodníka. A pak dalšího.",
+        "image_prompt": "Fotorealistický snímek argentinského závodního okruhu Autodromo Oscar Gálvez v Buenos Aires, historická zástavba v okolí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Patagonie jako testovací polygon automobilismu",
+        "fact": "Slavná Rallye Dakar se každoročně koná v Argentině a Chile — extrémní terén And a Atacamy tvoří ideální testovací polygon. Automobilový průmysl a rallyové závody přinášejí argentinské Patagonii ekonomický dopad i globální publicitu.",
+        "source_url": "https://en.wikipedia.org/wiki/Dakar_Rally",
+        "source_quote": "the Dakar Rally … held in South America … traversing Argentina and Chile",
+        "voice": "Tam, kde není cesta, se testuje, co auto skutečně umí.",
+        "image_prompt": "Fotorealistický snímek Rallye Dakar — závodní auto v argentinsko-chilské poušti, prach a dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-kultura-matecocido",
+    "country": "Argentina",
+    "section": "Kultura & tradice",
+    "topic": "Maté",
+    "headline": "Národní nápoj jako filozofie sdílení",
+    "fact": "Maté je horký nápoj z listů yerba maté; pití maté je v Argentině, Uruguayi a Paraguayi hluboký sociální rituál — dýmka se předává z ruky do ruky a odmítnout ji je nezdvořilé.",
+    "source_url": "https://en.wikipedia.org/wiki/Mat%C3%A9",
+    "source_quote": "Maté … a traditional South American drink … consumed in a social context … passed around among friends",
+    "voice": "Stejná dýmka, stejná ústa. To je maté — důvěra ve sdíleném napití.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek skupiny přátel pijících maté z calabas-tykve s bombilla kovovou slámkou, přirozené světlo, argentisnké prostředí, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bombilla, tykev a rituál přípravy",
+        "fact": "Maté se připravuje v tykvi calabas a pije se přes kovovou sítko-slámu bombillu. Příprava má rituální pravidla — teplota vody, směr nalití, pořadí osob. Je to malá každodenní meditace.",
+        "source_url": "https://en.wikipedia.org/wiki/Mat%C3%A9",
+        "source_quote": "mate … traditionally served in a gourd … drunk through a metal straw called a bombilla",
+        "voice": "Sláma, tykev a voda. A celé hodiny konverzace.",
+        "image_prompt": "Fotorealistický detailní snímek maté v calabas tykvi s bombillou, yerba maté, přirozené denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Yerba maté: od domorodých Guaraní ke globálnímu exportu",
+        "fact": "Yerba maté pochází z kultury domorodých Guaraní v oblasti trojmezí Argentiny, Brazílie a Paraguaje. Dnes je Argentina největším světovým vývozcem yerba maté a spotřeba se šíří do Evropy, Sýrie a Libanonu.",
+        "source_url": "https://en.wikipedia.org/wiki/Mat%C3%A9",
+        "source_quote": "Argentina … the largest producer and exporter of yerba mate … consumption is spreading globally",
+        "voice": "Guaraňský nápoj pijí dnes v Damašku. Kultura cestuje.",
+        "image_prompt": "Fotorealistický snímek plantáže yerba maté v misijské provincii Argentiny — zelené řady keřů v subtropickém terénu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-kultura-carnaval",
+    "country": "Argentina",
+    "section": "Kultura & tradice",
+    "topic": "Karneval v Gualeguaychú",
+    "headline": "Nejdelší karneval světa v malém argentinském městě",
+    "fact": "Karneval v Gualeguaychú v provincii Entre Ríos trvá každoročně přes čtyři měsíce a je považován za jeden z nejdéle trvajících karnevalů na světě — méně slavný než Rio, ale delší.",
+    "source_url": "https://en.wikipedia.org/wiki/Gualeguaych%C3%BA_Carnival",
+    "source_quote": "the Gualeguaychú Carnival … considered one of the longest carnivals in the world",
+    "voice": "Čtyři měsíce slavností. Rio trvá čtyři dny. Čísla hovoří.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek karnevalového průvodu v Gualeguaychú — barevné kostýmy a tančící skupiny v korzodromu, noční světla, 16:9",
+    "ll": [
+      -58.5235,
+      -33.0064
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Murga: satirický tanec argentinské lidovosti",
+        "fact": "Murga je argentinský a uruguayský festivalový žánr — skupina tanečníků v pestrých kostýmech satiricky komentuje politické a společenské dění. Je to lidové umění s ostrými zuby.",
+        "source_url": "https://en.wikipedia.org/wiki/Murga_(Uruguay)",
+        "source_quote": "murga … a type of theatrical and musical art … using satire and social commentary",
+        "voice": "Karneval jako politická satira. To znají v Rioplatě.",
+        "image_prompt": "Fotorealistický snímek murga skupiny v pestrých kostýmech se satirickými maskami, živá festivalová atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Provincie a centrum: kulturní diverzita Argentiny",
+        "fact": "Karneval v Gualeguaychú ukazuje, že argentinská kultura není jen Buenos Aires. Regiony jako Mesopotamia, Cuyo nebo Patagonie mají vlastní tradice, dialekty a identity. Argentina je federace velmi odlišných regionálních kultur.",
+        "source_url": "https://en.wikipedia.org/wiki/Argentina",
+        "source_quote": "Argentina … a federal country … with significant regional cultural diversity",
+        "voice": "Buenos Aires je Argentina? Ne. Je to jedno z jejích měst.",
+        "image_prompt": "Fotorealistický letecký snímek argentinské Mesopotamie — subtropická krajina s řekami, zelená a vlhká, odlišná od Patagonie, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-umeni-xul",
+    "country": "Argentina",
+    "section": "Umění",
+    "topic": "Xul Solar",
+    "headline": "Malíř, který vynalezl vlastní jazyk a kosmologii",
+    "fact": "Xul Solar byl argentinský malíř a mystik, přítel Borgese; vynalezl umělý jazyk neocriollo a jeho obrazy mísí astrologii, kabalu a andskou symboliku do surrealistických vizí.",
+    "source_url": "https://en.wikipedia.org/wiki/Xul_Solar",
+    "source_quote": "Xul Solar … an Argentine painter … created an artificial language called Neo-Criollo … his work blends mysticism and Latin American identity",
+    "voice": "Malíř, astronom, lingvista a mystik. Jen v Buenos Aires.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Muzea Xul Solar v Buenos Aires — historizující vila s výstavou surrealistických obrazů, přirozené světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Neocriollo: jazyk pro novou Latinskou Ameriku",
+        "fact": "Xul Solar navrhoval neocriollo jako amalgám španělštiny a portugaltštiny pro sjednocenou latinskou Ameriku — esperanto jižní polokoule. Projekt zůstal utopií, ale je fascinujícím příkladem kulturního inženýrství.",
+        "source_url": "https://en.wikipedia.org/wiki/Xul_Solar",
+        "source_quote": "Neocriollo … an invented language combining Spanish and Portuguese … to unite Latin America",
+        "voice": "Esperanto pro Latinskou Ameriku. Před sto lety.",
+        "image_prompt": "Fotorealistický snímek obrazu Xul Solara z muzea — surrealistické symboly a geometrické tvary v živých barvách, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Buenos Aires jako kosmopolitní kulturní laboratoř",
+        "fact": "Buenos Aires přijala přistěhovalce z Evropy, Asie i Střední východu a stala se prostorem, kde se rodily avantgardní proudy ve výtvarném umění, literatuře i hudbě. Je to příklad, jak migrace vytváří kulturní synergii.",
+        "source_url": "https://en.wikipedia.org/wiki/Buenos_Aires",
+        "source_quote": "Buenos Aires … a cosmopolitan city … shaped by successive waves of immigration",
+        "voice": "Kde se setkávají světy, vzniká avantgarda.",
+        "image_prompt": "Fotorealistický snímek galerie umění v čtvrti Palermo v Buenos Aires, moderní art-house prostor, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-umeni-cheto",
+    "country": "Argentina",
+    "section": "Umění",
+    "topic": "Argentinský film",
+    "headline": "Dvě Oscarová vítězství z Buenos Aires",
+    "fact": "Argentina získala Oscarová cenu za nejlepší cizojazyčný film dvakrát — La Historia Oficial (osmdesát šest) a El Secreto de sus Ojos (deset); argentinská kinematografie patří k nejrespektovanějším v Latinské Americe.",
+    "source_url": "https://en.wikipedia.org/wiki/Cinema_of_Argentina",
+    "source_quote": "Argentina … has won the Academy Award for Best Foreign Language Film twice",
+    "voice": "Hollywood má peníze. Argentina má příběhy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického kina v Buenos Aires — secesní fasáda historického filmového paláce, neonové nápisy, přirozené světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "La Historia Oficial: film jako svědectví diktatury",
+        "fact": "La Historia Oficial z roku osmdesát čtyři je film o ženě, která zjišťuje, že její adoptivní dcera může být dítětem obětí diktatury. Byl to první celovečerní film o Pinochetovy době a první argentinský Oscar — snímek jde do kina rok po návratu demokracie.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Official_Story",
+        "source_quote": "La Historia Oficial … addresses the aftermath of the military dictatorship … won the Academy Award for Best Foreign Language Film in 1986",
+        "voice": "Film jako kolektivní vyrovnání se s minulostí.",
+        "image_prompt": "Fotorealistický snímek Buenos Aires filmového studia nebo divadla s plakátem argentinského art-house filmu, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jižní Amerika v světovém filmovém průmyslu",
+        "fact": "Argentinský a brazilský film jsou největší latinskoamerické kinematografie. Buenos Aires a São Paulo konkurují Mexiku City jako produkční centrum. Vlna latinskoamerického sociálního realismu ovlivnila světový film v sedmdesátých a osmdesátých letech.",
+        "source_url": "https://en.wikipedia.org/wiki/Cinema_of_Argentina",
+        "source_quote": "Argentine cinema … one of the most prolific and important in Latin America",
+        "voice": "Film ze Jižní Ameriky není jen Hollywood se španělskými titulky.",
+        "image_prompt": "Fotorealistický snímek filmového festivalu v Buenos Aires — diváci před promítacím sálem, plakáty latinskoamerických filmů, noční světla, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-sport-rugby-pumas",
+    "country": "Argentina",
+    "section": "Sport",
+    "topic": "Los Pumas",
+    "headline": "Ragbyové Pumas: malá liga, světová třída",
+    "fact": "Argentinský ragbyový tým Los Pumas se proslavil překvapivým výsledkem na mistrovství světa v Paříži — třetím místem — a je příkladem, jak může jihoamerická ragbyová velmoc konkurovat tradičním zemím.",
+    "source_url": "https://en.wikipedia.org/wiki/Argentina_national_rugby_union_team",
+    "source_quote": "Argentina national rugby team … nicknamed Los Pumas … one of the leading teams in the Americas",
+    "voice": "Ani jeden hráč nepochází z tradiční ragbyové země. A přesto třetí na světě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek argentinského ragbyového týmu Los Pumas na stadionu, dynamická hra, přirozené světlo, bez rozpoznatelných tváří, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rugby Union jako sport vyšší třídy",
+        "fact": "Na rozdíl od fotbalu, rugby union je v Argentině sport střední a vyšší třídy; hráči Pumas tradičně pocházejí z privátních škol Buenos Aires a Cordoby. To je přesně opak Brazílie, kde ragbyový talent pochází z ulice.",
+        "source_url": "https://en.wikipedia.org/wiki/Rugby_union_in_Argentina",
+        "source_quote": "Rugby union in Argentina … predominantly associated with private schools and middle-upper classes",
+        "voice": "Stejný sport — jiný sociální původ hráčů. Geografie tříd.",
+        "image_prompt": "Fotorealistický snímek soukromé školy v Buenos Aires s ragbyovým hřištěm, historická architektura, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rugby Championship a jihemisférická dominance",
+        "fact": "Los Pumas soutěží v Rugby Championship spolu s Novým Zélandem, Austrálií a Jižní Afrikou — čtyřmi nejsilnějšími ragbyovými mocnostmi světa mimo Evropu. Jižní polokoule dominuje modernímu ragby a Argentina je součástí tohoto dominantního bloku.",
+        "source_url": "https://en.wikipedia.org/wiki/Rugby_Championship",
+        "source_quote": "The Rugby Championship … contested by Argentina, Australia, New Zealand, and South Africa",
+        "voice": "Rugby moc přešlo na jih. Sever koukám a učí se.",
+        "image_prompt": "Fotorealistický snímek ragbyového stadionu José Amalfitani v Buenos Aires za večerního osvětlení, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-sport-atletika",
+    "country": "Argentina",
+    "section": "Sport",
+    "topic": "Atletika a olympijská historie Argentiny",
+    "headline": "Zlatá éra argentinského olympijského sportu",
+    "fact": "Argentina má bohatou olympijskou tradici zejména v boxu, basketbalu a atletice; na letních hrách v Aténách v roce dva tisíce čtyři získali zlaté medaile v basketbalu i fotbalu ve stejný rok.",
+    "source_url": "https://en.wikipedia.org/wiki/Argentina_at_the_Summer_Olympics",
+    "source_quote": "Argentina … a strong Olympic tradition … won gold medals in basketball and football at the 2004 Athens Olympics",
+    "voice": "Zlaté v košíkové i fotbalu na jedněch olympiádě. To se nepovedlo nikomu jinému.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek argentinské basketbalové reprezentace na olympijském stadionu, dynamická akce, přirozené světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zlatá generace basketbalu — Ginóbili a spol.",
+        "fact": "Argentinský basketbalový tým kolem Manu Ginóbiliho v roce dva tisíce čtyři porazil všechny největší favorit ve vč. USA v základní skupině a získal zlatou medaili. Ginóbili dodnes platí za jednoho z nejkreativnějších hráčů NBA všech dob.",
+        "source_url": "https://en.wikipedia.org/wiki/Manu_Gin%C3%B3bili",
+        "source_quote": "Ginóbili … led Argentina to the gold medal at the 2004 Athens Olympics",
+        "voice": "Porazit Dream Team a získat zlato. Argentina to dokázala.",
+        "image_prompt": "Fotorealistický snímek basketbalového hřiště v Argentině, hráči v akci, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport a národní identita v krizových dobách",
+        "fact": "Argentinský zlatý olympijský rok přišel v době ekonomické krize. Sportovní úspěchy plní funkci národního tmelu — obzvlášť když jsou ostatní identifikační faktory oslabeny. Geografie sportu odráží potřeby národní psychologie.",
+        "source_url": "https://en.wikipedia.org/wiki/Argentine_economic_crisis_(1999%E2%80%932002)",
+        "source_quote": "the 2001 Argentine economic crisis … sport remained a source of national pride",
+        "voice": "Krize živí vítěze na stadionu. Nebo naopak.",
+        "image_prompt": "Fotorealistický snímek Estadio Monumental v Buenos Aires — největší stadion Latinské Ameriky, letecký pohled, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-jazyk-voseo",
+    "country": "Argentina",
+    "section": "Jazyk & slova",
+    "topic": "Voseo a rioplatská španělština",
+    "headline": "Argentinec řekne 'vos', ne 'tú' — a je to slyšet",
+    "fact": "Rioplatská španělština používá 'vos' místo 'tú' pro oslovení druhé osoby — jev zvaný voseo, typický pro Argentinu a Uruguay; je to přežitek staré španělštiny, který se jinde vytratil.",
+    "source_url": "https://en.wikipedia.org/wiki/Voseo",
+    "source_quote": "Voseo … the use of 'vos' as the second-person singular … common in Argentina and Uruguay",
+    "voice": "'¿Vos sabés?' místo '¿Tú sabes?' A Argentinec ví, že mluvíte s ním.",
+    "visual_type": "typographic",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Italský přízvuk v argentinské španělštině",
+        "fact": "Rioplatská španělština má stoupavou intonaci připomínající italštinu — vliv milionů italských přistěhovalců na přelomu devatenáctého a dvacátého století. Argentinec mluvící španělsky zní pro ostatní Hispanoameričany jinak — melodičtěji.",
+        "source_url": "https://en.wikipedia.org/wiki/Rioplatense_Spanish",
+        "source_quote": "Rioplatense Spanish … influenced by Italian immigration … distinctive intonation",
+        "voice": "Mluví španělsky s italskou melodií. Přistěhovalci v jazyce zůstali.",
+        "image_prompt": "Fotorealistický snímek italsko-argentinské komunity ve čtvrti La Boca — italské nápisy a portorická architektura, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyková mapa Rioplatense: voseo jako hranice",
+        "fact": "Voseo odděluje argentinskou a uruguayskou španělštinu od zbytku Latinské Ameriky. Je to přirozená jazyková hranice, která kopíruje kulturní a historické odlišnosti Jižního kužele — dalekosáhlý vliv specifické přistěhovalecké kultury na jazyk.",
+        "source_url": "https://en.wikipedia.org/wiki/Rioplatense_Spanish",
+        "source_quote": "Rioplatense Spanish … primarily spoken in Argentina and Uruguay … distinct from other Latin American varieties",
+        "voice": "Jazyk jako mapa kulturních hranic — neviditelná, ale slyšitelná.",
+        "image_prompt": "Fotorealistický snímek Buenos Aires kavárny s novinami a konverzací, historická atmosféra, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-jazyk-guarani",
+    "country": "Argentina",
+    "section": "Jazyk & slova",
+    "topic": "Guaraní v Argentině",
+    "headline": "Domorodý jazyk, který přežil v srdci Jižní Ameriky",
+    "fact": "Guaraní je domorodý jazyk hovorný v argentinské provincii Corrientes (kde je spoluurčující jazyk) i v Paraguaji a Brazílii; je to jeden z mála domorodých jazyků Ameriky uznaných jako úřední na národní i provinční úrovni.",
+    "source_url": "https://en.wikipedia.org/wiki/Guaran%C3%AD_language",
+    "source_quote": "Guaraní … co-official language in the Argentine province of Corrientes … one of the most widely spoken indigenous languages in South America",
+    "voice": "Paraguay mluví guaraní víc než španělsky. A přitom je to domorodý jazyk.",
+    "visual_type": "typographic",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Paraguay: jedinou bilingvní národ Ameriky",
+        "fact": "Paraguay je výjimečná — guaraní mluví přes osmdesát procent populace a je v praxi dominantnějším jazykem než úřední španělština ve venkovském prostředí. Je to jediný případ, kde domorodý jazyk v Americe převažuje nad španělštinou na celonárodní úrovni.",
+        "source_url": "https://en.wikipedia.org/wiki/Paraguayan_Guaran%C3%AD",
+        "source_quote": "Guaraní … spoken by the majority of the Paraguayan population … more widely used than Spanish in rural areas",
+        "voice": "Výjimka potvrzuje pravidlo: kolonizátoři ne vždy vyhráli jazykový boj.",
+        "image_prompt": "Fotorealistický snímek guaraní komunity v misijní Argentině u řeky Paraná, tradiční chýše a přírodní prostředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jezuitské misie a role jazyka v kolonizaci",
+        "fact": "Jezuité v sedmnáctém a osmnáctém století v misijní Argentině a Paraguaji používali guaraní jako liturgický jazyk místo latiny a španělštiny — vydávali v něm modlitební knihy i muziku. Tato neobvyklá strategie pomohla guaraní přežít kolonizaci.",
+        "source_url": "https://en.wikipedia.org/wiki/Jesuit_Reductions",
+        "source_quote": "the Jesuits … used Guaraní rather than Spanish in their missions … contributing to its preservation",
+        "voice": "Jezuité zachránili jazyk tím, že ho použili pro Boha.",
+        "image_prompt": "Fotorealistický snímek ruiny jezuitské misie San Ignacio Miní v argentinské Misiones, historická kamenná architektura, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-jidlo-dulceleche",
+    "country": "Argentina",
+    "section": "Jídlo",
+    "topic": "Dulce de leche",
+    "headline": "Karamelová pomazánka v každé argentinské ledničce",
+    "fact": "Dulce de leche — karamelizované slazené mléko — je argentinská národní pochoutka konzumovaná na chlebu, v sušenkách alfajores i přímo z lžičky; Argentinci ji považují za svůj vynález.",
+    "source_url": "https://en.wikipedia.org/wiki/Dulce_de_leche",
+    "source_quote": "Dulce de leche … a confection prepared by slowly heating sweetened milk … widely consumed in Argentina",
+    "voice": "Argentinci si nárokují vynález. Chilané a Uruguayci protestují. Karamel vítězí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek otevřené nádoby dulce de leche se zlatou karamelovou hmotou, alfajores sušenky vedle, přirozené světlo, 16:9",
+    "ll": [
+      -58.3816,
+      -34.6037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Alfajores: nejpopulárnější sušenka Jižní Ameriky",
+        "fact": "Alfajor je tradiční latinskoamerická sušenka — dvě křehké oplatky s dulce de leche uprostřed, obalené čokoládou nebo moučkovým cukrem. Každá argentinská provincie má vlastní variantu.",
+        "source_url": "https://en.wikipedia.org/wiki/Alfajor",
+        "source_quote": "alfajor … one of the most popular confections in South America … filled with dulce de leche",
+        "voice": "Sušenka jako kulturní identita. Každý kraj Argentina jiná.",
+        "image_prompt": "Fotorealistický snímek alfajores v různých variantách — čokoládové, s moučkovým cukrem, na rustikálním stole, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Potravinový průmysl Argentiny: od pampy ke světovému trhu",
+        "fact": "Argentina patří k největším světovým exportérům potravin — sója, hovězí maso, víno, sluneční oleji. Dulce de leche se dnes vyrábí průmyslově a exportuje. Potravinová ekonomika zemí Jižního kužele závisí na produktivitě pampas a And.",
+        "source_url": "https://en.wikipedia.org/wiki/Economy_of_Argentina",
+        "source_quote": "Argentina … one of the world's leading food exporters",
+        "voice": "Pampa na talíři celého světa. Argentinci to vědí.",
+        "image_prompt": "Fotorealistický snímek argentinského potravinového závodu nebo skladu s exportním zbožím, průmyslová atmosféra, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-jidlo-empanadas",
+    "country": "Argentina",
+    "section": "Jídlo",
+    "topic": "Argentinské empanadas",
+    "headline": "Každá provincie v jiné taštičce",
+    "fact": "Argentinské empanadas jsou plněné taštičky z těsta; každá provincie má svůj recept — Mendoza přidává olivy a vejce, Salta peče menší a pikantní, Tucumán je plní pasírovaným masem. Empanada je mapa Argentiny na talíři.",
+    "source_url": "https://en.wikipedia.org/wiki/Empanada",
+    "source_quote": "each Argentine province … has its own distinctive version of empanadas",
+    "voice": "Řekni 'empanada' Argentinci a hned se ptá: odkud jsi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek různých variant argentinských empanadas z různých provincií na rustikálním stole, přirozené světlo, 16:9",
+    "ll": [
+      -63.0,
+      -34.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jak poznat, co je uvnitř: záhyb na okraji",
+        "fact": "Každý typ náplně v argentinské empanada má jinak záhybané okraje — repulgue. Tradičně to bylo důležité, protože se pekly v jedné troubě a bez označení by nebylo jasné, která je s masem a která s kukuřicí.",
+        "source_url": "https://en.wikipedia.org/wiki/Empanada",
+        "source_quote": "the repulgue … a distinctive edge pattern … used to identify the filling",
+        "voice": "Záhyby jako jazyk. Pečeš a komunikuješ.",
+        "image_prompt": "Fotorealistický detailní snímek rukou formujících repulgue na okraji empanady, tradiční kuchyňské prostředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Empanada jako gastronomická mapa Argentiny",
+        "fact": "Regionální variace empanadas odrážejí místní kulturu, historii a zemědělství: v přímořských oblastech přibývají ryby, ve vnitrozemí hovězí a koza, v oblastech s evropskými přistěhovalci se mění koření. Jídlo dokumentuje osídlení.",
+        "source_url": "https://en.wikipedia.org/wiki/Empanada",
+        "source_quote": "regional empanada variations … reflect local agricultural and cultural traditions",
+        "voice": "Každá recept na empanada je kapitola místní geografie.",
+        "image_prompt": "Fotorealistický snímek argentinského venkovského trhu s různými regionálními pokrmy a empanadas, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-historie-revolucion",
+    "country": "Argentina",
+    "section": "Historie",
+    "topic": "Argentinská revoluce a nezávislost",
+    "headline": "Devátý červenec: první nezávislý stát na jih od rovníku",
+    "fact": "Argentinská nezávislost byla vyhlášena devátého července osmnáct šestnáct v Tucumánu; bylo to jedno z prvních vyhlášení nezávislosti v Jižní Americe a dalo impuls celému regionu.",
+    "source_url": "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence",
+    "source_quote": "the Argentine Declaration of Independence … proclaimed on 9 July 1816 … in Tucumán",
+    "voice": "Tucumán, devátý červenec. Datum, které Argentina nikdy nezapomněla.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického Casa de la Independencia v Tucumánu — kolonialní dům, kde byla podepsána nezávislost, přirozené světlo, 16:9",
+    "ll": [
+      -65.2023,
+      -26.8083
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tucumán: proč zrovna tam?",
+        "fact": "Tucumán byl zvolen jako místo vyhlášení nezávislosti strategicky — leží ve středu tehdejšího území a byl dostupný pro delegáty ze severu i jihu. Je to příklad, jak geografie ovlivňuje politická rozhodnutí i v momentech dějinného zlomu.",
+        "source_url": "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence",
+        "source_quote": "Tucumán was chosen for its central location … accessible to delegates from different regions",
+        "voice": "Kde podepíšeš nezávislost, záleží na geografii.",
+        "image_prompt": "Fotorealistický snímek historického náměstí v Tucumánu s pomníkem nezávislosti, koloniální architektura, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Španělské vicekrálovství a jeho rozpad na státy",
+        "fact": "Vicekrálovství Río de la Plata se po nezávislosti rozpadlo na několik států — Argentina, Paraguay, Uruguay a Bolivia. Hranice nových států odrážely historické administrativní dělení, geografické bariéry a etnické spory. Mapa Jižní Ameriky je výsledkem tohoto rozpadu.",
+        "source_url": "https://en.wikipedia.org/wiki/Viceroyalty_of_the_R%C3%ADo_de_la_Plata",
+        "source_quote": "the Viceroyalty of the Río de la Plata … dissolved into several independent nations",
+        "voice": "Jedno vicekrálovství, čtyři státy. Hranice jsou výsledek dohod i sporů.",
+        "image_prompt": "Fotorealistický snímek historické mapy vicekrálovství Río de la Plata v muzeu, barokní mapa v muzejním osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ar-historie-malvinas",
+    "country": "Argentina",
+    "section": "Historie",
+    "topic": "Válka o Falklandy/Malvíny",
+    "headline": "Ostrovní válka, která svrhla diktaturu",
+    "fact": "Válka o Falklandy/Malvíny v roce osmdesát dva byla krátkým vojenským konfliktem mezi Argentinou a Británií o ostrovy v jižním Atlantiku; argentinská porážka přispěla k pádu vojenské junty a návratu demokracie.",
+    "source_url": "https://en.wikipedia.org/wiki/Falklands_War",
+    "source_quote": "the Falklands War … Argentina's military defeat … contributed to the fall of the military junta",
+    "voice": "Junta chtěla válkou zakrýt hospodářský krach. Válka zakryla juntu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Falklandských ostrovů/Malvín — větrná krajina s tučňáky na atlantickém pobřeží, dramatické světlo, 16:9",
+    "ll": [
+      -59.5236,
+      -51.7963
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Las Malvinas son argentinas: spor trvá",
+        "fact": "Argentina od doby britské kolonizace v devatenáctém století považuje Falklandy/Malvíny za své území. Ostrovy jsou dnes autonomním britským zámořským územím, ale v argentinské ústavě stojí jejich nárok. Diplomatický spor trvá.",
+        "source_url": "https://en.wikipedia.org/wiki/Falkland_Islands_sovereignty_dispute",
+        "source_quote": "Argentina claims sovereignty over the Falkland Islands … enshrined in the Argentine constitution",
+        "voice": "Mapa říká oboje. Záleží, z které strany se díváš.",
+        "image_prompt": "Fotorealistický snímek hlavního města Stanley na Falklandech/Malvínách — barevné dřevěné domy, přístav, dramatická atlantická krajina, 16:9"
+      },
+      "kartograf": {
+        "headline": "Suverenita vzdálených ostrovů v geopolitice",
+        "fact": "Kontrola nad Falklandy/Malvínami má strategický i ekonomický rozměr — okolní moře obsahují rybí zásoby, ropná ložiska a přístup k Antarktidě. Spor odráží globální princip: kdo ovládá vzdálené ostrovy, ovládá ekonomické zóny kolem nich.",
+        "source_url": "https://en.wikipedia.org/wiki/Falkland_Islands",
+        "source_quote": "the Falkland Islands … strategic location in the South Atlantic … fishing rights and oil exploration",
+        "voice": "Malý ostrov, velká exkluzivní ekonomická zóna.",
+        "image_prompt": "Fotorealistický letecký snímek Falklandů/Malvín — ostrovy v jižním Atlantiku obklopené mořem, dramatický pohled z výšky, 16:9"
+      }
+    }
+  }
+]

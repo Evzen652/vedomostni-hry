@@ -1,0 +1,216 @@
+[
+  {
+    "id": "fj-mista-ostrovy",
+    "country": "Fidži",
+    "section": "Místa",
+    "topic": "Roztříštěnost fidžijského souostroví",
+    "headline": "Souostroví z více než 330 ostrovů",
+    "fact": "Fidži je souostroví tvořené přes 330 ostrovy v jižním Tichém oceánu, z nichž je trvale obydlených jen asi 110.",
+    "source_url": "https://en.wikipedia.org/wiki/Fiji",
+    "source_quote": "Fiji consists of an archipelago of more than 330 islands—of which about 110 are permanently inhabited",
+    "voice": "Většina ostrovů zůstává úplně liduprázdná — jen moře, písek a palmy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký snímek souostroví tropických ostrovů Fidži, tyrkysové moře a zelené palmy, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Většina obyvatel žije jen na dvou hlavních ostrovech — Viti Levu a Vanua Levu. Zbylé stovky menších ostrovů jsou buď neobydlené, nebo mají jen malé rybářské osady.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji"
+      },
+      "kartograf": {
+        "fact": "Fidži je typický příklad ostrovního státu, kde geografická roztříštěnost (přes 330 ostrovů) komplikuje dopravu, správu i poskytování služeb — vláda musí řešit úplně jiné logistické problémy než pevninský stát podobné rozlohy.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji"
+      }
+    }
+  },
+  {
+    "id": "fj-priroda-koralove-utesy",
+    "country": "Fidži",
+    "section": "Příroda",
+    "topic": "Korálové útesy a jejich ohrožení",
+    "headline": "Ostrovy obklopené barevnými korálovými zahradami",
+    "fact": "Fidži je proslulé svými korálovými útesy a čirou vodou, které z ostrovů udělaly jedno z předních potápěčských míst světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Fiji",
+    "voice": "Pod hladinou barevný svět, o kterém by se turistům na pláži ani nezdálo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický podvodní snímek barevného korálového útesu u pobřeží Fidži, tropické ryby, čirá voda, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sopečný původ ostrovů Fidži vytvořil ideální podmínky pro růst korálů — mělké teplé vody kolem sopečných svahů poskytují korálům přesně takové prostředí, jaké potřebují k růstu.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji"
+      },
+      "kartograf": {
+        "fact": "Zdraví korálových útesů kolem Fidži přímo závisí na teplotě oceánu — jakékoli globální oteplování vody hrozí bělením korálů, což by ohrozilo nejen přírodu, ale i ekonomiku závislou na turistice a rybolovu.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji"
+      }
+    }
+  },
+  {
+    "id": "fj-lide-indofidzijci",
+    "country": "Fidži",
+    "section": "Lidé",
+    "topic": "Indofidžijská komunita a demografie",
+    "headline": "Národ, který vznikl z dělníků na plantážích",
+    "fact": "Významnou část obyvatel Fidži tvoří Indofidžijci — potomci víc než 61 000 nasmlouvaných dělníků, které Britové mezi lety 1879 a 1916 přivezli z Indie pracovat na plantážích cukrové třtiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Indo-Fijians",
+    "source_quote": "The 498 indentured workers who disembarked were the first of over 61,000 to arrive from South and East Asia in the following 37 years.",
+    "voice": "Po skončení smluv většina dělníků zůstala a založila si tu nový domov.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek indofidžijské rodiny v tradičním oděvu na pozadí polí cukrové třtiny, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Populace Indofidžijců rostla rychleji než domorodá fidžijská populace, kterou na počátku 20. století zdecimovaly epidemie spalniček a chřipky — na konci 20. století tvořili Indofidžijci až 52 % obyvatel Fidži.",
+        "source_url": "https://en.wikipedia.org/wiki/Indo-Fijians"
+      },
+      "kartograf": {
+        "fact": "Fidži je učebnicový příklad, jak koloniální dovoz pracovní síly natrvalo změní demografii celé země — smluvní dělnictví, zamýšlené jako dočasné řešení pro plantáže, vytvořilo novou etnickou skupinu, která dnes tvoří velkou část národa.",
+        "source_url": "https://en.wikipedia.org/wiki/Indo-Fijians"
+      }
+    }
+  },
+  {
+    "id": "fj-jidlo-lovo",
+    "country": "Fidži",
+    "section": "Jídlo",
+    "topic": "Fidžijská hostina lovo",
+    "headline": "Hostina uvařená v zemní peci",
+    "fact": "Lovo je slavnostní fidžijský způsob vaření v zemní jámě — maso, ryby a zelenina zabalené v listech se položí na rozžhavené kameny, zasypou a several hodin se pomalu propařují.",
+    "source_url": "https://en.wikipedia.org/wiki/Fijian_cuisine",
+    "source_quote": "Food such as meat, fish and vegetables are wrapped in leaves and placed on hot rocks, buried and cooked for several hours.",
+    "voice": "Celá hostina se peče pod zemí, a nikdo přitom nevidí ani plamínek.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek otevřené zemní pece lovo s jídlem zabaleným v listech na rozžhavených kamenech, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Vedle lovo je typickým fidžijským jídlem i kokoda — syrová ryba marinovaná v citrusové šťávě s kokosovým mlékem, rajčaty a chilli, podobná principem peruánskému ceviche.",
+        "source_url": "https://en.wikipedia.org/wiki/Fijian_cuisine"
+      },
+      "kartograf": {
+        "fact": "Lovo se tradičně připravuje pro velké skupiny při slavnostních příležitostech — podobně jako novozélandské hāngi jde o techniku vaření v zemní jámě, která nezávisle vznikla napříč tichomořskými kulturami všude tam, kde bylo potřeba nakrmit celou komunitu najednou.",
+        "source_url": "https://en.wikipedia.org/wiki/Fijian_cuisine"
+      }
+    }
+  },
+  {
+    "id": "fj-historie-nezavislost",
+    "country": "Fidži",
+    "section": "Historie",
+    "topic": "Nezávislost a etnické rozdělení Fidži",
+    "headline": "Konec britské korunní kolonie",
+    "fact": "Fidži bylo britskou korunní kolonií až do roku 1970, kdy získalo nezávislost jako Dominium Fidži.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Fiji",
+    "source_quote": "Fiji was a Crown colony until 1970, when it gained independence as the Dominion of Fiji.",
+    "voice": "Po desetiletích pod britskou vlajkou se ostrovy staly samostatným státem.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistický snímek slavnostního vztyčení fidžijské vlajky, tropická krajina v pozadí, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Po nezávislosti Fidži zdědilo etnicky rozdělenou společnost — domorodí Fidžijci a Indofidžijci, jejichž předkové přišli za britské kolonizace, museli najít způsob, jak spolu sdílet jeden nový stát.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Fiji"
+      },
+      "kartograf": {
+        "fact": "Fidžijská nezávislost roku 1970 zapadá do širší vlny dekolonizace Tichomoří ve druhé polovině 20. století — na rozdíl od mnoha jiných bývalých kolonií ale Fidži zdědilo hluboké etnické rozdělení, které ovlivňovalo jeho politiku po další desetiletí.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Fiji"
+      }
+    }
+  },
+  {
+    "id": "fj-kultura-kava",
+    "country": "Fidži",
+    "section": "Kultura & tradice",
+    "topic": "Kava jako společenský rituál",
+    "headline": "Nápoj, který se pije při každé důležité chvíli",
+    "fact": "Kava (fidžijsky grog) je nápoj z kořene rostliny kava, který je základním kamenem fidžijské kultury — pije se při obřadech i běžně mezi přáteli, kdykoli během dne.",
+    "source_url": "https://en.wikipedia.org/wiki/Kava_culture",
+    "source_quote": "Kava is a cornerstone of Fijian culture, playing a central role in celebrating various stages of life.",
+    "voice": "Kokosová miska koluje dokola, a s ní i společné posezení.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dřevěné misky s nápojem kava a tradičním obřadem kolem ní, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kava se konzumuje po celé západní Oceánii, ale ve Fidži hraje mimořádně ústřední roli — provází narození, svatby, uvítání hostů i běžná společenská setkání, veřejně i v soukromí.",
+        "source_url": "https://en.wikipedia.org/wiki/Kava_culture"
+      },
+      "kartograf": {
+        "fact": "Kava je podobně jako argentinské maté příklad nápoje, jehož hlavní hodnota je sociální rituál sdílení, ne jen chuť samotná — sdílená miska kolující mezi účastníky posiluje pocit komunity způsobem, jaký individuálně servírovaný nápoj nedokáže nahradit.",
+        "source_url": "https://en.wikipedia.org/wiki/Kava_culture"
+      }
+    }
+  },
+  {
+    "id": "fj-umeni-masi",
+    "country": "Fidži",
+    "section": "Umění",
+    "topic": "Kůrová látka masi",
+    "headline": "Látka vyrobená z kůry stromu",
+    "fact": "Masi je tradiční fidžijská kůrová látka vyráběná jen ženami z vnitřní kůry moruše papírové, zdobená přírodními barvivy do geometrických vzorů.",
+    "source_url": "https://en.wikipedia.org/wiki/Tapa_cloth",
+    "source_quote": "In Fiji tapa is known as masi and is made only by women",
+    "voice": "Oblečení, které nevzniklo na tkalcovském stavu, ale bušením do kůry stromu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek fidžijské kůrové látky masi s geometrickými vzory, přírodní hnědé a černé barvy, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Výroba masi zahrnuje loupání kůry, bušení dřevěnou paličkou na dřevěné podložce a spojování jednotlivých kusů dohromady. Vzory se nanáší šablonováním, otiskem nebo malbou hnědým barvivem z kůry mangrovníku a černým ze sazí.",
+        "source_url": "https://en.wikipedia.org/wiki/Tapa_cloth"
+      },
+      "kartograf": {
+        "fact": "Kůrová látka jako masi je typický textilní materiál tichomořských kultur, které neznaly tkaní na stavu z přástů — místo předení vláken lidé objevili, že samotnou kůru stromu lze bušením proměnit v použitelnou textilii.",
+        "source_url": "https://en.wikipedia.org/wiki/Tapa_cloth"
+      }
+    }
+  },
+  {
+    "id": "fj-sport-ragby-sevens",
+    "country": "Fidži",
+    "section": "Sport",
+    "topic": "Fidžijský úspěch v ragby sedmiček",
+    "headline": "První olympijská medaile hned zlatá",
+    "fact": "Fidži vyhrálo na olympijských hrách v Riu 2016 zlato v ragby sedmiček — vůbec svou první olympijskou medaili v historii, hned tu nejcennější.",
+    "source_url": "https://en.wikipedia.org/wiki/Fiji_national_rugby_sevens_team",
+    "source_quote": "Fiji won the gold medal in the inaugural rugby sevens at the Summer Olympics in 2016",
+    "voice": "Když si konečně vybojovali první medaili, byla rovnou zlatá.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fidžijského ragbyového týmu slavícího zlatou olympijskou medaili, konfety ve vzduchu, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ragby sedmiček debutovalo na olympijském programu právě v roce 2016 v Riu a Fidži okamžitě ukázalo, proč je v tomto sportu jednou ze světových velmocí — ragby je na ostrovech nejpopulárnějším sportem vůbec.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji_national_rugby_sevens_team"
+      },
+      "kartograf": {
+        "fact": "Fidžijský úspěch v ragby sedmiček ukazuje, jak malý ostrovní stát dokáže vyniknout v jedné konkrétní disciplíně díky soustředěné vášni a talentu obyvatel — na rozdíl od klasického patnáctkového ragby vyžaduje sedmičková varianta rychlost a obratnost, ve které Fidžijci excelují.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji_national_rugby_sevens_team"
+      }
+    }
+  },
+  {
+    "id": "fj-jazyk-tri-jazyky",
+    "country": "Fidži",
+    "section": "Jazyk & slova",
+    "topic": "Tři úřední jazyky Fidži",
+    "headline": "Země se třemi úředními jazyky",
+    "fact": "Fidži má tři úřední jazyky — angličtinu, fidžijštinu (iTaukei) a fidžijskou hindštinu — a fidžijská hindština i fidžijština jsou ve školách povinné.",
+    "source_url": "https://en.wikipedia.org/wiki/Fiji_Hindi",
+    "source_quote": "Conversational Fiji Hindi alongside iTaukei are compulsory subjects in all Fijian schools.",
+    "voice": "Ve třídě se učí tři jazyky najednou, aby si obě komunity rozuměly.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Fidžijská hindština vznikla smísením různých indických jazyků a dialektů, kterými mluvili dělníci přivezení z různých částí Indie — je od standardní hindštiny natolik odlišná, že se považuje za samostatný jazyk.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji_Hindi"
+      },
+      "kartograf": {
+        "fact": "Povinná výuka fidžijštiny i fidžijské hindštiny ve školách je jazyková politika navržená tak, aby propojila dvě historicky oddělené komunity ostrova — jazyk se tu stává vědomým nástrojem budování společné národní identity, ne jen komunikace.",
+        "source_url": "https://en.wikipedia.org/wiki/Fiji_Hindi"
+      }
+    }
+  }
+]

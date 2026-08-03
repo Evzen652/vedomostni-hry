@@ -1,0 +1,790 @@
+[
+  {
+    "id": "ga-mista-loango",
+    "country": "Gabon",
+    "section": "Místa",
+    "topic": "Národní park Loango",
+    "headline": "Kde hroši surfují v oceánu",
+    "fact": "Národní park Loango na pobřeží Gabonu kombinuje deštné pralesy, savany a písečné pláže Atlantského oceánu.",
+    "source_url": "https://en.wikipedia.org/wiki/Loango_National_Park",
+    "voice": "Kde jinde uvidíte hrocha vyběhnout z pralesa přímo do mořských vln?",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of wild hippos walking on a sandy tropical beach near rainforest and ocean waves in Gabon, 16:9",
+    "ll": [
+      9.6,
+      -2.2
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Africké safari na pláži",
+        "fact": "Návštěvníci mohou sledovat slony, hrochy a buvoly volně se pohybující po písečném pobřeží.",
+        "source_url": "https://en.wikipedia.org/wiki/Loango_National_Park",
+        "voice": "Opalování na pláži dostává úplně nový rozměr, když okolo prochází sloní rodinka.",
+        "image_prompt": "Photorealistic photo of forest elephants walking along a sandy ocean coastline in Loango, 16:9"
+      },
+      "kartograf": {
+        "headline": "Unikátní ekosystém",
+        "fact": "Oblast propojuje sladkovodní laguny s mořským ekosystémem a slouží jako klíčové útočiště pro ohrožené druhy fauny.",
+        "source_url": "https://en.wikipedia.org/wiki/Loango_National_Park",
+        "voice": "Hranice mezi pevninou a mořem tu vytváří jeden z nejrozmanitějších přírodních koridorů.",
+        "image_prompt": "Photorealistic aerial view of coastal lagoon system bordering green rainforest and blue ocean in Gabon, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-mista-libreville",
+    "country": "Gabon",
+    "section": "Místa",
+    "topic": "Libreville",
+    "headline": "Město svobody na pobřeží",
+    "fact": "Libreville je hlavní a největší město Gabonu, založené v devatenáctém století osvobozenými otroky.",
+    "source_url": "https://en.wikipedia.org/wiki/Libreville",
+    "source_quote": "Libreville is the capital and largest city of Gabon",
+    "voice": "Název města znamená v přeneseném překladu Svobodné Město.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic view of Libreville coastal skyline with modern buildings, palm trees and the Atlantic coast, 16:9",
+    "ll": [
+      9.4544,
+      0.3901
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Promenáda u oceánu",
+        "fact": "Pobřežní bulvár Boulevard Triomphal spojuje moderní vládní budovy s živými městskými plážemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Libreville",
+        "voice": "Rychlé tempo velkoměsta se tu potkává s pohodovou atmosférou mořského břehu.",
+        "image_prompt": "Photorealistic wide shot of Boulevard Triomphal waterfront in Libreville during sunset, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přístavní uzel",
+        "fact": "Poloha v Gabonském zálivu dělá z Libreville zásadní obchodní a dopravní centrum celého státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Libreville",
+        "voice": "Většina zboží mířícího do Gabonu prochází právě tímto Atlantským přístavem.",
+        "image_prompt": "Photorealistic aerial perspective of Libreville harbor with cargo ships and Atlantic ocean, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-mista-lope",
+    "country": "Gabon",
+    "section": "Místa",
+    "topic": "Park Lopé",
+    "headline": "Zelené srdce pod ochranou UNESCO",
+    "fact": "Národní park Lopé chráněný organizací UNESCO uchovává vyváženou mozaiku tropických pralesů a travnatých savan.",
+    "source_url": "https://en.wikipedia.org/wiki/Lop%C3%A9_National_Park",
+    "voice": "Místo, kde se hustá hvozd setkává s otevřenou krajinou plnou života.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic landscape of Lopé National Park with grassy savanna merging into dense rainforest mountains, 16:9",
+    "ll": [
+      11.6033,
+      -0.4167
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pozorování mandrilů",
+        "fact": "V parku žijí obrovské tlupy barevných opic mandrilů čítající stovky jedinců.",
+        "source_url": "https://en.wikipedia.org/wiki/Lop%C3%A9_National_Park",
+        "voice": "Spatřit stovky pestrobarevných opic pohromadě je zážitek na celý život.",
+        "image_prompt": "Photorealistic portrait of a colorful male mandril mandrill ape in Lopé forest vegetation, 16:9"
+      },
+      "kartograf": {
+        "headline": "Historie vytesaná do kamene",
+        "fact": "V údolí řeky Ogooué se nacházejí archeologická naleziště s tisíce let starými skalními rytinami.",
+        "source_url": "https://en.wikipedia.org/wiki/Lop%C3%A9_National_Park",
+        "voice": "Dávní obyvatelé zanechali v kamenité krajině svědectví o svém životě.",
+        "image_prompt": "Photorealistic shot of ancient petroglyphs carved into rocks near the Ogooué River in Lopé, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-priroda-gorily",
+    "country": "Gabon",
+    "section": "Příroda",
+    "topic": "Západní nížinné gorily",
+    "headline": "Tichý obr v pralese",
+    "fact": "Gabon představuje klíčové útočiště pro západní nížinné gorily žijící v odlehlých oblastech hvozdu.",
+    "source_url": "https://en.wikipedia.org/wiki/Western_lowland_gorilla",
+    "voice": "I přes svou obrovskou sílu jde o velmi mírná a rodinná zvířata.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic portrait of a western lowland gorilla silverback in a dense green Gabon rainforest, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Život v tlupě",
+        "fact": "Gorilí rodinu vede stříbrohřbetý samec, který chrání samice a mláďata před jakýmkoli nebezpečím.",
+        "source_url": "https://en.wikipedia.org/wiki/Western_lowland_gorilla",
+        "voice": "Pohled do očí stříbrohřbetého vůdce vyvolává okamžitý respekt.",
+        "image_prompt": "Photorealistic image of a gorilla family group resting together among lush jungle plants, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ochrana pralesních druhů",
+        "fact": "Výzkumná centra v Gabonu studují chování goril a bojují proti pytláctví i ztrátě přirozeného prostředí.",
+        "source_url": "https://en.wikipedia.org/wiki/Western_lowland_gorilla",
+        "voice": "Ochrana nedotčených pralesů je jedinou možností, jak tyto tvory zachránit.",
+        "image_prompt": "Photorealistic wide view of untamed equatorial rainforest canopy stretch in Central Africa, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-priroda-prales",
+    "country": "Gabon",
+    "section": "Příroda",
+    "topic": "Gabonský deštný prales",
+    "headline": "Zelené plíce střední Afriky",
+    "fact": "Převážnou většinu rozlohy Gabonu pokrývají husté tropické deštné pralesy bohaté na biologickou rozmanitost.",
+    "source_url": "https://en.wikipedia.org/wiki/Geography_of_Gabon",
+    "voice": "Krajina, kde zelená barva dominuje na stovkách kilometrů ve všech směrech.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic high angle canopy view of dense tropical rainforest in Gabon with morning mist, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zvuky džungle",
+        "fact": "V korunách stromů žijí stovky druhů ptáků, cikád a opic vytvářejících neustálou přírodní kulisu.",
+        "source_url": "https://en.wikipedia.org/wiki/Geography_of_Gabon",
+        "voice": "Ticho v pralese neexistuje, džungle neustále zpívá a šumí.",
+        "image_prompt": "Photorealistic shot looking up into giant jungle trees with sunlight filtering through leaves, 16:9"
+      },
+      "kartograf": {
+        "headline": "Uhlíková zásobnice",
+        "fact": "Zdejší pralesy pohlcují obrovské množství oxidu uhličitého a hrají zásadní roli v regulaci globálního klimatu.",
+        "source_url": "https://en.wikipedia.org/wiki/Geography_of_Gabon",
+        "voice": "Chránit gabonské lesy znamená chránit rovnováhu celé planety.",
+        "image_prompt": "Photorealistic wide atmospheric shot of vast untouched African tropical forest extending to horizon, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-priroda-manta",
+    "country": "Gabon",
+    "section": "Příroda",
+    "topic": "Mořský život Gabonu",
+    "headline": "Útočiště velryb a želv",
+    "fact": "Pobřežní vody Gabonu slouží jako vyhledávané shromaždiště keporkaků a hnízdiště vzácných mořských želv.",
+    "source_url": "https://en.wikipedia.org/wiki/Loango_National_Park",
+    "voice": "Každý rok připlouvají k pobřeží obří kytovci, aby vychovali své potomky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic underwater shot of a humpback whale swimming gracefully in Atlantic coastal waters, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kožatky velké na pláži",
+        "fact": "Obří mořské želvy kožatky připlouvají v noci na gabonské pláže klást svá vajíčka do písku.",
+        "source_url": "https://en.wikipedia.org/wiki/Leatherback_sea_turtle",
+        "voice": "Noční ticho na pláži přerušuje jen šumění moře a pomalý pohyb mořských obrů.",
+        "image_prompt": "Photorealistic night photo of a large leatherback sea turtle on a sandy beach under moonlight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mořské parky",
+        "fact": "Gabon vytvořil síť chráněných mořských rezervací k ochraně korálových útesů a mořských živočichů.",
+        "source_url": "https://en.wikipedia.org/wiki/Geography_of_Gabon",
+        "voice": "Přísná ochrana vod brání nelegálnímu rybolovu a ničení přírodních biotopů.",
+        "image_prompt": "Photorealistic aerial view of turquoise Gabon coastline with protective reef structures, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-lide-albert-schweitzer",
+    "country": "Gabon",
+    "section": "Lidé",
+    "topic": "Albert Schweitzer",
+    "headline": "Lékař v srdci pralesa",
+    "fact": "Albert Schweitzer byl nositel Nobelovy ceny za mír, který založil slavnou nemocnici v gabonském městečku Lambaréné.",
+    "source_url": "https://en.wikipedia.org/wiki/Albert_Schweitzer",
+    "source_quote": "he was awarded the Nobel Peace Prize in 1952 for his philosophy of 'Reverence for Life'",
+    "voice": "Zasvětil celý svůj život pomoci nemocným v tropických oblastech.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historic-style photo of Albert Schweitzer hospital complex in Lambaréné by the river, 16:9",
+    "ll": [
+      10.2319,
+      -0.701
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nemocnice v Lambaréné",
+        "fact": "Muzeum v Lambaréné uchovává původní lékařské vybavení i osobní předměty tohoto humanisty.",
+        "source_url": "https://en.wikipedia.org/wiki/Albert_Schweitzer",
+        "voice": "Návštěva dřevěných budov vrací člověka do doby obětavé lékařské práce.",
+        "image_prompt": "Photorealistic shot of historic wooden hospital building surrounded by palm trees in Lambaréné, 16:9"
+      },
+      "kartograf": {
+        "headline": "Filosofie úcty k životu",
+        "fact": "Schweitzerův koncept úcty k životu ovlivnil moderní humanitární myšlení a etiku ochrany přírody.",
+        "source_url": "https://en.wikipedia.org/wiki/Albert_Schweitzer",
+        "voice": "Smyšlení jednoho lékaře pomohlo změnit pohled světa na humanitární pomoc.",
+        "image_prompt": "Photorealistic peaceful river view of the Ogooué River near Lambaréné with rainforest backdrop, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-lide-omar-bongo",
+    "country": "Gabon",
+    "section": "Lidé",
+    "topic": "Omar Bongo",
+    "headline": "Desetiletí u kormidla",
+    "fact": "Omar Bongo vládl Gabonu po čtyři desetiletí a patřil k nejdéle sloužícím hlavy států v moderní historii.",
+    "source_url": "https://en.wikipedia.org/wiki/Omar_Bongo",
+    "source_quote": "He was the President of Gabon for 41 years",
+    "voice": "Jeho figura po dlouhou dobu utvářela politiku i tvář moderního Gabonu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic architectural view of the Presidential Palace in Libreville, Gabon, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Prezidentský palác",
+        "fact": "V Libreville připomíná jeho éru monumentální prezidentský palác a rozsáhlá infrastruktura.",
+        "source_url": "https://en.wikipedia.org/wiki/Omar_Bongo",
+        "voice": "Budovy z této éry dominují nábřeží v hlavním městě.",
+        "image_prompt": "Photorealistic grand entrance gate of the Gabon Presidential Palace in Libreville, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stabilita a ropné bohatství",
+        "fact": "Během jeho vlády se Gabon díky těžbě ropy stal bohatým státem regionu s výrazně vyšším příjmem na obyvatele než okolní země.",
+        "source_url": "https://en.wikipedia.org/wiki/Omar_Bongo",
+        "voice": "Příjmy z přírodních zdrojů zásadně proměnily ekonomiku země.",
+        "image_prompt": "Photorealistic view of modern offshore oil rig near the Gabon coastline, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-lide-aubameyang",
+    "country": "Gabon",
+    "section": "Lidé",
+    "topic": "Pierre-Emerick Aubameyang",
+    "headline": "Rychlonohý útočník na světových trávnících",
+    "fact": "Pierre-Emerick Aubameyang je nejznámější gabonský fotbalista, který se stal hvězdou předních evropských klubů.",
+    "source_url": "https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang",
+    "source_quote": "He is Gabon's all-time top goalscorer",
+    "voice": "Jeho blesková rychlost motala hlavy obráncům v celé Evropě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic action shot of a professional football striker sprinting on a green pitch, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hvězda s číslem devět",
+        "fact": "V dresu národního týmu Panterů znovunastartoval zájem gabonských dětí o fotbal.",
+        "source_url": "https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang",
+        "voice": "Když hraje národní tým, dres s jeho jménem nosí na ulici skoro každý.",
+        "image_prompt": "Photorealistic shot of young boys playing football in Gabonese national team shirts, 16:9"
+      },
+      "kartograf": {
+        "headline": "Světový ambasador",
+        "fact": "Díky úspěchům v prestižních ligách zpropagoval gabonský sport po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang",
+        "voice": "Ukázal, že i ze středoafrického státu lze dojít až na vrchol fotbalového světa.",
+        "image_prompt": "Photorealistic interior shot of a packed modern football stadium with lights on at night, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-kultura-tradice-bwiti",
+    "country": "Gabon",
+    "section": "Kultura & tradice",
+    "topic": "Tradice Bwiti",
+    "headline": "Duchovní rituál pralesa",
+    "fact": "Bwiti je tradiční gabonské duchovní učení spojené s rituály, hudbou a využíváním rostliny iboga.",
+    "source_url": "https://en.wikipedia.org/wiki/Bwiti",
+    "voice": "Rituál spojuje komunitu s předky prostřednictvím celonočního bubnování.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic night scene of a traditional Bwiti ceremony with torchlight, face paint, and drums, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Celonoční hudba a tance",
+        "fact": "Účastníci rituálů nosí bílé oděvy a tradiční malování na obličeji za doprovodu loutny ngombi.",
+        "source_url": "https://en.wikipedia.org/wiki/Bwiti",
+        "voice": "Rytmické zvuky harfy a bubnů zní bez přestávky až do svítání.",
+        "image_prompt": "Photorealistic shot of traditional African harp ngombi played near a campfire, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní dědictví",
+        "fact": "Tradice Bwiti hraje klíčovou roli ve společenském životě národa Mitsogo a Fang v Gabonu.",
+        "source_url": "https://en.wikipedia.org/wiki/Bwiti",
+        "voice": "Starodávné obřady pomáhají uchovávat historii komunity bez písemných záznamů.",
+        "image_prompt": "Photorealistic village gathering house decorated with traditional Gabonese spiritual symbols, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-kultura-tradice-masasky",
+    "country": "Gabon",
+    "section": "Kultura & tradice",
+    "topic": "Gabonské masky",
+    "headline": "Tváře s duchovním poselstvím",
+    "fact": "Tradiční dřevěné masky se v Gabonu používají při slavnostech, pohřbech a zahájení žní.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+    "voice": "Maska promění tanečníka v prostředníka mezi světem lidí a duchů.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a traditional white-painted Fang mask carved from wood, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Bílé masky Punu",
+        "fact": "Bíle malované masky kmene Punu znázorňují klidné tváře a jsou známé po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Punu-Lumbo_mask",
+        "voice": "Jemný bílý pigment se vyrábí z přírodního bílého jílu kaolinu.",
+        "image_prompt": "Photorealistic detailed portrait of a white kaolin Punu mask with high hairstyle, 16:9"
+      },
+      "kartograf": {
+        "headline": "Inspirace pro moderní umění",
+        "fact": "Africké masky z Gabonu zásadním způsobem ovlivnily evropské malíře na počátku dvacátého století.",
+        "source_url": "https://en.wikipedia.org/wiki/Fang_people",
+        "source_quote": "Fang masks inspired modern Western artist Pablo Picasso",
+        "voice": "Slavní malíři jako Picasso čerpali inspiraci z čistých linií gabonských masek.",
+        "image_prompt": "Photorealistic display of wooden African ceremonial masks in a museum spotlight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-kultura-tradice-vesnice",
+    "country": "Gabon",
+    "section": "Kultura & tradice",
+    "topic": "Život ve vesnici",
+    "headline": "Komunitní soudržnost v pralese",
+    "fact": "Tradiční gabonská vesnice se skládá z dřevěných domků seřazených podél jedné hlavní cesty.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+    "voice": "Vesnický život se točí kolem společného setkávání v otevřené halí nazývané abora.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic peaceful village in Gabon with wooden stilt houses along a dirt path, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Společné vaření a rozhovory",
+        "fact": "Místní lidé tráví odpolední hodiny ve stínu podstříší při přípravě jídla a vyprávění příběhů.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Starší členové rodiny předávají příběhy a moudrost mladším generacím.",
+        "image_prompt": "Photorealistic scene of villagers gathering under a thatch roof shelter in tropical village, 16:9"
+      },
+      "kartograf": {
+        "headline": "Harmonie s přírodou",
+        "fact": "Stavby využívají dostupné materiály z pralesa, jako jsou palmové listy, bambus a tvrdé dřevo.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Tradiční architektura splyne s okolním lesem bez zbytečného narušení krajiny.",
+        "image_prompt": "Photorealistic detail shot of thatched roof woven from palm fronds on a jungle home, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-umeni-fang-masky",
+    "country": "Gabon",
+    "section": "Umění",
+    "topic": "Sochařství etnika Fang",
+    "headline": "Strážci předků",
+    "fact": "Etnikum Fang tvoří vyřezávané dřevěné figurky byeri, které slouží jako strážci schránek s relikviemi předků.",
+    "source_url": "https://en.wikipedia.org/wiki/Fang_people",
+    "voice": "Tyto dřevěné sošky měly chránit klid a památku minulých generací.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a dark carved wooden Fang reliquary guardian figure, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Soustředěný výraz",
+        "fact": "Postavy mají charakteristicky protažené obličeje a klidný, meditační výraz v tváři.",
+        "source_url": "https://en.wikipedia.org/wiki/Fang_people",
+        "voice": "Vyřezávané tváře vyzařují hlubokou důstojnost a klid.",
+        "image_prompt": "Photorealistic profile shot of a carved wooden African statue head with smooth finish, 16:9"
+      },
+      "kartograf": {
+        "headline": "Původ v rodinné tradici",
+        "fact": "Sošky byly předávány z generace na generaci jako cenné rodinné dědictví a symbol spojení s minulostí.",
+        "source_url": "https://en.wikipedia.org/wiki/Fang_people",
+        "voice": "Umělecké dílo tvořilo živé pouto s rodinnou historií.",
+        "image_prompt": "Photorealistic exhibition setup of traditional Gabon wooden art carvings, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-umeni-kota-relikviare",
+    "country": "Gabon",
+    "section": "Umění",
+    "topic": "Kovové sochy Kota",
+    "headline": "Lesk mědi a mosazi",
+    "fact": "Umělci z etnika Kota pokrývají vyřezávané dřevěné figurky pláty mědi a mosazi vytvářejícími zářivý povrch.",
+    "source_url": "https://en.wikipedia.org/wiki/Kota_people_(Gabon)",
+    "voice": "Kombinace kovu a dřeva vytváří abstraktní tvary, které předběhly svou dobu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic image of a Kota reliquary figure covered in hammered brass and copper sheets, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Abstraktní obrysy",
+        "fact": "Sošky mají kosočtvercové tělo a stylizovaný oválný obličej zdobený rytými geometrickými vzory.",
+        "source_url": "https://en.wikipedia.org/wiki/Kota_people_(Gabon)",
+        "voice": "Geometrická čistota tvarů fascinuje milovníky umění po celém světě.",
+        "image_prompt": "Photorealistic front view of a polished copper-covered Kota guardian figure, 16:9"
+      },
+      "kartograf": {
+        "headline": "Využití kovů",
+        "fact": "Měď a mosaz byly v minulosti vzácnými materiály získávanými dálkovým obchodem.",
+        "source_url": "https://en.wikipedia.org/wiki/Kota_people_(Gabon)",
+        "voice": "Použití kovu podtrhovalo vysoký význam a posvátnost daného předmětu.",
+        "image_prompt": "Photorealistic detail of hammered copper textures on traditional African art piece, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-umeni-rezbarstvi",
+    "country": "Gabon",
+    "section": "Umění",
+    "topic": "Gabonské řezbářství",
+    "headline": "Mistři tvrdého dřeva",
+    "fact": "Gabonští řezbáři zpracovávají vzácná tropická dřeva jako ebenu a mahagon k výrobně užitkových i uměleckých předmětů.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+    "voice": "Pod rukama mistra se kus tmavého polena mění v jemnou elegantní sochu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of an artisan woodcarver shaping a dark hardwood block with traditional tools, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Tradiční nástroje",
+        "fact": "K vyřezávání se dodnes používají ručně kované motyčky a dláta děděná v rodinách.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Ruční práce dává každému výrobku neopakovatelný charakter.",
+        "image_prompt": "Photorealistic close-up of hand chisels and carved ebony wood sculptures in a craft studio, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pralesní suroviny",
+        "fact": "Udržitelné využívání pralesních dřevin je zásadní pro zachování tohoto tradičního řemesla.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Respekt ke stromu začíná ještě předtím, než řezbář zasadí první úder dlátem.",
+        "image_prompt": "Photorealistic view of polished dark mahogany wooden bowls and crafts on display, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-sport-fotbal",
+    "country": "Gabon",
+    "section": "Sport",
+    "topic": "Pantery z Gabonu",
+    "headline": "Fotbalová vášeň pod vlajkou Les Panthères",
+    "fact": "Fotbalová reprezentace Gabonu je známá pod přezdívkou Les Panthères neboli Panteři.",
+    "source_url": "https://en.wikipedia.org/wiki/Gabon_national_football_team",
+    "source_quote": "The team represents Gabon in international men's football and is nicknamed Les Panthères",
+    "voice": "Žlutomodré dresy panterů zaplní stadiony při každém důležitém zápase.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic view of a soccer match with players in yellow and blue uniforms, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Atmosféra na stadionu",
+        "fact": "Fanoušci v hledišti bubnují, tancují a nosí žluté barvy na podporu svého týmu.",
+        "source_url": "https://en.wikipedia.org/wiki/Gabon_national_football_team",
+        "voice": "Zápas reprezentace v Libreville je opravdovým svátkem hudby a sportu.",
+        "image_prompt": "Photorealistic shot of football fans cheering in stadium wearing yellow national jerseys, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pořádání Afrického poháru",
+        "fact": "Gabon hostil závěrečné turnaje Afrického poháru národů na moderních stadionech.",
+        "source_url": "https://en.wikipedia.org/wiki/Gabon_national_football_team",
+        "voice": "Organizace velkého turnaje přilákala k fotbalu tisíce nových talentů.",
+        "image_prompt": "Photorealistic aerial photo of Stade de l'Amitié stadium illuminated at night in Libreville, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-sport-tropicale-amissa-bongo",
+    "country": "Gabon",
+    "section": "Sport",
+    "topic": "Tropicale Amissa Bongo",
+    "headline": "Cyklistický závod napříč pralesem",
+    "fact": "Tropicale Amissa Bongo je prestižní etapový cyklistický závod pořádaný na silnicích v Gabonu.",
+    "source_url": "https://en.wikipedia.org/wiki/La_Tropicale_Amissa_Bongo",
+    "source_quote": "La Tropicale Amissa Bongo is a road bicycle racing stage race held in Gabon",
+    "voice": "Závodníci z celého světa bojují s horkem, vlhkostí a náročnými kopci.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a professional cycling peloton riding through a tropical green landscape in Gabon, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Fandění podél tratě",
+        "fact": "Místní obyvatelé lemují vesnické silnice a nadšeně povzbuzují projíždějící peloton.",
+        "source_url": "https://en.wikipedia.org/wiki/La_Tropicale_Amissa_Bongo",
+        "voice": "Průjezd pestrobarevného pelotonu vesnicí trvá jen chvilku, ale zanechá obrovskou radost.",
+        "image_prompt": "Photorealistic shot of spectators waving flags as road cyclists speed past a tropical village, 16:9"
+      },
+      "kartograf": {
+        "headline": "Africká cyklistika",
+        "fact": "Závod dává africkým cyklistům příležitost změřit síly se světovými profesionálními týmy.",
+        "source_url": "https://en.wikipedia.org/wiki/La_Tropicale_Amissa_Bongo",
+        "voice": "Gabonské etapy pomohly otevřít dveře světové cyklistiky novým africkým talentům.",
+        "image_prompt": "Photorealistic low-angle action shot of cyclists racing on a paved rainforest highway, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-sport-tradicni-zapas",
+    "country": "Gabon",
+    "section": "Sport",
+    "topic": "Tradiční zápas",
+    "headline": "Test síly a obratnosti",
+    "fact": "Tradiční zápas je oblíbenou lidovou zábavou předváděnou během vesnických slavností.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+    "voice": "Cílem zápasníků je položit soupeře na lopatky na pískovém hřišti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of traditional wrestlers competing on sand surrounded by spectators in a village, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Bubny udávají tempo",
+        "fact": "Zápasnické souboje probíhají za doprovodu rychlých rytmů bubnů a zpěvu diváků.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Rytmus bubnu dodává borcům v aréně sílu a odvahu.",
+        "image_prompt": "Photorealistic shot of traditional drummers playing wooden djembe drums near a sports arena, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rituální význam",
+        "fact": "Sportovní klání sloužilo v historii jako způsob prověření zdatnosti mladých mužů v komunitě.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Výhra v zápase přinesla vítězi úctu celé rodiny i vesnice.",
+        "image_prompt": "Photorealistic shot of traditional wrestlers shaking hands after a competitive match, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-jazyk-slova-francouzstina",
+    "country": "Gabon",
+    "section": "Jazyk & slova",
+    "topic": "Francouzština v Gabonu",
+    "headline": "Oficiální řeč spojující národ",
+    "fact": "Úředním jazykem Gabonu je francouzština, která se používá ve školách, úřadech a v médiích.",
+    "source_url": "https://en.wikipedia.org/wiki/Languages_of_Gabon",
+    "source_quote": "French is the country's sole official language",
+    "voice": "Díky francouzštině se mezi sebou snadno domluví obyvatelé desítek různých etnik.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Každodenní komunikace",
+        "fact": "V obchodech a na ulicích v městech uslyšíte francouzštinu s osobitým gabonským přízvukem.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_Gabon",
+        "voice": "Melodický místní přízvuk dává známým slovům svěží afričtější nádech.",
+        "image_prompt": "Photorealistic shot of street signs in Libreville written in French, 16:9"
+      },
+      "kartograf": {
+        "headline": "Frankofonní svět",
+        "fact": "Gabon je aktivním členem mezinárodní organizace Frankofonie sdružující francouzsky mluvící země.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_Gabon",
+        "voice": "Společný jazyk otevírá Gabonu dveře k úzké spolupráci se světem.",
+        "image_prompt": "Photorealistic view of school textbooks in French on a classroom desk in Gabon, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-jazyk-slova-fang",
+    "country": "Gabon",
+    "section": "Jazyk & slova",
+    "topic": "Jazyk Fang",
+    "headline": "Řeč severních pralesů",
+    "fact": "Jazyk Fang patří mezi rozšířené tradiční bantuské jazyky na území Gabonu.",
+    "source_url": "https://en.wikipedia.org/wiki/Fang_language",
+    "voice": "Bantuské kořeny dělají z tohoto jazyka velmi melodický a bohatý nástroj.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rodinná tradice",
+        "fact": "Doma a mezi přáteli předávají rodiče rodný jazyk Fang svým dětem mluveným slovem.",
+        "source_url": "https://en.wikipedia.org/wiki/Fang_language",
+        "voice": "Písničky a pohádky v jazyce Fang doprovázejí děti od útlého dětství.",
+        "image_prompt": "Photorealistic scene of a mother talking to children on a veranda in Gabon, 16:9"
+      },
+      "kartograf": {
+        "headline": "Bantuská jazyková rodina",
+        "fact": "Fang je úzce příbuzný s dalšími bantuskými jazyky používanými v sousedním Kamerunu a Rovníkové Guineji.",
+        "source_url": "https://en.wikipedia.org/wiki/Fang_language",
+        "voice": "Hranice států nezastaví společné jazykové kořeny obyvatel regionu.",
+        "image_prompt": "Photorealistic detail map of Central African language regions displayed on wood, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-jazyk-slova-mbolo",
+    "country": "Gabon",
+    "section": "Jazyk & slova",
+    "topic": "Pozdrav Mbolo",
+    "headline": "Slovo, které otevírá srdce",
+    "fact": "Mbolo je tradiční přátelský pozdrav používaný napříč Gabonem pro přivítání přátel i cizinců.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+    "voice": "Stačí se usmát a říct Mbolo, a hned se cítíte jako vítaný host.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "První slovo návštěvníka",
+        "fact": "Když vyslovíte Mbolo, místní obyvatelé to ocení vřelým úsměvem a odpovědí.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Znalost jediného slova okamžitě prolomí ledy při setkání.",
+        "image_prompt": "Photorealistic smiling face of a Gabonese person waving in greeting outdoor, 16:9"
+      },
+      "kartograf": {
+        "headline": "Znak pohostinnosti",
+        "fact": "Pozdrav vyjadřuje přání míru, zdraví a dobré nálady pro celou rodinu osloveného.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Africké pozdravy v sobě vždy nesou přání všeho dobrého do života.",
+        "image_prompt": "Photorealistic warm sunset lighting over a peaceful village square in Gabon, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-jidlo-poulet-nyembwe",
+    "country": "Gabon",
+    "section": "Jídlo",
+    "topic": "Poulet Nyembwe",
+    "headline": "Kuře v krémové palmové omáčce",
+    "fact": "Poulet Nyembwe je gabonské národní jídlo připravované z kuřecího masa duseného v omáčce z palmových ořechů.",
+    "source_url": "https://en.wikipedia.org/wiki/Nyembwe_chicken",
+    "source_quote": "Nyembwe chicken is considered the national dish of Gabon",
+    "voice": "Hustá červenooranžová omáčka dodává masu bohatou a jemně oříškovou chuť.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic food photography of Poulet Nyembwe chicken in rich palm nut sauce served with rice, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Tradiční přílohy",
+        "fact": "Pokrm se běžně podává s vařenou rýží, maniokem nebo vařenými plátny plantainů.",
+        "source_url": "https://en.wikipedia.org/wiki/Nyembwe_chicken",
+        "voice": "Sladkavý plantain v kombinaci s pálivější omáčkou chutná přímo skvěle.",
+        "image_prompt": "Photorealistic detailed plate of chicken Nyembwe with fried plantains and rice, 16:9"
+      },
+      "kartograf": {
+        "headline": "Suroviny z palmy",
+        "fact": "Slovo nyembwe pochází z jazyka Mpongwe a označuje olej lisovaný z dužiny palmových plodů.",
+        "source_url": "https://en.wikipedia.org/wiki/Nyembwe_chicken",
+        "voice": "Palma olejná poskytuje základní surovinu pro tradiční kuchyni celého pobřeží.",
+        "image_prompt": "Photorealistic close-up of fresh red oil palm fruit clusters on a wooden table, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-jidlo-maniok",
+    "country": "Gabon",
+    "section": "Jídlo",
+    "topic": "Maniok v kuchyni",
+    "headline": "Základní chléb pralesa",
+    "fact": "Maniokové hlízy a listy představují hlavní škrobovou potravinu pro většinu obyvatel Gabonu.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+    "voice": "Z manioku se připravuje chléb, kaše i chutné dušené listy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of cassava roots and cassava flour batons wrapped in leaves, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Bâton de manioc",
+        "fact": "Maniokové těsto se balí do tvaru tyčinek do listů a vaří se v páře, čímž vznikne trvanlivý chléb.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Tento zabalený maniokový bochník vydrží čerstvý na cesty po pralese dlouhé dny.",
+        "image_prompt": "Photorealistic close-up of leaf-wrapped cassava bread stick sliced open on a board, 16:9"
+      },
+      "kartograf": {
+        "headline": "Odolná plodina",
+        "fact": "Manioku se dobře daří v tropických půdách a představuje spolehlivou potravinovou jistotu.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Rostlina dokáže přečkat sucho i chudou půdu a nakrmit celé rodiny.",
+        "image_prompt": "Photorealistic view of a green cassava plant field with broad leaves in tropical climate, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-jidlo-poisson-braise",
+    "country": "Gabon",
+    "section": "Jídlo",
+    "topic": "Poisson Braisé",
+    "headline": "Grilované ryby z oceánu",
+    "fact": "Poisson Braisé je oblíbená ryba potřená kořením a grilovaná na dřevěném uhlí přímo u moře.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+    "voice": "Vůně čerstvě grilované ryby se večer line podél všech plážových promenád.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic food shot of a whole marinated fish grilling over hot charcoal embers outdoor, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pikantní marináda",
+        "fact": "Ryba se před grilováním čerstvě potírá směsí česneku, zázvoru, chilli a citrónové šťávy.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Křupavá kůžička a šťavnaté maso voní po kouři a exotickém koření.",
+        "image_prompt": "Photorealistic grilled sea bass served on a platter with lime slices and chili sauce, 16:9"
+      },
+      "kartograf": {
+        "headline": "Úlovky z Atlantiku",
+        "fact": "Místní rybáři dodávají na trhy v Libreville a Port-Gentil každé ráno čerstvé mořské ryby.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Gabon",
+        "voice": "Bohatství Atlantiku zásobuje tradiční kuchyni pestrou nabídkou darů moře.",
+        "image_prompt": "Photorealistic early morning scene of colorful wooden fishing boats on Libreville shoreline, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-historie-nezavislost",
+    "country": "Gabon",
+    "section": "Historie",
+    "topic": "Vyhlášení nezávislosti",
+    "headline": "Cesta k vlastnímu státu",
+    "fact": "Gabon získal v roce 1960 plnou nezávislost na Francii a nastoupil cestu samostatného rozvoje.",
+    "source_url": "https://en.wikipedia.org/wiki/Gabon",
+    "source_quote": "Gabon gained independence from France in 1960",
+    "voice": "Nová vlajka se zeleným, žlutým a modrým pruhem zavlála nad novým státem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of the national flag of Gabon fluttering against a sunny tropical sky, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Svátek 17. srpna",
+        "fact": "Každoročně se sedmnáctého srpna po celém Gabonu konají vojenské přehlídky a kulturní festivaly.",
+        "source_url": "https://en.wikipedia.org/wiki/Gabon",
+        "source_quote": "August 17 is Independence Day in Gabon",
+        "voice": "Den nezávislosti oslavují města i nejodlehlejší pralesní vesnice.",
+        "image_prompt": "Photorealistic street parade with traditional dancers celebrating in Libreville, 16:9"
+      },
+      "kartograf": {
+        "headline": "Symbolika vlajky",
+        "fact": "Zelený pruh reprezentuje pralesy, žlutý sluneční svit a rovník, modrý Atlantský oceán.",
+        "source_url": "https://en.wikipedia.org/wiki/Flag_of_Gabon",
+        "source_quote": "Yellow represents the equator... Green represents the forests... Blue represents the sea",
+        "voice": "Pětibarvá symbolika dokonale vystihuje přírodní charakter celé země.",
+        "image_prompt": "Photorealistic graphic layout of Gabon flag overlaying aerial forest and ocean imagery, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-historie-oklo",
+    "country": "Gabon",
+    "section": "Historie",
+    "topic": "Přírodní reaktor v Oklo",
+    "headline": "Zázrak přírodní fyziky",
+    "fact": "V uranovém dole v Oklo v Gabonu byl objeven jediný známý přírodní jaderný reaktor na Zemi.",
+    "source_url": "https://en.wikipedia.org/wiki/Natural_nuclear_fission_reactor",
+    "source_quote": "Oklo is the only known location for this in the world",
+    "voice": "Příroda dokázala spustit řetězovou štěpnou reakci bez jakéhokoli zásahu člověka.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic geological rock formation view inside an open-pit mine site in Oklo, Gabon, 16:9",
+    "ll": [
+      13.1,
+      -1.59
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Milióny let v minulosti",
+        "fact": "Přírodní jaderná reakce v Oklo probíhala před přibližně dvěma miliardami let.",
+        "source_url": "https://en.wikipedia.org/wiki/Natural_nuclear_fission_reactor",
+        "source_quote": "about 2 billion years ago",
+        "voice": "Dávno před vznikem prvních dinosaurů pracovala pod zemí přírodní elektrárna.",
+        "image_prompt": "Photorealistic close-up of dark uranium mineral rocks in geological layer, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vědecký objevení",
+        "fact": "Francouzští vědci odhalili tento fenomén v roce 1972 při rozboru neobvyklého složení uranu.",
+        "source_url": "https://en.wikipedia.org/wiki/Natural_nuclear_fission_reactor",
+        "source_quote": "The phenomenon was discovered in 1972 at Oklo in Gabon",
+        "voice": "Tento unikátní nález pomohl fyzikům lépe pochopit chování jaderných částic.",
+        "image_prompt": "Photorealistic wide perspective of Oklo uranium deposit geology and rock strata, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ga-historie-obchod-s-otroky",
+    "country": "Gabon",
+    "section": "Historie",
+    "topic": "Historie pobřeží Loango",
+    "headline": "Paměť Atlantiku",
+    "fact": "Pobřežní oblasti Gabonu sloužily v osmnáctém století jako jedno z míst obchodu s otroky přes Atlantik.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Gabon",
+    "voice": "Temná kapitola dějin připomíná utrpení tisíců lidí odvezených do zámoří.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic moody ocean coast view with waves crashing on dark rocks at sunset, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Stopy v architektuře",
+        "fact": "Historické památníky a pozůstatky obchodních stanic podél pobřeží připomínají tyto tragické události.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Gabon",
+        "voice": "Tichá místa u moře nabádají k zamyslení a nezapomínání na minulost.",
+        "image_prompt": "Photorealistic shot of a historical stone memorial monument on Gabon ocean shore, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obchodní cesty",
+        "fact": "Evropské lodě vyměňovaly v gabonských přístavech zboží za slonovinu, vzácné dřevo a bohužel i lidi.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Gabon",
+        "voice": "Křižovatka námořních cest výrazně ovlivnila demografii celého Atlantiku.",
+        "image_prompt": "Photorealistic vintage nautical map drawing of Central African coast and Atlantic trade routes, 16:9"
+      }
+    }
+  }
+]

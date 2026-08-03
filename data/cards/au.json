@@ -1,0 +1,216 @@
+[
+  {
+    "id": "au-mista-opera",
+    "country": "Austrálie",
+    "section": "Místa",
+    "topic": "Sydneyská opera",
+    "headline": "Budova, která vypadá jako plachty lodí",
+    "fact": "Sydneyská opera se svými bílými 'skořápkami' patří k nejznámějším budovám 20. století; UNESCO ji zapsalo na seznam světového dědictví v roce 2007.",
+    "source_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+    "source_quote": "It is one of the great iconic buildings of the 20th century, an image of great beauty that has become known throughout the world.",
+    "voice": "Z dálky vypadá jako plachty lodí ztuhlé uprostřed přístavu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Sydneyské opery s bílými skořepinovými střechami v přístavu za soumraku, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Charakteristické 'skořápky' tvoří přes 2 194 předlitých betonových segmentů, každý vážící až 15 tun, obložených přes milion keramických dlaždic v lesklé bílé a matné krémové barvě.",
+        "source_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+      },
+      "kartograf": {
+        "fact": "Opera je příklad architektury, která se stala celonárodním symbolem rychleji, než by se dalo čekat — od otevření v roce 1973 se stala vizuální zkratkou pro celou Austrálii, podobně jako Eiffelovka pro Francii.",
+        "source_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+      }
+    }
+  },
+  {
+    "id": "au-priroda-bariera",
+    "country": "Austrálie",
+    "section": "Příroda",
+    "topic": "Velký bariérový útes",
+    "headline": "Jediná živá stavba viditelná z vesmíru",
+    "fact": "Velký bariérový útes je největší korálový útesový systém na světě — přes 2 900 jednotlivých útesů — a jediná živá stavba, kterou je vidět i z vesmíru.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+    "source_quote": "The world's largest coral reef system",
+    "voice": "Postavili ho drobní korálovci, a přesto je vidět až z oběžné dráhy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký snímek Velkého bariérového útesu, tyrkysová voda a barevné korálové struktury, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Útes se táhne přes 2 300 km podél severovýchodního pobřeží Austrálie a zahrnuje kolem 900 ostrovů. Je to největší jednotlivá stavba vytvořená živými organismy na Zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef"
+      },
+      "kartograf": {
+        "fact": "Vznik obřího útesu z miliard drobných korálových polypů ukazuje, jak masivní geologické útvary mohou vznikat bez jediného 'stavitele' — jen postupným hromaděním nepatrných organismů po tisíce let, podobně jako se z písečných zrn tvoří duny.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef"
+      }
+    }
+  },
+  {
+    "id": "au-lide-aboriginci",
+    "country": "Austrálie",
+    "section": "Lidé",
+    "topic": "Domorodí Australané",
+    "headline": "Nejstarší nepřerušená kultura na Zemi",
+    "fact": "Domorodí Austrálci mají jednu z nejstarších nepřetržitě žijících kultur na světě — jejich přítomnost v Austrálii sahá 50 000 až 65 000 let zpátky.",
+    "source_url": "https://en.wikipedia.org/wiki/Aboriginal_Australians",
+    "source_quote": "Aboriginal Australians may have one of the oldest continuous cultures on earth.",
+    "voice": "Kultura starší než poslední doba ledová, a pořád živá.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek domorodého australského umělce s tradičními vzory tělesné malby v buši, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Domorodí Austrálci tvořili před příchodem Evropanů stovky odlišných národů s vlastními jazyky a zvyky. Jejich znalost krajiny, rostlin a zvířat se předávala ústně po desítky tisíc let.",
+        "source_url": "https://en.wikipedia.org/wiki/Aboriginal_Australians"
+      },
+      "kartograf": {
+        "fact": "Desítky tisíc let nepřerušené kultury dělají z domorodých Australanů jeden z nejdéle zdokumentovaných příkladů lidského přizpůsobení jedinému prostředí — jejich znalosti o přežití v extrémně suché krajině se dodnes využívají třeba při řízení požárů v buši.",
+        "source_url": "https://en.wikipedia.org/wiki/Aboriginal_Australians"
+      }
+    }
+  },
+  {
+    "id": "au-jidlo-vegemite",
+    "country": "Austrálie",
+    "section": "Jídlo",
+    "topic": "Vegemite",
+    "headline": "Tmavá pomazánka, kterou cizinci nechápou",
+    "fact": "Vegemite je typicky australská tmavá pomazánka z pivovarnického kvasnicového extraktu — slaná, mírně nahořklá chuť, kterou milují Australané a cizinci většinou nechápou.",
+    "source_url": "https://en.wikipedia.org/wiki/Vegemite",
+    "source_quote": "It is salty, slightly bitter, malty and has an umami flavour similar to beef bouillon.",
+    "voice": "Namaž si ji jako marmeládu, a poznáš, proč se dá vydržet jen tenká vrstva.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek krajíce chleba s tenkou vrstvou tmavé pomazánky Vegemite, 16:9",
+    "tags": ["regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Vegemite se vyrábí z odpadu po výrobě piva — kvasnicového extraktu, který by se jinak vyhazoval. Recept vznikl ve 20. letech 20. století a stal se jedním z nejvýraznějších symbolů australské identity.",
+        "source_url": "https://en.wikipedia.org/wiki/Vegemite"
+      },
+      "kartograf": {
+        "fact": "Vegemite je příklad, jak vedlejší produkt jednoho odvětví (pivovarnictví) může vytvořit úplně nové národní jídlo — recyklace jinak nevyužitého kvasnicového odpadu z něj udělala potravinu, kterou dnes Australané považují za nedílnou součást národní identity.",
+        "source_url": "https://en.wikipedia.org/wiki/Vegemite"
+      }
+    }
+  },
+  {
+    "id": "au-historie-prvni-flotila",
+    "country": "Austrálie",
+    "section": "Historie",
+    "topic": "Založení Austrálie jako trestanecké kolonie",
+    "headline": "Rok, kdy dorazila První flotila",
+    "fact": "První flotila britských lodí přistála roku 1788 a založila v Austrálii první britskou trestaneckou kolonii — začátek evropského osídlení kontinentu.",
+    "source_url": "https://en.wikipedia.org/wiki/First_Fleet",
+    "voice": "Nová země pro Brity vznikla jako místo, kam posílali vězně.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistická ilustrace britských plachetnic kotvících u australského pobřeží, 18. století, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Británie potřebovala nové místo pro trestance poté, co po americké revoluci přišla o možnost posílat je do svých severoamerických kolonií. Austrálie se stala náhradním řešením — vzdáleným místem, odkud nebylo snadné utéct.",
+        "source_url": "https://en.wikipedia.org/wiki/First_Fleet"
+      },
+      "kartograf": {
+        "fact": "Založení Austrálie jako trestanecké kolonie ukazuje, jak vzdálenost fungovala jako 'vězení' samo o sobě — obrovská geografická izolace kontinentu byla přesně to, co Británie hledala jako náhradu za dřívější kolonie ve snadněji dostupné Americe.",
+        "source_url": "https://en.wikipedia.org/wiki/First_Fleet"
+      }
+    }
+  },
+  {
+    "id": "au-kultura-dreamtime",
+    "country": "Austrálie",
+    "section": "Kultura & tradice",
+    "topic": "Duchovní svět Aboriginců",
+    "headline": "Doba snění, kde minulost, přítomnost a budoucnost splývají",
+    "fact": "Dreamtime (Doba snění) je duchovní pojetí domorodých Australanů, podle kterého mýtičtí předkové stvořili a formovali krajinu — čas v něm není minulostí, ale trvá 'napořád'.",
+    "source_url": "https://en.wikipedia.org/wiki/Dreamtime",
+    "source_quote": "Creation is believed to be the work of culture heroes who travelled across a formless land, creating sacred sites.",
+    "voice": "Stvoření světa tu není dávná minulost — pořád trochu probíhá i teď.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek posvátné australské krajiny za východu slunce, červené skály buše, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Dreamtime slouží zároveň jako náboženství, právo i systém příbuzenství — vysvětluje stvoření světa, ale i to, jak se lidé mají chovat k zemi a k sobě navzájem. Anglický výraz 'Everywhen' vystihuje, že minulost, přítomnost a budoucnost v něm existují zároveň.",
+        "source_url": "https://en.wikipedia.org/wiki/Dreamtime"
+      },
+      "kartograf": {
+        "fact": "Pojetí času jako 'Everywhen' se zásadně liší od západní lineární představy dějin (minulost → přítomnost → budoucnost) — ukazuje, že i tak základní kategorie jako čas může různé kultury chápat úplně odlišně, ne jen jinak vykládat stejné události.",
+        "source_url": "https://en.wikipedia.org/wiki/Dreamtime"
+      }
+    }
+  },
+  {
+    "id": "au-umeni-teckova-malba",
+    "country": "Austrálie",
+    "section": "Umění",
+    "topic": "Tečková malba domorodých Australanů",
+    "headline": "Malba, jejíž tečky skrývaly tajemství",
+    "fact": "Tečková malba domorodých Austrálců vznikla na počátku 70. let 20. století, když umělci v osadě Papunya začali malovat posvátné příběhy na plátno — tečky přitom skrývaly obřadní tajemství před nezasvěcenými.",
+    "source_url": "https://en.wikipedia.org/wiki/Aboriginal_art",
+    "source_quote": "The dots were used to cover secret-sacred ceremonies.",
+    "voice": "Obraz plný teček, ale co přesně skrývá, smí vědět jen zasvěcení.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek australské tečkované malby v okrových a červených barvách, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tuto techniku podpořil učitel umění Geoffrey Bardon, který povzbudil domorodé umělce v Papunye, aby příběhy dřív kreslené do pouštního písku ztvárnili trvale na plátně. Vznikla tak umělecká firma Papunya Tula Artists.",
+        "source_url": "https://en.wikipedia.org/wiki/Aboriginal_art"
+      },
+      "kartograf": {
+        "fact": "Tečková malba je jen jedna regionální tradice ze západní pouště, ne univerzální styl celého domorodého umění — přesto se od 70. let stala natolik známou, že ji svět mylně považuje za symbol veškerého australského domorodého umění.",
+        "source_url": "https://en.wikipedia.org/wiki/Aboriginal_art"
+      }
+    }
+  },
+  {
+    "id": "au-sport-ashes",
+    "country": "Austrálie",
+    "section": "Sport",
+    "topic": "Kriketová rivalita The Ashes",
+    "headline": "Popel, o který soupeří dva národy přes sto let",
+    "fact": "The Ashes je kriketová rivalita mezi Austrálií a Anglií, která vznikla roku 1882 ze satirického nekrologu po první australské výhře na anglické půdě.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Ashes",
+    "source_quote": "the body will be cremated and the ashes taken to Australia",
+    "voice": "Trofej je jen malá terakotová urna — ale soupeření je o to větší.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kriketového zápasu na velkém stadionu, hráči v bílých dresech, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Noviny žertem napsaly, že anglický kriket 'zemřel' po prohře s Austrálií a jeho 'popel' bude odvezen do Austrálie — odtud jméno série. Trofejí je dodnes malá terakotová urna uložená v Lord's Cricket Clubu.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Ashes"
+      },
+      "kartograf": {
+        "fact": "The Ashes je příklad, jak žertovný novinový článek dokáže vytvořit trvalou sportovní tradici trvající přes 140 let — symbolická hodnota rivality dávno přerostla svou vtipnou historku původu a stala se jedním z nejprestižnějších sportovních klání světa.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Ashes"
+      }
+    }
+  },
+  {
+    "id": "au-jazyk-slang",
+    "country": "Austrálie",
+    "section": "Jazyk & slova",
+    "topic": "Australská hovorová angličtina",
+    "headline": "Jazyk plný zkrácených mazlivých slov",
+    "fact": "Australská angličtina hojně používá zkrácená 'mazlivá' slova jako 'arvo' (odpoledne) nebo 'barbie' (grilování) — způsob, jak vyjádřit familiárnost a blízkost.",
+    "source_url": "https://en.wikipedia.org/wiki/Australian_English",
+    "source_quote": "Diminutives and hypocorisms are common and are often used to indicate familiarity.",
+    "voice": "Skoro každé druhé slovo si Australané zkrátí a přidají si ke konci 'o'.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Přípona '-o' pochází z irštiny a produktivně vytváří přezdívky — třeba 'Gazza' z Garyho nebo 'Smitty' z příjmení Smith. Podobně vznikají i běžná slova jako 'servo' (benzínka) nebo 'smoko' (přestávka na cigaretu).",
+        "source_url": "https://en.wikipedia.org/wiki/Australian_English"
+      },
+      "kartograf": {
+        "fact": "Masové zkracování slov v australské angličtině odráží neformální, rovnostářskou kulturu země — jazyk zvýhodňující familiárnost a blízkost před formálností je jazykovým otiskem společnosti, která si tradičně zakládá na neformálnosti a odmítání přehnané zdvořilostní hierarchie.",
+        "source_url": "https://en.wikipedia.org/wiki/Australian_English"
+      }
+    }
+  }
+]

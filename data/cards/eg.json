@@ -1,0 +1,214 @@
+[
+  {
+    "id": "eg-mista-pyramidy",
+    "country": "Egypt",
+    "section": "Místa",
+    "topic": "Velká pyramida v Gíze",
+    "headline": "Jediný starověký div světa, který dodnes stojí",
+    "fact": "Velká pyramida v Gíze je nejstarší ze sedmi divů starověkého světa a jediná, která se dochovala téměř netknutá; postavena byla jako hrobka faraona Chufua.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+    "source_quote": "the oldest of the Seven Wonders of the Ancient World, and the only wonder that has remained largely intact",
+    "voice": "Přes 4 500 let stará stavba, a pořád stojí, jako by to bylo včera.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Velké pyramidy v Gíze při západu slunce, pouštní písek v popředí, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Pyramida vznikla kolem roku 2600 př. n. l. za doby egyptské Staré říše jako monumentální hrobka. Zbylých šest starověkých divů světa (třeba visuté zahrady Semiramidiny) se do dnešní doby nedochovalo.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+      },
+      "kartograf": {
+        "fact": "Pyramidy v Gíze jsou dokladem toho, jak dokázala centralizovaná egyptská státní moc mobilizovat obrovské množství pracovní síly a zdrojů na jeden monumentální projekt — podobnou míru organizace najdeme jen u málokteré starověké civilizace.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+      }
+    }
+  },
+  {
+    "id": "eg-priroda-nil",
+    "country": "Egypt",
+    "section": "Příroda",
+    "topic": "Řeka Nil",
+    "headline": "Řeka, díky které existuje Egypt",
+    "fact": "Nil je s délkou přes 7 000 km jednou z nejdelších řek světa a životní tepnou Egypta, který by bez ní byl jen pouští.",
+    "source_url": "https://en.wikipedia.org/wiki/Nile",
+    "source_quote": "the longest river in the world",
+    "voice": "Bez téhle jediné řeky by v Egyptě nerostlo vůbec nic.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký snímek řeky Nil protínající poušť, zelený pás úrodné půdy podél toku, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Téměř celé obyvatelstvo Egypta žije v úzkém pásu podél Nilu a v jeho deltě — zbytek země pokrývá neobyvatelná poušť. Řeka zásobuje zemi vodou pro zavlažování polí.",
+        "source_url": "https://en.wikipedia.org/wiki/Nile"
+      },
+      "kartograf": {
+        "fact": "Egypt je učebnicový příklad říční civilizace — na mapě by se dal nazvat 'úzký zelený had v poušti', protože osídlení téměř přesně kopíruje tok řeky. Bez Nilu by starověká egyptská civilizace vůbec nemohla vzniknout.",
+        "source_url": "https://en.wikipedia.org/wiki/Nile"
+      }
+    }
+  },
+  {
+    "id": "eg-lide-tutanchamon",
+    "country": "Egypt",
+    "section": "Lidé",
+    "topic": "Faraon Tutanchamon",
+    "headline": "Chlapecký faraon, jehož hrobku nikdo nevykradl",
+    "fact": "Tutanchamon se stal faraonem už jako osmiletý chlapec; jeho hrobku objevil roku 1922 Howard Carter téměř nedotčenou, s více než 5 000 poklady.",
+    "source_url": "https://en.wikipedia.org/wiki/Tutankhamun",
+    "voice": "Zemřel jako teenager, ale jeho poklad je dodnes nejslavnějším egyptským nálezem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zlaté posmrtné masky Tutanchamona v muzejní vitríně, dramatické osvětlení, 16:9",
+    "tags": ["dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tutanchamon vládl jen asi devět let a zemřel kolem osmnácti let. Přestože do jeho hrobky se dostali starověcí lupiči, většina pokladu zůstala neporušená — na rozdíl od hrobek slavnějších faraonů, které byly dávno vyrabovány.",
+        "source_url": "https://en.wikipedia.org/wiki/Tutankhamun"
+      },
+      "kartograf": {
+        "fact": "Tutanchamonova sláva je paradox: za života byl nevýznamný mladý panovník, ale díky náhodně zachovalé hrobce se stal nejznámějším faraonem vůbec — jeho popularita dnes odráží víc štěstí archeologie než skutečný historický význam.",
+        "source_url": "https://en.wikipedia.org/wiki/Tutankhamun"
+      }
+    }
+  },
+  {
+    "id": "eg-jidlo-kosari",
+    "country": "Egypt",
+    "section": "Jídlo",
+    "topic": "Egyptské jídlo košárí",
+    "headline": "Národní jídlo z rýže, čočky a těstovin",
+    "fact": "Košárí — směs rýže, čočky, těstovin, cizrny a rajčatové omáčky s křupavou cibulkou — je egyptské národní jídlo a oblíbené pouliční občerstvení.",
+    "source_url": "https://en.wikipedia.org/wiki/Koshari",
+    "source_quote": "It is a traditional Egyptian staple, mixing pasta, Egyptian fried rice, vermicelli and brown lentils.",
+    "voice": "Čtyři různé druhy sacharidů v jedné misce — a přesto to funguje.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek misky košárí s rajčatovou omáčkou a křupavou cibulkou navrch, 16:9",
+    "tags": ["regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Košárí je levné, sytě a rychle dostupné na téměř každém rohu egyptských měst — kombinuje suroviny, které byly historicky dostupné chudším vrstvám obyvatel, ale dnes ho jedí Egypťané napříč společností.",
+        "source_url": "https://en.wikipedia.org/wiki/Koshari"
+      },
+      "kartograf": {
+        "fact": "Košárí ukazuje, jak obchodní trasy formují národní kuchyni: těstoviny a rýže nejsou původní egyptské plodiny, ale dorazily obchodem a postupně splynuly s místní čočkou v jedno nové, výhradně egyptské jídlo.",
+        "source_url": "https://en.wikipedia.org/wiki/Koshari"
+      }
+    }
+  },
+  {
+    "id": "eg-historie-suez",
+    "country": "Egypt",
+    "section": "Historie",
+    "topic": "Suezský průplav",
+    "headline": "Průplav, který zkrátil cestu kolem světa",
+    "fact": "Suezský průplav spojující Středozemní a Rudé moře byl otevřen roku 1869 a zkrátil námořní cestu mezi Evropou a Asií o skoro 9 000 km.",
+    "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
+    "voice": "Lodě už nemusely obeplouvat celou Afriku, aby se dostaly na druhou stranu světa.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek obří nákladní lodi proplouvající Suezským průplavem, pouštní krajina po obou stranách, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Před vznikem průplavu musely lodě mezi Evropou a Asií obeplouvat celou Afriku kolem mysu Dobré naděje. Suezský průplav tuhle trasu radikálně zkrátil a proměnil Egypt v klíčový bod světového obchodu.",
+        "source_url": "https://en.wikipedia.org/wiki/Suez_Canal"
+      },
+      "kartograf": {
+        "fact": "Suezský průplav je jeden z nejvýraznějších příkladů, jak inženýrská stavba dokáže přepsat globální geografii obchodu — díky pár desítkám kilometrů umělého kanálu se z Egypta stal strategický uzel mezi kontinenty, jehož kontrola byla vždy politicky citlivá.",
+        "source_url": "https://en.wikipedia.org/wiki/Suez_Canal"
+      }
+    }
+  },
+  {
+    "id": "eg-kultura-mumifikace",
+    "country": "Egypt",
+    "section": "Kultura & tradice",
+    "topic": "Egyptská mumifikace",
+    "headline": "Proces, který měl tělo připravit na věčnost",
+    "fact": "Staří Egypťané mumifikovali mrtvé — odstranili vnitřní orgány, tělo vysušili solí natron a zabalili do plátna, aby ho zachovali pro posmrtný život.",
+    "source_url": "https://en.wikipedia.org/wiki/Mummy",
+    "source_quote": "The heart was the seat of thought and feeling and would therefore still be needed in the afterlife.",
+    "voice": "Mozek vytáhli nosem, ale srdce nechávali v těle — bez něj by prý duše nemohla myslet.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staroegyptské mumie v ozdobném sarkofágu v muzejní expozici, tlumené osvětlení, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Proces trval kolem 70 dní: tělo se sušilo v soli natron, dutina se plnila vonnými bylinami, tělo se obalilo vrstvami plátna s ochrannými amulety a nakonec zapečetilo pryskyřicí proti vlhkosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Mummy"
+      },
+      "kartograf": {
+        "fact": "Mumifikace vychází z konkrétní egyptské představy posmrtného života — tělo muselo zůstat zachované, aby v něm duše mohla dál existovat. Pečlivost procesu odráží, jak silně náboženská víra dokáže formovat i praktické, technické postupy dané kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Mummy"
+      }
+    }
+  },
+  {
+    "id": "eg-umeni-rosetta",
+    "country": "Egypt",
+    "section": "Umění",
+    "topic": "Rosettská deska",
+    "headline": "Kámen, který rozluštil tisíciletou hádanku",
+    "fact": "Rosettská deska se stejným textem ve třech písmech (hieroglyfy, démotické písmo a řečtina) umožnila roku 1822 poprvé rozluštit staroegyptské hieroglyfy.",
+    "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+    "voice": "Stovky let nikdo nevěděl, co ty obrázky vlastně znamenají.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek Rosettské desky s vytesaným textem ve třech písmech, muzejní osvětlení, 16:9",
+    "tags": ["dejiny", "jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Vědci znali řečtinu, a tak mohli text nejdřív přeložit z ní a pak hledat odpovídající pasáže v hieroglyfech. Klíčovým vodítkem byla cizí jména (jako Ptolemaios), která se v hieroglyfech objevovala foneticky.",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      },
+      "kartograf": {
+        "fact": "Rozluštění hieroglyfů dokazuje, jak zásadní je pro pochopení mrtvého jazyka mít paralelní text ve známém jazyce — bez Rosettské desky by celé tisíciletí egyptských písemných záznamů zůstalo navždy nečitelné.",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+        "source_quote": "The decree has only minor differences across the three versions, making the Rosetta Stone key to deciphering the Egyptian scripts."
+      }
+    }
+  },
+  {
+    "id": "eg-sport-salah",
+    "country": "Egypt",
+    "section": "Sport",
+    "topic": "Mohamed Salah",
+    "headline": "Fotbalista, kterému se říká 'egyptský král'",
+    "fact": "Mohamed Salah je nejslavnější egyptský fotbalista a jeden z nejlepších útočníků světa; fanoušci mu přezdívají 'egyptský král'.",
+    "source_url": "https://en.wikipedia.org/wiki/Mohamed_Salah",
+    "source_quote": "I have sacrificed a lot for my career, to come from a village to go to Cairo, and to be an Egyptian at this level is unbelievable for me.",
+    "voice": "Z malé vesnice do světové fotbalové špičky.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fotbalisty v červeném dresu slavícího gól na přeplněném stadionu, dynamický pohyb, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Salah je pro Egypťany zdrojem obrovské národní hrdosti a v roce 2019 se dostal na seznam časopisu Time 100 nejvlivnějších lidí světa — jeho úspěch inspiruje fanoušky napříč arabským světem i Afrikou.",
+        "source_url": "https://en.wikipedia.org/wiki/Mohamed_Salah"
+      },
+      "kartograf": {
+        "fact": "Salahova popularita ukazuje, jak sportovní úspěch jednotlivce dokáže zlepšit vnímání celé země v zahraničí — stal se neformálním 'vyslancem' Egypta a arabského světa v době, kdy region čelí často negativním mediálním obrazům.",
+        "source_url": "https://en.wikipedia.org/wiki/Mohamed_Salah"
+      }
+    }
+  },
+  {
+    "id": "eg-jazyk-hieroglyfy",
+    "country": "Egypt",
+    "section": "Jazyk & slova",
+    "topic": "Staroegyptské hieroglyfy",
+    "headline": "Písmo z obrázků, ne z písmen",
+    "fact": "Staroegyptské hieroglyfy jsou písmo z obrázkových znaků, které se po roce 400 n. l. na staletí stalo pro svět úplně nečitelným.",
+    "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+    "voice": "Tisíc let nikdo nevěděl, jak přečíst zprávy vytesané do vlastních chrámů.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Hieroglyfy dlouho vědci považovali za čistě obrázkové symboly, ale rozluštění Rosettské desky ukázalo, že fungovaly i foneticky — konkrétní znaky mohly zaznamenávat hlásky jako v abecedě, ne jen zobrazovat věci.",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      },
+      "kartograf": {
+        "fact": "Hieroglyfy jsou příklad písma, které kombinuje obrázkové i fonetické prvky zároveň — to badatele stovky let mátlo, protože očekávali buď čistě obrázkové, nebo čistě hláskové písmo, a skutečnost byla složitější kombinace obojího.",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      }
+    }
+  }
+]

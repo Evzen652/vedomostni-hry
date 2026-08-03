@@ -1,0 +1,877 @@
+[
+  {
+    "id": "th-mista-wat-arun",
+    "country": "Thajsko",
+    "section": "Místa",
+    "topic": "Chrám Wat Arun",
+    "headline": "Chrám úsvitu postavený ze střepů porcelánu",
+    "fact": "Ústřední věž (prang) bangkokského chrámu Wat Arun byla dokončena v roce 1851 po devíti letech stavby a její fasádu zdobí mozaika z barevného porcelánu a mušlí.",
+    "source_url": "https://en.wikipedia.org/wiki/Wat_Arun",
+    "source_quote": "The main prang was completed in 1851, after nine years of continued construction.",
+    "voice": "Zblízka je to hora střepů, zdálky vypadá jako zlatavá věž nad řekou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Wat Arun temple spire in Bangkok at sunrise, ornate porcelain mosaic decoration, Chao Phraya river in foreground, warm golden light, no people, no text, 16:9",
+    "ll": [100.4869, 13.7437],
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Věž zdobená odpadem z lodí",
+        "fact": "Zdobné střepy porcelánu na věži Wat Arunu pocházely původně z čínských lodí, které je vozily jako přítěž do Bangkoku, než je chrám znovu využil jako mozaiku.",
+        "source_url": "https://en.wikipedia.org/wiki/Wat_Arun",
+        "source_quote": "The prang are decorated by shells of Mauritia mauritiana and bits of porcelain, which had previously been used as ballast by boats coming to Bangkok from China.",
+        "voice": "Náklad, co měl jen držet loď v rovnováze, skončil jako umělecké dílo na chrámu.",
+        "image_prompt": "Photorealistic close-up of colorful porcelain mosaic and seashell decoration on Wat Arun's central prang, intricate detail, daylight, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Chrám, co dal jméno hlavnímu městu vlády",
+        "fact": "Král Taksin přejmenoval chrám na Wat Chaeng poté, co po pádu Ajutthaji roku 1767 založil poblíž nové hlavní město Thonburi na opačném břehu řeky Chao Phraya.",
+        "source_url": "https://en.wikipedia.org/wiki/Wat_Arun",
+        "source_quote": "The temple was renamed Wat Chaeng by Taksin (1767–82) when he established his new capital of Thonburi near the temple, following the fall of Ayutthaya.",
+        "voice": "Nové hlavní město vzniklo doslova v troskách toho starého.",
+        "image_prompt": "Photorealistic aerial view of the Chao Phraya river separating old Thonburi district from Bangkok, Wat Arun spire visible on the riverbank, late afternoon light, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-mista-ajutthaja",
+    "country": "Thajsko",
+    "section": "Místa",
+    "topic": "Historický park Ajutthaja",
+    "headline": "Zříceniny hlavního města, kterému se klaněla Asie",
+    "fact": "Historický park Ajutthaja ukrývá zříceniny bývalého hlavního města Siamského království, založeného roku 1351, a od roku 1991 je zapsán na seznamu světového dědictví UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Ayutthaya_Historical_Park",
+    "source_quote": "Part of the park was declared a UNESCO World Heritage Site in 1991.",
+    "voice": "Palácové sály dávno zmizely, ale cihlové věže chrámů tu drží stráž dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of ancient brick temple ruins and stupas at Ayutthaya Historical Park, Thailand, golden hour light, no people, no text, 16:9",
+    "ll": [100.5697, 14.3532],
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Město, které cizinci řadili mezi velmoci Asie",
+        "fact": "Evropští cestovatelé z počátku 16. století řadili Ajutthaju mezi tři největší mocnosti Asie vedle říše Vidžajanagar a Ming Číny.",
+        "source_url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom",
+        "source_quote": "European travellers in the early 16th century called Ayutthaya one of the three great powers of Asia (alongside Vijayanagara and Ming China).",
+        "voice": "Kdo si myslí, že o velmocích rozhodovala jen Evropa, měl by se podívat na tehdejší Ajutthaju.",
+        "image_prompt": "Photorealistic wide shot of a busy historic river port with wooden trading boats and temple spires in the background, golden late afternoon light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Křižovatka obchodu mezi světovými říšemi",
+        "fact": "Poloha Ajutthaji na řece Chao Phraya z ní udělala výhodného prostředníka v obchodu mezi velkými říšemi raného novověku, zvlášť poté, co obchodníci začali obcházet dobytou Malaku přes pevninskou zkratku pod její kontrolou.",
+        "source_url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom",
+        "source_quote": "became the lucrative middleman for trade between the global empires of the Early Modern World",
+        "voice": "Kdo ovládal řeku a zkratku přes poloostrov, ovládal i obchod mezi kontinenty.",
+        "image_prompt": "Photorealistic aerial view of the Chao Phraya river winding past Ayutthaya's temple ruins, historic trade route, midday light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-mista-doi-suthep",
+    "country": "Thajsko",
+    "section": "Místa",
+    "topic": "Wat Phra That Doi Suthep",
+    "headline": "Chrám na hoře, kam cestu ukázal slon",
+    "fact": "Chrám Wat Phra That Doi Suthep byl podle tradice založen v roce 1383 nad Chiang Mai poté, co posvátný ostatek na místo dovedl bílý slon.",
+    "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep",
+    "source_quote": "The temple is said to have been founded in 1383 when the first stupa was built.",
+    "voice": "Cestu k chrámu tehdy prý nevybral král, ale zvíře, které šlo, kam chtělo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the golden chedi at Wat Phra That Doi Suthep temple overlooking misty mountains near Chiang Mai, morning light, no people, no text, 16:9",
+    "ll": [98.9217, 18.8047],
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slon vylezl na horu a padl mrtvý přesně tam, kde stojí chrám",
+        "fact": "Podle legendy nesl posvátný ostatek na zádech bílý slon vypuštěný do džungle; zvíře vystoupalo na horu Doi Suthep, třikrát zatroubilo a na místě padlo mrtvé — přesně tam pak vznikl chrám.",
+        "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep",
+        "source_quote": "The elephant is said to have climbed up Doi Suthep, at that time called Doi Aoy Chang (Sugar Elephant Mountain), stopped, trumpeted three times, then dropped dead.",
+        "voice": "Místo pro nejposvátnější chrám kraje nevybíral člověk, ale zvířecí instinkt.",
+        "image_prompt": "Photorealistic scene of a jungle-covered mountain slope in northern Thailand at dawn, mist rising through tropical trees, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Chrám ve výšce, odkud je vidět celé město",
+        "fact": "Wat Phra That Doi Suthep leží v nadmořské výšce 1073 metrů nad údolím Chiang Mai, takže z jeho terasy je při jasném počasí vidět velkou část města v nížině pod horou.",
+        "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep",
+        "source_quote": "situated at an elevation of 1,073 meters",
+        "voice": "Kdo chce shlédnout na celé město najednou, musí napřed vyšlapat do kopce.",
+        "image_prompt": "Photorealistic panoramic view from a mountain temple terrace overlooking Chiang Mai valley below, clear day, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-priroda-similan",
+    "country": "Thajsko",
+    "section": "Příroda",
+    "topic": "Similanské ostrovy",
+    "headline": "Ostrovy 'devítky', kterých je jedenáct",
+    "fact": "Similanské ostrovy dostaly jméno podle jávského slova pro číslo devět, ačkoli dnešní národní park tvoří celkem 11 ostrovů na ploše asi 140 km².",
+    "source_url": "https://en.wikipedia.org/wiki/Similan_Islands",
+    "source_quote": "The park is an archipelago consisting of 11 islands, occupying an area of 87,500 rai ~ 140 square kilometres (54 sq mi)",
+    "voice": "Jméno slibuje devět ostrovů, mapa jich dnes ukazuje o dva víc.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic aerial view of turquoise water and granite boulder islands of the Similan archipelago, Thailand, clear sky, no people, no text, 16:9",
+    "ll": [97.6392, 8.6500],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Podmořské skály, co vypadají jako houby a mozky",
+        "fact": "Pod hladinou Similanských ostrovů rostou korálové útvary, které svými tvary připomínají jelení parohy, listy, mozky i houby, a patří k nejvyhledávanějším potápěčským lokalitám jihovýchodní Asie.",
+        "source_url": "https://en.wikipedia.org/wiki/Similan_Islands",
+        "source_quote": "Underwater it is full of rock formations and coral reefs in several shapes and forms, resembling such things as deer, leaves, brains, and mushrooms.",
+        "voice": "Nad hladinou je to jen kus skály, pod ní začíná úplně jiný svět tvarů.",
+        "image_prompt": "Photorealistic underwater photo of colorful coral reef formations and tropical fish near the Similan Islands, clear blue water, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ostrovy chráněné až po roce zkoumání",
+        "fact": "Similanské ostrovy získaly status národního parku Mu Ko Similan v roce 1982, a to až po ročním posuzování lesního úřadu, který nejdřív musel zhodnotit stav ostrovní přírody.",
+        "source_url": "https://en.wikipedia.org/wiki/Similan_Islands",
+        "source_quote": "It was established as Mu Ko Similan National Park in 1982 after a one-year assessment by the forestry department.",
+        "voice": "Než ostrovy dostaly ochranu, musel je nejdřív někdo rok pozorně zkoumat.",
+        "image_prompt": "Photorealistic wide shot of a granite boulder beach and dense green jungle on a Similan island, turquoise Andaman Sea, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-priroda-doi-inthanon",
+    "country": "Thajsko",
+    "section": "Příroda",
+    "topic": "Doi Inthanon",
+    "headline": "Střecha Thajska ve 2565 metrech",
+    "fact": "Doi Inthanon je se svými 2565 metry nejvyšší horou Thajska a na jejím svahu stojí i dvě velké pagody postavené na počest krále a královny.",
+    "source_url": "https://en.wikipedia.org/wiki/Doi_Inthanon",
+    "source_quote": "2,565 m (8,415 ft)",
+    "voice": "Kdo chce vidět Thajsko shora, musí vylézt až sem, výš už to nejde.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of misty mountain peak of Doi Inthanon covered in cloud forest, Thailand, cool morning light, no people, no text, 16:9",
+    "ll": [98.4864, 18.5886],
+    "tags": ["fyzicka-geografie", "kartografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dvě pagody postavené na oslavu narozenin",
+        "fact": "Chedi Naphamethinidon a Naphaphonphumisiri na Doi Inthanon vznikly na počest šedesátých narozenin krále Bhumibola v roce 1987 a královny Sirikit v roce 1992.",
+        "source_url": "https://en.wikipedia.org/wiki/Doi_Inthanon",
+        "source_quote": "These temples were built to honor the 60th birth anniversary of King Bhumibol Adulyadej in 1987, and the 60th birth anniversary of Queen Sirikit in 1992, respectively.",
+        "voice": "Královský pár dostal k narozeninám dárek, který shlíží na krajinu z nejvyššího místa v zemi.",
+        "image_prompt": "Photorealistic view of two ornate white and golden chedis (pagodas) on Doi Inthanon mountain surrounded by clouds, Thailand, soft light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hora pojmenovaná po ochránci lesa",
+        "fact": "Doi Inthanon nese jméno po chiangmajském knížeti Inthawichayanonovi, který se snažil chránit severní lesy před kácením; po jeho smrti byly na hoře uloženy jeho ostatky a vrchol podle něj dostal jméno.",
+        "source_url": "https://en.wikipedia.org/wiki/Doi_Inthanon",
+        "source_quote": "The name Doi Inthanon was given in honour of Inthawichayanon, Grand Prince of Chiang Mai, who was concerned about the forests in the north and tried to preserve them.",
+        "voice": "Hoře dali jméno po člověku, který se ji snažil zachránit před pilami.",
+        "image_prompt": "Photorealistic wide shot of dense cloud forest canopy on the slopes of Doi Inthanon, northern Thailand, morning mist, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-priroda-zlaty-trojuhelnik",
+    "country": "Thajsko",
+    "section": "Příroda",
+    "topic": "Zlatý trojúhelník",
+    "headline": "Místo, kde se tři státy sbíhají do jedné řeky",
+    "fact": "Zlatý trojúhelník je pohraniční oblast kolem soutoku řek Mekong a Ruak, kde se stýkají hranice Thajska, Laosu a Myanmaru.",
+    "source_url": "https://en.wikipedia.org/wiki/Golden_Triangle_(Southeast_Asia)",
+    "source_quote": "The Golden Triangle is a large, mountainous region of approximately 200,000 km2 (77,000 sq mi) in northeastern Myanmar, Northern Thailand and northern Laos, centered on the confluence of the Ruak and Mekong rivers.",
+    "voice": "Stačí jedna loďka a za pár minut proplouváš mezi třemi státy najednou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic aerial view of the confluence of the Mekong and Ruak rivers at the Golden Triangle, forested hills of Thailand, Laos and Myanmar meeting, golden hour light, no text, 16:9",
+    "ll": [100.0867, 20.3486],
+    "tags": ["fyzicka-geografie", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Místo, odkud je vidět tři země najednou",
+        "fact": "Z vyhlídky na thajské straně soutoku Mekongu a Ruaku je při jasném počasí vidět zároveň území Thajska, Laosu i Myanmaru — turistická atrakce, po které dostala celá oblast své jméno.",
+        "source_url": "https://en.wikipedia.org/wiki/Golden_Triangle_(Southeast_Asia)",
+        "source_quote": "centered on the confluence of the Ruak and Mekong rivers",
+        "voice": "Otočíš hlavu třikrát a pokaždé se díváš do jiného státu.",
+        "image_prompt": "Photorealistic scene of a riverside viewpoint overlooking a wide river with boats, hills of three countries visible in the distance, warm afternoon light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Odsud pocházela většina opia v regionu",
+        "fact": "Poté co komunistická Čína ve 40. letech tvrdě potlačila pěstování opia, produkce se přesunula na jih do Zlatého trojúhelníku a jeho roční výnos vzrostl z 30 tun na přelomu 40. let na 600 tun v polovině 50. let.",
+        "source_url": "https://en.wikipedia.org/wiki/Golden_Triangle_(Southeast_Asia)",
+        "source_quote": "Annual production increased 20 times, from 30 tons at the time of Burmese independence to 600 t (590 long tons; 660 short tons) in the mid-1950s.",
+        "voice": "Zákaz v jedné zemi stačil na to, aby se celý byznys přestěhoval o kus dál za hranici.",
+        "image_prompt": "Photorealistic wide shot of terraced hillside fields in a mountainous border region of northern Thailand, tropical highland landscape, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-lide-rama-v",
+    "country": "Thajsko",
+    "section": "Lidé",
+    "topic": "Král Chulalongkorn (Rama V.)",
+    "headline": "Král, který reformami zachránil zemi před kolonizací",
+    "fact": "Král Chulalongkorn vládl Siamu v letech 1868 až 1910 a jeho reformy, včetně zrušení otroctví v roce 1905, měly zemi uchránit před osudem sousedních kolonií.",
+    "source_url": "https://en.wikipedia.org/wiki/Chulalongkorn",
+    "source_quote": "In 1905, the Slave Abolition Act ended Siamese slavery in all forms.",
+    "voice": "Zatímco sousedé mizeli pod cizí vlajkou, on přestavoval vlastní stát tak rychle, jak jen šlo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of an ornate 19th century Siamese royal palace hall interior, gilded architecture, soft interior light, no people, no text, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Reformy, které měly zachránit celou zemi",
+        "fact": "Chulalongkorn prosazoval modernizaci Siamu právě proto, aby ochránil jeho nezávislost před rostoucím tlakem západních mocností, které si tou dobou rozdělovaly okolní kolonie.",
+        "source_url": "https://en.wikipedia.org/wiki/Chulalongkorn",
+        "source_quote": "All his reforms were dedicated to ensuring Siam's independence given the increasing encroachment of Western powers.",
+        "voice": "Nezreformoval zemi z rozmaru, ale ze strachu, že jinak o ni přijde úplně.",
+        "image_prompt": "Photorealistic scene of a 19th century Siamese government building with a clock tower and colonial-influenced architecture, Bangkok, daylight, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nezávislost draze zaplacená územím",
+        "fact": "Chulalongkorn udržel nezávislost Siamu i za cenu územních ústupků Britům a Francouzům — Siam se tak na rozdíl od okolní Barmy, Vietnamu, Laosu, Kambodže i Malajska nikdy nestal evropskou kolonií.",
+        "source_url": "https://en.wikipedia.org/wiki/Chulalongkorn",
+        "source_quote": "Chulalongkorn, through his policies and acts, ensured the independence of Siam.",
+        "voice": "Kus mapy raději odevzdal, než aby přišel o celou zemi.",
+        "image_prompt": "Photorealistic old-style map table with a hand-drawn map of Southeast Asia and colonial-era borders, magnifying glass, warm archival light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-lide-rama-ix",
+    "country": "Thajsko",
+    "section": "Lidé",
+    "topic": "Král Bhumibol Adulyadej (Rama IX.)",
+    "headline": "Král na trůně přes sedmdesát let",
+    "fact": "Král Bhumibol Adulyadej vládl Thajsku 70 let a 126 dní, od roku 1946 do své smrti v roce 2016 — nejdéle ze všech thajských panovníků.",
+    "source_url": "https://en.wikipedia.org/wiki/Bhumibol_Adulyadej",
+    "source_quote": "His reign of 70 years and 126 days is the longest of any Thai monarch, the longest on record of any independent Asian sovereign, and the third-longest of any sovereign state.",
+    "voice": "Generace Thajců se vystřídaly, a on byl na trůně pořád stejný král.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a grand Thai royal palace courtyard with golden spires, ceremonial atmosphere, clear day, no people, no text, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Král, který se narodil v americké nemocnici",
+        "fact": "Bhumibol Adulyadej se narodil 5. prosince 1927 v nemocnici v americkém Cambridge ve státě Massachusetts, kde jeho otec studoval na Harvardu.",
+        "source_url": "https://en.wikipedia.org/wiki/Bhumibol_Adulyadej",
+        "source_quote": "Bhumibol was born at Cambridge Hospital...in Cambridge, Massachusetts, United States, on 5 December 1927",
+        "voice": "Budoucí král uviděl svět poprvé o tisíce kilometrů dál od trůnu, který jednou zdědil.",
+        "image_prompt": "Photorealistic archival-style photo of a New England hospital building exterior in the late 1920s, autumn trees, soft light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Panovník uprostřed politických zvratů",
+        "fact": "Bhumibol Adulyadej sehrál klíčovou roli při přechodu Thajska k demokracii, zejména během krize v roce 1992, kdy svým zásahem pomohl zklidnit násilné střety mezi armádou a demonstranty.",
+        "source_url": "https://en.wikipedia.org/wiki/Bhumibol_Adulyadej",
+        "source_quote": "Bhumibol played a key role in Thailand's transition to a democratic system",
+        "voice": "Když se politici nedokázali dohodnout, poslední slovo často padlo na palác.",
+        "image_prompt": "Photorealistic wide shot of a large public square in Bangkok with government buildings, dramatic sky, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-lide-sunthorn-phu",
+    "country": "Thajsko",
+    "section": "Lidé",
+    "topic": "Sunthorn Phu",
+    "headline": "Básník, kterému se přezdívá thajský Shakespeare",
+    "fact": "Básníka Sunthorna Phu, autora eposu Phra Aphai Mani, dnes Thajci nazývají svým národním básníkem a přezdívají mu 'thajský Shakespeare'.",
+    "source_url": "https://en.wikipedia.org/wiki/Sunthorn_Phu",
+    "source_quote": "often referred to as the 'Shakespeare of Thailand.'",
+    "voice": "Verše skládal dvě století zpátky, a školáci se je učí nazpaměť dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of an antique handwritten poetry manuscript on a wooden desk, candlelight, no people, no text, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Princ, co zažil dobrodružství napříč celou zemí",
+        "fact": "Sunthornův nejslavnější epos Phra Aphai Mani vypráví o princi, který zažívá romantická dobrodružství napříč starověkým Thajskem.",
+        "source_url": "https://en.wikipedia.org/wiki/Sunthorn_Phu",
+        "source_quote": "follows the title character, Prince Aphai Mani, a Byronic hero, in his romantic adventures throughout ancient Thailand.",
+        "voice": "Hrdina jeho básní zažil víc dobrodružství, než kolik jich stihne většina čtenářů za celý život.",
+        "image_prompt": "Photorealistic scene of a traditional wooden boat sailing near a tropical coastline at sunset, dramatic sky, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Básník, kterého ocenil celý svět",
+        "fact": "Roku 1986, u příležitosti 200. výročí jeho narození, zařadilo UNESCO Sunthorna Phu mezi významné světové básníky.",
+        "source_url": "https://en.wikipedia.org/wiki/Sunthorn_Phu",
+        "source_quote": "In 1986, the 200th anniversary of his birth, Sunthorn Phu was honored by UNESCO as a great world poet.",
+        "voice": "Poezie napsaná v jazyce jedné země najednou dostala nálepku světového významu.",
+        "image_prompt": "Photorealistic scene of an old library shelf with leather-bound books and manuscripts, warm lighting, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-kultura-songkran",
+    "country": "Thajsko",
+    "section": "Kultura & tradice",
+    "topic": "Songkran",
+    "headline": "Nový rok, kdy se celá země polévá vodou",
+    "fact": "Thajský Nový rok Songkran se slaví od 13. do 15. dubna polévačkami vodou po celé zemi a v roce 2024 ho UNESCO zapsalo na seznam nehmotného kulturního dědictví lidstva.",
+    "source_url": "https://en.wikipedia.org/wiki/Songkran_(Thailand)",
+    "source_quote": "In 2024, UNESCO certified Songkran as part of humanity's intangible cultural heritage list.",
+    "voice": "Na pár dní se z celé země stane jedna velká vodní bitva.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a Thai street festival with people joyfully splashing water during Songkran, colorful atmosphere, bright daylight, no readable text, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Polévání vodou má i tichou, uctivou variantu",
+        "fact": "Vedle bujarých vodních bitev v ulicích patří k Songkranu i obřad Rod Nam Dam Hua, při němž mladší lidé lijí vodu na ruce starších příbuzných jako projev úcty a přání štěstí do nového roku.",
+        "source_url": "https://en.wikipedia.org/wiki/Songkran_(Thailand)",
+        "source_quote": "pouring water on elders' hands",
+        "voice": "Stejná voda, jen jinde na těle, a najednou jde spíš o úctu než o zábavu.",
+        "image_prompt": "Photorealistic close-up scene of a young Thai person gently pouring water over the hands of an elderly relative, warm respectful gesture, indoor light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Svátek, co dorostl do mezinárodní atrakce",
+        "fact": "Songkran se z rodinného novoročního obřadu proměnil ve festival, který dnes láká davy zahraničních turistů do ulic Bangkoku i Chiang Mai — mezinárodní zájem pomohl i jeho zápisu na seznam UNESCO.",
+        "source_url": "https://en.wikipedia.org/wiki/Songkran_(Thailand)",
+        "source_quote": "the festival has become popular among international visitors",
+        "voice": "Co začalo jako rodinný obřad, dnes zaplňuje ulice turisty z celého světa.",
+        "image_prompt": "Photorealistic wide shot of a crowded city street during a water festival with splashing water, tropical urban setting, midday sun, no readable text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-kultura-loy-krathong",
+    "country": "Thajsko",
+    "section": "Kultura & tradice",
+    "topic": "Loy Krathong",
+    "headline": "Svátek, kdy řeky ožijí plovoucími světýlky",
+    "fact": "Při svátku Loy Krathong pouštějí Thajci za úplňku dvanáctého lunárního měsíce po řekách malé věnečky se svíčkou zvané krathong, aby poděkovali bohyni vody a symbolicky odplavili vlastní hněv a zlobu.",
+    "source_url": "https://en.wikipedia.org/wiki/Loy_Krathong",
+    "source_quote": "the krathong's floating away symbolises letting go of all one's hatred, anger, and defilements",
+    "voice": "Stovky plovoucích světýlek na řece, a v každém z nich jeden odpuštěný vztek.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of many small floating lotus-shaped candle rafts glowing on a dark river at night in Thailand, reflections on water, no people, no text, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Věneček z banánovníku, ne z plastu",
+        "fact": "Tradiční krathong se plete z plátku kmene banánovníku nebo z listů kejklířské lilie, i když dnes se čím dál častěji vyrábí z chleba nebo polystyrenu.",
+        "source_url": "https://en.wikipedia.org/wiki/Loy_Krathong",
+        "source_quote": "The traditional krathong used for floating at the festival are made from a slice of a banana tree trunk or a spider lily plant. Modern krathongs are more often made of bread or Styrofoam.",
+        "voice": "Řemeslná tradice pomalu ustupuje polystyrenu, i když jde o stejný obřad.",
+        "image_prompt": "Photorealistic close-up of a handmade banana-leaf krathong decorated with flowers, incense sticks and a candle, soft evening light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Datum, které určuje měsíc, ne kalendář",
+        "fact": "Loy Krathong nemá pevné datum v gregoriánském kalendáři — koná se vždy večer při úplňku dvanáctého měsíce tradičního thajského lunárního kalendáře, takže se každý rok posouvá.",
+        "source_url": "https://en.wikipedia.org/wiki/Loy_Krathong",
+        "source_quote": "Loy Krathong takes place on the evening of the full moon of the 12th month in the traditional Thai lunar calendar, thus the exact date of the festival changes every year.",
+        "voice": "Termín svátku neurčuje úřední kalendář, ale poloha měsíce na obloze.",
+        "image_prompt": "Photorealistic wide shot of a full moon rising over a Thai river landscape with silhouettes of temple spires, twilight, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-kultura-san-phra-phum",
+    "country": "Thajsko",
+    "section": "Kultura & tradice",
+    "topic": "Domečky pro ducha místa (san phra phum)",
+    "headline": "Malý domeček pro ducha pozemku",
+    "fact": "Před většinou thajských domů a firem stojí malý domeček zvaný san phra phum, který slouží jako příbytek ochranného ducha pozemku a má bránit tomu, aby duch dělal lidem potíže.",
+    "source_url": "https://en.wikipedia.org/wiki/Spirit_house",
+    "source_quote": "provide a shelter for spirits that could cause problems for the people if not appeased",
+    "voice": "Duchovi se raději postaví vlastní dům, než aby se nastěhoval do toho lidského.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a traditional ornate Thai spirit house shrine on a pedestal in a garden corner, offerings placed inside, soft daylight, no people, no text, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Oblíbená oběť: sladká růžová limonáda",
+        "fact": "Mezi nejčastější obětiny v thajských domečcích pro ducha patří rýže, banány, kokosy a sladkosti, ale nejvíc nápadná bývá lahev sytě růžové jahodové Fanty.",
+        "source_url": "https://en.wikipedia.org/wiki/Spirit_house",
+        "source_quote": "Rice, bananas, coconuts, and desserts are common offerings. Most ubiquitous is red, strawberry-flavoured Fanta.",
+        "voice": "Duch domu si podle všeho oblíbil stejnou limonádu jako malé děti v okolí.",
+        "image_prompt": "Photorealistic close-up of offerings at a Thai spirit house including fruit, incense and a bottle of pink strawberry soda, warm afternoon light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Roh pozemku vybraný podle pravidel, ne náhodou",
+        "fact": "Umístění domečku pro ducha se v thajských domácnostech řídí přesnými pravidly — obvykle stojí v rohu pozemku a jeho přesnou polohu často určuje až konzultace s bráhmanským knězem.",
+        "source_url": "https://en.wikipedia.org/wiki/Spirit_house",
+        "source_quote": "most houses and businesses have a spirit house placed in an auspicious spot, most often in a corner of the property",
+        "voice": "Ani domeček pro ducha nesmí stát jen tak náhodou kdekoliv na dvorku.",
+        "image_prompt": "Photorealistic wide shot of a residential garden corner in Thailand with a spirit house shrine positioned near the property boundary, lush greenery, daylight, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-umeni-khon",
+    "country": "Thajsko",
+    "section": "Umění",
+    "topic": "Khon — maskovaný tanec",
+    "headline": "Taneční drama, kde promlouvají masky",
+    "fact": "Khon je thajské maskované taneční drama vycházející z eposu Ramakien, které se hraje už od dob království Ajutthaja a v roce 2018 ho UNESCO zapsalo na seznam nehmotného kulturního dědictví.",
+    "source_url": "https://en.wikipedia.org/wiki/Khon",
+    "source_quote": "Khon has been performed since the Ayutthaya Kingdom.",
+    "voice": "Tanečníci beze slova vyprávějí příběh, který zná v Thajsku skoro každé dítě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of Thai Khon masked dancers in ornate costumes performing on a traditional stage, dramatic stage lighting, no readable text, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Démoni v maskách, lidé s holou tváří",
+        "fact": "Při představení Khonu nosí masky jen postavy démonů a opic, zatímco lidské postavy hrají tanečníci s odkrytou tváří a jen s výrazným líčením.",
+        "source_url": "https://en.wikipedia.org/wiki/Khon",
+        "source_quote": "While the ogre and monkey characters wear masks, most of the human characters do not.",
+        "voice": "Podle masky diváci hned poznají, jestli sledují hrdinu, nebo netvora.",
+        "image_prompt": "Photorealistic close-up of an ornate golden Khon demon mask with intricate details, backstage setting, warm light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Indický epos, co se doma stal thajským",
+        "fact": "Khon zpracovává příběh Ramakienu, thajské adaptace indického eposu Rámájana — ukázka, jak se literární vzor putující z Indie přes celou jihovýchodní Asii proměnil v každé zemi ve vlastní národní verzi.",
+        "source_url": "https://en.wikipedia.org/wiki/Khon",
+        "source_quote": "Khon is based on the tales of the epic Ramakien (Thai adaptation of Indian Hindu epic Ramayana).",
+        "voice": "Stejný příběh putoval napříč Asií a všude si osvojil trochu jinou tvář.",
+        "image_prompt": "Photorealistic wide shot of a Thai temple mural depicting mythical warriors and figures from an epic story, daylight, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-umeni-jim-thompson",
+    "country": "Thajsko",
+    "section": "Umění",
+    "topic": "Jim Thompson a thajské hedvábí",
+    "headline": "Muž, co zachránil hedvábí a pak beze stopy zmizel",
+    "fact": "Američan Jim Thompson v roce 1948 spoluzaložil Thai Silk Company a podle časopisu Time doslova sám zachránil upadající thajský hedvábnický průmysl před zánikem — než v roce 1967 beze stopy zmizel při procházce v malajské džungli.",
+    "source_url": "https://en.wikipedia.org/wiki/Jim_Thompson_(designer)",
+    "source_quote": "almost singlehanded(ly) saved Thailand's vital silk industry from extinction",
+    "voice": "Muž, co zachránil celé řemeslo, sám nakonec zmizel beze stopy jako z pohádky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a traditional Thai stilted teak house museum with lush tropical garden, Bangkok, soft afternoon light, no people, no text, 16:9",
+    "ll": [100.5330, 13.7466],
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zmizení, po kterém pátrala celá oblast",
+        "fact": "Po Thompsonově zmizení v malajských horách Cameron Highlands v roce 1967 následovalo jedno z největších pátrání v dějinách jihovýchodní Asie, jeho tělo se ale nikdy nenašlo.",
+        "source_url": "https://en.wikipedia.org/wiki/Jim_Thompson_(designer)",
+        "source_quote": "generated one of the largest land searches in Southeast Asian history",
+        "voice": "Hory prohledávaly stovky lidí, a přesto po něm nezůstala jediná stopa.",
+        "image_prompt": "Photorealistic scene of a dense misty jungle trail in tropical highlands, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Válečný špión, co po válce zůstal v Bangkoku",
+        "fact": "Thompson sloužil za druhé světové války v americké zpravodajské službě OSS, mimo jiné na Cejlonu na podporu hnutí Volné Thajsko proti japonské okupaci — a po válce se pak v Bangkoku usadil natrvalo.",
+        "source_url": "https://en.wikipedia.org/wiki/Jim_Thompson_(designer)",
+        "source_quote": "later service in Ceylon supporting the Free Thai Movement to liberate Thailand from Japanese occupation",
+        "voice": "Do Bangkoku ho přivedla válka, ale zůstal tam, i když už dávno skončila.",
+        "image_prompt": "Photorealistic archival-style scene of a 1940s military intelligence office desk with maps of Southeast Asia, dim lighting, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-umeni-ramakien",
+    "country": "Thajsko",
+    "section": "Umění",
+    "topic": "Nástěnné malby Ramakien ve Wat Phra Kaew",
+    "headline": "Celý epos namalovaný na jedné chrámové zdi",
+    "fact": "Ochozy chrámu Wat Phra Kaew v Bangkoku zdobí nástěnné malby, které ve 178 scénách vyprávějí celý příběh eposu Ramakien.",
+    "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_Kaew",
+    "source_quote": "The murals along the walls are divided into 178 scenes with abbreviated synopses of the scenes below.",
+    "voice": "Kdo chce znát celý epos, stačí mu pomalu obejít jednu chrámovou zeď.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of ornate painted murals along a temple gallery wall depicting mythological warriors, Bangkok, daylight, no people, no text, 16:9",
+    "ll": [100.4927, 13.7500],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zelený Buddha, který dal chrámu jméno",
+        "fact": "Uprostřed chrámového komplexu Wat Phra Kaew stojí socha Smaragdového Buddhy vysoká jen asi 66 centimetrů, vyřezaná ze zeleného polodrahokamu a oblečená do zlatého roucha.",
+        "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_Kaew",
+        "source_quote": "about 66 centimetres (26 in) tall",
+        "voice": "Chrám pojmenovala soška, co by se vešla skoro do náručí.",
+        "image_prompt": "Photorealistic close-up of a small green jade Buddha statue adorned with golden robes on an ornate altar, temple interior, soft light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malby, které musely vzniknout dvakrát",
+        "fact": "Původní nástěnné malby Ramakienu z doby Rámy I. byly za vlády Rámy III. celé setřeny a přemalovány znovu, a od té doby je chrám musí pravidelně obnovovat, protože tropické počasí barvám nesvědčí.",
+        "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_Kaew",
+        "source_quote": "The murals were erased and completely repainted by the orders of Rama III. Ever since then they have been frequently restored.",
+        "voice": "Umění tu nezůstává napořád — tropické podnebí ho nutí vznikat pořád znovu.",
+        "image_prompt": "Photorealistic scene of restoration tools and paint pots near a temple mural wall, warm afternoon light, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-sport-muay-thai",
+    "country": "Thajsko",
+    "section": "Sport",
+    "topic": "Muay Thai",
+    "headline": "Umění osmi končetin",
+    "fact": "Thajský box Muay Thai se přezdívá 'umění osmi končetin', protože bojovníci při něm útočí pěstmi, lokty, koleny i holeněmi.",
+    "source_url": "https://en.wikipedia.org/wiki/Muay_Thai",
+    "source_quote": "The name 'Art of Eight Limbs' refers to the combined use of fists, elbows, knees and shins.",
+    "voice": "Zatímco jiný box počítá jen s pěstmi, tenhle používá skoro celé tělo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of two Muay Thai fighters training in an outdoor Thai boxing ring, dramatic lighting, no readable text, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rituál před zápasem, co vypadá jako tanec",
+        "fact": "Před samotným zápasem provádí bojovník obřadní tanec wai khru ram muay, a teprve po jeho skončení mu trenér sundá z hlavy posvátnou čelenku mongkol.",
+        "source_url": "https://en.wikipedia.org/wiki/Muay_Thai",
+        "source_quote": "after the fighter has finished the wai kru ram muay, the trainer will take the mongkol off his head and place it in his corner",
+        "voice": "Než padne první rána, zápas napřed vypadá spíš jako obřad než jako sport.",
+        "image_prompt": "Photorealistic scene of a Muay Thai fighter performing the traditional pre-fight ritual dance in the ring wearing a sacred headband, arena lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kořeny sahající do 7. století",
+        "fact": "Nejstarší kořeny Muay Thai se podle tradice datují až do roku 657 n. l. k období Haripuñjaya, ačkoli dnešní podobu a jméno získal sport až na počátku 20. století, kdy ho bylo potřeba odlišit od mezinárodního boxu.",
+        "source_url": "https://en.wikipedia.org/wiki/Muay_Thai",
+        "source_quote": "The earliest origin of Muay Thai dates back to the 657 AD Haripuñjaya period of a hermit named Sukatanata.",
+        "voice": "Za jménem staré sportovní disciplíny se skrývá historie dlouhá přes tisíc let.",
+        "image_prompt": "Photorealistic scene of an old traditional Thai boxing ring at dusk, wooden posts and ropes, atmospheric lighting, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-sport-sepak-takraw",
+    "country": "Thajsko",
+    "section": "Sport",
+    "topic": "Sepak takraw",
+    "headline": "Volejbal, kde ruce zůstávají dole",
+    "fact": "Sepak takraw je jihovýchodoasijský týmový sport, který kombinuje pravidla volejbalu s fotbalovou technikou — hráči smí míč z ratanu odehrávat nohama, koleny, hrudníkem i hlavou, ale nikdy rukama.",
+    "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+    "source_quote": "It is similar to volleyball and footvolley in its use of a rattan ball and players using only their feet, knees, shoulders, chest, and head to touch the ball.",
+    "voice": "Přes síť létá stejný typ míče jako u volejbalu, jenže ruce zůstávají celou dobu dole.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic action shot of a sepak takraw player performing an acrobatic bicycle kick to hit a rattan ball over a net, outdoor court, dynamic motion, no text, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Míč upletený z ratanu, ne nafouknutý",
+        "fact": "Míč na sepak takraw se tradičně plete z ratanových proutků, dnes už často z umělých vláken, a hraje se s ním na hřišti podobném badmintonovému kurtu.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+        "source_quote": "played between two teams of two to four players on a court resembling a badminton court",
+        "voice": "Pletený míč vypadá křehce, a přitom vydrží zásahy hlavou i patou.",
+        "image_prompt": "Photorealistic close-up of a traditional woven rattan ball on an outdoor court, natural texture, daylight, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport, který vévodí jihovýchodní Asii",
+        "fact": "Sepak takraw je v Malajsii oficiálně považován za národní sport a na velkých regionálních turnajích v jihovýchodní Asii dlouhodobě dominuje Thajsko, které v disciplíně nasbíralo nejvíc medailí.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+        "source_quote": "Sepak takraw is considered Malaysia's national sport",
+        "voice": "Sport zrozený v jednom regionu tam pak zůstal, jen se o prvenství přou sousední státy.",
+        "image_prompt": "Photorealistic wide shot of a match at an outdoor Southeast Asian sports complex, spectators blurred in background, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-sport-somluck-kamsing",
+    "country": "Thajsko",
+    "section": "Sport",
+    "topic": "Somluck Kamsing",
+    "headline": "První thajské olympijské zlato",
+    "fact": "Boxer Somluck Kamsing vyhrál na olympiádě v Atlantě 1996 zlatou medaili v pérové váze a stal se prvním Thajcem, který kdy získal olympijské zlato.",
+    "source_url": "https://en.wikipedia.org/wiki/Somluck_Kamsing",
+    "source_quote": "the first Thai athlete to win a gold medal at the Olympics",
+    "voice": "Na tuhle chvíli čekal thajský sport víc než sto let od prvních novodobých olympiád.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of an amateur boxing ring at an Olympic arena, dramatic spotlight, no people, no text, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Uznávaný i pod jiným jménem v ringu",
+        "fact": "Somluck Kamsing se později proslavil i jako profesionální bojovník Muay Thai pod jménem Pimaranlek Sitaran, kde si vysloužil přezdívku 'nekorunovaný král'.",
+        "source_url": "https://en.wikipedia.org/wiki/Somluck_Kamsing",
+        "source_quote": "Occasionally referred to as the 'Uncrowned King'",
+        "voice": "Ve dvou různých sportech nosil dvě různá jména, ale stejnou pověst bojovníka.",
+        "image_prompt": "Photorealistic scene of a Muay Thai gym interior with punching bags and boxing gloves, warm afternoon light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Olympijská disciplína daleko od domácího ringu",
+        "fact": "Na rozdíl od tradičního Muay Thai musel Somluck Kamsing svůj olympijský úspěch vybojovat v amatérském boxu v mužské pérové váze podle mezinárodních pravidel, tedy v úplně jiné disciplíně, než jakou proslulo jeho rodné Thajsko.",
+        "source_url": "https://en.wikipedia.org/wiki/Somluck_Kamsing",
+        "source_quote": "men's Featherweight category",
+        "voice": "Slávu domácímu sportu přinesl nakonec v ringu, který se řídil cizími pravidly.",
+        "image_prompt": "Photorealistic wide shot of an Olympic Games boxing venue with empty seating, arena lighting, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-jazyk-thajske-pismo",
+    "country": "Thajsko",
+    "section": "Jazyk & slova",
+    "topic": "Thajské písmo",
+    "headline": "Písmo, které prý vytvořil sám král",
+    "fact": "Thajské písmo vytvořil podle tradice král Ramkhamhaeng a nejstarší dochovaný doklad, takzvaný Ramkhamhaengův nápis, se datuje do roku 1292.",
+    "source_url": "https://en.wikipedia.org/wiki/Thai_script",
+    "source_quote": "The Ram Khamhaeng Inscription dated to 1292 is often cited as the script's first appearance",
+    "voice": "Jeden nápis vytesaný do kamene stál na počátku písma celého národa.",
+    "visual_type": "typographic",
+    "ll": [99.7010, 17.0182],
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova bez mezer mezi sebou",
+        "fact": "V thajském textu mezi jednotlivými slovy uvnitř věty většinou nejsou mezery — psaní se dělí spíš podle smyslu vět než podle jednotlivých slov.",
+        "source_url": "https://en.wikipedia.org/wiki/Thai_script",
+        "source_quote": "Spaces between words are not used, except in certain linguistically motivated cases.",
+        "voice": "Čtenář si slova musí sám rozdělit v hlavě, papír mu s tím nepomůže.",
+        "image_prompt": "Photorealistic close-up of handwritten script text on aged paper, calligraphy pen nearby, warm light, no legible meaning implied, 16:9"
+      },
+      "kartograf": {
+        "headline": "44 souhlásek pro 21 hlásek",
+        "fact": "Thajská abeceda má 44 souhláskových písmen, ačkoli reálně zapisují jen 21 odlišných souhláskových hlásek — mnoho písmen tak v jazyce plní zdvojenou nebo historickou funkci.",
+        "source_url": "https://en.wikipedia.org/wiki/Thai_script",
+        "source_quote": "44 consonant letters representing 21 distinct consonant sounds",
+        "voice": "Písmen je v abecedě víc, než kolik jazyk skutečně potřebuje na své hlásky.",
+        "image_prompt": "Photorealistic close-up of a printed alphabet chart in an old textbook, soft classroom lighting, no people, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-jazyk-tony",
+    "country": "Thajsko",
+    "section": "Jazyk & slova",
+    "topic": "Tóny v thajštině",
+    "headline": "Jazyk, kde melodie mění význam slova",
+    "fact": "Thajština rozlišuje pět tónů — střední, nízký, klesavý, vysoký a stoupavý — a stejná slabika vyslovená jiným tónem může znamenat úplně jiné slovo.",
+    "source_url": "https://en.wikipedia.org/wiki/Thai_language",
+    "source_quote": "There are five phonemic tones: mid, low, falling, high, and rising.",
+    "voice": "Stejná ústa, stejná slabika, a jen jiná melodie hlasu změní celý význam.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of two people having an animated conversation at a Thai street market, expressive gestures, daylight, no readable text, 16:9",
+    "tags": ["jazykoveda", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Špatná melodie hlasu změní smysl věty",
+        "fact": "Turistům, kteří se učí thajsky, dělá největší potíže právě tón — vyslovit stejnou slabiku jinou melodií hlasu totiž znamená říct úplně jiné slovo, ne jen mluvit s přízvukem.",
+        "source_url": "https://en.wikipedia.org/wiki/Thai_language",
+        "source_quote": "It is a tonal and analytic language.",
+        "voice": "Cizinec si myslí, že řekl jednu větu, a mluvčí thajštiny slyší úplně jinou.",
+        "image_prompt": "Photorealistic scene of a tourist practicing phrases with a local vendor at a food stall, friendly interaction, daylight, no readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tóny jako společný rys celého regionu",
+        "fact": "Thajština patří do rodiny kradajských jazyků, které se táhnou obloukem od čínského ostrova Chaj-nan a provincie Kuang-si přes Laos a severní Vietnam až k hranicím Kambodže — tónovost tak thajština sdílí s mnoha jazyky celého regionu.",
+        "source_url": "https://en.wikipedia.org/wiki/Thai_language",
+        "source_quote": "The Tai languages are a branch of the Kra–Dai language family, which encompasses a large number of indigenous languages spoken in an arc from Hainan and Guangxi south through Laos and Northern Vietnam to the Cambodian border.",
+        "voice": "Thajština nestojí v regionu osamoceně, patří do širší jazykové rodiny táhnoucí se přes půl kontinentu.",
+        "image_prompt": "Photorealistic scene of an old hand-drawn language distribution map of Southeast Asia and southern China on a wooden table, magnifying glass, warm archival light, no readable text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-jazyk-jmeno-bangkoku",
+    "country": "Thajsko",
+    "section": "Jazyk & slova",
+    "topic": "Plné jméno Bangkoku",
+    "headline": "Jméno hlavního města dlouhé 168 písmen",
+    "fact": "Plné obřadní jméno Bangkoku má 168 písmen a je podle Guinnessovy knihy rekordů nejdelším místním jménem na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Bangkok",
+    "source_quote": "The name is listed in Guinness World Records as the world's longest place name at 168 letters.",
+    "voice": "Než dořekneš celé jméno hlavního města, stihneš přitom vypít celý šálek čaje.",
+    "visual_type": "typographic",
+    "ll": [100.5018, 13.7563],
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zkratka, která znamená 'město andělů'",
+        "fact": "Krátkou verzi jména, kterou Thajci v běžné řeči používají, tvoří jen první část celého obřadního jména, jehož anglický překlad začíná slovy 'the city of angels, great city of immortals'.",
+        "source_url": "https://en.wikipedia.org/wiki/Bangkok",
+        "source_quote": "The city of angels, great city of immortals, magnificent city of the Nine Gems, seat of the King, city of royal palaces, home of gods incarnate, erected by Vishvakarman at Indra's behest.",
+        "voice": "I ta 'krátká' verze jména zní spíš jako věta z básně než jako název města.",
+        "image_prompt": "Photorealistic scene of an ornate golden temple gate entrance in Bangkok, warm evening light, no readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jméno poskládané ze slov jiných jazyků",
+        "fact": "Slovo 'krung' pochází z khmerštiny a znamená hlavní město, zatímco 'thep' má kořeny v sanskrtu a pali a znamená božstvo — samotné jméno hlavního města je tak jazykovou skládankou z několika sousedních kultur.",
+        "source_url": "https://en.wikipedia.org/wiki/Bangkok",
+        "source_quote": "Krung กรุง is a Thai word of Khmer origin, meaning 'capital, king', while thep, เทพ is from Pali/Sanskrit deva, meaning 'deity' or 'god'.",
+        "voice": "Než vzniklo jedno jméno, muselo se sejít slovo ze tří různých jazyků.",
+        "image_prompt": "Photorealistic scene of ancient stone inscriptions with old Southeast Asian script carvings on a temple wall, soft light, no people, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-jidlo-pad-thai",
+    "country": "Thajsko",
+    "section": "Jídlo",
+    "topic": "Pad thai",
+    "headline": "Národní jídlo zrozené z nedostatku rýže",
+    "fact": "Pad thai vznikl až ve 20. století, když thajská vláda za druhé světové války kvůli nedostatku rýže podporovala jídlo z nudlí, aby snížila spotřebu rýže a zároveň posílila národní hrdost.",
+    "source_url": "https://en.wikipedia.org/wiki/Pad_thai",
+    "source_quote": "During World War II, Thailand suffered a rice shortage due to the war and floods. To reduce domestic rice consumption, the Thai government under Prime Minister Plaek Phibunsongkhram promoted consumption of noodles instead.",
+    "voice": "Národní jídlo se nezrodilo v kuchyni z lásky k vaření, ale z vládního plánu, jak ušetřit rýži.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a plate of stir-fried noodles with shrimp, peanuts, lime and bean sprouts, street food stall setting, warm light, no text, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Talíř plný chuti na jednom místě",
+        "fact": "Pad thai kombinuje rýžové nudle s vejcem, tofu, sušenými krevetami, rybí omáčkou a tamarindovou šťávou a servíruje se s citronem a drcenými arašídy, takže v jednom soustu spojuje sladkou, kyselou i slanou chuť.",
+        "source_url": "https://en.wikipedia.org/wiki/Pad_thai",
+        "source_quote": "eggs and chopped firm tofu, flavored with tamarind juice, fish sauce, dried shrimp, garlic, shallots, and sometimes red chili pepper and palm sugar",
+        "voice": "Jedna miska, a přitom si jazyk musí poradit se čtyřmi chutěmi najednou.",
+        "image_prompt": "Photorealistic scene of a street food vendor stir-frying noodles in a hot wok over open flame, night market, dynamic steam and light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nudle jako nástroj budování národa",
+        "fact": "Vládní kampaň na podporu nudlových jídel z éry Plaeka Phibunsongkhrama neměla jen nasytit obyvatele, ale sloužila i jako nástroj budování moderní thajské národní identity.",
+        "source_url": "https://en.wikipedia.org/wiki/Pad_thai",
+        "source_quote": "pad thai as a way to galvanize nationalism",
+        "voice": "Za obyčejnou miskou nudlí se schovává kus záměrné státní politiky.",
+        "image_prompt": "Photorealistic scene of a busy street market at dusk with food stalls and lantern lighting, no readable text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-jidlo-tom-yum",
+    "country": "Thajsko",
+    "section": "Jídlo",
+    "topic": "Tom yum",
+    "headline": "Polévka, jejíž jméno popisuje vlastní recept",
+    "fact": "Tom yum je rodina pikantních a kyselých thajských polévek, jejichž název doslova znamená 'vařené a smíchané' a pochází z centrálního Thajska.",
+    "source_url": "https://en.wikipedia.org/wiki/Tom_yum",
+    "source_quote": "The name tom yam is composed of two words in the Thai language. Tom refers to the boiling process, while yam means 'mixed'.",
+    "voice": "Jméno polévky popisuje přesně to, co se s ní v hrnci děje.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a steaming bowl of spicy soup with shrimp, lemongrass and chili, rustic wooden table, warm light, no text, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vůně citronové trávy už zdálky prozradí polévku",
+        "fact": "Základ chuti tom yum tvoří citronová tráva, listy kaffir limetky, galangal, šťáva z limetky, rybí omáčka a chilli papričky — kombinace, díky které je polévka nezaměnitelně pikantní a kyselá zároveň.",
+        "source_url": "https://en.wikipedia.org/wiki/Tom_yum",
+        "source_quote": "lemongrass, kaffir lime leaves, galangal, lime juice, fish sauce, chili peppers",
+        "voice": "Stačí jedna lžíce, a chuť už zůstane na jazyku dlouho po dojedení.",
+        "image_prompt": "Photorealistic close-up of fresh lemongrass, kaffir lime leaves, galangal root and chili peppers arranged on a cutting board, natural light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Recept, co se od centra rozšířil po celé zemi",
+        "fact": "Tom yum má kořeny v centrálním Thajsku, odkud se postupně rozšířil do kuchyní všech ostatních regionů země i do zahraničních thajských restaurací po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Tom_yum",
+        "source_quote": "Place of origin: Central Thailand",
+        "voice": "Recept z jednoho regionu si dnes objednávají lidé na úplně jiném konci světa.",
+        "image_prompt": "Photorealistic wide shot of rice paddies and rural countryside in central Thailand, golden afternoon light, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-jidlo-som-tam",
+    "country": "Thajsko",
+    "section": "Jídlo",
+    "topic": "Som tam",
+    "headline": "Salát z papáji, který se tluče v hmoždíři",
+    "fact": "Som tam, pikantní salát z nezralého papáji, má kořeny u laoské menšiny v thajském regionu Isán a jeho název doslova odkazuje na tlučení surovin v hmoždíři.",
+    "source_url": "https://en.wikipedia.org/wiki/Som_tam",
+    "source_quote": "The word tam refers to the pounding of ingredients in a mortar, a method of preparation central to Lao and neighboring culinary traditions.",
+    "voice": "Jméno salátu neprozrazuje chuť, ale způsob, jakým vzniká pod paličkou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a wooden mortar and pestle pounding shredded green papaya salad ingredients, rustic outdoor kitchen, natural light, no people, no text, 16:9",
+    "ll": [102.8360, 16.4419],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Salát, který si každý dochutí jinak pálivý",
+        "fact": "Základem som tamu je nastrouhané nezralé papáje smíchané s rajčaty, fazolkami, arašídy, limetkou a chilli — množství chilli si prodejci obvykle nechávají poradit přímo od zákazníka.",
+        "source_url": "https://en.wikipedia.org/wiki/Som_tam",
+        "source_quote": "Green papaya salad is a spicy salad made from shredded unripe papaya.",
+        "voice": "Stejný recept, a přesto každá miska chutná trochu jinak podle toho, kdo si ji objednal.",
+        "image_prompt": "Photorealistic scene of a street vendor preparing green papaya salad at an outdoor food stall, colorful ingredients, daylight, no readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, co přišlo přes hranici z Laosu",
+        "fact": "Som tam pochází z laoské kuchyně, kde se mu říká tam som nebo tam mak hoong, a do thajského jídelníčku se rozšířil hlavně přes region Isán, kde žije velká etnická laoská menšina.",
+        "source_url": "https://en.wikipedia.org/wiki/Som_tam",
+        "source_quote": "Known as tam som or tam mak hoong in Laos, the dish is characterized by its bold flavors, combining sour, spicy, salty, and slightly sweet elements.",
+        "voice": "Hranice na mapě salát nezastavila, jen mu na cestě trochu pozměnila jméno.",
+        "image_prompt": "Photorealistic wide shot of a rural market in a countryside region with fresh produce stalls, warm daylight, no readable text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-historie-sukhothajske-kralovstvi",
+    "country": "Thajsko",
+    "section": "Historie",
+    "topic": "Sukhothajské království",
+    "headline": "Království, které dalo Thajsku první stát i písmo",
+    "fact": "Sukhothajské království, tradičně považované za první thajský stát, vzniklo v roce 1238 a jeho písmo z roku 1283 pravděpodobně navrhl přímo král Ramkhamhaeng.",
+    "source_url": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom",
+    "source_quote": "Sukhothai is conventionally regarded as having emerged as an independent polity in 1238 CE.",
+    "voice": "Národní stát i písmo, kterým se dodnes píše, mají společný start v jediném století.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of ancient temple ruins and lotus-shaped stupas at sunset, historical park, no people, no text, 16:9",
+    "ll": [99.7010, 17.0182],
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Král, který jazyku dal i vlastní písmo",
+        "fact": "Král Ramkhamhaeng vládl Sukhothaji v letech 1279 až 1298 a v roce 1283 podle tradice sám vytvořil sukhothajské písmo, ze kterého se později vyvinula dnešní thajská abeceda.",
+        "source_url": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom",
+        "source_quote": "In 1283, the Sukhothai script was likely invented by Ram Khamhaeng.",
+        "voice": "Jeden panovník stihl za necelých dvacet let vlády rozšířit říši i vymyslet jí písmo.",
+        "image_prompt": "Photorealistic close-up of an ancient stone inscription slab with early script carvings, museum lighting, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nezávislost, která vydržela jen století",
+        "fact": "Sukhothajské království si udrželo samostatnost necelých sto let — už v roce 1349 ho napadla vojska Ajutthaji a přinutila ho stát se jejím tributárním státem, než ho nakonec zcela pohltilo.",
+        "source_url": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom",
+        "source_quote": "In 1349, armies from Ayutthaya invaded the kingdom and forced Sukhothai to become its tributary.",
+        "voice": "Království, které dalo vzniknout národu, samo nakonec pohltil silnější soused.",
+        "image_prompt": "Photorealistic wide shot of a large seated Buddha statue among ruined brick pillars at a historical park, soft morning light, no people, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-historie-pad-ajutthaje",
+    "country": "Thajsko",
+    "section": "Historie",
+    "topic": "Pád Ajutthaji",
+    "headline": "Konec království po čtrnácti měsících obléhání",
+    "fact": "Po čtrnáctiměsíčním obléhání padla v dubnu 1767 Ajutthaja do rukou barmského vojska a byla zcela zničena, čímž po 417 letech skončilo celé Ajutthajské království.",
+    "source_url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom",
+    "source_quote": "In April 1767, after a 14-month siege, the city of Ayutthaya fell to besieging Burmese forces and was completely destroyed, thereby ending the 417-year-old Ayutthaya Kingdom.",
+    "voice": "Město, které cizinci obdivovali jako velmoc, lehlo za pár týdnů popelem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of burned and ruined ancient temple structures at dusk, dramatic smoky sky, historical atmosphere, no people, no text, 16:9",
+    "ll": [100.5697, 14.3532],
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Armáda, co rostla ze slonů",
+        "fact": "Vojenská síla Ajutthaji se dá měřit i na počtu bojových slonů — kolem roku 1500 jich království mělo asi 100, o padesát let později už se jejich počet odhadoval na 50 000.",
+        "source_url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom",
+        "source_quote": "by 1500, Ayutthaya had 100 elephants, increasing to 50,000 elephants fifty years later",
+        "voice": "Za jedno půlstoletí vzrostla sloní armáda tak, že by pokryla celé město slonů.",
+        "image_prompt": "Photorealistic scene of ceremonial war elephants with ornate armor in a historical royal procession reenactment, dusty golden light, no readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z popela zničeného města vzniklo nové hlavní město",
+        "fact": "Po pádu Ajutthaji přesunul král Taksin sídlo moci na jih k řece Chao Phraya a založil nové hlavní město Thonburi, ze kterého se později vyvinul dnešní Bangkok.",
+        "source_url": "https://en.wikipedia.org/wiki/Wat_Arun",
+        "source_quote": "The temple was renamed Wat Chaeng by Taksin (1767–82) when he established his new capital of Thonburi near the temple, following the fall of Ayutthaya.",
+        "voice": "Jedno hlavní město zaniklo v plamenech, a hned kousek odtud vyrostlo další.",
+        "image_prompt": "Photorealistic aerial view of a river bend where an old district meets a modern city, temple spires visible, golden hour, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "th-historie-siam-nezavislost",
+    "country": "Thajsko",
+    "section": "Historie",
+    "topic": "Siam jako nezkolonizovaná země",
+    "headline": "Země, co přežila mezi dvěma impérii",
+    "fact": "Siam v roce 1893 ustoupil francouzskému tlaku a postoupil území dnešního Laosu, ale díky podobným ústupkům vůči Britům se jako jediná země jihovýchodní Asie nikdy nestal evropskou kolonií.",
+    "source_url": "https://en.wikipedia.org/wiki/Franco-Siamese_War",
+    "source_quote": "The Siamese subsequently agreed to cede the area that constitutes most of present-day Laos to France.",
+    "voice": "Aby zachránil jádro země, musel se napřed vzdát jejího kusu na okraji.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of an old colonial-era river gunboat on a wide tropical river, historical atmosphere, overcast sky, no people, no text, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lodě na řece bez povolení",
+        "fact": "Krize z roku 1893 vypukla poté, co francouzské lodě Inconstant a Comète vypluly po řece Chao Phraya směrem k Bangkoku bez svolení siamských úřadů.",
+        "source_url": "https://en.wikipedia.org/wiki/Franco-Siamese_War",
+        "source_quote": "Two of their ships, the sloop Inconstant and the gunboat Comète, [sailed] up the Chao Phraya toward Bangkok, without the permission of the Siamese.",
+        "voice": "Stačily dvě lodě bez povolení a z toho se semlela mezinárodní krize.",
+        "image_prompt": "Photorealistic scene of a wide river in a tropical city with an old-style gunboat silhouette at dusk, dramatic clouds, no readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nárazník mezi dvěma koloniálními impérii",
+        "fact": "Siam nakonec přežil jako nezávislý nárazníkový stát mezi britskou a francouzskou koloniální sférou, zvlášť poté, co si Británie a Francie v roce 1904 urovnaly vzájemné spory dohodou zvanou Srdečná dohoda.",
+        "source_url": "https://en.wikipedia.org/wiki/Franco-Siamese_War",
+        "source_quote": "In 1904, the French and the British put aside their many differences",
+        "voice": "Přežil hlavně proto, že se dvě sousední velmoci nakonec dohodly, že ho nechají na pokoji.",
+        "image_prompt": "Photorealistic scene of an antique political map of Southeast Asia with colonial territory borders drawn in ink, magnifying glass on table, warm archival light, no readable text, 16:9"
+      }
+    }
+  }
+]

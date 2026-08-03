@@ -1,0 +1,216 @@
+[
+  {
+    "id": "mx-mista-chichen-itza",
+    "country": "Mexiko",
+    "section": "Místa",
+    "topic": "Chichén Itzá a mayská astronomie",
+    "headline": "Pyramida, kterou postavili Mayové bez kovových nástrojů",
+    "fact": "Chichén Itzá je velké mayské archeologické naleziště s pyramidou El Castillo vysokou přes 30 metrů; UNESCO ji zapsalo na seznam světového dědictví a je i jedním z nových sedmi divů světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Chichen_Itza",
+    "source_quote": "Chichen Itza was a large pre-Columbian city built by the Maya people",
+    "voice": "Postavená bez kola, kovu a tažných zvířat — a dodnes stojí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek stupňovité pyramidy El Castillo v Chichén Itzá, jasná modrá obloha, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Pyramida El Castillo je zasvěcená bohu Kukulkánovi a její schodiště je navrženo tak, že o rovnodennosti vrhá stín ve tvaru hada plazícího se dolů — ukázka pokročilé mayské astronomie a matematiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Chichen_Itza"
+      },
+      "kartograf": {
+        "fact": "Přesné astronomické zarovnání pyramidy dokazuje, že Mayové dokázali propojit architekturu s pozorováním nebes na úrovni srovnatelné s jinými starověkými civilizacemi — bez teleskopů a bez psaného kalendáře, jaký známe dnes, dosáhli mimořádné přesnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Chichen_Itza"
+      }
+    }
+  },
+  {
+    "id": "mx-priroda-motyli",
+    "country": "Mexiko",
+    "section": "Příroda",
+    "topic": "Migrace motýlů monarchů",
+    "headline": "Motýli, kteří přeletí tisíce kilometrů do mexických lesů",
+    "fact": "Motýli monarchové migrují tisíce kilometrů ze Severní Ameriky, aby přezimovali v horských lesích středního Mexika — jeden z nejúžasnějších přírodních úkazů na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Monarch_butterfly_migration",
+    "source_quote": "one of the most spectacular natural phenomena in the world",
+    "voice": "Křehcí motýli uletí trasu, na kterou by potřeboval i vytrvalý cyklista týdny.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek stromů pokrytých tisíci oranžovočernými motýly monarchy v mexickém lese, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Motýli létají z jižní Kanady a severu USA až do hor Michoacánu a México ve středním Mexiku. Žádný jednotlivý motýl neuletí celou trasu tam a zpět — cestu dokončí až jejich vnoučata o generace později.",
+        "source_url": "https://en.wikipedia.org/wiki/Monarch_butterfly_migration"
+      },
+      "kartograf": {
+        "fact": "Migrace monarchů propojuje tři země (Kanadu, USA, Mexiko) do jednoho ekologického systému — ochrana motýlů proto vyžaduje mezinárodní spolupráci, protože zničení zimoviště v Mexiku by ohrozilo populaci žijící přes celý kontinent.",
+        "source_url": "https://en.wikipedia.org/wiki/Monarch_butterfly_migration"
+      }
+    }
+  },
+  {
+    "id": "mx-lide-frida",
+    "country": "Mexiko",
+    "section": "Lidé",
+    "topic": "Frida Kahlo a sebeportréty",
+    "headline": "Malířka, která malovala hlavně sama sebe",
+    "fact": "Frida Kahlo je mexická malířka proslulá introspektivními sebeportréty, které spojují prvky surrealismu s mexickým lidovým uměním.",
+    "source_url": "https://en.wikipedia.org/wiki/Frida_Kahlo",
+    "source_quote": "I paint myself because I am often alone and I am the subject I know best.",
+    "voice": "Malovala hlavně sebe — ne z ješitnosti, ale protože byla nejčastěji sama.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ateliéru s malířskými štětci a barvami inspirovaný stylem Fridy Kahlo, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kahlo v obrazech zpracovávala vlastní bolest — celoživotní následky dětské obrny a vážné dopravní nehody — i témata identity a mexické kultury. Její dílo dnes patří k nejvlivnějším v moderním umění.",
+        "source_url": "https://en.wikipedia.org/wiki/Frida_Kahlo"
+      },
+      "kartograf": {
+        "fact": "Kahlo je příklad umělkyně, která z osobního utrpení vytvořila univerzálně srozumitelné umění — její obrazy kombinující bolest, identitu a mexickou lidovou symboliku ovlivnily generace umělců po celém světě, ne jen v Mexiku.",
+        "source_url": "https://en.wikipedia.org/wiki/Frida_Kahlo"
+      }
+    }
+  },
+  {
+    "id": "mx-jidlo-tacos",
+    "country": "Mexiko",
+    "section": "Jídlo",
+    "topic": "Původ a rozšíření tacos",
+    "headline": "Jídlo, které možná jedli už předkolumbovští obyvatelé",
+    "fact": "Tacos jsou možná starší než příchod Španělů — podle jedné teorie jedli obyvatelé Mexického údolí tacos plněné rybičkami už před dobytím Ameriky.",
+    "source_url": "https://en.wikipedia.org/wiki/Taco",
+    "source_quote": "Indigenous people living in the lake region of the Valley of Mexico traditionally ate tacos filled with small fish.",
+    "voice": "Stejný nápad — tortilla a náplň uvnitř — možná existoval už staletí před Kolumbem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pouličních tacos s masem, cibulí a koriandrem na talíři, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "O přesném původu tacos se vedou spory — jiná teorie tvrdí, že je vymysleli stříbrní horníci v 18. století. Nejstarší písemná zmínka pochází až z kuchařky roku 1836, a slovo 'taco' bylo zprvu jen regionální výraz z okolí Mexico City.",
+        "source_url": "https://en.wikipedia.org/wiki/Taco"
+      },
+      "kartograf": {
+        "fact": "Různé regiony Mexika měly historicky vlastní jména pro podobný pokrm (burrito, codzito) — teprve postupná centralizace kultury kolem Mexico City z jednoho regionálního výrazu ('taco') udělala celonárodní a nakonec celosvětově známé slovo.",
+        "source_url": "https://en.wikipedia.org/wiki/Taco"
+      }
+    }
+  },
+  {
+    "id": "mx-historie-tenochtitlan",
+    "country": "Mexiko",
+    "section": "Historie",
+    "topic": "Pád Tenochtitlánu",
+    "headline": "Pád města, které bylo větší než tehdejší evropské metropole",
+    "fact": "Pád aztéckého hlavního města Tenochtitlánu roku 1521 do rukou španělského dobyvatele Hernána Cortése ukončil Aztéckou říši.",
+    "source_url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan",
+    "source_quote": "The fall of Tenochtitlan, the capital of the Mexica, was an important event in the Spanish conquest of the Mexica.",
+    "voice": "Město na jezeře s kanály a plovoucími zahradami padlo za pár měsíců.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistická ilustrace aztéckého města Tenochtitlán na jezeře, plovoucí zahrady, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tenochtitlán, postavený uprostřed jezera Texcoco, byl v době dobytí jedním z největších měst světa — mnohem lidnatější než tehdejší Madrid nebo Londýn. Pád urychlily i evropské nemoci, na které domorodé obyvatelstvo nemělo imunitu.",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan"
+      },
+      "kartograf": {
+        "fact": "Pád Tenochtitlánu byl umožněn nejen vojenskou silou, ale i spojenectvím Španělů s domorodými národy, které Aztékům odplácely za dřívější podmanění — dobytí tak nebylo jen bojem 'Evropa proti Americe', ale i výsledkem starších vnitřních konfliktů mezi domorodými národy.",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan"
+      }
+    }
+  },
+  {
+    "id": "mx-kultura-den-mrtvych",
+    "country": "Mexiko",
+    "section": "Kultura & tradice",
+    "topic": "Den mrtvých a synkretismus",
+    "headline": "Svátek, na kterém se smrt neoplakává, ale slaví",
+    "fact": "Den mrtvých (Día de los Muertos) je mexický svátek vzpomínání na zesnulé — rodiny staví domácí oltáře s oblíbeným jídlem zemřelých a zdobí hroby měsíčky; není to smutná, ale oslavná událost.",
+    "source_url": "https://en.wikipedia.org/wiki/Day_of_the_Dead",
+    "voice": "Místo smutku a černé barvy — barvy, hudba a oblíbené jídlo těch, na které vzpomínáš.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek domácího oltáře na Den mrtvých s oranžovými měsíčky, svíčkami a cukrovými lebkami, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Oslavy probíhají 1. a 2. listopadu. Kromě domácích oltářů (ofrend) k svátku patří cukrové lebky a tradiční pečivo pan de muerto — rodiny se scházejí, aby uctily a vzpomněly na zemřelé blízké.",
+        "source_url": "https://en.wikipedia.org/wiki/Day_of_the_Dead"
+      },
+      "kartograf": {
+        "fact": "Den mrtvých kombinuje předkolumbovské domorodé pojetí smrti jako pokračování životního cyklu s katolickými svátky Všech svatých — je to další příklad synkretismu, kdy koloniální náboženství překrylo, ale úplně nevymazalo starší domorodé chápání smrti.",
+        "source_url": "https://en.wikipedia.org/wiki/Day_of_the_Dead"
+      }
+    }
+  },
+  {
+    "id": "mx-umeni-rivera",
+    "country": "Mexiko",
+    "section": "Umění",
+    "topic": "Diego Rivera a mexický muralismus",
+    "headline": "Obří malby na stěnách veřejných budov",
+    "fact": "Diego Rivera maloval obří nástěnné fresky zachycující mexickou revoluci a domorodé dějiny; jeho díla založila hnutí mexického muralismu.",
+    "source_url": "https://en.wikipedia.org/wiki/Diego_Rivera",
+    "source_quote": "His large frescoes helped establish the mural movement in Mexican and international art.",
+    "voice": "Místo obrazu v rámu — celá stěna budovy jako plátno.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek obří barevné nástěnné malby na fasádě veřejné budovy v mexickém stylu, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Riverovy fresky zdobí veřejné budovy jako mexické Národní paláce a zobrazují dělníky, rolníky a domorodé obyvatelstvo jako hrdiny dějin, ne panovníky — umění mělo být přístupné každému, kdo prošel kolem.",
+        "source_url": "https://en.wikipedia.org/wiki/Diego_Rivera"
+      },
+      "kartograf": {
+        "fact": "Mexický muralismus vznikl krátce po mexické revoluci jako vědomý politický nástroj — veřejné nástěnné malby na rozdíl od galerijních obrazů vidí každý kolemjdoucí, takže se staly ideálním prostředkem, jak novým vládám komunikovat revoluční ideály přímo lidu.",
+        "source_url": "https://en.wikipedia.org/wiki/Diego_Rivera"
+      }
+    }
+  },
+  {
+    "id": "mx-sport-lucha-libre",
+    "country": "Mexiko",
+    "section": "Sport",
+    "topic": "Posvátnost masky v lucha libre",
+    "headline": "Zápas, kde je maska posvátná",
+    "fact": "Lucha libre je mexický styl profesionálního zápasu s barevnými maskami a akrobatickými skoky; sundání soupeřovy masky je v ringu považováno za těžkou urážku.",
+    "source_url": "https://en.wikipedia.org/wiki/Lucha_libre",
+    "source_quote": "The mask is considered sacred to a degree, so much so that fully removing an opponent's mask during a match is grounds for disqualification.",
+    "voice": "Ztratit masku znamená v ringu ztratit víc než jen zápas.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek mexického zápasníka lucha libre v barevné masce během akrobatického skoku, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kořeny posvátnosti masky sahají až k aztéckým tradicím. Legendární zápasník El Santo si masku tak vážil, že si přál být v ní i pohřben — pro fanoušky zůstal identitou pod maskou tajemstvím dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Lucha_libre"
+      },
+      "kartograf": {
+        "fact": "Lucha libre v roce 2018 oficiálně uznali za nehmotné kulturní dědictví Mexico City — sport, který začal jako podívaná, se postupem času stal uznávanou součástí národní kulturní identity na stejné úrovni jako tradiční umění.",
+        "source_url": "https://en.wikipedia.org/wiki/Lucha_libre"
+      }
+    }
+  },
+  {
+    "id": "mx-jazyk-nahuatl",
+    "country": "Mexiko",
+    "section": "Jazyk & slova",
+    "topic": "Slova z nahuatlu ve světových jazycích",
+    "headline": "Slova, která dala Aztékové celému světu",
+    "fact": "Jazyk aztéckého národa (nahuatl) dal světovým jazykům slova jako čokoláda, rajče, avokádo nebo kojot — dnes je používá skoro každý jazyk na světě, aniž by tušil jejich původ.",
+    "source_url": "https://en.wikipedia.org/wiki/Nahuatl",
+    "source_quote": "English has also absorbed words of Nahuatl origin, including avocado, chayote, chili, chipotle, chocolate, atlatl, coyote, peyote, axolotl and tomato.",
+    "voice": "Když řekneš 'čokoláda', vlastně mluvíš trochu aztécky.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Nahuatlem mluvili Aztékové a dodnes ho v Mexiku používají miliony lidí. Do španělštiny a odtud do dalších evropských jazyků přešla slova pro plodiny a zvířata, které Evropané před dobytím Ameriky vůbec neznali.",
+        "source_url": "https://en.wikipedia.org/wiki/Nahuatl"
+      },
+      "kartograf": {
+        "fact": "Cesta slov z nahuatlu do angličtiny ukazuje, jak koloniální kontakt funguje obousměrně — dobyvatelé sice vnutili domorodým národům svůj jazyk, ale zároveň si od nich museli vypůjčit pojmenování pro věci, které ve svém vlastním jazyce vůbec neměli.",
+        "source_url": "https://en.wikipedia.org/wiki/Nahuatl"
+      }
+    }
+  }
+]

@@ -1,0 +1,860 @@
+[
+  {
+    "id": "gb-mista-stonehenge",
+    "country": "Spojené království",
+    "section": "Místa",
+    "topic": "Stonehenge",
+    "headline": "Kamenný kruh, který dráždí vědce dodnes",
+    "fact": "Stonehenge ve Wiltshire je nejarchitektonicky propracovaný pravěký kamenný kruh na světě a součást památky UNESCO.",
+    "source_url": "https://whc.unesco.org/en/list/373",
+    "source_quote": "Stonehenge is the most architecturally sophisticated prehistoric stone circle in the world",
+    "voice": "Kdo ho postavil, proč a jak? Odpovědi stále hledáme.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Stonehenge za rozbřesku, mlha kolem kamenů, teplé světlo vycházejícího slunce, dramatická atmosféra, bez lidí, 16:9",
+    "ll": [-1.8262, 51.1789],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slunovraty napovídají smysl stavby",
+        "fact": "Slunce vychází nad Heel Stone přesně v den letního slunovratu, což naznačuje, že Stonehenge sloužil jako pravěký sluneční chrám nebo kalendář.",
+        "source_url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/",
+        "source_quote": "the sun rises over the Heel Stone on the longest day of the year (summer solstice)",
+        "voice": "Lidé bez kalendáře si ho postavili z kamenů.",
+        "image_prompt": "Fotorealistický snímek Stonehenge ze vzduchu v letním ránu, stín Heel Stone na trávníku, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina obřadů, ne osamělý kámen",
+        "fact": "Stonehenge stojí uprostřed hustého komplexu pravěkých nalezišť — pohřebních mohyl, příkopů a procesních cest sahajících do vzdálenosti několika kilometrů.",
+        "source_url": "https://whc.unesco.org/en/list/373",
+        "source_quote": "Together with inter-related monuments, and their associated landscapes, they demonstrate Neolithic and Bronze Age ceremonial and mortuary practices",
+        "voice": "Krajina sama je artefakt — právě to UNESCO chrání, ne jen kameny.",
+        "image_prompt": "Fotorealistický letecký snímek Stonehenge a okolní krajiny se stopami pradávných příkopů, zlatá hodina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-mista-edinburghhrad",
+    "country": "Spojené království",
+    "section": "Místa",
+    "topic": "Edinburský hrad",
+    "headline": "Pevnost na sopečné skále nad Skotskem",
+    "fact": "Edinburský hrad stojí na vrcholu vyhynulého vulkánu a je jedním z nejnavštěvovanějších turistických míst ve Spojeném království.",
+    "source_url": "https://en.wikipedia.org/wiki/Edinburgh_Castle",
+    "source_quote": "Edinburgh Castle sits atop an extinct volcano … one of the most visited tourist attractions in the United Kingdom",
+    "voice": "Skotové tu uchovávají korunovační klenoty i svou nejstarší historii.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Edinburského hradu na strmé sopečné skále, pod ním historické město, dramatická oblačnost, přirozené světlo, bez lidí v popředí, 16:9",
+    "ll": [-3.2011, 55.9486],
+    "levels": {
+      "cestovatel": {
+        "headline": "Skotské korunovační klenoty mají domov tady",
+        "fact": "V místnosti Crown Room jsou uloženy skotské korunovační klenoty — koruna, žezlo a meč spravedlnosti — spolu s legendárním Kamenem osudu, na němž byli korunováni skotští králové.",
+        "source_url": "https://en.wikipedia.org/wiki/Edinburgh_Castle",
+        "source_quote": "the castle houses the Honours of Scotland … the Crown Room",
+        "voice": "Kámen osudu čekal staletí, než se vrátil domů.",
+        "image_prompt": "Fotorealistický snímek pohledu z hradu na panorama Edinburghu, zelené kopce v dálce, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sopka jako výhoda: obrana diktovala polohu",
+        "fact": "Strmé skalní stěny vyhaslého vulkánu umožnily pevnosti odolat stovkám obléhání. Poloha na výšině nad obchodními cestami z přístavů je typická pro středověká skotská sídla moci.",
+        "source_url": "https://en.wikipedia.org/wiki/Edinburgh_Castle",
+        "source_quote": "The castle has been a military stronghold since at least the Iron Age",
+        "voice": "Reliéf krajiny a rozmístění moci jsou dvě strany téže mince.",
+        "image_prompt": "Fotorealistický letecký snímek Edinburského hradu na sopečné skále s přirozenou obranou, panorama města, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-mista-caernarfon",
+    "country": "Spojené království",
+    "section": "Místa",
+    "topic": "Hrad Caernarfon",
+    "headline": "Velšská korunovační pevnost na břehu průlivu",
+    "fact": "Hrad Caernarfon ve Walesu, postavený anglickým králem Edwardem I., je součástí souboru hradů a opevněných měst zapsaných na seznam UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Caernarfon_Castle",
+    "source_quote": "Caernarfon Castle … is a medieval fortification … a UNESCO World Heritage Site",
+    "voice": "Anglická přítomnost ve Walesu vtesaná do kamene.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hradu Caernarfon při řece ve Walesu, mohutné věže odrážející se ve vodě, přirozené světlo, bez lidí v popředí, 16:9",
+    "ll": [-4.2767, 53.1394],
+    "levels": {
+      "cestovatel": {
+        "headline": "Korunovace princů velšských",
+        "fact": "Od středověku bývají princové velšští korunováni právě zde. Tradice se obnovila korunovací prince Charlese a hrad je tak spojen s dějinami britské monarchie.",
+        "source_url": "https://en.wikipedia.org/wiki/Caernarfon_Castle",
+        "source_quote": "the investiture of the Prince of Wales … took place at Caernarfon Castle",
+        "voice": "Staré tradice ve starých zdech drží pohromadě.",
+        "image_prompt": "Fotorealistický snímek interiéru nádvoří hradu Caernarfon, kamenné věže ze všech stran, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hrady jako nástroj ovládnutí krajiny",
+        "fact": "Edwardův 'železný kruh' hradů — Caernarfon, Conwy, Harlech, Beaumaris — měl vojensky svázat Wales. Jejich rozmístění podél pobřeží a vodních cest odráží strategické myšlení středověké expanze.",
+        "source_url": "https://en.wikipedia.org/wiki/Caernarfon_Castle",
+        "source_quote": "Castles and Town Walls of King Edward in Gwynedd",
+        "voice": "Mapa hradů je mapa moci.",
+        "image_prompt": "Fotorealistický letecký snímek hradu Caernarfon, město a průliv Menai v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-priroda-lochness",
+    "country": "Spojené království",
+    "section": "Příroda",
+    "topic": "Loch Ness",
+    "headline": "Slavné jezero s tajemným obyvatelem",
+    "fact": "Loch Ness ve Skotsku je hluboké tektonické jezero s objemem vody větším než všechna anglická a velšská jezera dohromady.",
+    "source_url": "https://en.wikipedia.org/wiki/Loch_Ness",
+    "source_quote": "Loch Ness has the largest volume of fresh water in Great Britain",
+    "voice": "A samozřejmě — prý tam žije něco velké a tajemné.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jezera Loch Ness za mlhavého skotského rána, temná voda, zelené kopce a vřesoviště po stranách, přirozené světlo, bez lidí, 16:9",
+    "ll": [-4.5, 57.3],
+    "levels": {
+      "cestovatel": {
+        "headline": "Příkopová propadlina jako tajemná kolébka",
+        "fact": "Jezero leží v Glenmore Riftu — tektonickém zlomu, který rozřízl Skotsko od jihozápadu na severovýchod. Hloubka a tmavá voda z rašelinišť jsou zodpovědné za záhadnou atmosféru i za to, že v hlubinách je obtížná viditelnost.",
+        "source_url": "https://en.wikipedia.org/wiki/Loch_Ness",
+        "source_quote": "lies along the Great Glen Fault",
+        "voice": "Bez tektoniky by nebyla legenda.",
+        "image_prompt": "Fotorealistický snímek Loch Ness z výšky, táhlé jezero v příkopové propadlině Skotska, podzimní barvy svahů, 16:9"
+      },
+      "kartograf": {
+        "headline": "Monstrum jako turistická ekonomika",
+        "fact": "Legenda o Nessie přitahuje velké množství návštěvníků ročně a je příkladem, jak může mýtus ovlivnit hospodářství celého regionu. Turismus kolem jezera tvoří podstatnou část příjmů Vysočiny.",
+        "source_url": "https://en.wikipedia.org/wiki/Loch_Ness_Monster",
+        "source_quote": "considerable economic significance for the region",
+        "voice": "Neexistující tvor živí existující lidi.",
+        "image_prompt": "Fotorealistický snímek turistické lodě na tmavé vodě Loch Ness, kopce za ní, dramatické skotské nebe, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-priroda-giantscauseway",
+    "country": "Spojené království",
+    "section": "Příroda",
+    "topic": "Giant's Causeway",
+    "headline": "Dlažba z čediče, kterou prý vystavěl obr",
+    "fact": "Giant's Causeway v Severním Irsku tvoří desetitisíce vzájemně propojených čedičových sloupců vzniklých z chladnoucí lávy v pravěku.",
+    "source_url": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
+    "source_quote": "an area of approximately 40,000 interlocking basalt columns, the result of an ancient volcanic fissure eruption",
+    "voice": "Legenda říká, že ho vystavěl irský obr Finn McCool. Geologie to vidí jinak.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek šestibokých čedičových sloupců Giant's Causeway v Severním Irsku s Atlantickým oceánem v pozadí, přirozené světlo, bez lidí, 16:9",
+    "ll": [-6.5115, 55.2408],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sopka ochladla a přesně se zlomila",
+        "fact": "Při chladnutí tlustá vrstva lávy smršťuje a praská — geometrie trhlin je taková, že vznikají pravidelné šestiboké sloupce. Je to fyzika, ne magie, ale výsledek vypadá neuvěřitelně.",
+        "source_url": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
+        "source_quote": "formed during a sequence of volcanic eruptions … some 60 million years ago",
+        "voice": "Příroda je lepší geometr než člověk.",
+        "image_prompt": "Fotorealistický detailní snímek šestibokých čedičových sloupků Giant's Causeway, textury a barvy kamene, vlny v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stejné horniny po obou stranách Atlantiku",
+        "fact": "Čedičové sloupce na Giant's Causeway a identické formace na skotském ostrově Staffa jsou pozůstatkem roztržení dávného kontinentu, které vytvořilo Severní Atlantik. Vzdálená místa spojuje společná geologická minulost.",
+        "source_url": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
+        "source_quote": "part of the North Atlantic Igneous Province active in the region during the Paleogene period",
+        "voice": "Mapa dnešního světa vznikla výbuchem a trhlinou.",
+        "image_prompt": "Fotorealistický letecký snímek Giant's Causeway a skalnatého atlantického pobřeží Severního Irska, dramatické vlny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-priroda-lakedistrict",
+    "country": "Spojené království",
+    "section": "Příroda",
+    "topic": "Jezerní distrikt",
+    "headline": "Krajina, která inspirovala básníky i malíře",
+    "fact": "Jezerní distrikt v Anglii je národní park s jezery vzniklými ústupem ledovců a je zapsán na seznam přírodního dědictví UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_District",
+    "source_quote": "The Lake District National Park … a UNESCO World Heritage Site",
+    "voice": "Wordsworth tu psal básně, Beatrix Potterová pohádky — krajina dělá z lidí tvůrce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ledovcového jezera v Jezerním distriktu, okolní zelené kopce se zrcadlí ve vodě, klidné ráno, přirozené světlo, bez lidí, 16:9",
+    "ll": [-3.1, 54.47],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ledovce vytvořily krajinu za nás",
+        "fact": "Jezera v distriktu jsou ledovcová — přehlubené doliny vyřezané ledovcem, které se po jeho ústupu naplnily vodou. Zaoblené kopce kolem jsou takzvaná roches moutonnées, skály ohlazené přejetím ledem.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_District",
+        "source_quote": "glacially formed landscape",
+        "voice": "Ledy jsou pryč, ale reliéf zůstal.",
+        "image_prompt": "Fotorealistický snímek zaoblených kopců Jezerního distriktu s ledovcovými jezerními dolinami, podzimní barvy vřesoviště, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní krajina = lidé plus příroda po staletí",
+        "fact": "UNESCO ocenilo Jezerní distrikt jako kulturní krajinu — kombinaci přírodního reliéfu a dlouhodobého ovlivňování člověkem: pastevectví ovcí, kamenné zídky, průmyslová těžba. Příroda a kultura tu nelze oddělit.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_District",
+        "source_quote": "Outstanding Universal Value … as a cultural landscape",
+        "voice": "Krajina je vždy trochu přírodní a trochu lidská.",
+        "image_prompt": "Fotorealistický letecký snímek Jezerního distriktu, kamenné zídky rozdělující pastviny, jezera v údolích, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-lide-shakespeare",
+    "country": "Spojené království",
+    "section": "Lidé",
+    "topic": "William Shakespeare",
+    "headline": "Spisovatel, jehož dílo přeložili do každého jazyka",
+    "fact": "William Shakespeare ze Stratfordu nad Avonou napsal drama, komedie i sonety, které jsou dodnes nejhranějšími divadelními kusy na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/William_Shakespeare",
+    "source_quote": "Shakespeare is widely regarded as the greatest writer in the English language and the world's greatest dramatist",
+    "voice": "Hamlet, Romeo, Macbeth — jména, která zná svět.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Shakespeareova rodného domu ve Stratfordu nad Avonou, historická anglická architektura, přirozené denní světlo, bez lidí v popředí, 16:9",
+    "ll": [-1.7068, 52.1913],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hry napsané pro lidi bez vzdělání i pro šlechtice",
+        "fact": "Shakespearovo divadlo Globe mělo stání pro chudší publikum (groundlings) i lóže pro šlechtu — díla musela bavit i dojímat oba najednou. Proto jsou dodnes tak přístupná.",
+        "source_url": "https://en.wikipedia.org/wiki/Globe_Theatre",
+        "source_quote": "The Globe Theatre was used by Shakespeare's playing company, the Lord Chamberlain's Men",
+        "voice": "Génius, který psal pro všechny, zůstal pro všechny.",
+        "image_prompt": "Fotorealistický snímek divadelního sálu inspirovaného renesančním Globe Theatre, dřevěné galerie, otevřené přírodní jeviště, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Angličtina jako světový jazyk začínala tady",
+        "fact": "Shakespeare zavedl do angličtiny řadu slov a frází, které se dodnes používají — od 'bedroom' po 'lonely'. Jeho vliv na jazyk a anglosaskou kulturu je globální.",
+        "source_url": "https://en.wikipedia.org/wiki/William_Shakespeare",
+        "source_quote": "Shakespeare coined many words and phrases that are still used today",
+        "voice": "Globální angličtina začala v jednom divadle v Londýně.",
+        "image_prompt": "Fotorealistický snímek Stratfordu nad Avonou od řeky Avon, historické střechy a kostelní věž, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-lide-newton",
+    "country": "Spojené království",
+    "section": "Lidé",
+    "topic": "Isaac Newton",
+    "headline": "Muž, kterého inspirovalo padající jablko",
+    "fact": "Isaac Newton formuloval zákony pohybu a gravitace a jeho dílo Principia Mathematica patří k základním kamenům moderní vědy.",
+    "source_url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+    "source_quote": "Newton's Principia Mathematica … laid the foundations of classical mechanics",
+    "voice": "Jablko dopadlo, a svět se začal rozumět sám sobě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek budovy Cambridgeské university Trinity College s historickými kamennými zdmi a trávníkem, přirozené světlo, bez lidí v popředí, 16:9",
+    "ll": [0.1218, 52.2054],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mor jako nečekaný dar vědě",
+        "fact": "Morová epidemie zavřela Cambridge a Newton se uchýlil na venkov do Woolsthorpe. Právě tam během vynuceného volna formuloval základy počtu, optiky i gravitace.",
+        "source_url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+        "source_quote": "During the plague years of 1665–1666 … Newton developed his theories on calculus, optics, and gravitation",
+        "voice": "Pohroma a samota někdy odemykají génia.",
+        "image_prompt": "Fotorealistický snímek anglického venkova Lincolnshire s jabloní na podzim, klidná krajina, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cambridge jako uzel vědeckého světa",
+        "fact": "Cambridgeská universita sídlí ve strategickém uzlu anglické vzdělanosti od středověku. Od Newtona přes Darwina po Hawkinga je spojena s vědeckými revolucemi — příklad, jak instituce soustřeďuje intelektuální kapacity.",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_Cambridge",
+        "source_quote": "the University of Cambridge is one of the world's leading research universities",
+        "voice": "Místo a instituce tvoří podmínky pro myšlení.",
+        "image_prompt": "Fotorealistický snímek řeky Cam s loďkami pod mosty v Cambridgi, historická universita v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-lide-adalovelace",
+    "country": "Spojené království",
+    "section": "Lidé",
+    "topic": "Ada Lovelace",
+    "headline": "Žena, která napsala program pro stroj, jenž ještě neexistoval",
+    "fact": "Ada Lovelace napsala algoritmus pro Babbageův analytický stroj a je považována za průkopnici počítačového programování.",
+    "source_url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+    "source_quote": "Ada Lovelace … is often credited as the first computer programmer",
+    "voice": "Viděla možnosti stroje dřív, než stroj vznikl.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historických knih, matematických diagramů a ozubeného kolečka na starém stole — symbolika viktoriánské vědy, přirozené světlo, 16:9",
+    "ll": [-0.1276, 51.5074],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dcera básníka, matka programování",
+        "fact": "Ada Lovelace byla dcera romantického básníka lorda Byrona. Matka ji záměrně vychovávala k matematice, aby se podobala co nejméně otci. Ironií dějin vzešla z tohoto střetu jedna z nejvýznamnějších postav počítačové vědy.",
+        "source_url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+        "source_quote": "her mother … insisted on a rigorous educational regimen of mathematics and science",
+        "voice": "I z předsudků se rodí pokrok.",
+        "image_prompt": "Fotorealistický snímek viktoriánského matematického sešitu s rovnicemi a nákresy ozubených kol, přirozené boční světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Victorianismus a postavení žen ve vědě",
+        "fact": "Lovelace pracovala v době, kdy ženy měly ke vzdělání a vědě výrazně omezený přístup. Její případ ukazuje, jak institucionální bariéry formují vědecký pokrok — a jak talent nachází cestu navzdory nim.",
+        "source_url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+        "source_quote": "She is often described as one of the first to recognise the full potential of a 'computing machine'",
+        "voice": "Historie vědy je i historií překážek, které někteří překonali.",
+        "image_prompt": "Fotorealistický snímek victoriánské Londýnské ulice se stavbami a mlhou, historická atmosféra devatenáctého století, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-kultura-changingsteguard",
+    "country": "Spojené království",
+    "section": "Kultura & tradice",
+    "topic": "Střídání stráže",
+    "headline": "Ceremonie s dlouhou tradicí",
+    "fact": "Střídání stráže u Buckinghamského paláce je slavnostní ceremonie britské královské gardy, která se tradičně koná před sídlem panovníka.",
+    "source_url": "https://en.wikipedia.org/wiki/Changing_of_the_Guard_(United_Kingdom)",
+    "source_quote": "the Changing of the Guard … takes place at Buckingham Palace",
+    "voice": "Rudé kabáty a medvědí kožešinové čáky — pohled, který se nezapomíná.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek britské královské gardy v červených uniformách a medvědích čepicích při přechodu přes náměstí před palácem, přirozené světlo, bez davu, 16:9",
+    "ll": [-0.1419, 51.5014],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rituál jako politická i turistická instituce",
+        "fact": "Ceremonie sahá svými kořeny ke vzniku stálé armády v období Restaurace monarchie. Dnes je záměrně udržována jako symbol kontinuity monarchie a zároveň je jednou z největších turistických atrakcí Londýna.",
+        "source_url": "https://en.wikipedia.org/wiki/Changing_of_the_Guard_(United_Kingdom)",
+        "source_quote": "The ceremony of the Changing of the Guard … dates from the Restoration of the Monarchy",
+        "voice": "Tradice někdy přežívají původní účel a stávají se symbolem.",
+        "image_prompt": "Fotorealistický snímek průvodu britské gardy přes Londýn s Buckinghamským palácem v pozadí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Proč monarchie udržuje rituály",
+        "fact": "Okázalé ceremonie jsou nástrojem tzv. soft power — posilují mezinárodní prestiž, budují loajalitu a přitahují turisty. Britská monarchie je v tomto směru studovaným příkladem symbolické funkce státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Monarchy_of_the_United_Kingdom",
+        "source_quote": "the monarchy … plays an important ceremonial and symbolic role",
+        "voice": "Rituál není jen zvyk — je to nástroj.",
+        "image_prompt": "Fotorealistický snímek Buckinghamského paláce a jeho brány z perspektivy návštěvníka, vlajka Union Jack, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-kultura-highlandgames",
+    "country": "Spojené království",
+    "section": "Kultura & tradice",
+    "topic": "Highland Games",
+    "headline": "Skotský svátek síly, hudby a kiltu",
+    "fact": "Highland Games jsou tradiční skotské slavnosti zahrnující silácké disciplíny jako hod kmenem (caber toss), hry na dudy a soutěže v tanci.",
+    "source_url": "https://en.wikipedia.org/wiki/Highland_games",
+    "source_quote": "Highland games … events celebrating Scottish and Celtic culture … athletics, music, and dancing",
+    "voice": "Žádný jiný sport nevyžaduje kilt.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek atleta v kiltu hozujícího dřevěný kmen (caber toss) na tradiční Scottish Highland Games s kopci v pozadí, přirozené světlo, 16:9",
+    "ll": [-3.5, 57.0],
+    "levels": {
+      "cestovatel": {
+        "headline": "Klan a komunita za sportem",
+        "fact": "Původ her sahá ke klanové kultuře Skotské vysočiny, kde síla a hbitost byly životně důležité dovednosti. Po jakobínských povstáních a potlačení klanového systému posloužily hry k zachování identity.",
+        "source_url": "https://en.wikipedia.org/wiki/Highland_games",
+        "source_quote": "the origins … are linked to the clan culture of Scotland",
+        "voice": "Sport jako způsob zachování kultury, která byla zakázána.",
+        "image_prompt": "Fotorealistický snímek skotské vysočiny s vřesovišti, kiltovaní hráči na dudky, tradiční atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Diaspora roznesla tradice po světě",
+        "fact": "Skotská emigrace přenesla Highland Games do Kanady, USA, Austrálie a Nového Zélandu. Dnes se konají na více místech mimo Skotsko než v samotné zemi původu.",
+        "source_url": "https://en.wikipedia.org/wiki/Highland_games",
+        "source_quote": "Games are now held in many countries with significant Scottish diaspora",
+        "voice": "Vystěhovalci si s sebou berou kus domova.",
+        "image_prompt": "Fotorealistický snímek Highland Games v Kanadě nebo USA, podobná atmosféra, kilt a dudy, zelené prostředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-kultura-afternoontea",
+    "country": "Spojené království",
+    "section": "Kultura & tradice",
+    "topic": "Čaj o páté",
+    "headline": "Sandviče a dortíky jako každodenní rituál",
+    "fact": "Afternoon tea — šálek čaje podávaný s drobnými sendviči, scones a dortíky — je britská tradice sahající do devatenáctého století.",
+    "source_url": "https://en.wikipedia.org/wiki/Afternoon_tea",
+    "source_quote": "Afternoon tea … was introduced in England by Anna, the seventh Duchess of Bedford, in the early nineteenth century",
+    "voice": "Čas pro čaj je posvátný — i Britové na válce přestali bojovat, aby ho dodrželi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek afternoon tea: porcelánový čajový servis, scones s džemem, drobné sendviče na třípatrovém stojánku, přirozené světlo, bez lidí, 16:9",
+    "ll": [-0.1276, 51.5074],
+    "levels": {
+      "cestovatel": {
+        "headline": "Od aristokratické chvilky k národní tradici",
+        "fact": "Vévodkyně z Bedfordu si nechávala přinést čaj s jídlem kolem páté hodiny, aby zaplnila dlouhou mezeru mezi obědem a pozdní večeří. Zvyk rychle pronikl do vyšší společnosti a poté ke všem vrstvám.",
+        "source_url": "https://en.wikipedia.org/wiki/Afternoon_tea",
+        "source_quote": "The Duchess found that a light snack … helped to stave off the hunger she felt",
+        "voice": "Z osobní potřeby se stala národní identita.",
+        "image_prompt": "Fotorealistický snímek viktoriánského salónu s dámami u afternoon tea, historická atmosféra, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Čaj: koloniální globalizace v šálku",
+        "fact": "Čaj se do Británie dostal z Číny a Indie prostřednictvím britské Východoindické společnosti. Britský čajový rituál je tak přímým produktem koloniálního obchodu — globalizace v každodenní podobě.",
+        "source_url": "https://en.wikipedia.org/wiki/Tea_in_the_United_Kingdom",
+        "source_quote": "Tea was introduced to Britain from China … via the East India Company",
+        "voice": "V každém šálku je trochu imperiální dějiny.",
+        "image_prompt": "Fotorealistický snímek čajové plantáže v Assamu nebo na Srí Lance, zelené řady čajovníků, mlhavé kopce, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-umeni-globe",
+    "country": "Spojené království",
+    "section": "Umění",
+    "topic": "Shakespeare's Globe",
+    "headline": "Otevřené přírodní jeviště jako živý muzeum",
+    "fact": "Shakespearovo Globe Theatre v londýnském Southwarku je rekonstrukce původního alžbětinského divadla a jediná slamou krytá stavba v centru Londýna.",
+    "source_url": "https://en.wikipedia.org/wiki/Shakespeare%27s_Globe",
+    "source_quote": "the Globe has what has been claimed to be the first and only thatched roof permitted in London since the Great Fire of London in 1666",
+    "voice": "Divadlo bez střechy nad jevištěm, kde déšť i slunce jsou součástí hry.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek exteriéru Shakespeare's Globe Theatre v Southwarku, kulatá dřevěná budova se slaměnou střechou, řeka Temže v pozadí, přirozené světlo, 16:9",
+    "ll": [-0.0972, 51.5081],
+    "levels": {
+      "cestovatel": {
+        "headline": "Groundlings stáli, šlechta seděla",
+        "fact": "V Globe Theatre stálo publikum z lidu přímo před jevištěm za penny, zatímco šlechta sedávala v lóžích. Hry musely bavit oba světy najednou — to formovalo Shakespearův styl.",
+        "source_url": "https://en.wikipedia.org/wiki/Globe_Theatre",
+        "source_quote": "The lower classes … known as Groundlings … would have stood in the theater pit",
+        "voice": "Kdyby nebylo chudých diváků, nebylo by geniálního divadla.",
+        "image_prompt": "Fotorealistický snímek interiéru Globe Theatre s dřevěnými galeriemi a otevřeným přírodním jevištěm, sluneční světlo padá shora, 16:9"
+      },
+      "kartograf": {
+        "headline": "Divadlo na jihu Temže: geografie kultury",
+        "fact": "Southwark na jižním břehu Temže ležel mimo jurisdikci přísných městských pravidel Londýna. Divadla, krčmy a jiná zábava kvetla právě tam — kultura se přizpůsobuje hranicím správy.",
+        "source_url": "https://en.wikipedia.org/wiki/Globe_Theatre",
+        "source_quote": "Southwark was outside the control of the city officials who were hostile to theatres",
+        "voice": "Svobodná kultura vždy hledá místo, kde jí méně brání pravidla.",
+        "image_prompt": "Fotorealistický snímek panorama Southwarku a jižního břehu Temže s Globe Theatre, Londýn v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-umeni-beatles",
+    "country": "Spojené království",
+    "section": "Umění",
+    "topic": "Beatles",
+    "headline": "Čtyři kluci z Liverpoolu, kteří změnili hudbu světa",
+    "fact": "Beatles jsou z Liverpoolu a patří k nejprodávanějším hudebním skupinám v historii; jejich vliv na populární hudbu i kulturu šedesátých let je celosvětový.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Beatles",
+    "source_quote": "The Beatles are the best-selling music act of all time",
+    "voice": "Beatlemánie přerostla hudbu — byla to kulturní revoluce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Abbey Road v Londýně, slavný přechod pro chodce, historická budova nahrávacího studia, přirozené světlo, bez lidí, 16:9",
+    "ll": [-2.9814, 53.4084],
+    "levels": {
+      "cestovatel": {
+        "headline": "Liverpool jako kolébka britského beatu",
+        "fact": "Beatles vyrůstali v poválečném Liverpoolu, kde se mísil vliv amerického rock and rollu s přístavní kulturou. The Cavern Club, kde začínali hrát, je dnes mezinárodní poutní místo fanoušků.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Cavern_Club",
+        "source_quote": "The Cavern Club is a music club … closely associated with The Beatles",
+        "voice": "Velká hudba vzniká z konkrétního místa a doby.",
+        "image_prompt": "Fotorealistický snímek historické cihlové uličky v Liverpoolu s plakáty Beatles, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Britská invaze: kultura jako export",
+        "fact": "Příjezd Beatles do USA odstartoval takzvanou 'britskou invazi' — vlnu anglických kapel, které dobývaly americký trh. Byl to příklad kulturního exportu, který formoval soft power Spojeného království.",
+        "source_url": "https://en.wikipedia.org/wiki/British_Invasion",
+        "source_quote": "The British Invasion … is a cultural phenomenon of the 1960s when rock and pop music acts from the United Kingdom became popular in the United States",
+        "voice": "Kultura cestuje rychleji než armády.",
+        "image_prompt": "Fotorealistický snímek Abbey Road studia a přechodu pro chodce ze vzdálenějšího pohledu, Londýn za slunného dne, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-umeni-tate",
+    "country": "Spojené království",
+    "section": "Umění",
+    "topic": "Tate Modern",
+    "headline": "Elektrárna proměněná v chrám moderního umění",
+    "fact": "Tate Modern v Londýně sídlí v přestavěné elektrárně Bankside a je jednou z největších galerií moderního a současného umění na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Tate_Modern",
+    "source_quote": "Tate Modern … is a modern art gallery … one of the largest museums of modern and contemporary art in the world",
+    "voice": "Kde kdysi hořelo uhlí, dnes hoří imaginace.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek budovy Tate Modern v Londýně — přestavěná elektrárna s komínem, pohled přes lávku Millennium Bridge, přirozené světlo, 16:9",
+    "ll": [-0.0994, 51.5076],
+    "levels": {
+      "cestovatel": {
+        "headline": "Turbínová hala jako výstavní prostor",
+        "fact": "Turbínová hala bývalé elektrárny — obrovský vnitřní prostor původně určený pro průmyslové generátory — se stala místem pro velkoformátové instalace světových umělců. Architektura mění smysl prostoru.",
+        "source_url": "https://en.wikipedia.org/wiki/Tate_Modern",
+        "source_quote": "Turbine Hall … used for large-scale art installations",
+        "voice": "Staré prostory mohou dostat nový smysl.",
+        "image_prompt": "Fotorealistický snímek interiéru Turbínové haly Tate Modern, obrovský prostor se světlíky, umělecká instalace uvnitř, 16:9"
+      },
+      "kartograf": {
+        "headline": "Regenerace jižního Londýna přes kulturu",
+        "fact": "Tate Modern otevřela jako součást záměrné revitalizace Southwarku. Galerie přitáhla investice a turisty do dříve chudé části Londýna — příklad takzvané kulturní regenerace měst.",
+        "source_url": "https://en.wikipedia.org/wiki/Tate_Modern",
+        "source_quote": "Tate Modern has played a key role in regenerating the South Bank area",
+        "voice": "Umění jako ekonomický nástroj rozvoje města.",
+        "image_prompt": "Fotorealistický letecký snímek Southwarku s Tate Modern a Millennium Bridge, Temže a Londýn v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-sport-premier",
+    "country": "Spojené království",
+    "section": "Sport",
+    "topic": "Premier League",
+    "headline": "Fotbalová liga, kterou sleduje celý svět",
+    "fact": "Premier League je anglická fotbalová liga považovaná za jednu z nejpopulárnějších sportovních soutěží na světě, sledovanou v desítkách zemí.",
+    "source_url": "https://en.wikipedia.org/wiki/Premier_League",
+    "source_quote": "the Premier League is the most-watched sports league in the world, broadcast in 212 territories",
+    "voice": "Zápasy v sobotu odpoledne zastaví čtvrtinu světa.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek moderního anglického fotbalového stadionu zaplněného fanoušky, zelený trávník, přirozené světlo, bez rozpoznatelných tváří, 16:9",
+    "ll": [-0.1276, 51.5074],
+    "levels": {
+      "cestovatel": {
+        "headline": "Anglie jako kolébka moderního fotbalu",
+        "fact": "Pravidla moderního fotbalu formulovala anglická Football Association v devatenáctém století. Záhy se sport rozšířil přes britské námořníky a obchodníky po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_Association",
+        "source_quote": "The Football Association … the oldest football association in the world",
+        "voice": "Pravidla napsaná v Londýně se hrají dodnes v Buenos Aires.",
+        "image_prompt": "Fotorealistický snímek historického anglického fotbalového hřiště z viktoriánské éry, trávník a kamenné tribuny, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Fotbalový průmysl a globální ekonomika",
+        "fact": "Premier League je obrovský ekonomický sektor s mezinárodními vlastníky klubů, globálními přenosovými právy a hráči ze všech koutů světa. Je to příklad globalizace sportu i kulturní ekonomiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Premier_League",
+        "source_quote": "clubs are owned by investors from around the world",
+        "voice": "Sport a ekonomika jsou dnes neoddělitelné.",
+        "image_prompt": "Fotorealistický letecký snímek Londýna se stadionem Wembley, okolní zástavba, zlatá hodina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-sport-wimbledon",
+    "country": "Spojené království",
+    "section": "Sport",
+    "topic": "Wimbledon",
+    "headline": "Tenis na trávě a jahody se smetanou",
+    "fact": "Wimbledon je nejstarší tenisový grandslam světa, konaný každoročně v Londýně na travnatých kurtech, a jediný ze čtyř majorů hraný na trávě.",
+    "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+    "source_quote": "the oldest tennis tournament in the world",
+    "voice": "Bílá barva, jahody a ticho při podání — jiný svět sportu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek travnatého tenisového kurtu Wimbledon za slunného dne, zelená tráva, bílé lajny, bez lidí na kurtu, 16:9",
+    "ll": [-0.2143, 51.4340],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pravidla oblékání a tradice jako identita",
+        "fact": "Wimbledon striktně vyžaduje, aby hráči hráli v bílém oblečení — pravidlo sahá k viktoriánským počátkům turnaje. Turnaj záměrně udržuje tradice jako část své identity a hodnoty.",
+        "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+        "source_quote": "players are required to wear predominantly white clothing",
+        "voice": "Pravidlo o oblečení je symbol — ne kapric.",
+        "image_prompt": "Fotorealistický snímek tenisty v bílém oblečení na travnatém kurtu Wimbledon, historické tribuny v pozadí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tenis z Británie do světa",
+        "fact": "Tenis v moderní podobě vznikl v Anglii v devatenáctém století a Wimbledon byl jako mezinárodní turnaj pionýrem. Šíření sportu po světě kopírovalo britský koloniální dosah a obchodní sítě.",
+        "source_url": "https://en.wikipedia.org/wiki/Tennis",
+        "source_quote": "modern tennis … traces its origins to the 19th century … the United Kingdom",
+        "voice": "Britský sport, světová pravidla, globální hráči.",
+        "image_prompt": "Fotorealistický letecký snímek tenisového areálu Wimbledon s travnatými kurty, okolní zástavba Londýna, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-sport-rugby",
+    "country": "Spojené království",
+    "section": "Sport",
+    "topic": "Rugby",
+    "headline": "Sport, který se zrodil přerušením pravidel fotbalu",
+    "fact": "Rugby vzniklo v anglickém Rugby School v devatenáctém století, když hráč prý vzal míč do rukou a utekl s ním — legenda o zrodu sportu, který se hraje po celém světě.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_rugby_union",
+    "source_quote": "The sport is said to have originated at Rugby School in Warwickshire, England",
+    "voice": "Ze zakázaného pohybu se stal celý sport.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek rugbyového zápasu na trávníku ve Spojeném království, hráči v mlýně, přirozené světlo, bez rozpoznatelných tváří, 16:9",
+    "ll": [-1.2577, 52.3704],
+    "levels": {
+      "cestovatel": {
+        "headline": "Wales a Skotsko: rugby jako národní identita",
+        "fact": "Ve Walesu a Skotsku má rugby zvláštní místo — pro malé národy v rámci Spojeného království je to prostor, kde mohou porazit Anglii. Šest národů je proto emotivně nabitý turnaj.",
+        "source_url": "https://en.wikipedia.org/wiki/Six_Nations_Championship",
+        "source_quote": "The Six Nations Championship … contested annually by … England, France, Ireland, Italy, Scotland, and Wales",
+        "voice": "Na hřišti je to o sportu, ale trochu i o identitě.",
+        "image_prompt": "Fotorealistický snímek waleského rugbyového stadionu Principality Stadium v Cardiffu, zelená tráva, tribuna plná fanoušků, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Šíření sportu jako součást kolonizace",
+        "fact": "Rugby se šířilo přes britské kolonie — Jižní Afrika, Austrálie, Nový Zéland. Dnes tyto země patří k nejsilnějším ve světovém žebříčku a opakovaně poráží svou koloniální metropoli.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_rugby_union",
+        "source_quote": "rugby union … spread globally through British colonial influence",
+        "voice": "Sport přenesený koloniálně dnes poráží svého přenašeče.",
+        "image_prompt": "Fotorealistický snímek ragbyového zápasu na novozélandském nebo jihoafrickém stadionu, silná atmosféra, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-jazyk-britvsamer",
+    "country": "Spojené království",
+    "section": "Jazyk & slova",
+    "topic": "Britská vs. americká angličtina",
+    "headline": "Dvě angličtiny, které si rozumí, ale neshodnou se na spelingu",
+    "fact": "Britská a americká angličtina se liší v pravopisu, slovní zásobě i výslovnosti — například colour vs. color nebo lift vs. elevator.",
+    "source_url": "https://en.wikipedia.org/wiki/Comparison_of_American_and_British_English",
+    "source_quote": "British English and American English differ in pronunciation, vocabulary, spelling, and grammar",
+    "voice": "Společný jazyk, ale jiná slova pro výtah nebo hasiče.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Noah Webster rozhodl: Američané budou psát jinak",
+        "fact": "Americký lexikograf Noah Webster záměrně zjednodušil pravopis v americkém slovníku jako součást budování nezávislé americké identity — proto color místo colour a center místo centre.",
+        "source_url": "https://en.wikipedia.org/wiki/Noah_Webster",
+        "source_quote": "Webster deliberately chose different spellings to create an American standard of English",
+        "voice": "Jazyk je i politika.",
+        "image_prompt": "Fotorealistický snímek historického slovníku s otevřenými stránkami a ručně psanými poznámkami na okrajích, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Angličtina jako lingua franca: komu patří?",
+        "fact": "Angličtina je dnes celosvětový jazyk vědy, diplomacie a obchodu — ale rodilí mluvčí tvoří menšinu všech uživatelů. Jazyk se vyvíjí globálně a britská či americká varianta je jen jedna z mnoha.",
+        "source_url": "https://en.wikipedia.org/wiki/English_language",
+        "source_quote": "English is the most spoken language in the world … the majority of speakers are non-native",
+        "voice": "Angličtina patří světu, ne Anglii.",
+        "image_prompt": "Fotorealistický snímek mezinárodní konference, kde lidé různých národností konverzují, přirozené světlo, bez rozpoznatelných tváří, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-jazyk-cockney",
+    "country": "Spojené království",
+    "section": "Jazyk & slova",
+    "topic": "Cockney rýmovaný slang",
+    "headline": "Kód londýnské ulice: stairs = apples and pears",
+    "fact": "Cockney rýmovaný slang je způsob vyjadřování, kde se slovo nahradí rýmující se frází — 'stairs' se řekne 'apples and pears', 'phone' zase 'dog and bone'.",
+    "source_url": "https://en.wikipedia.org/wiki/Cockney_rhyming_slang",
+    "source_quote": "Cockney rhyming slang … a form of slang … in which a word or phrase is replaced by a rhyming word or phrase",
+    "voice": "Jazyk jako kód: kdo ho nezná, nerozumí nic.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kdo jsou Cockneys a kde žijí",
+        "fact": "Tradiční Cockney pochází z East Endu v Londýně — přistěhovaleckého dělnického čtvrti. Slang sloužil původně jako ochranný kód, aby okolí nerozumělo rozhovorům na trhu nebo před policisty.",
+        "source_url": "https://en.wikipedia.org/wiki/Cockney",
+        "source_quote": "Cockney is a dialect of English … associated with working class Londoners, particularly from the East End",
+        "voice": "Slang jako tajný jazyk lidu.",
+        "image_prompt": "Fotorealistický snímek historické East End tržnice v Londýně, rušná ulice, staré cihlové budovy, přirozené světlo, bez rozpoznatelných tváří, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dialekty jako mapa sociální geografie",
+        "fact": "V britských městech dialekt stále spolehlivě odhalí sociální původ i zeměpisné zázemí mluvčího. Sociolingvistika studuje, jak jazyk mapuje třídní a regionální identity — a Londýn je ideální laboratoří.",
+        "source_url": "https://en.wikipedia.org/wiki/Sociolinguistics",
+        "source_quote": "language variation … can reflect social class, region, ethnicity",
+        "voice": "Otevřeš ústa a řekneš, odkud jsi.",
+        "image_prompt": "Fotorealistický snímek moderního londýnského East Endu s graffiti a neonovými nápisy, ulice za dne, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-jazyk-etymologie",
+    "country": "Spojené království",
+    "section": "Jazyk & slova",
+    "topic": "Normanské slovo vs. anglosaské",
+    "headline": "Proč má angličtina tolik synonym? Protože ji dobyli Normané",
+    "fact": "Po normanském dobytí Anglie vznikla v angličtině dvojí vrstva slov: anglosaská slova pro každodenní život a francouzsko-latinská slova pro právo, kulturu a dvorský život.",
+    "source_url": "https://en.wikipedia.org/wiki/Norman_conquest_of_England",
+    "source_quote": "The Norman Conquest introduced French vocabulary into the English language, creating many pairs of synonyms",
+    "voice": "Pig (anglosasky) — Pork (normansky). Zvíře mluví jedním jazykem, jídlo druhým.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Dobyvatel mluví, porobený mluví jinak",
+        "fact": "Po dobytí se normánská šlechta vyjadřovala francouzsky — proto jsou právní a dvorské pojmy v angličtině latinsko-románského původu (justice, court, noble). Anglosaský lid mluvil staroanglicky, odkud pochází každodenní slovník.",
+        "source_url": "https://en.wikipedia.org/wiki/Norman_conquest_of_England",
+        "source_quote": "French became the language of the court … while English remained the language of the common people",
+        "voice": "Jazyk tříd se v angličtině uchoval v etymologii.",
+        "image_prompt": "Fotorealistický snímek historické středověké tapisérie z Bayeux nebo podobná, rytíři a vojáci, historická vizualita, 16:9"
+      },
+      "kartograf": {
+        "headline": "Angličtina jako hybridní jazyk invazí",
+        "fact": "Angličtina je výsledkem vrstveného kontaktu jazyků: keltština, latina, anglosasština, norština Vikingů a normanská francouzština. Jazykový kontakt a migrace formují jazyk stejně jako státní hranice.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_English_language",
+        "source_quote": "English is a West Germanic language … significantly influenced by Norman French",
+        "voice": "Jazyk je archiv dějin — každé slovo má příběh.",
+        "image_prompt": "Fotorealistický snímek staré anglické rukopisné stránky s iluminacemi, středověká kaligrafie, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-jidlo-fishandchips",
+    "country": "Spojené království",
+    "section": "Jídlo",
+    "topic": "Fish and chips",
+    "headline": "Smažená ryba s hranolky: národní jídlo z přistěhovalecké kuchyně",
+    "fact": "Fish and chips — smažená ryba v těstíčku podávaná s bramborovými hranolky — je ikonické britské jídlo, které popularizovali přistěhovalci do průmyslových měst Anglie.",
+    "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
+    "source_quote": "fish and chips … a popular takeaway food in the United Kingdom",
+    "voice": "Zabalené do novin, jedeno na ulici. Britský fast food s tradicí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek porce fish and chips zabalené v papíru, zlatavá ryba v těstíčku a hranolky, venkovní světlo, 16:9",
+    "ll": [-0.1276, 51.5074],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sephardský Žid a belgický uprchlík — zakladatelé britského jídla",
+        "fact": "Smažená ryba v těstíčku přišla se sephardskými židovskými přistěhovalci, brambory a hranolky přinesla belgická a francouzská tradice. Fish and chips je výsledek kulturního míšení v průmyslových přístavních městech.",
+        "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
+        "source_quote": "fried fish was introduced into Britain by Jewish refugees",
+        "voice": "Národní jídlo nemá národní původ.",
+        "image_prompt": "Fotorealistický snímek tradičního britského chip shopu (obchodu s rybou a hranolky), neonové nápisy, přirozené světlo, bez rozpoznatelných tváří, 16:9"
+      },
+      "kartograf": {
+        "headline": "Průmyslová revoluce a dostupné jídlo",
+        "fact": "Fish and chips se rozšířilo jako levné a rychlé jídlo pro dělnické třídy průmyslových měst — dostupná bílkovina z moře v době, kdy chladničky neexistovaly. Jídlo odráží sociální geografii průmyslové éry.",
+        "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
+        "source_quote": "the dish became a cheap source of food for the working class during the Industrial Revolution",
+        "voice": "Co jedli dělníci, dnes jedí turisté jako zážitek.",
+        "image_prompt": "Fotorealistický snímek viktoriánského rybího trhu nebo přístavu v Anglii, dělníci a lodě, historická atmosféra, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-jidlo-haggis",
+    "country": "Spojené království",
+    "section": "Jídlo",
+    "topic": "Haggis",
+    "headline": "Skotské národní jídlo ze skopových vnitřností",
+    "fact": "Haggis je tradiční skotské jídlo z mletých ovčích vnitřností smíchaných s ovesnými vločkami a kořením, vařených v ovčím žaludku.",
+    "source_url": "https://en.wikipedia.org/wiki/Haggis",
+    "source_quote": "Haggis is a savoury pudding containing sheep's pluck (heart, liver, and lungs), minced with oatmeal, onions, suet, and spices",
+    "voice": "Básník Burns mu věnoval vlastní ódu. To se každému jídlu nepodaří.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního skotského jídla haggis s neeps and tatties (tuřín a brambory) na rustikálním talíři, přirozené světlo, 16:9",
+    "ll": [-4.2026, 56.4907],
+    "levels": {
+      "cestovatel": {
+        "headline": "Burns Night: slavnost s básní a whisky",
+        "fact": "Každoročně na Burns Night skotská tradice velí recitovat báseň Roberta Burnse Ode to a Haggis a podávat jídlo s whisky. Je to jeden z nejslavnostnějších zvyků skotské identity.",
+        "source_url": "https://en.wikipedia.org/wiki/Burns_supper",
+        "source_quote": "Burns supper … a celebration of the life and poetry of the poet Robert Burns",
+        "voice": "Jídlo a literatura jako součást jedné slavnosti.",
+        "image_prompt": "Fotorealistický snímek skotské slavnostní večeře Burns Night, svíčky, whisky, kilt, historický interiér, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Prostý pokrm z chudé Vysočiny",
+        "fact": "Haggis vznikl jako potravina chudých — z dílů zvířete, které by se jinak vyhodily, smíchaných s dostupnými obilninami. Jídla Vysočiny odrážejí drsné klimatické podmínky a izolaci od jižního bohatství.",
+        "source_url": "https://en.wikipedia.org/wiki/Haggis",
+        "source_quote": "Haggis … likely originated as peasant food",
+        "voice": "Co bylo jídlem z nouze, stalo se národním symbolem.",
+        "image_prompt": "Fotorealistický snímek skotské vysočiny s pastevcem a ovcemi, dramatické vřesoviště a hory, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-jidlo-scones",
+    "country": "Spojené království",
+    "section": "Jídlo",
+    "topic": "Scones",
+    "headline": "Malá buchta s velkou otázkou: džem dřív, nebo smetana?",
+    "fact": "Scone je tradiční britský kynutý koláček podávaný ke čaji; v Cornwallu se maže smetanou a džemem, přičemž pořadí nanášení je věcí vyhraněných regionálních vášní.",
+    "source_url": "https://en.wikipedia.org/wiki/Scone_(food)",
+    "source_quote": "The scone is a traditional British baked good … closely associated with afternoon tea",
+    "voice": "Džem dřív nebo smetana dřív? Ve Walesu, Skotsku a Anglii každý odpoví jinak.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek čerstvě upečených scones na dřevěné desce se skotskou smetanou a jahodovým džemem vedle, přirozené světlo, 16:9",
+    "ll": [-4.5, 50.5],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cornwall vs. Devon: malá válka o pořadí",
+        "fact": "Spor o pořadí smetany a džemu na scone je vážně míněný regionální zájem: Cornwall trvá na džemu jako prvním, Devon na smetaně. Je to mikrokosmický příklad regionální identity a lokální hrdosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Cream_tea",
+        "source_quote": "Whether to apply jam or cream first is a matter of local custom, particularly in Devon and Cornwall",
+        "voice": "I malé věci jsou velké, jsou-li věcí identity.",
+        "image_prompt": "Fotorealistický snímek cream tea s scones na stole s výhledem na cornwallské pobřeží, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pšenice, obiloviny a britská zemědělská tradice",
+        "fact": "Tradiční britské pečivo jako scone odráží místní zemědělství — oves ve Skotsku, pšenice na jihu. Regionální variace jídla jsou mapou geografických a klimatických podmínek.",
+        "source_url": "https://en.wikipedia.org/wiki/Scone_(food)",
+        "source_quote": "Scones are made from wheat, barley or oatmeal",
+        "voice": "Co roste v zemi, to se jí na stole.",
+        "image_prompt": "Fotorealistický snímek anglického zemědělského kraje s poli pšenice a oves, ranní mlha, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-historie-magnacarta",
+    "country": "Spojené království",
+    "section": "Historie",
+    "topic": "Magna Carta",
+    "headline": "Listina, která omezila moc krále zákonem",
+    "fact": "Magna Carta je dokument podepsaný králem Janem v Runnymede, který poprvé formálně omezil moc panovníka zákonem a zaručil svobody baronům a církvi.",
+    "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+    "source_quote": "Magna Carta … declared the sovereign to be subject to the rule of law",
+    "voice": "Žádný král nad zákonem. Tohle byl začátek.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek středověkého pergamenu s pečetí na dřevěném stole s přirozeným světlem procházejícím oknem, historická atmosféra, 16:9",
+    "ll": [-0.5667, 51.4414],
+    "levels": {
+      "cestovatel": {
+        "headline": "Baronská vzpoura a louky Runnymede",
+        "fact": "Baróni králi Janovi vytýkali svévolnou vládu a uchýlili se k ozbrojenému odporu. V trávnatém údolí Runnymede u Temže bylo dosaženo kompromisu — takzvaná 'Velká listina' zaručovala práva baronům.",
+        "source_url": "https://www.britannica.com/topic/Magna-Carta",
+        "source_quote": "a peace treaty between John and his barons, guaranteed that the king would respect feudal rights",
+        "voice": "Kompromis pod pohrůžkou meče — tak funguje politika.",
+        "image_prompt": "Fotorealistický snímek trávnatého niva Runnymede u řeky Temže v Anglii, klidná krajina, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z baronského dokumentu ke světovému ústavnímu principu",
+        "fact": "Magna Carta sloužila jako inspirace pro parlamentaristy, americké zakladatele a autory Všeobecné deklarace lidských práv. Místní baronská listina se stala globálním referenčním bodem ústavního práva.",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "source_quote": "Magna Carta … has influenced many constitutional documents, including the Constitution of the United States",
+        "voice": "Jeden anglický louku přetvořil politiku celého světa.",
+        "image_prompt": "Fotorealistický snímek memoriálu Magna Carty v Runnymede nebo knihovny s historickými právními dokumenty, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-historie-bitvaobritanii",
+    "country": "Spojené království",
+    "section": "Historie",
+    "topic": "Bitva o Británii",
+    "headline": "Vzdušná válka, která zachránila svobodnou Evropu",
+    "fact": "Bitva o Británii byla vzdušný střet nad Anglií, ve kterém Královské letectvo uhájilo ostrov před německou invazí a obrátilo chod druhé světové války.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+    "source_quote": "the Battle of Britain … the first major military campaign fought entirely by air forces",
+    "voice": "Churchill řekl: 'Nikdy nebylo tolika lidí zavázáno tak mnohým tak málu.'",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek britského letounu Spitfire letícího nad dramatickou oblačností nad Anglií, historická atmosféra druhé světové války, 16:9",
+    "ll": [-0.1276, 51.5074],
+    "levels": {
+      "cestovatel": {
+        "headline": "Spitfire a Hurricane: stroje, které zastavily invazi",
+        "fact": "Britští piloti létali na Supermarine Spitfiru a Hawker Hurricanu — technologicky srovnatelných strojích s německou Messerschmittem. Klíčové bylo ale radar a pozemní systém řízení, který koordinoval obranu.",
+        "source_url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+        "source_quote": "the Supermarine Spitfire and the Hawker Hurricane … played a decisive role",
+        "voice": "Technologie a organizace rozhodly víc než hrdinství samo.",
+        "image_prompt": "Fotorealistický snímek muzejního Spitfiru vystaveného v hangáru, přirozené světlo, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Geografická výhoda: moře a radar",
+        "fact": "Průliv La Manche byl rozhodujícím geografickým faktorem — německé stíhačky měly nad Anglií jen omezenou dobu letu kvůli palivovým nádržím. Britský radarový systém Chain Home pokrýval pobřeží a dával drahocenné varování.",
+        "source_url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+        "source_quote": "the English Channel … limited the range of German fighters",
+        "voice": "Moře bránilo Británii tisíce let — znovu i tehdy.",
+        "image_prompt": "Fotorealistický snímek pobřeží Bílých útesů Doveru s mořem a dramatickou oblohou, symbolika anglické obrany, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gb-historie-prumyslovarev",
+    "country": "Spojené království",
+    "section": "Historie",
+    "topic": "Průmyslová revoluce",
+    "headline": "Parní stroj změnil svět — a začalo to v Británii",
+    "fact": "Průmyslová revoluce začala v Británii a přeměnila zemědělskou společnost na průmyslovou civilizaci s továrnami, železnicemi a parními stroji.",
+    "source_url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+    "source_quote": "The Industrial Revolution … began in Great Britain … transformed the economy from a largely rural, handicraft economy to one dominated by industry and machine manufacturing",
+    "voice": "Za pár generací se svět změnil víc než za tisíc let předtím.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické anglické textilní továrny s parními stroji, historická průmyslová atmosféra osmnáctého nebo devatenáctého století, 16:9",
+    "ll": [-1.8904, 52.4862],
+    "levels": {
+      "cestovatel": {
+        "headline": "Proč právě Británie jako první?",
+        "fact": "Británie měla výhodu: uhlí a železo v blízkosti přístavů, ochranu moře před válečnými nájezdy, stabilní politický systém po Slavné revoluci a koloniální trhy. Geografické a institucionální podmínky se spojily.",
+        "source_url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+        "source_quote": "Britain's natural resources … access to capital … colonial markets … contributed to its industrialisation",
+        "voice": "Revoluce nepadá z nebe — připravují ji podmínky.",
+        "image_prompt": "Fotorealistický snímek britského průmyslového města v osmnáctém nebo devatenáctém století s komíny a kanály, historická vizualizace, 16:9"
+      },
+      "kartograf": {
+        "headline": "Urbanizace, migrace a vznik průmyslových měst",
+        "fact": "Průmyslová revoluce přenesla obyvatelstvo z venkova do měst — Manchester, Birmingham, Leeds vyrostly z malých míst na průmyslová centra v jediné generaci. Tento proces urbanizace přetváří svět dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Urbanization_in_the_United_Kingdom",
+        "source_quote": "the Industrial Revolution drove rapid urbanisation … the population of cities like Manchester grew enormously",
+        "voice": "Továrna přitáhla lidi, lidi postavili město.",
+        "image_prompt": "Fotorealistický letecký snímek historického Manchesteru nebo Birminghamu s průmyslovými čtvrtěmi a kanály, historická atmosféra, 16:9"
+      }
+    }
+  }
+]

@@ -1,0 +1,2200 @@
+[
+  {
+    "id": "ca-mista-niagarsk-vody",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Niagarské vodopády",
+    "headline": "Mohutný vodopád na hranici",
+    "fact": "Niagarské vodopády leží na řece Niagara mezi Ontariem a americkým státem New York. Kanadská část se nazývá Horseshoe Falls a má tvar podkovy.",
+    "source_url": "https://en.wikipedia.org/wiki/Niagara_Falls",
+    "source_quote": "The largest of the three is Horseshoe Falls, which straddles the international border of the two countries. It is also known as the Canadian Falls.",
+    "voice": "Hukot vody slyšíš dřív, než ji uvidíš.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Horseshoe Falls Niagara from Canadian side, mist and rainbow, no people, 16:9",
+    "ll": [
+      -79.075,
+      43.08
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Podkova plná vody a mlhy",
+        "fact": "Z kanadské strany je krásný výhled na celý oblouk vodopádu. Vzduch je plný vodní tříště a často se objeví duha.",
+        "source_url": "https://en.wikipedia.org/wiki/Niagara_Falls",
+        "voice": "Duha nad vodopádem je jako odměna za mokré boty.",
+        "image_prompt": "Photorealistic close view of Niagara Horseshoe Falls with mist, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řeka, která spojuje dvě jezera",
+        "fact": "Niagara odvádí vodu z Erijského jezera do Ontarijského. Vodopády vznikly erozí na okraji bývalého ledovcového jezera.",
+        "source_url": "https://en.wikipedia.org/wiki/Niagara_Falls",
+        "source_quote": "Formed by the Niagara River, which drains Lake Erie into Lake Ontario",
+        "voice": "Ledovec ustoupil, řeka zůstala a vytvořila divadlo.",
+        "image_prompt": "Photorealistic aerial view of Niagara River and falls on Canada-US border, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-cn-tower",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "CN Tower",
+    "headline": "Jehla nad Torontem",
+    "fact": "CN Tower je televizní a vyhlídková věž v Torontu. Dlouho patřila mezi vysoké volně stojící stavby světa a dominuje panoramatu města.",
+    "source_url": "https://en.wikipedia.org/wiki/CN_Tower",
+    "voice": "Z vyhlídky vypadá jezero Ontario jako obří zrcadlo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic CN Tower rising above Toronto skyline at sunset, no people, 16:9",
+    "ll": [
+      -79.3871,
+      43.6426
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Výhled z mraků",
+        "fact": "Ve věži je vyhlídková plošina a skleněná podlaha. Za jasného dne dohlédneš daleko přes jezero i město.",
+        "source_url": "https://en.wikipedia.org/wiki/CN_Tower",
+        "voice": "Když se podíváš dolů skrz sklo, žaludek se trochu stáhne.",
+        "image_prompt": "Photorealistic view from CN Tower observation level looking over Toronto and lake, 16:9"
+      },
+      "kartograf": {
+        "headline": "Orientacní bod u Velkých jezer",
+        "fact": "Věž stojí u břehu Ontarijského jezera a slouží jako orientační bod pro celé jižní Ontario. Je součástí moderní identity Toronta.",
+        "source_url": "https://en.wikipedia.org/wiki/CN_Tower",
+        "voice": "Město si postavilo maják, i když je u jezera, ne u moře.",
+        "image_prompt": "Photorealistic aerial Toronto skyline with CN Tower and Lake Ontario, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-parliament-hill",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Parliament Hill",
+    "headline": "Pahorek parlamentu v Ottawě",
+    "fact": "Parliament Hill je sídlo kanadského parlamentu na břehu řeky Ottawa. Gotické budovy a Peace Tower patří k symbolům země.",
+    "source_url": "https://en.wikipedia.org/wiki/Parliament_Hill",
+    "source_quote": "Parliament Hill is an area of Crown land on the southern bank of the Ottawa River that houses the Parliament of Canada in downtown Ottawa, Ontario.",
+    "voice": "Na trávníku před budovami se v létě svačí a v zimě bruslí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Parliament Hill Ottawa with Peace Tower and Centre Block, daytime, no people, 16:9",
+    "ll": [
+      -75.6994,
+      45.4247
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Peace Tower a knihovna",
+        "fact": "Peace Tower je dominantou centrální budovy. Za ní stojí kruhová Library of Parliament, která přežila velký požár.",
+        "source_url": "https://en.wikipedia.org/wiki/Parliament_Hill",
+        "voice": "Knihy přežily oheň, věž hlídá město.",
+        "image_prompt": "Photorealistic close view of Peace Tower and Parliament buildings, Ottawa, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice provincie a historie",
+        "fact": "Ottawa leží na hranici Ontaria a Quebecu. Volba města jako hlavního měla vyvážit anglicky a francouzsky mluvící části země.",
+        "source_url": "https://en.wikipedia.org/wiki/Parliament_Hill",
+        "voice": "Hlavní město sedí přesně na kulturní křižovatce.",
+        "image_prompt": "Photorealistic Ottawa River with Parliament Hill on the bank, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-quebec",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Staré Quebec",
+    "headline": "Opevněné francouzské město",
+    "fact": "Historické jádro Quebec City je opevněné a zapsané na seznam UNESCO. Úzké uličky a hradby připomínají historickou Evropu.",
+    "source_url": "https://en.wikipedia.org/wiki/Old_Quebec",
+    "voice": "Když jdeš po hradbách, máš pocit, že jsi přeskočil oceán.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Old Quebec City walls and Chateau Frontenac, autumn colors, no people, 16:9",
+    "ll": [
+      -71.207,
+      46.813
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Château Frontenac nad řekou",
+        "fact": "Dominantou je hotel Château Frontenac na skále nad řekou Svatého Vavřince. Z terasy je výhled na dolní město i řeku.",
+        "source_url": "https://en.wikipedia.org/wiki/Old_Quebec",
+        "voice": "Hotel vypadá jako zámek, který se rozhodl hlídat řeku.",
+        "image_prompt": "Photorealistic Chateau Frontenac overlooking St. Lawrence River, 16:9"
+      },
+      "kartograf": {
+        "headline": "Brána do vnitrozemí",
+        "fact": "Quebec leží tam, kde se řeka Svatého Vavřince zužuje. Historicky to byl klíčový bod pro plavbu do středu kontinentu.",
+        "source_url": "https://en.wikipedia.org/wiki/Quebec_City",
+        "voice": "Kdo ovládal úžinu, ovládal cestu do srdce země.",
+        "image_prompt": "Photorealistic aerial view of Quebec City on St. Lawrence River, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-banff",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Banff",
+    "headline": "První národní park u Skalistých hor",
+    "fact": "Banff National Park je nejstarší národní park v Kanadě. Leží ve Skalistých horách v Albertě a patří k památkám UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Banff_National_Park",
+    "source_quote": "Banff National Park is Canada's oldest national park, established in 1885.",
+    "voice": "Hory, jezera a losi – to je pohled, který si pamatuješ navždy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Banff National Park with turquoise lake and Rocky Mountains, no people, 16:9",
+    "ll": [
+      -115.57,
+      51.18
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lake Louise a tyrkysová voda",
+        "fact": "Lake Louise je známé tyrkysovou barvou způsobenou ledovcovým práškem. Kolem vedou stezky s výhledy na ledovce.",
+        "source_url": "https://en.wikipedia.org/wiki/Banff_National_Park",
+        "voice": "Voda vypadá jako tekutý drahokam.",
+        "image_prompt": "Photorealistic Lake Louise with Victoria Glacier and mountains, 16:9"
+      },
+      "kartograf": {
+        "headline": "Park, který založila železnice",
+        "fact": "Park vznikl po objevu horkých pramenů během stavby železnice. Stal se vzorem pro celý systém kanadských národních parků.",
+        "source_url": "https://en.wikipedia.org/wiki/Banff_National_Park",
+        "voice": "Koleje přinesly lidi, park zachránil hory.",
+        "image_prompt": "Photorealistic Rocky Mountains landscape in Banff with railway hint in valley, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-vancouver",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Vancouver",
+    "headline": "Město mezi horami a oceánem",
+    "fact": "Vancouver leží na pacifickém pobřeží Britské Kolumbie. Spojuje přístav, moderní centrum a blízké hory s deštnými lesy.",
+    "source_url": "https://en.wikipedia.org/wiki/Vancouver",
+    "voice": "Ráno lyžuješ, odpoledne se koupeš v oceánu – aspoň v reklamě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Vancouver skyline with mountains and harbor, clear day, no people, 16:9",
+    "ll": [
+      -123.12,
+      49.28
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Stanley Park a totemy",
+        "fact": "Stanley Park je velký městský park s lesem, plážemi a totemovými sloupy. Kolem vede cesta podél moře.",
+        "source_url": "https://en.wikipedia.org/wiki/Vancouver",
+        "voice": "Město si nechalo uprostřed prales.",
+        "image_prompt": "Photorealistic Stanley Park seawall and totem poles, Vancouver, 16:9"
+      },
+      "kartograf": {
+        "headline": "Brána do Pacifiku",
+        "fact": "Přístav Vancouver patří mezi klíčové přístavy na západním pobřeží Severní Ameriky. Spojuje Kanadu s Asií.",
+        "source_url": "https://en.wikipedia.org/wiki/Vancouver",
+        "voice": "Od hor k oceánu je to jen pár zastávek autobusu.",
+        "image_prompt": "Photorealistic Vancouver harbor with ships and North Shore mountains, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-halifax",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Halifax",
+    "headline": "Přístav na Atlantiku",
+    "fact": "Halifax je hlavní město Nového Skotska a významný atlantický přístav. Citadela na kopci hlídá záliv už od koloniálních dob.",
+    "source_url": "https://en.wikipedia.org/wiki/Halifax,_Nova_Scotia",
+    "voice": "Sůl v vzduchu a rackové nad přístavem – to je Atlantik.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Halifax waterfront and harbor with citadel hill, daytime, 16:9",
+    "ll": [
+      -63.57,
+      44.65
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nábřeží a majáky",
+        "fact": "Na nábřeží jsou sklady přeměněné na kavárny a muzea. Nedaleko leží slavný maják Peggy's Cove na žulových skalách.",
+        "source_url": "https://en.wikipedia.org/wiki/Halifax,_Nova_Scotia",
+        "voice": "Maják na skále vypadá, jako by vyrostl z kamene.",
+        "image_prompt": "Photorealistic Peggy's Cove lighthouse on granite rocks, Nova Scotia, 16:9"
+      },
+      "kartograf": {
+        "headline": "Brána do Atlantiku",
+        "fact": "Halifax má hluboký přírodní přístav, který patří mezi významné na světě. Historicky sloužil jako základna námořnictva a obchodu s Evropou.",
+        "source_url": "https://en.wikipedia.org/wiki/Halifax,_Nova_Scotia",
+        "voice": "Hluboká voda přinesla lodě i příběhy.",
+        "image_prompt": "Photorealistic aerial view of Halifax harbor, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-montreal",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Montreal",
+    "headline": "Ostrovní město u řeky",
+    "fact": "Montreal leží na ostrově v řece Svatého Vavřince. Je významným městem Quebecu a spojuje francouzskou kulturu s moderní metropolí.",
+    "source_url": "https://en.wikipedia.org/wiki/Montreal",
+    "voice": "Ulice mluví francouzsky a voní bagetami i bagely.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Montreal skyline with St. Lawrence River and Mount Royal, 16:9",
+    "ll": [
+      -73.57,
+      45.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Staré město a Mount Royal",
+        "fact": "Vieux-Montréal má dlážděné ulice a přístav. Z kopce Mount Royal je výhled na celé město.",
+        "source_url": "https://en.wikipedia.org/wiki/Montreal",
+        "voice": "Z kopce vypadá město jako mozaika střech a jeřábů.",
+        "image_prompt": "Photorealistic Old Montreal street with historic buildings, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ostrov na důležité řece",
+        "fact": "Poloha na ostrově v řece Svatého Vavřince z něj udělala obchodní a dopravní uzel mezi Atlantikem a Velkými jezery.",
+        "source_url": "https://en.wikipedia.org/wiki/Montreal",
+        "voice": "Řeka město nese a zároveň ho chrání.",
+        "image_prompt": "Photorealistic aerial Montreal island in St. Lawrence River, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-mista-yukon",
+    "country": "Kanada",
+    "section": "Místa",
+    "topic": "Yukon",
+    "headline": "Severní území zlaté horečky",
+    "fact": "Yukon je území na severozápadě Kanady. Proslavil se zlatou horečkou na Klondiku a divokou přírodou u polárního kruhu.",
+    "source_url": "https://en.wikipedia.org/wiki/Yukon",
+    "voice": "Tady je víc losů než semaforů.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Yukon wilderness with mountains, river and autumn tundra colors, no people, 16:9",
+    "ll": [
+      -135.05,
+      60.72
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dawson City a zlaté příběhy",
+        "fact": "Dawson City připomíná dobu zlatokopů dřevěnými chodníky a starými budovami. V létě je světlo skoro celou noc.",
+        "source_url": "https://en.wikipedia.org/wiki/Yukon",
+        "voice": "Slunce zapadá, ale úplně se nechce jít spát.",
+        "image_prompt": "Photorealistic Dawson City wooden boardwalk and historic buildings, Yukon, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cesta k polárnímu kruhu",
+        "fact": "Yukon sousedí s Aljaškou a Severozápadními teritorii. Krajina přechází z boreálních lesů do tundry.",
+        "source_url": "https://en.wikipedia.org/wiki/Yukon",
+        "voice": "Čím dál na sever, tím víc ticha a světla v noci.",
+        "image_prompt": "Photorealistic northern Yukon landscape near Arctic Circle, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-skaliste-hory",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Skalisté hory",
+    "headline": "Hřeben napříč západem",
+    "fact": "Kanadské Skalisté hory tvoří dramatický hřeben v Albertě a Britské Kolumbii. Jsou plné ledovců, tyrkysových jezer a národních parků.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
+    "voice": "Hory tady vypadají, jako by je někdo nakreslil ostrým tužkou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian Rockies peaks with glaciers and forested valleys, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Ledovce a horská jezera",
+        "fact": "Mnohá jezera mají mléčně tyrkysovou barvu kvůli jemnému ledovcovému prachu. Stezky vedou k vodopádům i vyhlídkám.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
+        "voice": "Voda z ledovce chutná jako tekutý chlad.",
+        "image_prompt": "Photorealistic turquoise glacial lake in Canadian Rockies, 16:9"
+      },
+      "kartograf": {
+        "headline": "Páteř západní Kanady",
+        "fact": "Pohoří tvoří přirozenou bariéru mezi prériemi a pacifickým pobřežím. Ovlivňuje klima i směry řek.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
+        "voice": "Na jedné straně suché prérie, na druhé deštné lesy.",
+        "image_prompt": "Photorealistic aerial view of Rocky Mountains range, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-velka-jezera",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Velká jezera",
+    "headline": "Sladkovodní moře ve vnitrozemí",
+    "fact": "Kanada sdílí s USA systém Velkých jezer. Hořejší, Michiganské, Huron, Erijské a Ontarijské jezero tvoří obrovskou zásobu sladké vody.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Lakes",
+    "voice": "Stojíš na břehu a připadá ti, že koukáš na moře.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Great Lakes shoreline with clear water and distant horizon, Canada, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pláže i bouře",
+        "fact": "Na březích jsou písčité pláže i skalnaté útesy. Počasí se může rychle změnit a vlny dorůstají do velké výšky.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Lakes",
+        "voice": "Jezero umí být klidné jako zrcadlo i divoké jako oceán.",
+        "image_prompt": "Photorealistic Canadian Great Lakes beach with waves, 16:9"
+      },
+      "kartograf": {
+        "headline": "Největší systém sladké vody",
+        "fact": "Velká jezera obsahují značnou část světové povrchové sladké vody. Spojuje je řetězec řek a průlivů až k Atlantiku.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Lakes",
+        "source_quote": "The Great Lakes are a series of large interconnected freshwater lakes",
+        "voice": "Voda z prérií i lesů končí v těchto obřích mísách.",
+        "image_prompt": "Photorealistic map-like aerial of Great Lakes region, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-boreální-les",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Boreální les",
+    "headline": "Nekonečný les na severu",
+    "fact": "Boreální les pokrývá obrovskou část Kanady. Je to pás jehličnanů, jezer a bažin, který se táhne od Atlantiku až k Pacifiku.",
+    "source_url": "https://en.wikipedia.org/wiki/Boreal_forest_of_Canada",
+    "voice": "Když letíš nad ním, vypadá to jako zelený oceán s kapkami jezer.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian boreal forest with spruce trees and lakes from above, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Mech, jehličnany a komáři",
+        "fact": "V lese rostou smrky, borovice a modříny. V létě je plný života, v zimě tichý a zasněžený.",
+        "source_url": "https://en.wikipedia.org/wiki/Boreal_forest_of_Canada",
+        "voice": "V zimě slyšíš jen křupání sněhu pod botami.",
+        "image_prompt": "Photorealistic snowy boreal forest trail in Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pás kolem celé planety",
+        "fact": "Kanadský boreální les je součástí většího pásu, který obepíná severní polokouli. Hraje důležitou roli v ukládání uhlíku.",
+        "source_url": "https://en.wikipedia.org/wiki/Boreal_forest_of_Canada",
+        "voice": "Les dýchá za celou severní polokouli.",
+        "image_prompt": "Photorealistic vast boreal landscape with lakes and conifers, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-arktická-tundra",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Arktická tundra",
+    "headline": "Země bez stromů na dalekém severu",
+    "fact": "Na kanadském Arktidě se rozkládá tundra. Stromy tu nerostou, půda je často zmrzlá a v létě se objeví mechy, lišejníky a nízké rostliny.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_Arctic",
+    "voice": "Ticho tady má jinou barvu – bílou a větrnou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian Arctic tundra in summer with low plants and distant ice, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Půlnoční slunce a polární záře",
+        "fact": "V létě slunce téměř nezapadá, v zimě panuje dlouhá tma. Polární záře maluje oblohu zelenými a fialovými pruhy.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Arctic",
+        "voice": "Obloha tady umí být divadlem sama o sobě.",
+        "image_prompt": "Photorealistic northern lights over Canadian Arctic landscape, 16:9"
+      },
+      "kartograf": {
+        "headline": "Permafrost a měnící se pobřeží",
+        "fact": "Velká část půdy je trvale zmrzlá. Oteplování ovlivňuje stabilitu břehů a život zvířat i lidí.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Arctic",
+        "voice": "Země, která byla vždycky ledová, se učí nové způsoby.",
+        "image_prompt": "Photorealistic Arctic coastline with tundra and sea ice, Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-bay-of-fundy",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Bay of Fundy",
+    "headline": "Záliv s obřími přílivy",
+    "fact": "Bay of Fundy mezi Novým Skotskem a New Brunswickem má jedny z největších přílivových rozdílů na světě. Voda stoupá a klesá o mnoho metrů.",
+    "source_url": "https://en.wikipedia.org/wiki/Bay_of_Fundy",
+    "source_quote": "The Bay of Fundy is known for its high tidal range.",
+    "voice": "Loď, která ráno pluje, odpoledne sedí na blátě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Bay of Fundy low tide with exposed ocean floor and cliffs, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Chůze po dně oceánu",
+        "fact": "Za odlivu můžeš chodit po dně, kde před pár hodinami byla hluboká voda. Skály a útesy ukazují vrstvy starých usazenin.",
+        "source_url": "https://en.wikipedia.org/wiki/Bay_of_Fundy",
+        "voice": "Moře ti na chvíli půjčí svou podlahu.",
+        "image_prompt": "Photorealistic people-free view of Fundy tidal flats and rocky shore, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tvar zálivu zesiluje příliv",
+        "fact": "Záliv se směrem dovnitř zužuje a mělí. To způsobuje, že přílivová vlna narůstá do výjimečné výšky.",
+        "source_url": "https://en.wikipedia.org/wiki/Bay_of_Fundy",
+        "voice": "Geografie tu hraje na vodu jako na trubku.",
+        "image_prompt": "Photorealistic aerial view of Bay of Fundy coastline, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-canadian-shield",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Kanadský štít",
+    "headline": "Starý kámen uprostřed kontinentu",
+    "fact": "Kanadský štít je obrovská oblast starých hornin. Pokrývá velkou část východní a střední Kanady a je plná jezer, skal a lesů.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_Shield",
+    "voice": "Kámen tady pamatuje doby, kdy ještě nebyli dinosauři.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian Shield landscape with granite rocks, lakes and pine trees, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Jezera mezi skalami",
+        "fact": "Ledovce vyhloubily tisíce jezer a obrousily skály. Krajina je ideální pro kánoe a táboření.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Shield",
+        "voice": "Každé jezero má svou tichou zátoku.",
+        "image_prompt": "Photorealistic canoe-friendly lake in Canadian Shield forest, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jádro severoamerického kontinentu",
+        "fact": "Štít tvoří geologické jádro Severní Ameriky. Horniny patří ke starým horninám planety a ovlivňují tvar celého východu Kanady.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Shield",
+        "voice": "Kontinent stojí na tomto starém základu.",
+        "image_prompt": "Photorealistic rocky Canadian Shield outcrop with forest, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-javorove-lesy",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Javorové lesy",
+    "headline": "Podzim v barvách javoru",
+    "fact": "V jihovýchodní Kanadě rostou rozsáhlé javorové lesy. Na podzim se listy barví do červené, oranžové a žluté a krajina vypadá jako malba.",
+    "source_url": "https://en.wikipedia.org/wiki/Maple",
+    "voice": "Jeden list na vlajce, miliony listů v lese.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian maple forest in peak autumn colors, red and orange leaves, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Šťáva, která se vaří na sirup",
+        "fact": "Na jaře se z javorů sbírá míza a vaří se na javorový sirup. Patří k typickým kanadským chutím.",
+        "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
+        "voice": "Sladká vůně z chaty v lese znamená, že se vaří sirup.",
+        "image_prompt": "Photorealistic maple syrup taps on trees in early spring forest, 16:9"
+      },
+      "kartograf": {
+        "headline": "Les mírného pásma",
+        "fact": "Javorové lesy rostou v mírném podnebí jihovýchodu. Odlišují se od jehličnatého boreálního pásu na severu.",
+        "source_url": "https://en.wikipedia.org/wiki/Maple",
+        "voice": "Čím jižněji, tím víc barev na podzim.",
+        "image_prompt": "Photorealistic mixed maple forest landscape in eastern Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-polarni-medvedi",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Polární medvědi",
+    "headline": "Medvědi u Hudsonova zálivu",
+    "fact": "U města Churchill v Manitobě se polární medvědi na podzim shromažďují a čekají na zamrznutí zálivu. Oblast je známá pozorováním těchto zvířat.",
+    "source_url": "https://en.wikipedia.org/wiki/Churchill,_Manitoba",
+    "voice": "Město, kde mají medvědi přednost na silnici.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic polar bear on tundra near Hudson Bay, autumn, respectful wildlife distance, 16:9",
+    "ll": [
+      -94.17,
+      58.77
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tundra a bílí medvědi",
+        "fact": "Medvědi migrují k pobřeží, když se blíží zima. Pozorují se z bezpečných vozidel speciálně upravených pro tundu.",
+        "source_url": "https://en.wikipedia.org/wiki/Churchill,_Manitoba",
+        "voice": "Bílý medvěd na hnědé tundře vypadá jako duch severu.",
+        "image_prompt": "Photorealistic polar bear walking across autumn tundra, Hudson Bay area, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice lesa a arktického moře",
+        "fact": "Churchill leží na přechodu boreálního lesa a arktického pobřeží. Led na Hudsonově zálivu je pro medvědy důležitý k lovu tuleňů.",
+        "source_url": "https://en.wikipedia.org/wiki/Churchill,_Manitoba",
+        "voice": "Když zamrzne záliv, medvědi dostanou svou silnici.",
+        "image_prompt": "Photorealistic Hudson Bay coastline near Churchill with tundra, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-priroda-prerie",
+    "country": "Kanada",
+    "section": "Příroda",
+    "topic": "Prérie",
+    "headline": "Obilné moře uprostřed země",
+    "fact": "Kanadské prérie v Albertě, Saskatchewanu a Manitobě jsou rozsáhlé roviny. Pěstuje se tu pšenice, řepka a další plodiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_Prairies",
+    "voice": "Obzor je tak rovný, že vidíš bouřku přicházet hodiny dopředu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian prairie wheat fields under big sky, no people, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pole až na kraj světa",
+        "fact": "Cesty vedou rovně desítky kilometrů. V létě vlní vítr obilí jako vodu na jezeře.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Prairies",
+        "voice": "Vítr tady má prostor, aby si zazpíval.",
+        "image_prompt": "Photorealistic golden wheat field on Canadian prairie, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sýpka země",
+        "fact": "Prérie leží ve srážkovém stínu Skalistých hor. Úrodná půda a velké pozemky z nich udělaly zemědělské srdce Kanady.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Prairies",
+        "voice": "Hory seberou déšť, prérie sklidí obilí.",
+        "image_prompt": "Photorealistic aerial prairie landscape with grain elevators, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-prvni-narody",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "První národy",
+    "headline": "Původní obyvatelé země",
+    "fact": "První národy jsou domorodé národy Kanady mimo Inuity a Métise. Žijí po celé zemi a mají vlastní jazyky, tradice a příběhy.",
+    "source_url": "https://en.wikipedia.org/wiki/First_Nations_in_Canada",
+    "voice": "Než přišly lodě, už tady zněly písně a příběhy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Indigenous totem poles in Pacific Northwest forest setting, Canada, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Totemy a dlouhé domy",
+        "fact": "Na pacifickém pobřeží jsou známé totemové sloupy. Jinde se stavěly dlouhé domy nebo týpí podle prostředí.",
+        "source_url": "https://en.wikipedia.org/wiki/First_Nations_in_Canada",
+        "voice": "Každý vyřezaný obličej na totemu má své jméno a příběh.",
+        "image_prompt": "Photorealistic close view of carved totem pole details, 16:9"
+      },
+      "kartograf": {
+        "headline": "Národy od oceánu k oceánu",
+        "fact": "Různé skupiny se přizpůsobily pobřeží, prériím, lesům i arktickým podmínkám. Jejich území pokrývala celý kontinent dlouho před kolonizací.",
+        "source_url": "https://en.wikipedia.org/wiki/First_Nations_in_Canada",
+        "voice": "Mapa domorodých národů je starší než mapa provincií.",
+        "image_prompt": "Photorealistic diverse Canadian landscapes representing Indigenous territories, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-inuité",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "Inuité",
+    "headline": "Lidé dalekého severu",
+    "fact": "Inuité žijí v arktických oblastech Kanady. Tradičně lovili tuleně, velryby a karibu a stavěli příbytky z sněhu i kůží.",
+    "source_url": "https://en.wikipedia.org/wiki/Inuit",
+    "voice": "V krajině bez stromů umí postavit dům ze sněhu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Arctic landscape with traditional Inuit inuksuk stone marker, Canada, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Inuksuk – kamenný ukazatel",
+        "fact": "Inuksuk je kamenná hromada ve tvaru člověka. Slouží jako orientační bod a symbol v arktické krajině.",
+        "source_url": "https://en.wikipedia.org/wiki/Inuit",
+        "voice": "Kámen ukazuje cestu tam, kde nejsou cesty.",
+        "image_prompt": "Photorealistic inuksuk stone structure on Arctic tundra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Život na okraji ledového oceánu",
+        "fact": "Inuitská sídla leží podél arktického pobřeží. Znalost ledu, zvířat a počasí byla klíčová pro přežití.",
+        "source_url": "https://en.wikipedia.org/wiki/Inuit",
+        "voice": "Moře a led jsou tady spíž i silnice.",
+        "image_prompt": "Photorealistic Arctic coastal community landscape, Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-francouzsti-kanadane",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "Francouzští Kanaďané",
+    "headline": "Francouzština v srdci Severní Ameriky",
+    "fact": "Francouzští Kanaďané tvoří významnou část obyvatelstva, hlavně v Quebecu. Udržují francouzský jazyk, kulturu a tradice.",
+    "source_url": "https://en.wikipedia.org/wiki/French_Canadians",
+    "voice": "V Americe můžeš objednat croissant a slyšet pure laine francouzštinu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Quebec City street with French-language signs and historic architecture, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Bonjour a poutine",
+        "fact": "V Quebecu tě přivítají francouzsky. Kultura se projevuje v hudbě, kuchyni i slavnostech.",
+        "source_url": "https://en.wikipedia.org/wiki/French_Canadians",
+        "voice": "Jedno bonjour a najednou jsi v jiné části kontinentu.",
+        "image_prompt": "Photorealistic Montreal or Quebec cafe terrace with French Canadian atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dědictví Nové Francie",
+        "fact": "Kořeny sahají k francouzské kolonizaci údolí Svatého Vavřince. Jazyk a kultura se udržely i po britském převzetí.",
+        "source_url": "https://en.wikipedia.org/wiki/French_Canadians",
+        "voice": "Řeka přinesla francouzštinu a ta už zůstala.",
+        "image_prompt": "Photorealistic St. Lawrence valley landscape with churches and farms, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-metisove",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "Métisové",
+    "headline": "Národ na křižovatce kultur",
+    "fact": "Métisové jsou domorodý národ vzniklý smíšením evropských a domorodých předků. Mají vlastní historii, vlajku a tradice v prérijních oblastech.",
+    "source_url": "https://en.wikipedia.org/wiki/Métis",
+    "voice": "Z dvou světů vznikl třetí, který patří jen jim.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Métis sash and cultural symbols on wooden background, respectful still life, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Šála a housle",
+        "fact": "Typická je barevná tkaná šála a živá hudba s houslemi. Tradice se předávají na slavnostech a v komunitách.",
+        "source_url": "https://en.wikipedia.org/wiki/Métis",
+        "voice": "Šála není jen ozdoba, je to znak identity.",
+        "image_prompt": "Photorealistic colorful Métis sash detail, 16:9"
+      },
+      "kartograf": {
+        "headline": "Lidé prérií a obchodních cest",
+        "fact": "Métisové hráli důležitou roli v obchodu s kožešinami a osidlování západu. Jejich komunita se rozkládá hlavně v prérijních provinciích.",
+        "source_url": "https://en.wikipedia.org/wiki/Métis",
+        "voice": "Kudy šly kožešiny, tudy vznikala nová kultura.",
+        "image_prompt": "Photorealistic Canadian prairie landscape linked to Métis history, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-multiculturalismus",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "Multikulturalismus",
+    "headline": "Země mnoha původů",
+    "fact": "Kanada oficiálně podporuje multikulturalismus. Ve velkých městech žijí lidé z celého světa a zachovávají své jazyky, jídla a slavnosti.",
+    "source_url": "https://en.wikipedia.org/wiki/Multiculturalism_in_Canada",
+    "voice": "V jednom metru slyšíš pět jazyků a voníš třemi kuchyněmi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic diverse Toronto or Vancouver street market with international foods and signs, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Čtvrti plné chutí světa",
+        "fact": "V Torontu, Vancouveru nebo Montrealu najdeš čínské, indické, italské i karibské čtvrti. Festivaly slaví kultury z celého světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Multiculturalism_in_Canada",
+        "voice": "Oběd může začít v Tokiu a skončit v Bejrútu – na jedné ulici.",
+        "image_prompt": "Photorealistic colorful multicultural festival street scene in Canadian city, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přistěhovalectví formuje města",
+        "fact": "Velká města rostou díky přistěhovalcům. Multikulturalismus je součástí moderní kanadské identity vedle domorodých a evropských kořenů.",
+        "source_url": "https://en.wikipedia.org/wiki/Multiculturalism_in_Canada",
+        "voice": "Mapa města je i mapou světových příběhů.",
+        "image_prompt": "Photorealistic aerial view of diverse Canadian urban neighborhood, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-kovbojove",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "Kovbojové a ranče",
+    "headline": "Západní život na prériích",
+    "fact": "V Albertě a dalších prérijních oblastech žije tradice rančů a rodeo. Kovbojská kultura je součástí západokanadské identity.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_cowboy",
+    "voice": "Klobouk, kůň a široký obzor – to je prérijní uniforma.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian ranch landscape with horses and prairie, Alberta style, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rodeo a kalgaryjský duch",
+        "fact": "Calgary Stampede je slavná show s rodeem, přehlídkami a westernovou atmosférou. Lidé nosí klobouky a slaví tradici.",
+        "source_url": "https://en.wikipedia.org/wiki/Calgary_Stampede",
+        "voice": "Na týden se celé město obuje do kovbojských bot.",
+        "image_prompt": "Photorealistic rodeo arena atmosphere in Alberta, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od otevřených pastvin k rančům",
+        "fact": "Po osídlení prérií vznikly velké ranče na chov dobytka. Krajina a klima podporují pastevectví dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_cowboy",
+        "voice": "Kde končí les, začíná země koní a stád.",
+        "image_prompt": "Photorealistic open prairie ranch with cattle under big sky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-rybari",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "Pobřežní rybáři",
+    "headline": "Lidé, kteří žijí z moře",
+    "fact": "Na atlantickém i pacifickém pobřeží žijí komunity rybářů. Loví tresky, lososy, humry a další plody moře.",
+    "source_url": "https://en.wikipedia.org/wiki/Fishing_industry_in_Canada",
+    "voice": "Ráno voní slaná voda a čerstvé ryby na molu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian fishing harbor with colorful boats, Atlantic or Pacific coast, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Barevné lodě v přístavu",
+        "fact": "V malých přístavech kotví barevné rybářské lodě. Na molu se prodává čerstvý úlovek a vyprávějí se příběhy o bouřích.",
+        "source_url": "https://en.wikipedia.org/wiki/Fishing_industry_in_Canada",
+        "voice": "Každá loď má jméno a každou zná celá vesnice.",
+        "image_prompt": "Photorealistic close view of fishing boats in Canadian harbor, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dva oceány, různé úlovky",
+        "fact": "Atlantik nabízí jiné druhy než Pacifik. Rybářské vesnice formovaly pobřežní kulturu od Newfoundlandu po Britskou Kolumbii.",
+        "source_url": "https://en.wikipedia.org/wiki/Fishing_industry_in_Canada",
+        "voice": "Od východu k západu chutná moře jinak.",
+        "image_prompt": "Photorealistic coastal fishing village landscape in Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-lide-horolezci",
+    "country": "Kanada",
+    "section": "Lidé",
+    "topic": "Horalé a průzkumníci",
+    "headline": "Lidé hor a divočiny",
+    "fact": "V horských oblastech žijí a pracují průvodci, strážci parků a milovníci divočiny. Tradice průzkumu severu sahá hluboko do historie.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
+    "voice": "Batoh, mapa a respekt k medvědovi – základní výbava.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic mountain guide gear and trail in Canadian Rockies, no people focus on landscape, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Stezky a chaty v horách",
+        "fact": "Horské chaty a značení stezek pomáhají turistům. Místní znají počasí, laviny i chování zvěře.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
+        "voice": "Dobrá rada od strážce parku vydá za celý batoh.",
+        "image_prompt": "Photorealistic mountain hiking trail with alpine hut in Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od průzkumníků k parkům",
+        "fact": "Průzkum hor souvisel s obchodem s kožešinami a stavbou železnice. Dnes je divočina chráněna v národních parcích.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
+        "voice": "Cesty, které hledaly zlato, dnes vedou k výhledům.",
+        "image_prompt": "Photorealistic historic mountain pass landscape in Canadian Rockies, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-hokej",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Hokej",
+    "headline": "Národní vášeň na ledě",
+    "fact": "Lední hokej je v Kanadě součástí kultury. Hraje se na stadionech, rybnících i dvorech a sleduje ho celá země.",
+    "source_url": "https://en.wikipedia.org/wiki/Hockey_in_Canada",
+    "voice": "Když padne gól v prodloužení, křičí celá ulice.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic outdoor ice rink in Canadian winter with hockey nets, no people, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hokej na zamrzlém rybníku",
+        "fact": "Děti se učí bruslit brzy. Venkovní kluziště a rybníky jsou v zimě plné hráčů s hokejkami.",
+        "source_url": "https://en.wikipedia.org/wiki/Hockey_in_Canada",
+        "voice": "Nejlepší hřiště je to, které zamrzne samo.",
+        "image_prompt": "Photorealistic frozen pond hockey scene in Canadian countryside, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport zima stvořený",
+        "fact": "Dlouhé zimy a dostatek ledu pomohly hokeji stát se národním sportem. Kluby a ligy spojují města od pobřeží k pobřeží.",
+        "source_url": "https://en.wikipedia.org/wiki/Hockey_in_Canada",
+        "voice": "Zima dala Kanadě hřiště zdarma.",
+        "image_prompt": "Photorealistic Canadian city hockey arena exterior in winter, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-javorovy-sirup",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Javorový sirup",
+    "headline": "Sladká tradice z jara",
+    "fact": "Výroba javorového sirupu je tradiční jarní činností. Míza se sbírá z javorů a odpařuje se na hustý sladký sirup.",
+    "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
+    "voice": "Vůně vařícího se sirupu je vůní kanadského jara.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic maple syrup bottles and pancakes, Canadian cabin style, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Návštěva v cukrovaru",
+        "fact": "V javorových hájích se pořádají dny otevřených dveří. Můžeš ochutnat čerstvý sirup na sněhu nebo palačinkách.",
+        "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
+        "voice": "Sirup na sněhu chutná jako sladká zima.",
+        "image_prompt": "Photorealistic maple sugar shack with steam and buckets on trees, 16:9"
+      },
+      "kartograf": {
+        "headline": "Quebec – srdce sirupu",
+        "fact": "Většina světové produkce javorového sirupu pochází z Quebecu. Chladné noci a teplé dny na jaře spouštějí tok mízy.",
+        "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
+        "voice": "Počasí musí hrát správnou melodii, aby stromy pustily šťávu.",
+        "image_prompt": "Photorealistic Quebec maple forest in early spring, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-powwow",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Powwow",
+    "headline": "Tanec a bubny prvních národů",
+    "fact": "Powwow je setkání domorodých národů s tanci, bubny, písněmi a řemesly. Slaví kulturu a společenství.",
+    "source_url": "https://en.wikipedia.org/wiki/Pow_wow",
+    "voice": "Bubny bijí jako srdce shromáždění.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic powwow grounds with colorful regalia and drums, respectful cultural scene, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Barevné regálie a kruhy tance",
+        "fact": "Tanečníci nosí propracované oděvy s peřím, korálky a střapci. Tančí se v kruhu za doprovodu bubnů.",
+        "source_url": "https://en.wikipedia.org/wiki/Pow_wow",
+        "voice": "Každý krok má rytmus a každý rytmus má příběh.",
+        "image_prompt": "Photorealistic close detail of Indigenous dance regalia feathers and beads, 16:9"
+      },
+      "kartograf": {
+        "headline": "Setkání napříč územím",
+        "fact": "Powwow se konají po celé Kanadě a Spojených státech. Spojují různé národy a předávají tradice mladším generacím.",
+        "source_url": "https://en.wikipedia.org/wiki/Pow_wow",
+        "voice": "Kultura cestuje s lidmi a vrací se v kruhu tance.",
+        "image_prompt": "Photorealistic outdoor powwow gathering space in Canadian landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-canada-day",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Den Kanady",
+    "headline": "Svátek červené javorové vlajky",
+    "fact": "Den Kanady se slaví prvního července. Lidé vyvěšují vlajky, pořádají ohňostroje a slaví vznik konfederace.",
+    "source_url": "https://en.wikipedia.org/wiki/Canada_Day",
+    "source_quote": "Canada Day is the national day of Canada. A federal statutory holiday, it celebrates the anniversary of Canadian Confederation which occurred on July 1, 1867.",
+    "voice": "Celá země najednou zčervená a bělá.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian flags on Parliament Hill on Canada Day, festive atmosphere, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pikniky a ohňostroje",
+        "fact": "V parcích se konají koncerty a pikniky. Večer osvětlí oblohu ohňostroje v mnoha městech.",
+        "source_url": "https://en.wikipedia.org/wiki/Canada_Day",
+        "voice": "Vlajka na batohu a zmrzlina v ruce – letní klasika.",
+        "image_prompt": "Photorealistic Canada Day picnic scene with flags in park, 16:9"
+      },
+      "kartograf": {
+        "headline": "Výročí spojení provincií",
+        "fact": "Svátek připomíná spojení zakládajících provincií do Konfederace. Postupně se přidávaly další až k dnešní podobě země.",
+        "source_url": "https://en.wikipedia.org/wiki/Canada_Day",
+        "voice": "Z několika kolonií jedna země pod jednou vlajkou.",
+        "image_prompt": "Photorealistic historic and modern Canadian flags display, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-winterlude",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Zimní festivaly",
+    "headline": "Když zima slaví",
+    "fact": "V Ottawě a Quebecu se konají velké zimní festivaly. Lidé bruslí na kanálech, staví sněhové sochy a užívají si chlad.",
+    "source_url": "https://en.wikipedia.org/wiki/Winterlude",
+    "voice": "Mráz není nepřítel, je to pozvánka na party.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Rideau Canal skateway in Ottawa with ice sculptures, winter, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Bruslení na kanálu",
+        "fact": "Rideau Canal se v zimě mění v dlouhou bruslařskou dráhu. Lidé si dávají pauzu na beaver tails – smažené těsto s skořicí.",
+        "source_url": "https://en.wikipedia.org/wiki/Winterlude",
+        "voice": "Brusle, horká čokoláda a úsměv i při minus dvaceti.",
+        "image_prompt": "Photorealistic ice skating on frozen canal with winter tents, Ottawa, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zima jako součást identity",
+        "fact": "Dlouhé zimy formovaly kulturu zábavy i sportu. Festivaly mění chlad v příležitost k setkávání.",
+        "source_url": "https://en.wikipedia.org/wiki/Winterlude",
+        "voice": "Když nemůžeš zimu porazit, uspořádej s ní slavnost.",
+        "image_prompt": "Photorealistic Quebec City winter carnival atmosphere with ice palace, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-thanksgiving",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Díkůvzdání",
+    "headline": "Poděkování za úrodu",
+    "fact": "Kanadské díkůvzdání se slaví v říjnu. Rodiny se scházejí u stolu s krůtou, dýní a podzimními pokrmy.",
+    "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)",
+    "voice": "Stůl plný jídla a vděčnost za další rok.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian Thanksgiving table with autumn decorations and roast, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rodinný stůl na podzim",
+        "fact": "Svátky jsou spíš klidné a rodinné. Lidé jezdí za příbuznými a užívají si barevný podzim.",
+        "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)",
+        "voice": "Nejdřív listí, pak pečeně, pak společné příběhy.",
+        "image_prompt": "Photorealistic autumn Canadian countryside with Thanksgiving feel, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dřívější sklizeň než na jihu",
+        "fact": "V Kanadě se slaví dříve než v USA, protože sklizeň končí dříve kvůli chladnějšímu klimatu.",
+        "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)",
+        "voice": "Kalendář úrody napsal datum svátku.",
+        "image_prompt": "Photorealistic Canadian harvest fields in autumn, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-bilingualismus",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Dvojjazyčnost",
+    "headline": "Angličtina a francouzština vedle sebe",
+    "fact": "Kanada má dvě úřední jazyky – angličtinu a francouzštinu. Na federální úrovni se používají oba a mnoho nápisů je dvojjazyčných.",
+    "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+    "voice": "Stop a arrêt ukazují na stejnou křižovatku.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic bilingual English-French street signs in Canadian city, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Nápisy ve dvou jazycích",
+        "fact": "V Ottawě a na federálních institucích vidíš všechno dvakrát. V Quebecu převažuje francouzština, jinde angličtina.",
+        "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+        "voice": "Jeden význam, dvě slova, jedna země.",
+        "image_prompt": "Photorealistic Parliament buildings with bilingual signage, Ottawa, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyková mapa země",
+        "fact": "Francouzština je silná v Quebecu a částech New Brunswicku. Angličtina dominuje jinde, ale dvojjazyčnost spojuje federaci.",
+        "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+        "voice": "Jazyky se potkávají na mostech přes řeku Ottawa.",
+        "image_prompt": "Photorealistic map-style image of Canadian language regions, soft educational, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-kultura-indigenous-art",
+    "country": "Kanada",
+    "section": "Kultura & tradice",
+    "topic": "Domorodé umění v životě",
+    "headline": "Umění, které žije dál",
+    "fact": "Domorodé umění – řezba, korálkování, malba a textil – je součástí každodenní kultury. Předává příběhy a spojení s přírodou.",
+    "source_url": "https://en.wikipedia.org/wiki/Indigenous_art_of_the_Americas",
+    "voice": "Příběh vyřezaný do dřeva přežije generace.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Indigenous Canadian art pieces including carving and beadwork, museum style, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Galerie a trhy s příběhy",
+        "fact": "V muzeích i na trzích najdeš autentické práce umělců. Každý motiv má často hlubší význam.",
+        "source_url": "https://en.wikipedia.org/wiki/Indigenous_art_of_the_Americas",
+        "voice": "Koupit umění znamená podpořit i příběh.",
+        "image_prompt": "Photorealistic display of Pacific Northwest Indigenous carvings, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umění z různých ekosystémů",
+        "fact": "Pobřežní národy používají cedr a mořské motivy, prérijní pracují s kůží a korálky, arktické s kostí a kamenem.",
+        "source_url": "https://en.wikipedia.org/wiki/Indigenous_art_of_the_Americas",
+        "voice": "Materiál určuje krajina, příběh určují lidé.",
+        "image_prompt": "Photorealistic variety of Indigenous materials from different Canadian regions, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-group-of-seven",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Group of Seven",
+    "headline": "Malíři, kteří objevili kanadskou krajinu",
+    "fact": "Group of Seven byla skupina malířů, kteří zachytili divokou kanadskou přírodu. Jejich obrazy jezer, skal a stromů formovaly pohled na zemi.",
+    "source_url": "https://en.wikipedia.org/wiki/Group_of_Seven_(artists)",
+    "voice": "Namalovali Kanadu tak, jak ji cítili – divokou a silnou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Group of Seven style landscape painting of Canadian Shield lake and pines, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Barvy severu na plátně",
+        "fact": "Malíři jezdili do divočiny a malovali přímo v terénu. Jejich díla najdeš v galeriích v Torontu a dalších městech.",
+        "source_url": "https://en.wikipedia.org/wiki/Group_of_Seven_(artists)",
+        "voice": "Štětec a batoh – výbava na objevování země.",
+        "image_prompt": "Photorealistic art gallery wall with Canadian landscape paintings, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umění, které vytvořilo obraz národa",
+        "fact": "Skupina pomohla vytvořit vizuální identitu Kanady oddělenou od Evropy. Krajina se stala hrdinou obrazů.",
+        "source_url": "https://en.wikipedia.org/wiki/Group_of_Seven_(artists)",
+        "voice": "Místo zámků malovali skály a vítr.",
+        "image_prompt": "Photorealistic Canadian wilderness scene in painting style, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-inuitske-sochy",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Inuitské sochařství",
+    "headline": "Kámen, který ožil",
+    "fact": "Inuitští sochaři vyřezávají z kamene, kosti a mroží klu figury zvířat a lidí. Sochy jsou známé po celém světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Inuit_art",
+    "voice": "Z šedého kamene vystoupí medvěd nebo lovec.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Inuit stone carvings of polar bear and hunter, soft museum light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hladký kámen a silné tvary",
+        "fact": "Sochy mají zjednodušené, silné linie. Často zobrazují polární medvědy, tuleně, lovce nebo matky s dětmi.",
+        "source_url": "https://en.wikipedia.org/wiki/Inuit_art",
+        "voice": "Méně detailů, více síly – to je kouzlo těchto soch.",
+        "image_prompt": "Photorealistic close-up of polished Inuit soapstone carving, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umění z Arktidy do světa",
+        "fact": "Sochařství se rozvinulo v arktických komunitách a stalo se důležitým zdrojem obživy i kulturní hrdosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Inuit_art",
+        "voice": "Z tundry putuje umění až do galerií velkoměst.",
+        "image_prompt": "Photorealistic Arctic community art workshop setting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-totemy",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Totemové sloupy",
+    "headline": "Vyřezávané příběhy pobřeží",
+    "fact": "Totemové sloupy pacifických domorodých národů zobrazují rodinné erby, zvířata a legendy. Jsou vyřezané z cedru a dosahují velké výšky.",
+    "source_url": "https://en.wikipedia.org/wiki/Totem_pole",
+    "voice": "Celý rodokmen se vejde na jeden kmen stromu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic tall totem poles in Pacific Northwest coastal forest, Canada, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zvířata, která hlídají vesnici",
+        "fact": "Na sloupech jsou orli, medvědi, havrani a velryby. Každá postava má svůj význam v příběhu rodu.",
+        "source_url": "https://en.wikipedia.org/wiki/Totem_pole",
+        "voice": "Havran nahoře vidí dál než všichni dole.",
+        "image_prompt": "Photorealistic detailed carvings on totem pole, close view, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umění deštného pobřeží",
+        "fact": "Cedr roste v mírném deštném lese Britské Kolumbie. Dostatek velkého dřeva umožnil vznik monumentálních sloupů.",
+        "source_url": "https://en.wikipedia.org/wiki/Totem_pole",
+        "voice": "Les dal dřevo, lidé dali příběh.",
+        "image_prompt": "Photorealistic coastal rainforest with totem poles, British Columbia, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-hudba",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Kanadská hudba",
+    "headline": "Od folků k světovým pódiím",
+    "fact": "Kanada má bohatou hudební scénu od lidových písní po moderní pop a rock. Umělci často čerpají z krajiny a příběhů země.",
+    "source_url": "https://en.wikipedia.org/wiki/Music_of_Canada",
+    "voice": "Hudba voní borovicemi i městskými ulicemi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic acoustic guitar and Canadian landscape through window, musical atmosphere, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Folk u ohně i velké arény",
+        "fact": "Na východě zní keltské vlivy, na prériích country, ve městech jazz a pop. Festivaly přitahují posluchače z celé země.",
+        "source_url": "https://en.wikipedia.org/wiki/Music_of_Canada",
+        "voice": "Jeden večer u ohně, druhý na stadionu – hudba se vejde všude.",
+        "image_prompt": "Photorealistic outdoor music festival stage in Canadian setting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zvuky od Atlantiku k Pacifiku",
+        "fact": "Různé regiony mají odlišné hudební tradice. Dvojjazyčnost přidává francouzské šansony i anglické balady.",
+        "source_url": "https://en.wikipedia.org/wiki/Music_of_Canada",
+        "voice": "Stejná země, jiné rytmy podle provincie.",
+        "image_prompt": "Photorealistic collage-style instruments representing Canadian regions, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-literatura",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Literatura",
+    "headline": "Příběhy z lesů i měst",
+    "fact": "Kanadská literatura popisuje divočinu, malá města i přistěhovalecké osudy. Spisovatelé píší anglicky i francouzsky.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_literature",
+    "voice": "Kniha ti může vonět sněhem, i když ji čteš v létě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic stack of books with Canadian landscape postcard, cozy reading atmosphere, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Příběhy, které cítíš na kůži",
+        "fact": "Mnoho knih zachycuje zimu, izolaci i sílu komunity. Čtenář prožívá krajinu skrze postavy.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_literature",
+        "voice": "Nejlepší popisy zimy napíšu ti, kdo ji opravdu přežil.",
+        "image_prompt": "Photorealistic cabin window view of snowy Canadian forest, literary mood, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dvě literatury, jedna země",
+        "fact": "Anglická a francouzská literární tradice se vyvíjely paralelně. Obě hledají odpověď na otázku, co znamená být Kanaďanem.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_literature",
+        "voice": "Dva jazyky, dvojí pohled na stejné hory a jezera.",
+        "image_prompt": "Photorealistic bilingual bookstore shelf in Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-architektura",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Architektura",
+    "headline": "Od gotiky k mrakodrapům",
+    "fact": "Kanadská architektura sahá od gotických parlamentních budov přes zámecké hotely až po moderní skleněné věže.",
+    "source_url": "https://en.wikipedia.org/wiki/Architecture_of_Canada",
+    "voice": "Hrad vedle skleněné věže – historie a budoucnost na jedné ulici.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic mix of historic Canadian château-style hotel and modern skyline, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zámecké hotely u železnice",
+        "fact": "Velké železniční hotely ve stylu zámků vznikaly, aby přilákaly turisty do hor a měst. Dodnes jsou ikonami.",
+        "source_url": "https://en.wikipedia.org/wiki/Architecture_of_Canada",
+        "voice": "Nocleh v zámku, ráno výhled na ledovec.",
+        "image_prompt": "Photorealistic Chateau-style hotel in Canadian Rockies, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stavby přizpůsobené klimatu",
+        "fact": "Architektura musí snášet mráz, sníh i vítr. Od iglú po moderní izolované budovy se lidé učí stavět chytře.",
+        "source_url": "https://en.wikipedia.org/wiki/Architecture_of_Canada",
+        "voice": "Dům musí přežít zimu, jinak nepřežije nic.",
+        "image_prompt": "Photorealistic Canadian building in heavy snow, architectural detail, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-film",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Film a televize",
+    "headline": "Příběhy na plátně",
+    "fact": "Kanada má vlastní filmový a televizní průmysl. Točí se tu domácí příběhy i velké zahraniční produkce díky krajině a městům.",
+    "source_url": "https://en.wikipedia.org/wiki/Cinema_of_Canada",
+    "voice": "Hory a města hrají ve filmech často hlavní roli.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic film camera on Canadian mountain location, cinematic atmosphere, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Lokace, které znáš z obrazovky",
+        "fact": "Vancouver a Toronto často představují jiná města světa. Divák netuší, že scéna vznikla v Kanadě.",
+        "source_url": "https://en.wikipedia.org/wiki/Cinema_of_Canada",
+        "voice": "Toronto umí hrát New York a Vancouver umí skoro všechno.",
+        "image_prompt": "Photorealistic Vancouver street used as film set atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina jako ateliér",
+        "fact": "Od Skalistých hor po atlantické pobřeží nabízí země rozmanité kulisy. To podporuje filmový průmysl v několika provinciích.",
+        "source_url": "https://en.wikipedia.org/wiki/Cinema_of_Canada",
+        "voice": "Celá země je jeden velký filmový ateliér pod širým nebem.",
+        "image_prompt": "Photorealistic diverse Canadian landscapes suitable for filming, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-umeni-tanec",
+    "country": "Kanada",
+    "section": "Umění",
+    "topic": "Tanec",
+    "headline": "Od lidových kroků k moderní scéně",
+    "fact": "V Kanadě se tančí lidové tance domorodých národů, francouzské a skotské tradice i moderní balet a současný tanec.",
+    "source_url": "https://en.wikipedia.org/wiki/Dance_in_Canada",
+    "voice": "Nohy vyprávějí příběhy, které ústa někdy neřeknou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic dance performance stage with Canadian cultural diversity feel, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Festivaly plné pohybu",
+        "fact": "Na kulturních slavnostech uvidíš tradiční i moderní choreografie. Tanec spojuje generace a komunity.",
+        "source_url": "https://en.wikipedia.org/wiki/Dance_in_Canada",
+        "voice": "Když začnou bubny nebo housle, nohy se samy zvednou.",
+        "image_prompt": "Photorealistic folk dance at Canadian cultural festival, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tanec jako mapa kultur",
+        "fact": "Každá přistěhovalecká vlna přinesla nové tance. Domorodé, evropské i světové vlivy tvoří pestrou scénu.",
+        "source_url": "https://en.wikipedia.org/wiki/Dance_in_Canada",
+        "voice": "Pódium je menší verze celé země.",
+        "image_prompt": "Photorealistic multicultural dance workshop in Canadian city, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-hokej",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Lední hokej",
+    "headline": "Hra, která definuje zimu",
+    "fact": "Lední hokej je velmi oblíbený sport v Kanadě. Od dětí na rybníku až po profesionální ligy spojuje celou zemi.",
+    "source_url": "https://en.wikipedia.org/wiki/Hockey_in_Canada",
+    "voice": "Puk, hokejka a sen o gólu – to je kanadské dětství.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic ice hockey rink with Canadian arena atmosphere, empty ice, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Od dvorku na stadion",
+        "fact": "Mnoho hráčů začíná na zamrzlých jezerech. Později přecházejí do organizovaných lig a snů o NHL.",
+        "source_url": "https://en.wikipedia.org/wiki/Hockey_in_Canada",
+        "voice": "Nejlepší trénink je ten, když ti zmrznou prsty, ale nechceš jít domů.",
+        "image_prompt": "Photorealistic kids' outdoor hockey on frozen lake, Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport napříč provinciemi",
+        "fact": "Hokej se hraje od Newfoundlandu po Britskou Kolumbii. Klima a kultura z něj udělaly společný jazyk země.",
+        "source_url": "https://en.wikipedia.org/wiki/Hockey_in_Canada",
+        "voice": "Kde je led, tam je hokej – a led je skoro všude.",
+        "image_prompt": "Photorealistic map-like collage of Canadian hockey rinks, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-lacrosse",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Lakros",
+    "headline": "Původní národní sport",
+    "fact": "Lakros vznikl u domorodých národů a stal se kanadským národním letním sportem. Hraje se s holemi a míčkem.",
+    "source_url": "https://en.wikipedia.org/wiki/Lacrosse",
+    "voice": "Míček lítá vzduchem a hůl je jako prodloužená ruka.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic lacrosse sticks and ball on green field, Canadian sports setting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rychlá hra s sítí na holi",
+        "fact": "Hráči chytají a přihrávají míček pomocí hole s síťkou. Hra je rychlá a vyžaduje obratnost.",
+        "source_url": "https://en.wikipedia.org/wiki/Lacrosse",
+        "voice": "Kdo ovládá hůl, ovládá tempo zápasu.",
+        "image_prompt": "Photorealistic lacrosse game action on field, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od rituálu k modernímu sportu",
+        "fact": "Původně měl lakros i rituální a společenský význam u domorodých národů. Evropané ho převzali a upravili pravidla.",
+        "source_url": "https://en.wikipedia.org/wiki/Lacrosse",
+        "voice": "Hra, která přežila staletí a změnila hřiště.",
+        "image_prompt": "Photorealistic historic and modern lacrosse equipment display, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-curling",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Curling",
+    "headline": "Kámen, koště a led",
+    "fact": "Curling je oblíbený zimní sport, při kterém se po ledě posílají těžké kameny. Hráči košťaty upravují dráhu kamene.",
+    "source_url": "https://en.wikipedia.org/wiki/Curling",
+    "voice": "Vypadá to klidně, ale vevnitř to vře strategiemi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic curling rink with stones and brooms on ice, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Šachy na ledě",
+        "fact": "Každý hod je promyšlený. Tým rozhoduje, kam kámen poslat a jak mu upravit cestu košťaty.",
+        "source_url": "https://en.wikipedia.org/wiki/Curling",
+        "voice": "Koště je tady důležitější než v domácnosti.",
+        "image_prompt": "Photorealistic close-up of curling stone on ice, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport z Evropy, domov v Kanadě",
+        "fact": "Curling přišel ze Skotska, ale v Kanadě našel obrovskou popularitu. Kluby jsou v mnoha městech a vesnicích.",
+        "source_url": "https://en.wikipedia.org/wiki/Curling",
+        "voice": "Skotský kámen si zamiloval kanadský led.",
+        "image_prompt": "Photorealistic community curling club interior in Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-fotbal-canadian",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Kanadský fotbal",
+    "headline": "Fotbal s delším hřištěm",
+    "fact": "Kanadský fotbal se podobá americkému, ale má vlastní pravidla a delší hřiště. Hraje se profesionálně i na univerzitách.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_football",
+    "voice": "Stejný míč, jiná pravidla, stejná vášeň.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian football field with goalposts, empty stadium, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zápasy pod širým nebem",
+        "fact": "Sezóna začíná v létě a končí na podzim. Fanoušci chodí v šálách, i když ještě není zima.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_football",
+        "voice": "Když padne touchdown, stadion duní.",
+        "image_prompt": "Photorealistic Canadian football game atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vlastní cesta vedle NHL a MLB",
+        "fact": "Kanadský fotbal si udržel samostatnou ligu a tradici. Je součástí sportovní kultury hlavně na prériích a ve velkých městech.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_football",
+        "voice": "Ne každý fotbal potřebuje být světový, stačí být domácí.",
+        "image_prompt": "Photorealistic prairie city stadium for Canadian football, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-lyzovani",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Lyžování",
+    "headline": "Sjezdovky ve Skalistých horách",
+    "fact": "Kanada nabízí špičkové lyžařské areály ve Skalistých horách i v Quebecu. Sníh, výhledy a dlouhé sjezdovky lákají lyžaře z celého světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Skiing_in_Canada",
+    "voice": "Z lanovky vidíš celý svět – a pak se spustíš dolů.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian ski resort in Rockies with fresh snow and peaks, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Prášek a horský vzduch",
+        "fact": "Střediska jako Whistler nebo Lake Louise nabízejí různé obtížnosti sjezdovek. Po lyžování chutná horká čokoláda báječně.",
+        "source_url": "https://en.wikipedia.org/wiki/Skiing_in_Canada",
+        "voice": "Unavené nohy a šťastný úsměv – typický konec dne na sjezdovce.",
+        "image_prompt": "Photorealistic ski slope with mountain backdrop in Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hory jako přírodní hřiště",
+        "fact": "Skalisté hory a appalačský systém na východě vytvářejí ideální podmínky. Zima je dlouhá a sníh spolehlivý.",
+        "source_url": "https://en.wikipedia.org/wiki/Skiing_in_Canada",
+        "voice": "Geografie napsala jízdní řád pro lyže.",
+        "image_prompt": "Photorealistic aerial ski terrain in Canadian mountains, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-kanoistika",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Kanoistika",
+    "headline": "Pádlo na tisících jezerech",
+    "fact": "Kanoistika a kajaking patří k tradičním způsobům dopravy i sportu. Jezera a řeky Kanadského štítu jsou ideální pro pádlování.",
+    "source_url": "https://en.wikipedia.org/wiki/Canoeing",
+    "voice": "Ticho přeruší jen šplouchnutí pádla.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic canoe on calm Canadian Shield lake at sunrise, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Tábor na břehu jezera",
+        "fact": "Vodáci táboří na ostrůvcích a březích. Večer se vaří na ohni a poslouchá volání lovců.",
+        "source_url": "https://en.wikipedia.org/wiki/Canoeing",
+        "voice": "Nejlepší spánek je po dni stráveném na pádle.",
+        "image_prompt": "Photorealistic lakeside canoe camp in Canadian wilderness, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cesty, které spojovaly kontinent",
+        "fact": "Kánoe používali domorodí obyvatelé i obchodníci s kožešinami. Síť jezer a řek umožnila cestovat hluboko do vnitrozemí.",
+        "source_url": "https://en.wikipedia.org/wiki/Canoeing",
+        "voice": "Než přišly silnice, voda byla dálnice.",
+        "image_prompt": "Photorealistic historic-style canoe route through Canadian lakes, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-baseball",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Baseball",
+    "headline": "Pálka a míček pod letním sluncem",
+    "fact": "Baseball má v Kanadě dlouhou tradici. Hraje se na školách, v místních ligách i profesionálně.",
+    "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Canada",
+    "voice": "Zvuk pálky je zvukem léta na hřišti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic baseball diamond in Canadian park, summer day, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zápas s popcornem",
+        "fact": "Na stadionech se fanoušci baví jídlem, vlnou a povzbuzováním. Děti loví autové míčky za plotem.",
+        "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Canada",
+        "voice": "Jeden chycený míček a máš zážitek na celý život.",
+        "image_prompt": "Photorealistic baseball stadium seats and field in Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport, který přišel z jihu",
+        "fact": "Baseball se rozšířil ze Spojených států, ale v Kanadě zdomácněl. Hraje se od pobřeží k pobřeží v letních měsících.",
+        "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Canada",
+        "voice": "Míček nezná hranici, jen dobrý hod.",
+        "image_prompt": "Photorealistic community baseball field in Canadian town, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-basketball",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Basketbal",
+    "headline": "Koš, který má kanadské kořeny",
+    "fact": "Basketbal vymyslel Kanaďan James Naismith. Dnes se hraje ve školách i profesionálně a má rostoucí popularitu.",
+    "source_url": "https://en.wikipedia.org/wiki/Basketball_in_Canada",
+    "source_quote": "Basketball was invented by Canadian James Naismith.",
+    "voice": "Hra, která dobyla svět, začala v hlavě Kanaďana.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic basketball court with hoop, indoor gym atmosphere, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hřiště na sídlišti",
+        "fact": "Venkovní koše najdeš v parcích a u škol. Mládež hraje po škole a o víkendech.",
+        "source_url": "https://en.wikipedia.org/wiki/Basketball_in_Canada",
+        "voice": "Jeden koš a parta kamarádů stačí na celý večer.",
+        "image_prompt": "Photorealistic outdoor basketball court in Canadian city park, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od tělocvičny do světa",
+        "fact": "Naismith vytvořil hru jako zimní aktivitu. Z Kanady se rozšířila do USA a pak do celého světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Basketball_in_Canada",
+        "voice": "Zimní nápad se stal celoroční vášní planety.",
+        "image_prompt": "Photorealistic historic gymnasium style basketball setting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-sport-atletika-outdoor",
+    "country": "Kanada",
+    "section": "Sport",
+    "topic": "Outdoorové sporty",
+    "headline": "Pohyb v divočině",
+    "fact": "Kanaďané milují turistiku, horolezectví, cyklistiku a kempování. Národní parky nabízejí tisíce kilometrů stezek.",
+    "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
+    "voice": "Nejlepší posilovna má strop z oblohy a podlahu z mechu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic hiking trail in Canadian national park with mountains, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Batoh a mapa",
+        "fact": "Na stezkách potkáš rodiny i zkušené backpackery. Kempy umožňují přespat pod hvězdami.",
+        "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
+        "voice": "Únava z výstupu se vyplatí výhledem.",
+        "image_prompt": "Photorealistic mountain summit view after hike in Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Parky od oceánu k oceánu",
+        "fact": "Síť národních parků chrání různé ekosystémy. Umožňuje lidem poznávat přírodu a zároveň ji zachovat.",
+        "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
+        "voice": "Chráněná krajina je pozvánka i závazek.",
+        "image_prompt": "Photorealistic collage of Canadian national park landscapes, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-anglictina-francouzstina",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Úřední jazyky",
+    "headline": "Dva jazyky, jedna země",
+    "fact": "Angličtina a francouzština jsou úředními jazyky Kanady. Federální služby a mnoho nápisů jsou dvojjazyčné.",
+    "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+    "voice": "Na krabici cereálií čteš recept dvakrát.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hello a bonjour na jedné ulici",
+        "fact": "V Ottawě a New Brunswicku slyšíš oba jazyky běžně. Jinde převažuje jeden z nich.",
+        "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+        "voice": "Pozdrav zvolíš podle toho, co uslyšíš první.",
+        "image_prompt": "Photorealistic bilingual Canadian product packaging and signs, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyková geografie",
+        "fact": "Francouzština dominuje v Quebecu, angličtina ve většině ostatních provincií. Dvojjazyčnost je federální princip.",
+        "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+        "voice": "Hranice provincií jsou i jazykové mapy.",
+        "image_prompt": "Photorealistic educational map of Canadian official languages, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-indigenous",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Domorodé jazyky",
+    "headline": "Jazyky starší než země",
+    "fact": "V Kanadě se mluví desítkami domorodých jazyků. Patří k nim například cree, inuktitut nebo ojibwe a mnoho dalších.",
+    "source_url": "https://en.wikipedia.org/wiki/Indigenous_languages_of_the_Americas",
+    "voice": "Každý jazyk je knihovna příběhů o krajině.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova pro sníh, led a les",
+        "fact": "Domorodé jazyky mají bohatou slovní zásobu pro přírodu. Některá slova se nedají snadno přeložit do angličtiny.",
+        "source_url": "https://en.wikipedia.org/wiki/Indigenous_languages_of_the_Americas",
+        "voice": "Když máš pro sníh více slov, vidíš ho jinak.",
+        "image_prompt": "Photorealistic Indigenous language text on traditional style paper, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyková mapa před kolonizací",
+        "fact": "Před příchodem Evropanů pokrývaly domorodé jazyky celý kontinent. Dnes se mnohé obnovují ve školách a komunitách.",
+        "source_url": "https://en.wikipedia.org/wiki/Indigenous_languages_of_the_Americas",
+        "voice": "Jazyk se vrací tam, odkud ho chtěli vytlačit.",
+        "image_prompt": "Photorealistic Canadian landscape with subtle language revival symbols, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-canadian-english",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Kanadská angličtina",
+    "headline": "Angličtina s vlastním přízvukem",
+    "fact": "Kanadská angličtina má specifická slova a výslovnost. Používá se například „eh“ a některé výrazy sdílí s britskou i americkou angličtinou.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_English",
+    "voice": "Řekneš eh a hned je jasné, odkud jsi.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova, která tě prozradí",
+        "fact": "Kanaďané říkají washroom místo bathroom a toque na zimní čepici. Malé rozdíly dělají velký dojem.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_English",
+        "voice": "Toque není jen čepice, je to kulturní kód.",
+        "image_prompt": "Photorealistic Canadian winter toque and bilingual dictionary, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mezi Británií a Amerikou",
+        "fact": "Kanadská angličtina vznikla z britských kořenů a amerického vlivu. Geografická blízkost USA ji stále formuje.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_English",
+        "voice": "Jazyk bydlí na hranici dvou velkých světů.",
+        "image_prompt": "Photorealistic Canadian classroom with English spelling differences on board, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-joual",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Quebecká francouzština",
+    "headline": "Francouzština s americkým nádechem",
+    "fact": "Quebecká francouzština se liší od evropské výslovností i slovní zásobou. Má vlastní výrazy a živý hovorový styl.",
+    "source_url": "https://en.wikipedia.org/wiki/Quebec_French",
+    "voice": "Stejná francouzština, ale jiná melodie.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova, která v Paříži neznají",
+        "fact": "Některá quebecká slova pocházejí ze starší francouzštiny nebo z angličtiny. Domorodí mluvčí je používají přirozeně.",
+        "source_url": "https://en.wikipedia.org/wiki/Quebec_French",
+        "voice": "Když řekneš char místo voiture, jsi v Quebecu.",
+        "image_prompt": "Photorealistic Quebec street signs in French, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk izolovaný oceánem",
+        "fact": "Oddělení od Francie vedlo k vlastnímu vývoji. Quebec si jazyk pečlivě chrání a rozvíjí.",
+        "source_url": "https://en.wikipedia.org/wiki/Quebec_French",
+        "voice": "Oceán oddělil jazyky, ale ne jejich krásu.",
+        "image_prompt": "Photorealistic St. Lawrence River landscape representing Quebec language region, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-place-names",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Místní názvy",
+    "headline": "Jména z domorodých jazyků",
+    "fact": "Mnoho kanadských názvů pochází z domorodých jazyků. Kanada, Ontario, Manitoba nebo Quebec mají kořeny v těchto jazycích.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_place_names_of_Indigenous_origin_in_Canada",
+    "voice": "Mapa mluví jazyky, které tu byly první.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Co znamená Kanada",
+        "fact": "Slovo Kanada pravděpodobně pochází z irokézského výrazu pro vesnici nebo osadu. Postupně se stalo jménem celé země.",
+        "source_url": "https://en.wikipedia.org/wiki/Name_of_Canada",
+        "voice": "Z vesnice se stala země od oceánu k oceánu.",
+        "image_prompt": "Photorealistic historic map of Canada with Indigenous place names highlighted, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina pojmenovaná původními obyvateli",
+        "fact": "Názvy jezer, řek a provincií často popisují vzhled krajiny nebo důležité události. Jsou živou pamětí domorodých jazyků.",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_place_names_of_Indigenous_origin_in_Canada",
+        "voice": "Každé jméno na mapě může být malý příběh.",
+        "image_prompt": "Photorealistic Canadian lake and forest with place name marker style, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-slang",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Kanadská slovíčka",
+    "headline": "Slova, která znají jen Kanaďané",
+    "fact": "Kanadská angličtina má unikátní výrazy jako toque, loonie, double-double nebo eh. Pomáhají poznat mluvčího.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_English",
+    "voice": "Double-double není tanec, je to káva se dvěma smetanami a cukry.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Objednávka, která tě prozradí",
+        "fact": "V kavárně Tim Hortons objednáš double-double a dostaneš přesně to, co chceš. Loonie a toonie jsou mince.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_English",
+        "voice": "Mince s medvědem a káva s čísly – kanadská klasika.",
+        "image_prompt": "Photorealistic Canadian coins and coffee cup, cultural still life, 16:9"
+      },
+      "kartograf": {
+        "headline": "Slang, který spojuje zemi",
+        "fact": "Tyto výrazy se používají od pobřeží k pobřeží. Vytvářejí pocit společné identity napříč provinciemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_English",
+        "voice": "Jedno eh a jste si najednou blíž.",
+        "image_prompt": "Photorealistic Canadian road trip atmosphere with slang words concept, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-inuktitut",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Inuktitut",
+    "headline": "Jazyk Arktidy",
+    "fact": "Inuktitut je jazyk Inuitů v kanadské Arktidě. Píše se latinkou i speciálním slabičným písmem.",
+    "source_url": "https://en.wikipedia.org/wiki/Inuktitut",
+    "voice": "Jazyk, který umí pojmenovat všechny druhy sněhu a ledu.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slabiky jako obrázky",
+        "fact": "Inuitské písmo používá otočené tvary pro různé samohlásky. Nápisy v Arktidě jsou často dvojjazyčné.",
+        "source_url": "https://en.wikipedia.org/wiki/Inuktitut",
+        "voice": "Písmeno se otočí a změní se celá samohláska.",
+        "image_prompt": "Photorealistic Inuktitut syllabics text on sign in Arctic setting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk napříč Arktidou",
+        "fact": "Inuktitut a příbuzné jazyky se používají od Aljašky po Grónsko. V Kanadě je úředním jazykem v Nunavutu.",
+        "source_url": "https://en.wikipedia.org/wiki/Inuktitut",
+        "voice": "Led a jazyk se táhnou přes celý sever.",
+        "image_prompt": "Photorealistic Arctic community with Inuktitut signage, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jazyk-place-bilingual",
+    "country": "Kanada",
+    "section": "Jazyk & slova",
+    "topic": "Dvojjazyčné nápisy",
+    "headline": "Stop / Arrêt na každé křižovatce",
+    "fact": "V dvojjazyčných oblastech jsou dopravní a informační nápisy ve dvou jazycích. Je to viditelný symbol úřední dvojjazyčnosti.",
+    "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+    "voice": "I červená značka umí být diplomatická.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Čteš dvakrát, jedeš jednou",
+        "fact": "Na značkách Stop/Arrêt nebo na letištích vidíš oba jazyky vedle sebe. Pomáhá to návštěvníkům i místním.",
+        "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+        "voice": "Jedna značka, dva způsoby, jak říct stůj.",
+        "image_prompt": "Photorealistic bilingual Stop Arrêt sign in Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk ve veřejném prostoru",
+        "fact": "Dvojjazyčné nápisy jsou povinné na federální úrovni a v některých provinciích. Ukazují, že oba jazyky mají rovné místo.",
+        "source_url": "https://en.wikipedia.org/wiki/Official_bilingualism_in_Canada",
+        "voice": "Ulice učí jazyky ještě před školou.",
+        "image_prompt": "Photorealistic bilingual airport or government building signs in Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-poutine",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Poutine",
+    "headline": "Hranolky, sýr a omáčka",
+    "fact": "Poutine je quebecké jídlo z hranolků, sýrových zrn a hnědé omáčky. Stalo se symbolem kanadské pouliční kuchyně.",
+    "source_url": "https://en.wikipedia.org/wiki/Poutine",
+    "voice": "Vypadá to jednoduše, ale chutná to jako objetí na talíři.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic plate of poutine with cheese curds and gravy, Canadian diner style, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Sýr musí skřípat",
+        "fact": "Důležitá jsou čerstvá sýrová zrna, která při kousání skřípou. Omáčka má být horká a hranolky křupavé.",
+        "source_url": "https://en.wikipedia.org/wiki/Poutine",
+        "voice": "Když sýr neskřípe, není to pravá poutine.",
+        "image_prompt": "Photorealistic close-up of poutine cheese curds on fries, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z Quebecu do celé země",
+        "fact": "Poutine vznikla v Quebecu a rozšířila se po Kanadě. Dnes ji najdeš od rychlého občerstvení po gurmánské restaurace.",
+        "source_url": "https://en.wikipedia.org/wiki/Poutine",
+        "voice": "Skromné jídlo dobylo celou mapu.",
+        "image_prompt": "Photorealistic Canadian food truck serving poutine, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-javorovy-sirup-jidlo",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Javorový sirup na talíři",
+    "headline": "Sladký poklad z lesa",
+    "fact": "Javorový sirup se lije na palačinky, vaří se do dezertů a používá se i v slaných jídlech. Je to typická kanadská chuť.",
+    "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
+    "voice": "Les ti nasype sladkost přímo na snídani.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic pancakes with maple syrup being poured, Canadian breakfast, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Palačinky a sníh",
+        "fact": "Klasikou je sirup na palačinkách nebo na sněhu jako taffy. Chuť je karamelová a jemná.",
+        "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
+        "voice": "První sousto a víš, že jaro už je blízko.",
+        "image_prompt": "Photorealistic maple taffy on snow, traditional treat, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od stromu k láhvi",
+        "fact": "Výroba vyžaduje mnoho mízy na malé množství sirupu. Quebec je centrem produkce díky vhodnému klimatu a lesům.",
+        "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
+        "voice": "Strom musí hodně pracovat, aby ti osladil den.",
+        "image_prompt": "Photorealistic maple syrup production cabin in forest, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-butter-tarts",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Butter tarts",
+    "headline": "Máslové košíčky",
+    "fact": "Butter tarts jsou malé koláčky s máslovou, sladkou náplní v křehkém těstě. Patří k klasickým kanadským dezertům.",
+    "source_url": "https://en.wikipedia.org/wiki/Butter_tart",
+    "voice": "Jeden košíček a máš plnou dlaň štěstí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic butter tarts on wooden plate, Canadian bakery style, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rozpečené a lepivé",
+        "fact": "Náplň může být tekutější nebo pevnější, s rozinkami nebo ořechy. Každá babička má svůj recept.",
+        "source_url": "https://en.wikipedia.org/wiki/Butter_tart",
+        "voice": "Hádka o rozinky je součást tradice.",
+        "image_prompt": "Photorealistic close-up of butter tart with runny filling, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dezert z farmářských kuchyní",
+        "fact": "Butter tarts vznikly v farmářských komunitách Ontaria. Z domácích kuchyní se dostaly do pekáren po celé zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Butter_tart",
+        "voice": "Z venkovské trouby až na sváteční stůl.",
+        "image_prompt": "Photorealistic rural Canadian kitchen with butter tarts cooling, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-nanaimo",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Nanaimo bars",
+    "headline": "Třívrstvý dezert z Pacifiku",
+    "fact": "Nanaimo bars jsou nepečené řezy se třemi vrstvami – drobenkou, krémem a čokoládou. Pocházejí z města Nanaimo v Britské Kolumbii.",
+    "source_url": "https://en.wikipedia.org/wiki/Nanaimo_bar",
+    "voice": "Tři vrstvy, žádná trouba, spousta radosti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Nanaimo bars stacked showing three layers, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Čokoláda, krém, drobenka",
+        "fact": "Spodní vrstva je z drobenky a kakaa, prostřední je máslový krém, vrch je čokoládová poleva. Jedí se nastudeno.",
+        "source_url": "https://en.wikipedia.org/wiki/Nanaimo_bar",
+        "voice": "Když kousneš, potkají se tři textury najednou.",
+        "image_prompt": "Photorealistic close-up of Nanaimo bar layers, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město, které dalo jméno dezertu",
+        "fact": "Nanaimo leží na ostrově Vancouver. Dezert se stal známým po celé Kanadě a nese jméno svého rodiště.",
+        "source_url": "https://en.wikipedia.org/wiki/Nanaimo_bar",
+        "voice": "Malé město, velký sladký věhlas.",
+        "image_prompt": "Photorealistic Nanaimo waterfront with dessert concept, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-tourtiere",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Tourtière",
+    "headline": "Masový koláč na svátky",
+    "fact": "Tourtière je quebecký masový koláč s kořením. Tradičně se peče na Vánoce a další slavnosti.",
+    "source_url": "https://en.wikipedia.org/wiki/Tourtière",
+    "voice": "Vůně skořice a masa znamená, že jsou svátky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic tourtière meat pie on holiday table, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Křehké těsto a kořeněná náplň",
+        "fact": "Náplň je z mletého masa, cibule a koření jako skořice nebo hřebíček. Každá rodina má svůj poměr.",
+        "source_url": "https://en.wikipedia.org/wiki/Tourtière",
+        "voice": "Recept se dědí spolu s formou na pečení.",
+        "image_prompt": "Photorealistic slice of tourtière showing meat filling, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sváteční jídlo Nové Francie",
+        "fact": "Koláč má kořeny ve francouzské kolonizaci. V Quebecu zůstává důležitou součástí zimních oslav.",
+        "source_url": "https://en.wikipedia.org/wiki/Tourtière",
+        "voice": "Zima venku, tourtière na stole – rovnováha je hotová.",
+        "image_prompt": "Photorealistic Quebec winter kitchen with tourtière, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-seafood",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Mořské plody",
+    "headline": "Úlovek z dvou oceánů",
+    "fact": "Kanada nabízí humry z Atlantiku, lososy z Pacifiku a další plody moře. Čerstvost a kvalita jsou součástí pobřežní kuchyně.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_cuisine",
+    "voice": "Když je ryba tak čerstvá, stačí sůl a oheň.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian lobster and salmon seafood platter, coastal setting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Humr na molu",
+        "fact": "V Novém Skotsku a okolí se humři vaří čerstvě a podávají s máslem. Na západě zase grilují lososa.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_cuisine",
+        "voice": "Máslo stéká po klepetech a ty se jen usmíváš.",
+        "image_prompt": "Photorealistic steamed lobster with melted butter, Atlantic Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Atlantik versus Pacifik",
+        "fact": "Východní pobřeží je známé měkkýši a humry, západní lososy a kraby. Dva oceány znamenají dvě kuchyně.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_cuisine",
+        "voice": "Od humra k lososovi je to celý kontinent.",
+        "image_prompt": "Photorealistic split scene of Atlantic and Pacific Canadian seafood, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-beaver-tails",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Beaver tails",
+    "headline": "Smažené těsto ve tvaru bobřího ocasu",
+    "fact": "Beaver tails jsou smažené ploché pečivo posypané skořicí a cukrem. Oblíbené jsou hlavně v Ottawě při bruslení.",
+    "source_url": "https://en.wikipedia.org/wiki/BeaverTails",
+    "voice": "Bobří ocas, který neplave, ale chutná skvěle.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Beaver Tail pastry with cinnamon sugar, winter market style, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Teplé těsto po bruslení",
+        "fact": "Po jízdě na kanálu si lidé kupují teplé beaver tails. Existují i varianty s čokoládou nebo ovocem.",
+        "source_url": "https://en.wikipedia.org/wiki/BeaverTails",
+        "voice": "Studené prsty a teplé těsto – dokonalý pár.",
+        "image_prompt": "Photorealistic person-free scene of beaver tails at winter canal stall, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od Ottawy dál do světa",
+        "fact": "Značka vznikla v oblasti Ottawy a rozšířila se do dalších měst. Stala se symbolem kanadské zimní svačiny.",
+        "source_url": "https://en.wikipedia.org/wiki/BeaverTails",
+        "voice": "Z jednoho kanálu až na stánky po celé zemi.",
+        "image_prompt": "Photorealistic Ottawa Rideau Canal winter food stall atmosphere, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-wild-rice",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Divoká rýže",
+    "headline": "Rýže z jezer, ne z polí",
+    "fact": "Divoká rýže roste ve vodě a tradičně ji sklízejí domorodé komunity. Má ořechovou chuť a dlouhá zrna.",
+    "source_url": "https://en.wikipedia.org/wiki/Wild_rice",
+    "voice": "Rýže, která se sklízí z kánoe.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wild rice grains and cooked dish, Canadian lake setting hint, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Ořechová chuť severu",
+        "fact": "Divoká rýže se podává jako příloha nebo v polévkách. Chuť je výraznější než u běžné rýže.",
+        "source_url": "https://en.wikipedia.org/wiki/Wild_rice",
+        "voice": "Jedno sousto a cítíš jezero i vítr.",
+        "image_prompt": "Photorealistic bowl of cooked wild rice with herbs, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sklizeň na vodě",
+        "fact": "Tradičně se sklízí z loděk v jezerech Kanadského štítu. Je důležitou součástí domorodé stravy a kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Wild_rice",
+        "voice": "Jezero dává úrodu stejně jako pole.",
+        "image_prompt": "Photorealistic wild rice lake harvest landscape in Canada, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-jidlo-caesar",
+    "country": "Kanada",
+    "section": "Jídlo",
+    "topic": "Caesar drink",
+    "headline": "Kanadský ranní klasický nápoj",
+    "fact": "Caesar je kanadský koktejl z rajčatové a šťávy z míchaných mořských plodů, koření a celeru. Často se podává k brunchi.",
+    "source_url": "https://en.wikipedia.org/wiki/Caesar_(cocktail)",
+    "voice": "Vypadá jako krvavá Mary, ale Kanaďani vědí, že je to Caesar.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Caesar cocktail with celery stick and spice rim, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Okraj se kořením",
+        "fact": "Sklenice se ozdobí celerovou solí a často i naloženými potravinami. Každý bar má svou verzi.",
+        "source_url": "https://en.wikipedia.org/wiki/Caesar_(cocktail)",
+        "voice": "Čím víc ozdob, tím víc zábavy ve sklenici.",
+        "image_prompt": "Photorealistic close-up of Caesar cocktail garnish, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nápoj z Calgary",
+        "fact": "Caesar vznikl v Calgary a stal se kanadskou specialitou. Mimo Kanadu ho lidé často neznají.",
+        "source_url": "https://en.wikipedia.org/wiki/Caesar_(cocktail)",
+        "voice": "Domácí recept, který zůstal doma slavný.",
+        "image_prompt": "Photorealistic Calgary skyline hint with Caesar cocktail, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-konfederace",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Konfederace",
+    "headline": "Spojení provincií v jednu zemi",
+    "fact": "V roce 1867 se spojily první provincie do Kanadské konfederace. Tím vznikl moderní kanadský stát.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+    "source_quote": "Canadian Confederation was the process by which the British colonies of Canada, Nova Scotia, and New Brunswick were united into one Dominion of Canada on July 1, 1867.",
+    "voice": "Tři kolonie se rozhodly jít spolu a vznikla země.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historic Parliament and Confederation related architecture, Ottawa, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Den, který se slaví dodnes",
+        "fact": "Výročí připadá na začátek července a slaví se jako Den Kanady. Lidé vzpomínají na vznik společného státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+        "voice": "Olňostroje připomínají, že z kolonií se stala země.",
+        "image_prompt": "Photorealistic Canada Day celebration near historic buildings, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od Atlantiku dál na západ",
+        "fact": "Po vzniku Konfederace se postupně přidávaly další provincie a teritoria. Mapa Kanady se postupně rozšířila k Pacifiku a Arktidě.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+        "voice": "Konfederace byla začátek, ne konec mapování.",
+        "image_prompt": "Photorealistic historic map progression of Canadian provinces, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-zeleznice",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Transkontinentální železnice",
+    "headline": "Koleje od oceánu k oceánu",
+    "fact": "Kanadská pacifická železnice spojila východ se západem. Umožnila osídlení prérií a vznik národních parků v horách.",
+    "source_url": "https://en.wikipedia.org/wiki/Canadian_Pacific_Railway",
+    "voice": "Koleje se staly páteří mladé země.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historic train in Canadian Rockies landscape, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Cesta údolími a průsmyky",
+        "fact": "Stavba vedla přes Skalisté hory a vyžadovala odvahu i techniku. Dnes po některých úsecích jezdí vyhlídkové vlaky.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Pacific_Railway",
+        "voice": "Nejtěžší úseky dnes nabízejí nejkrásnější výhledy.",
+        "image_prompt": "Photorealistic train crossing bridge in Canadian mountains, 16:9"
+      },
+      "kartograf": {
+        "headline": "Spojení, které drželo zemi pohromadě",
+        "fact": "Bez železnice by bylo těžké udržet západní území spojená s východem. Doprava formovala politiku i ekonomiku.",
+        "source_url": "https://en.wikipedia.org/wiki/Canadian_Pacific_Railway",
+        "voice": "Mapa dostala ocelovou nit, která ji sešila.",
+        "image_prompt": "Photorealistic railway across Canadian prairie to mountains, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-zlata-horeccka",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Zlatá horečka na Klondiku",
+    "headline": "Zlato na konci světa",
+    "fact": "Koncem devatenáctého století vypukla zlatá horečka na Klondiku v Yukonu. Tisíce lidí putovaly na sever za snem o bohatství.",
+    "source_url": "https://en.wikipedia.org/wiki/Klondike_Gold_Rush",
+    "voice": "Slib zlata táhl lidi dál než jakákoliv mapa.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Klondike gold rush era landscape with mountains and river, Yukon, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Stezka plná námahy",
+        "fact": "Zlatokopové museli překonat horské průsmyky a táhnout těžké náklady. Mnozí se vrátili bez zlata, ale s příběhem.",
+        "source_url": "https://en.wikipedia.org/wiki/Klondike_Gold_Rush",
+        "voice": "Nejtěžší bylo dojít, ne kopat.",
+        "image_prompt": "Photorealistic Chilkoot Pass style mountain trail landscape, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sever se otevřel světu",
+        "fact": "Horečka přitáhla pozornost k Yukonu a urychlila osídlení. Dawson City se stalo legendárním městem zlatokopů.",
+        "source_url": "https://en.wikipedia.org/wiki/Klondike_Gold_Rush",
+        "voice": "Zlato nakreslilo novou tečku na mapě severu.",
+        "image_prompt": "Photorealistic Dawson City historic street atmosphere, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-nova-francie",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Nová Francie",
+    "headline": "Francouzské kořeny u velké řeky",
+    "fact": "Nová Francie byla francouzská kolonie v údolí Svatého Vavřince. Z ní vzešla quebecká kultura a francouzský jazyk v Kanadě.",
+    "source_url": "https://en.wikipedia.org/wiki/New_France",
+    "voice": "Francouzské lodě přivezly jazyk, který tu zůstal.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historic Quebec fortification and St. Lawrence River, New France atmosphere, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pevnosti a misie",
+        "fact": "Francouzi stavěli pevnosti, obchodovali s kožešinami a zakládali misie. Quebec a Montreal mají kořeny v této éře.",
+        "source_url": "https://en.wikipedia.org/wiki/New_France",
+        "voice": "Kámen pevnosti pamatuje první zimy kolonistů.",
+        "image_prompt": "Photorealistic stone fort walls in Quebec historic style, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kolonie podél řeky",
+        "fact": "Osídlení se drželo řeky Svatého Vavřince, která sloužila jako hlavní cesta. Vnitrozemí zůstávalo doménou obchodu s kožešinami.",
+        "source_url": "https://en.wikipedia.org/wiki/New_France",
+        "voice": "Řeka byla silnice, spíž i spojení s Evropou.",
+        "image_prompt": "Photorealistic St. Lawrence River valley historic settlement landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-obchod-kozesinami",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Obchod s kožešinami",
+    "headline": "Bobří kůže měnila mapu",
+    "fact": "Obchod s kožešinami spojoval Evropany a domorodé národy. Stanice a cesty formovaly průzkum vnitrozemí.",
+    "source_url": "https://en.wikipedia.org/wiki/North_American_fur_trade",
+    "voice": "Za bobří čepicí šly celé výpravy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historic fur trade post by Canadian lake, canoe and forest, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kánoe plné kožešin",
+        "fact": "Obchodníci a voyageurs pádlovali tisíce kilometrů. Přiváželi zboží a odváželi kožešiny k oceánu.",
+        "source_url": "https://en.wikipedia.org/wiki/North_American_fur_trade",
+        "voice": "Pádlo bylo tehdy důležitější než kůň.",
+        "image_prompt": "Photorealistic voyageur canoe on Canadian river, historic atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sítě cest napříč kontinentem",
+        "fact": "Obchodní cesty využívaly řeky a jezera. Položily základy pozdějšímu osídlení a hranicím.",
+        "source_url": "https://en.wikipedia.org/wiki/North_American_fur_trade",
+        "voice": "Kde se obchodovalo, tam později vznikala města.",
+        "image_prompt": "Photorealistic network of lakes and rivers used for fur trade, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-svetove-valky",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Kanada ve světových válkách",
+    "headline": "Země, která šla za oceán",
+    "fact": "Kanada se účastnila obou světových válek. Její vojáci bojovali v Evropě a války posílily pocit samostatné národní identity.",
+    "source_url": "https://en.wikipedia.org/wiki/Military_history_of_Canada",
+    "voice": "Z kolonie se ve válkách stávala země, která rozhoduje sama.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Canadian war memorial architecture, respectful and solemn, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Památníky v každém městě",
+        "fact": "Po celé zemi stojí památníky padlým. Lidé si připomínají oběti na Den památky.",
+        "source_url": "https://en.wikipedia.org/wiki/Military_history_of_Canada",
+        "voice": "Ticho u památníku řekne víc než dlouhá řeč.",
+        "image_prompt": "Photorealistic Canadian cenotaph memorial with poppies, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od Evropy k samostatnosti",
+        "fact": "Účast ve válkách urychlila osamostatňování Kanady od Británie. Země získala větší mezinárodní postavení.",
+        "source_url": "https://en.wikipedia.org/wiki/Military_history_of_Canada",
+        "voice": "Válka změnila hranice i způsob, jak se země vidí sama.",
+        "image_prompt": "Photorealistic historic Canadian military museum display, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-immigration",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Přistěhovalectví",
+    "headline": "Vlny lidí, které tvořily zemi",
+    "fact": "Kanadu formovaly vlny přistěhovalců z Evropy, Asie, Afriky i Amerik. Každá vlna přinesla nové dovednosti, jídla a tradice.",
+    "source_url": "https://en.wikipedia.org/wiki/Immigration_to_Canada",
+    "voice": "Země se skládá z kufrů, které sem někdy dorazily.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historic Canadian immigration pier or train station atmosphere, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Přístavy a nádraží plné naděje",
+        "fact": "Lidé přijížděli loděmi a vlaky. Hledali půdu, práci a bezpečnost pro rodiny.",
+        "source_url": "https://en.wikipedia.org/wiki/Immigration_to_Canada",
+        "voice": "První pohled na novou zemi bývá z paluby nebo z okna vlaku.",
+        "image_prompt": "Photorealistic historic ocean liner arriving at Canadian port, 16:9"
+      },
+      "kartograf": {
+        "headline": "Osídlování od východu na západ",
+        "fact": "Dřív se plnily východní provincie, později prérie a západ. Železnice a nabídka půdy lákaly farmáře.",
+        "source_url": "https://en.wikipedia.org/wiki/Immigration_to_Canada",
+        "voice": "Koleje a plakáty na půdu kreslily nové domovy.",
+        "image_prompt": "Photorealistic prairie homestead landscape representing settlement era, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-narodni-parky",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Vznik národních parků",
+    "headline": "Když se krajina začala chránit",
+    "fact": "Banff se stal prvním národním parkem a odstartoval systém ochrany přírody. Kanada patří k průkopníkům myšlenky národních parků.",
+    "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
+    "source_quote": "Banff National Park is Canada's oldest national park, established in 1885.",
+    "voice": "Nejdřív chránili horké prameny, pak celé hory.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Banff National Park historic style landscape with mountains, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Parky pro všechny generace",
+        "fact": "Systém parků umožňuje lidem poznávat divočinu a zároveň ji chránit. Stezky a návštěvnická centra slouží vzdělání.",
+        "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
+        "voice": "Vstupné do parku je investice do budoucnosti krajiny.",
+        "image_prompt": "Photorealistic national park visitor trailhead in Canada, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od hor k pobřežím a Arktidě",
+        "fact": "Parky dnes chrání hory, prérie, lesy, pobřeží i arktické oblasti. Představují rozmanitost celé země.",
+        "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
+        "voice": "Mapa parků je mapou toho nejcennějšího, co země má.",
+        "image_prompt": "Photorealistic diverse Canadian national park landscapes montage, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ca-historie-ustava",
+    "country": "Kanada",
+    "section": "Historie",
+    "topic": "Ústavní samostatnost",
+    "headline": "Vlastní pravidla pro vlastní zemi",
+    "fact": "Kanada postupně získávala větší samostatnost od Británie. Ústavní změny potvrdily, že o svých zákonech rozhoduje doma.",
+    "source_url": "https://en.wikipedia.org/wiki/Constitution_of_Canada",
+    "voice": "Zákony se přestěhovaly z Londýna do Ottawy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic Supreme Court or Parliament of Canada architecture, dignified, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Dokumenty, které tvoří zemi",
+        "fact": "Ústava a Charta práv a svobod jsou základem kanadského právního systému. Chrání práva obyvatel.",
+        "source_url": "https://en.wikipedia.org/wiki/Constitution_of_Canada",
+        "voice": "Práva nejsou jen na papíře – jsou v každodenním životě.",
+        "image_prompt": "Photorealistic Canadian legal and parliamentary symbols, respectful, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od dominia k plné suverenitě",
+        "fact": "Cesta k plné ústavní samostatnosti trvala dlouho. Kanada zůstala monarchií, ale rozhodování se přesunulo domů.",
+        "source_url": "https://en.wikipedia.org/wiki/Constitution_of_Canada",
+        "voice": "Vlajka stejná, rozhodování vlastní.",
+        "image_prompt": "Photorealistic Canadian flag over Parliament Hill, 16:9"
+      }
+    }
+  }
+]

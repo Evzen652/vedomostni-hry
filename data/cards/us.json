@@ -1,0 +1,214 @@
+[
+  {
+    "id": "us-mista-rushmore",
+    "country": "USA",
+    "section": "Místa",
+    "topic": "Mount Rushmore",
+    "headline": "Čtyři obří tváře vytesané do hory",
+    "fact": "Do žulové hory Mount Rushmore jsou vytesané obří tváře čtyř amerických prezidentů — Washingtona, Jeffersona, Roosevelta a Lincolna.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Rushmore",
+    "voice": "'Amerika bude pochodovat podél tohoto horizontu,' řekl sochař, když viděl svůj plán.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Mount Rushmore s vytesanými tvářemi čtyř prezidentů, jasná obloha, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Sochaři odstřelili dynamitem asi 450 000 tun skály a pak jemně dotesávali detail metodou zvanou 'plástvování' — vrtali husté řady děr a kámen odlamovali ručně po malých kouscích. Stavba trvala od roku 1927 do 1941.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Rushmore"
+      },
+      "kartograf": {
+        "fact": "Mount Rushmore je monumentální projev národní identity — výběr právě těchto čtyř prezidentů měl symbolizovat založení, růst, uchování a rozvoj USA. Podobně jako jiné velké státní pomníky přetváří krajinu na politický a kulturní symbol.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Rushmore"
+      }
+    }
+  },
+  {
+    "id": "us-priroda-grand-canyon",
+    "country": "USA",
+    "section": "Příroda",
+    "topic": "Grand Canyon",
+    "headline": "Kaňon, který odkrývá dvě miliardy let Země",
+    "fact": "Grand Canyon je přes míli hluboký kaňon vyhloubený řekou Colorado za miliony let; jeho stěny odkrývají skoro dvě miliardy let geologické historie Země.",
+    "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon",
+    "source_quote": "Nearly two billion years of Earth's geological history have been exposed",
+    "voice": "Sestup na dno kaňonu je jako cestovat časem hluboko do minulosti planety.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek Grand Canyonu při západu slunce, vrstevnaté skalní stěny, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kaňon je 277 mil dlouhý, až 18 mil široký a přes 1 800 metrů hluboký. Řeka Colorado ho vyhlubovala postupně asi 5–6 milionů let, i když některé jeho části jsou geologicky mnohem starší.",
+        "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon"
+      },
+      "kartograf": {
+        "fact": "Vrstvy hornin v kaňonu fungují jako otevřená kniha geologických dějin — každá barevná vrstva odpovídá jinému období, kdy se na místě střídalo moře, poušť nebo bažina. Erozí odkrytý profil umožňuje 'číst' historii planety jako v učebnici.",
+        "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon"
+      }
+    }
+  },
+  {
+    "id": "us-lide-mlk",
+    "country": "USA",
+    "section": "Lidé",
+    "topic": "Martin Luther King a boj za občanská práva",
+    "headline": "Muž, který vedl boj za rovnost bez násilí",
+    "fact": "Martin Luther King Jr. vedl americké hnutí za občanská práva metodou nenásilného odporu; jeho projev 'Mám sen' z roku 1963 patří k nejslavnějším řečem historie.",
+    "source_url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.",
+    "voice": "Slova jednoho projevu dokázala pohnout celou zemí.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistický snímek davu na pochodu za občanská práva ve Washingtonu, dokumentární styl, 16:9",
+    "tags": ["dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "King bojoval proti segregačním zákonům (tzv. Jim Crow), které v jižních státech USA legálně diskriminovaly Afroameričany. Projev 'Mám sen' přednesl při pochodu na Washington roku 1963 před statisíci lidí.",
+        "source_url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr."
+      },
+      "kartograf": {
+        "fact": "Kingova strategie nenásilného odporu (inspirovaná Gándhím) ukazuje, jak podobná metoda může fungovat napříč úplně odlišnými zeměmi a kontexty — masová disciplinovaná nenásilná neposlušnost dokázala změnit zákony tam, kde by násilí jen posílilo represi.",
+        "source_url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr."
+      }
+    }
+  },
+  {
+    "id": "us-jidlo-hamburger",
+    "country": "USA",
+    "section": "Jídlo",
+    "topic": "Původ hamburgeru",
+    "headline": "Jídlo, jehož vynálezce nikdo přesně nezná",
+    "fact": "O tom, kdo vynalezl hamburger, se dodnes vedou spory — hlásí se k tomu hned několik prodejců z přelomu 19. a 20. století; celostátně proslul na světové výstavě v St. Louis roku 1904.",
+    "source_url": "https://en.wikipedia.org/wiki/Hamburger",
+    "source_quote": "No conclusive argument has ended the dispute over invention.",
+    "voice": "Nejslavnější americké jídlo a nikdo pořádně neví, kdo ho vymyslel.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek klasického amerického hamburgeru se salátem a rajčetem, dřevěné prkénko, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "K vynálezu se hlásí prodejci z Connecticutu, Wisconsinu, New Yorku, Oklahomy i Texasu — každý s vlastní verzí příběhu z 80. a 90. let 19. století. Žádný důkaz spor definitivně nerozhodl.",
+        "source_url": "https://en.wikipedia.org/wiki/Hamburger"
+      },
+      "kartograf": {
+        "fact": "Nejasný původ hamburgeru je typický pro lidové jídlo, které vzniklo nezávisle na více místech zároveň — na rozdíl od jídel s jasným královským nebo šlechtickým původem se pouliční občerstvení málokdy zapisovalo do dobových kronik.",
+        "source_url": "https://en.wikipedia.org/wiki/Hamburger"
+      }
+    }
+  },
+  {
+    "id": "us-historie-apollo11",
+    "country": "USA",
+    "section": "Historie",
+    "topic": "Mise Apollo 11",
+    "headline": "První lidské kroky na jiném vesmírném tělese",
+    "fact": "Mise Apollo 11 přistála roku 1969 jako první s lidmi na Měsíci — Neil Armstrong a Buzz Aldrin vystoupili na povrch, zatímco Michael Collins čekal na oběžné dráze.",
+    "source_url": "https://en.wikipedia.org/wiki/Apollo_11",
+    "source_quote": "Houston, Tranquility Base here. The Eagle has landed.",
+    "voice": "Jedna věta rádiem, a celá planeta zatajila dech.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek astronauta v skafandru na povrchu Měsíce, americká vlajka, černá obloha, 16:9",
+    "tags": ["dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Přistání bylo vyvrcholením kosmického závodu mezi USA a SSSR, který začal po sovětském Sputniku 1957. Armstrong svůj první krok popsal jako 'malý krok pro člověka, obrovský skok pro lidstvo'.",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_11"
+      },
+      "kartograf": {
+        "fact": "Přistání na Měsíci ukazuje, jak politická soutěž (studená válka) dokáže urychlit technologický pokrok mnohem rychleji, než by šlo jen s vědeckou zvědavostí — program vznikl hlavně jako demonstrace síly, ne primárně jako vědecký projekt.",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_11"
+      }
+    }
+  },
+  {
+    "id": "us-kultura-dekovani",
+    "country": "USA",
+    "section": "Kultura & tradice",
+    "topic": "Díkůvzdání",
+    "headline": "Hostina, ze které vzniknul národní svátek",
+    "fact": "Díkůvzdání se datuje k třídenní podzimní hostině roku 1621, kdy se poutníci z Plymouthu sešli s domorodým národem Wampanoagů k oslavě úrody.",
+    "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)",
+    "source_quote": "Our harvest being gotten in, our governor sent four men on fowling, that so we might after a special manner rejoice together.",
+    "voice": "Jedna hostina před 400 lety se stala svátkem, který dnes slaví celá země.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sváteční tabule s pečeným krocanem a podzimní výzdobou, teplé domácí světlo, 16:9",
+    "tags": ["dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Domorodí prostředníci Samoset a Tisquantum pomohli vyjednat mír mezi osadníky a Wampanoagy vedenými náčelníkem Massasoitem. Wampanoagové přispěli k hostině vlastními zemědělskými a loveckými znalostmi a byli na oslavu pozváni po zaslechnutí sváteční střelby.",
+        "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"
+      },
+      "kartograf": {
+        "fact": "Díkůvzdání ukazuje, jak se historický okamžik spolupráce mezi kolonisty a domorodými národy proměnil v národní mýtus — dnešní verze svátku často zjednodušuje složitější a mnohem konfliktnější dějiny vztahů mezi osadníky a původními obyvateli Ameriky.",
+        "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"
+      }
+    }
+  },
+  {
+    "id": "us-umeni-jazz",
+    "country": "USA",
+    "section": "Umění",
+    "topic": "Vznik jazzu",
+    "headline": "Hudba, která se rodila v ulicích New Orleans",
+    "fact": "Jazz vznikl v afroamerických komunitách New Orleans na přelomu 19. a 20. století a stal se jedním z nejvýznamnějších amerických příspěvků světovému umění.",
+    "source_url": "https://en.wikipedia.org/wiki/Jazz",
+    "source_quote": "Jazz is a music genre that originated in the African-American communities of New Orleans, Louisiana, in the late 19th and early 20th centuries.",
+    "voice": "Hudba, kde si muzikanti část melodie vymýšlejí přímo za pochodu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jazzové kapely hrající v malém klubu, saxofon a trubka, teplé tlumené světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Jazz vznikl smísením africké rytmiky, blues a evropské harmonie — typickým znakem je improvizace, kdy si hudebníci část melodie vymýšlejí přímo na místě, ne podle pevně daných not.",
+        "source_url": "https://en.wikipedia.org/wiki/Jazz"
+      },
+      "kartograf": {
+        "fact": "New Orleans byl přístavní město s mimořádně různorodým obyvatelstvem (africké, evropské, karibské kořeny), což vytvořilo ideální podmínky pro hudební míšení stylů — jazz je přímý hudební otisk kulturní křižovatky, kterou New Orleans historicky byl.",
+        "source_url": "https://en.wikipedia.org/wiki/Jazz"
+      }
+    }
+  },
+  {
+    "id": "us-sport-nba",
+    "country": "USA",
+    "section": "Sport",
+    "topic": "NBA jako globální liga",
+    "headline": "Nejlepší basketbalová liga světa",
+    "fact": "Americká NBA je považována za nejlepší profesionální basketbalovou ligu na světě a sledují ji fanoušci ve všech koutech planety.",
+    "source_url": "https://en.wikipedia.org/wiki/National_Basketball_Association",
+    "source_quote": "considered the premier professional basketball league in the world",
+    "voice": "Nejlepší hráči z celého světa míří hrát právě sem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek basketbalisty ve skoku ke koši na plné hale, dynamický pohyb, dramatické osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "NBA hraje hráči z desítek zemí a její zápasy se vysílají v mnoha jazycích po celém světě — z čistě americké ligy se tak postupně stala globální sportovní značka.",
+        "source_url": "https://en.wikipedia.org/wiki/National_Basketball_Association"
+      },
+      "kartograf": {
+        "fact": "Globální dosah NBA ukazuje, jak silná domácí liga může exportovat svou popularitu do celého světa — podobně jako anglická fotbalová Premier League přitahuje talenty i diváky daleko za hranicemi země, kde vznikla.",
+        "source_url": "https://en.wikipedia.org/wiki/National_Basketball_Association"
+      }
+    }
+  },
+  {
+    "id": "us-jazyk-americka-anglictina",
+    "country": "USA",
+    "section": "Jazyk & slova",
+    "topic": "Americká angličtina",
+    "headline": "Anglicky, ale trochu jinak",
+    "fact": "Americká angličtina se od britské liší v hláskování (color/colour) i slovní zásobě (truck/lorry, apartment/flat) — vznikla postupným rozejitím po kolonizaci Ameriky.",
+    "source_url": "https://en.wikipedia.org/wiki/American_English",
+    "voice": "Stejný jazyk, ale výtah je jinde 'elevator' a jinde 'lift'.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Americká angličtina zjednodušila hodně slov (color místo colour, center místo centre) a některá stará britská slova si navíc podržela déle než sama Británie — třeba slovo 'fall' pro podzim, které v Anglii vzniklo v 16. století a později tam vyšlo z módy.",
+        "source_url": "https://en.wikipedia.org/wiki/American_English"
+      },
+      "kartograf": {
+        "fact": "Rozdíly mezi americkou a britskou angličtinou jsou typický důsledek geografické izolace: jazyk, který se oddělí od svého zdroje (Britů v Americe), se vyvíjí vlastním tempem a nezávisle přejímá i ztrácí rysy — po staletích jsou obě varianty pořád vzájemně srozumitelné, ale zřetelně odlišné.",
+        "source_url": "https://en.wikipedia.org/wiki/American_English"
+      }
+    }
+  }
+]

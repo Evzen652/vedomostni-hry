@@ -1,0 +1,217 @@
+[
+  {
+    "id": "jp-mista-tokio",
+    "country": "Japonsko",
+    "section": "Místa",
+    "topic": "Růst a hustota Tokia",
+    "headline": "Metropole, kde žije přes 33 milionů lidí",
+    "fact": "Velké Tokio je s 33 miliony obyvatel třetí nejlidnatější metropolitní oblast na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Tokyo",
+    "source_quote": "the third-most populous metropolitan area in the world",
+    "voice": "Víc lidí, než má celé Polsko, se vejde do jednoho města.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický noční snímek Tokia s nasvícenými mrakodrapy a neonovými reklamami, 16:9",
+    "tags": ["socioekonomicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tokio vzniklo spojením dřívějšího hlavního města Kjóta s rychle rostoucím přístavním městem Edo, které se v 19. století přejmenovalo na Tokio ('východní hlavní město').",
+        "source_url": "https://en.wikipedia.org/wiki/Tokyo"
+      },
+      "kartograf": {
+        "fact": "Extrémní hustota obyvatel v Tokiu je odpovědí na omezený obyvatelný prostor Japonska — hornatý terén nutí obyvatelstvo koncentrovat se do pobřežních rovin, což vede k jedněm z nejhustěji zalidněných metropolí planety.",
+        "source_url": "https://en.wikipedia.org/wiki/Tokyo"
+      }
+    }
+  },
+  {
+    "id": "jp-priroda-fudzi",
+    "country": "Japonsko",
+    "section": "Příroda",
+    "topic": "Hora Fudži jako kulturní symbol",
+    "headline": "Posvátná sopka, na kterou se dá vylézt",
+    "fact": "Hora Fudži je s 3 776 m nejvyšší horou Japonska — aktivní sopka, kterou Japonci považují za posvátnou a od roku 2013 je na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Fuji",
+    "source_quote": "the highest mountain in Japan, the second-highest volcano on any Asian island",
+    "voice": "Symetrický kužel, který znáš z tisíců obrazů, i když jsi ho nikdy neviděl naživo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek symetrického zasněženého vrcholu hory Fudži nad jezerem, jasná obloha, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Fudži je pořád aktivní sopka — naposledy vybuchla v roce 1707. Na její vrchol každé léto vystoupají statisíce turistů i poutníků, pro které je výstup duchovní cestou.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Fuji"
+      },
+      "kartograf": {
+        "fact": "UNESCO zapsalo Fudži jako kulturní, ne přírodní památku — důvodem není jen geologie, ale staletí umění, poezie a náboženské úcty, které se k hoře váží. Ukazuje to, že hodnota místa může být stejně tak v jeho vlivu na kulturu jako v přírodních datech.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Fuji"
+      }
+    }
+  },
+  {
+    "id": "jp-lide-ainu",
+    "country": "Japonsko",
+    "section": "Lidé",
+    "topic": "Ainuové",
+    "headline": "Původní obyvatelé severního Japonska",
+    "fact": "Ainuové jsou domorodý národ severního Japonska (hlavně ostrova Hokkaidó) s jazykem, který nesouvisí s japonštinou ani žádným jiným známým jazykem.",
+    "source_url": "https://en.wikipedia.org/wiki/Ainu_people",
+    "source_quote": "The Ainu are an indigenous ethnic group who reside in northern Japan.",
+    "voice": "Jiný jazyk, jiné zvyky, jiná tvář Japonska, než jakou znáš z filmů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního ainuského oděvu s výšivkami vystaveného v muzeu, přirozené světlo, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ainuové tradičně žili lovem a rybolovem v malých vesnicích zvaných kotan, nosili oděv z tkaných kůrových vláken a měli výrazné obličejové tetování. Dnes jich v Japonsku žije přes 11 000.",
+        "source_url": "https://en.wikipedia.org/wiki/Ainu_people"
+      },
+      "kartograf": {
+        "fact": "Ainuský jazyk je izolovaný jazyk bez prokázané příbuznosti s jinými — hokkaidská větev je dnes prakticky vymřelá. Je to připomínka, že i zdánlivě jazykově jednotné země jako Japonsko mají uvnitř menšiny s úplně odlišnými kořeny.",
+        "source_url": "https://en.wikipedia.org/wiki/Ainu_people"
+      }
+    }
+  },
+  {
+    "id": "jp-jidlo-sushi",
+    "country": "Japonsko",
+    "section": "Jídlo",
+    "topic": "Sushi od konzervace k pokrmu",
+    "headline": "Jídlo, které začínalo jako způsob konzervace ryb",
+    "fact": "Sushi vzniklo jako metoda konzervace ryb kvašením v rýži; dnešní podobu nigiri sushi vytvořil kolem roku 1824 kuchař Hanaja Jóhei.",
+    "source_url": "https://en.wikipedia.org/wiki/Sushi",
+    "source_quote": "The lacto-fermentation of the rice prevents the fish from spoiling.",
+    "voice": "Rýže se původně vyhazovala — dnes je to hlavní hvězda talíře.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek čerstvého nigiri sushi na dřevěném podnosu, minimalistický styl, 16:9",
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Původní narezushi vznikalo v povodí Mekongu (dnešní Laos, Kambodža, Thajsko, Vietnam) a do Japonska se dostalo v období Jajoi. Postupně se doba kvašení zkracovala, až se v období Edo nahradilo octem — sushi se tak proměnilo z pomalé konzervace na rychlé jídlo.",
+        "source_url": "https://en.wikipedia.org/wiki/Sushi"
+      },
+      "kartograf": {
+        "fact": "Vývoj sushi z konzervační techniky na rychlé pouliční jídlo kopíruje urbanizaci Edo (dnešního Tokia) — rostoucí město potřebovalo rychlé občerstvení pro dělníky, a tak se z několikaměsíčního kvašení stalo jídlo připravené za pár minut.",
+        "source_url": "https://en.wikipedia.org/wiki/Sushi"
+      }
+    }
+  },
+  {
+    "id": "jp-historie-meidzi",
+    "country": "Japonsko",
+    "section": "Historie",
+    "topic": "Meidžiho restaurace a modernizace Japonska",
+    "headline": "Rok, kdy se izolovaná země proměnila v mocnost",
+    "fact": "Meidžiho restaurace roku 1868 ukončila staletí izolace Japonska — země se rychle industrializovala a převzala západní technologie a výrobní postupy.",
+    "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+    "source_quote": "Japan rapidly industrialised and adopted Western ideas, production methods and technology.",
+    "voice": "Za pár desetiletí se ze samurajského státu stala průmyslová velmoc.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistický snímek raně industrializovaného japonského města konce 19. století, tovární komíny vedle tradičních střech, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Před rokem 1868 vládl Japonsku šógunát, který zemi drž skoro úplně uzavřenou vůči cizímu vlivu. Po restauraci císařské moci se Japonsko rozhodlo rychle dohnat západní mocnosti, aby se samo nestalo jejich kolonií.",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration"
+      },
+      "kartograf": {
+        "fact": "Meidžiho restaurace je jeden z mála příkladů, kdy neevropská země dokázala rychlou modernizaci zvládnout na vlastní podmínky, místo aby se stala kolonií — Japonsko selektivně přejalo západní technologie, ale politickou a kulturní strukturu si podrželo svou.",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration"
+      }
+    }
+  },
+  {
+    "id": "jp-kultura-origami",
+    "country": "Japonsko",
+    "section": "Kultura & tradice",
+    "topic": "Origami mezi tradicí a vědou",
+    "headline": "Umění, které nepotřebuje nůžky ani lepidlo",
+    "fact": "Origami je tradiční japonské skládání papíru; nejznámějším motivem je papírový jeřáb (orizuru).",
+    "source_url": "https://en.wikipedia.org/wiki/Origami",
+    "source_quote": "The goal is to transform a flat square sheet of paper into a finished sculpture through folding and sculpting techniques.",
+    "voice": "Z placatého čtverečku papíru vznikne bez jediného stříhnutí celý tvar.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek barevných papírových origami jeřábů na jednobarevném pozadí, měkké světlo, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Pravidlo klasického origami je skládat jen z jednoho čtvercového kusu papíru, bez stříhání nebo lepení. Papírový jeřáb je v Japonsku symbolem míru a dlouhého života.",
+        "source_url": "https://en.wikipedia.org/wiki/Origami"
+      },
+      "kartograf": {
+        "fact": "Origami je příklad umění, kde omezení (jeden kus papíru, žádné stříhání) paradoxně otevírá obrovskou kreativitu — matematici dnes studují principy skládání origami i pro praktické využití, třeba skládání solárních panelů do vesmírných sond.",
+        "source_url": "https://en.wikipedia.org/wiki/Origami"
+      }
+    }
+  },
+  {
+    "id": "jp-umeni-ukijoe",
+    "country": "Japonsko",
+    "section": "Umění",
+    "topic": "Ukijo-e a výměna se Západem",
+    "headline": "Obraz vlny, který ovlivnil evropské malíře",
+    "fact": "Ukijo-e jsou japonské dřevořezové tisky; nejslavnějším je Velká vlna od Hokusaie, která později ovlivnila i evropské malíře jako Moneta a van Gogha.",
+    "source_url": "https://en.wikipedia.org/wiki/Ukiyo-e",
+    "source_quote": "one of the most famous works of Japanese art",
+    "voice": "Obraz staré přes 190 let, který dodnes vídáš na tričkách a plakátech.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek japonského dřevořezu ve stylu Velké vlny od Hokusaie vystaveného v galerii, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ukijo-e znamená 'obrazy plynoucího světa' a zobrazovaly krásky, herce kabuki, zápasníky sumo i krajiny. Od 70. let 19. století ovlivnily evropský impresionismus a postimpresionismus svým plochým barevným pojetím.",
+        "source_url": "https://en.wikipedia.org/wiki/Ukiyo-e"
+      },
+      "kartograf": {
+        "fact": "Vliv ukijo-e na evropské malíře je příklad, jak otevření Japonska světu po roce 1868 vyvolalo kulturní vlnu opačným směrem — japonské umění nakonec formovalo západní modernu stejně, jako západní technologie formovaly moderní Japonsko.",
+        "source_url": "https://en.wikipedia.org/wiki/Ukiyo-e"
+      }
+    }
+  },
+  {
+    "id": "jp-sport-sumo",
+    "country": "Japonsko",
+    "section": "Sport",
+    "topic": "Sumo a šintoistický rituál",
+    "headline": "Zápas, který začíná náboženským rituálem",
+    "fact": "Sumo je japonský národní sport — zápas, ve kterém se dva těžcí borci snaží dostat soupeře z kruhu nebo ho srazit k zemi; má kořeny v šintoistických obřadech.",
+    "source_url": "https://en.wikipedia.org/wiki/Sumo",
+    "source_quote": "a form of competitive full-contact wrestling where a rikishi attempts to force his opponent out",
+    "voice": "Zápas může trvat pár vteřin, ale obřad před ním klidně minuty.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dvou zápasníků sumo v kruhu dohó během zápasu, tradiční japonská aréna, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Před samotným zápasem borci provádějí rituální dupání a sypou sůl na očistu kruhu — pozůstatek šintoistických obřadů. Vítězí ten, kdo soupeře dostane z kruhu nebo ho donutí dotknout se země jinou částí těla než chodidly.",
+        "source_url": "https://en.wikipedia.org/wiki/Sumo"
+      },
+      "kartograf": {
+        "fact": "Sumo je vzácný případ moderního profesionálního sportu, který si beze změny podržel náboženský rituál jako součást zápasu — spojení posvátného a sportovního tu nebylo nikdy odděleno, na rozdíl od většiny olympijských sportů, které svůj náboženský původ dávno ztratily.",
+        "source_url": "https://en.wikipedia.org/wiki/Sumo"
+      }
+    }
+  },
+  {
+    "id": "jp-jazyk-kandzi",
+    "country": "Japonsko",
+    "section": "Jazyk & slova",
+    "topic": "Kandži, hiragana, katakana",
+    "headline": "Tři písma v jednom jazyce",
+    "fact": "Japonština se píše kombinací tisíců znaků kandži převzatých z čínštiny a dvou slabičných abeced — hiragany a katakany.",
+    "source_url": "https://en.wikipedia.org/wiki/Kanji",
+    "source_quote": "still used today, along with the subsequently derived syllabic scripts of hiragana and katakana",
+    "voice": "Jedna věta, tři různá písma — a všechna se čtou najednou.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kandži nesou hlavní význam slov (podstatná jména, kořeny sloves), hiragana se používá na gramatické koncovky a částice, katakana hlavně na přejatá cizí slova. Systém vznikl přejetím čínského písma, které si Japonci přizpůsobili vlastní gramatice.",
+        "source_url": "https://en.wikipedia.org/wiki/Kanji"
+      },
+      "kartograf": {
+        "fact": "Kombinace tří písem v jednom jazyce je jazykové řešení problému: čínské znaky nesedí na japonskou gramatiku s koncovkami a časováním, takže si Japonci vedle znaků vyvinuli i slabičné písmo pro gramatické prvky, které znaky samy vyjádřit neumí.",
+        "source_url": "https://en.wikipedia.org/wiki/Kanji"
+      }
+    }
+  }
+]

@@ -1,0 +1,944 @@
+[
+  {
+    "id": "ec-mista-galapagos",
+    "country": "Ekvádor",
+    "section": "Místa",
+    "topic": "Galapágy",
+    "headline": "Ostrov, kde Darwin pochopil evoluci",
+    "fact": "Galapágy — ekvádorské souostroví v Tichém oceánu — navštívil Charles Darwin v roce osmnáct třicet pět; endemické druhy ptáků a želv ho přivedly k teorii přirozeného výběru.",
+    "source_url": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_Islands",
+    "source_quote": "The islands became internationally famous as a result of their being visited in 1835 by the English naturalist Charles Darwin; their unusual fauna contributed to the groundbreaking theories on natural selection",
+    "voice": "Darwin přijel jako turista. Odjel s myšlenkou, která změnila vědu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Galapág — mořský lev na sopečné skále, modrý oceán, kaktus na suchém ostrově v pozadí, bez lidí, 16:9",
+    "ll": [
+      -90.9656,
+      -0.9538
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pěnkavy s různými zobáky — evoluční démonstrace naživo",
+        "fact": "Na různých ostrovech Galapág žijí příbuzné druhy pěnkav se zcela odlišnými zobáky přizpůsobenými jiné potravě. Právě tato variace přivedla Darwina k pochopení, že druhy se vyvíjejí v závislosti na prostředí a dostupné potravě.",
+        "source_url": "https://en.wikipedia.org/wiki/Darwin%27s_finches",
+        "source_quote": "Darwin's finches … each species of finch has evolved a beak uniquely suited to its food source",
+        "voice": "Různé zobáky, jedna rodina. Příroda zkouší varianty a nechá vítěze přežít.",
+        "image_prompt": "Fotorealistický snímek galapážské pěnkavy s charakteristickým zobákem na větvi sopečného keře, přirozené světlo, detail, 16:9"
+      },
+      "kartograf": {
+        "headline": "Izolace jako evoluční laboratoř",
+        "fact": "Galapágy jsou geologicky mladé ostrovy bez přirozeného spojení s pevninou. Zvířata, která se tam dostala (náhodou nebo větrem), se vyvíjela v izolaci bez přirozených predátorů — proto jsou iguana, která plave v moři, nebo tučňáci na rovníku.",
+        "source_url": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_Islands",
+        "source_quote": "the isolation of the islands … allowed species to evolve in unique ways … without natural predators",
+        "voice": "Izolace je laboratoř. A Galapágy jsou nejlepší experiment přírody.",
+        "image_prompt": "Fotorealistický letecký snímek galapážského souostroví — vulkanické ostrovy v Tichém oceánu, modré vody, zelená vegetace, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-mista-quito",
+    "country": "Ekvádor",
+    "section": "Místa",
+    "topic": "Quito",
+    "headline": "Hlavní město ve výšce tří kilometrů a u sopky",
+    "fact": "Quito leží ve výšce přes dva tisíce osm set metrů nad mořem ve výběžku And; je to jedno z nejlépe zachovaných historických center Latinské Ameriky a bylo jako druhé na světě zapsáno na seznam UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Quito",
+    "source_quote": "Quito … one of the best-preserved historic centres in Latin America … the first city to be declared a UNESCO World Heritage Site",
+    "voice": "Mše v barokním kostele a aktivní sopka za oknem. Tak vypadá Quito.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického centra Quita — baroko kolonialní architektury, sopka Pichincha v pozadí, přirozené světlo, 16:9",
+    "ll": [
+      -78.4678,
+      -0.1807
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Střed světa: žít na rovníku",
+        "fact": "Nedaleko Quita leží monument Mitad del Mundo — Střed světa. Je to místo, kde španělská vědecká expedice v osmnáctém století přesně změřila rovník. Ekvádor je jedinou zemí na světě, která nese jméno po geografickém fenoménu.",
+        "source_url": "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo",
+        "source_quote": "Ciudad Mitad del Mundo … marking the location of the equator … measured by an 18th-century French expedition",
+        "voice": "Stát s jednou nohou na každé polokouli. Doslova.",
+        "image_prompt": "Fotorealistický snímek monumentu Mitad del Mundo — žlutá linie rovníku na dlažbě, červená nulová zeměpisná šířka, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Výška jako klimatický regulátor: věčné jaro",
+        "fact": "Quito leží na rovníku, ale ve výšce dvou tisíc osm set metrů; to způsobuje, že klima je mírné a stálé po celý rok — v Quitu není horko ani zima, ale věčné jaro kolem dvaceti stupňů. Nadmořská výška na rovníku překonává vliv zeměpisné šířky.",
+        "source_url": "https://en.wikipedia.org/wiki/Quito",
+        "source_quote": "Quito … mild climate due to its high altitude … despite being on the equator",
+        "voice": "Na rovníku a přesto v mikině. Výška je mocnější než zeměpisná šířka.",
+        "image_prompt": "Fotorealistický snímek Quita z okraje města — hustá zástavba ve výškové kotlině, zelené hory a oblačnost kolem, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-mista-amazon",
+    "country": "Ekvádor",
+    "section": "Místa",
+    "topic": "Ekvádorská Amazonie",
+    "headline": "Malá země, ale jeden z nejbohatších kousků džungle",
+    "fact": "Ekvádor je malá země, ale jeho amazónská část — nazývaná Oriente — patří k územím s nejvyšší biodiverzitou na světě a hostí domorodé národy žijící tradičním způsobem.",
+    "source_url": "https://en.wikipedia.org/wiki/Oriente_(Ecuador)",
+    "source_quote": "Ecuador's Amazon region … one of the most biodiverse areas on Earth",
+    "voice": "Malé území, nepřeberné množství druhů. Příroda nectí lidské hranice.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ekvádorské džungle Oriente — řeka meandrující hustým pralesem, kanoé veslař, ranní mlha, přirozené světlo, 16:9",
+    "ll": [
+      -76.0,
+      -1.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Yasuní: kde žijí dva izolované národy",
+        "fact": "Národní park Yasuní v ekvádorské Amazonii je domovem dvou domorodých národů v dobrovolné izolaci — Tagaeri a Taromenane. Stát jim garantuje ochranu. Zároveň pod jejich územím leží obrovská ropná ložiska.",
+        "source_url": "https://en.wikipedia.org/wiki/Yasun%C3%AD_National_Park",
+        "source_quote": "Yasuní … home to two uncontacted peoples, the Tagaeri and Taromenane … sits above significant oil reserves",
+        "voice": "Pod pralesem je ropa. A pod pralesem žijí lidé, kteří o ropě neví.",
+        "image_prompt": "Fotorealistický snímek ekvádorského pralese Yasuní — hustá džungle, řeka, tropická fauna, přirozené světlo, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Yasuní ITT: nápad, který svět neposlechl",
+        "fact": "Ekvádor navrhl světu v roce dva tisíce sedm iniciativu Yasuní ITT — stát nechá ropu v zemi, pokud mezinárodní komunita zaplatí polovinu ušlého zisku. Svět nezaplatil a vrtné práce začaly. Je to precedens pro globální klima-kompenzace.",
+        "source_url": "https://en.wikipedia.org/wiki/Yasun%C3%AD_ITT_Initiative",
+        "source_quote": "the Yasuní ITT initiative … Ecuador would leave its oil reserves unexploited in exchange for international compensation",
+        "voice": "Ekvádor nabídl svůj prales světu za cenu kompenzace. Svět odmítl.",
+        "image_prompt": "Fotorealistický letecký snímek ekvádorské amazońské džungle s viditelnou ropnou plošinou v dálce, kontrast přírody a průmyslu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-priroda-sopky",
+    "country": "Ekvádor",
+    "section": "Příroda",
+    "topic": "Vulkanická Alej And",
+    "headline": "Silnice obklopená dvaceti sopkami",
+    "fact": "Ekvádor leží na takzvané Ohnivé prstenci Pacifiku; v zemi je přes třicet sopek, mnohé aktivní, a osa And mezi Quitem a Cuencou se nazývá Avenida de los Volcanes — Alej sopek.",
+    "source_url": "https://en.wikipedia.org/wiki/Avenue_of_the_Volcanoes",
+    "source_quote": "the Avenue of the Volcanoes … a corridor of volcanoes in Ecuador … coined by Alexander von Humboldt",
+    "voice": "Alexander von Humboldt pojmenoval tuhle silnici. A měl pravdu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Avenidy de los Volcanes v Ekvádoru — andská plošina s dvěma zasněženými sopkami na horizontu, dramatické světlo, 16:9",
+    "ll": [
+      -78.5,
+      -1.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cotopaxi: aktivní sopka s ledovcem",
+        "fact": "Cotopaxi je jednou z nejvýše položených aktivních sopek světa a je pokryta tropickým ledovcem. Při erupci by odtávání ledovce mohlo způsobit ničivé lahary — bahnotouky — sahající přes sto kilometrů dolů do údolí.",
+        "source_url": "https://en.wikipedia.org/wiki/Cotopaxi",
+        "source_quote": "Cotopaxi … one of the highest active volcanoes in the world … glacier-covered",
+        "voice": "Krása sopky skrývá potenciál katastrofy. To platí o mnohém.",
+        "image_prompt": "Fotorealistický snímek sopky Cotopaxi s perfektním kuželem pokrytým ledovcem, andská plošina v popředí, dramatická oblačnost, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ohnivý prsten a riziko pro hustě osídlené oblasti",
+        "fact": "Ekvádor leží na subdukční zóně — Nazca deska se podsunuje pod Jihoamerickou. Výsledkem jsou sopky i zemětřesení. Hustota osídlení v podhůří sopek a omezená kapacita evakuace dělají z vulkanického rizika geopolitický problém.",
+        "source_url": "https://en.wikipedia.org/wiki/Pacific_Ring_of_Fire",
+        "source_quote": "the Pacific Ring of Fire … where the Nazca Plate subducts beneath the South American Plate",
+        "voice": "Žít u sopky je rozhodnutí. Žít u sopky bez evakuačního plánu je problém.",
+        "image_prompt": "Fotorealistický letecký snímek andské ekvádorské krajiny s sopkami na obzoru a zemědělskou krajinou v popředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-priroda-cloudforest",
+    "country": "Ekvádor",
+    "section": "Příroda",
+    "topic": "Mlžné pralesy",
+    "headline": "Stromy obalené mechem, kolibříci a věčná mlha",
+    "fact": "Ekvádorské mlžné pralesy (cloud forests) v přechodové zóně And jsou jednou z biologicky nejbohatších oblastí světa a domovem tisíců druhů orchidejí a kolibříků.",
+    "source_url": "https://en.wikipedia.org/wiki/Cloud_forest",
+    "source_quote": "cloud forests … among the most biodiverse ecosystems on Earth … particularly rich in orchids and hummingbirds",
+    "voice": "Ve věčné mlze rostou stromy pokryté mechem a orchidejemi. Je to pohádkové místo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ekvádorského mlžného pralese — kmeny stromů pokryté mechem a epifyty, mlha procházející korunami, magická atmosféra, 16:9",
+    "ll": [
+      -78.8,
+      -0.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kolibříci: nejrychlejší srdce na světě",
+        "fact": "Ekvádor je zemí s jedním z nejvyšších počtů druhů kolibříků světa — více než sto třicet druhů. Kolibřík má srdce tlukouk přes tisíc úderů za minutu a je jediným ptákem, který může létat dozadu.",
+        "source_url": "https://en.wikipedia.org/wiki/Hummingbird",
+        "source_quote": "hummingbirds … capable of hovering in mid-air … flying backwards … hearts beat up to 1,200 times per minute",
+        "voice": "Tak malý. Tak rychlý. Tak báječný.",
+        "image_prompt": "Fotorealistický snímek kolibříka sající nektar z červené tropické květiny v ekvádorském mlžném lese, detail, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Výšková zonalita: klima jako výtah",
+        "fact": "Ekvádor na malém území kombinuje tropické pobřeží, mlžný prales v Andách, ledovcové vrcholy a amazónskou džungli. Každých pár set metrů výšky je jiné klima, jiná fauna, jiná kultura. Výšková zonalita nahrazuje zeměpisnou šířku jako klimatický faktor.",
+        "source_url": "https://en.wikipedia.org/wiki/Ecuador",
+        "source_quote": "Ecuador … encompasses diverse ecosystems from tropical coast to Andean glaciers to Amazon rainforest",
+        "voice": "V Ekvádoru stačí vyjet výtahem — a jste v jiném světě.",
+        "image_prompt": "Fotorealistický snímek různých výškových zón Ekvádoru — vlhký prales dole, mlžný les výše, sníh na vrcholu, dramatická krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-lide-otavalo",
+    "country": "Ekvádor",
+    "section": "Lidé",
+    "topic": "Otavalo a domorodé trhové komunity",
+    "headline": "Tržiště, kde se indiáni stali podnikateli",
+    "fact": "Lid Otavalo ve středním Ekvádoru je proslulý textilním řemeslem a obchodem; trh v Otavalu je jedním z největších domorodých trhů Ameriky a Otavalané obchodují po celém světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Otavalo,_Ecuador",
+    "source_quote": "Otavalo … known for its large indigenous market … Otavalo people … sell textiles worldwide",
+    "voice": "Přijeli do New Yorku, Berlína a Tokia — a prodávali textil. Domorodá globalizace.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek otavalského trhu — stánky s barevnými textiliemi a otovalanské ženy v tradičních krojích, přirozené světlo, 16:9",
+    "ll": [
+      -78.2622,
+      0.2306
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tradiční kroj jako firemní identita",
+        "fact": "Otavalané nosí tradiční kroj — bílá košile, tmavé kalhoty, fedora — záměrně i při obchodních cestách po světě. Kroj je součástí jejich marketingové identity a zároveň výrazem hrdosti a odolnosti vůči asimilaci.",
+        "source_url": "https://en.wikipedia.org/wiki/Otavalo_people",
+        "source_quote": "Otavalo people … maintain their traditional dress … as an expression of cultural identity",
+        "voice": "Obchodní oblek je pro jiné. Otavalan přijde v tradičním kroji — a prodá víc.",
+        "image_prompt": "Fotorealistický snímek otavalana v tradičním oděvu na mezinárodním trhu nebo veletrhu mimo Ekvádor, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Domorodý obchod v globálním řetězci",
+        "fact": "Otavalané vytvořili globální obchodní síť — od Ekvádoru přes Kolumbii, Venezuelu, Mexiko až do Evropy a Asie. Je to příklad domorodé komunity, která se zapojila do globalizace za vlastních podmínek, aniž by ztratila identitu.",
+        "source_url": "https://en.wikipedia.org/wiki/Otavalo_people",
+        "source_quote": "Otavalo people … have established a global commercial network … while maintaining their cultural identity",
+        "voice": "Globalizace nemusí znamenat ztrátu identity. Otavalané to dokázali.",
+        "image_prompt": "Fotorealistický letecký snímek města Otavala s trhem a andskými horami v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-kultura-pachamama",
+    "country": "Ekvádor",
+    "section": "Kultura & tradice",
+    "topic": "Pachamama a práva přírody",
+    "headline": "Ekvádor dal přírodě právní osobnost",
+    "fact": "Ekvádor byl v roce dvě tisíce osm první zemí světa, která zakotvila práva přírody — práva Pachamamy (Matky Země) — přímo do ústavy.",
+    "source_url": "https://en.wikipedia.org/wiki/Rights_of_nature",
+    "source_quote": "Ecuador … the first country to enshrine rights of nature in its constitution in 2008",
+    "voice": "Příroda jako subjekt práva, ne jako objekt vlastnictví. Revoluční idea.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ekvádorské andské krajiny s rituálem úcty k přírodě — domorodá ceremonie s květinami a obětinami na hoře, 16:9",
+    "ll": [
+      -78.4678,
+      -0.1807
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pachamama: Matka Země v andské kosmologii",
+        "fact": "Pachamama je v andské domorodé kosmologii živoucí bytost — Matka Země, která všechno plodí a chrání. Tradiční rituály vděčnosti k Pachamamě se provádějí před setbou, sklizní a na začátku každého důležitého úkolu.",
+        "source_url": "https://en.wikipedia.org/wiki/Pachamama",
+        "source_quote": "Pachamama … an earth deity revered by indigenous peoples of the Andes … central to Andean cosmology",
+        "voice": "Zemědělci se modlili k zemi, ne k nebi. Zemi, která je krmila.",
+        "image_prompt": "Fotorealistický snímek andské noci s ohněm a domorodou komunitou při slavnosti Pachamama, hvězdné nebe, 16:9"
+      },
+      "kartograf": {
+        "headline": "Práva přírody jako alternativa k ekologickému právu",
+        "fact": "Ekvádorský ústavní precedens byl inspirován domorodou koncepcí Pachamamy a je předmětem mezinárodního zájmu. V globálním klimatickém právu roste debata o tom, zda řeky, lesy a ekosystémy mohou mít právní subjektivitu podobnou korporacím.",
+        "source_url": "https://en.wikipedia.org/wiki/Rights_of_nature",
+        "source_quote": "the Ecuadorian constitution … inspired legal movements worldwide to grant rights to nature",
+        "voice": "Zákon může ochránit les, pokud má les svá práva. Ekvádor to zkusil.",
+        "image_prompt": "Fotorealistický snímek ekvádorského soudu nebo parlamentní budovy v Quitu, moderní architektura, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-jidlo-cuy",
+    "country": "Ekvádor",
+    "section": "Jídlo",
+    "topic": "Cuy (morče)",
+    "headline": "Andská pochoutka, která šokuje turisty",
+    "fact": "Cuy — pečené morče — je tradiční andský pokrm v Ekvádoru a Peru, který se konzumuje po tisíce let; je bohatý na bílkoviny a byl důležitým zdrojem masa pro horské komunity.",
+    "source_url": "https://en.wikipedia.org/wiki/Cuy",
+    "source_quote": "Cuy … has been a dietary staple in the Andean region … for thousands of years",
+    "voice": "Turisté vidí domácí zvíře. Andšan vidí slavnostní pokrm. Kontext je vše.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního andského jídla cuy — pečené morče podávané na ekvádorském slavnostním stole s brambory a kukuřicí, přirozené světlo, 16:9",
+    "ll": [
+      -78.5,
+      -2.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Morče jako ekologicky nenáročný zdroj bílkovin",
+        "fact": "Morče potřebuje minimum prostoru, jí zbytky a trávu a rychle se rozmnožuje — v horském Ekvádoru a Peru byl ideálním zdrojem masa pro komunity bez pastevních ploch. Dnes se v andské gastronomii prezentuje jako ekologická alternativa k hovězímu.",
+        "source_url": "https://en.wikipedia.org/wiki/Cuy",
+        "source_quote": "guinea pigs … require little space … an efficient source of protein for Andean communities",
+        "voice": "Logika jídla se mění s výškou a dostupností zdrojů.",
+        "image_prompt": "Fotorealistický snímek andské hospodářství s morčaty v tradičním kuchyňském koutě, typická ekvádorská venkovská scéna, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Co je pochoutka a co je tabu: kulturní geografie jídla",
+        "fact": "Postoj k morčatům jako k jídlu nebo jako k mazlíčkovi je čistě kulturní a geografický. V Andách je cuy slavnostní pokrm; v Evropě a Severní Americe je morče domácí mazlíček. Jídlo je mapa kulturních hodnot.",
+        "source_url": "https://en.wikipedia.org/wiki/Cuy",
+        "source_quote": "In the Andes … the guinea pig is a traditional food … in Western cultures it is commonly kept as a pet",
+        "voice": "Kultura rozhoduje, co jíme — a co milujeme.",
+        "image_prompt": "Fotorealistický snímek andského trhu v Ekvádoru s různými potravinami — kukuřice, brambory, sušené maso, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-historie-conquista",
+    "country": "Ekvádor",
+    "section": "Historie",
+    "topic": "Španělská conquista v Ekvádoru",
+    "headline": "Království Quito a rychlý konec světa, který byl",
+    "fact": "Území dnešního Ekvádoru bylo součástí Inkovské říše jako Království Quito; španělský conquistador Sebastián de Belalcázar je dobyl v třicátých letech šestnáctého století a španělská koloniální správa trvala skoro tři staletí.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Ecuador",
+    "source_quote": "Ecuador … was part of the Inca Empire … conquered by Spain in the 1530s",
+    "voice": "Inská kultura trvala staletí. Španělé ji změnili za pár let.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek koloniální kaple nebo kostela v ekvádorských Andách postavené na inckých základech, barokní architektura, přirozené světlo, 16:9",
+    "ll": [
+      -78.4678,
+      -0.1807
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "La Mitad del Mundo: vědecká výprava, která definovala Zemi",
+        "fact": "V osmnáctém století přijela francouzská vědecká expedice změřit délku stupně rovníku — tehdy byl spor, jestli je Země zploštělá u pólů, nebo u rovníku. Výsledky z území dnešního Ekvádoru potvrdily Newtonovu předpověď: zploštělá u pólů.",
+        "source_url": "https://en.wikipedia.org/wiki/French_Geodesic_Mission",
+        "source_quote": "the French Geodesic Mission … measured the shape of the Earth … confirming that it is flattened at the poles",
+        "voice": "Z Ekvádoru se změřilo, jak vypadá celá naše planeta.",
+        "image_prompt": "Fotorealistický snímek historického geodetického monumentu Mitad del Mundo, vědecké přístroje nebo infografika, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nezávislost a Bolívarovo velké selhání",
+        "fact": "Ekvádor se osamostatnil v roce osmnáct dvacet jako součást Bolívarovy Gran Colombie — sjednocené republiky And. Projekt selhal a Gran Colombia se rozpadla na tři státy. Je to příklad, jak geografická roztříštěnost a regionální identity překonaly politický ideál federace.",
+        "source_url": "https://en.wikipedia.org/wiki/Gran_Colombia",
+        "source_quote": "Gran Colombia … dissolved in 1831 … regional tensions … led to its collapse",
+        "voice": "Velká vize, malé části. Bolívarův sen se rozpadl na hranice.",
+        "image_prompt": "Fotorealistický snímek ekvádorského nezávislostního monumentu nebo muzea v Quitu, historická architektura, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-sport-bananas",
+    "country": "Ekvádor",
+    "section": "Sport",
+    "topic": "Ekvádorský fotbal a sportovní vzestup",
+    "headline": "Banánová republika, která se dostala na MS",
+    "fact": "Ekvádor se kvalifikoval na světový šampionát fotbalu a dosáhl výsledků překvapujících světovou veřejnost; je to příklad, jak malá latinskoamerická země může v globálním sportu hrát nad svou váhovou kategorií.",
+    "source_url": "https://en.wikipedia.org/wiki/Ecuador_national_football_team",
+    "source_quote": "Ecuador … has qualified for the FIFA World Cup … advancing to the knockout stage",
+    "voice": "Čtrnáct milionů lidí, světový šampionát. Vypočítejte to.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ekvádorského fotbalového stadionu s nadšenými fanoušky za večerního osvětlení, Andes v dálce, 16:9",
+    "ll": [
+      -78.4678,
+      -0.1807
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "LigaPro a regionální rivalita",
+        "fact": "Ekvádorský fotbal je rozdělen dramatickým soupeřením mezi kluby z Quita (hlavní město, hory) a Guayaquilu (přístavní město, pobřeží). Tato geografická a kulturní rivalita odráží napětí mezi dvěma centry ekvádorského života.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_Ecuador",
+        "source_quote": "Ecuadorian football … a fierce rivalry between Quito and Guayaquil … reflecting regional tensions",
+        "voice": "Hora versus přístav. Tohle soupeření přesahuje fotbal.",
+        "image_prompt": "Fotorealistický snímek ekvádorského fotbalového zápasu — hráči na hřišti, atmosféra latinskoamerického stadionu, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Quito a Guayaquil: dvě hlavní města, jeden stát",
+        "fact": "Ekvádor má dvě dominantní centra — Quito (politické hlavní město v Andách) a Guayaquil (ekonomické a přístavní centrum na pobřeží). Tato dvojkost je strukturálním rysem ekvádorské geografie, politiky i kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Ecuador",
+        "source_quote": "Ecuador … Quito, the political capital … and Guayaquil, the largest city and commercial hub",
+        "voice": "Mít dvě srdce je výhoda i problém. Ekvádor to ví.",
+        "image_prompt": "Fotorealistický letecký snímek přístavu Guayaquil — řeka Guayas, lodě, moderní zástavba, Tichý oceán v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-umeni-tigua",
+    "country": "Ekvádor",
+    "section": "Umění",
+    "topic": "Malba Tigua",
+    "headline": "Kečuánský malíř na ovčí kůži",
+    "fact": "Malba Tigua je domorodé ekvádorské malířské umění z obce Tigua u Cotopaxi; umělci malují na napnutou ovčí kůži scény z andského života a domorodé mytologie.",
+    "source_url": "https://en.wikipedia.org/wiki/Tigua_art",
+    "source_quote": "Tigua painting … a form of indigenous Ecuadorian art … painted on stretched sheepskin … depicting Andean life and mythology",
+    "voice": "Na plátně z ovčí kůže celá kosmologie And. Je to magie i dokument.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek malby Tigua — barevná naivistická scéna s horami, sopkami, zvířaty a lidmi na tmavém pozadí, muzejní osvětlení, 16:9",
+    "ll": [
+      -78.7,
+      -0.9
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Julián Ugsha a vznik tradice z nouze",
+        "fact": "Malba Tigua vznikla v sedmdesátých letech dvacátého století, kdy se pastevec Julián Ugsha naučil malovat a prodával obrazy turistům. Dnes celá komunita žije z tohoto umění a je to uznávaná andská tradice jen půl století stará.",
+        "source_url": "https://en.wikipedia.org/wiki/Tigua_art",
+        "source_quote": "Tigua art … began in the 1970s when Julio Toaquiza began painting on sheepskin",
+        "voice": "Tradice nemusí být stará. Stačí, že je autentická.",
+        "image_prompt": "Fotorealistický snímek malíře Tigua při práci — ovčí kůže na stěně, pastevecká osada, Cotopaxi v pozadí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umění jako ekonomická strategie komunity",
+        "fact": "Malba Tigua přeměnila pasteveckou komunitu bez alternativní obživy v centrum exportního umění. Je to příklad, jak kulturní produkce může být strategií ekonomického rozvoje komunit v periferních oblastech s omezenými zdroji.",
+        "source_url": "https://en.wikipedia.org/wiki/Tigua_art",
+        "source_quote": "Tigua painting … transformed the village into an important source of Andean art for international markets",
+        "voice": "Nárůst příjmů z umění neznamená ztrátu identity. Tigua to ukazuje.",
+        "image_prompt": "Fotorealistický snímek galerie nebo trhu s malbami Tigua v Quitu nebo Otavalu, barevné obrazy na stěnách, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-jazyk-spanelstina",
+    "country": "Ekvádor",
+    "section": "Jazyk & slova",
+    "topic": "Ekvádorská španělština a domorodé jazyky",
+    "headline": "Na rovníku mluví tuctem jazyků",
+    "fact": "V Ekvádoru se mluví španělsky jako úředním jazykem, ale kečuánština a dalších třináct domorodých jazyků mají v ústavě status spoluurčujících jazyků; jazyková rozmanitost odráží etnickou komplexitu země.",
+    "source_url": "https://en.wikipedia.org/wiki/Languages_of_Ecuador",
+    "source_quote": "Ecuador … Spanish is the official language … Kichwa and Shuar … are official languages of intercultural relations",
+    "voice": "Španělština unifikuje. Domorodé jazyky zachovávají identitu. Obojí najednou.",
+    "visual_type": "typographic",
+    "ll": [
+      -78.4678,
+      -0.1807
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kichwa: ekvádorská varianta kečuánštiny",
+        "fact": "Kichwa (kichwa, quechua ekvádorského typu) je nejrozšířenějším domorodým jazykem Ekvádoru; liší se od peruánské kečuánštiny ve výslovnosti i slovní zásobě. Je to živý jazyk, který se vyučuje na školách a vysílá v rádiu.",
+        "source_url": "https://en.wikipedia.org/wiki/Kichwa_language",
+        "source_quote": "Kichwa … the most widely spoken indigenous language in Ecuador … used in education and media",
+        "voice": "Jazyk přežívá, dokud ho děti mluví. V Ekvádoru ho stále mluví.",
+        "image_prompt": "Fotorealistický snímek ekvádorské domorodé školy s výukou kichwanštiny, děti v tradičních krojích, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyková politika: uznání bez zdrojů",
+        "fact": "Ekvádorská ústava je progresivní v uznání domorodých jazyků — ale praktická realizace je pomalá: jazykové vzdělání, soudní tlumočení a veřejné služby v kichwě jsou nedostatečné. Je to příklad, kdy zákon předbíhá institucionální kapacitu.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_Ecuador",
+        "source_quote": "despite constitutional recognition … indigenous languages face challenges in implementation",
+        "voice": "Zákon řekne ano. Praxe pak říká: ale pomalu.",
+        "image_prompt": "Fotorealistický snímek dvojjazyčné ekvádorské státní cedule — španělsky a kichwansky, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-priroda-tortugas",
+    "country": "Ekvádor",
+    "section": "Příroda",
+    "topic": "Galapážská obří želva",
+    "headline": "Žije přes sto padesát let a pamatuje Darwina",
+    "fact": "Galapážská obří želva je jedním z nejdéle žijících obratlovců — někteří jedinci žijí přes sto padesát let; různé druhy na různých ostrovech mají různě tvarované krunýře přizpůsobené dostupné potravě.",
+    "source_url": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_tortoise",
+    "source_quote": "Galápagos tortoises … among the longest-lived vertebrates … some individuals living over 150 years",
+    "voice": "Želvák, který byl na ostrově, když Darwin přijel, tam byl ještě o sto let later.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek obří galapážské želvy na sopečném ostrově — pomalý pohyb a úctyhodná velikost, přirozené světlo, bez lidí, 16:9",
+    "ll": [
+      -90.9656,
+      -0.9538
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lonesome George: poslední ze svého druhu",
+        "fact": "Lonesome George byl poslední želva druhu Chelonoidis abingdonii z ostrova Pinta; zemřel v roce dva tisíce dvanáct bez potomků. Je symbolem vymírání způsobeného lidskou činností — konkrétně invazivními kozami, které zničily vegetaci ostrova.",
+        "source_url": "https://en.wikipedia.org/wiki/Lonesome_George",
+        "source_quote": "Lonesome George … the last known individual of his species … died in 2012",
+        "voice": "Jeden druh, jeden jedinec. A pak nikdo.",
+        "image_prompt": "Fotorealistický snímek Lonesome George ve výzkumné stanici Charlese Darwina — starší samec želvy, historická fotografie, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Invazivní druhy jako globální ekologická hrozba",
+        "fact": "Galapágy jsou extrémně zranitelné vůči invazivním druhům — kozám, krysám, kočkám a rostlinám přineseným lidmi. Tyto druhy decimují endemické organismy, které nemají přirozené predátory. Je to globální příklad ekologického narušení izolovaných ekosystémů.",
+        "source_url": "https://en.wikipedia.org/wiki/Invasive_species_in_Galap%C3%A1gos",
+        "source_quote": "invasive species … one of the greatest threats to Galápagos biodiversity",
+        "voice": "Koza na ostrově se stane katastrofou. To nepřeháníme.",
+        "image_prompt": "Fotorealistický snímek programu ochrany přírody na Galapágách — rangers s označenými želvami, výzkumná stanice, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-lide-montalvo",
+    "country": "Ekvádor",
+    "section": "Lidé",
+    "topic": "Juan Montalvo",
+    "headline": "Spisovatel, který psem o tyranovi lepší než meč",
+    "fact": "Juan Montalvo byl ekvádorský spisovatel a esejista devatenáctého století; jeho pero bylo tak ostré, že po svém vyhnání říkal: 'Pero je mocnější než meč'; bojoval textem proti diktátorovi Garcíovi Morenovi.",
+    "source_url": "https://en.wikipedia.org/wiki/Juan_Montalvo",
+    "source_quote": "Juan Montalvo … an Ecuadorian writer … known for his opposition to dictators through his writing",
+    "voice": "'Moje pero ho zabilo.' Montalvo po vraždě Garcíi Morena. Skromná rétorika.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické knihovny nebo muzea v Ambatu s Montalvovým portrétem, historická literatura, přirozené světlo, 16:9",
+    "ll": [
+      -78.6197,
+      -1.2491
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "García Moreno: theokrat, co vládl jménem Boha",
+        "fact": "Gabriel García Moreno byl ekvádorský konzervativní prezident a theokrat; zasvětil Ekvádor Srdci Ježíšovu a vládl autoritářsky jménem katolicismu. Je symbolem latinskoamerického konzervatismu a klerikalismu devatenáctého století.",
+        "source_url": "https://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_Moreno",
+        "source_quote": "García Moreno … dedicated Ecuador to the Sacred Heart of Jesus … a theocratic ruler",
+        "voice": "Stát ve jménu Boha. Montalvo proti němu psal. Pak byl zavražděn.",
+        "image_prompt": "Fotorealistický snímek historické quiteñské katedrály z devatenáctého století — barokní interiér a chrámová atmosféra, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Konzervatismus versus liberalismus: formování ekvádorské politiky",
+        "fact": "Napětí mezi konzervativním Quitem (katolickým horským centrem) a liberálním Guayaquilem (protestantsky a zahraničně orientovaným přístavem) je trvalý vzorec ekvádorské politiky. Montalvo reprezentoval liberální proud, Moreno konzervativní.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Ecuador",
+        "source_quote": "the conflict between conservative Quito and liberal Guayaquil … a defining feature of Ecuadorian politics",
+        "voice": "Dvě města, dva světy, jeden stát. Vždy v napětí.",
+        "image_prompt": "Fotorealistický snímek centra Guayaquilu a řeky — liberální přístavní město jako kontrast ke konzervativnímu Quitu, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-lide-humboldt",
+    "country": "Ekvádor",
+    "section": "Lidé",
+    "topic": "Alexander von Humboldt v Ekvádoru",
+    "headline": "Německý vědec a první člověk, který změřil výšky And",
+    "fact": "Alexander von Humboldt navštívil Ekvádor v roce osmnáct tisíc jedna a vystoupil na Chimborazo; jeho výzkumy přispěly k moderní ekologii, geografii a konceptu výškové zonality.",
+    "source_url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt",
+    "source_quote": "Humboldt … visited Ecuador … climbed Chimborazo … his work laid the foundations of modern ecology",
+    "voice": "Humboldt byl na Chimborazo výš než kdokoli jiný v té době. A sepsal to.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zasněžené sopky Chimborazo v Ekvádoru — mohutný kopec se zasněženými svahy a andská plošina, dramatické světlo, 16:9",
+    "ll": [
+      -78.8156,
+      -1.4647
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Naturgemälde: obraz přírody jako celek",
+        "fact": "Humboldt vytvořil v Ekvádoru slavný Naturgemälde — ilustraci ukazující rostlinná pásma na Chimborazo od tropického pralese přes horský les po ledovce. Je to průkopnické dílo ekologie — první vizualizace vztahu výšky, klimatu a biodiverzity.",
+        "source_url": "https://en.wikipedia.org/wiki/Naturgemälde",
+        "source_quote": "Humboldt's Naturgemälde … depicted the vertical zonation of vegetation on Chimborazo",
+        "voice": "Jedna hora, celý ekologický systém. Humboldt to nakreslil.",
+        "image_prompt": "Fotorealistický snímek Chimborazo sopky s viditelnou vegetací od džungle po sníh, výšková zonalita v jednom pohledu, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Humboldtův vliv na vědecké myšlení o světě",
+        "fact": "Humboldt byl průkopníkem v pojetí přírody jako propojeného systému — nikoli jako sbírky izolovaných faktů. Toto holistické chápání přírody ovlivnilo Darwina, Thoreaua i moderní ekologii. Ekvádor byl jeho klíčovým terénem.",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt",
+        "source_quote": "Humboldt … understood nature as an interconnected whole … influenced Darwin and modern ecology",
+        "voice": "Jeden badatel v Ekvádoru změnil to, jak věda chápe svět.",
+        "image_prompt": "Fotorealistický snímek Přírodovědného muzea v Quitu nebo Muzea Humboldta s historickými mapami a přírodovědeckými exponáty, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-kultura-latacunga",
+    "country": "Ekvádor",
+    "section": "Kultura & tradice",
+    "topic": "Mama Negra — La Santísima Tragedia",
+    "headline": "Černá máma a náboženský karneval And",
+    "fact": "Mama Negra je tradiční festival v Latacunze — postava černé ženy na koni je centrem průvodu mísícího španělské, indiánské a africké prvky; slaví se dvakrát ročně a je zapsán jako národní kulturní dědictví.",
+    "source_url": "https://en.wikipedia.org/wiki/Mama_Negra",
+    "source_quote": "Mama Negra … a traditional festival in Latacunga … a mixture of indigenous, African, and Spanish cultural elements",
+    "voice": "Tři kultury, jedna slavnost. Ekvádor v jednom průvodu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek průvodu Mama Negra v Latacunze — barevné kostýmy, jezdci na koních a tanečníci v ulicích andského města, přirozené světlo, 16:9",
+    "ll": [
+      -78.615,
+      -0.9306
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sincretismus tří kultur v jednom průvodu",
+        "fact": "Mama Negra odráží tři vrstvy ekvádorské identity: indiánské rituály dožínek, africký vliv (přes otrokářství na pobřeží) a španělský katolicismus. Je to živoucí příklad kulturního synkretismu — žádná vrstva nezmizela, ale splynuly.",
+        "source_url": "https://en.wikipedia.org/wiki/Mama_Negra",
+        "source_quote": "the festival … reflects the blending of indigenous, African, and Spanish cultures in Ecuadorian identity",
+        "voice": "Kolonie přinesly tři kultury. Festival je zachoval všechny tři.",
+        "image_prompt": "Fotorealistický snímek tanečníků v černém make-upu a barevných kostýmech Mama Negra, pestrá atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Latacunga a Cotopaxi: život pod sopkou",
+        "fact": "Latacunga leží v přímém ohrožení sopky Cotopaxi — město bylo v historii zničeno erupcemi a vždy obnoveno na stejném místě. Každoroční festival Mama Negra se také slaví jako výraz vděčnosti za přežití sopce navzdory. Geografie formuje slavnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Latacunga",
+        "source_quote": "Latacunga … repeatedly destroyed and rebuilt after eruptions of Cotopaxi",
+        "voice": "Město, které znovu a znovu ruiny obnoví. Charakter místa v gestech.",
+        "image_prompt": "Fotorealistický snímek Latacungy s sopkou Cotopaxi v pozadí, andská krajina a město, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-umeni-guayasamin",
+    "country": "Ekvádor",
+    "section": "Umění",
+    "topic": "Oswaldo Guayasamín",
+    "headline": "Malíř bolesti, který maloval Latinskou Ameriku",
+    "fact": "Oswaldo Guayasamín byl ekvádorský malíř a jeden z nejvýznamnějších latinskoamerických umělců dvacátého století; jeho dílo Huacayñán (Stezka pláče) zobrazuje utrpení domorodých Američanů.",
+    "source_url": "https://en.wikipedia.org/wiki/Oswaldo_Guayasam%C3%ADn",
+    "source_quote": "Guayasamín … one of the most important Latin American painters … his works depict the suffering of indigenous peoples",
+    "voice": "Maloval pláč, bolest a naději. Latinská Amerika v obrazech.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Capilla del Hombre (Kaple člověka) v Quitu — monumentální budova s Guayasamínovo dílem, přirozené světlo, 16:9",
+    "ll": [
+      -78.4889,
+      -0.1621
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Capilla del Hombre: chrám lidskosti",
+        "fact": "Capilla del Hombre (Kaple člověka) je Guayasamínův opus magnum — budova v Quitu s obrovskými nástěnnými malbami dokumentujícími latinskoamerické utrpení. Guayasamín ji sám nazýval svou jedinou modlitbou.",
+        "source_url": "https://en.wikipedia.org/wiki/Capilla_del_Hombre",
+        "source_quote": "the Capilla del Hombre … Guayasamín's greatest work … a tribute to Latin American humanity",
+        "voice": "Muzeum jako modlitba. Guayasamín to chápal jinak.",
+        "image_prompt": "Fotorealistický snímek interiéru Capilla del Hombre s mohutnými figurálními malbami, dramatické osvětlení, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Domorodé umění jako politické svědectví",
+        "fact": "Guayasamínovo umění propojovalo estetiku s politickým aktivismem — zobrazoval diktatury, chudobu a rasismus jako svědek i obžalobce. V Latinské Americe je tradice angažovaného umění silnější než v Evropě — malíř a aktivista jsou jedna osoba.",
+        "source_url": "https://en.wikipedia.org/wiki/Oswaldo_Guayasam%C3%ADn",
+        "source_quote": "Guayasamín … painted the suffering of the oppressed … a political and humanitarian voice",
+        "voice": "Malíř, který obžaloval diktatury na plátně. Nebyl odsouzen.",
+        "image_prompt": "Fotorealistický snímek Guayasamínovy malby zobrazující latinoamerické domorodé tváře, expresivní styl, muzejní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-umeni-panama",
+    "country": "Ekvádor",
+    "section": "Umění",
+    "topic": "Panamský klobouk z Ekvádoru",
+    "headline": "Klobouk jménem Panama se vyrábí v Ekvádoru",
+    "fact": "Panamský klobouk pochází z Ekvádoru — zejména z Montecristi a Cuency; název 'Panama' získal, protože přes Panamu se exportoval do světa v době stavby Panamského průplavu.",
+    "source_url": "https://en.wikipedia.org/wiki/Panama_hat",
+    "source_quote": "Panama hat … woven in Ecuador … the name 'Panama hat' derives from the hats' popularity during the construction of the Panama Canal",
+    "voice": "Slavný klobouk, špatné jméno. Ekvádorský, ne panamský.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tkáče panamského klobouku v Montecristi v Ekvádoru — ruční tkaní bílých vláken palmového listí, přirozené světlo, 16:9",
+    "ll": [
+      -80.6667,
+      -1.05
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Toquilla: vlákno, ze kterého se tká",
+        "fact": "Panamský klobouk se tká z vláken palmy Carludovica palmata (toquilla) ručně; nejkvalitnější kusy z Montecristi mají tak jemné pletivo, že je lze svinout a dát do sklenice. Tkaní jednoho kvalitního klobouku trvá několik měsíců.",
+        "source_url": "https://en.wikipedia.org/wiki/Panama_hat",
+        "source_quote": "the finest Panama hats … woven so tightly they can be rolled up",
+        "voice": "Strávit měsíce na klobouku. Mistrovství se nedělá rychle.",
+        "image_prompt": "Fotorealistický detailní snímek jemného pletiva panamského klobouku — textury bílých vláken, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "UNESCO řemeslo a geografie výroby",
+        "fact": "UNESCO zapsalo tradiční tkaní panamského klobouku z Ekvádoru jako nehmotné kulturní dědictví. Řemeslo je koncentrováno v pobřežním regionu Manabí (Montecristi) a hornatém Azuay (Cuenca) — dvě odlišná prostředí, dvě techniky.",
+        "source_url": "https://en.wikipedia.org/wiki/Panama_hat",
+        "source_quote": "Panama hat weaving … inscribed on UNESCO's Intangible Cultural Heritage list … centred in Montecristi and Cuenca",
+        "voice": "Dvě města, jedna tradice. Každé po svém.",
+        "image_prompt": "Fotorealistický snímek cuencenského obchodu s panamskými klobouky a mistrem tkáčem, historická ulice, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-sport-jefferson",
+    "country": "Ekvádor",
+    "section": "Sport",
+    "topic": "Jefferson Pérez — zlatý chodec",
+    "headline": "Zlatá olympijská medaile v atletice z malé země",
+    "fact": "Jefferson Pérez vyhrál zlatou medaili v chůzi na olympijských hrách v Atlantě v roce devadesát šest — první zlatou olympijskou medaili v historii Ekvádoru; stal se národním hrdinou a inspirací pro jihoamerický atletismus.",
+    "source_url": "https://en.wikipedia.org/wiki/Jefferson_P%C3%A9rez",
+    "source_quote": "Jefferson Pérez … won the gold medal in the 20 km race walk at the 1996 Atlanta Olympics … Ecuador's first Olympic gold",
+    "voice": "Chodec z And. Zlatý na Olympiádě. Celý Ekvádor plakal.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek atletické chůze na olympijském stadionu — závodník ve žluto-modrém dresu ekvádorské reprezentace, dramatické světlo, bez rozpoznatelných tváří, 16:9",
+    "ll": [
+      -78.6197,
+      -1.2491
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Chůze jako andský sport",
+        "fact": "Sportovní chůze je v Ekvádoru populárnější než v jiných zemích; andské komunity tradičně chodily na velké vzdálenosti v hornatém terénu jako způsob dopravy. Pérezův úspěch navázal na tuto kulturní tradici pohybu.",
+        "source_url": "https://en.wikipedia.org/wiki/Jefferson_P%C3%A9rez",
+        "source_quote": "Ecuador … a tradition of walking in high-altitude terrain … reflected in the country's success in race walking",
+        "voice": "Kultura chůze dala svět šampiona.",
+        "image_prompt": "Fotorealistický snímek andské cesty s místními chodci v horách Ekvádoru, tradiční cestování, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá zeme, velké medaile: sport jako okno do světa",
+        "fact": "Ekvádor je malá latinskoamerická země, ale několikrát zazářila ve světovém sportu — Pérez ve chůzi, Mindo jako birdwatching destinace, galapážský ekoturismus. Sport i příroda jsou nástroje mezinárodní viditelnosti bez vojenské nebo ekonomické síly.",
+        "source_url": "https://en.wikipedia.org/wiki/Ecuador_at_the_Olympics",
+        "source_quote": "Ecuador … has achieved notable success in athletics despite its small size",
+        "voice": "Malé země mají jiné zbraně — sport, přírodu, kulturu.",
+        "image_prompt": "Fotorealistický snímek Ecuadorského olympijského výboru nebo atletického stadionu v Quitu, moderní prostředí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-sport-banana",
+    "country": "Ekvádor",
+    "section": "Sport",
+    "topic": "Banánoví magnáti a sport",
+    "headline": "Největší exportér banánů světa sponzoruje sport",
+    "fact": "Ekvádor je největším světovým exportérem banánů; příjmy z banánového průmyslu formovaly ekvádorskou ekonomiku a rodinné klany banánových magnátů jsou klíčovými hráči v ekvádorské politice a sponzorství sportu.",
+    "source_url": "https://en.wikipedia.org/wiki/Banana_production_in_Ecuador",
+    "source_quote": "Ecuador … the world's largest exporter of bananas … a major driver of the economy",
+    "voice": "Kde banány, tam peníze. A kde peníze, tam fotbal.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek banánové plantáže v ekvádorském pobřežním regionu — řady banánových keřů, tropická vegetace, přirozené světlo, 16:9",
+    "ll": [
+      -79.5,
+      -1.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "El Niño a banánová krize",
+        "fact": "El Niño opakovaně devastuje ekvádorské banánové plantáže — přemokřením nebo suchem — způsobuje ekonomické krize, které zasahují celé regiony. Závislost na monokultuře jedné exportní plodiny je ekonomická zranitelnost.",
+        "source_url": "https://en.wikipedia.org/wiki/Banana_production_in_Ecuador",
+        "source_quote": "El Niño events … severely impact Ecuador's banana production",
+        "voice": "Jedna plodina, jeden přírodní jev, celá krize. Monokultura je hrozbou.",
+        "image_prompt": "Fotorealistický snímek poškozené banánové plantáže po záplav nebo suchu, expresivní kontrast zdravé a poškozené vegetace, 16:9"
+      },
+      "kartograf": {
+        "headline": "Banánová republika: termín z Ekvádoru?",
+        "fact": "Termín 'banánová republika' původně popisoval Honduras a Guatemalu ovládané United Fruit Company, ale Ekvádor zažil podobný model — zahraniční korporace (Dole, Chiquita) ovládaly ekonomiku a politiku. Je to příklad toho, jak zemědělský export formuje politickou geografii.",
+        "source_url": "https://en.wikipedia.org/wiki/Banana_republic",
+        "source_quote": "the term 'banana republic' … describes countries … economically dependent on the export of agricultural products controlled by foreign companies",
+        "voice": "Banán jako politická metafora. A realita.",
+        "image_prompt": "Fotorealistický letecký snímek pobřežní ekvádorské planiny s rozsáhlými banánovými plantážemi, kontrastní zelená v suchém terénu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-jidlo-seco",
+    "country": "Ekvádor",
+    "section": "Jídlo",
+    "topic": "Seco de pollo",
+    "headline": "Ekvádorský nedělní oběd ve všech rodinách",
+    "fact": "Seco de pollo je ekvádorský dušený kuřecí pokrm marinovaný v pivě a čirivita (koriandru); podává se s žlutou rýží a maduros (smaženými banány) — klasický ekvádorský nedělní rodinný oběd.",
+    "source_url": "https://en.wikipedia.org/wiki/Ecuadorian_cuisine",
+    "source_quote": "Seco de pollo … one of Ecuador's most popular traditional dishes … chicken stewed in beer and herbs",
+    "voice": "Kuře, pivo a koriandrum. Ekvádorská nedělní alchymie.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek seco de pollo v hluboké misce — dušené kuře se žlutou rýží, smaženými banány a avokádem, přirozené světlo, 16:9",
+    "ll": [
+      -78.6197,
+      -1.2491
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Maduro vs. patacón: banán dvěma způsoby",
+        "fact": "Ekvádorská kuchyně používá banán dvěma odlišnými způsoby: maduro (zralý, smaženém dozlatova) a patacón (zelený, rozmáčknutý a smažený jako chipsy). Dva různé produkty ze stejné rostliny — záleží na zralosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Ecuadorian_cuisine",
+        "source_quote": "Ecuadorian cuisine … uses plantains extensively … both ripe (maduros) and unripe (patacones)",
+        "voice": "Jedna rostlina, dva pokrmy. Záleží kdy ho sklidíte.",
+        "image_prompt": "Fotorealistický snímek maduros a patacones vedle sebe na rustikálním stole — sladký zlatý a křupavý zelený, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Regionální kuchyně: sierra vs. costa",
+        "fact": "Ekvádorská kuchyně se dramaticky liší mezi Andami (sierra) a pobřežím (costa): sierra preferuje brambory, kukuřici a maso; costa používá ryby, mořské plody, banány a krevety. Výšková a klimatická geografie formuje kuchyni přímo.",
+        "source_url": "https://en.wikipedia.org/wiki/Ecuadorian_cuisine",
+        "source_quote": "Ecuadorian cuisine … varies significantly between coastal and highland regions",
+        "voice": "Mapa chutí kopíruje topografickou mapu. V Ekvádoru dokonale.",
+        "image_prompt": "Fotorealistický snímek ekvádorského pobřežního rybího trhu s čerstvými rybami a krevety, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-jidlo-hornado",
+    "country": "Ekvádor",
+    "section": "Jídlo",
+    "topic": "Hornado",
+    "headline": "Prasetko z hliněné pece jako andský svátek",
+    "fact": "Hornado je ekvádorský pokrm z celého prasete pečeného pomalu v hliněné peci; je typický pro andské trhy a slavnosti, podává se s mote (vařenou hominy kukuřicí), llapingacho (bramborovými plackami) a agrio (pikantní omáčkou).",
+    "source_url": "https://en.wikipedia.org/wiki/Hornado",
+    "source_quote": "Hornado … a traditional Ecuadorian dish of slow-roasted whole pork … sold in markets throughout the Andes",
+    "voice": "Celé prase pomalu pečené od rána. Na trhu ho koupíš ve čtvrtek a v neděli.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hornado na andském ekvádorském trhu — zlatavé celé prase na velkém pultu, tradiční atmosféra trhového dne, přirozené světlo, 16:9",
+    "ll": [
+      -78.6847,
+      -1.6645
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mercado Indígena: centrum andského života",
+        "fact": "V ekvádorských andských obcích jako Saquisilí, Otavalo nebo Riobamba se každý týden koná domorodý trh — trhový den je sociální, ekonomický a gastronomický střed komunity. Hornado je neodmyslitelnou součástí tohoto rituálu.",
+        "source_url": "https://en.wikipedia.org/wiki/Indigenous_markets_in_Ecuador",
+        "source_quote": "Ecuadorian indigenous markets … weekly gatherings combining trade, social life and food",
+        "voice": "Trh je centrum světa. Nejméně jednou týdně.",
+        "image_prompt": "Fotorealistický snímek andského ekvádorského trhového dne — barevné stánky, kečuánské ženy v tradičních krojích a kakofonie zboží, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Španělé přinesli prasa: zoonózy a koloniální zvířata",
+        "fact": "Prase bylo přineseno Španěly do Ameriky — jako všechna velká hospodářská zvířata. Chov prasat se rozšířil rychle, protože prasata jsou nenároční a výnosní. Zároveň přinesla nové choroby domorodým populacím. Zvíře jako trojský kůň kolonizace.",
+        "source_url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+        "source_quote": "domestic pigs … introduced to the Americas by Spanish colonists … as part of the Columbian Exchange",
+        "voice": "Prase přijelo s lodí. A zůstalo v kuchyni navždy.",
+        "image_prompt": "Fotorealistický snímek andské farmy s prasaty v tradičním hospodářství, horská krajina v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-historie-independencia",
+    "country": "Ekvádor",
+    "section": "Historie",
+    "topic": "Quito jako první město nezávislosti",
+    "headline": "Quito jako první: 10. srpna 1809",
+    "fact": "Quito bylo desátého srpna osmnáct tisíc devět první hlavní město Španělské Ameriky, které vyhlásilo autonomní vládu — tzv. Primer Grito de Independencia (První výkřik nezávislosti), i když plná nezávislost přišla až o dvanáct let later.",
+    "source_url": "https://en.wikipedia.org/wiki/Quito",
+    "source_quote": "Quito … the site of the first declaration of independence in Spanish America … on 10 August 1809",
+    "voice": "Jako první. To si Ekvádor pamatuje na každém bankovce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Plaza de la Independencia v Quitu — centrální náměstí s Pomníkem nezávislosti a kolonialní architekturou, přirozené světlo, 16:9",
+    "ll": [
+      -78.4678,
+      -0.1807
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mariscal Sucre: osvoboditel z Venezuely",
+        "fact": "Antonio José de Sucre byl venezuelský generál, který porazil španělské síly v bitvě u Pichincha v roce osmnáct dvacet dva na svazích sopky nad Quitem; tím fakticky dobyl nezávislost Ekvádoru. Je hlavní hrdina národní svobody.",
+        "source_url": "https://en.wikipedia.org/wiki/Antonio_Jos%C3%A9_de_Sucre",
+        "source_quote": "Sucre … won the Battle of Pichincha … securing Ecuadorian independence",
+        "voice": "Venezuelský hrdina osvobodil Ekvádor. Hranice ve Jižní Americe jsou pestré.",
+        "image_prompt": "Fotorealistický snímek bitevního pole nebo pomníku Pichincha nad Quitem — historická lokalita a andská krajina, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ekvádor jako součást Gran Colombie a pak sám",
+        "fact": "Po nezávislosti se Ekvádor stal součástí Bolívarovy Gran Colombie — spolu s Venezuelou a Kolumbií. Gran Colombia se rozpadla v roce osmnáct třicet jedna a Ekvádor se osamostatnil jako República del Ecuador. Geografie a regionální identita si vybraly svůj daň.",
+        "source_url": "https://en.wikipedia.org/wiki/Gran_Colombia",
+        "source_quote": "Ecuador … part of Gran Colombia … became an independent republic in 1830",
+        "voice": "Velký sen sjednocení. Rozdělil se na tři státy za devět let.",
+        "image_prompt": "Fotorealistický snímek historické ekvádorské mapy z devatenáctého století, Gran Colombia a rozdělení, muzejní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-historie-oil",
+    "country": "Ekvádor",
+    "section": "Historie",
+    "topic": "Ropný boom a jeho dopad",
+    "headline": "Ropa změnila Ekvádor za jeden rok",
+    "fact": "Ropný boom sedmdesátých let přeměnil Ekvádor z chudé zemědělské země na exportéra surovin; příjmy z ropy financovaly infrastrukturu, ale také zadlužení a korupci; kontroverze kolem Texaca/Chevron patří k největším ekologickým sporům v historii.",
+    "source_url": "https://en.wikipedia.org/wiki/Petroleum_industry_in_Ecuador",
+    "source_quote": "the oil boom of the 1970s … transformed Ecuador … significant environmental and social consequences",
+    "voice": "Ropa změnila zemi za deset let. Ale škody v džungli trvají desítky let.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ropné plošiny v ekvádorské Amazonii — kontrast průmyslové infrastruktury a okolního pralese, dramatické světlo, 16:9",
+    "ll": [
+      -76.5,
+      -1.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Texaco v Amazónii: ekologická katastrofa",
+        "fact": "Americká ropná společnost Texaco (dnes Chevron) těžila v ekvádorské Amazonii mezi šedesát čtyři a devadesát dva a zanechala extrémní znečištění — otevřené nádrže ropy, kontaminovaná voda a vzestup rakoviny v domorodých komunitách.",
+        "source_url": "https://en.wikipedia.org/wiki/Texaco_in_Ecuador",
+        "source_quote": "Texaco … left behind widespread oil contamination … impacting indigenous communities and the environment",
+        "voice": "Ropná společnost odešla. Znečištění zůstalo.",
+        "image_prompt": "Fotorealistický snímek kontaminované vodní plochy nebo ropné skvrny v ekvádorském pralese, environmentální katastrofa, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Resource curse: ropa jako prokletí Latinské Ameriky",
+        "fact": "Paradox bohatství surovin (resource curse) zasáhl Ekvádor, Venezuelu i Nigérii — země bohaté na ropu se zadlužily a jejich instituce slábly. Ekvádor opakovaně přerušoval splácení zahraničního dluhu; ropné příjmy nevytvořily udržitelný ekonomický základ.",
+        "source_url": "https://en.wikipedia.org/wiki/Resource_curse",
+        "source_quote": "Ecuador … affected by the resource curse … oil revenues led to debt and institutional weakness",
+        "voice": "Bohatství, které způsobuje chudobu. Paradox surovin.",
+        "image_prompt": "Fotorealistický letecký snímek ekvádorské amazońské oblasti s ropnými instalacemi a pralesem, kontrast průmyslu a přírody, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-kultura-tinku",
+    "country": "Ekvádor",
+    "section": "Kultura & tradice",
+    "topic": "Mindalae a andský obchod",
+    "headline": "Obchodníci, kteří překračovali hranice impérií",
+    "fact": "Mindalae byli specializovaní andští obchodníci, kteří v prekolumbovském Ekvádoru obchodovali na vzdálenosti stovek kilometrů přes různé ekologické zóny; jejich role přežila inckou i španělskou nadvládu.",
+    "source_url": "https://en.wikipedia.org/wiki/Mindalae",
+    "source_quote": "Mindalae … specialist traders in pre-Columbian Ecuador … crossing ecological zones and political boundaries",
+    "voice": "Obchodník byl v Andách víc než kupec — byl to mostní díl mezi světy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního andského trhového místa v Ekvádoru — výměna zboží mezi lidmi z různých regionů, tradiční kroje, přirozené světlo, 16:9",
+    "ll": [
+      -78.5,
+      -1.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vertikální výměna jako základ andské ekonomiky",
+        "fact": "Andská ekonomika před a po inkovské říši fungovala na principu vertikální výměny — plodiny z různých výškových pásem (coca z nižin, brambory z vysokých pásem, ryby z pobřeží) putovaly přes obchodní sítě a zásobovaly komunity mimo jejich přirozené prostředí.",
+        "source_url": "https://en.wikipedia.org/wiki/Vertical_archipelago",
+        "source_quote": "vertical archipelago … a model of Andean economy based on controlling multiple ecological zones",
+        "voice": "Výška jako ekonomická geografie. Každé pásmo má jinou plodinu.",
+        "image_prompt": "Fotorealistický snímek andského trhového prostoru s různými produkty z různých výškových zón — zemědělské plodiny, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obchod a integrace před moderním státem",
+        "fact": "Mindalae obchodní sítě překračovaly budoucí státní hranice Peru, Ekvádoru, Kolumbie a Bolívie — existovaly tisíce let před evropskou kolonizací. Jsou příkladem toho, jak ekonomická integrace předcházela politickým strukturám.",
+        "source_url": "https://en.wikipedia.org/wiki/Mindalae",
+        "source_quote": "Mindalae trade networks … predated modern political boundaries … linking coastal and highland regions",
+        "voice": "Obchod vytváří vazby, které přetrvávají státy.",
+        "image_prompt": "Fotorealistický letecký snímek andské obchodní stezky — kamenná cesta vedoucí přes různé ekologické zóny Ekvádoru, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-jazyk-shuar",
+    "country": "Ekvádor",
+    "section": "Jazyk & slova",
+    "topic": "Shuar a jiné domorodé jazyky džungle",
+    "headline": "Jazykové rodiny z džungle, které nejsou kečuánštinou",
+    "fact": "V ekvádorské Amazonii žijí národy jako Shuar, Achuar, Waorani nebo Siona, každý s vlastním jazykem zcela nesouvisejícím s kečuánštinou nebo španělštinou; jazyková diverzita ekvádorské džungle je mimořádná.",
+    "source_url": "https://en.wikipedia.org/wiki/Languages_of_Ecuador",
+    "source_quote": "Ecuador … home to numerous indigenous languages … including Shuar, Achuar, Waorani … unrelated to Quechua or Spanish",
+    "voice": "Šlo by do džungle ekvádoru a mluvit jen kečuánsky? Ne. Jazyk je tam jiný.",
+    "visual_type": "typographic",
+    "ll": [
+      -76.5,
+      -3.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Waorani: lid kopí a izolace",
+        "fact": "Waorani (nebo Huaorani) jsou domorodí lidé ekvádorské džungle, kteří kontaktu s vnějším světem vzdorovali bojovně; teprve v padesátých létech přijali první misionáře. Jejich jazyk je lingvistický izolát — nesouvisí s žádným jiným jazykem světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Waorani_people",
+        "source_quote": "the Waorani … language is a language isolate … unrelated to any other known language",
+        "voice": "Jazyk bez příbuzných jazyků na světě. Osamělý jako les, ve kterém vznikl.",
+        "image_prompt": "Fotorealistický snímek hustého ekvádorského amazońského pralese — scéna kde žijí izolované komunity, přirozené světlo, džungle, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyková mapa Amazonie jako mapa kontaktu a izolace",
+        "fact": "Obrovská jazyková diverzita Amazonie — stovky různých jazyků — odráží geografickou izolaci komunit rozdělených džunglí, řekami a horami. Každá rieka nebo horský hřeben může oddělovat jazykové skupiny po tisíce let.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_Ecuador",
+        "source_quote": "the Amazon basin … one of the most linguistically diverse regions on Earth",
+        "voice": "Řeka jako jazyková hranice. Odděluje komunity miliony let.",
+        "image_prompt": "Fotorealistický snímek amazońské řeky oddělující dvě strany hustého pralese — přirozená hranice, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ec-jazyk-toponimy",
+    "country": "Ekvádor",
+    "section": "Jazyk & slova",
+    "topic": "Ekvádorská toponymie",
+    "headline": "Místní názvy jako mapa jazykové historie",
+    "fact": "Ekvádorská místní jména pocházejí z kičuánštiny, Shuaru, Spanish ale i z předinkových kultur; Guayaquil, Pichincha, Chimborazo, Cotopaxi — každé jméno je oknem do jiné jazykové éry.",
+    "source_url": "https://en.wikipedia.org/wiki/Ecuador",
+    "source_quote": "Ecuadorian place names … reflect a rich mixture of indigenous languages and Spanish",
+    "voice": "Přečti si mapu Ekvádoru nahlas. Mluví pěti jazyky zároveň.",
+    "visual_type": "typographic",
+    "ll": [
+      -78.4678,
+      -0.1807
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Co znamená 'Ekvádor'?",
+        "fact": "Název Ekvádor (Republika rovníku) pochází ze španělského překladu geografické skutečnosti — rovníku procházejícího územím. Je to jediný stát na světě pojmenovaný přímo po geografickém jevu; jméno dali Španělé po francouzské geodetické expedici v osmnáctém století.",
+        "source_url": "https://en.wikipedia.org/wiki/Ecuador",
+        "source_quote": "Ecuador … derives its name from the Spanish word for equator … the only country named after a geographic feature",
+        "voice": "Jméno státu jako lekcí geografie. Rovník nás pojmenoval.",
+        "image_prompt": "Fotorealistický snímek monumentu rovníku Mitad del Mundo u Quita s pomníkem a liniemi rovníku na dlažbě, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Preinkové a inkové vrstvy v toponymii",
+        "fact": "Mnoho ekvádorských místních názvů sahá před Inky — do období Cara, Puruhá nebo Cañari kultur. Inká přidali svou vrstvu kičuánštiny a Španělé přidali třetí. Etymologie místního jména je jako geologie — vrstva na vrstvě.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Ecuador",
+        "source_quote": "place names in Ecuador … dating to pre-Inca cultures … Cara, Puruhá, and Cañari",
+        "voice": "Každé jméno města je palimpsest dějin.",
+        "image_prompt": "Fotorealistický snímek historické mapy Ekvádoru s domorodými místními názvy v muzejním osvětlení, přirozené světlo, 16:9"
+      }
+    }
+  }
+]

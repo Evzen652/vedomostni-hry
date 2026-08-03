@@ -1,0 +1,944 @@
+[
+  {
+    "id": "cl-mista-atacama",
+    "country": "Chile",
+    "section": "Místa",
+    "topic": "Poušť Atacama",
+    "headline": "Nejsušší místo světa — i stanice bez kapky deště",
+    "fact": "Poušť Atacama na severu Chile je nejsušší nepolární pouští světa; některé meteorologické stanice nikdy nezaznamenaly srážky.",
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert",
+    "source_quote": "the driest non-polar desert in the world … some weather stations in the desert have never recorded rain",
+    "voice": "Krajina tak pustá, že ji NASA používá jako náhradu za Mars.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Atacamské pouště — skalnaté solné pláně a červené sopky na obzoru za bezoblačného nebe, bez lidí, 16:9",
+    "ll": [
+      -68.5,
+      -24
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dvě pohoří, jeden oceán: perfektní past na vláhu",
+        "fact": "Atacama leží ve srážkovém stínu Andského pohoří i Chilského pobřežního hřbetu; studený Humboldtův proud chladí vzduch nad Tichým oceánem, takže z moře nepřichází déšť — vzniká takzvaný oboustranný srážkový stín.",
+        "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert",
+        "source_quote": "extreme aridity results from its position between two mountain chains … creating a two-sided rain shadow",
+        "voice": "Hory a oceán se domluvily, že do pouště déšť nepustí.",
+        "image_prompt": "Fotorealistický snímek Atacamy s pohledem na Andes v pozadí, suchá solná pánev v popředí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Srážkový stín jako model pro celou fyzickou geografii",
+        "fact": "Atacama je učebnicovým příkladem oboustranného srážkového stínu kombinovaného s přímořskou anticyklónou — studený mořský proud (Humboldtův) způsobuje teplotní inverzi, při níž vzduch blízko hladiny je chladnější a těžší, takže oblaka se nemohou vytvořit.",
+        "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert",
+        "source_quote": "The cool, north-flowing Humboldt Current and the South Pacific anticyclone reinforce this effect",
+        "voice": "Fyzická geografie v nejčistší podobě: voda a vzduch jako systém.",
+        "image_prompt": "Fotorealistický letecký snímek Atacamské pouště z výšky, kontrast poušť a vzdálené Andes, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-mista-torres",
+    "country": "Chile",
+    "section": "Místa",
+    "topic": "Torres del Paine",
+    "headline": "Žulové věže na konci světa",
+    "fact": "Torres del Paine na chilské Patagonii je národní park proslulý modrými ledovci, smaragdovými jezery a mohutnými žulovými věžemi vyčnívajícími nad stepí.",
+    "source_url": "https://en.wikipedia.org/wiki/Torres_del_Paine_National_Park",
+    "source_quote": "Torres del Paine National Park … one of the largest and most visited parks in Chile",
+    "voice": "Věže tu vyrostly za miliony let. Turisté mají na průchod pár dnů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Torres del Paine — tři žulové věže nad jezerem s ledovcovým odrazem, dramatická oblačnost, bez lidí, 16:9",
+    "ll": [
+      -73,
+      -51
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vítr jako stavitel krajiny",
+        "fact": "Patagonie je jednou z nejvetrnějších oblastí světa — stálé westerlies (západní větry) unáší oblaka a srážky, tvaruje krajinu a mění počasí v parku i několikrát za den. Trekkaři počítají s čtyřmi ročními dobami v jednom dni.",
+        "source_url": "https://en.wikipedia.org/wiki/Patagonia",
+        "source_quote": "Patagonia … known for its strong westerly winds",
+        "voice": "Kdo chce přejít W-Trek, musí se naučit respektovat vítr.",
+        "image_prompt": "Fotorealistický snímek patagoniánské stepi s vichřicí a vzduchem plným prachu, věže v pozadí, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Patagonská ledovce jako zásobárna a klimatický indikátor",
+        "fact": "Národní park sousedí s Patagonickým ledovcovým polem — třetím největším na světě. Ledovce ustupují, a vědci sledují jejich odtávání jako přímý indikátor globálních klimatických změn.",
+        "source_url": "https://en.wikipedia.org/wiki/Patagonian_Ice_Field",
+        "source_quote": "the Patagonian Ice Field is the second largest contiguous extrapolar ice field in the world",
+        "voice": "Ledovce jsou hodiny klimatu. Tady jejich ručičky spěchají.",
+        "image_prompt": "Fotorealistický letecký snímek patagonického ledovcového pole a odlomu ledovce do jezeraFotorealisticky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-mista-easternisland",
+    "country": "Chile",
+    "section": "Místa",
+    "topic": "Velikonoční ostrov",
+    "headline": "Kamenní obři uprostřed Tichého oceánu",
+    "fact": "Velikonoční ostrov (Rapa Nui) je chilské území vzdálené tisíce kilometrů od pevniny; proslul moai — mohutnými kamennými sochami, které vyřezal lid Rapa Nui.",
+    "source_url": "https://en.wikipedia.org/wiki/Easter_Island",
+    "source_quote": "Easter Island … one of the world's most remote inhabited islands … famous for its 900 monumental statues called moai",
+    "voice": "Kdo a proč je postavil? A proč civilizace skončila? Otázky bez odpovědí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řady moai na Velikonočním ostrově při západu slunce, tichomořský oceán v pozadí, bez lidí, 16:9",
+    "ll": [
+      -109.3666,
+      -27.1127
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Odlesňování a zánik civilizace",
+        "fact": "Výzkumy naznačují, že Rapa Nui kdysi pokrývaly husté lesy, které místní vykáceli. Bez dřeva zmizely kánoe i zemědělství — ekologický kolaps přispěl k zániku vyspělé kultury. Je to varovný příběh o vztahu lidí a prostředí.",
+        "source_url": "https://en.wikipedia.org/wiki/Easter_Island",
+        "source_quote": "deforestation … contributed to the collapse of the Rapa Nui civilization",
+        "voice": "Strom, který chybí, může zrušit celou civilizaci.",
+        "image_prompt": "Fotorealistický snímek zvětralého svahu Velikonočního ostrova s jedním moai a oceánem v pozadí, přirozené denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Izolace jako laboratoř lidské adaptace",
+        "fact": "Rapa Nui je jedním z nejodlehlejších obydlených ostrovů světa. Geografická izolace formovala kulturu, jazyk i zdroje — stala se extrémním testem lidské schopnosti přežít a budovat bez přístupu ke kontinentálním zdrojům.",
+        "source_url": "https://en.wikipedia.org/wiki/Easter_Island",
+        "source_quote": "one of the world's most remote inhabited islands … 3,500 km from the Chilean coast",
+        "voice": "Izolace nutí k vynalézavosti — nebo ke zkáze.",
+        "image_prompt": "Fotorealistický letecký snímek Velikonočního ostrova v Tichém oceánu, vulkanické kopce, zelená krajina, obklíčeno vodou ze všech stran, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-priroda-humboldt",
+    "country": "Chile",
+    "section": "Příroda",
+    "topic": "Humboldtův proud",
+    "headline": "Studený oceánský proud, co živí celý Pacifik",
+    "fact": "Humboldtův (Peruánský) proud je studený mořský proud tekoucí podél pobřeží Chile a Peru; přivádí živiny z hlubin a patří k nejproduktivnějším rybářským oblastem světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Humboldt_Current",
+    "source_quote": "The Humboldt Current … one of the world's most productive marine ecosystems",
+    "voice": "Chladná voda z hlubin živí miliony ryb, ptáků a lidí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tichomořského pobřeží Chile s rybářskými loděmi na kotvisku, mlha nad studenou vodou, přirozené světlo, 16:9",
+    "ll": [
+      -71,
+      -30
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "El Niño: když proud oteplí, ryby zmizí",
+        "fact": "El Niño je klimatický jev, při němž teple tichomořské vody potlačí Humboldtův proud. Studená, živinami bohatá voda chybí — ryby migrují nebo hynou, rybářský průmysl se hroutí a sucho zasahuje zemědělství v celé oblasti.",
+        "source_url": "https://en.wikipedia.org/wiki/El_Ni%C3%B1o",
+        "source_quote": "El Niño … suppresses the upwelling of cold, nutrient-rich water",
+        "voice": "Jeden teplý rok v oceánu — a životy celých regionů se promění.",
+        "image_prompt": "Fotorealistický snímek suchého pobřeží Peru nebo Chile v době El Niño — pošlé ryby a vyprahlá krajina, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Upwelling jako klíč k chápání oceánské cirkulace",
+        "fact": "Humboldtův proud je výsledkem upwellingu — vertikálního pohybu hlubinné vody k povrchu způsobeného větry. Je to nejchladnější ze světových východoboundary proudů a nejlépe studovaný případ propojení atmosféry, oceánu a biosféry.",
+        "source_url": "https://en.wikipedia.org/wiki/Humboldt_Current",
+        "source_quote": "driven by upwelling … transports cold, nutrient-rich waters northward",
+        "voice": "Oceánská dopravní páska živí pevninu — neviditelně.",
+        "image_prompt": "Fotorealistický snímek pobřeží Chile s hejna pelikánů nebo kormoránů na skalách nad studeným tichomořským mořem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-priroda-altiplano",
+    "country": "Chile",
+    "section": "Příroda",
+    "topic": "Altiplano a andská fauna",
+    "headline": "Plameňáci na slané pláni ve výšce čtyř kilometrů",
+    "fact": "Chilské altiplano (vysočina Andského pohoří) hostí slaná jezera, kde žijí tři druhy plameňáků; vlci, vikuně a jejich příbuzní zdejší krajinu sdílejí se sopkami.",
+    "source_url": "https://en.wikipedia.org/wiki/Altiplano",
+    "source_quote": "The Altiplano … home to flamingos, vicuñas and other Andean wildlife",
+    "voice": "Plameňáci stojící na slaném jezeře s sopkou za zády — obraz, který nepadne z hlavy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek plameňáků na solné pláni Atacamaského altiplana, sopka a modré nebe v pozadí, přirozené světlo, bez lidí, 16:9",
+    "ll": [
+      -68,
+      -22
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Adaptace na extrémní výšku",
+        "fact": "Vikuně a jejich příbuzní — lamy a alpaky — mají krev s vyšší kapacitou pro přenos kyslíku, což jim umožňuje žít ve výškách nad čtyřmi tisíci metry. Plameňáci filtrují sinice z hyperslaných jezer, kde by jiní tvorové nepřežili.",
+        "source_url": "https://en.wikipedia.org/wiki/Vicuna",
+        "source_quote": "Vicuñas live in the high alpine areas … adapted to low-oxygen environments",
+        "voice": "Příroda vždy najde cestu — i do míst, kde vzduch nestačí.",
+        "image_prompt": "Fotorealistický snímek vikuně na andské vysočině s ledovcovou horou v pozadí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Altiplano jako přirozená hranice a zdroj konfliktů",
+        "fact": "Andská vysočina tvoří přirozenou hranici mezi Chile, Bolivií a Argentinou. Spory o vodu z andských ledovců a přístupu k Tichému oceánu jsou zdrojem diplomatického napětí, zejména mezi Chile a bezmořskou Bolívií.",
+        "source_url": "https://en.wikipedia.org/wiki/Chile%E2%80%93Bolivia_relations",
+        "source_quote": "Bolivia has … demanded access to the Pacific coast … a long-standing diplomatic dispute",
+        "voice": "Hory dělí národy — a jejich voda je předmět sporů.",
+        "image_prompt": "Fotorealistický letecký snímek andské vysočiny na pomezí Chile a Bolívie, solné pláně a sopky, dramatická krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-lide-mapuche",
+    "country": "Chile",
+    "section": "Lidé",
+    "topic": "Mapuchové",
+    "headline": "Jediný lid, který porazil španělské conquistadory",
+    "fact": "Mapuchové jsou domorodý národ jihu Chile a Argentiny; jako jeden z mála národů Ameriky španělskému vojenskému dobytí odolali a udrželi svá území po staletí.",
+    "source_url": "https://en.wikipedia.org/wiki/Mapuche",
+    "source_quote": "The Mapuche successfully resisted Spanish conquest … maintaining their territory for centuries",
+    "voice": "Conquistadoři dobyli kontinenty, ale před Mapuchy zastavili.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek chilské jihoanderské krajiny regionu Araucanía, lesy araukárií, hory v pozadí, přirozené světlo, 16:9",
+    "ll": [
+      -72,
+      -38
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mapudungun: jazyk, který přežil kolonizaci",
+        "fact": "Mapudungun — jazyk Mapuchů — se dodnes mluví a vyučuje v části chilských škol. Je to jeden z mála domorodých jazyků Jižní Ameriky, který nebyl španělskou kolonizací zcela potlačen.",
+        "source_url": "https://en.wikipedia.org/wiki/Mapuche_language",
+        "source_quote": "Mapuche language … still spoken by significant numbers of people in Chile and Argentina",
+        "voice": "Jazyk přežít kolonialismu je větší vítězství než bitva.",
+        "image_prompt": "Fotorealistický snímek mapuchské tradiční tkaniny (güipil) s geometrickými vzory a barevnými nitěmi, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Domorodé země a moderní spory o půdu",
+        "fact": "Pozemkové spory mezi mapuchskými komunitami, chilským státem a lesními společnostmi jsou jedním z nejpalčivějších vnitropolitických problémů Chile. Jsou příkladem globálního napětí mezi domorodými vlastnickými právy a průmyslovým využitím půdy.",
+        "source_url": "https://en.wikipedia.org/wiki/Mapuche_conflict",
+        "source_quote": "The Mapuche conflict … centres on land claims … between the Mapuche and the Chilean state",
+        "voice": "Minulost a přítomnost bojují o tentýž kus půdy.",
+        "image_prompt": "Fotorealistický snímek araukarijského lesa na jihu Chile, staletí staré stromy, mlhavé světlo, bez lidí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-kultura-cueca",
+    "country": "Chile",
+    "section": "Kultura & tradice",
+    "topic": "Cueca",
+    "headline": "Chilský národní tanec jako hra orla a slepice",
+    "fact": "Cueca je chilský národní tanec, při němž pár symbolicky předvádí uhánění kohoutem za slepicí; tanečnice drží šátek a muž laso.",
+    "source_url": "https://en.wikipedia.org/wiki/Cueca",
+    "source_quote": "Cueca is the national dance of Chile … representing a courtship ritual between a rooster and a hen",
+    "voice": "Žádný svátek bez cueca. Takový je Chile.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního chilského tance cueca — tanečnice se šátkem v tradičním kroji, huasaský muž vedle ní, festivalová atmosféra, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cueca triste: protest v tanci",
+        "fact": "Za vojenské diktatury Pinocheta tančily ženy cueca samy — bez partnera — jako tichý protest za zmizené manžele a syny. Cueca sola se stala symbolem odporu a smutku, který dostal celosvětovou pozornost.",
+        "source_url": "https://en.wikipedia.org/wiki/Cueca",
+        "source_quote": "cueca sola … performed by women whose husbands or sons had been disappeared",
+        "voice": "Tanec bez partnera byl nejsilnějším politickým výstupem.",
+        "image_prompt": "Fotorealistický expresivní snímek ženy tančící sama se šátkem v ruce, tmavé pozadí, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Národní tanec jako nástroj identity",
+        "fact": "Cueca se stala symbolem chilství — státem propagovaným znakem národní identity. Tento příklad ukazuje, jak politická moc přebírá lidovou kulturu a proměňuje ji v nástroj národní soudržnosti nebo ideologie.",
+        "source_url": "https://en.wikipedia.org/wiki/Cueca",
+        "source_quote": "was declared the national dance of Chile in 1979",
+        "voice": "Kdo rozhoduje, co je národní tradice? Často stát.",
+        "image_prompt": "Fotorealistický snímek chilského venkovského festivalu s kapelou a párky tančícími cueca v tradičních krojích, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-jidlo-empanadas",
+    "country": "Chile",
+    "section": "Jídlo",
+    "topic": "Empanadas",
+    "headline": "Plněná kapsa z těsta — nejběžnější chilský pokrm",
+    "fact": "Empanada je pečené nebo smažené těstové kapsy s náplní z masa, cibule a oliv; v Chile jsou tak rozšířené, že se podávají na každé slavnosti a nezávislostní oslava se bez nich neobejde.",
+    "source_url": "https://en.wikipedia.org/wiki/Empanada",
+    "source_quote": "Empanada … a type of baked or fried turnover consisting of pastry and filling",
+    "voice": "Na každém pikniku, v každé pekárně. Chile v jednom soustu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zlatavých chilských empanadas právě vyndaných z trouby na plechovém tácu, přirozené světlo, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Španělský původ s jihoamerickým srdcem",
+        "fact": "Empanady přišly se španělskými kolonizátory, kteří je znali z Galicie a Andalusie. V Chile se přizpůsobily místním surovinám — masová náplň pino s vejcem natvrdo, oliva a rozinka je dnes specificky chilská verze.",
+        "source_url": "https://en.wikipedia.org/wiki/Empanada",
+        "source_quote": "Empanadas … were brought to the Americas by Spanish colonists",
+        "voice": "Jídlo přijede se conquistadory a zůstane na dalších pět set let.",
+        "image_prompt": "Fotorealistický snímek otevřené empanady s náplní z masa, vejce a olivy, rustikální dřevěný stůl, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo jako označení identity v celé Latinské Americe",
+        "fact": "Empanady existují v celé Latinské Americe, ale každá země má svou variantu — chilská, argentinská, colombijská a bolivijská se liší těstem, náplní i způsobem pečení. Regionální variace pokrmu mapují identitu lépe než mnohé statistiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Empanada",
+        "source_quote": "regional variations differ in filling, dough, and cooking method",
+        "voice": "Stejné jméno, jiná duše — to je Latinská Amerika v kostce.",
+        "image_prompt": "Fotorealistický snímek pouličního stánku s empanadas v chilském městě, atmosféra trhu, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-historie-pinochet",
+    "country": "Chile",
+    "section": "Historie",
+    "topic": "Vojenský převrat 1973",
+    "headline": "Den, kdy bombardovali prezidentský palác",
+    "fact": "Dne jedenáctého září devatenáct set sedmdesát tři provedla chilská armáda vojenský převrat — bombardovala La Moneda a svrhla demokraticky zvoleného prezidenta Salvadora Allendeho; nastolila diktaturu generála Pinocheta.",
+    "source_url": "https://en.wikipedia.org/wiki/1973_Chilean_coup_d%27%C3%A9tat",
+    "source_quote": "a military coup d'état … overthrew the democratically elected socialist government of Salvador Allende",
+    "voice": "Demokracie padla za bílého dne — celý svět se díval.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek prezidentského paláce La Moneda v Santiagu de Chile za slunného dne, monumentální budova, 16:9",
+    "ll": [
+      -70.6543,
+      -33.443
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zmizeli lidé a zůstaly rodinné rány",
+        "fact": "Za Pinochetovy diktatury zmizelo nebo bylo zabito tisíce lidí. Jejich příbuzní dodnes hledají pravdu a spravedlnost. Komise Rettig zdokumentovala tisíce obětí státní represe.",
+        "source_url": "https://en.wikipedia.org/wiki/Rettig_Commission",
+        "source_quote": "the Rettig Commission documented thousands of cases of disappearances and killings",
+        "voice": "Dějiny se zapisují do lidí — nejen do knih.",
+        "image_prompt": "Fotorealistický snímek chilského Muzea paměti a lidských práv v Santiagu, moderní budova se symbolickými prvky, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Studená válka v Jižní Americe",
+        "fact": "Převrat byl součástí širšího kontextu studené války — USA podporovaly svržení Allendeho socialismu. Chile se stalo laboratorní zemí pro neoliberální ekonomické reformy, které provedli takzvaní Chicago Boys.",
+        "source_url": "https://en.wikipedia.org/wiki/Chicago_Boys",
+        "source_quote": "Chicago Boys … implemented free-market economic reforms … in Chile under Pinochet",
+        "voice": "Malá latinskoamerická země se stala šachovnicí světových mocností.",
+        "image_prompt": "Fotorealistický snímek panorama Santiaga de Chile s Andami v pozadí a moderní architekturou, pohled ze vzduchu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-sport-futbal",
+    "country": "Chile",
+    "section": "Sport",
+    "topic": "Chilský fotbal",
+    "headline": "Generación dorada a první trofej Copa América",
+    "fact": "Chile vyhrálo Copa América v letech patnáct a šestnáct jako hostitel i jako obhájce titulu; generace hráčů kolem Alexise Sáncheze patřila k nejúspěšnějším v historii chilského fotbalu.",
+    "source_url": "https://en.wikipedia.org/wiki/Chile_national_football_team",
+    "source_quote": "Chile won the Copa América in 2015 and 2016 … their first international trophies",
+    "voice": "Dva tituly za sebou. Chile se nadechlo dějin.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek chilského fotbalového stadionu za soumraku, rozsvícená světla nad trávníkem, slavnostní atmosféra, bez rozpoznatelných tváří, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Estádio Nacional: dějiny a fotbal na jednom místě",
+        "fact": "Národní stadion v Santiagu byl po převratu v roce sedmdesát tři dočasně použit jako internační tábor pro tisíce politických vězňů. Dnes je opět fotbalovým stánkem — nosí historii i sport zároveň.",
+        "source_url": "https://en.wikipedia.org/wiki/Estadio_Nacional_Julio_Mart%C3%ADnez_Pr%C3%A1danos",
+        "source_quote": "used as a detention and torture centre following the 1973 coup",
+        "voice": "Stadion, který byl vězením — a dnes fandí fotbalu.",
+        "image_prompt": "Fotorealistický snímek chilského Estadio Nacional v Santiagu, moderní pohled na tribunu a hřiště, 16:9"
+      },
+      "kartograf": {
+        "headline": "Geografie úspěchu: Chile v latinskoamerickém fotbalu",
+        "fact": "Jižní Amerika je kolébkou světového fotbalu; Chile, Argentina, Uruguay a Brazílie vyhrály nejvíce Copa América. Geografická blízkost a silná ligová tradice vytvářejí hustou sít trénerů, hráčů a rivalit.",
+        "source_url": "https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica",
+        "source_quote": "the Copa América is the oldest international football tournament",
+        "voice": "Fotbal v Jižní Americe není jen sport — je součástí identity.",
+        "image_prompt": "Fotorealistický letecký snímek Santiaga s Andami v pozadí, moderní město pohled z výšky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-umeni-neruda",
+    "country": "Chile",
+    "section": "Umění",
+    "topic": "Pablo Neruda",
+    "headline": "Básník moře, lásky a revoluce",
+    "fact": "Pablo Neruda je chilský básník a nositel Nobelovy ceny za literaturu; jeho domy v Santiagu a Valparaísu jsou dnes muzea a poutní místa milovníků poezie z celého světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Pablo_Neruda",
+    "source_quote": "Pablo Neruda … awarded the Nobel Prize in Literature in 1971",
+    "voice": "Napsal o moři, smutek, vzkaz milované. Celý svět to četl.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek přímořského domu La Sebastiana nebo Il Postino ve Valparaísu, barevné fasády chilského přístavu, přirozené světlo, 16:9",
+    "ll": [
+      -71.6203,
+      -33.0472
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Valparaíso: přístav a inspirace básníka",
+        "fact": "Neruda miloval Valparaíso — barevný přístav na Tichém oceánu s ulicemi vrstvícími se do kopců jako amfiteátr. Město mu inspirovalo celou řadu básní a je dnes samo zapsáno na listině světového dědictví UNESCO.",
+        "source_url": "https://en.wikipedia.org/wiki/Valpara%C3%ADso",
+        "source_quote": "Valparaíso … a UNESCO World Heritage Site … notable for its colorful hillside neighborhoods",
+        "voice": "Básník a město se formovali navzájem.",
+        "image_prompt": "Fotorealistický snímek barevných domů na kopcích Valparaísa s výhledem na přístav a Tichý oceán, zlatá hodina, 16:9"
+      },
+      "kartograf": {
+        "headline": "Literatura a politika: básník jako diplomat",
+        "fact": "Neruda byl nejen básníkem, ale i komunistickým senátorem a diplomatem. Je příkladem jihoamerické tradice, kde literatura a politický aktivismus jdou ruku v ruce — na rozdíl od dominantní tradice angloamerické.",
+        "source_url": "https://en.wikipedia.org/wiki/Pablo_Neruda",
+        "source_quote": "Neruda was also a politician and diplomat … a member of the Chilean Communist Party",
+        "voice": "V Latinské Americe básník a politik nejsou dva různí lidé.",
+        "image_prompt": "Fotorealistický snímek muzea Pablo Nerudy Casa de La Chascona v Santiagu, zahradní interiér, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-jazyk-chilenismo",
+    "country": "Chile",
+    "section": "Jazyk & slova",
+    "topic": "Chilenismos",
+    "headline": "Španělština, které ostatní Latinoameričané nerozumí",
+    "fact": "Chilská španělština má tolik místních výrazů, slangů a odlišnou výslovnost, že je označována za jednu z nejtěžněji srozumitelných pro ostatní španělsky mluvící národy.",
+    "source_url": "https://en.wikipedia.org/wiki/Chilean_Spanish",
+    "source_quote": "Chilean Spanish is often considered one of the most distinctive varieties of Spanish in Latin America",
+    "voice": "Říct 'cachai?' je víc než otázka — je to chilský světonázor.",
+    "visual_type": "typographic",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mapudungun v chilštině",
+        "fact": "Chilská španělština přijala stovky slov z mapudungunu — jazyka Mapuchů. Slova jako 'guata' (břicho), 'pololo' (přítel) nebo 'cóndor' mají domorodé kořeny. Jazyk nese historii kontaktu dvou civilizací.",
+        "source_url": "https://en.wikipedia.org/wiki/Chilean_Spanish",
+        "source_quote": "Chilean Spanish contains many loanwords from Mapudungun",
+        "voice": "Každé slovo s domorodým kořenem je vzpomínka na setkání.",
+        "image_prompt": "Fotorealistický snímek dvojjazyčného chilského nápisu ve španělštině a mapudungunu na veřejné budově, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Geografická izolace a jazyková divergence",
+        "fact": "Chile je extrémně protáhlé a ohraničené na severu pouští, na jihu ledem, na východě Andami a na západě oceánem. Tato geografická izolace přispěla k tomu, že se chilská španělština vyvíjela odlišněji než jinde na kontinentu.",
+        "source_url": "https://en.wikipedia.org/wiki/Chile",
+        "source_quote": "Chile is … bounded to the north by the Atacama Desert … to the south by Antarctica",
+        "voice": "Hory a pouště oddělují lidi — a formují jejich jazyk.",
+        "image_prompt": "Fotorealistický pohled na mapu jihoamerického Chile — dlouhý úzký pás od severu k jihu, hora na jedné straně, oceán na druhé, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-priroda-araukarie",
+    "country": "Chile",
+    "section": "Příroda",
+    "topic": "Araukárie",
+    "headline": "Strom dinosaurů, který přežil miliony let beze změny",
+    "fact": "Araukárie (Araucaria araucana) je chilský strom starý přes dvě stě milionů let; roste v patagonských Andách a patří k tzv. živým fosíliím — jeho podoba se téměř nezměnila od druhohor.",
+    "source_url": "https://en.wikipedia.org/wiki/Araucaria_araucana",
+    "source_quote": "Araucaria araucana … a living fossil … little changed since the Jurassic period",
+    "voice": "Dinosauři ho znali. My ho stále kácíme.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starobylých araukárií v chilských Andách — mohutné kmeny a deštníkové koruny na sopečné krajině, dramatické světlo, bez lidí, 16:9",
+    "ll": [
+      -71.5,
+      -38.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Piñones: semena araukárie jako potravina",
+        "fact": "Semena araukárie — piñones — jsou důležitou potravinou Mapuchů; sbírají je na podzim a jedí vařená nebo pečená. Strom je tak potravinový, kulturní i posvátný zdroj zároveň.",
+        "source_url": "https://en.wikipedia.org/wiki/Araucaria_araucana",
+        "source_quote": "seeds … are edible and have been an important food source for the indigenous Mapuche",
+        "voice": "Strom, který živil lidi tisíce let, je dnes chráněn zákonem.",
+        "image_prompt": "Fotorealistický detailní snímek araukárianské šišky a semen na větvi, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Endemismus a ohrožení v izolovaném ekosystému",
+        "fact": "Araukárie roste přirozeně jen v malé oblasti chilských a argentinských And — je příkladem geograficky omezeného endemismu. Odlesňování a změny klimatu ohrožují populace, jejichž přirozená obnova trvá staletí.",
+        "source_url": "https://en.wikipedia.org/wiki/Araucaria_araucana",
+        "source_quote": "listed as Vulnerable on the IUCN Red List … native only to a small area of Chile and Argentina",
+        "voice": "Druh omezený na malé území je zranitelný. Tak to v přírodě chodí.",
+        "image_prompt": "Fotorealistický letecký snímek araukáriového lesa v chilských Andách, vulkanický terén, dramatická oblačnost, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-lide-bernardo",
+    "country": "Chile",
+    "section": "Lidé",
+    "topic": "Bernardo O'Higgins",
+    "headline": "Syn irského emigranta, otec chilské nezávislosti",
+    "fact": "Bernardo O'Higgins byl prvním chilským státním ředitelem po vyhlášení nezávislosti na Španělsku; jeho otec byl irský emigrant ve španělských službách a sám Bernardo studoval v Evropě.",
+    "source_url": "https://en.wikipedia.org/wiki/Bernardo_O%27Higgins",
+    "source_quote": "Bernardo O'Higgins Riquelme … first Supreme Director of Chile … led Chile to independence",
+    "voice": "Irské příjmení, španělská výchova, chilský hrdina. Latinská Amerika v kostce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického hlavního náměstí Santiaga de Chile s jezdeckou sochou, kolonialní architektura, přirozené světlo, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bitva u Chacabuca: přechod And jako rozhodující tah",
+        "fact": "O'Higgins a argentinský generál San Martín přešli Andské pohoří v lednu a přepadli španělské síly v Santiagu. Přechod And přes zasněžené průsmyky byl logistickým mistrovstvím, které Španělé nepovažovali za možné.",
+        "source_url": "https://en.wikipedia.org/wiki/Battle_of_Chacabuco",
+        "source_quote": "the crossing of the Andes … a feat considered impossible by the Spanish",
+        "voice": "Nemožné přejít. Takže přešli.",
+        "image_prompt": "Fotorealistický snímek zasněženého andského průsmyku — strmost a výška And, dramatická zimní krajina, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jižní kužel a koordinovaná nezávislost",
+        "fact": "Nezávislost Chile, Argentiny a Peru byla koordinovaný projekt — San Martín, O'Higgins a Bolívar spolupracovali napříč hranicemi. Je to příklad, jak geopolitika a ideologie (osvícenství, francouzská revoluce) formují mapu kontinentu.",
+        "source_url": "https://en.wikipedia.org/wiki/Spanish_American_wars_of_independence",
+        "source_quote": "the independence movements … coordinated across South America … inspired by Enlightenment ideals",
+        "voice": "Hranice nejsou náhodné. Jsou výsledkem spolupráce i soupeření revolucionářů.",
+        "image_prompt": "Fotorealistický snímek chilsko-argentinské hranice v Andách, historická silnice skrze hory, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-lide-violeta",
+    "country": "Chile",
+    "section": "Lidé",
+    "topic": "Violeta Parra",
+    "headline": "Žena, která zachránila chilskou lidovou hudbu",
+    "fact": "Violeta Parra byla chilská hudebnice a výtvarnice, která v padesátých a šedesátých letech sbírala a zachraňovala lidové písně z chilského venkova a stala se zakladatelkou hnutí Nueva Canción Chilena.",
+    "source_url": "https://en.wikipedia.org/wiki/Violeta_Parra",
+    "source_quote": "Violeta Parra … pioneered the Nueva Canción movement … collected and preserved Chilean folk music",
+    "voice": "Gracias a la vida — jedna z nejzpívanějších písní španělského světa. Napsala ji.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek chilské venkovské krajiny s dřevěným kostelem a hráčem na kytaru — atmosféra lidové hudby, přirozené světlo, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Arpilleras: politický obraz z hadru",
+        "fact": "Violeta Parra vytvářela arpilleras — textilní obrazy z hadrů a zbytků látek zobrazující každodenní venkovský život. Později se arpilleras staly symbolem politického odporu za Pinochetovy diktatury.",
+        "source_url": "https://en.wikipedia.org/wiki/Violeta_Parra",
+        "source_quote": "her arpilleras … were exhibited internationally … a form of visual folk art",
+        "voice": "Umění z hadrů, které přežilo diktaturu.",
+        "image_prompt": "Fotorealistický snímek chilské arpillery — barevný textilní obraz s vesničany a andskou krajinou, muzejní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nueva Canción a hudba jako politická zbraň",
+        "fact": "Hnutí Nueva Canción Chilena sdružovalo hudebníky jako Victor Jara, kteří používali lidovou hudbu jako nástroj politické mobilizace. Po převratu v roce sedmdesát tři bylo hnutí potlačeno a Victor Jara zavražděn. Hudba a politika se v Latinské Americe přirozeně propojují.",
+        "source_url": "https://en.wikipedia.org/wiki/Nueva_canci%C3%B3n_chilena",
+        "source_quote": "Nueva Canción … used music to address social and political issues … suppressed after the 1973 coup",
+        "voice": "Kytara jako zbraň. A proto ji diktatury zakazují.",
+        "image_prompt": "Fotorealistický snímek venkovního chilského festivalu lidové hudby s kytaristy, andské hory v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-kultura-rodeo",
+    "country": "Chile",
+    "section": "Kultura & tradice",
+    "topic": "Chilské rodeo",
+    "headline": "Národní sport, který se nejde dívat vsedě",
+    "fact": "Chilské rodeo je národní sport Chile; jezdci (huasos) v tradičních krojích pracují ve dvojici a přitlačují tele ke zdi arény — na rozdíl od severoamerického rodea zdůrazňuje spolupráci, ne individua.",
+    "source_url": "https://en.wikipedia.org/wiki/Chilean_rodeo",
+    "source_quote": "Chilean rodeo … the national sport of Chile … involves two riders working together to stop a calf",
+    "voice": "Dva jezdci jako jeden. Tak to mají Chilané s koněm.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek chilského rodea — huasos v tradičních plášťových pončech a kloboucích jedou na koních v aréně, přirozené světlo, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Huaso: chilský cowboy s pončem a kloboukem",
+        "fact": "Huaso je chilský jezdecký archetyl — farmář a pastýř z chilského středu země s tradičním kloboukem, pončem a stříbrnými ostruhami. Huaso je v chilské kultuře symbolem národní identity, podobně jako gaucho v Argentině.",
+        "source_url": "https://en.wikipedia.org/wiki/Huaso",
+        "source_quote": "the huaso … a Chilean cowboy … an important part of Chilean national identity",
+        "voice": "Každá kultura potřebuje svého hrdinu na koni.",
+        "image_prompt": "Fotorealistický snímek chilského huasa v tradičním oblečení — poncho, klobouk, stříbrné ostruhy, andská krajina v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Venkov versus město: dvě tváře Chile",
+        "fact": "Chilské rodeo a huaso kultura jsou symbolem venkovského středního Chile — klíčového zemědělského pásu mezi severní pouštní Atacamou a jižní Patagonií. Urbanizace Santiaga způsobila, že tato kultura je pro většinu Chilánů vzdálená, ale státem aktivně udržovaná jako národní identita.",
+        "source_url": "https://en.wikipedia.org/wiki/Chile",
+        "source_quote": "Chile's central valley … the agricultural heartland … home to the huaso tradition",
+        "voice": "Stát uchovává venkovský symbol pro stále urbanizovanější populaci.",
+        "image_prompt": "Fotorealistický snímek chilského středního údolí — vinice a usedlosti, Andes v pozadí, zlatá hodina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-kultura-terremoto",
+    "country": "Chile",
+    "section": "Kultura & tradice",
+    "topic": "Terremoto (nápoj)",
+    "headline": "Drink pojmenovaný po zemětřesení",
+    "fact": "Terremoto je chilský tradiční nápoj z fermentovaného bílého vína pipeño, zmrzliny z ananasu a grenadiny; název zemětřesení odráží jeho silný účinek na pijce.",
+    "source_url": "https://en.wikipedia.org/wiki/Terremoto_(drink)",
+    "source_quote": "Terremoto … a Chilean alcoholic drink … made of pipeño wine, pineapple ice cream, and grenadine",
+    "voice": "Jeden terremoto je tradice. Druhý je zemětřesení. Třetí je legenda.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek vysoké sklenice terremoto — bílé víno s kopečkem ananasové zmrzliny, chilský bar, přirozené světlo, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Chile: země s největší seismicitou světa",
+        "fact": "Chile leží na subdukční zóně a pravidelně zažívá silná zemětřesení; v roce devatenáct šedesát bylo v Valdivii zaznamenáno dosud silné zemětřesení v historii moderního měření. Chilané si na zemětřesení zvykli a humor je součástí vyrovnání se s ním.",
+        "source_url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+        "source_quote": "the 1960 Valdivia earthquake … the most powerful earthquake ever recorded",
+        "voice": "Zem se třese pravidelně. Tak z ní uděláš drink.",
+        "image_prompt": "Fotorealistický snímek chilského chilského zálivu po zemětřesení — pobřeží a dramatická krajina, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ohnivý prsten a stavební normy jako odpověď",
+        "fact": "Chile je zemí s jedněmi z nejpřísnějších stavebních seismických norem světa — výsledek opakovaných zemětřesení. Chilská technická odolnost vůči seismickým rizikům je studovaná jako příklad úspěšné adaptace infrastruktury na přírodní hrozby.",
+        "source_url": "https://en.wikipedia.org/wiki/Earthquakes_in_Chile",
+        "source_quote": "Chile … one of the world's most seismically active countries … has developed strict building codes",
+        "voice": "Příroda hrozí. Člověk staví lépe.",
+        "image_prompt": "Fotorealistický snímek moderní chilské zástavby v Santiagu odolné vůči zemětřesením, výškové budovy a Andes, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-umeni-moai-art",
+    "country": "Chile",
+    "section": "Umění",
+    "topic": "Moai jako sochařství",
+    "headline": "Sochy z komprimovaného sopečného popela",
+    "fact": "Moai na Velikonočním ostrově jsou vytesány z tufového sopečného kamene — komprimovaného popela z kráteru Rano Raraku. Průměrná socha váží přes třináct tun a jejich přesun bez kola zůstává předmětem výzkumu.",
+    "source_url": "https://en.wikipedia.org/wiki/Moai",
+    "source_quote": "moai … carved from compressed volcanic ash … the average statue weighs around 13 tonnes",
+    "voice": "Žádná kola. Žádné jeřáby. Třináct tun. A přesto stojí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek tváře moai — expresivní rysy, tufa kámen, přirozené světlo, oceán v pozadí, 16:9",
+    "ll": [
+      -109.3666,
+      -27.1127
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rano Raraku: nedokončený ateliér",
+        "fact": "V lomu Rano Raraku je dodnes přes čtyři sta nedokončených nebo opuštěných moai — jako by sochaři odešli uprostřed práce. Část soch je pohřbena po krk v zemi; jejich celá výška včetně těla vyšla najevo teprve při výzkumech.",
+        "source_url": "https://en.wikipedia.org/wiki/Rano_Raraku",
+        "source_quote": "Rano Raraku … contains nearly 400 moai … many are partially buried",
+        "voice": "Práce zastavena náhle. A nikdo nevíme proč.",
+        "image_prompt": "Fotorealistický snímek lomu Rano Raraku s řadou pohřbených nedokončených moai — mohutné kamenné hlavy trčí ze svahu, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sochařství jako politická komunikace",
+        "fact": "Moai byly stavěny na ahu — plošinách obklopujících ostrov, vždy obráceny zády k oceánu a tváří do vnitrozemí. Měly chránit komunitu a symbolizovat moc klanu. Stavba větší sochy než soused znamenala víc prestiže — byl to závod, který mohl přispět ke kolapsu.",
+        "source_url": "https://en.wikipedia.org/wiki/Moai",
+        "source_quote": "moai … turned inland to watch over the people … erected by competing clans",
+        "voice": "Největší socha znamenala největší klán. A největší spotřebu zdrojů.",
+        "image_prompt": "Fotorealistický snímek řady moai na pobřežní ahu platformě, západ slunce nad Tichým oceánem, dramatické siluety, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-umeni-murales",
+    "country": "Chile",
+    "section": "Umění",
+    "topic": "Chilské politické muralismus",
+    "headline": "Zdi jako noviny, barvy jako protest",
+    "fact": "Chilský politický muralismus dosáhl vrcholu za vlády Allendeho v sedmdesátých letech — brigády mladých umělců pokrývaly zdi měst obrazy sociální změny; po převratu byly přemalovány, ale tradice žije dál.",
+    "source_url": "https://en.wikipedia.org/wiki/Muralism_in_Chile",
+    "source_quote": "Chilean muralism … reached its peak during the Allende period … used as a tool of political communication",
+    "voice": "Kde vládl Pinochet barvou šedou, oni malovali dál.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek barevného politického muralu na zdi v chilském Santiagu nebo Valparaísu, expresivní styl, přirozené světlo, 16:9",
+    "ll": [
+      -71.6203,
+      -33.0472
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Valparaíso: město jako galerie",
+        "fact": "Valparaíso je dnes jedním z největších center pouličního umění světa; barevné muraly pokrývají strmé kopce přístavu a jsou součástí kulturní identity města. UNESCO zapsalo historické centrum Valparaísa jako světové dědictví.",
+        "source_url": "https://en.wikipedia.org/wiki/Valpara%C3%ADso",
+        "source_quote": "Valparaíso … a UNESCO World Heritage Site … famous for its colorful hillside neighborhoods and street art",
+        "voice": "Kde bylo trápení, přišly barvy. A turisté.",
+        "image_prompt": "Fotorealistický snímek kopců Valparaísa pokrytých barevnými muraly a pestrými domy, schodiště a labyrint uliček, zlaté světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Veřejný prostor jako arena kulturní politiky",
+        "fact": "Chilský muralismus ukazuje, jak veřejný prostor je místem kulturního a politického boje. Diktatura barvami potlačuje, demokracie barvy vrací. Analýza murálů v čase mapuje politické změny lépe než mnohé archivy.",
+        "source_url": "https://en.wikipedia.org/wiki/Muralism_in_Chile",
+        "source_quote": "murals were whitewashed under Pinochet … revived with the return to democracy",
+        "voice": "Přemalovaná zeď je politické prohlášení. I bílá zeď říká něco.",
+        "image_prompt": "Fotorealistický snímek bílé zdi s viditelnými stopami přemalovaného muralu v chilském městě, symbolika umlčení, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-sport-tenis",
+    "country": "Chile",
+    "section": "Sport",
+    "topic": "Tenisová tradice Chile",
+    "headline": "Marcelo Ríos: první Jihoameričan na vrcholu světa",
+    "fact": "Marcelo Ríos byl v roce devatenáct devadesát osm první Jihoameričan a první Španělem nemluvící hráč, který se dostal na první místo světového tenisového žebříčku ATP.",
+    "source_url": "https://en.wikipedia.org/wiki/Marcelo_R%C3%ADos",
+    "source_quote": "Marcelo Ríos … became the first South American to achieve the world No. 1 ranking",
+    "voice": "Chilean bez grandslamu na vrcholu světa. Sport je plný paradoxů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tenisového hřiště na antuce v záchvatu latinskoamerického turnaje, dramatické světlo, bez rozpoznatelných tváří, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Antuka a jihoamerický tenis",
+        "fact": "Jižní Amerika má silnou tradici antukového tenisu — oproti severní Americe a Austrálii, kde dominují tvrdé kurty. Pomalejší antuka zvýhodňuje technický, trpělivý styl hry, který vyhovuje jihoamerickému stylu",
+        "source_url": "https://en.wikipedia.org/wiki/Clay_court",
+        "source_quote": "clay courts … prevalent in South America … favour a baseline, defensive style of play",
+        "voice": "Povrch hřiště formuje styl hráče. A styl hráče formuje kulturu sportu.",
+        "image_prompt": "Fotorealistický snímek antuky s otisky tenisových bot, síť a hřiště za ranního světla, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport a hospodářský rozvoj v Latinské Americe",
+        "fact": "Tenisová akademie v Chile — jako v celé Latinské Americe — je přístupná jen pro rodiny se středními a vyššími příjmy, na rozdíl od fotbalu. Geografie sportu odráží ekonomickou mapu: tenis v předměstích, fotbal v favele.",
+        "source_url": "https://en.wikipedia.org/wiki/Tennis_in_South_America",
+        "source_quote": "tennis in South America … predominantly associated with middle and upper classes",
+        "voice": "Jaký sport hraješ, vypovídá o tom, kde vyrůstáš.",
+        "image_prompt": "Fotorealistický snímek moderního tenisového areálu v Santiagu de Chile, Andes v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-sport-andinismo",
+    "country": "Chile",
+    "section": "Sport",
+    "topic": "Horolezectví a andinismo",
+    "headline": "Nejvyšší sopky světa jako chilské hřiště",
+    "fact": "Chile a Argentina sdílejí část And s nejvyššími sopkami světa; horolezectví — andinismo — je v Chile národním sportem s hlubokou tradicí sahající do devatenáctého století.",
+    "source_url": "https://en.wikipedia.org/wiki/Mountaineering_in_Chile",
+    "source_quote": "Chile … home to some of the world's highest volcanoes … mountaineering is a deeply rooted tradition",
+    "voice": "Kde jiní vidí překážku, Chilanec vidí výzvu k výstupu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek horolezce na sněžném svahu andské sopky v Chile, jasné modré nebe, dramatický výhled do hloubky, 16:9",
+    "ll": [
+      -68.5,
+      -24
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ojos del Salado: výstup na nejvyšší sopku světa",
+        "fact": "Ojos del Salado na chilsko-argentinské hranici je sopka s výškou přes šest tisíc osm set metrů — nejvyšší na světě. Horolezci z celé planety přijíždějí na výstup, který je technicky relativně přístupný, ale fyzicky extrémně náročný kvůli výšce.",
+        "source_url": "https://en.wikipedia.org/wiki/Ojos_del_Salado",
+        "source_quote": "Ojos del Salado … the highest volcano in the world … at 6,893 m",
+        "voice": "Sopka, která nevybuchuje, ale šplhat na ni je pořádný výkon.",
+        "image_prompt": "Fotorealistický snímek zasněženého vrcholu Ojos del Salado za jasného dne, modré andské nebe, dramatický panoramatický výhled, 16:9"
+      },
+      "kartograf": {
+        "headline": "Andy jako přirozená sportovní areéna a hranice",
+        "fact": "Andy plní v Jižní Americe dvojí roli: přirozené hranice mezi státy a obrovská sportovní arény pro outdoorové sporty. Turistický průmysl — trekking, horolezectví, lyžování — je klíčovým zdrojem příjmů pro chilské pohraničí.",
+        "source_url": "https://en.wikipedia.org/wiki/Andes",
+        "source_quote": "The Andes … the longest continental mountain range in the world … form the boundary between Chile and Argentina",
+        "voice": "Kde hora dělí národy, tam hora také spojuje sportovce.",
+        "image_prompt": "Fotorealistický letecký snímek chilsko-argentinské hranice v And — sněhové vrcholy a ledovce, dramatická krajina shora, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-jazyk-mapudungun",
+    "country": "Chile",
+    "section": "Jazyk & slova",
+    "topic": "Mapudungun v chilštině",
+    "headline": "Slova, která přežila kolonizaci v každodenní řeči",
+    "fact": "Mapudungun — jazyk Mapuchů — přispěl do chilské španělštiny stovkami slov; místní názvy jako Maipú, Ñuñoa nebo Pudahuel pocházejí z mapudungunu a mluví se jimi každý den.",
+    "source_url": "https://en.wikipedia.org/wiki/Mapuche_language",
+    "source_quote": "Mapudungun … has contributed significantly to Chilean Spanish vocabulary and place names",
+    "voice": "Každý Chilán jezdí metrem na stanici s názvem, který pochází z jazyka Mapuchů.",
+    "visual_type": "typographic",
+    "ll": [
+      -72,
+      -38
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pololo, guata, cóndor: mapudungunská slova v běžné řeči",
+        "fact": "Slova jako 'pololo' (přítel/ka), 'guata' (břicho) nebo 'cóndor' mají kořeny v mapudungunu. Jsou tak zažitá v chilské španělštině, že průměrný Chilán neví, že mluví slovem z jazyka, který kolonizátoři chtěli vymítit.",
+        "source_url": "https://en.wikipedia.org/wiki/Mapuche_language",
+        "source_quote": "many Chilean Spanish words are loanwords from Mapudungun",
+        "voice": "Jazyk přežívá i bez škol — v ústech lidí, kteří neví, co mluví.",
+        "image_prompt": "Fotorealistický snímek mapuchského tradičního tkaní s geometrickými vzory, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Revitalizace ohroženého jazyka",
+        "fact": "Mapudungun je ohrožený jazyk — aktivních mluvčích ubývá a přenos na mladou generaci je neúplný. Chilský stát postupně zavádí dvojjazyčné vzdělání v mapuchských oblastech, ale debata o tom, zda je to postačující, stále trvá.",
+        "source_url": "https://en.wikipedia.org/wiki/Mapuche_language",
+        "source_quote": "Mapudungun … classified as endangered … revitalization efforts are underway",
+        "voice": "Jazyk umírá s poslední generací, která ho mluví doma.",
+        "image_prompt": "Fotorealistický snímek dvojjazyčné chilské školy v regionu Araucanía, tabule s mapudungunem, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-jidlo-cazuela",
+    "country": "Chile",
+    "section": "Jídlo",
+    "topic": "Cazuela",
+    "headline": "Hrnec domova — polévka, která hřeje v každém počasí",
+    "fact": "Cazuela je tradiční chilský vývar z hovězího nebo kuřecího masa se zeleninou a kukuřicí; je to nejběžnější chilský domácí pokrm a symbolizuje rodinný oběd.",
+    "source_url": "https://en.wikipedia.org/wiki/Cazuela",
+    "source_quote": "Cazuela … a traditional Chilean stew … one of the most common dishes in Chilean households",
+    "voice": "Každá chilská babička má svůj recept. A všechny jsou nejlepší.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hluboké misky cazuela — vývar s hovězím, kukuřičným klasem, brambory a dýní, přirozené světlo, rustikální prostředí, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Choclo: andská kukuřice je jiná",
+        "fact": "Choclo — andská kukuřice — má velká, škrobnatá, sladká zrna a je zcela jiná než severoamerická sweet corn. V Chile se používá v cazuela, humitas (kukuřičné taštičky) i pastel de choclo (zapečená kukuřičná vrstva nad masem).",
+        "source_url": "https://en.wikipedia.org/wiki/Choclo",
+        "source_quote": "Choclo … large-kernel corn … distinct from sweet corn … a staple of Andean cuisine",
+        "voice": "Ta samá rostlina — úplně jiná chuť. Zeměpis zasahuje až na talíř.",
+        "image_prompt": "Fotorealistický snímek čerstvého chocla — velké kukuřičné klasy na dřevěném stole, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Andinska kuchyně jako geografická mapa",
+        "fact": "Chilská kuchyně se výrazně liší sever-jih: na severu vlivy And a pouštní kuchyně (quinoa, llama), ve středu španělsko-evropská tradice, na jihu vlivy německých přistěhovalců (kuchen, cerveza artesanal) a mořské plody Patagonie.",
+        "source_url": "https://en.wikipedia.org/wiki/Chilean_cuisine",
+        "source_quote": "Chilean cuisine … varies significantly by region … influenced by diverse immigration and geography",
+        "voice": "Mapa chutí Chile kopíruje mapu geografie i přistěhovalectví.",
+        "image_prompt": "Fotorealistický snímek venkovského chilského stolu s cazuela, marraqueta chlebem a sklenicí chicha, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-jidlo-congrio",
+    "country": "Chile",
+    "section": "Jídlo",
+    "topic": "Congrio — chilský mořský úhoř",
+    "headline": "Neruda mu věnoval ódu. Chilané ho jedí každý pátek.",
+    "fact": "Congrio (mořský úhoř) je nejikoničtější ryba chilské kuchyně; Pablo Neruda mu věnoval báseň Oda al caldillo de congrio a rybí vývar z congrria je chilský národní pokrm par excellence.",
+    "source_url": "https://en.wikipedia.org/wiki/Chilean_cuisine",
+    "source_quote": "caldillo de congrio … a fish soup considered one of Chile's national dishes … celebrated in a poem by Pablo Neruda",
+    "voice": "Básník a ryba. Neruda věnoval congriu celou báseň. Zasloužilo to.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek caldillo de congrio — ryba v hluboké misce s rajčaty, koriandrem a citronem, pobřežní restaurace, přirozené světlo, 16:9",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tichomořské pobřeží a mořská kuchyně",
+        "fact": "Chile má přes čtyři tisíce kilometrů pobřeží Tichého oceánu. Humboldtův proud přináší bohaté mořské zdroje — ryby, krevety, mořské ježky, ústřice. Chilská mořská kuchyně je přímý důsledek geografické polohy.",
+        "source_url": "https://en.wikipedia.org/wiki/Chilean_cuisine",
+        "source_quote": "Chile's Pacific coastline … provides an abundance of seafood",
+        "voice": "Čtyři tisíce kilometrů pobřeží. Chilané to jedí.",
+        "image_prompt": "Fotorealistický snímek chilského rybářského přístavu s čerstvě vyloženými rybami a kormoráni na palubě, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rybářský průmysl a ekologická krize",
+        "fact": "Chile je jedním z největších světových producentů lososů (z farem) a rybí moučky. Intenzivní průmyslový rybolov a akvakultury způsobují environmentální problémy — červené přílivy, úhyny ryb, kontaminace fjordů. Geografie a ekonomika jsou v konfliktu.",
+        "source_url": "https://en.wikipedia.org/wiki/Salmon_farming_in_Chile",
+        "source_quote": "Chile … one of the world's largest salmon producers … facing environmental challenges",
+        "voice": "Úspěšný průmysl ničí prostředí, ve kterém existuje. Starý příběh.",
+        "image_prompt": "Fotorealistický snímek chilských lososových farem v patagoniánském fjordu — klece v temné vodě, zelené kopce kolem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-historie-dicoba",
+    "country": "Chile",
+    "section": "Historie",
+    "topic": "Diktatura a přechod k demokracii",
+    "headline": "Plebiscit, který řekl ne diktátorovi",
+    "fact": "V roce devatenáct osm osm se Chile rozhodovalo v referendu, zda prodloužit Pinochetovu vládu. Výsledek Ne — podpořený kampaní přezdívanou La Alegría ya viene — ukončil diktaturu a zahájil návrat k demokracii.",
+    "source_url": "https://en.wikipedia.org/wiki/1988_Chilean_national_plebiscite",
+    "source_quote": "the 1988 Chilean national plebiscite … Chileans voted against extending Pinochet's rule",
+    "voice": "Jedna hlasovací lístka a diktatury konec. Demokracie funguje.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek chilského volebního lístku z roku 1988 nebo muzejního exponátu dokumentujícího plebiscit, historická atmosféra, 16:9",
+    "ll": [
+      -70.6543,
+      -33.443
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "La Alegría ya viene: kampaň, která změnila dějiny",
+        "fact": "Kampaň za Oproti se rozhodla neútočit na Pinocheta přímo, ale nabídnout vizi radostné budoucnosti — duha, slavnostní hudba, pozitivní poselství. Byl to revoluční přístup a fungoval. Stal se studijním materiálem politického marketingu po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/1988_Chilean_national_plebiscite",
+        "source_quote": "the No campaign … opted for a joyful, positive message … La Alegría ya viene",
+        "voice": "Radost jako politická strategie. A fungovalo to.",
+        "image_prompt": "Fotorealistický snímek chilského Muzea paměti s dokumenty o plebiscitu, duhové motivy kampaně Ne, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Třetí vlna demokratizace v Latinské Americe",
+        "fact": "Přechod Chile k demokracii byl součástí celosvětové třetí vlny demokratizace v osmdesátých a devadesátých letech. Jižní Kužel — Argentina, Uruguay, Chile, Paraguay a Brazílie — prošel přechodem od vojenských diktatur k demokracii v rámci jedné dekády.",
+        "source_url": "https://en.wikipedia.org/wiki/Third_wave_of_democratization",
+        "source_quote": "the third wave of democratization … swept Latin America in the 1980s and 1990s",
+        "voice": "Demokracie přichází ve vlnách. A někdy se vrací.",
+        "image_prompt": "Fotorealistický snímek chilských voličů ve frontě u volební místnosti, historická atmosféra přechodu k demokracii, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-historie-atacamawojny",
+    "country": "Chile",
+    "section": "Historie",
+    "topic": "Válka o ledek (Pacifická válka)",
+    "headline": "Válka o poušť, která přepsala mapu Jižní Ameriky",
+    "fact": "Pacifická válka (osmnáct sedmdesát devět–osmnáct osmdesát čtyři) mezi Chile, Bolívií a Peru skončila chilským vítězstvím; Chile získalo Atacamu s obrovskými zásobami ledku a Bolívie přišla o přístup k moři.",
+    "source_url": "https://en.wikipedia.org/wiki/War_of_the_Pacific",
+    "source_quote": "the War of the Pacific … Chile gained the Atacama Desert … Bolivia lost its only coastal territory",
+    "voice": "Bolívie je dodnes bez moře. A dodnes to neodpustila.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek opuštěného těžebního města ledku (salitreras) v chilské Atacamě — rezavé stroje a bílé solné pláně, dramatické světlo, 16:9",
+    "ll": [
+      -69.5,
+      -20.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ledek: bílé zlato, pro které se šlo do války",
+        "fact": "Sodný ledek z Atacamy byl v devatenáctém století klíčovým hnojivem pro evropské zemědělství a výbušninou pro průmysl. Kdo ovládal Atacamu, ovládal světovou zásobárnu ledku — a Chile pochopilo hodnotu poušt dřív než ostatní.",
+        "source_url": "https://en.wikipedia.org/wiki/Sodium_nitrate",
+        "source_quote": "sodium nitrate … extensively mined in the Atacama Desert … crucial for fertiliser and explosives",
+        "voice": "Za bílý prášek z pouště šli lidé zemřít. A dávali to smysl.",
+        "image_prompt": "Fotorealistický snímek historického průmyslového komplexu salitreras v Atacamě — UNESCO dědictví, bílé nános ledku a rezavé stroje, 16:9"
+      },
+      "kartograf": {
+        "headline": "Bolívia sine mare: geopolitická rána navždy",
+        "fact": "Ztráta přístupu k moři je pro Bolívii trvalá geopolitická zranitelnost. Vývoz surovin je dražší, průmysl závisí na chilských přístavech a diplomatické spory o přístup k Tichému oceánu jsou do dnes živé. Je to učebnicový příklad, jak válka přetváří geopolitiku na celá staletí.",
+        "source_url": "https://en.wikipedia.org/wiki/Bolivia%E2%80%93Chile_relations",
+        "source_quote": "Bolivia's landlocked status … remains a source of ongoing tension with Chile",
+        "voice": "Bezmořský stát je znevýhodněný navždy. Bolívie to ví každý den.",
+        "image_prompt": "Fotorealistický snímek bolivijsko-chilské hranice v Atacamě — hraniční přechod, poušť, symbolika uzavřeného přístupu k moři, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cl-jazyk-poetika",
+    "country": "Chile",
+    "section": "Jazyk & slova",
+    "topic": "Chilská poetická tradice",
+    "headline": "Dva Nobely z jedné malé země",
+    "fact": "Chile je jediná malá latinskoamerická země se dvěma Nobelovými cenami za literaturu — Gabriela Mistralová (čtyřicet pět) a Pablo Neruda (sedmdesát jedna); obě na básnictví.",
+    "source_url": "https://en.wikipedia.org/wiki/Gabriela_Mistral",
+    "source_quote": "Gabriela Mistral … the first Latin American author to receive the Nobel Prize in Literature",
+    "voice": "Dvě Nobelovy ceny za poezii. Z jedné malé úzké země mezi pouští a mořem.",
+    "visual_type": "typographic",
+    "ll": [
+      -70.6483,
+      -33.4569
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Gabriela Mistralová: učitelka a první Nobelistka Latinské Ameriky",
+        "fact": "Gabriela Mistralová pocházela z chudé rodiny v severním Chile a celý život pracovala jako venkovská učitelka. Její poezie o mateřství, ztrátě a přírodě dosáhla světové slávy dřív, než ji Chile plně doceňovalo doma.",
+        "source_url": "https://en.wikipedia.org/wiki/Gabriela_Mistral",
+        "source_quote": "Gabriela Mistral … worked as a teacher … her poetry gained international recognition",
+        "voice": "Učitelka z hor napsala básně pro celý svět. Chile ji pak pojmenovalo po ní letiště.",
+        "image_prompt": "Fotorealistický snímek chilské horské školy v okrese Elqui — kamenná budova, kopcovitá krajina, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Geografie inspirace: poušť a oceán jako múzy",
+        "fact": "Chilská poetická tradice se vyvíjela v extrémní geografii — Mistralová psala o suchých údolích severu, Neruda o oceánu a chladu jihu. Fyzická krajina Chile přirozeně vstupuje do básní, a literatura tak mapuje geografii citovně.",
+        "source_url": "https://en.wikipedia.org/wiki/Pablo_Neruda",
+        "source_quote": "Neruda's poetry … deeply influenced by the Chilean landscape … the ocean and Andean mountains",
+        "voice": "Básník je geograf emocí. Chile mu dalo hodně materiálu.",
+        "image_prompt": "Fotorealistický snímek chilského tichomořského pobřeží se skalami a vlnami — krajina inspirující nerváty, dramatické světlo, 16:9"
+      }
+    }
+  }
+]

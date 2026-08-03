@@ -1,0 +1,216 @@
+[
+  {
+    "id": "nz-mista-milford-sound",
+    "country": "Nový Zéland",
+    "section": "Místa",
+    "topic": "Milford Sound a srážky",
+    "headline": "Fjord, kterému spisovatel řekl osmý div světa",
+    "fact": "Milford Sound je fjord na Jižním ostrově obklopený skalními stěnami vysokými přes 1 200 m; spisovatel Rudyard Kipling ho nazval osmým divem světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Milford_Sound",
+    "source_quote": "Rudyard Kipling called it the eighth Wonder of the World.",
+    "voice": "Skály se tyčí přímo z moře, jako by je někdo naskládal na sebe.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek fjordu Milford Sound s vysokými skalními stěnami a vodopády, mlha nad vodou, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Milford Sound patří k nejdeštivějším obydleným místům na světě — ročně tu spadne přes 6 400 mm srážek. Nejvyšší vrchol v okolí, Mitre Peak, měří 1 692 metrů a ční přímo z hladiny fjordu.",
+        "source_url": "https://en.wikipedia.org/wiki/Milford_Sound"
+      },
+      "kartograf": {
+        "fact": "Extrémní srážky Milford Sound jsou přímý důsledek jeho polohy — vlhký vzduch od Tasmanova moře naráží na příkré hory a je nucen prudce stoupat, čímž se ochlazuje a vysráží se jako déšť. Stejný mechanismus vytváří deštivé oblasti na návětrné straně hor po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Milford_Sound"
+      }
+    }
+  },
+  {
+    "id": "nz-priroda-rotorua",
+    "country": "Nový Zéland",
+    "section": "Příroda",
+    "topic": "Geotermální aktivita Rotoruy",
+    "headline": "Město, které voní po vejcích",
+    "fact": "Rotorua leží v sopečné kaldeře plné gejzírů, bahenních jezírek a horkých pramenů; kvůli sirnému zápachu se jí přezdívá 'Sírové město'.",
+    "source_url": "https://en.wikipedia.org/wiki/Rotorua",
+    "source_quote": "This thermal activity is sourced to the Rotorua Caldera, in which the city lies.",
+    "voice": "Půda tu doslova bublá a vzduch páchne jako zkažená vejce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek gejzíru Pōhutu tryskajícího vysoko do vzduchu v Rotoruy, páry stoupající z horké země, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kaldera Rotorua vznikla sopečnou erupcí asi před 240 000 lety. Slavný gejzír Pōhutu ve Whakarewarewě je jedním z nejaktivnějších na jižní polokouli a sirný zápach pochází ze sirovodíku unikajícího ze země.",
+        "source_url": "https://en.wikipedia.org/wiki/Rotorua"
+      },
+      "kartograf": {
+        "fact": "Geotermální aktivita Rotoruy je přímý projev toho, že Nový Zéland leží na Tichomořském ohnivém kruhu — stejná tektonická aktivita, která zemi dává sopky a zemětřesení, jí zároveň dává i tyto jedinečné horké prameny a gejzíry.",
+        "source_url": "https://en.wikipedia.org/wiki/Rotorua"
+      }
+    }
+  },
+  {
+    "id": "nz-lide-maorove",
+    "country": "Nový Zéland",
+    "section": "Lidé",
+    "topic": "Polynéská navigace a osídlení Nového Zélandu",
+    "headline": "Národ, který připlul na kánoích přes Pacifik",
+    "fact": "Maorové jsou domorodý polynéský národ Nového Zélandu, jehož předkové připluli na kánoích z východní Polynésie ve vlnách mezi lety 1320 a 1350.",
+    "source_url": "https://en.wikipedia.org/wiki/M%C4%81ori_people",
+    "source_quote": "Indigenous Polynesian people of mainland New Zealand.",
+    "voice": "Bez kompasu, jen podle hvězd a vln přeplavali obrovský kus oceánu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradiční maorské válečné kánoe waka na moři, hory Nového Zélandu v pozadí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Maorové navigovali přes otevřený oceán podle hvězd, mořských proudů a chování ptáků — bez map či kompasu. Novozélandské ostrovy byly jedny z posledních velkých obyvatelných území, které lidé na Zemi osídlili.",
+        "source_url": "https://en.wikipedia.org/wiki/M%C4%81ori_people"
+      },
+      "kartograf": {
+        "fact": "Maorská kolonizace Nového Zélandu ukazuje mimořádné navigační schopnosti polynéských mořeplavců — dokázali systematicky objevovat a osidlovat ostrovy roztroušené přes obrovské plochy Tichého oceánu, dávno předtím, než Evropané měli technologie na podobné dálkové plavby.",
+        "source_url": "https://en.wikipedia.org/wiki/M%C4%81ori_people"
+      }
+    }
+  },
+  {
+    "id": "nz-jidlo-hangi",
+    "country": "Nový Zéland",
+    "section": "Jídlo",
+    "topic": "Hāngi — vaření v zemní jámě",
+    "headline": "Jídlo uvařené přímo v zemi",
+    "fact": "Hāngi je tradiční maorský způsob vaření jídla v jámě vyhloubené v zemi, vyhřáté rozžhavenými kameny — díky tomu se najednou uvaří jídlo pro celou skupinu lidí.",
+    "source_url": "https://en.wikipedia.org/wiki/H%C4%81ng%C4%AB",
+    "source_quote": "To 'lay a hāngī' or 'put down a hāngī' involves digging a pit in the ground, heating stones in the pit with a large fire.",
+    "voice": "Trouba, která je vlastně jen díra v zemi a pár rozpálených kamenů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek otevřené jámy hāngi s jídlem zahrabaným mezi rozžhavenými kameny, pára stoupající ze země, 16:9",
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kameny se nejdřív rozžhaví ve velkém ohni, pak se na ně naskládá jídlo zabalené v listech, celé se to zasype hlínou a nechá se pomalu propařit několik hodin — výsledek je kouřová, šťavnatá chuť, kterou žádná trouba nedokáže napodobit.",
+        "source_url": "https://en.wikipedia.org/wiki/H%C4%81ng%C4%AB"
+      },
+      "kartograf": {
+        "fact": "Hāngi je typický příklad komunitního vaření pro velké skupiny bez potřeby stavěné infrastruktury — podobné techniky vaření v zemní jámě se objevují nezávisle napříč tichomořskými a jinými domorodými kulturami, kdekoli je potřeba nakrmit hodně lidí najednou bez pece.",
+        "source_url": "https://en.wikipedia.org/wiki/H%C4%81ng%C4%AB"
+      }
+    }
+  },
+  {
+    "id": "nz-historie-waitangi",
+    "country": "Nový Zéland",
+    "section": "Historie",
+    "topic": "Smlouva z Waitangi a její výklady",
+    "headline": "Smlouva, na které stojí celá země",
+    "fact": "Smlouva z Waitangi mezi britskou korunou a maorskými náčelníky z roku 1840 je zakládajícím dokumentem Nového Zélandu.",
+    "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Waitangi",
+    "source_quote": "Increasingly, the treaty is recognised as a founding document in New Zealand's developing unwritten constitution.",
+    "voice": "Jeden podpis před skoro 200 lety pořád ovlivňuje dnešní zákony.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistická ilustrace podpisu smlouvy mezi britskými zástupci a maorskými náčelníky, 19. století, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Smlouva existuje ve dvou jazykových verzích — anglické a maorské — které se v klíčových bodech liší, což vedlo k dlouhodobým sporům o její výklad. Dodnes je základem vztahu mezi novozélandskou vládou a maorským obyvatelstvem.",
+        "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Waitangi"
+      },
+      "kartograf": {
+        "fact": "Rozdílné jazykové verze smlouvy z Waitangi ukazují, jak zásadně může chybný nebo záměrně odlišný překlad ovlivnit dějiny celé země — nejasnost v jediném dokumentu vytvořila právní a politické spory, které trvají dodnes, o téměř dvě století později.",
+        "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Waitangi"
+      }
+    }
+  },
+  {
+    "id": "nz-kultura-haka",
+    "country": "Nový Zéland",
+    "section": "Kultura & tradice",
+    "topic": "Haka a její světová proslulost",
+    "headline": "Tanec, který dokáže vyjádřit vítání i výzvu",
+    "fact": "Haka je tradiční maorský obřadní tanec s dupáním a rytmickým pokřikem; slouží k vítání hostů, oslavě úspěchů i truchlení, a proslavil ho i novozélandský ragbyový tým All Blacks.",
+    "source_url": "https://en.wikipedia.org/wiki/Haka",
+    "source_quote": "A performance art, haka are often performed by a group, with vigorous movements and stamping of the feet.",
+    "voice": "Než začne zápas, soupeř musí nejdřív přežít tenhle pohled z očí do očí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek skupiny mužů předvádějících tradiční maorskou haku, výrazné grimasy a rytmické pozice, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tým All Blacks začal haku předvádět před mezinárodními zápasy už roku 1905 a navázal tak na tradici započatou novozélandským domorodým fotbalovým týmem v letech 1888–89 — díky ragby se haka proslavila po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Haka"
+      },
+      "kartograf": {
+        "fact": "Haka je příklad, jak sport dokáže globálně vypropagovat lokální kulturní tradici — díky mezinárodním ragbyovým zápasům vidí haku miliony lidí po celém světě, kteří by o maorské kultuře jinak možná nikdy neslyšeli.",
+        "source_url": "https://en.wikipedia.org/wiki/Haka"
+      }
+    }
+  },
+  {
+    "id": "nz-umeni-ta-moko",
+    "country": "Nový Zéland",
+    "section": "Umění",
+    "topic": "Tā moko jako záznam identity",
+    "headline": "Tetování vyryté do kůže, ne jen napíchané",
+    "fact": "Tā moko je tradiční maorské tetování obličeje, které se na rozdíl od běžného tetování dřív vyrývalo do kůže kostěnými dláty a označovalo společenské postavení nositele.",
+    "source_url": "https://en.wikipedia.org/wiki/T%C4%81_moko",
+    "source_quote": "Tohunga-tā-moko (tattooists) were considered tapu, or inviolable and sacred.",
+    "voice": "Vzory na tváři vyprávěly, kdo jsi a odkud pocházíš.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrétní snímek tváře s tradičními maorskými vzory tā moko, důstojný výraz, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Rytí (ne propichování) kůže zanechávalo hmatatelné rýhy ve vzoru, ne jen barvu pod povrchem kůže. Tā moko označovalo přechod z dětství do dospělosti a nesl informaci o rodu, postavení i osobních úspěších.",
+        "source_url": "https://en.wikipedia.org/wiki/T%C4%81_moko"
+      },
+      "kartograf": {
+        "fact": "Tetovači tā moko byli považováni za posvátné a nedotknutelné — spojení umění s duchovnem tu bylo nerozlučné, podobně jako u jiných tradičních tělesných úprav napříč světovými kulturami, kde tělo funguje jako veřejně čitelný záznam identity.",
+        "source_url": "https://en.wikipedia.org/wiki/T%C4%81_moko"
+      }
+    }
+  },
+  {
+    "id": "nz-sport-all-blacks",
+    "country": "Nový Zéland",
+    "section": "Sport",
+    "topic": "Úspěšnost týmu All Blacks",
+    "headline": "Tým, který prohrává jen zřídka",
+    "fact": "Novozélandský ragbyový tým All Blacks patří k nejúspěšnějším sportovním týmům v dějinách — má přes 76 % vítězství ve všech odehraných testovacích zápasech.",
+    "source_url": "https://en.wikipedia.org/wiki/New_Zealand_national_rugby_union_team",
+    "source_quote": "Famed for their international success, the All Blacks have often been regarded as one of the most successful sports teams in history.",
+    "voice": "Proti každému soupeři na světě mají v historii víc výher než proher.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ragbyového týmu v černých dresech na hřišti, dynamický pohyb hráčů, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "All Blacks debutovali v mezinárodním ragby roku 1903 a od té doby drží dominanci proti prakticky každému soupeři na světě — jejich úspěšnost je mimořádná i ve srovnání s jinými historicky úspěšnými sportovními týmy.",
+        "source_url": "https://en.wikipedia.org/wiki/New_Zealand_national_rugby_union_team"
+      },
+      "kartograf": {
+        "fact": "Dlouhodobá dominance malého státu (Nový Zéland má jen kolem 5 milionů obyvatel) v celosvětovém sportu ukazuje, že úspěch nezávisí jen na velikosti populace — silná ragbyová kultura, systematická příprava a haka jako psychologická zbraň dohromady vytvářejí náskok, který velikost země nevysvětlí.",
+        "source_url": "https://en.wikipedia.org/wiki/New_Zealand_national_rugby_union_team"
+      }
+    }
+  },
+  {
+    "id": "nz-jazyk-te-reo",
+    "country": "Nový Zéland",
+    "section": "Jazyk & slova",
+    "topic": "Obrození maorského jazyka",
+    "headline": "Jazyk, který skoro vymřel a teď se vrací",
+    "fact": "Maorština (te reo Māori) je úředním jazykem Nového Zélandu; po dlouhém úpadku ve 20. století prochází od roku 2015 výrazným obrozením.",
+    "source_url": "https://en.wikipedia.org/wiki/M%C4%81ori_language",
+    "voice": "Jazyk, který skoro zmizel, se dnes znovu učí čím dál víc lidí.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Zákon o maorském jazyce z roku 1987 mu dal oficiální status. Úpadek jazyka souvisel s jeho potlačováním ve školách a poválečnou urbanizací; dnešní obrození ho staví jako sdílené národní dědictví pro všechny Novozélanďany, ne jen Maory.",
+        "source_url": "https://en.wikipedia.org/wiki/M%C4%81ori_language"
+      },
+      "kartograf": {
+        "fact": "Obrození maorštiny je příklad, jak stát dokáže cíleně zvrátit jazykový úpadek způsobený vlastní dřívější politikou — zákonná ochrana a podpora ve školství pomohly jazyku, který byl na pokraji vymření, znovu růst mezi mladší generací.",
+        "source_url": "https://en.wikipedia.org/wiki/M%C4%81ori_language"
+      }
+    }
+  }
+]

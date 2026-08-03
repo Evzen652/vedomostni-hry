@@ -1,0 +1,800 @@
+[
+  {
+    "id": "my-mista-petronas",
+    "country": "Malajsie",
+    "section": "Místa",
+    "topic": "Petronas Towers",
+    "headline": "Ocelová dvojčata nad metropolí",
+    "fact": "Mrakodrapy Petronas Towers v Kuala Lumpuru dosahují výšky přes čtyři sta padesát metrů a spojuje je dvoupodlažní most.",
+    "source_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
+    "voice": "Když se zvedne mlha, vypadají jako dvě raketoplánové rampy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of the Petronas Twin Towers in Kuala Lumpur at dusk, glowing lights, skybridge visible, 16:9",
+    "ll": [
+      101.7118,
+      3.1578
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vyhlídka mezi mraky",
+        "fact": "Návštěvníci mohou projít po proskleném mostě Skybridge ve čtyřicátém druhém patře.",
+        "source_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
+        "voice": "Procházka vzduchem mezi dvěma obry vyžaduje pevné nervy.",
+        "image_prompt": "Photorealistic interior shot of visitors walking on the glass Petronas Skybridge between two towers, 16:9"
+      },
+      "kartograf": {
+        "headline": "Symbol moderní Asie",
+        "fact": "Konstrukce věží vychází z islámské geometrie a osmicípé hvězdy, což propojilo tradici s moderní architekturou.",
+        "source_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
+        "voice": "Tradice ztvárněná v oceli a skle ukazuje směr celého regionu.",
+        "image_prompt": "Photorealistic aerial wide shot of the Kuala Lumpur skyline centered on Petronas Towers, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-mista-mulu",
+    "country": "Malajsie",
+    "section": "Místa",
+    "topic": "Jeskyně Mulu",
+    "headline": "Podzemní labyrint na Borneu",
+    "fact": "Národní park Mulu ukrývá obří jeskynní systémy a vápencové skalní jehly vyčnívající z deštného pralesa.",
+    "source_url": "https://en.wikipedia.org/wiki/Gunung_Mulu_National_Park",
+    "voice": "Vstoupit do těchto dómů znamená připadat si jako trpaslík.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of huge limestone karst pinnacles rising above a dense tropical rainforest in Mulu, Sarawak, 16:9",
+    "ll": [
+      114.8111,
+      4.05
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rojení netopýrů",
+        "fact": "Každý podvečer vylétají z jeskyně Deer Cave miliony netopýrů a vytvářejí na obloze spirálovité černé mraky.",
+        "source_url": "https://en.wikipedia.org/wiki/Gunung_Mulu_National_Park",
+        "voice": "Přírodní divadélko, které spolehlivě zastíní jakýkoli ohňostroj.",
+        "image_prompt": "Photorealistic shot of millions of bats exiting a massive cave mouth into the dusk sky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Gigantický Sarawak Chamber",
+        "fact": "Zdejší podzemní dóm Sarawak Chamber bývá označován jako plošně největší jeskynní prostor na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Sarawak_Chamber",
+        "source_quote": "It has the largest cave chamber by surface area in the world",
+        "voice": "Představ si halu, do které by se vešlo čtyřicet boeingů vedle sebe.",
+        "image_prompt": "Photorealistic cavernous underground cave interior with tiny explorer lights revealing vast scale, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-mista-melaka",
+    "country": "Malajsie",
+    "section": "Místa",
+    "topic": "Historická Malacca",
+    "headline": "Přístav mnoha kultur",
+    "fact": "Historické město Malacca na pobřeží Malajského průlivu uchovává architekturu z dob portugalské, holandské i britské nadvlády.",
+    "source_url": "https://en.wikipedia.org/wiki/Malacca",
+    "voice": "Každá ulice vypráví příběh o mořeplavcích z jiného koutu světa.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic view of red Dutch colonial buildings and the river canal in historic Malacca, 16:9",
+    "ll": [
+      102.2501,
+      2.1944
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Barevné trishaws a trhy",
+        "fact": "V ulicích potkáte svítící šlapací trike-rikši zdobené květinami a postavičkami z pohádek.",
+        "source_url": "https://en.wikipedia.org/wiki/Malacca",
+        "voice": "Taxík, hrající skříňka a pouťová atrakce v jednom balení.",
+        "image_prompt": "Photorealistic street scene on Jonker Street in Malacca with decorated colorful bicycle rickshaws, 16:9"
+      },
+      "kartograf": {
+        "headline": "Křižovatka mořských cest",
+        "fact": "Malajský průliv patřil k zásadním námořním cestám pro obchod s kořením mezi Evropou, Indií a Čínou.",
+        "source_url": "https://en.wikipedia.org/wiki/Strait_of_Malacca",
+        "voice": "Zdejší úžinou musela projít každá loď, která chtěla ovládnout asijský obchod.",
+        "image_prompt": "Photorealistic wide shot of the Strait of Malacca with historical ships sailing near coast, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-priroda-orangutan",
+    "country": "Malajsie",
+    "section": "Příroda",
+    "topic": "Orangutani na Borneu",
+    "headline": "Lidé pralesa",
+    "fact": "Tropické deštné pralesy malajských států Sabah a Sarawak představují domov ohrožených orangutanů bornejských.",
+    "source_url": "https://en.wikipedia.org/wiki/Bornean_orangutan",
+    "voice": "Jejich název v malajštině doslova znamená člověk z lesa.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a Bornean orangutan sitting on a jungle branch surrounded by green foliage, 16:9",
+    "ll": [
+      117.9493,
+      5.8642
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Záchranné centrum Sepilok",
+        "fact": "V rezervaci Sepilok učitelé a ošetřovatelé vracejí osiřelá mláďata orangutanů zpět do volné přírody.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepilok_Orangutan_Rehabilitation_Centre",
+        "voice": "Létání ve větvích se malé sirotky musí učit krok za krokem.",
+        "image_prompt": "Photorealistic shot of a young orangutan climbing ropes in Sepilok rehabilitation forest, 16:9"
+      },
+      "kartograf": {
+        "headline": "Život v korunách stromů",
+        "fact": "Orangutan je největší stromový savec světa a naprostou většinu života tráví vysoko nad zemí.",
+        "source_url": "https://en.wikipedia.org/wiki/Bornean_orangutan",
+        "source_quote": "It is the largest strictly arboreal mammal",
+        "voice": "Na zem sleze jen málokdy, celou džungli proputuje po větvích.",
+        "image_prompt": "Photorealistic high-angle view of dense Bornean rainforest canopy with an orangutan moving between trees, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-priroda-kinabalu",
+    "country": "Malajsie",
+    "section": "Příroda",
+    "topic": "Hora Kinabalu",
+    "headline": "Ostré vrcholy státu Sabah",
+    "fact": "Hora Kinabalu dosahuje nadmořské výšky přes čtyři tisíce metrů a dominuje borneojské krajině.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Kinabalu",
+    "voice": "Místní lidé věří, že na jejím vrcholku odpočívají duše předků.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic landscape of Mount Kinabalu rising sharply above clouds in Sabah, 16:9",
+    "ll": [
+      116.5581,
+      6.075
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cesta nad mraky",
+        "fact": "Výstup na žulové plošiny vrcholku zvládne za doprovodu průvodce i zdatný turista.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Kinabalu",
+        "voice": "Ranní východ slunce z vrcholu vykompenzuje veškerou únavu z nočního pochodu.",
+        "image_prompt": "Photorealistic view of hikers standing on the rocky granite peak of Kinabalu at sunrise above a sea of clouds, 16:9"
+      },
+      "kartograf": {
+        "headline": "Botanický unikát",
+        "fact": "Svědomitá ochrana území chrání tisíce druhů rostlin včetně masožravých láčkovek a vzácných orchidějí.",
+        "source_url": "https://en.wikipedia.org/wiki/Kinabalu_Park",
+        "voice": "Na jediném kopci roste víc druhů rostlin, než by člověk čekal na celém kontinentu.",
+        "image_prompt": "Photorealistic macro photo of a Nepenthes pitcher plant growing in Kinabalu National Park, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-priroda-taman-negara",
+    "country": "Malajsie",
+    "section": "Příroda",
+    "topic": "Prales Taman Negara",
+    "headline": "Prastará zelená džungle",
+    "fact": "Tropický prales Taman Negara v poloostrovní Malajsii patří k nejstarším deštným pralesům světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Taman_Negara",
+    "source_quote": "reputed to be 130 million years old",
+    "voice": "Zdejší stromy pamatují éru, kdy po Zemi kráčeli dinosauři.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic ancient tropical rainforest with huge buttress trees and dense green canopy in Taman Negara, 16:9",
+    "ll": [
+      102.4,
+      4.3833
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lávka v korunách stromů",
+        "fact": "V parku funguje dlouhá visutá lávka zavěšená desítky metrů nad zemí mezi kmeny stromů.",
+        "source_url": "https://en.wikipedia.org/wiki/Taman_Negara",
+        "voice": "Pohled na džungli z ptačí perspektivy dodá procházce pořádnou dávku adrenalinu.",
+        "image_prompt": "Photorealistic shot of a canopy walkway bridge suspended high in rainforest trees, 16:9"
+      },
+      "kartograf": {
+        "headline": "Útočiště ohrožené fauny",
+        "fact": "Prales poskytuje útočiště vzácným druhům, jako je tygr malajský nebo slon indický.",
+        "source_url": "https://en.wikipedia.org/wiki/Taman_Negara",
+        "voice": "Udržení neporušeného pralesa představuje jedinou naději pro přežití divokých šelem.",
+        "image_prompt": "Photorealistic telephoto shot of a Malayan tiger walking through dense jungle undergrowth, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-lide-lee-chong-wei",
+    "country": "Malajsie",
+    "section": "Lidé",
+    "topic": "Lee Chong Wei",
+    "headline": "Král badmintonového kurtu",
+    "fact": "Lee Chong Wei je legenda světového badmintonu a držitel tří olympijských medailí z Malajsie.",
+    "source_url": "https://en.wikipedia.org/wiki/Lee_Chong_Wei",
+    "voice": "Když hrál finále, celá země držela bez hnutí dech.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic athletic image of badminton player Lee Chong Wei mid-smash on an indoor court, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Národní hrdina",
+        "fact": "Jeho zápasy sledovaly miliony lidí v restauracích i na náměstích po celé zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Lee_Chong_Wei",
+        "voice": "Máloco dokázalo spojit rozmanité etnikum tak jako jeho rychlá smeč.",
+        "image_prompt": "Photorealistic shot of Malayan fans watching a badminton match on a public big screen, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rychlost a vytrvalost",
+        "fact": "Rychlost košíčku při badmintonových smečích přesahuje rychlost tří set kilometrů za hodinu.",
+        "source_url": "https://en.wikipedia.org/wiki/Smash_(badminton)",
+        "voice": "Postřeh hráče musí fungovat v řádu milisekund.",
+        "image_prompt": "Photorealistic motion blur detail shot of a shuttlecock hitting a badminton racket strings, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-lide-p-ramlee",
+    "country": "Malajsie",
+    "section": "Lidé",
+    "topic": "P. Ramlee",
+    "headline": "Mág malajského filmu",
+    "fact": "P. Ramlee byl slavný malajsijský herec, režisér a hudební skladatel, který ovlivnil filmovou kulturu v celé jihovýchodní Asii.",
+    "source_url": "https://en.wikipedia.org/wiki/P._Ramlee",
+    "voice": "Jeho písničky si lidé v Malajsii prozpěvují dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic vintage-style portrait of actor and musician P. Ramlee with a classic microphone, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zlatá éra filmu",
+        "fact": "Vytvořil desítky komedií a dramat, které v padesátých letech bavily celé generace diváků.",
+        "source_url": "https://en.wikipedia.org/wiki/P._Ramlee",
+        "voice": "Dokázal lidi rozesmát i dojmout během jediné filmové scény.",
+        "image_prompt": "Photorealistic nostalgic scene of a mid-century cinema screening room in Southeast Asia, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní fenomén",
+        "fact": "Propojil tradiční malajské melodie se západním jazzem a vytvořil osobitý hudební styl.",
+        "source_url": "https://en.wikipedia.org/wiki/P._Ramlee",
+        "voice": "Ukázal, že spojení tradice s novými vlivy tvoří nadčasová díla.",
+        "image_prompt": "Photorealistic recording studio setting with vintage musical instruments and vinyl records, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-lide-nicol-david",
+    "country": "Malajsie",
+    "section": "Lidé",
+    "topic": "Nicol David",
+    "headline": "Královna skleněného kurtu",
+    "fact": "Nicol David je malajsijská hráčka squashe, která po mnoho let dominovala světovému žebříčku.",
+    "source_url": "https://en.wikipedia.org/wiki/Nicol_David",
+    "voice": "V uzavřeném kurtu se pohybovala tak rychle, jako by popírala fyziku.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of female squash player Nicol David holding a racket in a glass court, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Inspirace pro mládež",
+        "fact": "Získala osm titulů mistryně světa a stala se vzorem pro mladé sportovce v Asii.",
+        "source_url": "https://en.wikipedia.org/wiki/Nicol_David",
+        "source_quote": "She won a record 8 World Open titles",
+        "voice": "Ukázala všem holkám v regionu, že se lze dostat až na absolutní vrchol.",
+        "image_prompt": "Photorealistic shot of Nicol David celebrating with a trophy on court, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sportovní vytrvalost",
+        "fact": "Udržela se na pozici světové jedničky nepřetržitě sto osmnáct měsíců.",
+        "source_url": "https://en.wikipedia.org/wiki/Nicol_David",
+        "source_quote": "she was world number 1 for a record 108 consecutive months",
+        "voice": "Udržet si formu skoro deset let v kuse vyžaduje neuvěřitelnou disciplínu.",
+        "image_prompt": "Photorealistic view of a modern transparent glass squash arena lit for a international match, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-kultura-tradice-peranakan",
+    "country": "Malajsie",
+    "section": "Kultura & tradice",
+    "topic": "Peranakan kultura",
+    "headline": "Spojení Číny a Malajsie",
+    "fact": "Kultura Peranakan vznikla dlouhodobým mísením čínských přistěhovalců s místním malajským obyvatelstvem.",
+    "source_url": "https://en.wikipedia.org/wiki/Peranakan",
+    "voice": "Když se propojí dvě bohaté tradice, vznikne neuvěřitelně pestrý svět.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic interior of a Peranakan heritage house with ornate carved furniture and colorful porcelain, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Barevné shophouses a kachličky",
+        "fact": "Pro architekturu jsou typické městské domky s pastelovými fasádami a ručně malovanými dlaždicemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Peranakan",
+        "voice": "Procházka touto čtvrtí připomíná prohlídku živé galerijní uličky.",
+        "image_prompt": "Photorealistic row of colorful Peranakan style shophouses with ornate tiles in Penang, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní syntéza",
+        "fact": "Tato komunita si vytvořila vlastní jazykový dialekt i originální oděvy známé jako Nyonya kebaya.",
+        "source_url": "https://en.wikipedia.org/wiki/Peranakan",
+        "voice": "Společné žití vytvořilo unikátní identitu, která nemá ve světě obdoby.",
+        "image_prompt": "Photorealistic close-up of embroidered traditional Nyonya kebaya silk clothing, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-kultura-tradice-batik",
+    "country": "Malajsie",
+    "section": "Kultura & tradice",
+    "topic": "Malajsijská batika",
+    "headline": "Umění vosku a barev",
+    "fact": "Tradiční malajsijská batika využívá vosk a tekuté barvy k vytváření zářivých květinových vzorů na látkách.",
+    "source_url": "https://en.wikipedia.org/wiki/Malaysian_batik",
+    "voice": "Sledujte, jak horký vosk drží barvu přesně tam, kde ji umělec chce mít.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of an artisan hand-painting floral wax patterns on silk batik cloth, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Květiny a příroda",
+        "fact": "Na rozdíl od indonéské batiky se ta malajská zaměřuje na velké motivy rostlin a listů.",
+        "source_url": "https://en.wikipedia.org/wiki/Malaysian_batik",
+        "voice": "Lidé nenosí jen oblečení, nosí na sobě celou rozkvetlou zahradu.",
+        "image_prompt": "Photorealistic colorful Malaysian batik fabric with bold floral prints hanging to dry, 16:9"
+      },
+      "kartograf": {
+        "headline": "Národní oděv",
+        "fact": "Batikované košile a šátky se nosí při oficiálních státních událostech i svátečních setkáních.",
+        "source_url": "https://en.wikipedia.org/wiki/Malaysian_batik",
+        "voice": "Tradiční řemeslo se stalo oficiální uniformou malajsijské pohostinnosti.",
+        "image_prompt": "Photorealistic close-up of silk batik fabric details with rich colors and brush strokes, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-kultura-tradice-thaipusam",
+    "country": "Malajsie",
+    "section": "Kultura & tradice",
+    "topic": "Svátek Thaipusam",
+    "headline": "Fascinující procesí u Batu Caves",
+    "fact": "Hinduistický svátek Thaipusam se v Malajsii slaví velkolepým průvodem k chrámu uvnitř vápencových jeskyní Batu Caves.",
+    "source_url": "https://en.wikipedia.org/wiki/Thaipusam",
+    "voice": "Dav věřících stoupá po duhově barevných schodech pod dohledem obří zlaté sochy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the rainbow-colored stairs and huge golden Lord Murugan statue at Batu Caves during festival, 16:9",
+    "ll": [
+      101.6841,
+      3.2379
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Schody do chrámu",
+        "fact": "K chrámu v jeskyni vede množství barevných schodů, po kterých stoupají tisíce věřících.",
+        "source_url": "https://en.wikipedia.org/wiki/Batu_Caves",
+        "voice": "Výstup provází bubnování, zpěv a povzbuzování přihlížejících davů.",
+        "image_prompt": "Photorealistic view looking up the steep rainbow stairs towards the Batu Caves entrance, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradiční konstrukce Kavadi",
+        "fact": "Poutníci nesou ozdobené konstrukce zvané kavadi jako projev díků a oddanosti své víře.",
+        "source_url": "https://en.wikipedia.org/wiki/Thaipusam",
+        "voice": "Poutník nese na ramenou těžký oltář, ale v tranzu necítí žádnou únavu.",
+        "image_prompt": "Photorealistic shot of a festival devotee carrying a decorated Peacock Kavadi frame, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-umeni-wau-bulan",
+    "country": "Malajsie",
+    "section": "Umění",
+    "topic": "Drak Wau Bulan",
+    "headline": "Měsíční drak na obloze",
+    "fact": "Wau Bulan je tradiční malajsijský vyřezávaný papírový drak ve tvaru půlměsíce, zdobený barevnými vzory.",
+    "source_url": "https://en.wikipedia.org/wiki/Wau_Bulan",
+    "voice": "Když se vznese do vzduchu, vypadá jako zářící měsíc plující větrem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a large, intricately decorated crescent-shaped Wau Bulan kite flying in blue sky, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Bambus a papír",
+        "fact": "Výroba jednoho draka vyžaduje precizní vyřezávání bambusové kostry a vrstvení jemného papíru.",
+        "source_url": "https://en.wikipedia.org/wiki/Wau_Bulan",
+        "voice": "Mistr řemesla tvoří kostru celé týdny, aby drak držel ve vzduchu dokonalou rovnováhu.",
+        "image_prompt": "Photorealistic shot of a Malaysian artisan crafting a bamboo kite frame in a workshop, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zvuk na obloze",
+        "fact": "Drak má na vrcholu připevněný hummer, který při letu ve větru vydává hluboký bzučivý tón.",
+        "source_url": "https://en.wikipedia.org/wiki/Wau_Bulan",
+        "source_quote": "It is also called the 'Moon Kite' as the crescent-shaped sail resembles a moon",
+        "voice": "Draka na obloze nejen vidíte, ale díky větrnému bzučáku i slyšíte z dálky.",
+        "image_prompt": "Photorealistic detail of intricately cut paper ornaments on a Malaysian traditional kite, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-umeni-wayang-kulit",
+    "country": "Malajsie",
+    "section": "Umění",
+    "topic": "Wayang Kulit",
+    "headline": "Příběhy ze stínů",
+    "fact": "Wayang Kulit je tradiční stínové loutkové divadlo, ve kterém loutkář vypráví staré mýty pomocí kožených figurek.",
+    "source_url": "https://en.wikipedia.org/wiki/Wayang_kulit",
+    "voice": "Plátno osvícené lampou promění kousek vyřezávané kůže v živou postavu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic view of shadow puppets cast onto a backlit white screen during Wayang Kulit performance, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Mistr loutkář Tok Dalang",
+        "fact": "Vypravěč zvaný Tok Dalang sám ovládá všechny loutky, mění hlasy a zároveň řídí orchestr.",
+        "source_url": "https://en.wikipedia.org/wiki/Wayang_kulit",
+        "voice": "Uřídit desítky postav a ještě hrát na buben vyžaduje obrovské soustředění.",
+        "image_prompt": "Photorealistic shot from behind the screen showing the puppeteer master manipulating intricate puppets, 16:9"
+      },
+      "kartograf": {
+        "headline": "Doprovod živé hudby",
+        "fact": "Představení doprovází tradiční orchestr gamelan složený z gongů, metalofonů a bubnů.",
+        "source_url": "https://en.wikipedia.org/wiki/Wayang_kulit",
+        "voice": "Zvuk gamelanu udává rytmus bojovým scénám i milostným dialogům.",
+        "image_prompt": "Photorealistic shot of traditional gamelan bronze percussion instruments set up for shadow theater, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-umeni-silat",
+    "country": "Malajsie",
+    "section": "Umění",
+    "topic": "Silat Melayu",
+    "headline": "Umění sebeobrany i tance",
+    "fact": "Silat Melayu představuje tradiční bojové umění, které kombinuje sebeobranu s plynulými tanečními pohyby.",
+    "source_url": "https://en.wikipedia.org/wiki/Silat_Melayu",
+    "voice": "Kroky vypadají jako elegantní tanec, dokud nepřijde bleskový protiúder.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of two martial artists in traditional black attire performing Silat poses outdoor, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Doprovod svateb a slavností",
+        "fact": "Během svatebních obřadů předvádějí mistři silatu ukázky k poctě ženicha a nevěsty.",
+        "source_url": "https://en.wikipedia.org/wiki/Silat_Melayu",
+        "voice": "Místo bojového souboje jde o projev úcty a přání štěstí novomanželům.",
+        "image_prompt": "Photorealistic scene of a Silat demonstration at an outdoor Malay wedding celebration, 16:9"
+      },
+      "kartograf": {
+        "headline": "Inspirováno přírodou",
+        "fact": "Mnoho obranných postojů v silatu vychází z pozorování pohybů zvířat, například tygra nebo opice.",
+        "source_url": "https://en.wikipedia.org/wiki/Silat",
+        "voice": "Bojovníci se učili od obyvatel džungle, jak se rychle vyhýbat a nečekaně útočit.",
+        "image_prompt": "Photorealistic dynamic low-angle photo of a Silat practitioner in a low stance in a forest clearing, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-sport-badminton",
+    "country": "Malajsie",
+    "section": "Sport",
+    "topic": "Badminton v Malajsii",
+    "headline": "Národní sportovní vášeň",
+    "fact": "Badminton je v Malajsii mimořádně oblíbeným sportem a hraje se na profesionální i rekreační úrovni.",
+    "source_url": "https://en.wikipedia.org/wiki/Badminton_Association_of_Malaysia",
+    "voice": "Kurt s sítí najdete v každé tělocvičně i na plácku za domem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of teenagers playing badminton at an outdoor neighborhood court in Malaysia, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hra pro každou generaci",
+        "fact": "S pálkou v ruce potkáte večer v tělocvičnách děti, dospělé i prarodiče.",
+        "source_url": "https://en.wikipedia.org/wiki/Badminton_Association_of_Malaysia",
+        "voice": "Bez ohledu na věk se všichni prohánějí za malým opeřeným košíčkem.",
+        "image_prompt": "Photorealistic shot of a brightly lit indoor badminton hall with multiple courts in use, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradiční pohár Thomas Cup",
+        "fact": "Reprezentační tým dokázal v historii opakovaně vyhrát prestižní světový pohár Thomas Cup.",
+        "source_url": "https://en.wikipedia.org/wiki/Malaysia_national_badminton_team",
+        "voice": "Pro malou zemi znamenají tyto vítězné trofeje obrovský zápis do historie.",
+        "image_prompt": "Photorealistic shot of a badminton trophy on display with green court floor in background, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-sport-sepak-takraw",
+    "country": "Malajsie",
+    "section": "Sport",
+    "topic": "Sepak Takraw",
+    "headline": "Volejbal nohama a hlavou",
+    "fact": "Sepak Takraw je tradiční míčová hra, při které hráči kopou proutěný míč přes vysokou síť bez použití rukou.",
+    "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+    "voice": "Hráči předvádějí ve vzduchu akrobatické přemety, ze kterých se tají dech.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic action shot of a Sepak Takraw player doing a bicycle kick over a net, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Akrobacie na hřišti",
+        "fact": "Smeče se provádějí saltem vzad těsně nad sítí, přičemž míč zasáhne pata hráče.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+        "voice": "Vypadá to jako spojení gymnastiky, fotbalu a bojového umění v jednom okamžiku.",
+        "image_prompt": "Photorealistic close-up of a woven rattan Sepak Takraw ball in mid-air near the net, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradiční proutěný míč",
+        "fact": "Původní míče se pletly ze stébel ratanu, dnes se na zápasech používají moderní syntetické materiály.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+        "voice": "Materiál se změnil, ale neuvěřitelná obratnost hráčů zůstává stejná.",
+        "image_prompt": "Photorealistic high-speed photograph of a Sepak Takraw match moment in an indoor stadium, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-sport-sepang",
+    "country": "Malajsie",
+    "section": "Sport",
+    "topic": "Okruh Sepang",
+    "headline": "Mekka motorismu",
+    "fact": "Závodní okruh Sepang nedaleko letiště v Kuala Lumpuru hostil šampionáty Formule 1 i MotoGP.",
+    "source_url": "https://en.wikipedia.org/wiki/Sepang_International_Circuit",
+    "voice": "Hluk vytočených motorů se mísí s tropickým horkem a vlhkostí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of the Sepang International Circuit racetrack with iconic grandstand roofs, 16:9",
+    "ll": [
+      101.7383,
+      2.7606
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tropické přeháňky na trati",
+        "fact": "Závody na Sepangu bývají nevyzpytatelné kvůli náhlým tropickým lijákům, které trať během minut zatopí.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepang_International_Circuit",
+        "voice": "Mechanici v boxech musí reagovat na změnu počasí během několika vteřin.",
+        "image_prompt": "Photorealistic wide shot of race cars driving on a wet track with spray under tropical skies, 16:9"
+      },
+      "kartograf": {
+        "headline": "Široká trať a předjíždění",
+        "fact": "Architekt Hermann Tilke navrhl trať s dlouhými rovinkami a širokými zatáčkami podporujícími předjíždění.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepang_International_Circuit",
+        "voice": "Design trati se stal vzorem pro stavbu moderních závodních okruhů po celém světě.",
+        "image_prompt": "Photorealistic aerial view of the Sepang circuit layout surrounded by tropical green landscape, 16:9"
+      }
+    },
+    "source_quote": "It hosted the Formula One Malaysian Grand Prix between 1999 and 2017, and is also the venue for the Malaysian Motorcycle Grand Prix"
+  },
+  {
+    "id": "my-jazyk-slova-bahasa-melayu",
+    "country": "Malajsie",
+    "section": "Jazyk & slova",
+    "topic": "Bahasa Melayu",
+    "headline": "Jazyk malajského souostroví",
+    "fact": "Úředním jazykem země je malajština, která používá latinku a čerpá slova z arabštiny, sanskrtu i angličtiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Malay_language",
+    "voice": "Jednoduchá gramatika dělá z malajštiny celkem přístupnou řeč.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova bez skloňování",
+        "fact": "Malajština nepoužívá rody ani skloňování slov, což usnadňuje základní porozumění.",
+        "source_url": "https://en.wikipedia.org/wiki/Malay_language",
+        "voice": "Místo složitých koncovek stačí poskládat základní slova za sebe.",
+        "image_prompt": "Photorealistic signpost in Malaysia showing bilingual Malay and English directions, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obchodní jazyk regionu",
+        "fact": "Po staletí sloužila malajština jako hlavní komunikační jazyk obchodníků v celé jihovýchodní Asii.",
+        "source_url": "https://en.wikipedia.org/wiki/Malay_language",
+        "voice": "Díky námořnímu obchodu se porozumění tomuto jazyku rozšířilo přes tisíce ostrovů.",
+        "image_prompt": "Photorealistic ancient manuscript written in Jawi Malay script on old parchment, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-jazyk-slova-manglish",
+    "country": "Malajsie",
+    "section": "Jazyk & slova",
+    "topic": "Manglish",
+    "headline": "Unikátní malajsijský slang",
+    "fact": "Manglish představuje neformální hovorovou angličtinu obohacenou o slůvka z malajštiny a čínštiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Manglish",
+    "voice": "Přidejte na konec věty slovíčko lah a zníte jako pravý místní.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kouzelné slovíčko Lah",
+        "fact": "Částice lah vložená na konec věty změkčuje význam nebo dodává výpovědi důraz.",
+        "source_url": "https://en.wikipedia.org/wiki/Manglish",
+        "voice": "Jediné krátké slovo dokáže změnit strohý příkaz v přátelskou prosbu.",
+        "image_prompt": "Photorealistic neon sign in Kuala Lumpur displaying popular Manglish street phrases, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazykový kotel",
+        "fact": "Vznik manglištiny odráží každodenní soužití malajské, čínské a indické komunity v městském prostředí.",
+        "source_url": "https://en.wikipedia.org/wiki/Manglish",
+        "voice": "Když se na ulici potkají tři kultury, vytvoří si vlastní společnou řeč.",
+        "image_prompt": "Photorealistic lively street cafe scene in Penang with multicultural people chatting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-jazyk-slova-salam",
+    "country": "Malajsie",
+    "section": "Jazyk & slova",
+    "topic": "Tradiční pozdrav Salam",
+    "headline": "Gesto z celého srdce",
+    "fact": "Při tradičním malajském pozdravu Salam se lidé lehce dotknou rukama a poté si přiloží dlaň k vlastnímu srdci.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Malaysia",
+    "voice": "Tenhle pozdrav říká: vítám tě s otevřenou náručí i čistou myslí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of two people performing the traditional Malay Salam hand greeting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Úcta ke starším",
+        "fact": "Mladší lidé při pozdravu starších mírně skloní hlavu na znamení respektu a úcty.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Malaysia",
+        "voice": "Zdvořilost a úcta k rodině představují základní pilíře zdejší společnosti.",
+        "image_prompt": "Photorealistic scene of a younger Malay person respectfully greeting an elder family member indoors, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pohostinnost v tradici",
+        "fact": "Při návštěvě malajské domácnosti je zvykem zout si obuv přede dveřmi na verandě.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Malaysia",
+        "voice": "Čistý domov symbolizuje připravenost přivítat jakéhokoli hosta.",
+        "image_prompt": "Photorealistic view of neat shoes lined up outside a traditional wooden Malay kampong house entrance, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-jidlo-nasi-lemak",
+    "country": "Malajsie",
+    "section": "Jídlo",
+    "topic": "Nasi Lemak",
+    "headline": "Národní kulinářský poklad",
+    "fact": "Nasi Lemak tvoří rýže vařená v kokosovém mléce s pandánovými listy, podávaná s pikantní omáčkou sambal a arašídy.",
+    "source_url": "https://en.wikipedia.org/wiki/Nasi_lemak",
+    "voice": "Bez této vonné rýže zabalené v banánovém listu si Malajsijci ráno neumí představit.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic food photo of Nasi Lemak served on a banana leaf with boiled egg, sambal, and anchovies, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Balíček v banánovém listu",
+        "fact": "Na pouličních stáncích se rýže prodává zabalená do pyramidky z banánového listu.",
+        "source_url": "https://en.wikipedia.org/wiki/Nasi_lemak",
+        "voice": "Přírodní obal dodá rýži ještě intenzivnější tropickou vůni.",
+        "image_prompt": "Photorealistic street food stall selling wrapped Nasi Lemak banana leaf packets, 16:9"
+      },
+      "kartograf": {
+        "headline": "Snídaně pro všechny",
+        "fact": "Ačkoli vzniklo jako prosté jídlo farmářů, dnes se podává v pouličních stáncích i v luxusních restauracích.",
+        "source_url": "https://en.wikipedia.org/wiki/Nasi_lemak",
+        "voice": "Jedno jediné jídlo dokáže spojit všechny společenské vrstvy u jednoho stolu.",
+        "image_prompt": "Photorealistic overhead top-down shot of a full Malay breakfast feast table, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-jidlo-durian",
+    "country": "Malajsie",
+    "section": "Jídlo",
+    "topic": "Durian",
+    "headline": "Král ovoce s aromatickým tajemstvím",
+    "fact": "Durian je tropické ovoce známé pronikavou vůní a krémovou dužinou ukrytou pod ostnatou slupkou.",
+    "source_url": "https://en.wikipedia.org/wiki/Durian",
+    "voice": "Někdo jeho vůni miluje, jiný kvůli ní utíká z místnosti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a whole thorny durian fruit split open revealing creamy yellow pods, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zákaz v hotelech a metru",
+        "fact": "Kvůli silnému aroma platí v mnoha hotelech i prostředcích veřejné dopravy přísný zákaz durianu.",
+        "source_url": "https://en.wikipedia.org/wiki/Durian",
+        "voice": "Značka s přeškrtnutým ostnatým ovocem vás přivítá u vstupu do každého hotelu.",
+        "image_prompt": "Photorealistic shot of a sign displaying No Durians Allowed icon in a modern Asian building, 16:9"
+      },
+      "kartograf": {
+        "headline": "Odrůda Musang King",
+        "fact": "Malajsijská odrůda Musang King patří k vyhledávaným gurmánským delikatesám pro svou máslovou chuť.",
+        "source_url": "https://en.wikipedia.org/wiki/Durian",
+        "voice": "Gurmáni jsou ochotni zaplatit za nejlepší plody z horských sadů vysoké částky.",
+        "image_prompt": "Photorealistic street vendor display of fresh Musang King durian fruits in Malaysia, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-jidlo-laksa",
+    "country": "Malajsie",
+    "section": "Jídlo",
+    "topic": "Polévka Laksa",
+    "headline": "Miska plná kontrastních chutí",
+    "fact": "Kokosová nebo rybí polévka Laksa spojuje pálivé koření, nudle, čerstvé bylinky a mořské plody.",
+    "source_url": "https://en.wikipedia.org/wiki/Laksa",
+    "voice": "První lžička vás překvapí kyselostí, druhá vás rozpálí a třetí si zamilujete.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic bowl of spicy Penang Asam Laksa noodles with fish broth and fresh mint leaves, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Penang Assam Laksa",
+        "fact": "Verze z ostrova Penang využívá rybí vývar s tamarindem, který polévce dodává typickou nakyslou chuť.",
+        "source_url": "https://en.wikipedia.org/wiki/Laksa",
+        "voice": "Kyselý tamarind a pálivé chilli tvoří dokonalou kombinaci pro horké letní dny.",
+        "image_prompt": "Photorealistic close-up shot of a steaming bowl of Laksa at a night market stall, 16:9"
+      },
+      "kartograf": {
+        "headline": "Laksa Curry v Kuala Lumpuru",
+        "fact": "Na jihu převládá krémová varianta Laksa Curry připravovaná s kokosovým mlékem a tofu taštičkami.",
+        "source_url": "https://en.wikipedia.org/wiki/Laksa",
+        "voice": "Každý stát v Malajsii tvrdí, že právě jeho recept na laksu je ten pravý.",
+        "image_prompt": "Photorealistic overhead view of a bowl of coconut curry laksa with prawns and boiled egg, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-historie-malacky-sultanat",
+    "country": "Malajsie",
+    "section": "Historie",
+    "topic": "Malacký sultanát",
+    "headline": "Zlatý věk obchodu",
+    "fact": "Malacký sultanát představoval klíčové obchodní centrum mezi Indickým oceánem a Tichým oceánem.",
+    "source_url": "https://en.wikipedia.org/wiki/Malacca_Sultanate",
+    "voice": "Vdechnutí života tomuto přístavu proměnilo celou jihovýchodní Asii.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic digital illustration of historical 15th-century Malacca port filled with Asian merchant ships, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Křižovatka obchodníků",
+        "fact": "V přístavu se potkávali kupci z Číny, Indie, Arábie i Evropy nabízející hedvábí, porcelán a koření.",
+        "source_url": "https://en.wikipedia.org/wiki/Malacca_Sultanate",
+        "voice": "Na tržnici bylo možné během jednoho dne slyšet desítky různých světových jazyků.",
+        "image_prompt": "Photorealistic scene of historical spice trading market on a tropical wooden dock, 16:9"
+      },
+      "kartograf": {
+        "headline": "Šíření islámu a kultury",
+        "fact": "Sultanát se stal hlavním centrem pro šíření islámu a malajského jazyka po celém souostroví.",
+        "source_url": "https://en.wikipedia.org/wiki/Malacca_Sultanate",
+        "voice": "Město nebylo jen tržištěm, ale i centrem vědění a diplomacie.",
+        "image_prompt": "Photorealistic historical view of a traditional wooden Malaccan palace complex near water, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-historie-merdeka",
+    "country": "Malajsie",
+    "section": "Historie",
+    "topic": "Vyhlášení nezávislosti Merdeka",
+    "headline": "Volání po svobodě",
+    "fact": "Vyhlášení nezávislosti Malajského svazu proběhlo na stadionu v Kuala Lumpuru za zvuku volání slovíčka Merdeka.",
+    "source_url": "https://en.wikipedia.org/wiki/Malayan_Declaration_of_Independence",
+    "voice": "Sedminásobné zvolání slova svoboda odstartovalo novou éru země.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical reconstruction of Independence Stadium in Kuala Lumpur during national ceremony, 16:9",
+    "ll": [
+      101.7003,
+      3.1414
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tunku Abdul Rahman",
+        "fact": "První premiér Malajsie Tunku Abdul Rahman zvedl ruku a před zaplněným stadionem vyhlásil svobodný stát.",
+        "source_url": "https://en.wikipedia.org/wiki/Tunku_Abdul_Rahman",
+        "source_quote": "was a Malaysian statesman who served as the first prime minister of Malaysia",
+        "voice": "Jeho gesto s vyzváněním davu se stalo nejslavnějším okamžikem moderních dějin země.",
+        "image_prompt": "Photorealistic historical scene depicting a leader raising a hand on a stadium stage, 16:9"
+      },
+      "kartograf": {
+        "headline": "Konec britské správy",
+        "fact": "Nezávislost ukončila dlouhé období britské koloniální nadvlády nad Malajským poloostrovem.",
+        "source_url": "https://en.wikipedia.org/wiki/Federation_of_Malaya",
+        "voice": "Předání moci proběhlo mírovou cestou po diplomacii v Londýně.",
+        "image_prompt": "Photorealistic shot of the Malaysian national flag being raised on a tall flagpole under sunlight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "my-historie-vznik-malajsie",
+    "country": "Malajsie",
+    "section": "Historie",
+    "topic": "Vznik Malajsie",
+    "headline": "Spojení poloostrova a Bornea",
+    "fact": "Sloučením Malajské federace se státy Sabah, Sarawak a Singapur na Borneu vznikla moderní Malajsie.",
+    "source_url": "https://en.wikipedia.org/wiki/Malaysia_Agreement",
+    "voice": "Spojení odlehlých území přes moře vytvořilo geograficky i kulturně pestrou federaci.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic map illustration on table showing the geographic connection between Peninsular Malaysia and Borneo, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Svátek Hari Malaysia",
+        "fact": "Vznik spojené země se slaví jako národní svátek Hari Malaysia s průvody a ohňostroji.",
+        "source_url": "https://en.wikipedia.org/wiki/Malaysia_Day",
+        "voice": "Lidé na poloostrově i na Borneu slaví společnou identitu pod jednou vlajkou.",
+        "image_prompt": "Photorealistic view of festive celebrations with Malayan flags in a city park, 16:9"
+      },
+      "kartograf": {
+        "headline": "Odchod Singapuru",
+        "fact": "Singapur se stal součástí federace při jejím vzniku, ale po politických rozporech ze svazku vystoupil.",
+        "source_url": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia",
+        "voice": "Cesty obou sousedů se rozdělily, ale jejich ekonomické vazby zůstaly pevné.",
+        "image_prompt": "Photorealistic view of the Johore-Singapore Causeway bridge connecting Malaysia and Singapore, 16:9"
+      }
+    }
+  }
+]

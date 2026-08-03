@@ -103,9 +103,11 @@
   // ---- progres / mastery (sdílený s glóbem přes localStorage) ----
   const PROGRESS_KEY = "hricka_progress";
   const MASTERY_THRESHOLD = 5;
-  const COUNTRY_BY_CC = { ru:"Rusko", pl:"Polsko", sk:"Slovensko" };
-  const COUNTRY_FLAG  = { ru:"🇷🇺", pl:"🇵🇱", sk:"🇸🇰" };
-  const COUNTRY_CONT  = { ru:"asia", pl:"europe", sk:"europe" };   // kontinent země
+  // Všech 49 zemí z Globusu — appka je nabízí i bez otázek (prázdný fond, zobrazí se
+  // jako "0 otázek" u sekcí), obsah se doplňuje postupně zemi po zemi.
+  const COUNTRY_BY_CC = { ar:"Argentina", at:"Rakousko", au:"Austrálie", bg:"Bulharsko", br:"Brazílie", ca:"Kanada", ch:"Švýcarsko", cl:"Chile", cn:"Čína", cz:"Česko", de:"Německo", ec:"Ekvádor", eg:"Egypt", es:"Španělsko", fj:"Fidži", fr:"Francie", ga:"Gabon", gb:"Spojené království", gr:"Řecko", hu:"Maďarsko", id:"Indonésie", il:"Izrael", in:"Indie", it:"Itálie", jp:"Japonsko", ke:"Keňa", kp:"Severní Korea", kr:"Jižní Korea", mn:"Mongolsko", mx:"Mexiko", my:"Malajsie", nl:"Nizozemsko", nz:"Nový Zéland", pe:"Peru", ph:"Filipíny", pk:"Pákistán", pl:"Polsko", ro:"Rumunsko", ru:"Rusko", sa:"Saúdská Arábie", se:"Švédsko", sk:"Slovensko", th:"Thajsko", tr:"Turecko", tw:"Tchaj-wan", ua:"Ukrajina", us:"USA", vn:"Vietnam", za:"Jihoafrická republika" };
+  const COUNTRY_FLAG  = { ar:"🇦🇷", at:"🇦🇹", au:"🇦🇺", bg:"🇧🇬", br:"🇧🇷", ca:"🇨🇦", ch:"🇨🇭", cl:"🇨🇱", cn:"🇨🇳", cz:"🇨🇿", de:"🇩🇪", ec:"🇪🇨", eg:"🇪🇬", es:"🇪🇸", fj:"🇫🇯", fr:"🇫🇷", ga:"🇬🇦", gb:"🇬🇧", gr:"🇬🇷", hu:"🇭🇺", id:"🇮🇩", il:"🇮🇱", in:"🇮🇳", it:"🇮🇹", jp:"🇯🇵", ke:"🇰🇪", kp:"🇰🇵", kr:"🇰🇷", mn:"🇲🇳", mx:"🇲🇽", my:"🇲🇾", nl:"🇳🇱", nz:"🇳🇿", pe:"🇵🇪", ph:"🇵🇭", pk:"🇵🇰", pl:"🇵🇱", ro:"🇷🇴", ru:"🇷🇺", sa:"🇸🇦", se:"🇸🇪", sk:"🇸🇰", th:"🇹🇭", tr:"🇹🇷", tw:"🇹🇼", ua:"🇺🇦", us:"🇺🇸", vn:"🇻🇳", za:"🇿🇦" };
+  const COUNTRY_CONT  = { ar:"samerica", at:"europe", au:"oceania", bg:"europe", br:"samerica", ca:"namerica", ch:"europe", cl:"samerica", cn:"asia", cz:"europe", de:"europe", ec:"samerica", eg:"africa", es:"europe", fj:"oceania", fr:"europe", ga:"africa", gb:"europe", gr:"europe", hu:"europe", id:"asia", il:"asia", in:"asia", it:"europe", jp:"asia", ke:"africa", kp:"asia", kr:"asia", mn:"asia", mx:"namerica", my:"asia", nl:"europe", nz:"oceania", pe:"samerica", ph:"asia", pk:"asia", pl:"europe", ro:"europe", ru:"asia", sa:"asia", se:"europe", sk:"europe", th:"asia", tr:"asia", tw:"asia", ua:"europe", us:"namerica", vn:"asia", za:"africa" };   // kontinent země
   // kontinenty jako u glóbu (i ty bez otázek — zobrazí se jako „Brzy")
   const CONTINENTS = [
     { id:"europe",     name:"Evropa",          emoji:"🏰" },
@@ -248,7 +250,7 @@
   const EARTH_TEX = "assets/earth.jpg";   // bundled lokálně (offline-only); zdroj: three-globe blue-marble, zmenšeno na 1024×512
   // CSS animace řeší @media (prefers-reduced-motion), rotace glóbu je ale v JS — vypnout ji musíme tady
   const REDUCED_MOTION = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const COUNTRY_LL = { ru:[100,62], pl:[19.3,52], sk:[19.5,48.7] };   // přibližný střed země pro natočení
+  const COUNTRY_LL = { ar:[-54.44,-25.7], at:[16.31,48.18], au:[134,-25], bg:[23.32,42.7], br:[-60,-3], ca:[-79.07,43.08], ch:[7.45,46.95], cl:[-68.5,-24], cn:[103,35], cz:[14.4,50.09], de:[10.75,47.56], ec:[-90.97,-0.95], eg:[31.2,30], es:[2.17,41.4], fj:[178.4,-18.1], fr:[2.12,48.8], ga:[9.6,-2.2], gb:[-1.83,51.18], gr:[23.73,37.97], hu:[19.04,47.5], id:[110.2,-7.61], il:[35.23,31.78], in:[79,21], it:[12.32,45.44], jp:[139.7,35.7], ke:[36.8,-1.3], kp:[128.08,41.99], kr:[126.98,37.58], mn:[106.92,47.92], mx:[-99.1,19.4], my:[101.71,3.16], nl:[4.9,52.37], nz:[174.8,-41.3], pe:[-72.54,-13.16], ph:[121.14,16.93], pk:[74.32,31.59], pl:[19.94,50.06], ro:[26.1,44.43], ru:[100,62], sa:[37.95,26.79], se:[18.3,57.64], sk:[17.1,48.14], th:[100.49,13.74], tr:[28.98,41.01], tw:[121.56,25.03], ua:[30.51,50.45], us:[-98.5,39.8], vn:[107.18,20.91], za:[24.7,-28.5] };   // přibližný střed země pro natočení
   let g3 = null;
   function initGlobe3d(){
     if(g3 || typeof THREE === "undefined") return;

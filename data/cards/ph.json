@@ -1,0 +1,885 @@
+[
+  {
+    "id": "ph-mista-banaue",
+    "country": "Filipíny",
+    "section": "Místa",
+    "topic": "Rýžové terasy Banaue",
+    "headline": "Zázrak vytesaný do hor",
+    "fact": "Rýžové terasy v pohoří Kordillery, známé jako Banaue, jsou staré přibližně 400 let. Jsou příkladem dokonalého zavlažovacího systému a ukázkou toho, jak lidé dokáží přetvořit krajinu k obrazu svému.",
+    "source_url": "https://en.wikipedia.org/wiki/Rice_Terraces_of_the_Philippine_Cordilleras",
+    "source_quote": "Although listed by the UNESCO as a World Heritage site believed to be older than 2,000 years, recent studies from the Ifugao Archaeological Project report that they were actually constructed upon Spanish contact about 400 years ago.",
+    "voice": "Kdybychom je postavili dnes, možná bychom použili bagry, ale oni to zvládli jen s rukama.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zelených rýžových teras Banaue v údolí, horské pozadí, bez lidí, 16:9",
+    "ll": [
+      121.1367,
+      16.9339
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Místo, kde se zastavil čas",
+        "fact": "Terasy na ostrově Luzon se táhnou vysoko do hor. Pěstuje se na nich rýže, která vyžaduje propracovaný systém zavlažování z horských potoků.",
+        "source_url": "https://en.wikipedia.org/wiki/Rice_Terraces_of_the_Philippine_Cordilleras",
+        "voice": "Osmý div světa, u kterého žasneš, jak to ti lidé dokázali.",
+        "image_prompt": "Fotorealistický snímek detailu rýžových teras v Banaue, voda se odráží na slunci, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina, která živí celé generace",
+        "fact": "Terasy jsou součástí kulturní krajiny UNESCO a jsou udržovány komunitním způsobem. Každý pruh země je důkazem boje o obživu v drsných horách.",
+        "source_url": "https://en.wikipedia.org/wiki/Rice_Terraces_of_the_Philippine_Cordilleras",
+        "source_quote": "The Rice Terraces of the Philippine Cordilleras are a World Heritage Site consisting of a complex of rice terraces on the island of Luzon in the Philippines. They were inscribed on the UNESCO World Heritage List in 1995, the first-ever property to be included in the cultural landscape category of the World Heritage List.",
+        "voice": "Tady každý kousek půdy vypráví příběh o přežití.",
+        "image_prompt": "Fotorealistický snímek leteckého pohledu na rozlehlé rýžové terasy v horách, zelená a hnědá krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-mista-puerto",
+    "country": "Filipíny",
+    "section": "Místa",
+    "topic": "Podzemní řeka Puerto Princesa",
+    "headline": "Řeka, která teče pod zemí",
+    "fact": "Národní park podzemní řeky Puerto Princesa na ostrově Palawan ukrývá jednu z nejdelších podzemních řek na světě. Je chráněna jako památka UNESCO a byla vyhlášena i jedním z nových sedmi divů přírody.",
+    "source_url": "https://en.wikipedia.org/wiki/Puerto_Princesa_Subterranean_River_National_Park",
+    "source_quote": "The Puerto Princesa Subterranean River is the second-longest underground river in the world. It consists of an 8.2 km (5.1 mi) underground section of the Cabayugan River, traversing a cave system that is at least 32 km (20 mi) long.",
+    "voice": "Vplout do tmy, kde se potkává sladká voda se slanou, to je dobrodružství.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek vstupu do jeskyně podzemní řeky, voda a skály, tropická vegetace, bez lidí, 16:9",
+    "ll": [
+      118.917,
+      10.167
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Plavba do nitra země",
+        "fact": "Řeka je splavná na lodi do vzdálenosti 4,3 km od moře. Uvnitř jeskyně uvidíš krápníky a netopýry, kteří tu žijí.",
+        "source_url": "https://en.wikipedia.org/wiki/Puerto_Princesa_Subterranean_River_National_Park",
+        "source_quote": "The river is navigable by boat up to 4.3 kilometres (2.7 mi) from the sea.",
+        "voice": "Plavba po podzemní řece je jako výlet do jiného světa.",
+        "image_prompt": "Fotorealistický snímek lodi plující po podzemní řece v jeskyni, krápníky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Systém chodeb pod Palawanem",
+        "fact": "Celý jeskynní systém je dlouhý nejméně 32 km a ukrývá i obrovské síně, například Italskou síň o délce 360 metrů.",
+        "source_url": "https://en.wikipedia.org/wiki/Puerto_Princesa_Subterranean_River_National_Park",
+        "source_quote": "Its caves include major formations of stalactites and stalagmites, and several large chambers, including the 360-metre-long (1,180 ft) Italian's Chamber.",
+        "voice": "Pod ostrovem se skrývá labyrint, který se nechce nechat celý prozkoumat.",
+        "image_prompt": "Fotorealistický snímek velké jeskynní síně s krápníky, podzemní jezero, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-mista-chocolate",
+    "country": "Filipíny",
+    "section": "Místa",
+    "topic": "Čokoládové vršky na Boholu",
+    "headline": "Když se kopce promění v čokoládu",
+    "fact": "Čokoládové vršky na ostrově Bohol jsou geologickým unikátem. Tvoří je přes 1200 travnatých pahorků, které v suchém období zhnědnou, a připomínají tak čokoládové bonbony.",
+    "source_url": "https://en.wikipedia.org/wiki/Chocolate_Hills",
+    "source_quote": "A minimum of 1,260 hills, and possibly over 1,776, spread over an area of more than 50 square kilometers (20 sq mi). They are covered in green grass that turns a chocolate-brown during the dry season, hence the name.",
+    "voice": "Když dostaneš chuť na sladké, podívej se na ně.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický panoramatický snímek Čokoládových vršků na Boholu, zelené a hnědé travnaté kopce, modrá obloha, bez lidí, 16:9",
+    "ll": [
+      124.167,
+      9.917
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dílo přírody, které vypadá jako bonboniéra",
+        "fact": "Pahorky jsou vysoké 30 až 50 metrů a jsou jedním z nejfotografovanějších míst Filipín. Jejich vznik je stále předmětem bájí o obrech.",
+        "source_url": "https://en.wikipedia.org/wiki/Chocolate_Hills",
+        "source_quote": "The Chocolate Hills are a geological formation in the Philippine province of Bohol. A minimum of 1,260 hills, and possibly over 1,776, spread over an area of more than 50 square kilometers (20 sq mi).",
+        "voice": "Prý je tu nasypal obří romantik, když plakal po své lásce.",
+        "image_prompt": "Fotorealistický snímek skupiny travnatých pahorků na Boholu, detail, zelená tráva, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vápencový fenomén",
+        "fact": "Čokoládové vršky jsou pozůstatkem starého mořského dna. Vznikly erozí vápence a dnes jsou chráněny jako národní geologická památka.",
+        "source_url": "https://en.wikipedia.org/wiki/Chocolate_Hills",
+        "source_quote": "The National Committee on Geological Sciences declared the Chocolate Hills of Bohol a National Geological Monument on June 18, 1988, in recognition of its special characteristics, scientific importance, uniqueness, and high scenic value.",
+        "voice": "Vědci říkají, že jsou to zkamenělé korály, ale my víme, že je to čokoláda.",
+        "image_prompt": "Fotorealistický letecký snímek Čokoládových vršků, desítky kopců v krajině, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-priroda-tarsier",
+    "country": "Filipíny",
+    "section": "Příroda",
+    "topic": "Nártoun filipínský",
+    "headline": "Nejmenší primát s obříma očima",
+    "fact": "Nártoun filipínský je malý primát, který žije na ostrovech Mindanao, Leyte, Samar a Bohol. Má neobyčejně velké oči, které váží víc než jeho mozek, a dokáže otočit hlavou až o 180 stupňů.",
+    "source_url": "https://cs.wikipedia.org/wiki/N%C3%A1rtoun_filip%C3%ADnsk%C3%BD",
+    "source_quote": "Nártoun filipínský (Tarsius syrichta) patří mezi nejmenší zástupce podřádu Haplorhini. Je nápadný, stejně jako všechny druhy rodu nártoun, obzvláště velkýma očima.",
+    "voice": "Kouká na tebe, jako by věděl víc, než ti chce říct.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek nártouna filipínského na větvi, velké oči, denní světlo, bez lidí, 16:9",
+    "ll": [
+      124,
+      10
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Noční lovec s dokonalým zrakem",
+        "fact": "Nártouni jsou aktivní v noci, kdy loví hmyz a malé obratlovce. Přes den spí ve spleti větví a nikdy se nevzdalují od svého domovského okrsku.",
+        "source_url": "https://cs.wikipedia.org/wiki/N%C3%A1rtoun_filip%C3%ADnsk%C3%BD",
+        "voice": "Potkat ho v noci je jako potkat malého mimozemšťana.",
+        "image_prompt": "Fotorealistický snímek nártouna v noci na větvi, velké oči odrážející světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ohrožený klenot filipínské přírody",
+        "fact": "Nártoun je podle IUCN téměř ohrožený druh. Hlavními hrozbami jsou pro něj ztráta přirozeného prostředí a ilegální obchod se zvířaty.",
+        "source_url": "https://tarsiusproject.org/co-delame/ohrozene-druhy/",
+        "source_quote": "Podle Červené knihy IUCN 3 byli nártouni filipínští po osmi letech přeřazeni z kategorie „Data Deficient“ (=nedostatečné údaje) do kategorie „Near Threatened“ (=téměř ohrožený).",
+        "voice": "Jeho osud závisí na tom, jestli si jeho lesů budeme vážit.",
+        "image_prompt": "Fotorealistický snímek nártouna v přirozeném prostředí deštného pralesa, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-priroda-sopka",
+    "country": "Filipíny",
+    "section": "Příroda",
+    "topic": "Sopka Taal",
+    "headline": "Sopka v jezeře, na ostrově, v jezeře",
+    "fact": "Sopka Taal je jednou z nejaktivnějších sopek na Filipínách a je unikátní tím, že se nachází na ostrově uprostřed jezera. Uvnitř jejího kráteru je další jezero s ostrůvkem.",
+    "source_url": "https://en.wikipedia.org/wiki/Taal_Volcano",
+    "source_quote": "Taal Volcano (IPA: [taʔal]; Tagalog: Bulkang Taal), also known as Taal Caldera, is a large caldera filled by Taal Lake in the Philippines. Located in the province of Batangas about 50 kilometers (31 mi) south of Manila, the volcano is the second most active volcano in the country, with 39 recorded historical eruptions, all concentrated on Volcano Island, near the middle of Taal Lake.",
+    "voice": "Sopka, která má ostrov, v jezeře, na ostrově... chápeš to?",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sopky Taal, kouř stoupající z kráteru na ostrově uprostřed jezera, 16:9",
+    "ll": [
+      120.9975,
+      14.01
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sopka jako matrjoška",
+        "fact": "Vulkanický ostrov uprostřed Taalského jezera je nebezpečnou zónou, kde je trvale zakázáno bydlet. I přesto je vyhledávanou turistickou atrakcí.",
+        "source_url": "https://en.wikipedia.org/wiki/Taal_Volcano",
+        "source_quote": "Permanent settlement on the island is prohibited by the Philippine Institute of Volcanology and Seismology (PHIVOLCS), declaring the whole Volcano Island as a high-risk area and a Permanent Danger Zone (PDZ).",
+        "voice": "Podívat se na ni zblízka chce pořádnou dávku odvahy.",
+        "image_prompt": "Fotorealistický snímek výhledu na sopku Taal z vyhlídky, jezero a ostrov, 16:9"
+      },
+      "kartograf": {
+        "headline": "Spící obr na pokraji Manily",
+        "fact": "Taal je s 39 zaznamenanými erupcemi druhou nejaktivnější sopkou Filipín. Její výbuchy v minulosti si vyžádaly tisíce obětí a patří mezi desetileté sopky.",
+        "source_url": "https://en.wikipedia.org/wiki/Taal_Volcano",
+        "source_quote": "Taal Volcano has had several violent eruptions in the past, causing deaths on the island and the populated areas surrounding the lake, with an overall recorded death toll of about 6,000. Because of its proximity to populated areas and its eruptive history, the volcano was designated a Decade Volcano, worthy of close study to prevent future natural disasters.",
+        "voice": "Je krásná, ale nikdy nevíš, kdy se probudí.",
+        "image_prompt": "Fotorealistický letecký snímek kráteru sopky Taal s jezerem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-priroda-koraly",
+    "country": "Filipíny",
+    "section": "Příroda",
+    "topic": "Korálové útesy",
+    "headline": "Podvodní ráj plný barev",
+    "fact": "Filipíny leží v srdci Korálového trojúhelníku, který je centrem světové mořské biodiverzity. Korálové útesy pokrývají rozlohu přes 22 000 kilometrů čtverečních.",
+    "source_url": "https://islandhoppinginthephilippines.com/cs/palawan/explore/beautiful-coral-reefs-philippines/",
+    "source_quote": "Filipíny jsou součástí korálového trojúhelníku, známého jako „Amazon of the Seas“, který se může pochlubit nejvyšší mořskou biodiverzitou na planetě. Najdete zde přes 500 druhů korálů a více než 2,000 druhů ryb.",
+    "voice": "Šnorchlování tady je jako koukat do obřího akvária.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický podvodní snímek korálového útesu, barevné korály a ryby, sluneční paprsky, 16:9",
+    "ll": [
+      118,
+      9
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Poklad pod hladinou",
+        "fact": "V okolí ostrova Palawan najdeš nádherné korálové zahrady. Místa jako Tubbataha nebo El Nido jsou rájem pro potápěče a šnorchlaře z celého světa.",
+        "source_url": "https://islandhoppinginthephilippines.com/cs/palawan/explore/beautiful-coral-reefs-philippines/",
+        "source_quote": "The Tubbataha Reefs Natural Park, a UNESCO World Heritage Site, is considered one of the best dive sites in the world. The park is home to more than 600 species of fish, 360 species of corals, 11 species of sharks and 13 species of dolphins and whales.",
+        "voice": "Škoda, že tu krásu nejde dát do sklenice a vzít si ji domů.",
+        "image_prompt": "Fotorealistický snímek potápěče plovoucího nad korálovým útesem, čistá voda, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ráj mořské biodiverzity",
+        "fact": "Filipíny jsou domovem pro více než 500 druhů korálů a 2000 druhů ryb. Zdravé útesy jsou klíčové pro místní rybáře a ochranu pobřeží.",
+        "source_url": "https://islandhoppinginthephilippines.com/cs/palawan/explore/beautiful-coral-reefs-philippines/",
+        "source_quote": "Najdete zde přes 500 druhů korálů a více než 2,000 druhů ryb.",
+        "voice": "Tohle je opravdová knihovna přírody – jen místo písmenek jsou tu ryby.",
+        "image_prompt": "Fotorealistický podvodní snímek hejna tropických ryb nad korály, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-lide-rizal",
+    "country": "Filipíny",
+    "section": "Lidé",
+    "topic": "José Rizal",
+    "headline": "Národní hrdina, který psal perem",
+    "fact": "José Rizal byl filipínský spisovatel a vlastenec, jehož díla inspirovala filipínskou revoluci proti španělské nadvládě. Je považován za národního hrdinu a jeho poprava v roce 1896 rozpoutala povstání.",
+    "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal",
+    "source_quote": "José Protasio Rizal Mercado y Alonso Realonda (Spanish: [xoˈse riˈsal, -ˈθal], Tagalog: [hoˈse ɾiˈsal]; June 19, 1861 – December 30, 1896) was a Filipino nationalist, writer, and polymath active at the end of the Spanish colonial period of the Philippines.",
+    "voice": "Jeho příběh ukazuje, že i slova dokážou změnit svět.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrét Josého Rizala v historickém oblečení, klidný výraz, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Muž, který probudil národ",
+        "fact": "Rizal byl spisovatelem, ale i lékařem a polyglotem. Jeho romány 'Noli Me Tangere' a 'El Filibusterismo' odhalovaly nespravedlnost španělské koloniální správy.",
+        "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal",
+        "voice": "Léčil nemocné a psal o tom, co bolí celou zemi.",
+        "image_prompt": "Fotorealistický snímek sochy Josého Rizala v parku, Manila, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ikona odporu proti kolonialismu",
+        "fact": "Rizalova poprava španělskými úřady z něj udělala mučedníka a jeho odkaz dodnes rezonuje v celých Filipínách. Jeho památka je uctívána po celé zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal",
+        "voice": "Někdy stačí jedna kniha, aby se zhroutila říše.",
+        "image_prompt": "Fotorealistický snímek starého španělského kostela v Manile, historické centrum, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-lide-pacquiao",
+    "country": "Filipíny",
+    "section": "Lidé",
+    "topic": "Manny Pacquiao",
+    "headline": "Boxer, který se stal senátorem",
+    "fact": "Manny Pacquiao je široce považován za jednoho z nejlepších boxerů historie a jedinou osobu, která se stala mistrem světa v osmi váhových kategoriích. Je také bývalým filipínským politikem a senátorem.",
+    "source_url": "https://en.wikipedia.org/wiki/Manny_Pacquiao",
+    "source_quote": "he is widely regarded as one of the greatest professional boxers of all time, becoming the only eight-division world champion in boxing history. He also served as a senator of the Philippines from 2016 to 2022.",
+    "voice": "V ringu neporazitelný, v politice bojovník za chudé.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Mannyho Pacquiaa v boxerském ringu, červené rukavice, odhodlaný výraz, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Filipínský hrdina v ringu",
+        "fact": "Pacquiao je národní ikonou, jehož zápasy sledují davy Filipínců po celém světě. Jeho cesta z chudoby až na vrchol boxu je inspirací pro celou zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Manny_Pacquiao",
+        "voice": "Když boxuje, celé Filipíny zatají dech.",
+        "image_prompt": "Fotorealistický snímek Pacquiaa po vítězném zápase, zvednuté ruce, dav, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sportovec, který sjednotil národ",
+        "fact": "Pacquiao dokázal svými úspěchy v boxu spojit Filipíny napříč sociálními vrstvami. Jeho popularita mu otevřela cestu i do politiky, kde pokračoval v boji za lepší životní podmínky.",
+        "source_url": "https://en.wikipedia.org/wiki/Manny_Pacquiao",
+        "voice": "Je to důkaz, že i z chudých poměrů může vzejít hvězda.",
+        "image_prompt": "Fotorealistický snímek davu fanoušků s filipínskými vlajkami na boxerském zápase, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-lide-kultura",
+    "country": "Filipíny",
+    "section": "Lidé",
+    "topic": "Jeepney",
+    "headline": "Králové filipínských silnic",
+    "fact": "Jeepney jsou upravené vojenské džípy z druhé světové války, které dnes slouží jako hlavní městská doprava na Filipínách. Jsou pestře malované a jsou kulturní ikonou země.",
+    "source_url": "https://en.wikipedia.org/wiki/Jeepney",
+    "source_quote": "Known for its crowded seating and kitsch decorations, it is a cultural icon of the Philippines and has its own art, \"Jeepney art\".",
+    "voice": "Jízda v jeepney je jako výlet do cirkusu na kolech.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pestře malovaného jeepney na rušné manilské ulici, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Symbolem odolnosti a kreativity",
+        "fact": "Každý jeepney je svým unikátním uměleckým dílem. Jejich řidiči je zdobí pestrými barvami a nápisy, často náboženskými nebo rodinnými. Jízda v nich je zážitek sám o sobě.",
+        "source_url": "https://en.wikipedia.org/wiki/Jeepney",
+        "voice": "Sedni si dovnitř a zažij filipínský rytmus života.",
+        "image_prompt": "Fotorealistický snímek interiéru jeepney, sedadla a ozdoby, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z dědictví války se stal fenomén",
+        "fact": "Jeepney jsou živoucí připomínkou americké přítomnosti na Filipínách. Po válce Filipínci přestavěli vojenské džípy na dopravní prostředky, které se staly nepostradatelnou součástí kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Jeepney",
+        "source_quote": "Jeepneys originate from the American colonial period–share taxis known as \"auto calesas\", commonly shortened to \"AC\".",
+        "voice": "Jeepney jsou důkazem, že i z kovového šrotu se dá udělat umění.",
+        "image_prompt": "Fotorealistický snímek kolony jeepney na rušné křižovatce, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-kultura-fiesta",
+    "country": "Filipíny",
+    "section": "Kultura & tradice",
+    "topic": "Fiesta – svátky na Filipínách",
+    "headline": "Celý rok samá oslava",
+    "fact": "Fiesta je na Filipínách všudypřítomná. Každé město a vesnice má svůj vlastní svátek na počest patrona, spojený s průvody, jídlem a hudbou.",
+    "source_url": "https://en.wikipedia.org/wiki/Fiesta",
+    "source_quote": "Patronal festival (fiesta patronal), a yearly Christian religious celebration of a patron saint or virgin",
+    "voice": "Na Filipínách slaví tak často, až mají pocit, že je pořád neděle.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pouličního průvodu na filipínské fiestě, barevné kostýmy a květiny, 16:9",
+    "ll": [
+      121,
+      12
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Když se zastaví celé město",
+        "fact": "Během fiesty se lidé scházejí, tančí na ulicích, jedí a děkují za úrodu. Je to čas, kdy se rodiny vracejí domů a vesnice ožívá tradicemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_the_Philippines",
+        "voice": "Přijď se podívat – slibuji, že hladový neodejdeš.",
+        "image_prompt": "Fotorealistický snímek stánku s jídlem na fiestě, lidé se usmívají, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kořeny v katolické víře",
+        "fact": "Tradice fiesta pochází z dob španělské kolonizace a katolické víry. Dnes je to však spíše společenská událost, která posiluje komunitní vazby.",
+        "source_url": "https://en.wikipedia.org/wiki/Catholic_Church_in_the_Philippines",
+        "voice": "Španělé dali Filipíncům víru, Filipínci z ní udělali karneval.",
+        "image_prompt": "Fotorealistický snímek barokního kostela a průvodu před ním, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-kultura-rodina",
+    "country": "Filipíny",
+    "section": "Kultura & tradice",
+    "topic": "Silné rodinné vazby",
+    "headline": "Rodina je na prvním místě",
+    "fact": "Filipínci mají mimořádně silné rodinné vazby. Žijí často ve vícerodinných domech a starají se o své starší příbuzné.",
+    "source_url": "https://en.wikipedia.org/wiki/Filipino_values",
+    "source_quote": "Filipino values are social constructs within Filipino culture which define that which is socially considered to be desirable.",
+    "voice": "Pro Filipínce je rodina jako pevnost, do které se vždy vrátíš.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek velké filipínské rodiny u svátečního stolu, úsměvy, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Všichni jsou příbuzní",
+        "fact": "Příbuzenství se na Filipínách počítá široce – i vzdálení bratranci jsou považováni za blízké. Rodina se schází na každou příležitost, od křtin po svatby.",
+        "source_url": "https://en.wikipedia.org/wiki/Filipino_values",
+        "voice": "Když pozveš Filipínce na oslavu, pozvi celou jeho rodinu.",
+        "image_prompt": "Fotorealistický snímek rodinného setkání na zahradě, grilování, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní pilíř společnosti",
+        "fact": "Rodina je základní jednotkou filipínské společnosti. Ovlivňuje rozhodování, ekonomiku a sociální jistoty. Tato blízkost pomáhá překonávat těžkosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Filipino_values",
+        "voice": "V krizi se Filipínci opírají o rodinu – a ta je vždy podrží.",
+        "image_prompt": "Fotorealistický snímek tří generací filipínské rodiny na verandě, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-kultura-bayanihan",
+    "country": "Filipíny",
+    "section": "Kultura & tradice",
+    "topic": "Bayanihan – duch sousedské pomoci",
+    "headline": "Když sousedé zvednou celý dům",
+    "fact": "Bayanihan je hluboce zakořeněný filipínský princip sousedské spolupráce a vzájemné pomoci, jehož nejznámějším symbolem je společné přenesení celého domu na nové místo.",
+    "source_url": "https://en.wikipedia.org/wiki/Bayanihan",
+    "source_quote": "The origins of bayanihan come from the practice of carrying the \"bahay kubo,\" a traditional Filipino house. The community comes together to help the family by literally lifting the house and relocating it to a new area.",
+    "voice": "Stěhování bez auta ani jeřábu — stačí dost sousedů pod střechou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a Filipino community carrying a traditional bamboo nipa hut on bamboo poles across a village, teamwork, daylight, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, které znamená víc než pomoc",
+        "fact": "Slovo bayanihan vychází z výrazu bayani, tedy hrdina — pomoc sousedům se tu chápe jako drobný hrdinský čin, ne jen laskavost.",
+        "source_url": "https://en.wikipedia.org/wiki/Bayanihan",
+        "source_quote": "The term \"bayanihan\" is derived from the word \"bayani,\" meaning hero or someone with courage and selflessness.",
+        "voice": "Kdo pomůže sousedovi, je tu trochu hrdina.",
+        "image_prompt": "Photorealistic close-up of Filipino villagers smiling while working together, warm community atmosphere, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Duch, který ožívá hlavně v krizi",
+        "fact": "Princip bayanihan se nejsilněji projevuje při přírodních katastrofách, kterými Filipíny často procházejí — sousedé si tehdy navzájem pomáhají bez ohledu na to, jak často se pohromy opakují.",
+        "source_url": "https://en.wikipedia.org/wiki/Bayanihan",
+        "source_quote": "Another concrete example of Bayanihan is seen during natural disasters and calamities.",
+        "voice": "Čím častěji příroda zkouší, tím pevněji drží komunita pohromadě.",
+        "image_prompt": "Photorealistic photo of Filipino neighbors helping rebuild a house after a storm, community effort, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-umeni-textil",
+    "country": "Filipíny",
+    "section": "Umění",
+    "topic": "Tradiční tkaní a textil",
+    "headline": "Příběhy utkané z vláken",
+    "fact": "Filipínské tkaniny, jako je piña z ananasových listů nebo abacá, jsou vysoce ceněné pro svou jemnost. Tradiční tkaní se dědí z generace na generaci.",
+    "source_url": "https://en.wikipedia.org/wiki/Barong_tagalog",
+    "source_quote": "It is traditionally made with sheer textiles (nipis) woven from piña or abacá",
+    "voice": "Když se dotkneš tkané piñy, jako bys cítil tropický vánek.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek detailu filipínské tkaniny, jemné vlákno a tradiční vzory, 16:9",
+    "ll": [
+      121,
+      12
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kousek Filipín na tvé kůži",
+        "fact": "Z piñy se šijí tradiční barong tagalog, slavnostní košile pro muže. Vzory na tkaninách často odrážejí přírodu a život na ostrovech.",
+        "source_url": "https://en.wikipedia.org/wiki/Barong_tagalog",
+        "source_quote": "the barong tagalog, more commonly known simply as barong ... is an embroidered long-sleeved formal shirt for men and a national dress of the Philippines",
+        "voice": "Oblečení z piñy je jako nošení slunečních paprsků.",
+        "image_prompt": "Fotorealistický snímek ručního tkalcovského stavu s piñou, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dědictví předkoloniální minulosti",
+        "fact": "Tkaní textilu má na Filipínách dlouhou historii. Každý ostrov má své vzory a techniky, které přežily až do současnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Barong_tagalog",
+        "voice": "Každý uzlík a barevný proužek nese tajemství dávných mistrů.",
+        "image_prompt": "Fotorealistický snímek filipínské tkadleny při práci, tradiční prostředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-umeni-kulintang",
+    "country": "Filipíny",
+    "section": "Umění",
+    "topic": "Hudba kulintang",
+    "headline": "Zvuky z ostrovů, které tančí",
+    "fact": "Kulintang je tradiční hudební nástroj Filipín, soubor mosazných gongů. Tato hudba je nedílnou součástí rituálů a slavností na jihu země.",
+    "source_url": "https://en.wikipedia.org/wiki/Kulintang",
+    "source_quote": "Kulintang ... is a modern term for an ancient instrumental form of music composed on a row of small, horizontally laid gongs that function melodically, accompanied by larger, suspended gongs and drums.",
+    "voice": "Když zahraje kulintang, cítíš v každém úderu srdce ostrovů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hudebníka hrajícího na kulintang, mosazné gongy, 16:9",
+    "ll": [
+      121,
+      8
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tanec a rytmus jihu",
+        "fact": "Hra na kulintang je často doprovázena tradičními tanci a vyprávěním příběhů. Je to živá tradice, která se předává ústně.",
+        "source_url": "https://en.wikipedia.org/wiki/Kulintang",
+        "voice": "Rytmus gongů ti pod kůži vleze a už nepustí.",
+        "image_prompt": "Fotorealistický snímek tanečníků v tradičních kostýmech při rytmu kulintangu, 16:9"
+      },
+      "kartograf": {
+        "fact": "Kulintang je typický pro muslimské a původní obyvatelstvo na ostrovech Mindanao a Sulu. Představuje kulturní identitu těchto komunit.",
+        "headline": "Hudba národnostních menšin",
+        "source_url": "https://en.wikipedia.org/wiki/Kulintang",
+        "source_quote": "kulintang music ensembles have been playing for many centuries in regions of the Southern Philippines, Eastern Malaysia, Eastern Indonesia, Brunei and Timor",
+        "voice": "Je to hudba, která přežila staletí a pořád zní stejně silně.",
+        "image_prompt": "Fotorealistický snímek skupiny hudebníků s kulintangem během obřadu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-umeni-moderni",
+    "country": "Filipíny",
+    "section": "Umění",
+    "topic": "Moderní filipínské umění",
+    "headline": "Když se tradice potkává s novou dobou",
+    "fact": "Moderní filipínští umělci často mísí tradiční motivy s abstraktním vyjádřením. Jejich díla reflektují sociální témata a bohatou historii země.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_the_Philippines",
+    "voice": "Současné filipínské umění je jako kaleidoskop barev a názorů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek galerie moderního umění v Manile, barevné obrazy, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mladí umělci, nové hlasy",
+        "fact": "V Manile a dalších městech vznikají umělecké čtvrti, kde mladí tvůrci vystavují svá díla. Často reflektují každodenní život i globální problémy.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_the_Philippines",
+        "voice": "Filipínské umění je jako zrcadlo – ukazuje nám, kým jsme.",
+        "image_prompt": "Fotorealistický snímek mladého umělce malujícího pouliční umění, 16:9"
+      },
+      "kartograf": {
+        "fact": "Filipínští umělci dosahují úspěchů i v zahraničí. Jejich tvorba je ceněna pro svou originalitu a schopnost propojit východní a západní vlivy.",
+        "headline": "Světový ohlas",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_the_Philippines",
+        "voice": "Filipínské umění si našlo cestu do muzeí po celém světě.",
+        "image_prompt": "Fotorealistický snímek mezinárodní výstavy filipínského umění, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-sport-box",
+    "country": "Filipíny",
+    "section": "Sport",
+    "topic": "Box na Filipínách",
+    "headline": "Národ, který miluje box",
+    "fact": "Box patří na Filipínách mezi nejoblíbenější sporty spolu s basketbalem. Díky Manny Pacquiaovi se stal národní vášní.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_boxing_in_the_Philippines",
+    "source_quote": "In the Philippines, boxing is one of its most popular sports, together with basketball, due to the many accolades it has brought to the country",
+    "voice": "Když je box, zastaví se Filipíny.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek boxerského zápasu v Manile, napjaté obecenstvo, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Každý chce být Pacquiao",
+        "fact": "Boxerské tělocvičny najdeš na každém rohu. Děti sní o tom, že se jednou stanou šampionem jako Manny Pacquiao.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_boxing_in_the_Philippines",
+        "voice": "Box je tady často jedinou cestou z chudoby.",
+        "image_prompt": "Fotorealistický snímek mladých boxerů trénujících v tělocvičně, 16:9"
+      },
+      "kartograf": {
+        "headline": "Box jako společenský fenomén",
+        "fact": "Filipínský box přinesl zemi řadu světových šampionů a olympijských medailí. Box se tak stal nástrojem národní hrdosti.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_boxing_in_the_Philippines",
+        "source_quote": "having produced 46 major world champions (including those of Filipino heritage), one of the most in the world",
+        "voice": "Když Pacquiao boxuje, nemluví se o politice, jen o vítězství.",
+        "image_prompt": "Fotorealistický snímek masivního sledování boxerského přenosu na veřejném prostranství, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-sport-basketbal",
+    "country": "Filipíny",
+    "section": "Sport",
+    "topic": "Basketbal – král sportů",
+    "headline": "Basketbal je na prvním místě",
+    "fact": "Basketbal je na Filipínách jednoznačně nejpopulárnějším sportem. Hraje se na ulicích, na školních dvorech i v profesionálních ligách.",
+    "source_url": "https://en.wikipedia.org/wiki/Philippine_Basketball_Association",
+    "source_quote": "Founded in 1975, it is the first professional basketball league in Asia and the second-oldest in the world after the National Basketball Association (NBA).",
+    "voice": "Filipínský basketbal je všude, stačí jen hodit míč.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pouličního basketbalu v Manile, koš na ulici, děti hrají, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hra, která baví každého",
+        "fact": "Basketbal je rozšířenou pouliční hrou po celé zemi, od rána do večera se hraje v každé vesnici i městě.",
+        "source_url": "https://en.wikipedia.org/wiki/Philippine_Basketball_Association",
+        "voice": "Basketbal je pro Filipínce jako dech – přirozený a nezbytný.",
+        "image_prompt": "Fotorealistický snímek mladých Filipínců hrajících basketbal ve vesnici, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dědictví amerického vlivu",
+        "fact": "Basketbal se na Filipínách uchytil díky americké koloniální správě. Dnes je neodmyslitelnou součástí filipínské identity a kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Philippine_Basketball_Association",
+        "voice": "Amíci přinesli basketbal, Filipínci z něj udělali svou věc.",
+        "image_prompt": "Fotorealistický snímek zaplněného basketbalového stadionu, zápas, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-sport-volejbal",
+    "country": "Filipíny",
+    "section": "Sport",
+    "topic": "Volejbal",
+    "headline": "Síť, míč a parné dny",
+    "fact": "Volejbal je na Filipínách velmi oblíbený, obzvláště mezi ženami. Hraje se na plážích i v halách.",
+    "source_url": "https://en.wikipedia.org/wiki/Volleyball_in_the_Philippines",
+    "source_quote": "Volleyball in the Philippines is a female-dominated sports, with two commercial leagues serving as the de facto",
+    "voice": "Plážový volejbal na Filipínách? To je výbuch energie.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek plážového volejbalu na filipínské pláži, slunce, míč, 16:9",
+    "ll": [
+      121,
+      12
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sport pro každou pláž",
+        "fact": "Kdekoli je písek a síť, tam se hraje. Filipínci milují volejbal pro jeho jednoduchost a zábavu.",
+        "source_url": "https://en.wikipedia.org/wiki/Volleyball_in_the_Philippines",
+        "voice": "Volejbal je tady jako oblíbená hra na pláži.",
+        "image_prompt": "Fotorealistický snímek volejbalového zápasu na bílém písku, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport od amerického období po dnešek",
+        "fact": "Volejbal se na Filipínách hraje od dob, kdy byla země pod americkou správou, a od té doby si udržel silnou pozici mezi ženskými sporty.",
+        "source_url": "https://en.wikipedia.org/wiki/Volleyball_in_the_Philippines",
+        "source_quote": "Philippine volleyball history began in 1910 when the Philippines was a United States territory (1898–1935).",
+        "voice": "Naděje filipínského volejbalu stoupá s každým podáním.",
+        "image_prompt": "Fotorealistický snímek halového volejbalového zápasu, fanoušci, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-jazyk-tagalog",
+    "country": "Filipíny",
+    "section": "Jazyk & slova",
+    "topic": "Tagalog a filipínština",
+    "headline": "Dva jazyky, jeden národ",
+    "fact": "Úředním jazykem Filipín je filipínština, standardizovaná forma tagalogu. Vedle ní je druhým úředním jazykem angličtina.",
+    "source_url": "https://en.wikipedia.org/wiki/Filipino_language",
+    "source_quote": "Filipino ... is the national language of the Philippines, the main lingua franca, and one of the two official languages of the country, along with English. It is a de facto standardized form of the Tagalog language",
+    "voice": "Když Filipínec mluví, střídá jazyky jako naše počasí.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Jedna řeč, mnoho dialektů",
+        "fact": "Na Filipínách se mluví desítkami místních jazyků. Tagalog je dominantní v okolí Manily, ale na ostrovech najdeš i cebuánštinu nebo ilokánštinu.",
+        "source_url": "https://en.wikipedia.org/wiki/Filipino_language",
+        "voice": "Naučit se tagalog není snadné, ale Filipínci ocení každý pokus.",
+        "image_prompt": "Fotorealistický snímek tabule s tagalogskými slovy na ulici, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyky jako mozaika",
+        "fact": "Ústava zemi zavazuje dál rozvíjet filipínštinu obohacováním o slova z ostatních místních jazyků. Angličtina zůstává jazykem vzdělání a byznysu.",
+        "source_url": "https://en.wikipedia.org/wiki/Filipino_language",
+        "source_quote": "The 1987 Constitution mandates that Filipino be further enriched and developed by the other languages of the Philippines.",
+        "voice": "Filipíny jsou důkazem, že mnohojazyčnost je výhoda.",
+        "image_prompt": "Fotorealistický snímek filipínské knihovny s učebnicemi angličtiny a tagalštiny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-jazyk-prejata",
+    "country": "Filipíny",
+    "section": "Jazyk & slova",
+    "topic": "Španělské a anglické přejímky",
+    "headline": "Filipínština jako jazykový guláš",
+    "fact": "Filipínština je plná přejatých slov ze španělštiny (např. 'kwarto' = pokoj) a angličtiny, což odráží bohatou koloniální historii země.",
+    "source_url": "https://en.wikipedia.org/wiki/Spanish_language_in_the_Philippines",
+    "source_quote": "Spanish was the sole official language of the Philippines throughout its more than three centuries of Spanish rule, from the late 16th century to 1898",
+    "voice": "Mluvit filipínsky je jako cestovat časem a oceány.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova, která znáš ze Španělska",
+        "fact": "Slova jako 'mesa' (stůl) nebo 'cuchara' (lžíce) ti budou povědomá. Španělština zanechala v jazyce nesmazatelnou stopu.",
+        "source_url": "https://en.wikipedia.org/wiki/Spanish_language_in_the_Philippines",
+        "voice": "Když nevíš, jak to říct, zkus to španělsky.",
+        "image_prompt": "Fotorealistický snímek starého španělského slovníku a filipínské knihy, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk jako koloniální kaleidoskop",
+        "fact": "Období španělské nadvlády a poté americký vliv formovaly současnou filipínštinu. Španělština si oficiální postavení podržela ještě dlouho po vzniku nezávislé republiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Spanish_language_in_the_Philippines",
+        "source_quote": "a co-official language (with English) under its American rule, a status it retained (now alongside Filipino and English) after independence in 1946",
+        "voice": "Filipínština si bere to nejlepší z každého, kdo tu byl.",
+        "image_prompt": "Fotorealistický snímek historických dokumentů ve španělštině a angličtině na Filipínách, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-jazyk-anglictina",
+    "country": "Filipíny",
+    "section": "Jazyk & slova",
+    "topic": "Angličtina na Filipínách",
+    "headline": "Angličtina jako most ke světu",
+    "fact": "Angličtina je jedním ze dvou úředních jazyků Filipín a jazykem škol, médií a obchodu.",
+    "source_url": "https://en.wikipedia.org/wiki/Philippine_English",
+    "source_quote": "English is taught in schools as one of the two official languages of the country, the other being Filipino",
+    "voice": "Angličtina na Filipínách je jako všudypřítomný přítel.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Díky angličtině se domluvíš všude",
+        "fact": "Pro turistu je to výhoda – filipínský úředník, řidič nebo prodavač ti srozumitelně poradí anglicky.",
+        "source_url": "https://en.wikipedia.org/wiki/Philippine_English",
+        "voice": "Nemusíš se bát, že bys nerozuměl – angličtina je tu doma.",
+        "image_prompt": "Fotorealistický snímek konverzace turisty s místním v obchodě, anglický nápis, 16:9"
+      },
+      "kartograf": {
+        "fact": "Filipínská odrůda angličtiny se díky vyučujícím z Filipín šíří i do dalších asijských zemí. Jazyková vybavenost je pro zemi důležitým exportním artiklem.",
+        "headline": "Jazyk, který otevírá dveře",
+        "source_url": "https://en.wikipedia.org/wiki/Philippine_English",
+        "source_quote": "Philippine English is also becoming the prevalent variety of English being learned in East Asia and Southeast Asia as taught by Filipino teachers in various countries such as South Korea, Japan, and Thailand",
+        "voice": "Angličtina tady není jen cizí jazyk, je to šance.",
+        "image_prompt": "Fotorealistický snímek moderní kanceláře v Manile s anglickými nápisy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-jidlo-adobo",
+    "country": "Filipíny",
+    "section": "Jídlo",
+    "topic": "Adobo",
+    "headline": "Národní jídlo, na kterém si pochutnáš",
+    "fact": "Adobo je považováno za neoficiální národní jídlo Filipín. Jedná se o maso, obvykle kuřecí nebo vepřové, dušené v octě, sójové omáčce a česneku.",
+    "source_url": "https://en.wikipedia.org/wiki/Adobo",
+    "source_quote": "In the Philippines, the name adobo was given by colonial-era Spaniards on the islands to a different indigenous cooking method that also uses vinegar. Although similar, this developed independently of Spanish influence.",
+    "voice": "Adobo voní jako filipínská neděle u babičky.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek talíře s adobo, dušené maso v tmavé omáčce, rýže, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept, který se dědí",
+        "fact": "Každá rodina má svůj tajný recept na adobo. Někteří přidávají kokosové mléko, jiní zase sušené chilli.",
+        "source_url": "https://en.wikipedia.org/wiki/Adobo",
+        "voice": "Adobo je jako rodinné album – každá generace přidá svou stránku.",
+        "image_prompt": "Fotorealistický snímek hrnce s adobo na sporáku, detail, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice starší než kolonizace",
+        "fact": "Filipínský způsob dušení masa v octě vznikl nezávisle na španělském vlivu, ačkoli mu Španělé dali pojmenování adobo podle vlastní kulinářské tradice.",
+        "source_url": "https://en.wikipedia.org/wiki/Adobo",
+        "source_quote": "this developed independently of Spanish influence",
+        "voice": "Adobo je důkazem, že i jednoduché jídlo může být nadčasové.",
+        "image_prompt": "Fotorealistický snímek filipínské kuchyně s přípravou adobo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-jidlo-lechon",
+    "country": "Filipíny",
+    "section": "Jídlo",
+    "topic": "Lechon",
+    "headline": "Celé prase na rožni",
+    "fact": "Lechon je pečené selátko, které je nepostradatelnou součástí každých významných filipínských oslav. Křupavá kůže a šťavnaté maso jsou lahůdkou.",
+    "source_url": "https://en.wikipedia.org/wiki/Suckling_pig",
+    "source_quote": "A variation is popular in Spain and Portugal and their former empires under the name lechón (Spanish) or leitão (Portuguese)",
+    "voice": "Lechon je král filipínského stolu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek celého pečeného selátka na podnose, křupavá kůže, ozdoba z ovoce, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Oslava bez lechonu? To není oslava!",
+        "fact": "Na narozeniny, svatby i fiesty se peče lechon. Jeho příprava je celodenní rituál, který spojuje rodiny a přátele.",
+        "source_url": "https://en.wikipedia.org/wiki/Filipino_cuisine",
+        "voice": "Lechon je důvod, proč jsou filipínské oslavy tak dlouhé.",
+        "image_prompt": "Fotorealistický snímek rodinné oslavy s lechonem uprostřed stolu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulinářský odkaz španělské éry",
+        "fact": "Lechon pochází z doby španělské kolonizace, kdy se podobně připravovalo vepřové i na Pyrenejském poloostrově. Dnes je ale vnímán jako typicky filipínský pokrm.",
+        "source_url": "https://en.wikipedia.org/wiki/Suckling_pig",
+        "voice": "Španělé přivezli recept, Filipínci z něj udělali umění.",
+        "image_prompt": "Fotorealistický snímek tradiční pece na lechon na filipínském venkově, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-jidlo-halo-halo",
+    "country": "Filipíny",
+    "section": "Jídlo",
+    "topic": "Halo-halo",
+    "headline": "Nejsladší zmrzlinový pohár",
+    "fact": "Halo-halo je oblíbený filipínský dezert, což v překladu znamená 'smíchej to dohromady'. Je to směs drceného ledu, sladkého mléka, fazolí, ovoce a zmrzliny.",
+    "source_url": "https://en.wikipedia.org/wiki/Halo-halo",
+    "source_quote": "Halo-halo is a popular cold dessert in the Philippines made with crushed ice, evaporated milk or sometimes coconut milk, and flavoring such as ube jam",
+    "voice": "Halo-halo je jako filipínská duše – barevné a sladké.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek halo-halo ve sklenici, vrstvy ovoce, zmrzlina, barevné, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Míchej, dokud nebudeš spokojen",
+        "fact": "Příprava halo-halo je kreativní záležitost. Můžeš si vybrat z mnoha ingrediencí – od ovoce po ube (fialový jam).",
+        "source_url": "https://en.wikipedia.org/wiki/Halo-halo",
+        "voice": "Každá lžíce halo-halo je jiná, a to je na něm to nejlepší.",
+        "image_prompt": "Fotorealistický snímek přípravy halo-halo s různými přísadami, 16:9"
+      },
+      "kartograf": {
+        "headline": "Únik před tropickým žárem",
+        "fact": "Halo-halo je oblíbeným osvěžením v parném tropickém podnebí a je považován za neoficiální národní dezert Filipín.",
+        "source_url": "https://en.wikipedia.org/wiki/Halo-halo",
+        "source_quote": "Halo-halo is considered to be the unofficial national dessert of the",
+        "voice": "Nejlepší způsob, jak přežít vedro, je dát si halo-halo.",
+        "image_prompt": "Fotorealistický snímek halo-halo s kopečkem zmrzliny na vrchu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-historie-spanelsko",
+    "country": "Filipíny",
+    "section": "Historie",
+    "topic": "Španělská kolonizace",
+    "headline": "Tři století pod španělskou korunou",
+    "fact": "Filipíny byly španělskou kolonií od roku 1565 do roku 1898. Španělé přinesli katolickou víru a evropskou kulturu, která zemi ovlivnila dodnes.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1565%E2%80%931898)",
+    "source_quote": "The history of the Philippines from 1565 to 1898 is known as the Spanish colonial period.",
+    "voice": "Španělé na Filipínách zanechali víc, než si mysleli.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého španělského kostela v Manile, barokní architektura, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kostely a pevnosti",
+        "fact": "Dodnes se na Filipínách dochovaly barokní kostely a opevnění z doby španělské nadvlády, z nichž mnohé jsou na seznamu UNESCO.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1565%E2%80%931898)",
+        "voice": "Každý kámen v Manile vypráví o španělském vlivu.",
+        "image_prompt": "Fotorealistický snímek pevnosti Fort Santiago v Manile, historické hradby, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dědictví, které přetrvává",
+        "fact": "Španělština a křesťanství jsou dodnes silně zakořeněné. Filipíny mají po Brazílii a Mexiku třetí největší katolickou populaci na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Catholic_Church_in_the_Philippines",
+        "source_quote": "has the third-largest Catholic population in the world, after Brazil and Mexico",
+        "voice": "Filipíny jsou jedinou převážně katolickou zemí v Asii.",
+        "image_prompt": "Fotorealistický snímek velikonočního průvodu na Filipínách, kříž a věřící, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-historie-amerika",
+    "country": "Filipíny",
+    "section": "Historie",
+    "topic": "Americká nadvláda",
+    "headline": "Od španělské vlády k americké",
+    "fact": "Po španělsko-americké válce v roce 1898 připadly Filipíny Spojeným státům americkým. Americká správa přinesla angličtinu a nový vzdělávací systém.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1898%E2%80%931946)",
+    "source_quote": "The history of the Philippines from 1898 to 1946 is known as the American colonial period. It was the United States colonization of the Philippines, and began with the outbreak of the Spanish–American War in April 1898",
+    "voice": "Amíci přišli, přinesli angličtinu a basketbal.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické fotografie amerických vojáků v Manile, 1898, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nové školy, nový jazyk",
+        "fact": "Američané zavedli veřejné školství a angličtinu, která se rychle stala jazykem vzdělanosti. To zásadně změnilo společnost.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1898%E2%80%931946)",
+        "voice": "Díky Američanům se Filipínci naučili anglicky, ale nezapomněli na svůj jazyk.",
+        "image_prompt": "Fotorealistický snímek staré filipínské školy, studenti v lavicích, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cesta k nezávislosti",
+        "fact": "Americká správa trvala až do doby, kdy Filipíny získaly nezávislost. Toto období vytvořilo pevné vazby mezi oběma zeměmi.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1898%E2%80%931946)",
+        "source_quote": "concluded when the United States formally recognized the independence of the Republic of the Philippines on July 4, 1946",
+        "voice": "Američané přišli jako kolonizátoři, ale zanechali svobodu.",
+        "image_prompt": "Fotorealistický snímek slavnosti vyhlášení nezávislosti v Manile, 1946, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ph-historie-nezavislost",
+    "country": "Filipíny",
+    "section": "Historie",
+    "topic": "Vyhlášení nezávislosti",
+    "headline": "Konečně svobodní!",
+    "fact": "Spojené státy formálně uznaly nezávislost Filipínské republiky 4. července 1946. Tento den je připomínkou konce koloniální éry a začátku moderní filipínské historie.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1898%E2%80%931946)",
+    "source_quote": "concluded when the United States formally recognized the independence of the Republic of the Philippines on July 4, 1946",
+    "voice": "Filipínci čekali na svobodu dlouho, ale dočkali se.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek slavnostního vyhlášení nezávislosti, vlajka a dav, 16:9",
+    "ll": [
+      121,
+      14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Den, kdy vlajka konečně zavlála",
+        "fact": "Každý rok Filipínci slaví Den nezávislosti průvody a připomínkami svých hrdinů. Je to symbol národní hrdosti a jednoty.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1898%E2%80%931946)",
+        "voice": "V ten den je na Filipínách slyšet smích po celém souostroví.",
+        "image_prompt": "Fotorealistický snímek průvodu na Den nezávislosti, filipínské vlajky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nový začátek v troskách",
+        "fact": "Nezávislost přišla po krvavé druhé světové válce, která zemi silně poznamenala. Budování nového státu bylo těžké, ale Filipínci se nevzdali.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_Philippines_(1898%E2%80%931946)",
+        "voice": "Těžké časy rodí silné národy.",
+        "image_prompt": "Fotorealistický snímek poválečné Manily, obnova města, 16:9"
+      }
+    }
+  }
+]

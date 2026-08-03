@@ -1,0 +1,944 @@
+[
+  {
+    "id": "br-mista-amazon",
+    "country": "Brazílie",
+    "section": "Místa",
+    "topic": "Amazonský prales",
+    "headline": "Plíce planety a domov třetiny všech druhů",
+    "fact": "Amazonský deštný prales pokrývá přes pět milionů čtverečních kilometrů a je domovem odhadovaně třetiny všech suchozemských živočišných a rostlinných druhů světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Amazon_rainforest",
+    "source_quote": "More than one-third of all known species in the world live in the Amazon rainforest",
+    "voice": "Každý desátý strom na Zemi stojí v Amazonii.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký snímek amazonského pralese — nekonečný zelený baldachýn s řekou meandrující krajinou, bez lidí, 16:9",
+    "ll": [
+      -60.0,
+      -3.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Amazonka: řeka rekordmanka",
+        "fact": "Amazonka je řeka s největším průtokem vody na světě; do Atlantiku přivádí přibližně pětinu veškeré říční vody celé planety. Přitéká z peruánských And a ústí široce do oceánu poblíž brazilského Belému.",
+        "source_url": "https://en.wikipedia.org/wiki/Amazon_River",
+        "source_quote": "the largest river by discharge volume of water in the world … represents 20% of the global riverine discharge into oceans",
+        "voice": "Kde Amazonka vtéká do oceánu, je sladká voda cítit stovky kilometrů od břehu.",
+        "image_prompt": "Fotorealistický snímek Amazonky — obrovský tok řeky obklopený pralesem při západu slunce, zlaté světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Odlesňování: klima a geopolitika",
+        "fact": "Amazonský prales je regulátorem klimatu celé Jižní Ameriky — recykluje vláhu v takzvaných létajících řekách, zásobujících deštěm argentinské pampasy a brazilská zemědělská pole. Odlesňování tento systém ohrožuje a je předmětem mezinárodních politických sporů.",
+        "source_url": "https://en.wikipedia.org/wiki/Deforestation_of_the_Amazon_rainforest",
+        "source_quote": "the Amazon produces 'flying rivers' … deforestation disrupts regional rainfall",
+        "voice": "Prales, který padne v Brazílii, sucho způsobí v Paraguayi.",
+        "image_prompt": "Fotorealistický snímek rozhraní odlesněné půdy a stojícího amazońského pralese, dramatický kontrast, letecký pohled, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-mista-rio",
+    "country": "Brazílie",
+    "section": "Místa",
+    "topic": "Rio de Janeiro",
+    "headline": "Kristus nad zálivem a samba v ulicích",
+    "fact": "Rio de Janeiro leží mezi horami a oceánem; jeho kulisy — socha Krista Spasitele na hoře Corcovado a zátoky Guanabara — patří k nejfotografovanějším pohledům světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro",
+    "source_quote": "Rio de Janeiro … famous for its natural setting … Sugarloaf Mountain, the statue of Christ the Redeemer",
+    "voice": "Tam, kde hora padá do moře, vyrostlo město.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Ria de Janeiro — socha Krista Spasitele na hoře Corcovado nad zálivem Guanabara, západ slunce, dramatické světlo, 16:9",
+    "ll": [
+      -43.1729,
+      -22.9068
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Favely: město uvnitř města",
+        "fact": "Rio má jednu z největších neformálních urbánních zástaveb světa — favely. Vznikaly od konce devatenáctého století jako útočiště přistěhovalců a dnes jsou součástí identity města, kultury samby a grafiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Favela",
+        "source_quote": "Favelas … informal urban settlements … a characteristic feature of Brazilian cities",
+        "voice": "Favely si lidé postavili, protože jinak bydlet nemohli. Dnes jsou součástí kultury.",
+        "image_prompt": "Fotorealistický snímek favel na svazích rio de janeirské hory — hustě stavěné barevné domy, panorama zálivu v pozadí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Geomorfologie a město: hory, moře, lidé",
+        "fact": "Rio se rozvinulo v úzkých plochách mezi horami a oceánem, což formovalo jak sociální geografii (bohatí u pláže, chudí na svazích), tak dopravní logiku a urbánní strukturu. Fyzický reliéf přímo ovlivnil rozmístění bohatství.",
+        "source_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro",
+        "source_quote": "The city's … geography … directly influenced its social and spatial development",
+        "voice": "Kde bydlíš ve městě, závisí na tom, jak vypadá jeho terén.",
+        "image_prompt": "Fotorealistický letecký snímek Ria de Janeiro — hory, zálivy a zástavba v komplexním přírodním terénu, zlatá hodina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-mista-pantanal",
+    "country": "Brazílie",
+    "section": "Místa",
+    "topic": "Pantanal",
+    "headline": "Největší mokřad světa s jaguáry",
+    "fact": "Pantanal na jihozápadě Brazílie (sahající i do Bolívie a Paraguaje) je největší tropický mokřad na světě; je domovem jaguárů, kajmanů a stovek druhů ptáků.",
+    "source_url": "https://en.wikipedia.org/wiki/Pantanal",
+    "source_quote": "the world's largest tropical wetland area … home to jaguars, giant otters, and hundreds of bird species",
+    "voice": "Vstoupíte do vody a jaguár vás pozoruje z břehu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Pantanalu při rozlití — vodní plocha se stromy, kajman na břehu, ranní mlha, přirozené světlo, 16:9",
+    "ll": [
+      -57.0,
+      -17.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pulzující mokřad: záplavy jako zákon přírody",
+        "fact": "Pantanal každoročně zaplavuje velká část území — to je základní rytmus celého ekosystému. Záplavy přinášejí živiny, umožňují rybám rozmnožování a ptákům hnízdění; ekosystém je závislý na pravidelném toku vody.",
+        "source_url": "https://en.wikipedia.org/wiki/Pantanal",
+        "source_quote": "the Pantanal is subject to annual flooding … essential for its ecological function",
+        "voice": "Tady záplavy nejsou katastrofa. Jsou plán.",
+        "image_prompt": "Fotorealistický snímek hejna volavek a ibisů letících nad rozlitým pantanalskim mokřadem, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mokřad přes tři hranice: ochrana vyžaduje spolupráci",
+        "fact": "Pantanal přesahuje do Bolívie a Paraguaje — žádný stát ho nemůže chránit sám. Mezinárodní spolupráce v ochraně přírody je zde nutností, nikoli volbou; je to ukázkový příklad tzv. transboundary conservation.",
+        "source_url": "https://en.wikipedia.org/wiki/Pantanal",
+        "source_quote": "the Pantanal … extends into Bolivia and Paraguay",
+        "voice": "Příroda nezná hranice. Politika ano — a to komplikuje ochranu.",
+        "image_prompt": "Fotorealistický letecký snímek Pantanalu — rozsáhlé mokřiny se sítí vodních kanálů, zelená krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-priroda-amazonbio",
+    "country": "Brazílie",
+    "section": "Příroda",
+    "topic": "Biodiverzita Amazonie",
+    "headline": "Kde na každém stromě žije vlastní svět",
+    "fact": "Amazonský prales je nejbohatší ekosystém na Zemi; jen v řece Amazoně žije přes tři tisíce druhů ryb — víc než v celém Atlantickém oceánu.",
+    "source_url": "https://en.wikipedia.org/wiki/Amazon_River",
+    "source_quote": "There are over 3,000 species of fish currently recognised in the Amazon basin",
+    "voice": "Vědci v Amazonii popisují nový druh každý týden. Každý týden.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek amazonského pralese ze spodku — světlo pronikající přes vrstvy listí do hustého porostu, žabí perspektiva, přirozené světlo, 16:9",
+    "ll": [
+      -60.0,
+      -3.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Baldachýn, podrost a půda: čtyři světy v jednom pralese",
+        "fact": "Amazonský prales má vertikálně více vrstev: vrchní baldachýn, střední vrstva, podrost a lesní půda. Každá vrstva je vlastní ekosystém s jinými druhy, světelnými podmínkami a zvuky. Pět pater různých světů nad sebou.",
+        "source_url": "https://en.wikipedia.org/wiki/Amazon_rainforest",
+        "source_quote": "the forest floor … canopy … each layer supporting distinct communities of species",
+        "voice": "Prales je dům s pěti poschodími a každé obývají jiní nájemníci.",
+        "image_prompt": "Fotorealistický snímek různých vrstev amazońského pralese — slunce v baldachýnu, zelené šero dole, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Biodiverzita jako přírodní kapitál a jeho cena",
+        "fact": "Amazonie je zásobárnou genetických zdrojů — léčivých látek, geneticky odolných rostlin, potravinových druhů dosud nepoužívaných. Odborníci odhadují, že nevyzkoumaný přírodní potenciál pralese má hodnotu stovek miliard dolarů.",
+        "source_url": "https://en.wikipedia.org/wiki/Amazon_rainforest",
+        "source_quote": "the Amazon contains … a vast reservoir of untapped biological resources",
+        "voice": "Nejcennější přírodní lékárna světa se kácí na pastvinu.",
+        "image_prompt": "Fotorealistický snímek nočního amazońského pralese s bioluminiscenčními houbami a hmyzem, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-priroda-cerrado",
+    "country": "Brazílie",
+    "section": "Příroda",
+    "topic": "Cerrado",
+    "headline": "Zapomenuté brazilské savany s obrovskou biodiverzitou",
+    "fact": "Cerrado je brazilská tropická savana pokrývající střed země; je jedním z nejbohatších ekosystémů mimo prales, domovem tisíců endemických druhů rostlin.",
+    "source_url": "https://en.wikipedia.org/wiki/Cerrado",
+    "source_quote": "The Cerrado … one of the world's biodiversity hotspots … highly threatened by agricultural expansion",
+    "voice": "Méně slavné než Amazonie, ale přichází o půdu rychleji.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek brazilského cerrada — torzovité stromy se zkroucenou kůrou, travnatá savana, dramatické suché světlo, bez lidí, 16:9",
+    "ll": [
+      -48.0,
+      -15.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Skrytý poklad pod zemí",
+        "fact": "Rostliny cerrada mají extrémně hluboké kořeny — některé sahají desítky metrů pod povrch, kde hledají vodu. Odolávají ohni i suchu a jsou adaptovány na jeden z nejobtížnějších klimatů v Brazílii.",
+        "source_url": "https://en.wikipedia.org/wiki/Cerrado",
+        "source_quote": "Cerrado plants have adapted to fire and drought … with deep root systems",
+        "voice": "Poklad cerrada je pod zemí — kořeny, ne stromy.",
+        "image_prompt": "Fotorealistický snímek cerradovského stromu po přirozeném požáru — spálená kůra a nová zelená výhonky, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sójový pás a zmizení biotopu",
+        "fact": "Cerrado bylo z více než poloviny přeměněno na sójová pole a pastviny. Brazílie je globálním lídrem ve vývozu sóji, ale cena za to je ztráta biodiverzity cerrada — jde o přímý konflikt hospodářské geografie a ochrany přírody.",
+        "source_url": "https://en.wikipedia.org/wiki/Cerrado",
+        "source_quote": "more than half of the Cerrado has been converted to cropland and pasture",
+        "voice": "Svět kupuje brazilskou sóju — a nevidí, co za ni platí příroda.",
+        "image_prompt": "Fotorealistický letecký snímek přechodu cerrada v sójová pole — polovina zelená divočina, polovina geometrická pole, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-lide-indigenni",
+    "country": "Brazílie",
+    "section": "Lidé",
+    "topic": "Domorodé národy Amazonie",
+    "headline": "Lidé, kteří prales znají lépe než věda",
+    "fact": "V brazilské Amazonii žijí stovky domorodých národů, z nichž některé dosud nemají kontakt s vnějším světem; jejich jazyk a znalosti přírody jsou bezprecedentním kulturním bohatstvím.",
+    "source_url": "https://en.wikipedia.org/wiki/Indigenous_peoples_in_Brazil",
+    "source_quote": "Brazil is home to hundreds of indigenous peoples … some remain in voluntary isolation",
+    "voice": "Jsou vědecky neprozkoumaní a přitom mají léčivé znalosti, které neexistují v žádné knize.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek amazońské vesnice s tradičními malokanskými domy a kanoemi na říčním břehu, džungle za ní, přirozené světlo, 16:9",
+    "ll": [
+      -60.0,
+      -3.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Izolované národy: ochrana nebo izolace?",
+        "fact": "Brazilská vláda má politiku nulového kontaktu s dobrovolně izolovanými národy — přistoupí-li kontakt s vnějším světem, přivedl by choroby, na které nemají imunitu. Je to eticky složitý případ: sebeurčení nebo ochrana?",
+        "source_url": "https://en.wikipedia.org/wiki/Uncontacted_peoples",
+        "source_quote": "Uncontacted peoples … protected by law from forced contact … vulnerable to diseases",
+        "voice": "Kontakt, který by byl 'civilizační', může být smrtelný.",
+        "image_prompt": "Fotorealistický snímek hustého amazońského pralese z letadla — skrytá krajina bez lidských stop, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Domorodé rezervace jako ostrov v moři odlesňování",
+        "fact": "Studie ukazují, že domorodé rezervace v Amazonii mají výrazně nižší míru odlesňování než okolní území. Domorodé národy jsou de facto efektivními ochránci lesa — geografická data to potvrzují.",
+        "source_url": "https://en.wikipedia.org/wiki/Indigenous_territories_in_Brazil",
+        "source_quote": "Indigenous territories … have lower deforestation rates than surrounding non-indigenous areas",
+        "voice": "Nejlepší ochranu pralesa neposkytl zákon — poskytli lidé, kteří v něm bydlí.",
+        "image_prompt": "Fotorealistický letecký snímek domorodé rezervace — zelený ostrov lesa obklopený odlesněnou zemědělskou krajinou, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-kultura-karneval",
+    "country": "Brazílie",
+    "section": "Kultura & tradice",
+    "topic": "Brazilský karneval",
+    "headline": "Největší party světa trvá čtyři dny",
+    "fact": "Brazilský karneval — zejména v Riu de Janeiru — je každoroční festival, který mobilizuje miliony lidí; sambodromo hostí soutěžní průvody sambových škol.",
+    "source_url": "https://en.wikipedia.org/wiki/Brazilian_Carnival",
+    "source_quote": "Brazilian Carnival … considered the world's largest carnival … celebrated annually",
+    "voice": "Rok příprav pro čtyři dny slávy. A pak zase rok příprav.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sambového průvodu na karnevalu v Riu — barevné kostýmy a alegorické vozy na sambodromu, noční světla, 16:9",
+    "ll": [
+      -43.1729,
+      -22.9068
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sambová škola: komunita za tancem",
+        "fact": "Sambová škola není škola v obvyklém smyslu — je to komunitní organizace z chudých čtvrtí, která celý rok pracuje na kostýmech, choreografii a hudbě. Karneval je výsledkem kolektivní práce celé komunity.",
+        "source_url": "https://en.wikipedia.org/wiki/Samba_school",
+        "source_quote": "Samba schools … community organisations … who compete in the annual carnival parade",
+        "voice": "Za pěti minutami na sambodromu stojí rok života čtvrti.",
+        "image_prompt": "Fotorealistický snímek příprav kostýmů v dílně sambové školy v Rio de Janeiru — šičky a designéři u práce, 16:9"
+      },
+      "kartograf": {
+        "headline": "Karneval jako ekonomika a měkká síla",
+        "fact": "Karneval v Riu generuje miliardové příjmy z turismu a je součástí brazilské značky. Je příkladem soft power — kulturní akce, která formuje mezinárodní obraz země a přitahuje investice i turisty.",
+        "source_url": "https://en.wikipedia.org/wiki/Brazilian_Carnival",
+        "source_quote": "Carnival in Rio … generates billions in economic activity … a major global tourism event",
+        "voice": "Radost je exportní komodita. Brazílie to ví.",
+        "image_prompt": "Fotorealistický letecký snímek sambodromu v Riu de Janeiru v noci plném světel a průvodu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-jidlo-feijoada",
+    "country": "Brazílie",
+    "section": "Jídlo",
+    "topic": "Feijoada",
+    "headline": "Hrnec plný historie a fazolí",
+    "fact": "Feijoada je brazilský národní pokrm — hustý guláš z černých fazolí s různými druhy vepřového masa; podává se s rýží, kalem a pomerančem.",
+    "source_url": "https://en.wikipedia.org/wiki/Feijoada",
+    "source_quote": "Feijoada … considered the national dish of Brazil … a stew of beans with beef and pork",
+    "voice": "Sobotní oběd v každé brazilské rodině. Tradice ze sedmnáctého století.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hliněného hrnce s feijoada — černé fazole a maso, obklopené rýží, kalem a plátky pomeranče, přirozené světlo, 16:9",
+    "ll": [
+      -47.9292,
+      -15.7801
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Fazole z Afriky, vepřové ze svobodných jídelen",
+        "fact": "Feijoada má kořeny v koloniální Brazílii; je spjata s afrobrazilskou kulturou. Otrokoví pracovníci dostávali zbytky vepřového masa — uši, ocasy, nožky — a kombinovali je s fazolemi. Jídlo chudoby se stalo národním symbolem.",
+        "source_url": "https://en.wikipedia.org/wiki/Feijoada",
+        "source_quote": "Feijoada is linked to Afro-Brazilian culture and the history of slavery in Brazil",
+        "voice": "Nejlepší jídla vznikají z toho, co zbyde. A z nutnosti.",
+        "image_prompt": "Fotorealistický snímek brazilského pouličního jídla — venkovní jídelna s feijoadou a typickými přílohami, sluneční světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Brazilská kuchyně jako sediment civilizací",
+        "fact": "Brazilská kuchyně je výsledkem vrstveného kontaktu domorodých, afrických a evropských (zejména portugaliských) tradic. Feijoada, acaí, churrasco, vatapá — každý pokrm ukazuje na jiný původ a jiné kulturní vrstvy.",
+        "source_url": "https://en.wikipedia.org/wiki/Brazilian_cuisine",
+        "source_quote": "Brazilian cuisine … derives from African, indigenous, and European culinary traditions",
+        "voice": "Na brazilském talíři jedí tři kultury najednou.",
+        "image_prompt": "Fotorealistický snímek brazilského bufetu s různorodými pokrmy — feijoa, churrasco, acaí bowl, tropické ovoce, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-historie-otroctvi",
+    "country": "Brazílie",
+    "section": "Historie",
+    "topic": "Otrocká minulost a afrobrazilská kultura",
+    "headline": "Největší příjemce africko otrockého obchodu v historii",
+    "fact": "Brazílie přijala největší počet zotročených Afričanů ze všech zemí — odhaduje se, že přes čtyři miliony lidí bylo přivezeno v průběhu třistaletého otrokářského obchodu.",
+    "source_url": "https://en.wikipedia.org/wiki/Slavery_in_Brazil",
+    "source_quote": "Brazil received the largest number of enslaved Africans … estimated at over 4 million people",
+    "voice": "Brazílie zrušila otroctví jako poslední v Americe — v roce osm osmdesát osm.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické Salvadoru de Bahia — koloniální architektura a afrobrazilská kultura v pelourinho, přirozené světlo, 16:9",
+    "ll": [
+      -38.5016,
+      -12.9714
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Candomblé a synkretismus: přežití ve víře",
+        "fact": "Candomblé je afrobrazilské náboženství, které otroci vyvinuli jako způsob zachování vlastní víry pod rouškou katolických světců. Afrikanská božstva se skryla za křesťanské postavy — synkretismus jako odpor a přežití.",
+        "source_url": "https://en.wikipedia.org/wiki/Candombl%C3%A9",
+        "source_quote": "Candomblé … developed by enslaved Africans … syncretizing African religions with Catholicism",
+        "voice": "Ve jménu sv. Antonína se modlili k jiným bohům. A přežili.",
+        "image_prompt": "Fotorealistický snímek barevného candomblé rituálu v Salvadoru de Bahia — bílé oblečení a rituální předměty, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Geografie rasy a nerovnosti v Brazílii",
+        "fact": "Historické rozmístění plantáží v tropickém pobřežním pásu Brazílie (Bahia, Pernambuco) je dodnes viditelné v demografické mapě — tyto regiony mají výrazně vyšší podíl afrobrazilského obyvatelstva a zároveň vyšší ekonomickou nerovnost.",
+        "source_url": "https://en.wikipedia.org/wiki/Afro-Brazilians",
+        "source_quote": "the distribution of Afro-Brazilians … concentrated in the northeast … historically linked to slavery",
+        "voice": "Mapa rasy v Brazílii je mapa dějin otroctví.",
+        "image_prompt": "Fotorealistický snímek historického přístavního města Salvador de Bahia s kolonialní architekturou a barevnými domy, zlaté světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-sport-futbal",
+    "country": "Brazílie",
+    "section": "Sport",
+    "topic": "Brazilský fotbal",
+    "headline": "Pět světových šampionátů a jedno národní náboženství",
+    "fact": "Brazílie je rekordmanem ve výhrách na fotbalových MS — zvítězila na pěti šampionátech a je jedinou zemí, která se kvalifikovala na každé mistrovství světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Brazil_national_football_team",
+    "source_quote": "Brazil … has won the FIFA World Cup a record five times … the only nation to have qualified for every World Cup",
+    "voice": "Ve Finále roku sedmdesát pět mluvil komentátor jen brazilsky. Zbytek světa taky.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek brazilského fotbalového zápasu na stadionu Maracanã v Riu, tribuna nabitá fanoušky, přirozené denní světlo, 16:9",
+    "ll": [
+      -43.2302,
+      -22.9122
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Futsal a ulice: kde fotbal roste",
+        "fact": "Brazilský fotbalový styl se rodí na ulici, na plážích a v halových turnajích futsalu. Technická virtuozita a kreativita hráčů — ginga — je přímý produkt hry v omezeném prostoru a improvizace.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_Brazil",
+        "source_quote": "football in Brazil … often played in informal settings … the Brazilian style known as ginga",
+        "voice": "Pelé se fotbal nenaučil na trávníku — ale na ulici bez bot.",
+        "image_prompt": "Fotorealistický snímek dětí hrajících fotbal na betonové brazilské ulici s improvizovanou brankou, sluneční světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Fotbal a nerovnost: sport jako výtah nebo klec",
+        "fact": "Pro chlapce z brazilských favely je fotbal jednou z mála reálných cest ze chudoby. Sport je tak jak výtahem, tak poutem — systém závisí na neustálém přílivu talentů ze sociálně vyloučených oblastí, přičemž většina nikdy neuspěje.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_Brazil",
+        "source_quote": "football in Brazil … a means of social mobility for those from poorer backgrounds",
+        "voice": "Jeden na milion se dostane ven. Ostatní zůstanou hrát pro radost.",
+        "image_prompt": "Fotorealistický letecký snímek stadionu Maracanã v Riu, historická arena, zástavba favely v blízkém okolí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-umeni-bossa",
+    "country": "Brazílie",
+    "section": "Umění",
+    "topic": "Bossa nova",
+    "headline": "Rytmus, který dobyl svět z jednoho bytu v Riu",
+    "fact": "Bossa nova vznikla v Riu de Janeiru na konci padesátých let jako mísení samby a jazzu; nahrávka Garota de Ipanema je jednou z nejhranějších písní v historii.",
+    "source_url": "https://en.wikipedia.org/wiki/Bossa_nova",
+    "source_quote": "Bossa nova … emerged in the late 1950s in Rio de Janeiro … a fusion of samba and jazz",
+    "voice": "Jeden kytarový akord, šeptem zpívaný. A svět se zastavil poslouchat.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pláže Ipanema v Riu de Janeiru za zlatého odpoledního světla, vlny, piassavaové stromy, romantická atmosféra, 16:9",
+    "ll": [
+      -43.2044,
+      -22.9868
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "João Gilberto a tichý hlas jako revoluce",
+        "fact": "João Gilberto změnil brazilskou hudbu přechodem od velkých orchestrů k intime — kytara a šeptem zpívaný hlas. Bossa nova byl záměrný kontrast k teatrálnosti — bylo to nové a cool.",
+        "source_url": "https://en.wikipedia.org/wiki/Jo%C3%A3o_Gilberto",
+        "source_quote": "João Gilberto … created the bossa nova style … intimate guitar and voice",
+        "voice": "Méně tónů, více emocí. To je revoluce v hudbě.",
+        "image_prompt": "Fotorealistický snímek intimního kavárenského prostoru s kytaristou a mikrofonem, teplé světlo, atmosféra bossa novy, 16:9"
+      },
+      "kartograf": {
+        "headline": "Copacabana a kultura tříd: bossa pro střední vrstvu",
+        "fact": "Bossa nova vznikla v bytě kopakabanskeho střední vrstvy, ne ve favelách — na rozdíl od samby. Je příkladem toho, jak hudební styl odráží sociální třídu a geografii města: jiná čtvrť, jiná hudba.",
+        "source_url": "https://en.wikipedia.org/wiki/Bossa_nova",
+        "source_quote": "Bossa nova … emerged among the middle class in Copacabana and Ipanema",
+        "voice": "Hudba odráží čtvrť, ze které pochází.",
+        "image_prompt": "Fotorealistický snímek Copacabany — promenáda s vlnkovým mozaikovým vzorem chodníku, pláž v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-jazyk-portugaltina",
+    "country": "Brazílie",
+    "section": "Jazyk & slova",
+    "topic": "Brazilská portugalština",
+    "headline": "Jazyk, kterému Portugalci sotva rozumí",
+    "fact": "Brazilská portugalština se vyvinula tak odlišně od evropské varianty, že mezi sebou mluvčí z Brazílie a Portugalska někdy mívají potíže s porozuměním v mluvené řeči.",
+    "source_url": "https://en.wikipedia.org/wiki/Brazilian_Portuguese",
+    "source_quote": "Brazilian Portuguese … differs significantly from European Portuguese in pronunciation, vocabulary and grammar",
+    "voice": "Brazilci otevřeli samohláskami to, co Portugalci zavřeli.",
+    "visual_type": "typographic",
+    "ll": [
+      -47.9292,
+      -15.7801
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tupi: domorodý jazyk v každodenní braziličtině",
+        "fact": "Z jazyka Tupi pochází velká část brazilské místní toponymie (Paraná, Iguaçu, Itatiaia) i mnoho běžných slov — kapybara, piraňa, tapioka, maniok. Domorodá slova přežila v brazilské slovní zásobě dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Tupi_language",
+        "source_quote": "Tupi … contributed significantly to Brazilian Portuguese vocabulary and place names",
+        "voice": "Každá řeka v Brazílii nese jméno v jazyku, který kolonizátoři chtěli vymazat.",
+        "image_prompt": "Fotorealistický snímek brazilského regionálního nápisu nebo mapy s domorodými místními názvy a přírodou v pozadí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Největší lusofonní země a centrum světové portugalštiny",
+        "fact": "Brazílie má víc mluvčích portugalštiny než Portugalsko, Angola a všechny ostatní lusofonní země dohromady. Centrum gravitace lusofonie se přesunulo z Evropy do Jižní Ameriky, což mění i vývoj jazyka samotného.",
+        "source_url": "https://en.wikipedia.org/wiki/Portuguese_language",
+        "source_quote": "Brazil … has the largest number of Portuguese speakers in the world",
+        "voice": "Jazyk přicestoval z Lisabonu. Ale dnes ho definuje São Paulo.",
+        "image_prompt": "Fotorealistický snímek moderního brazilského města São Paulo — mrakodrapy a rušné ulice, letecký pohled, zlatá hodina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-priroda-amanhecer",
+    "country": "Brazílie",
+    "section": "Příroda",
+    "topic": "Chapada Diamantina",
+    "headline": "Tabulová pohoří a vodopády v srdci Bahie",
+    "fact": "Chapada Diamantina v brazilském státě Bahia je národní park s tabulovými horami, jeskynními systémy a vodopády; je geologicky starý přes deset milionů let a byl historicky centrem těžby diamantů.",
+    "source_url": "https://en.wikipedia.org/wiki/Chapada_Diamantina",
+    "source_quote": "Chapada Diamantina … a national park … known for its table-top mountains, caves, and waterfalls",
+    "voice": "Voda padá do mlhy, mlha se mění v duhu. Chapada je pohádka z kamene.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tabulových hor Chapada Diamantina v Bahii — dramatické skalní stěny a vodopád do džungle pod nimi, přirozené světlo, 16:9",
+    "ll": [
+      -41.5,
+      -12.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Diamanty přivedou horníky, národní park přivede turisty",
+        "fact": "Region byl v devatenáctém a dvacátém století centrem brazilské těžby diamantů — garimpeiros (zlatokopové) tu žili v divokém prostředí. Po vyčerpání ložisek ho nahradil ekoturismus; park dnes přežívá díky přírodě, ne diamantům.",
+        "source_url": "https://en.wikipedia.org/wiki/Chapada_Diamantina",
+        "source_quote": "the Chapada Diamantina … formerly mined for diamonds … now a major ecotourism destination",
+        "voice": "Diamanty zmizely. Turisté přišli. Příroda trvá.",
+        "image_prompt": "Fotorealistický snímek jeskyně Chapada Diamantina s průzračným podzemním jezerem, modré světlo pronikající shora, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Caatinga: suchá krajina severovýchodní Brazílie",
+        "fact": "Chapada Diamantina leží v centru brazilské caatingy — semiaridní biom s trnitou vegetací jedinečnou na světě. Caatinga je jedním z nejvíce ohrožených brazilských ekosystémů a přitom nejméně chráněným.",
+        "source_url": "https://en.wikipedia.org/wiki/Caatinga",
+        "source_quote": "Caatinga … unique dryland ecosystem … one of the most threatened and least protected in Brazil",
+        "voice": "Zapomenuté ekosystémy jsou ohroženy jako první.",
+        "image_prompt": "Fotorealistický snímek caatingy v Bahii — trnité keře a kaktusové lesy za sucha, žluté světlo, dramatická krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-lide-pelé",
+    "country": "Brazílie",
+    "section": "Lidé",
+    "topic": "Pelé",
+    "headline": "Jediný hráč, který třikrát vyhrál mistrovství světa",
+    "fact": "Pelé — Edson Arantes do Nascimento — je brazilský fotbalista, který třikrát vyhrál mistrovství světa a je považován za jednoho z největších fotbalistů v historii.",
+    "source_url": "https://en.wikipedia.org/wiki/Pel%C3%A9",
+    "source_quote": "Pelé … the only player to have won the FIFA World Cup three times",
+    "voice": "Tři tituly MS. Jedno jméno. Pelé.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Brazílie fotbalového stadionu Maracanã ve slavnostním osvětlení — symbol brazilského fotbalu, přirozené světlo, 16:9",
+    "ll": [
+      -46.6333,
+      -23.5505
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Santos a cesta z chudoby",
+        "fact": "Pelé vyrůstal v chudobě v Três Corações a Baurudu; fotbalový talent byl jediný výtah. Připojil se ke klubu Santos ve čtrnácti a ve Svazovém MS debutoval jako sedmnáctiletý — nejmladší finalista v historii turnaje.",
+        "source_url": "https://en.wikipedia.org/wiki/Pel%C3%A9",
+        "source_quote": "Pelé … joined Santos … at the age of 15 … youngest World Cup winner",
+        "voice": "Cesta z favely na zlatý pohár. Tak velká byla vzdálenost.",
+        "image_prompt": "Fotorealistický snímek favely ve Três Corações nebo Santos v šedesátých letech, historická atmosféra chudého brazilského města, 16:9"
+      },
+      "kartograf": {
+        "headline": "Brazilský fotbal jako průmysl exportu talentů",
+        "fact": "Brazilský fotbalový průmysl produkuje talenty, které následně kupují evropské kluby. Tento odliv talentu přináší peníze brazilskému fotbalu, ale oslabuje národní ligu. Je to příklad toho, jak globalizace formuje i sportovní ekonomiku.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_Brazil",
+        "source_quote": "Brazil … exports more football players to foreign leagues than any other country",
+        "voice": "Brazílie vychovává talent. Evropa ho platí. Kdo profituje víc?",
+        "image_prompt": "Fotorealistický snímek brazilské fotbalové akademie — mladí hráči trénují na zeleném hřišti, tréninkové prostředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-lide-oscar",
+    "country": "Brazílie",
+    "section": "Lidé",
+    "topic": "Oscar Niemeyer",
+    "headline": "Architekt, který navrhl celé hlavní město",
+    "fact": "Oscar Niemeyer byl brazilský architekt, jehož futuristické bílé betonové stavby definovaly modernistickou architekturu; navrhl hlavní budovy Brasílie — federálního hlavního města, postaveného od nuly v padesátých a šedesátých letech.",
+    "source_url": "https://en.wikipedia.org/wiki/Oscar_Niemeyer",
+    "source_quote": "Oscar Niemeyer … designed many of the public buildings of Brasília … a UNESCO World Heritage Site",
+    "voice": "Navrhl paláce pro parlament, prezidenta i vrchní soud — ve stejnou dobu, na stejné místo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Kongresového paláce v Brasílii od Niemeyera — dvě věže a misky na rovné plošině, dramatická moderní architektura, přirozené světlo, 16:9",
+    "ll": [
+      -47.9292,
+      -15.7801
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Brasília: plánované město z ničeho",
+        "fact": "Brasília byla vybudována za pouhé čtyři roky (devatenáct pět šest až šedesát) na neobyveném středu Brazílie s cílem přesunout centrum gravitu od pobřeží do vnitrozemí. Byl to jeden z největších urbanistických projektů dvacátého století.",
+        "source_url": "https://en.wikipedia.org/wiki/Bras%C3%ADlia",
+        "source_quote": "Brasília … built from scratch … in the interior of Brazil … constructed in just over four years",
+        "voice": "Celé hlavní město za čtyři roky. Politická vůle a architektonická vize.",
+        "image_prompt": "Fotorealistický letecký snímek Brasílie v tvaru letadla — plánovaná urbanistická osnova viditelná z výšky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přesun hlavního města jako geopolitický akt",
+        "fact": "Přesun hlavního města z Ria do Brasílie byl záměrný politický krok — Kubitschek chtěl ekonomicky integrovat brazilský interiér a symbolicky přesunout gravitaci od koloniálního pobřeží. Plánované přesuny hlavních měst jsou vždy geopolitická prohlášení.",
+        "source_url": "https://en.wikipedia.org/wiki/Bras%C3%ADlia",
+        "source_quote": "Brasília was built to shift Brazil's focus from the coast to the interior",
+        "voice": "Nové hlavní město říká: náš střed není na pobřeží. Je uvnitř.",
+        "image_prompt": "Fotorealistický snímek prezidentského paláce Alvorada v Brasílii, elegantní modernistická stavba u jezera, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-kultura-candomble",
+    "country": "Brazílie",
+    "section": "Kultura & tradice",
+    "topic": "Candomblé a afrobrazilská spiritualita",
+    "headline": "Africkí bohové pod katolickými jmény",
+    "fact": "Candomblé je afrobrazilské náboženství mísící tradice jorubského náboženství s katolickými svatými; vzniklo v Bahii a dnes je živou spirituální tradicí milionů Brazilců.",
+    "source_url": "https://en.wikipedia.org/wiki/Candombl%C3%A9",
+    "source_quote": "Candomblé … an Afro-Brazilian religion … developed by enslaved Africans … combining African religion with Catholicism",
+    "voice": "Šango se skryl za sv. Jeronýma. Orixás přežili jako svatí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek candomblé rituálu v Salvadoru de Bahia — bílé oblečení, rituální tanec a bubnování, teplé světlo, 16:9",
+    "ll": [
+      -38.5016,
+      -12.9714
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Orixás: polyteismus pod katolickým pláštěm",
+        "fact": "V candomblé jsou uctíváni orixás — africká božstva, každé s vlastním rytmem, barvou a energií. Při synkretismu byl každý orixá spárován s katolickým světcem, takže vnějšímu pohledu vypadal akt uctívání jako katolická modlitba.",
+        "source_url": "https://en.wikipedia.org/wiki/Candombl%C3%A9",
+        "source_quote": "orixás … each associated with a Catholic saint … a form of religious camouflage",
+        "voice": "Zbožnost jako ochranná barva. Otroků zůstala jejich víra.",
+        "image_prompt": "Fotorealistický snímek candomblé oltáře s orixá figurami, svíčkami a rituálními předměty v Bahii, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Salvador: hlavní město afrobrazilské kultury",
+        "fact": "Salvador da Bahia byl prvním brazilským hlavním městem a centrem atlantického otrokářského obchodu. Dnes je považován za centrum afrobrazilské kultury a identity — víc než osmdesát procent obyvatel se hlásí k africkému původu.",
+        "source_url": "https://en.wikipedia.org/wiki/Salvador%2C_Bahia",
+        "source_quote": "Salvador … considered the African capital of Brazil … home to the largest Afro-Brazilian population",
+        "voice": "Tam, kde přišli otroci, vzniklo nové kulturní centrum.",
+        "image_prompt": "Fotorealistický snímek koloniálního Pelourinha v Salvadoru — barevné stavby, kostel a afrobrazilská kultura v ulicích, zlaté světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-kultura-capoeira",
+    "country": "Brazílie",
+    "section": "Kultura & tradice",
+    "topic": "Capoeira",
+    "headline": "Bojové umění skryté v tanci",
+    "fact": "Capoeira je brazilské bojové umění vyvinuté africkými otroky; kombinuje prvky tance, akrobacie a hudby — byl záměrně maskován jako tanec, aby unikl zákazu bojových technik.",
+    "source_url": "https://en.wikipedia.org/wiki/Capoeira",
+    "source_quote": "Capoeira … developed by enslaved Africans in Brazil … disguised as a dance to avoid suppression",
+    "voice": "Bojové umění, které vypadá jako tanec. Chytrá kamufláž pro přežití.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek capoeira jogo — dva hráči v ginga pohybu a akrobatickém výměně, venkovní prostředí v Bahii, přirozené světlo, 16:9",
+    "ll": [
+      -38.5016,
+      -12.9714
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Berimbau: nástroj, který řídí hru",
+        "fact": "Berimbau je jednostrunný smyčcový nástroj — charakteristický zvuk capoeira. Rytmus berimbau určuje tempo a charakter hry; hráči reagují na melodii, ne na slova. Je to jazyk hudby jako instrukce k pohybu.",
+        "source_url": "https://en.wikipedia.org/wiki/Berimbau",
+        "source_quote": "the berimbau … a musical bow … central to capoeira … dictates the rhythm of the game",
+        "voice": "Nástroj, který mluví. A tělo odpovídá.",
+        "image_prompt": "Fotorealistický snímek hráče na berimbau na ulici v Salvadoru de Bahia, charakteristický nástroj, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "UNESCO uznání jako globalizace živého dědictví",
+        "fact": "UNESCO zapsalo capoeira na seznam nehmotného kulturního dědictví v roce dva tisíce čtrnáct. Dnes se capoeira trénuje ve více než sto šedesáti zemích světa — je to příklad afrobrazilské kultury, která se stala globálním fenoménem.",
+        "source_url": "https://en.wikipedia.org/wiki/Capoeira",
+        "source_quote": "Capoeira … inscribed on UNESCO's Intangible Cultural Heritage List in 2014",
+        "voice": "Z otrokářské kamufláže na seznam UNESCO. Dlouhá cesta.",
+        "image_prompt": "Fotorealistický snímek capoeira skupiny trénující na pláži nebo ve studiu v různých zemích světa, globální komunita, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-umeni-samba",
+    "country": "Brazílie",
+    "section": "Umění",
+    "topic": "Samba",
+    "headline": "Rytmus, který vznikl v bahijských domech Rio de Janeira",
+    "fact": "Samba vznikla v prvních desetiletích dvacátého století v Rio de Janeiru v komunitách přistěhovalců z Bahie; mísí africké rytmy s brazilskými a americkými hudebními vlivy a stala se symbolem brazilské identity.",
+    "source_url": "https://en.wikipedia.org/wiki/Samba",
+    "source_quote": "Samba … originated in Rio de Janeiro in the early 20th century … rooted in African musical traditions",
+    "voice": "Z podzemí chudinských čtvrtí na světová pódia. Samba to dokázala.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek samba tance na ulici v Rio de Janeiru — tanečnice v barevném kostýmu v pohybu, teplé noční světlo, 16:9",
+    "ll": [
+      -43.1729,
+      -22.9068
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Samba de roda: původní forma z Bahie",
+        "fact": "Samba de roda z Bahie je UNESCO uznaná původní forma samby — tanečníci tvoří kruh, jeden vstoupí do středu a tančí; hudba je intenzivnější a africké vlivy zřetelnější než v pozdější carioca sambě. Je to kořen celého stromu.",
+        "source_url": "https://en.wikipedia.org/wiki/Samba_de_roda",
+        "source_quote": "Samba de roda … from Bahia … inscribed on UNESCO's Intangible Cultural Heritage list",
+        "voice": "Základ samby je v kruhu. Vše ostatní z toho vychází.",
+        "image_prompt": "Fotorealistický snímek samba de roda v Bahii — tradiční kruh tanečníků a hudebníků, venkovní prostředí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Samba jako nástroj národní identity v éře Vargase",
+        "fact": "Getúlio Vargas ve třicátých letech vědomě propagoval sambu jako brazilský národní symbol — přecházel se tím od regionálních identit k jednotné brazilskosti. Stát tak použil lidovou kulturu jako politický nástroj integrace.",
+        "source_url": "https://en.wikipedia.org/wiki/Samba",
+        "source_quote": "under Vargas … samba was promoted as a symbol of Brazilian national identity",
+        "voice": "Jestli chceš národ, vezmi jeho hudbu a prohlásí ji za národní.",
+        "image_prompt": "Fotorealistický snímek historického Ria de Janeira z třicátých let — ulice, lidé a karnevalová atmosféra, historická vizualizace, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-sport-volejbal",
+    "country": "Brazílie",
+    "section": "Sport",
+    "topic": "Volejbal a beach volejbal",
+    "headline": "Zlaté medaile na písku i v hale",
+    "fact": "Brazílie je jednou z největších volejbalových velmocí světa; brazilská plážová reprezentace opakovaně vyhrává olympijská zlatá, a halová mužská reprezentace je rekordmanem olympijských zlatých ve volejbale.",
+    "source_url": "https://en.wikipedia.org/wiki/Brazil_men%27s_national_volleyball_team",
+    "source_quote": "Brazil men's national volleyball team … one of the most successful teams in international volleyball",
+    "voice": "Na pláži Copacabany se rodí olympijští šampioni. Doslova.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek beach volejbalu na Copacabaně v Riu de Janeiru — dva hráči u sítě, Sugarloaf v pozadí, přirozené světlo, 16:9",
+    "ll": [
+      -43.1729,
+      -22.9068
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Copacabana jako přirozená akademie",
+        "fact": "Plážový volejbal na Copacabaně a Ipanemě je dostupný každému — pláž je veřejná a hřiště obsazená od rána do noci. Tento neformální ekosystém tréninku je základem brazilské dominance v beach volejbalu.",
+        "source_url": "https://en.wikipedia.org/wiki/Beach_volleyball_in_Brazil",
+        "source_quote": "Brazilian beach volleyball … nurtured on the beaches of Rio de Janeiro",
+        "voice": "Nejlepší akademie je zadarmo a leží u moře.",
+        "image_prompt": "Fotorealistický snímek hráčů beach volejbalu na Copacabaně za slunného dne, barevné týmy, rušná pláž, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport jako prostor mimo sociální nerovnost",
+        "fact": "Plážový volejbal je jeden z mála brasklých sportů, kde chudoba a bohatství soutěží na stejném písčitém hřišti. Mísení tříd na pláži je výjimečné v latinskoamerickém kontextu, kde sport většinou kopíruje sociální hierarchii.",
+        "source_url": "https://en.wikipedia.org/wiki/Beach_volleyball",
+        "source_quote": "beach volleyball … relatively accessible sport … played on public beaches",
+        "voice": "Na písku jsou si všichni rovni. Aspoň ty dvě hodiny hry.",
+        "image_prompt": "Fotorealistický letecký snímek Copacabany a Ipanemy — kilometrické pláže s hřišti a lidmi, Rio de Janeiro v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-sport-formula",
+    "country": "Brazílie",
+    "section": "Sport",
+    "topic": "Brazilský motorsport — Senna",
+    "headline": "Ayrton Senna: závodník, který se stal bohem",
+    "fact": "Ayrton Senna byl třikrát mistr světa Formule 1 a je považován za jednoho z největších závodních pilotů v historii; jeho tragická smrt v roce devadesát čtyři zasáhla celou Brazílii a sport.",
+    "source_url": "https://en.wikipedia.org/wiki/Ayrton_Senna",
+    "source_quote": "Ayrton Senna … three-time Formula One World Champion … widely regarded as one of the greatest drivers",
+    "voice": "Senna byl rychlý. Ale byl taky člověk, který myslel víc než na závodění.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek závodního okruhu Interlagos v São Paulu — start Formule 1 Grand Prix v Brazílii, dramatické světlo, bez rozpoznatelných tváří, 16:9",
+    "ll": [
+      -46.6975,
+      -23.7036
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Senna a Brazílie: národní tragédie",
+        "fact": "Sennova smrt při závodě na Imole v roce devadesát čtyři způsobila v Brazílii třídenní státní smutek. Byl symbolem národní hrdosti v době politické a ekonomické nejistoty — jeho závodění bylo potvrzením brazilské síly.",
+        "source_url": "https://en.wikipedia.org/wiki/Ayrton_Senna",
+        "source_quote": "Senna's death … led to three days of national mourning in Brazil",
+        "voice": "Závodník se stal národním hrdinou. A hrdina je nesmrtelný.",
+        "image_prompt": "Fotorealistický snímek muzea Senna v São Paulu — závodní helmy, trofeje a fotografie, teplé muzejní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "São Paulo: megacity a průmysl motorsportu",
+        "fact": "São Paulo hostí každoroční Formule 1 Grand Prix na Interlagosu — závod je strategicky umístěn na konci sezony, kdy rozhoduje o titulu. Brazilský automobilový průmysl a motorsport jsou součástí ekonomiky největšího latinskoamerického města.",
+        "source_url": "https://en.wikipedia.org/wiki/Brazilian_Grand_Prix",
+        "source_quote": "the Brazilian Grand Prix … held at Interlagos … São Paulo … typically the penultimate or final race of the season",
+        "voice": "Závod na konci světa. A rozhoduje o titulu.",
+        "image_prompt": "Fotorealistický letecký snímek okruhu Interlagos uprostřed São Paula — závodní dráha obklopená obrovskou zástavbou města, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-jazyk-tupi",
+    "country": "Brazílie",
+    "section": "Jazyk & slova",
+    "topic": "Tupi v brazilské portugalštině",
+    "headline": "Jaguár, piraňa a tapioka: domorodá slova v každé řeči",
+    "fact": "Z jazyka Tupi pochází desítky slov běžně používaných v brazilské a světové slovní zásobě: jaguar, piranha, tapioca, manioc, capybara, toucan, acaí — jazyk Tupinambá přežívá v názvech zvířat a potravin.",
+    "source_url": "https://en.wikipedia.org/wiki/Tupi_language",
+    "source_quote": "Tupi … contributed significantly to Brazilian Portuguese … and to other world languages through words like jaguar, piranha, and tapioca",
+    "voice": "Řekněte 'jaguar' nebo 'tapioka' kdekoliv na světě. Mluví tupi.",
+    "visual_type": "typographic",
+    "ll": [
+      -47.9292,
+      -15.7801
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Língua Geral: tupi jako koloniální lingua franca",
+        "fact": "Língua Geral (Obecný jazyk) byla zjednodušená forma tupi, která v sedmnáctém a osmnáctém století sloužila jako hlavní dorozumívací jazyk v brazilské kolonii — více než španělština nebo portugaltština. Teprve markézy Pombal zakázal jeho používání.",
+        "source_url": "https://en.wikipedia.org/wiki/Lingua_Geral",
+        "source_quote": "Língua Geral … was more widely spoken than Portuguese in colonial Brazil … banned in 1775",
+        "voice": "Domorodý jazyk byl lingua franca kolonie. Pak ho zakázali.",
+        "image_prompt": "Fotorealistický snímek brazilského amazońského domorodého rituálu, lidé v tradičních ozdůbách, přirozené světlo v džungli, 16:9"
+      },
+      "kartograf": {
+        "headline": "Místní názvy jako historická mapa",
+        "fact": "Brazilská toponymie je z velké části tupijská — Paraná (velká voda), Guanabara (zátoka jako moře), Itajaí (řeka kamenů). Čtení mapy Brazílie je čtení v domorodém jazyce. Kolonizátoři změnili vládu, ne zeměpis.",
+        "source_url": "https://en.wikipedia.org/wiki/Tupi_language",
+        "source_quote": "Many Brazilian place names derive from Tupi … reflecting pre-colonial geography",
+        "voice": "Mapu Brazílie pojmenovali lidé, které kolonizátoři přehlíží.",
+        "image_prompt": "Fotorealistický snímek historické mapy Brazílie s tupijskými místními názvy vyznačenými, muzejní prostředí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-jazyk-carioca",
+    "country": "Brazílie",
+    "section": "Jazyk & slova",
+    "topic": "Carioca a regionální dialekty",
+    "headline": "Brazilci se navzájem nerozumí, ale mluví stejným jazykem",
+    "fact": "Brazilská portuguesa se výrazně liší regionálně: carioca z Ria, paulistano ze São Paula, nordestino ze severovýchodu a gaúcho z jihu — každý dialekt má jinou intonaci, slovní zásobu i výslovnost.",
+    "source_url": "https://en.wikipedia.org/wiki/Brazilian_Portuguese",
+    "source_quote": "Brazilian Portuguese … significant regional variation … carioca, paulistano, and nordestino dialects",
+    "voice": "Brazilec z Recife a Brazilec z Porta Alegre. Jeden jazyk, dvě světy.",
+    "visual_type": "typographic",
+    "ll": [
+      -47.9292,
+      -15.7801
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Carioca: přízvuk, co dělá ze slov hudbu",
+        "fact": "Carioca — dialekt z Ria de Janeira — je melodický a plný francouzsko-latinských vlivů; Brazilci z jiných regionů ho imitují a uznávají jako prestižní nebo klidně vysmívají jako příliš uvolněný. Dialekt odhalí, odkud jsi — a co o sobě říkáš.",
+        "source_url": "https://en.wikipedia.org/wiki/Carioca_dialect",
+        "source_quote": "the Carioca dialect … known for its distinctive intonation … sung quality",
+        "voice": "Přízvuk je vizitka. Nemusíš říkat odkud jsi.",
+        "image_prompt": "Fotorealistický snímek Rio de Janeira kavárny s carioca hosty, lehká konverzace, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk jako mapa sociálních a geografických hranic",
+        "fact": "Regionální dialekty v Brazílii korelují s historií osídlení, přistěhovaleckými vlnami a ekonomickým vývojem. Nordestino dialekt nese znaky staré portugaltštiny a silný africký vliv; paulistano dialekt je pragmatičtější a rychlejší — odraz tempa São Paula.",
+        "source_url": "https://en.wikipedia.org/wiki/Brazilian_Portuguese",
+        "source_quote": "regional dialects … reflect historical settlement patterns and immigration",
+        "voice": "Mluv a já ti řeknu, kde vyrůstáš.",
+        "image_prompt": "Fotorealistický snímek São Paulo rušné ulice s neonovou reklamou a lidmi v pohybu, dynamické urbánní prostředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-jidlo-acai",
+    "country": "Brazílie",
+    "section": "Jídlo",
+    "topic": "Açaí",
+    "headline": "Amazónský plod, který dobyl světové fitness bary",
+    "fact": "Açaí je plod palmy z Amazonie; byl staletí základní potravinou domorodých komunit a v posledních desetiletích se stal globálním superfoods exportovaným do celého světa.",
+    "source_url": "https://en.wikipedia.org/wiki/A%C3%A7a%C3%AD_palm",
+    "source_quote": "Açaí … a dietary staple among indigenous peoples of the Amazon … now a global health food",
+    "voice": "Domorodci ho jedli po staletí jako základní jídlo. Západ ho dnes prodává za šest dolarů misku.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek açaí bowl — fialová zmrzlina s banánem, granolem a exotickým ovocem v bílé misce, přirozené světlo, 16:9",
+    "ll": [
+      -48.5,
+      -1.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Açaí na severu Brazílie: hlavní jídlo, ne dezert",
+        "fact": "V brazilském Pará a Maranhão se açaí jí tradičně jako slané hlavní jídlo — s rybou nebo krevetami, nikoliv se sladkostmi. Sladký açaí bowl, který zná zbytek světa, je inovace z jihu Brazílie a USA.",
+        "source_url": "https://en.wikipedia.org/wiki/A%C3%A7a%C3%AD_palm",
+        "source_quote": "in the Amazon region … açaí is consumed as a staple food … traditionally eaten with fish",
+        "voice": "Jídlo cestuje a mění se. Na severu je açaí obídek. Na jihu je dezert.",
+        "image_prompt": "Fotorealistický snímek rybáře nebo amazońské komunity jedoucí açaí s rybou u řeky, tradiční prostředí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Superfood ekonomika: kdo profituje?",
+        "fact": "Globální zájem o açaí způsobil prudký nárůst cen — což může být výhodné pro místní pěstitele, ale také zvyšuje riziko průmyslového nahrazení tradičního sběru z volné přírody. Globalizace superfoods mění ekologii i ekonomiku Amazonie.",
+        "source_url": "https://en.wikipedia.org/wiki/A%C3%A7a%C3%AD_palm",
+        "source_quote": "açaí … its global popularity has significantly impacted the Amazonian economy",
+        "voice": "Západ chce superfood. Kdo platí cenu za to v Amazonii?",
+        "image_prompt": "Fotorealistický snímek açaí palmy sklizové v amazońském pralese, pracovník vylézající na palmu, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-jidlo-churrasco",
+    "country": "Brazílie",
+    "section": "Jídlo",
+    "topic": "Churrasco",
+    "headline": "Brazilské grilování jako slavnost masa",
+    "fact": "Churrasco je brazilský způsob grilování masa na velkých šampaňských šídlech nad dřevěným uhlím; churrascaria je restaurace, kde číšníci chodí od stolu ke stolu s šampaňskými šídly a porcují maso přímo u stolu.",
+    "source_url": "https://en.wikipedia.org/wiki/Churrasco",
+    "source_quote": "Churrasco … Brazilian barbecue … typically served at a churrascaria … where waiters bring skewers of meat tableside",
+    "voice": "Maso, oheň a meč. To je churrasco v kostce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek brazilského churrascaria — číšník s šampaňským šídlem plného grilovaného masa porcuje u stolu, teplé restaurační světlo, 16:9",
+    "ll": [
+      -47.9292,
+      -15.7801
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Gaúcho a jižní tradice rodízio",
+        "fact": "Churrasco pochází z gaúcho kultury jižní Brazílie (Rio Grande do Sul) — analogie k argentinské gauchovské tradici asado. Rodízio (systém nekonečného masa za paušál) byl pak komercionalizovaný a rozšířen po celé Brazílii a do světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Churrasco",
+        "source_quote": "Churrasco … originates from the gaucho culture of southern Brazil",
+        "voice": "Gaucho na jihu Brazílie, gaucho na jihu Argentiny. Jeden prales, dvě kultury.",
+        "image_prompt": "Fotorealistický snímek gaúcho u ohně s churrascem na šampaňském šídlu, jihobraziléjská krajina v pozadí, zlaté světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Maso, sója a amazońské odlesňování",
+        "fact": "Brazílie je největším světovým exportérem hovězího masa a druhým největším producentem sóji — oboje živí odlesňování Amazonie a cerrada. Konzumace masa a globální poptávka jsou propojeny s ekologickou krizí v přímé linii.",
+        "source_url": "https://en.wikipedia.org/wiki/Deforestation_of_the_Amazon_rainforest",
+        "source_quote": "cattle ranching … the leading cause of deforestation in the Amazon",
+        "voice": "Hamburger v Londýně možná stojí les v Brazílii. Přímá linie.",
+        "image_prompt": "Fotorealistický snímek brazilského ranče s dobytkem a odlesněnou krajinou v pozadí, kontrast pastvin a zbytků lesa, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-historie-republica",
+    "country": "Brazílie",
+    "section": "Historie",
+    "topic": "Proclamação da República",
+    "headline": "Proklamace republiky: armáda přijela a monarchie skončila",
+    "fact": "Brazilská monarchie padla devátého října osmnáct osmdesát devět bez krveprolití — armáda přijela k paláci a Dom Pedro II. byl donucen emigrovat; Brazílie se stala první jižnikoamerickou republikou.",
+    "source_url": "https://en.wikipedia.org/wiki/Proclamation_of_the_Republic_(Brazil)",
+    "source_quote": "the Proclamation of the Republic of Brazil … on 15 November 1889 … a bloodless coup",
+    "voice": "Monarchie padla za dopoledne. Císař sbalil kufry. Republika nastoupila.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Muzea Republiky v Rio de Janeiru — historická vila Catete, former Imperial Palace, přirozené světlo, 16:9",
+    "ll": [
+      -43.1729,
+      -22.9068
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dom Pedro II.: císař, který miloval vědu více než trůn",
+        "fact": "Dom Pedro II. byl neobvyklý panovník — financoval vědu, podporoval vzdělání a koresponodval s Darwinem, Pasteurem i Longfellowem. Říkalo se, že by byl radši vědcem než císařem. Po pádu monarchie řekl: 'Jdu s lítostí jako emigrant.'",
+        "source_url": "https://en.wikipedia.org/wiki/Pedro_II_of_Brazil",
+        "source_quote": "Dom Pedro II … known for his intellectual curiosity … corresponded with scientists and intellectuals",
+        "voice": "Nejinteligentnější brazilský císař byl vyhnán armádou, ne lidem.",
+        "image_prompt": "Fotorealistický snímek Muzea Impéria v Petrópolis — císařský palác v horách Ria, historická architektura, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Největší a poslední americká monarchie",
+        "fact": "Brazílie byla jedinou monarchií v Americe po vyhlášení nezávislosti USA a španělskoamerických revolucích. Zachovala monarchii jako způsob, jak udržet celistvost obrovského území — ostatní španělskoamerická území se rozpadla do mnoha států.",
+        "source_url": "https://en.wikipedia.org/wiki/Empire_of_Brazil",
+        "source_quote": "the Empire of Brazil … the only stable monarchy in the Americas … maintained territorial integrity",
+        "voice": "Monarchie udržela jeden stát tam, kde jiné státy se rozpadly do šesti.",
+        "image_prompt": "Fotorealistický snímek historické mapy Brazilského impéria v muzeu — obrovské území, barokní zobrazení, muzejní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-historie-trabalhismo",
+    "country": "Brazílie",
+    "section": "Historie",
+    "topic": "Vargas a brazilský populismus",
+    "headline": "Getúlio Vargas: diktátor, demokrat a mučedník",
+    "fact": "Getúlio Vargas byl brazilský prezident a diktátor, který vládl ve třicátých a čtyřicátých létech; kombinoval autoritářství s populismem a budoval industriální brazilský stát; v roce padesát čtyři spáchal sebevraždu v prezidentském paláci.",
+    "source_url": "https://en.wikipedia.org/wiki/Get%C3%BAlio_Vargas",
+    "source_quote": "Getúlio Vargas … a complex political figure … authoritarian and populist … committed suicide in 1954",
+    "voice": "Diktátor, demokrat a mučedník zároveň. Brazilská politická záhada.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek prezidentského paláce Catete v Rio de Janeiru, historická vila, symbol Vargasovy éry, přirozené světlo, 16:9",
+    "ll": [
+      -43.1729,
+      -22.9068
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Estado Novo: brazilský korporativismus",
+        "fact": "Vargasovo Estado Novo (devatenáct třicet sedm–čtyřicet pět) bylo autoritářský stát inspirovaný fašistickými vzory z Evropy; zároveň industrializoval Brazílii, zakázal dětskou práci a zavedl pracovní práva. Autoritářství a reforma ruku v ruce.",
+        "source_url": "https://en.wikipedia.org/wiki/Estado_Novo_(Brazil)",
+        "source_quote": "Estado Novo … an authoritarian state … implemented significant labour reforms … industrialised Brazil",
+        "voice": "Diktátor, který zavedl osmihodinový pracovní den. Složité.",
+        "image_prompt": "Fotorealistický snímek historické brazilské továrny ze čtyřicátých let, dělníci u strojů, historická atmosféra industrializace, 16:9"
+      },
+      "kartograf": {
+        "headline": "Populismus v Latinské Americe jako geopolitický vzorec",
+        "fact": "Vargas, Perón a Cárdenas v Mexiku jsou součástí latinskoamerické vlny populismu třicátých a čtyřicátých let — reakce na hospodářskou krizi a slabost liberální demokracie. Tento vzorec se v různých formách opakuje v regionu dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/Latin_American_populism",
+        "source_quote": "Latin American populism … a recurring political phenomenon … Vargas, Perón, and Cárdenas as key examples",
+        "voice": "Populismus v Latinské Americe není anomalie. Je to vzorec.",
+        "image_prompt": "Fotorealistický snímek historického brazilského plakátu z Vargasovy éry nebo muzejního exponátu, historické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "br-umeni-oscarniemeyer2",
+    "country": "Brazílie",
+    "section": "Umění",
+    "topic": "Tropicália a brazilská hudební avantgarda",
+    "headline": "Kytara, banán a tropická avantgarda jako protest",
+    "fact": "Tropicália bylo brazilské kulturní hnutí z roku šedesát osm mísící rock, sambu, avantgardu a domorodé prvky; Caetano Veloso a Gilberto Gil ho vedli jako subverzivní odpor vůči vojenské diktatuře.",
+    "source_url": "https://en.wikipedia.org/wiki/Tropic%C3%A1lia",
+    "source_quote": "Tropicália … a Brazilian cultural movement … combined rock, samba, and avant-garde art … a form of cultural resistance",
+    "voice": "Tropicália řekla diktátuře ne. Kytarou a banánem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek brazilského rockového festivalu z konce šedesátých let — živá kultura, psychedelické plakáty, historická atmosféra, 16:9",
+    "ll": [
+      -38.5016,
+      -12.9714
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Caetano Veloso: exil a návrat",
+        "fact": "Caetano Veloso byl po vojenském převratu uvězněn a poté poslán do exilu v Londýně. Z Anglie pozoroval Beatles a britský rock a vrátil se s novými vlivy, které transformoval do brazilské hudby.",
+        "source_url": "https://en.wikipedia.org/wiki/Caetano_Veloso",
+        "source_quote": "Caetano Veloso … imprisoned … exiled to London … influenced by British rock",
+        "voice": "Exil jako nedobrovolná škola. Pak se vrátíš jiný.",
+        "image_prompt": "Fotorealistický snímek brazilského hudebního koncertu ve venkovním prostoru, barevné osvětlení, nadšení diváci, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kultura jako subverze v době diktatury",
+        "fact": "Brazilská vojenská diktatura (šedesát čtyři–osmdesát pět) censurovala hudbu, filmy a literaturu. Tropicalisté používali surrealistické a absurdní prvky, které cenzura hůře identifikovala. Umění jako šifrovaný protest.",
+        "source_url": "https://en.wikipedia.org/wiki/Brazilian_military_dictatorship",
+        "source_quote": "the military dictatorship … censored music, film and literature … artists used coded language to resist",
+        "voice": "Kdo nesmí křičet, zpívá. Kdo nesmí zpívat, používá metafory.",
+        "image_prompt": "Fotorealistický snímek historického brazilského divadla nebo nahrávacího studia se šedesátových let, historická atmosféra, 16:9"
+      }
+    }
+  }
+]

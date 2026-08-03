@@ -1,0 +1,901 @@
+[
+  {
+    "id": "se-mista-gotland",
+    "country": "Švédsko",
+    "section": "Místa",
+    "topic": "Hanzovní město Visby",
+    "headline": "Středověká perla na ostrově Gotland",
+    "fact": "Visby na ostrově Gotland je jedním z nejlépe zachovaných hanzovních měst v Evropě a jeho mohutná středověká hradba s původními věžemi stále obklopuje centrum města.",
+    "source_url": "https://visitsweden.com/what-to-do/sights-landmarks/swedens-unesco-world-heritage-sites/",
+    "source_quote": "Gotland, ... and its main town, Visby, is a must-visit for history lovers. Dating back to the 12th century, Visby is one of the best-preserved Hanseatic towns in Europe. Its medieval ring wall, complete with original towers, still encircles the city centre, and atmospheric church ruins dot the townscape.",
+    "voice": "Stačí zavřít oči a skoro slyšíš obchodníky z celé Evropy smlouvat o kožešiny.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký pohled na středověké město Visby na ostrově Gotland, zachovalá kamenná hradba s věžemi, červené střechy domů, modré moře v pozadí, slunečné odpoledne, 16:9",
+    "ll": [
+      18.295,
+      57.6415
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Procházka časem v hanzovním městě",
+        "fact": "Visby je oblíbeným letním cílem Švédů, kteří sem jezdí za historickou atmosférou, úzkými uličkami a zříceninami kostelů, které připomínají bohatou minulost města.",
+        "source_url": "https://visitsweden.com/what-to-do/sights-landmarks/swedens-unesco-world-heritage-sites/",
+        "source_quote": "Gotland, just north of Öland, is a favourite summer island for many Swedes – and its main town, Visby, is a must-visit for history lovers.",
+        "voice": "Gotland je pro Švédy tím, čím jsou pro nás jižní Čechy – srdcová záležitost.",
+        "image_prompt": "Fotorealistický snímek dlážděné uličky ve Visby s výhledem na moře a zříceninu kostela, letní den, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mocenské centrum na křižovatce obchodních cest",
+        "fact": "Poloha Visby na ostrově Gotland z něj v době hanzovní ligy činilo klíčový bod obchodních cest v Baltském moři, což dokládá bohatství a význam města dodnes.",
+        "source_url": "https://visitsweden.com/what-to-do/sights-landmarks/swedens-unesco-world-heritage-sites/",
+        "voice": "Kdo vládl Gotlandu, měl klíč od obchodu na Baltu.",
+        "image_prompt": "Fotorealistický letecký snímek celého ostrova Gotland s vyznačením Visby, modré moře a zelená krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-mista-laponia",
+    "country": "Švédsko",
+    "section": "Místa",
+    "topic": "Světové dědictví Laponia",
+    "headline": "Divočina Sámů na severu Švédska",
+    "fact": "Laponia je obrovská oblast na severu Švédska, která je zapsána na seznam světového dědictví UNESCO jak pro své přírodní hodnoty, tak pro kulturu Sámů, kteří zde provozují tradiční chov sobů.",
+    "source_url": "https://www.naturvardsverket.se/en/topics/protected-areas/different-types-of-nature-conservation/world-heritage/",
+    "source_quote": "Laponia has been designated as both cultural and natural heritage because of its geological, ecological and cultural values. The cultural heritage is particularly linked to reindeer herding and traces of former users.",
+    "voice": "Tady platí pravidla přírody, ne městské zácpy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický panoramatický záběr národního parku Sarek v Laponsku, drsné hory, rozlehlé zelené údolí, potok, zataženo, bez lidí, 16:9",
+    "ll": [
+      17.5,
+      67.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Poslední evropská divočina",
+        "fact": "Laponia zahrnuje čtyři národní parky, včetně Sareku a Padjelanty, a je domovem pro vzácné druhy, jako jsou sobi, rosomáci a orli skalní.",
+        "source_url": "https://www.naturvardsverket.se/en/topics/protected-areas/different-types-of-nature-conservation/world-heritage/",
+        "source_quote": "The World Heritage Area covers 9,400 km2 and is almost fully protected by law as national parks, nature reserves, Natura 2000 and Ramsar areas. Within the World Heritage Area there are four national parks: Muddus, Sarek, Stora Sjöfallet and Padjelanta.",
+        "voice": "Nejlepší mapa je tady stejně ta v hlavě starých Sámů.",
+        "image_prompt": "Fotorealistický snímek stáda sobů na pozadí horského masivu, Laponsko, podzimní krajina, zlaté barvy, 16:9"
+      },
+      "kartograf": {
+        "headline": "Unikátní soužití člověka a krajiny",
+        "fact": "Laponia je příkladem živé kulturní krajiny, kde tradiční chov sobů po staletí formoval zdejší ekosystémy, což je oceňováno jako mimořádná univerzální hodnota.",
+        "source_url": "https://www.naturvardsverket.se/en/topics/protected-areas/different-types-of-nature-conservation/world-heritage/",
+        "source_quote": "Natural heritage includes for example landscapes shaped by glacial activity and glacial streams, the huge mire complex of Sjávnja, primeval forest, and the Rapa Valley delta area.",
+        "voice": "Tady se historie nepíše, tady se žije už tisíce let.",
+        "image_prompt": "Fotorealistický letecký snímek rozlehlé severské krajiny s mnoha jezery a lesy, Laponsko, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-mista-stockholm",
+    "country": "Švédsko",
+    "section": "Místa",
+    "topic": "Stockholm – město na ostrovech",
+    "headline": "Benátky Severu",
+    "fact": "Švédské hlavní město Stockholm je rozprostřeno na čtrnácti ostrovech, které spojuje přes padesát mostů. Město je známé svou architekturou a polohou mezi sladkou a slanou vodou.",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "source_quote": "Stockholm, the capital city, is spread across 14 islands and has over 50 bridges!",
+    "voice": "Kdo má rád vodu a mosty, tomu Stockholm učaruje.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého města Gamla Stan ve Stockholmu, barevné domy, úzké uličky, zátoka s loděmi, slunečný den, 16:9",
+    "ll": [
+      18.0686,
+      59.3293
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Procházka královským městem",
+        "fact": "Stockholm, jehož historické jádro Gamla Stan pochází ze 13. století, je sídlem švédského krále a nachází se zde Královský palác. Město se pyšní také muzeem věnovaným slavné skupině ABBA.",
+        "source_url": "https://www.atlasobscura.com/places/abba-the-museum-stockholm",
+        "source_quote": "This museum in Stockholm is dedicated to the creation, rise, and legacy of Sweden's most popular band: ABBA.",
+        "voice": "ABBA muzeum je důkazem, že i popová hvězda může mít svůj chrám.",
+        "image_prompt": "Fotorealistický snímek Královského paláce ve Stockholmu s výhledem na přístav, modrá obloha, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město mezi jezerem a mořem",
+        "fact": "Poloha Stockholmu na styku sladkovodního jezera Mälaren a Baltského moře mu dala strategický význam pro obchod a dopravu již v dobách vikingů a z něj se vyvinulo moderní hlavní město.",
+        "source_url": "https://www.britannica.com/place/Sweden/The-Viking-Age",
+        "voice": "Kdo znal cestu přes tyhle ostrovy, ovládal celý vnitrozemní obchod.",
+        "image_prompt": "Fotorealistický letecký pohled na Stockholmské souostroví, tisíce malých ostrůvků, modrá voda, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-priroda-polarni-zare",
+    "country": "Švédsko",
+    "section": "Příroda",
+    "topic": "Polární záře",
+    "headline": "Taneční světla na severní obloze",
+    "fact": "Polární záře, neboli Aurora Borealis, je přírodní úkaz způsobený nabitými částicemi ze Slunce, které v zemské atmosféře vytvářejí nádherné zářivé barvy. Na severu Švédska ji lze vidět za jasných zimních nocí.",
+    "source_url": "https://kids.kiddle.co/Swedish",
+    "source_quote": "In the north, during winter, you can sometimes see the amazing Aurora Borealis, also known as the Northern Lights.",
+    "voice": "Nebe se rozzáří a na chvíli zapomeneš na zimu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zelené a fialové polární záře nad zasněženou krajinou v severním Švédsku, bez lidí, 16:9",
+    "ll": [
+      20,
+      68
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Když nebe začne hrát divadlo",
+        "fact": "V Laponsku je polární záře k vidění až dvě stě nocí v roce. Nejkrásnější je daleko od světel měst a za mrazivých, jasných nocí.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "source_quote": "In the north, during winter, you can sometimes see the amazing Aurora Borealis, also known as the Northern Lights.",
+        "voice": "Zkus to štěstí – polární záře je jako nepolapitelný poklad.",
+        "image_prompt": "Fotorealistický snímek polární záře odrážející se v zamrzlém jezeře v Laponsku, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Když slunce v noci tančí",
+        "fact": "Polární záře vzniká, když sluneční vítr naráží na magnetické pole Země. Tento úkaz je nejsilnější v polárních oblastech, včetně severu Švédska, v době maxim sluneční aktivity.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "source_quote": "In the north, during winter, you can sometimes see the amazing Aurora Borealis, also known as the Northern Lights.",
+        "voice": "Země si chrání svůj prostor tím nejkrásnějším způsobem.",
+        "image_prompt": "Fotorealistický snímek polární záře nad zasněženou borovicí, hvězdná obloha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-priroda-divočina",
+    "country": "Švédsko",
+    "section": "Příroda",
+    "topic": "Švédská divočina a losi",
+    "headline": "Království lesů a jezer",
+    "fact": "Švédsko je zemí kontrastů – od hustých lesů a více než 95 000 jezer až po hornatou divočinu. V této krajině žijí velcí savci, jako jsou losi, vlci a medvědi.",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "source_quote": "Sweden is the largest country in northern Europe, known for its stunning landscapes of forests and lakes.",
+    "voice": "Kdo tady žije, ví, že ticho lesa je to nejlepší rádio.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hustého švédského lesa s mechem a kapradím, prosvětlené sluncem, bez lidí, 16:9",
+    "ll": [
+      15,
+      62
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Setkání s králem lesa",
+        "fact": "Při toulkách švédskou divočinou je možné spatřit losa, statného zástupce jelenovitých v evropské přírodě. Samci losů mají charakteristické paroží, které každý rok shazují a nechávají růst nové.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "voice": "Los je tak tichý, že ho přehlédneš, i když stojí pár metrů před tebou.",
+        "image_prompt": "Fotorealistický snímek losa stojícího na okraji lesa u jezera, ranní mlha, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Allemansrätten – svoboda v přírodě",
+        "fact": "Švédsko má unikátní zákon 'Allemansrätten', tedy právo na volný pohyb v přírodě. Toto právo umožňuje každému chodit, tábořit a sbírat lesní plody, ale zároveň ukládá povinnost chránit přírodu a soukromí.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Swedish people love nature. The concept of ‘Allemansrätten’, or the right to roam, allows everyone to explore the outdoors freely.",
+        "voice": "Příroda v Švédsku patří všem, ale jen na chvilku.",
+        "image_prompt": "Fotorealistický snímek člověka na túře u jezera s horami v pozadí, Švédsko, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-priroda-bile-noci",
+    "country": "Švédsko",
+    "section": "Příroda",
+    "topic": "Fenomén bílých nocí",
+    "headline": "Když slunce nezapadá",
+    "fact": "V severním Švédsku, za polárním kruhem, slunce v létě nezapadá. Tento fenomén, známý jako bílé noci nebo půlnoční slunce, znamená, že je světlo prakticky nepřetržitě, což vytváří jedinečnou atmosféru.",
+    "source_url": "https://kids.kiddle.co/Swedish",
+    "voice": "Tady den ani noc nepoznáš, hodinky jsou k ničemu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek půlnočního slunce nad zrcadlovou hladinou jezera v Laponsku, zlatý odstín, bez lidí, 16:9",
+    "ll": [
+      18,
+      67
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nekonečný letní den",
+        "fact": "Bílé noci lákají turisty do Laponska, kde si mohou užívat aktivity jako turistika a rybaření i po půlnoci. Slunce se jen dotkne obzoru a zase stoupá.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "voice": "Rád bys tu spal, ale ta krása tě prostě nepustí.",
+        "image_prompt": "Fotorealistický snímek rybáře na břehu severského jezera, světlo půlnočního slunce, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Důsledek zemského náklonu",
+        "fact": "Půlnoční slunce a naopak polární tma jsou přímým důsledkem náklonu zemské osy. V létě je severní pól přikloněn ke Slunci, což vytváří polární den v oblastech za polárním kruhem.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "voice": "Kdyby se Země nenakláněla, tahle divočina by byla o hodně nudnější.",
+        "image_prompt": "Fotorealistický letecký snímek krajiny za polárního dne, slunce nízko nad obzorem, dlouhé stíny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-lide-alfred-nobel",
+    "country": "Švédsko",
+    "section": "Lidé",
+    "topic": "Alfred Nobel",
+    "headline": "Vynálezce dynamitu, který založil mír",
+    "fact": "Alfred Nobel, švédský chemik a vynálezce, zbohatl díky výrobě dynamitu a dalších výbušnin. Ve své závěti však překvapil svět tím, že svůj majetek odkázal na založení cen za mír, literaturu a vědu.",
+    "source_url": "https://www.britannica.com/biography/Alfred-Nobel",
+    "source_quote": "Alfred Nobel ... was a Swedish chemist, engineer, and industrialist who invented dynamite and other more powerful explosives and who also founded the Nobel Prizes.",
+    "voice": "Nobel měnil svět výbušninami, ale ve finále chtěl, aby si ho lidé pamatovali pro mír.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrét Alfreda Nobela v pracovně s laboratorním vybavením, vážný výraz, 16:9",
+    "ll": [
+      18.0686,
+      59.3293
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Muž, který dal světu Nobelovu cenu",
+        "fact": "Alfred Nobel se narodil ve Stockholmu a po své smrti v roce 1896 založil ceny, které jsou dodnes považovány za nejprestižnější ocenění na světě. Jeho příběh je plný paradoxů – vynálezce ničivého dynamitu se stal patronem míru.",
+        "source_url": "https://www.britannica.com/biography/Alfred-Nobel",
+        "source_quote": "Alfred Nobel (born October 21, 1833, Stockholm, Sweden—died December 10, 1896, San Remo, Italy) was a Swedish chemist, engineer, and industrialist who invented dynamite... and who also founded the Nobel Prizes.",
+        "voice": "Kdo by to byl řekl, že smrt jeho bratra a špatná tisková zpráva změní svět?",
+        "image_prompt": "Fotorealistický snímek budovy Stockholmské radnice, kde se předává Nobelova cena, slavnostní atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vynález, který změnil tvář průmyslu",
+        "fact": "Nobelův vynález dynamitu byl revoluční. Umožnil razantní rozvoj těžby, stavby tunelů a železnic po celém světě, což odstartovalo novou éru v průmyslové revoluci.",
+        "source_url": "https://www.britannica.com/biography/Alfred-Nobel",
+        "source_quote": "Dynamite established Nobel’s fame worldwide and was soon put to use in blasting tunnels, cutting canals, and building railways and roads.",
+        "voice": "Bez Nobelova dynamitu by dnešní svět vypadal úplně jinak.",
+        "image_prompt": "Fotorealistický snímek historické těžby s použitím dynamitu, 19. století, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-lide-abba",
+    "country": "Švédsko",
+    "section": "Lidé",
+    "topic": "Popová skupina ABBA",
+    "headline": "Švédský zázrak, který dobyl svět",
+    "fact": "Skupina ABBA, jedna z nejslavnějších popových kapel na světě, pochází ze Švédska. S písněmi jako 'Waterloo' a 'Mamma Mia' prodala přes 385 milionů desek.",
+    "source_url": "https://www.atlasobscura.com/places/abba-the-museum-stockholm",
+    "source_quote": "Since the Swedish quartet burst onto the music scene in the 1970s, they've sold some 385 million records, provided the songs for a Broadway musical (and a movie version of that musical), and gotten people on the dance floor at countless weddings.",
+    "voice": "Když hraje ABBA, tancuje celý svět.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek scény s kostýmy ABBA z jejich koncertů, barevné a třpytivé, v muzeu, 16:9",
+    "ll": [
+      18.08,
+      59.3247
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Trochu tance a nostalgie",
+        "fact": "Fanoušci ABBA mohou navštívit muzeum ABBA ve Stockholmu, kde si mohou zazpívat, prohlédnout si původní kostýmy a dokonce si zatelefonovat členům kapely na speciální telefon.",
+        "source_url": "https://www.atlasobscura.com/places/abba-the-museum-stockholm",
+        "source_quote": "One unique feature is that there is a telephone in the museum for which only the members of Abba have the number. So if it rings you should pick it up as you might get an opportunity to speak to one of the band.",
+        "voice": "Zvedni to, možná ti zavolá Agnetha!",
+        "image_prompt": "Fotorealistický snímek interiéru ABBA muzea ve Stockholmu, vystavené kostýmy a zlaté desky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní export, který předčil hranice",
+        "fact": "Úspěch ABBA, kteří vyhráli soutěž Eurovize v roce 1974, otevřel švédskou populární hudbu světu. Švédsko se od té doby stalo třetím největším vývozcem populární hudby na světě.",
+        "source_url": "https://www.atlasobscura.com/places/abba-the-museum-stockholm",
+        "source_quote": "Since the Swedish quartet burst onto the music scene in the 1970s, they've sold some 385 million records...",
+        "voice": "ABBA je důkazem, že ve Švédsku umí nejen železo, ale i melodie.",
+        "image_prompt": "Fotorealistický snímek koncertu ABBA v 70. letech, plné hlediště, barevná světla, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-lide-greta-thunberg",
+    "country": "Švédsko",
+    "section": "Lidé",
+    "topic": "Greta Thunbergová",
+    "headline": "Hlas mladé generace pro klima",
+    "fact": "Greta Thunbergová je švédská aktivistka, která se stala mezinárodní ikonou v boji proti změnám klimatu. Její stávky za klima inspirovaly miliony studentů po celém světě.",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "source_quote": "Your child aged 5 - 7 can learn the main facts about the famous Swedish environmental activist.",
+    "voice": "Jedna holka s transparentem dokázala rozproudit diskusi na celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrét mladé dívky, která se podobá Gretě Thunbergové, v dešti s transparentem, 16:9",
+    "ll": [
+      18.0686,
+      59.3293
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Švédská školačka, která změnila svět",
+        "fact": "V roce 2018 začala Greta Thunbergová každý pátek stávkovat před švédským parlamentem, aby upozornila na nečinnost politiků vůči klimatickým změnám. Její protest přerostl v celosvětové hnutí 'Fridays for Future'.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Your child aged 5 - 7 can learn the main facts about the famous Swedish environmental activist.",
+        "voice": "Někdy stačí odvaha jednoho jednotlivce.",
+        "image_prompt": "Fotorealistický snímek mladé dívky sedící před budovou parlamentu se švédskou vlajkou, v ruce transparent, 16:9"
+      },
+      "kartograf": {
+        "headline": "Globální fenomén Fridays for Future",
+        "fact": "Greta Thunbergová se stala symbolem generační výzvy k odpovědnosti. Její aktivismus zdůraznil, že klimatická krize je globální problém, který vyžaduje okamžitou akci ze strany světových lídrů.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Your child aged 5 - 7 can learn the main facts about the famous Swedish environmental activist.",
+        "voice": "Její hlas je připomínkou, že budoucnost patří nám všem.",
+        "image_prompt": "Fotorealistický snímek velkého davu mladých lidí pochodujících za klima, transparenty v různých jazycích, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-kultura-samove",
+    "country": "Švédsko",
+    "section": "Kultura & tradice",
+    "topic": "Sámové a jejich kultura",
+    "headline": "Původní obyvatelé severu",
+    "fact": "Sámové jsou jedním z původních národů světa a oficiální národnostní menšinou ve Švédsku. Jejich kultura je nerozlučně spjata s chovem sobů a územím zvaným Sápmi.",
+    "source_url": "https://sweden.se/life/people/sami-in-sweden",
+    "source_quote": "The Sami are one of the world's indigenous peoples and one of Sweden's official national minorities.",
+    "voice": "Sápmi je domov, kde tradice dýchá každým kamenem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Sáma v tradičním oděvu (kolt) stojícího se sobem v pozadí, severská krajina, 16:9",
+    "ll": [
+      18,
+      66
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Život s půlnočním sluncem a soby",
+        "fact": "Pro Sámy je chov sobů nejen obživou, ale i základem jejich kulturní identity. Tradiční sámský oděv, kolt, se liší podle rodiny a regionu a je dodnes hrdě nošen při slavnostních příležitostech.",
+        "source_url": "https://sweden.se/life/people/sami-in-sweden",
+        "source_quote": "The design of the kolt varies depending on its geographical origin. The traditional costumes have at least 12 different styles and differ for men and women. Some have been redesigned and given characteristic family patterns.",
+        "voice": "Sámský kolt je jako kniha – prozradí, odkud jsi a kdo je tvá rodina.",
+        "image_prompt": "Fotorealistický snímek detailu sámského oděvu s tradičními výšivkami a šperky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dědictví v boji s moderní dobou",
+        "fact": "Sámové po staletí bojovali o svá práva a uznání. Až v roce 1977 byli švédským parlamentem uznáni jako původní obyvatelé, a v roce 1993 vznikl Sámský parlament, který jim dává určitou míru autonomie.",
+        "source_url": "https://sweden.se/life/people/sami-in-sweden",
+        "source_quote": "It wasn't until 1977 that the Sami were recognised by the Swedish parliament as an indigenous people.",
+        "voice": "Cesta k uznání byla dlouhá, ale Sámové se svého hlasu nevzdali.",
+        "image_prompt": "Fotorealistický snímek budovy Sámského parlamentu, moderní architektura uprostřed severské krajiny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-kultura-midsummer",
+    "country": "Švédsko",
+    "section": "Kultura & tradice",
+    "topic": "Slavnosti Midsummer",
+    "headline": "Tanec kolem májky uprostřed léta",
+    "fact": "Midsummer, neboli letní slunovrat, je jedním z nejdůležitějších svátků ve Švédsku. Slaví se kolem 21. června tancem kolem májky, sledováním tradičních her a konzumací sledě a brambor.",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "source_quote": "Swedish children love to celebrate Midsummer, a festival where they dance around a maypole and enjoy traditional Swedish food like herring and potatoes.",
+    "voice": "Tam, kde tancuje májka, tančí celé Švédsko.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek oslav Midsummer, skupina lidí v bílém oblečení tančí kolem květinové májky, švédský venkov, 16:9",
+    "ll": [
+      15,
+      60
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejdelší den patří zábavě",
+        "fact": "Oslavy Midsummer začínají zdobením májky květinami a listím. Celý den se zpívá, tančí a hrají se tradiční hry, které často končí až za svítání.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Swedish children love to celebrate Midsummer, a festival where they dance around a maypole and enjoy traditional Swedish food like herring and potatoes.",
+        "voice": "Na Midsummer snad nikdo nespí – škoda by bylo každé minuty.",
+        "image_prompt": "Fotorealistický snímek stolu plného švédských jídel na Midsummer, sledi, brambory, jahody, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pohanský kořen v srdci Švédska",
+        "fact": "Midsummer má své kořeny v předkřesťanských slovanských a germánských tradicích oslavujících plodnost a sílu slunce. I po staletí si Švédové tento svátek uchovali jako stěžejní kulturní událost.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Swedish children love to celebrate Midsummer, a festival where they dance around a maypole and enjoy traditional Swedish food like herring and potatoes.",
+        "voice": "Když slunce dosáhne vrcholu, Švédové vítají léto jako za dávných časů.",
+        "image_prompt": "Fotorealistický snímek tradičního švédského venkova s májkou, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-kultura-fika",
+    "country": "Švédsko",
+    "section": "Kultura & tradice",
+    "topic": "Fika – švédská káva",
+    "headline": "Káva, koláček a klid",
+    "fact": "Fika je švédská tradice, která znamená dát si pauzu na kávu a sladké pečivo, často se skořicovou buchtou (kanelbulle). Je to společenský rituál, který si Švédové dopřávají i několikrát denně.",
+    "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+    "source_quote": "Fika, which is so well-established that it’s used as both a noun and a verb, is an everyday expression in Swedish. You can have a fika ('ta en fika') or go for a coffee break ('fika') – and everyone understands exactly what you mean.",
+    "voice": "Fika je vážná věc – káva a koláček, žádný spěch.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek švédské kavárny, stůl s šálkem kávy a skořicovou buchtou, útulná atmosféra, 16:9",
+    "ll": [
+      18,
+      60
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Víc než jen káva",
+        "fact": "Fika je o zastavení se a sdílení okamžiku s přáteli nebo kolegy. Je to nepsané pravidlo švédských pracovišť i domácností. Bez fiky si Švédové nedovedou představit den.",
+        "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+        "source_quote": "While fika may seem like just a coffee and cake break, it holds a much deeper cultural significance in Sweden. It’s a moment to pause, connect and recharge – often more about the company and conversation than the coffee itself.",
+        "voice": "Fika je jako objetí – hřeje a zpomalí tě.",
+        "image_prompt": "Fotorealistický snímek skupiny přátel popíjejících kávu u stolu, typická švédská kavárna, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tajemství švédského štěstí",
+        "fact": "Původ slova fika sahá do 19. století, kdy bylo odvozeno od slova 'kaffi' (káva). Dnes je fika synonymem pro švédský přístup k životu – umění si užívat maličkosti a budovat vztahy.",
+        "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+        "source_quote": "The word itself is believed to be a reversal of the syllables in the word 'kaffi', the old spelling of coffee (today spelled 'kaffe' in Swedish).",
+        "voice": "Švédové vědí, že život není jen o práci, ale hlavně o fice.",
+        "image_prompt": "Fotorealistický snímek košíku plného čerstvého švédského pečiva, skořicové buchty, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-umeni-ikea",
+    "country": "Švédsko",
+    "section": "Umění",
+    "topic": "Fenomén designu IKEA",
+    "headline": "Nábytek, který zná celý svět",
+    "fact": "IKEA, švédská společnost založená v roce 1943, se stala fenoménem díky svému minimalistickému designu, kterým zpopularizovala švédský styl po celém světě.",
+    "source_url": "https://www.dezeen.com/2025/02/03/swedish-design-stockholm-design-week-director/",
+    "source_quote": "Swedish design has long been associated with minimalism – or IKEA, whose affordable, practical furniture is now synonymous with the country around the world.",
+    "voice": "Kdo nemá doma aspoň jednu věc z IKEA, jako by nebyl.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek moderně zařízené místnosti v švédském stylu, světlé dřevo, minimalistický nábytek, rostliny, 16:9",
+    "ll": [
+      15,
+      58
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Design pro každého",
+        "fact": "Nábytek IKEA je navržen tak, aby byl funkční, cenově dostupný a zároveň estetický. Jeho ploché balení umožňuje snadnou přepravu, což je revoluční nápad, který změnil způsob, jakým si lidé zařizují domovy.",
+        "source_url": "https://www.dezeen.com/2025/02/03/swedish-design-stockholm-design-week-director/",
+        "voice": "Skládat IKEA nábytek je jako skládat puzzle, které nakonec potěší.",
+        "image_prompt": "Fotorealistický snímek kuchyňského koutu s designovými doplňky ve stylu IKEA, moderní a vzdušný, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dobytí světa plochými krabicemi",
+        "fact": "IKEA se stala symbolem švédského designu a dokázala ho exportovat do celého světa. Její úspěch spočívá v myšlence, že dobrý design by měl být dostupný všem, nejen bohatým.",
+        "source_url": "https://www.dezeen.com/2025/02/03/swedish-design-stockholm-design-week-director/",
+        "source_quote": "Brands like Teenage Engineering, Hem, Niko June, Gustaf Westman and Massproductions have all played a big part in paving the way for a Swedish design language that is very far removed from the idea of Scandinavian minimalism promoted by mainly Danish brands.",
+        "voice": "Demokracie začíná v obýváku – aspoň u Švédů.",
+        "image_prompt": "Fotorealistický snímek exteriéru obchodního domu IKEA, typická modro-žlutá fasáda, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-umeni-bergman",
+    "country": "Švédsko",
+    "section": "Umění",
+    "topic": "Filmový mistr Ingmar Bergman",
+    "headline": "Mistr filmového plátna",
+    "fact": "Ingmar Bergman je považován za jednoho z klíčových filmových režisérů v historii. Jeho filmy, jako Sedmá pečeť, jsou známé svou filozofickou hloubkou a osobitým stylem.",
+    "source_url": "https://kids.kiddle.co/Swedish",
+    "voice": "Bergmanovy filmy jsou jako švédská zima – chladné, ale nádherné.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek černobílé filmové scény v gotickém stylu, připomínající film Sedmá pečeť, 16:9",
+    "ll": [
+      18,
+      57.7
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Odkaz na ostrově Fårö",
+        "fact": "Bergman žil a tvořil na ostrově Fårö, kde se nachází i jeho hrob. Dnes je ostrov cílem filmařů a fanoušků, kteří sem jezdí za jeho duchem a unikátní krajinou.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "voice": "Fårö je místem, kde filmová magie dýchá z každého kamene.",
+        "image_prompt": "Fotorealistický snímek drsného pobřeží ostrova Fårö, rozbouřené moře a šedá obloha, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní ikona skandinávského filmu",
+        "fact": "Ingmar Bergman zásadně ovlivnil světový film. Jeho dílo je dodnes studováno na filmových školách a rezonuje s tématy existence, víry a smrti, která jsou univerzální.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "voice": "Bergman ukázal, že i ticho může na plátně mluvit hlasitě.",
+        "image_prompt": "Fotorealistický snímek filmového plátna s ikonickou scénou šachové partie (Sedmá pečeť), 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-umeni-hudba",
+    "country": "Švédsko",
+    "section": "Umění",
+    "topic": "Švédský hudební průmysl",
+    "headline": "Země, která dala světu pop",
+    "fact": "Švédsko patří po Spojených státech a Velké Británii mezi přední vývozce populární hudby na světě. Kromě ABBA jsou známé i skupiny jako Roxette či Swedish House Mafia.",
+    "source_url": "https://www.atlasobscura.com/places/abba-the-museum-stockholm",
+    "voice": "Švédská hudba zní, jako by v zemi věčně vládl hitparádový letní večer.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek velkého hudebního festivalu ve Švédsku, dav lidí, pódium s kapelou, večer, 16:9",
+    "ll": [
+      18,
+      59
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Továrna na hity",
+        "fact": "Švédsko je proslulé svými producenty a skladateli, kteří píší hity pro světové hvězdy. Max Martin, uznávaný hudební producent, má na kontě hity pro Britney Spears, Taylor Swift nebo The Weeknd.",
+        "source_url": "https://www.atlasobscura.com/places/abba-the-museum-stockholm",
+        "voice": "Když slyšíš hit, který tě dostane, šance je, že je od Švéda.",
+        "image_prompt": "Fotorealistický snímek hudebního studia s moderním vybavením, mixážní pult, 16:9"
+      },
+      "kartograf": {
+        "headline": "Melodický fenomén malé země",
+        "fact": "Úspěch švédské hudby je připisován kvalitnímu hudebnímu vzdělání, veřejné podpoře kultury a dlouhé tradici melodického popu. Švédsko je tak důkazem, že kreativitě se meze nekladou.",
+        "source_url": "https://www.atlasobscura.com/places/abba-the-museum-stockholm",
+        "source_quote": "Since the Swedish quartet burst onto the music scene in the 1970s, they've sold some 385 million records, provided the songs for a Broadway musical (and a movie version of that musical), and gotten people on the dance floor at countless weddings.",
+        "voice": "Švédsko je malá země s velkým hudebním srdcem.",
+        "image_prompt": "Fotorealistický snímek zlaté desky s nápisem 'Swedish Pop Export', 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-sport-ledni-hokej",
+    "country": "Švédsko",
+    "section": "Sport",
+    "topic": "Lední hokej – Tre Kronor",
+    "headline": "Tři korunky na ledě",
+    "fact": "Lední hokej je ve Švédsku druhým nejpopulárnějším sportem. Švédská reprezentace, známá jako Tre Kronor (Tři korunky), vyhrála mistrovství světa celkem 11krát, naposledy v roce 2018.",
+    "source_url": "https://eu-west.iihf.com/en/events/2025/wm/static/59085/sweden_denmark",
+    "source_quote": "The national team Tre Kronor have won the IIHF Ice Hockey World Championship on 11 occasions and hoisted the cup most recently in 2018.",
+    "voice": "Tři korunky na dresu – to je švédská hokejová chlouba.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hokejového zápasu, švédští hráči v modrých dresech s třemi korunkami, zaplavený stadion, 16:9",
+    "ll": [
+      18,
+      59.3
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rychlost a emoce na ledě",
+        "fact": "Švédská nejvyšší hokejová liga SHL patří k nejsledovanějším v Evropě. Zápasy jsou plné rychlého bruslení, tvrdých soubojů a vášnivých fanoušků, kteří vytvářejí skvělou atmosféru.",
+        "source_url": "https://eu-west.iihf.com/en/events/2025/wm/static/59085/sweden_denmark",
+        "source_quote": "Sweden had a total of 80 000 licensed players 22/23 which makes hockey the second biggest sport in Sweden.",
+        "voice": "Hokej v Švédsku je jako náboženství, jen místo bohoslužby je zápas.",
+        "image_prompt": "Fotorealistický snímek interiéru hokejové arény plné švédských fanoušků v modrých a žlutých barvách, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hokej jako národní identita",
+        "fact": "Hokej ve Švédsku nezaostává za nejlepšími světovými ligami. Tisíce mladých Švédů sní o tom, že se jednou stanou hvězdami NHL, a liga je tak líhní talentů pro celý svět.",
+        "source_url": "https://eu-west.iihf.com/en/events/2025/wm/static/59085/sweden_denmark",
+        "source_quote": "About 100 players in the NHL comes from Sweden.",
+        "voice": "Hokejové sny se rodí na švédských zimních stadionech.",
+        "image_prompt": "Fotorealistický snímek mladých hokejistů na tréninku na venkovním kluzišti, zimní krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-sport-bezecke-lyzovani",
+    "country": "Švédsko",
+    "section": "Sport",
+    "topic": "Běžecké lyžování",
+    "headline": "Zima v pohybu",
+    "fact": "Běžecké lyžování je ve Švédsku velmi oblíbeným sportem, zejména v severních oblastech s množstvím sněhu. Švédští lyžaři patří mezi světovou špičku v této disciplíně.",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "voice": "Když napadne sníh, Švédsko se promění v jednu velkou lyžařskou stopu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek běžkaře na zasněžené pláni v Laponsku, modrá obloha, slunečné počasí, 16:9",
+    "ll": [
+      15,
+      62
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Adrenalin na stopě",
+        "fact": "V zimě Švédové vyráží na běžky do každé vesnice. Stopy vedou lesy, přes zamrzlá jezera a nabízejí nádherné výhledy. Je to skvělý způsob, jak poznat švédskou přírodu.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "voice": "Běžky ti ukážou krásy zimy tak, jak je z auta neuvidíš.",
+        "image_prompt": "Fotorealistický snímek běžkařské stopy vedoucí přes zamrzlé jezero, zasněžené hory v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport, který sjednocuje národ",
+        "fact": "Běžecké lyžování má ve Švédsku dlouhou tradici. Konají se zde prestižní závody jako Vasaloppet, tradiční dálkový lyžařský závod, který každoročně přitahuje tisíce účastníků.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "voice": "Vasaloppet je pro Švédy to, co pro nás Tour de France.",
+        "image_prompt": "Fotorealistický snímek davu běžkařů na startu závodu, slavnostní atmosféra, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-sport-fotbal",
+    "country": "Švédsko",
+    "section": "Sport",
+    "topic": "Fotbal a Zlatan",
+    "headline": "Král Zlatan a švédský fotbal",
+    "fact": "Fotbal je ve Švédsku mimořádně oblíbeným sportem. Švédský fotbalista Zlatan Ibrahimović svými góly a osobitým stylem bavil fanoušky po celém světě.",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "voice": "Zlatan je jako švédská omáčka – na všechno se hodí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fotbalového stadionu, švédští fanoušci, trávník, západ slunce, 16:9",
+    "ll": [
+      18,
+      59.3
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Fotbalová vášeň na každém rohu",
+        "fact": "Fotbal se hraje ve Švédsku na každé úrovni, od místních týmů až po profesionální ligy. Švédská mužská reprezentace se pravidelně účastní mistrovství Evropy a světa.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "voice": "Fotbal je tu doma – od školních hřišť po velké stadiony.",
+        "image_prompt": "Fotorealistický snímek švédského fotbalisty při oslavě gólu, dav fanoušků, 16:9"
+      },
+      "kartograf": {
+        "headline": "Světová ikona ze Švédska",
+        "fact": "Zlatan Ibrahimović je celosvětově uznávaný švédský sportovec. Jeho kariéra v klubech jako Ajax, Inter, Barcelona nebo Manchester United udělala ze Švédska známou fotbalovou velmoc.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "voice": "Zlatan je důkazem, že ze Švédska se může stát fotbalová hvězda.",
+        "image_prompt": "Fotorealistický snímek Zlatana Ibrahimoviće v dresu švédské reprezentace, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-jazyk-ombudsman",
+    "country": "Švédsko",
+    "section": "Jazyk & slova",
+    "topic": "Švédská slova ve světě",
+    "headline": "Slova, která mluví celým světem",
+    "fact": "Švédština dala světu několik užitečných slov, jako je 'ombudsman' (zástupce práv občanů) a 'smörgåsbord' (studený stůl s mnoha pokrmy).",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "voice": "Když řekneš 'smörgåsbord', všichni vědí, že bude hostina.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kousek švédštiny v každodenním životě",
+        "fact": "Slovo 'ombudsman' pochází ze švédštiny a označuje osobu, která chrání práva občanů vůči úřadům. Tento koncept se rozšířil do mnoha zemí a jazyků po celém světě.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Swedish is a North Germanic language. It is very similar to Norwegian and Danish. Many words are alike, and speakers of these languages can often understand each other.",
+        "voice": "I malé slovo může mít velkou moc.",
+        "image_prompt": "Fotorealistický snímek otevřeného slovníku se zvýrazněným slovem 'ombudsman', 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazykový dar Skandinávie",
+        "fact": "Švédská slova jako 'ombudsman' a 'smörgåsbord' se dostala do mezinárodního povědomí díky obchodu a politice. Švédština má blízko k dánštině a norštině, takže Skandinávci si navzájem rozumí.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Swedish is a North Germanic language. It is very similar to Norwegian and Danish. Many words are alike, and speakers of these languages can often understand each other.",
+        "voice": "Skandinávské jazyky jsou jako rodina – každý mluví trochu jinak, ale všichni si rozumí.",
+        "image_prompt": "Fotorealistický snímek staré mapy Skandinávie s vyznačením jazykových oblastí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-jazyk-vyslovnost",
+    "country": "Švédsko",
+    "section": "Jazyk & slova",
+    "topic": "Zvláštní výslovnost",
+    "headline": "Zní to jako píseň",
+    "fact": "Švédština je melodický jazyk s charakteristickým přízvukem. Má dva tóny, které mění význam slov, a díky tomu zní pro cizince jako zpěv.",
+    "source_url": "https://kids.kiddle.co/Swedish",
+    "voice": "Když Švéd mluví, máš chuť si k tomu zazpívat.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek skupiny lidí konverzujících v kavárně, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Jak poznat Švéda?",
+        "fact": "Pro cizince je švédština těžká kvůli své výslovnosti. Některá slova se vyslovují úplně jinak, než se píší, a existuje v nich spousta samohlásek, které v češtině nemáme.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "voice": "Naučit se švédsky je jako naučit se tančit – chce to cvik.",
+        "image_prompt": "Fotorealistický snímek tabule s fonetickým přepisem švédských slov, 16:9"
+      },
+      "kartograf": {
+        "headline": "Severogermánský zpěv",
+        "fact": "Švédština patří do skupiny severogermánských jazyků. Její tónový přízvuk je unikátní – stejné slovo může mít dva různé významy podle toho, jak ho zazpíváš.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "source_quote": "The Swedish language is a North Germanic language. It is very similar to Norwegian and Danish. Many words are alike, and speakers of these languages can often understand each other.",
+        "voice": "Ve švédštině záleží na každém tónu.",
+        "image_prompt": "Fotorealistický snímek staré knihy o švédské gramatice, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-jazyk-slovnik",
+    "country": "Švédsko",
+    "section": "Jazyk & slova",
+    "topic": "Švédština a angličtina",
+    "headline": "Blízcí příbuzní",
+    "fact": "Mnoho anglických slov má svůj protějšek ve švédštině díky společnému germánskému původu. Základní fráze jako 'Tack' (děkuji) a 'Hej' (ahoj) si snadno zapamatuje i začátečník.",
+    "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+    "voice": "Naučit se pár slovíček stačí k úsměvu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek lidí v kavárně, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pár slov na cestu",
+        "fact": "Švédové milují, když se cizinci pokusí o pár slov. 'Hej' (ahoj) a 'Tack' (děkuji) otevírá dveře a usměje se na tebe snad každý.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "voice": "Úsměv a 'Tack' – to je univerzální klíč.",
+        "image_prompt": "Fotorealistický snímek přátelského úsměvu Švéda v obchodě, 16:9"
+      },
+      "kartograf": {
+        "headline": "Příbuznost germánských jazyků",
+        "fact": "Švédština a angličtina jsou si blízké, protože oba jazyky vycházejí ze staré germánštiny. Slova jako 'hus' (house – dům) a 'vind' (wind – vítr) jsou si nápadně podobná.",
+        "source_url": "https://www.twinkl.com.hk/blog/facts-and-activities-to-learn-about-sweden",
+        "source_quote": "Swedish is a North Germanic language. It is very similar to Norwegian and Danish. Many words are alike, and speakers of these languages can often understand each other.",
+        "voice": "Švédština je jako sestřenice angličtiny.",
+        "image_prompt": "Fotorealistický snímek srovnávací tabulky švédských a anglických slov, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-jidlo-kottbullar",
+    "country": "Švédsko",
+    "section": "Jídlo",
+    "topic": "Švédské masové koule",
+    "headline": "Köttbullar – klasika na talíři",
+    "fact": "Švédské masové koule, známé jako köttbullar, jsou v podstatě masové karbanátky podávané s bramborovou kaší, brusinkovou omáčkou a hnědou šťávou. Jsou symbolem švédské domácí kuchyně.",
+    "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+    "source_quote": "Cinnamon buns, cakes, cookies, even open-faced sandwiches will do. It comes as no surprise that Swedes are among the top consumers of coffee and sweets in the world.",
+    "voice": "Köttbullar chutnají stejně dobře u babičky jako v IKEA.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek talíře s masovými koulemi, bramborovou kaší a brusinkovou omáčkou, detail, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Chuť švédského domova",
+        "fact": "Recept na köttbullar se liší rodinu od rodiny, ale základ tvoří mleté maso, cibule a strouhanka. Podávají se s typickou brusinkovou marmeládou, která dodá jídlu sladkokyselou chuť.",
+        "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+        "voice": "Köttbullar voní jako švédské Vánoce.",
+        "image_prompt": "Fotorealistický snímek kuchyňského stolu s přípravou masových koulí, čerstvé suroviny, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od všedního dne k národnímu pokladu",
+        "fact": "Köttbullar se staly neoficiálním národním jídlem Švédska, zpopularizované po celém světě především díky restauracím IKEA.",
+        "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+        "voice": "Köttbullar jsou důkazem, že jednoduchost může být dokonalá.",
+        "image_prompt": "Fotorealistický snímek švédského obchodu s potravinami, regál s kořením a omáčkami, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-jidlo-kanelbulle",
+    "country": "Švédsko",
+    "section": "Jídlo",
+    "topic": "Skořicová buchta kanelbulle",
+    "headline": "Voňavý zázrak z pece",
+    "fact": "Kanelbulle, skořicová buchta stočená do spirály, je nejoblíbenějším sladkým pečivem ve Švédsku. Je neodmyslitelnou součástí každé fiky a bez ní si Švédové nedovedou představit den.",
+    "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+    "source_quote": "Cinnamon buns, kanelbullar, are the epitomy of Swedish pastry. These wheat flour buns filled with cinnamon, sugar and butter can be found in all bakeries and cafés.",
+    "voice": "Vůně kanelbulle provoní celé Švédsko.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek čerstvě upečené skořicové buchty, švédská kavárna, detail, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Sladká tečka za každým dnem",
+        "fact": "Kanelbulle se peče z kynutého těsta, plní se máslem, cukrem a skořicí a posypává perlovým cukrem. Její spirálovitý tvar je typický pro švédské pečivo.",
+        "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+        "source_quote": "This spiral-shaped bun is flavoured with cinnamon and topped with crunchy pearl sugar.",
+        "voice": "Bez kanelbulle není fika.",
+        "image_prompt": "Fotorealistický snímek plechu s čerstvě upečenými skořicovými buchtami, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pečivo s vlastním svátkem",
+        "fact": "Kanelbulle je tak významná, že má ve Švédsku dokonce svůj vlastní den – 4. říjen je oficiální Den skořicové buchty. Tento svátek oslavuje švédskou pekařskou tradici.",
+        "source_url": "https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/",
+        "source_quote": "Cinnamon buns, cakes, cookies, even open-faced sandwiches will do. It comes as no surprise that Swedes are among the top consumers of coffee and sweets in the world.",
+        "voice": "Kanelbulle je tak populární, že má vlastní svátek.",
+        "image_prompt": "Fotorealistický snímek výlohy švédské cukrárny plné skořicových bucht, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-jidlo-surstromming",
+    "country": "Švédsko",
+    "section": "Jídlo",
+    "topic": "Fermentovaný sleď surströmming",
+    "headline": "Otestuj svou odvahu",
+    "fact": "Surströmming je švédská specialita, která se proslavila svým extrémně silným zápachem. Jedná se o fermentovaného sledě, který se konzervuje přímo v plechovce, kde dále kvasí.",
+    "source_url": "http://www.foodmate.net/english/kpwx/77589.html",
+    "source_quote": "Surströmming (sour herring) is a typical Swedish dish consisting of fermented (Baltic) herring. It originates from the coastal region of Sweden, North of Stockholm.",
+    "voice": "Surströmming je jídlo, které poznáš dřív, než ho ochutnáš.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek konzervy surströmming na dřevěném stole se švédskými sušenkami a bramborami, 16:9",
+    "ll": [
+      18,
+      62
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Když ryba voní jako zkažená",
+        "fact": "Surströmming se jí venku, protože jeho zápach je opravdu intenzivní. Plechovka se otvírá pod vodou, aby nevybouchla – tlak uvnitř je totiž obrovský.",
+        "source_url": "http://www.foodmate.net/english/kpwx/77589.html",
+        "source_quote": "Surströmming has a very strong flavour and is thus mainly eaten outdoors. The pressure inside the cans makes the brine explode when opened. This can be avoided by opening a can of surströmming under water.",
+        "voice": "Surströmming – jídlo, při kterém držíš nos.",
+        "image_prompt": "Fotorealistický snímek talíře s chlebem, bramborami, cibulí a kousky surströmming, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice z dob nedostatku soli",
+        "fact": "Fermentace ryb má ve Švédsku dlouhou historii. Vznikla jako způsob konzervace potravin v době, kdy sůl byla drahá a dostupná jen pro bohaté.",
+        "source_url": "http://www.foodmate.net/english/kpwx/77589.html",
+        "source_quote": "Surströmming probably originated when proper brining of fish was quite expensive due to the cost of salt.",
+        "voice": "Když nemáš sůl, improvizuješ – a vznikne legenda.",
+        "image_prompt": "Fotorealistický snímek historického přístavu s rybářskými loděmi a sudy na ryby, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-historie-vikingove",
+    "country": "Švédsko",
+    "section": "Historie",
+    "topic": "Vikingové a jejich cesty",
+    "headline": "Mořeplavci, obchodníci a válečníci",
+    "fact": "Švédští vikingové, známí jako Varjagové, se vydávali na východ do Ruska a Byzance, kde obchodovali s kožešinami a otroky. Byli to zkušení mořeplavci, kteří ovládali obchodní cesty.",
+    "source_url": "https://www.britannica.com/place/Sweden/The-Viking-Age",
+    "source_quote": "Swedish Vikings also controlled trade across the Baltic; and it was for this activity that Birka, generally regarded as Sweden’s oldest town, was founded (c. 800).",
+    "voice": "Vikingové nevymřeli – oni jen přestali plout na východ.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek rekonstrukce vikingské lodi v muzeu, detail dřevěné konstrukce, 16:9",
+    "ll": [
+      18,
+      59.3
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Varjagové na východě",
+        "fact": "Švédští vikingové založili důležitá obchodní centra, jako je Birka na ostrově Björkö. Zde se setkávaly obchodní stezky z celé Evropy a Východu.",
+        "source_url": "https://www.britannica.com/place/Sweden/The-Viking-Age",
+        "source_quote": "Swedish Vikings also controlled trade across the Baltic; and it was for this activity that Birka, generally regarded as Sweden’s oldest town, was founded (c. 800).",
+        "voice": "Birka byla středověkým obchodním centrem jako dnešní nákupní centrum.",
+        "image_prompt": "Fotorealistický snímek archeologických vykopávek v Birce, zbytky domů a hrobů, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vikingové jako globální hráči",
+        "fact": "Vikingové nebyli jen nájezdníci – byli to obchodníci, kteří propojili sever Evropy s bohatstvím Byzance a arabského světa. Jejich cesty formovaly raně středověkou ekonomiku.",
+        "source_url": "https://www.britannica.com/place/Sweden/The-Viking-Age",
+        "source_quote": "From their strongholds, which included the river towns of Novgorod and Kiev, they controlled the trade routes along the Dnieper to the Black Sea and Constantinople (now Istanbul) and along the Volga to the Caspian Sea and the East.",
+        "voice": "Vikingové byli první evropští globální obchodníci.",
+        "image_prompt": "Fotorealistický snímek staré mapy obchodních cest vikingů, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-historie-neutralita",
+    "country": "Švédsko",
+    "section": "Historie",
+    "topic": "Švédská neutralita",
+    "headline": "Země, která se držela stranou",
+    "fact": "Švédsko je známé svou politikou neutrality a neúčasti ve válečných konfliktech. Tuto politiku udržuje již od 19. století, což mu umožnilo vyhnout se zkáze světových válek.",
+    "source_url": "https://kids.kiddle.co/Swedish",
+    "source_quote": "After the empire period, Sweden became a more peaceful country. It has not been involved in major wars for over 200 years.",
+    "voice": "Švédsko si vybralo cestu míru a vydrželo na ní.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek stockholmského parlamentu, vlajka EU a Švédska, 16:9",
+    "ll": [
+      18,
+      59.3
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Když válka obchází tvou zemi",
+        "fact": "Švédsko zůstalo během obou světových válek neutrální. Tato politika mu pomohla vybudovat silnou ekonomiku a sociální stát, který je dnes vzorem pro mnoho zemí.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "source_quote": "It has not been involved in major wars for over 200 years.",
+        "voice": "Někdy je to nejstatečnější, co můžeš udělat – zůstat stát.",
+        "image_prompt": "Fotorealistický snímek švédské krajiny s vlajkou, mír a klid, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cesta k prosperitě díky míru",
+        "fact": "Neutralita umožnila Švédsku rozvíjet průmysl a obchod bez válečných škod. Stalo se tak jedním z nejbohatších a nejstabilnějších států světa.",
+        "source_url": "https://kids.kiddle.co/Swedish",
+        "source_quote": "Today, Sweden is known for its focus on social welfare, equality, and innovation.",
+        "voice": "Švédský příběh je důkazem, že mír se vyplácí.",
+        "image_prompt": "Fotorealistický snímek moderního švédského města, architektura a prosperita, 16:9"
+      }
+    }
+  },
+  {
+    "id": "se-historie-vznik-statu",
+    "country": "Švédsko",
+    "section": "Historie",
+    "topic": "Vznik švédského státu",
+    "headline": "Od kmenů k jednotnému království",
+    "fact": "Švédsko vzniklo spojením kmenů Svear a Götar v průběhu 12. století. Toto sjednocení položilo základy pro jeden z nejstarších států v Evropě.",
+    "source_url": "https://www.britannica.com/place/Sweden/The-Viking-Age",
+    "source_quote": "Sweden in the 12th century consisted of Svealand and Götaland, which were united into a single kingdom during the first half of that century.",
+    "voice": "Svear a Götar dali Švédsku jméno a duši.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starověké švédské krajiny s kopci a lesy, 16:9",
+    "ll": [
+      15,
+      60
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Koruna sjednocená ve staré Uppsale",
+        "fact": "Uppsala, jedno z nejstarších měst Švédska, bylo duchovním a politickým centrem Svearů. Právě zde se konaly pohanské oběti a později zde bylo zřízeno arcibiskupství.",
+        "source_url": "https://www.britannica.com/place/Sweden/The-Viking-Age",
+        "source_quote": "At the beginning of this period a number of independent tribes were settled in what is now Sweden, and their districts are still partly indicated by the present divisions of the country. The Swedes were centred in Uppland, around Uppsala.",
+        "voice": "Uppsala je srdcem švédské historie.",
+        "image_prompt": "Fotorealistický snímek katedrály v Uppsale, gotická architektura, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sjednocení severního království",
+        "fact": "Sjednocení Svealandu a Götalandu bylo výsledkem dlouhého procesu, který formoval moderní Švédsko. Významnou roli sehrála christianizace a potřeba obrany proti vnějším hrozbám.",
+        "source_url": "https://www.britannica.com/place/Sweden/The-Viking-Age",
+        "source_quote": "It appears that the Swedish provinces were first united in the 12th century. The oldest document in which Sweden is referred to as a united and independent kingdom is a papal decree, by which Sweden in 1164 became a diocese with its own archbishop in Uppsala.",
+        "voice": "Švédsko je příkladem, že i z roztříštěných kmenů může vyrůst silný stát.",
+        "image_prompt": "Fotorealistický snímek staré mapy Skandinávie s vyznačením kmenových oblastí, 16:9"
+      }
+    }
+  }
+]

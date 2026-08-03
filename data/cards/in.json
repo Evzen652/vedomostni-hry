@@ -1,0 +1,216 @@
+[
+  {
+    "id": "in-mista-tadzmahal",
+    "country": "Indie",
+    "section": "Místa",
+    "topic": "Tádž Mahal a mughalská architektura",
+    "headline": "Mramorová hrobka postavená z lásky",
+    "fact": "Tádž Mahal nechal roku 1631 postavit mughalský vládce Šáhdžahán jako mauzoleum pro svou zesnulou manželku Mumtáz Mahal.",
+    "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+    "source_quote": "It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan.",
+    "voice": "Celá stavba je vlastně obrovský náhrobek postavený z lásky a žalu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bílého mramorového Tádž Mahalu odrážejícího se ve vodní nádrži při východu slunce, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Stavba trvala přes dvě desetiletí a pracovaly na ní tisíce řemeslníků. UNESCO ji zapsalo na seznam světového dědictví jako 'klenot islámského umění v Indii'.",
+        "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal"
+      },
+      "kartograf": {
+        "fact": "Tádž Mahal je vrcholem mughalské architektury — spojuje perské, islámské a indické stavební prvky v jeden celek. Je to hmotný důkaz kulturní výměny mezi středoasijskou dynastií a indickým subkontinentem, na kterém vládla.",
+        "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal"
+      }
+    }
+  },
+  {
+    "id": "in-priroda-ganga",
+    "country": "Indie",
+    "section": "Příroda",
+    "topic": "Ganga mezi úctou a znečištěním",
+    "headline": "Řeka, která je zároveň bohyní",
+    "fact": "Ganga je nejposvátnější řeka Indie — hinduisté v ní koupelí věří, že se očistí od hříchů, a uctívají ji jako bohyni Gangá.",
+    "source_url": "https://en.wikipedia.org/wiki/Ganges",
+    "source_quote": "The Ganges is the most sacred river to Hindus.",
+    "voice": "Voda, se kterou se modlíš, ne jen umýváš.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řeky Gangy ve Váránasí za soumraku s plovoucími lampičkami na hladině, 16:9",
+    "tags": ["fyzicka-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ganga teče 2 525 km Indií a Bangladéšem a je životní tepnou pro stovky milionů lidí. Poutní místa jako Váránasí nebo Haridvár patří k nejposvátnějším bodům na jejím toku.",
+        "source_url": "https://en.wikipedia.org/wiki/Ganges"
+      },
+      "kartograf": {
+        "fact": "Posvátnost Gangy a zároveň její přetížení miliony obyvatel podél toku vytváří napětí mezi náboženskou úctou a environmentální ochranou — řeka musí být zároveň symbolem čistoty a zdrojem vody pro obří populaci.",
+        "source_url": "https://en.wikipedia.org/wiki/Ganges"
+      }
+    }
+  },
+  {
+    "id": "in-lide-gandhi",
+    "country": "Indie",
+    "section": "Lidé",
+    "topic": "Gándhí a nenásilný odpor",
+    "headline": "Nezávislost vybojovaná bez jediné rány",
+    "fact": "Mahátma Gándhí vedl indické hnutí za nezávislost metodou nenásilného odporu (satjágrahy); nejznámější byl jeho 388 km dlouhý Solný pochod z roku 1930.",
+    "source_url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi",
+    "voice": "Pochod pro hrst soli otřásl celou britskou koloniální mocí.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistický snímek davu poutníků na dlouhé prašné cestě indickým venkovem, sépiové tóny, 16:9",
+    "tags": ["dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Gándhí poprvé použil metodu satjágrahy (nenásilného odporu) v Jižní Africe roku 1906, do Indie ji přinesl roku 1915. Vedl indický Národní kongres a jeho kampaně nakonec vedly k nezávislosti Indie v srpnu 1947.",
+        "source_url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+      },
+      "kartograf": {
+        "fact": "Gándhího strategie ukázala, že masová nenásilná neposlušnost dokáže rozložit koloniální mocnost stejně účinně jako ozbrojený odpor — a stala se later vzorem pro hnutí za občanská práva po celém světě, včetně USA.",
+        "source_url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+      }
+    }
+  },
+  {
+    "id": "in-jidlo-korenim",
+    "country": "Indie",
+    "section": "Jídlo",
+    "topic": "Regionální rozmanitost indické kuchyně",
+    "headline": "Kuchyně, která se region od regionu úplně mění",
+    "fact": "Indická kuchyně se region od regionu výrazně liší podle půdy, klimatu a místních surovin — sever staví na chlebech, jih na rýži.",
+    "source_url": "https://en.wikipedia.org/wiki/Indian_cuisine",
+    "source_quote": "Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially.",
+    "voice": "Co je 'indické jídlo' se v Dillí a v Kérale skoro nepodobá.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek různobarevných indických koření naaranžovaných v miskách, teplé světlo, 16:9",
+    "tags": ["regionalni-geografie", "fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Základem indické kuchyně je koření — chilli, hořčičné semínko, kardamom, kmín, kurkuma, zázvor a koriandr. Směs garam masala se region od regionu i kuchař od kuchaře liší.",
+        "source_url": "https://en.wikipedia.org/wiki/Indian_cuisine"
+      },
+      "kartograf": {
+        "fact": "Regionální rozmanitost indické kuchyně přesně kopíruje geografickou rozmanitost subkontinentu — pobřežní oblasti staví na kokosu a rybách, suchý sever na obilí a chlebu, každý styl je přímým otiskem toho, co daná krajina umožňuje vypěstovat.",
+        "source_url": "https://en.wikipedia.org/wiki/Indian_cuisine"
+      }
+    }
+  },
+  {
+    "id": "in-historie-indus",
+    "country": "Indie",
+    "section": "Historie",
+    "topic": "Civilizace v údolí Indu",
+    "headline": "Města s kanalizací stará 4 500 let",
+    "fact": "Civilizace v údolí Indu patřila k vůbec nejstarším městským civilizacím světa a měla propracované plánování měst včetně kanalizace.",
+    "source_url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
+    "source_quote": "A sophisticated and technologically advanced urban culture is evident in the Indus Valley Civilisation",
+    "voice": "Zatímco jinde se stavěly chatrče, tady měli ulice v pravém úhlu a odpady v rourách.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek archeologických vykopávek starověkého města s cihlovými ulicemi, jasné denní světlo, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Města jako Mohendžo-daro a Harappa měla pravidelný půdorys ulic, veřejné lázně i systém odpadních kanálů — na svou dobu (kolem roku 2500 př. n. l.) mimořádně vyspělou infrastrukturu.",
+        "source_url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+      },
+      "kartograf": {
+        "fact": "Vyspělost civilizace v údolí Indu ukazuje, že urbanizace a infrastruktura nejsou výsadou pouze mezopotamské nebo egyptské oblasti — podobná úroveň organizace vznikla nezávisle i na indickém subkontinentu, což vyvrací představu jednoho 'kolébky civilizace'.",
+        "source_url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+      }
+    }
+  },
+  {
+    "id": "in-kultura-divali",
+    "country": "Indie",
+    "section": "Kultura & tradice",
+    "topic": "Díválí napříč náboženstvími",
+    "headline": "Svátek světla proti tmě",
+    "fact": "Díválí, svátek světel, slaví vítězství světla nad tmou a dobra nad zlem; slaví ho hinduisté, džinisté, sikhové i někteří buddhisté.",
+    "source_url": "https://en.wikipedia.org/wiki/Diwali",
+    "source_quote": "the spiritual victory of light over darkness, good over evil",
+    "voice": "Na pár dní se celé město rozzáří tisíci olejovými lampičkami.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický noční snímek indické ulice ozdobené tisíci rozsvícenými olejovými lampičkami diya, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Během Díválí lidé zdobí domy olejovými lampičkami zvanými dija, vyrábí barevné vzory z barevného písku (rangolí) a odpalují ohňostroje. Svátek má u různých náboženství trochu jiný výklad, ale společný motiv světla proti temnotě.",
+        "source_url": "https://en.wikipedia.org/wiki/Diwali"
+      },
+      "kartograf": {
+        "fact": "To, že jeden svátek slaví hned čtyři různá náboženství, ukazuje na sdílenou kulturní vrstvu indického subkontinentu, která přesahuje jednotlivé víry — podobné symboly (světlo, obnova) najdeme napříč náboženstvími, která spolu koexistují na stejném území po tisíciletí.",
+        "source_url": "https://en.wikipedia.org/wiki/Diwali"
+      }
+    }
+  },
+  {
+    "id": "in-umeni-bollywood",
+    "country": "Indie",
+    "section": "Umění",
+    "topic": "Indický filmový průmysl",
+    "headline": "Filmová továrna, která natočí nejvíc filmů na světě",
+    "fact": "Indie natáčí ročně víc filmů než kterákoli jiná země světa — už v roce 1986 jich vzniklo přes 800.",
+    "source_url": "https://en.wikipedia.org/wiki/Cinema_of_India",
+    "source_quote": "By 1986, India's annual film output had increased to 833 films annually, making India the world's largest film producer.",
+    "voice": "Zpěv, tanec a dramatický příběh — bollywoodský film musí mít všechno najednou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek barevné taneční scény z indického filmu, pestré kostýmy, dramatické osvětlení jeviště, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Bollywood, pojmenovaný podle Bombaje (dnešního Mumbaí) a Hollywoodu, je jen jedna z mnoha indických filmových produkcí — natáčí se i v tamilštině, telugštině a dalších jazycích, každá s vlastním publikem.",
+        "source_url": "https://en.wikipedia.org/wiki/Cinema_of_India"
+      },
+      "kartograf": {
+        "fact": "Obří filmová produkce Indie odráží jazykovou a kulturní rozmanitost země — protože žádný jediný jazyk nespojuje celou populaci, vznikají paralelní filmové průmysly pro různé jazykové oblasti, místo jednoho centralizovaného 'národního' filmu.",
+        "source_url": "https://en.wikipedia.org/wiki/Cinema_of_India"
+      }
+    }
+  },
+  {
+    "id": "in-sport-kriket",
+    "country": "Indie",
+    "section": "Sport",
+    "topic": "Kriket jako koloniální dědictví",
+    "headline": "Sport, který zastaví celou zemi",
+    "fact": "Kriket je zdaleka nejoblíbenější sport Indie — když hraje indický národní tým, sledují ho stovky milionů lidí.",
+    "source_url": "https://en.wikipedia.org/wiki/Cricket_in_India",
+    "source_quote": "Cricket is the most popular sport in India.",
+    "voice": "Během důležitého zápasu se ulice měst vyprázdní.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kriketového zápasu na přeplněném indickém stadionu, večerní osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kriket přinesli do Indie Britové v koloniální éře, ale dnes je hluboce zakořeněný v indické kultuře — hraje se na ulicích, na vesnických hřištích i na obřích stadionech před desítkami tisíc diváků.",
+        "source_url": "https://en.wikipedia.org/wiki/Cricket_in_India"
+      },
+      "kartograf": {
+        "fact": "Kriket je příklad, jak koloniální dědictví přežilo a přerostlo svého 'majitele' — sport, který přinesli britští kolonizátoři, se stal centrálním prvkem indické národní identity a dnes Indie ekonomicky ovládá světový kriket víc než sama Anglie.",
+        "source_url": "https://en.wikipedia.org/wiki/Cricket_in_India"
+      }
+    }
+  },
+  {
+    "id": "in-jazyk-mnoho-jazyku",
+    "country": "Indie",
+    "section": "Jazyk & slova",
+    "topic": "Jazyková rozmanitost Indie",
+    "headline": "Země s druhým nejvíc jazyky na světě",
+    "fact": "V Indii se mluví přes 780 jazyky — víc má už jen Papua-Nová Guinea; ústava přitom uznává 22 oficiálních jazyků.",
+    "source_url": "https://en.wikipedia.org/wiki/Languages_of_India",
+    "source_quote": "India has the second highest number of languages (780), after Papua New Guinea.",
+    "voice": "Ve dvou sousedních vesnicích se lidé někdy nedomluví bez tlumočníka.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "22 ústavou uznaných jazyků zahrnuje třeba hindštinu, bengálštinu, tamilštinu nebo urdštinu — patří do několika zcela odlišných jazykových rodin (indoárijské, drávidské), takže si mluvčí různých indických jazyků navzájem vůbec nemusí rozumět.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_India"
+      },
+      "kartograf": {
+        "fact": "Jazyková rozmanitost Indie je přímý důsledek dějin: subkontinent postupně osídlily vlny různých národů (drávidské, indoárijské, a další), a na rozdíl od menších evropských zemí se tu žádný jazyk nikdy nestal jednoznačně dominantním pro celé území.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_India"
+      }
+    }
+  }
+]

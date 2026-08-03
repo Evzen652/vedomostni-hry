@@ -1,0 +1,845 @@
+[
+  {
+    "id": "ua-mista-sofijsky-chram",
+    "country": "Ukrajina",
+    "section": "Místa",
+    "topic": "Sofijský chrám",
+    "headline": "Chrám s mozaikami starými skoro tisíc let",
+    "fact": "Sofijský chrám v Kyjevě pochází z 11. století a patří k nejvýznamnějším stavbám Kyjevské Rusi; roku 1990 se stal vůbec první ukrajinskou památkou zapsanou na seznam UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Saint_Sophia_Cathedral,_Kyiv",
+    "source_quote": "Years built: 11th century … In 1990 the ensemble of the St. Sophia Monastery was included in the UNESCO World Heritage List … the first heritage site in Ukraine to be inscribed on the World Heritage List",
+    "voice": "Zlaté kupole nad hlavou stály už dávno předtím, než vůbec vznikly dnešní hranice států.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Sofijského chrámu v Kyjevě, bílé stěny a zelenozlaté kupole ve stylu ukrajinského baroka, zvonice v popředí, jasný den, bez lidí, 16:9",
+    "ll": [30.514, 50.453],
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kostel, který přežil tatarské nájezdy i sovětskou éru",
+        "fact": "Chrám založili kyjevští knížata v 11. století jako symbol nově přijatého křesťanství; uvnitř se dodnes dochovaly původní byzantské mozaiky a fresky, což je v Evropě vzácnost.",
+        "source_url": "https://en.wikipedia.org/wiki/Saint_Sophia_Cathedral,_Kyiv",
+        "source_quote": "Years built: 11th century",
+        "voice": "Barvy na stěnách jsou skoro tisíc let staré, a přesto pořád svítí zlatě.",
+        "image_prompt": "Fotorealistický detailní snímek interiéru Sofijského chrámu v Kyjevě, staré byzantské mozaiky a fresky na stěnách a klenbě, tlumené světlo svící, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kyjev jako duchovní centrum východních Slovanů",
+        "fact": "Umístění katedrály v centru tehdejšího Kyjeva odráželo postavení města jako politického i církevního centra Kyjevské Rusi — státu, k němuž se dnes hlásí Ukrajina, Rusko i Bělorusko jako ke společnému základu.",
+        "source_url": "https://en.wikipedia.org/wiki/Kievan_Rus%27",
+        "source_quote": "The modern nations of Belarus, Russia, and Ukraine all claim Kievan Rus' as their cultural ancestor",
+        "voice": "Jeden chrám, tři dnešní státy, které si ho v duchu dodnes nárokují jako svůj kořen.",
+        "image_prompt": "Fotorealistický letecký snímek historického jádra Kyjeva s kupolemi Sofijského chrámu uprostřed zástavby, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-mista-lvov",
+    "country": "Ukrajina",
+    "section": "Místa",
+    "topic": "Lvov",
+    "headline": "Historické centrum, které nezničila válka",
+    "fact": "Historické centrum Lvova, založeného roku 1250, si díky tomu, že ho druhá světová válka výrazně nepoškodila, uchovalo souvislou středověkou a habsburskou zástavbu; od roku 1998 je na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Lviv",
+    "source_quote": "The city of Lviv was founded in 1250 by King Daniel of Galicia … Inscription 1998 (22nd Session)",
+    "voice": "Ulice, kde se gotika potkává s vídeňskou secesí na jednom náměstí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického náměstí Rynok ve Lvově, barevné renesanční a barokní měšťanské domy, dlážděné ulice, ranní světlo, bez lidí v popředí, 16:9",
+    "ll": [24.0297, 49.8397],
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Město pod čtyřmi vlajkami za sto let",
+        "fact": "Lvov během 20. století patřil postupně Rakousku-Uhersku, Polsku, Sovětskému svazu a dnes Ukrajině, aniž by se jeho historické jádro muselo přestavovat — každá éra tu zanechala vlastní architektonickou vrstvu.",
+        "source_url": "https://en.wikipedia.org/wiki/Lviv",
+        "source_quote": "On 22 September 1939 Lwów capitulated to the Red Army … In 1991, with the dissolution of the Soviet Union, Lviv stayed part of Ukraine",
+        "voice": "Stejné domy, čtyři různé státy, které se nad nimi za sto let vystřídaly.",
+        "image_prompt": "Fotorealistický snímek uličky lvovského starého města s kavárnami, secesní a rakousko-uherská architektura, večerní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pohraniční město mezi kulturními okruhy",
+        "fact": "Poloha Lvova na pomezí středoevropského a východoevropského kulturního okruhu vysvětluje jeho architektonickou různorodost i to, proč je dnes největším městem západní Ukrajiny s vlastní silnou regionální identitou.",
+        "source_url": "https://en.wikipedia.org/wiki/Lviv",
+        "source_quote": "the largest city in the western part of the country",
+        "voice": "Město na hranici dvou světů si nakonec vybudovalo úplně svou vlastní tvář.",
+        "image_prompt": "Fotorealistický letecký snímek historického centra Lvova se střechami starých domů a věžemi kostelů, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-mista-krym",
+    "country": "Ukrajina",
+    "section": "Místa",
+    "topic": "Krym",
+    "headline": "Poloostrov spojený s pevninou úzkou šíjí",
+    "fact": "Krym je poloostrov obklopený Černým mořem a Azovským mořem o rozloze asi 27 000 km²; s pevninskou Ukrajinou ho spojuje jen 5–7 kilometrů široká Perekopská šíje.",
+    "source_url": "https://en.wikipedia.org/wiki/Crimea",
+    "source_quote": "27,000 km2 (10,425 sq mi) … The Isthmus of Perekop connects the peninsula to Kherson Oblast in mainland Ukraine … a strip of land about 5–7 kilometres (3.1–4.3 mi) wide",
+    "voice": "Zúžení široké jako pár vesnic rozhoduje o tom, zda je tohle ještě poloostrov, nebo už ostrov.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký snímek úzké pevninské šíje spojující poloostrov se stepní pevninou, moře po obou stranách, denní světlo, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kde stepi potkávají teplé moře",
+        "fact": "Jižní pobřeží Krymu u Černého moře má díky pohoří, které ho chrání před studeným vzduchem ze severu, mnohem mírnější podnebí než zbytek poloostrova pokrytý suchou stepí.",
+        "source_url": "https://en.wikipedia.org/wiki/Crimea",
+        "voice": "Kousek stepi na severu, kousek středomořského pobřeží na jihu — jeden poloostrov, dvě tváře.",
+        "image_prompt": "Fotorealistický snímek jižního pobřeží Krymu, skalnaté útesy nad Černým mořem, subtropická vegetace, jasný den, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Poloostrov jako přírodní křižovatka",
+        "fact": "Poloha na rozhraní stepi, hor a dvou moří udělala z Krymu odedávna strategicky i obchodně významné území, o které se v historii ucházely různé státní útvary od Řeků po Osmanskou říši i Rusko.",
+        "source_url": "https://en.wikipedia.org/wiki/Crimea",
+        "voice": "Kdo ovládl tuhle úzkou šíji, ovládl přístup k celému poloostrovu.",
+        "image_prompt": "Fotorealistický snímek pobřeží Krymu s přístavem obklopeným kopci, denní světlo, bez lidí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-priroda-cernozem",
+    "country": "Ukrajina",
+    "section": "Příroda",
+    "topic": "Černozem",
+    "headline": "Černá půda, které se říká zlato Ukrajiny",
+    "fact": "Černozem, tmavá půda s vysokým obsahem humusu, pokrývá rozsáhlé plochy ukrajinských stepí a v některých místech dosahuje mocnosti až 1,5 metru.",
+    "source_url": "https://en.wikipedia.org/wiki/Chernozem",
+    "source_quote": "from several centimetres up to 1.5 metres (60 inches) in Ukraine",
+    "voice": "Barva půdy, díky které je Ukrajina jednou z obilnic Evropy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek obdělaných polí ukrajinské stepi, tmavá černozemní půda na okraji pole, zlatá pšenice na obzoru, přirozené světlo, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Půda tmavá jako uhel",
+        "fact": "Černozem vzniká tisíce let hromaděním rozloženého travního porostu ve stepním klimatu s mírnými srážkami; je velmi úrodná a umožňuje vysoké výnosy obilí.",
+        "source_url": "https://en.wikipedia.org/wiki/Chernozem",
+        "source_quote": "Chernozem is very fertile and can produce high agricultural yields",
+        "voice": "Tisíce let odumřelé trávy nakonec daly jednu z nejbohatších půd na světě.",
+        "image_prompt": "Fotorealistický detailní snímek tmavé úrodné černozemní půdy s rukou farmáře držící hrst hlíny, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Proč je Ukrajina obilnicí Evropy",
+        "fact": "Pás úrodné černozemě táhnoucí se přes jižní Ukrajinu přímo vysvětluje, proč se právě tady soustředí pěstování obilí a proč je země jedním z největších světových vývozců pšenice a kukuřice.",
+        "source_url": "https://en.wikipedia.org/wiki/Agriculture_in_Ukraine",
+        "source_quote": "Ukraine is one of the world's largest agricultural producers and exporters and is known as the 'breadbasket of Europe'",
+        "voice": "Kdo drží tenhle pruh černé půdy, drží kus světové sýpky.",
+        "image_prompt": "Fotorealistický letecký snímek rozlehlých obdělaných polí ukrajinské stepi v geometrických parcelách, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-priroda-dnepr",
+    "country": "Ukrajina",
+    "section": "Příroda",
+    "topic": "Dněpr",
+    "headline": "Řeka, která protíná Ukrajinu od severu k jihu",
+    "fact": "Dněpr měří asi 2 200 km, je nejdelší řekou na území Ukrajiny a čtvrtou nejdelší v Evropě po Volze, Dunaji a Uralu.",
+    "source_url": "https://en.wikipedia.org/wiki/Dnieper",
+    "source_quote": "Approximately 2,200 km (1,400 mi) long … the fourth-longest river in Europe, after the Volga, Danube, and Ural rivers",
+    "voice": "Kolem jeho břehů se rozkládá skoro celá ukrajinská historie, od Kyjeva až po Černé moře.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek řeky Dněpr protékající Kyjevem, mosty přes řeku, zelené břehy, večerní světlo, bez lidí v popředí, 16:9",
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Řeka pramenící daleko v Rusku",
+        "fact": "Dněpr pramení v ruských Valdajských vrších a teče přes Bělorusko a Ukrajinu až do Černého moře — na svém toku spojuje tři dnešní státy.",
+        "source_url": "https://en.wikipedia.org/wiki/Dnieper",
+        "voice": "Než dorazí do Kyjeva, projede už dvěma jinými zeměmi.",
+        "image_prompt": "Fotorealistický snímek klidné hladiny Dněpru s pískovými břehy a lesy, ranní mlha nad vodou, 16:9"
+      },
+      "kartograf": {
+        "headline": "Páteř ukrajinského osídlení",
+        "fact": "Podél Dněpru vznikala od raného středověku klíčová města včetně Kyjeva; řeka fungovala jako obchodní tepna spojující Skandinávii s Byzancí a dodnes rozděluje Ukrajinu na pravobřežní a levobřežní část.",
+        "source_url": "https://en.wikipedia.org/wiki/Dnieper",
+        "voice": "Jedna řeka, podle které se dodnes říká, jestli je něco „na tom“ nebo „na onom“ břehu.",
+        "image_prompt": "Fotorealistický letecký snímek Dněpru s mosty a městskou zástavbou na obou březích, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-priroda-karpaty",
+    "country": "Ukrajina",
+    "section": "Příroda",
+    "topic": "Karpaty",
+    "headline": "Hory, kde leží nejvyšší vrchol Ukrajiny",
+    "fact": "Ukrajinské Karpaty vrcholí horou Hoverla, vysokou 2 061 metrů, nejvyšším bodem celé Ukrajiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Hoverla",
+    "source_quote": "Mount Hoverla … at 2,061 metres (6,762 ft), is the highest mountain in Ukraine",
+    "voice": "Odsud pramení řeka Prut a za jasného počasí je vidět kus sousedních zemí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zalesněných hřebenů ukrajinských Karpat, vrchol Hoverly v pozadí, horské louky, ranní mlha v údolích, bez lidí, 16:9",
+    "ll": [24.5, 48.16],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kopce zaoblené miliony let eroze",
+        "fact": "Karpaty jsou mnohem starší a nižší než Alpy, jejich svahy pokrývají bukové a smrkové lesy a nad hranicí lesa subalpínské louky, kam se v létě vyhánějí ovce na pastvu.",
+        "source_url": "https://en.wikipedia.org/wiki/Hoverla",
+        "voice": "Žádné ostré štíty, jen zaoblené hřbety, které vypadají jako moře zeleně.",
+        "image_prompt": "Fotorealistický snímek horských luk pod vrcholem Hoverly s pasoucími se ovcemi, letní den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice, která spojuje víc zemí",
+        "fact": "Karpatský oblouk se táhne přes Ukrajinu, Rumunsko, Slovensko a Polsko a odděluje středoevropskou nížinu od ukrajinských a moldavských stepí — funguje jako přirozená klimatická i kulturní hranice regionu.",
+        "source_url": "https://en.wikipedia.org/wiki/Carpathian_Mountains",
+        "voice": "Jedno pohoří, které si víc zemí dodnes dělí jako společnou zadní zahrádku.",
+        "image_prompt": "Fotorealistický letecký snímek zalesněného karpatského pohraničí mezi Ukrajinou a sousední zemí, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-lide-koroljov",
+    "country": "Ukrajina",
+    "section": "Lidé",
+    "topic": "Koroljov",
+    "headline": "Muž, který poslal první satelit do vesmíru",
+    "fact": "Sergej Koroljov, hlavní konstruktér sovětského vesmírného programu, se narodil roku 1907 v Žytomyru na Ukrajině a stál za vypuštěním první družice Sputnik 1 i letem Jurije Gagarina.",
+    "source_url": "https://en.wikipedia.org/wiki/Sergei_Korolev",
+    "source_quote": "Korolev was born in the city of Zhytomyr, the capital of Volhynian Governorate of the Russian Empire (now in Ukraine) … PS-1 was successfully launched into space on 4 October 1957 as Sputnik 1, becoming the first artificial satellite of the Earth",
+    "voice": "Jeho jméno bylo za života tajné — svět ho poznal až po jeho smrti.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický archivní styl snímek raketového startu v noci na kosmodromu, plameny raketových motorů, hvězdná obloha, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vězeň, který navrhl vítěznou raketu",
+        "fact": "Koroljov strávil koncem 30. let čas v pracovním táboře kvůli politickému obvinění, přesto se později stal hlavním konstruktérem rakety R-7 — první mezikontinentální balistické střely na světě, jejíž upravená verze později vynesla do vesmíru i Sputnik.",
+        "source_url": "https://en.wikipedia.org/wiki/Sergei_Korolev",
+        "source_quote": "Korolev directed development of the R-7 rocket, the world's first intercontinental ballistic missile (ICBM)",
+        "voice": "Z tábora nucených prací až k raketě, která otevřela cestu do vesmíru.",
+        "image_prompt": "Fotorealistický snímek staré sovětské rakety R-7 na startovací rampě, ranní světlo, technická konstrukce věže, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ukrajinský rodák za sovětským vesmírným prvenstvím",
+        "fact": "Koroljov je příkladem, jak lidé narození na území dnešní Ukrajiny formovali dějiny celého Sovětského svazu — jeho práce vedla k vypuštění Sputniku 1 roku 1957 a letu Jurije Gagarina roku 1961.",
+        "source_url": "https://en.wikipedia.org/wiki/Sergei_Korolev",
+        "source_quote": "a modified version of Korolev's R-7 was used to launch Yuri Alexeevich Gagarin into orbit on 12 April 1961",
+        "voice": "Hranice na mapě dneška nerozhodují o tom, odkud pocházeli lidé, kteří dělali dějiny včera.",
+        "image_prompt": "Fotorealistický snímek muzejní expozice s modelem rakety a fotografiemi vesmírného programu, tlumené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-lide-mecnikov",
+    "country": "Ukrajina",
+    "section": "Lidé",
+    "topic": "Mečnikov",
+    "headline": "Nobelova cena za objev, který začal na hvězdici",
+    "fact": "Ilja Mečnikov, narozený roku 1845 v dnešní Charkovské oblasti na Ukrajině, získal roku 1908 Nobelovu cenu za objev fagocytózy — schopnosti bílých krvinek pohlcovat cizorodé částice.",
+    "source_url": "https://en.wikipedia.org/wiki/%C3%89lie_Metchnikoff",
+    "source_quote": "Metchnikoff was born in the village of Ivanovka, Kharkov Governorate, in the Russian Empire … He and Paul Ehrlich were jointly awarded the 1908 Nobel Prize in Physiology or Medicine",
+    "voice": "Klíčový objev imunitního systému začal pozorováním obyčejné mořské hvězdice.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický historizující portrétní snímek vědce u mikroskopu v laboratoři konce 19. století, teplé světlo, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Objev, který zpochybnili, než ho uznali",
+        "fact": "Mečnikov roku 1882 vpíchl trny do larvy hvězdice a pozoroval, jak se kolem nich shlukují buňky — tyto buňky, fagocyty, později označil za hlavní obranný mechanismus vrozené imunity.",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%89lie_Metchnikoff",
+        "source_quote": "In 1882 he first demonstrated the process when he inserted small citrus thorns into starfish larvae, then found unusual cells surrounding the thorns",
+        "voice": "Odpověď na otázku, jak tělo bojuje s infekcemi, ležela v obyčejné larvě mořského živočicha.",
+        "image_prompt": "Fotorealistický makro snímek průhledné larvy mořské hvězdice ve vodě, vědecký styl fotografie, 16:9"
+      },
+      "kartograf": {
+        "headline": "Věda, která nezná hranice",
+        "fact": "Mečnikov se narodil na dnešním ukrajinském území, vystudoval a pracoval v Oděse i Petrohradu a klíčový výzkum nakonec dokončil v Paříži — jeho kariéra ukazuje, jak vědecké objevy tehdejší doby často vznikaly napříč evropskými říšemi.",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%89lie_Metchnikoff",
+        "voice": "Jeden vědec, tři různá města, jeden objev, který dodnes zachraňuje životy.",
+        "image_prompt": "Fotorealistický snímek staré univerzitní budovy z 19. století v Oděse, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-lide-sikorskyj",
+    "country": "Ukrajina",
+    "section": "Lidé",
+    "topic": "Sikorskyj",
+    "headline": "Rodák z Kyjeva, který vynalezl moderní vrtulník",
+    "fact": "Igor Sikorskyj se narodil roku 1889 v Kyjevě a později v USA zkonstruoval vrtulník VS-300, z něhož vychází konstrukce naprosté většiny dnešních vrtulníků.",
+    "source_url": "https://en.wikipedia.org/wiki/Igor_Sikorsky",
+    "source_quote": "Igor Sikorsky was born in Kiev, Russian Empire (now Kyiv, Ukraine), on May 25, 1889",
+    "voice": "Jeden rotor nahoře, jeden vzadu — recept, který od něj opsal celý svět.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický archivní snímek raného vrtulníku při zkušebním letu, otevřená konstrukce, 40. léta 20. století, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Od kyjevských škol po americké nebe",
+        "fact": "Sikorskyj emigroval po ruské revoluci do USA, kde roku 1939 poprvé vzlétl s vrtulníkem VS-300; jeho vylepšená verze R-4 se roku 1942 stala prvním sériově vyráběným vrtulníkem na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Igor_Sikorsky",
+        "source_quote": "the world's first mass-produced helicopter in 1942",
+        "voice": "Utekl před revolucí a doma nechal jen nápady, ze kterých postavil budoucnost letectví.",
+        "image_prompt": "Fotorealistický snímek vojenského vrtulníku na přistávací ploše, 40. léta, 16:9"
+      },
+      "kartograf": {
+        "headline": "Technický vzorec, který přežil sto let",
+        "fact": "Uspořádání s jedním hlavním a jedním ocasním rotorem, které Sikorskyj vyvinul ve 30. letech, se stalo standardem naprosté většiny vrtulníků vyráběných dodnes — jde o jedno z nejvlivnějších technických řešení v historii letectví.",
+        "source_url": "https://en.wikipedia.org/wiki/Igor_Sikorsky",
+        "source_quote": "has proven to be one of the most popular helicopter configurations, being used in most helicopters produced today",
+        "voice": "Jedno řešení z třicátých let létá dodnes nad hlavami lidí na celém světě.",
+        "image_prompt": "Fotorealistický snímek moderního vrtulníku ve vzduchu nad městem, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-kultura-vysyvanka",
+    "country": "Ukrajina",
+    "section": "Kultura & tradice",
+    "topic": "Vyšyvanka",
+    "headline": "Košile, která nosí ochranné vzory",
+    "fact": "Vyšyvanka je tradiční ukrajinská vyšívaná košile, jejíž geometrické vzory se podle lidové víry používaly jako ochranný symbol; každý region Ukrajiny má vlastní charakteristické vzory a barvy.",
+    "source_url": "https://en.wikipedia.org/wiki/Vyshyvanka",
+    "voice": "Vzor na rukávu prozradí zkušenému oku, ze které oblasti Ukrajiny nositel pochází.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek tradiční ukrajinské vyšívané košile vyšyvanky s červeno-černým geometrickým vzorem, ruční výšivka zblízka, přirozené světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Den, kdy celá země obleče výšivku",
+        "fact": "Od roku 2006 se každý třetí čtvrtek v květnu slaví Den vyšyvanky — svátek založený studentkou univerzity v Černovicích, který se postupně rozšířil mezi Ukrajinci po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Vyshyvanka",
+        "source_quote": "It is celebrated on the third Thursday of May.",
+        "voice": "Jeden konkrétní čtvrtek v roce se ulice náhle zbarví do červena a černa.",
+        "image_prompt": "Fotorealistický snímek davu lidí ve vyšívaných košilích na ulici ukrajinského města, slavnostní atmosféra, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Oděv jako mapa regionální identity",
+        "fact": "Protože se vzory vyšyvanky liší kraj od kraje, funguje košile jako neformální mapa regionálních identit Ukrajiny — a zároveň jako symbol jednoty, který spojuje lidi napříč jazykem i náboženstvím.",
+        "source_url": "https://en.wikipedia.org/wiki/Vyshyvanka",
+        "source_quote": "regardless of religion, language they speak or their place of residence",
+        "voice": "Kus látky, který dokáže spojit lidi, kteří se jinak neshodnou skoro na ničem.",
+        "image_prompt": "Fotorealistický snímek několika vyšívaných košil s odlišnými regionálními vzory rozložených vedle sebe, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-kultura-pysanky",
+    "country": "Ukrajina",
+    "section": "Kultura & tradice",
+    "topic": "Pysanky",
+    "headline": "Muzeum ve tvaru obřího kraslice",
+    "fact": "Muzeum pysanky v Kolomyji má centrální část postavenou do tvaru obří kraslice vysoké 14 metrů a širokou 10 metrů; ve sbírce uchovává přes 10 000 zdobených vajec.",
+    "source_url": "https://en.wikipedia.org/wiki/Pysanka_Museum",
+    "source_quote": "The museum is not only shaped like an egg (14 m in height and 10 m in diameter) … The museum has a collection of over 10,000 pysanky",
+    "voice": "Budova sama je největší kraslicí, jakou kdy kdo namaloval.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Muzea pysanky v Kolomyji, budova ve tvaru obří malované kraslice s tradičními ukrajinskými vzory, jasný den, 16:9",
+    "ll": [25.039, 48.528],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vosk, barva a trpělivost",
+        "fact": "Tradiční pysanky se zdobí voskovou batikou: vzor se napřed nakreslí horkým voskem, vejce se pak namáčí postupně od světlejší po tmavší barvu a nakonec se vosk roztaví a setře, čímž se odkryje barevný vzor.",
+        "source_url": "https://en.wikipedia.org/wiki/Pysanka",
+        "voice": "Barvy se skrývají pod voskem až do poslední chvíle, kdy je teplo odkryje.",
+        "image_prompt": "Fotorealistický detailní snímek ruky zdobící vejce voskovou technikou pysanky, barevné hotové kraslice v pozadí, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zvyk starý jako středověké město",
+        "fact": "Nejstarší dochovaná pysanka byla vykopána ve Lvově a pochází z 15. nebo 16. století, což dokládá, že tradice zdobených vajec na ukrajinském území sahá hluboko do středověku.",
+        "source_url": "https://en.wikipedia.org/wiki/Pysanka",
+        "source_quote": "excavated in Lviv in 2013 … dates to the 15th or 16th century",
+        "voice": "Vzor namalovaný před pěti sty lety čeká ve zemi, až ho někdo vykope.",
+        "image_prompt": "Fotorealistický snímek archeologického nálezu střepů starého zdobeného vejce na výstavě v muzeu, tlumené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-kultura-ivana-kupala",
+    "country": "Ukrajina",
+    "section": "Kultura & tradice",
+    "topic": "Ivana Kupala",
+    "headline": "Noc ohňů, věnců a přeskakování plamenů",
+    "fact": "Svátek Ivana Kupala se na Ukrajině slaví v noci z 23. na 24. června jako oslava letního slunovratu spojující pohanské a křesťanské tradice — mladí lidé při něm skáčou přes oheň a pouštějí věnce po vodě.",
+    "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day",
+    "source_quote": "Kupala Night combined two elements: pagan and Christian",
+    "voice": "Jedna noc v roce, kdy se dodnes věří, že voda, oheň i byliny mají zvláštní moc.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek lidí skákajících přes táborový oheň za soumraku na břehu řeky, věnce z květin plavou po vodě, letní večer, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Svátek slunovratu v křesťanském hávu",
+        "fact": "Oslava připadá na termín svátku narození Jana Křtitele, ale svými kořeny sahá do předkřesťanských oslav letního slunovratu — podobné zvyky se dodnes drží i v Polsku a dalších slovanských zemích.",
+        "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day",
+        "source_quote": "coincides with the Christian feast of the Nativity of St. John the Baptist",
+        "voice": "Církev svátku dala nové jméno, lidé si ale ponechali staré zvyky.",
+        "image_prompt": "Fotorealistický snímek věnců z lučních květin plovoucích po hladině řeky za soumraku, svíčky na věncích, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kalendář, který spojil dvě víry",
+        "fact": "Ivana Kupala je typickým příkladem synkretismu: nový křesťanský kalendář nezrušil starší lidové oslavy přírodních cyklů, ale včlenil je do svého data — podobný vzorec se v Evropě opakuje u řady letních i zimních svátků.",
+        "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day",
+        "voice": "Stejná noc, jiný důvod k oslavě, podle toho, koho se zeptáš.",
+        "image_prompt": "Fotorealistický snímek letní krajiny u řeky za soumraku s ohništi na obou březích, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-umeni-taras-sevcenko",
+    "country": "Ukrajina",
+    "section": "Umění",
+    "topic": "Taras Ševčenko",
+    "headline": "Nevolník, který se stal otcem ukrajinské literatury",
+    "fact": "Taras Ševčenko se narodil jako nevolník, svobodu získal až v roce 1838, a jeho básnická sbírka Kobzar je dodnes považována za základ moderní ukrajinské literatury.",
+    "source_url": "https://en.wikipedia.org/wiki/Taras_Shevchenko",
+    "source_quote": "Engelhardt signed the paperwork that released Shevchenko from serfdom on 5 May [O.S. 22 April] 1838 … regarded to be the foundation of modern Ukrainian literature",
+    "voice": "Píseň o svobodě napsal muž, kterému ji jiní lidé museli nejdřív vykoupit.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický historizující portrét ukrajinského básníka 19. století v tradičním oděvu, vážný výraz, tlumené světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Svoboda vykoupená obrazem",
+        "fact": "Ševčenka z nevolnictví roku 1838 vykoupili přátelé z uměleckých kruhů, kteří na jeho propuštění vybrali peníze prodejem portrétu namalovaného malířem Karlem Brjullovem.",
+        "source_url": "https://en.wikipedia.org/wiki/Taras_Shevchenko",
+        "source_quote": "Engelhardt signed the paperwork that released Shevchenko from serfdom on 5 May [O.S. 22 April] 1838",
+        "voice": "Jeden obraz vyměněný za jeden lidský osud — a ten osud pak psal dějiny.",
+        "image_prompt": "Fotorealistický snímek staré rukopisné knihy básní se secesním písmem, brk a inkoust vedle ní, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Básník jako zakladatel spisovného jazyka",
+        "fact": "Ševčenko psal v době, kdy ukrajinština byla vnímaná spíš jako lidové nářečí; jeho dílo pomohlo prosadit ji jako plnohodnotný literární jazyk, podobně jako to pro jiné národy udělali jejich národní buditelé v témže období.",
+        "source_url": "https://en.wikipedia.org/wiki/Taras_Shevchenko",
+        "voice": "Básník dokázal jazyku vlastního lidu vydobýt místo vedle velkých literatur Evropy.",
+        "image_prompt": "Fotorealistický snímek pomníku básníka na náměstí ukrajinského města, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-umeni-malevic",
+    "country": "Ukrajina",
+    "section": "Umění",
+    "topic": "Malevič",
+    "headline": "Černý čtverec, který zlomil pravidla malby",
+    "fact": "Kazimir Malevič, narozený roku 1879 v Kyjevě, představil roku 1915 obraz Černý čtverec a založil tím směr zvaný suprematismus — radikálně nezobrazivé geometrické umění.",
+    "source_url": "https://en.wikipedia.org/wiki/Kazimir_Malevich",
+    "source_quote": "23 February 1879, Kiev, Russian Empire (now Kyiv, Ukraine) … his Black Square (1915) … a radically non-objective form of painting",
+    "voice": "Jeden čtverec na plátně, a najednou celé umění nemuselo nic zobrazovat.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek galerie s vystaveným velkým černým čtvercovým obrazem na bílé zdi, minimalistické osvětlení, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obraz, co ho připravil o spánek",
+        "fact": "Malevič obraz Černý čtverec poprvé vystavil na výstavě v Petrohradu v prosinci 1915, a to na místě, kam se v ruských domácnostech tradičně věšely ikony — podle svědectví ho tvorba obrazu natolik vyčerpala, že týden nemohl jíst ani spát.",
+        "source_url": "https://en.wikipedia.org/wiki/Kazimir_Malevich",
+        "source_quote": "at the 0,10 exhibition in Petrograd on December 19, 1915 … was unable to eat, drink or sleep",
+        "voice": "Umělec dal obrazu místo vyhrazené svatým — a sám z toho pak nemohl spát.",
+        "image_prompt": "Fotorealistický snímek rohu výstavní místnosti s obrazem zavěšeným vysoko u stropu, styl ruské výstavy začátku 20. století, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kyjevský rodák v centru moderního umění",
+        "fact": "Malevič se narodil v Kyjevě, ale kariéru budoval v Moskvě a Petrohradu — jeho příběh ukazuje, jak umělci z dnešní Ukrajiny formovali celoevropské umělecké hnutí kolem roku 1915 zdaleka za hranicemi svého rodiště.",
+        "source_url": "https://en.wikipedia.org/wiki/Kazimir_Malevich",
+        "source_quote": "his Black Square (1915), first shown at the Last Futurist Exhibition 0,10 in Petrograd",
+        "voice": "Odkud pocházel a kde se proslavil, byla o desetiletí později úplně jiná otázka.",
+        "image_prompt": "Fotorealistický snímek moskevské galerie moderního umění zvenčí, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-umeni-bandura",
+    "country": "Ukrajina",
+    "section": "Umění",
+    "topic": "Bandura",
+    "headline": "Nástroj se šedesáti osmi strunami",
+    "fact": "Bandura je ukrajinský strunný nástroj kombinující prvky loutny a citery; zatímco nejstarší nástroje z počátku 18. století měly jen 5 až 12 strun, moderní koncertní bandury jich mají až 68.",
+    "source_url": "https://en.wikipedia.org/wiki/Bandura",
+    "source_quote": "Early instruments (c. 1700) had 5 to 12 strings … then to 56 strings – 68 strings on modern 'concert' instruments (1954)",
+    "voice": "Ruce hráče musí zvládnout skoro sedmdesát strun najednou — a přitom vypadá hra lehce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ukrajinského hráče na banduru, velký hruškovitý nástroj s mnoha strunami, tradiční oblečení, jeviště, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nástroj potulných zpěváků",
+        "fact": "Bandurou se odedávna doprovázeli kobzaři — potulní zpěváci a vypravěči, kteří na ukrajinských vsích šířili historické písně a legendy, často jako nevidomí hudebníci.",
+        "source_url": "https://en.wikipedia.org/wiki/Bandura",
+        "voice": "Slepý zpěvák se strunami v rukou uměl vyprávět dějiny líp než leckterá kniha.",
+        "image_prompt": "Fotorealistický snímek staršího ukrajinského kobzaře hrajícího na banduru na vesnickém dvoře, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nástroj jako nositel národní paměti",
+        "fact": "Postupné rozšiřování počtu strun bandury v uplynulém století odráželo snahu udělat z lidového nástroje symbol moderní ukrajinské identity — dnes je bandura vedle vyšyvanky jedním z neoficiálních národních symbolů Ukrajiny.",
+        "source_url": "https://en.wikipedia.org/wiki/Bandura",
+        "voice": "Přidávaná struna po struně z lidového nástroje pomalu udělala symbol celého národa.",
+        "image_prompt": "Fotorealistický snímek řady různě velkých bander vystavených v muzeu vedle sebe, tlumené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-sport-andrij-sevcenko",
+    "country": "Ukrajina",
+    "section": "Sport",
+    "topic": "Andrij Ševčenko",
+    "headline": "Fotbalista, kterého ověnčili Zlatým míčem",
+    "fact": "Útočník Andrij Ševčenko získal roku 2004 Zlatý míč pro nejlepšího fotbalistu Evropy a stal se teprve třetím Ukrajincem, který toto ocenění kdy vyhrál.",
+    "source_url": "https://en.wikipedia.org/wiki/Andriy_Shevchenko",
+    "source_quote": "Shevchenko capped off the year by being awarded the 2004 Ballon d'Or, becoming the third Ukrainian player ever to win the award",
+    "voice": "Gólová řada z Kyjeva do Milána a nakonec až na vrchol evropského fotbalu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fotbalisty ve žlutomodrém ukrajinském dresu na stadionu, akční záběr při střele, večerní osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Z Kyjeva do Milána za rekordní přestup",
+        "fact": "Ševčenko vyrostl v Dynamu Kyjev a v roce 1999 přestoupil do AC Milán za tehdy rekordní částku; v Miláně i v londýnské Chelsea patřil mezi nejobávanější střelce evropského fotbalu.",
+        "source_url": "https://en.wikipedia.org/wiki/Andriy_Shevchenko",
+        "source_quote": "Shevchenko joined Italian club Milan for a then-record transfer fee of $25 million",
+        "voice": "Jeden přestup, který v té době trhal cenové rekordy celého fotbalového trhu.",
+        "image_prompt": "Fotorealistický snímek fotbalového stadionu San Siro v Miláně za soumraku, plné tribuny, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport jako výkladní skříň mladého státu",
+        "fact": "Ševčenkovy úspěchy přišly krátce po vzniku samostatné Ukrajiny — stal se tak jedním z mála světově uznávaných symbolů nového státu mimo politiku a hospodářství.",
+        "source_url": "https://en.wikipedia.org/wiki/Andriy_Shevchenko",
+        "voice": "Země teprve hledala svou tvář ve světě, a fotbal jí ji na chvíli propůjčil.",
+        "image_prompt": "Fotorealistický snímek fanoušků s ukrajinskými vlajkami na tribuně stadionu, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-sport-klickove",
+    "country": "Ukrajina",
+    "section": "Sport",
+    "topic": "Kličkové",
+    "headline": "Bratři, kteří ovládli boxerskou těžkou váhu",
+    "fact": "Bratři Vitalij a Volodymyr Kličkové drží od roku 2011 Guinnessův rekord za nejvíc vyhraných zápasů o titul mistra světa v těžké váze mezi sourozenci.",
+    "source_url": "https://en.wikipedia.org/wiki/Vitali_Klitschko",
+    "source_quote": "Wladimir and Vitali entered the Guinness World Records book as the pair of brothers with most world heavyweight title fight wins",
+    "voice": "Když skončil zápas jednoho bratra, ring už čekal na toho druhého.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dvou vysokých boxerů v těžké váze v ringu při vážení, ukrajinské vlajky v pozadí, ostré světlo reflektorů, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Éra, kterou pojmenovali po jedné rodině",
+        "fact": "Od roku 2006 do roku 2015 bratři Kličkové společně drželi prakticky všechny hlavní tituly světové těžké váhy — období se v boxu dodnes přezdívá Klička éra.",
+        "source_url": "https://en.wikipedia.org/wiki/Vitali_Klitschko",
+        "source_quote": "Vitali and Wladimir … dominated heavyweight boxing, a period widely known as the 'Klitschko Era' of the division",
+        "voice": "Chtěl jsi titul v těžké váze? Musel jsi projít přes jednoho z bratrů.",
+        "image_prompt": "Fotorealistický snímek boxerského zápasu v těžké váze, dva zápasníci v akci, dav diváků v pozadí, ostré světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sportovci jako národní hrdinové",
+        "fact": "Kličkové jsou na Ukrajině natolik populární, že je celonárodní anketa v roce 2008 zařadila mezi patnáct největších Ukrajinců všech dob — ukazuje to, jak sport dokáže formovat obraz národa navenek i uvnitř.",
+        "source_url": "https://en.wikipedia.org/wiki/Vitali_Klitschko",
+        "source_quote": "in 2008 the Klitschko brothers were voted the 15th greatest Ukrainians of all time",
+        "voice": "Sportovní sláva se tu proměnila přímo v místo v národních dějinách.",
+        "image_prompt": "Fotorealistický snímek davu fanoušků oslavujících boxerské vítězství na náměstí, večerní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-sport-bubka",
+    "country": "Ukrajina",
+    "section": "Sport",
+    "topic": "Bubka",
+    "headline": "Muž, který jako první přeskočil šest metrů",
+    "fact": "Serhij Bubka jako první atlet v historii překonal ve skoku o tyči hranici 6 metrů, a to 13. července 1985 v Paříži; celkem světový rekord vylepšil rekordních 35krát.",
+    "source_url": "https://en.wikipedia.org/wiki/Sergey_Bubka",
+    "source_quote": "He cleared 6.00 meters (19 feet 8 inches) for the first time on 13 July 1985 in Paris … Bubka broke the world record in men's pole vault a record 35 times (17 outdoors, 18 indoors)",
+    "voice": "Tyč, co ho katapultovala výš, než si kdokoli předtím dokázal představit.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek atleta při skoku o tyči přes vysokou laťku na stadionu, dramatický okamžik ve vzduchu, večerní osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rekordman, co překonával sám sebe",
+        "fact": "Bubka pocházející z Luhanska překonal světový rekord ve skoku o tyči celkem 35krát — 17krát venku a 18krát v hale — a tento počet dodnes nikdo jiný v atletice nepřekonal.",
+        "source_url": "https://en.wikipedia.org/wiki/Sergey_Bubka",
+        "source_quote": "Bubka broke the world record in men's pole vault a record 35 times (17 outdoors, 18 indoors)",
+        "voice": "Nejvíc porazil ve své kariéře jen jednoho soupeře — sám sebe, znovu a znovu.",
+        "image_prompt": "Fotorealistický snímek tréninkové haly pro skok o tyči, sportovec při doskoku na žíněnku, umělé osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od sovětské vlajky k ukrajinské",
+        "fact": "Bubka závodil nejdřív za Sovětský svaz a po roce 1991 už za samostatnou Ukrajinu — jeho kariéra tak doslova protíná rozpad jedné velmoci a vznik nového nezávislého státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Sergey_Bubka",
+        "source_quote": "represented the Soviet Union from 1981 until its dissolution in 1991 and Ukraine thereafter",
+        "voice": "Stejný sportovec, stejná tyč, ale úplně jiná vlajka nad hlavou.",
+        "image_prompt": "Fotorealistický snímek atletického stadionu s ukrajinskou vlajkou vlající v pozadí, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-jazyk-cyrilice",
+    "country": "Ukrajina",
+    "section": "Jazyk & slova",
+    "topic": "Cyrilice",
+    "headline": "Čtyři písmena, která v ruské abecedě nenajdete",
+    "fact": "Ukrajinská abeceda má 33 písmen a obsahuje čtyři znaky, které ruská cyrilice nemá: і, ї, є a ґ.",
+    "source_url": "https://en.wikipedia.org/wiki/Ukrainian_alphabet",
+    "source_quote": "The modern Ukrainian alphabet has 33 letters in total: 21 consonants, 1 semivowel, 10 vowels and 1 palatalization sign",
+    "voice": "Na první pohled stejné písmo, a přece každý jazyk píše trochu jinak.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Písmeno, které mění zvuk slova",
+        "fact": "Písmeno ґ se používá jen pro tvrdé 'g' (jako v češtině), zatímco běžné г v ukrajinštině zní jako hrdelní 'h' — v ruštině přitom stejné písmeno г vždy zní jako tvrdé 'g'.",
+        "source_url": "https://en.wikipedia.org/wiki/Ukrainian_alphabet",
+        "source_quote": "ge (ґ), used for the less-common velar plosive /ɡ/ sound, whereas in Ukrainian the common Cyrillic г represents a glottal fricative",
+        "voice": "Stejně vypadající písmenko, a přesto úplně jiný zvuk podle jazyka, ve kterém se čte.",
+        "image_prompt": "Fotorealistický typografický snímek zvětšených ukrajinských cyrilických písmen na starém psacím stroji, detail kláves, 16:9"
+      },
+      "kartograf": {
+        "headline": "Písmo jako odraz jazykové hranice",
+        "fact": "Rozdíly mezi ukrajinskou a ruskou cyrilicí jsou malé, ale systematické — ukazují, že ukrajinština a ruština jsou dva samostatné slovanské jazyky s vlastním pravopisným systémem, ne jen nářečí jednoho jazyka.",
+        "source_url": "https://en.wikipedia.org/wiki/Ukrainian_alphabet",
+        "voice": "Pár odlišných písmenek dokáže potvrdit, že jde o dva různé jazyky, ne o jeden se dvěma přízvuky.",
+        "image_prompt": "Fotorealistický snímek dvou starých knih otevřených vedle sebe s mírně odlišným cyrilickým textem, knihovna, teplé světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-jazyk-surzyk",
+    "country": "Ukrajina",
+    "section": "Jazyk & slova",
+    "topic": "Suržyk",
+    "headline": "Jazyk na půl cesty mezi ukrajinštinou a ruštinou",
+    "fact": "Suržyk je směs ukrajinštiny a ruštiny používaná hlavně na venkově východní a jižní Ukrajiny; podle odhadů z roku 2003 takto mluví 11 až 18 % obyvatel země.",
+    "source_url": "https://en.wikipedia.org/wiki/Surzhyk",
+    "source_quote": "According to data presented by the Kyiv International Institute of Sociology in 2003, 11% to 18% of the people of Ukraine were found to communicate in Surzhyk",
+    "voice": "Ani jeden jazyk, ani druhý — a přesto naprosto srozumitelný oběma stranám.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Čím blíž k Rusku, tím víc se mísí",
+        "fact": "Podíl mluvčích suržyku je nejvyšší na jihu Ukrajiny (přes 12,4 % obyvatel) a na východě (9,6 %), zatímco na západě země ho podle průzkumů používá jen 2,5 % lidí.",
+        "source_url": "https://en.wikipedia.org/wiki/Surzhyk",
+        "source_quote": "In western Ukraine, Surzhyk is spoken by 2.5% of the population, while in the south, it is spoken by over 12.4% of the population. In the east, 9.6% of the population speaks Surzhyk.",
+        "voice": "Jazyková mapa se tu mění plynule, ne skokem přes jasnou čáru.",
+        "image_prompt": "Fotorealistický snímek mapy Ukrajiny s barevně vyznačenými jazykovými oblastmi, ilustrativní styl, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přechodový jazyk mezi dvěma standardy",
+        "fact": "Suržyk vzniká typicky tam, kde se dlouhodobě prolínají dvě blízce příbuzné jazykové komunity — podobné smíšené varianty jazyka existují i jinde v pohraničních oblastech Evropy, jen dostávají jiná jména.",
+        "source_url": "https://en.wikipedia.org/wiki/Surzhyk",
+        "voice": "Kdekoli se dvě podobné řeči potkávají dost dlouho, vznikne mezi nimi něco třetího.",
+        "image_prompt": "Fotorealistický snímek pohraniční vesnice na východě Ukrajiny, smíšená architektura, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-jazyk-hymna",
+    "country": "Ukrajina",
+    "section": "Jazyk & slova",
+    "topic": "Hymna",
+    "headline": "Hymna, jejíž text napsal etnograf z Kyjeva",
+    "fact": "Text ukrajinské hymny napsal roku 1862 kyjevský etnograf Pavlo Čubynskyj, hudbu k němu složil o rok později Mychajlo Verbyckyj; jako oficiální státní hymna byla hudba přijata v roce 1992 a text až v roce 2003.",
+    "source_url": "https://en.wikipedia.org/wiki/National_anthem_of_Ukraine",
+    "source_quote": "written in 1862 by Pavlo Chubynskyi, an ethnographer from Kyiv … On 15 January 1992 … adopted by the Ukrainian Parliament, as the state anthem … the lyrics for the anthem were not officially adopted until 6 March 2003",
+    "voice": "Melodie i slova čekaly na oficiální schválení skoro století a půl.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova o slávě a svobodě, které ještě nezahynuly",
+        "fact": "Název hymny se překládá jako 'Ukrajina ještě nezahynula, ani její sláva, ani svoboda' — vznikl v 19. století jako vlastenecká báseň v době, kdy Ukrajina neměla vlastní stát.",
+        "source_url": "https://en.wikipedia.org/wiki/National_anthem_of_Ukraine",
+        "source_quote": "translates to 'The Glory and Will of Ukraine Have Not Yet Perished'",
+        "voice": "Píseň napsaná pro zemi, která tehdy na mapě jako samostatný stát vůbec neexistovala.",
+        "image_prompt": "Fotorealistický snímek staré rukopisné básně s ukrajinským textem na zažloutlém papíře, brk vedle ní, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hymna jako svědek dvou nezávislostí",
+        "fact": "Melodie ukrajinské hymny byla oficiálně přijata hned po vyhlášení nezávislosti v roce 1992, ale text čekal na definitivní schválení dalších jedenáct let — ukazuje to, jak i symboly nového státu vznikají postupně, ne v jedné chvíli.",
+        "source_url": "https://en.wikipedia.org/wiki/National_anthem_of_Ukraine",
+        "source_quote": "the lyrics for the anthem were not officially adopted until 6 March 2003",
+        "voice": "I hymna potřebovala víc než deset let, než dostala svou konečnou, oficiální podobu.",
+        "image_prompt": "Fotorealistický snímek budovy ukrajinského parlamentu v Kyjevě, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-jidlo-borsc",
+    "country": "Ukrajina",
+    "section": "Jídlo",
+    "topic": "Boršč",
+    "headline": "Polévka, kterou UNESCO zapsalo uprostřed války",
+    "fact": "UNESCO v roce 2022, krátce po ruské invazi, zařadilo kulturu vaření ukrajinského boršče na seznam nehmotného dědictví vyžadujícího naléhavou ochranu.",
+    "source_url": "https://en.wikipedia.org/wiki/Borscht",
+    "source_quote": "In 2022, shortly after Russia's invasion of Ukraine, UNESCO recognized the 'Culture of Ukrainian borscht cooking' on its List of Intangible Cultural Heritage in Need of Urgent Safeguarding",
+    "voice": "Polévka se najednou ocitla na seznamu věcí, které je potřeba chránit před zánikem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek talíře syté červené boršče se zakysanou smetanou a petrželkou na dřevěném stole, teplé domácí světlo, 16:9",
+    "tags": ["kulturni-geografie", "aktualni-temata", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Červená barva z jedné kořenové zeleniny",
+        "fact": "Typickou červenou barvu dává boršči červená řepa; k dalším surovinám patří zelí, brambory a maso, přičemž recept se region od regionu mírně liší.",
+        "source_url": "https://en.wikipedia.org/wiki/Borscht",
+        "source_quote": "made with red beetroots as one of the main ingredients, which give the dish its distinctive red color",
+        "voice": "Jedna kořenová zelenina rozhoduje o tom, že polévka vypadá skoro jako víno.",
+        "image_prompt": "Fotorealistický detailní snímek syrové červené řepy nakrájené na plátky vedle vroucího hrnce boršče, kuchyňské světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, které si nárokuje víc zemí",
+        "fact": "UNESCO ve svém rozhodnutí výslovně uvedlo, že vaření boršče praktikuje víc zemí regionu a zápis na seznam neznamená výhradní vlastnictví jedné země — jídlo tak zůstává sdíleným dědictvím střední a východní Evropy.",
+        "source_url": "https://en.wikipedia.org/wiki/Borscht",
+        "source_quote": "their inscription does not imply exclusivity or ownership of the dish for any particular country",
+        "voice": "I UNESCO muselo přiznat, že o tenhle recept se dělí víc sousedů najednou.",
+        "image_prompt": "Fotorealistický snímek několika mís s různými variantami boršče vedle sebe na stole, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-jidlo-vareniky",
+    "country": "Ukrajina",
+    "section": "Jídlo",
+    "topic": "Vareniky",
+    "headline": "Knedlíčky plněné podle kraje i svátku",
+    "fact": "Vareniky jsou tradiční ukrajinské knedlíčky z nekynutého těsta plněné sladkou nebo slanou náplní; na rozdíl od polských pirohů mívají tenčí těsto a nejčastěji jen bramborovou náplň.",
+    "source_url": "https://en.wikipedia.org/wiki/Varenyky",
+    "source_quote": "the former has thinner, softer dough and traditionally simpler filling, most often only consisting of potato",
+    "voice": "Stejný tvar jako u souseda, ale úplně jiná ruka, co těsto hnětla.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek talíře ukrajinských vareniků se zakysanou smetanou a osmaženou cibulkou, teplé domácí světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Náplň, která prozradí, odkud jsi",
+        "fact": "Na západě Ukrajiny se vareniky plní hlavně bramborami a sýrem nebo ovocem, uprostřed země zelím a houbami a na jihu masem — bezmasé varianty se tradičně podávají na Štědrý večer.",
+        "source_url": "https://en.wikipedia.org/wiki/Varenyky",
+        "voice": "Podle náplně na talíři bys skoro poznal, ze které části země jídlo pochází.",
+        "image_prompt": "Fotorealistický snímek rukou plnících těsto na vareniky bramborovou náplní na dřevěném prkénku, kuchyňské světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo jako pomník i svátek",
+        "fact": "Varenikům je v Čerkaské oblasti věnovaný samostatný pomník a v Bukovelu se koná i jejich výroční festival — důkaz, že jídlo tu funguje nejen jako pokrm, ale i jako součást regionální identity a turistiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Varenyky",
+        "source_quote": "a monument dedicated to varenyky was erected in Cherkasy Oblast",
+        "voice": "Jídlo, kterému lidé postavili sochu, si zaslouží víc než jen místo na talíři.",
+        "image_prompt": "Fotorealistický snímek sochy zobrazující tradiční knedlíček na malém náměstí ukrajinského města, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-jidlo-salo",
+    "country": "Ukrajina",
+    "section": "Jídlo",
+    "topic": "Salo",
+    "headline": "Slanina, které se věnuje celé muzeum",
+    "fact": "Salo, nasolený vepřový podkožní tuk, je tradiční ukrajinská pochoutka jedená syrová i vařená s žitným chlebem a česnekem; ve Lvově mu je věnované samostatné muzeum a 27. srpna se na Ukrajině neoficiálně slaví Den sala.",
+    "source_url": "https://en.wikipedia.org/wiki/Salo_(food)",
+    "source_quote": "There is a Museum of Salo in Lviv, Ukraine … On August 27, the Salo Day is informally celebrated in Ukraine",
+    "voice": "Jídlo, kterému se lidé smějí v anekdotách, a přesto mu postavili vlastní muzeum.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek nakrájených plátků bílého sádla salo na dřevěném prkénku s žitným chlebem, česnekem a paprikou, přirozené světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tuk, který se solí místo se smaží",
+        "fact": "Salo se připravuje nasolením plátů tuku v dřevěných bednách nebo sudech a často se ochucuje paprikou, česnekem nebo pepřem — díky soli vydrží dlouho i bez chlazení.",
+        "source_url": "https://en.wikipedia.org/wiki/Salo_(food)",
+        "voice": "Sůl tu dělá práci, kterou jinde odvádí lednička.",
+        "image_prompt": "Fotorealistický snímek dřevěné bedny s naskládanými nasolenými plátky sádla, sůl a koření vedle ní, sklepní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Symbol, ze kterého vznikly i vtipy",
+        "fact": "Salo je natolik spojené s ukrajinskou identitou, že se stalo předmětem množství vtipů o Ukrajincích — jeden takový vtip dal vzniknout i skutečnému výrobku, čokoládovému „salu“.",
+        "source_url": "https://en.wikipedia.org/wiki/Salo_(food)",
+        "source_quote": "A joke about Ukrainians gave rise to a condiment, chocolate salo",
+        "voice": "Národní stereotyp se tu nakonec proměnil ve skutečnou pochoutku na pultu obchodu.",
+        "image_prompt": "Fotorealistický snímek balení žertovného čokoládového výrobku ve tvaru plátku sádla ve výloze obchodu, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-historie-kyjevska-rus",
+    "country": "Ukrajina",
+    "section": "Historie",
+    "topic": "Kyjevská Rus",
+    "headline": "Stát, ke kterému se hlásí tři dnešní národy",
+    "fact": "Kyjevská Rus byla raně středověký stát východních Slovanů s centrem v Kyjevě, existující od konce 9. do poloviny 13. století; za svého kulturního předka ji dnes považují Ukrajina, Rusko i Bělorusko.",
+    "source_url": "https://en.wikipedia.org/wiki/Kievan_Rus%27",
+    "source_quote": "from the late 9th to the mid-13th century … The modern nations of Belarus, Russia, and Ukraine all claim Kievan Rus' as their cultural ancestor",
+    "voice": "Jeden společný kořen, ze kterého dnes vyrostly tři odlišné státy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek rekonstruovaného dřevěného opevněného hradiště na břehu řeky, raný středověk, ranní mlha, bez lidí, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obchodní cesta od Vikingů k Byzanci",
+        "fact": "Kyjevská Rus vznikla podél obchodní trasy spojující Skandinávii s Byzancí; její vládci vedení varjažskou (severskou) dynastií ovládli Kyjev a odtud postupně sjednotili okolní slovanská území.",
+        "source_url": "https://en.wikipedia.org/wiki/Kievan_Rus%27",
+        "voice": "Obchodní stezka od severu k jihu se nakonec proměnila v celý stát.",
+        "image_prompt": "Fotorealistický snímek dřevěné lodi vikingského typu na řece obklopené lesnatými břehy, ranní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Proč se tři národy hlásí k jednomu základu",
+        "fact": "Rozpad Kyjevské Rusi po mongolské invazi vedl k rozdělení jejího území mezi různá pozdější knížectví a říše, ze kterých se postupně vyvinuly dnešní Ukrajina, Rusko a Bělorusko — proto všechny tři země odkazují ke stejnému historickému základu.",
+        "source_url": "https://en.wikipedia.org/wiki/Kievan_Rus%27",
+        "source_quote": "from the late 9th to the mid-13th century",
+        "voice": "Jeden stát se rozpadl, a z jeho kusů postupně vyrostly tři různé národní příběhy.",
+        "image_prompt": "Fotorealistický snímek staré mapy východní Evropy s vyznačenými knížectvími, muzejní vitrína, tlumené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-historie-holodomor",
+    "country": "Ukrajina",
+    "section": "Historie",
+    "topic": "Holodomor",
+    "headline": "Hladomor, který si vyžádal miliony obětí",
+    "fact": "Holodomor byl hladomor v letech 1932–1933 na sovětské Ukrajině, jehož nejvíc obětí připadá na jaro 1933; podle novější odhadové literatury si vyžádal mezi 3,5 a 5 miliony obětí.",
+    "source_url": "https://en.wikipedia.org/wiki/Holodomor",
+    "source_quote": "1932–1933 … the most victims recorded in spring 1933 … between 3.5 and 5 million victims",
+    "voice": "Číslo tak velké, že si ho lidská mysl dokáže jen těžko představit.",
+    "visual_type": "typographic",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hladomor uprostřed úrodné země",
+        "fact": "Hladomor postihl právě agrikulturně bohatou ukrajinskou step s úrodnou černozemí — k hladu tu vedla kombinace nízké úrody, sovětské kolektivizace zemědělství a vysokých povinných dodávek obilí státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Holodomor",
+        "voice": "Lidé umírali hladem na půdě, která jinak dokázala živit obilím půl Evropy.",
+        "image_prompt": "Fotorealistický snímek opuštěného ukrajinského stepního pole za soumraku, prázdná krajina, tlumené barvy, 16:9"
+      },
+      "kartograf": {
+        "headline": "Uznání, které přišlo o desítky let později",
+        "fact": "Od roku 2006 uznalo Holodomor za genocidu Ukrajina i více než třicet dalších zemí a Evropský parlament — mezinárodní uznávání takto citlivých historických událostí často trvá celé generace.",
+        "source_url": "https://en.wikipedia.org/wiki/Holodomor",
+        "source_quote": "Since 2006, the Holodomor has been recognized as a genocide by Ukraine and 33 other UN member states",
+        "voice": "Trvalo desítky let, než se svět shodl, jak tuhle tragédii vůbec pojmenovat.",
+        "image_prompt": "Fotorealistický snímek pamětní svíčky a obilných klasů na památníku Holodomoru v Kyjevě, tlumené večerní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ua-historie-nezavislost-1991",
+    "country": "Ukrajina",
+    "section": "Historie",
+    "topic": "Nezávislost 1991",
+    "headline": "Den, kdy vznikla samostatná Ukrajina",
+    "fact": "Ukrajina vyhlásila nezávislost 24. srpna 1991 a rozhodnutí potvrdilo v prosinci téhož roku referendum, ve kterém pro samostatnost hlasovalo přes 90 % voličů.",
+    "source_url": "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine",
+    "source_quote": "the Act of Declaration of Independence of Ukraine was adopted by the Supreme Soviet of the Ukrainian SSR (Verkhovna Rada) on 24 August 1991 … more than 90% voting in favor, and 84% of the electorate participating",
+    "voice": "Necelé čtyři měsíce dělily vyhlášení nezávislosti od chvíle, kdy ji potvrdili sami občané.",
+    "visual_type": "typographic",
+    "tags": ["dejiny", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Referendum, které rozhodlo ve všech regionech",
+        "fact": "Referendum o nezávislosti 1. prosince 1991 podpořila většina obyvatel ve všech regionech Ukrajiny, včetně těch na východě a jihu země — vysoká celostátní podpora dodala nově vzniklému státu širokou legitimitu.",
+        "source_url": "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine",
+        "source_quote": "The declaration was affirmed by a majority of Ukrainians in all regions of Ukraine by an independence referendum on 1 December",
+        "voice": "Souhlas napříč celou zemí dal novému státu pevný start.",
+        "image_prompt": "Fotorealistický snímek volební místnosti s ukrajinskou vlajkou v roce 1991, lidé vhazující hlasovací lístky, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Konec jedné éry, začátek nové mapy",
+        "fact": "Vyhlášení ukrajinské nezávislosti v srpnu 1991 bylo jedním z klíčových kroků k rozpadu Sovětského svazu téhož roku — z jednoho velkého státu tak vzniklo najednou hned několik nových samostatných zemí.",
+        "source_url": "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine",
+        "source_quote": "the Act of Declaration of Independence of Ukraine was adopted by the Supreme Soviet of the Ukrainian SSR (Verkhovna Rada) on 24 August 1991",
+        "voice": "Jedna mapa zmizela ze stolu a během pár měsíců ji nahradila úplně nová sada hranic.",
+        "image_prompt": "Fotorealistický snímek staré mapy Sovětského svazu z roku 1991 s vyznačenými novými hranicemi, archivní tón, 16:9"
+      }
+    }
+  }
+]

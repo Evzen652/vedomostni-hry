@@ -1,0 +1,937 @@
+[
+  {
+    "id": "es-mista-sagrada-familia",
+    "country": "Španělsko",
+    "section": "Místa",
+    "topic": "Sagrada Família",
+    "headline": "Kostel, který se staví přes 140 let",
+    "fact": "Stavební práce na barcelonské Sagradě Família začaly v roce 1882 a stále trvají; od 30. října 2025 je tenhle nedokončený chrám zároveň nejvyšším kostelem na světě.",
+    "source_url": "https://cs.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia",
+    "source_quote": "Od 30. října 2025 je Sagrada Família nejvyšším kostelem na světě.",
+    "voice": "Zedníci, co ji začínali, neznali auta — a ti dnešní ji pořád nemají hotovou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Sagrada Família basilica in Barcelona at golden hour, towering organic stone spires with construction cranes, clear sky, no text, 16:9",
+    "ll": [
+      2.1744,
+      41.4036
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Osmnáct věží, každá pro jinou postavu",
+        "fact": "Gaudího plán počítá s 18 věžemi: dvanáct patří apoštolům, čtyři evangelistům, jedna Panně Marii a ta nejvyšší Ježíši Kristu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia",
+        "source_quote": "Jeden z nejpromyšlenějších znaků je 18 věží, které reprezentují 12 apoštolů, 4 evangelisty, Pannu Marii a ta nejvyšší Ježíše Krista.",
+        "voice": "Na věže se dá dívat jako na rodinnou fotografii, jen vytesanou do kamene.",
+        "image_prompt": "Photorealistic upward view of the Sagrada Família bell towers from the inner courtyard, intricate stone pinnacles against blue sky, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Chrám, který přerostl celé předměstí",
+        "fact": "Zadavatelé chtěli roku 1882 postavit na tehdejším předměstí Barcelony jen skromný farní kostel; místo něj tu vyrostla stavba, které se musela přizpůsobit celá rozšiřující se čtvrť velkoměsta.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia",
+        "source_quote": "Zadavateli stavby byli roku 1882 barcelonští členové katolického řádu Sv. Josefa, kteří zamýšleli postavit na tehdejším předměstí Barcelony pouze skromný farní kostel.",
+        "voice": "Objednali si vesnický kostelík a dostali stavbu, kolem které museli přeskládat město.",
+        "image_prompt": "Photorealistic aerial view of Barcelona's grid-planned Eixample district with the Sagrada Família rising above the uniform city blocks, hazy daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-mista-alhambra",
+    "country": "Španělsko",
+    "section": "Místa",
+    "topic": "Alhambra",
+    "headline": "Palác z červených cihel nad Granadou",
+    "fact": "Alhambra, palácový a pevnostní komplex maurských panovníků Granady, se stavěl především v letech 1284 až 1354; její jméno znamená v arabštině červená, patrně podle sluncem vypálených cihel vnějších zdí.",
+    "source_url": "https://cs.wikipedia.org/wiki/Alhambra",
+    "source_quote": "Palác se stavěl především v letech 1284 až 1354, za vlády Al Ahmara a jeho nástupců.",
+    "voice": "Zvenku strohá pevnost, uvnitř krajkoví z kamene — ten rozdíl si architekt zjevně naplánoval.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Alhambra fortress on its hill above Granada with the snowy Sierra Nevada behind it, warm evening light, no people, no text, 16:9",
+    "ll": [
+      -3.5881,
+      37.1761
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lví fontána jako vodní hodiny",
+        "fact": "Lví dvůr je 35 metrů dlouhý a obklopuje ho ochoz na 124 bílých mramorových sloupech; podle tradice sloužilo dvanáct lvů u fontány jako časomíra, protože voda proudila každou hodinu z jiného z nich.",
+        "source_url": "https://cs.wikipedia.org/wiki/Alhambra",
+        "source_quote": "Věhlasné Patio de los Leones (Lví dvůr) je protáhlé 35 m do délky a 20 m do šíře, obklopené nízkým ochozem na 124 bílých mramorových sloupech.",
+        "voice": "Kdo chtěl vědět, kolik je hodin, nedíval se na ciferník, ale na to, kterému lvu teče voda z tlamy.",
+        "image_prompt": "Photorealistic photo of the Court of the Lions in the Alhambra, slender white marble columns, central fountain with twelve stone lions, morning light, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Voda přivedená osm kilometrů z hor",
+        "fact": "Fontány a kaskády Alhambry napájí voda z osmikilometrového přivaděče z řeky Darro nad Granadou — bez tohoto vodního díla by zahrady na suchém andaluském kopci nemohly existovat.",
+        "source_url": "https://cs.wikipedia.org/wiki/Alhambra",
+        "source_quote": "Ty jsou napájeny vodou z přivaděče 8 km dlouhého z řeky Daro od kláštera Jesus del Valle stojícího nad Granadou.",
+        "voice": "Zahrada uprostřed vyprahlé Andalusie je vždycky hlavně otázka toho, odkud se přivede voda.",
+        "image_prompt": "Photorealistic photo of a narrow stone water channel running through the terraced gardens of the Generalife above Granada, dry hills in the background, bright daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-mista-santiago-de-compostela",
+    "country": "Španělsko",
+    "section": "Místa",
+    "topic": "Katedrála v Santiagu de Compostela",
+    "headline": "Cíl cesty, na kterou se chodí pěšky",
+    "fact": "Katedrála v galicijském Santiagu de Compostela je legendárním pohřebištěm apoštola svatého Jakuba a cílem svatojakubské cesty; stavba dnešní katedrály začala v roce 1075.",
+    "source_url": "https://cs.wikipedia.org/wiki/Katedr%C3%A1la_v_Santiago_de_Compostela",
+    "source_quote": "stavba dnešní katedrály začala v roce 1075 za panování Alfonse VI.",
+    "voice": "Do jiných kostelů se vejde z ulice, sem se chodí týdny pěšky přes půl Evropy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the baroque western facade of Santiago de Compostela cathedral seen across the Praza do Obradoiro, wet granite paving after rain, soft overcast light, no text, 16:9",
+    "ll": [
+      -8.5449,
+      42.8806
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kadidelnice, která létá nad hlavami",
+        "fact": "Obří kadidelnice Botafumeiro váží 80 kilogramů a měří 1,6 metru; osm mužů ji rozhoupe tak, že se téměř dotýká stropu a může dosáhnout rychlosti 68 km/h.",
+        "source_url": "https://cs.wikipedia.org/wiki/Botafumeiro",
+        "source_quote": "Váží 80 kg a na výšku měří 1,6 m.",
+        "voice": "Když se rozlétne nad lavicemi, člověk radši sleduje lano než oltář.",
+        "image_prompt": "Photorealistic interior photo of a vast romanesque cathedral nave with a huge silver censer swinging on ropes high above the transept, trails of incense smoke, dramatic light shafts, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Síť cest, co vede přes celou Evropu",
+        "fact": "Ke katedrále míří historická síť dvanácti poutních cest vedoucích z Itálie, Francie i Portugalska; roku 1993 byla svatojakubská cesta zapsána na seznam světového dědictví UNESCO.",
+        "source_url": "https://cs.wikipedia.org/wiki/Svatojakubsk%C3%A1_cesta",
+        "source_quote": "roku 1993 byla svatojakubská cesta zapsána na seznam světového dědictví UNESCO",
+        "voice": "Na mapě to vypadá jako kořeny stromu — a všechny míří do jednoho galicijského města.",
+        "image_prompt": "Photorealistic photo of a yellow scallop shell waymarker on a blue tile beside a rural pilgrim path winding through green northern Spanish countryside, morning light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-priroda-teide",
+    "country": "Španělsko",
+    "section": "Příroda",
+    "topic": "Pico del Teide",
+    "headline": "Nejvyšší hora Španělska stojí v oceánu",
+    "fact": "Sopka Pico del Teide na Tenerife je nejvyšší horou celého Španělského království, přestože leží na ostrově nedaleko afrického pobřeží; nejvyšší horou pevninského Španělska je Mulhacén se 3 479 metry.",
+    "source_url": "https://cs.wikipedia.org/wiki/Pico_del_Teide",
+    "source_quote": "Pico del Teide je nejvyšší hora Španělského království (nejvyšší horou pevninského Španělska je Mulhacén, 3 479 m)",
+    "voice": "Nejvyšší španělský vrchol se zdolává s výhledem na Afriku, ne na Pyreneje.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Teide volcano cone rising above a red-brown lava plain on Tenerife, thin layer of snow on the summit, clear sky, no people, no text, 16:9",
+    "ll": [
+      -16.6425,
+      28.2724
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Stín, který dosáhne dvě stě kilometrů daleko",
+        "fact": "Při východu slunce vrhá Teide pyramidový stín, který je možné pozorovat až do vzdálenosti 200 kilometrů; k výstupu z horní stanice lanovky na vrchol je potřeba předem vyřízené povolení.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pico_del_Teide",
+        "source_quote": "Při východu Slunce je odtud možno pozorovat pyramidovitý stín, který Pico del Teide vrhá až do vzdálenosti 200 km.",
+        "voice": "Stín jedné hory bývá delší než celá země, kterou projedeš autem za dopoledne.",
+        "image_prompt": "Photorealistic sunrise photo from the summit of a volcano, a perfect triangular mountain shadow cast across a sea of clouds over the Atlantic, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hora, která si dělá vlastní počasí",
+        "fact": "Svahy Teide zachycují západní a severozápadní vlhké větry a mění je v dešťová mračna, takže severní úpatí je celý rok zelené, zatímco jižní svahy srážky prakticky neznají — učebnicový dešťový stín.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pico_del_Teide",
+        "source_quote": "Svahy hory Teide zachycují západní a severozápadní vlhké větry a proměňují je v dešťová mračna.",
+        "voice": "Jedna hora, dvě podnebí — stačí ji objet autem a krajina se změní k nepoznání.",
+        "image_prompt": "Photorealistic aerial view of a volcanic island where a green cloud-covered northern slope meets a dry barren southern slope, ocean around, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-priroda-donana",
+    "country": "Španělsko",
+    "section": "Příroda",
+    "topic": "Národní park Doñana",
+    "headline": "Bažiny, kde přezimují ptáci ze severu",
+    "fact": "Národní park Doñana leží v Andalusii u ústí řeky Guadalquivir a pokrývá plochu 543 km²; slouží jako místo zimního odpočinku migrujícím ptákům ze severnějších částí Evropy.",
+    "source_url": "https://cs.wikipedia.org/wiki/Do%C3%B1ana",
+    "source_quote": "Park pokrývá plochu 543 km², přičemž chráněná oblast zaujímá plochu 135 km².",
+    "voice": "Pro tažné ptáky je to zimní ubytovna na konci dlouhé evropské trasy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Doñana wetlands in Andalusia at dawn, shallow marsh water with flocks of flamingos and herons, low mist, no people, no text, 16:9",
+    "ll": [
+      -6.44,
+      36.99
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Duny, které se sunou po krajině",
+        "fact": "V parku se kromě bažin nacházejí i písečné duny a mělké zátoky, kde hnízdí velké množství různých druhů ptáků.",
+        "source_url": "https://cs.wikipedia.org/wiki/Do%C3%B1ana",
+        "source_quote": "V parku se nachází především bažiny, ale i písečné duny a mělké zátoky, kde hnízdí velké množství různých druhů ptáků.",
+        "voice": "Písek tu neleží na místě, putuje krajinou pomalu jako stádo.",
+        "image_prompt": "Photorealistic photo of tall pale sand dunes slowly burying a pine forest near the Atlantic coast of Andalusia, strong afternoon light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jahody proti mokřadu",
+        "fact": "Doñanu ohrožuje intenzivní zemědělství v okolí, zejména pěstování jahod, které odčerpává podzemní vodu i tisícovkami nelegálních vrtů — typický střet exportního zemědělství s ochranou mokřadů.",
+        "source_url": "https://cs.wikipedia.org/wiki/Do%C3%B1ana",
+        "source_quote": "Ohrožuje jej především intenzivní zemědělství v jeho okolí, zejména pak pěstování jahod, a to nadměrnou spotřebou podzemních zásob vody.",
+        "voice": "Jahody v evropských obchodech mají svou cenu, jen se neplatí u pokladny.",
+        "image_prompt": "Photorealistic aerial view of endless white plastic strawberry greenhouses reaching to the edge of a green wetland in southern Spain, harsh midday light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-priroda-picos-de-europa",
+    "country": "Španělsko",
+    "section": "Příroda",
+    "topic": "Picos de Europa",
+    "headline": "Vápencové štíty pár kilometrů od moře",
+    "fact": "Picos de Europa na pomezí Asturie, Kantábrie a Kastilie a Leónu je nejstarším národním parkem ve Španělsku; vyhlášen byl 22. července 1918.",
+    "source_url": "https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_park_Picos_de_Europa",
+    "source_quote": "Park je nejstarším národním parkem ve Španělsku.",
+    "voice": "Skalní stěny tak blízko oceánu, že se z vrcholu dá zamávat rybářským lodím.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the jagged limestone peaks of Picos de Europa in northern Spain, green valley with a stone village below, low clouds clinging to the walls, no text, 16:9",
+    "ll": [
+      -4.85,
+      43.1833
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Od řeky k vrcholu přes dva a půl kilometru výšky",
+        "fact": "Nejvyšším bodem parku je Torre de Cerredo s 2 648 metry, nejnižším řeka Deva ve výšce 75 metrů — výškový rozdíl uvnitř jednoho parku tak přesahuje 2 500 metrů.",
+        "source_url": "https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_park_Picos_de_Europa",
+        "source_quote": "Nejvyšším bodem parku je Torre de Cerredo o nadmořské výšce 2648 m n. m. Nejnižším bodem pak řeka Deva o nadmořské výšce 75 m n. m.",
+        "voice": "Za jediný den se dá projít od vlhkého údolí až k holé skále nad mraky.",
+        "image_prompt": "Photorealistic photo of a deep narrow river gorge with a footpath carved into the rock face, towering limestone walls above, northern Spain, soft daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vápenec, který zbrousil ledovec",
+        "fact": "V parku jsou dobře patrné geologické formace vzniklé ledovcovou erozí vápencového masivu Kantaberského pohoří; hory tu zároveň fungují jako vlhká bariéra mezi Atlantikem a suchým vnitrozemím.",
+        "source_url": "https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_park_Picos_de_Europa",
+        "source_quote": "V parku jsou patrné geologické formace vzniklé při ledovcové erozi vápencového masivu Kantaberského pohoří.",
+        "voice": "Zelené severní Španělsko končí přesně tam, kde tenhle hřeben přestane zadržovat mraky.",
+        "image_prompt": "Photorealistic aerial photo of a glacially carved limestone massif with U-shaped valleys and alpine lakes, clouds banked against the seaward side, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-lide-cervantes",
+    "country": "Španělsko",
+    "section": "Lidé",
+    "topic": "Miguel de Cervantes",
+    "headline": "Spisovatel, který přišel o ruku ve válce",
+    "fact": "Miguel de Cervantes byl v bitvě u Lepanta těžce raněn do hrudi a přišel o levou ruku; román Důmyslný rytíř Don Quijote de la Mancha vydal až v roce 1605 a kniha se stala okamžitou senzací.",
+    "source_url": "https://cs.wikipedia.org/wiki/Miguel_de_Cervantes",
+    "source_quote": "V bitvě u Lepanta byl těžce raněn do hrudi a přišel o levou ruku.",
+    "voice": "Voják, otrok, výběrčí daní — a mezi tím vším stihl napsat knihu, kterou zná celý svět.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic period portrait of a 16th century Spanish writer with a ruff collar and quill, one hand resting hidden in his cloak, warm candlelit study, no text, 16:9",
+    "ll": [
+      -3.3667,
+      40.4818
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pět let v alžírském zajetí",
+        "fact": "Cestou domů ze středomořského tažení zajali Cervantese piráti a odvlekli ho do Alžíru; po několika nezdařených pokusech o útěk ho 19. září 1580 vykoupili dva mniši řádu trinitářů za 500 eskudů.",
+        "source_url": "https://cs.wikipedia.org/wiki/Miguel_de_Cervantes",
+        "source_quote": "Cervantese po 5 letech, 19. září 1580 vykoupili dva mniši řádu trinitářů Antonio de la Bella a Juan Gil za 500 eskudů.",
+        "voice": "Do zajetí šel jako voják a vyšel z něj jako člověk, který měl konečně co vyprávět.",
+        "image_prompt": "Photorealistic photo of a sun-bleached North African harbour town in the 16th century with wooden galleys moored at a stone quay, hazy heat, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kniha, která odjela do světa dřív než autor",
+        "fact": "Don Quijote vyšel brzy i v Itálii, Holandsku, Anglii a Francii, zatímco jeho autor dožíval sám a v bídě v Madridu — v době knihtisku se text dokázal šířit Evropou rychleji než člověk, který ho napsal.",
+        "source_url": "https://cs.wikipedia.org/wiki/Miguel_de_Cervantes",
+        "source_quote": "Kniha vyšla i v cizině (Itálie, Holandsko, Anglie, Francie).",
+        "voice": "Rukopis procestoval Evropu, jeho autor mezitím neměl na nájem.",
+        "image_prompt": "Photorealistic photo of a 17th century printing workshop with stacked freshly printed books and a wooden press, warm lamplight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-lide-ramon-y-cajal",
+    "country": "Španělsko",
+    "section": "Lidé",
+    "topic": "Santiago Ramón y Cajal",
+    "headline": "Nobelova cena za mapu nervové soustavy",
+    "fact": "Santiago Ramón y Cajal získal v roce 1906 Nobelovu cenu za fyziologii a medicínu za práce o struktuře nervového systému a definoval neuron.",
+    "source_url": "https://cs.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal",
+    "source_quote": "byl španělský histolog, lékař a nositel Nobelovy ceny za fyziologii a medicínu (1906), a to za práce o struktuře nervového systému",
+    "voice": "Kreslit uměl tak dobře, že se z jeho obrázků mozku učí studenti medicíny dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical photo of a scientist in a dark suit bent over a brass microscope in a cluttered late 19th century laboratory, ink drawings of nerve cells pinned on the wall, no text, 16:9",
+    "ll": [
+      -1.16,
+      42.4667
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vyučený švec u mikroskopu",
+        "fact": "Než se dostal k medicíně, vyučil se Ramón y Cajal ševcem a z výtvarné školy ho vyhodili za karikování profesorů; k lékařství ho nakonec přitáhl otec anatom.",
+        "source_url": "https://cs.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal",
+        "source_quote": "Vyučil se ševcem. Studoval na výtvarné škole, odkud byl vyhozen pro karikování profesorů. Otec anatom přitáhl syna k medicíně.",
+        "voice": "Od ševcovského kopyta k mikroskopu je to dál, než se zdá — on tu cestu ušel.",
+        "image_prompt": "Photorealistic close-up of an old wooden desk with a shoemaker's last, drawing pencils and a microscope side by side, warm window light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vědec, co obcházel španělské univerzity",
+        "fact": "Cajal učil postupně ve Valencii, Barceloně i Madridu a v roce 1920 mu král Alfonso XIII. nechal v Madridu zřídit vlastní ústav — ukázka, jak se španělská věda soustředila do hlavního města.",
+        "source_url": "https://cs.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal",
+        "source_quote": "V roce 1920 nechal král Alfonso XIII. v Madridu zřídit Cajalův ústav (Instituto Cajal), kde pak Cajal působil až do smrti.",
+        "voice": "Kariéru vědce se dá číst i jako mapu — tahle vedla přes tři španělská města do jednoho.",
+        "image_prompt": "Photorealistic photo of a historic Spanish university courtyard with stone arcades and a lecture hall doorway, students crossing in early 20th century clothing, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-lide-elcano",
+    "country": "Španělsko",
+    "section": "Lidé",
+    "topic": "Juan Sebastián Elcano",
+    "headline": "Baskický námořník, co obeplul svět",
+    "fact": "Juan Sebastián Elcano z baskické Getarie převzal po smrti velitele velení Magalhãesovy výpravy a s lodí Victoria dorazil zpět do Španělska 9. září 1522.",
+    "source_url": "https://cs.wikipedia.org/wiki/Juan_Sebasti%C3%A1n_Elcano",
+    "source_quote": "obeplul mys Dobré naděje a přes Kapverdské ostrovy se vrátil do Španělska, kam dorazil 9. září 1522.",
+    "voice": "Vyplul jako vzbouřenec v okovech a vrátil se jako muž, který objel zeměkouli.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a battered 16th century wooden sailing ship with torn sails entering a Spanish harbour, tired crew at the rail, low evening light, no text, 16:9",
+    "ll": [
+      -2.2011,
+      43.3042
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Z 237 mužů se vrátilo osmnáct",
+        "fact": "Z původních pěti lodí výpravy se vrátila jen jedna a z 237 mužů pouze 18; náklad koření na palubě přesto bohatě vynahradil náklady na celou výpravu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Juan_Sebasti%C3%A1n_Elcano",
+        "source_quote": "Z původních pěti lodí se vrátila jen jedna, z 237 mužů pouze 18, avšak jediný náklad koření bohatě vynahradil náklady na výpravu.",
+        "voice": "Účetní byli spokojení, i když se domů nevrátilo devět z deseti námořníků.",
+        "image_prompt": "Photorealistic still life of open wooden crates filled with cloves, nutmeg and cinnamon bark on a ship's deck, ropes and salt stains, warm light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Erb s glóbem a jednou větou",
+        "fact": "Elcano byl po návratu povýšen do šlechtického stavu a ve svém erbu měl glóbus s mottem Primus circumdedisti me; výprava zároveň potvrdila existenci světového oceánu i skutečnou velikost Země.",
+        "source_url": "https://cs.wikipedia.org/wiki/Juan_Sebasti%C3%A1n_Elcano",
+        "source_quote": "Ve svém erbu měl glóbus s mottem \"Primus circumdedisti me\" (První jsi mě obeplul).",
+        "voice": "Do erbu si nedal meč ani lva, ale rovnou celou planetu.",
+        "image_prompt": "Photorealistic close-up of an antique painted coat of arms showing a terrestrial globe encircled by a ribbon, aged wood panel, museum lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-kultura-las-fallas",
+    "country": "Španělsko",
+    "section": "Kultura & tradice",
+    "topic": "Las Fallas",
+    "headline": "Svátek, kde se sochy nakonec spálí",
+    "fact": "Ve Valencii se od 15. do 19. března slaví Las Fallas: umělci staví obří figury ze dřeva, kartonu a sádry vysoké 5 až 30 metrů a v noci 19. března všechny kromě vítězné shoří.",
+    "source_url": "https://cs.wikipedia.org/wiki/Las_Fallas",
+    "source_quote": "Na tento svátek jsou totiž vyráběny figury ze dřeva, kartonu a sádry a dosahují obřích rozměrů, jejich velikost může být 5–30 metrů.",
+    "voice": "Rok práce na jedné soše a jedna noc, po které z ní zbyde popel.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic night photo of a giant papier-mâché festival figure burning in a Valencia city square, crowds watching from behind barriers, flames and sparks, no text, 16:9",
+    "ll": [
+      -0.3763,
+      39.4699
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vyhrát znamená neshořet",
+        "fact": "Komise vybírá nejhezčí figuru a právě ta jediná ohni unikne; do Valencie během oslav vstupuje milion návštěvníků.",
+        "source_url": "https://cs.wikipedia.org/wiki/Las_Fallas",
+        "source_quote": "Komise poté vybírá nejhezčí figuru a v noci 19. března se všechny figury kromě té vítězné zapálí.",
+        "voice": "Cenou za výhru není pohár, ale to, že tvoje socha přežije do rána.",
+        "image_prompt": "Photorealistic daytime photo of a colossal colourful satirical festival sculpture standing in a narrow Valencia street, onlookers dwarfed beneath it, bright sun, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Truhláři, co pálili hobliny před jarem",
+        "fact": "Původ svátku se spojuje se společenstvím truhlářů, kteří při úklidu dílen před příchodem jara pálili hobliny a staré věci; jiní autoři hledají kořeny v pohanských rituálech vítajících jaro.",
+        "source_url": "https://cs.wikipedia.org/wiki/Las_Fallas",
+        "source_quote": "Ti v předvečer všech svatých zapálili hobliny a staré věci, když uklízeli svoje dílny, než začne jaro.",
+        "voice": "Jarní úklid se dá vyřešit i tak, že se to staré prostě zapálí.",
+        "image_prompt": "Photorealistic photo of an old carpenter's workshop with wood shavings swept into a pile by the door, hand tools on the bench, late winter light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-kultura-castells",
+    "country": "Španělsko",
+    "section": "Kultura & tradice",
+    "topic": "Lidské věže castells",
+    "headline": "Věž z lidí, na jejímž vrcholu stojí dítě",
+    "fact": "Castell je lidská věž stavěná na festivalech v Katalánsku, Valencijském společenství a na Baleárských ostrovech; v roce 2010 byla zapsána na seznam UNESCO.",
+    "source_url": "https://cs.wikipedia.org/wiki/Castell",
+    "source_quote": "V roce 2010 byl Castell zařazen na seznam Mistrovských děl ústního a nehmotného dědictví lidstva organizace UNESCO.",
+    "voice": "Dole samí siláci, nahoře školák — a nikdo z nich se nesmí pustit.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a human tower of people in matching shirts and white trousers rising above a crowded Catalan town square, historic facades around, bright daylight, no text, 16:9",
+    "ll": [
+      1.2494,
+      41.2861
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Na vrchol jde ten nejlehčí",
+        "fact": "Základ věže tvoří čtyři muži chycení kolem ramen, po jejichž zádech šplhají další; na úplný vrchol se staví většinou dítě mladší deseti let, aby konstrukci příliš nezatížilo.",
+        "source_url": "https://cs.wikipedia.org/wiki/Castell",
+        "source_quote": "Většinou se jedná o dítě mladší deseti let, aby nebyla pyramida příliš zatížena.",
+        "voice": "Kdo je nejmenší, ten to má nejvýš — v týmu, kde se váha počítá na kila.",
+        "image_prompt": "Photorealistic low angle close-up of a child in a protective helmet reaching the top of a human tower and raising one hand, blue sky behind, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice, co se šířila od jednoho městečka",
+        "fact": "První písemná zmínka o stavění lidských věží pochází z roku 1712 z katalánského města Valls a odtud se zvyk během 18. století rozšířil do sousedních měst, provincií i dalších autonomních společenství.",
+        "source_url": "https://cs.wikipedia.org/wiki/Castell",
+        "source_quote": "První písemná zmínka o aktivitách tohoto typu pochází z roku 1712 z katalánského města Valls.",
+        "voice": "Zvyk se šíří jako kruhy na vodě — jen tady trvalo století, než dorazil do vedlejšího kraje.",
+        "image_prompt": "Photorealistic aerial view of a small Catalan town with a church tower and tiled roofs surrounded by vineyards, warm afternoon light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-kultura-flamenco",
+    "country": "Španělsko",
+    "section": "Kultura & tradice",
+    "topic": "Flamenco",
+    "headline": "Hudba, která vznikla na křižovatce kultur",
+    "fact": "Flamenco vzniklo v Andalusii mezi Romy, kteří sem v 15. století doputovali z Indie přes Pákistán a Egypt; jih Španělska zůstává jeho kolébkou i současným centrem.",
+    "source_url": "https://cs.wikipedia.org/wiki/Flamenco",
+    "source_quote": "Vzniklo mezi Romy, kteří tam v 15. století doputovali z Indie přes Pákistán a Egypt.",
+    "voice": "Poslouchat flamenco znamená slyšet naráz několik kontinentů.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a flamenco dancer mid-turn in a ruffled dress in a small Andalusian courtyard, guitarist seated behind her, warm lamplight, no text, 16:9",
+    "ll": [
+      -5.9845,
+      37.3891
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bedna, na které se sedí i hraje",
+        "fact": "Hlavními disciplínami flamenca jsou zpěv, tanec, hra na kytaru a rytmický doprovod — tleskání a hra na cajón, perkusní nástroj připomínající dřevěnou bednu, na němž hráč sedí obkročmo.",
+        "source_url": "https://cs.wikipedia.org/wiki/Flamenco",
+        "source_quote": "kterým je míněno tleskání a hra na cajón (čti kachón), což je perkusní nástroj připomínající dřevěnou bednu, na němž hráč sedí obkročmo",
+        "voice": "Nejdůležitější nástroj celé kapely vypadá jako obyčejná bedýnka na nářadí.",
+        "image_prompt": "Photorealistic close-up of a musician sitting astride a wooden cajón drum and striking its front panel, blurred dancer's feet behind, warm stage light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Andaluská směs několika kultur",
+        "fact": "Ve flamencu se romská kultura mísí se španělskou, indickou, židovskou a arabskou — přesně tak, jak se v Andalusii po staletí potkávaly národy, které tudy prošly nebo tu žily.",
+        "source_url": "https://cs.wikipedia.org/wiki/Flamenco",
+        "source_quote": "Proto se ve flamencu vlastní romská kultura mísí se španělskou, indickou, židovskou a arabskou.",
+        "voice": "Kdo chce vědět, kdo vším Andalusií prošel, ať poslouchá, ne ať čte.",
+        "image_prompt": "Photorealistic photo of a whitewashed Andalusian alley with horseshoe arches and moorish tilework, laundry lines above, strong midday shadows, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-umeni-altamira",
+    "country": "Španělsko",
+    "section": "Umění",
+    "topic": "Jeskyně Altamira",
+    "headline": "Pravěké malby, které našla osmiletá holčička",
+    "fact": "V jeskyni Altamira v Kantábrii byly roku 1879 nalezeny pravěké nástěnné malby; rozsáhlé malby v postranní chodbě objevila šťastnou náhodou osmiletá dcera majitele pozemku Marie.",
+    "source_url": "https://cs.wikipedia.org/wiki/Altamira",
+    "source_quote": "jeho osmiletá dcera Marie nalezla šťastnou náhodou v postranní chodbě rozsáhlé nástěnné malby",
+    "voice": "Dospělí hledali nálezy u země, ona byla dost malá na to, aby zvedla hlavu ke stropu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a low cave ceiling covered with prehistoric ochre paintings of bison, warm lamplight revealing the rock texture, no people, no text, 16:9",
+    "ll": [
+      -4.1225,
+      43.3775
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Do originálu smí pět lidí týdně",
+        "fact": "Přístup do samotné jeskyně je přísně regulován: vstup je dovolen jedné skupině o pěti osobách vždy pouze jednou za týden, ostatní návštěvníci si prohlížejí přesnou kopii zvanou Neocueva.",
+        "source_url": "https://cs.wikipedia.org/wiki/Altamira",
+        "source_quote": "Vstup je dovolen jedné skupině o pěti osobách vždy pouze jednou za týden.",
+        "voice": "Nejslavnější galerie pravěku má návštěvní řád přísnější než banka.",
+        "image_prompt": "Photorealistic photo of a museum replica cave chamber with painted bison on the ceiling and a small group of visitors standing quietly below, soft museum lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sedmnáct dalších jeskyní pod jednou položkou",
+        "fact": "Altamira byla na seznam UNESCO zapsána v roce 1985 a v roce 2008 k ní pod stejnou položkou přibylo dalších 17 jeskyní v Kantábrii, Asturii a Baskicku s podobnými nástěnnými malbami.",
+        "source_url": "https://cs.wikipedia.org/wiki/Altamira",
+        "source_quote": "V roce 2008 bylo do tohoto seznamu pod stejnou položkou zapsáno dalších 17 jeskyní v Kantábrii, Asturii a Baskicku s podobnými nástěnnými malbami.",
+        "voice": "Není to jedna jeskyně s obrazy, je to celé pobřeží plné pravěkých ateliérů.",
+        "image_prompt": "Photorealistic aerial photo of the green limestone coastal hills of Cantabria in northern Spain with scattered cave entrances and the Atlantic beyond, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-umeni-guernica",
+    "country": "Španělsko",
+    "section": "Umění",
+    "topic": "Picassova Guernica",
+    "headline": "Obraz, který nesměl domů, dokud trval režim",
+    "fact": "Picassovu Guernicu, vysokou 349 cm a širokou 777 cm, vyvolalo vybombardování baskického města Guernica 26. dubna 1937; malíř nedovolil vystavit ji ve Španělsku, dokud tam nebude obnoven demokratický režim.",
+    "source_url": "https://cs.wikipedia.org/wiki/Guernica_(obraz)",
+    "source_quote": "Picasso nedovolil, aby se jeho obraz Guernica vystavoval ve Španělsku, dokud tam nebude obnoven demokratický režim.",
+    "voice": "Plátno si na svobodu počkalo déle než většina lidí, kteří ho tehdy viděli.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a very large black and white anti-war mural painting hanging in a spare white gallery hall, a few visitors standing before it, even museum light, no text, 16:9",
+    "ll": [
+      -2.6797,
+      43.3167
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ne, to jste udělali vy",
+        "fact": "Vypráví se, že za německé okupace Paříže ukázal Picassovi německý důstojník fotografii Guernicy se slovy „To jste udělal Vy?“ a malíř mu odpověděl: „Ne, to jste udělali vy!“",
+        "source_url": "https://cs.wikipedia.org/wiki/Guernica_(obraz)",
+        "source_quote": "„To jste udělal Vy?“ – „Ne, to jste udělali vy!“, odvětil malíř.",
+        "voice": "Jedna věta u obrazu, která zabolela víc než celá výstava.",
+        "image_prompt": "Photorealistic photo of a Paris artist's studio during the occupation years, canvases stacked against the wall and a uniformed silhouette in the doorway, muted tones, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kopie v OSN, kterou nechali zakrýt",
+        "fact": "V sídle Rady bezpečnosti OSN visí velká kopie Guernicy; když v roce 2003 hovořil před Radou americký ministr Colin Powell o nutnosti války proti Iráku, nechali Američané obraz zakrýt.",
+        "source_url": "https://cs.wikipedia.org/wiki/Guernica_(obraz)",
+        "source_quote": "Když v roce 2003 americký ministr Colin Powell před Radou bezpečnosti hlásal nutnost zahájit válku proti Iráku, Američané nechali obraz zakrýt",
+        "voice": "Obraz starý půl století uměl pořád mluvit tak nahlas, že ho museli přikrýt plachtou.",
+        "image_prompt": "Photorealistic photo of a formal international conference hall with a large wall tapestry covered by a plain blue curtain, rows of microphones and flags, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-umeni-dvorni-damy",
+    "country": "Španělsko",
+    "section": "Umění",
+    "topic": "Dvorní dámy (Las Meninas)",
+    "headline": "Obraz, na kterém malíř maluje sám sebe",
+    "fact": "Dvorní dámy (Las Meninas) namaloval Diego Velázquez v roce 1656 a od roku 1819 jsou uchovávány v madridském muzeu Prado; na plátně stojí sám malíř u velkého plátna a dívá se ven na diváka.",
+    "source_url": "https://cs.wikipedia.org/wiki/Dvorn%C3%AD_d%C3%A1my",
+    "source_quote": "pocházející z roku 1656 a od roku 1819 uchovávané v Národním muzeu Prado v Madridu",
+    "voice": "Nejde jen o to, koho na obraze vidíš — jde o to, kdo se z něj dívá na tebe.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a dim high-ceilinged 17th century palace room with a painter standing beside a huge canvas, a small princess and her attendants in the foreground, light from a side window, no text, 16:9",
+    "ll": [
+      -3.6921,
+      40.4138
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Král a královna jsou vidět jen v zrcadle",
+        "fact": "Na zadní stěně obrazu visí zrcadlo, které odráží horní části těl krále Filipa IV. a královny Marie — panovnický pár tak na plátně přímo chybí a zároveň zaujímá jeho kompoziční střed.",
+        "source_url": "https://cs.wikipedia.org/wiki/Dvorn%C3%AD_d%C3%A1my",
+        "source_quote": "Zrcadlo na zadní stěně odráží horní část těla a hlavy dvou postav identifikovaných podle jiných obrazů i samotným Palominem jako král Filip IV. (10) a královna Marie (11).",
+        "voice": "Nejdůležitější lidé v místnosti se na obraz vešli jen jako mlhavý odraz.",
+        "image_prompt": "Photorealistic close-up of a dark ornate mirror on a shadowed wall reflecting two blurred figures in courtly dress, candle glow, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Prado poskládal dvorní malíř",
+        "fact": "Velázquez byl dvorním malířem a kurátorem sbírky Filipa IV.; velká část současné sbírky muzea Prado včetně děl Tiziana, Raffaela a Rubense byla získána pod jeho vedením.",
+        "source_url": "https://cs.wikipedia.org/wiki/Dvorn%C3%AD_d%C3%A1my",
+        "source_quote": "Velká část současné sbírky muzea Prado – včetně prací Tiziana, Raffaela a Rubense – byla získána a shromážděna pod Velázquezovým vedením.",
+        "voice": "Jedno z velkých evropských muzeí vzniklo vlastně z nákupního seznamu jednoho malíře.",
+        "image_prompt": "Photorealistic photo of the neoclassical facade of a large Madrid museum with columns and a broad stone staircase, plane trees along the boulevard, morning light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-sport-nadal",
+    "country": "Španělsko",
+    "section": "Sport",
+    "topic": "Rafael Nadal",
+    "headline": "Čtrnáct titulů z jednoho jediného turnaje",
+    "fact": "Rafael Nadal z mallorského Manacoru získal jako jediný tenista čtrnáct titulů ze dvouhry jednoho grandslamu — všechny na pařížském Roland-Garros.",
+    "source_url": "https://cs.wikipedia.org/wiki/Rafael_Nadal",
+    "source_quote": "Jako jediný tenista získal čtrnáct titulů z dvouhry jednoho grandslamu, které vybojoval na Roland-Garros.",
+    "voice": "Do Paříže jezdil pro pohár tolikrát, že tam měl skoro předplacené místo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a left-handed tennis player sliding into a forehand on a red clay court, dust flying, packed stadium blurred behind, bright afternoon, no text, 16:9",
+    "ll": [
+      3.2093,
+      39.5697
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Osmdesát jedna vyhraných zápasů v řadě",
+        "fact": "Mezi dubnem 2005 a květnem 2007 zaznamenal Nadal na antuce sérii 81 zápasů bez porážky, kterou ukončila až finálová prohra v Hamburku s Rogerem Federerem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rafael_Nadal",
+        "source_quote": "Mezi dubnem 2005 až květnem 2007 na antuce zaznamenal sérii 81zápasové neporazitelnosti, která skončila až finálovou prohrou v Hamburku s Federerem.",
+        "voice": "Dva roky se na antuce hrálo prakticky jen o druhé místo.",
+        "image_prompt": "Photorealistic close-up of a worn red clay tennis court surface with fresh slide marks and a chalk line, tennis ball resting on the baseline, low sun, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Povrch, který vychoval celou školu hráčů",
+        "fact": "Nadal získal přezdívku antukový král a celkově vyhrál rekordních 63 antukových turnajů; jižní Evropa s teplým podnebím staví převážně antukové kurty, a právě odsud pochází dlouhá řada špičkových antukářů.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rafael_Nadal",
+        "source_quote": "Celkově vyhrál rekordních 63 antukových turnajů.",
+        "voice": "Na jakém povrchu vyrosteš, takový tenis pak hraješ celý život.",
+        "image_prompt": "Photorealistic aerial photo of a Mediterranean tennis club with rows of red clay courts surrounded by pines and dry hills, midday sun, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-sport-baskicka-pelota",
+    "country": "Španělsko",
+    "section": "Sport",
+    "topic": "Baskická pelota",
+    "headline": "Míč se odpaluje proti zdi, ne proti soupeři",
+    "fact": "Baskická pelota je hra, při níž hráči posílají míček proti zdi a ten se smí země dotknout jen jednou; podle varianty se hraje na 25 až 50 bodů.",
+    "source_url": "https://cs.wikipedia.org/wiki/Pelota",
+    "source_quote": "Podle varianty hry se hraje na 25 až 50 bodů.",
+    "voice": "Soupeře máš vedle sebe, ale hraješ vlastně proti zdi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of players in white shirts and red sashes striking a small hard ball against the high wall of an open Basque fronton court, spectators on stone benches, sunny day, no text, 16:9",
+    "ll": [
+      -1.9812,
+      43.3183
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Holá dlaň, raketa, nebo košík",
+        "fact": "Pelota má řadu variant: hráči odehrávají míč holou dlaní, pevnou dřevěnou raketou, raketou s volným výpletem, nebo prohnutým košíkem zvaným cesta.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pelota",
+        "source_quote": "Cesta punta (nebo také jai alai) – zde se ke hře používá prohnutý košík s názvem Cesta",
+        "voice": "Jedna hra, pět různých nástrojů — a pokaždé z toho vyjde jiný sport.",
+        "image_prompt": "Photorealistic close-up of a curved wicker cesta basket strapped to a player's hand beside a bandaged bare palm and a wooden racket on a bench, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Baskický sport s domovem i za oceánem",
+        "fact": "Mistrovství světa v baskické pelotě se hraje od roku 1952 a jeho dějištěm bývá kromě Baskicka i Montevideo, Mexico City nebo Havana — sport odcestoval spolu s baskickými vystěhovalci přes Atlantik.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pelota",
+        "source_quote": "Mistrovství světa v baskické pelotě se hraje od roku 1952 v původně tříletém, dnes čtyřletém intervalu.",
+        "voice": "Kam odešli baskičtí vystěhovalci, tam za nimi doputovala i jejich zeď.",
+        "image_prompt": "Photorealistic photo of a weathered concrete fronton wall in a small Latin American town square, palm trees and colonial houses around, late afternoon light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-sport-ms-2010",
+    "country": "Španělsko",
+    "section": "Sport",
+    "topic": "Fotbalový titul z roku 2010",
+    "headline": "Mistři světa až po prodloužení",
+    "fact": "Španělští fotbalisté se v roce 2010 stali mistry světa, když ve finále v Jihoafrické republice porazili Nizozemsko 1:0 v prodloužení.",
+    "source_url": "https://cs.wikipedia.org/wiki/Mistrovstv%C3%AD_sv%C4%9Bta_ve_fotbale_2010",
+    "source_quote": "Mistry světa se stali fotbalisté Španělska, když ve finále porazili Nizozemsko 1:0 v prodloužení.",
+    "voice": "Sto dvacet minut a jediná trefa, po které se doma tu noc nespalo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a night street celebration in Madrid with a huge crowd waving red and yellow flags around a fountain, confetti in the air, no text, 16:9",
+    "ll": [
+      -3.7038,
+      40.4168
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Turnaj, který přehlušily vuvuzely",
+        "fact": "Jihoafričtí diváci troubili na vuvuzely tak hlasitě, že hluk mohl dosáhnout až 127 decibelů — pro srovnání, motorová pila vyprodukuje asi 100 dB.",
+        "source_url": "https://cs.wikipedia.org/wiki/Mistrovstv%C3%AD_sv%C4%9Bta_ve_fotbale_2010",
+        "source_quote": "Hluk vuvuzel může dosáhnout až 127 decibelů (pro srovnání, motorová pila je schopna vyprodukovat cca 100 dB).",
+        "voice": "Fanoušci hráli vlastní koncert, do kterého se hráči sotva doslechli.",
+        "image_prompt": "Photorealistic photo of stadium spectators blowing long colourful plastic horns, packed stands out of focus behind, bright daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mistrovství, které poprvé hostila Afrika",
+        "fact": "Šampionát v roce 2010 byl vůbec první, který pořádal člen africké konfederace CAF; pořadatelství světového turnaje se tím rozšířilo i na africký kontinent.",
+        "source_url": "https://cs.wikipedia.org/wiki/Mistrovstv%C3%AD_sv%C4%9Bta_ve_fotbale_2010",
+        "source_quote": "Je to poprvé v historii, kdy mistrovství světa pořádal člen CAF.",
+        "voice": "Španělé si pro titul museli doletět na kontinent, kde se předtím o pohár nikdy nehrálo.",
+        "image_prompt": "Photorealistic aerial photo of a large modern football stadium on the edge of an African city at dusk, floodlights on, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-jazyk-baskictina",
+    "country": "Španělsko",
+    "section": "Jazyk & slova",
+    "topic": "Baskičtina",
+    "headline": "Jazyk, který nemá žádné příbuzné",
+    "fact": "Baskičtina (baskicky euskara) je izolovaný jazyk, který nepatří do žádné jazykové rodiny, přestože je ze všech stran obklopen indoevropskými jazyky; jde patrně o pozůstatek předindoevropského osídlení Evropy.",
+    "source_url": "https://cs.wikipedia.org/wiki/Baski%C4%8Dtina",
+    "source_quote": "Baskičtina, protože je zcela obklopena indoevropskými jazyky, je klasifikována jako izolovaný jazyk.",
+    "voice": "Zbytek Evropy si jazyky navzájem půjčuje — baskičtina nemá od koho.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a bilingual road sign in a green Basque valley with steep forested hills and a farmhouse behind, overcast light, no readable text in focus, 16:9",
+    "ll": [
+      -2.62,
+      43.0
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova, která znali už Římané",
+        "fact": "Antickým autorům byla dobře známa osobní jména Nescato a Gison; neskato a gizon znamená mladá dívka a muž i v moderní baskičtině.",
+        "source_url": "https://cs.wikipedia.org/wiki/Baski%C4%8Dtina",
+        "source_quote": "Důkazem o existenci baskičtiny již v té době jsou, římským autorům dobře známá, osobní jména Nescato a Gison (neskato a gizon znamená „mladá dívka“ a „muž“ i v moderní baskičtině).",
+        "voice": "Dvě slova přežila dva tisíce let skoro beze změny a pořád znamenají totéž.",
+        "image_prompt": "Photorealistic close-up of a weathered Roman stone inscription on a grey slab, moss in the carved letters, soft daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hledání příbuzných, které nikam nevede",
+        "fact": "Vzniklo několik teorií spojujících baskičtinu například s jihokavkazskými jazyky, ale všechny teorie o původu baskičtiny jsou dodnes pokládány za neověřené a nepodložené.",
+        "source_url": "https://cs.wikipedia.org/wiki/Baski%C4%8Dtina",
+        "source_quote": "Všechny teorie o původu baskičtiny jsou dodnes pokládány za neověřené a nepodložené.",
+        "voice": "Jazykovědci hledali příbuzné až na Kavkaze a stejně se vrátili s prázdnou.",
+        "image_prompt": "Photorealistic photo of an old linguistic map of Europe spread on a desk with pins and coloured threads connecting distant regions, warm lamplight, no text in focus, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-jazyk-pismeno-n-s-tildou",
+    "country": "Španělsko",
+    "section": "Jazyk & slova",
+    "topic": "Písmeno ñ",
+    "headline": "Písmeno, které Španělé berou jako svůj znak",
+    "fact": "Písmeno Ñ je složeno z písmene N a vlnovky zvané tilda a vyslovuje se jako české ň; kromě španělštiny se používá i v galicijštině, asturštině nebo baskičtině.",
+    "source_url": "https://cs.wikipedia.org/wiki/%C3%91",
+    "source_quote": "Znak je složen z písmene N a tildy. Vyslovuje se jako palatální nazála /ɲ/ (české ň).",
+    "voice": "Jedna vlnovka nad písmenem, a hned je jasné, jakým jazykem se tu mluví.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Stejná vlnovka, jiný úkol",
+        "fact": "Vlnovka nad písmenem označuje změnu ve výslovnosti: ve španělštině palatalizované n, tedy ñ, v portugalštině naopak nosovky ã, ẽ, ĩ, õ a ũ.",
+        "source_url": "https://cs.wikipedia.org/wiki/Vlnovka",
+        "source_quote": "Používá se například ve španělštině k označení palatalizovaného n (ñ), v portugalštině k označení nosovek (ã, ẽ, ĩ, õ, ũ)",
+        "voice": "Stejná klikatá čárka, dva sousední jazyky a dva úplně jiné úkoly.",
+        "image_prompt": "Photorealistic macro photo of metal letterpress type blocks on a wooden tray, one block bearing a letter with a wave-shaped accent, warm workshop light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Písmeno, které odcestovalo přes oceán",
+        "fact": "Ñ se dnes objevuje i v jazycích hodně daleko od Španělska — ve filipínštině, v chamorro, v guaraní i v krymské tatarštině; mapa jednoho písmene tak sleduje jak dosah španělštiny, tak volby tvůrců cizích abeced.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C3%91",
+        "source_quote": "Vyskytuje se ve španělštině, galicijštině, asturštině, baskičtině, filipínštině, chamorro, guaraní, krymské tatarštině a v jedné z abeced votštiny.",
+        "voice": "Sledovat jedno písmeno po mapě je někdy poučnější než číst dějepis.",
+        "image_prompt": "Photorealistic photo of an antique world map on parchment with a magnifying glass resting over the Pacific islands, warm archival light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-jazyk-obraceny-otaznik",
+    "country": "Španělsko",
+    "section": "Jazyk & slova",
+    "topic": "Obrácený otazník",
+    "headline": "Otázka, která se ohlásí už na začátku",
+    "fact": "Ve španělštině označuje otazník nejen konec otázky, ale i její začátek — k tomu slouží vertikálně obrácený otazník; toto typografické pravidlo platí od 18. století.",
+    "source_url": "https://cs.wikipedia.org/wiki/Otazn%C3%ADk",
+    "source_quote": "Toto typografické pravidlo platí od 18. století a je dále uplatňováno v galicijštině, leónštině a v některých domorodých jazycích zemí, kde je španělština úředním jazykem",
+    "voice": "Španěl ví, že jde o otázku, dřív než ji dočte — my se to dozvíme až na konci.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Znaménko nemusí stát na začátku věty",
+        "fact": "Začátek otázky se ve španělštině nemusí krýt se začátkem věty, takže obrácený otazník se občas objeví až někde uprostřed napsané věty.",
+        "source_url": "https://cs.wikipedia.org/wiki/Otazn%C3%ADk",
+        "source_quote": "Začátek otázky přitom může, ale nemusí splývat se začátkem věty.",
+        "voice": "Znaménko si najde přesně to místo, kde se z oznámení stává otázka.",
+        "image_prompt": "Photorealistic close-up of a Spanish newspaper page under a desk lamp, punctuation marks visibly sharp in the printed columns, warm light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pravidlo, které cestovalo s jazykem",
+        "fact": "Obrácený otazník se používá také v galicijštině, leónštině a v některých domorodých jazycích zemí, kde je španělština úředním jazykem, například v nahuatlu — typografická zvyklost se šířila spolu s jazykem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Otazn%C3%ADk",
+        "source_quote": "je dále uplatňováno v galicijštině, leónštině a v některých domorodých jazycích zemí, kde je španělština úředním jazykem (např. v indiánském jazyce nahuatl)",
+        "voice": "S jazykem se stěhují i jeho tiskařská pravidla a zůstávají i tam, kde se mluví jinak.",
+        "image_prompt": "Photorealistic photo of an old wooden printing press with a tray of type in a colonial Latin American workshop, dust in a beam of light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-jidlo-paella",
+    "country": "Španělsko",
+    "section": "Jídlo",
+    "topic": "Paella",
+    "headline": "Jídlo, které Španělé za národní nepovažují",
+    "fact": "Paella pochází z Valencie; cizinci ji obvykle vnímají jako národní jídlo Španělska, ale většina Španělů ji spíše pokládá za regionální pokrm valencijské oblasti.",
+    "source_url": "https://cs.wikipedia.org/wiki/Paella",
+    "source_quote": "Lidé, kteří ve Španělsku nežijí, paellu obvykle vnímají jako národní jídlo Španělska, ale většina Španělů ji spíše pokládá za regionální pokrm, vyskytující se v oblasti Valencie.",
+    "voice": "V cizině symbol celé země, doma hrdost jednoho jediného kraje.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic overhead photo of a wide shallow paella pan with saffron rice, beans and rabbit cooking over an open wood fire outdoors, no text, 16:9",
+    "ll": [
+      -0.335,
+      39.335
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rýže, která se nesmí umývat",
+        "fact": "Rýže na paellu se nikdy neomývá, protože škrob při vaření způsobuje potřebné zahuštění; navíc se nenechává úplně dovařit a uvnitř má zůstat lehce křupavá.",
+        "source_url": "https://cs.wikipedia.org/wiki/Paella",
+        "source_quote": "Při přípravě paelly je nejdůležitější přísadou rýže, která se neomývá, jelikož škrob při vaření způsobuje potřebné zahuštění.",
+        "voice": "Co by v jiné kuchyni byla chyba, je tady základ celého receptu.",
+        "image_prompt": "Photorealistic close-up of uncooked short grain rice being poured from a hand into a hot paella pan with sizzling vegetables, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z rybářských lodí na sváteční stůl",
+        "fact": "Paella se objevila v chudších oblastech na jihu Španělska a vznikla na rybářských lodích jako jedno z nejchudších jídel pro rybáře — teprve později se z ní stal pokrm pro hosty.",
+        "source_url": "https://cs.wikipedia.org/wiki/Paella",
+        "source_quote": "Vznikla na rybářských lodích na způsob arroz caldoso; šlo tehdy o jedno z nejchudších jídel pro rybáře.",
+        "voice": "Jídlo z nouze má často nejlepší předpoklady stát se jednou slavnostním pokrmem.",
+        "image_prompt": "Photorealistic photo of the flat rice paddies and shallow lagoon of the Albufera near Valencia at sunset, small wooden fishing boats moored, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-jidlo-jamon-iberico",
+    "country": "Španělsko",
+    "section": "Jídlo",
+    "topic": "Jamón ibérico",
+    "headline": "Šunka, jejíž cenu určují žaludy",
+    "fact": "Iberská šunka jamón ibérico se řadí do jakostních tříd v zásadě podle podílu žaludů v potravě prasete až do porážky a zraje obvykle 8 až 36 měsíců.",
+    "source_url": "https://cs.wikipedia.org/wiki/%C5%A0pan%C4%9Blsk%C3%A1_%C5%A1unka",
+    "source_quote": "Složení potravy prasete je natolik významné, že je tato šunka řazena do jakostních tříd v zásadě podle podílu žaludů v potravě až do porážky.",
+    "voice": "O kvalitě rozhoduje to, co prase snědlo pod dubem, ne to, co potom udělal řezník.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of rows of cured ham legs hanging from the beams of a cool stone drying room, dim shafts of light, no text, 16:9",
+    "ll": [
+      -6.727,
+      37.907
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Černá etiketa znamená nejvyšší třídu",
+        "fact": "Barva neodstranitelné etikety určuje jakost: bílá znamená šunku z výkrmny, zelená z venkovní pastvy, červená žaludovou a černá stoprocentně iberskou žaludovou šunku, tedy nejvyšší třídu.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C5%A0pan%C4%9Blsk%C3%A1_%C5%A1unka",
+        "source_quote": "Černá: 100% iberská žaludová šunka (Jamón de bellota 100 % ibérico) představuje nejvyšší třídu iberské šunky.",
+        "voice": "V obchodě si člověk nevybírá podle ceny, ale podle barvy kroužku na noze.",
+        "image_prompt": "Photorealistic macro photo of a coloured plastic tag clipped around the hoof of a hanging cured ham leg, dark cellar background, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pastviny zvané dehesa",
+        "fact": "Prasata se chovají volně na pastvinách porostlých duby, kterým se říká dehesa; jen v Extremaduře se tyto pastviny rozkládají na ploše zhruba jednoho milionu hektarů.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C5%A0pan%C4%9Blsk%C3%A1_%C5%A1unka",
+        "source_quote": "Celkem se pastviny společenství Extremadura rozkládají na ploše zhruba jednoho milionu hektarů.",
+        "voice": "Ta chuť nevzniká v udírně, ale na pastvinách velkých jako celý kraj.",
+        "image_prompt": "Photorealistic wide photo of a dehesa landscape in Extremadura with scattered holm oaks over dry golden grass and black pigs foraging beneath them, warm light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-jidlo-olivovy-olej",
+    "country": "Španělsko",
+    "section": "Jídlo",
+    "topic": "Olivový olej",
+    "headline": "Země, která vyrábí čtvrtinu světového oleje",
+    "fact": "Španělsko bylo v roce 2022 největším světovým producentem olivového oleje a vyrobilo 24 % světové produkce.",
+    "source_url": "https://cs.wikipedia.org/wiki/Olivov%C3%BD_olej",
+    "source_quote": "Španělsko bylo v roce 2022 největším světovým producentem a vyrobilo 24 % světového olivového oleje.",
+    "voice": "Když si někde na světě naliješ olivový olej, je slušná šance, že přijel odsud.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of green olive oil pouring from a bottle into a small ceramic dish beside fresh olives and bread on a rustic table, warm daylight, no text, 16:9",
+    "ll": [
+      -3.79,
+      37.7796
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kraj, kde jsou olivovníky až za obzor",
+        "fact": "Ze španělské produkce pochází 75 % z Andalusie, zejména z provincie Jaén, ačkoli vynikající olej se vyrábí i v dalších regionech včetně Katalánska.",
+        "source_url": "https://cs.wikipedia.org/wiki/Olivov%C3%BD_olej",
+        "source_quote": "75 % oleje vyráběného ve Španělsku pochází z Andalusie, zejména z provincie Jaén, ale vynikající olej se vyrábí i v dalších regionech včetně Katalánska.",
+        "voice": "Krajina, ve které jsou stromy vysázené tak pravidelně, že se z auta dají počítat jako sloupy.",
+        "image_prompt": "Photorealistic aerial photo of endless rows of olive trees covering rolling hills to the horizon in Andalusia, long shadows at sunrise, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Olivovník potřebuje přesně tohle podnebí",
+        "fact": "Zhruba 43,8 % světové produkce olivového oleje pochází ze Španělska a dalšími velkými producenty jsou Itálie, Řecko a Turecko — všechno země Středomoří, kde olivovníku vyhovují horká suchá léta a mírné zimy.",
+        "source_url": "https://cs.wikipedia.org/wiki/Olivov%C3%BD_olej",
+        "source_quote": "Zhruba 43,8 % světové produkce olivového oleje pochází ze Španělska.",
+        "voice": "Mapa olivového oleje je vlastně mapa Středomoří, jen nakreslená stromy.",
+        "image_prompt": "Photorealistic photo of a gnarled ancient olive tree on a dry stony Mediterranean hillside with the sea visible far below, harsh summer light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-historie-pad-granady",
+    "country": "Španělsko",
+    "section": "Historie",
+    "topic": "Pád Granady roku 1492",
+    "headline": "Konec posledního muslimského státu v Evropě",
+    "fact": "Granadský emirát byl v letech 1238–1492 posledním muslimským státem Andalusie; jeho posledního panovníka Muhammada XII. zvaného Boabdil zbavila 2. ledna 1492 trůnu Katolická Veličenstva.",
+    "source_url": "https://cs.wikipedia.org/wiki/Granadsk%C3%BD_emir%C3%A1t",
+    "source_quote": "Posledním panovníkem byl Muhammad XII. „Boabdil“, jehož zbavila 2. ledna 1492 trůnu Katolická Veličenstva.",
+    "voice": "Jeden lednový den skončilo osm století, po která se na poloostrově mluvilo i arabsky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a late medieval Spanish military camp on a plain below a fortified Moorish hill city, banners and tents in cold winter light, no text, 16:9",
+    "ll": [
+      -3.715,
+      37.19
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vlajka vztyčená na věži pevnosti",
+        "fact": "Na počest dobytí Granady byla na jedné z vížek pevnosti Alcazaba v Alhambře poprvé vyvěšena zástava Ferdinanda a Isabely.",
+        "source_url": "https://cs.wikipedia.org/wiki/Alhambra",
+        "source_quote": "Na počest španělského dobytí Granady 2. ledna 1492 byla na jedné z vížek poprvé vyvěšena zástava Ferdinanda a Isabely.",
+        "voice": "Kdo chtěl vědět, kdo právě vyhrál, stačilo se podívat, co vlaje nad kopcem.",
+        "image_prompt": "Photorealistic photo of a stone watchtower on a fortress rampart with a heraldic banner snapping in the wind, city rooftops far below, winter light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Válku o deset let protáhly hory",
+        "fact": "Válka o Granadu začala roku 1482 a skončila v důsledku obtížných geografických podmínek až roku 1492 — členitý horský terén jižní Andalusie protáhl dobývání o celé desetiletí.",
+        "source_url": "https://cs.wikipedia.org/wiki/Granadsk%C3%BD_emir%C3%A1t",
+        "source_quote": "Válka o Granadu, vedená z křesťanské strany Ferdinandem V. Aragonským a Isabelou I. Kastilskou, začala roku 1482 a skončila v důsledku obtížných geografických podmínek až roku 1492.",
+        "voice": "Vojska měla převahu, jenže s horami se vyjednávat nedá.",
+        "image_prompt": "Photorealistic photo of steep rugged mountain ridges of the Sierra Nevada with a narrow pass and a hilltop watchtower, hazy distance, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-historie-kolumbova-plavba",
+    "country": "Španělsko",
+    "section": "Historie",
+    "topic": "První plavba Kryštofa Kolumba",
+    "headline": "Tři lodě, které vypluly hledat Indii",
+    "fact": "Kryštof Kolumbus vyplul 3. srpna 1492 ze španělského přístavu Palos de la Frontera se třemi loděmi Niña, Pinta a Santa María na cestu do domnělé Indie.",
+    "source_url": "https://cs.wikipedia.org/wiki/Prvn%C3%AD_v%C3%BDprava_Kry%C5%A1tofa_Kolumba",
+    "source_quote": "První výprava Kryštofa Kolumba započala 3. srpna 1492, kdy Kryštof Kolumbus vyplul na svou první plavbu do domnělé Indie ze španělského přístavu Palos de la Frontera se třemi loděmi – Niña, Pinta a Santa María",
+    "voice": "Vyplul hledat koření a přivezl zprávu, kvůli které se musely překreslit všechny mapy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of three small 15th century caravels leaving a modest river harbour under full sail, dawn light on the water, no text, 16:9",
+    "ll": [
+      -6.8933,
+      37.2314
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zemi spatřil námořník ve dvě ráno",
+        "fact": "Zemi poprvé spatřil z lodě Pinta ve dvě hodiny ráno 12. října námořník Rodrigo z Triany; Kolumbus ostrov pojmenoval San Salvador, ale který z bahamských ostrovů to byl, dnes přesně nevíme.",
+        "source_url": "https://cs.wikipedia.org/wiki/Prvn%C3%AD_v%C3%BDprava_Kry%C5%A1tofa_Kolumba",
+        "source_quote": "Zemi poprvé spatřil z lodě Pinta ve dvě hodiny ráno 12. října námořník jménem Rodrigo z Triany, známý také jako Rodríguez Bermejo.",
+        "voice": "Nejslavnější okamžik celé plavby zažil někdo, jehož jméno si dnes pamatuje málokdo.",
+        "image_prompt": "Photorealistic night photo from the deck of a wooden sailing ship, a lookout in the rigging pointing toward a faint dark shoreline under moonlight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kanárské ostrovy jako odrazový můstek",
+        "fact": "První Kolumbovou zastávkou byly Kanárské ostrovy patřící Kastilii, kde doplnil zásoby a provedl opravy; teprve odsud se 6. září vydal na pětitýdenní cestu napříč Atlantikem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Prvn%C3%AD_v%C3%BDprava_Kry%C5%A1tofa_Kolumba",
+        "source_quote": "První Kolumbovou zastávkou byly Kanárské ostrovy, které patřily Kastilii.",
+        "voice": "Kdo chtěl přeplout oceán, musel nejdřív ovládnout ostrovy na jeho okraji.",
+        "image_prompt": "Photorealistic aerial photo of a volcanic Atlantic island with a sheltered harbour and open ocean stretching west to the horizon, afternoon light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "es-historie-obcanska-valka",
+    "country": "Španělsko",
+    "section": "Historie",
+    "topic": "Španělská občanská válka",
+    "headline": "Domácí válka, do které zasáhla půlka Evropy",
+    "fact": "Španělská občanská válka trvala od července 1936 do dubna 1939 a vypukla ve chvíli, kdy proti demokraticky zvolené republikánské vládě vojensky vystoupila armáda pod vedením generála Francisca Franca.",
+    "source_url": "https://cs.wikipedia.org/wiki/%C5%A0pan%C4%9Blsk%C3%A1_ob%C4%8Dansk%C3%A1_v%C3%A1lka",
+    "source_quote": "Španělská občanská válka (červenec 1936 – duben 1939) patří k nejkrvavějším, ale i nejnepřehlednějším konfliktům 20. století",
+    "voice": "Začalo to jako domácí spor a během pár měsíců se do toho zapojily armády i dobrovolníci z celé Evropy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of the ruined shell of a Spanish village with roofless stone houses and a broken church tower standing in dry countryside, overcast sky, no text, 16:9",
+    "ll": [
+      -0.7514,
+      41.3053
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Spisovatelé, kteří sem přijeli bojovat",
+        "fact": "Na republikánské straně bojovali i cizinci jako Ernest Hemingway a George Orwell; Orwella jeho zdejší zkušenost nakonec inspirovala k napsání knih Hold Katalánsku, Farma zvířat a 1984.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C5%A0pan%C4%9Blsk%C3%A1_ob%C4%8Dansk%C3%A1_v%C3%A1lka",
+        "source_quote": "Orwella jeho činnost zde nakonec inspirovala k napsání jeho tří nejslavnějších knih Hold Katalánsku, Farma zvířat a 1984.",
+        "voice": "Z jednoho španělského zákopu vzešly knihy, které se dnes čtou po celém světě.",
+        "image_prompt": "Photorealistic photo of a 1930s volunteer soldier writing in a notebook in a shallow trench, rifle leaning beside him, dusty landscape, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Země rozdělená u řeky Ebro",
+        "fact": "Když frankisté pronikli až k řece Ebro a dostali se ke Středozemnímu moři, rozdělili republikánské území na dvě části — jediný postup k pobřeží tak rozhodl o dalším průběhu války.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C5%A0pan%C4%9Blsk%C3%A1_ob%C4%8Dansk%C3%A1_v%C3%A1lka",
+        "source_quote": "Při dalším postupu pronikli frankisté až k řece Ebro, čímž se jim podařilo dostat k Středozemnímu moři a rozdělit republikánské území na dvě části.",
+        "voice": "Stačilo dojít k moři a mapa fronty se rozpadla na dva oddělené kusy.",
+        "image_prompt": "Photorealistic aerial photo of the wide Ebro river winding through dry terraced hills toward the Mediterranean coast, hazy afternoon, no text, 16:9"
+      }
+    }
+  }
+]

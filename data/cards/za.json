@@ -1,0 +1,213 @@
+[
+  {
+    "id": "za-mista-table-mountain",
+    "country": "Jihoafrická republika",
+    "section": "Místa",
+    "topic": "Stolová hora",
+    "headline": "Hora s plochým vrcholem nad Kapským Městem",
+    "fact": "Stolová hora s naprosto plochým vrcholem se tyčí nad Kapským Městem; afrikánsky se jí říká Tafelberg, tedy 'stolová hora'.",
+    "source_url": "https://en.wikipedia.org/wiki/Table_Mountain",
+    "voice": "Vypadá, jako by ji někdo srovnal obřím nožem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Stolové hory nad Kapským Městem, plochý vrchol, mraky obtékající horu, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Skála, ze které je hora tvořena, je stará 450–510 milionů let. Na vrchol vede lanovka i turistické stezky, odkud je výhled na Kapské Město i na Stolový záliv.",
+        "source_url": "https://en.wikipedia.org/wiki/Table_Mountain"
+      },
+      "kartograf": {
+        "fact": "Plochý vrchol Stolové hory vznikl erozí — měkčí vrstvy horniny se postupem miliony let odplavily, zatímco odolnější vrstva navrchu zůstala jako 'stůl'. Podobné ploché vrcholy (stolové hory) se objevují všude tam, kde geologie vytvoří tvrdou odolnou vrstvu na povrchu.",
+        "source_url": "https://en.wikipedia.org/wiki/Table_Mountain"
+      }
+    }
+  },
+  {
+    "id": "za-priroda-kruger",
+    "country": "Jihoafrická republika",
+    "section": "Příroda",
+    "topic": "Velká pětka a safari",
+    "headline": "Národní park, kde žije všech pět velkých šelem a savců",
+    "fact": "Krugerův národní park je jedna z největších afrických rezervací a domov Velké pětky — lva, slona, nosorožce, buvola a levharta.",
+    "source_url": "https://en.wikipedia.org/wiki/Kruger_National_Park",
+    "source_quote": "All the big five game animals are found at Kruger National Park, which has more species of large mammals than any other African game reserve",
+    "voice": "Na jednom místě potkáš zvířata, která jinde vidíš jen v zoo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek stáda slonů procházejících savanou Krugerova parku při západu slunce, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Park má rozlohu přes 19 000 km² a žije v něm 147 druhů velkých savců — víc než v kterékoli jiné africké rezervaci. Termín 'Velká pětka' pochází původně od lovců, dnes ho používají spíš fotografové na safari.",
+        "source_url": "https://en.wikipedia.org/wiki/Kruger_National_Park"
+      },
+      "kartograf": {
+        "fact": "Rozloha Krugerova parku umožňuje udržet fungující ekosystém s velkými predátory i jejich kořistí — menší rezervace by takovou rozmanitost velkých zvířat nedokázaly dlouhodobě uživit, protože dravci potřebují obrovská teritoria.",
+        "source_url": "https://en.wikipedia.org/wiki/Kruger_National_Park"
+      }
+    }
+  },
+  {
+    "id": "za-lide-mandela",
+    "country": "Jihoafrická republika",
+    "section": "Lidé",
+    "topic": "Nelson Mandela",
+    "headline": "27 let ve vězení, pak první černošský prezident",
+    "fact": "Nelson Mandela strávil 27 let ve vězení za odpor proti apartheidu; po propuštění vedl jednání o jeho ukončení a stal se prvním černošským prezidentem Jihoafrické republiky.",
+    "source_url": "https://en.wikipedia.org/wiki/Nelson_Mandela",
+    "voice": "Z vězeňské cely rovnou do prezidentského křesla.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrétní snímek starší postavy v tradičním jihoafrickém oděvu, důstojný výraz, teplé světlo, 16:9",
+    "tags": ["dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Mandela seděl hlavně na ostrově Robben Island. Po propuštění roku 1990 vyjednával s prezidentem de Klerkem ukončení apartheidu, což vedlo k prvním svobodným volbám pro všechny rasy v roce 1994.",
+        "source_url": "https://en.wikipedia.org/wiki/Nelson_Mandela"
+      },
+      "kartograf": {
+        "fact": "Mandelova cesta z vězně na prezidenta je jeden z nejvýraznějších příkladů usmíření v moderních dějinách — místo pomsty za desetiletí útlaku prosazoval jako prezident Komisi pravdy a usmíření, aby země přešla od apartheidu k demokracii bez občanské války.",
+        "source_url": "https://en.wikipedia.org/wiki/Nelson_Mandela"
+      }
+    }
+  },
+  {
+    "id": "za-jidlo-braai",
+    "country": "Jihoafrická republika",
+    "section": "Jídlo",
+    "topic": "Braai",
+    "headline": "Grilování, které je vlastně společenský rituál",
+    "fact": "Braai je jihoafrické grilování, které je zároveň hlavní společenskou událostí — rodiny a přátelé se scházejí u ohně s jídlem a pitím.",
+    "source_url": "https://en.wikipedia.org/wiki/Braai",
+    "source_quote": "A braai is a social occasion that has specific traditions and social norms.",
+    "voice": "Není to jen večeře — je to celé odpoledne u ohně s přáteli.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jihoafrického grilování braai na zahradě, kouř stoupající z uhlí, přátelé okolo, teplé večerní světlo, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Braai má vlastní nepsaná pravidla — kdo obsluhuje gril, jaké maso se peče, kdy se sedá ke stolu. Slovo funguje jako podstatné i sloveso: 'jdeme na braai' i 'budeme braaiovat'.",
+        "source_url": "https://en.wikipedia.org/wiki/Braai"
+      },
+      "kartograf": {
+        "fact": "Braai je jeden z mála zvyků, který v Jihoafrické republice sdílejí lidé napříč etniky a jazykovými skupinami — v zemi s dvanácti úředními jazyky a bolestnou historií segregace funguje společné grilování jako jedna z mála skutečně sjednocujících tradic.",
+        "source_url": "https://en.wikipedia.org/wiki/Braai"
+      }
+    }
+  },
+  {
+    "id": "za-historie-apartheid",
+    "country": "Jihoafrická republika",
+    "section": "Historie",
+    "topic": "Apartheid a jeho konec",
+    "headline": "Systém rasové segregace, který skončil roku 1994",
+    "fact": "Apartheid byl jihoafrický systém zákonné rasové segregace, který trval od roku 1948 do prvních svobodných voleb pro všechny rasy v roce 1994.",
+    "source_url": "https://en.wikipedia.org/wiki/Apartheid",
+    "source_quote": "was a system of institutionalised racial segregation that existed in South Africa",
+    "voice": "Skoro půl století měla barva kůže rozhodovat, kde smíš bydlet i s kým se smíš setkávat.",
+    "visual_type": "photo",
+    "image_prompt": "Historizující fotorealistický dokumentární snímek jihoafrického města v éře apartheidu, sépiové tóny, 16:9",
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Zákony apartheidu rozdělovaly obyvatelstvo podle rasy a určovaly, kde kdo smí bydlet, pracovat nebo studovat. Systém skončil po letech mezinárodních sankcí a vnitřního odporu vedeného mimo jiné Nelsonem Mandelou.",
+        "source_url": "https://en.wikipedia.org/wiki/Apartheid"
+      },
+      "kartograf": {
+        "fact": "Konec apartheidu proběhl bez občanské války, přestože podobné systémy jinde ve světě padaly obvykle po násilných konfliktech — vyjednaný přechod k demokracii je jeden z důvodů, proč se jihoafrický přechod studuje jako model mírového ukončení represivního režimu.",
+        "source_url": "https://en.wikipedia.org/wiki/Apartheid"
+      }
+    }
+  },
+  {
+    "id": "za-kultura-jazyky",
+    "country": "Jihoafrická republika",
+    "section": "Kultura & tradice",
+    "topic": "Dvanáct úředních jazyků JAR",
+    "headline": "Země s dvanácti úředními jazyky",
+    "fact": "Jihoafrická republika má dvanáct úředních jazyků — víc, než má většina zemí světa dohromady oficiálně uznaných.",
+    "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa",
+    "source_quote": "South Africa is a linguistically diverse country and has twelve official languages",
+    "voice": "Na jedněch penězích najdeš nápisy hned v několika různých jazycích.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Mezi úředními jazyky jsou třeba zulština, xhosština, afrikánština i angličtina — od roku 2023 mezi ně patří i jihoafrický znakový jazyk, dvanáctý v pořadí.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa"
+      },
+      "kartograf": {
+        "fact": "Dvanáct úředních jazyků odráží snahu nové demokratické JAR po roce 1994 uznat rovnocennost všech etnických skupin po desetiletích, kdy apartheid zvýhodňoval jen afrikánštinu a angličtinu — jazyková politika tu byla přímo součástí usmíření.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa"
+      }
+    }
+  },
+  {
+    "id": "za-umeni-ndebele",
+    "country": "Jihoafrická republika",
+    "section": "Umění",
+    "topic": "Ndebelská nástěnná malba",
+    "headline": "Domy pomalované jako tajný kód",
+    "fact": "Ženy národa Ndebele zdobí domy pestrobarevnými geometrickými vzory; vzniklo to jako forma odporu po vojenské porážce národa v roce 1883 a fungovalo jako tajný kód mezi lidmi.",
+    "source_url": "https://en.wikipedia.org/wiki/Ndebele_house_painting",
+    "source_quote": "These wall paintings done by the women were their secret code.",
+    "voice": "Vzory na zdi vypadají jako výzdoba, ale nesly skrytý vzkaz.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek domu s pestrobarevnými geometrickými vzory ve stylu Ndebele, jasné sluneční světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Malby kombinují jasné barvy (červená, žlutá, blankytná, zelená, růžová) s černými obrysy na bíleném podkladu. Tradici založili Ndzundzové Ndebele v 18. století, dnes ji proslavila umělkyně Esther Mahlangu i mimo Afriku.",
+        "source_url": "https://en.wikipedia.org/wiki/Ndebele_house_painting"
+      },
+      "kartograf": {
+        "fact": "Ndebelská malba je příklad, jak se vizuální umění stane nástrojem odporu v době, kdy je otevřený projev zakázaný — po vojenské porážce nemohli Ndebele mluvit nahlas, a tak si vytvořili vlastní obrazový jazyk na stěnách vlastních domů.",
+        "source_url": "https://en.wikipedia.org/wiki/Ndebele_house_painting"
+      }
+    }
+  },
+  {
+    "id": "za-sport-rugby1995",
+    "country": "Jihoafrická republika",
+    "section": "Sport",
+    "topic": "Mistrovství světa v ragby 1995",
+    "headline": "Mistrovství světa, které sjednotilo rozdělenou zemi",
+    "fact": "Jihoafrická republika roku 1995 hostila a vyhrála mistrovství světa v ragby — první velkou sportovní událost po skončení apartheidu, kterou prezident Mandela využil k symbolickému usmíření národa.",
+    "source_url": "https://en.wikipedia.org/wiki/1995_Rugby_World_Cup",
+    "source_quote": "wearing a Springboks rugby shirt and cap",
+    "voice": "Prezident si oblékl dres týmu, který byl dřív symbolem bílé menšiny.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ragbyového stadionu při finále, jihoafrický tým v zeleno-zlatých dresech, jásající davy, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Ragbyový tým Springboks byl dřív spojován hlavně s bílou menšinou. Mandela si na finále demonstrativně oblékl jejich dres a čepici a osobně předal kapitánovi Françoisi Pienaarovi trofej — gesto, které mělo sjednotit rozdělenou společnost.",
+        "source_url": "https://en.wikipedia.org/wiki/1995_Rugby_World_Cup"
+      },
+      "kartograf": {
+        "fact": "Mistrovství světa 1995 je učebnicový příklad sportu jako nástroje politického usmíření — Mandela vědomě využil symbol dřív spojený s útlakem (dres Springboks) a přeznačil ho jako symbol jednotné, nové Jihoafrické republiky.",
+        "source_url": "https://en.wikipedia.org/wiki/1995_Rugby_World_Cup"
+      }
+    }
+  },
+  {
+    "id": "za-jazyk-slovnik",
+    "country": "Jihoafrická republika",
+    "section": "Jazyk & slova",
+    "topic": "Přepínání kódů v jazycích JAR",
+    "headline": "Jedna věta, tři jazyky najednou",
+    "fact": "Kvůli dvanácti úředním jazykům běžně jihoafričané míchají v jedné konverzaci slova z angličtiny, afrikánštiny i jednoho z domorodých jazyků najednou.",
+    "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa",
+    "voice": "Věta může začít anglicky a skončit úplně jiným jazykem.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Tento jev se nazývá přepínání kódů (code-switching) a je v mnohojazyčných společnostech běžný — mluvčí volí slova z jazyka, který se pro danou myšlenku zrovna hodí nejlíp, nebo podle toho, s kým mluví.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa"
+      },
+      "kartograf": {
+        "fact": "Přepínání kódů v JAR odráží dějiny země: angličtina a afrikánština byly jazyky moci a vzdělání, domorodé jazyky jazyky domova a komunity — dnešní míšení jazyků je jazykovým otiskem složité koloniální a postkoloniální minulosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa"
+      }
+    }
+  }
+]

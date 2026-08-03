@@ -1,0 +1,866 @@
+[
+  {
+    "id": "vn-mista-ha-long-bay",
+    "country": "Vietnam",
+    "section": "Místa",
+    "topic": "Záliv Ha Long",
+    "headline": "Tisíce vápencových ostrovů v jednom zálivu",
+    "fact": "Záliv Ha Long v Tonkinském zálivu tvoří přes 1 600 vápencových ostrovů a ostrůvků a od roku 1994 je jeho jádro zapsané na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Ha_Long_Bay",
+    "source_quote": "In 1994, the core zone of the bay was listed as a UNESCO World Heritage Site.",
+    "voice": "Odshora vypadá záliv jako rozsypaná mozaika, zblízka je to spíš bludiště mezi útesy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide-angle aerial view of Ha Long Bay at sunrise, thousands of limestone karst islands rising from emerald water, traditional junk boats, natural light, no text, 16:9",
+    "ll": [
+      107.1839,
+      20.9101
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jeskyně, kterou Francouzi pojmenovali jeskyní divů",
+        "fact": "Součástí zálivu je jeskyně Hang Dau Go, kterou francouzští návštěvníci kdysi pojmenovali 'jeskyně divů' pro její obří jeskynní sály plné krápníků.",
+        "source_url": "https://en.wikipedia.org/wiki/Ha_Long_Bay",
+        "source_quote": "Hang Dau Go (Wooden Stakes cave) is the largest grotto in the Hạ Long area.",
+        "voice": "Turisté proplouvají kolem, ale opravdová podívaná čeká až uvnitř skály.",
+        "image_prompt": "Photorealistic scene inside a Ha Long Bay limestone cave, dramatic stalactites and stalagmites lit by soft natural light from the cave entrance, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina, kterou tvarovala voda miliony let",
+        "fact": "Vápencové ostrovy v zálivu Ha Long vznikaly rozpouštěním podloží mořskou vodou po miliony let — podobný proces jako jinde v krasových oblastech světa, jen tady moře zaplavilo celé údolí a nad hladinou nechalo jen vrcholky.",
+        "source_url": "https://en.wikipedia.org/wiki/Ha_Long_Bay",
+        "source_quote": "The evolution of the karst in this bay has taken 20 million years under the impact of the tropical wet climate.",
+        "voice": "Jinde stejný vápenec vytvoří jeskyni, tady z něj moře vytesalo rovnou souostroví.",
+        "image_prompt": "Photorealistic aerial drone view of Ha Long Bay karst islands and calm sea channels, showing the scale of the archipelago, golden hour light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-mista-hoi-an",
+    "country": "Vietnam",
+    "section": "Místa",
+    "topic": "Staré město Hoi An",
+    "headline": "Přístav, který obchod zakonzervoval v čase",
+    "fact": "Staré obchodní město Hoi An sloužilo od 15. do 19. století jako důležitý přístav pro zahraniční obchodníky a od roku 1999 je na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/H%E1%BB%99i_An_Old_Town",
+    "source_quote": "served as an important trading post for foreign traders to Vietnam from the 15th until the 19th century.",
+    "voice": "Lodě sem kdysi vozily hedvábí a koření, dnes vozí hlavně turisty s fotoaparáty.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Hoi An Old Town at dusk, colorful silk lanterns hanging over narrow streets, traditional yellow facades, reflections in the river, no text, 16:9",
+    "ll": [
+      108.338,
+      15.8801
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Most, který postavila japonská komunita",
+        "fact": "Symbolem města je Japonský krytý most, postavený na počátku 17. století místní komunitou japonských obchodníků.",
+        "source_url": "https://en.wikipedia.org/wiki/H%E1%BB%99i_An_Old_Town",
+        "source_quote": "constructed at the start of the 17th century.",
+        "voice": "Most spojoval japonskou a čínskou čtvrť, dnes ho denně přejdou davy návštěvníků z celého světa.",
+        "image_prompt": "Photorealistic close-up of the Japanese Covered Bridge in Hoi An, wooden architecture with a curved roof, warm afternoon light, no people in foreground, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město, které přežilo díky vlastnímu úpadku",
+        "fact": "Když přístav u Hoi Anu na konci 19. století zanesla řeka a obchod se přesunul jinam, město přestalo růst a nikdo nestrhával staré domy kvůli nové výstavbě — paradoxně tak zůstalo zachované dodnes.",
+        "source_url": "https://en.wikipedia.org/wiki/H%E1%BB%99i_An_Old_Town",
+        "source_quote": "the town has not suffered from new development or the replacement of old materials with newer ones",
+        "voice": "Úpadek obchodu byl pro obyvatele ztrátou, pro dnešní turisty je to důvod, proč sem vůbec jezdí.",
+        "image_prompt": "Photorealistic aerial view of Hoi An Old Town rooftops along a calm river, dense historic architecture, morning haze, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-mista-hue-cisarske-mesto",
+    "country": "Vietnam",
+    "section": "Místa",
+    "topic": "Císařské město Hue",
+    "headline": "Zakázané město podle čínského vzoru",
+    "fact": "Císařské město v Hue nechal roku 1804 postavit císař Gia Long jako novou metropoli dynastie Nguyen a od roku 1993 patří na seznam UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Imperial_City,_Hu%E1%BA%BF",
+    "source_quote": "Constructed in 1804 under Emperor Gia Long as a new capital and later re-modelled and enlarged to its current scale in 1833",
+    "voice": "Palác stavěli podle pekingského vzoru, jen o pár století později a v úplně jiné zemi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Imperial City of Hue, ancient citadel walls and gate reflected in the moat, soft morning light, no text, 16:9",
+    "ll": [
+      107.5796,
+      16.4698
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ze sto šedesáti budov zbylo jen deset",
+        "fact": "Během ofenzivy Tet v roce 1968 bylo Císařské město tak poškozené, že se ze 160 původních budov dodnes dochovalo jen 10 hlavních staveb.",
+        "source_url": "https://en.wikipedia.org/wiki/Imperial_City,_Hu%E1%BA%BF",
+        "source_quote": "Out of 160 buildings, only 10 major sites remain after the battle.",
+        "voice": "Stačilo pár týdnů bojů a z celého paláce zbyl jen zlomek.",
+        "image_prompt": "Photorealistic scene of restored pavilions inside the Hue Citadel, traditional Vietnamese imperial architecture, red and gold details, quiet courtyard, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pevnost o rozloze menšího města",
+        "fact": "Vnější hradby Císařského města v Hue tvoří opevněný čtverec zhruba 2 na 2 kilometry obehnaný vodním příkopem, takže komplex svou rozlohou připomíná spíš menší opevněné město než pouhý palác.",
+        "source_url": "https://en.wikipedia.org/wiki/Imperial_City,_Hu%E1%BA%BF",
+        "source_quote": "The grounds of the Imperial City are protected by fortified ramparts 2 by 2 kilometres (1.2 by 1.2 mi), and ringed by a moat.",
+        "voice": "Zvenku to vypadá jako palác, rozlohou je to ale rovnou celé opevněné město.",
+        "image_prompt": "Photorealistic aerial view of the Hue Citadel's square fortified walls and surrounding moat, geometric layout visible from above, golden afternoon light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-priroda-mekong-delta",
+    "country": "Vietnam",
+    "section": "Příroda",
+    "topic": "Delta Mekongu",
+    "headline": "Rýžová sýpka na konci veletoku",
+    "fact": "Delta Mekongu na jihu Vietnamu má rozlohu přes 40 000 km² a vyprodukuje víc než polovinu veškeré vietnamské rýže.",
+    "source_url": "https://en.wikipedia.org/wiki/Mekong_Delta",
+    "source_quote": "Rice output in 2011 was 23,186,000t, 54.8% of Vietnam's total output.",
+    "voice": "Bez téhle bažinaté nížiny by talíř rýže ve Vietnamu vypadal úplně jinak.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Mekong Delta, lush green rice paddies crisscrossed by canals, small wooden boats, warm daylight, no text, 16:9",
+    "ll": [
+      105.7469,
+      10.0452
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Trh, kde se nakupuje přímo z lodě",
+        "fact": "Na plovoucích trzích v deltě Mekongu prodejci nabízejí ovoce a zeleninu přímo z lodí a kupující k nim připlouvají na vlastních člunech.",
+        "source_url": "https://en.wikipedia.org/wiki/Mekong_Delta",
+        "voice": "Žádný pult, žádná kasa — obchod se tu odehrává rovnou na vodě.",
+        "image_prompt": "Photorealistic scene of a floating market on the Mekong Delta, wooden boats loaded with tropical fruit, vendors and buyers trading on the water, morning mist, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina, kterou pořád staví řeka sama",
+        "fact": "Mekong před ústím do moře rozděluje tok na síť ramen a kanálů, které do delty přinášejí úrodné naplaveniny — krajina tu stále vzniká usazováním sedimentu z hor vzdálených hluboko proti proudu.",
+        "source_url": "https://en.wikipedia.org/wiki/Mekong_Delta",
+        "voice": "Řeka sem táhne bahno z hor daleko na severu a z něj postupně staví novou pevninu.",
+        "image_prompt": "Photorealistic aerial view of the Mekong River delta's branching waterways and sediment-rich green fields, seen from above, natural light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-priroda-fansipan",
+    "country": "Vietnam",
+    "section": "Příroda",
+    "topic": "Vrchol Fansipan",
+    "headline": "Střecha celé Indočíny",
+    "fact": "Fansipan v pohoří Hoang Lien Son měří 3 147,3 metru a je nejvyšším vrcholem celého Indočínského poloostrova.",
+    "source_url": "https://en.wikipedia.org/wiki/Fansipan",
+    "source_quote": "Its height was originally measured at 3,143 metres (10,312 ft) in 1909, but this value was later adjusted to 3,147.3 metres (10,326 ft).",
+    "voice": "Na vrchol dřív vedly jen dny náročného treku, dnes tam někoho vyveze lanovka za pár desítek minut.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Fansipan mountain peak rising above a sea of clouds, misty Hoang Lien Son mountain range, morning light, no text, 16:9",
+    "ll": [
+      103.7748,
+      22.3037
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lanovka s hned dvěma světovými rekordy",
+        "fact": "Kabinková lanovka na Fansipan drží dva rekordy Guinnessovy knihy jako nejdelší nepřerušovaná trojlanová lanovka na světě s délkou 6,3 kilometru.",
+        "source_url": "https://en.wikipedia.org/wiki/Fansipan",
+        "source_quote": "holds two Guinness World Records for the longest nonstop, three-rope cable car in the world, spanning 6.3 km (3 15/16 mi).",
+        "voice": "Cesta, která pěšky zabere dny, se lanovkou zvládne stihnout ještě před obědem.",
+        "image_prompt": "Photorealistic scene of a cable car gondola ascending above misty green mountain slopes near Sapa, Vietnam, dramatic clouds, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hora na hranici dvou odlišných světů počasí",
+        "fact": "Fansipan leží na rozhraní tropického nížinného klimatu a chladného horského pásma — vrchol bývá zahalený mraky a v zimě se na něm objeví i mráz nebo sníh, což je ve zbytku Vietnamu vzácný jev.",
+        "source_url": "https://en.wikipedia.org/wiki/Fansipan",
+        "voice": "Ve zbytku země lidé znají jen horko, na vrcholu Fansipanu si občas oblečou i bundu.",
+        "image_prompt": "Photorealistic view from Fansipan summit above the clouds, cool misty atmosphere contrasting with green tropical valleys far below, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-priroda-son-doong",
+    "country": "Vietnam",
+    "section": "Příroda",
+    "topic": "Jeskyně Son Doong",
+    "headline": "Největší jeskynní chodba světa",
+    "fact": "Jeskyně Son Doong v národním parku Phong Nha-Ke Bang je objemem svého hlavního tunelu největší známou jeskynní chodbou na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90o%C3%B2ng_Cave",
+    "source_quote": "the largest known cave passage in the world by volume",
+    "voice": "Uvnitř by se bez problémů schoval celý mrakodrap položený na bok.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot inside Son Doong Cave, massive cavern with shafts of sunlight streaming through a collapsed ceiling doline, lush jungle growing on the cave floor, no text, 16:9",
+    "ll": [
+      106.283,
+      17.482
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Džungle, která roste hluboko pod zemí",
+        "fact": "Dvě propadlé části stropu jeskyně, takzvané doliny, propouštějí dovnitř tolik slunečního světla, že se na dně jeskyně vytvořil vlastní podzemní prales.",
+        "source_url": "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90o%C3%B2ng_Cave",
+        "voice": "Stromy tu rostou tam, kam by je normálně nikdo nečekal — hluboko pod povrchem země.",
+        "image_prompt": "Photorealistic scene of a lush green jungle ecosystem growing inside a massive underground cavern in Son Doong Cave, sunlight beaming through a ceiling opening, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Objev, který na svou chvíli čekal skoro dvacet let",
+        "fact": "Místní muž Ho Khanh narazil na vchod do jeskyně už v roce 1990, ale vrátil se k němu a nechal ho pořádně prozkoumat až o mnoho let později.",
+        "source_url": "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90o%C3%B2ng_Cave",
+        "source_quote": "A local man named Hồ Khanh found the entrance on December 10, 1990, while searching for agarwood.",
+        "voice": "Vchod do obří jeskyně ležel skoro dvě dekády v zapomnění, než se k němu někdo vrátil.",
+        "image_prompt": "Photorealistic scene of a hidden jungle cave entrance in Phong Nha-Ke Bang National Park, dense vegetation, mysterious atmosphere, natural light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-lide-ho-chi-minh",
+    "country": "Vietnam",
+    "section": "Lidé",
+    "topic": "Ho Či Min",
+    "headline": "Revolucionář se stovkou jmen",
+    "fact": "Ho Či Min vyhlásil 2. září 1945 nezávislost Vietnamu a stál u zrodu Indočínské komunistické strany už v roce 1930.",
+    "source_url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+    "source_quote": "Hồ Chí Minh read the Declaration of Independence of Vietnam on 2 September 1945",
+    "voice": "Narodil se jako Nguyen Sinh Cung, ale svět si ho pamatuje pod jménem, které si vybral sám.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style scene evoking 1945 Hanoi, a public square with a speaker's podium and crowd seen from a distance, warm archival tone, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Muž s desítkami různých jmen",
+        "fact": "Podle historiků používal Ho Či Min během života mezi padesáti až dvěma sty různých pseudonymů, aby unikl pozornosti koloniální policie při cestách po světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+        "source_quote": "He is known to have used between 50 and 200 pseudonyms",
+        "voice": "Kdo ho sledoval pod jedním jménem, ztratil stopu hned, jak si vzal jiné.",
+        "image_prompt": "Photorealistic scene of old passports and travel documents from the early 20th century on a wooden desk, sepia tones, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Třicet let v cizině, než se vrátil vládnout domů",
+        "fact": "Ho Či Min od roku 1911 pracoval v řadě zemí v zahraničí, mimo jiné ve Francii, kde se roku 1920 stal jedním ze zakládajících členů Francouzské komunistické strany; do Vietnamu se natrvalo vrátil až v roce 1941.",
+        "source_url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+        "source_quote": "Starting in 1911, he worked in various countries overseas, including France where he was a founding member of the French Communist Party in 1920.",
+        "voice": "Než se stal prezidentem vlastní země, strávil skoro třicet let poznáváním cizích.",
+        "image_prompt": "Photorealistic scene of an early 20th century ocean liner deck, a young Vietnamese traveler looking out at the horizon, evocative period atmosphere, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-lide-sestry-trung",
+    "country": "Vietnam",
+    "section": "Lidé",
+    "topic": "Sestry Trung",
+    "headline": "Vdovy, které tři roky vzdorovaly říši",
+    "fact": "Sestry Trung Trac a Trung Nhi v roce 40 n. l. vedly povstání proti čínské nadvládě a poté tři roky vládly nezávislému území, než je čínská armáda porazila.",
+    "source_url": "https://en.wikipedia.org/wiki/Trung_Sisters",
+    "source_quote": "In March of 40 AD, Trưng Trắc and her younger sister Trưng Nhị led the Lạc Việt to rise up in rebellion against the Han.",
+    "voice": "Dvě ženy postavily vojsko tam, kde to nikdo nečekal, a na pár let z toho byla vlastní vláda.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical reenactment scene of two Vietnamese warrior women leading troops on war elephants, ancient battlefield, dramatic lighting, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Svátek, který si Vietnam připomíná dodnes",
+        "fact": "Na počest sester Trung se ve Vietnamu slaví výroční den jejich smrti a jejich jménem je dodnes pojmenovaná řada ulic, škol i městských čtvrtí po celé zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Trung_Sisters",
+        "source_quote": "Many streets, schools, and districts bear their name",
+        "voice": "Jiné panovnice zmizely z učebnic, tahle dvojice zůstala jménem na ceduli skoro v každém městě.",
+        "image_prompt": "Photorealistic scene of a Vietnamese street shrine dedicated to the Trung Sisters, incense smoke, quiet reverent atmosphere, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vzpoura, která vznikla z osobní křivdy",
+        "fact": "Podnětem k povstání sester Trung byla poprava manžela jedné z nich čínským místodržícím — ukázka, jak i lokální bezpráví dokázalo v podmaněném území roznítit rozsáhlé politické povstání proti vzdálené říši.",
+        "source_url": "https://en.wikipedia.org/wiki/Trung_Sisters",
+        "source_quote": "Trưng Trắc was stirred to action by her husband's killing",
+        "voice": "Impérium spravovalo vzdálenou provincii, ale nepočítalo s tím, jak rychle dokáže hněv jedné rodiny rozdmýchat povstání celého kraje.",
+        "image_prompt": "Photorealistic wide shot of an ancient Red River Delta landscape with a fortified Vietnamese settlement, overcast dramatic sky, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-lide-vo-nguyen-giap",
+    "country": "Vietnam",
+    "section": "Lidé",
+    "topic": "Vo Nguyen Giap",
+    "headline": "Samouk, který porazil koloniální armádu",
+    "fact": "Generál Vo Nguyen Giap zvítězil roku 1954 v bitvě u Dien Bien Phu, přestože předtím nikdy neabsolvoval žádný formální vojenský výcvik.",
+    "source_url": "https://en.wikipedia.org/wiki/Vo_Nguyen_Giap",
+    "source_quote": "had never received any military training prior to World War II.",
+    "voice": "Válku studoval jen z knih, a nakonec s ní porazil profesionální armádu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a military strategist studying maps in a jungle command post, oil lamp light, historical Vietnamese military atmosphere, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Z učitele dějepisu vojevůdcem",
+        "fact": "Než se stal vojevůdcem, vystudoval Vo Nguyen Giap práva a živil se jako učitel dějepisu — vojenskou strategii studoval sám, hlavně z děl Sun Tzua a Napoleona.",
+        "source_url": "https://en.wikipedia.org/wiki/Vo_Nguyen_Giap",
+        "source_quote": "a dedicated reader of military history and philosophy, revering Sun Tzu",
+        "voice": "Ve třídě učil o bitvách dávno minulých a jednoho dne začal vést vlastní.",
+        "image_prompt": "Photorealistic scene of an old Vietnamese classroom in the 1930s, a young teacher at a chalkboard, students in traditional dress, warm light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Velitel jedné armády přes dvě různé války",
+        "fact": "Vo Nguyen Giap velel vietnamské armádě prakticky nepřetržitě od boje proti francouzské kolonizaci až po velkou část války s USA a jižním Vietnamem, což je u vrchních velitelů napříč tak dlouhým obdobím jev spíš výjimečný.",
+        "source_url": "https://en.wikipedia.org/wiki/Vo_Nguyen_Giap",
+        "source_quote": "Giáp remained commander in chief of the PAVN throughout the war",
+        "voice": "Generálové se ve válkách obvykle střídají, tenhle zůstal u velení přes hned dva rozdílné konflikty.",
+        "image_prompt": "Photorealistic scene of a war room map table showing military positions across Vietnam, historical atmosphere, dim lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-kultura-tet",
+    "country": "Vietnam",
+    "section": "Kultura & tradice",
+    "topic": "Svátek Tet",
+    "headline": "Nový rok, který určuje štěstí na celý rok",
+    "fact": "Tet, vietnamský lunární Nový rok, je nejvýznamnějším svátkem v zemi a školáci na něj obvykle dostávají týden volna.",
+    "source_url": "https://en.wikipedia.org/wiki/T%E1%BA%BFt",
+    "source_quote": "the most important celebration in Vietnamese culture",
+    "voice": "Na pár dní se zastaví skoro celá země, aby se rodiny mohly sejít pod jednou střechou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a Vietnamese family Tet celebration, kumquat tree and peach blossoms decorating a home, red lucky envelopes on a table, warm festive light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "První host v roce rozhoduje o štěstí celé rodiny",
+        "fact": "Podle vietnamské tradice určuje první letošní návštěvník domu, takzvaný 'xông đất', jaké štěstí bude rodinu provázet po celý následující rok.",
+        "source_url": "https://en.wikipedia.org/wiki/T%E1%BA%BFt",
+        "source_quote": "the first visitor who a family receives in the year determines their fortune for the entire year",
+        "voice": "Rodiny si dokonce domlouvají, kdo k nim má jako první přijít na návštěvu, aby měly jistotu dobrého roku.",
+        "image_prompt": "Photorealistic scene of a Vietnamese family welcoming a guest at the doorway during Tet, traditional ao dai clothing, festive decorations, morning light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Svátek podle měsíce, ne podle slunce",
+        "fact": "Tet se řídí lunisolárním kalendářem, takže jeho datum v gregoriánském kalendáři každý rok kolísá mezi koncem ledna a únorem — typický rys asijských svátků vázaných na fáze měsíce místo pevného data.",
+        "source_url": "https://en.wikipedia.org/wiki/T%E1%BA%BFt",
+        "source_quote": "usually falls between late January and 20 February in the Gregorian calendar.",
+        "voice": "Zatímco Evropa slaví Nový rok podle pevného data, tady rozhoduje postavení měsíce na obloze.",
+        "image_prompt": "Photorealistic scene of a full moon over a traditional Vietnamese village at night during Tet season, lanterns glowing, peaceful atmosphere, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-kultura-ao-dai",
+    "country": "Vietnam",
+    "section": "Kultura & tradice",
+    "topic": "Áo dài",
+    "headline": "Národní šat, co prošel evropskou proměnou",
+    "fact": "Předchůdce dnešních šatů áo dài navrhli páni z rodu Nguyen v Phu Xuan už v 18. století, moderní podobu jim ale v roce 1930 dal až hanojský výtvarník Nguyen Cat Tuong.",
+    "source_url": "https://en.wikipedia.org/wiki/%C3%81o_d%C3%A0i",
+    "source_quote": "In 1930, Hanoi artist Cát Tường, also known as Le Mur, designed a shirt inspired by the áo ngũ thân and by Paris fashions.",
+    "voice": "Střih je vietnamský, ale k dnešní siluetě mu pomohla i pařížská móda.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a Vietnamese woman wearing a traditional flowing ao dai dress, walking through an old town street, soft afternoon light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Šaty inspirované pařížskými krejčími",
+        "fact": "Nguyen Cat Tuong přezdívaný Le Mur přetvořil původní pětidílný šat áo ngu than podle pařížské módy — zúžil siluetu, prodloužil sukni až k zemi a přidal sytější barvy.",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%81o_d%C3%A0i",
+        "voice": "Vzal starý střih z venkova a učesal ho do podoby, kterou by pochopila i pařížská ulice.",
+        "image_prompt": "Photorealistic scene of a 1930s Hanoi tailor shop, fabric bolts and a dress form draped with an early modern ao dai design, warm interior light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Šaty jako otázka národní hrdosti",
+        "fact": "Ao dai se ve Vietnamu dnes běžně označuje jako 'áo dài Việt Nam' a jeho návrhářství stát otevřeně podporuje jako symbol vlastenectví — oblečení tu tak přestalo být jen módou a stalo se i politickým gestem.",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%81o_d%C3%A0i",
+        "source_quote": "It is often called áo dài Việt Nam to link it to patriotic feelings.",
+        "voice": "Kus látky sešitý podle starého střihu se dá nosit i jako tichý vzkaz o národní hrdosti.",
+        "image_prompt": "Photorealistic scene of a group of Vietnamese schoolgirls in white ao dai cycling along a tree-lined street, dappled sunlight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-kultura-uctivani-predku",
+    "country": "Vietnam",
+    "section": "Kultura & tradice",
+    "topic": "Uctívání předků",
+    "headline": "Domácí oltář, který drží rodinu pohromadě",
+    "fact": "Většina vietnamských domácností má bez ohledu na vlastní náboženství doma oltář předků s tabulkami a fotografiemi zesnulých příbuzných.",
+    "source_url": "https://en.wikipedia.org/wiki/Vietnamese_folk_religion",
+    "source_quote": "Most Vietnamese, regardless of religious denomination, practice ancestor worship and have an ancestor altar at their home or business.",
+    "voice": "Zemřelí příbuzní tu v domácnosti zůstávají přítomní dál, jen na jiné poličce.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a traditional Vietnamese ancestor altar at home, incense burner, framed photos, offerings of fruit, warm candlelight, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Úcta, kterou v rodině dodržují dodnes",
+        "fact": "Rodiny si den úmrtí svých předků pravidelně připomínají zvláštním obřadem s jídlem a kadidlem u domácího oltáře, aby si udržely spojení s příbuznými, kteří už zemřeli.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnamese_folk_religion",
+        "voice": "Výročí úmrtí se tu neslaví smutkem, ale prostřeným stolem jako za života.",
+        "image_prompt": "Photorealistic scene of an elderly Vietnamese woman lighting incense at a family ancestor shrine, respectful quiet moment, soft light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Víra, která propojuje tři různé tradice",
+        "fact": "Vietnamská lidová víra se utvářela postupným prolnutím buddhismu, konfuciánství a taoismu přejatých z Číny s původními místními kulty — uctívání předků patří mezi prvky, které tyto vrstvy spojují dohromady.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnamese_folk_religion",
+        "source_quote": "Folk religions were founded on endemic cultural beliefs that were historically affected by Confucianism and Taoism from ancient China, as well as by various strands of Buddhism.",
+        "voice": "Tři různá náboženství se ve Vietnamu nepobila o vliv, spíš se poskládala do jednoho společného zvyku.",
+        "image_prompt": "Photorealistic scene of a serene Vietnamese pagoda courtyard blending Buddhist and Confucian architectural elements, incense smoke drifting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-umeni-vodni-loutky",
+    "country": "Vietnam",
+    "section": "Umění",
+    "topic": "Vodní loutkové divadlo",
+    "headline": "Jeviště přímo na hladině rybníka",
+    "fact": "Vietnamské vodní loutkové divadlo vzniklo už v 11. století ve vesnicích v deltě Rudé řeky, kde loutkáři stáli po pás ve vodě za bambusovou zástěnou.",
+    "source_url": "https://en.wikipedia.org/wiki/Water_puppetry",
+    "source_quote": "dates back as far as the 11th century, when it originated in the villages of the Red River Delta",
+    "voice": "Diváci vidí jen loutky na hladině, samotní loutkáři zůstávají celou dobu skrytí pod vodou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of a traditional Vietnamese water puppet show, wooden puppets performing on a pond in front of a pagoda-style screen, colorful reflections, evening light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Až osm loutkářů schovaných za scénou",
+        "fact": "Představení vodních loutek řídí až osm loutkářů skrytých za bambusovou zástěnou, kteří loutky ovládají dlouhými tyčemi a systémem provázků schovaným pod hladinou.",
+        "source_url": "https://en.wikipedia.org/wiki/Water_puppetry",
+        "source_quote": "Up to eight puppeteers stand behind a split-bamboo screen, decorated to resemble a temple facade, and control the puppets using long bamboo rods and string mechanism hidden beneath the water surface.",
+        "voice": "Loutka nad hladinou vypadá jako živá, mechanika, co ji pohání, zůstává skrytá pod vodou.",
+        "image_prompt": "Photorealistic behind-the-scenes view of Vietnamese water puppeteers standing waist-deep in water behind a bamboo screen, controlling puppets with long rods, dim workshop light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Divadlo, které vzniklo na zaplavených rýžových polích",
+        "fact": "Vodní loutky se původně hrály přímo na zaplavených rýžových polích po období dešťů — vodní hladina posloužila zároveň jako jeviště i jako způsob, jak před diváky schovat mechaniku loutek.",
+        "source_url": "https://en.wikipedia.org/wiki/Water_puppetry",
+        "voice": "Krajina, kterou příroda zrovna zaplavila, se proměnila rovnou v divadelní jeviště.",
+        "image_prompt": "Photorealistic scene of flooded rice paddies in northern Vietnam during rainy season, still reflective water, distant village, soft overcast light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-umeni-dong-ho",
+    "country": "Vietnam",
+    "section": "Umění",
+    "topic": "Obrázky z Dong Ho",
+    "headline": "Tisky z papíru posypaného perletí",
+    "fact": "Lidové dřevořezové tisky z vesnice Dong Ho u Hanoje se tisknou na papír zvaný giay diep, který obsahuje prášek z mořských lastur a dodává mu jemný perleťový lesk.",
+    "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting",
+    "source_quote": "powders of seashells",
+    "voice": "Obrázek se leskne, ještě než na něj vůbec padne barva.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of traditional Dong Ho woodblock folk paintings, pig and rooster motifs, textured mother-of-pearl paper, natural light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Barvy přímo z popela a květů",
+        "fact": "Řemeslníci v Dong Ho míchají přírodní barviva ze spálených bambusových listů pro černou barvu, z prášku červené horniny pro červenou nebo z květů senny pro žlutou.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting",
+        "source_quote": "burnt bamboo leaves",
+        "voice": "Malíř tu nesahal do tuby s barvou, ale rovnou do přírody kolem vesnice.",
+        "image_prompt": "Photorealistic scene of a Dong Ho village artisan applying natural pigments to a woodblock print, traditional workshop, warm daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vesnice, kde se řemeslo dědí po generace",
+        "fact": "Dong Ho leží asi 35 kilometrů od Hanoje a řemeslo dřevořezových tisků se v ní tradičně dědí uvnitř místních rodin po celé generace, díky čemuž patří mezi typické 'řemeslné vesnice' delty Rudé řeky.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting",
+        "source_quote": "about 35 km from Hanoi.",
+        "voice": "Řemeslo tu nezůstává v muzeu, ale putuje dál v rámci jedné a téže vesnice.",
+        "image_prompt": "Photorealistic aerial view of Dong Ho village near Hanoi, traditional houses along a river, rural Red River Delta landscape, soft light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-umeni-nha-nhac",
+    "country": "Vietnam",
+    "section": "Umění",
+    "topic": "Dvorní hudba nha nhac",
+    "headline": "Hudba pro císaře, co dnes hraje pro turisty",
+    "fact": "Dvorní hudba nha nhac se ve Vietnamu hrála od dynastie Tran ve 13. století až po dynastii Nguyen na konci 20. století a od roku 2003 je na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Nh%C3%A3_nh%E1%BA%A1c",
+    "source_quote": "'Nhã nhạc of Huế court' (Nhã nhạc cung đình Huế) was recognised in 2003 by UNESCO as a Masterpiece of the Oral and Intangible Heritage of Humanity.",
+    "voice": "Melodie, která kdysi zněla jen pro uši císaře, dnes slyší kdokoli s lístkem na koncert.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of traditional Vietnamese court musicians performing Nha Nhac music in the Hue Imperial City, ornate costumes, traditional instruments, evening lantern light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Tóny, co doprovázely korunovace i pohřby",
+        "fact": "Dvorní hudba doprovázela ve vietnamském císařském paláci nejrůznější slavnostní příležitosti, od korunovací přes náboženské svátky až po pohřby a přijetí zahraničních vyslanců.",
+        "source_url": "https://en.wikipedia.org/wiki/Nh%C3%A3_nh%E1%BA%A1c",
+        "source_quote": "Vietnamese court music was performed at annual ceremonies, including anniversaries and religious holidays, as well as special events such as coronations, funerals or official receptions.",
+        "voice": "Stejné tóny doprovázely ve vietnamském paláci úplně radostné i úplně smutné chvíle.",
+        "image_prompt": "Photorealistic scene of ceremonial court musicians and dancers inside a Vietnamese imperial hall, elaborate silk robes, dim golden lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hudba, co se zdokonalovala pod jednou dynastií nejdéle",
+        "fact": "Nha nhac se podle historiků vyvíjela už od dynastie Tran, svého vrcholu a přesných pravidel ale dosáhla až za dynastie Nguyen, která ji prohlásila za oficiální dvorní hudbu a pevně ji zapojila do palácových obřadů.",
+        "source_url": "https://en.wikipedia.org/wiki/Nh%C3%A3_nh%E1%BA%A1c",
+        "source_quote": "It is believed that nhã nhạc did not truly reach the pinnacle of its development until the Nguyễn Dynasty, when it was standardized.",
+        "voice": "Umění dozrávalo pomalu celé generace, než ho jedna dynastie sešila do pevných pravidel.",
+        "image_prompt": "Photorealistic scene of ancient musical instruments and scrolls of court music notation displayed in the Hue Imperial City museum, soft indoor lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-sport-vovinam",
+    "country": "Vietnam",
+    "section": "Sport",
+    "topic": "Vovinam",
+    "headline": "Bojové umění postavené na principu tvrdého a měkkého",
+    "fact": "Bojové umění vovinam založil v roce 1938 v Hanoji Nguyen Loc a dnes se vyučuje ve víc než 60 zemích světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Vovinam",
+    "source_quote": "Vovinam was founded in 1938 by Nguyễn Lộc (1912–1960) in Hanoi, with the intent of providing practitioners with an efficient method of self-defense.",
+    "voice": "Vzniklo v jednom vietnamském městě a dnes se cvičí na místech, kam by zakladatel možná ani nedohlédl na mapě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of Vovinam martial artists in white uniforms with distinctive blue belts practicing a flying scissor kick technique outdoors, dynamic action, natural light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Princip tvrdého a měkkého v každém pohybu",
+        "fact": "Vovinam staví na principu, kdy se tvrdé a měkké techniky používají rovnocenně vedle sebe tak, aby se cvičenec dokázal přizpůsobit každé situaci a každému soupeři.",
+        "source_url": "https://en.wikipedia.org/wiki/Vovinam",
+        "source_quote": "Hard and soft are used equally to adapt to every situation, to every problem.",
+        "voice": "Není to jen o síle úderu, ale hlavně o tom, kdy sílu použít a kdy naopak povolit.",
+        "image_prompt": "Photorealistic close-up scene of two Vovinam practitioners demonstrating a defensive technique, focused expressions, training hall setting, natural light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vietnamský vývozní artikl bez pasu a víz",
+        "fact": "Vovinam se z Vietnamu rozšířilo do desítek zemí na několika kontinentech a dnes ho úřady oficiálně uznávají jako součást národního nehmotného kulturního dědictví.",
+        "source_url": "https://en.wikipedia.org/wiki/Vovinam",
+        "source_quote": "Vovinam today is considered by the Ministry of Culture, Sports and Tourism to be a 'National Intangible Cultural Heritage' as of November, 2023.",
+        "voice": "Cestovalo bez letenky — stačilo, že si ho osvojili lidé v úplně jiných zemích.",
+        "image_prompt": "Photorealistic scene of an international Vovinam tournament, athletes from different countries in uniforms lined up, arena setting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-sport-da-cau",
+    "country": "Vietnam",
+    "section": "Sport",
+    "topic": "Da cau",
+    "headline": "Národní sport, kde míč nesmí spadnout na zem",
+    "fact": "Da cau je vietnamský sport, ve kterém hráči udržují opeřený míček ve vzduchu pomocí nohou, kolen i hlavy, jen ne rukou, a platí za neoficiální národní sport země.",
+    "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%A1_c%E1%BA%A7u",
+    "source_quote": "In Vietnam, it is known as đá cầu, and it is the national sport.",
+    "voice": "Ruce má hráč pořád u těla, přesto musí míček udržet ve hře co nejdéle.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of young Vietnamese people playing da cau shuttlecock kicking in a park, mid-action kick, colorful shuttlecock in the air, sunny day, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Vietnamský tým, který desetkrát vyhrál mistrovství světa",
+        "fact": "Vietnamský reprezentační tým v da cau vyhrál podle dostupných zdrojů mistrovství světa po deset let za sebou, což dělá ze země suverénně nejúspěšnější stát v tomto sportu.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%A1_c%E1%BA%A7u",
+        "source_quote": "Vietnam is highly regarded, having won the world championship for ten consecutive years.",
+        "voice": "V jiných sportech se vítězové střídají, tady dlouho vyhrával prakticky pořád jeden stát.",
+        "image_prompt": "Photorealistic scene of a competitive da cau match on an indoor court resembling a badminton court, players in Vietnamese national team uniforms, spectators blurred in background, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jedna hra, mnoho jmen napříč Asií",
+        "fact": "Podobné hry s kopáním do opeřeného míčku bez použití rukou existují po celé jihovýchodní a východní Asii — v Koreji jako jegichagi, v Thajsku jako sepak takraw nebo v Myanmaru jako chinlone — což naznačuje společný starší základ, ze kterého tyto regionální varianty vznikly.",
+        "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%A1_c%E1%BA%A7u",
+        "source_quote": "Đá cầu shares mechanics with related Asian sports including Korean jegichagi, Japanese kemari, Thai sepak takraw, Burmese chinlone, and Philippine sipa.",
+        "voice": "Různé země tomu říkají jinak, princip nohou proti padajícímu peří ale zůstává skoro všude stejný.",
+        "image_prompt": "Photorealistic scene of a shuttlecock suspended mid-air above bare feet mid-kick, blurred motion, outdoor courtyard setting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-sport-cau-may",
+    "country": "Vietnam",
+    "section": "Sport",
+    "topic": "Cau may (sepak takraw)",
+    "headline": "Odbíjená, na kterou si nesmíš sáhnout rukou",
+    "fact": "Cau may, ve světě známé jako sepak takraw, je jihovýchodoasijský sport podobný odbíjené, ve kterém hráči smí míč z ratanu nebo umělého vlákna přehazovat přes síť jen nohama, koleny, rameny nebo hlavou.",
+    "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+    "source_quote": "players using only their feet, knees, shoulders, chest, and head to touch the ball.",
+    "voice": "Přes síť létá míč rychlostí smeče, přitom ho hráč nikdy nechytí do rukou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic action scene of a sepak takraw player performing an acrobatic bicycle kick to spike a rattan ball over a net, outdoor court, dynamic motion, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pravidelná disciplína na asijských i jihovýchodoasijských hrách",
+        "fact": "Cau may je pravidelnou soutěžní disciplínou na Asijských hrách i na Jihovýchodoasijských hrách, kde patří mezi diváky nejsledovanější sportovní odvětví regionu.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+        "source_quote": "Sepak Takraw is now a regular sport event in the Asian Games and the Southeast Asian Games, with Thailand having won the most medals for the event.",
+        "voice": "Diváci sledují, jak hráč ve výskoku kope míč přes síť silou, jaká by v jiném sportu patřila spíš ruce.",
+        "image_prompt": "Photorealistic scene of a packed stadium watching a sepak takraw match at a Southeast Asian regional tournament, colorful team jerseys, evening floodlights, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport, který sjednotily čtyři sousední země",
+        "fact": "Moderní pravidla cau may/sepak takraw dohodli zástupci Malajsie, Singapuru, Thajska a Myanmaru na společném jednání v Kuala Lumpuru — region si tak sjednotil starší lidové hry do jedné mezinárodně uznávané disciplíny.",
+        "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
+        "source_quote": "was introduced, developed, and standardised in 1960 when officials from Malaysia, Singapore, Thailand, and Myanmar met in Kuala Lumpur.",
+        "voice": "Než z toho byla oficiální liga, různé vesnice si dost možná hrály úplně stejnou hru pod jiným jménem.",
+        "image_prompt": "Photorealistic scene of a historical multi-national sports committee meeting from mid-20th century Southeast Asia, vintage conference room, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-jazyk-quoc-ngu",
+    "country": "Vietnam",
+    "section": "Jazyk & slova",
+    "topic": "Chu quoc ngu",
+    "headline": "Latinka, kterou pro Vietnamce vymysleli misionáři",
+    "fact": "Vietnamské písmo chu quoc ngu založené na latince navrhli portugalští a italští jezuitští misionáři už od roku 1620 a francouzská koloniální správa ho prosadila jako oficiální písmo v roce 1910.",
+    "source_url": "https://en.wikipedia.org/wiki/Vietnamese_alphabet",
+    "source_quote": "In 1910, the French colonial administration enforced chữ Quốc ngữ.",
+    "voice": "Písmo, které dnes používá celý národ, vzniklo původně kvůli potřebám cizích kazatelů.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of an old handwritten Vietnamese Latin-script manuscript page from a 17th century missionary dictionary, quill pen, warm archival light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovník, který spojil tři jazyky najednou",
+        "fact": "Misionář Alexandre de Rhodes sestavil vietnamsko-portugalsko-latinský slovník, který mu v roce 1651 vytiskli v Římě a který dodnes patří k nejstarším dochovaným dílům psaným novým vietnamským písmem.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnamese_alphabet",
+        "source_quote": "Rhodes compiled the Dictionarium Annamiticum Lusitanum et Latinum, a Vietnamese–Portuguese–Latin dictionary, which was later printed in Rome in 1651, using their spelling system.",
+        "voice": "Kniha vznikla daleko od Vietnamu, a přesto navždy změnila podobu vietnamského písma.",
+        "image_prompt": "Photorealistic scene of an antique printed dictionary page with Latin, Portuguese and Vietnamese script columns, aged paper, soft light, no readable modern text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Písmo, které dvě stě let žilo jen v kostele",
+        "fact": "Než francouzská správa písmo chu quoc ngu prosadila plošně, používala ho po dobu asi dvou set let hlavně katolická komunita, zatímco většina Vietnamců dál psala tradičním písmem chu nom.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnamese_alphabet",
+        "source_quote": "for 200 years, chữ Quốc ngữ was used within the Catholic community",
+        "voice": "Jedno písmo si dlouho vystačilo jen s kostelními lavicemi, než se dostalo do škol po celé zemi.",
+        "image_prompt": "Photorealistic scene of an old Vietnamese Catholic church interior with a weathered prayer book open on a pew, soft light through stained glass, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-jazyk-sest-tonu",
+    "country": "Vietnam",
+    "section": "Jazyk & slova",
+    "topic": "Šest tónů vietnamštiny",
+    "headline": "Jedna slabika, šest úplně jiných slov",
+    "fact": "Ve standardní severní vietnamštině rozlišuje mluvčí šest různých tónů, přičemž stejná slabika vyslovená s jiným tónem znamená úplně jiné slovo.",
+    "source_url": "https://en.wikipedia.org/wiki/Vietnamese_phonology",
+    "source_quote": "a word may be repeated with any one of six tones to indicate six different meanings.",
+    "voice": "Stejný zvuk, jiná melodie hlasu, a najednou mluvíš o něčem úplně jiném.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo 'ma' se šesti různými životy",
+        "fact": "Slabika 'ma' znamená ve vietnamštině podle použitého tónu šest různých věcí — třeba duch, matka, ale, kůň, hrob nebo rýžová sazenice.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnamese_phonology",
+        "source_quote": "ma (ghost), má (mother), mà (but/that), mã (horse), mả (grave) and mạ (rice seedling).",
+        "voice": "Cizinec uslyší jedno slovo, rodilý mluvčí v něm slyší hned šest různých příběhů.",
+        "image_prompt": "Photorealistic close-up scene of a language student's notebook with the word 'ma' written six times, each with a different Vietnamese tone mark, pencil and paper, soft light, no additional text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tóny jako gramatika, ne jen melodie",
+        "fact": "Na rozdíl od jazyků, kde melodie věty vyjadřuje hlavně emoce, ve vietnamštině tón mění přímo význam slova — jazykovědci proto vietnamštinu řadí mezi takzvané tónové jazyky, podobně jako čínštinu nebo thajštinu.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnamese_phonology",
+        "voice": "Melodie tu není ozdoba věty, je to přímo součást slovníku.",
+        "image_prompt": "Photorealistic typographic close-up of Vietnamese words with tone diacritic marks, elegant calligraphy on textured paper, soft natural light, no readable modern text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-jazyk-vietnam-jmeno",
+    "country": "Vietnam",
+    "section": "Jazyk & slova",
+    "topic": "Jméno Vietnam",
+    "headline": "Země pojmenovaná podle strany světa",
+    "fact": "Název Vietnam v doslovném překladu znamená 'jih lidu Viet' a v dnešní podobě ho jako oficiální jméno státu použil císař Gia Long mezi lety 1804 a 1813.",
+    "source_url": "https://en.wikipedia.org/wiki/Vietnam",
+    "source_quote": "Between 1804-13, the name Vietnam was used officially by Emperor Gia Long.",
+    "voice": "Jméno, které dnes zná celý svět, muselo napřed počkat na panovníka, který ho prohlásí za oficiální.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of an old hand-drawn 19th century map of Vietnam with calligraphic place names, aged paper texture, warm archival light, no readable modern text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Předtím se zemi říkalo jinak",
+        "fact": "Než se ujal název Vietnam, nazývala se země i její lid dlouho Annam a Annamité — tohle pojmenování se běžně používalo až do roku 1945, kdy ho císařská vláda v Hue oficiálně nahradila jménem Viet Nam.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnam",
+        "source_quote": "The country was usually called Annam and its people Annamites until 1945, when the imperial government in Huế adopted Việt Nam.",
+        "voice": "Cizinci zemi dlouho volali jinak, než si sama prosadila jméno, které si vybrala.",
+        "image_prompt": "Photorealistic scene of a vintage 1940s colonial-era document referencing an old Vietnamese place name, sepia tones, aged paper, no readable modern text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jméno, které čekalo staletí ve staré básni",
+        "fact": "Podoba jména 'Việt Nam' se objevuje už v básnickém proroctví ze 16. století, dlouho předtím, než ho panovníci přijali jako oficiální název státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Vietnam",
+        "source_quote": "The form Việt Nam (越南) is first recorded in the 16th-century oracular poem Sấm Trạng Trình.",
+        "voice": "Jméno státu čekalo v jedné básni celá staletí, než ho někdo vzal vážně a udělal z něj úřední název.",
+        "image_prompt": "Photorealistic scene of an ancient Vietnamese poetry scroll with classical script, soft candlelight, historical library setting, no readable modern text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-jidlo-pho",
+    "country": "Vietnam",
+    "section": "Jídlo",
+    "topic": "Pho",
+    "headline": "Polévka, co dobyla svět po válce",
+    "fact": "Polévka pho vznikla podle historiků na severu Vietnamu kolem let 1900 až 1907 a do zahraničí se ve větší míře rozšířila až s vietnamskými uprchlíky po skončení vietnamské války.",
+    "source_url": "https://en.wikipedia.org/wiki/Ph%E1%BB%9F",
+    "source_quote": "The modern form emerged between 1900 and 1907 in northern Vietnam.",
+    "voice": "Recept se zrodil na severu, ale slávu si vysloužil až o desítky let a tisíce kilometrů dál.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a steaming bowl of Vietnamese pho noodle soup with beef slices, herbs, and lime, street food stall setting, warm light, no text, 16:9",
+    "ll": [
+      106.1675,
+      20.4341
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kolébka polévky ve dvou malých vesnicích",
+        "fact": "Za rodiště pho se považují vesnice Van Cu a Dao Cu v provincii Nam Dinh, odkud se recept postupně rozšířil do Hanoje a dál po celé zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Ph%E1%BB%9F",
+        "source_quote": "The traditional home of phở is reputed to be the villages of Vân Cù and Dao Cù (or Giao Cù) in Đông Xuân commune, Nam Trực District, Nam Định Province.",
+        "voice": "Jídlo, co dnes znají restaurace po celém světě, začalo v pár vesnicích, o kterých většina lidí nikdy neslyšela.",
+        "image_prompt": "Photorealistic scene of a rural Vietnamese village in Nam Dinh province, traditional houses near rice fields, morning mist, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Válka, co proměnila místní jídlo v globální",
+        "fact": "Po skončení vietnamské války odešli vietnamští uprchlíci do Francie, USA, Kanady i Austrálie a s sebou si přinesli recept na pho — restaurace s touto polévkou tak vznikly v 'malých Saigonech' po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Ph%E1%BB%9F",
+        "source_quote": "In the aftermath of the Vietnam War, Vietnamese refugees brought phở to many countries. Restaurants specializing in phở appeared in numerous Asian neighborhoods and Little Saigons, such as in Paris and in major cities in the United States, Canada, and Australia.",
+        "voice": "Emigrace lidem vzala domov, jídlo z domova si ale vzít nenechali.",
+        "image_prompt": "Photorealistic scene of a Vietnamese pho restaurant in a Western city's Chinatown or Little Saigon district, blurred neon signage in background, evening atmosphere, no readable text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-jidlo-banh-mi",
+    "country": "Vietnam",
+    "section": "Jídlo",
+    "topic": "Banh mi",
+    "headline": "Bageta, co se stala vietnamským sendvičem",
+    "fact": "Francouzi přivezli bagetu do Vietnamu v polovině 19. století a v padesátých letech 20. století z ní v Saigonu vznikl svébytný vietnamský sendvič banh mi.",
+    "source_url": "https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC",
+    "source_quote": "In the 1950s, a distinctly Vietnamese style of sandwich developed in Saigon, becoming a popular street food.",
+    "voice": "Základ přivezli kolonisté, náplň si ale vymysleli místní úplně po svém.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a Vietnamese banh mi sandwich cut open showing pate, pork, pickled vegetables and cilantro, street food cart in background, natural light, no text, 16:9",
+    "ll": [
+      106.6602,
+      10.7626
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Francouzská paštika vedle vietnamské zeleniny",
+        "fact": "Do banh mi se běžně kombinuje francouzská paštika se svébytně vietnamskými přísadami jako je klobása cha lua, koriandr, okurka a nakládaná mrkev s ředkví.",
+        "source_url": "https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC",
+        "source_quote": "proteins and vegetables from native Vietnamese cuisine such as chả lụa (Vietnamese sausage), coriander (cilantro), cucumber, pickled carrots, and pickled daikon combined with condiments from French cuisine such as pâté.",
+        "voice": "Na jednom rohlíku se tu potkává francouzská kuchyně s vietnamskou zeleninářskou zahradou.",
+        "image_prompt": "Photorealistic overhead scene of banh mi sandwich ingredients laid out separately: baguette, pate, pickled vegetables, herbs, chili, on a wooden board, natural daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sendvič, co objel svět s vietnamskou diasporou",
+        "fact": "Po vietnamské válce popularizovali banh mi vietnamští emigranti v zemích jako Austrálie, Kanada nebo USA, kde se ze sendviče rychlého občerstvení stal běžný pokrm i mimo vietnamskou komunitu.",
+        "source_url": "https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC",
+        "source_quote": "Following the Vietnam War, overseas Vietnamese popularized the bánh mì sandwich in countries such as Australia, Canada and the United States.",
+        "voice": "Recept z jedné ulice v Saigonu skončil na jídelníčcích úplně jiných kontinentů.",
+        "image_prompt": "Photorealistic street scene of a banh mi food truck or stall in a Western city, diverse customers waiting in line, daytime, no readable text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-jidlo-nuoc-mam",
+    "country": "Vietnam",
+    "section": "Jídlo",
+    "topic": "Rybí omáčka nuoc mam",
+    "headline": "Kvašené ryby jako základ vietnamské chuti",
+    "fact": "Rybí omáčka nuoc mam se vyrábí kvašením ančoviček a soli a nejproslulejší se vyrábí na ostrově Phu Quoc a v oblasti Phan Thiet.",
+    "source_url": "https://en.wikipedia.org/wiki/Fish_sauce",
+    "source_quote": "There are two areas in Vietnam that are most famous for producing fish sauce: Phú Quốc and Phan Thiết.",
+    "voice": "Bez téhle jedné lahvičky by vietnamská kuchyně chutnala úplně jinak.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic scene of traditional wooden fish sauce fermentation barrels on Phu Quoc island, fishing boats in the harbor background, warm sunset light, no text, 16:9",
+    "ll": [
+      103.984,
+      10.2899
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Omáčka, co v sudech zraje i dva roky",
+        "fact": "Kvalitní rybí omáčka zraje ve dřevěných sudech i přes rok, v některých případech fermentace trvá až dva roky, než se dosáhne požadované chuti.",
+        "source_url": "https://en.wikipedia.org/wiki/Fish_sauce",
+        "source_quote": "for up to two years",
+        "voice": "Čím déle omáčka v sudu čeká, tím cennější kapka z něj nakonec odteče.",
+        "image_prompt": "Photorealistic close-up of amber-colored fish sauce being poured from a wooden barrel spout, warm golden liquid, rustic production facility, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vietnamský vývozní artikl v láhvích po celém světě",
+        "fact": "Vietnamská výroba rybí omáčky dosahuje ročně stovek milionů litrů a firmy z ní vyvážejí produkci do desítek zemí a území po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Fish_sauce",
+        "source_quote": "in 2020, the output of fish sauce reached nearly 380 million liters",
+        "voice": "Malá lahvička z pobřežní vesnice nakonec skončí v kuchyních na úplně jiných kontinentech.",
+        "image_prompt": "Photorealistic scene of a shipping container port with crates of bottled fish sauce being loaded for export, industrial harbor, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-historie-dien-bien-phu",
+    "country": "Vietnam",
+    "section": "Historie",
+    "topic": "Bitva u Dien Bien Phu",
+    "headline": "Bitva, po které Francie opustila Indočínu",
+    "fact": "Bitva u Dien Bien Phu probíhala od 13. března do 7. května 1954 a skončila kapitulací francouzské posádky, což vedlo k postupnému stažení Francie z celé Indočíny.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Dien_Bien_Phu",
+    "source_quote": "13 March – 7 May 1954",
+    "voice": "Jedna prohraná bitva stačila na to, aby se z celé Indočíny stáhla evropská velmoc.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style scene of a misty jungle valley with remnants of wartime trenches and hills, somber overcast light, no people, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Šok, který otřásl celou Francií",
+        "fact": "Porážka u Dien Bien Phu vyvolala ve Francii hluboký psychologický šok a alžírský vůdce Ferhat Abbas ji později přirovnal k bitvě u Valmy jako symbolu vzepětí kolonizovaných národů proti evropské nadvládě.",
+        "source_url": "https://en.wikipedia.org/wiki/Battle_of_Dien_Bien_Phu",
+        "source_quote": "The defeat at Điện Biên Phủ brought a profound psychological shock to France.",
+        "voice": "Pro Paříž to byla vojenská porážka, pro řadu kolonií na jiných kontinentech spíš povzbuzující zpráva.",
+        "image_prompt": "Photorealistic scene of a solemn 1950s newsroom with a French newspaper front page reporting military defeat, dramatic lighting, no readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Bitva, co na mapě rozdělila celou zemi",
+        "fact": "Po bitvě rozdělila Ženevská dohoda z roku 1954 Vietnam podél sedmnácté rovnoběžky na severní a jižní část — jedna vojenská porážka tak přímo vedla k nové hranici uprostřed země.",
+        "source_url": "https://en.wikipedia.org/wiki/Battle_of_Dien_Bien_Phu",
+        "source_quote": "Vietnam was also temporarily divided at the 17th parallel, with the North assigned to the Democratic Republic of Vietnam under Ho Chi Minh, and the South to the State of Vietnam under Bao Dai and Ngo Dinh Diem.",
+        "voice": "Bojovalo se v jednom údolí, ale výsledek nakreslil hranici napříč celou zemí.",
+        "image_prompt": "Photorealistic scene of an old military map of Vietnam with a division line drawn across the middle, aged paper, dim archival lighting, no readable modern text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-historie-pad-saigonu",
+    "country": "Vietnam",
+    "section": "Historie",
+    "topic": "Pád Saigonu",
+    "headline": "Poslední den vietnamské války",
+    "fact": "Severovietnamská armáda dobyla 30. dubna 1975 Saigon, čímž oficiálně skončila vietnamská válka.",
+    "source_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
+    "source_quote": "Saigon, the capital of South Vietnam, was captured by North Vietnam on 30 April 1975.",
+    "voice": "Jedno ráno dělilo obyvatele Saigonu od úplně nové kapitoly dějin jejich města.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style scene of a helicopter above a city rooftop during a chaotic evacuation, dramatic overcast sky, distant skyline, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Největší evakuace vrtulníky v dějinách",
+        "fact": "Během Operace Frequent Wind ve dnech 29. a 30. dubna 1975 evakuovaly americké vrtulníky ze Saigonu tisíce lidí, což se řadí mezi největší vrtulníkové evakuace v historii.",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
+        "source_quote": "the largest helicopter evacuation in history",
+        "voice": "Na střechách velvyslanectví se rozhodovalo, kdo ještě stihne poslední let ven z města.",
+        "image_prompt": "Photorealistic scene of a crowd waiting near a rooftop helicopter landing pad during an evacuation, tense atmosphere, dusk lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město, které dostalo nové jméno",
+        "fact": "Vietnamské národní shromáždění přejmenovalo 2. července 1976 Saigon na Ho Či Minovo Město na počest prezidenta, který zemřel už v roce 1969 a znovusjednocení země se tak nedožil.",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
+        "source_quote": "the Vietnamese National Assembly renamed Saigon Ho Chi Minh City after Ho Chi Minh, the North Vietnamese president who died in 1969.",
+        "voice": "Muž, podle kterého se město dnes jmenuje, se jeho nového jména sám nedožil.",
+        "image_prompt": "Photorealistic aerial view of modern Ho Chi Minh City skyline along the Saigon River at dusk, city lights turning on, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "vn-historie-bach-dang",
+    "country": "Vietnam",
+    "section": "Historie",
+    "topic": "Bitva na řece Bach Dang",
+    "headline": "Kůly v řečním dně, co ukončily tisíc let nadvlády",
+    "fact": "Vietnamský vojevůdce Ngo Quyen porazil v roce 938 na řece Bach Dang čínskou flotilu dynastie Jižní Han a jeho vítězství ukončilo více než tisíciletou éru čínské nadvlády nad Vietnamem.",
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_B%E1%BA%A1ch_%C4%90%E1%BA%B1ng_River_(938)",
+    "source_quote": "was considered the turning point in Vietnamese history.",
+    "voice": "Jedna bitva na řece uzavřela dobu nadvlády, co trvala déle, než pamatují celé generace.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical scene of wooden stakes rising from a river at low tide, ancient wrecked ships caught among them, dramatic overcast sky, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Past postavená na kůlech schovaných pod hladinou",
+        "fact": "Ngo Quyen nechal do dna řeky Bach Dang zatlouct masivní kůly okované železnými hroty, na které při odlivu najely a uvízly čínské lodě.",
+        "source_url": "https://en.wikipedia.org/wiki/Battle_of_B%E1%BA%A1ch_%C4%90%E1%BA%B1ng_River_(938)",
+        "source_quote": "Ngô Quyền and his force had set up massive stakes tipped with iron foiled points on the river bed.",
+        "voice": "Nepřítel plul rovnou do pasti, která byla celou dobu schovaná pod hladinou řeky.",
+        "image_prompt": "Photorealistic scene of sharpened wooden river stakes exposed at low tide, murky river water, dramatic lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vítězství, po kterém vznikl samostatný vietnamský stát",
+        "fact": "Hned na jaře po vítězství na řece Bach Dang se Ngo Quyen prohlásil králem a za hlavní město zvolil Co Loa — bitva tak nebyla jen vojenským triumfem, ale i startem obnovené vietnamské státnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Battle_of_B%E1%BA%A1ch_%C4%90%E1%BA%B1ng_River_(938)",
+        "source_quote": "In spring 939, Ngô Quyền proclaimed himself king and chose the town of Co Loa as the capital",
+        "voice": "Boj o řeku vyhrálo vojsko, samostatnost si ale zemi vydobyl až panovník, co po vítězství usedl na trůn.",
+        "image_prompt": "Photorealistic scene of an ancient Vietnamese fortified capital city gate at Co Loa, dawn light, historical atmosphere, no text, 16:9"
+      }
+    }
+  }
+]

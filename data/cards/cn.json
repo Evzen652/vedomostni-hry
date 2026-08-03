@@ -1,0 +1,217 @@
+[
+  {
+    "id": "cn-mista-cinska-zed",
+    "country": "Čína",
+    "section": "Místa",
+    "topic": "Čínská zeď",
+    "headline": "Zeď dlouhá přes 21 000 kilometrů",
+    "fact": "Čínská zeď měří s všemi odbočkami přes 21 000 km; stavěly ji různé dynastie po staletí jako obranu proti nájezdům ze severu.",
+    "source_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+    "source_quote": "The first walls date to the 7th century BC; these were joined together in the Qin dynasty.",
+    "voice": "Nejdelší stavba, jakou kdy lidé postavili.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek Čínské zdi vinoucí se přes zalesněné kopce, ranní mlha, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Nejstarší úseky vznikly už v 7. století př. n. l., za dynastie Čchin je nechal spojit v jednu linii první čínský císař. Dnešní nejzachovalejší část pochází z dynastie Ming.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+      },
+      "kartograf": {
+        "fact": "Čínská zeď není jedna souvislá stavba, ale síť opevnění budovaná a přestavovaná napříč staletími různými dynastiemi — spíš dlouhodobá strategie obrany hranice než jeden jednorázový projekt.",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+      }
+    }
+  },
+  {
+    "id": "cn-priroda-panda",
+    "country": "Čína",
+    "section": "Příroda",
+    "topic": "Panda velká a její ochrana",
+    "headline": "Medvěd, který jí skoro jen bambus",
+    "fact": "Pandy velké žijí divoce jen v horských bambusových lesích Číny; díky ochraně přírody se jejich stav zlepšil natolik, že už nejsou kriticky ohrožené.",
+    "source_url": "https://en.wikipedia.org/wiki/Giant_panda",
+    "source_quote": "The giant panda is a vulnerable species, threatened by continued habitat destruction and habitat fragmentation.",
+    "voice": "Medvěd, který se rozhodl žít skoro jen na jedné rostlině.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pandy velké žeroucí bambus v mlžném horském lese, přirozené prostředí, 16:9",
+    "tags": ["fyzicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Pandy žijí roztroušeně v šesti horských oblastech, hlavně v provincii S'-čchuan, ve výškách 2 400–3 000 m. V roce 2016 je Mezinárodní svaz ochrany přírody přeřadil z 'ohrožených' na 'zranitelné'.",
+        "source_url": "https://en.wikipedia.org/wiki/Giant_panda"
+      },
+      "kartograf": {
+        "fact": "Zlepšení stavu pandy velké je jeden z nejúspěšnějších příběhů ochrany přírody — ukazuje, že cílená státní politika (chráněné oblasti, chovné programy) dokáže zvrátit i zdánlivě nevyhnutelné vymírání druhu.",
+        "source_url": "https://en.wikipedia.org/wiki/Giant_panda"
+      }
+    }
+  },
+  {
+    "id": "cn-lide-konfucius",
+    "country": "Čína",
+    "section": "Lidé",
+    "topic": "Konfucius a konfucianismus",
+    "headline": "Myslitel, který formoval Čínu přes dva tisíce let",
+    "fact": "Konfucius je čínský filozof, jehož učení o morálce a společenské harmonii ovlivňuje čínské myšlení už přes dva tisíce let.",
+    "source_url": "https://en.wikipedia.org/wiki/Confucius",
+    "source_quote": "Do not do unto others what you do not want done to yourself.",
+    "voice": "Jeho pravidla slušného chování platí v Číně dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starobylé kamenné sochy Konfucia v tradičním čínském chrámu, měkké světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Konfuciovo učení se za dynastie Chan stalo oficiální státní filozofií a formovalo vzdělávací systém i výběr úředníků v celé císařské Číně — kdo chtěl sloužit státu, musel znát jeho texty.",
+        "source_url": "https://en.wikipedia.org/wiki/Confucius"
+      },
+      "kartograf": {
+        "fact": "Konfucianismus je příklad filozofie, která se z učení jednotlivce stala institucionálním základem státu na tisíciletí — podobnou roli hrálo třeba římské právo v Evropě: myšlenkový systém, který přežil svého tvůrce o celé věky.",
+        "source_url": "https://en.wikipedia.org/wiki/Confucius"
+      }
+    }
+  },
+  {
+    "id": "cn-jidlo-caj",
+    "country": "Čína",
+    "section": "Jídlo",
+    "topic": "Čínská čajová kultura",
+    "headline": "Nápoj starý přes čtyři tisíce let",
+    "fact": "Pití čaje vzniklo v jihozápadní Číně už před více než čtyřmi tisíci lety a stalo se ústřední součástí čínské kultury.",
+    "source_url": "https://en.wikipedia.org/wiki/Chinese_tea_culture",
+    "voice": "Podle legendy čaj objevil mýtický vládce Šen-nung úplnou náhodou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního čínského čajového obřadu, malé keramické šálky, pára stoupající z čajové konvice, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Čajová kultura naplno rozkvetla za dynastie Tchang a rozvíjela se dál v následujících érách — čaj ovlivnil čínskou filozofii, umění i společenské zvyky a je propojený i s teorií pěti prvků.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_tea_culture",
+        "source_quote": "Tea culture emerged in the Tang dynasty, and flourished in the succeeding eras as a major cultural practice."
+      },
+      "kartograf": {
+        "fact": "Z Číny se pěstování a pití čaje rozšířilo do celé Asie a později přes obchodní trasy do Evropy — čaj je učebnicový příklad, jak jedna regionální rostlina díky obchodu proměnila zvyky celého světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_tea_culture"
+      }
+    }
+  },
+  {
+    "id": "cn-historie-terakotova-armada",
+    "country": "Čína",
+    "section": "Historie",
+    "topic": "Terakotová armáda",
+    "headline": "Armáda hlídající císaře i po smrti",
+    "fact": "Terakotová armáda je tisíce unikátních sochařských vojáků, které nechal kolem roku 210 př. n. l. pohřbít první čínský císař Čchin Š'-chuang, aby ho chránili v posmrtném životě.",
+    "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "source_quote": "It is a form of funerary art buried with the emperor in 210–209 BCE",
+    "voice": "Každý voják má jiný obličej — žádní dva nejsou stejní.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řad terakotových vojáků v podzemní hrobce, archeologické vykopávky, dramatické osvětlení, 16:9",
+    "tags": ["dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Objevili ji náhodou farmáři kopající studnu roku 1974 — do té doby o ní nikdo nevěděl. Sochy zahrnují pěšáky, jezdce i vozataje, každý s vlastními detaily obličeje a výstroje.",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army"
+      },
+      "kartograf": {
+        "fact": "Rozsah terakotové armády ukazuje absolutní moc prvního čínského císaře — dokázal na jeden hrobový projekt mobilizovat tisíce řemeslníků a obrovské zdroje, což svědčí o míře centralizace tehdejšího státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army"
+      }
+    }
+  },
+  {
+    "id": "cn-kultura-novy-rok",
+    "country": "Čína",
+    "section": "Kultura & tradice",
+    "topic": "Čínský Nový rok",
+    "headline": "Svátek, kvůli kterému se stěhuje celá země",
+    "fact": "Čínský Nový rok je nejdůležitější tradiční svátek Číny; cesty lidí domů na oslavy patří k největším pravidelným přesunům obyvatel na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Chinese_New_Year",
+    "source_quote": "It is one of the most important holidays in Chinese culture.",
+    "voice": "Na pár týdnů se v pohybu ocitnou stovky milionů lidí najednou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický noční snímek čínských ulic ozdobených červenými lampiony k oslavě Nového roku, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Svátek se řídí lunárním kalendářem a označuje konec zimy a začátek jara. Období masového cestování domů se v Číně nazývá čchun-jün a patří k logisticky nejnáročnějším obdobím roku.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_New_Year"
+      },
+      "kartograf": {
+        "fact": "Obří migrace o čínském Novém roce je přímý důsledek vnitřní migrace za prací — miliony lidí pracují ve městech daleko od rodné vesnice a jednou ročně se vydávají domů, což dělá ze svátku i sociologický jev, ne jen kulturní.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_New_Year"
+      }
+    }
+  },
+  {
+    "id": "cn-umeni-kaligrafie",
+    "country": "Čína",
+    "section": "Umění",
+    "topic": "Čínská kaligrafie",
+    "headline": "Psaní, které je zároveň malbou",
+    "fact": "Čínská kaligrafie je považována za umění na stejné úrovni jako malba — používá stejné nástroje a techniky jako tušová malba.",
+    "source_url": "https://en.wikipedia.org/wiki/Chinese_calligraphy",
+    "source_quote": "Chinese calligraphy and ink and wash painting are closely related: they are accomplished using similar tools and techniques",
+    "voice": "Tah štětcem tu není jen psaní — je to výraz.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek čínské kaligrafie tušovým štětcem na rýžovém papíře, kaligrafické nástroje vedle, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Kaligraf pracuje se štětcem, tuší, papírem a kamenem na rozetření tuše — tzv. 'čtyřmi poklady studovny'. Kvalita tahu, tlaku a rytmu psaní je stejně důležitá jako samotný obsah textu.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_calligraphy"
+      },
+      "kartograf": {
+        "fact": "To, že logografické písmo (znaky místo abecedy) umožňuje kaligrafii povýšit na výtvarné umění, je přímý důsledek povahy čínského písma — každý znak je vlastně miniaturní obrazec, a tak nese estetickou hodnotu, kterou fonetická abeceda nemá.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_calligraphy"
+      }
+    }
+  },
+  {
+    "id": "cn-sport-stolni-tenis",
+    "country": "Čína",
+    "section": "Sport",
+    "topic": "Stolní tenis v Číně",
+    "headline": "Sport, který Čína ovládá bezmála úplně",
+    "fact": "Čína ovládá olympijský stolní tenis natolik, že na hrách 2008, 2012, 2016 a 2024 vyhrála úplně všechny zlaté medaile v této disciplíně.",
+    "source_url": "https://en.wikipedia.org/wiki/Table_tennis_in_China",
+    "source_quote": "China won all possible gold medals",
+    "voice": "Ve stolním tenisu na olympiádě prakticky nemá soupeře.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hráče stolního tenisu při rychlém úderu, sportovní hala, dynamický pohyb, 16:9",
+    "tags": ["kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Stolní tenis je v Číně masově rozšířený sport na školách i ve volném čase, což vytváří obří základnu talentů, ze které vzniká špičkový výběr reprezentace — podobně jako u fotbalu v Brazílii.",
+        "source_url": "https://en.wikipedia.org/wiki/Table_tennis_in_China"
+      },
+      "kartograf": {
+        "fact": "Naprostá dominance jedné země v jednom olympijském sportu je vzácný jev — ukazuje, jak masová popularita sportu doma v kombinaci se systematickou podporou dokáže vytvořit prakticky nedostupný náskok pro zbytek světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Table_tennis_in_China"
+      }
+    }
+  },
+  {
+    "id": "cn-jazyk-znaky",
+    "country": "Čína",
+    "section": "Jazyk & slova",
+    "topic": "Čínské znakové písmo",
+    "headline": "Písmo, kde znak znamená celé slovo",
+    "fact": "Čínština se nepíše abecedou, ale znaky — každý znak představuje slovo nebo část slova, ne jednotlivou hlásku.",
+    "source_url": "https://en.wikipedia.org/wiki/Chinese_characters",
+    "source_quote": "Chinese characters are logographs used to write the Chinese languages and others from regions historically influenced by Chinese culture.",
+    "voice": "Naučit se číst znamená naučit se tisíce jednotlivých obrázků.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "fact": "Pro plynulé čtení novin je potřeba znát kolem 3 000 až 4 000 znaků. Na rozdíl od abecedy, kde pár desítek písmen stačí na celý jazyk, se čínské znaky musí učit prakticky jeden po druhém.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_characters"
+      },
+      "kartograf": {
+        "fact": "Logografické písmo má jednu velkou výhodu: lidé mluvící úplně odlišnými čínskými dialekty (kantonština, mandarínština), kteří si navzájem nerozumí v mluvené řeči, dokážou číst tentýž psaný text — písmo tu funguje jako sjednocující prvek nad jazykovou roztříštěností.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_characters"
+      }
+    }
+  }
+]

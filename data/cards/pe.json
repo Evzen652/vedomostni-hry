@@ -1,0 +1,944 @@
+[
+  {
+    "id": "pe-mista-machupicchu",
+    "country": "Peru",
+    "section": "Místa",
+    "topic": "Machu Picchu",
+    "headline": "Inká citadela, kterou Španělé nenašli",
+    "fact": "Machu Picchu leží ve výšce dvou tisíc čtyři set třiceti metrů nad mořem v peruánských Andách; inká citadela ze patnáctého století zůstala španělským conquistadorům skryta a americký badatel Hiram Bingham ji popsal světu teprve v roce devatenáct jedenáct.",
+    "source_url": "https://en.wikipedia.org/wiki/Machu_Picchu",
+    "source_quote": "Machu Picchu stands 2,430 m above sea-level … probably the most amazing urban creation of the Inca Empire",
+    "voice": "Conquistadoři dobyli Inky. Ale tenhle poklad nikdy nenašli.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Machu Picchu — inká ruiny na horském hřebenu nad mraky, dramatická ranní mlha v údolí, bez lidí, 16:9",
+    "ll": [
+      -72.545,
+      -13.1631
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bez malty a přesto tisíc let stojí",
+        "fact": "Inská architektura v Machu Picchu nepoužívala maltu — kameny jsou ořezané s takovou přesností, že ani papír mezi ně nelze zasunout. Tato technika zvaná ashlar umožňuje stavbě pohybovat se při zemětřeseních, aniž by se zřítila.",
+        "source_url": "https://en.wikipedia.org/wiki/Machu_Picchu",
+        "source_quote": "the Inca constructed their buildings without mortar … the stones fit together so tightly",
+        "voice": "Bez cementu, bez jeřábů — a stojí to dál.",
+        "image_prompt": "Fotorealistický detailní snímek inské kamenné zdi v Machu Picchu — přesně do sebe zapadající kameny bez malty, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina jako náboženství: hora jako bůh",
+        "fact": "Inká vybírali místa pro svá posvátná sídla podle vztahu k okolním horám — apus, posvátným vrcholům. Machu Picchu leží přesně tak, aby hlavní hory tvořily sakrální rámec. Krajina nebyla prostředím — byla bohoslužbou.",
+        "source_url": "https://en.wikipedia.org/wiki/Machu_Picchu",
+        "source_quote": "the Incas regarded the mountains as sacred … the site was chosen for its relationship with the surrounding peaks",
+        "voice": "Hora není pozadí — je to bůh. To mění, jak stavíte.",
+        "image_prompt": "Fotorealistický snímek Machu Picchu se zahrnutím okolních hor Huayna Picchu a Machu Picchu Mountain, ranní mlha, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-mista-cusco",
+    "country": "Peru",
+    "section": "Místa",
+    "topic": "Cusco",
+    "headline": "Střed vesmíru — inká hlavní město",
+    "fact": "Cusco bylo hlavním městem Inkovské říše — Tawantinsuyu — a Inkové ho považovali za pupek světa; jeho jméno v kečuánštině znamená 'střed'.",
+    "source_url": "https://en.wikipedia.org/wiki/Cusco",
+    "source_quote": "Cusco … the historic capital of the Inca Empire … its Quechua name means 'navel of the world'",
+    "voice": "Na inkých základech stojí španělské kostely. Minulost a přítomnost sdílí tentýž kámen.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Plaza de Armas v Cuscu — koloniální architektura na inkých základech, katedrála, peruánské nebe, přirozené světlo, 16:9",
+    "ll": [
+      -71.9675,
+      -13.532
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Španělé stavěli na inkých základech doslova",
+        "fact": "Conquistadoři zbourali inká chrámy a paláce, ale jejich základy byly tak pevné, že je nechali stát a španělské kostely postavili přímo na nich. Cusco je tak architektonickým palimpsestem — inká pod, španělský vrch.",
+        "source_url": "https://en.wikipedia.org/wiki/Cusco",
+        "source_quote": "Spanish colonial buildings were constructed on Inca foundations",
+        "voice": "Přišli přepisovat. Ale základ byl příliš pevný.",
+        "image_prompt": "Fotorealistický snímek inkých kamenných základů v Cuscu s španělskou kolonialní stavbou nahoře — dvě éry v jednom pohledu, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Qhapaq Ñan: silniční síť Inkovské říše",
+        "fact": "Inká vybudovali přes třicet tisíc kilometrů silnic — systém Qhapaq Ñan — propojující celou říši od Kolumbie po Chile. Bez kola, bez koně, bez písma. Cesty umožňovaly zásobování, vojenský pohyb i zpravodajství chasquiů.",
+        "source_url": "https://en.wikipedia.org/wiki/Qhapaq_%C3%91an",
+        "source_quote": "Qhapaq Ñan … an extensive road network … approximately 30,000 km",
+        "voice": "Největší silniční síť starého světa — a nepoužila kolo.",
+        "image_prompt": "Fotorealistický snímek inácké kamenné stezky v horách Peru, kamenné stupně vedou do mlhy, Andes v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-mista-nazca",
+    "country": "Peru",
+    "section": "Místa",
+    "topic": "Linie Nazca",
+    "headline": "Obrovské kresby, které lze vidět jen z výšky",
+    "fact": "Linie Nazca jsou geoglyfy — rozsáhlé kresby vtesané do peruánské pouštní plošiny; jsou viditelné jen z výšky a jejich účel stále není zcela objasněn.",
+    "source_url": "https://en.wikipedia.org/wiki/Nazca_lines",
+    "source_quote": "The Nazca Lines … a series of ancient geoglyphs … made by the Nazca culture",
+    "voice": "Kolibrík velký jako letadlo. Pavouček, do jehož středu musíte vstoupit zeshora.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký snímek línií Nazca — geoglyfická kolibrík nebo opice v pouštní plošině, dramatické světlo, bez lidí, 16:9",
+    "ll": [
+      -75.13,
+      -14.739
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bez GPS, bez letadel — a přesto rovné linie",
+        "fact": "Linie Nazca jsou přímé s chybou méně než procento na kilometry délky — a přitom Nazcánci neměli letadla ani modern­í přístroje. Vědci předpokládají, že používali provázky a jednoduché kolíky. Výsledek je zaráží.",
+        "source_url": "https://en.wikipedia.org/wiki/Nazca_lines",
+        "source_quote": "the lines … are extremely straight … created using simple tools",
+        "voice": "Prostota nástrojů nevylučuje složitost výsledku.",
+        "image_prompt": "Fotorealistický letecký pohled na rovné linie Nazca probíhající przez poušť k obzoru, zemní geometrie, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pouštní podmínky jako konzervant dějin",
+        "fact": "Linie přežily přes patnáct set let díky extrémní suchosti nazcanské pouště a větrné stabilitě plošiny. Jsou příkladem, jak přírodní podmínky určují, co z minulosti zůstane zachováno — fyzická geografie je archiváří.",
+        "source_url": "https://en.wikipedia.org/wiki/Nazca_lines",
+        "source_quote": "the dry, windless … climate of the Nazca region has preserved the lines",
+        "voice": "Poušť jako muzeum bez vstupného — a bez zdí.",
+        "image_prompt": "Fotorealistický letecký snímek nazcanské pouštní plošiny s liniemi z perspektivy výzkumného letadla, suchá krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-priroda-titicaca",
+    "country": "Peru",
+    "section": "Příroda",
+    "topic": "Jezero Titicaca",
+    "headline": "Splavné jezero v nejvyšší nadmořské výšce světa",
+    "fact": "Titicaca na hranici Peru a Bolívie leží ve výšce přes tři tisíce osm set metrů nad mořem a je nejvýše položeným splavným jezerem na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Titicaca",
+    "source_quote": "Lake Titicaca … the highest navigable lake in the world … at an elevation of 3,812 m",
+    "voice": "Připlout lodí do výšky čtyři kilometry. Tady to jde.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jezera Titicaca — modré jezero pod andským nebem, plovoucí rákosové ostrovy, přirozené světlo, bez lidí, 16:9",
+    "ll": [
+      -69.3354,
+      -15.8402
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Plovoucí ostrovy z rákosu: lid Uros žije na vodě",
+        "fact": "Lid Uros žije na jezeře na uměle vytvořených plovoucích ostrovech z rákosu totora; ostrovy se neustále přistavují novými vrstvami rákosu, jak spodní hnijí. Jedná se o jedinou trvale obydlenou plovoucí architekturu světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Uros",
+        "source_quote": "the Uros … live on floating islands made of totora reeds … on Lake Titicaca",
+        "voice": "Dům, který se pomalu topí — a vy ho neustále stavíte znovu.",
+        "image_prompt": "Fotorealistický snímek plovoucích rákosových ostrovů Uros na jezeře Titicaca, tradiční rákosové domy, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jezero jako kolébka andské civilizace",
+        "fact": "Oblast Titicacy je považována za jedno z míst vzniku andské zemědělské civilizace — pěstování brambor a quinoy zde sahá tisíce let zpátky. Jezero regulovalo klima plošiny a umožnilo zemědělství ve výšce, kde by jinak nebylo možné.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Titicaca",
+        "source_quote": "Lake Titicaca … has been a centre of Andean civilisation for thousands of years",
+        "voice": "Civilizace nevznikají náhodou — vznikají tam, kde podmínky dovolují jíst.",
+        "image_prompt": "Fotorealistický letecký snímek jezera Titicaca s andskými vrcholy kolem, altiplánová krajina, zlaté odpolední světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-priroda-amazon",
+    "country": "Peru",
+    "section": "Příroda",
+    "topic": "Peruánská Amazonie",
+    "headline": "Pramen Amazonky se skrývá v peruánských Andách",
+    "fact": "Amazonka začíná svůj tok v peruánských Andách; Peru obsahuje část amazonského povodí s mimořádnou biodiverzitou, kde vědci každoročně popisují nové druhy.",
+    "source_url": "https://en.wikipedia.org/wiki/Amazon_River",
+    "source_quote": "The headwaters of the Amazon … can be found in the high Andes of Peru",
+    "voice": "Největší řeka světa začíná jako horský pramínek v Peru.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek amazońského pralese v peruánské džungli — kanovníci na klidné říční hladině, hustá vegetace, ranní mlha, 16:9",
+    "ll": [
+      -73,
+      -4
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Manu: jeden z nejbohatších parků světa",
+        "fact": "Národní park Manu na jihovýchodě Peru je jedním z biologicky nejbohatších chráněných území na světě; na ploše jednoho parku žije víc druhů ptáků než v celé Evropě.",
+        "source_url": "https://en.wikipedia.org/wiki/Man%C3%BA_National_Park",
+        "source_quote": "Manú National Park … one of the most species-diverse areas on Earth",
+        "voice": "Více ptačích druhů než v Evropě — v jednom parku.",
+        "image_prompt": "Fotorealistický snímek peruánské amazońské džungle v národním parku Manu — makaw letí nad korunami stromů, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Povodí Amazonky: geopolitika vody",
+        "fact": "Amazonka protéká devíti zeměmi, ale Peru, Brazílie a Kolumbie drží největší části povodí. Správa sdílené řeky a prales vyžaduje mezistátní dohody — a odlesňování v jedné zemi ovlivňuje srážky ve druhé.",
+        "source_url": "https://en.wikipedia.org/wiki/Amazon_basin",
+        "source_quote": "the Amazon basin … covers approximately 7 million km2 … spanning nine countries",
+        "voice": "Kdo kácí prales v Peru, ovlivňuje počasí v Brazílii.",
+        "image_prompt": "Fotorealistický letecký snímek meandrující amazońské řeky v Peru, prales táhnoucí se k obzoru, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-lide-quechua",
+    "country": "Peru",
+    "section": "Lidé",
+    "topic": "Kečuánský lid",
+    "headline": "Jazyk Inků mluví třicet milionů lidí dodnes",
+    "fact": "Kečuánština je domorodý jazyk inské civilizace a dodnes je mateřským jazykem milionů lidí v Peru, Bolívii, Ekvádoru a dalších andských zemích; je to nejrozšířenější domorodý jazyk Ameriky.",
+    "source_url": "https://en.wikipedia.org/wiki/Quechuan_languages",
+    "source_quote": "Quechuan languages … the most widely spoken pre-Columbian language family in the Americas … with millions of speakers",
+    "voice": "Jazyk Inků přežil conquistadory, koloniální správu i státy. Mluví se jím dál.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek andské tržnice s kečuánskými ženami v tradičních barevných krojích a kloboucích, Andes v pozadí, přirozené světlo, 16:9",
+    "ll": [
+      -71.9675,
+      -13.532
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Quipu: uzel jako písmo",
+        "fact": "Inkové nepoužívali písmo — zaznamenávali informace uzlovým kódovacím systémem zvaným quipu. Různé barvy a uzlové vzory vláken nesly čísla, záznamy a snad i příběhy. Je to jediný nelineární systém záznamu informací starověku.",
+        "source_url": "https://en.wikipedia.org/wiki/Quipu",
+        "source_quote": "Quipu … recording device … using knotted strings … used by the Inca Empire",
+        "voice": "Psali uzly. A fungovalo to pro říši třiceti milionů lidí.",
+        "image_prompt": "Fotorealistický snímek tradičního inského quipu — svazek barevných šňůr s uzly, historický artefakt v muzejním osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Bilingvismus a jazyková politika v Andách",
+        "fact": "Peru uznává kečuánštinu jako úřední jazyk vedle španělštiny, ale jazyková politika je nerovnoměrná — kečuánsky mluvící komunity mají omezenější přístup ke vzdělání a službám. Jazyková mapa odráží mapu ekonomické nerovnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Quechuan_languages",
+        "source_quote": "Quechua … official language of Peru alongside Spanish",
+        "voice": "Jazyk je právo. A přístup k jazyku státu je přístup k moci.",
+        "image_prompt": "Fotorealistický snímek peruánské vesnické školy v Andách — děti ve třídě, dvojjazyčná tabule španělsky a kečuánsky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-kultura-inti",
+    "country": "Peru",
+    "section": "Kultura & tradice",
+    "topic": "Inti Raymi",
+    "headline": "Slavnost Slunce — inká nový rok v Cuscu",
+    "fact": "Inti Raymi je tradiční inský svátek Slunce oslavovaný každoročně v Cuscu v červnu; po staletích zákazu byl obnoven ve dvacátém století jako živá kulturní tradice.",
+    "source_url": "https://en.wikipedia.org/wiki/Inti_Raymi",
+    "source_quote": "Inti Raymi … a religious ceremony of the Inca Empire in honor of Inti (the sun god) … revived in the 20th century",
+    "voice": "Zakázali jim svátek slunce. Obnovili ho o staletí later — a slaví dál.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek slavnosti Inti Raymi v Cuscu — barevné kostýmy, incké kněžstvo a pevnost Sacsayhuamán, dramatické světlo, 16:9",
+    "ll": [
+      -71.9675,
+      -13.532
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slunce jako bůh a zdroj legitimity moci",
+        "fact": "Inka byl považován za syna Slunce — Inti. Náboženská a politická moc tak byly neoddělitelné. Slavnost Inti Raymi stvrzovala tuto legitimitu každoročně a sjednocovala říši kolem sdíleného náboženského aktu.",
+        "source_url": "https://en.wikipedia.org/wiki/Inti_Raymi",
+        "source_quote": "the Sapa Inca was considered the son of Inti … the ceremony reinforced his divine right to rule",
+        "voice": "Oslava Slunce byla i politická přísaha poddanství.",
+        "image_prompt": "Fotorealistický snímek ruiny Sacsayhuamán nad Cuscem za svítání, zlaté světlo na kamenných zdech, dramatická obloha, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obnovení tradice jako politická identita",
+        "fact": "Inti Raymi byl španělskými kolonizátory zakázán jako pohanský. Jeho obnova v roce devatenáct čtyřicet čtyři byla politickým aktem — součástí hnutí indigenismo a budování moderní peruánské identity na předkolonial­ních základech.",
+        "source_url": "https://en.wikipedia.org/wiki/Inti_Raymi",
+        "source_quote": "revived in 1944 … part of a broader effort to reclaim indigenous heritage",
+        "voice": "Obnova tradice je politické prohlášení: my jsme tu byli první.",
+        "image_prompt": "Fotorealistický snímek moderního Cusca s inkáckými základy a koloniální architekturou nahoře, symbol peruánské identity, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-jidlo-ceviche",
+    "country": "Peru",
+    "section": "Jídlo",
+    "topic": "Ceviche",
+    "headline": "Syrová ryba vařená citronovou šťávou",
+    "fact": "Ceviche je peruánské národní jídlo — čerstvá ryba macerovaná v citrusové šťávě s cibulí a ají; chemická reakce citrusové kyseliny denaturuje protein a 'uvaří' rybu bez tepla.",
+    "source_url": "https://en.wikipedia.org/wiki/Ceviche",
+    "source_quote": "Ceviche … the national dish of Peru … raw fish cured in citrus juices",
+    "voice": "Kuchyně, kde teplo nahradí chemie. A výsledek je skvostný.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek peruánského ceviche — bílé kousky ryby s červenou cibulí, ají amarillo a limetkovými plátky v keramické misce, přirozené světlo, 16:9",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Leche de tigre: elixír z mariády",
+        "fact": "Zbylá šťáva z ceviche — leche de tigre ('tygří mléko') — se pije jako aperitiv nebo lék na kocovinu. Je pikantní, kyselá a plná bílkovin. V Peru je to samostatná specialita, ne odpad.",
+        "source_url": "https://en.wikipedia.org/wiki/Leche_de_tigre",
+        "source_quote": "Leche de tigre … the citrus-based marinade left over from preparing ceviche",
+        "voice": "Peruáni nevylijí nic. Ani marinádu.",
+        "image_prompt": "Fotorealistický snímek sklenky s leche de tigre, průzračná pikantní tekutina s kousky ryby, limetka na okraji, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Peru jako centrum světové gastronomie",
+        "fact": "Lima je dnes jedním z uznávaných gastronomických hlavních měst světa; tři peruánské restaurace se opakovaně umisťují v žebříčcích nejlepších restaurací světa. Peruánská kuchyně mísí inká, španělskou, africkou, čínskou a japonskou tradici.",
+        "source_url": "https://en.wikipedia.org/wiki/Peruvian_cuisine",
+        "source_quote": "Peruvian cuisine … widely acclaimed internationally … influenced by Inca, Spanish, African, Chinese, and Japanese traditions",
+        "voice": "Kuchyně jako geografie kontaktů — každá invaze přinesla přísadu.",
+        "image_prompt": "Fotorealistický snímek moderní limanské restaurace s degustačním menu peruánských pokrmů, elegantní interiér, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-historie-inkarsise",
+    "country": "Peru",
+    "section": "Historie",
+    "topic": "Inkovská říše",
+    "headline": "Největší říše prekolumbovské Ameriky bez kola a bez písma",
+    "fact": "Tawantinsuyu — Inkovská říše — se v patnáctém a šestnáctém století rozkládala od dnešní Kolumbie po Chile a byla největší říší tehdejší Ameriky; vybudovala ji kultura bez písma, kola a kovových nástrojů pro těžkou práci.",
+    "source_url": "https://en.wikipedia.org/wiki/Inca_Empire",
+    "source_quote": "the Inca Empire … the largest empire in pre-Columbian America … stretching 4,000 km from north to south",
+    "voice": "Říše bez kola, bez písma — a přesto silnice, kanály a zásobárny pro miliony.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek andské krajiny s inkáckými terasy Moray nebo Pisac — obrovské zemědělské stupně v horách, dramatické světlo, 16:9",
+    "ll": [
+      -71.9675,
+      -13.532
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Španělé zničili říši za dva roky",
+        "fact": "Francisco Pizarro s hrstkou mužů dobyl Inkovskou říši s miliony poddaných v rekordně krátkém čase. Epidemie neštovic dorazila před conquistadory a zdecimovala populaci; rozdělení v říši zbytek doplnilo. Biologická zbraň přišla nechtíc.",
+        "source_url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Inca_Empire",
+        "source_quote": "smallpox … devastated the Inca population … before Pizarro's arrival",
+        "voice": "Neviditelný nepřítel přišel dřív. A rozhodl.",
+        "image_prompt": "Fotorealistický snímek ruiny inské pevnosti Sacsayhuamán nad Cuscem, obrovské kamenné bloky, dramatické andské nebe, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vertikální ekologie: jak Inkové zvládli rozmanitost klimatu",
+        "fact": "Inkové kontrolovali různá ekologická pásma — od pobřeží přes hory po džungli — a systematicky přesouvali produkty mezi nimi. Tato strategie zvaná vertikální ekologie zajišťovala potravinovou bezpečnost celé říše bez závislosti na jednom prostředí.",
+        "source_url": "https://en.wikipedia.org/wiki/Inca_Empire",
+        "source_quote": "the Incas exploited a wide range of ecological zones … a strategy of vertical ecology",
+        "voice": "Chytré hospodaření s výškovými rozdíly nahradilo to, co jiné civilizace řešily obchodem.",
+        "image_prompt": "Fotorealistický letecký snímek peruánských And s terasy sahajícími od suché plošiny ke sněhovým vrcholům, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-sport-surf",
+    "country": "Peru",
+    "section": "Sport",
+    "topic": "Surfing a caballitos de totora",
+    "headline": "Surfování vynalezli Peruáni tisíce let před Havají",
+    "fact": "Na peruánském pobřeží se dodnes používají caballitos de totora — rákosové lodi, na nichž rybáři jezdí vlny; archeologické nálezy dokazují, že tato forma surfování existuje tisíce let.",
+    "source_url": "https://en.wikipedia.org/wiki/Caballito_de_totora",
+    "source_quote": "caballitos de totora … reed watercraft … used on the Peruvian coast for thousands of years … considered an ancient form of surfing",
+    "voice": "Havajčané jsou slavní. Ale Peruáni jezdili vlny dřív.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek peruánského rybáře na caballito de totora — rákosová loď na vlnách Tichého oceánu u Huanchaca, zlaté světlo, 16:9",
+    "ll": [
+      -79.1333,
+      -8.1
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Humboldt a vlny: oceán jako zásobárna i hřiště",
+        "fact": "Peruánské pobřeží má díky Humboldtovu proudu výborné podmínky pro surfing — studená voda a silné vlny. Moderní surfing se zde rozvinul v dvacátém století a Peru dnes patří mezi přední surfingové destinace světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Surfing_in_Peru",
+        "source_quote": "Peru … known for its world-class surf breaks … influenced by the Humboldt Current",
+        "voice": "Studený proud přinesl vlny. Vlny přivedly surfahy. A ty přivedly turisty.",
+        "image_prompt": "Fotorealistický snímek moderního surfaře na velké vlně tichomořského pobřeží Peru u Máncory nebo Chicamy, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pobřeží, prales, hory: Peru jako tři světy",
+        "fact": "Peru je mimořádné tím, že na relativně malém území kombinuje tři zcela odlišné geografické zóny — suché tichomořské pobřeží, vysoké Andy a tropický amazónskýprales. Každá zóna má jiné klima, biodiverzitu i kulturu.",
+        "source_url": "https://en.wikipedia.org/wiki/Geography_of_Peru",
+        "source_quote": "Peru … three distinct geographic regions: costa, sierra, and selva",
+        "voice": "V jedné zemi: poušť, hory a džungle. A všechny najednou.",
+        "image_prompt": "Fotorealistický letecký snímek peruánského území — aridní pobřeží přecházející v zelené Andy a pak v amazońský prales na horizontu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-umeni-textily",
+    "country": "Peru",
+    "section": "Umění",
+    "topic": "Andské textilní umění",
+    "headline": "Andská tkanina jako rukopis bez písmen",
+    "fact": "Andské textilní umění patří k nejstarším a nejpropracovanějším na světě; inské tkanivy uchovávaly sociální, náboženský i politický obsah a byly cennější než zlato.",
+    "source_url": "https://en.wikipedia.org/wiki/Andean_textiles",
+    "source_quote": "Andean textiles … among the most sophisticated in the world … served as a medium of communication and cultural identity",
+    "voice": "Inká považoval dobrou tkaninu za cennější než zlato. Španělé vzali zlato. Tkaniny zůstaly.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek andské tkaniny s geometrickými vzory v červené, zlaté a modré barvě, peruánský trh nebo muzeum, přirozené světlo, 16:9",
+    "ll": [
+      -71.9675,
+      -13.532
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vzor jako jazyk: každý motiv má smysl",
+        "fact": "Andské textilní vzory nesly informace o komunitě, rodu, společenském postavení a náboženské příslušnosti nositele. Tkanina nebyla jen oblečení — byl to průkaz totožnosti, zpráva a umělecké dílo najednou.",
+        "source_url": "https://en.wikipedia.org/wiki/Andean_textiles",
+        "source_quote": "textile patterns … encoded information about the wearer's community, social status, and religious affiliation",
+        "voice": "Než bylo písmo, byl vzor. A nikdo ho nečetl jen očima.",
+        "image_prompt": "Fotorealistický detailní snímek inské tkaniny — přesné geometrické vzory v andských barvách, muzejní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Živá tradice v moderní ekonomice",
+        "fact": "Andské textilní umění přežívá v komunitách od Cusca po Bolivii jako živá tradice i ekonomický zdroj. Vlákno alpaky a vikuně je luxusní exportní komodita — kontinuita tradice se setkává s globálním trhem luxusního zboží.",
+        "source_url": "https://en.wikipedia.org/wiki/Alpaca",
+        "source_quote": "alpaca fiber … highly valued … Peru is the world's largest producer",
+        "voice": "Tradiční řemeslo prodává na globálním trhu za luxusní ceny.",
+        "image_prompt": "Fotorealistický snímek peruánské ženy tkalce pracující na tradičním stavu na andském trhu, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-jazyk-kechua",
+    "country": "Peru",
+    "section": "Jazyk & slova",
+    "topic": "Kečuánská slova ve světových jazycích",
+    "headline": "Condor, puma, quinoa — inká nám daroval slova",
+    "fact": "Z kečuánštiny pochází řada slov běžně používaných v češtině i dalších jazycích: condor, puma, quinoa, lama, guano, pisco, a další — jazyk Inků žije v globální slovní zásobě.",
+    "source_url": "https://en.wikipedia.org/wiki/Quechuan_languages",
+    "source_quote": "Quechua has contributed numerous words to other languages … including condor, puma, llama, and quinoa",
+    "voice": "Inká je dávno pryč. Ale jejich slova jsou v každém slovníku světa.",
+    "visual_type": "typographic",
+    "ll": [
+      -71.9675,
+      -13.532
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Quinoa: od andského přežití k superfoodu",
+        "fact": "Quinoa se pěstuje v Andách tisíce let jako základní potravina odolná extrémním podmínkám; po dekádách opomíjení se v jednadvacátém století stala globálním zdravotním trendem a výrazně vzrostly exportní ceny z Peru a Bolívie.",
+        "source_url": "https://en.wikipedia.org/wiki/Quinoa",
+        "source_quote": "quinoa … cultivated in the Andes for thousands of years … has become a global health food trend",
+        "voice": "Jídlo chudých And skončilo v drahých biopotravinách New Yorku.",
+        "image_prompt": "Fotorealistický snímek quinoového pole na andské vysočině Peru — barevné laty rostlin, hory v pozadí, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kečuánština a koloniální dědictví jazykové politiky",
+        "fact": "Kečuánština se šířila se samotnou Inkovskou říší jako lingua franca And — ještě před příchodem Španělů. Paradoxně ji Španělé zpočátku podporovali jako nástroj evangelizace, ale pak zakázali. Jazyková politika je vždy mocenská politika.",
+        "source_url": "https://en.wikipedia.org/wiki/Quechuan_languages",
+        "source_quote": "Spanish colonisers initially used Quechua as a vehicle for evangelisation … later suppressed",
+        "voice": "Jazyk se používá — a zakazuje — podle toho, kdo má moc.",
+        "image_prompt": "Fotorealistický snímek dvojjazyčné kečuánsko-španělské cedule v peruánských Andách, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-priroda-condor",
+    "country": "Peru",
+    "section": "Příroda",
+    "topic": "Kondor andský",
+    "headline": "Největší létající pták má rozpětí křídel přes tři metry",
+    "fact": "Kondor andský (Vultur gryphus) je největší létající pták západní polokoule s rozpětím křídel přesahujícím tři metry; byl posvátný pro Inky jako symbol slunce a nebes.",
+    "source_url": "https://en.wikipedia.org/wiki/Andean_condor",
+    "source_quote": "the Andean condor … wingspan of up to 3.3 m … the largest flying land bird in the Western Hemisphere",
+    "voice": "Kondor je větší než člověk s roztaženýma rukama. A létá bez pohybu křídel hodiny.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kondora andského plachtícího nad andskou krajinou Peru — obrovská silueta proti dramatické obloze, přirozené světlo, 16:9",
+    "ll": [
+      -75,
+      -14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Termika a umění plachtit bez energie",
+        "fact": "Kondor málo mává křídly — místo toho využívá termiku, vzestupné proudy teplého vzduchu, a může plachtit stovky kilometrů. Je to energeticky nejefektivnější způsob letu na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Andean_condor",
+        "source_quote": "Andean condors rely on thermal updrafts … rarely flapping their wings",
+        "voice": "Letět daleko bez námahy — kondor to umí lépe než ktokoliv jiný.",
+        "image_prompt": "Fotorealistický snímek kondora rozevírajícího obrovská křídla na andském skalnatém útese, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kondor jako bioindiátor zdraví And",
+        "fact": "Kondor je mrchožrout na vrcholu potravního řetězce; jako bioindiátor odráží stav celého ekosystému. Populace kondorů v Peru, Chile a Argentině jsou sledovány jako indikátor zdraví andské přírody.",
+        "source_url": "https://en.wikipedia.org/wiki/Andean_condor",
+        "source_quote": "the Andean condor … a key scavenger … its population reflects ecosystem health",
+        "voice": "Zdraví kondorů = zdraví And. Měřítko šikovné přírody.",
+        "image_prompt": "Fotorealistický letecký snímek andského hřebene s kondory plachtícími nad sněhovými vrcholy, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-lide-fujimori",
+    "country": "Peru",
+    "section": "Lidé",
+    "topic": "Fujimori a peruánská politika",
+    "headline": "Syn japonských přistěhovalců a autoritářský prezident",
+    "fact": "Alberto Fujimori, syn japonských přistěhovalců, byl peruánský prezident v letech devadesát–dva tisíce; provedl ekonomické reformy, ale i autogolpe — sebepřevrat — a vládl autoritářsky; skončil soudem za zločiny proti lidskosti.",
+    "source_url": "https://en.wikipedia.org/wiki/Alberto_Fujimori",
+    "source_quote": "Alberto Fujimori … president of Peru … implemented economic reforms … convicted of human rights violations",
+    "voice": "Syn japonských emigrantů zvolen prezidentem Peru. Pak odsouzen za zločiny.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek limeňského paláce vlády — Plaza de Armas v Limě s prezidentským palácem a fontánou, přirozené světlo, 16:9",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Fujishock: ekonomická šoková terapie",
+        "fact": "Fujimoriho první ekonomické kroky — zrušení dotací, liberalizace trhu — způsobily okamžitý šok. Inflace se zastavila, ale nezaměstnanost vzrostla. Šoková terapie v Peru a Argentině jsou studijními případy kontroverzní ekonomické politiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Alberto_Fujimori",
+        "source_quote": "Fujimori … implemented a severe austerity programme … known as Fujishock",
+        "voice": "Ekonomický šok léčí. Ale nejdřív bolí.",
+        "image_prompt": "Fotorealistický snímek peruánského tržiště v Limě v devadesátých létech, historická atmosféra, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Japonská diaspora v Peru",
+        "fact": "Peru má jednu z největších japonských komunit mimo Asii — Nikkeijin. Přišli jako dělníci na přelomu devatenáctého a dvacátého století a dnes jsou součástí limeňské kultury; japonská kuchyně ovlivnila peruánskou gastronomii (Nikkei cuisine).",
+        "source_url": "https://en.wikipedia.org/wiki/Japanese_Peruvians",
+        "source_quote": "Japanese Peruvians … one of the largest Japanese communities outside of Asia",
+        "voice": "Migrační vlna z Japonska formovala nejen politiku, ale i kuchyni Peru.",
+        "image_prompt": "Fotorealistický snímek limeňské Nikkei restaurace nebo japonsko-peruánské komunity v Miraflores, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-lide-mariategui",
+    "country": "Peru",
+    "section": "Lidé",
+    "topic": "José Carlos Mariátegui",
+    "headline": "Marxista, který přeložil Marxe do And",
+    "fact": "José Carlos Mariátegui byl peruánský myslitel a novinář, který v dvacátých létech vyvinul origniální marxistickou analýzu peruánské společnosti respektující domorodé komunity; zemřel ve pětatřiceti.",
+    "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Carlos_Mari%C3%A1tegui",
+    "source_quote": "Mariátegui … developed an original Marxist analysis of Peruvian society … died at the age of 35",
+    "voice": "Výjimečný myslitel, krátký život a trvalý vliv. Tak to chodí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické Limy z dvacátých let — koloniální architektura a ulice, historická atmosféra, přirozené světlo, 16:9",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Siedem ensayos: peruánský intelektuální klenot",
+        "fact": "Mariáteguiho Siete ensayos de interpretación de la realidad peruana je kanonické dílo latinskoamerického politického myšlení; propojil marxismus s domorodou komunální tradicí a odmítl mechanicky kopírovat evropský socialismus.",
+        "source_url": "https://en.wikipedia.org/wiki/Seven_Interpretive_Essays_on_Peruvian_Reality",
+        "source_quote": "Seven Interpretive Essays on Peruvian Reality … one of the most important works in Latin American Marxism",
+        "voice": "Marxismus přizpůsobený Andám. Ne Evropě.",
+        "image_prompt": "Fotorealistický snímek staré knihovny v Limě s historickými svazky, teplé světlo, akademická atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Indigenismo: domorodé jako politická identita",
+        "fact": "Hnutí indigenismo v Peru, Mexiku a Bolívii ve dvacátých a třicátých létech prosazovalo domorodou kulturu jako základ národní identity oproti evropskému. Bylo to politické i kulturní hnutí s hlubokými geografickými kořeny.",
+        "source_url": "https://en.wikipedia.org/wiki/Indigenismo",
+        "source_quote": "Indigenismo … a movement celebrating and advocating for indigenous peoples",
+        "voice": "Říct 'my jsme Inkové' jako politická identita, ne jen turistická atrakce.",
+        "image_prompt": "Fotorealistický snímek peruánského domorodého trhového centra v Cuscu, pestré kroje a andská krajina, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-kultura-pisco",
+    "country": "Peru",
+    "section": "Kultura & tradice",
+    "topic": "Pisco a gastronomická identita",
+    "headline": "Peruáni a Chilané se přou o pisco. Každý ho pije.",
+    "fact": "Pisco je hroznovinný destilát vyráběný v Peru a Chile; oba státy si nárokují původ pisco a diplomatický spor o ochrannou známku trvá desetiletí.",
+    "source_url": "https://en.wikipedia.org/wiki/Pisco",
+    "source_quote": "Pisco … both Peru and Chile claim its origin … a source of ongoing diplomatic dispute",
+    "voice": "Diplomatický spor o lahev alkoholu. To se stává jen v Jižní Americe.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek peruánského pisco sour v niklové sklenici — bílá pěna na povrchu, limetka na okraji, přirozené světlo, 16:9",
+    "ll": [
+      -76,
+      -14
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pisco Sour: národní nápoj Peru",
+        "fact": "Pisco Sour kombinuje pisco s limetkovou šťávou, cukrovým sirupem a vaječným bílkem, podává se s kapkami bitter. Je to peruánský národní koktejl a součást gastronomické identity Lima je jako světového gastronomického centra.",
+        "source_url": "https://en.wikipedia.org/wiki/Pisco_sour",
+        "source_quote": "pisco sour … the national cocktail of Peru … pisco, lime juice, egg white, and bitters",
+        "voice": "Vejce, limetka a hrozny. Pisco sour je alchymie.",
+        "image_prompt": "Fotorealistický snímek přípravy pisco sour v limeňském baru — šejkr, limetky a pisco na baru, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ica a pobřežní vinařská oblast Peru",
+        "fact": "Peruánské pisco pochází z pobřežního regionu Ica — suchý a slunný pás mezi Tichým oceánem a Andami. Mikroklimatické podmínky tohoto pásu jsou ideální pro révu a jsou součástí peruánského geografického nároku na původ pisco.",
+        "source_url": "https://en.wikipedia.org/wiki/Ica,_Peru",
+        "source_quote": "Ica … the principal pisco-producing region of Peru … its arid climate ideal for viticulture",
+        "voice": "Klima a zeměpis jako argument pro původ nápoje. Diplomaticky.",
+        "image_prompt": "Fotorealistický snímek vinohradů v peruánském regionu Ica — řady révy s andskými výběžky v pozadí, suché klima, zlaté světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-kultura-semana",
+    "country": "Peru",
+    "section": "Kultura & tradice",
+    "topic": "Semana Santa v Ayacucho",
+    "headline": "Největší Velikonoce Latinské Ameriky v andském městě",
+    "fact": "Semana Santa v Ayacuchu je považována za jedny z nejvýznačnějších velikonočních oslav v Latinské Americe; trvá dva týdny s průvody, reenactmenty a tradičními řemesly sahajícími do koloniálních dob.",
+    "source_url": "https://en.wikipedia.org/wiki/Semana_Santa_in_Ayacucho",
+    "source_quote": "Semana Santa in Ayacucho … one of the most important Holy Week celebrations in Latin America",
+    "voice": "Dva týdny slavností v andském městě. Španělské koloniální srdce v indiánské krajině.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Semana Santa průvodu v Ayacuchu — svíčky, barokní sochy a procesí v koloniálních ulicích v noci, 16:9",
+    "ll": [
+      -74.2226,
+      -13.1588
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Koloniální baroko v andské krajině",
+        "fact": "Ayacucho má přes třicet koloniálních chrámů — více na metr čtvereční než jiné latinskoamerické město. Intenzita barokní architektury a Semana Santa je výsledkem jeziutského úsilí o evangelizaci a uchování koloniálního náboženského dědictví.",
+        "source_url": "https://en.wikipedia.org/wiki/Huamanga",
+        "source_quote": "Ayacucho … known for its colonial churches … more than 30 churches in the historic centre",
+        "voice": "Třicet kostelů v jednom městě. Evangelizace zanechala stopu v kameni.",
+        "image_prompt": "Fotorealistický snímek koloniálního náměstí v Ayacuchu s katedrálou a procesí při Semana Santa, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ayacucho a Sendero Luminoso: dějiny násilí",
+        "fact": "Ayacucho byl v osmdesátých letech centrem guerilly Sendero Luminoso (Svítící stezka); region postihl nejkrvavější konflikt peruánské moderní historie. Dnes je Ayacucho místem národního smíření — Semana Santa coexistuje s historií ran.",
+        "source_url": "https://en.wikipedia.org/wiki/Shining_Path",
+        "source_quote": "Ayacucho … the birthplace of Shining Path … region most affected by the conflict",
+        "voice": "Slavení a smíření na témž místě. Historie je vrstvená.",
+        "image_prompt": "Fotorealistický snímek Muzea paměti v Ayacuchu — moderní expozice dokumentující konflikty, teplé muzejní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-umeni-retablos",
+    "country": "Peru",
+    "section": "Umění",
+    "topic": "Retablos ayacuchanské",
+    "headline": "Krabice s malovanými scénami jako andský deník",
+    "fact": "Retablos jsou andské přenosné oltáříky z papírové hmoty zobrazující náboženské, každodenní nebo politické scény; pocházejí z koloniálního Ayacucha a dnes jsou uznávaným peruánským lidovým uměním.",
+    "source_url": "https://en.wikipedia.org/wiki/Retablo",
+    "source_quote": "retablos … portable devotional objects … a traditional art form from Ayacucho, Peru",
+    "voice": "Celý svět ve dřevěné krabici. To je retablo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek peruánského retablo — otevřená krabice s malovanými figurami zobrazujícími venkovskou andskou scénu, muzejní osvětlení, 16:9",
+    "ll": [
+      -74.2226,
+      -13.1588
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Joaquín López Antay: retablo jako národní poklad",
+        "fact": "Mistr Joaquín López Antay z Ayacucha byl v roce sedmdesát pět oceněn národní cenou Premio Nacional de Cultura, přičemž odborníci debatovali, zda lidové umění patří do stejné kategorie jako výtvarné. Debata o hodnotě tradiční kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Joaqu%C3%ADn_L%C3%B3pez_Antay",
+        "source_quote": "Joaquín López Antay … awarded the Premio Nacional de Cultura",
+        "voice": "Je lidové umění uměním? Peru říká ano.",
+        "image_prompt": "Fotorealistický snímek dílny retablo mistra v Ayacuchu — jemné figurky, barvy a nástroje na pracovním stole, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sendero a přeměna retablo jako dokumentu násilí",
+        "fact": "Během konfliktu se Senderem Luminoso umělci z Ayacucha začali zobrazovat v retablos i scény násilí a válečné tragédie — tradičním médiem zachycovali traumata komunity. Umění jako kronika a terapie.",
+        "source_url": "https://en.wikipedia.org/wiki/Retablo",
+        "source_quote": "retablos … began to document the violence of the Shining Path conflict … a form of communal memory",
+        "voice": "Když není slov, jsou retablos.",
+        "image_prompt": "Fotorealistický snímek retablo zobrazující andskou komunitu a každodenní život, malované figurky, muzejní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-umeni-mario",
+    "country": "Peru",
+    "section": "Umění",
+    "topic": "Mario Vargas Llosa",
+    "headline": "Nobelista, který popsal Peru v románech",
+    "fact": "Mario Vargas Llosa je peruánský spisovatel a nositel Nobelovy ceny za literaturu; jeho romány zobrazují Peru od vojenských akademií (Město a psi) po magie Amazonie (Zelený dům); v roce deset obdržel Nobelovu cenu.",
+    "source_url": "https://en.wikipedia.org/wiki/Mario_Vargas_Llosa",
+    "source_quote": "Mario Vargas Llosa … awarded the Nobel Prize in Literature in 2010 … his novels explore Peruvian society",
+    "voice": "Peru v románech — od Lima po džungli. Vargas Llosa to napsal všechno.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek limanské kolonialní čtvrti Miraflores s kavárnou a knihkupectvím, atmosféra literárního města, přirozené světlo, 16:9",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Boom latinoamerický a magický realismus",
+        "fact": "Vargas Llosa byl součástí latinskoamerického literárního boomu šedesátých a sedmdesátých let — generace autorů včetně Garcíi Márqueze, Cortázara a Fuentese, kteří transformovali světový román. Politická a osobní svoboda prostupuje jejich dílem.",
+        "source_url": "https://en.wikipedia.org/wiki/Latin_American_Boom",
+        "source_quote": "the Latin American Boom … a literary movement of the 1960s and 1970s … Vargas Llosa, García Márquez, Cortázar",
+        "voice": "Jedna generace, jeden kontinent, revoluce v literatuře.",
+        "image_prompt": "Fotorealistický snímek historického Lima z šedesátých let — koloniální centrum a moderní zástavba v kontrastu, historická atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Lima jako centrum jihoamerické kultury",
+        "fact": "Lima je dnes jedním z největších měst Jižní Ameriky s přes jedenácti miliony obyvatel; centrum peruánské gastronomie, literatury a byznysu. Koncentrace kultur v Limě odráží migraci z And a z domorodých komunit do pobřežní metropole.",
+        "source_url": "https://en.wikipedia.org/wiki/Lima",
+        "source_quote": "Lima … the capital and largest city of Peru … a cultural and economic hub of South America",
+        "voice": "Lima pohltila polovinu Peru. A stala se Latinskou Amerikou v miniaturě.",
+        "image_prompt": "Fotorealistický letecký snímek Limy — obrovská metropole táhnoucí se podél Tichého oceánu, dramatický pohled z výšky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-sport-paleta",
+    "country": "Peru",
+    "section": "Sport",
+    "topic": "Vóley a ženský sport v Peru",
+    "headline": "Peru jako latinskoamerická velmoc ženského volejbalu",
+    "fact": "Perujský ženský volejbalový tým byl v osmdesátých a devadesátých létech jedním z nejsilnějších na světě; Peru skončilo druhé na olympijských hrách v Soulu v roce osmdesát osm.",
+    "source_url": "https://en.wikipedia.org/wiki/Peru_women%27s_national_volleyball_team",
+    "source_quote": "Peru women's national volleyball team … won silver at the 1988 Seoul Olympics",
+    "voice": "Stříbro na olympiádě. Malé Peru, velký výkon.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ženského volejbalu v Limě — hráčky na hřišti v dynamické akci, peruánský stadion, přirozené světlo, 16:9",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cecilia Tait: legenda peruánského sportu",
+        "fact": "Cecilia Tait je nejslavnější peruánská volejbalistka a ikona ženského sportu — smečařka olympijského stříbrného týmu; dnes je političkou a bojuje za práva sportovců a ženský sport v Peru.",
+        "source_url": "https://en.wikipedia.org/wiki/Cecilia_Tait",
+        "source_quote": "Cecilia Tait … one of the greatest players in volleyball history … later became a politician",
+        "voice": "Z hřiště do parlamentu. Cesta hrdinky.",
+        "image_prompt": "Fotorealistický snímek volejbalového hřiště a stadionu v Limě za slavnostního osvětlení, dynamická atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport jako sociální mobilita v Limě",
+        "fact": "Volejbal v Peru je sport dostupný pro dívky ze všech tříd — na rozdíl od elitních sportů. Popularita ženského volejbalu v osmdesátých létech přesáhla fotbal a stala se jevem napříč socioekonomickými skupinami.",
+        "source_url": "https://en.wikipedia.org/wiki/Peru_women%27s_national_volleyball_team",
+        "source_quote": "volleyball in Peru … one of the most popular sports … cutting across social classes",
+        "voice": "Sport, kde se class nepočítá. Jen výška a rychlost.",
+        "image_prompt": "Fotorealistický snímek pouličního volejbalového hřiště v limeňské čtvrti, holky hrají, zástavba v pozadí, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-sport-fútbol",
+    "country": "Peru",
+    "section": "Sport",
+    "topic": "Peruánský fotbal",
+    "headline": "La Blanquirroja a vášnivý národ",
+    "fact": "Peru má vášnivou fotbalovou kulturu; národní tým — La Blanquirroja — se po více než třiceti létech vrátil na mistrovství světa v Rusku v roce osmnáct, což vyvolalo celonárodní euforii.",
+    "source_url": "https://en.wikipedia.org/wiki/Peru_national_football_team",
+    "source_quote": "Peru … qualified for the 2018 FIFA World Cup … after a 36-year absence",
+    "voice": "Třicet šest let čekání a pak Rusko. Celá Lima slavila.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Estadio Nacional v Limě plného fanoušků s bílo-červenými vlajkami, dramatické světlo, 16:9",
+    "ll": [
+      -77.0294,
+      -12.07
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Teófilo Cubillas: zlatá generace sedmdesátých let",
+        "fact": "Teófilo Cubillas vedl Peru k dvěma MS čtvrtfinálím v sedmdesátých létech a je dodnes považován za největšího peruánského fotbalistu; byl v top hráčích MS sedmdesát a sedmdesát osm — zlatá éra peruánského fotbalu.",
+        "source_url": "https://en.wikipedia.org/wiki/Te%C3%B3filo_Cubillas",
+        "source_quote": "Teófilo Cubillas … one of the greatest South American players … starred in the 1970 and 1978 World Cups",
+        "voice": "Zlaté sedmdesátky. Pak přišla dlouhá pauza.",
+        "image_prompt": "Fotorealistický snímek historického peruánského fotbalu z sedmdesátých let — bílo-červené dresy, historická atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Fotbal a geografie příznivců: Lima vs. regiony",
+        "fact": "Peru je silně centralizovaný stát a Lima dominuje fotbalovému průmyslu; velké kluby Universitario a Alianza Lima jsou limeňské. Regiony jako Cusco nebo Arequipa mají silnou vlastní identitu ale méně zdrojů — geografie nerovnosti se odráží i ve fotbale.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_Peru",
+        "source_quote": "Peruvian football … dominated by Lima clubs … Universitario and Alianza Lima",
+        "voice": "Fotbal v Peru kopíruje mapu moci. Lima vede.",
+        "image_prompt": "Fotorealistický letecký snímek Estadio Nacional v Limě a okolní zástavby peruánské metropole, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-jazyk-aymara",
+    "country": "Peru",
+    "section": "Jazyk & slova",
+    "topic": "Aymara — jazyk kolem Titicacy",
+    "headline": "Jazyk čísel a filosofie kolem světového jezera",
+    "fact": "Aymara je domorodý jazyk hovorný kolem jezera Titicaca v Peru a Bolívii; lingvisté oceňují jeho logickou strukturu — aymara má vyjádřit, zda mluvčí sám viděl to, o čem mluví, nebo zda to slyšel od jiného.",
+    "source_url": "https://en.wikipedia.org/wiki/Aymara_language",
+    "source_quote": "Aymara … spoken around Lake Titicaca … notable for grammatical evidentiality … marking whether the speaker witnessed an event firsthand",
+    "voice": "Jazyk, kde gramatika rozlišuje, jestli víš z přímé zkušenosti nebo doslechu. To je přesnost.",
+    "visual_type": "typographic",
+    "ll": [
+      -69.3354,
+      -15.8402
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Evidencialita: gramatika pravdy",
+        "fact": "Evidencialita v aymaře znamená, že každá věta musí obsahovat gramatický marker ukazující zdroj informace — přímá zkušenost, doslechnutá informace nebo inference. Je to gramaticky zabudovaná epistemologie.",
+        "source_url": "https://en.wikipedia.org/wiki/Evidentiality",
+        "source_quote": "evidentiality … grammatical category … marking the source of information … prominent in Aymara",
+        "voice": "Gramatika jako vědecká metoda. Zabudovaná do jazyka.",
+        "image_prompt": "Fotorealistický snímek aymara komunity u jezera Titicaca — tradiční oděvy, jezerní krajina, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přeshraniční jazyk mezi Peru a Bolívií",
+        "fact": "Aymara překračuje hranice Peru a Bolívie — je úřední jazyk v obou zemích a vyjadřuje kulturní jednotu kolem Titicacy, která politická hranice rozdělila. Jazyk jako přeshraniční identita je lepší než statistika.",
+        "source_url": "https://en.wikipedia.org/wiki/Aymara_language",
+        "source_quote": "Aymara … official language of both Peru and Bolivia … spoken across the border region",
+        "voice": "Jazyk nezná hranice, které nakreslili kolonizátoři.",
+        "image_prompt": "Fotorealistický snímek plachovice s vlajkami Peru a Bolívie u jezera Titicaca, přirozené světlo, symbolika sdílené kultury, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-jazyk-espanol",
+    "country": "Peru",
+    "section": "Jazyk & slova",
+    "topic": "Peruánská španělština",
+    "headline": "Andinis v španělštině: jazyk, který sklouzává do hor",
+    "fact": "Peruánská španělština se výrazně liší podle regionu; andínský dialekt má vliv kečuánštiny v intonaci a slovní zásobě; limeňská španělština je prestižní, ale dialekty And a džungle jsou bohaté a odlišné.",
+    "source_url": "https://en.wikipedia.org/wiki/Peruvian_Spanish",
+    "source_quote": "Peruvian Spanish … significant regional variation … Andean varieties influenced by Quechua",
+    "voice": "Lima mluví španělsky. And mluví španělsky s kečuánštinou. Džungle mluví jinak.",
+    "visual_type": "typographic",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Huachafería: peruánský slang pro přehnanost",
+        "fact": "'Huachafo' je peruánský výraz pro přehnaný, kýčovitý nebo přezdobený styl — ve vztahu k oblečení, jídlu i chování. Je to slovo, které perfektně vystihuje peruánský smysl pro estetiku a sociální hodnocení.",
+        "source_url": "https://en.wikipedia.org/wiki/Peruvian_Spanish",
+        "source_quote": "Peruvian Spanish … includes unique vocabulary … reflecting local culture and humour",
+        "voice": "Každá kultura má slovo pro to, co jí přijde ridiculous. Peru má 'huachafo'.",
+        "image_prompt": "Fotorealistický snímek peruánského barevného trhového stánku s pestrou výzdobou v Limě, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Lima jako jazyková norma vs. andské dialekty",
+        "fact": "Lima se historicky považovala za centrum 'správné' peruánské španělštiny a andínské dialekty byly vnímány jako méněcenné. Tato hierarchie odrážela sociální a ekonomickou nerovnost mezi pobřežím a horami — dnes se akademici přou o to, jestli existuje 'lepší' španělština.",
+        "source_url": "https://en.wikipedia.org/wiki/Peruvian_Spanish",
+        "source_quote": "Andean Spanish … long stigmatised … now increasingly recognised as a legitimate variety",
+        "voice": "Dialekt jako mapa moci: kdo mluví 'správně', vládne.",
+        "image_prompt": "Fotorealistický snímek peruánské školy v Andách — učitel u tabule, žáci v tradičních krojích, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-jidlo-lomo",
+    "country": "Peru",
+    "section": "Jídlo",
+    "topic": "Lomo saltado",
+    "headline": "Čínský wok v andském prostředí",
+    "fact": "Lomo saltado je peruánský pokrm — hovězí maso a zelenina restované ve woku s rajčaty, cibulí a sojovou omáčkou, podávané s rýží a hranolky. Je to klasický příklad Chifa kuchyně — fúze peruánské a čínské tradice.",
+    "source_url": "https://en.wikipedia.org/wiki/Lomo_saltado",
+    "source_quote": "Lomo saltado … a popular Peruvian dish … influenced by Chinese cooking techniques and ingredients",
+    "voice": "Wok v Peru. Rýže a hranolky na jednom talíři. Tak vypadá kulturní fúze.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek lomo saltado ve woku — kouř, maso a zelenina ve žhavé pánvi, profesionální kuchyňské světlo, 16:9",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Chifa: čínská kuchyně v Peru",
+        "fact": "Chifa jsou peruánskočínské restaurace — dnes je v Peru přes tři tisíce chifa restaurací. Peruánská čínská komunita (Tusán) přišla jako dělníci v devatenáctém století a jejich kuchyně se prolnula s peruánskou tak hluboce, že chifa je dnes národní kuchyní.",
+        "source_url": "https://en.wikipedia.org/wiki/Chifa",
+        "source_quote": "Chifa … restaurants serving Peruvian-Chinese cuisine … more than 3,000 in Peru",
+        "voice": "Nejoblíbenější 'cizí' kuchyně Peru není zahraniční. Je to peruánská.",
+        "image_prompt": "Fotorealistický snímek tradičního chifa restaurantu v Limě — čínsko-peruánský interiér, menu v obou jazycích, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Peruánsko-čínská migrace jako kulturní transformace",
+        "fact": "Čínská přistěhovalecká vlna do Peru v devatenáctém století (coolies) přetvořila peruánskou kuchyni, kulturu i demografii. Limská čtvrť Barrio Chino je jednou z nejstarších v Jižní Americe. Migrace mění zemi pro vždy.",
+        "source_url": "https://en.wikipedia.org/wiki/Chinese_Peruvians",
+        "source_quote": "Chinese Peruvians … one of the oldest Chinese communities in the Americas",
+        "voice": "Coolies přijeli pracovat. Jejich vnuci vaří národní kuchyni.",
+        "image_prompt": "Fotorealistický snímek limeňského Barrio Chino — čínská brána a asijsko-peruánská architektura v ulicích Limy, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-jidlo-causa",
+    "country": "Peru",
+    "section": "Jídlo",
+    "topic": "Causa limeña",
+    "headline": "Žlutá bramborovitá věž, která chutná jako Peru",
+    "fact": "Causa limeña je peruánský pokrm z brambor promíchaných s ají amarillo (žlutou feferonkou) a limetkovou šťávou, vrstvených s tuňákem nebo kuřetem a avokádem — typický limeňský starter.",
+    "source_url": "https://en.wikipedia.org/wiki/Causa_limeña",
+    "source_quote": "Causa limeña … a layered potato dish … made with yellow potatoes and ají amarillo … a Lima staple",
+    "voice": "Peru je rodný dům brambory. A causa je jeho vizitka.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek causa limeña — elegantní vrstvený bramborový monolit se žlutou barvou, avokádo a tuňák, bílý talíř, přirozené světlo, 16:9",
+    "ll": [
+      -77.0428,
+      -12.0464
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ají amarillo: žlutá chilli, bez které není Peru",
+        "fact": "Ají amarillo je oranžovožlutá feferonka, bez které se peruánská kuchyně neobejde — používá se v ceviche, cause, huancaína omáčce i většině tradičních receptů. Chuť Peru je ze zásadní části chutí ají amarillo.",
+        "source_url": "https://en.wikipedia.org/wiki/Aj%C3%AD_amarillo",
+        "source_quote": "ají amarillo … one of the most important ingredients in Peruvian cuisine",
+        "voice": "Jedna feferonka, celá kuchyně. Ají amarillo je Peru.",
+        "image_prompt": "Fotorealistický snímek čerstvých ají amarillo chilli na tržišti v Limě — světle oranžové lusky na tradičním trhu, přirozené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Peru jako centrum biodiverzity brambory",
+        "fact": "Peru je původní domov brambory — domácí pěstování brambory z divokých předků zde proběhlo tisíce let před naším letopočtem. Existuje přes tři tisíce odrůd brambory v Peru, z nichž mnohé rostou jen v Andách na specifických výškách a klimatech.",
+        "source_url": "https://en.wikipedia.org/wiki/Potato",
+        "source_quote": "Peru … the centre of potato domestication … over 3,000 varieties of potato",
+        "voice": "Brambora dobyla svět. Ale domov je Peru.",
+        "image_prompt": "Fotorealistický snímek andského trhu s desítkami různých peruánských brambor — fialové, červené, žluté a bílé odrůdy, přirozené světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-historie-conquistaperu",
+    "country": "Peru",
+    "section": "Historie",
+    "topic": "Dobytí Peru Pizarrem",
+    "headline": "Hrstka mužů srazila říši milionů",
+    "fact": "Francisco Pizarro s méně než dvěma sty muži zajal inckého vladaře Atahualpu v roce patnáct třicet dva a zahájil dobývání Inkovské říše; zaplacení obrovského výkupného ve zlatě Atahualpu nezachránilo — byl popraven.",
+    "source_url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Inca_Empire",
+    "source_quote": "Francisco Pizarro … with fewer than 200 men … captured Atahualpa … the Inca emperor",
+    "voice": "Místnost plná zlata jako výkupné. A popravení stejně.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zlaté inské ceremoniální nádoby nebo zlatého šperku v muzeu — zlato Inků, muzejní osvětlení, 16:9",
+    "ll": [
+      -78.63,
+      -6.78
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cajamarca: místo, kde se zlomil svět",
+        "fact": "Cajamarca je místo, kde Pizarro přepadl Atahualpu a kde by bylo vyplaceno výkupné — místnost Cuarto del Rescate (Výkupná místnost) je dodnes k vidění jako historický monument. Je to místo, kde se zlomily dějiny And.",
+        "source_url": "https://en.wikipedia.org/wiki/Ransom_Room",
+        "source_quote": "the Ransom Room in Cajamarca … where the Inca emperor Atahualpa offered to fill the room with gold",
+        "voice": "Místnost jako symbol celé tragédie. Zlatem plná. A stejně smrt.",
+        "image_prompt": "Fotorealistický snímek Cuarto del Rescate (Výkupné místnosti) v Cajamarca — historické kamenné místnosti, muzejní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Proč zvítězila hrstka? Biologie, ocel a politika",
+        "fact": "Jared Diamond v knize Guns, Germs and Steel analyzuje, proč Pizarro zvítězil: ocel, koně, střelný prach, a zejména epidemie neštovic, která přišla před conquistadory. Ale také štěpení inkovského státu občanskou válkou mezi Atahualpou a Huascarem.",
+        "source_url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Inca_Empire",
+        "source_quote": "epidemic disease … preceded the Spanish conquest … smallpox killed much of the Inca population",
+        "voice": "Neviditelný nepřítel přišel první. A rozhodl.",
+        "image_prompt": "Fotorealistický snímek andské krajiny u Cajamarca, historické město a okolní hory, dramatické světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "pe-historie-shiningpath",
+    "country": "Peru",
+    "section": "Historie",
+    "topic": "Sendero Luminoso",
+    "headline": "Maoistická guerilla v andských horách",
+    "fact": "Sendero Luminoso (Svítící stezka) byl peruánský maoistický guerillový hnutí, které zahájil profesor Abimael Guzmán v osmodesátých létech; válka stála životy odhadovaných sedmdesát tisíc lidí do roku devadesát dva.",
+    "source_url": "https://en.wikipedia.org/wiki/Shining_Path",
+    "source_quote": "the Shining Path … an estimated 70,000 people died in the conflict",
+    "voice": "Největší vnitřní konflikt moderního Peru. A málo se o něm ví mimo zemi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek peruánského Muzea paměti nebo pietního místa obětem konfliktu, tichá a důstojná atmosféra, 16:9",
+    "ll": [
+      -74.2226,
+      -13.1588
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ayacucho jako epicentrum konfliktu",
+        "fact": "Sendero zahájil ozbrojený boj v Ayacuchu — nejchudší a nejizolovanější andské oblasti — a jeho oběťmi byly zejména domorodé komunity. Konflikt postihl nejchudší vrstvy, nikoliv bohaté Lima.",
+        "source_url": "https://en.wikipedia.org/wiki/Shining_Path",
+        "source_quote": "the conflict … most severely affected indigenous communities in rural areas of the Andes",
+        "voice": "Chudí platí za války bohatých a mocných. Vždy.",
+        "image_prompt": "Fotorealistický snímek andské vesnice v horách regionu Ayacucho, tiché a vzdálené prostředí, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ideologie a geografie revoluce",
+        "fact": "Sendero operoval v odlehlých andských regionech, kde státní přítomnost byla minimální; tato geografická mezera umožnila guerille budovat paralelní mocenskou strukturu. Je to příklad toho, jak fyzická geografie — dostupnost, izolace — ovlivňuje průběh politického konfliktu.",
+        "source_url": "https://en.wikipedia.org/wiki/Shining_Path",
+        "source_quote": "Shining Path … exploited the absence of state authority in remote Andean regions",
+        "voice": "Stát, který nevidí svá území, ztrácí kontrolu nad nimi.",
+        "image_prompt": "Fotorealistický letecký snímek odlehlé andské vesnice obklopené horami a džunglí, bez silnic, dramatické světlo, 16:9"
+      }
+    }
+  }
+]

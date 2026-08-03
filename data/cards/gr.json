@@ -1,0 +1,858 @@
+[
+  {
+    "id": "gr-mista-akropolis",
+    "country": "Řecko",
+    "section": "Místa",
+    "topic": "Akropolis a Parthenón",
+    "headline": "Chrám z mramoru starý přes 2400 let",
+    "fact": "Athénská Akropolis je vápencové návrší o rozloze asi 3 hektary; od roku 1987 je zapsaná na seznam světového dědictví UNESCO a jejím vrcholným dílem je chrám Parthenón z 5. století před naším letopočtem.",
+    "source_url": "https://cs.wikipedia.org/wiki/Akropolis_(Ath%C3%A9ny)",
+    "source_quote": "1987 (11. zasedání)",
+    "voice": "Turisté šplhají na kopec kvůli výhledu, archeologové kvůli tomu, co leží pod ním.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek athénské Akropole s Parthenonem za zlatého odpoledního světla, pohled od města, jasná obloha, bez lidí v popředí, 16:9",
+    "ll": [23.7257, 37.9715],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Chrám postavený s optickým trikem",
+        "fact": "Parthenón měří 69,51 na 30,86 metru a po obvodu ho obklopuje 46 dórských sloupů vytesaných z pentelského mramoru z blízkých lomů.",
+        "source_url": "https://cs.wikipedia.org/wiki/Parthen%C3%B3n",
+        "source_quote": "69,51 m dlouhá a 30,86 m široká",
+        "voice": "Sloupy vypadají dokonale rovné, a přitom je architekti schválně mírně zakřivili.",
+        "image_prompt": "Fotorealistický detailní snímek sloupořadí Parthenonu, mramorové dórské sloupy zezdola, modrá obloha, 16:9"
+      },
+      "kartograf": {
+        "headline": "Skála, kterou si vybraly generace vládců",
+        "fact": "Poloha Akropole na strmém vápencovém ostrohu uprostřed athénské kotliny je typická pro řecká města — výšková převaha nad okolím poskytovala obranu i kontrolu nad přístupovými cestami, podobně jako u jiných starověkých akropolí v Egejské oblasti.",
+        "source_url": "https://cs.wikipedia.org/wiki/Akropolis_(Ath%C3%A9ny)",
+        "voice": "Kdo ovládl skálu uprostřed kotliny, ovládl i celé město kolem ní.",
+        "image_prompt": "Fotorealistický letecký snímek athénské Akropole na vápencovém ostrohu uprostřed rozlehlého moderního města, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-mista-meteora",
+    "country": "Řecko",
+    "section": "Místa",
+    "topic": "Meteora",
+    "headline": "Kláštery na vrcholu skal bez schodů",
+    "fact": "Klášter Meteora ve středním Řecku založil mnich Athanasios v roce 1356 na skále vysoké 534 metrů nad mořem; celá klášterní krajina je od roku 1988 na seznamu světového dědictví UNESCO.",
+    "source_url": "https://cs.wikipedia.org/wiki/Meteora",
+    "source_quote": "založený v roce 1356 mnichem Athanasiem z poloostrova Athos, na skále ve výšce 534 metry nad mořem",
+    "voice": "Mniši si vybrali za domov místa, kam se dá vylézt jen s pořádnou dávkou odvahy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek klášterů Meteora na vrcholcích skalních věží ve středním Řecku, ranní mlha v údolí, bez lidí, 16:9",
+    "ll": [21.6306, 39.7217],
+    "tags": ["fyzicka-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nahoru se kdysi jezdilo v koši na laně",
+        "fact": "Než klášterům vytesali schody do skály, dopravovali mniši i návštěvníky nahoru pomocí dřevěných rumpálů, lan a proutěných košů zavěšených nad propastí.",
+        "source_url": "https://cs.wikipedia.org/wiki/Meteora",
+        "voice": "Výtah sem nikdy nevedl — jen provaz, koš a hodně důvěry v mnichy nahoře.",
+        "image_prompt": "Fotorealistický snímek starého dřevěného rumpálu a koše u kláštera Meteora, skalní stěna v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Skalní věže jako přírodní pevnost víry",
+        "fact": "Meteora vznikla erozí pískovcových a konglomerátových skal, které se zvedají osaměle nad údolím řeky Pineios — mnichové ve středověku využili nedostupnost vrcholů jako přirozenou ochranu před nájezdníky, podobně jako komunity budovaly horské kláštery i jinde ve Středomoří.",
+        "source_url": "https://cs.wikipedia.org/wiki/Meteora",
+        "voice": "Příroda tu postavila věže, mnichové na ně jen dostavěli střechu.",
+        "image_prompt": "Fotorealistický letecký snímek skalních věží Meteora nad údolím řeky, klášterní budovy na vrcholcích, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-mista-santorini",
+    "country": "Řecko",
+    "section": "Místa",
+    "topic": "Santorini",
+    "headline": "Ostrov ve tvaru srpu po sopečném výbuchu",
+    "fact": "Santorini získalo svůj dnešní srpovitý tvar po mohutné sopečné erupci před asi 3600 lety, která zničila minojské město Akrotiri a vytvořila kalderu s útesy vysokými přes 300 metrů.",
+    "source_url": "https://en.wikipedia.org/wiki/Santorini",
+    "source_quote": "inner coast around the caldera is a sheer precipice of more than 300 m (980 ft) drop at its highest",
+    "voice": "Ostrov, který kdysi vybuchl, dnes láká davy lidí právě kvůli jizvě, co po tom zůstala.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek bílých domů na útesu Oia na Santorini nad modrou kalderou, západ slunce, bez lidí, 16:9",
+    "ll": [25.4615, 36.3932],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Domácnost s tekoucí vodou už v době bronzové",
+        "fact": "V zasypaném městě Akrotiri archeologové objevili keramické trubky na tekoucí vodu, které patří mezi nejstarší dochované zařízení svého druhu na světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Santorini",
+        "source_quote": "Pipes with running water and water closets found at Akrotiri are the oldest such utilities discovered.",
+        "voice": "Tekoucí voda v domě, o které si lidé jinde mohli nechat jen zdát ještě tisíce let potom.",
+        "image_prompt": "Fotorealistický snímek archeologického naleziště Akrotiri na Santorini, odkryté zdi minojského města pod ochrannou střechou, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kaldera jako okno do nitra sopky",
+        "fact": "Kaldera Santorini vznikla propadem sopečného ostrova do vyprázdněné magmatické komory — z ptačí perspektivy dnešní prstenec ostrovů ukazuje přesně obrys bývalého kráteru, což z něj dělá učebnicový příklad kalderového sopečného pole.",
+        "source_url": "https://en.wikipedia.org/wiki/Santorini",
+        "voice": "Ostrovy dnes tvoří kruh přesně tam, kde se kdysi propadla střecha sopky.",
+        "image_prompt": "Fotorealistický letecký snímek kaldery Santorini ve tvaru prstence ostrovů, modré moře uprostřed, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-priroda-samaria",
+    "country": "Řecko",
+    "section": "Příroda",
+    "topic": "Soutěska Samaria",
+    "headline": "Nejdelší soutěska Evropy",
+    "fact": "Soutěska Samaria na Krétě je dlouhá 16 kilometrů a na svém nejužším místě, zvaném Železná vrata, se stěny přibližují na pouhé čtyři metry od sebe.",
+    "source_url": "https://en.wikipedia.org/wiki/Samaria_Gorge",
+    "source_quote": "the gorge is 16 km long … the sides of the gorge close in to a width of only four meters",
+    "voice": "Kozy kri-kri tu žijí odjakživa, turisté teprve od poloviny minulého století.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek soutěsky Samaria na Krétě, vysoké skalní stěny, turistická stezka mezi kameny, ranní světlo, 16:9",
+    "ll": [23.98, 35.317],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Útočiště pro vzácnou horskou kozu",
+        "fact": "Národní park v soutěsce Samaria vznikl v roce 1962 především jako útočiště pro vzácnou krétskou kozu kri-kri, která dnes žije téměř výhradně tady a na jednom malém ostrůvku u pobřeží.",
+        "source_url": "https://en.wikipedia.org/wiki/Samaria_Gorge",
+        "source_quote": "The gorge became a national park in 1962 … particularly as a refuge for the rare kri-kri (Cretan goat), which is largely restricted to the park and an island just off the shore of Agia Marina",
+        "voice": "Kozám tu patřila soutěska dřív, než ji objevili turisté s foťáky.",
+        "image_prompt": "Fotorealistický detailní snímek krétské kozy kri-kri na skalním svahu soutěsky Samaria, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řeka, co si prořízla cestu horami",
+        "fact": "Soutěska vznikla tím, jak si tekoucí voda po tisíciletí prořezávala cestu vápencovým pohořím Lefka Ori — stejný princip, jakým vznikají kaňony po celém světě, jen v menším měřítku než třeba u velkých amerických kaňonů.",
+        "source_url": "https://en.wikipedia.org/wiki/Samaria_Gorge",
+        "voice": "Voda pracuje pomalu, ale za dost dlouhou dobu prořízne i celé pohoří.",
+        "image_prompt": "Fotorealistický letecký snímek soutěsky Samaria a hor Lefka Ori na Krétě, klikatící se kaňon, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-priroda-olymp",
+    "country": "Řecko",
+    "section": "Příroda",
+    "topic": "Hora Olymp",
+    "headline": "Domov bohů vysoký skoro 3000 metrů",
+    "fact": "Nejvyšší vrchol pohoří Olymp, Mytikas, měří 2917 metrů; podle řecké mytologie tu sídlilo dvanáct nejvýznamnějších bohů v čele se Diem.",
+    "source_url": "https://cs.wikipedia.org/wiki/Olymp",
+    "source_quote": "2917.727 m n. m. (Mytikas) … Olymp se tak stal sídlem dvanácti nejvýznamnějších řeckých bohů",
+    "voice": "Kdo dnes vyleze na vrchol, najde tam už jen kámen a výhled, žádné bohy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Mytikas na hoře Olymp, dramatická obloha, pohled od úpatí, 16:9",
+    "ll": [22.3506, 40.0855],
+    "tags": ["fyzicka-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "První zdokumentovaný výstup přišel až ve 20. století",
+        "fact": "První novodobý zdokumentovaný výstup na vrchol Mytikas se podařil až v roce 1913 švýcarské dvojici Daniel Baud-Bovy a Frédéric Boissonas spolu s místním horalem Christem Kakalosem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Olymp",
+        "source_quote": "První novodobý zdokumentovaný výstup na nejvyšší bod masivu Olympu Mytikas uskutečnili v roce 1913",
+        "voice": "Na horu bohů si lidé troufli až tisíce let po tom, co o ní začali vyprávět příběhy.",
+        "image_prompt": "Fotorealistický snímek horolezců na skalnatém hřebeni vrcholu Mytikas, mlha v údolí pod nimi, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hory jako přirozená brána mezi kraji",
+        "fact": "Olymp se tyčí těsně nad pobřežím Egejského moře a odděluje historické Thesálii od Makedonie — okolí hory bylo už v roce 1938 vyhlášeno národním parkem a od roku 1981 je zapsáno na seznam biosférických rezervací UNESCO.",
+        "source_url": "https://cs.wikipedia.org/wiki/Olymp",
+        "source_quote": "Okolí hory bylo již v roce 1938 prohlášeno za národní park … Od roku 1981 je toto území o rozloze 4 000 ha zapsáno na seznam biosférických rezervací UNESCO.",
+        "voice": "Hraniční pohoří dvou krajů si nakonec vysloužilo ochranu jako celek.",
+        "image_prompt": "Fotorealistický letecký snímek pohoří Olymp nad pobřežím Egejského moře, zalesněné svahy a skalnaté vrcholy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-priroda-navagio",
+    "country": "Řecko",
+    "section": "Příroda",
+    "topic": "Pláž Navagio",
+    "headline": "Vrak lodi uprostřed tyrkysové zátoky",
+    "fact": "Pláž Navagio na ostrově Zakynthos je přístupná jen po moři a leží na ní vrak lodi Panagiotis, která tu ztroskotala 5. října 1980 při pašování cigaret z Turecka do Itálie.",
+    "source_url": "https://en.wikipedia.org/wiki/Navagio",
+    "source_quote": "On 5 October 1980, the coaster MV Panagiotis ran aground in the waters around Zakynthos Island … making its way from Turkey with a freight of contraband cigarettes headed for Italy",
+    "voice": "Pašeráci o svůj náklad přišli, pláž tím naopak získala nejznámější vrak v celém Řecku.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek pláže Navagio na Zakynthosu s vrakem lodi na bílém písku, tyrkysové moře, pohled shora z útesu, 16:9",
+    "ll": [20.6247, 37.8599],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Loď, co po sobě nechala jen jméno pláže",
+        "fact": "Rezavý trup lodi Panagiotis dodnes leží zabořený v bílém vápencovém štěrku pláže, po níž dostala i svou přezdívku Shipwreck Beach.",
+        "source_url": "https://en.wikipedia.org/wiki/Navagio",
+        "voice": "Loď už nikam neodpluje, ale jméno dala pláži na celý zbytek její existence.",
+        "image_prompt": "Fotorealistický detailní snímek rezavého vraku lodi Panagiotis na pláži Navagio, bílý štěrk kolem, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zátoka uzavřená strmými vápencovými stěnami",
+        "fact": "Pláž Navagio leží v úzké zátoce obklopené kolmými vápencovými útesy, které ji činí přístupnou jen z moře — typický tvar pobřeží ostrovů v Jónském moři, kde vápencové vrstvy prudce spadají přímo do vody.",
+        "source_url": "https://en.wikipedia.org/wiki/Navagio",
+        "voice": "Útesy tu nechrání jen výhled, ale i klid celé zátoky před okolním světem.",
+        "image_prompt": "Fotorealistický letecký snímek zátoky Navagio obklopené vápencovými útesy na ostrově Zakynthos, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-lide-alexandr-veliky",
+    "country": "Řecko",
+    "section": "Lidé",
+    "topic": "Alexandr Veliký",
+    "headline": "Král, který v třiceti letech ovládl půl světa",
+    "fact": "Alexandr Veliký se stal makedonským králem ve dvaceti letech a než v třiceti dvou letech zemřel, vytvořil jednu z největších říší v dějinách sahající od Řecka až po severozápadní Indii.",
+    "source_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+    "source_quote": "Alexander was proclaimed king on the spot by the nobles and army at the age of 20 … By the age of 30, he had created one of the largest empires in history, stretching from Greece to northwestern India.",
+    "voice": "Než mu bylo čtyřicet, stihl toho víc, co jiní vládci nestihnou za celý dlouhý život.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek mramorové sochy Alexandra Velikého v aténském muzeu, klasické antické sochařství, měkké světlo, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vzdělání od nejslavnějšího filozofa doby",
+        "fact": "Alexandrovým učitelem byl od jeho třinácti let filozof Aristotelés, který mladého prince učil filozofii, medicíně i logice — spojení budoucího dobyvatele s jedním z nejvýznamnějších myslitelů antiky je v dějinách ojedinělé.",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+        "source_quote": "When Alexander was 13, Philip began to search for a tutor … Aristotle taught Alexander and his companions about medicine, philosophy, morals, religion, logic, and art.",
+        "voice": "Málokterý žák měl za učitele muže, jehož jméno dnes zná celý svět stejně jako jeho vlastní.",
+        "image_prompt": "Fotorealistický snímek antického reliéfu zobrazujícího mladého Alexandra s učitelem, teplé archivní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Výboj, který propojil Řecko s Asií",
+        "fact": "Alexandrovo tažení propojilo řecký svět s Persií, Egyptem i střední Asií a založilo desítky nových měst nesoucích jeho jméno — díky tomu se řecký jazyk a kultura rozšířily až do oblastí dnešního Afghánistánu a Pákistánu, v období zvaném helénismus.",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+        "voice": "Kam dorazilo jeho vojsko, tam se ještě dlouho poté mluvilo a myslelo řecky.",
+        "image_prompt": "Fotorealistický snímek staré mapy tažení Alexandra Velikého od Řecka po Indii, archivní tón pergamenu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-lide-maria-callas",
+    "country": "Řecko",
+    "section": "Lidé",
+    "topic": "Maria Callas",
+    "headline": "Newyorská rodačka, která se stala řeckou operní legendou",
+    "fact": "Maria Callas se narodila v New Yorku v rodině řeckých přistěhovalců a v roce 1966 se vzdala amerického občanství, aby přijala občanství Řecka, země původu svých rodičů.",
+    "source_url": "https://cs.wikipedia.org/wiki/Maria_Callas",
+    "source_quote": "Narodila se jako občanka Spojených států amerických, v roce 1966 se však amerického občanství vzdala a přijala občanství Řecka, země původu svých rodičů.",
+    "voice": "Občanství změnila jednou v životě, hlas jí ale zůstal celou dobu stejně řecký.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový portrét operní pěvkyně Marie Callas na jevišti, dramatické scénické osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přezdívka La Divina za dlouhou kariéru",
+        "fact": "Callas si za svou pěveckou kariéru vysloužila přezdívku 'La Divina' a kritici ji řadí mezi nejvýznamnější operní pěvkyně dvacátého století.",
+        "source_url": "https://en.wikipedia.org/wiki/Maria_Callas",
+        "source_quote": "Her musical and dramatic talents led to her being hailed as La Divina ('The Divine One') … one of the most renowned and influential opera singers of the 20th century",
+        "voice": "Božskou ji nazvali kritici, ne ona sama — a přízvisko jí zůstalo navždy.",
+        "image_prompt": "Fotorealistický dobový snímek Marie Callas při potlesku publika v opeře, večerní osvětlení sálu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umělkyně mezi dvěma domovy",
+        "fact": "Callas vyrůstala v USA jako dítě řeckých emigrantů, ale svou kariéru budovala hlavně v Itálii a dalších evropských operních domech — typický osud umělkyně z řecké diaspory, která svůj talent nakonec zúročila daleko od míst, kde vyrůstala.",
+        "source_url": "https://cs.wikipedia.org/wiki/Maria_Callas",
+        "voice": "Vyrostla za oceánem, ale slávu si nakonec vyzpívala v úplně jiné části světa.",
+        "image_prompt": "Fotorealistický snímek historické budovy milánské opery La Scala večer, slavnostní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-lide-venizelos",
+    "country": "Řecko",
+    "section": "Lidé",
+    "topic": "Eleftherios Venizelos",
+    "headline": "Politik, který zdvojnásobil území Řecka",
+    "fact": "Eleftherios Venizelos zastával úřad řeckého premiéra osmkrát v letech 1910 až 1933 a během balkánských válek se zasloužil o téměř zdvojnásobení území i obyvatelstva Řecka.",
+    "source_url": "https://en.wikipedia.org/wiki/Eleftherios_Venizelos",
+    "source_quote": "Venizelos served as prime minister of Greece for over 12 years, spanning eight terms from 1910 to 1933. … Greece doubled its area and population with the liberation of Macedonia, Epirus, and most of the Aegean islands",
+    "voice": "Osmkrát usedl do premiérského křesla, a pokaždé s tím na mapě Řecka něco přibylo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový portrét Elefthéria Venizélose v obleku, vážný výraz, studiové osvětlení počátku 20. století, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přezdívka tvůrce moderního Řecka",
+        "fact": "Venizelos bývá pro svou roli při formování hranic a institucí dnešního Řecka označován přezdívkou 'tvůrce moderního Řecka'.",
+        "source_url": "https://en.wikipedia.org/wiki/Eleftherios_Venizelos",
+        "source_quote": "often called 'The Maker of Modern Greece' for his transformative role.",
+        "voice": "Zemi doslova přetvořil na mapě, a lidé mu za to dodnes říkají tvůrce.",
+        "image_prompt": "Fotorealistický snímek starých novin a dokumentů ze začátku 20. století s mapou Řecka, archivní tón, 16:9"
+      },
+      "kartograf": {
+        "headline": "Balkánské války jako přestavba hranic regionu",
+        "fact": "Balkánské války v letech 1912 a 1913 přerozdělily poslední evropská území Osmanské říše mezi balkánské státy — Řecko díky nim získalo Makedonii, Epirus i většinu egejských ostrovů a přiblížilo se svým dnešním hranicím.",
+        "source_url": "https://en.wikipedia.org/wiki/Balkan_Wars",
+        "source_quote": "The Balkan Wars were two conflicts that took place in the Balkan states in 1912 and 1913.",
+        "voice": "Dvě rychlé války rozkreslily mapu Balkánu jinak, než jak vypadala celá staletí předtím.",
+        "image_prompt": "Fotorealistický snímek staré mapy Balkánu z roku 1913 s vyznačenými novými hranicemi, archivní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-kultura-velikonoce",
+    "country": "Řecko",
+    "section": "Kultura & tradice",
+    "topic": "Řecké pravoslavné Velikonoce",
+    "headline": "Vejce natřená na červeno jako symbol nového života",
+    "fact": "Na řecké Velikonoce se vejce barví výhradně na červeno, protože barva má připomínat Kristovu krev; hlavní bohoslužba Anastasi se koná v sobotu večer a končí přesně o půlnoci.",
+    "source_url": "https://www.toprecepty.cz/clanky/2789-velikonoce-v-recku-symbolem-jsou-cervena-vejce-odhalili-jsme-tajemstvi-jak-je-spravne-nabarvit/",
+    "source_quote": "červená barva totiž představuje Kristovu krev",
+    "voice": "O půlnoci naráz zhasnou světla a nový plamen si každý odnese domů na vlastní svíčce.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek košíku s tradičními červeně obarvenými velikonočními vejci na řeckém stole, jarní výzdoba, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Polévka, která se jí až po půlnoci",
+        "fact": "Po návratu z půlnoční bohoslužby si řecké rodiny doma dají tradiční polévku magiritsa z jehněčích vnitřností, kterou tak ukončí dlouhý předvelikonoční půst.",
+        "source_url": "https://www.toprecepty.cz/clanky/2789-velikonoce-v-recku-symbolem-jsou-cervena-vejce-odhalili-jsme-tajemstvi-jak-je-spravne-nabarvit/",
+        "source_quote": "magiritsa běžně podává i jako polévka s různými druhy zeleniny... servíruje se po půlnoční bohoslužbě",
+        "voice": "Půst skončí přesně o půlnoci, a hned první lžíce polévky to celé rodině připomene.",
+        "image_prompt": "Fotorealistický snímek řecké rodiny u stolu s miskami polévky magiritsa po půlnoční bohoslužbě, teplé domácí světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kalendář, který slaví Velikonoce jindy než Západ",
+        "fact": "Řecká pravoslavná církev počítá datum Velikonoc podle juliánského kalendáře, takže řecké Velikonoce často připadají na jiný termín než velikonoce v západní Evropě.",
+        "source_url": "https://www.toprecepty.cz/clanky/2789-velikonoce-v-recku-symbolem-jsou-cervena-vejce-odhalili-jsme-tajemstvi-jak-je-spravne-nabarvit/",
+        "voice": "Stejný svátek, jiný kalendář — a najednou slaví každý úplně jindy.",
+        "image_prompt": "Fotorealistický snímek pravoslavného kostela v Řecku osvětleného svícemi během velikonoční půlnoční bohoslužby, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-kultura-jmeniny",
+    "country": "Řecko",
+    "section": "Kultura & tradice",
+    "topic": "Jmeniny (giorti)",
+    "headline": "Svátek jména se slaví štědřeji než narozeniny",
+    "fact": "V Řecku bývá oslava svátku jména, tedy dne zasvěceného stejnojmennému světci, tradičně důležitější než oslava narozenin, zvlášť u dospělých.",
+    "source_url": "https://www.xpatathens.com/living-in-athens/taste-experience/greek-traditions/item/1590-name-days-name-day-customs-in-greece",
+    "source_quote": "traditionally they are more important than a birthday, particularly as people get older.",
+    "voice": "Narozeniny má člověk jen pro sebe, jmeniny sdílí se všemi stejnojmennými lidmi v zemi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek slavnostně prostřeného řeckého stolu s hosty a sladkostmi při oslavě jmenin, teplé domácí osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dům otevřený komukoliv bez pozvání",
+        "fact": "Kdo měl jmeniny, tradičně držel takzvaný den otevřených dveří — přátelé a sousedé mohli přijít bez pozvání pogratulovat a dostali pohoštění zvané kerasma.",
+        "source_url": "https://www.xpatathens.com/living-in-athens/taste-experience/greek-traditions/item/1590-name-days-name-day-customs-in-greece",
+        "source_quote": "close friends and relatives drop by to give their wishes, offer a small gift, and receive the traditional 'kerasma' (food, sweets, coffee, and drinks).",
+        "voice": "Zvonek mohl zazvonit kdykoliv a nikdy to nebylo nevítané vyrušení.",
+        "image_prompt": "Fotorealistický snímek řecké domácnosti s otevřenými dveřmi a hosty přinášejícími dárky, útulná atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kalendář svatých jako společný orientační bod",
+        "fact": "Tradice jmenin vychází z pravoslavného kalendáře svatých, kde má skoro každý den v roce přiřazeného konkrétního světce — jde o obyčej sdílený napříč většinou pravoslavných zemí jihovýchodní Evropy, ne jen v Řecku.",
+        "source_url": "https://www.xpatathens.com/living-in-athens/taste-experience/greek-traditions/item/1590-name-days-name-day-customs-in-greece",
+        "voice": "Jeden kalendář svatých rozdal svátky celému pravoslavnému koutu Evropy najednou.",
+        "image_prompt": "Fotorealistický snímek staré pravoslavné kalendářové stránky se jmény svatých, teplé archivní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-kultura-karneval-patra",
+    "country": "Řecko",
+    "section": "Kultura & tradice",
+    "topic": "Karneval v Patrasu",
+    "headline": "Největší karneval Řecka s kořeny v roce 1829",
+    "fact": "Karneval v Patrasu se poprvé konal v roce 1829 a dnes je největší karnevalovou slavností v Řecku; vrcholí průvodem alegorických vozů a symbolickým spálením karnevalového krále.",
+    "source_url": "https://en.wikipedia.org/wiki/Patras_Carnival",
+    "source_quote": "The Carnival was first held in 1829. … The Patras Carnival, or Patrino karnavali, is the largest event of its kind in Greece.",
+    "voice": "Zima v Patrasu končí ohněm — do plamenů totiž skončí sám papírový král karnevalu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek barevného karnevalového průvodu v ulicích Patrasu, konfety ve vzduchu, alegorické vozy, denní světlo, 16:9",
+    "ll": [21.7346, 38.2466],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Desetitisíce masek v ulicích přístavního města",
+        "fact": "Do ulic Patrasu se během vrcholných dní karnevalu podle organizátorů zapojují desítky tisíc účastníků v maskách a kostýmech, kteří táhnou městem v doprovodných průvodech.",
+        "source_url": "https://en.wikipedia.org/wiki/Patras_Carnival",
+        "source_quote": "In 2019, there were about 750.000 participants.",
+        "voice": "Na pár dní se z klidného přístavního města stane jedno obrovské pouliční jeviště.",
+        "image_prompt": "Fotorealistický snímek davu lidí v pestrých maskách a kostýmech na ulici během karnevalu v Patrasu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Karneval, který připlul do Řecka z Itálie",
+        "fact": "Patraský karneval vznikl pod vlivem italských karnevalových tradic, které do přístavního města přinesli obchodníci a lodě mířící přes Jadran — přímořská poloha Patrasu tak otevřela cestu zvyku, který se jinde v Řecku tak silně neuchytil.",
+        "source_url": "https://en.wikipedia.org/wiki/Patras_Carnival",
+        "voice": "Zvyk připlul po moři jako náklad lodí, a v přístavu prostě zůstal.",
+        "image_prompt": "Fotorealistický letecký snímek přístavního města Patras s karnevalovým průvodem procházejícím centrem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-umeni-el-greco",
+    "country": "Řecko",
+    "section": "Umění",
+    "topic": "El Greco",
+    "headline": "Malíř ikon, který se proslavil ve Španělsku",
+    "fact": "Malíř Domenikos Theotokopulos, známý jako El Greco, se narodil roku 1541 na Krétě a vyučil se tam jako malíř ikon krétské školy, než odešel přes Benátky do Španělska.",
+    "source_url": "https://en.wikipedia.org/wiki/El_Greco",
+    "source_quote": "Born in 1541, in either the village of Fodele or Candia (the Venetian name of Chandax, present day Heraklion) on Crete … El Greco received his initial training as an icon painter of the Cretan school, a leading center of post-Byzantine art.",
+    "voice": "Podepisoval se řecky a k obrazům přidával slovo 'Krét' — na cizí půdě si svůj původ hlídal.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré byzantské ikony na dřevěné desce se zlatým pozadím, ateliér s přirozeným světlem, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přezdívka, která nahradila vlastní jméno",
+        "fact": "Ve španělském Toledu, kam se malíř přestěhoval v roce 1577, mu místní začali říkat jednoduše 'El Greco', tedy 'Řek' — a tahle přezdívka nakonec zastínila jeho skutečné jméno natolik, že ho tak zná dodnes celý svět.",
+        "source_url": "https://en.wikipedia.org/wiki/El_Greco",
+        "source_quote": "In 1577, El Greco migrated to Madrid and then to Toledo, where he produced his mature works. … El Greco was a nickname, and the artist normally signed his paintings with his full birth name in Greek letters",
+        "voice": "Cizí přezdívka mu zůstala natrvalo, i když se sám celý život podepisoval jinak.",
+        "image_prompt": "Fotorealistický snímek úzké uličky ve španělském Toledu s výhledem na katedrálu, večerní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cesta jednoho stylu přes tři různé země",
+        "fact": "El Grecova dráha spojila byzantskou ikonomalbu z Kréty, benátskou barevnost z Itálie a nakonec španělskou zbožnost v Toledu — jeho dílo je dokladem toho, jak umí jeden umělec propojit tři odlišné výtvarné tradice Středomoří do vlastního osobitého stylu.",
+        "source_url": "https://en.wikipedia.org/wiki/El_Greco",
+        "voice": "Tři různé země, tři různé školy malby, a z toho všeho nakonec vzešel jeden jediný rukopis.",
+        "image_prompt": "Fotorealistický snímek staré mapy Středomoří s vyznačenou trasou Kréta-Benátky-Toledo, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-umeni-epidauros",
+    "country": "Řecko",
+    "section": "Umění",
+    "topic": "Divadlo v Epidauru",
+    "headline": "Antické divadlo, kde je slyšet i špendlík",
+    "fact": "Divadlo v Epidauru postavili ve 4. století před naším letopočtem; pojme až 14 000 diváků a jeho akustika umožňuje slyšet herce z jeviště i v posledních řadách bez jakéhokoli zesílení.",
+    "source_url": "https://en.wikipedia.org/wiki/Theatre_of_Epidaurus",
+    "source_quote": "At a maximum capacity of 13,000 to 14,000 spectators, the theatre hosted music, singing and dramatic games. … Constructed in the late 4th century BC",
+    "voice": "Zkus na jevišti zašeptat — nahoře v poslední řadě tě uslyší, jako bys stál vedle.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek antického divadla v Epidauru, kamenné řady sedadel v půlkruhu, zelené kopce v pozadí, denní světlo, 16:9",
+    "ll": [23.0797, 37.596],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tajemství skrývají samotné kamenné sedačky",
+        "fact": "Vědci zjistili, že mimořádnou akustiku divadla nezpůsobuje tvar auditoria, ale samotné vápencové sedačky, které odfiltrují hluboké šumy davu a odrazí vysokofrekvenční hlas herců zpět k divákům.",
+        "source_url": "https://www.sciencedaily.com/releases/2007/04/070404162237.htm",
+        "source_quote": "The rows of limestone seats at Epidaurus form an efficient acoustics filter that hushes low-frequency background noises like the murmur of a crowd and reflects the high-frequency noises",
+        "voice": "Za skvělým zvukem nestojí žádná magie, jen obyčejný vytesaný kámen.",
+        "image_prompt": "Fotorealistický detailní snímek opotřebovaných vápencových sedaček antického divadla v Epidauru, 16:9"
+      },
+      "kartograf": {
+        "headline": "Divadlo jako součást léčebného chrámu",
+        "fact": "Divadlo v Epidauru bylo součástí rozsáhlé svatyně boha lékařství Asklépia, kam se starověcí Řekové vydávali za uzdravením — divadelní představení tu fungovala jako doplněk k léčbě, ne jen jako zábava.",
+        "source_url": "https://en.wikipedia.org/wiki/Theatre_of_Epidaurus",
+        "voice": "Na jedno místo se tehdy chodilo léčit tělo i duši zároveň, ne odděleně.",
+        "image_prompt": "Fotorealistický letecký snímek areálu svatyně Asklépia v Epidauru s divadlem a chrámovými základy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-umeni-rebetiko",
+    "country": "Řecko",
+    "section": "Umění",
+    "topic": "Rebetiko",
+    "headline": "Řecký blues, který přivezli uprchlíci",
+    "fact": "Hudební styl rebetiko se rozvinul mezi řeckými uprchlíky z Malé Asie po pádu Smyrny v roce 1922 a výměně obyvatelstva v roce 1923; od roku 2017 je zapsaný na seznamu nehmotného kulturního dědictví UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Rebetiko",
+    "source_quote": "In the wake of the Asia Minor Catastrophe and the population exchange of 1923, huge numbers of refugees settled in Piraeus, Thessaloniki, Volos and other harbor cities. … In 2017 rebetiko was added in the UNESCO Intangible Cultural Heritage Lists.",
+    "voice": "Písně o chudobě a vyhnanství se nakonec staly symbolem řecké identity.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého bouzouki opřeného o stůl v řecké taverně, kouřová atmosféra, teplé večerní světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hudba přístavních čtvrtí a kaváren s bouzoukim",
+        "fact": "Rebetiko se hrálo hlavně v přístavních čtvrtích Pirea a Soluně, kde ho uprchlíci z Malé Asie doprovázeli hrou na bouzouki a zpívali o chudobě, vězení a lásce.",
+        "source_url": "https://en.wikipedia.org/wiki/Rebetiko",
+        "source_quote": "huge numbers of refugees settled in Piraeus, Thessaloniki, Volos and other harbor cities",
+        "voice": "Nástroj, který uprchlíci přivezli s sebou, se stal hlasem celé jedné generace.",
+        "image_prompt": "Fotorealistický dobový snímek hudebníků hrajících rebetiko v přístavní kavárně Pirea ve 20. letech 20. století, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hudba, kterou vytvořila výměna miliónu lidí",
+        "fact": "Rozsáhlá výměna obyvatelstva mezi Řeckem a Tureckem po roce 1923 nahnala do řeckých přístavních měst statisíce vysídlenců najednou — podobně jako jinde ve světě i tady se z prostředí vykořeněných lidí zrodil nový hudební žánr.",
+        "source_url": "https://en.wikipedia.org/wiki/Rebetiko",
+        "source_quote": "In the wake of the Asia Minor Catastrophe and the population exchange of 1923, huge numbers of refugees settled in Piraeus, Thessaloniki, Volos and other harbor cities.",
+        "voice": "Vysídlení lidé si s sebou nesli jen pár věcí, ale hudbu jim nikdo vzít nemohl.",
+        "image_prompt": "Fotorealistický dobový snímek přístavu plného lodí s uprchlíky z Malé Asie, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-sport-antika-olympiada",
+    "country": "Řecko",
+    "section": "Sport",
+    "topic": "Starověké olympijské hry",
+    "headline": "Hry pořádané každé čtyři roky po tisíc let",
+    "fact": "Starověké olympijské hry se podle tradice poprvé konaly v roce 776 před naším letopočtem v Olympii a od té doby se opakovaly každé čtyři roky až do konce 4. století našeho letopočtu.",
+    "source_url": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+    "source_quote": "The originating Olympic Games are traditionally dated to 776 BC. … The games were held every four years, or Olympiad, which became a unit of time in historical chronologies.",
+    "voice": "Válka mohla počkat, ale olympijské hry v Olympii se nesměly odložit ani o den.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek antických ruin stadionu v Olympii, kamenné startovní čáry, olivové stromy kolem, denní světlo, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Konec her přišel s novým náboženstvím",
+        "fact": "Poslední doložené starověké hry se konaly kolem roku 393 našeho letopočtu za vlády císaře Theodosia I., který podporoval křesťanství na úkor starých pohanských svátků.",
+        "source_url": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+        "source_quote": "Their last recorded celebration was in AD 393, under the emperor Theodosius I",
+        "voice": "Nová víra nakonec vypnula tradici, která běžela bez přestávky skoro tisíc let.",
+        "image_prompt": "Fotorealistický snímek zbytků chrámu Dia v Olympii při západu slunce, sloupy ležící v trávě, 16:9"
+      },
+      "kartograf": {
+        "headline": "Posvátný okrsek uprostřed poloostrova Peloponés",
+        "fact": "Olympie ležela v posvátném okrsku zasvěceném bohu Diovi na poloostrově Peloponés — sportovní klání a náboženský kult tu byly od počátku propojené, na rozdíl od dnešního odděleného pojetí sportu a víry.",
+        "source_url": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+        "voice": "Sport a náboženství tu kdysi nebyly dvě různé věci, ale jedna společná slavnost.",
+        "image_prompt": "Fotorealistický letecký snímek archeologického areálu Olympie na poloostrově Peloponés, zelená krajina kolem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-sport-atheny-1896",
+    "country": "Řecko",
+    "section": "Sport",
+    "topic": "Novodobé olympijské hry 1896",
+    "headline": "Návrat olympiády po patnácti stech letech",
+    "fact": "První novodobé olympijské hry se konaly v Athénách od 6. do 15. dubna 1896 a zúčastnilo se jich 241 sportovců ze 14 zemí.",
+    "source_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
+    "source_quote": "Fourteen nations (according to the IOC, though the number is subject to interpretation) and 241 athletes (all males; this number is also disputed) took part in the games. … from 6 to 15 April 1896",
+    "voice": "Skoro patnáct set let po posledních antických hrách se stadion v Athénách znovu zaplnil běžci.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek mramorového Panathinaiko stadionu v Athénách, prázdné hlediště, jasný den, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vodař, který se stal národním hrdinou",
+        "fact": "Maraton na hrách 1896 vyhrál dosud neznámý řecký nosič vody Spyridon Louis, což z něj v Řecku přes noc udělalo národního hrdinu.",
+        "source_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
+        "source_quote": "a previously unrecognised water carrier",
+        "voice": "Ráno nosil vodu po ulicích, večer ho nesl na ramenou celý nadšený stadion.",
+        "image_prompt": "Fotorealistický dobový snímek běžce vbíhajícího do cíle na stadionu naplněném diváky v roce 1896, 16:9"
+      },
+      "kartograf": {
+        "headline": "Antický stadion oprášený pro moderní dobu",
+        "fact": "Hlavním dějištěm her 1896 byl nově obnovený Panathinaikos, mramorový stadion postavený na základech starověké athénské sportovní arény — spojení antického dědictví s nově vznikajícím mezinárodním olympijským hnutím bylo symbolické.",
+        "source_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
+        "source_quote": "The main venue was the Panathenaic Stadium, where athletics and wrestling took place.",
+        "voice": "Nové hry si pro svůj start vybraly stadion postavený na základech toho starého.",
+        "image_prompt": "Fotorealistický letecký snímek Panathinaiko stadionu ve tvaru podkovy uprostřed Athén, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-sport-euro-2004",
+    "country": "Řecko",
+    "section": "Sport",
+    "topic": "Euro 2004",
+    "headline": "Fotbalová senzace s kurzem 150 ku 1",
+    "fact": "Řecká fotbalová reprezentace vyhrála mistrovství Evropy, přestože jí sázkové kanceláře před turnajem dávaly kurz na vítězství až 150 ku 1.",
+    "source_url": "https://en.wikipedia.org/wiki/UEFA_Euro_2004",
+    "source_quote": "Greece won the match 1–0 and were crowned European champions, a title that they were given odds as long as 150–1 of winning before the tournament.",
+    "voice": "Nikdo jim to nevěřil, ani sázkové kanceláře ne — a přesně to jim nakonec vyhovovalo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řeckých fotbalistů slavících vítězství s pohárem mistrů Evropy, konfety, stadion v noci, 16:9",
+    "tags": ["socioekonomicka-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Stejný soupeř na začátku i na konci turnaje",
+        "fact": "Řecko na turnaji porazilo pořádající Portugalsko hned v úvodním zápase 2:1 a stejného soupeře pak zdolalo i ve finále, tentokrát 1:0.",
+        "source_url": "https://en.wikipedia.org/wiki/UEFA_Euro_2004",
+        "source_quote": "Portugal 1–2 Greece … Portugal 0–1 Greece",
+        "voice": "Portugalsko potkalo stejného soupeře na úplném začátku i na samém konci, a pokaždé prohrálo.",
+        "image_prompt": "Fotorealistický snímek fotbalového zápasu na velkém stadionu, hráč v modrobílém dresu střílí gól, večerní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malý fotbalový národ proti velkým rozpočtům",
+        "fact": "Řecký fotbalový úspěch ukázal, že v mezinárodním fotbale nerozhoduje jen velikost země nebo bohatství klubů — dobře sehraný celek s jasnou obrannou taktikou dokázal porazit fotbalové velmoci s mnohem větším rozpočtem i tradicí.",
+        "source_url": "https://en.wikipedia.org/wiki/UEFA_Euro_2004",
+        "source_quote": "Greece won the match 1–0 and were crowned European champions, a title that they were given odds as long as 150–1 of winning before the tournament.",
+        "voice": "Peníze v rozpočtu klubů nakonec na hřišti nerozhodly o nic víc než dobrá taktika.",
+        "image_prompt": "Fotorealistický snímek prázdného velkého fotbalového stadionu za soumraku, dramatická obloha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-jazyk-demokracie",
+    "country": "Řecko",
+    "section": "Jazyk & slova",
+    "topic": "Slovo demokracie",
+    "headline": "Vláda lidu ukrytá ve dvou řeckých slovech",
+    "fact": "Slovo demokracie vzniklo spojením řeckých slov 'demos' (lid) a 'kratos' (moc, vláda) a jeho nejstarší doložené použití pochází z athénských textů 30. let 5. století před naším letopočtem.",
+    "source_url": "https://en.wikipedia.org/wiki/Democracy",
+    "source_quote": "The word comes from dêmos '(common) people' and krátos 'force/might'. … The first attested use of the word democracy is found in prose works of the 430s BC, such as Herodotus' Histories.",
+    "voice": "Slovo staré přes dva tisíce let dnes používá skoro každá ústava na světě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek antických ruin athénské agory s mramorovými sloupy, jasný den, bez lidí, 16:9",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, které zprvu ani nebylo to hlavní",
+        "fact": "Než se pro athénské zřízení vžilo slovo demokracie, používal se termín 'isonomia', tedy politická rovnost — teprve později se prosadil výraz zdůrazňující přímo vládu lidu.",
+        "source_url": "https://en.wikipedia.org/wiki/Democracy",
+        "voice": "Athéňané měli pro svou rovnost napřed úplně jiné slovo, než na jaké jsme zvyklí dnes.",
+        "image_prompt": "Fotorealistický snímek staré řecké nápisové desky s vytesaným textem, detail kamenného písma, 16:9"
+      },
+      "kartograf": {
+        "headline": "Athénská reforma, co dala jméno politickému systému",
+        "fact": "Demokratické zřízení v Athénách zavedl na přelomu 6. a 5. století před naším letopočtem politik Kleisthenés, kterému se proto přezdívá 'otec athénské demokracie' — pojmenování systému tak vzniklo až zpětně, podle už fungující praxe.",
+        "source_url": "https://en.wikipedia.org/wiki/Democracy",
+        "source_quote": "referred to as 'the father of Athenian democracy'",
+        "voice": "Systém tu fungoval dřív, než pro něj vůbec někdo vymyslel jméno.",
+        "image_prompt": "Fotorealistický snímek athénského Pnyxu, místa starověkých lidových shromáždění, kopec s výhledem na Akropoli, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-jazyk-abeceda",
+    "country": "Řecko",
+    "section": "Jazyk & slova",
+    "topic": "Řecká abeceda",
+    "headline": "První abeceda se samostatnými samohláskami",
+    "fact": "Řecká abeceda se používá k zápisu řečtiny už od konce 9. nebo počátku 8. století před naším letopočtem a je nejstarší známé písmo, které soustavně zapisuje jak souhlásky, tak samohlásky.",
+    "source_url": "https://en.wikipedia.org/wiki/Greek_alphabet",
+    "source_quote": "The Greek alphabet has been used to write the Greek language since the late 9th or early 8th century BC. … the earliest known alphabetic script to systematically write vowels as well as consonants.",
+    "voice": "Bez vlastních písmen na samohlásky by dnešní latinka možná ani nevypadala tak, jak ji známe.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Čtyřiadvacet písmen, co dodnes používají vědci",
+        "fact": "Moderní řecká abeceda má 24 písmen od alfy po ómegu a řadu z nich — třeba pí, sigma nebo omega — dodnes běžně používají matematici a fyzici jako značky ve vzorcích.",
+        "source_url": "https://en.wikipedia.org/wiki/Greek_alphabet",
+        "source_quote": "24 letters, ordered from alpha to omega.",
+        "voice": "Písmena, co kdysi zapisovala básně, dnes stejně samozřejmě zapisují rovnice.",
+        "image_prompt": "Fotorealistický detailní snímek vytesaných řeckých písmen alfa, pí a omega do mramorové desky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Předek písma poloviny světa",
+        "fact": "Řecká abeceda je předchůdcem latinky, cyrilice i gótského písma — tři různé písemné systémy používané dodnes na několika kontinentech tak mají společný jediný zdroj ve starověkém Řecku.",
+        "source_url": "https://en.wikipedia.org/wiki/Greek_alphabet",
+        "source_quote": "The Greek alphabet is the ancestor of several scripts, such as the Latin, Gothic, Coptic, and Cyrillic scripts.",
+        "voice": "Jedno staré písmo si nakonec půjčily téměř všechny kouty Evropy.",
+        "image_prompt": "Fotorealistický snímek staré mapy Evropy a Asie s vyznačeným šířením abeced odvozených z řecké, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-jazyk-gymnazium",
+    "country": "Řecko",
+    "section": "Jazyk & slova",
+    "topic": "Slovo gymnázium",
+    "headline": "Škola pojmenovaná po nahém cvičení",
+    "fact": "Slovo gymnázium pochází z řeckého 'gymnos', tedy nahý, protože staří řečtí sportovci cvičili a soutěžili úplně bez oblečení.",
+    "source_url": "https://en.wikipedia.org/wiki/Gymnasium_(ancient_Greece)",
+    "source_quote": "the common Greek adjective γυμνός (gymnos) meaning 'naked' or 'nude'",
+    "voice": "Dnešní gymnazisté sedí v lavicích oblečení — jejich řečtí předchůdci by se tomu možná i podivili.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek antického řeckého cvičiště s kamenným sloupovím, olivové stromy kolem, denní světlo, 16:9",
+    "tags": ["jazykoveda", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Olivový olej místo sprchového gelu",
+        "fact": "Než řečtí sportovci vstoupili na cvičiště, potírali si tělo olivovým olejem a teprve po tréninku si ho škrabkou zvanou strigilis sundávali z kůže i s prachem a potem.",
+        "source_url": "https://en.wikipedia.org/wiki/Gymnasium_(ancient_Greece)",
+        "source_quote": "trained naked, rubbing their bodies with olive oil.",
+        "voice": "Sprchový gel neznali, ale olivový olej a škrabku měli po ruce vždy.",
+        "image_prompt": "Fotorealistický snímek antických bronzových nástrojů strigilis a nádobky na olej, studiové osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Místo pro tělo, které se změnilo v místo pro mysl",
+        "fact": "Řecké gymnázium postupně přestalo být jen cvičištěm a stalo se i místem, kam chodili filozofové a učitelé vést rozpravy — proto dnes slovo gymnázium v mnoha jazycích neznamená tělocvičnu, ale střední školu.",
+        "source_url": "https://en.wikipedia.org/wiki/Gymnasium_(ancient_Greece)",
+        "source_quote": "Philosophers and sophists frequently assembled to hold talks and lectures",
+        "voice": "Ze cvičiště na svaly se pomalu stalo cvičiště na myšlenky.",
+        "image_prompt": "Fotorealistický snímek antických filozofů debatujících pod sloupovím řeckého gymnasionu, teplé denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-jidlo-jogurt",
+    "country": "Řecko",
+    "section": "Jídlo",
+    "topic": "Řecký jogurt",
+    "headline": "Jogurt, který proslavilo scezování",
+    "fact": "Řecký (scezovaný) jogurt musí mít podle mezinárodní normy FAO nejméně 5,6 % bílkovin, zatímco běžný jogurt jen 2,7 % — rozdíl vzniká právě scezením syrovátky.",
+    "source_url": "https://en.wikipedia.org/wiki/Strained_yogurt",
+    "source_quote": "yogurt to have at least 5.6% protein content if strained, otherwise 2.7%.",
+    "voice": "Stejné mléko, jen o trochu déle scezené — a najednou z něj je úplně jiná konzistence.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek mísy hustého řeckého jogurtu s medem a ořechy, dřevěný stůl, přirozené světlo, 16:9",
+    "tags": ["socioekonomicka-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Do světa ho na konci 20. století přivezla řecká firma",
+        "fact": "Mimo přistěhovalecké komunity se scezovaný jogurt masověji rozšířil až v 80. letech 20. století, kdy ho do Velké Británie pod značkou 'Total' přivezla řecká firma Fage.",
+        "source_url": "https://en.wikipedia.org/wiki/Strained_yogurt",
+        "source_quote": "only became well known outside of immigrant communities in the 1980s, when it was imported into the United Kingdom by the Greek company Fage, under the brand name 'Total'.",
+        "voice": "Recept znaly generace řeckých rodin doma, světu ho ale představila až jedna firma.",
+        "image_prompt": "Fotorealistický snímek plátěného pytlíku scezujícího jogurt nad miskou syrovátky, tradiční kuchyňská scéna, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jogurt, co během pár let ovládl americký trh",
+        "fact": "Podíl řeckého jogurtu na americkém trhu s jogurty vzrostl do roku 2015 na polovinu celého trhu — ukázka, jak rychle se dokáže jedno regionální jídlo prosadit v úplně jiné části světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Strained_yogurt",
+        "source_quote": "By 2015, Greek yogurt has a 50 percent share of the yogurt market in the United States.",
+        "voice": "Během pár let ovládl regálovou půlku trhu na druhé straně oceánu.",
+        "image_prompt": "Fotorealistický snímek regálu s řeckými jogurty v americkém supermarketu, jasné obchodní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-jidlo-feta",
+    "country": "Řecko",
+    "section": "Jídlo",
+    "topic": "Feta",
+    "headline": "Sýr, jehož jméno smí nosit jen řecký sýr",
+    "fact": "Sýr feta je od roku 2002 chráněným označením původu Evropské unie a smí se tak nazývat jen sýr vyrobený v Řecku z ovčího mléka nebo jeho směsi s kozím mlékem do 30 %.",
+    "source_url": "https://en.wikipedia.org/wiki/Feta",
+    "source_quote": "Since 2002, feta has been a protected designation of origin (PDO) in the European Union. … Made from sheep milk, or from a mixture of sheep milk and up to 30% goat milk from the same area.",
+    "voice": "Podobný bílý sýr dělá skoro každá balkánská země, ale jméno feta smí nést jen ten řecký.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kostek bílého sýra feta v nálevu, olivy a bylinky kolem, přirozené světlo, 16:9",
+    "tags": ["socioekonomicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept starý skoro tisíc let",
+        "fact": "Sýr podobný dnešní fetě zmiňuje byzantský učenec Michael Psellos už v 11. století, tedy staletí předtím, než se pro něj vůbec vžilo jméno feta.",
+        "source_url": "https://en.wikipedia.org/wiki/Feta",
+        "source_quote": "Feta cheese, specifically, is recorded by Psellos in the 11th century",
+        "voice": "Sýr existoval dávno předtím, než dostal jméno, pod kterým ho dnes zná celý svět.",
+        "image_prompt": "Fotorealistický snímek staré řecké pastviny s ovcemi a kozami, hory v pozadí, ranní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ochrana jména jako spor mezi státy",
+        "fact": "Označení feta smí podle práva Evropské unie nést jen sýr vyrobený na řecké pevnině a na ostrově Lesbos — sousední balkánské země přitom svůj bílý sýr podobného typu musí prodávat pod jiným názvem.",
+        "source_url": "https://en.wikipedia.org/wiki/Feta",
+        "source_quote": "mainland Greece and Lesbos Prefecture",
+        "voice": "Stejně bílý sýr, ale jen jedna země si směla ponechat jeho původní jméno.",
+        "image_prompt": "Fotorealistický snímek mapy Řecka s vyznačenou oblastí výroby sýra feta, sýrárna v popředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-jidlo-olivovy-olej",
+    "country": "Řecko",
+    "section": "Jídlo",
+    "topic": "Olivový olej",
+    "headline": "Země, kde se olivy pěstují už čtyři tisíce let",
+    "fact": "Na Krétě se olivy pěstují už od roku 2500 před naším letopočtem a Řecko má dnes nejvyšší spotřebu olivového oleje na hlavu na světě, kolem 24 litrů ročně na obyvatele.",
+    "source_url": "https://en.wikipedia.org/wiki/Olive_oil",
+    "source_quote": "olives were being grown in Crete as long ago as 2500 BC … Greece has the highest per capita consumption of olive oil worldwide, around 24 liters per year.",
+    "voice": "Olivovník tu roste tak dlouho, že si na jeho stín zvykli už mínojští králové.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého olivovníkového háje na Krétě, řady stromů, sklizené olivy na zemi, teplé odpolední světlo, 16:9",
+    "tags": ["socioekonomicka-geografie", "fyzicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Olej místo mýdla ve starověkém cvičišti",
+        "fact": "Staří Sparťané a další Řekové si olivovým olejem potírali tělo před cvičením v gymnasiu — sloužil jim tehdy vlastně jako obdoba mýdla i opalovacího krému zároveň.",
+        "source_url": "https://en.wikipedia.org/wiki/Olive_oil",
+        "source_quote": "The Spartans and other Greeks used oil to rub themselves while exercising in the gymnasia.",
+        "voice": "Do lahvičky s olejem si tehdy nalévali něco mezi mýdlo a opalovací krém.",
+        "image_prompt": "Fotorealistický snímek antické keramické nádoby na olivový olej a bronzové strigilis vedle sebe, studiové osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Třetí největší producent olivového oleje na světě",
+        "fact": "Řecko je s produkcí přes 300 tisíc tun ročně třetím největším producentem olivového oleje na světě, hned za Španělskem a Itálií.",
+        "source_url": "https://en.wikipedia.org/wiki/Olive_oil",
+        "source_quote": "Greece ranks third globally, producing 313,300 tonnes in 2022, behind Spain and Italy.",
+        "voice": "Na stupních vítězů světové produkce oleje chybí Řecku jen Španělsko a Itálie.",
+        "image_prompt": "Fotorealistický letecký snímek rozlehlých olivových sadů v řecké krajině, kopcovitý terén, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-historie-byzantska-rise",
+    "country": "Řecko",
+    "section": "Historie",
+    "topic": "Byzantská říše",
+    "headline": "Římská říše, která přežila v řečtině dalších tisíc let",
+    "fact": "Byzantská říše navazovala na římskou říši a s centrem v Konstantinopoli vydržela až do dobytí města Osmany v roce 1453 — přes tisíc let poté, co západní část Římské říše zanikla.",
+    "source_url": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+    "source_quote": "endured until the fall of Constantinople to the Ottoman Empire in 1453.",
+    "voice": "Obyvatelé si dál říkali Římané, i když už dávno mluvili a mysleli řecky.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek chrámu Hagia Sofia zvenčí, byzantská kupolová architektura, večerní světlo, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obyvatelé si říkali Římané, i když mluvili řecky",
+        "fact": "Obyvatelé Byzantské říše se sami označovali za Římany (řecky Rhómaioi), přestože úředním jazykem říše se postupně stala řečtina místo latiny.",
+        "source_url": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+        "source_quote": "regarded themselves as Romans (in Greek, Ῥωμαῖοι or Romaioi). … Greek gradually replaced Latin for official use",
+        "voice": "Jméno si podrželi římské, řeč jim ale dávno patřila řecká.",
+        "image_prompt": "Fotorealistický snímek staré byzantské mozaiky s postavami císařů ve zlatém pozadí, tlumené osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Impérium, které přežilo vlastní úpadek",
+        "fact": "Byzantská říše prošla za víc než tisíc let existence několika cykly úpadku a obnovy — na vrcholu moci za císaře Justiniána v 6. století ovládala území od Španělska po Blízký východ, než se postupně zmenšila jen na okolí Konstantinopole.",
+        "source_url": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+        "source_quote": "reached its greatest extent under the reign of Justinian I (r. 527–565)",
+        "voice": "Z říše sahající skoro přes celé Středomoří nakonec zbylo jen jedno hlavní město.",
+        "image_prompt": "Fotorealistický snímek staré mapy Byzantské říše na vrcholu moci za Justiniána, archivní tón pergamenu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-historie-valka-za-nezavislost",
+    "country": "Řecko",
+    "section": "Historie",
+    "topic": "Řecká válka za nezávislost",
+    "headline": "Povstání, které ukončilo staletí osmanské nadvlády",
+    "fact": "Řecké povstání proti Osmanské říši vypuklo v roce 1821 a po devíti letech bojů získalo Řecko nezávislost, kterou v únoru 1830 uznal Londýnský protokol velmocí.",
+    "source_url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence",
+    "source_quote": "a successful war of independence fought by Greek revolutionaries against the Ottoman Empire from 1821 to 1829 … After nine years of war, Greece was recognized as an independent state under the London Protocol of February 1830.",
+    "voice": "Přes čtyři staletí osmanské nadvlády nakonec ukončilo jedno desetileté povstání.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řecké vlajky vlající nad starobylou pevností za úsvitu, dramatická obloha, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Datum povstání se stalo státním svátkem",
+        "fact": "Řekové si datum 25. března připomínají jako Den nezávislosti — den, kdy podle tradice v roce 1821 povstání symbolicky vypuklo a který se zároveň kryje s pravoslavným svátkem Zvěstování Panně Marii.",
+        "source_url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence",
+        "source_quote": "The revolution is commemorated by Greeks in Greece and the Greek diaspora on 25 March, as Independence Day. … 25 March 1821, the Orthodox Christian Feast of the Annunciation",
+        "voice": "Jedno datum tak dnes slaví zároveň víru i vznik státu.",
+        "image_prompt": "Fotorealistický dobový snímek řeckých povstalců s puškami v horské krajině počátku 19. století, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nová hranice na troskách staré říše",
+        "fact": "Vznik nezávislého Řecka v roce 1830 byl jedním z prvních úspěšných národních povstání proti Osmanské říši v Evropě 19. století a stal se vzorem pro pozdější balkánské osvobozenecké hnutí v Srbsku či Bulharsku.",
+        "source_url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence",
+        "source_quote": "After nine years of war, Greece was recognized as an independent state under the London Protocol of February 1830.",
+        "voice": "Jedno malé nové království na mapě ukázalo dalším národům v regionu, že se to dá.",
+        "image_prompt": "Fotorealistický snímek staré mapy Balkánu z roku 1830 s vyznačenými novými hranicemi Řecka, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "gr-historie-minojska-civilizace",
+    "country": "Řecko",
+    "section": "Historie",
+    "topic": "Minojská civilizace",
+    "headline": "První vyspělá civilizace Evropy vznikla na Krétě",
+    "fact": "Minojská civilizace na Krétě vzkvétala zhruba od roku 3100 do roku 1100 před naším letopočtem a je považovaná za první vyspělou civilizaci v Evropě.",
+    "source_url": "https://en.wikipedia.org/wiki/Minoan_civilization",
+    "source_quote": "c. 3100 – c. 1100 BC … often regarded as the first civilization in Europe",
+    "voice": "Než vznikly první řecké báje o bozích, na Krétě už stály paláce s tekoucí vodou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ruin paláce v Knossu na Krétě, červené sloupy, staré fresky na zdi, denní světlo, 16:9",
+    "ll": [25.1633, 35.2977],
+    "tags": ["dejiny", "fyzicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Palác, kolem kterého žily desetitisíce lidí",
+        "fact": "Palác v Knossu byl největší minojskou stavbou na Krétě a v době svého rozkvětu kolem roku 1600 před naším letopočtem v jeho okolí žilo podle odhadů až sto tisíc obyvatel.",
+        "source_url": "https://en.wikipedia.org/wiki/Minoan_civilization",
+        "source_quote": "population estimates showing 20,000 to 100,000 in 1600 BC and 30,000 in 1360 BC … the largest Minoan palace",
+        "voice": "Kolem jednoho paláce se tehdy tísnilo tolik lidí, kolik má dnes celé menší město.",
+        "image_prompt": "Fotorealistický snímek rekonstruovaných místností paláce v Knossu s barevnými freskami delfínů, 16:9"
+      },
+      "kartograf": {
+        "headline": "Písmo, které se rozluštilo až o tisíce let později",
+        "fact": "Minojské a mykénské písmo Lineární B se podařilo rozluštit až v roce 1952, tedy více než tři tisíce let po zániku civilizace, která ho používala.",
+        "source_url": "https://en.wikipedia.org/wiki/Minoan_civilization",
+        "source_quote": "Linear B ... was deciphered in 1952.",
+        "voice": "Zprávu psanou před třemi tisíci lety si lidstvo dokázalo přečíst až v minulém století.",
+        "image_prompt": "Fotorealistický snímek staré hliněné destičky s nápisem v Lineárním písmu B, archeologické muzeum, detailní záběr, 16:9"
+      }
+    }
+  }
+]

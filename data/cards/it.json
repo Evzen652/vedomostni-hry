@@ -1,0 +1,859 @@
+[
+  {
+    "id": "it-mista-benatky",
+    "country": "Itálie",
+    "section": "Místa",
+    "topic": "Benátky",
+    "headline": "Město, které stojí na dřevěných kůlech v laguně",
+    "fact": "Benátky leží na desítkách ostrovů uprostřed mělké laguny a jednotlivé čtvrti propojuje přes 400 kamenných mostů.",
+    "source_url": "https://cs.wikipedia.org/wiki/Ben%C3%A1tky",
+    "source_quote": "Ve městě je překonává přes 400 kamenných mostů",
+    "voice": "Auto tu nikde nenajdeš, zato loď potkáš stejně běžně jako jinde kolo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Venice canals at golden hour, gondolas floating past historic palazzos, Rialto Bridge in the distance, warm natural light, no text, 16:9",
+    "ll": [12.3155, 45.4408],
+    "levels": {
+      "cestovatel": {
+        "headline": "Město, které se pomalu potápí",
+        "fact": "Benátky se dlouhodobě propadají přibližně o 1 až 2 milimetry ročně, hlavně kvůli odčerpávání spodní vody a přirozenému sedání půdy laguny.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ben%C3%A1tky",
+        "source_quote": "Benátky se „potápějí“ o 1–2 milimetrů za rok.",
+        "voice": "Turisté fotí paláce nad hladinou, aniž by tušili, že scéna pod nimi se pomalu sune dolů.",
+        "image_prompt": "Photorealistic close-up of a weathered Venetian palazzo foundation meeting canal water, visible waterline stains on ancient stone, soft morning light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Bažina, která se stala nedobytnou pevností",
+        "fact": "Benátky vznikly podle tradice, když obyvatelé pevniny uprchli před nájezdy barbarských kmenů doprostřed bažinaté laguny — místo, které by si jinde nikdo nevybral, se tak proměnilo v přirozeně chráněné sídlo.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ben%C3%A1tky",
+        "voice": "Bažinu, kterou by jinde každý obcházel, si obyvatelé vybrali schválně — kvůli nepřístupnosti.",
+        "image_prompt": "Photorealistic aerial view of Venice lagoon showing the city's islands surrounded by shallow marshy water and sandbanks, overcast diffused light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-mista-cinque-terre",
+    "country": "Itálie",
+    "section": "Místa",
+    "topic": "Cinque Terre",
+    "headline": "Pět vesnic přilepených na útesech nad mořem",
+    "fact": "Cinque Terre tvoří pět vesnic — Monterosso al Mare, Vernazza, Corniglia, Manarola a Riomaggiore — zavěšených na strmých útesech nad Ligurským mořem.",
+    "source_url": "https://en.wikipedia.org/wiki/Cinque_Terre",
+    "source_quote": "comprises five villages: Monterosso al Mare, Vernazzo, Corniglia, Manarola and Riomaggiore.",
+    "voice": "Silnice sem dorazila pozdě, a tak vesnice ještě pořád vypadají, jako by rostly přímo ze skály.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of colorful cliffside houses of Manarola village in Cinque Terre, Italy, terraced vineyards on steep slopes, Ligurian Sea below, sunset light, no text, 16:9",
+    "ll": [9.6833, 44.1345],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vinice vysekané do skály rukama",
+        "fact": "Po staletí si tu lidé budovali vinařské terasy až k útesům nad mořem — kamenné zídky, které dodnes ručně opravují místní vinaři, aby se svah nesesunul do vody.",
+        "source_url": "https://en.wikipedia.org/wiki/Cinque_Terre",
+        "source_quote": "Over the centuries, people have built terraces on the rugged, steep landscape right up to the cliffs that overlook the Ligurian Sea.",
+        "voice": "Než přijela technika, celou tu krajinu vytvarovaly jen ruce a motyka.",
+        "image_prompt": "Photorealistic close-up of stone terraced vineyards clinging to a steep coastal cliff in Cinque Terre, grapevines in rows, sea visible below, warm afternoon light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina chráněná jako celý národní park",
+        "fact": "Pobřeží, pět vesnic i okolní svahy dnes tvoří jeden celek chráněný jako národní park a od roku 1997 i jako památka UNESCO — ochrana se tu netýká jedné budovy, ale celé kulturní krajiny.",
+        "source_url": "https://en.wikipedia.org/wiki/Cinque_Terre",
+        "source_quote": "1997 (21st Session)",
+        "voice": "Nechrání se tu jedna stavba, ale celý způsob, jak lidé přežili na kolmém svahu.",
+        "image_prompt": "Photorealistic aerial panoramic view of the Cinque Terre coastline with all five villages visible along the rugged Ligurian coast, clear blue sea, midday light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-mista-matera",
+    "country": "Itálie",
+    "section": "Místa",
+    "topic": "Matera",
+    "headline": "Město vytesané do skály, kde se dodnes bydlí",
+    "fact": "Historické jeskynní čtvrti Matery zvané Sassi patří mezi nejstarší dosud obydlená sídla na světě — lidé tu žili v jeskyních vytesaných do vápence už od paleolitu.",
+    "source_url": "https://cs.wikipedia.org/wiki/Matera",
+    "source_quote": "Území Matery je osídleno již od paleolitu.",
+    "voice": "Sousedům by nikdo nezáviděl bydlení v jeskyni, dokud se ty stejné jeskyně nestaly turistickým hitem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Matera's Sassi district at dusk, ancient cave dwellings carved into limestone cliffs, warm lights glowing from windows, no text, 16:9",
+    "ll": [16.6113, 40.6664],
+    "levels": {
+      "cestovatel": {
+        "headline": "Čtvrť, kterou lidé kdysi museli opustit",
+        "fact": "Italská vláda mezi lety 1952 a 70. léty kvůli špatným hygienickým podmínkám přesídlila obyvatele Sassi do nových čtvrtí; teprve později se opuštěné jeskyně proměnily v hotely, restaurace a galerie.",
+        "source_url": "https://en.wikipedia.org/wiki/Matera",
+        "source_quote": "the government relocation of all their inhabitants to new housing in the Piano followed between 1952 and the 1970s.",
+        "voice": "Nejdřív odsud lidi vyhnali kvůli špíně, dnes se sem vracejí platit za nocleh v téže jeskyni.",
+        "image_prompt": "Photorealistic interior shot of a renovated cave dwelling in Matera turned into a boutique hotel room, exposed stone walls, warm ambient lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vesnice, ze které se stalo hlavní město kultury",
+        "fact": "V roce 2019 se Matera společně s bulharským Plovdivem stala Evropským hlavním městem kultury — ocenění, které jen o pár desetiletí dřív patřilo ke čtvrti považované za symbol chudoby.",
+        "source_url": "https://cs.wikipedia.org/wiki/Matera",
+        "source_quote": "V roce 2019 byla Matera (společně s bulharským Plovdivem) Evropským hlavním městem kultury.",
+        "voice": "Čtvrť, za kterou se lidé kdysi styděli, se nakonec proměnila ve vizitku celého regionu.",
+        "image_prompt": "Photorealistic aerial view of Matera's Sassi cave city carved into a ravine, river Gravina below, dramatic morning light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-priroda-dolomity",
+    "country": "Itálie",
+    "section": "Příroda",
+    "topic": "Dolomity",
+    "headline": "Hory, které kdysi byly korálovým mořem",
+    "fact": "Dolomity vznikly z usazenin druhohorního moře zvaného Tethys, které tu bylo před více než 180 miliony let — dnešní vápencové štíty jsou tak vlastně zkamenělé mořské dno.",
+    "source_url": "https://cs.wikipedia.org/wiki/Dolomity",
+    "source_quote": "druhohorního moře zvaného Tethys, které existovalo před více než 180 miliony lety",
+    "voice": "Lezeš po vrcholu hory a přitom šlapeš po dně dávno zmizelého moře.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of jagged Dolomite mountain peaks at sunrise, pink alpenglow on limestone rock faces, alpine meadow in foreground, no text, 16:9",
+    "ll": [11.8600, 46.4300],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejvyšší štít, na který vyjede lanovka",
+        "fact": "Nejvyšší dolomitský vrchol Marmolada měří 3343 metrů a část cesty na jeho ledovec zvládne turista i lanovkou, než musí dál pěšky nebo s horolezeckým vybavením.",
+        "source_url": "https://cs.wikipedia.org/wiki/Dolomity",
+        "source_quote": "Marmolada (3343 m)",
+        "voice": "Kus cesty na střechu Dolomit odjedeš vsedě, zbytek si musíš odchodit sám.",
+        "image_prompt": "Photorealistic close-up of Marmolada glacier and peak in the Dolomites, snow and ice on rugged rock, cable car station visible in distance, clear sky, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina zapsaná kvůli své unikátní geologii",
+        "fact": "Dolomity byly v roce 2009 zapsané na seznam světového dědictví UNESCO právě kvůli neobvyklé geologii — světlý dolomitický vápenec, který horám dává charakteristickou barvu, vznikl přeměnou původního vápence obohaceného hořčíkem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Dolomity",
+        "source_quote": "Dolomity byly zapsány v roce 2009 na seznam světového dědictví UNESCO",
+        "voice": "Za tou nápadnou růžovou barvou hor nestojí západ slunce, ale samotné složení kamene.",
+        "image_prompt": "Photorealistic aerial panoramic view of the Dolomite mountain range showing pale limestone peaks and green valleys, dramatic clouds, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-priroda-etna",
+    "country": "Itálie",
+    "section": "Příroda",
+    "topic": "Etna",
+    "headline": "Sopka, která nikdy pořádně nespí",
+    "fact": "Etna na Sicílii je s výškou přes 3300 metrů nejvyšší a zároveň nejaktivnější sopka v Evropě — jen v roce 2001 zaznamenala hned 16 samostatných erupcí.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Etna",
+    "source_quote": "Europe's most active volcano ... as many as 16 eruptions taking place in 2001",
+    "voice": "Sousední vesnice si na kouř z kráteru zvykly natolik, že si ho skoro nevšímají.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Mount Etna erupting at night, glowing lava fountain and ash plume against dark sky, Sicilian landscape silhouette below, no text, 16:9",
+    "ll": [14.9986, 37.7510],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vinice rostoucí přímo na sopečné půdě",
+        "fact": "Na úbočích Etny vysoko nad mořem pěstují místní vinaři víno přímo v černé sopečné půdě obohacené minerály z předchozích erupcí — sklizeň tu probíhá jen kousek od aktivního kráteru.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Etna",
+        "voice": "Réva tu roste kousek od místa, které kdykoli může znovu chrlit lávu.",
+        "image_prompt": "Photorealistic close-up of vineyard rows growing in dark volcanic soil on the slopes of Mount Etna, the volcano's summit visible in the background, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sopka zapsaná mezi světové dědictví",
+        "fact": "Etna byla v roce 2013 zapsána na seznam světového dědictví UNESCO — ocenění nezískala navzdory své ničivé síle, ale kvůli neobvykle nepřetržité sopečné aktivitě, kterou vědci sledují už staletí.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Etna",
+        "source_quote": "In June 2013, it was added to the list of UNESCO World Heritage Sites.",
+        "voice": "Něco, co jinde považují za katastrofu, tu vědcům slouží jako otevřená učebnice geologie.",
+        "image_prompt": "Photorealistic aerial view of Mount Etna's summit craters with steam venting, snow-capped slopes, Sicilian coastline visible in the far distance, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-priroda-gardske-jezero",
+    "country": "Itálie",
+    "section": "Příroda",
+    "topic": "Gardské jezero",
+    "headline": "Největší italské jezero na úpatí Alp",
+    "fact": "Gardské jezero s rozlohou necelých 370 km² je největším jezerem v Itálii a jeho severní část zasahuje až do alpských výběžků.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Garda",
+    "source_quote": "Surface area: 369.98 km2 ... the largest lake in Italy",
+    "voice": "Na jižním konci si připadáš jako u moře, na severním už tě obklopují hory.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Lake Garda's northern shore with steep Alpine mountains rising directly from the water, small lakeside town visible, clear afternoon light, no text, 16:9",
+    "ll": [10.6500, 45.6000],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jezero hluboké jako mnohapatrová budova pod hladinou",
+        "fact": "V nejhlubším místě sahá Gardské jezero do 346 metrů pod hladinu, přestože jeho průměrná hloubka je jen kolem 136 metrů.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Garda",
+        "source_quote": "Maximum depth is 346 m ... average depth of 136 m",
+        "voice": "Klidná hladina na povrchu vůbec neprozradí, jak hluboko pod loďkami vlastně je.",
+        "image_prompt": "Photorealistic close-up of clear turquoise water of Lake Garda with a small boat, mountains reflected on the surface, bright daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jezero na hranici tří krajin",
+        "fact": "Gardské jezero leží na styku tří odlišných italských regionů — Lombardie, Benátska a Trentina — a jeho protáhlý tvar kopíruje starou ledovcovou dolinu vyhloubenou během dob ledových.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Garda",
+        "voice": "Tři různé kraje se tu dělí o jedno jediné jezero, každý jen o kousek pobřeží.",
+        "image_prompt": "Photorealistic aerial panoramic view of the elongated shape of Lake Garda surrounded by varied landscapes, mountains in the north, gentle hills in the south, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-lide-leonardo-da-vinci",
+    "country": "Itálie",
+    "section": "Lidé",
+    "topic": "Leonardo da Vinci",
+    "headline": "Malíř, který si poznámky psal pozpátku",
+    "fact": "Leonardo da Vinci si své osobní poznámky často zapisoval zrcadlovým písmem zprava doleva, takže je lze přečíst jen pomocí zrcadla.",
+    "source_url": "https://cs.wikipedia.org/wiki/Zrcadlov%C3%A9_p%C3%ADsmo",
+    "source_quote": "Slova jsou psána zrcadlově, písmena jsou obrácena zády k sobě a kříží stránku zprava doleva.",
+    "voice": "Kdo chtěl nakouknout do jeho poznámek, potřeboval víc než jen umět číst — potřeboval zrcadlo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of an aged Renaissance notebook page filled with mirror-written script and technical sketches, quill pen resting beside it, warm candlelight, no text overlay, 16:9",
+    "ll": [10.9257, 43.7833],
+    "levels": {
+      "cestovatel": {
+        "headline": "Portrét, na kterém pracoval skoro celý zbytek života",
+        "fact": "Leonardo začal Monu Lisu malovat kolem roku 1503 a v drobných úpravách na ní pracoval prakticky až do konce života.",
+        "source_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+        "source_quote": "Leonardo had begun working on a portrait of Lisa del Giocondo, the model for the Mona Lisa, which he would continue working on until his later years.",
+        "voice": "Jiní malíři obraz dokončí a jdou dál, on se ke stejnému plátnu vracel roky.",
+        "image_prompt": "Photorealistic reenactment scene of a Renaissance painter's studio with an easel holding a half-finished female portrait, brushes and pigments on a wooden table, soft window light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Génius, který dožil ve francouzském zámku",
+        "fact": "Poslední roky života strávil Leonardo na pozvání francouzského krále Františka I. na zámku Clos Lucé nedaleko Amboise, kde v roce 1519 zemřel — italský umělec tak svou kariéru uzavřel v úplně jiné zemi, než se narodil.",
+        "source_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+        "source_quote": "Leonardo died at Clos Lucé on 2 May 1519 at the age of 67, possibly of a stroke.",
+        "voice": "Narodil se v toskánském kopcovitém kraji a zemřel v zámku daleko na severu, u řeky Loiry.",
+        "image_prompt": "Photorealistic wide shot of the Château du Clos Lucé in Amboise, France, Renaissance-era manor house surrounded by gardens, soft afternoon light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-lide-galileo-galilei",
+    "country": "Itálie",
+    "section": "Lidé",
+    "topic": "Galileo Galilei",
+    "headline": "Muž, který dalekohledem objevil čtyři nové měsíce",
+    "fact": "Galileo Galilei 7. ledna 1610 pomocí vlastního dalekohledu objevil čtyři největší měsíce Jupiteru, což byl jeden z prvních přímých důkazů, že ne všechna nebeská tělesa obíhají kolem Země.",
+    "source_url": "https://cs.wikipedia.org/wiki/Galileo_Galilei",
+    "source_quote": "7. ledna 1610 objevil Galileo Jupiterovy čtyři největší satelity",
+    "voice": "Ukázal na oblohu vlastnoručně vylepšeným dalekohledem, a najednou měla Země konkurenci.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic reenactment of a 17th-century astronomer observing the night sky through an early brass telescope on a rooftop terrace, stars and Jupiter visible above, no text, 16:9",
+    "ll": [10.4017, 43.7228],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dalekohled, který sám vylepšil",
+        "fact": "Galileo dalekohled sám nevynalezl, ale poté, co se v roce 1608 doslechl o nizozemském vynálezu, sestrojil vlastní přístroj s přibližně osminásobným přiblížením a použil ho k pozorování oblohy dřív než kdokoli jiný.",
+        "source_url": "https://cs.wikipedia.org/wiki/Galileo_Galilei",
+        "source_quote": "Inspirován náčrtkovými popisy dalekohledů vynalezených v Nizozemí v roce 1608, vyrobil Galileo jeden přibližující 8×",
+        "voice": "Nápad si nevymyslel sám, ale namířil ho na hvězdy místo na lodě na obzoru.",
+        "image_prompt": "Photorealistic close-up of a replica 17th-century Galilean telescope made of brass and leather, resting on a wooden table, dramatic side lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vědec, kterého církev odsoudila a o staletí později omluvila",
+        "fact": "Inkvizice Galilea v roce 1633 odsoudila k domácímu vězení za podporu heliocentrického modelu vesmíru; církev jeho odsouzení fakticky zrušila až omluvou papeže Jana Pavla II. v roce 1992.",
+        "source_url": "https://cs.wikipedia.org/wiki/Galileo_Galilei",
+        "source_quote": "Dne 22. června 1633 inkvizice konala závěrečné slyšení Galilea",
+        "voice": "Mezi rozsudkem a omluvou uplynulo skoro čtyři sta let — vesmír se za tu dobu ani nenamáhal změnit názor.",
+        "image_prompt": "Photorealistic reenactment of a 17th-century inquisition tribunal chamber, elderly scientist standing before robed judges, dim dramatic lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-lide-maria-montessori",
+    "country": "Itálie",
+    "section": "Lidé",
+    "topic": "Maria Montessori",
+    "headline": "Jedna z prvních lékařek v Itálii, co pak změnila školy",
+    "fact": "Maria Montessori v roce 1896 vystudovala jako jedna z prvních žen v Itálii medicínu a o jedenáct let později otevřela v Římě svou první školku Casa dei Bambini.",
+    "source_url": "https://en.wikipedia.org/wiki/Maria_Montessori",
+    "source_quote": "becoming one of the first women to attend medical school in Italy; she graduated with honors in 1896.",
+    "voice": "Napřed jí nechtěli pustit ke studiu medicíny, pak podle jejích nápadů začaly fungovat školky po celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic reenactment of an early 20th-century Montessori classroom in Rome, children working independently with wooden educational materials, warm natural light through tall windows, no text, 16:9",
+    "ll": [13.3167, 43.6167],
+    "levels": {
+      "cestovatel": {
+        "headline": "Školka, kam mohly i chudé děti",
+        "fact": "První Casa dei Bambini otevřela 6. ledna 1907 v chudé římské čtvrti a zapsalo se do ní přes padesát dětí ve věku od dvou do sedmi let.",
+        "source_url": "https://en.wikipedia.org/wiki/Maria_Montessori",
+        "source_quote": "the first Casa opened on 6 January 1907, enrolling 50 or 60 children between the ages of two or three and six or seven.",
+        "voice": "Nezaložila ji pro bohaté rodiny s vychovatelkami, ale pro děti z chudé čtvrti, které jinak neměly kam jít.",
+        "image_prompt": "Photorealistic historical-style photo of a modest early 1900s classroom in a poor Roman neighborhood, simple wooden furniture sized for small children, soft daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Metoda, co se za pár let rozšířila po celém světě",
+        "fact": "Montessori školy vznikly už v roce 1912 v Paříži a dalších západoevropských městech a plánovaly se i v Argentině, Austrálii, Číně, Indii, Japonsku, Mexiku či USA — pedagogický model z jedné římské čtvrti se tak během necelé dekády rozšířil na několik kontinentů.",
+        "source_url": "https://en.wikipedia.org/wiki/Maria_Montessori",
+        "source_quote": "By 1912, Montessori schools had opened in Paris and many other Western European cities, and were planned for Argentina, Australia, China, India, Japan, Korea, Mexico, Switzerland, Syria, the US and New Zealand.",
+        "voice": "Nápad z jedné chudé římské uličky si za pár let vyzkoušely školky na několika kontinentech najednou.",
+        "image_prompt": "Photorealistic world map style scene with vintage schoolhouse illustrations glowing across different continents, warm sepia tones, artistic educational theme, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-kultura-karneval-benatky",
+    "country": "Itálie",
+    "section": "Kultura & tradice",
+    "topic": "Karneval v Benátkách",
+    "headline": "Svátek, kdy se za maskou schoval i sluha, i pán",
+    "fact": "Benátský karneval s maskami je doložený už ze 13. století a masky lidem umožňovaly na čas obejít přísné dobové zákony, které jinak přesně určovaly, kdo smí co nosit podle svého společenského postavení.",
+    "source_url": "https://en.wikipedia.org/wiki/Carnival_of_Venice",
+    "source_quote": "The first documented sources mentioning the use of masks in Venice can be found as far back as the 13th century.",
+    "voice": "Pod stejnou maskou se najednou nepoznalo, jestli jde kolem šlechtic, nebo obyčejný řemeslník.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Venice Carnival, people in ornate historical masks and colorful costumes on a stone bridge, St Mark's Square in the background, festive atmosphere, no text, 16:9",
+    "ll": [12.3388, 45.4386],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zákaz, který masky na skoro dvě stě let umlčel",
+        "fact": "Rakouský císař František II. karneval v roce 1797 úplně zakázal a nošení masek bylo dlouho zapovězené; oficiálně ho italský stát obnovil až v roce 1979.",
+        "source_url": "https://en.wikipedia.org/wiki/Carnival_of_Venice",
+        "source_quote": "under the rule of Emperor Francis II, the festival was outlawed entirely in 1797 and the use of masks became strictly forbidden.",
+        "voice": "Skoro dvě století musely masky zůstat schované v truhlách, než se zase směly ukázat na ulici.",
+        "image_prompt": "Photorealistic close-up of an ornate antique Venetian carnival mask resting inside an old wooden chest, dust and soft candlelight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Karneval, co dnes přiláká davy z celého světa",
+        "fact": "Obnovený karneval dnes každoročně přiláká do Benátek zhruba tři miliony návštěvníků — počet, který několikanásobně převyšuje počet stálých obyvatel celého historického centra.",
+        "source_url": "https://en.wikipedia.org/wiki/Carnival_of_Venice",
+        "source_quote": "The revived carnival now attracts approximately 3 million visitors annually.",
+        "voice": "Na pár týdnů v roce připadá na jednoho místního klidně desítka turistů v masce.",
+        "image_prompt": "Photorealistic aerial view of crowded Venice Carnival festivities in Piazza San Marco, colorful costumed crowds, historic architecture surrounding the square, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-kultura-palio-di-siena",
+    "country": "Itálie",
+    "section": "Kultura & tradice",
+    "topic": "Palio di Siena",
+    "headline": "Koňský závod, který trvá necelé dvě minuty",
+    "fact": "Palio di Siena je koňský dostih kolem hlavního náměstí Piazza del Campo, který i s divokým reji koní obvykle trvá necelých 90 sekund.",
+    "source_url": "https://en.wikipedia.org/wiki/Palio_di_Siena",
+    "source_quote": "The race itself, in which the jockeys ride bareback, circles the Piazza del Campo...and usually lasts no more than 90 seconds.",
+    "voice": "Na přípravu se čeká celý den, samotný závod je pryč dřív, než stihneš pořádně zatajit dech.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Palio di Siena horse race in full gallop around Piazza del Campo, packed crowds, medieval buildings surrounding the square, dust in the air, daylight, no text, 16:9",
+    "ll": [11.3305, 43.3188],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kůň může vyhrát i bez jezdce v sedle",
+        "fact": "Podle pravidel Palia nemusí mít vítězný kůň v cíli vůbec jezdce — pokud shodí jezdce cestou, ale doběhne v čele, závod vyhraje i tak.",
+        "source_url": "https://en.wikipedia.org/wiki/Palio_di_Siena",
+        "source_quote": "A horse is not required to have a rider to win the race",
+        "voice": "Jezdec může skončit v prachu na dlažbě, a kůň si přesto odnese slávu vítěze.",
+        "image_prompt": "Photorealistic action shot of a riderless horse galloping alone across Piazza del Campo during the Palio race, motion blur, cheering crowd blurred in background, 16:9"
+      },
+      "kartograf": {
+        "headline": "Desítka čtvrtí, co soupeří jako malá města",
+        "fact": "Ze sedmnácti sienských městských čtvrtí zvaných contrade se každého závodu účastní jen deset — soupeření mezi nimi je tak silné, že si contrade dodnes udržují vlastní kostel, muzeum i fanouškovskou identitu jako samostatná malá města uvnitř jednoho.",
+        "source_url": "https://en.wikipedia.org/wiki/Palio_di_Siena",
+        "source_quote": "Of seventeen wards, or contrade, in the comune of Siena, only ten compete in each Palio.",
+        "voice": "Sousedící ulice tu dokážou soupeřit tak vážně, jako by šlo o odvěké rivalské státy.",
+        "image_prompt": "Photorealistic aerial view of Siena's historic quarters with distinct medieval architecture, Piazza del Campo visible at the center, warm afternoon light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-kultura-ferragosto",
+    "country": "Itálie",
+    "section": "Kultura & tradice",
+    "topic": "Ferragosto",
+    "headline": "Letní svátek, který založil římský císař",
+    "fact": "Svátek Ferragosto zavedl římský císař Augustus už roku 18 př. n. l. jako Feriae Augusti — dny odpočinku po namáhavých zemědělských pracích, dnes ho Italové slaví 15. srpna.",
+    "source_url": "https://en.wikipedia.org/wiki/Ferragosto",
+    "source_quote": "The Feriae Augusti ('Festivals [Holidays] of the Emperor Augustus') were introduced by the Emperor Augustus in 18 BCE.",
+    "voice": "Císař vyhlásil pár dní volna pro sedláky, a Italové si to volno drží dodnes, jen mu teď říkají jinak.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of an Italian family picnic on a sunny beach in mid-August, umbrellas and towels along the Mediterranean coastline, festive summer atmosphere, no text, 16:9",
+    "ll": [12.4964, 41.9028],
+    "levels": {
+      "cestovatel": {
+        "headline": "Den, kdy zaměstnanci dostávali dárek od šéfa",
+        "fact": "Součástí starého zvyku bylo, že zaměstnanci o svátku pozdravili své zaměstnavatele a dostali od nich peněžitý dárek — v renesančních papežských státech se z tohoto zvyku stala dokonce povinná tradice.",
+        "source_url": "https://en.wikipedia.org/wiki/Ferragosto",
+        "source_quote": "Workers would greet their employers and receive monetary gifts in return—a custom that became compulsory law throughout the Papal States during the Renaissance.",
+        "voice": "Kdysi šlo o gesto vděku od šéfa, dnes je z toho hlavně důvod zavřít obchod a jet k moři.",
+        "image_prompt": "Photorealistic historical reenactment scene of Renaissance-era workers greeting an employer in a papal state courtyard, warm late-summer light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pohanský svátek, co si ho přisvojila církev",
+        "fact": "Církev později přesunula oslavu z 1. na 15. srpna a spojila ji se svátkem Nanebevzetí Panny Marie — pohanský zemědělský svátek tak dostal nový křesťanský rámec, ale termín letního volna zůstal zachovaný.",
+        "source_url": "https://en.wikipedia.org/wiki/Ferragosto",
+        "source_quote": "The holiday was relocated from August 1st to August 15th during the early medieval period. The Church aligned it with the Assumption of Mary to integrate the pre-existing secular celebration into the Christian calendar.",
+        "voice": "Datum oslavy církev přesunula, ale chuť Italů na letní volno zůstala stejná jako za časů Říma.",
+        "image_prompt": "Photorealistic wide shot of a small Italian hill town square decorated for a religious August festival procession, warm evening light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-umeni-david",
+    "country": "Itálie",
+    "section": "Umění",
+    "topic": "Michelangelův David",
+    "headline": "Socha z mramorového bloku, který jiní odmítli",
+    "fact": "Michelangelo vytesal sochu Davida mezi lety 1501 a 1504 z bloku mramoru, kterému se říkalo „il gigante“ a se kterým si předtím nevěděli rady jiní sochaři.",
+    "source_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+    "source_quote": "created from 1501 to 1504 by Michelangelo",
+    "voice": "Kámen, který ostatní odložili jako nepoužitelný, se v jeho rukou proměnil v symbol renesance.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of Michelangelo's David sculpture in the Galleria dell'Accademia, detailed marble musculature and facial expression, soft gallery lighting, no text, 16:9",
+    "ll": [11.2558, 43.7696],
+    "levels": {
+      "cestovatel": {
+        "headline": "Socha vysoká přes pět metrů",
+        "fact": "David měří i s podstavcem přes pět metrů — se svou výškou 5,17 metru patřil v době vzniku k prvním kolosálním mramorovým sochám celé renesance.",
+        "source_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+        "source_quote": "With a height of 5.17 metres (17 ft 0 in), the David was not only the first colossal marble statue made in the High Renaissance",
+        "voice": "Stoupneš si vedle něj a najednou si připadáš jako malé dítě vedle dospělého.",
+        "image_prompt": "Photorealistic wide shot showing the full scale of Michelangelo's David statue with visitors standing nearby for size comparison, museum hall setting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Socha, co se přestěhovala z náměstí do muzea",
+        "fact": "David původně stál přímo na florentském náměstí Piazza della Signoria u vchodu do radnice; do galerie Accademia ho kvůli ochraně před počasím přestěhovali až v roce 1873, na náměstí dnes stojí jen jeho kopie.",
+        "source_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+        "source_quote": "In 1873, the statue was moved to the Galleria dell'Accademia, Florence.",
+        "voice": "Originál dnes hlídá střecha muzea, náměstí si musí vystačit s pouhou napodobeninou.",
+        "image_prompt": "Photorealistic wide shot of Piazza della Signoria in Florence with the replica of David statue in front of the historic town hall, tourists walking by, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-umeni-giotto-assisi",
+    "country": "Itálie",
+    "section": "Umění",
+    "topic": "Giottovy fresky v Assisi",
+    "headline": "Freska, co dala malbě nový, lidský výraz",
+    "fact": "V bazilice svatého Františka v Assisi, jejíž stavba začala roku 1228, se nachází cyklus 28 fresek připisovaných mladému Giottovi — díla, která patří k první opravdu realistické malbě evropského umění.",
+    "source_url": "https://en.wikipedia.org/wiki/Basilica_of_San_Francesco_d%27Assisi",
+    "source_quote": "the most important decorations are the series of 28 frescoes ascribed to the young Giotto along the lower part of the nave.",
+    "voice": "Postavy na freskách najednou vypadají jako živí lidé, ne jako ploché ikony.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide interior shot of the Basilica of San Francesco d'Assisi, medieval frescoes covering the nave walls, soft light streaming through windows, no text, 16:9",
+    "ll": [12.6193, 43.0707],
+    "levels": {
+      "cestovatel": {
+        "headline": "Fresky, které poškodilo zemětřesení",
+        "fact": "Zemětřesení v roce 1997 poškodilo horní baziliku v Assisi natolik, že se části klenby s freskami zřítily úplně — restaurátoři museli poškozené úseky později skládat z tisíců drobných úlomků.",
+        "source_url": "https://en.wikipedia.org/wiki/Basilica_of_San_Francesco_d%27Assisi",
+        "source_quote": "Much of the cycle of frescoes of the life of Saint Francis by Giotto in the Upper Church of the Basilica were slightly damaged whereas those of the sections of the vault which collapsed were almost entirely destroyed.",
+        "voice": "Co malíř skládal tahy štětce, restaurátoři museli o staletí později skládat po kouscích ze střepů.",
+        "image_prompt": "Photorealistic close-up of restorers carefully reassembling fragments of a damaged medieval fresco, conservation tools and pieces laid out on a table, focused lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Klášter zapsaný jako památka UNESCO",
+        "fact": "Bazilika a přilehlý klášterní komplex v Assisi jsou od roku 2000 na seznamu světového dědictví UNESCO — ochranu tu nezískala jen stavba, ale i celý soubor fresek, který znamenal zlom v dějinách evropského malířství.",
+        "source_url": "https://en.wikipedia.org/wiki/Basilica_of_San_Francesco_d%27Assisi",
+        "source_quote": "It has been a UNESCO World Heritage Site since 2000.",
+        "voice": "Chrání se tu vlastně okamžik, kdy se evropská malba rozhodla vypadat jako skutečný svět.",
+        "image_prompt": "Photorealistic aerial view of the Basilica of San Francesco d'Assisi perched on the hillside of Assisi, surrounding Umbrian countryside, warm evening light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-umeni-la-scala",
+    "country": "Itálie",
+    "section": "Umění",
+    "topic": "La Scala",
+    "headline": "Opera, kterou po bombardování postavili znovu",
+    "fact": "Milánská opera La Scala byla otevřena 3. srpna 1778 a po těžkém poškození bombardováním za druhé světové války ji znovu otevřeli už v roce 1946 slavnostním koncertem pod taktovkou Arthura Toscaniniho.",
+    "source_url": "https://en.wikipedia.org/wiki/La_Scala",
+    "source_quote": "The theatre was inaugurated on 3 August 1778 ... In 1943, during World War II, La Scala was severely damaged by bombing. It was rebuilt and reopened on 11 May 1946, with a memorable concert conducted by Arturo Toscanini",
+    "voice": "Bomby zbořily sál, ale hudba se do něj vrátila dřív, než se stihla celá Evropa vzpamatovat z války.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of La Scala opera house interior in Milan, ornate red and gold boxes, grand chandelier, empty stage lit softly, no text, 16:9",
+    "ll": [9.1900, 45.4669],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sál, kam se vejdou přes dva tisíce diváků",
+        "fact": "Hlediště La Scaly dnes pojme 2030 diváků rozesazených v několika patrech lóží obklopujících jeviště.",
+        "source_url": "https://en.wikipedia.org/wiki/La_Scala",
+        "source_quote": "current capacity as 2,030 seats",
+        "voice": "Zpěvák na jevišti musí naplnit hlasem sál, kam by se vešlo skoro celé menší městečko.",
+        "image_prompt": "Photorealistic close-up of the tiered boxes and ornate balconies inside La Scala opera house, red velvet seats, golden decoration, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Divadlo, kde měly premiéru opery hrané dodnes po celém světě",
+        "fact": "Na jevišti La Scaly měly premiéru opery jako Verdiho Otello, Falstaff nebo Pucciniho Madama Butterfly a Turandot — díla, která se od té doby hrají v operních domech na všech kontinentech.",
+        "source_url": "https://en.wikipedia.org/wiki/La_Scala",
+        "source_quote": "Verdi's Otello (1887) and Falstaff (1893) ... Puccini's Madama Butterfly (1904) and Turandot (1926)",
+        "voice": "Co tu poprvé zaznělo na jednom jevišti, dnes hrají orchestry o tisíce kilometrů dál.",
+        "image_prompt": "Photorealistic wide shot of the exterior facade of La Scala opera house in Milan at dusk, illuminated entrance, elegant architecture, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-sport-ferrari",
+    "country": "Itálie",
+    "section": "Sport",
+    "topic": "Ferrari ve Formuli 1",
+    "headline": "Tým, který závodí ve Formuli 1 už od úplného začátku",
+    "fact": "Stáj Scuderia Ferrari, kterou v roce 1929 založil Enzo Ferrari, závodí v mistrovství světa Formule 1 nepřetržitě od jeho úplně prvního ročníku v roce 1950 a je tak nejstarším dosud existujícím týmem šampionátu.",
+    "source_url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+    "source_quote": "Scuderia Ferrari was founded by Enzo Ferrari in 1929 ... It is the oldest surviving and most successful Formula One team, having competed in every World Championship since 1950.",
+    "voice": "Piloti, auta i pravidla se za tu dobu úplně proměnily, tahle stáj na startu zůstala pořád stejná.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of a red Ferrari Formula 1 car racing on a track at high speed, motion blur on background, sunny day, no text, 16:9",
+    "ll": [9.2811, 45.6156],
+    "levels": {
+      "cestovatel": {
+        "headline": "Domácí okruh, kam fanoušci jezdí v červené",
+        "fact": "Ferrari má svůj domácí závod na okruhu v Monze nedaleko Milána, kam se každý rok sjíždí takzvaní tifosi oblečení téměř výhradně do červené barvy týmu.",
+        "source_url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+        "voice": "Na tribunách tu splyneš s davem jedině tehdy, když si taky oblékneš něco červeného.",
+        "image_prompt": "Photorealistic wide shot of packed grandstands at Monza racetrack filled with fans wearing red Ferrari merchandise, race cars blurred on track, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rekordní počet titulů, který zatím nikdo nepřekonal",
+        "fact": "Ferrari drží rekord v počtu titulů konstruktérů ve Formuli 1 s šestnácti prvenstvími a jezdeckých titulů má patnáct, což z něj dodnes dělá nejúspěšnější stáj v historii šampionátu.",
+        "source_url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+        "source_quote": "Ferrari has a record 16 Constructors' Championships ... 15 Drivers' Championships won by nine different drivers",
+        "voice": "Jiné týmy přijdou a zase zmizí, tahle stáj sbírá tituly už skoro sto let.",
+        "image_prompt": "Photorealistic aerial view of a Formula 1 racetrack at Monza with red Ferrari cars leading the pack around a corner, blurred motion, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-sport-giro-ditalia",
+    "country": "Itálie",
+    "section": "Sport",
+    "topic": "Giro d'Italia",
+    "headline": "Závod, který vznikl kvůli prodeji novin",
+    "fact": "Giro d'Italia poprvé uspořádali v roce 1909, a to hlavně proto, aby si sportovní deník La Gazzetta dello Sport zajistil vyšší prodej výtisků.",
+    "source_url": "https://en.wikipedia.org/wiki/Giro_d%27Italia",
+    "source_quote": "The first race was organized in 1909 to increase sales of the newspaper La Gazzetta dello Sport.",
+    "voice": "Závod nevznikl z lásky ke sportu, ale proto, aby se lépe prodávaly noviny.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of a peloton of professional cyclists racing through the Italian countryside during the Giro d'Italia, rolling hills and vineyards in background, daylight, no text, 16:9",
+    "ll": [9.1900, 45.4669],
+    "levels": {
+      "cestovatel": {
+        "headline": "Růžový dres kvůli barvě novinového papíru",
+        "fact": "Vedoucí jezdec Gira obléká od roku 1931 růžový dres zvaný maglia rosa — barvu mu vybrali podle růžového papíru, na který se tiskly noviny pořádající závod.",
+        "source_url": "https://en.wikipedia.org/wiki/Giro_d%27Italia",
+        "source_quote": "The color pink was chosen as the magazine that created the Giro, La Gazzetta dello Sport, printed its newspapers on pink paper. The pink jersey was added to the race in the 1931 edition.",
+        "voice": "Barvu vítězného dresu neurčil žádný sportovní výbor, ale obyčejný novinový papír.",
+        "image_prompt": "Photorealistic close-up of a cyclist wearing the pink maglia rosa jersey crossing a finish line, crowd cheering blurred in background, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tři týdny napříč celou zemí",
+        "fact": "Giro d'Italia patří spolu s Tour de France a Vueltou k trojici týdenních takzvaných Grand Tours světové cyklistiky a jeho moderní ročníky obvykle zahrnují 21 etap během více než tří týdnů napříč rozmanitou italskou krajinou od Alp až po jih poloostrova.",
+        "source_url": "https://en.wikipedia.org/wiki/Giro_d%27Italia",
+        "source_quote": "the modern editions of the Giro d'Italia normally consist of 21 stages over a 23- or 24-day period that includes two or three rest days.",
+        "voice": "Za tři týdny projedou peletonem skoro celou různorodost Itálie, od zasněžených průsmyků po horké jižní silnice.",
+        "image_prompt": "Photorealistic aerial view of cyclists climbing a winding Alpine mountain pass road during the Giro d'Italia, dramatic peaks in the background, clear day, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-sport-fotbalova-reprezentace",
+    "country": "Itálie",
+    "section": "Sport",
+    "topic": "Fotbalová reprezentace Itálie",
+    "headline": "Modří, co čtyřikrát vyhráli mistrovství světa",
+    "fact": "Italská fotbalová reprezentace, přezdívaná Azzurri podle savojské modré barvy dresů, vyhrála mistrovství světa celkem čtyřikrát — v letech 1934, 1938, 1982 a 2006.",
+    "source_url": "https://en.wikipedia.org/wiki/Italy_national_football_team",
+    "source_quote": "The team is known as gli Azzurri (the Blues), because Savoy blue is the common colour of the national teams representing Italy.",
+    "voice": "Barvu dresu jim kdysi určila královská rodina, tituly si odpracovali sami.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Italian national football team celebrating on the pitch after winning a match, blue jerseys, stadium crowd cheering, evening floodlights, no text, 16:9",
+    "ll": [12.4547, 41.9339],
+    "levels": {
+      "cestovatel": {
+        "headline": "Série zápasů bez porážky, co vydržela roky",
+        "fact": "Mezi říjnem 2018 a zářím 2021 zůstala italská reprezentace neporažená ve 37 soutěžních zápasech v řadě — v té době šlo o nejdelší takovou sérii v historii mužského mezistátního fotbalu.",
+        "source_url": "https://en.wikipedia.org/wiki/Italy_national_football_team",
+        "source_quote": "Italy held the record of the longest unbeaten run in competitive men's international football matches (37), achieved between 10 October 2018 and 8 September 2021",
+        "voice": "Přes tři roky se soupeřům nepodařilo najít recept, jak je porazit.",
+        "image_prompt": "Photorealistic close-up of Italian football players in a huddle celebrating on the field, blue kits, stadium lights, evening atmosphere, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dva kontinentální tituly navíc k těm světovým",
+        "fact": "Kromě čtyř mistrovství světa vyhrála Itálie i dvě mistrovství Evropy, v letech 1968 a 2020 — už samotný počet velkých trofejí řadí zemi mezi nejúspěšnější fotbalové národy planety.",
+        "source_url": "https://en.wikipedia.org/wiki/Italy_national_football_team",
+        "source_quote": "Italy has also won two European Championships (1968, 2020).",
+        "voice": "Sbírka trofejí jedné země dokáže naplnit vitrínu, o jaké si jiné svazy můžou nechat jen zdát.",
+        "image_prompt": "Photorealistic wide shot of a football trophy cabinet display with World Cup and European Championship trophies, museum-style lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-jazyk-ciao",
+    "country": "Itálie",
+    "section": "Jazyk & slova",
+    "topic": "Slovo ciao",
+    "headline": "Pozdrav, který kdysi znamenal 'jsem tvůj otrok'",
+    "fact": "Italské 'ciao' vzniklo zkrácením benátské fráze 's-ciào vostro', která doslova znamenala 'jsem váš otrok' — zdvořilá fráze vyjadřující úctu se postupně proměnila v obyčejné neformální pozdravení.",
+    "source_url": "https://en.wikipedia.org/wiki/Ciao",
+    "source_quote": "s-ciào vostro ... (I am) your slave",
+    "voice": "Kdo dnes řekne ciao kamarádovi, netuší, že mu kdysi touhle větou nabízel vlastní poddanství.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic candid shot of two people greeting each other warmly on a Venice canal-side street, historic buildings and a gondola in background, soft afternoon light, no text, 16:9",
+    "ll": [12.3388, 45.4386],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, které vzniklo z 'otroka', ne z pozdravu",
+        "fact": "Benátské slovo pro otroka 's-ciàvo' pochází ze středověké latiny 'sclavus', jež původně označovala lidi slovanského původu, protože právě odtud pocházela v tehdejším Středomoří většina zotročených lidí.",
+        "source_url": "https://en.wikipedia.org/wiki/Ciao",
+        "source_quote": "The Venetian word for slave, s-ciào or s-ciàvo, comes from Medieval Latin sclavus",
+        "voice": "Slovo, které dnes znamená přátelské pozdravení, mělo na počátku úplně jiný, temný obsah.",
+        "image_prompt": "Photorealistic close-up of an antique Latin dictionary page with visible etymology entries, soft library lighting, no legible readable text emphasis, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z benátského dialektu do celého světa",
+        "fact": "Zkrácená podoba 'ciao' se z benátského dialektu rozšířila nejdřív do spisovné italštiny a odtud i do desítek dalších jazyků po celém světě — z lokálního pozdravu jedné lagunové republiky se stalo jedno z nejrozšířenějších slov na planetě.",
+        "source_url": "https://en.wikipedia.org/wiki/Ciao",
+        "source_quote": "the greeting was eventually shortened to ciào, lost its servile associations, and became an informal salutation used across all social classes in modern Italian.",
+        "voice": "Slovo z jedné lagunové republiky dnes rozumí lidé od Brazílie po Japonsko.",
+        "image_prompt": "Photorealistic wide shot of a world map illustration highlighted with light trails spreading outward from Venice across continents, warm artistic lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-jazyk-paparazzi",
+    "country": "Itálie",
+    "section": "Jazyk & slova",
+    "topic": "Slovo paparazzi",
+    "headline": "Fotograf z filmu, který dal jméno celé profesi",
+    "fact": "Slovo 'paparazzi' pochází z filmu Federica Felliniho Sladký život z roku 1960, kde postavu dotěrného fotografa pojmenovali Paparazzo.",
+    "source_url": "https://en.wikipedia.org/wiki/Paparazzi",
+    "source_quote": "a news photographer named Paparazzo (played by Walter Santesso)",
+    "voice": "Vymyslel ho scenárista pro jednu filmovou postavu, a svět si ho půjčil pro celé povolání.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic black-and-white style scene of a 1960s photographer with an old camera and flash chasing after a celebrity outside a Roman nightclub, dramatic street lighting, no text, 16:9",
+    "ll": [12.4823, 41.9038],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jméno inspirované majitelem restaurace z knihy",
+        "fact": "Podle scenáristy Ennia Flaiana měli s Fellinim jméno postavy najít náhodně v knize, kde na ně zapůsobilo jméno majitele restaurace Coriolana Paparazza.",
+        "source_url": "https://en.wikipedia.org/wiki/Paparazzi",
+        "source_quote": "either he or Fellini opened the book at random, saw the name of a restaurant owner, Coriolano Paparazzo",
+        "voice": "Jméno vzniklo skoro náhodou, listováním v cizí knize, a přesto dnes zná celý svět.",
+        "image_prompt": "Photorealistic close-up of an open vintage travel book on a wooden desk, warm reading lamp light, Italian countryside visible through window, no legible readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Bzučící hmyz, co dal vzniknout mezinárodnímu slovu",
+        "fact": "Fellini přirovnal jméno postavy k bzučícímu hmyzu, který poletuje a bodá — právě tahle metafora dotěrného fotografa vystihla natolik přesně, že se slovo 'paparazzi' rozšířilo do angličtiny i dalších jazyků už koncem 60. let.",
+        "source_url": "https://en.wikipedia.org/wiki/Paparazzi",
+        "source_quote": "By the late 1960s, the word, usually in the Italian plural form paparazzi, had entered English as a generic term for intrusive photographers.",
+        "voice": "Přirovnání k dotěrnému hmyzu se ukázalo tak trefné, že přežilo film o celé desítky let.",
+        "image_prompt": "Photorealistic wide shot of a crowd of photographers with cameras and flashes surrounding a celebrity car outside a European film premiere, evening lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-jazyk-hudebni-terminy",
+    "country": "Itálie",
+    "section": "Jazyk & slova",
+    "topic": "Italská hudební slova",
+    "headline": "Slova, kterým hudebníci rozumí na celém světě beze změny",
+    "fact": "Termíny jako allegro, forte, piano nebo opera pocházejí z italštiny a hudebníci po celém světě je používají v původním znění, protože většina nejvýznamnějších skladatelů renesance a baroka pocházela právě z Itálie.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_Italian_musical_terms_used_in_English",
+    "source_quote": "Many musical terms are in Italian because, in Europe, the vast majority of the most important early composers from the Renaissance to the Baroque period were Italian.",
+    "voice": "Orchestr v Japonsku i v Brazílii se řídí pokyny napsanými ve stejné italštině.",
+    "visual_type": "typographic",
+    "image_prompt": "Photorealistic close-up of handwritten sheet music with Italian tempo and dynamic markings like allegro and forte, quill pen and ink, warm light, no legible readable text emphasis, 16:9",
+    "ll": [9.1900, 45.4669],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, které řekne hráči, jak hlasitě hrát",
+        "fact": "Dynamická označení jako piano (tiše) a forte (hlasitě) najdeme vytištěná v notách skladeb všech možných národních škol — český, japonský i americký hudebník je čte stejně, protože se do jiných jazyků nepřekládají.",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_Italian_musical_terms_used_in_English",
+        "voice": "Notový zápis nezná hranice států, italská slova v něm platí všude stejně.",
+        "image_prompt": "Photorealistic close-up of a musician's hand pointing to dynamic markings on a page of orchestral sheet music, concert hall blurred in background, soft stage light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk jednoho oboru, co přežil staletí beze změny",
+        "fact": "Italská hudební terminologie se ustálila už v renesanci a baroku a od té doby ji hudební svět prakticky nezměnil — jde o jeden z mála příkladů, kdy si celý obor podržel jazyk jedné země napříč staletími a desítkami jiných národních kultur.",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_Italian_musical_terms_used_in_English",
+        "voice": "Jazyky se mění generaci od generace, ale předpis 'allegro' zůstává stejný už staletí.",
+        "image_prompt": "Photorealistic wide shot of a symphony orchestra rehearsal with conductor and musicians reading sheet music, concert hall interior, warm lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-jidlo-pizza-neapolska",
+    "country": "Itálie",
+    "section": "Jídlo",
+    "topic": "Neapolská pizza",
+    "headline": "Pizza s vlastními přesnými pravidly pečení",
+    "fact": "Pravá neapolská pizza se podle tradičních pravidel musí péct 60 až 90 sekund v dřevěné peci vyhřáté na 485 °C — jinak už podle zastánců tradice nejde o skutečnou pizzu napoletana.",
+    "source_url": "https://en.wikipedia.org/wiki/Neapolitan_pizza",
+    "source_quote": "The pizza must be baked for 60–90 seconds in a 485 °C (905 °F) wood-fired oven.",
+    "voice": "Rychlost pečení tu hlídají skoro jako závodní čas, ne jako obyčejný recept.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a Neapolitan pizza margherita baking inside a wood-fired oven, visible flames and charred crust edges, warm glow, no text, 16:9",
+    "ll": [14.2681, 40.8518],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jen pár surovin určuje, co smí na pravou margheritu",
+        "fact": "Tradiční recept povoluje na neapolskou pizzu jen rajčata San Marzano nebo pomodorini z Vesuvu a sýr mozzarella di bufala nebo fior di latte — jiné přísady tradiční předpis prostě nepřipouští.",
+        "source_url": "https://en.wikipedia.org/wiki/Neapolitan_pizza",
+        "source_quote": "The tomatoes are traditionally either San Marzano tomatoes or pomodorini del Piennolo del Vesuvio...and the cheese is traditionally mozzarella di bufala campana or fior di latte di Agerola.",
+        "voice": "Kuchař tu nemá na výběr ze stovky ingrediencí, jen z hrstky přesně daných surovin.",
+        "image_prompt": "Photorealistic overhead shot of fresh San Marzano tomatoes and buffalo mozzarella arranged on a wooden kitchen counter, natural daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řemeslo zapsané jako dědictví celého lidstva",
+        "fact": "UNESCO zapsalo umění neapolských pizzaiolů na seznam nehmotného kulturního dědictví lidstva v roce 2017 — ochranu tak nezískal recept samotný, ale dovednost a rituál přípravy, který se předává z generace na generaci.",
+        "source_url": "https://en.wikipedia.org/wiki/Neapolitan_pizza",
+        "source_quote": "Inscription 2017 (12th session of the Committee session)",
+        "voice": "Nechrání se tu jen chuť pizzy, ale i pohyby rukou, kterými ji pekař vytváří.",
+        "image_prompt": "Photorealistic wide shot of a Neapolitan pizzaiolo skillfully tossing pizza dough in a traditional pizzeria kitchen, flour dust in the air, warm interior lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-jidlo-parmigiano",
+    "country": "Itálie",
+    "section": "Jídlo",
+    "topic": "Parmazán (Parmigiano Reggiano)",
+    "headline": "Sýr, který smí zrát jen v pěti italských oblastech",
+    "fact": "Parmigiano Reggiano smí podle chráněného označení původu vyrábět jen v provinciích Parma, Reggio Emilia, Modena, částech Boloně a Mantovy — sýr vyrobený jinde se podle evropských pravidel nesmí tímto jménem vůbec nazývat.",
+    "source_url": "https://en.wikipedia.org/wiki/Parmigiano_Reggiano",
+    "source_quote": "Provinces of Parma, Reggio Emilia, Modena, Bologna (west of the River Reno) and Mantua (on the right/south bank of the River Po)",
+    "voice": "Stejný recept o kousek dál za hranicí kraje už nesmí nést tohle jméno.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of a whole wheel of Parmigiano Reggiano cheese being cracked open with traditional knives, crumbly texture visible, warm cellar lighting, no text, 16:9",
+    "ll": [10.3279, 44.8015],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sýr, co musí zrát nejméně rok",
+        "fact": "Parmazán musí zrát minimálně 12 měsíců, dražší varianty vecchio a stravecchio zrají dokonce 18 až 36 měsíců, než se vůbec smí prodávat pod svým jménem.",
+        "source_url": "https://en.wikipedia.org/wiki/Parmigiano_Reggiano",
+        "source_quote": "aged at least 12 months, with additional categories including Vecchio (18–24 months) and Stravecchio (24–36 months)",
+        "voice": "Než se první kousek dostane na talíř, čeká ve skladu déle, než trvá leckterá lidská proměna nálady.",
+        "image_prompt": "Photorealistic wide shot of rows of aging Parmigiano Reggiano cheese wheels stacked on wooden shelves in a traditional cellar, dim warm lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sýr, o kterém se psalo už ve středověké literatuře",
+        "fact": "Nejstarší písemná zmínka o parmazánu pochází z roku 1254 a o pár století později ho ve svém díle Dekameron zmínil i italský spisovatel Boccaccio.",
+        "source_url": "https://en.wikipedia.org/wiki/Parmigiano_Reggiano",
+        "source_quote": "The earliest written record of this cheese is from the year 1254, and it received literary praise when Boccaccio referenced it in his 14th-century work, the Decameron.",
+        "voice": "Recept, který dnes najdeš na každém stole, zmiňovala krásná literatura už před sedmi staletími.",
+        "image_prompt": "Photorealistic still-life scene of an old illuminated medieval manuscript book beside a wedge of aged parmesan cheese on a wooden table, soft candlelight, no legible readable text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-jidlo-gelato",
+    "country": "Itálie",
+    "section": "Jídlo",
+    "topic": "Gelato",
+    "headline": "Zmrzlina s méně tuku, ale intenzivnější chutí",
+    "fact": "Řemeslné italské gelato obsahuje jen 6 až 9 % tuku, tedy podstatně méně než běžná průmyslová zmrzlina, a zároveň se do něj při výrobě vmíchává mnohem méně vzduchu.",
+    "source_url": "https://en.wikipedia.org/wiki/Gelato",
+    "source_quote": "Artisanal gelato in Italy generally contains 6–9% butterfat, which is lower than other styles of frozen dessert.",
+    "voice": "Míň tuku, míň vzduchu, a přesto chuť, která je intenzivnější než u obyčejné zmrzliny.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of colorful gelato scoops arranged in a traditional Italian gelateria display case, creamy texture, soft shop lighting, no text, 16:9",
+    "ll": [11.2558, 43.7696],
+    "levels": {
+      "cestovatel": {
+        "headline": "Méně vzduchu znamená hutnější kopeček",
+        "fact": "Zatímco běžná zmrzlina může obsahovat kolem poloviny objemu vzduchu, gelato má typicky jen okolo 35 % vzduchu — proto působí hutněji a chuť v něm vynikne o to výrazněji.",
+        "source_url": "https://en.wikipedia.org/wiki/Gelato",
+        "source_quote": "typically contains 35% air",
+        "voice": "Kopeček vypadá stejně, ale v ústech je znatelně hutnější než klasická zmrzlina.",
+        "image_prompt": "Photorealistic close-up of a gelato scoop being served with a spatula, dense creamy texture visible, warm daylight through gelateria window, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Recept, co se zrodil na renesančním dvoře",
+        "fact": "Za vznikem gelata stojí podle části pramenů florentští renesanční kuchaři 16. století Cosimo Ruggeri a Bernardo Buontalenti, kteří recept předvedli přímo na dvoře Kateřiny Medicejské.",
+        "source_url": "https://en.wikipedia.org/wiki/Gelato",
+        "source_quote": "Cosimo Ruggeri and Bernardo Buontalenti were 16th-century contemporaries who are credited by some sources with the invention of gelato.",
+        "voice": "Dezert, který dnes koupíš na každém rohu, měl premiéru přímo u vznešeného dvora.",
+        "image_prompt": "Photorealistic reenactment scene of a Renaissance-era Florentine kitchen with ice and cream being prepared by hand, period costumes, warm candlelight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-historie-koloseum",
+    "country": "Itálie",
+    "section": "Historie",
+    "topic": "Koloseum",
+    "headline": "Aréna pro desetitisíce diváků",
+    "fact": "Koloseum v Římě stavěli mezi lety 70 a 80 n. l. a podle moderních odhadů se do něj vešlo kolem 50 tisíc diváků.",
+    "source_url": "https://cs.wikipedia.org/wiki/Koloseum",
+    "source_quote": "moderní odhady počítají s číslem kolem 50 000 ... dokončena v roce 80 n. l. za císaře Tita",
+    "voice": "Postavili ho za pouhých deset let, a diváky baví dodnes, i když teď jen jako muzeum.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Colosseum in Rome at golden hour, ancient stone arches and weathered walls, warm sunset light, no text, 16:9",
+    "ll": [12.4924, 41.8902],
+    "levels": {
+      "cestovatel": {
+        "headline": "Aréna, kde se bojovalo i se slony",
+        "fact": "V aréně Kolosea se odehrávaly nejen souboje gladiátorů, ale i zápasy se zvířaty a spektakulární popravy — mezi nimi se podle dochovaných pramenů objevila i poprava ušlapáním slony.",
+        "source_url": "https://cs.wikipedia.org/wiki/Koloseum",
+        "source_quote": "konaly se zde popravy (často spektakulární – například ušlapání slony) a zápasy se zvířaty",
+        "voice": "Diváci sem nechodili jen na souboje lidí, program dokázal být klidně ještě drsnější.",
+        "image_prompt": "Photorealistic reenactment scene inside the Colosseum arena floor with ancient Roman architecture, dramatic lighting evoking the gladiatorial combat era, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stavba, kterou přežily věky, ale ne beze ztrát",
+        "fact": "Opakovaná zemětřesení a po staletí trvající rozebírání kamene na jiné stavby proměnily Koloseum ve zříceninu — přesto z něj i po téměř dvou tisících letech zůstalo dost na to, aby se stalo jedním z nejnavštěvovanějších míst na světě.",
+        "source_url": "https://cs.wikipedia.org/wiki/Koloseum",
+        "source_quote": "Ačkoliv periodicky se opakující zemětřesení a zloději kamenů z něj učinili zříceninu, dnes se stavba stala skutečným symbolem císařského Říma.",
+        "voice": "Co zemětřesení a zloději kamene nedokázali zničit úplně, z toho se nakonec stal symbol celého impéria.",
+        "image_prompt": "Photorealistic aerial view of the Colosseum ruins showing the partially collapsed outer wall structure, surrounding Roman Forum ruins visible, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-historie-pompeje",
+    "country": "Itálie",
+    "section": "Historie",
+    "topic": "Pompeje",
+    "headline": "Město zasypané za pár hodin popelem",
+    "fact": "Při erupci Vesuvu roku 79 zasypával sopečný spad Pompeje rychlostí asi 15 centimetrů za hodinu — město i s ulicemi a domy tak zmizelo pod vrstvou popela během jediného dne.",
+    "source_url": "https://cs.wikipedia.org/wiki/Erupce_Vesuvu_(79)",
+    "source_quote": "Pompeje tak začal zasypávat sopečný spad rychlostí asi 15 cm/hod.",
+    "voice": "Ráno bylo město plné života, večer už ho čekalo přes tisíc a půl roku ticha pod popelem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the ancient ruins of Pompeii with Mount Vesuvius looming in the background, preserved stone streets and columns, dramatic sky, no text, 16:9",
+    "ll": [14.4849, 40.7509],
+    "levels": {
+      "cestovatel": {
+        "headline": "Odkryté město čekalo na objevení skoro sedmnáct století",
+        "fact": "Pompeje po zasypání popelem zmizely z povrchu a nikdo je znovu neobjevil až do roku 1748 — přes sedmnáct staletí tak zůstalo město prakticky nedotčené pod vrstvou sopečného materiálu.",
+        "source_url": "https://www.jenprocestovatele.cz/pompeje-zasypane-popelem-vyzkumy-mista-odhalily-verne-polohy-lidi-chvili-pred-smrti/",
+        "source_quote": "Znovu byly Pompeje objeveny až v roce 1748.",
+        "voice": "Skoro dva tisíce let leželo město schované pod nohama, aniž by o něm kdokoli tušil.",
+        "image_prompt": "Photorealistic close-up of archaeologists carefully excavating ash-covered ancient artifacts in Pompeii ruins, fine layers of volcanic ash visible, natural daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Katastrofa, co paradoxně uchovala každodenní život",
+        "fact": "Popel, který Pompeje pohřbil a zabil tisíce obyvatel, zároveň město po staletí konzervoval v neobvykle věrném stavu — dnes díky tomu badatelé vidí detaily antického každodenního života, jaké se jinde nedochovaly téměř nikde.",
+        "source_url": "https://cs.wikipedia.org/wiki/Erupce_Vesuvu_(79)",
+        "source_quote": "Podle odhadů mohlo zemřít 3,5 tisíc osob",
+        "voice": "Ta samá katastrofa, co vzala tisícům lidí život, badatelům paradoxně otevřela okno do jejich každodennosti.",
+        "image_prompt": "Photorealistic aerial view of the full excavated grid of ancient Pompeii streets and building foundations, Mount Vesuvius visible on the horizon, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "it-historie-sjednoceni-italie",
+    "country": "Itálie",
+    "section": "Historie",
+    "topic": "Sjednocení Itálie",
+    "headline": "Tisícovka dobrovolníků, co dobyla celý jih",
+    "fact": "Giuseppe Garibaldi se v roce 1860 vylodil na Sicílii se zhruba tisícovkou dobrovolníků v červených košilích a v takzvané výpravě tisíce postupně ovládl Sicílii i Neapol.",
+    "source_url": "https://www.dejepis.com/ucebnice/sjednoceni-italie/",
+    "source_quote": "Garibaldi v roce 1860 s tisícovkou dobrovolníků, tzv. červenými košilemi, se vylodil na Sicílii.",
+    "voice": "Necelá tisícovka mužů v červených košilích rozhodla o osudu celého jihu poloostrova.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical reenactment scene of Giuseppe Garibaldi's volunteers in red shirts landing on a Sicilian beach in 1860, period ships in the background, dramatic lighting, no text, 16:9",
+    "ll": [7.6869, 45.0703],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dobyvatel, který svá vítězství věnoval králi",
+        "fact": "Poté, co Garibaldi ovládl jih Itálie, se nakonec nechal přesvědčit, aby dobytá území předal králi Viktoru Emanuelovi II. — vojenský vůdce se tak vzdal vlastní moci ve prospěch jednotného státu.",
+        "source_url": "https://www.dejepis.com/ucebnice/sjednoceni-italie/",
+        "voice": "Vybojoval vítězství sám, a slávu i moc z něj pak bez odporu přenechal jinému.",
+        "image_prompt": "Photorealistic reenactment scene of a 19th-century handshake meeting between two Italian military and political leaders, historical uniforms, outdoor countryside setting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Království vyhlášené dřív, než bylo skutečně celé",
+        "fact": "Italské království vyhlásili 17. března 1861 s hlavním městem v Turíně, přestože sjednocení bylo skutečně dokončeno až o devět let později, kdy k novému státu v roce 1870 připojili i Řím.",
+        "source_url": "https://cs.wikipedia.org/wiki/It%C3%A1lie",
+        "source_quote": "Italské království bylo vyhlášeno 17. března 1861. ... Roku 1870 konečně dobyla i Řím a Papežský stát. Řím byl prohlášen vzápětí novým hlavním městem.",
+        "voice": "Na mapě stát existoval o devět let dřív, než dostal město, které dnes všichni považují za jeho přirozené srdce.",
+        "image_prompt": "Photorealistic wide shot of a 19th-century map of the Italian peninsula with the newly unified kingdom highlighted, antique paper texture, warm archival tone, no text, 16:9"
+      }
+    }
+  }
+]

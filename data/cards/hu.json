@@ -1,0 +1,846 @@
+[
+  {
+    "id": "hu-mista-budapest",
+    "country": "Maďarsko",
+    "section": "Místa",
+    "topic": "Budapešť",
+    "headline": "Dvě města spojená mosty přes Dunaj",
+    "fact": "Budapešť vznikla 1. ledna 1873 sloučením tří měst — Budína, Pešti a Starého Budína (Óbudy) — na obou březích Dunaje.",
+    "source_url": "https://cs.wikipedia.org/wiki/Budape%C5%A1%C5%A5",
+    "source_quote": "Pešť, Budín a Starý Budín byly sloučeny 1. ledna 1873.",
+    "voice": "Jméno města v sobě dodnes nese paměť tří různých měst.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek Budapešti při západu slunce, Řetězový most přes Dunaj, budova Parlamentu na břehu, přirozené světlo, bez textu, 16:9",
+    "ll": [19.0402, 47.4979],
+    "tags": ["regionalni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lázně nad tektonickým zlomem",
+        "fact": "Budapešť leží na tektonickém zlomu, odkud vyvěrá přes 125 termálních pramenů — voda z nich denně naplní desítky historických lázní jako Széchenyi či Gellért.",
+        "source_url": "https://en.wikipedia.org/wiki/Budapest",
+        "source_quote": "Some 125 springs produce 70 million litres (18 million US gallons) of thermal water a day, with temperatures ranging up to 58 °C.",
+        "voice": "Pod ulicemi bublá horká voda, na povrchu z ní vznikly celé lázeňské paláce.",
+        "image_prompt": "Fotorealistický snímek termálních lázní Széchenyi v Budapešti, venkovní bazén s párou nad vodou, neobarokní budova v pozadí, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hlavní město na řece jako spojnici",
+        "fact": "Poloha Budapešti na Dunaji z ní udělala přirozený dopravní a obchodní uzel střední Evropy — podobně jako u jiných hlavních měst ležících na velkých řekách.",
+        "source_url": "https://cs.wikipedia.org/wiki/Budape%C5%A1%C5%A5",
+        "voice": "Řeka, která městem protéká, z něj zároveň udělala křižovatku celého kontinentu.",
+        "image_prompt": "Fotorealistický letecký snímek Budapešti a zákrutu Dunaje, mosty spojující oba břehy, panorama města, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-mista-balaton",
+    "country": "Maďarsko",
+    "section": "Místa",
+    "topic": "Balaton",
+    "headline": "Maďarské moře uprostřed pevniny",
+    "fact": "Balaton má rozlohu 596 km² a je největším jezerem střední Evropy — Maďaři mu proto přezdívají „maďarské moře“.",
+    "source_url": "https://cs.wikipedia.org/wiki/Balaton",
+    "source_quote": "Má rozlohu 596 km², délku 78 km a maximální šířku 12 km. Je to největší jezero ve střední Evropě.",
+    "voice": "Jezero tak velké, že z jednoho břehu často není vidět na ten druhý.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek jezera Balaton při západu slunce, klidná vodní hladina, vinice na svazích v pozadí, přirozené světlo, bez textu, 16:9",
+    "ll": [18.0525, 46.9057],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pláže, co se rychle prohřejí",
+        "fact": "Jižní pobřeží Balatonu s mělkými vodami a pískovými plážemi láká rodiny s dětmi, hlavním letoviskem je tu město Siófok.",
+        "source_url": "https://cs.wikipedia.org/wiki/Balaton",
+        "voice": "Voda se tu ohřeje rychle — proto sem jezdí rodiny s malými dětmi z celého Maďarska.",
+        "image_prompt": "Fotorealistický snímek pláže na jižním pobřeží Balatonu u Siófoku, lehátka a slunečníky, mělká voda, letní den, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jezero v tektonické proláklině",
+        "fact": "Balaton vznikl v mělké tektonické proláklině mezi pahorkatinami Transdanubie — typický příklad rozlehlého, ale mělkého jezera nížinného typu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Balaton",
+        "voice": "Jezero je široké jako moře, ale hluboké sotva jako velký rybník.",
+        "image_prompt": "Fotorealistický letecký snímek jezera Balaton, protáhlý tvar jezera mezi kopci Transdanubie, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-mista-debrecin",
+    "country": "Maďarsko",
+    "section": "Místa",
+    "topic": "Debrecín",
+    "headline": "Kalvínský Řím východního Maďarska",
+    "fact": "Debrecín je s téměř 205 tisíci obyvateli druhé největší město Maďarska a odedávna centrum protestantské, kalvínské víry v zemi.",
+    "source_url": "https://www.radynacestu.cz/magazin/debrecin/",
+    "source_quote": "Debrecín je druhé největší město Maďarska, má téměř 205 tisíc obyvatel",
+    "voice": "Městu se přezdívá 'kalvinistický Řím' — jen místo bazilik tu stojí protestantské kostely.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek centra Debrecínu, Velký reformovaný kostel v klasicistním stylu, náměstí Kossuth, denní světlo, bez textu, 16:9",
+    "ll": [21.6273, 47.5316],
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kostel pro téměř dva tisíce lidí",
+        "fact": "Velký reformovaný kostel v Debrecíně, největší protestantský kostel v Maďarsku, pojme téměř 2000 návštěvníků.",
+        "source_url": "https://www.radynacestu.cz/magazin/velky-reformovany-kostel-v-debrecine/",
+        "source_quote": "Kostel zabírá plochu úctyhodných 1500 metrů čtverečních, na kterých se pohodlně usadí téměř 2000 návštěvníků.",
+        "voice": "Kostel bez zlacených věží — síla je tu v prostoru, ne ve zdobnosti.",
+        "image_prompt": "Fotorealistický interiér Velkého reformovaného kostela v Debrecíně, bílé strohé stěny, dřevěné lavice, vysoký strop, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Druhé město jako regionální centrum",
+        "fact": "Debrecín je hlavním centrem východního Maďarska a Velké uherské nížiny — podobnou roli druhých měst zastávají v jiných zemích regionální metropole vzdálené od hlavního města.",
+        "source_url": "https://cs.wikipedia.org/wiki/Debrec%C3%ADn",
+        "voice": "Zatímco Budapešť hledí k Dunaji, Debrecín patří k rovinaté pusztě na východě.",
+        "image_prompt": "Fotorealistický letecký pohled na Debrecín a okolní rovinatou krajinu Velké uherské nížiny, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-priroda-hortobagy",
+    "country": "Maďarsko",
+    "section": "Příroda",
+    "topic": "Hortobágy",
+    "headline": "Step, která přežila věky",
+    "fact": "Národní park Hortobágy chrání přes 800 km² stepní krajiny zvané puszta a od roku 1999 je zapsán na seznamu světového dědictví UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Hortob%C3%A1gy_National_Park",
+    "source_quote": "The site was inscribed on the UNESCO World Heritage List in 1999... Hortobágy is an 800 km2 national park in eastern Hungary.",
+    "voice": "Step, kterou lidé a jejich stáda formují tak dlouho, že příroda a hospodářství tu splynuly v jedno.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek stepní krajiny Hortobágy, rozlehlá rovina s pastvinami, stádo skotu na obzoru, večerní světlo, bez textu, 16:9",
+    "ll": [21.1500, 47.5833],
+    "tags": ["fyzicka-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přeludy nad rozpáleným povrchem",
+        "fact": "Nad rozpálenou rovinou Hortobágy se za horkých letních dnů objevuje optický přelud zvaný délibáb a pasou se tu typická plemena jako dlouhorohý stepní skot (szürke marha).",
+        "source_url": "https://en.wikipedia.org/wiki/Hortob%C3%A1gy_National_Park",
+        "voice": "Obzor se tu za horka rozpouští ve vodu, která ve skutečnosti není.",
+        "image_prompt": "Fotorealistický snímek maďarského stepního skotu (szürke marha) s dlouhými rohy na pastvině Hortobágy, rozlehlá rovina v pozadí, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina formovaná pastevectvím",
+        "fact": "Hortobágy je příkladem kulturní krajiny, kterou po tisíciletí utvářelo extenzivní pastevectví, nikoli zemědělství s pevnými poli — proto tu zůstala zachovaná otevřená step.",
+        "source_url": "https://whc.unesco.org/en/list/474/",
+        "voice": "Krajina zůstala prázdná ne náhodou, ale proto, že se tu odjakživa pásl dobytek místo orání polí.",
+        "image_prompt": "Fotorealistický letecký snímek národního parku Hortobágy, mozaika pastvin a mokřadů, ranní mlha nad rovinou, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-priroda-dunakanyar",
+    "country": "Maďarsko",
+    "section": "Příroda",
+    "topic": "Dunakanyar",
+    "headline": "Ostrý zákrut Dunaje mezi horami",
+    "fact": "U Visegrádu se Dunaj prudce stáčí mezi Visegrádskými vrchy a pohořím Börzsöny; tomuto úseku řeky se říká Dunakanyar, tedy Dunajský zákrut.",
+    "source_url": "https://visitvisegrad.hu/en/dunakanyar/",
+    "voice": "Řeka, která jinak míří k moři, si to tu na chvíli rozmyslí a stočí se skoro nazpátek.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický letecký snímek zákrutu Dunaje u Visegrádu, řeka obtékající zalesněné kopce, hrad na kopci nad řekou, ranní světlo, bez textu, 16:9",
+    "ll": [18.9679, 47.7853],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Královský palác nad řekou",
+        "fact": "Nad zákrutem sídlili od roku 1323 uherští králové z Anjouovské dynastie — Karel Robert si zde nechal postavit rozsáhlý královský palác, který později rozšiřovali jeho nástupci.",
+        "source_url": "https://cs.wikipedia.org/wiki/Visegr%C3%A1d",
+        "source_quote": "Roku 1323 se se svým dvorem přestěhoval na hrad Karel Robert z Anjou.",
+        "voice": "Králové si tu postavili palác tak, aby měli řeku doslova pod nohama.",
+        "image_prompt": "Fotorealistický snímek zříceniny visegrádského hradu na kopci nad Dunajem, výhled na zákrut řeky pod ním, odpolední světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řeka jako přirozená hranice a cesta",
+        "fact": "Ostré zákruty velkých řek jako Dunaj u Visegrádu vznikají tam, kde tok naráží na odolné horské pásmo — řeka si pak razí cestu kolem překážky místo skrz ni.",
+        "source_url": "https://visitvisegrad.hu/en/dunakanyar/",
+        "voice": "Řeka nemůže horu prorazit, a tak si k moři najde oklikou jinou cestu.",
+        "image_prompt": "Fotorealistický snímek shora na Dunakanyar, panoramatický pohled na zákrut Dunaje mezi kopci, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-priroda-aggtelek",
+    "country": "Maďarsko",
+    "section": "Příroda",
+    "topic": "Baradla",
+    "headline": "Podzemní labyrint na hranici se Slovenskem",
+    "fact": "Jeskynní systém Baradla měří 26 km, z toho 8 km leží na slovenské straně hranice, a od roku 1995 je součástí seznamu světového dědictví UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Aggtelek_National_Park",
+    "source_quote": "the Baradla cave (26 km long, of which 8 km is in Slovakia)... It has been part of the UNESCO World Heritage since 1995.",
+    "voice": "Jedna jeskyně, dva státy — hranice tu vede tam, kde by ji čekal málokdo: pod zemí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek interiéru jeskyně Baradla, krápníkové útvary osvětlené teplým světlem, podzemní chodba, bez textu, 16:9",
+    "ll": [20.4939, 48.4794],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Procházka mezi krápníkovými dómy",
+        "fact": "Turisté mohou částí jeskyně Baradla projít po značené trase mezi krápníkovými dómy, které zde po tisíciletí vytvářela prosakující podzemní voda.",
+        "source_url": "https://en.wikipedia.org/wiki/Aggtelek_National_Park",
+        "voice": "Kapka po kapce tu voda stavěla kamenné varhany celá tisíciletí.",
+        "image_prompt": "Fotorealistický snímek turistické stezky v jeskyni Baradla, osvětlené krápníky visící ze stropu, návštěvníci v dálce, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krasová krajina pod hranicí",
+        "fact": "Aggtelecký kras je typickou krasovou oblastí, kde voda rozpouští vápencové podloží a vytváří rozsáhlé jeskynní systémy — hranice mezi Maďarskem a Slovenskem tu prochází napříč jedné souvislé jeskyně.",
+        "source_url": "https://en.wikipedia.org/wiki/Aggtelek_National_Park",
+        "voice": "Státní hranice na mapě jeskyni vůbec nezajímá — pod zemí pokračuje dál, jako by tu nebyla.",
+        "image_prompt": "Fotorealistický snímek krasové krajiny Aggteleckého národního parku, zvlněné kopce s vápencovým podložím, lesy, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-lide-semmelweis",
+    "country": "Maďarsko",
+    "section": "Lidé",
+    "topic": "Semmelweis Ignác",
+    "headline": "Lékař, kterému nikdo nevěřil",
+    "fact": "Ignác Semmelweis roku 1847 zavedl na vídeňské porodnické klinice mytí rukou chlorovým vápnem — úmrtnost rodiček na horečku omladnic díky tomu klesla ze 17 % na 1,2 %.",
+    "source_url": "https://cs.wikipedia.org/wiki/Ign%C3%A1c_Filip_Semmelweis",
+    "source_quote": "Úspěch se dostavil okamžitě. Mortalita po dvou měsících klesla ze 17% na 1,2%.",
+    "voice": "Za to, že chtěl, aby si lékaři myli ruce, skončil vysmívaný a nakonec v ústavu pro duševně nemocné.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrét ve stylu 19. století, lékař v černém obleku u nemocničního umyvadla, historická porodnice, tlumené světlo, bez textu, 16:9",
+    "tags": ["dejiny", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rodák z budínského břehu",
+        "fact": "Semmelweis se narodil roku 1818 v Budíně, dnešní části Budapešti, a lékařství vystudoval ve Vídni, kde později svůj objev i učinil.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ign%C3%A1c_Filip_Semmelweis",
+        "source_quote": "Ignác Semmelweis se narodil v roce 1818 v Budíně, která je součástí dnešní Budapešti.",
+        "voice": "Muž, který zachránil miliony matek, pochází z města, jež dnes zná celý svět jako Budapešť.",
+        "image_prompt": "Fotorealistický snímek historické budovy vídeňské všeobecné nemocnice v 19. století, kde Semmelweis pracoval, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jedno pozorování, které změnilo medicínu",
+        "fact": "Semmelweisův objev je učebnicovým příkladem, jak srovnání dvou oddělení téže nemocnice s různou úmrtností dokázalo odhalit neviditelnou příčinu šíření nemoci.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ign%C3%A1c_Filip_Semmelweis",
+        "voice": "Stačilo srovnat dvě sousední oddělení — a najednou bylo jasné, kde se skrývá zabiják matek.",
+        "image_prompt": "Fotorealistická ilustrace historické porodnické kliniky ve Vídni v polovině 19. století, dvě oddělení, tlumené světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-lide-biro",
+    "country": "Maďarsko",
+    "section": "Lidé",
+    "topic": "Bíró László",
+    "headline": "Muž, který ukončil éru inkoustu",
+    "fact": "Novinář László Bíró si roku 1938 v Paříži nechal patentovat kuličkové pero, které nahradilo pomalu schnoucí inkoust rychleschnoucí tiskařskou černí.",
+    "source_url": "https://regiony.rozhlas.cz/laszlo-biro-dal-svetu-kulickove-pero-9569762",
+    "source_quote": "v Paříži si ho nechal 10. června 1938 patentovat",
+    "voice": "Inspiraci našel v kaluži — kulička v ní zanechávala dokonale rovnou stopu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický still-life snímek historického kuličkového pera na dřevěném stole, inkoustová kaluž vedle něj, teplé světlo, bez textu, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Útěk před válkou, který změnil psaní",
+        "fact": "Bíró jako Maďar židovského původu před válkou uprchl do Argentiny, kde se jeho vynález rozšířil natolik, že se v angličtině kuličkovému peru dodnes běžně říká 'biro'.",
+        "source_url": "https://www.reflex.cz/clanek/zajimavosti/97792/fascinujici-pribeh-kulickoveho-pera-vynalezcem-propisky-je-madarsky-zid-ktery-utekl-pred-hitlerem.html",
+        "voice": "Jméno uprchlíka se stalo běžným slovem pro věc, kterou dnes má v kapse skoro každý.",
+        "image_prompt": "Fotorealistický dokumentární snímek přístavu s zaoceánskou lodí připravenou k vyplutí, počátek 20. století, ranní mlha, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vynálezce jako emigrant",
+        "fact": "Bírův příběh je typickým příkladem meziválečné migrace středoevropských vynálezců a odborníků, kteří kvůli perzekuci odešli do Ameriky a tam svůj nápad teprve komerčně prosadili.",
+        "source_url": "https://regiony.rozhlas.cz/laszlo-biro-dal-svetu-kulickove-pero-9569762",
+        "voice": "Nápad se zrodil v Budapešti, ale ke světové slávě musel doputovat přes oceán.",
+        "image_prompt": "Fotorealistický snímek starého koženého cestovního kufru s nálepkami měst Budapešť, Paříž a Buenos Aires, vintage styl, měkké světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-lide-rubik",
+    "country": "Maďarsko",
+    "section": "Lidé",
+    "topic": "Rubik Ernő",
+    "headline": "Kostka, která měla učit geometrii",
+    "fact": "Architekt a pedagog Ernő Rubik vynalezl svou proslulou kostku v roce 1974 jako pomůcku pro výuku prostorové geometrie a patent na ni získal 30. ledna 1975.",
+    "source_url": "https://cs.wikipedia.org/wiki/Rubikova_kostka",
+    "source_quote": "Rubikova kostka byla vynalezena roku 1974... Patentovat si ji nechal 30. ledna roku 1975.",
+    "voice": "Kostka měla žákům pomoct pochopit prostor — nakonec zmátla dospělé po celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek barevné Rubikovy kostky na dřevěném stole, ostré světlo zvýrazňující barvy čtverečků, bez textu, 16:9",
+    "tags": ["dejiny", "aktualni-temata", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hračka, co dobyla celý svět",
+        "fact": "Rubikova kostka se na přelomu 70. a 80. let stala nejprodávanějším hračkářským produktem na světě, vyráběným v milionových sériích.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rubikova_kostka",
+        "source_quote": "Kostka formátu 3×3×3 se stala hitem na přelomu 70. a 80. let 20. století, kdy byla vyráběna v milionových sériích a stala se nejprodávanějším produktem na Zemi.",
+        "voice": "Ze dřeva a gumiček slepený prototyp se proměnil v hračku, kterou má doma snad každá rodina.",
+        "image_prompt": "Fotorealistický snímek dřevěného prototypu skládačky s gumičkami, raná verze Rubikovy kostky, dílenské prostředí, teplé světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malý vynález s globálním dosahem",
+        "fact": "Příběh Rubikovy kostky ukazuje, jak jeden nápad z malé středoevropské země může díky masové výrobě a exportu dobýt globální trh hraček.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rubikova_kostka",
+        "voice": "Nápad se zrodil v jedné budapešťské učebně, dnes ho zná téměř každá domácnost na planetě.",
+        "image_prompt": "Fotorealistický snímek regálu s Rubikovými kostkami v obchodě s hračkami, různé varianty a velikosti, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-kultura-kalocsa",
+    "country": "Maďarsko",
+    "section": "Kultura & tradice",
+    "topic": "Kalocsská výšivka",
+    "headline": "Květiny, které kvetou na plátně",
+    "fact": "Ve městě Kalocsa a okolních vesnicích vzniklo v 18.–19. století svérázné lidové umění — barevná květinová výšivka a nástěnná malba, které ženy dodnes ručně tvoří při tradičních slavnostech.",
+    "source_url": "https://www.hungarikum.hu/en/content/kalocsa-folk-art-%E2%80%93-drawing-embroidery-and-wall-painting",
+    "source_quote": "traditional peasant culture of the villages that developed around Kalocsa in the 18th–19th century",
+    "voice": "Vzor, který připomíná zahradu, ve skutečnosti prozrazuje, z které vesnice žena pochází.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek ručně vyšívaného kalocsského textilu s barevnými květinovými motivy, červená růže a zelené listy na bílém plátně, přirozené světlo, bez textu, 16:9",
+    "ll": [18.9686, 46.5290],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Paprika a výšivka ze stejného města",
+        "fact": "Kalocsa je zároveň centrem pěstování papriky — každý rok se tu koná Kalocsská paprikové slavnosti, oslava sklizně spojená s ukázkami lidových krojů a výšivek.",
+        "source_url": "https://www.hungarikum.hu/en/content/kalocsa-folk-art-%E2%80%93-drawing-embroidery-and-wall-painting",
+        "voice": "Stejné město dalo Maďarsku dvě věci — ostrou papriku a jemnou výšivku.",
+        "image_prompt": "Fotorealistický snímek slavnosti v Kalocse, ženy v tradičních vyšívaných krojích, girlandy sušené papriky v pozadí, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vesnice s vlastním rukopisem",
+        "fact": "Kalocsská výšivka je příkladem, jak si v zemědělských oblastech střední Evropy jednotlivé vesnice vytvářely vlastní rozpoznatelné lidové vzory a barevnost.",
+        "source_url": "https://www.hungarikum.hu/en/content/kalocsa-folk-art-%E2%80%93-drawing-embroidery-and-wall-painting",
+        "voice": "Podle vzoru na sukni kdysi poznal každý, odkud žena pochází, aniž by promluvila.",
+        "image_prompt": "Fotorealistický snímek tradičního kalocsského interiéru, stěny malované barevnými květinovými vzory, dřevěný nábytek, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-kultura-busojaras",
+    "country": "Maďarsko",
+    "section": "Kultura & tradice",
+    "topic": "Busójárás",
+    "headline": "Maškary, které vyhánějí zimu",
+    "fact": "V jihomaďarském Moháči se každý únor koná busójárás, šestidenní karneval strašidelně maskovaných postav zvaných busó, který je od roku 2009 na seznamu nehmotného kulturního dědictví UNESCO.",
+    "source_url": "https://ich.unesco.org/en/RL/buso-festivities-at-mohacs-masked-end-of-winter-carnival-custom-00252",
+    "source_quote": "a six-day carnival in late February to mark the end of winter... has been on UNESCO's intangible heritage list since 2009",
+    "voice": "Masky mají odehnat zimu — a chrastítky i rolničkami to myslí opravdu vážně.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek maskovaných postav busó na karnevalu v Moháči, vyřezávané dřevěné ovčí masky, huňaté kožichy naruby, večerní světlo s ohněm, bez textu, 16:9",
+    "ll": [18.6819, 45.9930],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Stovky masek na lodích",
+        "fact": "Vyvrcholením busójárás je příjezd více než 500 busó na lodích přes Dunaj a následné spálení symbolické rakve zimy na náměstí.",
+        "source_url": "https://ich.unesco.org/en/RL/buso-festivities-at-mohacs-masked-end-of-winter-carnival-custom-00252",
+        "source_quote": "the arrival of more than 500 busós in rowboats on the Danube for a march through the city",
+        "voice": "Zima končí veřejným pohřbem — v podobě hořící rakve uprostřed náměstí.",
+        "image_prompt": "Fotorealistický snímek maskovaných postav busó připlouvajících na lodích po Dunaji do Moháče, soumrak, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice vzniklá mísením kultur",
+        "fact": "Busójárás vznikl smísením tradic jihoslovanského etnika Šokců, usazených v okolí Moháče po vyhnání Turků, s místním maďarským prostředím — typický příklad kulturní vrstvy vzniklé migrací obyvatel.",
+        "source_url": "https://ich.unesco.org/en/RL/buso-festivities-at-mohacs-masked-end-of-winter-carnival-custom-00252",
+        "voice": "Zvyk sem přinesli přistěhovalci — a maďarské město si ho o pár století později osvojilo jako vlastní.",
+        "image_prompt": "Fotorealistický snímek náměstí v Moháči během busójárás, dav diváků kolem maskovaných postav, historická architektura v pozadí, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-kultura-betyar",
+    "country": "Maďarsko",
+    "section": "Kultura & tradice",
+    "topic": "Betyár",
+    "headline": "Psanec, co okrádal bohaté",
+    "fact": "Na maďarské pusztě 19. století žili psanci zvaní betyáři, kteří se skrývali ve stepi před úřady; mezi nimi vynikl Rózsa Sándor, kterého lidová tradice líčí jako muže okrádajícího statkáře ve prospěch chudých.",
+    "source_url": "https://grokipedia.com/page/S%C3%A1ndor_R%C3%B3zsa",
+    "source_quote": "Sándor Rózsa was a Hungarian outlaw and gang leader operating as a betyár in the Great Hungarian Plain during the mid-19th century.",
+    "voice": "Skutečný zloděj dobytka se v lidových písních proměnil v maďarského Robina Hooda.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek jezdce v tradičním maďarském pastýřském oděvu na koni uprostřed pusztské stepi, širokánský klobouk, večerní světlo, bez textu, 16:9",
+    "ll": [19.6019, 46.6906],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jezdecké kousky na pusztě",
+        "fact": "V národním parku Kiskunság u vesnice Bugac dodnes čikóšové, tradiční jezdci na koních, předvádějí turistům jezdecké kousky připomínající dovednosti bývalých pastevců a betyárů.",
+        "source_url": "https://en.wikipedia.org/wiki/Kiskuns%C3%A1g_National_Park",
+        "voice": "Umění stát na hřbetě cválajícího koně se tu předává z generace na generaci jako rodinné dědictví.",
+        "image_prompt": "Fotorealistický snímek maďarského čikóše předvádějícího jezdecké umění na pusztě Bugac, více koní v cvalu, prašná step, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Psanec jako lidový hrdina",
+        "fact": "Postava psance, který okrádá bohaté a pomáhá chudým, se v evropském folkloru objevuje opakovaně — maďarský betyár je jen jednou z mnoha regionálních podob tohoto vyprávěcího vzorce.",
+        "source_url": "https://grokipedia.com/page/S%C3%A1ndor_R%C3%B3zsa",
+        "voice": "Podobný příběh vypráví skoro každý národ — jen hrdina má pokaždé jiné jméno a jiný klobouk.",
+        "image_prompt": "Fotorealistický snímek opuštěné venkovské krčmy (csárda) uprostřed maďarské pusztě, nízká budova se slaměnou střechou, večerní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-umeni-liszt",
+    "country": "Maďarsko",
+    "section": "Umění",
+    "topic": "Ferenc Liszt",
+    "headline": "Klavírní virtuos, co elektrizoval sály",
+    "fact": "Ferenc Liszt se narodil roku 1811 v Doborjánu (dnešní obec Raiding v Rakousku), tehdy součásti Uherska, a stal se předním klavírním virtuosem a skladatelem evropského romantismu, i když se sám cítil především Maďarem.",
+    "source_url": "https://cs.wikipedia.org/wiki/Ferenc_Liszt",
+    "source_quote": "Franz Liszt (22. října 1811 Raiding/Doborján – 31. října 1886 Bayreuth) byl rakousko-uherský klavírní virtuos a hudební skladatel... On sám se nejvíce cítil být Maďarem.",
+    "voice": "O národnost muže, který napsal Uherské rapsodie, se dodnes přou hned tři národy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrét klavíristy u velkého koncertního křídla v sále 19. století, svíčky, sametové závěsy, teplé světlo, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Akademie, kterou založil sám",
+        "fact": "Liszt v roce 1875 spoluzaložil v Budapešti hudební akademii, dnes nesoucí jeho jméno, kterou dodnes navštěvují studenti hudby z celého světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Franz_Liszt_Academy_of_Music",
+        "source_quote": "founded on November 14, 1875",
+        "voice": "Škola, kterou založil, dodnes vzdělává klavíristy v budově kousek od Dunaje.",
+        "image_prompt": "Fotorealistický snímek secesní budovy Lisztovy hudební akademie v Budapešti, honosná fasáda, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Národní folklor jako inspirace pro velkou hudbu",
+        "fact": "Liszt čerpal ve své tvorbě z maďarské lidové hudby a z hudby maďarských Romů — typický příklad toho, jak romantičtí skladatelé hledali inspiraci v lidové kultuře vlastního národa.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ferenc_Liszt",
+        "voice": "Melodie z venkovských hospod se pod jeho rukama proměnily v koncertní síně po celé Evropě.",
+        "image_prompt": "Fotorealistický snímek staré partitury s rukopisnými notami na klavírním pultu, vintage papír, teplé světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-umeni-bartok",
+    "country": "Maďarsko",
+    "section": "Umění",
+    "topic": "Béla Bartók",
+    "headline": "Skladatel, co chodil s fonografem po vesnicích",
+    "fact": "Béla Bartók spolu se Zoltánem Kodálym na začátku minulého století systematicky sbírali lidové písně v Maďarsku i okolních zemích a s pomocí fonografu jich nahráli kolem 10 000.",
+    "source_url": "https://vltava.rozhlas.cz/genius-bela-bartok-pred-140-lety-se-narodil-madarsky-skladatel-klavirista-a-8452101",
+    "source_quote": "Nasbíral přibližně 10 000 melodií z různých kultur.",
+    "voice": "Melodie, které slyšel od vesnických babiček, proměnil v hudbu koncertních sálů celého světa.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek muže s fonografem na klikačku ve venkovské maďarské chalupě, sedlák zpívající do trychtýře přístroje, počátek 20. století, teplé světlo, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Terénní výzkum přímo v chalupách",
+        "fact": "Bartók své etnomuzikologické nahrávání prováděl přímo v domácnostech venkovských zpěváků na Slovensku, v Rumunsku i jinde ve střední Evropě, nikoli jen v Maďarsku.",
+        "source_url": "https://www.klasikaplus.cz/klasika-v-souvislostech-21-br-bela-bartok-mezi-bratislavou-a-new-yorkem/",
+        "voice": "Cenný hudební archiv tehdejší Evropy nevznikl v sále, ale v chalupách obyčejných lidí.",
+        "image_prompt": "Fotorealistický snímek staré vesnické chalupy ve střední Evropě na počátku 20. století, doškové střechy, hospodářství, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zakladatel vědy o lidové hudbě",
+        "fact": "Bartók je považován za jednoho ze zakladatelů etnomuzikologie — vědního oboru, který zkoumá hudbu jako součást kultury a geografie konkrétního regionu.",
+        "source_url": "https://operaplus.cz/encyklopedie/bartok-bela/",
+        "voice": "Z písniček, které si nikdo předtím nezapisoval, vytvořil základ celého vědního oboru.",
+        "image_prompt": "Fotorealistický snímek starých voskových válečků fonografu a poznámkových sešitů na dřevěném stole, historické vybavení, teplé světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-umeni-herend",
+    "country": "Maďarsko",
+    "section": "Umění",
+    "topic": "Herendský porcelán",
+    "headline": "Porcelán, který okouzlil královnu Viktorii",
+    "fact": "Manufaktura v Herendu byla založena roku 1826 a proslavila se poté, co její ručně malovaný porcelán zaujal na Světové výstavě v Londýně v roce 1851 přímo královnu Viktorii.",
+    "source_url": "https://en.wikipedia.org/wiki/Herend_Porcelain_Manufactory",
+    "source_quote": "founded in 1826... became internationally renowned after its fine ceramics were showcased at the Great Exhibition in London in 1851, where they captivated Queen Victoria herself.",
+    "voice": "Vzor, který si oblíbila anglická královna, nosí jméno malé vesnice u Veszprému dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický detailní snímek ručně malovaného herendského porcelánového servisu s jemným květinovým vzorem, bílý porcelán se zlatými detaily, měkké světlo, bez textu, 16:9",
+    "ll": [17.7539, 47.1358],
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Žádný kus stejný jako druhý",
+        "fact": "V herendské manufaktuře se dodnes vyrábí výhradně ručně malovaný porcelán — žádný kus neopouští dílnu bez štětce malíře.",
+        "source_url": "https://en.wikipedia.org/wiki/Herend_Porcelain_Manufactory",
+        "source_quote": "only hand-painted vessels, decorative objects and sculptures are produced",
+        "voice": "Za každým vzorkem na talíři stojí konkrétní ruka malíře, ne stroj.",
+        "image_prompt": "Fotorealistický snímek malířky ručně zdobící porcelánový talíř jemným štětcem v herendské dílně, soustředěný výraz, denní světlo z okna, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá vesnice jako světová značka",
+        "fact": "Herend je příkladem toho, jak se malá venkovská manufaktura díky exportu a přízni evropské aristokracie proměnila ve značku známou po celém světě — podobně jako jiné evropské porcelánky, například Míšeň.",
+        "source_url": "https://en.wikipedia.org/wiki/Herend_Porcelain_Manufactory",
+        "voice": "Jméno vesnice o pár tisících obyvatelích dnes najdeme na stolech po celém světě.",
+        "image_prompt": "Fotorealistický snímek muzejní vitríny s historickými kusy herendského porcelánu z 19. století, různé vzory a tvary, tlumené osvětlení, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-sport-vodni-polo",
+    "country": "Maďarsko",
+    "section": "Sport",
+    "topic": "Vodní pólo",
+    "headline": "Národní sport, který se hraje ve vodě",
+    "fact": "Maďarští vodní pólisté vybojovali na olympijských hrách devět zlatých a celkem patnáct medailí — spolu se Srbskem jde o nejvyšší počet medailí v historii mužského olympijského vodního póla.",
+    "source_url": "https://en.wikipedia.org/wiki/Water_polo_at_the_Summer_Olympics",
+    "source_quote": "Hungary men's national water polo team has participated in 22 of 27 Olympic tournaments, with fifteen Olympic medals (nine gold, three silver and three bronze).",
+    "voice": "Přestože Maďarsko nemá moře, jeho bazény vychovaly generace olympijských šampionů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zápasu vodního póla v maďarském venkovním bazénu, hráči v čepicích zápasící o míč, rozstříkaná voda, denní světlo, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Krvavý zápas studené války",
+        "fact": "Na olympiádě v Melbourne 6. prosince 1956, jen týdny po potlačení maďarské revoluce, porazili maďarští vodní pólisté Sovětský svaz 4:0 v utkání, které vešlo do historie jako „krvavá lázeň v bazénu“.",
+        "source_url": "https://en.wikipedia.org/wiki/Blood_in_the_Water_match",
+        "source_quote": "The match took place on 6 December 1956... Hungary defeat the USSR 4–0.",
+        "voice": "Zápas ve vodě se na chvíli proměnil v symbolický souboj, jehož výsledek sledoval celý svět.",
+        "image_prompt": "Fotorealistický černobílý snímek zápasu vodního póla na olympiádě 1956 v Melbourne, napjatá atmosféra u bazénu, historický styl, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Úspěch postavený na síti bazénů",
+        "fact": "Úspěch Maďarska ve vodním pólu bývá dáván do souvislosti s hustou sítí termálních a plaveckých bazénů v zemi a s dlouhou tradicí plavecké výuky už od dětství.",
+        "source_url": "https://cs.wikipedia.org/wiki/Vodn%C3%AD_p%C3%B3lo",
+        "voice": "Země bez přístupu k moři si vybudovala vlastní moře — v podobě stovek bazénů.",
+        "image_prompt": "Fotorealistický letecký snímek plaveckého komplexu s několika bazény v maďarském městě, sportovní areál, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-sport-aranycsapat",
+    "country": "Maďarsko",
+    "section": "Sport",
+    "topic": "Aranycsapat",
+    "headline": "Zápas století na Wembley",
+    "fact": "25. listopadu 1953 porazil maďarský „Zlatý tým“ (Aranycsapat) v čele s Ferencem Puskásem na Wembley domácí Anglii 6:3 — první domácí porážku, kterou Anglie utrpěla od týmu mimo Britské ostrovy.",
+    "source_url": "https://en.wikipedia.org/wiki/Match_of_the_Century_(1953_England_v_Hungary_football_match)",
+    "source_quote": "On 25 November 1953, Hungary defeated England 6–3 at Wembley Stadium in London... No team outside of the British Isles had beaten England on home soil before this match.",
+    "voice": "Anglie, kolébka fotbalu, prohrála doma poprvé s týmem z kontinentu — a fotbal už nikdy nebyl stejný.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fotbalového zápasu na stadionu Wembley v roce 1953, hráči v dobových dresech, hustý dav diváků, černobílý dokumentární styl, bez textu, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kapitán, který skončil v Madridu",
+        "fact": "Ferenc Puskás, kapitán Zlatého týmu, po maďarské revoluci roku 1956 zůstal v emigraci a od roku 1958 hrál za španělský Real Madrid, kde vstřelil 242 branek ve 262 zápasech.",
+        "source_url": "https://en.wikipedia.org/wiki/Ferenc_Pusk%C3%A1s",
+        "source_quote": "In 1956 Puskás was playing a match with Honved in Spain when the Hungarian Revolution broke out, and he joined a number of his teammates in defecting... in 1958, he emigrated to Spain where he successfully signed for Real Madrid... scored 242 goals in 262 appearances for the Spanish club.",
+        "voice": "Muž, který nemohl domů, si novou branku prostřílel v cizí zemi.",
+        "image_prompt": "Fotorealistický snímek fotbalisty v bílém dresu Realu Madrid střílejícího gól na stadionu z konce 50. let, černobílý dokumentární styl, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zápas, který změnil taktiku fotbalu",
+        "fact": "Wembley 1953 se v dějinách fotbalu často uvádí jako okamžik, kdy středoevropská taktika (stahující se útočník, pohyblivé rozestavení) předstihla tehdy rigidní britský systém hry.",
+        "source_url": "https://en.wikipedia.org/wiki/Match_of_the_Century_(1953_England_v_Hungary_football_match)",
+        "source_quote": "On 25 November 1953, Hungary defeated England 6–3 at Wembley Stadium in London",
+        "voice": "Anglie hru vymyslela, ale taktiku jí najednou přišli vylepšit hosté zpoza kontinentu.",
+        "image_prompt": "Fotorealistická ilustrace taktické tabule s fotbalovým rozestavením, křídou nakreslené šipky a pozice hráčů, klasická učebna, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-sport-hosszu",
+    "country": "Maďarsko",
+    "section": "Sport",
+    "topic": "Hosszú Katinka",
+    "headline": "Železná lady maďarského plavání",
+    "fact": "Katinka Hosszúová na olympiádě v Riu 2016 vyhrála tři zlaté medaile v polohovém a znakovém plavání a za obrovský počet startů v sezóně si vysloužila přezdívku „Železná lady“.",
+    "source_url": "https://cs.wikipedia.org/wiki/Katinka_Hossz%C3%BAov%C3%A1",
+    "source_quote": "Na OH 2016 triumfovala v obou polohovkách (200 a 400 m), zlato získala také na 100 m znak",
+    "voice": "Závodila tak často a tak všestranně, až jí začali říkat 'Železná lady' bazénu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek plavkyně na startovním bloku olympijského bazénu těsně před startem, soustředěný výraz, sportovní osvětlení haly, bez textu, 16:9",
+    "tags": ["aktualni-temata", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Desítky titulů z mistrovství světa",
+        "fact": "Hosszúová, rodačka z jihomaďarského Pécse, nasbírala v kariéře 26 titulů mistryně světa a 35 titulů mistryně Evropy.",
+        "source_url": "https://cs.wikipedia.org/wiki/Katinka_Hossz%C3%BAov%C3%A1",
+        "source_quote": "Ze světových šampionátů má 26 titulů a na mistrovství Evropy triumfovala v 35 závodech.",
+        "voice": "Někteří plavci se specializují na jednu disciplínu — ona vítězila skoro ve všech.",
+        "image_prompt": "Fotorealistický snímek plavkyně plovoucí motýlek v bazénu, rozstříkaná voda kolem, pohled shora, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá země, velká plavecká škola",
+        "fact": "Úspěchy maďarského plavání ukazují, jak i vnitrozemská země bez moře může vyniknout ve vodních sportech díky rozvinuté síti bazénů a systematické sportovní výchově od dětství.",
+        "source_url": "https://cs.wikipedia.org/wiki/Katinka_Hossz%C3%BAov%C3%A1",
+        "voice": "Není potřeba moře, stačí důsledná výchova od bazénu už od útlého dětství.",
+        "image_prompt": "Fotorealistický snímek dětského plaveckého tréninku v krytém bazénu v Maďarsku, trenér u okraje bazénu, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-jazyk-uralska-rodina",
+    "country": "Maďarsko",
+    "section": "Jazyk & slova",
+    "topic": "Uralské jazyky",
+    "headline": "Jazyk, který nepatří do rodiny sousedů",
+    "fact": "Maďarština patří do uralské jazykové rodiny spolu s finštinou a estonštinou — na rozdíl od téměř všech okolních jazyků, které jsou indoevropské (slovanské, germánské či románské).",
+    "source_url": "https://cs.wikipedia.org/wiki/Ma%C4%8Far%C5%A1tina",
+    "source_quote": "Maďarská jazyková oblast je izolovaná – v okolí se hovoří zcela odlišnými indoevropskými jazyky (slovanskými, románskými a germánskými).",
+    "voice": "Sousedům nerozumí ani přes hranice — maďarština si jede úplně svou vlastní jazykovou cestou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré jazykové mapy střední Evropy na dřevěném stole, barevně odlišené jazykové oblasti, lupa položená na mapě, teplé světlo, bez textu, 16:9",
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vzdálený příbuzný, ne bratr",
+        "fact": "Podobnost maďarštiny s finštinou je jen vzdálená — je srovnatelná s podobností mezi ruštinou a angličtinou, tedy dvěma indoevropskými, ale velmi vzdálenými jazyky.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ma%C4%8Far%C5%A1tina",
+        "source_quote": "Stupeň podobnosti mezi maďarštinou a finštinou lze přirovnat k podobnosti mezi ruštinou a angličtinou.",
+        "voice": "Maďar a Fin si spolu bez učení nepokecají — přesto jsou jejich jazyky vzdálení příbuzní.",
+        "image_prompt": "Fotorealistický snímek dvou otevřených slovníků vedle sebe, maďarsko-finský srovnávací text, knihovna v pozadí, měkké světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazykový ostrov uprostřed kontinentu",
+        "fact": "Izolovanost maďarštiny uprostřed indoevropské Evropy je učebnicovým příkladem jazykového ostrova, který vznikl přistěhováním mluvčích z jiné oblasti (od Uralu) do nového prostředí.",
+        "source_url": "https://cs.wikipedia.org/wiki/Uralsk%C3%A9_jazyky",
+        "voice": "Jazyk sem dorazil odjinud a od té doby zůstal jazykovým ostrovem uprostřed cizí řeči.",
+        "image_prompt": "Fotorealistický snímek reliéfní mapy Evropy s vyznačeným pohořím Ural na východě, fyzická mapa na stole, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-jazyk-kocar",
+    "country": "Maďarsko",
+    "section": "Jazyk & slova",
+    "topic": "Kočár",
+    "headline": "České slovo, které se narodilo v maďarské vesnici",
+    "fact": "Český výraz kočár pochází z maďarského kocsi, podle vesnice Kocs, kde ve středověku stávala důležitá přepřahací stanice na cestě mezi Vídní a Budínem.",
+    "source_url": "https://cs.wiktionary.org/wiki/ko%C4%8D%C3%A1r",
+    "source_quote": "Z maďarského kocsi (téhož značení), původně kocsi szekér, tedy kočský vůz, podle maďarské obce Kocs (Koč)",
+    "voice": "Slovo cestovalo z malé uherské vesnice do angličtiny (coach), francouzštiny (coche) i němčiny (Kutsche).",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historického dostavníku taženého koňmi na venkovské cestě střední Evropy, prašná cesta, podvečerní světlo, bez textu, 16:9",
+    "ll": [18.2154, 47.6067],
+    "tags": ["jazykoveda", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jedna vesnice, slova po celé Evropě",
+        "fact": "Podobná slova pro kočár najdeme v desítkách evropských jazyků — všechna vedou zpět ke jménu jedné maďarské vesnice ležící asi 65 km od Budapešti.",
+        "source_url": "https://en.wikipedia.org/wiki/Kocs",
+        "source_quote": "lies west of Tata and 65 km northwest of Budapest",
+        "voice": "Málokterá vesnice může říct, že její jméno zná půl Evropy, aniž by o tom tušila.",
+        "image_prompt": "Fotorealistický snímek malé maďarské vesnice s typickými venkovskými domy a kostelní věží, klidné odpolední světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Slovo šířící se po obchodní cestě",
+        "fact": "Případ slova kočár ukazuje, jak důležité dopravní trasy (zde cesta Vídeň–Budín) dokážou šířit slova napříč jazyky rychleji, než se posouvají státní hranice.",
+        "source_url": "https://cs.wiktionary.org/wiki/ko%C4%8D%C3%A1r",
+        "voice": "Slovo putovalo po stejné cestě jako kdysi samotné kočáry — z jedné zastávky do celé Evropy.",
+        "image_prompt": "Fotorealistická stará mapa střední Evropy se zakreslenou obchodní cestou mezi Vídní a Budínem, historický kartografický styl, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-jazyk-aglutinace",
+    "country": "Maďarsko",
+    "section": "Jazyk & slova",
+    "topic": "Aglutinace",
+    "headline": "Slova, na která se lepí přípony donekonečna",
+    "fact": "Maďarština je aglutinační jazyk s 18 pády — ke slovnímu základu se postupně 'lepí' přípony, z nichž každá nese jen jeden gramatický význam.",
+    "source_url": "https://www.jazykovy-koutek.cz/?p=14444",
+    "source_quote": "Maďarština disponuje systémem 18 pádů, což činí její gramatiku mimořádně bohatou.",
+    "voice": "Zatímco čeština má sedm pádů, maďarština jich napočítá osmnáct — a přípony se dají skládat ještě dál.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dětské stavebnice z kostek skládaných do dlouhé řady na stole, metafora skládání přípon, denní světlo, bez textu, 16:9",
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejdelší běžné slovo v jazyce",
+        "fact": "Jedno z nejdelších běžně používaných maďarských slov, megszentségteleníthetetlenségeskedéseitekért, vzniká postupným lepením přípon na jeden slovní základ a znamená zhruba „za vaše neustálé chování, jako byste nemohli být znesvěceni“.",
+        "source_url": "https://www.jazykovy-koutek.cz/?p=14444",
+        "source_quote": "Nejdelší běžně používané maďarské slovo je „megszentségteleníthetetlenségeskedéseitekért“, což přibližně znamená „za vaše neustálé chování, jako byste nemohli být znesvěceni“.",
+        "voice": "Jedno jediné slovo tu dokáže vyjádřit to, na co čeština potřebuje celou větu.",
+        "image_prompt": "Fotorealistický snímek popsaného listu papíru s dlouhým slovem napsaným ručně perem, detail písma, teplé světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jiný způsob stavby gramatiky",
+        "fact": "Aglutinační jazyky jako maďarština nebo finština stavějí gramatiku jinak než čeština či angličtina — místo ohýbání celého slova (flexe) k němu postupně připojují jasně oddělitelné přípony.",
+        "source_url": "https://cs.wikipedia.org/wiki/Aglutina%C4%8Dn%C3%AD_jazyk",
+        "voice": "Zatímco čeština slovo uvnitř promění, maďarština k němu jen přilepí další a další kousek.",
+        "image_prompt": "Fotorealistický snímek dřevěné stavebnice z kostek navrstvěných do sloupce, metafora skládaných gramatických přípon, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-jidlo-gulyas",
+    "country": "Maďarsko",
+    "section": "Jídlo",
+    "topic": "Gulyás",
+    "headline": "Polévka, co si říká pastevec",
+    "fact": "Gulyás vznikl jako jednoduché jídlo uherských pastevců dobytka (gulyás znamená pastevec), kteří ho vařili v kotlíku nad ohněm už od středověku; paprika se do něj dostala až v 18. století.",
+    "source_url": "https://www.madarske-delikatesy.cz/zajimavosti/magyar-gulyas--aneb-historie-madarskeho-narodniho-pokrmu/",
+    "source_quote": "Paprika, která je dnes neodmyslitelnou součástí guláše, se stala populární v Maďarsku až v 18. století",
+    "voice": "Jméno gulyás znamenalo prostě 'pastevec' — dnes ho svět zná jako jméno jídla, ne profese.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kotlíku guláše vařícího se nad otevřeným ohněm ve venkovní krajině, hovězí maso a cibule v hustém vývaru, kouř stoupající vzhůru, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Národní symbol o staletí mladší, než se zdá",
+        "fact": "Přestože se guláš vařil na maďarském venkově po staletí, národním symbolem Maďarska se stal teprve koncem 19. století.",
+        "source_url": "https://www.madarske-delikatesy.cz/zajimavosti/magyar-gulyas--aneb-historie-madarskeho-narodniho-pokrmu/",
+        "source_quote": "za národní symbol ho určili až koncem 19. století",
+        "voice": "Jídlo chudých pastevců se najednou stalo pokrmem, kterým se celý národ pyšní.",
+        "image_prompt": "Fotorealistický snímek talíře hotového maďarského guláše s bramborami a chlebem, restaurace ve venkovském stylu, teplé světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kuchyně přizpůsobená pastevectví",
+        "fact": "Guláš je typickým příkladem 'pastýřské kuchyně' — jednoduchého jídla z mála surovin, které lze dlouho vařit venku při celodenním hlídání stád na rozlehlých pastvinách, podobně jako v jiných stepních oblastech světa.",
+        "source_url": "https://www.madarske-delikatesy.cz/zajimavosti/magyar-gulyas--aneb-historie-madarskeho-narodniho-pokrmu/",
+        "voice": "Jídlo vznikalo tam, kde se vařilo celý den u jednoho kotlíku a nikam se nespěchalo.",
+        "image_prompt": "Fotorealistický snímek pastevce míchajícího guláš ve velkém kotli na trojnožce, step v pozadí, podvečerní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-jidlo-paprika",
+    "country": "Maďarsko",
+    "section": "Jídlo",
+    "topic": "Paprika",
+    "headline": "Koření, co dobylo maďarskou kuchyni",
+    "fact": "Papriku přivezli do Uher v 16.–17. století osmanští Turci; Maďaři ji zprvu pěstovali jen jako okrasnou rostlinu, protože ji považovali za jedovatou.",
+    "source_url": "https://dailynewshungary.com/the-brief-history-of-the-hungarian-paprika/",
+    "source_quote": "The Turks introduced the pepper plant to Hungary during their rule in the 16th-17th centuries.",
+    "voice": "Rostlina, které se nejdřív báli jako jedu, se nakonec stala symbolem maďarské chuti.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek girlandy sušených červených paprik zavěšené na fasádě venkovského domu v Maďarsku, jasné sluneční světlo, bez textu, 16:9",
+    "ll": [20.1414, 46.2530],
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pastevci, kteří si koření oblíbili nejdřív",
+        "fact": "Papriku si mezi Maďary nejdřív oblíbili pastevci, kteří byli s osmanskými Turky v nejužším kontaktu — teprve po nich si kořeněné jídlo osvojila i šlechta.",
+        "source_url": "https://dailynewshungary.com/the-brief-history-of-the-hungarian-paprika/",
+        "source_quote": "Shepherds and herdsmen who had more contact with the invaders started spice their meals with the fiery powder.",
+        "voice": "Koření nejdřív ochutnali ti nejchudší — teprve pak si na něj přišli i páni na zámcích.",
+        "image_prompt": "Fotorealistický snímek trhu se szegedskou paprikou, pytle s mletým červeným kořením, prodejce v pozadí, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Plodina z Ameriky na maďarském stole",
+        "fact": "Paprika je učebnicovým příkladem 'kolumbovské výměny' — plodiny, která se z Ameriky přes Osmanskou říši rozšířila do Evropy a natrvalo změnila místní kuchyně.",
+        "source_url": "https://dailynewshungary.com/the-brief-history-of-the-hungarian-paprika/",
+        "voice": "Rostlina urazila cestu přes celý oceán i říši, než skončila v maďarském kotlíku.",
+        "image_prompt": "Fotorealistický snímek pole papriky u Szegedu při sklizni, řady rostlin s červenými plody, dělníci v pozadí, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-jidlo-langos",
+    "country": "Maďarsko",
+    "section": "Jídlo",
+    "topic": "Langoš",
+    "headline": "Smažené těsto, co voní po plameni",
+    "fact": "Langoš je smažené kynuté těsto, jehož název pochází z maďarského slova láng (plamen) — původně se pekl v peci spolu s chlebem a podával se k snídani.",
+    "source_url": "https://cs.wikipedia.org/wiki/Lango%C5%A1",
+    "source_quote": "Slovo langoš pochází z maďarského výrazu láng, česky plamen",
+    "voice": "Jídlo, které vzniklo jako vedlejší produkt pečení chleba, dnes lidé znají spíš jako rychlé občerstvení z ulice.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek čerstvě smaženého langoše potřeného kysanou smetanou, česnekem a strouhaným sýrem, stánek na maďarském trhu, denní světlo, bez textu, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jedno jídlo, různé chutě v každé zemi",
+        "fact": "Recept na langoš se z bývalého Uherska rozšířil do Rumunska, Srbska, na Ukrajinu i na Slovensko — v každé zemi ho ale ochucují jinak.",
+        "source_url": "https://cs.wikipedia.org/wiki/Lango%C5%A1",
+        "source_quote": "Recept se rozšířil z území bývalého Uherska do států, jako je Rumunsko, Ukrajina (Podkarpatsko) a Srbsko... na Slovensko",
+        "voice": "V Maďarsku ho potřou smetanou a česnekem, v Česku spíš kečupem a sýrem.",
+        "image_prompt": "Fotorealistický snímek langoše s kysanou smetanou, česnekem a sýrem na papírovém talíři, pouliční stánek v pozadí, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo podle starých hranic",
+        "fact": "Šíření langoše kopíruje bývalé hranice Uherska — jídlo tak funguje jako chutná stopa historických státních hranic střední Evropy.",
+        "source_url": "https://cs.wikipedia.org/wiki/Lango%C5%A1",
+        "voice": "Podle toho, kde všude se langoš jí, se dá skoro namalovat mapa bývalého Uherska.",
+        "image_prompt": "Fotorealistická stará mapa Uherska z počátku 20. století rozprostřená na dřevěném stole, historický kartografický styl, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-historie-honfoglalas",
+    "country": "Maďarsko",
+    "section": "Historie",
+    "topic": "Honfoglalás",
+    "headline": "Sedm kmenů, které si našly nový domov",
+    "fact": "Kolem roku 895–896 překročilo sedm starých maďarských kmenů pod vedením náčelníka Árpáda Karpaty a usadilo se v Karpatské kotlině — této události se říká honfoglalás, tedy „obsazení vlasti“.",
+    "source_url": "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d",
+    "source_quote": "Around the year 895, seven old Hungarian tribes chose Árpád as their common chief... crossed the Carpathians in 896 and settled",
+    "voice": "Národ, který dnes žije uprostřed slovanské, germánské a románské Evropy, sem kdysi dorazil úplně odjinud.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistická rekonstrukční malba starých maďarských jezdeckých kmenů překračujících horský průsmyk Karpat s vozy a stády, konec 9. století, dramatické světlo, bez textu, 16:9",
+    "ll": [20.0932, 46.4370],
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obří obraz příchodu Maďarů",
+        "fact": "Příchod Maďarů připomíná v Ópusztaszeru na jihu Maďarska Feszty-körkép — 120 metrů dlouhá a 15 metrů vysoká kruhová panorama, kterou v letech 1892–1894 namaloval Árpád Feszty.",
+        "source_url": "https://hu.wikipedia.org/wiki/Feszty-k%C3%B6rk%C3%A9p",
+        "source_quote": "The painting is 120 meters long and 15 meters high... during the two-year creation period from 1892 to 1894.",
+        "voice": "Malíř postavil diváka doprostřed davu jezdců tak věrně, že si připadá jako svědek na místě činu.",
+        "image_prompt": "Fotorealistický snímek interiéru pavilonu s obří kruhovou panoramatickou malbou honfoglalás v Ópusztaszeru, návštěvníci na vyvýšené plošině uprostřed, tlumené světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stěhování kmenů do úrodné kotliny",
+        "fact": "Honfoglalás je příkladem stěhování národů z konce raného středověku, kdy kočovné kmeny z východu hledaly nová sídla v úrodných nížinách střední Evropy — podobným vzorcem se do stejné oblasti dostali již dříve Avaři.",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d",
+        "voice": "Karpatská kotlina lákala kočovné národy z východu už dávno předtím, než sem dorazili Maďaři.",
+        "image_prompt": "Fotorealistická mapa raného středověku znázorňující migrační trasy kočovných kmenů do Karpatské kotliny, historický kartografický styl, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-historie-trianon",
+    "country": "Maďarsko",
+    "section": "Historie",
+    "topic": "Trianon",
+    "headline": "Den, kdy se Maďarsko zmenšilo o dvě třetiny",
+    "fact": "Trianonská smlouva z roku 1920 připravila Maďarsko o více než dvě třetiny (přesně 71 %) předválečného území.",
+    "source_url": "https://cs.wikipedia.org/wiki/Trianonsk%C3%A1_smlouva",
+    "source_quote": "Podle Trianonské smlouvy se Maďarsko muselo vzdát více než dvou třetin (přesně 71 procent) svého dosavadního území.",
+    "voice": "Rána, po které se Maďarsko dodnes ptá, kde všude ještě žijí Maďaři za jeho současnými hranicemi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré mapy Uherska před rokem 1920 a po něm položené vedle sebe na stole, historické dokumenty, tlumené světlo, bez textu, 16:9",
+    "tags": ["dejiny", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Podpis ve francouzském paláci",
+        "fact": "Smlouva byla podepsána 4. června 1920 v Trianonském paláci ve Versailles nedaleko Paříže — proto jí Maďaři dodnes jednoduše říkají „Trianon“.",
+        "source_url": "https://www.echo24.cz/a/SexPj/trianon-sebral-madarum-dve-tretiny-uzemi-trauma-ovlivnuje-politiku-budapesti-dodnes",
+        "source_quote": "Na základě dokumentu podepsaného 4. června 1920 v paláci Velký Trianon ve Versailles",
+        "voice": "Jméno francouzského paláce se v maďarštině stalo synonymem pro národní ztrátu.",
+        "image_prompt": "Fotorealistický snímek Velkého Trianonu ve Versailles, klasicistní francouzský palác obklopený zahradami, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nové hranice podle národnostní mapy",
+        "fact": "Trianon je učebnicovým příkladem, jak versailleský mírový systém po první světové válce přerýsoval hranice střední Evropy podle národnostního principu — a jak obtížné to je tam, kde národy žijí promísené.",
+        "source_url": "https://cs.wikipedia.org/wiki/Trianonsk%C3%A1_smlouva",
+        "voice": "Kreslení hranic podle národností zní jednoduše, dokud národy nežijí pěkně pomíchané vedle sebe.",
+        "image_prompt": "Fotorealistický snímek staré etnické mapy střední Evropy z počátku 20. století s barevně vyznačenými národnostmi, kartografický archiv, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "hu-historie-revoluce-1956",
+    "country": "Maďarsko",
+    "section": "Historie",
+    "topic": "Revoluce 1956",
+    "headline": "Dny, kdy Budapešť povstala proti Moskvě",
+    "fact": "23. října 1956 vypuklo v Budapešti povstání proti sovětské nadvládě; sovětská vojska ho po počátečním ústupu rozdrtila ve druhé, mohutné intervenci zahájené 4. listopadu 1956.",
+    "source_url": "https://cs.wikipedia.org/wiki/Ma%C4%8Farsk%C3%A9_povst%C3%A1n%C3%AD",
+    "source_quote": "Maďarské povstání bylo celonárodním povstáním proti sovětské diktatuře a okupaci Maďarské lidové republiky od 23. října do 10. listopadu 1956... Za rozbřesku 4. listopadu začala ofenzíva proti hlavnímu městu.",
+    "voice": "Chvíli to vypadalo, že malá země dokáže vzdorovat velmoci — pak přijely tanky znovu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický černobílý dokumentární snímek ulic Budapešti během podzimu 1956, poškozené budovy, sovětský tank na křižovatce, bez textu, 16:9",
+    "ll": [19.0467, 47.5058],
+    "tags": ["dejiny", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přesila sedmnáct k jedné",
+        "fact": "Do listopadové ofenzivy roku 1956 nasadil Sovětský svaz podle pozdějších maďarských odhadů přes 108 tisíc vojáků a téměř 3 800 tanků a samohybných děl.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ma%C4%8Farsk%C3%A9_povst%C3%A1n%C3%AD",
+        "source_quote": "nasadilo 108 925 vojáků (17 divizí)... 3782 tanků a samohybných děl",
+        "voice": "Proti povstalcům s pouličními zbraněmi vyrazila armáda o síle celé malé válečné výpravy.",
+        "image_prompt": "Fotorealistický černobílý snímek řady sovětských tanků T-34 projíždějících ulicí Budapešti v roce 1956, poškozené fasády domů, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jeden z pokusů vymanit se ze sovětského bloku",
+        "fact": "Maďarské povstání se řadí mezi klíčové pokusy zemí sovětského bloku vymanit se z moskevské nadvlády během studené války.",
+        "source_url": "https://cs.wikipedia.org/wiki/Ma%C4%8Farsk%C3%A9_povst%C3%A1n%C3%AD",
+        "voice": "Podobný scénář — naděje, zásah tanků, ticho — se v sovětském bloku odehrál i jinde a jindy.",
+        "image_prompt": "Fotorealistický snímek pamětní desky a věčného plamene připomínajícího oběti roku 1956 v Budapešti, květiny u paty pomníku, denní světlo, bez textu, 16:9"
+      }
+    }
+  }
+]

@@ -1,0 +1,852 @@
+[
+  {
+    "id": "bg-mista-sofie",
+    "country": "Bulharsko",
+    "section": "Místa",
+    "topic": "Sofia",
+    "headline": "Hlavní město staré skoro 7000 let",
+    "fact": "Sofia patří k nejstarším hlavním městům Evropy — osídlení v jejím okolí sahá až 7000 let do minulosti, ačkoli hlavním městem Bulharska se stala teprve v roce 1879.",
+    "source_url": "https://en.wikipedia.org/wiki/Sofia",
+    "source_quote": "has a history of nearly 7,000 years",
+    "voice": "Město existovalo tisíce let předtím, než se vůbec stalo hlavním městem čehokoli.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek centra Sofie za soumraku s kostelem Svaté Neděle a odkrytými antickými ruinami Serdiky uprostřed moderní ulice, teplé pouliční osvětlení, bez lidí v popředí, 16:9",
+    "tags": ["regionalni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "ll": [23.3219, 42.6977],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hlavní město v stínu hor",
+        "fact": "Sofia leží v podhůří pohoří Vitoša a je po Andoře la Vella a Madridu třetím nejvýše položeným hlavním městem Evropy.",
+        "source_url": "https://en.wikipedia.org/wiki/Sofia",
+        "source_quote": "the third highest capital of Europe",
+        "voice": "Z centra města dohlédneš na zasněžený vrchol, na který se dá vyjet lanovkou hned po obědě.",
+        "image_prompt": "Fotorealistický snímek panoramatu Sofie s pohořím Vitoša zasněženým na vrcholcích v pozadí, jasný den, bez lidí v popředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město na křižovatce cest",
+        "fact": "Sofia leží na křižovatce cest spojujících střední Evropu s Blízkým východem a Egejským mořem, což z pravěkého osídlení postupně udělalo římské, byzantské, osmanské i moderní bulharské centrum.",
+        "source_url": "https://en.wikipedia.org/wiki/Sofia",
+        "voice": "Kdo ovládl tuhle křižovatku, ovládl cesty do všech okolních regionů zároveň.",
+        "image_prompt": "Fotorealistický letecký snímek Sofie se sítí historických i moderních cest sbíhajících se do centra města, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-mista-plovdiv",
+    "country": "Bulharsko",
+    "section": "Místa",
+    "topic": "Plovdiv",
+    "headline": "Město starší než Řím",
+    "fact": "Plovdiv patří k nejstarším nepřetržitě obydleným městům světa — první osady tu vznikly už v 6. tisíciletí před naším letopočtem.",
+    "source_url": "https://en.wikipedia.org/wiki/Plovdiv",
+    "source_quote": "habitation in the area dating back to the 6th millennium BC",
+    "voice": "Když ještě nikdo neslyšel o Římu, v Plovdivu už dávno stálo město.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starověkého římského divadla (Ancient Theatre) v Plovdivu při západu slunce, kamenné řady sedadel, staré město v pozadí, bez lidí, 16:9",
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-7"],
+    "ll": [24.7453, 42.1354],
+    "levels": {
+      "cestovatel": {
+        "headline": "Evropské hlavní město kultury",
+        "fact": "Plovdiv byl v roce 2019 Evropským hlavním městem kultury — starobylé uličky s osmanskými domy tu žijí bok po boku s galeriemi a pouličním uměním.",
+        "source_url": "https://en.wikipedia.org/wiki/Plovdiv",
+        "source_quote": "Plovdiv was the European Capital of Culture in 2019",
+        "voice": "Ulice, kterými kdysi chodili Římané, dnes zdobí street art.",
+        "image_prompt": "Fotorealistický snímek barevných osmanských domů ve starém městě Plovdiv s galeriemi a street artem na zdech, sluneční odpoledne, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vrstvy měst na jednom místě",
+        "fact": "Plovdiv vyrostl na několika pahorcích u řeky Marice, což mu dávalo obrannou výhodu a umožnilo nepřetržité osídlení přes thráckou, řeckou, římskou i osmanskou éru.",
+        "source_url": "https://en.wikipedia.org/wiki/Plovdiv",
+        "voice": "Kde jinde město zaniklo a vzniklo zas jinde, tady jedno město nikdy úplně nezmizelo.",
+        "image_prompt": "Fotorealistický letecký snímek Plovdivu s viditelnými pahorky uprostřed města a řekou Maricí, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-mista-nesebar",
+    "country": "Bulharsko",
+    "section": "Místa",
+    "topic": "Nesebar",
+    "headline": "Poloostrov se čtyřiceti kostely",
+    "fact": "Staré město Nesebar na úzkém poloostrově Černého moře má na ploše necelého kilometru čtverečního přes čtyřicet kostelů a je památkou UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Nessebar",
+    "source_quote": "a total of forty churches survive, wholly or partly, in the vicinity of the town",
+    "voice": "Víc kostelů než ulic — a všechny na kousku země obklopeném mořem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starobylých kamenných kostelů a dřevěných domů na poloostrově Nesebar obklopeném Černým mořem, večerní světlo, bez lidí, 16:9",
+    "tags": ["regionalni-geografie", "kulturni-geografie", "rocnik-6"],
+    "ll": [27.7368, 42.6587],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ostrov, který se stal poloostrovem",
+        "fact": "Nesebar byl původně ostrovem, který s pevninou spojila až úzká umělá šíje — tam, kam se dřív dalo jen lodí, dnes dojdeš pěšky.",
+        "source_url": "https://en.wikipedia.org/wiki/Nessebar",
+        "source_quote": "a narrow human-made isthmus with the ancient part of the settlement on the peninsula (previously an island)",
+        "voice": "Kdysi ostrov dostupný jen lodí, dnes tam dojdeš po úzké hrázi pěšky.",
+        "image_prompt": "Fotorealistický snímek úzké umělé šíje spojující pevninu s poloostrovem Nesebar, moře po obou stranách, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řecká kolonie na thráckém základu",
+        "fact": "Nesebar vznikl jako thrácké sídlo Mesembria, které na začátku 6. století před naším letopočtem osídlili řečtí kolonisté z Megary — vrstva kultur na vrstvě, typická pro celé černomořské pobřeží.",
+        "source_url": "https://en.wikipedia.org/wiki/Nessebar",
+        "source_quote": "Originally a Thracian settlement, known as Mesembria, the town became a Greek colony when settled by Dorians from Megara at the beginning of the 6th century BC",
+        "voice": "Řekové si tu vybrali místo, které tisíc let předtím obývali úplně jiní lidé.",
+        "image_prompt": "Fotorealistický snímek antických řeckých a byzantských zbytků zdí v Nesebaru u moře, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-priroda-musala",
+    "country": "Bulharsko",
+    "section": "Příroda",
+    "topic": "Musala",
+    "headline": "Nejvyšší vrchol Balkánu",
+    "fact": "Musala v pohoří Rila měří 2925 metrů a je nejvyšším vrcholem nejen Bulharska, ale celého Balkánského poloostrova.",
+    "source_url": "https://en.wikipedia.org/wiki/Musala",
+    "source_quote": "the highest peak in the entire Balkan Peninsula",
+    "voice": "Nejvyšší bod na cestě z Istanbulu do Vídně.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Musala v pohoří Rila, skalnaté hřebeny, jasná modrá obloha, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "ll": [23.5892, 42.1799],
+    "levels": {
+      "cestovatel": {
+        "headline": "Výzkumná stanice na vrcholu",
+        "fact": "Na vrcholu Musaly stála od roku 1960 stanice pro výzkum kosmického záření postavená ve spolupráci s Maďarskou akademií věd, než ji v roce 1983 zničil požár.",
+        "source_url": "https://en.wikipedia.org/wiki/Musala",
+        "source_quote": "A cosmic ray station was built on the peak in 1960 with cooperation from the Hungarian Academy of Science ... The station was destroyed by an electrical fire on October 29, 1983.",
+        "voice": "Fyzikové tu měřili částice z vesmíru na místě, kam dnes turisté chodí hlavně na výlet.",
+        "image_prompt": "Fotorealistický snímek staré horské observatoře na vrcholu Musaly obklopené skalami a mlhou, chladné světlo, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vrchol na rozvodí dvou moří",
+        "fact": "Přes hřeben pohoří Rila u vrcholu Musala prochází hlavní evropské rozvodí, které odděluje povodí Černého moře od povodí Egejského moře.",
+        "source_url": "https://en.wikipedia.org/wiki/Rila",
+        "source_quote": "The main drainage divide in the Balkans separating the drainage basins of the Black Sea and the Aegean Sea passes through Rila's northern ridge, including the summit of Musala.",
+        "voice": "O pár kroků dál po hřebeni by kapka deště mířila do úplně jiného moře.",
+        "image_prompt": "Fotorealistický snímek hřebene pohoří Rila kolem vrcholu Musala, kamenitá krajina, dramatická obloha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-priroda-ruzove-udoli",
+    "country": "Bulharsko",
+    "section": "Příroda",
+    "topic": "Růžové údolí",
+    "headline": "Údolí, které voní růžovým olejem",
+    "fact": "Růžové údolí kolem města Kazanlak produkuje téměř polovinu světové produkce růžového oleje, který se lisuje z obrovského množství okvětních lístků růže damašské.",
+    "source_url": "https://en.wikipedia.org/wiki/Rose_Valley,_Bulgaria",
+    "source_quote": "produces close to half ... of the world's rose oil",
+    "voice": "Na jednu kapku vzácného oleje padne naprosto obrovská hromada okvětních lístků.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sklizně růží v Růžovém údolí u Kazanlaku za časného rána, ženy v tradičních krojích sbírají růžové květy do pytlů, mlha nad údolím, 16:9",
+    "tags": ["fyzicka-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "ll": [25.3986, 42.6272],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sklizeň, která začíná za svítání",
+        "fact": "Růže se musí trhat brzy ráno, dokud v okvětních lístcích zůstává rosa a jsou plné vonných silic — proto sklizeň v Kazanlaku začíná už za šera. Na Svátku růží pak místní oslavují úrodu lidovými kroji a tancem.",
+        "source_url": "https://en.wikipedia.org/wiki/Rose_Valley,_Bulgaria",
+        "voice": "Kdo chce voňavý olej, musí vstát dřív než slunce.",
+        "image_prompt": "Fotorealistický snímek dívek v bulharských lidových krojích s koši plnými růžových květů na Svátku růží v Kazanlaku, ranní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Klima jako stvořené pro růže",
+        "fact": "Růžové údolí leží v kotlině mezi Balkánským pohořím a pohořím Sredna gora, která ho chrání před silnými větry i mrazem — právě tahle poloha spolu s tradicí pěstování z osmanské éry umožnila vznik tak koncentrované produkce.",
+        "source_url": "https://en.wikipedia.org/wiki/Rose_Valley,_Bulgaria",
+        "voice": "Ochranné hory kolem dokola vytvořily podmínky, jaké jinde na světě těžko najdeš.",
+        "image_prompt": "Fotorealistický letecký snímek kotliny Růžového údolí obklopené horskými hřebeny, políčka růží v řadách, ranní mlha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-priroda-cerne-more",
+    "country": "Bulharsko",
+    "section": "Příroda",
+    "topic": "Černomořské pobřeží",
+    "headline": "378 kilometrů písečných pláží",
+    "fact": "Bulharské pobřeží Černého moře měří 378 kilometrů, z čehož asi třetinu tvoří světlé písečné pláže.",
+    "source_url": "https://en.wikipedia.org/wiki/Bulgarian_Black_Sea_Coast",
+    "source_quote": "along 378 km of coastline ... white and golden sandy beaches occupy approximately 130 km of the 378 km long coast",
+    "voice": "Tolik pobřeží, že by na ručník vždycky zbylo dost místa.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek písečné pláže bulharského pobřeží Černého moře, klidné moře, ranní světlo, bez lidí, 16:9",
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Riviéra, která změnila jméno",
+        "fact": "Za socialismu se pobřeží říkalo 'Rudá riviéra', po pádu železné opony v roce 1989 se přejmenovalo na 'Bulharskou riviéru' — pláže a letoviska ale zůstaly na svém místě.",
+        "source_url": "https://en.wikipedia.org/wiki/Bulgarian_Black_Sea_Coast",
+        "source_quote": "historically called the 'Red Riviera' during the communist era but has been renamed the 'Bulgarian Riviera' following the fall of the Iron Curtain in 1989",
+        "voice": "Jiný název na ceduli, úplně stejný písek pod nohama.",
+        "image_prompt": "Fotorealistický snímek letoviska na bulharském pobřeží Černého moře s řadou hotelů podél pláže, slunečné odpoledne, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pobřeží mezi dvěma sousedy",
+        "fact": "Bulharské pobřeží se táhne od rumunské hranice na severu až po tureckou na jihu a je jediným přímým přístupem Bulharska k moři, díky čemuž se tu soustředí naprostá většina přímořského cestovního ruchu země.",
+        "source_url": "https://en.wikipedia.org/wiki/Bulgarian_Black_Sea_Coast",
+        "source_quote": "covers the entire eastern bound of Bulgaria stretching from the Romanian Black Sea resorts in the north to European Turkey in the south",
+        "voice": "Jediný pruh pobřeží, a přesto živí většinu bulharského turismu.",
+        "image_prompt": "Fotorealistický letecký snímek bulharského černomořského pobřeží s pláží, přístavem a pobřežní silnicí, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-lide-etnika",
+    "country": "Bulharsko",
+    "section": "Lidé",
+    "topic": "Etnické složení",
+    "headline": "Turecká a romská menšina v jedné zemi",
+    "fact": "Podle sčítání lidu tvoří etničtí Bulhaři asi 86 % obyvatel, turecká menšina kolem 9 % a romská menšina přes 4 %.",
+    "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
+    "source_quote": "Bulgarian: 85.7% ... Turkish: 8.5% ... Romani: 4.5%",
+    "voice": "Tři jazyky, tři kuchyně, tři sady svátků — a jeden společný pas.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek pouličního trhu v bulharském městě s různorodými návštěvníky, barevné stánky se zeleninou a kořením, denní světlo, bez detailních tváří v popředí, 16:9",
+    "tags": ["socioekonomicka-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vesnice, kde se mluví dvěma jazyky",
+        "fact": "V jihovýchodním a severovýchodním Bulharsku najdeš celé vesnice, kde je turečtina běžným jazykem ulice i domácnosti — menšina tu žije soustředěně už po generace, ne rozptýlená po celé zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
+        "voice": "Přejedeš pár kilometrů, a jazyk na vývěsních štítech se úplně změní.",
+        "image_prompt": "Fotorealistický snímek malé bulharské vesnice s mešitou a nápisy ve dvou jazycích na obchodech, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Menšiny podceněné ve statistikách",
+        "fact": "Romská menšina bývá ve sčítáních podhodnocená, protože se část lidí hlásí k jiné identitě — skutečný podíl romského obyvatelstva proto některé odhady kladou až na 9–11 %, tedy citelně výš než oficiální číslo.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
+        "source_quote": "Romani populations are usually underestimated in official statistics and may represent 9–11% of Bulgaria's population",
+        "voice": "Číslo ve statistice a realita v ulicích se tu docela liší.",
+        "image_prompt": "Fotorealistický snímek živé ulice v romské čtvrti bulharského města, barevné domy, denní světlo, bez detailních tváří v popředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-lide-cirkev",
+    "country": "Bulharsko",
+    "section": "Lidé",
+    "topic": "Pravoslavná církev",
+    "headline": "Nejstarší slovanská pravoslavná církev",
+    "fact": "Bulharská pravoslavná církev získala v roce 927 uznání jako samostatný patriarchát — je tak nejstarší autokefální slovanskou pravoslavnou církví na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Bulgarian_Orthodox_Church",
+    "source_quote": "the first autocephalous Slavic Orthodox Church, preceding the autocephaly of the Serbian Orthodox Church (1219) by 292 years and of the Russian Orthodox Church (1596) by 662 years",
+    "voice": "Když ruská církev teprve vznikala, ta bulharská už měla za sebou stovky let samostatnosti.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek interiéru bulharského pravoslavného kostela se zlatými ikonostasy a freskami, svíčky, tlumené světlo, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Víra, která určuje kalendář",
+        "fact": "Většina věřících Bulharů se hlásí k pravoslaví — podle sčítání lidu je to přes 59 % obyvatel — a pravoslavné svátky jako Vánoce či Velikonoce dodnes určují rytmus bulharského roku.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
+        "source_quote": "Eastern Orthodox: 59.4%",
+        "voice": "Kalendář, podle kterého se pekou koláče a zavírají školy, je tu pořád ten církevní.",
+        "image_prompt": "Fotorealistický snímek bulharských věřících se svíčkami před pravoslavným kostelem na Velikonoce, večerní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Šestý patriarchát v pravoslavném světě",
+        "fact": "Bulharský patriarchát se historicky stal šestým patriarchátem v pravoslavném světě po starobylých patriarchátech Říma, Konstantinopole, Alexandrie, Antiochie a Jeruzaléma — mladý stát si tak vydobyl místo vedle center staletí starého křesťanství.",
+        "source_url": "https://en.wikipedia.org/wiki/Bulgarian_Orthodox_Church",
+        "source_quote": "the sixth patriarchate after the Pentarchy patriarchates of Rome, Constantinople, Alexandria, Antioch, and Jerusalem",
+        "voice": "Nová říše na mapě si vydobyla místo vedle patriarchátů starých tisíc let.",
+        "image_prompt": "Fotorealistický snímek starobylého bulharského kláštera na kopci za soumraku, kamenné zdi, kříž na věži, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-lide-populace",
+    "country": "Bulharsko",
+    "section": "Lidé",
+    "topic": "Ubývající obyvatelstvo",
+    "headline": "Země, které rychle ubývá lidí",
+    "fact": "Populace Bulharska klesla z více než 9 milionů obyvatel v roce 1989 na dnešních zhruba 6,4 milionu.",
+    "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
+    "source_quote": "population peaked at 9,009,018 in 1989",
+    "voice": "Za pár desetiletí ubylo skoro tolik lidí, kolik dnes žije v celém Rakousku.",
+    "visual_type": "typographic",
+    "tags": ["socioekonomicka-geografie", "aktualni-temata", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vesnice, které se vylidňují",
+        "fact": "V bulharských horských a venkovských oblastech dnes najdeš mnoho téměř opuštěných vesnic — mladí lidé odcházejí za prací do měst nebo do zahraničí a zůstávají hlavně starší generace.",
+        "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
+        "voice": "Ve škole, kam kdysi chodily desítky dětí, dnes nezůstal ani jeden žák.",
+        "image_prompt": "Fotorealistický snímek téměř opuštěné bulharské horské vesnice, staré domy, prázdná náves, podzimní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Demografie jako varovný ukazatel",
+        "fact": "Nízká porodnost se tu kombinuje s masivní emigrací po roce 1989 — kvůli tomu OSN dlouhodobě řadí Bulharsko mezi země s vůbec nejrychleji se zmenšující populací na světě.",
+        "source_url": "https://www.novinite.com/articles/170130/Bulgaria%20Will%20Have%20World's%20Most%20Rapidly%20Shrinking%20Population%20in%20Next%2035%20Years%20-%20UN",
+        "source_quote": "Bulgaria is expected to have the world's highest population decline rate between 2015 and 2050",
+        "voice": "Lidi tu neubrala válka ani katastrofa, jen tichý odchod za lepším životem jinde.",
+        "image_prompt": "Fotorealistický snímek poloprázdného vlakového nádraží v menším bulharském městě, pár lidí na peroně, podzimní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-kultura-klaster",
+    "country": "Bulharsko",
+    "section": "Kultura & tradice",
+    "topic": "Rilský klášter",
+    "headline": "Největší klášter Bulharska",
+    "fact": "Rilský klášter, založený ve 4. desetiletí 10. století poustevníkem Ivanem Rilským, je největším a nejvýznamnějším pravoslavným klášterem v Bulharsku a památkou UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Rila_Monastery",
+    "source_quote": "the largest and most famous Eastern Orthodox monastery in Bulgaria",
+    "voice": "Poustevník hledal samotu v horách a nakonec založil místo, kam dnes míří davy poutníků.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Rilského kláštera s pruhovanými oblouky nádvoří v černo-bílo-hnědých barvách, obklopeného zalesněnými horami, denní světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "ll": [23.3403, 42.1335],
+    "levels": {
+      "cestovatel": {
+        "headline": "Klášter na bankovce",
+        "fact": "Rilský klášter je natolik symbolický, že je vyobrazený na bulharské bankovce v hodnotě jeden lev a jen v roce 2008 ho navštívilo přes 900 000 lidí.",
+        "source_url": "https://en.wikipedia.org/wiki/Rila_Monastery",
+        "source_quote": "The monastery is depicted on the reverse of the 1 lev banknote issued in 1999 ... attracted 900,000 visitors",
+        "voice": "Peníze v peněžence i cíl výletu — klášter má v Bulharsku dvojí život.",
+        "image_prompt": "Fotorealistický detailní snímek freskami zdobených oblouků nádvoří Rilského kláštera, turisté v pozadí, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Duchovní centrum v odlehlých horách",
+        "fact": "Umístění kláštera hluboko v horách Rila nebylo náhodné — odlehlost chránila mnichy i vzácné rukopisy během staletí osmanské nadvlády, kdy byl klášter jedním z mála míst uchovávajících bulharskou identitu.",
+        "source_url": "https://en.wikipedia.org/wiki/Rila_Monastery",
+        "voice": "Čím dál od úřadů dobyvatelů, tím snazší bylo uchránit vlastní jazyk a víru.",
+        "image_prompt": "Fotorealistický letecký snímek Rilského kláštera v hlubokém horském údolí obklopeném hustými lesy, ranní mlha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-kultura-kukeri",
+    "country": "Bulharsko",
+    "section": "Kultura & tradice",
+    "topic": "Kukeri",
+    "headline": "Maskovaní muži, kteří odhánějí zlé duchy",
+    "fact": "Kukeři jsou bulharští muži v ozdobných maskách a velkých zvonech na opasku, kteří kolem Nového roku obcházejí vesnice a hlučným tancem mají zahnat zlé duchy.",
+    "source_url": "https://en.wikipedia.org/wiki/Kukeri",
+    "source_quote": "elaborately costumed Bulgarian men who perform traditional rituals intended to scare away evil spirits",
+    "voice": "Čím hlasitěji zvonky řinčí, tím dál prý zlí duchové utíkají.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bulharského kukera v masce zvířete a huňatém kostýmu s velkými kovovými zvony na opasku při vesnickém průvodu v zimě, sníh, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Noční obchůzka, než vyjde slunce",
+        "fact": "Kukeři tradičně obcházejí domy v noci, protože podle pověry by je slunce nemělo zastihnout na cestě — teprve po obchůzce se všichni sejdou na návsi k divokému tanci.",
+        "source_url": "https://en.wikipedia.org/wiki/Kukeri",
+        "source_quote": "the sun would not catch them on the road",
+        "voice": "Ráno je vidět, kdo v noci obcházel vesnicí — ale masky to tajily do poslední chvíle.",
+        "image_prompt": "Fotorealistický snímek skupiny kukerů tančících za tmy na návsi bulharské vesnice, pochodně, sníh, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Balkánská mumraj napříč hranicemi",
+        "fact": "Podobné maskované obchůzky s cílem zahnat zimu a přivolat úrodu existují napříč celým Balkánem — v Řecku, Rumunsku i Srbsku — což ukazuje, že tahle tradice nepatří jen jednomu národu, ale celému regionu.",
+        "source_url": "https://en.wikipedia.org/wiki/Kukeri",
+        "voice": "Jiné jméno v každé zemi, ale stejná touha vyhnat zimu hlukem a maskami.",
+        "image_prompt": "Fotorealistický snímek mapy podobných maskovaných zimních tradic po celém Balkáně, ilustrovaný kostýmy z různých zemí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-kultura-nestinarstvo",
+    "country": "Bulharsko",
+    "section": "Kultura & tradice",
+    "topic": "Nestinarstvo",
+    "headline": "Tanec bosých nohou po žhavém uhlí",
+    "fact": "V šesti vesnicích pohoří Strandža tančí nestinaři bosí po žhavém uhlí, aniž by se popálili — obřad je od roku 2009 zapsaný na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Nestinarstvo",
+    "source_quote": "six Bulgarian villages in the Strandzha Mountains: Balgari, Gramatikovo, Slivarovo, Kondolovo, Kosti, and Brodilovo ... the ritual was entered in the UNESCO Intangible Cultural Heritage Lists",
+    "voice": "Nohy v ohni, a přesto žádné popáleniny — místní to vysvětlují vytržením a vírou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bulharského nestinaria tančícího bosý po žhnoucích uhlících za tmy, jiskry a záře ohně, diváci v pozadí, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "ll": [27.6547, 42.0517],
+    "levels": {
+      "cestovatel": {
+        "headline": "Svátek dvou svatých v květnu",
+        "fact": "Chůze po žhavém uhlí vrcholí každoročně 21. až 23. května na svátek svatých Konstantina a Heleny, kdy tanečníci upadají do transu za zvuku bubnů a dud.",
+        "source_url": "https://en.wikipedia.org/wiki/Nestinarstvo",
+        "source_quote": "May 21 and ends on May 23 every year",
+        "voice": "Tři dny hudby a tance, které vyvrcholí bosou chůzí přes žhnoucí uhlíky.",
+        "image_prompt": "Fotorealistický snímek bulharských vesničanů s bubny a dudami při obřadu nestinarstvo za soumraku, oheň v popředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rituál, který přinesli uprchlíci",
+        "fact": "Tradici do jižního Bulharska a severního Řecka přinesly komunity uprchlíků z východní Thrákie po balkánských válkách a výměně obyvatel mezi Řeckem a Tureckem ve 20. letech 20. století — ukázka, jak migrace přenáší i ty nejneobvyklejší zvyky.",
+        "source_url": "https://en.wikipedia.org/wiki/Nestinarstvo",
+        "source_quote": "descended from refugees who entered Greece from Eastern Thrace following the Balkan Wars of 1911–12 and the Population exchange between Greece and Turkey in 1923",
+        "voice": "Lidé opustili domov, ale zvyk si s sebou odnesli přes novou hranici.",
+        "image_prompt": "Fotorealistický snímek horské vesnice v pohoří Strandža na hranici Bulharska a Řecka, kopcovitá krajina, večerní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-umeni-bojana",
+    "country": "Bulharsko",
+    "section": "Umění",
+    "topic": "Boyanský kostel",
+    "headline": "Fresky, které předběhly renesanci",
+    "fact": "Boyanský kostel u Sofie ukrývá fresky z roku 1259 s více než 240 postavami, jejichž realistické tváře předběhly styl italské renesance o celá staletí.",
+    "source_url": "https://en.wikipedia.org/wiki/Boyana_Church",
+    "source_quote": "The majority of the more than 240 figures depicted here display individuality, remarkable psychological insight and vitality.",
+    "voice": "Tváře tak živé, že vypadají spíš jako portréty konkrétních lidí než jako svatí obrázci.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek interiéru Boyanského kostela u Sofie s barevnými středověkými freskami postav na klenutých zdech, tlumené světlo svíček, bez lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "ll": [23.2894, 42.6151],
+    "levels": {
+      "cestovatel": {
+        "headline": "Portréty dárců, kteří kostel zaplatili",
+        "fact": "Nejslavnější dvojice fresek zachycuje samotné donátory — sebastokrátora Kaloyana a jeho ženu Desislavu — namalované s takovou přesností, že patří mezi vůbec nejstarší dochované portréty konkrétních osobností bulharských dějin.",
+        "source_url": "https://en.wikipedia.org/wiki/Boyana_Church",
+        "source_quote": "among the oldest portraits of figures from Bulgarian history",
+        "voice": "Lidé, kteří zaplatili za výzdobu kostela, si tak zajistili tvář, co přežila 800 let.",
+        "image_prompt": "Fotorealistický detailní snímek středověké fresky portrétu šlechtického páru na zdi Boyanského kostela, teplé tlumené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Chybějící článek evropského malířství",
+        "fact": "Realismus boyanských fresek z poloviny 13. století je pro historiky umění důležitý proto, že podobný obrat k lidským emocím a perspektivě se v západní Evropě prosadil až o desítky let později — Bulharsko tak ukazuje, že vývoj umění neprobíhal jen jedním směrem od západu na východ.",
+        "source_url": "https://en.wikipedia.org/wiki/Boyana_Church",
+        "source_quote": "played an important role in the development of mediaeval Bulgarian and European painting",
+        "voice": "Nápad, který si obvykle připisuje italská renesance, se tu objevil o dost dřív.",
+        "image_prompt": "Fotorealistický snímek exteriéru malého středověkého Boyanského kostela z kamene a cihel obklopeného stromy, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-umeni-christo",
+    "country": "Bulharsko",
+    "section": "Umění",
+    "topic": "Christo",
+    "headline": "Umělec, který zabalil parlament i pobřeží",
+    "fact": "Sochař a instalační umělec Christo se narodil v roce 1935 v bulharském Gabrovu a proslavil se monumentálním zabalováním budov a krajiny do látky, například celého berlínského Reichstagu.",
+    "source_url": "https://en.wikipedia.org/wiki/Christo",
+    "source_quote": "Christo Vladimirov Javacheff was born June 13, 1935, in Gabrovo, Bulgaria",
+    "voice": "Zabalit vládní budovu do plachty a nazvat to uměním — jemu se to povedlo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek berlínského Reichstagu zabaleného do stříbrné látky podle díla Christa Wrapped Reichstag, davy lidí v okolí, denní světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Umění, které za pár týdnů zmizí",
+        "fact": "Christova nejslavnější díla byla vždy dočasná — třeba 7503 barevných bran v newyorském Central Parku stály jen dva týdny v roce 2005, než je opět rozebrali.",
+        "source_url": "https://en.wikipedia.org/wiki/Christo",
+        "source_quote": "The Gates (2005) - 7,503 saffron-colored gates throughout Central Park",
+        "voice": "Postavit obří dílo s vědomím, že za pár dní po něm nezbude ani stopa.",
+        "image_prompt": "Fotorealistický snímek stovek šafránově oranžových bran instalace The Gates v zasněženém newyorském Central Parku, procházející lidé, zimní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umělec, který utekl jako černý pasažér",
+        "fact": "Christo v roce 1956 využil rodinnou návštěvu v Praze k odchodu z komunistického Bulharska a odtud později utekl jako černý pasažér ve vlaku do Vídně, aby unikl cenzuře i vojenské službě — teprve na svobodném Západě mohl rozvinout svůj umělecký styl.",
+        "source_url": "https://en.wikipedia.org/wiki/Christo",
+        "source_quote": "In 1956, he used an academy connection to receive permission to visit family in Prague ... Christo decided to flee to Vienna as a railcar stowaway",
+        "voice": "Utekl bez peněz a bez znalosti jazyka, jen aby mohl svobodně balit celé krajiny do látky.",
+        "image_prompt": "Fotorealistický snímek pobřežní krajiny Bulharska při západu slunce, symbolizující místo, odkud umělec kdysi odešel, bez lidí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-umeni-balkanska",
+    "country": "Bulharsko",
+    "section": "Umění",
+    "topic": "Valja Balkanska",
+    "headline": "Jediná bulharská píseň ve vesmíru",
+    "fact": "Píseň 'Izlel e Delyu Hajdutin' v podání Valji Balkanské je jedinou bulharskou skladbou na Voyagerské zlaté desce, kterou v roce 1977 vyslaly do vesmíru sondy Voyager jako poselství o lidské kultuře.",
+    "source_url": "https://en.wikipedia.org/wiki/Voyager_Golden_Record",
+    "source_quote": "\"Izlel e Delyu Haydutin\"",
+    "voice": "Pastýřská píseň z rodopských hor letí vesmírem dál, než kdy doletí jakékoli letadlo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bulharské zpěvačky v tradičním rodopském kroji zpívající na horské louce při západu slunce, bez dalších lidí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zvláštní tón, který zaujal odborníky",
+        "fact": "Píseň zpívaná typickou bulharskou pastýřskou technikou s ostrým, nosovým tónem zaujala sestavovatele desky natolik, že ji zařadili mezi pouhé necelé tři desítky hudebních ukázek z celého světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_Golden_Record",
+        "voice": "Ze všech písní světa vybrali zrovna tenhle jeden hlas z rodopských hor.",
+        "image_prompt": "Fotorealistický snímek rodopské hornaté krajiny v podvečerním světle, pastýř s ovcemi v dálce, 16:9"
+      },
+      "kartograf": {
+        "headline": "Lidová hudba jako vizitka planety",
+        "fact": "Výběr skladeb na Voyagerskou desku měl reprezentovat rozmanitost lidských kultur pro případné mimozemské posluchače — že mezi světovými legendami skončila právě bulharská pastýřská píseň, ukazuje, jak výjimečně bohatá je balkánská lidová hudební tradice.",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_Golden_Record",
+        "voice": "Z tisíců lidových písní světa letí vesmírem právě tahle jedna z Balkánu.",
+        "image_prompt": "Fotorealistický snímek noční oblohy plné hvězd nad rodopskými horami Bulharska, žádné umělé osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-sport-zapas",
+    "country": "Bulharsko",
+    "section": "Sport",
+    "topic": "Zápas",
+    "headline": "Nejúspěšnější olympijský sport Bulharska",
+    "fact": "Zápas je historicky nejúspěšnější olympijský sport Bulharska — bulharští zápasníci na hrách vybojovali už přes 70 medailí, z toho 18 zlatých.",
+    "source_url": "https://en.wikipedia.org/wiki/Sport_in_Bulgaria",
+    "source_quote": "Wrestling is the most successful discipline. Bulgarian wrestlers have earned a total of 73 medals, including 18 Gold.",
+    "voice": "Jeden sport, a přesto vynesl zemi víc medailí než všechny ostatní dohromady.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dvou zápasníků v akci na žíněnce v hale, dramatické osvětlení, diváci rozostření v pozadí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rodinná tradice od dětství",
+        "fact": "V Bulharsku funguje hustá síť zápasnických klubů už pro malé děti — úspěch na olympiádách totiž stavěl na masové základně mladých sportovců vychovávaných po celé zemi, ne jen na hrstce hvězd.",
+        "source_url": "https://en.wikipedia.org/wiki/Sport_in_Bulgaria",
+        "voice": "Než se stane olympijským šampionem, každý zápasník začíná jako klučina v místním klubu.",
+        "image_prompt": "Fotorealistický snímek dětského zápasnického tréninku v bulharské tělocvičně, trenér ukazuje chvat, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport jako státní prestiž",
+        "fact": "Za socialistické éry stát masivně investoval do olympijských 'silových sportů' jako zápas a vzpírání, protože medaile fungovaly jako důkaz úspěšnosti systému — po roce 1990 státní podpora prudce klesla a s ní i počet medailí.",
+        "source_url": "https://en.wikipedia.org/wiki/Bulgaria_at_the_Olympics",
+        "source_quote": "After the fall of the communist regime in 1989–90, in Bulgaria's turbulent transition to free-market democracy, top-notch state support for Bulgarian Olympians disintegrated.",
+        "voice": "Zlaté medaile tehdy dokazovaly sílu státu stejně jako továrny nebo armáda.",
+        "image_prompt": "Fotorealistický snímek staré bulharské sportovní haly ze socialistické éry, opotřebované tribuny, tlumené světlo, bez lidí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-sport-stoickov",
+    "country": "Bulharsko",
+    "section": "Sport",
+    "topic": "Hristo Stoičkov",
+    "headline": "Nejlepší fotbalista roku 1994",
+    "fact": "Hristo Stoičkov dovedl Bulharsko na Mistrovství světa 1994 do semifinále, stal se se šesti góly společně nejlepším střelcem šampionátu a téhož roku vyhrál Zlatý míč pro nejlepšího fotbalistu Evropy.",
+    "source_url": "https://en.wikipedia.org/wiki/Hristo_Stoichkov",
+    "source_quote": "he was awarded the World Cup Golden Boot as the joint top goal scorer (alongside Oleg Salenko), netting six goals",
+    "voice": "Malá balkánská země najednou hrála o pohár s největšími fotbalovými velmocemi světa.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fotbalisty v bulharském dresu oslavujícího gól na velkém stadionu, večerní osvětlení, dav v pozadí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přezdívka Pistolník z Barcelony",
+        "fact": "Ve španělské Barceloně, kde získal přezdívku 'El Pistolero', tvořil Stoičkov se spoluhráčem Romáriem obávanou útočnou dvojici a pomohl klubu ke čtyřem mistrovským titulům v řadě.",
+        "source_url": "https://en.wikipedia.org/wiki/Hristo_Stoichkov",
+        "source_quote": "Won four consecutive La Liga titles (1991-1994)",
+        "voice": "V Barceloně mu přezdívka slibovala rychlost a přesnost mířené střely.",
+        "image_prompt": "Fotorealistický snímek fotbalového útočníka ve žluto-modrém dresu Barcelony běžícího s míčem na stadionu, sluneční den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Fotbal jako vizitka malé země",
+        "fact": "Úspěch jednoho výjimečného hráče dokázal na chvíli postavit Bulharsko na fotbalovou mapu světa vedle mnohem větších a bohatších zemí — ukázka, jak individuální talent umí vyvážit rozdíl ve velikosti či ekonomické síle státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Hristo_Stoichkov",
+        "voice": "Stačil jeden výjimečný hráč, a celý svět si na chvíli zapamatoval jméno malé země.",
+        "image_prompt": "Fotorealistický snímek fanoušků s bulharskými vlajkami na fotbalovém stadionu, večerní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-sport-panova",
+    "country": "Bulharsko",
+    "section": "Sport",
+    "topic": "Bianka Panova",
+    "headline": "Osm perfektních známek na jednom šampionátu",
+    "fact": "Bulharská gymnastka Bianka Panova jako první v historii vyhrála na mistrovství světa v moderní gymnastice roku 1987 všech pět zlatých medailí a za osm perfektních známek 10 se zapsala do Guinnessovy knihy rekordů.",
+    "source_url": "https://en.wikipedia.org/wiki/Bianka_Panova",
+    "source_quote": "Panova is the first rhythmic gymnast to get a clean sweep of all five (all-around, ribbon, clubs, hoop, rope) gold medals at a World Championship",
+    "voice": "Porotci jí prostě neměli co vytknout — desítka za desítkou, pořád dokola.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek moderní gymnastky ve fialovém dresu s barevnou stuhou během vystoupení v hale, dramatické osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rekord ve vlastním domácím městě",
+        "fact": "Panova svůj historický rekord vytvořila přímo v bulharské Varně, kde se mistrovství světa roku 1987 konalo — vystupovala tak před vlastním publikem, které ji povzbuzovalo naživo.",
+        "source_url": "https://en.wikipedia.org/wiki/Bianka_Panova",
+        "source_quote": "She achieved this at the 1987 World Championships in Varna",
+        "voice": "Nejlepší výkon kariéry si nechala na chvíli, kdy fandili přímo její vlastní lidé.",
+        "image_prompt": "Fotorealistický snímek sportovní haly ve Varně plné diváků během gymnastické soutěže, jasné osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vrchol bulharské gymnastické školy",
+        "fact": "Bulharská federace moderní gymnastiky vznikla už v roce 1963 a od té doby vychovala celé generace elitních závodnic — Panova tak nebyla ojedinělým zjevem, ale vyvrcholením dlouhodobě budovaného tréninkového systému.",
+        "source_url": "https://en.wikipedia.org/wiki/Rhythmic_gymnastics",
+        "source_quote": "The Bulgarian Rhythmic Gymnastics Federation was established in 1963, and in the early days of the sport, most elite gymnasts spent time training in Bulgaria.",
+        "voice": "Za jednou hvězdou většinou stojí desítky let budovaný systém v pozadí.",
+        "image_prompt": "Fotorealistický snímek tréninkové haly moderní gymnastiky s několika mladými sportovkyněmi cvičícími se stuhami, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-jazyk-kyvani",
+    "country": "Bulharsko",
+    "section": "Jazyk & slova",
+    "topic": "Přikyvování",
+    "headline": "Kde přikývnutí znamená ne",
+    "fact": "V Bulharsku tradičně kývání hlavou nahoru-dolů znamená 'ne' a kývání ze strany na stranu znamená 'ano' — přesně obráceně než ve většině Evropy.",
+    "source_url": "https://en.wikipedia.org/wiki/Head_shake",
+    "source_quote": "in some Southeastern European areas such as Bulgaria and southern Albania, it is used for the opposite purpose, to indicate affirmation, meaning 'yes' ... nodding in fact means 'no'",
+    "voice": "Turista přikývne na souhlas a Bulhar mu právě odmítl.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrétní snímek bulharského prodavače na tržišti gestikulujícího hlavou při rozhovoru se zákazníkem, přirozené denní světlo, bez textu, 16:9",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Gesto, které cizince snadno zmate",
+        "fact": "Zvyk je natolik zakořeněný, že si ho všímají téměř všichni turisté — v posledních desetiletích ho ale hlavně mladší generace ve městech kvůli kontaktu s cizinci často obrací zpátky na mezinárodní úzus.",
+        "source_url": "https://en.wikipedia.org/wiki/Head_shake",
+        "voice": "Mladší generace ve městech se gesto díky cizincům pomalu učí zase obrátit.",
+        "image_prompt": "Fotorealistický snímek dvou lidí v rozhovoru na ulici v Sofii, jeden gestikuluje hlavou, městské prostředí, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Gesto jako mapa kulturních hranic",
+        "fact": "Obrácený význam přikývnutí je jeden z mála gest, kde kulturní hranice nekopíruje jazykovou ani politickou — objevuje se i v částech Řecka a Albánie, ne jen v Bulharsku.",
+        "source_url": "https://en.wikipedia.org/wiki/Head_shake",
+        "voice": "Stejné gesto, jiný význam — a hranici mezi nimi na politické mapě nenajdeš.",
+        "image_prompt": "Fotorealistický širokoúhlý snímek balkánské vesnice na hranici Bulharska a Řecka, hornatá krajina, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-jazyk-cyrilice",
+    "country": "Bulharsko",
+    "section": "Jazyk & slova",
+    "topic": "Cyrilice",
+    "headline": "Písmo vzniklé v Bulharsku",
+    "fact": "Cyrilice, kterou dnes používá přes tucet jazyků od Ruska po Srbsko, vznikla koncem 9. století v bulharské Preslavské literární škole, kde ji vytvořili žáci věrozvěsta Cyrila.",
+    "source_url": "https://en.wikipedia.org/wiki/Early_Cyrillic_alphabet",
+    "source_quote": "developed in Bulgaria in the Preslav Literary School during the late 9th century",
+    "voice": "Písmo nese jméno jednoho muže, ale doopravdy ho dotvořili až jeho žáci v Bulharsku.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek staré kamenné desky s vytesaným raně cyrilickým nápisem v archeologickém nalezišti Veliki Preslav, denní světlo, 16:9",
+    "tags": ["jazykoveda", "dejiny", "rocnik-8"],
+    "ll": [26.8167, 43.1667],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejstarší nápis starý přes tisíc let",
+        "fact": "Jeden z vůbec nejstarších dochovaných cyrilických nápisů, takzvaný krepčanský nápis, pochází z okolí Preslavu a je datovaný do roku 921.",
+        "source_url": "https://en.wikipedia.org/wiki/Early_Cyrillic_alphabet",
+        "source_quote": "The earliest Cyrillic texts are found in northeastern Bulgaria, in the vicinity of Preslav—the Krepcha inscription, dating back to 921.",
+        "voice": "Kámen, na který se dá sáhnout, píše dopis starý přes tisíc let.",
+        "image_prompt": "Fotorealistický snímek archeologického parku Veliki Preslav s ruinami středověkého bulharského hlavního města, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Náhrada písma jako politický akt",
+        "fact": "Nahrazení staršího hlaholského písma jednodušší cyrilicí na koncilu v Preslavu roku 893 nebyl jen jazykový, ale i mocenský krok — usnadnil bohoslužby ve slovanském jazyce a posílil kulturní nezávislost první bulharské říše na Byzanci.",
+        "source_url": "https://en.wikipedia.org/wiki/Early_Cyrillic_alphabet",
+        "source_quote": "The systematization of Cyrillic may have been undertaken at the Council of Preslav in 893.",
+        "voice": "Snazší písmo pro lid znamenalo taky o něco menší závislost na cizí říši.",
+        "image_prompt": "Fotorealistický snímek středověkého slovanského rukopisu psaného raně cyrilickým písmem na pergamenu, detailní záběr, teplé světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-jazyk-pady",
+    "country": "Bulharsko",
+    "section": "Jazyk & slova",
+    "topic": "Pádový systém",
+    "headline": "Slovanský jazyk bez pádů",
+    "fact": "Bulharština spolu s příbuznou makedonštinou téměř úplně ztratila pádové skloňování podstatných jmen — na rozdíl od většiny ostatních slovanských jazyků, včetně češtiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Balkan_sprachbund",
+    "source_quote": "In Bulgarian and Macedonian ... this development has actually led to the loss of all cases except the vocative",
+    "voice": "Tam, kde čeština má sedm pádů, si Bulhar vystačí prakticky bez jediného.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Předložky místo koncovek",
+        "fact": "Místo skloňování používá bulharština k vyjádření vztahů mezi slovy hlavně předložky a slovosled — což jazyk pro cizince paradoxně zjednodušuje, i když zní jako typická slovanská řeč.",
+        "source_url": "https://en.wikipedia.org/wiki/Bulgarian_grammar",
+        "voice": "Zní jako slovanština, gramatiku má ale nakonec mnohem blíž k angličtině.",
+        "image_prompt": "Fotorealistický snímek bulharského nápisu na ulici s cedulemi obchodů, detail cyrilického textu, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Balkánský jazykový svaz",
+        "fact": "Ztráta pádů spojuje bulharštinu s úplně nepříbuznými jazyky regionu — řečtinou, rumunštinou i albánštinou — protože se všechny po staletí sousedství vzájemně ovlivňovaly natolik, že si vytvořily podobné gramatické rysy napříč jazykovými rodinami.",
+        "source_url": "https://en.wikipedia.org/wiki/Balkan_sprachbund",
+        "source_quote": "Bulgarian is also a part of the Balkan sprachbund, which also includes Greek, Macedonian, Romanian, Albanian and the Torlakian dialect of Serbian",
+        "voice": "Staletí sousedství dokážou jazyky sblížit gramatikou víc než společný jazykový původ.",
+        "image_prompt": "Fotorealistický snímek mapy jihovýchodní Evropy s vyznačenými hranicemi balkánských zemí, ilustrativní styl, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-jidlo-banica",
+    "country": "Bulharsko",
+    "section": "Jídlo",
+    "topic": "Banica",
+    "headline": "Vrstvy těsta na sváteční stůl",
+    "fact": "Banica je slané pečivo z tenkých plátů těsta prokládaných směsí vajec, jogurtu a bílého sýra sirene, které se v Bulharsku tradičně peče na Vánoce a Silvestra.",
+    "source_url": "https://en.wikipedia.org/wiki/Banitsa",
+    "source_quote": "prepare and serve banitsa on two holidays – Christmas and New Year's Eve",
+    "voice": "Sváteční stůl bez banici si v bulharské domácnosti umí představit jen málokdo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek čerstvě upečené bulharské banici s křupavou zlatavou kůrkou na dřevěném prkénku, pár kousků na talíři, teplé domácí světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Věštba ukrytá v těstě",
+        "fact": "Do sváteční banici se často zapékají malé papírky s přáními nebo drobné předměty jako dřínová větvička pro zdraví — kdo najde ten svůj kousek, věří, že se mu přání na příští rok splní.",
+        "source_url": "https://en.wikipedia.org/wiki/Banitsa",
+        "voice": "Každé sousto může skrývat malé věštění o tom, jaký bude příští rok.",
+        "image_prompt": "Fotorealistický detailní snímek krájené banici s viditelnou vrstvenou strukturou těsta a sýra, drobný papírek s přáním vedle na talíři, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pečivo balkánské tenké mouky",
+        "fact": "Banica patří do širší rodiny balkánských a blízkovýchodních pečiv z taženého těsta (podobně jako řecká spanakopita nebo turecké börek), což ukazuje na společné kulinářské dědictví regionu bývalé Osmanské říše.",
+        "source_url": "https://en.wikipedia.org/wiki/Banitsa",
+        "voice": "Stejná technika těsta, jiné jméno v každé zemi bývalé říše.",
+        "image_prompt": "Fotorealistický snímek tenkého taženého těsta rozprostřeného na velkém pracovním stole v bulharské kuchyni, ruce hnětoucí těsto, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-jidlo-jogurt",
+    "country": "Bulharsko",
+    "section": "Jídlo",
+    "topic": "Bulharský bacil",
+    "headline": "Bakterie pojmenovaná po zemi",
+    "fact": "Bakterii Lactobacillus bulgaricus, klíčovou pro výrobu jogurtu, objevil v roce 1905 bulharský lékař Stamen Grigorov a pojmenoval ji podle své vlasti.",
+    "source_url": "https://en.wikipedia.org/wiki/Lactobacillus_delbrueckii_subsp._bulgaricus",
+    "source_quote": "first identified in 1905 by Stamen Grigorov",
+    "voice": "Objev vlastního jogurtu proslavil bulharské jméno v laboratořích po celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek misky domácího hustého bulharského jogurtu (kiselo mljako) s dřevěnou lžící, rustikální kuchyňský stůl, přirozené světlo, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jogurt, který dělá dvě bakterie společně",
+        "fact": "Bulharský jogurt vzniká souhrou dvou bakterií — Lactobacillus bulgaricus a Streptococcus thermophilus — které si navzájem pomáhají a společně dodávají jogurtu jeho typicky nakyslou chuť i vůni.",
+        "source_url": "https://en.wikipedia.org/wiki/Lactobacillus_delbrueckii_subsp._bulgaricus",
+        "voice": "Dvě různé bakterie musí spolupracovat, aby vznikla jedna miska kiselo mljako.",
+        "image_prompt": "Fotorealistický detailní snímek hrnce s vroucím mlékem během domácí výroby jogurtu v bulharské kuchyni, pára stoupající vzhůru, 16:9"
+      },
+      "kartograf": {
+        "headline": "Export mikroorganismu do světa",
+        "fact": "Bakterie objevená v bulharském venkovském jogurtu se dnes komerčně vyváží do mlékáren po celém světě, včetně Japonska a Spojených států — mikroskopický organismus z balkánské vesnice tak zásobuje globální potravinářský průmysl.",
+        "source_url": "https://en.wikipedia.org/wiki/Lactobacillus_delbrueckii_subsp._bulgaricus",
+        "voice": "Neviditelný organismus z balkánské vesnice dnes cestuje v chladicích vozech po celém světě.",
+        "image_prompt": "Fotorealistický snímek moderní mlékárenské výrobní linky s kelímky jogurtu na pásu, čisté průmyslové prostředí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-jidlo-shopska",
+    "country": "Bulharsko",
+    "section": "Jídlo",
+    "topic": "Šopský salát",
+    "headline": "Salát v barvách vlajky",
+    "fact": "Šopský salát z rajčat, okurek, paprik a strouhaného sýra sirene je od 50. let 20. století bulharským národním jídlem a jeho červeno-bílé barvy náhodou připomínají bulharskou vlajku.",
+    "source_url": "https://en.wikipedia.org/wiki/Shopska_salad",
+    "source_quote": "The original recipe for the Salad was invented and established in 1954-55 in the restaurant 'Chernomorets' ... Balkantourist in 1956 named their version Shopska salad",
+    "voice": "Barvy na talíři vyšly náhodou stejné jako barvy na vlajce nad ministerstvem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek šopského salátu s nakrájenými rajčaty, okurkami, paprikou a hromadou strouhaného bílého sýra navrchu, dřevěný stůl, denní světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vynalezen u moře, pojmenován po horách",
+        "fact": "Přestože nese jméno po hornaté oblasti Šopluk u Sofie, recept ve skutečnosti vznikl v přímořském letovisku u Varny — jméno mu daly až státní cestovní kanceláře kvůli lepšímu marketingu.",
+        "source_url": "https://en.wikipedia.org/wiki/Shopska_salad",
+        "voice": "Jméno slibuje hory, ale recept se ve skutečnosti narodil u moře.",
+        "image_prompt": "Fotorealistický snímek letní venkovní restaurace na bulharském pobřeží Černého moře se servírovaným šopským salátem na stole, slunečný den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo jako nástroj turistické propagandy",
+        "fact": "V roce 2014 se stal šopský salát nejrozpoznatelnějším bulharským jídlem v Evropě, když zvítězil v iniciativě Evropského parlamentu 'Chuť Evropy' — příklad, jak se socialistický marketingový vynález proměnil v mezinárodně uznávaný symbol národní kuchyně.",
+        "source_url": "https://en.wikipedia.org/wiki/Shopska_salad",
+        "source_quote": "In 2014 Shopska salad was Bulgaria's most recognizable dish in Europe. It was the most popular recipe in a European Parliament initiative called A Taste of Europe.",
+        "voice": "Jídlo vymyšlené pro turisty se nakonec stalo skutečnou národní vizitkou.",
+        "image_prompt": "Fotorealistický snímek stánku s bulharskými národními jídly na evropském potravinovém veletrhu, cedulka se šopským salátem, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-historie-asparuch",
+    "country": "Bulharsko",
+    "section": "Historie",
+    "topic": "Chán Asparuch",
+    "headline": "Stát, kterému dala vzniknout jedna bitva",
+    "fact": "Chán Asparuch roku 680 porazil byzantské vojsko u Ongalu a v roce 681 přiměl Byzanc uznat první bulharskou říši jako samostatný stát — dodnes se tenhle rok počítá za vznik Bulharska.",
+    "source_url": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire",
+    "source_quote": "the first state that the empire recognised in the Balkans and the first time it legally surrendered claims to part of its Balkan dominions",
+    "voice": "Jedna prohraná bitva přinutila mocnou říši uznat úplně nový stát na své hranici.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistická historizující ilustrace bulharských jezdců chána Asparucha na koních u řeky Dunaj, ranní mlha nad deltou, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "ll": [27.1333, 43.3833],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hlavní město z hliněného valu",
+        "fact": "Asparuch založil první bulharské hlavní město Pliska jako obrovský opevněný tábor o rozloze přes 23 kilometrů čtverečních, chráněný zemními valy místo kamenných hradeb.",
+        "source_url": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire",
+        "source_quote": "a colossal encampment of 23 km² protected with earthen ramparts",
+        "voice": "Hlavní město tak velké, že by se do jeho hradeb vešlo pár menších měst dnes.",
+        "image_prompt": "Fotorealistický snímek archeologických pozůstatků zemních valů a základů starobylé Plisky, travnatá step, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kočovníci, kteří se usadili natrvalo",
+        "fact": "Bulhaři byli původně kočovným národem ze stepí kolem Azovského moře, kteří se po tlaku Chazarů přesunuli k Dunaji a tam se natrvalo usadili mezi slovanským obyvatelstvem — během pár generací s ním splynuli a přejali jeho jazyk.",
+        "source_url": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire",
+        "voice": "Kočovníci dorazili jako dobyvatelé a během pár generací mluvili už jen jazykem těch, které ovládli.",
+        "image_prompt": "Fotorealistický širokoúhlý snímek stepní krajiny u dolního Dunaje s pastvinami, večerní světlo, bez lidí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-historie-osmani",
+    "country": "Bulharsko",
+    "section": "Historie",
+    "topic": "Osmanská nadvláda",
+    "headline": "Skoro pět století pod cizí vládou",
+    "fact": "Osmanská říše ovládala bulharské země od roku 1396 do roku 1878, tedy 482 let — téměř půl tisíciletí bulharské historie.",
+    "source_url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria",
+    "source_quote": "Ottoman Bulgaria ... 1396–1878",
+    "voice": "Generace se střídaly a stát, pod kterým žily, se nezměnil skoro pět set let.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistická historizující ilustrace osmanské pevnosti a mešity v bulharském městě z 18. století, večerní světlo, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Povstání, které skončilo krveprolitím",
+        "fact": "Dubnové povstání z roku 1876 proti osmanské nadvládě bylo brutálně potlačeno, ale zprávy o masakrech pobouřily veřejné mínění v Evropě natolik, že o rok později vyprovokovaly rusko-tureckou válku a nakonec i osvobození Bulharska.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Bulgaria",
+        "source_quote": "The brutal suppression of the Bulgarian April Uprising of 1876",
+        "voice": "Potlačené povstání nakonec spustilo přesně tu válku, která zemi osvobodila.",
+        "image_prompt": "Fotorealistická historizující ilustrace bulharských povstalců v horách během dubnového povstání 1876, dramatické světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nadvláda, která zpomalila, ale nezastavila kulturu",
+        "fact": "Přestože osmanská správa po staletí bránila rozvoji samostatné bulharské státnosti, jazyk, církev i lidové tradice přežily hlavně díky venkovu a odlehlým klášterům — proto mohlo Bulharsko po roce 1878 obnovit vlastní stát prakticky ihned, bez nutnosti budovat identitu od nuly.",
+        "source_url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria",
+        "source_quote": "Ottoman Bulgaria ... 1396–1878",
+        "voice": "Stát na pár století zmizel z mapy, jeho jazyk a víra ale nikdy úplně nezmizely.",
+        "image_prompt": "Fotorealistický snímek odlehlého bulharského horského kláštera obklopeného lesy, symbol uchování kultury, ranní mlha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "bg-historie-osvobozeni",
+    "country": "Bulharsko",
+    "section": "Historie",
+    "topic": "Osvobození 1878",
+    "headline": "Válka, která vrátila Bulharsko na mapu",
+    "fact": "Rusko-turecká válka v letech 1877 až 1878 ukončila skoro pětisetleté osmanské panství a obnovila samostatný bulharský stát.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Bulgaria",
+    "source_quote": "In 1877, Russian general Iosif Gurko liberated Veliko Tarnovo, ending the 480-year rule of the Ottoman Empire",
+    "voice": "Stačil jeden rok bojů, aby zmizelo skoro pět století cizí vlády.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek památníku svobody na vrcholu Šipka v Balkánském pohoří, kamenný monument na hřebeni hor, jasný den, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-8"],
+    "ll": [25.3167, 42.7333],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hory, kde se rozhodlo o svobodě",
+        "fact": "Klíčové bitvy o osvobození se odehrály na horském průsmyku Šipka v Balkánském pohoří, kde dnes stojí památník připomínající padlé ruské a bulharské vojáky.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Bulgaria",
+        "voice": "Na téhle hoře se rozhodovalo o osudu celého národa na další století.",
+        "image_prompt": "Fotorealistický snímek horského průsmyku Šipka se starým dělem a pomníkem, podzimní barvy, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Osvobození jako výsledek velmocenské politiky",
+        "fact": "Nezávislost Bulharska nebyla jen výsledkem domácího odboje, ale hlavně střetu zájmů velmocí — Rusko chtělo oslabit Osmanskou říši a získat vliv na Balkáně, zatímco Británie a Rakousko-Uhersko později na kongresu v Berlíně nové bulharské území záměrně zmenšily, aby omezily ruský vliv.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Bulgaria",
+        "voice": "O hranicích nové země rozhodovaly hlavně zájmy jiných, mnohem silnějších států.",
+        "image_prompt": "Fotorealistický snímek staré mapy Balkánu z konce 19. století s vyznačenými hranicemi po Berlínském kongresu, archivní vzhled, 16:9"
+      }
+    }
+  }
+]

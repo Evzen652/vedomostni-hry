@@ -1,0 +1,842 @@
+[
+  {
+    "id": "fr-mista-versailles",
+    "country": "Francie",
+    "section": "Místa",
+    "topic": "Zámek Versailles",
+    "headline": "Zámek s 2300 pokoji",
+    "fact": "Versailleský zámek u Paříže má rozlohu přes 63 000 m² a asi 2300 místností; francouzský král Ludvík XIV. si ho zvolil jako centrum své absolutní moci.",
+    "source_url": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
+    "source_quote": "It covers about 63,154 square metres and contains roughly 2,300 rooms.",
+    "voice": "Jeden král, jeden zámek, a najednou se do něj vejde skoro celé malé město.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide-angle shot of the Palace of Versailles facade and formal gardens at golden hour, symmetrical fountains, no people in foreground, no text, 16:9",
+    "ll": [2.1204, 48.8049],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zrcadlový sál dlouhý přes sedmdesát metrů",
+        "fact": "Zrcadlový sál nechal architekt Jules Hardouin-Mansart postavit v letech 1678 až 1681 podél celého zahradního průčelí zámku, kde se dodnes konají slavnostní recepce.",
+        "source_url": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
+        "source_quote": "Mansart began his tenure with the addition from 1678 to 1681 of the Hall of Mirrors, a renovation of the courtyard façade of Louis XIII's château.",
+        "voice": "Stovky odrazů ve zlatě a sklech — a přitom je to jen chodba mezi dvěma sály.",
+        "image_prompt": "Photorealistic interior shot of the Hall of Mirrors at Versailles, gilded arches, chandeliers, mirrors reflecting garden light, no people, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zámek jako nástroj královské moci",
+        "fact": "Versailles sloužil Ludvíku XIV. jako promyšlený nástroj centralizace moci — šlechtu si tu držel na dohled a daleko od Paříže, aby oslabil její politický vliv.",
+        "source_url": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
+        "source_quote": "The Palace of Versailles was key to Louis XIV's politics, as an expression and concentration of French art and culture, and for the centralization of royal power.",
+        "voice": "Přestěhoval dvůr na venkov a najednou měl šlechtu přesně tam, kde ji chtěl mít.",
+        "image_prompt": "Photorealistic aerial shot of the Palace of Versailles and its geometric gardens and canal, symmetrical layout visible, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-mista-mont-saint-michel",
+    "country": "Francie",
+    "section": "Místa",
+    "topic": "Mont-Saint-Michel",
+    "headline": "Ostrov, který dvakrát denně zaplavuje moře",
+    "fact": "Mont-Saint-Michel v Normandii je skalnatý ostrůvek s klášterem na vrcholu, kde rozdíl mezi přílivem a odlivem dosahuje až 14 metrů — jeden z největších v Evropě.",
+    "source_url": "https://en.wikipedia.org/wiki/Mont-Saint-Michel",
+    "source_quote": "The tides vary greatly, at roughly 14 metres (46 ft) between highest and lowest water marks.",
+    "voice": "Ráno tam došlápneš suchou nohou, odpoledne by ses musel brodit.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Mont-Saint-Michel abbey at high tide, water surrounding the rocky islet, dramatic sky, no text, 16:9",
+    "ll": [-1.5115, 48.6361],
+    "levels": {
+      "cestovatel": {
+        "headline": "Klášter na skále vysoké skoro sto metrů",
+        "fact": "Podle legendy přikázal roku 708 archanděl Michael biskupovi Aubertovi z Avranches postavit na skalnatém ostrůvku kostel; dnešní vrchol hory se zvedá 92 metrů nad mořem.",
+        "source_url": "https://en.wikipedia.org/wiki/Mont-Saint-Michel",
+        "source_quote": "The mount has a circumference of about 960 m (3,150 ft) and its highest point is 92 m (302 ft) above sea level.",
+        "voice": "Legenda o andělovi stačila na to, aby na skále vyrostl kostel a kolem něj celé město.",
+        "image_prompt": "Photorealistic close-up shot of the abbey spire atop Mont-Saint-Michel, stone walls, seagulls, blue sky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Poutní místo, které se stalo pevností proti moři",
+        "fact": "Poloha na ostrově dostupném jen za odlivu chránila středověké poutníky i mnichy před nájezdy — moře fungovalo jako přirozená hradba, kterou lidé jinde museli stavět uměle.",
+        "source_url": "https://en.wikipedia.org/wiki/Mont-Saint-Michel",
+        "source_quote": "The commune's position—on an island just a few hundred metres from land—made it accessible at low tide to the many pilgrims to its abbey.",
+        "voice": "Nepřítel musel počkat na odliv, a to dalo obráncům vždycky pár hodin navíc.",
+        "image_prompt": "Photorealistic aerial shot of Mont-Saint-Michel bay with tidal flats and causeway, wide landscape, soft light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-mista-carcassonne",
+    "country": "Francie",
+    "section": "Místa",
+    "topic": "Cité de Carcassonne",
+    "headline": "Město obklopené dvojitou hradbou s 52 věžemi",
+    "fact": "Středověká pevnost Cité de Carcassonne na jihu Francie má dvojitý okruh hradeb s 52 věžemi a je od roku 1997 na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Carcassonne",
+    "source_quote": "The fortified city consists essentially of a concentric design of two outer walls with 52 towers and barbicans to prevent attack by siege engines.",
+    "voice": "Projdeš jednou branou a hned narazíš na druhou hradbu — útočníci se sem nikdy nedostali snadno.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the medieval fortified city of Carcassonne with double walls and conical towers, golden hour light, no people, 16:9",
+    "ll": [2.3639, 43.2065],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hrad, který zachránil architekt z 19. století",
+        "fact": "Chátrající pevnost nechal od roku 1853 obnovit architekt Eugène Viollet-le-Duc, který na opravách pracoval až do své smrti v roce 1879.",
+        "source_url": "https://en.wikipedia.org/wiki/Carcassonne",
+        "source_quote": "In 1853, work began with the west and southwest walls, followed by the towers of the porte Narbonnaise and the principal entrance to the cité.",
+        "voice": "Bez jednoho tvrdohlavého architekta by dnes turisté koukali jen na hromadu kamení.",
+        "image_prompt": "Photorealistic detail shot of restored conical tower roofs and stone battlements of Carcassonne, blue sky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pevnost na křižovatce cest mezi mořem a horami",
+        "fact": "Carcassonne leží na staré obchodní trase mezi Atlantikem a Středozemním mořem, což z něj po staletí dělalo strategický bod, o který stálo za to bojovat.",
+        "source_url": "https://en.wikipedia.org/wiki/Carcassonne",
+        "voice": "Kdo držel tohle město, kontroloval i cestu mezi dvěma moři.",
+        "image_prompt": "Photorealistic aerial shot of Carcassonne fortress on a hill with surrounding countryside and river, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-priroda-mont-blanc",
+    "country": "Francie",
+    "section": "Příroda",
+    "topic": "Mont Blanc",
+    "headline": "Nejvyšší hora Alp o proměnlivé výšce",
+    "fact": "Mont Blanc na hranici Francie a Itálie měří 4807 metrů a je nejvyšší horou Alp i celé západní Evropy; jeho výška se každý rok mírně mění podle množství sněhu a ledu na vrcholu.",
+    "source_url": "https://en.wikipedia.org/wiki/Mont_Blanc",
+    "source_quote": "the highest mountain in Europe outside the Caucasus Mountains",
+    "voice": "Vrchol se každý rok o pár desítek centimetrů zvedne nebo klesne, podle toho, kolik sněhu na něm napadá.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of snow-capped Mont Blanc peak at sunrise, alpine ridges in foreground, no people, 16:9",
+    "ll": [6.8652, 45.8326],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vrchol, na který poprvé vystoupili v roce 1786",
+        "fact": "První zdokumentovaný výstup na Mont Blanc uskutečnili Jacques Balmat a Michel-Gabriel Paccard 8. srpna 1786, což je považováno za počátek moderního horolezectví.",
+        "source_url": "https://en.wikipedia.org/wiki/Jacques_Balmat",
+        "source_quote": "On 8 August 1786 Balmat completed the first ascent of Mont Blanc with physician Michel-Gabriel Paccard.",
+        "voice": "Dva muži bez moderního vybavení vystoupali tam, kam se dnes chodí ve speciálních botách.",
+        "image_prompt": "Photorealistic historical-style shot of two 18th-century mountaineers in period clothing reaching a snowy summit, dramatic light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice, která vede přes vrchol",
+        "fact": "Vrchol Mont Blancu leží přímo na státní hranici mezi Francií a Itálií, což z něj dělá klasický příklad hory, kterou si dvě sousední země musí dělit i politicky, ne jen geograficky.",
+        "source_url": "https://en.wikipedia.org/wiki/Mont_Blanc",
+        "voice": "Kdo stojí na vrcholu, stojí doslova nohama v obou zemích zároveň.",
+        "image_prompt": "Photorealistic aerial shot of the Mont Blanc massif straddling a mountain border ridge, glaciers and rocky peaks, clear sky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-priroda-camargue",
+    "country": "Francie",
+    "section": "Příroda",
+    "topic": "Camargue",
+    "headline": "Bažina, kde žijí bílí koně i plameňáci",
+    "fact": "Camargue v deltě Rhôny na jihu Francie je s rozlohou přes 930 km² jedna z největších říčních delt v západní Evropě a domov volně žijících bílých koní i plameňáků růžových.",
+    "source_url": "https://en.wikipedia.org/wiki/Camargue",
+    "source_quote": "With an area of over 930 km2 (360 sq mi), the Camargue is one of western Europe's largest river deltas.",
+    "voice": "Kůň, co se narodí tmavý, tu časem úplně zbělá.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of white Camargue horses running through wetlands with pink flamingos in the background, golden hour light, no people, 16:9",
+    "ll": [4.4283, 43.4514],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sůl, co dala kraji barvu i živobytí",
+        "fact": "Slané laguny Camargue jsou jedním z mála evropských stanovišť plameňáka růžového, kterému právě korýši ze slaných vod dodávají jeho typickou růžovou barvu peří.",
+        "source_url": "https://en.wikipedia.org/wiki/Camargue",
+        "source_quote": "Its brine ponds provide one of the few European habitats for the greater flamingo.",
+        "voice": "Pták zbarvený jako západ slunce, a přitom za barvu vděčí jen tomu, co sní.",
+        "image_prompt": "Photorealistic close-up shot of greater flamingos feeding in a shallow salt lagoon in Camargue, pink plumage, soft evening light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina, kterou tvaruje sama řeka",
+        "fact": "Camargue vznikla usazováním naplavenin tam, kde se Rhôna před vyústěním do Středozemního moře rozděluje na dvě ramena — od roku 1970 je proto chráněná jako regionální přírodní park.",
+        "source_url": "https://en.wikipedia.org/wiki/Camargue",
+        "source_quote": "Officially established as a regional park and nature reserve in 1970, the Parc naturel régional de Camargue covers 820 km2 (320 sq mi).",
+        "voice": "Řeka tu celé věky nanáší bahno, a krajina se tak pořád potichu předělává sama.",
+        "image_prompt": "Photorealistic aerial shot of the Rhône river delta in Camargue, braided water channels and marshland, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-priroda-dune-pilat",
+    "country": "Francie",
+    "section": "Příroda",
+    "topic": "Duna Pilat",
+    "headline": "Nejvyšší písečná duna v Evropě",
+    "fact": "Duna Pilat na atlantickém pobřeží u Arcachonu měřila v roce 2018 na výšku 106,6 metru a je nejvyšší písečnou dunou v Evropě.",
+    "source_url": "https://en.wikipedia.org/wiki/Dune_of_Pilat",
+    "source_quote": "Its height was 106.60 m above sea level as of 2018.",
+    "voice": "Vylezeš na kopec z písku a nahoře tě čeká výhled jako z hory.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Dune of Pilat with the Atlantic Ocean on one side and pine forest on the other, warm afternoon light, no people, 16:9",
+    "ll": [-1.2144, 44.5900],
+    "levels": {
+      "cestovatel": {
+        "headline": "Duna, která pomalu pohlcuje les",
+        "fact": "Vítr od oceánu tlačí písek duny Pilat dál do vnitrozemí, takže duna se dlouhodobě posouvá směrem k sousednímu borovicovému lesu a jeho okraj postupně zasypává.",
+        "source_url": "https://en.wikipedia.org/wiki/Dune_of_Pilat",
+        "source_quote": "The dune has been observed to move landward, slowly pushing the forest back.",
+        "voice": "Les neustupuje před ohněm ani sekerou, ale před obyčejným větrem a pískem.",
+        "image_prompt": "Photorealistic shot of a sand dune slope encroaching on a pine forest, half-buried trees visible, coastal wind, 16:9"
+      },
+      "kartograf": {
+        "headline": "Písek navátý mezi oceán a starou pevninu",
+        "fact": "Duna Pilat vznikla hromaděním mořského písku naváté západními větry na pobřeží Akvitánie — ukázka, jak vítr a moře dokážou společně vytvořit obří přírodní útvar tam, kde předtím byl jen plochý břeh.",
+        "source_url": "https://en.wikipedia.org/wiki/Dune_of_Pilat",
+        "voice": "Obyčejný vítr tu za staletí navál horu, na kterou se dnes leze jako na kopec.",
+        "image_prompt": "Photorealistic aerial shot of the Dune of Pilat and Arcachon Bay coastline, contrast between sand, forest and ocean, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-lide-jeanne-d-arc",
+    "country": "Francie",
+    "section": "Lidé",
+    "topic": "Jana z Arku",
+    "headline": "Dívka, která zachránila francouzského krále",
+    "fact": "Jana z Arku v roce 1429 pomohla prolomit obležení Orléans anglickými vojsky, což zásadně obrátilo průběh stoleté války ve prospěch Francie.",
+    "source_url": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+    "source_quote": "The English retreated from Orléans on 8 May, ending the siege.",
+    "voice": "Sedmnáctiletá venkovská dívka postavila na hlavu válku, kterou vedli zkušení vojevůdci.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic dramatic portrait of a young armored medieval woman warrior holding a banner near a besieged city wall, historical reenactment style, soft light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Upálena v devatenácti letech",
+        "fact": "Jana z Arku byla po zajetí a procesu za kacířství upálena 30. května 1431 v Rouenu, aniž se dožila devatenáctých narozenin.",
+        "source_url": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+        "source_quote": "She was declared guilty and burned at the stake on 30 May 1431, aged about nineteen.",
+        "voice": "Zemřela jako odsouzená kacířka, a přesto ji dnes celá země slaví jako hrdinku.",
+        "image_prompt": "Photorealistic shot of the historic market square of Rouen with medieval half-timbered buildings, memorial area, evening light, no people, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z hranice na oltář za necelých pět set let",
+        "fact": "Papež Benedikt XV. prohlásil Janu z Arku svatou v roce 1920 — skoro pět set let poté, co ji církevní soud odsoudil k smrti, což ukazuje, jak se hodnocení jedné historické postavy dokáže s časem otočit o 180 stupňů.",
+        "source_url": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+        "source_quote": "In 1920, Joan of Arc was canonized by Pope Benedict XV and, two years later, was declared one of the patron saints of France.",
+        "voice": "Instituce, co ji poslala na hranici, ji o staletí později prohlásila za svatou.",
+        "image_prompt": "Photorealistic shot of a stained glass window depicting a female warrior saint in a French cathedral, colorful light beams, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-lide-louis-pasteur",
+    "country": "Francie",
+    "section": "Lidé",
+    "topic": "Louis Pasteur",
+    "headline": "Vědec, který porazil vzteklinu",
+    "fact": "Louis Pasteur v roce 1885 poprvé úspěšně použil svou vakcínu proti vzteklině na devítiletém chlapci Josephu Meisterovi, kterého pokousal nakažený pes.",
+    "source_url": "https://en.wikipedia.org/wiki/Louis_Pasteur",
+    "source_quote": "This vaccine was used on 9-year-old Joseph Meister, on 6 July 1885, after the boy was badly mauled by a rabid dog.",
+    "voice": "Léčbu vymyslel v laboratoři, poprvé ji ale musel vyzkoušet rovnou na živém dítěti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style portrait of a 19th-century scientist in a laboratory with glass flasks and microscope, warm lamp light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Třináct injekcí za jedenáct dní",
+        "fact": "Chlapec Joseph Meister dostal během jedenácti dní třináct postupných injekcí se stále silnějším oslabeným virem vztekliny, a nemoc nakonec nedostal.",
+        "source_url": "https://en.wikipedia.org/wiki/Louis_Pasteur",
+        "source_quote": "Over 11 days, Meister received 13 inoculations, each inoculation using viruses that had been weakened for a shorter period of time.",
+        "voice": "Každý den o trochu silnější dávka, a nakonec tělo virus zvládlo samo porazit.",
+        "image_prompt": "Photorealistic shot of an antique glass syringe and vaccine vials on a wooden laboratory table, 19th century style, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ústav, který vědu proměnil v celosvětovou síť",
+        "fact": "Pasteur v roce 1887 založil v Paříži Pasteurův institut, který se stal vzorem pro podobné výzkumné ústavy zakládané později po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Louis_Pasteur",
+        "source_quote": "In Paris, he established the Pasteur Institute in 1887 and served as its director for the rest of his life.",
+        "voice": "Jedna pařížská laboratoř se stala předlohou pro desítky podobných ústavů po celém světě.",
+        "image_prompt": "Photorealistic exterior shot of a 19th-century French research institute building, ornate facade, tree-lined Parisian street, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-lide-saint-exupery",
+    "country": "Francie",
+    "section": "Lidé",
+    "topic": "Antoine de Saint-Exupéry",
+    "headline": "Pilot, který napsal nejpřekládanější francouzskou knihu",
+    "fact": "Antoine de Saint-Exupéry napsal Malého prince, knihu přeloženou do více než 250 jazyků a dialektů, což z ní dělá jedno z nejpřekládanějších literárních děl na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+    "source_quote": "translated into more than 250 languages and dialects and among the top four selling books in the world",
+    "voice": "Napsal pohádku pro děti, a nakonec ji čte skoro celý svět.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic portrait of a 1940s French aviator in leather flight jacket standing beside a vintage propeller airplane, warm sunset light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pilot, co létal poštu přes poušť",
+        "fact": "Saint-Exupéry pracoval jako jeden z průkopníků mezinárodní poštovní letecké dopravy pro společnost Aéropostale a lítal s poštou i nad africkou pouští v době, kdy letadla měla jen málo přístrojů.",
+        "source_url": "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+        "source_quote": "He became one of the pioneers of international postal flight, in the days when aircraft had few instruments.",
+        "voice": "Navigoval nad pouští skoro po paměti, přístroje mu tenkrát moc nepomohly.",
+        "image_prompt": "Photorealistic shot of a small vintage mail airplane flying low over a desert landscape at dusk, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zmizel beze stopy nad vlastní domovinou",
+        "fact": "Saint-Exupéry zahynul 31. července 1944 při průzkumném letu nad Korsikou krátce před osvobozením Francie — jeho letoun se ztratil beze stopy.",
+        "source_url": "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+        "source_quote": "On 31 July 1944, during a reconnaissance mission over Corsica, Saint-Exupéry's plane disappeared: it is presumed to have crashed.",
+        "voice": "Zmizel ve válce, kterou psal i létal, jen pár týdnů před tím, než skončila osvobozením jeho země.",
+        "image_prompt": "Photorealistic shot of the Mediterranean coastline of Corsica from above, rocky cliffs and blue sea, dramatic clouds, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-kultura-14-juillet",
+    "country": "Francie",
+    "section": "Kultura & tradice",
+    "topic": "Národní svátek 14. července",
+    "headline": "Přehlídka, co se koná na stejné třídě přes sto let",
+    "fact": "Francouzský národní svátek 14. července připomíná dobytí Bastily v roce 1789 i Svátek federace z roku 1790; vojenská přehlídka se na pařížských Champs-Élysées koná od roku 1918 pravidelně každý rok.",
+    "source_url": "https://en.wikipedia.org/wiki/Bastille_Day",
+    "source_quote": "since 1918 it has been held on the Champs-Élysées",
+    "voice": "Stejná ulice, stejný den v roce, a přehlídka se tam vrací generaci za generací.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of a military parade with tricolor flags on the Champs-Élysées in Paris, Arc de Triomphe in background, daylight, 16:9",
+    "ll": [2.2945, 48.8584],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přehlídka označovaná za nejstarší svého druhu v Evropě",
+        "fact": "Vojenská přehlídka konaná každoročně v Paříži 14. července bývá označovaná za nejstarší a největší pravidelnou vojenskou přehlídku v Evropě, koná se totiž nepřetržitě už od roku 1880.",
+        "source_url": "https://en.wikipedia.org/wiki/Bastille_Day",
+        "source_quote": "The Bastille Day military parade is the French military parade that has been held in the morning, every year in Paris, since 1880.",
+        "voice": "Jiné přehlídky přišly a zase zmizely, tahle se koná dál, rok co rok.",
+        "image_prompt": "Photorealistic shot of French air force jets releasing blue white and red smoke over Paris during a national day flypast, clear sky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jeden den, dvě různé revoluce v jednom kalendáři",
+        "fact": "Svátek spojuje hned dvě události ze stejného data o rok posunuté — násilné dobytí pevnosti Bastila v roce 1789 a smířlivou oslavu jednoty národa při Svátku federace o rok později.",
+        "source_url": "https://en.wikipedia.org/wiki/Bastille_Day",
+        "source_quote": "as well as the Fête de la Fédération that celebrated the unity of the French people on 14 July 1790",
+        "voice": "Nejdřív bourali pevnost, o rok později na stejném místě slavili, že jsou konečně jeden národ.",
+        "image_prompt": "Photorealistic shot of a crowd waving French tricolor flags at an outdoor national celebration, evening light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-kultura-cannes",
+    "country": "Francie",
+    "section": "Kultura & tradice",
+    "topic": "Filmový festival v Cannes",
+    "headline": "Festival založený jako odpověď na politiku v Benátkách",
+    "fact": "Filmový festival v Cannes vznikl v roce 1946 poté, co francouzští, britští a američtí porotci odešli z benátského festivalu na protest proti jeho fašistické zaujatosti ve 30. letech.",
+    "source_url": "https://en.wikipedia.org/wiki/Cannes_Film_Festival",
+    "source_quote": "The festival's creation is widely attributed to France's desire to compete with the Venice Film Festival, at the time the only international film festival, which had shown a fascist bias.",
+    "voice": "Z uražené poroty se nakonec vyklubal jeden z nejslavnějších filmových festivalů světa.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of the red carpet steps of the Cannes Film Festival palace at dusk, elegant lighting, no visible faces, 16:9",
+    "ll": [7.0174, 43.5504],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zlatá palma nahradila starší cenu až v roce 1955",
+        "fact": "Nejprestižnější cenu festivalu, Zlatou palmu, zavedli až v roce 1955 jako náhradu za dřívější Grand Prix festivalu.",
+        "source_url": "https://en.wikipedia.org/wiki/Cannes_Film_Festival",
+        "source_quote": "In 1955, the Palme d'Or was created, replacing the Grand Prix du Festival.",
+        "voice": "Ikonická trofej, po které dnes touží každý režisér, má na festivalu vlastně kratší historii, než by se čekalo.",
+        "image_prompt": "Photorealistic close-up shot of a golden palm trophy award on a velvet display stand, soft studio light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přímořské městečko jako výkladní skříň světového filmu",
+        "fact": "Volba malého přístavního města na Azurovém pobřeží pro světový filmový festival ukazuje, jak dokáže jedna kulturní akce na pár týdnů v roce proměnit region závislý na turistice ve středobod pozornosti filmového průmyslu.",
+        "source_url": "https://en.wikipedia.org/wiki/Cannes_Film_Festival",
+        "voice": "Zbytek roku je to klidné přímořské městečko, na pár dní v květnu se z něj stane střed filmového světa.",
+        "image_prompt": "Photorealistic aerial shot of Cannes harbor with yachts and Mediterranean coastline, sunny day, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-kultura-fest-noz",
+    "country": "Francie",
+    "section": "Kultura & tradice",
+    "topic": "Fest-noz",
+    "headline": "Noční tanec, který drží Bretaň pohromadě",
+    "fact": "Fest-noz je bretaňská tradiční noční slavnost s hromadnými tanci za doprovodu živých hudebníků hrajících na akustické nástroje; od roku 2012 je zapsaná na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Fest-noz",
+    "source_quote": "On 5 December 2012 the fest noz was added by UNESCO to the Representative List of the Intangible Cultural Heritage of Humanity.",
+    "voice": "Název znamená prostě noční slavnost, a přesně to taky je — tanec, co trvá dlouho do tmy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a Breton folk dance circle at night, traditional musicians playing bagpipes and accordion, warm string lights, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Tanec v kruhu, který zvládne úplně každý",
+        "fact": "Na fest-noz se tančí především v řetězech a kruzích, kde se figury dají snadno naučit přímo za pochodu, takže se do tance zapojí místní i úplní nováčci najednou.",
+        "source_url": "https://en.wikipedia.org/wiki/Fest-noz",
+        "source_quote": "A fest noz ... is a Breton traditional festival, with dancing in groups and live musicians playing acoustic instruments.",
+        "voice": "Nemusíš znát žádný krok předem, stačí se chytit za ruce a nechat se vést davem.",
+        "image_prompt": "Photorealistic shot of people holding hands dancing in a chain formation at an outdoor Breton night festival, string lights, 16:9"
+      },
+      "kartograf": {
+        "headline": "Venkovský zvyk, co přežil díky hudebníkům",
+        "fact": "Fest-noz vznikl jako venkovská obdoba tanečních zábav, které bretaňským vesnicím zajišťovaly společenský život bez potřeby velkého města nablízku — hudba a tanec tu fungovaly jako místní náhrada za chybějící městskou zábavu.",
+        "source_url": "https://en.wikipedia.org/wiki/Fest-noz",
+        "voice": "Kde chybělo velké město se zábavou, vesnice si ji jednoduše vyrobily samy, s harmonikou a kruhem tanečníků.",
+        "image_prompt": "Photorealistic aerial shot of a rural Breton village square during an evening festival gathering, warm lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-umeni-mona-lisa",
+    "country": "Francie",
+    "section": "Umění",
+    "topic": "Mona Lisa",
+    "headline": "Portrét, který proslavila krádež z roku 1911",
+    "fact": "Obraz Mona Lisa namaloval italský malíř Leonardo da Vinci pravděpodobně mezi lety 1503 a 1506; jeho současnou slávu ale nastartovala i krádež z pařížského Louvru v srpnu 1911.",
+    "source_url": "https://en.wikipedia.org/wiki/Mona_Lisa",
+    "source_quote": "On 21 August 1911, the painting was stolen from the Louvre.",
+    "voice": "Dokud ji neukradli, nebyla to ještě ta nejslavnější malba na světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a grand museum gallery hall with a famous Renaissance portrait painting displayed behind protective glass, soft lighting, no visible faces, 16:9",
+    "ll": [2.3364, 48.8606],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zloděj, který obraz roky schovával doma",
+        "fact": "Obraz ukradl italský zaměstnanec Louvru Vincenzo Peruggia, který ho ukrýval, než ho zpět do Paříže vrátili 4. ledna 1914.",
+        "source_url": "https://en.wikipedia.org/wiki/Mona_Lisa",
+        "source_quote": "It was exhibited in the Uffizi Gallery for over two weeks and returned to the Louvre on 4 January 1914.",
+        "voice": "Ukradl světoznámý obraz, a pak s ním prostě roky bydlel v malém bytě.",
+        "image_prompt": "Photorealistic shot of an ornate empty picture frame hanging on a museum wall, dim lighting, mysterious atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá deska, co se stala hlavní atrakcí muzea",
+        "fact": "Přestože je obraz fyzicky malý, právě kombinace umělecké pověsti a mediálně proslulé krádeže z něj udělala hlavní důvod, proč miliony návštěvníků ročně míří právě do pařížského Louvru.",
+        "source_url": "https://en.wikipedia.org/wiki/Mona_Lisa",
+        "voice": "Nejmenší obraz v sále bývá ten, před kterým stojí nejdelší fronta.",
+        "image_prompt": "Photorealistic wide shot of a crowded museum gallery hall with tourists gathered around a small famous painting, grand architecture, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-umeni-monet-giverny",
+    "country": "Francie",
+    "section": "Umění",
+    "topic": "Claude Monet a Giverny",
+    "headline": "Zahrada, kterou maloval přes dvacet let",
+    "fact": "Claude Monet si v Giverny vytvořil vlastní zahradu s jezírkem plným leknínů a od roku 1899 ji dvacet let maloval; vzniklo tak přes 250 obrazů leknínů.",
+    "source_url": "https://en.wikipedia.org/wiki/Claude_Monet",
+    "source_quote": "He would ultimately make over 250 paintings of the Waterlilies.",
+    "voice": "Nejdřív si zahradu vysadil, teprve pak ji celý zbytek života maloval.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Monet's water lily pond garden at Giverny with a Japanese bridge, weeping willows, pastel reflections, 16:9",
+    "ll": [1.5339, 49.0762],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obraz, který dal jméno celému uměleckému směru",
+        "fact": "Termín impresionismus vznikl podle Monetova obrazu Imprese, východ slunce vystaveného v roce 1874 na první výstavě impresionistů, kde ho posměšně použil kritik Louis Leroy.",
+        "source_url": "https://en.wikipedia.org/wiki/Claude_Monet",
+        "source_quote": "The term 'Impressionism' is derived from the title of his painting Impression, Sunrise (Impression, soleil levant), which was exhibited in 1874 at the First Impressionist Exhibition.",
+        "voice": "Kritik chtěl obraz zesměšnit, a nakonec pojmenoval celý umělecký směr.",
+        "image_prompt": "Photorealistic recreation scene of a 19th-century Parisian art exhibition hall with impressionist paintings on the walls, soft daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zahrada navržená rovnou jako budoucí obraz",
+        "fact": "Monet svou zahradu v Giverny neplánoval jen jako okrasnou výsadbu, ale rovnou jako živou kompozici barev a světla — přírodu si tu upravil tak, aby mu sloužila jako stálý motiv k malování.",
+        "source_url": "https://en.wikipedia.org/wiki/Claude_Monet",
+        "voice": "Jiní malíři hledali motiv v krajině, on si svůj motiv rovnou sám zasadil na zahradě.",
+        "image_prompt": "Photorealistic aerial shot of the geometric flower beds and water garden at Giverny, vibrant colors, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-umeni-rodin-myslitel",
+    "country": "Francie",
+    "section": "Umění",
+    "topic": "Rodinův Myslitel",
+    "headline": "Socha, co vznikla jako součást brány do pekla",
+    "fact": "Sochu Myslitel vytvořil Auguste Rodin původně jako součást monumentální Brány pekel, kterou dostal objednanou v roce 1880 a inspiroval se přitom Dantovou Božskou komedií.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Thinker",
+    "source_quote": "Rodin conceived the figure as part of his work The Gates of Hell commissioned in 1880.",
+    "voice": "Postava, co dnes sedí sama v muzejní zahradě, měla původně jen hlídat bránu do pekla.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a bronze sculpture of a seated man in deep thought, museum garden setting, dramatic natural light, 16:9",
+    "ll": [2.3153, 48.8557],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jedna socha, skoro třicet bronzových sourozenců",
+        "fact": "Kromě originálu existuje přes dvacet sedm dalších celovelkých bronzových odlitků Myslitele v muzeích a na veřejných místech po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Thinker",
+        "source_quote": "There are 27 other known full-sized bronze castings of the figure, approximately 185 centimetres (73 in) tall.",
+        "voice": "Originál je jenom jeden, ale jeho bronzoví dvojníci sedí v muzeích po celém světě.",
+        "image_prompt": "Photorealistic shot of a bronze thinking-man statue displayed outdoors in a museum courtyard, soft afternoon light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z knižní postavy básníka se stal symbol přemýšlení",
+        "fact": "Socha měla původně zpodobňovat básníka Danteho, jak shlíží na pekelné vidiny popsané v jeho básni — teprve později ji lidé začali chápat obecněji jako symbol lidského přemýšlení jako takového.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Thinker",
+        "source_quote": "Rodin based this on the early 14th century poem the Divine Comedy by Dante Alighieri.",
+        "voice": "Nejdřív to byl konkrétní básník nad konkrétní básní, dnes je to už jen přemýšlení samo o sobě.",
+        "image_prompt": "Photorealistic close-up shot of a bronze statue's face resting on its hand in contemplative pose, dramatic shadow, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-sport-tour-de-france",
+    "country": "Francie",
+    "section": "Sport",
+    "topic": "Tour de France",
+    "headline": "Závod založený kvůli prodeji novin",
+    "fact": "Tour de France vznikla v roce 1903 jako marketingový tah novin L'Auto, které si od vytrvalostního závodu po celé Francii slibovaly vyšší náklad — a náklad novin se během závodu skutečně zdvojnásobil.",
+    "source_url": "https://en.wikipedia.org/wiki/Tour_de_France",
+    "source_quote": "L'Auto's mission was accomplished, as circulation of the publication doubled throughout the race.",
+    "voice": "Nejslavnější cyklistický závod světa vznikl vlastně jako reklamní kampaň na noviny.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a peloton of professional cyclists racing through French countryside, sunflower fields, sunny day, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Žlutý dres podle barvy novinového papíru",
+        "fact": "Žlutý dres pro vedoucího jezdce zavedli v roce 1919 a jeho barva prý napodobuje žlutý papír, na kterém noviny L'Auto vycházely.",
+        "source_url": "https://en.wikipedia.org/wiki/Tour_de_France",
+        "source_quote": "The yellow jersey (the color was chosen as the newspaper that created the Tour, L'Auto, was printed on yellow paper), was added to the race in the 1919 edition and it has since become a symbol of the Tour de France.",
+        "voice": "Barvu proslulého dresu neurčil žádný návrhář, ale obyčejný novinový papír.",
+        "image_prompt": "Photorealistic close-up shot of a cyclist wearing a yellow jersey riding through mountain switchbacks, dramatic alpine scenery, 16:9"
+      },
+      "kartograf": {
+        "headline": "Trasa, co každý rok obkrouží jinou Francii",
+        "fact": "Moderní ročníky Tour de France ujedou zhruba 3500 kilometrů po dobu tří týdnů a trasa se každý rok mění, takže závod postupně provede diváky prakticky celým francouzským územím včetně hor i pobřeží.",
+        "source_url": "https://en.wikipedia.org/wiki/Tour_de_France",
+        "source_quote": "The modern editions of the Tour de France consist of 21 day-long stages over a 23- or 24-day period and cover approximately 3,500 kilometres (2,200 mi) total.",
+        "voice": "Trasa se mění každý rok, ale cíl v Paříži zůstává skoro vždycky stejný.",
+        "image_prompt": "Photorealistic aerial shot of a cycling race finish on the Champs-Élysées in Paris, crowds along the road, Arc de Triomphe in distance, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-sport-ms-1998",
+    "country": "Francie",
+    "section": "Sport",
+    "topic": "Mistrovství světa ve fotbale 1998",
+    "headline": "Domácí titul se dvěma góly jednoho muže",
+    "fact": "Francouzský fotbalový tým vyhrál 12. července 1998 na Stade de France finále mistrovství světa nad Brazílií 3:0, přičemž dva góly vstřelil Zinedine Zidane hlavou.",
+    "source_url": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_Final",
+    "source_quote": "The final match of the 1998 FIFA World Cup...was played at the Stade de France in Paris, France, on 12 July 1998",
+    "voice": "Doma vyhráli mistrovství světa, a hrdinou večera se stal fotbalista, co skóroval hlavou dvakrát za sebou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a football stadium crowd celebrating with confetti and national flags, floodlights, night atmosphere, 16:9",
+    "ll": [2.3600, 48.9244],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dva góly hlavou během jednoho poločasu",
+        "fact": "Zinedine Zidane otevřel skóre hlavičkou po rohovém kopu už ve 27. minutě a druhý gól přidal těsně před koncem prvního poločasu, čímž Francie odskočila do vedení 2:0.",
+        "source_url": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_Final",
+        "source_quote": "Zidane gave France the lead just before the half-hour mark, outjumping Leonardo to connect with a header from an in-swinging corner from the right taken by Petit.",
+        "voice": "Ještě než diváci stihli usednout na místa po přestávce, měl Zidane na kontě už dva góly.",
+        "image_prompt": "Photorealistic shot of a football player heading the ball during a corner kick, packed stadium in the background, dynamic action, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vítězství, které proměnilo národní sebevědomí",
+        "fact": "Domácí titul mistrů světa přišel v zemi s mnohonárodnostní fotbalovou reprezentací a stal se pro Francii symbolem soudržnosti společnosti složené z lidí s kořeny na několika kontinentech.",
+        "source_url": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_Final",
+        "voice": "Na hřišti stál tým, jehož rodokmen sahal na několik různých kontinentů najednou, a vyhrál doma mistrovství světa.",
+        "image_prompt": "Photorealistic wide shot of fans of diverse backgrounds celebrating together in Parisian streets with French flags, evening light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-sport-roland-garros",
+    "country": "Francie",
+    "section": "Sport",
+    "topic": "Roland-Garros",
+    "headline": "Jediný grandslam hraný na antuce",
+    "fact": "Roland-Garros neboli French Open je jediný grandslamový tenisový turnaj, který se dodnes hraje na antukových dvorcích.",
+    "source_url": "https://en.wikipedia.org/wiki/French_Open",
+    "source_quote": "The French Open is the premier clay court tournament in the world and the only Grand Slam tournament currently held on this surface.",
+    "voice": "Míček se tu odráží pomaleji a výměny trvají déle než na kterémkoli jiném grandslamu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a professional tennis player sliding on red clay court during a match, stadium seating in background, sunny day, 16:9",
+    "ll": [2.2530, 48.8460],
+    "levels": {
+      "cestovatel": {
+        "headline": "Turnaj otevřený profesionálům už v roce 1968",
+        "fact": "Roland-Garros se v roce 1968 stal prvním grandslamovým turnajem, na kterém mohli soutěžit i profesionální hráči vedle amatérů, což odstartovalo takzvanou otevřenou éru tenisu.",
+        "source_url": "https://en.wikipedia.org/wiki/French_Open",
+        "source_quote": "In 1968, the year of the French General Strike, the French Championships became the first Grand Slam tournament to go open, allowing both amateurs and professionals to compete.",
+        "voice": "Než se otevřel profesionálům, mohli si o titul zahrát jen hráči, kteří za tenis oficiálně nebrali peníze.",
+        "image_prompt": "Photorealistic shot of vintage-style tennis players shaking hands at the net on a clay court, warm nostalgic lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Antuka jako místní stavební materiál proměněný ve sport",
+        "fact": "Volba antukového povrchu v Paříži odráží místní tradici — mletá cihla se ve Francii historicky používala jako dostupný materiál na úpravu dvorců, zatímco jinde ve světě převládly trávníky nebo tvrdé povrchy podle místních podmínek.",
+        "source_url": "https://en.wikipedia.org/wiki/French_Open",
+        "voice": "Zatímco jinde na světě se hraje na trávě nebo betonu, Paříž si vystačila s mletou cihlou pod nohama.",
+        "image_prompt": "Photorealistic aerial shot of red clay tennis courts in Paris with tree-lined surroundings, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-jazyk-akademie",
+    "country": "Francie",
+    "section": "Jazyk & slova",
+    "topic": "Académie française",
+    "headline": "Instituce se čtyřiceti nesmrtelnými členy",
+    "fact": "Académie française založil v roce 1635 kardinál Richelieu a dodnes má přesně čtyřicet členů, kterým se přezdívá 'nesmrtelní'.",
+    "source_url": "https://en.wikipedia.org/wiki/Acad%C3%A9mie_fran%C3%A7aise",
+    "source_quote": "The Académie comprises forty members, known as les immortels (\"the immortals\").",
+    "voice": "Křeslo v akademii se uvolní jen tehdy, když jeho dosavadní majitel zemře.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of the domed facade of the Institut de France building in Paris along the Seine river, daylight, 16:9",
+    "ll": [2.3372, 48.8566],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovník, na kterém se pracuje desítky let",
+        "fact": "Académie française vydává oficiální Slovník francouzské akademie a na jeho aktualizovaných vydáních pracuje tak dlouho, že se pravidla jazyka mezitím leckdy stihnou v běžné mluvě sama posunout dál.",
+        "source_url": "https://en.wikipedia.org/wiki/Acad%C3%A9mie_fran%C3%A7aise",
+        "source_quote": "The Académie publishes a dictionary of the French language, known as the Dictionnaire de l'Académie française.",
+        "voice": "Než dopíšou nové vydání slovníku, jazyk v ulicích si mezitím žije úplně jinak.",
+        "image_prompt": "Photorealistic shot of an antique leather-bound French dictionary open on a wooden desk, quill pen beside it, warm library light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stát, který si od počátku hlídal vlastní jazyk",
+        "fact": "Založení instituce pověřené dohledem nad spisovnou francouzštinou už v 17. století ukazuje, jak si Francie od raného novověku budovala jazykovou jednotu jako součást centralizace celého státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Acad%C3%A9mie_fran%C3%A7aise",
+        "source_quote": "to labor with all the care and diligence possible, to give exact rules to our language, to render it capable of treating the arts and sciences",
+        "voice": "Sjednotit jazyk celé země byl tehdy stejně politický úkol jako sjednotit její území.",
+        "image_prompt": "Photorealistic wide shot of the Seine river with Parisian bridges and historic buildings at dusk, warm lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-jazyk-verlan",
+    "country": "Francie",
+    "section": "Jazyk & slova",
+    "topic": "Verlan",
+    "headline": "Slang, který slova čte pozpátku",
+    "fact": "Verlan je francouzský slang založený na přehazování slabik ve slově — třeba 'femme' (žena) se v něm změní na 'meuf' a 'flic' (policajt) na 'keuf'.",
+    "source_url": "https://en.wikipedia.org/wiki/Verlan",
+    "source_quote": "femme and flic become meuf and keuf",
+    "voice": "Kdo neumí otočit slabiky v hlavě za pochodu, verlanu prostě nerozumí.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Řeč pařížských předměstí",
+        "fact": "Verlan se běžně používá mezi mladými lidmi ve francouzských městech a na předměstích jako způsob, jak dát najevo příslušnost k určité skupině nebo se od ostatních naopak odlišit.",
+        "source_url": "https://en.wikipedia.org/wiki/Verlan",
+        "source_quote": "Verlan is used by people to mark their membership in, or exclusion from, a particular group (generally young people in the cities and banlieues).",
+        "voice": "Kdo verlan ovládá, hned je jasné, kam patří — a kdo mu nerozumí, je automaticky odjinud.",
+        "image_prompt": "Photorealistic shot of a graffiti-covered urban street in a Paris suburb, colorful murals, late afternoon light, no people, 16:9"
+      },
+      "kartograf": {
+        "headline": "Starý trik jazyka, co dnes zní jako novinka",
+        "fact": "První doložené používání převracení slabik v podobě verlanu sahá už do 19. století mezi zloději, takže dnešní slang mladých lidí navazuje na mnohem starší tradici mluvy, která měla zůstat nesrozumitelná nezasvěceným.",
+        "source_url": "https://en.wikipedia.org/wiki/Verlan",
+        "source_quote": "The first documented use of verlan dates back to the 19th century, among robbers.",
+        "voice": "Trik, jak mluvit tak, aby tomu nerozuměli cizí, si mladí jen půjčili od dávných zlodějů.",
+        "image_prompt": "Photorealistic shot of an old Parisian back alley at dusk with vintage lampposts, moody atmosphere, no people, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-jazyk-circonflex",
+    "country": "Francie",
+    "section": "Jazyk & slova",
+    "topic": "Přehláska (accent circonflexe)",
+    "headline": "Stříška nad písmenem skrývá ztracené písmeno",
+    "fact": "Francouzská přehláska (accent circonflexe) často označuje místo, kde ve slově kdysi stálo písmeno 's', které se v pravopisu i výslovnosti postupně ztratilo — třeba ve slově 'forêt' (les) z původního 'forest'.",
+    "source_url": "https://en.wikipedia.org/wiki/Circumflex_in_French",
+    "source_quote": "It often indicates the historical presence of a letter, commonly s, that has become silent and fallen away in orthography over the course of linguistic evolution.",
+    "voice": "Malá stříška nad písmenem je vlastně náhrobek za hlásku, která ze slova dávno zmizela.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Reforma, která stříšku udělala nepovinnou",
+        "fact": "Pravopisná reforma z roku 1990 zrušila povinnost psát přehlásku nad písmeny 'i' a 'u' ve slovech, kde nehrozí záměna s jiným slovem, takže dnes vedle sebe platí obě podoby zápisu.",
+        "source_url": "https://en.wikipedia.org/wiki/Circumflex_in_French",
+        "source_quote": "proposed in 1990 a simplified orthography abolishing the circumflex over the letters u and i except in cases where its absence would create ambiguities and homographs",
+        "voice": "Škrtnout stříšku bylo najednou stejně správné jako ji tam nechat.",
+        "image_prompt": "Photorealistic close-up shot of an old French textbook page with visible accent marks, warm reading light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Znaménko, které vypráví dějiny jazyka",
+        "fact": "Podobně jako u dalších evropských jazyků s diakritikou i francouzská přehláska ukazuje, jak psaná podoba jazyka dokáže dlouho uchovávat stopy hláskových změn, které se v běžné mluvě odehrály už před staletími.",
+        "source_url": "https://en.wikipedia.org/wiki/Circumflex_in_French",
+        "voice": "Výslovnost slova se dávno proměnila, jen pravopis si na starou podobu ještě dlouho pamatoval.",
+        "image_prompt": "Photorealistic shot of a stack of antique French manuscripts and books with visible handwritten diacritical marks, soft light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-jidlo-bageta",
+    "country": "Francie",
+    "section": "Jídlo",
+    "topic": "Bageta",
+    "headline": "Chléb, který se v roce 2022 dostal na seznam UNESCO",
+    "fact": "Francouzská bageta získala v roce 2022 status nehmotného kulturního dědictví UNESCO jako uznání řemeslné dovednosti a kultury spojené s jejím pečením.",
+    "source_url": "https://en.wikipedia.org/wiki/Baguette",
+    "source_quote": "In 2022, the artisanal know-how and culture of baguette bread was inscribed to the UNESCO Intangible Cultural Heritage Lists.",
+    "voice": "Obyčejný chleba k obědu se dočkal stejného uznání jako památky a slavnosti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of freshly baked baguettes on a wooden counter in a traditional French bakery, warm morning light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Cena bagety byla kdysi určená zákonem",
+        "fact": "Už v roce 1920 vydala pařížská prefektura nařízení, které bagetě předepisovalo minimální váhu 80 gramů, maximální délku 40 centimetrů a stanovenou nejvyšší prodejní cenu.",
+        "source_url": "https://en.wikipedia.org/wiki/Baguette",
+        "source_quote": "The baguette, having a minimum weight of 80 g [2¾ oz] and a maximum length of 40 cm [16 in], may not be sold for a price higher than 0.35 francs apiece",
+        "voice": "Stát tehdy hlídal i to, kolik smí stát obyčejný chleba k snídani.",
+        "image_prompt": "Photorealistic close-up shot of a hand holding a fresh baguette outside a Parisian bakery storefront, morning light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pečivo jako denní rituál celé společnosti",
+        "fact": "Každodenní nákup čerstvé bagety v místní pekárně je ve Francii tak zakořeněný zvyk, že se stal součástí běžného rytmu dne pro miliony domácností napříč celou zemí bez ohledu na region.",
+        "source_url": "https://en.wikipedia.org/wiki/Baguette",
+        "voice": "Kupovat chleba každý den zvlášť místo do zásoby je tu spíš pravidlo než výjimka.",
+        "image_prompt": "Photorealistic shot of a French person walking down a cobblestone street carrying a baguette under their arm, soft daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-jidlo-sampanske",
+    "country": "Francie",
+    "section": "Jídlo",
+    "topic": "Šampaňské",
+    "headline": "Bublinky, které smí nést jméno jen z jednoho kraje",
+    "fact": "Název 'šampaňské' smí od roku 1891 na základě mezinárodní smlouvy nést jen šumivé víno vyrobené v přesně vymezeném kraji Champagne na severovýchodě Francie.",
+    "source_url": "https://en.wikipedia.org/wiki/Champagne_(wine)",
+    "source_quote": "the name Champagne is legally protected by the Madrid system under an 1891 treaty, which reserved it for the sparkling wine produced in the toponymous region.",
+    "voice": "Stejně vyrobené bublinky odjinud smí být jen 'šumivé víno', nikdy ne šampaňské.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of champagne bottles aging in a chalk cellar with rows of bottles, dim atmospheric lighting, 16:9",
+    "ll": [4.0347, 49.2583],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mnich, kterému legenda přisuzuje víc, než dokázal",
+        "fact": "Přestože se mnichu Dom Pérignonovi lidově připisuje vynález šumivého vína, ve skutečnosti přispěl hlavně ke zlepšení kvality vína v kraji Champagne, zatímco první doloženou metodu přidávání cukru pro druhé kvašení popsal už dřív anglický vědec Christopher Merret.",
+        "source_url": "https://en.wikipedia.org/wiki/Champagne_(wine)",
+        "source_quote": "Contrary to legend and popular assumption, Dom Pérignon did not invent sparkling wine, though he did make important contributions to the production and quality of both still and sparkling champagne wines.",
+        "voice": "Jméno na etiketě zná celý svět, ale slávu za vynález bublinek si nezaslouží úplně sám.",
+        "image_prompt": "Photorealistic portrait-style shot of a Benedictine monk's cellar workshop with old wine barrels, candlelight, historical atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kraj, který dal jméno celé kategorii vína",
+        "fact": "Ochrana názvu Champagne jen pro víno z konkrétního francouzského kraje patří mezi starší příklady toho, jak se geografický původ produktu stal právně chráněnou značkou kvality uznávanou po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Champagne_(wine)",
+        "voice": "Jeden kraj si dokázal ohlídat jméno tak důsledně, že ho dnes chrání zákony po celém světě.",
+        "image_prompt": "Photorealistic aerial shot of champagne vineyards on rolling hills in the Champagne region of France, autumn colors, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-jidlo-choucroute",
+    "country": "Francie",
+    "section": "Jídlo",
+    "topic": "Alsaská choucroute",
+    "headline": "Kysané zelí, co se stalo francouzskou specialitou",
+    "fact": "Choucroute garnie, alsaské kysané zelí podávané s uzeninami a masem, se do francouzské kuchyně dostalo poté, co se Alsasko po vestfálském míru v roce 1648 stalo součástí Francie.",
+    "source_url": "https://en.wikipedia.org/wiki/Choucroute_garnie",
+    "source_quote": "when Alsace became part of France following the Westphalia peace treaties in 1648, it brought this dish to the attention of French chefs",
+    "voice": "Recept přišel s novou hranicí, a nakonec zdomácněl tak, že ho dnes vnímá celá země jako svůj.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a plate of choucroute garnie with sauerkraut, sausages and pork, rustic Alsatian restaurant table, warm light, 16:9",
+    "ll": [7.7521, 48.5734],
+    "levels": {
+      "cestovatel": {
+        "headline": "Talíř, na kterém se sejdou tři druhy uzenin",
+        "fact": "Tradiční alsaská choucroute garnie kombinuje na jednom talíři hned tři druhy uzenin — klobásu typu Morteau nebo Montbéliard, štrasburskou klobásu a frankfurtský párek.",
+        "source_url": "https://en.wikipedia.org/wiki/Choucroute_garnie",
+        "source_quote": "Traditional recipes call for three types of sausage: Morteau sausage or Montbéliard sausage, Strasbourg sausage and Frankfurt sausage.",
+        "voice": "Jeden talíř, a přitom hned tři různé uzenářské tradice pohromadě.",
+        "image_prompt": "Photorealistic close-up shot of assorted sausages and cured meats on sauerkraut, rustic wooden table, warm light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo na hranici dvou kuchyní",
+        "fact": "Kysané zelí je jinak typické spíš pro německou a středoevropskou kuchyni — alsaská choucroute tak ukazuje, jak pohraniční region dokáže spojit chutě obou sousedních zemí do jednoho jídla.",
+        "source_url": "https://en.wikipedia.org/wiki/Choucroute_garnie",
+        "source_quote": "Although sauerkraut is a traditionally German and Eastern European dish",
+        "voice": "Na talíři se tu potkávají dvě kuchyně, přesně jako se v tom kraji potkávaly dva národy.",
+        "image_prompt": "Photorealistic shot of a half-timbered Alsatian village street with flower boxes, Strasbourg style architecture, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-historie-bastila",
+    "country": "Francie",
+    "section": "Historie",
+    "topic": "Dobytí Bastily",
+    "headline": "Symbolická vzpoura proti pevnosti skoro bez vězňů",
+    "fact": "Když dav 14. července 1789 dobyl pařížskou pevnost Bastilu, věznilo se v ní tou dobou jen sedm vězňů — přesto se tato událost stala symbolickým začátkem francouzské revoluce.",
+    "source_url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+    "source_quote": "At this point, the Bastille was nearly empty, housing only seven prisoners",
+    "voice": "Prakticky prázdná věznice se stala symbolem, kolem kterého se zhroutila celá stará monarchie.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical reenactment shot of a crowd storming a stone fortress in 18th century Paris, dramatic overcast sky, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pevnost, co v den útoku hlídala jen hrstku vězňů",
+        "fact": "Mezi sedmi vězni Bastily byli v den útoku čtyři padělatelé, jeden údajný špion prohlášený za duševně nemocného, muž obviněný z pokusu o vraždu krále a jeden šlechtic podezřelý z vraždy.",
+        "source_url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+        "source_quote": "housing only seven prisoners: four forgers arrested under warrants issued by the Grand Châtelet court; James F.X. Whyte, an Irish born 'lunatic' suspected of spying and imprisoned at the request of his family; Auguste-Claude Tavernier, who had tried to assassinate Louis XV 30 years before; and one 'deviant' aristocrat suspected of murder, the Comte de Solages.",
+        "voice": "Útočníci čekali baštu tyranie, a našli tam hlavně pár nešťastníků a podvodníků.",
+        "image_prompt": "Photorealistic shot of a dark stone prison cell interior with a small barred window, dramatic lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pevnost, co padla spíš jako symbol než jako cíl",
+        "fact": "Vojenský význam Bastily byl v roce 1789 už mizivý, přesto se její pád stal rozhodujícím impulzem revoluce — ukázka, jak dokáže symbolická hodnota místa převážit nad jeho skutečným praktickým významem.",
+        "source_url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+        "source_quote": "Its fall was the flashpoint of the French Revolution.",
+        "voice": "Vojensky nevýznamnou stavbu smetl dav, a přesto tím pádem odstartoval revoluci celé země.",
+        "image_prompt": "Photorealistic wide shot of the historic Place de la Bastille square in Paris with the July Column monument, evening light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-historie-napoleon",
+    "country": "Francie",
+    "section": "Historie",
+    "topic": "Napoleon Bonaparte",
+    "headline": "Od korsického rodáka k císaři Francouzů",
+    "fact": "Napoleon Bonaparte se narodil 15. srpna 1769 na Korsice a v prosinci 1804 se sám korunoval na francouzského císaře.",
+    "source_url": "https://en.wikipedia.org/wiki/Napoleon",
+    "source_quote": "In December 1804 Napoleon crowned himself Emperor of the French, further consolidating his power.",
+    "voice": "Přišel z ostrova na okraji Francie a skončil na trůnu uprostřed Paříže.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style portrait of a French emperor in ornate military uniform, imperial palace interior, dramatic lighting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zákoník, který přežil svého tvůrce o staletí",
+        "fact": "Napoleonův občanský zákoník z roku 1804 zavedl rovnost před zákonem a zrušil zbytky feudalismu, a jeho principy dodnes ovlivňují právní systémy řady evropských zemí.",
+        "source_url": "https://en.wikipedia.org/wiki/Napoleon",
+        "source_quote": "His legacy endures through the legal and administrative reforms he enacted in France and Western Europe, most notably the Napoleonic Code.",
+        "voice": "Bitvy, které vyhrál, dávno skončily, ale zákoník, který sepsal, platí v základu dodnes.",
+        "image_prompt": "Photorealistic shot of an antique leather-bound legal code book on a wooden desk with quill and candle, warm light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pád na jedné bitvě, konec na vzdáleném ostrově",
+        "fact": "Napoleonovu vládu ukončila v červnu 1815 porážka u Waterloo od spojenecké koalice, po níž ho poslali do vyhnanství na odlehlý ostrov Svatá Helena v jižním Atlantiku, kde roku 1821 zemřel.",
+        "source_url": "https://en.wikipedia.org/wiki/Napoleon",
+        "source_quote": "His opponents responded by forming a Seventh Coalition, which defeated him at the Battle of Waterloo in June 1815.",
+        "voice": "Vládl skoro celé Evropě, a zemřel nakonec sám na malém ostrově uprostřed oceánu.",
+        "image_prompt": "Photorealistic wide shot of a remote rocky island in the South Atlantic Ocean, dramatic clouds, isolated landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "fr-historie-den-d",
+    "country": "Francie",
+    "section": "Historie",
+    "topic": "Vylodění v Normandii",
+    "headline": "Největší vylodění z moře v dějinách",
+    "fact": "Spojenecké vylodění v Normandii 6. června 1944 bylo největší vyloděním z moře v dějinách a zúčastnilo se ho přes milion vojáků z několika zemí během celé bitvy o Normandii.",
+    "source_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+    "source_quote": "it is the largest seaborne invasion in history.",
+    "voice": "Jediné ráno na plážích rozhodlo o osvobození celé západní Evropy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style wide shot of military landing craft approaching a beach at dawn, overcast sky, dramatic atmosphere, 16:9",
+    "ll": [-0.8637, 49.3813],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přes dvacet tisíc výsadkářů ještě před svítáním",
+        "fact": "Invazi v časných ranních hodinách 6. června 1944 zahájil výsadek asi 24 000 amerických, britských a kanadských výsadkářů, kteří seskočili ještě před hlavním výsadkem na pláže.",
+        "source_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+        "source_quote": "the landing of 24,000 American, British, and Canadian airborne troops",
+        "voice": "Než první voják vystoupil na pláž, tisíce dalších už seděly ve tmě hluboko za nepřátelskými liniemi.",
+        "image_prompt": "Photorealistic shot of paratroopers descending at dawn over the French countryside, silhouettes against early morning sky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pláže, které otevřely cestu k osvobození celého kontinentu",
+        "fact": "Bitva o Normandii nakonec zapojila devětatřicet spojeneckých divizí z několika zemí a stala se odrazovým můstkem pro osvobození Francie i zbytku západní Evropy.",
+        "source_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+        "source_quote": "Eventually, thirty-nine Allied divisions would be committed to the Battle of Normandy: twenty-two American, twelve British, three Canadian, one Polish, and one French, totalling over a million troops.",
+        "voice": "Z pár kilometrů pláže se během pár týdnů stala brána pro osvobození celého kontinentu.",
+        "image_prompt": "Photorealistic aerial shot of Normandy coastline with beach and cliffs, calm sea, peaceful daylight, historical memorial context, 16:9"
+      }
+    }
+  }
+]

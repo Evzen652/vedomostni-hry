@@ -1,0 +1,842 @@
+[
+  {
+    "id": "cz-mista-prazsky-hrad",
+    "country": "Česko",
+    "section": "Místa",
+    "topic": "Pražský hrad",
+    "headline": "Největší starobylý hrad na světě",
+    "fact": "Pražský hrad je podle Guinnessovy knihy rekordů největší starobylý hrad na světě, jeho rozloha se uvádí 7,28 hektaru, tedy přibližně 72 800 m².",
+    "source_url": "https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%BD_hrad",
+    "source_quote": "je to největší starobylý hrad na světě",
+    "voice": "Turisté ho projdou za hodinu, archeologové ho zkoumají už přes sto let.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek Pražského hradu s katedrálou svatého Víta při západu slunce, pohled od Vltavy, přirozené světlo, bez textu, 16:9",
+    "ll": [14.4009, 50.0909],
+    "tags": ["regionalni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Katedrála, co se stavěla skoro 600 let",
+        "fact": "Katedrála svatého Víta uvnitř hradu se stavěla od 21. listopadu 1344 do září 1929 — mezi položením základního kamene a dokončením uplynulo přes 500 let.",
+        "source_url": "https://cs.wikipedia.org/wiki/Katedr%C3%A1la_svat%C3%A9ho_V%C3%ADta",
+        "source_quote": "Dne 21. listopadu 1344 Jan Lucemburský položil základní kámen katedrály sv. Víta",
+        "voice": "Generace zedníků se vystřídaly, než na věži přibyla poslední cihla.",
+        "image_prompt": "Fotorealistický snímek katedrály svatého Víta zevnitř nádvoří Pražského hradu, gotické věže, detail kamenné fasády, denní světlo, bez textu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hrad na kopci nad řekou",
+        "fact": "Poloha Pražského hradu na ostrohu nad Vltavou je typická pro raně středověká panovnická sídla ve střední Evropě — kombinuje obrannou výhodu terénu s kontrolou řeky jako obchodní tepny.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%BD_hrad",
+        "voice": "Kdo ovládal kopec nad řekou, ovládal i cestu, která pod ním protékala.",
+        "image_prompt": "Fotorealistický letecký/panoramatický snímek Pražského hradu na kopci nad meandrem Vltavy, okolní historická zástavba, denní světlo, bez textu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-mista-karluv-most",
+    "country": "Česko",
+    "section": "Místa",
+    "topic": "Karlův most",
+    "headline": "Gotický most, který stavěli 45 let",
+    "fact": "Karlův most založil roku 1357 Karel IV.; stavba trvala 45 let a most je 515,76 metru dlouhý se 16 oblouky.",
+    "source_url": "https://cs.wikipedia.org/wiki/Karl%C5%AFv_most",
+    "source_quote": "515,76 m dlouhý a 9,40 až 9,50 m široký",
+    "voice": "Chodí po něm davy turistů, a přitom pod ním dodnes proudí stejná řeka jako za Karla IV.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek Karlova mostu v Praze za úsvitu, gotické věže na obou koncích, barokní sochy na zábradlí, klidná Vltava, bez lidí, 16:9",
+    "ll": [14.4114, 50.0865],
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Třicet soch, které hlídají most",
+        "fact": "Na mostě stojí 30 převážně barokních soch a sousoší; většina jich byla osazena mezi lety 1707 a 1714, tedy až tři století po dostavbě samotného mostu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Karl%C5%AFv_most",
+        "source_quote": "30 převážně barokních soch a sousoší",
+        "voice": "Most je gotický, ale kdo na něj přijde na sochy, ocitne se hlavně v baroku.",
+        "image_prompt": "Fotorealistický detailní snímek barokní sochy světce na Karlově mostě, ranní mlha nad Vltavou v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Most, který spojil dvě různá města",
+        "fact": "Karlův most propojil Staré Město s Malou Stranou pod hradem — typický příklad toho, jak jediná stavba dokáže sjednotit dvě samostatně vzniklá sídla do jednoho fungujícího města.",
+        "source_url": "https://cs.wikipedia.org/wiki/Karl%C5%AFv_most",
+        "voice": "Bez jednoho mostu by z dnešní Prahy klidně mohla být dvě různá města.",
+        "image_prompt": "Fotorealistický letecký snímek Karlova mostu spojujícího Staré Město a Malou Stranu s Pražským hradem v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-mista-lednicko-valticky-areal",
+    "country": "Česko",
+    "section": "Místa",
+    "topic": "Lednicko-valtický areál",
+    "headline": "Největší upravená krajina v Evropě",
+    "fact": "Lednicko-valtický areál na jižní Moravě je s rozlohou 283 km² považován za nejrozsáhlejší komponovanou krajinu v Evropě, a možná i na světě; od roku 1996 je na seznamu UNESCO.",
+    "source_url": "https://cs.wikipedia.org/wiki/Lednicko-valtick%C3%BD_are%C3%A1l",
+    "source_quote": "nejrozsáhlejší komponovanou krajinu v Evropě a možná i na světě",
+    "voice": "Šlechtici si tu na dvě století objednali krajinu jako zahradníci objednávají záhon.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zámku Lednice s minaretem a rozlehlým anglickým parkem na jižní Moravě, podzimní barvy, bez lidí, 16:9",
+    "ll": [16.8020, 48.7973],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jediný minaret v celém Česku",
+        "fact": "Součástí parku je 64,8 metru vysoký lednický minaret z let 1797–1804 — jediná stavba svého druhu v Česku a zároveň nejvyšší minaret na světě mimo islámské země.",
+        "source_url": "https://cs.wikipedia.org/wiki/Minaret_(Lednicko-valtick%C3%BD_are%C3%A1l)",
+        "source_quote": "druhou nejstarší dochovanou rozhlednu na českém území a zároveň o jediný minaret v České republice. Také je to nejvyšší stavba tohoto typu mimo islámské země.",
+        "voice": "Modlitby se odsud nikdy neozývaly — knížeti šlo jen o výhled a o módní styl.",
+        "image_prompt": "Fotorealistický snímek bílého lednického minaretu v parku Lednicko-valtického areálu, okolní zeleň, jasný den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina jako umělecké dílo",
+        "fact": "Lichtenštejnský rod přetvářel krajinu mezi Lednicí a Valticemi v průběhu 18. a 19. století cíleně jako jeden komponovaný celek — na rozdíl od běžné krajiny zde nevznikala náhodně, ale podle jednotného plánu jako rozšíření zámecké zahrady do měřítka celého kraje.",
+        "source_url": "https://cs.wikipedia.org/wiki/Lednicko-valtick%C3%BD_are%C3%A1l",
+        "source_quote": "formoval v průběhu 18. a 19. století",
+        "voice": "Napřed vznikl plán na papíře, teprve pak podle něj vyrostla celá krajina.",
+        "image_prompt": "Fotorealistický letecký snímek Lednicko-valtického areálu, rybníky, aleje a zámecké stavby v pravidelném uspořádání, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-priroda-snezka",
+    "country": "Česko",
+    "section": "Příroda",
+    "topic": "Sněžka",
+    "headline": "Vrchol, který leží už v Polsku",
+    "fact": "Sněžka měří 1603 metrů a je nejvyšší horou Krkonoš i celého Česka, ačkoli její skutečný vrchol leží pár metrů za hranicí, na polské straně.",
+    "source_url": "https://cs.wikipedia.org/wiki/Sn%C4%9B%C5%BEka",
+    "source_quote": "Sněžka se svými 1603 m nejvyšší horou Krkonoš, Slezska, Čech, i celého Česka",
+    "voice": "Vylezeš na nejvyšší českou horu a nohama přitom stojíš v cizí zemi.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Sněžky v Krkonoších, kaple svatého Vavřince na vrcholu, ranní světlo, bez lidí, 16:9",
+    "ll": [15.7403, 50.7361],
+    "tags": ["fyzicka-geografie", "kartografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kaple přesně na hranici dvou zemí",
+        "fact": "Na vrcholu Sněžky stojí kaple svatého Vavřince a nedaleko i polská horská chata — hranice mezi Českem a Polskem prochází doslova pár kroků od nich.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sn%C4%9B%C5%BEka",
+        "voice": "Zajdeš na kus řeči k sousedům, aniž bys sjel dolů z kopce.",
+        "image_prompt": "Fotorealistický snímek kamenné kaple svatého Vavřince na vrcholu Sněžky, mlha kolem, horská krajina Krkonoš, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kde se hranice láme o pár metrů",
+        "fact": "Bod ležící celý na českém území je nedaleká Luční hora vysoká 1556 m — Sněžka ukazuje, jak státní hranice vedená hřebenem hor dokáže rozhodnout, který vrchol si která země smí nazvat svým vrcholem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sn%C4%9B%C5%BEka",
+        "source_quote": "je nejvyšším vrcholem ležícím uvnitř hranic Česka tedy Luční hora vysoká 1556 m",
+        "voice": "Hranici na vrcholu nekreslí příroda, ale politická dohoda mezi státy.",
+        "image_prompt": "Fotorealistický letecký snímek hřebene Krkonoš s vrcholem Sněžky a hraničními kameny, podzimní barvy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-priroda-sumava",
+    "country": "Česko",
+    "section": "Příroda",
+    "topic": "Šumava",
+    "headline": "Jedno z nejstarších pohoří Evropy",
+    "fact": "Šumava patří mezi jedno z nejstarších pohoří Evropy a od roku 1991 ji na české straně chrání Národní park Šumava o rozloze přes 68 000 hektarů.",
+    "source_url": "https://cs.wikipedia.org/wiki/%C5%A0umava",
+    "source_quote": "jedním z nejstarších pohoří Evropy",
+    "voice": "Hory tu už dávno zvětraly do kopců, ale rašeliniště pod nimi rostou dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek podzimní šumavské krajiny, zvlněné zalesněné kopce, ranní mlha nad rašeliništěm, bez lidí, 16:9",
+    "ll": [13.4172, 49.0759],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rašeliniště chráněná mezinárodní úmluvou",
+        "fact": "Šumavská rašeliniště o rozloze přes 10 000 hektarů jsou zapsaná jako mezinárodně významný mokřad podle Ramsarské úmluvy a spolu s ledovcovými jezery (např. Černé jezero) patří k nejcennějším přírodním útvarům Šumavy.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C5%A0umava",
+        "source_quote": "Ramsarská lokalita Šumavská rašeliniště o rozloze 10 225 ha",
+        "voice": "Půda, co vypadá jako louka, se pod nohama umí zavlnit jako matrace.",
+        "image_prompt": "Fotorealistický snímek šumavského rašeliniště s tůněmi a zakrslými borovicemi, ranní mlha, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hory, co drží hranici tří zemí",
+        "fact": "Šumava spolu s bavorským Národním parkem Bavorský les tvoří jeden z největších bilaterálních chráněných celků v Evropě o ploše přes 900 km² — pohoří tu funguje jako přírodní hranice mezi Českem, Německem a nedalekým Rakouskem.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C5%A0umava",
+        "source_quote": "jeden z nejrozsáhlejších bilaterálních národních parků Evropy",
+        "voice": "Příroda tu nepotřebovala hraniční kameny, hranici jí vytyčilo samo pohoří.",
+        "image_prompt": "Fotorealistický letecký snímek zalesněného pohraničního hřebene Šumavy na hranici Česka a Německa, podzimní barvy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-priroda-moravsky-kras",
+    "country": "Česko",
+    "section": "Příroda",
+    "topic": "Moravský kras",
+    "headline": "Propast, na jejíž dno vede lanovka",
+    "fact": "Propast Macocha v Moravském krasu je 138,4 metru hluboká a celá krasová oblast ukrývá přes 1 600 zmapovaných jeskyní.",
+    "source_url": "https://cs.wikipedia.org/wiki/Moravsk%C3%BD_kras",
+    "source_quote": "Celkový počet registrovaných jeskyní v Moravském krasu přesahuje 1 600",
+    "voice": "Shora vypadá jako díra v lese, zezdola je to katedrála z kamene.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek propasti Macocha v Moravském krasu shora, strmé skalní stěny porostlé lesem, hloubka propasti, denní světlo, 16:9",
+    "ll": [16.7307, 49.3625],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Řeka, která zmizí pod zemí a zase se vrátí",
+        "fact": "Podzemní řeka Punkva protéká Punkevními jeskyněmi a napájí i dno propasti Macocha; turisté ji mohou projet na lodičkách přímo pod skalními stěnami jeskynního systému.",
+        "source_url": "https://cs.wikipedia.org/wiki/Moravsk%C3%BD_kras",
+        "voice": "Nastoupíš do loďky v jeskyni a ani nevíš, kolik metrů skály je nad tebou.",
+        "image_prompt": "Fotorealistický snímek turistů na lodičkách na podzemní řece Punkvě v Punkevních jeskyních, nasvícené krápníky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vápenec, který si voda rozpouští stovky tisíc let",
+        "fact": "Moravský kras vznikl rozpouštěním vápencového podloží podzemní vodou po statisíce let — propast Macocha je zřícený strop jedné z jeskyní, typický vzorec vzniku krasových propadlin všude na světě.",
+        "source_url": "https://cs.wikipedia.org/wiki/Moravsk%C3%BD_kras",
+        "voice": "Nic nevybuchlo, jenom voda trpělivě rozpouštěla kámen, dokud se strop nezřítil sám.",
+        "image_prompt": "Fotorealistický řezový/letecký snímek krasové krajiny Moravského krasu s propadlinami a vchody do jeskyní, zalesněná krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-lide-karel-iv",
+    "country": "Česko",
+    "section": "Lidé",
+    "topic": "Karel IV.",
+    "headline": "Otec vlasti, který založil univerzitu",
+    "fact": "Karel IV. založil roku 1348 Univerzitu Karlovu, první univerzitu severně od Alp, a historikové ho dodnes běžně nazývají 'otec vlasti'.",
+    "source_url": "https://cs.wikipedia.org/wiki/Karel_IV.",
+    "source_quote": "první univerzitu na sever od Alp",
+    "voice": "Studenti si na něj stěžují dodnes — kdyby jeho univerzitu nezaložil, neměli by na co.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sochy Karla IV. před Karlovým mostem v Praze, gotické korunovační roucho, denní světlo, bez lidí v popředí, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přezdívku dostal na vlastním pohřbu",
+        "fact": "Titul 'otec vlasti' (pater patriae) poprvé použil Karlův přítel Vojtěch Raňkův z Ježova, profesor pařížské Sorbonny, v řeči nad jeho hrobem po Karlově smrti v roce 1378.",
+        "source_url": "https://cs.wikipedia.org/wiki/Otec_vlasti",
+        "source_quote": "Poprvé toto označení použil v pohřební řeči jeho přítel Vojtěch Raňkův z Ježova, profesor na pařížské Sorboně.",
+        "voice": "Chvála, které se sám nedožil — přišla, až když už neměl šanci ji slyšet.",
+        "image_prompt": "Fotorealistický snímek náhrobku Karla IV. v katedrále svatého Víta, gotická krypta, tlumené světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jeden panovník, tři nová města naráz",
+        "fact": "Karel IV. v roce 1348 v jednom roce založil univerzitu, Nové Město pražské i hrad Karlštejn — ukázka, jak středověký panovník uměl souběžně budovat vzdělávací, městskou i obrannou infrastrukturu jako součást jednoho promyšleného plánu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Karel_IV.",
+        "source_quote": "Nové Město pražské – založeno 8. března 1348",
+        "voice": "Zatímco jinde vládci válčili o hranice, tenhle stavěl město za městem.",
+        "image_prompt": "Fotorealistický letecký snímek historického jádra Prahy s Novým Městem, Karlovým mostem a hradem Karlštejnem v dálce, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-lide-masaryk",
+    "country": "Česko",
+    "section": "Lidé",
+    "topic": "T. G. Masaryk",
+    "headline": "Filozof, co se stal prvním prezidentem",
+    "fact": "Tomáš Garrigue Masaryk byl 14. listopadu 1918 zvolen prvním prezidentem nově vzniklého Československa, které vzniklo o pár týdnů dřív, 28. října 1918.",
+    "source_url": "https://cs.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Garrigue_Masaryk",
+    "source_quote": "Masaryk byl 14. listopadu 1918 zvolen prvním prezidentem",
+    "voice": "Zprávu, že se stal prezidentem nové země, se dozvěděl až v Americe, daleko od domova.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický černobílý dobový portrét T. G. Masaryka v obleku, vážný výraz, studiové osvětlení, 16:9",
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zprávu o vlastním státě dostal v zahraničí",
+        "fact": "Masaryk byl v době vyhlášení Československa v USA, kde vedl zahraniční odboj proti Rakousko-Uhersku; teprve v prosinci 1918 se triumfálně vrátil do Prahy a složil prezidentský slib.",
+        "source_url": "https://cs.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Garrigue_Masaryk",
+        "source_quote": "Zpráva o revoluci v Praze a vzniku Československa dne 28. října 1918 zastihla Masaryka ještě v Americe.",
+        "voice": "Stát mu vznikl za zády, na jiném kontinentu, zatímco přesvědčoval cizí vlády.",
+        "image_prompt": "Fotorealistický snímek vítání T. G. Masaryka davem lidí v Praze v prosinci 1918, historické auto, slavnostní atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nový stát nakreslený na troskách impéria",
+        "fact": "Vznik Československa byl součástí širšího rozpadu podunajské monarchie po skončení velké války — na mapě střední Evropy tehdy najednou vzniklo hned několik nových států s hranicemi, které dodnes formují region.",
+        "source_url": "https://cs.wikipedia.org/wiki/%C4%8Ceskoslovensko",
+        "voice": "Jedna prohraná válka a na mapě střední Evropy najednou přibylo států jako hub po dešti.",
+        "image_prompt": "Fotorealistický snímek staré mapy střední Evropy z roku 1918 s vyznačenými novými hranicemi, teplé archivní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-lide-komensky",
+    "country": "Česko",
+    "section": "Lidé",
+    "topic": "Jan Amos Komenský",
+    "headline": "Učitel národů, co učil celou Evropu",
+    "fact": "Jan Amos Komenský je zakladatelem moderní pedagogiky a vysloužil si přezdívku 'učitel národů' za svá díla o vzdělávání, jako je Didaktika magna.",
+    "source_url": "https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD",
+    "source_quote": "Komenský je považován za zakladatele moderní pedagogiky a vysloužil si přízvisko 'Učitel národů'",
+    "voice": "Psal učebnice pro cizí děti, protože ty vlastní vzdělávat kvůli víře nesměl.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový portrét Jana Amose Komenského v tmavém oděvu s knihou v ruce, měkké světlo, 16:9",
+    "tags": ["dejiny", "jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Celý život na útěku po Evropě",
+        "fact": "Komenský odešel v roce 1628 do polského Lešna jako pobělohorský exulant kvůli zákazu protestantství a později žil i ve Švédsku, Uhrách a nakonec v Amsterodamu, kde roku 1670 zemřel.",
+        "source_url": "https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD",
+        "source_quote": "odešel v roce 1628 (spolu s rodinou) jako pobělohorský exulant do polského Lešna",
+        "voice": "Domov si za život vystřídal tolikrát, že by z jeho cesty vznikla vlastní mapa Evropy.",
+        "image_prompt": "Fotorealistický snímek historického města Lešno v Polsku, staré měšťanské domy, podzimní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Exil, který proměnil myšlenky v cestovní mapu",
+        "fact": "Komenského životní trasa (Morava – Polsko – Švédsko – Uhry – Nizozemsko) je typickým příkladem náboženského exilu po Bílé hoře: pronásledovaní intelektuálové se přesouvali tam, kde jim reformovaná víra a mocenské poměry umožňovaly dál pracovat a publikovat.",
+        "source_url": "https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD",
+        "voice": "Vyhnat myšlenku ze země se nepovede — ona si prostě najde jinou adresu.",
+        "image_prompt": "Fotorealistický snímek staré rukou kreslené mapy Evropy 17. století s vyznačenou trasou cesty, teplé archivní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-kultura-jizda-kralu",
+    "country": "Česko",
+    "section": "Kultura & tradice",
+    "topic": "Jízda králů",
+    "headline": "Král, který nesmí promluvit",
+    "fact": "Jízda králů je moravský folklorní obyčej, při němž chlapec v dívčím kroji jede jako 'král' s růží v ústech, aby ho svým hlasem nikdo nepoznal; od roku 2011 je na seznamu UNESCO.",
+    "source_url": "https://cs.wikipedia.org/wiki/J%C3%ADzda_kr%C3%A1l%C5%AF",
+    "source_quote": "Od roku 2011 je zapsána organizací UNESCO do Reprezentativního seznamu nemateriálního kulturního dědictví lidstva",
+    "voice": "Jediné, co ho může prozradit, je vlastní hlas — a ten musí celou dobu mlčet.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek slavnosti Jízda králů ve Vlčnově na jižní Moravě, chlapec v dívčím kroji s růží v ústech na koni, doprovodní jezdci v krojích, slunečný den, 16:9",
+    "ll": [17.6892, 48.9524],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obyčej zdokumentovaný už v roce 1808",
+        "fact": "Nejznámější jízda králů se koná ve Vlčnově na Slovácku, kde ji jako volbu dětského krále zaznamenal etnograf Ladislav Bohuslav Bartholomeides už v roce 1808 — patří tak k nejstarším doloženým lidovým obyčejům v regionu.",
+        "source_url": "https://cs.wikipedia.org/wiki/J%C3%ADzda_kr%C3%A1l%C5%AF",
+        "source_quote": "dokumentována od roku 1808",
+        "voice": "Stejný průvod, stejná vesnice, a mezi první zmínkou a dneškem leží víc než dvě stě let.",
+        "image_prompt": "Fotorealistický snímek průvodu Jízdy králů ulicí vesnice Vlčnov, diváci po stranách, slavnostní kroje, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obřad, který přežil díky odlehlosti kraje",
+        "fact": "Jízda králů se dochovala právě v moravském Slovácku, tedy v regionu, který si díky své relativní odlehlosti od center udržel silnou lokální identitu a folklor — podobný vzorec (periferie jako útočiště tradic) se opakuje i jinde v Evropě.",
+        "source_url": "https://cs.wikipedia.org/wiki/J%C3%ADzda_kr%C3%A1l%C5%AF",
+        "voice": "Čím dál od velkoměsta, tím déle si kraj drží zvyky, které jinde dávno zmizely.",
+        "image_prompt": "Fotorealistický letecký snímek moravské vesnice Slovácko během folklorní slavnosti, kroje a průvod na návsi, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-kultura-pomlazka",
+    "country": "Česko",
+    "section": "Kultura & tradice",
+    "topic": "Pomlázka",
+    "headline": "Zvyk, kdy dívky dostávají výprask a jsou rády",
+    "fact": "O Velikonočním pondělí chodí chlapci šlehat dívky upletenou vrbovou pomlázkou, aby 'neoprašivěly', a dostávají za to malovaná vejce a barevné stuhy.",
+    "source_url": "https://cs.wikipedia.org/wiki/Poml%C3%A1zka",
+    "voice": "Vrbový proutek, pár rýmů u dveří, a za to celý košík vajec.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek upletené vrbové pomlázky ozdobené barevnými stuhami, jarní slunce, kraslice vedle ní na stole, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Barva stuhy má svůj tajný význam",
+        "fact": "Pomlázka se plete obvykle z osmi vrbových proutků a zdobí se stuhami, jejichž barva nese skrytý vzkaz — červená značí náklonnost, modrá naději, zelená sympatii a žlutá naopak odmítnutí.",
+        "source_url": "https://cs.wikipedia.org/wiki/Poml%C3%A1zka",
+        "source_quote": "červená značila náklonnost, modrá naději, zelená sympatiální postoj a žlutá odmítnutí",
+        "voice": "Podle barvy stuhy na dveřích tak trochu poznáš, jak to mezi mladými ve vsi vlastně je.",
+        "image_prompt": "Fotorealistický detailní snímek vrbové pomlázky s barevnými stuhami v ruce chlapce, jarní zahrada v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jarní obřad plodnosti v novém kabátě",
+        "fact": "Vrbové proutí jako symbol jara a plodnosti je staré předkřesťanské téma, které křesťanské Velikonoce převzaly a spojily s vlastním kalendářem — podobně jako u ruské Maslenice jde o vzorec, kdy nová víra nezruší starý zvyk, ale dá mu nový rámec.",
+        "source_url": "https://cs.wikipedia.org/wiki/Poml%C3%A1zka",
+        "voice": "Než přišly Velikonoce, jaro už dávno slavili — jen to tehdy nazývali jinak.",
+        "image_prompt": "Fotorealistický snímek rozkvetlé vrby na jaře u potoka, symbol jarního obřadu, měkké světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-kultura-vanocni-kapr",
+    "country": "Česko",
+    "section": "Kultura & tradice",
+    "topic": "Vánoční kapr",
+    "headline": "Tradice, co dorazila na venkov se zpožděním",
+    "fact": "Kapr jako štědrovečerní jídlo se mezi měšťany rozšířil už v 19. století díky kuchařce Magdaleny Dobromily Rettigové, ale mezi venkovským obyvatelstvem se tato tradice ujala až mnohem později.",
+    "source_url": "https://cs.wikipedia.org/wiki/V%C3%A1no%C4%8Dn%C3%AD_kapr",
+    "source_quote": "Mezi venkovany a nižšími vrstvami obyvatelstva se tento zvyk rozšířil až po první světové válce.",
+    "voice": "Ve městech se vědělo, co patří na štědrovečerní stůl, dřív než na vesnici.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kaprů plavajících v kádi na vánočním trhu v Praze, prodejce v pozadí, zimní podvečerní světlo, 16:9",
+    "tags": ["kulturni-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept starý jako Bavor Rodovský",
+        "fact": "Základ tradice položily už středověké kláštery, které si kvůli půstu zakládaly rybníky s kaprem; obdobu receptu na 'kapra na černo' uvádí už kuchařská kniha Bavora Rodovského z Hustiřan ze 16. století.",
+        "source_url": "https://cs.wikipedia.org/wiki/V%C3%A1no%C4%8Dn%C3%AD_kapr",
+        "source_quote": "jeho obdobu uvádí již Bavor Rodovský z Hustiřan ve své kuchařské knize z 16. století",
+        "voice": "Rybník založili mniši kvůli půstu, a nakonec z toho vznikla úplně světská rodinná večeře.",
+        "image_prompt": "Fotorealistický snímek tradičního jihočeského rybníka za zimního rána, mlha nad hladinou, bez lidí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Proč zrovna kapr a ne mořská ryba",
+        "fact": "Volba kapra místo mořské ryby na vánoční stůl kopíruje geografii vnitrozemského Česka bez přístupu k moři — regiony jako jihočeské Třeboňsko s tisíci rybníky měly odedávna snadný přístup právě ke sladkovodním rybám, a tradice se podle toho přizpůsobila místním možnostem.",
+        "source_url": "https://cs.wikipedia.org/wiki/V%C3%A1no%C4%8Dn%C3%AD_kapr",
+        "voice": "Na stole skončí to, co má člověk poblíž — a Česku je blíž rybník než moře.",
+        "image_prompt": "Fotorealistický letecký snímek soustavy rybníků na jihočeském Třeboňsku, podzimní krajina, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-umeni-mucha",
+    "country": "Česko",
+    "section": "Umění",
+    "topic": "Alfons Mucha",
+    "headline": "Plakát, který přes noc udělal senzaci",
+    "fact": "Alfons Mucha se proslavil plakátem pro herečku Sarah Bernhardtovou, který po vylepení 1. ledna 1895 v Paříži způsobil naprostou senzaci a založil jeho pověst tvůrce secesního stylu.",
+    "source_url": "https://cs.wikipedia.org/wiki/Alfons_Mucha",
+    "source_quote": "způsobil naprostou senzaci",
+    "voice": "Ráno byl neznámý malíř, večer už ho znala celá Paříž.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek secesního plakátu ve stylu Alfonse Muchy s ženskou postavou a květinovými ornamenty, teplé barvy, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dvacet obrovských pláten za dvacet let",
+        "fact": "Muchovo vrcholné dílo Slovanská epopej tvoří dvacet velkoformátových pláten (největší z nich měří 8,10 × 6,10 m) zachycujících dějiny Slovanů; dnes jsou od roku 2021 opět vystavena na zámku v Moravském Krumlově.",
+        "source_url": "https://cs.wikipedia.org/wiki/Slovansk%C3%A1_epopej",
+        "source_quote": "8,10 × 6,10 m, olej na plátně",
+        "voice": "Obraz tak velký, že by se do něj vešla celá školní tělocvična.",
+        "image_prompt": "Fotorealistický snímek interiéru zámecké galerie v Moravském Krumlově s obřími plátny Slovanské epopeje na stěnách, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umělec mezi Paříží, Amerikou a Prahou",
+        "fact": "Muchova dráha kopíruje typickou cestu úspěšného umělce přelomu století: slávu si vybudoval v Paříži, zbohatl díky zakázkám z USA a nakonec se vrátil investovat svůj věhlas i majetek do vlastního národa — do Slovanské epopeje darované Praze.",
+        "source_url": "https://cs.wikipedia.org/wiki/Alfons_Mucha",
+        "voice": "Vydělal jméno v cizině a poslední velké dílo přesto věnoval domů.",
+        "image_prompt": "Fotorealistický snímek pařížské ulice konce 19. století s vylepeným secesním plakátem na zdi, večerní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-umeni-loutkarstvi",
+    "country": "Česko",
+    "section": "Umění",
+    "topic": "Loutkářství",
+    "headline": "Loutky, které chránily jazyk celého národa",
+    "fact": "České a slovenské loutkářství je od roku 2016 zapsáno na seznamu UNESCO jako mistrovské dílo nehmotného kulturního dědictví lidstva.",
+    "source_url": "https://cs.wikipedia.org/wiki/Loutk%C3%A1%C5%99stv%C3%AD",
+    "source_quote": "Od roku 2016 je české loutkářství zapsáno organizací UNESCO na seznamu Mistrovských děl ústního a nehmotného dědictví lidstva",
+    "voice": "Dřevěná figurka na drátkách dokázala mluvit tam, kde lidem hrozilo umlčení.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradiční dřevěné marionety v lidovém kroji zavěšené na nitích, dřevěné loutkové divadlo v pozadí, teplé světlo, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kočovný loutkář, co objížděl celé Čechy",
+        "fact": "Mezi nejslavnější potulné loutkáře 19. století patřil Matěj Kopecký (1775–1847), kterému se přezdívá patriarcha českého loutkářství — se svým divadlem směl vystupovat po celých Čechách kromě Prahy a lázeňských měst.",
+        "source_url": "https://cesky.radio.cz/matej-kopecky-patron-ceskeho-loutkarstvi-slavi-250-let-od-narozeni-8843294",
+        "source_quote": "patron českého loutkářství",
+        "voice": "Vozil s sebou celé jeviště na zádech a jeho příběhy znala vesnice od vesnice.",
+        "image_prompt": "Fotorealistický snímek putovního loutkářského vozu na venkovské cestě v 19. století, dřevěné loutky naskládané uvnitř, 16:9"
+      },
+      "kartograf": {
+        "headline": "Divadlo, které přežilo dobu poněmčování",
+        "fact": "Kočovní loutkáři hráli česky za časů národního obrození, kdy úřady i vyšší vrstvy běžně používaly němčinu — loutkové divadlo tak fungovalo jako jeden z mála veřejných prostorů, kde český jazyk mohl volně žít a šířit se mezi venkovským obyvatelstvem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Loutk%C3%A1%C5%99stv%C3%AD",
+        "voice": "Zatímco úřady mluvily německy, na jarmarku dál vesele česky mluvily loutky.",
+        "image_prompt": "Fotorealistický snímek venkovského jarmarku 19. století s loutkovým divadlem uprostřed a diváky kolem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-umeni-dum-u-cerne-matky-bozi",
+    "country": "Česko",
+    "section": "Umění",
+    "topic": "Dům U Černé Matky Boží",
+    "headline": "Kubismus, který ve světě nemá obdobu",
+    "fact": "Dům U Černé Matky Boží v Praze navrhl architekt Josef Gočár v letech 1911–1912 a je vrcholným dílem českého kubismu — směru, který se v architektuře a nábytku takto rozvinul jedině v českých zemích.",
+    "source_url": "https://cs.wikipedia.org/wiki/D%C5%AFm_U_%C4%8Cern%C3%A9_Matky_Bo%C5%BE%C3%AD",
+    "source_quote": "vrcholné dílo české kubistické architektury",
+    "voice": "Malíři po Evropě lámali tvary na plátně, Praha je rovnou postavila z cihel.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fasády domu U Černé Matky Boží v Praze, hranaté kubistické tvary, mřížové okno s Černou Matkou Boží, denní světlo, 16:9",
+    "ll": [14.4230, 50.0868],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Architekt, co domu přidal víc hran, ne míň",
+        "fact": "Když pražské úřady chtěly, aby nová budova víc ladila s okolní historickou zástavbou, Josef Gočár na to zareagoval opačně, než se čeká — přidal domu ještě víc kubistických prvků, třeba hranatější vchod a zábradlí balkonu.",
+        "source_url": "https://cs.wikipedia.org/wiki/D%C5%AFm_U_%C4%8Cern%C3%A9_Matky_Bo%C5%BE%C3%AD",
+        "voice": "Řekli mu, ať to zjemní, a on přidal ještě víc ostrých hran.",
+        "image_prompt": "Fotorealistický detailní snímek hranatého kubistického vchodu a balkonového zábradlí domu U Černé Matky Boží, 16:9"
+      },
+      "kartograf": {
+        "headline": "Směr, co se v Praze usadil jinak než v Paříži",
+        "fact": "Zatímco kubismus jinde ve světě zůstal hlavně u malířství a sochařství, v Praze pronikl i do architektury a užitého umění — ukázka, jak stejný umělecký směr může v různých městech nabrat úplně jiný praktický rozměr.",
+        "source_url": "https://cs.wikipedia.org/wiki/D%C5%AFm_U_%C4%8Cern%C3%A9_Matky_Bo%C5%BE%C3%AD",
+        "voice": "Stejná myšlenka, jiné město, a najednou vzniknou domy, ne jen obrazy.",
+        "image_prompt": "Fotorealistický snímek pražské ulice s kubistickou architekturou, hranaté fasády domů, jasný den, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-sport-zatopek",
+    "country": "Česko",
+    "section": "Sport",
+    "topic": "Emil Zátopek",
+    "headline": "Tři zlaté z olympiády v jediném týdnu",
+    "fact": "Emil Zátopek na olympiádě v Helsinkách 1952 vyhrál tři zlaté medaile na 5000 m, 10 000 m a v maratonu, který běžel poprvé v životě.",
+    "source_url": "https://cs.wikipedia.org/wiki/Emil_Z%C3%A1topek",
+    "source_quote": "Běžel ho poprvé v životě a zvítězil.",
+    "voice": "Nikdy předtím maraton neběžel, a rovnou ho vyhrál na olympiádě.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový snímek běžce Emila Zátopka v cíli olympijského závodu 1952, vyčerpaný výraz, stadion v pozadí, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Strategie: drž se favorita a pak zrychli",
+        "fact": "V maratonu se Zátopek zpočátku držel favorizovaného Brita Jima Peterse, držitele světového rekordu; když Peters nedoběhl do cíle, Zátopek zrychlil a zvítězil s novým olympijským rekordem.",
+        "source_url": "https://cs.wikipedia.org/wiki/Emil_Z%C3%A1topek",
+        "voice": "Nechal soupeře udávat tempo a v pravou chvíli ho jednoduše nechal za sebou.",
+        "image_prompt": "Fotorealistický dobový snímek dvou běžců na trati maratonu 1952, jeden v čele, diváci po stranách silnice, 16:9"
+      },
+      "kartograf": {
+        "headline": "Výkon, který se od té doby nikomu nepodařil zopakovat",
+        "fact": "Trojí zlato na krátké, střední i extrémně dlouhé trati na jedné olympiádě dodnes nikdo jiný nezopakoval — kombinace rychlosti a vytrvalosti vyžaduje typ přípravy, který se u běžců obvykle vzájemně vylučuje.",
+        "source_url": "https://cs.wikipedia.org/wiki/Emil_Z%C3%A1topek",
+        "voice": "Sprint na krátké trati a vytrvalost na dlouhé trati obvykle netrénuje jedno tělo najednou.",
+        "image_prompt": "Fotorealistický snímek prázdného olympijského stadionu v Helsinkách za soumraku, atletická dráha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-sport-nagano-1998",
+    "country": "Česko",
+    "section": "Sport",
+    "topic": "Zlato z Nagana",
+    "headline": "Hokejové zlato proti favorizovanému Rusku",
+    "fact": "Český hokejový tým porazil 22. února 1998 ve finále olympiády v Naganu Rusko 1:0 a získal zlatou medaili na hrách, kam poprvé v historii mohli nastoupit i hráči NHL.",
+    "source_url": "https://cs.wikipedia.org/wiki/Zimn%C3%AD_olympijsk%C3%A9_hry_1998",
+    "source_quote": "V hokejovém finále 22. února 1998 porazil český tým výběr Ruska 1:0",
+    "voice": "Celá republika ten večer zůstala vzhůru kvůli jednomu jedinému gólu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek hokejistů slavících zlatou olympijskou medaili na ledové ploše, konfety ve vzduchu, arénové osvětlení, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Poprvé směli hrát i hvězdy z NHL",
+        "fact": "Olympiáda v Naganu 1998 byla první, kde se kvůli přerušení sezóny severoamerické NHL mohli zúčastnit i profesionální hráči z této nejlepší světové soutěže, což turnaj výrazně zvýšilo jeho úroveň.",
+        "source_url": "https://cs.wikipedia.org/wiki/Zimn%C3%AD_olympijsk%C3%A9_hry_1998",
+        "source_quote": "podařilo vyjednat přerušení NHL, aby na zimních olympijských hrách mohli startovat i hráči z této soutěže",
+        "voice": "Nejlepší hráči světa najednou hráli za svůj stát, ne za svůj klub.",
+        "image_prompt": "Fotorealistický snímek hokejového stadionu v Naganu 1998 zvenčí, japonské hory v pozadí, zimní den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá země, velký sportovní vývozní artikl",
+        "fact": "Úspěch malého Česka proti hokejovým velmocem jako Rusko nebo Kanada ukazuje, že v kolektivních sportech nerozhoduje jen velikost země — funguje tu spíš hustá síť místních klubů a tradice sportu v populaci.",
+        "source_url": "https://cs.wikipedia.org/wiki/Zimn%C3%AD_olympijsk%C3%A9_hry_1998",
+        "voice": "Deset milionů lidí najednou porazilo sportovní velmoc s mnohem větším náskokem na papíře.",
+        "image_prompt": "Fotorealistický snímek zaplněného hokejového stadionu s fanoušky v národních barvách, dramatické osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-sport-navratilova",
+    "country": "Česko",
+    "section": "Sport",
+    "topic": "Martina Navrátilová",
+    "headline": "Rekordních 59 grandslamových titulů",
+    "fact": "Martina Navrátilová vyhrála za kariéru 59 grandslamových titulů ve všech disciplínách (18 ve dvouhře, 31 ve čtyřhře, 10 ve smíšené čtyřhře) — nejvíc v otevřené éře tenisu.",
+    "source_url": "https://cs.wikipedia.org/wiki/Martina_Navr%C3%A1tilov%C3%A1",
+    "source_quote": "Celkově vyhrála padesát devět grandslamových turnajů... což ji v otevřené éře řadí na 1. místo",
+    "voice": "Jedna hráčka, tři různé disciplíny, a v každé z nich pořádná sbírka titulů.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek profesionální tenistky při podání na travnatém dvorci wimbledonského typu, slunečný den, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Devětkrát nejlepší na stejném trávníku",
+        "fact": "Navrátilová vyhrála wimbledonskou dvouhru devětkrát (1978–1990) — víc než kterákoli jiná hráčka v historii tohoto turnaje.",
+        "source_url": "https://cs.wikipedia.org/wiki/Martina_Navr%C3%A1tilov%C3%A1",
+        "source_quote": "Wimbledon: 1978–1990: 9 titulů ve dvouhře",
+        "voice": "Jiné hráčky měnily formu z roku na rok, ona byla na stejné trávě nejlepší přes celou dekádu.",
+        "image_prompt": "Fotorealistický snímek trávnatého centrálního dvorce wimbledonského typu za slunečného odpoledne, prázdné tribuny, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kariéra přes železnou oponu",
+        "fact": "Navrátilová v roce 1975 emigrovala z komunistického Československa do USA, aby mohla svobodně soutěžit a trénovat na Západě — příklad, jak politické rozdělení Evropy během studené války ovlivňovalo i osobní a sportovní kariéry jednotlivců.",
+        "source_url": "https://ct24.ceskatelevize.cz/clanek/archiv/tenistka-martina-navratilova-ziskala-americke-obcanstvi-155127",
+        "source_quote": "Na mistrovství USA v New Yorku však 6. září 1975 požádala o politický azyl.",
+        "voice": "Aby mohla hrát podle svých pravidel, musela napřed opustit celou zemi.",
+        "image_prompt": "Fotorealistický snímek letiště v 70. letech 20. století, cestující s kufry u letadla, tlumené archivní barvy, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-jazyk-robot",
+    "country": "Česko",
+    "section": "Jazyk & slova",
+    "topic": "Slovo robot",
+    "headline": "Slovo, které vymyslel malíř, ne spisovatel",
+    "fact": "Slovo 'robot' navrhl v roce 1921 Josef Čapek pro divadelní hru svého bratra Karla Čapka R.U.R.; je odvozeno od staršího slova 'robota' ve významu nucené práce.",
+    "source_url": "https://cs.wikipedia.org/wiki/Robot",
+    "source_quote": "Josef Čapek podle bratrova svědectví navrhl slovo robot",
+    "voice": "Slovo, které dnes zná celý svět, vymyslel malíř mezi dvěma tahy štětcem.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, co odešlo do světa beze změny",
+        "fact": "Hra R.U.R. (Rossumovi univerzální roboti) měla premiéru roku 1921 a slovo 'robot' se z ní rychle rozšířilo do angličtiny i dalších jazyků beze změny — na rozdíl od většiny českých slov, která se do světových jazyků prakticky nikdy nedostanou.",
+        "source_url": "https://cs.wikipedia.org/wiki/Robot",
+        "source_quote": "roku 1921 poprvé ve významu stroj použil český spisovatel Karel Čapek v dramatu R.U.R.",
+        "voice": "Ze všech českých slov si svět nakonec oblíbil zrovna tohle, o strojích, co začnou myslet samy.",
+        "image_prompt": "Fotorealistický snímek staré divadelní scény s kovovými postavami robotů ve stylu 20. let 20. století, dobové osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Práce jako základ nového slova",
+        "fact": "Kořen 'robota' odkazoval ve staré češtině k nucené poddanské práci — jazykový vzorec, kdy se z konkrétní historické zkušenosti (nevolnictví) odvodí abstraktní pojem pro budoucí technologii, se v jazycích objevuje jen výjimečně tak zřetelně jako tady.",
+        "source_url": "https://cs.wikipedia.org/wiki/Robot",
+        "source_quote": "Slovo robota bylo známo již v 17. století, ve smyslu otrocké práce",
+        "voice": "Slovo pro budoucí stroje vzniklo ze staré zkušenosti s nucenou prací na panském.",
+        "image_prompt": "Fotorealistický snímek staré knihy s dobovým českým textem 17. století, husí brk, měkké světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-jazyk-hacek",
+    "country": "Česko",
+    "section": "Jazyk & slova",
+    "topic": "Háček",
+    "headline": "Znaménko, které možná vymyslel kazatel",
+    "fact": "Diakritický systém s háčky a čárkami, který dodnes používá čeština, navrhl kolem roku 1406 spis De orthographia Bohemica, jehož autorství se připisuje Janu Husovi.",
+    "source_url": "https://en.wikipedia.org/wiki/Orthographia_bohemica",
+    "source_quote": "using diacritics for long vowels ... and 'soft' consonants ... was suggested for the first time in 'De orthographia Bohemica' around 1406",
+    "voice": "Než se pustil do církevní reformy, stihl přepsat pravidla vlastního jazyka.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Konec dlouhých shluků písmen",
+        "fact": "Před zavedením diakritiky se hlásky jako č, š nebo ž musely zapisovat shluky několika latinských písmen najednou; nový systém nahradil tyto shluky jedním písmenem s tečkou nebo čárkou nad ním.",
+        "source_url": "https://en.wikipedia.org/wiki/Orthographia_bohemica",
+        "voice": "Místo tří písmen za sebou stačila najednou jedna tečka nad hláskou.",
+        "image_prompt": "Fotorealistický detailní snímek staré rukopisné stránky s husitským diakritickým pravopisem, brk a inkoust, 16:9"
+      },
+      "kartograf": {
+        "headline": "Český vynález, co ovlivnil pravopisy jinde",
+        "fact": "Diakritický systém původně navržený pro češtinu později ovlivnil pravopis dalších evropských jazyků (například polštinu nebo chorvatštinu) — ukázka, jak se jazykové řešení jednoho regionu dokáže rozšířit daleko za jeho hranice.",
+        "source_url": "https://en.wikipedia.org/wiki/Orthographia_bohemica",
+        "voice": "Řešení vymyšlené pro jeden jazyk si nakonec půjčili sousedé s úplně jinou řečí.",
+        "image_prompt": "Fotorealistický snímek staré evropské mapy 15. století s vyznačenými jazykovými oblastmi střední Evropy, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-jazyk-strc-prst-skrz-krk",
+    "country": "Česko",
+    "section": "Jazyk & slova",
+    "topic": "Strč prst skrz krk",
+    "headline": "Věta úplně bez samohlásek",
+    "fact": "Česká věta 'Strč prst skrz krk' neobsahuje jedinou samohlásku — funguje díky slabikotvorné souhlásce r, která se v ní chová jako samohláska.",
+    "source_url": "https://cs.wikipedia.org/wiki/Str%C4%8D_prst_skrz_krk",
+    "source_quote": "Obtíž jazykolamu spočívá v absenci samohlásek v celé větě.",
+    "voice": "Čtyři slova, žádné a, e, i, o, u — a přesto to jde vyslovit.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Test pro každého, kdo se učí česky",
+        "fact": "Tento jazykolam se běžně předkládá cizincům, kteří se učí česky, právě proto, že sluchově zvyklí na jazyky se samohláskami v každé slabice mají problém uvěřit, že taková věta vůbec jde vyslovit.",
+        "source_url": "https://cs.wikipedia.org/wiki/Str%C4%8D_prst_skrz_krk",
+        "source_quote": "Věta se často dává vyslovit cizincům, kteří mají o češtinu zájem",
+        "voice": "Cizinci na ni koukají jako na hádanku, Čech ji vysloví bez zaváhání.",
+        "image_prompt": "Fotorealistický snímek studenta s otevřenou učebnicí češtiny, soustředěný výraz, útulná studovna, 16:9"
+      },
+      "kartograf": {
+        "headline": "Souhláska, která umí zastoupit samohlásku",
+        "fact": "Slabikotvorné r a l patří mezi charakteristické rysy slovanských jazyků — čeština je jen dovede použít obzvlášť nápadně, protože z nich dokáže poskládat celou smysluplnou větu bez jediné klasické samohlásky.",
+        "source_url": "https://cs.wikipedia.org/wiki/Str%C4%8D_prst_skrz_krk",
+        "voice": "Souhláska, která si v tichosti odskočí dělat práci samohlásky.",
+        "image_prompt": "Fotorealistický typografický snímek zvětšeného písmene r na starém psacím stroji, detail kláves, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-jidlo-knedlik",
+    "country": "Česko",
+    "section": "Jídlo",
+    "topic": "Knedlík",
+    "headline": "Příloha ze včerejšího pečiva",
+    "fact": "Houskový knedlík se tradičně dělá z mouky, vajec a starších rohlíků nebo housek a patří mezi typické české přílohy k masitým jídlům s omáčkou.",
+    "source_url": "https://cs.wikipedia.org/wiki/Knedl%C3%ADk",
+    "voice": "Vznikl jako způsob, jak nevyhodit tvrdé pečivo, a skončil jako národní symbol.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek nakrájeného houskového knedlíku na talíři vedle masa s omáčkou, teplá barva jídla, domácí kuchyně, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Knedlík není jen jeden druh",
+        "fact": "Kromě houskového knedlíku existují v české kuchyni i bramborové, karlovarské nebo špekové knedlíky — každý region i každá rodina má svůj oblíbený recept a poměr přísad.",
+        "source_url": "https://cs.wikipedia.org/wiki/Knedl%C3%ADk",
+        "voice": "Kolik rodin, tolik trochu jiných receptů na tu samou přílohu.",
+        "image_prompt": "Fotorealistický snímek různých druhů knedlíků vedle sebe na dřevěném prkénku, kuchyňské prostředí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, které nic nevyhodí nazmar",
+        "fact": "Knedlík je typickým příkladem tradiční středoevropské 'kuchyně chudoby': využívá levné a dostupné suroviny (staré pečivo, mouku) tak, aby jedno jednoduché jídlo nasytilo celou rodinu a nic se nemuselo vyhazovat.",
+        "source_url": "https://cs.wikipedia.org/wiki/Knedl%C3%ADk",
+        "voice": "Ekonomika chudé venkovské kuchyně se dá vyčíst z jediné přílohy na talíři.",
+        "image_prompt": "Fotorealistický snímek staré venkovské kuchyně s hospodyní připravující těsto na knedlíky, teplé světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-jidlo-svickova",
+    "country": "Česko",
+    "section": "Jídlo",
+    "topic": "Svíčková na smetaně",
+    "headline": "Národní jídlo s knedlíkem a brusinkami",
+    "fact": "Svíčková na smetaně, hovězí maso ve smetanové zeleninové omáčce, patří mezi národní jídla české kuchyně a podává se s houskovým knedlíkem, plátkem citronu, šlehačkou a brusinkami.",
+    "source_url": "https://cs.wikipedia.org/wiki/Sv%C3%AD%C4%8Dkov%C3%A1_na_smetan%C4%9B",
+    "source_quote": "dochucen bývá plátkem citrónu, na němž je šlehačka a brusinky",
+    "voice": "Na první pohled obyčejná omáčka, a přitom národní jídlo, o kterém se doma vedou debaty o receptu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek svíčkové na smetaně s plátky hovězího masa, houskovým knedlíkem, šlehačkou a brusinkami na talíři, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Omáčka, kterou si každý dochutí sám",
+        "fact": "Citron, šlehačka a brusinky na talíři neslouží jen jako ozdoba — strávník si jimi může smetanovou omáčku dodatečně dochutit, přidat kyselost, sladkost nebo smetanovost přesně podle vlastní chuti.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sv%C3%AD%C4%8Dkov%C3%A1_na_smetan%C4%9B",
+        "voice": "Talíř dorazí hotový, ale poslední úpravu chuti má v ruce vždycky strávník.",
+        "image_prompt": "Fotorealistický detailní snímek talíře svíčkové s lžící šlehačky a plátkem citronu na okraji, 16:9"
+      },
+      "kartograf": {
+        "headline": "Smetanová omáčka jako odraz krajiny",
+        "fact": "Hojnost smetanových a zeleninových omáček v české kuchyni odráží tradiční zemědělskou krajinu vnitrozemské střední Evropy — chov dobytka na mléko a pěstování kořenové zeleniny (mrkev, celer, petržel) na rozdíl od přímořských kuchyní založených na rybách a olivách.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sv%C3%AD%C4%8Dkov%C3%A1_na_smetan%C4%9B",
+        "voice": "Kuchyně bez moře v dohledu si najde chuť jinde — v kravském mléce a kořenové zelenině.",
+        "image_prompt": "Fotorealistický snímek českého venkovského pole s kořenovou zeleninou a pastvinou s kravami v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-jidlo-pivo",
+    "country": "Česko",
+    "section": "Jídlo",
+    "topic": "Plzeňský ležák",
+    "headline": "Zlatý ležák, co vznikl v roce 1842",
+    "fact": "První světlý ležák plzeňského typu uvařil sládek Josef Groll 5. října 1842 v plzeňském měšťanském pivovaru; recept se pak rozšířil po celém světě jako 'pivo plzeňského typu'.",
+    "source_url": "https://cs.wikipedia.org/wiki/Plze%C5%88sk%C3%BD_Prazdroj",
+    "source_quote": "Ten v novém pivovaru uvařil premiérovou várku 5. října 1842",
+    "voice": "Recept starý přes 180 let a dnes ho kopíruje pivovar málem na každém kontinentu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sklenice zlatého plzeňského ležáku s pěnou na dřevěném stole, pivovar v pozadí, teplé světlo, 16:9",
+    "ll": [13.3776, 49.7472],
+    "tags": ["socioekonomicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Země, která pije nejvíc piva na hlavu",
+        "fact": "Češi mají už přes 30 let za sebou nejvyšší spotřebu piva na hlavu na světě, výrazně před sousedním Rakouskem i Polskem.",
+        "source_url": "https://finlord.cz/2024/09/spotreba-piva-osobu-podle-zemi-cesi-jiz-30-let-rade-vedou/",
+        "source_quote": "Češi již 30 let v řadě vedou",
+        "voice": "Žádná jiná země na světě nevypije na osobu tolik piva jako Česko.",
+        "image_prompt": "Fotorealistický snímek tradiční české hospody s dřevěnými stoly a čepovaným pivem, teplé večerní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Voda a ječmen daly vzniknout stylu, co ovládl svět",
+        "fact": "Plzeňský ležák vznikl díky kombinaci měkké místní vody a kvalitního žateckého chmele — místní suroviny tak nakonec daly vzniknout stylu piva, který dnes tvoří většinu celosvětové produkce ležáků.",
+        "source_url": "https://cs.wikipedia.org/wiki/Plze%C5%88sk%C3%BD_Prazdroj",
+        "voice": "Obyčejná studna a místní chmel nakonec změnily to, jak vypadá pivo skoro všude na světě.",
+        "image_prompt": "Fotorealistický snímek chmelnice u Žatce s vysokými dřevěnými konstrukcemi porostlými chmelem, letní den, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-historie-jan-hus",
+    "country": "Česko",
+    "section": "Historie",
+    "topic": "Jan Hus",
+    "headline": "Upálení, které vyvolalo války",
+    "fact": "Jan Hus byl upálen 6. července 1415 v Kostnici; jeho smrt rozhořčila jeho stoupence natolik, že to vedlo k vypuknutí husitských válek.",
+    "source_url": "https://cs.wikipedia.org/wiki/Jan_Hus",
+    "source_quote": "Smrt dvou českých kazatelů způsobila eskalaci napětí uvnitř Českého království, která posléze vedla k husitské revoluci.",
+    "voice": "Snažili se umlčet jednoho kazatele a probudili tím povstání celé země.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek náměstí v Kostnici s pamětní deskou Jana Husa, historická architektura, večerní světlo, bez lidí, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kázal česky tam, kde se čekala latina",
+        "fact": "Hus kázal a psal v češtině a kritizoval prodej odpustků i mravy církve, což z něj udělalo populárního reformátora mezi prostým lidem, ale i nepohodlného protivníka pro vysoké církevní kruhy.",
+        "source_url": "https://cs.wikipedia.org/wiki/Jan_Hus",
+        "voice": "Mluvil jazykem obyčejných lidí, a právě to ho nakonec stálo život.",
+        "image_prompt": "Fotorealistický snímek interiéru Betlémské kaple v Praze, kazatelna, dřevěné lavice, měkké světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Válka, která rozdělila i mapu Evropy",
+        "fact": "Husitské války probíhaly od 30. července 1419 do 30. května 1434 a proměnily České království na desetiletí v ozbrojený tábor obklopený křížovými výpravami — jeden popravený kazatel tak nakonec ovlivnil politickou mapu a mocenské poměry celé střední Evropy na několik generací.",
+        "source_url": "https://cs.wikipedia.org/wiki/Husitsk%C3%A9_v%C3%A1lky",
+        "source_quote": "30. července 1419 – 30. května 1434",
+        "voice": "Z jedné hranice v Kostnici vzešly boje, které na mapě hýbaly celou střední Evropou.",
+        "image_prompt": "Fotorealistický snímek husitské bojové vozové hradby v krajině, historická rekonstrukce, zamračená obloha, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-historie-prazske-jaro",
+    "country": "Česko",
+    "section": "Historie",
+    "topic": "Pražské jaro",
+    "headline": "Reformy ukončené v jedné srpnové noci",
+    "fact": "Pražské jaro, reformní uvolnění vedené Alexandrem Dubčekem od ledna 1968, ukončila v noci z 20. na 21. srpna 1968 invaze armád pěti států Varšavské smlouvy.",
+    "source_url": "https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro",
+    "source_quote": "armády zemí Varšavské smlouvy",
+    "voice": "Půl roku reforem smetla jedna jediná noc tanků.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový snímek tanků na ulicích Prahy v srpnu 1968, lidé stojící kolem, zamračená obloha, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Socialismus s lidskou tváří",
+        "fact": "Dubček prosazoval koncept 'socialismu s lidskou tváří' a nechal schválit reformní Akční program komunistické strany — snahu o uvolnění cenzury a větší svobodu v rámci socialistického systému, ne jeho úplné opuštění.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro",
+        "voice": "Nechtěli systém zbourat, jen mu chtěli dát lidštější tvář.",
+        "image_prompt": "Fotorealistický dobový snímek shromáždění lidí na pražském náměstí v roce 1968, transparenty, jarní atmosféra, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pět armád jako varování celému bloku",
+        "fact": "Invazi provedly vojska Sovětského svazu, Polska, NDR, Maďarska a Bulharska najednou — ukázka, jak se sovětský blok choval jako propojený geopolitický systém, kde reforma v jedné zemi byla vnímána jako riziko pro celé uspořádání regionu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro",
+        "source_quote": "Sovětského svazu, Polské lidové republiky, Německé demokratické republiky, Maďarské lidové republiky a Bulharské lidové republiky",
+        "voice": "Jedna země si zkusila jít vlastní cestou a odpovědí byla armáda hned pěti sousedů.",
+        "image_prompt": "Fotorealistický letecký/panoramatický snímek kolony vojenských vozidel na silnici uprostřed české krajiny, 1968, 16:9"
+      }
+    }
+  },
+  {
+    "id": "cz-historie-sametova-revoluce",
+    "country": "Česko",
+    "section": "Historie",
+    "topic": "Sametová revoluce",
+    "headline": "Konec komunismu bez jediného výstřelu",
+    "fact": "Sametová revoluce probíhala od 17. listopadu do 29. prosince 1989 a bez jediného výstřelu ukončila v Československu vládu jedné strany.",
+    "source_url": "https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce",
+    "source_quote": "Sametová revoluce bylo období politických změn v Československu mezi 17. listopadem a 29. prosincem 1989",
+    "voice": "Za necelých šest týdnů zmizel režim, který vypadal jako na věčné časy.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový snímek davu lidí s klíči a vlajkami na Václavském náměstí v Praze v listopadu 1989, večerní světlo, 16:9",
+    "tags": ["dejiny", "aktualni-temata", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Studentský průvod, co spustil revoluci",
+        "fact": "Vše odstartovala studentská demonstrace na pražském Albertově 17. listopadu 1989, která pokračovala na Národní třídu; tvrdý zásah policie proti studentům pak rozhořčil a zmobilizoval širokou veřejnost.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce",
+        "source_quote": "V pátek 17. listopadu se na pražském Albertově sešli studenti pražských vysokých škol.",
+        "voice": "Začalo to jako obyčejný studentský průvod a skončilo pádem celého režimu.",
+        "image_prompt": "Fotorealistický dobový snímek studentského průvodu na Národní třídě v Praze 17. listopadu 1989, večerní ulice, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jedna z vln, co smetla celý blok",
+        "fact": "Sametová revoluce byla součástí širší vlny pádu komunistických režimů ve střední a východní Evropě na konci osmdesátých let — podobné změny proběhly téměř současně v Polsku, Maďarsku, NDR i Rumunsku, což ukazuje, jak byly osudy zemí sovětského bloku vzájemně provázané.",
+        "source_url": "https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce",
+        "voice": "Jeden režim za druhým padal ve stejném roce, jako by šlo o řadu domina.",
+        "image_prompt": "Fotorealistický snímek staré mapy střední a východní Evropy z roku 1989 s vyznačenými zeměmi, archivní tón, 16:9"
+      }
+    }
+  }
+]

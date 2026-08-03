@@ -1,0 +1,884 @@
+[
+  {
+    "id": "tw-mista-taipei-101",
+    "country": "Tchaj-wan",
+    "section": "Místa",
+    "topic": "Mrakodrap Taipei 101",
+    "headline": "Ikonický mrakodrap ve tvaru bambusu",
+    "fact": "Taipei 101 byl po dokončení v roce 2004 nejvyšší budovou světa. Má tvar bambusového stonku a je navržen tak, aby odolal zemětřesením i tajfunům.",
+    "source_url": "https://en.wikipedia.org/wiki/Taipei_101",
+    "source_quote": "Taipei 101 was officially classified as the world's tallest building in 2004",
+    "voice": "Šplhá k nebi jako zelený bambusový výhonek.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of Taipei 101 skyscraper reaching into the blue sky, surrounded by modern Taipei cityscape, daytime lighting, 16:9",
+    "ll": [
+      121.5645,
+      25.0338
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zlatá koule pro stabilitu",
+        "fact": "Uvnitř budovy je obří zlatá ocelová koule, která slouží jako tlumič a pomáhá mrakodrapu udržet rovnováhu při silném větru.",
+        "source_url": "https://en.wikipedia.org/wiki/Taipei_101",
+        "voice": "Když fouká vichr, tahle obří koule drží věž v klidu.",
+        "image_prompt": "Photorealistic shot of the massive tuned mass damper golden steel sphere inside Taipei 101, indoor view, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rychlovýtahy do oblak",
+        "fact": "Výtahy v Taipei 101 patří k nejrychlejším na světě a vyvezou návštěvníky z přízemí do 89. patra za méně než 40 sekund.",
+        "source_url": "https://en.wikipedia.org/wiki/Taipei_101",
+        "source_quote": "At a speed of 60.6 km/h (37.7 mph), the elevators were the world's fastest from 2004 to 2015",
+        "voice": "Mrknete a jste v devadesátém patře.",
+        "image_prompt": "Photorealistic view from the high observation deck of Taipei 101 looking down over the city of Taipei, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-mista-narodni-palacove-muzeum",
+    "country": "Tchaj-wan",
+    "section": "Místa",
+    "topic": "Národní palácové muzeum",
+    "headline": "Pokladnice čínské historie",
+    "fact": "Národní palácové muzeum v Tchaj-peji uchovává rozsáhlou sbírku téměř 700 000 čínských uměleckých předmětů a historických artefaktů.",
+    "source_url": "https://en.wikipedia.org/wiki/National_Palace_Museum",
+    "source_quote": "has a permanent collection of nearly 700,000 pieces of ancient Chinese artifacts and artworks",
+    "voice": "Tady je schovaná historie celých tisíciletí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic exterior view of the National Palace Museum in Taipei with traditional Chinese architecture, daytime, clear sky, 16:9",
+    "ll": [
+      121.5486,
+      25.1024
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zachráněné poklady",
+        "fact": "Sbírka byla v polovině 20. století převezena z čínské pevniny, aby byla uchráněna před válečným ničením.",
+        "source_url": "https://en.wikipedia.org/wiki/National_Palace_Museum",
+        "source_quote": "The museum's holdings were originally part of the Palace Museum in the Forbidden City in Beijing... transported to Taiwan in 1948–1949.",
+        "voice": "Tyhle předměty vykonaly dlouhou a nebezpečnou cestu.",
+        "image_prompt": "Photorealistic exhibition room inside a museum showcasing ancient Chinese jade and porcelain artifacts in glass cases, warm indoor lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Císařské dědictví",
+        "fact": "Muzeum uchovává poklady nashromážděné čínskými císaři během mnoha století.",
+        "source_url": "https://en.wikipedia.org/wiki/National_Palace_Museum",
+        "voice": "Co shromáždili císaři, to je dnes k vidění na jednom místě.",
+        "image_prompt": "Photorealistic detailed shot of ancient Chinese bronzes and jade sculptures inside a museum hall, soft dramatic lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-mista-vesnice-duha",
+    "country": "Tchaj-wan",
+    "section": "Místa",
+    "topic": "Vesnice Duha",
+    "headline": "Pohádkově barevná osada",
+    "fact": "Bývalý voják Huang Yung-fu začal malovat zářivé motivy na zdi své vesnice v Tchaj-čungu, aby zabránil její demolici.",
+    "source_url": "https://en.wikipedia.org/wiki/Rainbow_Village",
+    "voice": "Jediný štětec zachránil celou vesnici před zbouráním.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of Rainbow Village in Taichung showing brightly painted colorful walls and alleyways, sunny day, 16:9",
+    "ll": [
+      120.6097,
+      24.1332
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zářící ulice",
+        "fact": "Barevné malby pohádkových postaviček a zvířat proměnily chátrající osadu v oblíbenou turistickou atrakci.",
+        "source_url": "https://en.wikipedia.org/wiki/Rainbow_Village",
+        "voice": "Kamkoliv se podíváte, tam září veselé barvy.",
+        "image_prompt": "Photorealistic close-up of vibrant mural paintings on a rustic concrete wall in Rainbow Village, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Síla pouličního umění",
+        "fact": "Projekt zachránil vesnici před zničením a ukázal sílu pouličního umění v komunitním rozvoji.",
+        "source_url": "https://en.wikipedia.org/wiki/Rainbow_Village",
+        "voice": "Umění dokáže proměnit zapomenutá místa v živé symboly.",
+        "image_prompt": "Photorealistic wide view of the Rainbow Village art district surrounded by modern urban buildings, contrast between old colorful artwork and cityscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-priroda-jusan",
+    "country": "Tchaj-wan",
+    "section": "Příroda",
+    "topic": "Hora Yu Shan",
+    "headline": "Nefritová hora na obzoru",
+    "fact": "Yu Shan, známá také jako Nefritová hora, je s výškou 3 952 metrů nejvyšším vrcholem Tchaj-wanu i celé severovýchodní Asie.",
+    "source_url": "https://en.wikipedia.org/wiki/Yushan_(mountain)",
+    "source_quote": "At an elevation of 3,952 m (12,966 ft) above sea level, Yushan is the highest mountain in Taiwan and Northeast Asia.",
+    "voice": "Tento skalnatý obr vyčnívá vysoko nad mraky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic dramatic view of Yushan peak rising above a sea of clouds at sunrise, rugged alpine landscape, 16:9",
+    "ll": [
+      120.9573,
+      23.47
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cesta k vrcholu",
+        "fact": "Výstup na vrchol vyžaduje povolení a vede skrz různé vegetační zóny od subtropických lesů až po alpínské louky.",
+        "source_url": "https://en.wikipedia.org/wiki/Yushan_(mountain)",
+        "voice": "Během jednoho výstupu projdete hned několika světy.",
+        "image_prompt": "Photorealistic mountain trail on Yushan with lush alpine vegetation and rocky ridges, morning mist, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ochrana divoké přírody",
+        "fact": "Hora leží v národním parku, který chrání nedotčenou přírodu a vzácné druhy rostlin a živočichů.",
+        "source_url": "https://en.wikipedia.org/wiki/Yushan_(mountain)",
+        "voice": "Nahoře v horách platí přísná pravidla ochrany.",
+        "image_prompt": "Photorealistic aerial view of Yushan National Park showing mountain ranges covered in dense green forests, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-priroda-souteska-taroko",
+    "country": "Tchaj-wan",
+    "section": "Příroda",
+    "topic": "Soutěska Taroko",
+    "headline": "Mramorový zázrak přírody",
+    "fact": "Národní park Taroko je proslulý svou hlubokou soutěskou s mramorovými skalami, kterou během věků vyhloubila řeka Liwu.",
+    "source_url": "https://en.wikipedia.org/wiki/Taroko_National_Park",
+    "voice": "Řeka si prorazila cestu skrz čistý mramor.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of the deep marble canyon of Taroko Gorge with a turquoise river flowing below, dramatic rocky cliffs, 16:9",
+    "ll": [
+      121.4889,
+      24.1583
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Skalní stezky a mosty",
+        "fact": "Návštěvníci zde procházejí soutěskami po visutých mostech a stezkách tesaných přímo do skalních stěn.",
+        "source_url": "https://en.wikipedia.org/wiki/Taroko_National_Park",
+        "voice": "Chůze po mostě nad propastí rozbuší srdce každému.",
+        "image_prompt": "Photorealistic view of a red suspension footbridge stretched across Taroko Gorge surrounded by steep marble canyon walls, 16:9"
+      },
+      "kartograf": {
+        "headline": "Geologická síla",
+        "fact": "Oblast je tektonicky velmi aktivní, což způsobuje neustálý zdvih pohoří a rychlou erozní činnost vody.",
+        "source_url": "https://en.wikipedia.org/wiki/Taroko_National_Park",
+        "voice": "Země se tu neustále zvedá a voda tvaruje krajinu.",
+        "image_prompt": "Photorealistic wide shot of marble rock formations and steep canyon walls in Taroko National Park, sunlight filtering through, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-priroda-jezero-slunce-a-mesice",
+    "country": "Tchaj-wan",
+    "section": "Příroda",
+    "topic": "Jezero Sun Moon Lake",
+    "headline": "Jezero Slunce a Měsíce",
+    "fact": "Jezero Sun Moon Lake v centrální části ostrova vděčí za svůj název tvaru, který připomíná slunce na východě a půlměsíc na západě.",
+    "source_url": "https://en.wikipedia.org/wiki/Sun_Moon_Lake",
+    "voice": "Příroda tu vytvořila symbol nebeských těles.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic calm water view of Sun Moon Lake with surrounding green mountains reflecting in the quiet water at dawn, 16:9",
+    "ll": [
+      120.9159,
+      23.8517
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Život na březích",
+        "fact": "Kolem jezera vede cyklostezka s vyhlídkami a na malém ostrůvku uprostřed žije domorodé etnikum Thao.",
+        "source_url": "https://en.wikipedia.org/wiki/Sun_Moon_Lake",
+        "voice": "Projíždět se podél hladiny na kole je čistá radost.",
+        "image_prompt": "Photorealistic scenic wooden bicycle path wrapping around the edge of Sun Moon Lake with mountain reflections, sunny day, 16:9"
+      },
+      "kartograf": {
+        "headline": "Horská vodní nádrž",
+        "fact": "Jezero leží v nadmořské výšce přes 700 metrů a slouží jako důležitá přírodní nádrž i hydroelektrický uzel.",
+        "source_url": "https://en.wikipedia.org/wiki/Sun_Moon_Lake",
+        "source_quote": "Located at 748 meters (2,454 ft) above sea level",
+        "voice": "Horská voda dodává energii celé oblasti.",
+        "image_prompt": "Photorealistic high angle panoramic view of Sun Moon Lake surrounded by lush tropical hills, soft morning fog, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-lide-ang-lee",
+    "country": "Tchaj-wan",
+    "section": "Lidé",
+    "topic": "Ang Lee",
+    "headline": "Oscary oceněný režisér",
+    "fact": "Režisér Ang Lee je rodák z Tchaj-wanu, který získal mezinárodní uznání a prestižní filmové ceny Oscara za režii snímků Zkrocená hora a Pí a jeho život.",
+    "source_url": "https://en.wikipedia.org/wiki/Ang_Lee",
+    "voice": "Příběhy z jeho rodného ostrova okouzlily celý svět.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic artistic cinema studio setup with a director's chair, film camera, and warm movie lighting, atmospheric, 16:9",
+    "ll": [
+      121.5654,
+      25.033
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Spojení dvou světů",
+        "fact": "Ve svých filmech dokáže propojit tradiční asijskou estetiku s příběhy blízkými divákům po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Ang_Lee",
+        "voice": "Umí vyprávět citlivé lidské osudy bez ohledu na hranice.",
+        "image_prompt": "Photorealistic view of a film production set behind the scenes with lighting rigs and monitors, 16:9"
+      },
+      "kartograf": {
+        "headline": "Globální filmový vliv",
+        "fact": "Jeho tvorba ukazuje schopnost překračovat kulturní hranice a inspirovat globální kinematografii.",
+        "source_url": "https://en.wikipedia.org/wiki/Ang_Lee",
+        "voice": "Ukázal, že tchajwanský talent se prosadí kdekoliv.",
+        "image_prompt": "Photorealistic grand movie theater interior with red velvet seats and bright silver screen, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-lide-tai-tzu-ying",
+    "country": "Tchaj-wan",
+    "section": "Lidé",
+    "topic": "Tai Tzu-ying",
+    "headline": "Královna badmintonu",
+    "fact": "Badmintonistka Tai Tzu-ying se stala významnou osobností Tchaj-wanu díky svému rozmanitému a nepředvídatelnému stylu hry.",
+    "source_url": "https://en.wikipedia.org/wiki/Tai_Tzu-ying",
+    "voice": "S raketou v ruce dokáže na kurtu neuvěřitelné triky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic badminton court inside a modern professional sports arena, bright overhead lights, shuttlecock on green court, 16:9",
+    "ll": [
+      120.3119,
+      22.6273
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mistrná technika",
+        "fact": "Její klamavé údery a lehkost pohybu na kurtu z ní udělaly oblíbenkyni fanoušků badmintonu po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Tai_Tzu-ying",
+        "voice": "Soupeřky do posledního momentu netuší, kam míček poletí.",
+        "image_prompt": "Photorealistic close-up of a badminton shuttlecock resting on a sleek wooden court floor, dramatic lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Světový badminton",
+        "fact": "Dlouhou dobu byla na čele světového žebříčku v ženské dvouhře a inspirovala novou generaci mladých sportovců.",
+        "source_url": "https://en.wikipedia.org/wiki/Tai_Tzu-ying",
+        "voice": "Přivedla tisíce dětí k raketám a sportování.",
+        "image_prompt": "Photorealistic wide shot of a badminton championship stadium filled with spectators, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-lide-yuan-tseh-lee",
+    "country": "Tchaj-wan",
+    "section": "Lidé",
+    "topic": "Yuan Tseh Lee",
+    "headline": "Nobelova cena za chemii",
+    "fact": "Chemik Yuan Tseh Lee obdržel v roce 1986 Nobelovu cenu za výzkum dynamiky chemických elementárních procesů.",
+    "source_url": "https://en.wikipedia.org/wiki/Yuan_T._Lee",
+    "source_quote": "He was awarded the Nobel Prize in Chemistry in 1986",
+    "voice": "Odhalil tajemství toho, jak se spojují molekuly.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic modern scientific laboratory setup with glass beakers, molecular models, and advanced instruments, 16:9",
+    "ll": [
+      120.9686,
+      24.8138
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Návrat ke kořenům",
+        "fact": "Byl významným vědcem, který se po letech působení v zahraničí vrátil na Tchaj-wan podporovat mladé akademiky.",
+        "source_url": "https://en.wikipedia.org/wiki/Yuan_T._Lee",
+        "voice": "Své zkušenosti předal dál novým generacím vědců.",
+        "image_prompt": "Photorealistic clean research lab interior with bright natural lighting and chalkboard covered in chemical formulas, 16:9"
+      },
+      "kartograf": {
+        "headline": "Molekulární reakce",
+        "fact": "Jeho práce přispěla k hlubšímu pochopení reakcí mezi molekulami při chemických procesech.",
+        "source_url": "https://en.wikipedia.org/wiki/Yuan_T._Lee",
+        "voice": "Jeho práce změnila náhled na chemické reakce.",
+        "image_prompt": "Photorealistic high-tech science institute hallway with glowing ambient light, modern architecture, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-kultura-a-tradice-nocni-trhy",
+    "country": "Tchaj-wan",
+    "section": "Kultura & tradice",
+    "topic": "Noční trhy",
+    "headline": "Živé ulice po západu slunce",
+    "fact": "Noční trhy jsou srdcem společenského života na Tchaj-wanu, kde lidé večer nakupují, setkávají se a ochutnávají uliční jídlo.",
+    "source_url": "https://en.wikipedia.org/wiki/Night_markets_in_Taiwan",
+    "voice": "Když se setmí, ulice ožijí barvami a vůněmi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic vibrant night market scene in Taiwan with glowing lanterns, street food stalls, neon signs, and crowd, 16:9",
+    "ll": [
+      121.5242,
+      25.0888
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ráj pouličních chutí",
+        "fact": "Mezi stánky vládne živá atmosféra plná vůní, světel a široké nabídky od mořských plodů po sladké dezerty.",
+        "source_url": "https://en.wikipedia.org/wiki/Night_markets_in_Taiwan",
+        "voice": "Můžete ochutnávat malé porce od stánku ke stánku.",
+        "image_prompt": "Photorealistic close-up of colorful Taiwanese street food stalls with steaming baskets and skewers at night, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice z chrámových nádvoří",
+        "fact": "Fenomén nočních trhů vychází z tradičních shromáždění u chrámů a rozrostl se v klíčovou součást městské kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Night_markets_in_Taiwan",
+        "voice": "Trhy se staly nejdůležitějším místem večerního setkávání.",
+        "image_prompt": "Photorealistic high angle view of a bustling illuminated night market street extending through Taipei, night, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-kultura-a-tradice-lampiovy-festival",
+    "country": "Tchaj-wan",
+    "section": "Kultura & tradice",
+    "topic": "Lampionový festival v Pingxi",
+    "headline": "Stovky přání stoupajících k nebi",
+    "fact": "Během lampionového festivalu v Pingxi vypouštějí lidé do noční oblohy stovky papírových lampionů s napsanými přáními.",
+    "source_url": "https://en.wikipedia.org/wiki/Pingxi_Sky_Lantern_Festival",
+    "voice": "Papírové svítilny nesou lidská přání vysoko mezi hvězdy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic nighttime view of hundreds of glowing paper sky lanterns floating up into the dark night sky over Pingxi, 16:9",
+    "ll": [
+      121.7375,
+      25.0256
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Světla nad obzorem",
+        "fact": "Pohled na zářící svítilny stoupající k nebi vytváří kouzelnou scenérii a symbolizuje naději do nového roku.",
+        "source_url": "https://en.wikipedia.org/wiki/Pingxi_Sky_Lantern_Festival",
+        "voice": "Je to nezapomenutelná podívaná plná zářivého světla.",
+        "image_prompt": "Photorealistic close-up of people releasing a warm glowing orange sky lantern with written Chinese calligraphy at night, 16:9"
+      },
+      "kartograf": {
+        "headline": "Signály mezi horami",
+        "fact": "Tradice má kořeny v minulosti, kdy lampiony sloužily jako signál mezi vesnicemi v horských oblastech.",
+        "source_url": "https://en.wikipedia.org/wiki/Pingxi_Sky_Lantern_Festival",
+        "voice": "Původní horská signalizace se proměnila v oslavu naděje.",
+        "image_prompt": "Photorealistic landscape view of a mountain valley in Pingxi illuminated by scattered floating sky lanterns in the sky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-kultura-a-tradice-cajova-kultura",
+    "country": "Tchaj-wan",
+    "section": "Kultura & tradice",
+    "topic": "Čajová kultura Oolong",
+    "headline": "Mistrovství horského čaje",
+    "fact": "Tchaj-wan je proslulý pěstováním vysoce kvalitního čaje oolong, zejména z vysokohorských oblastí.",
+    "source_url": "https://en.wikipedia.org/wiki/Taiwanese_tea",
+    "voice": "Horský vzduch dává čajovým lístkům jedinečnou vůni.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic terraced green tea plantation on steep misty mountains in Taiwan, early morning light, 16:9",
+    "ll": [
+      120.8066,
+      23.5103
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obřad Gongfu Tea",
+        "fact": "Tradiční čajový obřad Gongfu tea zdůrazňuje správnou teplotu vody, postup vícenásobného zalévání a vychutnání vůně.",
+        "source_url": "https://en.wikipedia.org/wiki/Gongfu_tea_ceremony",
+        "voice": "Příprava čaje je uměním trpělivosti a smyslů.",
+        "image_prompt": "Photorealistic close-up of a traditional Taiwanese Gongfu tea set with clay teapot, small tasting cups, and amber tea liquid, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ideální klima pro oolong",
+        "fact": "Horský terén, mlžné klima a úrodná půda vytvářejí ideální podmínky pro specifičnost chutí tchajwanských čajových odrůd.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiwanese_tea",
+        "voice": "Kombinace mlhy a nadmořské výšky tvoří dokonalou chuť.",
+        "image_prompt": "Photorealistic wide view of tea fields amidst clouds in Alishan mountain region, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-umeni-kamenny-zeli-prak",
+    "country": "Tchaj-wan",
+    "section": "Umění",
+    "topic": "Nefritové zelí",
+    "headline": "Mistrovské dílo z nefritu",
+    "fact": "Slavný vyřezávaný nefrit ve tvaru pekingského zelí s hmyzem je známým exponátem v Národním palácovém muzeu v Tchaj-peji.",
+    "source_url": "https://en.wikipedia.org/wiki/Jadeite_Cabbage",
+    "voice": "Vypadá jako skutečné zelí, ale je vytesané z jednoho kusu kamene.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic museum display of the famous Jadeite Cabbage sculpture carved from green and white jadeite, glowing display case, 16:9",
+    "ll": [
+      121.5486,
+      25.1024
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Umění 19. století",
+        "fact": "Umělec v 19. století dokázal využít přirozené barevné přechody kamene tak, že zelí vypadá jako živé.",
+        "source_url": "https://en.wikipedia.org/wiki/Jadeite_Cabbage",
+        "source_quote": "It was carved in the 19th century.",
+        "voice": "Využít vady kamene k vytvoření takové krásy je genialita.",
+        "image_prompt": "Photorealistic close-up shot of carved green jade leaves with intricate details of a carved locust insect on top, indoor glass display, 16:9"
+      },
+      "kartograf": {
+        "headline": "Symbolika čistoty",
+        "fact": "Dílo symbolizuje čistotu i plodnost a ukazuje mistrovskou úroveň čínského kamenosochařství.",
+        "source_url": "https://en.wikipedia.org/wiki/Jadeite_Cabbage",
+        "voice": "Svatební dar plný skrytých přání a symboliky.",
+        "image_prompt": "Photorealistic artistic view of the Jadeite Cabbage under focused spotlight inside museum room, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-umeni-loutkove-divadlo-pili",
+    "country": "Tchaj-wan",
+    "section": "Umění",
+    "topic": "Loutkové divadlo Budaixi",
+    "headline": "Tradiční loutky na obrazovce",
+    "fact": "Tradiční tchajwanské loutkové divadlo Budaixi získalo moderní podobu v populárním televizním seriálu Pili se složitými kostýmy.",
+    "source_url": "https://en.wikipedia.org/wiki/Glove_puppetry",
+    "voice": "Dřevěné loutky ožívají v dramatických příbězích.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up of handcrafted ornate Taiwanese glove puppets (Budaixi) with colorful silk costumes and painted faces, 16:9",
+    "ll": [
+      120.435,
+      23.7086
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mistrné pohyby",
+        "fact": "Loutky se pohybují velmi detailně a předvádějí bojová umění na propracovaných scénách.",
+        "source_url": "https://en.wikipedia.org/wiki/Glove_puppetry",
+        "voice": "Loutkaři dokáží prsty napodobit každý lidský pohyb.",
+        "image_prompt": "Photorealistic shot of a puppet master manipulating a traditional glove puppet on a miniature ornate stage, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice v televizní éře",
+        "fact": "Spojení starobylého lidového umění s moderní televizní produkcí pomohlo udržet loutkářskou tradici pro nové generace.",
+        "source_url": "https://en.wikipedia.org/wiki/Glove_puppetry",
+        "voice": "Staré umění našlo nový život v digitálním světě.",
+        "image_prompt": "Photorealistic puppet theater stage setup with miniature lanterns and elaborate traditional Asian background scenery, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-umeni-cloud-gate",
+    "country": "Tchaj-wan",
+    "section": "Umění",
+    "topic": "Cloud Gate Dance Theatre",
+    "headline": "Tanec plný meditace a síly",
+    "fact": "Taneční soubor Cloud Gate Dance Theatre spojuje moderní tanec s prvky bojových umění, kaligrafie a meditace.",
+    "source_url": "https://en.wikipedia.org/wiki/Cloud_Gate_Dance_Theatre",
+    "voice": "Pohyb tanečníků vypadá jako oživená kaligrafie.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic contemporary dance performance on stage with atmospheric lighting, dancers performing graceful fluid movements, 16:9",
+    "ll": [
+      121.4286,
+      25.1764
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tahy štětce na pódiu",
+        "fact": "Tanečníci na pódiu předvádějí plynulé a fyzicky náročné pohyby, které připomínají tahy štětcem při psaní znaků.",
+        "source_url": "https://en.wikipedia.org/wiki/Cloud_Gate_Dance_Theatre",
+        "voice": "Těla tanečníků malují do vzduchu neviditelné obrazy.",
+        "image_prompt": "Photorealistic theatrical shot of dancers on stage surrounded by dynamic warm light beams, dark background, 16:9"
+      },
+      "kartograf": {
+        "headline": "První moderní soubor",
+        "fact": "Soubor získal celosvětové uznání jako první čínskojazyčný soubor moderního tance.",
+        "source_url": "https://en.wikipedia.org/wiki/Cloud_Gate_Dance_Theatre",
+        "source_quote": "Cloud Gate Dance Theatre is the first contemporary dance company in any Chinese-speaking community.",
+        "voice": "Otevřeli dveře asijskému modernímu tanci do celého světa.",
+        "image_prompt": "Photorealistic modern theater exterior building in Tamsui set in lush green gardens, evening light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-sport-baseball",
+    "country": "Tchaj-wan",
+    "section": "Sport",
+    "topic": "Baseball",
+    "headline": "Národní sportovní vášeň",
+    "fact": "Baseball je na Tchaj-wanu považován za národní sport, který si získal srdce fanoušků v průběhu 20. století.",
+    "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Taiwan",
+    "source_quote": "Baseball is the most popular sport in Taiwan. It was introduced during the Japanese rule.",
+    "voice": "Na stadionech to při zápasech vře energií.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic professional baseball stadium floodlit at night during a game in Taiwan, green field and grandstands, 16:9",
+    "ll": [
+      120.6856,
+      24.1997
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Horká atmosféra na stadionu",
+        "fact": "Zápasy profesionální ligy nabízejí bouřlivou atmosféru s hlasitým skandováním, bubny a choreografiemi fanoušků.",
+        "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Taiwan",
+        "voice": "Fanoušci povzbuzují své týmy písněmi od první do poslední minuty.",
+        "image_prompt": "Photorealistic perspective from baseball stadium seats looking towards the bright green outfield and diamond under night lights, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mládežnické úspěchy",
+        "fact": "Úspěchy mládežnických týmů na mezinárodní scéně pomohly upevnit sportovní tradici na ostrově.",
+        "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Taiwan",
+        "voice": "Výchova nových talentů udržuje tradici stále živou.",
+        "image_prompt": "Photorealistic close-up of a baseball glove and leather ball resting on a clay baseball infield diamond, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-sport-stolni-tenis",
+    "country": "Tchaj-wan",
+    "section": "Sport",
+    "topic": "Stolní tenis",
+    "headline": "Rychlost a bleskové reflexy",
+    "fact": "Stolní tenis patří mezi velmi oblíbené sporty na Tchaj-wanu a místní hráči pravidelně získávají medaile na světových turnajích.",
+    "source_url": "https://en.wikipedia.org/wiki/Sport_in_Taiwan",
+    "voice": "Míček se nad stolem pohybuje neuvěřitelnou rychlostí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic professional table tennis match setup with blue table, net, and white ball in sharp focus indoors, 16:9",
+    "ll": [
+      121.5654,
+      25.033
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Souboj postřehu",
+        "fact": "Rychlé výměny a precizní technika dělají ze stolního tenisu atraktivní podívanou pro diváky.",
+        "source_url": "https://en.wikipedia.org/wiki/Sport_in_Taiwan",
+        "voice": "Každý úder vyžaduje absolutní soustředění.",
+        "image_prompt": "Photorealistic close-up of a table tennis racket hitting a white ball over the net, motion focus, indoor sports arena, 16:9"
+      },
+      "kartograf": {
+        "headline": "Školní základna",
+        "fact": "Výuka stolního tenisu probíhá na mnoha školách, což vytváří širokou základnu talentovaných sportovců.",
+        "source_url": "https://en.wikipedia.org/wiki/Sport_in_Taiwan",
+        "voice": "Díky stolům v tělocvičnách hraje pálkovací hry skoro každý.",
+        "image_prompt": "Photorealistic indoor sports hall with multiple green table tennis tables under bright clean lights, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-sport-cyklistika-oko-ostrova",
+    "country": "Tchaj-wan",
+    "section": "Sport",
+    "topic": "Cyklistický okruh Huandao",
+    "headline": "Okruh kolem celého ostrova",
+    "fact": "Jízda na kole kolem celého ostrova, známá jako Huandao, je oblíbenou výzvou pro cyklisty z celého světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Taiwan_Cycle_Route_No._1",
+    "voice": "Objet celý ostrov na vlastní pohon je pořádné dobrodružství.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic coastal highway cycling path along Taiwan ocean shore with turquoise water and cliffs, bright sunny day, 16:9",
+    "ll": [
+      120.9605,
+      23.6978
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Devět set kilometrů v sedle",
+        "fact": "Trasa vedoucí podél pobřeží a skrz horské průsmyky měří přibližně 900 kilometrů.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiwan_Cycle_Route_No._1",
+        "source_quote": "Taiwan Cycle Route No. 1 is a 939.5 km (583.8 mi) ring road around the island of Taiwan",
+        "voice": "Cesta vás provede mořským pobřežím i zelenými horami.",
+        "image_prompt": "Photorealistic view of a paved cycling lane winding through lush green tropical hills along the coast, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ráj pro cyklisty",
+        "fact": "Kvalitní síť cyklostezek a zázemí z Tchaj-wanu vytvořily vyhlašovanou cyklistickou destinaci.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiwan_Cycle_Route_No._1",
+        "voice": "Cyklistická infrastruktura propojuje celou zemi.",
+        "image_prompt": "Photorealistic scenic road along the Pacific coast of Taiwan with bicycles on the dedicated cycle route, clear skies, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-jazyk-tradicni-znaky",
+    "country": "Tchaj-wan",
+    "section": "Jazyk & slova",
+    "topic": "Tradiční čínské znaky",
+    "headline": "Krása starobylého písma",
+    "fact": "Na Tchaj-wanu se pro psaní stále používají tradiční čínské znaky, které si zachovaly svou historickou složitost a estetiku.",
+    "source_url": "https://en.wikipedia.org/wiki/Traditional_Chinese_characters",
+    "voice": "Každý znak je jako samostatný obrázek s vlastním příběhem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic artistic view of black ink Chinese calligraphy characters written on rice paper with a traditional brush, 16:9",
+    "ll": [
+      121.5654,
+      25.033
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pravidla kaligrafie",
+        "fact": "Každý znak představuje pojem či slovo a jeho psaní vyžaduje přesné dodržování pořadí tahů.",
+        "source_url": "https://en.wikipedia.org/wiki/Traditional_Chinese_characters",
+        "voice": "Psaní vyžaduje pevnou ruku a velkou dávku trpělivosti.",
+        "image_prompt": "Photorealistic close-up of a calligrapher holding an ink brush over paper with dark black ink strokes, 16:9"
+      },
+      "kartograf": {
+        "headline": "Uchování původního písma",
+        "fact": "Zatímco pevninská Čína přešla ve 20. století na zjednodušené znaky, Tchaj-wan uchovává původní písmo.",
+        "source_url": "https://en.wikipedia.org/wiki/Traditional_Chinese_characters",
+        "source_quote": "Traditional Chinese characters are currently used in Taiwan, Hong Kong, and Macau.",
+        "voice": "Díky tomu zde můžete číst texty ve stejné podobě jako před stoletími.",
+        "image_prompt": "Photorealistic view of neon signs with illuminated traditional Chinese characters on a city street at dusk, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-jazyk-hokkien",
+    "country": "Tchaj-wan",
+    "section": "Jazyk & slova",
+    "topic": "Tchajwanský dialekt Hokkien",
+    "headline": "Řeč ostrovních tradic",
+    "fact": "Kromě úřední mandarínštiny mluví mnoho obyvatel také tchajwanským dialektem Hokkien, který má bohatou ústní tradici.",
+    "source_url": "https://en.wikipedia.org/wiki/Taiwanese_Hokkien",
+    "voice": "Na trzích a mezi přáteli zní tento jazyk velmi často.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Taiwanese teahouse courtyard with wooden tables and red lanterns, atmospheric afternoon, 16:9",
+    "ll": [
+      120.2057,
+      22.9908
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Běžná konverzace",
+        "fact": "V běžné řeči se oba jazyky často míchají, což dává místní konverzaci specifický rytmus a výrazivo.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiwanese_Hokkien",
+        "voice": "Místní lidé plynule přecházejí z jednoho jazyka do druhého.",
+        "image_prompt": "Photorealistic scene of people conversing in an outdoor café in Tainan, warm sunlight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rozmanitost jazyků",
+        "fact": "Jazyková rozmanitost ostrova zahrnuje také původní jazyky domorodých kmenů.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiwanese_Hokkien",
+        "voice": "Každý jazyk vypráví jinou část historie ostrova.",
+        "image_prompt": "Photorealistic view of historic brick buildings in old Tainan town, peaceful setting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-jazyk-bopomofo",
+    "country": "Tchaj-wan",
+    "section": "Jazyk & slova",
+    "topic": "Fonetická abeceda Bopomofo",
+    "headline": "První krok ke čtení znaků",
+    "fact": "Děti na Tchaj-wanu se učí číst pomocí fonetické abecedy Bopomofo, která slouží k přepisu výslovnosti čínských znaků.",
+    "source_url": "https://en.wikipedia.org/wiki/Bopomofo",
+    "voice": "Malé symboly pomáhají školákům správně vyslovovat.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic colorful school classroom desk with children's books showing phonetic Bopomofo symbols alongside characters, 16:9",
+    "ll": [
+      121.5654,
+      25.033
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "37 fonetických symbolů",
+        "fact": "Tento systém používá 37 symbolů, které usnadňují začátečníkům výslovnost tónů a hlásků.",
+        "source_url": "https://en.wikipedia.org/wiki/Bopomofo",
+        "source_quote": "Bopomofo consists of 37 characters and four tone marks",
+        "voice": "S těmito znaky zvládne výslovnost každé dítě.",
+        "image_prompt": "Photorealistic close-up of a child's textbook page showing clean printed Bopomofo phonetics with illustration, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vynález z počátku 20. století",
+        "fact": "Fonetická abeceda byla vytvořena v 10. letech 20. století a dodnes se používá v učebnicích i na klávesnicích.",
+        "source_url": "https://en.wikipedia.org/wiki/Bopomofo",
+        "source_quote": "Zhuyin Fuhao was introduced in the 1910s",
+        "voice": "I na počítačových klávesnicích najdete vedle písmen tyto symboly.",
+        "image_prompt": "Photorealistic computer keyboard with Bopomofo symbols printed alongside Latin letters, soft desk lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-jidlo-bubble-tea",
+    "country": "Tchaj-wan",
+    "section": "Jídlo",
+    "topic": "Bubble Tea",
+    "headline": "Čaj s kuličkami do celého světa",
+    "fact": "Slavný nápoj Bubble Tea s tapiokovými kuličkami vznikl na Tchaj-wanu v 80. letech 20. století a rozšířil se do celého světa.",
+    "source_url": "https://en.wikipedia.org/wiki/Bubble_tea",
+    "source_quote": "Bubble tea is a tea-based drink that originated in Taiwan in the early 1980s.",
+    "voice": "Tenhle sladký nápad dobyl chutě lidí napříč kontinenty.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic clear cup of milk bubble tea with dark tapioca pearls at the bottom and a wide straw, wooden table background, 16:9",
+    "ll": [
+      120.6839,
+      24.1477
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tapiokové kuličky",
+        "fact": "Kuličky z tapioky se pijí širokým brčkem spolu se sladkým mléčným čajem a ledem.",
+        "source_url": "https://en.wikipedia.org/wiki/Bubble_tea",
+        "voice": "Srkání čaje a žvýkání kuliček je zábavná kombinace.",
+        "image_prompt": "Photorealistic macro close-up of dark chewy tapioca pearls in milk tea inside a clear plastic cup, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulinářský export",
+        "fact": "Nápoj se stal významným exportním symbolickým produktem tchajwanské kulinářské kultury.",
+        "source_url": "https://en.wikipedia.org/wiki/Bubble_tea",
+        "voice": "Z jednoho nápadu v čajovně se stala světová móda.",
+        "image_prompt": "Photorealistic modern boba tea shop counter with colorful drink options and toppings displayed, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-jidlo-hovezi-nudlova-polevka",
+    "country": "Tchaj-wan",
+    "section": "Jídlo",
+    "topic": "Hovězí nudlová polévka",
+    "headline": "Královna tchajwanských polévek",
+    "fact": "Hovězí nudlová polévka je považována za jedno z ikonických národních jídel Tchaj-wanu a má v Tchaj-peji i svůj vlastní festival.",
+    "source_url": "https://en.wikipedia.org/wiki/Beef_noodle_soup",
+    "voice": "Teplá miska nudlí potěší tělo i duši.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic steaming bowl of Taiwanese beef noodle soup with tender beef chunks, wheat noodles, and green scallions, 16:9",
+    "ll": [
+      121.5654,
+      25.033
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pomalé vaření silného vývaru",
+        "fact": "Silný vývar se připravuje dlouhým vařením hovězího masa, pětikoření a pšeničných nudlí.",
+        "source_url": "https://en.wikipedia.org/wiki/Beef_noodle_soup",
+        "voice": "Tajemství skvělé chuti spočívá v dlouhém bublání vývaru.",
+        "image_prompt": "Photorealistic close-up of a ceramic bowl containing rich brown broth, noodles, and beef slices, wooden chopsticks beside it, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mísení regionálních chutí",
+        "fact": "Receptura vznikla spojením kuchařských tradic různých čínských provincií po příchodu nových obyvatel v polovině minulého století.",
+        "source_url": "https://en.wikipedia.org/wiki/Beef_noodle_soup",
+        "voice": "Různé rodinné recepty vytvořily dokonalou chuťovou mozaiku.",
+        "image_prompt": "Photorealistic traditional kitchen setting with giant simmering soup pots and fresh spices, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-jidlo-smradlave-tofu",
+    "country": "Tchaj-wan",
+    "section": "Jídlo",
+    "topic": "Smradlavé tofu",
+    "headline": "Legenda mezi uličními jídly",
+    "fact": "Smradlavé tofu je tradiční pochoutka z fermentovaného tofu, která je známá svou pronikavou vůní a dokřupava smaženou kůrkou.",
+    "source_url": "https://en.wikipedia.org/wiki/Stinky_tofu",
+    "voice": "Už z dálky ho ucítíte, ale chuť vás mile překvapí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic golden crispy fried stinky tofu served on a plate with pickled cabbage and chili sauce at a night market stall, 16:9",
+    "ll": [
+      121.6156,
+      25.0003
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Křupavá kůrka a omáčka",
+        "fact": "Podává se většinou na nočních trzích s nakládaným zelím a pálivou omáčkou.",
+        "source_url": "https://en.wikipedia.org/wiki/Stinky_tofu",
+        "voice": "Nakládaná zelenina k tomu dodá svěží kyselou chuť.",
+        "image_prompt": "Photorealistic close-up of golden deep-fried tofu cubes topped with pickled white cabbage on a street stall, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradiční fermentace",
+        "fact": "Fermentace probíhá v roztoku ze zeleniny a čaje, což dává tofu charakteristickou chuť i aroma.",
+        "source_url": "https://en.wikipedia.org/wiki/Stinky_tofu",
+        "voice": "Starodávný způsob naložení dává jídlu neotřelý charakter.",
+        "image_prompt": "Photorealistic food preparation shot showing seasoned fried tofu cubes being served at an outdoor night street market, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-historie-japonska-era",
+    "country": "Tchaj-wan",
+    "section": "Historie",
+    "topic": "Japonské období",
+    "headline": "Půl století japonského vlivu",
+    "fact": "V letech 1895 až 1945 byl Tchaj-wan pod japonskou správou, což ovlivnilo rozvoj železnic, školství a infrastruktury.",
+    "source_url": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
+    "source_quote": "Taiwan under Japanese rule was the period between 1895 and 1945 during which Taiwan was a dependency of the Empire of Japan.",
+    "voice": "Architektura z tohoto období je na ostrově vidět dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historic Japanese style wooden railway station building in Taiwan surrounded by green trees, sunny day, 16:9",
+    "ll": [
+      121.5119,
+      25.0401
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dřevěná architektura a prameny",
+        "fact": "Z této doby se zachovala řada historických budov, dřevěných nádraží a horkých pramenů vybudovaných v japonském stylu.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
+        "voice": "Koupání v horkých pramenech zůstalo oblibou až dodnes.",
+        "image_prompt": "Photorealistic historic Japanese style hot spring bathhouse surrounded by lush forest foliage, 16:9"
+      },
+      "kartograf": {
+        "headline": "Modernizace dopravy a měst",
+        "fact": "Japonské období modernizovalo zemědělství a vytvořilo základní dopravní síť ostrova.",
+        "source_url": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
+        "voice": "Položené koleje spojily důležitá města na pobřeží.",
+        "image_prompt": "Photorealistic historical red brick government building from early 20th century in Taipei, clear daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-historie-rok-1949",
+    "country": "Tchaj-wan",
+    "section": "Historie",
+    "topic": "Přesun v roce 1949",
+    "headline": "Velká migrační vlna",
+    "fact": "V roce 1949 přišly na Tchaj-wan z pevniny miliony lidí spolu s vládou Kuomintangu, což proměnilo společnost i kulturu.",
+    "source_url": "https://en.wikipedia.org/wiki/Retreat_of_the_Government_of_the_Republic_of_China_to_Taiwan",
+    "source_quote": "In December 1949, the Government of the Republic of China retreated to Taiwan.",
+    "voice": "Příchod nových obyvatel přinesl zvyky ze všech koutů Číny.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic view of historic Liberty Square in Taipei with traditional gate and blue sky, bright afternoon, 16:9",
+    "ll": [
+      121.5119,
+      25.0401
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obohatění tradic a kuchyně",
+        "fact": "Spolu s lidmi dorazili na ostrov kuchaři, umělci a učenci z celé Číny, což obohatilo místní tradice.",
+        "source_url": "https://en.wikipedia.org/wiki/Retreat_of_the_Government_of_the_Republic_of_China_to_Taiwan",
+        "voice": "Na ostrově se setkaly recepty a umění mnoha provincií.",
+        "image_prompt": "Photorealistic historic village lane with traditional brick houses in Taiwan, warm afternoon light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Spojení kulturních vlivů",
+        "fact": "Tento historický milník vedl ke vzniku společnosti kombinující tradiční čínské i místní vlivy.",
+        "source_url": "https://en.wikipedia.org/wiki/Retreat_of_the_Government_of_the_Republic_of_China_to_Taiwan",
+        "voice": "Vznikla jedinečná kultura otevřená novým myšlenkám.",
+        "image_prompt": "Photorealistic wide perspective of Chiang Kai-shek Memorial Hall square under clear sky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tw-historie-demokratizace",
+    "country": "Tchaj-wan",
+    "section": "Historie",
+    "topic": "Cesta k demokracii",
+    "headline": "Klidný přechod k svobodě",
+    "fact": "Ke konci minulého století prošel Tchaj-wan klidným přechodem k demokracii a vybudoval otevřený společenský systém.",
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Taiwan",
+    "voice": "Změny proběhly mírovou cestou díky aktivním lidem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Liberty Square archway in Taipei with people walking peacefully, bright daylight, 16:9",
+    "ll": [
+      121.5186,
+      25.0361
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Svobodná společnost",
+        "fact": "Dnes je ostrov známý svou svobodou tisku, otevřeností a aktivním občanským životem.",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_Taiwan",
+        "voice": "Otevřenost a svoboda slova jsou tu samozřejmostí.",
+        "image_prompt": "Photorealistic modern urban square in Taipei with people sitting in outdoor public plaza, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zrušení stanného práva v roce 1987",
+        "fact": "Postupné reformy a zrušení stanného práva v roce 1987 otevřely cestu ke svobodným volbám a moderní občanské společnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan",
+        "source_quote": "Martial law in Taiwan was lifted in 1987",
+        "voice": "Rok 1987 odstartoval novou éru rozvoje a svobody.",
+        "image_prompt": "Photorealistic high-angle view of modern Taipei central city boulevard under clear bright sky, 16:9"
+      }
+    }
+  }
+]

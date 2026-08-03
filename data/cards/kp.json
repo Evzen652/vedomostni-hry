@@ -1,0 +1,792 @@
+[
+  {
+    "id": "kp-mista-pektu",
+    "country": "Severní Korea",
+    "section": "Místa",
+    "topic": "Hora Pektu",
+    "headline": "Posvátná sopka na hranici",
+    "fact": "Hora Pektu je aktivní stratovulkán na čínsko-severokorejské hranici. Korejci ji považují za duchovní domov a místo spojené s mytickým zakladatelem Tangunem.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Paektu",
+    "source_quote": "Korean and Manchu people assign a mythical quality to the mountain and its lake, and consider the mountain to be their ancestral homeland.",
+    "voice": "Když se na ni podíváš z dálky, vypadá jako bílý klobouk na hlavě země.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic view of Mount Paektu snow-capped summit and caldera under clear sky, no people, 16:9",
+    "ll": [128.0775, 41.9933],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hora, kterou Korejci milují",
+        "fact": "Na vrcholu se nachází kráterové jezero a kolem něj skalnaté hřebeny. Hora je zmíněna v hymně Severní i Jižní Koreje.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Paektu",
+        "source_quote": "Mount Paektu is mentioned in the national anthems of both North and South Korea",
+        "voice": "I když je daleko, každý Korejec o ní umí vyprávět.",
+        "image_prompt": "Photorealistic close view of rocky peaks around Heaven Lake on Mount Paektu, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice i pramen řek",
+        "fact": "Hora leží na hranici s Čínou a z jejího jezera vytékají řeky, které tvoří severní hranici Korejského poloostrova.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Paektu",
+        "source_quote": "The mountain is the source of the Songhua, Tumen and Yalu rivers. The Tumen and the Yalu form the northern border between North Korea and Russia and China.",
+        "voice": "Kdo ovládá prameny, ovládá i cesty pod horou.",
+        "image_prompt": "Photorealistic aerial view of Mount Paektu caldera and surrounding border landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-mista-pchjongjang",
+    "country": "Severní Korea",
+    "section": "Místa",
+    "topic": "Pchjongjangské metro",
+    "headline": "Podzemní svět hlavního města",
+    "fact": "Pchjongjangské metro má dvě linky a stanice zdobené mozaikami a sochami. Trať leží hluboko pod zemí a slouží i jako úkryt.",
+    "source_url": "https://en.wikipedia.org/wiki/Pyongyang_Metro",
+    "source_quote": "The Pyongyang Metro is among the deepest metros in the world, with the track at over 110 metres (360 ft) deep underground",
+    "voice": "Dolů jedeš jako do jiného města, jen bez slunce.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic interior of a Pyongyang Metro station with mosaics and chandeliers, empty platform, 16:9",
+    "ll": [125.7530, 39.0330],
+    "levels": {
+      "cestovatel": {
+        "headline": "Stanice jako podzemní galerie",
+        "fact": "Každá stanice má vlastní téma a výzdobu. Cestující jezdí staršími vozy, které kdysi sloužily v Evropě.",
+        "source_url": "https://en.wikipedia.org/wiki/Pyongyang_Metro",
+        "voice": "I podzemí umí vypadat slavnostně.",
+        "image_prompt": "Photorealistic view of ornate Pyongyang Metro station hall with pillars and murals, soft lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hluboké tratě v rovině",
+        "fact": "Celá síť je postavena hluboko pod povrchem v rovinaté krajině kolem řeky Tedong. Hloubka zajišťuje stálou teplotu a ochranu.",
+        "source_url": "https://en.wikipedia.org/wiki/Pyongyang_Metro",
+        "source_quote": "Due to the depth of the metro and the lack of outside segments, its stations can double as bomb shelters",
+        "voice": "Když město leží nízko, schová se do země.",
+        "image_prompt": "Photorealistic cross-section style illustration of deep metro tunnel under city landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-mista-dmz",
+    "country": "Severní Korea",
+    "section": "Místa",
+    "topic": "Demilitarizovaná zóna",
+    "headline": "Pásmo ticha uprostřed poloostrova",
+    "fact": "Demilitarizovaná zóna je pruh země, který odděluje Severní a Jižní Koreu. Vznikla po příměří a běží napříč poloostrovem.",
+    "source_url": "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone",
+    "source_quote": "The DMZ is 250 kilometers (160 mi) long and about 4 kilometers (2.5 mi) wide.",
+    "voice": "Tady se zastavil čas i lidé.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic landscape of Korean DMZ with hills, barbed wire in distance, misty morning, no people, 16:9",
+    "ll": [127.20, 38.32],
+    "levels": {
+      "cestovatel": {
+        "headline": "Místo, kde se setkávají dvě strany",
+        "fact": "Uvnitř zóny leží Společná bezpečnostní oblast, kde probíhají jednání. Krajina je tichá a plná zeleně.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone",
+        "voice": "I v nejpřísněji střeženém místě roste tráva.",
+        "image_prompt": "Photorealistic view of Joint Security Area buildings and surrounding green hills, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice, která není rovná",
+        "fact": "Zóna nekopíruje přesně 38. rovnoběžku, ale vede šikmo podle frontové linie z doby příměří.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone",
+        "source_quote": "The Korean Demilitarized Zone intersects but does not follow the 38th parallel north",
+        "voice": "Mapa ukazuje, že válka si cestu vybírá sama.",
+        "image_prompt": "Photorealistic aerial view of DMZ strip across Korean Peninsula landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-priroda-nebeske-jezero",
+    "country": "Severní Korea",
+    "section": "Příroda",
+    "topic": "Nebeské jezero",
+    "headline": "Jezero v sopečném kráteru",
+    "fact": "Nebeské jezero leží v kaldeře hory Pektu na hranici s Čínou. Vzniklo po velké erupci a většinu roku je zamrzlé.",
+    "source_url": "https://en.wikipedia.org/wiki/Heaven_Lake",
+    "source_quote": "The caldera which contains Heaven Lake was created by the 946 eruption of Paektu Mountain.",
+    "voice": "Voda tady vypadá, jako by spadla z nebe.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic view of Heaven Lake crater lake surrounded by rocky rim, clear water, no people, 16:9",
+    "ll": [128.057, 42.006],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zrcadlo mezi skalami",
+        "fact": "Jezero má temně modrou hladinu a kolem něj se tyčí skalnaté stěny. V létě se na něj chodí dívat z vyhlídek.",
+        "source_url": "https://en.wikipedia.org/wiki/Heaven_Lake",
+        "voice": "Stojíš nahoře a máš pocit, že se díváš do oka země.",
+        "image_prompt": "Photorealistic close view of Heaven Lake surface reflecting sky and cliffs, summer, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pramen tří řek",
+        "fact": "Z jezera vytéká voda, která dává vzniknout řekám Songhua, Tumen a Amnok. Leží vysoko a je rozdělené mezi dvě země.",
+        "source_url": "https://en.wikipedia.org/wiki/Heaven_Lake",
+        "source_quote": "It lies on the border between China and North Korea, and is roughly evenly divided between the two countries.",
+        "voice": "Jedno jezero, dvě mapy.",
+        "image_prompt": "Photorealistic aerial panorama of Heaven Lake and surrounding caldera rim, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-priroda-kumgang",
+    "country": "Severní Korea",
+    "section": "Příroda",
+    "topic": "Pohoří Kumgang",
+    "headline": "Diamantové hory u moře",
+    "fact": "Pohoří Kumgang je známé ostrými žulovými štíty, vodopády a hlubokými údolími. Korejci je od starověku považují za jedno z nejkrásnějších míst.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Kumgang",
+    "source_quote": "Mount Kumgang has been known for its scenic beauty since ancient times and is the subject of many different works of art.",
+    "voice": "Když svítí slunce, skály se lesknou jako drahokamy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic landscape of Mount Kumgang granite peaks and forested valleys, clear day, no people, 16:9",
+    "ll": [128.105, 38.657],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hory, které mění jméno",
+        "fact": "Podle ročního období mají různé názvy. Na podzim se barví listí a v zimě vypadají jako kostry skal.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Kumgang",
+        "source_quote": "In summer, it is called Pongraesan; in autumn, Phung'aksan; in winter, Kaegolsan.",
+        "voice": "Každé roční období jim dá nový obličej.",
+        "image_prompt": "Photorealistic autumn view of Mount Kumgang peaks with colorful foliage, 16:9"
+      },
+      "kartograf": {
+        "headline": "Východní hřeben poloostrova",
+        "fact": "Patří do pohoří Tchebek, které se táhne podél východního pobřeží. Odděluje pobřeží od vnitrozemí a vytváří dramatický reliéf.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Kumgang",
+        "source_quote": "It is part of the Taebaek mountain range which runs along the east of the Korean Peninsula.",
+        "voice": "Moře a hory se tady potkávají skoro na dosah.",
+        "image_prompt": "Photorealistic coastal view of Mount Kumgang rising above the sea, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-priroda-amnok",
+    "country": "Severní Korea",
+    "section": "Příroda",
+    "topic": "Řeka Amnok",
+    "headline": "Řeka, která tvoří hranici",
+    "fact": "Řeka Amnok, známá také jako Jalu, teče mezi Severní Koreou a Čínou. Pramení na hoře Pektu a vlévá se do Korejského zálivu.",
+    "source_url": "https://en.wikipedia.org/wiki/Yalu_River",
+    "source_quote": "Together with the Tumen River to its east, and a small portion of Paektu Mountain, the Yalu forms the border between China and North Korea.",
+    "voice": "Jedna řeka, dvě země na březích.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide view of Yalu River flowing between forested hills, calm water, no people, 16:9",
+    "ll": [124.317, 39.867],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mosty a zimní led",
+        "fact": "Přes řeku vedou mosty spojující města Sinuidžu a Tan-tung. V zimě se hladina často zamrzá.",
+        "source_url": "https://en.wikipedia.org/wiki/Yalu_River",
+        "source_quote": "Most of the river freezes during winter and can be crossed on foot.",
+        "voice": "V zimě se z řeky stane cesta.",
+        "image_prompt": "Photorealistic winter scene of frozen Yalu River with distant bridge, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dlouhá přírodní hranice",
+        "fact": "Řeka vytváří přirozenou hranici na severozápadě. Její údolí bylo historicky důležitou cestou mezi Koreou a Čínou.",
+        "source_url": "https://en.wikipedia.org/wiki/Yalu_River",
+        "source_quote": "Its valley has been the scene of several military conflicts in the past centuries.",
+        "voice": "Kudy teče voda, tudy šly i dějiny.",
+        "image_prompt": "Photorealistic map-like aerial view of Yalu River winding as border, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-lide-tangun",
+    "country": "Severní Korea",
+    "section": "Lidé",
+    "topic": "Tangun",
+    "headline": "Mytický zakladatel Koreje",
+    "fact": "Tangun je legendární zakladatel prvního korejského království Kodžoson. Podle mýtu se narodil z nebeského prince a medvědí ženy.",
+    "source_url": "https://en.wikipedia.org/wiki/Tan%27gun",
+    "source_quote": "Tan'gun was the legendary founder and first king of Gojoseon, the first Korean kingdom.",
+    "voice": "Každý národ potřebuje příběh o tom, odkud přišel.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic artistic depiction of ancient Korean landscape with mythical mountain and forest, no modern elements, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Příběh o medvědici a nebi",
+        "fact": "Medvědice snědla česnek a pelyněk a vydržela ve tmě. Proměnila se v ženu a porodila Tanguna.",
+        "source_url": "https://en.wikipedia.org/wiki/Tan%27gun",
+        "source_quote": "The bear persevered and was transformed into a woman.",
+        "voice": "Trpělivost medvědice dala vzniknout králi.",
+        "image_prompt": "Photorealistic misty forest scene with ancient tree and soft light, mythical atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zakladatel na severu",
+        "fact": "Mýtus umisťuje založení království do severní části poloostrova, poblíž dnešního Pchjongjangu. Tangun je společným dědictvím obou Korejí.",
+        "source_url": "https://en.wikipedia.org/wiki/Tan%27gun",
+        "source_quote": "He founded the first kingdom around the northern part of the Korean Peninsula.",
+        "voice": "Jeden mýtus, dvě země, které se k němu hlásí.",
+        "image_prompt": "Photorealistic view of northern Korean mountains and plains, ancient feel, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-lide-hanbok",
+    "country": "Severní Korea",
+    "section": "Lidé",
+    "topic": "Tradiční oděv",
+    "headline": "Hanbok, který nosí celý národ",
+    "fact": "Hanbok je tradiční korejský oděv se širokými rukávy a volnou siluetou. Nosí se při slavnostech a svátcích na severu i na jihu.",
+    "source_url": "https://en.wikipedia.org/wiki/Hanbok",
+    "voice": "Když se oblékneš do hanboku, najednou stojíš rovněji.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Korean hanbok clothes displayed on simple mannequins against neutral background, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Barvy a volné šaty",
+        "fact": "Ženský hanbok má dlouhou sukni a krátký kabátek. Mužský se skládá z kalhot a volné horní části.",
+        "source_url": "https://en.wikipedia.org/wiki/Hanbok",
+        "voice": "Pohodlí a elegance v jednom kuse látky.",
+        "image_prompt": "Photorealistic close-up of colorful traditional Korean hanbok fabric and details, 16:9"
+      },
+      "kartograf": {
+        "headline": "Oděv společného dědictví",
+        "fact": "Hanbok se vyvíjel po staletí na celém Korejském poloostrově. Dnes ho vidíme při slavnostech v obou částech země.",
+        "source_url": "https://en.wikipedia.org/wiki/Hanbok",
+        "voice": "Látka nezná hranice, které nakreslily mapy.",
+        "image_prompt": "Photorealistic scene of traditional Korean clothing in historical architectural setting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-lide-rodina",
+    "country": "Severní Korea",
+    "section": "Lidé",
+    "topic": "Rodinné tradice",
+    "headline": "Úcta k předkům a rodině",
+    "fact": "Korejská kultura klade velký důraz na rodinu a úctu k starším. Sdílené tradice zahrnují společné oslavy a péči o hroby předků.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_Korea",
+    "voice": "Rodina je jako strom – kořeny drží i když větví je víc.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Korean family courtyard with wooden house and garden, peaceful atmosphere, no people, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Společné stoly a příběhy",
+        "fact": "Při svátcích se rodiny scházejí u stolu a připravují tradiční jídla. Děti se učí respektovat starší generace.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Korea",
+        "voice": "Nejdřív se slouží starším, pak se jí.",
+        "image_prompt": "Photorealistic traditional Korean dining table set with bowls and dishes, warm light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice, které přežily rozdělení",
+        "fact": "Mnohé rodinné zvyky vznikly ještě před rozdělením poloostrova a zůstaly společné pro sever i jih.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_Korea",
+        "voice": "Hranice změnila mapu, ale ne stůl v kuchyni.",
+        "image_prompt": "Photorealistic overview of traditional Korean village houses in landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-kultura-arirang",
+    "country": "Severní Korea",
+    "section": "Kultura & tradice",
+    "topic": "Festival Arirang",
+    "headline": "Hromadná gymnastika jako umění",
+    "fact": "Festival Arirang je velké gymnastické a umělecké vystoupení v Pchjongjangu. Tisíce účastníků vytvářejí živé obrazy a choreografie.",
+    "source_url": "https://en.wikipedia.org/wiki/Arirang_Mass_Games",
+    "source_quote": "The Grand Mass Gymnastics and Artistic Performance Arirang is a mass gymnastics and artistic festival held in the Rungrado 1st of May Stadium in Pyongyang.",
+    "voice": "Když se pohne deset tisíc lidí najednou, vypadá to jako živý obraz.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide view of large stadium with colorful mass gymnastics performance, aerial angle, 16:9",
+    "ll": [125.7752, 39.0496],
+    "levels": {
+      "cestovatel": {
+        "headline": "Karty a pohyby v jednom rytmu",
+        "fact": "Děti a dospělí drží barevné karty a vytvářejí obrovské mozaiky. Současně tančí a cvičí gymnastiku.",
+        "source_url": "https://en.wikipedia.org/wiki/Arirang_Mass_Games",
+        "source_quote": "huge mosaic pictures created by more than 30,000 trained school children, each holding up coloured cards",
+        "voice": "Jedna karta nic neznamená, tisíce karet vytvoří příběh.",
+        "image_prompt": "Photorealistic close view of performers holding colored cards forming patterns in stadium, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stadion uprostřed města",
+        "fact": "Vystoupení se konají na velkém stadionu Rungrado. Festival nese jméno staré korejské písně o rozdělených milencích.",
+        "source_url": "https://en.wikipedia.org/wiki/Arirang_Mass_Games",
+        "source_quote": "The name refers to \"Arirang\", a Korean folk story about a young couple who are torn apart",
+        "voice": "Píseň o odloučení se stala show pro celý stadion.",
+        "image_prompt": "Photorealistic exterior of large modern stadium in city setting, daytime, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-kultura-chuseok",
+    "country": "Severní Korea",
+    "section": "Kultura & tradice",
+    "topic": "Chuseok",
+    "headline": "Podzimní svátek díkůvzdání",
+    "fact": "Chuseok je tradiční korejský svátek sklizně, který slaví sever i jih. Rodiny se scházejí, připravují speciální jídla a vzdávají úctu předkům.",
+    "source_url": "https://en.wikipedia.org/wiki/Chuseok",
+    "voice": "Podzim voní rýží a rodinnými příběhy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Korean autumn harvest scene with rice fields and wooden houses, golden light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Songpjon a společný stůl",
+        "fact": "Typickým jídlem jsou rýžové knedlíčky songpjon plněné pastou ze sóji nebo sezamu. Lidé také hrají tradiční hry.",
+        "source_url": "https://en.wikipedia.org/wiki/Chuseok",
+        "voice": "Když se knedlíček povede, celá rodina se usměje.",
+        "image_prompt": "Photorealistic close-up of traditional Korean songpyeon rice cakes on wooden plate, 16:9"
+      },
+      "kartograf": {
+        "headline": "Svátek, který nezná hranici",
+        "fact": "Chuseok vznikl ještě před rozdělením Koreje a zůstává společným kulturním dědictvím obou částí poloostrova.",
+        "source_url": "https://en.wikipedia.org/wiki/Chuseok",
+        "voice": "Kalendář si pamatuje víc než mapy.",
+        "image_prompt": "Photorealistic panoramic view of Korean countryside in autumn colors, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-kultura-kimchi",
+    "country": "Severní Korea",
+    "section": "Kultura & tradice",
+    "topic": "Kultura kimchi",
+    "headline": "Fermentovaná zelenina jako tradice",
+    "fact": "Příprava kimchi je důležitou součástí korejské kultury. Rodiny společně nakládají zeleninu na zimu a předávají si recepty.",
+    "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+    "voice": "Kimchi voní jako domov, i když jsi daleko.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Korean kitchen scene with jars of kimchi and fresh vegetables, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Společné nakládání",
+        "fact": "Na podzim se lidé scházejí a připravují velké množství kimchi. Každá rodina má svůj vlastní způsob dochucení.",
+        "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+        "voice": "Ruce celé rodiny v jedné velké míse.",
+        "image_prompt": "Photorealistic close-up of hands preparing kimchi with napa cabbage and chili, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice přes celý poloostrov",
+        "fact": "Kimchi vzniklo jako způsob uchování zeleniny v chladném klimatu Koreje. Dnes je součástí kuchyně na severu i jihu.",
+        "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+        "voice": "Zima naučila lidi chytře jíst.",
+        "image_prompt": "Photorealistic rural Korean landscape with traditional storage jars, autumn, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-umeni-malba",
+    "country": "Severní Korea",
+    "section": "Umění",
+    "topic": "Korejská lidová malba",
+    "headline": "Obrazy hor a ptáků",
+    "fact": "Tradiční korejská malba často zobrazuje hory, řeky, ptáky a květiny. Používá jemné tahy štětcem a přírodní motivy.",
+    "source_url": "https://en.wikipedia.org/wiki/Korean_painting",
+    "voice": "Štětec umí zachytit i mlhu na hoře.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Korean ink painting of mountains and pine trees on silk, museum style, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Krajiny na papíře",
+        "fact": "Malíři zachycují známá místa, například Diamantové hory. Obrazy mají klidnou a harmonickou náladu.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_painting",
+        "voice": "Když se díváš na obraz, skoro cítíš vítr.",
+        "image_prompt": "Photorealistic detail of traditional Korean landscape painting with mountains and water, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umění společného dědictví",
+        "fact": "Styl malby se vyvíjel po staletí na celém poloostrově a ovlivnil umění v obou Koreách.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_painting",
+        "voice": "Hory na obraze nepatří jen jedné straně hranice.",
+        "image_prompt": "Photorealistic display of traditional Korean paintings in quiet gallery setting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-umeni-mozaiky",
+    "country": "Severní Korea",
+    "section": "Umění",
+    "topic": "Mozaikové umění",
+    "headline": "Barevné obrazy z kamínků",
+    "fact": "V Pchjongjangu a dalších městech zdobí veřejné prostory velké mozaiky. Zobrazují krajiny, zvířata i scény z každodenního života.",
+    "source_url": "https://en.wikipedia.org/wiki/Culture_of_North_Korea",
+    "voice": "Z dálky to vypadá jako obraz, zblízka jako puzzle z kamínků.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic large outdoor mosaic mural with colorful tiles depicting landscape, daytime, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Umění na stěnách města",
+        "fact": "Mozaiky najdeš na stanicích metra, na budovách i v parcích. Jsou barevné a dobře viditelné i z dálky.",
+        "source_url": "https://en.wikipedia.org/wiki/Pyongyang_Metro",
+        "voice": "Město si maluje samo na stěny.",
+        "image_prompt": "Photorealistic close-up of detailed mosaic tiles forming a picture, 16:9"
+      },
+      "kartograf": {
+        "headline": "Veřejné umění v urbanismu",
+        "fact": "Mozaiky jsou součástí plánování veřejného prostoru. Pomáhají vytvářet charakter města a orientaci v něm.",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_of_North_Korea",
+        "voice": "Když je umění na každé zdi, město vypráví příběhy.",
+        "image_prompt": "Photorealistic street view with large mosaic on building facade in city, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-umeni-hudba",
+    "country": "Severní Korea",
+    "section": "Umění",
+    "topic": "Tradiční hudba a tanec",
+    "headline": "Zvuky a pohyby staré Koreje",
+    "fact": "Tradiční korejská hudba používá nástroje jako citara kayagum a bubny. Tanec často doprovází slavnosti a lidové příběhy.",
+    "source_url": "https://en.wikipedia.org/wiki/Traditional_Korean_music",
+    "voice": "Když se ozve kayagum, čas se trochu zpomalí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Korean musical instruments kayagum and drums on wooden floor, soft light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Tanec s vějířem a bubnem",
+        "fact": "Lidové tance využívají plynulé pohyby rukou a barevné kostýmy. Často se tančí při svátcích.",
+        "source_url": "https://en.wikipedia.org/wiki/Traditional_Korean_music",
+        "voice": "Každý krok má svůj rytmus a příběh.",
+        "image_prompt": "Photorealistic traditional Korean dance performance with colorful costumes, stage lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hudba, která přežila staletí",
+        "fact": "Nástroje a melodie se předávaly po generacích na celém poloostrově. Dnes je slyšíme při kulturních akcích na severu i jihu.",
+        "source_url": "https://en.wikipedia.org/wiki/Traditional_Korean_music",
+        "voice": "Melodie nepotřebuje pas.",
+        "image_prompt": "Photorealistic quiet scene of traditional Korean music performance in historical setting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-sport-taekwondo",
+    "country": "Severní Korea",
+    "section": "Sport",
+    "topic": "Taekwondo",
+    "headline": "Korejské bojové umění",
+    "fact": "Taekwondo je korejské bojové umění zaměřené na kopy a údery. Je součástí olympijských her a trénuje se na severu i jihu.",
+    "source_url": "https://en.wikipedia.org/wiki/Taekwondo",
+    "voice": "Noha umí být rychlejší než ruka.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic taekwondo training hall with mats and flags, empty, soft light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Bílý dobok a barevné pásky",
+        "fact": "Cvičenci nosí tradiční úbor dobok a barevné pásky podle úrovně. Trénink zahrnuje sestavy a sparring.",
+        "source_url": "https://en.wikipedia.org/wiki/Taekwondo",
+        "voice": "Každý pásek je další kapitola příběhu.",
+        "image_prompt": "Photorealistic close-up of taekwondo uniform and colored belts folded neatly, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport ze společných kořenů",
+        "fact": "Taekwondo se vyvíjelo z starších korejských bojových tradic. Dnes ho trénují lidé po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Taekwondo",
+        "voice": "Z malého poloostrova až na olympiádu.",
+        "image_prompt": "Photorealistic wide view of large taekwondo competition arena, empty, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-sport-fotbal",
+    "country": "Severní Korea",
+    "section": "Sport",
+    "topic": "Fotbal",
+    "headline": "Míč, který spojí ulici",
+    "fact": "Fotbal je v Severní Koreji oblíbeným sportem. Hraje se na stadionech i na dvorech a sleduje ho mnoho lidí.",
+    "source_url": "https://en.wikipedia.org/wiki/Football_in_North_Korea",
+    "voice": "Když padne gól, křičí celý stadion stejně.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic football stadium with green pitch and empty stands, clear day, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hřiště plné energie",
+        "fact": "Děti i dospělí hrají fotbal ve volném čase. Velké zápasy se konají na stadionech v Pchjongjangu.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_North_Korea",
+        "voice": "Jeden míč stačí, aby se sešla celá čtvrť.",
+        "image_prompt": "Photorealistic neighborhood football pitch with simple goals, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport přes hranice",
+        "fact": "Fotbal je populární na celém Korejském poloostrově. Mezinárodní zápasy přitahují pozornost fanoušků z obou stran.",
+        "source_url": "https://en.wikipedia.org/wiki/Football_in_North_Korea",
+        "voice": "Míč nezná, kde končí jedna mapa a začíná druhá.",
+        "image_prompt": "Photorealistic aerial view of large football stadium in city landscape, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-sport-gymnastika",
+    "country": "Severní Korea",
+    "section": "Sport",
+    "topic": "Hromadná gymnastika",
+    "headline": "Pohyb v dokonalém souladu",
+    "fact": "Hromadná gymnastika je součástí velkých vystoupení. Tisíce lidí cvičí současně a vytvářejí přesné obrazce.",
+    "source_url": "https://en.wikipedia.org/wiki/Mass_games",
+    "source_quote": "North Korean mass games typically feature over 100,000 participants in a 90-minute display of gymnastics, dance, acrobatics",
+    "voice": "Když se všichni pohnou stejně, vypadá to jako jeden velký organismus.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic mass gymnastics performance with thousands of athletes in colorful formation, stadium, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Trénink od dětství",
+        "fact": "Účastníci trénují dlouho dopředu. Pohyby musí být přesné, aby celek vypadal harmonicky.",
+        "source_url": "https://en.wikipedia.org/wiki/Arirang_Mass_Games",
+        "voice": "Každý krok se počítá, i ten nejmenší.",
+        "image_prompt": "Photorealistic group of gymnasts practicing synchronized moves on large field, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport jako společná podívaná",
+        "fact": "Hromadná gymnastika spojuje sport a umění. Vystoupení se konají na velkých stadionech a jsou součástí kulturních festivalů.",
+        "source_url": "https://en.wikipedia.org/wiki/Mass_games",
+        "voice": "Stadion se stane jevištěm pro celý národ.",
+        "image_prompt": "Photorealistic wide stadium filled with synchronized gymnasts forming patterns, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-jazyk-hangul",
+    "country": "Severní Korea",
+    "section": "Jazyk & slova",
+    "topic": "Hangul",
+    "headline": "Písmo, které vytvořil král",
+    "fact": "Hangul je korejské písmo vytvořené v 15. století. Je společné pro Severní i Jižní Koreu a patří k nejlogičtějším systémům na světě.",
+    "source_url": "https://en.wikipedia.org/wiki/Hangul",
+    "source_quote": "Hangul is the Korean alphabet that has been used to write the Korean language since its creation in the 15th century by King Sejong the Great.",
+    "voice": "Každé písmeno vypadá, jako by se dalo poskládat z lega.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Písmena, která napodobují ústa",
+        "fact": "Tvary písmen hangulu napodobují postavení jazyka a úst při vyslovování. Učení je díky tomu snazší.",
+        "source_url": "https://en.wikipedia.org/wiki/Hangul",
+        "voice": "Když se díváš na písmeno, skoro víš, jak ho říct.",
+        "image_prompt": "Photorealistic close-up of Hangul characters written in ink on traditional paper, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jedno písmo, dvě země",
+        "fact": "Hangul se používá na celém Korejském poloostrově. Rozdíly jsou hlavně ve slovní zásobě a některých výrazech.",
+        "source_url": "https://en.wikipedia.org/wiki/Hangul",
+        "voice": "Písmo zůstalo stejné, i když se země rozdělila.",
+        "image_prompt": "Photorealistic display of Hangul alphabet chart in modern classroom style, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-jazyk-rozdily",
+    "country": "Severní Korea",
+    "section": "Jazyk & slova",
+    "topic": "Rozdíly v slovní zásobě",
+    "headline": "Stejný jazyk, jiná slova",
+    "fact": "Severokorejština a jihokorejština sdílejí stejné písmo a většinu gramatiky. Liší se však v některých slovech a výrazech.",
+    "source_url": "https://en.wikipedia.org/wiki/Korean_language",
+    "voice": "Někdy stačí jedno slovo a poznáš, odkud kdo je.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slova, která se liší",
+        "fact": "Některá každodenní slova mají na severu a jihu různé podoby. Přesto si lidé většinou rozumějí.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_language",
+        "voice": "Jazyk je jako řeka – teče stejně, ale břehy jsou jiné.",
+        "image_prompt": "Photorealistic bilingual Korean text examples on paper, clean layout, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk přes hranici",
+        "fact": "Korejština patří do korejské jazykové rodiny. Rozdělení země ovlivnilo vývoj slovní zásoby, ale základy zůstaly společné.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_language",
+        "voice": "Hranice změnila slovníky, ne kořeny řeči.",
+        "image_prompt": "Photorealistic map of Korean Peninsula with language notes overlay style, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-jazyk-pozdravy",
+    "country": "Severní Korea",
+    "section": "Jazyk & slova",
+    "topic": "Základní pozdravy",
+    "headline": "Jak pozdravit v korejštině",
+    "fact": "Základní pozdrav zní „annjonghasejo“. Korejština rozlišuje formální a neformální způsoby oslovení podle věku a vztahu.",
+    "source_url": "https://en.wikipedia.org/wiki/Korean_language",
+    "voice": "Správný pozdrav otevře dveře i úsměv.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zdvořilost v každém slově",
+        "fact": "Když mluvíš se starším člověkem, používáš formálnější tvary. Mezi kamarády stačí kratší verze.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_language",
+        "voice": "Jedno slovo, a hned je jasné, kdo je kdo.",
+        "image_prompt": "Photorealistic handwritten Korean greetings on notebook paper, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk úcty",
+        "fact": "Systém zdvořilostních úrovní je společný pro celý Korejský poloostrov. Odráží důležitost rodiny a hierarchií ve společnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_language",
+        "voice": "Jazyk učí respekt dřív, než se naučíš počítat.",
+        "image_prompt": "Photorealistic traditional Korean calligraphy of greeting phrases, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-jidlo-naengmyeon",
+    "country": "Severní Korea",
+    "section": "Jídlo",
+    "topic": "Pchjongjangské naengmyeon",
+    "headline": "Studené nudle z hlavního města",
+    "fact": "Pchjongjangské naengmyeon jsou studené pohankové nudle v chladném vývaru. Podávají se s okurkou, hruškou a tenkým plátkem masa.",
+    "source_url": "https://en.wikipedia.org/wiki/Naengmyeon",
+    "voice": "V horkém dni chutnají jako polibek z lednice.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic bowl of Pyongyang cold noodles naengmyeon with toppings, wooden table, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Nudle, které se jedí studené",
+        "fact": "Nudle jsou dlouhé a pružné. Vývar je mírně kyselý a osvěžující. Jí se hlavně v létě.",
+        "source_url": "https://en.wikipedia.org/wiki/Naengmyeon",
+        "voice": "Dlouhé nudle, krátký čas do prázdné misky.",
+        "image_prompt": "Photorealistic close-up of chopsticks lifting cold noodles from bowl, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo z pohanky a chladu",
+        "fact": "Pohanka se dobře daří v chladnějším klimatu severu. Studené nudle vznikly jako praktické jídlo pro horká léta.",
+        "source_url": "https://en.wikipedia.org/wiki/Naengmyeon",
+        "voice": "Klima napsalo recept dřív než kuchaři.",
+        "image_prompt": "Photorealistic traditional restaurant interior with bowls of naengmyeon, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-jidlo-kimchi",
+    "country": "Severní Korea",
+    "section": "Jídlo",
+    "topic": "Kimchi",
+    "headline": "Kysané zelí po korejsku",
+    "fact": "Kimchi je fermentovaná zelenina — obvykle čínské zelí s chilli, česnekem a zázvorem. Je základní přílohou téměř ke každému jídlu.",
+    "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+    "voice": "Bez kimchi není korejský stůl úplný.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic plate of red kimchi with chopsticks, simple background, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Ostře a kyselé zároveň",
+        "fact": "Kimchi chutná ostře, kyselé a umami. Existuje mnoho druhů podle zeleniny a regionu.",
+        "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+        "voice": "První sousto štípe, druhé už chutná jako domov.",
+        "image_prompt": "Photorealistic variety of kimchi types in small bowls, colorful, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, které zachránilo zimu",
+        "fact": "Fermentace umožnila uchovat zeleninu přes dlouhou zimu. Kimchi se stalo symbolem korejské kuchyně na celém poloostrově.",
+        "source_url": "https://en.wikipedia.org/wiki/Kimchi",
+        "voice": "Zima naučila lidi, jak jíst i v únoru.",
+        "image_prompt": "Photorealistic traditional kimchi storage jars in outdoor setting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-jidlo-rize",
+    "country": "Severní Korea",
+    "section": "Jídlo",
+    "topic": "Rýže a banchan",
+    "headline": "Rýže uprostřed stolu",
+    "fact": "Rýže je základem korejského jídla. Kolem ní se podává několik malých příloh zvaných banchan – zelenina, kimchi a další speciality.",
+    "source_url": "https://en.wikipedia.org/wiki/Korean_cuisine",
+    "voice": "Rýže je tichý král, banchan jsou jeho barevní rádci.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic traditional Korean meal with rice bowl and multiple banchan side dishes, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Malé misky, velká rozmanitost",
+        "fact": "Banchan se mění podle sezóny a příležitosti. I jednoduché jídlo má na stole několik barev a chutí.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_cuisine",
+        "voice": "Každá miska má svůj úkol a svou chuť.",
+        "image_prompt": "Photorealistic top-down view of Korean table with rice and colorful side dishes, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kuchyně poloostrova",
+        "fact": "Základ rýže a příloh je společný pro sever i jih. Regionální rozdíly se projevují v surovinách a dochucení.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_cuisine",
+        "voice": "Stejný stůl, trochu jiné koření.",
+        "image_prompt": "Photorealistic traditional Korean dining room with set table, warm light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-historie-koguryo",
+    "country": "Severní Korea",
+    "section": "Historie",
+    "topic": "Království Kogurjo",
+    "headline": "Starověké království na severu",
+    "fact": "Kogurjo bylo jedno z největších starověkých korejských království. Rozkládalo se na severu poloostrova a části dnešní Mandžuska.",
+    "source_url": "https://en.wikipedia.org/wiki/Goguryeo",
+    "source_quote": "Goguryeo was a Korean kingdom located in the northern and central parts of the Korean Peninsula and the southern and central parts of Northeast China.",
+    "voice": "Dávno před mapami tu stálo velké království.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic ancient Korean fortress walls and mountains, historical atmosphere, no people, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hradby a hrobky",
+        "fact": "Zůstaly po něm pevnosti, hrobky a nástěnné malby. Archeologické lokality ukazují vyspělou kulturu.",
+        "source_url": "https://en.wikipedia.org/wiki/Goguryeo",
+        "voice": "Kámen pamatuje víc než papír.",
+        "image_prompt": "Photorealistic ancient tomb mural style reconstruction of Goguryeo art, 16:9"
+      },
+      "kartograf": {
+        "headline": "Království, které sahalo daleko",
+        "fact": "Území Kogurja sahalo od severní Koreje až do dnešní Číny. Ovlivnilo pozdější korejské státy.",
+        "source_url": "https://en.wikipedia.org/wiki/Goguryeo",
+        "source_quote": "Goguryeo was a Korean kingdom located in the northern and central parts of the Korean Peninsula and the southern and central parts of Northeast China.",
+        "voice": "Velké království nechalo stopy na dvou mapách.",
+        "image_prompt": "Photorealistic landscape of northern Korean mountains with ancient fortress ruins, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-historie-valka",
+    "country": "Severní Korea",
+    "section": "Historie",
+    "topic": "Korejská válka",
+    "headline": "Válka, která rozdělila poloostrov",
+    "fact": "Korejská válka probíhala v letech 1950 až 1953. Skončila příměřím, které vytvořilo demilitarizovanou zónu, ale formální mír nebyl uzavřen.",
+    "source_url": "https://en.wikipedia.org/wiki/Korean_War",
+    "source_quote": "The Korean War was a war between North Korea and South Korea. The war began on 25 June 1950 when North Korea invaded South Korea following clashes along the border.",
+    "voice": "Příměří zastavilo boje, ale ne příběh.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic quiet landscape of hills near former front line, misty, no people or military, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Příměří místo míru",
+        "fact": "Boje ustaly po podpisu příměří. Od té doby existuje demilitarizovaná zóna jako nárazníkové pásmo.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_War",
+        "source_quote": "The fighting ended on 27 July 1953, when the Korean Armistice Agreement was signed.",
+        "voice": "Ticho po bitvě je někdy delší než bitva sama.",
+        "image_prompt": "Photorealistic peaceful rural landscape with old stone markers, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "Fronta, která se stala hranicí",
+        "fact": "Linie příměří se stala základem dnešní hranice. Poloostrov zůstal rozdělený na dvě části.",
+        "source_url": "https://en.wikipedia.org/wiki/Korean_War",
+        "source_quote": "The agreement created the Korean Demilitarized Zone to separate North and South Korea",
+        "voice": "Mapa se změnila podle toho, kde se zastavily armády.",
+        "image_prompt": "Photorealistic aerial view of divided landscape with natural buffer zone, 16:9"
+      }
+    }
+  },
+  {
+    "id": "kp-historie-rozdeleni",
+    "country": "Severní Korea",
+    "section": "Historie",
+    "topic": "Rozdělení Koreje",
+    "headline": "Rok, kdy se poloostrov rozdělil",
+    "fact": "Po druhé světové válce byl Korejský poloostrov rozdělen podél 38. rovnoběžky. Sever spravoval Sovětský svaz, jih Spojené státy.",
+    "source_url": "https://en.wikipedia.org/wiki/Division_of_Korea",
+    "source_quote": "The division of Korea began at the end of World War II in 1945.",
+    "voice": "Jedna země, dvě správy, a najednou dvě mapy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical map style image of Korean Peninsula with 38th parallel marked, soft tones, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Hranice, která vznikla na papíře",
+        "fact": "Rozdělení bylo zamýšleno jako dočasné. Časem se však stalo trvalou hranicí mezi dvěma státy.",
+        "source_url": "https://en.wikipedia.org/wiki/Division_of_Korea",
+        "voice": "Čára na mapě se stala zdí v životě.",
+        "image_prompt": "Photorealistic quiet border landscape with hills and simple fence, daytime, 16:9"
+      },
+      "kartograf": {
+        "headline": "38. rovnoběžka jako dělicí čára",
+        "fact": "Spojenci zvolili 38. rovnoběžku jako praktickou linii. Později se fronta posunula a vznikla demilitarizovaná zóna.",
+        "source_url": "https://en.wikipedia.org/wiki/Division_of_Korea",
+        "source_quote": "The United States and the Soviet Union agreed to divide the peninsula at the 38th parallel",
+        "voice": "Geografie si vzala, co jí politici nabídli.",
+        "image_prompt": "Photorealistic aerial view of the Korean Peninsula from north to south, 16:9"
+      }
+    }
+  }
+]

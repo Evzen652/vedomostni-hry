@@ -1,0 +1,851 @@
+[
+  {
+    "id": "at-mista-schonbrunn",
+    "country": "Rakousko",
+    "section": "Místa",
+    "topic": "Zámek Schönbrunn",
+    "headline": "Zámek s 1441 pokoji uprostřed Vídně",
+    "fact": "Vídeňský zámek Schönbrunn má 1441 pokojů a dnešní barokní podobu získal především za vlády Marie Terezie; od roku 1996 je zapsán na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Sch%C3%B6nbrunn_Palace",
+    "source_quote": "The 1,441-room Baroque palace is one of the most important architectural, cultural, and historic monuments in the country.",
+    "voice": "Habsburkové si tu nepostavili palác, ale rovnou celé malé město pod jednou střechou.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zámku Schönbrunn ve Vídni s barokní zahradou a Gloriette na kopci v pozadí, teplé odpolední světlo, bez lidí, bez textu, 16:9",
+    "ll": [16.3122, 48.1847],
+    "levels": {
+      "cestovatel": {
+        "headline": "Skoro 4 miliony lidí ročně na prohlídce",
+        "fact": "Zámek dnes ročně navštíví skoro 4 miliony turistů, veřejnosti je ale přístupná jen menší část z 1441 pokojů — většina zůstává uzavřená správě a archivům.",
+        "source_url": "https://en.wikipedia.org/wiki/Sch%C3%B6nbrunn_Palace",
+        "source_quote": "almost 4 million visitors in 2017",
+        "voice": "Fronta před pokladnou je dnes delší, než kdy bývala fronta dvořanů před audiencí.",
+        "image_prompt": "Fotorealistický snímek davu turistů před vstupem do zámku Schönbrunn, slunečné dopoledne, barokní fasáda v pozadí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zahrada jako odpověď na Versailles",
+        "fact": "Rozlehlý park se zámkem podle vzoru francouzského Versailles ukazuje, jak si habsburský dvůr ve Vídni budoval vlastní reprezentativní protějšek k mocenskému symbolu francouzských králů.",
+        "source_url": "https://en.wikipedia.org/wiki/Sch%C3%B6nbrunn_Palace",
+        "voice": "Kde chtěl vládnout jeden dvůr, musel mít zahradu aspoň tak velkou jako ten druhý.",
+        "image_prompt": "Fotorealistický letecký snímek zámku Schönbrunn s geometricky uspořádanou francouzskou zahradou, jasný den, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-mista-hallstatt",
+    "country": "Rakousko",
+    "section": "Místa",
+    "topic": "Hallstatt",
+    "headline": "Vesnice, kterou si Čína okopírovala celou",
+    "fact": "Rakouská vesnička Hallstatt na jezeře má necelých 800 obyvatel, přesto ji v roce 2012 čínská těžební firma nechala postavit jako věrnou kopii v životní velikosti v provincii Kuang-tung.",
+    "source_url": "https://en.wikipedia.org/wiki/Hallstatt",
+    "source_quote": "In 2012, Chinese mining company China Minmetals Corporation built a full-scale replica of the entire town in Huizhou, Guangdong province.",
+    "voice": "Originál stojí v Alpách, kopie tisíce kilometrů daleko v jižní Číně.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek vesnice Hallstatt na břehu jezera obklopené alpskými horami, ranní mlha nad hladinou, bez lidí, bez textu, 16:9",
+    "ll": [13.6493, 47.5622],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obec, kde je 741 obyvatel a desetitisíce turistů denně",
+        "fact": "V Hallstattu dnes žije jen 741 obyvatel, ale během letní sezóny sem denně dorazí desetitisíce turistů, kteří chtějí vidět stejný výhled, jaký zná svět z nesčetných fotografií.",
+        "source_url": "https://en.wikipedia.org/wiki/Hallstatt",
+        "source_quote": "Population (2026-01-01): Total 741",
+        "voice": "Na jednoho místního tu o letních prázdninách připadají desítky turistů s foťákem.",
+        "image_prompt": "Fotorealistický snímek malebné návsi Hallstattu s dřevěnými domky u jezera, turisté fotografující výhled, slunečné odpoledne, 16:9"
+      },
+      "kartograf": {
+        "headline": "Halštatská kultura má jméno po jedné vesnici",
+        "fact": "Podle zdejšího pravěkého pohřebiště z doby přibližně 800 až 450 před naším letopočtem pojmenovali archeologové celou halštatskou kulturu, spojenou s raně keltským osídlením velké části Evropy.",
+        "source_url": "https://en.wikipedia.org/wiki/Hallstatt",
+        "source_quote": "the Hallstatt culture, the archaeological culture linked to Proto-Celtic and early Celtic people of the Early Iron Age in Europe, c. 800–450 BC.",
+        "voice": "Malá alpská vesnice tak dala jméno kusu evropské pravěké historie.",
+        "image_prompt": "Fotorealistický letecký snímek jezera Hallstättersee obklopeného horami a hustým lesem, podzimní barvy, bez lidí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-mista-hohensalzburg",
+    "country": "Rakousko",
+    "section": "Místa",
+    "topic": "Pevnost Hohensalzburg",
+    "headline": "Jedna z největších dochovaných hradních pevností Evropy",
+    "fact": "Pevnost Hohensalzburg nad Salcburkem, jejíž stavba začala v roce 1077 a která měří 250 na 150 metrů, patří k největším dochovaným hradům v Evropě.",
+    "source_url": "https://en.wikipedia.org/wiki/Hohensalzburg_Fortress",
+    "source_quote": "making it one of the largest medieval castles in Europe",
+    "voice": "Arcibiskupové si nestavěli kostel, stavěli si vlastní pevnost nad městem.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek pevnosti Hohensalzburg na kopci nad Salcburkem, střechy starého města dole, jasný den, bez textu, 16:9",
+    "ll": [13.0447, 47.7953],
+    "levels": {
+      "cestovatel": {
+        "headline": "Lanovka jezdí na hrad už přes sto třicet let",
+        "fact": "Na pevnost dnes turisty vyveze historická lanovka v provozu od roku 1892, zatímco středověcí obyvatelé museli na vrchol vyšplhat pěšky po příkré stezce.",
+        "source_url": "https://en.wikipedia.org/wiki/Hohensalzburg_Fortress",
+        "source_quote": "opened in 1892, leading up from the town to the Hasengrabenbastei",
+        "voice": "Cesta nahoru, která dřív znamenala výstup, dnes trvá pár minut vsedě.",
+        "image_prompt": "Fotorealistický snímek historické lanovky vyjíždějící k pevnosti Hohensalzburg, výhled na Salcburk pod kopcem, jasný den, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hrad, co dodnes patří k nejzachovalejším v Evropě",
+        "fact": "Pevnost stojí dodnes prakticky v původním rozsahu a řadí se mezi nejzachovalejší hrady celé Evropy — na rozdíl od mnoha jiných středověkých pevností ji nikdy nedobyli útokem.",
+        "source_url": "https://en.wikipedia.org/wiki/Hohensalzburg_Fortress",
+        "source_quote": "It stands today as one of the best preserved castles in Europe",
+        "voice": "Zatímco jiné hrady padly při obléhání, tenhle prostě nikdo nikdy nedobyl.",
+        "image_prompt": "Fotorealistický letecký snímek pevnosti Hohensalzburg a starého města Salcburku obklopeného alpskými vrcholy, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-priroda-grossglockner",
+    "country": "Rakousko",
+    "section": "Příroda",
+    "topic": "Grossglockner",
+    "headline": "Nejvyšší hora Rakouska měří 3798 metrů",
+    "fact": "Grossglockner ve Vysokých Taurách měří 3798 metrů nad mořem a je nejvyšší horou Rakouska; na jeho svahu leží i nejdelší rakouský ledovec Pasterze.",
+    "source_url": "https://en.wikipedia.org/wiki/Grossglockner",
+    "source_quote": "is, at 3,798 metres above the Adriatic (12,461 ft), the highest mountain in Austria",
+    "voice": "Kdo chce vidět střechu Rakouska, musí vylézt přes tři tisíce osm set metrů vysoko.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Grossglockneru s ledovcem Pasterze pod ním, jasná obloha, bez lidí, bez textu, 16:9",
+    "ll": [12.6944, 47.0742],
+    "levels": {
+      "cestovatel": {
+        "headline": "Silnice přes průsmyk vysoko nad 2500 metry",
+        "fact": "Vysoká alpská silnice vede kolem hory přes Hochtorský průsmyk ve výšce 2504 metrů; už v roce 1962 tudy projelo 360 000 aut a 1,3 milionu návštěvníků.",
+        "source_url": "https://en.wikipedia.org/wiki/Grossglockner_High_Alpine_Road",
+        "source_quote": "In 1962, 360,000 vehicles and 1.3 million visitors crossed the pass.",
+        "voice": "Cesta autem nahoru trvá hodinu, pěšky by to bylo putování na několik dní.",
+        "image_prompt": "Fotorealistický snímek klikaté horské silnice Grossglockner High Alpine Road vinoucí se mezi alpskými vrcholy, jasný letní den, auta v dálce, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vrchol viditelný z dálky napříč Alpami",
+        "fact": "Grossglockner má po Mont Blancu druhou největší topografickou izolovanost mezi horami celých Alp, takže i uprostřed hustě zvlněného pohoří vyčnívá jako osamocený vrchol viditelný zdaleka.",
+        "source_url": "https://en.wikipedia.org/wiki/Grossglockner",
+        "source_quote": "After Mont Blanc, has the second greatest topographic isolation of all mountains in the Alps",
+        "voice": "I když kolem stojí desítky dalších třítisícovek, tenhle vrchol je vidět nejdřív ze všech.",
+        "image_prompt": "Fotorealistický letecký snímek štítu Grossglockneru čnícího nad okolními hřebeny Vysokých Taur, ranní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-priroda-krimmelske-vodopady",
+    "country": "Rakousko",
+    "section": "Příroda",
+    "topic": "Krimmelské vodopády",
+    "headline": "Nejvyšší vodopád Rakouska padá 380 metrů",
+    "fact": "Krimmelské vodopády na úpatí Vysokých Taur mají celkovou výšku 380 metrů ve třech stupních a jsou nejvyšším vodopádem Rakouska.",
+    "source_url": "https://en.wikipedia.org/wiki/Krimml_Waterfalls",
+    "source_quote": "with a total height of 380 metres (1,247 feet), are the highest waterfall in Austria.",
+    "voice": "Voda sem padá ve třech patrech, jako by si dávala na sestup čas.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek mohutných Krimmelských vodopádů padajících z alpského srázu, vodní tříšť a duha v popředí, jasný den, bez lidí, bez textu, 16:9",
+    "ll": [12.1725, 47.2199],
+    "levels": {
+      "cestovatel": {
+        "headline": "Čtyři sta tisíc turistů ročně kolem stezky",
+        "fact": "Kolem vodopádů vede naučná stezka a ročně sem podle odhadů zavítá přibližně 400 000 návštěvníků, kteří míří i k horní části vodopádu vysoké 140 metrů.",
+        "source_url": "https://en.wikipedia.org/wiki/Krimml_Waterfalls",
+        "source_quote": "About 400,000 people visit the falls annually",
+        "voice": "Někteří si sem chodí jen sednout na lavičku a nechat se ovívat vodní mlhou.",
+        "image_prompt": "Fotorealistický snímek turistické stezky podél Krimmelských vodopádů, návštěvníci v pláštěnkách kvůli vodní tříšti, zelený les kolem, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ledovcová řeka, co v zimě skoro vyschne",
+        "fact": "Vodopády napájí ledovcová říčka Krimmler Ache, jejíž průtok v létě dosahuje 5,6 metru krychlového za sekundu, zatímco v únoru klesá na pouhých 0,14 metru krychlového za sekundu.",
+        "source_url": "https://en.wikipedia.org/wiki/Krimml_Waterfalls",
+        "source_quote": "only 0.14 cubic metres per second (37 USgal/s)",
+        "voice": "V zimě zbyde z divokého vodopádu sotva tenký pramínek ledové vody.",
+        "image_prompt": "Fotorealistický snímek zamrzlých Krimmelských vodopádů v zimě, ledové rampouchy na skalách, sněhová krajina kolem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-priroda-neziderske-jezero",
+    "country": "Rakousko",
+    "section": "Příroda",
+    "topic": "Neziderské jezero",
+    "headline": "Stepní jezero hluboké necelé dva metry",
+    "fact": "Neziderské jezero na hranici s Maďarskem má rozlohu 315 kilometrů čtverečních a průměrnou hloubku jen 1 metr — je to největší bezodtoké stepní jezero střední Evropy.",
+    "source_url": "https://en.wikipedia.org/wiki/Lake_Neusiedl",
+    "source_quote": "is the largest endorheic lake in Central Europe",
+    "voice": "Jezero je tak mělké, že by v něm dospělý člověk skoro všude došlápl na dno.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický širokoúhlý snímek Neziderského jezera s rákosím na břehu a plochou stepní krajinou kolem, večerní světlo, bez lidí, bez textu, 16:9",
+    "ll": [16.7667, 47.8333],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přes 300 druhů ptáků na jednom jezeře",
+        "fact": "Kolem jezera bylo zaznamenáno přes 300 druhů ptáků, mimo jiné velké kolonie volavek a vzácné druhy jako drop velký, a oblast je proto oblíbeným cílem pozorovatelů ptactva.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Neusiedl",
+        "source_quote": "over 300 bird species have been recorded",
+        "voice": "Kdo sem přijede s dalekohledem, může za jediné odpoledne zapsat do deníčku desítky druhů.",
+        "image_prompt": "Fotorealistický snímek hejna volavek a dalších vodních ptáků na hladině Neziderského jezera mezi rákosím, ranní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jezero rozdělené státní hranicí napůl",
+        "fact": "Neziderské jezero leží na hranici Rakouska a Maďarska a od roku 2001 je společně zapsané na seznamu UNESCO — příklad přírodního celku, který dvě sousední země spravují společně.",
+        "source_url": "https://en.wikipedia.org/wiki/Lake_Neusiedl",
+        "source_quote": "Lake Neusiedl and environs is inscribed on the UNESCO World Heritage List since 2001.",
+        "voice": "Jednu vodní plochu si tu dvě země musí u společného stolu domlouvat společně.",
+        "image_prompt": "Fotorealistický letecký snímek Neziderského jezera s hraniční linií mezi Rakouskem a Maďarskem, plochá krajina, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-lide-mozart",
+    "country": "Rakousko",
+    "section": "Lidé",
+    "topic": "Wolfgang Amadeus Mozart",
+    "headline": "Skladatel, co komponoval už v pěti letech",
+    "fact": "Wolfgang Amadeus Mozart se narodil roku 1756 v Salcburku, komponovat začal už v pěti letech a za svůj krátký život napsal přes 800 skladeb.",
+    "source_url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+    "source_quote": "He completed more than 800 works in his life",
+    "voice": "V pěti letech, kdy jiné děti teprve poznávají písmenka, on už skládal noty.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový portrét malého Wolfganga Amadea Mozarta u cembala v barokním oděvu, svíčkové osvětlení, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "V šesti letech na první koncertní turné Evropou",
+        "fact": "Mozart vyrazil na první velké koncertní turné evropskými dvory už v roce 1762, v pouhých šesti letech, a hrál mimo jiné na dvorech ve Vídni a v Praze.",
+        "source_url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+        "source_quote": "These began with an exhibition in 1762 at the court of Prince-elector Maximilian III of Bavaria in Munich, and at the Imperial Courts in Vienna and Prague.",
+        "voice": "Zatímco jiné děti v jeho věku sotva uměly číst, on už bavil evropské panovníky.",
+        "image_prompt": "Fotorealistický dobový snímek dětského Mozarta hrajícího na cembalo před dvorskou společností v paláci, svíčky, 18. století, 16:9"
+      },
+      "kartograf": {
+        "headline": "Salcburk jako zaměstnavatel, Vídeň jako svoboda",
+        "fact": "Mozart vyrostl v Salcburku jako zaměstnanec tamního arcibiskupa a teprve po přestěhování do Vídně získal svobodu skládat nezávisle na jednom dvoře — typický příklad toho, jak umělecká kariéra tehdejší doby závisela na přízni konkrétního panovníka.",
+        "source_url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+        "voice": "Doma měl nadřízeného, ve Vídni konečně jen publikum.",
+        "image_prompt": "Fotorealistický snímek historického centra Salcburku s pevností Hohensalzburg v pozadí, ranní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-lide-sisi",
+    "country": "Rakousko",
+    "section": "Lidé",
+    "topic": "Císařovna Alžběta (Sisi)",
+    "headline": "Provdaná za císaře v šestnácti letech",
+    "fact": "Císařovna Alžběta Bavorská, zvaná Sisi, se provdala za rakouského císaře Františka Josefa I. 24. dubna 1854, v pouhých šestnácti letech.",
+    "source_url": "https://en.wikipedia.org/wiki/Empress_Elisabeth_of_Austria",
+    "source_quote": "The couple were married eight months later in Vienna, at the Augustinerkirche, on 24 April 1854.",
+    "voice": "Než stihla pořádně dospět, uměla už podle etikety řídit celý dvůr.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový portrét mladé císařovny Alžběty Bavorské (Sisi) ve svatebních šatech, honosný interiér vídeňského paláce, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Péče o vlasy jí zabrala hodiny denně",
+        "fact": "Sisi měla podle svědectví svého řeckého učitele vlasy tak dlouhé, že jí při rozčesávání volně splývaly až na podlahu a zahalovaly celé tělo; péči o ně věnovala i několik hodin denně.",
+        "source_url": "https://en.wikipedia.org/wiki/Empress_Elisabeth_of_Austria",
+        "source_quote": "her hair, unfastened and reaching to the floor, enfolded her entire body",
+        "voice": "Marnivost, které klidně obětovala celé odpoledne, každý jednotlivý den.",
+        "image_prompt": "Fotorealistický snímek komorné splétající extrémně dlouhé vlasy císařovny Alžběty v historické ložnici, měkké světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Smrt na nábřeží ženevského jezera",
+        "fact": "Alžběta zemřela 10. září 1898 v Ženevě, kde ji na promenádě u jezera bodl dýkou italský anarchista — čin, který zapadá do vlny politických atentátů na evropské panovníky na přelomu století.",
+        "source_url": "https://en.wikipedia.org/wiki/Empress_Elisabeth_of_Austria",
+        "source_quote": "At 1:35 p.m. on Saturday 10 September 1898, Elisabeth and Countess Irma Sztáray, her lady-in-waiting, left the hotel",
+        "voice": "Chtěl zabít kteréhokoli šlechtice, který mu přijde pod ruku — vyšla na to zrovna ona.",
+        "image_prompt": "Fotorealistický snímek promenády u Ženevského jezera na konci 19. století, historická atmosféra, klidná voda, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-lide-schwarzenegger",
+    "country": "Rakousko",
+    "section": "Lidé",
+    "topic": "Arnold Schwarzenegger",
+    "headline": "Ze štýrské vesnice na kalifornský guvernérský stolec",
+    "fact": "Arnold Schwarzenegger se narodil 30. července 1947 ve štýrské obci Thal a v roce 1968 v jedenadvaceti letech odešel do USA, kde se později stal sedminásobným vítězem soutěže Mr. Olympia.",
+    "source_url": "https://en.wikipedia.org/wiki/Arnold_Schwarzenegger",
+    "source_quote": "Arnold Alois Schwarzenegger was born on July 30, 1947, in Thal, Styria",
+    "voice": "Z malé rakouské vesnice vede překvapivě přímá cesta až do guvernérského křesla v Kalifornii.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek malé štýrské vesnice Thal v Rakousku s tradičními domy a kopcovitou krajinou, jasný den, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Do Ameriky odjel takřka bez angličtiny",
+        "fact": "Schwarzenegger se do USA přestěhoval v říjnu 1968 ve věku jedenadvaceti let a podle vlastních slov tehdy uměl anglicky jen pár slov.",
+        "source_url": "https://en.wikipedia.org/wiki/Arnold_Schwarzenegger",
+        "source_quote": "moved to the U.S. in October 1968 at age 21, speaking little English",
+        "voice": "Jazyk se doučoval za pochodu, zatímco stavěl kariéru kulturisty.",
+        "image_prompt": "Fotorealistický dobový snímek mladého kulturisty s kufrem na letišti v roce 1968, černobílý nádech, 16:9"
+      },
+      "kartograf": {
+        "headline": "Guvernér Kalifornie s rakouským přízvukem",
+        "fact": "Schwarzenegger vedl kalifornskou vládu jako 38. guvernér od roku 2003 do roku 2011 — ukázka, jak i emigrant bez politické tradice v rodině dokáže v americkém systému dosáhnout na jeden z nejvlivnějších regionálních úřadů v zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Arnold_Schwarzenegger",
+        "source_quote": "served as the 38th governor of California from 2003 to 2011",
+        "voice": "Přišel jako kulturista s přízvukem a skončil jako muž, který podepisoval kalifornské zákony.",
+        "image_prompt": "Fotorealistický snímek kapitolu státu Kalifornie v Sacramentu, slavnostní atmosféra, jasný den, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-kultura-opernball",
+    "country": "Rakousko",
+    "section": "Kultura & tradice",
+    "topic": "Vídeňský Opernball",
+    "headline": "Ples, kde tančí 180 debutantských párů",
+    "fact": "Vídeňský Opernball se koná každoročně ve Státní opeře před Popeleční středou a jeho zahájení patří 180 debutantským párům v bílých šatech.",
+    "source_url": "https://en.wikipedia.org/wiki/Vienna_Opera_Ball",
+    "source_quote": "The highlight of the opening ceremony is the introduction of 180 debutante couples.",
+    "voice": "Na jeden večer se z operního jeviště stane největší taneční parket ve Vídni.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek slavnostního sálu vídeňské Státní opery během plesu, tanečníci ve večerních šatech, křišťálové lustry, 16:9",
+    "ll": [16.3699, 48.2035],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tančí se od desíti večer do pěti do rána",
+        "fact": "Ples ve Státní opeře začíná kolem desáté hodiny večer a pokračuje až do pěti ráno; muži musí přijít ve fraku, ženy v šatech sahajících až na zem.",
+        "source_url": "https://en.wikipedia.org/wiki/Vienna_Opera_Ball",
+        "source_quote": "It begins around 10 pm and runs until 5 am.",
+        "voice": "Škoda usnout dřív, hlavní kolo tance přijde až po půlnoci.",
+        "image_prompt": "Fotorealistický snímek párů ve fracích a plesových šatech tančících ve vídeňské Státní opeře v noci, slavnostní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice stará přes dvě stě let s přestávkami",
+        "fact": "Kořeny vídeňské plesové sezóny sahají do roku 1814, ale samotný název 'Opera Ball' dostala akce až v roce 1935; kvůli válkám a pandemii byl ples několikrát zcela zrušen.",
+        "source_url": "https://en.wikipedia.org/wiki/Vienna_Opera_Ball",
+        "source_quote": "The first ball to be named 'Opera Ball' was held in 1935 under the honorary patronage of the Federal Chancellor.",
+        "voice": "I velkolepá tradice si občas musí odpustit rok nebo dva kvůli válce či pandemii.",
+        "image_prompt": "Fotorealistický architektonický snímek fasády vídeňské Státní opery večer, slavnostní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-kultura-krampus",
+    "country": "Rakousko",
+    "section": "Kultura & tradice",
+    "topic": "Krampus",
+    "headline": "Rohatý strašák, co doprovází svatého Mikuláše",
+    "fact": "Krampus je alpská démonická postava s rohy a kozí nohou, která v noci na 5. prosince, před svátkem svatého Mikuláše, trestá zlobivé děti pruty, zatímco světec odměňuje ty hodné.",
+    "source_url": "https://en.wikipedia.org/wiki/Krampus",
+    "source_quote": "said to accompany Saint Nicholas on visits to children during the night of 5 December (Krampusnacht), immediately before the Feast of St. Nicholas on 6 December.",
+    "voice": "Jeden nese dárky, druhý pruty — a děti se bály hlavně toho druhého.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek muže v děsivé masce a kožichu Krampuse s rohy během tradičního průvodu v rakouské alpské vesnici, večerní pochodně, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Postava zakázaná i vlastní vládou",
+        "fact": "Rakouská vláda dala v padesátých letech 20. století tisknout letáky s názvem 'Krampus je zlý muž', protože se obávala, že setkání s děsivou maskou poškozuje dětskou psychiku.",
+        "source_url": "https://en.wikipedia.org/wiki/Krampus",
+        "source_quote": "the Government of Austria distributed pamphlets titled 'Krampus Is an Evil Man' for fear that encounters with Krampus might damage children's mental health",
+        "voice": "Stát varoval před vlastní tradicí, jako by to byla nakažlivá nemoc.",
+        "image_prompt": "Fotorealistický snímek staré tiskoviny s ilustrací Krampuse z poloviny 20. století, archivní tón, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pohanská postava v křesťanském kostýmu",
+        "fact": "Krampus se v písemných pramenech objevuje až od 16. století, tedy mnohem později než postava svatého Mikuláše — příklad, jak si lidová kultura postupně přidávala vlastní temnější figury k oficiálním církevním svátkům.",
+        "source_url": "https://en.wikipedia.org/wiki/Krampus",
+        "source_quote": "it is not attested until the 16th century.",
+        "voice": "Církev dala svátku jméno, vesnice mu ale sama přidala vlastního strašáka.",
+        "image_prompt": "Fotorealistický atmosférický snímek alpské vesnice zahalené soumrakem během tradičního krampusového průvodu s pochodněmi, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-kultura-spanelska-jezdecka-skola",
+    "country": "Rakousko",
+    "section": "Kultura & tradice",
+    "topic": "Španělská jezdecká škola",
+    "headline": "Nejstarší jezdecká škola svého druhu na světě",
+    "fact": "Vídeňská Španělská jezdecká škola byla poprvé jmenována v roce 1565 a je nejstarší jezdeckou školou svého druhu na světě; cvičí v ní výhradně lipicánští hřebci.",
+    "source_url": "https://en.wikipedia.org/wiki/Spanish_Riding_School",
+    "source_quote": "The riding school was first named during the Habsburg Monarchy in 1565, long before the French manege of Antoine de Pluvinel, and is the oldest of its kind in the world.",
+    "voice": "Než vznikly první moderní státy, ve Vídni už cvičili koně podle podobných pravidel jako dnes.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bílých lipicánských hřebců předvádějících klasickou drezuru v barokní Zimní jízdárně ve Vídni, křišťálové lustry, 16:9",
+    "ll": [16.3660, 48.2064],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ženy směly ke koním až po 443 letech",
+        "fact": "Teprve v říjnu 2008 přijali do výcviku první dvě jezdkyně v historii školy — osmnáctiletou Britku a jednadvacetiletou Rakušanku.",
+        "source_url": "https://en.wikipedia.org/wiki/Spanish_Riding_School",
+        "source_quote": "two women, Sojourner Morrell, an 18-year-old from the United Kingdom, and Hannah Zeitlhofer, a 21-year-old from Austria, passed the entrance exam and were accepted to train as riders at the school.",
+        "voice": "Staletí patřilo sedlo jen mužům, než konečně pustili ke koním i ženy.",
+        "image_prompt": "Fotorealistický snímek mladé jezdkyně trénující s bílým lipicánským koněm uvnitř barokní jízdárny, denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Barokní jízdárna postavená přímo pro koně",
+        "fact": "Dnešní Zimní jízdárnu nechal v letech 1729 až 1735 postavit architekt Fischer von Erlach na příkaz císaře Karla VI. — honosná stavba dokazuje, jak vysoko dvorská kultura ve Vídni cenila umění jezdectví.",
+        "source_url": "https://en.wikipedia.org/wiki/Spanish_Riding_School",
+        "source_quote": "it was not until 1729 that Emperor Charles VI commissioned the architect Joseph Emanuel Fischer von Erlach to build the white riding hall used today",
+        "voice": "Pro koně tehdy stavěli síň stejně honosnou jako pro panovníka.",
+        "image_prompt": "Fotorealistický snímek interiéru barokní Zimní jízdárny ve Vídni s bílými sloupy a lustry, prázdná aréna, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-umeni-klimt",
+    "country": "Rakousko",
+    "section": "Umění",
+    "topic": "Gustav Klimt – Polibek",
+    "headline": "Milenci pokrytí pravými plátky zlata",
+    "fact": "Obraz Polibek namaloval Gustav Klimt v letech 1907 a 1908 na vrcholu takzvaného zlatého období, kdy do pláten vkládal skutečné plátky zlata; dnes visí v galerii Belvedere ve Vídni.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
+    "source_quote": "It was painted at some point in 1907 and 1908, during the height of what scholars call his 'Golden Period'.",
+    "voice": "Zlato na plátně dnes svítí stejně, jako svítilo v ateliéru před víc než sto lety.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek obrazu Polibek od Gustava Klimta zavěšeného na zdi galerie Belvedere ve Vídni, zlatavé odlesky, návštěvníci v uctivé vzdálenosti, 16:9",
+    "ll": [16.3808, 48.1917],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rakouský stát obraz koupil ještě nedokončený",
+        "fact": "Polibek koupil rakouský stát ještě předtím, než byl úplně dokončen, hned poté, co ho Klimt poprvé vystavil veřejnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
+        "source_quote": "The Kiss, however, was enthusiastically received, and was purchased, still unfinished, by the Austrian government when it was put on public exhibition.",
+        "voice": "Stát nečekal na poslední tah štětcem a rovnou obraz koupil.",
+        "image_prompt": "Fotorealistický detailní snímek zlatavého vzoru a tváří milenců na obraze Polibek, měkké galerijní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Byzantské mozaiky z Ravenny na vídeňském plátně",
+        "fact": "Klimtovu zálibu ve zlaté ploše místo perspektivy podnítila cesta do italské Ravenny v roce 1903, kde na vlastní oči viděl byzantské mozaiky kostela San Vitale.",
+        "source_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
+        "source_quote": "the use of gold leaf in paintings was inspired by a trip he made to Italy in 1903. When he visited Ravenna he saw the Byzantine mosaics in the Church of San Vitale.",
+        "voice": "Stačila jedna cesta na jih, a vídeňská malba dostala nový, zlatý jazyk.",
+        "image_prompt": "Fotorealistický snímek byzantských zlatých mozaik v kostele San Vitale v Ravenně, tlumené světlo, detail vzorů, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-umeni-hundertwasserhaus",
+    "country": "Rakousko",
+    "section": "Umění",
+    "topic": "Hundertwasserhaus",
+    "headline": "Dům s 250 stromy rostoucími přímo z pokojů",
+    "fact": "Vídeňský bytový dům Hundertwasserhaus byl dokončen v roce 1985 podle návrhu Friedensreicha Hundertwassera; na terasách a uvnitř roste celkem 250 stromů a keřů, které prorůstají i okny.",
+    "source_url": "https://en.wikipedia.org/wiki/Hundertwasserhaus",
+    "source_quote": "a total of 250 trees and bushes.",
+    "voice": "Kde jinde bydlí lidé, tam u Hundertwassera bydlí s nimi pod jednou střechou i strom.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek barevné fasády domu Hundertwasserhaus ve Vídni s nepravidelnými okny, stromy rostoucími z teras, jasný den, 16:9",
+    "ll": [16.3944, 48.2093],
+    "levels": {
+      "cestovatel": {
+        "headline": "Podlaha jako 'božská melodie' pro chodidla",
+        "fact": "Hundertwasser navrhl podlahy v domě záměrně nerovné a zvlněné, protože podle jeho slov je nerovná podlaha božskou melodií pro chodidla — koncept, který v běžné bytové výstavbě prakticky nemá obdoby.",
+        "source_url": "https://en.wikipedia.org/wiki/Hundertwasserhaus",
+        "source_quote": "An uneven floor is a divine melody to the feet.",
+        "voice": "Kdo tu bydlí, ten se chůzí po vlastní podlaze pořád tak trochu kolébá.",
+        "image_prompt": "Fotorealistický detailní snímek zvlněné barevné podlahy a chodby uvnitř domu Hundertwasserhaus, přírodní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "53 bytů v domě bez jediné rovné linie",
+        "fact": "Dům má 53 bytů, čtyři kanceláře a devatenáct teras, přitom v celé stavbě téměř nenajdete rovnou linii ani stejné dva sousedící okna — protiklad k typické poválečné panelové zástavbě vídeňských čtvrtí.",
+        "source_url": "https://en.wikipedia.org/wiki/Hundertwasserhaus",
+        "source_quote": "53 apartments, four offices, 16 private terraces and three communal terraces.",
+        "voice": "Kde panelák stavěl na stejných oknech, tady je každé okno jinak vysoké a jinak barevné.",
+        "image_prompt": "Fotorealistický letecký snímek nepravidelné, barevné střechy domu Hundertwasserhaus mezi běžnou vídeňskou zástavbou, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-umeni-secese",
+    "country": "Rakousko",
+    "section": "Umění",
+    "topic": "Secesní dům (Secession)",
+    "headline": "Budova s heslem umění nade vším",
+    "fact": "Vídeňský výstavní pavilon Secese dokončil architekt Joseph Maria Olbrich v roce 1898 jako architektonický manifest hnutí; nad vchodem nese nápis 'Době její umění, umění jeho svobodu'.",
+    "source_url": "https://en.wikipedia.org/wiki/Secession_Building",
+    "source_quote": "It was completed in 1898 by Joseph Maria Olbrich as an architectural manifesto for the Vienna Secession",
+    "voice": "Fasáda hlásá svobodu umění, ještě než návštěvník vůbec vejde dovnitř.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek fasády budovy Secese ve Vídni se zlatou kopulí a nápisem nad vchodem, jasný den, 16:9",
+    "ll": [16.3690, 48.2001],
+    "levels": {
+      "cestovatel": {
+        "headline": "Uvnitř visí Klimtův Beethovenův vlys",
+        "fact": "Uvnitř budovy je natrvalo umístěn Klimtův Beethovenův vlys, jedno z nejznámějších děl celého secesního hnutí, namalované přímo pro tento výstavní prostor.",
+        "source_url": "https://en.wikipedia.org/wiki/Secession_Building",
+        "source_quote": "The building features the Beethoven Frieze by Gustav Klimt, one of the most widely recognized artworks of Secession style",
+        "voice": "Obraz nevisí jen v budově, budova pro něj byla přímo postavená.",
+        "image_prompt": "Fotorealistický snímek interiéru výstavního sálu se secesním vlysem na stěnách, tlumené galerijní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Heslo, které shrnuje celé umělecké hnutí",
+        "fact": "Nápis 'Době její umění, umění jeho svobodu' nad vchodem shrnuje ideu celé secese — umělci se chtěli vymanit z pravidel akademického malířství a tvořit bez ohledu na zavedený vkus tehdejší doby.",
+        "source_url": "https://en.wikipedia.org/wiki/Secession_Building",
+        "source_quote": "To every age its art, to every art its freedom",
+        "voice": "Pár slov nad dveřmi, a přesto celý manifest jednoho uměleckého hnutí.",
+        "image_prompt": "Fotorealistický detailní snímek zlatého nápisu na fasádě budovy Secese ve Vídni, ostré sluneční světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-sport-hermann-maier",
+    "country": "Rakousko",
+    "section": "Sport",
+    "topic": "Hermann Maier",
+    "headline": "Pád v Naganu, a přesto dvě zlata",
+    "fact": "Lyžař Hermann Maier na olympiádě v Naganu 1998 nejdřív spektakulárně vylétl ze sjezdové trati, ale o pár dní později vyhrál zlato v superobřím i obřím slalomu.",
+    "source_url": "https://en.wikipedia.org/wiki/Hermann_Maier",
+    "source_quote": "flew spectacularly off the sunlit course, landed partially on his head, tumbled head over heels several times",
+    "voice": "Nejdřív celý svět viděl jeho pád, o pár dní později viděl jeho zlato.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek sjezdového lyžaře v prudké zatáčce na zasněžené alpské trati, sněhová tříšť za lyžemi, jasný den, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Přezdívku Herminator si vysloužil 54 vítězstvími",
+        "fact": "Maier přezdívaný 'Herminator' nasbíral v kariéře 54 vítězství ve Světovém poháru, z toho 24 v superobřím slalomu a 15 ve sjezdu.",
+        "source_url": "https://en.wikipedia.org/wiki/Hermann_Maier",
+        "source_quote": "His 54 World Cup race victories – 24 super-G, 15 downhills, 14 giant slaloms, and 1 combined – rank third on the men's all-time list",
+        "voice": "Soupeři se báli hlavně jeho jízdy ve sjezdu, kde sbíral vítězství jedno za druhým.",
+        "image_prompt": "Fotorealistický snímek lyžaře v cíli závodu Světového poháru se zdviženými pažemi, fanoušci v pozadí, zasněžený stadion, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nehoda na motorce, co skoro ukončila kariéru",
+        "fact": "V srpnu 2001 se Maier při návratu z letního tréninku srazil na motorce s autem a lékaři zvažovali amputaci pravé nohy pod kolenem; místo toho podstoupil rozsáhlou rekonstrukční operaci.",
+        "source_url": "https://en.wikipedia.org/wiki/Hermann_Maier",
+        "source_quote": "his career nearly ended following a near-fatal motorcycle accident on August 24, 2001; he collided with a car on his way home from a summer training session in Austria. Doctors nearly amputated his lower right leg, but instead Maier underwent massive reconstructive surgery.",
+        "voice": "Ze silnice se vrátil na sníh jen díky tomu, že se lékaři nakonec rozhodli nohu nikdy neuříznout.",
+        "image_prompt": "Fotorealistický snímek horské silnice v rakouských Alpách za letního dne, motorka opřená u krajnice, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-sport-niki-lauda",
+    "country": "Rakousko",
+    "section": "Sport",
+    "topic": "Niki Lauda",
+    "headline": "Vrátil se na trať šest týdnů po požáru",
+    "fact": "Formulový jezdec Niki Lauda po vážné havárii a požáru vozu na Nürburgringu v roce 1976 vynechal jen dva závody a na trať se vrátil už po zhruba šesti týdnech.",
+    "source_url": "https://en.wikipedia.org/wiki/Niki_Lauda",
+    "source_quote": "Lauda missed only two races—approximately six weeks—before returning at the Italian Grand Prix at Monza.",
+    "voice": "Lékaři mu dávali poslední pomazání, on dal přednost návratu do kokpitu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický dobový snímek formulového vozu v plamenech na okruhu Nürburgring v roce 1976, dramatická scéna, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Popáleniny skryté pod slavnou červenou čepicí",
+        "fact": "Při požáru Lauda utrpěl těžké popáleniny hlavy a rukou a přišel o většinu pravého ucha i vlasy na pravé straně hlavy; jizvy pak celý život schovával pod charakteristickou čepicí.",
+        "source_url": "https://en.wikipedia.org/wiki/Niki_Lauda",
+        "source_quote": "Lauda lost most of his right ear, hair on the right side of his head, eyebrows, and eyelids.",
+        "voice": "Čepice, kterou nosil pořád, nebyla móda, ale připomínka toho, co přežil.",
+        "image_prompt": "Fotorealistický portrét Nikiho Laudy v charakteristické červené čepici, vážný výraz, studiové osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jediný jezdec s tituly za Ferrari i McLaren",
+        "fact": "Lauda vyhrál mistrovství světa formule 1 třikrát — v letech 1975, 1977 a 1984 — a zůstává jediným jezdcem historie, který dokázal titul získat jak s Ferrari, tak s McLarenem.",
+        "source_url": "https://en.wikipedia.org/wiki/Niki_Lauda",
+        "source_quote": "remains the only driver to have won a World Drivers' Championship with both Ferrari and McLaren",
+        "voice": "Jiní jezdci měnili stáje a formu ztráceli, on titul přivezl na dvou úplně různých adresách.",
+        "image_prompt": "Fotorealistický snímek historického závodního vozu Ferrari F1 ze 70. let na okruhu, prázdné tribuny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-sport-ctyriskok",
+    "country": "Rakousko",
+    "section": "Sport",
+    "topic": "Turné čtyř můstků",
+    "headline": "Skokanské turné, které se dvakrát zastaví v Rakousku",
+    "fact": "Turné čtyř můstků ve skocích na lyžích se koná od roku 1953 v Německu a Rakousku a dvě ze čtyř zastávek — Innsbruck a Bischofshofen — hostí právě Rakousko.",
+    "source_url": "https://en.wikipedia.org/wiki/Four_Hills_Tournament",
+    "source_quote": "has taken place in Germany and Austria each year since 1953",
+    "voice": "Ze čtyř zastávek si Rakousko nárokuje rovnou polovinu turné.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek skokana na lyžích ve vzduchu nad skokanským můstkem v Bischofshofenu, zasněžené hory v pozadí, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Grand slam se povedl poprvé až po padesáti letech",
+        "fact": "Teprve při jubilejním padesátém ročníku v sezóně 2001/2002 dokázal Sven Hannawald jako první skokan v historii vyhrát všechny čtyři závody turné za sebou — takzvaný grand slam.",
+        "source_url": "https://en.wikipedia.org/wiki/Four_Hills_Tournament",
+        "source_quote": "In 2001–02, the anniversary 50th edition, Sven Hannawald was the first to achieve the grand slam of ski jumping, winning all four events in the same edition.",
+        "voice": "Půl století turné čekalo na skokana, který by je vyhrál kompletně celé.",
+        "image_prompt": "Fotorealistický snímek slavícího skokana na lyžích na pódiu s trofejí, konfety, zasněžený stadion, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od roku 2026 přibude i ženské turné",
+        "fact": "Od sezóny 2026/2027 se poprvé v historii turné uskuteční i jeho ženská verze, souběžně s tou mužskou — krok, který kopíruje širší proměnu ženských skoků na lyžích v posledních letech.",
+        "source_url": "https://en.wikipedia.org/wiki/Four_Hills_Tournament",
+        "source_quote": "From 2026-27 season, for the first time in the history of the competition, there will be a women's edition of the tournament.",
+        "voice": "Skoky na lyžích si dlouho vystačily jen s muži, teď se to konečně mění.",
+        "image_prompt": "Fotorealistický snímek ženy skokanky na lyžích v letu nad můstkem, zimní hory v pozadí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-jazyk-servus",
+    "country": "Rakousko",
+    "section": "Jazyk & slova",
+    "topic": "Slovo servus",
+    "headline": "Pozdrav, který znamená i 'ahoj' i 'sbohem'",
+    "fact": "Rakouský pozdrav 'servus' pochází z latinského slova pro otroka či služebníka a používá se jako neformální pozdrav na uvítanou i na rozloučenou.",
+    "source_url": "https://en.wikipedia.org/wiki/Servus",
+    "source_quote": "These words originate from servus, the Latin word for 'servant' or 'slave' also the origin of English serf.",
+    "voice": "Kdysi to byla úklona před pánem, dnes je to jen ležérní pozdrav na ulici.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek dvou lidí zdravících se potřesením ruky na rakouské vesnické návsi, přátelský úsměv, sluneční odpoledne, bez textu, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pozdrav, co přežil rozpad monarchie",
+        "fact": "Servus se dodnes běžně používá zhruba na území bývalé rakousko-uherské monarchie — v Rakousku, Maďarsku, na Slovensku, v Rumunsku i jižním Bavorsku.",
+        "source_url": "https://en.wikipedia.org/wiki/Servus",
+        "source_quote": "Use of this expression is roughly coincident with the boundaries of the former Austro-Hungarian Empire.",
+        "voice": "Hranice říše dávno zmizely z mapy, pozdrav po nich zůstal v jazyce sousedních zemí.",
+        "image_prompt": "Fotorealistický snímek staré mapy střední Evropy z dob Rakouska-Uherska, teplý archivní tón, 16:9"
+      },
+      "kartograf": {
+        "headline": "Latinská fráze zkrácená na jediné slovo",
+        "fact": "Celý původní latinský pozdrav zněl 'servus humillimus, domine spectabilis', tedy 'váš nejpokornější služebník, vznešený pane' — dnešní jednoslovné 'servus' je jen zbytek kdysi zdvořilostní fráze.",
+        "source_url": "https://en.wikipedia.org/wiki/Servus",
+        "source_quote": "The phrase is an ellipsis of a Latin expression servus humillimus, domine spectabilis, meaning '[your] most humble servant, [my] noble lord'.",
+        "voice": "Z celé zdvořilostní věty přežilo jen jedno slovo, zbytek se ztratil cestou staletími.",
+        "image_prompt": "Fotorealistický snímek staré latinské rukopisné listiny s husím brkem, archivní osvětlení, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-jazyk-gruss-gott",
+    "country": "Rakousko",
+    "section": "Jazyk & slova",
+    "topic": "Pozdrav Grüß Gott",
+    "headline": "Pozdrav, který doslova žádá o boží požehnání",
+    "fact": "Tradiční jihoněmecký a rakouský pozdrav 'Grüß Gott' vznikl ze zkráceného 'grüß dich Gott', což doslova znamená přání, aby člověka pozdravil či požehnal Bůh.",
+    "source_url": "https://en.wikipedia.org/wiki/Gr%C3%BC%C3%9F_Gott",
+    "source_quote": "Historically, the verb grüßen in Middle High German meant both 'to greet' and 'to bless,' so the original sense was 'God bless you.'",
+    "voice": "Kdo to dnes řekne, netuší, že vlastně žádá nebesa o požehnání.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek horské vesnice v rakouských Alpách s kostelní věží, ranní slunce, bez lidí, bez textu, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "V obchodě i na horách se zdraví stejně",
+        "fact": "V Bavorsku a Rakousku se 'Grüß Gott' běžně používá místo neutrálního 'Guten Tag', a to jak v obchodech, tak i vysoko v horách mezi cizími lidmi.",
+        "source_url": "https://en.wikipedia.org/wiki/Gr%C3%BC%C3%9F_Gott",
+        "source_quote": "The greeting, along with its variants, has long been the most common greeting in Southern Germany and Austria, centered in Schwaben more than Baden or Bavaria.",
+        "voice": "Prodavačka i horský průvodce sáhnou po stejné frázi, i když se nikdy předtím neviděli.",
+        "image_prompt": "Fotorealistický snímek prodavače zdravícího zákazníka v malém rakouském obchodě, teplé denní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Náboženský pozdrav v sekulární době",
+        "fact": "I dnes 'Grüß Gott' běžně používají i ateisté a lidé jiného vyznání, ačkoli pozdrav má svůj původ ve středověké zbožnosti — jazyk si tak podržel náboženskou formulku dávno poté, co jí lidé přestali věnovat pozornost.",
+        "source_url": "https://en.wikipedia.org/wiki/Gr%C3%BC%C3%9F_Gott",
+        "source_quote": "Despite its religious origins, it is used by everyone—atheists, Catholics, and expats alike—as a secular sign of respect.",
+        "voice": "Slova zůstala zbožná, lidé kolem nich dávno zevšedněli.",
+        "image_prompt": "Fotorealistický snímek starého kostela uprostřed rakouské vesnice za soumraku, teplé světlo oken, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-jazyk-paradeiser",
+    "country": "Rakousko",
+    "section": "Jazyk & slova",
+    "topic": "Paradeiser a Erdapfel",
+    "headline": "Rajče a brambor jinými slovy než v Německu",
+    "fact": "Rakouská němčina používá pro rajče slovo 'Paradeiser' a pro brambor 'Erdapfel', zatímco spisovná němčina v Německu říká 'Tomate' a 'Kartoffel' — rozdíl uznaný Evropskou unií jako typicky rakouský výraz.",
+    "source_url": "https://de.wiktionary.org/wiki/Paradeiser",
+    "source_quote": "Die Bezeichnung „Paradeiser\" gilt als spezifisch österreichischer Ausdruck der deutschen Sprache im Rahmen der Europäischen Union.",
+    "voice": "V Rakousku si na talíř dáte 'jablko z ráje', v Německu obyčejné rajče.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Paradeiser jako 'jablko ráje'",
+        "fact": "Slovo 'Paradeiser' vzniklo ze staršího výrazu 'Paradeisapfel', tedy doslova 'jablko z ráje' — narážka na krásu zakázaného ovoce v biblickém ráji.",
+        "source_url": "https://de.wiktionary.org/wiki/Paradeiser",
+        "source_quote": "abgeleitet von der neuhochdeutschen älteren Form Paradeis „Paradies\", in Anlehnung an die Schönheit der verbotenen Frucht im Paradies",
+        "voice": "Kdo si dá k obědu paradajku, jí podle jména vlastně kousek ráje.",
+        "image_prompt": "Fotorealistický detailní snímek zralých červených rajčat na dřevěném trhovém stánku v Rakousku, ranní světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Slovník jako otisk staré rakouské identity",
+        "fact": "Slova jako 'Paradeiser' nebo 'Erdapfel' patří mezi takzvané austriacismy — výrazy, které si Rakousko po vstupu do Evropské unie prosadilo jako oficiálně uznanou variantu spisovné němčiny vedle té německé.",
+        "source_url": "https://de.wiktionary.org/wiki/Paradeiser",
+        "source_quote": "Die Bezeichnung „Paradeiser\" gilt als spezifisch österreichischer Ausdruck der deutschen Sprache im Rahmen der Europäischen Union.",
+        "voice": "I jazyk umí být diplomacie — Rakousko si obhájilo právo mluvit trochu jinak než Německo.",
+        "image_prompt": "Fotorealistický snímek rakouského venkovského trhu s bednami brambor a rajčat, cedulky s cenami, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-jidlo-wiener-schnitzel",
+    "country": "Rakousko",
+    "section": "Jídlo",
+    "topic": "Wiener Schnitzel",
+    "headline": "Telecí řízek chráněný rakouským zákonem",
+    "fact": "Rakouský zákon stanovuje, že pravý 'Wiener Schnitzel' musí být vždy z telecího masa; pokud je řízek vepřový, musí se prodávat pod jiným názvem, například 'Schnitzel Wiener Art'.",
+    "source_url": "https://en.wikipedia.org/wiki/Wiener_schnitzel",
+    "source_quote": "To avoid confusion, Austrian law requires that Wiener Schnitzel be made of veal.",
+    "voice": "Název si tu hlídá zákon stejně přísně jako recept babiččin.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek křupavého telecího řízku Wiener Schnitzel na talíři s citronem a bramborovým salátem, teplé restaurační osvětlení, 16:9",
+    "ll": [16.3738, 48.2082],
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept starší než legenda o polním maršálovi",
+        "fact": "Nejstarší zmínka o vídeňském řízku pochází z kuchařky vydané v roce 1831, tedy dřív, než vznikla legenda o polním maršálovi Radeckém, který měl recept přivézt z Itálie.",
+        "source_url": "https://en.wikipedia.org/wiki/Wiener_schnitzel",
+        "source_quote": "The designation Wiener Schnitzel first appeared in the 19th century, with the first known mention in a cookbook from 1831.",
+        "voice": "Legenda o slavném generálovi zní líp, jenže kuchařka byla starší než jeho tažení.",
+        "image_prompt": "Fotorealistický snímek staré rakouské kuchařské knihy z 19. století otevřené na receptu, teplé světlo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Italský recept, co se stal rakouskou vizitkou",
+        "fact": "Řízek má podle historiků kuchyně blízkého příbuzného v severoitalské 'cotoletta alla milanese' — podobně připravovaném pokrmu, který se do Vídně rozšířil přes propojení habsburské monarchie s italskými zeměmi.",
+        "source_url": "https://en.wikipedia.org/wiki/Wiener_schnitzel",
+        "source_quote": "Similarly prepared dishes include cotoletta alla milanese, schnitzel cordon bleu filled with ham and cheese, and Pariser Schnitzel.",
+        "voice": "Jídlo přišlo možná odjinud, ale jméno si nakonec vzalo po Vídni.",
+        "image_prompt": "Fotorealistický letecký snímek historického centra Vídně s vinoucí se řekou a věží katedrály svatého Štěpána, denní světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-jidlo-sachertorte",
+    "country": "Rakousko",
+    "section": "Jídlo",
+    "topic": "Sachertorte",
+    "headline": "Dort, který vymyslel šestnáctiletý učeň",
+    "fact": "Sachertorte vytvořil pro knížete Metternicha a jeho hosty v roce 1832 tehdy patnáctiletý nebo šestnáctiletý učeň Franz Sacher, který byl teprve ve druhém roce kuchařského učení.",
+    "source_url": "https://en.wikipedia.org/wiki/Sachertorte",
+    "source_quote": "at which point Sacher was 15 or 16 and in his second year of apprenticeship",
+    "voice": "Slavný dort světu dal učeň, který se ještě ani nevyučil.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tradičního čokoládového dortu Sachertorte s meruňkovou náplní na talíři, kavárenské prostředí, teplé světlo, 16:9",
+    "ll": [16.3699, 48.2038],
+    "levels": {
+      "cestovatel": {
+        "headline": "Boj o 'pravý' dort trval třicet let",
+        "fact": "O právo nazývat svůj výrobek 'Original Sacher-Torte' se vídeňský hotel Sacher soudil s cukrárnou Demel desítky let a spor definitivně skončil až v roce 1963.",
+        "source_url": "https://en.wikipedia.org/wiki/Sachertorte",
+        "source_quote": "The case ended in 1963, with the court siding with Hotel Sacher on ownership and with Demel on the number of layers.",
+        "voice": "O jméno dortu se soudili roky déle, než trvá jeho samotné upečení.",
+        "image_prompt": "Fotorealistický snímek historické kavárny Café Sacher ve Vídni zvenčí, cedule s nápisem, večerní osvětlení, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dort jako symbol vídeňské kavárenské kultury",
+        "fact": "Sachertorte se podává hlavně ve vídeňských kavárnách, jejichž kultura je od října 2011 zapsaná jako nehmotné kulturní dědictví v rakouském národním seznamu UNESCO.",
+        "source_url": "https://en.wikipedia.org/wiki/Viennese_coffee_house",
+        "source_quote": "Since October 2011, the 'Viennese Coffee House Culture' is listed as an 'Intangible Cultural Heritage' in the Austrian inventory of the 'National Agency for the Intangible Cultural Heritage', a part of UNESCO.",
+        "voice": "Dort by nebyl tím, čím je, bez kavárny, ve které se podává už přes sto let.",
+        "image_prompt": "Fotorealistický snímek interiéru tradiční vídeňské kavárny s mramorovými stolky a sametovými sedačkami, teplé světlo, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-jidlo-kaiserschmarrn",
+    "country": "Rakousko",
+    "section": "Jídlo",
+    "topic": "Kaiserschmarrn",
+    "headline": "Sladká 'trhanka' pojmenovaná po císaři",
+    "fact": "Název Kaiserschmarrn spojuje slova 'Kaiser' (císař) a 'Schmarren', což v rakouské a bavorské hantýrce znamená tak trochu nepořádek nebo nesmysl.",
+    "source_url": "https://en.wikipedia.org/wiki/Kaiserschmarrn",
+    "source_quote": "The name Kaiserschmarrn is a compound of the words Kaiser ('emperor') and Schmarren (a scrambled or shredded dish).",
+    "voice": "V názvu má nepořádek, na talíři je to ale žádaná pochoutka.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek talíře s trhaným sladkým palačinkovým dezertem Kaiserschmarrn poprášeným cukrem a s ovocným kompotem, teplé restaurační osvětlení, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pochoutka, co prý naštvala císařovnu Sisi",
+        "fact": "Podle populární, ale historicky nepotvrzené historky odmítla císařovna Alžběta tento moučník jako příliš vydatný, a císař František Josef I. na to reagoval slovy o 'šmarnci', co jim uvařil kuchař — odtud prý název.",
+        "source_url": "https://en.wikipedia.org/wiki/Kaiserschmarrn",
+        "source_quote": "Now let me see what 'Schmarren' our chef has cooked up.",
+        "voice": "Ať je historka pravdivá nebo ne, jméno dezertu se jí drží dodnes.",
+        "image_prompt": "Fotorealistický dobový snímek honosné císařské jídelny s podávaným moučníkem, svíčky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sladké jídlo jako hlavní chod, ne jen dezert",
+        "fact": "Kaiserschmarrn se v alpských oblastech Rakouska tradičně podává i jako vydatné hlavní jídlo na horských chatách, nejen jako závěrečný dezert.",
+        "source_url": "https://en.wikipedia.org/wiki/Kaiserschmarrn",
+        "source_quote": "Kaiserschmarrn is eaten like a dessert, or it can also be eaten for lunch at tourist places like mountainside restaurants and taverns in the Austrian Alps, as a filling meal.",
+        "voice": "Turista na horské chatě si tak dá k obědu vlastně dezert, a nikomu to nepřijde divné.",
+        "image_prompt": "Fotorealistický snímek horské chaty v rakouských Alpách s vydatnou porcí Kaiserschmarrn na stole, výhled na hory oknem, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-historie-vidensky-kongres",
+    "country": "Rakousko",
+    "section": "Historie",
+    "topic": "Vídeňský kongres",
+    "headline": "Kongres, kde jednalo přes 200 evropských států",
+    "fact": "Vídeňský kongres probíhal od září 1814 do června 1815 a zúčastnilo se ho zastoupení více než 200 evropských států a knížectví, které měly po Napoleonových válkách nově uspořádat mapu kontinentu.",
+    "source_url": "https://en.wikipedia.org/wiki/Congress_of_Vienna",
+    "source_quote": "Virtually every state in Europe had a delegation in Vienna – more than 200 states and princely houses were represented at the Congress.",
+    "voice": "Diplomaté tančili na plesech večer a přerovnávali hranice Evropy přes den.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek honosného sálu vídeňského Hofburgu s diplomaty v dobových oděvech u velkého stolu s mapou Evropy, svíčky, 16:9",
+    "ll": [16.3660, 48.2064],
+    "levels": {
+      "cestovatel": {
+        "headline": "Metternich řídil jednání z vlastního města",
+        "fact": "Kongresu předsedal rakouský státník Klemens von Metternich, a právě proto se celá velká diplomatická akce odehrávala ve Vídni, nikoli v žádné z ostatních zúčastněných velmocí.",
+        "source_url": "https://en.wikipedia.org/wiki/Congress_of_Vienna",
+        "source_quote": "The Congress was chaired by Austrian statesman Klemens von Metternich (Duke Metternich)",
+        "voice": "Kdo řídil schůzku, ten si vybral i město, kde se bude konat.",
+        "image_prompt": "Fotorealistický portrét rakouského státníka Klemense von Metternicha v dobovém obleku, honosný interiér, 16:9"
+      },
+      "kartograf": {
+        "headline": "Snaha nastolit rovnováhu sil místo pomsty",
+        "fact": "Cílem kongresu nebylo jen obnovit staré hranice před Napoleonem, ale hlavně vytvořit dlouhodobý mírový plán pro Evropu, který by vyvážil sílu jednotlivých velmocí a vydržel řadu dalších desetiletí.",
+        "source_url": "https://en.wikipedia.org/wiki/Congress_of_Vienna",
+        "source_quote": "The objective of the Congress was to provide a long-term peace plan for Europe by settling critical issues arising from the French Revolutionary Wars and the Napoleonic Wars through negotiation.",
+        "voice": "Místo dalšího vítěze chtěli diplomaté hlavně systém, který vydrží.",
+        "image_prompt": "Fotorealistický snímek staré ručně kreslené mapy Evropy z roku 1815 s vyznačenými novými hranicemi, archivní tón, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-historie-vyrovnani-1867",
+    "country": "Rakousko",
+    "section": "Historie",
+    "topic": "Rakousko-uherské vyrovnání",
+    "headline": "Jedna říše, najednou dvě vlády",
+    "fact": "Rakousko-uherské vyrovnání z roku 1867 rozdělilo habsburskou monarchii na dvě formálně samostatné části s vlastními vládami a parlamenty, spojené jen společným panovníkem a několika ministerstvy.",
+    "source_url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+    "source_quote": "established the dual monarchy of Austria-Hungary, which was a military and diplomatic alliance of the two sovereign states.",
+    "voice": "Na mapě zůstala jedna říše, ve skutečnosti v ní fungovaly dvě vlády vedle sebe.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek historické budovy uherského parlamentu v Budapešti za soumraku, řeka Dunaj v popředí, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Občan buď rakouský, nebo uherský, nikdy obojí",
+        "fact": "Po vyrovnání neexistovalo jednotné občanství celé monarchie — každý obyvatel byl buď občanem rakouské, nebo uherské části, nikdy obojí zároveň.",
+        "source_url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+        "source_quote": "There was no common citizenship in Austria–Hungary: one was either an Austrian citizen or a Hungarian citizen, never both.",
+        "voice": "I obyčejný doklad tehdy prozrazoval, na které straně nové hranice člověk vlastně patřil.",
+        "image_prompt": "Fotorealistický snímek staré rakousko-uherské úřední listiny z 19. století, archivní tón, 16:9"
+      },
+      "kartograf": {
+        "headline": "Korunovace v Budapešti pár dní po podpisu",
+        "fact": "Necelé dva týdny po podpisu vyrovnání se František Josef I. nechal 8. června 1867 korunovat uherským králem přímo v budapešťském kostele Matyáše — symbolické gesto, které mělo Uhrům dokázat jejich novou rovnoprávnost s Rakouskem.",
+        "source_url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+        "source_quote": "Coronation of Francis Joseph I and Elisabeth Amalie at Matthias Church, Buda, 8 June 1867.",
+        "voice": "Podpis na papíře doplnila korunovace naživo, ať všichni vidí, že vyrovnání myslí vážně.",
+        "image_prompt": "Fotorealistický snímek korunovačního obřadu v kostele Matyáše v Budapešti, honosné dobové roucho, svíčky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "at-historie-anschluss",
+    "country": "Rakousko",
+    "section": "Historie",
+    "topic": "Anšlus 1938",
+    "headline": "Konec samostatnosti za jediný den",
+    "fact": "Nacistické Německo připojilo Rakousko 12. března 1938 takzvaným anšlusem a ukončilo tak jeho samostatnou státní existenci až do konce druhé světové války.",
+    "source_url": "https://en.wikipedia.org/wiki/Anschluss",
+    "source_quote": "the annexation of the Federal State of Austria into Nazi Germany on 12 March 1938.",
+    "voice": "Ráno byla ještě samostatná země, večer už jen součást sousedního státu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický archivní snímek vídeňského náměstí Heldenplatz zaplněného davem v roce 1938, historický tón, 16:9",
+    "ll": [16.3654, 48.2075],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hitler překročil hranice ve svém rodném městě",
+        "fact": "Německá vojska vstoupila do Rakouska přes hraniční přechod v Braunau am Inn, tedy přímo v místě, kde se Adolf Hitler narodil.",
+        "source_url": "https://en.wikipedia.org/wiki/Anschluss",
+        "source_quote": "That afternoon, Hitler, riding in a car, crossed the border at his birthplace, Braunau am Inn.",
+        "voice": "Vrátil se do rodného města jako dobyvatel, ne jako člověk, co se vrací domů.",
+        "image_prompt": "Fotorealistický snímek malého rakouského pohraničního města Braunau am Inn nad řekou Inn, historická architektura, zataženo, 16:9"
+      },
+      "kartograf": {
+        "headline": "Referendum se schválením skoro sto procent",
+        "fact": "Následné hlasování o připojení k Německu 10. dubna 1938 skončilo podle oficiálních čísel schválením 99,7 procenta hlasujících — výsledek typický pro plebiscity konané už pod přímou kontrolou okupační moci.",
+        "source_url": "https://en.wikipedia.org/wiki/Anschluss",
+        "source_quote": "A plebiscite was held on 10 April, resulting in 99.7% approval.",
+        "voice": "Číslo těsně pod stoprocentní shodou obvykle neznamená svobodnou volbu, ale kontrolu nad volbou.",
+        "image_prompt": "Fotorealistický archivní snímek zaplněné vídeňské ulice s propagandistickými plakáty v roce 1938, historický tón, 16:9"
+      }
+    }
+  }
+]

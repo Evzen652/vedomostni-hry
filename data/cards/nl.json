@@ -1,0 +1,867 @@
+[
+  {
+    "id": "nl-mista-amsterodamske-kanaly",
+    "country": "Nizozemsko",
+    "section": "Místa",
+    "topic": "Amsterodamské kanály",
+    "headline": "Město propletené sítí vodních kanálů",
+    "fact": "Amsterodamské kanály měří dohromady přes 100 kilometrů a tvoří pás kanálů zvaný grachtengordel, který je zapsán na seznamu světového dědictví UNESCO.",
+    "source_url": "https://cs.wikipedia.org/wiki/Amsterodam",
+    "source_quote": "Délka amsterdamských kanálů přesahuje 100 km.",
+    "voice": "Ulice tu jsou často jen druhá volba — hlavní cesty vedou po vodě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide-angle photo of Amsterdam's historic canal ring at golden hour, narrow canal houses reflected in calm water, houseboats along the bank, natural evening light, no text, 16:9",
+    "ll": [4.9041, 52.3676],
+    "tags": ["regionalni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přes tisíc dvě stě mostů bez jediné lodi",
+        "fact": "Amsterodamské kanály protíná více než 1200 mostů, takže se dá projít napříč celým historickým centrem, aniž by člověk musel nastoupit na loď.",
+        "source_url": "https://cs.wikipedia.org/wiki/Amsterodam",
+        "source_quote": "spojeny více než 1200 mosty.",
+        "voice": "Kdo tu hledá zkratku, hledá ji mezi domy nad vodou, ne po chodníku.",
+        "image_prompt": "Photorealistic photo of a narrow arched bridge over an Amsterdam canal, bicycles parked along the railing, gabled 17th-century houses lining the water, soft daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tři půlkruhy kolem středověkého jádra",
+        "fact": "Tři hlavní kanály Prinsengracht, Herengracht a Keizersgracht obepínají historické jádro Amsterodamu jako soustředné půlkruhy — plán z doby nizozemského zlatého věku, kdy město cíleně rozšiřovalo svou plochu do bažinaté krajiny.",
+        "source_url": "https://cs.wikipedia.org/wiki/Amsterodam",
+        "source_quote": "Tři hlavní kanály jsou Prinsengracht, Herengracht a Keizersgracht.",
+        "voice": "Město nerostlo náhodně do stran, ale podle přesně navrženého vodního plánu.",
+        "image_prompt": "Photorealistic aerial photo of Amsterdam's concentric canal rings from above, historic city center, canal houses and bridges forming a semi-circular pattern, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-mista-kinderdijk",
+    "country": "Nizozemsko",
+    "section": "Místa",
+    "topic": "Větrné mlýny Kinderdijk",
+    "headline": "Mlýny, co odčerpávaly zemi z moře",
+    "fact": "U vesnice Kinderdijk stojí soustava 19 větrných mlýnů postavených kolem roku 1740, které odváděly vodu z okolních polderů pryč.",
+    "source_url": "https://en.wikipedia.org/wiki/Kinderdijk",
+    "source_quote": "a system of 19 windmills was built around 1740",
+    "voice": "Lopatky mlýnů se točily, aby země pod nimi vůbec mohla zůstat suchá.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide photo of the Kinderdijk windmills in the Netherlands at sunset, row of historic windmills along a canal, golden light reflecting on water, no text, 16:9",
+    "ll": [4.6321, 51.8825],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Největší shluk starých mlýnů v zemi",
+        "fact": "Mlýny v Kinderdijku tvoří největší soustředěnou skupinu starých větrných mlýnů v celém Nizozemsku.",
+        "source_url": "https://en.wikipedia.org/wiki/Kinderdijk",
+        "source_quote": "This group of mills is the largest concentration of old windmills in the Netherlands.",
+        "voice": "Turisté dnes fotí to, co bylo kdysi jen tvrdou dřinou proti vodě.",
+        "image_prompt": "Photorealistic close-up photo of a traditional Dutch windmill at Kinderdijk with rotating sails, green polder landscape and canal in background, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Mlýny jako stupně vodního výtahu",
+        "fact": "Mlýny v Kinderdijku fungovaly jako vícestupňový systém — menší mlýny přečerpávaly vodu do mezinádrže a větší ji odtud posílaly dál do řeky, což ukazuje, jak důmyslně museli Nizozemci řešit odvod vody z polderů ležících pod úrovní okolních řek.",
+        "source_url": "https://en.wikipedia.org/wiki/Kinderdijk",
+        "voice": "Voda tu musela stoupat schod po schodu, protože sama od sebe by tekla špatným směrem.",
+        "image_prompt": "Photorealistic aerial photo of the Kinderdijk polder landscape, network of canals, reservoirs and windmills seen from above, overcast sky, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-mista-rotterdam",
+    "country": "Nizozemsko",
+    "section": "Místa",
+    "topic": "Rotterdam",
+    "headline": "Přístav, co si po troskách vymyslel nový tvar",
+    "fact": "Rotterdam je s obratem zboží největším přístavem Evropy, i když v roce 2004 jej jako největší přístav světa předstihla Šanghaj.",
+    "source_url": "https://cs.wikipedia.org/wiki/Rotterdam",
+    "source_quote": "Jedná se také o největší přístav Evropy (do roku 2004, kdy ho předstihla Šanghaj, i světa)",
+    "voice": "Lodě tu proudí dnem i nocí, i když už dávno nejsou největší na světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide photo of the Rotterdam skyline at dusk, modern high-rise buildings and the Erasmus bridge over the Nieuwe Maas river, city lights reflecting on water, no text, 16:9",
+    "ll": [4.4777, 51.9244],
+    "tags": ["socioekonomicka-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Centrum srovnané se zemí za devadesát minut",
+        "fact": "Německé letecké bombardování v květnu 1940 srovnalo za 90 minut se zemí téměř celé historické centrum Rotterdamu a zabilo kolem 900 lidí.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rotterdam",
+        "source_quote": "Luftwaffe město bombardovala 90 minut a téměř všechny budovy v historickém jádru byly srovnány se zemí. Zemřelo přibližně 900 lidí.",
+        "voice": "Během jediného odpoledne zmizelo centrum, které se stavělo staletí.",
+        "image_prompt": "Photorealistic archival-style photo of Rotterdam's city center in ruins after a WWII bombing, rubble and damaged buildings, overcast light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nové město místo obnovené staré čtvrti",
+        "fact": "Po válce se Rotterdam na rozdíl od většiny evropských měst nerozhodl obnovit zničené staré centrum v původní podobě, ale zastavěl je moderními výškovými budovami.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rotterdam",
+        "source_quote": "Proto je střed města od roku 1945 zastavován moderními výškovými budovami.",
+        "voice": "Zatímco jiná města po válce hledala cestu zpátky, Rotterdam šel rovnou dopředu.",
+        "image_prompt": "Photorealistic photo of contemporary architecture in Rotterdam's city center, cube houses and modern skyscrapers contrasted with the harbor, daytime, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-priroda-vaddenske-more",
+    "country": "Nizozemsko",
+    "section": "Příroda",
+    "topic": "Vaddenské moře",
+    "headline": "Moře, které dvakrát denně zmizí",
+    "fact": "Vaddenské moře pokrývá plochu asi 10 000 km² mělkých slaných bahnitých plání mezi pevninou a řetězem ostrovů; nizozemská a německá část je od roku 2009 na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Wadden_Sea",
+    "source_quote": "In 2009, the Dutch and German parts of the Wadden Sea were inscribed on UNESCO's World Heritage List and the Danish part was added in June 2014.",
+    "voice": "Ráno je tu širé bahno k procházce, večer stejné místo zaplaví moře.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide photo of the Wadden Sea tidal flats at low tide, wet mudflats stretching to the horizon under a dramatic sky, birds feeding in shallow water, no text, 16:9",
+    "ll": [5.95, 53.45],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bahnem pěšky až na ostrov",
+        "fact": "Za odlivu je možné přejít po bahně z pevniny na některé z Vaddenských ostrovů pěšky — tradiční turistice se tu říká wadlopen a vede po dně, které je jindy pod mořem.",
+        "source_url": "https://en.wikipedia.org/wiki/Wadden_Sea",
+        "voice": "Cesta, kterou dnes přejdeš suchou nohou, bude za pár hodin zase celá pod vodou.",
+        "image_prompt": "Photorealistic photo of people mudflat walking (wadlopen) across the Wadden Sea at low tide, wide open mudflat landscape, distant island silhouette, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pobřeží, které formuje i sám člověk",
+        "fact": "Vaddenské moře patří mezi nejvíce lidskou činností pozměněná pobřežní prostředí na světě — staletí bouří a stavby hrází z něj udělaly krajinu, kterou už netvoří jen příroda.",
+        "source_url": "https://en.wikipedia.org/wiki/Wadden_Sea",
+        "source_quote": "the most human-altered habitats on the planet",
+        "voice": "Příroda tu maluje pobřeží každý den nanovo, ale člověk jí do obrazu léta přimalovává vlastní čáry.",
+        "image_prompt": "Photorealistic aerial photo of the Wadden Sea coastline showing tidal channels, sandbanks and a distant dike, overcast light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-priroda-poldery",
+    "country": "Nizozemsko",
+    "section": "Příroda",
+    "topic": "Poldery pod hladinou moře",
+    "headline": "Země, která si část území sama vysušila",
+    "fact": "Zhruba 26 procent rozlohy Nizozemska leží pod úrovní hladiny moře; tuto část země chrání před zaplavením síť hrází, kanálů a čerpacích stanic.",
+    "source_url": "https://en.wikipedia.org/wiki/Netherlands",
+    "source_quote": "26% of which is below sea level",
+    "voice": "Kus země, po kterém tu lidé chodí, by bez pumpování vody dávno patřil moři.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide photo of a Dutch polder landscape below sea level, flat green fields criss-crossed by drainage canals, a dike in the distance, soft daylight, no text, 16:9",
+    "ll": [4.6167, 52.0333],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nová pole tam, kde bylo dřív jezero",
+        "fact": "Většina nizozemských polderů vznikla vysoušením bažin a jezer, přičemž toto systematické získávání nové půdy z vody začalo už ve 14. století.",
+        "source_url": "https://en.wikipedia.org/wiki/Netherlands",
+        "source_quote": "Most of the areas below sea level, known as polders, are the result of land reclamation that began in the 14th century.",
+        "voice": "Farmář na takovém poli sklízí úrodu tam, kde jeho předci ještě lovili ryby.",
+        "image_prompt": "Photorealistic photo of a Dutch farmer's field on reclaimed polder land, drainage ditches, distant windmill, golden afternoon light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina navržená, ne jen nalezená",
+        "fact": "Nizozemská krajina pod úrovní moře je do značné míry umělá — místo aby se země vzdala podmáčeného území, obehnala ho hrázemi a vodu z něj systematicky odčerpávala, čímž vytvořila zcela nový vzor vztahu člověka k půdě.",
+        "source_url": "https://en.wikipedia.org/wiki/Netherlands",
+        "voice": "Jinde krajinu formuje příroda, tady si ji lidé sami nakreslili na rýsovacím prkně.",
+        "image_prompt": "Photorealistic aerial photo of geometric Dutch polder fields separated by straight canals, patchwork pattern seen from above, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-priroda-hoge-veluwe",
+    "country": "Nizozemsko",
+    "section": "Příroda",
+    "topic": "Národní park De Hoge Veluwe",
+    "headline": "Divočina s galerií uprostřed",
+    "fact": "Národní park De Hoge Veluwe má rozlohu asi 55 km² vřesovišť, písečných dun a lesa, kde volně žijí jeleni, divoká prasata i vlci.",
+    "source_url": "https://en.wikipedia.org/wiki/Hoge_Veluwe_National_Park",
+    "source_quote": "approximately 55 km2 (14,000 acres; 21 sq mi) in area",
+    "voice": "Uprostřed volné divočiny najednou narazíš na sbírku světového umění.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide photo of the Hoge Veluwe National Park landscape, sandy heathland and pine forest, a red deer grazing in the distance, early morning light, no text, 16:9",
+    "ll": [5.8333, 52.0833],
+    "tags": ["fyzicka-geografie", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přes dvě stě jelenů na jednom území",
+        "fact": "Na jaře v parku žije kolem 200 jelenů evropských a k nim se přidávají srnci, divoká prasata i málopočetná smečka vlků.",
+        "source_url": "https://en.wikipedia.org/wiki/Hoge_Veluwe_National_Park",
+        "source_quote": "200 red deer",
+        "voice": "Zvíře, které jinde v Evropě lidé sotva zahlédnou, tu klidně přejde cestu autu.",
+        "image_prompt": "Photorealistic photo of a herd of red deer grazing in the Hoge Veluwe heathland at dawn, misty light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Soukromé loviště, co se stalo národním pokladem",
+        "fact": "Park založil na počátku 20. století jako soukromé loviště podnikatel Anton Kröller s manželkou Helene Kröller-Müller, která sem později umístila i svou rozsáhlou sbírku obrazů.",
+        "source_url": "https://en.wikipedia.org/wiki/Hoge_Veluwe_National_Park",
+        "source_quote": "The park was established by the businessman Anton Kröller and his wife Helene Kröller-Müller as a private estate in 1909",
+        "voice": "Co začalo jako soukromá zábava boháčů, dnes patří všem, kdo si koupí vstupenku.",
+        "image_prompt": "Photorealistic photo of the Kröller-Müller Museum building surrounded by a sculpture garden and forest in Hoge Veluwe park, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-lide-vilem-oransky",
+    "country": "Nizozemsko",
+    "section": "Lidé",
+    "topic": "Vilém I. Oranžský",
+    "headline": "Otec vlasti, co ji nikdy neviděl svobodnou",
+    "fact": "Vilém I. Oranžský vedl vzpouru nizozemských provincií proti španělské vládě; roku 1584 ho v Delftu zavraždil fanatický stoupenec Španělska, dřív než mohl vidět nizozemskou nezávislost dovršenou.",
+    "source_url": "https://cs.wikipedia.org/wiki/Vil%C3%A9m_I._Oran%C5%BEsk%C3%BD",
+    "source_quote": "Zavraždil ho fanatický stoupenec katolického Španělska Balthasar Gérard v Delftu.",
+    "voice": "Vedl svůj lid k svobodě a nedožil se dne, kdy ji lid slavil.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style portrait photo of a 16th-century Dutch nobleman in a dark velvet doublet with a ruff collar, dim studio lighting, no text, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přísaha na zámku daleko od domova",
+        "fact": "Vilém složil v roce 1568 na zámku Dillenburg v Německu slib nizozemské delegaci, že podpoří jejich boj za svobodu proti Španělsku.",
+        "source_url": "https://cs.wikipedia.org/wiki/Vil%C3%A9m_I._Oran%C5%BEsk%C3%BD",
+        "source_quote": "14. 4. 1568 složil Vilém na zámku Dillenburg slavný slib delegaci Nizozemců, že je podpoří v jejich boji za svobodu.",
+        "voice": "Slib pronesl v cizím zámku, ale platit měl pro celou jednu zemi.",
+        "image_prompt": "Photorealistic photo of Dillenburg castle exterior in Germany, historic stone fortress, overcast sky, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vzpoura, co dala vzniknout nové mapě",
+        "fact": "Boj vedený Vilémem Oranžským rozdělil nížiny na severní protestantské provincie, z nichž později vzniklo samostatné Nizozemsko, a jižní část zůstávající pod cizí nadvládou — základ hranice, která odděluje Nizozemsko a Belgii dodnes.",
+        "source_url": "https://cs.wikipedia.org/wiki/Vil%C3%A9m_I._Oran%C5%BEsk%C3%BD",
+        "voice": "Jedna vzpoura, a najednou vznikla hranice, která na mapě drží dodnes.",
+        "image_prompt": "Photorealistic old-map style photo of the Low Countries in the 16th century, hand-drawn borders and towns, warm archival tone, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-lide-leeuwenhoek",
+    "country": "Nizozemsko",
+    "section": "Lidé",
+    "topic": "Antoni van Leeuwenhoek",
+    "headline": "Obchodník s látkami, co objevil neviditelný svět",
+    "fact": "Antoni van Leeuwenhoek si sám brousil skleněné čočky pro mikroskopy, které dosahovaly zvětšení až 275krát, a jimi pozoroval bakterie i další drobné organismy.",
+    "source_url": "https://cs.wikipedia.org/wiki/Antoni_van_Leeuwenhoek",
+    "source_quote": "zvětšení až 275×",
+    "voice": "Díval se do skla broušeného vlastníma rukama a uviděl svět, o kterém nikdo netušil, že existuje.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical portrait photo of a 17th-century Dutch scientist examining a handheld brass microscope by candlelight, no text, 16:9",
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Muž, co popsal krev tekoucí vlásečnicemi",
+        "fact": "Van Leeuwenhoek jako první popsal, že lidská krev proudí tenkými cévkami zvanými kapiláry, a v roce 1703 objevil i sladkovodní polypy.",
+        "source_url": "https://cs.wikipedia.org/wiki/Antoni_van_Leeuwenhoek",
+        "source_quote": "jako prvnímu člověku se mu podařilo objevit, že lidská krev protéká tenkými cévkami (kapilárami), a popsat krevní buňky",
+        "voice": "To, co bylo pro ostatní neviditelné, on dokázal nakreslit tužkou do deníku.",
+        "image_prompt": "Photorealistic macro-style photo of a 17th-century glass microscope lens on a wooden desk, sunlight streaming through a window, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obchodník, co se dostal mezi vědeckou elitu",
+        "fact": "Leeuwenhoek neměl univerzitní vzdělání ani neuměl latinsky, přesto ho později přijala mezi své členy Královská společnost v Londýně — ukázka, jak i amatérský bádatel mohl v tehdejší Evropě proniknout do vědecké elity.",
+        "source_url": "https://cs.wikipedia.org/wiki/Antoni_van_Leeuwenhoek",
+        "voice": "Bez diplomu, jen s trpělivostí a dobrou čočkou, se dostal mezi nejváženější vědce doby.",
+        "image_prompt": "Photorealistic photo of an old leather-bound scientific journal open on a wooden table with hand-drawn microscopic illustrations, warm candlelight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-lide-anne-frankova",
+    "country": "Nizozemsko",
+    "section": "Lidé",
+    "topic": "Anne Franková",
+    "headline": "Deník, který přežil skrýš i válku",
+    "fact": "Anne Franková se s rodinou skrývala před nacisty v zadním traktu domu na amsterodamské Prinsengracht a deník, který si tam psala, později vyšel knižně po válce.",
+    "source_url": "https://cs.wikipedia.org/wiki/Anne_Frankov%C3%A1",
+    "source_quote": "Vchod do zadního traktu byl později zakryt regálem s šanony.",
+    "voice": "Psala jen sama pro sebe, a nakonec promluvila za miliony mlčících.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a hidden narrow staircase behind a bookshelf in an old Amsterdam canal house, dim interior light, no text, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zatčení jednoho srpnového rána",
+        "fact": "Ráno 4. srpna 1944 objevila nacistická policie skrýš rodiny Frankových a všechny obyvatele domu na Prinsengracht zatkla.",
+        "source_url": "https://cs.wikipedia.org/wiki/Anne_Frankov%C3%A1",
+        "source_quote": "Ráno 4. srpna 1944 vnikly do zadního traktu jednotky zelené policie.",
+        "voice": "Přes dva roky ticha stačilo jedno ráno, aby všechno skončilo.",
+        "image_prompt": "Photorealistic photo of an Amsterdam canal-side building exterior with a rotating bookcase entrance, historic architecture, overcast daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jeden příběh mezi statisíci umlčenými",
+        "fact": "Anne Franková zemřela v koncentračním táboře Bergen-Belsen na počátku roku 1945, jen několik týdnů před osvobozením tábora — její deník patří k mála dochovaným osobním svědectvím z tohoto období.",
+        "source_url": "https://cs.wikipedia.org/wiki/Anne_Frankov%C3%A1",
+        "source_quote": "Anne Franková zemřela v koncentračním táboře Bergen-Belsen v únoru nebo březnu 1945.",
+        "voice": "Přežila skrýš, válku skoro přežila taky — chybělo pár týdnů.",
+        "image_prompt": "Photorealistic somber photo of a memorial site with stones and a name plaque at a former concentration camp, overcast winter light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-kultura-sinterklaas",
+    "country": "Nizozemsko",
+    "section": "Kultura & tradice",
+    "topic": "Sinterklaas",
+    "headline": "Biskup, který každý listopad připlouvá lodí",
+    "fact": "Sinterklaas podle tradice každý rok v polovině listopadu připlouvá parníkem ze Španělska a dětem nadílí dárky večer 5. prosince.",
+    "source_url": "https://en.wikipedia.org/wiki/Sinterklaas",
+    "source_quote": "On the evening of 5 December, parents, family, friends or acquaintances pretend to act on behalf of 'Sinterklaas'",
+    "voice": "Než přijdou dárky, celá země napjatě sleduje v televizi, jak k ní připlouvá loď z jihu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a festive Dutch harbor scene with a traditional steamboat arrival, crowds waving on the quay, decorative bunting, daylight, no text, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Postava, co dala vzniknout Santa Clausovi",
+        "fact": "Nizozemští osadníci přenesli postavu Sinterklaase do Severní Ameriky, kde se z ní během 19. století vyvinula dnešní podoba Santa Clause.",
+        "source_url": "https://en.wikipedia.org/wiki/Sinterklaas",
+        "source_quote": "Sinterklaas is the basis for the North American figure of Santa Claus",
+        "voice": "Než dostal červený kabát a soby, byl to biskup na bílém koni.",
+        "image_prompt": "Photorealistic photo of a traditional Sinterklaas figure in bishop's robes with a tall mitre riding a white horse through a Dutch town square, festive crowd, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Svátek, který dorazil s osadníky do Ameriky",
+        "fact": "Sinterklaasova tradice se do New Yorku, dřívějšího Nového Amsterodamu, dostala s nizozemskými kolonisty, což ukazuje, jak obchodní síť Nizozemska šířila po světě i drobné kulturní zvyky.",
+        "source_url": "https://en.wikipedia.org/wiki/Sinterklaas",
+        "voice": "Zvyk z jednoho přístavního města tak doputoval přes oceán a proměnil se ve svátek pro celý kontinent.",
+        "image_prompt": "Photorealistic historical-style photo of a 17th-century Dutch colonial harbor town street, sailing ships in the background, warm light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-kultura-den-krale",
+    "country": "Nizozemsko",
+    "section": "Kultura & tradice",
+    "topic": "Den krále",
+    "headline": "Den, kdy se celá země obarví oranžově",
+    "fact": "Den krále se slaví 27. dubna na počest narozenin krále Viléma Alexandra a od roku 2014 nahradil dřívější Den královny.",
+    "source_url": "https://en.wikipedia.org/wiki/King%27s_Day",
+    "source_quote": "Celebrated on 27 April (or, if that is a Sunday, on the 26th)",
+    "voice": "Barva rodu na jeden den zaplaví ulice tak, že nikdo nemusí říkat, komu se to slaví.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a crowded Dutch street festival on King's Day, people dressed in orange clothing, flea market stalls along a canal, sunny day, no text, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Den, kdy může prodávat kdokoli na ulici",
+        "fact": "O Dni krále nizozemská vláda dovoluje komukoli prodávat na ulici bez povolení a bez placení daně z přidané hodnoty, takže se z chodníků na jeden den stane obří bleší trh.",
+        "source_url": "https://en.wikipedia.org/wiki/King%27s_Day",
+        "source_quote": "the Dutch government permits sales on the street without a permit and without the payment of value added tax",
+        "voice": "Na jeden den může kdokoliv rozprostřít deku na chodník a stát se prodavačem.",
+        "image_prompt": "Photorealistic photo of a Dutch flea market on King's Day, people selling secondhand items on blankets along a street, orange decorations, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Svátek, co si zachoval datum jiné královny",
+        "fact": "Pozdní dubnové datum svátku se drží od roku 1949, kdy začalo Nizozemsko slavit narozeniny královny Juliany 30. dubna — dnešní král slaví jen o tři dny dřív.",
+        "source_url": "https://en.wikipedia.org/wiki/King%27s_Day",
+        "source_quote": "from 1949 onwards Koninginnedag was on her birthday",
+        "voice": "Datum svátku dnes patří jinému panovníkovi, než pro kterého ho kdysi vybrali.",
+        "image_prompt": "Photorealistic photo of a lively street celebration scene in a Dutch town with bunting and flags, festive daytime atmosphere, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-kultura-jedenact-mest",
+    "country": "Nizozemsko",
+    "section": "Kultura & tradice",
+    "topic": "Jízda jedenácti měst",
+    "headline": "Bruslařský závod, co se koná jen když příroda dovolí",
+    "fact": "Elfstedentocht je téměř 200 kilometrů dlouhá bruslařská trasa po zamrzlých kanálech mezi jedenácti frískými městy, která se za posledních padesát let uskutečnila jen třikrát, naposledy v roce 1997.",
+    "source_url": "https://en.wikipedia.org/wiki/Elfstedentocht",
+    "source_quote": "In the past 50 years, the Elfstedentocht has taken place only three times, most recently in 1997.",
+    "voice": "Trasa čeká roky nehybně, než jí konečně mráz dovolí ožít.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide photo of hundreds of ice skaters racing along a frozen canal through a Frisian village, spectators lining the banks, winter daylight, no text, 16:9",
+    "ll": [5.7996, 53.2012],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Led musí být silný přesně na dlaň",
+        "fact": "Závod se smí odstartovat jedině tehdy, když je led po celé trase silný alespoň 15 centimetrů, což se v posledních desetiletích kvůli teplejším zimám daří čím dál vzácněji.",
+        "source_url": "https://en.wikipedia.org/wiki/Elfstedentocht",
+        "source_quote": "is held at most once a year, only when the natural ice along the entire course is at least 15 centimetres (6 in) thick",
+        "voice": "O síle ledu tu nerozhoduje kalendář, ale jenom teploměr.",
+        "image_prompt": "Photorealistic close-up photo of thick clear ice on a frozen Dutch canal, skate blade marks on the surface, cold winter light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Trasa spojující celý region jedním obloukem",
+        "fact": "Elfstedentocht propojuje jedenáct historických frískych měst do jedné okružní trasy, což z ní dělá symbol regionální identity Frísů, podobně jako u jiných tradičních vytrvalostních závodů vázaných na konkrétní kraj.",
+        "source_url": "https://en.wikipedia.org/wiki/Elfstedentocht",
+        "voice": "Závod nespojuje jen brusle a led, ale i pocit sounáležitosti celého kraje.",
+        "image_prompt": "Photorealistic aerial photo of the Frisian countryside with a network of frozen canals connecting small towns, winter landscape, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-umeni-rembrandt",
+    "country": "Nizozemsko",
+    "section": "Umění",
+    "topic": "Rembrandt van Rijn",
+    "headline": "Malíř, co skončil bez peněz i domu",
+    "fact": "Rembrandt vytvořil za svůj život přibližně 600 obrazů, téměř 400 mědirytin a 2000 kreseb, přesto v roce 1657 zbankrotoval a musel prodat vlastní sbírku i dům.",
+    "source_url": "https://cs.wikipedia.org/wiki/Rembrandt_van_Rijn",
+    "source_quote": "Zhotovil přibližně 600 maleb, téměř 400 leptů a 2000 kreseb.",
+    "voice": "Maloval bohatství jiných lidí a nakonec přišel o vlastní.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo styled like a 17th-century Dutch master painting scene, dramatic chiaroscuro lighting on an artist's studio with easel and oil paints, no text, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obraz tak slavný, že dal jméno celé noci",
+        "fact": "Rembrandtův obraz z roku 1642, dnes známý jako Noční hlídka, patří k nejslavnějším dílům celého nizozemského zlatého věku.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rembrandt_van_Rijn",
+        "source_quote": "Obrovské plátno z roku 1642 je v dějinách umění známo pod názvem Noční hlídka.",
+        "voice": "Jméno mu dala tma na povrchu obrazu, ne děj, který ve skutečnosti zobrazuje.",
+        "image_prompt": "Photorealistic photo of a large dark oil painting in an ornate frame hanging in a museum hall, dramatic lighting, visitors silhouetted in the foreground, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umělec, co padl s celým trhem",
+        "fact": "Rembrandtův bankrot souvisel s širší finanční krizí, která zasáhla okruh jeho věřitelů — připomínka, že i uznávaný umělec zůstává závislý na hospodářské situaci města, ve kterém žije a prodává svá díla.",
+        "source_url": "https://cs.wikipedia.org/wiki/Rembrandt_van_Rijn",
+        "source_quote": "Příchod finanční krize, která zničila okruh Rembrandtových věřitelů, znamenala umělcův bankrot.",
+        "voice": "Talent ho neochránil před tím, co se dělo s penězi kolem něj.",
+        "image_prompt": "Photorealistic photo of a 17th-century Amsterdam merchant house exterior, canal-side architecture, overcast light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-umeni-van-gogh",
+    "country": "Nizozemsko",
+    "section": "Umění",
+    "topic": "Vincent van Gogh",
+    "headline": "Malíř devíti set obrazů, co prodal jediný",
+    "fact": "Vincent van Gogh namaloval za pouhých deset let tvůrčí kariéry kolem 900 obrazů a 1100 kreseb, ale za svého života se mu podařilo prodat jen jeden jediný obraz.",
+    "source_url": "https://cs.wikipedia.org/wiki/Vincent_van_Gogh",
+    "source_quote": "Van Gogh vytvořil v relativně malém časovém intervalu deseti let zhruba 900 maleb a 1100 kreseb.",
+    "voice": "Svět jeho obrazy miluje až posmrtně — on sám se té lásky nedožil.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo styled after a post-impressionist landscape scene, wheat field with cypress trees under a swirling evening sky, no text, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Uříznuté ucho po jedné hádce",
+        "fact": "Po prosincové hádce s malířem Gauguinem si Van Gogh 23. prosince 1888 uřízl část levého ucha.",
+        "source_url": "https://cs.wikipedia.org/wiki/Vincent_van_Gogh",
+        "source_quote": "Po hádce s Gauguinem si 23. prosince 1888 uřízl lalůček levého ucha",
+        "voice": "Zlom v jeho životě se dá vystopovat na jediný večer jedné hádky.",
+        "image_prompt": "Photorealistic photo of a rustic 19th-century artist's bedroom in the south of France, simple wooden furniture, warm afternoon light through a window, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sláva, která přišla až po smrti",
+        "fact": "Van Goghovo dílo bylo za jeho života takřka neznámé, uznání a světová sláva přišly až po jeho smrti v roce 1890.",
+        "source_url": "https://cs.wikipedia.org/wiki/Vincent_van_Gogh",
+        "source_quote": "Goghovo dílo bylo za jeho života takřka neznámé (prodala se jen jedna malba necelý rok před Goghovou smrtí).",
+        "voice": "Zatímco byl naživu, nikdo jeho obrazy nechtěl — dnes je nikdo nechce prodat.",
+        "image_prompt": "Photorealistic photo of a crowded modern art museum gallery with visitors viewing framed impressionist paintings, soft gallery lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-umeni-vermeer",
+    "country": "Nizozemsko",
+    "section": "Umění",
+    "topic": "Jan Vermeer",
+    "headline": "Malíř, po kterém zbylo jen pár desítek obrazů",
+    "fact": "Od Jana Vermeera se dochovalo jen 37 obrazů, protože v průměru namaloval pouhá dvě plátna ročně.",
+    "source_url": "https://cs.wikipedia.org/wiki/Jan_Vermeer",
+    "source_quote": "Vermeerovo dochované dílo tvoří pouhých 37 obrazů",
+    "voice": "Maloval pomalu a pečlivě — svět mu za to zůstal vděčný o to víc.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo in the style of a Dutch Golden Age interior painting, soft window light illuminating a quiet room with a woman reading a letter, no text, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dívka, co se stala symbolem Nizozemska",
+        "fact": "Vermeerův obraz Dívka s perlou vznikl mezi lety 1665 a 1667 a měří pouhých 44,5 × 39 centimetrů, přesto patří k nejznámějším portrétům světového malířství.",
+        "source_url": "https://cs.wikipedia.org/wiki/Jan_Vermeer",
+        "source_quote": "měří 44,5 × 39 cm",
+        "voice": "Malý obraz dívky beze jména dnes zná skoro každý na světě.",
+        "image_prompt": "Photorealistic photo of a small framed portrait painting of a girl with a pearl earring displayed in a museum, soft spotlight, dark background, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umělec, co zemřel s jedenácti dětmi a dluhy",
+        "fact": "Vermeer zemřel v roce 1675 v rodném Delftu a zanechal po sobě vdovu, jedenáct dětí a značné dluhy — jeho malby se tehdy prodávaly draho, ale nestačilo to uživit tak velkou rodinu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Jan_Vermeer",
+        "source_quote": "Zemřel v roce 1675 a zanechal po sobě vdovu, jedenáct dětí a značné dluhy",
+        "voice": "Sláva jeho pláten přišla, až když on sám už dávno neměl na chleba.",
+        "image_prompt": "Photorealistic photo of the historic Delft townscape with canals and the Oude Kerk church tower, soft afternoon light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-sport-totalni-fotbal",
+    "country": "Nizozemsko",
+    "section": "Sport",
+    "topic": "Totální fotbal",
+    "headline": "Fotbal, kde si hráči vyměňovali místa",
+    "fact": "Johan Cruyff proslavil styl zvaný totální fotbal, ve kterém si hráči na hřišti volně vyměňovali pozice, a s ním dovedl Nizozemsko v roce 1974 do finále mistrovství světa.",
+    "source_url": "https://cs.wikipedia.org/wiki/Johan_Cruyff",
+    "source_quote": "Jako kapitán dovedl Nizozemsko do finále mistrovství světa roku 1974.",
+    "voice": "Nikdo na hřišti nezůstával na svém místě déle, než bylo nutné.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a football match in an Amsterdam stadium in a 1970s style, players in orange kits mid-play, floodlights, no text, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Třikrát nejlepší fotbalista Evropy",
+        "fact": "Cruyff byl vyhlášen evropským fotbalistou roku celkem třikrát, v letech 1971, 1973 a 1974.",
+        "source_url": "https://cs.wikipedia.org/wiki/Johan_Cruyff",
+        "source_quote": "Stal se třikrát evropským fotbalistou roku (1971, 1973, 1974)",
+        "voice": "Trofej za nejlepšího hráče Evropy si odnesl tolikrát, že si na ni skoro zvykl.",
+        "image_prompt": "Photorealistic photo of a vintage football trophy on a pedestal in a dimly lit trophy room, dramatic spotlight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá země, co změnila styl hry celého sportu",
+        "fact": "Styl totálního fotbalu vznikl v amsterodamském klubu Ajax a odtud se rozšířil do reprezentace i do dalších evropských lig — příklad, jak taktická inovace z jednoho klubu dokáže ovlivnit fotbal v celosvětovém měřítku.",
+        "source_url": "https://cs.wikipedia.org/wiki/Johan_Cruyff",
+        "voice": "Nápad z jedné amsterodamské šatny nakonec přepsal pravidla hry po celém světě.",
+        "image_prompt": "Photorealistic aerial photo of a football training pitch in Amsterdam with players practicing tactical positioning drills, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-sport-rychlobrusleni",
+    "country": "Nizozemsko",
+    "section": "Sport",
+    "topic": "Rychlobruslení",
+    "headline": "Sport, díky kterému sbírá medaile jako nikdo jiný v zemi",
+    "fact": "Nizozemsko získalo na zimních olympijských hrách celkem 167 medailí, z toho 146 pochází z rychlobruslení — žádný jiný zimní sport zemi nepřinesl zdaleka tolik úspěchů.",
+    "source_url": "https://en.wikipedia.org/wiki/Netherlands_at_the_Olympics",
+    "source_quote": "The nation has won another 167 medals at the Winter Olympic Games, of which 146 have come from speed skating.",
+    "voice": "Na ledě tahle malá země sbírá kov, jako by měla vlastní soukromý led.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of Dutch speed skaters racing on an outdoor oval ice track, orange racing suits, winter daylight, no text, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ledová hala, kde padají rekordy",
+        "fact": "Ve frízském městě Heerenveen stojí krytá ledová hala Thialf, kde nizozemští rychlobruslaři trénují a kde se každý rok konají mistrovská klání jako nizozemské, evropské i světové šampionáty.",
+        "source_url": "https://en.wikipedia.org/wiki/Thialf",
+        "source_quote": "Every year there are main skating events like the Dutch, European and World championships",
+        "voice": "Rekordy tu padaly tak často, že hala si vysloužila pověst nejrychlejšího ledu na světě.",
+        "image_prompt": "Photorealistic photo of the interior of a large indoor speed skating arena with skaters racing on a long oval ice track, dynamic motion blur, arena lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice vzniklá na zamrzlých kanálech",
+        "fact": "Tradice rychlobruslení vychází z holandského zvyku bruslení po zamrzlých kanálech a jezerech, kdy brusle sloužily spíš jako dopravní prostředek než jako sportovní náčiní — ploché území protkané vodními cestami tak nedopatřením vychovalo generace vynikajících bruslařů.",
+        "source_url": "https://en.wikipedia.org/wiki/Elfstedentocht",
+        "voice": "Než se bruslení stalo sportem, bylo to jen nejrychlejší způsob, jak se dostat přes zamrzlý kanál domů.",
+        "image_prompt": "Photorealistic photo of local Dutch skaters gliding along a frozen canal through the countryside at dusk, warm lantern light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-sport-kolo",
+    "country": "Nizozemsko",
+    "section": "Sport",
+    "topic": "Nizozemsko na kole",
+    "headline": "Země, kde kol je víc než dospělých lidí",
+    "fact": "V Nizozemsku připadá na obyvatele staršího, než je věk, kdy už dítě samo jezdí na kole, v průměru 1,3 jízdního kola — dohromady jich je v zemi asi 18 milionů.",
+    "source_url": "https://en.wikipedia.org/wiki/Cycling_in_the_Netherlands",
+    "source_quote": "the country's 18 million bicycles (1.3 per citizen old enough to ride)",
+    "voice": "Tady se auto často nechává doma a klíče se shánějí jen k zámku na kole.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a busy Dutch bicycle parking area near a train station, hundreds of bikes parked in rows, daylight, no text, 16:9",
+    "tags": ["socioekonomicka-geografie", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přes třicet tisíc cyklistů denně na jedné ulici",
+        "fact": "Nejrušnější cyklostezka v Nizozemsku, utrechtská Vredenburg, denně projede kolem 32 000 cyklistů, o nejvytíženějších dnech i přes 37 000.",
+        "source_url": "https://en.wikipedia.org/wiki/Cycling_in_the_Netherlands",
+        "source_quote": "The Netherlands' busiest cycleway, Vredenburg in the city of Utrecht, sees some 32,000 cyclists on an average weekday, and up to 37,000 on peak days.",
+        "voice": "Špička dopravy tu vypadá jinak — místo klaksonů slyšíš jen cinkání zvonků.",
+        "image_prompt": "Photorealistic photo of a crowded bicycle lane in Utrecht during rush hour, dozens of cyclists riding together, urban daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Síť stezek delší než mnohá dálniční síť",
+        "fact": "Nizozemské cyklostezky oddělené od automobilové dopravy měří dohromady kolem 35 000 kilometrů — hustota takové infrastruktury patří k nejvyšším na světě a odráží rovinatý terén i dlouhodobou dopravní politiku země.",
+        "source_url": "https://en.wikipedia.org/wiki/Cycling_in_the_Netherlands",
+        "source_quote": "Some 35,000 km (22,000 miles) of cycle-track has been physically segregated from motor traffic.",
+        "voice": "Kolo tu nemusí bojovat o místo s auty — má vlastní samostatný svět silnic.",
+        "image_prompt": "Photorealistic aerial photo of a dedicated cycling path network winding through Dutch flat countryside, separated from a road, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-jazyk-baas-boss",
+    "country": "Nizozemsko",
+    "section": "Jazyk & slova",
+    "topic": "Slovo baas",
+    "headline": "Nizozemské slovo, co dobylo angličtinu",
+    "fact": "Anglické slovo boss pochází z nizozemského baas, což znamenalo 'mistr' nebo 'vedoucí', a do angličtiny se dostalo přes nizozemské osadníky v Novém Amsterodamu, dnešním New Yorku.",
+    "source_url": "https://www.etymonline.com/word/boss",
+    "source_quote": "From Dutch baas 'a master,' Middle Dutch baes, a word of obscure origin.",
+    "voice": "Slovo, které dnes křičí šéfové v kancelářích po celém světě, si Amerika kdysi vypůjčila od nizozemských sousedů.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of an old wooden ship's captain giving orders on a 17th-century Dutch trading vessel deck, dramatic lighting, no text, 16:9",
+    "tags": ["jazykoveda", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, co v Americe nahradilo 'master'",
+        "fact": "V Severní Americe se slovo baas rozšířilo mimo jiné proto, že Američané chtěli obejít slovo 'master' a zároveň odlišit svobodnou práci od otrocké.",
+        "source_url": "https://www.etymonline.com/word/boss",
+        "source_quote": "egalitarian avoidance of master (n.) as well as the need to distinguish slave from free labor",
+        "voice": "Jedno slovo dokázalo obejít i citlivé společenské téma, na které jiná slova nestačila.",
+        "image_prompt": "Photorealistic photo of a 19th-century American dockyard scene, workers and a foreman, warm sepia-toned daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kolonie, která do jazyka vyvezla i slova",
+        "fact": "Slovo baas se do angličtiny dostalo přes nizozemskou kolonii Nové Nizozemí podél řeky Hudson, což ukazuje, jak i krátce trvající koloniální osídlení dokáže v jazyce zanechat trvalou stopu.",
+        "source_url": "https://www.etymonline.com/word/boss",
+        "source_quote": "brought into English via the Dutch settlement of New Netherlands along the Hudson River valley in what is now New York",
+        "voice": "Kolonie dávno zanikla, ale slovo, které si přinesla, zůstalo v jazyce dodnes.",
+        "image_prompt": "Photorealistic photo of a historic map of the New Amsterdam colonial settlement along a river, aged parchment style, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-jazyk-holandsko",
+    "country": "Nizozemsko",
+    "section": "Jazyk & slova",
+    "topic": "Holandsko vs. Nizozemsko",
+    "headline": "Jméno dvou provincií, co si přivlastnilo celou zemi",
+    "fact": "Holandsko tvoří jen dvě z dvanácti nizozemských provincií — Severní a Jižní Holandsko — přesto se jejich jméno běžně používá pro celou zemi.",
+    "source_url": "https://en.wikipedia.org/wiki/Netherlands",
+    "source_quote": "the Holland region only comprises two of the twelve provinces, and 38% of Dutch citizens",
+    "voice": "Svět zná zemi pod jménem, které patří jen jejímu malému kousku.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a physical map of the Netherlands with provinces outlined, North and South Holland highlighted, on a wooden table, no text, 16:9",
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vláda dala přednost jménu celé země",
+        "fact": "Nizozemská vláda od roku 2019 oficiálně upřednostňuje v mezinárodní komunikaci název Nizozemsko (the Netherlands) před názvem Holandsko.",
+        "source_url": "https://en.wikipedia.org/wiki/Netherlands",
+        "source_quote": "As of 2019, the Dutch government officially has preferred the Netherlands over Holland when talking about the country.",
+        "voice": "Kampaň s jedním cílem: ať svět konečně zemi volá jejím vlastním jménem.",
+        "image_prompt": "Photorealistic photo of an official government building facade in The Hague with a Dutch flag, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jak jedna bohatá provincie přehlušila zbytek země",
+        "fact": "Holandsko bylo v době vzniku Nizozemské republiky a válek 17. a 18. století nejbohatší a nejmocnější provincií, takže se jeho jméno postupně stalo náhradou za jméno celého státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Netherlands",
+        "source_quote": "The emphasis on Holland during the formation of the Dutch Republic, the Eighty Years' War, and the Anglo-Dutch Wars in the 17th and 18th centuries made Holland a pars pro toto for the entire country.",
+        "voice": "Jedna silná provincie dala jméno zemi, i když zbylých deset o to vůbec nestálo.",
+        "image_prompt": "Photorealistic photo of a 17th-century Dutch trading harbor with merchant ships and warehouses, golden hour lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-jazyk-fristina",
+    "country": "Nizozemsko",
+    "section": "Jazyk & slova",
+    "topic": "Fríština",
+    "headline": "Jazyk, co je angličtině nejblíž ze všech",
+    "fact": "Fríština je ze všech živých jazyků nejbližším příbuzným staré angličtiny; jako svou mateřštinu ji dnes používá přes 350 000 lidí, hlavně v provincii Frísko.",
+    "source_url": "https://en.wikipedia.org/wiki/West_Frisian_language",
+    "source_quote": "For over half of the inhabitants of the province of Friesland, 55% (c. 354,000 people), West Frisian is the native language.",
+    "voice": "Řeč znějící cize dnešnímu Angličanovi je jazykově jeho nejbližší žijící příbuzná.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a bilingual Dutch-Frisian road sign in the Frisian countryside, green fields and canals in the background, daylight, no text, 16:9",
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Úřední jazyk vedle nizozemštiny",
+        "fact": "Fríština má od roku 1956 v provincii Frísko oficiální postavení rovnocenné nizozemštině a používá se ve školách, úřadech i zákonodárství.",
+        "source_url": "https://en.wikipedia.org/wiki/West_Frisian_language",
+        "source_quote": "Since 1956, West Frisian has an official status along with and equal to Dutch in the province of Friesland.",
+        "voice": "Úředník ve Frísku smí psát rozhodnutí jazykem, kterému by jinde nikdo nerozuměl.",
+        "image_prompt": "Photorealistic photo of a small-town government office building in Friesland with a Frisian flag, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk, kterému UNESCO věští úbytek",
+        "fact": "Přestože je fríština úředním jazykem, UNESCO ji řadí mezi ohrožené jazyky — typický případ menšinového jazyka, který i přes zákonnou ochranu postupně ustupuje dominantnímu jazyku většiny obyvatel země.",
+        "source_url": "https://en.wikipedia.org/wiki/West_Frisian_language",
+        "source_quote": "considered by UNESCO to be a language in danger of becoming extinct, officially listed as 'vulnerable'",
+        "voice": "Zákon jazyk chrání na papíře, každodenní řeč lidí ho přesto pomalu vytlačuje.",
+        "image_prompt": "Photorealistic photo of an elderly Frisian farmer talking with a young child by a canal in rural Friesland, warm evening light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-jidlo-gouda",
+    "country": "Nizozemsko",
+    "section": "Jídlo",
+    "topic": "Sýr Gouda",
+    "headline": "Sýr, co dostal jméno po vlastním městě",
+    "fact": "Sýr gouda je tvrdý sýr z kravského mléka pojmenovaný po městě Gouda, kde se odedávna prodával na tamním sýrovém trhu.",
+    "source_url": "https://cs.wikipedia.org/wiki/Gouda_(s%C3%BDr)",
+    "voice": "Sýr necestoval z Goudy daleko — dnes ho znají kuchyně po celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of round wheels of Gouda cheese stacked at an outdoor market in the Netherlands, warm daylight, no text, 16:9",
+    "ll": [4.7091, 52.0115],
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sedm stupňů zrání na jednom pultu",
+        "fact": "Sýr gouda se podle délky zrání dělí do sedmi kategorií, od mladého sýra zrajícího jen pár týdnů až po přezrálý sýr zrající déle než rok.",
+        "source_url": "https://cs.wikipedia.org/wiki/Gouda_(s%C3%BDr)",
+        "voice": "Čím déle sýr leží ve zrajícím sklepě, tím ostřejší chuť si zaslouží na etiketě.",
+        "image_prompt": "Photorealistic close-up photo of aged Gouda cheese wedges with a crumbly texture on a wooden cutting board, natural light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jen zlomek produkce vzniká ručně",
+        "fact": "Naprostá většina gouda sýra se dnes vyrábí průmyslově, jen dvě procenta produkce vznikají tradičním způsobem přímo na farmách.",
+        "source_url": "https://cs.wikipedia.org/wiki/Gouda_(s%C3%BDr)",
+        "source_quote": "The volume of such production represents two percent of total output.",
+        "voice": "Kdo chce sýr vyrobený postaru, musí hledat mnohem pečlivěji než v běžném obchodě.",
+        "image_prompt": "Photorealistic photo of a small traditional Dutch dairy farm with cheese-making equipment, wheels of cheese on wooden racks, warm interior light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-jidlo-stroopwafel",
+    "country": "Nizozemsko",
+    "section": "Jídlo",
+    "topic": "Stroopwafel",
+    "headline": "Sladkost narozená ze zbytků těsta",
+    "fact": "Stroopwafel vznikl v Goudě na přelomu 18. a 19. století, když pekaři sladili zbylé drobky těsta sirupem, aby je nemuseli vyhazovat.",
+    "source_url": "https://en.wikipedia.org/wiki/Stroopwafel",
+    "source_quote": "stroopwafels were first made in Gouda either during the late 18th century or the early 19th century by bakers repurposing scraps and crumbs by sweetening them with syrup",
+    "voice": "Pochoutka, kterou dnes lidé kupují úmyslně, začala jako recyklace odpadu z pekárny.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up photo of fresh stroopwafels stacked on a plate with visible caramel syrup filling, warm cafe lighting, no text, 16:9",
+    "ll": [4.7091, 52.0115],
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejlepší na hrnku horkého nápoje",
+        "fact": "Stroopwafel se tradičně pokládá na hrnek horkého čaje nebo kávy, aby pára z nápoje trochu rozehřála a změkčila karamelovou náplň uvnitř.",
+        "source_url": "https://en.wikipedia.org/wiki/Stroopwafel",
+        "voice": "Sušenka se nejdřív chvíli koupe v páře, teprve pak přijde na řadu kousnutí.",
+        "image_prompt": "Photorealistic close-up photo of a stroopwafel balanced on top of a steaming mug of coffee, cozy warm lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Recept, co přežil dvě staletí beze změny",
+        "fact": "Nejstarší dochovaný recept na stroopwafel pochází z roku 1840, kdy pekař Gerard Kamphuisen provozoval svou pekárnu v Goudě už přes dvacet let.",
+        "source_url": "https://en.wikipedia.org/wiki/Stroopwafel",
+        "source_quote": "somewhere between 1810, the year he opened his bakery, and 1840, the year of the oldest known recipe",
+        "voice": "Recept starý přes sto padesát let dodnes voní stejně jako tehdy.",
+        "image_prompt": "Photorealistic photo of an old handwritten recipe book page next to fresh stroopwafels on a wooden table, warm vintage lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-jidlo-slad",
+    "country": "Nizozemsko",
+    "section": "Jídlo",
+    "topic": "Hollandse Nieuwe",
+    "headline": "Syrová ryba, co se jí za ocásek",
+    "fact": "Nizozemský slaneček Hollandse Nieuwe se připravuje jen mírně naložený v soli a tradičně se jí syrový, zvednutý za ocas a spuštěný přímo do úst.",
+    "source_url": "https://en.wikipedia.org/wiki/Soused_herring",
+    "source_quote": "lifting the herring by its tail and eating it upwards holding it over the mouth",
+    "voice": "Elegance u stolu tu ustupuje jednoduchému gestu — zaklonit hlavu a spustit rybu dolů.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a Dutch herring vendor stall by a canal, a person eating raw herring by the tail, cheerful street food scene, daylight, no text, 16:9",
+    "ll": [4.2879, 52.1084],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ryba, co smí zrát jen pár dní",
+        "fact": "Slaneček na Hollandse Nieuwe zraje jen několik dní v dubových sudech se slaným nálevem a loví se výhradně mezi koncem května a začátkem července v Severním moři.",
+        "source_url": "https://en.wikipedia.org/wiki/Soused_herring",
+        "source_quote": "herrings are caught between the end of May and the beginning of July in the North Sea near Denmark or Norway, before the breeding season starts",
+        "voice": "Sezóna je krátká, a tak se na první letošní sleď těší celá země.",
+        "image_prompt": "Photorealistic photo of fishing boats unloading fresh herring catch at a Dutch harbor, early morning light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Technika ze středověku platná dodnes",
+        "fact": "Způsob přípravy slaného sledě zvaný gibbing vyvinuli Nizozemci už ve středověku a stejný postup se s drobnými úpravami používá dodnes — ukázka, jak si přímořský region po staletí uchovává osvědčenou potravinovou technologii.",
+        "source_url": "https://en.wikipedia.org/wiki/Soused_herring",
+        "source_quote": "this process of preparing herring...was developed in the Middle Ages by the Dutch",
+        "voice": "Metoda stará stovky let se v ničem podstatném nezměnila, jen se dnes servíruje s větší parádou.",
+        "image_prompt": "Photorealistic photo of wooden herring barrels stacked at a historic Dutch harbor warehouse, weathered wood texture, soft light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-historie-voc",
+    "country": "Nizozemsko",
+    "section": "Historie",
+    "topic": "Nizozemská Východoindická společnost",
+    "headline": "Firma bohatší než dnešní státy",
+    "fact": "Nizozemská Východoindická společnost (VOC) vznikla v roce 1602 a stala se jednou z prvních akciových společností na světě, jejíž akcie se volně obchodovaly na amsterodamské burze.",
+    "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+    "source_quote": "Established on 20 March 1602 by the States General of the Netherlands",
+    "voice": "Obchod s kořením vytvořil firmu, jejíž akcie si mohl koupit téměř kdokoliv.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a 17th-century Dutch East India Company merchant ship in Amsterdam harbor, tall masts and sails, golden hour light, no text, 16:9",
+    "ll": [4.9041, 52.3676],
+    "tags": ["dejiny", "socioekonomicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sto padesát lodí a vlastní armáda",
+        "fact": "Na vrcholu své moci kolem roku 1669 vlastnila VOC přes 150 obchodních lodí, 40 válečných lodí a soukromou armádu čítající 10 000 vojáků.",
+        "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+        "source_quote": "the VOC was the richest private company the world had ever seen, with over 150 merchant ships, 40 warships, 50,000 employees, a private army of 10,000 soldiers, and a dividend payment of 40% on the original investment",
+        "voice": "Obchodní firma tehdy měla víc vojáků než leckterý malý stát.",
+        "image_prompt": "Photorealistic photo of a historical harbor scene with rows of Dutch East India Company merchant and warships anchored, dramatic sky, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Firma, co zbankrotovala po dvou staletích slávy",
+        "fact": "VOC formálně zanikla v roce 1799, kdy její majetek i dluhy převzala nizozemská vláda — konec obchodního impéria, které kdysi propojovalo Evropu s Asií.",
+        "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+        "source_quote": "The company went bankrupt and was formally dissolved in 1799.",
+        "voice": "Impérium, které kdysi ovládalo obchod mezi kontinenty, nakonec skončilo jako státní dluh.",
+        "image_prompt": "Photorealistic photo of an old faded nautical map of Asian trade routes with a compass rose, aged paper texture, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-historie-delta-plan",
+    "country": "Nizozemsko",
+    "section": "Historie",
+    "topic": "Povodeň 1953 a Deltový plán",
+    "headline": "Noc, po které Nizozemsko přestavělo celé pobřeží",
+    "fact": "V noci z 31. ledna na 1. února 1953 zaplavila mořská povodeň jih Nizozemska, zabila přes 1800 lidí a donutila evakuovat dalších 70 000.",
+    "source_url": "https://en.wikipedia.org/wiki/North_Sea_flood_of_1953",
+    "source_quote": "flooding killed 1,835 people and forced the emergency evacuation of 70,000 more",
+    "voice": "Za jednu noc si moře vzalo tolik životů, kolik má malé město obyvatel.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic archival-style photo of a flooded Dutch village in 1953, water covering streets and houses, overcast gray sky, no text, 16:9",
+    "ll": [3.6667, 51.6667],
+    "tags": ["dejiny", "fyzicka-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bariéra dokončená až po desetiletích práce",
+        "fact": "Jako reakci na povodeň postavilo Nizozemsko rozsáhlý systém hrází a protipovodňových bariér zvaný Deltový plán, jehož poslední část, bariéra Maeslantkering u Rotterdamu, byla dokončena až v roce 1998.",
+        "source_url": "https://en.wikipedia.org/wiki/North_Sea_flood_of_1953",
+        "source_quote": "The Netherlands developed the Delta Works, an extensive system of dams and storm surge barriers... was completed in 1998, with completion of the storm surge barrier Maeslantkering in the Nieuwe Waterweg, near Rotterdam.",
+        "voice": "Ochranu proti další takové noci budovali skoro půl století.",
+        "image_prompt": "Photorealistic photo of the Maeslantkering storm surge barrier near Rotterdam, massive steel gates spanning a waterway, overcast daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Katastrofa, co změnila vztah k moři",
+        "fact": "Povodeň z roku 1953 přiměla Nizozemsko i sousední Velkou Británii k rozsáhlému výzkumu ochrany pobřeží — od té doby země neplánuje hráze jen jako opravu škod, ale jako trvalou systémovou obranu proti dalším bouřím.",
+        "source_url": "https://en.wikipedia.org/wiki/North_Sea_flood_of_1953",
+        "source_quote": "Realising that such infrequent events could reoccur, the Netherlands and the United Kingdom carried out large studies on strengthening of coastal defences.",
+        "voice": "Jedna katastrofální noc navždy změnila to, jak země přemýšlí o vlastním pobřeží.",
+        "image_prompt": "Photorealistic aerial photo of the Delta Works storm surge barriers in Zeeland, network of dams and channels seen from above, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "nl-historie-market-garden",
+    "country": "Nizozemsko",
+    "section": "Historie",
+    "topic": "Operace Market Garden",
+    "headline": "Výsadek, co měl zkrátit válku o zimu",
+    "fact": "Spojenecká operace Market Garden probíhala od 17. do 25. září 1944 a jejím cílem bylo získat mosty přes nizozemské řeky až po Arnhem a otevřít cestu do Německa.",
+    "source_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+    "source_quote": "17–25 September 1944",
+    "voice": "Plán počítal s bleskovým průlomem, realita mu dala jen zpoždění a ztráty.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic archival-style photo of paratroopers descending over a Dutch rural landscape in September 1944, parachutes filling the sky, no text, 16:9",
+    "ll": [5.9111, 51.9851],
+    "tags": ["dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Most u Arnhemu, který se nepodařilo udržet",
+        "fact": "Britská 1. výsadková divize se u Arnhemu snažila udržet most přes Rýn, ale z deseti tisíc vojáků jich osm tisíc padlo, bylo zajato nebo se pohřešovalo.",
+        "source_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+        "source_quote": "was unable to secure the bridge and was withdrawn from the north side of the Rhine after suffering 8,000 dead, missing, and captured out of a complement of 10,000 men",
+        "voice": "Most zůstal nakonec v rukou nepřítele, i po tak vysoké ceně za jeho dobytí.",
+        "image_prompt": "Photorealistic archival-style photo of a damaged bridge over the Rhine river near Arnhem in 1944, military vehicles nearby, overcast sky, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Neúspěch, co prodloužil utrpení civilistů",
+        "fact": "Selhání operace Market Garden znamenalo, že severní Nizozemsko zůstalo pod německou okupací dalších několik měsíců, zatímco jih země byl už osvobozen.",
+        "source_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+        "source_quote": "Historian Antony Beevor concluded that Market Garden was a bad plan right from the start and right from the top.",
+        "voice": "Jedna neúspěšná operace prodloužila utrpení civilistů o dlouhou hladovou zimu.",
+        "image_prompt": "Photorealistic archival-style photo of Dutch civilians during the harsh winter of 1944-45, walking along a snowy street with a makeshift cart, somber tone, no text, 16:9"
+      }
+    }
+  }
+]

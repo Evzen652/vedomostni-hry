@@ -1,0 +1,869 @@
+[
+  {
+    "id": "ch-mista-bern",
+    "country": "Švýcarsko",
+    "section": "Místa",
+    "topic": "Bern",
+    "headline": "Staré město, které je celé památkou UNESCO",
+    "fact": "Staré město v Bernu je od roku 1983 zapsané na seznamu UNESCO jako světové dědictví, protože si dodnes uchovalo téměř neporušené středověké jádro.",
+    "source_url": "https://en.wikipedia.org/wiki/Old_City_of_Bern",
+    "source_quote": "a UNESCO Cultural World Heritage Site since 1983 due to the compact and generally intact medieval core",
+    "voice": "Turisté si centrum fotí jako pohlednici, a přitom v něm lidé pořád obyčejně bydlí a nakupují.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Bern old town with sandstone arcaded streets and the Aare river bend, golden afternoon light, no people, no text, 16:9",
+    "ll": [7.4474, 46.9480],
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Město pojmenované podle medvěda z lovu",
+        "fact": "Podle pověsti dal zakladatel města vévoda Berchtold V. Zähringský Bernu jméno po prvním zvířeti, které při lovu na místě budoucího města ulovil — byl to medvěd, který se stal i znakem města.",
+        "source_url": "https://en.wikipedia.org/wiki/Old_City_of_Bern",
+        "source_quote": "Local legend has it that the duke vowed to name the city after the first animal he met on the hunt, which turned out to be a bear.",
+        "voice": "Kdyby toho dne narazil na jelena, možná by se dnes město jmenovalo úplně jinak.",
+        "image_prompt": "Photorealistic photo of the bear park (Bärengraben) in Bern by the Aare river, brown bears in a natural enclosure, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řeka Aare jako přirozený hradní příkop",
+        "fact": "Staré město leží na ostrohu obtékaném téměř ze tří stran řekou Aare — typická obranná poloha středověkého sídla, kde řeka fungovala jako přirozený příkop místo umělého opevnění.",
+        "source_url": "https://en.wikipedia.org/wiki/Old_City_of_Bern",
+        "voice": "Kdo stavěl kolem řeky, nemusel budovat příkop — přírodu měl zadarmo.",
+        "image_prompt": "Photorealistic aerial photo of Bern's old town peninsula almost surrounded by the winding Aare river, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-mista-chillon",
+    "country": "Švýcarsko",
+    "section": "Místa",
+    "topic": "Zámek Chillon",
+    "headline": "Nejnavštěvovanější historická památka Švýcarska",
+    "fact": "Zámek Chillon na Ženevském jezeře patří s návštěvností kolem 300 000 lidí ročně mezi nejnavštěvovanější historické památky Švýcarska.",
+    "source_url": "https://en.wikipedia.org/wiki/Chillon_Castle",
+    "source_quote": "Switzerland's most visited historic monument",
+    "voice": "Stojí na skalním ostrůvku v jezeře, jako by ho tam někdo úmyslně položil pro turisty s fotoaparátem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Chillon Castle on Lake Geneva at sunrise, Alps in the background, calm water, no people, no text, 16:9",
+    "ll": [6.9271, 46.4136],
+    "tags": ["regionalni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vězeň, co inspiroval slavnou báseň",
+        "fact": "V žaláři zámku byl v 16. století vězněn ženevský mnich François Bonivard; jeho příběh v roce 1816 inspiroval Lorda Byrona k napsání básně Vězeň chillonský.",
+        "source_url": "https://en.wikipedia.org/wiki/Chillon_Castle",
+        "source_quote": "wrote a poem entitled The Prisoner of Chillon in 1816 about François",
+        "voice": "Skutečný vězeň seděl v kobce, básník přišel o staletí později a udělal z něj literární hvězdu.",
+        "image_prompt": "Photorealistic photo of the stone dungeon interior of Chillon Castle with old pillars, dim natural light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hrad na křižovatce alpské obchodní cesty",
+        "fact": "Chillon střežil úzký pruh souše mezi jezerem a horami na cestě z Burgundska k průsmyku Velký Svatý Bernard — typická poloha hradu, který kontroloval nikoliv město, ale samotnou obchodní trasu.",
+        "source_url": "https://en.wikipedia.org/wiki/Chillon_Castle",
+        "voice": "Ovládnout tenhle kousek břehu znamenalo ovládnout cestu, po které tekly hory zboží i peněz.",
+        "image_prompt": "Photorealistic aerial photo of Chillon Castle guarding the narrow shoreline between Lake Geneva and steep mountains, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-mista-lugano",
+    "country": "Švýcarsko",
+    "section": "Místa",
+    "topic": "Lugano",
+    "headline": "Největší italsky mluvící město mimo Itálii",
+    "fact": "Lugano je s populací přes 62 000 obyvatel největší město kantonu Ticino a největší italsky mluvící město mimo území Itálie.",
+    "source_url": "https://en.wikipedia.org/wiki/Lugano",
+    "source_quote": "Lugano is the largest city outside Italy with Italian as official language.",
+    "voice": "Kavárny tu mluví italsky, banky švýcarsky přesně, a jezero je úplně stejné jako to italské pár kilometrů odsud.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of Lugano's lakeside piazza with palm trees, Lake Lugano and mountains behind, warm daylight, no text, 16:9",
+    "ll": [8.9511, 46.0037],
+    "tags": ["regionalni-geografie", "jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Banky na jihu, hory na severu",
+        "fact": "Lugano je po Curychu a Ženevě třetím největším bankovním centrem Švýcarska, přestože leží v teplém údolí obklopeném vysokými alpskými štíty jen kousek od italské hranice.",
+        "source_url": "https://en.wikipedia.org/wiki/Lugano",
+        "source_quote": "The town is Switzerland's third largest banking centre after Zürich and Geneva",
+        "voice": "Peníze tu proudí jako v Curychu, ale terasy kaváren vypadají jako v Itálii.",
+        "image_prompt": "Photorealistic photo of Lugano cityscape with bank buildings along the lakefront and mountains in the background, clear day, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město, které si italská řeč zachovala i za hranicí",
+        "fact": "Poloha Lugana na jižní straně Alp znamenala, že italský jazyk a kultura pronikly hluboko na švýcarské území — hory tu nefungovaly jako jazyková hranice, tou se stala až státní hranice o kus dál na jihu.",
+        "source_url": "https://en.wikipedia.org/wiki/Lugano",
+        "voice": "Alpy dokázaly zastavit počasí, řeč lidí přes ně ale přetekla docela snadno.",
+        "image_prompt": "Photorealistic aerial photo of Lake Lugano surrounded by mountains near the Switzerland-Italy border, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-priroda-matterhorn",
+    "country": "Švýcarsko",
+    "section": "Příroda",
+    "topic": "Matterhorn",
+    "headline": "Hora, která leží zároveň ve dvou zemích",
+    "fact": "Matterhorn měří 4478 metrů a jeho vrchol leží přesně na hranici mezi Švýcarskem a Itálií.",
+    "source_url": "https://en.wikipedia.org/wiki/Matterhorn",
+    "source_quote": "The summit height was precisely determined to be at 4,477.54 m (14,690 ft) above sea level",
+    "voice": "Vylezeš na jeden vrchol a nohama se přitom můžeš dotknout hned dvou států.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the pyramid-shaped Matterhorn peak at sunrise, snow and rock detail, clear sky, no people, no text, 16:9",
+    "ll": [7.6586, 45.9763],
+    "tags": ["fyzicka-geografie", "kartografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "První výstup, který skončil tragédií",
+        "fact": "Horu jako první zdolal 14. července 1865 tým Edwarda Whympera, ale hned při sestupu čtyři ze sedmi členů výpravy zahynuli pádem na ledovec.",
+        "source_url": "https://en.wikipedia.org/wiki/Matterhorn",
+        "source_quote": "Upon descent, Hadow, Croz, Hudson and Douglas fell to their deaths on the Matterhorn Glacier",
+        "voice": "Na vrchol vystoupali jako první v dějinách, dolů se ale nevrátili všichni.",
+        "image_prompt": "Photorealistic historical-style photo of mountaineers roped together on the Hörnli ridge, dramatic sky, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pyramida, kterou vytvarovaly ledovce ze všech stran",
+        "fact": "Matterhorn dostal svůj charakteristický pyramidový tvar erozí ledovců, které ho po tisíciletí obrušovaly ze čtyř stran zároveň — proto mu chybí dlouhý hřeben typický pro jiné alpské vrcholy.",
+        "source_url": "https://en.wikipedia.org/wiki/Matterhorn",
+        "source_quote": "The mountain's current shape is the result of cirque erosion due to multiple glaciers diverging from the peak",
+        "voice": "Čtyři ledovce z různých stran soustružily jednu horu, dokud z ní nezbyla dokonalá pyramida.",
+        "image_prompt": "Photorealistic aerial photo of the four-faced pyramid shape of the Matterhorn surrounded by glaciers, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-priroda-rheinfall",
+    "country": "Švýcarsko",
+    "section": "Příroda",
+    "topic": "Rýnský vodopád",
+    "headline": "Nejmohutnější vodopád Evropy",
+    "fact": "Rýnský vodopád u Schaffhausenu je s šířkou 150 metrů a výškou 23 metrů považovaný za nejmohutnější vodopád Evropy.",
+    "source_url": "https://en.wikipedia.org/wiki/Rhine_Falls",
+    "source_quote": "the most powerful waterfall in Europe",
+    "voice": "Voda se sem valí tak hlasitě, že ji slyšíš dřív, než ji vůbec uvidíš.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of the Rhine Falls with mist and spray, viewing platform on rock, daylight, no text, 16:9",
+    "ll": [8.6152, 47.6778],
+    "tags": ["fyzicka-geografie", "vodstvo", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "V létě protéká skoro třikrát víc vody než v zimě",
+        "fact": "Průtok vodopádu kolísá mezi 250 m³ vody za sekundu v zimě a až 600 m³ za sekundu v létě, kdy alpské ledovce a sníh tají nejrychleji.",
+        "source_url": "https://en.wikipedia.org/wiki/Rhine_Falls",
+        "source_quote": "250 m3/s (8,800 cu ft/s) during winter, 600 m3/s (21,000 cu ft/s) during summer",
+        "voice": "Stejná řeka, stejné koryto, a přesto je vodopád v létě úplně jiné zvíře než v lednu.",
+        "image_prompt": "Photorealistic close-up photo of powerful water rushing over rocks at Rhine Falls in summer, sunlight on spray, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vodopád na hranici dvou kantonů",
+        "fact": "Rýnský vodopád leží na hranici kantonů Schaffhausen a Curych, jen pár kilometrů od města Schaffhausenu, kde si Rýn po poslední době ledové vytvořil koryto kolem odolného skalního prahu.",
+        "source_url": "https://en.wikipedia.org/wiki/Rhine_Falls",
+        "source_quote": "on the border between the cantons of Schaffhausen and Zurich",
+        "voice": "Kdyby řeka nenarazila na tenhle skalní práh, vodopád by tu možná vůbec nebyl.",
+        "image_prompt": "Photorealistic aerial photo of the Rhine Falls between two Swiss cantons with a small castle nearby, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-priroda-narodni-park",
+    "country": "Švýcarsko",
+    "section": "Příroda",
+    "topic": "Švýcarský národní park",
+    "headline": "Nejstarší národní park v Alpách",
+    "fact": "Švýcarský národní park v Graubündenu byl založen 1. srpna 1914 a je nejstarším národním parkem v Alpách i střední Evropě.",
+    "source_url": "https://en.wikipedia.org/wiki/Swiss_National_Park",
+    "source_quote": "Founded in 1914, the Swiss National Park is the oldest national park in the Alps and in Central Europe.",
+    "voice": "Než vznikly první národní parky jinde v Evropě, tady se příroda už léta nechávala být úplně sama.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a pristine alpine valley in the Swiss National Park with ibex grazing, Engadin mountains, daylight, no text, 16:9",
+    "ll": [10.2000, 46.6667],
+    "tags": ["fyzicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Příroda, do které lidé nesmí zasahovat",
+        "fact": "Park o rozloze 170,3 km² patří do nejpřísnější ochranné kategorie IUCN — turisté smí chodit jen po vyznačených cestách a je zakázáno sbírat rostliny nebo kempovat mimo vyhrazená místa.",
+        "source_url": "https://en.wikipedia.org/wiki/Swiss_National_Park",
+        "source_quote": "Today, the Swiss National Park has an area of 170.3 km2 and is the largest nature reserve in Switzerland.",
+        "voice": "Návštěvník smí jen dívat se a jít dál — všechno ostatní si tu příroda řídí sama.",
+        "image_prompt": "Photorealistic photo of a marked hiking trail sign in the Swiss National Park, alpine meadow and forest, no text visible on sign, 16:9"
+      },
+      "kartograf": {
+        "headline": "Laboratoř přírody uprostřed Alp",
+        "fact": "Park leží v Engadinu na hranici s Itálií a od svého založení slouží i jako dlouhodobá vědecká laboratoř, kde vědci sledují, jak se krajina vyvíjí bez jakéhokoli lidského zásahu.",
+        "source_url": "https://en.wikipedia.org/wiki/Swiss_National_Park",
+        "source_quote": "It lies within the canton of Graubünden ... in the Engadin valley on the border with Italy.",
+        "voice": "Jinde lidé přírodu chrání zásahy, tady ji chrání hlavně tím, že do ní nezasahují.",
+        "image_prompt": "Photorealistic aerial photo of the Engadin valley showing pristine alpine landscape near the Italian border, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-lide-henri-dunant",
+    "country": "Švýcarsko",
+    "section": "Lidé",
+    "topic": "Henri Dunant",
+    "headline": "Muž, který po jedné bitvě založil Červený kříž",
+    "fact": "Henri Dunant založil po otřesném zážitku z bitvy u Solferina Mezinárodní výbor Červeného kříže; jeho první zasedání 17. února 1863 se dnes počítá za datum založení organizace.",
+    "source_url": "https://en.wikipedia.org/wiki/Henry_Dunant",
+    "source_quote": "Their first meeting on 17 February 1863 is now considered the founding date of the International Committee of the Red Cross.",
+    "voice": "Přijel se podívat na bojiště a odjel s nápadem, který dodnes zachraňuje životy po celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a red cross flag gently waving against a clear sky near Lake Geneva, no people, no text, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zážitek z bojiště, který změnil jeho život",
+        "fact": "Dunant dorazil na bojiště u Solferina 24. června 1859, v den, kdy tam proběhla bitva, a viděl tisíce raněných vojáků ponechaných bez pomoci.",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Dunant",
+        "source_quote": "Dunant arrived in Solferino on the evening of 24 June 1859, on the same day a battle between the two sides had occurred nearby.",
+        "voice": "Přijel kvůli obchodu a místo toho strávil dny ošetřováním cizích raněných vojáků.",
+        "image_prompt": "Photorealistic dramatic photo of a 19th-century battlefield aftermath landscape at dusk, muted colors, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "První Nobelova cena míru našla svého muže v Ženevě",
+        "fact": "Dunant v roce 1901 obdržel vůbec první Nobelovu cenu míru, kterou sdílel s francouzským pacifistou Frédéricem Passym.",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Dunant",
+        "source_quote": "In 1901, Dunant was awarded the first-ever Nobel Peace Prize for his role in founding the International Red Cross Movement and initiating the Geneva Convention.",
+        "voice": "Ještě než cena měla vlastní tradici, už nesla jeho jméno na úplném začátku seznamu.",
+        "image_prompt": "Photorealistic photo of Geneva lakefront with international organization buildings, calm water, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-lide-vilem-tell",
+    "country": "Švýcarsko",
+    "section": "Lidé",
+    "topic": "Vilém Tell",
+    "headline": "Národní hrdina, kterého možná nikdy nikdo nepotkal",
+    "fact": "Vilém Tell je legendární postava švýcarské lidové tradice, přestože podle historiků neexistují žádné soudobé důkazy z počátku 14. století, že by kdy skutečně žil.",
+    "source_url": "https://en.wikipedia.org/wiki/William_Tell",
+    "source_quote": "no contemporary (14th-century) evidence for Tell as a historical individual, let alone for the apple-shot story",
+    "voice": "Sochy mu stojí po celém Švýcarsku, ale nikdo nikdy nenašel jediný důkaz, že skutečně chodil po zemi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a William Tell statue in a Swiss town square, mountains in the background, daylight, no text, 16:9",
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Šíp, co měl rozseknout jablko na hlavě syna",
+        "fact": "Podle pověsti musel Tell kvůli neuposlechnutí úředníka Gesslera kuší sestřelit jablko z hlavy vlastního syna, tradičně datované na 18. listopadu 1307.",
+        "source_url": "https://en.wikipedia.org/wiki/William_Tell",
+        "source_quote": "Tell successfully split the apple with a bolt from his crossbow.",
+        "voice": "Jedna rána kuší, a z otce se v pověsti stal symbol vzdoru celé země.",
+        "image_prompt": "Photorealistic reenactment-style photo of a crossbow and an apple on a wooden post in a medieval Swiss village square, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Legenda, které Švýcaři dodnes věří víc než historikům",
+        "fact": "Podle průzkumu z roku 2004 se většina Švýcarů domnívala, že Tell skutečně existoval, i když se historikové v jeho historicitě dodnes shodují na opaku.",
+        "source_url": "https://en.wikipedia.org/wiki/William_Tell",
+        "source_quote": "a majority of Swiss believed that he actually existed",
+        "voice": "Vědecký spor o pár set let starý příběh národ jednoduše přehlasoval vlastní vírou.",
+        "image_prompt": "Photorealistic photo of a Swiss alpine village festival with folk costumes, mountains behind, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-lide-giacometti",
+    "country": "Švýcarsko",
+    "section": "Lidé",
+    "topic": "Alberto Giacometti",
+    "headline": "Sochař, jehož socha se prodala za rekordní částku",
+    "fact": "Socha Alberta Giacomettiho L'Homme au doigt se v roce 2015 vydražila za 141,3 milionu dolarů včetně poplatků aukční síně, což z ní udělalo jedno z nejdražších uměleckých děl vůbec vydražených.",
+    "source_url": "https://en.wikipedia.org/wiki/Alberto_Giacometti",
+    "source_quote": "L'Homme au doigt achieved the highest price: $126 million (£81,314,455.32), or $141.3 million with fees at Christie's in May 2015.",
+    "voice": "Vytáhlé postavičky z bronzu, kterým chybí maso na kostech, se ukázaly být zlatým dolem na aukcích.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of an elongated bronze sculpture displayed in a modern gallery with museum lighting, no text, 16:9",
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Umělec z italsky mluvícího údolí ve švýcarských horách",
+        "fact": "Giacometti se narodil v Borgonovu v údolí Bregaglia v kantonu Graubünden — italsky mluvícím koutu Švýcarska ukrytém mezi horami při hranici s Itálií.",
+        "source_url": "https://en.wikipedia.org/wiki/Alberto_Giacometti",
+        "voice": "Vyrostl v horské vesnici, a přesto z něj časem byl umělec pařížských kaváren.",
+        "image_prompt": "Photorealistic photo of a small stone alpine village in Val Bregaglia, Graubünden, dramatic mountain scenery, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vytáhlé postavy jako obraz osamělosti po válce",
+        "fact": "Giacomettiho typické extrémně útlé a vysoké figurky vznikaly hlavně po druhé světové válce a dodnes se čtou jako umělecký výraz lidské křehkosti a osamělosti poválečné doby.",
+        "source_url": "https://en.wikipedia.org/wiki/Alberto_Giacometti",
+        "source_quote": "His extremely tall and slender figurines",
+        "voice": "Čím míň sochař nechal na kostech masa, tím víc diváci v postavě viděli sami sebe.",
+        "image_prompt": "Photorealistic photo of a gallery room with several elongated bronze figures and dramatic shadows, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-kultura-alphorn",
+    "country": "Švýcarsko",
+    "section": "Kultura & tradice",
+    "topic": "Alphorn",
+    "headline": "Dřevěný nástroj dlouhý až čtyři metry",
+    "fact": "Alphorn, tradiční švýcarský dechový nástroj z rovného dřeva, měří 3 až 4 metry a jeho zvuk se kdysi nesl mezi horskými pastvinami na velké vzdálenosti.",
+    "source_url": "https://en.wikipedia.org/wiki/Alphorn",
+    "source_quote": "It consists of a long straight wooden natural horn, with a length of 3 to 4 metres (9.8 to 13 feet)",
+    "voice": "Nástroj tak dlouhý, že ho jeden hráč sotva sám unese na rameni.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a musician in traditional Swiss costume playing a long alphorn on an alpine meadow, mountains behind, daylight, no text, 16:9",
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Píšťala pastevců, než se stala symbolem národa",
+        "fact": "Alphorn se v alpské oblasti používal už od pozdního středověku — nejstarší doložená zmínka o platbě hráči na alphorn pochází z roku 1527 z účetní knihy kláštera Svatého Urbana.",
+        "source_url": "https://en.wikipedia.org/wiki/Alphorn",
+        "source_quote": "The first documented use of the German word Alphorn is in a payment recorded in the 1527 accounts ledger of Saint Urban's Abbey in Pfaffnau.",
+        "voice": "Kdysi svolával krávy na pastvinu, dnes vystupuje na koncertních pódiích.",
+        "image_prompt": "Photorealistic historical-style photo of a shepherd with an alphorn on a green alpine hillside, old monastery visible in distance, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zvuk, který nahrazoval zprávy v horách bez cest",
+        "fact": "V hornaté krajině bez přímé viditelnosti mezi vesnicemi sloužil alphorn jako komunikační nástroj na dálku, protože jeho nízké tóny se horským vzduchem nesou dál než lidský hlas.",
+        "source_url": "https://en.wikipedia.org/wiki/Alphorn",
+        "voice": "Než existovaly telefony, dorozumívali se lidé v horách přes údolí pomocí jednoho dlouhého kusu dřeva.",
+        "image_prompt": "Photorealistic photo of two separate alpine valleys with mountain ridges between them, misty morning light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-kultura-souboj-krav",
+    "country": "Švýcarsko",
+    "section": "Kultura & tradice",
+    "topic": "Souboje krav",
+    "headline": "Krávy, které o vedení stáda bojují samy",
+    "fact": "V kantonu Valais se od 20. let 20. století pořádají tradiční souboje krav zvané combat de reines, kterých se v některých letech účastnilo až 50 000 diváků.",
+    "source_url": "https://en.wikipedia.org/wiki/Combat_de_Reines",
+    "source_quote": "began in the 1920s and has drawn as many as 50,000 spectators in a year",
+    "voice": "Lidé si sednou na tribunu a sledují, jak si krávy samy mezi sebou vyřídí, kdo bude na pastvině šéfkou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of two Hérens cattle cows pushing heads together in an arena, spectators blurred in background, Valais mountains behind, 16:9",
+    "ll": [7.2939, 46.2225],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Plemeno Hérens, které rvačky miluje samo od sebe",
+        "fact": "Do soubojů nastupují krávy plemene Hérens, pojmenované po údolí Val d'Hérens, které mají přirozený pud utkat se o postavení v čele stáda; soutěžním kravám se navíc zabrušují rohy.",
+        "source_url": "https://en.wikipedia.org/wiki/Combat_de_Reines",
+        "source_quote": "using cows from the local Hérens breed",
+        "voice": "Nikdo je netrénuje k boji, ony si o pořadí ve stádě řeknou úplně samy.",
+        "image_prompt": "Photorealistic close-up photo of a Hérens cattle cow with dark coat and blunted horns on an alpine pasture, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vítězka jménem královna královen",
+        "fact": "Vítězná kráva finálového klání v Aproz získává titul La Reine des Reines, tedy královna královen, a její cena se poté prudce zvyšuje — zvyk odráží, jak silně je chov dobytka spjatý s místní identitou horského kantonu.",
+        "source_url": "https://en.wikipedia.org/wiki/Combat_de_Reines",
+        "source_quote": "a grand final is held in Aproz",
+        "voice": "Jedna vyhraná bitva na pastvině dokáže krávě zvednout cenu jako u šampionky.",
+        "image_prompt": "Photorealistic aerial photo of a Valais alpine village pasture with cattle grazing, mountain backdrop, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-kultura-chalandamarz",
+    "country": "Švýcarsko",
+    "section": "Kultura & tradice",
+    "topic": "Chalandamarz",
+    "headline": "Rétorománský svátek, který vyhání zimu zvonci",
+    "fact": "Chalandamarz se v rétorománsky mluvících vesnicích Engadinu slaví každoročně 1. března a označuje symbolický konec zimy.",
+    "source_url": "https://en.wikipedia.org/wiki/Chalandamarz",
+    "source_quote": "It is celebrated on, and named for, the First of March (Calendae Martis) and marks the end of winter.",
+    "voice": "Konec zimy se v horách neoznamuje kalendářem, ale rachotem zvonců, které nesou děti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of children in traditional blue shirts and red pointed caps ringing large cowbells in an Engadin village street, snowy mountains behind, 16:9",
+    "ll": [9.9721, 46.6013],
+    "tags": ["kulturni-geografie", "jazykoveda", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Děti v modrých košilích s velkými kravskými zvonci",
+        "fact": "Při průvodu obcházejí engadinské děti vesnici v modrých košilích s šátky a červenými špičatými čepicemi; menší děti nesou malé zvonky jako telata a starší velké zvonce zvané plumpas jako dospělé krávy.",
+        "source_url": "https://en.wikipedia.org/wiki/Chalandamarz",
+        "source_quote": "the small children with the small bells are the calves, while the boys and girls with the large, deep-sounding bells, the Plumpas, are the cows",
+        "voice": "Každé dítě v průvodu hraje roli buď telete, nebo dospělé krávy — a tu roli si nevybírá náhodou.",
+        "image_prompt": "Photorealistic photo of an Engadin village street during a spring parade, children in traditional costumes with cowbells, snow-capped mountains, 16:9"
+      },
+      "kartograf": {
+        "headline": "Svátek starší než samotná rétorománština",
+        "fact": "Jméno svátku se odvozuje od latinského Calendae Martis, římského označení pro první březnový den — starý římský zvyk tak přežil staletí a dodnes drží pohromadě rétorománsky mluvící komunitu v Graubündenu.",
+        "source_url": "https://en.wikipedia.org/wiki/Chalandamarz",
+        "source_quote": "It is celebrated on, and named for, the First of March (Calendae Martis) and marks the end of winter.",
+        "voice": "Bez rétorománštiny by tenhle zvyk dávno zanikl, a bez zvyku by řeč možná už tak pevně nedržela pohromadě.",
+        "image_prompt": "Photorealistic photo of old stone Engadin village architecture with traditional sgraffito wall decorations, festival day, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-umeni-paul-klee",
+    "country": "Švýcarsko",
+    "section": "Umění",
+    "topic": "Paul Klee",
+    "headline": "Malíř s vlastním muzeem a devíti tisíci díly",
+    "fact": "Paul Klee za svůj život vytvořil zhruba 9000 uměleckých děl a jeho tvorbě je v Bernu věnováno celé muzeum Zentrum Paul Klee.",
+    "source_url": "https://en.wikipedia.org/wiki/Paul_Klee",
+    "source_quote": "His legacy comprised about 9,000 works of art.",
+    "voice": "Namaloval tolik obrazů, že jedno muzeum sotva stačí na jejich střídání.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of the Zentrum Paul Klee museum building near Bern, distinctive wave-shaped architecture, green countryside, daylight, no text, 16:9",
+    "ll": [7.4474, 46.9480],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rok, kdy namaloval přes tisíc obrazů",
+        "fact": "V roce 1939, krátce před svou smrtí, vytvořil Klee přes 1200 děl — nejplodnější rok celé jeho tvůrčí kariéry.",
+        "source_url": "https://en.wikipedia.org/wiki/Paul_Klee",
+        "source_quote": "over 1,200 works",
+        "voice": "Čím míň času mu zbývalo, tím rychleji stíhal malovat.",
+        "image_prompt": "Photorealistic photo of an artist's studio with many small colorful paintings pinned on the walls, warm light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Umělec na pomezí několika stylů najednou",
+        "fact": "Klee ve svém díle propojoval prvky expresionismu, kubismu i surrealismu, aniž by se natrvalo zařadil k jedinému z těchto směrů — jeho tvorba tak dodnes slouží jako příklad umělce, kterého nejde jednoduše zaškatulkovat.",
+        "source_url": "https://en.wikipedia.org/wiki/Paul_Klee",
+        "source_quote": "His highly individual style was influenced by movements in art that included expressionism, cubism, and surrealism.",
+        "voice": "Kritici ho zkoušeli zařadit do škatulky, on jim z ní vždycky nenápadně vyklouzl.",
+        "image_prompt": "Photorealistic photo of a colorful abstract-style painting hanging in a gallery, soft museum lighting, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-umeni-le-corbusier",
+    "country": "Švýcarsko",
+    "section": "Umění",
+    "topic": "Le Corbusier",
+    "headline": "Architekt, který si vymyslel vlastní jméno",
+    "fact": "Architekt Le Corbusier se narodil jako Charles-Édouard Jeanneret 6. října 1887 ve švýcarském městě La Chaux-de-Fonds a svůj umělecký pseudonym přijal až v roce 1920.",
+    "source_url": "https://en.wikipedia.org/wiki/Le_Corbusier",
+    "source_quote": "Charles-Édouard Jeanneret was born on 6 October 1887 in La Chaux-de-Fonds, a city in the Neuchâtel canton in the Romandie region of Switzerland.",
+    "voice": "Než se stal světově známým architektem, musel se napřed rozhodnout přestat být Jeanneretem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of the town of La Chaux-de-Fonds with its grid-pattern streets, Swiss Jura mountains around, daylight, no text, 16:9",
+    "ll": [6.8250, 47.1032],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sedmnáct staveb po celém světě jako jedno dědictví",
+        "fact": "V roce 2016 bylo sedmnáct staveb Le Corbusiera v sedmi zemích společně zapsáno na seznam UNESCO jako jeho výjimečný přínos modernímu architektonickému hnutí.",
+        "source_url": "https://en.wikipedia.org/wiki/Le_Corbusier",
+        "source_quote": "In 2016, seventeen projects by Le Corbusier in seven countries were inscribed in the list of UNESCO World Heritage Sites as The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement.",
+        "voice": "Žádná jiná stavba na seznamu UNESCO nepotřebuje sedmnáct různých adres najednou.",
+        "image_prompt": "Photorealistic photo of a modernist concrete building facade in Le Corbusier's architectural style, clean geometric lines, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rodák z hodinářského města, co proslavil beton",
+        "fact": "La Chaux-de-Fonds, rodné město Le Corbusiera, bylo proslulé výrobou hodinek a jeho pravidelná mřížková urbanistická struktura podle historiků ovlivnila i to, jak později architekt přemýšlel o funkčním uspořádání moderních měst.",
+        "source_url": "https://en.wikipedia.org/wiki/Le_Corbusier",
+        "voice": "Vyrostl mezi přesnými hodinovými strojky, a nakonec navrhoval budovy se stejnou přesností.",
+        "image_prompt": "Photorealistic aerial photo of La Chaux-de-Fonds grid-pattern urban layout surrounded by Jura mountains, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-umeni-mario-botta",
+    "country": "Švýcarsko",
+    "section": "Umění",
+    "topic": "Mario Botta",
+    "headline": "Architekt z Ticina, co staví podle geometrie",
+    "fact": "Architekt Mario Botta se narodil 1. dubna 1943 v Mendrisiu v kantonu Ticino a jeho stavby jsou typické silným důrazem na jednoduché geometrické tvary.",
+    "source_url": "https://en.wikipedia.org/wiki/Mario_Botta",
+    "source_quote": "Born (1943-04-01) 1 April 1943 (age 83) Mendrisio, Switzerland",
+    "voice": "Kruh, čtverec, válec — z těchhle základních tvarů dokázal poskládat muzea po celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a geometric building facade designed in Mario Botta's style, strong brick pattern, daylight, no text, 16:9",
+    "ll": [8.9808, 45.8697],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Švýcarský architekt navrhl muzeum moderního umění v San Franciscu",
+        "fact": "Mezi Bottova nejznámější díla patří muzeum SFMOMA v San Franciscu z roku 1994 nebo katedrála v Évry ve Francii z roku 1995 — jeho stavby tak najdeme na několika kontinentech.",
+        "source_url": "https://en.wikipedia.org/wiki/Mario_Botta",
+        "source_quote": "Among his significant works are the San Francisco Museum of Modern Art (1994), Évry Cathedral in France (1995)",
+        "voice": "Architekt z malého kantonu Ticino nakonec podepsal budovy, které znají lidé na druhé straně světa.",
+        "image_prompt": "Photorealistic photo of the SFMOMA museum building exterior with geometric striped facade, urban San Francisco setting, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Italsky mluvící kanton s vlastní architektonickou školou",
+        "fact": "Botta patří ke generaci architektů z italsky mluvícího kantonu Ticino, kteří v druhé polovině minulého století vytvořili osobitý regionální styl, spojující italskou tradici se švýcarskou přesností.",
+        "source_url": "https://en.wikipedia.org/wiki/Mario_Botta",
+        "voice": "Na hranici dvou kultur nakonec vznikl styl, který nepatří úplně ani jedné z nich.",
+        "image_prompt": "Photorealistic photo of contemporary Ticino architecture blending Italian and Swiss styles, mountain backdrop, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-sport-federer",
+    "country": "Švýcarsko",
+    "section": "Sport",
+    "topic": "Roger Federer",
+    "headline": "Dvacet grandslamových titulů z Basileje",
+    "fact": "Roger Federer, rodák z Basileje, vyhrál za kariéru dvacet grandslamových titulů ve dvouhře a celkem 103 turnajů na okruhu ATP.",
+    "source_url": "https://en.wikipedia.org/wiki/Roger_Federer",
+    "source_quote": "Federer won 103 singles titles on the ATP Tour, the second most since the start of the Open Era in 1968, including 20 major men's singles titles.",
+    "voice": "Než se proslavil na centrálním kurtu ve Wimbledonu, byl to obyčejný kluk z Basileje s raketou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a tennis player mid-serve on a grass court, Wimbledon-style stadium, daylight, no text, 16:9",
+    "ll": [7.5886, 47.5596],
+    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rekordních 237 týdnů v řadě na špici žebříčku",
+        "fact": "Federer strávil na pozici světové jedničky celkem 310 týdnů, z toho rekordních 237 týdnů v řadě bez přerušení.",
+        "source_url": "https://en.wikipedia.org/wiki/Roger_Federer",
+        "source_quote": "He was ranked as the world No. 1 in men's singles by the Association of Tennis Professionals (ATP) for 310 weeks (second-most of all time), including a record 237 consecutive weeks.",
+        "voice": "Skoro pět let v kuse zůstal na vrcholu žebříčku, aniž by ho odtamtud kdokoliv na chvíli sesadil.",
+        "image_prompt": "Photorealistic photo of a tennis player celebrating on court with a trophy, stadium lights, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá země, ale tenisová velmoc",
+        "fact": "Švýcarsko má jen málo přes osm milionů obyvatel, a přesto z něj vzešli hned dva hráči, Federer a později i Martina Hingisová, kteří ovládli světový žebříček.",
+        "source_url": "https://en.wikipedia.org/wiki/Roger_Federer",
+        "voice": "Země velikosti jednoho většího kraje dala světovému tenisu hned dvě jedničky žebříčku.",
+        "image_prompt": "Photorealistic photo of a small Swiss alpine village nestled among mountains, symbolizing a small country, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-sport-lausanne",
+    "country": "Švýcarsko",
+    "section": "Sport",
+    "topic": "Lausanne, olympijská metropole",
+    "headline": "Město, které hostí sídlo olympijského hnutí",
+    "fact": "Lausanne je od roku 1994 oficiálně označována jako olympijská metropole a sídlí v ní Mezinárodní olympijský výbor i mezinárodní Sportovní arbitrážní soud.",
+    "source_url": "https://en.wikipedia.org/wiki/Lausanne",
+    "source_quote": "the International Olympic Committee (which has recognized the city as the 'Olympic Capital' since 1994), the Court of Arbitration for Sport and some 55 international sport associations",
+    "voice": "Žádné olympijské hry se tu nikdy nekonaly, a přesto všechny olympiády na světě řídí lidé odsud.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of Lausanne lakefront with the Olympic Museum building, Lake Geneva and Alps in background, daylight, no text, 16:9",
+    "ll": [6.6323, 46.5197],
+    "tags": ["socioekonomicka-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přes padesát sportovních federací na jednom místě",
+        "fact": "V Lausanne dnes sídlí zhruba 55 mezinárodních sportovních asociací, díky čemuž se městu přezdívá hlavní olympijské město světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Lausanne",
+        "source_quote": "some 55 international sport associations",
+        "voice": "Na jednu procházku městem narazíš na sídla organizací, které rozhodují o sportu na celé planetě.",
+        "image_prompt": "Photorealistic photo of the Olympic Museum interior with displayed torches and medals, soft lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Proč si olympijský výbor vybral zrovna Švýcarsko",
+        "fact": "Švýcarská neutralita a stabilita ve dvacátém století z něj udělaly přirozené sídlo pro mezinárodní organizace, které chtěly zůstat mimo politické spory jednotlivých států — Mezinárodní olympijský výbor tak není jediná instituce, která si tuhle zemi vybrala z podobných důvodů.",
+        "source_url": "https://en.wikipedia.org/wiki/Lausanne",
+        "voice": "Neutralita se tu vyplatila i sportu, ne jen politice.",
+        "image_prompt": "Photorealistic photo of Geneva lake skyline with international organization flags, calm water, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-sport-cresta-run",
+    "country": "Švýcarsko",
+    "section": "Sport",
+    "topic": "Cresta Run",
+    "headline": "Ledová dráha, kde se zrodil skeleton",
+    "fact": "Cresta Run ve Svatém Mořici je 1,2125 kilometru dlouhá ledová dráha, která se považuje za rodiště moderního skeletonu a hostila tuto disciplínu na olympiádách 1928 a 1948.",
+    "source_url": "https://en.wikipedia.org/wiki/Cresta_Run",
+    "source_quote": "The Cresta Run is often considered to be the birthplace of modern day skeleton and acted as the course for Skeleton events in the 1928 and 1948 Winter Olympics.",
+    "voice": "Jedna dráha ledu ve švýcarských horách stačila k tomu, aby se z ní stal olympijský sport.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of an icy toboggan run winding through a snowy alpine landscape, St. Moritz mountains, daylight, no text, 16:9",
+    "ll": [9.8355, 46.4908],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Trať, kterou postavili britští důstojníci",
+        "fact": "Dráhu poblíž osady Cresta postavili britští vojenští důstojníci v roce 1884 a dodnes patří mezi jen několik málo tratí na světě určených výhradně pro skeleton.",
+        "source_url": "https://en.wikipedia.org/wiki/Cresta_Run",
+        "source_quote": "It was built in 1884 near the hamlet of Cresta",
+        "voice": "Vojáci si dráhu postavili pro zábavu, a nakonec z ní udělali olympijskou disciplínu.",
+        "image_prompt": "Photorealistic vintage-style photo of a skeleton sled rider on an icy alpine track, historic St. Moritz surroundings, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Horské městečko, které vsadilo na zimní turistiku",
+        "fact": "Svatý Mořic v Engadinu patří k místům, kde díky rozvoji horských hotelů začala vznikat zimní alpská turistika, ačkoli hosté sem původně jezdili především v létě.",
+        "source_url": "https://en.wikipedia.org/wiki/Cresta_Run",
+        "voice": "Nejdřív sem jezdili lidé kvůli létu, teprve pak někdo přišel na to, že zima může být stejně lákavá.",
+        "image_prompt": "Photorealistic aerial photo of St. Moritz village with a frozen lake and snowy Alps around, winter resort scenery, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-jazyk-ctyri-jazyky",
+    "country": "Švýcarsko",
+    "section": "Jazyk & slova",
+    "topic": "Čtyři úřední jazyky",
+    "headline": "Země, kde na bankovce najdeš hned čtyři jazyky",
+    "fact": "Švýcarsko má čtyři národní jazyky — němčinu, francouzštinu, italštinu a rétorománštinu — kterými mluví jako hlavním jazykem 62 %, 22,7 %, 8,2 % a 0,5 % obyvatel.",
+    "source_url": "https://en.wikipedia.org/wiki/Languages_of_Switzerland",
+    "source_quote": "The four national languages of Switzerland are German, French, Italian, and Romansh.",
+    "voice": "Jedna bankovka, čtyři jazyky, a nikdo se kvůli tomu netváří překvapeně.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Pozdrav se mění hned za kopcem",
+        "fact": "Cestou napříč Švýcarskem se pozdrav mění z německého Grüezi na francouzské Bonjour, italské Buongiorno a rétorománské Bun di, aniž byste museli překročit jedinou státní hranici.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_Switzerland",
+        "voice": "Sto kilometrů cesty autem, a najednou zdravíš úplně jiným slovem.",
+        "image_prompt": "Photorealistic photo of a Swiss road sign showing place names in different languages, alpine road, daylight, no readable text focus, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hranice jazyků nekopírují hranice kantonů",
+        "fact": "Jazykové hranice ve Švýcarsku často probíhají napříč jednotlivými kantony — dvojjazyčný kanton Fribourg leží přesně na pomezí německy a francouzsky mluvící oblasti podél řeky Sarine.",
+        "source_url": "https://en.wikipedia.org/wiki/Languages_of_Switzerland",
+        "voice": "Kde končí jeden jazyk a začíná druhý, nerozhoduje mapa kantonů, ale řeka.",
+        "image_prompt": "Photorealistic photo of the old town of Fribourg straddling the Sarine river, bilingual Swiss town, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-jazyk-retoromanstina",
+    "country": "Švýcarsko",
+    "section": "Jazyk & slova",
+    "topic": "Rétorománština",
+    "headline": "Čtvrtý jazyk, kterým mluví jen zlomek země",
+    "fact": "Rétorománštinou mluvilo v roce 2019 jako hlavním jazykem jen 40 074 obyvatel Švýcarska, což z ní dělá zdaleka nejmenší ze čtyř národních jazyků.",
+    "source_url": "https://en.wikipedia.org/wiki/Romansh_language",
+    "source_quote": "In 2019, 40,074 Swiss residents primarily spoke Romansh",
+    "voice": "Jazyk s tak málo mluvčími by se snadno vešel celý do jedné menší městské čtvrti.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Řeč, kterou uslyšíte hlavně v Graubündenu",
+        "fact": "V roce 2017 rétorománštinu jako svůj hlavní jazyk používalo 28 698 obyvatel kantonu Graubünden, tedy necelých 15 % populace kantonu.",
+        "source_url": "https://en.wikipedia.org/wiki/Romansh_language",
+        "source_quote": "in 2017, 28,698 inhabitants of the canton of the Grisons (14.7% of the population) used it as their main language",
+        "voice": "V jednom kantonu narazíte na řeč, kterou jinde ve Švýcarsku skoro neuslyšíte.",
+        "image_prompt": "Photorealistic photo of a mountain village signpost in a Graubünden alpine setting, greenery and peaks around, no readable text focus, 16:9"
+      },
+      "kartograf": {
+        "headline": "Úředním jazykem se stala až ve dvacátém století",
+        "fact": "Rétorománština se národním jazykem Švýcarska stala v roce 1938 a plnohodnotným úředním jazykem pro komunikaci se svými mluvčími až v roce 1996.",
+        "source_url": "https://en.wikipedia.org/wiki/Romansh_language",
+        "source_quote": "a national language of Switzerland since 1938, and as an official language in correspondence with Romansh-speaking citizens since 1996",
+        "voice": "Řeč, kterou lidé mluvili po staletí, čekala na oficiální uznání až do doby, kdy už existovala televize.",
+        "image_prompt": "Photorealistic photo of an old official document with handwritten text lying on a wooden desk, archival warm tone, no readable text focus, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-jazyk-rostigraben",
+    "country": "Švýcarsko",
+    "section": "Jazyk & slova",
+    "topic": "Röstigraben",
+    "headline": "Neviditelná hranice pojmenovaná po bramboráku",
+    "fact": "Röstigraben je pojem pro pomyslnou kulturní a politickou hranici mezi německy a francouzsky mluvícím Švýcarskem, pojmenovanou po bramborovém pokrmu rösti typickém pro německy mluvící oblast.",
+    "source_url": "https://en.wikipedia.org/wiki/R%C3%B6stigraben",
+    "source_quote": "Röstigraben refers to the cultural boundary between German-speaking Switzerland and Romandy, the French-speaking parts.",
+    "voice": "Jedna smažená bramborová placka dala jméno hranici, kterou na mapě nikde nenajdete nakreslenou.",
+    "visual_type": "typographic",
+    "tags": ["jazykoveda", "kulturni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hranice, která se ukáže hlavně ve volbách",
+        "fact": "Termín Röstigraben se běžně používá vždy, když se výsledky hlasování v německy a francouzsky mluvících kantonech výrazně liší.",
+        "source_url": "https://en.wikipedia.org/wiki/R%C3%B6stigraben",
+        "source_quote": "become a familiar facetious expression used whenever differences arise, e.g. different voting results",
+        "voice": "Referendum jednou dopadne jinak na jedné straně řeky než na druhé, a hned je řeč o Röstigrabenu.",
+        "image_prompt": "Photorealistic photo of a Swiss voting ballot box in a town hall, bilingual signage nearby, daylight, no readable text focus, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řeka Sarine jako symbolická čára mezi kulturami",
+        "fact": "Za geografický střed pomyslné hranice se často označuje údolí řeky Sarine v dvojjazyčném kantonu Fribourg, kde se německy a francouzsky mluvící oblasti Švýcarska přímo stýkají.",
+        "source_url": "https://en.wikipedia.org/wiki/R%C3%B6stigraben",
+        "source_quote": "with the Saane/Sarine river valley in the bilingual canton of Fribourg serving as the geographic separator between language areas",
+        "voice": "Jedna řeka dokáže na mapě oddělit dva úplně jiné způsoby, jak se dívat na stejnou zemi.",
+        "image_prompt": "Photorealistic photo of the Sarine river valley in Fribourg with an old bridge, town on the hill, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-jidlo-fondue",
+    "country": "Švýcarsko",
+    "section": "Jídlo",
+    "topic": "Sýrové fondue",
+    "headline": "Zimní jídlo, které vzniklo z tvrdého sýra a starého chleba",
+    "fact": "Nejstarší dochovaný recept na sýrové fondue pochází z curyšské kuchařky z roku 1698, ale národním pokrmem se stalo teprve ve 30. letech 20. století díky propagaci Švýcarského sýrařského svazu.",
+    "source_url": "https://en.wikipedia.org/wiki/Fondue",
+    "source_quote": "The earliest known recipe for the modern form of cheese fondue comes from a 1698 book published in Zürich, under the name 'Käss mit Wein zu kochen.'",
+    "voice": "Nejdřív to byl způsob, jak nevyhodit tvrdý sýr, dnes je to národní symbol, o kterém se debatuje u stolu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a traditional Swiss cheese fondue pot with melted cheese and bread cubes on forks, wooden table, warm light, no text, 16:9",
+    "tags": ["kulturni-geografie", "socioekonomicka-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Bramborák místo chleba, hory místo moře",
+        "fact": "Fondue vznikla v alpských oblastech jako způsob, jak roztaveným sýrem a vínem změkčit zatvrdlý chléb a získat kalorickou zimní stravu v době, kdy čerstvé potraviny v horách chyběly.",
+        "source_url": "https://en.wikipedia.org/wiki/Fondue",
+        "source_quote": "By melting cheese and blending it with wine, they created a warm, flavorful dish that softened hardened bread and provided a source of calories during colder months.",
+        "voice": "Tvrdý chleba, co by jinde skončil v koši, roztavený sýr proměnil v celou večeři.",
+        "image_prompt": "Photorealistic photo of a rustic alpine chalet kitchen with cheese and bread ingredients, winter scene through the window, warm light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jak marketing proměnil místní jídlo v národní symbol",
+        "fact": "Švýcarský sýrařský svaz ve 20. století záměrně propagoval fondue jako pokrm celé země prostřednictvím reklamních kampaní a mezinárodních veletrhů, čímž z regionální speciality vytvořil symbol národní jednoty.",
+        "source_url": "https://en.wikipedia.org/wiki/Fondue",
+        "source_quote": "Fondue was popularized as a Swiss national dish by the Swiss Cheese Union (Schweizerische Käseunion) in the 1930s",
+        "voice": "Sýr se roztavil stejně jako předtím, ale příběh kolem něj náhle dostal národní rozměr.",
+        "image_prompt": "Photorealistic photo of a vintage-style Swiss advertisement scene for fondue displayed in an old shop window, retro colors, no readable text focus, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-jidlo-rosti",
+    "country": "Švýcarsko",
+    "section": "Jídlo",
+    "topic": "Rösti",
+    "headline": "Bramborák, po kterém se pojmenovala jazyková hranice",
+    "fact": "Rösti, pokrm z nastrouhaných brambor smažených na pánvi, vznikl jako snídaně bernských a fribourských sedláků a dal jméno pomyslné hranici mezi jazykovými oblastmi zvané Röstigraben.",
+    "source_url": "https://en.wikipedia.org/wiki/R%C3%B6sti",
+    "source_quote": "It was originally a breakfast dish, commonly eaten by farmers in the canton of Bern and in parts of the canton of Fribourg.",
+    "voice": "Obyčejná snídaně sedláků z Bernu dala jméno hranici mezi dvěma jazykovými světy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a golden crispy potato rösti cake on a plate, rustic Swiss farmhouse kitchen table, warm light, no text, 16:9",
+    "ll": [7.4474, 46.9480],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-6"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept, který každá kuchyně dělá trochu jinak",
+        "fact": "Základ rösti tvoří nahrubo nastrouhané syrové nebo předvařené brambory smažené na másle nebo oleji, ale každý region i restaurace přidává vlastní verzi — od sýra po slaninu.",
+        "source_url": "https://en.wikipedia.org/wiki/R%C3%B6sti",
+        "source_quote": "Rösti dishes are made with coarsely grated potato, either parboiled or raw",
+        "voice": "Základ je pořád stejný, brambor, ale co se do pánve přidá navíc, to už záleží na kuchaři.",
+        "image_prompt": "Photorealistic close-up photo of rösti with melted cheese and bacon on top, food photography style, warm light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, které rozděluje zemi i ve slovníku",
+        "fact": "Pojem Röstigraben ukazuje, jak obyčejné regionální jídlo dokázalo přerůst v symbol kulturního rozdílu mezi německy a francouzsky mluvící částí Švýcarska.",
+        "source_url": "https://en.wikipedia.org/wiki/R%C3%B6sti",
+        "voice": "Z pánve s bramborem se nakonec stal způsob, jak celá země mluví o vlastních rozdílech.",
+        "image_prompt": "Photorealistic aerial photo of Swiss farmland split between two regions with different field patterns, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-jidlo-capuns",
+    "country": "Švýcarsko",
+    "section": "Jídlo",
+    "topic": "Capuns",
+    "headline": "Knedlíčky zabalené do mangoldového listu",
+    "fact": "Capuns, tradiční pokrm kantonu Graubünden, se dělá z knedlíkového těsta se sušeným masem zabaleného do mangoldového listu a vaří se v bujonu se smetanou.",
+    "source_url": "https://en.wikipedia.org/wiki/Capuns",
+    "source_quote": "They are made from Spätzle dough with pieces of dried meat, such as Bündnerfleisch and/or Salsiz, and rolled in a chard leaf.",
+    "voice": "List mangoldu tu nahrazuje těsto na taštičky — jednodušší obal si v horách asi těžko představíte.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of capuns dish, chard-wrapped dumplings in creamy broth, rustic Graubünden table setting, warm light, no text, 16:9",
+    "ll": [9.2000, 46.7734],
+    "tags": ["kulturni-geografie", "regionalni-geografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept vznikl v západní části kantonu",
+        "fact": "Capuns podle historiků vznikly v Surselvě, tedy v západní části kantonu Graubünden, ačkoli se na přesné receptuře a náplni dodnes neshodnou ani samotní místní kuchaři.",
+        "source_url": "https://en.wikipedia.org/wiki/Capuns",
+        "source_quote": "Although there is no agreement on filling or method, it is clear that Capuns originated in Surselva, a region in the West of the canton.",
+        "voice": "Recept se v každé vesnici trochu liší, jedno ale mají všechny verze společné — mangoldový list.",
+        "image_prompt": "Photorealistic photo of a Surselva valley village in Graubünden, traditional wooden houses, alpine setting, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Zimní zásoba proměněná v regionální specialitu",
+        "fact": "Capuns sloužily v 19. a na počátku 20. století jako způsob, jak v horských domácnostech uchovat maso a těsto přes dlouhou zimu, kdy byla čerstvá zelenina jen těžko dostupná.",
+        "source_url": "https://en.wikipedia.org/wiki/Capuns",
+        "source_quote": "By the 19th and early 20th centuries, Capuns had solidified as a staple preserved food in Graubünden households, particularly for enduring harsh winters when fresh produce was scarce",
+        "voice": "Jídlo vzniklé z nutnosti přežít zimu se dnes objednává v restauracích jako pochoutka.",
+        "image_prompt": "Photorealistic photo of an old alpine farmhouse pantry with preserved meats and dried herbs, historical rustic feel, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-historie-listina-1291",
+    "country": "Švýcarsko",
+    "section": "Historie",
+    "topic": "Zakládající listina z roku 1291",
+    "headline": "Dokument, který dal Švýcarsku národní svátek",
+    "fact": "Federální listina z počátku srpna 1291, kterou uzavřely kantony Uri, Schwyz a Unterwalden, inspirovala ve 20. století datum švýcarského národního svátku 1. srpna.",
+    "source_url": "https://en.wikipedia.org/wiki/Federal_Charter_of_1291",
+    "source_quote": "It is dated to early August 1291, which in the 20th century inspired the date of Swiss National Day, 1 August.",
+    "voice": "Tři horské kantony si tehdy nemohly ani tušit, že podepisují dokument, který bude země slavit o staletí později.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of the Rütli meadow by Lake Lucerne, dramatic Alps scenery, historic site, daylight, no text, 16:9",
+    "ll": [8.6153, 46.9814],
+    "tags": ["dejiny", "kartografie", "rocnik-7"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Symbol důležitý až o staletí později",
+        "fact": "Ačkoliv listinu z roku 1291 dnes Švýcaři vnímají jako zakládající dokument státu, ve švýcarské historiografii nabyla na významu až koncem 19. století.",
+        "source_url": "https://en.wikipedia.org/wiki/Federal_Charter_of_1291",
+        "source_quote": "The charter of 1291 became important in the historiography of Switzerland only in the late 19th century.",
+        "voice": "Šest set let ležel dokument v archivu, než si ho země vybrala za svůj symbolický rodný list.",
+        "image_prompt": "Photorealistic photo of an old parchment document with wax seals under glass in a museum display case, archival lighting, no readable text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Aliance tří horských údolí uprostřed Alp",
+        "fact": "Listina spojila tři horská údolí uprostřed centrálního Švýcarska — polohu, kterou historikové považují za strategicky výhodnou díky kontrole alpských horských průsmyků spojujících sever a jih Evropy.",
+        "source_url": "https://en.wikipedia.org/wiki/Federal_Charter_of_1291",
+        "source_quote": "the union of three cantons in what is now central Switzerland",
+        "voice": "Kdo ovládl horské průsmyky, ovládl i cestu mezi severem a jihem celého kontinentu.",
+        "image_prompt": "Photorealistic aerial photo of central Swiss Alps mountain passes with a historic route winding through valleys, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-historie-kalvin-zeneva",
+    "country": "Švýcarsko",
+    "section": "Historie",
+    "topic": "Jan Kalvín v Ženevě",
+    "headline": "Reformátor, který do Ženevy dorazil kvůli objížďce",
+    "fact": "Jan Kalvín se do Ženevy dostal v roce 1536 kvůli vojenským manévrům, které ho přinutily změnit trasu cesty, a zůstal tam přesvědčen francouzským reformátorem Williamem Farelem.",
+    "source_url": "https://en.wikipedia.org/wiki/John_Calvin",
+    "source_quote": "Due to military manoeuvres of imperial and French forces, he was forced to make a detour to the south, bringing him to Geneva.",
+    "voice": "Měl namířeno úplně jinam, a nakonec se stal mužem, který na staletí formoval jedno švýcarské město.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of Geneva old town with St. Pierre Cathedral, historic Reformation-era architecture, daylight, no text, 16:9",
+    "ll": [6.1432, 46.2044],
+    "tags": ["dejiny", "kulturni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vyhnaný a o pár let později přivítaný zpátky",
+        "fact": "Kalvín byl z Ženevy krátce po svém příchodu vyhnán, ale ženevská rada si ho vyžádala zpět a on se do města vrátil 13. září 1541 s doprovodem a vozem pro rodinu.",
+        "source_url": "https://en.wikipedia.org/wiki/John_Calvin",
+        "source_quote": "Calvin returned on 13 September 1541 with an official escort and a wagon for his family.",
+        "voice": "Město ho nejdřív vyhnalo, a pak si pro něj samo poslalo doprovod.",
+        "image_prompt": "Photorealistic photo of a historic Geneva city gate and street, Reformation-era atmosphere, evening light, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ženeva jako centrum protestantské Evropy",
+        "fact": "Po Kalvínově návratu přijala ženevská rada 20. listopadu 1541 církevní řád zvaný Ecclesiastical Ordinances, kterým se Ženeva proměnila v modelové centrum reformované protestantské církve pro celou Evropu.",
+        "source_url": "https://en.wikipedia.org/wiki/John_Calvin",
+        "source_quote": "the council of Geneva passed the Ordonnances ecclésiastiques (Ecclesiastical Ordinances) on 20 November 1541",
+        "voice": "Jedno městské nařízení nakonec ovlivnilo, jak protestanti uvažují o církvi dodnes.",
+        "image_prompt": "Photorealistic photo of an old Geneva church interior with plain Reformation-era architecture, soft light through windows, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "ch-historie-ticino",
+    "country": "Švýcarsko",
+    "section": "Historie",
+    "topic": "Ticino jako poddané území",
+    "headline": "Kanton, který byl dřív jen podřízeným územím",
+    "fact": "Ticino se plnohodnotným kantonem švýcarské konfederace stalo teprve v roce 1803 na základě Napoleonovy Zprostředkovací listiny, předtím bylo po staletí jen podřízeným územím ovládaným jinými kantony.",
+    "source_url": "https://blog.nationalmuseum.ch/en/2024/02/why-is-ticino-part-of-switzerland/",
+    "source_quote": "The canton of Ticino came into being as part of this new order as a sovereign microstate encompassing all eight former bailiwicks",
+    "voice": "Staletí patřilo mezi ovládaná území, než se stalo rovnocenným kantonem jako ty, co ho kdysi ovládaly.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of the Bellinzona castles in Ticino canton, Italian-speaking Switzerland, historic fortifications, daylight, no text, 16:9",
+    "ll": [9.0257, 46.1944],
+    "tags": ["dejiny", "regionalni-geografie", "rocnik-8"],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jedno území, správa hned od několika kantonů",
+        "fact": "Před rokem 1803 spravovaly jednotlivé části dnešního Ticina různé kantony zvlášť — údolí Leventina patřilo výhradně Uri, zatímco další oblasti jako Lugano nebo Locarno společně řídilo dvanáct kantonů najednou.",
+        "source_url": "https://blog.nationalmuseum.ch/en/2024/02/why-is-ticino-part-of-switzerland/",
+        "source_quote": "Uri ruled the Leventina District alone and established the bailiwicks of Blenio, Riviera and Bellinzona in cooperation with Schwyz and Nidwalden. The other bailiwicks of Locarno, Vallemaggia, Lugano and Mendrisio were governed by the twelve cantons.",
+        "voice": "Jedno území, a přesto o něm najednou rozhodovalo tolik pánů, že se v tom museli místní sami vyznat.",
+        "image_prompt": "Photorealistic photo of a historic Ticino valley town with old stone bridges, Leventina district scenery, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Napoleon překreslil mapu švýcarských kantonů",
+        "fact": "Napoleonova Zprostředkovací listina z roku 1803 zrušila starý systém podřízených území a rovnou přidala ke konfederaci šest nových plnoprávných kantonů, mezi nimi i Ticino, Graubünden a Vaud.",
+        "source_url": "https://blog.nationalmuseum.ch/en/2024/02/why-is-ticino-part-of-switzerland/",
+        "source_quote": "This led to the Confederation being expanded by six cantons in 1803 (Aargau, Graubünden, St. Gallen, Thurgau, Ticino and Vaud).",
+        "voice": "Jedno francouzské rozhodnutí najednou proměnilo mapu švýcarských kantonů víc, než dokázala staletí předtím.",
+        "image_prompt": "Photorealistic photo of an old European map from the early 1800s showing Swiss cantons, archival document style, no readable text, 16:9"
+      }
+    }
+  }
+]

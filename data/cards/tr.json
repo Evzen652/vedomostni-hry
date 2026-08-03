@@ -1,0 +1,876 @@
+[
+  {
+    "id": "tr-mista-hagia-sofie",
+    "country": "Turecko",
+    "section": "Místa",
+    "topic": "Hagia Sofie",
+    "headline": "Chrám, který se dvakrát stal mešitou",
+    "fact": "Hagia Sofie v Istanbulu vznikla v letech 532–537 jako byzantský křesťanský chrám a více než pět set let platila za největší katedrálu na světě; po dobytí Konstantinopole roku 1453 ji Osmané přeměnili na mešitu, roku 1934 se stala muzeem a od roku 2020 je opět mešitou.",
+    "source_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+    "source_quote": "remained the world's largest church for more than five hundred years, until the abbey church at Cluny was completed in the 12th century",
+    "voice": "Jedna kupole, a pod ní se za patnáct set let vystřídaly modlitby tří různých podob víry.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide-angle shot of Hagia Sophia in Istanbul during golden hour, massive dome and minarets, Bosphorus strait in soft background, no people, no text, 16:9",
+    "ll": [
+      28.9802,
+      41.0086
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sultán se pomodlil v chrámu hned v den dobytí města",
+        "fact": "Když osmanská vojska 29. května 1453 dobyla Konstantinopol, sultán Mehmed II. vstoupil do města a ještě týž den se v Hagia Sofii zúčastnil páteční modlitby — chrám se tak symbolicky stal mešitou prakticky okamžitě.",
+        "source_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+        "source_quote": "Constantinople was conquered by the Ottoman forces on 29 May 1453. Sultan Mehmed II entered the city and performed the Friday prayer and khutbah (sermon) in Hagia Sophia.",
+        "voice": "Boje ve městě sotva utichly, a pod stejnou kupolí už zněla jiná modlitba.",
+        "image_prompt": "Photorealistic historical-style scene of Ottoman soldiers and a sultan figure entering Hagia Sophia's grand interior, warm afternoon light through high windows, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Chrám ve městě, které leží na dvou světadílech",
+        "fact": "Hagia Sofie stojí v evropské části Istanbulu — města rozděleného průlivem Bospor, kde asi dvě třetiny obyvatel žijí v Evropě a zbytek v Asii; tahle poloha na hranici kontinentů formovala i to, kdo si chrám v dějinách nárokoval.",
+        "source_url": "https://en.wikipedia.org/wiki/Istanbul",
+        "source_quote": "It is a city on two continents; about two-thirds of its population live in Europe and the rest in Asia.",
+        "voice": "Jedna víra tu dobyla druhou, ale kontinent se dobýt nedá — ten tu leží dál, rozpůlený řekou.",
+        "image_prompt": "Photorealistic aerial photo of Istanbul showing the Bosphorus strait dividing the European and Asian sides of the city, Hagia Sophia visible on the European shore, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-mista-kappadokie",
+    "country": "Turecko",
+    "section": "Místa",
+    "topic": "Kappadokie",
+    "headline": "Krajina komínů, které vytesala příroda i lidé",
+    "fact": "Kappadokie ve středním Turecku vznikla erozí sopečného tufu, který zvětrávání vymodelovalo do tvaru takzvaných víly komínů; místní obyvatelé si navíc do měkké horniny vyhloubili celá podzemní města.",
+    "source_url": "https://cs.wikipedia.org/wiki/Kappadokie",
+    "source_quote": "Tvrdší nerosty procesu zvětrávání takřka vůbec nepodléhají, což způsobilo vznik charakteristických 'komínů'.",
+    "voice": "Co jinde s kamenem dělá vítr celá tisíciletí, tady lidé napodobili krumpáčem pod zemí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Cappadocia's fairy chimney rock formations at sunrise, soft pink and orange sky, no people, no text, 16:9",
+    "ll": [
+      34.8286,
+      38.6431
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Podzemní město, kam se schovávaly celé vesnice",
+        "fact": "V měkkém tufu Kappadokie vznikla i rozsáhlá podzemní města — vyhloubili je místní křesťané jako úkryt před nájezdy a pronásledováním a uvnitř fungovala propracovaná obranná síť s kamennými dveřmi na uzavírání chodeb.",
+        "source_url": "https://en.wikipedia.org/wiki/Cappadocia",
+        "source_quote": "Cappadocia contains several underground cities... were dug by Christians to provide protection during the Arab raids and periods of persecution.",
+        "voice": "Nad zemí ticho a kopce, pod zemí tehdy klidně přebývala celá obec.",
+        "image_prompt": "Photorealistic photo inside an underground city tunnel in Cappadocia, carved stone corridors and a round stone door, warm lantern light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krajina, kterou dnes prohlížíte shora z balonu",
+        "fact": "Sopečné usazeniny, které formovaly kappadocký reliéf, se ukládaly zhruba před devíti až třemi miliony let — dnes nad stejnou krajinou při východu slunce létají desítky horkovzdušných balonů, díky nimž je vidět tvar celého údolí najednou.",
+        "source_url": "https://en.wikipedia.org/wiki/Cappadocia",
+        "source_quote": "Hot-air ballooning is especially popular in Cappadocia, particularly around Göreme, offering sunrise flights over the region's fairy chimneys and valleys.",
+        "voice": "Krajinu tvořily miliony let sopky a voda, dnes ji každé ráno obhlédnou turisté z koše balonu.",
+        "image_prompt": "Photorealistic photo of dozens of hot air balloons flying over Cappadocia's fairy chimney valley at sunrise, soft golden light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-mista-efes",
+    "country": "Turecko",
+    "section": "Místa",
+    "topic": "Efes",
+    "headline": "Přístavní město, které dnes leží daleko od moře",
+    "fact": "Antický Efes byl v době svého rozkvětu důležitým přístavem na pobřeží Egejského moře, ale řeka postupně zanášela jeho přístav bahnem, až se ruiny ocitly několik kilometrů od dnešní linie pobřeží.",
+    "source_url": "https://en.wikipedia.org/wiki/Ephesus",
+    "source_quote": "The harbour, today 5 kilometres inland, was slowly silted up by the river (today, Küçük Menderes) despite repeated dredging during the city's history.",
+    "voice": "Lodě sem kdysi přirážely přímo k městu, dnes musí návštěvník kus jít suchou nohou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the ancient ruins of Ephesus, Library of Celsus facade, marble columns, clear daylight, no people, 16:9",
+    "ll": [
+      27.3417,
+      37.9407
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Chrám, který patřil mezi sedm divů světa",
+        "fact": "V Efesu stál Artemidin chrám, dokončený kolem roku 550 př. n. l. a řazený mezi sedm divů starověkého světa — v době svého rozkvětu patřil mezi největší stavby tehdejšího řeckého světa.",
+        "source_url": "https://en.wikipedia.org/wiki/Ephesus",
+        "source_quote": "has been designated one of the Seven Wonders of the Ancient World",
+        "voice": "Ze slavného divu světa dnes zbyl jen osamělý sloup uprostřed louky.",
+        "image_prompt": "Photorealistic photo of the single remaining reconstructed column of the Temple of Artemis near Ephesus, open grassy field, soft daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město na křižovatce obchodních cest starověku",
+        "fact": "Poloha na ústí řeky do Egejského moře dělala z Efesu jeden z důležitých obchodních přístavů římské Malé Asie — badatelé odhadují, že tu v době rozkvětu žilo přes 100 000 obyvatel, tedy víc, než měla tehdy většina evropských měst.",
+        "source_url": "https://en.wikipedia.org/wiki/Ephesus",
+        "source_quote": "a population between 138,000 and 172,500",
+        "voice": "Kdo ovládal ústí řeky, ovládal i obchod celého kraje kolem.",
+        "image_prompt": "Photorealistic aerial-style photo of the Ephesus archaeological site with the ancient theater and Library of Celsus, arid Anatolian landscape stretching toward a distant coastline, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-priroda-ararat",
+    "country": "Turecko",
+    "section": "Příroda",
+    "topic": "Hora Ararat",
+    "headline": "Sopka, na které měla přistát Noemova archa",
+    "fact": "Hora Ararat na východě Turecka měří 5137 metrů a je nejvyšší horou celé země; podle biblické knihy Genesis na jejích svazích přistála po potopě Noemova archa.",
+    "source_url": "https://en.wikipedia.org/wiki/Mount_Ararat",
+    "source_quote": "Greater Ararat is the highest peak in Turkey and the Armenian highlands with an elevation of 5,137 m (16,854 ft).",
+    "voice": "Sopka mlčí už dvě stě let, ale příběh, který se k ní váže, je o dost starší.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of snow-capped Mount Ararat rising above the Anatolian plain, clear sky, no people, no text, 16:9",
+    "ll": [
+      44.2983,
+      39.7019
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hora, na kterou horolezci potřebují zvláštní povolení",
+        "fact": "Ararat je vyhaslá sopka, jejíž poslední zaznamenaná erupce proběhla roku 1840; kvůli poloze v přísně střežené pohraniční oblasti při hranicích s Arménií a Íránem potřebují horolezci na výstup zvláštní povolení tureckých úřadů.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Ararat",
+        "source_quote": "a phreatic eruption occurred on Mount Ararat on July 2, 1840.",
+        "voice": "Vidět horu z dálky je snadné, dostat se na její vrchol vyžaduje razítko od úřadů.",
+        "image_prompt": "Photorealistic photo of a mountaineering camp at the base of Mount Ararat, tents and hikers preparing gear, dramatic peak in background, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vrchol, kde se skoro dotýkají čtyři státy",
+        "fact": "Ararat leží tak blízko státních hranic, že tvoří téměř styčný bod hned čtyř zemí — Turecka, Arménie, Íránu a ázerbájdžánské enklávy Nachičevan; hora přitom celá oficiálně patří k tureckému území.",
+        "source_url": "https://en.wikipedia.org/wiki/Mount_Ararat",
+        "source_quote": "forms a near-quadripoint between Turkey, Iran, Armenia, and the Nakhchivan exclave of Azerbaijan.",
+        "voice": "Stačí se podívat na mapu, a hned je vidět, kolik hranic se sbíhá k jedné hoře.",
+        "image_prompt": "Photorealistic map-like aerial view of the Mount Ararat region showing the mountain near converging borders, arid highland terrain, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-priroda-pamukkale",
+    "country": "Turecko",
+    "section": "Příroda",
+    "topic": "Pamukkale",
+    "headline": "Bílé terasy, které vytvořila teplá voda",
+    "fact": "Travertinové terasy Pamukkale vznikají tak, že podzemní voda ohřátá sopečnou horninou stoupá k povrchu a při ochlazení a odpařování z ní vzniká usazený uhličitan vápenatý, který během tisíciletí vytvořil bílé kaskády.",
+    "source_url": "https://cs.wikipedia.org/wiki/Pamukkale",
+    "source_quote": "Jejich ochlazením a odpařením oxidu uhličitého vzniká uhličitan vápenatý ve formě sintru",
+    "voice": "Voda tu za tisíce let nanosila vrstvu po vrstvě, dokud z kopce neudělala bílý vodopád.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Pamukkale's white travertine terraces filled with turquoise thermal water, clear sky, no people, 16:9",
+    "ll": [
+      29.1206,
+      37.9203
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Antické lázně přímo nad bílými terasami",
+        "fact": "Nad travertinovými terasami leží ruiny antického lázeňského města Hierapolis, založeného kolem roku 250 př. n. l.; Římané sem jezdili léčit se do teplých pramenů podobně, jako dnes návštěvníci chodí po bílých terasách bosí.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pamukkale",
+        "source_quote": "zhruba 250 let př. n. l. zde bylo založeno lázeňské město Hierapolis",
+        "voice": "Římané sem chodili léčit tělo, dnešní turisté hlavně fotit nohy ve vodě.",
+        "image_prompt": "Photorealistic photo of ancient Hierapolis ruins overlooking the white travertine terraces of Pamukkale, warm afternoon light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Místo, kde geologie i historie dostaly punc UNESCO",
+        "fact": "Pamukkale bylo spolu s Hierapolí zapsáno na seznam světového dědictví UNESCO už v roce 1988 — patří tak k ojedinělým lokalitám, kde se stejným dílem cení přírodní jev i lidmi vybudované antické město.",
+        "source_url": "https://cs.wikipedia.org/wiki/Pamukkale",
+        "source_quote": "Pamukkale je spolu s Hierapolí zapsáno v roce 1988 na seznam světového dědictví UNESCO.",
+        "voice": "Zápis do jednoho seznamu spojil kus přírody a kus historie do jedné položky.",
+        "image_prompt": "Photorealistic aerial photo of Pamukkale terraces and the adjacent Hierapolis ruins together, showing the whole UNESCO site, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-priroda-jezero-van",
+    "country": "Turecko",
+    "section": "Příroda",
+    "topic": "Jezero Van",
+    "headline": "Největší turecké jezero, ve kterém se nedá pořádně napít",
+    "fact": "Jezero Van na východě Turecka má rozlohu 3713 km²; kvůli vysoké slanosti a alkalitě vody v něm žije jen málo druhů ryb.",
+    "source_url": "https://cs.wikipedia.org/wiki/Van_(jezero)",
+    "source_quote": "Má rozlohu 3713 km²",
+    "voice": "Vypadá jako moře uprostřed hor, ale napít se z něj rozhodně nejde.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Lake Van in eastern Turkey, deep blue water surrounded by rugged mountains, clear day, no people, 16:9",
+    "ll": [
+      42.9,
+      38.65
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jezero uzavřené vlastní lávou",
+        "fact": "Kotlina jezera Van vznikla tektonickou činností, ale svůj dnešní tvar získala až poté, co ji uzavřely proudy lávy ze sopek Nemrut a Süphan Dağı — jezero tak nemá žádný přirozený odtok.",
+        "source_url": "https://cs.wikipedia.org/wiki/Van_(jezero)",
+        "source_quote": "kotlina byla uzavřena proudy lávy ze sopek Nemrut a Süphan Dağı",
+        "voice": "Sopky vodu jednou zamkly a od té doby z jezera nikam neteče.",
+        "image_prompt": "Photorealistic photo of the volcanic Nemrut crater near Lake Van, rugged volcanic terrain and distant blue lake water, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jezero vysoko v horách bez cesty k moři",
+        "fact": "Jezero Van leží v nadmořské výšce 1646 metrů ve vysočině bez odtoku k moři — typický příklad takzvaného endorheického jezera, kde veškerá voda z okolních hor mizí jen vypařováním.",
+        "source_url": "https://cs.wikipedia.org/wiki/Van_(jezero)",
+        "source_quote": "1646 m n. m.",
+        "voice": "Voda sem stále přitéká, ale ven z kotliny nevede žádná řeka.",
+        "image_prompt": "Photorealistic aerial photo of Lake Van basin surrounded by high plateau mountains, showing its enclosed geography, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-lide-ataturk",
+    "country": "Turecko",
+    "section": "Lidé",
+    "topic": "Mustafa Kemal Atatürk",
+    "headline": "Voják, který dostal příjmení od celého parlamentu",
+    "fact": "Mustafa Kemal dostal v roce 1934 od tureckého parlamentu příjmení Atatürk, což znamená přibližně 'otec Turků', jako uznání za jeho roli při budování Turecké republiky.",
+    "source_url": "https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk",
+    "source_quote": "The Turkish Parliament granted him the surname Atatürk in 1934, meaning 'Father of the Turks'",
+    "voice": "Zatímco jiní lidé příjmení dědí, tenhle ho dostal jako státní vyznamenání.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic dated-style portrait photo of Mustafa Kemal Atatürk in a formal suit, serious expression, studio lighting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Prezident, který zemi vedl patnáct let",
+        "fact": "Atatürk založil roku 1923 Tureckou republiku na troskách poraženého Osmanského impéria a stal se jejím prvním prezidentem; ve funkci zůstal až do své smrti v roce 1938.",
+        "source_url": "https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk",
+        "source_quote": "founder of the Republic of Turkey and served as its first president from 1923",
+        "voice": "Impérium padlo, a hned nastoupil muž, který zemi přestavěl skoro od základů.",
+        "image_prompt": "Photorealistic historical-style photo of a crowd celebrating the founding of the Turkish Republic in Ankara in 1923, flags and public square, 16:9"
+      },
+      "kartograf": {
+        "headline": "Reformy, které přesunuly zemi blíž k Evropě",
+        "fact": "Atatürk během dvacátých a třicátých let prosadil sérii reforem — nový latinkový systém psaní, občanský zákoník podle evropského vzoru i volební práva pro ženy — které měly Turecko na mapě světa posunout blíž k západní Evropě a dál od osmanské minulosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk",
+        "source_quote": "He opened thousands of schools and introduced the Latin-based Turkish alphabet",
+        "voice": "Hranice země zůstaly na mapě stejné, ale směr, kam se dívala, se změnil úplně.",
+        "image_prompt": "Photorealistic photo of an old Turkish classroom from the 1930s with students learning the new Latin alphabet on a blackboard, warm light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-lide-piri-reis",
+    "country": "Turecko",
+    "section": "Lidé",
+    "topic": "Piri Reis",
+    "headline": "Admirál, jehož mapu našli po čtyřech stech letech",
+    "fact": "Osmanský admirál a kartograf Piri Reis nakreslil roku 1513 mapu světa na gazelí kůži; fragment mapy objevili až v roce 1929 v paláci Topkapı, kde o ní předtím staletí nikdo nevěděl.",
+    "source_url": "https://en.wikipedia.org/wiki/Piri_Reis_map",
+    "source_quote": "Scholars unearthed a fragment of the map in late 1929",
+    "voice": "Mapa ležela zapomenutá v paláci déle, než kolik let uplynulo od objevení Ameriky do jejího nakreslení.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of an old weathered gazelle-skin nautical map with hand-drawn coastlines and compass roses, aged parchment texture, soft archival lighting, 16:9",
+    "ll": [
+      28.9838,
+      41.0115
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Mapa poskládaná ze zpráv jiných mořeplavců",
+        "fact": "Piri Reis svou mapu nekreslil od nuly — podle vlastní poznámky na mapě čerpal z asi dvaceti starších map a plánů, mimo jiné i z mapy Karibiku, kterou nakreslil sám Kryštof Kolumbus.",
+        "source_url": "https://en.wikipedia.org/wiki/Piri_Reis_map",
+        "source_quote": "A map by Christopher Columbus of the West Indies.",
+        "voice": "Nevymýšlel svět nanovo, jen sesbíral všechny drobty, které měli mořeplavci před ním.",
+        "image_prompt": "Photorealistic photo of an old Ottoman study room with rolled nautical charts, compass and quill on a wooden desk, warm candlelight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pobřeží, které tehdy nikdo neměl vidět tak přesně",
+        "fact": "Dochovaná část Piriho Reisovy mapy zachycuje pobřeží Atlantiku včetně Jižní Ameriky s pozoruhodnou přesností na dobu, kdy Evropané teprve objevovali nový kontinent — spory se dodnes vedou hlavně o to, co přesně zobrazuje jižní okraj mapy.",
+        "source_url": "https://en.wikipedia.org/wiki/Piri_Reis_map",
+        "source_quote": "the Atlantic Ocean with the coasts of Europe, Africa, and South America",
+        "voice": "Kus kůže s inkoustem dokázal zachytit svět přesněji, než tehdy uměla většina Evropanů.",
+        "image_prompt": "Photorealistic close-up photo of an antique nautical map detail showing coastlines and sea monster illustrations, aged texture, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-lide-orhan-pamuk",
+    "country": "Turecko",
+    "section": "Lidé",
+    "topic": "Orhan Pamuk",
+    "headline": "První Turek s Nobelovou cenou za literaturu",
+    "fact": "Orhan Pamuk dostal 12. října 2006 jako první Turek vůbec Nobelovu cenu za literaturu, a to za to, jak v knihách zachytil melancholickou duši svého rodného Istanbulu.",
+    "source_url": "https://cs.wikipedia.org/wiki/Orhan_Pamuk",
+    "source_quote": "Dne 12. října 2006 mu byla jako prvnímu Turkovi udělena Nobelova cena za literaturu.",
+    "voice": "Nostalgie po starém městě se najednou stala důvodem k nejvyššímu literárnímu ocenění na světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic portrait-style photo of a middle-aged writer at a desk by a window overlooking the Bosphorus, books and papers, warm afternoon light, 16:9",
+    "ll": [
+      28.9784,
+      41.0082
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Muzeum, kde jsou vystavené vzpomínky na fiktivní lásku",
+        "fact": "Podle svého románu Muzeum nevinnosti Pamuk v Istanbulu skutečně otevřel stejnojmenné muzeum plné sebraných předmětů — v roce 2014 dokonce získalo ocenění Evropské muzeum roku.",
+        "source_url": "https://cs.wikipedia.org/wiki/Orhan_Pamuk",
+        "source_quote": "V roce 2014 získalo Muzeum nevinnosti, které Pamuk vybudoval v Istanbulu podle stejnojmenného románu, prestižní ocenění EMYA (European Museum of the Year Award) za rok 2014.",
+        "voice": "Postavy z knihy jsou vymyšlené, ale krabičky s jejich věcmi si můžete prohlédnout naživo.",
+        "image_prompt": "Photorealistic photo of a quirky small museum interior in Istanbul filled with vintage everyday objects displayed in glass cases, warm gallery lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město jako hlavní hrdina většiny jeho knih",
+        "fact": "Pamukovo dílo se odehrává téměř výhradně v Istanbulu na hranici Evropy a Asie — porota Nobelovy ceny právě pnutí mezi západní a východní identitou města označila za jádro jeho psaní.",
+        "source_url": "https://cs.wikipedia.org/wiki/Orhan_Pamuk",
+        "source_quote": "Při hledání melancholické duše svého rodného města objevil nové symboly civilizačních střetů a kontaktů.",
+        "voice": "Město rozdělené na dva světadíly mu poskytlo dost látky na celoživotní dílo.",
+        "image_prompt": "Photorealistic moody photo of an Istanbul street at dusk with the Bosphorus and both continents' skylines visible in the distance, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-kultura-tancici-dervisove",
+    "country": "Turecko",
+    "section": "Kultura & tradice",
+    "topic": "Tančící dervišové",
+    "headline": "Tanec, který má přiblížit k Bohu, ne pobavit diváky",
+    "fact": "Mauláwíja, súfijský řád tančících dervišů, založili ve 13. století následovníci perského básníka a mystika Rúmího v anatolské Konyi; jejich točivý tanec sema měl původně sloužit k duchovnímu přiblížení k Bohu, ne k zábavě turistů.",
+    "source_url": "https://cs.wikipedia.org/wiki/Maul%C3%A1w%C3%ADja",
+    "source_quote": "súfijský řád, který ve 13. století založili následovníci Rúmího",
+    "voice": "Než se stal turistickou atrakcí, byl ten tanec především modlitbou v pohybu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of whirling dervishes in white robes and tall hats spinning during a sema ceremony, dim atmospheric lighting, no text, 16:9",
+    "ll": [
+      32.5236,
+      37.8713
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Řád, který na pár desetiletí úplně zakázali",
+        "fact": "Kemalistické reformy ve 20. století činnost dervišského řádu oficiálně zrušily, přesto se tradice sema nakonec udržela a dnes ji lze v Konyi i jinde vidět znovu jako veřejné vystoupení.",
+        "source_url": "https://cs.wikipedia.org/wiki/Maul%C3%A1w%C3%ADja",
+        "source_quote": "Činnost řádu byla oficiálně ukončena v 1. polovině 20. století sérií kemalistických reforem.",
+        "voice": "Zákon dokázal řád zrušit na papíře, ne úplně vymazat z paměti lidí.",
+        "image_prompt": "Photorealistic photo of a Mevlana museum courtyard in Konya, Ottoman-era architecture, soft daylight, no people, 16:9"
+      },
+      "kartograf": {
+        "headline": "Duchovní hnutí, které se dodnes drží i mimo Turecko",
+        "fact": "Přestože Mauláwíja vznikla v srdci Anatolie, dnes najdete její stoupence i daleko za hranicemi Turecka — třeba v USA, Egyptě nebo na Kypru, kam se tradice šířila spolu s migrací a zájmem o súfismus.",
+        "source_url": "https://cs.wikipedia.org/wiki/Maul%C3%A1w%C3%ADja",
+        "source_quote": "v současné době se příznivci mauláwíje vyskytují na mnoha místech světa jako je USA, Egypt či Kypr",
+        "voice": "Myšlenka narozená v jednom anatolském městě si dnes najde stoupence klidně na jiném kontinentu.",
+        "image_prompt": "Photorealistic photo of a small sufi gathering hall abroad with dervishes preparing for a sema ceremony, warm indoor lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-kultura-turecky-caj",
+    "country": "Turecko",
+    "section": "Kultura & tradice",
+    "topic": "Turecký čaj",
+    "headline": "Čaj, který se vaří ve dvou konvicích najednou",
+    "fact": "Turecký čaj se připravuje ve dvoupatrové konvici zvané çaydanlık — dole se vaří voda, nahoře se v menší konvičce louhuje silný čaj, který se pak podle chuti ředí horkou vodou zespodu.",
+    "source_url": "https://cs.wikipedia.org/wiki/Tureck%C3%BD_%C4%8Daj",
+    "source_quote": "dvojité konvičku zvané çaydanlık",
+    "voice": "Jedna konvice na vodu, druhá na sílu — a výsledná chuť je na vás.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a traditional Turkish double teapot çaydanlık on a stove, tulip-shaped tea glasses beside it, warm kitchen light, 16:9",
+    "ll": [
+      40.5234,
+      41.0201
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Země, kde na hlavu vypijí čaje víc než Britové",
+        "fact": "Turecko mělo v roce 2004 nejvyšší spotřebu čaje na hlavu na světě, 2,5 kilogramu ročně na osobu, čímž předběhlo i tradičně čajovou Velkou Británii.",
+        "source_url": "https://cs.wikipedia.org/wiki/Tureck%C3%BD_%C4%8Daj",
+        "source_quote": "Turecko mělo v roce 2004 nejvyšší spotřebu čaje na osobu na světě – 2,5 kg, následovalo jej Spojené království (2,1 kg na osobu).",
+        "voice": "Kávová tradice zemi proslavila, ale doma se ve skutečnosti pije hlavně čaj.",
+        "image_prompt": "Photorealistic photo of a busy Istanbul tea garden with people drinking tea from small tulip glasses, lively daytime atmosphere, 16:9"
+      },
+      "kartograf": {
+        "headline": "Čajové plantáže tam, kde by je nikdo nečekal",
+        "fact": "Turecký čaj se pěstuje hlavně v provincii Rize na pobřeží Černého moře, kde vlhké přímořské klima a úrodná půda vytvořily podmínky podobné jiným světovým čajovým oblastem, i když leží mnohem severněji než třeba Indie nebo Srí Lanka.",
+        "source_url": "https://cs.wikipedia.org/wiki/Tureck%C3%BD_%C4%8Daj",
+        "source_quote": "Turecký čaj je připravován z drceného druhu černého čaje Rize pěstovaného v provincii Rize na jižním pobřeží Černého moře.",
+        "voice": "Čaj se obvykle spojuje s tropy, tady mu stačilo vlhké pobřeží Černého moře.",
+        "image_prompt": "Photorealistic photo of lush green tea plantations on hillsides along the Black Sea coast near Rize, Turkey, misty morning light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-kultura-nazar-boncuk",
+    "country": "Turecko",
+    "section": "Kultura & tradice",
+    "topic": "Nazar boncuğu",
+    "headline": "Modré oko, které má chránit před závistivým pohledem",
+    "fact": "Nazar boncuğu je skleněný amulet ve tvaru modrého oka, který má podle tradiční víry odrážet takzvané uřknutí — zlý pohled způsobený závistí nebo obdivem.",
+    "source_url": "https://en.wikipedia.org/wiki/Nazar_(amulet)",
+    "source_quote": "a blue glass filled with a blue white and black dot superimposed on a white or yellow center",
+    "voice": "Nikdo neví, jestli fakt funguje, a přesto visí skoro nad každými domovními dveřmi.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up photo of blue glass nazar evil eye amulets hanging in a row, Turkish bazaar background blurred, bright daylight, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Amulet, co prý praskne, aby ochránil majitele",
+        "fact": "Podle lidové víry nazar boncuğu praskne přesně ve chvíli, kdy na sebe strhne silné uřknutí místo člověka, kterého chránil — rozbitý amulet se pak obvykle nahradí novým.",
+        "source_url": "https://en.wikipedia.org/wiki/Nazar_(amulet)",
+        "source_quote": "if one of the beads breaks down, it means a very strong nazar has hit the wearer, and the bead stored it all up and broke down in order to protect them.",
+        "voice": "Prasklé sklo tu není smůla, ale důkaz, že amulet odvedl svou práci.",
+        "image_prompt": "Photorealistic photo of a cracked blue nazar amulet lying on a wooden table, soft indoor light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Symbol, který přesahuje hranice jednoho státu",
+        "fact": "Víra v modré oko proti uřknutí se neomezuje jen na Turecko — najdete ji i v Řecku, na Balkáně, na Blízkém východě nebo v Íránu, což ukazuje, jak stará lidová představa dokázala přežít napříč jazyky i náboženstvími celého regionu.",
+        "source_url": "https://en.wikipedia.org/wiki/Nazar_(amulet)",
+        "source_quote": "Turkey, Albania, Bosnia and Herzegovina, Bulgaria, Greece, Cyprus, Syria, Lebanon, Egypt, Armenia, Iran, Afghanistan, Iraq and Azerbaijan",
+        "voice": "Náboženství i jazyky se v regionu měnily, strach z uřknutí zůstal stejný.",
+        "image_prompt": "Photorealistic photo of an eastern Mediterranean market stall selling many blue eye amulets, warm sunlight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-umeni-ebru",
+    "country": "Turecko",
+    "section": "Umění",
+    "topic": "Ebru",
+    "headline": "Obraz, který nejdřív vznikne na vodní hladině",
+    "fact": "Ebru je tradiční technika malby, při níž se pigmenty nanášejí na vodní hladinu a vzniklý vzor se pak obtiskne na papír, látku nebo keramiku; v Osmanské říši se výrazně rozvinula a od roku 2014 je na seznamu nehmotného dědictví UNESCO.",
+    "source_url": "https://www.ceskoturecko.cz/tradicni-turecka-technika-malovani-na-vodni-hladinu-ebru/",
+    "source_quote": "V roce 2014 bylo pak turecké Ebru zapsáno do seznamu nehmotného kulturního dědictví UNESCO.",
+    "voice": "Obraz vznikne na hladině, a teprve pak si ho papír jen půjčí.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of an artist creating colorful swirling patterns on a water surface using the Ebru marbling technique, close-up of paints floating on water, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Vzor se nedá dvakrát zopakovat úplně stejně",
+        "fact": "Umělec u techniky ebru rozhýbe pigmenty na vodě jehlou nebo hřebínkem, a protože se barvy chovají nepředvídatelně, žádné dva obtisknuté vzory nikdy nevyjdou úplně stejně.",
+        "source_url": "https://www.ceskoturecko.cz/tradicni-turecka-technika-malovani-na-vodni-hladinu-ebru/",
+        "voice": "I umělec sám neví předem přesně, jak barvy na hladině dopadnou.",
+        "image_prompt": "Photorealistic close-up photo of ebru paint patterns being pressed onto paper from a water bath, artist's hands visible, colorful marbling, 16:9"
+      },
+      "kartograf": {
+        "headline": "Technika, která do Evropy dorazila přes Istanbul",
+        "fact": "Malování na vodní hladině má podle některých pramenů kořeny v Číně nebo Japonsku, ale právě přes osmanský Istanbul, tehdejší Cařihrad, se tato technika v 17. století rozšířila dál do Evropy.",
+        "source_url": "https://www.ceskoturecko.cz/tradicni-turecka-technika-malovani-na-vodni-hladinu-ebru/",
+        "source_quote": "Do Evropy se mramorování dostalo v 17. století z Istanbulu, tehdejšího Cařihradu",
+        "voice": "Nápad možná vznikl jinde, ale do Evropy ho poslal zrovna Istanbul.",
+        "image_prompt": "Photorealistic photo of an old Ottoman-era workshop in Istanbul with marbled paper sheets drying on lines, warm historical lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-umeni-iznik-kachle",
+    "country": "Turecko",
+    "section": "Umění",
+    "topic": "İznik kachle",
+    "headline": "Modrobílé kachle, které zdobí největší mešity",
+    "fact": "Kachle a keramika z města İznik vznikaly od poslední čtvrtiny 15. do konce 17. století a proslavily se typickou modrobílou výzdobou na bílém střepu z křemenné hmoty zvané fritware.",
+    "source_url": "https://en.wikipedia.org/wiki/Iznik_pottery",
+    "source_quote": "a decorated ceramic that was produced from the last quarter of the 15th century until the end of the 17th century",
+    "voice": "Vzor, který dnes turisté fotí na zdi mešity, kdysi vznikal v jedné dílenské čtvrti.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up photo of ornate blue and white Iznik ceramic tiles covering a mosque wall, intricate floral patterns, soft interior light, 16:9",
+    "ll": [
+      29.7211,
+      40.4306
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Přes osmdesát vzorů na zdech jedné mešity",
+        "fact": "Rüstem Pasha mešita v Istanbulu je pokrytá İznik kachlemi s více než osmdesáti různými vzory na svých stěnách.",
+        "source_url": "https://en.wikipedia.org/wiki/Iznik_pottery",
+        "source_quote": "more than 80 different designs",
+        "voice": "Jedna mešita, desítky vzorů, a přesto oko nemá pocit chaosu.",
+        "image_prompt": "Photorealistic wide interior photo of the Rüstem Pasha Mosque in Istanbul showing walls fully covered in İznik tiles, soft daylight through windows, 16:9"
+      },
+      "kartograf": {
+        "headline": "Čínský vzor, který se v Turecku přetavil do vlastního stylu",
+        "fact": "Osmanský dvůr obdivoval čínský modrobílý porcelán, a tak si řemeslníci v İznik jeho barevnost i motivy přizpůsobili vlastním osmanským vzorům — výsledkem byl svébytný styl, který se pak přes export dostal zpátky až do Evropy.",
+        "source_url": "https://en.wikipedia.org/wiki/Iznik_pottery",
+        "source_quote": "Leaders at the Ottoman Court in Istanbul loved Chinese blue-and-white porcelain, and the craftsmen of Iznik developed this new style, combining traditional Ottoman patterns and colours with Chinese elements to suit their tastes.",
+        "voice": "Inspirace přišla z druhého konce Asie, výsledný styl už ale patřil jen Osmanům.",
+        "image_prompt": "Photorealistic photo comparing Chinese blue-white porcelain and Ottoman Iznik ceramics side by side on a wooden table, museum lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-umeni-karagoz",
+    "country": "Turecko",
+    "section": "Umění",
+    "topic": "Karagöz a Hacivat",
+    "headline": "Loutky z kůže, které vrhají stín na plátno",
+    "fact": "Karagöz je tradiční turecké stínové divadlo, ve kterém se postavy zvané tasviry vyřezané z velbloudí nebo volské kůže drží na tyčkách před světlem a jejich stín dopadá na bavlněné plátno.",
+    "source_url": "https://ich.unesco.org/en/RL/karagoz-00180",
+    "source_quote": "Karagöz is a form of shadow theatre in Turkey in which figures known as tasvirs made of camel or ox hide in the shape of people or things are held on rods in front of a light source to cast their shadows onto a cotton screen.",
+    "voice": "Diváci sledují jenom stín, ale kus řemesla se skrývá v kůži za plátnem.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of traditional Turkish shadow puppets made of leather held up against an illuminated screen, warm backstage lighting, 16:9",
+    "ll": [
+      29.061,
+      40.1826
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dva hrdinové, dva úplně jiné světy",
+        "fact": "Hlavní postava Karagöz mluví za obyčejný, nevzdělaný lid, zatímco jeho protějšek Hacivat představuje vzdělanou vrstvu a mluví kultivovanou osmanskou turečtinou — jejich hádky tvoří jádro většiny příběhů.",
+        "source_url": "https://en.wikipedia.org/wiki/Karag%C3%B6z_and_Hacivat",
+        "source_quote": "Karagöz represents the illiterate but straightforward public, whereas Hacivat belongs to the educated class, speaking Ottoman Turkish and using a poetical and literary language.",
+        "voice": "Jeden mluví ulicí, druhý knihou, a diváci se smějí přesně na tom rozdílu.",
+        "image_prompt": "Photorealistic photo of two contrasting leather shadow puppets representing a common man and an educated scholar, displayed side by side, warm lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Divadlo, které UNESCO zapsalo mezi lidské dědictví",
+        "fact": "Karagöz byl v roce 2009 zapsán na Reprezentativní seznam nehmotného kulturního dědictví lidstva UNESCO — podobně jako řada dalších tradičních forem lidového divadla, kterým hrozil zánik kvůli konkurenci televize a kina.",
+        "source_url": "https://en.wikipedia.org/wiki/Karag%C3%B6z_and_Hacivat",
+        "source_quote": "Inscription 2009 (4th session)",
+        "voice": "Stín na plátně přežil dobu filmu i televize a dodnes se hraje naživo.",
+        "image_prompt": "Photorealistic photo of a small traditional theatre audience watching a shadow puppet performance in Bursa, warm evening atmosphere, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-sport-kirkpinar",
+    "country": "Turecko",
+    "section": "Sport",
+    "topic": "Olejové zápasy (yağlı güreş)",
+    "headline": "Zápasníci kluzcí od hlavy až k patě",
+    "fact": "Olejové zápasy zvané yağlı güreş jsou tureckým národním sportem — zápasníci si před soubojem potřou celé tělo olivovým olejem.",
+    "source_url": "https://en.wikipedia.org/wiki/Oil_wrestling",
+    "source_quote": "Oil wrestling (Turkish: Yağlı güreş), also called Turkish oil wrestling, is the national sport of Turkey.",
+    "voice": "Olej soupeři ztíží každý úchop, takže zápas se často řeší přes kalhoty, ne přes tělo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of traditional Turkish oil wrestlers in leather kisbet pants competing outdoors, oiled skin glistening, grassy field, daylight, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Vítězem se stává ten, kdo drží soupeře za kožené kalhoty",
+        "fact": "Protože olej znemožňuje běžné chvaty za tělo, zápasníci se chytají navzájem za kožené kalhoty zvané kisbet, což zápasu dává úplně jiná pravidla než klasickému zápasu.",
+        "source_url": "https://en.wikipedia.org/wiki/Oil_wrestling",
+        "source_quote": "Unlike Olympic wrestling, oil wrestling matches may be won by achieving an effective hold of the kisbet, the loose-fitting leather pants",
+        "voice": "Klasický chvat tu nefunguje, olej ho prostě smete.",
+        "image_prompt": "Photorealistic close-up photo of Turkish oil wrestlers gripping each other's leather kisbet pants, oil-covered skin, dramatic outdoor lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport se stopou hlubokou v dějinách regionu",
+        "fact": "Olejové zápasení se v oblasti Thrákie a Balkánu provozovalo už v hluboké minulosti a k dnešnímu Turecku a jeho sousedům se dostalo přes starověký Egypt, Babylonii a Persii.",
+        "source_url": "https://en.wikipedia.org/wiki/Oil_wrestling",
+        "source_quote": "In Assyria, ancient Egypt, and Babylonia, oil wrestling was performed. It spread to Iran and Anatolia during the First Achaemenid conquest of Egypt.",
+        "voice": "Zápas cestoval starověkým světem dřív, než vůbec vznikly dnešní hranice států.",
+        "image_prompt": "Photorealistic wide shot of a rural Turkish festival ground with crowds watching oil wrestling, traditional atmosphere, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-sport-galatasaray-uefa",
+    "country": "Turecko",
+    "section": "Sport",
+    "topic": "Galatasaray a Pohár UEFA 2000",
+    "headline": "Evropský titul pro turecký klub",
+    "fact": "Fotbalisté Galatasaraye v roce 2000 vyhráli finále Poháru UEFA nad Arsenalem, čímž se turecký klub poprvé v historii probojoval k evropskému fotbalovému titulu.",
+    "source_url": "https://en.wikipedia.org/wiki/2000_UEFA_Cup_final",
+    "source_quote": "Galatasaray won 4–1 on penalties following extra time, making it the first time for a Turkish side to win a European honour.",
+    "voice": "Penaltový rozstřel rozhodl o titulu, který do té doby žádný turecký klub neměl.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a football stadium celebration with fans in red and yellow Galatasaray colors, fireworks, night atmosphere, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Rozhodly penalty po prodloužení",
+        "fact": "Utkání v Kodani skončilo bez branek i po prodloužení, a tak o vítězi rozhodl až penaltový rozstřel, ve kterém byli úspěšnější turečtí hráči.",
+        "source_url": "https://en.wikipedia.org/wiki/2000_UEFA_Cup_final",
+        "source_quote": "Galatasaray won 4–1 on penalties following extra time",
+        "voice": "Devadesát minut plus prodloužení nic nerozhodly, o titulu tak rozhodovaly nervy na penaltové značce.",
+        "image_prompt": "Photorealistic photo of a dramatic penalty shootout moment on a football pitch, floodlights, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Turecký fotbal získal místo mezi evropskou špičkou",
+        "fact": "Vítězství dalo tureckému klubu právo hrát i o Superpohár UEFA proti vítězi Ligy mistrů — turecký fotbal si tím vydobyl trvalé místo v elitní evropské konkurenci, ne jen občasnou účast.",
+        "source_url": "https://en.wikipedia.org/wiki/2000_UEFA_Cup_final",
+        "source_quote": "Galatasaray became the first UEFA Cup winner to compete for the UEFA Super Cup",
+        "voice": "Jeden zápas ve Skandinávii změnil, jak se na turecký fotbal dívala celá Evropa.",
+        "image_prompt": "Photorealistic aerial photo of Istanbul's skyline with a floodlit football stadium in the foreground, evening, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-sport-basketbal-2010",
+    "country": "Turecko",
+    "section": "Sport",
+    "topic": "Domácí mistrovství světa v basketbale 2010",
+    "headline": "Stříbro na domácím mistrovství světa",
+    "fact": "Turecko v roce 2010 hostilo mistrovství světa v basketbale a jeho národní tým postoupil až do finále.",
+    "source_url": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship",
+    "source_quote": "The United States won the tournament for their fourth time after going undefeated in the Opening Round and beating host Turkey in the final.",
+    "voice": "Celá aréna fandila domácímu týmu, který dotáhl turnaj až k rozhodujícímu zápasu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a packed basketball arena in Istanbul during a championship final, crowd waving Turkish flags, dramatic lighting, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Turnaj sledovaly narvané haly po celém Turecku",
+        "fact": "Zápasy základní skupiny mistrovství se hrály ve čtyřech tureckých městech, vyřazovací fáze se pak přesunula do Istanbulu, kde turecký tým hrál před vlastními fanoušky až do finále.",
+        "source_url": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship",
+        "source_quote": "the group stage games were played in four cities, and the knockout round was hosted by Istanbul",
+        "voice": "Fanoušci sledovali domácí tým z jednoho města do druhého, až skončil ve finále přímo doma.",
+        "image_prompt": "Photorealistic photo of Turkish basketball fans celebrating in an arena, red and white flags, night game lighting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pořadatelství jako soutěž samo o sobě",
+        "fact": "Turecko svou nabídku na pořádání mistrovství světa v basketbale prosadilo proti konkurenčním kandidaturám dalších evropských zemí — hostit takový turnaj vyžaduje víc hal, hotelů a letecké kapacity, než má většina menších států k dispozici.",
+        "source_url": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship",
+        "source_quote": "Three bids from six countries – France, Turkey, and a joint bid from former Yugoslav republics Bosnia and Herzegovina, Croatia, Serbia and Montenegro, and Slovenia",
+        "voice": "Body na hřišti rozhodly až v posledním zápase, o pořadatelství se ale bojovalo roky předem.",
+        "image_prompt": "Photorealistic aerial photo of Istanbul showing modern sports arenas and the Bosphorus, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-jazyk-pismenova-reforma",
+    "country": "Turecko",
+    "section": "Jazyk & slova",
+    "topic": "Atatürkova písmenná reforma",
+    "headline": "Písmo, které se přes noc změnilo z arabského na latinské",
+    "fact": "Turecko v rámci Atatürkových reforem opustilo osmanské arabské písmo a zavedlo nové latinské písmo přizpůsobené zvukům turečtiny.",
+    "source_url": "https://en.wikipedia.org/wiki/Turkish_alphabet",
+    "source_quote": "Mandated in 1928 as part of Atatürk's Reforms, it is the current official alphabet",
+    "voice": "Miliony lidí se ze dne na den musely znovu naučit číst vlastní jazyk.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kurzy čtení pro dospělé po celé zemi",
+        "fact": "Po zavedení nové abecedy vznikly po celé zemi masové kurzy, kde se dospělí učili číst a psát v novém latinském písmu, protože staré arabské písmo znal jen zlomek populace.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_alphabet",
+        "voice": "Národ, který uměl číst, se najednou musel učit číst znovu.",
+        "image_prompt": "Photorealistic photo of an adult literacy classroom in 1930s Turkey, chalkboard with Latin letters, warm lighting, no legible text overlay, 16:9"
+      },
+      "kartograf": {
+        "headline": "Reforma jako odklon od osmanské minulosti",
+        "fact": "Výměna písma nebyla jen praktická úprava, ale i politický signál — nová republika se tím symbolicky odklonila od osmanské tradice směrem k sekulárnímu, na Západ orientovanému státu.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_alphabet",
+        "voice": "Nová písmena měla ukázat, že republika už nechce psát podle starých pravidel — doslova ani obrazně.",
+        "image_prompt": "Photorealistic photo of an old book with Ottoman Arabic script next to a modern book with the Latin Turkish alphabet, side by side, studio lighting, no legible text overlay, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-jazyk-samohlaskova-harmonie",
+    "country": "Turecko",
+    "section": "Jazyk & slova",
+    "topic": "Samohlásková harmonie",
+    "headline": "Samohlásky, které se musí navzájem sladit",
+    "fact": "Turečtina používá takzvanou samohláskovou harmonii — samohlásky uvnitř slova a jeho přípon se musí navzájem sladit podle přední nebo zadní výslovnosti.",
+    "source_url": "https://en.wikipedia.org/wiki/Turkish_language",
+    "source_quote": "Turkish phonology is marked by vowel harmony; native words typically contain only front (⟨e, i, ö, ü⟩) or back (⟨a, ı, o, u⟩) vowels",
+    "voice": "Přidáš špatnou příponu a slovo najednou zní cizímu uchu falešně, i když gramatika sedí.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Přípony se mění podle toho, co je před nimi",
+        "fact": "Stejná gramatická přípona má v turečtině několik podob podle toho, jaké samohlásky obsahuje kořen slova — mluvčí si vybírá tu správnou variantu automaticky, aniž by o tom přemýšlel.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_language",
+        "voice": "Rodilý mluvčí to dělá bez přemýšlení, cizinec nad tím stráví roky cvičení.",
+        "image_prompt": "Photorealistic photo of a language classroom with Turkish grammar charts on a whiteboard, students studying, daylight, no legible text overlay, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rys, který spojuje turečtinu s dalšími jazyky Asie",
+        "fact": "Samohlásková harmonie se objevuje i v dalších turkických jazycích rozšířených od Balkánu až po střední Asii — jde o rys, který pomáhá jazykovědcům sledovat historické příbuznosti mezi zdánlivě vzdálenými jazyky.",
+        "source_url": "https://en.wikipedia.org/wiki/Vowel_harmony",
+        "source_quote": "Vowel harmony is often confined to the domain of a phonological word, but may extend across word boundaries in certain languages.",
+        "voice": "Stejný jazykový trik najdeš od Istanbulu až po střední Asii, tisíce kilometrů od sebe.",
+        "image_prompt": "Photorealistic photo composition suggesting language spread across Eurasia, an old atlas open on a desk, warm lighting, no legible text overlay, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-jazyk-aglutinace",
+    "country": "Turecko",
+    "section": "Jazyk & slova",
+    "topic": "Aglutinace",
+    "headline": "Jedno slovo místo celé věty",
+    "fact": "Turečtina je aglutinační jazyk — ke kořeni slova se postupně lepí přípony, takže jedno dlouhé slovo dokáže vyjádřit to, na co jiné jazyky potřebují celou větu.",
+    "source_url": "https://en.wikipedia.org/wiki/Turkish_language",
+    "source_quote": "Turkish grammar is characterized by extensive agglutination and is generally very regular.",
+    "voice": "Kde čeština potřebuje pět slov, turečtina si někdy vystačí s jedním, jen o dost delším.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, které samo o sobě je celá věta",
+        "fact": "V turečtině existují slova poskládaná z kořene a řady přípon, která v překladu odpovídají celé české větě — cizinci to zpočátku připadá jako jazykolam, rodilý mluvčí to ale skládá automaticky.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_language",
+        "voice": "Než se cizinec prokouše jedním slovem, rodilý mluvčí už dávno domluvil celou větu.",
+        "image_prompt": "Photorealistic close-up photo of a hand writing Turkish text in a notebook, natural light, no legible text overlay, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stavebnicová gramatika typická pro turkické jazyky",
+        "fact": "Aglutinační stavba slov je typický rys celé turkické jazykové rodiny, která se táhne od Turecka přes Kavkaz a střední Asii až po Sibiř — gramatická stavba tak kopíruje mnohem širší geografické rozšíření příbuzných jazyků.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_language",
+        "voice": "Gramatika jednoho slova prozradí příbuznost jazyků vzdálených tisíce kilometrů.",
+        "image_prompt": "Photorealistic photo of a historical map showing Central Asia and Anatolia, aged paper texture, no legible text overlay, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-jidlo-turecka-kava",
+    "country": "Turecko",
+    "section": "Jídlo",
+    "topic": "Turecká káva",
+    "headline": "Káva vařená v konvičce cezve, ne filtrovaná",
+    "fact": "Turecká káva se připravuje z velmi jemně mleté kávy vařené v konvičce cezve bez filtrování, takže usazenina zůstává přímo v šálku.",
+    "source_url": "https://en.wikipedia.org/wiki/Turkish_coffee",
+    "source_quote": "Turkish coffee (Turkish: Türk kahvesi) is a style of coffee prepared in a cezve using very finely ground coffee beans without filtering.",
+    "voice": "Poslední doušek je vlastně kalná kávová usazenina, ne tekutina.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up photo of Turkish coffee being poured from a copper cezve into a small cup, coffee grounds visible, warm light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Věštění z kávové sedliny po dopití",
+        "fact": "Po dopití turecké kávy se šálek často obrátí dnem vzhůru na talířek, aby zaschlá kávová sedlina vytvořila tvary, ze kterých se pak tradičně věští budoucnost.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_coffee",
+        "voice": "Šálek se nejdřív vypije a teprve pak začne to zajímavější — čtení vzorů na jeho dně.",
+        "image_prompt": "Photorealistic photo of an overturned Turkish coffee cup on a saucer, coffee grounds forming patterns, cozy café setting, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nápoj, který propojil Blízký východ, Balkán a Kavkaz",
+        "fact": "Podobně připravovaná káva se pod různými jmény pije napříč Blízkým východem, Balkánem i Kavkazem — společný způsob přípravy tu sleduje staré obchodní a kulturní cesty osmanské říše víc než dnešní státní hranice.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_coffee",
+        "source_quote": "Similar drinks appear under different names across the Middle East, the Balkans, and the Caucasus.",
+        "voice": "Stejný šálek kávy, jen jiné jméno v každé zemi, kterou kdysi protínala stejná obchodní cesta.",
+        "image_prompt": "Photorealistic photo of a traditional coffee house interior somewhere in the Balkans or Middle East, patrons drinking coffee, warm ambient light, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-jidlo-lokum",
+    "country": "Turecko",
+    "section": "Jídlo",
+    "topic": "Lokum (turecký med)",
+    "headline": "Sladkost, které se přezdívá turecký med",
+    "fact": "Turecký lokum je želé z cukru a škrobu, do kterého se přidávají oříšky, datle nebo aroma růžové vody, pistácií či citronu.",
+    "source_url": "https://en.wikipedia.org/wiki/Turkish_delight",
+    "source_quote": "Premium varieties consist largely of chopped dates, pistachios, hazelnuts or walnuts bound by the gel; traditional varieties are often flavored with rosewater, mastic gum, bergamot orange, or lemon.",
+    "voice": "Kostička lokumu se lepí na zuby skoro stejně vytrvale, jako se drží ve vzpomínkách.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up photo of colorful Turkish delight cubes dusted with powdered sugar on a decorative plate, soft natural light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Jméno, které znamená jednoduše 'sousto'",
+        "fact": "Turecké slovo lokum pochází z arabského výrazu pro sousto, což odkazuje na to, jak se sladkost tradičně jí — po malých kouscích.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_delight",
+        "source_quote": "The Turkish names lokma and lokum are derived from the Arabic word luqma(t)",
+        "voice": "Název neslibuje nic velkolepého, jen jedno malé sousto — a přesně to lokum je.",
+        "image_prompt": "Photorealistic photo of a traditional Turkish sweet shop display with trays of Turkish delight, colorful arrangement, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sladkost, co se šířila po obchodních cestách impéria",
+        "fact": "Lokum se z osmanských cukrářských dílen postupně rozšířil po celé bývalé říši i za její hranice — dnes ho najdeš pod podobnými názvy na Balkáně, na Blízkém východě i v jižní Asii, kam kdysi sahal osmanský obchod.",
+        "source_url": "https://en.wikipedia.org/wiki/Turkish_delight",
+        "voice": "Sladkost cestovala stejnými cestami jako kdysi hedvábí a koření.",
+        "image_prompt": "Photorealistic photo of a bustling spice and sweets bazaar with hanging lanterns, Middle Eastern architecture, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-jidlo-kebab",
+    "country": "Turecko",
+    "section": "Jídlo",
+    "topic": "Kebab",
+    "headline": "Maso na rožni, které svět zná pod desítkami jmen",
+    "fact": "Kebab je souhrnné označení pro pečené maso pocházející z Blízkého východu, tradičně připravované na rožni nad ohněm, ale existuje i v pečené nebo dušené podobě.",
+    "source_url": "https://en.wikipedia.org/wiki/Kebab",
+    "source_quote": "is a variety of roasted meat dishes that originated in the Middle East",
+    "voice": "Stejné slovo, a přitom v každé zemi úplně jiný talíř.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of meat skewers grilling over open flame at a Turkish restaurant, smoke rising, warm evening light, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Tradičně jehněčí, dnes klidně i kuřecí",
+        "fact": "Klasický kebab se připravoval z jehněčího masa, dnešní recepty ale běžně používají i hovězí, kuřecí nebo rybí maso podle místních zvyklostí a náboženských pravidel.",
+        "source_url": "https://en.wikipedia.org/wiki/Kebab",
+        "source_quote": "The traditional meat for kebabs is most often lamb meat, but regional recipes may include beef, goat, chicken, fish, or even pork",
+        "voice": "Recept zůstal stejný, jen maso na rožni se mění podle toho, kde zrovna jsi.",
+        "image_prompt": "Photorealistic photo of a street food vendor slicing meat from a vertical rotisserie, steam rising, evening city lights, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, které cestovalo s obchodem i migrací",
+        "fact": "Kebab se z Blízkého východu rozšířil do Evropy, střední Asie i jižní Asie po obchodních cestách a později díky migraci pracovníků — dnes patří mezi běžná rychlá jídla na několika kontinentech.",
+        "source_url": "https://en.wikipedia.org/wiki/Kebab",
+        "voice": "Talíř kebabu v cizím městě je často jediná jistota, že najdeš chuť blízkou domovu.",
+        "image_prompt": "Photorealistic photo of a diverse street food market with kebab stalls, various cuisines side by side, daylight, no text, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-historie-osmanska-rise",
+    "country": "Turecko",
+    "section": "Historie",
+    "topic": "Vznik Osmanské říše",
+    "headline": "Impérium, které vzniklo z malého knížectví",
+    "fact": "Osmanská říše vznikla ze skromného pohraničního knížectví v severozápadní Anatolii a postupně se rozrostla přes jihovýchodní Evropu, západní Asii a severní Afriku.",
+    "source_url": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+    "source_quote": "The empire emerged from a beylik, or principality, founded in northwestern Anatolia in c. 1299 by the Turkoman tribal leader Osman I.",
+    "voice": "Jedno malé pohraniční knížectví nakonec ovládlo tři světadíly.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of Topkapi Palace grounds in Istanbul at sunset, Ottoman-era architecture, no people in focus, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Sídlo moci se přesunulo do dobytého města",
+        "fact": "Po dobytí Konstantinopole se hlavním městem říše stalo právě toto město místo dosavadní Adrianopole (dnešní Edirne) — Osmané tak přesunuli centrum moci do bývalého byzantského hlavního města.",
+        "source_url": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+        "source_quote": "After conquering the city, Mehmed II made Constantinople the new Ottoman capital, replacing Adrianople.",
+        "voice": "Nové hlavní město získali doslova bojem, ne budováním od základů.",
+        "image_prompt": "Photorealistic photo of Istanbul's historic peninsula skyline with domes and minarets, golden hour, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Říše na křižovatce tří kontinentů",
+        "fact": "Poloha na styku Evropy, Asie a Afriky dala Osmanské říši kontrolu nad klíčovými obchodními cestami mezi Středomořím, Blízkým východem a Indickým oceánem — proto o toto území po staletí usilovaly i sousední mocnosti.",
+        "source_url": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+        "voice": "Kdo ovládal tuhle křižovatku, ovládal zboží putující mezi třemi světadíly.",
+        "image_prompt": "Photorealistic map-like aerial photo of the Bosphorus strait connecting two continents, ships passing through, daylight, no text overlay, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-historie-gallipoli",
+    "country": "Turecko",
+    "section": "Historie",
+    "topic": "Bitva o Gallipoli",
+    "headline": "Vylodění, které selhalo, ale zrodilo národního hrdinu",
+    "fact": "Spojenecké mocnosti se za první světové války neúspěšně pokusily na poloostrově Gallipoli donutit Osmanskou říši ke kapitulaci a získat kontrolu nad tureckými úžinami.",
+    "source_url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
+    "source_quote": "The Allied powers (Britain, France and the Russian Empire) unsuccessfully attempted to make the Ottoman Empire, one of the Central Powers, capitulate by taking control of the Turkish straits.",
+    "voice": "Přesila spojeneckých lodí na kontrolu úžiny nestačila — obranu tehdy vedl budoucí zakladatel republiky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style photo of the Gallipoli peninsula coastline with WWI-era trenches, overcast sky, no text, 16:9",
+    "ll": [
+      26.3,
+      40.3
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Poloostrov, kam se dnes jezdí uctít památku padlých",
+        "fact": "Na poloostrově Gallipoli dnes stojí památníky připomínající padlé vojáky obou stran bojů, a místo se stalo cílem poutí zejména pro návštěvníky z Austrálie a Nového Zélandu, jejichž jednotky tu bojovaly.",
+        "source_url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
+        "voice": "Vojáci z opačného konce světa tu zanechali stopu, kterou jejich potomci dodnes navštěvují.",
+        "image_prompt": "Photorealistic photo of a war memorial and cemetery on the Gallipoli peninsula, rows of white gravestones, quiet solemn atmosphere, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Úžina, o kterou se vyplatilo bojovat",
+        "fact": "Kontrola nad tureckými úžinami Dardanely a Bospor znamenala kontrolu nad jedinou vodní cestou spojující Černé moře se Středozemním — proto o ně spojenci usilovali tak draze, přestože leží jen v úzkém pruhu území.",
+        "source_url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
+        "voice": "Kdo držel úzký průliv, mohl zavřít nebo otevřít cestu k celému Černému moři.",
+        "image_prompt": "Photorealistic aerial photo of the Dardanelles strait with ships passing between narrow coastlines, daylight, no text overlay, 16:9"
+      }
+    }
+  },
+  {
+    "id": "tr-historie-lausannska-smlouva",
+    "country": "Turecko",
+    "section": "Historie",
+    "topic": "Lausannská mírová smlouva",
+    "headline": "Smlouva, která nakreslila hranice moderního Turecka",
+    "fact": "Lausannská mírová smlouva formálně ukončila spor mezi Osmanskou říší a spojeneckými mocnostmi po první světové válce a stala se základem hranic dnešní Turecké republiky.",
+    "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Lausanne",
+    "source_quote": "The treaty officially resolved the conflict that had initially arisen between the Ottoman Empire and the Allied French Republic, British Empire, Kingdom of Italy, Empire of Japan, Kingdom of Greece, Kingdom of Yugoslavia, and the Kingdom of Romania since the outset of World War I.",
+    "voice": "Podpisy ve švýcarském městě rozhodly, kudy povede hranice úplně nového státu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of an elegant early 20th century conference hall with a long table, diplomatic atmosphere, no people in sharp focus, no text, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Podpis daleko od bojiště, ve švýcarském městě",
+        "fact": "Jednání i podpis smlouvy proběhly ve švýcarském Lausanne, tedy daleko od území, o kterém se rozhodovalo — typický obraz poválečné diplomacie odehrávající se v neutrálních evropských městech.",
+        "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Lausanne",
+        "source_quote": "signed in the Palais de Rumine in Lausanne, Switzerland",
+        "voice": "O osudu Anatolie se tehdy rozhodovalo v salonku daleko v Alpách.",
+        "image_prompt": "Photorealistic photo of the Palais de Rumine building in Lausanne, Switzerland, historic architecture, daylight, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Smlouva nahradila neúspěšný předchozí pokus o mír",
+        "fact": "Lausannská smlouva vznikla jako druhý pokus o poválečné uspořádání poté, co se předchozí, mnohem tvrdší smlouva ze Sèvres nepodařilo prosadit a ratifikovat — ukazuje to, jak silně dokázal odpor poražené strany změnit poválečnou mapu.",
+        "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Lausanne",
+        "source_quote": "It emerged as a second attempt at peace after the failed and unratified Treaty of Sèvres",
+        "voice": "První pokus o mír neuspěl, teprve druhý dal Turecku pevné hranice, se kterými žije dodnes.",
+        "image_prompt": "Photorealistic photo of an old map of Anatolia and the Balkans from the early 20th century, aged paper, no text overlay, 16:9"
+      }
+    }
+  }
+]

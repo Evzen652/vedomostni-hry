@@ -1,0 +1,852 @@
+[
+  {
+    "id": "id-mista-borobudur",
+    "country": "Indonésie",
+    "section": "Místa",
+    "topic": "Borobudur",
+    "headline": "Největší buddhistický chrám na světě",
+    "fact": "Borobudur na ostrově Jáva je největší buddhistický chrám na světě, zdobí ho 504 soch Buddhy a přes 2500 kamenných reliéfů.",
+    "source_url": "https://www.worldhistory.org/Borobudur/",
+    "source_quote": "adorned with more than 2,500 relief panels and 504 Buddha statues",
+    "voice": "Kámen mlčí, ale vypráví celý příběh cesty k osvícení, stačí ho obejít dokola.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide-angle shot of Borobudur temple at sunrise, stone stupas silhouetted against misty volcanoes in the background, Java Indonesia, natural morning light, no people, no text, 16:9",
+    "ll": [110.2038, -7.6079],
+    "levels": {
+      "cestovatel": {
+        "headline": "Buddhové schovaní uvnitř kamenných zvonů",
+        "fact": "Na horních kruhových terasách Borobuduru stojí 72 prolamovaných kamenných stúp ve tvaru zvonu a v každé z nich sedí socha Buddhy, kterou je vidět jen skrz otvory ve zdi.",
+        "source_url": "https://www.worldhistory.org/Borobudur/",
+        "source_quote": "around the circular platforms are 72 openwork stupas, each containing a statue of the Buddha",
+        "voice": "Buddha se dívá ven skrz kamennou mřížku, jako by pořád čekal, až ho někdo najde.",
+        "image_prompt": "Photorealistic close-up shot of a bell-shaped perforated stone stupa at Borobudur temple with a hidden Buddha statue visible inside through the lattice openings, warm daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Chrám, který zmizel pod popelem a džunglí",
+        "fact": "Borobudur na staletí zarostl džunglí a zavál ho sopečný popel; znovu ho pro svět objevila teprve výprava z roku 1814, kterou zařídil britský guvernér Jávy Thomas Stamford Raffles.",
+        "source_url": "https://www.worldhistory.org/Borobudur/",
+        "source_quote": "Veiled by volcanic ash and dense jungle growth for centuries, Borobudur was rediscovered in 1814 by Thomas Stamford Raffles",
+        "voice": "Sopka, co chrám kdysi pohřbila popelem, mu nakonec pomohla přežít celá staletí beze změny.",
+        "image_prompt": "Photorealistic aerial panoramic shot of Borobudur temple complex surrounded by dense tropical jungle and volcanoes in the distance, overcast atmospheric light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-mista-raja-ampat",
+    "country": "Indonésie",
+    "section": "Místa",
+    "topic": "Raja Ampat",
+    "headline": "Souostroví s nejbohatšími korálovými útesy planety",
+    "fact": "Souostroví Raja Ampat u západní Papuy tvoří přes 1500 ostrovů a jeho vody hostí přes 550 druhů korálů, což je většina všech známých druhů korálů na světě.",
+    "source_url": "https://wwf.panda.org/discover/knowledge_hub/where_we_work/coraltriangle/coraltrianglefacts/places/rajaampatindonesia/",
+    "source_quote": "more than 550 species of corals, 700 species of molluscs, and over 1,800 species of reef fish",
+    "voice": "Pod hladinou se tu na jednom útesu vystřídá víc druhů korálů, než kolik jich najdeš na útesech po celém zbytku oceánu dohromady.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic aerial shot of the karst islands of Raja Ampat rising from turquoise sea, West Papua Indonesia, dense green jungle canopy, clear water, no people, no text, 16:9",
+    "ll": [130.5, -0.5],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rájem pro potápěče i pro paprsky rejnoků",
+        "fact": "V okolních vodách Raja Ampat potápěči potkávají přes 1800 druhů útesových ryb i mantové rejnoky, žraloky a mořské želvy.",
+        "source_url": "https://wwf.panda.org/discover/knowledge_hub/where_we_work/coraltriangle/coraltrianglefacts/places/rajaampatindonesia/",
+        "source_quote": "over 1,800 species of reef fish... oceanic and reef manta rays, numerous shark species, and five species of sea turtles",
+        "voice": "Jeden ponor tu dokáže ukázat víc druhů ryb, než kolik jich potkáš za celý potápěčský život jinde.",
+        "image_prompt": "Photorealistic underwater shot of a coral reef in Raja Ampat with a manta ray gliding overhead, colorful fish, clear blue water, natural light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Srdce takzvaného korálového trojúhelníku",
+        "fact": "Raja Ampat leží uprostřed takzvaného Korálového trojúhelníku mezi Indonésií, Filipínami a Papuou-Novou Guineou, který vědci považují za oblast s nejbohatší mořskou biodiverzitou na planetě.",
+        "source_url": "https://wwf.panda.org/discover/knowledge_hub/where_we_work/coraltriangle/coraltrianglefacts/places/rajaampatindonesia/",
+        "source_quote": "Raja Ampat is widely considered to have the highest marine biodiversity on the planet",
+        "voice": "Tři různé země si dělí jedno moře, a zrovna to je nejbohatší na život ze všech.",
+        "image_prompt": "Photorealistic satellite-style aerial view of the Coral Triangle region showing scattered islands of Raja Ampat amid vast blue ocean, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-mista-prambanan",
+    "country": "Indonésie",
+    "section": "Místa",
+    "topic": "Prambanan",
+    "headline": "Nejvyšší hinduistický chrám v Indonésii",
+    "fact": "Prambanan u Yogyakarty je největší hinduistický chrámový komplex v Indonésii a jeho hlavní věž zasvěcená bohu Šivovi měří 47 metrů.",
+    "source_url": "https://factsanddetails.com/indonesia/Places/sub6_10b/entry-6774.html",
+    "source_quote": "The main tower of Prambanan reached 47 meters (154 feet) high",
+    "voice": "Věž se tyčí k nebi, jako by chtěla dohnat vlastní bohy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Prambanan Hindu temple complex at sunset, tall stone spires against orange sky, Java Indonesia, no people, no text, 16:9",
+    "ll": [110.4915, -7.7520],
+    "levels": {
+      "cestovatel": {
+        "headline": "Chrám sesypaný zemětřesením, poskládaný zpátky",
+        "fact": "V polovině 16. století srazilo Prambanan k zemi silné zemětřesení a chrám zůstal v troskách staletí; hlavní budovu se podařilo znovu postavit až v roce 1953.",
+        "source_url": "https://www.newworldencyclopedia.org/entry/Prambanan",
+        "source_quote": "in the middle of the 16th century, a great earthquake toppled many of the temples",
+        "voice": "Kameny ležely rozházené stovky let, než je někdo znovu poskládal do původního tvaru.",
+        "image_prompt": "Photorealistic close-up shot of ancient carved stone blocks scattered on the ground next to a partially reconstructed temple tower at Prambanan, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sopka, co chrámu škodí dodnes",
+        "fact": "Prambanan leží v dosahu sopky Merapi a zemětřesení ho poškodila i v moderní době, naposledy silný otřes v roce 2006.",
+        "source_url": "https://www.voanews.com/a/a-13-2006-06-04-voa9/329613.html",
+        "source_quote": "Ancient Hindu Temple Damaged in Indonesian Earthquake",
+        "voice": "Chrám stojí přesně tam, kde se sopka a zemská kůra rozhodly nikdy úplně nezklidnit.",
+        "image_prompt": "Photorealistic aerial view of Prambanan temple complex with the volcanic cone of Mount Merapi visible on the horizon, clear day, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-priroda-komodo-drak",
+    "country": "Indonésie",
+    "section": "Příroda",
+    "topic": "Komodský varan",
+    "headline": "Ještěr, co je větší než člověk",
+    "fact": "Komodský varan je největší žijící ještěr na světě; podle rekordních záznamů dosáhl největší zaznamenaný jedinec délky 3,13 metru a váhy 166 kilogramů.",
+    "source_url": "https://a-z-animals.com/blog/the-largest-komodo-dragon-ever-was-the-length-of-a-uhaul-truck-3-reasons-it-grew-into-such-a-monster/",
+    "source_quote": "reached a length of 10.3 feet (3.13 meters) and weighed 366 pounds (166 kilograms)",
+    "voice": "Setkat se s ním v divočině znamená stát tváří v tvář ještěrovi, co by se ti klidně podíval do očí ve stoje.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a large Komodo dragon walking on a dry savanna landscape on Komodo Island, Indonesia, forked tongue visible, natural daylight, no people, no text, 16:9",
+    "ll": [119.4894, -8.5455],
+    "levels": {
+      "cestovatel": {
+        "headline": "Kousnutí, po kterém následuje jed",
+        "fact": "Komodský varan má v dolní čelisti jedové žlázy, které mu pomáhají skolit kořist — vědci je objevili a popsali teprve v roce 2009.",
+        "source_url": "https://en.wikipedia.org/wiki/Komodo_dragon",
+        "source_quote": "In 2009, scientists showed that this species possesses a pair of true venom-secreting glands present in its lower jaw.",
+        "voice": "Dřív se věřilo, že za nebezpečné kousnutí může jen špinavá tlama, teď víme, že v ní číhá i jed.",
+        "image_prompt": "Photorealistic close-up shot of a Komodo dragon's head showing its mouth and forked tongue, textured scaly skin, natural light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Drak, co žije jen na hrstce ostrovů",
+        "fact": "Komodský varan přirozeně žije jen na několika málo ostrovech indonéského souostroví Malé Sundy — na Komodu, Rinci, Padaru a Flores — a nikde jinde ve volné přírodě se nevyskytuje.",
+        "source_url": "https://en.wikipedia.org/wiki/Komodo_dragon",
+        "source_quote": "The Komodo dragon is found on the Indonesian islands of Komodo, Rintja, Padar and Flores.",
+        "voice": "Stačí pár ostrovů v jednom souostroví, a dál po celé planetě už tohohle obra nikde nenajdeš.",
+        "image_prompt": "Photorealistic aerial map-like view of the small islands of Komodo, Rinca and Flores surrounded by turquoise sea, Indonesia, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-priroda-krakatoa",
+    "country": "Indonésie",
+    "section": "Příroda",
+    "topic": "Krakatoa",
+    "headline": "Sopka, jejíž výbuch slyšeli o 4800 kilometrů dál",
+    "fact": "Při výbuchu sopky Krakatoa v roce 1883 byl zvuk exploze slyšet až na ostrově Rodrigues v Indickém oceánu, zhruba 4800 kilometrů od sopky.",
+    "source_url": "https://indiandefencereview.com/loudest-sound-ever-recorded-earth-happened-1883-heard-4800-kilometers-away/",
+    "source_quote": "heard about 4,800 kilometers away on Rodrigues, where people reportedly thought the noise came from distant gunfire",
+    "voice": "Explozi, co by dnes vyděsila celý kontinent, tehdy slyšeli lidé o tisíce kilometrů dál a nevěděli proč.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic dramatic shot of the volcanic island of Anak Krakatau smoking over the Sunda Strait, Indonesia, ash clouds, ocean waves, no people, no text, 16:9",
+    "ll": [105.423, -6.102],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vlny vysoké jako pětipatrový dům",
+        "fact": "Výbuch Krakatoy v roce 1883 vyvolal tsunami vysoká až 41 metrů, která zničila stovky pobřežních vesnic na Jávě a Sumatře a připravila o život přes 36 000 lidí.",
+        "source_url": "https://spacedaily.com/d-the-single-loudest-sound-ever-recorded-was-the-eruption-of-the-krakatoa-volcano-in-1883-heard-from-approximately-4800-kilometers-away-in-the-middle-of-the-indian-ocean-with-a-soun/",
+        "source_quote": "generated tsunamis up to 41 metres tall that killed approximately 36,000 people along the coasts of Java and Sumatra",
+        "voice": "Sopka nejdřív ohlušila celý oceán a pak na pobřeží poslala vlnu vysokou jako dům.",
+        "image_prompt": "Photorealistic dramatic shot of a massive tsunami wave approaching a tropical coastline in the Sunda Strait, dark stormy sky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ostrov, který explozí zmizel ze dvou třetin",
+        "fact": "Erupce v roce 1883 zničila a potopila severní dvě třetiny původního ostrova Krakatoa; z propadlé kaldery pod hladinou později vyrostla nová sopka Anak Krakatau, tedy 'Dítě Krakatoy'.",
+        "source_url": "https://www.ncei.noaa.gov/news/day-historic-krakatau-eruption-1883",
+        "source_quote": "The northern two-thirds of the island collapsed beneath the sea",
+        "voice": "Sopka sama sebe částečně vymazala z mapy, a přesto o pár desetiletí později znovu vyrostla z moře.",
+        "image_prompt": "Photorealistic satellite-style view of the Sunda Strait showing the remnants of Krakatoa island and the new volcanic cone of Anak Krakatau, ocean surrounding, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-priroda-orangutan",
+    "country": "Indonésie",
+    "section": "Příroda",
+    "topic": "Orangutan",
+    "headline": "Lidoop, co dal jméno souostroví pralesů",
+    "fact": "Na Borneu a Sumatře žijí orangutani, velcí lidoopi mimo Afriku; podle odhadů jich dnes ve volné přírodě zbývá dohromady méně než 120 000 jedinců.",
+    "source_url": "https://www.orangutantrekkingtours.com/blog/critically-endangered-orangutans.html",
+    "source_quote": "The Bornean orangutan is now estimated at about 104,700 based on updated geographic range (Endangered), and the Sumatran about 13,846 (Critically Endangered)",
+    "voice": "Než člověk vykácel většinu jejich lesa, orangutani měli klidně celý ostrov jen pro sebe.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a wild orangutan climbing among trees in the Bornean rainforest, Indonesia, dappled sunlight through canopy, no people, no text, 16:9",
+    "ll": [111.8, -2.75],
+    "levels": {
+      "cestovatel": {
+        "headline": "Třetí druh orangutana objevili teprve nedávno",
+        "fact": "V roce 2017 popsali vědci úplně nový druh, orangutana tapanuliského ze Sumatry, kterého v přírodě zůstává už jen kolem 800 kusů.",
+        "source_url": "https://www.orangutantrekkingtours.com/blog/critically-endangered-orangutans.html",
+        "source_quote": "with only 800 Tapanuli orangutans remaining, a genetically distinct species discovered in 2017",
+        "voice": "Nový druh velkého lidoopa objevili vědci na Zemi, teprve když už mu zbývalo jen pár stovek jedinců.",
+        "image_prompt": "Photorealistic shot of a Tapanuli orangutan in the misty highland forest of Batang Toru, Sumatra, dense vegetation, soft light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Prales mizí rychleji než druh stačí zachránit",
+        "fact": "Za poslední století klesl celkový počet orangutanů z odhadovaných přes 230 000 na dnešní zlomek, hlavně kvůli kácení deštného pralesa a rozšiřování plantáží palmy olejné.",
+        "source_url": "https://www.orangutanrepublik.org/learn/the-orangutan-crisis/",
+        "source_quote": "A century ago, there were probably more than 230,000 orangutans in total",
+        "voice": "Deštný prales mizí rychleji, než se orangutani stihnou přizpůsobit životu bez něj.",
+        "image_prompt": "Photorealistic aerial view showing the contrast between dense rainforest and a cleared palm oil plantation in Borneo, Indonesia, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-lide-sukarno",
+    "country": "Indonésie",
+    "section": "Lidé",
+    "topic": "Sukarno",
+    "headline": "Muž, který přečetl indonéskou nezávislost",
+    "fact": "Sukarno spolu s Mohammadem Hattou vyhlásili 17. srpna 1945 nezávislost Indonésie a Sukarno se stal první hlavou nového státu.",
+    "source_url": "https://en.wikipedia.org/wiki/Sukarno",
+    "source_quote": "Sukarno and Mohammad Hatta declared Indonesian independence on 17 August 1945, and Sukarno was appointed as its president",
+    "voice": "Přečetl pár vět na verandě domu, a tím světu na mapě přibyl nový stát.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic vintage-style portrait photograph of an Indonesian statesman in formal attire, dignified expression, studio lighting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Sedmnáct let v čele mladého státu",
+        "fact": "Sukarno zastával úřad prezidenta Indonésie od 18. srpna 1945 do 12. března 1967, tedy déle než dvacet let od vyhlášení nezávislosti do vlastního pádu z moci.",
+        "source_url": "https://en.wikipedia.org/wiki/Sukarno",
+        "source_quote": "Sukarno served as the first President of Indonesia from 18 August 1945 to 12 March 1967",
+        "voice": "Zemi vedl od jejích prvních dnů svobody až do chvíle, kdy o moc sám přišel.",
+        "image_prompt": "Photorealistic historical-style photograph of a presidential motorcade driving through Jakarta streets in the 1950s, crowds waving, warm tone, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vyhlášení, které přišlo hned po kapitulaci Japonska",
+        "fact": "Sukarno vyhlásil nezávislost jen pár dní po kapitulaci Japonska ve druhé světové válce, čímž Indonésie využila mocenské vakuum mezi odchodem japonské okupační správy a návratem nizozemské koloniální vlády.",
+        "source_url": "https://spiceislandsblog.com/2020/08/10/the-indonesian-declaration-of-independence-17-august-1945/",
+        "source_quote": "following Japan's surrender on August 15, 1945",
+        "voice": "Jedna válka končila na druhém konci světa a přesně v té škvíře vznikl nový stát.",
+        "image_prompt": "Photorealistic archival-style photograph of a map of Southeast Asia in 1945 with Indonesia highlighted, warm sepia tone, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-lide-kartini",
+    "country": "Indonésie",
+    "section": "Lidé",
+    "topic": "Kartini",
+    "headline": "Šlechtična, co otevřela školu pro dívky",
+    "fact": "Raden Ajeng Kartini v roce 1903, ve věku 24 let, otevřela na pozemku svého otce první školu pro domorodé indonéské dívky.",
+    "source_url": "https://atamerica.or.id/the-biography-of-kartini/",
+    "source_quote": "she opened the first primary school for native Indonesian girls on her father's property",
+    "voice": "Dívkám, kterým tradice určovala jen domácnost, najednou otevřela dveře do třídy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic vintage-style portrait of a young Javanese noblewoman in traditional kebaya dress, early 20th century studio setting, soft light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Dopisy, které vyšly až po její smrti",
+        "fact": "Kartinina korespondence s nizozemskými přítelkyněmi vyšla posmrtně knižně jako 'Dopisy javánské princezny' a stala se inspirací pro hnutí za emancipaci žen v Indonésii.",
+        "source_url": "https://atamerica.or.id/the-biography-of-kartini/",
+        "source_quote": "Her letters, later published in the book 'Letters of a Javanese Princess', inspired movements for women's emancipation across Indonesia.",
+        "voice": "Psala soukromé dopisy kamarádkám, a nakonec z nich vzniklo hnutí za práva žen v celé zemi.",
+        "image_prompt": "Photorealistic shot of an antique writing desk with handwritten letters, ink pen, and old photographs, warm nostalgic light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Krátký život, dlouhý dopad na celou zemi",
+        "fact": "Kartini zemřela ve věku 25 let jen několik dní po porodu, ale dodnes se v Indonésii každoročně 21. dubna slaví jako Den Kartini na její počest.",
+        "source_url": "https://atamerica.or.id/the-biography-of-kartini/",
+        "source_quote": "Kartini's life was cut short at the age of 25, just days after giving birth... her birthday, April 21, is celebrated annually as Kartini Day",
+        "voice": "Zemřela mladá, a přesto jí země věnovala vlastní svátek, který nese její jméno dodnes.",
+        "image_prompt": "Photorealistic shot of Indonesian schoolgirls in traditional kebaya dress during a school celebration, festive decorations, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-lide-habibie",
+    "country": "Indonésie",
+    "section": "Lidé",
+    "topic": "Habibie",
+    "headline": "Letecký inženýr, co se stal prezidentem",
+    "fact": "Bacharuddin Jusuf Habibie byl letecký inženýr, který se v roce 1998 stal třetím prezidentem Indonésie.",
+    "source_url": "https://theconversation.com/b-j-habibie-indonesias-president-and-brilliant-engineer-who-pioneered-the-countrys-aircraft-industry-with-passion-123393",
+    "source_quote": "He became the third president of Indonesia from 1998 to 1999",
+    "voice": "Než začal vládnout zemi, počítal především trajektorie křídel a proudění vzduchu kolem trupu letadla.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic portrait photograph of an Indonesian aeronautical engineer in a suit, confident expression, office with airplane models in background, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Letadlo, které vzlétlo pod jeho vedením",
+        "fact": "Habibiem vyvinutý turbovrtulový letoun N250 poprvé vzlétl 10. srpna 1995 — vlastní konstrukci dopravního letadla si tehdy Indonésie dokázala postavit jako jedna z mála zemí v Asii.",
+        "source_url": "https://medium.com/@fajri.kornel/b-j-habibie-a-role-model-of-altruism-31c8f87da5b5",
+        "source_quote": "On August 10, 1995, the N-250 'Gatotkaca' conducted its maiden flight.",
+        "voice": "Letadlo navržené doma vzlétlo přesně tak, jak si to inženýr v hlavě představoval roky předtím.",
+        "image_prompt": "Photorealistic shot of a prototype turboprop passenger aircraft taking off from a runway in Indonesia, clear sky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Letecký projekt, co padl kvůli finanční krizi",
+        "fact": "Vývoj letounu N250 musela Indonésie zastavit poté, co si to jako jednu z podmínek finanční pomoci vymínil Mezinárodní měnový fond během asijské finanční krize koncem devadesátých let.",
+        "source_url": "https://medium.com/@fajri.kornel/b-j-habibie-a-role-model-of-altruism-31c8f87da5b5",
+        "source_quote": "one of the conditions that must be fulfilled if the International Monetary Fund were to help Indonesia during the crisis was that the N250 aircraft project be stopped",
+        "voice": "Národní pýchu inženýra tehdy zastavily nakonec bilance a čísla ve smlouvě o půjčce, ne technika.",
+        "image_prompt": "Photorealistic shot of an aircraft hangar with an unfinished airplane prototype covered partially in tarps, dim industrial lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-kultura-toraja-pohreb",
+    "country": "Indonésie",
+    "section": "Kultura & tradice",
+    "topic": "Toraja - Rambu Solo",
+    "headline": "Pohřeb, který může trvat i několik let čekání",
+    "fact": "U etnika Toraja na Sulawesi se tělo zesnulého po smrti považuje jen za 'nemocné' a rodina ho může doma opatrovat měsíce až roky, než najde prostředky na velký pohřební obřad Rambu Solo.",
+    "source_url": "https://medium.com/@nuzulsaleh01/rambu-solo-a-traditional-funeral-ceremony-from-toraja-south-sulawesi-388951dd8f99",
+    "source_quote": "the deceased is not immediately considered dead but is seen as still living in a different state",
+    "voice": "Pro okolní svět je dávno mrtvý, pro vlastní rodinu je pořád jen nemocný, co čeká na uzdravení.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of traditional Toraja tongkonan houses with distinctive boat-shaped saddleback roofs in the highlands of South Sulawesi, Indonesia, golden hour light, no people, no text, 16:9",
+    "ll": [119.83, -3.0],
+    "levels": {
+      "cestovatel": {
+        "headline": "Stovky buvolů jako výbava na onen svět",
+        "fact": "Počet obětovaných vodních buvolů při obřadu Rambu Solo přímo odpovídá společenskému postavení zesnulého — u nejvýznamnějších rodin jich bývají obětovány celé stovky.",
+        "source_url": "https://medium.com/@nuzulsaleh01/rambu-solo-a-traditional-funeral-ceremony-from-toraja-south-sulawesi-388951dd8f99",
+        "source_quote": "The number of buffalo sacrificed during Rambu Solo is directly related to the social status of the deceased. At the highest status, they usually sacrifice hundreds of buffalos.",
+        "voice": "Bohatství rodiny se tu nepočítá na kontě, ale na počtu buvolů vedených na pohřeb.",
+        "image_prompt": "Photorealistic shot of water buffaloes gathered for a traditional Toraja funeral ceremony, colorful ceremonial textiles nearby, South Sulawesi, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obřady naplánované podle sucha, ne podle kalendáře",
+        "fact": "Hlavní pohřební sezóna Toraja probíhá od června do října, tedy v období sucha na jižním Sulawesi, kdy je snazší hostit po několik dní stovky hostů pod širým nebem.",
+        "source_url": "https://medium.com/@nuzulsaleh01/rambu-solo-a-traditional-funeral-ceremony-from-toraja-south-sulawesi-388951dd8f99",
+        "source_quote": "Tana Toraja's funeral season running from June to October – the driest months in South Sulawesi",
+        "voice": "Obřad si počká, až se okolní krajina sama připraví suchem a sluncem.",
+        "image_prompt": "Photorealistic aerial view of terraced rice fields and highland villages in Tana Toraja during the dry season, South Sulawesi, warm light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-kultura-nyepi",
+    "country": "Indonésie",
+    "section": "Kultura & tradice",
+    "topic": "Nyepi",
+    "headline": "Den, kdy se celý ostrov na den zastaví",
+    "fact": "O balijském svátku Nyepi, který slaví hinduistický Nový rok Saka, se na celém ostrově Bali na celý den zastaví doprava, zhasnou světla a uzavře se i mezinárodní letiště.",
+    "source_url": "https://all.accor.com/a/en/limitless/thematics/travel-tips-guides/nyepi-day-bali-indonesia.html",
+    "source_quote": "The airport closes. Roads are completely empty, all shops shut down, and lights are kept off or low.",
+    "voice": "Jednou za rok si ostrov, co jindy nikdy nespí, dovolí úplně vypnout.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a completely empty street in Bali at night during a day of silence, no lights, dark quiet atmosphere, long exposure style, no people, no text, 16:9",
+    "ll": [115.09, -8.4],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ticho, které má zahnat zlé duchy",
+        "fact": "Podle tradice mají obyvatelé Bali svým tichem a tmou během Nyepi přesvědčit bludné duchy, že je ostrov opuštěný, a odradit je tak od toho, aby se tu usadili na další rok.",
+        "source_url": "https://inivie.com/blog/nyepi-day-in-bali",
+        "source_quote": "the island 'hides' — embracing silence and darkness to deceive wandering evil spirits into believing Bali is uninhabited",
+        "voice": "Nejlepší způsob, jak se zbavit nezvaných duchů, je prostě předstírat, že tu nikdo nebydlí.",
+        "image_prompt": "Photorealistic shot of a traditional Balinese temple courtyard at dusk before a quiet festival day, ceremonial offerings, soft fading light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nový rok podle jiného kalendáře než ten náš",
+        "fact": "Nyepi se řídí balijským kalendářem Saka, jehož tradice sahá až k roku 78 našeho letopočtu, a slaví se vždy den po novoluní jarní rovnodennosti, takže na rozdíl od gregoriánského kalendáře nepřipadá každý rok na stejné datum.",
+        "source_url": "https://bali.com/bali/travel-guide/culture/nyepi-balinese-new-year/",
+        "source_quote": "it can be traced as far back as 78 A.D.",
+        "voice": "Zatímco svět venku počítá roky podle jednoho kalendáře, Bali si klidně drží vlastní.",
+        "image_prompt": "Photorealistic wide shot of the Balinese landscape with rice terraces and a volcano in the background under a crescent moon sky, tranquil evening, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-kultura-baduy",
+    "country": "Indonésie",
+    "section": "Kultura & tradice",
+    "topic": "Baduy",
+    "headline": "Kmen, co si sám zakázal elektřinu",
+    "fact": "Komunita Baduy v provincii Banten na Jávě čítá kolem 26 000 lidí a na svém území nedovoluje elektřinu, motorová vozidla ani jiné moderní vymoženosti.",
+    "source_url": "https://www.wrm.org.uy/bulletin-articles/indonesia-the-baduy-people-of-western-java-living-tradition",
+    "source_quote": "The Baduy community consists of 26,000 people in Banten province on Java island... there is no electricity or other modern conveniences",
+    "voice": "Zatímco zbytek Jávy nabíjí telefony, tahle vesnice si schválně žije bez jediné zásuvky.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of traditional bamboo houses of an indigenous community in a lush green highland village, Banten province Java, no electricity poles, natural daylight, no people, no text, 16:9",
+    "ll": [106.2833, -6.6167],
+    "levels": {
+      "cestovatel": {
+        "headline": "Dvě skupiny, dvě různá pravidla",
+        "fact": "Baduy se dělí na vnitřní a vnější skupinu — vnitřní striktně dodržuje tradiční způsob života bez moderní techniky, zatímco vnější Baduy si už nechává líbit některé vymoženosti okolního světa.",
+        "source_url": "https://www.wrm.org.uy/bulletin-articles/indonesia-the-baduy-people-of-western-java-living-tradition",
+        "source_quote": "The Baduy divide themselves into an outer group that partly adopts technology, and a sacred inner group that shuns the trappings of contemporary life.",
+        "voice": "O pár kilometrů dál v téže komunitě platí úplně jiná pravidla hry s moderním světem.",
+        "image_prompt": "Photorealistic shot of a person in traditional white or black clothing walking barefoot along a forest path, Banten Java, soft natural light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vesnice, co odmítla i vysílač signálu",
+        "fact": "V roce 2023 požádali zástupci vnitřní komunity Baduy úřady, aby v okolí jejich území vypnuly nebo přesměrovaly telekomunikační vysílače, protože podle nich signál internetu ohrožoval jejich tradiční způsob života.",
+        "source_url": "https://www.thejakartapost.com/indonesia/2023/06/10/baduy-people-request-internet-blackout.html",
+        "source_quote": "the inner group asked authorities to shut down internet reception or divert nearby telecom towers so the signal would not reach them",
+        "voice": "Zatímco jinde lidé bojují za lepší signál, tahle komunita bojuje za to, aby k nim vůbec nedosáhl.",
+        "image_prompt": "Photorealistic shot of a remote hillside landscape in Banten province with traditional villages and no visible modern infrastructure, misty morning light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-umeni-wayang-kulit",
+    "country": "Indonésie",
+    "section": "Umění",
+    "topic": "Wayang kulit",
+    "headline": "Stínové loutky staré skoro tisíc let",
+    "fact": "Jávské stínové loutkové divadlo wayang kulit se vyvíjí zhruba deset století a v roce 2003 ho UNESCO zapsalo jako mistrovské dílo ústního a nehmotného dědictví lidstva.",
+    "source_url": "https://asiasociety.org/new-york/wayang-kulit-indonesias-extraordinary-shadow-puppetry-tradition",
+    "source_quote": "The art form has evolved over approximately ten centuries... Wayang Kulit was designated by UNESCO as a Masterpiece of the Oral and Intangible Heritage of Humanity in 2003",
+    "voice": "Stín kůže na plátně vypráví stejné příběhy, které tu lidé poslouchali už před tisícem let.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a traditional Javanese wayang kulit shadow puppet performance, intricately carved leather puppet casting a shadow on a lit screen, dark theater setting, 16:9",
+    "ll": [110.3695, -7.7956],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jeden loutkář ovládá desítky postav najednou",
+        "fact": "Loutkoherec zvaný dalang při představení sám vodí desítky vyřezávaných kožených loutek mezi lampou a plátnem a k tomu ještě mluví za všechny postavy najednou.",
+        "source_url": "https://asiasociety.org/new-york/wayang-kulit-indonesias-extraordinary-shadow-puppetry-tradition",
+        "source_quote": "The dalang manipulates the carved leather figures between the lamp and screen to bring the shadows to life.",
+        "voice": "Jeden hlas dokáže na plátně rozehrát hádku mezi bohy, králi i šašky zároveň.",
+        "image_prompt": "Photorealistic shot of a wayang kulit puppeteer manipulating leather shadow puppets behind an illuminated screen, gamelan musicians nearby, warm stage lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Indické eposy v jávském přestrojení",
+        "fact": "Příběhy indických eposů Rámájana a Mahábhárata se ve wayangu přizpůsobily místním jávským zvyklostem a hodnotám natolik, že dnes působí jako svébytná indonéská tradice, i když jejich kořeny sahají až do Indie.",
+        "source_url": "https://asiasociety.org/new-york/wayang-kulit-indonesias-extraordinary-shadow-puppetry-tradition",
+        "source_quote": "Stories drawn from the epics Ramayana and Mahabharata were creatively adapted to align with local social contexts, beliefs, and cultural values, forming a distinctly Indonesian identity.",
+        "voice": "Příběh připlul odjinud, ale během staletí zdomácněl tak, že dnes patří jen sem.",
+        "image_prompt": "Photorealistic shot of an outdoor Javanese village square at night with a wayang kulit screen glowing and gamelan orchestra performing, festive atmosphere, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-umeni-batik",
+    "country": "Indonésie",
+    "section": "Umění",
+    "topic": "Batik",
+    "headline": "Textilní technika zapsaná na seznam UNESCO",
+    "fact": "Indonéský batik, tradiční technika barvení látek voskem, byl 2. října 2009 zapsán na seznam nehmotného kulturního dědictví UNESCO.",
+    "source_url": "https://ich.unesco.org/en/RL/indonesian-batik-00170",
+    "source_quote": "UNESCO designated batik as a Masterpiece of Oral and Intangible Heritage of Humanity on October 2, 2009.",
+    "voice": "Vosk na látce rozhoduje, kam barva smí, a kam už ne.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up shot of an artisan hand-applying hot wax with a canting tool onto white fabric to create intricate batik patterns, workshop setting, warm light, 16:9",
+    "ll": [109.6746, -6.8898],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vzor, který doprovází Indonésana od kolébky po hrob",
+        "fact": "Batikované látky provázejí Indonésany od narození po smrt — novorozence nosí matky v batikovém šátku pro štěstí a zesnulé se zahalují do pohřebního batiku.",
+        "source_url": "https://www.thejakartapost.com/news/2009/09/08/batik-selected-unesco-cultural-heritage-list.html",
+        "source_quote": "infants are carried in batik slings decorated with symbols designed to bring the child luck, and the dead are shrouded in funerary batik",
+        "voice": "Stejná látka doprovází člověka na začátku života i na jeho úplném konci.",
+        "image_prompt": "Photorealistic shot of colorful traditional batik fabrics displayed and hanging in an Indonesian market stall, Pekalongan Java, warm afternoon light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Řemeslo, co vzniklo na dvorech jávských sultánů",
+        "fact": "Batik se zrodil v jávských panovnických dvorech, odkud se postupně rozšířil i do dalších regionů Indonésie, kde si každá oblast vytvořila vlastní charakteristické vzory a barvy.",
+        "source_url": "https://www.thejakartapost.com/news/2009/09/08/batik-selected-unesco-cultural-heritage-list.html",
+        "source_quote": "While batik originated in Javanese courts, several other regions in Indonesia also have their own styles of batik.",
+        "voice": "Vzor, co kdysi zdobil jen roucha šlechticů, dnes nosí na tržišti kdokoliv.",
+        "image_prompt": "Photorealistic close-up shot of several different regional batik textile patterns laid side by side, rich textures, studio light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-umeni-gamelan",
+    "country": "Indonésie",
+    "section": "Umění",
+    "topic": "Gamelan",
+    "headline": "Orchestr, co se naladí sám na sebe",
+    "fact": "Gamelan je tradiční indonéský orchestr složený hlavně z bronzových kovových nástrojů; jeho název pochází z jávského slova 'gamel', tedy 'bít' nebo 'udeřit'.",
+    "source_url": "https://study.com/learn/lesson/gamelan-definition-music-instruments.html",
+    "source_quote": "The word 'gamelan' derives from the Javanese word gamel, meaning 'to strike or hammer'",
+    "voice": "Jméno nástroje rovnou prozrazuje, jak se s ním vlastně hraje.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a traditional Javanese gamelan ensemble with bronze metallophones and gongs, musicians playing during a cultural performance, warm indoor lighting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Žádné dva orchestry nezní stejně",
+        "fact": "Každý gamelanový soubor je naladěný sám pro sebe, ne podle jednotného vnějšího standardu — proto zní každý gamelanový orchestr na Jávě i Bali mírně jinak.",
+        "source_url": "https://centerforworldmusic.org/2022/08/instruments-of-the-central-javanese-gamelan-1/",
+        "source_quote": "No two gamelans are tuned precisely alike; rather, each instrument is tuned to match the ensemble for which it is intended rather than to an external standard of pitch.",
+        "voice": "Vem gamelan z jedné vesnice na druhou a uslyšíš, že ani ladění není nikde stejné.",
+        "image_prompt": "Photorealistic close-up shot of ornately carved bronze gamelan metallophone keys and mallets, intricate details, soft studio light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Klidná Jáva, temperamentní Bali",
+        "fact": "Jávský gamelan zní tlumeně a rozjímavě, zatímco balijský gamelan je rychlý, hlasitý a temperamentní — stejný typ nástrojů tak na dvou blízkých ostrovech vytváří úplně odlišnou hudební náladu.",
+        "source_url": "https://www.britannica.com/art/gamelan",
+        "source_quote": "The soft, shockless resonance of the Javanese gamelan has been refined to create a mood of untroubled calm and mystic serenity; by contrast, Balinese gamelan is vigorous, rhythmic and explosive",
+        "voice": "Dva ostrovy blízko sebe, a přesto úplně jiná nálada hudby, co z nich vychází.",
+        "image_prompt": "Photorealistic panoramic shot contrasting a calm Javanese gamelan performance and an energetic Balinese gamelan performance, cultural costumes, warm lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-sport-badminton",
+    "country": "Indonésie",
+    "section": "Sport",
+    "topic": "Badminton",
+    "headline": "Sport, který Indonésii vynesl nejvíc olympijského zlata",
+    "fact": "Badminton je pro Indonésii nejúspěšnější olympijský sport — od svého olympijského debutu v roce 1992 v něm země získala osm zlatých medailí.",
+    "source_url": "https://seasia.co/2025/04/28/indonesia-badminton-legacy",
+    "source_quote": "badminton being the cornerstone of its Olympic success totaling eight gold medals... Since badminton's Olympic debut in 1992",
+    "voice": "Košíček přeletí přes síť rychleji než cokoliv jiného na olympijském programu, a Indonésané v tom vynikají dlouhodobě nejvíc.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic action shot of a professional badminton player smashing a shuttlecock during a match, indoor arena, dynamic motion blur, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "První zlato hned při prvním startu",
+        "fact": "Na olympiádě v Barceloně 1992, kdy badminton debutoval jako olympijský sport, získali Indonésané rovnou dvě zlaté medaile — Susi Susanti mezi ženami a Alan Budikusuma mezi muži.",
+        "source_url": "https://seasia.co/2025/04/28/indonesia-badminton-legacy",
+        "source_quote": "The 1992 Barcelona Olympics marked a historic moment when Susi Susanti (women's singles) and Alan Budikusuma (men's singles) secured Indonesia's first-ever Olympic gold medals.",
+        "voice": "Hned napoprvé, co se o zlato v tomhle sportu vůbec soutěžilo, ho získal rovnou pár z jedné země.",
+        "image_prompt": "Photorealistic shot of a badminton player celebrating an Olympic gold medal win, raising arms in victory, stadium crowd blurred in background, 16:9"
+      },
+      "kartograf": {
+        "headline": "Turnaj družstev, co jedna země ovládla nejvíc",
+        "fact": "Indonésie vyhrála soutěž družstev mužů Thomas Cup celkem čtrnáctkrát, což je víc než kterákoli jiná země v historii tohoto turnaje.",
+        "source_url": "https://seasia.co/2025/04/28/indonesia-badminton-legacy",
+        "source_quote": "Indonesia holds an unmatched record in the Thomas Cup (men's team championship), lifting the trophy 14 times which is more than any other nation.",
+        "voice": "V jednom mezinárodním týmovém poháru žádná jiná země zatím nedokázala tenhle náskok dohnat.",
+        "image_prompt": "Photorealistic wide shot of a packed badminton stadium in Indonesia during a team championship match, national flags and cheering crowd, dramatic lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-sport-pencak-silat",
+    "country": "Indonésie",
+    "section": "Sport",
+    "topic": "Pencak silat",
+    "headline": "Bojové umění zapsané na seznam UNESCO",
+    "fact": "Indonéské bojové umění pencak silat zapsalo UNESCO v prosinci 2019 na seznam nehmotného kulturního dědictví lidstva.",
+    "source_url": "https://en.antaranews.com/news/138068/indonesian-pencak-silat-martial-art-inscribed-on-unesco-heritage-list",
+    "source_quote": "Pencak Silat was officially inscribed on the Representative List of the Intangible Cultural Heritage of Humanity of UNESCO in December 2019.",
+    "voice": "Pohyb, co dřív sloužil k přežití v boji, dnes UNESCO chrání jako kulturní poklad.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic action shot of two martial arts practitioners in traditional dress performing a pencak silat demonstration, dynamic pose, outdoor Indonesian setting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Styl, co si vzal inspiraci od tygra a jestřába",
+        "fact": "Podle jedné z legend vznikl pencak silat poté, co žena pozorovala souboj tygra s jestřábem a jejich pohyby použila k obraně proti skupině opilých mužů.",
+        "source_url": "https://www.indonesia.travel/us/en/travel-ideas/culture/pencak-silat",
+        "source_quote": "the ancient martial art originated after a woman watched a tiger do battle with a giant hawk, and copied their techniques to fight off a pestering group of drunken men",
+        "voice": "Inspiraci k obraně si prý nevzala od jiného bojovníka, ale rovnou od zvířat v souboji.",
+        "image_prompt": "Photorealistic shot of a martial arts practitioner in a fighting stance in a forest clearing, traditional woven sarong, dramatic natural light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Stovky stylů z jednoho souostroví",
+        "fact": "Pod pojmem pencak silat se skrývají stovky různých bojových stylů napříč jihovýchodní Asií, jejichž kořeny sahají podle historiků až do 6. století.",
+        "source_url": "https://www.indonesia.travel/us/en/travel-ideas/culture/pencak-silat",
+        "source_quote": "The term 'pencak silat' describes hundreds of indigenous combat styles in Southeast Asia dating back to as early as the 6th century",
+        "voice": "Není to jeden styl boje, je to celá rodina stylů, která vyrostla po celém souostroví zvlášť.",
+        "image_prompt": "Photorealistic wide shot of a group of martial artists from different regions demonstrating varied fighting stances, outdoor tournament setting, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-sport-sepak-takraw",
+    "country": "Indonésie",
+    "section": "Sport",
+    "topic": "Sepak takraw",
+    "headline": "Odbíjená, kde smí hrát jen nohama",
+    "fact": "Sepak takraw je jihovýchodoasijský sport, který kombinuje pravidla odbíjené s hrou nohama místo rukama a s míčem tradičně pleteným z ratanu.",
+    "source_url": "https://seasia.co/2025/05/03/sepak-takraw-southeast-asias-traditional-sport-that-went-global",
+    "source_quote": "sepak takraw, often dubbed 'kick volleyball,' is a traditional Southeast Asian sport that blends acrobatics with the rules of volleyball — using feet instead of hands",
+    "voice": "Ruce tu zůstávají celý zápas dole podél těla, a přesto míč lítá přes síť jako v odbíjené.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic action shot of a sepak takraw player performing an acrobatic overhead kick to hit a rattan ball over a net, outdoor court, dynamic motion, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Akrobatický kop přes vlastní hlavu",
+        "fact": "Hráči sepak takraw smí míč odehrát nohama, koleny, rameny, hrudníkem i hlavou, a při smečích se běžně vrhají do vzduchu v přemetu přes vlastní hlavu.",
+        "source_url": "https://seasia.co/2025/05/03/sepak-takraw-southeast-asias-traditional-sport-that-went-global",
+        "source_quote": "Players use their feet, knees, shoulders, chest, and head.",
+        "voice": "Nejhezčí bod padne většinou ve chvíli, kdy hráč skočí do vzduchu hlavou dolů.",
+        "image_prompt": "Photorealistic close-up action shot of a sepak takraw player mid-air performing a bicycle kick to strike the ball, sports arena, dramatic lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kompromisní jméno pro sport dvou zemí",
+        "fact": "Moderní pravidla hry sjednotili sportovní funkcionáři v roce 1960 v Kuala Lumpur a i samotný název 'sepak takraw' vznikl jako jazykový kompromis mezi malajským a thajským označením sportu.",
+        "source_url": "https://seasia.co/2025/05/03/sepak-takraw-southeast-asias-traditional-sport-that-went-global",
+        "source_quote": "the choice of the name 'Sepak Takraw' was essentially a compromise between Malaysia and Thailand in Kuala Lumpur in 1960",
+        "voice": "Ani jméno sportu si jedna země nenechala pro sebe, muselo vzniknout dohodou dvou sousedů.",
+        "image_prompt": "Photorealistic wide shot of a sepak takraw court with players from different Southeast Asian countries competing, international tournament banners, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-jazyk-bahasa-indonesia",
+    "country": "Indonésie",
+    "section": "Jazyk & slova",
+    "topic": "Bahasa Indonesia",
+    "headline": "Jeden jazyk pro stovky jiných jazyků",
+    "fact": "Indonésií se mluví přes 700 domorodými jazyky a nářečími, přesto se díky standardizované bahase indonéské, založené na malajštině, domluví přes 97 procent obyvatel země.",
+    "source_url": "https://www.dynamiclanguage.com/the-evolution-and-importance-of-the-indonesian-language/",
+    "source_quote": "over 97% of Indonesians are fluent in Indonesian, making it the most widely spoken language in Southeast Asia",
+    "voice": "Doma si každý mluví jinak, ale na tržišti i v televizi se nakonec domluví úplně všichni.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic shot of a busy Indonesian street market with diverse vendors and customers, vibrant daylight atmosphere, no readable large text in frame, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Druhý jazyk, kterým mluví skoro každý",
+        "fact": "Pro většinu Indonésanů je bahasa indonéská až druhým jazykem po jejich mateřské řeči, přesto se stala hlavní dorozumívací řečí celého souostroví — od úřadů přes školy až po televizní zprávy.",
+        "source_url": "https://berlitzthailandonline.com/blogs/exclusive-articles/languages-spoken-indonesia",
+        "source_quote": "despite being a second language for most Indonesians—who speak one of over 700 indigenous languages as their mother tongue—Indonesian plays a unifying role, serving as the lingua franca of the archipelago",
+        "voice": "Naučit se ho musí skoro každý, mateřský ho má přitom jen málokdo.",
+        "image_prompt": "Photorealistic shot of a classroom in Indonesia with children of different ethnic backgrounds studying together, textbooks open, warm daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obchodní řeč, co se stala řečí celého státu",
+        "fact": "Malajština, na které bahasa indonéská stojí, fungovala jako obchodní lingua franca napříč souostrovím už po staletí předtím, než se ve 20. století stala základem oficiálního jazyka samostatné Indonésie.",
+        "source_url": "https://www.expat.or.id/info/historyofbahasaindonesia.html",
+        "source_quote": "Malay was used for centuries as a lingua franca in many parts of the Indonesian archipelago and throughout the then Dutch East Indies, the language spoken in trade transactions.",
+        "voice": "Řeč obchodníků z přístavů se nakonec stala řečí celého státu na mapě.",
+        "image_prompt": "Photorealistic shot of an old harbor scene in the Indonesian archipelago with traditional wooden trading ships, historical atmosphere, golden hour light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-jazyk-reduplikace",
+    "country": "Indonésie",
+    "section": "Jazyk & slova",
+    "topic": "Reduplikace slov",
+    "headline": "Množné číslo, které se prostě zopakuje",
+    "fact": "V indonéštině se množné číslo u podstatných jmen často tvoří jednoduchým zdvojením celého slova, například 'orang' (člověk) se zdvojí na 'orang-orang' (lidé).",
+    "source_url": "https://talkpal.ai/culture/why-do-indonesians-double-words-like-orang-orang/",
+    "source_quote": "'Orang' means 'person,' while 'orang-orang' means 'people.'",
+    "voice": "Slovo se prostě řekne dvakrát, a najednou mluvíš o víc než jednom.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kniha se zdvojí, a jsou z ní knihy",
+        "fact": "Stejný princip zdvojení platí i pro slovo 'buku' neboli kniha, které se pro množné číslo zopakuje na 'buku-buku', tedy knihy.",
+        "source_url": "https://bahasa.fun/blog/indonesian-reduplication-word-doubling",
+        "source_quote": "Take a word, say it twice. 'Buku' (book) becomes 'buku-buku' (books).",
+        "voice": "Naučíš se jedno slovo, a zdvojením ho rovnou umíš použít i v množném čísle.",
+        "image_prompt": "Photorealistic shot of a stack of books on a wooden table in an Indonesian library, warm reading light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kontext někdy zdvojení úplně obejde",
+        "fact": "Přestože učebnice zdvojení popisují jako standardní způsob tvorby množného čísla, mluvčí indonéštiny slovo často nezdvojují vůbec, protože množné číslo je jasné už z kontextu věty.",
+        "source_url": "https://indonesian-online.com/the-plural-in-indonesian/",
+        "source_quote": "In Indonesian, context often tells you if a noun is singular or plural, so reduplication is not always necessary.",
+        "voice": "Věta prozradí počet i bez toho, aby se slovo muselo dvakrát opakovat.",
+        "image_prompt": "Photorealistic shot of a hand pointing at a sentence in an Indonesian grammar textbook, close-up, soft desk lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-jazyk-orangutan-slovo",
+    "country": "Indonésie",
+    "section": "Jazyk & slova",
+    "topic": "Slovo orangutan",
+    "headline": "Slovo, které znamená 'člověk lesa'",
+    "fact": "Slovo 'orangutan' pochází z malajských slov 'orang' (člověk) a 'hutan' (les) a doslova znamená 'člověk lesa'.",
+    "source_url": "https://www.etymonline.com/word/orangutan",
+    "source_quote": "The word orangutan comes from the Malay words 'Orang' (meaning: person) and 'Hutan' (meaning: of the forest).",
+    "voice": "Jméno lidoopa v překladu vlastně říká, že jde o souseda z lesa, ne o pouhé zvíře.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo možná původně nemluvilo o opicích",
+        "fact": "Podle jedné teorie označovalo slovo 'orang hutan' na Jávě původně lidské obyvatele odlehlých lesů Sundských ostrovů a teprve Evropané ho začali chybně vztahovat na lidoopy.",
+        "source_url": "https://contentcatnip.com/2022/08/14/ancient-word-of-the-day-orangutan/",
+        "source_quote": "It is possible that the word originally was used by town-dwellers on Java to describe savage forest tribes of the Sunda Islands and that Europeans misunderstood it to mean the ape.",
+        "voice": "Možná si Evropané jedno slovo od začátku popletli, a omyl se pak vžil na staletí.",
+        "image_prompt": "Photorealistic shot of a dense misty Sumatran rainforest interior with dappled sunlight filtering through canopy, no people, no text, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malajské slovo, co se usadilo ve světových jazycích",
+        "fact": "Slovo 'orangutan' se z malajštiny beze změny rozšířilo do angličtiny, češtiny i řady dalších jazyků po celém světě jako vědecké i běžné označení lidoopa.",
+        "source_url": "https://www.etymonline.com/word/orangutan",
+        "source_quote": "The word 'Orangutan' quite literally translates to 'person of the forest.'",
+        "voice": "Jedno místní slovo z pralesa dnes bez problémů rozumí lidé na úplně jiném kontinentu.",
+        "image_prompt": "Photorealistic shot of an old world map with a highlighted trade route from Southeast Asia outward, illustrating the spread of a word, soft educational lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-jidlo-nasi-goreng",
+    "country": "Indonésie",
+    "section": "Jídlo",
+    "topic": "Nasi goreng",
+    "headline": "Smažená rýže, co se stala oficiálním národním jídlem",
+    "fact": "Indonéská vláda v roce 2018 oficiálně vyhlásila nasi goreng, smaženou rýži, jedním z pěti národních jídel země, spolu se sotem, sate, rendangem a gado-gado.",
+    "source_url": "https://medium.com/@unicornsukses140/nasi-goreng-indonesias-national-and-most-popular-dish-c00b1a910973",
+    "source_quote": "Nasi goreng was named the official national dish of Indonesia in 2018, along with four other dishes chosen by the Indonesian government: soto, sate, rendang and gado-gado.",
+    "voice": "Obyčejná smažená rýže si nakonec vysloužila i vlastní oficiální status.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic overhead shot of a plate of nasi goreng fried rice topped with a fried egg, crispy shallots, and prawn crackers, Indonesian home kitchen setting, warm light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Recept, co se region od regionu mění",
+        "fact": "Nasi goreng vypadá jinak skoro v každé indonéské oblasti — na Bali do něj přidávají kokos a arašídy, na Sumatře zase kousky rendangu.",
+        "source_url": "https://medium.com/@unicornsukses140/nasi-goreng-indonesias-national-and-most-popular-dish-c00b1a910973",
+        "source_quote": "Central Java uses tempeh and sambal, West Java adds seafood, Bali incorporates coconut and peanuts, and West Sumatra includes rendang.",
+        "voice": "Stejné jídlo pod stejným jménem, a přece na každém ostrově trochu jiná chuť.",
+        "image_prompt": "Photorealistic shot of several regional variations of nasi goreng fried rice served on banana leaves, colorful garnishes, Indonesian market setting, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, co v sobě nese celé dějiny obchodu",
+        "fact": "Nasi goreng spojuje čínskou techniku smažení, malajské suroviny i nizozemské koloniální vlivy — v jednom pokrmu se tak potkávají stopy staletí obchodu a kolonizace v celém souostroví.",
+        "source_url": "https://www.meer.com/en/98583-the-evolution-of-nasi-goreng",
+        "source_quote": "It combines Chinese frying techniques with Malay ingredients, enriched further by Dutch colonial influences",
+        "voice": "Na talíři se sejdou stopy obchodníků, kolonizátorů i místních kuchařů, jako by šlo o mapu dějin.",
+        "image_prompt": "Photorealistic shot of an old Indonesian trading port market with spices, rice sacks, and cooking woks, historical atmosphere, warm golden light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-jidlo-rendang",
+    "country": "Indonésie",
+    "section": "Jídlo",
+    "topic": "Rendang",
+    "headline": "Jídlo, které CNN vyhlásilo nejchutnějším na světě",
+    "fact": "Televize CNN zařadila v roce 2017 minangkabauský hovězí rendang ze Sumatry na první místo žebříčku 50 nejchutnějších jídel světa.",
+    "source_url": "https://www.rimping.com/blog/7425/rendang-worlds-best-food",
+    "source_quote": "in 2017, Rendang was ranked 1st out of 50 of the world's most delicious foods",
+    "voice": "Hrnec, co se vaří celé hodiny, nakonec porazil v anketě jídla z celého světa.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up shot of a pot of dark rich beef rendang simmering in coconut milk and spices, West Sumatra kitchen, warm steam rising, 16:9",
+    "ll": [100.4172, -0.9471],
+    "levels": {
+      "cestovatel": {
+        "headline": "Maso, co se vaří, dokud omáčka úplně nezmizí",
+        "fact": "Rendang se připravuje dlouhým pomalým vařením hovězího masa v kokosovém mléce s pastou z chilli, zázvoru, galangalu, citronové trávy a kurkumy, dokud tekutina úplně nezhoustne do tmavé aromatické hmoty.",
+        "source_url": "https://www.rimping.com/blog/7425/rendang-worlds-best-food",
+        "source_quote": "It's made from beef stewed with coconut milk and a paste of chilies, ginger, galangal, lemongrass, turmeric, and onions.",
+        "voice": "Čím déle se rendang vaří, tím míň omáčky zbyde a tím víc chuti se nasoukalo do masa.",
+        "image_prompt": "Photorealistic close-up shot of dark caramelized beef rendang pieces coated in thick spice paste, served on a plate, rich texture, warm lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Recept, co si vzal kus Indie i Arábie",
+        "fact": "Rendang vznikl u lidu Minangkabau v západní Sumatře pravděpodobně už v 16. století pod vlivem indických kari receptů, které do oblasti přinesli arabští a indičtí obchodníci.",
+        "source_url": "https://voi.id/en/lifestyle/177769",
+        "source_quote": "The origin of Rendang dates back to the 16th century on the island of West Sumatra, Indonesia... influenced by Indian curries introduced by Arab and Indian traders",
+        "voice": "Koření dorazilo po obchodních cestách z Indie, ale výsledný recept už patří jen Sumatře.",
+        "image_prompt": "Photorealistic shot of a traditional spice market stall in West Sumatra with chili, ginger, turmeric and lemongrass displayed, vibrant colors, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-jidlo-sate",
+    "country": "Indonésie",
+    "section": "Jídlo",
+    "topic": "Saté",
+    "headline": "Špízy, co se z Jávy rozšířily po celé Asii",
+    "fact": "Saté, tedy grilované masové špízy podávané s omáčkou, vzniklo na Jávě v 19. století jako místní úprava indických kebabů a odtud se rozšířilo do Malajsie, Singapuru i Thajska.",
+    "source_url": "https://seasia.co/2023/07/12/from-javas-street-vendors-to-southeast-asian-icon-the-story-of-sate-or-satay",
+    "source_quote": "It emerged in the 19th century on the island of Java, influenced by Indian and Arab kebab traditions... By the late 19th century, it had also crossed the Strait of Malacca and reached Malaysia, Singapore, and Thailand.",
+    "voice": "Malý špíz z jávské uličky nakonec dobyl jídelníčky po celé jihovýchodní Asii.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up shot of grilled chicken satay skewers over charcoal, served with peanut sauce, Indonesian street food stall, warm evening light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Arašídová omáčka dorazila později než maso samo",
+        "fact": "Arašídy do jihovýchodní Asie přivezli až v 16. století portugalští a španělští obchodníci, takže typická arašídová omáčka se k masovým špízům přidala teprve v 19. století.",
+        "source_url": "https://seasia.co/2023/07/12/from-javas-street-vendors-to-southeast-asian-icon-the-story-of-sate-or-satay",
+        "source_quote": "Peanuts were introduced by Portuguese and Spanish merchants in the 16th century and quickly became popular in Southeast Asian cooking. It wasn't until the 19th century that the sauce was paired with meat skewers.",
+        "voice": "Omáčka, bez které si dnes saté nikdo neumí představit, se k němu přidala až o staletí později.",
+        "image_prompt": "Photorealistic close-up shot of a small bowl of rich peanut sauce next to grilled satay skewers, rustic wooden table, warm light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Slovo, co má první písemný záznam přesně určený",
+        "fact": "Podle Oxford English Dictionary se první doložené použití slova 'satay' v angličtině objevilo v roce 1917 v popisu prodejce saté v Singapuru.",
+        "source_url": "https://spice.alibaba.com/global-spice-traditions/satay-a-global-love-affair-with-spiced-skewers",
+        "source_quote": "the first recorded use of the word appearing in 1917 describing a satay seller in Singapore known as the 'Satay Man'",
+        "voice": "Jídlo se prodávalo na ulici dávno předtím, než si jeho jméno vůbec někdo zapsal do slovníku.",
+        "image_prompt": "Photorealistic vintage-style shot of an early 20th century street food vendor grilling meat skewers in Singapore, historical atmosphere, warm sepia tone, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-historie-voc-koreni",
+    "country": "Indonésie",
+    "section": "Historie",
+    "topic": "VOC a obchod s kořením",
+    "headline": "Společnost, co si koupila monopol na muškátový oříšek",
+    "fact": "Nizozemská Východoindická společnost (VOC), založená v roce 1602, ovládla Banda Islands, jediný tehdejší zdroj muškátového oříšku na světě, a získala tak nad touto kořeninou úplný monopol.",
+    "source_url": "https://museum.wa.gov.au/explore/dirk-hartog/voc-united-dutch-east-india-company",
+    "source_quote": "The Dutch East India Company (VOC) was formed in 1602... The Banda Islands were the world's sole source of nutmeg in the 16th century",
+    "voice": "Kdo ovládl pár malých ostrůvků, ovládl vlastně celý světový obchod s jedním kořením.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style shot of 17th century Dutch trading ships anchored near the volcanic Banda Islands, nutmeg trees on the shore, dramatic period lighting, 16:9",
+    "ll": [129.8965, -4.5261],
+    "levels": {
+      "cestovatel": {
+        "headline": "Cena koření udržovaná uměle vysoko",
+        "fact": "Aby si VOC udržela vysoké ceny muškátového oříšku a hřebíčku, nechávala celé háje těchto stromů mimo Bandu a Ambon vykácet, čímž záměrně omezovala nabídku i konkurenci.",
+        "source_url": "https://museum.wa.gov.au/explore/dirk-hartog/voc-united-dutch-east-india-company",
+        "source_quote": "During the Spice Wars of the 17th and 18th century the Dutch uprooted groves of nutmeg and cloves trees to keep prices high and cut their competitors out of the market.",
+        "voice": "Firma raději zničila vlastní zboží, než aby dovolila cenám klesnout.",
+        "image_prompt": "Photorealistic shot of workers cutting down nutmeg and clove tree groves on a tropical island under colonial-era oversight, historical reenactment style, 16:9"
+      },
+      "kartograf": {
+        "headline": "Obchodní firma, co si podmanila celé souostroví",
+        "fact": "VOC nejenže obchodovala s kořením, ale postupně si podrobila i místní vládce po celém souostroví a fakticky spravovala rozsáhlá území dnešní Indonésie víc jako stát než jako firma.",
+        "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company_in_the_Malay_Archipelago",
+        "source_quote": "the VOC established company factories for the collection of produce, pressured individual rulers to do business solely with the company, controlled the sources of supply of particular products",
+        "voice": "Firma s akciemi a účetnictvím si nakonec začala počínat jako vládnoucí mocnost celého souostroví.",
+        "image_prompt": "Photorealistic old-style map illustration of the Indonesian archipelago with colonial-era trade routes and forts marked, aged parchment tone, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-historie-proklamace",
+    "country": "Indonésie",
+    "section": "Historie",
+    "topic": "Proklamace nezávislosti",
+    "headline": "Pár vět, kterými vznikl nový stát",
+    "fact": "Sukarno a Mohammad Hatta přečetli 17. srpna 1945 v 10 hodin dopoledne v Jakartě krátké prohlášení, kterým vyhlásili nezávislost Indonésie.",
+    "source_url": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence",
+    "source_quote": "The Proclamation of Indonesian Independence was read at 10:00 Tokyo Standard Time on Friday, 17 August 1945",
+    "voice": "Zápis do dějin trval sotva pár minut na verandě obyčejného domu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style photograph of a modest house facade in Jakarta with a small crowd gathered outside, 1940s atmosphere, warm morning light, 16:9",
+    "ll": [106.8339, -6.1966],
+    "levels": {
+      "cestovatel": {
+        "headline": "Prohlášení přečtené před vlastním domem",
+        "fact": "Prohlášení nezávislosti zaznělo v ulici Jalan Pegangsaan Timur 56 v Jakartě, přímo před domem, kde Sukarno tehdy bydlel.",
+        "source_url": "https://en.wikipedia.org/wiki/Taman_Proklamasi",
+        "source_quote": "Jalan Pegangsaan Timur 56 in Jakarta",
+        "voice": "Historickou událost tehdy nehostil žádný palác, jen obyčejná ulice před domovními dveřmi.",
+        "image_prompt": "Photorealistic shot of a proclamation memorial monument in Jakarta marking the site of Indonesia's independence declaration, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nezávislost vyhlášená do politického vakua",
+        "fact": "Sukarno a Hatta vyhlásili nezávislost jen krátce po kapitulaci Japonska ve druhé světové válce, tedy v okamžiku, kdy se japonská okupační správa stahovala, ale nizozemská koloniální vláda se ještě nestihla vrátit.",
+        "source_url": "https://spiceislandsblog.com/2020/08/10/the-indonesian-declaration-of-independence-17-august-1945/",
+        "source_quote": "following Japan's surrender on August 15, 1945",
+        "voice": "Na pár dní zůstala země bez pána, a přesně do té mezery se vešlo vyhlášení vlastního státu.",
+        "image_prompt": "Photorealistic archival-style photograph of colonial-era administrative buildings in Jakarta in 1945, transitional historical atmosphere, muted tones, 16:9"
+      }
+    }
+  },
+  {
+    "id": "id-historie-majapahit",
+    "country": "Indonésie",
+    "section": "Historie",
+    "topic": "Majapahit",
+    "headline": "Říše, co ovládla většinu dnešní Indonésie",
+    "fact": "Jávská říše Majapahit existovala od roku 1293 do roku 1527 a na vrcholu své moci za krále Hajama Wuruka ovládala rozsáhlá území od dnešní Malajsie přes Sumatru a Borneo až po Bali.",
+    "source_url": "https://factsanddetails.com/indonesia/History_and_Religion/sub6_1a/entry-3942.html",
+    "source_quote": "The Majapahit Kingdom (1293-1520) was perhaps the greatest of the early Indonesian kingdoms... commanded loyalty from vassals across the archipelago: on Sumatra, Borneo, Sulawesi, and even the Malay Peninsula",
+    "voice": "Jedno království na Jávě dokázalo na čas sjednotit vliv nad většinou dnešního souostroví.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic historical-style wide shot of ancient red-brick ruins of a Majapahit-era temple complex in East Java, overgrown with grass, soft morning light, no people, no text, 16:9",
+    "ll": [112.3898, -7.5605],
+    "levels": {
+      "cestovatel": {
+        "headline": "Hlavní město dnes leží pod polem a vesnicí",
+        "fact": "Hlavní město říše Majapahit stávalo poblíž dnešní vesnice Trowulan u Mojokerta na východní Jávě, kde archeologové dodnes odkrývají zbytky cihlových chrámů a bran.",
+        "source_url": "https://factsanddetails.com/indonesia/History_and_Religion/sub6_1a/entry-3942.html",
+        "source_quote": "an empire based in Mojokerto, East Java, Indonesia",
+        "voice": "Kdysi hlavní město impéria, dnes tiché archeologické naleziště mezi rýžovými poli.",
+        "image_prompt": "Photorealistic shot of archaeological excavation of ancient red-brick temple ruins near a village in East Java, researchers' tools visible, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Poslední velká hinduistická říše archipelu",
+        "fact": "Majapahit byl posledním velkým hinduistickým státem na malajském souostroví, než ho v 16. století postupně nahradily muslimské sultanáty, což na mapě regionu znamenalo trvalý posun k islámu jako převažujícímu náboženství.",
+        "source_url": "https://factsanddetails.com/indonesia/History_and_Religion/sub6_1a/entry-3942.html",
+        "source_quote": "The Majapahit empire was the last of the major Hindu empires of the Malay archipelago",
+        "voice": "Jedna éra náboženství na mapě skončila a s ní zmizela i poslední velká hinduistická říše regionu.",
+        "image_prompt": "Photorealistic wide historical-style shot showing fading Hindu temple silhouettes and emerging mosque domes across an old map of the Indonesian archipelago, warm archival tone, 16:9"
+      }
+    }
+  }
+]

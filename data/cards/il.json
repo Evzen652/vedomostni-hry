@@ -1,0 +1,836 @@
+[
+  {
+    "id": "il-mista-stare-mesto-jeruzalema",
+    "country": "Izrael",
+    "section": "Místa",
+    "topic": "Staré Město Jeruzaléma",
+    "headline": "Jeden kilometr čtvereční, čtyři čtvrti",
+    "fact": "Staré Město Jeruzaléma leží uvnitř hradeb na ploše zhruba 1 km² a dělí se na židovskou, křesťanskou, muslimskou a arménskou čtvrť; od roku 1981 je zapsané na seznamu UNESCO.",
+    "source_url": "https://cs.wikipedia.org/wiki/Star%C3%A9_M%C4%9Bsto_(Jeruzal%C3%A9m)",
+    "source_quote": "V roce 1981 organizace UNESCO zapsalo Staré Město na seznamu světového dědictví",
+    "voice": "Do plochy jednoho velkého parku se tu vejdou hned čtyři různé světy.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Jerusalem's Old City stone walls and rooftops at golden hour sunset, warm light, no people, no text, 16:9",
+    "ll": [35.2345, 31.7784],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zeď stará přes dva tisíce let",
+        "fact": "Nejposvátnější místo pro modlitbu, Zeď nářků, se skládá ze 45 řad kamenných kvádrů, z nichž sedm nejspodnějších pochází ještě z dob Heroda Velikého kolem roku 19 před naším letopočtem.",
+        "source_url": "https://en.wikipedia.org/wiki/Western_Wall",
+        "source_quote": "The Wall consists of 45 stone courses, 28 of them above ground and 17 underground.",
+        "voice": "Ruku položíš na kámen, který tu leží ještě z dob římské nadvlády.",
+        "image_prompt": "Photorealistic close-up photo of people praying at the Western Wall in Jerusalem, ancient large stone blocks, folded prayer notes in cracks, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Město posvátné pro tři náboženství najednou",
+        "fact": "Čtyři čtvrti Starého Města odrážejí, jak se na malém ohraničeném prostoru vedle sebe vrství posvátná místa hned tří velkých náboženství - judaismu, křesťanství a islámu.",
+        "source_url": "https://cs.wikipedia.org/wiki/Star%C3%A9_M%C4%9Bsto_(Jeruzal%C3%A9m)",
+        "voice": "Tři náboženství, jedny hradby, a přesto to tu funguje čtvrť vedle čtvrti.",
+        "image_prompt": "Photorealistic aerial photo of Jerusalem's Old City showing the Dome of the Rock and dense stone rooftops of different quarters, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-mista-masada",
+    "country": "Izrael",
+    "section": "Místa",
+    "topic": "Masada",
+    "headline": "Pevnost na skále vysoké přes 400 metrů",
+    "fact": "Herodes Veliký nechal mezi lety 37 a 31 před naším letopočtem na vrcholu skalní plošiny vysoké přes 400 metrů vybudovat pevnost Masada jako svůj útočišťový palác.",
+    "source_url": "https://en.wikipedia.org/wiki/Masada",
+    "source_quote": "Between 37 and 31 BC, Herod the Great built a large fortress on the plateau as a refuge for himself",
+    "voice": "Kdo chtěl krále navštívit bez pozvání, musel napřed zdolat čtyři sta metrů skály.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Masada fortress ruins atop a desert plateau above the Dead Sea, dramatic morning light, no people, 16:9",
+    "ll": [35.3538, 31.3156],
+    "levels": {
+      "cestovatel": {
+        "headline": "Rampa, po které šplhali římští vojáci",
+        "fact": "Římané obléhali Masadu v roce 73 našeho letopočtu a na dobytí pevnosti postavili obléhací rampu vysokou 114 metrů, kterou z velké části tvořil přírodní skalní hřbet.",
+        "source_url": "https://en.wikipedia.org/wiki/Masada",
+        "source_quote": "The 114 m (375 ft) high assault ramp consisted mostly of a natural spur of bedrock.",
+        "voice": "Nasypat rampu k patě téhle skály muselo vojákům trvat měsíce.",
+        "image_prompt": "Photorealistic photo of the ancient Roman siege ramp remains at Masada, desert terrain, dramatic light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pevnost, kterou příroda postavila napůl sama",
+        "fact": "Masada stojí na izolované skalní plošině obklopené strmými srázy nad Mrtvým mořem - typický příklad toho, jak starověcí stavitelé využívali přirozený terén pouště k obraně, aniž by museli budovat vlastní hradby ze všech stran.",
+        "source_url": "https://en.wikipedia.org/wiki/Masada",
+        "voice": "Nejlepší hradbu tu už dávno postavila sama příroda.",
+        "image_prompt": "Photorealistic aerial photo of Masada plateau surrounded by steep desert cliffs above the Dead Sea, no people, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-mista-caesarea",
+    "country": "Izrael",
+    "section": "Místa",
+    "topic": "Caesarea",
+    "headline": "Přístav postavený uprostřed volného moře",
+    "fact": "Herodes Veliký nechal na přelomu letopočtu vybudovat přístavní město Caesarea s umělým přístavem Sebastos, který vznikl v otevřeném moři bez přirozeného zálivu a zabíral plochu asi 100 000 m².",
+    "source_url": "https://www.romanports.org/en/the-ports/115-caesarea-maritima.html",
+    "source_quote": "There was no natural shelter, so the harbour was built in the open sea, enclosing around 100,000 m2.",
+    "voice": "Tam, kde příroda žádný přístav nenabízela, si ho panovník prostě nechal postavit.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of Caesarea Maritima's ancient Roman harbor ruins by the Mediterranean Sea, sunset light, no people, 16:9",
+    "ll": [34.8913, 32.5003],
+    "levels": {
+      "cestovatel": {
+        "headline": "Vodovod, který vedl vodu z hory ke stolu",
+        "fact": "Kromě paláce u moře a přístavu si Herodes v Caesarei nechal postavit i akvadukt přivádějící vodu z pohoří Karmel, spolu s tržnicemi, chrámy a skladišti.",
+        "source_url": "https://www.romanports.org/en/the-ports/115-caesarea-maritima.html",
+        "voice": "Voda na výstavní město musela urazit pěkný kus cesty z hor.",
+        "image_prompt": "Photorealistic photo of the ancient Roman aqueduct ruins on the beach near Caesarea, Mediterranean sea in background, golden hour, 16:9"
+      },
+      "kartograf": {
+        "headline": "Přístav, který si vynutila poloha, ne příroda",
+        "fact": "Caesarea vznikla na rovném pobřeží bez přirozeného zálivu, a přesto se stala jedním z hlavních přístavů východního Středomoří - ukázka, jak antické stavitelství dokázalo nahradit chybějící přírodní podmínky vlastní technologií.",
+        "source_url": "https://www.romanports.org/en/the-ports/115-caesarea-maritima.html",
+        "voice": "Tam, kde chyběl záliv, ho nahradilo lidské know-how.",
+        "image_prompt": "Photorealistic aerial photo of the ancient submerged harbor structures of Caesarea Maritima visible in the sea, aerial daylight view, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-priroda-mrtve-more",
+    "country": "Izrael",
+    "section": "Příroda",
+    "topic": "Mrtvé moře",
+    "headline": "Nejnižší místo na souši na celé Zemi",
+    "fact": "Hladina Mrtvého moře leží přibližně 440 metrů pod úrovní moře, což z jeho břehů dělá nejníže položené místo na souši na Zemi.",
+    "source_url": "https://en.wikipedia.org/wiki/Dead_Sea",
+    "source_quote": "the lake's surface is 439.78 metres (1,443 ft) below sea level",
+    "voice": "Klesáš pod hladinu moře, a přitom pořád stojíš na souši.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the Dead Sea with salt formations along the shore and mountains in the background, golden light, no people, 16:9",
+    "ll": [35.5, 31.5],
+    "levels": {
+      "cestovatel": {
+        "headline": "Voda, ve které se nedá utonout",
+        "fact": "Slanost Mrtvého moře dosahuje asi 34 %, tedy skoro desetkrát víc než běžný oceán, a díky tomu se v ní člověk bez potápění sám nadnáší na hladině.",
+        "source_url": "https://en.wikipedia.org/wiki/Dead_Sea",
+        "source_quote": "With a salinity of 342 g/kg, or 34.2% (in 2011), it is one of the world's saltiest bodies of water, 9.6 times as salty as the ocean.",
+        "voice": "Nemusíš plavat, stačí se položit a slaná voda tě sama unese.",
+        "image_prompt": "Photorealistic photo of a person floating effortlessly on the surface of the Dead Sea, salt crust visible nearby, bright daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Moře, které rok od roku mizí",
+        "fact": "Hladina Mrtvého moře od 60. let 20. století klesla zhruba o třetinu, protože přítok řeky Jordán je z velké části odkloněn na zavlažování a pitnou vodu pro okolní země.",
+        "source_url": "https://en.wikipedia.org/wiki/Dead_Sea",
+        "source_quote": "the surface of the Sea has shrunk by about 33 percent since the 1960s.",
+        "voice": "Řeka, co ho živila, teče čím dál víc jinam - na pole a do kohoutků.",
+        "image_prompt": "Photorealistic aerial photo of the shrinking Dead Sea coastline showing exposed dried salt flats, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-priroda-negev",
+    "country": "Izrael",
+    "section": "Příroda",
+    "topic": "Poušť Negev",
+    "headline": "Poušť, která zabírá víc než polovinu Izraele",
+    "fact": "Poušť Negev pokrývá víc než polovinu území Izraele, přibližně 13 000 km², a přesto v ní žije jen malá část obyvatel země.",
+    "source_url": "https://en.wikipedia.org/wiki/Negev",
+    "source_quote": "covers more than half of Israel, over some 13,000 km2 (5,000 mi2), or at least 55% of the country's land area.",
+    "voice": "Na mapě zabírá víc než půlku země, na sčítání lidu jen zlomek.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of the arid Negev desert landscape with rocky hills and sparse vegetation, golden hour, no people, 16:9",
+    "ll": [34.7913, 31.2589],
+    "levels": {
+      "cestovatel": {
+        "headline": "Město na jihu, kam skoro neprší",
+        "fact": "Přístavní město Ejlat na jihu Negevu má srážky v průměru jen kolem 24 milimetrů za rok, zatímco severněji položená oblast dostane víc než desetkrát tolik.",
+        "source_url": "https://en.wikipedia.org/wiki/Negev",
+        "source_quote": "Eilat receives on average only 24 mm (0.94 in) of rainfall a year",
+        "voice": "V Ejlatu si deštník skoro nekoupíš - stejně by nebylo pro co ho použít.",
+        "image_prompt": "Photorealistic photo of the desert town of Eilat with dry mountains and clear sky, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Poušť, kde přibývá lidí rychleji než jinde",
+        "fact": "Zatímco v roce 2010 žilo v Negevu asi 630 000 lidí, odhady počítaly s tím, že do roku 2025 se toto číslo přiblíží 1,2 milionu - poušť tak paradoxně patří k rychleji rostoucím oblastem země.",
+        "source_url": "https://en.wikipedia.org/wiki/Negev",
+        "source_quote": "the population of the Negev is expected to reach 1.2 million by 2025",
+        "voice": "Kraj, kde chybí voda, přitom láká čím dál víc nových obyvatel.",
+        "image_prompt": "Photorealistic aerial photo of a planned desert town in the Negev surrounded by arid landscape, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-priroda-machtes-ramon",
+    "country": "Izrael",
+    "section": "Příroda",
+    "topic": "Machteš Ramon",
+    "headline": "Kráter, který nezpůsobil meteorit ani sopka",
+    "fact": "Machteš Ramon je 40 kilometrů dlouhý, 2 až 10 kilometrů široký a až 500 metrů hluboký erozní kráter, který nevznikl dopadem meteoritu ani sopečnou činností, ale postupným vymíláním měkčí horniny.",
+    "source_url": "https://en.wikipedia.org/wiki/Makhtesh_Ramon",
+    "source_quote": "The makhtesh is 40 km long, 2–10 km wide and 500 meters deep.",
+    "voice": "Vypadá jako po dopadu z vesmíru, a přitom ho celý vymodelovaly jen voda a čas.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic aerial photo of Makhtesh Ramon crater in the Negev desert, layered rock colors, daylight, no people, 16:9",
+    "ll": [34.8018, 30.6108],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejstarší kameny na dně kráteru",
+        "fact": "Na dně kráteru vystupují horniny staré až 200 milionů let, které erozí odkryla řeka tekoucí Machtešem po vzniku sousedícího Aravského příkopu asi před 5 miliony let.",
+        "source_url": "https://en.wikipedia.org/wiki/Makhtesh_Ramon",
+        "source_quote": "Approximately 5 mya, the Arava Rift Valley was formed, with rivers changing their courses, carving out the inside of the crater which was a softer rock than that overlying.",
+        "voice": "Sejdeš na dno kráteru a šlapeš po kamenech starších než dinosauři.",
+        "image_prompt": "Photorealistic close-up photo of exposed colorful rock layers at the bottom of Makhtesh Ramon crater, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kráter, co byl kdysi dnem oceánu",
+        "fact": "Před stovkami milionů let pokrýval oblast dnešního Negevu oceán Tethys; jak postupně ustupoval na sever, zanechal po sobě vyvýšeninu, kterou později řeky vymlely do dnešního tvaru kráteru.",
+        "source_url": "https://en.wikipedia.org/wiki/Makhtesh_Ramon",
+        "source_quote": "Hundreds of millions of years ago, the Negev was covered by the Tethys ocean. Slowly, it started to recede northwards, leaving behind a hump-shaped hill.",
+        "voice": "Poušť uprostřed pevniny bývala kdysi dávno mořským dnem.",
+        "image_prompt": "Photorealistic wide aerial photo of the erosion cirque landscape of Makhtesh Ramon, desert colors, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-lide-chaim-weizmann",
+    "country": "Izrael",
+    "section": "Lidé",
+    "topic": "Chaim Weizmann",
+    "headline": "Chemik, který se stal prvním prezidentem",
+    "fact": "Chaim Weizmann byl chemik, jehož výzkum kvasného procesu na výrobu acetonu pomohl Británii za první světové války, a v roce 1949 se stal prvním prezidentem státu Izrael.",
+    "source_url": "https://en.wikipedia.org/wiki/Chaim_Weizmann",
+    "source_quote": "Weizmann was elected president by the Knesset on 17 February 1949.",
+    "voice": "Nejdřív pomáhal vyrábět výbušniny v laboratoři, pak podepisoval zákony jako hlava státu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic portrait photo of an elderly statesman in a formal suit, early 20th century style studio lighting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Objev, který pomohl vyhrát válku",
+        "fact": "Weizmannův kvasný proces na výrobu acetonu byl za první světové války klíčový pro výrobu výbušniny kordit, kterou britská armáda potřebovala ve velkém množství.",
+        "source_url": "https://en.wikipedia.org/wiki/Chaim_Weizmann",
+        "source_quote": "Acetone was used in the manufacture of cordite explosive propellants critical to the Allied war effort",
+        "voice": "Baktérie v laboratorní láhvi nakonec pomohly zásobovat frontu municí.",
+        "image_prompt": "Photorealistic photo of vintage chemistry laboratory glassware and fermentation vessels, early 20th century style, 16:9"
+      },
+      "kartograf": {
+        "headline": "Výzkumný ústav pojmenovaný po vědci-prezidentovi",
+        "fact": "Ústav, který Weizmann pomáhal budovat od roku 1934, byl v roce 1949 přejmenován na Weizmannův institut věd - dnes patří mezi přední vědecká pracoviště na Blízkém východě.",
+        "source_url": "https://en.wikipedia.org/wiki/Chaim_Weizmann",
+        "source_quote": "On 2 November 1949, the anniversary of the Balfour Declaration, the Daniel Sieff Institute, much enlarged and rebuilt, was renamed the Weizmann Institute of Science.",
+        "voice": "Vědec se stal prezidentem, a přesto mu nakonec pojmenovali institut, ne palác.",
+        "image_prompt": "Photorealistic wide shot of a modern scientific research campus with modern buildings and greenery, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-lide-ada-yonath",
+    "country": "Izrael",
+    "section": "Lidé",
+    "topic": "Ada Yonath",
+    "headline": "Vědkyně, co rozluštila stavbu ribozomu",
+    "fact": "Chemička Ada Yonath dostala v roce 2009 Nobelovu cenu za chemii za výzkum stavby a funkce ribozomu, buněčné továrny na bílkoviny.",
+    "source_url": "https://en.wikipedia.org/wiki/Ada_Yonath",
+    "source_quote": "In 2009, Yonath received the Nobel Prize in Chemistry",
+    "voice": "Roky se do neviditelně malé buněčné mašinerie nikdo netroufal pustit tak zblízka jako ona.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic portrait photo of a scientist in a modern chemistry laboratory, white coat, focused expression, daylight, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Desítky let na jednom vědeckém úkolu",
+        "fact": "Yonath začala se svým výzkumem struktury ribozomu už v 70. letech a k prvnímu úspěšnému zmapování obou ribozomálních podjednotek pomocí rentgenové krystalografie došla v letech 2000 a 2001.",
+        "source_url": "https://en.wikipedia.org/wiki/Ada_Yonath",
+        "source_quote": "In 2000 and 2001, she determined the complete high-resolution structures of both ribosomal subunits and discovered within the otherwise asymmetric ribosome, the universal symmetrical region that provides the framework and navigates the process of polypeptide polymerization.",
+        "voice": "Na jeden problém potřebovala skoro celý vědecký život, a nakonec vyhrála.",
+        "image_prompt": "Photorealistic photo of X-ray crystallography equipment in a research laboratory, scientific instruments, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "První izraelská žena s Nobelovou cenou",
+        "fact": "Ada Yonath se stala první izraelskou ženou, která kdy získala Nobelovu cenu.",
+        "source_url": "https://en.wikipedia.org/wiki/Ada_Yonath",
+        "source_quote": "She was the first Israeli woman to be awarded a Nobel Prize.",
+        "voice": "Cesta k ocenění vedla přes desítky let, kdy byla ve svém oboru dlouho jediná svého druhu.",
+        "image_prompt": "Photorealistic wide shot of a university science building facade, modern architecture, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-lide-eliezer-ben-jehuda",
+    "country": "Izrael",
+    "section": "Lidé",
+    "topic": "Eliezer Ben-Jehuda",
+    "headline": "Než mohli mluvit hebrejsky, musela se nejdřív oživit",
+    "fact": "Eliezer Ben-Jehuda přesídlil v roce 1881 do Jeruzaléma a rozhodl se doma mluvit jen hebrejsky, ačkoli se tento jazyk tehdy používal skoro výhradně pro modlitby a náboženské texty, ne pro běžný rozhovor.",
+    "source_url": "https://en.wikipedia.org/wiki/Eliezer_Ben-Yehuda",
+    "source_quote": "In 1881 Ben-Yehuda joined the First Aliyah and immigrated to the Mutasarrifate of Jerusalem, then ruled by the Ottoman Empire, and settled in Jerusalem.",
+    "voice": "Se svým synem odmítal mluvit jakýmkoli jiným jazykem, i za cenu, že si chlapec dlouho neměl s kým hrát.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic portrait photo of a 19th century scholar with a beard writing at a wooden desk covered in papers and books, warm lamp light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Syn, který jako první mluvil hebrejsky odmalička",
+        "fact": "Ben-Jehudův syn Itamar, narozený v roce 1882, směl doma slyšet jen hebrejštinu a stal se tak prvním člověkem v novověku, pro kterého byla hebrejština mateřským jazykem od narození.",
+        "source_url": "https://en.wikipedia.org/wiki/Itamar_Ben-Avi",
+        "source_quote": "Itamar Ben-Avi was the first native speaker of Hebrew in modern times.",
+        "voice": "Než uměl chodit, uměl mluvit jazykem, který se předtím věky jen psal a modlil.",
+        "image_prompt": "Photorealistic photo of a late 19th century Jerusalem courtyard with a small child playing alone, warm afternoon light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Slovník, který dodělávali po jeho smrti",
+        "fact": "Ben-Jehuda začal sestavovat první moderní hebrejský slovník, jehož první díl vyšel v roce 1908; poslední svazek dokončili až po jeho smrti jeho žena a syn v roce 1958.",
+        "source_url": "https://en.wikipedia.org/wiki/Ben-Yehuda_Dictionary",
+        "source_quote": "The first volume was published in 1908 by Eliezer Ben-Yehuda, while the last was published long after his death, in 1958",
+        "voice": "Práci na jednom slovníku táhla jedna rodina přes tři generace.",
+        "image_prompt": "Photorealistic photo of old Hebrew dictionary volumes and handwritten manuscript pages on a wooden desk, warm light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-kultura-sabat",
+    "country": "Izrael",
+    "section": "Kultura & tradice",
+    "topic": "Šabat",
+    "headline": "Den, kdy se práce zastaví od pátečního večera",
+    "fact": "Šabat trvá od několika minut před západem slunce v pátek až do objevení tří hvězd na obloze v sobotu večer a zahrnuje 39 kategorií zakázaných činností.",
+    "source_url": "https://en.wikipedia.org/wiki/Shabbat",
+    "source_quote": "Shabbat is observed from a few minutes before the sun sets on Friday evening until the appearance of three stars in the sky on Saturday night, or an hour after sundown.",
+    "voice": "Na jeden den v týdnu se úmyslně zastaví i práce, která by jindy nepočkala.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a Friday evening Shabbat table with lit candles, braided challah bread and wine, warm indoor light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Dva chleby na stole místo jednoho",
+        "fact": "Šabatová večeře začíná požehnáním nad dvěma bochníky pletené chaly, které připomínají dvojitou dávku many, jež podle biblického příběhu Izraelité dostávali na poušti před sobotou.",
+        "source_url": "https://en.wikipedia.org/wiki/Shabbat",
+        "source_quote": "a blessing over two loaves of bread (lechem mishneh, 'double bread'), usually of braided challah",
+        "voice": "Na stole leží dva chleby tam, kde by čekal jeden.",
+        "image_prompt": "Photorealistic close-up photo of two braided challah loaves on a decorative cloth on a dinner table, candlelight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Odpočinek předepsaný do nejmenších podrobností",
+        "fact": "Kategorie zakázané práce o šabatu vycházejí z činností potřebných při stavbě starověkého Svatostánku - náboženský předpis tak čerpá pravidla odpočinku z popisu stavební práce.",
+        "source_url": "https://en.wikipedia.org/wiki/Shabbat",
+        "voice": "Seznam zakázaných činností vznikl paradoxně podle popisu stavby, ne odpočinku.",
+        "image_prompt": "Photorealistic wide shot of a quiet Jerusalem neighborhood street empty on a Saturday afternoon, soft light, no people, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-kultura-kibuc",
+    "country": "Izrael",
+    "section": "Kultura & tradice",
+    "topic": "Kibuc",
+    "headline": "Vesnice, kde si lidé sto let dělí majetek",
+    "fact": "První kibuc Degania Alef vznikl v roce 1910 na břehu Galilejského jezera jako zemědělská osada založená na společném vlastnictví a sdílené práci všech členů.",
+    "source_url": "https://en.wikipedia.org/wiki/Kibbutz",
+    "source_quote": "The first kibbutz was Degania Alef, founded in 1910.",
+    "voice": "Nikdo tu na začátku nevlastnil vlastní nářadí - všechno patřilo všem najednou.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of a green agricultural kibbutz settlement with fields and simple houses near a lake, daylight, 16:9",
+    "ll": [35.5732, 32.7078],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ani vlastní oblečení nebylo jen tvoje",
+        "fact": "V raných kibucech si členové nesměli nechávat ani vlastní nářadí či oblečení a veškerý příjem zvenčí museli odevzdat do společné pokladny.",
+        "source_url": "https://en.wikipedia.org/wiki/Kibbutz",
+        "source_quote": "kibbutzniks did not individually own tools, or even clothing",
+        "voice": "Co si oblékneš ráno, patřilo večer zase celé komunitě.",
+        "image_prompt": "Photorealistic photo of a communal dining hall in an early Israeli kibbutz, long wooden tables, warm toned lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá skupina lidí s velkým vlivem",
+        "fact": "V 60. letech 20. století tvořili obyvatelé kibuců jen malé procento obyvatel Izraele, přesto obsazovali nepoměrně větší podíl křesel v izraelském parlamentu.",
+        "source_url": "https://en.wikipedia.org/wiki/Kibbutz",
+        "source_quote": "15% of Israel's parliament",
+        "voice": "Pár procent obyvatel dokázalo v parlamentu mluvit mnohem hlasitěji, než odpovídalo jejich počtu.",
+        "image_prompt": "Photorealistic aerial photo of a kibbutz agricultural settlement with geometric fields, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-kultura-chanuka",
+    "country": "Izrael",
+    "section": "Kultura & tradice",
+    "topic": "Chanuka",
+    "headline": "Osm dní světla na památku jedné nádoby oleje",
+    "fact": "Chanuka trvá osm dní a připomíná podle tradice zázrak, kdy jediná zapečetěná nádoba oleje, která měla vystačit na jeden den, vydržela hořet v Chrámu celých osm dní.",
+    "source_url": "https://en.wikipedia.org/wiki/Hanukkah",
+    "source_quote": "found only a single container that was still sealed by the High Priest, with enough oil to keep the menorah in the Temple lit for a single day. They used this, yet it burned for eight days.",
+    "voice": "Olej, co měl vydržet den, si vzal osm dní navíc, jako by se mu nikam nechtělo.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a lit nine-branched hanukkiah menorah with candles glowing in a dark room, warm light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Svícen s jednou svíčkou navíc",
+        "fact": "Chanukový svícen zvaný chanukija má na rozdíl od klasické sedmiramenné menory devět ramen - osm na jednotlivé dny svátku a jedno navíc pro pomocnou svíčku šamaš, kterou se ostatní zapalují.",
+        "source_url": "https://en.wikipedia.org/wiki/Hanukkah",
+        "source_quote": "a nine-branched candelabrum containing spaces for eight ceremonial lights plus one additional candle, the shámash",
+        "voice": "Osm svíček slaví svátek, ale bez té deváté by se vůbec nerozsvítily.",
+        "image_prompt": "Photorealistic close-up photo of a hanukkiah with the shamash candle lighting the other candles, warm glow, dark background, 16:9"
+      },
+      "kartograf": {
+        "headline": "Svátek na památku vzpoury, ne jen zázraku",
+        "fact": "Chanuka připomíná i makabejské povstání proti seleukovské říši ve 2. století před naším letopočtem, při kterém Makabejci znovu dobyli Jeruzalém a obnovili bohoslužby ve druhém Chrámu.",
+        "source_url": "https://en.wikipedia.org/wiki/Hanukkah",
+        "source_quote": "commemorates the Maccabean Revolt against the Seleucid Empire in the 2nd century BCE, when the Maccabees successfully recovered Jerusalem and the Second Temple.",
+        "voice": "Za svícemi na okně se skrývá vzpomínka na ozbrojené povstání, ne jen na zázrak.",
+        "image_prompt": "Photorealistic wide shot of an ancient Middle Eastern temple ruin under a starry evening sky, historical atmosphere, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-umeni-bile-mesto-tel-avivu",
+    "country": "Izrael",
+    "section": "Umění",
+    "topic": "Bílé město Tel Avivu",
+    "headline": "Přes čtyři tisíce bauhausových domů v jednom městě",
+    "fact": "Tel Aviv má ve svém takzvaném Bílém městě přes 4000 budov postavených ve 30. letech 20. století ve stylu bauhausu, a od roku 2003 je tato čtvrť zapsaná na seznamu UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/White_City_(Tel_Aviv)",
+    "source_quote": "a collection of over 4,000 buildings in Tel Aviv from the 1930s built in a unique form of the International Style, commonly known as Bauhaus",
+    "voice": "Jedno město si nastřádalo víc bauhausových domů než kde jinde na světě, a rovnou u pouště a moře.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of white Bauhaus-style modernist buildings on a tree-lined street in Tel Aviv, bright daylight, 16:9",
+    "ll": [34.7742, 32.0700],
+    "levels": {
+      "cestovatel": {
+        "headline": "Architekti utíkali z Evropy rovnou sem",
+        "fact": "Řada architektů školy Bauhaus po jejím uzavření v Německu emigrovala do britské Palestiny a svůj funkcionalistický styl přizpůsobený horkému přímořskému podnebí přenesla přímo do ulic Tel Avivu.",
+        "source_url": "https://en.wikipedia.org/wiki/White_City_(Tel_Aviv)",
+        "voice": "Škola v Evropě zavřela dveře, a její žáci otevřeli nové ateliéry o moře dál.",
+        "image_prompt": "Photorealistic photo of a curved white modernist balcony facade typical of Tel Aviv Bauhaus architecture, palm tree nearby, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Styl navržený pro chladnou Evropu, upravený pro poušť",
+        "fact": "Architekti v Tel Avivu museli původně evropský bauhausový styl přizpůsobit horkému a slunečnému podnebí - přidali malá okna, stínicí balkony a budovy stavěli na sloupech, aby jimi mohl proudit vzduch.",
+        "source_url": "https://en.wikipedia.org/wiki/White_City_(Tel_Aviv)",
+        "voice": "Styl navržený pro chladnou Evropu si musel v poušti u moře najít úplně nové návyky.",
+        "image_prompt": "Photorealistic wide shot of a street in Tel Aviv's White City with buildings on pilotis columns, bright Mediterranean daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-umeni-klezmer",
+    "country": "Izrael",
+    "section": "Umění",
+    "topic": "Klezmer",
+    "headline": "Hudba, co skoro zmizela a pak se vrátila",
+    "fact": "Klezmer je nástrojová hudební tradice aškenázských Židů střední a východní Evropy, jejíž nejstarší písemná zmínka pochází z Krakova z roku 1595.",
+    "source_url": "https://en.wikipedia.org/wiki/Klezmer",
+    "source_quote": "an instrumental musical tradition of the Ashkenazi Jews of Central and Eastern Europe",
+    "voice": "Melodie, co kdysi hrála na svatbách po celé východní Evropě, dnes zní i na letním festivalu v Izraeli.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a klezmer musician playing clarinet at an outdoor festival in Israel, warm evening light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Housle ustoupily klarinetu",
+        "fact": "Původní klezmerské kapely stavěly hlavně na houslích a cimbálu, ale v polovině 19. století se mezi nástroji čím dál víc prosazoval klarinet, který dnes patří k nejtypičtějším zvukům tohoto stylu.",
+        "source_url": "https://en.wikipedia.org/wiki/Klezmer",
+        "source_quote": "In the mid-nineteenth century, the clarinet started to appear in those small Klezmer ensembles as well.",
+        "voice": "Nový nástroj se do kapely vetřel, a nakonec jí vzal celou melodickou linku.",
+        "image_prompt": "Photorealistic close-up photo of a vintage clarinet on a wooden table with sheet music, warm light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tradice, kterou obnovili až v Americe",
+        "fact": "Klezmerová hudba po holokaustu na dlouhá desetiletí téměř vymizela a její oživení začalo až v 70. letech 20. století, a to nejdřív v USA, odkud se zájem šířil zpátky i do Izraele.",
+        "source_url": "https://en.wikipedia.org/wiki/Klezmer",
+        "source_quote": "In the 1970s there was a renewal of interest in Klezmer music centered primarily in the United States.",
+        "voice": "Tradici, která v Evropě málem zanikla, museli lidé znovu poskládat až za oceánem.",
+        "image_prompt": "Photorealistic wide shot of a small folk music ensemble performing indoors, warm stage lighting, instruments, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-umeni-batsheva",
+    "country": "Izrael",
+    "section": "Umění",
+    "topic": "Batsheva Dance Company",
+    "headline": "Taneční soubor, co vymyslel vlastní pohybový jazyk",
+    "fact": "Taneční soubor Batševa vznikl 24. prosince 1964 v Tel Avivu a od roku 1990 ho jako umělecký ředitel vedl choreograf Ohad Naharin, který pro něj vytvořil vlastní pohybový styl zvaný Gaga.",
+    "source_url": "https://en.wikipedia.org/wiki/Batsheva_Dance_Company",
+    "source_quote": "On 24 December 1964, the company was officially founded.",
+    "voice": "Nestačilo mu jen tančit v cizím stylu, tak si rovnou vymyslel vlastní.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of contemporary dancers mid-movement on a bare stage, dramatic stage lighting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Pohyb podle pocitu, ne podle kroků",
+        "fact": "Pohybový jazyk Gaga nevychází z pevně daných kroků, ale z vlastního vnitřního pocitu pohybu, a dnes se mu na otevřených lekcích učí i lidé mimo profesionální tanečníky.",
+        "source_url": "https://en.wikipedia.org/wiki/Batsheva_Dance_Company",
+        "voice": "Nejde tu o to, jak pohyb vypadá zvenčí, ale jaký je zevnitř.",
+        "image_prompt": "Photorealistic photo of dancers practicing freely in a dance studio, soft natural light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tanec, který se z Tel Avivu rozšířil do světa",
+        "fact": "Pohybový styl Gaga se z domovské scény souboru Batševa v Tel Avivu rozšířil i mezi profesionální tanečníky a amatéry po celém světě.",
+        "source_url": "https://en.wikipedia.org/wiki/Batsheva_Dance_Company",
+        "source_quote": "This new movement boomed and has become well known worldwide.",
+        "voice": "Cvičení vymyšlené pro jeden soubor v Tel Avivu dnes zkoušejí tanečníci na úplně jiném kontinentu.",
+        "image_prompt": "Photorealistic wide shot of an international dance workshop with diverse participants moving freely, bright studio, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-sport-makabiada",
+    "country": "Izrael",
+    "section": "Sport",
+    "topic": "Makabiáda",
+    "headline": "Sportovní hry přezdívané židovská olympiáda",
+    "fact": "První ročník Makabiády se konal v roce 1932 a dnes se tyto hry, přezdívané 'židovská olympiáda', konají pravidelně jednou za čtyři roky.",
+    "source_url": "https://en.wikipedia.org/wiki/Maccabiah_Games",
+    "source_quote": "The 1st Maccabiah opened on March 28, 1932.",
+    "voice": "Přezdívku 'olympiáda' si vysloužily hry, na které nejezdí státy, ale komunita roztroušená po celém světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic wide shot of an athletics stadium filled with international flags during an opening ceremony, daylight, 16:9",
+    "ll": [34.8228, 32.0742],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tisíce sportovců z desítek zemí najednou",
+        "fact": "Na Makabiádu v roce 2022 dorazilo podle odhadů asi 10 000 sportovců z 80 zemí, kteří soutěžili ve 42 sportovních odvětvích.",
+        "source_url": "https://en.wikipedia.org/wiki/Maccabiah_Games",
+        "source_quote": "Approximately 10,000 athletes, from 80 countries, were expected to compete in 42 sports categories.",
+        "voice": "Na pár týdnů se z izraelských stadionů stane setkání sportovců z půlky světa.",
+        "image_prompt": "Photorealistic photo of diverse athletes from different countries walking into a stadium holding flags, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Hry, které spojují komunitu roztroušenou po světě",
+        "fact": "Na rozdíl od olympijských her, kam jezdí národní týmy jednotlivých států, na Makabiádu přijíždějí sportovci židovského původu z mnoha různých zemí najednou - hry tak fungují jako setkání celosvětové komunity, ne soupeření států.",
+        "source_url": "https://en.wikipedia.org/wiki/Maccabiah_Games",
+        "voice": "Nesoupeří tu státy proti sobě, ale jedna komunita se schází napříč hranicemi.",
+        "image_prompt": "Photorealistic aerial photo of a large sports stadium complex in Israel, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-sport-gal-fridman",
+    "country": "Izrael",
+    "section": "Sport",
+    "topic": "Gal Fridman",
+    "headline": "První izraelské olympijské zlato přišlo z moře",
+    "fact": "Windsurfař Gal Fridman získal na olympiádě v Athénách 2004 zlatou medaili a stal se tak prvním izraelským olympijským vítězem v historii.",
+    "source_url": "https://en.wikipedia.org/wiki/Gal_Fridman",
+    "source_quote": "is an Israeli windsurfer and Israel's first Olympic gold medalist",
+    "voice": "Než přijelo zlato, muselo se plachtit přes vlny na prkně, ne běhat po dráze.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a windsurfer racing on open sea waves under bright sunlight, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Zlato rozhodl výsledek posledního závodu",
+        "fact": "Fridman ve finálovém závodě 25. srpna 2004 doplul jako druhý, čímž porazil favorizovaného řeckého soupeře a s nejnižším celkovým součtem 42 bodů si zajistil olympijské zlato.",
+        "source_url": "https://en.wikipedia.org/wiki/Gal_Fridman",
+        "source_quote": "In the last race on August 25, 2004, Fridman finished a hard-fought 2nd, exploiting a tactical mistake made by Brazilian leader Ricardo Santos and beat Greek windsurfer Nikolaos Kaklamanakis to end the Olympic Regatta with the lowest score of 42 points, which secured his 2004 Olympic gold medal in windsurfing.",
+        "voice": "Nemusel vyhrát poslední závod, stačilo mu nespadnout příliš hluboko v celkovém pořadí.",
+        "image_prompt": "Photorealistic photo of a windsurfing competitor preparing equipment on a beach before a race, bright daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Malá země s dlouhým přímořským tréninkovým zázemím",
+        "fact": "Izraelský úspěch ve windsurfingu souvisí s dlouhým středomořským pobřežím země, které sportovcům odjakživa nabízí ideální podmínky pro trénink na vodě přímo doma, bez nutnosti cestovat za mořem jinam.",
+        "source_url": "https://en.wikipedia.org/wiki/Gal_Fridman",
+        "voice": "Vítr a moře měl sportovec doma za rohem, nemusel za tréninkem nikam cestovat.",
+        "image_prompt": "Photorealistic wide shot of the Mediterranean coastline of Israel with windsurfers training near the shore, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-sport-maccabi-tel-aviv",
+    "country": "Izrael",
+    "section": "Sport",
+    "topic": "Maccabi Tel Aviv",
+    "headline": "Basketbalový klub se šesti evropskými tituly",
+    "fact": "Basketbalový klub Maccabi Tel Aviv vyhrál celkem šest titulů evropské ligy mistrů, naposledy v roce 2014.",
+    "source_url": "https://en.wikipedia.org/wiki/Maccabi_Tel_Aviv_B.C.",
+    "source_quote": "to win the European-wide top-tier level EuroLeague on six occasions (1977, 1981, 2001, 2004, 2005, and 2014)",
+    "voice": "Malá země, a přesto basketbalový klub, kterého se bál kdekdo v Evropě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a packed indoor basketball arena during a professional match, dramatic arena lighting, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Třiadvacet titulů v řadě doma",
+        "fact": "V domácí izraelské lize dokázal Maccabi Tel Aviv v letech 1970 až 1992 vyhrát 23 mistrovských titulů v řadě.",
+        "source_url": "https://en.wikipedia.org/wiki/Maccabi_Tel_Aviv_B.C.",
+        "source_quote": "23 consecutive titles (1970 through 1992)",
+        "voice": "Přes dvě desetiletí neměl soupeř v domácí lize na klub prostě šanci.",
+        "image_prompt": "Photorealistic photo of a basketball trophy display cabinet with multiple championship trophies, warm lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Klub jako symbol malé země na velké scéně",
+        "fact": "Úspěchy Maccabi Tel Aviv v evropských basketbalových soutěžích ukazují, že i sportovní kluby z malých zemí bez velkého domácího trhu se dokážou dlouhodobě prosadit proti bohatším klubům z lidnatějších států.",
+        "source_url": "https://en.wikipedia.org/wiki/Maccabi_Tel_Aviv_B.C.",
+        "voice": "Malý domácí trh basketbalu nakonec neznamenal malé ambice v Evropě.",
+        "image_prompt": "Photorealistic aerial photo of a modern sports arena exterior in Tel Aviv at dusk, city lights, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-jazyk-hebrejske-pismo",
+    "country": "Izrael",
+    "section": "Jazyk & slova",
+    "topic": "Hebrejské písmo",
+    "headline": "Abeceda o 22 písmenech, co se čte odzadu",
+    "fact": "Hebrejská abeceda má 22 písmen, píše se zprava doleva a v tradiční podobě zaznamenává jen souhlásky - samohlásky se dřív běžně nepsaly vůbec.",
+    "source_url": "https://en.wikipedia.org/wiki/Hebrew_alphabet",
+    "source_quote": "The Hebrew alphabet has 22 letters.",
+    "voice": "Čtenář si musí samohlásky, které písmo vůbec nezaznamenává, doplnit sám.",
+    "visual_type": "typographic",
+    "levels": {
+      "cestovatel": {
+        "headline": "Malé tečky, které schovají chybu ve čtení",
+        "fact": "Aby si čtenáři nepletli výslovnost, doplňují se do textů - třeba pro děti nebo modlitební knihy - samohlásky pomocí soustavy teček a čárek zvané nikud, které se do běžného textu obvykle nepíšou.",
+        "source_url": "https://en.wikipedia.org/wiki/Hebrew_alphabet",
+        "voice": "Dospělý čtenář si samohlásky domyslí sám, dítě je ještě potřebuje vidět napsané.",
+        "image_prompt": "Photorealistic close-up photo of a Hebrew prayer book page with vowel pointing dots and dashes under the letters, soft light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Písmo odvozené z aramejské abecedy",
+        "fact": "Dnešní hebrejské písmo se vyvinulo z aramejské abecedy, která se rozšířila během vlády Achaimenovské říše - stejný předek tak dal vzniknout i dalším blízkovýchodním písmům.",
+        "source_url": "https://en.wikipedia.org/wiki/Hebrew_alphabet",
+        "source_quote": "The script is an offshoot of the Imperial Aramaic alphabet, which flourished during the Achaemenid Empire.",
+        "voice": "I písmo si občas půjčí abecedu od úplně jiné říše, než ve které samo vznikne.",
+        "image_prompt": "Photorealistic photo of an ancient inscribed stone tablet with Aramaic and Hebrew script carvings, museum lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-jazyk-slovo-shalom",
+    "country": "Izrael",
+    "section": "Jazyk & slova",
+    "topic": "Slovo šalom",
+    "headline": "Jedno slovo pro pozdrav i pro rozloučení",
+    "fact": "Hebrejské slovo šalom znamená především mír a celistvost a v moderní hebrejštině se používá idiomaticky jako pozdrav při setkání i loučení.",
+    "source_url": "https://en.wikipedia.org/wiki/Shalom",
+    "source_quote": "can be used idiomatically to mean hello and goodbye",
+    "voice": "Stejným slovem tu přivítáš přítele i s ním zase o chvíli později odejdeš.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of two people shaking hands and smiling outdoors in Israel, warm daylight, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Kořen slova skrývá i placení a splátky",
+        "fact": "Ze stejného trojhláskového kořene š-l-m jako slovo šalom vzniklo i sloveso pro 'vyplatilo se to' a výraz pro 'bylo to zaplaceno' - mír a vyrovnaný účet tak v hebrejštině vycházejí ze stejného základu.",
+        "source_url": "https://en.wikipedia.org/wiki/Shalom",
+        "source_quote": "from the root sh-l-m come the words shalom ('peace, well-being'), hishtalem ('it was worth it'), shulam ('was paid for')",
+        "voice": "Mír a vyrovnaný účet mají v hebrejštině překvapivě společné kořeny.",
+        "image_prompt": "Photorealistic close-up photo of an old handwritten Hebrew manuscript page, warm sepia tones, 16:9"
+      },
+      "kartograf": {
+        "headline": "Slovo, které má sourozence v sousedních jazycích",
+        "fact": "Podobná slova jako hebrejské šalom najdeme i v dalších semitských jazycích, například v arabštině jako salám - společný jazykový kořen tak spojuje slova pro mír napříč celým regionem Blízkého východu.",
+        "source_url": "https://en.wikipedia.org/wiki/Shalom",
+        "voice": "Sousední jazyky si podobná slova pro mír nevymyslely zvlášť, zdědily je ze společného kořene.",
+        "image_prompt": "Photorealistic wide shot of a Middle Eastern old parchment map with multiple scripts, archival lighting, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-jazyk-slovo-sabra",
+    "country": "Izrael",
+    "section": "Jazyk & slova",
+    "topic": "Slovo sabra",
+    "headline": "Trnitý kaktus dal jméno rodákům v Izraeli",
+    "fact": "Slovem sabra se označují Židé narození přímo v Izraeli; pojmenování pochází od plodu opuncie, kaktusu s trnitým povrchem a sladkým středem.",
+    "source_url": "https://en.wikipedia.org/wiki/Sabra_(person)",
+    "source_quote": "The designation sabra is associated with the imagery of the cactus, a plant characterized by its thorny exterior and soft interior.",
+    "voice": "Zvenčí trnité, uvnitř sladké - přesně jak lidem přišel vhodný obrázek pro sebe sama.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic close-up photo of a prickly pear cactus with ripe fruit growing in an Israeli landscape, bright daylight, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Slovo, které začínalo jako urážka",
+        "fact": "Novinář Uri Kesari přeznačil v roce 1931 dřívější posměšný výraz na hrdé pojmenování v článku nazvaném 'Jsme listy sabry!', čímž se postavil proti znevažování Židů narozených v tehdejší britské Palestině.",
+        "source_url": "https://en.wikipedia.org/wiki/Sabra_(person)",
+        "source_quote": "On 18 April 1931, in the newspaper Do'ar HaYom, he published an article titled \"We Are the Leaves of the Sabra!\", in which he argued against discrimination directed toward Jews born in mandatory Palestine by more recent immigrants.",
+        "voice": "Slovo, které mělo urazit, si lidé nakonec vzali za vlastní hrdý název.",
+        "image_prompt": "Photorealistic photo of an old Israeli newspaper page from the 1930s on a wooden table, archival warm light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Rodilí obyvatelé dnes tvoří většinu populace",
+        "fact": "Podíl sabrů, tedy rodilých Izraelců, mezi izraelskými Židy dlouhodobě roste, protože populace, která kdysi tvořila jen menšinu přistěhovalců, dala postupně vzniknout mnoha dalším generacím narozeným už přímo v zemi.",
+        "source_url": "https://en.wikipedia.org/wiki/Sabra_(person)",
+        "voice": "Kdo byl kdysi výjimkou, je dnes už dávno většinou.",
+        "image_prompt": "Photorealistic wide shot of a crowded modern Israeli city street with cafes, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-jidlo-falafel",
+    "country": "Izrael",
+    "section": "Jídlo",
+    "topic": "Falafel",
+    "headline": "Kuličky z cizrny, co se staly pouličním jídlem",
+    "fact": "Falafel se v izraelské kuchyni připravuje hlavně z cizrny smíchané s bylinkami a kořením a dnes patří k nejrozšířenějšímu pouličnímu jídlu v Izraeli.",
+    "source_url": "https://en.wikipedia.org/wiki/Falafel",
+    "source_quote": "has become widely recognized as a national dish in Israel, where it is a popular street food",
+    "voice": "Obyčejná luštěnina se smažením proměnila v jídlo, které pozná skoro každý na světě.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of freshly fried falafel balls served in pita bread with vegetables, street food stand, daylight, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Příděly na lístky pomohly rozšířit oblíbenost",
+        "fact": "Zavedení potravinových přídělů v Izraeli v roce 1949 nečekaně pomohlo popularitě falafelu, protože šlo o levný zdroj bílkovin ze snadno dostupných surovin, které si mohl dovolit skoro každý.",
+        "source_url": "https://en.wikipedia.org/wiki/Falafel",
+        "source_quote": "the introduction of rationing in 1949 boosted falafel's popularity",
+        "voice": "Jídlo chudších let se nakonec stalo oblíbenou pochoutkou i v časech hojnosti.",
+        "image_prompt": "Photorealistic photo of a busy falafel street stand with a vendor preparing food, bright daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, které si nárokuje víc zemí najednou",
+        "fact": "Falafel pravděpodobně vznikl v Egyptě, odkud se cizrnová verze rozšířila po celé východní části Středomoří - typický příklad jídla, které kvůli sdílené historii regionu dnes za své považuje víc zemí a kultur najednou.",
+        "source_url": "https://en.wikipedia.org/wiki/Falafel",
+        "source_quote": "The dish most likely originated in Egypt.",
+        "voice": "Recept cestoval po celém regionu dřív, než ho jakýkoli stát stihl označit za výhradně svůj.",
+        "image_prompt": "Photorealistic wide shot of a traditional Middle Eastern market street with food stalls, warm evening light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-jidlo-hummus",
+    "country": "Izrael",
+    "section": "Jídlo",
+    "topic": "Hummus",
+    "headline": "Pomazánka z cizrny stará skoro osm set let",
+    "fact": "Nejstarší dochovaná písemná zmínka o hummusu pochází ze 13. století z kuchařky připisované historikovi Ibn al-Adímovi z Aleppa.",
+    "source_url": "https://en.wikipedia.org/wiki/Hummus",
+    "source_quote": "The earliest mention of hummus was in a 13th century cookbook attributed to the historian Ibn al-Adim from Aleppo",
+    "voice": "Recept, který dnes najdeš na každém izraelském stole, se poprvé objevil v knize starší než sedm set let.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a bowl of hummus drizzled with olive oil, pita bread on the side, warm natural light, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Základ je jen pár surovin",
+        "fact": "Klasický hummus se dělá z uvařené a rozmixované cizrny smíchané s tahini pastou ze sezamu, citronovou šťávou a česnekem.",
+        "source_url": "https://en.wikipedia.org/wiki/Hummus",
+        "source_quote": "made from cooked, mashed chickpeas blended with tahini, lemon juice, and garlic",
+        "voice": "Čtyři suroviny stačí na pomazánku, o které se dá vést hodinová debata, čí recept je ten pravý.",
+        "image_prompt": "Photorealistic photo of ingredients for hummus laid out on a kitchen counter - chickpeas, tahini, lemon, garlic, daylight, 16:9"
+      },
+      "kartograf": {
+        "headline": "Soutěž o největší mísu hummusu",
+        "fact": "Rekord Guinnessovy knihy na největší mísu hummusu držel v roce 2021 Libanon s miskou o hmotnosti přes 10 000 kilogramů, čímž překonal dřívější izraelský rekord.",
+        "source_url": "https://en.wikipedia.org/wiki/Hummus",
+        "source_quote": "The winning dish, cooked by 300 cooks in the village of al-Fanar, near Beirut, weighed approximately 10,450 kilograms (23,040 lb).",
+        "voice": "O oblíbenost stejného jídla se sousední země dokážou přetahovat i na váze v tunách.",
+        "image_prompt": "Photorealistic wide shot of an enormous shallow dish of hummus at an outdoor food festival, crowd blurred in background, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-jidlo-shakshuka",
+    "country": "Izrael",
+    "section": "Jídlo",
+    "topic": "Šakšuka",
+    "headline": "Vejce v rajčatové omáčce, co dorazila s přistěhovalci",
+    "fact": "Šakšuka jsou vejce pošírovaná v omáčce z rajčat, papriky, cibule a česneku; do Izraele ji v 50. letech 20. století přinesli přistěhovalci ze severní Afriky.",
+    "source_url": "https://en.wikipedia.org/wiki/Shakshouka",
+    "source_quote": "The migration of Maghrebi Jews in the 1950s brought the dish to Israel, where it was subsequently widely adopted.",
+    "voice": "Recept z jiného kontinentu se nastěhoval spolu s lidmi, co ho vařili doma.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of a cast iron pan with shakshuka - eggs poached in tomato sauce, garnished with herbs, rustic kitchen table, daylight, 16:9",
+    "levels": {
+      "cestovatel": {
+        "headline": "Jméno, které popisuje, jak se vaří",
+        "fact": "Název šakšuka pochází z magrebské arabštiny od slovesa šakšaka, které podle Oxfordského slovníku znamená 'bublat, prskat, být rozmíchaný nebo stlučený dohromady' - přesně podle způsobu, jakým se vejce v omáčce nakonec spojí.",
+        "source_url": "https://en.wikipedia.org/wiki/Shakshouka",
+        "source_quote": "an onomatopoeic Maghribi Arabic word, related to the verb shakshaka meaning 'to bubble, to sizzle, to be mixed up, to be beaten together'",
+        "voice": "I jméno jídla prozrazuje, že v pánvi se prostě všechno smíchá dohromady.",
+        "image_prompt": "Photorealistic close-up photo of shakshuka being stirred in a pan, steam rising, warm kitchen light, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jídlo, které dorazilo později, než by čekal turista",
+        "fact": "Šakšuka byla v palestinské a levantské kuchyni dlouho neznámá a v izraelských restauracích se běžně objevila teprve od 90. let 20. století - ukázka, jak i zdánlivě 'tradiční' místní jídlo může být ve skutečnosti novodobým importem.",
+        "source_url": "https://en.wikipedia.org/wiki/Shakshouka",
+        "source_quote": "began appearing in Israeli restaurants in the 1990s",
+        "voice": "Jídlo, které dnes působí jako odjakživa domácí, je ve skutečnosti pořád ještě docela nové.",
+        "image_prompt": "Photorealistic wide shot of a bustling Tel Aviv breakfast café terrace with people eating, morning light, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-historie-vznik-statu-izrael",
+    "country": "Izrael",
+    "section": "Historie",
+    "topic": "Vznik státu Izrael",
+    "headline": "Stát vyhlášený jedním šestnáctiminutovým čtením",
+    "fact": "David Ben-Gurion vyhlásil 14. května 1948 v tehdejším tel-avivském muzeu vznik státu Izrael; samotné čtení prohlášení mu trvalo 16 minut.",
+    "source_url": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence",
+    "source_quote": "Ben-Gurion proceeded to read out the declaration, taking 16 minutes",
+    "voice": "Stát, o kterém se debatovalo léta, vznikl formálně za necelou čtvrthodinu čtení.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic archival-style photo of a formal hall with rows of chairs and a podium, mid-20th century decor, warm light, 16:9",
+    "ll": [34.7712, 32.0663],
+    "levels": {
+      "cestovatel": {
+        "headline": "Obřad naplánovaný kolem soboty",
+        "fact": "Slavnostní ceremoniál začal už ve čtyři odpoledne, aby celý obřad stihl skončit ještě před začátkem šabatu, který v pátek začíná se západem slunce.",
+        "source_url": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence",
+        "source_quote": "The event started at 16:00 (a time chosen so as not to breach the sabbath)",
+        "voice": "I zakládající obřad státu se musel podřídit hodinám náboženského kalendáře.",
+        "image_prompt": "Photorealistic photo of an old ceremonial hall interior with vintage chairs and a wooden podium, afternoon light through windows, 16:9"
+      },
+      "kartograf": {
+        "headline": "Podpis, který sbírali i od nepřítomných",
+        "fact": "Prohlášení mělo podepsat všech 37 členů Prozatímní státní rady, ale dvanáct z nich se slavnostního aktu osobně nezúčastnilo, protože byli v obležené oblasti Jeruzaléma nebo v zahraničí.",
+        "source_url": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence",
+        "source_quote": "The declaration was due to be signed by all 37 members of Moetzet HaAm. However, twelve members could not attend",
+        "voice": "Podpis pod historický dokument sbírali i od lidí, kteří ten den vůbec nemohli dorazit.",
+        "image_prompt": "Photorealistic wide shot of an old paper document with multiple handwritten signatures, archival warm tone, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-historie-svitky-od-mrtveho-more",
+    "country": "Izrael",
+    "section": "Historie",
+    "topic": "Svitky od Mrtvého moře",
+    "headline": "Nález, který začal u beduínského pastevce",
+    "fact": "Svitky od Mrtvého moře objevili mezi lety 1946 a 1947 beduínští pastevci v jeskyních u Mrtvého moře; dnes je jejich nejvýznamnější část vystavená v jeruzalémském Chrámu knihy.",
+    "source_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
+    "source_quote": "The initial discovery by Bedouin shepherd Muhammed edh-Dhib, his cousin Jum'a Muhammed, and Khalil Musa took place between November 1946 and February 1947.",
+    "voice": "Nejstarší biblické texty na světě našel náhodou pastevec, který hledal jen zatoulanou kozu.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic photo of ancient desert caves near the Dead Sea, rocky cliffs, dry landscape, golden hour, no people, 16:9",
+    "ll": [35.2039, 31.7715],
+    "levels": {
+      "cestovatel": {
+        "headline": "Skoro tisíc svitků z jedenácti jeskyní",
+        "fact": "Badatelé nakonec z jedenácti jeskyní shromáždili 981 různých rukopisů, přičemž ze samotné jeskyně číslo 4 pochází kolem 15 000 fragmentů z 500 různých textů.",
+        "source_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
+        "source_quote": "Researchers have assembled a collection of 981 different manuscripts (discovered in 1946/1947 and in 1956) from 11 caves.",
+        "voice": "Z jedné jeskyně se dodnes skládají fragmenty jako z obřího roztrhaného puzzle.",
+        "image_prompt": "Photorealistic photo of ancient parchment scroll fragments displayed under glass in a museum, dim protective lighting, 16:9"
+      },
+      "kartograf": {
+        "headline": "Nejstarší dochované knihy bible na světě",
+        "fact": "Svitky pocházejí z období od 3. století před naším letopočtem do 1. století našeho letopočtu a patří mezi nejstarší dochované rukopisy biblických knih vůbec.",
+        "source_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
+        "source_quote": "Dating from the 3rd century BCE to the 1st century CE, the Dead Sea Scrolls include the oldest surviving manuscripts of entire books.",
+        "voice": "Text, který dnes čteme v tištěné bibli, má svého nejstaršího svědka schovaného tisíce let v hliněné nádobě.",
+        "image_prompt": "Photorealistic wide shot of the Shrine of the Book museum building with its distinctive white dome, daylight, 16:9"
+      }
+    }
+  },
+  {
+    "id": "il-historie-zalozeni-tel-avivu",
+    "country": "Izrael",
+    "section": "Historie",
+    "topic": "Založení Tel Avivu",
+    "headline": "Město založené losováním s mušlemi na písečné duně",
+    "fact": "Tel Aviv založilo 11. dubna 1909 šedesát šest židovských rodin, které si na pusté písečné duně u Jaffy rozdělily pozemky losováním pomocí mušlí.",
+    "source_url": "https://en.wikipedia.org/wiki/Tel_Aviv",
+    "source_quote": "On 11 April 1909, 66 Jewish families gathered on a desolate sand dune to parcel out the land by lottery using seashells.",
+    "voice": "Nové město vzniklo na místě, kde předtím nebylo nic než písek a pár mušlí na losování.",
+    "visual_type": "photo",
+    "image_prompt": "Photorealistic archival-style photo of empty sand dunes near the coast with a few early 20th century houses being built, warm light, 16:9",
+    "ll": [34.7712, 32.0663],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sto dvacet mušlí rozhodlo, kdo dostane jaký pozemek",
+        "fact": "Losování probíhalo tak, že se sesbíralo 120 mušlí, na polovinu bílých se napsala jména rodin a na polovinu šedých čísla pozemků - spárováním obou skupin se určilo, kdo dostane který kus země.",
+        "source_url": "https://en.wikipedia.org/wiki/Tel_Aviv",
+        "source_quote": "Weiss collected 120 sea shells on the beach, half of them white and half of them grey. The members' names were written on the white shells and the plot numbers on the grey shells.",
+        "voice": "O tom, kde bude čí dům, tehdy rozhodla náhoda, ne cena pozemku.",
+        "image_prompt": "Photorealistic close-up photo of seashells of two colors laid out on sand, vintage warm tone, 16:9"
+      },
+      "kartograf": {
+        "headline": "Z osady pro pár rodin milionové město",
+        "fact": "Zatímco v roce 1915 žilo v nové osadě podle sčítání kolem 2679 lidí, o pouhých šestnáct let později, v roce 1931, měl Tel Aviv už přes 46 000 obyvatel.",
+        "source_url": "https://en.wikipedia.org/wiki/Tel_Aviv",
+        "source_quote": "In 1915 a census of Tel Aviv was conducted, recording a population 2,679.",
+        "voice": "Osada pro pár desítek rodin se během jedné generace proměnila v pořádné město.",
+        "image_prompt": "Photorealistic aerial photo of modern Tel Aviv skyline with the Mediterranean coastline, daylight, 16:9"
+      }
+    }
+  }
+]
