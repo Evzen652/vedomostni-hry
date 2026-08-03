@@ -1,49 +1,211 @@
 [
   {
-    "id": "in-mista-tadzmahal",
+    "id": "in-mista-taj-mahal",
     "country": "Indie",
     "section": "Místa",
-    "topic": "Tádž Mahal a mughalská architektura",
-    "headline": "Mramorová hrobka postavená z lásky",
-    "fact": "Tádž Mahal nechal roku 1631 postavit mughalský vládce Šáhdžahán jako mauzoleum pro svou zesnulou manželku Mumtáz Mahal.",
-    "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal",
-    "source_quote": "It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan.",
-    "voice": "Celá stavba je vlastně obrovský náhrobek postavený z lásky a žalu.",
+    "topic": "Tádž Mahal",
+    "headline": "Bílý mramorový sen v Ágře",
+    "fact": "Tádž Mahal je mauzoleum z bílého mramoru, které nechal vystavět mughalský císař Šáhdžahán na památku své zesnulé manželky Mumtáz Mahal. Je považován za perlu islámského umění v Indii a je zapsán na seznamu UNESCO [citation:9].",
+    "source_url": "https://whc.unesco.org/en/statesparties/in",
+    "source_quote": "Taj Mahal (1983)",
+    "voice": "Když ho vidíš na vlastní oči, pochopíš, proč je právem jedním ze sedmi divů světa.",
     "visual_type": "photo",
-    "image_prompt": "Fotorealistický snímek bílého mramorového Tádž Mahalu odrážejícího se ve vodní nádrži při východu slunce, 16:9",
-    "tags": ["kulturni-geografie", "dejiny", "rocnik-6"],
+    "image_prompt": "Fotorealistický snímek Tádž Mahalu při východu slunce, bílý mramor, odraz ve vodních kanálech, bez lidí, 16:9",
+    "ll": [
+      78.0421,
+      27.1751
+    ],
     "levels": {
       "cestovatel": {
-        "fact": "Stavba trvala přes dvě desetiletí a pracovaly na ní tisíce řemeslníků. UNESCO ji zapsalo na seznam světového dědictví jako 'klenot islámského umění v Indii'.",
-        "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal"
+        "headline": "Památník věčné lásky",
+        "fact": "Stavba trvala přes 20 let a pracovalo na ní 20 000 dělníků. Mramor mění barvu podle denního světla – růžový za úsvitu, bílý v poledne a zlatavý při měsíčku.",
+        "source_url": "https://whc.unesco.org/en/statesparties/in",
+        "source_quote": "Taj Mahal (1983)",
+        "voice": "Císař chtěl postavit pomník lásce, a on se mu opravdu povedl.",
+        "image_prompt": "Fotorealistický detailní snímek Tádž Mahalu, mramorové ornamenty a kopule, 16:9"
       },
       "kartograf": {
-        "fact": "Tádž Mahal je vrcholem mughalské architektury — spojuje perské, islámské a indické stavební prvky v jeden celek. Je to hmotný důkaz kulturní výměny mezi středoasijskou dynastií a indickým subkontinentem, na kterém vládla.",
-        "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal"
+        "headline": "Vrchol mughalské architektury",
+        "fact": "Tádž Mahal je mistrovským dílem mughalské architektury, která kombinuje perské, indické a islámské stavební prvky. Jeho zahrady jsou symbolicky rozděleny na čtyři části podle islámské představy ráje.",
+        "source_url": "https://whc.unesco.org/en/statesparties/in",
+        "source_quote": "Taj Mahal (1983)",
+        "voice": "Tádž Mahal není jen budova, je to celý svět vytesaný do kamene a zahrad.",
+        "image_prompt": "Fotorealistický letecký snímek Tádž Mahalu a jeho okolí, 16:9"
       }
     }
   },
   {
-    "id": "in-priroda-ganga",
+    "id": "in-mista-agra-fort",
     "country": "Indie",
-    "section": "Příroda",
-    "topic": "Ganga mezi úctou a znečištěním",
-    "headline": "Řeka, která je zároveň bohyní",
-    "fact": "Ganga je nejposvátnější řeka Indie — hinduisté v ní koupelí věří, že se očistí od hříchů, a uctívají ji jako bohyni Gangá.",
-    "source_url": "https://en.wikipedia.org/wiki/Ganges",
-    "source_quote": "The Ganges is the most sacred river to Hindus.",
-    "voice": "Voda, se kterou se modlíš, ne jen umýváš.",
+    "section": "Místa",
+    "topic": "Pevnost Ágra",
+    "headline": "Červená pevnost u řeky Jamuny",
+    "fact": "Pevnost Ágra byla hlavním sídlem mughalských císařů až do roku 1638 a je zapsána na seznamu UNESCO. Je postavena z červeného pískovce a z jejího okna údajně vyhlížel ze zajetí císař Šáhdžahán, stavitel Tádž Mahalu [citation:2].",
+    "source_url": "https://whc.unesco.org/en/statesparties/in",
+    "source_quote": "Agra Fort (1983)",
+    "voice": "Za jejími zdmi se psala historie mughalské říše.",
     "visual_type": "photo",
-    "image_prompt": "Fotorealistický snímek řeky Gangy ve Váránasí za soumraku s plovoucími lampičkami na hladině, 16:9",
-    "tags": ["fyzicka-geografie", "kulturni-geografie", "rocnik-6"],
+    "image_prompt": "Fotorealistický snímek pevnosti Ágra, červený pískovec, hradby, řeka v pozadí, bez lidí, 16:9",
+    "ll": [
+      78.0295,
+      27.1796
+    ],
     "levels": {
       "cestovatel": {
-        "fact": "Ganga teče 2 525 km Indií a Bangladéšem a je životní tepnou pro stovky milionů lidí. Poutní místa jako Váránasí nebo Haridvár patří k nejposvátnějším bodům na jejím toku.",
-        "source_url": "https://en.wikipedia.org/wiki/Ganges"
+        "headline": "Paláce, mešity a síně",
+        "fact": "Uvnitř pevnosti najdeš několik paláců, mešit a zahrad. Navštívit můžeš Díván-i-ám (Síň veřejných audiencí) a Díván-i-chás (Síň soukromých audiencí).",
+        "source_url": "https://whc.unesco.org/en/statesparties/in",
+        "source_quote": "Agra Fort (1983)",
+        "voice": "Procházet se pevností je jako listovat v dějepisné knížce.",
+        "image_prompt": "Fotorealistický snímek nádvoří pevnosti Ágra, mughalská architektura, 16:9"
       },
       "kartograf": {
-        "fact": "Posvátnost Gangy a zároveň její přetížení miliony obyvatel podél toku vytváří napětí mezi náboženskou úctou a environmentální ochranou — řeka musí být zároveň symbolem čistoty a zdrojem vody pro obří populaci.",
-        "source_url": "https://en.wikipedia.org/wiki/Ganges"
+        "headline": "Střed mughalské moci",
+        "fact": "Pevnost byla nejen obrannou stavbou, ale i srdcem mughalské správy a kultury. Zde se rozhodovalo o osudu velké říše, která ovládala většinu Indie.",
+        "source_url": "https://whc.unesco.org/en/statesparties/in",
+        "source_quote": "Agra Fort (1983)",
+        "voice": "Pevnost Ágra byla kdysi nejmocnějším místem celé Indie.",
+        "image_prompt": "Fotorealistický snímek pevnosti Ágra a řeky Jamuny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-mista-fatehpur-sikri",
+    "country": "Indie",
+    "section": "Místa",
+    "topic": "Fatehpur Síkrí",
+    "headline": "Ztracené město císaře Akbara",
+    "fact": "Fatehpur Síkrí bylo krátce hlavním městem mughalské říše za císaře Akbara. Město bylo postaveno z červeného pískovce a opuštěno po 15 letech kvůli nedostatku vody [citation:2].",
+    "source_url": "https://whc.unesco.org/en/statesparties/in",
+    "source_quote": "Fatehpur Sikri (1986)",
+    "voice": "Město, které žilo jen pár let, ale dodnes vypráví příběh o slávě a pádu.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Fatehpur Síkrí, červené pískovcové budovy, 16:9",
+    "ll": [
+      77.6614,
+      27.0912
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Brána, která tě ohromí",
+        "fact": "Vstupní brána Buland Darwaza je jednou z největších na světě. Město je plné paláců, chrámů a nádvoří, které připomínají Akbarovu vizi náboženské tolerance.",
+        "source_url": "https://whc.unesco.org/en/statesparties/in",
+        "source_quote": "Fatehpur Sikri (1986)",
+        "voice": "Procházet se opuštěnými uličkami je jako cestovat v čase.",
+        "image_prompt": "Fotorealistický snímek Buland Darwaza, monumentální brány, 16:9"
+      },
+      "kartograf": {
+        "headline": "Symbol Akbarovy moci",
+        "fact": "Fatehpur Síkrí bylo postaveno na počest súfijského světce a mělo být symbolem moci a velkoleposti. Jeho opuštění připomíná, že i největší plány mohou ztroskotat na přírodních podmínkách.",
+        "source_url": "https://whc.unesco.org/en/statesparties/in",
+        "source_quote": "Fatehpur Sikri (1986)",
+        "voice": "Akbar chtěl vytvořit dokonalé město, ale voda měla jiné plány.",
+        "image_prompt": "Fotorealistický letecký snímek Fatehpur Síkrí a okolní krajiny, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-priroda-tiger",
+    "country": "Indie",
+    "section": "Příroda",
+    "topic": "Bengálský tygr",
+    "headline": "Národní zvíře s pruhovaným kabátem",
+    "fact": "Bengálský tygr je národním zvířetem Indie a žije především v národních parcích, jako je Ranthambore a Jim Corbett. Je známý svým oranžovým kožichem s černými pruhy [citation:9].",
+    "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+    "source_quote": "The Bengal tiger is the national animal of India and is known for its striking orange coat with black stripes. It’s found in various national parks and wildlife reserves across India, including Ranthambore and Jim Corbett National Parks.",
+    "voice": "Potkat tygra v divočině? To je zážitek na celý život.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bengálského tygra v džungli národního parku, oranžový kožich s pruhy, 16:9",
+    "ll": [
+      80,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Král indických lesů",
+        "fact": "Bengálský tygr je vrcholovým predátorem a jeho populace je v Indii chráněna přísnými zákony. Indie je domovem více než poloviny všech divokých tygrů světa.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "source_quote": "The Bengal tiger is the national animal of India and is known for its striking orange coat with black stripes.",
+        "voice": "Tygr je jako žijící socha – majestátní a nebezpečný.",
+        "image_prompt": "Fotorealistický snímek tygra v podrostu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ochrana ohroženého druhu",
+        "fact": "Ve 20. století hrozilo tygrům vyhubení kvůli lovu a ztrátě přirozeného prostředí. Indický projekt ochrany tygrů (Project Tiger), zahájený v roce 1973, pomohl jejich populaci stabilizovat.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "India is a megadiverse country with many different plants and animals, protected in special areas.",
+        "voice": "Tygr je připomínkou, že příroda potřebuje naši ochranu.",
+        "image_prompt": "Fotorealistický snímek tygří rezervace, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-priroda-himalaje",
+    "country": "Indie",
+    "section": "Příroda",
+    "topic": "Himálajské hory",
+    "headline": "Střecha světa na severu Indie",
+    "fact": "Himálaj je nejvyšší pohoří světa a tvoří přirozenou severní hranici Indie. Třetí nejvyšší hora světa, Káčaňdžunga (8 586 m), se nachází právě zde [citation:13].",
+    "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+    "source_quote": "The highest mountain in India is the Kangchenjunga. This is also the third highest mountain in the world with 8,586 m/ 28,169 ft.",
+    "voice": "V Himálaji se cítíš jako malý mravenec pod obřími kamennými giganty.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek Himálaje, zasněžené vrcholy, modrá obloha, bez lidí, 16:9",
+    "ll": [
+      88,
+      28
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nejvyšší hory, nejčistší vzduch",
+        "fact": "Himálaj je domovem vzácných zvířat, jako je sněžný levhart nebo himálajský medvěd. Oblíbenou turistickou destinací jsou údolí jako Kašmír nebo Sikkim.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "About 75 million years ago, the Indian Plate moved northeast and crashed into the Eurasian Plate. This collision created the mighty Himalayas mountains.",
+        "voice": "Když se podíváš na himálajské vrcholy, zapomeneš na všechny starosti.",
+        "image_prompt": "Fotorealistický snímek horské stezky v Himálaji, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pramen indických řek",
+        "fact": "Himálaj je zdrojem největších indických řek, včetně Gangy a Indu. Tání ledovců v Himálaji zásobuje vodou miliony lidí v severní Indii.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "South of the Himalayas, a large plain formed, which is now the Indo-Gangetic Plain.",
+        "voice": "Bez Himálaje by byla Indie úplně jiná země.",
+        "image_prompt": "Fotorealistický snímek himálajského ledovce, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-priroda-ganges",
+    "country": "Indie",
+    "section": "Příroda",
+    "topic": "Posvátná řeka Ganga",
+    "headline": "Matka indických řek",
+    "fact": "Ganga je nejposvátnější řekou hinduistů a její vody jsou považovány za očistné. Pramení v Himálaji a protéká severní Indií až do Bengálského zálivu [citation:9].",
+    "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+    "source_quote": "The Ganges River is one of the most sacred rivers in India. Millions of people visit its banks to bathe in its holy waters and perform religious ceremonies.",
+    "voice": "Ganga je pro Indy víc než řeka – je to bohyně.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek řeky Gangy, břehy s chrámy, lodě, 16:9",
+    "ll": [
+      82,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Místo poutí a obřadů",
+        "fact": "Každý den se na březích Gangy konají rituály, poutníci se koupou v její vodě a věří, že jim to přinese štěstí a očistu. Město Váránasí je nejposvátnějším místem na Ganze.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "source_quote": "Millions of people visit its banks to bathe in its holy waters and perform religious ceremonies.",
+        "voice": "Váránasí je město, kde se život a smrt potkávají na každém kroku.",
+        "image_prompt": "Fotorealistický snímek poutníků u Gangy, čluny, 16:9"
+      },
+      "kartograf": {
+        "headline": "Ráj delfínů a želv",
+        "fact": "V Ganze žije ohrožený delfín gangský, který je jedním ze symbolů indické přírody. Řeka je také domovem vzácných želv a desítek druhů ryb.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "source_quote": "It’s also home to diverse aquatic life, including the endangered Ganges river dolphin.",
+        "voice": "Ganga není jen posvátná, ale i plná života.",
+        "image_prompt": "Fotorealistický snímek delfína gangského v řece, 16:9"
       }
     }
   },
@@ -51,46 +213,620 @@
     "id": "in-lide-gandhi",
     "country": "Indie",
     "section": "Lidé",
-    "topic": "Gándhí a nenásilný odpor",
-    "headline": "Nezávislost vybojovaná bez jediné rány",
-    "fact": "Mahátma Gándhí vedl indické hnutí za nezávislost metodou nenásilného odporu (satjágrahy); nejznámější byl jeho 388 km dlouhý Solný pochod z roku 1930.",
-    "source_url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi",
-    "voice": "Pochod pro hrst soli otřásl celou britskou koloniální mocí.",
+    "topic": "Móhandás Gándhí",
+    "headline": "Otec národa s holí a brýlemi",
+    "fact": "Mahátma Gándhí byl vůdce indického hnutí za nezávislost, který prosazoval nenásilný odpor. Jeho filozofie ahinsa (nenásilí) inspirovala mnoho dalších bojovníků za svobodu [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "This movement, known for its nonviolent resistance led by Mahatma Gandhi, helped end British rule.",
+    "voice": "Gándhí dokázal porazit impérium beze zbraně, jen s odvahou a pravdou.",
     "visual_type": "photo",
-    "image_prompt": "Historizující fotorealistický snímek davu poutníků na dlouhé prašné cestě indickým venkovem, sépiové tóny, 16:9",
-    "tags": ["dejiny", "rocnik-7"],
+    "image_prompt": "Fotorealistický portrét Mahátmy Gándhího, brýle, úsměv, 16:9",
+    "ll": [
+      77.2,
+      28.6
+    ],
     "levels": {
       "cestovatel": {
-        "fact": "Gándhí poprvé použil metodu satjágrahy (nenásilného odporu) v Jižní Africe roku 1906, do Indie ji přinesl roku 1915. Vedl indický Národní kongres a jeho kampaně nakonec vedly k nezávislosti Indie v srpnu 1947.",
-        "source_url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+        "headline": "Muž, který šel bos",
+        "fact": "Gándhí žil skromně, chodil bos a jedl jen to nejnutnější. Jeho Solný pochod v roce 1930 se stal symbolem odporu proti britské nadvládě.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Mahatma Gandhi, helped end British rule.",
+        "voice": "Jeho příběh učí, že i jeden člověk může změnit svět.",
+        "image_prompt": "Fotorealistický snímek Gándhího při Solném pochodu, 16:9"
       },
       "kartograf": {
-        "fact": "Gándhího strategie ukázala, že masová nenásilná neposlušnost dokáže rozložit koloniální mocnost stejně účinně jako ozbrojený odpor — a stala se later vzorem pro hnutí za občanská práva po celém světě, včetně USA.",
-        "source_url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+        "headline": "Odkaz nenásilí pro celý svět",
+        "fact": "Gándhího myšlenky ovlivnily osobnosti jako Martina Luthera Kinga nebo Nelsona Mandelu. Jeho roli v indickém boji za svobodu si připomínají lidé po celém světě.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "This movement, known for its nonviolent resistance led by Mahatma Gandhi, helped end British rule.",
+        "voice": "Gándhího odkaz žije dál v každém, kdo věří v sílu pravdy.",
+        "image_prompt": "Fotorealistický snímek Gándhího památníku v Ráždghátu, 16:9"
       }
     }
   },
   {
-    "id": "in-jidlo-korenim",
+    "id": "in-lide-ashoka",
     "country": "Indie",
-    "section": "Jídlo",
-    "topic": "Regionální rozmanitost indické kuchyně",
-    "headline": "Kuchyně, která se region od regionu úplně mění",
-    "fact": "Indická kuchyně se region od regionu výrazně liší podle půdy, klimatu a místních surovin — sever staví na chlebech, jih na rýži.",
-    "source_url": "https://en.wikipedia.org/wiki/Indian_cuisine",
-    "source_quote": "Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially.",
-    "voice": "Co je 'indické jídlo' se v Dillí a v Kérale skoro nepodobá.",
+    "section": "Lidé",
+    "topic": "Císař Ašóka",
+    "headline": "Z krutého válečníka mírumilovným vládcem",
+    "fact": "Císař Ašóka byl jedním z největších panovníků Mauryjské říše. Po krvavé bitvě u Kalíngy se obrátil k buddhismu a stal se mecenášem míru a nenásilí [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "Its most famous ruler, Ashoka, later chose peace and spread the Buddhist teachings.",
+    "voice": "Ašóka je důkazem, že i největší válečník může změnit svůj pohled na svět.",
     "visual_type": "photo",
-    "image_prompt": "Fotorealistický snímek různobarevných indických koření naaranžovaných v miskách, teplé světlo, 16:9",
-    "tags": ["regionalni-geografie", "fyzicka-geografie", "rocnik-6"],
+    "image_prompt": "Fotorealistický snímek sochy lva na sloupu z doby Ašóky, 16:9",
+    "ll": [
+      80,
+      25
+    ],
     "levels": {
       "cestovatel": {
-        "fact": "Základem indické kuchyně je koření — chilli, hořčičné semínko, kardamom, kmín, kurkuma, zázvor a koriandr. Směs garam masala se region od regionu i kuchař od kuchaře liší.",
-        "source_url": "https://en.wikipedia.org/wiki/Indian_cuisine"
+        "headline": "Ašókovy sloupy a edikty",
+        "fact": "Ašóka nechal postavit kamenné sloupy po celé Indii, na které nechal vytesat své zákony a buddhistická učení. Tyto sloupy jsou dodnes symbolem moudré vlády.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Ashoka, later chose peace and spread the Buddhist teachings.",
+        "voice": "Ašókovy kameny jsou jako starověké vzkazy, které mluví i po dvou tisících let.",
+        "image_prompt": "Fotorealistický snímek Ašókova sloupu s edikty, 16:9"
       },
       "kartograf": {
-        "fact": "Regionální rozmanitost indické kuchyně přesně kopíruje geografickou rozmanitost subkontinentu — pobřežní oblasti staví na kokosu a rybách, suchý sever na obilí a chlebu, každý styl je přímým otiskem toho, co daná krajina umožňuje vypěstovat.",
-        "source_url": "https://en.wikipedia.org/wiki/Indian_cuisine"
+        "headline": "První velká říše Indie",
+        "fact": "Mauryjská říše pod Ašókovou vládou spojila většinu Indie. Po jeho smrti říše upadla, ale jeho odkaz míru ovlivnil buddhismus po celé Asii.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "By the 3rd century BCE, the Magadha kingdom grew into the powerful Maurya Empire. Its most famous ruler, Ashoka, later chose peace and spread the Buddhist teachings.",
+        "voice": "Ašóka byl císař, který si uvědomil, že vítězství nad sebou samým je to nejdůležitější.",
+        "image_prompt": "Fotorealistický snímek mapy Mauryjské říše, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-lide-nehru",
+    "country": "Indie",
+    "section": "Lidé",
+    "topic": "Džaváharlál Néhrú",
+    "headline": "První premiér nezávislé Indie",
+    "fact": "Džaváharlál Néhrú byl prvním premiérem Indie po získání nezávislosti v roce 1947. Je považován za architekta moderní indické demokracie a zastánce politiky nezúčastněnosti [citation:8].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "India's constitution, completed in 1950, made it a secular and democratic republic. Since the 1980s, India has opened up its economy...",
+    "voice": "Néhrú položil základy demokracie, které Indii slouží dodnes.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický portrét Džaváharlála Néhrúa, formální oblek, 16:9",
+    "ll": [
+      77.2,
+      28.6
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Muž s růží na saku",
+        "fact": "Néhrú byl známý svými projevy a láskou k růžím, které nosil v knoflíkové dírce. Jeho narozeniny, 14. listopadu, se v Indii slaví jako Den dětí.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Jawaharlal Nehru, India's first prime minister, was born on November 14.",
+        "voice": "Néhrú měl rád růže a věřil v sílu mladé generace.",
+        "image_prompt": "Fotorealistický snímek sochy Néhrúa v Dillí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Vize velké Indie",
+        "fact": "Néhrú prosazoval modernizaci a industrializaci Indie. Jeho zahraniční politika nezúčastněnosti znamenala, že se Indie nepřipojila k žádnému ze dvou mocenských bloků v období studené války.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "India's constitution, completed in 1950, made it a secular and democratic republic.",
+        "voice": "Néhrův sen o silné a svobodné Indii se stal skutečností.",
+        "image_prompt": "Fotorealistický snímek budovy parlamentu v Dillí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-kultura-diwali",
+    "country": "Indie",
+    "section": "Kultura & tradice",
+    "topic": "Festival světel Díválí",
+    "headline": "Když tisíce lamp rozsvítí temnotu",
+    "fact": "Díválí, známý jako Festival světel, je jedním z nejdůležitějších hinduistických svátků. Symbolizuje vítězství světla nad tmou a oslavuje se rozsvěcením svíček, výměnou dárků a sladkostmi [citation:9].",
+    "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+    "source_quote": "Diwali, also known as the Festival of Lights, is one of the biggest celebrations in India! People decorate their homes with oil lamps and candles, exchange gifts, and enjoy delicious sweets to celebrate the victory of light over darkness.",
+    "voice": "Když je Díválí, celá Indie se rozsvítí jako jedna obří hvězda.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek oslav Díválí, lampy a svíčky, barevné dekorace, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Ohňostroje a sladkosti",
+        "fact": "O Díválí se lidé oblékají do nových šatů, dávají si dárky a odpalují ohňostroje. Tradiční sladkosti, jako laddú a barfí, patří k svátku neodmyslitelně.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "source_quote": "People decorate their homes with oil lamps and candles, exchange gifts, and enjoy delicious sweets to celebrate the victory of light over darkness.",
+        "voice": "Vzduch voní svíčkami a sladkostmi – to je pravé kouzlo Díválí.",
+        "image_prompt": "Fotorealistický snímek sladkostí na Díválí, 16:9"
+      },
+      "kartograf": {
+        "headline": "Návrat Rámy do Ajódhji",
+        "fact": "Díválí připomíná návrat boha Rámy do Ajódhji po vítězství nad démonem Rávanou. Svátek má kořeny v eposu Rámájana a slaví se po celé Indii i ve světě.",
+        "source_url": "https://ich.unesco.org/en/RL/ramlila-the-traditional-performance-of-the-ramayana-00110",
+        "source_quote": "Ramlila recalls the battle between Rama and Ravana and consists of a series of dialogues between gods, sages and the faithful.",
+        "voice": "Díválí není jen oslava, je to připomínka vítězství dobra nad zlem.",
+        "image_prompt": "Fotorealistický snímek chrámu v Ajódhji, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-kultura-holi",
+    "country": "Indie",
+    "section": "Kultura & tradice",
+    "topic": "Festival barev Holí",
+    "headline": "Den, kdy je všechno povolené",
+    "fact": "Holí je svátek barev a radosti, který se slaví na jaře. Lidé se sprchují barevnými prášky, polévají vodou a tančí na ulicích [citation:9].",
+    "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+    "source_quote": "Holi, also known as the Festival of Colours, is one of the most joyful and colourful celebrations in India! People gather to throw colourful powders and water at each other, dance to lively music, and enjoy festive sweets and snacks.",
+    "voice": "Na Holí se hranice mezi lidmi smazávají stejně jako barvy na obličeji.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek oslav Holí, barevné prášky ve vzduchu, usmívající se lidé, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Barevný chaos, který má řád",
+        "fact": "Přípravy na Holí začínají dny předem. Na ulicích se prodávají barevné pudry (gulál) a vodní pistole. Nejdůležitější je tradiční jídlo a sladkosti, jako je gudžijá.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "source_quote": "People gather to throw colourful powders and water at each other, dance to lively music, and enjoy festive sweets and snacks.",
+        "voice": "Po Holí budeš vypadat jako malířské plátno – a to je přesně ten smysl.",
+        "image_prompt": "Fotorealistický snímek trhu před Holí, barevné prášky, 16:9"
+      },
+      "kartograf": {
+        "headline": "Legenda o Prahládovi",
+        "fact": "Holí připomíná příběh oddaného Prahláda, který přežil ohnivou smrt díky bohu Višnuovi. Holí také symbolizuje příchod jara a konec zimy.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "voice": "Holí je svátek, který říká: zlo nemá šanci, když věříš v dobro.",
+        "image_prompt": "Fotorealistický snímek ohňů na Holí, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-kultura-yoga",
+    "country": "Indie",
+    "section": "Kultura & tradice",
+    "topic": "Jóga",
+    "headline": "Starodávné umění pro tělo i duši",
+    "fact": "Jóga je filozofie a praxe pocházející z Indie, která spojuje tělo, mysl a ducha. Je zapsána na seznam nehmotného kulturního dědictví UNESCO a je oblíbená po celém světě [citation:3].",
+    "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+    "source_quote": "The philosophy of yoga, rooted in ancient Indian traditions, profoundly influences various aspects of society including health, education, and the arts. Yoga integrates mind, body, and soul through poses, meditation, controlled breathing, and chanting, promoting mental, spiritual, and physical wellbeing.",
+    "voice": "Jóga není jen cvičení, je to cesta k sobě samému.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek ženy v lotosové pozici, západ slunce, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Tisíce let moudrosti",
+        "fact": "Jóga vznikla před více než 5000 lety v Indii. Původně ji praktikovali mudrci a asketové, aby dosáhli duchovního osvícení.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "source_quote": "The philosophy of yoga, rooted in ancient Indian traditions, profoundly influences various aspects of society including health, education, and the arts.",
+        "voice": "Jóga je jako rozhovor mezi tělem a duší.",
+        "image_prompt": "Fotorealistický snímek jógy na pláži Goa, 16:9"
+      },
+      "kartograf": {
+        "headline": "Globální fenomén",
+        "fact": "Jóga se z Indie rozšířila do celého světa a dnes ji praktikují miliony lidí. Mezinárodní den jógy se slaví 21. června a připomíná její univerzální přínos.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "source_quote": "Practiced by people of all ages and backgrounds, yoga transcends gender, class, and religion, gaining popularity worldwide.",
+        "voice": "Jóga je indický dar světu – a ten dar pořád roste.",
+        "image_prompt": "Fotorealistický snímek skupiny cvičících jógu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-umeni-bollywood",
+    "country": "Indie",
+    "section": "Umění",
+    "topic": "Bollywood",
+    "headline": "Hvězdy, písničky a tance z Bombaje",
+    "fact": "Bollywood je přezdívka pro hinduistický filmový průmysl se sídlem v Bombaji. Je jedním z největších filmových průmyslů na světě a ročně produkuje stovky filmů plných hudby a tance [citation:9].",
+    "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+    "source_quote": "Bollywood is the nickname for the Hindi-language film industry based in Mumbai, India. It’s one of the largest film industries in the world, producing hundreds of colourful and vibrant movies each year. Bollywood films are famous for their elaborate dance sequences, catchy music, and dramatic storylines that captivate audiences around the globe!",
+    "voice": "Bollywood je jako indický sen – barevný, hlasitý a plný emocí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek natáčení Bollywood filmu, herci v kostýmech, 16:9",
+    "ll": [
+      72.9,
+      19.1
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Když se hudba rozjede, tančí všichni",
+        "fact": "Bollywoodské filmy jsou známé svými propracovanými tanečními scénami a písničkami, které se stávají hity. Film obvykle trvá přes tři hodiny a často obsahuje romantické i dramatické zápletky.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "source_quote": "Bollywood films are famous for their elaborate dance sequences, catchy music, and dramatic storylines that captivate audiences around the globe!",
+        "voice": "V Bollywoodu se i smutek tančí.",
+        "image_prompt": "Fotorealistický snímek taneční scény v Bollywood filmu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kulturní ambasador Indie",
+        "fact": "Bollywoodské filmy jsou populární nejen v Indii, ale i v Pákistánu, Bangladéši a mezi indickou diasporou po celém světě. Pomáhají šířit indickou kulturu, jazyk a hodnoty.",
+        "source_url": "https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-india/#main",
+        "source_quote": "Bollywood is the nickname for the Hindi-language film industry based in Mumbai, India. It’s one of the largest film industries in the world.",
+        "voice": "Bollywood je okno do indické duše.",
+        "image_prompt": "Fotorealistický snímek filmového plakátu v Bombaji, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-umeni-kutiyattam",
+    "country": "Indie",
+    "section": "Umění",
+    "topic": "Sanskrtské divadlo Kutijattam",
+    "headline": "Nejstarší živé divadlo na světě",
+    "fact": "Kutijattam je starobylé sanskrtské divadlo z Kéraly, které je staré více než 2000 let. Je zapsáno na seznam nehmotného kulturního dědictví UNESCO a proslavilo se propracovanou mimikou a očními gesty [citation:3].",
+    "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+    "source_quote": "Kutiyattam, Sanskrit theatre, which is practised in the province of Kerala, is one of India’s oldest living theatrical traditions, originating more than 2,000 years ago. It emphasizes meticulous eye expressions and gestures to convey characters' thoughts and emotions.",
+    "voice": "V Kutijattamu stačí jedno mrknutí, aby divák pochopil celý příběh.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek herce Kutijattamu s výrazným líčením, 16:9",
+    "ll": [
+      76.3,
+      10.5
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Oči, které mluví",
+        "fact": "Herci Kutijattamu se učí ovládat každý sval na obličeji a používat 24 různých pohybů očí k vyjádření emocí. Výcvik herce trvá až 15 let.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "source_quote": "Actors undergo rigorous training lasting up to fifteen years, mastering intricate breathing techniques and muscle control.",
+        "voice": "Když herec otočí očima, můžeš slyšet celou větu.",
+        "image_prompt": "Fotorealistický snímek detailu oka herce Kutijattamu, 16:9"
+      },
+      "kartograf": {
+        "headline": "Dědictví chrámů",
+        "fact": "Kutijattam se tradičně hrál v chrámových divadlech (kútambalam) a byl určen pro náboženské obřady. Dnes je považován za jeden z nejvyšších uměleckých projevů Kéraly.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "source_quote": "Traditionally staged in temple theatres with sacred rituals, Kutiyattam has faced challenges due to historical shifts in patronage.",
+        "voice": "Kutijattam je jako chrám, kde se místo modliteb hraje divadlo.",
+        "image_prompt": "Fotorealistický snímek chrámového divadla v Kérale, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-umeni-tance",
+    "country": "Indie",
+    "section": "Umění",
+    "topic": "Tradiční tance Indie",
+    "headline": "Když se nohy dotýkají země a ruce vyprávějí",
+    "fact": "Indie má desítky tradičních tanečních stylů, z nichž mnohé jsou zapsány na seznamu UNESCO. Patří mezi ně Bharatanatjam, Katakalí, Manipurí a Kúčipúdí [citation:3].",
+    "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+    "source_quote": "Sankirtana is a vibrant tradition among the Vaishnava community in the Manipur plains, involving song and dance performances that narrate the life of Krishna. ... It is integral to Manipuri culture, emphasizing community participation.",
+    "voice": "V indickém tanci mluví ruce, oči i nohy – všechno má svůj význam.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek tanečnice Bharatanatjam, barevný kostým, 16:9",
+    "ll": [
+      78,
+      20
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Příběhy bohů v pohybu",
+        "fact": "Mnoho indických tanců zobrazuje příběhy z hinduistické mytologie. Tanečníci často vyprávějí celé příběhy pomocí gest (mudry) a mimiky bez mluveného slova.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "source_quote": "The dance is characterized by magical golden costumes, elaborate make up and accessories, and slow, elegant movements. Its detailed and elaborate hand gestures can only be performed by highly skilled dancers.",
+        "voice": "Když tanečnice ukáže rukou květinu, uvidíš ji rozkvést.",
+        "image_prompt": "Fotorealistický snímek detailu ruky tanečnice s mudrou, 16:9"
+      },
+      "kartograf": {
+        "headline": "Tance, které přežily staletí",
+        "fact": "Tradiční tance se předávají z generace na generaci a jsou důležitou součástí indické kulturní identity. Mnohé z nich se tančí při náboženských obřadech a svátcích.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "source_quote": "These traditions are passed down through generations, promoting tolerance and peace through active participation and observation.",
+        "voice": "V indickém tanci žije minulost, přítomnost i budoucnost.",
+        "image_prompt": "Fotorealistický snímek skupiny tanečníků na festivalu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-sport-kriket",
+    "country": "Indie",
+    "section": "Sport",
+    "topic": "Kriket",
+    "headline": "Kriket – náboženství v Indii",
+    "fact": "Kriket je v Indii zdaleka nejpopulárnějším sportem. Indická kriketová reprezentace je jednou z nejsilnějších na světě a vyhrála mistrovství světa v roce 1983 a 2011 [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "Indian movies and music are also becoming popular globally.",
+    "voice": "Když hraje Indie kriket, celá země se zastaví.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek kriketového zápasu v Indii, hráči v modrých dresech, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Na každém rohu se hraje",
+        "fact": "Kriket se hraje na ulicích, na plážích i na profesionálních stadionech. Indické děti sní o tom, že se stanou hvězdami jako Sachin Tendulkar nebo Virát Kóhlí.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "India has reduced poverty but still faces challenges like gender inequality and air pollution. India is a nuclear-weapon state and has a large military.",
+        "voice": "Pro Indy je kriket víc než sport – je to vášeň.",
+        "image_prompt": "Fotorealistický snímek dětí hrajících kriket na ulici, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport, který sjednotil národ",
+        "fact": "Kriket přinesl Indii mezinárodní uznání a pomohl prolomit bariéry mezi různými komunitami. Tým vedený Kapilem Devem porazil Západní Indii a vyhrál první mistrovství světa.",
+        "source_url": "https://kids.kiddle.co/India",
+        "voice": "Indie je v kriketu jako Brazílie ve fotbale – královská dynastie.",
+        "image_prompt": "Fotorealistický snímek davu na kriketovém stadionu, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-sport-polo",
+    "country": "Indie",
+    "section": "Sport",
+    "topic": "Pólo",
+    "headline": "Hra králů na koních",
+    "fact": "Pólo pochází ze Střední Asie a do Indie se dostalo s muslimskými nájezdníky. Je považováno za jeden z nejstarších týmových sportů na světě a dodnes se hraje v Indii na vysoké úrovni [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "Indian culture and political ideas also spread to Southeast Asia.",
+    "voice": "Pólo je jako šachy na koních – každý krok musí být přesný.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zápasu póla, jezdci s holemi, 16:9",
+    "ll": [
+      78,
+      30
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sport, který vyžaduje odvahu",
+        "fact": "Pólo je rychlý a nebezpečný sport, kde se hráči na koních snaží dopravit míček do branky soupeře. V Indii je pólo tradičně spojováno s královskými rodinami.",
+        "source_url": "https://kids.kiddle.co/India",
+        "voice": "Pólo se nehraje pro zábavu – hraje se pro slávu.",
+        "image_prompt": "Fotorealistický snímek závodu póla, 16:9"
+      },
+      "kartograf": {
+        "headline": "Pólo ve státě Manipur",
+        "fact": "Staré formy póla se hrály v oblasti Manipuru, kde je známé jako sagol kangjei. Indie má několik pólových klubů a pravidelně pořádá mezinárodní turnaje.",
+        "source_url": "https://kids.kiddle.co/India",
+        "voice": "Manipur je kolébkou póla, kde se hrálo už před tisíci lety.",
+        "image_prompt": "Fotorealistický snímek pólového turnaje v Džajpuru, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-sport-kabaddi",
+    "country": "Indie",
+    "section": "Sport",
+    "topic": "Kabaddi",
+    "headline": "Dotkni se, uteč, boduj!",
+    "fact": "Kabaddi je tradiční indický týmový sport, který kombinuje zápas a tag. Je populární po celé Indii a v roce 1990 byl zařazen na asijské hry [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "The Indian style of government as well as its culture were being exported to the modern-day countries of Myanmar, Thailand, Brunei, Cambodia, Laos, Vietnam, Malaysia, Indonesia and the Philippines.",
+    "voice": "Kabaddi je hra, kde nestačí jen síla – musíš mít i dech.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek zápasu kabaddi, hráči v kontaktu, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Zápas, který se hraje bez míče",
+        "fact": "V kabaddi útočník vběhne na polovinu soupeře, dotkne se hodně hráčů a snaží se vrátit bez dýchání. Bránící tým se ho snaží chytit.",
+        "source_url": "https://kids.kiddle.co/India",
+        "voice": "Kabaddi je hra, kde každý nádech rozhoduje o vítězství.",
+        "image_prompt": "Fotorealistický snímek hráčů kabaddi na písku, 16:9"
+      },
+      "kartograf": {
+        "headline": "Sport z indických vesnic",
+        "fact": "Kabaddi vzniklo v indických vesnicích jako trénink bojovníků. Dnes se hraje po celém světě a Indie patří mezi špičkové týmy světa.",
+        "source_url": "https://kids.kiddle.co/India",
+        "voice": "Z vesnického boje se stal celosvětový sport.",
+        "image_prompt": "Fotorealistický snímek kabaddi na vesnickém turnaji, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-jazyk-hindi",
+    "country": "Indie",
+    "section": "Jazyk & slova",
+    "topic": "Hindština",
+    "headline": "Nejrozšířenější jazyk Indie",
+    "fact": "Hindština je nejrozšířenějším jazykem Indie a mluví jí více než 40 % obyvatel. Je psána písmem dévanágarí a od roku 1950 je úředním jazykem Indické republiky [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "Official languages | Hindi, English. Many regional languages | Over 400 languages spoken.",
+    "voice": "Hindština je jako hudba – má svůj rytmus a melodii.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek nápisu v dévanágarí na ulici, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Nauč se pár slov",
+        "fact": "Základní slova jako 'Namaste' (ahoj) a 'Dhanyavád' (děkuji) ti otevřou srdce každého Inda. Hindština je plná zdvořilostních frází a poezie.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Official languages | Hindi, English.",
+        "voice": "Řekni 'Namaste' a uvidíš, jak se tvář druhého rozzáří.",
+        "image_prompt": "Fotorealistický snímek učebnice hindštiny, 16:9"
+      },
+      "kartograf": {
+        "headline": "Jazyk, který spojuje",
+        "fact": "Hindština je jedním z 22 úředních jazyků Indie a slouží jako most mezi lidmi z různých regionů. Je také jedním z nejrozšířenějších jazyků na světě.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Official languages | Hindi, English. Many regional languages | Over 400 languages spoken.",
+        "voice": "Hindština spojuje Indii od Himálaje po Kéralu.",
+        "image_prompt": "Fotorealistický snímek mapy Indie s jazykovými oblastmi, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-jazyk-sanskrt",
+    "country": "Indie",
+    "section": "Jazyk & slova",
+    "topic": "Sanskrt",
+    "headline": "Jazyk bohů a mudrců",
+    "fact": "Sanskrt je starobylý jazyk Indie, ve kterém byly napsány posvátné texty hinduismu, včetně Véd. Je to jeden z nejstarších zaznamenaných jazyků světa a ovlivnil mnoho dalších jazyků [citation:3].",
+    "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+    "source_quote": "The Vedas, composed by Aryans over 3,500 years ago, are foundational.",
+    "voice": "Sanskrt je jako pramen, z něhož vyvěrá mnoho indických jazyků.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek starého rukopisu v sanskrtu, palmový list, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Jazyk, který se učili mudrci",
+        "fact": "Sanskrt je dodnes jazykem náboženských obřadů v hinduistických chrámech. Mnoho slov z hindštiny a dalších indických jazyků má kořeny právě v sanskrtu.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "source_quote": "The Vedas, composed by Aryans over 3,500 years ago, are foundational.",
+        "voice": "Sanskrt zní jako hudba, i když mu nerozumíš.",
+        "image_prompt": "Fotorealistický snímek sanskrtského nápisu na kamenné stéle, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kořen evropských jazyků",
+        "fact": "Sanskrt patří do indoevropské jazykové rodiny, a proto má mnoho společných slov s latinu, řečtinou a angličtinou. Slova jako 'matr' (matka) nebo 'pitr' (otec) jsou si podobná v mnoha jazycích.",
+        "source_url": "https://www.pib.gov.in/FeaturesDeatils.aspx?NoteId=153298&ModuleId+=+2&reg=3&lang=1",
+        "voice": "Sanskrt je praotec mnoha jazyků, kterými dnes mluvíme.",
+        "image_prompt": "Fotorealistický snímek staré sanskrtské gramatiky, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-jazyk-anglictina",
+    "country": "Indie",
+    "section": "Jazyk & slova",
+    "topic": "Angličtina v Indii",
+    "headline": "Angličtina – jazyk kolonií i moderní Indie",
+    "fact": "Angličtina je úředním jazykem Indie a používá se ve vládě, soudnictví a ve vzdělávání. Je také hlavním jazykem indické IT a obchodní scény [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "Official languages | Hindi, English.",
+    "voice": "Angličtina je v Indii jako pojítko mezi minulostí a budoucností.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek studentů ve třídě s anglickými nápisy, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Domluvíš se všude",
+        "fact": "Díky angličtině se v Indii snadno domluvíš ve městech. Více než 125 milionů Indů mluví anglicky, což z Indie dělá jednu z největších anglicky mluvících zemí.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Official languages | Hindi, English.",
+        "voice": "V Indii ti angličtina pomůže skoro všude – od hotelu po trh.",
+        "image_prompt": "Fotorealistický snímek cedule v angličtině na ulici v Bombaji, 16:9"
+      },
+      "kartograf": {
+        "headline": "Koloniální dědictví, globální výhoda",
+        "fact": "Angličtina zůstala v Indii po britské nadvládě a stala se klíčem k mezinárodnímu obchodu a technologiím. Indické IT firmy dnes patří k největším na světě díky jazykové vybavenosti.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "India has become one of the fastest-growing economies in the world, especially in IT services.",
+        "voice": "Angličtina je v Indii mostem ke světovému byznysu.",
+        "image_prompt": "Fotorealistický snímek moderní kanceláře v Bengalúru, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-jidlo-curry",
+    "country": "Indie",
+    "section": "Jídlo",
+    "topic": "Indické kari",
+    "headline": "Kari – král indické kuchyně",
+    "fact": "Kari je souhrnný název pro kořeněné pokrmy, které jsou základem indické kuchyně. Každý region má svou vlastní variantu a recepty se předávají z generace na generaci [citation:13].",
+    "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+    "source_quote": "Curries come in all guises and are made with lots of spices. The ingredients of the curries are chosen according to season and regional availability of products, so there will be fish curries in the southern state of Kerala, while the lamb curry, called Rogan Josh, is popular in the northern Kashmir region.",
+    "voice": "Kari není jedno jídlo – je to celý vesmír chutí.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek mísy s kari, koření, rýže, 16:9",
+    "ll": [
+      78,
+      20
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Základ každodenního jídla",
+        "fact": "Indické kari se vaří z čerstvého koření, cibule, česneku a zázvoru. Každá rodina má svůj tajný recept a kari se podává s rýží nebo chlebem naan.",
+        "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+        "source_quote": "Indian food is generally spiced a lot and some regions are known for extremely hot and spicy food.",
+        "voice": "Kari ti rozbuší srdce – a to nejen pálivostí.",
+        "image_prompt": "Fotorealistický snímek přípravy kari, koření, pánev, 16:9"
+      },
+      "kartograf": {
+        "headline": "Od severu k jihu",
+        "fact": "Severní Indie má krémová kari s máslem a smetanou, zatímco jižní Indie používá kokosové mléko a je pálivější. Každý region má svou vlastní kulinářskou tradici.",
+        "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+        "source_quote": "Ingredients of the curries are chosen according to season and regional availability of products, so there will be fish curries in the southern state of Kerala, while the lamb curry, called Rogan Josh, is popular in the northern Kashmir region.",
+        "voice": "Cestovat po Indii je jako ochutnávat různé druhy kari.",
+        "image_prompt": "Fotorealistický snímek rybího kari v Kérale, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-jidlo-biryani",
+    "country": "Indie",
+    "section": "Jídlo",
+    "topic": "Bírjání",
+    "headline": "Pokrm králů a král pokrmů",
+    "fact": "Bírjání je oblíbený pokrm z rýže, masa a koření, který má kořeny v perské kuchyni a rozšířil se po celé Indii. Každý region má svou verzi a je často podáván při svatebních hostinách [citation:13].",
+    "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+    "source_quote": "biryani: rice dish with chicken and vegetables, herbs and spices",
+    "voice": "Bírjání je jako symfonie chutí – každý tón má své místo.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek bírjání, vrstvy rýže a masa, šafrán, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Sváteční pokrm",
+        "fact": "Bírjání se připravuje při zvláštních příležitostech, jako jsou svatby a narozeniny. Maso se marinuje, rýže se vaří zvlášť a poté se vrství a dusí.",
+        "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+        "source_quote": "biryani: rice dish with chicken and vegetables, herbs and spices",
+        "voice": "Bírjání voní jako svátek už od rána.",
+        "image_prompt": "Fotorealistický snímek bírjání na svatebním stole, 16:9"
+      },
+      "kartograf": {
+        "headline": "Kuchyně Mughalů",
+        "fact": "Bírjání bylo oblíbeným pokrmem mughalských císařů, kteří si ho přivezli z Persie. Dnes je symbolem indicko-perské kulinářské tradice.",
+        "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+        "voice": "Bírjání je odkazem říší, které už dávno neexistují.",
+        "image_prompt": "Fotorealistický snímek starého receptu na bírjání, 16:9"
+      }
+    }
+  },
+  {
+    "id": "in-jidlo-samosy",
+    "country": "Indie",
+    "section": "Jídlo",
+    "topic": "Samosy",
+    "headline": "Křupavé trojúhelníčky plné chuti",
+    "fact": "Samosy jsou smažené trojúhelníčky plněné bramborami, hráškem a kořením. Jsou jednou z nejoblíbenějších indických svačin a podávají se s mátovou nebo tamarindovou omáčkou [citation:13].",
+    "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+    "source_quote": "samosas: crispy fried parcels filled with spicy meat or vegetables. They are often served with a mint sauce.",
+    "voice": "Když kousneš do samosy, uslyšíš křupnutí, které ti rozveselí celý den.",
+    "visual_type": "photo",
+    "image_prompt": "Fotorealistický snímek samos s omáčkami, 16:9",
+    "ll": [
+      78,
+      25
+    ],
+    "levels": {
+      "cestovatel": {
+        "headline": "Svačina na každém rohu",
+        "fact": "Samosy se prodávají na ulicích, v restauracích a na nádražích. Jsou ideální jako rychlé občerstvení a v zimě se podávají horké s čajem.",
+        "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+        "source_quote": "samosas: crispy fried parcels filled with spicy meat or vegetables. They are often served with a mint sauce.",
+        "voice": "Samosy jsou jako malé dárečky – každé kousnutí překvapí.",
+        "image_prompt": "Fotorealistický snímek stánku se samosami na ulici, 16:9"
+      },
+      "kartograf": {
+        "headline": "Cesta z Persie do Indie",
+        "fact": "Samosy pocházejí z Persie a do Indie se dostaly přes obchodní cesty. Dnes se liší podle regionu – plní se masem, sýrem nebo zeleninou.",
+        "source_url": "https://www.kids-world-travel-guide.com/india-for-kids.html",
+        "voice": "Samosy jsou důkazem, že nejlepší jídla cestují přes hranice.",
+        "image_prompt": "Fotorealistický snímek samos v košíku, 16:9"
       }
     }
   },
@@ -99,117 +835,102 @@
     "country": "Indie",
     "section": "Historie",
     "topic": "Civilizace v údolí Indu",
-    "headline": "Města s kanalizací stará 4 500 let",
-    "fact": "Civilizace v údolí Indu patřila k vůbec nejstarším městským civilizacím světa a měla propracované plánování měst včetně kanalizace.",
-    "source_url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
-    "source_quote": "A sophisticated and technologically advanced urban culture is evident in the Indus Valley Civilisation",
-    "voice": "Zatímco jinde se stavěly chatrče, tady měli ulice v pravém úhlu a odpady v rourách.",
+    "headline": "První města na indickém subkontinentu",
+    "fact": "Civilizace v údolí Indu byla jednou z prvních městských civilizací na světě a existovala přibližně od roku 2500 do roku 1900 př. n. l. Města jako Harappa a Mohendžodáro měla propracovaný systém kanalizace a ulic [citation:8].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "The Indus Valley civilisation formed as the first urban culture in India. Cities like Mohenjo-daro, Harappa, and Dholavira began to grow and trade with each other.",
+    "voice": "Když si uvědomíš, že před 4000 lety už tu měli kanalizaci, žasneš.",
     "visual_type": "photo",
-    "image_prompt": "Fotorealistický snímek archeologických vykopávek starověkého města s cihlovými ulicemi, jasné denní světlo, 16:9",
-    "tags": ["dejiny", "regionalni-geografie", "rocnik-7"],
+    "image_prompt": "Fotorealistický snímek vykopávek v Harappě, cihlové zdi, 16:9",
+    "ll": [
+      72.5,
+      30.5
+    ],
     "levels": {
       "cestovatel": {
-        "fact": "Města jako Mohendžo-daro a Harappa měla pravidelný půdorys ulic, veřejné lázně i systém odpadních kanálů — na svou dobu (kolem roku 2500 př. n. l.) mimořádně vyspělou infrastrukturu.",
-        "source_url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+        "headline": "Města jako ze sci-fi",
+        "fact": "Domy byly postaveny z pálených cihel, ulice byly dlážděné a rovné. Kanalizace vedla podzemím a odváděla odpadní vody z každého domu.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Cities like Mohenjo-daro, Harappa, and Dholavira began to grow and trade with each other.",
+        "voice": "Indus byl starověkým Manhattanem – akorát bez mrakodrapů.",
+        "image_prompt": "Fotorealistický snímek ulice v Mohendžodáru, 16:9"
       },
       "kartograf": {
-        "fact": "Vyspělost civilizace v údolí Indu ukazuje, že urbanizace a infrastruktura nejsou výsadou pouze mezopotamské nebo egyptské oblasti — podobná úroveň organizace vznikla nezávisle i na indickém subkontinentu, což vyvrací představu jednoho 'kolébky civilizace'.",
-        "source_url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+        "headline": "Obchod s Mezopotámií",
+        "fact": "Harappská civilizace udržovala obchodní styky s Mezopotámií. Na pečetidlech se našly motivy zvířat a písmo, které dodnes nikdo nerozluštil.",
+        "source_url": "https://kids.kiddle.co/India",
+        "voice": "Jejich pečetidla jsou jako záhadné vzkazy z dávných časů.",
+        "image_prompt": "Fotorealistický snímek harappského pečetidla, 16:9"
       }
     }
   },
   {
-    "id": "in-kultura-divali",
+    "id": "in-historie-nezavislost",
     "country": "Indie",
-    "section": "Kultura & tradice",
-    "topic": "Díválí napříč náboženstvími",
-    "headline": "Svátek světla proti tmě",
-    "fact": "Díválí, svátek světel, slaví vítězství světla nad tmou a dobra nad zlem; slaví ho hinduisté, džinisté, sikhové i někteří buddhisté.",
-    "source_url": "https://en.wikipedia.org/wiki/Diwali",
-    "source_quote": "the spiritual victory of light over darkness, good over evil",
-    "voice": "Na pár dní se celé město rozzáří tisíci olejovými lampičkami.",
+    "section": "Historie",
+    "topic": "Cesta k nezávislosti",
+    "headline": "15. srpen 1947 – den svobody",
+    "fact": "Indie získala nezávislost na britské nadvládě 15. srpna 1947. Tento den je připomínkou dlouhého boje vedeného Mahátmou Gándhím a dalšími národními vůdci [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "In 1947, India gained independence but was divided into two countries: India and Pakistan.",
+    "voice": "Toho dne se zrodil nový národ, na který byli všichni hrdí.",
     "visual_type": "photo",
-    "image_prompt": "Fotorealistický noční snímek indické ulice ozdobené tisíci rozsvícenými olejovými lampičkami diya, 16:9",
-    "tags": ["kulturni-geografie", "rocnik-6"],
+    "image_prompt": "Fotorealistický snímek vlajky Indie, 16:9",
+    "ll": [
+      78,
+      25
+    ],
     "levels": {
       "cestovatel": {
-        "fact": "Během Díválí lidé zdobí domy olejovými lampičkami zvanými dija, vyrábí barevné vzory z barevného písku (rangolí) a odpalují ohňostroje. Svátek má u různých náboženství trochu jiný výklad, ale společný motiv světla proti temnotě.",
-        "source_url": "https://en.wikipedia.org/wiki/Diwali"
+        "headline": "Oslavy po celé zemi",
+        "fact": "15. srpna se v celé Indii konají průvody a slavnosti. Premiér každý rok vystoupí z Červené pevnosti v Dillí a promluví k národu.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "In 1947, India gained independence...",
+        "voice": "Den nezávislosti je jako svátek, na který se Indie těší celý rok.",
+        "image_prompt": "Fotorealistický snímek oslav Dne nezávislosti v Dillí, 16:9"
       },
       "kartograf": {
-        "fact": "To, že jeden svátek slaví hned čtyři různá náboženství, ukazuje na sdílenou kulturní vrstvu indického subkontinentu, která přesahuje jednotlivé víry — podobné symboly (světlo, obnova) najdeme napříč náboženstvími, která spolu koexistují na stejném území po tisíciletí.",
-        "source_url": "https://en.wikipedia.org/wiki/Diwali"
+        "headline": "Cena svobody",
+        "fact": "Získání nezávislosti provázelo dělení Indie na Indii a Pákistán. Zhruba 15 milionů lidí bylo vysídleno a statisíce zahynuly v důsledku náboženského násilí.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "This division led to a huge movement of people and much loss of life.",
+        "voice": "Svoboda přišla za vysokou cenu, ale Indie ji přijala s odvahou.",
+        "image_prompt": "Fotorealistický snímek hranice mezi Indií a Pákistánem, 16:9"
       }
     }
   },
   {
-    "id": "in-umeni-bollywood",
+    "id": "in-historie-republika",
     "country": "Indie",
-    "section": "Umění",
-    "topic": "Indický filmový průmysl",
-    "headline": "Filmová továrna, která natočí nejvíc filmů na světě",
-    "fact": "Indie natáčí ročně víc filmů než kterákoli jiná země světa — už v roce 1986 jich vzniklo přes 800.",
-    "source_url": "https://en.wikipedia.org/wiki/Cinema_of_India",
-    "source_quote": "By 1986, India's annual film output had increased to 833 films annually, making India the world's largest film producer.",
-    "voice": "Zpěv, tanec a dramatický příběh — bollywoodský film musí mít všechno najednou.",
+    "section": "Historie",
+    "topic": "Republika a demokracie",
+    "headline": "Největší demokracie světa",
+    "fact": "Indie je od roku 1950 republikou s demokratickým parlamentním systémem. Je nejlidnatější demokracií na světě a její ústava je jednou z nejdelších na světě [citation:1].",
+    "source_url": "https://kids.kiddle.co/India",
+    "source_quote": "Since 1950, India has been a federal republic with a democratic parliamentary system.",
+    "voice": "Indie je důkazem, že i v obrovské rozmanitosti může fungovat demokracie.",
     "visual_type": "photo",
-    "image_prompt": "Fotorealistický snímek barevné taneční scény z indického filmu, pestré kostýmy, dramatické osvětlení jeviště, 16:9",
-    "tags": ["kulturni-geografie", "rocnik-6"],
+    "image_prompt": "Fotorealistický snímek budovy parlamentu v Dillí, 16:9",
+    "ll": [
+      77.2,
+      28.6
+    ],
     "levels": {
       "cestovatel": {
-        "fact": "Bollywood, pojmenovaný podle Bombaje (dnešního Mumbaí) a Hollywoodu, je jen jedna z mnoha indických filmových produkcí — natáčí se i v tamilštině, telugštině a dalších jazycích, každá s vlastním publikem.",
-        "source_url": "https://en.wikipedia.org/wiki/Cinema_of_India"
+        "headline": "Den, kdy se psala historie",
+        "fact": "26. leden je Den republiky a slaví se přijetím indické ústavy. V Dillí se koná velkolepý průvod s vojenskou technikou a lidovými tanci.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "India's constitution, completed in 1950, made it a secular and democratic republic.",
+        "voice": "Den republiky je jako oslava indické demokracie.",
+        "image_prompt": "Fotorealistický snímek průvodu na Den republiky, 16:9"
       },
       "kartograf": {
-        "fact": "Obří filmová produkce Indie odráží jazykovou a kulturní rozmanitost země — protože žádný jediný jazyk nespojuje celou populaci, vznikají paralelní filmové průmysly pro různé jazykové oblasti, místo jednoho centralizovaného 'národního' filmu.",
-        "source_url": "https://en.wikipedia.org/wiki/Cinema_of_India"
-      }
-    }
-  },
-  {
-    "id": "in-sport-kriket",
-    "country": "Indie",
-    "section": "Sport",
-    "topic": "Kriket jako koloniální dědictví",
-    "headline": "Sport, který zastaví celou zemi",
-    "fact": "Kriket je zdaleka nejoblíbenější sport Indie — když hraje indický národní tým, sledují ho stovky milionů lidí.",
-    "source_url": "https://en.wikipedia.org/wiki/Cricket_in_India",
-    "source_quote": "Cricket is the most popular sport in India.",
-    "voice": "Během důležitého zápasu se ulice měst vyprázdní.",
-    "visual_type": "photo",
-    "image_prompt": "Fotorealistický snímek kriketového zápasu na přeplněném indickém stadionu, večerní osvětlení, 16:9",
-    "tags": ["kulturni-geografie", "rocnik-6"],
-    "levels": {
-      "cestovatel": {
-        "fact": "Kriket přinesli do Indie Britové v koloniální éře, ale dnes je hluboce zakořeněný v indické kultuře — hraje se na ulicích, na vesnických hřištích i na obřích stadionech před desítkami tisíc diváků.",
-        "source_url": "https://en.wikipedia.org/wiki/Cricket_in_India"
-      },
-      "kartograf": {
-        "fact": "Kriket je příklad, jak koloniální dědictví přežilo a přerostlo svého 'majitele' — sport, který přinesli britští kolonizátoři, se stal centrálním prvkem indické národní identity a dnes Indie ekonomicky ovládá světový kriket víc než sama Anglie.",
-        "source_url": "https://en.wikipedia.org/wiki/Cricket_in_India"
-      }
-    }
-  },
-  {
-    "id": "in-jazyk-mnoho-jazyku",
-    "country": "Indie",
-    "section": "Jazyk & slova",
-    "topic": "Jazyková rozmanitost Indie",
-    "headline": "Země s druhým nejvíc jazyky na světě",
-    "fact": "V Indii se mluví přes 780 jazyky — víc má už jen Papua-Nová Guinea; ústava přitom uznává 22 oficiálních jazyků.",
-    "source_url": "https://en.wikipedia.org/wiki/Languages_of_India",
-    "source_quote": "India has the second highest number of languages (780), after Papua New Guinea.",
-    "voice": "Ve dvou sousedních vesnicích se lidé někdy nedomluví bez tlumočníka.",
-    "visual_type": "typographic",
-    "tags": ["jazykoveda", "socioekonomicka-geografie", "rocnik-7"],
-    "levels": {
-      "cestovatel": {
-        "fact": "22 ústavou uznaných jazyků zahrnuje třeba hindštinu, bengálštinu, tamilštinu nebo urdštinu — patří do několika zcela odlišných jazykových rodin (indoárijské, drávidské), takže si mluvčí různých indických jazyků navzájem vůbec nemusí rozumět.",
-        "source_url": "https://en.wikipedia.org/wiki/Languages_of_India"
-      },
-      "kartograf": {
-        "fact": "Jazyková rozmanitost Indie je přímý důsledek dějin: subkontinent postupně osídlily vlny různých národů (drávidské, indoárijské, a další), a na rozdíl od menších evropských zemí se tu žádný jazyk nikdy nestal jednoznačně dominantním pro celé území.",
-        "source_url": "https://en.wikipedia.org/wiki/Languages_of_India"
+        "headline": "Slavný parlament",
+        "fact": "Indický parlament sídlí v Sansad Bhavanu v Dillí. Jako federální republika má dvoukomorový parlament – horní a dolní komoru.",
+        "source_url": "https://kids.kiddle.co/India",
+        "source_quote": "Since 1950, India has been a federal republic with a democratic parliamentary system.",
+        "voice": "Indický parlament je místem, kde se rodí zákony pro miliardy lidí.",
+        "image_prompt": "Fotorealistický snímek parlamentu v Dillí, 16:9"
       }
     }
   }
