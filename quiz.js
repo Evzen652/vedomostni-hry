@@ -439,17 +439,21 @@
   function renderContinentPick(){
     say("Kam se vydáme? Vyber kontinent.");
     document.getElementById("qz-shell").style.transform="";
+    const availConts = CONTINENTS.filter(c => contHasQuestions(c.id));
     const tiles = CONTINENTS.map(c => {
       const has = contHasQuestions(c.id);
       const n = countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length;
       return tileHtml({ ic:c.emoji, img:`assets/cont-${c.id}.jpg`, t:c.name, sub: has ? (n+" "+plur(n,"země","země","zemí")) : "připravujeme",
         soon:!has, selectable:true, attr:`data-cont="${c.id}"` });
     }).join("");
+    const worldN = availConts.reduce((sum,c)=> sum + countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length, 0);
+    const worldTile = tileHtml({ ic:"🌍", t:"Celý svět", selectable:true,
+      sub: worldN+" "+plur(worldN,"země","země","zemí"), attr:`data-cont="__all__"` });
     const steps = [{label:"Kontinent"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>Vyber kontinent</h2>
-      <div class="qz-tiles">${tiles}</div>
+      <div class="qz-tiles">${tiles}${worldTile}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cont-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderModePick);
@@ -459,12 +463,22 @@
     body.querySelectorAll(".qz-tile[data-cont]:not(.soon)").forEach(b => {
       b.addEventListener("click", () => {
         const cont = b.dataset.cont;
-        if(selected.has(cont)){ selected.delete(cont); b.classList.remove("sel"); }
-        else { selected.add(cont); b.classList.add("sel"); }
+        if(cont === "__all__"){
+          if(selected.has("__all__")){ selected.clear(); b.classList.remove("sel"); }
+          else { selected.clear(); body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel")); selected.add("__all__"); b.classList.add("sel"); }
+        } else {
+          if(selected.has("__all__")){ selected.delete("__all__"); body.querySelector(".qz-tile[data-cont='__all__']")?.classList.remove("sel"); }
+          if(selected.has(cont)){ selected.delete(cont); b.classList.remove("sel"); }
+          else { selected.add(cont); b.classList.add("sel"); }
+        }
         startBtn.disabled = selected.size === 0;
       });
     });
-    startBtn.addEventListener("click", () => { if(selected.size) renderCountryPick([...selected]); });
+    startBtn.addEventListener("click", () => {
+      if(!selected.size) return;
+      const conts = selected.has("__all__") ? availConts.map(c=>c.id) : [...selected];
+      renderCountryPick(conts);
+    });
   }
 
   function renderCountryPick(conts){
