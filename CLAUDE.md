@@ -186,6 +186,17 @@ Pozn.: uživatelské složky jsou přesměrované na disk **D:** (`D:\weigle\sta
 `$env:USERPROFILE\Downloads` neexistuje — cesty se dají zjistit z
 `HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders`.
 
+**Gemini i přes zákaz v promptu často přidá tenký lem/rámeček kolem scény** — řeší
+[scripts/crop-gemini-frame.ps1](scripts/crop-gemini-frame.ps1) (rovnou volitelně místo ručního System.Drawing
+kroku výše):
+```powershell
+powershell -File scripts/crop-gemini-frame.ps1 -In "D:\weigle\stažené soubory\Gemini_....png" -Out assets/country-cz.jpg
+```
+Ořezává **rovnoměrně** o pevné procento (`-Margin`, default 3 %) ze všech čtyř stran — ne hledáním
+„nejtmavší linky" u kraje. To se totiž vyzkoušelo první a selhalo na Praze: nejtmavší řádek v horním
+pásu obrázku byla silueta hradu na kopci, ne skutečný rámeček, takže se uřízla i katedrála. Rovnoměrný
+ořez je hloupější, ale spolehlivý. Když lem po 3 % pořád zbývá, zvyš `-Margin` (např. 0.05) a spusť znovu.
+
 ### Napojení v kódu
 Dlaždice ([quiz.js](quiz.js), fce `tileHtml`) načítají `assets/{cont|country|section}-*.jpg`
 s **emoji fallbackem** (`onerror`). Chybějící obrázek tedy hru nerozbije — spadne zpět na emoji.
