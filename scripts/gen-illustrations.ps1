@@ -31,7 +31,7 @@ $items = [ordered]@{
   "country-ru"      = @{ p="saint basil cathedral with colorful onion domes, single centered building"; s=8 }
   "country-pl"      = @{ p="the royal castle of warsaw with old town houses, single centered building"; s=6 }
   "country-sk"      = @{ p="a medieval slovak castle on a hill with tatra mountains";    s=3  }
-  "country-at"      = @{ p="st stephens cathedral in vienna with old town houses, single centered building"; s=11 }
+  "country-at"      = @{ p="a single austrian castle with an onion dome tower";         s=1  }
   # --- sekce ---
   "section-vse"     = @{ p="a vintage globe with a small brass compass";                 s=5  }
   "section-mista"   = @{ p="a folded old travel map with a single red location pin";     s=7  }
