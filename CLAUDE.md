@@ -150,6 +150,30 @@ zvětralý papír vyplňuje celý čtverec bez okrajů.
   svádí model k fotorealistické scéně s perspektivou. Držet se vzoru ostatních dlaždic: `castle`, `temple`,
   `tree` apod.
 
+### Dorovnání stylu po generování — [scripts/age-illustration.ps1](scripts/age-illustration.ps1)
+**Pollinations dnes maluje jinak než v době vzniku původní sady** (`cont-*`, `country-pl`, `country-sk`):
+nové kresby jsou čistší a airbrushové, chybí jim zvětralý papír a tlumená paleta. Ověřeno tak, že
+i **přesný prompt `cont-europe` s jinými seedy** (11, 14, 21) vyšel v novém stylu — kdyby šlo jen o seed,
+rukopis by držel a měnila by se pouze kompozice. Staré obrázky se reprodukují bajt po bajtu jen proto,
+že identická žádost vrátí identický (nacachovaný) výsledek. **Původní rukopis už z téhle služby nevytáhneš.**
+
+Řešení: novou ilustraci po vygenerování „zestárnout" podle referenční dlaždice —
+skript přenese barevnou statistiku (průměr + rozptyl po kanálech), podklad (skvrny, vinětaci)
+a zrno papíru. Referenci nejdřív rozmaže, takže z ní neprosvítají tvary budov.
+```powershell
+powershell -File scripts/gen-illustrations.ps1 -Only country-at -Force   # 1) vygeneruj
+powershell -File scripts/age-illustration.ps1 -In assets/country-at.jpg  # 2) dorovnej styl
+```
+Parametry: `-Ref` (výchozí `assets/country-pl.jpg`), `-Texture` (síla podkladu, 0.45),
+`-Grain` (síla zrna, 0.60), `-GrainClip` (strop zrna, 8.0 — **vyšší hodnota = z reference prosvítají
+cizí tvary**, protože zrno pak nese i hrany budov). Kontrola: celkový jas má vyjít ~160–166
+jako u `country-pl` (166) a `country-sk` (160).
+
+**Past PowerShellu, na kterou skript doplatil:** proměnná pro načtené kanály se **nesmí** jmenovat `$ref` —
+koliduje s parametrem `[string]$Ref` a PowerShell pole tiše zkonvertuje na řetězec (pak se indexuje
+po znacích, ne po pixelech, a výsledkem je jednolitá barevná plocha). Stejně tak `@(pole, pole)`
+pole rozbalí a `return $pole` je rozbalí při návratu — plnit po indexech a vracet `,$pole`.
+
 ### Napojení v kódu
 Dlaždice ([quiz.js](quiz.js), fce `tileHtml`) načítají `assets/{cont|country|section}-*.jpg`
 s **emoji fallbackem** (`onerror`). Chybějící obrázek tedy hru nerozbije — spadne zpět na emoji.
