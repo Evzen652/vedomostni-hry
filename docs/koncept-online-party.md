@@ -33,19 +33,48 @@ Precedens už v repu je: `three.min.js` se tahá z CDN a když není, glóbus sp
 
 ---
 
-## 2. Dva vstupy do online hry
+## 2. Tři vstupy do online hry
 
-Obojí stojí na stejné infrastruktuře, liší se jen tím, jak se hráči najdou.
+**Kód místnosti** a **Rychlá hra** stojí na stejné realtime infrastruktuře (§6) a liší se jen
+tím, jak se hráči najdou. **Duel na dálku** je jiná kategorie — asynchronní, nepotřebuje běžící
+server vůbec, jen uložit JSON (viz §2a) — a proto se dá postavit jako úplně první krok.
 
-| | **Kód místnosti** | **Rychlá hra** |
-|---|---|---|
-| Pro koho | rodina, kamarádi, třída | kdokoli (chess.com model) |
-| Jak | hostitel založí hru → 6znakový kód → ostatní ho zadají | hráč klikne „Hrát" a server ho spáruje |
-| Znám protihráče | ano | ne |
-| Kdy dává smysl | **hned** (stačí pár otázek) | až bude dost otázek (viz §11) |
+| | **Duel na dálku** | **Kód místnosti** | **Rychlá hra** |
+|---|---|---|---|
+| Pro koho | kdokoli, i sám (viz §2a) | rodina, kamarádi, třída | kdokoli (chess.com model) |
+| Jak | odehraješ sadu, pošleš odkaz, soupeř hraje proti tvému „duchovi" | hostitel založí hru → 6znakový kód → ostatní ho zadají | hráč klikne „Hrát" a server ho spáruje |
+| Znám protihráče | jedno | ano | ne |
+| Realtime server | **ne** | ano (Durable Object) | ano (Durable Object) |
+| Kdy dává smysl | **hned**, i s jediným hráčem | **hned** | až bude vyřešený realtime server (§6); obsah (§11) už brzda není |
 
-Doporučuju je stavět v tomhle pořadí — kód místnosti splní „každý na svém tabletu" a je
-mnohem jednodušší; matchmaking je pak už jen fronta navíc nad stejným enginem.
+Doporučuju je stavět v tomhle pořadí: **duel na dálku → kód místnosti → rychlá hra.** Duel
+nepotřebuje žádné architektonické rozhodnutí o hostingu ani realtime serveru (§6), takže je
+nejrychlejší k ověření, jestli o online hru vůbec bude zájem. Kód místnosti pak splní „každý
+na svém tabletu"; matchmaking je nakonec jen fronta navíc nad stejným enginem.
+
+---
+
+## 2a. Duel na dálku (asynchronní) — proč je to důležitý první krok
+
+Realtime matchmaking s prázdnou frontou je mrtvá funkce — klasický problém likvidity, na který
+umírá většina malých multiplayerů. Než bude appka mít dost hráčů online najednou, potřebuje
+fungovat i s jedním.
+
+**Jak to funguje:**
+1. Hráč odehraje sadu (např. 7 otázek), uloží se jeho **běh** — odpovědi a časy na otázku.
+2. Pošle soupeři odkaz. Ten hraje **tytéž otázky ve stejném pořadí** a vidí soupeřova „ducha":
+   *„Eva odpověděla správně za 4,2 s"*.
+3. Vyhodnocení hned po dohrání, odveta jedním klikem.
+
+**Proč tohle řeší i Rychlou hru (§11, §13):** když se v matchmakingu do ~10 s nikdo nepřipojí,
+appka místo prázdného čekání **nabídne duel proti uloženému duchovi** (vlastnímu z minula, nebo
+anonymizovanému cizímu). Fronta pak nikdy není prázdná — hráč vždycky během pár sekund hraje,
+ať je online kdokoli, nebo nikdo. Duch se navíc dá later vylepšit na skutečného „bota" tím, že
+appka vybere ducha s podobným skóre (jednoduchý matchmaking bez serveru).
+
+**Technicky nejlevnější kus celého konceptu:** žádný WebSocket, žádný Durable Object, jen jeden
+JSON blob (Cloudflare KV, nebo i jen zakódovaný v URL pro krátké sady). Nemění nic na §1
+(offline-first) — appka ho může volat jen při explicitním „poslat výzvu", zbytek běží offline.
 
 ---
 
@@ -230,15 +259,17 @@ vývojářské nástroje, uvidí správnou odpověď.
 
 ---
 
-## 11. Obsah je reálná brzda
+## 11. Obsah — už není brzda (aktualizováno 2026-08-09)
 
-V `data/questions/` je dnes **jediný soubor (`ru.json`) s 10 otázkami.**
+> Tahle sekce původně varovala, že `data/questions/` má jediný soubor s 10 otázkami a matchmaking
+> proto nedává smysl. **Mezitím přibyly otázky pro všech 49 zemí (1279 otázek celkem)** — podmínka
+> „aspoň 150–200 otázek, ať dvě hry po sobě nejsou stejné" je dávno splněná.
 
-- Na **soukromou místnost** to stačí na pár her s kamarády.
-- Na **veřejný matchmaking to nestačí ani omylem** — každá hra by byla ta samá. Odhadem je
-  potřeba **aspoň 150–200 otázek** napříč zeměmi, aby dvě hry po sobě nebyly stejné.
-
-Proto v plánu níže stojí matchmaking až za obsahem. Je to spíš úkol na psaní otázek než na kód.
+- Na **soukromou místnost** i **veřejný matchmaking** je obsahu dost.
+- Zbývající brzda je jinde: **naprostá většina otázek nemá vlastní fotku** (`img/{id}.jpg`) —
+  netýká se online hry přímo, ale stojí za zmínku, kdyby se řešilo souběžně.
+- Matchmaking tedy **už nemusí čekat na obsah** — může jít hned za duelem na dálku a místností
+  na kód (viz §13).
 
 ---
 
@@ -267,9 +298,9 @@ výpadek), hra se chová přesně jako dnes, jen bez čtvrté dlaždice.
 
 | Fáze | Co | Proč v tomhle pořadí |
 |---|---|---|
-| **1. Místnost na kód** | hostitel založí hru, ostatní zadají kód, hraje se simultánně na vlastních zařízeních | splní hlavní část zadání („každý svůj tablet"), zvládne to i dnešních 10 otázek |
-| **2. Obsah** | rozšířit banku otázek na 150+ | bez toho nemá veřejná hra smysl |
-| **3. Rychlá hra** | matchmaking s cizími, generované přezdívky, serverové doručování otázek | dorovná zbytek zadání (chess.com model) |
+| **1. Duel na dálku** (§2a) | odehraj sadu → pošli odkaz → soupeř hraje proti „duchovi" | nejlevnější na infrastrukturu (žádný realtime server), ověří zájem o online hru vůbec |
+| **2. Místnost na kód** | hostitel založí hru, ostatní zadají kód, hraje se simultánně na vlastních zařízeních | splní hlavní část zadání („každý svůj tablet"); obsahu (1279 otázek, §11) je už dost |
+| **3. Rychlá hra** | matchmaking s cizími, generované přezdívky, serverové doručování otázek; **prázdná fronta → nabídne duel proti duchovi** (§2a) | dorovná zbytek zadání (chess.com model), fronta nikdy není prázdná |
 | **4. Volitelně** | žebříček / ELO, účty, historie, „klasická párty na více zařízení" (model B) | až když se ukáže, že se to hraje |
 
 ---
@@ -279,7 +310,8 @@ výpadek), hra se chová přesně jako dnes, jen bez čtvrté dlaždice.
 1. **Offline-only pravidlo** — souhlasíš s překlopením na „offline-first" podle §1?
 2. **Herní model** — všichni naráz (model A), jak doporučuju? Nebo trváš na tazích jako dnes?
 3. **Hosting** — jsi ochotný appku nasadit veřejně (Cloudflare Pages) a případně platit ~$5/měsíc
-   za server? Bez toho jde udělat maximálně hra na společné wifi, a i to jen s kompromisy.
-4. **Rozsah do začátku** — jdeme fází 1 (místnost na kód), nebo chceš rovnou cílit na veřejný
-   matchmaking včetně psaní otázek?
+   za server? **Fáze 1 (duel na dálku) tohle rozhodnutí nepotřebuje** — nemá realtime server,
+   stačí uložit JSON. Rozhodnutí o hostingu/Durable Objects se dá odložit až na fázi 2.
+4. **Rozsah do začátku** — potvrzuješ pořadí duel na dálku → místnost na kód → rychlá hra (§13)?
+   Obsahu (1279 otázek) je už dost na všechny tři fáze, psaní otázek navíc není blokující.
 5. **Přezdívky ve veřejných hrách** — generované appkou (můj návrh kvůli dětem), nebo vlastní?
