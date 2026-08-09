@@ -13,6 +13,10 @@ $style = ", painterly textured watercolor gouache illustration, aged vintage tra
          "muted desaturated ochre cream and soft teal palette, weathered plaster texture background, " +
          "warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border"
 
+# Pozn.: "cont-world.jpg" (dlaždice „Celý svět") tu není — je to kopie
+# assets/topic-zemepis.jpg z rozcestníku. Glóbus jako samostatný motiv tady
+# pollinations vykresluje fotorealisticky, ať se prompt/seed mění jakkoli.
+#
 # název souboru => @{ p = motiv (jeden jednoduchý předmět/scéna); s = seed }
 $items = [ordered]@{
   # --- kontinenty ---

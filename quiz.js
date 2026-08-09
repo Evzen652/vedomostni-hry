@@ -447,7 +447,7 @@
         soon:!has, selectable:true, attr:`data-cont="${c.id}"` });
     }).join("");
     const worldN = availConts.reduce((sum,c)=> sum + countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length, 0);
-    const worldTile = tileHtml({ ic:"🌍", t:"Celý svět", selectable:true,
+    const worldTile = tileHtml({ ic:"🌍", img:"assets/cont-world.jpg", t:"Celý svět", selectable:true,
       sub: worldN+" "+plur(worldN,"země","země","zemí"), attr:`data-cont="__all__"` });
     const steps = [{label:"Kontinent"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
