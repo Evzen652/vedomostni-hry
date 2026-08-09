@@ -453,7 +453,7 @@
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>Vyber kontinent</h2>
-      <div class="qz-tiles">${tiles}${worldTile}</div>
+      <div class="qz-tiles">${worldTile}${tiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cont-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderModePick);
