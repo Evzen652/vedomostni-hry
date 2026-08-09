@@ -174,6 +174,18 @@ koliduje s parametrem `[string]$Ref` a PowerShell pole tiše zkonvertuje na řet
 po znacích, ne po pixelech, a výsledkem je jednolitá barevná plocha). Stejně tak `@(pole, pole)`
 pole rozbalí a `return $pole` je rozbalí při návratu — plnit po indexech a vracet `,$pole`.
 
+### Ilustrace z Gemini (dnes preferovaná cesta)
+Dorovnání stylu skriptem výše se k původní sadě blíží, ale rukopis úplně netrefí. **Lepší výsledek
+dává vygenerovat ilustraci v Gemini** a jen ji doformátovat — tak vzniklo `country-ch.jpg` (Švýcarsko).
+Uživatel obrázek vygeneruje a stáhne (`D:\weigle\stažené soubory\Gemini_Generated_Image_*.png`,
+typicky 1024×1024 PNG); převod na formát dlaždic:
+```powershell
+# 1024x1024 PNG -> 512x512 JPG q88 do assets/country-{cc}.jpg  (System.Drawing, HighQualityBicubic)
+```
+Pozn.: uživatelské složky jsou přesměrované na disk **D:** (`D:\weigle\stažené soubory`, `D:\weigle\plocha`),
+`$env:USERPROFILE\Downloads` neexistuje — cesty se dají zjistit z
+`HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders`.
+
 ### Napojení v kódu
 Dlaždice ([quiz.js](quiz.js), fce `tileHtml`) načítají `assets/{cont|country|section}-*.jpg`
 s **emoji fallbackem** (`onerror`). Chybějící obrázek tedy hru nerozbije — spadne zpět na emoji.
