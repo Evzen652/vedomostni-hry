@@ -18,6 +18,9 @@ $style = ", painterly textured watercolor gouache illustration, aged vintage tra
 # pollinations vykresluje fotorealisticky, ať se prompt/seed mění jakkoli.
 #
 # název souboru => @{ p = motiv (jeden jednoduchý předmět/scéna); s = seed }
+# Pozn.: klíč "full" (místo "p") = kompletní vlastní prompt, který se $style
+# nepřidává — použij, když má dlaždice vlastně vlastní styl (rámování, kompozice),
+# odlišný od sdíleného vzoru "jeden jednoduchý vycentrovaný motiv, bez rámu".
 $items = [ordered]@{
   # --- kontinenty ---
   "cont-europe"     = @{ p="a single grand european castle with a tall tower";           s=6  }
@@ -32,6 +35,9 @@ $items = [ordered]@{
   "country-pl"      = @{ p="the royal castle of warsaw with old town houses, single centered building"; s=6 }
   "country-sk"      = @{ p="a medieval slovak castle on a hill with tatra mountains";    s=3  }
   "country-at"      = @{ p="a single austrian castle with an onion dome tower";         s=1  }
+  # country-us má vlastní kompletní prompt (framed vintage storybook scéna,
+  # ne sdílený styl-suffix jednoho vycentrovaného motivu) - zadání od uživatele 2026-08-10.
+  "country-us"      = @{ full="Vintage watercolor and ink illustration in an antique storybook style, aged sepia-stained paper with coffee-ring stains, framed by overhanging oak tree branches with leaves in the upper corners. Center: a slightly comical Statue of Liberty made of weathered bronze-green stone, holding a giant paper cup of soda instead of a torch, wearing an oversized baseball cap tilted sideways. In the background, a small-town Main Street with a diner, a vintage pickup truck, and a drive-in movie screen, soft rolling hills beyond. Foreground: a wooden porch with rocking chairs and a checkered picnic blanket, a cooler with 'BBQ' painted on it, a fat bald eagle perched on a fence post wearing sunglasses, scattered corn cobs and a football. Muted pastel color palette - dusty blue sky, cream and ochre tones, soft greens - delicate pen linework, whimsical and nostalgic mood, botanical border with wildflowers (sunflowers, daisies) in the corners, illustrated storybook aesthetic, slightly worn and weathered look"; s=1 }
   # --- sekce ---
   "section-vse"     = @{ p="a vintage globe with a small brass compass";                 s=5  }
   "section-mista"   = @{ p="a folded old travel map with a single red location pin";     s=7  }
@@ -49,7 +55,11 @@ foreach($name in $items.Keys){
   if($Only -and $name -ne $Only){ continue }
   $out = Join-Path $assets "$name.jpg"
   if((Test-Path $out) -and -not $Force){ Write-Host "preskoceno (existuje): $name"; continue }
-  $prompt = $items[$name].p + $style
+  if($items[$name].Contains('full')){
+    $prompt = $items[$name].full
+  } else {
+    $prompt = $items[$name].p + $style
+  }
   $enc = [uri]::EscapeDataString($prompt)
   $seed = $items[$name].s
   $url = "https://image.pollinations.ai/prompt/$enc" + "?width=512&height=512&nologo=true&seed=$seed"
