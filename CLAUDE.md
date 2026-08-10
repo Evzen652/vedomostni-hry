@@ -17,6 +17,13 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-11 — Prompty na ilustrace zemí se sbírají v [docs/prompty-ilustrace-zemi.md](docs/prompty-ilustrace-zemi.md); vtip se ověřuje kontrolní otázkou.**
+  K receptu na ironickou ilustraci (dominanta → vtip přímo na ní → max 3 podřízené gagy → jedna scéna,
+  viz níže) patří kontrola **před** generováním: *kdo v té scéně dělá něco absurdního, aniž by mu to
+  přišlo divné?* Když odpověď není, vtip tam není — je to jen ilustrovaný fakt. Takhle vypadl první
+  bulharský prompt (tuny růží → jedna kapka oleje): scéna měla poměr, ale nikoho, komu je to samozřejmé.
+  Dokument nese hotové i připravené prompty pro jednotlivé země včetně zavržených variant a důvodů,
+  aby se stejná země nevymýšlela dvakrát od nuly.
 - **2026-08-10 — Standard kvality pro `explanation` / `quip_correct` / `quip_wrong`: každá vrstva musí nést jinou informaci, ne opakovat tu samou.**
   Audit všech 1279 otázek ([docs/audit-otazky-kvalita.md](docs/audit-otazky-kvalita.md)) odhalil dva
   provázané problémy: (1) `quip_wrong` je u ~90 % otázek jen suchý přepis odpovědi bez vtipu, ačkoli
