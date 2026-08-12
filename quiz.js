@@ -115,7 +115,7 @@
     { id:"africa",     name:"Afrika",          emoji:"🦁" },
     { id:"namerica",   name:"Severní Amerika", emoji:"🗽" },
     { id:"samerica",   name:"Jižní Amerika",   emoji:"🌴" },
-    { id:"oceania",    name:"Oceánie",         emoji:"🐨" },
+    { id:"oceania",    name:"Austrálie",       emoji:"🐨" },
     { id:"antarctica", name:"Antarktida",      emoji:"🐧" },
   ];
   // sekce („specifikace") — pořadí a ikony jako u karet na glóbu
@@ -247,7 +247,7 @@
   }
 
   // ---- reálný 3D glóbus v medailonku (natáčí se na zemi otázky) ----
-  const EARTH_TEX = "assets/earth.jpg";   // bundled lokálně (offline-only); zdroj: three-globe blue-marble, zmenšeno na 1024×512
+  const EARTH_TEX = "assets/earth.jpg";   // malovaná akvarelová mapa světa (equirekt 1024×512, geografie zachovaná); záloha původního blue-marble: assets/earth-bluemarble.jpg
   // CSS animace řeší @media (prefers-reduced-motion), rotace glóbu je ale v JS — vypnout ji musíme tady
   const REDUCED_MOTION = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const COUNTRY_LL = { ar:[-54.44,-25.7], at:[16.31,48.18], au:[134,-25], bg:[23.32,42.7], br:[-60,-3], ca:[-79.07,43.08], ch:[7.45,46.95], cl:[-68.5,-24], cn:[103,35], cz:[14.4,50.09], de:[10.75,47.56], ec:[-90.97,-0.95], eg:[31.2,30], es:[2.17,41.4], fj:[178.4,-18.1], fr:[2.12,48.8], ga:[9.6,-2.2], gb:[-1.83,51.18], gr:[23.73,37.97], hu:[19.04,47.5], id:[110.2,-7.61], il:[35.23,31.78], in:[79,21], it:[12.32,45.44], jp:[139.7,35.7], ke:[36.8,-1.3], kp:[128.08,41.99], kr:[126.98,37.58], mn:[106.92,47.92], mx:[-99.1,19.4], my:[101.71,3.16], nl:[4.9,52.37], nz:[174.8,-41.3], pe:[-72.54,-13.16], ph:[121.14,16.93], pk:[74.32,31.59], pl:[19.94,50.06], ro:[26.1,44.43], ru:[100,62], sa:[37.95,26.79], se:[18.3,57.64], sk:[17.1,48.14], th:[100.49,13.74], tr:[28.98,41.01], tw:[121.56,25.03], ua:[30.51,50.45], us:[-98.5,39.8], vn:[107.18,20.91], za:[24.7,-28.5] };   // přibližný střed země pro natočení
@@ -261,10 +261,12 @@
       if(THREE.sRGBEncoding!==undefined) renderer.outputEncoding=THREE.sRGBEncoding;
       const scene=new THREE.Scene();
       const camera=new THREE.PerspectiveCamera(40, 1, 0.1, 100); camera.position.set(0,0,2.9);
-      scene.add(new THREE.AmbientLight(0xffffff,0.55));
-      const key=new THREE.DirectionalLight(0xffffff,0.9); key.position.set(-1,0.5,1.1); camera.add(key); scene.add(camera);
+      // malovaná textura → matně a rovnoměrně nasvícené (žádný lesk ani ostrý den/noc terminátor),
+      // ať glóbus vypadá jako namalovaný papírový míč, ne naleštěná planeta
+      scene.add(new THREE.AmbientLight(0xffffff,0.7));
+      const key=new THREE.DirectionalLight(0xffffff,0.0); key.position.set(-1,0.5,1.1); camera.add(key); scene.add(camera);
       const tex=new THREE.TextureLoader().load(EARTH_TEX); if(THREE.sRGBEncoding!==undefined) tex.encoding=THREE.sRGBEncoding;
-      const earth=new THREE.Mesh(new THREE.SphereGeometry(1,48,32), new THREE.MeshPhongMaterial({ map:tex, shininess:5 }));
+      const earth=new THREE.Mesh(new THREE.SphereGeometry(1,48,32), new THREE.MeshPhongMaterial({ map:tex, shininess:0 }));
       scene.add(earth);
       g3={ renderer, scene, camera, earth, canvas:cv, targetY:0, curY:0, targetX:0, curX:0, auto:false };
       (function loop(){ requestAnimationFrame(loop); if(!g3) return;
@@ -364,15 +366,21 @@
     say("Vítejte, cestovatelé! Jak si dnes zahrajeme?");
     document.getElementById("qz-shell").style.transform="";
     const saves=loadSaves(); const ids=Object.keys(saves).sort((a,b)=>saves[b].ts-saves[a].ts).slice(0,4);
-    const resumeHtml = ids.length ? `<div class="qz-resume">
-      <div class="qz-resume-h">${ICO_FOLDER} Rozehrané výpravy</div>
-      ${ids.map(id=>{ const m=saves[id].meta;
+    const hasSaves = ids.length > 0;
+    const resumeItems = ids.map(id=>{ const m=saves[id].meta;
         const where = m.mode==="party" ? ("kolo "+m.round+"/"+m.totalRounds) : ("otázka "+((m.idx||0)+1)+"/"+m.count);
         return `<div class="qz-resume-item" data-resume="${id}">
           <span class="qz-resume-faces">${(m.players||[]).map(p=>`<span class="qz-face" style="background:${p.color}">${esc((p.name||"?")[0])}</span>`).join("")}</span>
           <span class="qz-resume-meta">${m.cc?flagStamp(m.cc):""} ${m.mode==="party"?"Párty":(m.school?"Škola":"Sólo")} · ${where}</span>
-          <button class="qz-resume-del" data-del="${id}" title="smazat">✕</button></div>`; }).join("")}
-    </div>` : "";
+          <button class="qz-resume-del" data-del="${id}" title="smazat">✕</button></div>`; }).join("");
+    // Rozehrané hry se neukazují přímo — jen tlačítko, které otevře pop-up (modal) se seznamem.
+    const resumeBtn = hasSaves ? `<button class="qz-resume-open" id="qz-resume-open"><img class="qz-ico-resume" src="assets/ico-resume.png" alt=""> Rozehrané hry</button>` : "";
+    const resumeModal = hasSaves ? `<div class="qz-modal" id="qz-resume-modal" hidden>
+      <div class="qz-modal-backdrop" data-close="1"></div>
+      <div class="qz-modal-panel" role="dialog" aria-modal="true" aria-label="Rozehrané hry">
+        <div class="qz-modal-head"><span><img class="qz-ico-resume" src="assets/ico-resume.png" alt=""> Rozehrané hry</span><button class="qz-modal-close" data-close="1" title="zavřít">✕</button></div>
+        <div class="qz-modal-body">${resumeItems}</div>
+      </div></div>` : "";
     body.innerHTML = `<div class="qz-screen qz-modepick">
       <div class="qz-globebg" id="qz-globebg"></div>
       <h2>Zeměpis</h2>
@@ -381,17 +389,27 @@
         <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty hra</div><div class="d">2 až 6 hráčů. Jeden bude tvrdit, že věděl.</div></button>
         <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola</div><div class="d">Třída hádá. Aspoň někdo musí něco vědět...</div></button>
       </div>
-      ${resumeHtml}
+      ${resumeBtn}${resumeModal}
     </div>`;
     body.querySelector("#qz-mode-solo").addEventListener("click", () => beginPick("solo"));
     body.querySelector("#qz-mode-party").addEventListener("click", () => beginPick("party"));
     body.querySelector("#qz-mode-school").addEventListener("click", () => beginPick("school"));
+    const openBtn = body.querySelector("#qz-resume-open");
+    const modal = body.querySelector("#qz-resume-modal");
+    if(openBtn && modal){
+      openBtn.addEventListener("click", () => { modal.hidden = false; });
+      modal.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", () => { modal.hidden = true; }));
+    }
     body.querySelectorAll(".qz-resume-item").forEach(it => it.addEventListener("click", e => {
       if(e.target.closest(".qz-resume-del")) return;
       resumeSave(it.dataset.resume);
     }));
     body.querySelectorAll(".qz-resume-del").forEach(d => d.addEventListener("click", e => {
-      e.stopPropagation(); const s=loadSaves(); delete s[d.dataset.del]; writeSaves(s); renderModePick();
+      e.stopPropagation();
+      const s=loadSaves(); delete s[d.dataset.del]; writeSaves(s);
+      const row=d.closest(".qz-resume-item"); if(row) row.remove();
+      // poslední smazána → zavřít pop-up a schovat tlačítko (žádné rozehrané hry nezbyly)
+      if(modal && !modal.querySelector(".qz-resume-item")){ modal.hidden = true; if(openBtn) openBtn.remove(); }
     }));
     mountGlobeBg();
   }

@@ -233,7 +233,7 @@
   border-radius: 50%; overflow: hidden; opacity: .28; pointer-events: none; z-index: 0;
   box-shadow: inset -18px -14px 40px rgba(20,50,60,.35); }
 .qz-globebg canvas { width: 100% !important; height: 100% !important; display: block; }
-.qz-modepick h2, .qz-modes, .qz-resume { position: relative; z-index: 1; }
+.qz-modepick h2, .qz-modes, .qz-resume, .qz-resume-open { position: relative; z-index: 1; }
 
 /* výběr tématu: kontinent → země → sekce */
 .qz-pick { align-items: center; text-align: center; gap: 12px; padding: 70px 22px 20px; }
@@ -372,6 +372,27 @@
 .qz-resume-meta { flex: 1; font-size: 13px; }
 .qz-resume-del { margin-left: auto; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 15px; padding: 2px 6px; }
 .qz-resume-del:hover { color: var(--bad); }
+
+/* Rozehrané hry: tlačítko + pop-up (modal) */
+.qz-resume-open { margin-top: 18px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 14px;
+  padding: 8px 22px 8px 14px; font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 14px; color: var(--ink);
+  cursor: pointer; box-shadow: 0 3px 0 #e3d5b8; display: inline-flex; align-items: center; gap: 8px;
+  transition: transform .12s, box-shadow .12s; }
+.qz-ico-resume { width: 30px; height: 30px; object-fit: contain; display: block; flex-shrink: 0; }
+.qz-modal-head .qz-ico-resume { width: 26px; height: 26px; }
+.qz-resume-open:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #e3d5b8; }
+.qz-modal { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.qz-modal[hidden] { display: none; }
+.qz-modal-backdrop { position: absolute; inset: 0; background: rgba(60,45,25,.45); backdrop-filter: blur(2px); }
+.qz-modal-panel { position: relative; z-index: 1; width: min(600px, 94vw); max-height: 80vh; overflow-y: auto; overflow-x: hidden;
+  background: var(--paper2); border: 2px solid #d8c9ad; border-radius: 18px; padding: 16px 16px 8px;
+  box-shadow: 0 22px 54px rgba(90,70,40,.42), inset 0 0 0 6px #fffdf6; text-align: left; }
+.qz-modal-body .qz-resume-item { box-sizing: border-box; }
+.qz-modal-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px;
+  font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 18px; color: var(--teal); }
+.qz-modal-close { flex-shrink: 0; background: var(--paper2); border: 1.6px solid #d8c9ad; border-radius: 50%;
+  width: 32px; height: 32px; cursor: pointer; color: var(--ink); font-size: 15px; box-shadow: 0 2px 0 #d8c9ad; }
+.qz-modal-close:hover { color: var(--bad); }
 
 /* ---- široká obrazovka: text vlevo, okno (glóbus → fotka) vpravo ----
    Fotky nejsou ve vysokém rozlišení — na půlce šířky zůstanou ostré.
