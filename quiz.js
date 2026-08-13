@@ -9,7 +9,9 @@
   const hostAv = document.getElementById("qz-host-av");
   const HOST_NAME = "Průvodce";   // konfigurovatelné jméno hostitele
   let FLAG = "🇷🇺", COUNTRY = "Rusko";   // aktuálně vybraná země (mění se výběrem)
-  const GLOBE_URL = "landing.html";   // úvodní stránka hry (hra je zcela oddělená od glóbu)
+  // landing.html byl dřív úvodní rozcestník — teď je hra.html sama domovská stránka,
+  // takže „Domů" (× i tlačítka po skončení hry) vede zpět na výběr režimu v ní samé,
+  // ne na jinou stránku. landing.html zůstává v repu nesmazaný, jen bez odkazu na něj.
 
   // ilustrace režimů (malovaný styl, sladěné s paletou appky)
   const ICO_SOLO = `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -69,7 +71,7 @@
   const SHOW_SOURCE_LINK = false;
   const COLORS = ["#e2725b","#2a7f7f","#d9a441","#8a6fae","#7ba05b","#4e9e6f"];
   const SIDES = [{k:"dole",deg:0},{k:"nahoře",deg:180},{k:"vlevo",deg:90},{k:"vpravo",deg:270}];
-  const S = { mode:"solo", order:[], idx:0, band:"dospeli", kidsMax:2, answered:false,
+  const S = { mode:"solo", order:[], idx:0, band:"dospeli", bandTouched:false, kidsMax:2, kidsMaxTouched:false, answered:false,
               players:[], turn:0, round:1, totalRounds:5, qServed:0,
               voice:false, steal:false, rotate:"auto", manualRot:null,
               school:false, timer:0, saveId:null };
@@ -123,6 +125,10 @@
   const SECTION_EMOJI = { "Místa":"📍","Příroda":"🌿","Lidé":"👥","Kultura & tradice":"🎭","Umění":"🎨","Sport":"🏆","Jazyk & slova":"🔤","Jídlo":"🍽️","Historie":"🏛️" };
   // slugy pro ilustrace (assets/section-{slug}.jpg) — obrázek nahradí emoji, jakmile existuje
   const SECTION_SLUG = { "Místa":"mista","Příroda":"priroda","Lidé":"lide","Kultura & tradice":"kultura","Umění":"umeni","Sport":"sport","Jazyk & slova":"jazyk","Jídlo":"jidlo","Historie":"historie" };
+  // zobrazovaný název dlaždice/drobečku — jen kosmetika. Klíč "Místa" zůstává beze změny,
+  // protože je to zároveň hodnota q.section u 1279 otázek napříč všemi zeměmi; přejmenovat
+  // by se smělo jen tohle popisné jméno, ne samotný klíč, jinak dlaždice ztratí napojení na data.
+  const SECTION_LABEL = { "Místa":"Co je kde" };
   let sessionMastered = [];
   function loadProg(){ try { const p=JSON.parse(localStorage.getItem(PROGRESS_KEY)||"{}"); return { correct:p.correct||{}, mastered:p.mastered||{} }; } catch(e){ return { correct:{}, mastered:{} }; } }
   function saveProg(p){ try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(p)); } catch(e){} }
@@ -359,7 +365,7 @@
   }
 
   function open(){ ensureData().then(()=>{ document.body.style.overflow="hidden"; root.classList.remove("qz-hidden"); renderModePick(); }); }
-  function close(){ stopTTS(); clearTimer(); releaseWake(); location.href = GLOBE_URL; }
+  function close(){ stopTTS(); clearTimer(); releaseWake(); renderModePick(); }
 
   // ---- výběr režimu ----
   function renderModePick(){
@@ -383,11 +389,11 @@
       </div></div>` : "";
     body.innerHTML = `<div class="qz-screen qz-modepick">
       <div class="qz-globebg" id="qz-globebg"></div>
-      <h2>Zeměpis</h2>
+      <h2>Zeměkvíz</h2>
       <div class="qz-modes">
-        <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo</div><div class="d">Nikdo nezmerčí, co nevíš. Ty to ale brzo zjistíš...</div></button>
-        <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty hra</div><div class="d">2 až 6 hráčů. Jeden bude tvrdit, že věděl.</div></button>
-        <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola</div><div class="d">Třída hádá. Aspoň někdo musí něco vědět...</div></button>
+        <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Nikdo nezmerčí, kde máš slabá místa...</div></button>
+        <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Pro 2 až 6 hráčů. Vyhrává ten chytrej.</div></button>
+        <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Třída hádá. Aspoň jeden musí něco vědět...</div></button>
       </div>
       ${resumeBtn}${resumeModal}
     </div>`;
@@ -419,7 +425,7 @@
   function pointsLabel(n){ return `Získáváš ${n} ${plur(n,"bod","body","bodů")}`; }
   const MODE_LABEL = { solo:"Sólo", party:"Párty", school:"Škola" };
   function beginPick(mode){ S.pickMode=mode; S.sel={}; renderContinentPick(); }
-  function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?s[0]:s.length+" témata"; return s; }
+  function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?(SECTION_LABEL[s[0]]||s[0]):s.length+" témata"; return SECTION_LABEL[s]||s; }
   function contsLabel(){
     const contsArr = (S.sel && S.sel.conts) || [];
     const contNames = contsArr.map(id => { const c = CONTINENTS.find(x=>x.id===id); return c ? c.name : id; });
@@ -440,14 +446,36 @@
       const s = steps[+btn.dataset.ci];
       if(s && s.fn) btn.addEventListener("click", s.fn);
     });
+    positionPickHead();
   }
-  function tileHtml(o){ // {ic,img,t,sub,soon,attr,selectable}
+  // Host (avatar+bublina) je ukotvený k celé šířce shellu (position:absolute), zatímco
+  // obsah obrazovky žije ve vystředěném sloupci #qz-body — na širokém plátně (nad 980px)
+  // se tak jejich levé okraje rozjedou. Lišta „zpět / TAG / drobečky" je proto taky
+  // ukotvená k shellu (viz CSS) a sem se jí podle SKUTEČNÉHO rozměru bubliny (mění se
+  // text od textu) dopočítá left/top, aby seděla přesně pod ní, ne pod avatarem.
+  function positionPickHead(){
+    const head = document.querySelector(".qz-pickhead");
+    const bubble = document.getElementById("qz-host-bubble");
+    const hostEl = document.getElementById("qz-host");
+    const shellEl = document.getElementById("qz-shell");
+    if(!head || !bubble || !hostEl || !shellEl) return;
+    // pod 768px se bublina schovává (viz CSS) a má nulový rozměr — pak se ukotví
+    // pod celého hostitele (avatar), ne pod bublinu, která tam fakticky není
+    const bubbleVisible = getComputedStyle(bubble).display !== "none";
+    const ref = bubbleVisible ? bubble.getBoundingClientRect() : hostEl.getBoundingClientRect();
+    const shellRect = shellEl.getBoundingClientRect();
+    head.style.left = Math.round(ref.left - shellRect.left) + "px";
+    head.style.top = Math.round(ref.bottom - shellRect.top + 24) + "px";
+  }
+  window.addEventListener("resize", positionPickHead);
+  function tileHtml(o){ // {ic,img,t,sub,soon,attr,selectable,sel}
     const soon = o.soon ? " soon" : "";
+    const sel = o.sel ? " sel" : "";
     const icInner = o.img
       ? `<img class="ic-img" src="${o.img}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${o.ic}</span>`
       : o.ic;
     const check = o.selectable ? `<span class="qz-tile-check">${checkSvg()}</span>` : "";
-    return `<button class="qz-tile${soon}" ${o.attr||""} ${o.soon?"disabled":""}>
+    return `<button class="qz-tile${soon}${sel}" ${o.attr||""} ${o.soon?"disabled":""}>
       ${o.soon?`<span class="qz-tbadge">Brzy</span>`:""}
       <span class="qz-tile-ic">${icInner}${check}</span>
       <span class="qz-tile-t">${esc(o.t)}</span>
@@ -478,12 +506,21 @@
     bindPickHead(steps);
     const selected = new Set();
     const startBtn = body.querySelector("#qz-cont-start");
+    const goNext = () => {
+      if(!selected.size) return;
+      const conts = selected.has("__all__") ? availConts.map(c=>c.id) : [...selected];
+      renderCountryPick(conts);
+    };
     body.querySelectorAll(".qz-tile[data-cont]:not(.soon)").forEach(b => {
       b.addEventListener("click", () => {
         const cont = b.dataset.cont;
         if(cont === "__all__"){
-          if(selected.has("__all__")){ selected.clear(); b.classList.remove("sel"); }
-          else { selected.clear(); body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel")); selected.add("__all__"); b.classList.add("sel"); }
+          if(selected.has("__all__")){ selected.clear(); b.classList.remove("sel"); startBtn.disabled = true; return; }
+          // "Celý svět" nejde kombinovat s ničím jiným — klik je kompletní rozhodnutí,
+          // takže rovnou pokračuje dál, bez čekání na tlačítko Pokračuj
+          selected.clear(); body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel")); selected.add("__all__"); b.classList.add("sel");
+          goNext();
+          return;
         } else {
           if(selected.has("__all__")){ selected.delete("__all__"); body.querySelector(".qz-tile[data-cont='__all__']")?.classList.remove("sel"); }
           if(selected.has(cont)){ selected.delete(cont); b.classList.remove("sel"); }
@@ -492,11 +529,7 @@
         startBtn.disabled = selected.size === 0;
       });
     });
-    startBtn.addEventListener("click", () => {
-      if(!selected.size) return;
-      const conts = selected.has("__all__") ? availConts.map(c=>c.id) : [...selected];
-      renderCountryPick(conts);
-    });
+    startBtn.addEventListener("click", goNext);
   }
 
   function renderCountryPick(conts){
@@ -507,6 +540,10 @@
     document.getElementById("qz-shell").style.transform="";
     const ccList = contsArr.flatMap(cont => countriesInCont(cont));
     const hasSome = ccList.some(cc => qsForCc(cc).length > 0);
+    const ccWithQ = ccList.filter(cc => qsForCc(cc).length > 0);
+    const allTotal = ccWithQ.reduce((sum,cc) => sum + qsForCc(cc).length, 0);
+    const allCcTile = hasSomeTile => hasSomeTile ? tileHtml({ ic:"🌍", img:"assets/country-all.jpg", t:"Všechny země", selectable:true,
+      sub: allTotal+" "+plur(allTotal,"otázka","otázky","otázek"), attr:`data-cc="__all__"` }) : "";
     const tiles = ccList.length ? ccList.map(cc => {
       const n = qsForCc(cc).length;
       return tileHtml({ ic:COUNTRY_FLAG[cc]||"🏳️", img:`assets/country-${cc}.jpg`, t:COUNTRY_BY_CC[cc]||cc,
@@ -516,27 +553,39 @@
     const steps = [{label:contLabel, fn:renderContinentPick}, {label:"Země"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
-      <h2>${esc(contLabel)} — vyber zemi</h2>
-      <div class="qz-tiles">${tiles}</div>
+      <h2>${esc(contLabel)} | vyber země</h2>
+      <div class="qz-tiles">${allCcTile(hasSome)}${tiles}</div>
       ${hasSome ? `<div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cc-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>` : ""}
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderContinentPick);
     bindPickHead(steps);
     const selected = new Set();
     const startBtn = body.querySelector("#qz-cc-start");
+    const goNext = async () => {
+      if(!selected.size) return;
+      const ccs = selected.has("__all__") ? ccWithQ : [...selected];
+      await selectCountries(ccs);
+      renderSectionPick();
+    };
     body.querySelectorAll(".qz-tile[data-cc]:not(.soon)").forEach(b => {
       b.addEventListener("click", () => {
         const cc = b.dataset.cc;
-        if(selected.has(cc)){ selected.delete(cc); b.classList.remove("sel"); }
-        else { selected.add(cc); b.classList.add("sel"); }
+        if(cc === "__all__"){
+          if(selected.has("__all__")){ selected.clear(); b.classList.remove("sel"); if(startBtn) startBtn.disabled = true; return; }
+          // "Všechny země" nejde kombinovat s ničím jiným — klik je kompletní rozhodnutí,
+          // takže rovnou pokračuje dál, bez čekání na tlačítko Pokračuj
+          selected.clear(); body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel")); selected.add("__all__"); b.classList.add("sel");
+          goNext();
+          return;
+        } else {
+          if(selected.has("__all__")){ selected.delete("__all__"); body.querySelector(".qz-tile[data-cc='__all__']")?.classList.remove("sel"); }
+          if(selected.has(cc)){ selected.delete(cc); b.classList.remove("sel"); }
+          else { selected.add(cc); b.classList.add("sel"); }
+        }
         if(startBtn) startBtn.disabled = selected.size === 0;
       });
     });
-    if(startBtn) startBtn.addEventListener("click", async () => {
-      if(!selected.size) return;
-      await selectCountries([...selected]);
-      renderSectionPick();
-    });
+    if(startBtn) startBtn.addEventListener("click", goNext);
   }
 
   function renderSectionPick(){
@@ -547,18 +596,18 @@
     const bySec = {}; for(const q of all){ const s=q.section||"—"; (bySec[s]=bySec[s]||[]).push(q); }
     const secTiles = SECTION_ORDER.map(s => {
       const n = (bySec[s]||[]).length;
-      return tileHtml({ ic:SECTION_EMOJI[s]||"•", img:`assets/section-${SECTION_SLUG[s]||"x"}.jpg`, t:s,
+      return tileHtml({ ic:SECTION_EMOJI[s]||"•", img:`assets/section-${SECTION_SLUG[s]||"x"}.jpg`, t:SECTION_LABEL[s]||s,
         sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "—",
         soon:!n, selectable:true, attr:`data-sec="${esc(s)}"` });
     }).join("");
-    const allTile = tileHtml({ ic:"🎲", img:"assets/section-vse.jpg", t:"Vše", selectable:true,
+    const allTile = tileHtml({ ic:"🎲", img:"assets/section-vse.jpg", t:"Vybrat vše", selectable:true,
       sub: all.length+" "+plur(all.length,"otázka","otázky","otázek"), attr:`data-sec="__all__"` });
     const backToCountry = () => renderCountryPick(S.sel.conts || [S.sel.cont]);
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:COUNTRY, fn:backToCountry}, {label:"Téma"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
-      <h2>${flagStamp(cc)} ${esc(COUNTRY)} — vyber téma</h2>
-      <div class="qz-tiles qz-tiles-sec">${secTiles}</div>
+      <h2>${flagStamp(cc)} ${esc(COUNTRY)} | vyber témata</h2>
+      <div class="qz-tiles qz-tiles-sec">${allTile}${secTiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", backToCountry);
@@ -568,12 +617,21 @@
     function syncStart(){
       startBtn.disabled = selected.size === 0;
     }
+    const goNext = () => {
+      if(!selected.size) return;
+      S.sel.section = selected.has("__all__") ? "__all__" : [...selected];
+      applyPool(); afterPick();
+    };
     body.querySelectorAll(".qz-tile[data-sec]:not(.soon)").forEach(b => {
       b.addEventListener("click", () => {
         const sec = b.dataset.sec;
         if(sec === "__all__"){
-          if(selected.has("__all__")){ selected.clear(); b.classList.remove("sel"); }
-          else { selected.clear(); body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel")); selected.add("__all__"); b.classList.add("sel"); }
+          if(selected.has("__all__")){ selected.clear(); b.classList.remove("sel"); syncStart(); return; }
+          // "Vybrat vše" nejde kombinovat s ničím jiným — klik je kompletní rozhodnutí,
+          // takže rovnou pokračuje dál, bez čekání na tlačítko Hrát
+          selected.clear(); body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel")); selected.add("__all__"); b.classList.add("sel");
+          goNext();
+          return;
         } else {
           if(selected.has("__all__")){ selected.delete("__all__"); body.querySelector(".qz-tile[data-sec='__all__']")?.classList.remove("sel"); }
           if(selected.has(sec)){ selected.delete(sec); b.classList.remove("sel"); }
@@ -582,13 +640,10 @@
         syncStart();
       });
     });
-    startBtn.addEventListener("click", () => {
-      if(!selected.size) return;
-      S.sel.section = selected.has("__all__") ? "__all__" : [...selected];
-      applyPool(); afterPick();
-    });
+    startBtn.addEventListener("click", goNext);
   }
   function afterPick(){
+    S.bandTouched = false; S.kidsMaxTouched = false;   // nová volba tématu -> karty nemají ukazovat starou volbu jako už vybranou
     if(S.pickMode==="party") renderSetup();
     else if(S.pickMode==="school") renderSchoolStart();
     else renderStart();
@@ -634,26 +689,26 @@
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:_cLabel, fn:backToCountry3}, {label:selSectionLabel(), fn:renderSectionPick}];
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(steps)}
-      <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} — sólo výprava</h2>
+      <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} | Sólo výprava</h2>
       <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>
-      <div style="width:min(100%,270px)">
+      <div style="width:min(100%,460px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
-        <div class="qz-bands">
-          <button class="qz-chip${S.band==="deti"?" on":""}" data-band="deti">Děti</button>
-          <button class="qz-chip${S.band==="dospeli"?" on":""}" data-band="dospeli">Dospělí</button>
+        <div class="qz-tiles" style="grid-template-columns:repeat(2,1fr);max-width:100%">
+          ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
+          ${tileHtml({ic:"🧑", img:"assets/band-dospeli.jpg", t:"Dospělí", selectable:true, sel:S.bandTouched && S.band==="dospeli", attr:`data-band="dospeli"`})}
         </div>
-        ${S.band==="deti"?`<div style="font-size:12px;color:var(--muted);margin:8px 0 6px">Věk:</div>
-        <div class="qz-bands">
-          <button class="qz-chip${S.kidsMax===1?" on":""}" data-kmax="1">6–9 let</button>
-          <button class="qz-chip${S.kidsMax>=2?" on":""}" data-kmax="2">10–14 let</button>
+        ${S.band==="deti"?`<div style="font-size:12px;color:var(--muted);margin:14px 0 6px">Věk:</div>
+        <div class="qz-tiles" style="grid-template-columns:repeat(2,1fr);max-width:100%">
+          ${tileHtml({ic:"🍭", img:"assets/age-6-9.jpg", t:"6–9 let", selectable:true, sel:S.kidsMaxTouched && S.kidsMax===1, attr:`data-kmax="1"`})}
+          ${tileHtml({ic:"📱", img:"assets/age-10-14.jpg", t:"10–14 let", selectable:true, sel:S.kidsMaxTouched && S.kidsMax>=2, attr:`data-kmax="2"`})}
         </div>`:""}
       </div>
       <button class="qz-go" id="qz-start-go" style="margin-top:20px">Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
-    body.querySelectorAll(".qz-chip[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; renderStart(); }));
-    body.querySelectorAll(".qz-chip[data-kmax]").forEach(ch => ch.addEventListener("click", () => { S.kidsMax=+ch.dataset.kmax; renderStart(); }));
+    body.querySelectorAll(".qz-tile[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; S.bandTouched=true; renderStart(); }));
+    body.querySelectorAll(".qz-tile[data-kmax]").forEach(ch => ch.addEventListener("click", () => { S.kidsMax=+ch.dataset.kmax; S.kidsMaxTouched=true; renderStart(); }));
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
 
@@ -855,7 +910,7 @@
     return `<div class="qz-frow">
       <div class="qz-expl">${esc(q.explanation||"")} ${(SHOW_SOURCE_LINK && q.source_url)?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
       <div class="qz-fbtns">
-        <button class="qz-more" id="qz-more">${ICO_BOOK} ${esc(moreLabel(q))}</button>
+        ${q.source_card?`<button class="qz-more" id="qz-more">${ICO_BOOK} ${esc(moreLabel(q))}</button>`:""}
         <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
       </div>
     </div>`;
@@ -921,14 +976,11 @@
   }
   function finishSteal(q){ const st=body.querySelector("#qz-steal"); if(st){ const tmp=document.createElement("div"); tmp.innerHTML=frowHtml(q); st.replaceWith(tmp.firstElementChild); } wireFrow(q); }
 
-  // „Více o…" je u KAŽDÉ odpovědi. Když otázka nemá navázanou kartu z Glóbu,
-  // složí se náhradní karta z otázky samotné (její fotka + vysvětlení).
-  // bez karty z Glóbu nemáme žádný text navíc — vysvětlení už čte hráč pod odpovědí,
-  // takže tahle karta záměrně BEZ textu opakuje jen fotku a téma jako pohlednici
+  // „Více o…" se zobrazuje jen u otázek napojených na kartu z Glóbu (q.source_card) —
+  // bez karty appka neměla nic k zobrazení (žádná fotka, žádný text navíc), tlačítko
+  // proto vůbec nerenderuje frowHtml(). Karty samy jsou bez fotek — jen fakt + hláska.
   function openMore(q){
-    const c = q.source_card && data.cardsById[q.source_card];
-    if(c) return openCard(q.source_card);
-    cardOverlay({ headline: q.answer || q.question }, `img/${esc(q.id)}.jpg`, true);
+    if(q.source_card) openCard(q.source_card);
   }
   // Karta má vždycky základní fakt + dvě hlubší úrovně (cestovatel, kartograf) — ty appka
   // dřív vůbec nečetla. Otázka svoje "explanation" často odvozuje právě ze základního faktu
@@ -938,12 +990,11 @@
     const c=data.cardsById[id]; if(!c) return;
     const deep = c.levels && (c.levels.kartograf || c.levels.cestovatel);
     const shown = deep ? { ...c, headline:deep.headline||c.headline, fact:deep.fact, voice:deep.voice } : c;
-    cardOverlay(shown, `img/${esc(c.id)}.jpg`, c.visual_type!=="typographic");
+    cardOverlay(shown);
   }
-  function cardOverlay(c, imgSrc, hasImg){
+  function cardOverlay(c){
     const ov=document.createElement("div"); ov.className="qz-cardov";
     ov.innerHTML = `<div class="qz-cardbox">
-      ${hasImg?`<img class="qz-cardimg" src="${imgSrc}" alt="" onerror="this.style.display='none'">`:""}
       <div class="qz-cardbody">
         <h3>${esc(c.headline||c.country||"")}</h3>
         ${c.fact?`<p>${esc(c.fact)} ${(SHOW_SOURCE_LINK && c.source_url)?`<a href="${esc(c.source_url)}" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;text-decoration:none">${ICO_LINK} zdroj</a>`:""}</p>`:""}

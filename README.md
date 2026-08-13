@@ -5,13 +5,12 @@ Kvízová hra (zeměpis). Samostatný projekt, oddělený od aplikace **Glóbus*
 ## Spuštění
 ```bash
 npx http-server -p 8777 -c-1
-# → http://localhost:8777/landing.html  (rozcestník)
-# → http://localhost:8777/hra.html      (samotný kvíz)
+# → http://localhost:8777/hra.html      (úvodní stránka i samotný kvíz)
 ```
 
 ## Struktura
-- `landing.html` — rozcestník (Vědomostní hry)
-- `hra.html`, `quiz.js`, `quiz.css` — kvíz
+- `hra.html`, `quiz.js`, `quiz.css` — kvíz; `hra.html` je teď úvodní/domovská stránka appky
+- `landing.html` — starší rozcestník (Vědomostní hry); zatím nepoužitý, ale zachovaný pro pozdější využití
 - `data/questions/{cc}.json` — otázky
 - `data/fondy.json` — fondy otázek
 - `data/cards/{cc}.json` — **kopie** kartové databáze z aplikace Glóbus (kvíz je jen čte).
