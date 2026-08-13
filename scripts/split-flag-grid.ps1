@@ -22,9 +22,11 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
-$cc4 = $Codes.Split(',') | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' }
-if ($cc4.Count -notin @(2,3,4)) { throw "Codes musí mít 2/3 (vedle sebe) nebo 4 (mřížka 2x2) kódy; dostal jsem $($cc4.Count)." }
-if ($cc4.Count -ne 4 -and -not $Exact) { throw "Režim $($cc4.Count) kódů (vedle sebe) funguje jen s -Exact." }
+# @(...) je nutné: pipeline s JEDNÍM výsledkem se v PowerShellu "rozbalí" na holý
+# řetězec, a $cc4[0] by pak indexoval ZNAKY řetězce ("all"[0] = 'a'), ne prvky pole.
+$cc4 = @($Codes.Split(',') | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' })
+if ($cc4.Count -notin @(1,2,3,4)) { throw "Codes musí mít 1 (celý obrázek), 2/3 (vedle sebe) nebo 4 (mřížka 2x2) kódy; dostal jsem $($cc4.Count)." }
+if ($cc4.Count -ne 4 -and -not $Exact) { throw "Režim $($cc4.Count) kódů (vedle sebe / samostatný) funguje jen s -Exact." }
 
 $root = Split-Path -Parent $PSScriptRoot
 $outDir = Join-Path $root 'assets'
@@ -62,7 +64,7 @@ try {
   }
 
   # rozvržení: 2/3 kódy = vedle sebe (Nx1), 4 kódy = mřížka 2x2
-  $cols = if($cc4.Count -eq 4){2}else{$cc4.Count}; $rows = if($cc4.Count -eq 4){2}else{1}
+  $cols = if($cc4.Count -eq 4){2}else{$cc4.Count}; $rows = if($cc4.Count -eq 4){2}else{1}   # 1 kód = 1x1 (celý obrázek jako jedna buňka)
   $cellW = [int]($W/$cols); $cellH = [int]($H/$rows)
   $quads = @()
   for($r=0; $r -lt $rows; $r++){ for($c=0; $c -lt $cols; $c++){
