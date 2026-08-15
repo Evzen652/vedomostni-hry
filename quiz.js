@@ -53,12 +53,10 @@
   const ICO_BOLT  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#8a6fae" d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>`;
   const ICO_SND   = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#3d3229"/><path d="M16 9c1.6 1.5 1.6 4.5 0 6M18.7 6.5c3 3 3 8 0 11" stroke="#3d3229" stroke-width="2" stroke-linecap="round"/></svg>`;
   const ICO_SNDX  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#3d3229"/><path d="M17 10l5 4M22 10l-5 4" stroke="#3d3229" stroke-width="2" stroke-linecap="round"/></svg>`;
-  const ICO_GLOBE = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" fill="#2a7f7f"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" stroke="#fdf7ea" stroke-width="1.3"/></svg>`;
   const ICO_SPARK = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6z"/></svg>`;
   const ICO_TROPHY= `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M7 4h10v4a5 5 0 01-10 0V4z" fill="#d9a441" stroke="#b98b3e" stroke-width="1.4"/><path d="M7 6H4v1a3 3 0 003 3M17 6h3v1a3 3 0 01-3 3" stroke="#b98b3e" stroke-width="1.5"/><path d="M12 13v3M9.5 20h5M10.5 20l.4-4h2.2l.4 4" stroke="#b98b3e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   const ICO_FOLDER= `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M3 6h6l2 2h10v11H3z" fill="#d9a441" stroke="#b98b3e" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 10h18" stroke="#b98b3e" stroke-width="1.2"/></svg>`;
   const ICO_LINK  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M9 15l6-6M8 12l-2 2a3.5 3.5 0 005 5l2-2M16 12l2-2a3.5 3.5 0 00-5-5l-2 2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  const ICO_BOOK  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 5c3-1.2 6-1.2 8 0v15c-2-1.2-5-1.2-8 0zM20 5c-3-1.2-6-1.2-8 0v15c2-1.2 5-1.2 8 0z" fill="#fdf7ea" stroke="#2a7f7f" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
   const _MEDALCOL = ["#d9a441","#b9b3a6","#c08457"];
   function medalSvg(i){ const c=_MEDALCOL[i]; if(!c) return (i+1)+"."; return `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M8 3l3 6M16 3l-3 6" stroke="#e2725b" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="6.2" fill="${c}" stroke="#00000022" stroke-width="1"/><circle cx="12" cy="15" r="3" fill="#ffffff40"/></svg>`; }
   function handArrowSvg(flip){ return `<svg style="width:1.5em;height:.95em;vertical-align:-.15em;display:inline-block${flip?";transform:scaleX(-1)":""}" viewBox="0 0 40 24" fill="none"><path d="M2.5 13c9-3.4 21-2.6 29-2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M23.5 4.5c3.5 2.4 6.7 4.4 10 6.4-3.4 2.2-7 4-10.8 6.4" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
@@ -71,7 +69,7 @@
   const SHOW_SOURCE_LINK = false;
   const COLORS = ["#e2725b","#2a7f7f","#d9a441","#8a6fae","#7ba05b","#4e9e6f"];
   const SIDES = [{k:"dole",deg:0},{k:"nahoře",deg:180},{k:"vlevo",deg:90},{k:"vpravo",deg:270}];
-  const S = { mode:"solo", order:[], idx:0, band:"dospeli", bandTouched:false, kidsMax:2, kidsMaxTouched:false, answered:false,
+  const S = { mode:"solo", order:[], idx:0, band:"dospeli", bandTouched:false, answered:false,
               players:[], turn:0, round:1, totalRounds:5, qServed:0,
               voice:false, steal:false, rotate:"auto", manualRot:null,
               school:false, timer:0, saveId:null };
@@ -102,9 +100,6 @@
     } catch(e){}
   }
 
-  // ---- progres / mastery (sdílený s glóbem přes localStorage) ----
-  const PROGRESS_KEY = "hricka_progress";
-  const MASTERY_THRESHOLD = 5;
   // Všech 49 zemí z Globusu — appka je nabízí i bez otázek (prázdný fond, zobrazí se
   // jako "0 otázek" u sekcí), obsah se doplňuje postupně zemi po zemi.
   const COUNTRY_BY_CC = { ar:"Argentina", at:"Rakousko", au:"Austrálie", bg:"Bulharsko", br:"Brazílie", ca:"Kanada", ch:"Švýcarsko", cl:"Chile", cn:"Čína", cz:"Česko", de:"Německo", ec:"Ekvádor", eg:"Egypt", es:"Španělsko", fj:"Fidži", fr:"Francie", ga:"Gabon", gb:"Spojené království", gr:"Řecko", hu:"Maďarsko", id:"Indonésie", il:"Izrael", in:"Indie", it:"Itálie", jp:"Japonsko", ke:"Keňa", kp:"Severní Korea", kr:"Jižní Korea", mn:"Mongolsko", mx:"Mexiko", my:"Malajsie", nl:"Nizozemsko", nz:"Nový Zéland", pe:"Peru", ph:"Filipíny", pk:"Pákistán", pl:"Polsko", ro:"Rumunsko", ru:"Rusko", sa:"Saúdská Arábie", se:"Švédsko", sk:"Slovensko", th:"Thajsko", tr:"Turecko", tw:"Tchaj-wan", ua:"Ukrajina", us:"USA", vn:"Vietnam", za:"Jihoafrická republika" };
@@ -129,18 +124,6 @@
   // protože je to zároveň hodnota q.section u 1279 otázek napříč všemi zeměmi; přejmenovat
   // by se smělo jen tohle popisné jméno, ne samotný klíč, jinak dlaždice ztratí napojení na data.
   const SECTION_LABEL = { "Místa":"Co je kde" };
-  let sessionMastered = [];
-  function loadProg(){ try { const p=JSON.parse(localStorage.getItem(PROGRESS_KEY)||"{}"); return { correct:p.correct||{}, mastered:p.mastered||{} }; } catch(e){ return { correct:{}, mastered:{} }; } }
-  function saveProg(p){ try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(p)); } catch(e){} }
-  function recordCorrect(cc){
-    if(!cc) return false;
-    const p=loadProg(); p.correct[cc]=(p.correct[cc]||0)+1;
-    let newly=false;
-    if(!p.mastered[cc] && p.correct[cc]>=MASTERY_THRESHOLD){ p.mastered[cc]=true; newly=true; if(sessionMastered.indexOf(cc)<0) sessionMastered.push(cc); }
-    saveProg(p);
-    if(newly && window.HrickaGlobe){ try { window.HrickaGlobe.refresh(); } catch(e){} }
-    return newly;
-  }
 
   // ---- autosave / rozehrané výpravy / wake lock / časomíra (Život u stolu) ----
   const SAVES_KEY = "hricka_quiz_saves";
@@ -160,8 +143,7 @@
     return { mode:S.mode, school:!!S.school, band:S.band, cc:(S.sel&&S.sel.cc)||"ru", section:(S.sel&&S.sel.section)||null,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
       turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, rotate:S.rotate, timer:S.timer||0,
-      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score, streak:p.streak })),
-      sessionMastered:sessionMastered.slice() };
+      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score, streak:p.streak })) };
   }
   function autosave(){
     if(!S.saveId) return;
@@ -185,7 +167,7 @@
     S.idx=st.idx||0; S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
     S.voice=!!st.voice; S.steal=!!st.steal; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
     S.players=(st.players||[]).map(p=>({...p})); if(!S.players.length) S.players=[{name:"Ty",band:S.band,color:COLORS[0],score:0,streak:0,side:"dole"}];
-    sessionMastered=(st.sessionMastered||[]).slice(); S.saveId=id;
+    S.saveId=id;
     const shell=document.getElementById("qz-shell"); shell.classList.toggle("qz-school", S.school); shell.style.transform="";
     requestWake(); if(S.mode==="party") applyRotation();
     renderQuestion();
@@ -643,7 +625,7 @@
     startBtn.addEventListener("click", goNext);
   }
   function afterPick(){
-    S.bandTouched = false; S.kidsMaxTouched = false;   // nová volba tématu -> karty nemají ukazovat starou volbu jako už vybranou
+    S.bandTouched = false;   // nová volba tématu -> karty nemají ukazovat starou volbu jako už vybranou
     if(S.pickMode==="party") renderSetup();
     else if(S.pickMode==="school") renderSchoolStart();
     else renderStart();
@@ -676,7 +658,7 @@
     S.turn=0;
     const filtered = data.questions.filter(q => (q.difficulty||1) <= level);
     S.order = shuffle(filtered.length ? filtered : data.questions);
-    S.idx=0; sessionMastered=[]; newSave();
+    S.idx=0; newSave();
     const shell=document.getElementById("qz-shell"); shell.classList.add("qz-school"); shell.style.transform="";
     renderQuestion();
   }
@@ -693,22 +675,17 @@
       <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>
       <div style="width:min(100%,460px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
-        <div class="qz-tiles" style="grid-template-columns:repeat(2,1fr);max-width:100%">
-          ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
+        <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
+          ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti (8–11)", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
+          ${tileHtml({ic:"🧑‍🎓", img:"assets/band-starsi.jpg", t:"Puberťáci (12–16)", selectable:true, sel:S.bandTouched && S.band==="starsi", attr:`data-band="starsi"`})}
           ${tileHtml({ic:"🧑", img:"assets/band-dospeli.jpg", t:"Dospělí", selectable:true, sel:S.bandTouched && S.band==="dospeli", attr:`data-band="dospeli"`})}
         </div>
-        ${S.band==="deti"?`<div style="font-size:12px;color:var(--muted);margin:14px 0 6px">Věk:</div>
-        <div class="qz-tiles" style="grid-template-columns:repeat(2,1fr);max-width:100%">
-          ${tileHtml({ic:"🍭", img:"assets/age-6-9.jpg", t:"6–9 let", selectable:true, sel:S.kidsMaxTouched && S.kidsMax===1, attr:`data-kmax="1"`})}
-          ${tileHtml({ic:"📱", img:"assets/age-10-14.jpg", t:"10–14 let", selectable:true, sel:S.kidsMaxTouched && S.kidsMax>=2, attr:`data-kmax="2"`})}
-        </div>`:""}
       </div>
       <button class="qz-go" id="qz-start-go" style="margin-top:20px">Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
     body.querySelectorAll(".qz-tile[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; S.bandTouched=true; renderStart(); }));
-    body.querySelectorAll(".qz-tile[data-kmax]").forEach(ch => ch.addEventListener("click", () => { S.kidsMax=+ch.dataset.kmax; S.kidsMaxTouched=true; renderStart(); }));
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
 
@@ -717,8 +694,10 @@
     S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, streak:0, side:"dole" }];
     S.turn=0;
     let pool = data.questions;
-    if(S.band==="deti"){ const f=pool.filter(q=>(q.difficulty||1)<=S.kidsMax); if(f.length) pool=f; }
-    S.order=shuffle(pool); S.idx=0; sessionMastered=[]; S.school=false; newSave();
+    // tři pásma: „děti" jen vlastní jednoduchý fond (q.kids), „puberťáci" difficulty ≤2 (běžné trivia), „dospělí" vše
+    if(S.band==="deti"){ const f=pool.filter(q=>q.kids); if(f.length) pool=f; }
+    else if(S.band==="starsi"){ const f=pool.filter(q=>!q.kids && (q.difficulty||1)<=2); if(f.length) pool=f; }
+    S.order=shuffle(pool); S.idx=0; S.school=false; newSave();
     const shg=document.getElementById("qz-shell"); shg.classList.remove("qz-school"); shg.style.transform="";
     renderQuestion();
   }
@@ -741,6 +720,7 @@
       <input class="qz-pname-in" placeholder="jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off">
       <span class="qz-bandtoggle">
         <button class="qz-bandbtn deti${p.band==="deti"?" on":""}" data-band="deti">děti</button>
+        <button class="qz-bandbtn starsi${p.band==="starsi"?" on":""}" data-band="starsi">puberťák</button>
         <button class="qz-bandbtn dospeli${p.band==="dospeli"?" on":""}" data-band="dospeli">dospělí</button>
       </span>
       ${S.players.length>2?`<button class="qz-prem" data-rem="${i}" title="odebrat">✕</button>`:""}
@@ -818,7 +798,7 @@
   }
 
   function startParty(){
-    S.mode="party"; S.order=shuffle(data.questions); S.qServed=0; S.turn=0; S.round=1; S.manualRot=null; sessionMastered=[]; S.school=false; newSave();
+    S.mode="party"; S.order=shuffle(data.questions); S.qServed=0; S.turn=0; S.round=1; S.manualRot=null; S.school=false; newSave();
     document.getElementById("qz-shell").classList.remove("qz-school");
     S.players.forEach(p=>{ p.score=0; p.streak=0; });
     applyRotation();
@@ -830,7 +810,7 @@
     return `<div class="qz-picframe" id="qz-pic">
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
       <div class="qz-pic-fallback" id="qz-pic-fb">${flagStamp(q.cc,"qz-flagbig")}<span class="qz-pic-fb-text"><span class="country">${country}</span><span class="sec">${section}</span></span></div>
-      <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-orbit"></span><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
+      <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
     </div>`;
   }
   // odhalení fotky u odpovědi — fotka je odměna, ať ji není nutné hledat scrollem
@@ -892,7 +872,7 @@
       ${topHtml(n,total)}
       <div class="qz-box" id="qz-box">
         <div class="qz-timerbar" id="qz-timerbar" style="display:none"><div></div></div>
-        <div class="qz-meta">${esc(COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff" title="obtížnost: ${DIFF_LABEL[q.difficulty||1]||"těžká"}">${ICO_STAR_DIFF.repeat(q.difficulty||1)}<i>${DIFF_LABEL[q.difficulty||1]||"těžká"}</i></span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
+        <div class="qz-meta">${esc(q.country||COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff" title="obtížnost: ${DIFF_LABEL[q.difficulty||1]||"těžká"}">${ICO_STAR_DIFF.repeat(q.difficulty||1)}<i>${DIFF_LABEL[q.difficulty||1]||"těžká"}</i></span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
         <div class="qz-q">${esc(q.question)}</div>
         ${ansHtml}
       </div>
@@ -910,7 +890,7 @@
     return `<div class="qz-frow">
       <div class="qz-expl">${esc(q.explanation||"")} ${(SHOW_SOURCE_LINK && q.source_url)?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
       <div class="qz-fbtns">
-        ${q.source_card?`<button class="qz-more" id="qz-more">${ICO_BOOK} ${esc(moreLabel(q))}</button>`:""}
+        ${q.source_card?`<button class="qz-more" id="qz-more">${esc(moreLabel(q))} <span class="qz-more-ico">💡</span></button>`:""}
         <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
       </div>
     </div>`;
@@ -931,24 +911,21 @@
     else if(q.golden_wrong!=null && String(choice)===String(q.golden_wrong)){ gold=true; gained=Math.round(base/2); P.streak=0; quipText=q.golden_quip; }
     else { P.streak=0; const dq=q.distractor_quips&&q.distractor_quips[choice]; quipText = dq?resolveQuip(dq,b):resolveQuip(q.quip_wrong,b); }
     P.score+=gained; updateScorePill(S.turn);
-    const masteredNow = correct ? recordCorrect(q.cc) : false;
     // bublina hostitele = krátký verdikt; vtipná hláška žije v panelu HLÁŠKA (ať se netočí dvakrát)
     say(gold ? "Zlatá odpověď!" : (correct ? "Správně!" : "Tentokrát vedle.")); if(S.voice) speakTTS(quipText);
-    if(masteredNow && S.voice) speakTTS((COUNTRY_BY_CC[q.cc]||"Země")+" je zvládnutá! Rozsvítila se na glóbu.");
     revealPic();
     if(gold){ const gf=document.createElement("div"); gf.className="qz-goldflash"; document.getElementById("qz-shell").appendChild(gf); setTimeout(()=>gf.remove(),950); }
     const box=body.querySelector("#qz-box");
     const allowSteal = S.mode==="party" && S.steal && !correct && !gold && S.players.length>1;
     box.innerHTML = `
-      <div class="qz-ans ${correct?"one":"two"}">
-        <div class="qz-a ok locked">${esc(q.answer)}<small>Správná odpověď</small></div>
-        ${correct?"":`<div class="qz-a bad locked">${esc(choice)}<small>${S.mode==="party"?esc(P.name):"TVŮJ TIP"}</small></div>`}
+      <div class="qz-result${correct?" solo":""}">
+        <div class="half ok"><span class="lbl">Správná odpověď</span>${esc(q.answer)}</div>
+        ${correct?"":`<div class="half bad"><span class="lbl">${S.mode==="party"?esc(P.name):"Tvoje odpověď"}</span>${esc(choice)}</div>`}
       </div>
-      <div class="qz-hlaska${gold?" gold":""}">
+      <div class="qz-quipbox">
         <div class="qz-ht">„${esc(quipText||"")}"</div>
         ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
       </div>
-      ${masteredNow?`<div class="qz-masternote">${ICO_GLOBE} <b>${esc(COUNTRY_BY_CC[q.cc]||q.country||"Země")}</b> zvládnuto — rozsvítilo se na glóbu! ${ICO_SPARK}</div>`:""}
       ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`;
     if(allowSteal) wireSteal(q, choice); else wireFrow(q);
   }
@@ -968,7 +945,7 @@
     if(S.voice) speakTTS(stealer.name+", chceš to sebrat?");
     box.querySelectorAll("#qz-steal .qz-a").forEach(btn => btn.addEventListener("click", () => {
       const correct=String(btn.childNodes[0].textContent)===String(q.answer), g=(q.difficulty||1)*100;
-      if(correct){ S.players[si].score+=g; updateScorePill(si); recordCorrect(q.cc); say(stealer.name+" to sebral! +"+g); if(S.voice) speakTTS(stealer.name+" sebral body!"); }
+      if(correct){ S.players[si].score+=g; updateScorePill(si); say(stealer.name+" to sebral! +"+g); if(S.voice) speakTTS(stealer.name+" sebral body!"); }
       else { say(stealer.name+" taky mimo."); if(S.voice) speakTTS(stealer.name+" taky mimo."); }
       finishSteal(q);
     }));
@@ -1034,7 +1011,6 @@
       <h2>${ICO_TROPHY} ${esc(winner.name)} vítězí!</h2>
       <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}"</div></div>
       <div class="qz-standings">${rows}</div>
-      ${sessionMastered.length?`<div class="qz-masternote">${ICO_GLOBE} Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ${ICO_SPARK}</div>`:""}
       <div class="qz-endrow"><button class="qz-go" id="qz-again">Odveta ${handArrowSvg(false)}</button><button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-again").addEventListener("click", startParty);
@@ -1051,7 +1027,6 @@
       <h2>Výprava dokončena!</h2>
       <div class="qz-endscore">${S.school?"Třída získala":"Získal(a) jsi"} ${score} ${plur(score,"bod","body","bodů")}</div>
       <p style="color:var(--muted)">z ${S.order.length} otázek · teoretické maximum ${max} bodů</p>
-      ${sessionMastered.length?`<div class="qz-masternote">${ICO_GLOBE} Rozsvítili jste na glóbu: <b>${sessionMastered.map(cc=>esc(COUNTRY_BY_CC[cc]||cc)).join(", ")}</b> ${ICO_SPARK}</div>`:""}
       <div class="qz-endrow">
         <button class="qz-go" id="qz-again">Hrát znovu ${handArrowSvg(false)}</button>
         <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>

@@ -71,7 +71,7 @@
 /* ---- play ---- */
 .qz-play { position: relative; padding-bottom: 16px; }
 .qz-top { display: flex; gap: 8px; padding: 58px 16px 0; position: relative; z-index: 2; align-items: center; flex-wrap: wrap; }
-.qz-progress { font-family: 'Nunito', sans-serif; font-size: 13px; color: var(--muted); }
+.qz-progress { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; color: var(--ink); }
 .qz-scorepill { margin-left: auto; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px;
   padding: 6px 14px; font-family: 'Nunito', sans-serif; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; display: flex; gap: 8px; align-items: center; }
 .qz-scorepill b { font-size: 17px; }
@@ -107,15 +107,11 @@
 .qz-globe-stage::before { content: ""; position: absolute; width: 128%; height: 128%; border-radius: 50%; z-index: 0;
   background: radial-gradient(circle, rgba(126,206,224,.55) 0%, rgba(126,206,224,.18) 55%, rgba(126,206,224,0) 72%);
   filter: blur(4px); animation: qz-breathe 5.5s ease-in-out infinite; }
-/* pomalu rotující tečkovaný orbit */
-.qz-orbit { position: absolute; width: 110%; height: 110%; border-radius: 50%; z-index: 0;
-  border: 1.5px dashed rgba(74,107,100,.4); animation: qz-spin 46s linear infinite; }
 /* pulzující značka „tady jsi" na zemi (glóbus je natočen zemí k pozorovateli) */
 .qz-beacon { position: absolute; z-index: 7; width: 13px; height: 13px; border-radius: 50%; background: var(--coral);
   box-shadow: 0 0 0 3px #fffdf6, 0 2px 6px rgba(0,0,0,.35); }
 .qz-beacon::after { content: ""; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--coral);
   animation: qz-ping 1.9s ease-out infinite; }
-@keyframes qz-spin { to { transform: rotate(360deg); } }
 @keyframes qz-ping { 0% { transform: scale(1); opacity: .85; } 100% { transform: scale(2.8); opacity: 0; } }
 @keyframes qz-breathe { 0%,100% { opacity: .7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
 .qz-globecap { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center;
@@ -148,7 +144,11 @@
 .qz-ans.two { grid-template-columns: 1fr 1fr; }
 /* uhodnutá odpověď stojí sama — ať zabere celou šířku karty, ne půlku s dírou vedle */
 .qz-ans.one { grid-template-columns: 1fr; }
+/* min-height + vertikální centrování: krátká odpověď ("Pět") a dlouhá, co se zalomí na
+   dva řádky ("Byla postavena teprve ve 20. století"), musí dát tlačítku stejnou výšku —
+   jinak se karta otázku od otázky nekonzistentně natahovala a zmenšovala. */
 .qz-a { background: #fff; border: 1.8px solid #dccdb0; border-radius: 14px; text-align: center; padding: 14px 8px 12px;
+  min-height: 64px; display: flex; align-items: center; justify-content: center;
   font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; cursor: pointer;
   transition: transform .1s, box-shadow .1s; color: var(--ink); position: relative; overflow: visible; }
 .qz-a:hover:not(.locked) { transform: translateY(-2px); box-shadow: 0 5px 0 #e3d5b8; }
@@ -176,16 +176,37 @@
 .qz-hl.points { text-transform: none; letter-spacing: .02em; font-size: 12.5px;
   margin: 8px 0 0; }
 .qz-ht { font-family: 'Nunito', sans-serif; font-size: clamp(16px, 2.1vw, 20px); line-height: 1.45; font-weight: 560; }
-.qz-frow { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-.qz-expl { font-size: 12.5px; color: var(--muted); flex: 1; min-width: 200px; }
+/* citace po odpovědi: vědomě bez rámečku/stínu (starý .qz-hlaska box na kartě po odpovědi
+   působil rozbitě — moc oddělených boxů). Jen seskupuje qz-ht + qz-hl.points, aby jim
+   fungovalo vzájemné odsazení bez kolize s .qz-box gapem. Timeout/vyhlášení dál používají
+   původní .qz-hlaska box beze změny. */
+.qz-quipbox { }
+
+/* výsledek odpovědi: JEDEN box napůl zelený/červený, ne dva boxy vedle sebe — a bez stínu.
+   .solo (odpověděl(a) správně) skryje polovinu s tipem, radius drží .qz-result přes overflow:hidden. */
+.qz-result { display: flex; border: 1.8px solid #dccdb0; border-radius: 14px; overflow: hidden; }
+.qz-result .half { flex: 1; padding: 12px 14px; font-family: 'Nunito', sans-serif; font-weight: 650; font-size: 15px; }
+/* malý popisek, ne VELKÁ PÍSMENA — ta appka na týhle kartě už jednou zkusila a působilo to křiklavě */
+.qz-result .half .lbl { display: block; font-size: 11px; font-weight: 600; opacity: .7; margin-bottom: 2px; }
+.qz-result .half.ok { background: #eef6ee; color: #2f6b46; }
+.qz-result .half.bad { background: #fbeeec; color: #9c4636; opacity: .85; }
+.qz-result.solo .half.bad { display: none; }
+
+/* Text a tlačítka pod sebou, ne vedle sebe — v užší kartě (poměr 3:2 s obrázkem)
+   by se vysvětlení vedle tlačítek mačkalo do úzkého, zalamovaného sloupce. */
+.qz-frow { display: flex; flex-direction: column; gap: 12px; }
+.qz-expl { font-size: 12.5px; color: var(--muted); }
 .qz-expl a { color: var(--teal); text-decoration: none; font-weight: 600; }
 /* obě tlačítka stejně široká — flex: 1 1 0 je rozdělí napůl bez ohledu na délku textu */
-.qz-fbtns { display: flex; gap: 8px; align-items: stretch; flex: 1; min-width: 240px; }
+.qz-fbtns { display: flex; gap: 8px; align-items: stretch; width: 100%; }
 /* box-sizing: bez něj by se rámeček „Více" přičetl k šířce a tlačítka by se lišila o 3 px.
    min-width: 0: výchozí `auto` nedovolí zúžit pod šířku textu, takže by delší popisek
    („Více o časových pásmech Ruska") ukradl místo sousedovi a půlky by nebyly stejné. */
 .qz-fbtns > button { flex: 1 1 0; min-width: 0; box-sizing: border-box; text-align: center;
   display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+/* žárovka je samostatná flex položka vedle textu, takže se centruje na výšku
+   celého popisku i když se zalomí na dva řádky — ne jen na první řádek */
+.qz-more-ico { flex-shrink: 0; font-size: 15px; line-height: 1; }
 .qz-more { background: none; border: 1.5px solid var(--teal); color: var(--teal); border-radius: 13px; padding: 11px 16px;
   font-size: 14px; font-weight: 700; cursor: pointer; font-family: 'Nunito', sans-serif; }
 /* průhledný rámeček stejné tloušťky jako u „Více" — jinak se obě tlačítka liší o jeho šířku */
@@ -347,6 +368,7 @@
 .qz-bandtoggle { display: flex; border-radius: 12px; overflow: hidden; border: 1.4px solid #dccdb0; flex-shrink: 0; }
 .qz-bandbtn { font-size: 11px; color: var(--muted); background: #fff; border: none; padding: 5px 10px; cursor: pointer; font-family: inherit; }
 .qz-bandbtn.deti.on { background: var(--leaf); color: #fffdf6; }
+.qz-bandbtn.starsi.on { background: var(--ochre); color: #fffdf6; }
 .qz-bandbtn.dospeli.on { background: var(--teal); color: #fffdf6; }
 .qz-prem { background: none; border: none; color: var(--bad); cursor: pointer; font-size: 16px; padding: 2px 6px; }
 .qz-addp { color: var(--teal); font-size: 13px; font-weight: 600; cursor: pointer; background: none; border: none; padding: 6px 0 0; font-family: inherit; }
@@ -388,8 +410,6 @@
 .qz-rank { font-size: 18px; width: 30px; text-align: center; }
 .qz-standname { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; }
 .qz-standscore { margin-left: auto; font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 700; }
-.qz-masternote { background: linear-gradient(135deg, #fff2b0, #ffe07a); border: 2px solid #e6b800; border-radius: 12px;
-  padding: 9px 14px; font-size: 13.5px; color: #6b5300; box-shadow: 0 3px 0 #c79a00; text-align: center; }
 
 /* režim Škola / projektor — velké písmo na plátno */
 .qz-school .qz-q { font-size: clamp(26px, 4vw, 40px); line-height: 1.25; }
@@ -450,13 +470,16 @@
   .qz-play > .qz-top { grid-area: top; padding-left: 0; padding-right: 0; }
   .qz-play > .qz-box { grid-area: box; margin: 68px 0 0; }
   /* width: 100% je nutné — při align-items: stretch je výška definitivní a aspect-ratio
-     by z ní jinak dopočítalo šířku (a rám by přetekl ven z panelu). Takhle drží 16:9
-     jen jako minimální výšku řádku a šířku bere ze sloupce. */
+     by z ní jinak dopočítalo šířku (a rám by přetekl ven z panelu). Takhle drží poměr
+     jen jako minimální výšku řádku a šířku bere ze sloupce. 4:5 (ne 16:9 = poměr fotek)
+     — na výšku vyšší rám na přání 2026-08-14; fotka je uvnitř ořezaná přes object-fit:cover. */
   .qz-play > .qz-picframe,
-  .qz-play > .qz-picframe.revealed { grid-area: pic; margin: 68px 0 0; width: 100%; height: auto; aspect-ratio: 16 / 9; }
-  /* v užším sloupci jsou 2×2 odpovědi čitelnější a líp se do nich trefuje */
-  .qz-play .qz-ans { grid-template-columns: 1fr 1fr; }
-  .qz-play .qz-ans.one { grid-template-columns: 1fr; }
+  .qz-play > .qz-picframe.revealed { grid-area: pic; margin: 68px 0 0; width: 100%; height: auto; aspect-ratio: 4 / 5; }
+  /* odpovědi pod sebou, ne 2×2 (přání 2026-08-14) — větší mezery mezi nimi a text
+     zarovnaný doleva. Odsazení musí jít přes padding, ne mezery v textu — mezery v
+     obsahu odsadí jen první řádek, zalomený druhý řádek pak začínal víc vlevo (bug). */
+  .qz-play .qz-ans { grid-template-columns: 1fr; gap: 20px; }
+  .qz-play .qz-ans .qz-a { text-align: left; justify-content: flex-start; padding-left: 32px; }
 }
 
 /* ---- přístupnost ----
