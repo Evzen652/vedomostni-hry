@@ -1446,5 +1446,173 @@
   "explanation": "Od roku 1870, kdy italská vojska obsadila Řím, se papeži považovali za dobrovolné vězně Vatikánu a odmítali uznat Itálii. Lateránské smlouvy z roku 1929 tento konflikt ukončily a stvořily Vatikánský městský stát, který dnes existuje.",
   "about": "vzniku Vatikánu jako suverénního státu",
   "image_prompt": "A painterly watercolor illustration of St. Peter's Basilica and the Vatican walls seen from above, the tiny independent state visible within Rome, vintage travel journal style"
+ },
+ {
+  "id": "it-k-vesuv",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje ohnivá hora u Neapole, která kdysi dávno zasypala popelem celé město?",
+  "answer": "Vesuv",
+  "distractors": [
+   "Etna",
+   "Stromboli",
+   "Fudžisan"
+  ],
+  "quip_correct": "Tys to věděl! Sopku, co dokázala zasypat celé město, byste na mapě čekali spíš daleko od domů — a přece leží skoro v centru Neapole, jen si teď dává pauzu.",
+  "quip_wrong": "Skoro! Etna i Stromboli chrlí oheň taky, ale tahle konkrétní hora u Neapole se jmenuje jinak.",
+  "explanation": "Vesuv je jediná aktivní sopka na evropské pevnině a dnes kolem ní žijí přes tři miliony lidí — nejhustěji obydlené sopečné okolí na světě.",
+  "about": "sopce Vesuv",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a single cone-shaped volcano with a thin smoke plume overlooking a bay"
+ },
+ {
+  "id": "it-t-vatikan-nejmensi",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak si vede Vatikán, ležící přímo uvnitř Říma, mezi státy světa podle rozlohy?",
+  "answer": "Je to nejmenší stát světa",
+  "distractors": [
+   "Je průměrně velký evropský stát",
+   "Je druhý nejmenší po Monaku",
+   "Je největší městský stát světa"
+  ],
+  "quip_correct": "Celý stát bys pěšky obešel za půl hodiny — a přesto má vlastní poštu, vlajku i hymnu.",
+  "quip_wrong": "Monako je fakt drobné, ale titul nejmenšího mu patří jinam — Vatikán je ještě o kousek skromnější.",
+  "explanation": "Vatikán má rozlohu necelých 0,49 km² a žije v něm jen kolem 800 obyvatel — méně lidí, než kolik jich bydlí v jednom pražském paneláku.",
+  "about": "Vatikánu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a tiny walled city state with a great dome nestled among rooftops"
+ },
+ {
+  "id": "it-t-sixtinska-kaple",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Umění",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Kterou vatikánskou kapli pokryl Michelangelo obrovskou stropní freskou, na které pracoval čtyři roky?",
+  "answer": "Sixtinskou kapli",
+  "distractors": [
+   "Baptisterium ve Florencii",
+   "Katedrálu v Miláně",
+   "Baziliku svatého Petra"
+  ],
+  "quip_correct": "Čtyři roky se zakloněnou hlavou u stropu — a legenda o tom, že ležel na zádech, se drží líp než malba samotná.",
+  "quip_wrong": "Baptisterium má slavné bronzové dveře a Milán mramorovou katedrálu — ale strop plný postav visí jinde, ve Vatikánu.",
+  "explanation": "Podle rozšířené legendy Michelangelo ležel roky na zádech, ve skutečnosti ale stál na vlastní konstrukci a hlavu měl zakloněnou dozadu — pro krční páteř to bylo ještě horší.",
+  "about": "Sixtinské kapli",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a vast painted ceiling fresco glimpsed from below with wooden scaffolding beams"
+ },
+ {
+  "id": "it-a-machiavelli",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Lidé",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Odkud pochází přídavné jméno „machiavelistický“, používané dnes v desítkách jazyků pro bezohlednou vypočítavost?",
+  "answer": "Z politického spisu Vladař italského diplomata Niccolòa Machiavelliho",
+  "distractors": [
+   "Z přezdívky renesančního papeže proslulého úklady",
+   "Z kódového jména mafiánského bosse v 19. století",
+   "Z divadelní postavy vytvořené shakespearovským souputníkem"
+  ],
+  "quip_correct": "Slovo, které dnes uráží politiky po celém světě, vzniklo z příručky pro renesančního knížete — a Machiavelli sám byl spíš vyhozený úředník shánějící si zpátky práci než padouch z filmu.",
+  "quip_wrong": "Papežské úklady, mafiánský kód, shakespearovská postava? Realita je fádnější a byrokratičtější — a přesto nebezpečnější.",
+  "explanation": "Machiavelli napsal Vladaře po vyhnání z florentské politiky ve snaze získat zpět místo u dvora Medicejů — ironií je, že sám ve skutečnosti obdivoval republikánské zřízení víc než tyranii, o které psal.",
+  "about": "Niccolòu Machiavellim a slovu machiavelistický",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an antique quill pen and leather-bound book on a wooden desk with a candle, a Renaissance skyline faint through a window"
+ },
+ {
+  "id": "it-k-fontana-di-trevi",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co lidé házejí do římské fontány di Trevi, aby se tam prý jednou vrátili?",
+  "answer": "Minci",
+  "distractors": [
+   "Klíč",
+   "Kamínek",
+   "Knoflík"
+  ],
+  "quip_correct": "Tys to věděl! Do vody tam denně skončí tisíce mincí — město je pravidelně vybírá a peníze věnuje na jídlo pro chudé rodiny.",
+  "quip_wrong": "Skoro! Klíč ani kamínek se do fontány nehodí — lidé tam házejí drobné mince.",
+  "explanation": "Tradici hodit minci přes pravé rameno proslavil až americký film z roku 1954 nazvaný Three Coins in the Fountain.",
+  "about": "fontáně di Trevi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a coin sinking through clear fountain water past baroque stone carvings"
+ },
+ {
+  "id": "it-t-romulus-remus",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Podle pověsti odkojila zakladatele Říma Romula a Rema jako miminka jaké zvíře?",
+  "answer": "Vlčice",
+  "distractors": [
+   "Medvědice",
+   "Kozy",
+   "Orlice"
+  ],
+  "quip_correct": "Vlčí mléko k snídani, obědu i večeři. Řím si od začátku pěstoval pověst města, které nikdy nemělo na výběr tu snadnou cestu.",
+  "quip_wrong": "Medvědice, kozy nebo orlice? Zvíře, co zachránilo dvojčata budoucího Říma, mělo ostřejší zuby.",
+  "explanation": "Podle legendy se bratři později pohádali o to, čí jméno bude nové město nést — spor Romulus vyhrál tak, že vlastního bratra zabil.",
+  "about": "založení Říma",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a she-wolf nursing two human infants beneath a fig tree on a hillside"
+ },
+ {
+  "id": "it-t-valentino-rossi",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Sport",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Ve kterém motoristickém sportu proslul Ital Valentino Rossi, přezdívaný The Doctor?",
+  "answer": "V MotoGP (silniční motocyklové závody)",
+  "distractors": [
+   "Ve Formuli 1",
+   "V rallye",
+   "V cyklistice"
+  ],
+  "quip_correct": "Devět mistrovských titulů a přezdívka Doctor — Rossi diagnostikoval trať rychleji, než soupeři stihli nastartovat.",
+  "quip_wrong": "Formule 1, rallye nebo cyklistika? Rossiho doména má dvě kola, ne čtyři, a vydělala mu úplně jinou přezdívku.",
+  "explanation": "Rossi závodil ve světovém šampionátu motocyklů 26 sezón a při odchodu na odpočinek v roce 2021 byl teprve druhým jezdcem historie, který startoval v grand prix ve čtyřech různých dekádách.",
+  "about": "Valentinu Rossim",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a single motorcycle racer leaning into a curve on a sunlit track"
+ },
+ {
+  "id": "it-a-jazyk-pri-sjednoceni",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Kolik obyvatel nově sjednocené Itálie v roce 1861 podle odhadů jazykovědců běžně mluvilo spisovnou italštinou?",
+  "answer": "Jen zlomek populace, odhadem kolem 2,5 procenta",
+  "distractors": [
+   "Téměř všichni, přes 90 %",
+   "Asi polovina obyvatel",
+   "Kolem 25 % obyvatel"
+  ],
+  "quip_correct": "Stát se narodil dřív než jeho vlastní jazyk. Na italštinu čekal zbytek Itálie ještě sto let — a dočkal se hlavně díky televizi.",
+  "quip_wrong": "Devadesát, padesát nebo pětadvacet procent? Sněte si o jednotném národě — realita roku 1861 byla o dost skromnější.",
+  "explanation": "Sjednocená Itálie vznikla politicky roku 1861, ale spisovnou italštinu tehdy ovládala jen hrstka vzdělanců; skutečně jazyk sjednotilo až celostátní televizní vysílání RAI od 50. let 20. století.",
+  "about": "vzniku italštiny jako národního jazyka",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an old wooden radio set glowing warmly on a shelf, faint map of Italy behind it"
  }
 ]

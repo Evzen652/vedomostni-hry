@@ -672,5 +672,215 @@
   "quip_wrong": "Hmm, ne! Peleș je nádherný zámek, ale Drákulovým hradem se říká jinému.",
   "explanation": "Hrad Bran byl postaven ve 14. století jako pohraniční pevnost. Spisovatel Bram Stoker Rumunsko nikdy nenavštívil, ale gotický vzhled hradu dokonale pasuje k jeho románovému Draculovi.",
   "about": "hradu Bran"
+ },
+ {
+  "id": "ro-k-peles",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje pohádkový horský zámek s věžičkami, kde se poprvé v Evropě rozsvítila elektrická žárovka na zámku?",
+  "answer": "Zámek Peleš",
+  "distractors": [
+   "Hrad Bran",
+   "Hrad Hunedoara",
+   "Palác parlamentu"
+  ],
+  "quip_correct": "Tys to věděl! Král si nechal posvítit elektřinou dřív než spousta velkoměst — na zámku v horách se svítilo jako o Vánocích každý den.",
+  "quip_wrong": "Skoro! Bran zná každý kvůli upírům, ale elektřinu jako první měl jiný zámek.",
+  "explanation": "Zámek Peleš si nechal postavit král Karel I. jako letní sídlo koncem 19. století, stavba trvala přes deset let a zvali na ni řemeslníky z celé Evropy.",
+  "about": "zámku Peleš",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- fairy-tale mountain castle with turrets nestled among Carpathian pine forests, warm glowing windows"
+ },
+ {
+  "id": "ro-k-drevene-kostely",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím jsou výjimečné vysoké dřevěné kostely v rumunském kraji Maramureš?",
+  "answer": "Jsou postavené celé ze dřeva bez jediného hřebíku a mají tenké věže mířící vysoko k obloze",
+  "distractors": [
+   "Jsou postavené z ledu a v létě tají",
+   "Nemají žádnou střechu",
+   "Jsou celé pod zemí"
+  ],
+  "quip_correct": "Tys to věděl! Tesaři je slepili jen ze dřeva a důmyslných spojů — bez jediného hřebíku, a přesto věž míří k nebi jako jehla.",
+  "quip_wrong": "Ne tak úplně! Kostely stojí pevně na zemi z pořádného dřeva, žádný led ani díra v zemi.",
+  "explanation": "Dřevěné kostely Maramureše jsou na seznamu UNESCO, jedna z jejich věží v obci Șurdești měří přes padesát metrů, což je nejvyšší dřevěná stavba v Evropě.",
+  "about": "dřevěných kostelích Maramureše",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- tall wooden church with a steep shingled spire in a green Carpathian village, misty morning"
+ },
+ {
+  "id": "ro-t-nastase",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím se stal tenista Ilie Năstase v roce 1973 jako úplně první hráč v historii?",
+  "answer": "Světovou jedničkou žebříčku ATP",
+  "distractors": [
+   "Wimbledonským šampionem",
+   "Olympijským vítězem v tenise",
+   "Kapitánem Davis Cupu"
+  ],
+  "quip_correct": "Rok 1973, čerstvě spuštěný žebříček ATP a na jeho vrcholu Rumun. Někdo prostě musel být první.",
+  "quip_wrong": "Trofej sice zvučná, ale žebříčkovou jedničku má na kontě jiný titul.",
+  "explanation": "Ilie Năstase byl dvojnásobný grandslamový šampion (US Open 1972, French Open 1973) a pro temperament na kurtu dostal přezdívku Nasty.",
+  "about": "Ilie Năstasovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- vintage tennis player mid-serve on a clay court, 1970s style, warm afternoon light"
+ },
+ {
+  "id": "ro-t-transfagarasan",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak přezdívala pořadu Top Gear horskou silnici Transfăgărășan vinoucí se rumunskými Karpatami?",
+  "answer": "Nejlepší silnice na světě",
+  "distractors": [
+   "Cesta do pekla",
+   "Silnice tisíce zatáček",
+   "Dálnice bohů"
+  ],
+  "quip_correct": "Nejlepší silnice světa, verdikt anglických moderátorů, co objeli půl planety — rumunské serpentiny je prostě dostaly.",
+  "quip_wrong": "Zvučný titul to je, jen ho vysloužila jiná silnice.",
+  "explanation": "Transfăgărășan nechal postavit komunistický diktátor Nicolae Ceaușescu v 70. letech jako strategickou vojenskou cestu přes hory, dnes má přes 80 serpentin na necelých 90 kilometrech.",
+  "about": "silnici Transfăgărășan",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- dramatic hairpin mountain road winding through green Carpathian peaks, aerial view, no cars"
+ },
+ {
+  "id": "ro-t-dacia",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Kultura & tradice",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Podle čeho pojmenoval francouzský Renault svou rumunskou automobilku Dacia?",
+  "answer": "Podle starověké římské provincie na území dnešního Rumunska",
+  "distractors": [
+   "Podle řeky Dunaj",
+   "Podle zakladatele firmy",
+   "Podle hory Moldoveanu"
+  ],
+  "quip_correct": "Starověká provincie na blatníku levného kombíku — historie a rozpočtová motoristika nakonec vyšly skvěle spolu.",
+  "quip_wrong": "Jméno má historický základ, jen úplně jinde v mapě nebo v rodokmenu firmy.",
+  "explanation": "Automobilka Dacia vznikla v Rumunsku už v roce 1966, dnes pod francouzským Renaultem vyrábí jedny z nejprodávanějších levných aut v Evropě.",
+  "about": "automobilce Dacia",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- simple modern car parked on a countryside road, ochre fields behind, no logos"
+ },
+ {
+  "id": "ro-t-sighisoara",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím je výjimečné historické centrum Sighișoary, rodiště Vlada Țepeše?",
+  "answer": "Je to jedna z posledních obydlených středověkých pevností v Evropě",
+  "distractors": [
+   "Je celé postavené pod zemí",
+   "Je to jediné rumunské město bez kostela",
+   "Vzniklo teprve ve 20. století"
+  ],
+  "quip_correct": "Lidé v Sighișoaře pořád bydlí za hradbami postavenými saskými řemeslníky — středověk tu nikdy pořádně neskončil.",
+  "quip_wrong": "Pevnost je výjimečná, jen z jiného důvodu, než sis vybral.",
+  "explanation": "Sighișoaru založili sasští kolonisté ve 12. století, dnes je na seznamu UNESCO a její barevné domy pořád obývají místní rodiny.",
+  "about": "Sighișoaře",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- colorful medieval fortified town with a clock tower on a hill, cobblestone streets"
+ },
+ {
+  "id": "ro-t-steaua",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Čeho dosáhl fotbalový klub Steaua Bukurešť v roce 1986 jako první východoevropský tým?",
+  "answer": "Vyhrál Pohár mistrů evropských zemí (dnešní Ligu mistrů)",
+  "distractors": [
+   "Vyhrál mistrovství světa klubů",
+   "Postoupil do olympijského finále",
+   "Získal Zlatý míč pro celý tým"
+  ],
+  "quip_correct": "Finále bez gólu, penalty, a najednou pohár míří za železnou oponu — Evropa se musela přeučit, kdo umí hrát fotbal.",
+  "quip_wrong": "Trofej to byla evropská, jen jiná soutěž.",
+  "explanation": "Steaua porazila ve finále Barcelonu na penalty 2:0, brankář Helmuth Duckadam tehdy chytil všechny čtyři kopy soupeře a zapsal se do Guinnessovy knihy rekordů.",
+  "about": "Steaue Bukurešť",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- vintage football stadium at night under floodlights, empty pitch, 1980s atmosphere"
+ },
+ {
+  "id": "ro-a-rosia-montana",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč se staré římské důlní štoly u Roșia Montany staly roku 2021 raději památkou UNESCO, než aby se v nich těžilo dál?",
+  "answer": "Aby se zabránilo plánované moderní těžbě zlata kyanidovou metodou",
+  "distractors": [
+   "Protože se v nich už žádné zlato nenašlo",
+   "Protože je chtěli přestavět na muzeum kyanidu",
+   "Protože je zatopila podzemní voda"
+  ],
+  "quip_correct": "Antické štoly, kde otroci rýpali zlato krumpáčem, dnes chrání krajinu před firmou s kyanidem a bagry — ochrana památek jako právní zbraň proti těžařům.",
+  "quip_wrong": "Zápis na UNESCO měl jiný důvod, i když s těžbou pořád souvisí.",
+  "explanation": "Protesty proti kanadskému těžařskému projektu trvaly přes deset let a zápis na UNESCO v roce 2021 velkotěžbu právně znemožnil.",
+  "about": "Roșia Montaně",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- ancient Roman-era mining galleries carved into a mountainside, weathered stone, golden light"
+ },
+ {
+  "id": "ro-a-emigrace",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo s rumunskou populací v desetiletích po vstupu do EU v roce 2007?",
+  "answer": "Odešly přes 3 miliony lidí za prací do zahraničí, jeden z nejrychlejších úbytků obyvatel mimo válečné zóny",
+  "distractors": [
+   "Populace naopak výrazně vzrostla přistěhovalectvím",
+   "Zůstala prakticky beze změny",
+   "Klesla jen o pár tisíc lidí"
+  ],
+  "quip_correct": "Otevřené hranice, a najednou chybí lidi na venkově víc než po válce — vstup do EU byl vysvědčení i vystěhovací lístek zároveň.",
+  "quip_wrong": "Trend šel opačným směrem, než sis tipnul, a v mnohem větším měřítku.",
+  "explanation": "Odhaduje se, že v zahraničí dnes žije a pracuje kolem pětiny rodilých Rumunů, nejvíc v Itálii, Španělsku a Německu.",
+  "about": "rumunské emigraci po roce 2007",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- quiet rural Romanian village street lined with shuttered houses, autumn light"
+ },
+ {
+  "id": "ro-a-palac-demolice",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co musel Ceaușescu srovnat se zemí, aby uvolnil místo pro stavbu Paláce parlamentu v Bukurešti?",
+  "answer": "Celou historickou čtvrť s kostely a domovy desítek tisíc lidí",
+  "distractors": [
+   "Jen jedno staré nádraží",
+   "Královský palác, ve kterém sám bydlel",
+   "Bukurešťskou zoologickou zahradu"
+  ],
+  "quip_correct": "Diktátor srovnal se zemí kus vlastního hlavního města, aby si postavil dům — a nakonec ho ani nestihl obývat.",
+  "quip_wrong": "Zbořilo se toho hodně, jen ne tohle konkrétní místo.",
+  "explanation": "Demolice v 80. letech zasáhla čtvrť Uranus, o domov přišlo přes 40 000 lidí a Ceaușescu byl popraven ještě v roce dokončení hrubé stavby, 1989.",
+  "about": "stavbě Paláce parlamentu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- massive grey monumental government palace facade under overcast sky, empty plaza"
  }
 ]

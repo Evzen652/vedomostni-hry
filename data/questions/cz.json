@@ -1113,5 +1113,173 @@
   "explanation": "Průzkumy z roku 1992 ukazovaly, že většina obyvatel obou zemí preferovala zachování společného státu. Klaus a Mečiar se dohodli na rozdělení bez přímé konzultace s voliči. Dodnes je to předmětem historické debaty: byl to výsledek demokratického procesu, nebo politické svévole?",
   "about": "sametovém rozvodu Československa a roli občanů",
   "image_prompt": "A painterly watercolor illustration of a symbolic border post between Czech and Slovak republics in winter 1993 with two sets of people on each side waving goodbye sadly, vintage travel journal style"
+ },
+ {
+  "id": "cz-k-kapr-ve-vane",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Před Vánoci si spousta českých rodin koupí živého kapra domů. Kam ho obvykle na pár dní dají, než ho uvaří?",
+  "answer": "Do vany naplněné vodou",
+  "distractors": [
+   "Do akvária v dětském pokoji",
+   "Na zahradu do sudu s deštovou vodou",
+   "Do lednice v kuchyni"
+  ],
+  "quip_correct": "Tys to věděl! Rodina se pak často několik dní myje jinde, protože vana patří kaprovi.",
+  "quip_wrong": "Hmm, ne! Kapr sice potřebuje vodu, ale ani lednice, ani akvárium — obvykle skončí ve vaně.",
+  "explanation": "Živý kapr ve vaně je česká vánoční tradice starší než sto let. Někteří lidé si k rybě natolik přivyknou, že ji nakonec nechají vypustit zpátky do rybníka místo na talíř.",
+  "about": "vánočním kaprovi ve vaně",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a large carp swimming in a bathtub in a cozy Czech apartment before Christmas"
+ },
+ {
+  "id": "cz-k-krakonos",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V pohádkách a kreslených seriálech žije v horách Krkonoše obrovitý strážce hor. Jak se jmenuje?",
+  "answer": "Krakonoš",
+  "distractors": [
+   "Rumcajs",
+   "Křemílek",
+   "Vodník"
+  ],
+  "quip_correct": "Jé, tys to věděl! Krakonoš prý umí měnit podobu a v lese pomáhá poutníkům, kteří k přírodě nejsou hrubí.",
+  "quip_wrong": "Rumcajs žije v lese u Jičína a Křemílek v pařezové chaloupce — pán Krkonoš se jmenuje Krakonoš.",
+  "explanation": "Krakonoš je pohádková postava horského ducha, který podle pověstí chrání Krkonoše před těmi, kdo se v lese chovají špatně. Na německé straně hor vypráví úplně stejnou pověst o obru jménem Rübezahl — jde o stejné pohoří, jen s jiným jménem podle strany hranice.",
+  "about": "Krakonošovi, duchu Krkonoš",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a giant friendly mountain spirit with a long beard and staff standing among misty Krkonoše mountain forests"
+ },
+ {
+  "id": "cz-t-jagr",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Hokejista Jaromír Jágr je proslulý svou neuvěřitelnou hokejovou dlouhověkostí. Jak dlouho zhruba aktivně hrál profesionální hokej po boku mnohem mladších spoluhráčů?",
+  "answer": "Ještě dlouho po čtyřicítce, blízko svým padesátinám",
+  "distractors": [
+   "Skončil hned po třicítce jako většina hráčů",
+   "Přesně v pětatřiceti letech, jak velí nepsané pravidlo NHL",
+   "Skončil v den svých čtyřicátých narozenin"
+  ],
+  "quip_correct": "Spoluhráči odcházeli do důchodu, Jágr si oblékal dres dál. Nohy má zjevně jiný kalendář než zbytek těla.",
+  "quip_wrong": "Třicítka, čtyřicítka přesně na den ani pětatřicítka nesedí — Jágr vydržel na ledě neuvěřitelně dlouho po čtyřicítce.",
+  "explanation": "Jaromír Jágr hrál NHL rekordních 24 sezon a poté pokračoval za svůj rodný klub Rytíře Kladno, kde působil i jako majitel a hráč zároveň, ještě řadu let po čtyřicítce.",
+  "about": "Jaromíru Jágrovi a jeho hokejové kariéře",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, an aging hockey player skating on an ice rink under stadium lights"
+ },
+ {
+  "id": "cz-t-narodni-divadlo",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Kultura & tradice",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Národní divadlo v Praze neslo heslo „Národ sobě“. Co se s ním stalo krátce po slavnostním otevření v roce 1881?",
+  "answer": "Vyhořelo a národ na jeho obnovu znovu vybral peníze ve sbírce",
+  "distractors": [
+   "Zbořili ho kvůli stavbě železnice",
+   "Přestavěli ho na sklad, protože se do Prahy nehodilo",
+   "Zůstalo zavřené příštích padesát let"
+  ],
+  "quip_correct": "Sotva domalovali oponu, divadlo lehlo popelem. Češi ho nezavřeli — vybrali znovu a postavili ho podruhé.",
+  "quip_wrong": "Nešlo o zboření kvůli trati ani o půl století zavřené dveře — divadlo krátce po otevření vyhořelo, a národ zaplatil obnovu znovu.",
+  "explanation": "Národní divadlo se stavělo ze sbírek po celých Čechách přes deset let a otevřelo se v roce 1881. Necelé dva měsíce nato ho zničil požár, ale díky nové celonárodní sbírce ho vystavěli znovu a otevřeli o něco přes dva roky později.",
+  "about": "požáru Národního divadla",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, the golden National Theatre building in Prague on the Vltava riverbank at dusk"
+ },
+ {
+  "id": "cz-t-petr-cech",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč brankář Petr Čech nosil při zápasech místo obyčejné kšiltovky ochrannou helmu?",
+  "answer": "Kvůli vážnému zranění hlavy ze srážky se spoluhráčem",
+  "distractors": [
+   "Byla to jen jeho módní ozvláštnění dresu",
+   "Klub mu ji nařídil kvůli reklamní smlouvě",
+   "Nosil ji celý tým jako společný symbol"
+  ],
+  "quip_correct": "Jedna srážka na hřišti, a helma se stala jeho poznávacím znakem na roky dopředu. Chytal v ní i góly, co by jinou hlavu možná ohrozily.",
+  "quip_wrong": "Žádná móda ani reklama za tím nestála — Čech helmu nosil kvůli vážnému zranění hlavy z utkání.",
+  "explanation": "Petr Čech utrpěl v roce 2006 v zápase za Chelsea proražení lebky po srážce kolenem se spoluhráčem soupeře. Po operaci a rekonvalescenci nosil ochrannou helmu prakticky po zbytek kariéry.",
+  "about": "Petru Čechovi a jeho ochranné helmě",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a football goalkeeper wearing a protective padded helmet standing in front of the goal"
+ },
+ {
+  "id": "cz-t-navratilova-wimbledon",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Sport",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Kolikrát vyhrála Martina Navrátilová dvouhru na Wimbledonu — rekord, který dodnes nikdo nepřekonal?",
+  "answer": "Devětkrát",
+  "distractors": [
+   "Třikrát",
+   "Šestkrát",
+   "Dvanáctkrát"
+  ],
+  "quip_correct": "Devět wimbledonských titulů ve dvouhře. Traviny se jí prý poddávaly víc než ostatním hráčkám.",
+  "quip_wrong": "Zkus to jinam — Navrátilová na Wimbledonu ve dvouhře vyhrála víc, než tipuješ.",
+  "explanation": "Martina Navrátilová vyhrála wimbledonskou dvouhru devětkrát mezi lety 1978 a 1990, což je stále nepřekonaný rekord v historii tenisu, mužů i žen.",
+  "about": "wimbledonských titulech Martiny Navrátilové",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a tennis player raising a trophy on a grass court in golden afternoon light"
+ },
+ {
+  "id": "cz-a-orloj-hanus",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Podle pověsti radní po dokončení pražského orloje mistra Hanuše nechali oslepit. Proč?",
+  "answer": "Aby stejně dokonalý orloj už nikdy nesestrojil jinému městu",
+  "distractors": [
+   "Protože orloj ukazoval špatný čas",
+   "Protože si za práci řekl o příliš vysokou odměnu",
+   "Protože orloj obsahoval tajné urážlivé poselství"
+  ],
+  "quip_correct": "Vděk za mistrovské dílo v podobě oslepení — pověst, která si radu Starého Města nebere v lásce. Prý si to Hanuš nenechal líbit a zničil mechanismus vlastníma rukama.",
+  "quip_wrong": "Špatný čas ani drzá cena to podle pověsti nebyly — radní se báli, že mistr postaví stejný zázrak jinde.",
+  "explanation": "Historikové považují příběh o oslepení mistra Hanuše za pozdější legendu bez doložených důkazů — skutečný autor orloje je navíc dodnes sporný. Pověst se ale v Praze vypráví už po staletí a stala se pevnou součástí folkloru kolem orloje.",
+  "about": "legendě o mistru Hanušovi a pražském orloji",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, an old clockmaker working by candlelight on intricate astronomical clock gears in a medieval Prague workshop"
+ },
+ {
+  "id": "cz-a-zatopek-trest",
+  "cc": "cz",
+  "country": "Česká republika",
+  "section": "Sport",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Emil Zátopek podepsal v roce 1968 manifest Dva tisíce slov a otevřeně kritizoval sovětskou okupaci. Jak ho za to komunistický režim potrestal?",
+  "answer": "Vyloučili ho z armády i strany a poslali na manuální práce, mimo jiné do uranových dolů",
+  "distractors": [
+   "Zbavili ho jen olympijských medailí",
+   "Poslali ho do vězení na deset let",
+   "Nic se mu nestalo, jako sportovní legendu ho nechali být"
+  ],
+  "quip_correct": "Trojnásobný olympijský vítěz z Helsinek skončil jako pomocná síla u vrtné soupravy v uranových dolech. Režim uměl potrestat i národní hrdiny.",
+  "quip_wrong": "Nešlo jen o odebrané medaile, natož vězení nebo klid od režimu — Zátopka čekalo vyloučení ze všeho a roky manuální dřiny.",
+  "explanation": "Zátopek přišel o vojenskou hodnost i členství ve straně a několik let pracoval jako geologický technik a vrtař v oblasti uranových dolů, než mu bylo v 70. letech dovoleno vrátit se alespoň k okrajové práci ve sportu.",
+  "about": "postihu Emila Zátopka po roce 1968",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a lone figure working with mining drill equipment in a bleak Czech uranium mining landscape"
  }
 ]

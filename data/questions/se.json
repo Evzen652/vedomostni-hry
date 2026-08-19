@@ -1140,5 +1140,173 @@
   "explanation": "Požár v diskoklubu Backaplan 29. října 1998 zabil 63 mladých lidí, převážně dětí imigrantů z Blízkého východu. Tragédie spustila debatu o integraci, rasové segregaci ve švédských předměstích a rovném přístupu záchranných složek.",
   "about": "požáru diskotéky v Göteborgu roku 1998",
   "image_prompt": "A painterly watercolor illustration of a somber candlelight vigil in a Gothenburg street with flowers and photos as a memorial, muted winter tones, vintage travel journal style"
+ },
+ {
+  "id": "se-k-icehotel",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve švédské vesničce Jukkasjärvi stojí hotel celý z ledu a sněhu. Co se s ním stane každé jaro?",
+  "answer": "Roztaje a zmizí — v zimě ho staví úplně znovu",
+  "distractors": [
+   "Zabalí ho do plachty a uschovají na léto",
+   "Přestěhují ho na saních jinam",
+   "Přemalují ho na léto jinou barvou"
+  ],
+  "quip_correct": "Tys to věděl! Hotel, co se každé jaro dobrovolně rozpustí — a lidé se do něj přesto rok co rok vracejí.",
+  "quip_wrong": "Skoro! Ledový hotel v Jukkasjärvi na jaře roztaje, žádné plachty ani stěhování ho nezachrání.",
+  "explanation": "Icehotel se staví každou zimu znovu z ledových kvádrů vylámaných z blízké řeky Torne. Hosté spí v teplých spacích pytlích na sobí kůži, protože v pokojích je pořád pod bodem mrazu.",
+  "about": "ledovém hotelu Icehotel",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a glowing hotel built entirely of carved ice and snow at night in northern Sweden, soft blue interior light shining through ice walls"
+ },
+ {
+  "id": "se-k-turning-torso",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve švédském městě Malmö stojí mrakodrap, který vypadá, jako by ho někdo zkroutil jako ždímaný ručník. Jak se jmenuje?",
+  "answer": "Turning Torso",
+  "distractors": [
+   "Šikmá věž",
+   "Skleněná spirála",
+   "Stockholmský vrták"
+  ],
+  "quip_correct": "Tys to věděl! Architekt Calatrava zkroutil budovu úplně schválně — rovné mrakodrapy prý nudí.",
+  "quip_wrong": "Ne tahle! Ta zkroucená budova v Malmö se jmenuje Turning Torso.",
+  "explanation": "Turning Torso navrhl architekt Santiago Calatrava podle sochy otáčejícího se lidského těla. Skládá se z devíti kostek, které se od základny až po střechu postupně pootočí do strany, a je nejvyšší budovou ve Skandinávii.",
+  "about": "mrakodrapu Turning Torso",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a dramatically twisted glass and steel skyscraper rising against a soft evening sky in a coastal Swedish city"
+ },
+ {
+  "id": "se-t-minecraft",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Kterou celosvětově nejprodávanější videohru vytvořil švédský programátor Markus Persson, přezdívaný Notch?",
+  "answer": "Minecraft",
+  "distractors": [
+   "Fortnite",
+   "Roblox",
+   "Among Us"
+  ],
+  "quip_correct": "Notch postavil ze čtverečků svět, co pak koupil Microsoft za miliardy. Slušný vedlejšák z garáže.",
+  "quip_wrong": "Blok vedle — tahle hra vznikla jinde než ve švédské hlavě.",
+  "explanation": "Minecraft vydal Notch poprvé v roce 2009 a firmu Mojang, kterou kolem hry založil, koupil o pár let později Microsoft za 2,5 miliardy dolarů.",
+  "about": "hře Minecraft a jejím švédském tvůrci",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a cluttered home office desk with a glowing computer screen showing a blocky pixelated landscape"
+ },
+ {
+  "id": "se-t-spotify",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Ve kterém městě vznikla streamovací hudební služba Spotify?",
+  "answer": "Ve Stockholmu",
+  "distractors": [
+   "V Londýně",
+   "V Berlíně",
+   "V Los Angeles"
+  ],
+  "quip_correct": "Švédsko vyexportovalo ABBA, a pak rovnou i způsob, jak si ji pustit. Praktický národ.",
+  "quip_wrong": "Playlist ti tentokrát nehrál to pravé město.",
+  "explanation": "Spotify založili v roce 2006 Daniel Ek a Martin Lorentzon jako reakci na masové nelegální stahování hudby, dnes má služba přes 600 milionů uživatelů po celém světě.",
+  "about": "vzniku Spotify ve Švédsku",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a cozy Stockholm co-working space with laptops and headphones on a wooden desk by a window"
+ },
+ {
+  "id": "se-t-avicii",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Umění",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím byl neobvyklý celosvětový hit Wake Me Up švédského DJe Avicii?",
+  "answer": "Spojil elektronickou taneční hudbu s banjem a folkovým zpěvem",
+  "distractors": [
+   "Byl nahraný úplně bez počítače",
+   "Použil jen zvuky přírody",
+   "Byl to první song zpívaný umělou inteligencí"
+  ],
+  "quip_correct": "Banjo a taneční basová linka v jedné písni — kombinace, co neměla fungovat, a stejně vládla rádiím po celém světě.",
+  "quip_wrong": "Avicii sáhl po jiném nástroji, než tenhle tip napovídá.",
+  "explanation": "Avicii, vlastním jménem Tim Bergling, patřil k průkopníkům žánru EDM a jeho hit Wake Me Up z roku 2013 se stal jednou z nejstahovanějších písní na Spotify všech dob.",
+  "about": "DJovi Avicii",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a festival stage silhouette with a DJ mixing console and colorful stage lights against a dusky sky"
+ },
+ {
+  "id": "se-t-vasa",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Historie",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo s honosnou švédskou válečnou lodí Vasa při jejím prvním výjezdu na moře?",
+  "answer": "Potopila se ve stockholmském přístavu po necelém kilometru plavby",
+  "distractors": [
+   "Vyhrála první bitvu a stala se legendou",
+   "Doplula až do Ameriky",
+   "Byla prodána Dánsku"
+  ],
+  "quip_correct": "Nejvýstavnější loď švédské flotily nedoplula ani na dohled otevřeného moře. Aspoň měla parádní premiéru přímo před zraky přístavních rybářů.",
+  "quip_wrong": "Vasa dopadla dramatičtěji, než napovídá tenhle tip.",
+  "explanation": "Loď Vasa vytáhli ze dna po 333 letech téměř neporušenou — studená a málo slaná voda Baltu totiž nedovolila dřevokazným červům, aby ji rozežrali. Dnes ji vidí miliony návštěvníků v muzeu Vasa ve Stockholmu.",
+  "about": "lodi Vasa a jejím potopení",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — an enormous ornately carved seventeenth century wooden warship displayed inside a grand museum hall"
+ },
+ {
+  "id": "se-a-jaderny-program",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Neutrální Švédsko dnes budí dojem mírumilovné země. Co ale tajně vyvíjelo téměř dvě desetiletí od poloviny 20. století?",
+  "answer": "Vlastní jaderné zbraně",
+  "distractors": [
+   "Chemické zbraně pro NATO",
+   "Ponorky s jaderným pohonem na export",
+   "Biologické zbraně proti SSSR"
+  ],
+  "quip_correct": "Země, co dnes exportuje mír a nábytek z lepenky, si potichu skoro postavila bombu. Sousedům to nikdy nehlásili.",
+  "quip_wrong": "Švédský tajný program mířil ještě dál, než tenhle tip.",
+  "explanation": "Švédský program běžel v letech 1945 až 1972 pod hlavičkou obranného výzkumu FOA, plán postavit vlastní bombu formálně opustili až po podpisu Smlouvy o nešíření jaderných zbraní.",
+  "about": "tajném švédském jaderném programu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a shadowy mid-century underground research laboratory with technical equipment and dim overhead lights"
+ },
+ {
+  "id": "se-a-nove-svedsko",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Švédsko dnes nemá jedinou zámořskou kolonii. Kde ale ve 17. století na pár desítek let založilo kolonii jménem Nové Švédsko?",
+  "answer": "Na řece Delaware v dnešních USA",
+  "distractors": [
+   "V Karibiku na ostrově Svatý Bartoloměj",
+   "Na pobřeží Grónska",
+   "V jižní Africe u Kapského Města"
+  ],
+  "quip_correct": "Sami sebe si dnes prodávají jako zemi bez koloniálních ambicí. Delaware by k tomu mělo pár připomínek.",
+  "quip_wrong": "Švédská kolonie stála na úplně jiném kontinentu, než sis tipnul.",
+  "explanation": "Kolonii Nové Švédsko založili v roce 1638 a už po sedmnácti letech ji obsadili Nizozemci — švédský ostrov Svatý Bartoloměj v Karibiku naproti tomu zůstal kolonií ještě v 19. století.",
+  "about": "koloniální historii Švédska a Novém Švédsku",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a small seventeenth century wooden fort and sailing ship on a forested river shore in colonial America"
  }
 ]

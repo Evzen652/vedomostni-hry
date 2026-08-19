@@ -1,0 +1,254 @@
+[
+ {
+  "id": "fi-k-santa",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve které zemi má Santa Claus svou oficiální vesnici, kam mu chodí dopisy z celého světa?",
+  "answer": "Ve Finsku",
+  "distractors": [
+   "Na severním pólu na ledové kře",
+   "V Norsku ve fjordu",
+   "Na Aljašce v jeskyni"
+  ],
+  "quip_correct": "Tys to věděl! Severní pól zní líp do písničky, ale teplou chaloupku s poštou má Santa radši ve Finsku.",
+  "quip_wrong": "Skoro! Severní pól je jen legenda z písniček — doopravdy má Santa adresu jinde, a je tam i teplo.",
+  "explanation": "Finské město Rovaniemi leží přímo na polárním kruhu a má oficiální Vesnici Santa Clause, kam každý rok dorazí přes půl milionu dopisů z celého světa.",
+  "about": "Santa Clausově vesnici ve Finsku",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — cozy snow-covered wooden cabin village in Finnish Lapland forest, warm glowing windows, single reindeer standing nearby"
+ },
+ {
+  "id": "fi-k-sob",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Které zvíře v laponských lesích táhne saně a klidně si i vyleze na silnici?",
+  "answer": "Sob",
+  "distractors": [
+   "Los",
+   "Vlk",
+   "Medvěd"
+  ],
+  "quip_correct": "Tys to věděl! Sobi ve Finsku chodí, kudy chtějí — a auta prostě musí počkat.",
+  "quip_wrong": "Hmm, ne! Medvěd ani vlk by na silnici tak klidně nepostával — hledej zvíře, co táhne saně.",
+  "explanation": "V Laponsku žije přes 200 tisíc polodivokých sobů, kteří patří místním chovatelům, ale volně se pohybují po krajině i silnicích.",
+  "about": "sobech v Laponsku",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a single reindeer standing calmly on a snowy forest road in Finnish Lapland, soft winter light"
+ },
+ {
+  "id": "fi-t-nokia",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jaká finská firma kdysi vyráběla nejprodávanější mobilní telefony na světě, dřív než přišly chytré telefony?",
+  "answer": "Nokia",
+  "distractors": [
+   "Ericsson",
+   "Siemens",
+   "Philips"
+  ],
+  "quip_correct": "Chytré telefony přišly, Nokia zůstala — hlavně jako meme o telefonu, co přežije pád ze schodů.",
+  "quip_wrong": "Ericsson ani Siemens tenhle trůn nikdy neměly — hledej značku, co dneska žije hlavně jako internetový vtip o nezničitelnosti.",
+  "explanation": "Nokia byla založena už v roce 1865 jako papírenská továrna a mobilní telefony začala vyrábět až o více než sto let později — v 90. letech se stala světovou jedničkou.",
+  "about": "finské firmě Nokia",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — an old brick-style mobile phone resting on a mossy forest stone in a Finnish forest"
+ },
+ {
+  "id": "fi-t-mumini",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Odkud pocházejí Muminci, kulaté bílé postavičky připomínající hrošíky?",
+  "answer": "Z Finska",
+  "distractors": [
+   "Ze Švédska",
+   "Z Dánska",
+   "Z Norska"
+  ],
+  "quip_correct": "Klidně vypadají jako hrošíci, ale jsou to trollové — a bydlí v Muminím údolí, přímo ve finských lesích.",
+  "quip_wrong": "Švédsko ani Norsko na tom nemají zásluhu — Muminci mají pas ze země s tisíci jezery.",
+  "explanation": "Muminky vytvořila finská spisovatelka a výtvarnice Tove Janssonová a první knížka vyšla v roce 1945.",
+  "about": "finských Mumincích",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a round white hippo-like troll character sitting by a lake in a Finnish forest valley"
+ },
+ {
+  "id": "fi-t-jezera",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Příroda",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Finsku se přezdívá „země tisíce jezer“ — kolik jezer tam ve skutečnosti je?",
+  "answer": "Skoro 200 tisíc",
+  "distractors": [
+   "Přesně tisíc",
+   "Asi pět tisíc",
+   "Necelých deset tisíc"
+  ],
+  "quip_correct": "„Tisíc jezer“ je marketing z předminulého století — realita to přebila skoro dvěstěkrát.",
+  "quip_wrong": "Přezdívka slibuje tisíc, ale i to je hluboko pod pravdou — finská jezera se počítají na statisíce.",
+  "explanation": "Přezdívka „země tisíce jezer“ vznikla v 19. století, kdy ještě nikdo přesně nepočítal — dnešní satelitní mapy napočítaly téměř 188 tisíc jezer.",
+  "about": "finských jezerech",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — an aerial-style view of countless small lakes scattered across a green Finnish forest landscape"
+ },
+ {
+  "id": "fi-t-vlajka",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Co symbolizuje modrý kříž na bílé finské vlajce?",
+  "answer": "Jezera a nebe (modrá) na sněhu (bílá)",
+  "distractors": [
+   "Moře a ledovce",
+   "Lesy a kámen",
+   "Noc a polární záři"
+  ],
+  "quip_correct": "Modrá a bílá — ani jedna barva navíc, protože Finsko je zkrátka přesně tahle dvoubarevná krajina.",
+  "quip_wrong": "Moře ani lesy do toho nemluví — finská vlajka kreslí krajinu, kterou má přímo pod nohama celý rok.",
+  "explanation": "Nordický kříž na finské vlajce sdílí Finsko se Švédskem, Norskem, Dánskem a Islandem — jen barvy si každá země zvolila podle vlastní krajiny.",
+  "about": "finské vlajce",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a blue cross flag motif blended into a snowy lake landscape"
+ },
+ {
+  "id": "fi-t-hokej",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "V jakém sportu vybojovalo Finsko v roce 2022 svoje první olympijské zlato mužů?",
+  "answer": "V ledním hokeji",
+  "distractors": [
+   "V biatlonu",
+   "V běhu na lyžích",
+   "V krasobruslení"
+  ],
+  "quip_correct": "Na první zlato čekali dýl než na jarní tání — a když přišlo, celé Finsko si o půlnoci vyšlo do ulic.",
+  "quip_wrong": "Biatlon, běžky ani krasobruslení tenhle rok nerozhodly — Finové slavili kvůli puku, ne kvůli terči nebo trojitému axelu.",
+  "explanation": "Finský hokejový tým Leijonat (Lvi) porazil ve finále olympijských her v Pekingu 2022 ruský tým a získal historicky první zlato mužů v ledním hokeji.",
+  "about": "finském hokeji",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a single ice hockey stick and puck resting on frozen lake ice under a pale winter sky"
+ },
+ {
+  "id": "fi-t-stesti",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Lidé",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "V jakém žebříčku se Finsko opakovaně umisťuje na prvním místě na světě?",
+  "answer": "V žebříčku nejšťastnějších zemí světa",
+  "distractors": [
+   "V žebříčku nejteplejších zemí",
+   "V žebříčku nejlidnatějších zemí",
+   "V žebříčku nejslunečnějších zemí"
+  ],
+  "quip_correct": "Nejšťastnější národ planety podle statistik — a přitom klasický Fin ti radši mlčky pokývá, než aby to nahlas potvrdil.",
+  "quip_wrong": "Teplo ani slunce Finsku nikdo nezávidí — první místo drží v úplně jiné, mnohem příjemnější kategorii.",
+  "explanation": "Zprávu o štěstí ve světě (World Happiness Report) sestavuje OSN podle příjmu, zdraví, svobody rozhodování a důvěry mezi lidmi — a Finsko v ní vede žebříček už řadu let po sobě.",
+  "about": "žebříčku nejšťastnějších zemí",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a small figure sitting peacefully on a wooden dock by a calm Finnish lake at sunset"
+ },
+ {
+  "id": "fi-a-zimovalka",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak dopadla finská obrana proti sovětské invazi v Zimní válce 1939–1940?",
+  "answer": "Mnohonásobně slabší Finsko útok přežilo a udrželo si nezávislost, i když ztratilo část území",
+  "distractors": [
+   "Finsko bylo bez odporu obsazeno za pár dní",
+   "Finsko válku vyhrálo a dobylo část Sovětského svazu",
+   "Válka skončila nerozhodně bez územních změn"
+  ],
+  "quip_correct": "Rudá armáda šla dobýt Finsko za pár týdnů. Odešla o pár měsíců později, s těžkými ztrátami a hlubokým respektem.",
+  "quip_wrong": "Bez boje se to nevzdalo, Sovětský svaz nedobylo, a nerozhodně to taky neskončilo — realita byla drsnější a zajímavější než všechny tři možnosti.",
+  "explanation": "Sovětský svaz nasadil do Zimní války vojáky v poměru zhruba tři až čtyři na jednoho finského obránce, přesto utrpěl mnohonásobně vyšší ztráty než malé Finsko.",
+  "about": "Zimní válce",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a lone snow-camouflaged skier soldier moving through a dark winter forest"
+ },
+ {
+  "id": "fi-a-jazyk",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč je finština jazykově zvláštní i po staletích, kdy bylo Finsko součástí Švédska?",
+  "answer": "Není vůbec příbuzná švédštině ani jiným severským jazykům",
+  "distractors": [
+   "Je to jen starý dialekt švédštiny",
+   "Vznikla smícháním švédštiny s ruštinou",
+   "Je to nejstarší germánský jazyk v Evropě"
+  ],
+  "quip_correct": "Šest set let pod švédskou korunou naučila Finy leccos — jenom ne švédštinu. Jazykově zůstali tvrdohlavě sami sebou.",
+  "quip_wrong": "Žádné míchání se švédštinou ani ruštinou se nekonalo, germánský původ nemá taky — finština jde po úplně jiném jazykovém rodokmenu.",
+  "explanation": "Finština patří do uralské jazykové rodiny a je příbuzná s estonštinou a vzdáleně s maďarštinou, zatímco švédština, norština či dánština jsou germánské jazyky z úplně jiné větve.",
+  "about": "finštině",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — an old open book with unreadable handwritten script lying on a wooden table by a window"
+ },
+ {
+  "id": "fi-a-sauny",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Kolik zhruba saun se odhaduje v Finsku na 5,5 milionu obyvatel?",
+  "answer": "Přes 2 miliony",
+  "distractors": [
+   "Asi 50 tisíc",
+   "Přesně 100 tisíc",
+   "Kolem 500 tisíc"
+  ],
+  "quip_correct": "Víc než jedna sauna na tři obyvatele. Finové neplánují dovolenou — plánují, kdy si zase sednou zpocení na dřevěnou lavici.",
+  "quip_wrong": "Padesát ani sto tisíc by na tuhle posedlost zdaleka nestačilo — Finové to počítají v milionech.",
+  "explanation": "Sauna je ve Finsku natolik běžná součást bydlení, že ji má i finský parlament a diplomaté ji dodnes využívají k neformálním jednáním.",
+  "about": "finských saunách",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a small wooden sauna cabin by a still lake, steam rising gently from its chimney"
+ },
+ {
+  "id": "fi-a-volebnipravo",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím byly finské ženy v roce 1906 mezi prvními na světě?",
+  "answer": "Získaly zároveň volební právo i právo kandidovat do parlamentu",
+  "distractors": [
+   "Byly první, komu stát zaručil placenou dovolenou",
+   "Získaly jako první ženy na světě právo řídit auto",
+   "Byly první, kdo směl vlastnit půdu bez manžela"
+  ],
+  "quip_correct": "Zatímco jinde se o volebním právu žen teprve diskutovalo, ve finském parlamentu už seděly ženy a rozhodovaly.",
+  "quip_wrong": "O dovolenou, auta ani pozemky tady nešlo — Finsko tehdy prorazilo v něčem mnohem zásadnějším, přímo v politice.",
+  "explanation": "Finsko, tehdy ještě velkoknížectví pod ruskou korunou, bylo v roce 1906 první zemí v Evropě, kde ženy mohly nejen volit, ale i být zvoleny do parlamentu — hned v prvních volbách jich usedlo devatenáct.",
+  "about": "volebním právu finských žen",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — an antique ballot box and a folded paper ballot on a wooden table, soft morning light"
+ }
+]

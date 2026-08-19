@@ -2596,5 +2596,89 @@
   "quip_wrong": "Skoro! Vlk i orel v Rusku žijí, ale neoficiálním symbolem, co zná celý svět, je medvěd.",
   "explanation": "Hnědý medvěd se v Rusku vyskytuje od tundry po tajgu. V ruské kultuře je symbolem síly — objevuje se v pohádkách, na turistických suvenýrech i v politické karikatuře.",
   "about": "medvědovi jako symbolu Ruska"
+ },
+ {
+  "id": "ru-t-rude-namesti",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Jazyk & slova",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč se moskevské Rudé náměstí jmenuje zrovna „rudé“?",
+  "answer": "Staré ruské slovo krasnaja tehdy znamenalo „krásné“, ne „červené“",
+  "distractors": [
+   "Na náměstí popravovali odsouzené, odtud barva krve",
+   "Dláždění náměstí je vyrobené z červené žuly",
+   "Pojmenovali ho po rudé sovětské vlajce"
+  ],
+  "quip_correct": "Stovky let předtím, než tam vlála rudá vlajka, znamenalo to slovo prostě „hezké“. Sovětská symbolika si to jméno jen šikovně přivlastnila.",
+  "quip_wrong": "Poprava, červená žula, sovětská vlajka — všechno zní logicky, ale to jméno je starší než všechny tyhle teorie.",
+  "explanation": "Náměstí dostalo jméno „krasnaja“ už v 17. století, dávno před revolucí i sovětskou érou — teprve po roce 1917 začal svět jeho jméno mylně spojovat s komunistickou rudou barvou.",
+  "about": "Rudém náměstí",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a cobbled city square with colorful onion domes in the distance"
+ },
+ {
+  "id": "ru-a-dan-z-vousu",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak přesně Petr Veliký v letech 1698–1705 přiměl ruské muže oholit si tradiční vousy?",
+  "answer": "Zavedl daň z vousů — kdo si vous nechal, musel platit a nosit potvrzující minci",
+  "distractors": [
+   "Vousatým mužům zakázal vstup na carský dvůr, jinak je nechal být",
+   "Nechal je násilně holit vojáky přímo na ulicích měst",
+   "Vyžadoval zvláštní povolení pravoslavné církve, ne peníze"
+  ],
+  "quip_correct": "Evropeizace Ruska začala u vousů, ne u soudnictví. Kdo si vous nechal, nosil u sebe minci jako doklad, že si za tradici řádně zaplatil.",
+  "quip_wrong": "Zákaz na dvoře, násilné holení na ulici nebo církevní povolení? Petr šel jednodušší, byrokratičtější cestou — přes peněženku.",
+  "explanation": "Bronzová „vousová mince“ nesla nápis o zaplacené dani a majitel ji musel nosit stále u sebe jako doklad pro úředníky — kdo ji neměl, riskoval, že mu vous ostříhají násilím na místě.",
+  "about": "dani z vousů Petra Velikého",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an old bronze coin with an engraved beard motif resting on a wooden table"
+ },
+ {
+  "id": "ru-t-sputnik",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak se jmenovala první umělá družice, kterou Sovětský svaz vypustil na oběžnou dráhu Země v roce 1957?",
+  "answer": "Sputnik 1",
+  "distractors": [
+   "Vostok 1",
+   "Mir",
+   "Sojuz 1"
+  ],
+  "quip_correct": "Kovová koule s anténami, velká jako pláž — a Amerika kvůli ní hned začala horečně počítat vlastní rakety.",
+  "quip_wrong": "Vostok vozil lidi, Mir byla stanice a Sojuz přišel až později — první píp na oběžné dráze patřil jinému jménu.",
+  "explanation": "Sputnik 1 vážil jen 83,6 kilogramu a obletěl Zemi jednou za 96 minut; jeho pravidelné pípání šlo zachytit i na obyčejném rádiu, což po celém světě vyvolalo takzvaný sputnikový šok.",
+  "about": "Sputniku 1",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a small metal sphere satellite with four thin antennas against a starry sky"
+ },
+ {
+  "id": "ru-a-tunguska",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo 30. června 1908 nad sibiřskou tajgou v oblasti řeky Podkamenná Tunguzka?",
+  "answer": "Výbuch srovnal se zemí přes 80 milionů stromů na ploše přes 2000 km² — a dodnes se přesně neví proč",
+  "distractors": [
+   "Sopečná erupce zasypala oblast popelem na celé týdny",
+   "Zemětřesení zbořilo tři sibiřská města",
+   "Meteorit dopadl a vytvořil kráter hluboký přes kilometr"
+  ],
+  "quip_correct": "Síla tisíce hirošimských bomb, a nejbližší svědek byl nejspíš sob. Kdyby to vybuchlo o pár hodin později nad Petrohradem, učebnice dějepisu by vypadaly jinak.",
+  "quip_wrong": "Popel, zbořená města nebo kilometrový kráter? Skutečnost je bizarnější — po explozi nezůstal žádný kráter, jen spálený les až k obzoru.",
+  "explanation": "Přesná příčina Tunguzské události se dodnes vědecky nepotvrdila — nejpravděpodobnější teorie mluví o meteoroidu nebo kometárním úlomku, který explodoval ve vzduchu ještě předtím, než stačil dopadnout na zem.",
+  "about": "Tunguzské události",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a vast expanse of flattened, scorched taiga forest seen from a low hill, trees radiating outward from a distant center"
  }
 ]

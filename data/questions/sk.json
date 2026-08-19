@@ -1171,5 +1171,173 @@
   "explanation": "Stavba byla po roce 1989 zastavena kvůli nedostatku financí a změně politické priority. Nedokončené tunely a betonové výkopy v Petržalce jsou dnes cílem urban explorerů a terčem debat o tom, co s nimi dál.",
   "about": "nedokončeném projektu bratislavského metra",
   "image_prompt": "Abandoned overgrown concrete metro tunnel entrance in Petržalka, Bratislava, urban exploration aesthetic, painterly watercolor style"
+ },
+ {
+  "id": "sk-k-trdelnik",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve slovenském městečku Skalica upekli poprvé sladkou trubkovitou pochoutku točenou na rožni nad ohněm. Jak se jmenuje?",
+  "answer": "Trdelník",
+  "distractors": [
+   "Štrúdl",
+   "Preclík",
+   "Pagáč"
+  ],
+  "quip_correct": "Tys to věděl! Těsto se točí nad ohněm jako na kolotoči, dokud nezhnědne do křupava — a pak si dovnitř klidně nastrkáš zmrzlinu.",
+  "quip_wrong": "Skoro! Ta trubkovitá sladkost upečená nad ohněm se jmenuje trdelník, ne štrúdl ani preclík.",
+  "explanation": "Trdelník se peče navinutý na dřevěném válci, který se pomalu otáčí nad žhavým uhlím, a nakonec se obalí v cukru se skořicí nebo v drceném ořechu.",
+  "about": "trdelníku ze Skalice",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a spiral pastry roll baking on a rotating wooden spit over glowing coals at an outdoor market stall"
+ },
+ {
+  "id": "sk-k-svist",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Které tatranské zvířátko píská jako poplašná siréna, když zahlédne nebezpečí, a celou zimu prospí schované pod sněhem?",
+  "answer": "Svišť vrchovský",
+  "distractors": [
+   "Kamzík",
+   "Los",
+   "Sob"
+  ],
+  "quip_correct": "Tys to věděl! Svišť má vlastní poplašný systém dřív, než ho vynalezli lidi — jedno hvízdnutí a celá kolonie zaleze do nory.",
+  "quip_wrong": "Ouha, ne tenhle! To hvízdavé zvířátko schované pod sněhem je svišť vrchovský.",
+  "explanation": "Svišti žijí ve velkých podzemních norách, kde v zimě upadnou do hlubokého spánku a jejich tělesná teplota i tep srdce se výrazně sníží, aby vydrželi bez jídla až do jara.",
+  "about": "svišti vrchovském v Tatrách",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a plump alpine marmot standing alert on a rock among mountain wildflowers in the High Tatras"
+ },
+ {
+  "id": "sk-t-chara",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím je ve světě hokeje unikátní slovenský obr Zdeno Chára?",
+  "answer": "Je nejvyšším hráčem v historii NHL a drží rekord v rychlosti střely",
+  "distractors": [
+   "Je nejmladším hráčem, co kdy odehrál zápas NHL",
+   "Vstřelil nejvíc gólů v jediném zápase",
+   "Byl první brankář, který dal gól"
+  ],
+  "quip_correct": "206 centimetrů výšky a střela přes 175 kilometrů za hodinu — brankáři si u Cháry raději klekali rovnou k modré čáře.",
+  "quip_wrong": "Chára měl v rukávu jiný rekord, než čekáš.",
+  "explanation": "Zdeno Chára měřil 206 cm a v soutěži rychlosti střely NHL v roce 2012 nastřílel puk rychlostí 175,1 km/h, což je dodnes platný rekord soutěže.",
+  "about": "hokejistovi Zdenu Chárovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a towering ice hockey defenseman in full gear on the rink, dramatic low angle"
+ },
+ {
+  "id": "sk-t-tatry-nejmensi",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Příroda",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím jsou Vysoké Tatry mezi velehorami světa výjimečné?",
+  "answer": "Jsou nejmenším velehorským pásmem na světě",
+  "distractors": [
+   "Jsou jediné velehory bez jediného jezera",
+   "Nemají žádný vrchol nad 2000 metrů",
+   "Vznikly jako jediné sopečnou činností"
+  ],
+  "quip_correct": "Na ploše menší než leckterá čtvrť velkoměsta se vejde přes dvacet vrcholů nad 2500 metrů. Kompaktní balení alpské krajiny.",
+  "quip_wrong": "Vysoké Tatry mají jinou výjimečnost, než napovídá tenhle tip.",
+  "explanation": "Vysoké Tatry mají rozlohu kolem 260 čtverečních kilometrů, přesto nabízí typicky alpský reliéf s ostrými štíty, ledovcovými jezery zvanými plesa a strmými dolinami.",
+  "about": "Vysokých Tatrách jako nejmenších velehorách světa",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — jagged alpine peaks with a glacial lake reflecting the mountains in the High Tatras"
+ },
+ {
+  "id": "sk-t-banic",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Lidé",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co vynalezl a v USA patentoval slovenský vynálezce a krejčí Štefan Banič?",
+  "answer": "Moderní padák",
+  "distractors": [
+   "Neprůstřelnou vestu",
+   "Skládací jízdní kolo",
+   "Bezpečnostní pás do auta"
+  ],
+  "quip_correct": "Krejčí ze slovenské dediny vylepšil padák natolik, že si ho nechal patentovat rovnou americký armádní úřad. Slušný vzestup z jehly a nitě.",
+  "quip_wrong": "Banič si nechal patentovat něco úplně jiného, než tenhle tip.",
+  "explanation": "Štefan Banič svůj padák v roce 1913 osobně vyzkoušel skokem z mrakodrapu ve Washingtonu a americká armáda ho následně použila jako základ pro vlastní vybavení pilotů.",
+  "about": "vynálezci Štefanu Baničovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a vintage early twentieth century fabric parachute unfurling above a city skyline"
+ },
+ {
+  "id": "sk-t-tokaj",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Malá část proslulé vinařské oblasti Tokaj, kterou si Evropa spojuje hlavně s Maďarskem, leží i na Slovensku. Čím byla tato oblast pověstná už u královských dvorů?",
+  "answer": "Sladkým vínem, kterému se přezdívalo víno králů a král vín",
+  "distractors": [
+   "Nejsilnějším destilátem v Evropě",
+   "Vínem, které se dalo pít jen zmražené",
+   "Vínem barveným zlatem pro šlechtu"
+  ],
+  "quip_correct": "Přezdívka víno králů a král vín zavazuje. Slovenská část Tokaje se o ni dělí s Maďarskem, ale hrdosti má dost pro oba.",
+  "quip_wrong": "Královský přídomek sedí na něčem jiném, než napovídá tenhle tip.",
+  "explanation": "Slovenská část vinařské oblasti Tokaj zahrnuje několik obcí na jihovýchodě Slovenska a společně s maďarskou částí je zapsána na seznamu UNESCO.",
+  "about": "vinařské oblasti Tokaj na Slovensku",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — rolling vineyard hills with rows of grapevines under golden afternoon light near a small stone village"
+ },
+ {
+  "id": "sk-a-automobilova-velmoc",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Zajímavosti",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím je Slovensko, přestože ho většina lidí nespojuje s automobilovým průmyslem, na světě na prvním místě?",
+  "answer": "Vyrobí nejvíc aut na jednoho obyvatele ze všech zemí světa",
+  "distractors": [
+   "Má nejdelší dálniční síť na obyvatele",
+   "Prodá nejvíc elektromobilů na obyvatele",
+   "Vyveze nejvíc ojetých aut na obyvatele"
+  ],
+  "quip_correct": "Malá země bez jediné vlastní značky vyrábí aut na hlavu víc než Německo nebo Japonsko. Cizí loga, domácí rekord.",
+  "quip_wrong": "Slovenský automobilový rekord vypadá jinak, než tenhle tip.",
+  "explanation": "Ve fabrikách Volkswagenu, Kie, Stellantisu a Jaguar Land Roveru se ročně sjede přes milion vozů, a to při necelých 5,5 milionu obyvatel — žádná jiná země na světě nemá vyšší poměr vyrobených aut na počet lidí.",
+  "about": "slovenském automobilovém průmyslu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — rows of freshly assembled cars inside a vast industrial factory hall under warm overhead lighting"
+ },
+ {
+  "id": "sk-a-studna-lasky",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Místa",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Podle pověsti nechal majitel Trenčianského hradu tureckého zajatce Omara kopat obří studnu do skály výměnou za svobodu a ruku milované ženy Fatimy. Jak legenda skončila?",
+  "answer": "Studnu po letech dokopal, ale svobodu ani lásku už nezískal",
+  "distractors": [
+   "Studnu vzdal v polovině a zůstal v zajetí navždy",
+   "Uprchl tunelem, který sám vykopal",
+   "Vodu nikdy nenašel a hrad kvůli tomu opustili"
+  ],
+  "quip_correct": "Roky kopání skrz skálu za lásku — a když konečně narazil na vodu, čekalo ho jen prázdné už je pozdě. Studna funguje, happy end ne.",
+  "quip_wrong": "Pověst o studni skončila hořčeji, než napovídá tenhle tip.",
+  "explanation": "Studna lásky na Trenčianském hradě je vyhloubená do skály do hloubky přes 70 metrů a její stavba měla podle historických záznamů trvat desítky let — dnes patří k nejnavštěvovanějším místům hradu.",
+  "about": "studni lásky na Trenčianském hradě",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a deep stone well shaft carved into rock inside a medieval castle courtyard, dramatic light falling from above"
  }
 ]

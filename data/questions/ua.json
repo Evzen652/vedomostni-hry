@@ -672,5 +672,215 @@
   "quip_wrong": "Hmm, ne! Croissant je francouzský — tahle česneková buchtička je čistě ukrajinská.",
   "explanation": "Pampušky jsou malé kulaté kynuté buchty, které se na Ukrajině servírují jako příloha k boršči nebo ke kapustnyaku. Po upečení se potírají česnekovým olejem s petrželkou. Jsou lehké, nadýchané a voní česnekem.",
   "about": "pampuškách"
+ },
+ {
+  "id": "ua-k-odesa-schody",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje slavné obrovské schodiště v přístavním městě Oděsa, které vede od moře až k parku nahoře?",
+  "answer": "Potěmkinovy schody",
+  "distractors": [
+   "Zlaté schody",
+   "Schody Sofijského chrámu",
+   "Karpatské schody"
+  ],
+  "quip_correct": "Tys to věděl! Dolů se seběhne rychle, ale nahoru už to pořádně zebe v lýtkách — a shora navíc schody úplně zmizí, vidíš jen širokou cestu.",
+  "quip_wrong": "Skoro! Schody v Oděse ano, ale jmenují se jinak.",
+  "explanation": "Schodiště bylo postavené v 19. století a má 192 schodů, které se směrem dolů mírně rozšiřují — proto ze shora vypadá jako rovná ulice a zdola jako nekonečná řada schodů.",
+  "about": "Potěmkinových schodech",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- grand wide stone staircase descending toward a harbor with ships, seagulls, morning light"
+ },
+ {
+  "id": "ua-k-arsenalna",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím je výjimečná stanice metra Arsenalna v Kyjevě?",
+  "answer": "Je to nejhlubší stanice metra na světě",
+  "distractors": [
+   "Je to nejmenší stanice metra na světě",
+   "Je celá postavená ze skla",
+   "Vlaky tam jezdí jen v noci"
+  ],
+  "quip_correct": "Tys to věděl! Eskalátor jede dolů tak dlouho, že bys stihl dojíst svačinu, než se dostaneš na nástupiště.",
+  "quip_wrong": "Ne tak úplně, ale pod zemí v Kyjevě se opravdu děje něco výjimečného.",
+  "explanation": "Stanice leží přes sto metrů pod zemí kvůli prudkému svahu nad řekou Dněpr, jízda na eskalátoru trvá skoro pět minut — nejdéle ze všech stanic metra na světě.",
+  "about": "stanici metra Arsenalna",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- extremely long steep escalator tunnel deep underground, warm lighting"
+ },
+ {
+  "id": "ua-t-kyjevsky-rizek",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Podle čeho je pojmenovaný celosvětově známý pokrm kyjevský řízek (chicken Kiev)?",
+  "answer": "Podle hlavního města Ukrajiny, přestože jeho skutečný původ je sporný",
+  "distractors": [
+   "Podle kuchaře jménem Kyjev",
+   "Podle řeky, ve které se kdysi lovilo kuře",
+   "Podle svátku Kyjevské republiky"
+  ],
+  "quip_correct": "Kuře plněné máslem nese jméno Kyjeva po celém světě — jen historikové se pořád hádají, jestli recept vůbec z Kyjeva pochází.",
+  "quip_wrong": "Jméno pokrmu vede jinam, ne k tomuhle vysvětlení.",
+  "explanation": "Někteří kulinární historici tvrdí, že podobný recept vznikl už dřív ve francouzské kuchyni a na Ukrajinu i do Ruska se dostal přes carské kuchaře, jméno kyjevský se ustálilo až ve 20. století.",
+  "about": "kyjevském řízku",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- golden breaded chicken cutlet cut open with butter spilling out, rustic wooden table"
+ },
+ {
+  "id": "ua-t-eurovize",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Kolikrát vyhrála Ukrajina soutěž Eurovision Song Contest (do roku 2022)?",
+  "answer": "Třikrát",
+  "distractors": [
+   "Jednou",
+   "Šestkrát",
+   "Nikdy"
+  ],
+  "quip_correct": "Tři vítězství — Ruslana, Jamala, Kalush Orchestra. Ukrajina si na pódiu Eurovize zvykla stávat úplně nahoře.",
+  "quip_wrong": "Ukrajina na Eurovizi vyhrávala, jen ne tolikrát.",
+  "explanation": "První výhru přinesla Ruslana v roce 2004, druhou Jamala v roce 2016 s písní o deportaci krymských Tatarů a třetí Kalush Orchestra v roce 2022.",
+  "about": "ukrajinských výhrách na Eurovizi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- colorful concert stage with dramatic lights and a singer silhouette, festive atmosphere"
+ },
+ {
+  "id": "ua-t-cernobyl-priroda",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Příroda",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo s divokou přírodou v uzavřené zóně kolem Černobylu po havárii jaderné elektrárny v roce 1986?",
+  "answer": "Bez lidí se tam přemnožili vlci, divocí koně i rysi",
+  "distractors": [
+   "Všechna zvířata v zóně vyhynula",
+   "Zóna zůstala úplně bez rostlin a zvířat",
+   "Zvířata se do zóny nikdy nevrátila"
+  ],
+  "quip_correct": "Lidé zmizeli a příroda si to tam vzala zpátky — vlků je dnes v zóně víc než v okolních obydlených lesích.",
+  "quip_wrong": "Příroda tam žije bohatě, jen ne podle tohohle scénáře.",
+  "explanation": "Vědci v černobylské zóně dokumentují stabilní populace losů a bobrů i vzácných koní Převalského, kteří sem byli v 90. letech vysazeni jako experiment.",
+  "about": "přírodě v černobylské zóně",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- overgrown forest reclaiming an abandoned building, wolf silhouette in tall grass, misty light"
+ },
+ {
+  "id": "ua-t-bukovel",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Místa",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je Bukovel v ukrajinských Karpatech?",
+  "answer": "Jedno z největších lyžařských středisek východní Evropy",
+  "distractors": [
+   "Nejvyšší vrchol Ukrajiny",
+   "Staré důlní město",
+   "Národní přírodní rezervace bez lidí"
+  ],
+  "quip_correct": "Sjezdovky uprostřed hor, kam v sezóně míří lyžaři z půl Evropy — Karpaty umí i tohle, ne jen medvědy a vlky.",
+  "quip_wrong": "V horách to je, ale s lyžováním to nemá nic společného.",
+  "explanation": "Bukovel vznikl až po roce 2000 a rychle se stal nejnavštěvovanějším lyžařským střediskem na Ukrajině, s desítkami sjezdovek a moderními vleky.",
+  "about": "Bukovelu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- snow-covered ski slopes in forested mountains, ski lift cables, winter sunlight"
+ },
+ {
+  "id": "ua-t-euro2012",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo na Ukrajině a v Polsku v roce 2012?",
+  "answer": "Společně hostily fotbalové mistrovství Evropy Euro 2012",
+  "distractors": [
+   "Sloučily se do jednoho státu",
+   "Zavedly společnou měnu",
+   "Poprvé otevřely společnou hranici"
+  ],
+  "quip_correct": "Kyjev, Lvov, Charkov i Doněck hostily zápasy Eura — stadiony plné fanoušků z celého kontinentu na pár týdnů v létě.",
+  "quip_wrong": "Spolupráce to byla, jen úplně jiného druhu.",
+  "explanation": "Finále turnaje se hrálo v Kyjevě, kde Španělsko porazilo Itálii 4:0, a pro Ukrajinu šlo o největší sportovní akci v její samostatné historii.",
+  "about": "Euru 2012",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- packed football stadium at dusk with floodlights, national flags waving"
+ },
+ {
+  "id": "ua-a-katakomby-odesa",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Místa",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Které město ukrývá největší souvislou síť katakomb na světě, mnohem rozsáhlejší než ty pařížské?",
+  "answer": "Oděsa",
+  "distractors": [
+   "Paříž",
+   "Kyjev",
+   "Lvov"
+  ],
+  "quip_correct": "Přes dva tisíce kilometrů chodeb pod městem — Paříž se svými katakombami je proti tomu jen skromný sklípek.",
+  "quip_wrong": "Podzemní bludiště existuje, jen jinde, než sis tipnul.",
+  "explanation": "Chodby vznikly těžbou vápence na stavbu města, za druhé světové války se v nich měsíce ukrývali partyzáni bojující proti okupaci.",
+  "about": "oděských katakombách",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- dark limestone tunnel underground with rough carved walls, single lantern light"
+ },
+ {
+  "id": "ua-a-lavra-mumie",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Místa",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co ukrývají staleté jeskyně kláštera Kyjevsko-pečerská lavra?",
+  "answer": "Přirozeně mumifikovaná těla mnichů, dodnes uctívaná jako ostatky svatých",
+  "distractors": [
+   "Zlatý poklad kyjevských knížat",
+   "Podzemní jezero s pitnou vodou",
+   "Archiv nejstarších ukrajinských knih"
+  ],
+  "quip_correct": "Suchý vzduch jeskyní mumifikoval mnichy bez jediného balzamovacího řezu — a poutníci k nim chodí dodnes, ne jako do muzea, ale jako na pouť.",
+  "quip_wrong": "Poklad tam je, jen úplně jiné povahy.",
+  "explanation": "Lavra byla založena v 11. století a její jeskynní chodby jsou dodnes aktivní součástí kláštera, kam míří poutníci z celé pravoslavné církve.",
+  "about": "Kyjevsko-pečerské lavře",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- dim candlelit underground monastery cave corridor, ancient stone walls, golden icon glow"
+ },
+ {
+  "id": "ua-a-grammarly",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Lidé",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co spojuje aplikaci Grammarly, kterou k psaní angličtiny používají miliony lidí po celém světě, s Ukrajinou?",
+  "answer": "Založili ji ukrajinští programátoři v Kyjevě",
+  "distractors": [
+   "Vznikla jako projekt ukrajinské vlády",
+   "Je to překlad staršího ruského programu",
+   "Nemá s Ukrajinou nic společného, jde jen o podobné jméno"
+  ],
+  "quip_correct": "Miliony cizinců si opravují angličtinu programem, který vymysleli lidé z Kyjeva — o zdrojovém kódu jejich rodné řeči přitom nepadne ani zmínka.",
+  "quip_wrong": "Souvislost s Ukrajinou existuje, akorát úplně jiná.",
+  "explanation": "Grammarly založili v roce 2009 Alex Ševčenko, Max Lytvyn a Dmytro Lider, dnes patří k nejúspěšnějším softwarovým firmám založeným Ukrajinci.",
+  "about": "aplikaci Grammarly",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- laptop glowing softly on a desk with a coffee cup, cozy home office"
  }
 ]

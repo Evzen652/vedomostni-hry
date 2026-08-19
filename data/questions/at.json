@@ -1075,5 +1075,173 @@
   "explanation": "Zoo ve Schönbrunnu vznikla v roce 1752 jako soukromá menažerie Františka I. Veřejnosti byla otevřena roku 1779. Dnes je jednou z mála zoo na světě, kde se pravidelně daří chovat velké pandy — díky dlouhodobé dohodě s Čínou.",
   "about": "historii zoo ve Schönbrunnu",
   "image_prompt": "A painterly watercolor illustration of the historic baroque Tiergarten Schönbrunn with its octagonal pavilion and exotic animals in 18th century Vienna, vintage travel journal style"
+ },
+ {
+  "id": "at-k-riesenrad",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve vídeňském parku Prater stojí přes sto let obrovské kolo, na které lidé nastupují do kabinek a vyhlídkově se svezou vysoko nad město. Jak se takové atrakci říká?",
+  "answer": "Vyhlídkové (ruské) kolo",
+  "distractors": [
+   "Horská dráha",
+   "Kolotoč s koníky",
+   "Skluzavka do vody"
+  ],
+  "quip_correct": "Tys to věděl! Vídeňské kolo v Prateru se točí už od roku 1897 a pořád vozí výhled na celé město.",
+  "quip_wrong": "Hmm, ne tak úplně! Žádná horská dráha ani skluzavka — v Prateru se lidé vozí ve vyhlídkovém kole vysoko nad městem.",
+  "explanation": "Vídeňské vyhlídkové kolo v parku Prater patří k nejstarším svého druhu na světě. Jeho kabinky se pomalu otáčí dokola a z nejvyššího bodu je vidět kus celé Vídně.",
+  "about": "vídeňském vyhlídkovém kole v Prateru",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a giant Ferris wheel in a Vienna amusement park against a soft sky"
+ },
+ {
+  "id": "at-k-kravske-zvonce",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V rakouských horách chodí krávy na pastvu s velkými zvonci na krku. K čemu ty zvonce pastevcům slouží?",
+  "answer": "Podle zvuku snadno najdou, kde se krávy po horách toulají",
+  "distractors": [
+   "Odhánějí zvonci vlky pryč",
+   "Krávy si zvonci hrají jako s hračkou",
+   "Zvonce krávám pomáhají lépe slyšet"
+  ],
+  "quip_correct": "Tys to věděl! Některý zvonec váží i pár kilo — kráva ho nosí na krku celé léto a nikomu to nevadí.",
+  "quip_wrong": "Hmm, ne! Zvonec neodhání vlky ani neslouží jako hračka — pastevci díky němu jednoduše slyší, kde se která kráva toulá.",
+  "explanation": "V alpských horách se stáda krav na léto pouštějí volně na rozlehlé pastviny. Bez zvonců by je pastevci mezi skalami a lesy jen těžko hledali — cinkání je prozradí na dálku.",
+  "about": "kravských zvoncích v rakouských horách",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a brown alpine cow with a large bell around its neck grazing on a green mountain meadow"
+ },
+ {
+  "id": "at-t-vidensky-chlapecky-sbor",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Vídeňský chlapecký sbor zpívá už přes 500 let. Proč musí každý chlapec sbor jednou opustit, ať zpívá sebelíp?",
+  "answer": "Jakmile mu ve zhruba čtrnácti letech začne mutovat hlas",
+  "distractors": [
+   "Musí odejít nejpozději v deseti letech, bez výjimky",
+   "Sbor mění celé obsazení každý rok",
+   "Chlapci odcházejí, jakmile vyrostou nad 150 cm"
+  ],
+  "quip_correct": "Cool fakt: klukovský hlas má v tomhle sboru datum spotřeby. Mutace rozhoduje o kariéře přesněji než talent.",
+  "quip_wrong": "Ne o centimetrech ani o pevném věkovém limitu tu jde — chlapce ze sboru vyřadí až mutace hlasu.",
+  "explanation": "Vídeňský chlapecký sbor založil v roce 1498 císař Maxmilián I. jako dvorní kapelu. Bývalí zpěváci ze sboru později často pokračují v hudební kariéře jako dospělí pěvci nebo dirigenti.",
+  "about": "Vídeňském chlapeckém sboru",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a boys choir singing in sailor-style uniforms inside an ornate Vienna chapel"
+ },
+ {
+  "id": "at-t-falco",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Kultura",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Rakouský zpěvák Falco se s písní Rock Me Amadeus dostal na první místo americké hitparády Billboard. Co je na tom unikátní dodnes?",
+  "answer": "Je to jediná německy zpívaná píseň, která se kdy v USA dostala na 1. místo",
+  "distractors": [
+   "Je to jediná rakouská píseň, co vůbec pronikla do USA",
+   "Dodnes ji předstihla jiná německy zpívaná píseň",
+   "Byla to první píseň v historii hitparády vůbec o klasické hudbě"
+  ],
+  "quip_correct": "Jedna píseň, jeden jazyk, jedno místo v historii americké hitparády — a nikdo jiný to po Falcovi němčinou nezopakoval.",
+  "quip_wrong": "Do USA se dostaly i jiné evropské písně a žádná německá skladba ji od té doby nepředstihla — výjimečnost Rock Me Amadeus je v tom, že šlo o němčinu na vrcholu Billboardu.",
+  "explanation": "Falco vlastním jménem Johann Hölzel pocházel z Vídně a píseň Rock Me Amadeus, věnovaná Wolfgangu Amadeu Mozartovi, se v roce 1986 na týden dostala na první místo Billboard Hot 100.",
+  "about": "písni Rock Me Amadeus od Falca",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a 1980s pop singer silhouette on stage with neon stage lights in Vienna"
+ },
+ {
+  "id": "at-t-vinice-ve-vidni",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Místa",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím je Vídeň mezi světovými hlavními městy výjimečná, pokud jde o víno?",
+  "answer": "Je to jediné hlavní město světa s rozsáhlými vinicemi přímo uvnitř svých hranic",
+  "distractors": [
+   "Je jediné hlavní město, kde je pěstování vína úplně zakázané",
+   "Má nejvíc vinařství ze všech evropských hlavních měst dohromady",
+   "Víno se ve Vídni pěstuje jen v květináčích na balkonech"
+  ],
+  "quip_correct": "Vinohrad na dohled od tramvaje — jinde v žádné metropoli svět nenajdeš. Vídeňáci si po práci dojdou rovnou na sklenku z vlastní čtvrti.",
+  "quip_wrong": "Zákaz vína ani květináče na balkoně — Vídeň je naopak jediná metropole s opravdovými vinicemi přímo ve městě.",
+  "explanation": "Na okraji Vídně se rozkládá přes 600 hektarů vinic, kde se pěstuje mimo jiné odrůda Wiener Gemischter Satz. Mladé víno se čepuje přímo v tradičních vinárnách zvaných Heuriger.",
+  "about": "vídeňských vinicích",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, rolling vineyard hills on the edge of Vienna with the city skyline faint in the distance"
+ },
+ {
+  "id": "at-t-strecha-stephansdomu",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Umění",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je vyskládané z barevných tašek na střeše vídeňského Stephansdómu, když se na ni podíváš z dálky?",
+  "answer": "Obrazec dvouhlavého habsburského orla",
+  "distractors": [
+   "Nápis s rokem založení katedrály",
+   "Mapa celé Vídně",
+   "Portrét stavitele katedrály"
+  ],
+  "quip_correct": "Statisíce tašek, jeden velký erb na střeše. Pohled shora vypadá jak vyšívaný koberec, ne obyčejná krytina.",
+  "quip_wrong": "Žádná mapa ani portrét stavitele — na střeše katedrály je vyskládaný dvouhlavý habsburský orel.",
+  "explanation": "Střecha Stephansdómu je pokrytá více než 230 000 glazovanými taškami. Na jižní straně tvoří vzor habsburského dvouhlavého orla, na severní straně znak Vídně a Rakouska.",
+  "about": "střeše vídeňského Stephansdómu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, the colorful tiled roof pattern of a gothic cathedral in Vienna forming a large eagle mosaic"
+ },
+ {
+  "id": "at-a-filharmonie-zeny",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Kultura",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Do kdy Vídeňská filharmonie oficiálně odmítala přijmout ženy jako řádné členky orchestru?",
+  "answer": "Do roku 1997",
+  "distractors": [
+   "Do roku 1955",
+   "Ženy odmítala jen do 60. let 19. století",
+   "Ženy přijímá běžně od svého založení"
+  ],
+  "quip_correct": "Jeden z nejslavnějších orchestrů světa čekal se ženskou řádnou členkou do roku 1997. Hudba se prý posuzuje podle sluchu — pravidla se řídila podle něčeho jiného.",
+  "quip_wrong": "Rozhodně ne od založení a ne v 19. ani v polovině 20. století — na první řádnou členku čekala filharmonie až do roku 1997.",
+  "explanation": "Harfenistka Anna Lelkes hrála s Vídeňskou filharmonií neoficiálně už od roku 1971, ale hlasovací právo řádné členky dostala teprve v roce 1997 po mezinárodních protestech proti politice orchestru.",
+  "about": "historii žen ve Vídeňské filharmonii",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, an elegant orchestra harpist on a golden concert hall stage in Vienna"
+ },
+ {
+  "id": "at-a-nejstarsi-restaurace",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Salcburská restaurace St. Peter Stiftskeller se chlubí, že je nejstarší restaurací v Evropě. Od kdy je doložená?",
+  "answer": "Od roku 803, z doby Karla Velikého",
+  "distractors": [
+   "Od roku 1403, ze středověku",
+   "Od roku 1803, z napoleonské doby",
+   "Otevřela se až po druhé světové válce"
+  ],
+  "quip_correct": "Karel Veliký ještě nevládl ani celé říši a v Salcburku už mniši nalévali hostům. O dvanáct set let později tam pořád servírují oběd.",
+  "quip_wrong": "Ani středověk, ani napoleonská doba, natož poválečná léta — písemná zmínka o salcburské restauraci sahá až k roku 803.",
+  "explanation": "Restauraci provozuje benediktinský klášter svatého Petra a první písemná zmínka pochází z textu učence Alkuina, přítele Karla Velikého. Kvůli tomu se traduje jako nejstarší dosud fungující restaurace v Evropě.",
+  "about": "salcburské restauraci St. Peter Stiftskeller",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a cozy medieval monastery restaurant interior with stone arches and candlelight in Salzburg"
  }
 ]

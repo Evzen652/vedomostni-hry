@@ -676,5 +676,215 @@
   "quip_wrong": "Hmm, vedle! Lev ani vlk na polském znaku nesedí — tam hlídá bílý orel.",
   "explanation": "Polský bílý orel se poprvé objevil na pečetích knížat ve 13. století. Dnes ho najdeš na státním znaku i na každé polské minci — zlaté zlotý ho nese na averzu.",
   "about": "znaku Polska"
+ },
+ {
+  "id": "pl-k-vlajka",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Symboly",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaké dvě barvy má polská vlajka a v jakém pořadí jsou seřazené shora dolů?",
+  "answer": "Bílá nahoře, červená dole",
+  "distractors": [
+   "Červená nahoře, bílá dole",
+   "Bílá a modrá",
+   "Červená a zelená"
+  ],
+  "quip_correct": "Tys to věděl! Bílá nahoře, červená dole — přesně obráceně, než by čekal ledajaký kolemjdoucí.",
+  "quip_wrong": "Skoro, ale pořadí barev je obráceně, než sis myslel.",
+  "explanation": "Polská vlajka má dva vodorovné pruhy — bílý nahoře a červený dole. Tyto barvy jsou v Polsku spojené s národní hrdostí už přes sto let a najdeš je i na dresech polských sportovců.",
+  "about": "polské vlajce",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a simple white and red flag waving gently on a pole against a soft sky"
+ },
+ {
+  "id": "pl-k-syrenka",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaké bájné stvoření drží v ruce meč a štít na znaku Varšavy a podle pověsti město chrání?",
+  "answer": "Mořská panna (Syrenka)",
+  "distractors": [
+   "Drak",
+   "Bílý medvěd",
+   "Okřídlený kůň"
+  ],
+  "quip_correct": "Tys to věděl! Syrenka se sochou i s mečem stojí přímo na varšavském nábřeží — kdo by čekal, že mořská panna umí bojovat.",
+  "quip_wrong": "Ouha, ne toto zvíře! To bájné stvoření na varšavském znaku má rybí ocas, ne šupiny draka.",
+  "explanation": "Podle staré pověsti mořská panna doplavala Vislou až do Varšavy, zamilovala si město a slíbila ho chránit — proto ji dodnes najdeš se štítem a mečem na varšavském znaku i na soše u řeky.",
+  "about": "varšavské Syrence",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a mermaid statue holding a sword and shield beside a wide river"
+ },
+ {
+  "id": "pl-t-jp2",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Lidé",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím byl Karol Wojtyła, zvolený papežem roku 1978, výjimečný v dlouhé řadě předchozích papežů?",
+  "answer": "Byl prvním neitalským papežem po více než 450 letech",
+  "distractors": [
+   "Byl nejmladším zvoleným papežem v historii",
+   "Byl prvním papežem, který navštívil vesmír",
+   "Byl posledním papežem zvoleným jednomyslně"
+  ],
+  "quip_correct": "Přes čtyři a půl století italské série přerušil Polák — konkláve zjevně usoudilo, že je čas na změnu přízvuku.",
+  "quip_wrong": "Zajímavý rekord, ale ne ten, který Wojtyła skutečně vytvořil.",
+  "explanation": "Karol Wojtyła se jako Jan Pavel II. stal papežem v roce 1978; posledním neitalským papežem před ním byl Holanďan Hadrián VI. v roce 1522, takže přestávka trvala přes 450 let.",
+  "about": "Karolu Wojtylovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a solitary figure in white papal vestments silhouetted on a balcony overlooking a square"
+ },
+ {
+  "id": "pl-t-wieliczka",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Místa",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je zvláštního na kapli svaté Kingy v solném dole Wieliczka u Krakova?",
+  "answer": "Úplně všechno v ní — sochy, oltář i lustry — je vytesané ze soli",
+  "distractors": [
+   "Je celá postavená ze zlata darovaného těžaři",
+   "Je to jediná kaple v Polsku bez oken",
+   "Je zavěšená na řetězech nad podzemním jezerem"
+  ],
+  "quip_correct": "Lustr ze soli, který vypadá jako křišťál, a modlitby, co se odrážejí od solných zdí stovky metrů pod zemí — kostel, který by teoreticky šel osolit.",
+  "quip_wrong": "Nápaditá představa, ale kaple drží pohromadě úplně jiným materiálem.",
+  "explanation": "Solný důl Wieliczka se těží nepřetržitě přes 700 let a horníci si v něm sami vytesali podzemní kapli — i lustry v ní jsou vyrobené z čistě průhledné krystalické soli.",
+  "about": "solném dole Wieliczka",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, an underground chapel carved entirely from pale salt with a glowing chandelier"
+ },
+ {
+  "id": "pl-t-drak",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak podle pověsti šikovný ševcovský učeň porazil dravého draka žijícího v jeskyni pod krakovským hradem Wawel?",
+  "answer": "Nakrmil ho ovcí nadranou sírou, takže drak vypil celou řeku a praskl",
+  "distractors": [
+   "Uspal ho kouzelnou písní",
+   "Zabil ho v přímém souboji mečem",
+   "Zahnal ho hlasitým zvoněním na zvony"
+  ],
+  "quip_correct": "Síra místo meče — chytrost porazila draka tam, kde by rytíři akorát skončili jako svačina.",
+  "quip_wrong": "Odvážná taktika, ale draka nakonec zahubila lest, ne síla.",
+  "explanation": "Socha Wawelského draka stojí dodnes u vchodu do jeskyně pod hradem a několikrát za hodinu opravdu chrlí oheň z plynové trysky — je to jedna z nejfotografovanějších soch v Krakově.",
+  "about": "wawelském draku",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a stone dragon statue breathing fire at the mouth of a riverside cave beneath a castle hill"
+ },
+ {
+  "id": "pl-t-bigos",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Co si o tradičním polském bigosu vypráví staré rčení o jeho chuti?",
+  "answer": "Že čím víckrát se ohřeje, tím lépe chutná",
+  "distractors": [
+   "Že se musí sníst do hodiny po uvaření",
+   "Že chutná nejlépe úplně studený",
+   "Že druhý den chutná vždy hůř"
+  ],
+  "quip_correct": "Guláš, kterému čas dělá dobře — některé rodiny svůj hrnec bigosu ohřívají a doplňují celé týdny, jako by vařily nesmrtelnou polévku.",
+  "quip_wrong": "Logika naruby — bigos je přesně ten pokrm, který čas nezkazí, ale vylepší.",
+  "explanation": "Bigos se vaří z kysaného i čerstvého zelí a různých druhů masa a uzenin; díky dlouhému dušení a opakovanému ohřívání se chutě postupně prolínají a jídlo je považováno za lepší po pár dnech než čerstvé.",
+  "about": "bigosu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a large simmering pot of stew with cabbage and sausage over a rustic stove"
+ },
+ {
+  "id": "pl-t-jantar",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Místa",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč se polskému Gdaňsku dlouhodobě přezdívá 'jantarová metropole světa'?",
+  "answer": "Prochází jím a zpracovává se tam velká část světové těžby baltského jantaru",
+  "distractors": [
+   "Město má ulice dlážděné jantarem",
+   "Vyrábí se tam nejdražší jantarové šperky planety",
+   "Jantar se tam poprvé objevil v přírodě"
+  ],
+  "quip_correct": "Zkamenělá pryskyřice stará miliony let a Gdaňsk z ní udělal celoživotní byznys — obchodníci tu prodávají jantar stejně samozřejmě, jako jinde prodávají pečivo.",
+  "quip_wrong": "Blízko materiálem, ale ne tím, čím si Gdaňsk svou pověst vysloužil.",
+  "explanation": "Pobřeží Baltského moře kolem Gdaňsku patří k největším nalezištím jantaru na světě a přes městské dílny a trhy projde odhadem velká část jantaru vytěženého na planetě.",
+  "about": "gdaňském jantaru",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, amber stones and jewelry displayed on a market table near a harbor"
+ },
+ {
+  "id": "pl-a-palac",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Místa",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč Poláci o Paláci kultury a vědy ve Varšavě říkají, že z něj je nejhezčí výhled na Varšavu?",
+  "answer": "Protože je to jediné místo ve městě, odkud samotný Palác není vidět",
+  "distractors": [
+   "Protože je to nejvyšší budova v celé Evropě",
+   "Protože z něj je vidět až do Krakova",
+   "Protože v okolí zbourali všechny ostatní budovy"
+  ],
+  "quip_correct": "Stalinův 'dárek' Varšavě, který si polovina města dodnes přeje zabalit a poslat zpátky — a vtip o výhledu z něj je ostřejší než cokoli, co kdy budova sama nabídla.",
+  "quip_wrong": "Vtip funguje jinak, než sis myslel — nejde o výšku ani o polohu, ale o to, co z něj vidět není.",
+  "explanation": "Palác kultury a vědy nechal v 50. letech postavit Sovětský svaz jako 'dar' Polsku a dodnes je nejvyšší budovou v zemi; vtip o výhledu koluje mezi Varšavany už desítky let jako tichá poznámka k tomu, jak moc si dárek nikdo nepřál.",
+  "about": "Paláci kultury a vědy",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a towering socialist-era skyscraper dominating a city skyline at dusk"
+ },
+ {
+  "id": "pl-a-krasnale",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak vznikla tradice stovek bronzových trpaslíků, kteří dnes sedí po celém centru Wrocławi?",
+  "answer": "Ze symbolu protikomunistického protestního hnutí z 80. let, který se po revoluci proměnil v turistickou atrakci",
+  "distractors": [
+   "Objednalo je město jako reklamu na místní pivovar",
+   "Vznikly jako dárek od německého partnerského města",
+   "Je to pozůstatek středověké pověsti o skřítcích v dolech"
+  ],
+  "quip_correct": "Namalovat trpaslíka přes zamalovaná protivládní hesla byl ve své době odvážný trik proti policii — dnes za stejným trpaslíkem stojí fronta turistů s mapou a foťákem.",
+  "quip_wrong": "Nápaditá teorie, ale trpaslíci mají mnohem politicky pikantnější rodokmen.",
+  "explanation": "Hnutí Oranžová alternativa v 80. letech malovalo trpaslíky přes zamalovaná protirežimní hesla, aby zesměšnilo cenzuru; po roce 2001 z toho město udělalo turistickou značku a dnes jich po Wrocławi stojí přes šest set.",
+  "about": "wrocławských trpaslících",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, tiny bronze dwarf figurines scattered along a cobblestone city street"
+ },
+ {
+  "id": "pl-a-zubrowka",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč byla polská vodka Żubrówka dlouho v USA prodávána jen v upravené verzi bez pravé bylinné příchutě?",
+  "answer": "Protože tráva, kterou je aromatizovaná, obsahuje látku zakázanou americkými úřady",
+  "distractors": [
+   "Protože recept byl přísně utajovaným státním tajemstvím",
+   "Protože dovoz polského alkoholu do USA dlouho blokovalo embargo",
+   "Protože v USA chyběla surovina, ze které se vodka pálí"
+  ],
+  "quip_correct": "Vodka ochucená trávou, kterou žerou zubři v Bělověžském pralese, narazila v Americe na úřad, který se lekl jedné jediné chemické látky — zubrům samotným to očividně nikdy nevadilo.",
+  "quip_wrong": "Zajímavý nápad, ale důvod zákazu byl mnohem chemičtější.",
+  "explanation": "Żubrówka se aromatizuje bylinou žitnicí vonnou, kterou má rád i zubr evropský; obsahuje ale přírodní látku kumarin, kterou americké úřady dlouho považovaly za zdravotně rizikovou, a proto se do USA desítky let vyvážela verze bez pravého bylinného extraktu.",
+  "about": "żubrówce",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a bottle of pale herbal vodka with a single blade of grass inside, standing on a wooden table"
  }
 ]

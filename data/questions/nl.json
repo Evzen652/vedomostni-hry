@@ -1139,5 +1139,173 @@
   "explanation": "Heineken viděl na Karibských ostrovech spoustu odpadků a nedostatek stavebních materiálů. Vytvořil hranaté láhve, které do sebe zapadaly jako Lego. Projekt nakonec zkrachoval, protože dodavatelé nechtěli plnit nestandardní tvar.",
   "about": "pivní cihlě WOBO od Heinekenu",
   "image_prompt": "Green rectangular glass Heineken WOBO bottles stacked together like bricks in a wall, painterly watercolor gouache illustration, vintage travel journal style"
+ },
+ {
+  "id": "nl-k-syrovy-trh",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na tradičním sýrovém trhu v Alkmaaru nosí muži velké kulaté sýry na dřevěných nosítkách. Podle čeho poznáš, ke které partě nosičů patří?",
+  "answer": "Podle barvy klobouku, který mají na hlavě",
+  "distractors": [
+   "Podle barvy ponožek",
+   "Podle jazyka, kterým na trhu mluví",
+   "Podle velikosti sýra, který zrovna nesou"
+  ],
+  "quip_correct": "Tys to věděl! Barevný klobouk prozradí partu nosičů rychleji, než bys stihl sýr ochutnat.",
+  "quip_wrong": "Ne ponožky ani jazyk! Nosiče sýra v Alkmaaru od sebe rozeznáš podle barvy klobouku.",
+  "explanation": "Sýrový trh v Alkmaaru se koná už od roku 1593 a dodnes probíhá jen v pátek dopoledne a jen v teplejších měsících roku. Sýry se nakonec váží na staré městské váze a celý obřad sledují davy turistů jako živé divadlo.",
+  "about": "sýrovém trhu v Alkmaaru",
+  "image_prompt": "Dutch cheese carriers wearing colorful straw hats carrying rounds of yellow cheese on wooden stretchers across a market square, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "nl-k-hausbot",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V Amsterodamu žijí tisíce lidí přímo na vodě. Kde přesně bydlí?",
+  "answer": "V hausbótech zakotvených podél kanálů",
+  "distractors": [
+   "Ve stanech na říčních březích",
+   "V podzemních bytech pod kanály",
+   "Na velkých výletních lodích, které stále plují po městě"
+  ],
+  "quip_correct": "Tys to věděl! Adresa s vlastním přístavištěm — v Amsterodamu je bydlení na vodě stejně obyčejné jako v přízemí.",
+  "quip_wrong": "Žádné stany ani lodě na cestách — tihle lidé mají domov v hausbótu, co je pevně zakotvený na jednom místě.",
+  "explanation": "V Amsterodamu je zaregistrováno přes 2500 hausbótů. Řada z nich jsou bývalé nákladní čluny nebo remorkéry přestavěné na útulné domy s vlastní poštovní adresou, přípojkou vody i elektřiny.",
+  "about": "hausbótech na amsterodamských kanálech",
+  "image_prompt": "Cozy colorful houseboats moored along an Amsterdam canal with flower pots on their roofs, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "nl-t-oranje-finale",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Nizozemský fotbalový národní tým Oranje patří mezi nejlepší na světě. Jaký je jeho smutně proslulý rekord?",
+  "answer": "Třikrát hrál finále mistrovství světa a třikrát prohrál",
+  "distractors": [
+   "Nikdy nepostoupil ze skupiny na mistrovství světa",
+   "Vyhrál mistrovství světa, ale kvůli dopingu o titul přišel",
+   "Nikdy se nekvalifikoval na mistrovství Evropy"
+  ],
+  "quip_correct": "Tři finále, nula titulů. Nizozemsko je fotbalový král bez koruny.",
+  "quip_wrong": "Nizozemsko se skupinou nikdy problém nemělo — potíže přišly vždycky až ve finále.",
+  "explanation": "Oranje prohráli finále mistrovství světa v letech 1974 proti Německu, 1978 proti Argentině a 2010 proti Španělsku. Přesto se tým právem řadí mezi nejvlivnější v historii fotbalu díky stylu totálního fotbalu, který proslavil Johan Cruyff.",
+  "about": "fotbalové smůle nizozemského národního týmu ve finále mistrovství světa",
+  "image_prompt": "A dejected Dutch football player in an orange jersey sitting on the pitch after a lost final, stadium lights in the background, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "nl-t-mata-hari",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Lidé",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo nizozemské tanečnici Mata Hari v roce 1917?",
+  "answer": "Byla ve Francii popravena za špionáž pro Německo",
+  "distractors": [
+   "Stala se první nizozemskou filmovou hvězdou v Hollywoodu",
+   "Byla korunována jako nizozemská královna krásy",
+   "Emigrovala do Ameriky a založila tam tančírnu"
+  ],
+  "quip_correct": "Exotický tanec, obvinění ze špionáže, popravčí četa — Mata Hari měla životopis jako z filmu, jen bez šťastného konce.",
+  "quip_wrong": "Žádný Hollywood ani korunovace — příběh Mata Hari skončil mnohem dramatičtěji, před popravčí četou.",
+  "explanation": "Mata Hari se ve skutečnosti jmenovala Margaretha Geertruida Zelle a narodila se v nizozemském Leeuwardenu. Proslula jako exotická tanečnice v Paříži, ale historikové dodnes nejsou zajedno v tom, zda byla skutečná dvojitá agentka, nebo jen pohodlný obětní beránek francouzské armády.",
+  "about": "Mata Hari, nizozemské tanečnici popravené za špionáž",
+  "image_prompt": "A mysterious elegant dancer in an exotic costume standing in the shadows of a 1910s Parisian theater, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "nl-t-nejvyssi-lide",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Lidé",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Podle výzkumů jsou lidé které národnosti v průměru nejvyšší na světě?",
+  "answer": "Nizozemské",
+  "distractors": [
+   "Švédské",
+   "Německé",
+   "Dánské"
+  ],
+  "quip_correct": "Ve dveřích vlaku se přikrčí i vysoký cizinec — Nizozemci vedou žebříček výšky bez konkurence.",
+  "quip_wrong": "Blízko severu, ale netrefil ses — v žebříčku výšky vedou právě Nizozemci.",
+  "explanation": "Nizozemští muži měří v průměru kolem 183 centimetrů. Zajímavé je, že ještě před 150 lety patřili Nizozemci naopak k nejmenším národům Evropy — vědci nárůst vysvětlují hlavně bohatou stravou s velkým podílem mléčných výrobků a zlepšenou zdravotní péčí.",
+  "about": "průměrné výšce Nizozemců",
+  "image_prompt": "A tall Dutch cyclist ducking slightly under a low doorway of an old canal house, gentle humor, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "nl-t-hranolky-majoneza",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Co si Nizozemci typicky dají na hranolky místo kečupu?",
+  "answer": "Majonézu",
+  "distractors": [
+   "Sójovou omáčku",
+   "Jogurtovou omáčku s koprem",
+   "Nic, hranolky jedí vždy bez omáčky"
+  ],
+  "quip_correct": "Kečup si tu radši nech pro sebe. Hranolky s majonézou jsou v Nizozemsku skoro národní hymna.",
+  "quip_wrong": "Sója ani kopr — klasika k hranolkům je tu hustá bílá majonéza.",
+  "explanation": "Speciální majonézová omáčka na hranolky se jmenuje fritessaus a je oproti běžné majonéze méně sladká a méně tučná, přesně uzpůsobená k namáčení. Nizozemci patří k největším konzumentům hranolků v Evropě a prodávají se na stáncích s vlastními jmény, například patat nebo friet.",
+  "about": "nizozemských hranolkách s majonézou",
+  "image_prompt": "A paper cone of golden fries topped with a generous swirl of white mayonnaise sauce, street food stall in the background, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "nl-a-otroctvi-omluva",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Kdy se nizozemský král oficiálně omluvil za roli Nizozemska v transatlantickém obchodu s otroky?",
+  "answer": "Až v roce 2023 — přesně 150 let po skutečném konci nucené práce v koloniích",
+  "distractors": [
+   "V roce 1863, hned po přijetí zákona o zrušení otroctví",
+   "Nikdy se oficiálně neomluvil, jen soukromě litoval",
+   "V roce 1945, hned po druhé světové válce"
+  ],
+  "quip_correct": "Zlaté věky amsterodamských kupeckých paláců stavěly peníze z otroctví. Omluva na sebe nechala čekat rovných sto padesát let.",
+  "quip_wrong": "Ani hned po zrušení zákonem, ani po válce — na formální omluvu čekalo Nizozemsko až do roku 2023.",
+  "explanation": "Zákon zrušil otroctví v nizozemských koloniích v roce 1863, ale zotročení lidé museli ještě dalších deset let povinně pracovat pro bývalé majitele v takzvaném učednictví — skutečnou svobodu tak získali až v roce 1873. Král Vilém-Alexander se veřejně omluvil 1. července 2023 při výročí tohoto data.",
+  "about": "nizozemském otrokářském obchodu a královské omluvě z roku 2023",
+  "image_prompt": "A solemn historical Amsterdam merchant house facade at dusk with a ship silhouette faintly reflected in a canal, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "nl-a-coffeeshop-paradox",
+  "cc": "nl",
+  "country": "Nizozemsko",
+  "section": "Kultura",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Nizozemské coffee shopy smí legálně prodávat marihuanu zákazníkům. V čem spočívá jejich slavný právní paradox?",
+  "answer": "Prodej je tolerovaný, ale pěstování a dovoz zásob zůstává trestným činem — obchody tak nemají odkud legálně brát zboží",
+  "distractors": [
+   "Prodávat smí jen cizincům, Nizozemcům samotným je to zakázáno",
+   "Legální je jen nákup, samotný prodej zůstává nelegální",
+   "Marihuana je legální pouze v Amsterodamu, jinde v zemi ne"
+  ],
+  "quip_correct": "Prodávat smíš, ale sehnat zboží legálně nesmíš. Nizozemská tolerance má díru přesně velikosti zadních dveří.",
+  "quip_wrong": "Žádná cizinecká klauzule ani obrácený zákaz — paradox coffee shopů je v tom, že zásoby musí přijít oklikou, ilegálně.",
+  "explanation": "Tento nesoulad se v Nizozemsku přezdívá achterdeurprobleem, tedy problém zadních dveří. Vláda proto od začátku 20. let 21. století testuje v několika městech pilotní program, ve kterém úřady samy regulují a schvalují legální pěstitele pro zásobování coffee shopů.",
+  "about": "právním paradoxu nizozemských coffee shopů",
+  "image_prompt": "A cozy Amsterdam coffeeshop storefront with a discreet green leaf sign, quiet canal street outside, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  }
 ]

@@ -1245,5 +1245,173 @@
   "explanation": "Darienská výprava (1698–1700) chtěla získat kontrolu nad Panamskou šíjí a ovládnout světový obchod. Osada zahynula na tropické nemoci a španělský odpor; Anglie záměrně odmítla pomoci. Finanční pohroma vedla k Aktu o unii roku 1707, kde Anglie skotský dluh splatila.",
   "about": "Darienské výpravě a vzniku Velké Británie",
   "image_prompt": "A painterly watercolor illustration of Scottish ships wrecked on a tropical shore with dense jungle, exhausted colonists gathered on the beach, vintage travel journal style"
+ },
+ {
+  "id": "gb-k-london-eye",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje obrovské vyhlídkové kolo, které se pomalu otáčí u řeky Temže v centru Londýna?",
+  "answer": "London Eye",
+  "distractors": [
+   "Tower Wheel",
+   "Greenwich Circle",
+   "Camden Eye"
+  ],
+  "quip_correct": "Tys to věděl! Kolo je tak obrovské, že z něj v jasný den uvidíš i přes 40 kilometrů daleko.",
+  "quip_wrong": "Skoro! Ta jména zní britsky, ale vyhlídkové kolo u Temže se jmenuje jinak — a je fakt obří.",
+  "explanation": "London Eye má 32 uzavřených kabin (jednu z nich raději neoznačují číslem 13) a jedna otočka trvá kolem 30 minut, takže se kolo prakticky nikdy úplně nezastavuje ani při nástupu cestujících.",
+  "about": "vyhlídkovém kole London Eye",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a giant observation wheel beside a wide river with a city skyline glowing behind it"
+ },
+ {
+  "id": "gb-t-union-jack-wales",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Historie",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Která země Spojeného království chybí na národní vlajce Union Jack, i když je jeho pevnou součástí?",
+  "answer": "Wales",
+  "distractors": [
+   "Skotsko",
+   "Irsko",
+   "Anglie"
+  ],
+  "quip_correct": "Wales na vlajce nikde nenajdeš — a přitom velšský drak patří k nejznámějším symbolům celých ostrovů.",
+  "quip_wrong": "Skotsko i Irsko svůj kříž na vlajce mají — hledej zemi, která na Union Jacku chybí úplně.",
+  "explanation": "Union Jack vznikl spojením kříže svatého Jiří (Anglie), svatého Ondřeje (Skotsko) a svatého Patrika (Irsko) — Wales byl v roce 1801, kdy vlajka vznikla, už dávno součástí Anglického království, takže vlastní kříž nedostal.",
+  "about": "britské vlajce Union Jack",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a large national flag with overlapping crosses waving against a cloudy sky"
+ },
+ {
+  "id": "gb-t-metro-prvni",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Co znamenalo pro svět otevření londýnského metra v roce 1863?",
+  "answer": "Vznikla první podzemní železnice na světě",
+  "distractors": [
+   "První parní vlak vůbec vyrobený",
+   "První elektrické metro na světě",
+   "První metro v Evropě, ale ne na světě"
+  ],
+  "quip_correct": "Podzemní vlak dřív, než kohokoli na světě vůbec napadlo, že to jde — Londýn tu byl první a nijak to neskrývá.",
+  "quip_wrong": "Elektrika ani konkurence odjinud z Evropy tu nehraje roli — jde o čisté prvenství v celosvětovém měřítku.",
+  "explanation": "První linka metra, Metropolitan Railway, vozila cestující v dřevěných vagonech tažených parními lokomotivami — tunely proto potřebovaly větrací šachty, aby se kouř měl kam ztrácet.",
+  "about": "vzniku londýnského metra",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a vintage steam train emerging from a brick tunnel at an old underground station platform"
+ },
+ {
+  "id": "gb-a-taxi-knowledge",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co musí zvládnout uchazeč o licenci londýnského černého taxíku, než smí vůbec začít vozit zákazníky?",
+  "answer": "Nazpaměť se naučit přes 25 000 londýnských ulic a nejkratší trasy mezi nimi",
+  "distractors": [
+   "Složit jen běžnou řidičskou zkoušku jako u osobního auta",
+   "Absolvovat kurz angličtiny pro cizince",
+   "Získat doporučení od tří stávajících taxikářů"
+  ],
+  "quip_correct": "GPS by to samé spočítalo za sekundu a zadarmo — Londýn přesto dál trvá na tom, aby si to řidiči vryli do hlavy sami.",
+  "quip_wrong": "Řidičák, kurz angličtiny ani doporučení kolegů zkoušku nenahradí — Knowledge chce vědět, jestli máš celé město v hlavě.",
+  "explanation": "Zkouška zvaná The Knowledge trvá uchazečům v průměru tři až čtyři roky přípravy a u londýnských taxikářů, kteří jí prošli, naměřili neurovědci zvětšenou zadní část hipokampu — část mozku zodpovědnou za prostorovou paměť.",
+  "about": "zkoušce The Knowledge londýnských taxikářů",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a black cab driver studying a large paper street map by lamplight"
+ },
+ {
+  "id": "gb-k-robinhood",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve kterém anglickém lese podle staré legendy žil se svou tlupou loupežník Robin Hood, co bral bohatým a dával chudým?",
+  "answer": "V Sherwoodském lese",
+  "distractors": [
+   "V lese Epping",
+   "V Novém lese (New Forest)",
+   "V lese Dean"
+  ],
+  "quip_correct": "Tys to věděl! Robin Hood prý schovával svůj luk v dutém dubu — ten strom prý stojí v Sherwoodu dodnes.",
+  "quip_wrong": "Hmm, ne! Anglie má spoustu lesů, ale ten Robinův má úplně jiné jméno.",
+  "explanation": "Robin Hood je jen legenda, ale strom zvaný Majorův dub (Major Oak) v Sherwoodském lese je skutečný — je mu přes 800 let a podle pověsti se pod ním prý Robin se svou družinou scházel.",
+  "about": "legendě o Robinu Hoodovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a massive ancient oak tree deep in a green English forest, dappled sunlight"
+ },
+ {
+  "id": "gb-t-kingscross",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Na kterém londýnském nádraží najdeš nástupiště 9¾ s vozíkem zapůl zaraženým do zdi, kam se turisté jezdí fotit kvůli Harrymu Potterovi?",
+  "answer": "Na King's Cross",
+  "distractors": [
+   "Na Paddingtonu",
+   "Na Victoria Station",
+   "Na Euston Station"
+  ],
+  "quip_correct": "Vozík ve zdi bez kouzel neprojde, ale fronta na fotku tam je stejně dlouhá jako do Bradavic.",
+  "quip_wrong": "Paddington má medvídka, ne kouzelnický vlak — zkus nádraží o pár stanic dál.",
+  "explanation": "Nástupiště 9¾ je čistě fiktivní, ale King's Cross tam pro fanoušky nechal nainstalovat skutečný vozík zapůl zaražený do zdi a vedle otevřel suvenýrový obchod, který ročně navštíví přes milion lidí.",
+  "about": "nástupišti 9¾ na King's Cross",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a luggage trolley half-vanished into a brick station wall, crowds queuing nearby"
+ },
+ {
+  "id": "gb-t-wembley-oblouk",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Sport",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je nejnápadnějším architektonickým prvkem londýnského stadionu Wembley, viditelným z velké části města?",
+  "answer": "Obrovský ocelový oblouk nad stadionem",
+  "distractors": [
+   "Skleněná kopule nad hřištěm",
+   "Vysoká hodinová věž u vstupu",
+   "Kamenné sloupořadí kolem celého stadionu"
+  ],
+  "quip_correct": "Sto třicet čtyři metrů oceli nad trávníkem — z letadla ho uvidíš dřív než celý stadion.",
+  "quip_wrong": "Kopule, věž, sloupořadí — Wembley na nic z toho nevsadilo, drží se jednoho obřího oblouku.",
+  "explanation": "Oblouk je nejdelší jednorozponnou konstrukcí na světě a nese většinu váhy střechy, díky čemuž stadion uvnitř nepotřebuje žádné nosné sloupy, které by divákům bránily ve výhledu.",
+  "about": "oblouku stadionu Wembley",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a massive steel arch rising over a football stadium against a London skyline"
+ },
+ {
+  "id": "gb-a-necropolis",
+  "cc": "gb",
+  "country": "Velká Británie",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Viktoriánský Londýn provozoval zvláštní 'vlak mrtvých' na hřbitov Brookwood mimo město. Co bylo na něm nezvyklé kromě přepravovaných mrtvol samotných?",
+  "answer": "I mrtví cestovali v první, druhé nebo třetí třídě podle toho, kolik si příbuzní připlatili",
+  "distractors": [
+   "Vlak jezdil výhradně v noci beze světel",
+   "Cestující museli mít speciální propustku od biskupa",
+   "Rakve se před cestou musely veřejně vážit"
+  ],
+  "quip_correct": "Anglická třídní společnost nezapomněla ani na mrtvé — i v rakvi jsi cestoval podle tašky.",
+  "quip_wrong": "Noční jízda beze světel, propustka od biskupa, veřejné vážení — vlak mrtvých měl mnohem prozaičtější třídní systém.",
+  "explanation": "Trať vznikla po přeplnění londýnských hřbitovů během cholerových epidemií 40. let 19. století a jezdila až do roku 1941, kdy nádražní zastávku na Waterloo zničilo bombardování za druhé světové války.",
+  "about": "vlaku mrtvých Necropolis Railway",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a foggy Victorian railway platform with a hearse carriage and mourners in dark coats"
  }
 ]

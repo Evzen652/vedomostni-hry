@@ -1055,5 +1055,173 @@
   "explanation": "Lanzarote dostane ročně jen 140 mm srážek — méně než Sahara. Volcánická vrstva lapilli (drobného sopečného kamene) absorbuje noční vlhkost a uvolňuje ji přes den ke kořenům. Každá réva roste v ručně vybudované jamce chráněné půlkruhovým kamenným plůtkem proti větru.",
   "about": "spanelskem vinarstvi",
   "image_prompt": "A painterly watercolor illustration of volcanic vineyards in Lanzarote with black lava fields, vintage travel journal style"
+ },
+ {
+  "id": "es-k-tortilla",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje oblíbený španělský pokrm z osmažených vajec a brambor, který se jí za tepla i za studena?",
+  "answer": "Tortilla, španělská bramborová omeleta",
+  "distractors": [
+   "Paella",
+   "Gazpacho",
+   "Churros"
+  ],
+  "quip_correct": "Tys to věděl! Ve Španělsku se kvůli tortille dodnes hádají, jestli tam patří cibule — a nikdy se na tom neshodnou.",
+  "quip_wrong": "Skoro! Paella je z rýže, tohle vaječno-bramborové kolo se jmenuje tortilla.",
+  "explanation": "Španělská tortilla se peče ve velké pánvi a pak se obratným pohybem otočí, aby se propekla z obou stran — zvládnout tenhle obrat bez rozsypání vajec je malé rodinné umění.",
+  "about": "španělské tortille",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a thick round Spanish potato omelette sliced on a wooden board, golden egg layers visible"
+ },
+ {
+  "id": "es-k-churros",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaká křupavá smažená pochoutka s vroubky se ve Španělsku namáčí do husté horké čokolády?",
+  "answer": "Churros",
+  "distractors": [
+   "Croissant",
+   "Preclík",
+   "Koblihy"
+  ],
+  "quip_correct": "Jé, tys to věděl! Čokoláda na churros bývá tak hustá, že by v ní lžička klidně stála sama.",
+  "quip_wrong": "Vedle! Croissant je francouzský — ty vroubkované tyčinky na namáčení se jmenují churros.",
+  "explanation": "Churros se dřív prodávaly hlavně brzy ráno, protože je pekaři nabízeli dělníkům cestou do práce — dnes je Španělé jedí spíš jako pozdní noční svačinu po zábavě.",
+  "about": "churros",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a plate of ridged fried churros dusted with sugar next to a small cup of thick hot chocolate"
+ },
+ {
+  "id": "es-t-sanfermin",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Kultura & tradice",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se odehrává každé ráno během festivalu San Fermín v Pamploně, proslaveného i knihou Ernesta Hemingwaye?",
+  "answer": "Běh s býky ulicemi města k aréně, takzvané encierro",
+  "distractors": [
+   "Klidná procesí s vozy plnými květin",
+   "Plavecké závody v řece Arga",
+   "Noční ohňostroj nad městskými hradbami"
+  ],
+  "quip_correct": "Hemingway to popsal jako dobrodružství. Pojišťovny to spíš vidí jako statistiku úrazů.",
+  "quip_wrong": "Ne tak poklidně. San Fermín je spíš adrenalin než procesí s květinami.",
+  "explanation": "Trasa běhu s býky měří necelý kilometr a běžci ji zvládnou za pár minut, přesto se během festivalu každý rok zraní desítky lidí — a na start přesto každé ráno v červenci nastupují tisíce.",
+  "about": "festivalu San Fermín",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — runners sprinting through a narrow cobblestone street in Pamplona just ahead of running bulls, morning light"
+ },
+ {
+  "id": "es-t-spanelsky-jazyk",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jaké je postavení španělštiny mezi jazyky světa podle počtu rodilých mluvčích?",
+  "answer": "Je druhá na světě, hned po mandarínské čínštině",
+  "distractors": [
+   "Je na prvním místě, před čínštinou",
+   "Je až na pátém místě, za angličtinou",
+   "Mluví jí míň lidí než francouzsky"
+  ],
+  "quip_correct": "Angličtinu předběhla dávno. Jen čínština jí pořád kouká přes rameno.",
+  "quip_wrong": "Blíž ke špičce žebříčku, ne dál od ní. Zkus to jinam.",
+  "explanation": "Španělsky mluví jako rodným jazykem přes 485 milionů lidí, hlavně díky Latinské Americe — samotné Španělsko na tomto součtu tvoří jen menšinový podíl.",
+  "about": "postavení španělštiny ve světě",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a world map with Spanish-speaking regions highlighted in warm ochre tones, vintage paper texture"
+ },
+ {
+  "id": "es-t-realmadrid",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím je klub Real Madrid unikátní v historii Ligy mistrů UEFA?",
+  "answer": "Vyhrál ji víckrát než kterýkoli jiný klub na světě",
+  "distractors": [
+   "Nikdy ji nevyhrál, jen hrál finále",
+   "Vyhrál ji jen jednou, ale slavně",
+   "Je to jediný klub, který ji nesměl hrát"
+  ],
+  "quip_correct": "Ostatní kluby sbírají poháry roky. Real Madrid je sbírá jako sérii.",
+  "quip_wrong": "Real Madrid v Lize mistrů rozhodně nešetří trofejemi — spíš naopak.",
+  "explanation": "Real Madrid vyhrál Ligu mistrů, dřív Pohár mistrů evropských zemí, patnáctkrát, naposledy v roce 2024, a je tak nejúspěšnějším klubem soutěže od jejího založení v roce 1955.",
+  "about": "Realu Madrid",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a football stadium trophy case with multiple shiny silver cups, dramatic spotlight"
+ },
+ {
+  "id": "es-t-ibiza",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Kultura & tradice",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím je malý ostrov Ibiza proslulý po celém světě od 80. let 20. století?",
+  "answer": "Je považován za světovou metropoli elektronické taneční hudby a klubů",
+  "distractors": [
+   "Je jediný ostrov Španělska bez jediné pláže",
+   "Je centrem klasické opery",
+   "Je známý úplným zákazem hudby po půlnoci"
+  ],
+  "quip_correct": "Přes den rybářská vesnice, přes noc epicentrum elektronické scény. Ibiza umí obojí a nikdy si nevybere jen jedno.",
+  "quip_wrong": "Ibiza rozhodně hudbu nezakazuje — spíš žije prakticky jen pro ni.",
+  "explanation": "Legendární kluby jako Pacha nebo Amnesia otevřely ostrovu cestu k pověsti hudební mekky už v 80. letech a dnes sem každé léto míří DJové i turisté z celého světa.",
+  "about": "Ibize",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a nightclub dance floor on a Mediterranean island under colorful lights, silhouettes dancing, warm night atmosphere"
+ },
+ {
+  "id": "es-a-spanelska-chripka",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč nese pandemie z roku 1918 jméno španělská chřipka, přestože podle většiny historiků pravděpodobně nevznikla ve Španělsku?",
+  "answer": "Španělsko bylo ve válce neutrální a jeho necenzurovaný tisk o epidemii svobodně psal, na rozdíl od válčících zemí",
+  "distractors": [
+   "První potvrzený případ byl skutečně diagnostikován v Madridu",
+   "Španělský král nemoc osobně dovezl ze severní Afriky",
+   "Název vymyslela španělská vláda jako varování pro obyvatele"
+  ],
+  "quip_correct": "Válčící státy nemoc tutlaly kvůli morálce vojáků. Španělsko o ní psalo na titulní straně — a dostalo jméno jako trest za upřímnost.",
+  "quip_wrong": "Španělsko chřipku spíš poctivě přiznalo, než aby ji vymyslelo nebo dovezlo odjinud.",
+  "explanation": "Nemoc pravděpodobně vznikla mimo Španělsko, možná už v roce 1917 v USA nebo Francii, ale cenzura ve válčících zemích informace o ní tajila; když onemocněl i španělský král Alfonso XIII., zprávy se volně šířily jen odtud, a název tak zůstal přilepený dodnes.",
+  "about": "španělské chřipce",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a 1918-style newspaper front page on an old wooden desk, faded ink texture, dim lamp light"
+ },
+ {
+  "id": "es-a-ceuta-melilla",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Místa",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Kde leží jediná pozemní hranice Evropské unie s africkým kontinentem?",
+  "answer": "Kolem měst Ceuta a Melilla, španělských exkláv na marockém pobřeží",
+  "distractors": [
+   "Na Kanárských ostrovech u pobřeží Maroka",
+   "Na Gibraltaru, který patří Spojenému království",
+   "Žádná taková hranice neexistuje, EU s Afrikou sousedí jen po moři"
+  ],
+  "quip_correct": "Schengen si lidi představují jako čáru kolem celé Evropy. Ve skutečnosti má i plot uprostřed severní Afriky.",
+  "quip_wrong": "Pozemní hranice s Afrikou fakt existuje, jen neleží tam, kam tipuješ.",
+  "explanation": "Ceuta a Melilla patří Španělsku už od 15. a 16. století, tedy déle, než vůbec existuje moderní marocký stát, a díky tomu má Evropská unie svou jedinou pozemní hranici s africkým kontinentem.",
+  "about": "Ceutě a Melille",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a tall border fence separating a Spanish coastal town from a hilly African landscape, dawn light"
  }
 ]

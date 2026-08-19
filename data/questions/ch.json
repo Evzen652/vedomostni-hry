@@ -1154,5 +1154,173 @@
   "explanation": "Výzkumy švýcarských politologů ukazují, že v průměrném referendu hlasuje o 20 procentních bodů více vysokoškolsky vzdělaných než těch se základním vzděláním. V kantonech s elektronickým hlasováním se účast zvýšila, ale socioekonomická nerovnost přetrvává. To je jeden z hlavních argumentů kritiků přímé demokracie jako systému.",
   "about": "paradoxech švýcarské přímé demokracie a nerovné účasti",
   "image_prompt": "A painterly watercolor illustration of a Swiss voting station with a ballot box, some urns full and some nearly empty, people of different ages and dress entering, vintage travel journal style"
+ },
+ {
+  "id": "ch-k-bernardyn",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje statné psí plemeno z alpského kláštera, které kdysi hledalo v horách zapadlé cestovatele?",
+  "answer": "Bernardýn",
+  "distractors": [
+   "Border kolie",
+   "Husky",
+   "Německý ovčák"
+  ],
+  "quip_correct": "Tys to věděl! Chlupatý obr s čichem jak radar — bernardýni v horách zachraňovali lidi dřív, než existovaly vysílačky.",
+  "quip_wrong": "Ouha, ne tenhle pes! V alpských horách zachraňoval lidi bernardýn, ne kolie ani ovčák.",
+  "explanation": "Bernardýni jsou pojmenovaní po průsmyku Velký Svatý Bernard, kde ve středověku mniši založili útulek pro poutníky. Od 17. století jim pomáhali hledat zavátá lidi v horách právě tito psi. Nejslavnější z nich, pes jménem Barry, prý za svůj život zachránil přes 40 lidí a dnes je vycpaný k vidění v muzeu v Bernu.",
+  "about": "bernardýnech, alpských záchranářských psech",
+  "image_prompt": "A gentle St. Bernard rescue dog standing in snowy alpine terrain near a stone mountain hospice, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "ch-k-raclette",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co se děje se sýrem při tradičním švýcarském jídle raclette?",
+  "answer": "Kus sýra se nechá roztát u tepla a roztavená vrstva se seškrábne rovnou na brambory",
+  "distractors": [
+   "Sýr se nastrouhá studený na chleba",
+   "Sýr se smaží dokřupava jako lupínky",
+   "Sýr se rozšlehá se šlehačkou do pěny"
+  ],
+  "quip_correct": "Tys to věděl! Sýr teče, škrabka pracuje, brambory čekají na talíři — švýcarská večeře v plném nasazení.",
+  "quip_wrong": "Skoro! Sýr při raclette nikdo nesmaží ani nešlehá — nechá se roztát a seškrábne se na brambory.",
+  "explanation": "Slovo raclette pochází z francouzského racler, tedy škrábat. Pokrm vznikl v kantonu Valais, kde si pastýři nechávali sýr opékat u ohně a odkrajovali si nožem měkčí roztavenou vrstvu. Dnes se raclette nejčastěji dělá v elektrickém přístroji s malými pánvičkami pro každého u stolu.",
+  "about": "raclette, tradičním švýcarském sýrovém jídle",
+  "image_prompt": "A wheel of cheese melting by an open flame with a person scraping the melted layer onto a plate of potatoes, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "ch-t-cern",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Místa",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se ukrývá v podzemním tunelu poblíž Ženevy, kde vědci srážejí částice téměř rychlostí světla?",
+  "answer": "Velký hadronový urychlovač částic (CERN)",
+  "distractors": [
+   "Největší datové centrum Evropy",
+   "Podzemní vojenský bunkr NATO",
+   "Zásobárna pitné vody pro celou Ženevu"
+  ],
+  "quip_correct": "Nejmenší částice vesmíru zkoumají ve stroji dlouhém 27 kilometrů. Skromnost si tu nikdo neodpouští.",
+  "quip_wrong": "Servery ani vojáci — pod Ženevou jezdí částice, ne data nebo tanky.",
+  "explanation": "Tunel Velkého hadronového urychlovače měří v obvodu 27 kilometrů a leží až 175 metrů pod zemí na hranici Švýcarska a Francie. Kromě objevu Higgsova bosonu v roce 2012 se v CERNu v roce 1989 zrodil i vynález, který změnil celý svět — World Wide Web.",
+  "about": "CERNu a Velkém hadronovém urychlovači u Ženevy",
+  "image_prompt": "A vast underground circular particle accelerator tunnel glowing with soft light beneath the Swiss countryside near Geneva, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "ch-t-jodlovani",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak se jmenuje tradiční alpský zpěv s rychlým střídáním hlubokého a vysokého hlasu, typický pro Švýcarsko?",
+  "answer": "Jódlování",
+  "distractors": [
+   "Gregoriánský chorál",
+   "Rapování",
+   "Operní árie"
+  ],
+  "quip_correct": "Hlas skáče z hlubin do výšin rychleji, než stihneš zamrkat. Alpy tenhle trik znaly dávno předtím, než existoval autotune.",
+  "quip_wrong": "Chorál ani rap — tenhle skákavý hlasový trik v horách se jmenuje jódlování.",
+  "explanation": "Jódlování původně sloužilo pastevcům ke svolávání dobytka a k dorozumívání mezi vzdálenými stráněmi. Dnes se koná i celostátní Federální jódlerský festival, kterého se účastní přes 10 000 zpěváků a hudebníků najednou.",
+  "about": "jódlování, tradičním alpském zpěvu",
+  "image_prompt": "A yodeling singer standing on a green alpine meadow with mountains in the background, mouth open mid-song, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "ch-t-cervelat",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Jídlo",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč se švýcarská klobása cervelat v žertu přezdívá 'pátý národní jazyk'?",
+  "answer": "Protože ji s chutí jedí a mají rádi lidé ze všech čtyř jazykových oblastí Švýcarska",
+  "distractors": [
+   "Protože se její název píše stejně ve všech čtyřech jazycích",
+   "Protože je zmíněná přímo ve švýcarské ústavě z roku 1848",
+   "Protože ji vymysleli lingvisté jako vtip pro turisty"
+  ],
+  "quip_correct": "Frankofonní, germanofonní i italsky mluvící Švýcaři se přou skoro o všechno — ale u klobásy na grilu vždycky najdou shodu.",
+  "quip_wrong": "Ústava ani lingvistický vtip — cervelat spojuje jazykové oblasti chutí, ne slovníkem.",
+  "explanation": "Obliba cervelatu je taková, že v roce 2006 vyvolal skutečnou národní krizi: Brazílie kvůli nákaze zakázala vývoz hovězích střívek potřebných na obal klobásy a Švýcarsko čelilo nedostatku své nejmilovanější uzeniny. Parlament se tím vážně zabýval, dokud se nenašla náhradní dodávka.",
+  "about": "klobáse cervelat a její oblibě ve Švýcarsku",
+  "image_prompt": "Grilled cervelat sausages with characteristic split ends over a campfire grill in a Swiss meadow, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "ch-t-jet-deau",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je Jet d'Eau, symbol Ženevy viditelný z velké dálky?",
+  "answer": "Vodní fontána tryskající z Ženevského jezera do výšky přes 140 metrů",
+  "distractors": [
+   "Vodopád uprostřed města",
+   "Historická kašna z 15. století na náměstí",
+   "Přírodní gejzír způsobený geotermální aktivitou"
+  ],
+  "quip_correct": "Sto čtyřicet metrů vody do vzduchu, žádná sopka pod tím — jen silné čerpadlo a smysl pro efekt.",
+  "quip_wrong": "Žádný vodopád ani gejzír — tenhle vodní sloupec vystřeluje uměle, čerpadlem přímo z jezera.",
+  "explanation": "Jet d'Eau vznikl v roce 1886 jako obyčejný bezpečnostní ventil vodní elektrárny, který odpouštěl přetlak v potrubí. Teprve později si obyvatelé Ženevy jeho impozantní vzhled oblíbili natolik, že se z technické nutnosti stal záměrnou turistickou atrakcí přemístěnou přímo do jezera.",
+  "about": "fontáně Jet d'Eau v Ženevě",
+  "image_prompt": "A tall water fountain jet shooting high above Lake Geneva with the city skyline in the background, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "ch-a-quartz-kriz",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co v 70. letech 20. století téměř zničilo švýcarský hodinářský průmysl, dosavadní symbol světové přesnosti?",
+  "answer": "Levné japonské křemíkové (quartz) hodinky, přesnější a mnohem levnější než mechanické švýcarské",
+  "distractors": [
+   "Celosvětový zákaz vývozu drahých kovů",
+   "Rozsáhlý požár, který zničil většinu dílen v pohoří Jura",
+   "Hromadný odchod hodinářů do Německa"
+  ],
+  "quip_correct": "Nejpřesnější řemeslo na světě porazila baterka za pár dolarů. Pýcha dostala na frak od obyčejné elektroniky.",
+  "quip_wrong": "Žádný požár ani exodus řemeslníků — Švýcarsko srazila na kolena obyčejná baterie v japonských hodinkách.",
+  "explanation": "Mezi lety 1970 a 1988 klesla zaměstnanost ve švýcarském hodinářství z asi 90 000 na necelých 30 000 lidí. Odvětví nakonec zachránil podnikatel Nicolas Hayek, který v roce 1983 spustil značku Swatch — levné plastové quartzové hodinky, které naopak švýcarskou nálepku proměnily zpátky v módní symbol.",
+  "about": "quartzové krizi švýcarského hodinářství v 70. letech",
+  "image_prompt": "A dusty abandoned Swiss watchmaking workbench with tiny gears next to a shiny cheap digital watch on the same table, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+ },
+ {
+  "id": "ch-a-jehlovy-park",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se v 80. letech 20. století odehrávalo v curyšském parku Platzspitz, který si vysloužil přezdívku 'Jehlový park'?",
+  "answer": "Město tam oficiálně tolerovalo otevřenou drogovou scénu s tisíci narkomanů",
+  "distractors": [
+   "Konala se tam ilegální noční kasina pro bohaté turisty",
+   "Sloužil jako uprchlický tábor po pádu železné opony",
+   "Byl to výcvikový prostor švýcarské armády uprostřed města"
+  ],
+  "quip_correct": "Nejuklizenější země Evropy měla v centru Curychu park plný jehel a zoufalství. I švýcarská preciznost má svoje meze.",
+  "quip_wrong": "Žádné kasino ani vojenský výcvik — Platzspitz proslul temnějším experimentem: tolerovanou drogovou scénou.",
+  "explanation": "Park byl kvůli zdravotní katastrofě uzavřen v roce 1992, ale zkušenost z něj nakonec vedla k dnešní švýcarské politice léčby heroinem pod lékařským dohledem — přístupu, který se dnes studuje po celém světě jako jeden z nejúspěšnějších modelů harm reduction.",
+  "about": "curyšském Jehlovém parku a jeho vlivu na švýcarskou drogovou politiku",
+  "image_prompt": "A bleak empty city park at dusk with scattered benches and a distant church spire, somber atmosphere, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  }
 ]

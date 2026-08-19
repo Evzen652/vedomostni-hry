@@ -1161,5 +1161,89 @@
   "explanation": "Poslední poprava gilotinou ve Francii se konala 10. září 1977, kdy byl popraven Hamida Djandoubi. Trest smrti byl ve Francii definitivně zrušen v roce 1981 za prezidenta Françoise Mitterranda — Francie se stala jednou z posledních západoevropských zemí, která ho zrušila.",
   "about": "gilotině ve Francii",
   "image_prompt": "A painterly watercolor illustration of an old stone courtyard in gloomy French revolutionary Paris, vintage travel journal style"
+ },
+ {
+  "id": "fr-k-makronky",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje kulatá francouzská sladkost ze dvou barevných křupavých kolečk slepených krémem uprostřed?",
+  "answer": "Makronka",
+  "distractors": [
+   "Eclér",
+   "Muffin",
+   "Perník"
+  ],
+  "quip_correct": "Tys to věděl! Makronky vypadají křehce jako sklo, ale upéct je pořádně umí málokdo — i profesionální cukráři je občas zkazí.",
+  "quip_wrong": "Eclér je podlouhlý a muffin má hrbolatý vršek — ta barevná placička s křupavou kůrkou a krémem uprostřed je makronka.",
+  "explanation": "Makronky se ve Francii pečou z mandlové mouky a bílků a v cukrárnách jich prodávají desítky barevných variant podle chuti krému uvnitř.",
+  "about": "makronkách",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — colorful French macarons stacked on a plate"
+ },
+ {
+  "id": "fr-t-asterix",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Který malý neohrožený galský bojovník s kouzelným lektvarem je hvězdou nejslavnějšího francouzského komiksu?",
+  "answer": "Asterix",
+  "distractors": [
+   "Tintin",
+   "Lucky Luke",
+   "Spirou"
+  ],
+  "quip_correct": "Malý Gal s kouzelným lektvarem drží komiksový rekord — přeložili ho do víc jazyků než skoro cokoli jiného, co Francie kdy vyvezla.",
+  "quip_wrong": "Tintin je belgický a Lucky Luke kovbojský — ten neporazitelný Gal s kouzelným lektvarem se jmenuje jinak, Asterix.",
+  "explanation": "Sérii Asterix vytvořili Goscinny a Uderzo v roce 1959 a její příběhy se odehrávají v malé galské vesnici, která jako jediná vzdoruje římské nadvládě.",
+  "about": "komiksovém hrdinovi Asterixovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — small Gaulish village with a mossy standing stone and thatched huts"
+ },
+ {
+  "id": "fr-t-notre-dame-pozar",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Historie",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo s pařížskou katedrálou Notre-Dame v dubnu 2019?",
+  "answer": "Vyhořela — plameny zničily střechu i věž a katedrála se roky opravovala",
+  "distractors": [
+   "Byla prodána soukromému investorovi",
+   "Zbourali ji kvůli statickým poruchám",
+   "Přestěhovali ji kámen po kameni mimo Paříž"
+  ],
+  "quip_correct": "Milion lidí denně chodil kolem katedrály, než začaly plameny šlehat střechou naživo v přímém přenosu — svět sledoval památku hořet jako thriller.",
+  "quip_wrong": "Notre-Dame nikdo neprodal ani nerozebíral kámen po kameni — přišla o střechu a věž v požáru.",
+  "explanation": "Dřevěný krov katedrály, přezdívaný „les“, tvořilo přes 1300 dubů pokácených už ve 12. a 13. století — požár pravděpodobně způsobila elektrická závada během probíhající rekonstrukce.",
+  "about": "požáru katedrály Notre-Dame",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — Notre-Dame cathedral silhouette against a dramatic sky"
+ },
+ {
+  "id": "fr-a-socha-svobody",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co spojuje newyorskou Sochu Svobody s Eiffelovou věží?",
+  "answer": "Obě mají vnitřní kovovou kostru navrženou stejným francouzským inženýrem Gustavem Eiffelem",
+  "distractors": [
+   "Obě stavěla stejná pařížská slévárna, ale jinak spolu nesouvisí",
+   "Socha Svobody je zmenšenou kopií vrcholu Eiffelovy věže",
+   "Eiffel se na Soše Svobody podílel jen jako sponzor stavby"
+  ],
+  "quip_correct": "Eiffel navrhl kostru sochy tři roky předtím, než mu Pařížané vynadali do zrůdy kvůli vlastní věži. Amerika si dnes tu sochu hýčká jako duši národa.",
+  "quip_wrong": "Žádná slévárna ani sponzorství — jde o přímé inženýrské autorství, socha nese uvnitř Eiffelovu konstrukci.",
+  "explanation": "Socha byla dar Francie k stoletému výročí americké nezávislosti a do New Yorku dorazila rozebraná ve 214 bednách, kde ji teprve na místě sestavili.",
+  "about": "Soše Svobody a Eiffelovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — Statue of Liberty under construction showing an internal iron framework"
  }
 ]

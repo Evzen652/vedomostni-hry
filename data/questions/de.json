@@ -1201,5 +1201,89 @@
   "explanation": "Wernher von Braun byl v roce 1945 spolu se stovkami dalších německých vědců tajně převezen do USA v rámci operace Paperclip. Jako ředitel NASA Marshall Space Flight Center navrhl Saturn V — dosud nejsilnější raketu, která skutečně letěla — a přivedla Apollo 11 na Měsíc v roce 1969.",
   "about": "Wernheru von Braunovi",
   "image_prompt": "A painterly watercolor illustration of Saturn V rocket launch at dawn over the Florida coast, vintage travel journal style"
+ },
+ {
+  "id": "de-k-plysovy-medvidek",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaké měkké plyšové zvířátko na mazlení a spaní vymysleli poprvé v Německu a dodnes ho mají rády děti na celém světě?",
+  "answer": "Plyšový medvídek",
+  "distractors": [
+   "Plyšový slon",
+   "Dřevěný vláček",
+   "Panenka s porcelánovou hlavou"
+  ],
+  "quip_correct": "Tys to věděl! První plyšoví medvídci měli ještě hrbolatá záda a dlouhý čumáček — teprve později dostali kulatější, roztomilejší tvář.",
+  "quip_wrong": "Dřevěný vláček ani porcelánová panenka nejsou z měkkého plyše na mazlení — hledáš plyšového medvídka.",
+  "explanation": "Prvního plyšového medvídka vyrobila roku 1902 německá firma Steiff v Giengenu a dodnes ho poznáš podle knoflíčku v uchu, kterým firma svoje medvídky značí.",
+  "about": "vynálezu plyšového medvídka",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a classic teddy bear sitting on a wooden shelf"
+ },
+ {
+  "id": "de-t-klose",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Kdo je se 16 vstřelenými góly nejlepším střelcem v historii mistrovství světa ve fotbale a hrál za Německo?",
+  "answer": "Miroslav Klose",
+  "distractors": [
+   "Thomas Müller",
+   "Mario Götze",
+   "Manuel Neuer"
+  ],
+  "quip_correct": "Šestnáct gólů na mundialech a rekord, co drží roky — Klose skóroval potichu a bez povyku, přesně jak to má útočník dělat.",
+  "quip_wrong": "Müller i Neuer jsou legendy, ale rekord na mistrovstvích světa v počtu gólů drží jiný Němec — Klose.",
+  "explanation": "Miroslav Klose se narodil v Polsku, odkud jeho rodina emigrovala do Německa, a rekord 16 gólů na mistrovstvích světa překonal na MS 2014 v Brazílii.",
+  "about": "Miroslavu Klosem",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a football player celebrating a goal on a stadium pitch"
+ },
+ {
+  "id": "de-t-karl-benz",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Lidé",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Kdo v roce 1886 patentoval první automobil poháněný spalovacím motorem?",
+  "answer": "Karl Benz",
+  "distractors": [
+   "Rudolf Diesel",
+   "Ferdinand Porsche",
+   "Gottlieb Daimler"
+  ],
+  "quip_correct": "Tři kola a žádná řidičská škola na světě — Benz patentoval auto, které by dnešní řidiče spíš vyděsilo, než ohromilo.",
+  "quip_wrong": "Diesel vynalezl motor pojmenovaný po sobě a Porsche přišel mnohem později — první patent na automobil má na svědomí Karl Benz.",
+  "explanation": "Benzův patentovaný vůz měl jen tři kola a jeho žena Bertha ho proslavila první dálkovou jízdou automobilem v dějinách, o které manžela předem neinformovala.",
+  "about": "Karlu Benzovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a vintage three-wheeled early automobile on a cobblestone street"
+ },
+ {
+  "id": "de-a-deutsche-bahn",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Zajímavosti",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Německo je pověstné pořádkem a přesností. Jak si vede pověst národního dopravce Deutsche Bahn v otázce dochvilnosti dálkových vlaků?",
+  "answer": "Jen zhruba šest z deseti dálkových vlaků dorazí včas — DB dlouhodobě neplní vlastní cíl přesnosti",
+  "distractors": [
+   "Přes 95 procent vlaků jezdí přesně na minutu",
+   "Zpoždění u DB prakticky neexistuje, je to jen internetový mýtus",
+   "Vlaky mají zpoždění jen v zimě kvůli sněhu"
+  ],
+  "quip_correct": "Národ, co dal světu slovo pro německou preciznost, si nechá pravidelně ujet vlastní vlak. Ironie, kterou si Němci servírují k snídani spolu s omluvou z ampliónu.",
+  "quip_wrong": "Devadesát pět procent by chtěl slyšet každý cestující — realita Deutsche Bahn je o dost skromnější.",
+  "explanation": "Vlastní cíl Deutsche Bahn je dochvilnost 80 procent u dálkových spojů, ale v posledních letech se firma dlouhodobě pohybuje kolem 60 až 65 procent, což pravidelně řeší i německá média a politici.",
+  "about": "dochvilnosti Deutsche Bahn",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a German intercity train waiting at a station platform with a departure board"
  }
 ]

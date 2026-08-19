@@ -1347,5 +1347,173 @@
   "quip_wrong": "Říční haldy nebo ledovcové morény? Severní pobřeží Balatonu si svůj tvar dluhuje sopkám, které tam vyhasly dávno před prvním vinařem.",
   "explanation": "Sopečná aktivita na severu Balatonu skončila před miliony let, ale čedičové horniny zůstaly. Badacsony, Gulács, Csobánc — každý kopec je zbytek sopky a každý nese vinice s odrůdami jako Szürkebarát nebo Olaszrizling.",
   "about": "sopečných kopcích u Balatonu"
+ },
+ {
+  "id": "hu-k-lanchid",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Hlavní město",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje slavný budapešťský most hlídaný kamennými lvy, který spojuje Budu a Pešť?",
+  "answer": "Řetězový most (Lánchíd)",
+  "distractors": [
+   "Markétin most",
+   "Most svobody",
+   "Alžbětin most"
+  ],
+  "quip_correct": "Tys to věděl! Kamenní lvi na mostě hlídají už skoro dvě stě let a ani jednou nešlápli vedle.",
+  "quip_wrong": "Skoro! Budapešť má přes Dunaj víc mostů, ale ten s kamennými lvy se jmenuje jinak.",
+  "explanation": "Řetězový most byl první stálý most přes Dunaj v Budapešti — než ho postavili, lidé se přes řeku museli plavit loďkami nebo po dřevěném pontonovém mostě, který se v zimě musel rozebírat kvůli ledu.",
+  "about": "Řetězovém mostě",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a stone bridge guarded by lion statues spanning a wide river between two riverbanks"
+ },
+ {
+  "id": "hu-t-buda-pest-krajina",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Hlavní město",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím se liší krajina na dvou březích Dunaje uprostřed Budapešti?",
+  "answer": "Budín (Buda) leží na kopcích, Pešť je rovinatá",
+  "distractors": [
+   "Oba břehy jsou stejně kopcovité",
+   "Pešť leží na kopcích, Budín je rovinatý",
+   "Oba břehy jsou bažinaté nížiny"
+  ],
+  "quip_correct": "Kopce na jedné straně, rovina na druhé — Budapešť je vlastně dvě různá města slepená mostem.",
+  "quip_wrong": "Skoro obráceně, nebo úplně mimo — kopce a rovina v Budapešti mají přesně opačné rozdělení, než sis tipnul.",
+  "explanation": "Budínské kopce dosahují výšky přes 500 metrů (nejvyšší je János-hegy), zatímco pešťská strana leží v nadmořské výšce kolem 100 metrů — rozdíl je vidět i z letadla při přistání.",
+  "about": "topografii Budapešti",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a hilly riverbank on one side and a flat riverbank on the other, a wide river between them"
+ },
+ {
+  "id": "hu-t-hungaroring",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Kde se každoročně jezdí maďarská Velká cena Formule 1?",
+  "answer": "Na okruhu Hungaroring nedaleko Budapešti",
+  "distractors": [
+   "Přímo v centru Budapešti v uličním okruhu",
+   "Na okruhu u jezera Balaton",
+   "V Debrecíně na dráze postavené pro motokros"
+  ],
+  "quip_correct": "Formule 1 v Maďarsku? Jasně, jen ne v centru Budapešti, jak by čekal každý, kdo okruh nikdy neviděl na mapě.",
+  "quip_wrong": "Balaton, Debrecín nebo centrum Budapešti zní lákavě, ale piloti F1 zatáčejí jinde, na okruhu postaveném přesně pro tenhle účel.",
+  "explanation": "Hungaroring se otevřel v roce 1986 jako první okruh Formule 1 v tehdejším východním bloku a je proslulý úzkou klikatou tratí, na které se závodníkům extrémně těžko předjíždí.",
+  "about": "okruhu Hungaroring",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a winding racetrack curving through green hills with a lone racing car"
+ },
+ {
+  "id": "hu-a-houdini",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Kde se ve skutečnosti narodil nejslavnější americký kouzelník a mistr úniku Harry Houdini?",
+  "answer": "V Budapešti",
+  "distractors": [
+   "V New Yorku",
+   "Ve Vídni",
+   "V Praze"
+  ],
+  "quip_correct": "Amerika si Houdiniho vzala za vlastního, ale porodní sál byl v Budapešti — nejslavnější únik ze řetězů začal útěkem z rodného Maďarska.",
+  "quip_wrong": "New York, Vídeň, Praha — zvučná města, špatná odpověď. Otec všech únikových triků se narodil o dost skromněji.",
+  "explanation": "Erik Weisz se narodil v Budapešti roku 1874 a do USA emigroval jako čtyřletý s rodinou; umělecké jméno Houdini si vzal později podle francouzského kouzelníka Jeana Eugèna Robert-Houdina.",
+  "about": "Harrym Houdinim",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; an escape artist in chains inside an old wooden trunk, a spotlight on a stage"
+ },
+ {
+  "id": "hu-k-turorudi",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje oblíbená maďarská sladkost — tyčinka z tvarohu obalená čokoládou, kterou tam mají děti jako svačinu?",
+  "answer": "Túró Rudi",
+  "distractors": [
+   "Kürtőskalács",
+   "Somlói galuska",
+   "Dobos torta"
+  ],
+  "quip_correct": "Tys to věděl! Túró Rudi jedí Maďaři k snídani i jako svačinu — příchutí je tolik, že je nikdo nespočítal.",
+  "quip_wrong": "Skoro! Kürtőskalács je trdelník a Dobos torta koláč — tahle čokoládová tyčinka se jmenuje jinak.",
+  "explanation": "Túró Rudi vyrábí maďarská firma od roku 1968 podle receptu s tvarohem (túró), typickým pro maďarskou i středoevropskou kuchyni — dnes se prodává v desítkách příchutí od vanilky po kokos.",
+  "about": "maďarské sladkosti Túró Rudi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a chocolate-coated curd cheese bar unwrapped on a wooden table"
+ },
+ {
+  "id": "hu-t-csardas",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak se maďarský lidový tanec csárdás typicky vyvíjí v průběhu hudby?",
+  "answer": "Začíná pomalu a postupně se zrychluje do prudkého tempa",
+  "distractors": [
+   "Začíná rychle a postupně se zpomaluje",
+   "Hraje se od začátku do konce stejným tempem",
+   "Tančí se výhradně vsedě u stolu"
+  ],
+  "quip_correct": "Csárdás začíná jak ukolébavka a končí jako sprint — kapela nemá slitování.",
+  "quip_wrong": "Zpomalování, stejné tempo nebo tanec vsedě? Csárdás jde přesně opačným směrem, než sis myslel.",
+  "explanation": "Název csárdás pochází od slova csárda, staré maďarské venkovské hospody, kde se tanec podle legendy poprvé tančil v 18. století.",
+  "about": "maďarském tanci csárdás",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; dancers in traditional Hungarian folk costume mid-spin, a fiddler playing beside them"
+ },
+ {
+  "id": "hu-t-libamaj",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Jídlo",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "V čem patří Maďarsko mezi absolutní světovou špičku, pokud jde o produkci potravin?",
+  "answer": "V produkci husích jater (libamáj) — je jedním z největších vývozců na světě",
+  "distractors": [
+   "V produkci mořských ryb",
+   "Ve zpracování kávy",
+   "V pěstování banánů"
+  ],
+  "quip_correct": "Husí játra z Maďarska létají do restaurací po celém světě — a Francie na tu konkurenci není úplně pyšná.",
+  "quip_wrong": "Ryby, káva, banány? Maďarsko je vnitrozemský stát bez moře i palem — zkus to blíž kachní a husí farmě.",
+  "explanation": "Maďarsko je po Francii druhým největším producentem husích a kachních jater na světě, převážná část produkce míří na export do zahraničních restaurací.",
+  "about": "maďarské produkci husích jater",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; geese grazing on a misty Hungarian farmstead at dawn"
+ },
+ {
+  "id": "hu-a-martani",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč fyzikové v USA za druhé světové války žertem přezdívali skupině maďarských vědců (Teller, von Neumann, Wigner, Szilárd) 'Marťané'?",
+  "answer": "Protože jejich genialita byla tak nevysvětlitelná a maďarština tak nesrozumitelná, že museli být z jiné planety",
+  "distractors": [
+   "Protože všichni doslova pracovali v poušti Nového Mexika",
+   "Protože nosili na konferencích stejné zelené obleky",
+   "Protože se všichni narodili ve stejný den"
+  ],
+  "quip_correct": "Čtyři géniové z jedné budapešťské čtvrti postavili základ jaderné fyziky — a Amerika si radši řekla, že jsou mimozemšťané, než aby uvěřila náhodě.",
+  "quip_wrong": "Poušť, obleky, narozeniny — vtip s Marťany měl prozaičtější důvod: nikdo jejich mateřštině nerozuměl a jejich mozkům taky ne.",
+  "explanation": "Všichni čtyři pocházeli z Budapešti přelomu 19. a 20. století a podíleli se na Projektu Manhattan i na vývoji poválečné informatiky — přezdívka se tradičně připisuje vtipu, který sám o sobě šířil Leó Szilárd.",
+  "about": "přezdívce Marťané pro maďarské vědce",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; four scientists at a chalkboard covered in equations under warm desk lamps"
  }
 ]

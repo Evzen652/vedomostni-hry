@@ -1,0 +1,254 @@
+[
+ {
+  "id": "no-k-troll",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaké pohádkové bytosti s dlouhým nosem a kamennou kůží žijí podle norských pověstí v horách a lesích?",
+  "answer": "Trollové",
+  "distractors": [
+   "Skřítci",
+   "Draci",
+   "Permoníci"
+  ],
+  "quip_correct": "Tys to věděl! V Norsku po nich pojmenovali i pořádný kus hory.",
+  "quip_wrong": "Skoro! Skřítci, draci ani permoníci to nejsou — v norských horách straší podle pověstí trollové.",
+  "explanation": "Podle norských pověstí trollové na denním světle zkamení, a tak se jim po celém Norsku říká i skalním útvarům — třeba Trollí jazyk nebo Trollí stěna.",
+  "about": "norských trollech",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, mossy stone troll figure with a long nose sitting among mountain rocks"
+ },
+ {
+  "id": "no-k-losos",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jakou rybu Norsko chová v obřích mořských klecích ve fjordech a vyváží po celém světě, třeba na sushi?",
+  "answer": "Lososa",
+  "distractors": [
+   "Tuňáka",
+   "Kapra",
+   "Sumce"
+  ],
+  "quip_correct": "Tys to věděl! Klidně i ten losos na tvém talíři plaval jako malý v norském fjordu.",
+  "quip_wrong": "Ne tahle ryba. Tuňák, kapr ani sumec to nejsou — norské fjordy jsou plné klecí s lososem.",
+  "explanation": "Norsko je největším producentem chovaného lososa na světě — chová se ve velkých klecích přímo ve fjordech, kde je studená a čistá voda.",
+  "about": "norském lososu",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, salmon fish farm net cages floating in a calm fjord"
+ },
+ {
+  "id": "no-t-ski",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Které mezinárodně používané slovo pro zimní sport pochází přímo z norštiny?",
+  "answer": "Lyže (slovo „ski“)",
+  "distractors": [
+   "Hokej",
+   "Curling",
+   "Sáňkování"
+  ],
+  "quip_correct": "I Angličani, Němci a skoro celý svět na sníh vyrážejí se slovem, které si prostě půjčili od Norů.",
+  "quip_wrong": "Hokej, curling ani sáňkování norský původ nemají — mezinárodní slovo ski vzniklo právě z norštiny.",
+  "explanation": "Slovo „ski“ pochází ze staronorského „skíð“, což znamenalo kus dřeva. Nejstarší dochovaná lyže z norských bažin je stará přes pět tisíc let.",
+  "about": "slovu „ski“ a jeho původu",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, pair of old wooden skis leaning against a snowy cabin wall"
+ },
+ {
+  "id": "no-t-pulnocni-slunce",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se v létě děje se sluncem v nejsevernějším Norsku, třeba na mysu Nordkapp?",
+  "answer": "Nezapadá vůbec, svítí i o půlnoci",
+  "distractors": [
+   "Zapadá jako jinde, jen o pár hodin později",
+   "Je vidět jen na pár minut denně",
+   "Nesvítí tam v létě vůbec"
+  ],
+  "quip_correct": "Půlnoc a slunce pořád visí nad obzorem. Kdo tam zapomene zatáhnout závěsy, spánek si nedá.",
+  "quip_wrong": "Nic z toho. Na severu Norska slunce v létě týdny vůbec nezapadne — svítí i o půlnoci.",
+  "explanation": "Jev se nazývá půlnoční slunce a platí opačně i v zimě, kdy naopak slunce na několik týdnů vůbec nevyjde — říká se tomu polární noc.",
+  "about": "půlnočním slunci",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, low midnight sun glowing orange over an arctic sea horizon"
+ },
+ {
+  "id": "no-t-fjordy",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak vznikly hluboké norské fjordy, kterými je země proslulá?",
+  "answer": "Vyhloubily je pohybující se ledovce v dobách ledových",
+  "distractors": [
+   "Vykopali je vikingové jako přístavy",
+   "Vznikly erozí řek za posledních sto let",
+   "Jsou to zatopené sopečné krátery"
+  ],
+  "quip_correct": "Kilometry silný led se sunul krajinou tisíce let a vyryl brázdy, do kterých se pak nastěhovalo moře.",
+  "quip_wrong": "Vikingové, řeky ani sopky za tím nestojí — fjordy vyhloubil ledovcový led v dobách ledových.",
+  "explanation": "Nejdelší a nejhlubší norský fjord Sognefjord měří přes 200 kilometrů a na nejhlubším místě klesá přes 1300 metrů pod hladinu.",
+  "about": "vzniku norských fjordů",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, narrow fjord between steep green mountains with a waterfall"
+ },
+ {
+  "id": "no-t-nobelova-cena-miru",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Kterou z Nobelových cen výjimečně uděluje Norsko, zatímco všechny ostatní se předávají ve Švédsku?",
+  "answer": "Nobelovu cenu míru",
+  "distractors": [
+   "Nobelovu cenu za literaturu",
+   "Nobelovu cenu za fyziku",
+   "Nobelovu cenu za ekonomii"
+  ],
+  "quip_correct": "Nobel byl Švéd, ale mírovou cenu svěřil sousednímu Norsku. Zbytek Skandinávie se dohaduje proč dodnes.",
+  "quip_wrong": "Literatura, fyzika i ekonomie zůstávají doma ve Švédsku — jen ta mírová cena se předává v Norsku.",
+  "explanation": "Cenu míru uděluje pětičlenný výbor jmenovaný norským parlamentem, zatímco o zbylých cenách rozhodují švédské akademie a instituce.",
+  "about": "Nobelově ceně míru",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, ornate city hall building with flags under a pale sky"
+ },
+ {
+  "id": "no-t-vykrik",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Který slavný obraz, dnes populární i jako emoji, namaloval Nor Edvard Munch?",
+  "answer": "Výkřik (Skrik)",
+  "distractors": [
+   "Hvězdnou noc",
+   "Mona Lisu",
+   "Persistenci paměti"
+  ],
+  "quip_correct": "Postava s rukama na tvářích si dnes žije druhý život v chatových appkách. Munch netušil, do čeho jde.",
+  "quip_wrong": "Hvězdnou noc namaloval Van Gogh, Mona Lisu Leonardo a hodiny co tečou Dalí — Munchův slavný obraz je Výkřik.",
+  "explanation": "Munch namaloval Výkřik ve čtyřech verzích a obraz byl dvakrát ukraden z norských muzeí — pokaždé se ho ale podařilo získat zpátky.",
+  "about": "obrazu Výkřik od Edvarda Muncha",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, lone figure on a bridge under a swirling orange sky"
+ },
+ {
+  "id": "no-t-amundsen",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Lidé",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Norský polárník Roald Amundsen se jako první člověk na světě dostal kam?",
+  "answer": "Na jižní pól",
+  "distractors": [
+   "Na severní pól",
+   "Na vrchol Mount Everestu",
+   "Na dno Mariánského příkopu"
+  ],
+  "quip_correct": "O pár týdnů dřív než britský rival Scott — a ten svůj závod se životem nakonec prohrál úplně.",
+  "quip_wrong": "Severní pól, Everest ani Mariánský příkop to nejsou — Amundsen jako první dosáhl jižního pólu.",
+  "explanation": "Amundsenova výprava dorazila na jižní pól v prosinci 1911, asi měsíc před Brity vedenými Robertem Scottem, jejichž výprava se z cesty zpátky už nevrátila.",
+  "about": "Roaldu Amundsenovi a jižním pólu",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, small tent and flag standing alone on a vast white polar plain"
+ },
+ {
+  "id": "no-a-ropny-fond",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Norský státní penzijní fond, největší svého druhu na světě, vlastní podíl v tisících firmách. Kolik ze všech veřejně obchodovaných akcií na světě zhruba drží?",
+  "answer": "Zhruba jedno a půl procenta",
+  "distractors": [
+   "Méně než 0,1 procenta",
+   "Přes 10 procent",
+   "Fond investuje výhradně doma v Norsku"
+  ],
+  "quip_correct": "Ropa z mořského dna nakonec teče do akcií po celém světě — Norsko si koupilo kousek téměř všeho, jen ne sebe.",
+  "quip_wrong": "Vedle. Fond nesmí investovat doma a jeho podíl na světových akciích je mnohem výraznější, než tipy naznačovaly.",
+  "explanation": "Fond vznikl z příjmů ze severomořské ropy a zákon mu ze zásady zakazuje investovat v samotném Norsku, aby přehřátou domácí ekonomiku ještě nepodpořil.",
+  "about": "norském ropném fondu",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, offshore oil platform on a grey northern sea"
+ },
+ {
+  "id": "no-a-trezor-semen",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co v roce 2016 ohrozilo norský Svalbardský trezor semen, který má lidstvu pomoct přežít globální katastrofy?",
+  "answer": "Tající permafrost zaplavil vodou vstupní chodbu",
+  "distractors": [
+   "Vloupání pašeráků vzácných semen",
+   "Požár způsobený zkratem v elektrice",
+   "Zemětřesení poškodilo konstrukci hory"
+  ],
+  "quip_correct": "Trezor postavený, aby přežil skoro cokoliv, propíchla voda z permafrostu, co roztál kvůli oteplování, které lidstvo taky umí.",
+  "quip_wrong": "Pašeráci, zkrat ani zemětřesení za tím nestojí — vstupní chodbu zaplavila voda z tajícího permafrostu.",
+  "explanation": "Trezor je vytesaný do skály na souostroví Svalbard a má chránit skoro milion vzorků semen z celého světa — po zaplavení chodby ho museli dodatečně vodotěsně upravit.",
+  "about": "Svalbardském trezoru semen",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, concrete entrance built into a snowy arctic mountainside"
+ },
+ {
+  "id": "no-a-trest-vrazda",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Jaký je v Norsku nejdelší běžně možný trest za vraždu, i tu nejbrutálnější?",
+  "answer": "21 let, s možností dalšího prodlužování, pokud je pachatel stále nebezpečný",
+  "distractors": [
+   "Doživotí bez podmínečného propuštění",
+   "Trest smrti v nejzávažnějších případech",
+   "5 let, norské zákony jsou extrémně mírné"
+  ],
+  "quip_correct": "Nejtvrdší trest bez doživotí je jen 21 let na papíře — přísnost si Norsko zjevně šetří na jiné věci, třeba na daň z ryb.",
+  "quip_wrong": "Norsko nezná doživotí ani trest smrti a rozhodně není tak měkké, jak tvrdí ta poslední možnost — strop je 21 let, ale dá se prodlužovat.",
+  "explanation": "Díky takzvané preventivní vazbě může soud trest po pěti letech znovu a znovu prodlužovat, pokud odsouzený stále představuje nebezpečí — formálně tak Norsko doživotí nemá, fakticky ho ale dosáhnout umí.",
+  "about": "norském trestním systému",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, quiet courtroom bench with a wooden gavel and scales"
+ },
+ {
+  "id": "no-a-velrybarstvi",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Norsko je jednou z posledních zemí světa, která navzdory mezinárodnímu moratoriu pokračuje v čem?",
+  "answer": "V komerčním lovu velryb",
+  "distractors": [
+   "V lovu tuleňů výhradně pro kožešiny",
+   "V rybolovu žraloků kvůli ploutvím",
+   "V lovu velryb jen pro vědecké účely, jako jediná výjimka"
+  ],
+  "quip_correct": "Zelená velmoc elektromobilů a solárních dotací si zároveň drží harpuny — ekologie končí přesně tam, kde začíná velrybí steak.",
+  "quip_wrong": "Tuleni, žraločí ploutve ani vědecká výjimka to nejsou — Norsko otevřeně pokračuje v komerčním lovu velryb.",
+  "explanation": "Norsko proti moratoriu z roku 1986 formálně vzneslo námitku, takže ho právně nezavazuje, a samo si stanovuje roční kvóty — hlavně na plejtváky malé.",
+  "about": "norském lovu velryb",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, small fishing boat on cold grey northern waters"
+ }
+]

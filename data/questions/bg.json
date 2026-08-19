@@ -672,5 +672,215 @@
   "quip_wrong": "Hmm, ne tahle náplň! Banica je slaná, ne sladká.",
   "explanation": "Banica je bulharské slané pečivo z tenkých plátů těsta. Náplň tvoří vejce, jogurt a bílý sýr sirene, podobný feta sýru. Peče se ve spirále nebo ve vrstvách a jí se ráno k snídani.",
   "about": "banici"
+ },
+ {
+  "id": "bg-k-vitosha",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje hora hned vedle bulharské Sofie, kam si obyvatelé jezdí v zimě zalyžovat?",
+  "answer": "Vitoša",
+  "distractors": [
+   "Musala",
+   "Pirin",
+   "Rila"
+  ],
+  "quip_correct": "Tys to věděl! Vitoša je tak blízko Sofie, že si lidi ráno vezmou lyže a odpoledne jsou zase doma na obědě.",
+  "quip_wrong": "Skoro! Všechny tři jsou bulharské hory, ale ta hned vedle Sofie, kam jezdí lyžaři, se jmenuje jinak.",
+  "explanation": "Vitoša se zvedá hned za jižním okrajem Sofie a patří mezi mála hory na světě, které jsou vidět přímo z centra hlavního města — na sjezdovky se z města dostaneš i tramvají.",
+  "about": "hoře Vitoša",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, snow-capped mountain rising directly behind a small hillside city, ski slopes visible on the near side"
+ },
+ {
+  "id": "bg-k-horo",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Kultura",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje tradiční bulharský tanec, který se tančí v jednom velkém kruhu se všemi za ruce?",
+  "answer": "Horo",
+  "distractors": [
+   "Valčík",
+   "Polka",
+   "Kankán"
+  ],
+  "quip_correct": "Tys to věděl! Kruh u hora se během večera pořád zvětšuje, jak se do něj přidávají další a další tanečníci.",
+  "quip_wrong": "Ouha, ne tenhle tanec! Ten bulharský kruhový tanec se jmenuje jinak.",
+  "explanation": "Horo se v Bulharsku tančí na svatbách i vesnických oslavách už stovky let a kroky se v rodinách dědí z generace na generaci, aniž by je někdo učil ve škole.",
+  "about": "tanci horo",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a circle of dancers holding hands in traditional embroidered costumes on a village square"
+ },
+ {
+  "id": "bg-t-levski",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč se bulharskému revolucionáři Vasilu Levskému z 19. století říká 'Apoštol svobody'?",
+  "answer": "Sám pěšky procestoval zemi a založil tajnou síť revolučních výborů proti osmanské nadvládě",
+  "distractors": [
+   "Kázal po klášterech o odpuštění",
+   "Velel armádě, která dobyla Sofii",
+   "Psal básně oslavující sultána"
+  ],
+  "quip_correct": "Apoštol bez kostela, zato s revolverem a stovkami tajných výborů po celé zemi — a roky ho nikdo nedokázal vystopovat.",
+  "quip_wrong": "Zbožnost do toho netahej, Levského zbraně byly konspirace a odvaha, ne kázání.",
+  "explanation": "Osmanské úřady Levského roku 1873 dopadly a popravily; dnes po něm nese jméno stovky ulic a náměstí a v anketách bývá opakovaně volen za největšího Bulhara všech dob.",
+  "about": "Vasilu Levském",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a lone 19th-century revolutionary figure in a dark coat and fur hat standing resolute on a hillside path at dusk"
+ },
+ {
+  "id": "bg-t-madara",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Umění",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co zobrazuje Madarský jezdec, přes tisíc let starý reliéf vytesaný vysoko do skály?",
+  "answer": "Jezdce na koni, jak kopím probodává lva",
+  "distractors": [
+   "Bitvu stovek vojáků",
+   "Boha slunce na ohnivém voze",
+   "Sedícího krále na trůnu"
+  ],
+  "quip_correct": "Jezdec, kůň i lev vytesaní do čtyřicetimetrové skály — a badatelé se dodnes hádají, koho přesně ten jezdec zpodobňuje.",
+  "quip_wrong": "Zvíře máš správně, ale scénu sis domyslel jinak.",
+  "explanation": "Madarský jezdec vznikl pravděpodobně na začátku 8. století, je jediným reliéfem svého druhu v Evropě a dnes se objevuje i na bulharských oběžných mincích.",
+  "about": "Madarském jezdci",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a horseman relief carved high into a sheer cliff face, weathered stone, soft morning light"
+ },
+ {
+  "id": "bg-t-belogradchik",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč mají belogradčické skály jména jako 'Jeptiška' nebo 'Medvěd'?",
+  "answer": "Vítr a voda je za miliony let ohladily do tvarů, které připomínají postavy a zvířata",
+  "distractors": [
+   "Car nechal skalní sochy vytesat na oslavu vítězství",
+   "Jsou to kulisy postavené pro historický film",
+   "Pojmenovali je podle bitvy, co se tam odehrála"
+  ],
+  "quip_correct": "Stovky milionů let eroze a výsledkem je galerie soch, kterou nikdo neobjednal a nikdo za ni nezaplatil.",
+  "quip_wrong": "Kamenné jsou, jenže žádný sochař ani filmový štáb za tím nestojí.",
+  "explanation": "Červené pískovcové skály u Belogradčiku formovaly vítr a voda přes 200 milionů let a kolem nejznámějších útvarů dodnes koluje lidová pověst o zkamenělých mniších a jeptiškách.",
+  "about": "belogradčických skalách",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, tall reddish rock formations shaped like robed figures rising from a forested hillside"
+ },
+ {
+  "id": "bg-t-dimitrov",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Čeho dosáhl tenista Grigor Dimitrov v roce 2017 jako první Bulhar v historii?",
+  "answer": "Vyhrál Turnaj mistrů a vyšplhal na 3. místo světového žebříčku",
+  "distractors": [
+   "Vyhrál grandslamový turnaj ve dvouhře",
+   "Získal olympijské zlato v tenise",
+   "Porazil ve finále Wimbledonu Rogera Federera"
+  ],
+  "quip_correct": "Trojka světa a trofej z Turnaje mistrů — přezdívka 'Baby Federer' mu najednou přestala znít jako škádlení.",
+  "quip_wrong": "Sláva mu nechyběla, ale zrovna tenhle turnaj to nebyl.",
+  "explanation": "Grigor Dimitrov vyhrál v listopadu 2017 Turnaj mistrů v Londýně a dostal se na třetí místo žebříčku ATP — výš se v historii bulharský tenista nikdy nedostal.",
+  "about": "Grigoru Dimitrovovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a tennis player mid-swing on an outdoor clay court, warm afternoon light"
+ },
+ {
+  "id": "bg-t-ljutenica",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Jídlo",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je ljutenica, kterou má v Bulharsku ve spíži schovanou skoro každá rodina?",
+  "answer": "Hustá pomazánka upečená z paprik a rajčat",
+  "distractors": [
+   "Ostrá klobása z jehněčího masa",
+   "Sladké želé z růžových lístků",
+   "Nakládaná zelenina naložená v octě"
+  ],
+  "quip_correct": "Pomazánka, kterou babičky zavařují na celou zimu dopředu — a která babička má nejlepší recept, se v rodinách řeší hlasitěji než politika.",
+  "quip_wrong": "Pálivou stopu jsi vycítil správně, jenže formu úplně vedle.",
+  "explanation": "Ljutenica se v Bulharsku tradičně vaří koncem léta z čerstvě upečených paprik a rajčat a zavařuje do sklenic na celou zimu — na stole je stejně samozřejmá jako u nás hořčice.",
+  "about": "ljutenici",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a row of glass jars filled with deep red pepper spread on a sunlit kitchen windowsill"
+ },
+ {
+  "id": "bg-a-varna-zlato",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč je zlatý poklad z pohřebiště u Varny fakticky nejstarším zpracovaným zlatem na světě?",
+  "answer": "Je starý přes 6000 let, tedy víc než tisíc let déle než egyptské pyramidy",
+  "distractors": [
+   "Obsahuje čistší zlato než jakýkoli jiný nález",
+   "Je to nejtěžší objevený zlatý poklad na světě",
+   "Patřil nejstaršímu panovníkovi, jaký je historicky doložen"
+  ],
+  "quip_correct": "Nejstarší zpracované zlato na planetě leželo pod městečkem, kam dnes turisté jezdí spíš na pláž než na vykopávky.",
+  "quip_wrong": "Rekord to skutečně je, jenom ne tenhle.",
+  "explanation": "Varnenská nekropole pochází z 5. tisíciletí před naším letopočtem a obsahuje přes tři tisíce zlatých artefaktů — je to nejstarší doložené zpracované zlato, jaké se kdy na Zemi našlo.",
+  "about": "varnenském zlatém pokladu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, small ancient gold ornaments laid out on dark excavated earth"
+ },
+ {
+  "id": "bg-a-kostadinova",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Sport",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je pozoruhodné na světovém rekordu Stefky Kostadinovové ve skoku vysokém z roku 1987?",
+  "answer": "Dodnes ho nikdo nepřekonal — je to nejstarší stále platný rekord v ženské atletice",
+  "distractors": [
+   "Byl už dávno překonán o desítky centimetrů",
+   "Uznává se jen jako bulharský národní rekord",
+   "Platí pouze v kategorii do 20 let"
+  ],
+  "quip_correct": "Rekord starší než většina dnešních atletek na startovní čáře — desítky let tréninkových metod, obuvi i výživy, a laťka ve 209 centimetrech pořád nikoho nepustila výš.",
+  "quip_wrong": "Trend sis odhadl přesně obráceně.",
+  "explanation": "Stefka Kostadinovová skočila 209 centimetrů v roce 1987 v Římě a je to nejdéle nepřekonaný světový rekord ze všech disciplín ženské atletiky.",
+  "about": "světovém rekordu Stefky Kostadinovové",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a high jumper arched over a bar against a stadium sky at dusk"
+ },
+ {
+  "id": "bg-a-internet",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Místa",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím dlouhodobě překvapovala Sofie žebříčky rychlosti internetu, i ve srovnání s bohatšími evropskými metropolemi?",
+  "answer": "Měla jedno z nejrychlejších a nejlevnějších připojení na světě",
+  "distractors": [
+   "Byla naopak jedním z nejpomalejších měst Evropy",
+   "Internet tam fungoval jen ve firmách",
+   "Rychlost připojení tam byla přesně průměrná"
+  ],
+  "quip_correct": "Jedna z nejchudších metropolí Evropské unie a přitom internet rychlejší než v Londýně nebo Paříži — sousedské kabely natažené přes dvorky nakonec porazily miliardové investice telekomů.",
+  "quip_wrong": "Přesný opak toho, co si o Sofii historicky myslely žebříčky rychlosti připojení.",
+  "explanation": "Rychlý sofijský internet vznikl v 90. letech, když si sousedé sami natahovali kabely mezi paneláky a stavěli neoficiální lokální sítě — stát je později zlegalizoval a zdědil tak hustou a levnou infrastrukturu.",
+  "about": "rychlosti internetu v Sofii",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, tangled cables strung between old apartment block balconies against a city skyline"
  }
 ]

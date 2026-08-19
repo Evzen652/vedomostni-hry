@@ -878,5 +878,215 @@
   "explanation": "Santorinský způsob pěstování révy zvané 'kouloura' (košatka) je UNESCO dědictví. Réva se neopírá o kůly, ale stáčí se do nízkého kruhu, který drží hrozny nad sopečnou půdou. Díky mlze z moře nepotřebuje zavlažování — a vinaři ji pěstují bez změn přes 3500 let.",
   "about": "santorinském vínu a réví",
   "image_prompt": "Unique basket-trained vines in volcanic black soil on Santorini with the caldera in background, painterly watercolor style"
+ },
+ {
+  "id": "gr-k-trojsky-kun",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se podle staré řecké pověsti dostali řečtí vojáci dovnitř opevněného města Trója?",
+  "answer": "Schovali se uvnitř obřího dřevěného koně",
+  "distractors": [
+   "Prokopali pod hradbami tajný tunel",
+   "Přeletěli hradby na křídlech z peří a vosku",
+   "Hradby prostě rozbili obřím beranidlem"
+  ],
+  "quip_correct": "Tys to věděl! Trójané si dřevěného koně vzali dovnitř sami jako dárek — bránu jim nikdo otevřít nenutil.",
+  "quip_wrong": "Skoro! Žádný tunel ani beranidlo — Řekové se propašovali dovnitř v bříše dřevěného koně.",
+  "explanation": "Podle Homérovy pověsti válka o Tróju trvala deset let, než Řekové vymysleli lest s dřevěným koněm plným vojáků, kterého si Trójané sami vtáhli dovnitř hradeb.",
+  "about": "trojském koni",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a giant wooden horse statue standing before ancient stone city gates at dusk"
+ },
+ {
+  "id": "gr-k-chobotnice",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co řečtí rybáři často pověsí sušit se na sluníčku na provaz u přístavu, než to grilují?",
+  "answer": "Chobotnici",
+  "distractors": [
+   "Ponožky",
+   "Rybářské sítě",
+   "Mušle"
+  ],
+  "quip_correct": "Jé, tys to věděl! Rybáři si tím ušetří spoustu práce v kuchyni — sluníčko odvede tu nejtěžší část samo.",
+  "quip_wrong": "Skoro! Sítě ani mušle se na provazu kvůli obědu nesuší — visí tam chobotnice.",
+  "explanation": "Chobotnice se před grilováním nejdřív několikrát udeří o kámen a pak se suší na slunci, aby maso pěkně změklo — tenhle postup se u řeckých přístavů dělá už po staletí.",
+  "about": "sušených chobotnicích",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — octopus tentacles hanging to dry on a rope by a small Greek harbor, fishing boats in background"
+ },
+ {
+  "id": "gr-t-sparta-300",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Historie",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Kolik sparťanských bojovníků, proslavených i filmem 300, bránilo úzký průsmyk Thermopyly proti obrovské perské přesile?",
+  "answer": "300",
+  "distractors": [
+   "30",
+   "3000",
+   "30000"
+  ],
+  "quip_correct": "Číslo znáš spíš z kina než z dějepisu. Sedí to ale na fous.",
+  "quip_wrong": "Vedle. Zkus číslo, které dalo filmu i jméno.",
+  "explanation": "Sparťanům kromě filmové trojky sekundovaly ještě tisíce dalších řeckých spojenců, ti ale byli před finálním útokem propuštěni — v pasti u Thermopyl nakonec zůstala jen ta hrstka, co měla zdržet Peršany co nejdéle.",
+  "about": "bitvě u Thermopyl",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a narrow rocky mountain pass with ancient Greek warriors in bronze armor standing in formation, dramatic light"
+ },
+ {
+  "id": "gr-t-korintsky-kanal",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Čím je pověstný Korintský průplav, který odděluje poloostrov Peloponés od pevninského Řecka?",
+  "answer": "Je tak úzký, že jím velké lodě proplouvají jen s pomocí remorkérů",
+  "distractors": [
+   "Je nejširším průplavem na světě",
+   "Je úplně vyschlý, lodě jím nikdy neplují",
+   "Vede pod zemí jako tunel, není vidět z povrchu"
+  ],
+  "quip_correct": "Šířka na doraz — kapitáni tudy proplouvají s nervama nadranc a remorkérem v závěsu.",
+  "quip_wrong": "Ne tak úplně. Korintský průplav je extrémní hlavně svou úzkostí, ne šířkou nebo suchem.",
+  "explanation": "Korintský průplav je dlouhý necelých 6,5 kilometru, ale jen asi 21 metrů široký při hladině, takže větší lodě jím musí táhnout remorkéry — svislé skalní stěny kolem se navíc tyčí až do výšky 90 metrů.",
+  "about": "Korintském průplavu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — an extremely narrow canal cut through tall rock cliffs with a small boat passing through, steep stone walls"
+ },
+ {
+  "id": "gr-t-kolos-rhodu",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Historie",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co se stalo s obří sochou Kolos rhodský, jedním ze sedmi divů starověkého světa, po ničivém zemětřesení?",
+  "answer": "Přes 800 let ležela zřícená na zemi, než ji prodali jako šrot",
+  "distractors": [
+   "Ihned ji znovu postavili na stejném místě",
+   "Roztavili ji na mince ještě téhož roku",
+   "Odvezli ji jako válečnou trofej do Říma"
+  ],
+  "quip_correct": "Osm set let ležela na zemi a nikdo se s ní neobtěžoval — sochy dovedou být trapně vytrvalé i v troskách.",
+  "quip_wrong": "Ne tak dramaticky rychle. Osud Kolosu byl mnohem pomalejší a nudnější.",
+  "explanation": "Bronzová socha slunečního boha Hélia stála u vjezdu do přístavu Rhodos jen asi 54 let, než ji roku 226 př. n. l. zlomilo zemětřesení; trosky prý nakonec odkoupil obchodník, kterému je odvezlo přes devět set velbloudů.",
+  "about": "Rhodském kolosu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — fallen fragments of an ancient bronze giant statue lying broken on a Mediterranean harbor shore, weathered stone"
+ },
+ {
+  "id": "gr-t-sokrates",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Lidé",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak zemřel starověký filozof Sókratés poté, co ho athénský soud odsoudil?",
+  "answer": "Vypil číši jedu z bolehlavu",
+  "distractors": [
+   "Byl popraven mečem",
+   "Zemřel hlady ve vězení",
+   "Uprchl do vyhnanství a zemřel stářím"
+  ],
+  "quip_correct": "Utéct mohl, kamarádi mu to nabízeli. Vypil jed sám a na rovinu — z vlastní popravy si udělal poslední filozofickou lekci.",
+  "quip_wrong": "Ne tak dramaticky rychle. Sókratova poprava měla úplně jinou podobu.",
+  "explanation": "Sókratés byl v roce 399 př. n. l. odsouzen za kažení mládeže a bezbožnost; jeho poslední hodiny popsal žák Platón v dialogu Faidón, který se dodnes čte na hodinách filozofie.",
+  "about": "Sókratovi",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — an elderly philosopher in a toga sitting calmly in an ancient prison cell, soft light through a barred window"
+ },
+ {
+  "id": "gr-t-delfy",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Za co starověcí Řekové považovali posvátné místo Delfy?",
+  "answer": "Za střed neboli pupek celého světa",
+  "distractors": [
+   "Za bránu do podsvětí",
+   "Za rodiště boha Dia",
+   "Za hrob hrdiny Achillea"
+  ],
+  "quip_correct": "Vlastní pupek světa si Řekové nakreslili doprostřed vlastní mapy. Peršané měli jinou mapu a jiný střed — nikoho to nerušilo.",
+  "quip_wrong": "Ne tak temně. Delfy měly v mytologii pozici středu světa, ne brány do podsvětí.",
+  "explanation": "Podle pověsti Zeus vypustil dva orly z opačných konců světa a tam, kde se setkali, označil kámen zvaný omfalos — přesně v Delfách, kde stál i slavný Apollónův chrám s věštírnou.",
+  "about": "Delfách",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — ancient stone ruins of a temple on a mountainside with a round omphalos stone marker, misty mountains behind"
+ },
+ {
+  "id": "gr-a-delfska-vestba",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Jak moderní geologové vysvětlují transy věštkyně Pýthie v Delfách, kterým starověcí Řekové věřili jako hlasu boha Apollóna?",
+  "answer": "Podzemní geologický zlom pod chrámem mohl unikat plyny, které vyvolávaly halucinace",
+  "distractors": [
+   "Pýthie prokazatelně jen předstírala trans za peníze",
+   "Trans způsobovalo víno smíchané s medem",
+   "Jde o čistě literární smyšlenku, věštírna nikdy nefungovala"
+  ],
+  "quip_correct": "Dva tisíce let si lidé mysleli, že mluví s bohem. Byl to unikající plyn ze zlomu v zemi. Bůh v tom nakonec nefiguroval, jen geologie.",
+  "quip_wrong": "Vysvětlení je mnohem přízemnější — doslova. Jde o něco, co stoupá ze země, ne o víno ani herectví.",
+  "explanation": "Geologové Jelle de Boer a John Hale v roce 2001 potvrdili, že chrám v Delfách stojí přesně nad křížením dvou geologických zlomů, ze kterých mohl unikat plyn etylén, jenž ve zředěné podobě vyvolává mírnou euforii a stav podobný transu.",
+  "about": "vědeckém vysvětlení delfské věštby",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a mysterious oracle temple ruin with faint mist rising from cracks in the rocky ground, dim golden light"
+ },
+ {
+  "id": "gr-a-athos",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Místa",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Co platí na poloostrově Athos, autonomní mnišské republice uvnitř Řecka, už přes tisíc let a co obešlo i pravidla Evropské unie?",
+  "answer": "Ženám je vstup zakázán úplně, výjimku si Řecko vyjednalo i při vstupu do EU",
+  "distractors": [
+   "Vjezd aut je zakázán, chodí se jen pěšky nebo na oslu",
+   "Peníze se tam nesmí používat, platí se jen naturáliemi",
+   "Elektřina je zakázána, svítí se jen svíčkami"
+  ],
+  "quip_correct": "Tisíc let stará výjimka a Brusel na ni klidně kývnul. Rovnost pohlaví má na jednom řeckém poloostrově prostě trvalou dovolenou.",
+  "quip_wrong": "Zákaz na Athosu je konkrétnější a mnohem starší, než tipuješ.",
+  "explanation": "Zákaz vstupu ženám, tzv. avaton, pochází z byzantského ediktu z roku 1046; při vstupu Řecka do Evropské unie v roce 1979 dostala tato autonomní mnišská oblast zvláštní protokol, který ji vyňal z unijních pravidel o rovnosti pohlaví.",
+  "about": "hoře Athos",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a remote Byzantine monastery clinging to a steep forested cliff above the sea, misty morning light, no people"
+ },
+ {
+  "id": "gr-a-uzo-efekt",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "kids": false,
+  "type": "choice",
+  "question": "Proč čirý řecký ouzo po přidání vody nebo ledu zbělá a zakalí se?",
+  "answer": "Aromatická látka anethol se rozpouští jen v alkoholu, ne ve vodě, a vytvoří drobné kapičky",
+  "distractors": [
+   "Výrobci do lahve přidávají mléko kvůli barvě",
+   "Je to jen optický klam způsobený osvětlením v barech",
+   "Voda chemicky reaguje s cukrem přidaným do ouza"
+  ],
+  "quip_correct": "Kouzlo bez kouzel — čirá tekutina zbělá, protože jedna molekula nesnáší vodu. Fyzika tu dělá práci za barmana.",
+  "quip_wrong": "Zákal v ouzu nemá s mlékem ani s osvětlením nic společného — je to čistá chemie, kapička proti kapičce.",
+  "explanation": "Jev se vědecky nazývá ouzo efekt neboli spontánní emulzifikace a používá se i mimo gastronomii, například ve farmacii a nanotechnologiích při výrobě mikroskopických kapiček bez použití emulgátoru.",
+  "about": "ouzo efektu",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a glass of clear ouzo turning milky cloudy as water is poured in, ice cubes, warm taverna table light"
  }
 ]
