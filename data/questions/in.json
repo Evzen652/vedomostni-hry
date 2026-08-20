@@ -804,5 +804,49 @@
     "source_url": "https://en.wikipedia.org/wiki/Thar_Desert",
     "image_prompt": "Fotorealistický širokoúhlý snímek písečných dun Thárské pouště se skupinou velbloudů, zlaté večerní světlo, 16:9",
     "about": "Thárské poušti"
+  },
+  {
+    "id": "in-k-taj-mahal-mramor",
+    "cc": "in",
+    "country": "Indie",
+    "section": "Města a památky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Z jakého vzácného bílého kamene je postavený slavný Tádž Mahal?",
+    "answer": "Bílý mramor",
+    "distractors": [
+      "Žula",
+      "Pískovec",
+      "Vápenec"
+    ],
+    "quip_correct": "Přesně tak! Bílý mramor stál tolik peněz, že by se za něj dal koupit menší poklad.",
+    "quip_wrong": "Skoro! Kdyby byl Tádž Mahal z obyčejného pískovce, turisté by možná jezdili obdivovat jen hromadu písku.",
+    "explanation": "Mramor Tádž Mahalu mění barvu podle denní doby - ráno je růžový, večer zlatavý a za úplňku se leskne stříbrně.",
+    "source_url": "https://cs.wikipedia.org/wiki/T%C3%A1d%C5%BE_Mahal",
+    "image_prompt": "Fotorealistický snímek zářivě bílého mramorového Tádž Mahalu v ranním slunci s odrazem ve vodní nádrži před ním, 16:9",
+    "about": "Tádž Mahalu"
+  },
+  {
+    "id": "in-k-slon-indicky",
+    "cc": "in",
+    "country": "Indie",
+    "section": "Příroda a zvířata",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaké velké zvíře s dlouhým chobotem Indové o svátcích malují barvami a vodí v průvodech?",
+    "answer": "Slon",
+    "distractors": [
+      "Nosorožec",
+      "Hroch",
+      "Buvol"
+    ],
+    "quip_correct": "Tak jest! Slon si nechá pomalovat čelo pestrými vzory a kráčí průvodem jako pohyblivý obraz.",
+    "quip_wrong": "Skoro! Nosorožec by na barvy asi nekýval - má dost práce s hlídáním vlastního rohu.",
+    "explanation": "Indický slon má menší uši než jeho africký příbuzný a odedávna lidem pomáhal tahat těžké klády dřeva v lesích.",
+    "source_url": "https://cs.wikipedia.org/wiki/Slon_indick%C3%BD",
+    "image_prompt": "Fotorealistický snímek slavnostně pomalovaného indického slona s barevnými vzory na hlavě během festivalového průvodu v Indii, 16:9",
+    "about": "indických slonech"
   }
 ]

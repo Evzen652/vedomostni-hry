@@ -805,5 +805,27 @@
     "source_url": "https://en.wikipedia.org/wiki/Nanga_Parbat",
     "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu hory Nanga Parbat, strmé svahy, dramatická obloha, bez lidí, 16:9",
     "about": "hoře Nanga Parbat"
+  },
+  {
+    "id": "pk-k-karachi-largest-city",
+    "cc": "pk",
+    "country": "Pákistán",
+    "section": "Města",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje největší město Pákistánu, které leží u moře a má obrovský přístav?",
+    "answer": "Karáčí",
+    "distractors": [
+      "Islámábád",
+      "Láhaur",
+      "Péšávar"
+    ],
+    "quip_correct": "Přesně tak! Karáčí je takový pákistánský mraveniště - lidí je tam snad víc než zrnek písku na pláži.",
+    "quip_wrong": "Jejda, tahle odpověď je od moře stejně daleko jako velbloud od plavčíka.",
+    "explanation": "Karáčí bylo krátce i prvním hlavním městem Pákistánu, než se jím později stal Islámábád.",
+    "source_url": "https://cs.wikipedia.org/wiki/Kar%C3%A1%C4%8D%C3%AD",
+    "image_prompt": "Fotorealistický snímek rušného přístavu v pákistánském městě Karáčí s barevnými rybářskými loděmi a mrakodrapy v pozadí, 16:9",
+    "about": "Karáčí, největším pákistánském městě a přístavu"
   }
 ]

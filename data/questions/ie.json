@@ -796,5 +796,93 @@
     "explanation": "Dnes se k irským předkům hlásí zhruba čtvrtina obyvatel Austrálie, což z irské komunity dělá jednu z největších etnických skupin v zemi hned po anglických a skotských kořenech.",
     "about": "irských trestancích v Austrálii",
     "image_prompt": "Fotorealistický snímek siluety staré plachetnice na oceánském horizontu za soumraku, 16:9"
+  },
+  {
+    "id": "ie-k-papuchalci-skellig",
+    "cc": "ie",
+    "country": "Irsko",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jací ptáci s pestrobarevným zobákem hnízdí ve velkých hejnech na strmém irském ostrově Skellig Michael?",
+    "answer": "Papuchalci",
+    "distractors": [
+      "Tučňáci",
+      "Plameňáci",
+      "Pelikáni"
+    ],
+    "quip_correct": "Přesně tak! Papuchalk vypadá, jako by mu zobák namaloval klaun, a přitom je to šikovný potápěč.",
+    "quip_wrong": "Tučňáci by na Skellig Michael asi rychle prokřehli - ti dávají přednost ledové Antarktidě, ne irskému moři!",
+    "explanation": "Papuchalci umí při lovu ryb zůstat pod vodou skoro minutu a pod hladinou mávají křídly, jako by letěli.",
+    "source_url": "https://en.wikipedia.org/wiki/Skellig_Michael",
+    "image_prompt": "Fotorealistický snímek barevného papuchalka s oranžovým zobákem sedícího na skalním útesu ostrova Skellig Michael v Irsku, v pozadí modré moře, 16:9",
+    "about": "papuchalcích na ostrově Skellig Michael"
+  },
+  {
+    "id": "ie-k-sodovy-chleba",
+    "cc": "ie",
+    "country": "Irsko",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaký tradiční irský chléb se peče bez kvasnic, jen se sodou bikarbonou a podmáslím?",
+    "answer": "Sodový chléb",
+    "distractors": [
+      "Bagety",
+      "Preclíky",
+      "Bramborové placky"
+    ],
+    "quip_correct": "Trefa! Irská babička by ti za to dala pusu - sodový chléb je hotový mnohem rychleji než chléb s kváskem.",
+    "quip_wrong": "Kdyby sis na irský chléb musel počkat jako na vykynuté housky, vyhladověl bys skoro celý den!",
+    "explanation": "Na vrch bochníku se tradičně nožem vyřízne křížek, aby se teplo dostalo rovnoměrně až doprostřed a chléb se dobře propekl.",
+    "source_url": "https://en.wikipedia.org/wiki/Soda_bread",
+    "image_prompt": "Fotorealistický snímek čerstvě upečeného kulatého irského sodového chleba s křížkem na vrchu, položeného na dřevěném prkénku v kuchyni, 16:9",
+    "about": "irském sodovém chlebu"
+  },
+  {
+    "id": "ie-k-blarneysky-kamen",
+    "cc": "ie",
+    "country": "Irsko",
+    "section": "Města a památky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaký slavný kámen na hradě Blarney prý dá dar výřečnosti každému, kdo ho políbí?",
+    "answer": "Blarneyský kámen",
+    "distractors": [
+      "Kámen osudu",
+      "Rosettská deska",
+      "Kámen mudrců"
+    ],
+    "quip_correct": "Přesně! Teď víš, kde hledat dar řečnosti - stačí se nebát výšek a ohnout se dozadu nad hradbou.",
+    "quip_wrong": "Kdybys políbil Rosettskou desku, naučil by ses tak nanejvýš číst hieroglyfy, ne sladce mluvit!",
+    "explanation": "Aby návštěvníci kámen políbili, musí se předklonit hlavou dolů přes okraj hradby, zatímco je někdo drží pevně za nohy.",
+    "source_url": "https://en.wikipedia.org/wiki/Blarney_Stone",
+    "image_prompt": "Fotorealistický snímek starobylého kamenného hradu Blarney v Irsku obklopeného zelenými trávníky a vysokými stromy, 16:9",
+    "about": "Blarneyském kameni"
+  },
+  {
+    "id": "ie-k-svicka-v-okne",
+    "cc": "ie",
+    "country": "Irsko",
+    "section": "Svátky a tradice",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Co si Irové tradičně dávají o Vánocích do okna, aby ukázali pocestným, že jsou u nich vítáni?",
+    "answer": "Hořící svíčku",
+    "distractors": [
+      "Malovaný talíř",
+      "Slaměnou hvězdu",
+      "Skleněnou kouli"
+    ],
+    "quip_correct": "Správně! A kdybys byl unavený pocestný, taková svíčka v okně by tě ráda pozvala dál na horký čaj.",
+    "quip_wrong": "Slaměná hvězda by ve tmě moc nesvítila - to bys pocestné spíš minul, než jim posvítil na cestu!",
+    "explanation": "Podle tradice svíčku zapaluje nejmladší člen rodiny a nechává ji hořet celou vánoční noc až do rána.",
+    "source_url": "https://en.wikipedia.org/wiki/Christmas_in_Ireland",
+    "image_prompt": "Fotorealistický snímek hořící svíčky v okně tradičního irského domu za soumraku o Vánocích, teplé světlo dopadající na sklo, 16:9",
+    "about": "irské vánoční svíčce v okně"
   }
 ]

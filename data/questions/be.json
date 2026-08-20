@@ -796,5 +796,93 @@
     "explanation": "Belgická revoluce v roce 1830 vypukla po představení opery Němá z Portici v bruselském divadle - vlastenecká árie diváky natolik rozvášnila, že rovnou z divadla vyrazili do ulic bořit nizozemskou nadvládu.",
     "about": "vzniku Belgie po vídeňském kongresu",
     "image_prompt": "Fotorealistický snímek historické divadelní opony a lóže starého bruselského divadla, 16:9"
+  },
+  {
+    "id": "be-k-malinois-pes",
+    "cc": "be",
+    "country": "Belgie",
+    "section": "Zvířata",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje slavné plemeno psa z belgického města Mechelen, které dnes jako služebního psa využívají policisté a armády po celém světě?",
+    "answer": "Belgický ovčák malinois",
+    "distractors": [
+      "Německý ovčák",
+      "Border kolie",
+      "Bernský salašnický pes"
+    ],
+    "quip_correct": "Přesně tak - malinois je tak chytrý a rychlý, že by možná zvládl i tvoje domácí úkoly, kdyby uměl držet tužku.",
+    "quip_wrong": "Škoda, špatná tlapka! Tenhle pes možná umí přinést pantofle, ale hlídat letiště a pátrat po pachatelích nechává raději malinoisovi.",
+    "explanation": "Malinois je jedním ze čtyř plemen belgických ovčáků, pojmenovaných podle míst svého původu - vedle malinois existují i groenendael, tervueren a laekenois.",
+    "source_url": "https://en.wikipedia.org/wiki/Belgian_Malinois",
+    "image_prompt": "Fotorealistický snímek statného hnědého belgického ovčáka malinois se vztyčenýma ušima, jak stojí pozorně na trávníku v parku za slunečného dne, 16:9",
+    "about": "belgickém ovčáku malinois"
+  },
+  {
+    "id": "be-k-belfort-bruggy",
+    "cc": "be",
+    "country": "Belgie",
+    "section": "Města a památky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje vysoká středověká zvonice na náměstí v Bruggách, na kterou musíš vyšlapat přes 350 schodů, chceš-li se podívat z vrcholu na celé město?",
+    "answer": "Belfort v Bruggách",
+    "distractors": [
+      "Big Ben v Londýně",
+      "Šikmá věž v Pise",
+      "Eiffelova věž"
+    ],
+    "quip_correct": "Výborně, na vrchol! Doufejme, že jsi po cestě nahoru nepočítal schody nahlas, protože by ti asi došel dech dřív než číslice.",
+    "quip_wrong": "Bohužel, špatný směr! Tahle stavba sice taky láká turisty s foťákem, ale schody do Bruggy nikoho nevynesou.",
+    "explanation": "Belfort v Bruggách je spolu s dalšími belgickými zvonicemi zapsán na seznamu světového dědictví UNESCO.",
+    "source_url": "https://en.wikipedia.org/wiki/Belfry_of_Bruges",
+    "image_prompt": "Fotorealistický snímek vysoké středověké zvonice belfort na náměstí Market Square v Bruggách s cihlovou fasádou a hodinami, pod modrou oblohou, 16:9",
+    "about": "bruggském belfortu"
+  },
+  {
+    "id": "be-k-belgicka-cekanka",
+    "cc": "be",
+    "country": "Belgie",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jakou bílo-žlutou zeleninu s nahořklou chutí Belgičané objevili náhodou, když jeden farmář schoval její kořeny v tmavém sklepě a na chvíli na ně zapomněl?",
+    "answer": "Čekanku salátovou (belgickou endivii)",
+    "distractors": [
+      "Celer",
+      "Fenykl",
+      "Pórek"
+    ],
+    "quip_correct": "Přesně, čekanka! Kdyby ten farmář na kořeny nezapomněl, možná bychom o ní dodnes nevěděli - zapomínání se občas vyplácí.",
+    "quip_wrong": "Mimo! Tahle zelenina sice taky roste na zahrádce, ale svůj vznik nevděčí žádné zapomnětlivosti ve tmavém sklepě.",
+    "explanation": "Belgicky se této zelenině říká witloof, což doslova znamená bílý list, protože roste bez světla a zůstává skoro bílá.",
+    "source_url": "https://en.wikipedia.org/wiki/Chicory",
+    "image_prompt": "Fotorealistický snímek čerstvých hlávek bílo-žluté čekanky salátové (belgické endivie) položených na dřevěném stole ve venkovské kuchyni, 16:9",
+    "about": "belgické čekance (endivii)"
+  },
+  {
+    "id": "be-k-karneval-binche",
+    "cc": "be",
+    "country": "Belgie",
+    "section": "Svátky a tradice",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenují výstřední maskovaní muži se pštrosími pery na hlavě a dřevěnými botami, kteří každý rok házejí pomeranče do davu na karnevalu v belgickém městě Binche?",
+    "answer": "Gillové (Gilles)",
+    "distractors": [
+      "Klauni",
+      "Kejklíři",
+      "Trubadúři"
+    ],
+    "quip_correct": "Jasně, Gillové! Snad jsi nestál moc blízko - trefit se pomerančem umí být překvapivě přesná disciplína.",
+    "quip_wrong": "Vedle! Tahle postava sice taky baví dav, ale pštrosí péra a pomeranče nechává raději Gillům z Binche.",
+    "explanation": "Tradice karnevalu v Binche sahá až několik století zpátky a dřevěné boty Gillů dokážou při tanci pořádně dupat do rytmu bubnů.",
+    "source_url": "https://en.wikipedia.org/wiki/Carnival_of_Binche",
+    "image_prompt": "Fotorealistický snímek maskovaného muže v kostýmu Gilla s pštrosími pery na hlavě, voskovou maskou a dřevěnými botami na karnevalu v belgickém městě Binche, 16:9",
+    "about": "karnevalu v Binche a jeho Gillech"
   }
 ]

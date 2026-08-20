@@ -804,5 +804,27 @@
     "source_url": "https://en.wikipedia.org/wiki/Jaguar",
     "image_prompt": "Fotorealistický snímek jaguára odpočívajícího na břehu řeky v brazilském Pantanalu, skvrnitá srst, přirozené světlo, 16:9",
     "about": "jaguárovi"
+  },
+  {
+    "id": "br-k-iguazu-falls",
+    "cc": "br",
+    "country": "Brazílie",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenují obrovské vodopády na hranici Brazílie a Argentiny, které vlastně tvoří stovky menších vodopádů najednou?",
+    "answer": "Vodopády Iguaçu",
+    "distractors": [
+      "Niagarské vodopády",
+      "Viktoriiny vodopády",
+      "Andělské vodopády"
+    ],
+    "quip_correct": "Přesně tak! Iguaçu se nemohly rozhodnout, tak radši spadly ze stovky míst najednou.",
+    "quip_wrong": "Škoda, tenhle vodopád si spletl kontinent – hledaný padá mezi Brazílií a Argentinou!",
+    "explanation": "Vodopády Iguaçu tvoří přes 270 jednotlivých proudů vody roztažených skoro na tři kilometry, takže je nejde obhlédnout z jednoho místa.",
+    "source_url": "https://cs.wikipedia.org/wiki/Vodop%C3%A1dy_Iguazu",
+    "image_prompt": "Fotorealistický snímek mohutných vodopádů Iguaçu na hranici Brazílie a Argentiny, desítky proudů padající vody obklopené zeleným deštným pralesem, stoupající mlha a duha nad kaňonem, 16:9",
+    "about": "vodopádech Iguaçu"
   }
 ]

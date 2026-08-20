@@ -796,5 +796,93 @@
     "explanation": "Podle knihy Vzpomínky na Afriku později vznikl i oscarový film s Meryl Streep, ačkoli sama Blixen se natáčení už nedožila.",
     "about": "spisovatelce Karen Blixen",
     "image_prompt": "Fotorealistický snímek staré psací mašinky a otevřeného rukopisu na dřevěném stole u okna dánského statku, 16:9"
+  },
+  {
+    "id": "dk-k-sort-sol",
+    "cc": "dk",
+    "country": "Dánsko",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje slavný přírodní úkaz nad dánskými mokřady, kdy až milion špačků společně krouží po obloze a vytváří obří černé mraky, které mění tvar?",
+    "answer": "Sort sol (černé slunce)",
+    "distractors": [
+      "Zlatý déšť",
+      "Bílá bouře",
+      "Stříbrný vítr"
+    ],
+    "quip_correct": "Přesně tak! Miliony špačků si prostě zahrály nejlepší taneční sestavu na světě.",
+    "quip_wrong": "Žádné zlaté kapky ani stříbrný vítr - jen hejno ptáků, co umí kreslit vzory na obloze líp než ty pastelkami na papír.",
+    "explanation": "Úkaz se dá nejlépe pozorovat na jaře a na podzim v oblasti Tøndermarsken na jihu Jutska, kde se ptáci slétávají krátce po západu slunce, než si najdou místo na spaní.",
+    "source_url": "https://en.wikipedia.org/wiki/Sort_sol",
+    "image_prompt": "Fotorealistický snímek obrovského hejna špačků tvořícího vlnící se černé mraky na večerní obloze nad dánskou mokřinou při západu slunce, 16:9",
+    "about": "dánském úkazu sort sol"
+  },
+  {
+    "id": "dk-k-tivoli-park",
+    "cc": "dk",
+    "country": "Dánsko",
+    "section": "Města a památky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Ve kterém dánském městě najdeš zábavní park Tivoli, který se stal vzorem i pro tvůrce slavného Disneylandu?",
+    "answer": "V Kodani",
+    "distractors": [
+      "V Aarhusu",
+      "V Odense",
+      "V Aalborgu"
+    ],
+    "quip_correct": "Trefa! Walt Disney si tu prý dělal tolik poznámek, že by z nich vyšla celá knížka.",
+    "quip_wrong": "Houpačky, kolotoče a světýlka Tivoli najdeš jen v jednom dánském městě - a tohle jím není.",
+    "explanation": "Tivoli otevřelo brány v roce 1843, ale ani to není v Dánsku nejstarší zábavní park - kousek od Kodaně baví návštěvníky park Bakken už od roku 1583.",
+    "source_url": "https://www.islands.com/2147252/tivoli-gardens-copenhagen-denmark-worlds-second-largest-amusement-park/",
+    "image_prompt": "Fotorealistický snímek rozzářeného zábavního parku Tivoli v Kodani večer, s kolotoči a světýlky mezi stromy, 16:9",
+    "about": "zábavním parku Tivoli"
+  },
+  {
+    "id": "dk-k-rugbrod-chleba",
+    "cc": "dk",
+    "country": "Dánsko",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje tmavý žitný chléb, který si Dánové dávají skoro každý den - třeba jako základ pro obložené chlebíčky smørrebrød?",
+    "answer": "Rugbrød",
+    "distractors": [
+      "Baguette",
+      "Pita",
+      "Tortilla"
+    ],
+    "quip_correct": "Ano! Bez rugbrødu by v Dánsku nezačal skoro žádný oběd.",
+    "quip_wrong": "Ty jsou skvělé, ale na dánském stole nekralují - tam vládne hutný tmavý bochník plný semínek.",
+    "explanation": "Rugbrød se často peče s příměsí slunečnicových nebo lněných semínek a díky tomu vydrží čerstvý klidně několik dní.",
+    "source_url": "https://en.wikipedia.org/wiki/Rugbr%C3%B8d",
+    "image_prompt": "Fotorealistický snímek tmavého žitného chleba rugbrød nakrájeného na plátky na dřevěném prkénku v dánské kuchyni, 16:9",
+    "about": "dánském žitném chlebu rugbrød"
+  },
+  {
+    "id": "dk-k-zimni-koupani",
+    "cc": "dk",
+    "country": "Dánsko",
+    "section": "Sport",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Co rádi dělají mnozí Dánové i v zimě, i když je moře ledové?",
+    "answer": "Skáčou si zaplavat do studeného moře",
+    "distractors": [
+      "Staví si iglú a spí v nich",
+      "Chodí bosí po sněhu na túry",
+      "Jezdí na saních tažených tuleni"
+    ],
+    "quip_correct": "Přesně - a pak rychle běží zahřát se do sauny na pláži!",
+    "quip_wrong": "Tuleni sáně netahají a iglú si Dánové nestaví - prostě jen skáčou do ledové vody s úsměvem na tváři.",
+    "explanation": "První oficiální koupaliště pro otužilce vzniklo v Kodani už v roce 1913 a dnes má Dánský svaz zimních plavců přes 70 000 členů.",
+    "source_url": "https://www.visitdenmark.com/denmark/inspiration/seasons/winter-bathing",
+    "image_prompt": "Fotorealistický snímek skupiny otužilců skákajících do ledového moře na dánském pobřeží v zimě, v pozadí dřevěná sauna, 16:9",
+    "about": "dánském zimním koupání"
   }
 ]

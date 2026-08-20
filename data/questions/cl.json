@@ -804,5 +804,27 @@
     "source_url": "https://en.wikipedia.org/wiki/Skiing_in_Chile",
     "image_prompt": "Fotorealistický snímek lyžařů na svahu horského střediska v chilských Andách, modré nebe, zasněžené vrcholy, 16:9",
     "about": "lyžování v chilských Andách"
+  },
+  {
+    "id": "cl-k-flor-copihue",
+    "cc": "cl",
+    "country": "Chile",
+    "section": "Symboly",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaký křiklavě červený zvonkovitý květ je národní květinou Chile a divoce roste popínavý po stromech v lesích na jihu země?",
+    "answer": "Copihue",
+    "distractors": [
+      "Kamélie",
+      "Orchidej",
+      "Vlčí mák"
+    ],
+    "quip_correct": "Přesně tak! Copihue visí z liány jako řada červených zvonečků, které jako by volaly: Jsme tu, jsme chilské!",
+    "quip_wrong": "Skoro! Copihue by se za tuhle záměnu asi trochu urazil - je pyšný na to, že podobný květ nenajdeš nikde jinde na světě.",
+    "explanation": "Copihue je tak vzácný a chráněný, že trhat ho volně v chilské přírodě je dnes ze zákona zakázané.",
+    "source_url": "https://cs.wikipedia.org/wiki/Lapageria_r%C5%AF%C5%BEov%C3%A1",
+    "image_prompt": "Fotorealistický snímek popínavé liány s velkými červenými zvonkovitými květy copihue v zeleném jihochilském lese, detailní záběr na květy, sluneční paprsky mezi listy, 16:9",
+    "about": "chilském národním květu copihue"
   }
 ]

@@ -796,5 +796,93 @@
     "explanation": "Vstupu předcházela léta vyjednávání a ekonomických reforem, a Portugalsko se pak v 90. letech stalo jedním z největších příjemců unijních dotací na hlavu v přepočtu - z peněz se z velké části postavila dnešní dálniční síť.",
     "about": "vstupu Portugalska do EU",
     "image_prompt": "Fotorealistický snímek moderní dálnice v portugalské krajině s vlajkou EU na hraničním sloupu, 16:9"
+  },
+  {
+    "id": "pt-k-capi-hnizda-na-vezich",
+    "cc": "pt",
+    "country": "Portugalsko",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Kde si v Portugalsku čápi bílí nejraději stavějí svá obrovská hnízda?",
+    "answer": "Na komínech, sloupech a věžích kostelů",
+    "distractors": [
+      "V hlubokých jeskyních v horách",
+      "Na dně řeky Tejo",
+      "V norách vyhrabaných v písečných dunách"
+    ],
+    "quip_correct": "Přesně tak - proč stavět hnízdo v lese, když můžeš bydlet ve věži s výhledem na celé město?",
+    "quip_wrong": "Čáp v jeskyni by si akorát potmě rozbil zobák o krápník - na vejce by tam nikdy nedosáhlo sluníčko.",
+    "explanation": "Jedno čapí hnízdo se používá roky po sobě, stále se dostavuje a nakonec může vážit i přes sto kilogramů.",
+    "source_url": "https://en.wikipedia.org/wiki/White_stork",
+    "image_prompt": "Fotorealistický snímek velkého čapího hnízda na vrcholu staré kostelní věže v malém portugalském městečku, čáp bílý stojící v hnízdě, jasná modrá obloha, 16:9",
+    "about": "čápech hnízdících na portugalských věžích a komínech"
+  },
+  {
+    "id": "pt-k-ponte-25-abril-most",
+    "cc": "pt",
+    "country": "Portugalsko",
+    "section": "Města",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje velký červený most v Lisabonu, který vypadá skoro stejně jako slavný most Golden Gate v americkém San Francisku?",
+    "answer": "Ponte 25 de Abril",
+    "distractors": [
+      "Eiffelova věž",
+      "Karlův most",
+      "Tower Bridge"
+    ],
+    "quip_correct": "Trefa! Turisté si na fotkách pletou Lisabon s Kalifornií, přitom je to přes celý oceán jinde.",
+    "quip_wrong": "Eiffelovka je ve Francii a navíc je to věž bez jediného pruhu silnice - přes řeku by po ní auta nepřejela.",
+    "explanation": "Most spojuje Lisabon s městem Almada na druhém břehu řeky Tejo a jezdí po něm nejen auta, ale i vlaky ve spodním patře.",
+    "source_url": "https://en.wikipedia.org/wiki/25_de_Abril_Bridge",
+    "image_prompt": "Fotorealistický snímek velkého červeného visutého mostu Ponte 25 de Abril přes řeku Tejo v Lisabonu za slunečného dne, 16:9",
+    "about": "mostě Ponte 25 de Abril v Lisabonu"
+  },
+  {
+    "id": "pt-k-sardinky-svatoantoninske-slavnosti",
+    "cc": "pt",
+    "country": "Portugalsko",
+    "section": "Svátky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Co Portugalci hlavně grilují na ulicích Lisabonu během červnových svátků svatého Antonína?",
+    "answer": "Sardinky",
+    "distractors": [
+      "Kuřecí křídla",
+      "Klobásy",
+      "Mušle"
+    ],
+    "quip_correct": "Přesně tak - v červnu voní celý Lisabon jako jedna velká grilovačka u moře.",
+    "quip_wrong": "Klobásy by na téhle slavnosti vypadaly dost mimo - tahle party patří malým stříbrným rybkám, ne uzeninám.",
+    "explanation": "Ulice se během svátků zdobí barevnými papírovými girlandami a lidé tančí v pestrých krojích v průvodech zvaných marchas populares.",
+    "source_url": "https://en.wikipedia.org/wiki/Feast_of_St._Anthony",
+    "image_prompt": "Fotorealistický snímek pouličního grilování sardinek na dřevěném uhlí během letní slavnosti v Lisabonu, barevné girlandy nad ulicí, večerní světlo, 16:9",
+    "about": "lisabonských svátcích svatého Antonína"
+  },
+  {
+    "id": "pt-k-futsal-mistri-sveta",
+    "cc": "pt",
+    "country": "Portugalsko",
+    "section": "Sport",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "V jaké malé variantě fotbalu, která se hraje v hale s menším míčem a jen pěti hráči v týmu, se Portugalsko stalo mistrem světa?",
+    "answer": "Futsal",
+    "distractors": [
+      "Pozemní hokej",
+      "Basketbal",
+      "Stolní tenis"
+    ],
+    "quip_correct": "Ano! V hale je hřiště malé, ale portugalské kombinace jsou tam rychlejší než blesk.",
+    "quip_wrong": "Na stolním tenise by se pět hráčů kolem jednoho stolečku akorát pomlátilo pálkami - to si radši nechte na halu.",
+    "explanation": "Hvězdou portugalského futsalového týmu byl hráč Ricardinho, kterému fanoušci přezdívali Messi futsalu.",
+    "source_url": "https://en.wikipedia.org/wiki/Portugal_national_futsal_team",
+    "image_prompt": "Fotorealistický snímek futsalového zápasu ve sportovní hale, hráči v portugalských dresech honí malý lesklý míč na lesklé parketové podlaze, 16:9",
+    "about": "portugalském futsalovém týmu"
   }
 ]

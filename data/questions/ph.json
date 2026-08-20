@@ -804,5 +804,115 @@
     "source_url": "https://en.wikipedia.org/wiki/Sari-sari_store",
     "image_prompt": "Fotorealistický snímek malého filipínského obchůdku sari-sari s barevným zbožím vystaveným v okně domu, denní světlo, 16:9",
     "about": "obchůdcích sari-sari"
+  },
+  {
+    "id": "ph-k-tamaraw",
+    "cc": "ph",
+    "country": "Filipíny",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje vzácný trpasličí buvol, který žije divoce jen na jednom filipínském ostrově?",
+    "answer": "Tamaraw",
+    "distractors": [
+      "Karabao",
+      "Bizon",
+      "Nosorožec"
+    ],
+    "quip_correct": "Přesně! Tamaraw je tak plachý, že ho spatří jen ti největší šťastlivci.",
+    "quip_wrong": "To se ti asi zdálo o safari - na Filipínách žádní bizoni ani nosorožci neběhají, jen stydlivý tamaraw!",
+    "explanation": "Tamaraw se od domácího karabaa pozná podle rovných, dozadu zahnutých rohů ve tvaru V, a dnes jich žije už jen několik set kusů v horách ostrova Mindoro.",
+    "source_url": "https://en.wikipedia.org/wiki/Tamaraw",
+    "image_prompt": "Fotorealistický snímek divokého tamawara, malého buvola s dozadu zahnutými rohy, pasoucího se v husté horské džungli na ostrově Mindoro, 16:9",
+    "about": "vzácném filipínském buvolovi tamaraw"
+  },
+  {
+    "id": "ph-k-vigan-calesa",
+    "cc": "ph",
+    "country": "Filipíny",
+    "section": "Města",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenují tradiční koňské kočáry, které dodnes vozí turisty po dlážděných uličkách starobylého města Vigan?",
+    "answer": "Kalesa",
+    "distractors": [
+      "Rikša",
+      "Tuk-tuk",
+      "Jeepney"
+    ],
+    "quip_correct": "Ano! Klapot kopyt po dlažbě je ve Viganu slyšet dodnes, přesně jako před staletími.",
+    "quip_wrong": "Tuk-tuk je hlučný a rychlý - ale ve Viganu vládnou klidní koně a jejich kočáry kalesa!",
+    "explanation": "Vigan je zapsán na seznamu UNESCO jako jedno z nejlépe dochovaných španělských koloniálních měst v Asii, založené už v 16. století.",
+    "source_url": "https://en.wikipedia.org/wiki/Vigan",
+    "image_prompt": "Fotorealistický snímek tradičního koňského kočáru kalesa jedoucího po dlážděné ulici s koloniálními domy ve městě Vigan na Filipínách, 16:9",
+    "about": "starobylém městě Vigan"
+  },
+  {
+    "id": "ph-k-lumpia",
+    "cc": "ph",
+    "country": "Filipíny",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenují smažené plněné závitky ze zeleniny nebo masa, oblíbená pochoutka na filipínských oslavách?",
+    "answer": "Lumpia",
+    "distractors": [
+      "Adobo",
+      "Pancit",
+      "Halo-halo"
+    ],
+    "quip_correct": "Přesně! Křupavá lumpia zmizí z talíře dřív, než stihneš dojíst první kousek.",
+    "quip_wrong": "Halo-halo je studený dezert v misce, ne smažený závitek - tohle se ti spletlo pořádně!",
+    "explanation": "Lumpia má kořeny v čínské kuchyni přistěhovalců, ale Filipínci si ji upravili po svém - třeba na tenoučké masové rolky zvané lumpiang shanghai.",
+    "source_url": "https://en.wikipedia.org/wiki/Lumpia",
+    "image_prompt": "Fotorealistický snímek talíře křupavých smažených filipínských závitků lumpia s miskou omáčky na namáčení, 16:9",
+    "about": "smažených závitcích lumpia"
+  },
+  {
+    "id": "ph-k-christmas-ber-months",
+    "cc": "ph",
+    "country": "Filipíny",
+    "section": "Kultura",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Kdy začínají Filipínci slavit Vánoce, které tak patří mezi nejdelší vánoční oslavy na světě?",
+    "answer": "Už v září",
+    "distractors": [
+      "Až v prosinci",
+      "Hned po Novém roce",
+      "V polovině listopadu"
+    ],
+    "quip_correct": "Jasně! Jakmile měsíc končí na '-ber', na Filipínách se rozsvěcí první vánoční hvězdy.",
+    "quip_wrong": "Až v prosinci? Na Filipínách by tě za to vyplísnili - tam se koledy zpívají klidně už čtyři měsíce předem!",
+    "explanation": "Před Štědrým dnem se devět dní po sobě konají brzké ranní mše zvané Simbang Gabi, na které lidé chodí ještě za tmy.",
+    "source_url": "https://en.wikipedia.org/wiki/Christmas_in_the_Philippines",
+    "image_prompt": "Fotorealistický snímek vánočně vyzdobené ulice v Manile s barevnými svítícími hvězdami parol v podvečerním světle, 16:9",
+    "about": "nejdelší vánoční sezóně na světě"
+  },
+  {
+    "id": "ph-k-sampaguita",
+    "cc": "ph",
+    "country": "Filipíny",
+    "section": "Symboly",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje voňavá bílá kytička, národní květina Filipín, kterou prodejci navlékají na girlandy?",
+    "answer": "Sampaguita",
+    "distractors": [
+      "Hibiškus",
+      "Lotos",
+      "Orchidej"
+    ],
+    "quip_correct": "Přesně! Ta malá kytička voní tak silně, že ji poznáš i poslepu.",
+    "quip_wrong": "Hibiškus je nádherný, ale národní korunu nosí maličká voňavá sampaguita!",
+    "explanation": "Sampaguita byla oficiálně vyhlášena národní květinou Filipín v roce 1934 a girlandy z ní lidé věší i na sochy a oltáře v kostelech.",
+    "source_url": "https://en.wikipedia.org/wiki/Sampaguita",
+    "image_prompt": "Fotorealistický snímek girlandy z bílých voňavých květů sampaguita prodávané na filipínské tržnici, 16:9",
+    "about": "sampaguitě, národní květině Filipín"
   }
 ]

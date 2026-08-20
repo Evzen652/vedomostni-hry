@@ -802,5 +802,49 @@
     "explanation": "Protijed se vyrábí neobvyklým způsobem – dobrovolníci pavouky v okolí Sydney odchytávají a jed se získává tzv. „dojením“ jejich kusadel, přičemž jeden pavouk vydá jed použitelný na několik dávek antiséra.",
     "about": "sklípkanovi nálevkovitém sydneyském",
     "image_prompt": "Fotorealistický detailní makro snímek tmavého sklípkana nálevkovitého sydneyského na vlhké kůře stromu, 16:9"
+  },
+  {
+    "id": "au-k-lamington-dezert",
+    "cc": "au",
+    "country": "Austrálie",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje oblíbený australský moučník - kostka piškotu obalená čokoládou a strouhaným kokosem?",
+    "answer": "Lamington",
+    "distractors": [
+      "Pavlova",
+      "Šátečky s tvarohem",
+      "Perník"
+    ],
+    "quip_correct": "Trefa! A teď honem k talíři, než ti ho snědí kamarádi.",
+    "quip_wrong": "Skoro - ale kamarádi by se na tebe za tenhle omyl kabonili až do svačiny.",
+    "explanation": "Lamington je pojmenovaný po lordu Lamingtonovi, guvernérovi státu Queensland na přelomu 19. a 20. století.",
+    "source_url": "https://en.wikipedia.org/wiki/Lamington",
+    "image_prompt": "Fotorealistický snímek talíře s australskými lamingtony - kostkami piškotu obalenými čokoládou a strouhaným kokosem, na dřevěném stole, 16:9",
+    "about": "lamingtonu"
+  },
+  {
+    "id": "au-k-vanoce-v-lete",
+    "cc": "au",
+    "country": "Austrálie",
+    "section": "Svátky a tradice",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaké bývá v Austrálii počasí o Vánocích, protože leží na jižní polokouli?",
+    "answer": "Je léto a horko",
+    "distractors": [
+      "Je zima a sněží",
+      "Prší celý den",
+      "Je podzim a padá listí"
+    ],
+    "quip_correct": "Přesně tak - zatímco u nás mrzne, australské děti běhají o Štědrém dni bosky po horkém písku.",
+    "quip_wrong": "Ne tak docela - žádný sníh, žádné rukavice, jen slunce, opalovací krém a spousta zmrzliny.",
+    "explanation": "Mnoho australských rodin slaví Štědrý den piknikem nebo grilováním přímo na pláži.",
+    "source_url": "https://en.wikipedia.org/wiki/Christmas_in_Australia",
+    "image_prompt": "Fotorealistický snímek rodiny s malým vánočním stromkem grilující na sluncem zalité australské pláži, 16:9",
+    "about": "vánocích v Austrálii"
   }
 ]

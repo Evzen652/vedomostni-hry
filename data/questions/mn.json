@@ -804,5 +804,71 @@
     "source_url": "https://en.wikipedia.org/wiki/Suutei_tsai",
     "image_prompt": "Fotorealistický snímek misky mongolského slaného čaje s mlékem na dřevěném stole v jurtě, 16:9",
     "about": "mongolském čaji suutei tsai"
+  },
+  {
+    "id": "mn-k-zlaty-orel-lovec",
+    "cc": "mn",
+    "country": "Mongolsko",
+    "section": "Zvířata",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Čím loví zvěř v horách na západě Mongolska tamní lovci, místo aby použili pušku?",
+    "answer": "Vycvičeným zlatým orlem",
+    "distractors": [
+      "Vycvičeným sokolem",
+      "Ochočeným vlkem",
+      "Velkým loveckým psem"
+    ],
+    "quip_correct": "Přesně tak! Orel z nebe zahlédne kořist rychleji než jakýkoli pes na zemi.",
+    "quip_wrong": "Skoro – ale představ si, jak by se ten vlk tvářil, kdybys mu chtěl nasadit koženou kuklu na hlavu!",
+    "explanation": "Lovci si nejvíc cení samic orlů, protože jsou větší a silnější než samci.",
+    "source_url": "https://en.wikipedia.org/wiki/Golden_Eagle_Festival",
+    "image_prompt": "Fotorealistický snímek mongolského lovce v teplém kožichu s obrovským zlatým orlem na paži, v zasněžených horách pohoří Altaj, 16:9",
+    "about": "mongolských lovcích se zlatými orly"
+  },
+  {
+    "id": "mn-k-socha-cingischana-na-koni",
+    "cc": "mn",
+    "country": "Mongolsko",
+    "section": "Města a památky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Co obrovského stojí kousek od Ulánbátaru a je to největší jezdecká socha na světě?",
+    "answer": "Stříbrná socha Čingischána na koni",
+    "distractors": [
+      "Skleněná pyramida",
+      "Nejvyšší maják světa",
+      "Socha obřího draka"
+    ],
+    "quip_correct": "Ano! A není to jen tak ledajaký kůň – i ten sám je vyšší než většina domů.",
+    "quip_wrong": "Ne tak úplně – i když přiznejme, že drak by se tam taky vyjímal.",
+    "explanation": "Uvnitř sochy vede výtah a schody až na hřívu koně, odkud je výhled do širé stepi.",
+    "source_url": "https://en.wikipedia.org/wiki/Genghis_Khan_Equestrian_Statue",
+    "image_prompt": "Fotorealistický snímek obrovské lesklé stříbrné jezdecké sochy Čingischána na koni tyčící se nad mongolskou stepí za slunečného dne, 16:9",
+    "about": "soše Čingischána na koni u Ulánbátaru"
+  },
+  {
+    "id": "mn-k-aaruul-suseny-tvaroh",
+    "cc": "mn",
+    "country": "Mongolsko",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje tvrdá sušená mléčná pochoutka, kterou mongolské děti dlouho cucají jako bonbon?",
+    "answer": "Aaruul",
+    "distractors": [
+      "Sušené hovězí maso",
+      "Karamelové bonbóny",
+      "Sušené meruňky"
+    ],
+    "quip_correct": "Přesně! A vydrží v puse tak dlouho, že s ní klidně dojdeš celou cestu ze školy domů.",
+    "quip_wrong": "Ne, i když sušené meruňky by asi zuby netrápily tolik jako tahle tvrďátka.",
+    "explanation": "Aaruul se suší celé léto na sluníčku na střeše jurty, aby mléko vydrželo na dlouhou zimu.",
+    "source_url": "https://en.wikipedia.org/wiki/Aaruul",
+    "image_prompt": "Fotorealistický snímek hromádky bílých sušených tvarohových kousků aaruul rozložených na plátně na sluníčku před mongolskou jurtou, 16:9",
+    "about": "sušeném mléčném pamlsku aaruul"
   }
 ]

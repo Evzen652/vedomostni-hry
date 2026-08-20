@@ -796,5 +796,93 @@
     "explanation": "Norské slovo skrei znamená zhruba „poutník“ nebo „tulák“ a rybáři podle přesného načasování jejího tahu odjakživa řídili, kdy na Lofoty vyrazit za úlovkem.",
     "about": "migrující tresce skrei",
     "image_prompt": "Fotorealistický snímek hejna tresek migrujících ledovou severskou vodou, 16:9"
+  },
+  {
+    "id": "no-k-los-vystraha",
+    "cc": "no",
+    "country": "Norsko",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Které velké lesní zvíře s mohutným parožím je v Norsku tak časté, že řidiče na silnicích varují speciální výstražné značky?",
+    "answer": "Los",
+    "distractors": [
+      "Jelen evropský",
+      "Zubr",
+      "Medvěd hnědý"
+    ],
+    "quip_correct": "Trefa! Losi v Norsku chodí po lese, jako by jim patřil – a klidně i přes silnici.",
+    "quip_wrong": "Skoro! Ale tohle zvíře by se do norské výstražné značky ani nevešlo parožím.",
+    "explanation": "Dospělý los dokáže vážit přes 700 kilogramů a je vynikající plavec – bez potíží přeplave i široký fjord.",
+    "source_url": "https://cs.wikipedia.org/wiki/Los_evropsk%C3%BD",
+    "image_prompt": "Fotorealistický snímek statného losa s mohutným parožím stojícího na okraji norského smrkového lesa vedle žluté výstražné dopravní značky s vyobrazením losa, 16:9",
+    "about": "losech v norských lesích"
+  },
+  {
+    "id": "no-k-vafle-srdicka",
+    "cc": "no",
+    "country": "Norsko",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaké tradiční norské sladké jídlo se peče ve speciální pánvi do tvaru srdíček a podává se s marmeládou nebo hnědým sýrem?",
+    "answer": "Vafle",
+    "distractors": [
+      "Palačinky",
+      "Koblihy",
+      "Perník"
+    ],
+    "quip_correct": "Přesně tak! V Norsku bez srdíčkových vaflí neproběhne skoro žádná oslava.",
+    "quip_wrong": "Ouha, tohle jídlo nemá srdíčkový tvar ani vlastní pánvičku.",
+    "explanation": "Norové mají vafle tak rádi, že jim věnovali vlastní svátek – Národní den vaflí se slaví 25. března.",
+    "source_url": "https://en.wikipedia.org/wiki/Norwegian_waffle",
+    "image_prompt": "Fotorealistický snímek čerstvě upečené norské srdíčkové vafle na dřevěném talíři, ozdobené marmeládou a plátkem hnědého sýra, v útulné dřevěné chatě, 16:9",
+    "about": "norských srdíčkových vaflích"
+  },
+  {
+    "id": "no-k-vigelandsparken-sochy",
+    "cc": "no",
+    "country": "Norsko",
+    "section": "Města",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje slavný park v Oslu, kde na návštěvníky čeká přes dvě stě soch lidí – od miminek až po starce?",
+    "answer": "Vigelandův park",
+    "distractors": [
+      "Frognerský zámek",
+      "Královský palác",
+      "Akershuská pevnost"
+    ],
+    "quip_correct": "Ano! Celý park je jedna obří rodinná fotka vytesaná z kamene a bronzu.",
+    "quip_wrong": "Bohužel, tam byste hledali marně – žádné sochy, jen zdi a stráže.",
+    "explanation": "Všechny sochy v parku vytvořil jediný sochař, Gustav Vigeland, kterému práce zabrala více než dvacet let.",
+    "source_url": "https://en.wikipedia.org/wiki/Vigeland_Park",
+    "image_prompt": "Fotorealistický snímek Vigelandova parku v Oslu s bronzovými sochami lidí podél široké aleje za slunečného dne, 16:9",
+    "about": "Vigelandově parku v Oslu"
+  },
+  {
+    "id": "no-k-nisse-rysova-kase",
+    "cc": "no",
+    "country": "Norsko",
+    "section": "Kultura",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jakou sladkou rýžovou kaši Norové o Vánocích tradičně nechávají v misce pro skřítka jménem nisse, aby jim po celý rok hlídal statek?",
+    "answer": "Rýžovou kaši",
+    "distractors": [
+      "Bramborovou kaši",
+      "Perníček",
+      "Ovesnou kaši"
+    ],
+    "quip_correct": "Přesně! A pokud na kaši nisse zapomenete, prý vám dokáže pěkně zamotat hospodářství.",
+    "quip_wrong": "Skoro trefa, ale tahle kaše by nissemu na talíři chutnala míň.",
+    "explanation": "Do kaše se schovává jedna celá mandle a kdo ji najde ve své porci, dostane malou dárkovou odměnu navíc.",
+    "source_url": "https://en.wikipedia.org/wiki/Nisse_(folklore)",
+    "image_prompt": "Fotorealistický snímek misky teplé bílé rýžové kaše se skořicí posazené na sněhu před dřevěnou norskou stodolou za soumraku, 16:9",
+    "about": "vánočním skřítkovi nisse a rýžové kaši"
   }
 ]

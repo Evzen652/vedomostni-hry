@@ -804,5 +804,159 @@
     "source_url": "https://en.wikipedia.org/wiki/Chopsticks#Korea",
     "image_prompt": "Fotorealistický detailní snímek kovových korejských hůlek a lžíce vedle misky rýže, 16:9",
     "about": "korejských hůlkách"
+  },
+  {
+    "id": "kp-k-straka-posel",
+    "cc": "kp",
+    "country": "Severní Korea",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Který pták je v Koreji odedávna považovaný za posla dobrých zpráv?",
+    "answer": "Straka",
+    "distractors": [
+      "Vrána",
+      "Holub",
+      "Kukačka"
+    ],
+    "quip_correct": "Přesně tak! Když straka zaklape na strom u domu, Korejci věří, že přijde milá návštěva.",
+    "quip_wrong": "Ouha, tahle křídla nenosí radostné zprávy - ty roznáší jenom straka, ostatní ptáci mají dneska volno.",
+    "explanation": "Straka je tak oblíbená, že se objevuje i v korejských pohádkách jako chytré a šikovné zvíře.",
+    "source_url": "https://en.wikipedia.org/wiki/Oriental_magpie",
+    "image_prompt": "Fotorealistický snímek strakatého ptáka s dlouhým ocasem sedícího na větvi stromu v korejské zahradě za slunečného dne, 16:9",
+    "about": "korejské strace"
+  },
+  {
+    "id": "kp-k-jerab-mandzursky",
+    "cc": "kp",
+    "country": "Severní Korea",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Který vzácný velký pták s červenou skvrnou na hlavě přilétá v zimě do Severní Koreje?",
+    "answer": "Jeřáb mandžuský",
+    "distractors": [
+      "Plameňák",
+      "Pelikán",
+      "Volavka bílá"
+    ],
+    "quip_correct": "Ano! Tenhle nádherný jeřáb je v Koreji symbolem dlouhého života a štěstí.",
+    "quip_wrong": "Pěkný pták, ale zimní návštěvník s červenou čepičkou je jeřáb mandžuský - ten tvůj si čepičku ještě nesehnal.",
+    "explanation": "Jeřáb mandžuský patří mezi nejvzácnější ptáky na světě a v Koreji se často objevuje na starých malbách vedle borovic.",
+    "source_url": "https://en.wikipedia.org/wiki/Red-crowned_crane",
+    "image_prompt": "Fotorealistický snímek majestátního jeřába s červenou skvrnou na hlavě stojícího na zamrzlém poli v zimní krajině, 16:9",
+    "about": "jeřábu mandžuském"
+  },
+  {
+    "id": "kp-k-dve-more",
+    "cc": "kp",
+    "country": "Severní Korea",
+    "section": "Geografie",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaká dvě moře omývají pobřeží Korejského poloostrova?",
+    "answer": "Žluté moře a Východní moře",
+    "distractors": [
+      "Středozemní moře a Rudé moře",
+      "Baltské moře a Severní moře",
+      "Jihočínské moře a Beringovo moře"
+    ],
+    "quip_correct": "Přesně! Korea leží mezi Žlutým mořem na západě a Východním mořem na východě.",
+    "quip_wrong": "Krásná moře, ale ta korejské pobřeží neomývají - zkus to blíž, u Žlutého a Východního moře.",
+    "explanation": "Žluté moře dostalo jméno podle nažloutlé barvy vody, kterou způsobuje jemný písek splavovaný řekami.",
+    "source_url": "https://en.wikipedia.org/wiki/Yellow_Sea",
+    "image_prompt": "Fotorealistický snímek skalnatého pobřeží Korejského poloostrova s vlnami moře v pozadí za jasného dne, 16:9",
+    "about": "mořích kolem Korejského poloostrova"
+  },
+  {
+    "id": "kp-k-hornata-zeme",
+    "cc": "kp",
+    "country": "Severní Korea",
+    "section": "Geografie",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Čím je pokrytá většina území Severní Koreje?",
+    "answer": "Horami",
+    "distractors": [
+      "Pouštním pískem",
+      "Deštným pralesem",
+      "Rovinatými poli"
+    ],
+    "quip_correct": "Správně! Severní Korea se právem přezdívá 'země hor' - kopce a hory tu najdeš skoro všude.",
+    "quip_wrong": "Škoda, tahle krajina se v Koreji moc nenosí - kam se podíváš, čouhá spíš kopec než cokoliv jiného.",
+    "explanation": "Kvůli hornatému terénu se v Severní Koreji obdělává jen malá část půdy a pole se často budují na terasách do svahů.",
+    "source_url": "https://en.wikipedia.org/wiki/Geography_of_North_Korea",
+    "image_prompt": "Fotorealistický snímek zvlněné hornaté krajiny severní Koreje s terasovitými poli na svazích a mlhou mezi vrcholky, 16:9",
+    "about": "hornaté krajině Severní Koreje"
+  },
+  {
+    "id": "kp-k-korejske-hrusky",
+    "cc": "kp",
+    "country": "Severní Korea",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaké ovoce je v Koreji proslulé svou obrovskou velikostí a šťavnatostí?",
+    "answer": "Hrušky",
+    "distractors": [
+      "Jablka",
+      "Broskve",
+      "Meruňky"
+    ],
+    "quip_correct": "Ano! Korejské hrušky bývají tak velké, že jedna klidně vydá za dvě obyčejné.",
+    "quip_wrong": "Chutné ovoce, ale tenhle rekord ve velikosti drží korejské hrušky - tvoje volba zůstala o dost menší.",
+    "explanation": "Korejské hrušky se kvůli tvaru podobají spíš jablku a mají křupavou, velmi šťavnatou dužinu.",
+    "source_url": "https://en.wikipedia.org/wiki/Pyrus_pyrifolia",
+    "image_prompt": "Fotorealistický snímek velkých šťavnatých korejských hrušek na dřevěném podnose s kapkami vody na slupce, 16:9",
+    "about": "korejských hruškách"
+  },
+  {
+    "id": "kp-k-sollal-svatek",
+    "cc": "kp",
+    "country": "Severní Korea",
+    "section": "Kultura",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje korejský svátek lunárního Nového roku, kdy se děti hluboce klaní starším příbuzným?",
+    "answer": "Sollal",
+    "distractors": [
+      "Chuseok",
+      "Arirang",
+      "Talchum"
+    ],
+    "quip_correct": "Přesně! O Sollalu se děti hluboce ukloní prarodičům a za to dostanou drobný dárek nebo mincičku.",
+    "quip_wrong": "Blízko, ale tenhle novoroční svátek s poklonami se jmenuje Sollal - ten, co jsi vybral, slaví něco úplně jiného.",
+    "explanation": "K Sollalu neodmyslitelně patří polévka tteokguk z rýžových nudliček, kterou Korejci jedí na oslavu toho, že jsou o rok starší.",
+    "source_url": "https://en.wikipedia.org/wiki/Korean_New_Year",
+    "image_prompt": "Fotorealistický snímek korejské rodiny v tradičních hanbocích, kde dítě klaní pozdravuje prarodiče při novoročním svátku, 16:9",
+    "about": "svátku Sollal"
+  },
+  {
+    "id": "kp-k-narodni-kvetina",
+    "cc": "kp",
+    "country": "Severní Korea",
+    "section": "Symboly",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Která bílá voňavá květina je považována za národní květinu Severní Koreje?",
+    "answer": "Magnólie (mokran)",
+    "distractors": [
+      "Tulipán",
+      "Slunečnice",
+      "Chryzantéma"
+    ],
+    "quip_correct": "Ano! Bílá magnólie zvaná mokran voní tak silně, že ji ucítíš z dálky ještě dřív, než ji uvidíš.",
+    "quip_wrong": "Pěkný květ, ale národní vůni má na starosti bílá magnólie - tvůj kandidát zůstal jen hezkou náhradou.",
+    "explanation": "Květy mokranu kvetou už brzy na jaře a v Koreji se jim přezdívá také 'severokorejská magnólie'.",
+    "source_url": "https://en.wikipedia.org/wiki/Magnolia_sieboldii",
+    "image_prompt": "Fotorealistický snímek bílých voňavých květů magnólie kvetoucích na jarní větvi proti modré obloze, 16:9",
+    "about": "korejské magnólii (mokran)"
   }
 ]

@@ -802,5 +802,49 @@
     "explanation": "Fúl medames se v Egyptě jedl už ve starověku – archeologové našli stopy podobného pokrmu i v hrobkách, takže je to možná nejdéle nepřetržitě vařené jídlo na světě.",
     "about": "fúl medames",
     "image_prompt": "Fotorealistický snímek misky dušených fazolí fúl s olivovým olejem a citronem, 16:9"
+  },
+  {
+    "id": "eg-k-vlajka-zlaty-orel",
+    "cc": "eg",
+    "country": "Egypt",
+    "section": "Symboly",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaký zlatý pták je vyobrazený uprostřed egyptské vlajky?",
+    "answer": "Orel",
+    "distractors": [
+      "Sokol",
+      "Ibis",
+      "Čáp"
+    ],
+    "quip_correct": "Přesně tak! Zlatý orel hrdě sedí uprostřed vlajky a hlídá celý Egypt.",
+    "quip_wrong": "Škoda, tenhle pták na vlajce nesedí - orel by mu to místo hájil drápy.",
+    "explanation": "Egyptská vlajka má tři vodorovné pruhy - červený, bílý a černý - které symbolizují boj za svobodu a naději do budoucna.",
+    "source_url": "https://cs.wikipedia.org/wiki/Egyptsk%C3%A1_vlajka",
+    "image_prompt": "Fotorealistický snímek egyptské vlajky s červeným, bílým a černým pruhem a zlatým orlem uprostřed, vlající na stožáru proti modré obloze, 16:9",
+    "about": "egyptské vlajce"
+  },
+  {
+    "id": "eg-k-nilsky-krokodyl",
+    "cc": "eg",
+    "country": "Egypt",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jaký velký plaz žije v řece Nil a staří Egypťané ho uctívali jako boha Sobka?",
+    "answer": "Krokodýl",
+    "distractors": [
+      "Aligátor",
+      "Leguán",
+      "Varan"
+    ],
+    "quip_correct": "Ano! Nilský krokodýl byl tak obávaný, že si z něj Egypťané rovnou udělali boha.",
+    "quip_wrong": "Ten by se v Nilu asi ztratil - správný obyvatel řeky má mnohem ostřejší zuby.",
+    "explanation": "Nilský krokodýl může vyrůst přes 5 metrů a patří mezi vůbec největší krokodýly na světě.",
+    "source_url": "https://cs.wikipedia.org/wiki/Krokod%C3%BDl_nilsk%C3%BD",
+    "image_prompt": "Fotorealistický snímek nilského krokodýla vyhřívajícího se na břehu řeky Nil s pootevřenou tlamou, 16:9",
+    "about": "nilském krokodýlovi"
   }
 ]

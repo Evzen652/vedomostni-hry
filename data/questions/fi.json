@@ -796,5 +796,93 @@
     "explanation": "Demilitarizace ostrovů byla dohodnutá už v roce 1856 po krymské válce a mezinárodní smlouva z roku 1921 k tomu přidala i jejich švédskojazyčnou autonomii - obě pravidla platí dodnes.",
     "about": "Ålandských ostrovech",
     "image_prompt": "Fotorealistický snímek klidného pobřeží švédsky mluvících Ålandských ostrovů s dřevěnými domky a plachetnicí, 16:9"
+  },
+  {
+    "id": "fi-k-saimaa-ringed-seal",
+    "cc": "fi",
+    "country": "Finsko",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje vzácný tuleň, který na celém světě žije jen v jednom jediném finském jezeře?",
+    "answer": "Saimaanský tuleň",
+    "distractors": [
+      "Vydra říční",
+      "Bobr evropský",
+      "Los"
+    ],
+    "quip_correct": "Přesně tak! A tenhle tuleň si nikdy nebalí kufry k moři - jezero mu úplně stačí.",
+    "quip_wrong": "Skoro - ale tenhle plavec by se urazil, kdyby ho pletli s chlupatým lesním kamarádem.",
+    "explanation": "Saimaanských tuleňů žije na světě jen kolem 400 kusů, takže patří mezi vůbec nejvzácnější tuleně na planetě.",
+    "source_url": "https://en.wikipedia.org/wiki/Saimaa_ringed_seal",
+    "image_prompt": "Fotorealistický snímek vzácného saimaanského tuleně odpočívajícího na balvanu u břehu tichého finského jezera obklopeného borovicovým lesem, 16:9",
+    "about": "vzácném saimaanském tuleni"
+  },
+  {
+    "id": "fi-k-suomenlinna-fortress",
+    "cc": "fi",
+    "country": "Finsko",
+    "section": "Města a památky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje stará mořská pevnost na ostrovech kousek od Helsinek, kam turisté jezdí trajektem?",
+    "answer": "Suomenlinna",
+    "distractors": [
+      "Katedrála v Turku",
+      "Rozhledna Näsinneula",
+      "Zoo Korkeasaari"
+    ],
+    "quip_correct": "Přesně! Pevnost, která skoro nikdy pořádně nebojovala, dnes úspěšně bojuje aspoň o pozornost turistů.",
+    "quip_wrong": "Mimo - tahle stavba nikdy neplula po moři, i kdyby ji sebevíc obdivovali cestovatelé.",
+    "explanation": "Pevnost tvoří šest propojených ostrovů a dodnes na nich normálně bydlí asi 800 lidí.",
+    "source_url": "https://cs.wikipedia.org/wiki/Suomenlinna",
+    "image_prompt": "Fotorealistický snímek staré kamenné mořské pevnosti Suomenlinna na ostrovech u Helsinek s trajektem plujícím kolem hradeb, 16:9",
+    "about": "mořské pevnosti Suomenlinna"
+  },
+  {
+    "id": "fi-k-korvapuusti-bun",
+    "cc": "fi",
+    "country": "Finsko",
+    "section": "Jídlo",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje oblíbená finská skořicová houska, jejíž jméno v překladu znamená doslova „naplácané ucho“?",
+    "answer": "Korvapuusti",
+    "distractors": [
+      "Pulla",
+      "Munkki",
+      "Piparkakku"
+    ],
+    "quip_correct": "Ano! A věř tomu nebo ne, žádné ucho se při pečení netrápí.",
+    "quip_wrong": "Chybka - tohle pečivo má úplně jiný tvar, i když by si spolu na talíři klidně sedly.",
+    "explanation": "Finové si tuhle housku nejčastěji dávají k přestávce na kávu zvané kahvitauko, která se drží skoro v každé práci.",
+    "source_url": "https://en.wikipedia.org/wiki/Korvapuusti",
+    "image_prompt": "Fotorealistický snímek čerstvě upečených finských skořicových housek korvapuusti na dřevěném prkénku s hrnkem kávy v pozadí, 16:9",
+    "about": "finské skořicové housce korvapuusti"
+  },
+  {
+    "id": "fi-k-juhannus-bonfire",
+    "cc": "fi",
+    "country": "Finsko",
+    "section": "Svátky a tradice",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Co si Finové tradičně zapalují na břehu jezer o letní slavnosti zvané Juhannus?",
+    "answer": "Velkou vatru",
+    "distractors": [
+      "Lampiony na vodě",
+      "Velký ohňostroj",
+      "Svíčky v oknech domů"
+    ],
+    "quip_correct": "Přesně tak! A hoří třeba i o půlnoci, protože slunce v tu dobu ve Finsku skoro vůbec nezapadá.",
+    "quip_wrong": "Ne tak úplně - na tenhle svátek Finové nepotřebují nebe plné světýlek, stačí jim pořádná hranice dřeva.",
+    "explanation": "Juhannus se slaví kolem letního slunovratu a spousta Finů tou dobou odjíždí z měst na chaty k jezerům.",
+    "source_url": "https://en.wikipedia.org/wiki/Midsummer",
+    "image_prompt": "Fotorealistický snímek velké hořící vatry na břehu finského jezera za letního večera s lidmi v okolí, 16:9",
+    "about": "letní slavnosti Juhannus"
   }
 ]

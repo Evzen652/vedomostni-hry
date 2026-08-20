@@ -801,5 +801,49 @@
     "explanation": "Nezávislost si Texas vybojoval válkou s Mexikem, ve které padla i posádka pevnosti Alamo; dodnes se jí v Texasu připomíná heslem „Remember the Alamo“.",
     "about": "texaské nezávislosti",
     "image_prompt": "Historizující fotorealistický snímek pevnosti Alamo v Texasu za soumraku, 16:9"
+  },
+  {
+    "id": "us-k-bizon-narodni-zvire",
+    "cc": "us",
+    "country": "USA",
+    "section": "Příroda",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje velké chlupaté zvíře s hrbem na zádech, které je oficiálním národním savcem USA?",
+    "answer": "Bizon",
+    "distractors": [
+      "Los",
+      "Medvěd grizzly",
+      "Jelen wapiti"
+    ],
+    "quip_correct": "Přesně tak! Bizon je tak mohutný, že by tě jedním bouchnutím hlavy poslal rovnou do sousedního státu.",
+    "quip_wrong": "Skoro - to zvíře sice taky žije v Americe, ale národní savec USA je mnohem těžší a na zádech nosí hrb, ne parohy.",
+    "explanation": "Dospělý samec bizona může vážit skoro tunu, a přesto dokáže vyběhnout rychlostí přes 50 kilometrů v hodině.",
+    "source_url": "https://en.wikipedia.org/wiki/American_bison",
+    "image_prompt": "Fotorealistický snímek stáda amerických bizonů pasoucích se na travnaté prérii Velkých plání za východu slunce, 16:9",
+    "about": "americkém bizonovi"
+  },
+  {
+    "id": "us-k-den-nezavislosti-ohnostroj",
+    "cc": "us",
+    "country": "USA",
+    "section": "Svátky",
+    "difficulty": 1,
+    "kids": true,
+    "type": "choice",
+    "question": "Jak se jmenuje americký svátek 4. července, kdy se lidé baví na piknicích a večer se dívají na velké ohňostroje?",
+    "answer": "Den nezávislosti",
+    "distractors": [
+      "Den díkůvzdání",
+      "Den práce",
+      "Halloween"
+    ],
+    "quip_correct": "Bum, prásk, hurá! Čtvrtého července se nebe nad Amerikou promění v obří ohňostrojovou show.",
+    "quip_wrong": "Blízko, ale tohle není svátek s krocanem ani s kostýmy - tenhle den Američané slaví svobodu, a to pořádným rachotem.",
+    "explanation": "Tradice slavit tento den ohňostroji je téměř stejně stará jako svátek samotný - první velké oslavy s rachejtlemi se konaly už v roce 1777.",
+    "source_url": "https://en.wikipedia.org/wiki/Independence_Day_(United_States)",
+    "image_prompt": "Fotorealistický snímek barevného ohňostroje nad večerním americkým městem 4. července, s davem lidí sledujícím show, 16:9",
+    "about": "Dni nezávislosti"
   }
 ]
