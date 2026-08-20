@@ -192,11 +192,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   `renderContinentPick` v [quiz.js](quiz.js) má novou dlaždici, chová se exkluzivně stejně jako vzor „Vše"
   u výběru témat: klik na ni zruší výběr jednotlivých kontinentů a naopak. Po „Pokračuj" jde rovnou na
   výběr ze všech ~49 zemí najednou, bez nutnosti proklikat kontinenty jeden po druhém — nutné, jakmile appka
-  pokryla desítky zemí a proklikávání po jedné přestalo dávat smysl. **Zjištěný vedlejší bug (zatím neopravený):**
-  obdobná dlaždice „Vše" u výběru témat (`renderSectionPick`, proměnná `allTile`) se v kódu spočítá, ale nikdy
-  se nevloží do `body.innerHTML`, takže na obrazovce chybí a event listener na `data-sec="__all__"` je mrtvý kód.
-  Oprava: vložit `${allTile}` do `<div class="qz-tiles qz-tiles-sec">${secTiles}${allTile}</div>`, analogicky
-  k funkčnímu vzoru v `renderContinentPick`. Vyvedeno jako samostatný spawn_task (nespuštěný ke dni zápisu).
+  pokryla desítky zemí a proklikávání po jedné přestalo dávat smysl. **Vedlejší bug opraven 2026-08-13
+  (commit `0fa9438`):** obdobná dlaždice „Vše" u výběru témat (`renderSectionPick`, proměnná `allTile`)
+  se dřív v kódu spočítala, ale nikdy nevložila do `body.innerHTML` — teď je vložená (`${allTile}${secTiles}`)
+  a klik na ni funguje stejně exkluzivně jako u kontinentů.
 - **2026-08-09 — Dopsány otázky pro všech 49 zemí z Hricka; zbývá doplnit fotky u drtivé většiny otázek.**
   `data/questions/{cc}.json` teď pokrývá každou zemi z `Hricka/data/cards/` (typicky 27 otázek na zemi,
   Rusko 113, hrstka starších zemí jen 9) — celkem 1279 otázek, `npm run validate` hlásí 0 chyb. **Hlavní
