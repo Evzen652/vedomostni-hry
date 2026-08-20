@@ -72,7 +72,8 @@
   const S = { mode:"solo", order:[], idx:0, band:"dospeli", bandTouched:false, answered:false,
               players:[], turn:0, round:1, totalRounds:5, qServed:0,
               voice:false, steal:false, rotate:"auto", manualRot:null,
-              school:false, timer:0, saveId:null };
+              school:false, timer:0, saveId:null,
+              qLimit:null, qLimitTouched:false, schoolLevel:3 };
 
   const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
@@ -405,6 +406,20 @@
   // ---- výběr tématu: kontinent → země → sekce (jako u glóbu) ----
   function plur(n, one, few, many){ n=Math.abs(n); if(n===1) return one; if(n>=2&&n<=4) return few; return many; }
   function pointsLabel(n){ return `Získáváš ${n} ${plur(n,"bod","body","bodů")}`; }
+  // pásmový fond otázek (sólo: kids -> q.kids, puberťáci -> difficulty<=2, dospělí -> vše)
+  function bandPool(band){
+    let pool = data.questions;
+    if(band==="deti"){ const f=pool.filter(q=>q.kids); if(f.length) pool=f; }
+    else if(band==="starsi"){ const f=pool.filter(q=>!q.kids && (q.difficulty||1)<=2); if(f.length) pool=f; }
+    return pool;
+  }
+  // nabídka „kolik otázek" — pevné kotvy 10/15/20, jen pokud se do fondu vejdou;
+  // je-li fond menší než nejmenší kotva, nabídne se aspoň celý fond
+  function qLimitOptions(total){
+    const opts = [10,15,20].filter(n => n <= total).map(n => ({label:n+" otázek", n}));
+    if(!opts.length) opts.push({label:total+" "+plur(total,"otázka","otázky","otázek"), n: total});
+    return opts;
+  }
   const MODE_LABEL = { solo:"Sólo", party:"Párty", school:"Škola" };
   function beginPick(mode){ S.pickMode=mode; S.sel={}; renderContinentPick(); }
   function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?(SECTION_LABEL[s[0]]||s[0]):s.length+" témata"; return SECTION_LABEL[s]||s; }
@@ -626,6 +641,7 @@
   }
   function afterPick(){
     S.bandTouched = false;   // nová volba tématu -> karty nemají ukazovat starou volbu jako už vybranou
+    S.qLimitTouched = false; // nový fond otázek -> „kolik otázek" se přepočítá podle nové velikosti
     if(S.pickMode==="party") renderSetup();
     else if(S.pickMode==="school") renderSchoolStart();
     else renderStart();
@@ -638,26 +654,41 @@
     const _cLabel2=esc(COUNTRY);
     const backToCountry2 = () => renderCountryPick(S.sel.conts || [S.sel.cont]);
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:_cLabel2, fn:backToCountry2}, {label:selSectionLabel(), fn:renderSectionPick}];
+    const lvlPool = data.questions.filter(q => (q.difficulty||1) <= S.schoolLevel);
+    const total = lvlPool.length ? lvlPool.length : data.questions.length;
+    const qOpts = qLimitOptions(total);
+    if(!S.qLimitTouched || !qOpts.some(o=>o.n===S.qLimit)) S.qLimit = qOpts[qOpts.length-1].n;
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(steps)}
       <h2>Škola / projektor — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <p>Velké otázky na plátno, celá třída hádá naráz — trocha vědění, hromada smíchu. Zvol obtížnost:</p>
       <div class="qz-bands">
-        <button class="qz-chip" data-lvl="1">★ Lehká</button>
-        <button class="qz-chip" data-lvl="2">★★ Střední</button>
-        <button class="qz-chip on" data-lvl="3">★★★ Vše</button>
+        <button class="qz-chip${S.schoolLevel===1?" on":""}" data-lvl="1">★ Lehká</button>
+        <button class="qz-chip${S.schoolLevel===2?" on":""}" data-lvl="2">★★ Střední</button>
+        <button class="qz-chip${S.schoolLevel===3?" on":""}" data-lvl="3">★★★ Vše</button>
       </div>
+      <div style="width:min(100%,460px);margin-top:18px">
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kolik otázek?</div>
+        <div class="qz-bands">
+          ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
+        </div>
+      </div>
+      <button class="qz-go" id="qz-school-go" style="margin-top:20px">Promítnout ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
-    body.querySelectorAll("[data-lvl]").forEach(b => b.addEventListener("click", () => startSchool(+b.dataset.lvl)));
+    body.querySelectorAll("[data-lvl]").forEach(b => b.addEventListener("click", () => { S.schoolLevel=+b.dataset.lvl; S.qLimitTouched=false; renderSchoolStart(); }));
+    body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => { S.qLimit=+b.dataset.qlimit; S.qLimitTouched=true; renderSchoolStart(); }));
+    body.querySelector("#qz-school-go").addEventListener("click", () => startSchool(S.schoolLevel));
   }
   function startSchool(level){
     S.mode="solo"; S.school=true;
     S.players=[{ name:"Třída", band:"deti", color:COLORS[1], score:0, streak:0, side:"dole" }];
     S.turn=0;
     const filtered = data.questions.filter(q => (q.difficulty||1) <= level);
-    S.order = shuffle(filtered.length ? filtered : data.questions);
+    const pool = filtered.length ? filtered : data.questions;
+    const limit = Math.min(S.qLimit || pool.length, pool.length);
+    S.order = shuffle(pool).slice(0, limit);
     S.idx=0; newSave();
     const shell=document.getElementById("qz-shell"); shell.classList.add("qz-school"); shell.style.transform="";
     renderQuestion();
@@ -669,6 +700,9 @@
     const _cLabel=esc(COUNTRY);
     const backToCountry3 = () => renderCountryPick(S.sel.conts || [S.sel.cont]);
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:_cLabel, fn:backToCountry3}, {label:selSectionLabel(), fn:renderSectionPick}];
+    const total = bandPool(S.band).length;
+    const qOpts = qLimitOptions(total);
+    if(!S.qLimitTouched || !qOpts.some(o=>o.n===S.qLimit)) S.qLimit = qOpts[qOpts.length-1].n;
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(steps)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} | Sólo výprava</h2>
@@ -681,11 +715,18 @@
           ${tileHtml({ic:"🧑", img:"assets/band-dospeli.jpg", t:"Dospělí", selectable:true, sel:S.bandTouched && S.band==="dospeli", attr:`data-band="dospeli"`})}
         </div>
       </div>
+      <div style="width:min(100%,460px);margin-top:18px">
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kolik otázek?</div>
+        <div class="qz-bands">
+          ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
+        </div>
+      </div>
       <button class="qz-go" id="qz-start-go" style="margin-top:20px">Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
-    body.querySelectorAll(".qz-tile[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; S.bandTouched=true; renderStart(); }));
+    body.querySelectorAll(".qz-tile[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; S.bandTouched=true; S.qLimitTouched=false; renderStart(); }));
+    body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => { S.qLimit=+b.dataset.qlimit; S.qLimitTouched=true; renderStart(); }));
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
 
@@ -693,11 +734,10 @@
     S.mode="solo";
     S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, streak:0, side:"dole" }];
     S.turn=0;
-    let pool = data.questions;
     // tři pásma: „děti" jen vlastní jednoduchý fond (q.kids), „puberťáci" difficulty ≤2 (běžné trivia), „dospělí" vše
-    if(S.band==="deti"){ const f=pool.filter(q=>q.kids); if(f.length) pool=f; }
-    else if(S.band==="starsi"){ const f=pool.filter(q=>!q.kids && (q.difficulty||1)<=2); if(f.length) pool=f; }
-    S.order=shuffle(pool); S.idx=0; S.school=false; newSave();
+    const pool = bandPool(S.band);
+    const limit = Math.min(S.qLimit || pool.length, pool.length);
+    S.order=shuffle(pool).slice(0, limit); S.idx=0; S.school=false; newSave();
     const shg=document.getElementById("qz-shell"); shg.classList.remove("qz-school"); shg.style.transform="";
     renderQuestion();
   }
