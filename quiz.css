@@ -60,6 +60,11 @@
 .qz-start { align-items: center; justify-content: flex-start; text-align: center; gap: 16px; padding: 70px 24px 40px; }
 .qz-start h2 { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 650; color: var(--teal); }
 .qz-start p { color: var(--muted); font-size: 14px; max-width: 460px; }
+/* Popisek volby na obrazovkách nastavení („Kdo dnes cestuje?", „Kolik otázek?", „Časový limit").
+   Dřív inline font-size:12px na čtyřech místech — tedy nejmenší text na stránce, menší než chipy
+   pod ním (13px) i než shrnutí (14px), přestože jde o otázku na hráče, ne o mikropopisek. */
+.qz-fieldlabel { font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 650;
+  color: var(--muted); margin-bottom: 8px; }
 .qz-bands { display: flex; gap: 10px; width: 100%; }
 .qz-chip { background: var(--paper2); border: 1.6px solid #d8c9ad; border-radius: 20px; font-size: 13px; padding: 8px 18px;
   color: var(--ink); cursor: pointer; box-shadow: 0 2px 0 #d8c9ad; font-family: inherit; }

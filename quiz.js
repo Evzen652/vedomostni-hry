@@ -696,7 +696,7 @@
         <button class="qz-chip${S.schoolLevel===3?" on":""}" data-lvl="3">★★★ Vše</button>
       </div>
       <div style="width:min(100%,460px);margin-top:18px">
-        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kolik otázek?</div>
+        <div class="qz-fieldlabel">Kolik otázek?</div>
         <div class="qz-bands">
           ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
         </div>
@@ -741,7 +741,7 @@
            takže flagStamp skládal country-null.jpg a tahal zbytečné 404. -->
       <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}Sólo jízda — jen ty a mapa</h2>
       <div style="width:min(100%,460px)">
-        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
+        <div class="qz-fieldlabel">Kdo dnes cestuje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
           ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
           ${tileHtml({ic:"🧑‍🎓", img:"assets/band-starsi.jpg", t:"Puberťáci", selectable:true, sel:S.bandTouched && S.band==="starsi", attr:`data-band="starsi"`})}
@@ -749,7 +749,7 @@
         </div>
       </div>
       <div style="width:min(100%,460px);margin-top:18px">
-        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kolik otázek?</div>
+        <div class="qz-fieldlabel">Kolik otázek?</div>
         <div class="qz-bands" id="qz-qlimits">
           ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
         </div>
@@ -869,7 +869,7 @@
           <div class="qz-opt" data-opt="voice"><span class="qz-sw${S.voice?" on":""}"></span> Hlas — tablet čte nahlas</div>
           <div class="qz-opt" data-opt="rotate"><span class="qz-sw${S.rotate==="auto"?" on":""}"></span> Otáčet obrazovku k hráči</div>
           <div class="qz-opt" data-opt="steal"><span class="qz-sw${S.steal?" on":""}"></span> Steal (sebrání otázky)</div>
-          <div style="margin-top:8px;font-size:12px;color:var(--muted)">Časový limit na odpověď</div>
+          <div class="qz-fieldlabel" style="margin-top:12px">Časový limit na odpověď</div>
           <div class="qz-bands" style="margin-top:4px">
             <button class="qz-chip${S.timer===0?" on":""}" data-timer="0">vyp</button>
             <button class="qz-chip${S.timer===30?" on":""}" data-timer="30">mírný · 30 s</button>
