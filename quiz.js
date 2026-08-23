@@ -726,7 +726,13 @@
     if(!S.qLimitTouched || !qOpts.some(o=>o.n===S.qLimit)) S.qLimit = qOpts[qOpts.length-1].n;
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(steps)}
-      <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} | Sólo výprava</h2>
+      <!-- Zemi i téma říkají drobečky o řádek výš, takže je nadpis neopakuje — dřív tu stálo
+           „{země} | Sólo výprava", kde nová byla jen ta jedna informace o sólu. „Sólo jízda"
+           navíc sedí s názvem dlaždice režimu (dřív „Sólo výprava", tedy dvě jména pro totéž).
+           Pointu si schválně nechává až shrnutí dole — dva vtipy nad sebou se shodí.
+           Razítko jen u jedné vybrané země: u „všech zemí" je S.sel.cc null (viz selectCountries),
+           takže flagStamp skládal country-null.jpg a tahal zbytečné 404. -->
+      <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}Sólo jízda — jen ty a mapa</h2>
       <div style="width:min(100%,460px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
