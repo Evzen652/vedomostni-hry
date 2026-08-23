@@ -749,7 +749,7 @@
         </div>
       </div>
       <div style="width:min(100%,460px);margin-top:18px">
-        <div class="qz-fieldlabel">Kolik otázek?</div>
+        <div class="qz-fieldlabel">Na kolik otázek si troufáš?</div>
         <div class="qz-bands" id="qz-qlimits">
           ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
         </div>
