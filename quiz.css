@@ -401,6 +401,8 @@
 /* obtížnost = ilustrované hvězdičky (ne text/emoji) + slovní popisek, ať je jasné, co znamenají */
 .qz-diff { display: inline-flex; align-items: center; gap: 2px; letter-spacing: 0; cursor: help; }
 .qz-diff i { font-style: normal; margin-left: 4px; color: var(--muted); }
+/* dětský fond nemá hvězdičky, takže odsazení za nimi by tu dělalo osamocenou mezeru */
+.qz-diff-kids i { margin-left: 0; }
 .qz-meta .qz-stamp { vertical-align: middle; }
 
 .qz-steal { border-top: 1.5px dashed #cdbfa2; margin-top: 4px; padding-top: 10px; display: flex; flex-direction: column; gap: 8px; }

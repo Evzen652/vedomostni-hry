@@ -406,11 +406,16 @@
   // ---- výběr tématu: kontinent → země → sekce (jako u glóbu) ----
   function plur(n, one, few, many){ n=Math.abs(n); if(n===1) return one; if(n>=2&&n<=4) return few; return many; }
   function pointsLabel(n){ return `Získáváš ${n} ${plur(n,"bod","body","bodů")}`; }
-  // pásmový fond otázek (sólo: kids -> q.kids, puberťáci -> difficulty<=2, dospělí -> vše)
+  // pásmový fond otázek (kids -> q.kids, puberťáci -> !kids && difficulty<=2, dospělí -> !kids)
   function bandPool(band){
     let pool = data.questions;
     if(band==="deti"){ const f=pool.filter(q=>q.kids); if(f.length) pool=f; }
     else if(band==="starsi"){ const f=pool.filter(q=>!q.kids && (q.difficulty||1)<=2); if(f.length) pool=f; }
+    // Dospělí dřív brali „vše" — to dávalo smysl, dokud byly dětské otázky pilotní dávka
+    // o dvanácti kusech. Po dorovnání dětské kategorie jich je 837 z 2806, takže by dospělému
+    // vycházela skoro každá třetí otázka psaná pro osmileté. Catch-all větev (ne `band==="dospeli"`)
+    // schválně: i při neznámé hodnotě pásma je správnější dětské otázky vynechat než přidat.
+    else { const f=pool.filter(q=>!q.kids); if(f.length) pool=f; }
     return pool;
   }
   // Body za správnou odpověď. V párty hraje každý ve svém pásmu (viz buildPartyOrder), takže
@@ -420,6 +425,15 @@
   // odstupňování obtížnosti zůstává sólu a škole, kde se hraje z jednoho fondu a nikdo se neporovnává.
   const PARTY_POINTS = 100;
   function qPoints(q){ return S.mode==="party" ? PARTY_POINTS : (q.difficulty||1)*100; }
+  // Hvězdičky měří obtížnost uvnitř obecného fondu psaného pro dospělé. Na dětské otázky ta škála
+  // neplatí — všech 837 jich má difficulty 1, takže hvězdička u nich byla vždycky jedna a stejná:
+  // nenesla žádnou informaci a přitom budila dojem známky na společné škále („★ lehká" u otázky,
+  // která není lehká otázka pro dospělé, ale otázka z jiného fondu). Proto štítek místo hvězdiček.
+  function diffHtml(q){
+    if(q.kids) return `<span class="qz-diff qz-diff-kids" title="otázka z dětského fondu"><i>pro děti</i></span>`;
+    const d = q.difficulty||1, lbl = DIFF_LABEL[d]||"těžká";
+    return `<span class="qz-diff" title="obtížnost: ${lbl}">${ICO_STAR_DIFF.repeat(d)}<i>${lbl}</i></span>`;
+  }
   // nabídka „kolik otázek" — pevné kotvy 10/15/20, jen pokud se do fondu vejdou;
   // je-li fond menší než nejmenší kotva, nabídne se aspoň celý fond
   function qLimitOptions(total){
@@ -746,7 +760,7 @@
     S.mode="solo";
     S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, streak:0, side:"dole" }];
     S.turn=0;
-    // tři pásma: „děti" jen vlastní jednoduchý fond (q.kids), „puberťáci" difficulty ≤2 (běžné trivia), „dospělí" vše
+    // tři pásma: „děti" jen vlastní fond (q.kids), „puberťáci" lehčí obecné trivia (difficulty ≤2), „dospělí" celé obecné trivia — všechna bez dětských otázek
     const pool = bandPool(S.band);
     const limit = Math.min(S.qLimit || pool.length, pool.length);
     S.order=shuffle(pool).slice(0, limit); S.idx=0; S.school=false; newSave();
@@ -944,7 +958,7 @@
       ${topHtml(n,total)}
       <div class="qz-box" id="qz-box">
         <div class="qz-timerbar" id="qz-timerbar" style="display:none"><div></div></div>
-        <div class="qz-meta">${esc(q.country||COUNTRY)} · ${esc(q.section||"")} · <span class="qz-diff" title="obtížnost: ${DIFF_LABEL[q.difficulty||1]||"těžká"}">${ICO_STAR_DIFF.repeat(q.difficulty||1)}<i>${DIFF_LABEL[q.difficulty||1]||"těžká"}</i></span>${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
+        <div class="qz-meta">${esc(q.country||COUNTRY)} · ${esc(q.section||"")} · ${diffHtml(q)}${S.mode==="party"?` · <b style="color:${cur().color}">${esc(cur().name)}</b> na tahu`:""}</div>
         <div class="qz-q">${esc(q.question)}</div>
         ${ansHtml}
       </div>
