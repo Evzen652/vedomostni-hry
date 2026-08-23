@@ -17,6 +17,48 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-24 — Pásma narovnána: dospělí bez dětských otázek, v párty hraje každý ve svém fondu za rovné body, dětské otázky mají místo hvězdičky štítek.**
+  Balík oprav, které všechny plynou z jedné příčiny: **hvězdičková škála platí jen pro obecný fond
+  psaný pro dospělé, ne pro dětský** — a appka to na několika místech míchala dohromady. Aktuální
+  velikosti fondů: **děti 837 / puberťáci 827 / dospělí 1969** (celkem 2806). Ověřená fakta, ze
+  kterých to vychází: `difficulty` nikdy nepřekročí 3 a **všech 837 dětských otázek má
+  `difficulty: 1`**.
+  1. **`bandPool("dospeli")` už nevrací „vše", ale `!q.kids`** (1969 místo 2806). „Dospělí = vše"
+     dávalo smysl, dokud byly dětské otázky pilotní dávka o dvanácti kusech; po dorovnání dětské
+     kategorie jich je 837 z 2806, takže dospělému vycházela skoro **každá třetí otázka psaná pro
+     osmileté**. Větev je záměrně catch-all (ne `band==="dospeli"`) — i při neznámé hodnotě pásma je
+     správnější dětské otázky vynechat než přidat.
+  2. **Párty: `buildPartyOrder()` předskládá otázky podle pásma hráče na tahu.** Dřív se losovalo
+     z jednoho společného balíku (`shuffle(data.questions)`) a pásmo ovlivňovalo jen tón hlášky,
+     takže dítě u stolu dostávalo ~41 % otázek pro dospělé. Předskládá se schválně (místo filtrování
+     až při podání), aby `qCurrent()` i ukládání rozehrané hry (`orderIds` + `qServed`) zůstaly beze
+     změny; **délka pole musí zůstat násobkem počtu hráčů**, jinak zarovnání pásem nepřežije
+     přetečení přes `% S.order.length`.
+  3. **V párty má správná odpověď pevných 100 bodů** (`qPoints()`), bonus za sérii zůstává; v sólu
+     a škole se dál boduje `difficulty × 100`. Bez tohohle by bod 2 byl **horší než původní stav**:
+     dětské otázky mají všechny `difficulty 1` a dospělácké 3, takže dítě by mělo strop 100 bodů
+     proti 300 u dospělého a nemohlo by vyhrát nikdy. Ověřeno: stůl dítě + dospělý, oba všechno
+     správně → 375:375 (se starým bodováním by to bylo 875:375).
+  4. **`diffHtml()` u otázek s `kids:true` vykreslí štítek „pro děti" místo hvězdiček.** Hvězdička
+     u nich byla vždycky jedna a stejná — nenesla žádnou informaci a přitom budila dojem známky na
+     společné škále („★ lehká" u otázky, která není lehká otázka pro dospělé, ale otázka z jiného
+     fondu). V párty navíc rovnou vysvětlí, proč je otázka jednodušší.
+  5. **Tlačítko „Jdeme na to" v sólu je `disabled`, dokud hráč nevybere pásmo.** `S.band` má skrytou
+     výchozí hodnotu `"dospeli"`, ale dlaždice se kvůli `S.bandTouched` tváří jako nevybrané — klik
+     rovnou na start tedy tiše rozjel hru za dospělé. Stejný vzor už appka měla u výběru kontinentu
+     a zemí. K tomu `.qz-go:disabled` v [quiz.css](quiz.css), jinak zablokované tlačítko vypadá aktivně.
+  6. **Popisek fondu říká „Losujeme {N} otázek z {fond}"** místo holého „2806 otázek", což znělo,
+     jako by hráč měl odehrát všechny. Číslo navíc bralo `data.questions.length`, takže se neměnilo
+     podle pásma — u dětí hlásilo 2806 místo 837. Teď bere `bandPool()`.
+  7. **Z dlaždic pásem zmizel věk** („Děti (8–11)" → „Děti"), protože třetí dlaždice ho nikdy neměla
+     a párty režim popisky bez věku používá odjakživa. Rozpětí zůstávají zapsaná tady jako
+     specifikace, pro koho se otázky píšou.
+
+  **Co se tím NEvyřešilo:** pásmo „puberťáci" je pořád definované výhradně obtížností
+  (`!q.kids && difficulty ≤ 2`), takže hvězdičky u něj dál fungují jako věková brána — vědomá
+  zkratka, ne čistý model. Kdyby to někdy vadilo, čistá cesta je zavést explicitní `q.level`
+  (`deti`/`starsi`/`dospeli`); převod z dnešních dat je **čistě mechanický, bez přehodnocování
+  obsahu**, protože ta tři pásma jsou dnes přesný rozklad fondu bez překryvů.
 - **2026-08-15 — +214 nových otázek (hlavně Evropa) + 6 nových zemí bez vlajky zatím.**
   Na žádost „vytvoř 200 nových otázek zejména z Evropy, nešetři ironií" vygenerováno přes
   Workflow (12 sekvenčních skupin párů zemí, kvůli limitům) 214 otázek — 1790 → 2004 celkem.
@@ -87,6 +129,12 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   neopravil). UI: `renderStart` má 3 dlaždice (`assets/band-starsi.jpg` zatím neexistuje → emoji
   fallback), párty `.qz-bandbtn` má 3. `admin.html` dostal filtr „Fond: jen 8–11 / bez kids" a otázky
   s `kids:true` mají v seznamu zelený štítek „děti 8–11" místo štítku obtížnosti.
+  > **Opraveno 2026-08-24 — tenhle zápis je na třech místech nepravdivý, čti ho s tímhle vědomím:**
+  > (1) **„dospělí = vše" už neplatí** — dospělí dostávají `!q.kids`, viz zápis z 2026-08-24 nahoře.
+  > (2) **Čísla jsou dávno zastaralá** (12 dětských / 1190 puberťáckých / 1291 celkem); dnes je to
+  > 837 / 827 / 1969 z 2806. (3) **`admin.html` neexistuje a nikdy v repu nebyl** — ověřeno přes
+  > `git log --all -- admin.html` (žádný commit) i `git ls-files`. Popsaný filtr a zelený štítek
+  > v seznamu tedy nikdy nevznikly; štítek „pro děti" má od 2026-08-24 až hrací obrazovka v `quiz.js`.
 - **2026-08-14 — Pásmo „6–9 let" zrušeno; appka má jen pásma „děti" a „dospělí".** *(nahrazeno výše)*
   Věkové dlaždice 6–9 / 10–14 (`data-kmax`, `S.kidsMax`) jsou pryč z `renderStart` i ze stavu.
   Důvod: audit odhalil, že „difficulty 1" nikdy nebyl obsah psaný pro šestileté — jsou to všeobecné
