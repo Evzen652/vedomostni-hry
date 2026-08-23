@@ -713,8 +713,8 @@
       <div style="width:min(100%,460px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
-          ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti (8–11)", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
-          ${tileHtml({ic:"🧑‍🎓", img:"assets/band-starsi.jpg", t:"Puberťáci (12–16)", selectable:true, sel:S.bandTouched && S.band==="starsi", attr:`data-band="starsi"`})}
+          ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
+          ${tileHtml({ic:"🧑‍🎓", img:"assets/band-starsi.jpg", t:"Puberťáci", selectable:true, sel:S.bandTouched && S.band==="starsi", attr:`data-band="starsi"`})}
           ${tileHtml({ic:"🧑", img:"assets/band-dospeli.jpg", t:"Dospělí", selectable:true, sel:S.bandTouched && S.band==="dospeli", attr:`data-band="dospeli"`})}
         </div>
       </div>
