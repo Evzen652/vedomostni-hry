@@ -737,7 +737,7 @@
       </div>
       <div style="width:min(100%,460px);margin-top:18px">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kolik otázek?</div>
-        <div class="qz-bands">
+        <div class="qz-bands" id="qz-qlimits">
           ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
         </div>
       </div>
@@ -751,15 +751,49 @@
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
+    // Klik na pásmo/počet dřív volal renderStart(), tedy body.innerHTML = … — tím se zahodily
+    // a znovu vytvořily i <img> dlaždic, takže obrázky pásem viditelně problikly (dev server je
+    // navíc posílá s `no-store`, takže se pokaždé stahovaly znovu, ~186 kB na klik). Nic z toho
+    // se přitom nemění, takže se překresluje jen to, co na volbě opravdu závisí.
+    function refreshStart(){
+      const total = bandPool(S.band).length;
+      const qOpts = qLimitOptions(total);
+      if(!S.qLimitTouched || !qOpts.some(o=>o.n===S.qLimit)) S.qLimit = qOpts[qOpts.length-1].n;
+      // dlaždice pásem — fajfku řídí CSS přes .sel, takže stačí přepnout třídu
+      body.querySelectorAll(".qz-tile[data-band]").forEach(t =>
+        t.classList.toggle("sel", S.bandTouched && t.dataset.band===S.band));
+      // nabídka počtů se přestaví jen když se opravdu změnila, jinak se jen přehodí zvýraznění
+      const wrap = body.querySelector("#qz-qlimits");
+      const nows = [...wrap.querySelectorAll("[data-qlimit]")].map(b=>+b.dataset.qlimit);
+      if(nows.length!==qOpts.length || nows.some((n,i)=>n!==qOpts[i].n)){
+        wrap.innerHTML = qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("");
+        bindQLimits();
+      } else {
+        wrap.querySelectorAll("[data-qlimit]").forEach(b => b.classList.toggle("on", +b.dataset.qlimit===S.qLimit));
+      }
+      // shrnutí voleb
+      const go = body.querySelector("#qz-start-go");
+      let sum = body.querySelector(".qz-start-sum");
+      if(S.bandTouched && S.qLimitTouched){
+        if(!sum){ sum=document.createElement("p"); sum.className="qz-start-sum"; go.parentNode.insertBefore(sum, go); }
+        sum.textContent = `Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.`;
+      } else if(sum){ sum.remove(); }
+      go.disabled = !S.bandTouched;
+    }
+    function bindQLimits(){
+      body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => {
+        S.qLimit=+b.dataset.qlimit; S.qLimitTouched=true; refreshStart();
+      }));
+    }
     body.querySelectorAll(".qz-tile[data-band]").forEach(ch => ch.addEventListener("click", () => {
       S.band=ch.dataset.band; S.bandTouched=true;
       // Volba počtu se zahazuje jen tehdy, když se do fondu nového pásma nevejde. Dřív ji přepnutí
       // pásma rušilo vždycky, což bylo neškodné, dokud se podle S.qLimitTouched nic nezobrazovalo —
       // teď by to hráči po každé změně pásma schovalo shrnutí, které si už jednou vyklikal.
       if(!qLimitOptions(bandPool(S.band).length).some(o=>o.n===S.qLimit)) S.qLimitTouched=false;
-      renderStart();
+      refreshStart();
     }));
-    body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => { S.qLimit=+b.dataset.qlimit; S.qLimitTouched=true; renderStart(); }));
+    bindQLimits();
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
 
