@@ -741,7 +741,7 @@
            takže flagStamp skládal country-null.jpg a tahal zbytečné 404. -->
       <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}Oukej, vypravíme se na sólo jízdu. Jen ty a mapa.</h2>
       <div style="width:min(100%,460px)">
-        <div class="qz-fieldlabel">Kdo dnes cestuje?</div>
+        <div class="qz-fieldlabel">Kdo dnes hraje? Přiznej barvu.</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
           ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
           ${tileHtml({ic:"🧑‍🎓", img:"assets/band-starsi.jpg", t:"Puberťáci", selectable:true, sel:S.bandTouched && S.band==="starsi", attr:`data-band="starsi"`})}
