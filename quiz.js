@@ -739,7 +739,7 @@
            Pointu si schválně nechává až shrnutí dole — dva vtipy nad sebou se shodí.
            Razítko jen u jedné vybrané země: u „všech zemí" je S.sel.cc null (viz selectCountries),
            takže flagStamp skládal country-null.jpg a tahal zbytečné 404. -->
-      <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}Sólo jízda — jen ty a mapa</h2>
+      <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}Oukej, vypravíme se na sólo jízdu. Jen ty a mapa.</h2>
       <div style="width:min(100%,460px)">
         <div class="qz-fieldlabel">Kdo dnes cestuje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
