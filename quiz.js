@@ -721,7 +721,9 @@
           ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
         </div>
       </div>
-      <button class="qz-go" id="qz-start-go" style="margin-top:20px">Jdeme na to ${handArrowSvg(false)}</button>
+      <!-- Dokud hráč nesáhne na pásmo, drží S.band skrytou výchozí hodnotu "dospeli" — bez
+           disabled by klik rovnou na start tiše rozjel hru za dospělé, aniž by cokoli vybral. -->
+      <button class="qz-go" id="qz-start-go" style="margin-top:20px"${S.bandTouched?"":" disabled"}>Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);

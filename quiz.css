@@ -67,6 +67,7 @@
 .qz-chip.on { background: var(--teal); border-color: var(--teal); color: #fffdf6; box-shadow: 0 2px 0 #1f5f5c; }
 .qz-go { background: var(--coral); color: #fffdf6; font-family: 'Nunito', sans-serif; font-size: 19px; font-weight: 650;
   border: none; border-radius: 16px; padding: 14px 40px; cursor: pointer; box-shadow: 0 4px 0 #b1543f, 0 10px 24px rgba(226,114,91,.35); }
+.qz-go:disabled { opacity: .38; cursor: not-allowed; box-shadow: 0 3px 0 #cca090; }
 
 /* ---- play ---- */
 .qz-play { position: relative; padding-bottom: 16px; }
