@@ -413,6 +413,13 @@
     else if(band==="starsi"){ const f=pool.filter(q=>!q.kids && (q.difficulty||1)<=2); if(f.length) pool=f; }
     return pool;
   }
+  // Body za správnou odpověď. V párty hraje každý ve svém pásmu (viz buildPartyOrder), takže
+  // absolutní obtížnost otázek není mezi hráči srovnatelná — dětská otázka má vždy difficulty 1
+  // a dospělácká 3, takže by dítě mělo strop 100 bodů proti 300 u dospělého a nemohlo by vyhrát.
+  // Proto má v párty každá správná odpověď stejnou cenu a soutěží se v počtu trefených otázek;
+  // odstupňování obtížnosti zůstává sólu a škole, kde se hraje z jednoho fondu a nikdo se neporovnává.
+  const PARTY_POINTS = 100;
+  function qPoints(q){ return S.mode==="party" ? PARTY_POINTS : (q.difficulty||1)*100; }
   // nabídka „kolik otázek" — pevné kotvy 10/15/20, jen pokud se do fondu vejdou;
   // je-li fond menší než nejmenší kotva, nabídne se aspoň celý fond
   function qLimitOptions(total){
@@ -842,8 +849,28 @@
     });
   }
 
+  // Předskládá pořadí otázek tak, že na pozici i stojí otázka z pásma hráče, který na ní bude
+  // na tahu. Dřív se párty losovala z jednoho společného balíku celého fondu, takže dítě u stolu
+  // dostávalo ~41 % otázek pro dospělé, na které nemohlo odpovědět.
+  // Proč předskládat a nefiltrovat až při podání: qCurrent() i ukládání rozehrané hry (orderIds
+  // + qServed) pak zůstávají beze změny. Délka je násobek počtu hráčů — díky tomu zarovnání
+  // pásem přežije i přetečení přes `% S.order.length` v qCurrent().
+  function buildPartyOrder(){
+    const P = S.players.length;
+    const need = Math.max(1, S.totalRounds) * P;
+    const queues = {};   // pásmo -> { pool: zamíchaný fond, i: kolik z něj už padlo }
+    const out = [];
+    for(let i=0; i<need; i++){
+      const band = S.players[i % P].band || "dospeli";
+      let qu = queues[band];
+      // došel fond pásma (málo otázek, hodně kol) -> zamíchat znovu a jet od začátku
+      if(!qu || qu.i >= qu.pool.length) qu = queues[band] = { pool: shuffle(bandPool(band)), i:0 };
+      out.push(qu.pool[qu.i++]);
+    }
+    return out;
+  }
   function startParty(){
-    S.mode="party"; S.order=shuffle(data.questions); S.qServed=0; S.turn=0; S.round=1; S.manualRot=null; S.school=false; newSave();
+    S.mode="party"; S.order=buildPartyOrder(); S.qServed=0; S.turn=0; S.round=1; S.manualRot=null; S.school=false; newSave();
     document.getElementById("qz-shell").classList.remove("qz-school");
     S.players.forEach(p=>{ p.score=0; p.streak=0; });
     applyRotation();
@@ -949,7 +976,7 @@
 
   function answer(q, choice){
     if(S.answered) return; S.answered=true; clearTimer();
-    const b=bandOf(), base=(q.difficulty||1)*100, P=cur();
+    const b=bandOf(), base=qPoints(q), P=cur();
     const correct = String(choice)===String(q.answer);
     let gained=0, gold=false, quipText;
     if(correct){ P.streak++; gained=base + (P.streak>1?(P.streak-1)*25:0); quipText=resolveQuip(q.quip_correct,b); }
@@ -989,7 +1016,7 @@
     const box=body.querySelector("#qz-box");
     if(S.voice) speakTTS(stealer.name+", chceš to sebrat?");
     box.querySelectorAll("#qz-steal .qz-a").forEach(btn => btn.addEventListener("click", () => {
-      const correct=String(btn.childNodes[0].textContent)===String(q.answer), g=(q.difficulty||1)*100;
+      const correct=String(btn.childNodes[0].textContent)===String(q.answer), g=qPoints(q);
       if(correct){ S.players[si].score+=g; updateScorePill(si); say(stealer.name+" to sebral! +"+g); if(S.voice) speakTTS(stealer.name+" sebral body!"); }
       else { say(stealer.name+" taky mimo."); if(S.voice) speakTTS(stealer.name+" taky mimo."); }
       finishSteal(q);
