@@ -157,6 +157,7 @@
   function newSave(){ S.saveId = "g"+Date.now()+"_"+Math.floor(Math.random()*1e4); }
   async function resumeSave(id){
     const rec=loadSaves()[id]; if(!rec || !data) return;
+    showHomeBtn(true);   // odsud vede „Domů" zpátky na výběr režimu, takže dává smysl
     const st=rec.state;
     const cc=st.cc||"ru";
     S.sel={ cc, cont:COUNTRY_CONT[cc]||"asia", section:st.section||null };
@@ -349,10 +350,16 @@
 
   function open(){ ensureData().then(()=>{ document.body.style.overflow="hidden"; root.classList.remove("qz-hidden"); renderModePick(); }); }
   function close(){ stopTTS(); clearTimer(); releaseWake(); renderModePick(); }
+  // „×" je Domů a vrací na výběr režimu — na něm samotném by tedy jen překreslil tutéž obrazovku.
+  // Ven z appky vést nemůže: landing.html je zrušená a hra.html je sama domovská stránka
+  // (viz komentář na začátku souboru a CLAUDE.md 2026-08-13). Proto se právě tam schovává.
+  // Kdyby appka někdy rozcestník zase dostala, stačí tohle volání zrušit.
+  function showHomeBtn(on){ if(closeBtn) closeBtn.style.display = on ? "" : "none"; }
 
   // ---- výběr režimu ----
   function renderModePick(){
     say("Vítejte, cestovatelé! Jak si dnes zahrajeme?");
+    showHomeBtn(false);
     document.getElementById("qz-shell").style.transform="";
     const saves=loadSaves(); const ids=Object.keys(saves).sort((a,b)=>saves[b].ts-saves[a].ts).slice(0,4);
     const hasSaves = ids.length > 0;
@@ -442,7 +449,7 @@
     return opts;
   }
   const MODE_LABEL = { solo:"Sólo", party:"Párty", school:"Škola" };
-  function beginPick(mode){ S.pickMode=mode; S.sel={}; renderContinentPick(); }
+  function beginPick(mode){ S.pickMode=mode; S.sel={}; showHomeBtn(true); renderContinentPick(); }
   function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?(SECTION_LABEL[s[0]]||s[0]):s.length+" témata"; return SECTION_LABEL[s]||s; }
   function contsLabel(){
     const contsArr = (S.sel && S.sel.conts) || [];
