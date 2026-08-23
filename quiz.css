@@ -400,6 +400,8 @@
   border: 3px solid #fffdf6; outline: 2px solid #d8c9ad; box-shadow: 0 8px 20px rgba(120,90,50,.26); }
 /* obtížnost = ilustrované hvězdičky (ne text/emoji) + slovní popisek, ať je jasné, co znamenají */
 .qz-diff { display: inline-flex; align-items: center; gap: 2px; letter-spacing: 0; cursor: help; }
+/* shrnutí voleb nad tlačítkem Jdeme na to — drží šířku bloku voleb nad ním */
+.qz-start-sum { width: min(100%, 460px); margin: 16px 0 0; text-align: center; }
 .qz-diff i { font-style: normal; margin-left: 4px; color: var(--muted); }
 /* dětský fond nemá hvězdičky, takže odsazení za nimi by tu dělalo osamocenou mezeru */
 .qz-diff-kids i { margin-left: 0; }

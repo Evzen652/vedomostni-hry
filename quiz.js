@@ -727,10 +727,6 @@
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(steps)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} | Sólo výprava</h2>
-      <!-- Zásobník, ne počet ke hraní: dřív tu stálo holé „2806 otázek", což znělo, jako by hráč
-           měl odehrát všechny. Číslo navíc bralo data.questions.length (celý fond), takže se
-           neměnilo podle pásma — u dětí hlásilo 2806 místo skutečných ~837. total = bandPool(). -->
-      <p>Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>
       <div style="width:min(100%,460px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
@@ -745,13 +741,24 @@
           ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
         </div>
       </div>
+      <!-- Shrnutí obou voleb, ne nadpis: proto stojí až pod nimi a naskočí, teprve když hráč
+           vybral pásmo i počet. Dřív viselo nad dlaždicemi a hlásilo počet i velikost fondu
+           dřív, než si hráč cokoli zvolil — fond navíc podle skryté výchozí hodnoty S.band. -->
+      ${(S.bandTouched && S.qLimitTouched) ? `<p class="qz-start-sum">Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>` : ""}
       <!-- Dokud hráč nesáhne na pásmo, drží S.band skrytou výchozí hodnotu "dospeli" — bez
            disabled by klik rovnou na start tiše rozjel hru za dospělé, aniž by cokoli vybral. -->
       <button class="qz-go" id="qz-start-go" style="margin-top:20px"${S.bandTouched?"":" disabled"}>Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
-    body.querySelectorAll(".qz-tile[data-band]").forEach(ch => ch.addEventListener("click", () => { S.band=ch.dataset.band; S.bandTouched=true; S.qLimitTouched=false; renderStart(); }));
+    body.querySelectorAll(".qz-tile[data-band]").forEach(ch => ch.addEventListener("click", () => {
+      S.band=ch.dataset.band; S.bandTouched=true;
+      // Volba počtu se zahazuje jen tehdy, když se do fondu nového pásma nevejde. Dřív ji přepnutí
+      // pásma rušilo vždycky, což bylo neškodné, dokud se podle S.qLimitTouched nic nezobrazovalo —
+      // teď by to hráči po každé změně pásma schovalo shrnutí, které si už jednou vyklikal.
+      if(!qLimitOptions(bandPool(S.band).length).some(o=>o.n===S.qLimit)) S.qLimitTouched=false;
+      renderStart();
+    }));
     body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => { S.qLimit=+b.dataset.qlimit; S.qLimitTouched=true; renderStart(); }));
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
