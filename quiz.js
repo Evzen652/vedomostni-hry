@@ -706,7 +706,10 @@
     body.innerHTML = `<div class="qz-screen qz-start">
       ${pickHeadHtml(steps)}
       <h2>${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY} | Sólo výprava</h2>
-      <p>${data.questions.length} ${plur(data.questions.length,"otázka","otázky","otázek")}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>
+      <!-- Zásobník, ne počet ke hraní: dřív tu stálo holé „2806 otázek", což znělo, jako by hráč
+           měl odehrát všechny. Číslo navíc bralo data.questions.length (celý fond), takže se
+           neměnilo podle pásma — u dětí hlásilo 2806 místo skutečných ~837. total = bandPool(). -->
+      <p>Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>
       <div style="width:min(100%,460px)">
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Kdo dnes cestuje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
