@@ -44,7 +44,34 @@ for (let i = 0; i < rows.length; i += BATCH) {
   out.push('INSERT INTO questions ' + COLS + ' VALUES\n' + rows.slice(i, i + BATCH).join(',\n') + ';');
 }
 
+// ---------------------------------------------------------------- boti
+// Boti řeší prázdnou hernu, dokud není hráčská základna (docs/online-rezim.md, sekce 2).
+// Mají řádek v users s is_bot=1, takže se nemůžou přihlásit; pin_hash je záměrně
+// neplatný tvar, který verifyPin nikdy neprojde.
+const BOT_NAMES = [
+  ['Zbrklý čáp',     900], ['Rozvážná vydra', 1100], ['Mlčenlivý rys',  1300],
+  ['Chytrá sova',   1500], ['Neúnavný bobr',  1700], ['Ostřílená liška', 1900],
+];
+const BAND_LABEL = { deti: 'dětský', starsi: 'juniorský', dospeli: 'ligový' };
+
+const bots = [];
+for (const b of ['deti', 'starsi', 'dospeli']) {
+  for (const [name, strength] of BOT_NAMES) {
+    const nick = name + ' (' + BAND_LABEL[b] + ')';
+    const id = 'bot-' + b + '-' + strength;
+    bots.push({ id, nick, band: b, strength });
+  }
+}
+out.push('INSERT INTO users (id,nick,nick_lower,avatar,pin_hash,band,is_bot,created_at) VALUES\n' +
+  bots.map(x => '(' + [sql(x.id), sql(x.nick), sql(x.nick.toLowerCase()), sql('bot'),
+                       sql('!'), sql(x.band), '1', '0'].join(',') + ')').join(',\n') + ';');
+out.push('INSERT INTO bots (user_id,strength) VALUES\n' +
+  bots.map(x => '(' + sql(x.id) + ',' + x.strength + ')').join(',\n') + ';');
+out.push('INSERT INTO ratings (user_id,band,rating,rd) VALUES\n' +
+  bots.map(x => '(' + sql(x.id) + ',' + sql(x.band) + ',' + x.strength + ',80)').join(',\n') + ';');
+
 fs.writeFileSync(OUT, out.join('\n\n') + '\n', 'utf8');
+console.log('Přidáno ' + bots.length + ' botů (' + BOT_NAMES.length + ' na pásmo)');
 
 const byBand = {};
 rows.forEach((_, i) => {});

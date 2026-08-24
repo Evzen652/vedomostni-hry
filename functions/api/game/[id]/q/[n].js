@@ -1,15 +1,24 @@
 import { optionsFor, json, fail } from '../../../../_lib/game.js';
+import { currentUser } from '../../../../_lib/auth.js';
 
 /**
  * GET /api/game/:id/q/:n — n-tá otázka.
  *
- * KLÍČOVÉ: odpověď se v payloadu neobjeví. Vrací se jen zamíchané možnosti bez
- * označení, která je správná; vyhodnocuje se na serveru. Bez toho by stačilo
+ * KLÍČOVÉ: správná odpověď se v payloadu neobjeví. Vrací se jen zamíchané možnosti
+ * bez označení, která je správná; vyhodnocuje se na serveru. Bez toho by stačilo
  * otevřít devtools a hra by nebyla hra (docs/online-rezim.md, Anti-cheat).
  */
-export async function onRequestGet({ params, env }) {
+export async function onRequestGet({ params, request, env }) {
+  const me = await currentUser(request, env);
+  if (!me) return fail('nepřihlášen', 401);
+
   const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(params.id).first();
   if (!game) return fail('hra nenalezena', 404);
+
+  const player = await env.DB
+    .prepare('SELECT 1 FROM game_players WHERE game_id = ? AND user_id = ?')
+    .bind(params.id, me.id).first();
+  if (!player) return fail('v téhle hře nehraješ', 403);
 
   const ids = JSON.parse(game.question_ids);
   const orders = JSON.parse(game.orders);
