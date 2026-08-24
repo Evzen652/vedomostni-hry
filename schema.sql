@@ -1,11 +1,16 @@
 -- Schéma D1 pro online režim. Viz docs/online-rezim.md.
 -- Aplikace:  npm run db:init        (lokálně, smaže a postaví znovu)
 
+-- POZOR: každá nová tabulka musí přibýt i sem. Když se na to zapomene, skript
+-- spadne v půlce na „table X already exists" a databáze zůstane rozestavěná —
+-- s částí tabulek starých a částí nových.
 DROP TABLE IF EXISTS game_answers;
 DROP TABLE IF EXISTS game_players;
 DROP TABLE IF EXISTS games;
 DROP TABLE IF EXISTS seen_questions;
 DROP TABLE IF EXISTS ratings;
+DROP TABLE IF EXISTS friends;
+DROP TABLE IF EXISTS queue;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS bots;
 DROP TABLE IF EXISTS daily;
@@ -48,9 +53,20 @@ CREATE TABLE users (
   band         TEXT NOT NULL,
   is_bot       INTEGER NOT NULL DEFAULT 0,
   created_at   INTEGER NOT NULL,
+  -- Kód pro přidání do přátel. Přátelství jde navázat JEN přes něj, ne vyhledáním
+  -- přezdívky — díky tomu nemůže cizí člověk oslovit dítě, aniž by mu ho někdo dal.
+  friend_code  TEXT UNIQUE,
   -- Skutečná ochrana slabého PINu není hashování, ale omezení počtu pokusů.
   login_fails  INTEGER NOT NULL DEFAULT 0,
   locked_until INTEGER NOT NULL DEFAULT 0
+);
+
+-- Přátelství je oboustranné: ukládají se oba směry, ať se dá číst jedním dotazem.
+CREATE TABLE friends (
+  user_id    TEXT NOT NULL,
+  friend_id  TEXT NOT NULL,
+  created_at INTEGER NOT NULL,
+  PRIMARY KEY (user_id, friend_id)
 );
 
 -- Rating zvlášť za pásmo (různé fondy = neporovnatelné). Časová kontrola se nedělí.
@@ -119,6 +135,19 @@ CREATE TABLE game_answers (
   points   INTEGER NOT NULL,
   PRIMARY KEY (game_id, user_id, q_index)
 );
+
+-- Fronta na živý duel. Spárování zapíše oběma game_id, takže druhý hráč se to
+-- dozví při dalším dotazu. Místo WebSocketu se dotazuje po dvou sekundách —
+-- pro otázku s limitem 10–20 s je to k nerozeznání a nepotřebuje to Durable Objects.
+CREATE TABLE queue (
+  user_id      TEXT PRIMARY KEY,
+  band         TEXT NOT NULL,
+  time_control TEXT NOT NULL,
+  rating       REAL NOT NULL,
+  joined_at    INTEGER NOT NULL,
+  game_id      TEXT
+);
+CREATE INDEX idx_queue_lookup ON queue(band, time_control, game_id);
 
 -- Denní pětka: pro všechny na světě stejná, jeden pokus.
 CREATE TABLE daily (

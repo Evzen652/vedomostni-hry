@@ -188,6 +188,98 @@ async function playAll(token, gameId, total, ms = 2000) {
     .body.ratings.find(r => r.band === 'dospeli').rating;
   ok(ratingPreBot === ratingPostBot, 'rating se proti botovi nehnul (nejde farmit)');
 
+  // ------------------------------------------------------------ denní pětka
+  section('Denní pětka');
+  const d1 = await api('/api/daily', { token: A.token });
+  ok(d1.status === 201 || d1.status === 200, 'denní pětka se vydá');
+  ok(d1.body.total === 5, 'má pět otázek, dostal ' + d1.body.total);
+
+  const d2 = await api('/api/daily', { token: B.token });
+  const qA = await api(`/api/game/${d1.body.game_id}/q/0`, { token: A.token });
+  const qB = await api(`/api/game/${d2.body.game_id}/q/0`, { token: B.token });
+  ok(qA.body.question === qB.body.question, 'oba hráči mají tutéž denní otázku');
+
+  await playAll(A.token, d1.body.game_id, 5, 3000);
+  const dAgain = await api('/api/daily', { token: A.token });
+  ok(dAgain.body.already_played === true, 'druhý pokus o denní pětku se nenabídne');
+  ok(dAgain.body.game_id === d1.body.game_id, 'vrací se tatáž hra, ne nová');
+
+  const dBoard = await api('/api/leaderboard?band=dospeli&daily=1');
+  ok(dBoard.body.rows?.length >= 1, 'žebříček dne má aspoň jeden zápis');
+
+  // ------------------------------------------------------------ žebříček
+  section('Žebříček');
+  const board = await api('/api/leaderboard?band=dospeli');
+  ok(board.status === 200 && board.body.kind === 'rating', 'žebříček ratingu se vrátí');
+  ok(Array.isArray(board.body.rows), 'obsahuje seznam');
+  ok(board.body.rows.every(r => !r.is_bot), 'boti v žebříčku nejsou');
+
+  // ------------------------------------------------------------ živý duel
+  section('Živý duel a párování');
+  const C = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'Zivy_' + uniq(), pin: '1111' } })).body;
+  const D = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'Zivy_' + uniq(), pin: '2222' } })).body;
+
+  const q1 = await api('/api/match', { method: 'POST', token: C.token, body: { time_control: 'blesk' } });
+  ok(q1.body.matched === false && q1.body.waiting === true, 'první hráč čeká ve frontě');
+
+  const q2 = await api('/api/match', { method: 'POST', token: D.token, body: { time_control: 'blesk' } });
+  ok(q2.body.matched === true, 'druhý hráč se spáruje', JSON.stringify(q2.body));
+  ok(!!q2.body.game_id, 'párování vrátí hru');
+  ok(!!q2.body.opponent?.nick, 'a jméno soupeře: ' + q2.body.opponent?.nick);
+
+  const poll = await api('/api/match', { token: C.token });
+  ok(poll.body.matched === true && poll.body.game_id === q2.body.game_id,
+     'čekající hráč se o spárování dozví při dotazu');
+
+  const liveMid = await api(`/api/game/${q2.body.game_id}/live`, { token: C.token });
+  ok(liveMid.status === 200, 'průběžný stav se vrátí');
+  ok(liveMid.body.opponent?.score === 0, 'u živého duelu je soupeřovo skóre vidět průběžně');
+
+  await playAll(C.token, q2.body.game_id, q2.body.total, 1200);
+  await playAll(D.token, q2.body.game_id, q2.body.total, 5000);
+  const liveEnd = await api(`/api/game/${q2.body.game_id}/live`, { token: C.token });
+  ok(liveEnd.body.both_done === true, 'po dohrání obou je duel uzavřený');
+
+  const cRating = (await api('/api/me', { token: C.token }))
+    .body.ratings.find(r => r.band === 'dospeli');
+  ok(cRating.games === 1, 'živý duel se započítal do ratingu (' + cRating.rating + ')');
+
+  const left = await api('/api/match', { method: 'DELETE', token: C.token });
+  ok(left.body.left === true, 'z fronty se dá odejít');
+
+  // ------------------------------------------------------------ přátelé a odveta
+  section('Přátelé a odveta');
+  const mineFriends = await api('/api/friends', { token: A.token });
+  ok(/^[A-Z0-9]{6}$/.test(mineFriends.body.my_code || ''),
+     'mám kód pro přidání do přátel: ' + mineFriends.body.my_code);
+
+  const bCode = (await api('/api/friends', { token: B.token })).body.my_code;
+  const addF = await api('/api/friends', { method: 'POST', token: A.token, body: { code: bCode } });
+  ok(addF.status === 201, 'přítel se přidá podle kódu');
+
+  const listA = await api('/api/friends', { token: A.token });
+  ok(listA.body.friends.some(f => f.nick === nickB), 'je v mém seznamu');
+  const listB = await api('/api/friends', { token: B.token });
+  ok(listB.body.friends.some(f => f.nick === nickA), 'a přátelství je oboustranné');
+
+  const selfAdd = await api('/api/friends', {
+    method: 'POST', token: A.token, body: { code: mineFriends.body.my_code } });
+  ok(selfAdd.status === 400, 'vlastní kód neprojde, dostal ' + selfAdd.status);
+  const badCode = await api('/api/friends', { method: 'POST', token: A.token, body: { code: 'ZZZZZZ' } });
+  ok(badCode.status === 404, 'neexistující kód je 404, dostal ' + badCode.status);
+
+  const rematch = await api(`/api/game/${duel.body.id}/rematch`, { method: 'POST', token: A.token });
+  ok(rematch.status === 201, 'odveta se založí', JSON.stringify(rematch.body));
+  const rq = await api(`/api/game/${rematch.body.id}/q/0`, { token: B.token });
+  ok(rq.status === 200, 'soupeř je v odvetě rovnou, nemusí se připojovat');
+
+  const botRematch = await api(`/api/game/${vsBot.body.id}/rematch`, { method: 'POST', token: A.token });
+  ok(botRematch.status === 201 && typeof botRematch.body.bot_score === 'number',
+     'odveta proti botovi se rovnou odehraje (bot dal ' + botRematch.body.bot_score + ')');
+  ok(botRematch.body.rated === false, 'odveta proti botovi zůstává nehodnocená');
+
   console.log('\n' + (fail ? 'NEPROŠLO: ' + fail + ' chyb, ' + pass + ' v pořádku'
                            : 'VŠE V POŘÁDKU: ' + pass + ' kontrol'));
   process.exit(fail ? 1 : 0);

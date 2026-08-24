@@ -1,5 +1,5 @@
 import { json, fail, newId, BANDS } from '../../_lib/game.js';
-import { hashPin, signToken, sessionSecret, generateNick, validateNick, validatePin } from '../../_lib/auth.js';
+import { hashPin, signToken, sessionSecret, generateNick, validateNick, validatePin, friendCode } from '../../_lib/auth.js';
 
 /**
  * POST /api/auth/register  { band, pin, nick? }
@@ -39,13 +39,14 @@ export async function onRequestPost({ request, env }) {
   const pin_hash = await hashPin(pinCheck.pin);
   const avatar = String(body.avatar || '1');
 
+  const code = friendCode();
   await env.DB.batch([
-    env.DB.prepare(`INSERT INTO users (id, nick, nick_lower, avatar, pin_hash, band, created_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?)`)
-      .bind(id, nick, nick.toLowerCase(), avatar, pin_hash, band, Date.now()),
+    env.DB.prepare(`INSERT INTO users (id, nick, nick_lower, avatar, pin_hash, band, created_at, friend_code)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
+      .bind(id, nick, nick.toLowerCase(), avatar, pin_hash, band, Date.now(), code),
     env.DB.prepare('INSERT INTO ratings (user_id, band) VALUES (?, ?)').bind(id, band),
   ]);
 
   const token = await signToken(id, sessionSecret(env));
-  return json({ id, nick, avatar, band, token }, 201);
+  return json({ id, nick, avatar, band, token, friend_code: code }, 201);
 }

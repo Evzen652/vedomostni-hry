@@ -1,8 +1,8 @@
 # Online režim — návrh architektury
 
-> Stav: **rozestavěno**. Platforma vybraná (Cloudflare, sekce 10), herní model ověřený
-> simulací (sekce 8), API kostra běží lokálně a je otestovaná (`npm run dev`, `npm run test:api`).
-> Nikde není nasazeno — zatím se vyvíjí a testuje lokálně.
+> Stav: **backend hotový, frontend ne**. Kroky 1–8 z pořadí stavby jsou postavené
+> a otestované (`npm run test:api`, 70 kontrol), krok 9 záměrně vynechaný.
+> Běží to zatím jen lokálně (`npm run dev`) a `hra.html` o online režimu ještě neví.
 
 Cílem je online hraní ve stylu chess.com: účty, párování soupeřů, rating, žebříčky,
 turnaje. Tenhle dokument popisuje **cílový stav** a **pořadí stavby**, kterým se k němu
@@ -159,21 +159,39 @@ kterákoli ze zvažovaných variant tohle rozhraní umí naplnit.
 
 | Endpoint | K čemu |
 |---|---|
-| `POST /api/auth` | registrace / přihlášení (přezdívka + PIN) |
+| `POST /api/auth/register` | registrace (přezdívka + PIN, bez e-mailu) |
+| `POST /api/auth/login` | přihlášení |
 | `GET /api/me` | profil, ratingy za pásma, historie |
-| `POST /api/game` | založí hru (režim, pásmo, časovka) → `id` |
+| `POST /api/game` | založí hru — `solo` nebo `odkaz` |
 | `GET /api/game/:id/q/:n` | n-tá otázka **bez správné odpovědi** |
 | `POST /api/game/:id/answer` | tip + čas → vyhodnocení |
-| `GET /api/game/:id` | výsledek a rozbor |
+| `GET /api/game/:id` | stav a po dohrání rozbor |
+| `POST /api/game/:id/join` | přijmi souboj na odkaz |
+| `POST /api/game/:id/bot` | pusť do souboje bota |
+| `GET /api/game/:id/live` | průběh soupeře (dotaz po ~2 s) |
+| `POST /api/game/:id/rematch` | odveta se stejným soupeřem |
+| `POST/GET/DELETE /api/match` | fronta na živý duel |
 | `GET /api/daily` | denní pětka |
-| `GET /api/leaderboard?band=` | žebříček pásma |
+| `GET /api/leaderboard?band=` | žebříček pásma, s `&daily=1` žebříček dne |
+| `GET/POST /api/friends` | přátelé podle kódu |
 
-### WebSocket (živý duel)
+### Živý duel: dotazování, ne WebSocket
 
-`queue` → `matched` → `question` → `answer` → `opponent-progress` → `result`
+Původní návrh počítal s WebSocketem přes Durable Objects. **Postaveno je místo toho
+dotazování po ~2 s** (`GET /api/game/:id/live`), a to záměrně:
 
-Když `queue` do ~15 s nenajde soupeře, server nabídne **bota** odpovídajícího ratingu nebo
-**async výzvu**. Hráč nikdy nekouká na prázdný lobby.
+- Pages Functions neumí definovat Durable Objects ve vlastním kódu — chtěl by to
+  samostatný Worker navíc, tedy druhou nasazovanou věc.
+- U otázky s limitem 10–20 s je dvousekundové zpoždění od WebSocketu k nerozeznání.
+  Hráč potřebuje vidět „soupeř je na čtvrté otázce", ne milisekundovou přesnost.
+- Vyjde to na ~50 dotazů na hru, tedy ~1 000 her denně ve free limitu.
+
+Kdyby to jednou přestalo stačit, Durable Objects zůstávají cestou nahoru — `live.js`
+je jediné místo, které by se měnilo.
+
+Fronta (`/api/match`) páruje uvnitř pásma a časové kontroly, okno ratingu se rozšiřuje
+o 100 bodů za každou sekundu čekání. Po 15 s vrátí `offer_bot`, takže hráč nikdy nekouká
+na prázdný lobby.
 
 ### Datový model
 
@@ -249,19 +267,29 @@ skutečných výsledků, viz sekce 2.
 
 Cíl je celek, ale postavit se musí v pořadí. Tohle drží appku hratelnou v každém kroku:
 
-1. **Hosting + statika na internetu + kostra API + účty.** Bez tohohle nejde nic dalšího.
-2. **Herní motor na serveru** — založení hry, servírování otázek bez odpovědi, vyhodnocení,
+1. ✅ **Hosting + kostra API + účty.** Platforma vybraná, API běží lokálně, účty bez e-mailu.
+2. ✅ **Herní motor na serveru** — založení hry, otázky bez odpovědi, vyhodnocení,
    evidence viděných otázek, rozbor.
-3. **Souboj na odkaz.** První hratelný online režim; otestuje celý motor bez WebSocketů.
-4. **Boti.** Aby bylo s kým hrát od prvního dne, ještě než existuje hráčská základna.
-5. **Živý duel** — WebSocket, lobby, párování, sledování soupeře.
-6. **Rating, žebříčky, sezóny.**
-7. **Denní pětka.**
-8. **Přátelé, výzvy, odvety.**
-9. **Turnaje / arena.**
+3. ✅ **Souboj na odkaz.** První hratelný online režim.
+4. ✅ **Boti.** Aby bylo s kým hrát od prvního dne.
+5. ✅ **Živý duel** — fronta, párování, sledování soupeře (dotazováním, ne WebSocketem).
+6. ✅ **Rating a žebříčky.** Glicko-2 zvlášť za pásmo. *Sezóny zatím nejsou.*
+7. ✅ **Denní pětka.**
+8. ✅ **Přátelé (podle kódu) a odvety.** *Výzvy konkrétnímu příteli zatím nejsou.*
+9. ⬜ **Turnaje / arena.** **Záměrně nepostaveno** — turnaj pro nula hráčů je přesně ta
+   předčasná práce, před kterou tenhle plán varuje. Až bude koho do turnaje pozvat.
 
-Kroky 3 a 4 jsou schválně **před** živým duelem: jsou to přesně ty dvě věci, které zajistí,
+Kroky 3 a 4 byly schválně **před** živým duelem: jsou to přesně ty dvě věci, které zajistí,
 že první hráči nepřijdou do prázdné herny.
+
+### Co ještě chybí, než to půjde pustit mezi lidi
+
+- **Frontend.** Hotové je API, ne obrazovky. `hra.html` zatím o online režimu neví.
+- **Nasazení.** Účet na Cloudflare, `database_id` ve `wrangler.toml`, seed do vzdálené D1
+  a `SESSION_SECRET` přes `wrangler secret put`.
+- **Sezóny** (měsíční reset) a **výzva konkrétnímu příteli**.
+- **Úklid fronty** — zatím se opuštěné položky mažou až při dalším párování; při provozu
+  by to chtělo naplánovanou úlohu (Cron Trigger).
 
 ---
 

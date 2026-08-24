@@ -74,7 +74,27 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
        si z odpovědi správný index a zkusit to znovu.
      - `npm run test:api` hlídá právě tyhle vlastnosti (22 kontrol) — hlavně to, že payload
        otázky neobsahuje `answer` ani index správné možnosti.
-  8. **Fond otázek je konečné palivo a online to zostřuje.** Dospělácké pásmo má 1442 otázek,
+  8. **Postaveno autonomně: kroky 1–8, krok 9 záměrně ne.** `npm run test:api` = 70 kontrol.
+     Detaily v [docs/online-rezim.md](docs/online-rezim.md), tady jen odchylky od návrhu:
+     - **Živý duel běží na dotazování po ~2 s, ne na WebSocketu.** Pages Functions neumí
+       definovat Durable Objects ve vlastním kódu (chtěl by to samostatný Worker navíc)
+       a u otázky s limitem 10–20 s je dvousekundové zpoždění k nerozeznání. ~50 dotazů
+       na hru = ~1 000 her denně ve free limitu. `functions/api/game/[id]/live.js` je
+       jediné místo, které by se měnilo, kdyby to přestalo stačit.
+     - **Turnaje (krok 9) nepostaveny schválně** — turnaj pro nula hráčů je přesně ta
+       předčasná práce, před kterou plán varuje.
+     - **Průběžné skóre soupeře jen u živého duelu.** U souboje na odkaz soupeř většinou
+       už dohrál, takže by to prozradilo přesnou metu, na kterou stačí dojet.
+     - **Pravý průnik neviděných jde jen u živého duelu a odvety**, kde jsou při párování
+       známí oba hráči. U souboje na odkaz se otázky fixují při založení, kdy soupeře
+       ještě neznáme — losuje se tedy z neviděných zakladatelem.
+     - **Past: `schema.sql` má na začátku seznam `DROP TABLE`, který musí zůstat úplný.**
+       Přidal jsem `queue` a `friends`, zapomněl je do seznamu doplnit a skript spadl
+       v půlce na „table already exists" — databáze pak zůstala rozestavěná, část tabulek
+       stará a část nová, což se projevilo až chybou „no column named friend_code".
+     - **Past: `.gitignore` neumí komentář za vzorem.** `.wrangler/ # popis` tiše
+       neignoruje nic; komentář musí být na vlastním řádku. Ověřit `git check-ignore -v`.
+  9. **Fond otázek je konečné palivo a online to zostřuje.** Dospělácké pásmo má 1442 otázek,
      tj. 144 her po deseti bez opakování, reálně ale hráč narazí na opakování po ~30 hrách.
      Navíc musí být zápas férový, takže se losuje z **průniku otázek, které neviděl ani jeden**
      z dvojice (při nedostatku se doplní symetricky). Výroba obsahu se tím stává průběžnou

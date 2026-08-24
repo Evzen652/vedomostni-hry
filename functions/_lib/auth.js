@@ -113,6 +113,16 @@ export function validateNick(nick) {
   return { nick: n };
 }
 
+/**
+ * Kód pro přidání do přátel. Bez znaků, které se pletou při diktování
+ * (0/O, 1/I/l), protože se předává mimo appku — nahlas nebo na papírku.
+ */
+export function friendCode() {
+  const abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+  const buf = crypto.getRandomValues(new Uint8Array(6));
+  return Array.from(buf, b => abc[b % abc.length]).join('');
+}
+
 export function validatePin(pin) {
   const p = String(pin || '');
   if (!/^\d{4,8}$/.test(p)) return { error: 'PIN musí být 4 až 8 číslic' };
