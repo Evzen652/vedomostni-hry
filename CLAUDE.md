@@ -17,6 +17,29 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-24 — Druhé kolo: dalších +450 otázek pro Česko (150/pásmo), stejná struktura jako první kolo.**
+  Na žádost „přidej dalších 450 otázek pro Česko ve stejné struktuře" zopakován postup z předchozího
+  zápisu (30 agentů, 10 sekcí × 3 pásma) nad už rozšířeným fondem. `data/questions/cz.json`
+  **518 → 968 otázek** (děti 170→320, starší 170→320, dospělí 178→328, přesně +150/+150/+150 po
+  dořešení kolizí). Kontextové soubory pro agenty (`cz-existing-r2-*.txt`) tentokrát musely obsahovat
+  všech 518 už existujících otázek (ne jen původních 68), jinak by nová dávka duplikovala i obsah
+  z prvního kola. **Ověřeno:** `npm run validate` → 0 chyb; kontrola diakritiky (rovnou s opraveným
+  regexem z minula) → 0 skutečných chyb, 29 nahlášených výskytů, všechny ověřené ručně jako false
+  positive stejného typu jako v prvním kole.
+  1. **S větším fondem roste i šance na kolizi ID mezi paralelními agenty** — 13 kolizí na 450 nových
+     otázek (proti 19 v prvním kole na stejný počet), i když agenti dostali k dispozici o řád větší
+     kontext existujících faktů. Rozbor: 12 z 13 bylo kolizí NAPŘÍČ pásmy (často testujících téměř
+     identický fakt jinak formulovaný, např. „Praděd je nejvyšší hora Moravy" v starší i dospělí) →
+     přejmenováno (zachovány obě), protože `bandPool` drží pásma oddělená a hráč v jednom pásmu tu
+     druhou verzi nikdy neuvidí. Jen 1 byla skutečná duplicita VE STEJNÉM pásmu (zvonkohra pražské
+     Loreta, 2× v dětském pásmu, jeden v sekci Místa, druhý v Umění) → smazána jedna instance,
+     doplněna 1 náhradní dětská otázka (muchomůrka červená) na přesný cíl 150/pásmo.
+  2. **I s opraveným diakritickým regexem (z minulého zápisu) zůstávají false positivy** — tentokrát
+     29 namísto 261, protože seznam „podezřelých" slov už neobsahuje slova, co diakritiku nepotřebují
+     (jak/kdyby/opravdu/naopak). Zbylé false positivy jsou pořád ten samý mechanismus (ASCII `\b`
+     uvnitř `nezůstal/nezískal/nezávislost/nezúčastnila`, `dějiny/jinak`, `muzeích/muzeí`) — u
+     kontroly na diakritiku u budoucích dávek počítat s tím, že i „opravený" regex bude hlásit desítky
+     false positivů, a vždy ověřit obsah ručně, ne jen počet.
 - **2026-08-24 — +450 nových otázek pro Česko (150/pásmo); nové pole `more_fact` je od teď povinné pro veškerý nový obsah.**
   Na žádost „alespoň 450 nových otázek, 150 na každou věkovou kategorii, musí u nich být i více o xy"
   vygenerováno přes 30 paralelních agentů (10 sekcí × 3 pásma: Místa, Příroda, Kultura, Jídlo, Sport,
