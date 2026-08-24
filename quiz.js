@@ -167,7 +167,8 @@
     S.order=(st.orderIds||[]).map(qid=>data.questions.find(q=>q.id===qid)).filter(Boolean);
     if(!S.order.length) S.order=shuffle(data.questions);
     S.idx=st.idx||0; S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
-    S.voice=!!st.voice; S.steal=!!st.steal; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
+    S.voice=false; // hlas je dočasně schovaný z UI (viz renderSetup) — starší uložená hra s voice:true by jinak mluvila tiše na pozadí, aniž by šlo tlačítko vypnout
+    S.steal=!!st.steal; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
     S.players=(st.players||[]).map(p=>({...p})); if(!S.players.length) S.players=[{name:"Ty",band:S.band,color:COLORS[0],score:0,side:"dole"}];
     S.saveId=id;
     const shell=document.getElementById("qz-shell"); shell.classList.toggle("qz-school", S.school); shell.style.transform="";
@@ -868,7 +869,10 @@
         </div>
         <div class="qz-setcard">
           <h3><span class="n">3</span>Nastavení</h3>
-          <div class="qz-opt" data-opt="voice"><span class="qz-sw${S.voice?" on":""}"></span> Hlas — tablet čte nahlas</div>
+          <!-- Hlasová část appky (TTS) je dočasně schovaná z UI — vrátíme se k ní později.
+               Přepínač i tlačítko reproduktoru (viz topHtml) jsou pryč, ale speakTTS/speakCurrent
+               a S.voice zůstávají funkční pod kapotou; S.voice teď jen nikdy nejde nastavit na
+               true, takže se nikdy nezavolají (viz i tvrdý reset v resumeSave). -->
           <div class="qz-opt" data-opt="rotate"><span class="qz-sw${S.rotate==="auto"?" on":""}"></span> Otáčet obrazovku k hráči</div>
           <div class="qz-opt" data-opt="steal"><span class="qz-sw${S.steal?" on":""}"></span> Steal (sebrání otázky)</div>
           <div class="qz-fieldlabel" style="margin-top:12px">Časový limit na odpověď</div>
@@ -982,12 +986,11 @@
         <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">na tahu</span>':""}</span>
         <span class="qz-plscore" data-score="${i}">${p.score}</span></button>`).join("");
       return `<div class="qz-scoreboard">${pills}</div>
-        <div class="qz-subtop"><span class="qz-progress">kolo ${S.round}/${S.totalRounds} · otázka ${n}</span><button class="qz-mute" id="qz-mute" aria-label="${S.voice?"Vypnout hlas":"Zapnout hlas"}" aria-pressed="${S.voice}">${S.voice?ICO_SND:ICO_SNDX}</button></div>`;
+        <div class="qz-subtop"><span class="qz-progress">kolo ${S.round}/${S.totalRounds} · otázka ${n}</span></div>`;
     }
     return `<div class="qz-top">
       <span class="qz-progress">otázka ${n}/${total}</span>
       <span style="margin-left:auto;display:flex;gap:8px;align-items:center">
-        <button class="qz-mute" id="qz-mute" aria-label="${S.voice?"Vypnout hlas":"Zapnout hlas"}" aria-pressed="${S.voice}">${S.voice?ICO_SND:ICO_SNDX}</button>
         ${S.school?"":`<span class="qz-scorepill" id="qz-scorepill">${scorePillHtml()}</span>`}
       </span></div>`;
   }
