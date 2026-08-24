@@ -17,6 +17,36 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-24 — Appka přestává být offline-only: schválen online režim ve stylu chess.com.**
+  Plný návrh (režimy, rating, boti, API, datový model, pořadí stavby) žije v
+  [docs/online-rezim.md](docs/online-rezim.md) — tenhle zápis drží jen rozhodnutí a jejich důvody.
+  **Stav: schválený záměr, nezačato. Hosting nerozhodnut.**
+  1. **Offline-only → offline-first.** Sólo, párty a škola musí fungovat bez připojení dál;
+     online je oddělená čtvrtá větev, ne přepis. Původní konvence „od založení" je proto
+     zúžená, ne zrušená (poznámka doplněna přímo k ní dole).
+  2. **Zvolen plný rozsah najednou** (účty, párování, rating, žebříčky, turnaje), ne postupné
+     ověřování menším krokem. Jediné vážné riziko téhle volby je **prázdný lobby** —
+     matchmaking bez hráčské základny nemá koho párovat. Zabudované řešení: v pořadí stavby
+     jsou **souboj na odkaz** a **boti** schválně PŘED živým duelem. Bot na kvíz je narozdíl
+     od šachového enginu triviální — `p(správně)` z ratingu a obtížnosti + lognormální reakční
+     čas, žádná AI, žádné runtime volání (drží to bod 1 pro offline část).
+  3. **Rating zvlášť za věkové pásmo, ale NE za časovou kontrolu.** Pásma losují z různých
+     fondů, takže výsledky napříč nimi nejsou porovnatelné (odtud tři žebříčky). Blesk vs.
+     Klasika ale sdílí jeden rating: chess.com dělí podle času proto, že rychlost je tam
+     samostatná dovednost, tady je znalost stejná a dělení by roztříštilo základnu na šestinky.
+  4. **Anti-cheat volný, ale odpověď se nikdy neposílá dopředu.** Datová pipeline se NEBUDE
+     dělit na veřejný a serverový fond (to bylo vědomě zamítnuto). Server ale musí servírovat
+     otázku bez označení správné možnosti a vyhodnocovat sám — jinak stačí devtools a hra
+     přestane být hra. Tolerované riziko: kdo si předem stáhne veřejný `data/questions/*.json`,
+     má náskok.
+  5. **Žádný chat nikde + generované přezdívky pro dětské pásmo.** Emoji reakce z pevné sady
+     stačí a shodí to ze stolu celou agendu moderace, která by hobby projekt utopila.
+  6. **Fond otázek je konečné palivo a online to zostřuje.** Dospělácké pásmo má 1442 otázek,
+     tj. 144 her po deseti bez opakování, reálně ale hráč narazí na opakování po ~30 hrách.
+     Navíc musí být zápas férový, takže se losuje z **průniku otázek, které neviděl ani jeden**
+     z dvojice (při nedostatku se doplní symetricky). Výroba obsahu se tím stává průběžnou
+     povinností, ne jednorázovou akcí.
+
 - **2026-08-24 — Druhé kolo: dalších +450 otázek pro Česko (150/pásmo), stejná struktura jako první kolo.**
   Na žádost „přidej dalších 450 otázek pro Česko ve stejné struktuře" zopakován postup z předchozího
   zápisu (30 agentů, 10 sekcí × 3 pásma) nad už rozšířeným fondem. `data/questions/cz.json`
@@ -371,6 +401,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   Kontinenty/země/sekce v kvízu zobrazují ilustraci ve stylu rozcestníku; emoji je jen fallback.
 - **(konvence od založení) — Appka je offline-only.**
   Žádná runtime volání AI ani externích API. Vše (obrázky, data) je součástí repa.
+  > **Zúženo 2026-08-24:** platí nadále pro **stávající režimy** (sólo, párty, škola) — ty musí
+  > fungovat bez připojení dál. Nově se ale staví **online režim**, který připojení vyžaduje;
+  > konvence tedy platí jako *offline-first*, ne *offline-only*. Viz zápis nahoře
+  > a [docs/online-rezim.md](docs/online-rezim.md).
 - **(konvence od založení) — Karty jsou read-only kopie z Glóbu.**
   `data/cards/{cc}.json` je kopie z projektu Glóbus (repo `Hricka`); kanonická verze žije tam,
   sem se kopíruje ručně. Kvíz karty jen čte.
