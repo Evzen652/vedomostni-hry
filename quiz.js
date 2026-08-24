@@ -975,7 +975,7 @@
 
   // obsah bodového praporku v sólu — sdíleno mezi prvním vykreslením (topHtml) a
   // dopočtem po odpovědi (answer), aby se čísla v obou nikdy nerozjela
-  function scorePillHtml(){ return `${ICO_STAR} <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak">série ${cur().streak}×</span>`:""}`; }
+  function scorePillHtml(){ return `${ICO_STAR} <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak" title="Každá další správná odpověď v řadě dává +25 bodů navíc. Jedna chyba a série se láme.">série ${cur().streak}×</span>`:""}`; }
   function topHtml(n, total){
     if(S.mode==="party"){
       const pills=S.players.map((p,i)=>`<button class="qz-pl${i===S.turn?" active":""}" data-turn="${i}">
