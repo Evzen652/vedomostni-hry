@@ -66,6 +66,9 @@ export async function onRequestPost({ params, request, env }) {
   return json({
     correct,
     correct_index: ci,
+    // Text správné odpovědi jde ven až TEĎ, po odeslání tipu — karta „Více o…"
+    // ho potřebuje jako nadpis (CLAUDE.md 2026-07-31).
+    correct_answer: q.answer,
     points,
     score: player.score + points,
     answered,

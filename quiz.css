@@ -504,3 +504,25 @@
     transition-duration: .001ms !important; scroll-behavior: auto !important;
   }
 }
+
+/* ---- online režim (online.js) ----------------------------------------------
+   Online recykluje offline třídy, ale formulářové prvky jsou stavěné do flex
+   řádku (.qz-pname-in má flex:1), takže samy o sobě tečou inline. Tohle je
+   srovná do sloupce a dá online obrazovkám čitelnou šířku. */
+.zk-form { display: flex; flex-direction: column; gap: 10px; }
+.zk-form .qz-pname-in { flex: none; width: 100%; box-sizing: border-box; }
+.zk-form .qz-go, .zk-form .qz-back { width: 100%; justify-content: center; text-align: center; }
+.zk-wrap { max-width: 640px; margin: 0 auto; width: 100%; }
+.zk-code { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 800; letter-spacing: .22em;
+  color: var(--teal); text-align: center; padding: 6px 0 2px; }
+.zk-rowlist { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.zk-rowlist .qz-standrow { background: var(--paper2); border: 1.4px solid #dccdb0; border-radius: 11px;
+  padding: 8px 11px; display: flex; align-items: center; gap: 10px; }
+.zk-rev { align-items: flex-start; text-align: left; line-height: 1.35; }
+.zk-rev .zk-mark { min-width: 1.4em; font-weight: 800; flex-shrink: 0; }
+.zk-rev .qz-expl { font-size: 12px; margin-top: 3px; }
+.zk-ok { color: var(--ok); }
+.zk-bad { color: var(--bad); }
+.zk-oppbar { font-size: 12px; color: var(--muted); }
+.qz-a.ok { border-color: var(--ok); box-shadow: 0 3px 0 var(--ok); }
+.qz-a.bad { border-color: var(--bad); box-shadow: 0 3px 0 var(--bad); }

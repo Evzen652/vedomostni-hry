@@ -385,12 +385,16 @@
         <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Nikdo nezmerčí, kde máš slabá místa...</div></button>
         <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Pro 2 až 6 hráčů. Vyhrává ten chytrej.</div></button>
         <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Třída hádá. Aspoň jeden musí něco vědět...</div></button>
+        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Online</div><div class="d">Proti živým soupeřům. Nebo proti botovi.</div></button>` : ""}
       </div>
       ${resumeBtn}${resumeModal}
     </div>`;
     body.querySelector("#qz-mode-solo").addEventListener("click", () => beginPick("solo"));
     body.querySelector("#qz-mode-party").addEventListener("click", () => beginPick("party"));
     body.querySelector("#qz-mode-school").addEventListener("click", () => beginPick("school"));
+    // Online si přebírá #qz-body sám a vrátí ho zpátky přes callback (viz online.js).
+    const onlineBtn = body.querySelector("#qz-mode-online");
+    if(onlineBtn) onlineBtn.addEventListener("click", () => { showHomeBtn(true); window.ZKOnline.open(renderModePick); });
     const openBtn = body.querySelector("#qz-resume-open");
     const modal = body.querySelector("#qz-resume-modal");
     if(openBtn && modal){
