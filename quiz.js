@@ -167,8 +167,9 @@
     S.order=(st.orderIds||[]).map(qid=>data.questions.find(q=>q.id===qid)).filter(Boolean);
     if(!S.order.length) S.order=shuffle(data.questions);
     S.idx=st.idx||0; S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
-    S.voice=false; // hlas je dočasně schovaný z UI (viz renderSetup) — starší uložená hra s voice:true by jinak mluvila tiše na pozadí, aniž by šlo tlačítko vypnout
-    S.steal=!!st.steal; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
+    // hlas i steal jsou dočasně schované z UI (viz renderSetup) — starší uložená hra s
+    // voice:true/steal:true by jinak dál mluvila / nabízela krádež bodů, aniž by šel přepínač vypnout
+    S.voice=false; S.steal=false; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
     S.players=(st.players||[]).map(p=>({...p})); if(!S.players.length) S.players=[{name:"Ty",band:S.band,color:COLORS[0],score:0,side:"dole"}];
     S.saveId=id;
     const shell=document.getElementById("qz-shell"); shell.classList.toggle("qz-school", S.school); shell.style.transform="";
@@ -873,8 +874,11 @@
                Přepínač i tlačítko reproduktoru (viz topHtml) jsou pryč, ale speakTTS/speakCurrent
                a S.voice zůstávají funkční pod kapotou; S.voice teď jen nikdy nejde nastavit na
                true, takže se nikdy nezavolají (viz i tvrdý reset v resumeSave). -->
+          <!-- Steal (sebrání otázky) je dočasně schovaný z UI stejně jako hlas výš — přepínač je
+               pryč, ale stealHtml/wireSteal/finishSteal zůstávají funkční pod kapotou. allowSteal
+               na obou místech (answer, timeoutReveal) čte S.steal, a to už nejde v UI nastavit na
+               true, takže se ty větve nikdy nespustí (viz i tvrdý reset v resumeSave). -->
           <div class="qz-opt" data-opt="rotate"><span class="qz-sw${S.rotate==="auto"?" on":""}"></span> Otáčet obrazovku k hráči</div>
-          <div class="qz-opt" data-opt="steal"><span class="qz-sw${S.steal?" on":""}"></span> Steal (sebrání otázky)</div>
           <div class="qz-fieldlabel" style="margin-top:12px">Časový limit na odpověď</div>
           <div class="qz-bands" style="margin-top:4px">
             <button class="qz-chip${S.timer===0?" on":""}" data-timer="0">vyp</button>
