@@ -62,13 +62,18 @@ při volitelném fondu nejsou výsledky porovnatelné.
 ### Hry proti botům
 Bot má vlastní rating a jméno. Pro každou otázku se odvodí:
 
-- `p(správně)` z jeho ratingu a obtížnosti otázky (logistická funkce, strop ~0,95 —
+- `p(správně)` z **rozdílu jeho ratingu a ratingu otázky** (Elo očekávání, strop ~0,95 —
   ani nejsilnější bot není neomylný),
 - **čas odpovědi** z lognormálního rozdělení, jehož střed klesá s ratingem.
 
 Bot tedy nepotřebuje žádnou AI ani runtime volání — je to statistický model o pár řádcích.
 **Hry proti botům jsou nehodnocené** (jinak by šel rating farmit na slabých botech), ale
 počítají se do statistik a do evidence viděných otázek.
+
+**Rating bota se ale musí průběžně přepočítávat z jeho skutečných výsledků** proti hráčům se
+známým ratingem — ne nastavit natvrdo. Důvod je v sekci „Ověření modelu“: uzavřený žebříček
+nemá absolutní kotvu, takže „bot za 1500“ nastavený od stolu nemusí odpovídat „hráči za 1500“.
+Bot se tedy kalibruje na fond, ne fond na bota.
 
 ---
 
@@ -84,9 +89,15 @@ pásmy nejsou porovnatelné. Proto:
   Chess.com dělí podle času proto, že rychlost je tam samostatná dovednost; tady je znalost
   stejná a dělení by jen roztříštilo hráčskou základnu na šestinky.
 
-**Systém:** Glicko-2 (lépe než ELO snáší nepravidelné hraní). Start 1200 s vysokou odchylkou,
-prvních ~10 her rychle kalibruje. **Sezóny po měsíci** s měkkým resetem ke středu, aby noví
-hráči měli šanci na přední příčky.
+**Systém:** Glicko-2 (lépe než ELO snáší nepravidelné hraní). **Start 1500** s vysokou odchylkou
+(1500 je konvence Glicka; jiná startovní hodnota jen posune celou stupnici). **Sezóny po měsíci**
+s měkkým resetem ke středu, aby noví hráči měli šanci na přední příčky.
+
+**Otázky mají taky svůj rating**, počítaný z toho, jak často ji hráči skutečně trefí — obdoba
+puzzle ratingu na Lichess. Pole `difficulty` k tomu použít nejde: uvnitř pásma nese **nulovou
+informaci** (100 % dětských otázek má `difficulty 1`, 100 % dospěláckých `difficulty 3`), takže
+je to fakticky štítek pásma, ne míra obtížnosti. Než se nasbírají statistiky, nasadí se rating
+otázky na střed pásma.
 
 **Hodnocené jsou jen** živý duel a souboj na odkaz na **pevném nastavení** (celý svět,
 všechna témata). Vlastní výběr zemí/témat a hry proti botům hodnocené nejsou.
@@ -184,7 +195,56 @@ stačí ji vykreslit.
 
 ---
 
-## 8. Pořadí stavby
+## 8. Ověření modelu
+
+Herní model výše **není odhad od stolu** — je prohnaný simulací
+[`scripts/sim-online.js`](../scripts/sim-online.js) (`npm run sim-online`, seedovaný RNG,
+20 000 zápasů na variantu). Co z ní vyšlo:
+
+### Zápas o deseti otázkách rozlišuje dost dobře
+Podíl výher silnějšího hráče podle rozdílu síly:
+
+| Rozdíl | +0 | +50 | +100 | +200 | +400 |
+|---|---|---|---|---|---|
+| Blesk, 10 otázek | 49,4 % | 65,5 % | 78,0 % | **93,1 %** | 99,6 % |
+| Klasika, 15 otázek | 49,6 % | 65,6 % | 78,5 % | **93,8 %** | 99,7 % |
+
+Vyrovnaný zápas vychází na 49,4 % (má 50 %) — model je zdravý. Obava, že deset otázek bude
+příliš náhodných, se **nepotvrdila**; Blesk je plnohodnotná hodnocená disciplína.
+
+### Chybějící rozptyl obtížnosti nevadí
+Ploché obtížnosti rozlišují dokonce **o něco lépe** než rozptýlené (93,1 % vs. 90,0 % při +200).
+Dává to smysl: otázka výrazně nad i pod úrovní obou hráčů nenese žádnou informaci — buď ji
+trefí oba, nebo ani jeden. To, že `difficulty` uvnitř pásma nic neříká, tedy **není problém pro
+žebříček**; vlastní rating otázek má cenu kvůli výběru a botům, ne kvůli rozlišování hráčů.
+
+### Rychlostní bonus měří znalost, ne reflexy
+Se zapnutým bonusem 93,8 %, bez něj 90,2 % při +200. Bonus rozlišovací schopnost **zvyšuje**,
+takže neodvádí hru od znalostí ke klikání.
+
+### Rating konverguje rychle
+| Her na hráče | 5 | 10 | 20 | 40 | 80 |
+|---|---|---|---|---|---|
+| Chyba proti pravé síle | 128 b | 85 b | 58 b | 44 b | **37 b** |
+| Korelace | 0,840 | 0,931 | 0,969 | 0,983 | **0,990** |
+
+Po dvaceti hrách je rating použitelný, po čtyřiceti přesný.
+
+### Bot je věrohodný soupeř
+Bot proti stejně silnému hráči vyhrává 49,6–50,3 % napříč úrovněmi 1100 až 1900. Model
+(Elo očekávání + lognormální reakční čas) funguje přesně tak, jak měl.
+
+### Nález, který změnil návrh: žebříček nemá absolutní kotvu
+Hrubá chyba ratingu zůstávala zaseknutá na 315 bodech i po osmdesáti hrách — ukázalo se, že
+je to **celé posun celého fondu**, ne nepřesnost. Uzavřený žebříček umí zachytit jen **poměr**
+sil, absolutní úroveň je věc konvence.
+
+Pro rating hráčů to nevadí (párování potřebuje pořadí, ne absolutní čísla). **Rozbíjí to ale
+bota s natvrdo nastaveným ratingem** — pokud fond plave, „bot za 1500“ neodpovídá „hráči za
+1500“ a bude systematicky moc lehký nebo moc těžký. Proto se rating bota přepočítává z jeho
+skutečných výsledků, viz sekce 2.
+
+## 9. Pořadí stavby
 
 Cíl je celek, ale postavit se musí v pořadí. Tohle drží appku hratelnou v každém kroku:
 
@@ -204,7 +264,7 @@ Kroky 3 a 4 jsou schválně **před** živým duelem: jsou to přesně ty dvě v
 
 ---
 
-## 9. Otevřené otázky
+## 10. Otevřené otázky
 
 - **Hosting.** Zvažované varianty:
   - *Cloudflare Pages + Workers* — statika i backend na jedné platformě zdarma, žádný server

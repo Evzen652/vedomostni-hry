@@ -6,6 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate-data.js",
     "audit": "node scripts/audit-questions.js",
+    "sim-online": "node scripts/sim-online.js",
     "import-questions": "node scripts/import-questions.js",
     "import-images": "node scripts/import-images.js",
     "import-audio": "node scripts/import-audio.js",

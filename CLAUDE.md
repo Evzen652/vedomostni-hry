@@ -41,7 +41,23 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
      má náskok.
   5. **Žádný chat nikde + generované přezdívky pro dětské pásmo.** Emoji reakce z pevné sady
      stačí a shodí to ze stolu celou agendu moderace, která by hobby projekt utopila.
-  6. **Fond otázek je konečné palivo a online to zostřuje.** Dospělácké pásmo má 1442 otázek,
+  6. **Model ověřen simulací, ne odhadem — a simulace ho na dvou místech opravila.**
+     `scripts/sim-online.js` (`npm run sim-online`, 20 000 zápasů na variantu, seedovaný RNG).
+     Potvrdilo se: zápas o 10 otázkách rozlišuje dobře (+200 → 93 % výher silnějšího, vyrovnaný
+     49,4 %), rating konverguje (po 20 hrách ±58 b, po 40 ±44 b, korelace 0,99), bot proti stejně
+     silnému hráči vyhrává 49,6–50,3 %. Dvě věci se ale ukázaly jinak, než jsem je napsal:
+     - **`difficulty` nejde použít jako obtížnost otázky** — uvnitř pásma má nulový rozptyl
+       (100 % dětských má 1, 100 % dospěláckých 3), je to fakticky štítek pásma. Bot model se
+       o ni původně opíral; nově se opírá o **vlastní rating otázky** počítaný z úspěšnosti
+       hráčů (obdoba puzzle ratingu na Lichess). Pro žebříček to naopak **nevadí**: ploché
+       obtížnosti rozlišují dokonce o něco líp (93,1 % vs. 90,0 %), protože otázka výrazně nad
+       i pod úrovní obou hráčů nenese informaci.
+     - **Uzavřený žebříček nemá absolutní kotvu.** Hrubá chyba ratingu zůstala zaseknutá na
+       315 b i po 80 hrách — je to ale celé posun fondu, ne nepřesnost. Párování to nevadí,
+       ale rozbíjí to bota s natvrdo nastaveným ratingem, takže **rating bota se přepočítává
+       z jeho skutečných výsledků**. Startovní rating zároveň narovnán z 1200 na 1500 (konvence
+       Glicka; jiná hodnota jen posune stupnici).
+  7. **Fond otázek je konečné palivo a online to zostřuje.** Dospělácké pásmo má 1442 otázek,
      tj. 144 her po deseti bez opakování, reálně ale hráč narazí na opakování po ~30 hrách.
      Navíc musí být zápas férový, takže se losuje z **průniku otázek, které neviděl ani jeden**
      z dvojice (při nedostatku se doplní symetricky). Výroba obsahu se tím stává průběžnou
