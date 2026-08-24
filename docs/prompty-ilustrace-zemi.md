@@ -312,6 +312,16 @@ One single continuous scene with one clear focal point, gently satirical, played
 Muted natural palette — warm sand ochre, black goat-hair tent, faded crimson and indigo carpet, chalk-white robes, dusty gold haze, cream paper showing through. Warm, affectionate irony, not cynical. No flags, no readable text, no words, no letters, no numbers, no signage. Hand-drawn storybook feel. Square 1:1 composition.
 ```
 
+## Belgie — Atomium jako pípa na trapistické pivo
+
+```text
+A vintage travel-journal illustration of Belgium, painted in delicate watercolor with fine ink line work on aged cream paper with brown stains and foxing spots. The aged paper texture fills the entire image and continues past all four edges, cropped by the frame — full bleed, so no paper edge, no torn edge, no white margin and no drawn frame line are visible anywhere. The scene itself runs all the way to the edges of the image.
+
+One single continuous scene with one clear focal point, gently satirical, played for a warm knowing smile: the towering silver spheres and connecting tubes of the Atomium rise in the centre of the scene, but the topmost sphere has been fitted with an enormous tap, and amber Trappist beer pours from it down through the connecting tubes into the sphere below, thick white foam spilling out of every joint and dribbling down the structure's legs onto the plaza. At the bottom, a perfectly orderly queue of besuited officials with laminated badges and clipboards waits with tiny tasting glasses, taking notes with the gravity of a diplomatic summit, nobody smiling, nobody hurrying. Smaller and subordinate: a street vendor beside the queue selling frites in paper cones the size of umbrellas, one customer eating with a tiny fork and dabbing mayonnaise with the concentration of a surgeon; the small bronze Manneken Pis statue nearby dressed in a tiny yellow raincoat against the drizzle, a puddle collecting at his feet that nobody bothers to explain; and a gable wall behind them painted floor-to-ceiling as a giant comic-strip mural, its speech bubble left conspicuously empty. Grey drizzling sky, wet cobblestones and stepped gabled rooftops fill the background.
+
+Muted natural palette — brushed silver spheres, amber beer and white foam, wet grey cobblestones, warm golden frites, faded gable-house pastels, cream paper showing through. Warm, affectionate irony, not cynical. No flags, no readable text, no words, no letters, no numbers, no signage. Hand-drawn storybook feel. Square 1:1 composition.
+```
+
 ---
 
 ## Zbývá vymyslet
