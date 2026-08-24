@@ -973,6 +973,9 @@
     if(img.complete && img.naturalWidth>0) show();
   }
 
+  // obsah bodového praporku v sólu — sdíleno mezi prvním vykreslením (topHtml) a
+  // dopočtem po odpovědi (answer), aby se čísla v obou nikdy nerozjela
+  function scorePillHtml(){ return `${ICO_STAR} <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak">série ${cur().streak}×</span>`:""}`; }
   function topHtml(n, total){
     if(S.mode==="party"){
       const pills=S.players.map((p,i)=>`<button class="qz-pl${i===S.turn?" active":""}" data-turn="${i}">
@@ -986,7 +989,7 @@
       <span class="qz-progress">otázka ${n}/${total}</span>
       <span style="margin-left:auto;display:flex;gap:8px;align-items:center">
         <button class="qz-mute" id="qz-mute" aria-label="${S.voice?"Vypnout hlas":"Zapnout hlas"}" aria-pressed="${S.voice}">${S.voice?ICO_SND:ICO_SNDX}</button>
-        ${S.school?"":`<span class="qz-scorepill">${ICO_STAR} <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak">série ${cur().streak}×</span>`:""}</span>`}
+        ${S.school?"":`<span class="qz-scorepill" id="qz-scorepill">${scorePillHtml()}</span>`}
       </span></div>`;
   }
   function wireTop(q){
@@ -1054,6 +1057,10 @@
     else if(q.golden_wrong!=null && String(choice)===String(q.golden_wrong)){ gold=true; gained=Math.round(base/2); P.streak=0; quipText=q.golden_quip; }
     else { P.streak=0; const dq=q.distractor_quips&&q.distractor_quips[choice]; quipText = dq?resolveQuip(dq,b):resolveQuip(q.quip_wrong,b); }
     P.score+=gained; updateScorePill(S.turn);
+    // párty má vlastní praporek na hráče (updateScorePill výš); sólo/škola má jeden sdílený
+    // v topHtml — ten se jinak přepisoval jen při vykreslení další otázky, takže nové body
+    // byly vidět až po kliku na „Další otázka", ne hned po odpovědi
+    const pill=body.querySelector("#qz-scorepill"); if(pill) pill.innerHTML=scorePillHtml();
     // bublina hostitele = krátký verdikt; vtipná hláška žije v panelu HLÁŠKA (ať se netočí dvakrát)
     say(gold ? "Zlatá odpověď!" : (correct ? "Správně!" : "Tentokrát vedle.")); if(S.voice) speakTTS(quipText);
     revealPic();
