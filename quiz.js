@@ -760,9 +760,10 @@
            vybral pásmo i počet. Dřív viselo nad dlaždicemi a hlásilo počet i velikost fondu
            dřív, než si hráč cokoli zvolil — fond navíc podle skryté výchozí hodnoty S.band. -->
       ${(S.bandTouched && S.qLimitTouched) ? `<p class="qz-start-sum">Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>` : ""}
-      <!-- Dokud hráč nesáhne na pásmo, drží S.band skrytou výchozí hodnotu "dospeli" — bez
-           disabled by klik rovnou na start tiše rozjel hru za dospělé, aniž by cokoli vybral. -->
-      <button class="qz-go" id="qz-start-go" style="margin-top:20px"${S.bandTouched?"":" disabled"}>Jdeme na to ${handArrowSvg(false)}</button>
+      <!-- Dokud hráč nesáhne na pásmo/počet, drží S.band a S.qLimit skryté výchozí hodnoty
+           ("dospeli", poslední kotva) — bez disabled by klik rovnou na start tiše rozjel hru
+           s výchozí volbou, aniž by hráč cokoli vybral. -->
+      <button class="qz-go" id="qz-start-go" style="margin-top:20px"${(S.bandTouched && S.qLimitTouched)?"":" disabled"}>Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
@@ -793,7 +794,7 @@
         if(!sum){ sum=document.createElement("p"); sum.className="qz-start-sum"; go.parentNode.insertBefore(sum, go); }
         sum.textContent = `Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.`;
       } else if(sum){ sum.remove(); }
-      go.disabled = !S.bandTouched;
+      go.disabled = !(S.bandTouched && S.qLimitTouched);
     }
     function bindQLimits(){
       body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => {
