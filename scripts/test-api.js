@@ -280,6 +280,61 @@ async function playAll(token, gameId, total, ms = 2000) {
      'odveta proti botovi se rovnou odehraje (bot dal ' + botRematch.body.bot_score + ')');
   ok(botRematch.body.rated === false, 'odveta proti botovi zůstává nehodnocená');
 
+  // ------------------------------------------------------------ kalibrace bota
+  // Bot se kalibruje, teprve když je soupeř sám usazený (RD < 150), což nastane
+  // až po ~8 hodnocených hrách. Kratší test by tuhle větev vůbec nespustil.
+  section('Kalibrace bota na fond');
+  const E1 = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'starsi', nick: 'Kal_' + uniq(), pin: '3333' } })).body;
+  const E2 = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'starsi', nick: 'Kal_' + uniq(), pin: '4444' } })).body;
+
+  for (let i = 0; i < 10; i++) {
+    const g = await api('/api/game', {
+      method: 'POST', token: E1.token, body: { mode: 'odkaz', time_control: 'blesk' } });
+    await api(`/api/game/${g.body.id}/join`, { method: 'POST', token: E2.token });
+    await playAll(E1.token, g.body.id, g.body.total, 1000 + i * 300);
+    await playAll(E2.token, g.body.id, g.body.total, 4000);
+  }
+  const settled = (await api('/api/me', { token: E1.token }))
+    .body.ratings.find(r => r.band === 'starsi');
+  ok(settled.games === 10, 'odehráno 10 hodnocených her');
+
+  const rd = (await api('/api/me', { token: E1.token }))
+    .body.ratings.find(r => r.band === 'starsi').rd;
+  ok(rd < 350, 'RD se usadilo pod startovní hodnotu (rd=' + Math.round(rd) + ')');
+
+  // Nový hráč bota nepohne vůbec — jeho vlastní rating je zatím jen dohad.
+  const rookie = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'starsi', nick: 'Novy_' + uniq(), pin: '5555' } })).body;
+  const rg = await api('/api/game', {
+    method: 'POST', token: rookie.token, body: { mode: 'odkaz', time_control: 'blesk' } });
+  const rBot = await api(`/api/game/${rg.body.id}/bot`, { method: 'POST', token: rookie.token });
+  const rBefore = rBot.body.bot.strength;
+  await playAll(rookie.token, rg.body.id, rg.body.total, 1000);
+  const rg2 = await api('/api/game', {
+    method: 'POST', token: rookie.token, body: { mode: 'odkaz', time_control: 'blesk' } });
+  const rBot2 = await api(`/api/game/${rg2.body.id}/bot`, { method: 'POST', token: rookie.token });
+  ok(rBot2.body.bot.strength === rBefore,
+     'úplně nový hráč silou bota nehne (' + rBefore + ')');
+
+  // Usazený hráč ano.
+  let strengthBefore = null, botNick = null, strengthAfter = null;
+  for (let i = 0; i < 3; i++) {
+    const g = await api('/api/game', {
+      method: 'POST', token: E1.token, body: { mode: 'odkaz', time_control: 'blesk' } });
+    const b = await api(`/api/game/${g.body.id}/bot`, { method: 'POST', token: E1.token });
+    if (strengthBefore === null) { strengthBefore = b.body.bot.strength; botNick = b.body.bot.nick; }
+    strengthAfter = b.body.bot.strength;
+    await playAll(E1.token, g.body.id, g.body.total, 1000);
+  }
+  const finalBot = await api('/api/game', {
+    method: 'POST', token: E1.token, body: { mode: 'odkaz', time_control: 'blesk' } });
+  const fb = await api(`/api/game/${finalBot.body.id}/bot`, { method: 'POST', token: E1.token });
+  ok(fb.body.bot.nick === botNick, 'pořád stejný bot: ' + botNick);
+  ok(fb.body.bot.strength !== strengthBefore,
+     'usazený hráč silou bota pohnul (' + strengthBefore + ' → ' + fb.body.bot.strength + ')');
+
   console.log('\n' + (fail ? 'NEPROŠLO: ' + fail + ' chyb, ' + pass + ' v pořádku'
                            : 'VŠE V POŘÁDKU: ' + pass + ' kontrol'));
   process.exit(fail ? 1 : 0);

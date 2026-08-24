@@ -88,11 +88,20 @@ async function calibrateBot(env, band, a, b, sA, isBot) {
   if (!bot) return;
 
   const hr = await ratingRow(env, human.user_id, band);
-  if (hr.rd > 150) return;                        // hráč sám ještě není zkalibrovaný
+
+  // Váha podle toho, jak jistý je hráčův vlastní rating: úplně nový hráč (RD 350)
+  // botem nehne vůbec, usazený (RD ~80) plnou silou.
+  //
+  // Původně tu byla tvrdá hranice `rd > 150 → nekalibrovat`. Test ukázal, že na ni
+  // dva hráči, kteří hrají jen spolu, nedosáhnou ani po deseti hrách (skončili na 185) —
+  // ani jeden totiž není jistým referenčním bodem pro toho druhého. Boti by se tedy
+  // nekalibrovali právě na startu, kdy je to nejpotřebnější a všichni jsou noví.
+  const confidence = Math.max(0, Math.min(1, (350 - hr.rd) / (350 - 80)));
+  if (confidence <= 0) return;
 
   const sBot = botPlayer === a ? sA : 1 - sA;
   const expected = 1 / (1 + Math.pow(10, (hr.rating - bot.strength) / 400));
-  const next = bot.strength + 12 * (sBot - expected);   // pomalý posun, ať to neskáče
+  const next = bot.strength + 12 * confidence * (sBot - expected);   // pomalý posun, ať to neskáče
 
   await env.DB.prepare('UPDATE bots SET strength = ? WHERE user_id = ?')
     .bind(Math.max(600, Math.min(2400, next)), botPlayer.user_id).run();
