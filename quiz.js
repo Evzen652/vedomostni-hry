@@ -750,8 +750,10 @@
       </div>
       <div style="width:min(100%,460px);margin-top:18px">
         <div class="qz-fieldlabel">Na kolik otázek si troufáš?</div>
+        <!-- Stejně jako u dlaždic pásma (S.bandTouched): S.qLimit má skrytou výchozí hodnotu
+             (poslední/největší kotva), takže dokud hráč nesáhne na chip, nemá svítit jako vybraný. -->
         <div class="qz-bands" id="qz-qlimits">
-          ${qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
+          ${qOpts.map(o=>`<button class="qz-chip${(S.qLimitTouched && S.qLimit===o.n)?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("")}
         </div>
       </div>
       <!-- Shrnutí obou voleb, ne nadpis: proto stojí až pod nimi a naskočí, teprve když hráč
@@ -779,10 +781,10 @@
       const wrap = body.querySelector("#qz-qlimits");
       const nows = [...wrap.querySelectorAll("[data-qlimit]")].map(b=>+b.dataset.qlimit);
       if(nows.length!==qOpts.length || nows.some((n,i)=>n!==qOpts[i].n)){
-        wrap.innerHTML = qOpts.map(o=>`<button class="qz-chip${S.qLimit===o.n?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("");
+        wrap.innerHTML = qOpts.map(o=>`<button class="qz-chip${(S.qLimitTouched && S.qLimit===o.n)?" on":""}" data-qlimit="${o.n}">${esc(o.label)}</button>`).join("");
         bindQLimits();
       } else {
-        wrap.querySelectorAll("[data-qlimit]").forEach(b => b.classList.toggle("on", +b.dataset.qlimit===S.qLimit));
+        wrap.querySelectorAll("[data-qlimit]").forEach(b => b.classList.toggle("on", S.qLimitTouched && +b.dataset.qlimit===S.qLimit));
       }
       // shrnutí voleb
       const go = body.querySelector("#qz-start-go");
