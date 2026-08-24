@@ -17,6 +17,44 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-24 — +450 nových otázek pro Česko (150/pásmo); nové pole `more_fact` je od teď povinné pro veškerý nový obsah.**
+  Na žádost „alespoň 450 nových otázek, 150 na každou věkovou kategorii, musí u nich být i více o xy"
+  vygenerováno přes 30 paralelních agentů (10 sekcí × 3 pásma: Místa, Příroda, Kultura, Jídlo, Sport,
+  Lidé, Umění, Jazyk, Historie do 1918/1918–dnes, u dětí navíc Symboly místo druhé historie) —
+  `data/questions/cz.json` **68 → 518 otázek** (děti 20→170, starší 20→170, dospělí 28→178, tj.
+  přesně +150/+150/+150 po dořešení duplicit, viz níž). Každá nová otázka nese **`more_fact`**
+  (nový fakt, ne parafráze `explanation` ani hlášek) a **žádnou** `source_card` — `source_card` je
+  vyhrazené pole jen pro obsah reálně importovaný z Hricky/Glóbu; nový AI-psaný obsah musí mít vždy
+  `more_fact`, aby tlačítko „Více o…" mělo z čeho postavit náhradní kartu (`openMore()` fallback,
+  viz zápis 2026-07-31 níže). **Ověřeno:** `npm run validate` → 0 chyb; ruční kontrola diakritiky
+  (viz past níže) → 0 skutečných chyb.
+  1. **Tvrdý limit 20 souběžných subagentů v tomhle prostředí.** Dispatch 4. vlny nad už běžících 20
+     agentů selže rovnou hláškou „Concurrent subagent limit reached… Do not retry" — u 5 z 10 volání
+     v jedné dávce. Řešení: počkat, až se uvolní sloty (dojedou dřívější agenti), pak dodispatchovat
+     jen těch 5 nezdařených. Neopakovat okamžitě, nejde o transientní chybu.
+  2. **Agent umí nahlásit hotovo, než soubor skutečně existuje na disku.** Jeden z 30 agentů poslal
+     věrohodné shrnutí „hotovo" dřív, než `Write` doběhl — `Test-Path` bezprostředně po notifikaci
+     ukázal, že soubor chybí. Dodispatchován záložní agent s explicitním „ověř Read před nahlášením
+     hotovo"; originál pak sám poslal DRUHOU, mnohem delší notifikaci a soubor už existoval — nešlo
+     o selhání, jen o předčasné hlášení. **Pravidlo:** u kritických dávkových výstupů vždy ověřit
+     zápis na disk přímo (`Test-Path`/`Read`), nespoléhat na text notifikace samotné.
+  3. **Kolize ID mezi pásmy = přejmenovat (zachovat obě), kolize v RÁMCI stejného pásma = smazat jednu.**
+     Merge narazil na 18 kolizí ID + 1 proti existujícímu obsahu. Ruční kontrola obsahu (ne jen ID)
+     ukázala: 14 kolizí bylo jen shoda slugu mezi RŮZNÝMI pásmy testující JINÝ fakt o stejném místě/
+     tématu (běžný a přijatelný vzor v appce — `bandPool` drží pásma oddělená) → přejmenováno příponou
+     (např. `-dospeli`); 5 bylo skutečně stejný fakt ve stejném pásmu → smazána jedna instance. Po
+     smazání chybělo 450→445, doplněno 5 ručně psaných otázek (3 děti, 2 dospělí) na přesný cíl.
+  4. **Past: kontrolní regex na chybějící diakritiku dává masivní falešné poplachy dvěma různými
+     způsoby** — (a) seznam „podezřelých" slov omylem obsahoval slova, která v češtině **žádnou
+     diakritiku nemají ani mít nemají** (`jak`, `kdyby`, `opravdu`, `naopak`) — u 450 delších otázek
+     s běžnou češtinou to samo vygenerovalo drtivou většinu z 261 nahlášených výskytů; (b) i po
+     opravě seznamu zůstalo 14 zásahů, všechny false positive z jiného důvodu: **JS `\b` bere jako
+     hranici slova jen ASCII znaky**, takže uvnitř správně napsaných slov s diakritikou (`nezávislost`,
+     `muzeích`, `dějiny`, `přejímalo`) vznikne „hranice" hned za/před háčkovaným písmenem a regex
+     chytí ASCII podřetězec uvnitř (`nez`, `muze`, `jiny`, `malo`) jako by šlo o samostatné okleštěné
+     slovo. **Skutečný výsledek: 0 chyb diakritiky.** Příště: kontrolní seznam omezit jen na slova,
+     co diakritiku opravdu vyžadují, a match ověřit ručně na kontext, ne věřit součtu.
+
 - **2026-08-24 — Pásma narovnána: dospělí bez dětských otázek, v párty hraje každý ve svém fondu za rovné body, dětské otázky mají místo hvězdičky štítek.**
   Balík oprav, které všechny plynou z jedné příčiny: **hvězdičková škála platí jen pro obecný fond
   psaný pro dospělé, ne pro dětský** — a appka to na několika místech míchala dohromady. Aktuální
