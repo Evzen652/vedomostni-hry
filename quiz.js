@@ -82,7 +82,7 @@
   function say(t){ hostBubble.textContent = t||""; hostBubble.style.display = t ? "" : "none"; }
 
   // aktivní hráč / pásmo (v sólu jediný „hráč")
-  function cur(){ return S.players[S.turn] || {name:"Ty", band:S.band, color:COLORS[0], score:0, streak:0, side:"dole"}; }
+  function cur(){ return S.players[S.turn] || {name:"Ty", band:S.band, color:COLORS[0], score:0, side:"dole"}; }
   function bandOf(){ return S.mode==="party" ? cur().band : S.band; }
   function qCurrent(){ return S.mode==="party" ? S.order[S.qServed % S.order.length] : S.order[S.idx]; }
 
@@ -144,7 +144,7 @@
     return { mode:S.mode, school:!!S.school, band:S.band, cc:(S.sel&&S.sel.cc)||"ru", section:(S.sel&&S.sel.section)||null,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
       turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, rotate:S.rotate, timer:S.timer||0,
-      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score, streak:p.streak })) };
+      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score })) };
   }
   function autosave(){
     if(!S.saveId) return;
@@ -168,7 +168,7 @@
     if(!S.order.length) S.order=shuffle(data.questions);
     S.idx=st.idx||0; S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
     S.voice=!!st.voice; S.steal=!!st.steal; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
-    S.players=(st.players||[]).map(p=>({...p})); if(!S.players.length) S.players=[{name:"Ty",band:S.band,color:COLORS[0],score:0,streak:0,side:"dole"}];
+    S.players=(st.players||[]).map(p=>({...p})); if(!S.players.length) S.players=[{name:"Ty",band:S.band,color:COLORS[0],score:0,side:"dole"}];
     S.saveId=id;
     const shell=document.getElementById("qz-shell"); shell.classList.toggle("qz-school", S.school); shell.style.transform="";
     requestWake(); if(S.mode==="party") applyRotation();
@@ -194,7 +194,6 @@
   }
   function timeoutReveal(q){
     if(S.answered) return; S.answered=true;
-    cur().streak=0;
     const quipText=pick((data.fondy&&data.fondy.timeout)||["Čas vypršel!"]);
     say(quipText); if(S.voice) speakTTS("Čas vypršel! "+quipText);
     revealPic();
@@ -711,7 +710,7 @@
   }
   function startSchool(level){
     S.mode="solo"; S.school=true;
-    S.players=[{ name:"Třída", band:"deti", color:COLORS[1], score:0, streak:0, side:"dole" }];
+    S.players=[{ name:"Třída", band:"deti", color:COLORS[1], score:0, side:"dole" }];
     S.turn=0;
     const filtered = data.questions.filter(q => (q.difficulty||1) <= level);
     const pool = filtered.length ? filtered : data.questions;
@@ -815,7 +814,7 @@
 
   function startGame(){
     S.mode="solo";
-    S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, streak:0, side:"dole" }];
+    S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, side:"dole" }];
     S.turn=0;
     // tři pásma: „děti" jen vlastní fond (q.kids), „puberťáci" lehčí obecné trivia (difficulty ≤2), „dospělí" celé obecné trivia — všechna bez dětských otázek
     const pool = bandPool(S.band);
@@ -829,8 +828,8 @@
   function ensureSetup(){
     if(S.players.length>=2) return;
     S.players = [
-      { name:"", band:"deti",    color:COLORS[0], side:"dole",   score:0, streak:0 },
-      { name:"", band:"dospeli", color:COLORS[1], side:"nahoře", score:0, streak:0 }
+      { name:"", band:"deti",    color:COLORS[0], side:"dole",   score:0 },
+      { name:"", band:"dospeli", color:COLORS[1], side:"nahoře", score:0 }
     ];
   }
   function renderSetup(){
@@ -892,7 +891,7 @@
       row.querySelectorAll(".qz-bandbtn").forEach(b => b.addEventListener("click", () => { S.players[i].band=b.dataset.band; renderSetup(); }));
       const rem=row.querySelector(".qz-prem"); if(rem) rem.addEventListener("click", () => { S.players.splice(+rem.dataset.rem,1); renderSetup(); });
     });
-    const add=body.querySelector("#qz-addp"); if(add) add.addEventListener("click", () => { const i=S.players.length; S.players.push({ name:"", band:"dospeli", color:COLORS[i%COLORS.length], side:SIDES[i%SIDES.length].k, score:0, streak:0 }); renderSetup(); });
+    const add=body.querySelector("#qz-addp"); if(add) add.addEventListener("click", () => { const i=S.players.length; S.players.push({ name:"", band:"dospeli", color:COLORS[i%COLORS.length], side:SIDES[i%SIDES.length].k, score:0 }); renderSetup(); });
     body.querySelectorAll("[data-rounds]").forEach(b => b.addEventListener("click", () => { S.totalRounds=+b.dataset.rounds; renderSetup(); }));
     body.querySelectorAll("[data-timer]").forEach(b => b.addEventListener("click", () => { S.timer=+b.dataset.timer; renderSetup(); }));
     body.querySelectorAll(".qz-opt").forEach(o => o.addEventListener("click", () => {
@@ -914,7 +913,7 @@
         if(first){ first.scrollIntoView({block:"center", behavior:REDUCED_MOTION?"auto":"smooth"}); first.focus(); }
         return;
       }
-      S.players = named.map((p,i)=>({ ...p, name:p.name.trim(), color:COLORS[i%COLORS.length], score:0, streak:0 }));
+      S.players = named.map((p,i)=>({ ...p, name:p.name.trim(), color:COLORS[i%COLORS.length], score:0 }));
       rememberNames(S.players.map(p=>p.name));
       startParty();
     });
@@ -943,7 +942,7 @@
   function startParty(){
     S.mode="party"; S.order=buildPartyOrder(); S.qServed=0; S.turn=0; S.round=1; S.manualRot=null; S.school=false; newSave();
     document.getElementById("qz-shell").classList.remove("qz-school");
-    S.players.forEach(p=>{ p.score=0; p.streak=0; });
+    S.players.forEach(p=>{ p.score=0; });
     applyRotation();
     renderQuestion();
   }
@@ -975,7 +974,7 @@
 
   // obsah bodového praporku v sólu — sdíleno mezi prvním vykreslením (topHtml) a
   // dopočtem po odpovědi (answer), aby se čísla v obou nikdy nerozjela
-  function scorePillHtml(){ return `${ICO_STAR} <b>${cur().score}</b>${cur().streak>1?`<span class="qz-streak" title="Každá další správná odpověď v řadě dává +25 bodů navíc. Jedna chyba a série se láme.">série ${cur().streak}×</span>`:""}`; }
+  function scorePillHtml(){ return `${ICO_STAR} <b>${cur().score}</b>`; }
   function topHtml(n, total){
     if(S.mode==="party"){
       const pills=S.players.map((p,i)=>`<button class="qz-pl${i===S.turn?" active":""}" data-turn="${i}">
@@ -1053,9 +1052,9 @@
     const b=bandOf(), base=qPoints(q), P=cur();
     const correct = String(choice)===String(q.answer);
     let gained=0, gold=false, quipText;
-    if(correct){ P.streak++; gained=base + (P.streak>1?(P.streak-1)*25:0); quipText=resolveQuip(q.quip_correct,b); }
-    else if(q.golden_wrong!=null && String(choice)===String(q.golden_wrong)){ gold=true; gained=Math.round(base/2); P.streak=0; quipText=q.golden_quip; }
-    else { P.streak=0; const dq=q.distractor_quips&&q.distractor_quips[choice]; quipText = dq?resolveQuip(dq,b):resolveQuip(q.quip_wrong,b); }
+    if(correct){ gained=base; quipText=resolveQuip(q.quip_correct,b); }
+    else if(q.golden_wrong!=null && String(choice)===String(q.golden_wrong)){ gold=true; gained=Math.round(base/2); quipText=q.golden_quip; }
+    else { const dq=q.distractor_quips&&q.distractor_quips[choice]; quipText = dq?resolveQuip(dq,b):resolveQuip(q.quip_wrong,b); }
     P.score+=gained; updateScorePill(S.turn);
     // párty má vlastní praporek na hráče (updateScorePill výš); sólo/škola má jeden sdílený
     // v topHtml — ten se jinak přepisoval jen při vykreslení další otázky, takže nové body

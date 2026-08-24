@@ -81,7 +81,6 @@
 .qz-scorepill { margin-left: auto; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px;
   padding: 6px 14px; font-family: 'Nunito', sans-serif; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; display: flex; gap: 8px; align-items: center; }
 .qz-scorepill b { font-size: 17px; }
-.qz-streak { color: var(--ochre); font-size: 12px; font-weight: 700; cursor: help; }
 
 /* rám = jedno okno: u otázky v něm žije glóbus, u odpovědi se odhalí fotka */
 .qz-picframe { position: relative; margin: 12px 16px 0; height: 320px; border-radius: 18px; overflow: hidden;
