@@ -1,7 +1,8 @@
 # Online režim — návrh architektury
 
-> Stav: **schválený záměr, nezačato**. Rozhodnuto 2026-08-24.
-> Hosting zatím **nerozhodnut** (viz „Otevřené otázky" na konci).
+> Stav: **rozestavěno**. Platforma vybraná (Cloudflare, sekce 10), herní model ověřený
+> simulací (sekce 8), API kostra běží lokálně a je otestovaná (`npm run dev`, `npm run test:api`).
+> Nikde není nasazeno — zatím se vyvíjí a testuje lokálně.
 
 Cílem je online hraní ve stylu chess.com: účty, párování soupeřů, rating, žebříčky,
 turnaje. Tenhle dokument popisuje **cílový stav** a **pořadí stavby**, kterým se k němu
@@ -264,14 +265,41 @@ Kroky 3 a 4 jsou schválně **před** živým duelem: jsou to přesně ty dvě v
 
 ---
 
-## 10. Otevřené otázky
+## 10. Platforma: Cloudflare Pages + Functions + D1
 
-- **Hosting.** Zvažované varianty:
-  - *Cloudflare Pages + Workers* — statika i backend na jedné platformě zdarma, žádný server
-    k údržbě, Durable Objects sedí na živé duely (jedna hra = jeden objekt).
-  - *GitHub Pages + Supabase* — hotové přihlašování, ale dvě služby místo jedné.
-  - *Vlastní VPS* — plná kontrola, ale běh, certifikáty a zálohy na tobě.
-- **Doména a název** online instance.
+**Rozhodnuto 2026-08-24.** Ověřené limity free plánu (odkazy níže): Workers 100 000 requestů/den,
+D1 5 GB a 100 000 zápisů/den, Durable Objects v SQLite variantě ve free plánu včetně úložiště,
+Pages zdarma s auto-deployem z GitHubu. Na plánovaný provoz to stačí s velkou rezervou.
+
+Proč ne **Supabase**, který byl druhý v pořadí: Realtime a prohlížeč dat má lepší a u kroku 5
+by ušetřil práci — ale znamená dvě služby a CORS, lokální vývoj chce Docker, a jeho vestavěné
+přihlašování stojí na e-mailu, který tenhle návrh schválně nechce (přezdívka + PIN kvůli dětem).
+Pauzování free projektu po týdnu nečinnosti je řešitelné cronem, takže to samo o sobě důvod
+nebylo. **Rozhodl praktický detail:** `wrangler pages dev` běží kompletně lokálně bez účtu,
+bez Dockeru a bez internetu, takže se dá vyvíjet a testovat od první minuty. Doména není
+potřeba ani při nasazení — Pages dá zdarma `*.pages.dev`.
+
+Přechod zpět na Supabase zůstává levný: API kontrakt je platformově neutrální, herní logika
+v `functions/_lib/game.js` je čistý JS a schéma je skoro standardní SQL. Cloudflare-specifický
+je jen tenký routing.
+
+### Jak to spustit lokálně
+
+```
+npm install          # jednorázově, stáhne wrangler
+npm run db:init      # schéma + naplnění 3 706 otázek do lokální D1
+npm run dev          # http://127.0.0.1:8788
+npm run test:api     # kouřový test API (ve druhém terminálu)
+```
+
+Lokální databáze žije v `.wrangler/` a je mimo verzování, stejně jako generovaný
+`data/d1-seed.sql`. Nasazení na Cloudflare vyžaduje účet a `database_id` ve `wrangler.toml` —
+do té doby funguje všechno lokálně.
+
+---
+
+## 11. Otevřené otázky
+
 - **Maraton** jako třetí časová kontrola (25 otázek × 15 s)?
 - **Odkud brát otázky pro denní pětku** — všechna pásma zvlášť, nebo jedna společná sada
   z pubertáckého fondu?

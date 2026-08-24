@@ -7,9 +7,17 @@
     "validate": "node scripts/validate-data.js",
     "audit": "node scripts/audit-questions.js",
     "sim-online": "node scripts/sim-online.js",
+    "dev": "wrangler pages dev",
+    "db:seed": "node scripts/seed-d1.js",
+    "db:init": "npm run db:seed && wrangler d1 execute zemekviz --local --file=schema.sql && wrangler d1 execute zemekviz --local --file=data/d1-seed.sql",
+    "db:sql": "wrangler d1 execute zemekviz --local --command",
     "import-questions": "node scripts/import-questions.js",
     "import-images": "node scripts/import-images.js",
     "import-audio": "node scripts/import-audio.js",
-    "export-deck": "node scripts/export-deck.js"
+    "export-deck": "node scripts/export-deck.js",
+    "test:api": "node scripts/test-api.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.125.0"
   }
 }

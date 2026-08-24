@@ -7,3 +7,12 @@ node_modules/
 # OS smetí
 .DS_Store
 Thumbs.db
+
+# Cloudflare / online režim
+# (pozor: .gitignore neumí komentář za vzorem, musí být na vlastním řádku)
+# lokální stav D1 a cache wrangleru
+.wrangler/
+# generuje se z data/questions/*.json přes npm run db:seed
+data/d1-seed.sql
+# lokální tajemství, nikdy neverzovat
+.dev.vars

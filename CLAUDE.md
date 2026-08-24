@@ -57,7 +57,24 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
        ale rozbíjí to bota s natvrdo nastaveným ratingem, takže **rating bota se přepočítává
        z jeho skutečných výsledků**. Startovní rating zároveň narovnán z 1200 na 1500 (konvence
        Glicka; jiná hodnota jen posune stupnici).
-  7. **Fond otázek je konečné palivo a online to zostřuje.** Dospělácké pásmo má 1442 otázek,
+  7. **Platforma: Cloudflare Pages + Functions + D1** (rozhodnuto 2026-08-24, limity free plánu
+     ověřené v dokumentaci, ne odhadem). Druhý v pořadí byl Supabase — má lepší Realtime
+     i prohlížeč dat, ale znamená dvě služby a CORS, lokální vývoj chce Docker a jeho
+     přihlašování stojí na e-mailu, který návrh schválně nechce. Pauzování free projektu po
+     týdnu nečinnosti se dá obejít cronem, takže samo o sobě důvod nebylo. **Rozhodlo, že
+     `wrangler pages dev` běží kompletně lokálně bez účtu, bez Dockeru a bez internetu** —
+     vývoj i testy jdou od první minuty a doména není potřeba (Pages dá zdarma `*.pages.dev`).
+     Přechod zpět je levný: kontrakt je platformově neutrální, logika v `functions/_lib/game.js`
+     čistý JS, schéma skoro standardní SQL, Cloudflare-specifický jen tenký routing.
+     - **Otázky se seedují do D1, nebundlují do klienta.** Jinak nejde servírovat možnosti bez
+       označení správné odpovědi. `npm run db:init` naplní 3 706 otázek; **dávka INSERTu musí
+       zůstat malá (25 řádků)** — při 200 řádcích jeden příkaz přeteče limit D1 na délku SQL
+       (`SQLITE_TOOBIG`), protože otázka s hláškami a vysvětlením má 1–2 kB.
+     - **Odpověď na už zodpovězenou otázku se odmítá (409).** Bez toho by šlo tipnout, přečíst
+       si z odpovědi správný index a zkusit to znovu.
+     - `npm run test:api` hlídá právě tyhle vlastnosti (22 kontrol) — hlavně to, že payload
+       otázky neobsahuje `answer` ani index správné možnosti.
+  8. **Fond otázek je konečné palivo a online to zostřuje.** Dospělácké pásmo má 1442 otázek,
      tj. 144 her po deseti bez opakování, reálně ale hráč narazí na opakování po ~30 hrách.
      Navíc musí být zápas férový, takže se losuje z **průniku otázek, které neviděl ani jeden**
      z dvojice (při nedostatku se doplní symetricky). Výroba obsahu se tím stává průběžnou

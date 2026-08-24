@@ -1,0 +1,12 @@
+name = "zemekviz"
+compatibility_date = "2026-08-24"
+
+# Statika appky je přímo v kořeni repa (hra.html, quiz.js, data/, assets/, img/).
+pages_build_output_dir = "."
+
+# API běží jako Pages Functions ve složce functions/ na stejné doméně jako statika,
+# takže odpadá CORS. Lokální běh: npm run dev (wrangler pages dev, funguje offline).
+[[d1_databases]]
+binding = "DB"
+database_name = "zemekviz"
+database_id = "placeholder-nahrad-po-vytvoreni"
