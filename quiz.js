@@ -1035,7 +1035,7 @@
     return `<div class="qz-frow">
       <div class="qz-expl">${esc(q.explanation||"")} ${(SHOW_SOURCE_LINK && q.source_url)?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
       <div class="qz-fbtns">
-        ${q.source_card?`<button class="qz-more" id="qz-more">${esc(moreLabel(q))} <span class="qz-more-ico">💡</span></button>`:""}
+        ${(q.source_card||q.more_fact)?`<button class="qz-more" id="qz-more">${esc(moreLabel(q))} <span class="qz-more-ico">💡</span></button>`:""}
         <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
       </div>
     </div>`;
@@ -1105,8 +1105,13 @@
   // „Více o…" se zobrazuje jen u otázek napojených na kartu z Glóbu (q.source_card) —
   // bez karty appka neměla nic k zobrazení (žádná fotka, žádný text navíc), tlačítko
   // proto vůbec nerenderuje frowHtml(). Karty samy jsou bez fotek — jen fakt + hláska.
+  // Otázka bez karty z Glóbu (přes polovina fondu — viz CLAUDE.md) dostává náhradní kartu
+  // poskládanou přímo z otázky: q.more_fact je nový fakt, ne parafráze explanation/hlášek,
+  // stejný standard jako u karet z Glóbu. Nadpis = odpověď, žádná fotka (appka ji na tuhle
+  // otázku nemá — .qz-cardbody bez img funguje i bez ní, viz cardOverlay).
   function openMore(q){
     if(q.source_card) openCard(q.source_card);
+    else if(q.more_fact) cardOverlay({ headline:q.answer, fact:q.more_fact });
   }
   // Karta má vždycky základní fakt + dvě hlubší úrovně (cestovatel, kartograf) — ty appka
   // dřív vůbec nečetla. Otázka svoje "explanation" často odvozuje právě ze základního faktu
