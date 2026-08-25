@@ -512,7 +512,10 @@
 .zk-form { display: flex; flex-direction: column; gap: 10px; }
 .zk-form .qz-pname-in { flex: none; width: 100%; box-sizing: border-box; }
 .zk-form .qz-go, .zk-form .qz-back { width: 100%; justify-content: center; text-align: center; }
-.zk-wrap { max-width: 640px; margin: 0 auto; width: 100%; }
+/* box-sizing: bez něj se k `width:100%` přičte ještě odsazení z .qz-modepick/.qz-setup
+   (2×24 px) a online obrazovky na 375px mobilu vyčnívají o 48 px mimo displej. Offline
+   obrazovky to nepotkalo, protože šířku nemají nastavenou a zmenší se i s odsazením. */
+.zk-wrap { max-width: 640px; margin: 0 auto; width: 100%; box-sizing: border-box; }
 .zk-code { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 800; letter-spacing: .22em;
   color: var(--teal); text-align: center; padding: 6px 0 2px; }
 .zk-rowlist { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
