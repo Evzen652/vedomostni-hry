@@ -545,7 +545,11 @@
    Zbytek appky to má stejně, tady to ale bije do očí, protože pod tlačítkem
    nezačíná mřížka dlaždic, ale jediná karta. */
 .zk-auth { max-width: 460px; padding-top: 76px; }
-.zk-auth > .qz-back { align-self: flex-start; width: auto; margin-bottom: 2px; }
+/* Navigace zpět je navigace, ne hlavní akce. .qz-setup/.qz-modepick je svislý flex,
+   takže bez align-self se „Zpět" roztáhne přes celou šířku obrazovky a vypadá
+   důležitěji než primární tlačítko — to byla původní výtka k přihlašovací stránce
+   a platila i pro Přátele, Souboj na odkaz a čekání na soupeře. */
+.zk-wrap > .qz-back { align-self: flex-start; width: auto; margin-bottom: 2px; }
 
 .zk-authcard { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 18px;
   padding: 16px 16px 14px; box-shadow: 0 4px 0 #e3d5b8, 0 16px 34px rgba(120,90,50,.12); }
