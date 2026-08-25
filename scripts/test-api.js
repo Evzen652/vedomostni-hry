@@ -154,8 +154,9 @@ async function playAll(token, gameId, total, ms = 2000) {
   const opp = halfway.body.players.find(p => p.nick === nickB);
   ok(opp && opp.score === null, 'soupeřovo skóre je skryté, dokud nedohraje');
 
-  const ratingBefore = (await api('/api/me', { token: A.token }))
-    .body.ratings.find(r => r.band === 'dospeli').rating;
+  const predHrou = (await api('/api/me', { token: A.token }))
+    .body.ratings.find(r => r.band === 'dospeli');
+  const ratingBefore = predHrou.rating, rdBefore = predHrou.rd;
   await playAll(B.token, duel.body.id, duel.body.total, 4000);
 
   const after = await api(`/api/game/${duel.body.id}`, { token: A.token });
@@ -164,10 +165,18 @@ async function playAll(token, gameId, total, ms = 2000) {
      'souboj má výsledek: ' + after.body.result);
   ok(after.body.review?.[0]?.opponent !== undefined, 'rozbor ukazuje i soupeřův tip');
 
-  const ratingAfter = (await api('/api/me', { token: A.token }))
-    .body.ratings.find(r => r.band === 'dospeli').rating;
-  ok(ratingAfter !== ratingBefore,
-     'hodnocený souboj hnul ratingem (' + ratingBefore + ' → ' + ratingAfter + ')');
+  const poHre = (await api('/api/me', { token: A.token }))
+    .body.ratings.find(r => r.band === 'dospeli');
+  // Oba hráči tipují vždy první možnost, takže občas oba trefí nulu a je remíza.
+  // Remíza mezi stejně silnými hráči rating NEHÝBE — je to správné chování Glicka,
+  // ne chyba. Dřív to test tvrdil natvrdo a padal zhruba na (3/4)^10 = 5,6 % běhů.
+  // Co platí vždy: hodnocená hra zmenší nejistotu (RD).
+  ok(poHre.rd < rdBefore,
+     'hodnocená hra zmenšila nejistotu ratingu (rd ' + rdBefore + ' → ' + poHre.rd + ')');
+  ok(after.body.result === 'remiza' || poHre.rating !== ratingBefore,
+     after.body.result === 'remiza'
+       ? 'remíza mezi vyrovnanými hráči rating nehnula, správně'
+       : 'hodnocený souboj hnul ratingem (' + ratingBefore + ' → ' + poHre.rating + ')');
 
   // ------------------------------------------------------------ bot
   section('Bot');
