@@ -4,7 +4,7 @@
 > region EEUR. Nasazeno kvůli testování na mobilu, ne kvůli spuštění mezi lidi.
 > **Adresa je veřejná: kdo ji dostane, může hrát.**
 > Kroky 1–8 postavené včetně frontendu ([online.js](../online.js), dlaždice Online
-> v `hra.html`), otestované — `npm run test:api`, 75 kontrol, plus ruční průchod
+> v `hra.html`), otestované — `npm run test:api`, 85 kontrol, plus ruční průchod
 > celého režimu. Krok 9 (turnaje) záměrně vynechaný.
 > Nasazuje se `npm run deploy`; pasti kolem toho viz [CLAUDE.md](../CLAUDE.md), 2026-08-25.
 
@@ -23,8 +23,8 @@ V menu přibude čtvrtá dlaždice, která bez připojení hlásí, že potřebu
 **Tím ale padá konvence „appka je offline-only"** zapsaná v CLAUDE.md od založení projektu.
 Nově platí: *offline-first* — všechno, co šlo offline, jde offline dál; online je nadstavba.
 
-**~~Appka dnes nikde neběží.~~** *(Neplatí od 2026-08-25 — běží na Cloudflare Pages.)*
-i poprvé vyřešit hosting (~32 MB statiky: 7,4 MB data + 19 MB img + 6 MB assets).
+**~~Appka dnes nikde neběží.~~** *(Neplatí od 2026-08-25 — běží na Cloudflare Pages,
+viz hlavička.)* Hosting znamenal vyřešit ~32 MB statiky: 7,4 MB data + 19 MB img + 6 MB assets.
 
 ---
 
@@ -133,6 +133,11 @@ Praktický dopad: **výroba obsahu se stává průběžnou povinností**, ne jed
 - **Žádné žádosti o přátelství od cizích v dětském pásmu** — přátelé jen na kód, což vyžaduje
   kontakt mimo appku.
 - **Registrace bez e-mailu**: přezdívka + avatar + PIN. Sbíráme minimum osobních údajů.
+- **E-mail jen nepovinně, až po registraci** (doplněno 2026-08-25). Slouží výhradně k obnově
+  zapomenutého PINu — bez něj účet obnovit nejde a hráč o něj při zapomenutí přijde.
+  Registraci nezdržuje a nevyžaduje se; u dětského pásma ho má vyplnit rodič. Sloupec je
+  bez `UNIQUE`, aby rodič mohl mít stejnou adresu u víc dětí. Podrobnosti a pasti viz
+  [CLAUDE.md](../CLAUDE.md), zápis z 2026-08-25.
 
 ---
 
@@ -165,6 +170,9 @@ kterákoli ze zvažovaných variant tohle rozhraní umí naplnit.
 |---|---|
 | `POST /api/auth/register` | registrace (přezdívka + PIN, bez e-mailu) |
 | `POST /api/auth/login` | přihlášení |
+| `PUT/DELETE /api/auth/email` | nepovinný e-mail pro obnovu PINu (chce PIN) |
+| `POST /api/auth/reset` | požádá o odkaz na obnovu PINu |
+| `POST /api/auth/reset/confirm` | nastaví nový PIN podle tokenu z odkazu |
 | `GET /api/me` | profil, ratingy za pásma, historie |
 | `POST /api/game` | založí hru — `solo` nebo `odkaz` |
 | `GET /api/game/:id/q/:n` | n-tá otázka **bez správné odpovědi** |

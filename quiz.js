@@ -349,11 +349,13 @@
     data.questions = pool.length ? pool : all;
   }
 
-  // Pozvánka na souboj (?duel=…) míří na tuhle stránku, ne na zvláštní adresu — kdo přijde
-  // po odkazu, musí skončit rovnou v souboji, ne na rozcestníku, kde by o výzvě nevěděl.
+  // Odkazy zvenčí (?duel=… pozvánka na souboj, ?obnova=… reset PINu z e-mailu) míří na
+  // tuhle stránku. Kdo po nich přijde, musí skončit rovnou tam, kam mířil — ne na
+  // rozcestníku, kde by o výzvě ani o obnově nevěděl.
   function open(){ ensureData().then(()=>{
     document.body.style.overflow="hidden"; root.classList.remove("qz-hidden");
-    if(new URLSearchParams(location.search).get("duel") && window.ZKOnline){
+    const _p = new URLSearchParams(location.search);
+    if((_p.get("duel") || _p.get("obnova")) && window.ZKOnline){
       showHomeBtn(true); window.ZKOnline.open(renderModePick); return;
     }
     renderModePick();

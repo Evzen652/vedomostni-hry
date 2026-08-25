@@ -20,8 +20,17 @@ export async function onRequestGet({ request, env }) {
 
   return json({
     id: me.id, nick: me.nick, avatar: me.avatar, band: me.band,
+    email: maskEmail(me.email),
     ratings: ratings.results.map(r => ({ ...r, rating: Math.round(r.rating) })),
     seen_questions: seen.n,
     history: history.results,
   });
+}
+
+/** ev***@gmail.com — hráči stačí poznat, kterou adresu tam má, ne ji celou číst. */
+function maskEmail(email) {
+  if (!email) return null;
+  const [jmeno, domena] = String(email).split('@');
+  const viditelne = jmeno.slice(0, 2);
+  return viditelne + '*'.repeat(Math.max(1, jmeno.length - 2)) + '@' + domena;
 }

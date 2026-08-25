@@ -17,6 +17,30 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-25 — E-mail je NEPOVINNÝ a slouží jedinému účelu: obnově zapomenutého PINu.**
+  Účty stály na přezdívce + PINu bez jakékoli obnovy — kdo PIN zapomněl, přišel o účet
+  i s ratingem a historií. To je u účtu, který má vydržet roky, vada, ne minimalismus.
+  **Registrace se ale nemění**: pořád chce jen přezdívku a PIN, e-mail se doplňuje až
+  potom v „Účet". Vzor je převzatý z dětských platforem (Roblox, Scratch), které z téhož
+  důvodu e-mail nevyžadují, ale nabízejí.
+  1. **Sloupec `users.email` je schválně BEZ `UNIQUE`** — rodič musí smět mít stejnou
+     adresu u víc dětí. U dětského pásma to obrazovka rovnou označuje jako pole pro rodiče.
+  2. **Změna i smazání e-mailu chtějí PIN**, i když je hráč přihlášený. Bez toho by stačilo
+     zmocnit se odemčeného zařízení, navěsit si vlastní adresu a účet převzít.
+  3. **Odpověď na žádost o obnovu je vždy stejná** — pro existující účet, neexistující účet
+     i účet bez e-mailu. Jinak by endpoint sloužil ke zjišťování, které přezdívky existují.
+     Hlídá to test; kdyby někdo chtěl odpověď „zpřesnit", rozbije tím tuhle vlastnost.
+  4. **Token se ukládá jen jako otisk (SHA-256), je jednorázový a platí 30 minut.** Změna
+     PINu zneplatní i všechny ostatní nevyužité odkazy téhož účtu.
+  5. **Odkaz míří na `/hra?obnova=…`, ne na `/`.** Kořen podává appku jen v nasazení
+     (`dist/index.html`); lokální `wrangler pages dev` servíruje kořen repa, kde
+     `index.html` není, takže odkaz na `/` by lokálně otevřel prázdnou stránku.
+  6. **NEDORUČUJE SE.** [functions/_lib/mail.js](functions/_lib/mail.js) odkaz zatím jen
+     zaloguje. Poskytovatelé pustí poštu na cizí adresy až po ověření odesílající domény
+     (SPF/DKIM) a projekt žádnou doménu nemá. **Až bude:** `wrangler pages secret put
+     RESEND_API_KEY` + proměnná `MAIL_FROM`, kód se přepne sám podle přítomnosti klíče.
+     Do té doby je celý tok hotový a otestovaný, jen poslední článek chybí.
+
 - **2026-08-25 — Online režim NASAZEN: https://zemekviz.pages.dev (Cloudflare Pages + D1, region EEUR).**
   Nasazeno kvůli testování na mobilu, ne kvůli spuštění mezi lidi — doména se zatím neřeší,
   `*.pages.dev` stačí. **Adresa je veřejná: kdo ji dostane, může hrát.** Produkční databáze
@@ -123,7 +147,7 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
        si z odpovědi správný index a zkusit to znovu.
      - `npm run test:api` hlídá právě tyhle vlastnosti (22 kontrol) — hlavně to, že payload
        otázky neobsahuje `answer` ani index správné možnosti.
-  8. **Postaveno autonomně: kroky 1–8, krok 9 záměrně ne.** `npm run test:api` = 75 kontrol.
+  8. **Postaveno autonomně: kroky 1–8, krok 9 záměrně ne.** `npm run test:api` = 85 kontrol.
      Frontend dostavěn později ([online.js](online.js)); **režim je hratelný, ale nenasazený**
      — `wrangler.toml` má pořád `database_id = "placeholder-nahrad-po-vytvoreni"`, takže běží
      jen lokálně. Detaily v [docs/online-rezim.md](docs/online-rezim.md), tady jen odchylky od návrhu:

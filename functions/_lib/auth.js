@@ -1,5 +1,6 @@
 /**
- * Účty bez e-mailu: přezdívka + PIN (docs/online-rezim.md, sekce 5).
+ * Účty na přezdívku + PIN (docs/online-rezim.md, sekce 5). E-mail je NEPOVINNÝ
+ * a slouží jedinému účelu — obnově zapomenutého PINu. Registrace ho nechce.
  *
  * Poznámka k síle PINu: čtyřmístný PIN je z podstaty slabý a žádné hashování to
  * nespraví. Skutečná ochrana je v tom, že za účtem není nic cenného — žádný e-mail,
@@ -77,7 +78,7 @@ export async function currentUser(request, env) {
   }
   const uid = await verifyToken(token, sessionSecret(env));
   if (!uid) return null;
-  return env.DB.prepare('SELECT id, nick, avatar, band, is_bot FROM users WHERE id = ?')
+  return env.DB.prepare('SELECT id, nick, avatar, band, is_bot, email FROM users WHERE id = ?')
     .bind(uid).first();
 }
 
@@ -130,4 +131,27 @@ export function validatePin(pin) {
   const p = String(pin || '');
   if (!/^\d{4,8}$/.test(p)) return { error: 'PIN musí být 4 až 8 číslic' };
   return { pin: p };
+}
+
+// ---------------------------------------------------------------- e-mail (nepovinný)
+export function validateEmail(email) {
+  const e = String(email || '').trim().toLowerCase();
+  if (!e) return { error: 'e-mail je prázdný' };
+  if (e.length > 254) return { error: 'e-mail je moc dlouhý' };
+  // Schválně volná kontrola: přísné regulární výrazy na e-maily odmítají platné adresy.
+  // Skutečné ověření dělá až to, že na adresu dorazí odkaz.
+  if (!/^[^\s@]+@[^\s@.]+\.[^\s@]{2,}$/.test(e)) return { error: 'tohle nevypadá jako e-mail' };
+  return { email: e };
+}
+
+// ---------------------------------------------------------------- obnova PINu
+/** Token pro reset. Vrací dvojici: co jde do odkazu a co se uloží do databáze. */
+export async function newResetToken() {
+  const raw = urlB64(b64(crypto.getRandomValues(new Uint8Array(32))));
+  return { token: raw, hash: await sha256hex(raw) };
+}
+
+export async function sha256hex(text) {
+  const bits = await crypto.subtle.digest('SHA-256', enc.encode(text));
+  return [...new Uint8Array(bits)].map(b => b.toString(16).padStart(2, '0')).join('');
 }

@@ -4,6 +4,7 @@
 -- POZOR: každá nová tabulka musí přibýt i sem. Když se na to zapomene, skript
 -- spadne v půlce na „table X already exists" a databáze zůstane rozestavěná —
 -- s částí tabulek starých a částí nových.
+DROP TABLE IF EXISTS pin_resets;
 DROP TABLE IF EXISTS game_answers;
 DROP TABLE IF EXISTS game_players;
 DROP TABLE IF EXISTS games;
@@ -58,7 +59,11 @@ CREATE TABLE users (
   friend_code  TEXT UNIQUE,
   -- Skutečná ochrana slabého PINu není hashování, ale omezení počtu pokusů.
   login_fails  INTEGER NOT NULL DEFAULT 0,
-  locked_until INTEGER NOT NULL DEFAULT 0
+  locked_until INTEGER NOT NULL DEFAULT 0,
+  -- NEPOVINNÝ e-mail, jediné k čemu slouží je obnova zapomenutého PINu.
+  -- Schválně BEZ UNIQUE: rodič musí smět mít stejný e-mail u víc dětí.
+  -- U dětského pásma ho má vyplnit rodič (viz docs/online-rezim.md, sekce 5).
+  email        TEXT
 );
 
 -- Přátelství je oboustranné: ukládají se oba směry, ať se dá číst jedním dotazem.
@@ -157,3 +162,15 @@ CREATE TABLE daily (
   orders       TEXT NOT NULL,
   PRIMARY KEY (date, band)
 );
+
+-- ---------------------------------------------------------------- obnova PINu
+-- Token se ukládá jen jako otisk: kdo by se dostal k databázi, nesmí z ní
+-- vyčíst platné odkazy na reset. Jednorázový a s krátkou platností.
+CREATE TABLE pin_resets (
+  token_hash TEXT PRIMARY KEY,
+  user_id    TEXT NOT NULL REFERENCES users(id),
+  expires_at INTEGER NOT NULL,
+  used_at    INTEGER,
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX idx_pin_resets_user ON pin_resets(user_id, created_at);

@@ -335,6 +335,51 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(fb.body.bot.strength !== strengthBefore,
      'usazený hráč silou bota pohnul (' + strengthBefore + ' → ' + fb.body.bot.strength + ')');
 
+  // ---------------------------------------------------------------- e-mail a obnova PINu
+  section('Nepovinný e-mail a obnova PINu');
+
+  const M = (await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'Mail_' + uniq(), pin: '1234', band: 'dospeli' } })).body;
+
+  const me0 = await api('/api/me', { token: M.token });
+  ok(me0.body.email === null, 'nový účet e-mail nemá');
+
+  const spatnyPin = await api('/api/auth/email', { method: 'PUT', token: M.token,
+    body: { email: 'rodic@example.com', pin: '0000' } });
+  ok(spatnyPin.status === 401, 'e-mail nejde nastavit bez správného PINu, dostal ' + spatnyPin.status);
+
+  const nesmysl = await api('/api/auth/email', { method: 'PUT', token: M.token,
+    body: { email: 'tohle-neni-email', pin: '1234' } });
+  ok(nesmysl.status === 400, 'neplatný e-mail se odmítne, dostal ' + nesmysl.status);
+
+  const nastav = await api('/api/auth/email', { method: 'PUT', token: M.token,
+    body: { email: '  Rodic@Example.COM ', pin: '1234' } });
+  ok(nastav.status === 200 && nastav.body.email === 'rodic@example.com',
+     'e-mail se uloží zbavený mezer a malými písmeny');
+
+  const me1 = await api('/api/me', { token: M.token });
+  ok(me1.body.email === 'ro***@example.com', 'e-mail se vrací maskovaný: ' + me1.body.email);
+
+  const zadostA = await api('/api/auth/reset', { method: 'POST', body: { nick: M.nick } });
+  const zadostB = await api('/api/auth/reset', { method: 'POST', body: { nick: 'NeexistujeXyz' } });
+  ok(zadostA.status === 200 && zadostB.status === 200 &&
+     JSON.stringify(zadostA.body) === JSON.stringify(zadostB.body),
+     'obnova neprozradí, jestli účet existuje');
+
+  ok(!JSON.stringify(zadostA.body).includes('obnova='),
+     'odpověď neobsahuje resetovací odkaz — ten jde jen mailem');
+
+  const spatnyToken = await api('/api/auth/reset/confirm', { method: 'POST',
+    body: { token: 'vymysleny-token', pin: '5555' } });
+  ok(spatnyToken.status === 400, 'vymyšlený token neprojde, dostal ' + spatnyToken.status);
+
+  const poDele = await api('/api/auth/email', { method: 'DELETE', token: M.token,
+    body: { pin: '1234' } });
+  ok(poDele.status === 200 && poDele.body.email === null, 'e-mail jde smazat');
+
+  const me2 = await api('/api/me', { token: M.token });
+  ok(me2.body.email === null, 'po smazání /me hlásí, že e-mail není');
+
   console.log('\n' + (fail ? 'NEPROŠLO: ' + fail + ' chyb, ' + pass + ' v pořádku'
                            : 'VŠE V POŘÁDKU: ' + pass + ' kontrol'));
   process.exit(fail ? 1 : 0);
