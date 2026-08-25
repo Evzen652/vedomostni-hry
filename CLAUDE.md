@@ -95,8 +95,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
        si z odpovědi správný index a zkusit to znovu.
      - `npm run test:api` hlídá právě tyhle vlastnosti (22 kontrol) — hlavně to, že payload
        otázky neobsahuje `answer` ani index správné možnosti.
-  8. **Postaveno autonomně: kroky 1–8, krok 9 záměrně ne.** `npm run test:api` = 70 kontrol.
-     Detaily v [docs/online-rezim.md](docs/online-rezim.md), tady jen odchylky od návrhu:
+  8. **Postaveno autonomně: kroky 1–8, krok 9 záměrně ne.** `npm run test:api` = 75 kontrol.
+     Frontend dostavěn později ([online.js](online.js)); **režim je hratelný, ale nenasazený**
+     — `wrangler.toml` má pořád `database_id = "placeholder-nahrad-po-vytvoreni"`, takže běží
+     jen lokálně. Detaily v [docs/online-rezim.md](docs/online-rezim.md), tady jen odchylky od návrhu:
      - **Živý duel běží na dotazování po ~2 s, ne na WebSocketu.** Pages Functions neumí
        definovat Durable Objects ve vlastním kódu (chtěl by to samostatný Worker navíc)
        a u otázky s limitem 10–20 s je dvousekundové zpoždění k nerozeznání. ~50 dotazů

@@ -1,8 +1,11 @@
 # Online režim — návrh architektury
 
-> Stav: **backend hotový, frontend ne**. Kroky 1–8 z pořadí stavby jsou postavené
-> a otestované (`npm run test:api`, 70 kontrol), krok 9 záměrně vynechaný.
-> Běží to zatím jen lokálně (`npm run dev`) a `hra.html` o online režimu ještě neví.
+> Stav: **hratelné, ale nenasazené**. Kroky 1–8 z pořadí stavby jsou postavené včetně
+> frontendu ([online.js](../online.js), dlaždice Online v `hra.html`) a otestované
+> — `npm run test:api`, 75 kontrol, plus ruční průchod celého režimu 2026-08-25.
+> Krok 9 (turnaje) záměrně vynechaný. Běží to zatím **jen lokálně** (`npm run dev`):
+> `wrangler.toml` má pořád `database_id = "placeholder-nahrad-po-vytvoreni"`, takže
+> si nikdo kromě vývojáře nezahraje. Co zbývá, viz „Co ještě chybí" v sekci 9.
 
 Cílem je online hraní ve stylu chess.com: účty, párování soupeřů, rating, žebříčky,
 turnaje. Tenhle dokument popisuje **cílový stav** a **pořadí stavby**, kterým se k němu
@@ -284,12 +287,22 @@ Kroky 3 a 4 byly schválně **před** živým duelem: jsou to přesně ty dvě v
 
 ### Co ještě chybí, než to půjde pustit mezi lidi
 
-- **Frontend.** Hotové je API, ne obrazovky. `hra.html` zatím o online režimu neví.
-- **Nasazení.** Účet na Cloudflare, `database_id` ve `wrangler.toml`, seed do vzdálené D1
-  a `SESSION_SECRET` přes `wrangler secret put`.
-- **Sezóny** (měsíční reset) a **výzva konkrétnímu příteli**.
-- **Úklid fronty** — zatím se opuštěné položky mažou až při dalším párování; při provozu
+- ✅ ~~**Frontend.**~~ Postaven ([online.js](../online.js)), dlaždice Online v `hra.html`.
+  Ověřeno ručním průchodem 2026-08-25: registrace, párování, boti, souboj na odkaz,
+  denní pětka, přátelé, rating.
+- ⬜ **Nasazení.** Účet na Cloudflare, `database_id` ve `wrangler.toml` (pořád placeholder),
+  seed do vzdálené D1 a `SESSION_SECRET` přes `wrangler secret put`. **Tohle je jediná
+  položka, která mění „funguje mi to doma" na „dá se to hrát".**
+- ⬜ **Výzva konkrétnímu příteli.** `friends.js` umí jen přidat a vypsat; vyzvat kamaráda
+  jde zatím pouze přeposláním odkazu na souboj.
+- ⬜ **Sezóny** (měsíční reset ratingu).
+- ⬜ **Úklid fronty** — zatím se opuštěné položky mažou až při dalším párování; při provozu
   by to chtělo naplánovanou úlohu (Cron Trigger).
+- ⬜ **`assets/mode-online.jpg`** — dlaždice Online jako jediná ze čtyř nemá ilustraci
+  a padá na emoji fallback.
+
+Sezóny, výzvy a úklid fronty mají smysl řešit až podle toho, jestli tam někdo přijde —
+stejná logika, kvůli které jsou odložené turnaje.
 
 ---
 
