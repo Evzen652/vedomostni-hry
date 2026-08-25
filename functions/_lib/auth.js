@@ -82,9 +82,12 @@ export async function currentUser(request, env) {
 }
 
 export function sessionSecret(env) {
-  // V produkci se nastaví přes `wrangler secret put SESSION_SECRET`.
-  // Lokálně stačí vývojová konstanta — tokeny mimo tenhle stroj stejně nikam nejdou.
-  return env.SESSION_SECRET || 'dev-only-nepouzivat-v-produkci';
+  // Lokálně: ALLOW_DEV_SECRET=1 v .dev.vars (viz .dev.vars.example, negituje se).
+  if (env.SESSION_SECRET) return env.SESSION_SECRET;
+  // Bez tajemství se smí běžet jen lokálně. Nasazená appka s touhle konstantou by
+  // měla podpisový klíč veřejně na GitHubu — kdokoli by si podepsal token na cizí účet.
+  if (env.ALLOW_DEV_SECRET) return 'dev-only-nepouzivat-v-produkci';
+  throw new Error('SESSION_SECRET není nastavený. V produkci: wrangler pages secret put SESSION_SECRET');
 }
 
 // ---------------------------------------------------------------- přezdívky

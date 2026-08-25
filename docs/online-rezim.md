@@ -1,11 +1,12 @@
 # Online režim — návrh architektury
 
-> Stav: **hratelné, ale nenasazené**. Kroky 1–8 z pořadí stavby jsou postavené včetně
-> frontendu ([online.js](../online.js), dlaždice Online v `hra.html`) a otestované
-> — `npm run test:api`, 75 kontrol, plus ruční průchod celého režimu 2026-08-25.
-> Krok 9 (turnaje) záměrně vynechaný. Běží to zatím **jen lokálně** (`npm run dev`):
-> `wrangler.toml` má pořád `database_id = "placeholder-nahrad-po-vytvoreni"`, takže
-> si nikdo kromě vývojáře nezahraje. Co zbývá, viz „Co ještě chybí" v sekci 9.
+> Stav: **nasazeno na https://zemekviz.pages.dev** (2026-08-25) — Cloudflare Pages + D1,
+> region EEUR. Nasazeno kvůli testování na mobilu, ne kvůli spuštění mezi lidi.
+> **Adresa je veřejná: kdo ji dostane, může hrát.**
+> Kroky 1–8 postavené včetně frontendu ([online.js](../online.js), dlaždice Online
+> v `hra.html`), otestované — `npm run test:api`, 75 kontrol, plus ruční průchod
+> celého režimu. Krok 9 (turnaje) záměrně vynechaný.
+> Nasazuje se `npm run deploy`; pasti kolem toho viz [CLAUDE.md](../CLAUDE.md), 2026-08-25.
 
 Cílem je online hraní ve stylu chess.com: účty, párování soupeřů, rating, žebříčky,
 turnaje. Tenhle dokument popisuje **cílový stav** a **pořadí stavby**, kterým se k němu
@@ -22,7 +23,7 @@ V menu přibude čtvrtá dlaždice, která bez připojení hlásí, že potřebu
 **Tím ale padá konvence „appka je offline-only"** zapsaná v CLAUDE.md od založení projektu.
 Nově platí: *offline-first* — všechno, co šlo offline, jde offline dál; online je nadstavba.
 
-**Appka dnes nikde neběží.** Není žádná deploy konfigurace, žádné CI. Online tedy znamená
+**~~Appka dnes nikde neběží.~~** *(Neplatí od 2026-08-25 — běží na Cloudflare Pages.)*
 i poprvé vyřešit hosting (~32 MB statiky: 7,4 MB data + 19 MB img + 6 MB assets).
 
 ---
@@ -290,9 +291,9 @@ Kroky 3 a 4 byly schválně **před** živým duelem: jsou to přesně ty dvě v
 - ✅ ~~**Frontend.**~~ Postaven ([online.js](../online.js)), dlaždice Online v `hra.html`.
   Ověřeno ručním průchodem 2026-08-25: registrace, párování, boti, souboj na odkaz,
   denní pětka, přátelé, rating.
-- ⬜ **Nasazení.** Účet na Cloudflare, `database_id` ve `wrangler.toml` (pořád placeholder),
-  seed do vzdálené D1 a `SESSION_SECRET` přes `wrangler secret put`. **Tohle je jediná
-  položka, která mění „funguje mi to doma" na „dá se to hrát".**
+- ✅ ~~**Nasazení.**~~ Hotovo 2026-08-25 — Pages projekt `zemekviz`, D1 v regionu EEUR,
+  `SESSION_SECRET` nastavený, produkční databáze naplněná (3 706 otázek, 18 botů).
+  Nasazuje se `npm run deploy` (sestaví `dist/` a nahraje ho).
 - ⬜ **Výzva konkrétnímu příteli.** `friends.js` umí jen přidat a vypsat; vyzvat kamaráda
   jde zatím pouze přeposláním odkazu na souboj.
 - ⬜ **Sezóny** (měsíční reset ratingu).

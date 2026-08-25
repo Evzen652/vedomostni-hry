@@ -15,7 +15,10 @@
     "import-images": "node scripts/import-images.js",
     "import-audio": "node scripts/import-audio.js",
     "export-deck": "node scripts/export-deck.js",
-    "test:api": "node scripts/test-api.js"
+    "test:api": "node scripts/test-api.js",
+    "db:init:remote": "npm run db:seed && wrangler d1 execute zemekviz --remote --file=schema.sql && wrangler d1 execute zemekviz --remote --file=data/d1-seed.sql",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name zemekviz",
+    "build": "node scripts/build-public.js"
   },
   "devDependencies": {
     "wrangler": "^4.125.0"

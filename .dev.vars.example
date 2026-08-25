@@ -1,0 +1,4 @@
+# Zkopíruj na .dev.vars (negituje se) — bez toho lokální server odmítne podepisovat tokeny.
+# Produkce tenhle soubor nikdy nevidí; tam se tajemství nastavuje přes
+#   wrangler pages secret put SESSION_SECRET
+ALLOW_DEV_SECRET=1

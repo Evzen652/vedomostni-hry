@@ -17,6 +17,34 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-25 — Online režim NASAZEN: https://zemekviz.pages.dev (Cloudflare Pages + D1, region EEUR).**
+  Nasazeno kvůli testování na mobilu, ne kvůli spuštění mezi lidi — doména se zatím neřeší,
+  `*.pages.dev` stačí. **Adresa je veřejná: kdo ji dostane, může hrát.** Produkční databáze
+  po ověření vyčištěna na 0 hráčů / 3 706 otázek / 18 botů.
+  1. **Statika se NESMÍ nasazovat z kořene repa.** Původní `pages_build_output_dir = "."`
+     nahrálo na web i `CLAUDE.md`, `schema.sql`, `package.json` a 2,8MB `data/d1-seed.sql`.
+     **`.assetsignore` Pages IGNORUJE** (je to funkce Workers Assets — ověřeno, vyjmenované
+     soubory zůstaly veřejně dostupné). Jediná spolehlivá cesta je nedat je do výstupu vůbec:
+     `npm run build` (= [scripts/build-public.js](scripts/build-public.js)) sestaví `dist/`
+     jen z toho, co má být venku, a `npm run deploy` nasazuje odtud. **Nová veřejná složka
+     nebo soubor musí přibýt do seznamu v tom skriptu**, jinak se na web nedostane.
+     `functions/` tam nepatří — Pages je bere z kořene projektu zvlášť.
+  2. **Past: `.pages.dev` cachuje i soubory, které už nasazení nemá.** Po opravě výstupu
+     vracely staré URL pořád 200; s cache-busterem (`?cb=…`) a na adrese konkrétního
+     nasazení už 404. Při ověřování nasazení proto vždy obejít cache, jinak testuješ minulost.
+  3. **Past: změna `database_id` ve `wrangler.toml` resetuje LOKÁLNÍ databázi.** Wrangler si
+     lokální D1 klíčuje podle id, takže po doplnění skutečného id ukazoval vývoj na prázdnou
+     databázi a testy padaly na „no such table: users". Řeší `npm run db:init`.
+  4. **`SESSION_SECRET` teď chybí nahlas, ne potichu.** `sessionSecret()` dřív při chybějícím
+     tajemství tiše spadl na konstantu `'dev-only-nepouzivat-v-produkci'`, která je veřejně
+     na GitHubu — nasazení bez nastaveného tajemství by mělo podpisový klíč veřejně a kdokoli
+     by si podepsal token na cizí účet. Nově se bez tajemství odmítne podepsat cokoli.
+     **Lokální vývoj proto potřebuje `.dev.vars` s `ALLOW_DEV_SECRET=1`** (negituje se, vzor
+     je ve verzovaném `.dev.vars.example`) — bez něj padá registrace na 500.
+  5. **`npm run db:init:remote` je destruktivní.** Spouští `schema.sql`, který začíná
+     `DROP TABLE` — na běžící produkci by smazal účty, ratingy i rozehrané hry. Jen pro
+     první naplnění.
+
 - **2026-08-25 — Pozvánka na souboj musí přistát v souboji, ne na rozcestníku.**
   Ruční test online režimu odhalil, že `?duel=…` fungoval jen náhodou: parametr četl až
   `ZKOnline.open()` ([online.js](online.js)), které volá **jen klik na dlaždici Online**

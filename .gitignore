@@ -16,3 +16,6 @@ Thumbs.db
 data/d1-seed.sql
 # lokální tajemství, nikdy neverzovat
 .dev.vars
+
+# sestavuje se z korene pres npm run build (viz scripts/build-public.js)
+dist/
