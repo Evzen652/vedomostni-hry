@@ -529,3 +529,94 @@
 .zk-oppbar { font-size: 12px; color: var(--muted); }
 .qz-a.ok { border-color: var(--ok); box-shadow: 0 3px 0 var(--ok); }
 .qz-a.bad { border-color: var(--bad); box-shadow: 0 3px 0 var(--bad); }
+
+/* ---- přihlašovací obrazovka online režimu -------------------------------
+   Vzor je převzatý z běžných přihlašovacích obrazovek (Duolingo, chess.com,
+   Scratch): JEDNA úzká karta uprostřed a v ní odshora dolů obrázek → nadpis →
+   pole → JEDNA barevná primární akce → tiché textové odkazy. Předtím tu byl
+   svislý flex přes celých 640 px .zk-wrap, kde měly „Zpět", „Přihlásit se"
+   i „Nemám hráče" stejnou vizuální váhu a „Zpět" navíc stálo nad nadpisem
+   jako hlavní akce. Šířka 460 px (po odečtení odsazení .qz-setup karta ~416 px)
+   je horní hranice, po kterou formulář o dvou polích ještě drží pohromadě.
+   Pozor: .qz-setup je svislý flex, takže cokoli uvnitř se bez align-self
+   roztáhne na plnou šířku — proto to má „Zpět" nastavené natvrdo. */
+/* padding-top: .qz-setup dává 58 px, jenže hostitelova hlava (.qz-host, absolutně
+   ukotvená k shellu) sahá do 62 px — „Zpět" se jí pak zezadu podlézá o pár pixelů.
+   Zbytek appky to má stejně, tady to ale bije do očí, protože pod tlačítkem
+   nezačíná mřížka dlaždic, ale jediná karta. */
+.zk-auth { max-width: 460px; padding-top: 76px; }
+.zk-auth > .qz-back { align-self: flex-start; width: auto; margin-bottom: 2px; }
+
+.zk-authcard { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 18px;
+  padding: 16px 16px 14px; box-shadow: 0 4px 0 #e3d5b8, 0 16px 34px rgba(120,90,50,.12); }
+/* Kotva obrazovky. Bez obrázku to byl jen text na papíře — a logo appky sem
+   nepatří, hostitelova žárovka už kouká z levého horního rohu (.qz-host-av),
+   takže by tu byla dvakrát. landing-hero.jpg je jinak osiřelý (landing.html
+   jen přesměrovává) a „lidi kolem glóbu" je přesně to, co online režim je.
+   Rám = stejná nalepená fotka jako u ilustrací dlaždic (.qz-tile-ic .ic-img). */
+.zk-authhero { display: block; box-sizing: border-box; width: 100%; height: 128px; object-fit: cover; object-position: 50% 46%;
+  border-radius: 12px; border: 3px solid #fffdf6; outline: 2px solid #e3d5b8;
+  box-shadow: 0 6px 16px rgba(120,90,50,.22); }
+/* Štítek přes spodní hranu fotky říká, do jaké části appky hráč vlezl —
+   stejný idiom jako .qz-mode-tag a .qz-tbadge, jen jediné barevné místo nahoře. */
+.zk-authtag { position: relative; z-index: 1; width: max-content; margin: -13px auto 0;
+  background: var(--teal); color: #fffdf6; font-size: 10.5px; font-weight: 800;
+  letter-spacing: .08em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px;
+  box-shadow: 0 2px 0 #1f5f5c; }
+.zk-authcard h2 { font-family: 'Nunito', sans-serif; font-size: 25px; font-weight: 800;
+  color: var(--teal); text-align: center; margin: 10px 0 3px; }
+.zk-authcard .zk-sub { font-size: 13px; color: var(--muted); text-align: center;
+  line-height: 1.4; margin: 0 auto 14px; max-width: 32ch; }
+
+/* Chyba se musí přečíst dřív, než hráč klikne znovu — samotný .qz-setnote je
+   kurzíva 11,5 px na střed, což je na „špatný PIN" příliš tiché. */
+.zk-autherr { background: #fbeeec; border: 1.5px solid #eec7bf; border-left: 4px solid var(--bad);
+  border-radius: 10px; padding: 8px 11px; margin-bottom: 12px; }
+.zk-autherr .qz-setnote { font-style: normal; font-size: 13px; text-align: left; line-height: 1.35; }
+
+.zk-authcard .zk-form { gap: 12px; }
+.zk-field .qz-fieldlabel { margin-bottom: 6px; }
+/* „Zapomněl jsem PIN" patří k poli s PINem, ne mezi hlavní akce dole (vzor
+   Google/GitHub/chess.com: odkaz sedí na řádku s popiskem pole). */
+.zk-labelrow { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.zk-labelrow .qz-fieldlabel { margin-bottom: 0; }
+/* 16 px: pod tuhle velikost si iOS při kliknutí do pole sám přizoomuje stránku. */
+.zk-authcard .qz-pname-in { font-size: 16px; padding: 10px 12px; border-radius: 10px; border-width: 1.6px; }
+.zk-authcard .qz-pname-in::placeholder { color: #b9a98f; }
+.zk-authcard .qz-pname-in:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(42,127,127,.16); }
+.zk-authcard .qz-go { font-size: 17px; padding: 12px 20px; margin-top: 2px; }
+
+/* Pásmo se vybírá stejnými malovanými dlaždicemi jako v sólo hře (renderStart),
+   jen zmenšenými — jinak by online působil jako cizí formulář přilepený k appce. */
+.zk-bandpick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.zk-bandtile { background: var(--paper); border: 2px solid #dccdb0; border-radius: 14px;
+  padding: 8px 4px 7px; cursor: pointer; font-family: inherit; color: var(--ink);
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  box-shadow: 0 3px 0 #e3d5b8; transition: transform .12s, box-shadow .12s; }
+.zk-bandtile img { width: 56px; height: 56px; object-fit: cover; border-radius: 12px;
+  border: 2.5px solid #fffdf6; outline: 1.5px solid #e3d5b8; display: block; }
+.zk-bandtile .zk-fb { font-size: 30px; line-height: 56px; }
+.zk-bandtile .t { font-size: 12.5px; font-weight: 800; }
+.zk-bandtile:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #e3d5b8; }
+.zk-bandtile.on { border-color: var(--teal); background: #f1faf8; box-shadow: 0 3px 0 #1d6060; }
+.zk-nicknote { text-align: left; font-size: 12px; margin-top: 8px; }
+
+/* Tichý textový odkaz — vedlejší akce nemá konkurovat primárnímu tlačítku. */
+.zk-linkbtn { background: none; border: 0; padding: 4px 2px; margin: 0; cursor: pointer;
+  font-family: inherit; font-size: 13px; font-weight: 650; color: var(--muted);
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px;
+  text-decoration-color: #d8c9ad; }
+.zk-linkbtn:hover { color: var(--teal); text-decoration-color: var(--teal); }
+.zk-forgot { font-size: 12.5px; flex-shrink: 0; padding: 0; }
+
+.zk-authfoot { margin-top: 14px; padding-top: 12px; border-top: 1.5px solid #ecdfc7;
+  text-align: center; font-size: 13px; color: var(--muted); }
+.zk-authfoot .zk-linkbtn { font-size: 13px; color: var(--teal); text-decoration-color: #a9cfcb; }
+
+@media (max-width: 480px) {
+  .zk-authhero { height: 104px; }
+  .zk-authcard { padding: 14px 13px 12px; }
+  .zk-authcard h2 { font-size: 22px; }
+  .zk-bandtile img { width: 48px; height: 48px; }
+  .zk-bandtile .t { font-size: 11.5px; }
+}

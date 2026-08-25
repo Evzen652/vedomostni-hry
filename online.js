@@ -107,69 +107,144 @@ window.ZKOnline = (function () {
   }
 
   // ---------------------------------------------------------------- přihlášení
-  function renderAuth(mode, msg) {
+  // `stav` = { band, nick } vyplněné před chybou. Obrazovka se překresluje celá,
+  // takže bez tohohle by hráč po překlepu v PINu psal přezdívku a klikal dlaždici
+  // znovu. PIN se schválně nevrací — heslo se po chybě vždycky maže.
+  function renderAuth(mode, msg, stav) {
     mode = mode || "login";
+    stav = stav || {};
     stopAll();
-    say(pendingDuel()
-      ? "Někdo tě vyzval na souboj. Přihlas se a jdeme na to — stačí přezdívka a PIN."
-      : "Online hraní chce jméno. Stačí přezdívka a PIN, e-mail je nepovinný.");
+    var vyzva = !!pendingDuel();
+    say(vyzva
+      ? "Někdo tě vyzval na souboj. Přihlas se a jdeme na to."
+      : "Online hraní chce jméno. Stačí přezdívka a PIN.");
     var isReg = mode === "register";
+    var podtitul = vyzva
+      ? "Někdo tě vyzval na souboj — přihlas se a jde se hrát."
+      : isReg
+        ? "Stačí přezdívka a PIN. E-mail můžeš doplnit až potom v Účtu."
+        : "Vítej zpátky. Zadej přezdívku a PIN.";
+    var PASMA = [
+      { id: "deti", t: "Děti", fb: "🧒" },
+      { id: "starsi", t: "Puberťáci", fb: "🧑‍🎓" },
+      { id: "dospeli", t: "Dospělí", fb: "🧑" },
+    ];
+
+    // Jedna karta: obrázek → nadpis → pole → jediná barevná akce → tiché odkazy.
     body.innerHTML =
-      '<div class="qz-screen qz-setup zk-wrap">' +
+      '<div class="qz-screen qz-setup zk-wrap zk-auth">' +
       backBar("Zpět", leave) +
-      "<h2>" + (isReg ? "Nový hráč" : "Přihlášení") + "</h2>" +
-      errBox(msg) +
-      '<div class="qz-setcard zk-form">' +
-        (isReg
-          ? '<div class="qz-fieldlabel">Kdo bude hrát?</div>' +
-            '<div class="qz-bands" id="zk-bands">' +
-              ['deti', 'starsi', 'dospeli'].map(function (b, i) {
-                return '<button class="qz-chip' + (i === 2 ? " on" : "") + '" data-band="' + b + '">' +
-                  { deti: "Děti", starsi: "Pubertáci", dospeli: "Dospělí" }[b] + "</button>";
-              }).join("") +
+      '<div class="zk-authcard">' +
+        '<img class="zk-authhero" src="assets/landing-hero.jpg" alt="" data-fb="hide">' +
+        '<div class="zk-authtag">Online</div>' +
+        "<h2>" + (isReg ? "Nový hráč" : "Přihlášení") + "</h2>" +
+        '<div class="zk-sub">' + esc(podtitul) + "</div>" +
+        (msg ? '<div class="zk-autherr">' + errBox(msg) + "</div>" : "") +
+        '<div class="zk-form">' +
+          (isReg
+            ? '<div class="zk-field">' +
+                '<div class="qz-fieldlabel">Kdo bude hrát?</div>' +
+                '<div class="zk-bandpick" id="zk-bands" role="group" aria-label="Věkové pásmo">' +
+                  PASMA.map(function (b) {
+                    return '<button type="button" class="zk-bandtile" data-band="' + b.id + '" aria-pressed="false">' +
+                      '<img src="assets/band-' + b.id + '.jpg" alt="" data-fb="' + b.fb + '">' +
+                      '<span class="t">' + b.t + "</span></button>";
+                  }).join("") +
+                "</div>" +
+                '<div class="qz-setnote zk-nicknote" id="zk-nicknote" style="display:none">' +
+                  "Dětem přezdívku vymyslíme, ať do ní nejde schovat vzkaz.</div>" +
+              "</div>"
+            : "") +
+          '<div class="zk-field" id="zk-nickwrap">' +
+            '<div class="qz-fieldlabel">Přezdívka</div>' +
+            '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="jak ti mají říkat" value="' +
+              esc(stav.nick || "") + '">' +
+          "</div>" +
+          '<div class="zk-field">' +
+            '<div class="zk-labelrow">' +
+              '<div class="qz-fieldlabel">PIN (4 až 8 číslic)</div>' +
+              // Zapomenutý PIN patří k poli s PINem, ne mezi hlavní akce dole.
+              (isReg ? "" : '<button type="button" class="zk-linkbtn zk-forgot" id="zk-forgot">Zapomněl jsem PIN</button>') +
             "</div>" +
-            '<div class="qz-setnote" id="zk-nicknote">Dětem přezdívku vymyslíme, ať do ní nejde schovat vzkaz.</div>'
-          : "") +
-        '<div id="zk-nickwrap"' + (isReg ? ' style="display:none"' : "") + '>' +
-          '<div class="qz-fieldlabel">Přezdívka</div>' +
-          '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="off" placeholder="jak ti mají říkat">' +
+            '<input class="qz-pname-in" id="zk-pin" type="password" inputmode="numeric" maxlength="8" autocomplete="' +
+              (isReg ? "new-password" : "current-password") + '" placeholder="••••">' +
+          "</div>" +
+          '<button class="qz-go" id="zk-go"' + (isReg ? " disabled" : "") + ">" +
+            (isReg ? "Založit hráče" : "Přihlásit se") + " →</button>" +
         "</div>" +
-        '<div class="qz-fieldlabel">PIN (4 až 8 číslic)</div>' +
-        '<input class="qz-pname-in" id="zk-pin" type="password" inputmode="numeric" maxlength="8" autocomplete="off" placeholder="••••">' +
-        '<button class="qz-go" id="zk-go">' + (isReg ? "Založit hráče" : "Přihlásit se") + " →</button>" +
-        '<button class="qz-back" id="zk-switch" style="margin-top:.8rem">' +
-          (isReg ? "Už mě máte — přihlásit" : "Nemám hráče — založit") + "</button>" +
-        (isReg ? "" : '<button class="qz-back" id="zk-forgot" style="margin-top:.5rem">Zapomněl jsem PIN</button>') +
+        '<div class="zk-authfoot">' +
+          (isReg ? "Už tu hráče máš? " : "Ještě tu hráče nemáš? ") +
+          '<button type="button" class="zk-linkbtn" id="zk-switch">' +
+            (isReg ? "Přihlas se" : "Založ si ho") + "</button>" +
+        "</div>" +
       "</div></div>";
 
-    var band = "dospeli";
+    // Chybějící obrázek nesmí nechat v kartě díru ani rozbitou ikonu.
+    body.querySelectorAll(".zk-authcard img[data-fb]").forEach(function (im) {
+      im.addEventListener("error", function () {
+        if (im.dataset.fb === "hide") { im.style.display = "none"; return; }
+        var s = document.createElement("span");
+        s.className = "zk-fb";
+        s.textContent = im.dataset.fb;
+        if (im.parentNode) im.parentNode.replaceChild(s, im);
+      });
+    });
+
+    // Pásmo se schválně NEPŘEDVYBÍRÁ: určuje fond otázek i žebříček natrvalo,
+    // takže tichá výchozí hodnota by dítě zapsala mezi dospělé. Do té doby je
+    // primární tlačítko disabled — stejný vzor jako S.bandTouched v sólo hře.
+    var band = isReg ? null : "dospeli";
+    var predvolba = isReg ? stav.band : null;
+    var goBtn = body.querySelector("#zk-go");
     var bandsEl = body.querySelector("#zk-bands");
     if (bandsEl) {
-      bandsEl.querySelectorAll(".qz-chip").forEach(function (c) {
+      bandsEl.querySelectorAll(".zk-bandtile").forEach(function (c) {
         c.addEventListener("click", function () {
-          bandsEl.querySelectorAll(".qz-chip").forEach(function (x) { x.classList.remove("on"); });
+          bandsEl.querySelectorAll(".zk-bandtile").forEach(function (x) {
+            x.classList.remove("on");
+            x.setAttribute("aria-pressed", "false");
+          });
           c.classList.add("on");
+          c.setAttribute("aria-pressed", "true");
           band = c.dataset.band;
+          goBtn.disabled = false;
           var wrap = body.querySelector("#zk-nickwrap");
           var note = body.querySelector("#zk-nicknote");
           wrap.style.display = band === "deti" ? "none" : "";
           note.style.display = band === "deti" ? "" : "none";
         });
       });
+      if (predvolba) {
+        var zvolena = bandsEl.querySelector('.zk-bandtile[data-band="' + predvolba + '"]');
+        if (zvolena) zvolena.click();
+      }
     }
     var zapomnel = body.querySelector("#zk-forgot");
     if (zapomnel) zapomnel.addEventListener("click", function () { renderForgot(); });
     body.querySelector("#zk-switch").addEventListener("click", function () {
       renderAuth(isReg ? "login" : "register");
     });
-    body.querySelector("#zk-go").addEventListener("click", function () {
-      var nick = (body.querySelector("#zk-nick") || {}).value || "";
+    // Enter ve formuláři odesílá — jinak by hráč musel po PINu ještě trefit tlačítko.
+    body.querySelectorAll(".zk-authcard .qz-pname-in").forEach(function (inp) {
+      inp.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" && !goBtn.disabled) goBtn.click();
+      });
+    });
+    // Po chybě kurzor rovnou do PINu (ten se maže), jinak fokus jen na velkém
+    // displeji — na mobilu by hned po otevření vyskočila klávesnice přes půl obrazovky.
+    if (msg) {
+      body.querySelector("#zk-pin").focus();
+    } else if (!isReg && window.matchMedia && window.matchMedia("(min-width: 900px)").matches) {
+      body.querySelector("#zk-nick").focus();
+    }
+    goBtn.addEventListener("click", function () {
+      var nick = band === "deti" ? "" : ((body.querySelector("#zk-nick") || {}).value || "");
       var pin = body.querySelector("#zk-pin").value || "";
       var path = isReg ? "/auth/register" : "/auth/login";
       var payload = isReg ? { band: band, pin: pin, nick: nick } : { nick: nick, pin: pin };
       req(path, { method: "POST", body: payload }).then(function (r) {
         if (r.status !== 200 && r.status !== 201) {
-          return renderAuth(mode, (r.body && r.body.error) || "Nepovedlo se.");
+          return renderAuth(mode, (r.body && r.body.error) || "Nepovedlo se.", { band: band, nick: nick });
         }
         token.set(r.body.token);
         S.me = r.body;
@@ -305,7 +380,7 @@ window.ZKOnline = (function () {
       "<h2>Online</h2>" +
       errBox(msg) +
       '<div class="qz-meta" style="text-align:center;margin-bottom:1rem">' +
-        esc(S.me.nick) + " · " + { deti: "Děti", starsi: "Pubertáci", dospeli: "Dospělí" }[S.me.band] +
+        esc(S.me.nick) + " · " + { deti: "Děti", starsi: "Puberťáci", dospeli: "Dospělí" }[S.me.band] +
         (r ? " · rating <b>" + r.rating + "</b>" + (r.games ? " (" + r.games + " " + plur(r.games, "hra", "hry", "her") + ")" : " (zatím nezahráno)") : "") +
       "</div>" +
       '<div class="qz-modes">' +
