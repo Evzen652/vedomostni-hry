@@ -580,10 +580,11 @@
    Google/GitHub/chess.com: odkaz sedí na řádku s popiskem pole). */
 .zk-labelrow { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
 .zk-labelrow .qz-fieldlabel { margin-bottom: 0; }
-/* 16 px: pod tuhle velikost si iOS při kliknutí do pole sám přizoomuje stránku. */
-.zk-authcard .qz-pname-in { font-size: 16px; padding: 10px 12px; border-radius: 10px; border-width: 1.6px; }
-.zk-authcard .qz-pname-in::placeholder { color: #b9a98f; }
-.zk-authcard .qz-pname-in:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(42,127,127,.16); }
+/* 16 px: pod tuhle velikost si iOS při kliknutí do pole sám přizoomuje stránku.
+   Platí i pro sekce Účtu (.zk-sect) — je to táž appka a týž mobil. */
+.zk-authcard .qz-pname-in, .zk-sect .qz-pname-in { font-size: 16px; padding: 10px 12px; border-radius: 10px; border-width: 1.6px; }
+.zk-authcard .qz-pname-in::placeholder, .zk-sect .qz-pname-in::placeholder { color: #b9a98f; }
+.zk-authcard .qz-pname-in:focus, .zk-sect .qz-pname-in:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(42,127,127,.16); }
 .zk-authcard .qz-go { font-size: 17px; padding: 12px 20px; margin-top: 2px; }
 
 /* Pásmo se vybírá stejnými malovanými dlaždicemi jako v sólo hře (renderStart),
@@ -619,4 +620,83 @@
   .zk-authcard h2 { font-size: 22px; }
   .zk-bandtile img { width: 48px; height: 48px; }
   .zk-bandtile .t { font-size: 11.5px; }
+}
+
+/* ---- obnova PINu (renderForgot, renderResetPin) --------------------------
+   Obojí je plnohodnotný krok TÉHOŽ toku — na „Zapomněl jsem PIN" se kliká přímo
+   z přihlašovací karty —, takže obě obrazovky berou stejnou kartu i štítek.
+   Hero fotku má ale jen „Nový PIN": tam hráč přistane rovnou z odkazu v e-mailu,
+   bez jakéhokoli kontextu, a obrazovka mu musí sama říct, kde je. Do „Zapomenutého
+   PINu" se naopak proklikne z karty, která tutéž fotku ukázala před vteřinou —
+   druhá kopie by jen odsunula jediné pole formuláře pod okraj displeje. */
+.zk-authcard.zk-nohero { padding-top: 18px; }
+/* Štítek si bez fotky nemá co podlézat, takže padá záporný odsazovací trik. */
+.zk-authcard.zk-nohero .zk-authtag { margin: 0 auto; }
+
+/* Po odeslání odkazu formulář mizí a zůstane potvrzení — teal, ne šedý .qz-setnote,
+   ať je na první pohled poznat „prošlo to" a ne „tady se ještě něco vyplňuje". */
+.zk-donebox { display: flex; gap: 10px; align-items: flex-start; text-align: left;
+  background: #eef7f4; border: 1.5px solid #bcded6; border-left: 4px solid var(--teal);
+  border-radius: 10px; padding: 10px 12px; margin-bottom: 12px; }
+.zk-doneico { color: var(--teal); font-weight: 800; font-size: 16px; line-height: 1.3; flex-shrink: 0; }
+.zk-donetext { font-size: 13px; line-height: 1.4; color: var(--ink); }
+.zk-authnote { font-size: 11.5px; color: var(--muted); font-style: italic; text-align: center;
+  margin-top: 10px; line-height: 1.4; }
+
+/* ---- účet (renderAccount) ------------------------------------------------
+   Vědomě NENÍ auth karta. Auth karta je vstupní bod: jedna úloha, jedna barevná
+   akce, obrázek jako kotva. Účet je nastavení uvnitř lobby a má dvě nezávislé
+   věci (e-mail / odhlášení) — v jedné kartě by se slily a hero fotka by nad
+   nastavením působila jako reklama. Společné zůstává všechno ostatní: papír,
+   rámečky, velikost polí, chybová lišta. Širší (560 px) než login, protože sekce
+   nesou i vysvětlující text, ne jen dvě pole. */
+.zk-acc { max-width: 560px; padding-top: 76px; }
+.zk-acc > .qz-back { align-self: flex-start; width: auto; margin-bottom: 2px; }
+.zk-acc h2 { margin: 0; }
+.zk-idrow { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.zk-idnick { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15px; color: var(--ink); }
+.zk-idband { font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+  color: #fffdf6; background: var(--teal); padding: 3px 10px; border-radius: 999px;
+  box-shadow: 0 2px 0 #1f5f5c; }
+
+.zk-sect { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 16px;
+  padding: 14px 15px 13px; box-shadow: 0 4px 0 #e3d5b8, 0 12px 26px rgba(120,90,50,.08); }
+.zk-sect h3 { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; color: var(--teal);
+  margin: 0; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.zk-h3note { font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--muted); background: #f2e9d6; border-radius: 999px; padding: 3px 9px; }
+.zk-sectnote { font-size: 12.5px; line-height: 1.45; color: var(--muted); margin: 5px 0 11px; }
+.zk-sect .qz-setnote { text-align: left; font-size: 11.5px; margin-top: 6px; line-height: 1.4; }
+.zk-sect .qz-go { font-size: 16px; padding: 11px 18px; margin-top: 2px; }
+.zk-sect .qz-back { width: 100%; justify-content: center; text-align: center; }
+
+/* Stav e-mailu je první, co má být v sekci vidět: účet bez adresy je jednosměrka,
+   a to se nedá říct jen popiskem pole. Okrová varianta záměrně nekřičí červeně —
+   není to chyba hráče, jen věc, kterou má smysl dodělat. */
+.zk-status { display: flex; gap: 10px; align-items: flex-start; border: 1.5px solid;
+  border-radius: 12px; padding: 9px 11px; margin-bottom: 12px; }
+.zk-status b { display: block; font-size: 13.5px; font-weight: 800; word-break: break-word; }
+.zk-status .d { display: block; font-size: 11.5px; color: var(--muted); line-height: 1.35; margin-top: 1px; }
+.zk-statusico { font-weight: 800; font-size: 15px; line-height: 1.3; flex-shrink: 0; }
+.zk-status.on { background: #eef7f4; border-color: #bcded6; }
+.zk-status.on .zk-statusico { color: var(--teal); }
+.zk-status.off { background: #fdf4e7; border-color: #ecd6ab; }
+.zk-status.off .zk-statusico { color: var(--ochre); }
+
+/* Smazání e-mailu je tichý odkaz, ne druhé tlačítko. Dřív to bylo full-width
+   .qz-back hned pod „Uložit", takže obě akce vypadaly jako rovnocenná nabídka. */
+.zk-dangerlink { display: block; margin: 11px auto 0; background: none; border: 0; padding: 4px 2px;
+  font-family: inherit; font-size: 12.5px; font-weight: 650; color: var(--bad); cursor: pointer;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px;
+  text-decoration-color: #e9c3ba; }
+.zk-dangerlink:hover { text-decoration-color: var(--bad); }
+
+/* Potvrzení uložení: po překreslení se jinak změní jen maskovaná adresa ve stavu. */
+.zk-okbox { background: #eef7f4; border: 1.5px solid #bcded6; border-left: 4px solid var(--teal);
+  border-radius: 10px; padding: 8px 11px; font-size: 13px; color: var(--ink); line-height: 1.35; }
+
+@media (max-width: 480px) {
+  .zk-sect { padding: 12px 12px 11px; }
+  .zk-sect h3 { font-size: 15px; }
+  .zk-sectnote { font-size: 12px; }
 }
