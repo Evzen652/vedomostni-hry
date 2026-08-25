@@ -47,4 +47,9 @@ for (const f of [...SOUBORY, ...JEDNOTLIVE]) {
 }
 for (const s of SLOZKY) celkem += kopirujStrom(s);
 
+// Kořen webu musí appku podat taky — kdo napíše holou doménu, nesmí dostat 404.
+// hra.html je podle CLAUDE.md domovská stránka, tak z ní uděláme i index.html.
+fs.copyFileSync(path.join(KOREN, "hra.html"), path.join(OUT, "index.html"));
+celkem++;
+
 console.log("dist/ hotov: " + celkem + " souborů");
