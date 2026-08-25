@@ -349,7 +349,15 @@
     data.questions = pool.length ? pool : all;
   }
 
-  function open(){ ensureData().then(()=>{ document.body.style.overflow="hidden"; root.classList.remove("qz-hidden"); renderModePick(); }); }
+  // Pozvánka na souboj (?duel=…) míří na tuhle stránku, ne na zvláštní adresu — kdo přijde
+  // po odkazu, musí skončit rovnou v souboji, ne na rozcestníku, kde by o výzvě nevěděl.
+  function open(){ ensureData().then(()=>{
+    document.body.style.overflow="hidden"; root.classList.remove("qz-hidden");
+    if(new URLSearchParams(location.search).get("duel") && window.ZKOnline){
+      showHomeBtn(true); window.ZKOnline.open(renderModePick); return;
+    }
+    renderModePick();
+  }); }
   function close(){ stopTTS(); clearTimer(); releaseWake(); renderModePick(); }
   // „×" je Domů a vrací na výběr režimu — na něm samotném by tedy jen překreslil tutéž obrazovku.
   // Ven z appky vést nemůže: landing.html je zrušená a hra.html je sama domovská stránka

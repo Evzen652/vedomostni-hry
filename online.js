@@ -61,6 +61,14 @@ window.ZKOnline = (function () {
     return msg ? '<div class="qz-setnote" style="color:var(--bad,#cf5f4e)">' + esc(msg) + "</div>" : "";
   }
 
+  // Vlastní kopie — plur() v quiz.js žije uvnitř tamní closure a ven nevede.
+  function plur(n, one, few, many) {
+    n = Math.abs(n);
+    if (n === 1) return one;
+    if (n >= 2 && n <= 4) return few;
+    return many;
+  }
+
   function backBar(label, onBack) {
     setTimeout(function () {
       var b = body.querySelector("#zk-back");
@@ -70,6 +78,13 @@ window.ZKOnline = (function () {
   }
 
   // ---------------------------------------------------------------- vstup
+  // Pozvánka na souboj žije v URL (?duel=…) až do chvíle, kdy se hráč připojí —
+  // joinFromLink ji pak z adresy smaže. Nepřihlášený tedy projde přihlášením
+  // a teprve potom se propadne do souboje, místo aby skončil v lobby.
+  function pendingDuel() {
+    return new URLSearchParams(location.search).get("duel");
+  }
+
   function open(onExit) {
     body = document.getElementById("qz-body");
     exitCb = onExit;
@@ -78,7 +93,7 @@ window.ZKOnline = (function () {
     return req("/me").then(function (r) {
       if (r.status !== 200) { token.clear(); return renderAuth(); }
       S.me = r.body;
-      var duel = new URLSearchParams(location.search).get("duel");
+      var duel = pendingDuel();
       if (duel) return joinFromLink(duel);
       renderLobby();
     });
@@ -93,7 +108,9 @@ window.ZKOnline = (function () {
   function renderAuth(mode, msg) {
     mode = mode || "login";
     stopAll();
-    say("Online hraní chce jméno. Žádný e-mail — stačí přezdívka a PIN.");
+    say(pendingDuel()
+      ? "Někdo tě vyzval na souboj. Přihlas se a jdeme na to — stačí přezdívka a PIN."
+      : "Online hraní chce jméno. Žádný e-mail — stačí přezdívka a PIN.");
     var isReg = mode === "register";
     body.innerHTML =
       '<div class="qz-screen qz-setup zk-wrap">' +
@@ -154,7 +171,12 @@ window.ZKOnline = (function () {
         if (isReg && band === "deti") {
           say("Tvoje jméno je " + r.body.nick + ". Zapamatuj si ho, budeš se jím přihlašovat.");
         }
-        req("/me").then(function (m) { S.me = m.body; renderLobby(); });
+        req("/me").then(function (m) {
+          S.me = m.body;
+          var duel = pendingDuel();
+          if (duel) return joinFromLink(duel);
+          renderLobby();
+        });
       });
     });
   }
@@ -171,7 +193,7 @@ window.ZKOnline = (function () {
       errBox(msg) +
       '<div class="qz-meta" style="text-align:center;margin-bottom:1rem">' +
         esc(S.me.nick) + " · " + { deti: "Děti", starsi: "Pubertáci", dospeli: "Dospělí" }[S.me.band] +
-        (r ? " · rating <b>" + r.rating + "</b>" + (r.games ? " (" + r.games + " her)" : " (zatím nezahráno)") : "") +
+        (r ? " · rating <b>" + r.rating + "</b>" + (r.games ? " (" + r.games + " " + plur(r.games, "hra", "hry", "her") + ")" : " (zatím nezahráno)") : "") +
       "</div>" +
       '<div class="qz-modes">' +
         tile("zk-live", "Hrát teď", "Najdeme ti soupeře. Nikdo? Nastoupí bot.") +

@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["-y", "http-server", "-p", "8777", "-c-1"],
       "port": 8777
+    },
+    {
+      "name": "kviz-online",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 8788
     }
   ]
 }

@@ -17,6 +17,27 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-25 — Pozvánka na souboj musí přistát v souboji, ne na rozcestníku.**
+  Ruční test online režimu odhalil, že `?duel=…` fungoval jen náhodou: parametr četl až
+  `ZKOnline.open()` ([online.js](online.js)), které volá **jen klik na dlaždici Online**
+  ([quiz.js](quiz.js)). Kdo přišel po odkazu od kamaráda, přistál na výběru režimů bez jediné
+  zmínky o výzvě a musel uhodnout, že má kliknout na Online. Druhá půlka téže chyby: i po
+  přihlášení šel kód rovnou `renderLobby()` a parametr zahodil. Opraveno na třech místech —
+  `open()` v quiz.js kontroluje `?duel=` už při načtení stránky, `renderAuth()` nepřihlášenému
+  řekne „Někdo tě vyzval na souboj", a po úspěšném přihlášení se propadne do souboje.
+  `joinFromLink()` parametr z adresy maže (`history.replaceState`), takže druhý vstup do
+  Online už normálně ukáže lobby — na to při případných úpravách pozor, jinak by se hráč
+  zacyklil v pořád stejném souboji.
+  - **Past: `plur()` v [quiz.js](quiz.js) je uvnitř tamní closure a `online.js` na něj nedosáhne.**
+    Lobby proto psalo „(1 HER)"; online.js má teď vlastní kopii se stejným pravidlem. Kdyby
+    přibyl třetí soubor, je čas helper vytáhnout ven, ne kopírovat potřetí.
+  - **Ověřeno, že žebříček není rozbitý, jen prázdný:** vyžaduje 5+ her **a RD < 150**, ale po
+    10 hrách proti stejně nejistým soupeřům je RD ~200. Simulace nad `functions/_lib/glicko.js`:
+    proti usazenému soupeři (RD 100) práh padne kolem 6. hry, proti úplně novým kolem 12.
+    Prázdný stav to hráči vysvětluje, takže se nemění — jen ať to příště nikdo nehoní jako bug.
+  - **Zbývá:** `assets/mode-online.jpg` neexistuje, dlaždice Online jako jediná ze čtyř padá na
+    emoji fallback (a dělá 404 v konzoli). Postup výroby viz sekce „Ilustrace" níž.
+
 - **2026-08-24 — Appka přestává být offline-only: schválen online režim ve stylu chess.com.**
   Plný návrh (režimy, rating, boti, API, datový model, pořadí stavby) žije v
   [docs/online-rezim.md](docs/online-rezim.md) — tenhle zápis drží jen rozhodnutí a jejich důvody.
