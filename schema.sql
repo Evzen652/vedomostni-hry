@@ -12,6 +12,9 @@ DROP TABLE IF EXISTS seen_questions;
 DROP TABLE IF EXISTS ratings;
 DROP TABLE IF EXISTS friends;
 DROP TABLE IF EXISTS queue;
+DROP TABLE IF EXISTS tournament_queue;
+DROP TABLE IF EXISTS tournament_players;
+DROP TABLE IF EXISTS tournaments;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS bots;
 DROP TABLE IF EXISTS daily;
@@ -115,7 +118,8 @@ CREATE TABLE games (
   created_at   INTEGER NOT NULL,
   status       TEXT NOT NULL DEFAULT 'open',   -- open | done
   rated        INTEGER NOT NULL DEFAULT 0,
-  daily_date   TEXT                              -- u režimu daily
+  daily_date   TEXT,                             -- u režimu daily
+  tournament_id TEXT                             -- u režimu turnaj
 );
 
 -- Jeden řádek na účastníka. Sólo hra má jednoho, souboj dva.
@@ -162,6 +166,45 @@ CREATE TABLE daily (
   orders       TEXT NOT NULL,
   PRIMARY KEY (date, band)
 );
+
+-- ---------------------------------------------------------------- turnaje (aréna)
+-- Časové okno, kdy hráči odehrají co nejvíc kol proti sobě (nebo botovi, když
+-- zrovna nikdo nečeká) a body z jednotlivých her se sčítají do žebříčku turnaje.
+-- Kola samotná jsou obyčejné hry (games.mode='turnaj', tournament_id vyplněný),
+-- nehodnocené v Glicku — sčítají se jen sem (docs/online-rezim.md, sekce 9).
+CREATE TABLE tournaments (
+  id           TEXT PRIMARY KEY,
+  band         TEXT NOT NULL,
+  time_control TEXT NOT NULL,
+  name         TEXT NOT NULL,
+  starts_at    INTEGER NOT NULL,
+  duration_min INTEGER NOT NULL,
+  created_by   TEXT NOT NULL,
+  created_at   INTEGER NOT NULL
+);
+CREATE INDEX idx_tournaments_band ON tournaments(band, starts_at);
+
+CREATE TABLE tournament_players (
+  tournament_id TEXT    NOT NULL,
+  user_id       TEXT    NOT NULL,
+  score         INTEGER NOT NULL DEFAULT 0,
+  games_played  INTEGER NOT NULL DEFAULT 0,
+  joined_at     INTEGER NOT NULL,
+  PRIMARY KEY (tournament_id, user_id)
+);
+CREATE INDEX idx_tp_user ON tournament_players(user_id);
+
+-- Fronta na spárování UVNITŘ jednoho turnaje. Samostatná od `queue` (živý duel),
+-- protože klíč jen podle user_id by hráči bránil čekat ve dvou frontách najednou
+-- (na ranked duel i na kolo turnaje).
+CREATE TABLE tournament_queue (
+  tournament_id TEXT NOT NULL,
+  user_id       TEXT NOT NULL,
+  joined_at     INTEGER NOT NULL,
+  game_id       TEXT,
+  PRIMARY KEY (tournament_id, user_id)
+);
+CREATE INDEX idx_tq_lookup ON tournament_queue(tournament_id, game_id);
 
 -- ---------------------------------------------------------------- obnova PINu
 -- Token se ukládá jen jako otisk: kdo by se dostal k databázi, nesmí z ní

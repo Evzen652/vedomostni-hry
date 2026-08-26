@@ -288,8 +288,21 @@ Cíl je celek, ale postavit se musí v pořadí. Tohle drží appku hratelnou v 
 6. ✅ **Rating a žebříčky.** Glicko-2 zvlášť za pásmo. *Sezóny zatím nejsou.*
 7. ✅ **Denní pětka.**
 8. ✅ **Přátelé (podle kódu) a odvety.** *Výzvy konkrétnímu příteli zatím nejsou.*
-9. ⬜ **Turnaje / arena.** **Záměrně nepostaveno** — turnaj pro nula hráčů je přesně ta
-   předčasná práce, před kterou tenhle plán varuje. Až bude koho do turnaje pozvat.
+9. ✅ **Turnaje / aréna.** Postaveno 2026-08-26, na výslovné přání navzdory bodu níž
+   (turnaj pro nula hráčů je do budoucna zbytečná práce, ale rozhodnuto stavět rovnou).
+   Model: časové okno (`starts_at` + `duration_min`), stav (`planovany`/`bezi`/`hotovo`)
+   se POČÍTÁ z časů, nic ho nepřepíná — bez toho by turnaj potřeboval naplánovanou úlohu.
+   Uvnitř okna si účastníci opakovaně žádají o další kolo (`POST /api/tournament/:id/play`),
+   spárují se s kýmkoli čekajícím ve stejném turnaji (FIFO — rating netřeba řešit, všichni
+   sdílí pásmo i časovou kontrolu z definice turnaje), nebo si po pár sekundách vyžádají
+   bota (`POST /api/tournament/:id/bot`, celé kolo odehraje najednou, ne jako dosazení
+   bota do rozehrané hry). Kola jsou obyčejné hry (`games.mode='turnaj'`), NEHODNOCENÉ
+   v Glicku — místo toho se body z každého kola sčítají do `tournament_players` a řadí
+   žebříček turnaje. Párování běží na samostatné `tournament_queue`, ne na sdílené
+   `queue` živého duelu — ta je klíčovaná jen podle `user_id`, takže by hráč nemohl čekat
+   na ranked duel a kolo turnaje zároveň. Frontend recykluje obrazovky duelu
+   (`beginGame`/`watchOpponent`/`showResult`) s větví pro `mode==='turnaj'`, ne nové UI.
+   Otestováno `npm run test:api` (+18 kontrol).
 
 Kroky 3 a 4 byly schválně **před** živým duelem: jsou to přesně ty dvě věci, které zajistí,
 že první hráči nepřijdou do prázdné herny.

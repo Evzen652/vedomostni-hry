@@ -499,6 +499,7 @@ window.ZKOnline = (function () {
         tile("zk-live", "Hrát teď", "Najdeme ti soupeře. Nikdo? Nastoupí bot.") +
         tile("zk-link", "Souboj na odkaz", "Pošli odkaz kamarádovi, hrajte kdy chcete.") +
         tile("zk-daily", "Denní pětka", "Pět otázek, pro všechny stejných. Jeden pokus.") +
+        tile("zk-tourney", "Turnaj", "Aréna: za daný čas odehraj co nejvíc kol.") +
       "</div>" +
       '<div class="qz-modes" style="margin-top:1rem">' +
         tile("zk-board", "Žebříček", "Kdo je na tom nejlíp.") +
@@ -509,6 +510,7 @@ window.ZKOnline = (function () {
     on("zk-live", startQueue);
     on("zk-link", createLink);
     on("zk-daily", startDaily);
+    on("zk-tourney", renderTournaments);
     on("zk-board", renderBoard);
     on("zk-friends", renderFriends);
     on("zk-account", renderAccount);
@@ -626,15 +628,15 @@ window.ZKOnline = (function () {
   }
 
   // ---------------------------------------------------------------- hra
-  function beginGame(id, mode, opponent) {
+  function beginGame(id, mode, opponent, tournamentId) {
     stopAll();
-    S.game = { id: id, mode: mode, n: 0, opponent: opponent, score: 0 };
+    S.game = { id: id, mode: mode, n: 0, opponent: opponent, score: 0, tournamentId: tournamentId || null };
     req("/game/" + id).then(function (r) {
       if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Hra se nenačetla.");
       S.game.total = r.body.total;
       S.game.n = r.body.me.answered;
       S.game.score = r.body.me.score;
-      if (r.body.me.done) return showResult(id, mode);
+      if (r.body.me.done) return showResult(id, mode, tournamentId);
       nextQuestion();
     });
   }
@@ -642,7 +644,7 @@ window.ZKOnline = (function () {
   function nextQuestion() {
     stopAll();
     var g = S.game;
-    if (g.n >= g.total) return showResult(g.id, g.mode);
+    if (g.n >= g.total) return showResult(g.id, g.mode, g.tournamentId);
 
     req("/game/" + g.id + "/q/" + g.n).then(function (r) {
       if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Otázka se nenačetla.");
@@ -678,7 +680,7 @@ window.ZKOnline = (function () {
         });
       });
 
-      if (g.mode === "duel") watchOpponent();
+      if (g.mode === "duel" || g.mode === "turnaj") watchOpponent();
     });
   }
 
@@ -730,7 +732,7 @@ window.ZKOnline = (function () {
           (a.done ? "Výsledek" : "Další otázka") + " →</button></div></div>");
 
       body.querySelector("#zk-next").addEventListener("click", function () {
-        if (a.done) showResult(S.game.id, S.game.mode);
+        if (a.done) showResult(S.game.id, S.game.mode, S.game.tournamentId);
         else nextQuestion();
       });
       var m = body.querySelector("#zk-more");
@@ -755,7 +757,7 @@ window.ZKOnline = (function () {
   }
 
   // ---------------------------------------------------------------- výsledek
-  function showResult(id, mode) {
+  function showResult(id, mode, tournamentId) {
     stopAll();
     req("/game/" + id).then(function (r) {
       if (r.status !== 200) return renderLobby("Výsledek se nenačetl.");
@@ -790,20 +792,26 @@ window.ZKOnline = (function () {
           '<br><span class="qz-expl">' + esc(it.explanation || "") + "</span></span></div>";
       }).join("");
 
+      var isTurnaj = mode === "turnaj" && tournamentId;
+      var note = isTurnaj ? "Turnajové kolo — body se přičetly do žebříčku turnaje."
+        : !g.rated ? "Nehodnocená hra."
+        : waiting ? "Hodnocená hra — rating se přepočítá, až dohrajete oba."
+        : "Hodnocená hra — rating se přepočítal.";
+      var buttons = isTurnaj
+        ? '<button class="qz-more" id="zk-tnext">Další kolo</button>' +
+          '<button class="qz-next" id="zk-tback">Zpět do turnaje →</button>'
+        : (g.status === "done" && g.players.length > 1
+            ? '<button class="qz-more" id="zk-rematch">Odveta</button>' : "") +
+          '<button class="qz-next" id="zk-lobby">Zpět do online →</button>';
+
       body.innerHTML =
         '<div class="qz-screen qz-end zk-wrap">' +
         "<h2>" + esc(head) + "</h2>" +
         '<div class="qz-endscore">' + g.me.score + " bodů</div>" +
         '<div class="zk-rowlist">' + rows + "</div>" +
-        '<div class="qz-setnote">' + (!g.rated ? 'Nehodnocená hra.'
-          : waiting ? 'Hodnocená hra — rating se přepočítá, až dohrajete oba.'
-          : 'Hodnocená hra — rating se přepočítal.') + '</div>' +
+        '<div class="qz-setnote">' + note + "</div>" +
         (review ? '<h3 style="margin-top:1.2rem">Rozbor</h3><div class="zk-rowlist">' + review + "</div>" : "") +
-        '<div class="qz-fbtns" style="margin-top:1.2rem">' +
-          (g.status === "done" && g.players.length > 1
-            ? '<button class="qz-more" id="zk-rematch">Odveta</button>' : "") +
-          '<button class="qz-next" id="zk-lobby">Zpět do online →</button>' +
-        "</div></div>";
+        '<div class="qz-fbtns" style="margin-top:1.2rem">' + buttons + "</div></div>";
 
       on("zk-lobby", function () {
         req("/me").then(function (m) { S.me = m.body; renderLobby(); });
@@ -814,6 +822,143 @@ window.ZKOnline = (function () {
           beginGame(rr.body.id, "odkaz", null);
         });
       });
+      on("zk-tnext", function () { tournamentPlay(tournamentId); });
+      on("zk-tback", function () { renderTournament(tournamentId); });
+    });
+  }
+
+  // ---------------------------------------------------------------- turnaj (aréna)
+  function statusLabel(t) {
+    if (t.status === "planovany") return "začíná brzy";
+    if (t.status === "bezi") return "běží";
+    return "skončil";
+  }
+  var TC_LABEL = { blesk: "Blesk", klasika: "Klasika" };
+
+  function renderTournaments(msg) {
+    stopAll();
+    say("Turnaj: kdo za daný čas nasbírá nejvíc bodů z jednotlivých kol.");
+    req("/tournament?band=" + S.me.band).then(function (r) {
+      var list = (r.body && r.body.tournaments) || [];
+      body.innerHTML =
+        '<div class="qz-screen qz-setup zk-wrap">' +
+        backBar("Zpět", renderLobby) +
+        "<h2>Turnaje</h2>" +
+        errBox(typeof msg === "string" ? msg : "") +
+        '<div class="qz-setcard zk-form">' +
+          '<div class="qz-fieldlabel">Založit nový</div>' +
+          '<select class="qz-pname-in" id="zk-tc">' +
+            '<option value="blesk">Blesk (10 otázek, 10 s)</option>' +
+            '<option value="klasika">Klasika (15 otázek, 20 s)</option>' +
+          "</select>" +
+          '<select class="qz-pname-in" id="zk-dur">' +
+            '<option value="15">15 minut</option>' +
+            '<option value="30">30 minut</option>' +
+            '<option value="60">60 minut</option>' +
+          "</select>" +
+          '<button class="qz-go" id="zk-tcreate">Založit turnaj →</button>' +
+        "</div>" +
+        (list.length
+          ? '<div class="zk-rowlist">' + list.map(function (t) {
+              return '<button type="button" class="qz-standrow zk-trow" data-id="' + t.id + '">' +
+                '<span class="qz-standname">' + esc(t.name) + " · " + (TC_LABEL[t.time_control] || t.time_control) + "</span>" +
+                '<span class="qz-standscore">' + statusLabel(t) + "</span></button>";
+            }).join("") + "</div>"
+          : '<div class="qz-setnote">Zatím žádný turnaj v tvém pásmu. Založ první.</div>') +
+        "</div>";
+
+      body.querySelector("#zk-tcreate").addEventListener("click", function () {
+        var tc = body.querySelector("#zk-tc").value;
+        var dur = parseInt(body.querySelector("#zk-dur").value, 10);
+        req("/tournament", { method: "POST", body: { time_control: tc, duration_min: dur } }).then(function (rr) {
+          if (rr.status !== 201) return renderTournaments((rr.body && rr.body.error) || "Nepovedlo se.");
+          renderTournament(rr.body.id);
+        });
+      });
+      body.querySelectorAll(".zk-trow").forEach(function (b) {
+        b.addEventListener("click", function () { renderTournament(b.dataset.id); });
+      });
+    });
+  }
+
+  function renderTournament(id, msg) {
+    stopAll();
+    req("/tournament/" + id).then(function (r) {
+      if (r.status !== 200) return renderTournaments((r.body && r.body.error) || "Turnaj se nenačetl.");
+      var t = r.body;
+      say(t.status === "bezi" ? "Turnaj běží — hraj kola, dokud to jde."
+        : t.status === "planovany" ? "Turnaj ještě nezačal."
+        : "Turnaj skončil.");
+
+      var rows = (t.standings || []).map(function (p) {
+        return '<div class="qz-standrow' + (p.rank === 1 ? " win" : "") + '"><span class="qz-rank">' + p.rank + ".</span>" +
+          '<span class="qz-standname">' + esc(p.nick) + "</span>" +
+          '<span class="qz-standscore">' + p.score + " b · " + p.games_played + " " +
+            plur(p.games_played, "kolo", "kola", "kol") + "</span></div>";
+      }).join("");
+
+      var action = "";
+      if (t.status === "bezi" && !t.joined) action = '<button class="qz-go" id="zk-tjoin">Připojit se →</button>';
+      else if (t.status === "bezi" && t.joined) action = '<button class="qz-go" id="zk-tplay">Hrát další kolo →</button>';
+      else if (t.status === "planovany" && !t.joined) action = '<button class="qz-go" id="zk-tjoin">Připojit se předem →</button>';
+      else if (t.status === "planovany" && t.joined) action = '<div class="qz-setnote">Jsi přihlášený, čekej na start.</div>';
+
+      body.innerHTML =
+        '<div class="qz-screen qz-end zk-wrap">' +
+        backBar("Zpět na turnaje", renderTournaments) +
+        "<h2>" + esc(t.name) + "</h2>" +
+        errBox(typeof msg === "string" ? msg : "") +
+        '<div class="qz-meta" style="text-align:center;margin-bottom:.6rem">' +
+          esc(TC_LABEL[t.time_control] || t.time_control) + " · " + statusLabel(t) + "</div>" +
+        (action ? '<div class="qz-setcard" style="text-align:center;margin-bottom:1rem">' + action + "</div>" : "") +
+        (rows ? '<div class="zk-rowlist">' + rows + "</div>"
+              : '<div class="qz-setnote">Ještě nikdo neodehrál kolo.</div>') +
+        "</div>";
+
+      on("zk-tjoin", function () {
+        req("/tournament/" + id + "/join", { method: "POST" }).then(function (rr) {
+          renderTournament(id, rr.status === 200 ? "" : (rr.body && rr.body.error) || "Nepovedlo se.");
+        });
+      });
+      on("zk-tplay", function () { tournamentPlay(id); });
+    });
+  }
+
+  function tournamentPlay(id) {
+    stopAll();
+    say("Hledám soupeře na další kolo…");
+    body.innerHTML =
+      '<div class="qz-screen qz-setup zk-wrap">' +
+      backBar("Zpět do turnaje", function () { renderTournament(id); }) +
+      "<h2>Další kolo</h2>" +
+      '<div class="qz-setcard" style="text-align:center">' +
+        '<div class="qz-q" id="zk-qstat">Hledám soupeře…</div>' +
+        '<button class="qz-go" id="zk-tbot" style="display:none">Zahrát proti botovi →</button>' +
+      "</div></div>";
+
+    var stat = body.querySelector("#zk-qstat");
+    var botBtn = body.querySelector("#zk-tbot");
+    botBtn.addEventListener("click", function () {
+      stopAll();
+      req("/tournament/" + id + "/bot", { method: "POST" }).then(function (b) {
+        if (b.status !== 200) return renderTournament(id, (b.body && b.body.error) || "Nepovedlo se.");
+        beginGame(b.body.game_id, "turnaj", b.body.bot ? { nick: b.body.bot.nick } : null, id);
+      });
+    });
+
+    req("/tournament/" + id + "/play", { method: "POST" }).then(function (r) {
+      if (r.status !== 200) return renderTournament(id, (r.body && r.body.error) || "Nepovedlo se.");
+      if (r.body.matched) return beginGame(r.body.game_id, "turnaj", r.body.opponent, id);
+      var waited = 0;
+      poll = setInterval(function () {
+        waited += 2;
+        req("/tournament/" + id + "/play").then(function (p) {
+          if (!p.body) return;
+          if (p.body.matched) { stopAll(); return beginGame(p.body.game_id, "turnaj", p.body.opponent, id); }
+          stat.textContent = "Čekám… " + waited + " s";
+          if (p.body.offer_bot) botBtn.style.display = "";
+        });
+      }, 2000);
     });
   }
 

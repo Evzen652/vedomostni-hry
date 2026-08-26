@@ -344,6 +344,80 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(fb.body.bot.strength !== strengthBefore,
      'usazený hráč silou bota pohnul (' + strengthBefore + ' → ' + fb.body.bot.strength + ')');
 
+  // ---------------------------------------------------------------- turnaj (aréna)
+  section('Turnaj (aréna)');
+  const F = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'TurF_' + uniq(), pin: '1234' } })).body;
+  const G = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'TurG_' + uniq(), pin: '5678' } })).body;
+  const kidT = (await api('/api/auth/register', { method: 'POST', body: { band: 'deti', pin: '4321' } })).body;
+
+  const badDur = await api('/api/tournament', {
+    method: 'POST', token: F.token, body: { time_control: 'blesk', duration_min: 999 } });
+  ok(badDur.status === 400, 'moc dlouhý turnaj se odmítne, dostal ' + badDur.status);
+
+  const badTc = await api('/api/tournament', {
+    method: 'POST', token: F.token, body: { time_control: 'maraton' } });
+  ok(badTc.status === 400, 'neznámá časová kontrola se odmítne, dostal ' + badTc.status);
+
+  const tour = await api('/api/tournament', {
+    method: 'POST', token: F.token, body: { time_control: 'blesk', duration_min: 15 } });
+  ok(tour.status === 201 && tour.body.status === 'bezi', 'turnaj se založí a rovnou běží');
+
+  const detail0 = await api(`/api/tournament/${tour.body.id}`, { token: F.token });
+  ok(detail0.body.joined === true, 'zakladatel je rovnou účastníkem');
+  ok(detail0.body.standings.length === 1, 'v žebříčku je zatím jen zakladatel');
+
+  const list = await api('/api/tournament?band=dospeli', { token: F.token });
+  ok(list.body.tournaments.some(t => t.id === tour.body.id), 'turnaj je vidět v seznamu pásma');
+
+  const wrongBand = await api(`/api/tournament/${tour.body.id}/join`, { method: 'POST', token: kidT.token });
+  ok(wrongBand.status === 409, 'jiné pásmo se do turnaje nepřidá, dostal ' + wrongBand.status);
+
+  const joinG = await api(`/api/tournament/${tour.body.id}/join`, { method: 'POST', token: G.token });
+  ok(joinG.status === 200, 'druhý hráč se přidá');
+
+  const future = await api('/api/tournament', {
+    method: 'POST', token: F.token, body: { time_control: 'blesk', starts_in_min: 30 } });
+  ok(future.body.status === 'planovany', 'turnaj se startem v budoucnu je zatím jen naplánovaný');
+  const tooEarly = await api(`/api/tournament/${future.body.id}/play`, { method: 'POST', token: F.token });
+  ok(tooEarly.status === 409, 'kolo před startem se nezahraje, dostal ' + tooEarly.status);
+
+  // bot kolo — okamžitě odehrané, nehodnocené, ale počítá se do žebříčku turnaje
+  const tbot = await api(`/api/tournament/${tour.body.id}/bot`, { method: 'POST', token: F.token });
+  ok(tbot.status === 200 && typeof tbot.body.bot_score === 'number',
+     'kolo proti botovi se rovnou odehraje (bot dal ' + tbot.body.bot_score + ')');
+  await playAll(F.token, tbot.body.game_id, tbot.body.total, 2000);
+
+  const afterBot = await api(`/api/tournament/${tour.body.id}`, { token: F.token });
+  ok(afterBot.body.me.games_played === 1 && afterBot.body.me.score > 0,
+     'body z kola proti botovi se přičetly do žebříčku turnaje (' + afterBot.body.me.score + ')');
+
+  const fRatingAfterBot = (await api('/api/me', { token: F.token }))
+    .body.ratings.find(r => r.band === 'dospeli');
+  ok(!fRatingAfterBot || fRatingAfterBot.games === 0,
+     'kolo turnaje proti botovi nehne Glicko ratingem');
+
+  // živé párování uvnitř turnaje — první čeká, druhý ho spáruje
+  const waitF = await api(`/api/tournament/${tour.body.id}/play`, { method: 'POST', token: F.token });
+  ok(waitF.body.matched === false && waitF.body.waiting === true, 'první hráč čeká na kolo turnaje');
+
+  const matchG = await api(`/api/tournament/${tour.body.id}/play`, { method: 'POST', token: G.token });
+  ok(matchG.body.matched === true, 'druhý hráč se spáruje na kolo turnaje', JSON.stringify(matchG.body));
+
+  const pollF = await api(`/api/tournament/${tour.body.id}/play`, { token: F.token });
+  ok(pollF.body.matched === true && pollF.body.game_id === matchG.body.game_id,
+     'čekající hráč se o spárování na kolo dozví při dotazu');
+
+  await playAll(F.token, matchG.body.game_id, matchG.body.total, 1500);
+  await playAll(G.token, matchG.body.game_id, matchG.body.total, 4000);
+
+  const finalStand = await api(`/api/tournament/${tour.body.id}`, { token: F.token });
+  const fRow = finalStand.body.standings.find(s => s.nick === F.nick);
+  ok(fRow && fRow.games_played === 2, 'druhé kolo se přičetlo k prvnímu, ne přepsalo (' + fRow?.games_played + ')');
+  ok(finalStand.body.standings[0].score >= finalStand.body.standings[1].score,
+     'žebříček turnaje je seřazený podle bodů sestupně');
+
   // ---------------------------------------------------------------- e-mail a obnova PINu
   section('Nepovinný e-mail a obnova PINu');
 

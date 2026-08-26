@@ -17,6 +17,33 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-26 — Turnaje (krok 9) postavené, ale NENASAZENÉ; produkční D1 potřebuje ruční migraci, ne `schema.sql`.**
+  Na výslovné přání (navzdory vlastnímu dřívějšímu „záměrně nepostaveno") implementován
+  model aréna-turnaje. Přehled a proč viz [docs/online-rezim.md](docs/online-rezim.md),
+  sekce 9, bod 9. Stručně: `tournaments` + `tournament_players` + `tournament_queue`
+  (nová, oddělená od `queue` živého duelu) + `games.tournament_id`. Stav turnaje se
+  POČÍTÁ z `starts_at`/`duration_min` (`_lib/tournament.js`), nikde neukládá. Kola jsou
+  obyčejné hry (`mode='turnaj'`), nehodnocené v Glicku, body se sčítají do
+  `tournament_players` (`settle.js` → `creditTournament`). API: `functions/api/tournament/`
+  (index = list+create, `[id]/index` = detail+žebříček, `join`, `play` = párování uvnitř
+  turnaje POST+GET poll, `bot` = okamžité kolo proti botovi). Frontend recykluje duelové
+  obrazovky v [online.js](../online.js) (`beginGame`/`watchOpponent`/`showResult`) přes
+  `mode==='turnaj'`, plus nové `renderTournaments`/`renderTournament`/`tournamentPlay`.
+  Otestováno lokálně: `npm run test:api` → **104 kontrol, vše OK** (bylo 86).
+  **NENASAZENO na `zemekviz.pages.dev` a záměrně:**
+  1. **Produkční D1 nejde naplnit přes `npm run db:init:remote`** — ten spouští `schema.sql`,
+     který začíná `DROP TABLE`. Na produkci s reálnými (byť zatím nulovými) daty by to
+     smazalo účty/rating/otázky. Nasazení téhle funkce vyžaduje RUČNÍ migraci:
+     `wrangler d1 execute zemekviz --remote --command "ALTER TABLE games ADD COLUMN tournament_id TEXT"`
+     + tři `CREATE TABLE` (tournaments/tournament_players/tournament_queue, definice viz
+     [schema.sql](../schema.sql)) — bez `DROP`, jen přírůstek.
+  2. **`npm run deploy` (frontend + Functions) nasadit lze samostatně** — nový kód je
+     zpětně kompatibilní se starým schématem, jen endpointy `/api/tournament/*` by bez
+     migrace vracely chybu „no such table". Pořadí tedy: nejdřív migrace, pak deploy,
+     nebo obojí najednou, nikdy deploy sám bez migrace.
+  3. Lokálně `npm run db:init` (destruktivní, jen lokální `.wrangler/`) tohle nerozlišuje —
+     `schema.sql` už novou verzi má, takže lokální reset rovnou vytvoří všechno správně.
+
 - **2026-08-25 — E-mail je NEPOVINNÝ a slouží jedinému účelu: obnově zapomenutého PINu.**
   Účty stály na přezdívce + PINu bez jakékoli obnovy — kdo PIN zapomněl, přišel o účet
   i s ratingem a historií. To je u účtu, který má vydržet roky, vada, ne minimalismus.

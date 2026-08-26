@@ -32,6 +32,8 @@ export async function settleIfDone(env, gameId) {
   const isBot = Object.fromEntries(users.results.map(u => [u.id, !!u.is_bot]));
   const botInvolved = isBot[a.user_id] || isBot[b.user_id];
 
+  if (game.tournament_id) await creditTournament(env, game.tournament_id, a, b, isBot);
+
   if (!game.rated || botInvolved) {
     if (botInvolved) await calibrateBot(env, game.band, a, b, sA, isBot);
     return { status: 'done', rated: false };
@@ -55,6 +57,20 @@ export async function settleIfDone(env, gameId) {
       [b.user_id]: { before: Math.round(rb.rating), after: Math.round(nb.rating) },
     },
   };
+}
+
+/**
+ * Body z kola turnaje jdou do žebříčku turnaje, i když kolo samo je nehodnocené
+ * v Glicku. Bot žádný řádek v `tournament_players` nemá — počítají se jen lidé.
+ */
+async function creditTournament(env, tournamentId, a, b, isBot) {
+  const humans = [a, b].filter(p => !isBot[p.user_id]);
+  if (!humans.length) return;
+  await env.DB.batch(humans.map(p =>
+    env.DB.prepare(
+      `UPDATE tournament_players SET score = score + ?, games_played = games_played + 1
+        WHERE tournament_id = ? AND user_id = ?`)
+      .bind(p.score, tournamentId, p.user_id)));
 }
 
 async function ratingRow(env, userId, band) {

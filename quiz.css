@@ -521,6 +521,8 @@
 .zk-rowlist { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
 .zk-rowlist .qz-standrow { background: var(--paper2); border: 1.4px solid #dccdb0; border-radius: 11px;
   padding: 8px 11px; display: flex; align-items: center; gap: 10px; }
+/* Řádek turnaje v seznamu je klikací <button>, ne <div> — potřebuje reset UA vzhledu. */
+.zk-trow { width: 100%; text-align: left; cursor: pointer; font: inherit; color: inherit; }
 .zk-rev { align-items: flex-start; text-align: left; line-height: 1.35; }
 .zk-rev .zk-mark { min-width: 1.4em; font-weight: 800; flex-shrink: 0; }
 .zk-rev .qz-expl { font-size: 12px; margin-top: 3px; }
