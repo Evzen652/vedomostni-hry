@@ -225,17 +225,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik barev má vlajka Jihoafrické republiky?",
-  "answer": "Šest",
+  "question": "Vlajka Jihoafrické republiky je barevná jako duha. Jaký tvar, podobný písmenu, vytváří vzor uprostřed vlajky?",
+  "answer": "Písmeno Y",
   "distractors": [
-   "Tři",
-   "Čtyři",
-   "Dvě"
+   "Písmeno X",
+   "Písmeno V",
+   "Písmeno Z"
   ],
-  "quip_correct": "Šest, přesně! Vlajka JAR má šest barev a uprostřed tvar písmene Y - a navrhla ji jedna designérka za pouhé tři dny.",
-  "quip_wrong": "Tentokrát vedle, zkus to příště – dvě nebo čtyři barvy by vlajku JAR ošidily, má jich rovnou šest.",
-  "explanation": "Vlajka JAR přijatá v roce 1994 má šest barev a uprostřed tvar písmene Y, které symbolizuje sjednocení různých národů. Designérka ji navrhla za pouhé tři dny.",
-  "about": "vlajce Jihoafrické republiky"
+  "quip_correct": "Tys to věděl! Vlajka je fakt pestrobarevná a uprostřed z ní jasně vystupuje tvar písmene Y.",
+  "quip_wrong": "Zkus to jinak – X, V ani Z to nejsou. Uprostřed vlajky je jasně vidět tvar písmene Y.",
+  "explanation": "Tahle vlajka patří mezi nejpestřejší na světě a navrhla ji jedna šikovná designérka za pouhých pár dní – tvar Y symbolizuje sjednocení různých národů.",
+  "about": "vlajce Jihoafrické republiky",
+  "image_prompt": "A painterly watercolor gouache illustration of vlajce Jihoafrické republiky, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "za-k-slon",
@@ -265,17 +266,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje zvíře, jehož obrázek nosí jihoafričtí ragbisté na dresu?",
+  "question": "Jihoafričtí ragbisté nosí na dresu obrázek zvířete, které umí neuvěřitelně vysoko vyskočit do vzduchu. Jak se to zvíře jmenuje?",
   "answer": "Springbok",
   "distractors": [
    "Lev",
    "Nosorožec",
    "Gepard"
   ],
-  "quip_correct": "Springbok, přesně tak! Vyskočí až dva metry do vzduchu - a afrikánské jméno mu říká rovnou skákající antilopa.",
-  "quip_wrong": "Ne tahle volba – lev, nosorožec ani gepard nezdobí dres jihoafrických ragbistů, tam skáče springbok.",
-  "explanation": "Springbok je jihoafrická antilopa, která umí vyskočit až dva metry do výšky. Název pochází z afrikánštiny a znamená skákající buck. Stejnojmenný je i národní ragbyový tým.",
-  "about": "springbokovi"
+  "quip_correct": "Tys to věděl! Jeho jméno v překladu znamená přesně „skákající antilopa“ – a umí vyskočit fakt vysoko do vzduchu.",
+  "quip_wrong": "Zkus to jinak – lev, nosorožec ani gepard nejsou známí tím, že by takhle vysoko skákali. Na dresu jihoafrických ragbistů skáče springbok.",
+  "explanation": "Springbok je jihoafrická antilopa a stejné jméno nese i celý národní ragbyový tým této země.",
+  "about": "springbokovi",
+  "image_prompt": "A painterly watercolor gouache illustration of springbokovi, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "za-k-pstros",
@@ -537,16 +539,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje dlouhá plastová trubka, kterou jihoafričtí fanoušci troubí na fotbale tak hlasitě, že to bylo slyšet po celém světě?",
-  "answer": "Vuvuzela",
+  "question": "Jihoafričtí fotbaloví fanoušci troubí na dlouhou plastovou trubku tak hlasitě, že přehluší i hymny a komentátory. Co musely kvůli tomu televizní přenosy udělat?",
+  "answer": "Přidat do zvuku speciální filtr",
   "distractors": [
-   "Didgeridoo",
-   "Karnyx",
-   "Alphorn"
+   "Úplně vypnout zvuk",
+   "Přesunout celý stadion pod zem",
+   "Rozdat všem fanouškům špunty do uší"
   ],
-  "quip_correct": "Vuvuzela, přesně! Její bzučivý tón na mistrovství světa 2010 přehlušil komentátory i hymny.",
-  "quip_wrong": "Didgeridoo je z Austrálie, karnyx ze starověké Evropy, alphorn ze Švýcarska – jihoafrický stadionový řev patří vuvuzele.",
-  "explanation": "Vuvuzela vydává zvuk kolem 120 decibelů, což se blíží hlasitosti sbíječky, a televizní přenosy z mistrovství světa 2010 kvůli ní musely přidávat speciální filtr do zvuku.",
+  "quip_correct": "Tys to věděl! Ten bzučivý tón byl tak hlasitý, že přehlušil komentátory i hymny – přenosy musely přidat speciální filtr, aby se to dalo vůbec poslouchat.",
+  "quip_wrong": "Zkus to jinak – žádné vypnutí zvuku, stadion pod zem ani špunty do uší. Musely přidat speciální filtr přímo do zvuku přenosu.",
+  "explanation": "Tahle hlučná trubka se jmenuje vuvuzela a jejímu zvuku se říká, že zní skoro jako sbíječka.",
   "about": "vuvuzele",
   "image_prompt": "Fotorealistický snímek fanouška troubícího na dlouhou barevnou plastovou trubku vuvuzelu na stadionu, 16:9"
  },
@@ -593,12 +595,12 @@
   "image_prompt": "Fotorealistický snímek pěveckého sboru mužů v tradičních jihoafrických oblecích zpívajících a capella, 16:9"
  },
  {
-  "id": "za-k-tri-mesta",
+  "id": "za-t-tri-mesta",
   "cc": "za",
   "country": "Jihoafrická republika",
   "section": "Místa",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Co je na Jihoafrické republice neobvyklé v tom, kde sídlí vláda?",
   "answer": "Má hned tři hlavní města místo jednoho",

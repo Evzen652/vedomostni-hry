@@ -327,14 +327,14 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve kterém keňském parku můžeš vidět slony procházet se s výhledem na horu Kilimandžáro?",
+  "question": "Ve kterém keňském parku uvidíš slony procházet se po pláni přesně pod zasněženým vrcholem hory Kilimandžáro?",
   "answer": "Amboseli",
   "distractors": [
    "Masai Mara",
    "Tsavo",
    "Nairobi National Park"
   ],
-  "quip_correct": "Amboseli! Slon v popředí, sněžný vrchol v pozadí — vizitka, kterou žádný jiný park nezopakuje.",
+  "quip_correct": "Amboseli! Slon v popředí, sněžný vrchol v pozadí – vizitka, kterou žádný jiný park nezopakuje.",
   "quip_wrong": "Amboseli, ne Masai Mara, Tsavo ani Nairobi National Park. Ten slavný snímek slona s Kilimandžárem v pozadí zná internet přesně díky téhle adrese.",
   "explanation": "Amboseli je domovem jedněch z posledních volně žijících slonů s opravdu obřími kly, tzv. „tuskerů“.",
   "about": "slonech v Amboseli",
@@ -348,7 +348,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se v Keni říká barevně pomalovaným minibusům, které vozí lidi po městech?",
+  "question": "Jak se v Keni říká pestrobarevně pomalovaným minibusům, které jezdí po městě s nahlas puštěnou hudbou a vozí lidi za pár mincí?",
   "answer": "Matatu",
   "distractors": [
    "Boda-boda",
@@ -357,7 +357,7 @@
   ],
   "quip_correct": "Matatu! Bez nich by se Nairobi asi úplně zastavilo.",
   "quip_wrong": "Matatu, ne boda-boda (to je motorkový taxík), tuk-tuk (spíš asijská trojkolka) ani žádný „safari van“. Pomalovaný minibus s vlastním jménem je ryze keňská značka.",
-  "explanation": "Matatu bývají polepené hesly i portréty celebrit a vybavené hlasitými reproduktory — řidiči si tak navzájem konkurují o nápadnost.",
+  "explanation": "Matatu bývají polepené hesly i portréty celebrit a vybavené hlasitými reproduktory – řidiči si tak navzájem konkurují o nápadnost.",
   "about": "keňských matatu",
   "image_prompt": "Fotorealistický snímek pestrobarevně pomalovaného minibusu matatu na ulici v Nairobi, 16:9"
  },
@@ -579,16 +579,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik na světě zbývá severních bílých nosorožců, kteří žijí pod ochranou v keňské rezervaci Ol Pejeta?",
-  "answer": "Jen dva, obě samice",
+  "question": "Jak moc se v keňské rezervaci Ol Pejeta starají o vzácné severní bílé nosorožce – nechávají je volně bez dozoru, nebo je hlídají ozbrojení strážci ve dne v noci?",
+  "answer": "Hlídají je ozbrojení strážci ve dne v noci",
   "distractors": [
-   "Přes tisíc",
-   "Asi sto",
-   "Žádný, jsou už vyhynulí"
+   "Nechávají je úplně bez dozoru",
+   "Zavírají je přes den do stáje a v noci je pouští ven",
+   "Pouštějí je volně mezi turisty bez hlídání"
   ],
-  "quip_correct": "Přesně tak, výborně! Najin a Fatu jsou jediné dvě na celé planetě, hlídají je ozbrojení strážci dvacet čtyři hodin denně.",
-  "quip_wrong": "Tisíc, sto, vyhynulí — realita je mnohem dramatičtější, zbývají přesně dvě, obě žijí v Keni pod stálou ochranou.",
-  "explanation": "Poslední samec Sudán zemřel v Ol Pejetě v roce 2018 — vědci teď zkoušejí zachránit poddruh alespoň pomocí zmražených embryí a náhradních matek z příbuzného jižního bílého nosorožce.",
+  "quip_correct": "Přesně tak! Ty dvě přeživší se jmenují Najin a Fatu, matka a dcera – dvě nejhlídanější zvířata na světě.",
+  "quip_wrong": "Zkus si to představit jinak – téhle nosorožčí rodiny je na světě už jen pár kusů, a právě proto ji dnem i nocí hlídají ozbrojení strážci.",
+  "explanation": "Poslední samec Sudán zemřel v Ol Pejetě v roce 2018 – vědci teď zkoušejí zachránit poddruh alespoň pomocí zmražených embryí a náhradních matek z příbuzného jižního bílého nosorožce.",
   "about": "severních bílých nosorožcích",
   "image_prompt": "Fotorealistický snímek bílého nosorožce se strážcem v rezervaci Ol Pejeta, 16:9"
  },

@@ -602,17 +602,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jaké zvíře je národním symbolem Pákistánu? Žije v horách a má dlouhé spirálovité rohy.",
+  "question": "Národním zvířetem Pákistánu je horský kozel, který na hlavě nosí dva dlouhé rohy stočené jako vývrtka. Jak se mu říká?",
   "answer": "Markhor",
   "distractors": [
    "Tygr",
    "Lev",
    "Sněžný leopard"
   ],
-  "quip_correct": "Paráda, uhodls to! Markhor nosí na hlavě přírodní vývrtku a je na ni pyšný — lev, tygr ani sněžný leopard se takovým kouskem pochlubit nemůžou.",
-  "quip_wrong": "Ne tak docela — lev nebo tygr by na téhle vlajce vypadali impozantně, viď? Národním zvířetem Pákistánu je ale kozel se šroubovitými rohy — markhor.",
-  "explanation": "Markhor (Capra falconeri) žije v skalnatých horách Pákistánu, Afghánistánu a střední Asie. Byl téměř vyhuben, ale díky přísné ochraně se jeho počty pomalu zvyšují.",
-  "about": "markhoru"
+  "quip_correct": "Paráda, tys to věděl! Markhor nosí na hlavě přírodní vývrtku a je na ni náležitě pyšný.",
+  "quip_wrong": "Ne tak docela - lev nebo tygr by na vlajce vypadali impozantně, viď? Národním zvířetem Pákistánu je ale kozel se šroubovitými rohy - markhor.",
+  "explanation": "Markhor žije ve skalnatých horách Pákistánu, Afghánistánu a střední Asie. Kdysi mu lovci hodně ubližovali, ale díky ochraně se mu dnes daří o něco líp.",
+  "about": "markhoru",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- wild mountain goat with long spiral-twisted horns standing on a rocky ridge"
  },
  {
   "id": "pk-t-islamabad",
@@ -748,18 +749,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tradiční pákistánské oblečení – volné kalhoty s dlouhou volnou halenou, které nosí muži i ženy?",
+  "question": "V Pákistánu nosí muži i ženy do školy, do práce i na svatbu pořád ten samý oděv - jen se mění látka. Jsou to volné kalhoty s dlouhou volnou halenou přes ně. Jak se mu říká?",
   "answer": "Šalvár kamíz",
   "distractors": [
    "Kimono",
    "Sárí",
    "Toga"
   ],
-  "quip_correct": "Přesně tak! Šalvár kamíz je tak pohodlný, že se v Pákistánu nosí úplně na všechno – do školy, do práce i na svatbu, jen se změní látka.",
-  "quip_wrong": "Ne tenhle oděv – kimono, sárí a toga patří jinam, pákistánské kalhoty s halenou mají svoje vlastní jméno.",
-  "explanation": "Šalvár kamíz nosí v Pákistánu denně miliony lidí bez ohledu na věk, je to zároveň národní kroj i běžné každodenní oblečení. Ženská verze bývá doplněná dlouhým šátkem zvaným dupatta.",
+  "quip_correct": "Tys to věděl! Šalvár kamíz je tak pohodlný, že se v Pákistánu nosí úplně na všechno.",
+  "quip_wrong": "Ne tenhle oděv - kimono, sárí a toga patří jinam, pákistánské kalhoty s halenou mají svoje vlastní jméno.",
+  "explanation": "Šalvár kamíz nosí v Pákistánu denně miliony lidí bez ohledu na věk - je to zároveň národní kroj i běžné každodenní oblečení. Ženská verze bývá doplněná dlouhým šátkem zvaným dupatta.",
   "source_url": "https://en.wikipedia.org/wiki/Shalwar_kameez",
-  "image_prompt": "Fotorealistický snímek pákistánského trhu s vystavenými barevnými šalvár kamízy, denní světlo, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- colorful shalwar kameez outfits displayed at a Pakistani market stall",
   "about": "oděvu šalvár kamíz"
  },
  {
@@ -785,12 +786,12 @@
   "about": "mangu v Pákistánu"
  },
  {
-  "id": "pk-k-nanga-parbat",
+  "id": "pk-t-nanga-parbat",
   "cc": "pk",
   "country": "Pákistán",
   "section": "Příroda",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Jak horolezci přezdívají pákistánskou horu Nanga Parbat, devátou nejvyšší na světě?",
   "answer": "Hora vrahů",

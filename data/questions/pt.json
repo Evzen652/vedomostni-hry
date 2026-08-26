@@ -574,18 +574,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje oblíbená portugalská polévka z brambor a najemno nakrájené kapusty, kterou lidé vaří hlavně na oslavy a svátky?",
+  "question": "V Portugalsku vaří na oslavy zelenou polévku z brambor a najemno nakrájené kapusty - trochu jako naše bramboračka, jen zelenější. Jak se jí říká?",
   "answer": "Caldo verde",
   "distractors": [
    "Gazpacho",
    "Boršč",
    "Minestrone"
   ],
-  "quip_correct": "Přesně, caldo verde - zelená polévka, po které rázem zapomeneš, že venku možná zrovna prší.",
+  "quip_correct": "Tys to věděl! Caldo verde - zelená polévka, po které rázem zapomeneš, že venku možná zrovna prší.",
   "quip_wrong": "Chuťově i zeměpisně vedle - gazpacho je španělské a studené, caldo verde je portugalské, zelené a horké.",
-  "explanation": "Kapusta se do caldo verde krájí na tak tenoučké nitky, že to Portugalci berou skoro jako řemeslnou dovednost - k polévce se tradičně přidává plátek uzeného klobásového chorizo a kousek kukuřičného chleba broa.",
+  "explanation": "Kapusta se do caldo verde krájí na tak tenoučké nitky, že to Portugalci berou skoro jako řemeslnou dovednost - k polévce se tradičně přidává plátek uzené klobásy a kousek kukuřičného chleba.",
   "about": "polévce caldo verde",
-  "image_prompt": "Fotorealistický snímek misky zelené portugalské polévky caldo verde s plátky klobásy a kouskem chleba, 16:9"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- bowl of green Portuguese caldo verde soup with slices of sausage and bread"
  },
  {
   "id": "pt-t-rabelo",
@@ -834,11 +834,11 @@
    "Karlův most",
    "Tower Bridge"
   ],
-  "quip_correct": "Trefa! Turisté si na fotkách pletou Lisabon s Kalifornií, přitom je to přes celý oceán jinde.",
+  "quip_correct": "Tys to věděl! Turisté si na fotkách pletou Lisabon s Kalifornií, přitom je to přes celý oceán jinde.",
   "quip_wrong": "Eiffelovka je ve Francii a navíc je to věž bez jediného pruhu silnice - přes řeku by po ní auta nepřejela.",
-  "explanation": "Most spojuje Lisabon s městem Almada na druhém břehu řeky Tejo a jezdí po něm nejen auta, ale i vlaky ve spodním patře.",
+  "explanation": "Most spojuje Lisabon s městem na druhém břehu řeky Tejo a jezdí po něm nejen auta, ale i vlaky ve spodním patře.",
   "source_url": "https://en.wikipedia.org/wiki/25_de_Abril_Bridge",
-  "image_prompt": "Fotorealistický snímek velkého červeného visutého mostu Ponte 25 de Abril přes řeku Tejo v Lisabonu za slunečného dne, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- large red suspension bridge over the Tejo river in Lisbon",
   "about": "mostě Ponte 25 de Abril v Lisabonu"
  },
  {

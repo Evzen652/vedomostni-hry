@@ -1318,19 +1318,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve které malé rakouské vesnici u Salcburku vznikla v roce 1818 světoznámá vánoční koleda Tichá noc?",
-  "answer": "V Oberndorfu",
+  "question": "Slavná vánoční koleda Tichá noc vznikla narychlo v jedné rakouské vesnici poté, co se v kostele rozbily varhany. Na jaký jiný hudební nástroj ji tedy museli hudebníci zahrát, aby mohla zaznít o Štědrém večeru?",
+  "answer": "Na kytaru",
   "distractors": [
-   "Přímo ve Vídni",
-   "V Innsbrucku",
-   "Na vrcholu Grossglockneru"
+   "Na buben",
+   "Na flétnu",
+   "Na housle"
   ],
-  "quip_correct": "Ano, Oberndorf — dneska tam kvůli jedné koledě jezdí turisté z celého světa, i když jinak je to naprosto klidná vesnička.",
-  "quip_wrong": "Ve Vídni vznikla spousta slavných melodií, ale zrovna tahle tichá noc se zrodila v mnohem menší a tišší vesnici.",
-  "explanation": "Koledu složil na poslední chvíli varhaník Franz Gruber s farářem Josephem Mohrem, protože se jim rozbily kostelní varhany a potřebovali píseň, kterou zvládne doprovodit obyčejná kytara.",
+  "quip_correct": "Tys to věděl! Rozbité varhany tehdy zachránila obyčejná kytara - a koleda se stejně rozezněla do celého světa.",
+  "quip_wrong": "Skoro - tenhle nástroj by se do malého kostelíka ani nevešel. Hledej něco menšího a přenosného.",
+  "explanation": "Koledu složili varhaník Franz Gruber a farář Joseph Mohr - dodnes je to jedna z nejznámějších vánočních písní na světě, zpívá se v desítkách jazyků.",
   "source_url": "https://cs.wikipedia.org/wiki/Tich%C3%A1_noc",
-  "image_prompt": "Fotorealistický snímek malého sněhem pokrytého kostelíka v rakouské vesnici Oberndorf za soumraku, okna svítí teplým světlem, vánoční atmosféra, 16:9",
-  "about": "vzniku koledy Tichá noc v Oberndorfu"
+  "image_prompt": "Fotorealistický snímek malého sněhem pokrytého kostelíka v rakouské vesnici za soumraku, opřená kytara u dveří, okna svítí teplým světlem, vánoční atmosféra, 16:9",
+  "about": "vzniku koledy Tichá noc a rozbitých varhanách"
  },
  {
   "id": "at-t-streif-kitzbuhel",
@@ -1355,12 +1355,12 @@
   "about": "sjezdovce Streif v Kitzbühelu"
  },
  {
-  "id": "at-k-vlajka-povest",
+  "id": "at-t-vlajka-povest",
   "cc": "at",
   "country": "Rakousko",
   "section": "Symboly",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Podle staré pověsti dostala rakouská červeno-bílo-červená vlajka barvy od pláště jednoho vévody. Jak se to prý stalo?",
   "answer": "Plášť měl od krve z bitvy celý červený, jen pod opaskem zůstal bílý pruh",

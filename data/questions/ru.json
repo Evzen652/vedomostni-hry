@@ -2577,10 +2577,11 @@
    "Vatrušky",
    "Pirožky"
   ],
-  "quip_correct": "Trefa do černého! Med, zakysaná smetana, kaviár — bliny zvládnou být snídaní i svátečním pokrmem najednou.",
-  "quip_wrong": "Blízko, ale ne tak úplně — Pelmene jsou knedlíčky a vatrušky koláče — tenké palačinky mají svoje vlastní jméno: bliny.",
-  "explanation": "Bliny se jedí při svátku Maslenica (ruský Masopust), kdy každá snědená palačinka symbolicky vítá jaro. Tradičně se jí se zakysanou smetanou, medem nebo kaviárem.",
-  "about": "blinech"
+  "quip_correct": "Tys to věděl! Med, zakysaná smetana, kaviár - bliny zvládnou být snídaní i svátečním pokrmem najednou.",
+  "quip_wrong": "Blízko, ale ne tak úplně - pelmene jsou knedlíčky a vatrušky koláče, tenké palačinky mají svoje vlastní jméno: bliny.",
+  "explanation": "Bliny se jedí při ruském svátku, kdy každá snědená palačinka symbolicky vítá jaro.",
+  "about": "blinech",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- stack of thin Russian bliny pancakes with sour cream and honey"
  },
  {
   "id": "ru-k-medved-symbol",
@@ -2694,18 +2695,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak velkou část veškeré tekoucí sladké vody na Zemi v sobě ukrývá jezero Bajkal?",
-  "answer": "Skoro jednu pětinu",
+  "question": "Proč vědci říkají o ruském jezeře Bajkal, že je to jedna z největších zásobáren sladké vody na celé planetě?",
+  "answer": "Protože je neuvěřitelně hluboké a drží obrovské množství čisté vody",
   "distractors": [
-   "Jen kapku, míň než promile",
-   "Přesně polovinu",
-   "Tři čtvrtiny"
+   "Protože do něj ústí všechny řeky světa",
+   "Protože je to ve skutečnosti moře, ne jezero",
+   "Protože voda v něm nikdy nezamrzá"
   ],
-  "quip_correct": "Přesně! Bajkal je vlastně největší studna na světě, jen bez pumpy.",
-  "quip_wrong": "Kdepak, takovou almužnu by Bajkal ani nezaznamenal.",
+  "quip_correct": "Tys to věděl! Bajkal je jako obří studna, co nikdy nevyschne.",
+  "quip_wrong": "Kdepak - Bajkal je opravdové sladkovodní jezero, ne moře, a v zimě na něm led vydrží klidně chodit.",
   "explanation": "Do Bajkalu se vejde tolik vody, že by naplnila všechna Velká americká jezera dohromady a ještě by nějaká zbyla.",
   "source_url": "https://cs.wikipedia.org/wiki/Bajkal",
-  "image_prompt": "Fotorealistický snímek panoramatu jezera Bajkal s křišťálově čistou vodou obklopeného zasněženými horami, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- panoramic view of crystal-clear Lake Baikal surrounded by snowy mountains",
   "about": "jezeře Bajkal"
  },
  {
@@ -2716,18 +2717,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje nejvyšší aktivní sopka v celé Evropě i Asii, která se tyčí na poloostrově Kamčatka?",
+  "question": "Jak se jmenuje nejvyšší aktivní sopka v celé Evropě i Asii, která se tyčí na ruském poloostrově Kamčatka a pořád z ní stoupá kouř?",
   "answer": "Ključevská sopka",
   "distractors": [
    "Sopka Fudži",
    "Sopka Vesuv",
    "Sopka Etna"
   ],
-  "quip_correct": "Trefa! Ključevská sopka kouří i ve spánku.",
-  "quip_wrong": "Ále, ta sopka by se za takovou odpověď jen ušklíbla obláčkem popela.",
-  "explanation": "Ključevská sopka je tak činná, že za posledních tři sta let vybuchla už přes padesátkrát.",
+  "quip_correct": "Tys to věděl! Ključevská sopka kouří i ve spánku.",
+  "quip_wrong": "Ale ne, ta sopka by se za takovou odpověď jen ušklíbla obláčkem popela - hledáš tu z Kamčatky.",
+  "explanation": "Ključevská sopka je tak činná, že vybuchuje pořád dokola, mnohem častěji než většina ostatních sopek na světě.",
   "source_url": "https://cs.wikipedia.org/wiki/Ključevská_sopka",
-  "image_prompt": "Fotorealistický snímek zasněžené sopky Ključevská sopka na Kamčatce s obláčkem kouře nad kráterem, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- snow-capped volcano on Kamchatka peninsula with a plume of smoke rising from the crater",
   "about": "Ključevské sopce"
  },
  {
@@ -2914,18 +2915,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje stepní antilopa s podivným nafouklým nosem, která žije i v jižním Rusku?",
+  "question": "Jak se jmenuje stepní antilopa s podivným nafouklým nosem, která žije i v jižním Rusku a s tím nosem vypadá skoro jako s malým chobotem?",
   "answer": "Sajga",
   "distractors": [
    "Gazela",
    "Impala",
    "Kudu"
   ],
-  "quip_correct": "Ano, sajga se svým legračním nosem prohání step jako o závod.",
-  "quip_wrong": "Tahle antilopa by tě za tu odpověď nechala v prachu - doslova, díky tomu nosu.",
-  "explanation": "Sajga dokáže běžet rychlostí přes osmdesát kilometrů za hodinu a její zvláštní nos jí pomáhá filtrovat prach a ohřívat studený vzduch.",
+  "quip_correct": "Tys to věděl! Sajga se svým legračním nosem prohání step jako o závod.",
+  "quip_wrong": "Tahle antilopa by tě za tu odpověď nechala v prachu - doslova, díky tomu nosu. Hledáš sajgu.",
+  "explanation": "Sajga umí běžet ohromnou rychlostí a její zvláštní nos jí pomáhá filtrovat prach a ohřívat studený vzduch, než ho vdechne.",
   "source_url": "https://cs.wikipedia.org/wiki/Sajga_tatarská",
-  "image_prompt": "Fotorealistický snímek stepní antilopy sajgy s charakteristickým nafouklým nosem stojící v ruské stepi, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- steppe antelope saiga with a distinctive bulbous nose standing in grassland",
   "about": "sajze"
  },
  {
@@ -2958,18 +2959,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik let by ti trvalo prohlédnout si úplně všechny exponáty v petrohradské Ermitáži, kdybys u každého strávil jen minutu?",
-  "answer": "Přes 11 let",
+  "question": "Petrohradská Ermitáž patří mezi největší muzea světa. Co by se ti nejspíš stalo, kdybys se v ní pokusil za jeden den prohlédnout úplně všechno?",
+  "answer": "Nestihl bys to, ani kdybys chodil sály celý den bez zastavení",
   "distractors": [
-   "Jeden jediný den",
-   "Asi týden",
-   "Přibližně měsíc"
+   "Stačilo by ti jedno rychlé mrknutí od dveří",
+   "Muzeum je menší než tvoje škola",
+   "Prohlédl bys všechno za pár minut"
   ],
-  "quip_correct": "Radši si vezmi hodně svačin, tahle prohlídka by ti spolykala víc než jedno dětství!",
-  "quip_wrong": "Kdepak, tak rychle bys to nestihl, ani kdybys jen proběhl kolem a mrkl na každý exponát.",
-  "explanation": "Ermitáž sídlí v bývalém Zimním paláci ruských carů a patří k největším muzeím světa.",
+  "quip_correct": "Tys to věděl! V Ermitáži bys chodil a chodil a pořád by na tebe čekala další chodba plná pokladů.",
+  "quip_wrong": "Kdepak - v Ermitáži bys nestihl proběhnout ani jedno křídlo, natož celé muzeum za chvilku.",
+  "explanation": "Ermitáž sídlí v bývalém Zimním paláci ruských carů, kde kdysi opravdu bydleli panovníci se svými rodinami.",
   "source_url": "https://cs.wikipedia.org/wiki/Ermitáž",
-  "image_prompt": "Fotorealistický snímek honosného interiéru petrohradské Ermitáže se zlacenými sloupy, obrazy na stěnách a leštěnou podlahou, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- grand palace interior of the Hermitage museum with gilded columns and paintings on the walls",
   "about": "petrohradské Ermitáži"
  },
  {
@@ -3112,19 +3113,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak dlouhá je Transsibiřská magistrála, nejdelší železnice světa?",
-  "answer": "Přes 9000 kilometrů",
+  "question": "Transsibiřská magistrála je nejdelší železnice na světě. Kdybys jí jel vlakem od úplného začátku do konce, co by tě čekalo?",
+  "answer": "Několik dní a nocí strávených v jednom vlaku, než dojedeš",
   "distractors": [
-   "Necelých 900 kilometrů",
-   "Jen asi 90 kilometrů",
-   "Přes 90 000 kilometrů"
+   "Vystoupil bys po půl hodině, protože bys byl v cíli",
+   "Dojel bys tam rychleji než tramvají přes město",
+   "Trasa je tak krátká, že by ses ani nestihl najíst"
   ],
-  "quip_correct": "Přesně, na takovou cestu vlakem si sbal víc než jedny ponožky navíc.",
-  "quip_wrong": "90 000 kilometrů by znamenalo objet Zemi po kolejích víc než dvakrát – to by nezvládl ani vlak.",
-  "explanation": "Cesta celou trasou vlakem trvá i s přestupy kolem sedmi dní.",
+  "quip_correct": "Tys to věděl! Sbal si víc než jedny ponožky navíc - tahle cesta vlakem trvá pěkně dlouho.",
+  "quip_wrong": "Kdepak, tak rychle bys nedojel - tahle trasa je tak dlouhá, že bys ve vlaku i přespal.",
+  "explanation": "Vlak na cestě mezitím projede tolik časových pásem, že by sis musel hodinky přehazovat pořád dokola.",
   "source_url": "https://cs.wikipedia.org/wiki/Transsibiřská_magistrála",
-  "image_prompt": "Fotorealistický snímek vlaku Transsibiřské magistrály projíždějícího zasněženou sibiřskou krajinou, 16:9",
-  "about": "délce Transsibiřské magistrály"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- Trans-Siberian train crossing a snowy Siberian landscape",
+  "about": "cestě Transsibiřskou magistrálou"
  },
  {
   "id": "ru-k-russkij-most-vladivostok",
@@ -3185,11 +3186,11 @@
    "Bublik",
    "Kalačik"
   ],
-  "quip_correct": "Ano! Rychlý jako blesk a kulatý jako míč.",
-  "quip_wrong": "Skoro – ale tenhle podvodník je jenom bochník s nohama, žádné jiné jméno mu nesluší.",
-  "explanation": "Kolobokovi nakonec unikání nevyjde – přelstí ho liška, která ho pochlebováním přiměje, aby si sedl na jazyk, a rovnou ho sní.",
+  "quip_correct": "Tys to věděl! Rychlý jako blesk a kulatý jako míč.",
+  "quip_wrong": "Skoro - ale tenhle podvodník je jenom bochník s nohama, žádné jiné jméno mu nesluší.",
+  "explanation": "Kolobokovi nakonec unikání nevyjde - přelstí ho liška, která ho pochlebováním přiměje, aby si sedl na jazyk, a rovnou ho sní.",
   "source_url": "https://cs.wikipedia.org/wiki/Kolobok",
-  "image_prompt": "Fotorealistický snímek kulatého upečeného bochníčku chleba s usmívající se tvářičkou z těsta, ležícího na dřevěném prkénku v rustikální ruské kuchyni, teplé světlo, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- round loaf of bread with a smiling dough face resting on a wooden board in a rustic kitchen",
   "about": "pohádce o Kolobokovi"
  },
  {
@@ -3244,18 +3245,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje malé chlupaté zvířátko s velkýma ušima z oblíbeného sovětského kresleného seriálu, které se později stalo maskotem ruského olympijského týmu?",
+  "question": "Jak se jmenuje malé chlupaté zvířátko s velkýma ušima z oblíbeného ruského kresleného seriálu, které se později stalo maskotem ruského olympijského týmu?",
   "answer": "Čeburaška",
   "distractors": [
    "Medvídek Míša",
    "Krokodýlek Géňa",
    "Zajíček Stěpaška"
   ],
-  "quip_correct": "Přesně on! Ušatý cizinec, co se ztratil v bedně s pomeranči.",
-  "quip_wrong": "Ne, tenhle kamarád nemá ani ty správné uši, ani tu slávu.",
-  "explanation": "Čeburaška se v příběhu spřátelí s krokodýlem jménem Gena a spolu postaví Dům přátelství pro opuštěná zvířátka.",
+  "quip_correct": "Tys to věděl! Ušatý cizinec, co se ztratil v bedně s pomeranči.",
+  "quip_wrong": "Ne, tenhle kamarád nemá ani ty správné uši, ani tu slávu - hledáš Čeburašku.",
+  "explanation": "Čeburaška se v příběhu spřátelí s krokodýlem jménem Gena a spolu postaví dům přátelství pro opuštěná zvířátka.",
   "source_url": "https://en.wikipedia.org/wiki/Cheburashka",
-  "image_prompt": "Fotorealistický snímek roztomilé plyšové hračky malého hnědého chlupatého zvířátka s obřími kulatými ušima, sedící na dětské poličce mezi hračkami, měkké světlo, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- small plush toy of a brown furry creature with huge round ears sitting on a children's shelf",
   "about": "Čeburašce"
  },
  {
@@ -3273,11 +3274,11 @@
    "Kašpárek",
    "Paťorek"
   ],
-  "quip_correct": "Ano – a jeho vysoký, pisklavý hlas prozradí každý jeho žertík.",
-  "quip_wrong": "Skoro, ale tahle loutka by na jarmarku propadla se svým trapným kloboukem.",
-  "explanation": "Petruškův pisklavý hlas vytvářeli loutkáři pomocí zvláštní pomůcky zvané pištělka, kterou si dávali přímo do úst.",
+  "quip_correct": "Tys to věděl! A jeho vysoký, pisklavý hlas prozradí každý jeho žertík.",
+  "quip_wrong": "Skoro, ale tahle loutka by na jarmarku propadla se svým trapným kloboukem - hledáš Petrušku.",
+  "explanation": "Petruškův pisklavý hlas vytvářeli loutkáři pomocí zvláštní pomůcky, kterou si dávali přímo do úst.",
   "source_url": "https://en.wikipedia.org/wiki/Petrushka",
-  "image_prompt": "Fotorealistický snímek tradiční ruské maňáskové loutky v jasně červené košili a špičaté čepici s rolničkou, na pozadí pouličního jarmarku, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- traditional Russian hand puppet in a bright red shirt and pointed bell cap at a street fair",
   "about": "Petruškovi"
  },
  {
@@ -3354,16 +3355,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenují oblíbené ruské smažené koláčky z tvarohu, které se k snídani podávají se zakysanou smetanou, medem nebo džemem?",
-  "answer": "Syrniki",
+  "question": "Rusové si k snídani dávají zlatavé kulaté koláčky, které se smaží na pánvi a pak polévají zakysanou smetanou, medem nebo džemem. Co myslíš, že je jejich hlavní přísada?",
+  "answer": "Tvaroh",
   "distractors": [
-   "Vareniki",
-   "Bliny",
-   "Pirožki"
+   "Brambory",
+   "Mrkev",
+   "Kukuřičná mouka"
   ],
-  "quip_correct": "Ano! Zlatavé, měkoučké a voní po celé kuchyni.",
-  "quip_wrong": "Blízko, ale tahle dobrota potřebuje spíš hrnec s vodou než pánev na smažení.",
-  "explanation": "Přestože se syrniki jmenují podle slova „sýr“ (сыр), ve skutečnosti se dělají z tvarohu zvaného tvorog, ne z klasického sýra.",
+  "quip_correct": "Tys to věděl! Tvaroh dělá ty koláčky uvnitř tak měkoučké, že se skoro rozplývají na jazyku.",
+  "quip_wrong": "Zkus to jinak – brambory, mrkev ani kukuřice by takhle zlatavě a měkoučky nezchutnaly. Tahle snídaně se dělá z tvarohu.",
+  "explanation": "Tyhle koláčky se rusky jmenují syrniki, i když slovo připomíná „sýr“ – ve skutečnosti se ale dělají z tvarohu, ne z klasického sýra.",
   "source_url": "https://en.wikipedia.org/wiki/Syrniki",
   "image_prompt": "Fotorealistický snímek talíře se zlatavě osmaženými tvarohovými koláčky syrniki, ozdobenými lžící zakysané smetany a čerstvým ovocem, ranní světlo, 16:9",
   "about": "syrnikách"
@@ -3376,16 +3377,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tradiční ruská polévka vařená z čerstvě ulovených ryb, oblíbená hlavně u rybářů a na výletech k řece?",
-  "answer": "Ucha",
+  "question": "Ruští rybáři mají oblíbenou tradici: hned po ulovení ryb si na břehu řeky uvaří horkou rybí polévku. Kde a jak ji nejradši vaří?",
+  "answer": "Venku, nad otevřeným ohněm, hned u vody",
   "distractors": [
-   "Rassolnik",
-   "Soljanka",
-   "Okroška"
+   "Doma v troubě, až druhý den",
+   "Ve školní jídelně, ve velkém kotli",
+   "Studenou, rovnou z lednice"
   ],
-  "quip_correct": "Přesně tak – a nejlíp prý chutná, když se vaří venku nad ohněm.",
-  "quip_wrong": "Skoro – ale tahle polévka se dělá studená a bez jediné rybí šupinky.",
-  "explanation": "Podle tradice se pravá ucha vaří na otevřeném ohni přímo na břehu řeky nebo jezera, hned po ulovení ryb.",
+  "quip_correct": "Tys to věděl! Kouř z ohýnku a vůně rybí polévky patří k rybaření skoro stejně jako udice.",
+  "quip_wrong": "Zkus to jinak – trouba, jídelna ani studená verze to nejsou. Tahle polévka se vaří venku nad ohněm, hned jak rybáři chytí ryby.",
+  "explanation": "Tahle rybí polévka se rusky jmenuje ucha a patří mezi nejstarší ruské polévky vůbec.",
   "source_url": "https://en.wikipedia.org/wiki/Ukha",
   "image_prompt": "Fotorealistický snímek kotlíku s vroucí rybí polévkou zavěšeného nad ohništěm na břehu řeky, v pozadí ranní mlha nad vodou, 16:9",
   "about": "ruské rybí polévce ucha"

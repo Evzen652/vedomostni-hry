@@ -301,15 +301,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik ostrovů má zhruba finské souostroví u města Turku?",
-  "answer": "Přes 20 000",
+  "question": "Co bys uviděl, kdybys letěl letadlem nad finským souostrovím u města Turku?",
+  "answer": "Nekonečně mnoho maličkých ostrůvků jako rozsypaná mozaika",
   "distractors": [
-   "Přesně 100",
-   "Kolem 500",
-   "Jen 12"
+   "Jedno velké souvislé pobřeží bez jediného ostrova",
+   "Rovnou písečnou poušť",
+   "Zamrzlé moře úplně bez ostrovů"
   ],
-  "quip_correct": "Ano - kdybys chtěl navštívit každý ostrov na jeden den, stráví to roky.",
-  "quip_wrong": "Ne, mnohem víc - lodní kapitáni si tam museli kreslit vlastní mapy.",
+  "quip_correct": "Tys to věděl! Ostrovů je tam tolik, že kdybys chtěl navštívit každý na jeden den, strávil bys tam roky.",
+  "quip_wrong": "Ne tak docela - u Turku se moře doslova rozpadá na tisíce malých ostrůvků, žádné souvislé pobřeží ani poušť tam nenajdeš.",
   "explanation": "Souostroví Saaristomeri patří k nejrozsáhlejším na světě podle počtu ostrovů, přičemž naprostá většina z nich je trvale neobydlená.",
   "about": "finském souostroví",
   "image_prompt": "Letecký snímek rozsáhlého finského souostroví s desítkami malých zalesněných ostrovů, 16:9"
@@ -553,15 +553,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik ze svého území pokrývají Finsko lesy?",
-  "answer": "Skoro tři čtvrtiny (kolem 75 %)",
+  "question": "Když jedeš vlakem napříč Finskem, co vidíš za oknem skoro pořád?",
+  "answer": "Husté jehličnaté lesy",
   "distractors": [
-   "Necelou čtvrtinu",
-   "Přesně polovinu",
-   "Devadesát devět procent"
+   "Písečné duny",
+   "Vinice",
+   "Rýžová pole"
   ],
-  "quip_correct": "Přesně tak - v Finsku narazíš na strom skoro dřív než na souseda.",
-  "quip_wrong": "Ne - Finsko si pár procent nechává i na jezera a města, i lesu se sluší dopřát oddech.",
+  "quip_correct": "Tys to věděl! V Finsku narazíš na strom skoro dřív než na souseda.",
+  "quip_wrong": "Ne tak docela - duny, vinice ani rýžová pole ve Finsku moc nenajdeš. Tam za oknem ubíhá hlavně hustý jehličnatý les.",
   "explanation": "Finsko je nejzalesněnější zemí Evropské unie a lesnictví - těžba dřeva i papírenský průmysl - patří odjakživa mezi jeho hlavní hospodářská odvětví.",
   "about": "finských lesích",
   "image_prompt": "Fotorealistický letecký snímek nekonečného hustého jehličnatého lesa pokrývajícího finskou krajinu až k obzoru, 16:9"
@@ -581,7 +581,7 @@
    "Pelmeně",
    "Perník"
   ],
-  "quip_correct": "Přesně tak - tenhle pekařský klasik nechybí ve Finsku na žádné snídaňové tabuli.",
+  "quip_correct": "Tys to věděl! Tenhle pekařský klasik nechybí ve Finsku na žádné snídaňové tabuli.",
   "quip_wrong": "Ne, blini ani pelmeně finskou žitnou kůrku nemají - tohle pečivo si na rozdíl od nich klidně vezmeš i do ruky za pochodu.",
   "explanation": "Tradičně se mažou takzvaným vaječným máslem (munavoi) - máslem smíchaným s natvrdo uvařeným vejcem, které se na teplé pirožky nanáší přímo na talíři.",
   "about": "karelských pirožcích karjalanpiirakka",
@@ -595,18 +595,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "V kolika letech začínají finské děti povinně chodit do školy?",
-  "answer": "Až v sedmi letech",
+  "question": "Finské děti nastupují do školy později než třeba čeští prvňáčci. Co dělají hlavně místo sezení ve školní lavici?",
+  "answer": "Hodně si hrají venku",
   "distractors": [
-   "Už ve třech letech",
-   "V pěti letech",
-   "Až v deseti letech"
+   "Učí se násobilku u tabule",
+   "Píšou domácí úkoly",
+   "Nosí školní uniformu do kanceláře"
   ],
-  "quip_correct": "Přesně tak - do té doby si finské děti hlavně hrají venku, ne sedí v lavicích.",
-  "quip_wrong": "Ne - tříleté finské dítě nejspíš ještě řeší, jak si zavázat boty, ne rozvrh hodin.",
-  "explanation": "Přesto finské děti v mezinárodních srovnáních znalostí dlouhodobě patří ke světové špičce, i bez brzkého startu ve škole.",
+  "quip_correct": "Tys to věděl! Než finské dítě poprvé usedne do lavice, stihne si venku pořádně užít dětství.",
+  "quip_wrong": "Ne tak docela - finské děti čekání na školu netráví u tabule ani nad úkoly, ale hlavně venku na hraní.",
+  "explanation": "I přes pozdější start finské děti v mezinárodních srovnáních znalostí dlouhodobě patří ke světové špičce.",
   "about": "finském školství",
-  "image_prompt": "Fotorealistický snímek finské základní školní třídy se sedmiletými dětmi u dřevěných lavic, 16:9"
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters - small children playing freely outdoors in a Finnish forest clearing"
  },
  {
   "id": "fi-k-kerimaki",
@@ -856,7 +856,7 @@
    "Munkki",
    "Piparkakku"
   ],
-  "quip_correct": "Ano! A věř tomu nebo ne, žádné ucho se při pečení netrápí.",
+  "quip_correct": "Tys to věděl! A věř tomu nebo ne, žádné ucho se při pečení netrápí.",
   "quip_wrong": "Chybka - tohle pečivo má úplně jiný tvar, i když by si spolu na talíři klidně sedly.",
   "explanation": "Finové si tuhle housku nejčastěji dávají k přestávce na kávu zvané kahvitauko, která se drží skoro v každé práci.",
   "source_url": "https://en.wikipedia.org/wiki/Korvapuusti",

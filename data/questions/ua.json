@@ -641,17 +641,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje nejznámější ukrajinský lidový tanec, při kterém muži provádějí vysoké skoky a přesedy v dřepu?",
-  "answer": "Hopak",
+  "question": "Při divokém ukrajinském lidovém tanci muži skáčou a dřepují jako o závod. Jaký výkřik prý tanečníci často vydávají zrovna při skoku?",
+  "answer": "Hop!",
   "distractors": [
-   "Polka",
-   "Valčík",
-   "Čardáš"
+   "Juchů!",
+   "Ahoj!",
+   "Bum!"
   ],
-  "quip_correct": "Trefa! Kdo hopak dotancuje bez zadýchání, ten by klidně zvládl i sprint — tolik skoků najednou nedá žádný jiný tanec.",
-  "quip_wrong": "Skoro trefa, ale ne — valčík je pomalý, čardáš má jiný rytmus, hledej tanec plný skoků a dřepů.",
-  "explanation": "Název hopak pochází od výkřiku hop!, který tanečníci pronáší při skocích. Tanec je znám akrobatickými přesedy v dřepu, přemety a vysokými výskoky. Je součástí národní identity Ukrajiny.",
-  "about": "hopaku"
+  "quip_correct": "Tys to věděl! Tanečníci prý při skoku křičí hop – a přesně podle toho výkřiku dostal tanec i své jméno.",
+  "quip_wrong": "Zkus to jinak – juchání, pozdrav ani bouchnutí to nejsou. Tanečníci při skoku křičí hop.",
+  "explanation": "Tenhle divoký tanec se jmenuje hopak a skoky, dřepy i přemety z něj dělají jeden z nejakrobatičtějších tanců na světě.",
+  "about": "ukrajinském tanci hopak",
+  "image_prompt": "A painterly watercolor gouache illustration of ukrajinském tanci hopak, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "ua-k-pampusky",
@@ -661,17 +662,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jaké malé kulaté kynuté buchtičky s česnekem se na Ukrajině tradičně podávají k polévce?",
-  "answer": "Pampušky",
+  "question": "Na Ukrajině se k boršči podávají malé kulaté kynuté buchtičky provoněné česnekem. Čím se navrch potírají, aby voněly ještě víc?",
+  "answer": "Česnekovým olejem s petrželkou",
   "distractors": [
-   "Croissant",
-   "Bagel",
-   "Rohlík"
+   "Medem a skořicí",
+   "Kečupem",
+   "Citronovou šťávou"
   ],
-  "quip_correct": "Výborně! Voní česnekem, je kulatá a kynutá — bez pampušky by talíř s boršči zíval prázdnotou.",
-  "quip_wrong": "Tentokrát vedle — croissant je francouzský vynález, bagel zas americký, tahle česneková buchtička je ryze ukrajinská.",
-  "explanation": "Pampušky jsou malé kulaté kynuté buchty, které se na Ukrajině servírují jako příloha k boršči nebo ke kapustnyaku. Po upečení se potírají česnekovým olejem s petrželkou. Jsou lehké, nadýchané a voní česnekem.",
-  "about": "pampuškách"
+  "quip_correct": "Tys to věděl! Po upečení se ještě potřou česnekovým olejem s petrželkou, aby voněly ještě víc.",
+  "quip_wrong": "Zkus to jinak – med, kečup ani citron se sem nehodí. Potírají se česnekovým olejem s petrželkou.",
+  "explanation": "Tyhle buchtičky se ukrajinsky jmenují pampušky a bez nich by talíř s boršči vypadal nějak prázdně.",
+  "about": "pampuškách",
+  "image_prompt": "A painterly watercolor gouache illustration of pampuškách, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "ua-k-odesa-schody",
@@ -681,17 +683,17 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje slavné obrovské schodiště v přístavním městě Oděsa, které vede od moře až k parku nahoře?",
-  "answer": "Potěmkinovy schody",
+  "question": "V přístavním městě Oděsa vede od moře nahoru do parku obrovské kamenné schodiště. Má jeden zvláštní trik – schody se směrem dolů mírně rozšiřují. Jak proto schodiště vypadá, když se na něj podíváš shora?",
+  "answer": "Jako rovná ulice, ne jako schody",
   "distractors": [
-   "Zlaté schody",
-   "Schody Sofijského chrámu",
-   "Karpatské schody"
+   "Jako kruhový labyrint",
+   "Jako vodopád",
+   "Jako duha"
   ],
-  "quip_correct": "Potěmkinovy schody, přesně! Jediné schodiště, co vede od moře až nahoru do parku, a jmenuje se přesně takhle.",
-  "quip_wrong": "Netrefil jsi schody — Zlaté schody? Karpatské schody? V Oděse marně, k moři tam vedou jen schody Potěmkinovy.",
-  "explanation": "Schodiště bylo postavené v 19. století a má 192 schodů, které se směrem dolů mírně rozšiřují — proto ze shora vypadá jako rovná ulice a zdola jako nekonečná řada schodů.",
-  "about": "Potěmkinových schodech",
+  "quip_correct": "Tys to věděl! Schody se směrem dolů rozšiřují, a tak ze shora vypadají jako hladká ulice, ne jako schodiště.",
+  "quip_wrong": "Zkus to jinak – žádný labyrint, vodopád ani duha. Ze shora to vypadá jako obyčejná rovná ulice.",
+  "explanation": "Tomuhle schodišti se říká Potěmkinovy schody a vede od moře až do parku vysoko nad přístavem.",
+  "about": "slavném schodišti v Oděse",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- grand wide stone staircase descending toward a harbor with ships, seagulls, morning light"
  },
  {
@@ -935,16 +937,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Které jihoukrajinské město je tak proslulé pěstováním velkých sladkých melounů, že se po něm melouny z okolí lidově pojmenovávají?",
-  "answer": "Cherson",
+  "question": "Na jihu Ukrajiny je jedno město tak proslulé velkými sladkými melouny, že na jejich počest každé léto pořádá zvláštní oslavu. Jak takovou oslavu asi nazvou?",
+  "answer": "Meloun festival",
   "distractors": [
-   "Lvov",
-   "Charkov",
-   "Ivano-Frankivsk"
+   "Sněhový festival",
+   "Rybí trh",
+   "Vánoční jarmark"
   ],
-  "quip_correct": "Přesně tak! V Chersonu jsou melouny skoro jako místní celebrity.",
-  "quip_wrong": "Tam bys spíš než meloun našel hory nebo smrkové lesy, ne pole plná melounů.",
-  "explanation": "Chersonské melouny se sklízí hlavně v srpnu a na jejich počest se ve městě koná meloun festival s ochutnávkami.",
+  "quip_correct": "Tys to věděl! V tomhle městě jsou melouny skoro jako místní celebrity – mají na jejich počest dokonce vlastní festival.",
+  "quip_wrong": "Zkus to jinak – sníh, ryby ani Vánoce se sem nehodí. Melounům se tam slaví rovnou meloun festival.",
+  "explanation": "Tohle jihoukrajinské město se jmenuje Cherson a jeho melouny se sklízí hlavně v létě, kdy je největší vedro.",
   "source_url": "https://en.wikipedia.org/wiki/Kherson",
   "image_prompt": "Fotorealistický snímek pole s velkými zelenými melouny pod slunečnou oblohou poblíž ukrajinského města Cherson, 16:9",
   "about": "chersonských melounech"

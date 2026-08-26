@@ -621,17 +621,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik ostrovů tvoří Indonésii?",
-  "answer": "Přes 17 000",
+  "question": "Co je pro Indonésii na mapě nejtypičtější – je to jedna souvislá pevnina, nebo země rozdrobená na obrovské množství ostrovů?",
+  "answer": "Je rozdrobená na obrovské množství ostrovů",
   "distractors": [
-   "Asi 100",
-   "Přes 2 000",
-   "Jen 5 velkých"
+   "Je to jedna souvislá pevnina bez moře",
+   "Je to jen jeden velký ostrov",
+   "Je to poušť bez jediného ostrova"
   ],
-  "quip_correct": "Bravo, trefa! Přes 17 000 ostrovů — necelá třetina z nich je vůbec obydlená, zbytek čeká, až si je někdo všimne.",
-  "quip_wrong": "Skoro, ale ne tak úplně — sto, dva tisíce, jen pět velkých, všechno moc málo. Indonésii tvoří přes sedmnáct tisíc ostrovů.",
-  "explanation": "Z více než 17 000 ostrovů je trvale obydleno asi šest tisíc. Na každém z velkých ostrovů žijí různé národy s různými jazyky.",
-  "about": "ostrovech Indonésie"
+  "quip_correct": "Tys to věděl! Ostrovů je tolik, že spoustu z nich nikdo ani nepojmenoval a nikdy na nich nikdo nebydlel.",
+  "quip_wrong": "Zkus si to představit jinak – Indonésie není jedna pevnina ani jeden ostrov, je to země roztroušená po moři na nesčetně kouscích země.",
+  "explanation": "Indonésie leží na více než 17 000 ostrovech, ale trvale obydlená je jen menšina z nich – na těch velkých navíc žijí národy, které mluví úplně různými jazyky.",
+  "about": "ostrovech Indonésie",
+  "image_prompt": "A painterly watercolor gouache illustration of ostrovech Indonésie, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "id-k-garuda",

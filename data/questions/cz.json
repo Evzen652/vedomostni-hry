@@ -779,12 +779,12 @@
   "image_prompt": "A painterly watercolor illustration of the Prague Astronomical Clock on Old Town Square with its colorful astronomical dials and the apostle figures visible in the windows, vintage travel journal style"
  },
  {
-  "id": "cz-k-pivni-lazne",
+  "id": "cz-t-pivni-lazne",
   "cc": "cz",
   "country": "Česká republika",
   "section": "Kultura",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "V Česku existují lázně, kde se místo vody koupete v pivu. Co to má dělat s vaší kůží?",
   "answer": "Kůže se prý vyhlazuje díky kvasinkám a chmelům v pivu",
@@ -2294,20 +2294,20 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik svíček má tradiční český adventní věnec, který se zapaluje jedna po druhé každou neděli před Vánoci?",
-  "answer": "Čtyři",
+  "question": "Adventní věnec musí zůstat celé týdny před Vánoci pěkně svěží a zelený. Z čeho se proto tradičně plete?",
+  "answer": "Z jehličí (chvojí)",
   "distractors": [
-   "Sedm",
-   "Dvanáct",
-   "Jednu"
+   "Z barevných stužek",
+   "Z papírových květin",
+   "Z proutí bez jehličí"
   ],
-  "quip_correct": "Přesně čtyři - a čím víc jich hoří najednou, tím blíž jsou Vánoce.",
-  "quip_wrong": "Dvanáct svíček by věnec ani neunesl - adventní neděle jsou přesně čtyři, tolik plamínků taky hoří.",
-  "explanation": "Věnec se plete z jehličí, aby zůstal celý advent zelený a svěží i v teple bytu.",
-  "more_fact": "Svíčky bývají tři fialové a jedna růžová - ta růžová se zapaluje třetí neděli, které se říká radostná.",
+  "quip_correct": "Tys to věděl! A čím víc svíček na věnci hoří najednou, tím blíž jsou Vánoce.",
+  "quip_wrong": "Tohle by do adventu dlouho nevydrželo svěží - hledej něco, co roste na jehličnatém stromě.",
+  "explanation": "Svíčky na věnci se zapalují jedna po druhé, každou adventní neděli jedna navíc, a bývají tři fialové a jedna růžová.",
+  "more_fact": "Věnce se dají koupit hotové, ale spousta rodin si je pořád plete doma z větviček nastříhaných na zahradě.",
   "source_url": "https://cs.wikipedia.org/wiki/Advent",
   "image_prompt": "Fotorealistický snímek jehličnatého adventního věnce se čtyřmi zapálenými svíčkami na stole, 16:9",
-  "about": "adventním věnci a počítání neděl do Vánoc"
+  "about": "adventním věnci a jeho zeleném chvojí"
  },
  {
   "id": "cz-k-svaty-vaclav-svatek",
@@ -2317,20 +2317,20 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Po kterém knížeti a patronovi české země je pojmenovaný státní svátek 28. září?",
-  "answer": "Po svatém Václavovi",
+  "question": "Podle staré české pověsti spí jeden statečný kníže se svým vojskem hluboko uvnitř kouzelné hory a probudí se přesně ve chvíli, kdy to Česko bude nejvíc potřebovat. Jak se jmenuje hora, kde spí?",
+  "answer": "Blaník",
   "distractors": [
-   "Po Karlu IV.",
-   "Po Janu Husovi",
-   "Po Přemyslu Otakarovi"
+   "Sněžka",
+   "Řip",
+   "Karlštejn"
   ],
-  "quip_correct": "Tos věděl - jeho socha na koni hlídá pražské Václavské náměstí dodnes.",
-  "quip_wrong": "Karel IV. má svátek jindy a jinou sochu - tenhle konkrétní zářijový den patří staršímu knížeti Václavovi.",
-  "explanation": "Podle staré pověsti svatý Václav se svým vojskem spí v hoře Blaník a probudí se, až bude Česku nejhůř.",
-  "more_fact": "Na jeho počest se zpívá i prastará píseň Svatý Václave, jedna z nejstarších českých písní vůbec.",
+  "quip_correct": "Tys to věděl! Jeho socha na koni hlídá i pražské Václavské náměstí - kdyby náhodou zaspal.",
+  "quip_wrong": "Vedle! Tahle hora je taky slavná, ale spící vojsko čeká jinde - v hoře, která se jmenuje Blaník.",
+  "explanation": "Knížeti, který v hoře spí, se říkalo svatý Václav a na jeho počest se zpívá i prastará píseň Svatý Václave, jedna z nejstarších českých písní vůbec.",
+  "more_fact": "V hoře prý čeká i kůň svatého Václava, který se probudí jako první a kopnutím kopyta vyvolá pramen vody.",
   "source_url": "https://cs.wikipedia.org/wiki/V%C3%A1clav_I._(kn%C3%AD%C5%BEe)",
   "image_prompt": "Fotorealistický snímek jezdecké sochy na koni na velkém městském náměstí, podzimní den, 16:9",
-  "about": "svatém Václavovi a státním svátku 28. září"
+  "about": "pověsti o hoře Blaník a spícím vojsku svatého Václava"
  },
  {
   "id": "cz-k-jablicko-hvezdicka",
@@ -2632,12 +2632,12 @@
   "about": "kysaném zelí a jeho kvašení"
  },
  {
-  "id": "cz-k-plzensky-prazdroj",
+  "id": "cz-t-plzensky-prazdroj",
   "cc": "cz",
   "country": "Česko",
   "section": "Jídlo",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Ve kterém českém městě se v roce 1842 poprvé na světě uvařilo světlé pivo zvané pils?",
   "answer": "V Plzni",
@@ -3053,15 +3053,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik barev má česká státní vlajka?",
-  "answer": "Tři",
+  "question": "Když si vybavíš českou státní vlajku, jaké barvy na ní uvidíš?",
+  "answer": "Bílou, červenou a modrou",
   "distractors": [
-   "Dvě",
-   "Čtyři",
-   "Pět"
+   "Bílou, modrou a žlutou",
+   "Zelenou, bílou a červenou",
+   "Modrou, žlutou a černou"
   ],
-  "quip_correct": "Trefa! Červená, bílá a modrá se na jednu vlajku vešly bez tlačenice.",
-  "quip_wrong": "Vlajka není duha, aby měla barev na rozdávání – zkus si ji v hlavě znovu vybarvit a spočítat pole.",
+  "quip_correct": "Tys to věděl! Červená, bílá a modrá se na jednu vlajku vešly bez tlačenice.",
+  "quip_wrong": "Vlajka není duha, aby měla barev na rozdávání - zkus si ji v hlavě vybarvit znovu.",
   "explanation": "Vlajku navrhl student architektury Jaroslav Kursa, který k původní bílo-červené vlajce přidal modrý klín u žerdi.",
   "more_fact": "Stejnou vlajku dřív používalo celé Československo, dnes ji používá samostatně jen Česko a Slovensko má vlajku jinou, i když trochu podobnou.",
   "source_url": "https://cs.wikipedia.org/wiki/Vlajka_%C4%8Ceska",
@@ -3345,12 +3345,12 @@
   "about": "prezidentské standartě vlající nad Hradem"
  },
  {
-  "id": "cz-k-standarta-heslo",
+  "id": "cz-t-standarta-heslo",
   "cc": "cz",
   "country": "Česko",
   "section": "Symboly",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Jaké heslo je napsané na prezidentské standartě?",
   "answer": "Pravda vítězí",
@@ -3490,17 +3490,17 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Spisovatel Karel Čapek vymyslel slovo, které dnes používá celý svět pro umělé stroje podobné člověku. Jaké je to slovo?",
-  "answer": "Robot",
+  "question": "Slovo robot, které dnes používá celý svět pro chytré stroje podobné člověku, vzniklo v Česku - poprvé se objevilo v divadelní hře spisovatele Karla Čapka. Co v té hře stroje nakonec udělaly?",
+  "answer": "Vzbouřily se proti lidem",
   "distractors": [
-   "Android",
-   "Kyborg",
-   "Automat"
+   "Naučily se zpívat",
+   "Odletěly pryč na Měsíc",
+   "Rozhodly se lidem navždy sloužit"
   ],
-  "quip_correct": "Přesně! To slovo si dnes půjčují jazyky po celém světě.",
-  "quip_wrong": "Android zní chytře, ale to slovo Čapek nevymyslel – jeho slovo je kratší a mnohem starší.",
+  "quip_correct": "Tys to věděl! Roboti se tehdy na jevišti vzbouřili a od té doby se to ve filmech pořád opakuje.",
+  "quip_wrong": "Skoro - v Čapkově hře to s roboty dopadlo dramatičtěji. Zkus něco méně poklidného.",
   "explanation": "Slovo robot pochází z českého slova robota, což znamená těžkou nucenou práci, a s nápadem přišel vlastně Karlův bratr Josef.",
-  "more_fact": "Slovo robot se poprvé objevilo v divadelní hře z roku 1920 a stroje v ní se nakonec vzbouří proti lidem.",
+  "more_fact": "Dnes se slovem robot říká strojům v desítkách jazyků po celém světě, aniž by lidé tušili, že mu dal jméno český spisovatel.",
   "source_url": "https://cs.wikipedia.org/wiki/Karel_Čapek",
   "image_prompt": "Fotorealistický snímek staré psací mašiny se stránkou popsanou textem a vedle stojící drobnou plechovou hračkou robota, 16:9",
   "about": "Karlu Čapkovi a vzniku slova robot"
@@ -3582,15 +3582,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Vynálezce Otto Wichterle přišel na to, jak vyrobit měkké kontaktní čočky. Z čeho si doma o Vánocích poskládal první zkušební přístroj na jejich výrobu?",
+  "question": "Vynálezce Otto Wichterle přišel na to, jak vyrobit měkké kontaktní čočky. Z čeho si doma o Vánocích poskládal svůj úplně první zkušební přístroj na jejich výrobu?",
   "answer": "Ze stavebnice Merkur a dětského kola",
   "distractors": [
    "Z vysavače a žehličky",
    "Z pračky a fénu",
    "Z gramofonu a baterky"
   ],
-  "quip_correct": "Přesně! Kdo by čekal, že stavebnice pro kluky pomůže vyrobit něco, co dnes nosí miliony lidí na očích.",
-  "quip_wrong": "Vysavač by se do očí určitě nehodil – Wichterlův domácí přístroj poskládaný ze stavebnice fungoval mnohem jemněji.",
+  "quip_correct": "Tys to věděl! Kdo by čekal, že stavebnice pro kluky pomůže vyrobit něco, co dnes nosí miliony lidí na očích.",
+  "quip_wrong": "Vysavač by se do očí určitě nehodil - Wichterlův domácí přístroj poskládaný ze stavebnice fungoval mnohem jemněji.",
   "explanation": "Wichterle vyráběl první čočky doma po nocích, protože v práci mu jeho nápad zakázali dál rozvíjet.",
   "more_fact": "Dnes nosí měkké kontaktní čočky podle jeho vynálezu stovky milionů lidí po celém světě.",
   "source_url": "https://cs.wikipedia.org/wiki/Otto_Wichterle",
@@ -3819,7 +3819,7 @@
    "Podle obrazů moře a plachetnic",
    "Podle abstraktních barevných skvrn bez postav"
   ],
-  "quip_correct": "Kdybys tu vesnici viděl naživo, čekal bys, že z komína co chvíli vykoukne čert s koštětem.",
+  "quip_correct": "Tys to věděl! Kdybys tu vesnici viděl naživo, čekal bys, že z komína co chvíli vykoukne čert s koštětem.",
   "quip_wrong": "Ladovi čerti by se urazili - portréty královské rodiny nechávali radši dvorním malířům.",
   "explanation": "Lada nakreslil i ilustrace ke knize Osudy dobrého vojáka Švejka, díky čemuž jeho styl zná i spousta dospělých čtenářů.",
   "more_fact": "Na návsi v jeho rodné vesnici Hrusice dodnes stojí socha kocoura Mikeše, další postavičky, kterou Lada vymyslel a nakreslil.",
@@ -3927,16 +3927,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Čím je české loutkářství tak výjimečné, že ho organizace UNESCO zapsala na seznam vzácného lidového dědictví?",
-  "answer": "Je to živá tradice loutkových divadel, která se v Česku hraje už stovky let",
+  "question": "Jak čeští loutkáři odjakživa rozhýbou dřevěnou loutku, aby chodila, mávala rukama a klaněla se publiku?",
+  "answer": "Tahají za nitky připevněné shora, na tzv. vodicím kříži",
   "distractors": [
-   "Loutky se v Česku vyrábějí jen ze zlata",
-   "Je to jediná země na světě, kde loutky vůbec existují",
-   "Loutky se u nás používají pouze ve filmech"
+   "Loutka se hýbe sama, má v sobě motorek",
+   "Loutkář do ní jen mluví jako břichomluvec",
+   "Loutku hejbou magnety schované pod jevištěm"
   ],
-  "quip_correct": "Stovky let stará tradice - a pořád baví děti stejně jako kdysi bavila jejich prababičky.",
-  "quip_wrong": "Loutky ze zlata by se na jevišti akorát rozbily o podlahu - dřevo a plátno to zvládnou o dost líp.",
-  "explanation": "Zápis na seznam UNESCO sdílí Česko společně se Slovenskem, protože obě země mají loutkářskou tradici propojenou už od 19. století.",
+  "quip_correct": "Tys to věděl! Pár nitek nahoře, a dřevěná panenka najednou tancuje jako živá.",
+  "quip_wrong": "Žádný motorek, žádné magnety, žádné břichomluvectví — jen šikovné ruce a nitky vedené shora.",
+  "explanation": "Tahle tradice u nás žije už stovky let a UNESCO ji zapsalo na seznam vzácného lidového dědictví — sdílí ho s ní i Slovensko.",
   "more_fact": "V Chrudimi funguje muzeum věnované jen loutkám, kde jich je k vidění přes dva tisíce.",
   "source_url": "https://cs.wikipedia.org/wiki/Loutk%C3%A1%C5%99stv%C3%AD",
   "image_prompt": "Fotorealistický snímek starého loutkového divadla s dřevěnými marionetami zavěšenými nad jevištěm, 16:9",
@@ -4003,7 +4003,7 @@
    "Písničky vymýšlely přímo děti ve školce",
    "Melodie vždy opisovali ze starých lidových písní"
   ],
-  "quip_correct": "Dvě hlavy, jedna písnička - a děti si ji broukají ještě o generaci později.",
+  "quip_correct": "Tys to věděl! Dvě hlavy, jedna písnička - a děti si ji broukají ještě o generaci později.",
   "quip_wrong": "Kdyby si texty vymýšlely děti ve školce, měli by ti tři čuníci nejspíš úplně jiná jména.",
   "explanation": "Dvojice napsala přes sto dětských písniček, které se dodnes zpívají ve školkách a na táborech po celé zemi.",
   "more_fact": "Zdeněk Svěrák je také známý scenárista a herec, který napsal třeba film Vratné lahve.",
@@ -4249,20 +4249,20 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Když čeští školáci skloňují podstatné jméno (pes, psa, psovi...), kolik různých pádů se musí naučit?",
-  "answer": "Sedm",
+  "question": "Zkus si nahlas říct: „Mám psa. Jdu se psem. Povídám si o psovi.“ Pořád mluvíš o stejném zvířeti - co se ale na konci slova pes přitom furt mění?",
+  "answer": "Konec slova (koncovka)",
   "distractors": [
-   "Čtyři",
-   "Pět",
-   "Deset"
+   "Barva slova",
+   "Délka celé věty",
+   "Jméno toho psa"
   ],
-  "quip_correct": "Sedm pádů, sedm otázek - pes, psa, psovi a tak dále pořád dokola.",
-  "quip_wrong": "Zkus si je vyjmenovat na prstech jedné ruky - a zjistíš, že ti jeden pád navíc přebude.",
-  "explanation": "Angličtina žádné pády v tomhle smyslu nemá vůbec, proto se ji cizinci učí česká gramatika tak těžko.",
+  "quip_correct": "Tys to věděl! Právě tomu proměňování konců slov se říká skloňování.",
+  "quip_wrong": "Zkus to říct nahlas ještě jednou a poslouchej - mění se konec slova pes, ne jeho barva ani jméno.",
+  "explanation": "Angličtina slovo dog vůbec nemění, ať ho použiješ v jakékoli větě - proto se cizinci učí česká slovíčka se všemi těmi konci tak těžko.",
   "more_fact": "Pádům se učitelé snaží pomoct pomocnými otázkami - třeba pro čtvrtý pád to je otázka koho, co.",
   "source_url": "https://cs.wikipedia.org/wiki/P%C3%A1d_(mluvnice)",
-  "image_prompt": "Fotorealistický snímek školáka sedícího u stolu se sešitem a tužkou, na tabuli za ním rozepsaná cvičení, 16:9",
-  "about": "sedmi pádech v české gramatice"
+  "image_prompt": "Chlapec sedící u dřevěného stolu a nahlas čtoucí ze sešitu, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "about": "skloňování slov v češtině, třeba slova pes"
  },
  {
   "id": "cz-k-slovo-robot-capek",
@@ -4272,28 +4272,28 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Slovo robot, které dnes používá celý svět, vymyslel český spisovatel pro svoji divadelní hru. Jak se ten spisovatel jmenoval?",
-  "answer": "Karel Čapek",
+  "question": "Slovo robot, které dnes používá celý svět, vzniklo z českého slova „robota“, tedy těžká nucená práce. Co to podle tebe v pohádce vlastně znamenalo, když někoho nazvali robotem?",
+  "answer": "Stroj, co dře těžkou práci za člověka",
   "distractors": [
-   "Jaroslav Hašek",
-   "Franz Kafka",
-   "Jan Werich"
+   "Kouzelná bytost z pohádky",
+   "Mazlíček, co se choval jako pes",
+   "Cizinec z vesmíru"
   ],
-  "quip_correct": "Karel Čapek - díky jeho hře dnes slovo robot zná prakticky celá planeta.",
-  "quip_wrong": "Ten pán taky psal skvěle, ale slovo robot to nebyl on - hádej, kdo dal světu tenhle výraz.",
-  "explanation": "Slovo robot navrhl Čapkovi jeho bratr Josef, odvozené od slova robota, tedy nucená práce.",
+  "quip_correct": "Tys to věděl! Robot byl v pohádce vlastně dříč, co maká za ostatní - jako pořádný pracant z kovu.",
+  "quip_wrong": "Žádné kouzlo, mazlíček ani vesmír - robot v pohádce dřel těžkou práci za lidi, přesně jako slovo „robota“ napovídá.",
+  "explanation": "Slovo vymyslel pro divadelní hru spisovatel Karel Čapek, respektive mu ho navrhl jeho bratr Josef - a odtud se rozšířilo do jazyků po celém světě.",
   "more_fact": "Divadelní hra R.U.R. měla premiéru v roce 1921 a slovo robot se od té doby rozšířilo prakticky do všech jazyků světa.",
   "source_url": "https://cs.wikipedia.org/wiki/Robot",
-  "image_prompt": "Fotorealistický snímek starého psacího stroje a hromádky popsaných papírů na dřevěném stole, 16:9",
-  "about": "vzniku slova robot"
+  "image_prompt": "Starý plechový hračkářský robot stojící na dřevěném stole, teplé světlo, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "about": "původu slova robot"
  },
  {
-  "id": "cz-k-dolar-tolar-jachymov",
+  "id": "cz-t-dolar-tolar-jachymov",
   "cc": "cz",
   "country": "Česko",
   "section": "Jazyk",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Americký dolar má jméno, které nakonec vede až k jednomu českému městu. Ke kterému?",
   "answer": "K Jáchymovu",
@@ -4594,19 +4594,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kdo podle tradice naučil malého knížete Václava, pozdějšího svatého Václava, číst a modlit se?",
-  "answer": "Jeho babička Ludmila",
+  "question": "Malého knížete, který později dostal jméno svatý Václav, prý naučil číst a modlit se jeho nejbližší člen rodiny, co na něj měl při výchově největší vliv. Kdo to podle tradice byl?",
+  "answer": "Jeho babička",
   "distractors": [
    "Jeho učitel z kláštera v cizí zemi",
    "Jeho starší sestra",
    "Jeho otec kníže"
   ],
-  "quip_correct": "Babička jako první učitelka - Ludmila to prý zvládla se svým vnukem na jedničku.",
-  "quip_wrong": "Cizí učitel, sestra ani otec - podle tradice usedala malému Václavovi k učení právě jeho babička Ludmila.",
+  "quip_correct": "Tys to věděl! Babičce se prý povedlo naučit vnuka číst i modlit se úplně na jedničku - jmenovala se Ludmila.",
+  "quip_wrong": "Cizí učitel, sestra ani otec - podle tradice usedala k malému Václavovi nad knihou právě jeho babička, jmenovala se Ludmila.",
   "explanation": "Ludmila byla první českou kněžnou, která přijala křest, a později se stala i první českou světicí, ke které se lidé modlili.",
   "more_fact": "Ludmila je dodnes patronkou babiček a vychovatelů, protože se právě o výchovu vnuka podle tradice tolik starala.",
   "source_url": "https://cs.wikipedia.org/wiki/Ludmila_(sv%C4%9Btice)",
-  "image_prompt": "Fotorealistický snímek starší ženy v dobovém oděvu sedící s malým chlapcem nad otevřenou knihou u okna hradní komnaty, měkké denní světlo, 16:9",
+  "image_prompt": "Starší žena v dobovém oděvu sedící s malým chlapcem nad otevřenou knihou u okna hradní komnaty, měkké denní světlo, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "svaté Ludmile a jejím vnukovi Václavovi"
  },
  {
@@ -11942,7 +11942,7 @@
   "explanation": "Husté houští kleče funguje jako přirozená ochrana - drží na horských svazích sníh a zabraňuje tomu, aby se z něj sesypaly lavíny.",
   "more_fact": "Pod ochranou hustých větví kleče přežívá i drobná zvěř, protože jí hustý porost schová před mrazivým větrem i před dravci.",
   "source_url": "https://cs.wikipedia.org/wiki/Borovice_ko%C5%A1at%C3%A1",
-  "image_prompt": "Fotorealistická fotografie nízkého plazivého porostu kosodřeviny na horském svahu Krkonoš, žádní lidé, 16:9",
+  "image_prompt": "Nízký plazivý porost kosodřeviny na horském svahu Krkonoš, žádní lidé, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "kleči na krkonošských hřebenech"
  },
  {
@@ -11965,7 +11965,7 @@
   "explanation": "Rašeliniště vznikají celá tisíce let, protože odumřelé rostliny se ve vodě bez vzduchu nestíhají rozkládat a jen se pomalu vrství jedna na druhou.",
   "more_fact": "V šumavských slatích roste i vzácná masožravá rostlina rosnatka, která si na živiny z chudé mokré půdy přilepšuje chytáním hmyzu na lepkavé listy.",
   "source_url": "https://cs.wikipedia.org/wiki/Chalupsk%C3%A1_sla%C5%A5",
-  "image_prompt": "Fotorealistická fotografie dřevěného chodníku vedoucího přes rašeliniště se zelenými mechy na Šumavě, žádní lidé, 16:9",
+  "image_prompt": "Dřevěný chodník vedoucí přes rašeliniště se zelenými mechy na Šumavě, žádní lidé, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "šumavských rašeliništích, slatích"
  },
  {
@@ -12322,14 +12322,14 @@
   "kids": true,
   "type": "choice",
   "question": "Co si lidé v prosinci nejčastěji kupují na venkovních vánočních trzích na náměstí, aby se zahřáli, když se procházejí kolem stánků s ozdobami?",
-  "answer": "Svařené víno nebo horký punč",
+  "answer": "Horkou čokoládu",
   "distractors": [
    "Ledovou tříšť",
    "Studenou limonádu",
    "Zmrzlinu"
   ],
-  "quip_correct": "Tys to věděl! Horký nápoj v rukou hřeje líp než jakákoli rukavice.",
-  "quip_wrong": "Ledová tříšť a zmrzlina by ve zmrzlých prstech dlouho nevydržely - na prosincovém náměstí lidi zahřeje svařák nebo punč.",
+  "quip_correct": "Tys to věděl! Hrnek horké čokolády zahřeje ruce líp než jakákoli rukavice.",
+  "quip_wrong": "Ledová tříšť a zmrzlina by ve zmrzlých prstech dlouho nevydržely — na prosincovém náměstí lidi zahřeje horký nápoj.",
   "explanation": "Vánoční trhy bývají doplněné velkým ozdobeným stromem uprostřed náměstí a stánky s dřevěnými hračkami a perníkem.",
   "more_fact": "Pražské vánoční trhy na Staroměstském náměstí patří mezi nejstarší a nejnavštěvovanější v celé Evropě.",
   "source_url": "https://cs.wikipedia.org/wiki/V%C3%A1no%C4%8Dn%C3%AD_trhy",
@@ -12627,12 +12627,12 @@
    "Homole cukru",
    "Placky"
   ],
-  "quip_correct": "Jeden frgál klidně nasytí celou rodinu u stolu.",
+  "quip_correct": "Tys to věděl! Jeden frgál klidně nasytí celou rodinu kolem stolu.",
   "quip_wrong": "Homole cukru je tvrdý kus cukru na vaření, s tímhle měkkým koláčem nemá nic společného.",
   "explanation": "Frgál bývá i přes 30 centimetrů v průměru, protože se peče na celý plech najednou, ne po jednotlivých kouscích.",
   "more_fact": "Frgály pocházejí z Valašska na východní Moravě a tradičně se pekly hlavně o posvícení a svatbách.",
-  "source_url": "https://cs.wikipedia.org/wiki/Frgál",
-  "image_prompt": "Fotorealistická fotka velkého kulatého frgálu s tvarohem na dřevěném prkénku, bez lidí",
+  "source_url": "https://cs.wikipedia.org/wiki/Frg%C3%A1l",
+  "image_prompt": "Velký kulatý frgál s tvarohem na dřevěném prkénku, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "frgálech, valašských obřích koláčích"
  },
  {
@@ -12827,19 +12827,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Rychlobruslařka Martina Sáblíková jezdí na ledě tak rychle, že jí lidé přezdívají královna ledu. Na jak dlouhé trati vyhrála nejvíc olympijských medailí?",
-  "answer": "Na 5000 metrů",
+  "question": "Rychlobruslařka Martina Sáblíková jezdí na ledě tak rychle, že jí lidé přezdívají královna ledu. Nejvíc olympijských medailí vyhrála na krátkém sprintu, kde to trvá pár vteřin, nebo na dlouhé vytrvalostní trati, kde jezdí pořád dokola?",
+  "answer": "Na dlouhé vytrvalostní trati",
   "distractors": [
-   "Na 100 metrů",
-   "Na jedno kolečko",
-   "Na 42 kilometrů (maraton)"
+   "Na krátkém sprintu, kde to trvá pár vteřin",
+   "Na slalomu mezi kužely",
+   "Na skákání přes překážky na bruslích"
   ],
-  "quip_correct": "Tys to věděl! Na takové trati by ti asi i sníh na botách ztuhl dřív, než dojedeš do cíle.",
-  "quip_wrong": "Sto metrů by uběhla skoro každá školačka a jedno kolečko je jen na rozcvičku - Sáblíková jezdí trať mnohem delší.",
+  "quip_correct": "Tys to věděl! Na takové dlouhé trati by ti asi i sníh na botách ztuhl dřív, než dojedeš do cíle.",
+  "quip_wrong": "Slalom ani skákání přes překážky rychlobruslení vůbec nezná - Sáblíková vyniká na dlouhé vytrvalostní trati, kde jede kolo za kolem.",
   "explanation": "Sáblíková začínala jako malá holka na kolečkových bruslích a na led přesedlala až později.",
   "more_fact": "Rychlobruslařská dráha je oválná a bruslaři na ní jezdí ve dvou drahách, které si uprostřed závodu vymění.",
-  "source_url": "https://cs.wikipedia.org/wiki/Martina_Sáblíková",
-  "image_prompt": "Fotorealistická fotka prázdného oválného ledového rychlobruslařského stadionu, bez lidí",
+  "source_url": "https://cs.wikipedia.org/wiki/Martina_S%C3%A1bl%C3%ADkov%C3%A1",
+  "image_prompt": "Prázdný oválný ledový rychlobruslařský stadion, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "rychlobruslařce Martině Sáblíkové"
  },
  {
@@ -13218,7 +13218,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Skladatel Leoš Janáček napsal operu o zvířeti z lesa, které umí mluvit a žít jako člověk. O jaké zvíře jde?",
+  "question": "Skladatel Leoš Janáček napsal operu o chytrém lesním zvířeti, které je v pohádkách vždycky mazané a dokáže napálit i lovce. O jaké zvíře jde?",
   "answer": "O lišku",
   "distractors": [
    "O medvěda",
@@ -13226,11 +13226,11 @@
    "O vlka"
   ],
   "quip_correct": "Tys to věděl! Ta liška se jmenuje Bystrouška a stala se jednou z nejhranějších postav české opery.",
-  "quip_wrong": "Ne, medvěd, jelen ani vlk - Janáčkova opera patří chytré lišce jménem Bystrouška.",
+  "quip_wrong": "Medvěd bývá silák, jelen krasavec a vlk zlobil v pohádkách - ale ten nejmazanější je vždycky liška, a právě o ní Janáček napsal operu.",
   "explanation": "Janáček žil a tvořil hlavně na Moravě, v Brně, a rád do svých skladeb vkládal melodie moravských lidových písní.",
   "more_fact": "Janáček si zvuky lidské řeči zapisoval jako noty - poslouchal, jak lidé mluví, a snažil se to přenést do hudby.",
-  "source_url": "https://cs.wikipedia.org/wiki/Leoš_Janáček",
-  "image_prompt": "Fotorealistická fotka lišky v podzimním lese mezi barevným listím, bez lidí",
+  "source_url": "https://cs.wikipedia.org/wiki/Leo%C5%A1_Jan%C3%A1%C4%8Dek",
+  "image_prompt": "Liška v podzimním lese mezi barevným listím, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "skladateli Leošovi Janáčkovi a opeře Liška Bystrouška"
  },
  {
@@ -13276,7 +13276,7 @@
   "explanation": "Karlu Zemanovi se přezdívá český Jules Verne filmu, protože jeho filmy vypadaly jako oživené staré rytiny z dobrodružných knih.",
   "more_fact": "Ve Zlíně dnes stojí muzeum, kde si návštěvníci mohou sami vyzkoušet Zemanovy filmové triky.",
   "source_url": "https://cs.wikipedia.org/wiki/Karel_Zeman",
-  "image_prompt": "Fotorealistická fotka staré filmové kamery a ručně vyrobeného modelu dinosaura na natáčecím stole, bez lidí",
+  "image_prompt": "Stará filmová kamera a ručně vyrobený model dinosaura na natáčecím stole, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "filmaři Karlu Zemanovi a filmu Cesta do pravěku"
  },
  {
@@ -13367,8 +13367,8 @@
   "quip_wrong": "Kdepak, žádné bohatství ani svatba - jeho táta prostě hlídal kostelní zvony, a tak celá rodina bydlela přímo ve věži.",
   "explanation": "Bohuslav Martinů se později stal jedním z nejhranějších českých skladatelů na světě a napsal stovky skladeb, od symfonií po pohádkové opery.",
   "more_fact": "Z okna věže v Poličce viděl malý Bohuslav do daleké krajiny a prý si tam odmalička hrál s pohledem na hory.",
-  "source_url": "https://cs.wikipedia.org/wiki/Bohuslav_Martinů",
-  "image_prompt": "Fotorealistická fotka staré kostelní věže s velkými zvony na malém českém náměstí, bez lidí",
+  "source_url": "https://cs.wikipedia.org/wiki/Bohuslav_Martin%C5%AF",
+  "image_prompt": "Stará kostelní věž s velkými zvony na malém českém náměstí, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "skladateli Bohuslavu Martinů a jeho rodné věži v Poličce"
  },
  {
@@ -13379,19 +13379,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Císař Rudolf II. sídlil na Pražském hradě a byl proslulý svými podivnými zálibami. Co si tam mimo jiné choval jako domácího mazlíčka?",
+  "question": "Císař Rudolf II. sídlil na Pražském hradě a miloval neobvyklá zvířata. Stejné zvíře, jaké najdeš i na českém znaku, si tam prý choval doopravdy, živé, na hradním nádvoří. Které to bylo?",
   "answer": "Lva",
   "distractors": [
    "Krokodýla",
    "Ledního medvěda",
    "Klokana"
   ],
-  "quip_correct": "Přesně tak - lev chodil po hradních zahradách skoro jako pes.",
-  "quip_wrong": "Kdepak, žádný krokodýl ani lední medvěd - Rudolfovou pýchou byl skutečný lev na hradním nádvoří.",
+  "quip_correct": "Tys to věděl! Lev totiž zdobí i český znak - Rudolf si vlastně pořídil živou verzi státního symbolu.",
+  "quip_wrong": "Zkus se podívat na český znak - stejné zvíře, jaké je na něm, choval Rudolf doopravdy na hradě.",
   "explanation": "Rudolf II. na svém dvoře zaměstnával i alchymisty, kteří se pokoušeli vyrobit zlato nebo najít lék na všechny nemoci.",
   "more_fact": "Rudolfovy podivuhodné sbírky obrazů, kamenů a kuriozit patřily mezi největší v tehdejší Evropě.",
-  "source_url": "https://cs.wikipedia.org/wiki/Rudolf_II._Habsburský",
-  "image_prompt": "Fotorealistická fotka starobylého hradního nádvoří s kamennými arkádami za soumraku, bez lidí",
+  "source_url": "https://cs.wikipedia.org/wiki/Rudolf_II._Habsbursk%C3%BD",
+  "image_prompt": "Starobylé hradní nádvoří s kamennými arkádami za soumraku, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "císaři Rudolfu II. a jeho pobytu na Pražském hradě"
  },
  {
@@ -13563,19 +13563,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve kterém českém městě najdeš slavné muzeum s jednou z největších sbírek loutek na světě?",
-  "answer": "V Chrudimi",
+  "question": "V českém městě Chrudim je muzeum s jednou z největších sbírek loutek na světě - tisíce maňásků a marionet pohromadě. Co bys tam na policích a ve vitrínách nejspíš uviděl?",
+  "answer": "Spoustu dřevěných loutek s namalovanými tvářemi",
   "distractors": [
-   "V Plzni",
-   "V Brně",
-   "V Olomouci"
+   "Živá zvířata v klecích",
+   "Staré závodní automobily",
+   "Vesmírné rakety"
   ],
   "quip_correct": "Tys to věděl! Tolik loutek na jednom místě - stačilo by na loutkové divadlo pro celou školu.",
-  "quip_wrong": "V Plzni mají spíš pivovar než loutky - sbírku, o kterou se hraje tahle otázka, najdeš jinde.",
+  "quip_wrong": "Žádná zvířata, auta ani rakety - v Chrudimi na tebe koukají vitríny plné dřevěných loutek, maňásků a marionet.",
   "explanation": "Sbírka obsahuje tisíce maňásků a marionet, některé jsou staré přes sto padesát let.",
   "more_fact": "Chrudim hostí i mezinárodní loutkářský festival, kam každý rok sjíždějí soubory z celého světa.",
-  "source_url": "https://cs.wikipedia.org/wiki/Loutkářské_muzeum_v_Chrudimi",
-  "image_prompt": "Fotorealistický záběr na prosklenou vitrínu s řadou starých dřevěných loutek v muzejní expozici, bez lidí",
+  "source_url": "https://cs.wikipedia.org/wiki/Loutk%C3%A1%C5%99sk%C3%A9_muzeum_v_Chrudimi",
+  "image_prompt": "Prosklená vitrína s řadou starých dřevěných loutek v muzejní expozici, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "Muzeu loutek v Chrudimi"
  },
  {
@@ -13678,19 +13678,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenují slavné pražské filmové ateliéry, kde vznikala spousta českých pohádek i velkých zahraničních filmů?",
-  "answer": "Barrandovské ateliéry (Barrandov)",
+  "question": "V pražských filmových ateliérech Barrandov si filmaři dokážou jednu ulici proměnit hned v několik různých míst a dob. Co tam mají postavené venku, aby kvůli každému filmu nemuseli cestovat do ciziny?",
+  "answer": "Celé venkovní kulisy - třeba středověké městečko i divoký západ",
   "distractors": [
-   "Vyšehradské ateliéry",
-   "Karlínské ateliéry",
-   "Smíchovské ateliéry"
+   "Jen velké prázdné haly bez ničeho",
+   "Skutečné hrady dovezené z ciziny",
+   "Malované obrazy na plátně místo domů"
   ],
   "quip_correct": "Tys to věděl! Kus Prahy, kde se za jednu zeď schová středověký hrad i divoký západ.",
-  "quip_wrong": "Karlínské ateliéry si vymyslíme snadno, ale filmaři si tam kamery nikdy nerozložili - hledej jméno podle skály nad Vltavou.",
+  "quip_wrong": "Žádné dovezené hrady ani malby na plátně - filmaři si venku postavili opravdové kulisy, které jen vypadají jako středověk nebo divoký západ.",
   "explanation": "Ateliéry vznikly už ve třicátých letech minulého století a jsou pojmenované podle blízké skály Barrandov.",
   "more_fact": "Kromě natáčení uvnitř velkých hal mají Barrandovské ateliéry i venkovní kulisy, třeba středověké město nebo západní americké městečko.",
-  "source_url": "https://cs.wikipedia.org/wiki/Filmové_ateliéry_Barrandov",
-  "image_prompt": "Fotorealistický záběr na venkovní filmovou kulisu středověké uličky s dřevěnými domy, denní světlo, bez lidí",
+  "source_url": "https://cs.wikipedia.org/wiki/Filmov%C3%A9_ateli%C3%A9ry_Barrandov",
+  "image_prompt": "Venkovní filmová kulisa středověké uličky s dřevěnými domy, denní světlo, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "Barrandovských filmových ateliérech"
  },
  {
@@ -13713,7 +13713,7 @@
   "explanation": "Řemeslníci nanesou na sebe dvě vrstvy omítky různé barvy a pak tou svrchní jehlou nebo hřebíkem proškrabávají vzor.",
   "more_fact": "Nejvíc sgrafitem zdobených domů uvidíš na náměstích jihočeských a jihomoravských městeček, kde jimi renesanční měšťané chlubili svým bohatstvím.",
   "source_url": "https://cs.wikipedia.org/wiki/Sgrafito",
-  "image_prompt": "Fotorealistický detailní záběr na fasádu domu zdobenou vyrytými geometrickými vzory ve dvou barvách omítky, bez lidí",
+  "image_prompt": "Detail fasády domu zdobené vyrytými geometrickými vzory ve dvou barvách omítky, bez lidí, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "sgrafitu, staré technice zdobení domů"
  },
  {
@@ -13816,20 +13816,20 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kdo je podle tradice zasloužilý o to, že do češtiny zavedl háčky a čárky nad písmeny?",
-  "answer": "Jan Hus",
+  "question": "Nad písmeny jako Č, Ř nebo Š bývá malý zobáček. Jak se tomuhle znaménku říká, protože vypadá jako drobný háček zavěšený nad písmenem?",
+  "answer": "Háček",
   "distractors": [
-   "Karel IV.",
-   "Jan Amos Komenský",
-   "Cyril a Metoděj"
+   "Copánek",
+   "Klobouček",
+   "Ptačí zobáček"
   ],
-  "quip_correct": "Kněz, kazatel a k tomu ještě reformátor pravopisu – Hus měl fakt nabitý životopis.",
-  "quip_wrong": "Cyril a Metoděj přinesli Slovanům úplně jiné písmo, hlaholici – s háčky nad písmeny ještě nepočítali.",
-  "explanation": "Hus svůj návrh popsal v latinském spisku De orthographia Bohemica kolem roku 1406 – navrhoval nahradit tehdejší spřežky jako 'rz' nebo 'sz' jednoduššími znaménky nad písmeny.",
+  "quip_correct": "Tys to věděl! Díky háčkům umí čeština zapsat hlásky, které jiné jazyky vůbec nemají.",
+  "quip_wrong": "Zkus se podívat na písmeno Č - ten drobný zobáček nahoře se jmenuje jinak, než sis myslel - je to háček.",
+  "explanation": "Podle tradice tahle znaménka do češtiny zavedl kněz Jan Hus, aby se hlásky nemusely psát dvěma nebo třemi písmeny najednou.",
   "more_fact": "Předtím se čeština zapisovala takzvaným spřežkovým pravopisem, kdy se jedna hláska skládala i ze dvou nebo tří písmen za sebou, třeba dnešní 'ř' se psalo jako 'rz'.",
   "source_url": "https://cs.wikipedia.org/wiki/Jan_Hus",
-  "image_prompt": "Fotorealistická fotografie staré rukou psané husitské listiny s dobovým písmem, detailní záběr na zažloutlý papír a inkoust, teplé světlo, žádní lidé",
-  "about": "Janu Husovi a vzniku háčků a čárek"
+  "image_prompt": "Dětský sešit s procvičovanými písmeny s háčky a čárkami, tužka vedle, teplé světlo, žádní lidé, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "about": "háčcích a čárkách v češtině"
  },
  {
   "id": "cz-k-abeceda-42-pismen",
@@ -13839,20 +13839,20 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik písmen má celá česká abeceda, když započítáš úplně všechna písmena s háčky a čárkami?",
-  "answer": "42",
+  "question": "Anglická abeceda nemá žádná písmena s háčky ani čárkami. Které z těchto písmen je typicky jen české a v angličtině ho vůbec nenajdeš?",
+  "answer": "Ř",
   "distractors": [
-   "26",
-   "33",
-   "50"
+   "B",
+   "M",
+   "T"
   ],
-  "quip_correct": "Angličtina si vystačí s 26 – čeština potřebuje skoro dvakrát tolik, aby obsáhla všechny ty háčky a čárky.",
-  "quip_wrong": "26 písmen má anglická abeceda – ta česká je díky háčkům a čárkám mnohem bohatší.",
-  "explanation": "Do těch 42 písmen se počítá i 'ch', které se v češtině chová jako jedno samostatné písmeno, ne jako dvě.",
-  "more_fact": "Nejmladším písmenem české abecedy je Ě – dřív se stejná hláska zapisovala jinak a jeho dnešní podoba se ustálila až postupnou reformou pravopisu.",
+  "quip_correct": "Tys to věděl! Ř je tak specifické pro češtinu, že cizinci se ho učí vyslovit i celé roky.",
+  "quip_wrong": "B, M i T znají anglicky mluvící děti stejně dobře jako ty - schválně hledej písmeno, co v angličtině vůbec neexistuje.",
+  "explanation": "Česká abeceda má díky všem těm háčkům a čárkám celkem 42 písmen - skoro dvakrát tolik, co anglická abeceda se svými 26.",
+  "more_fact": "Nejmladším písmenem české abecedy je Ě - dřív se stejná hláska zapisovala jinak a jeho dnešní podoba se ustálila až postupnou reformou pravopisu.",
   "source_url": "https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%A1_abeceda",
-  "image_prompt": "Fotorealistická fotografie dřevěných dětských abecedních kostek rozložených na stole, na některých kostkách písmena s háčky a čárkami, přirozené světlo, žádní lidé",
-  "about": "české abecedě a jejích 42 písmenech"
+  "image_prompt": "Dřevěné dětské abecední kostky rozložené na stole, na některých kostkách písmena s háčky a čárkami, přirozené světlo, žádní lidé, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "about": "výjimečných písmenech české abecedy, třeba Ř"
  },
  {
   "id": "cz-k-ch-jedno-pismeno",
@@ -14338,12 +14338,12 @@
   "about": "Vyšehradě a jeho postavení sídla prvních Přemyslovců"
  },
  {
-  "id": "cz-k-hist-bohemia-bojove",
+  "id": "cz-t-hist-bohemia-bojove",
   "cc": "cz",
   "country": "Česko",
   "section": "Historie",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Latinský název Čech, Bohemia, používaný dodnes v mnoha jazycích, pochází z jména starého keltského kmene, který v našich krajích žil dávno před příchodem Slovanů. Jak se ten kmen jmenoval?",
   "answer": "Bójové",

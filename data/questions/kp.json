@@ -601,17 +601,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tradiční korejský oděv, který se nosí na svátky?",
+  "question": "Jak se jmenuje tradiční korejský sváteční oděv z lesklého hedvábí v jasných barvách, který má krátkou horní část a vzdušnou dlouhou sukni nebo kalhoty?",
   "answer": "Hanbok",
   "distractors": [
    "Kimono",
    "Saree",
    "Dobok"
   ],
-  "quip_correct": "Přesně tak! Hanbok se šije a nosí už přes tisíc let — a ani ten věk mu na slavnostním vzhledu nic neubral.",
-  "quip_wrong": "Kimono, saree, dobok? Hezké tipy, jen z jiných zemí a jiných sportů — tenhle sváteční korejský oděv má svoje vlastní jméno: hanbok.",
-  "explanation": "Hanbok se skládá z krátké horní části (jeogori) a vzdušné sukně (chima) u žen nebo dlouhých kalhot (baji) u mužů. Tradiční hanbok bývá z lesklého hedvábí v jasných barvách.",
-  "about": "hanboku"
+  "quip_correct": "Přesně tak! Hanbok se šije a nosí už přes tisíc let – a ani ten věk mu na slavnostním vzhledu nic neubral.",
+  "quip_wrong": "Kimono, saree, dobok? Hezké tipy, jen z jiných zemí – tenhle sváteční korejský oděv má svoje vlastní jméno: hanbok.",
+  "explanation": "Hanbok se skládá z krátké horní části (jeogori) a vzdušné sukně (chima) u žen nebo dlouhých kalhot (baji) u mužů.",
+  "about": "hanboku",
+  "image_prompt": "A painterly watercolor gouache illustration of hanboku, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "kp-k-hora-pektu-jezero",
@@ -696,12 +697,12 @@
   "about": "Pchjongjangu"
  },
  {
-  "id": "kp-k-kaesong",
+  "id": "kp-t-kaesong",
   "cc": "kp",
   "country": "Severní Korea",
   "section": "Místa",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Čím bylo město Kaesong, než se stalo pohraničním městem Severní Koreje?",
   "answer": "Hlavním městem korejské dynastie Kórjo",
@@ -769,7 +770,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tradiční korejský lidový zápas, při kterém se soupeři drží za pásek na noze?",
+  "question": "Jak se jmenuje tradiční korejský zápas na písčitém kolbišti, při kterém se soupeři drží za pásek na noze a snaží se jeden druhého povalit na zem?",
   "answer": "Ssirum",
   "distractors": [
    "Taekwondo",
@@ -777,7 +778,7 @@
    "Sumo"
   ],
   "quip_correct": "Přesně tak, ssirum! Žádné kopy ani pěsti, jen síla, rovnováha a pořádné držení pásku.",
-  "quip_wrong": "Taekwondo kope, judo hází přes rameno, sumo tlačí pořádnou vahou — tenhle zápas na pásku se jmenuje jinak: ssirum.",
+  "quip_wrong": "Taekwondo kope, judo hází přes rameno, sumo tlačí pořádnou vahou – tenhle zápas na pásku se jmenuje jinak: ssirum.",
   "explanation": "Ssirum se v Koreji zápasí odedávna na písčitém kruhovém kolbišti, vítěz shodí soupeře na zem nebo ho donutí dotknout se země jinou částí těla než chodidly.",
   "source_url": "https://en.wikipedia.org/wiki/Ssireum",
   "image_prompt": "Fotorealistický snímek dvou zápasníků ssirum na písčitém kolbišti, drží se za pásky na stehnech, 16:9",

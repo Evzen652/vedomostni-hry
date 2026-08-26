@@ -641,17 +641,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje kulatý slaný chléb posypaný sezamovými semínky, který se v Turecku prodává přímo na ulici?",
-  "answer": "Simit",
+  "question": "V Turecku se na ulicích prodává kulatý slaný chléb posypaný sezamem. Jak ho prodavači nejčastěji nosí, aby ho mohli nabízet kolemjdoucím?",
+  "answer": "Naskládaný na velkém tácu na hlavě",
   "distractors": [
-   "Pita",
-   "Baget",
-   "Pretzel"
+   "V košíku zavěšeném na krku",
+   "V náručí jako dřevo na oheň",
+   "Na vozíku, který za sebou táhnou psi"
   ],
-  "quip_correct": "Simit, přesně! Prodavači ho nosí vyrovnaný na hlavě v obřích táccích — a přitom neupustí ani jeden kroužek.",
-  "quip_wrong": "Pita a baget ti znějí povědomě, viď? Oba jsou odjinud — tenhle sezamový kroužek se jmenuje simit.",
-  "explanation": "Simit se prodává v Turecku nejméně od 16. století. Prodavači ho nosí na hlavě v obrovských táccích nebo rozvážejí na speciálních vozících. Každý den se v Istanbulu prodá přes milion kousků.",
-  "about": "simitu"
+  "quip_correct": "Tys to věděl! Prodavači ho nosí vyrovnaný na hlavě ve velkých táccích, a přitom jim nespadne ani jeden kousek.",
+  "quip_wrong": "Zkus to jinak – žádný košík na krku ani psí vozík. Nejčastěji ho vidíš na velkém tácu přímo na hlavě prodavače.",
+  "explanation": "Tenhle sezamový chléb se turecky jmenuje simit a prodává se na ulicích už celá staletí.",
+  "about": "simitu",
+  "image_prompt": "Fotorealistický snímek prodavače nesoucího na hlavě velký tác s kulatými sezamovými chleby simit na rušné turecké ulici, teplé ranní světlo, 16:9"
  },
  {
   "id": "tr-t-hamam",
@@ -681,16 +682,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje vrstvený turecký zákusek z tenkého těsta, medu a mletých pistácií?",
-  "answer": "Baklava",
+  "question": "Tenhle turecký zákusek se skládá z mnoha tenoučkých vrstev těsta provoněných medem a posypaných mletými pistáciemi. Co dělá jeho přípravu tak pracnou?",
+  "answer": "Musí se naskládat spousta tenoučkých vrstev těsta, tenkých jako papír",
   "distractors": [
-   "Lokum",
-   "Simit",
-   "Börek"
+   "Musí se péct celý den v troubě",
+   "Musí se míchat rukama bez lžíce",
+   "Musí se nechat několik dní mrazit"
   ],
-  "quip_correct": "Baklava, přesně! Desítky tenoučkých vrstev těsta, mezi nimi ořechy a med — trpělivost cukráře se pozná na první kousnutí.",
-  "quip_wrong": "Lokum je spíš žvýkací kostička a simit chleba se sezamem — vrstvený medový zákusek s pistáciemi je baklava.",
-  "explanation": "Na přípravu opravdové baklavy je potřeba i přes 40 vrstev těsta filo tenkého jako papír, ručně vypracovaného cukráři.",
+  "quip_correct": "Tys to věděl! Cukráři skládají vrstvu po vrstvě těsta tenoučkého jako papír – trpělivost se pozná hned na první kousnutí.",
+  "quip_wrong": "Zkus to jinak – dlouhé pečení, míchání rukama ani mražení za tím nestojí. Jde hlavně o spoustu tenoučkých vrstev těsta.",
+  "explanation": "Tenhle zákusek se jmenuje baklava a mezi vrstvami těsta se skrývá med a mleté pistácie.",
   "source_url": "https://en.wikipedia.org/wiki/Baklava",
   "image_prompt": "Fotorealistický detailní snímek kostek baklavy s pistáciovou drtí na měděném tácu, teplé světlo, bez textu, 16:9",
   "about": "baklavě"
@@ -769,16 +770,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolik obchodů má přibližně Velký bazar v Istanbulu, jeden z nejstarších krytých trhů světa?",
-  "answer": "Přes 4000",
+  "question": "Velký bazar v Istanbulu je jeden z nejstarších krytých trhů na světě. Kolik tam asi je obchodů?",
+  "answer": "Tolik, že se v nich dá snadno ztratit na několik hodin",
   "distractors": [
-   "Asi 40",
-   "Přesně 100",
-   "Přes 40 000"
+   "Jen pár desítek, dá se to obejít za chvilku",
+   "Přesně jeden veliký obchod",
+   "Žádné – je to jen muzeum"
   ],
-  "quip_correct": "Trefa — přes čtyři tisíce krámků pod jednou střechou. Kdo se tam jednou ztratí, najde cestu ven klidně až za pár hodin.",
-  "quip_wrong": "Ať sis představoval hrstku krámků, nebo desetitisíce, realita je přes čtyři tisíce obchodů pod jednou střechou.",
-  "explanation": "Velký bazar v Istanbulu vznikl v 15. století a patří mezi nejstarší a největší kryté trhy na světě, denně jím projdou statisíce návštěvníků.",
+  "quip_correct": "Tys to věděl! Obchodů je tam tolik, že kdo se jednou ztratí, najde cestu ven třeba až za pár hodin.",
+  "quip_wrong": "Zkus to jinak – obchodů je tam mnohem víc než pár desítek, a rozhodně to není muzeum ani jediný krám.",
+  "explanation": "Velký bazar v Istanbulu vznikl už hodně dávno a patří mezi nejstarší a největší kryté trhy na světě – denně jím projdou davy návštěvníků.",
   "source_url": "https://en.wikipedia.org/wiki/Grand_Bazaar,_Istanbul",
   "image_prompt": "Fotorealistický snímek rušné klenuté uličky Velkého bazaru v Istanbulu plné barevných výloh, teplé světlo lamp, 16:9",
   "about": "Velkém bazaru v Istanbulu"

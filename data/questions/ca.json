@@ -1953,19 +1953,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje největší národní park Kanady, kde žije největší volně žijící stádo bizonů na světě?",
-  "answer": "Wood Buffalo National Park",
+  "question": "V jednom obrovském kanadském národním parku žije největší volně žijící stádo velkých chlupatých zvířat s mohutnou hlavou a rohy na světě. Jak se těmto zvířatům říká?",
+  "answer": "Bizoni",
   "distractors": [
-   "Banff National Park",
-   "Jasper National Park",
-   "Nahanni National Park"
+   "Sobi",
+   "Losi",
+   "Medvědi grizzly"
   ],
-  "quip_correct": "Ano! Tam se rozhodně nikdo nepočítá s bizony do postýlky, spíš naopak.",
-  "quip_wrong": "Krásný park, ale tolik bizonů pohromadě tam nenajdeš.",
-  "explanation": "Park je tak rozlehlý, že by se do jeho plochy vešlo celé Švýcarsko.",
+  "quip_correct": "Tys to věděl! Tam se rozhodně nikdo nepočítá s bizony do postýlky, spíš naopak.",
+  "quip_wrong": "Skoro - tohle zvíře v takhle obrovských stádech po kanadské pláni neputuje. Hledej něco chlupatějšího a s rohy.",
+  "explanation": "Národní park, kde bizoni žijí, je tak rozlehlý, že by se do jeho plochy vešla celá menší evropská země.",
   "source_url": "https://en.wikipedia.org/wiki/Wood_Buffalo_National_Park",
   "image_prompt": "Fotorealistický snímek stáda bizonů pasoucího se na rozlehlé travnaté pláni v národním parku Wood Buffalo, 16:9",
-  "about": "národním parku Wood Buffalo a jeho bizonech"
+  "about": "bizonech v kanadském národním parku Wood Buffalo"
  },
  {
   "id": "ca-k-narval-mory-jednorozec",
@@ -2371,19 +2371,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje obrovské nákupní centrum v Edmontonu, které má uvnitř vlastní horskou dráhu i vodní park s vlnami?",
-  "answer": "West Edmonton Mall",
+  "question": "Jedno obří kanadské nákupní centrum je tak velké, že v něm kromě obchodů najdeš rovnou uvnitř budovy i horskou dráhu a vodní park s umělými vlnami. Co si tam kromě nakupování můžeš užít?",
+  "answer": "Horskou dráhu i vodní park s vlnami",
   "distractors": [
-   "Toronto Eaton Centre",
-   "CF Chinook Centre",
-   "Yorkdale Mall"
+   "Zoologickou zahradu se slony",
+   "Přistávací dráhu pro letadla",
+   "Lyžařský svah se sjezdovkou"
   ],
-  "quip_correct": "Ano! Můžeš tam nakoupit ponožky a hned potom se svézt na horské dráze, aniž bys vyšel ven.",
-  "quip_wrong": "Velké nákupní centrum, ale horskou dráhu ani vodní park uvnitř nemá.",
+  "quip_correct": "Tys to věděl! Můžeš tam nakoupit ponožky a hned potom se svézt na horské dráze, aniž bys vyšel ven.",
+  "quip_wrong": "Skoro - tohle centrum je velké, ale zrovna tuhle kombinaci uvnitř nenajdeš. Zkus něco, na co se dá i zmoknout.",
   "explanation": "Centrum má i vlastní kluziště na bruslení a napodobeninu pirátské lodi v bazénu.",
   "source_url": "https://en.wikipedia.org/wiki/West_Edmonton_Mall",
   "image_prompt": "Fotorealistický snímek obřího nákupního centra s vnitřním vodním parkem, tobogány a horskou dráhou pod prosklenou střechou, 16:9",
-  "about": "nákupním centru West Edmonton Mall"
+  "about": "obřím kanadském nákupním centru s horskou dráhou a vodním parkem"
  },
  {
   "id": "ca-t-habitat-67",
@@ -2503,19 +2503,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se v oblíbené kanadské kavárně Tim Hortons říká malým kulatým kousíčkům koblihy?",
+  "question": "V oblíbené kanadské kavárně vzniknou při pečení velkých koblih malé kulaté kousky těsta, které zbydou z díry uprostřed. Prodávají se pak jako oblíbená maličká svačinka. Jak se jim říká?",
   "answer": "Timbits",
   "distractors": [
-   "Donut holes special",
-   "Mini muffiny",
-   "Sýrové kuličky"
+   "Preclíky",
+   "Sušenky s čokoládou",
+   "Karamelové bonbony"
   ],
-  "quip_correct": "Přesně tak – malé, kulaté a snědené dřív, než stihneš spočítat, kolikátý je to kousek!",
+  "quip_correct": "Tys to věděl! Malé, kulaté a snědené dřív, než stihneš spočítat, kolikátý je to kousek.",
   "quip_wrong": "Ve skutečnosti se jim říká timbits a bez nich by kanadská svačina nebyla úplná.",
-  "explanation": "Timbits pojmenovali podle zakladatele řetězce, bývalého hokejisty Tima Hortona.",
+  "explanation": "Timbits pojmenovali podle zakladatele kavárenského řetězce, bývalého hokejisty Tima Hortona.",
   "source_url": "https://en.wikipedia.org/wiki/Tim_Hortons",
   "image_prompt": "Fotorealistický snímek krabice s barevnými kulatými kousky koblih (timbits) na stole kavárny, 16:9",
-  "about": "timbitech z Tim Hortons"
+  "about": "timbitech z kanadské kavárny Tim Hortons"
  },
  {
   "id": "ca-k-montreal-bagel",
@@ -2679,19 +2679,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje oblíbená kanadská zimní zábava, při které se děti spouštějí ze zasněženého kopce na dlouhých dřevěných saních?",
-  "answer": "Tobogganing (jízda na toboganu)",
+  "question": "Jak se česky říká oblíbené kanadské zimní zábavě, při které se děti spouštějí ze zasněženého kopce na dlouhých dřevěných saních?",
+  "answer": "Sáňkování",
   "distractors": [
-   "Bobování na kolech",
+   "Bruslení po zamrzlém jezeře",
    "Lyžování na jedné lyži",
-   "Curling ze svahu"
+   "Curling na svahu"
   ],
-  "quip_correct": "Tobogan a kopec plný sněhu – přesně tohle Kanaďané v zimě milují!",
-  "quip_wrong": "Ne, hledaná odpověď je tobogganing – jízda na dlouhých dřevěných saních ze zasněženého kopce.",
-  "explanation": "Slovo \"toboggan\" pochází z jazyka domorodých Algonkinů, kteří tyto sáně bez skluznic používali k přepravě nákladu.",
+  "quip_correct": "Tys to věděl! Tobogan a kopec plný sněhu - přesně tohle Kanaďané v zimě milují.",
+  "quip_wrong": "Ne tak docela - hledaná zábava se jmenuje sáňkování, jízda na dlouhých dřevěných saních ze zasněženého kopce.",
+  "explanation": "Kanadské dřevěné sáně bez skluznic se anglicky nazývají toboggan - slovo pochází z jazyka domorodých Algonkinů, kteří na nich kdysi vozili náklad.",
   "source_url": "https://en.wikipedia.org/wiki/Toboggan",
-  "image_prompt": "Fotorealistický snímek dětí jedoucích na dřevěném toboganu ze zasněženého kopce, 16:9",
-  "about": "kanadském toboganování"
+  "image_prompt": "Fotorealistický snímek dětí jedoucích na dřevěných saních ze zasněženého kopce, 16:9",
+  "about": "kanadském sáňkování (tobogganingu)"
  },
  {
   "id": "ca-k-groundhog-day",
@@ -3119,18 +3119,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje slavné robotické rameno vyrobené v Kanadě, které pomáhalo astronautům na raketoplánech a na vesmírné stanici?",
-  "answer": "Canadarm",
+  "question": "Kanadský vynález pomáhá astronautům ve vesmíru - je to dlouhé kovové rameno s klouby jako lidská paže, které dokáže uchopit a přemístit i obrovské těžké součástky mimo vesmírnou loď. Čemu se tahle šikovná pomůcka nejvíc podobá?",
+  "answer": "Velké robotické paži",
   "distractors": [
-   "Maple Hand",
-   "Space Claw",
-   "Northern Arm"
+   "Padáku",
+   "Dalekohledu",
+   "Skafandru"
   ],
-  "quip_correct": "Přesně, Canadarm! Kanadská technika sahala až do vesmíru.",
-  "quip_wrong": "Ne, tohle jméno sis vymyslel - to skutečné rameno má v názvu rovnou jméno své domovské země.",
-  "explanation": "První Canadarm poprvé pomohl na oběžné dráze v roce 1981 a jeho vylepšená verze dodnes slouží na Mezinárodní vesmírné stanici.",
+  "quip_correct": "Tys to věděl! Kanadská technika tak sahala až do vesmíru.",
+  "quip_wrong": "Skoro - tahle věc astronautům ve vesmíru pomáhá jinak. Hledej něco, co se hýbe v kloubech jako paže.",
+  "explanation": "Tomuhle robotickému rameni se říká Canadarm - poprvé pomohlo na oběžné dráze už v roce 1981 a jeho vylepšená verze dodnes slouží na Mezinárodní vesmírné stanici.",
   "source_url": "https://cs.wikipedia.org/wiki/Canadarm",
   "image_prompt": "Fotorealistický snímek robotického ramene vesmírné stanice s výhledem na Zemi z vesmíru, 16:9",
-  "about": "robotickém rameni Canadarm"
+  "about": "kanadském robotickém rameni ve vesmíru (Canadarm)"
  }
 ]

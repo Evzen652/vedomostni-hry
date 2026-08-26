@@ -641,17 +641,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje typický vietnamský klobouk ve tvaru jehlanu ze slámy?",
-  "answer": "Non la",
+  "question": "Vietnamský slaměný klobouk má tvar jehlanu. Někteří řemeslníci do něj schovají něco překvapivého, co uvidíš, jen když klobouk nastavíš proti slunci. Co to je?",
+  "answer": "Namalovaný obrázek mezi vrstvami slámy",
   "distractors": [
-   "Sombrero",
-   "Fez",
-   "Turban"
+   "Malé zrcátko",
+   "Skrytou kapsu na peníze",
+   "Zvoneček, který cinká ve větru"
   ],
-  "quip_correct": "Bravo! Sombrero, fez, turban — klobouků na hlavu má svět spoustu, ale ten slaměný jehlan patří jen Vietnamu a jmenuje se non la.",
-  "quip_wrong": "Ne tak úplně — sombrero i fez patří jinam, vietnamský slaměný klobouk ve tvaru jehlanu je non la.",
-  "explanation": "Non la (doslova listový klobouk) nosí lidé ve Vietnamu stovky let. Někteří mistři do něj schovají malovanou scenérii, která je vidět jen v průsvitu světla.",
-  "about": "klobouku non la"
+  "quip_correct": "Tys to věděl! Někteří mistři schovají do klobouku malovanou scenérii, kterou uvidíš jen v prosvětlení proti slunci.",
+  "quip_wrong": "Zkus to jinak – zrcátko, kapsa na peníze ani zvoneček to nejsou. Je to namalovaný obrázek schovaný mezi vrstvami slámy.",
+  "explanation": "Tenhle klobouk se vietnamsky jmenuje non la, což doslova znamená listový klobouk, a lidé ho nosí už celá staletí.",
+  "about": "vietnamském slaměném klobouku",
+  "image_prompt": "A painterly watercolor gouache illustration of vietnamském slaměném klobouku, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "vn-k-draci-ovoce",
@@ -703,16 +704,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje vzácné zvíře podobné antilopě, které žije jen v horách na hranici Vietnamu a Laosu a vědci ho objevili teprve v roce 1992?",
-  "answer": "Sao la, přezdívaná asijský jednorožec",
+  "question": "V horách na hranici Vietnamu a Laosu žije vzácné zvíře podobné antilopě, s dlouhými rovnými růžky. Je tak plaché, že ho lidé objevili teprve docela nedávno – a hned dostalo přezdívku. Jakou?",
+  "answer": "Asijský jednorožec",
   "distractors": [
-   "Vodní buvol",
-   "Indočínský tygr",
-   "Malajský tapír"
+   "Horský duch",
+   "Lesní přízrak",
+   "Poslední drak"
   ],
-  "quip_correct": "Ano, sao la! Přezdívku asijský jednorožec dostala proto, že je tak vzácná a plachá, že ji naživo v přírodě vidělo jen pár lidí na světě.",
-  "quip_wrong": "Buvol, tygr, tapír jsou ve Vietnamu taky doma, ale tenhle raritní tvor s rovnými růžky se jmenuje sao la.",
-  "explanation": "Sao la objevili vědci teprve v roce 1992 přímo ve vietnamských horách, je to jeden z posledních velkých savců, které se lidem podařilo objevit tak pozdě.",
+  "quip_correct": "Tys to věděl! Přezdívku asijský jednorožec dostalo proto, že je tak vzácné a plaché, že ho naživo v přírodě vidělo jen pár lidí na světě.",
+  "quip_wrong": "Zkus to jinak – žádný duch, přízrak ani drak. Tomuhle vzácnému zvířeti se říká asijský jednorožec.",
+  "explanation": "Tohle zvíře se jmenuje sao la a vědci ho objevili přímo ve vietnamských horách jako jednoho z posledních velkých savců, které se lidem podařilo najít tak pozdě.",
   "source_url": "https://en.wikipedia.org/wiki/Saola",
   "image_prompt": "Fotorealistický snímek vzácného sao la s dlouhými rovnými růžky v mlžném horském lese na hranici Vietnamu a Laosu, přirozené světlo, 16:9",
   "about": "vzácném zvířeti sao la"

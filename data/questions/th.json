@@ -681,16 +681,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tropické ovoce, které Thajci nazývají králem ovoce, ale kvůli silné vůni ho nesmíš vzít do letadla ani do hotelu?",
-  "answer": "Durian",
+  "question": "Tohle tropické ovoce Thajci nazývají králem ovoce. Kvůli čemu ho ale nesmíš vzít do letadla ani do hotelu?",
+  "answer": "Kvůli extrémně silné vůni",
   "distractors": [
-   "Mangostan",
-   "Rambutan",
-   "Papája"
+   "Kvůli ostrým trnům, co by propíchly kufr",
+   "Kvůli tomu, že je jedovaté",
+   "Kvůli obrovské váze"
   ],
-  "quip_correct": "Přesně, durian! Jeho vůně je tak silná, že si vysloužila zákaz ve výtahu, letadle i metru — chuť si přitom spoustu lidí zamiluje.",
-  "quip_wrong": "Mangostan, rambutan i papája voní docela nevinně — tenhle zápach, co vyklidí celé kupé, patří durianu.",
-  "explanation": "Durian může vážit i přes 3 kila a jeho tvrdá slupka je pokrytá ostrými trny. V Thajsku i dalších zemích jihovýchodní Asie ho kvůli pachu zakazují v hotelových pokojích a veřejné dopravě.",
+  "quip_correct": "Tys to věděl! Ta vůně je tak silná, že ovoce vykázali i z výtahů a metra – a přitom spoustu lidí jeho chuť naprosto uchvátí.",
+  "quip_wrong": "Zkus to jinak – trny, jed ani váha za zákazem nestojí. Je to ta jeho pověstná silná vůně.",
+  "explanation": "Tohle ovoce se jmenuje durian, dokáže vážit opravdu hodně a jeho tvrdá slupka je pokrytá ostrými trny.",
   "source_url": "https://en.wikipedia.org/wiki/Durian",
   "image_prompt": "Fotorealistický detailní snímek ostnatého durianu rozříznutého napůl na dřevěném stole, thajský trh v pozadí, přirozené světlo, 16:9",
   "about": "durianu"

@@ -758,12 +758,12 @@
   "image_prompt": "A painterly watercolor illustration of a Sami herder in traditional colorful clothing guiding a reindeer herd across a snowy Nordic landscape, vintage travel journal style"
  },
  {
-  "id": "se-k-systembolaget",
+  "id": "se-t-systembolaget",
   "cc": "se",
   "country": "Švédsko",
   "section": "Kultura",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Ve Švédsku si nemůžeš koupit víno ani pivo v supermarketu jako v Česku. Kde ho musíš koupit?",
   "answer": "V jednom ze státních obchodů, které mají monopol na prodej alkoholu",
@@ -786,17 +786,17 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve Švédsku smíš stanovat, chodit a sbírat borůvky skoro kdekoliv v přírodě — i na cizím pozemku. Jak se toto právo jmenuje?",
-  "answer": "Allemansrätten — právo každého člověka",
+  "question": "Ve Švédsku smíš stanovat a sbírat borůvky skoro kdekoli v přírodě, i na cizím pozemku, a nikoho se ptát nemusíš. Jedno pravidlo ale platí vždycky – co bys radši nedělal?",
+  "answer": "Nestavěl bych stan hned vedle cizího domu",
   "distractors": [
-   "Friluftslag — zákon o volném čase",
-   "Naturrätt — přírodní zákon",
-   "Skogsfrid — les je svobodný"
+   "Nekoupil bych si housky v obchodě",
+   "Nezpíval bych v lese nahlas",
+   "Nesundal bych si boty"
   ],
-  "quip_correct": "Přesně tak, a ani se nemusíš nikoho ptát — stan na cizím pozemku, borůvky z cizího lesa, ve Švédsku je to normální, ne přestupek.",
-  "quip_wrong": "Skoro, ale ne přesně — vymyšlený název to není, právu volně chodit a tábořit v přírodě se říká allemansrätten.",
-  "explanation": "Allemansrätten je zakotveno v ústavě. Jediné podmínky: nesmíš tábořit přímo u domu vlastníka, nesmíš ničit přírodu a nesmíš sbírat chráněné rostliny. Švédové toto právo považují za součást národní identity.",
-  "about": "švédském právu allemansrätten",
+  "quip_correct": "Tys to věděl! Cizí les nebo louka jsou pro procházku i táboření otevřené, ale přímo pod okny sousedova domu bys stan stavět neměl.",
+  "quip_wrong": "Zkus to jinak – housky, zpěv v lese ani sundané boty nikomu nevadí. Jediné, co se nehodí, je stan hned u cizího domu.",
+  "explanation": "Tohle právo se švédsky jmenuje allemansrätten a je zapsané přímo ve švédské ústavě – Švédové ho berou jako součást své národní identity.",
+  "about": "švédském právu chodit volně přírodou",
   "image_prompt": "A painterly watercolor illustration of a family camping freely in a Swedish birch forest next to a calm lake, picking blueberries, with a small red tent, vintage travel journal style"
  },
  {
@@ -828,16 +828,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Vasaloppet je největší lyžařský závod na světě — každý rok ho absolvují tisíce lidí. Co je na trase zvláštní?",
-  "answer": "Je dlouhá 90 kilometrů — účastníci jedou celý den",
+  "question": "Vasaloppet je obří švédský závod na běžkách – lyžaři na trase stráví klidně celý den, od rána do večera. Co si o téhle trase myslíš?",
+  "answer": "Je fakt hodně dlouhá",
   "distractors": [
-   "Závodí se v noci pod reflektory",
-   "Trasa vede přes zamrzlé jezero do Norska",
-   "Závodníci musí nést batoh s potravinami"
+   "Jede se potmě, jen s baterkami na čele",
+   "Vede přes moře na lodích",
+   "Lyžaři si po cestě vyměňují lyže za kola"
   ],
-  "quip_correct": "Přesně tak, skvěle! Devadesát kilometrů, žádná legrace — trasa navíc kopíruje útěk krále na lyžích před pěti staletími, dnes na ni vyrazí až patnáct tisíc lidí najednou.",
-  "quip_wrong": "Nebylo to tak — žádná noční trasa ani jízda přes zamrzlé jezero do Norska, Vasaloppet je hlavně otázka vydržet 90 kilometrů.",
-  "explanation": "Vasaloppet se koná od roku 1922 a je inspirován útěkem krále Gustava Vasy z roku 1521, kdy na lyžích prchal před Dány. Závodu se účastní až 15 000 závodníků ročně — od olympijských šampionů po turisty, kteří to dokončí za 12 hodin.",
+  "quip_correct": "Tys to věděl! Trasa je tak dlouhá, že závodníci vyrážejí za ranního šera a do cíle dojíždějí až za světla dne.",
+  "quip_wrong": "Zkus to jinak – potmě, po moři na lodích ani na kolech se nejezdí. Trasa je hlavně pořádně dlouhá, na celý den.",
+  "explanation": "Vasaloppet připomíná útěk jednoho švédského krále, který kdysi dávno prchal na lyžích před svými pronásledovateli – dnes na stejnou trasu vyráží obrovské množství lyžařů najednou.",
   "about": "lyžařském závodě Vasaloppet",
   "image_prompt": "A painterly watercolor illustration of thousands of cross-country skiers racing through a snowy Swedish forest landscape in Dalarna, vintage travel journal style"
  },
@@ -1170,16 +1170,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve švédském městě Malmö stojí mrakodrap, který vypadá, jako by ho někdo zkroutil jako ždímaný ručník. Jak se jmenuje?",
-  "answer": "Turning Torso",
+  "question": "Ve švédském městě Malmö stojí mrakodrap, který vypadá, jako by ho někdo zkroutil jako ždímaný ručník. Podle čeho ho architekt navrhl?",
+  "answer": "Podle sochy otáčejícího se lidského těla",
   "distractors": [
-   "Šikmá věž",
-   "Skleněná spirála",
-   "Stockholmský vrták"
+   "Podle mušle",
+   "Podle větrné turbíny",
+   "Podle ledovce"
   ],
-  "quip_correct": "Bravo, Turning Torso, jak by ne! Devět kostek, každá pootočená víc než ta předchozí — mrakodrap navržený podle sochy lidského těla.",
-  "quip_wrong": "Zatočilo se to jinam — šikmá věž ani skleněná spirála to není, ten zkroucený mrakodrap v Malmö se jmenuje Turning Torso.",
-  "explanation": "Turning Torso navrhl architekt Santiago Calatrava podle sochy otáčejícího se lidského těla. Skládá se z devíti kostek, které se od základny až po střechu postupně pootočí do strany, a je nejvyšší budovou ve Skandinávii.",
+  "quip_correct": "Tys to věděl! Věž se od základny až po střechu postupně kroutí do strany – přesně jako tělo na té soše.",
+  "quip_wrong": "Zkus to jinak – mušle, turbína ani ledovec za tím nestojí. Architekta inspirovala socha otáčejícího se lidského těla.",
+  "explanation": "Mrakodrap se jmenuje Turning Torso a je nejvyšší budovou v celé Skandinávii.",
   "about": "mrakodrapu Turning Torso",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a dramatically twisted glass and steel skyscraper rising against a soft evening sky in a coastal Swedish city"
  },
@@ -1317,15 +1317,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Švédsko je země plná jezer. Kolik jezer má přibližně na svém území?",
-  "answer": "Kolem 100 000 jezer",
+  "question": "Švédsko je pověstné množstvím jezer po celé zemi. Jak moc jezer se ve Švédsku asi tak najde?",
+  "answer": "Tolik, že by je nikdo nespočítal ani za celý život",
   "distractors": [
-   "Jen kolem 100 jezer",
-   "Kolem 1 000 jezer",
-   "Přes milion jezer"
+   "Jen hrstka, dala by se spočítat na prstech jedné ruky",
+   "Jedno obrovské a pak už žádné další",
+   "Skoro žádné – Švédsko je spíš suchá země"
   ],
-  "quip_correct": "Přesně tak! Kdyby chtěl někdo navštívit každý den jedno jiné jezero, nestihl by to ani za celý život.",
-  "quip_wrong": "Kdepak, sto jezer by Švédům vydrželo tak akorát na jedno letní rybaření, ne na celou zemi!",
+  "quip_correct": "Tys to věděl! Kdyby sis dal za cíl navštívit každý den jiné švédské jezero, nestihl bys to ani za celý život.",
+  "quip_wrong": "Zkus to jinak – jezer je ve Švédsku opravdu spousta, mnohem víc než hrstka nebo jedno jediné.",
   "explanation": "Největší švédské jezero Vänern je zároveň největší jezero v celé Evropské unii, pokud nepočítáme Rusko.",
   "source_url": "https://en.wikipedia.org/wiki/List_of_lakes_of_Sweden",
   "image_prompt": "Fotorealistický snímek klidného švédského jezera obklopeného hustým jehličnatým lesem, ranní mlha nad hladinou, dřevěná loďka u břehu, 16:9",
@@ -1361,16 +1361,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje sladká švédská bulka plněná mandlovou hmotou a šlehačkou, kterou lidé jedí hlavně v únoru?",
-  "answer": "Semla",
+  "question": "Jedna švédská sladká bulka má tolik kalorií, že ti vydrží skoro jako celá svačina. Co v ní je schované, že je tak vydatná?",
+  "answer": "Husté mandlové těsto a hora šlehačky",
   "distractors": [
-   "Kanelbulle",
-   "Prinsesstårta",
-   "Pepparkaka"
+   "Jen džem a povidla",
+   "Čokoládová poleva a oříšky",
+   "Ovocná náplň a mák"
   ],
-  "quip_correct": "Přesně, semla! Jedna taková bulka má tolik kalorií, že by se do ní vešla skoro celá svačina.",
-  "quip_wrong": "Chutná to skvěle, ale tohle je jiná dobrota — semla má uvnitř nadýchanou mandlovou náplň a horu šlehačky navrch.",
-  "explanation": "Semla se tradičně jedla jen na Tučné úterý před postem, dnes ji Švédové kupují už od ledna do března.",
+  "quip_correct": "Tys to věděl! Mandlová hmota a šlehačka dohromady dělají z jedné bulky pořádnou hostinu.",
+  "quip_wrong": "Zkus to jinak – žádný džem, čokoláda ani mák. Uvnitř je mandlová hmota a navrch hora šlehačky.",
+  "explanation": "Tahle bulka se švédsky jmenuje semla a dřív se jedla jen jeden jediný den v roce – dnes si na ni Švédové pochutnávají celé týdny.",
   "source_url": "https://en.wikipedia.org/wiki/Semla",
   "image_prompt": "Fotorealistický snímek švédské sladké bulky semla s mandlovou náplní a šlehačkou, poprášené moučkovým cukrem, na dřevěném talíři, 16:9",
   "about": "švédské bulce semla"

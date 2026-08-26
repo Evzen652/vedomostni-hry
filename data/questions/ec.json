@@ -696,12 +696,12 @@
   "about": "mořském leguánovi"
  },
  {
-  "id": "ec-k-quitohistorie",
+  "id": "ec-t-quitohistorie",
   "cc": "ec",
   "country": "Ekvádor",
   "section": "Místa",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Čím bylo historické centrum Quita mezi prvními na světě, když ho v roce 1978 ocenilo UNESCO?",
   "answer": "Bylo jedním z prvních měst zapsaných na Seznam světového dědictví",
@@ -791,19 +791,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Co symbolizuje žlutý pruh na ekvádorské vlajce, tvořící její nejširší část?",
-  "answer": "Bohatství, slunce a úrodnou půdu",
+  "question": "Jaké velké zvíře je vyobrazené uprostřed ekvádorské vlajky, na jejím znaku?",
+  "answer": "Kondor",
   "distractors": [
-   "Smutek za padlé bojovníky",
-   "Chlad andských vrcholků",
-   "Vodu Tichého oceánu"
+   "Orel",
+   "Papoušek ara",
+   "Jaguár"
   ],
-  "quip_correct": "Přesně tak — žlutá vévodí ploše vlajky, jako by si slunce a úroda nárokovaly nejvíc místa ze všech barev.",
-  "quip_wrong": "Mimo — smutek, chlad hor ani oceán žlutá barva nepředstavuje, ta patří slunci a bohatství země.",
-  "explanation": "Ekvádorská vlajka má tři vodorovné pruhy — žlutý (dvakrát širší než ostatní, symbol slunce a úrody), modrý (obloha a moře) a červený (krev za svobodu); uprostřed nese znak s horou Chimborazo a kondorem.",
+  "quip_correct": "Tys to věděl! Kondor s rozpětím křídel přes tři metry vévodí obloze i vlajce.",
+  "quip_wrong": "Orel, ara i jaguár žijí v Jižní Americe taky — ale na ekvádorské vlajce sedí kondor.",
+  "explanation": "Kondor sedí na znaku nad horou Chimborazo, nejvyšší ekvádorskou horou — obě jsou symbolem síly a svobody země.",
   "source_url": "https://en.wikipedia.org/wiki/Flag_of_Ecuador",
   "image_prompt": "Fotorealistický snímek ekvádorské vlajky vlající na stožáru s Andami v pozadí, jasné nebe, 16:9",
-  "about": "barvách ekvádorské vlajky"
+  "about": "kondorovi na ekvádorské vlajce"
  },
  {
   "id": "ec-q-kakao",

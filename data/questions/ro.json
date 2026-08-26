@@ -661,17 +661,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje středověký hrad v Transylvánii, který turisté navštěvují jako 'Draculův hrad'?",
+  "question": "Jak se jmenuje středověký hrad v rumunské Transylvánii, kam turisté jezdí, protože vypadá přesně jako sídlo strašidelného upíra z pohádek?",
   "answer": "Hrad Bran",
   "distractors": [
    "Hrad Peleș",
    "Hrad Hunyad",
    "Hrad Fǎgǎraș"
   ],
-  "quip_correct": "Bravo, uhodl jsi! Víš, kolik lidí se sem každý rok vydá jen kvůli strachu? Přes půl milionu turistů hledá u hradu Bran mrazení v zádech.",
-  "quip_wrong": "Ne tenhle hrad! Jiné rumunské hrady jsou nádherné taky, ale s Drákulou si lidé spojují jen jeden.",
-  "explanation": "Hrad Bran byl postaven ve 14. století jako pohraniční pevnost. Spisovatel Bram Stoker Rumunsko nikdy nenavštívil, ale gotický vzhled hradu dokonale pasuje k jeho románovému Draculovi.",
-  "about": "hradu Bran"
+  "quip_correct": "Tys to věděl! Víš, kolik lidí se sem každý rok vydá jen kvůli tomu mrazení v zádech?",
+  "quip_wrong": "Ne tenhle hrad - jiné rumunské hrady jsou nádherné taky, ale s upírem si lidé spojují jen jeden.",
+  "explanation": "Hrad Bran byl postaven ve středověku jako pohraniční pevnost. Spisovatel, který vymyslel slavného upíra Drákulu, Rumunsko nikdy nenavštívil, ale gotický vzhled hradu se k jeho příběhu dokonale hodí.",
+  "about": "hradu Bran",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- gothic castle Bran perched on a rocky hill among Transylvanian forests"
  },
  {
   "id": "ro-k-peles",
@@ -681,16 +682,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje pohádkový horský zámek s věžičkami, kde se poprvé v Evropě rozsvítila elektrická žárovka na zámku?",
+  "question": "Jak se jmenuje pohádkový horský zámek s věžičkami, kde se jako v jednom z prvních zámků v Evropě rozsvítila elektrická žárovka?",
   "answer": "Zámek Peleš",
   "distractors": [
    "Hrad Bran",
    "Hrad Hunedoara",
    "Palác parlamentu"
   ],
-  "quip_correct": "Skvěle vymyšleno! Král si nechal rozsvítit elektřinou dřív, než ji měla polovina Evropy — horský zámek zářil, když jiná velkoměsta ještě čekala.",
-  "quip_wrong": "Blízko, ale ne úplně — upíří sláva patří jinému hradu, elektřina taky svítila jinde.",
-  "explanation": "Zámek Peleš si nechal postavit král Karel I. jako letní sídlo koncem 19. století, stavba trvala přes deset let a zvali na ni řemeslníky z celé Evropy.",
+  "quip_correct": "Skvěle vymyšleno! Král si nechal rozsvítit elektřinou dřív, než ji měla polovina Evropy - horský zámek zářil, když jiná velkoměsta ještě čekala.",
+  "quip_wrong": "Blízko, ale ne úplně - upíří sláva patří jinému hradu, elektřina taky svítila jinde.",
+  "explanation": "Zámek Peleš si nechal postavit rumunský král jako letní sídlo - stavba trvala moc dlouho a řemeslníci na ni přijížděli z celé Evropy.",
   "about": "zámku Peleš",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- fairy-tale mountain castle with turrets nestled among Carpathian pine forests, warm glowing windows"
  },
@@ -935,18 +936,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje oblíbený rumunský smažený dezert z tvarohového těsta, který se podává se zakysanou smetanou a džemem?",
+  "question": "Rumunský sladký dezert z tvarohového těsta se smaží a servíruje se zakysanou smetanou a džemem - na talíři vypadá jako malý sněhulák, protože se skládá z kolečka a kuličky na sobě. Jak se mu říká?",
   "answer": "Papanași",
   "distractors": [
    "Palačinky",
    "Koblihy s mákem",
    "Jablečný štrúdl"
   ],
-  "quip_correct": "Přesně, papanași! Sladká tečka, po které si každý olízne talíř do posledního drobku.",
-  "quip_wrong": "Tohle jméno k tvarohovému dezertu nepatří - ten se v Rumunsku jmenuje papanași.",
-  "explanation": "Papanași se často servírují jako dva kousky na sobě - jeden ve tvaru kroužku a druhý jako kulička, takže na talíři vypadají jako malý sněhulák.",
+  "quip_correct": "Tys to věděl! Sladká tečka, po které si každý olízne talíř do posledního drobku.",
+  "quip_wrong": "Tohle jméno k tvarohovému sněhulákovi na talíři nepatří - ten se v Rumunsku jmenuje papanași.",
+  "explanation": "Papanași se dělá z tvarohového těsta osmaženého dozlatova, a někdy se dokonce plní ovocnou marmeládou přímo doprostřed.",
   "source_url": "https://www.chefspencil.com/papanasi-romanian-cheese-doughnuts/",
-  "image_prompt": "Fotorealistický snímek talíře rumunského dezertu papanași, smažených tvarohových knedlíků politých zakysanou smetanou a borůvkovým džemem, detailní záběr, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- plate of Romanian fried cheese dumplings papanași topped with sour cream and berry jam",
   "about": "papanași, rumunském dezertu"
  },
  {
@@ -979,18 +980,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje stará rumunská míčová hra s pálkou, kterou zákon prohlásil za rumunský národní sport a hraje se hlavně ve školách?",
+  "question": "Rumunsko má svůj vlastní národní sport - starou hru s pálkou a míčem, hraje se hlavně ve školách a je trochu podobná baseballu. Jak se jmenuje?",
   "answer": "Oina",
   "distractors": [
    "Trântă",
    "Popice",
    "Arşice"
   ],
-  "quip_correct": "Trefa, oina! Rumunský národní sport, který podle některých možná nakopl i vznik baseballu.",
+  "quip_correct": "Tys to věděl! Oina je rumunský národní sport, který podle některých možná nakopl i vznik baseballu.",
   "quip_wrong": "Blízko, ale to je jiná stará rumunská hra - národní sport s pálkou a míčem se jmenuje oina.",
-  "explanation": "Oina se hraje už od 14. století a míč se kdysi dělal z kravských chlupů namočených a stočených do kuličky.",
+  "explanation": "Oina se hraje odjakživa a míč se kdysi dělal z kravských chlupů namočených a stočených do kuličky.",
   "source_url": "https://en.wikipedia.org/wiki/Oin%C4%83",
-  "image_prompt": "Fotorealistický snímek dětí hrajících tradiční rumunskou hru oina s pálkou a míčem na travnatém hřišti za slunečného odpoledne, 16:9",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- children playing traditional Romanian bat-and-ball game oina on a grassy field",
   "about": "oině, rumunském národním sportu"
  }
 ]

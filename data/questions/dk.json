@@ -301,18 +301,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenují tradiční dánské kulaté koblížky smažené ve speciální pánvi s důlky?",
+  "question": "Dánové smaží tradiční kulaté koblížky ve speciální pánvi, která má místo rovného dna spoustu kulatých důlků - v každém důlku se upeče jedna kulatá kulička. Jak se takovým koblížkům říká?",
   "answer": "Æbleskiver",
   "distractors": [
-   "Smørrebrød",
-   "Wienerbrød",
-   "Rugbrød"
+   "Preclíky",
+   "Rohlíky",
+   "Vdolečky"
   ],
-  "quip_correct": "Ano, æbleskiver - kulaté, nadýchané a nejlepší horké s pudrcukrem!",
-  "quip_wrong": "Zkus znovu - žádný smørrebrød ani rugbrød, kulaté buchtičky s pudrcukrem jsou æbleskiver.",
+  "quip_correct": "Tys to věděl! Æbleskiver jsou kulaté, nadýchané a nejlepší horké s pudrcukrem.",
+  "quip_wrong": "Preclík je zamotaný, rohlík protáhlý a vdoleček plochý - ale kulaté kuličky ze speciální pánve s důlky se jmenují æbleskiver.",
   "explanation": "Přes název s 'jablkem' (æble) uvnitř dnes bývá spíš marmeláda než jablko - péct se smí i úplně bez náplně.",
   "about": "æbleskiver",
-  "image_prompt": "Fotorealistický detailní snímek čerstvě upečených kulatých dánských koblížků æbleskiver na talíři posypaných moučkovým cukrem, 16:9"
+  "image_prompt": "Čerstvě upečené kulaté dánské koblížky æbleskiver na talíři posypané moučkovým cukrem, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "dk-k-skagen",
@@ -322,18 +322,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje severní výběžek Dánska, kde se stýkají dvě moře a jejich vlny se nemíchají?",
-  "answer": "Skagen",
+  "question": "Na úplně severním výběžku Dánska jménem Skagen se potkávají dvě moře - ale jejich vlny se nemíchají, protože má každé moře jinak hustou vodu. Co díky tomu můžeš na tom místě udělat?",
+  "answer": "Stát nohama v jednom moři a rukama sahat do druhého",
   "distractors": [
-   "Odense",
-   "Aarhus",
-   "Esbjerg"
+   "Přeskočit rovnou hranici mezi Dánskem a Norskem",
+   "Vidět na dně mořskou duhu",
+   "Slyšet, jak si moře spolu povídají"
   ],
-  "quip_correct": "Přesně - u Skagenu můžeš stát nohama v jednom moři a rukama sahat do druhého!",
-  "quip_wrong": "Ne, hledáš Skagen - tam se dvě moře potkávají, ale nemíchají.",
+  "quip_correct": "Tys to věděl! Stačí se postavit na tu pravou vlnku písku a máš nohy i ruce doopravdy ve dvou různých mořích.",
+  "quip_wrong": "Nic se nepřeskakuje ani neduhuje - to hlavní kouzlo Skagenu je, že se dvě moře potkají, a přesto se jejich vlny nesmíchají.",
   "explanation": "Moře mají různou hustotu a slanost, proto se na hranici barevně liší a mísí se jen pomalu, i když stojí těsně vedle sebe.",
-  "about": "Skagenu",
-  "image_prompt": "Letecký snímek písečného výběžku Skagen na severním cípu Dánska, kde se stýkají dvě moře s viditelně odlišnou barvou vody, 16:9"
+  "about": "Skagenu, místě kde se potkávají dvě moře",
+  "image_prompt": "Letecký pohled na písečný výběžek Skagen na severním cípu Dánska, kde se stýkají dvě moře s viditelně odlišnou barvou vody, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "dk-k-nisser",
@@ -553,18 +553,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve kterém dánském městě najdeš Legoland, obří park postavený z milionů kostiček LEGO?",
-  "answer": "V Billundu",
+  "question": "V dánském Legolandu stojí miniaturní verze slavných staveb z celého světa - ale nejsou postavené z cihel ani betonu. Z čeho tam všechno vzniká?",
+  "answer": "Z kostiček LEGO",
   "distractors": [
-   "V Kodani",
-   "V Aarhusu",
-   "V Odense"
+   "Z ledových kostek",
+   "Z papírové lepenky",
+   "Ze dřeva a hřebíků"
   ],
-  "quip_correct": "Trefa - malé městečko, které si samo postavilo vlastní miniaturní svět, cihlu po cihle.",
-  "quip_wrong": "Ne tam - Kodaň, Aarhus i Odense se bez vlastního Legolandu klidně obejdou, ten drží Billund.",
-  "explanation": "Legoland v Billundu z roku 1968 byl vůbec prvním parkem svého druhu na světě, dnes jich stejné jméno nese už deset po celé planetě.",
-  "about": "Legolandu",
-  "image_prompt": "Fotorealistický snímek zábavního parku Legoland v dánském Billundu s miniaturními stavbami postavenými z kostiček LEGO, 16:9"
+  "quip_correct": "Tys to věděl! Malé městečko si samo postavilo vlastní miniaturní svět - cihlu po cihle, teda spíš kostičku po kostičce.",
+  "quip_wrong": "Papír, led ani dřevo - v Legolandu je úplně všechno poskládané z klasických plastových kostiček LEGO.",
+  "explanation": "Legoland v dánském Billundu z roku 1968 byl vůbec prvním parkem svého druhu na světě, dnes jich stejné jméno nese už deset po celé planetě.",
+  "about": "Legolandu, parku postaveném z kostiček LEGO",
+  "image_prompt": "Zábavní park Legoland s miniaturními stavbami postavenými z kostiček LEGO, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "dk-k-nejvyssi-bod",
@@ -574,18 +574,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak vysoký je nejvyšší kopec v celém Dánsku?",
-  "answer": "Necelých 171 metrů",
+  "question": "Dánsko je jedna z nejplošších zemí Evropy - skoro žádné hory, jen pole až k obzoru. Kdybys vylezl na úplně nejvyšší bod celé země, kam by ses podle tebe vlastně dostal?",
+  "answer": "Jen na mírný kopeček, sotva vyšší než kopec v parku",
   "distractors": [
-   "Skoro 1000 metrů",
-   "Přes 2000 metrů",
-   "Jen asi 10 metrů"
+   "Na zasněžený horský vrchol jako v Alpách",
+   "Na skálu, na kterou potřebuješ horolezecké lano",
+   "Na okraj sopečného kráteru"
   ],
-  "quip_correct": "Přesně - v Dánsku bys na nejvyšší 'horu' vyšlápl rychleji, než ujede autobus jednu zastávku.",
-  "quip_wrong": "Kilometr vysoký kopec by v Dánsku vzbudil poplach - nejvyšší bod země měří necelých 171 metrů, sotva pahorek.",
+  "quip_correct": "Tys to věděl! V Dánsku bys na nejvyšší 'horu' vyšlápl rychleji, než ujede autobus jednu zastávku.",
+  "quip_wrong": "Žádné Alpy, lana ani sopky - nejvyšší bod Dánska je tak nízký kopeček, že by sis ho v hornaté zemi možná ani nevšiml.",
   "explanation": "Nejvyšší bod se jmenuje Møllehøj a ještě donedávna si titul 'nejvyšší hora Dánska' přisvojoval jiný pahorek kousek vedle, dokud přesnější měření spor nerozhodlo.",
   "about": "nejvyšším bodě Dánska",
-  "image_prompt": "Fotorealistický snímek mírně zvlněné dánské krajiny s nízkým kopcem a poli až k obzoru, 16:9"
+  "image_prompt": "Mírně zvlněná dánská krajina s nízkým kopcem a poli až k obzoru, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "dk-t-bornholm",
@@ -805,18 +805,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje slavný přírodní úkaz nad dánskými mokřady, kdy až milion špačků společně krouží po obloze a vytváří obří černé mraky, které mění tvar?",
+  "question": "Jak se jmenuje slavný přírodní úkaz nad dánskými mokřady, kdy se obrovské hejno špačků slétne dohromady a společně krouží po obloze, až vytvoří obří černé mraky, které pořád mění tvar?",
   "answer": "Sort sol (černé slunce)",
   "distractors": [
    "Zlatý déšť",
    "Bílá bouře",
    "Stříbrný vítr"
   ],
-  "quip_correct": "Přesně tak! Miliony špačků si prostě zahrály nejlepší taneční sestavu na světě.",
+  "quip_correct": "Tys to věděl! Hejno špačků si prostě zahrálo nejlepší taneční sestavu na světě.",
   "quip_wrong": "Žádné zlaté kapky ani stříbrný vítr - jen hejno ptáků, co umí kreslit vzory na obloze líp než ty pastelkami na papír.",
   "explanation": "Úkaz se dá nejlépe pozorovat na jaře a na podzim v oblasti Tøndermarsken na jihu Jutska, kde se ptáci slétávají krátce po západu slunce, než si najdou místo na spaní.",
   "source_url": "https://en.wikipedia.org/wiki/Sort_sol",
-  "image_prompt": "Fotorealistický snímek obrovského hejna špačků tvořícího vlnící se černé mraky na večerní obloze nad dánskou mokřinou při západu slunce, 16:9",
+  "image_prompt": "Obrovské hejno špačků tvořící vlnící se černé mraky na večerní obloze nad dánskou mokřinou při západu slunce, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "dánském úkazu sort sol"
  },
  {
@@ -827,19 +827,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve kterém dánském městě najdeš zábavní park Tivoli, který se stal vzorem i pro tvůrce slavného Disneylandu?",
-  "answer": "V Kodani",
+  "question": "V Kodani stojí zábavní park Tivoli, který se stal vzorem i pro tvůrce slavného Disneylandu. V jakou denní dobu bývá podle tebe nejkouzelnější, plný rozsvícených světýlek mezi stromy?",
+  "answer": "Večer, po setmění",
   "distractors": [
-   "V Aarhusu",
-   "V Odense",
-   "V Aalborgu"
+   "Brzy ráno, ještě za tmy před svítáním",
+   "V pravé poledne na největší vedro",
+   "Až v noci, kdy už je zavřeno"
   ],
-  "quip_correct": "Trefa! Walt Disney si tu prý dělal tolik poznámek, že by z nich vyšla celá knížka.",
-  "quip_wrong": "Houpačky, kolotoče a světýlka Tivoli najdeš jen v jednom dánském městě - a tohle jím není.",
+  "quip_correct": "Tys to věděl! Walt Disney si tu prý dělal tolik poznámek, že by z nich vyšla celá knížka - a večerní světýlka Tivoli inspirovala i jeho parky.",
+  "quip_wrong": "Ráno je tam ještě ticho a přes den fouká jen vítr mezi atrakcemi - pravé kouzlo Tivoli propuká až večer, když se rozsvítí všechna světýlka.",
   "explanation": "Tivoli otevřelo brány v roce 1843, ale ani to není v Dánsku nejstarší zábavní park - kousek od Kodaně baví návštěvníky park Bakken už od roku 1583.",
   "source_url": "https://www.islands.com/2147252/tivoli-gardens-copenhagen-denmark-worlds-second-largest-amusement-park/",
-  "image_prompt": "Fotorealistický snímek rozzářeného zábavního parku Tivoli v Kodani večer, s kolotoči a světýlky mezi stromy, 16:9",
-  "about": "zábavním parku Tivoli"
+  "image_prompt": "Rozzářený zábavní park Tivoli v Kodani večer, s kolotoči a světýlky mezi stromy, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "about": "zábavním parku Tivoli v Kodani"
  },
  {
   "id": "dk-k-rugbrod-chleba",
@@ -849,16 +849,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tmavý žitný chléb, který si Dánové dávají skoro každý den - třeba jako základ pro obložené chlebíčky smørrebrød?",
-  "answer": "Rugbrød",
+  "question": "Jak se jmenuje tmavý hutný chléb plný semínek, který si Dánové dávají skoro ke každému jídlu?",
+  "answer": "Rugbrød (žitný chléb)",
   "distractors": [
    "Baguette",
    "Pita",
    "Tortilla"
   ],
-  "quip_correct": "Ano! Bez rugbrødu by v Dánsku nezačal skoro žádný oběd.",
-  "quip_wrong": "Ty jsou skvělé, ale na dánském stole nekralují - tam vládne hutný tmavý bochník plný semínek.",
-  "explanation": "Rugbrød se často peče s příměsí slunečnicových nebo lněných semínek a díky tomu vydrží čerstvý klidně několik dní.",
+  "quip_correct": "Tys to věděl! Bez rugbrødu by v Dánsku nezačal skoro žádný oběd.",
+  "quip_wrong": "Baguette, pita, tortilla - ty znáš odjinud. Na dánském stole ale vládne tenhle tmavý hutný bochník plný semínek.",
+  "explanation": "Rugbrød se často peče s příměsí slunečnicových nebo lněných semínek, a díky tomu vydrží čerstvý klidně několik dní.",
   "source_url": "https://en.wikipedia.org/wiki/Rugbr%C3%B8d",
   "image_prompt": "Fotorealistický snímek tmavého žitného chleba rugbrød nakrájeného na plátky na dřevěném prkénku v dánské kuchyni, 16:9",
   "about": "dánském žitném chlebu rugbrød"

@@ -601,17 +601,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kdo vynalezl slavnou barevnou otáčecí kostku, se kterou si hrají děti po celém světě?",
-  "answer": "Maďarský profesor Ernő Rubik",
+  "question": "Ze které evropské země pochází slavná barevná kostka, kterou musíš otáčet, dokud nemá každá strana jen jednu barvu?",
+  "answer": "Z Maďarska",
   "distractors": [
-   "Japonský hráč",
-   "Americký vynálezce",
-   "Německý inženýr"
+   "Z Japonska",
+   "Z USA",
+   "Z Německa"
   ],
-  "quip_correct": "Přesně, Ernő Rubik! Vymyslel ji jako pomůcku pro výuku prostorového vidění a netušil, že jí bude lámat hlavy lidem po celém světě.",
-  "quip_wrong": "Tentokrát vedle, zkus to příště — Japonsko, Amerika, Německo? Kostku vymyslel maďarský profesor jménem Ernő Rubik.",
-  "explanation": "Ernő Rubik vynalezl svoji kostku v roce 1974 a dlouho nevěděl, jestli ji sám dokáže složit — trvalo mu to tři měsíce zkoušení.",
-  "about": "vynálezci Rubikovy kostky"
+  "quip_correct": "Tys to věděl! Kostku vymyslel maďarský profesor jako pomůcku pro výuku prostorového vidění - a netušil, že jí bude lámat hlavy lidem po celém světě.",
+  "quip_wrong": "Tentokrát vedle, zkus to příště - Japonsko, Amerika ani Německo za tím nestojí. Kostka pochází z Maďarska.",
+  "explanation": "Vynálezce kostky Ernő Rubik dlouho nevěděl, jestli ji sám dokáže složit - trvalo mu to tři měsíce zkoušení.",
+  "about": "Rubikově kostce a jejím maďarském původu",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters - a colorful twisted puzzle cube resting on a wooden table"
  },
  {
   "id": "hu-k-balaton-jezero",
@@ -801,17 +802,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenují tradiční maďarští jezdci na koních, kteří v pruhovaných kalhotách předvádějí kousky na pustě?",
+  "question": "Jak se jmenují maďarští jezdci, kteří na travnaté pustě umí hnát hned pět koní najednou, aniž by drželi otěže – jen mávnutím ruky a dlouhým bičem?",
   "answer": "Čikošové",
   "distractors": [
    "Gauči",
    "Kovbojové",
    "Kozáci"
   ],
-  "quip_correct": "Moc pěkně! Bez otěží, jen dlouhou tyčí a mávnutím ruky — čikoš řídí pět koní najednou rychleji, než bys stihl vyslovit jejich jména.",
-  "quip_wrong": "Podívej se blíž — gauči jsou z Argentiny a kovbojové z Ameriky, na maďarské pustě jezdí na koních jiní hrdinové.",
-  "explanation": "Čikošové jsou tradiční maďarští pastevci koní na Hortobágyské pustě. Jsou proslulí tím, že umí řídit celý svazek koní najednou a stát ve cvalu — což se učí od dětství.",
-  "about": "čikošech"
+  "quip_correct": "Tys to věděl! A umí toho víc – dovedou stát vzpřímeně na hřbetech dvou cválajících koní zároveň.",
+  "quip_wrong": "Škoda, netrefil ses – gauči jezdí v Argentině a kovbojové v Americe, na maďarské pustě mají svoje vlastní jezdce s jiným jménem.",
+  "explanation": "Čikošové nosí černé klobouky a volné pruhované kalhoty a své umění dodnes předvádějí na Hortobágyské pustě, kam se jezdí dívat i turisté z celého světa.",
+  "about": "čikošech",
+  "image_prompt": "A painterly watercolor gouache illustration of čikošech, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "hu-k-marcipan-szentendre",
@@ -1356,16 +1358,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje slavný budapešťský most hlídaný kamennými lvy, který spojuje Budu a Pešť?",
+  "question": "Jak se jmenuje slavný budapešťský most přes řeku Dunaj, který na obou koncích hlídají velké kamenné sochy lvů?",
   "answer": "Řetězový most (Lánchíd)",
   "distractors": [
    "Markétin most",
    "Most svobody",
    "Alžbětin most"
   ],
-  "quip_correct": "Prima, trefa! Víš, jak se lidi dostávali přes Dunaj předtím? Loďkou, nebo po dřevěném mostě, který museli v zimě kvůli ledu rozebrat — pak přišel tenhle, s kamennými lvy na stráži.",
-  "quip_wrong": "Blízko, ale ne úplně — Budapešť má přes Dunaj víc mostů, ale ten hlídaný kamennými lvy se jmenuje jinak.",
-  "explanation": "Řetězový most byl první stálý most přes Dunaj v Budapešti — než ho postavili, lidé se přes řeku museli plavit loďkami nebo po dřevěném pontonovém mostě, který se v zimě musel rozebírat kvůli ledu.",
+  "quip_correct": "Prima, trefa! Lvi u mostu prý nemají jazyky – stavitel na ně zapomněl, a legenda z toho žije dodnes.",
+  "quip_wrong": "Blízko, ale ne úplně – Budapešť má přes Dunaj víc mostů, ale ten hlídaný kamennými lvy se jmenuje jinak.",
+  "explanation": "Řetězový most byl první stálý most přes Dunaj v Budapešti – než ho postavili, lidé se přes řeku museli plavit loďkami nebo po dřevěném pontonovém mostě, který se v zimě musel kvůli ledu rozebírat.",
   "about": "Řetězovém mostě",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a stone bridge guarded by lion statues spanning a wide river between two riverbanks"
  },
@@ -1440,17 +1442,17 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje oblíbená maďarská sladkost — tyčinka z tvarohu obalená čokoládou, kterou tam mají děti jako svačinu?",
+  "question": "Jak se jmenuje oblíbená maďarská svačinka pro děti – tyčinka z bílého tvarohu obalená čokoládou?",
   "answer": "Túró Rudi",
   "distractors": [
    "Kürtőskalács",
    "Somlói galuska",
    "Dobos torta"
   ],
-  "quip_correct": "Správně! Vymysleli ho už v roce 1968 a dodnes žádná moderní svačinka Maďary nepřekonala — občas stará dobrá receptura vyhrává.",
-  "quip_wrong": "Ne tak rychle — Kürtőskalács je trdelník a Dobos torta koláč, tahle čokoládová tyčinka z tvarohu se jmenuje jinak.",
-  "explanation": "Túró Rudi vyrábí maďarská firma od roku 1968 podle receptu s tvarohem (túró), typickým pro maďarskou i středoevropskou kuchyni — dnes se prodává v desítkách příchutí od vanilky po kokos.",
-  "about": "maďarské sladkosti Túró Rudi",
+  "quip_correct": "Tys to věděl! A prodává se v desítkách příchutí – od vanilky po kokos.",
+  "quip_wrong": "Ne tak rychle – Kürtőskalács je trdelník a Dobos torta koláč, tahle čokoládová tyčinka z tvarohu se jmenuje jinak.",
+  "explanation": "Túró Rudi vyrábí maďarská firma už od roku 1968 podle receptu s tvarohem (túró), typickým pro maďarskou kuchyni – a dodnes patří mezi nejoblíbenější svačinky v zemi.",
+  "about": "maďarské svačince Túró Rudi",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a chocolate-coated curd cheese bar unwrapped on a wooden table"
  },
  {

@@ -327,15 +327,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje slavný nadýchaný dezert z pusinky, šlehačky a ovoce, který si Nový Zéland nárokuje jako svůj?",
+  "question": "Jak se jmenuje slavný nadýchaný dezert s křupavou pusinkou, oblakem šlehačky a čerstvým ovocem navrchu, který Novozélanďané pečou k oslavám?",
   "answer": "Pavlova",
   "distractors": [
    "Tiramisu",
    "Štrúdl",
    "Panna cotta"
   ],
-  "quip_correct": "Správně, a servíruj si k tomu klidně kiwi na vrchu!",
-  "quip_wrong": "Ne tak docela - ale i tenhle dezert je novozélandská pýcha, i když se o něj s Austrálií pořád handrkují.",
+  "quip_correct": "Správně! A servíruj si k tomu klidně kiwi na vrchu.",
+  "quip_wrong": "Ne tak docela – zkus si vybavit dezert s křupavou pusinkou a horou šlehačky, ne vrstvy piškotu nebo listového těsta.",
   "explanation": "Dezert je pojmenovaný po ruské baletce Anně Pavlovové, která Nový Zéland navštívila na turné ve 20. letech 20. století.",
   "about": "dezertu pavlova",
   "image_prompt": "Fotorealistický snímek dezertu pavlova s křupavou pusinkou, šlehačkou a čerstvým ovocem na vrchu, 16:9"
@@ -551,12 +551,12 @@
   "image_prompt": "Fotorealistický snímek novozélandské vlajky a skupiny lidí mávajících na sportovní akci, 16:9"
  },
  {
-  "id": "nz-k-novy-den",
+  "id": "nz-t-novy-den",
   "cc": "nz",
   "country": "Nový Zéland",
   "section": "Zeměpis",
-  "difficulty": 1,
-  "kids": true,
+  "difficulty": 2,
+  "kids": false,
   "type": "choice",
   "question": "Proč patří Nový Zéland mezi první země na světě, kde každý den vychází slunce?",
   "answer": "Leží blízko hranice změny data na východním okraji časových pásem",

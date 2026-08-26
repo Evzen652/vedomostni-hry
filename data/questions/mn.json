@@ -641,17 +641,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak mongolsky říkají pastevci svému kulatému přenosnému stanu?",
-  "answer": "Ger",
+  "question": "V jakém kulatém přenosném stanu bydlí mongolští pastevci, když se často stěhují za stádem?",
+  "answer": "Ger (jurta)",
   "distractors": [
-   "Jurta",
-   "Naadam",
-   "Déel"
+   "Klasický kempovací stan z plátna",
+   "Iglú ze sněhu a ledu",
+   "Chatrč na kůlech nad vodou"
   ],
-  "quip_correct": "Přesně tak! Sami pastevci svému stanu říkají ger.",
-  "quip_wrong": "Blízko, ale ne — jurta je jen cizí slovo pro totéž, mongolsky si pastevci říkají ger.",
-  "explanation": "Ger stojí na dřevěné mřížkové stěně pokryté plstěnými dekami z ovčí vlny. Kulatý tvar mu pomáhá odolávat silným stepním větrům. Zkušená rodina ho složí a znovu postaví za méně než hodinu.",
-  "about": "mongolském stanu ger"
+  "quip_correct": "Tys to věděl! A zkušená rodina ho složí a znovu postaví za necelou hodinu.",
+  "quip_wrong": "Zkus si to představit jinak – kempovací stan by vítr na stepi rozfoukal, iglú by roztálo a chatrč na kůlech se pastevci nedá vzít s sebou. Ger je stavěný přesně na časté stěhování.",
+  "explanation": "Ger stojí na dřevěné mřížkové stěně pokryté plstěnými dekami z ovčí vlny; kulatý tvar mu pomáhá odolávat silným stepním větrům.",
+  "about": "mongolském stanu ger",
+  "image_prompt": "A painterly watercolor gouache illustration of mongolském stanu ger, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
  },
  {
   "id": "mn-t-hlavni-mesto",
@@ -791,7 +792,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jaký je mongolský slaný čaj s mlékem, který se pije místo vody i k jídlu?",
+  "question": "Jaký slaný nápoj s mlékem pijí Mongolové místo vody, dokonce i k jídlu?",
   "answer": "Suutei tsai",
   "distractors": [
    "Sladký kakaový nápoj",
@@ -799,7 +800,7 @@
    "Ovocná limonáda"
   ],
   "quip_correct": "Přesně tak, suutei tsai! Slaný čaj s mlékem, na první doušek překvapení, na druhý už úplně normální snídaně.",
-  "quip_wrong": "Kakao, káva, limonáda? Ne tentokrát — mongolský každodenní nápoj je slaný čaj s mlékem, suutei tsai.",
+  "quip_wrong": "Kakao, káva, limonáda? Ne tentokrát – mongolský každodenní nápoj je slaný čaj s mlékem, suutei tsai.",
   "explanation": "Suutei tsai se vaří z cihlového čaje, mléka a špetky soli, v mongolských rodinách se jím obvykle vítají hosté hned při vstupu do jurty.",
   "source_url": "https://en.wikipedia.org/wiki/Suutei_tsai",
   "image_prompt": "Fotorealistický snímek misky mongolského slaného čaje s mlékem na dřevěném stole v jurtě, 16:9",
@@ -857,7 +858,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tvrdá sušená mléčná pochoutka, kterou mongolské děti dlouho cucají jako bonbon?",
+  "question": "Jak se jmenuje tvrdá sušená mléčná pochoutka, kterou mongolské děti dlouho cucají jako bonbon, protože v ústech vydrží celou cestu domů?",
   "answer": "Aaruul",
   "distractors": [
    "Sušené hovězí maso",

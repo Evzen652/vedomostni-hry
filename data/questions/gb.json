@@ -807,16 +807,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jaké krátké varování v angličtině slyšíš z reproduktorů v londýnském metru, aby sis dal pozor na mezeru mezi vlakem a nástupištěm?",
-  "answer": "Mind the gap",
+  "question": "Z reproduktorů v londýnském metru pořád dokola slyšíš krátké anglické hlášení. Na co tě varuje, když nastupuješ do vlaku?",
+  "answer": "Abys nešlápl do mezery mezi vlakem a nástupištěm",
   "distractors": [
-   "Watch out kids",
-   "Keep on running",
-   "Step with care"
+   "Abys v metru nejedl",
+   "Abys nemluvil moc nahlas",
+   "Abys si sundal batoh"
   ],
-  "quip_correct": "To bylo přesně ono! Mind the gap — tři slova, co v Londýně slyšíš tak často, že je umíš nazpaměť, i kdybys chtěl zapomenout.",
-  "quip_wrong": "Tentokrát to nevyšlo — 'Watch out' ani 'keep running' bys v londýnském metru nikdy neuslyšel, ta pravá hláška je kratší, a slyšíš ji na každé stanici.",
-  "explanation": "Tato slavná hláška se v londýnském metru nepřetržitě ozývá od roku 1969. Londýňané ji tak milují, že se prodává na tričkách, hrncích a v každém suvenýrovém obchodě.",
+  "quip_correct": "Tys to věděl! Tahle hláška - „Mind the gap“ - se v Londýně ozývá tak často, že ji nezapomeneš, i kdybys chtěl.",
+  "quip_wrong": "Ne tak docela - jídlo, hlasitost ani batoh tahle hláška vůbec neřeší. Varuje tě před mezerou mezi vlakem a nástupištěm.",
+  "explanation": "Tahle slavná hláška se v londýnském metru nepřetržitě ozývá od roku 1969, a Londýňané ji tak milují, že se prodává na tričkách i hrncích.",
   "about": "hlášce Mind the gap v londýnském metru",
   "image_prompt": "A yellow caution line on a London Underground platform with Mind the Gap warning, painterly watercolor gouache illustration, vintage travel journal style"
  },
@@ -1495,7 +1495,7 @@
    "Skotský haggis",
    "Cornwallský koláč pasty"
   ],
-  "quip_correct": "Správně! A i když se jmenuje pudink, se sladkým dezertem nemá vůbec nic společného.",
+  "quip_correct": "Tys to věděl! A i když se jmenuje pudink, se sladkým dezertem nemá vůbec nic společného.",
   "quip_wrong": "Nedá se ti to mít za zlé, ale tohle jídlo se sladkým pudinkem plete jen podle jména - je to slané těsto k masu.",
   "explanation": "Peče se ze stejného těsta jako palačinky, jen se místo na pánvi peče v troubě, kde vykyne do vysokých bochníčků.",
   "source_url": "https://en.wikipedia.org/wiki/Yorkshire_pudding",

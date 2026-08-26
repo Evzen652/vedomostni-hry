@@ -725,19 +725,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje dlouhé bílé roucho, které v Saúdské Arábii běžně nosí muži, obvykle spolu se šátkem na hlavě?",
-  "answer": "Thob",
+  "question": "V Saúdské Arábii bývá přes den obrovské horko. Jakou barvu mají dlouhá roucha, která tam muži běžně nosí, aby jim bylo ve vedru líp?",
+  "answer": "Bílou",
   "distractors": [
-   "Kimono",
-   "Sárí",
-   "Kilt"
+   "Černou",
+   "Tmavě modrou",
+   "Červenou"
   ],
-  "quip_correct": "Přesně tak! Bílý thob není náhoda – v pouštním horku odráží sluneční paprsky mnohem líp než tmavé oblečení.",
-  "quip_wrong": "Ne tenhle oděv – kimono, sárí a kilt patří jinam, saúdský mužský oděv se jmenuje thob.",
-  "explanation": "Thob se v zimě šije z tlustší a tmavší látky, v létě z lehké bílé bavlny. Šátek na hlavě se jmenuje ghutra a drží ho na místě černý kroužek zvaný igal.",
+  "quip_correct": "Tys to věděl! Bílá barva odráží sluneční paprsky mnohem líp než tmavé barvy, takže je v horku příjemnější.",
+  "quip_wrong": "Zkus to jinak – v takovém vedru se nejlíp nosí světlé barvy, ne tmavé. Roucho je bílé.",
+  "explanation": "Tohle bílé roucho se arabsky jmenuje thob. K němu muži nosí i šátek na hlavě zvaný ghutra, který drží na místě černý kroužek.",
   "source_url": "https://en.wikipedia.org/wiki/Thawb",
   "image_prompt": "Fotorealistický snímek saúdského muže v bílém thobu a ghutře na tržišti, jasné denní světlo, 16:9",
-  "about": "thobu a tradičním oděvu"
+  "about": "tradičním oděvu v Saúdské Arábii"
  },
  {
   "id": "sa-k-kadidlo",

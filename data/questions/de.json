@@ -1338,19 +1338,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "V kterém městě vymyslel cukrář Hans Riegel první gumové medvídky, které dnes znají děti po celém světě?",
-  "answer": "V Bonnu",
+  "question": "V Německu vymyslel jeden cukrář gumové medvídky, které dnešní děti znají skoro po celém světě a ochutnaly je snad všechny. Jak se jmenuje firma, co je vyrábí a jejíž pytlíky najdeš i u nás v obchodě?",
+  "answer": "HARIBO",
   "distractors": [
-   "V Berlíně",
-   "V Mnichově",
-   "V Hamburku"
+   "Kinder",
+   "Milka",
+   "Orbit"
   ],
-  "quip_correct": "Přesně tak! Jeho firma HARIBO dodnes vyrábí miliony pytlíků medvídků denně.",
-  "quip_wrong": "Ne, medvídci se narodili jinde - ale klidně si je můžeš dát ke svačině, ať bydlí kdekoliv.",
-  "explanation": "Název HARIBO vznikl ze jména zakladatele a města - Hans Riegel Bonn.",
+  "quip_correct": "Tys to věděl! Jeho firma HARIBO dodnes vyrábí miliony pytlíků medvídků denně.",
+  "quip_wrong": "Kinder dělá čokoládová vajíčka, Milka čokoládu a Orbit žvýkačky - gumoví medvídci patří firmě HARIBO.",
+  "explanation": "Název HARIBO vznikl spojením jména vynálezce a jeho německého města - Hans Riegel Bonn.",
   "source_url": "https://cs.wikipedia.org/wiki/Haribo",
-  "image_prompt": "Fotorealistický snímek barevných gumových medvídků nasypaných na dřevěném stole, detailní záběr, 16:9",
-  "about": "vzniku gumových medvídků"
+  "image_prompt": "Barevní gumoví medvídci nasypaní na dřevěném stole, detailní záběr, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "about": "vzniku gumových medvídků HARIBO"
  },
  {
   "id": "de-k-st-martin-lanterns",
@@ -1448,18 +1448,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "V kterém přístavním městě najdeš Miniatur Wunderland, největší modelovou železnici na světě s maličkými vláčky, letadly i létajícím Santou?",
-  "answer": "V Hamburku",
+  "question": "Miniatur Wunderland je největší modelová železnice na světě, plná maličkých vláčků, domečků i aut. Co z tohohle miniaturního světa navíc doopravdy vzlétá do vzduchu jako v opravdovém letadle?",
+  "answer": "Modely letadel na miniaturním letišti",
   "distractors": [
-   "V Berlíně",
-   "V Mnichově",
-   "V Drážďanech"
+   "Mrňavé vrtulníky hasičů",
+   "Balonky s dráčky",
+   "Draci na provázku"
   ],
-  "quip_correct": "Ano! Vláčky tam ujedou dohromady tolik kolejí, že by to stačilo na cestu přes celé Německo.",
-  "quip_wrong": "Ne, hledej jinde - tam sice mají taky krásná muzea, ale vláčky, co fakt vzlétají jako letadla, najdeš jen v tomhle přístavu.",
-  "explanation": "V Miniatur Wunderlandu najdeš i miniaturní letiště, odkud modely letadel skutečně vzlétají a přistávají.",
+  "quip_correct": "Tys to věděl! Vláčky tam ujedou dohromady tolik kolejí, že by to stačilo na cestu přes celé Německo, a k tomu ještě létají miniaturní letadla.",
+  "quip_wrong": "Zkus hledat něco spojeného s letištěm - v Miniatur Wunderland totiž fakt vzlétají malinkatá letadélka, ne draci ani balonky.",
+  "explanation": "Přes celou halu vede tolik kolejí, elektrických kabelů a řídicích počítačů, že by pokryly vzdálenost mezi několika velkými městy.",
   "source_url": "https://cs.wikipedia.org/wiki/Miniatur_Wunderland",
-  "image_prompt": "Fotorealistický snímek rozsáhlé modelové železnice s maličkými vláčky, budovami a horami v hale Miniatur Wunderland, 16:9",
-  "about": "Miniatur Wunderlandu v Hamburku"
+  "image_prompt": "Rozsáhlá modelová železnice s maličkými vláčky, budovami, horami a mrňavým letadélkem ve vzduchu v hale Miniatur Wunderland, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "about": "Miniatur Wunderlandu, největší modelové železnici na světě"
  }
 ]

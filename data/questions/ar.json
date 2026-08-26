@@ -661,17 +661,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje tradiční argentinský pastevec, který jezdí na koni a pase dobytek v pampách?",
-  "answer": "Gaucho",
+  "question": "Argentinský pastevec dobytka, kterému se říká gaučo, tráví celé dny v sedle na rozlehlé travnaté pláni zvané pampa. Co si obvykle přehazuje přes ramena, aby ho chránilo před sluncem, větrem i deštěm?",
+  "answer": "Barevné pončo",
   "distractors": [
-   "Kovboj",
-   "Vaquero",
-   "Llanero"
+   "Neprůstřelnou vestu",
+   "Igelitový pytel na brambory",
+   "Nafukovací kruh"
   ],
-  "quip_correct": "Gaucho, přesně! Patří k pampám pevněji než sedlo ke koni — zná tam každou pěšinu i každou krávu po jménu.",
-  "quip_wrong": "Ten pastevec se jmenuje jinak — v argentinských pampách koluje jen jedno správné slovo, a tohle není ono.",
-  "explanation": "Gaucho je tradiční pastevec skotu z argentinských pamp. Nosí poncho a jezdecké kalhoty zvané bombachas. Je symbolem argentinské volnosti a venkova a proslavil se v celé Jižní Americe.",
-  "about": "gauchovích"
+  "quip_correct": "Tys to věděl! Pončo je gaučova věrná parta - ve dne slouží jako slunečník, v noci jako deka.",
+  "quip_wrong": "Skoro - gaučo by se v tomhle na koni necítil moc pohodlně. Hledej něco, co se dá jednoduše přehodit přes ramena.",
+  "explanation": "Gaučo nosí kromě ponča i široké kalhoty zvané bombachas, ve kterých se pohodlně sedí v sedle celý den.",
+  "about": "oblečení argentinských pastevců (gaučů)",
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a herder on horseback wearing a poncho crossing the open grassland"
  },
  {
   "id": "ar-k-mistrsveta",
@@ -681,19 +682,19 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Kolikrát vyhrála argentinská fotbalová reprezentace mistrovství světa?",
-  "answer": "Třikrát",
+  "question": "Argentinská fotbalová reprezentace je fotbalovým mistrem světa a fanoušci ji poznají hned podle barev dresu. Jaké barvy má typický argentinský fotbalový dres?",
+  "answer": "Světle modré a bílé pruhy",
   "distractors": [
-   "Jednou",
-   "Pětkrát",
-   "Nikdy ho nevyhrála"
+   "Zelenou a žlutou",
+   "Červenou a černou",
+   "Oranžovou a bílou"
   ],
-  "quip_correct": "Trefa do černého! Tři hvězdičky nad znakem dresu nelžou, i když je někdy těžké je spočítat pod tolika polibky fanoušků.",
-  "quip_wrong": "Škoda, netrefil ses — Argentina má na kontě víc než jeden pohár, i když skromnost týmu by tomu možná ráda uvěřila.",
-  "explanation": "Argentina vyhrála mistrovství světa ve fotbale v letech 1978, 1986 a naposledy 2022 v Kataru, kdy Lionel Messi po penaltovém rozstřelu s Francií konečně získal jediný titul, který mu ve sbírce chyběl.",
+  "quip_correct": "Tys to věděl! Ty pruhy zná na hřišti každý brankář, co proti Argentině kdy stál.",
+  "quip_wrong": "Mimo - argentinský dres má jinou kombinaci barev, tuhle sis spíš spletl s jiným týmem.",
+  "explanation": "Na hrudi argentinského dresu svítí tři zlaté hvězdy - každá připomíná jedno vyhrané mistrovství světa, naposledy z roku 2022, kdy tým vedl Lionel Messi.",
   "source_url": "https://en.wikipedia.org/wiki/Argentina_national_football_team",
   "image_prompt": "Fotorealistický snímek dětí hrajících fotbal na ulici v Buenos Aires v dresech s modrobílými pruhy, večerní světlo, 16:9",
-  "about": "argentinských titulech mistra světa ve fotbale"
+  "about": "barvách dresu argentinské fotbalové reprezentace"
  },
  {
   "id": "ar-k-dinosaurus",
@@ -942,16 +943,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje vysoký bílý pomník ve tvaru jehlanu, který je symbolem centra Buenos Aires?",
+  "question": "V centru hlavního města Argentiny stojí vysoký bílý pomník ve tvaru štíhlého jehlanu se špičkou nahoře. Jak se tomuhle slavnému pomníku říká?",
   "answer": "Obelisk (Obelisco)",
   "distractors": [
    "Eiffelova věž",
    "Maják na konci světa",
    "Socha Krista Vykupitele"
   ],
-  "quip_correct": "Přesně, ten bílý jehlan uprostřed města zná v Buenos Aires úplně každý.",
-  "quip_wrong": "Eiffelovka zůstala hezky ve Francii - Buenos Aires má svůj vlastní bílý pomník.",
-  "explanation": "Obelisk byl postaven za necelé dva měsíce k oslavě 400 let od založení Buenos Aires.",
+  "quip_correct": "Tys to věděl! Ten bílý jehlan uprostřed města zná v Buenos Aires úplně každý.",
+  "quip_wrong": "Eiffelovka zůstala hezky ve Francii - Buenos Aires má svůj vlastní bílý pomník, ale jmenuje se jinak.",
+  "explanation": "Obelisk se postavil překvapivě rychle - jen za pár týdnů, k oslavě narozenin města Buenos Aires.",
   "source_url": "https://cs.wikipedia.org/wiki/Obelisk_(Buenos_Aires)",
   "image_prompt": "Fotorealistický snímek bílého Obelisku uprostřed rušné třídy Avenida 9 de Julio v Buenos Aires za slunečného dne, 16:9",
   "about": "buenosaireském Obelisku"
@@ -1052,16 +1053,16 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje oficiální národní sport Argentiny, při kterém jezdci na koních bojují o míč s držadly?",
+  "question": "Argentina má svůj vlastní oficiální národní sport, který se hraje na koních - jezdci na cválajících koních si mezi sebou podávají míč s držadly a snaží se ho dostat do branky ve tvaru koše. Jak se tenhle sport jmenuje?",
   "answer": "Pato",
   "distractors": [
    "Fotbal",
    "Ragby",
    "Baseball"
   ],
-  "quip_correct": "Přesně, pato je argentinský národní sport na koních.",
-  "quip_wrong": "Fotbal je sice v Argentině miláček národa, ale oficiálním národním sportem je jízda na koni s míčem - pato.",
-  "explanation": "Slovo pato znamená španělsky „kachna“, protože hráči kdysi dávno místo míče opravdu používali živou kachnu v koženém košíku.",
+  "quip_correct": "Tys to věděl! Pato je argentinský národní sport na koních - hraje se s míčem, co má víc držadel než kufr na dovolenou.",
+  "quip_wrong": "Fotbal je sice v Argentině miláček národa, ale oficiálním národním sportem je jízda na koni s míčem - jmenuje se pato.",
+  "explanation": "Slovo pato znamená španělsky kachna, protože hráči kdysi dávno místo míče opravdu používali živou kachnu v koženém košíku.",
   "source_url": "https://en.wikipedia.org/wiki/Pato_(sport)",
   "image_prompt": "Fotorealistický snímek jezdců na koních hrajících tradiční argentinský sport pato s míčem s držadly na travnatém hřišti, 16:9",
   "about": "argentinském národním sportu pato"

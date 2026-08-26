@@ -285,15 +285,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se na Fidži pozdravíš, když někoho potkáš?",
-  "answer": "Bula!",
+  "question": "Když tě na Fidži někdo potká a s úsměvem na tebe hlasitě zavolá 'Bula!', co tím dělá?",
+  "answer": "Zdraví tě a přeje ti hodně zdraví",
   "distractors": [
-   "Ciao!",
-   "Šalom!",
-   "Namaste!"
+   "Varuje tě před bouřkou",
+   "Prosí tě o jídlo",
+   "Loučí se s tebou navždy"
   ],
-  "quip_correct": "Přesně! A nejlíp nahlas a s úsměvem, jinak to prý není ono.",
-  "quip_wrong": "Bula! Zapamatuj si ho radši hned – na Fidži ho uslyšíš tak stokrát denně, že by sis ho stejně nemohl nevšimnout.",
+  "quip_correct": "Tys to věděl! A nejlíp se to říká nahlas a s úsměvem, jinak to prý není ono.",
+  "quip_wrong": "Ne tak docela - nahlas a s úsměvem na Fidži nikdo nevaruje ani se neloučí navždy, takhle se tam prostě zdraví.",
   "explanation": "Slovo bula doslova znamená „život“ nebo „zdraví“ a Fidžijci ho používají nejen jako pozdrav, ale i jako přípitek při popíjení kavy.",
   "about": "fidžijském pozdravu bula",
   "image_prompt": "Fotorealistický snímek usměvavého fidžijského muže mávajícího na pozdrav, tropická vesnice v pozadí, 16:9"
@@ -355,8 +355,8 @@
    "Řepa",
    "Mrkev"
   ],
-  "quip_correct": "Přesně! Uvařený, upečený nebo smažený — kasava je na talíři skoro pořád.",
-  "quip_wrong": "Brambor na Fidži moc nenajdeš — všední oběd tam obvykle drží pohromadě kasava, kořen manioku.",
+  "quip_correct": "Tys to věděl! Uvařený, upečený nebo smažený - kasava je na talíři skoro pořád.",
+  "quip_wrong": "Brambor na Fidži moc nenajdeš - všední oběd tam obvykle drží pohromadě kasava, kořen manioku.",
   "explanation": "Kasava se na Fidži vaří, peče i strouhá do sladkého pudinku zvaného vakalolo, protože syrová je pro člověka jedovatá a musí se pořádně tepelně upravit.",
   "about": "kořenové zelenině kasava",
   "image_prompt": "Fotorealistický snímek uvařených kousků kasavy (manioku) na talíři s tropickými přílohami, 16:9"
@@ -523,8 +523,8 @@
    "Náramek z mušlí",
    "Dlouhý plášť z kůry stromu"
   ],
-  "quip_correct": "Přesně! A žádný fidžijský policista si kvůli sukni nepřipadá směšně — naopak, v sulu vypadá parádně profesionálně.",
-  "quip_wrong": "Mineš to pěkně vedle — sulu není klobouk ani náramek, ale sukně, kterou nosí i vousatí strážníci v přísné uniformě.",
+  "quip_correct": "Tys to věděl! A žádný fidžijský policista si kvůli sukni nepřipadá směšně - v sulu vypadá naopak parádně profesionálně.",
+  "quip_wrong": "Mineš to pěkně vedle - sulu není klobouk ani náramek, ale sukně, kterou nosí i vousatí strážníci v přísné uniformě.",
   "explanation": "Sulu nosí jako součást uniformy i fidžijská armáda, a k saku a kravatě si ho oblékají třeba i poslanci v parlamentu, když chtějí zdůraznit místní identitu.",
   "about": "tradičním oděvu sulu",
   "image_prompt": "Fotorealistický snímek fidžijského úředníka v tradiční sukni sulu a saku, vládní budova v pozadí, 16:9"
@@ -607,8 +607,8 @@
    "Ryba sušená na slunci celý týden",
    "Ryba smažená v horkém oleji"
   ],
-  "quip_correct": "Přesně! Žádný oheň, žádná trouba — kyselá šťáva rybu jemně „uvaří“ úplně bez tepla.",
-  "quip_wrong": "Kokoda se obejde bez plamene i bez trouby — kousky ryby v ní změkne kyselá citronová šťáva a kokosové mléko, ne žár.",
+  "quip_correct": "Tys to věděl! Žádný oheň, žádná trouba - kyselá šťáva rybu jemně „uvaří“ úplně bez tepla.",
+  "quip_wrong": "Kokoda se obejde bez plamene i bez trouby - kousky ryby v ní změkne kyselá citronová šťáva a kokosové mléko, ne žár.",
   "explanation": "Kokoda se běžně podává přímo v duté kokosové skořápce a k rybě se přidává nakrájená cibule, rajče a chilli papričky.",
   "about": "pokrmu kokoda",
   "image_prompt": "Fotorealistický snímek pokrmu kokoda podávaného v kokosové skořápce s bylinkami, 16:9"

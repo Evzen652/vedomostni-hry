@@ -601,17 +601,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje hlavní město Španělska, kde stojí královský palác a slavné muzeum Prado?",
+  "question": "Jak se jmenuje hlavní město Španělska - leží uprostřed země, daleko od moře, a bydlí v něm král ve svém obrovském paláci?",
   "answer": "Madrid",
   "distractors": [
    "Barcelona",
    "Sevilla",
    "Valencia"
   ],
-  "quip_correct": "Bravo, přesně tak — Madrid, přímo uprostřed mapy! Zatímco Barcelona a Sevilla si užívají moře, hlavní město sedí stovky kilometrů od pobřeží.",
-  "quip_wrong": "Skoro, ale ne tak úplně — Barcelona je krásná, Sevilla taky, ale hlavní město sedí přesně uprostřed mapy: Madrid.",
-  "explanation": "Madrid leží v nadmořské výšce 667 metrů a je tak nejvýše položeným hlavním městem EU. Královský palác má přes 3 000 místností, i když král v něm nebydlí.",
-  "about": "Madridu"
+  "quip_correct": "Jé, tys to věděl! Madrid sedí přímo uprostřed mapy - zatímco Barcelona i Sevilla si užívají moře, hlavní město je od pobřeží stovky kilometrů daleko.",
+  "quip_wrong": "Skoro, ale ne tak úplně - Barcelona i Sevilla leží u moře, hlavní město ale sedí přesně uprostřed mapy: je to Madrid.",
+  "explanation": "Madrid leží v nadmořské výšce 667 metrů, a je tak nejvýše položeným hlavním městem celé Evropské unie.",
+  "about": "Madridu",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters - a grand royal palace standing in the middle of a dry inland Spanish city, far from any coast"
  },
  {
   "id": "es-k-paella",
@@ -621,17 +622,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje španělské jídlo z rýže pečené ve velké ploché pánvi, typicky s mořskými plody nebo kuřetem?",
+  "question": "Jak se jmenuje španělské jídlo z rýže, které se peče ve velké ploché pánvi - většinou s mořskými plody nebo kuřetem?",
   "answer": "Paella",
   "distractors": [
    "Rizoto",
    "Tapas",
    "Gazpacho"
   ],
-  "quip_correct": "Trefa! Přesně tak, paella. Jedno jídlo, jedna pánev, a vždycky dost pro celou rodinu najednou.",
-  "quip_wrong": "Tentokrát vedle, zkus to příště — rizoto je italské, tapas jsou malé kousky, gazpacho je studená polévka, tahle rýže z velké pánve je paella.",
-  "explanation": "Paella pochází z Valencie a tradičně se vařila venku nad dřevěným ohněm. Název pánve (paellera) dal jméno celému jídlu. Šafránem se barví do zlatožluta.",
-  "about": "paelle"
+  "quip_correct": "Tys to věděl! Jedno jídlo, jedna veliká pánev, a vždycky dost pro celou rodinu najednou.",
+  "quip_wrong": "Tentokrát vedle, zkus to příště - rizoto je italské, tapas jsou malé kousky, gazpacho je studená polévka, tahle rýže z velké pánve je paella.",
+  "explanation": "Paella pochází z Valencie a tradičně se vařila venku nad dřevěným ohněm - žlutou barvu jí dává koření šafrán.",
+  "about": "paelle",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters - a wide flat pan full of golden saffron rice with seafood, steam rising"
  },
  {
   "id": "es-k-flamenko",
@@ -641,17 +643,18 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje španělský tanec s dupáním, tleskáním a vířivými sukněmi, pocházející z Andalusie?",
+  "question": "Jak se jmenuje španělský tanec s dupáním, tleskáním a vířivými sukněmi, který se narodil v Andalusii?",
   "answer": "Flamenco",
   "distractors": [
    "Salsa",
    "Tango",
    "Sevillana"
   ],
-  "quip_correct": "Jsi bystrá hlava! Vidíš to dupání, tleskání a vířící sukně před sebou? Přesně tak vypadá flamenco naživo.",
-  "quip_wrong": "Ouha, málem — salsa je karibská, tango argentinské, tenhle andaluský tanec s podpatky je flamenco.",
-  "explanation": "Flamenco vzniklo v jižním Španělsku ze směsi andaluské, romské a maurské hudební tradice. UNESCO ho zapsalo na seznam nehmotného kulturního dědictví v roce 2010.",
-  "about": "flamencu"
+  "quip_correct": "Jé, tys to věděl! Vidíš to dupání, tleskání a vířící sukně před sebou? Přesně tak vypadá flamenco naživo.",
+  "quip_wrong": "Ouha, málem - salsa je karibská, tango argentinské, tenhle andaluský tanec s podpatky je flamenco.",
+  "explanation": "Flamenco vzniklo v jižním Španělsku ze směsi andaluské, romské a maurské hudební tradice.",
+  "about": "flamencu",
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters - a flamenco dancer mid-stomp with a swirling ruffled dress"
  },
  {
   "id": "es-k-byk",
@@ -1071,9 +1074,9 @@
    "Gazpacho",
    "Churros"
   ],
-  "quip_correct": "Trefa! Vejce, brambory, a jedna věčná hádka navíc — smí do tortilly cibule, nebo ne?",
-  "quip_wrong": "Skoro, ale ne tak úplně — paella je z rýže, gazpacho je studená polévka, tohle vaječno-bramborové kolo je tortilla.",
-  "explanation": "Španělská tortilla se peče ve velké pánvi a pak se obratným pohybem otočí, aby se propekla z obou stran — zvládnout tenhle obrat bez rozsypání vajec je malé rodinné umění.",
+  "quip_correct": "Tys to věděl! Vejce, brambory, a jedna věčná hádka navíc - smí do tortilly cibule, nebo ne?",
+  "quip_wrong": "Skoro, ale ne tak úplně - paella je z rýže, gazpacho je studená polévka, tohle vaječno-bramborové kolo je tortilla.",
+  "explanation": "Španělská tortilla se peče ve velké pánvi a pak se obratným pohybem otočí, aby se propekla z obou stran - zvládnout tenhle obrat bez rozsypání vajec je malé rodinné umění.",
   "about": "španělské tortille",
   "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a thick round Spanish potato omelette sliced on a wooden board, golden egg layers visible"
  },
@@ -1305,7 +1308,7 @@
    "Consomé",
    "Boršč"
   ],
-  "quip_correct": "Přesně! Gazpacho osvěží i v největším vedru.",
+  "quip_correct": "Tys to věděl! Gazpacho osvěží i v největším vedru.",
   "quip_wrong": "Chladná mísa, ale trefa vedle - ostatní polévky se servírují horké, gazpacho je jediná, co chceš ledovou.",
   "explanation": "Gazpacho pochází z jižní Andalusie, kde se dřív dělalo hlavně z chleba, česneku, oleje a octa - rajčata se přidala až později.",
   "source_url": "https://cs.wikipedia.org/wiki/Gazpacho",
@@ -1327,7 +1330,7 @@
    "Marcipán",
    "Perník"
   ],
-  "quip_correct": "Ano! O Vánocích ho ve Španělsku najdeš snad na každém stole.",
+  "quip_correct": "Tys to věděl! O Vánocích ho ve Španělsku najdeš snad na každém stole.",
   "quip_wrong": "Chutné, ale ne ono - tahle mandlová dobrota se jmenuje turrón a bez ní si Španělé Vánoce neumí představit.",
   "explanation": "Turrón se vyrábí už od patnáctého století a existují desítky druhů - od tvrdého plátku s celými mandlemi po měkkou verzi podobnou nugátu.",
   "source_url": "https://cs.wikipedia.org/wiki/Turr%C3%B3n",
