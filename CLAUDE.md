@@ -17,6 +17,39 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-28 — Ironické ilustrace se generují přes Gemini API S REFERENČNÍM OBRÁZKEM; pollinations na ně nestačí.**
+  Hledala se cesta, jak hromadně doplnit hero fotky k otázkám (**3 568 z 3 702 otázek je nemá**).
+  Ověřeno na dávce 10 + 5 zkušebních obrázků. Funguje kombinace tří věcí, každá je nutná:
+  1. **Gemini API napřímo** (`generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent`,
+     klíč v hlavičce `x-goog-api-key`, `responseModalities: ["IMAGE"]`, `imageConfig.aspectRatio: "16:9"`;
+     obrázek se vrací base64 v `candidates[0].content.parts[].inlineData.data`).
+  2. **Referenční obrázek přiložený v requestu** jako druhá `part` (`inlineData`, base64) —
+     použit `assets/country-ch.jpg`, k tomu textový prefix „use the attached reference ONLY as a
+     style guide … but draw a completely different scene". **Tohle je ten rozdíl.** Popsat styl
+     slovy (jak to dělá pollinations recept) drží rukopis mnohem hůř; s referencí je sada
+     konzistentní napoprvé a bez dolaďování seedů.
+  3. **Explicitní vyloučení špatné asociace** u předmětů, které model táhne jinam.
+  **Co NEfunguje (ověřeno, neopakovat):** pollinations vygeneruje hezkou scénu, ale **vtip
+  z promptu prostě vynechá** — potvrzeno na TŘECH různých modelech (výchozí Flux, `nanobanana`,
+  `gpt-image-2`), takže to není volba modelu, ale strop téhle cesty. Navíc `nanobanana` přes
+  pollinations vracel vytrvale 500 (sdílená kapacita Vertex AI, zdokumentovaná chyba u nich).
+  - **Past: „cone … overflowing with crispy fries" dá ZMRZLINU**, ne hranolky — stalo se dvakrát,
+    napříč dvěma modely. Pomohl až popis tvaru + negace: „long thin rectangular sticks (not ice
+    cream, not swirled)". Obecně: u jídla popsat TVAR, ne jen název.
+  - **Past: vlajka nemá obličej.** „French flag with a pouting expression" model ignoroval;
+    funguje až fyzické gesto — jedna vlajka hrdě vztyčená, druhá svěšená.
+  - **Past: zdarma tarif Gemini API na obrázkový model nepustí ani první request** (429 hned,
+    ne až po vyčerpání). Chce to zapnutý billing na Google Cloud projektu, ke kterému klíč patří.
+    **Pozor, to není totéž co předplatné Gemini Advanced v appce `gemini.google.com`** — to je
+    spotřebitelská věc a na kvótu API nemá vliv.
+  - **Generování musí spustit uživatel u sebe** (PowerShell). Cloudová session Claude Code má
+    síťovou politiku, která `image.pollinations.ai`, `generativelanguage.googleapis.com`
+    i `ai.google.dev` blokuje (403 od proxy) — ověřeno, neobcházet, nezkoušet znovu.
+  - **Past: skript pro uživatele psát bez zpětných apostrofů** (pokračování řádku), bez
+    `"$id.$ext"` uvnitř řetězce a bez zpětného lomítka těsně před uvozovkou — při ručním
+    kopírování do Poznámkového bloku se to poškodí a PowerShell spadne na chybu syntaxe.
+    Název souboru volit krátký a bez pomlček, ty se při psaní do terminálu překlepnou.
+
 - **2026-08-26 — Turnaje (krok 9) postavené, ale NENASAZENÉ; produkční D1 potřebuje ruční migraci, ne `schema.sql`.**
   Na výslovné přání (navzdory vlastnímu dřívějšímu „záměrně nepostaveno") implementován
   model aréna-turnaje. Přehled a proč viz [docs/online-rezim.md](docs/online-rezim.md),
