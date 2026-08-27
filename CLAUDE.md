@@ -49,6 +49,16 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     `"$id.$ext"` uvnitř řetězce a bez zpětného lomítka těsně před uvozovkou — při ručním
     kopírování do Poznámkového bloku se to poškodí a PowerShell spadne na chybu syntaxe.
     Název souboru volit krátký a bez pomlček, ty se při psaní do terminálu překlepnou.
+  - **Hromadná výroba pojede přes BATCH režim (−50 %), protože na ni nespěcháme.** Batch sleva
+    platí i na obrázkové modely; výsledky chodí asynchronně (do 24 h). Pro zbylých **3 563**
+    otázek: normálně ~$0,068/obrázek = **~$242**, batch ~$0,034/obrázek = **~$121** (úspora
+    ~2 800 Kč). **Nejdřív ale ověřit na 5–10 obrázcích, že v batchi jde přiložit referenční
+    obrázek** — to je ta věc, která drží styl, a batch má jiný tvar požadavku. Reference má
+    v base64 ~92 kB na požadavek, u 3 563 požadavků by dávkový soubor narostl na stovky MB,
+    takže to nejspíš bude chtít nahrát referenci zvlášť (Files API) a jen se na ni odkazovat.
+    **Kdyby reference v batchi nešla, radši zaplatit dvojnásobek** než mít celou sadu v horším
+    stylu. Zbývá taky napsat ironické prompty pro ostatní otázky — pole `image_prompt` v datech
+    je psané pro fotorealistický snímek, ne pro ironickou ilustraci, takže se použít nedá.
 
 - **2026-08-26 — Turnaje (krok 9) postavené, ale NENASAZENÉ; produkční D1 potřebuje ruční migraci, ne `schema.sql`.**
   Na výslovné přání (navzdory vlastnímu dřívějšímu „záměrně nepostaveno") implementován
