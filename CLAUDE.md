@@ -36,6 +36,13 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **Past: „cone … overflowing with crispy fries" dá ZMRZLINU**, ne hranolky — stalo se dvakrát,
     napříč dvěma modely. Pomohl až popis tvaru + negace: „long thin rectangular sticks (not ice
     cream, not swirled)". Obecně: u jídla popsat TVAR, ne jen název.
+  - **Past: prompt, který si řekne o písmena, dostane ČMÁRANICI.** Stylový recept zakazuje
+    text (`no text, no words, no letters`), takže když si vtip vyžádá napsané slovo (kartička
+    s souhláskami, kniha gramatiky, slovo se sedmi koncovkami), model to nedokáže sladit
+    a vyrobí nesmyslná obrácená písmena, navíc vypadající anglicky — v české appce to ruší.
+    Ověřeno na dávce Česka: postihlo to jazykové otázky (`cz-q-strc-prst-skrz-krk`,
+    `cz-t-cesky-jazyk-obtiznost` a spol.), ~6 z 54. **Řešení: u jazykových otázek stavět vtip
+    na GESTU nebo předmětu, ne na napsaném slově** — uzel na jazyku funguje, kartička s textem ne.
   - **Past: vlajka nemá obličej.** „French flag with a pouting expression" model ignoroval;
     funguje až fyzické gesto — jedna vlajka hrdě vztyčená, druhá svěšená.
   - **Past: zdarma tarif Gemini API na obrázkový model nepustí ani první request** (429 hned,
