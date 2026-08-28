@@ -49,6 +49,25 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     `"$id.$ext"` uvnitř řetězce a bez zpětného lomítka těsně před uvozovkou — při ručním
     kopírování do Poznámkového bloku se to poškodí a PowerShell spadne na chybu syntaxe.
     Název souboru volit krátký a bez pomlček, ty se při psaní do terminálu překlepnou.
+  - **Ověřeno na 25 obrázcích (5 + 20): recept funguje a vtip je čitelný i v náhledu.**
+    Rozlišení **1344×768 nativně** — nad cílem projektu (~1200 px) i nad tím, co potřebuje
+    retina (600–1250 px), takže o rozlišení se u téhle cesty není třeba starat. Gemini vrací
+    **PNG** (~2,3 MB/kus), takže převod na JPG je povinný krok, ne volitelný.
+  - **NEVYŘEŠENO: celý fond se do appky nevejde. 3 702 ilustrací = ~635 MB.**
+    Změřeno na skutečné dávce: po převodu na JPG 1200 px q84 vychází **~176 kB na obrázek**.
+    Pro srovnání, appka má dnes celkem **~35 MB** (`img/` 19 MB / 161 fotek à 116 kB,
+    `data/` 9,9 MB, `assets/` 6 MB) — celý fond by byl **18× celá dnešní appka**. Není to
+    kompresí: i při dnešním standardu 116 kB by to bylo ~430 MB. Problém je počet.
+    Vadí to kvůli konvenci *offline-first* — kdyby se obrázky tahaly až za běhu, sólo/párty/škola
+    by je offline neměly (appka to ustojí, spadne na razítko země `.qz-pic-broken`, ale je to ztráta).
+    **Páky, které jsou ve hře** (zatím nerozhodnuto, čísla jsou spočítaná, ne odhadnutá):
+    1. **Nedělat všech 3 702 najednou** — appka chybějící fotku zvládá elegantně, takže jde jet
+       postupně. ~500 ilustrací = ~88 MB, což je ještě únosné. Otázka je čím začít: dětské
+       pásmo (kde obrázek pomáhá nejvíc), nebo nejčastěji losované země.
+    2. **WebP místo JPG** — u kreslených ilustrací s plochými barvami bývá o 30–50 % menší při
+       stejné kvalitě; celý fond by spadl na ~350 MB. Samo o sobě nestačí, ale kombinuje se s bodem 1.
+    3. Menší rozlišení než 1200 px — appka fotku stejně zobrazuje jen na ~poloviční šířku
+       (zápis 2026-07-31), takže 800 px by možná stačilo; ~289 MB. Zhorší to ale tablet.
   - **Hromadná výroba pojede přes BATCH režim (−50 %), protože na ni nespěcháme.** Batch sleva
     platí i na obrázkové modely; výsledky chodí asynchronně (do 24 h). Pro zbylých **3 563**
     otázek: normálně ~$0,068/obrázek = **~$242**, batch ~$0,034/obrázek = **~$121** (úspora
