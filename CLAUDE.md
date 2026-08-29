@@ -89,11 +89,16 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     platí i na obrázkové modely; výsledky chodí asynchronně (do 24 h). Pro zbylých **3 563**
     otázek: normálně ~$0,068/obrázek = **~$242**, batch ~$0,034/obrázek = **~$121** (úspora
     ~2 800 Kč). **Nejdřív ale ověřit na 5–10 obrázcích, že v batchi jde přiložit referenční
-    obrázek** — to je ta věc, která drží styl, a batch má jiný tvar požadavku. Reference má
-    v base64 ~92 kB na požadavek, u 3 563 požadavků by dávkový soubor narostl na stovky MB,
-    takže to nejspíš bude chtít nahrát referenci zvlášť (Files API) a jen se na ni odkazovat.
-    **Kdyby reference v batchi nešla, radši zaplatit dvojnásobek** než mít celou sadu v horším
-    stylu. Zbývá taky napsat ironické prompty pro ostatní otázky — pole `image_prompt` v datech
+    obrázek** — to je ta věc, která drží styl, a batch má jiný tvar požadavku.
+    **Ověřeno 2026-08-28** (dokumentace přes GitHub cookbook, `ai.google.dev` je z téhle session
+    blokovaný stejně jako pollinations): multimodální vstup (text + obrázek) v batchi jde,
+    request má stejný tvar jako synchronní volání. Dokumentace výslovně zmiňuje kompatibilní
+    výjimku — „media gen modely (Imagen, Lyria, Veo) s Batch API nefungují, ale **Nano Banana**
+    pro dávkové obrázky jde použít" — a `gemini-2.5-flash-image` je přesně Nano Banana.
+    **Jediná změna oproti synchronnímu skriptu:** referenci nahrát JEDNOU přes Files API
+    a v každém z ~3 500 requestů se na ni jen odkázat (`file_uri`), ne posílat base64
+    (~92 kB) v každém řádku znovu — to by dávkový JSONL soubor zbytečně nafouklo.
+    Zbývá taky napsat ironické prompty pro ostatní otázky — pole `image_prompt` v datech
     je psané pro fotorealistický snímek, ne pro ironickou ilustraci, takže se použít nedá.
 
 - **2026-08-26 — Turnaje (krok 9) postavené, ale NENASAZENÉ; produkční D1 potřebuje ruční migraci, ne `schema.sql`.**
