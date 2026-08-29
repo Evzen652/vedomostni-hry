@@ -279,7 +279,7 @@
     while(ty-g3.curY >  Math.PI) ty -= 2*Math.PI;        // nejkratší cesta
     while(ty-g3.curY < -Math.PI) ty += 2*Math.PI;
     g3.targetY=ty;
-    g3.targetX=(ll[1]*Math.PI/180)*0.55;                 // mírný náklon podle šířky
+    g3.targetX=ll[1]*Math.PI/180;                        // plný náklon podle šířky, ať míří přesně na zemi
   }
   function mountGlobeMedal(cc){
     const medal=document.getElementById("qz-medal"); if(!medal) return;

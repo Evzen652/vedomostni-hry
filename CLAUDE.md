@@ -17,6 +17,20 @@ Struktura viz [README.md](README.md).
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-29 — Oprava: 3D glóbus u otázky mířil úplně mimo zemi (chyba v náklonu podle šířky).**
+  Hráč nahlásil, že glóbus u otázky neukazuje správnou zemi. Příčina: `spinGlobeTo()` v
+  [quiz.js](quiz.js) natáčel glóbus kolem svislé osy na správnou délku, ale náklon podle
+  zeměpisné šířky byl schválně tlumený na 55 % (`* 0.55`, komentář „mírný náklon") —
+  zatímco červená značka „tady jsi" (`.qz-beacon`) sedí napevno uprostřed rámu a čeká
+  přesný střed glóbu. U rovníkových zemí to nevadilo, ale třeba u Česka (50° s. š.) se
+  glóbus natočil jen o ~27,5° místo 50°, takže značka ukazovala na Středomoří/severní
+  Afriku misto na Česko — chyba rostla se zeměpisnou šířkou, takže postihla hlavně Evropu.
+  **Textura `assets/earth.jpg` sama o sobě je v pořádku** (ověřeno mřížkou souřadnic
+  napozicovanou přes obrázek — Praha, Londýn, New York, Rio, Sydney i Tokio padly přesně
+  na svá místa), takže se nepřegenerovávala. Oprava: `targetX = ll[1]*Math.PI/180` bez
+  tlumení — ověřeno numerickou simulací rotace (Rx∘Ry na testovací vrcholy), že po opravě
+  přesně libovolná zadaná zeměpisná šířka/délka skončí v bodě (0,0,1), tedy přesně
+  naproti kameře, kde beacon je.
 - **2026-08-28 — Ironické ilustrace se generují přes Gemini API S REFERENČNÍM OBRÁZKEM; pollinations na ně nestačí.**
   Hledala se cesta, jak hromadně doplnit hero fotky k otázkám (**3 568 z 3 702 otázek je nemá**).
   Ověřeno na dávce 10 + 5 zkušebních obrázků. Funguje kombinace tří věcí, každá je nutná:
