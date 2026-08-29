@@ -34,6 +34,12 @@ export async function onRequestGet({ params, request, env }) {
     n,
     total: ids.length,
     limit_s: game.limit_s,
+    // ID potřebuje klient jen na cestu k ilustraci (img/{id}.jpg). Náskok to
+    // nikomu nedává: v payloadu je stejně celý text otázky, takže dohledat ji
+    // ve veřejném data/questions/*.json šlo i bez ID. Tohle riziko je vědomě
+    // tolerované (docs/online-rezim.md, Anti-cheat) — na rozdíl od odpovědi,
+    // která tu být nesmí za žádnou cenu.
+    id: q.id,
     country: q.country,
     section: q.section,
     question: q.question,

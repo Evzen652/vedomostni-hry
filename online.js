@@ -724,12 +724,30 @@ window.ZKOnline = (function () {
         ? '<button class="qz-more" id="zk-more">Více o ' + esc(a.about || "tom") +
           ' <span class="qz-more-ico">💡</span></button>'
         : "";
+      // Ilustrace se odhaluje AŽ TEĎ, ne u otázky — obrázek často odpověď prozradí
+      // (kapr ve vaně napoví, kam se dává kapr). Stejné pravidlo jako v sólu,
+      // jen tu není glóbus, který by mezitím rám vyplnil, takže se rám do té doby
+      // vůbec nevykreslí. Když fotka neexistuje, `onerror` celý rám odstraní —
+      // prázdné místo by vypadalo jako chyba.
+      var pic = q.id
+        ? '<div class="zk-picframe" id="zk-pic"><img src="img/' + esc(q.id) + '.jpg" alt=""></div>'
+        : "";
       box.insertAdjacentHTML("beforeend",
+        pic +
         '<div class="qz-quipbox"><div class="qz-hlaska">' + esc(a.quip || "") + "</div></div>" +
         '<div class="qz-frow"><div class="qz-expl">' + esc(a.explanation || "") + "</div>" +
         '<div class="qz-fbtns">' + more +
         '<button class="qz-next" id="zk-next">' +
           (a.done ? "Výsledek" : "Další otázka") + " →</button></div></div>");
+
+      var picEl = body.querySelector("#zk-pic");
+      if (picEl) {
+        var im = picEl.firstElementChild;
+        im.addEventListener("error", function () { picEl.remove(); });
+        im.addEventListener("load", function () { picEl.classList.add("on"); });
+        if (im.complete && im.naturalWidth > 0) picEl.classList.add("on");
+        else if (im.complete) picEl.remove();
+      }
 
       body.querySelector("#zk-next").addEventListener("click", function () {
         if (a.done) showResult(S.game.id, S.game.mode, S.game.tournamentId);

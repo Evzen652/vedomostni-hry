@@ -523,6 +523,15 @@
   padding: 8px 11px; display: flex; align-items: center; gap: 10px; }
 /* Řádek turnaje v seznamu je klikací <button>, ne <div> — potřebuje reset UA vzhledu. */
 .zk-trow { width: 100%; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+
+/* Ilustrace u odpovědi v online režimu. Poměr 16/9 sedí na to, co vrací generátor
+   (1200×686), takže se nic neořezává. Rám se ukáže až po načtení (.on) — bez toho
+   by na okamžik probliklo prázdné místo, než se obrázek stáhne. */
+.zk-picframe { margin: 12px 0 0; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 9;
+  border: 1.6px solid #dccdb0; box-shadow: 0 3px 0 #e3d5b8; background: var(--paper2);
+  opacity: 0; transition: opacity .45s ease; }
+.zk-picframe.on { opacity: 1; animation: qz-picin .6s cubic-bezier(.22,.9,.3,1) both; }
+.zk-picframe img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .zk-rev { align-items: flex-start; text-align: left; line-height: 1.35; }
 .zk-rev .zk-mark { min-width: 1.4em; font-weight: 800; flex-shrink: 0; }
 .zk-rev .qz-expl { font-size: 12px; margin-top: 3px; }
