@@ -11,6 +11,9 @@
 Vědomostní kvíz (zeměpis). Statická webová hra, běží **offline**.
 Struktura viz [README.md](README.md).
 
+**Komunikace s uživatelem: vždy česky.** Bez ohledu na to, v jakém jazyce je psaný kód,
+komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášky) jsou vždy v češtině.
+
 ---
 
 ## Systémová rozhodnutí (log)
