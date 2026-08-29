@@ -31,6 +31,14 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   tlumení — ověřeno numerickou simulací rotace (Rx∘Ry na testovací vrcholy), že po opravě
   přesně libovolná zadaná zeměpisná šířka/délka skončí v bodě (0,0,1), tedy přesně
   naproti kameře, kde beacon je.
+  **Druhá, nezávislá příčina stejného hlášení:** tabulka `COUNTRY_LL` v [quiz.js](quiz.js)
+  neměla souřadnice pro 6 zemí přidaných později (`be`, `dk`, `fi`, `ie`, `no`, `pt` — viz
+  zápis 2026-08-15 o jejich přidání do appky) — u nich `spinGlobeTo()` padal na fallback
+  `[0,20]` (Guinejský záliv u pobřeží Ghany), takže glóbus mířil do Afriky u JAKÉKOLI otázky
+  z těchhle šesti zemí, bez ohledu na výše popsanou opravu náklonu. Doplněny přibližné středy.
+  **Poučení pro příště:** kdykoli přibude země do `COUNTRY_BY_CC`/`COUNTRY_FLAG`/`COUNTRY_CONT`,
+  patří rovnou vedle ní i řádek v `COUNTRY_LL` — jinak glóbus mlčky ukáže špatně a chyba se
+  odhalí, až se na tu zemi náhodou dostane otázka.
 - **2026-08-28 — Ironické ilustrace se generují přes Gemini API S REFERENČNÍM OBRÁZKEM; pollinations na ně nestačí.**
   Hledala se cesta, jak hromadně doplnit hero fotky k otázkám (**3 568 z 3 702 otázek je nemá**).
   Ověřeno na dávce 10 + 5 zkušebních obrázků. Funguje kombinace tří věcí, každá je nutná:
