@@ -116,8 +116,9 @@
 .qz-beacon { position: absolute; z-index: 7; width: 13px; height: 13px; border-radius: 50%; background: var(--coral);
   box-shadow: 0 0 0 3px #fffdf6, 0 2px 6px rgba(0,0,0,.35); }
 .qz-beacon::after { content: ""; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--coral);
-  animation: qz-ping 1.9s ease-out infinite; }
-@keyframes qz-ping { 0% { transform: scale(1); opacity: .85; } 100% { transform: scale(2.8); opacity: 0; } }
+  animation: qz-ping 3.4s ease-out infinite; }
+/* zpomaleno a zjemněno (2026-08-29) — původní 1,9s/scale(2,8)/opacity .85 působilo při čtení otázky rušivě */
+@keyframes qz-ping { 0% { transform: scale(1); opacity: .5; } 100% { transform: scale(2.1); opacity: 0; } }
 @keyframes qz-breathe { 0%,100% { opacity: .7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
 .qz-globecap { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center;
   font-family: 'Nunito', sans-serif; font-style: italic; font-size: 16px; color: #4a6b64; font-weight: 700;

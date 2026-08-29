@@ -251,7 +251,7 @@
       renderer.setPixelRatio(1); renderer.setSize(460,460,false);
       if(THREE.sRGBEncoding!==undefined) renderer.outputEncoding=THREE.sRGBEncoding;
       const scene=new THREE.Scene();
-      const camera=new THREE.PerspectiveCamera(40, 1, 0.1, 100); camera.position.set(0,0,2.9);
+      const camera=new THREE.PerspectiveCamera(40, 1, 0.1, 100); camera.position.set(0,0,2.55);
       // malovaná textura → matně a rovnoměrně nasvícené (žádný lesk ani ostrý den/noc terminátor),
       // ať glóbus vypadá jako namalovaný papírový míč, ne naleštěná planeta
       scene.add(new THREE.AmbientLight(0xffffff,0.7));
