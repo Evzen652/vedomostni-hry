@@ -107,7 +107,7 @@
 /* velikost se odvíjí od výšky rámu, ne pevných px — jinak se orbit (110 %)
    a záře (128 %) v nižším rámu ořežou o horní a spodní hranu */
 .qz-globe-stage { position: relative; display: flex; align-items: center; justify-content: center;
-  height: min(68%, 220px); aspect-ratio: 1; }
+  height: min(68%, 290px); aspect-ratio: 1; }
 /* atmosférická záře za glóbem */
 .qz-globe-stage::before { content: ""; position: absolute; width: 128%; height: 128%; border-radius: 50%; z-index: 0;
   background: radial-gradient(circle, rgba(126,206,224,.55) 0%, rgba(126,206,224,.18) 55%, rgba(126,206,224,0) 72%);
@@ -517,6 +517,86 @@
    (2×24 px) a online obrazovky na 375px mobilu vyčnívají o 48 px mimo displej. Offline
    obrazovky to nepotkalo, protože šířku nemají nastavenou a zmenší se i s odsazením. */
 .zk-wrap { max-width: 640px; margin: 0 auto; width: 100%; box-sizing: border-box; }
+
+/* ---- online rozcestník ---------------------------------------------------
+   Tři úrovně důležitosti místo sedmi stejných dlaždic: jedna hlavní akce
+   (Hrát teď), pod ní tři další způsoby hry a nakonec tichý proužek utilit.
+   Dřív měl „Účet" stejnou váhu jako „Hrát teď" a nic z toho nemělo obrázek.
+
+   Mřížka je VLASTNÍ, ne .qz-modes. To není kosmetika: .qz-modes je flex
+   s pevně širokými dlaždicemi (290 px na desktopu), jenže .zk-wrap má
+   640 px mínus 2×24 px odsazení = 592 px obsahu, zatímco dvě dlaždice
+   potřebují 290+16+290 = 596 px. Kvůli čtyřem pixelům se lobby lámalo
+   po jedné dlaždici na řádek a přetékalo přes celou obrazovku. */
+.zk-lobby { gap: 12px; }
+.zk-idbar { display: flex; align-items: baseline; justify-content: center; flex-wrap: wrap; gap: 4px 10px;
+  font-size: 13px; color: var(--muted); margin-bottom: 2px; }
+.zk-idbar b { color: var(--ink); font-size: 15px; }
+.zk-idband { background: #f2e7d2; color: #8a6512; border-radius: 999px; padding: 2px 9px; font-size: 11px; font-weight: 800; }
+
+/* hlavní akce: vodorovná karta přes celou šířku, ať je jasné, kam se kliká */
+.zk-hero { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+  background: var(--paper2); border: 2px solid var(--teal); border-radius: 18px; padding: 14px 16px;
+  cursor: pointer; font: inherit; color: inherit; box-shadow: 0 4px 0 #bcd8d4; transition: transform .12s, box-shadow .12s; }
+.zk-hero:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #bcd8d4; }
+.zk-hero .zk-ic { width: 72px; height: 72px; flex: none; }
+.zk-herotext { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.zk-herotext .t { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 800; color: var(--teal); }
+.zk-herotext .d { font-size: 13px; color: var(--muted); line-height: 1.35; }
+.zk-heroarrow { margin-left: auto; font-size: 22px; color: var(--teal); flex: none; }
+
+/* tři další způsoby hry — auto-fit, takže na úzkém displeji spadnou pod sebe samy */
+/* width:100% je nutnost, ne pojistka: rodič (.qz-modepick) je svislý flex s align-items:center,
+   takže se potomek bez šířky smrskne na obsah. U proužku utilit to bylo vidět — tlačítka
+   vyšla nestejně široká (57/50/36 px) podle délky slova místo na třetiny. */
+.zk-plays { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; }
+.zk-play { display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 12px 8px 11px;
+  background: var(--paper2); border: 2px solid #dccdb0; border-radius: 16px; cursor: pointer;
+  font: inherit; color: inherit; text-align: center; box-shadow: 0 4px 0 #e3d5b8; transition: transform .12s, box-shadow .12s; }
+.zk-play:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; }
+.zk-play .zk-ic { width: 56px; height: 56px; }
+.zk-play .t { font-family: 'Nunito', sans-serif; font-size: 14.5px; font-weight: 800; line-height: 1.2; }
+.zk-play .d { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
+
+/* společný rám ilustrace (stejný „nalepený obrázek" jako u offline dlaždic) */
+.zk-ic { display: block; position: relative; border-radius: 14px; overflow: hidden; margin: 0 auto;
+  border: 3px solid #fffdf6; outline: 2px solid #e3d5b8; box-shadow: 0 4px 12px rgba(120,90,50,.24); }
+.zk-ic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.zk-ic-fb { position: absolute; inset: 0; align-items: center; justify-content: center; font-size: 26px; background: #fdf7ea; }
+
+/* utility: ikona + slovo, žádné popisky — nemají soupeřit s hraním */
+.zk-utils { display: flex; gap: 8px; margin-top: 4px; width: 100%; }
+.zk-util { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 9px 4px;
+  background: none; border: 1.5px solid #e3d5b8; border-radius: 13px; cursor: pointer;
+  font: inherit; font-size: 12px; font-weight: 700; color: var(--teal); transition: background .12s, border-color .12s; }
+.zk-util:hover { background: var(--paper2); border-color: #dccdb0; }
+.zk-util svg { width: 21px; height: 21px; display: block; }
+
+/* Čekání na soupeře: tři tepající tečky. Bez nich byla čekárna statický text s rostoucím
+   číslem a působila, jako by se appka zasekla. */
+.zk-radar { display: flex; justify-content: center; gap: 7px; margin: 2px 0 10px; }
+.zk-radar span { width: 9px; height: 9px; border-radius: 50%; background: var(--teal);
+  animation: zk-pulse 1.25s ease-in-out infinite; }
+.zk-radar span:nth-child(2) { animation-delay: .18s; }
+.zk-radar span:nth-child(3) { animation-delay: .36s; }
+@keyframes zk-pulse { 0%, 100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }
+
+/* Výzva u přítele — seznam přátel byl do teď jen k prohlížení. */
+.zk-challenge { margin-left: auto; flex: none; background: none; border: 1.5px solid var(--teal);
+  border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 12px; font-weight: 700;
+  color: var(--teal); cursor: pointer; transition: background .12s; }
+.zk-challenge:hover { background: #e8f2f0; }
+
+/* Vlastní řádek v žebříčku. */
+.qz-standrow.zk-me { border-color: var(--teal); background: #eef6f4; }
+
+@media (max-width: 480px) {
+  .zk-hero { gap: 11px; padding: 12px 13px; }
+  .zk-hero .zk-ic { width: 60px; height: 60px; }
+  .zk-herotext .t { font-size: 19px; }
+  .zk-play .zk-ic { width: 48px; height: 48px; }
+  .zk-play .d { display: none; }   /* na mobilu se vejde jen název, popisek by dlaždici roztrhal */
+}
 .zk-code { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 800; letter-spacing: .22em;
   color: var(--teal); text-align: center; padding: 6px 0 2px; }
 .zk-rowlist { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }

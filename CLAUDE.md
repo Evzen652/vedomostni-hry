@@ -20,6 +20,259 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-30 — Prompty se píšou SKRIPTEM přes Gemini, ne ručně. Pilot schválen, jede se Česko.**
+  Hráč pilot 30 obrázků schválil („všechny jsou ok") a zadal soustředit se na české otázky.
+  Česko má **901 otázek bez obrázku** (z 964), takže ruční psaní promptů odpadá.
+  - **Nový [scripts/gen-irony-prompts.js](scripts/gen-irony-prompts.js)** (`--cc cz`) posílá otázky
+    po **12** a vrací `{id: scéna}`. Celý recept z CLAUDE.md je v systémové instrukci, včetně
+    toho, PROČ každá past vznikla — model pak sám volí náhradní řešení místo doslovného obcházení.
+  - **Past: `gemini-2.5-pro` API novým uživatelům nedává** — 404 s odkazem na nástupce.
+    Použit `gemini-3.1-pro-preview`. (Obrázkový `gemini-2.5-flash-image` funguje dál.)
+  - **`responseMimeType: "application/json"`** je důvod, proč se výstup nemusí parsovat
+    heuristikou — model vrátí rovnou objekt.
+  - **Pořadí je závazné: prompty → `npm run lint-irony` → teprve obrázky.** Kontrola stojí nic
+    a chytá čtyři pasti dřív, než se z promptů stanou peníze. Na první dávce 12/12 bez nálezu.
+  - **Kvalita ověřena na vzorku:** Pražské jaro = pás tanku drtící jarní květy a v pozadí další
+    čtyři (pět armád Varšavské smlouvy, bez jediného písmene); Jan Hus = sedlák přivazující
+    hroty k cepu. Scéna tedy ilustruje ODPOVĚĎ, ne jen téma.
+  - **Zápis drží formát** (odsazení 1 mezerou + CRLF), takže diff je jen přidané řádky.
+    Kontrolováno: mimo `irony_prompt` se v souboru nezměnilo nic než čárky za předchozím klíčem.
+
+- **2026-08-30 — Pilot ilustrací ODEHRÁN: 5 dlaždic + 30 obrázků k otázkám, 0 chyb. Recept z CLAUDE.md drží.**
+  Vygenerováno přímo z asistentovy session (viz oprava o síti níž). Výsledek: **35/35 obrázků,
+  žádné selhání**, a hlavně — **všechny tři zdokumentované pasti byly obejity**:
+  - **Text/čmáranice u jazykových otázek.** Vtip postavený na GESTU nebo abstraktním předmětu
+    funguje: sazeč s hromadou vyřezaných háčků (ne písmen), grimasa při vyslovování „ř",
+    tři úklony různé hloubky u japonského keigo. Nikde v celé sadě ani jedno písmeno.
+  - **Jídlo bez popisu tvaru.** Alfajor popsaný jako „dva ploché kruhové disky spojené
+    karamelem" vyšel správně, ne jako zmrzlina. Totéž fazolová polévka a masové koule.
+  - **Reálná osoba.** Evita jako anonymní silueta na balkoně — Gemini neodmítlo.
+  - **Prázdný svitek u „vyjmenovaných slov" vyšel opravdu prázdný**, protože si to prompt
+    výslovně řekl (`completely blank`). Zákaz textu ve stylu a požadavek na text ve scéně
+    se tím nepraly.
+  **Čísla pro rozhodnutí o zbytku fondu:** průměr **139 kB/obrázek** (ne 176 kB, jak odhadoval
+  zápis z 2026-08-28). Zbývá **3 458 otázek** → odhadem **0,46 GB** a **~$118 v batchi**
+  (~$235 bez něj). `img/` má po pilotu 271 souborů / 36,8 MB.
+  - **Dlaždice online rozcestníku** (`assets/mode-online.jpg`, `zk-live`, `zk-daily`, `zk-link`,
+    `zk-tourney`) jsou hotové a v appce se načítají; emoji fallback už nikde nenaskakuje.
+    Čtvercový režim generátoru: `node scripts/gen-irony-images.js --ui`.
+  - **Klíč** se bere z prostředí nebo z gitignorovaného `.dev.vars` (řádek `GEMINI_API_KEY=…`).
+
+- **2026-08-30 — Online část přestavěna: hierarchie místo sedmi stejných dlaždic + 5 opravených bugů.**
+  Hráč hlásil, že online část „není domyšlená" a chce ji intuitivní, hravou a jednoduchou.
+  Průchod kódem (`online.js`, 16 obrazovek) potvrdil, že to nebyl jen dojem.
+  - **Proč lobby vypadalo jako sloupec obřích rámečků: chyběly 4 pixely.** Element má zároveň
+    `.qz-modepick` (padding 24 px) i `.zk-wrap` (max-width 640, border-box), takže obsah měl
+    **592 px**, ale dvě dlaždice `.qz-mode` potřebují `290+16+290 = 596`. Každá se proto zalomila
+    na vlastní řádek. **Byla to nehoda, ne návrh** — offline rozcestník `.zk-wrap` nemá, a proto
+    tam mřížka drží. Lobby má teď **vlastní mřížku `.zk-lobby`**, ne `.qz-modes`.
+  - **Tři úrovně místo sedmi rovnocenných dlaždic:** jedna velká akce (Hrát teď), pod ní tři
+    způsoby hry (Denní pětka, Souboj na odkaz, Turnaj) a tichý proužek utilit (Žebříček, Přátelé,
+    Účet). **Utility mají SVG ikony, ne malované ilustrace** — schválně, aby nesoupeřily s hraním.
+    Dřív měl „Účet" stejnou váhu jako „Hrát teď" a žádná dlaždice neměla obrázek, ačkoli obrazovka
+    o krok dřív ukazuje čtyři malované karty.
+  - **Nový hráč vidí registraci, ne přihlášení.** `renderAuth` měl natvrdo `mode="login"`, takže
+    prvním, co člověk bez účtu uviděl, byl formulář pro vracející se, a založení hráče byl tichý
+    odkaz v patičce. Rozlišuje to nový klíč `zk_seen` v localStorage (přežije odhlášení).
+    **Hostující režim ZAMÍTNUT:** online část stojí na identitě (rating, žebříček, odveta, přátelé),
+    takže by host narazil na zeď hned po první hře; účet je navíc schválně minimální (přezdívka
+    + PIN, viz zápis 2026-08-25). Překážkou nebyl účet, ale to, že jsme ukazovali špatný formulář.
+  - **Konec slepých uliček:** u přítele je tlačítko „Vyzvat" (recykluje souboj na odkaz — API
+    přímé vyzvání nemá), v žebříčku se zvýrazní vlastní řádek, a u souboje na odkaz je „Zahrát si
+    svoji půlku" povýšeno na hlavní akci — čekání na kamaráda není podmínka.
+  - **Čekárna: bot je volba od začátku**, jen tiše; po 15 s (`match.js`) se povýší na hlavní akci.
+    Dřív byl `display:none` a hráč patnáct vteřin koukal na statický text. Přibyly tepající tečky.
+
+  **Pět opravených bugů (všechny šlo vidět, ne teoretických):**
+  1. **„×" nezastavovalo online časovače.** `close()` v quiz.js nevolalo `stopAll()`, takže po
+     odchodu z rozehrané hry běžel časovač i dotazování dál nad odpojeným DOMem a po vypršení
+     limitu **přepsaly rozcestník**, který hráč mezitím otevřel. `stopAll` je proto nově
+     exportované z `ZKOnline`.
+  2. **Odpověď dorazivší po odchodu padala** na `insertAdjacentHTML` nad `null`. Stejná třída
+     chyby jako 1 — asynchronní práce přežije obrazovku, na kterou měla kreslit.
+  3. **`watchOpponent` interval nikdy nerušil** — při odpojeném elementu jen `return`.
+  4. **Hráč viděl vývojářskou hlášku o spuštění dev serveru** při výpadku sítě.
+  5. **Jediný neúspěšný request uprostřed hry vyhodil hráče do lobby** a partie byla pryč.
+     Odeslání odpovědi se teď při výpadku sítě jednou zopakuje (chyby serveru se neopakují).
+  - Drobnost: u `#zk-opp` byl **dvakrát atribut `class`**, takže `.zk-oppbar` se nikdy neuplatnil.
+  **Druhá vlna (turnaje a prázdné stavy):**
+  - **Ve výsledku turnajového kola je „Další kolo" HLAVNÍ akce**, ne „Zpět do turnaje".
+    Bylo to obráceně, takže pokračovat ve hře vypadalo slabší než z turnaje odejít — přesně
+    naopak, než o čem aréna je.
+  - **Běžící turnaje jsou v seznamu nahoře, zakládání pod nimi.** Přidat se k rozjetému
+    turnaji je běžnější než zakládat vlastní; dřív byl formulář první věc na obrazovce.
+  - **Oba selecty při zakládání dostaly popisky** („Tempo", „Jak dlouho potrvá"). Byly to
+    dva holé `<select>` a nedalo se poznat, co je co.
+  - **Odpočet do konce turnaje.** `ends_at` API vracelo odjakživa, klient ho jen nepoužíval,
+    takže hráč netušil, kolik času mu na další kola zbývá. Tiká po vteřině v slotu `timer`,
+    který `stopAll()` uklidí; v poslední minutě přepne na vteřiny.
+  - **Skončený turnaj měl nulovou akci** — jen tabulku a slepý konec. Nabídne založení nového.
+
+  - **Ověřeno:** `npm run test:api` drží 104/104 a celý průchod odehrán v prohlížeči — registrace,
+    lobby, čekárna, bot, hra, výzva přítele, žebříček. Scénář z bugů 1 a 2 (odpovědět a hned
+    zavřít křížkem) reprodukován: konzole čistá, rozcestník zůstal stát.
+
+- **2026-08-30 — Doladěny hlášky, které opakovaly vysvětlení (28 kusů). Zbytek auditu je prokazatelně šum.**
+  Pokračování předchozího zápisu. Ze všech kategorií auditu měla skutečný signál jediná:
+  **`quip_paraf_expl`** — hláška po správné odpovědi nesla tytéž fakty jako `explanation`, takže
+  hráč četl totéž dvakrát (u Grossglockneru dokonce i s ledovcem Pasterze, u Reinheitsgebotu
+  se surovinami i letopočtem). Porušuje to standard z 2026-08-10: **`explanation` nese FAKT navíc,
+  hláška nese REAKCI.** Všech 28 přepsáno tak, aby hláška přidala úhel pohledu, ne další údaj.
+  Kategorie je teď na nule.
+  - **Při přepisu si dávej pozor na `sablona_jako`** — dvě z mých nových hlášek použily „jako by"
+    a počet stoupl ze 74 na 76. Přeformulováno zpátky.
+  - **Cestou nalezen a opraven překlep v datech:** „**catholická** víra" u `de-a-fuggerove`.
+  **Ostatní kategorie jsou prověřený šum — nehoň je znovu:**
+  - **`hlaska_mimo` (476)** měří lexikální překryv hlášky s otázkou, jenže **dobrá hláška se slovům
+    z otázky schválně vyhýbá** — kontrola tedy měří fakticky opak toho, co chceme. Dva vzorky po
+    pěti kusech, ani jeden skutečný nález.
+  - **`sablona_jako` (74)** chytá slovo „jako", ale nalezená přirovnání vtip nesou, nenahrazují
+    („jako by ho někdo polil jahodovým sirupem“). Standard míří na berličku, ne na přirovnání.
+  - **`quip_wrong_opakuje` (138)** — vzorek ukázal hlášky, které správně reagují na konkrétní
+    špatnou odpověď a pointu mají.
+  - **`kids_dlouha_otazka` (78)** — u dětí bývá délka navíc KULISA, která pomáhá („gaučo tráví dny
+    v sedle na pláni zvané pampa. Co si přehazuje přes ramena?“); zkrácení by ubralo oporu.
+  - **`kids_abstraktni` (63)** předpokládá, že sekce Historie/Umění = abstraktní. Na vzorku to byli
+    Horymír se Šemíkem a didgeridoo — pro dítě naopak velmi konkrétní. U obou je to teď poznamenané
+    přímo ve skriptu.
+  **Stav po dnešku: `validate` 0 chyb, `audit` 813 nálezů (samý šum), `lint-irony` 30/30,
+  `test:api` 104/104, `sim-online` sedí se zdokumentovanými hodnotami.**
+
+- **2026-08-30 — Migrace turnajů je od teď SPUSTITELNÝ soubor, ne popis v dokumentaci.**
+  `npm run test:api` padal na „turnaj se založí a rovnou běží" s chybou **`no such table:
+  tournaments`**. Příčina nebyla v kódu: lokální D1 byla naplněná před 2026-08-26, kdy turnaje
+  přibyly, takže jí chyběly všechny tři tabulky i sloupec `games.tournament_id`.
+  - **Neřešeno destruktivním `npm run db:init`**, i když je jen lokální — místo toho vznikla
+    přírůstková migrace [migrations/2026-08-26-turnaje.sql](migrations/2026-08-26-turnaje.sql),
+    která nic nemaže. Doteď byl tenhle postup popsaný jen slovy v zápisu z 2026-08-26; teď je
+    spustitelný a **je to přesně ten soubor, který potřebuje i produkce** (`--remote`).
+  - **Pořadí nasazení zůstává: nejdřív migrace, pak `npm run deploy`.** Nový kód je se starým
+    schématem zpětně kompatibilní, ale `/api/tournament/*` by bez migrace vracely tuhle chybu.
+  - Po migraci **`npm run test:api` → 104 kontrol, vše OK** (souhlasí se zápisem z 2026-08-26)
+    a `npm run sim-online` dává hodnoty shodné se zdokumentovanými (93,1 % vs. 90,0 % při +200).
+  - **Past do budoucna:** lokální databáze se sama nemigruje. Když test padne na „no such table",
+    není to nutně chyba kódu — nejdřív porovnej `sqlite_master` se `schema.sql`.
+
+- **2026-08-30 — Audit otázek měřil zrušené pásmo; opraven. Z 1 822 nálezů zbylo 839 a jedna skutečná vada.**
+  Spuštěn `npm run validate` (0 chyb, upozornění jsou jen chybějící fotky) a `npm run audit`.
+  Audit hlásil 1 822 otázek s nálezem — po prověření se ukázalo, že **většina byla vada testu,
+  ne dat**. Opraveny tři věci v [scripts/audit-questions.js](scripts/audit-questions.js):
+  1. **Kontroly `d1_*` visely na `difficulty === 1` a mluvily o pásmu „6–9".** To pásmo bylo
+     zrušeno 2026-08-14 a `difficulty` od té doby NEZNAMENÁ věk — dětský fond určuje `q.kids`.
+     Kontrola tedy hlásila ~950 nálezů o pásmu, které neexistuje (letopočet v lehké otázce pro
+     dospělé je v pořádku), a **skutečný dětský fond přitom míjela**. Překlíčováno na `q.kids`,
+     kódy přejmenovány na `kids_*`.
+  2. **`kids_letopocet` a `kids_cislo` měřily špatnou věc — po opravě mají obě 0 nálezů.**
+     Letopočet se hlídá jen v ODPOVĚDI, ne v celém textu: rok v zadání je kulisa („v roce 1998
+     v Naganu… jak se tomu přezdívá?“) a dítě ho znát nemusí. Na celý text se chytaly i „Taipei
+     101“ a „přes 350 schodů“. U čísel nestačí číslice kdekoli v odpovědi — chytala „Vokativ
+     (5. pád)“ a „Ponte 25 de Abril“; jde o to, jestli je odpovědí číselný ODHAD.
+     **Všech 11 původních nálezů byly plané poplachy, ověřeno jeden po druhém.**
+  3. **Práh délky dětské otázky 90 → 150 znaků.** Devadesátka byla pro pásmo 6–9 a v dnešním
+     fondu 8–11 sedí přesně na MEDIÁNU (91 znaků), takže označovala 51 % fondu. 150 je zhruba
+     90. percentil, tedy 78 skutečně odlehlých otázek.
+  4. **`hlaska_mimo` porovnává KMENY (5 znaků), ne přesné tvary** — 1 056 → 476. Čeština slova
+     ohýbá, takže hláška „hledej v Kierkegaardovi“ nesdílela s odpovědí „Kierkegaard“ ani jeden
+     token. **Zbylých 476 je ale pořád převážně šum a dál se to ladit nemá:** kontrola měří
+     lexikální překryv, jenže dobrá hláška se slovům z otázky schválně vyhýbá — měří tedy
+     fakticky opak toho, co chceme. Na vzorcích (2× 5–6 kusů) nebyl ani jeden skutečný nález.
+  **Jediná skutečná vada v datech: `cz-q-jirasek-stare-povesti-ceske` a `cz-t-jirasek-stare-povesti-ceske`
+  si navzájem prozrazovaly odpověď.** Obě jsou `!kids`, takže padají do fondu starších i dospělých
+  (`starsi` je podmnožina `dospeli`). První měla v zadání „kniha **Aloise Jiráska**“, což je odpověď
+  druhé; druhá měla v zadání „o **praotci Čechovi, kněžně Libuši**“, což je odpověď první. Prozrazovaly
+  to i hlášky `quip_wrong` a obě měly navíc skoro totožné `explanation` i `more_fact`. Opraveno obojí.
+  - **Poučení pro příští audity:** `duplicita` napříč pásmy je v pořádku (dětský fond je oddělený,
+    hráč obě verze nikdy neuvidí) — hlídat je potřeba shodu **uvnitř jednoho fondu**, a hlavně
+    případ, kdy si dvě otázky navzájem prozrazují odpověď. To dnešní kontrola duplicit neumí;
+    našla ten pár jen náhodou přes podobnost vysvětlení.
+
+- **2026-08-30 — Ironické prompty k obrázkům: nové pole `irony_prompt`, pilot 30 kusů, povinná kontrola před generováním.**
+  Rozjeta výroba ilustrací pro 3 488 otázek bez obrázku (z 3 702). Klíčové rozhodnutí je
+  **pořadí**: nejdřív pilot 30 obrázků, teprve pak dávka na zbytek. Důvod je změřený, ne opatrnický —
+  všechny dnešní pasti v tomhle souboru se našly na jediné dávce 54 obrázků pro Česko a byly
+  **systematické, ne náhodné** (postihly celou kategorii jazykových otázek). Pilot za ~$1 tedy
+  chrání $121 dávku před tím, aby v ní bylo několik set vadných kusů podle jednoho vzoru.
+  - **Pilotní sada je schválně PŘETÍŽENÁ rizikovými kategoriemi**, ne náhodná: 10× jazyk
+    (past se čmáranicí místo písmen), 8× jídlo (past s tvarem), 4× vlajky a symboly, zbytek spread.
+    Náhodný vzorek by tyhle kategorie skoro minul a pilot by nic nedokázal.
+  - **Nové pole `irony_prompt` — `image_prompt` se NEPŘEPISUJE.** To staré je psané pro
+    fotorealistický snímek (má ho 3 284 otázek) a na ironickou ilustraci se použít nedá, ale
+    přepsat ho by byla nevratná ztráta.
+  - **Stylový recept nežije v datech, ale v [scripts/gen-irony-images.js](scripts/gen-irony-images.js).**
+    V `irony_prompt` je jen SCÉNA; styl, zákaz textu a referenční obrázek přidává skript. Jde to
+    tak doladit na jednom místě pro celý fond, místo přepisování tisíců řetězců.
+  - **[scripts/lint-irony-prompts.js](scripts/lint-irony-prompts.js) (`npm run lint-irony`) je povinný
+    krok, ne ozdoba.** Prompt stojí ~$0,003, obrázek podle něj ~$0,034 — vadný prompt tedy zahodí
+    desetinásobek toho, co stál. Kontroluje čtyři zdokumentované pasti: prompt si říká o text
+    (`word`/`letter`/`label`… — s výjimkou `blank`/`empty`, což je naopak žádoucí), jídlo bez popisu
+    TVARU, podoba konkrétní reálné osoby, a chybějící dominanta.
+    **Pozor na falešné poplachy u dominanty:** kontrola hledá fráze typu „fills the frame"; při
+    prvním běhu nahlásila 16 z 30, z toho 8 byla jen mezera v regulárním výrazu (`filling`, `fill`,
+    `centre-frame`). Vždy ověřit obsah, ne jen počet — stejná lekce jako u kontroly diakritiky.
+  - **Prompty pro pilot psal Claude přímo v session, ne přes API.** Na 30 kusů je to rychlejší
+    a zadarmo. API a Batch režim mají smysl až na zbylých ~3 460, kde by to v chatu nešlo;
+    tam vychází Opus 5 na ~$10, Sonnet 5 na ~$4, Haiku 4.5 na ~$2. **Doporučeno Opus 5** —
+    rozdíl je proti $121 za obrázky nula a je to úloha, kde se kvalita modelu pozná (naráz se musí
+    udržet vtip i šest zákazů).
+  - **Past: `JSON.stringify(arr,null,2)` přeformátuje celé soubory otázek.** Zápis 30 polí udělal
+    diff o 36 816 řádcích, protože `data/questions/*.json` má **odsazení 1 mezerou a konce řádků
+    CRLF**. Správně je `JSON.stringify(arr,null,1).replace(/\n/g,"\r\n")` — ověřeno round-tripem,
+    že je to bajt po bajtu shodné s originálem. Po opravě má diff 60 řádků.
+
+- **2026-08-30 — Zemi na glóbu ukazuje POUZE bodová značka. Zvýrazňování tvaru země bylo postaveno a ZAMÍTNUTO.**
+  Hráč nahlásil, že u otázky nepozná, kterou zemi glóbus ukazuje. Následovalo dlouhé kolo pokusů,
+  na jehož konci se vrátil původní stav: **na glóbu je jen tečka (`.qz-beacon`) a pod ním holý
+  název země**. Zápis tu zůstává proto, aby to příští session nezkoušela znovu — a hlavně kvůli
+  změřeným číslům, ze kterých plyne, proč je to slepá ulička.
+
+  **Tvrdá čísla (změřeno, ne odhad):**
+  - `.qz-medal` je 225 CSS px, při DPR 1,5 tedy **337 skutečných pixelů**; po zvětšení stropu 290 px.
+  - Při zoomu `2.25` pokrývá rám ±31° oblouku, takže **Česko je na glóbu široké ~16–20 px**.
+  - `.qz-beacon` má **13 px + 2px prstenec**, tedy zhruba tolik, co celé Česko. Značka tu zemi
+    fakticky zakrývá — ale **žádná úprava dvacetipixelového tvaru nemůže být nápadná**, takže to
+    není chyba značky, ale důsledek měřítka.
+  - `assets/earth.jpg` je **1024×512 a nemá hranice států**. Přiblížení proto nepomůže dvakrát:
+    při zoomu `1.55` se přes 337 px roztahovalo 68 texturových pixelů (5× zvětšení, rozmazané)
+    a zároveň zmizí okolní pobřeží, podle kterých se poloha jedině dá určit.
+
+  **Co všechno se postavilo a proč to spadlo** (pořadí, v jakém to hráč odmítal):
+  1. **Plná korálová výplň s ostrým obrysem 3 px** — „hrana je příliš ostrá"; vektorová čára
+     vypadá na akvarelové malbě jako nalepená samolepka.
+  2. **Korálová šrafura** — „ta červená tam moc nesedí"; korál je na okrové souši cizí těleso.
+  3. **Výplň obrysu ironickou vlajkou `assets/country-{cc}.jpg`** — ve tvaru státu se z ilustrace
+     stane nečitelná šmouha a přebije malbu.
+  4. **Jemná šrafura v barvě popisku (#4a6b64)** — „to není skoro vidět"; je to fakticky barva
+     inkoustových pobřeží mapy, takže s nimi splyne. (Šrafura pokrývala jen ~7 % plochy země.)
+  5. **Cihlová šrafura + „reflektor"** (ztlumit celý glóbus a kolem země ztlumení vymaskovat)
+     **+ silueta země u popisku** — technicky to fungovalo a bylo to konečně vidět, ale hráč
+     to celé zamítl ve prospěch jednoduchosti.
+
+  **Poučení, kdyby to někdo chtěl otevřít znovu:**
+  - Zvětšit zemi jde **dvěma nezávislými pákami** a pletou se: **vzdálenost kamery** (kolik světa
+    je v rámu) a **velikost medailonu** v `quiz.css` (jak velké je to na obrazovce). „Je to moc
+    daleko" řeší obojí, ale „glóbus je moc přiblížený" jen ta první. **Na rozmazání ale doléhají
+    stejně**, protože jde o poměr „pixely obrazovky ku pixelům textury" — zvětšení medailonu není zadarmo.
+  - **ZAMÍTNUTO: ukládat `earth.jpg` ve 2048×1024.** Lanczos upscale žádnou kresbu nedoplní,
+    srovnání dvou náhledů ve skutečném měřítku vyšlo k nerozeznání. Jediná skutečná cesta
+    k ostřejší malbě je **přemalovat texturu ve vyšším rozlišení** (Gemini, recept níž).
+  - Zoom zůstal na `2.15` a medailon na `290 px` — obojí se cestou vyladilo a hráči to vyhovovalo,
+    tak se to nevracelo na původní `2.55` / `220 px`.
+
+  **Co po tom zbylo v repu** (nepoužívané, ale funkční — nemazat bez rozmyslu):
+  - [scripts/build-country-shapes.js](scripts/build-country-shapes.js) + `data/country-shapes.json`
+    (79 kB): obrysy 55 zemí z **Natural Earth 110m**. **Do `dist/` se už nekopírují** (vyřazeno
+    z `JEDNOTLIVE` v [scripts/build-public.js](scripts/build-public.js)).
+  - **Past pro případné oživení: klíčovat se MUSÍ přes `ISO_A2_EH`, ne `ISO_A2`.** Ten má
+    u **Francie, Norska a Tchaj-wanu** hodnotu `-99` (sporné suverenity), takže by tyhle tři země
+    tiše vypadly. Ověřeno taky, že **žádná z 55 zemí nepřekračuje 180. poledník** (Rusko i Fidži
+    mají části jako samostatné prstence) a že díry uvnitř zemí (Lesotho v Jihoafrické republice)
+    přicházejí jako další prstenec, takže se kreslí přes `fill("evenodd")`.
+  - **Ověřeno, že equirektangulární konvence sedí:** obrysy vykreslené vzorcem
+    `x=(lon+180)/360·W`, `y=(90−lat)/180·H` padly na malbu `earth.jpg` přesně (Itálie na botu,
+    Čukotka přetekla na levý okraj). Kdyby to někdo stavěl znovu, tenhle přepočet je správný.
+  - **Zápis z 2026-08-15, že 6 novějších zemí nemá vlajku, je zastaralý** — ověřeno, že
+    `assets/country-{cc}.jpg` existuje pro **všech 55 zemí**.
+
 - **2026-08-29 — Oprava: 3D glóbus u otázky mířil úplně mimo zemi (chyba v náklonu podle šířky).**
   Hráč nahlásil, že glóbus u otázky neukazuje správnou zemi. Příčina: `spinGlobeTo()` v
   [quiz.js](quiz.js) natáčel glóbus kolem svislé osy na správnou délku, ale náklon podle
@@ -77,6 +330,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **Generování musí spustit uživatel u sebe** (PowerShell). Cloudová session Claude Code má
     síťovou politiku, která `image.pollinations.ai`, `generativelanguage.googleapis.com`
     i `ai.google.dev` blokuje (403 od proxy) — ověřeno, neobcházet, nezkoušet znovu.
+    > **Opraveno 2026-08-30:** tvrzení o blokaci `generativelanguage.googleapis.com` už
+    > NEPLATÍ. Ověřeno přímým requestem na ten samý endpoint, který skript používá —
+    > vrátil **400** (neplatný klíč), tedy server odpovídá a síť projde. Generovat tak může
+    > i asistent, pokud má klíč; ten se bere z prostředí nebo z gitignorovaného `.dev.vars`.
   - **Past: skript pro uživatele psát bez zpětných apostrofů** (pokračování řádku), bez
     `"$id.$ext"` uvnitř řetězce a bez zpětného lomítka těsně před uvozovkou — při ručním
     kopírování do Poznámkového bloku se to poškodí a PowerShell spadne na chybu syntaxe.

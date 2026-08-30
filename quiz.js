@@ -251,7 +251,13 @@
       renderer.setPixelRatio(1); renderer.setSize(460,460,false);
       if(THREE.sRGBEncoding!==undefined) renderer.outputEncoding=THREE.sRGBEncoding;
       const scene=new THREE.Scene();
-      const camera=new THREE.PerspectiveCamera(40, 1, 0.1, 100); camera.position.set(0,0,2.55);
+      // POZOR, tohle je jedna ze DVOU nezávislých pák a pletou se:
+      //   - vzdálenost kamery = KOLIK SVĚTA je v rámu (2.3 ≈ ±31° oblouku),
+      //   - velikost medailonu v quiz.css = jak velké je to všechno na obrazovce.
+      // Zemi zvětšíš obojím, ale „glóbus je moc přiblížený" řeší jen tahle. Hodnota je
+      // vyladěná mezi dvěma stížnostmi: na 2.25 byla země moc malá, na 1.95 byl záběr moc těsný —
+      // vyřešeno tak, že záběr zůstal široký a zvětšil se místo toho medailon.
+      const camera=new THREE.PerspectiveCamera(40, 1, 0.1, 100); camera.position.set(0,0,2.15);
       // malovaná textura → matně a rovnoměrně nasvícené (žádný lesk ani ostrý den/noc terminátor),
       // ať glóbus vypadá jako namalovaný papírový míč, ne naleštěná planeta
       scene.add(new THREE.AmbientLight(0xffffff,0.7));
@@ -291,6 +297,8 @@
   function mountGlobeBg(){
     const bg=document.getElementById("qz-globebg"); if(!bg) return;
     initGlobe3d();
+    // Glóbus je sdílený singleton, takže se musí zhasnout zvýraznění z poslední otázky —
+    // na rozcestníku nemá svítit žádná země.
     if(g3 && g3.canvas){ bg.innerHTML=""; bg.appendChild(g3.canvas); g3.auto=true; g3.targetX=0.32; }
   }
 
@@ -360,7 +368,10 @@
     }
     renderModePick();
   }); }
-  function close(){ stopTTS(); clearTimer(); releaseWake(); renderModePick(); }
+  // ZKOnline.stopAll() je tu nutnost, ne úklid navíc: online režim si drží vlastní časovač
+  // otázky a dotazování na soupeře. Bez tohohle volání běžely dál nad odpojeným DOMem a po
+  // vypršení limitu odeslaly odpověď a překreslily rozcestník, který hráč mezitím otevřel.
+  function close(){ stopTTS(); clearTimer(); releaseWake(); if(window.ZKOnline && window.ZKOnline.stopAll) window.ZKOnline.stopAll(); renderModePick(); }
   // „×" je Domů a vrací na výběr režimu — na něm samotném by tedy jen překreslil tutéž obrazovku.
   // Ven z appky vést nemůže: landing.html je zrušená a hra.html je sama domovská stránka
   // (viz komentář na začátku souboru a CLAUDE.md 2026-08-13). Proto se právě tam schovává.

@@ -415,7 +415,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Comparison_of_American_and_British_English",
   "source_card": "gb-jazyk-britvsamer",
   "image_prompt": "Fotorealistický snímek historického slovníku s otevřenými stránkami a ručně psanými poznámkami na okrajích, 16:9",
-  "about": "rozdílech britské a americké angličtiny"
+  "about": "rozdílech britské a americké angličtiny",
+  "irony_prompt": "One large elegant teapot fills the centre of the frame pouring simultaneously into two wildly mismatched vessels - a tiny delicate bone-china cup on one side and an enormous tall takeaway cup on the other - the same tea landing in both. Smaller and subordinate: a folded black umbrella, a baseball cap resting on the table."
  },
  {
   "id": "gb-q-cockney",
@@ -431,7 +432,7 @@
    "Přidávají se francouzská slova",
    "Vynechávají se všechny samohlásky"
   ],
-  "quip_correct": "Stairs se řekne apples and pears - slang navržený tak, aby mu cizinec nerozuměl ani u schodů.",
+  "quip_correct": "Přesně tak. Jazyk vymyšlený proto, aby policista u vedlejšího stolu neměl tušení, o čem je řeč.",
   "quip_wrong": "Chytře vymyšleno, ale ne úplně — slova se nečtou pozpátku ani se nemíchají s francouzštinou, cockney je rým, co musíš znát zpaměti.",
   "explanation": "Cockney rýmovaný slang nahrazuje slovo rýmující se frází — stairs se řekne apples and pears.",
   "source_url": "https://en.wikipedia.org/wiki/Cockney_rhyming_slang",

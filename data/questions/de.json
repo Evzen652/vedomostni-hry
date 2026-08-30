@@ -189,7 +189,7 @@
    "Za špionáž pro nepřítele",
    "Za veřejný projev v parlamentu"
   ],
-  "quip_correct": "Trefa, a je to smutná pravda — pár letáků na chodbě, gestapo ji zatklo a čtyři dny nato byla popravena.",
+  "quip_correct": "Správně — a je to jedno z těch jmen, která se učí právě proto, aby si nikdo nemyslel, že se tehdy nedalo nic dělat.",
   "quip_wrong": "Tentokrát to nebylo ono — Sophie Schollová neutíkala ani nešpehovala, šlo o něco tiššího a odvážnějšího.",
   "explanation": "Sophie Schollová byla 22. února 1943 popravena gilotinou, jen čtyři dny poté, co ji gestapo zatklo za rozdávání protinacistických letáků na univerzitě.",
   "source_url": "https://en.wikipedia.org/wiki/Sophie_Scholl",
@@ -453,7 +453,7 @@
    "5 let",
    "Nikdy nebyl dokončen"
   ],
-  "quip_correct": "Máš pravdu, přesně jak to bylo — bratři Grimmové začali slovník v roce 1838, dokončili ho cizí lidé v roce 1961, jazyk nestárne, lidé ano.",
+  "quip_correct": "Přesně tak. Projekt, který přežil oba své zakladatele, dvě světové války i rozdělené Německo — a pořád byl jen rozdělaný.",
   "quip_wrong": "Mimo, byť rozumná úvaha — slovník nebyl hotový za pár let podle plánu, dokončila ho generace, co bratry nikdy nepotkala.",
   "explanation": "Bratři Grimmové začali pracovat na svém Německém slovníku v roce 1838 a hotový byl teprve o 123 let později, v roce 1961.",
   "source_url": "https://en.wikipedia.org/wiki/Deutsches_W%C3%B6rterbuch",
@@ -475,13 +475,14 @@
    "Ječmen, cukr a kvasnice",
    "Vodu, rýži a chmel"
   ],
-  "quip_correct": "Voda, ječmen, chmel - zákon z roku 1516 a bavorský pivovarník ho cituje zpaměti dodnes.",
+  "quip_correct": "Trefa. Nejstarší dodnes citovaný předpis o jídle na světě, a je kratší než složení běžného rohlíku.",
   "quip_wrong": "Tentokrát vedle — med, cukr a rýže do toho nepatří, recept z roku 1516 měl přesně tři suroviny, ani jednu navíc.",
   "explanation": "Bavorský zákon o čistotě piva Reinheitsgebot platil od roku 1516 a povoloval při vaření piva jen vodu, ječmen a chmel.",
   "source_url": "https://en.wikipedia.org/wiki/Reinheitsgebot",
   "source_card": "de-jidlo-reinheitsgebot",
   "image_prompt": "Fotorealistický snímek tradiční německé sklenice piva se zlatým pivem a pěnou na dřevěném stole, pivovar v pozadí, teplé světlo, 16:9",
-  "about": "Reinheitsgebotu"
+  "about": "Reinheitsgebotu",
+  "irony_prompt": "A stern bearded brewmaster fills the frame guarding a huge foaming beer stein, holding up exactly three fingers with absolute conviction, while with the other hand he firmly shows a single hopeful lemon the way out. Smaller and subordinate: a barley sheaf, a hop vine curling round a post, a copper tap."
  },
  {
   "id": "de-q-chlebova-kultura",
@@ -851,7 +852,7 @@
    "Mají výhradně solární osvětlení",
    "Jsou stavěny bez asfaltového povrchu"
   ],
-  "quip_correct": "Třetina dálnic bez limitu, a debata o rychlosti se v Německu táhne desítky let.",
+  "quip_correct": "Přesně. Jediné dálnice v Evropě, kde řidič nehlídá radar, ale zpětné zrcátko.",
   "quip_wrong": "Nedopadlo to — zdarma jsou jen osobní auta, kamiony platí, a hlavní specialita je jinde.",
   "explanation": "Přibližně třetina německých dálnic nemá pevné omezení rychlosti — platí tam doporučená rychlost 130 km/h. Debata o celoplošném limitu se vede v Německu už desítky let bez výsledku.",
   "about": "německých dálnicích",
@@ -871,7 +872,7 @@
    "Každý sud musí být označen jménem sládka a rokem výroby",
    "Pivo se smí prodávat jen v létě, aby nezamrzlo ve sklepích"
   ],
-  "quip_correct": "Zákon z roku 1516 - a kvasnice se do seznamu dostaly až o tři století později, když je věda vůbec objevila.",
+  "quip_correct": "Bod je tvůj. Zákon o čistotě, který vznikl mimo jiné proto, aby pivovary přestaly pekařům vykupovat obilí na chleba.",
   "quip_wrong": "Logická úvaha, ale mimo — mniši pivo vařili, zákon byl ale světský a předepisoval suroviny, ne výrobce.",
   "explanation": "Reinheitsgebot vydal bavorský vévoda Vilém IV. v roce 1516. Kvasnice se do zákonem povoleného seznamu dostaly až o tři staletí později, když vědci zjistili, že vůbec existují.",
   "about": "Reinheitsgebotu",
@@ -931,7 +932,7 @@
    "Vznikla jako levná náhrada za nedostupné hovězí v poválečném zásobování",
    "Vynalezl ji tureckýimmigrantský kuchař v 70. letech"
   ],
-  "quip_correct": "Trefa, a suverénní — 800 milionů porcí ročně a vlastní muzeum, Herta Heuwer roku 1949 netušila, co smíchává.",
+  "quip_correct": "Trefa. Národní jídlo, které vzniklo z toho, co zbylo po cizí armádě — a Berlín to nese jako vyznamenání.",
   "quip_wrong": "Nesedí to geograficky — Hamburk má taky currywurst, ale recept vznikl v Berlíně, a u zrodu stála žena.",
   "explanation": "Herta Heuwer si nechala recept na omáčku patentovat v roce 1959. Dnes se v Německu sní přes 800 milionů porcí currywurstu ročně a v Berlíně má vlastní muzeum.",
   "about": "currywurstu",
@@ -951,9 +952,9 @@
    "Největší středověkou knihovnu, která přežila všechny války",
    "Systém obchodních cest, ze kterého vzešla dnešní německá dálniční síť"
   ],
-  "quip_correct": "Bod jde za tebou, zaslouženě — sociální bydlení od roku 1521, nájemné 88 centů ročně, podmínka: tři denní modlitby za rodinu Fuggerů.",
+  "quip_correct": "Zaslouženě. Rodina, která zbohatla na půjčkách císařům, a nejdéle jí vydrželo právě to, co rozdala.",
   "quip_wrong": "Vedle, i když sympatický odhad — nemocnice ani knihovny to nejsou, Fuggerové postavili něco, co přežilo 500 let.",
-  "explanation": "Jakob Fugger 'Bohatý' dal v roce 1521 postavit 67 domů pro chudé augsburské rodiny. Podmínky dodnes: catholická víra, bezúhonnost a tři denní modlitby za rodinu Fuggerů. Nájemné: 88 centů ročně.",
+  "explanation": "Jakob Fugger 'Bohatý' dal v roce 1521 postavit 67 domů pro chudé augsburské rodiny. Podmínky dodnes: katolická víra, bezúhonnost a tři denní modlitby za rodinu Fuggerů. Nájemné: 88 centů ročně.",
   "about": "Fuggerech",
   "image_prompt": "A painterly watercolor illustration of the Fuggerei social housing in Augsburg with old cobblestone streets, vintage travel journal style"
  },

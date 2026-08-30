@@ -19,3 +19,7 @@ data/d1-seed.sql
 
 # sestavuje se z korene pres npm run build (viz scripts/build-public.js)
 dist/
+
+# stav dávkového generování obrázků (odeslat dnes, vyzvednout zítra)
+.batch-irony.json
+irony-prompts.log

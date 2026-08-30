@@ -6,6 +6,8 @@
   "scripts": {
     "validate": "node scripts/validate-data.js",
     "audit": "node scripts/audit-questions.js",
+    "lint-irony": "node scripts/lint-irony-prompts.js",
+    "gen-irony": "node scripts/gen-irony-images.js",
     "sim-online": "node scripts/sim-online.js",
     "dev": "wrangler pages dev",
     "db:seed": "node scripts/seed-d1.js",
