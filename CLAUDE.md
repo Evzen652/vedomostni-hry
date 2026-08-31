@@ -20,6 +20,33 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-31 — Registrace: dva sloupce na desktopu a e-mail se nabízí HNED, ne až v Účtu.**
+  Hráč nahlásil, že obrazovka vypadá „jen pro velikost mobilu". Měl pravdu a příčina byla
+  konkrétní: `.zk-wrap` má strop **640 px**, což je správně pro lobby s dlaždicemi, ale
+  registrace pak byla na širokém monitoru úzký proužek uprostřed.
+  - **Řešeno výhradně CSS.** V HTML jdou prvky za sebou stejně jako dřív (obrázek → nadpis →
+    formulář), přibyly jen dva obaly. Od **900 px** — táž hranice, na které se překlápí hrací
+    obrazovka — se karta rozloží na obrázek s nadpisem vlevo a formulář vpravo.
+    **Na mobilu se nezměnilo nic**, ověřeno na 375 px: jeden sloupec, nic nepřetéká.
+  - **Pole formuláře nejsou přes celý sloupec** (`max-width: 420px`). Roztažený PIN přes
+    půl monitoru se čte hůř a vypadá jako chyba, ne jako design.
+  - **E-mail v registraci ZMĚKČUJE rozhodnutí z 2026-08-25**, které říkalo „registrace se
+    nemění, e-mail se doplňuje až potom v Účtu". Zůstává **nepovinný** a slouží pořád jedinému
+    účelu — obnově zapomenutého PINu. Důvod změny: kdo si ho doplní až potom, to typicky
+    neudělá, a při zapomenutém PINu přijde o účet i s ratingem a historií. Nabídnout ho ve
+    chvíli, kdy hráč PIN vymýšlí, je jediný okamžik, kdy to dává smysl.
+  - **U dětského pásma se popisek i placeholder přepnou na „e-mail rodiče".** Dítě e-mail
+    obvykle nemá a odkaz na obnovu má stejně dojít dospělému. Proto taky `users.email`
+    schválně **nemá `UNIQUE`** — rodič musí smět mít tutéž adresu u víc dětí.
+  - **Prázdný e-mail musí projít stejně jako chybějící klíč.** Formulář prázdné pole neposílá
+    vůbec, ale kdyby ho někdo poslal jako `""`, odmítnutí by z nepovinného pole udělalo
+    povinné. Hlídají to tři nové kontroly v `test:api` (**109 místo 104**).
+  - **`landing-hero.jpg` je dědictví po `landing.html` a je v původním „hezkém" stylu**, ne
+    v ironickém, kterým appka jinak mluví — a na desktopu ho je teď vidět mnohem víc.
+    Náhrada má napsaný prompt `auth-hero` v `data/ui-irony-prompts.json` (podání ruky přes
+    rovník glóbu) a **cesta k obrázku je v `online.js` jediná konstanta `AUTH_HERO`**, takže
+    po vygenerování je to změna na jednom řádku. Nevygenerováno: kredit Gemini je vyčerpaný.
+
 - **2026-08-31 — Obsah jde konečně do běžící databáze BEZ jejího smazání (`npm run db:sync`).**
   Zjištěno cestou: `seed-d1.js` skládá obyčejné `INSERT`, takže projde jedině na prázdné
   tabulce — a jediná cesta, jak ho použít, byl `db:init`, který začíná `DROP TABLE`.

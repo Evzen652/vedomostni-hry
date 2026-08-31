@@ -17,6 +17,14 @@ window.ZKOnline = (function () {
   var S = {};
   var timer = null, poll = null;
 
+  // Obrázek na kartě přihlášení i obnovy PINu. Je to jediné místo, kde se mění —
+  // `landing-hero.jpg` je dědictví po landing.html a je v původním „hezkém" stylu,
+  // ne v ironickém, kterým appka jinak mluví. Na desktopu je od 2026-08-31 v celém
+  // sloupci, takže je ho vidět víc než dřív. Náhrada má připravený prompt `auth-hero`
+  // v data/ui-irony-prompts.json; až doběhne `gen-irony-images.js --ui`, přepíše se
+  // tahle jediná konstanta na "assets/auth-hero.jpg".
+  var AUTH_HERO = "assets/landing-hero.jpg";
+
   // ---------------------------------------------------------------- pomocníci
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -131,7 +139,7 @@ window.ZKOnline = (function () {
     var podtitul = vyzva
       ? "Někdo tě vyzval na souboj — přihlas se a jde se hrát."
       : isReg
-        ? "Stačí přezdívka a PIN. E-mail můžeš doplnit až potom v Účtu."
+        ? "Stačí přezdívka a PIN. E-mail je nepovinný — je jen pro případ, že PIN zapomeneš."
         : "Vítej zpátky. Zadej přezdívku a PIN.";
     var PASMA = [
       { id: "deti", t: "Děti", fb: "🧒" },
@@ -144,10 +152,18 @@ window.ZKOnline = (function () {
       '<div class="qz-screen qz-setup zk-wrap zk-auth">' +
       backBar("Zpět", leave) +
       '<div class="zk-authcard">' +
-        '<img class="zk-authhero" src="assets/landing-hero.jpg" alt="" data-fb="hide">' +
+      // Dva sloupce, ale jen přes CSS: v HTML jde pořadí za sebou přesně jako dřív,
+      // takže na mobilu vypadá obrazovka stejně a od 900 px se obrázek s nadpisem
+      // odsune vlevo a formulář vedle něj. Bez tohohle byla registrace na širokém
+      // monitoru úzký proužek uprostřed — .zk-wrap má strop 640 px.
+      '<div class="zk-authgrid">' +
+      '<div class="zk-authside">' +
+        '<img class="zk-authhero" src="' + AUTH_HERO + '" alt="" data-fb="hide">' +
         '<div class="zk-authtag">Online</div>' +
         "<h2>" + (isReg ? "Nový hráč" : "Přihlášení") + "</h2>" +
         '<div class="zk-sub">' + esc(podtitul) + "</div>" +
+      "</div>" +
+      '<div class="zk-authmain">' +
         (msg ? '<div class="zk-autherr">' + errBox(msg) + "</div>" : "") +
         '<div class="zk-form">' +
           (isReg
@@ -169,6 +185,19 @@ window.ZKOnline = (function () {
             '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="jak ti mají říkat" value="' +
               esc(stav.nick || "") + '">' +
           "</div>" +
+          // E-mail je pořád NEPOVINNÝ a slouží jedinému účelu: obnově zapomenutého PINu
+          // (rozhodnutí 2026-08-25). Nově se ale nabízí rovnou při zakládání, ne až
+          // v Účtu — kdo ho vyplní až po tom, co PIN zapomněl, má smůlu.
+          (isReg
+            ? '<div class="zk-field">' +
+                '<div class="qz-fieldlabel">E-mail <span class="zk-opt">nepovinný</span></div>' +
+                '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="kdyby ti PIN vypadl z hlavy" value="' +
+                  esc(stav.email || "") + '">' +
+                '<div class="qz-setnote zk-mailnote" id="zk-mailnote">' +
+                  "Jediné, k čemu ho použijeme, je obnova zapomenutého PINu. Můžeš ho nechat prázdný " +
+                  "a doplnit později v Účtu.</div>" +
+              "</div>"
+            : "") +
           '<div class="zk-field">' +
             '<div class="zk-labelrow">' +
               '<div class="qz-fieldlabel">PIN (4 až 8 číslic)</div>' +
@@ -186,6 +215,8 @@ window.ZKOnline = (function () {
           '<button type="button" class="zk-linkbtn" id="zk-switch">' +
             (isReg ? "Přihlas se" : "Založ si ho") + "</button>" +
         "</div>" +
+      "</div>" +   // .zk-authmain
+      "</div>" +   // .zk-authgrid
       "</div></div>";
 
     // Chybějící obrázek nesmí nechat v kartě díru ani rozbitou ikonu.
@@ -221,6 +252,18 @@ window.ZKOnline = (function () {
           var note = body.querySelector("#zk-nicknote");
           wrap.style.display = band === "deti" ? "none" : "";
           note.style.display = band === "deti" ? "" : "none";
+          // U dětského pásma je to adresa rodiče — dítě e-mail obvykle nemá a odkaz
+          // na obnovu PINu má stejně přijít někomu dospělému. Sloupec `users.email`
+          // proto schválně NEMÁ UNIQUE: rodič smí mít tutéž adresu u víc dětí.
+          var mail = body.querySelector("#zk-email");
+          var mnote = body.querySelector("#zk-mailnote");
+          if (mail && mnote) {
+            var deti = band === "deti";
+            mail.placeholder = deti ? "e-mail rodiče" : "kdyby ti PIN vypadl z hlavy";
+            mnote.textContent = deti
+              ? "Sem patří adresa rodiče. Použijeme ji jen na obnovu zapomenutého PINu a klidně ji nech prázdnou."
+              : "Jediné, k čemu ho použijeme, je obnova zapomenutého PINu. Můžeš ho nechat prázdný a doplnit později v Účtu.";
+          }
         });
       });
       if (predvolba) {
@@ -250,10 +293,15 @@ window.ZKOnline = (function () {
       var nick = band === "deti" ? "" : ((body.querySelector("#zk-nick") || {}).value || "");
       var pin = body.querySelector("#zk-pin").value || "";
       var path = isReg ? "/auth/register" : "/auth/login";
+      var mailEl = body.querySelector("#zk-email");
+      var email = mailEl ? mailEl.value.trim() : "";
       var payload = isReg ? { band: band, pin: pin, nick: nick } : { nick: nick, pin: pin };
+      // Prázdný e-mail se neposílá vůbec, ať ho server nemusí odlišovat od vyplněného.
+      if (isReg && email) payload.email = email;
       req(path, { method: "POST", body: payload }).then(function (r) {
         if (r.status !== 200 && r.status !== 201) {
-          return renderAuth(mode, (r.body && r.body.error) || "Nepovedlo se.", { band: band, nick: nick });
+          // Po chybě se vrací i vyplněný e-mail — jinak by ho hráč po překlepu v PINu psal znovu.
+          return renderAuth(mode, (r.body && r.body.error) || "Nepovedlo se.", { band: band, nick: nick, email: email });
         }
         token.set(r.body.token);
         S.me = r.body;
@@ -450,7 +498,7 @@ window.ZKOnline = (function () {
       '<div class="qz-screen qz-setup zk-wrap zk-auth">' +
       backBar("Zpět", function () { zahodOdkaz(); renderAuth("login"); }) +
       '<div class="zk-authcard">' +
-        '<img class="zk-authhero" src="assets/landing-hero.jpg" alt="" data-fb="hide">' +
+        '<img class="zk-authhero" src="' + AUTH_HERO + '" alt="" data-fb="hide">' +
         '<div class="zk-authtag">Obnova PINu</div>' +
         "<h2>Nový PIN</h2>" +
         '<div class="zk-sub">Přišel jsi z odkazu v e-mailu. Zvol si nový PIN — starý přestane ' +

@@ -427,6 +427,27 @@ async function playAll(token, gameId, total, ms = 2000) {
   const me0 = await api('/api/me', { token: M.token });
   ok(me0.body.email === null, 'nový účet e-mail nemá');
 
+  // E-mail jde od 2026-08-31 zadat rovnou při registraci. Zůstává NEPOVINNÝ, takže
+  // se hlídají obě strany: že vyplněný projde a uloží se, i že bez něj účet vznikne.
+  const RegMail = await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'RegMail_' + uniq(), pin: '1234', band: 'dospeli', email: '  Rodic@Example.COM ' } });
+  ok(RegMail.status === 201, 'registrace s e-mailem projde, dostal ' + RegMail.status);
+  const meReg = await api('/api/me', { token: RegMail.body.token });
+  ok(meReg.body.email === 'ro***@example.com',
+     'e-mail z registrace se uloží zbavený mezer a malými písmeny: ' + meReg.body.email);
+
+  const RegSpatny = await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'RegBad_' + uniq(), pin: '1234', band: 'dospeli', email: 'tohle-neni-mail' } });
+  ok(RegSpatny.status === 400, 'nesmyslný e-mail registraci odmítne, dostal ' + RegSpatny.status);
+
+  // Prázdný řetězec musí projít stejně jako chybějící klíč — formulář ho tak posílá,
+  // když hráč pole nechá být, a odmítnutí by z nepovinného pole udělalo povinné.
+  const RegPrazdny = await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'RegEmpty_' + uniq(), pin: '1234', band: 'dospeli', email: '' } });
+  ok(RegPrazdny.status === 201, 'prázdný e-mail registraci nezablokuje, dostal ' + RegPrazdny.status);
+  ok((await api('/api/me', { token: RegPrazdny.body.token })).body.email === null,
+     'účet založený s prázdným e-mailem ho v /me nemá');
+
   const spatnyPin = await api('/api/auth/email', { method: 'PUT', token: M.token,
     body: { email: 'rodic@example.com', pin: '0000' } });
   ok(spatnyPin.status === 401, 'e-mail nejde nastavit bez správného PINu, dostal ' + spatnyPin.status);
