@@ -117,14 +117,17 @@
     { id:"antarctica", name:"Antarktida",      emoji:"🐧" },
   ];
   // sekce („specifikace") — pořadí a ikony jako u karet na glóbu
-  // „Symboly" a „Zajímavosti" přibyly 2026-08-30: v datech existovaly odjakživa, ale nebyly
-  // v tomhle seznamu, takže je výběr témat NENABÍZEL a 536 otázek (každá sedmá) šlo potkat
-  // jen přes „Vybrat vše". Zbytek rozdílu vyřešilo sjednocení názvů v datech
-  // (scripts/normalize-sections.js) — „Kultura" vs. „Kultura & tradice" byla dvě jména pro totéž.
-  const SECTION_ORDER = ["Místa","Příroda","Lidé","Kultura & tradice","Umění","Sport","Jazyk & slova","Jídlo","Historie","Symboly","Zajímavosti"];
-  const SECTION_EMOJI = { "Místa":"📍","Příroda":"🌿","Lidé":"👥","Kultura & tradice":"🎭","Umění":"🎨","Sport":"🏆","Jazyk & slova":"🔤","Jídlo":"🍽️","Historie":"🏛️","Symboly":"🚩","Zajímavosti":"💡" };
+  // TENHLE SEZNAM MUSÍ POKRÝT VŠECHNY HODNOTY q.section v datech. Co v něm chybí,
+  // výběr témat nenabídne a je to dosažitelné jen přes „Vybrat vše" — přesně tak
+  // 2026-08-30 vyšlo najevo, že 536 otázek (každá sedmá) nešlo potkat vůbec.
+  // Hlídá to `npm run test:offline`.
+  // „Symboly" a „Zajímavosti" tu byly od 2026-08-30 do 2026-09-01; pak se rozpustily
+  // zpátky mezi zbylých devět (scripts/merge-sections.js), protože to byly nejmenší
+  // sekce fondu a „Zajímavosti" byla přiznaně sběrná škatulka.
+  const SECTION_ORDER = ["Místa","Příroda","Lidé","Kultura & tradice","Umění","Sport","Jazyk & slova","Jídlo","Historie"];
+  const SECTION_EMOJI = { "Místa":"📍","Příroda":"🌿","Lidé":"👥","Kultura & tradice":"🎭","Umění":"🎨","Sport":"🏆","Jazyk & slova":"🔤","Jídlo":"🍽️","Historie":"🏛️" };
   // slugy pro ilustrace (assets/section-{slug}.jpg) — obrázek nahradí emoji, jakmile existuje
-  const SECTION_SLUG = { "Místa":"mista","Příroda":"priroda","Lidé":"lide","Kultura & tradice":"kultura","Umění":"umeni","Sport":"sport","Jazyk & slova":"jazyk","Jídlo":"jidlo","Historie":"historie","Symboly":"symboly","Zajímavosti":"zajimavosti" };
+  const SECTION_SLUG = { "Místa":"mista","Příroda":"priroda","Lidé":"lide","Kultura & tradice":"kultura","Umění":"umeni","Sport":"sport","Jazyk & slova":"jazyk","Jídlo":"jidlo","Historie":"historie" };
   // zobrazovaný název dlaždice/drobečku — jen kosmetika. Klíč "Místa" zůstává beze změny,
   // protože je to zároveň hodnota q.section u 1279 otázek napříč všemi zeměmi; přejmenovat
   // by se smělo jen tohle popisné jméno, ne samotný klíč, jinak dlaždice ztratí napojení na data.
@@ -650,7 +653,9 @@
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>${esc(contLabel)} | Vyber země</h2>
-      <div class="qz-tiles">${allCcTile(hasSome)}${tiles}</div>
+      <!-- qz-tiles-cc: jediná mřížka v appce, která má desítky dlaždic (56 zemí).
+           Na širokém monitoru se kvůli tomu rozšiřuje víc než ostatní obrazovky. -->
+      <div class="qz-tiles qz-tiles-cc">${allCcTile(hasSome)}${tiles}</div>
       ${hasSome ? `<div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cc-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>` : ""}
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderContinentPick);

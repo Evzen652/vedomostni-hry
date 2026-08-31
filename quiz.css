@@ -292,6 +292,35 @@
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-t { font-size: 18px; }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-sub { font-size: 13px; }
 }
+/* Výběrové obrazovky na širokém monitoru --------------------------------------
+   Strop #qz-body (980 px) dělal ze všech tří výběrů úzký proužek uprostřed
+   a dva prázdné pruhy po stranách. Rozšiřují se proto VŠECHNY .qz-pick.
+
+   Práh je 1300 px, takže se to nemůže dotknout telefonu ani tabletu — ty se
+   pod něj vejdou i na šířku (iPad 1024). `:has()` v nepodporujícím prohlížeči
+   jen neuplatní a zůstane dnešní stav, nic se nerozbije.
+
+   Co se ZÁMĚRNĚ nerozšiřuje: hrací obrazovka, výsledky a formuláře (nastavení
+   párty, sólo start, online). Dlouhá řádka textu se čte hůř — v 1720px sloupci
+   by měla přes 120 znaků — a fotky u otázek jsou ~1200 px široké, takže by na
+   dvojnásobné šířce změkly. Ten strop tam není omylem. */
+@media (min-width: 1300px) {
+  #qz-body:has(.qz-pick) { width: min(1460px, 100%); }
+  /* Země: 56 dlaždic, těch chceme na řádek co nejvíc.
+     Dvě třídy schválně: `.qz-tiles:not(.qz-tiles-sec)` výš má strop 940 px
+     a stejnou specificitu, takže samotné `.qz-tiles-cc` by se neuplatnilo. */
+  .qz-tiles.qz-tiles-cc { max-width: 100%; }
+  /* Kontinenty: 8 dlaždic zůstává 4+4, jen větších. Při volných sloupcích by
+     z toho bylo 6+2 nebo 7+1, což vypadá jako chyba sazby, ne jako nabídka. */
+  .qz-pick .qz-tiles:not(.qz-tiles-cc):not(.qz-tiles-sec) {
+    max-width: 1180px; grid-template-columns: repeat(4, 1fr);
+  }
+  /* Témata: 10 dlaždic zůstává 5+5 ze stejného důvodu, jen se roztáhnou. */
+  .qz-tiles-sec { max-width: 1240px; }
+}
+@media (min-width: 1700px) {
+  #qz-body:has(.qz-pick) { width: min(1720px, 100%); }
+}
 /* úvodní obrazovka: velký točící se glóbus za kartami režimů */
 .qz-modepick { position: relative; }
 .qz-globebg { position: absolute; inset: 0; margin: auto; width: min(500px, 78%); height: min(500px, 78%);
@@ -497,6 +526,23 @@
      obsahu odsadí jen první řádek, zalomený druhý řádek pak začínal víc vlevo (bug). */
   .qz-play .qz-ans { grid-template-columns: 1fr; gap: 20px; }
   .qz-play .qz-ans .qz-a { text-align: left; justify-content: flex-start; padding-left: 32px; }
+}
+
+/* Hrací obrazovka na širokém monitoru (2026-09-01) --------------------------
+   Ve sloupci 980 px zbývalo na monitoru 1920 přes 400 px prázdna po každé straně.
+   Strop je 1460, ne „co nejvíc", a obojí je změřené, ne odhadnuté:
+
+   1. DÉLKA ŘÁDKU. Při 980 px má otázka ~65 znaků na řádek, což je pásmo nejlepší
+      čitelnosti; při 1720 px přes 120 znaků a oko hůř trefí začátek dalšího řádku.
+      U kvízu, kde se čte pod časovým limitem, to není kosmetika. 1460 dá ~90 znaků.
+   2. OSTROST FOTEK. `img/{id}.jpg` je široká 1200 px. Ve sloupci 1460 vychází na
+      rám ~700 px, což retina displej (DPR 2 → potřebuje 1400) ještě unese. Při
+      1720 px by rám měl ~840 px a fotka by na hustém displeji viditelně změkla.
+
+   Formuláře (.qz-setup), výsledky (.qz-end) ani online (.zk-wrap) se nerozšiřují —
+   ty mají vlastní, užší stropy z dobrých důvodů. */
+@media (min-width: 1300px) {
+  #qz-body:has(.qz-play) { width: min(1460px, 100%); }
 }
 
 /* ---- přístupnost ----
