@@ -20,6 +20,31 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-31 — Obsah jde konečně do běžící databáze BEZ jejího smazání (`npm run db:sync`).**
+  Zjištěno cestou: `seed-d1.js` skládá obyčejné `INSERT`, takže projde jedině na prázdné
+  tabulce — a jediná cesta, jak ho použít, byl `db:init`, který začíná `DROP TABLE`.
+  **Každá nová otázka by tedy na produkci stála smazání účtů, ratingu i rozehraných her.**
+  Nikdo si toho nevšiml, protože se dosud nasazovalo jen do prázdné databáze.
+  - **[scripts/sync-d1-questions.js](scripts/sync-d1-questions.js) vyrábí `data/d1-sync.sql`
+    s `ON CONFLICT(id) DO UPDATE`** — nová otázka se vloží, změněný text se přepíše,
+    a **`rating` otázky zůstane**, protože ten patří databázi (počítá se z úspěšnosti hráčů),
+    ne datům. Bez DROP, bez DELETE. Ověřeno na lokální D1: 3 702 → 3 742 otázek, přitom
+    **207 účtů a 407 her beze změny** a žádný rating nepřepsaný.
+  - **`npm run db:sync -- --check`** porovná id v databázi s daty a vypíše, co je navíc.
+    Není to úklid pro úklid: po přejmenování pěti id jich v databázi zůstalo pět starých
+    vedle pěti nových, takže by **online tutéž otázku losovalo dvakrát**.
+  - **Poučení o pořadí, zaplacené hned:** id se musí přejmenovat **nejdřív v databázi**
+    (`UPDATE questions SET id=…`) a teprve pak sesynchronizovat data. Obráceně sync nové id
+    vloží, staré zůstane, `UPDATE` už neprojde kvůli primárnímu klíči — a zpátky vede jen
+    `DELETE`, jenže na starý řádek můžou odkazovat `seen_questions` a `games.question_ids`.
+    Lokálně na těch pět ukazovaly dva záznamy o zobrazení a jedna hra.
+  - **Guard v SQL napsat nejde** a skript to netvrdí: `games.question_ids` je JSON pole,
+    takže na něj `JOIN` neudělám. `--check` proto vypíše dotazy k ručnímu ověření, ne
+    „bezpečný" `DELETE`, který by bezpečný nebyl.
+  - **Produkční D1 je pozadu** (naplněná 2026-08-25, tedy před sjednocením sekcí i před
+    dnešními 40 otázkami). Pořadí při nasazení: `migrations/2026-08-30-sekce.sql`,
+    pak `db:sync --remote`, pak `npm run deploy`.
+
 - **2026-08-31 — Id otázky musí být ASCII; pět jich mělo diakritiku, protože slug vznikl z české věty.**
   `id` není jen klíč — je z něj i **název souboru `img/{id}.jpg`** a kus URL. Pět otázek mělo
   v id háčky a čárky (`de-k-preclík`, `pe-q-fútbol`, `it-a-umelecke-hnutí`…), zbylých 3 737 ne.

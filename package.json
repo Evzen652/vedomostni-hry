@@ -23,7 +23,8 @@
     "test:api": "node scripts/test-api.js",
     "db:init:remote": "npm run db:seed && wrangler d1 execute zemekviz --remote --file=schema.sql && wrangler d1 execute zemekviz --remote --file=data/d1-seed.sql",
     "deploy": "npm run build && wrangler pages deploy dist --project-name zemekviz",
-    "build": "node scripts/build-public.js"
+    "build": "node scripts/build-public.js",
+    "db:sync": "node scripts/sync-d1-questions.js"
   },
   "devDependencies": {
     "wrangler": "^4.125.0"
