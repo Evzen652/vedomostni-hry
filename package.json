@@ -6,6 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate-data.js",
     "audit": "node scripts/audit-questions.js",
+    "test:offline": "node scripts/test-offline.js",
     "lint-irony": "node scripts/lint-irony-prompts.js",
     "gen-irony": "node scripts/gen-irony-images.js",
     "sim-online": "node scripts/sim-online.js",

@@ -117,10 +117,14 @@
     { id:"antarctica", name:"Antarktida",      emoji:"🐧" },
   ];
   // sekce („specifikace") — pořadí a ikony jako u karet na glóbu
-  const SECTION_ORDER = ["Místa","Příroda","Lidé","Kultura & tradice","Umění","Sport","Jazyk & slova","Jídlo","Historie"];
-  const SECTION_EMOJI = { "Místa":"📍","Příroda":"🌿","Lidé":"👥","Kultura & tradice":"🎭","Umění":"🎨","Sport":"🏆","Jazyk & slova":"🔤","Jídlo":"🍽️","Historie":"🏛️" };
+  // „Symboly" a „Zajímavosti" přibyly 2026-08-30: v datech existovaly odjakživa, ale nebyly
+  // v tomhle seznamu, takže je výběr témat NENABÍZEL a 536 otázek (každá sedmá) šlo potkat
+  // jen přes „Vybrat vše". Zbytek rozdílu vyřešilo sjednocení názvů v datech
+  // (scripts/normalize-sections.js) — „Kultura" vs. „Kultura & tradice" byla dvě jména pro totéž.
+  const SECTION_ORDER = ["Místa","Příroda","Lidé","Kultura & tradice","Umění","Sport","Jazyk & slova","Jídlo","Historie","Symboly","Zajímavosti"];
+  const SECTION_EMOJI = { "Místa":"📍","Příroda":"🌿","Lidé":"👥","Kultura & tradice":"🎭","Umění":"🎨","Sport":"🏆","Jazyk & slova":"🔤","Jídlo":"🍽️","Historie":"🏛️","Symboly":"🚩","Zajímavosti":"💡" };
   // slugy pro ilustrace (assets/section-{slug}.jpg) — obrázek nahradí emoji, jakmile existuje
-  const SECTION_SLUG = { "Místa":"mista","Příroda":"priroda","Lidé":"lide","Kultura & tradice":"kultura","Umění":"umeni","Sport":"sport","Jazyk & slova":"jazyk","Jídlo":"jidlo","Historie":"historie" };
+  const SECTION_SLUG = { "Místa":"mista","Příroda":"priroda","Lidé":"lide","Kultura & tradice":"kultura","Umění":"umeni","Sport":"sport","Jazyk & slova":"jazyk","Jídlo":"jidlo","Historie":"historie","Symboly":"symboly","Zajímavosti":"zajimavosti" };
   // zobrazovaný název dlaždice/drobečku — jen kosmetika. Klíč "Místa" zůstává beze změny,
   // protože je to zároveň hodnota q.section u 1279 otázek napříč všemi zeměmi; přejmenovat
   // by se smělo jen tohle popisné jméno, ne samotný klíč, jinak dlaždice ztratí napojení na data.
@@ -372,6 +376,29 @@
   // otázky a dotazování na soupeře. Bez tohohle volání běžely dál nad odpojeným DOMem a po
   // vypršení limitu odeslaly odpověď a překreslily rozcestník, který hráč mezitím otevřel.
   function close(){ stopTTS(); clearTimer(); releaseWake(); if(window.ZKOnline && window.ZKOnline.stopAll) window.ZKOnline.stopAll(); renderModePick(); }
+
+  // Odpovídání z klávesnice: 1–4 nebo A–D, Enter/mezera posune dál. Bez toho šlo hrát
+  // jen myší nebo protabováním čtyř tlačítek u každé otázky. Ve školním režimu, kde se
+  // hra promítá a ovládá se od katedry, je to rozdíl mezi použitelným a nepoužitelným.
+  document.addEventListener("keydown", e => {
+    if(e.ctrlKey || e.altKey || e.metaKey) return;
+    const cil = e.target;
+    if(cil && (cil.tagName === "INPUT" || cil.tagName === "TEXTAREA" || cil.tagName === "SELECT" || cil.isContentEditable)) return;
+    const box = body.querySelector("#qz-box"); if(!box) return;
+
+    if(e.key === "Enter" || e.key === " "){
+      // dál se posouvá jen tehdy, když už je odpovězeno — jinak by mezera omylem přeskočila otázku
+      const dal = body.querySelector("#qz-next");
+      if(dal && S.answered){ e.preventDefault(); dal.click(); }
+      return;
+    }
+    let i = -1;
+    if(/^[1-4]$/.test(e.key)) i = +e.key - 1;
+    else { const p = "abcd".indexOf(e.key.toLowerCase()); if(p >= 0) i = p; }
+    if(i < 0) return;
+    const btn = box.querySelectorAll(".qz-a")[i];
+    if(btn && !btn.disabled){ e.preventDefault(); btn.click(); }
+  });
   // „×" je Domů a vrací na výběr režimu — na něm samotném by tedy jen překreslil tutéž obrazovku.
   // Ven z appky vést nemůže: landing.html je zrušená a hra.html je sama domovská stránka
   // (viz komentář na začátku souboru a CLAUDE.md 2026-08-13). Proto se právě tam schovává.
@@ -469,6 +496,20 @@
   }
   // nabídka „kolik otázek" — pevné kotvy 10/15/20, jen pokud se do fondu vejdou;
   // je-li fond menší než nejmenší kotva, nabídne se aspoň celý fond
+  // Párty: každý hráč dostane `totalRounds` otázek ze SVÉHO pásma (buildPartyOrder drží
+  // frontu na pásmo). Když je fond pásma menší než počet kol, fronta se domíchá znovu
+  // a otázky se hráči zopakují. Sólo tenhle problém nemá — qLimitOptions nabídne jen počty,
+  // které se do fondu vejdou. Párty má kola pevná (3/5/8), takže se to musí aspoň přiznat.
+  function partyOpakovaniNote(){
+    if(!data || !data.questions) return "";
+    const pasma = [...new Set(S.players.map(p => p.band || "dospeli"))];
+    const tesna = pasma.map(b => ({ b, n: bandPool(b).length })).filter(x => x.n < S.totalRounds);
+    if(!tesna.length) return "";
+    const jmena = { deti:"děti", starsi:"puberťáci", dospeli:"dospělí" };
+    const t = tesna.sort((a,b)=>a.n-b.n)[0];
+    return `<div class="qz-setnote">Pásmo „${esc(jmena[t.b]||t.b)}" má u téhle volby jen ${t.n} ${plur(t.n,"otázku","otázky","otázek")} — ` +
+           `v ${S.totalRounds} kolech se některé zopakují. Kratší hra nebo víc zemí to spraví.</div>`;
+  }
   function qLimitOptions(total){
     const opts = [10,15,20].filter(n => n <= total).map(n => ({label:n+" otázek", n}));
     if(!opts.length) opts.push({label:total+" "+plur(total,"otázka","otázky","otázek"), n: total});
@@ -892,6 +933,7 @@
           <div class="qz-bands">
             ${[["Rychlá",3],["Klasik",5],["Maraton",8]].map(([l,r])=>`<button class="qz-chip${S.totalRounds===r?" on":""}" data-rounds="${r}">${l} · ${r} kol</button>`).join("")}
           </div>
+          ${partyOpakovaniNote()}
         </div>
         <div class="qz-setcard">
           <h3><span class="n">3</span>Nastavení</h3>
@@ -1057,6 +1099,11 @@
     </div>`;
     wirePic(); wireTop(q); mountGlobeMedal(q.cc);
     body.querySelectorAll("#qz-box .qz-a").forEach(btn => btn.addEventListener("click", () => answer(q, answers[+btn.dataset.i])));
+    // Fokus na první odpověď. Obrazovka se překresluje přes innerHTML, takže bez tohohle
+    // spadne fokus na začátek stránky a kdo hraje klávesnicí, protabovává se u KAŽDÉ otázky
+    // znovu odshora. Bije to nejvíc ve školním režimu.
+    const prvni = body.querySelector("#qz-box .qz-a");
+    if(prvni && !S.school) prvni.focus({ preventScroll:true });
     speakCurrent(q);
     requestWake(); autosave(); startTimer(q);
   }

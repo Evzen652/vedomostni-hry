@@ -38,6 +38,69 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **Zápis drží formát** (odsazení 1 mezerou + CRLF), takže diff je jen přidané řádky.
     Kontrolováno: mimo `irony_prompt` se v souboru nezměnilo nic než čárky za předchozím klíčem.
 
+- **2026-08-30 — Offline část má konečně TEST. A dávka 901 českých ilustrací je stažená.**
+  Dokončení nálezu 08 z průchodu appkou: `test:api` hlídal server, `validate` data, `sim-online`
+  model ratingu — samotná hra 3 400 řádků neměla nic. Není náhoda, že všechna slepá místa
+  z auditu byla právě v ní.
+  - **[scripts/test-offline.js](scripts/test-offline.js) (`npm run test:offline`) netestuje kopii
+    logiky, ale SKUTEČNÝ zdroj.** Celý `quiz.js` načíst nejde (sahá na DOM na 6. řádku), takže
+    se konstanty a čisté funkce vytáhnou ze souboru a spustí ve `vm`. Kontrol je 528.
+  - **Každá kontrola odpovídá chybě, která se v projektu opravdu stala** — ne vymyšlenému riziku:
+    chybějící `COUNTRY_LL` (glóbus mířil do Guinejského zálivu, 2026-08-29), sekce mimo
+    `SECTION_ORDER` (536 nedosažitelných otázek), nabídka větší než fond.
+  - **Test je ověřený MUTACÍ, ne jen tím, že svítí zeleně.** Do `quiz.js` jsem dočasně vnesl
+    všechny tři zmíněné chyby a ověřil, že je test chytí; pak soubor obnovil. Bez tohohle kroku
+    by šlo napsat test, který nekontroluje nic — přesně to se dnes stalo u kontroly promptů,
+    kde „hranolky bez tvaru" prošly kvůli slovu ve vedlejším gagu.
+  - **Past: konstanty v `quiz.js` jsou zarovnané různým počtem mezer** (`const COUNTRY_FLAG  =`),
+    takže hledání přes `indexOf("const X =")` je selže. Nutný regulární výraz s `\s*`.
+  **Dávka obrázků:**
+  - **897 z 901 uloženo, 4 neprošly** (bezpečnostní filtr: dítě nad propastí, popis těla
+    u Věstonické venuše). Oba rizikové prompty přeformulovány, projdou při dalším běhu.
+    Česko má teď obrázek u **960 z 964 otázek**; `img/` má 1 168 souborů / 184 MB.
+  - **Past: výsledek dávky nejde načíst přes `response.text()`.** Pro 901 obrázků má JSONL
+    kolem 2,7 GB a Node neumí řetězec delší než ~512 MB — spadne na „Cannot create a string
+    longer than 0x1fffffe8". Nutné číst PO ŘÁDCÍCH z proudu; vedlejší přínos je, že se obrázky
+    ukládají průběžně a pád nezahodí celé stažení.
+  - **Past: API vrací `BATCH_STATE_*`, dokumentace mluví o `JOB_STATE_*`.** Skript psaný podle
+    dokumentace by dávku nikdy nepovažoval za hotovou a tiše nestáhl nic.
+  - **Kredity došly** hned po dávce, takže dvě nové dlaždice sekcí (`section-symboly`,
+    `section-zajimavosti`) zatím padají na emoji. Prompty jsou napsané a zkontrolované.
+
+- **2026-08-30 — Sekce sjednoceny: 536 otázek bylo přes výběr tématu NEDOSAŽITELNÝCH. Plus ovládání klávesnicí.**
+  Průchod appkou v roli tvůrce. Nejzávažnější nález se netýkal pádu kódu, ale toho, co appka
+  hráči nabídne.
+  - **Dlaždice témat se stavěly z pevného `SECTION_ORDER` o devíti položkách, ale v datech bylo
+    29 různých názvů sekcí.** Kdo si vybral konkrétní téma, 536 otázek (každou sedmou) nikdy
+    neuviděl — šly potkat jen přes „Vybrat vše". Část byla čistá nekonzistence dat: „Kultura"
+    vs. „Kultura & tradice", „Jazyk" vs. „Jazyk & slova", „Města"/„Hlavní město"/„Památky"
+    vedle „Místa".
+  - **Řešeno dvěma kroky:** [scripts/normalize-sections.js](scripts/normalize-sections.js)
+    sjednotil 387 otázek podle OBSAHU (hlavní město je typ místa, zvířata jsou příroda, svátky
+    jsou tradice; politika/doprava/věda/ekonomika padly do „Zajímavostí"), a do `SECTION_ORDER`
+    přibyly **„Symboly" a „Zajímavosti"** jako plnohodnotné sekce. Po opravě je nedosažitelných
+    otázek **0 z 3 702**, ověřeno v prohlížeči.
+  - **Párty přiznává opakování.** Kola jsou pevné volby 3/5/8 bez ohledu na fond a `buildPartyOrder`
+    po vyčerpání pásma domíchá znovu — při 8 kolech a malajsijském dětském fondu o 4 otázkách
+    tedy každá padne dvakrát. Nová hláška v nastavení to řekne dopředu; volbu neubírá.
+  - **Ovládání klávesnicí (1–4, A–D, Enter) a fokus po překreslení.** Obrazovka se překresluje
+    přes `innerHTML`, takže fokus padal na začátek stránky a klávesnicí se hráč u KAŽDÉ otázky
+    protaboval znovu. Fokus se teď vrací na první odpověď — **kromě školního režimu**, kde se
+    promítá a rámeček fokusu by rušil. Enter posouvá jen po odpovědi, aby mezera omylem
+    nepřeskočila otázku.
+  **Dva nálezy byly moje chyba — ať je příště nikdo neopravuje znovu:**
+  - **Sólo režim NIKDY neslíbil víc, než dal.** Tvrdil jsem opak. `qLimitOptions` nabízí jen
+    počty, které se do fondu vejdou (fond 3 → jediná volba „3 otázky"); ověřeno na Symbolech
+    pro Česko, hra hlásí „otázka 1/3".
+  - **Odečítač obrazovky výsledek ohlašuje odjakživa.** Grepoval jsem `aria-live` jen v `quiz.js`,
+    jenže atribut je v `hra.html` — bublina hostitele má `role="status" aria-live="polite"`
+    a `answer()` do ní píše „Správně!" / „Tentokrát vedle.".
+  **Poučení:** obě chyby vznikly tím, že jsem věřil grepu v jednom souboru místo toho, abych
+  si chování ověřil. U appky rozdělené mezi HTML a JS to nestačí.
+  **Otevřené (není to oprava kódu, ale práce):** nevyvážený fond (Česko 964, medián zbytku 38),
+  41 % otázek bez `more_fact` i `source_card` (tlačítko „Více o…" se u nich nevykreslí — což je
+  rozumné, ale rozporuje to zápis z 2026-07-31), a **žádný automatický test offline části**.
+
 - **2026-08-30 — Pilot ilustrací ODEHRÁN: 5 dlaždic + 30 obrázků k otázkám, 0 chyb. Recept z CLAUDE.md drží.**
   Vygenerováno přímo z asistentovy session (viz oprava o síti níž). Výsledek: **35/35 obrázků,
   žádné selhání**, a hlavně — **všechny tři zdokumentované pasti byly obejity**:

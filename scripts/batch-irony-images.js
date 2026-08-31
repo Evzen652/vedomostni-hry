@@ -160,20 +160,39 @@ async function fetchVysledky() {
 
   const d = await fetch(BASE + "/download/v1beta/" + soubor + ":download?alt=media", { headers: hlavicky() });
   if (!d.ok) { console.error("stažení selhalo " + d.status); process.exit(1); }
-  const text = await d.text();
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   let ok = 0, chyb = 0;
-  for (const radek of text.split("\n")) {
-    if (!radek.trim()) continue;
-    let o; try { o = JSON.parse(radek); } catch (e) { chyb++; continue; }
+
+  async function zpracujRadek(radek) {
+    if (!radek.trim()) return;
+    let o; try { o = JSON.parse(radek); } catch (e) { chyb++; return; }
     const id = o.key;
     const part = (o.response?.candidates?.[0]?.content?.parts || []).find(p => p.inlineData?.data || p.inline_data?.data);
-    if (!id || !part) { chyb++; if (chyb <= 3) console.log("  bez obrázku: " + (id || "?")); continue; }
+    if (!id || !part) { chyb++; if (chyb <= 3) console.log("  bez obrázku: " + (id || "?")); return; }
     const png = Buffer.from((part.inlineData || part.inline_data).data, "base64");
     await sharp(png).resize(SIRKA).jpeg({ quality: KVALITA }).toFile(path.join(OUT_DIR, id + ".jpg"));
     ok++;
+    if (ok % 50 === 0) console.log("  … " + ok + " uloženo");
   }
+
+  // Zpracovává se PO ŘÁDCÍCH z proudu, ne přes response.text(). Výsledek dávky o 901
+  // obrázcích má kolem 2,7 GB (base64 PNG na řádek) a Node neumí vyrobit řetězec delší
+  // než ~512 MB — `text()` na tom spadne na "Cannot create a string longer than…".
+  // Vedlejší přínos: obrázky se ukládají průběžně, takže pád nezahodí celé stažení.
+  const dekoder = new TextDecoder("utf8");
+  let zbytek = "";
+  for await (const kus of d.body) {
+    zbytek += dekoder.decode(kus, { stream: true });
+    let nl;
+    while ((nl = zbytek.indexOf("\n")) >= 0) {
+      const radek = zbytek.slice(0, nl);
+      zbytek = zbytek.slice(nl + 1);
+      await zpracujRadek(radek);
+    }
+  }
+  await zpracujRadek(zbytek);
+
   console.log("uloženo " + ok + " obrázků, " + chyb + " bez výsledku");
   ulozStav(Object.assign(s, { hotovo: true, ulozeno: ok }));
 }
