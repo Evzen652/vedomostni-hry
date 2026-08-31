@@ -1,8 +1,17 @@
 name = "zemekviz"
 compatibility_date = "2026-08-24"
 
-# Statika appky je přímo v kořeni repa (hra.html, quiz.js, data/, assets/, img/).
-pages_build_output_dir = "."
+# Nasazuje se VÝHRADNĚ z dist/, které staví scripts/build-public.js jen z toho, co má
+# být venku. Do 2026-08-25 tu stálo ".", což na web nahrálo i CLAUDE.md, schema.sql,
+# package.json a 2,8MB data/d1-seed.sql — `.assetsignore` to nezachrání, Pages ho ignorují.
+# Tehdejší oprava spočívala jen v tom, že `npm run deploy` předává `dist` výslovně;
+# tahle hodnota zůstala na "." a byla to tikající past: kdyby se u projektu zapnulo
+# sestavení z GitHubu, Cloudflare by si vzal ji a repo by bylo venku. (2026-09-01)
+#
+# Lokální vývoj proto NESMÍ spoléhat na tuhle hodnotu a `npm run dev` si kořen předává
+# sám (`wrangler pages dev .`) — jinak by servíroval postavené dist/ a změny v quiz.js
+# by se neprojevily, dokud se nespustí build.
+pages_build_output_dir = "dist"
 
 # API běží jako Pages Functions ve složce functions/ na stejné doméně jako statika,
 # takže odpadá CORS. Lokální běh: npm run dev (wrangler pages dev, funguje offline).

@@ -328,21 +328,32 @@ async function playAll(token, gameId, total, ms = 2000) {
      'úplně nový hráč silou bota nehne (' + rBefore + ')');
 
   // Usazený hráč ano.
-  let strengthBefore = null, botNick = null, strengthAfter = null;
-  for (let i = 0; i < 3; i++) {
+  //
+  // Síla se sleduje PODLE KONKRÉTNÍHO BOTA, ne podle toho, koho zrovna vrátí párování.
+  // Původní verze si zapamatovala prvního bota a na konci trvala na tom, že přijde
+  // zase on — jenže bot se vybírá podle ratingu hráče a ten se během těch her hýbe,
+  // takže výběr občas přeskočil na souseda a test spadl, i když kalibrace fungovala.
+  // Nedeterminismus jde až k losu otázek: `playAll` odpovídá vždy A, takže skóre
+  // (a tím rating) závisí na tom, kde v zamíchaném pořadí správná odpověď leží.
+  const sily = {};   // přezdívka bota → { prvni, posledni, her }
+  for (let i = 0; i < 4; i++) {
     const g = await api('/api/game', {
       method: 'POST', token: E1.token, body: { mode: 'odkaz', time_control: 'blesk' } });
     const b = await api(`/api/game/${g.body.id}/bot`, { method: 'POST', token: E1.token });
-    if (strengthBefore === null) { strengthBefore = b.body.bot.strength; botNick = b.body.bot.nick; }
-    strengthAfter = b.body.bot.strength;
+    const nick = b.body.bot.nick, s = b.body.bot.strength;
+    if (!sily[nick]) sily[nick] = { prvni: s, posledni: s, her: 0 };
+    sily[nick].posledni = s;
+    sily[nick].her++;
     await playAll(E1.token, g.body.id, g.body.total, 1000);
   }
-  const finalBot = await api('/api/game', {
-    method: 'POST', token: E1.token, body: { mode: 'odkaz', time_control: 'blesk' } });
-  const fb = await api(`/api/game/${finalBot.body.id}/bot`, { method: 'POST', token: E1.token });
-  ok(fb.body.bot.nick === botNick, 'pořád stejný bot: ' + botNick);
-  ok(fb.body.bot.strength !== strengthBefore,
-     'usazený hráč silou bota pohnul (' + strengthBefore + ' → ' + fb.body.bot.strength + ')');
+  // Bota, proti kterému se hrálo víckrát, jsme viděli před kalibrací i po ní.
+  const opakovany = Object.entries(sily).find(([, v]) => v.her >= 2);
+  ok(!!opakovany, 'aspoň jeden bot nastoupil opakovaně (' + Object.keys(sily).join(', ') + ')');
+  if (opakovany) {
+    const [nick, v] = opakovany;
+    ok(v.posledni !== v.prvni,
+       'usazený hráč silou bota pohnul: ' + nick + ' (' + v.prvni + ' → ' + v.posledni + ')');
+  }
 
   // ---------------------------------------------------------------- turnaj (aréna)
   section('Turnaj (aréna)');

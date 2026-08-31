@@ -12,7 +12,7 @@
     "lint-facts": "node scripts/lint-more-facts.js",
     "gen-irony": "node scripts/gen-irony-images.js",
     "sim-online": "node scripts/sim-online.js",
-    "dev": "wrangler pages dev",
+    "dev": "wrangler pages dev .",
     "db:seed": "node scripts/seed-d1.js",
     "db:init": "npm run db:seed && wrangler d1 execute zemekviz --local --file=schema.sql && wrangler d1 execute zemekviz --local --file=data/d1-seed.sql",
     "db:sql": "wrangler d1 execute zemekviz --local --command",
