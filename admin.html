@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin — revize otázek</title>
+<!--
+  Offline revizní nástroj pro majitele (ne pro hráče). Načte všechny data/questions/{cc}.json a
+  data/cards/{cc}.json stejně jako hra, překryje nálezy z data/audit.json (mechanický audit) a
+  volitelně data/judgment.json (můj plošný úsudkový průchod). Umožní filtrovat a OZNAČIT slabé
+  otázky s poznámkou; export označených předáš mně a já je přeformuluju ve zdrojových datech.
+  Označení (stavy k opravě / OK) žijí v localStorage (kviz_admin_marks) — export „k opravě" si můžeš uložit i jako soubor.
+  POZOR: seznam zemí (COUNTRY) drž v synci s COUNTRY_BY_CC v quiz.js.
+-->
+<style>
+  :root{ --paper:#fffaf0; --paper2:#fff; --ink:#3d3229; --muted:#8a7a66; --line:#e3d5b8;
+    --teal:#2a7f7f; --coral:#e2725b; --ochre:#d9a441; --ok:#4e9e6f; --bad:#cf5f4e; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:'Nunito','Segoe UI',system-ui,sans-serif; color:var(--ink);
+    background:linear-gradient(180deg,#ffffff,#fdf6e8) fixed; font-size:14px; line-height:1.4; }
+  a{ color:var(--teal); }
+  header{ position:sticky; top:0; z-index:10; background:rgba(255,250,240,.96); backdrop-filter:blur(3px);
+    border-bottom:1.5px solid var(--line); padding:12px 18px; }
+  h1{ font-size:18px; margin:0 0 10px; color:var(--teal); font-weight:800; }
+  .filters{ display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; }
+  .filters label{ font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; display:flex; flex-direction:column; gap:3px; }
+  select,input[type=text]{ font:inherit; font-size:13px; padding:6px 8px; border:1.5px solid var(--line);
+    border-radius:9px; background:#fff; color:var(--ink); }
+  input[type=text]{ min-width:200px; }
+  .filters .chk{ flex-direction:row; align-items:center; gap:6px; text-transform:none; letter-spacing:0; font-size:13px; color:var(--ink); }
+  .count{ margin-left:auto; font-size:13px; color:var(--muted); }
+  main{ padding:18px; max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:14px; }
+  .card{ background:var(--paper2); border:1.5px solid var(--line); border-radius:14px; padding:14px 16px; }
+  .card.mark-fix{ border-color:var(--coral); box-shadow:0 0 0 2px rgba(226,114,91,.25); }
+  .card.mark-ok{ border-color:var(--ok); box-shadow:0 0 0 2px rgba(78,158,111,.25); }
+  .meta{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-size:11px; color:var(--muted);
+    text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px; }
+  .band{ padding:2px 8px; border-radius:20px; font-weight:800; color:#fff; }
+  .band.d1{ background:var(--ok); } .band.d2{ background:var(--ochre); } .band.d3{ background:var(--coral); }
+  .qid{ margin-left:auto; font-family:ui-monospace,monospace; font-size:10.5px; opacity:.7; text-transform:none; }
+  .badges{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
+  .badge{ font-size:11px; padding:2px 8px; border-radius:20px; cursor:help; font-weight:700; }
+  .badge.flag{ background:#fbe4df; color:#a53d29; border:1px solid #eab3a6; }
+  .badge.warn{ background:#fdf1d4; color:#8a6512; border:1px solid #e8cf8f; }
+  .badge.judge{ background:#e7e0f5; color:#5a4b86; border:1px solid #c9bce8; }
+  .q{ font-size:16px; font-weight:700; margin:2px 0 10px; }
+  .ans{ display:flex; flex-direction:column; gap:5px; margin-bottom:10px; }
+  .a{ padding:6px 10px; border:1.5px solid var(--line); border-radius:9px; background:#fff; }
+  .a.ok{ border-color:var(--ok); background:#eef6ee; color:#2f6b46; font-weight:700; }
+  .a.ok::before{ content:"✓ "; }
+  .a.golden{ border-color:var(--ochre); background:#fdf6e0; }
+  .sub{ font-size:12px; color:var(--muted); }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:10px 18px; margin-top:8px; }
+  @media (max-width:640px){ .row2{ grid-template-columns:1fr; } }
+  .block h4{ margin:0 0 3px; font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
+  .block p{ margin:0 0 4px; font-size:13px; }
+  .bandvar{ display:inline-block; font-size:10px; font-weight:800; color:var(--teal); margin-right:4px; }
+  .more{ background:#f6efe0; border-radius:9px; padding:8px 10px; margin-top:8px; }
+  .more .headline{ font-weight:700; font-size:13px; }
+  .more .nocard{ color:var(--muted); font-style:italic; }
+  footer{ position:sticky; bottom:0; z-index:10; background:rgba(255,250,240,.96); backdrop-filter:blur(3px);
+    border-top:1.5px solid var(--line); padding:10px 18px; display:flex; align-items:center; gap:12px; }
+  button{ font:inherit; font-weight:700; cursor:pointer; border-radius:10px; padding:8px 14px; border:1.5px solid var(--teal); }
+  .card-btns{ display:flex; gap:8px; margin-top:10px; }
+  .btn-fix{ background:#fff; color:var(--coral); border-color:var(--coral); font-size:12px; padding:5px 12px; }
+  .card.mark-fix .btn-fix{ background:var(--coral); color:#fff; }
+  .btn-ok{ background:#fff; color:var(--ok); border-color:var(--ok); font-size:12px; padding:5px 12px; }
+  .card.mark-ok .btn-ok{ background:var(--ok); color:#fff; }
+  .note{ width:100%; margin-top:8px; font:inherit; font-size:13px; padding:8px 10px; border:1.5px solid var(--line);
+    border-radius:9px; resize:vertical; min-height:38px; display:none; }
+  .card.mark-fix .note{ display:block; }
+  .btn-primary{ background:var(--teal); color:#fff; }
+  .btn-ghost{ background:#fff; color:var(--teal); }
+  .foot-count{ font-weight:800; }
+  .loading{ text-align:center; color:var(--muted); padding:40px; }
+  dialog{ border:1.5px solid var(--line); border-radius:14px; padding:0; max-width:720px; width:92vw; }
+  dialog .dh{ display:flex; align-items:center; gap:10px; padding:12px 16px; border-bottom:1.5px solid var(--line); }
+  dialog h3{ margin:0; font-size:15px; color:var(--teal); }
+  dialog textarea{ width:100%; border:none; padding:14px 16px; font-family:ui-monospace,monospace; font-size:12px; min-height:300px; resize:vertical; }
+  dialog .db{ display:flex; gap:10px; padding:12px 16px; border-top:1.5px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Admin — revize otázek</h1>
+  <div class="filters">
+    <label>Obtížnost
+      <select id="f-band">
+        <option value="">všechna</option>
+        <option value="1">lehká</option>
+        <option value="2">střední</option>
+        <option value="3">těžká · jen dospělí</option>
+      </select>
+    </label>
+    <label>Fond <select id="f-kids"><option value="">všechny</option><option value="kids">jen 8–11 (kids)</option><option value="nokids">bez kids</option></select></label>
+    <label>Země <select id="f-cc"><option value="">všechny</option></select></label>
+    <label>Sekce <select id="f-sec"><option value="">všechny</option></select></label>
+    <label>Audit <select id="f-audit"><option value="">–</option><option value="any">jen s nálezem</option></select></label>
+    <label>Hledat <input type="text" id="f-q" placeholder="text otázky / odpovědi…"></label>
+    <label>Stav
+      <select id="f-mark">
+        <option value="">všechny</option>
+        <option value="fix">k opravě</option>
+        <option value="ok">OK</option>
+        <option value="any">označené</option>
+        <option value="none">neoznačené</option>
+      </select>
+    </label>
+    <span class="count" id="count">…</span>
+  </div>
+</header>
+<main id="list"><div class="loading">Načítám otázky…</div></main>
+<footer>
+  <span class="foot-count">K opravě: <span id="fix-count">0</span></span>
+  <span class="foot-count" style="color:var(--ok)">OK: <span id="ok-count">0</span></span>
+  <button class="btn-primary" id="btn-export">Exportovat „k opravě“</button>
+  <button class="btn-ghost" id="btn-clear">Zrušit všechna označení</button>
+</footer>
+
+<dialog id="dlg">
+  <div class="dh"><h3>Export označených otázek</h3><span class="sub" id="dlg-sub"></span></div>
+  <textarea id="dlg-text" readonly></textarea>
+  <div class="db">
+    <button class="btn-primary" id="dlg-copy">Kopírovat do schránky</button>
+    <button class="btn-ghost" id="dlg-download">Stáhnout jako soubor</button>
+    <button class="btn-ghost" id="dlg-close">Zavřít</button>
+  </div>
+</dialog>
+
+<script>
+const COUNTRY = { ar:"Argentina", at:"Rakousko", au:"Austrálie", bg:"Bulharsko", br:"Brazílie", ca:"Kanada", ch:"Švýcarsko", cl:"Chile", cn:"Čína", cz:"Česko", de:"Německo", ec:"Ekvádor", eg:"Egypt", es:"Španělsko", fj:"Fidži", fr:"Francie", ga:"Gabon", gb:"Spojené království", gr:"Řecko", hu:"Maďarsko", id:"Indonésie", il:"Izrael", in:"Indie", it:"Itálie", jp:"Japonsko", ke:"Keňa", kp:"Severní Korea", kr:"Jižní Korea", mn:"Mongolsko", mx:"Mexiko", my:"Malajsie", nl:"Nizozemsko", nz:"Nový Zéland", pe:"Peru", ph:"Filipíny", pk:"Pákistán", pl:"Polsko", ro:"Rumunsko", ru:"Rusko", sa:"Saúdská Arábie", se:"Švédsko", sk:"Slovensko", th:"Thajsko", tr:"Turecko", tw:"Tchaj-wan", ua:"Ukrajina", us:"USA", vn:"Vietnam", za:"Jihoafrická republika" };
+// pozor: difficulty už NEznamená pásmo „děti" — to teď dělá zvlášť pole q.kids (fond pro 8–11).
+// difficulty ≤2 = fond pro pásmo „puberťáci" (12–16), difficulty 3 navíc jen pro „dospělí".
+const BAND_LABEL = { 1:"lehká", 2:"střední", 3:"těžká · jen dospělí" };
+const MARKS_KEY = "kviz_admin_marks", OLD_FLAGS_KEY = "kviz_admin_flags";
+
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+// marks[id] = { state:"fix"|"ok", note }. Migrace starých flagů (jen k opravě) → state:"fix".
+function loadMarks(){
+  try {
+    const cur = JSON.parse(localStorage.getItem(MARKS_KEY) || "null");
+    if(cur) return cur;
+    const old = JSON.parse(localStorage.getItem(OLD_FLAGS_KEY) || "{}");
+    const m = {}; for(const id of Object.keys(old)) m[id] = { state:"fix", note:(old[id]&&old[id].note)||"" };
+    return m;
+  } catch(e){ return {}; }
+}
+const saveMarks = m => localStorage.setItem(MARKS_KEY, JSON.stringify(m));
+let marks = loadMarks();
+let QUESTIONS = [], CARDS = {}, AUDIT = { byId:{} }, JUDGE = { byId:{} };
+
+// hlášky můžou být string nebo {deti,dospeli,…} — vrať HTML s malými štítky variant
+function quipHtml(v){
+  if(v==null) return "<span class='sub'>—</span>";
+  if(typeof v==="string") return esc(v);
+  return Object.entries(v).map(([k,txt])=>`<span class="bandvar">${esc(k)}:</span>${esc(txt)}`).join("<br>");
+}
+
+async function loadAll(){
+  const ccs = Object.keys(COUNTRY);
+  const [audit, judge, ...rest] = await Promise.all([
+    fetch("data/audit.json").then(r=>r.ok?r.json():{byId:{}}).catch(()=>({byId:{}})),
+    fetch("data/judgment.json").then(r=>r.ok?r.json():{byId:{}}).catch(()=>({byId:{}})),
+    ...ccs.map(cc => fetch(`data/questions/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[])),
+    ...ccs.map(cc => fetch(`data/cards/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[])),
+  ]);
+  AUDIT = audit || { byId:{} }; JUDGE = judge || { byId:{} };
+  const qSets = rest.slice(0, ccs.length), cSets = rest.slice(ccs.length);
+  qSets.forEach(list => { for(const q of (list||[])) QUESTIONS.push(q); });
+  cSets.forEach(list => { for(const c of (list||[])) if(c && c.id) CARDS[c.id] = c; });
+  // stabilní řazení: země → obtížnost → sekce
+  QUESTIONS.sort((a,b)=> (a.cc||"").localeCompare(b.cc||"") || (a.difficulty-b.difficulty) || String(a.section).localeCompare(String(b.section)));
+}
+
+function findingsFor(id){
+  return [ ...(AUDIT.byId[id]||[]).map(f=>({...f, kind:"audit"})),
+           ...(JUDGE.byId[id]||[]).map(f=>({...f, kind:"judge"})) ];
+}
+
+function cardHtml(q){
+  const answers = [q.answer, ...(q.distractors||[])];
+  const ansHtml = answers.map(a => {
+    const ok = String(a)===String(q.answer);
+    const golden = q.golden_wrong!=null && String(a)===String(q.golden_wrong);
+    return `<div class="a${ok?" ok":""}${golden?" golden":""}">${esc(a)}${golden?' <span class="sub">(zlatá chyba)</span>':""}</div>`;
+  }).join("");
+  const finds = findingsFor(q.id);
+  const badges = finds.map(f => `<span class="badge ${f.kind==="judge"?"judge":(f.sev==="flag"?"flag":"warn")}" title="${esc(f.msg||f.code)}">${esc(f.code)}</span>`).join("");
+  const card = q.source_card ? CARDS[q.source_card] : null;
+  const moreHtml = q.source_card
+    ? (card ? `<div class="headline">${esc(card.headline||"")}</div><div class="sub">${esc(card.fact||"")}</div>`
+            : `<span class="nocard">source_card „${esc(q.source_card)}“ — karta nenalezena</span>`)
+    : `<span class="nocard">bez karty — „Více o…“ ukáže jen fotku a odpověď</span>`;
+  const mk = marks[q.id];
+  const note = mk ? esc(mk.note||"") : "";
+  const stateCls = mk ? (mk.state==="ok" ? " mark-ok" : " mark-fix") : "";
+  return `<div class="card${stateCls}" data-id="${esc(q.id)}">
+    <div class="meta">
+      ${q.kids?`<span class="band" style="background:var(--leaf)">děti 8–11</span>`:`<span class="band d${q.difficulty}">${BAND_LABEL[q.difficulty]||q.difficulty}</span>`}
+      <span>${esc(COUNTRY[q.cc]||q.country||q.cc)}</span><span>· ${esc(q.section||"")}</span>
+      <span class="qid">${esc(q.id)}</span>
+    </div>
+    ${badges?`<div class="badges">${badges}</div>`:""}
+    <div class="q">${esc(q.question)}</div>
+    <div class="ans">${ansHtml}</div>
+    <div class="block"><h4>Vysvětlení (podtext)</h4><p>${esc(q.explanation||"")}</p></div>
+    <div class="row2">
+      <div class="block"><h4>Hláška — správně</h4><p>${quipHtml(q.quip_correct)}</p></div>
+      <div class="block"><h4>Hláška — špatně</h4><p>${quipHtml(q.quip_wrong)}</p></div>
+    </div>
+    <div class="more"><h4 style="margin-bottom:4px">Více o… — tlačítko „${esc(q.about?("Více o "+q.about):"Více o tom")}“</h4>${moreHtml}</div>
+    <div class="card-btns">
+      <button class="btn-fix" data-mark="fix">${mk&&mk.state==="fix"?"K opravě ✓":"Označit k opravě"}</button>
+      <button class="btn-ok" data-mark="ok">${mk&&mk.state==="ok"?"OK ✓":"Označit jako OK"}</button>
+    </div>
+    <textarea class="note" placeholder="Poznámka: co je špatně / jak to opravit…">${note}</textarea>
+  </div>`;
+}
+
+function currentFilters(){
+  return {
+    band: document.getElementById("f-band").value,
+    cc: document.getElementById("f-cc").value,
+    sec: document.getElementById("f-sec").value,
+    audit: document.getElementById("f-audit").value,
+    q: document.getElementById("f-q").value.trim().toLowerCase(),
+    mark: document.getElementById("f-mark").value,
+    kids: document.getElementById("f-kids").value,
+  };
+}
+function matches(q, f){
+  if(f.band && String(q.difficulty)!==f.band) return false;
+  if(f.kids==="kids" && !q.kids) return false;
+  if(f.kids==="nokids" && q.kids) return false;
+  if(f.cc && q.cc!==f.cc) return false;
+  if(f.sec && q.section!==f.sec) return false;
+  const st = marks[q.id] && marks[q.id].state;
+  if(f.mark==="any" && !st) return false;
+  if(f.mark==="none" && st) return false;
+  if((f.mark==="fix"||f.mark==="ok") && st!==f.mark) return false;
+  if(f.audit==="any" && findingsFor(q.id).length===0) return false;
+  if(f.audit && f.audit!=="any" && !findingsFor(q.id).some(x=>x.code===f.audit)) return false;
+  if(f.q){ const hay=(q.question+" "+q.answer+" "+(q.distractors||[]).join(" ")).toLowerCase(); if(!hay.includes(f.q)) return false; }
+  return true;
+}
+
+function render(){
+  const f = currentFilters();
+  const shown = QUESTIONS.filter(q => matches(q,f));
+  document.getElementById("count").textContent = `${shown.length} / ${QUESTIONS.length} otázek`;
+  document.getElementById("list").innerHTML = shown.length ? shown.map(cardHtml).join("") : `<div class="loading">Nic neodpovídá filtru.</div>`;
+  updateCounts();
+}
+function updateCounts(){
+  const vals = Object.values(marks);
+  document.getElementById("fix-count").textContent = vals.filter(m=>m.state==="fix").length;
+  document.getElementById("ok-count").textContent = vals.filter(m=>m.state==="ok").length;
+}
+
+// ---- interakce (event delegace na seznamu) ----
+document.getElementById("list").addEventListener("click", e => {
+  const btn = e.target.closest("[data-mark]"); if(!btn) return;
+  const card = btn.closest(".card"); const id = card.dataset.id; const want = btn.dataset.mark;
+  const cur = marks[id] && marks[id].state;
+  if(cur===want) delete marks[id];                                   // druhý klik na stejný stav = zrušit
+  else marks[id] = { state: want, note: (marks[id]&&marks[id].note)||"" };
+  saveMarks(marks);
+  const st = marks[id] && marks[id].state;
+  card.classList.toggle("mark-fix", st==="fix");
+  card.classList.toggle("mark-ok", st==="ok");
+  card.querySelector(".btn-fix").textContent = st==="fix" ? "K opravě ✓" : "Označit k opravě";
+  card.querySelector(".btn-ok").textContent = st==="ok" ? "OK ✓" : "Označit jako OK";
+  updateCounts();
+});
+document.getElementById("list").addEventListener("input", e => {
+  const ta = e.target.closest(".note"); if(!ta) return;
+  const id = ta.closest(".card").dataset.id;
+  if(marks[id]){ marks[id].note = ta.value; saveMarks(marks); }
+});
+["f-band","f-cc","f-sec","f-audit","f-mark","f-kids"].forEach(idc => document.getElementById(idc).addEventListener("change", render));
+document.getElementById("f-q").addEventListener("input", render);
+
+// ---- export (jen otázky „k opravě" — ty pak přeformuluju) ----
+function buildExport(){
+  const rows = QUESTIONS.filter(q => marks[q.id] && marks[q.id].state==="fix").map(q => ({
+    id:q.id, cc:q.cc, country:COUNTRY[q.cc]||q.country, section:q.section, difficulty:q.difficulty,
+    question:q.question, answer:q.answer,
+    note:(marks[q.id].note||"").trim(),
+    audit:findingsFor(q.id).map(x=>x.code),
+  }));
+  return JSON.stringify(rows, null, 2);
+}
+document.getElementById("btn-export").addEventListener("click", () => {
+  const n = Object.values(marks).filter(m=>m.state==="fix").length;
+  document.getElementById("dlg-sub").textContent = `${n} k opravě`;
+  document.getElementById("dlg-text").value = buildExport();
+  document.getElementById("dlg").showModal();
+});
+document.getElementById("dlg-copy").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(document.getElementById("dlg-text").value); document.getElementById("dlg-copy").textContent="Zkopírováno ✓"; setTimeout(()=>document.getElementById("dlg-copy").textContent="Kopírovat do schránky",1500); } catch(e){}
+});
+document.getElementById("dlg-download").addEventListener("click", () => {
+  const blob = new Blob([document.getElementById("dlg-text").value], {type:"application/json"});
+  const a = document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="oznacene-otazky.json"; a.click(); URL.revokeObjectURL(a.href);
+});
+document.getElementById("dlg-close").addEventListener("click", () => document.getElementById("dlg").close());
+document.getElementById("btn-clear").addEventListener("click", () => {
+  if(!Object.keys(marks).length) return;
+  if(confirm("Opravdu zrušit všechna označení (k opravě i OK)?")){ marks={}; saveMarks(marks); render(); }
+});
+
+// ---- start ----
+(async function init(){
+  await loadAll();
+  const ccSel = document.getElementById("f-cc");
+  Object.keys(COUNTRY).sort((a,b)=>COUNTRY[a].localeCompare(COUNTRY[b]))
+    .filter(cc => QUESTIONS.some(q=>q.cc===cc))
+    .forEach(cc => { const o=document.createElement("option"); o.value=cc; o.textContent=COUNTRY[cc]; ccSel.appendChild(o); });
+  const secSel = document.getElementById("f-sec");
+  [...new Set(QUESTIONS.map(q=>q.section))].filter(Boolean).sort()
+    .forEach(s => { const o=document.createElement("option"); o.value=s; o.textContent=s; secSel.appendChild(o); });
+  // do filtru Audit doplň jednotlivé kódy s počty (mechanické i úsudkové) — cílená revize po typu
+  const auditSel = document.getElementById("f-audit");
+  const codeN = {};
+  for(const id of Object.keys(QUESTIONS.reduce((m,q)=>((m[q.id]=1),m),{})))
+    for(const fnd of findingsFor(id)) codeN[fnd.code] = (codeN[fnd.code]||0)+1;
+  Object.entries(codeN).sort((a,b)=>b[1]-a[1])
+    .forEach(([c,n]) => { const o=document.createElement("option"); o.value=c; o.textContent=`${c} (${n})`; auditSel.appendChild(o); });
+  render();
+})();
+</script>
+</body>
+</html>
