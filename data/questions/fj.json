@@ -801,5 +801,26 @@
   "explanation": "Rada sdružovala náčelníky domorodých fidžijských kmenů a dřív mimo jiné volila část členů horní komory parlamentu, než ji zrušení připravilo o formální vliv na celostátní politiku.",
   "about": "zrušení Velké rady náčelníků v roce 2012",
   "image_prompt": "Historizující fotorealistický snímek shromáždění fidžijských náčelníků v tradičních oděvech na poradě, 16:9"
+ },
+ {
+  "id": "fj-k-datova-hranice",
+  "cc": "fj",
+  "country": "Fidži",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím je Fidži zvláštní, pokud jde o čas?",
+  "answer": "Prochází jím čára, u které na Zemi začíná nový den",
+  "distractors": [
+   "Nemají tam hodiny",
+   "Den tam trvá dvacet hodin",
+   "Slunce tam nezapadá"
+  ],
+  "quip_correct": "Tys to věděl! Když u nás lidé teprve chystají večeři, na Fidži už mají zítřek.",
+  "quip_wrong": "Hodiny tam mají a den je stejně dlouhý jako všude jinde. Zvláštní je, kudy tam vede hranice data.",
+  "explanation": "Přes ostrovy vede sto osmdesátý poledník a u něj leží datová hranice. Fidži proto vítá nový rok skoro jako první země na světě.",
+  "about": "datové hranici na Fidži",
+  "more_fact": "Hranice se kolem ostrovů schválně zakřivuje, aby mělo celé Fidži stejné datum. Bez toho zahnutí by na jednom ostrově byla neděle a na sousedním už pondělí."
  }
 ]

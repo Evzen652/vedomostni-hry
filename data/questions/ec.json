@@ -825,5 +825,47 @@
   "source_url": "https://en.wikipedia.org/wiki/Cocoa_production_in_Ecuador",
   "image_prompt": "Fotorealistický snímek otevřených kakaových lusků s fazolemi na dřevěném stole na ekvádorské plantáži, přirozené světlo, 16:9",
   "about": "ekvádorském kakau odrůdy cacao nacional"
+ },
+ {
+  "id": "ec-k-panamsky-klobouk",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Odkud doopravdy pochází slaměný klobouk, kterému se říká panamský?",
+  "answer": "Z Ekvádoru",
+  "distractors": [
+   "Z Panamy",
+   "Z Mexika",
+   "Z Brazílie"
+  ],
+  "quip_correct": "Tys to věděl! Klobouk se slávou, kterou mu ukradla sousední země.",
+  "quip_wrong": "Jméno svádí, jenže právě to je ten vtip — pletou ho jinde, než podle čeho se jmenuje.",
+  "explanation": "Pletou ho ekvádorští řemeslníci z tenkých vláken palmy toquilla. Jméno dostal podle Panamy, odkud se prodával dál do světa.",
+  "about": "panamském klobouku",
+  "more_fact": "Nejjemnější klobouky se pletou brzy ráno nebo v noci, kdy je vlhko a vlákna se nelámou. Na jednom takovém se pracuje i několik měsíců."
+ },
+ {
+  "id": "ec-k-cotopaxi-snih",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co je ekvádorské Cotopaxi, které má na vrcholu sníh, i když je kolem horko?",
+  "answer": "Sopka",
+  "distractors": [
+   "Jezero",
+   "Vodopád",
+   "Staré město"
+  ],
+  "quip_correct": "Tys to věděl! Hora, která uvnitř hoří a nahoře má čepici ze sněhu.",
+  "quip_wrong": "Jezero ani vodopád by sníh na vrcholu neměly kde vzít. Cotopaxi je sopka.",
+  "explanation": "Cotopaxi je jedna z nejvyšších činných sopek světa. Sníh a led na vrcholu vydrží i blízko rovníku, protože hora sahá hodně vysoko.",
+  "about": "sopce Cotopaxi",
+  "more_fact": "Ten sníh je pro okolí důležitý. Když taje, stéká z hory voda do potoků, ze kterých berou vodu vesnice a pole hluboko pod ní."
  }
 ]

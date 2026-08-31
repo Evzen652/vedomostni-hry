@@ -805,5 +805,131 @@
   "image_prompt": "Fotorealistický detailní snímek vlající malajsijské vlajky Jalur Gemilang na stožáru, jasná obloha, 16:9",
   "about": "malajsijské vlajce",
   "irony_prompt": "A large striped flag fills the frame hanging on a washing line while a tiny figure on a wobbling ladder counts its stripes with an outstretched pointing finger, expression despairing, having plainly lost count and begun again. Smaller and subordinate: a bucket at the ladder's foot, a lost peg, a curious cat watching from a wall."
+ },
+ {
+  "id": "my-k-petronas-most",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Dvě nejvyšší věže Kuala Lumpuru, Petronas Twin Towers, jsou v polovině něčím spojené. Čím?",
+  "answer": "Mostem mezi věžemi",
+  "distractors": [
+   "Lanovkou",
+   "Tunelem pod zemí",
+   "Obřím žebříkem"
+  ],
+  "quip_correct": "Tys to věděl! Most ve výšce, kde už lítají ptáci — a dá se po něm přejít z jedné věže do druhé jako přes ulici.",
+  "quip_wrong": "Lanovka ani žebřík by mezi mrakodrapy vypadaly divně. Věže spojuje pořádný most, a to hodně vysoko.",
+  "explanation": "Most visí ve dvaačtyřicátém patře, přes sto sedmdesát metrů nad ulicí. Slouží lidem, kteří pracují v obou věžích, aby nemuseli sjíždět až dolů.",
+  "about": "věžích Petronas",
+  "more_fact": "Most k věžím není pevně přišroubovaný. Je uložený tak, aby se mohl posouvat — ve větru se totiž každá věž houpe trochu jinak a pevný most by praskl."
+ },
+ {
+  "id": "my-k-rafflesia-kvet",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V malajsijských pralesích roste největší květ na světě. Čím kromě velikosti překvapí?",
+  "answer": "Strašně smrdí",
+  "distractors": [
+   "Svítí ve tmě",
+   "Zpívá",
+   "Je horký na dotek"
+  ],
+  "quip_correct": "Tys to věděl! Největší květ světa voní jako popelnice v létě — a dělá to schválně.",
+  "quip_wrong": "Svítit ani zpívat neumí. Zato smrdí tak, že ho ucítíš dřív, než ho uvidíš.",
+  "explanation": "Rafflesia bývá přes metr široká a nemá listy, stonek ani kořeny — žije jako příživník na liáně. Rozkvete jen na pár dní a pak zčerná.",
+  "about": "rafflesii",
+  "more_fact": "Zápach po zkaženém mase láká mouchy, a právě mouchy tenhle květ opylují. Pro rafflesii je tedy smrad to samé, co pro sedmikrásku sladká vůně."
+ },
+ {
+  "id": "my-k-kahau-nos",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Který opičák z malajsijského Bornea má obrovský visící nos?",
+  "answer": "Kahau nosatý",
+  "distractors": [
+   "Gibon",
+   "Makak",
+   "Mandril"
+  ],
+  "quip_correct": "Tys to věděl! Nos má jako okurku a nese ho hrdě před sebou.",
+  "quip_wrong": "Gibon se houpe, makak krade a mandril svítí barvami. Nos ze všech nejdelší má někdo jiný.",
+  "explanation": "Samcům visí nos přes ústa a při jídle si ho musí odhrnovat rukou. Čím větší nos, tím hlubší a hlasitější zvuk vydá — a tím zajímavější je pro samice.",
+  "about": "kahau nosatém",
+  "more_fact": "Kahau umí výborně plavat a mezi prsty má malé plovací blány. Do řeky skáče rovnou z větví a přeplave ji i tam, kde číhají krokodýli."
+ },
+ {
+  "id": "my-k-nasi-lemak-kokos",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V čem se vaří rýže pro malajsijské národní jídlo nasi lemak, aby byla krémová a voňavá?",
+  "answer": "V kokosovém mléce",
+  "distractors": [
+   "V kravském mléce",
+   "V oleji",
+   "Ve slané vodě"
+  ],
+  "quip_correct": "Tys to věděl! Kokosové mléko z obyčejné rýže udělá nejlepší snídani v zemi.",
+  "quip_wrong": "Kravské mléko na Borneu k rýži nepatří a v samotném oleji by se uvařit nedala. Tajemství je v kokosu.",
+  "explanation": "K rýži se přidává vejce natvrdo, okurka, arašídy a pálivá omáčka sambal. Malajsijci nasi lemak jedí nejčastěji ráno, často cestou do školy.",
+  "about": "nasi lemaku",
+  "more_fact": "Balí se do banánového listu, a ten není jen obal místo krabičky — listu se z tepla uvolní jemná vůně, která do rýže přejde, a jídlo v něm dlouho zůstane teplé."
+ },
+ {
+  "id": "my-k-kuala-lumpur-jmeno",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co znamená jméno malajsijského hlavního města Kuala Lumpur?",
+  "answer": "Blátivé ústí řeky",
+  "distractors": [
+   "Zlatý přístav",
+   "Město tygrů",
+   "Vysoká hora"
+  ],
+  "quip_correct": "Tys to věděl! Město s nejvyššími věžemi se jmenuje po blátě. Nikdo se za to nestydí.",
+  "quip_wrong": "Znělo by to hezky, jenže pravda je mnohem míň slavnostní — jméno je o blátě.",
+  "explanation": "Osada vznikla tam, kde se stékají dvě řeky. Přišli sem hledači cínu a brodili se bahnem, takže jméno bylo prostě popis toho, jak to místo vypadalo.",
+  "about": "jménu Kuala Lumpur",
+  "more_fact": "Přesně na soutoku obou řek dodnes stojí mešita Jamek, takže i v dnešním velkoměstě se dá najít místo, podle kterého se hlavní město jmenuje."
+ },
+ {
+  "id": "my-k-wau-bulan-drak",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co je malajsijský wau bulan, pestře pomalovaný a velký skoro jako člověk?",
+  "answer": "Papírový drak",
+  "distractors": [
+   "Loutka",
+   "Buben",
+   "Loďka"
+  ],
+  "quip_correct": "Tys to věděl! Drak veliký jako ty — a stoupá k obloze, jako by nic nevážil.",
+  "quip_wrong": "Loutka i buben zůstávají na zemi. Tenhle se pouští do výšky na provázku.",
+  "explanation": "Wau bulan má tvar srpku měsíce a zdobí ho vystřihované vzory z barevného papíru. Pouštění draků je v Malajsii stará zábava dospělých i dětí.",
+  "about": "draku wau bulan",
+  "more_fact": "Některým drakům se nad hlavu připevňuje napnutý luk se strunou. Ve větru hučí jako píšťala, takže se dřív poznalo podle zvuku, čí drak zrovna letí."
  }
 ]

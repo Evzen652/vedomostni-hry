@@ -828,5 +828,89 @@
   "source_url": "https://cs.wikipedia.org/wiki/Kar%C3%A1%C4%8D%C3%AD",
   "image_prompt": "Fotorealistický snímek rušného přístavu v pákistánském městě Karáčí s barevnými rybářskými loděmi a mrakodrapy v pozadí, 16:9",
   "about": "Karáčí, největším pákistánském městě a přístavu"
+ },
+ {
+  "id": "pk-k-k2-druha-hora",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na severu Pákistánu stojí druhá nejvyšší hora světa. Jak se jmenuje?",
+  "answer": "K2",
+  "distractors": [
+   "Mount Everest",
+   "Kilimandžáro",
+   "Mont Blanc"
+  ],
+  "quip_correct": "Tys to věděl! Hora, která se jmenuje jako heslo do trezoru.",
+  "quip_wrong": "Everest je jinde a Kilimandžáro dokonce na jiném světadílu. Tahle má místo jména značku.",
+  "explanation": "K2 je jen o něco nižší než Everest, ale je mnohem strmější a leze se na ni podstatně hůř. Většina cesty vede po ledu a strmé skále.",
+  "about": "hoře K2",
+  "more_fact": "Značka K2 vznikla jako poznámka na staré mapě: dvojka znamenala druhou zaměřenou horu pohoří Karákóram. Jméno mělo být dočasné, jenže už jí zůstalo."
+ },
+ {
+  "id": "pk-k-snezny-levhart",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaká vzácná kočkovitá šelma se světlou skvrnitou srstí žije vysoko v pákistánských horách?",
+  "answer": "Sněžný levhart",
+  "distractors": [
+   "Lev",
+   "Gepard",
+   "Tygr"
+  ],
+  "quip_correct": "Tys to věděl! Šelma, kterou skoro nikdo nikdy neviděl — splyne se skálou dřív, než na ni stihneš namířit dalekohled.",
+  "quip_wrong": "Lev leží v trávě, gepard běhá po pláni a tygr má rád vlhký les. Do sněhu a skal patří jiná kočka.",
+  "explanation": "Sněžný levhart má hustou srst, široké tlapy jako sněžnice a nesmírně dlouhý ocas, kterým balancuje při skoku ze skály na skálu.",
+  "about": "sněžném levhartovi",
+  "more_fact": "Na rozdíl od lva nebo tygra neumí řvát — vydává prskavé zvuky a zvláštní táhlé zavytí. A když spí, omotá si ocas kolem těla jako šálu."
+ },
+ {
+  "id": "pk-k-malovane-nakladaky",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím jsou v Pákistánu proslulé nákladní automobily jezdící po silnicích?",
+  "answer": "Jsou pomalované pestrými obrazy a ověšené cinkajícími řetízky",
+  "distractors": [
+   "Jsou celé bílé",
+   "Jezdí jenom v noci",
+   "Mají místo kol pásy"
+  ],
+  "quip_correct": "Tys to věděl! Náklaďák, který vypadá jako pouťová atrakce — a přitom veze cement.",
+  "quip_wrong": "Bílý a nenápadný je tam náklaďák leda po nehodě. Řidiči je nechávají malovat jako obrazy.",
+  "explanation": "Řidiči si vozy nechávají zdobit u malířů. Každý má jiné květiny, ptáky, oči i verše a výzdoba dokáže stát víc než ojeté auto.",
+  "about": "malovaných náklaďácích",
+  "more_fact": "Řetízky na nárazníku nejsou jen ozdoba. Cinkají už z dálky, takže chodci na úzké horské silnici slyší náklaďák dřív, než ho zpoza zatáčky uvidí."
+ },
+ {
+  "id": "pk-k-sialkot-mice",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co se v pákistánském městě Siálkót vyrábí pro celý svět?",
+  "answer": "Fotbalové míče",
+  "distractors": [
+   "Lyže",
+   "Brusle",
+   "Tenisové rakety"
+  ],
+  "quip_correct": "Tys to věděl! Míč, se kterým jsi naposledy dal gól, mohl začít svůj život přesně tam.",
+  "quip_wrong": "Lyže ani brusle by v Siálkótu nikdo nepotřeboval. Vyrábí se tam něco, co se kope.",
+  "explanation": "V Siálkótu se ručně sešívají fotbalové míče už přes sto let. Odtud putují na hřiště po celém světě, včetně těch nejslavnějších turnajů.",
+  "about": "míčích ze Siálkótu",
+  "more_fact": "Klasický míč se skládá z dvaatřiceti kousků — dvanácti pětiúhelníků a dvaceti šestiúhelníků. Musí být sešité opravdu přesně, jinak by míč nelétal rovně."
  }
 ]

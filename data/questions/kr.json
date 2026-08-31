@@ -846,5 +846,68 @@
   "source_url": "https://en.wikipedia.org/wiki/Kimbap",
   "image_prompt": "Fotorealistický detailní snímek nakrájených koleček kimbapu na dřevěném prkénku, 16:9",
   "about": "kimbapu"
+ },
+ {
+  "id": "kr-k-hangul-vznik",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Korejské písmo hangul se nepodobá žádnému sousednímu. Jak vzniklo?",
+  "answer": "Král s učenci ho schválně vymysleli tak, aby se dalo rychle naučit",
+  "distractors": [
+   "Vzniklo z čínských znaků",
+   "Přivezli ho obchodníci z Evropy",
+   "Nikdo neví"
+  ],
+  "quip_correct": "Tys to věděl! Písmo na zakázku — a zadání znělo: ať to zvládne každý.",
+  "quip_wrong": "Od Číny si Korejci znaky vypůjčovali dřív, jenže právě to chtěli změnit. Tohle písmo je vymyšlené naschvál.",
+  "explanation": "Dřív se korejsky psalo čínskými znaky, kterých byly tisíce a uměli je jen bohatí. Nové písmo mělo necelých třicet znaků a naučil se je i rolník.",
+  "about": "písmu hangul",
+  "more_fact": "Tvary písmen nejsou náhodné. Kreslí, jak má člověk při té hlásce postavený jazyk a rty — takže podle písmenka poznáš, jak se má vyslovit."
+ },
+ {
+  "id": "kr-k-haenyeo-potapecky",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Lidé",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Kdo jsou haenyeo, ženy z korejského ostrova Čedžu?",
+  "answer": "Potápěčky, které bez kyslíkové bomby loví mušle a řasy",
+  "distractors": [
+   "Rybářky, které pletou sítě",
+   "Plavčice",
+   "Prodavačky ryb na trhu"
+  ],
+  "quip_correct": "Tys to věděl! Žádná bomba, žádná hadice — jen nádech a dolů.",
+  "quip_wrong": "Sítě plete někdo jiný a na břehu nezůstávají. Tyhle ženy jsou celý den pod hladinou.",
+  "explanation": "Potápí se na jeden nádech několik metrů hluboko a pod vodou vydrží přes minutu. Mnohým z nich je přes sedmdesát let a do moře chodí dál.",
+  "about": "potápěčkách haenyeo",
+  "more_fact": "Po vynoření vydávají zvláštní hvízdavý zvuk, kterému se říká sumbisori. Je to prudký výdech, kterým si plíce rychle vymění vzduch — a slyšet je až na břeh."
+ },
+ {
+  "id": "kr-k-ondol-podlaha",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím se v korejských domech odedávna topí tak, že je teplo hlavně u země?",
+  "answer": "Podlahovým topením ondol",
+  "distractors": [
+   "Krbem ve zdi",
+   "Kamny u stropu",
+   "Trubkami s horkou vodou u oken"
+  ],
+  "quip_correct": "Tys to věděl! Nejteplejší místo v korejském domě není u kamen, ale na zemi.",
+  "quip_wrong": "Teplo od stropu je k ničemu — stoupá vzhůru samo. Korejci ho pustili pod podlahu.",
+  "explanation": "Pod podlahou vede teplo z pece a prohřívá kameny, na kterých se stojí. Právě proto Korejci tradičně sedí i spí na zemi, ne na židli a posteli.",
+  "about": "topení ondol",
+  "more_fact": "V dnešních bytech ondol zůstal, jen místo kouře pod podlahou koluje horká voda. Zvyk sedět na zemi z korejských domácností nezmizel s ním."
  }
 ]

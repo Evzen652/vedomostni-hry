@@ -951,5 +951,26 @@
   "source_url": "https://en.wikipedia.org/wiki/Erawan_Falls",
   "image_prompt": "Fotorealistický širokoúhlý snímek tyrkysového vodopádu Erawan s kaskádami mezi zelenou džunglí, sluneční paprsky, bez lidí, 16:9",
   "about": "vodopádech Erawan"
+ },
+ {
+  "id": "th-k-songkran-voda",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co se v Thajsku děje o novoročním svátku Songkran, když je největší horko?",
+  "answer": "Lidé se navzájem polévají vodou",
+  "distractors": [
+   "Všichni celý den mlčí",
+   "Peče se obrovský dort",
+   "Nikdo nesmí vyjít ven"
+  ],
+  "quip_correct": "Tys to věděl! Celá země se tři dny navzájem polévá — a nikdo se nezlobí.",
+  "quip_wrong": "Mlčet ani sedět doma by v tom horku nikoho nenapadlo. Songkran je o vodě.",
+  "explanation": "Polévání vodou původně znamenalo očištění do nového roku. Dnes se v ulicích střílí z vodních pistolí a nikdo neprojde suchý, ani turista.",
+  "about": "svátku Songkran",
+  "more_fact": "Suchý nezůstaneš ani v autobuse. Řidiči proto v těch dnech raději zavírají okna — kbelík vody přiletí i z projíždějícího náklaďáku."
  }
 ]

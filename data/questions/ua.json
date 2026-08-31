@@ -994,5 +994,26 @@
   "source_url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine",
   "image_prompt": "Fotorealistický snímek detailního záběru na ukrajinskou minci se symbolem tryzubu, mince leží na dřevěném stole, 16:9",
   "about": "tryzubu"
+ },
+ {
+  "id": "ua-k-pysanky-vejce",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co jsou ukrajinské pysanky, které se zdobí voskem a barvami?",
+  "answer": "Malovaná velikonoční vejce",
+  "distractors": [
+   "Perníčky",
+   "Dřevěné panenky",
+   "Vyšívané šátky"
+  ],
+  "quip_correct": "Tys to věděl! Vejce, na kterém se pracuje déle než na obědě k němu.",
+  "quip_wrong": "Perník se dá sníst a panenka vydrží pád. Tohle je křehčí a maluje se to voskem.",
+  "explanation": "Vzor se kreslí horkým voskem a vejce se barví postupně od nejsvětlejší barvy k nejtmavší. Vosk se nakonec sundá a vzor se objeví ve všech barvách naráz.",
+  "about": "pysankách",
+  "more_fact": "Každý kraj má vlastní vzory a barvy, takže znalec pozná podle vajíčka, odkud pochází. Některé vzory se v rodinách předávají z babičky na vnučku."
  }
 ]

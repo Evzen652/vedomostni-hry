@@ -911,5 +911,47 @@
   "source_url": "https://en.wikipedia.org/wiki/2034_FIFA_World_Cup",
   "image_prompt": "Fotorealistický snímek moderního fotbalového stadionu v Saúdské Arábii při večerním osvětlení, prázdné hřiště, 16:9",
   "about": "mistrovství světa ve fotbale 2034 v Saúdské Arábii"
+ },
+ {
+  "id": "sa-k-rub-al-chali",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje obrovská písečná poušť v Saúdské Arábii, kde skoro nikdo nebydlí?",
+  "answer": "Rub al-Chálí, tedy Prázdná čtvrť",
+  "distractors": [
+   "Sahara",
+   "Gobi",
+   "Atacama"
+  ],
+  "quip_correct": "Tys to věděl! Poušť, která má prázdnotu rovnou ve jméně.",
+  "quip_wrong": "Sahara je v Africe, Gobi v Asii daleko na severu a Atacama v Jižní Americe. Tahle se jmenuje po tom, že tam nic není.",
+  "explanation": "Je to největší souvislá písečná poušť světa. Některé duny jsou vysoké jako panelák a pomalu se s větrem stěhují z místa na místo.",
+  "about": "poušti Rub al-Chálí",
+  "more_fact": "Pod pískem se skrývají zbytky dávných jezer. Poušť tam kdysi nebyla — chodila tudy zvířata a po některých se dodnes nacházejí kosti."
+ },
+ {
+  "id": "sa-k-sokolnictvi",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaký dravý pták se v Saúdské Arábii odedávna cvičí k lovu?",
+  "answer": "Sokol",
+  "distractors": [
+   "Papoušek",
+   "Pelikán",
+   "Tučňák"
+  ],
+  "quip_correct": "Tys to věděl! Pták, který sedí na rukavici a startuje jako šipka.",
+  "quip_wrong": "Papoušek by si spíš povídal a tučňák v poušti nemá co dělat. Loví tam sokol.",
+  "explanation": "Sokolnictví je na Arabském poloostrově staré tisíce let. Sokol sedí lovci na rukavici a vypouští se z ruky, když se objeví kořist.",
+  "about": "sokolnictví",
+  "more_fact": "Sokoli mají vlastní pasy a v letadle sedí na opěradle vedle svého majitele. Aerolinky v tamních zemích pro ně mají zvláštní pravidla i vlastní palubní lístek."
  }
 ]

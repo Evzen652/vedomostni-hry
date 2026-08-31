@@ -826,5 +826,47 @@
   "source_url": "https://en.wikipedia.org/wiki/Transport_in_Vietnam",
   "image_prompt": "Fotorealistický snímek rušné vietnamské ulice plné motorek za soumraku, rozmazané pohybem, městské osvětlení, bez textu, 16:9",
   "about": "motorkách jako hlavní dopravě ve Vietnamu"
+ },
+ {
+  "id": "vn-k-ha-long-skaly",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co vyčnívá z moře v zálivu Ha Long a tvoří to skoro dva tisíce ostrůvků?",
+  "answer": "Strmé vápencové skály",
+  "distractors": [
+   "Ledové kry",
+   "Písečné duny",
+   "Korálové útesy"
+  ],
+  "quip_correct": "Tys to věděl! Skály trčící z moře jako zuby — a mezi nimi se dá proplouvat lodí.",
+  "quip_wrong": "Kry v tropech neuvidíš a duny se nedrží nad vodou. Ha Long je z kamene.",
+  "explanation": "Skály jsou zbytky dávného pohoří, které moře zaplavilo. Některé mají uvnitř velké jeskyně s krápníky, do kterých se vjíždí na lodi.",
+  "about": "zálivu Ha Long",
+  "more_fact": "V zálivu žijí lidé v plovoucích vesnicích — domy stojí na sudech a plovácích, mezi nimi jsou sítě s rybami a děti jezdí do školy loďkou."
+ },
+ {
+  "id": "vn-k-kava-vyvoz",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Vietnam je hned po Brazílii největší na světě ve vývozu jedné plodiny. Které?",
+  "answer": "Kávy",
+  "distractors": [
+   "Kakaa",
+   "Čaje",
+   "Cukru"
+  ],
+  "quip_correct": "Tys to věděl! Země, kterou si spojíš s rýží, zásobuje svět kávou.",
+  "quip_wrong": "Čaj by tipoval každý, jenže právě proto je to past. Vietnam vyváží hlavně kávu.",
+  "explanation": "Káva roste hlavně ve vysočině na jihu země, kde je pro ni vhodná půda a chladnější noci. Pěstují ji tam desetitisíce menších rodinných farem.",
+  "about": "vietnamské kávě",
+  "more_fact": "Kávovník do Vietnamu původně vůbec nepatřil. Přivezli ho tam Francouzi před víc než sto padesáti lety a dnes je z něj pro zemi jedna z nejdůležitějších plodin."
  }
 ]

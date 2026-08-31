@@ -804,5 +804,26 @@
   "source_url": "https://en.wikipedia.org/wiki/Alishan_Forest_Railway",
   "image_prompt": "Fotorealistický snímek malého červeného horského vláčku projíždějícího mlžným lesem na Ali-šanu, ranní světlo, 16:9",
   "about": "horské železnici na Ali-šan"
+ },
+ {
+  "id": "tw-k-taroko-mramor",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Z jakého kamene je tchajwanská soutěska Taroko, jejíž stěny se bíle lesknou?",
+  "answer": "Z mramoru",
+  "distractors": [
+   "Z písku",
+   "Ze soli",
+   "Ze skla"
+  ],
+  "quip_correct": "Tys to věděl! Celé údolí z kamene, ze kterého se jinde tesají sochy.",
+  "quip_wrong": "Písek by se rozsypal a sůl by déšť rozpustil. Ty stěny jsou z mramoru.",
+  "explanation": "Řeka se do mramoru zařezávala miliony let, až vznikla úzká soutěska s kolmými stěnami vysokými jako mrakodrap. Silnice v ní vede tunely přímo ve skále.",
+  "about": "soutěsce Taroko",
+  "more_fact": "Soutěska se pořád prohlubuje. Pohoří se kvůli srážce dvou zemských desek zvedá o několik milimetrů ročně, takže řeka musí řezat dál, aby udržela krok."
  }
 ]

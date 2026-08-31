@@ -20,6 +20,26 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-31 — Dětský fond dorovnán: žádná země nemá pod 10 dětských otázek (+37 ručně psaných).**
+  Z nálezu o nevyváženém fondu byla tahle část ta, která hráče opravdu bolela: **17 zemí mělo
+  4–9 dětských otázek**, takže dítě dostalo v sólu hru o čtyřech otázkách (Malajsie) a v párty
+  se mu při osmi kolech každá otázka zopakovala dvakrát. Po dorovnání je **minimum 10** a fond
+  má 990 dětských otázek z 3 739.
+  - **Psáno ručně v session, ne přes API** — na 37 kusů je to rychlejší a hlavně to nečeká na
+    kredit. Generátor by se vyplatil až u řádově většího objemu.
+  - **Každá nová otázka má `more_fact`**, takže u nich rovnou funguje i „Více o…". Ověřeno
+    `lint-facts`: počet upozornění zůstal na 9, tedy ani jeden ze 37 nových faktů neopakuje
+    to, co hráč právě četl.
+  - **Rozpětí zůstává nevyvážené a je to v pořádku** (Česko 964, medián zbytku 42). Cílem nebylo
+    srovnat fondy, ale zvednout podlahu tam, kde byla hra kvůli velikosti fondu degradovaná.
+  - **Past, na kterou tenhle projekt platí potřetí: kontrolní seznam slov „bez diakritiky" musí
+    obsahovat jen slova, která diakritiku VYŽADUJÍ.** Můj první seznam měl `hora`, `voda`,
+    `rychle` — ta se píšou bez háčků správně, takže kontrola nahlásila 13 zásahů a všechny byly
+    plané. Po opravě seznamu 0 nálezů.
+  - **Ověřeno v prohlížeči, ne jen testem:** Malajsie/děti nabídne „10 otázek" (dřív 4), hra
+    hlásí „otázka 1/10", nová otázka se vykreslí se štítkem „pro děti" a karta „Více o…" se
+    otevře s faktem.
+
 - **2026-08-31 — `test:offline` pokrývá i párty logiku (574 kontrol); mutace odhalila, že první verze nejdůležitější chybu NECHYTALA.**
   Test do teď kontroloval jen konstanty a nabídku otázek — párty pořadí a bodování, tedy
   nejkřehčí kus offline logiky, nekontroloval nic. Nově se ověřuje, že fronta má přesně

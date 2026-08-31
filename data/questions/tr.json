@@ -889,5 +889,47 @@
   "source_url": "https://en.wikipedia.org/wiki/Yogurt",
   "image_prompt": "Fotorealistický detailní snímek mísy hustého bílého jogurtu s dřevěnou lžící na dřevěném stole, přirozené světlo, bez textu, 16:9",
   "about": "slově jogurt a jeho tureckém původu"
+ },
+ {
+  "id": "tr-k-pamukkale-terasy",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Proč se turecké Pamukkale jmenuje „bavlněný hrad“?",
+  "answer": "Ze svahu tečou teplé prameny a nechávají za sebou bílé stupně",
+  "distractors": [
+   "Pěstuje se tam bavlna",
+   "Je celé pod sněhem",
+   "Domy jsou natřené bílou barvou"
+  ],
+  "quip_correct": "Tys to věděl! Bílé schody z kamene, který se tam usadil sám z vody.",
+  "quip_wrong": "Bavlna ani sníh v tom nejsou. Ty bílé schody vyrobila stékající voda.",
+  "explanation": "Voda s rozpuštěným vápencem stéká po svahu, vápenec se cestou usazuje a vznikají z něj bílé mísy plné teplé vody, jedna nad druhou.",
+  "about": "Pamukkale",
+  "more_fact": "Stupně rostou pořád dál, jenže hodně pomalu. Vrstva vápence přibývá tak nepatrně, že za celý lidský život povyroste sotva o pár centimetrů."
+ },
+ {
+  "id": "tr-k-nasreddin-hodza",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Lidé",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Kdo je Nasreddin Hodža, o kterém se v Turecku vyprávějí krátké příběhy?",
+  "answer": "Vtipálek z lidových historek, který moudrost schovává do žertu",
+  "distractors": [
+   "Slavný sportovec",
+   "Král",
+   "Malíř"
+  ],
+  "quip_correct": "Tys to věděl! Nejdřív se zasměješ a teprve pak ti dojde, že měl pravdu.",
+  "quip_wrong": "Nesportoval ani nevládl. Jeho zbraní byla hláška ve správnou chvíli.",
+  "explanation": "V příbězích jezdí na oslu pozpátku a odpovídá tak, že to zní jako hloupost — dokud si člověk nedomyslí zbytek. Historky jsou krátké, často jen pár vět.",
+  "about": "Nasreddinu Hodžovi",
+  "more_fact": "Jeho příběhy se vyprávějí i daleko od Turecka, od Balkánu až po střední Asii. V každé zemi má trochu jiné jméno, ale osla a odpovědi naruby má všude stejné."
  }
 ]

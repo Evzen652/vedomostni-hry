@@ -801,5 +801,26 @@
   "explanation": "Kaldera Menengai vznikla zhroucením sopky do sebe po mohutné erupci a jejím dnem se táhnou praskliny, kterými dodnes uniká horká pára — obvod okraje měří přes 12 kilometrů, což z něj dělá jednu z největších kalder na světě.",
   "about": "kráteru Menengai",
   "image_prompt": "Fotorealistický letecký snímek obřího kráteru Menengai s parou stoupající z geotermálních vrtů, 16:9"
+ },
+ {
+  "id": "ke-k-behci-vytrvalci",
+  "cc": "ke",
+  "country": "Keňa",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V čem jsou keňští sportovci proslulí po celém světě?",
+  "answer": "V bězích na dlouhé vzdálenosti",
+  "distractors": [
+   "V plavání",
+   "V lyžování",
+   "V krasobruslení"
+  ],
+  "quip_correct": "Tys to věděl! Maraton, kde se o vítězi rozhoduje mezi Keňany.",
+  "quip_wrong": "Na lyže ani na led to v Keni moc není. Zato v běhu jim to jde jako nikomu.",
+  "explanation": "Většina nejlepších běžců pochází z vysoko položených údolí, kde je řidší vzduch. Tělo si na něj zvykne a v nížině pak dýchá o poznání snáz.",
+  "about": "keňských běžcích",
+  "more_fact": "Spousta z nich běhala každý den do školy a zpátky, několik kilometrů tam i zpět. Trénink jim tak vlastně začal dřív, než vůbec věděli, že trénují."
  }
 ]

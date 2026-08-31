@@ -825,5 +825,47 @@
   "source_url": "https://en.wikipedia.org/wiki/Peruvian_Paso",
   "image_prompt": "Fotorealistický snímek peruánského koně paso v elegantním kroku na venkovské cestě, jezdec v tradičním oděvu, přirozené světlo, 16:9",
   "about": "peruánském koni paso"
+ },
+ {
+  "id": "pe-k-nazca-obrazce",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co jsou obrovské obrazce v peruánské poušti u Nazcy, které jsou celé vidět až ze vzduchu?",
+  "answer": "Čáry vyryté do půdy, které tvoří zvířata a tvary",
+  "distractors": [
+   "Obrazy namalované na skále",
+   "Jámy plné vody",
+   "Kamenné sochy"
+  ],
+  "quip_correct": "Tys to věděl! Obrázek tak veliký, že ho jeho tvůrci nikdy neviděli celý.",
+  "quip_wrong": "Barva by v poušti dávno vybledla a sochy by bylo vidět i zblízka. Tohle jsou čáry v zemi.",
+  "explanation": "Staří obyvatelé odhrnuli tmavé kameny a odkryli světlejší půdu pod nimi. Největší obrazec je delší než tři fotbalová hřiště za sebou.",
+  "about": "obrazcích v Nazce",
+  "more_fact": "Vydržely stovky let hlavně proto, že v té poušti skoro neprší a nefouká silný vítr. Jinde by je dávno smyla voda nebo zavál písek."
+ },
+ {
+  "id": "pe-k-kipu-uzliky",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím si Inkové v Peru zapisovali čísla, když neměli písmo?",
+  "answer": "Uzlíky na provázcích",
+  "distractors": [
+   "Kresbami na kůži",
+   "Zářezy do kamene",
+   "Barevnými kamínky v mističce"
+  ],
+  "quip_correct": "Tys to věděl! Účetní kniha, kterou si sbalíš do kapsy jako klubko.",
+  "quip_wrong": "Kámen se špatně nosí a kůže by nevydržela. Inkové si čísla uvazovali.",
+  "explanation": "Svazku provázků se říkalo kipu. Podle druhu uzlu a jeho místa na provázku se poznalo, jaké je to číslo — jednotky dole, vyšší řády nahoře.",
+  "about": "kipu",
+  "more_fact": "Něco znamenaly i barvy provázků, takže jediný svazek uzlů uměl zaznamenat, kolik čeho a ve které vesnici. Úředník ho nosil sbalený jako klubko vlny."
  }
 ]

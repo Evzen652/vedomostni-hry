@@ -846,5 +846,47 @@
   "source_url": "https://en.wikipedia.org/wiki/Baka_people",
   "image_prompt": "Fotorealistický snímek tradičního obydlí Pygmejů Baka z listí a větví hluboko v gabonském deštném pralese, 16:9",
   "about": "Pygmejích Baka"
+ },
+ {
+  "id": "ga-k-narodni-parky",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Zajímavosti",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co Gabon udělal se skoro desetinou svého území, aby ochránil pralesy a zvířata?",
+  "answer": "Vyhlásil tam národní parky",
+  "distractors": [
+   "Postavil tam města",
+   "Nechal to vykácet",
+   "Rozdal to farmářům"
+  ],
+  "quip_correct": "Tys to věděl! Celá desetina země patří zvířatům, ne lidem.",
+  "quip_wrong": "Kácet a stavět umí každý. Gabon zvolil pravý opak.",
+  "explanation": "Parků je třináct a vznikly skoro naráz. Chrání pralesy, ve kterých žijí gorily, mandrilové i lesní sloni, a taky velký kus mořského pobřeží.",
+  "about": "gabonských národních parcích",
+  "more_fact": "Gabon je jednou z mála afrických zemí, kde prales pokrývá pořád skoro celé území. Je to tím, že tam žije málo lidí a většina bydlí ve městech u pobřeží."
+ },
+ {
+  "id": "ga-k-punu-maska",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím jsou nápadné gabonské dřevěné masky kmene Punu?",
+  "answer": "Bílou tváří a vysokým černým účesem",
+  "distractors": [
+   "Červenými rohy",
+   "Zrcadly místo očí",
+   "Peřím po celém obvodu"
+  ],
+  "quip_correct": "Tys to věděl! Bílá tvář s klidným úsměvem — a tanečník s ní balancuje vysoko na chůdách.",
+  "quip_wrong": "Rohy ani zrcadla na ní nehledej. Ta maska je bílá a zdobí ji propracovaný účes.",
+  "explanation": "Bílá barva se dělá z jílu kaolinu a v místní tradici patří duchům předků. Tanečník masku nosí při obřadech a tančí v ní na vysokých chůdách.",
+  "about": "maskách kmene Punu",
+  "more_fact": "Tyhle masky obdivovali evropští malíři na začátku dvacátého století. Jejich zjednodušené tvary pak ovlivnily i podobu moderního evropského umění."
  }
 ]

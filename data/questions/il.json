@@ -867,5 +867,47 @@
   "source_url": "https://en.wikipedia.org/wiki/Golda_Meir",
   "image_prompt": "Fotorealistický portrét izraelské státnice ve formálním oblečení, sebevědomý výraz, 16:9",
   "about": "Goldě Meirové"
+ },
+ {
+  "id": "il-k-hebrejstina-ozivena",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Hebrejštinou se dlouho jen modlilo a doma jí nikdo nemluvil. Co se s ní stalo v Izraeli?",
+  "answer": "Lidé ji začali znovu používat jako běžnou řeč",
+  "distractors": [
+   "Úplně se zapomněla",
+   "Píše se jí jen v knihách",
+   "Nahradila ji angličtina"
+  ],
+  "quip_correct": "Tys to věděl! Jazyk, který se probral z knih a jde si nakoupit rohlíky.",
+  "quip_wrong": "Kdyby zůstala jen v knihách, nebylo by o čem mluvit. Ona se vrátila mezi lidi.",
+  "explanation": "Dnes se hebrejsky mluví ve škole, v obchodě i na hřišti. Je to jediný případ, kdy se z jazyka používaného jen při obřadech stala znovu řeč celé země.",
+  "about": "hebrejštině",
+  "more_fact": "Pro nové věci se musela slova teprve vymýšlet. Existuje kvůli tomu zvláštní jazyková rada, která hledá výrazy pro auto, elektřinu nebo počítač ze starých kořenů."
+ },
+ {
+  "id": "il-k-sabat-den-klidu",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co se v Izraeli děje každý týden od pátečního večera do sobotního večera?",
+  "answer": "Šabat — den odpočinku, kdy se nepracuje",
+  "distractors": [
+   "Velký trh",
+   "Školní výlety",
+   "Sportovní závody"
+  ],
+  "quip_correct": "Tys to věděl! Celá země si na jeden den dá pauzu — a myslí to vážně.",
+  "quip_wrong": "Trhy a závody by se do klidného dne moc nehodily. Šabat je přesný opak.",
+  "explanation": "Obchody zavřou, mnoho autobusů nejezdí a rodiny se scházejí u společné večeře. Ulice ve městech bývají tak tiché, jak jindy nikdy nejsou.",
+  "about": "šabatu",
+  "more_fact": "Některé izraelské výtahy o šabatu jezdí samy a staví v každém patře. Kdo nechce mačkat tlačítko, prostě nastoupí a počká, až ho výtah doveze."
  }
 ]

@@ -826,5 +826,47 @@
   "source_url": "https://cs.wikipedia.org/wiki/Lapageria_r%C5%AF%C5%BEov%C3%A1",
   "image_prompt": "Fotorealistický snímek popínavé liány s velkými červenými zvonkovitými květy copihue v zeleném jihochilském lese, detailní záběr na květy, sluneční paprsky mezi listy, 16:9",
   "about": "chilském národním květu copihue"
+ },
+ {
+  "id": "cl-k-atacama-sucho",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje chilská poušť, kde na některých místech nezapršelo celé roky?",
+  "answer": "Atacama",
+  "distractors": [
+   "Sahara",
+   "Gobi",
+   "Kalahari"
+  ],
+  "quip_correct": "Tys to věděl! Nejsušší místo na světě — deštník tam nekoupíš ani omylem.",
+  "quip_wrong": "Sahara, Gobi i Kalahari leží na úplně jiných světadílech. Ta chilská se jmenuje jinak.",
+  "explanation": "Atacama je nejsušší poušť světa. Astronomové sem staví velké dalekohledy, protože obloha nad ní je téměř pořád jasná a bez mraků.",
+  "about": "poušti Atacama",
+  "more_fact": "Půda v Atacamě se podobá té na Marsu, a tak se tam zkoušely přístroje ještě předtím, než odletěly na skutečnou rudou planetu."
+ },
+ {
+  "id": "cl-k-moai-sochy",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co stojí na chilském Velikonočním ostrově a dívá se to obrovskýma kamennýma očima do vnitrozemí?",
+  "answer": "Obří kamenné sochy moai",
+  "distractors": [
+   "Kamenné pyramidy",
+   "Dřevěné totemy",
+   "Železné věže"
+  ],
+  "quip_correct": "Tys to věděl! Kamenné hlavy, které se odvrátily od moře a hlídají ostrov.",
+  "quip_wrong": "Pyramidy jsou v Egyptě a totemy v Americe. Na Velikonočním ostrově stojí něco úplně jiného.",
+  "explanation": "Soch je skoro devět set a ta největší je vysoká jako dům. Vytesali je obyvatelé ostrova z jednoho kusu sopečné horniny a pak je dopravili až na pobřeží.",
+  "about": "sochách moai",
+  "more_fact": "Většina moai má i tělo. Jsou zahrabané v půdě až po ramena, takže z dálky vypadají jenom jako hlavy — pod zemí ale pokračují ruce i břicho."
  }
 ]
