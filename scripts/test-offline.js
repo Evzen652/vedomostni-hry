@@ -140,6 +140,77 @@ for (const k of CONTINENTS) if (!fs.existsSync(path.join("assets", "cont-" + k.i
 for (const s of SECTION_ORDER) if (!fs.existsSync(path.join("assets", "section-" + SECTION_SLUG[s] + ".jpg"))) chybiObr.push("section-" + SECTION_SLUG[s]);
 if (chybiObr.length) console.log("  pozn.  " + chybiObr.length + " dlaždic bez ilustrace (emoji fallback): " + chybiObr.join(", "));
 
+// ---- párty: pořadí otázek a bodování -------------------------------------------
+// Tohle je nejkřehčí kus offline logiky a zároveň ten, kde se už jednou stala tichá chyba:
+// do 2026-08-24 se v párty losovalo z jednoho společného balíku, takže dítě u stolu
+// dostávalo ~41 % otázek psaných pro dospělé. Nikde to nespadlo — jen to bylo špatně.
+sekce("Párty: každý hráč hraje ve svém pásmu a za stejné body");
+
+const shuffle = konstanta("shuffle");
+const PARTY_POINTS = konstanta("PARTY_POINTS");
+const S = { players: [], totalRounds: 5, mode: "party" };
+const dataObj = { questions: otazky };
+const bandPool = funkce("bandPool", { data: dataObj });
+// `data` sem patří, i když ho dnešní buildPartyOrder nepoužívá: přesně tímhle balíkem
+// se před 2026-08-24 losovalo pro všechny hráče najednou. Bez něj v kontextu by se návrat
+// k té chybě projevil jako ReferenceError, tedy pádem testu z nesouvisejícího důvodu —
+// a nikdo by z hlášky nepoznal, že jde o dítě dostávající otázky pro dospělé.
+const buildPartyOrder = funkce("buildPartyOrder", { S, shuffle, bandPool, Math, data: dataObj });
+const qPoints = funkce("qPoints", { S, PARTY_POINTS });
+
+// Předpis pásma musí odpovídat bandPool() — kdyby se rozešly, test by kontroloval sám sebe.
+const patriDo = (q, band) => band === "deti" ? !!q.kids
+  : band === "starsi" ? (!q.kids && (q.difficulty || 1) <= 2)
+  : !q.kids;
+
+kontrola(bandPool("deti").every(q => q.kids), "bandPool(deti) pouští otázky, které nejsou dětské");
+kontrola(bandPool("dospeli").every(q => !q.kids), "bandPool(dospeli) pouští dětské otázky");
+kontrola(bandPool("starsi").every(q => !q.kids && (q.difficulty || 1) <= 2), "bandPool(starsi) pouští otázky mimo pásmo");
+// „starší" je podmnožina „dospělých" — pár otázek proto smí padnout do obou fondů, ale
+// dětský fond musí zůstat oddělený, jinak by hráč viděl tutéž otázku ve dvou pásmech.
+const idDeti = new Set(bandPool("deti").map(q => q.id));
+kontrola(!bandPool("dospeli").some(q => idDeti.has(q.id)), "dětský a dospělácký fond se překrývají");
+
+for (const sestava of [["deti", "dospeli"], ["deti", "starsi", "dospeli"], ["dospeli"], ["deti", "deti", "dospeli", "starsi"]]) {
+  for (const kol of [3, 5, 8]) {
+    S.players = sestava.map(b => ({ band: b }));
+    S.totalRounds = kol;
+    const poradi = buildPartyOrder();
+    const P = sestava.length;
+    // Zarovnání pásem stojí a padá s tím, že délka je násobek počtu hráčů: `qCurrent()`
+    // přetéká přes `% S.order.length`, takže při jiné délce by se hráčům pásma prohodila.
+    kontrola(poradi.length === kol * P,
+      "párty " + P + " hráčů × " + kol + " kol: pořadí má " + poradi.length + " otázek, ne " + kol * P);
+    kontrola(poradi.every(Boolean), "párty " + P + "×" + kol + ": v pořadí je prázdné místo");
+    const spatne = poradi.filter((q, i) => q && !patriDo(q, sestava[i % P]));
+    kontrola(!spatne.length, "párty " + P + "×" + kol + ": " + spatne.length + " otázek mimo pásmo hráče na tahu",
+      spatne[0] ? "např. " + spatne[0].id + " u hráče v pásmu " + sestava[poradi.indexOf(spatne[0]) % P] : "");
+  }
+}
+
+// Malý fond: appka na opakování upozorní (partyOpakovaniNote), ale nesmí kvůli němu
+// vrátit kratší frontu ani díru — fond se domíchá znovu.
+const maly = { questions: otazky.filter(q => q.kids).slice(0, 4).concat(otazky.filter(q => !q.kids).slice(0, 40)) };
+const bandPoolMaly = funkce("bandPool", { data: maly });
+const buildMaly = funkce("buildPartyOrder", { S, shuffle, bandPool: bandPoolMaly, Math });
+S.players = [{ band: "deti" }, { band: "dospeli" }];
+S.totalRounds = 8;
+const maleP = buildMaly();
+kontrola(maleP.length === 16, "malý fond: fronta má " + maleP.length + " otázek místo 16");
+kontrola(maleP.every(Boolean), "malý fond: fronta má prázdné místo (domíchání selhalo)");
+kontrola(maleP.filter((_, i) => i % 2 === 0).every(q => q.kids), "malý fond: dítě dostalo otázku mimo své pásmo");
+
+// Body: v párty musí být správná odpověď stejně drahá pro všechna pásma. Kdyby se bodovalo
+// obtížností, dětská otázka (vždy difficulty 1) by dala 100 a dospělácká 300 — dítě by
+// nemohlo vyhrát ani se stoprocentní úspěšností.
+S.mode = "party";
+const vzorky = ["deti", "starsi", "dospeli"].map(b => bandPool(b)[0]).filter(Boolean);
+kontrola(new Set(vzorky.map(qPoints)).size === 1, "v párty nemají všechna pásma stejnou cenu odpovědi");
+S.mode = "solo";
+kontrola(qPoints({ difficulty: 3 }) === 300 && qPoints({ difficulty: 1 }) === 100,
+  "v sólu se přestalo bodovat podle obtížnosti");
+kontrola(qPoints({}) === 100, "otázka bez difficulty nedává 100 bodů (chybí fallback)");
+
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

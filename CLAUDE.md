@@ -20,6 +20,22 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-31 — `test:offline` pokrývá i párty logiku (574 kontrol); mutace odhalila, že první verze nejdůležitější chybu NECHYTALA.**
+  Test do teď kontroloval jen konstanty a nabídku otázek — párty pořadí a bodování, tedy
+  nejkřehčí kus offline logiky, nekontroloval nic. Nově se ověřuje, že fronta má přesně
+  `kola × hráči` položek (na násobku stojí zarovnání pásem přes `% S.order.length`), že
+  **každá otázka padne hráči z JEHO pásma**, že malý fond frontu domíchá místo zkrácení,
+  a že v párty má odpověď stejnou cenu pro všechna pásma.
+  - **Mutací ověřeny tři historické chyby a jedna z nich prošla.** Návrat k losování
+    z jednoho společného balíku (stav před 2026-08-24, kdy dítě dostávalo ~41 % otázek
+    pro dospělé) test „chytil" jen tak, že spadl na `ReferenceError` — `data` nebylo
+    v kontextu vytažené funkce. To není detekce, to je náhoda odstínění: hláška by
+    o skutečné vadě neřekla nic. Po doplnění `data` do kontextu se chyba hlásí správně
+    jako „otázky mimo pásmo hráče na tahu".
+  - **Poučení obecně:** když se čistá funkce vytahuje do `vm`, musí mít v kontextu i to,
+    co dnes nepoužívá, ale co by použila ta chyba, kterou hlídáme. Jinak test měří,
+    jestli kód spadne, ne jestli je správně.
+
 - **2026-08-31 — Dluh „Více o…" má připravenou linku (gen → lint), prahy jsou ZMĚŘENÉ na existujícím fondu.**
   Poslední otevřený nález z průchodu appkou, který je opravou obsahu, ne kódu: **1 525 otázek
   z 3 702 (41 %) nemá ani `source_card`, ani `more_fact`**, takže se u nich tlačítko „Více o…"
