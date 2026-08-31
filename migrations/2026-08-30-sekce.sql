@@ -1,3 +1,14 @@
+-- PŘEKONÁNO 2026-09-01 — NESPOUŠTĚT. Soubor zůstává jen jako historický záznam.
+--
+-- Řádky dole mapují staré názvy do sekce „Zajímavosti", která od 2026-09-01 neexistuje
+-- (rozpustila se zpátky mezi zbylých devět, viz scripts/merge-sections.js). Spuštění by
+-- tedy vyrobilo otázky v sekci, kterou SECTION_ORDER nenabízí — a ty jsou přes výběr
+-- tématu NEDOSAŽITELNÉ, což je přesně ta chyba, kvůli které tahle migrace vznikla.
+--
+-- Sekce se dnes do běžící databáze dostávají přes `npm run db:sync` (ON CONFLICT DO
+-- UPDATE z data/questions/*.json), takže tuhle migraci nic nenahrazuje — není potřeba.
+--
+-- ---------------------------------------------------------------------------------
 -- Sjednocení názvů sekcí v D1 — stejné mapování jako scripts/normalize-sections.js.
 --
 -- Proč: dlaždice témat v quiz.js se staví z pevného seznamu SECTION_ORDER. V datech

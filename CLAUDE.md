@@ -20,6 +20,97 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Produkce nasazena a srovnaná s repem; `account_id` patří do `wrangler.toml`.**
+  Produkční D1 byla od 2026-08-25 pozadu o všechno — sjednocení sekcí, 40 nových otázek,
+  přejmenovaná id, turnajové tabulky. Protože v ní byl **jediný testovací účet a nula
+  odehraných her** (ověřeno dotazem PŘED mazáním), zvolena čistá cesta: `schema.sql` +
+  `d1-seed.sql` znovu, ne přírůstková migrace. Odpadly tím obě známé pasti — pořadí
+  migrace turnajů i přejmenování pěti id, které při špatném pořadí vyrábí duplicitní otázky.
+  - **Stav produkce: 3 742 otázek, 9 sekcí, 18 botů, 0 účtů, 0 her.** Nasazeno 1 390 souborů.
+  - **Past, která stála nejvíc času: `database_id` platí jen pro JEDEN účet.** Web běžel,
+    ale `wrangler d1 execute --remote` hlásil `database could not be found [code: 7404]`.
+    Vypadá to na smazanou databázi; ve skutečnosti byl terminál přihlášený pod jiným
+    e-mailem (`eweigl@email.cz`) než ten, pod kterým projekt vznikl (`evzen.weigl@gmail.com`).
+    **Přepnutí účtu v prohlížeči na terminál nedosáhne** — ten má vlastní OAuth token.
+    A i po přelogování si wrangler bral naposledy použitý účet, takže chyba trvala.
+    Proto je v [wrangler.toml](wrangler.toml) nově `account_id`; ověřeno, že bez proměnné
+    prostředí projde. Kdyby se to opakovalo: `npx wrangler whoami` ukáže e-mail i účet.
+  - **Ověřeno na ostré adrese, ne jen tím, že „deploy proběhl":** obejita cache
+    (`?cb=…`, `no-store`), zkontrolován rozcestník i `closed: true` u dětského žebříčku
+    a **odehrána otázka proti ostrému API** — payload neobsahoval `answer` ani
+    `correct_index` a vyhodnotil ji server. Ověřovací účet pak smazán i s navázanými řádky.
+  - **[migrations/2026-08-30-sekce.sql](migrations/2026-08-30-sekce.sql) je PŘEKONANÁ a nesmí
+    se spustit** — mapuje do „Zajímavostí", které od 2026-09-01 nejsou, takže by vyrobila
+    nedosažitelné otázky. Sekce se dnes do běžící databáze dostávají přes `npm run db:sync`.
+
+- **2026-09-01 — Sekce „Symboly" a „Zajímavosti" zrušeny; 194 otázek rozpuštěno mezi zbylých devět.**
+  Byly to nejmenší sekce fondu (104 a 90) a „Zajímavosti" byla přiznaně sběrná škatulka.
+  Výběr témat je nově 5+5 a **všechny dlaždice mají ilustraci** — tyhle dvě jako jediné
+  padaly na emoji, protože se jim obrázky nikdy nevygenerovaly.
+  - **Rozřazeno ručně, otázka po otázce** ([scripts/merge-sections.js](scripts/merge-sections.js)).
+    Klíčovými slovy to nejde: „Jaké zvíře je na státním znaku Polska?" je heraldika
+    (Kultura & tradice), kdežto „Jaký pták je národním ptákem Indie?" je příroda — obě mají
+    v textu zvíře i slovo „národní".
+  - **Skript SPADNE, když by nějakou otázku vynechal.** Není to opatrnost pro opatrnost:
+    otázka v sekci, kterou `SECTION_ORDER` nenabízí, je dosažitelná jen přes „Vybrat vše"
+    — přesně tak se 2026-08-30 ztratilo 536 otázek. Vazba `SECTION_ORDER` na data je nově
+    i v komentáři u té konstanty.
+  - Rozpad: Kultura & tradice 92, Historie 35, Místa 34, Příroda 17, Jídlo 5, Lidé 4,
+    Sport 4, Umění 2, Jazyk & slova 1. Výsledek 545 / 536 / 512 / 510 / 437 / 342 / 300 /
+    298 / 262, celkem 3 742.
+
+- **2026-09-01 — Široký monitor: výběrové obrazovky a hra se rozšiřují, formuláře ne.**
+  Strop `#qz-body` (980 px) dělal na monitoru 1920 dva prázdné pruhy po 400 px. Každá
+  obrazovka se rozšiřuje jinak a **důvody jsou změřené, ne odhadnuté**:
+  - **výběr zemí** (56 dlaždic): až 7 sloupců, tam chceme co nejvíc;
+  - **kontinenty (8) a témata (10)**: stejný počet sloupců, jen větší dlaždice — 7+1 nebo
+    6+2 vypadá jako chyba sazby, ne jako nabídka;
+  - **hra: strop 1460 px, ne víc.** Při 1720 by měla otázka přes 120 znaků na řádek (čte se
+    hůř, a čte se pod časovým limitem) a fotky jsou široké 1200 px, takže by na ~840px rámu
+    na retině změkly. 1460 dá ~90 znaků a rám ~700 px;
+  - **formuláře, výsledky a online se nerozšiřují vůbec.**
+  - Vše je v `@media (min-width: 1300px)`, takže na telefon ani tablet to nedosáhne —
+    ověřeno měřením na 375, 768, 966, 1366, 1600 a 1920 px, nikde nic nepřetéká.
+    `:has()` se v nepodporujícím prohlížeči jen neuplatní a zůstane dnešní stav.
+  - **Past: `.qz-tiles:not(.qz-tiles-sec)` má stejnou specificitu jako `.qz-tiles-cc`**,
+    takže se strop 940 px nepřebil, dokud selektor nebyl `.qz-tiles.qz-tiles-cc`.
+
+- **2026-09-01 — Slovník sjednocen na „profil" a všechny texty začínají velkým písmenem.**
+  Patička registrace zněla jako formulář na úřadě („Už tu hráče máš?"); nově „Už se známe?
+  / Ještě se neznáme?". S tím se zakládá **profil**, ne hráč — včetně obrazovky, která se
+  dřív jmenovala „Účet". Slovo „hráč" zůstává tam, kde znamená člověka („Pošli odkaz hráči X").
+  - **Dvě hlášky posílá server**, takže se měnily i tam: zpráva po žádosti o obnovu PINu
+    ([reset/index.js](functions/api/auth/reset/index.js)) a tělo e-mailu ([mail.js](functions/_lib/mail.js)).
+    Bez nich by hráč viděl „profil" v appce a „účet" v mailu.
+  - **Velká písmena se nehledala grepem, ale skenem v prohlížeči** přes všechny obrazovky
+    (rozcestník, výběry, celá hra včetně odpovědi a výsledků, online auth, lobby, profil,
+    žebříček, přátelé, turnaje, denní pětka). Grep by minul texty složené za běhu i ty
+    uprostřed řádku za oddělovačem — takhle se našlo mnohem víc než ten jeden placeholder,
+    kvůli kterému to začalo: „zpět", „vyber země", „děti/puberťák/dospělí", „vyp/mírný/svižný",
+    „připravujeme", „na tahu", „běží/skončil", „otázka 1/10", „rating 1500", „lehká/střední/těžká".
+  - **Placeholder e-mailu je „Např. adresa@priklad.cz"** — samotná adresa velkým písmenem
+    začínat nemůže, aniž by vypadala jako chyba.
+
+- **2026-09-01 — `pages_build_output_dir` bylo pořád `"."` — tikající past, ne aktivní únik.**
+  Oprava z 2026-08-25 řešila jen to, že `npm run deploy` předává `dist` výslovně; hodnota
+  v konfiguraci zůstala na `"."` a komentář nad ní tvrdil, že statika se servíruje z kořene.
+  **Kdyby se u projektu zapnulo sestavení z GitHubu, Cloudflare by si vzal ji a repo by bylo
+  venku** (CLAUDE.md, schema.sql, package.json, 2,8MB d1-seed.sql).
+  - Nově je v konfiguraci `dist` a **`npm run dev` si kořen předává sám** (`wrangler pages dev .`).
+    Bez toho druhého by lokální vývoj servíroval postavené `dist/` a změny v `quiz.js` by se
+    neprojevily, dokud někdo nespustí build. Ověřeno: dev běží ze živých souborů, API odpovídá,
+    `npm run build` dá 1 390 souborů a žádný soukromý soubor v `dist/` není.
+
+- **2026-09-01 — `test:api` měl nedeterministickou kontrolu bota.**
+  Test si zapamatoval prvního bota a na konci trval na tom, že přijde zase on — jenže bot se
+  vybírá podle ratingu hráče a ten se během těch her hýbe, takže výběr občas přeskočil na
+  souseda a test spadl, i když kalibrace fungovala správně. **Nedeterminismus jde až k losu
+  otázek:** `playAll` odpovídá vždy A, takže skóre (a tím rating) závisí na tom, kde
+  v zamíchaném pořadí správná odpověď leží. Kalibrace navíc boty postupně rozjíždí, takže se
+  to s počtem spuštění zhoršuje — v lokální D1 měli místo seedovaných 1700 a 1900 už 1738
+  a 1946. Nově se síla sleduje **podle konkrétního bota** (klíč je přezdívka) a porovnává se
+  první a poslední hodnota téhož bota. Ověřeno třikrát po sobě.
+
 - **2026-08-31 — Rozcestník: mřížka 2×2, Online první a Škola poslední, bot z popisku pryč.**
   Čtyři režimy se ve flexu (`.qz-modes`) lámaly na 3 + 1, takže online vypadal jako přílepek
   přilepený zespoda, ne jako rovnocenný režim. Nově je to natvrdo dvousloupcová mřížka; na

@@ -1,6 +1,12 @@
 name = "zemekviz"
 compatibility_date = "2026-08-24"
 
+# Účet, pod kterým projekt i databáze žijí (evzen.weigl@gmail.com). Není to tajemství —
+# stejné id je v adrese dashboardu —, ale MUSÍ tu být: bez něj si wrangler bere naposledy
+# použitý účet, a když je přihlášený jiný, hlásí u D1 „database could not be found
+# [code: 7404]". To svádí na smazanou databázi, i když jde jen o špatný účet. (2026-09-01)
+account_id = "3005fa92056c05be6e87ea85a5df5ab9"
+
 # Nasazuje se VÝHRADNĚ z dist/, které staví scripts/build-public.js jen z toho, co má
 # být venku. Do 2026-08-25 tu stálo ".", což na web nahrálo i CLAUDE.md, schema.sql,
 # package.json a 2,8MB data/d1-seed.sql — `.assetsignore` to nezachrání, Pages ho ignorují.
