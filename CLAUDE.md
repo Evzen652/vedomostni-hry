@@ -20,6 +20,35 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-31 — Dluh „Více o…" má připravenou linku (gen → lint), prahy jsou ZMĚŘENÉ na existujícím fondu.**
+  Poslední otevřený nález z průchodu appkou, který je opravou obsahu, ne kódu: **1 525 otázek
+  z 3 702 (41 %) nemá ani `source_card`, ani `more_fact`**, takže se u nich tlačítko „Více o…"
+  vůbec nevykreslí. To je dnes správné chování (karta by neměla co ukázat) — chybí obsah.
+  - **[scripts/gen-more-facts.js](scripts/gen-more-facts.js) (`npm run gen-facts`)** dopisuje
+    `more_fact` po deseti. **Modelu se posílá i `explanation` a obě hlášky** — právě proto,
+    aby se s nimi fakt nepotkal; standard z 2026-08-10 říká, že každá vrstva nese něco jiného,
+    a nejčastější způsob, jak to pokazit, není napsat nesmysl, ale napsat potřetí totéž.
+    Model smí vrátit prázdný řetězec, když o tématu nic dalšího neví — vymýšlet si je horší
+    než chybějící tlačítko.
+  - **[scripts/lint-more-facts.js](scripts/lint-more-facts.js) (`npm run lint-facts`) má prahy
+    spočítané z 907 už napsaných faktů, ne odhadnuté:** překryv kmenů s ostatními vrstvami má
+    medián 20 %, 99. percentil 55 % → práh je 55 % a označí 7 otázek z 857. Délka: medián
+    124 znaků, nejdelší 239 → instrukce pro model říká 110–240, ne původních 150–300.
+    **Tohle je přímá lekce z auditu**, kde prahy nastavené od oka (dětská otázka nad 90 znaků)
+    trefily medián fondu a vypadaly jako 950 nálezů, ačkoli neměřily nic.
+  - **Překryv se počítá jen u faktů s aspoň 8 vlastními kmeny.** Krátkému faktu podíl skáče —
+    `cz-t-lide-heyrovsky-polarograf` má 80 % a je v pořádku, jsou to tři slova z osmi.
+  - **Kontrola je ověřená MUTACÍ.** Do dat jsem dočasně vnesl doslovnou parafrázi `explanation`
+    (chycena, překryv 100 %), useknutý konec (chycen) a uvozovací vatu — **a ta neprošla.**
+    Příčina je ta stará past: **`\w` a `\b` jsou v JS jen ASCII**, takže `zajímav\w*\s+je`
+    nechytí „Zajímavé je" (`\w*` se zastaví před „é"). Opraveno na `\S*`; ověřeno na pěti
+    variantách vaty i na tom, že dobrý fakt dál prochází. Bez mutace by kontrola tiše
+    nekontrolovala třetinu toho, co slibuje — přesně jako `lint-irony` u „hranolek bez tvaru".
+  - **Zatím NESPUŠTĚNO: kredit Gemini je vyčerpaný** (429 hned na prvním požadavku, ověřeno
+    zkušebním během na 10 otázkách — linka doběhne až k API a spadne čistě). Ze stejného důvodu
+    čekají i poslední 4 české obrázky a dvě dlaždice sekcí (`section-symboly`,
+    `section-zajimavosti`), takže ty dvě dlaždice zatím padají na emoji.
+
 - **2026-08-30 — Prompty se píšou SKRIPTEM přes Gemini, ne ručně. Pilot schválen, jede se Česko.**
   Hráč pilot 30 obrázků schválil („všechny jsou ok") a zadal soustředit se na české otázky.
   Česko má **901 otázek bez obrázku** (z 964), takže ruční psaní promptů odpadá.
@@ -953,6 +982,14 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   `fact`, jiný text než `explanation`, a ten se zobrazit má.
   Obě tlačítka v patičce (`.qz-fbtns`) jsou stejně široká — proto má i `.qz-next` průhledný rámeček
   1,5 px a obě mají `min-width: 0`, jinak by se lišila o šířku rámečku a delšího textu.
+  > **Opraveno 2026-08-31 — věta „tlačítko se zobrazuje vždy, nikdy ho neschovávej" už NEPLATÍ
+  > a nevracej ji.** Tehdejší náhradní karta byla fotka + odpověď bez textu, takže u otázky bez
+  > fotky (tenkrát skoro všechny) otevřela **prázdný rámeček**. Od 2026-08-13 karta fotku nemá
+  > vůbec a od zavedení `more_fact` (2026-08-24) se tlačítko vykreslí tehdy, když je z čeho kartu
+  > postavit: `q.source_card || q.more_fact` ([quiz.js](quiz.js), `frowHtml`). **41 % otázek nemá
+  > ani jedno, takže u nich tlačítko chybí — to je dnes správně, ne chyba.** Otevřený dluh není
+  > v kódu, ale v obsahu: dopsat těm otázkám `more_fact`. Zbytek zápisu (pole `about`, zákaz
+  > `explanation` v náhradní kartě, stejná šířka tlačítek) platí beze změny.
 - **2026-07-31 — Hrací obrazovka je od 900 px dvousloupcová: text vlevo, okno (glóbus → fotka) vpravo.**
   Každá otázka má mít vlastní fotku `img/{id}.jpg` (16:9, fotorealistická, ~1200 px na šířku, JPG q84;
   zadání je v poli `image_prompt` u otázky). Fotky **nejsou ve vysokém rozlišení**, proto dostávají jen
