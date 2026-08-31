@@ -20,11 +20,20 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
-- **2026-08-31 — Dětský fond dorovnán: žádná země nemá pod 10 dětských otázek (+37 ručně psaných).**
+- **2026-08-31 — Podlaha fondu dorovnána: žádná kombinace země × pásmo nemá pod 10 otázek (+40 ručně psaných).**
   Z nálezu o nevyváženém fondu byla tahle část ta, která hráče opravdu bolela: **17 zemí mělo
   4–9 dětských otázek**, takže dítě dostalo v sólu hru o čtyřech otázkách (Malajsie) a v párty
   se mu při osmi kolech každá otázka zopakovala dvakrát. Po dorovnání je **minimum 10** a fond
-  má 990 dětských otázek z 3 739.
+  má 990 dětských otázek z 3 742.
+  - **Po dětech jsem zkontroloval i zbylá dvě pásma a našel poslední díru:** Japonsko mělo
+    u puberťáků 7 otázek (`!kids && difficulty ≤ 2`), takže tam platilo totéž. Dopsány 3.
+    **Teď je minimum všech tří pásem 10, tedy nad osmi koly párty — opakování kvůli velikosti
+    fondu tím mizí úplně.** Hláška `partyOpakovaniNote` ale dál smysl má: hráč si může zúžit
+    výběr na jednu zemi a jednu sekci, kde je otázek pár.
+  - **Nezvyšovat `starsi` přeřazením obtížnosti.** Nabízí se to (stačilo by pár japonských
+    otázek zlevnit z 3 na 2), ale `difficulty` u dospěláckého fondu znamená věkovou vhodnost —
+    2026-08-15 se kvůli tomu přeřazovalo 741 otázek opačným směrem. Přepsat je zpátky by tu
+    práci tiše zrušilo.
   - **Psáno ručně v session, ne přes API** — na 37 kusů je to rychlejší a hlavně to nečeká na
     kredit. Generátor by se vyplatil až u řádově většího objemu.
   - **Každá nová otázka má `more_fact`**, takže u nich rovnou funguje i „Více o…". Ověřeno

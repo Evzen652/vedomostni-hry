@@ -718,5 +718,65 @@
   "explanation": "Než se Nintendo v 70. a 80. letech 20. století prosadilo videohrami, zkoušelo mimo jiné provozovat taxislužbu, síť milostných hotelů i výrobu instantní rýže — teprve videohry z něj udělaly globální značku.",
   "about": "původním podnikání firmy Nintendo",
   "image_prompt": "Fotorealistický snímek tradičních japonských hracích karet hanafuda rozložených na dřevěném stole, 16:9"
+ },
+ {
+  "id": "jp-t-judo-jemna-cesta",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Který bojový sport vznikl v Japonsku a jeho jméno znamená „jemná cesta“?",
+  "answer": "Judo",
+  "distractors": [
+   "Karate",
+   "Box",
+   "Šerm"
+  ],
+  "quip_correct": "Sport, kde se soupeř porazí vlastní silou. Jemná cesta, jak mu vysvětlit, že leží na zemi.",
+  "quip_wrong": "Karate je taky japonské, ale jeho jméno znamená „prázdná ruka“. Tady jde o cestu, ne o ruku.",
+  "explanation": "Judo sestavil Džigoró Kanó z technik starého ju-jutsu. Místo úderů se používají hody a páky, při kterých se obrací soupeřova vlastní síla proti němu. Na olympiádě se poprvé bojovalo v Tokiu roku 1964.",
+  "about": "judu",
+  "more_fact": "Barevné pásy zavedl právě Kanó, aby bylo na první pohled vidět, jak daleko kdo došel. Dřív se v bojových uměních žádné takové stupně nenosily — odtud se systém rozšířil do karate, taekwonda i dál."
+ },
+ {
+  "id": "jp-t-sibuja-diagonalni-prechod",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Na tokijské křižovatce Šibuja se v jednu chvíli zastaví auta ze všech směrů naráz. Proč?",
+  "answer": "Aby chodci mohli přejít kamkoli, i úhlopříčně přes střed",
+  "distractors": [
+   "Kvůli natáčení filmů",
+   "Aby mohla projet policie",
+   "Kvůli poruše semaforů"
+  ],
+  "quip_correct": "Jednou za chvíli patří celá křižovatka chodcům. Auta čekají a dav se přelije přes střed.",
+  "quip_wrong": "Kdyby to byla porucha, opravili by ji. Tohle je záměr — a docela chytrý.",
+  "explanation": "Takovému uspořádání se říká diagonální přechod. Chodci nemusí obcházet křižovatku po dvou stranách, ale jdou rovnou napříč. Při jedné zelené jich Šibují projde i přes tisíc.",
+  "about": "křižovatce Šibuja",
+  "more_fact": "Stejný typ přechodu funguje i v jiných zemích, jenže se mu v angličtině přezdívá podle téhle křižovatky. Šibuja se tak stala pojmem i pro dopravní inženýry, kteří v Tokiu nikdy nebyli."
+ },
+ {
+  "id": "jp-t-mrakodrapy-zemetreseni",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Zajímavosti",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Japonsko leží na styku zemských desek. Jak se tam staví mrakodrapy, aby vydržely zemětřesení?",
+  "answer": "Tak, aby se mohly houpat — stojí na tlumičích",
+  "distractors": [
+   "Celé ze skla",
+   "Zapuštěné do skály tak, aby se vůbec nehnuly",
+   "Nejvýš do dvou pater"
+  ],
+  "quip_correct": "Pevnost tady prohrává s pružností. Kdo se neohne, praskne.",
+  "quip_wrong": "Postavit něco, co se vůbec nehne, zní bezpečně — a je to přesně ta chyba, kvůli které budovy padají.",
+  "explanation": "Dokonale tuhá stavba by při otřesech popraskala, protože by veškerý pohyb země přenesla do zdí. Proto se konstrukce dělá pružná a některé budovy stojí na gumových a olověných ložiscích, která pohyb pohltí dřív, než se dostane nahoru.",
+  "about": "japonských mrakodrapech",
+  "more_fact": "Japonské děti nacvičují chování při zemětřesení stejně pravidelně jako u nás požární poplach. V lavici mají polstrovanou kapuci, kterou si při poplachu nasadí na hlavu proti padajícím věcem."
  }
 ]
