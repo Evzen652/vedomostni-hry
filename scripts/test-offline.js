@@ -133,6 +133,24 @@ for (const cc of ccs) {
 // Prázdné pásmo není chyba (bandPool spadne na celý fond), ale je to dluh v obsahu.
 if (prazdne.length) console.log("  pozn.  " + prazdne.length + " kombinací země/pásmo je bez otázek: " + prazdne.slice(0, 8).join(", ") + (prazdne.length > 8 ? " …" : ""));
 
+// Podlaha fondu. Párty nabízí nejvýš 8 kol, takže pod osmi otázkami se hráči začnou
+// otázky opakovat (buildPartyOrder fond domíchá znovu) a v sólu je hra kratší, než by
+// měla být. Dorovnáno 2026-08-31 na minimum 10 — tenhle výpis hlídá, ať to zase nespadne.
+// Schválně jen POZNÁMKA, ne chyba: nová země se rozepisuje postupně a padající test
+// by nutil buď dopsat 10 otázek naráz, nebo zemi z nabídky dočasně vyhodit.
+const PARTY_MAX_KOL = 8;
+const tenke = [];
+for (const cc of ccs) {
+  if (!otazky.some(q => q.cc === cc)) continue;
+  for (const band of ["deti", "starsi", "dospeli"]) {
+    const n = fond(cc, band).length;
+    if (n && n < PARTY_MAX_KOL) tenke.push(cc + "/" + band + " (" + n + ")");
+  }
+}
+console.log(tenke.length
+  ? "  pozn.  " + tenke.length + " kombinací pod " + PARTY_MAX_KOL + " otázkami — v párty se budou opakovat: " + tenke.join(", ")
+  : "  pozn.  podlaha drží: každá kombinace země/pásmo má aspoň " + PARTY_MAX_KOL + " otázek");
+
 sekce("Ilustrace dlaždic: chybějící obrázek spadne na emoji, ale ať o něm víme");
 const chybiObr = [];
 for (const cc of ccs) if (!fs.existsSync(path.join("assets", "country-" + cc + ".jpg"))) chybiObr.push("country-" + cc);
