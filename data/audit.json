@@ -1,0 +1,5972 @@
+{
+ "generated": "2026-08-30T23:30:04.179Z",
+ "qTotal": 3702,
+ "flagged": 813,
+ "codeCounts": {
+  "hlaska_mimo": 476,
+  "kids_dlouha_otazka": 78,
+  "quip_wrong_opakuje": 138,
+  "sablona_jako": 74,
+  "kids_abstraktni": 63,
+  "kids_dlouhe_slovo": 31,
+  "duplicita": 3
+ },
+ "byId": {
+  "ar-q-mate": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ar-q-malvinas": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ar-k-laboca": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ar-k-gaucho": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (199 znaků) pro 8–11"
+   }
+  ],
+  "ar-k-mistrsveta": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (158 znaků) pro 8–11"
+   }
+  ],
+  "ar-q-cheguevara": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ar-q-maradona": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ar-t-aconcagua-nejvyssi-hora": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Aconcagua“ — chybí nadhled"
+   }
+  ],
+  "ar-k-casa-rosada-ruzovy-palac": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ar-k-pato-narodni-sport": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (218 znaků) pro 8–11"
+   }
+  ],
+  "at-q-schonbrunn": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-q-hohensalzburg": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-q-krimmelske-vodopady": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-q-krampus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-q-anschluss": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-q-maier": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-k-lipican": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Lipicánský kůň“ — chybí nadhled"
+   }
+  ],
+  "at-t-rakousko-neutralita": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-a-ledovec-otzi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "at-k-riesenrad": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (163 znaků) pro 8–11"
+   }
+  ],
+  "at-a-filharmonie-zeny": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Do roku 1997“ — chybí nadhled"
+   }
+  ],
+  "at-k-innsbruck-zlata-strisska": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "at-k-ticha-noc-oberndorf": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (209 znaků) pro 8–11"
+   }
+  ],
+  "au-q-opera": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-q-aboriginci": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-q-vegemite": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-q-prvni-flotila": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-q-teckova-malba": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-k-emu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-k-quokka": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (165 znaků) pro 8–11"
+   }
+  ],
+  "au-k-uluru": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-k-didgeridoo": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "au-t-tasmansky-cert": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-t-zlata-horecka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-t-plavani": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "au-t-predel": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "au-k-lamington-dezert": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "au-k-vanoce-v-lete": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "be-t-manneken-pis": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Manneken Pis“ — chybí nadhled"
+   }
+  ],
+  "be-k-ruzickova-kapusta": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "be-k-smoulove": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "be-t-komiksove-zdi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "be-t-pivo-unesco": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "be-a-ruanda-urundi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "be-a-nato": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "be-k-belgicka-cekanka": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (154 znaků) pro 8–11"
+   }
+  ],
+  "be-k-karneval-binche": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (224 znaků) pro 8–11"
+   }
+  ],
+  "bg-q-nesebar": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-q-ruzove-udoli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-q-banica": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-q-shopska": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-q-osvobozeni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-k-vlajka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Bílá, zelená, červená“ — chybí nadhled"
+   }
+  ],
+  "bg-t-madara": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-t-belogradchik": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-t-ljutenica": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-a-varna-zlato": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-a-kostadinova": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "bg-t-tsarevets-fortress-lights": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "br-q-candomble": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "br-q-portugaltina": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "br-k-brigadeiro": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „kondenzovaného“ — pro 8–11 náročné"
+   }
+  ],
+  "br-k-mistrsveta": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejúspěšnějším“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (190 znaků) pro 8–11"
+   }
+  ],
+  "br-k-festajunina": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "br-k-onca": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-q-parliament-hill": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-q-banff": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-q-halifax": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Citadela na kopci“ — chybí nadhled"
+   }
+  ],
+  "ca-q-immigration": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-k-los-najvetsi-jelen": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-k-kosatka-pobrezi-bc": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Vancouverského“ — pro 8–11 náročné"
+   }
+  ],
+  "ca-k-beluha-svaty-vavrinec": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-k-papuchalk-newfoundland": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „pestrobarevným“ — pro 8–11 náročné"
+   }
+  ],
+  "ca-k-karibu-mince-quarter": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „pětadvacetníkové“ — pro 8–11 náročné"
+   }
+  ],
+  "ca-k-wood-buffalo-park-bizoni": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (165 znaků) pro 8–11"
+   }
+  ],
+  "ca-k-narval-mory-jednorozec": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-k-pizmon-arktida": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ca-t-winnipeg-forks": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-k-west-edmonton-mall": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (186 znaků) pro 8–11"
+   }
+  ],
+  "ca-t-habitat-67": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ca-k-ketchup-chips": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Kečupovou“ — chybí nadhled"
+   }
+  ],
+  "ca-k-timbits": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (185 znaků) pro 8–11"
+   }
+  ],
+  "ca-k-tobogganing": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Sáňkování“ — chybí nadhled"
+   }
+  ],
+  "ca-t-blue-jays-vitezstvi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ca-k-canadarm-vesmir": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (227 znaků) pro 8–11"
+   }
+  ],
+  "ch-q-narodni-park": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ch-q-giacometti": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ch-k-kravy-zvonce": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ch-k-bernardyn": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Bernardýn“ — chybí nadhled"
+   }
+  ],
+  "ch-t-jodlovani": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jódlování“ — chybí nadhled"
+   }
+  ],
+  "cl-q-torres": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cl-q-bernardo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cl-q-futbal": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Copa América“ — chybí nadhled"
+   }
+  ],
+  "cl-q-andinismo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cl-k-tvar": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cn-q-cinska-zed": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-q-panda": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-q-novy-rok": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-q-kaligrafie": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-k-zverokruh": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (185 znaků) pro 8–11"
+   }
+  ],
+  "cn-k-papir": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-k-ryzoviste": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-t-strelny-prach": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-t-nudle": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-a-politika-jednoho-ditete": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-a-kulturni-revoluce": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-k-vysokorychlostni-vlak": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „vysokorychlostních“ — pro 8–11 náročné"
+   }
+  ],
+  "cn-k-cinska-opera": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cn-t-jazyk-dialekty": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-t-papirove-penize": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-a-velky-skok-vpred": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cn-a-hedvabna-stezka-nova": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-moravsky-kras": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „138,4 metru“ — chybí nadhled"
+   }
+  ],
+  "cz-q-jizda-kralu": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-q-pomlazka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Náklonnost“ — chybí nadhled"
+   }
+  ],
+  "cz-q-hacek": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Janu Husovi“ — chybí nadhled"
+   }
+  ],
+  "cz-q-knedlik": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Z mouky, vajec a staršího pečiva“ — chybí nadhled"
+   }
+  ],
+  "cz-q-jan-hus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-olomoucky-tvaruzek": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejzápachovějších“ — pro 8–11 náročné"
+   }
+  ],
+  "cz-a-jan-palach": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-stork-chimney": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-bramborak": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-florbal": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-flag-triangle": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-telc-barevne-namesti": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-skalni-mesto-adrspach": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Adršpašsko-teplické“ — pro 8–11 náročné"
+   }
+  ],
+  "cz-k-pat-a-mat": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-svaty-vaclav-svatek": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (193 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-kofola-napoj": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Československu“ — pro 8–11 náročné"
+   }
+  ],
+  "cz-k-bramboracka-polevka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Bramboračka“ — chybí nadhled"
+   }
+  ],
+  "cz-k-ovocne-knedliky": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Švestky nebo jahody“ — chybí nadhled"
+   }
+  ],
+  "cz-t-petra-kvitova-tenis": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-t-vera-caslavska-gymnastka": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-biatlon-lyze-strelba": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-horolezectvi-piskovcove-skaly": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-hymna-nazev": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-lipa-narodni-strom": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-svatovaclavska-koruna": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Svatováclavská“ — pro 8–11 náročné"
+   }
+  ],
+  "cz-k-maly-znak-jeden-lev": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-lide-capek-robot": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (190 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-lide-wichterle-cocky": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (162 znaků) pro 8–11"
+   }
+  ],
+  "cz-t-lide-kafka-spisovatel": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „V němčině“ — chybí nadhled"
+   }
+  ],
+  "cz-k-spejbl-hurvinek": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   },
+   {
+    "code": "duplicita",
+    "sev": "warn",
+    "msg": "možný duplicitní fakt s otázkou cz-q-spejbl-hurvinek-loutky"
+   }
+  ],
+  "cz-k-pat-a-mat-beze-slov": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejneobvyklejší?“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-rumcajs-cipisek": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-josef-lada-zima": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (154 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-ferda-mravenec": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-broucci-svetlusky": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-tri-orisky-popelka": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-vecernicek-hvezdicka": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-loutkarstvi-unesco": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-jablonecke-sklenene-ozdoby": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-drevorezany-betlem": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-sverak-uhlir-pisnicky": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-maxipes-fik": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejneobvyklejší?“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-slovo-robot-capek": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (176 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-praotec-cech-rip": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (155 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-libuse-prorokuje-prahu": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-premysl-oral-lykove-strevice": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (173 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-bruncvik-lev-most": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-golem-rabi-lowe": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-horymir-semik-skok": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-blanicti-rytiri": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-vaclav-socha-namesti": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-ludmila-naucila-cist": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jeho babička“ — chybí nadhled"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (179 znaků) pro 8–11"
+   }
+  ],
+  "cz-t-cyril-metodej-pismo": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Cyril a Metoděj“ — chybí nadhled"
+   }
+  ],
+  "cz-k-karluv-most-vejce": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-q-snezka-hranice": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-spilberk-brno-vezeni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-rys-ostrovid-sumava": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vlk-navrat-cesko": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-wichterle-kontaktni-cocky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-kafka-promena-praha": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-foglar-rychle-sipy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-mikulasska-nadilka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Anděl a čert“ — chybí nadhled"
+   },
+   {
+    "code": "duplicita",
+    "sev": "warn",
+    "msg": "možný duplicitní fakt s otázkou cz-k-mikulas-cert-andel"
+   }
+  ],
+  "cz-q-lada-svejk": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-voskovec-werich-satira": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-zelezny-osteparsky-rekord": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-caslavska-gesto-1968": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-neumannova-turin-zlato": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-bican-golovy-rekord": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-kvitova-navrat-po-utoku": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-fedcup-serie-titulu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-hlaska-r-jazykova-vyjimka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-nejdelsi-ceske-slovo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-lajknout-anglicismus": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-q-vestonicka-venuse": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vznik-protektoratu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vaclav-havel-drama": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vstup-do-nato": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vstup-do-eu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-kostnice-sedlec": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-krumlovske-divadlo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-hluboka-windsor": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-zlin-batuv-urbanismus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vlk-obecny-navrat-beskydy": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-q-hrabal-pad-z-okna": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-nemcova-smrt": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-velikonocni-pomlazka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vila-tugendhat-brno": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-trnka-loutkovy-film": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-narodni-divadlo-pozar": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-otakar-svec-stalinuv-pomnik": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-chytilova-sedmikrasky-zakaz": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-prechylovani-ova": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Přechylování“ — chybí nadhled"
+   }
+  ],
+  "cz-q-svestkove-knedliky-dezert": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-pivni-lazne-chodova-plana": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-turecka-kava-tradice": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vestonicka-venuse-dospeli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-boiove-jmeno-cech": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-jan-hus-glejt-kostnice-dospeli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-bila-hora-poprava-panu-dospeli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-tricetileta-valka-ubytek-obyvatel": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-rukopisy-kralovedvorsky-zelenohorsky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-jested-tvar": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-trosky-baba-panna": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Baba a Panna“ — chybí nadhled"
+   }
+  ],
+  "cz-k-hluboka-bily-zamek": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-brnensky-drak-krokodyl": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Vycpaný krokodýl“ — chybí nadhled"
+   }
+  ],
+  "cz-k-sysel-obecny": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-klec-kosodrevina": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (191 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-slat-raseliniste": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (169 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-lysa-hora-beskydy": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Moravskoslezských“ — pro 8–11 náročné"
+   }
+  ],
+  "cz-k-tri-kralove-pismena": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-ctyrlistek": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Čtyřlístek“ — chybí nadhled"
+   }
+  ],
+  "cz-k-kocour-mikes": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (154 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-bob-a-bobek": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Z klobouku“ — chybí nadhled"
+   }
+  ],
+  "cz-k-drakiada": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (176 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-pout-posviceni": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (151 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-paleni-jidase": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Pálení Jidáše“ — chybí nadhled"
+   }
+  ],
+  "cz-k-kroj-slovacko": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (181 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-vanocni-kapr-smazeny": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-panenkovka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (179 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-turisticke-znaceni": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (160 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-sablikova-brusle": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Na dlouhé vytrvalostní trati“ — chybí nadhled"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Rychlobruslařka“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (235 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-krpalek-judo": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-spindleruv-mlyn-lyze": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejoblíbenější“ — pro 8–11 náročné"
+   }
+  ],
+  "cz-t-navratilova-wimbledon-2": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-krkonose-bezky": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (195 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hokejova-zlata-nagano": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (174 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-lide-zeman-trikar": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (161 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-lide-rudolf-druhy-cisar": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (185 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-ctyrlistek-komiks": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejoblíbenější“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-muzeum-loutek-chrudim": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (170 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-narodni-divadlo-narod-sobe": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-loreta-zvonkohra": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-kraslice-velikonocni-vejce": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-barrandov-filmove-ateliery": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (199 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-sgrafito-technika": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-modrotisk-indigo": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-lidove-kroje-vysivka": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „pestrobarevnému“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-manasek-loutka-na-ruku": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "cz-k-ch-jedno-pismeno": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (157 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-tri-rody-podstatnych-jmen": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (155 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-de-te-ne-mekce": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-vyjmenovana-slova": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (179 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-sazava-prokop": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (153 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-bivoj-kanec": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (210 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-sarka-divci-valka": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (179 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-svatopluk-pruty": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (180 znaků) pro 8–11"
+   }
+  ],
+  "cz-t-hist-samo-kupec": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-hist-jan-nepomucky-hvezdy": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (183 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-vysehrad-libusin-soud": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (171 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-jan-lucembursky-kresak": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (170 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-kutna-hora-stribro": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-hist-karel-vinice": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (160 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-chodove-psi-trubky": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (175 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-nove-mesto-prazske": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (171 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-hist-kazi-lecitelka": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "cz-k-mince-lev": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-k-klin-smer": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-k-lev-jazyk-drapy": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jazyk a drápy“ — chybí nadhled"
+   }
+  ],
+  "cz-k-vlajka-po-rozdeleni": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Československa.“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (157 znaků) pro 8–11"
+   }
+  ],
+  "cz-k-lipa-list-tvar": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Tvar srdce“ — chybí nadhled"
+   }
+  ],
+  "cz-k-vlajka-barvy-slovane": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Slovensko“ — chybí nadhled"
+   }
+  ],
+  "cz-q-zizkovska-vez-miminka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-vila-tugendhat": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-q-kurovcova-kalamita": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-tri-orisky-popelka": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "cz-q-piva-spotreba-svet": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-sadlo-cibule-pochoutka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-malinovka-cervena-limonada": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Malinovka“ — chybí nadhled"
+   }
+  ],
+  "cz-q-samkova-snowboardcross": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Snowboardcross“ — chybí nadhled"
+   }
+  ],
+  "cz-q-bata-zlin-mesto": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-horakova-poprava-1950": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-lendl-wimbledon-nikdy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-kundera-obcanstvi-odebrano": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-svec-stalin-pomnik-osud": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-saudek-fotografie-styl": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-jirasek-stare-povesti": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-macha-libani-petrin": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-dvorak-rusalka-mesicku": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Měsíčku na nebi hlubokém“ — chybí nadhled"
+   }
+  ],
+  "cz-q-kundera-zivot-ve-francii": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Ve Francii“ — chybí nadhled"
+   }
+  ],
+  "cz-q-vyjmenovana-slova": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-buchty-kolace-regiony": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-pet-opic-pad": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-emigrace-1968": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-jan-masaryk-zahadna-smrt": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-obcanske-forum-1989": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Občanské fórum“ — chybí nadhled"
+   }
+  ],
+  "cz-q-trojkralova-sbirka-charita": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Od roku 2000“ — chybí nadhled"
+   }
+  ],
+  "cz-q-knedlik-krajeni-nit": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-pestitelske-paleni-zakon": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Pěstitelské pálení“ — chybí nadhled"
+   }
+  ],
+  "cz-q-novotna-plac-na-rameni-vevodkyne": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-antonin-holy-antivirotika": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-kupka-abstraktni-pruvodce": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-toyen-pseudonym": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-delka-samohlasek-vyznam": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-zlata-bula-sicilska-dospeli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-unor-1948-prevzeti-moci": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "cz-q-havel-dopisy-olze": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "de-q-neuschwanstein": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "de-q-caspar-david-friedrich": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "de-k-cerny-les": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Černý les“ — chybí nadhled"
+   }
+  ],
+  "de-a-stollen": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "de-a-von-braun": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "de-k-plysovy-medvidek": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Plyšový medvídek“ — chybí nadhled"
+   }
+  ],
+  "de-t-karl-benz": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Karl Benz“ — chybí nadhled"
+   }
+  ],
+  "de-k-gummy-bears": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (199 znaků) pro 8–11"
+   }
+  ],
+  "de-t-boris-becker-wimbledon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "de-k-miniatur-wunderland": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (191 znaků) pro 8–11"
+   }
+  ],
+  "dk-k-mala-morska-vila": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "dk-t-andersen": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Hans Christian Andersen“ — chybí nadhled"
+   }
+  ],
+  "dk-k-aebleskiver": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Æbleskiver“ — chybí nadhled"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (186 znaků) pro 8–11"
+   }
+  ],
+  "dk-k-skagen": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (181 znaků) pro 8–11"
+   }
+  ],
+  "dk-a-christiania": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Christiania“ — chybí nadhled"
+   }
+  ],
+  "dk-k-nejvyssi-bod": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (168 znaků) pro 8–11"
+   }
+  ],
+  "dk-k-vikingove": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "dk-t-jazyk": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "dk-a-karen-blixen": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Isak Dinesen“ — chybí nadhled"
+   }
+  ],
+  "dk-k-sort-sol": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (184 znaků) pro 8–11"
+   }
+  ],
+  "dk-k-tivoli-park": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejkouzelnější,“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (182 znaků) pro 8–11"
+   }
+  ],
+  "ec-q-sopky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ec-k-rovnik": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ec-k-zelva": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ec-k-kondor": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "eg-q-tutanchamon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "eg-k-kocky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "eg-k-rude-more": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "eg-k-papyrus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "eg-t-abu-simbel": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "eg-t-nefertiti": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "eg-t-squash": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "eg-a-mumie-pas": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "eg-a-hustota-obyvatel": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "eg-k-nilsky-krokodyl": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "es-k-kastanety": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Kastaněty“ — chybí nadhled"
+   }
+  ],
+  "es-k-pomeranc": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „pomerančovníky.“ — pro 8–11 náročné"
+   }
+  ],
+  "es-a-hmyz": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "es-t-spanelsky-jazyk": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "es-k-cantabrian-bear": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "es-k-reyes-magos": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Tři králové“ — chybí nadhled"
+   }
+  ],
+  "es-k-flag-colors": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Červenou a žlutou“ — chybí nadhled"
+   }
+  ],
+  "fi-k-sob": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "fi-t-nokia": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-k-polarni-zar": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "fi-k-jokamies": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-k-angry-birds": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-t-linux": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-t-salmiakki": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-t-f1": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-t-aalto": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-a-obcanska-valka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-a-nato": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-k-piirakka": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „Karjalanpiirakka“ — pro 8–11 náročné"
+   }
+  ],
+  "fi-k-kerimaki": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-t-kalevala": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-k-saimaa-ringed-seal": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-t-suomenlinna-fortress": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fi-k-korvapuusti-bun": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fj-q-ostrovy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fj-q-koraly": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fj-q-indofidzijci": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fj-q-nezavislost": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fj-q-masi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fj-k-kokos": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Kokosová palma“ — chybí nadhled"
+   }
+  ],
+  "fj-t-suva": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "fj-k-ragby-mic": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejoblíbenější“ — pro 8–11 náročné"
+   }
+  ],
+  "fj-t-pisecne-duny": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "fj-a-prevrat": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Napětí mezi domorodými Fidžijci a Indofidžijci po volbách“ — chybí nadhled"
+   }
+  ],
+  "fr-q-fest-noz": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Noční slavnost“ — chybí nadhled"
+   }
+  ],
+  "fr-q-akademie": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Nesmrtelní“ — chybí nadhled"
+   }
+  ],
+  "fr-k-croissant": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Croissant“ — chybí nadhled"
+   },
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "fr-k-kohout": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Galský kohout“ — chybí nadhled"
+   }
+  ],
+  "fr-t-tour": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Tour de France“ — chybí nadhled"
+   }
+  ],
+  "fr-t-champagne": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Champagne“ — chybí nadhled"
+   }
+  ],
+  "fr-t-marseillaise": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Marseillaise“ — chybí nadhled"
+   }
+  ],
+  "fr-t-loire": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Údolí Loiry“ — chybí nadhled"
+   }
+  ],
+  "fr-k-crepes-bretan": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ga-t-libreville": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Libreville“ — chybí nadhled"
+   }
+  ],
+  "gb-q-lakedistrict": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-q-shakespeare": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-q-globe": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-k-autobus": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „dvouposchoďové“ — pro 8–11 náročné"
+   }
+  ],
+  "gb-k-excalibur": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Excalibur“ — chybí nadhled"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "gb-t-big-ben-zvon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-t-wimbledon-jahody": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-a-syrove-kouleni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-t-metro-prvni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-a-taxi-knowledge": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-k-robinhood": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "gb-k-highland-kravy": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "gb-k-vanocni-crackery": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gb-k-velsska-vlajka-drak": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "gr-q-antika-olympiada": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gr-k-vlajka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "gr-k-olivy": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Olivovníky“ — chybí nadhled"
+   }
+  ],
+  "gr-t-sparta-300": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "hu-q-busojaras": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "hu-q-betyar": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "hu-q-gulyas": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "hu-k-rubik-kdo": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Z Maďarska“ — chybí nadhled"
+   }
+  ],
+  "hu-k-marcipan-szentendre": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Marcipánu“ — chybí nadhled"
+   }
+  ],
+  "id-k-komodo": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Komodský varan“ — chybí nadhled"
+   }
+  ],
+  "id-k-garuda": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Zlatý okřídlený orel z hinduistické mytologie“ — chybí nadhled"
+   }
+  ],
+  "id-k-javsky-nosorozec": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jávský nosorožec“ — chybí nadhled"
+   }
+  ],
+  "id-k-bali-terasy": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejoblíbenější“ — pro 8–11 náročné"
+   }
+  ],
+  "ie-t-riverdance": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ie-k-kravy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ie-k-bodhran": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "ie-t-keltsky-kriz": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ie-t-uilleann-pipes": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ie-k-papuchalci-skellig": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „pestrobarevným“ — pro 8–11 náročné"
+   }
+  ],
+  "il-q-stare-mesto-jeruzalema": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-mrtve-more": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-machtes-ramon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-chaim-weizmann": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-bile-mesto-tel-avivu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-maccabi-tel-aviv": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-hummus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-vznik-statu-izrael": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-q-zalozeni-tel-avivu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "il-k-kozorozec": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "in-q-taj-mahal": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "in-q-himalaje": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "in-q-gandhi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "in-q-diwali": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "in-q-holi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "in-q-yoga": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "in-q-polo": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Ze Střední Asie“ — chybí nadhled"
+   }
+  ],
+  "in-q-hindi": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Dévanágarí“ — chybí nadhled"
+   }
+  ],
+  "in-q-republika": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "in-k-tygr": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Bengálský tygr“ — chybí nadhled"
+   }
+  ],
+  "in-k-asijsky-lev": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jen v indickém lese Gir“ — chybí nadhled"
+   }
+  ],
+  "in-k-slon-indicky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "it-q-karneval-benatky": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "it-q-la-scala": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "it-q-fotbalova-reprezentace": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Čtyřikrát“ — chybí nadhled"
+   }
+  ],
+  "it-k-pisa": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "it-k-mandolina-nastroj": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Mandolína“ — chybí nadhled"
+   }
+  ],
+  "it-k-koloseum-zvire": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "it-t-fellini": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "it-a-pompeje-odlitky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "it-k-tvar": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "it-k-zmrzlina-vanocni": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Panettone“ — chybí nadhled"
+   }
+  ],
+  "it-t-trulli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "it-a-machiavelli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "it-k-nutella-puvod": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „čokoládovo-oříšková“ — pro 8–11 náročné"
+   }
+  ],
+  "jp-q-tokio": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-q-ainu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-q-meidzi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-q-ukijoe": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-t-haiku": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-a-ustava": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-a-dluh": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-k-takoyaki": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Kousek chobotnice“ — chybí nadhled"
+   }
+  ],
+  "jp-t-manga-tezuka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Osamu Tezuka“ — chybí nadhled"
+   }
+  ],
+  "ke-q-masai-mara": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ke-q-ugali": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ke-q-mau-mau": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ke-q-kisii": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ke-k-mount-kenya": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Mount Kenya“ — chybí nadhled"
+   }
+  ],
+  "ke-k-plamenaci": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jezero Nakuru“ — chybí nadhled"
+   }
+  ],
+  "ke-t-nyama-choma": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Nyama choma“ — chybí nadhled"
+   }
+  ],
+  "ke-t-wangari-maathai": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Wangari Maathai“ — chybí nadhled"
+   }
+  ],
+  "ke-a-turkana-boy": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Turkana Boy“ — chybí nadhled"
+   }
+  ],
+  "ke-a-jomo-kenyatta": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Od ozdobného opasku, který nosil“ — chybí nadhled"
+   }
+  ],
+  "ke-k-nosorozec": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (161 znaků) pro 8–11"
+   }
+  ],
+  "kp-q-pektu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kp-q-kumgang": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kp-q-chuseok": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "kp-q-hudba": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Citara kayagum“ — chybí nadhled"
+   }
+  ],
+  "kp-q-kimchi-jidlo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kp-k-hanbok": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (151 znaků) pro 8–11"
+   }
+  ],
+  "kp-t-pchjongjang": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Pchjongjang“ — chybí nadhled"
+   }
+  ],
+  "kp-t-kaesong": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Hlavním městem korejské dynastie Kórjo“ — chybí nadhled"
+   }
+  ],
+  "kp-k-talchum": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "kp-k-jerab-mandzursky": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jeřáb mandžuský“ — chybí nadhled"
+   }
+  ],
+  "kr-q-bukchon-hanok": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "kr-q-getbol-suncheon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-sejong": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-yu-gwan-sun": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-jang-yeong-sil": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-hanbok": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-taekwondo-jizni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-bibimbap": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-joseon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-q-zazrak-na-rece-han": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "kr-t-mugunghwa": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "kr-k-jindo": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "mn-q-suchbatar": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mn-q-naadam-kultura": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mn-q-pismo": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "mn-t-hlavni-mesto": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Ulánbátar“ — chybí nadhled"
+   }
+  ],
+  "mn-k-tsam": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "mn-k-jmena": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Dědičná příjmení“ — chybí nadhled"
+   }
+  ],
+  "mn-k-suutei-tsai": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Suutei tsai“ — chybí nadhled"
+   }
+  ],
+  "mn-k-zlaty-orel-lovec": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mn-k-socha-cingischana-na-koni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-q-chichen-itza": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-q-frida": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-q-tenochtitlan": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-q-rivera": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-k-mariachi": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „pestrobarevných“ — pro 8–11 náročné"
+   }
+  ],
+  "mx-k-axolotl": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "mx-a-revoluce-villa-zapata": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-a-tlatelolco-1968": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-k-popocatepetl": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-k-mexico-vyska": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-t-remitence": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-a-narkokartely": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "mx-a-rivera-rockefeller": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "my-q-taman-negara": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "my-q-p-ramlee": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "my-q-peranakan": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "my-q-wau-bulan": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Tvar půlměsíce“ — chybí nadhled"
+   }
+  ],
+  "my-q-silat": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "my-t-kuala-lumpur": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Kuala Lumpur“ — chybí nadhled"
+   }
+  ],
+  "my-k-orangutan-barva": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Rezavě oranžovou“ — chybí nadhled"
+   }
+  ],
+  "my-k-durian-slupka": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "my-t-cameron": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Cameron Highlands“ — chybí nadhled"
+   }
+  ],
+  "my-t-tunku": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Otec nezávislosti“ — chybí nadhled"
+   }
+  ],
+  "nl-q-vilem-oransky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nl-q-sinterklaas": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nl-q-den-krale": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nl-q-gouda": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nl-q-voc": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nl-q-delta-plan": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nl-k-van-gogh-slunecnice": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "nl-k-drevaky-topoly": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (151 znaků) pro 8–11"
+   }
+  ],
+  "nl-k-slanecek-cibule": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "nl-k-oranzova-mrkev": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (169 znaků) pro 8–11"
+   }
+  ],
+  "nl-a-velvyslanectvi-kanada": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "no-a-velrybarstvi": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „V komerčním lovu velryb“ — chybí nadhled"
+   }
+  ],
+  "no-k-sobi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "no-k-vikingska-lod": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "no-t-holmenkollen": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "no-t-bryggen": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "no-t-bokmal-nynorsk": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "no-t-grieg": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "no-a-ibsen": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Moderního realistického dramatu“ — chybí nadhled"
+   }
+  ],
+  "no-k-los-vystraha": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "no-t-vigelandsparken-sochy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-q-rotorua": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-q-maorove": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-q-hangi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-q-haka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-k-kapradina": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-t-bungee": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-t-weta": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-a-zeme-valky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-a-jaderna-zona": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-t-ledovec-tasman": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-t-black-ferns": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Black Ferns“ — chybí nadhled"
+   }
+  ],
+  "nz-t-christchurch-zemetreseni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-a-moko-kauae": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "nz-a-fonterra": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-machupicchu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-cusco": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-nazca": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-titicaca": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-amazon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-fujimori": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-mariategui": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-pisco": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-paleta": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-espanol": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-q-lomo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pe-k-lama": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "pe-k-inkove-machu": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ph-q-basketbal": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Basketbal“ — chybí nadhled"
+   }
+  ],
+  "ph-k-orel": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Filipínský orel“ — chybí nadhled"
+   }
+  ],
+  "ph-k-vlajka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Zlaté slunce s osmi paprsky“ — chybí nadhled"
+   }
+  ],
+  "ph-k-tinikling": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (157 znaků) pro 8–11"
+   }
+  ],
+  "ph-k-mango": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Filipínské mango“ — chybí nadhled"
+   }
+  ],
+  "ph-k-sari-sari": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (191 znaků) pro 8–11"
+   }
+  ],
+  "ph-k-tamaraw": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (179 znaků) pro 8–11"
+   }
+  ],
+  "ph-k-vigan-calesa": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (173 znaků) pro 8–11"
+   }
+  ],
+  "ph-k-lumpia": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (189 znaků) pro 8–11"
+   }
+  ],
+  "ph-k-sampaguita": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Sampaguita“ — chybí nadhled"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (203 znaků) pro 8–11"
+   }
+  ],
+  "pk-q-thar": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pk-q-slova": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Z arabštiny a perštiny“ — chybí nadhled"
+   }
+  ],
+  "pk-t-islamabad": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Islámábád“ — chybí nadhled"
+   }
+  ],
+  "pk-k-vlajka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Srpek měsíce a hvězda“ — chybí nadhled"
+   }
+  ],
+  "pk-k-kriket": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejoblíbenější“ — pro 8–11 náročné"
+   }
+  ],
+  "pk-k-satky": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (172 znaků) pro 8–11"
+   }
+  ],
+  "pl-q-krakow-unesco": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-bialowieza": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-slowinski": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-smigus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-gorale": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-matejko": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-wajda": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-lewandowski": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-swiatek": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-slovanstina": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-jazykolam": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-souhlasky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-oscypek": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-krest-966": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-q-deleni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-k-orel": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "pl-t-bigos": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "pl-k-gdansk-zuraw-jerab": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pl-k-paczki-tlusty-czwartek": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pt-k-pastel-nata": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Sladký vaječný krém“ — chybí nadhled"
+   }
+  ],
+  "pt-k-azulejos": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "pt-t-vasco-da-gama": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Vasco da Gama“ — chybí nadhled"
+   }
+  ],
+  "pt-t-cabo-roca": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Cabo da Roca“ — chybí nadhled"
+   }
+  ],
+  "pt-t-coimbra": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "pt-a-salazar": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Estado Novo“ — chybí nadhled"
+   }
+  ],
+  "pt-a-jindrich-moreplavec": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jindřich Mořeplavec“ — chybí nadhled"
+   }
+  ],
+  "pt-k-caldo-verde": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Caldo verde“ — chybí nadhled"
+   }
+  ],
+  "pt-t-benfica-porto": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Os Três Grandes (Velká trojka)“ — chybí nadhled"
+   }
+  ],
+  "pt-a-manuelino": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "pt-a-caldas-ceramika": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Caldas da Rainha“ — chybí nadhled"
+   }
+  ],
+  "pt-k-capi-hnizda-na-vezich": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pt-k-sardinky-svatoantoninske-slavnosti": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pt-k-futsal-mistri-sveta": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-karpaty": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-martisor": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-enescu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-azbuka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-slovanske-slova": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-sarmale": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-mamaliga": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-mici": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-q-sjednoceni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-t-dacia": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-a-emigrace": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ro-k-cerny-kostel-brasov": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Černý kostel“ — chybí nadhled"
+   }
+  ],
+  "ro-k-papanasi-dezert": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (196 znaků) pro 8–11"
+   }
+  ],
+  "ru-q-hlavni-mesto": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-elbrus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-transsib-cil": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-kaliningrad": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-volha": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-sachalin": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-ojmjakon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-kaviar": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-pravoslavi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-vasil-blazeny": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-mamut": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-sochi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-rurik": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-mongol": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-sssr": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-urbanizace": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-bolsoj": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-ty-vy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-car": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-vladivostok": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-napoleon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-leningrad": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-narody": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-nenci": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-chleb-sul": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-ikony": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-q-tenis": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-a-tunguska": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-k-baikal-svetova-zasoba-vody": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ru-k-kaspicke-more-nejvetsi-jezero": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Kaspické moře“ — chybí nadhled"
+   }
+  ],
+  "ru-k-dalnevychodni-levhart": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „nejohroženější“ — pro 8–11 náročné"
+   }
+  ],
+  "ru-k-ural-drahokamy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-k-ostankinska-vez-nejvyssi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-k-petrohrad-bile-noci": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-k-kazan-sikma-vez": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-k-moskva-city-mrakodrapy": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ru-k-zar-ptak": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-k-ceburaska": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (153 znaků) pro 8–11"
+   }
+  ],
+  "ru-k-dymkovska-hracka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ru-k-car-zvon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "ru-k-syrniki-jidlo": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (168 znaků) pro 8–11"
+   }
+  ],
+  "sa-q-neom": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-rub-al-chali": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-jabal-sawda": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-farasan": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-ibn-saud": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-sokolnictvi": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-al-sadu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-skalni-umeni-hail": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-qahwa": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-arabska-kava": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-q-objev-ropy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-k-velbloud": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jeden hrb“ — chybí nadhled"
+   }
+  ],
+  "sa-k-datle-plod": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sa-k-kadidlo": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
+  "sa-k-cervene-more": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „saúdskoarabského“ — pro 8–11 náročné"
+   }
+  ],
+  "sa-q-metro-rijad": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "se-q-ikea": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "se-k-allemansr": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (169 znaků) pro 8–11"
+   }
+  ],
+  "se-t-zlaty-vek-pop": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "se-t-spotify": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "se-k-valborg-ohne": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-spissky-hrad-unesco": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-gerlachovsky-stit": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-stefanik": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-halusky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-bratislavsky-hrad": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-devin": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-dubcek": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-drotarstvo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-fulla": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-stur": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-bryndza": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-q-velka-morava": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "sk-k-medved": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Medvěd hnědý“ — chybí nadhled"
+   }
+  ],
+  "sk-k-ciernohronska-zeleznica": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Parní vlak na úzkokolejce“ — chybí nadhled"
+   }
+  ],
+  "sk-k-parenica": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Jako zamotaná stuha nebo šnek“ — chybí nadhled"
+   }
+  ],
+  "sk-k-ochtsinska-jaskyna": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Kamenné květy a hvězdičky“ — chybí nadhled"
+   }
+  ],
+  "sk-k-cuvac": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Aby ho bača v noci nespletl s vlkem“ — chybí nadhled"
+   }
+  ],
+  "sk-k-opal": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "sk-k-svist": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Svišť vrchovský“ — chybí nadhled"
+   }
+  ],
+  "th-q-doi-suthep": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-q-zlaty-trojuhelnik": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-q-loy-krathong": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-q-jim-thompson": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-q-sepak-takraw": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-q-somluck-kamsing": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-q-pad-ajutthaje": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-k-durian": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "th-k-zlaty-buddha": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "tr-q-hagia-sofie": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tr-q-efes": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tr-q-ararat": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tr-q-jezero-van": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tr-q-samohlaskova-harmonie": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tr-q-aglutinace": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tr-q-konstantinopol-istanbul": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „V roce 1930“ — chybí nadhled"
+   }
+  ],
+  "tr-q-slovo-jogurt": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Z turečtiny“ — chybí nadhled"
+   }
+  ],
+  "tw-q-taipei-101": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-vesnice-duha": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-souteska-taroko": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-tai-tzu-ying": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-nocni-trhy": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-lampiovy-festival": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "tw-q-cajova-kultura": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-nefritove-zeli": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-tradicni-znaky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-hovezi-nudlova-polevka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-japonska-era": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-q-rok-1949": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "tw-k-modrastraka": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Tchajwanská modrá straka“ — chybí nadhled"
+   }
+  ],
+  "tw-k-zlate-rybky": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Lovení zlatých rybiček“ — chybí nadhled"
+   }
+  ],
+  "tw-k-strasi-strechy": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "tw-k-alishan-vlacek": [
+   {
+    "code": "kids_dlouhe_slovo",
+    "sev": "warn",
+    "msg": "dlouhé/odborné slovo „úzkorozchodnou“ — pro 8–11 náročné"
+   }
+  ],
+  "ua-q-cernozem": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-koroljov": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-sikorskyj": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-vysyvanka": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-ivana-kupala": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-andrij-sevcenko": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-surzyk": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-vareniky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-salo": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-q-kyjevska-rus": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-k-pampusky": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Česnekovým olejem s petrželkou“ — chybí nadhled"
+   }
+  ],
+  "ua-k-odesa-schody": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (203 znaků) pro 8–11"
+   }
+  ],
+  "ua-t-bukovel": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-t-euro2012": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-a-katakomby-odesa": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-a-lavra-mumie": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "ua-k-cibulova-kopule": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "ua-k-chersonske-melouny": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Meloun festival“ — chybí nadhled"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (156 znaků) pro 8–11"
+   }
+  ],
+  "us-q-grand-canyon": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "us-q-hamburger": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "us-q-dekovani": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "us-q-jazz": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "us-k-orel": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Orel bělohlavý“ — chybí nadhled"
+   }
+  ],
+  "us-k-yellowstone": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Yellowstone“ — chybí nadhled"
+   },
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "us-k-mississippi": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Mississippi“ — chybí nadhled"
+   }
+  ],
+  "us-k-broadway": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "us-k-superbowl": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Super Bowl“ — chybí nadhled"
+   }
+  ],
+  "vn-q-ha-long-bay": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-hoi-an": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-mekong-delta": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-fansipan": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-son-doong": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-ho-chi-minh": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-sestry-trung": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-ao-dai": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-uctivani-predku": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-vodni-loutky": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-nha-nhac": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-vovinam": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-da-cau": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-quoc-ngu": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-q-vietnam-jmeno": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "vn-k-buvol": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Vodní buvol“ — chybí nadhled"
+   }
+  ],
+  "vn-k-klobouk": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (158 znaků) pro 8–11"
+   }
+  ],
+  "vn-k-draci-ovoce": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Dračí ovoce“ — chybí nadhled"
+   }
+  ],
+  "vn-k-sao-la": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Asijský jednorožec“ — chybí nadhled"
+   },
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (190 znaků) pro 8–11"
+   }
+  ],
+  "za-q-mandela": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "za-q-ndebele": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "za-q-rugby1995": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "za-q-code-switching": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "za-k-slon": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Africký slon“ — chybí nadhled"
+   }
+  ],
+  "za-k-springbok": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Springbok“ — chybí nadhled"
+   }
+  ],
+  "za-k-duhovy-narod": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Duhový národ“ — chybí nadhled"
+   }
+  ],
+  "za-k-vuvuzela": [
+   {
+    "code": "kids_dlouha_otazka",
+    "sev": "warn",
+    "msg": "dlouhá otázka (160 znaků) pro 8–11"
+   }
+  ],
+  "za-k-ms-fotbal-2010": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Hostila mistrovství světa ve fotbale“ — chybí nadhled"
+   }
+  ],
+  "cz-q-zatopek": [
+   {
+    "code": "duplicita",
+    "sev": "warn",
+    "msg": "možný duplicitní fakt s otázkou cz-t-lide-zatopek-bezec"
+   }
+  ],
+  "cz-t-lide-zatopek-bezec": [
+   {
+    "code": "duplicita",
+    "sev": "warn",
+    "msg": "možný duplicitní fakt s otázkou cz-q-zatopek"
+   }
+  ],
+  "cz-k-mikulas-cert-andel": [
+   {
+    "code": "duplicita",
+    "sev": "warn",
+    "msg": "možný duplicitní fakt s otázkou cz-q-mikulasska-nadilka"
+   }
+  ],
+  "cz-q-spejbl-hurvinek-loutky": [
+   {
+    "code": "duplicita",
+    "sev": "warn",
+    "msg": "možný duplicitní fakt s otázkou cz-k-spejbl-hurvinek"
+   }
+  ]
+ }
+}

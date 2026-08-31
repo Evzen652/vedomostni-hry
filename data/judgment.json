@@ -1,0 +1,1243 @@
+{
+ "generated": "2026-08-14T10:55:29.231Z",
+ "source": "judgment",
+ "flagged": 163,
+ "findings": 180,
+ "codeCounts": {
+  "tezke_6_9": 57,
+  "vrstvy_stejne": 58,
+  "nevhodne_6_9": 9,
+  "neni_vtipne": 34,
+  "hlaska_mimo": 8,
+  "distraktor_snadny": 6,
+  "odpoved_sporna": 8
+ },
+ "byId": {
+  "ar-q-ba": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1, ale pojmy jako architektura, kavárenská a kulturní scéna, Borges či protestní demonstrace jsou pro děti 6–9 příliš abstraktní; buď zjednodušit, nebo zvýšit obtížnost."
+   }
+  ],
+  "ar-q-borges": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong a explanation nesou prakticky tutéž informaci (oslepl ve středním věku → jmenován ředitelem národní knihovny); jednu vrstvu přepsat na jiný fakt nebo čistou reakci."
+   }
+  ],
+  "ar-q-fangio": [
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: quip_wrong o pilotech, kteří „umírali za volantem skoro stejně často, jako vyhrávali“, je pro děti 6–9 zbytečně temný; přeformulovat bez motivu smrti."
+   }
+  ],
+  "ar-q-tango": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: vznik v chudinských čtvrtích přistěhovalců a pojem „pouliční neřest“ jsou pro děti 6–9 abstraktní a nesrozumitelné."
+   }
+  ],
+  "ar-q-dulceleche": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: spor o „vynález“ a národní autorství mezi Argentinou, Chile a Uruguayí (i distraktory o dovozu z 19. století) je pro děti 6–9 příliš abstraktní."
+   }
+  ],
+  "ar-q-evita": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: „symbol sociální spravedlnosti“ i distraktory (vojenská diktatura, ekonomická liberalizace, zahraniční politika) jsou pro děti 6–9 nesrozumitelné politické pojmy."
+   }
+  ],
+  "ar-q-lunfardo": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct („Obrátit slabiky je jednoduchý trik s dlouhou tradicí.“) jen konstatuje fakt bez vtipu či nadhledu; dodat pointu."
+   }
+  ],
+  "ar-q-guarani": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_correct mluví o tom, že Paraguay mluví guaraní víc než španělsky, ale testovaný fakt je, KDE v Argentině je guaraní spoluúřední (Corrientes); hlášku navázat na Corrientes."
+   }
+  ],
+  "at-q-ctyriskok": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct jen přepočítá „dvě ze čtyř = polovina“ a duplikuje quip_wrong bez vlastní pointy; přepsat na skutečný vtip."
+   }
+  ],
+  "au-q-bariera": [
+   {
+    "code": "distraktor_snadny",
+    "sev": "judge",
+    "msg": "Distraktory (útes bez ryb, útes, který nikdy nebyl vyfotografován, nejmladší útes) jsou tak absurdní, že správná odpověď je triviální; nahradit uvěřitelnějšími."
+   },
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Tvrzení „jediná živá stavba viditelná z vesmíru“ je notoricky mytizované a odbornými zdroji zpochybňované; přeformulovat na obhájitelnější fakt (např. největší korálový systém světa)."
+   }
+  ],
+  "bg-q-shopska": [
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Odpověď/vysvětlení tvrdí čirou „náhodu“ a redukuje vlajku na „červeno-bílé“ barvy, ačkoli bulharská vlajka je bílo-zeleno-červená (salát ladí i zelenou) a část zdrojů uvádí záměrný vznik přes agenturu Balkantourist; distraktor o státní objednávce je tak částečně obhájitelný."
+   }
+  ],
+  "br-q-amazon": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Otázka na podíl světových suchozemských druhů (třetina, 'odhadem') je pro děti 6-9 příliš abstraktní; zjednodušit na konkrétní obraz."
+   }
+  ],
+  "br-q-karneval": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojem 'komunitní organizace z chudých čtvrtí' je pro 6-9 abstraktní; pro nejmenší formulovat konkrétněji (např. lidé z jedné čtvrti, co spolu celý rok chystají průvod)."
+   }
+  ],
+  "br-q-churrasco": [
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "Distraktor 'Z afrických otrokářských táborů' vnáší do otázky pro 6-9 těžké téma otroctví; nahradit neutrálním distraktorem."
+   },
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct 'jeden prales, dvě kultury' je nevtipný a navíc geograficky nepřesný — gaúcho kraj jižní Brazílie a Argentiny je pampa/step, ne prales."
+   }
+  ],
+  "br-q-futbal": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct 'Ve finále 1970 mluvil komentátor jen brazilsky. Zbytek světa taky.' je matoucí a bez čitelné pointy; přepsat."
+   }
+  ],
+  "br-q-portugaltina": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Koncept odlišného vývoje dvou variant jazyka je pro 6-9 abstraktní a quip 'Brazilci otevřeli samohláskami to, co Portugalci zavřeli' je čirý lingvistický žargon nad rámec dětí."
+   }
+  ],
+  "ca-q-hokej": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Otázka (přes id 'hokej') míří na Apology Act — právní koncept, že omluva nesmí být přiznáním viny; pro děti 6-9 nepochopitelné, patří do vyšší obtížnosti."
+   }
+  ],
+  "ca-q-multiculturalismus": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Abstraktní politický koncept (multikulturalismus vs. asimilace) je pro 6-9 moc těžký; zjednodušit na konkrétní obraz rozmanitosti."
+   }
+  ],
+  "ca-q-konfederace": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Memorování letopočtu 1867 (a rozlišení mezi 1776/1901/1931) je pro děti 6-9 nevhodné; letopočty patří do vyšší obtížnosti."
+   }
+  ],
+  "ca-q-tanec": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong 'Mísí se francouzské a skotské lidové tance s moderním baletem a současným tancem.' je jen suchý přepis odpovědi bez jakéhokoli vtipu či nadhledu."
+   },
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong je téměř doslovná kopie explanation ('francouzské a skotské tradice i moderní balet a současný tanec') — hráč čte totéž dvakrát."
+   }
+  ],
+  "ch-q-henri-dunant": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Bitva u Solferina jako podnět k založení Červeného kříže je pro 6-9 abstraktní a těžké téma; patří do vyšší obtížnosti."
+   }
+  ],
+  "ch-q-le-corbusier": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Rodné jméno architekta (Charles-Édouard Jeanneret) a výběr mezi francouzskými jmény je pro děti 6-9 příliš niche a bez záchytného bodu."
+   }
+  ],
+  "cl-q-pinochet": [
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "Vojenský převrat, svržení prezidenta a nastolení diktatury je pro děti 6-9 nevhodně těžké a temné téma; přesunout do vyšší obtížnosti."
+   },
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Abstraktní politický koncept převratu s datem 11. září 1973 je pro 6-9 příliš náročný."
+   }
+  ],
+  "cl-q-humboldt": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Mechanismus studeného mořského proudu přinášejícího 'živiny z hlubin' je pro děti 6-9 abstraktní vědecký koncept; zjednodušit."
+   }
+  ],
+  "se-q-visby": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen suše přepisuje odpověď a přidává fakt o hradbě, žádný nadhled ani pointa; přeformulovat s ironií."
+   },
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong i explanation nesou tutéž informaci (nejzachovalejší hanzovní město + středověká hradba); jedna vrstva by měla přinést jiný fakt."
+   }
+  ],
+  "se-q-laponia": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong je plochý přepis odpovědi ('chrání krajinu i způsob života zároveň') bez vtipu; dodat pointu."
+   }
+  ],
+  "se-q-polarni-zare": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojem 'nabité částice ze Slunce v zemské atmosféře' je pro děti 6–9 abstraktní fyzika; zjednodušit formulaci odpovědi."
+   }
+  ],
+  "se-q-hudba": [
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Tvrzení, že Švédsko je 'třetí největší vývozce populární hudby na světě', je novinářský a sporný/nedoložitelný údaj bez jasného měřítka."
+   }
+  ],
+  "se-q-slovnik": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Původ švédštiny a angličtiny ze 'staré germánštiny' je pro děti 6–9 příliš abstraktní jazykovědný koncept."
+   }
+  ],
+  "sk-q-vychodna": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong i explanation opakují 'nejstarší a největší celostátní folklórní festival'; hláška by měla nést reakci, ne tentýž fakt."
+   }
+  ],
+  "th-q-jim-thompson": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen konstatuje '1948 spoluzaložil Thai Silk Company', bez nadhledu; přeformulovat s pointou."
+   },
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong a explanation nesou totéž (spoluzaložení Thai Silk Company 1948); duplicita mezi vrstvami."
+   }
+  ],
+  "th-q-somluck-kamsing": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_wrong tvrdí, že se v pérové váze 'boduje na centimetry přesnosti' — box se boduje na zásahy, ne na centimetry; údaj je nepřesný a míjí testovaný fakt."
+   }
+  ],
+  "tr-q-nazar-boncuk": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Slovo/koncept 'placebo' v hlášce je pro děti 6–9 příliš pokročilý; nahradit srozumitelnějším obratem."
+   }
+  ],
+  "tr-q-kirkpinar": [
+   {
+    "code": "distraktor_snadny",
+    "sev": "judge",
+    "msg": "Distraktor 'Vosou' (mazat se vosou) je nesmysl (nejspíš překlep za 'voskem') a spolu s ostatními činí olivový olej triviálně zjevný."
+   }
+  ],
+  "tr-q-lokum": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen opakuje překlad 'sousto' ('upřímný popis porce'), žádný vtip; dodat nadsázku."
+   },
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct, quip_wrong i explanation točí dokola tentýž fakt (lokum = 'sousto'); hráč čte totéž třikrát."
+   }
+  ],
+  "tw-q-narodni-palacove-muzeum": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct 'Tady je schovaná historie celých tisíciletí' je generická fráze bez vtipu či pointy; dát konkrétní hravou reakci."
+   }
+  ],
+  "tw-q-jusan": [
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Tvrzení, že Yu Shan je nejvyšší vrchol celé severovýchodní Asie, je sporné (Kamčatka má vrcholy přes 4700 m); omezit na 'vyšší než japonská Fudži' a nejvyšší na Tchaj-wanu."
+   }
+  ],
+  "tw-q-ang-lee": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct a quip_wrong nesou tutéž pointu (dva Oscary, ani jeden film z rodného ostrova); jednu z nich úplně přeformulovat."
+   },
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: režisér Ang Lee ani filmy Zkrocená hora a Pí a jeho život nejsou pro děti 6–9 rozpoznatelné."
+   }
+  ],
+  "tw-q-tai-tzu-ying": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct, quip_wrong i explanation opakují totéž (nepředvídatelný styl, nejdéle na čele žebříčku BWF)."
+   }
+  ],
+  "tw-q-cajova-kultura": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují týž fakt o čajových keřích ve výšce přes 2000 m."
+   }
+  ],
+  "tw-q-loutkove-divadlo": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct i quip_wrong říkají totéž (tradiční ruční loutky dostaly vlastní televizní seriál)."
+   }
+  ],
+  "tw-q-baseball": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct i quip_wrong opakují totéž (mládežnické týmy, světové tituly, národní hrdost)."
+   }
+  ],
+  "tw-q-stolni-tenis": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (salonní hra z Anglie proměněná na vrcholový sport)."
+   }
+  ],
+  "tw-q-cyklistika-huandao": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (900 km kolem ostrova jako životní rituál)."
+   }
+  ],
+  "tw-q-tradicni-znaky": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (tradiční znaky s každým tahem vs. zjednodušené v pevninské Číně)."
+   }
+  ],
+  "tw-q-hokkien": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct 'Na trzích a mezi přáteli zní tento jazyk velmi často' je plochý fakt bez vtipu."
+   }
+  ],
+  "tw-q-bopomofo": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct 'Malé symboly pomáhají školákům správně vyslovovat' je jen přepis odpovědi bez nadhledu."
+   }
+  ],
+  "tw-q-hovezi-nudlova-polevka": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct a quip_wrong jsou téměř totožné (vlastní festival, 'leckterý národní hrdina/hrdinka se pocty nedočkal')."
+   }
+  ],
+  "tw-q-demokratizace": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (skoro 38 let stanného práva skončilo 1987, cesta k volbám)."
+   }
+  ],
+  "ua-q-krym": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (5–7 km úzké hrdlo rozhoduje, zda je Krym poloostrov, či skoro ostrov)."
+   }
+  ],
+  "ua-q-ivana-kupala": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (jedna noc v roce, kdy živly/příroda mají zvláštní moc)."
+   }
+  ],
+  "ua-q-malevic": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (jeden čtverec stačil, umění nemuselo nic zobrazovat)."
+   }
+  ],
+  "ua-q-cyrilice": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (stejné písmo na první pohled, čtyři znaky navíc, jiný jazyk)."
+   }
+  ],
+  "ua-q-hymna": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (text z 1862 přijat oficiálně až 2003)."
+   }
+  ],
+  "ua-q-borsc": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (polévka na seznamu ohroženého dědictví hodná ochrany)."
+   }
+  ],
+  "ua-q-vareniky": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (stejný tvar jako u souseda, tenčí těsto/jiný recept)."
+   }
+  ],
+  "ua-q-nezavislost-1991": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (datum vyhlášení muselo počkat na potvrzující referendum)."
+   }
+  ],
+  "us-q-grand-canyon": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (skoro dvě miliardy let geologie na dosah jako túra časem)."
+   }
+  ],
+  "us-q-nba": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct a quip_wrong jsou téměř totožné (přes stovku hráčů narozených mimo USA, 'americká' liga je mezinárodní)."
+   }
+  ],
+  "vn-q-hoi-an": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (město paradoxně přežilo díky úpadku obchodu)."
+   }
+  ],
+  "vn-q-mekong-delta": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (víc než polovina veškeré vietnamské rýže z jedné delty)."
+   }
+  ],
+  "vn-q-fansipan": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (nejvyšší bod Indočíny, kdysi vícedenní trek, dnes lanovka za pár minut)."
+   }
+  ],
+  "vn-q-sestry-trung": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (dvě ženy vedly vojsko a tři roky vládly ve starověku, kdy to nikdo nečekal)."
+   }
+  ],
+  "vn-q-vo-nguyen-giap": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (samouk bez vojenského výcviku porazil profesionální armádu)."
+   }
+  ],
+  "vn-q-ao-dai": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (hanojský výtvarník dal moderní siluetu, inspirace z Paříže)."
+   }
+  ],
+  "vn-q-vodni-loutky": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (loutkáři skrytí po pás ve vodě za bambusovou zástěnou)."
+   }
+  ],
+  "vn-q-nha-nhac": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (dvorní hudba kdysi jen pro císařův sluch, dnes pro kohokoli)."
+   }
+  ],
+  "vn-q-vovinam": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky i explanation opakují totéž (založeno 1938 v jednom městě, dnes cvičeno ve víc než 60 zemích)."
+   }
+  ],
+  "vn-q-quoc-ngu": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (písmo vzniklo jako vedlejší produkt kázání cizích misionářů)."
+   }
+  ],
+  "vn-q-pho": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (recept se zrodil na severu, slávu získal daleko s uprchlíky)."
+   }
+  ],
+  "vn-q-dien-bien-phu": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "Obě hlášky opakují totéž (jedna prohraná bitva stačila, aby se velmoc stáhla z celé Indočíny)."
+   }
+  ],
+  "vn-q-vietnam-jmeno": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_correct mluví o tom, že jméno čekalo na oficiální schválení panovníkem, ne o testovaném významu 'Jih lidu Viet'."
+   }
+  ],
+  "za-q-table-mountain": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong i explanation nesou tentýž fakt (jméno Tafelberg = stolová hora); jednu vrstvu přeformulovat, ať nese jinou informaci."
+   }
+  ],
+  "za-q-mandela": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojmy apartheid, odpor proti systému a 27 let vězení jsou pro děti 6–9 abstraktní a těžké; buď zjednodušit, nebo posunout na difficulty 2."
+   }
+  ],
+  "za-q-ndebele": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong a explanation opakují totéž (vzory vznikly po vojenské porážce jako tajný kód); nechat vtip v hlášce a fakt navíc v explanation."
+   }
+  ],
+  "cn-q-konfucius": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pro děti 6–9 jsou pojmy filozof, morálka a společenská harmonie příliš abstraktní; zjednodušit na to, že Konfucius učil, jak se k sobě lidé mají chovat."
+   }
+  ],
+  "cz-q-sumava": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_correct mluví o zvětrání starých hor a růstu rašelinišť, ale testovaný fakt je, že rašeliniště od roku 1991 chrání národní park — hláška se míjí s tím, na co se otázka ptá."
+   }
+  ],
+  "cz-q-jizda-kralu": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct, answer i explanation nesou tutéž informaci (aby ho nikdo nepoznal po hlase) — hláška jen opakuje odpověď bez nového úhlu či vtipu."
+   }
+  ],
+  "cz-q-zatopek": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct jen doslova opakuje zadání otázky (poprvé maraton, rovnou vyhrál) bez nadhledu či pointy; přidat vtip, ne přepis."
+   }
+  ],
+  "cz-q-jan-hus": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pro děti 6–9 je řetězec upálení kacíře → vypuknutí husitských válek abstraktní a temný; koncept náboženských válek je nad jejich chápání."
+   }
+  ],
+  "cz-q-sametova-revoluce": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojmy vláda jedné strany, režim a bez jediného výstřelu jsou pro děti 6–9 příliš abstraktní politické koncepty."
+   }
+  ],
+  "de-q-bauhaus": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Umělecká škola spojující výtvarné umění, řemeslo a průmyslový design je pro děti 6–9 abstraktní pojem bez opory v jejich zkušenosti."
+   }
+  ],
+  "de-q-vestfalsky-mir": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Mírová smlouva ukončující třicetiletou válku s letopočtem 1648 a distraktory dalších válek je pro děti 6–9 příliš náročné historické téma."
+   }
+  ],
+  "ec-q-galapagos": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Teorie přirozeného výběru a endemické druhy jsou pro děti 6–9 příliš abstraktní; zjednodušit na to, že zvířata na každém ostrově vypadají jinak."
+   }
+  ],
+  "ec-q-cloudforest": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct \"Tak malý. Tak rychlý. Tak báječný.\" je vágní sled přídavných jmen bez jasné pointy i bez zřejmé vazby na kolibříky — chybí vtip i konkrétnost."
+   }
+  ],
+  "ec-q-cuy": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct \"Logika jídla se mění s výškou a dostupností zdrojů.\" je suché abstraktní konstatování bez nadhledu či pointy."
+   },
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "U difficulty 1 může být pečené morče vcelku (zvíře, které malé děti znají jako mazlíčka) pro šestileté nepříjemné téma."
+   }
+  ],
+  "eg-q-pyramidy": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen popírá distraktory a doslova opakuje odpověď (jediná přežila skoro netknutá), chybí nadsázka či pointa — doplnit skutečný vtip."
+   }
+  ],
+  "eg-q-mumifikace": [
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "U difficulty 1 (6–9 let) je líčení vytahování mozku nosem a odstranění orgánů dost drastické; zvážit mírnější formulaci quip_correct."
+   }
+  ],
+  "es-q-nadal": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojmy grandslam, dvouhra a rekord 14 titulů z Roland-Garros jsou pro děti 6–9 let abstraktní sportovní trivia; sedí spíš na vyšší obtížnost."
+   }
+  ],
+  "es-q-ms2010": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Konkrétní výsledek finále MS 2010 (1:0 v prodloužení s Nizozemskem) je pro 6–9 let příliš specifický historický detail."
+   }
+  ],
+  "es-q-paella": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Rozlišení regionální vs. národní jídlo a otázka na to, jak paellu vnímá většina Španělů, je pro děti 6–9 let příliš abstraktní."
+   },
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Distraktor „národní jídlo celého Španělska\" je obhájitelně správný — paella se běžně (i v cizině i doma) označuje za španělské národní jídlo, takže hranice mezi správnou a špatnou odpovědí je sporná."
+   }
+  ],
+  "es-q-kolumbus": [
+   {
+    "code": "distraktor_snadny",
+    "sev": "judge",
+    "msg": "V kvízu o Španělsku je správná odpověď jediná španělská možnost (distraktory jsou Lisabon, Benátky, Bristol), takže se dá uhodnout i bez znalosti přístavu Palos."
+   }
+  ],
+  "es-q-flamenco": [
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Původ flamenca je smíšený (andaluské, maurské, židovské i romské vlivy); tvrzení „vzniklo mezi Romy, kteří doputovali z Indie přes Pákistán a Egypt\" prezentuje zjednodušenou romantickou etymologii jako jednoznačný fakt."
+   }
+  ],
+  "fr-q-jeanne-d-arc": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Formulace „prolomit obležení Orléans\" a kontext stoleté války jsou pro děti 6–9 let náročné na slovník i pochopení."
+   }
+  ],
+  "fr-q-tour-de-france": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "„Marketingový tah novin L'Auto na zvýšení nákladu\" je pro 6–9 let abstraktní ekonomicko-mediální pojem."
+   }
+  ],
+  "fr-q-ms1998": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Kdo dal dva góly hlavou ve finále MS 1998 je pro děti 6–9 let velmi specifická fotbalová trivia z doby dávno před jejich narozením."
+   }
+  ],
+  "fr-q-bageta": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "„Nehmotné kulturní dědictví UNESCO\" i distraktory (chráněné zeměpisné označení EU) jsou pro 6–9 let abstraktní institucionální pojmy."
+   }
+  ],
+  "fr-q-fest-noz": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct jen doslova zopakuje odpověď („znamená prostě noční slavnost\") bez vtipu či pointy — doplnit nadhled."
+   },
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct (noční slavnost, tanec dlouho do tmy) nese tutéž informaci jako explanation (noční slavnost s hromadnými tanci); hráč čte totéž dvakrát."
+   }
+  ],
+  "fj-q-ragby": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Olympijské zlato v ragby sedmiček z Ria 2016 je pro děti 6–9 let hodně specifická sportovní trivia i málo známý sport."
+   }
+  ],
+  "ga-q-libreville": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Založení města osvobozenými otroky ze zadržené otrokářské lodi v 19. století je pro děti 6–9 abstraktní koloniální historie; posunout na obtížnost 2."
+   }
+  ],
+  "ga-q-prales": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojmy oxid uhličitý, emisní bilance a „karbonově negativní“ jsou pro děti 6–9 příliš abstraktní; zjednodušit nebo zvýšit obtížnost."
+   }
+  ],
+  "ga-q-gorily": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct „I přes svou obrovskou sílu jde o velmi mírná a rodinná zvířata“ jen konstatuje fakt bez vtipu či pointy."
+   }
+  ],
+  "ga-q-manta": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct jen suše opakuje odpověď (kytovci připlouvají vychovat potomky), chybí nadhled."
+   }
+  ],
+  "ga-q-omar-bongo": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct „Jeho figura utvářela politiku i tvář moderního Gabonu“ je plochý dojmový výrok bez pointy."
+   }
+  ],
+  "ga-q-vesnice": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct „Starší předávají příběhy a moudrost mladším“ je klišé bez vtipu."
+   }
+  ],
+  "ga-q-fang-masky": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct jen popisně opakuje funkci sošek (chránit památku předků) bez nadsázky."
+   }
+  ],
+  "ga-q-lope": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct, quip_wrong i explanation opakují tutéž informaci — savana jako pozůstatek doby ledové; jedna vrstva by měla nést vtip, druhá fakt navíc."
+   }
+  ],
+  "ga-q-nezavislost": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong i explanation říkají totéž — francouzská armáda o pár let později obnovila svrženou vládu; sjednotit."
+   },
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Memorovat letopočet nezávislosti 1960 mezi čtyřmi roky je pro děti 6–9 čirá trivia bez opory v pochopení."
+   }
+  ],
+  "ga-q-maniok": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct i quip_wrong nesou stejnou pointu, že syrový maniok je jedovatý; jeden z nich přeformulovat."
+   }
+  ],
+  "ga-q-loango": [
+   {
+    "code": "distraktor_snadny",
+    "sev": "judge",
+    "msg": "Distraktory (park bez jediného zvířete, celý pod hladinou moře, přístupný jen v zimě) jsou zjevně absurdní, správná odpověď triviální."
+   }
+  ],
+  "gb-q-cockney": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong i explanation používají identický příklad „stairs = apples and pears“, který navíc už zazněl v odpovědi — trojí opakování."
+   }
+  ],
+  "gb-q-fishandchips": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojem „sephardští židovští přistěhovalci“ je pro děti 6–9 neznámý a nerozklíčovatelný; posunout na vyšší obtížnost."
+   }
+  ],
+  "gb-q-stonehenge": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Formulace odpovědi „architektonicky nejpropracovanější pravěký kamenný kruh“ je pro děti 6–9 jazykově příliš složitá."
+   }
+  ],
+  "gr-q-akropolis": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Rozlišit Parthenón od Erechtheionu, Propylají a chrámu Dia Olympského je pro děti 6–9 expertní znalost; posunout na obtížnost 2."
+   }
+  ],
+  "gr-q-demokracie": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Řecké etymologické dvojice (demos/kratos, polis/nomos, ethnos/arché) jsou pro děti 6–9 nesrozumitelné."
+   }
+  ],
+  "gr-q-euro-2004": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Sázkové kurzy 150 ku 1 jsou pro děti 6–9 nepochopitelný koncept; distraktory jsou navíc jen čísla kurzů, nedají se odvodit."
+   }
+  ],
+  "gr-q-minojska-civilizace": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pojem minojská civilizace / první vyspělá civilizace Evropy je pro děti 6–9 abstraktní historický koncept."
+   }
+  ],
+  "gr-q-alexandr-veliky": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Memorovat přesný věk nástupu na trůn (20 let) mezi 15/30/40 je pro děti 6–9 čirá trivia bez pochopení."
+   }
+  ],
+  "gr-q-feta": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct a quip_wrong nesou tutéž pointu (podobný bílý sýr po Balkáně, jméno feta jen ten řecký); jeden přeformulovat."
+   }
+  ],
+  "gr-q-gymnazium": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct i quip_wrong opakují stejný vtip — dnešní oblečení gymnazisté vs. nazí řečtí cvičenci; sjednotit."
+   }
+  ],
+  "gr-q-samaria": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_correct mluví o kozách kri-kri a turistech, ne o testovaném faktu (že jde o nejdelší soutěsku Evropy)."
+   }
+  ],
+  "hu-q-gulyas": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct i quip_wrong nesou stejnou pointu (slovo pro pastevce se stalo názvem jídla); jeden z nich přeformulovat."
+   }
+  ],
+  "hu-q-kocar": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct i quip_wrong opakují tutéž pointu o rozšíření slova z vesnice Kocs do evropských jazyků."
+   }
+  ],
+  "id-q-sukarno": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong je jen holý přepis odpovědi a je téměř totožná s quip_correct (obě „pár vět na verandě, a stát je na mapě\") — chybí vlastní nadhled; přepsat quip_wrong na skutečnou pointu."
+   }
+  ],
+  "id-q-batik": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen suše konstatuje zápis UNESCO 2009 bez ironie a navíc doslova opakuje explanation; dát mu vlastní vtip nebo narážku na distraktory."
+   },
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong i explanation nesou tutéž informaci (UNESCO 2009), hráč ji čte dvakrát; explanation by měl přidat fakt navíc."
+   }
+  ],
+  "id-q-gamelan": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct, quip_wrong i explanation všechny říkají totéž (gamel = bít/udeřit, jméno prozrazuje způsob hry) — každá vrstva by měla nést jinou informaci."
+   }
+  ],
+  "id-q-borobudur": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong opakuje přesně stejná čísla jako explanation (504 soch, 2500 reliéfů), takže se dekorativní statistika čte dvakrát za sebou."
+   }
+  ],
+  "in-q-anglictina": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "u difficulty 1: správná odpověď „ve vládě, soudnictví, vzdělávání i IT sektoru\" stojí na abstraktních pojmech (soudnictví, IT sektor), které jsou pro děti 6–9 příliš těžké."
+   }
+  ],
+  "in-q-republika": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "u difficulty 1: odpověď „přijetí indické ústavy\" a rozlišení Dne republiky od nezávislosti vyžaduje pojem ústavy, což je pro děti 6–9 abstraktní a náročné."
+   }
+  ],
+  "jp-q-tokio": [
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Tokio se běžně uvádí jako NEJlidnatější metropolitní aglomerace světa (~37 mil.); označení 'třetí nejlidnatější' je sporné a distraktor 'Největší na světě, bez konkurence' je obhájitelně správný."
+   }
+  ],
+  "jp-q-sushi": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen suše konstatuje fakt (rok 1824, kuchař Hanaja Jóhei) bez jakéhokoli vtipu nebo nadhledu — dej mu pointu."
+   },
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong a explanation jsou téměř totožný text (obojí 'konzervace kvašením v rýži; nigiri vytvořil kolem 1824 Hanaja Jóhei') — hráč čte totéž dvakrát."
+   }
+  ],
+  "kp-q-tangun": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Pro děti 6–9 je pojem 'mytický zakladatel prvního korejského království Kodžoson' abstraktní a název Kodžoson neznámý; zjednodušit formulaci."
+   }
+  ],
+  "kp-q-rodina": [
+   {
+    "code": "distraktor_snadny",
+    "sev": "judge",
+    "msg": "Všechny distraktory (individuální nezávislost bez rodiny, odklon od obřadů, anonymita) jsou zjevně negativní protiklady, takže správná odpověď je triviálně uhodnutelná."
+   }
+  ],
+  "kr-q-hwaseong": [
+   {
+    "code": "odpoved_sporna",
+    "sev": "judge",
+    "msg": "Faktická chyba v quip_wrong i explanation: prince Sada nepopravil 'vlastní děd', ale jeho vlastní OTEC, král Jeongjo (Yeongjo) — opravit na 'otec'."
+   }
+  ],
+  "kr-q-bibimbap": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen zopakuje odpověď a recykluje stejný vtip o míchání, který už je v quip_correct — sám o sobě plochý bez nové pointy."
+   }
+  ],
+  "mn-q-step": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong začíná matoucím slovem „Semkls to“, které nedává smysl ani nefunguje jako pointa — nahradit skutečným vtipem o stepi/kočovnících."
+   }
+  ],
+  "mn-q-kostym": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong i explanation nesou tutéž informaci (déel je volný, aby nevadil při jízdě na koni) — explanation by měla přidat fakt navíc, ne opakovat odpověď."
+   },
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong jen suše zopakuje praktický důvod bez nadsázky či pointy."
+   }
+  ],
+  "mn-q-airag": [
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "U difficulty 1 quip_correct kladně rámuje alkoholický nápoj pro malé děti („mírně alkoholické... pijí místo limonády“) — přeformulovat bez normalizace alkoholu, nebo zvednout obtížnost."
+   }
+  ],
+  "nl-q-anne-frankova": [
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "U difficulty 1 je téma ukrývání Anne Frankové před nacisty (holokaust, pronásledování) pro děti 6–9 příliš těžké/nevhodné — patří na vyšší věkové pásmo."
+   }
+  ],
+  "nl-q-hoge-veluwe": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_correct jen doslova opakuje odpověď („uprostřed divočiny sbírka světového umění“) bez vtipu či pointy."
+   }
+  ],
+  "my-q-bahasa-melayu": [
+   {
+    "code": "distraktor_snadny",
+    "sev": "judge",
+    "msg": "Všechny tři distraktory jsou zjevně absurdní („jen deset slov“, „žádná gramatika“, „píše se obrázky“), takže správná odpověď je triviální i pro děti — dát aspoň jeden obhájitelný distraktor."
+   }
+  ],
+  "pe-q-cusco": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_correct mluví o španělských kostelech na inkých základech, ale otázka testuje VÝZNAM jména Cusco (střed/pupek světa) — hláška se míjí s testovaným faktem; přeformulovat ji na význam jména."
+   }
+  ],
+  "pe-q-ceviche": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "difficulty 1, ale odpověď i vysvětlení stojí na pojmu „kyselina denaturuje protein“, což je pro děti 6–9 příliš odborné; zjednodušit na „kyselina z citrusů rybu uvaří bez tepla“."
+   }
+  ],
+  "pe-q-mario": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "difficulty 1, ale vybavit si peruánského spisovatele Vargase Llosu a rozlišit kategorie Nobelovy ceny je pro děti 6–9 příliš abstraktní."
+   }
+  ],
+  "ph-q-box": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "difficulty 1, ale otázka žádá vybavit si boxera Gabriela „Flash“ Elordeho z 60. let a odlišit ho od Pacquiaa a Donaireho — pro děti 6–9 nereálné."
+   }
+  ],
+  "ph-q-tagalog": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_correct o střídání jazyků (code-switching) nesouvisí s testovaným faktem, že filipínština je standardizovaná forma tagalogu; hlášku navázat na tagalog."
+   }
+  ],
+  "pk-q-jinnah": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "difficulty 1, ale pojmy jako „generální guvernér“, zakladatel státu a teorie dvou národů jsou pro děti 6–9 příliš abstraktní politická historie."
+   }
+  ],
+  "pk-q-truckoví-umelci": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "difficulty 1, ale znalost Malály Júsufzai a konceptu Nobelovy ceny míru je pro děti 6–9 obtížná; navíc id otázky („truckoví-umelci“) neodpovídá obsahu o Malále."
+   },
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "difficulty 1, ale vysvětlení dětem přímo sděluje, že Malálu postřelili členové Tálibánu — pro nejmenší děti drsný obsah, u pásma 6–9 bych ho vypustil."
+   }
+  ],
+  "pk-q-kriket": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "difficulty 1, ale vybavit si rok 1992 mezi čtyřmi plausibilními letopočty (1975/2003/2015) je pro děti 6–9 čirá paměťová trivia bez možnosti odvození."
+   }
+  ],
+  "pl-q-krakow-unesco": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_wrong jen opakuje jádro quip_correct i explanation (zápis 1978 mezi prvních dvanáct UNESCO) a nepřidává nic nového; přepsat tak, aby nesla jinou informaci nebo vtip."
+   }
+  ],
+  "pl-q-matejko": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct i quip_wrong dělají tentýž vtip o obřích plátnech ('zaberou celou stěnu' / 'zaplnila by galerii sama') — jednu z hlášek přepsat na jiný fakt či pointu."
+   }
+  ],
+  "pl-q-curie": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: pojem Nobelova cena ve dvou různých vědních oborech (fyzika vs. chemie) je pro děti 6–9 příliš abstraktní; buď zjednodušit, nebo přesunout na vyšší obtížnost."
+   }
+  ],
+  "pl-q-lewandowski": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: rozlišení mezi cenou 'FIFA The Best' a 'Zlatým míčem' je pro děti 6–9 příliš jemné trivium; distraktory jsou pro malé dítě neodlišitelné."
+   }
+  ],
+  "ro-q-constanta": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "judge",
+    "msg": "quip_correct tvrdí 'Než vznikl Řím, v Tomis se už obchodovalo' — to je fakticky špatně: Řím byl založen 753 př. n. l., Tomis až kolem 600 př. n. l., tedy Řím je starší. Pointa se opírá o nepravdu, přeformulovat."
+   }
+  ],
+  "ro-q-vlad-tepes": [
+   {
+    "code": "nevhodne_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: obsahem je oblíbený způsob poprav narážením na kůl (a odkaz na hororového Drákulu) — násilné a nevhodné pro děti 6–9; přesunout na vyšší obtížnost nebo zjemnit."
+   }
+  ],
+  "ro-q-enescu": [
+   {
+    "code": "vrstvy_stejne",
+    "sev": "judge",
+    "msg": "quip_correct, quip_wrong i explanation nesou tutéž myšlenku (folklorní/vesnické motivy proměněné pro symfonický orchestr) — hráč čte totéž třikrát; odlišit vrstvy."
+   }
+  ],
+  "sa-q-al-nassr": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: distraktory Al-Hilal, Al-Ittihad, Al-Ahli jsou názvy saúdských klubů, které dítě 6–9 nemá jak odlišit; správná volba je čirá znalost obskurního trivia, ne úsudek."
+   }
+  ],
+  "ru-q-sssr": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: přesný rok rozpadu SSSR s letopočtovými distraktory (1985/1998/1979) je abstraktní dějepis nevhodný pro 6–9 (sám CLAUDE.md tuto otázku uvádí jako důkaz, že difficulty 1 není psané pro nejmenší)."
+   }
+  ],
+  "ru-q-pady": [
+   {
+    "code": "tezke_6_9",
+    "sev": "judge",
+    "msg": "Difficulty 1: počet gramatických pádů je abstraktní jazykovědný pojem, který české děti 6–9 ještě neznají; patří na vyšší obtížnost."
+   },
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong 'Ne čtyři, ne sedm, ne deset — ruština má přesně šest pádů' je jen holé zopakování odpovědi bez jakékoli pointy."
+   }
+  ],
+  "ru-q-balalajka": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong 'Ne čtyři, ne šest, ne dvě — balalajka má přesně tři struny' pouze konstatuje odpověď, žádný vtip ani nadhled (typický nešvar šablony 'ne X, ne Y, ne Z')."
+   }
+  ],
+  "ru-q-gzhel": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong 'Ne červenozlatá, ne černobílá, ne zelenozlatá — gžel je vždycky modrobílý' je plochý přepis odpovědi bez pointy."
+   }
+  ],
+  "ru-q-car": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "quip_wrong 'Ne basileus, ne chán, ne staroslověnské kníže — slovo car se odvozuje od caesar' jen suše opakuje odpověď bez vtipu."
+   }
+  ],
+  "ru-q-ojmjakon": [
+   {
+    "code": "neni_vtipne",
+    "sev": "judge",
+    "msg": "Poslední věta quip_correct 'A to je pořádná zima hodně nízko' je gramaticky rozbitá a pointa nedává smysl; přeformulovat, aby vtip o zavírání školy až v extrémním mrazu dosedl."
+   }
+  ]
+ }
+}

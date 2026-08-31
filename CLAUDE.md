@@ -1029,8 +1029,12 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   přes `border-image`. Výsledek nestál za to a vrátil se zpět; appka drží původní CSS vzhled.
   Předtím padl i pokus nechat Gemini navrhnout celou obrazovku jako mockup — ten jen opatrně obkreslil
   referenci (přidal papír a rožky), protože **Gemini je dobrý na ilustrace a textury, ne na návrh UI**.
-  Nevyrobené assety zůstaly ležet v `assets/ui/` a `assets/paper-bg.jpg` **necommitnuté**; než to zkusíš
+  Nevyrobené assety zůstaly ležet v `assets/ui/` a `assets/paper-bg.jpg`; než to zkusíš
   znovu, věz, že tudy cesta nevedla.
+  > **Doplněno 2026-08-31:** ty assety už **commitnuté jsou** (hráč přecházel na jiný počítač
+  > a chtěl mít u sebe všechno). Nic se tím nemění na tom, že se **nepoužívají** — v žádném
+  > CSS ani HTML na ně nevede odkaz a `build-public.js` je do `dist/` nekopíruje. Leží v repu
+  > jako materiál k zavrženému pokusu, ne jako součást appky.
 - **2026-08-10 — Standard kvality pro `explanation` / `quip_correct` / `quip_wrong`: každá vrstva musí nést jinou informaci, ne opakovat tu samou.**
   Audit všech 1279 otázek ([docs/audit-otazky-kvalita.md](docs/audit-otazky-kvalita.md)) odhalil dva
   provázané problémy: (1) `quip_wrong` je u ~90 % otázek jen suchý přepis odpovědi bez vtipu, ačkoli
