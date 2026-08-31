@@ -20,6 +20,18 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-31 — Id otázky musí být ASCII; pět jich mělo diakritiku, protože slug vznikl z české věty.**
+  `id` není jen klíč — je z něj i **název souboru `img/{id}.jpg`** a kus URL. Pět otázek mělo
+  v id háčky a čárky (`de-k-preclík`, `pe-q-fútbol`, `it-a-umelecke-hnutí`…), zbylých 3 737 ne.
+  - **Nebylo to rozbité a netvrdil jsem, že je.** Ověřeno v prohlížeči: `img/cz-k-stavěni-majky.jpg`
+    se načetl v plné velikosti stejně jako ASCII kontrola. Šlo o zbytečné riziko kolem kódování
+    názvů souborů na hostingu, kde se to bez nasazení ověřit nedá — proto úklid, ne oprava.
+  - Přejmenováno v `data/questions` (5 řádků, nic jiného se nezměnilo) a `git mv` u jediného
+    obrázku, který existoval. `data/d1-seed.sql` a `dist/` se generují, takže se srovnají samy;
+    v `docs/audit-otazky-kvalita.md` staré jméno zůstává, je to historický záznam.
+  - **`validate` má nově tvrdou kontrolu `^[a-z0-9-]+$` a je ověřená mutací** — po vrácení
+    diakritiky do jednoho id ji nahlásí jmenovitě.
+
 - **2026-08-31 — Podlaha fondu dorovnána: žádná kombinace země × pásmo nemá pod 10 otázek (+40 ručně psaných).**
   Z nálezu o nevyváženém fondu byla tahle část ta, která hráče opravdu bolela: **17 zemí mělo
   4–9 dětských otázek**, takže dítě dostalo v sólu hru o čtyřech otázkách (Malajsie) a v párty

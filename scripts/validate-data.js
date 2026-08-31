@@ -25,6 +25,12 @@ for (const f of qFiles) {
     const where = `${f}[${i}] ${q.id || "(bez id)"}`;
     for (const k of REQ) if (q[k] === undefined || q[k] === "") bad(`${where}: chybí pole "${k}"`);
     if (q.id) { if (seenIds.has(q.id)) bad(`${where}: duplicitní id`); seenIds.add(q.id); }
+    // Id není jen klíč — je z něj i název souboru `img/{id}.jpg` a kus URL. Pět otázek
+    // mělo v id diakritiku (`de-k-preclík`, `pe-q-fútbol`…), protože slug vznikl z české
+    // věty bez odstranění háčků. Lokálně se to načte, ale na hostingu jde o zbytečné
+    // riziko kolem kódování názvů souborů — a všech ostatních 3 737 id je ASCII.
+    if (q.id && !/^[a-z0-9-]+$/.test(q.id))
+      bad(`${where}: id smí obsahovat jen malá písmena bez diakritiky, číslice a pomlčky`);
     if (!q.about) bad(`${where}: chybí "about" (6. pád pro tlačítko „Více o…") — viz CLAUDE.md`);
     if (q.difficulty != null && ![1, 2, 3].includes(q.difficulty)) bad(`${where}: difficulty=${q.difficulty}, čekáno 1–3`);
 
