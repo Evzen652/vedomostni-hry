@@ -48,7 +48,7 @@
   const ICO_STAR  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" stroke="#b98b3e" stroke-width="1" stroke-linejoin="round" d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 22l-5.3 2.8 1.1-5.9L3.5 15l5.9-.8z"/></svg>`;
   // hvězdička pro obtížnost — o něco „malovanější" než ICO_STAR (kulatější hroty, lesklý fasetový highlight)
   const ICO_STAR_DIFF = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#e6b84f" stroke="#a8752a" stroke-width="1.2" stroke-linejoin="round" d="M12 2.4l2.9 5.9 6.5.9-4.7 4.6 1.1 6.6L12 17.3l-5.8 3.1 1.1-6.6-4.7-4.6 6.5-.9z"/><path fill="#fdf0c8" opacity=".6" d="M12 4.6l1.5 3-1.5 1.9-1.5-1.9z"/></svg>`;
-  const DIFF_LABEL = { 1:"lehká", 2:"střední", 3:"těžká" };   // obtížnost otázky (q.difficulty 1–3), slovně vedle hvězdiček
+  const DIFF_LABEL = { 1:"Lehká", 2:"Střední", 3:"Těžká" };   // obtížnost otázky (q.difficulty 1–3), slovně vedle hvězdiček
   const ICO_CLOCK = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="8" fill="#fdf7ea" stroke="#e2725b" stroke-width="2"/><path d="M12 9v4l3 2" stroke="#e2725b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 3h6" stroke="#e2725b" stroke-width="2" stroke-linecap="round"/></svg>`;
   const ICO_BOLT  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#8a6fae" d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>`;
   const ICO_SND   = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#3d3229"/><path d="M16 9c1.6 1.5 1.6 4.5 0 6M18.7 6.5c3 3 3 8 0 11" stroke="#3d3229" stroke-width="2" stroke-linecap="round"/></svg>`;
@@ -413,11 +413,11 @@
     const saves=loadSaves(); const ids=Object.keys(saves).sort((a,b)=>saves[b].ts-saves[a].ts).slice(0,4);
     const hasSaves = ids.length > 0;
     const resumeItems = ids.map(id=>{ const m=saves[id].meta;
-        const where = m.mode==="party" ? ("kolo "+m.round+"/"+m.totalRounds) : ("otázka "+((m.idx||0)+1)+"/"+m.count);
+        const where = m.mode==="party" ? ("Kolo "+m.round+"/"+m.totalRounds) : ("Otázka "+((m.idx||0)+1)+"/"+m.count);
         return `<div class="qz-resume-item" data-resume="${id}">
           <span class="qz-resume-faces">${(m.players||[]).map(p=>`<span class="qz-face" style="background:${p.color}">${esc((p.name||"?")[0])}</span>`).join("")}</span>
           <span class="qz-resume-meta">${m.cc?flagStamp(m.cc):""} ${m.mode==="party"?"Párty":(m.school?"Škola":"Sólo")} · ${where}</span>
-          <button class="qz-resume-del" data-del="${id}" title="smazat">✕</button></div>`; }).join("");
+          <button class="qz-resume-del" data-del="${id}" title="Smazat">✕</button></div>`; }).join("");
     // Rozehrané hry se neukazují přímo — jen tlačítko, které otevře pop-up (modal) se seznamem.
     const resumeBtn = hasSaves ? `<button class="qz-resume-open" id="qz-resume-open"><img class="qz-ico-resume" src="assets/ico-resume.png" alt=""> Rozehrané hry</button>` : "";
     const resumeModal = hasSaves ? `<div class="qz-modal" id="qz-resume-modal" hidden>
@@ -494,9 +494,9 @@
   // nenesla žádnou informaci a přitom budila dojem známky na společné škále („★ lehká" u otázky,
   // která není lehká otázka pro dospělé, ale otázka z jiného fondu). Proto štítek místo hvězdiček.
   function diffHtml(q){
-    if(q.kids) return `<span class="qz-diff qz-diff-kids" title="otázka z dětského fondu"><i>pro děti</i></span>`;
-    const d = q.difficulty||1, lbl = DIFF_LABEL[d]||"těžká";
-    return `<span class="qz-diff" title="obtížnost: ${lbl}">${ICO_STAR_DIFF.repeat(d)}<i>${lbl}</i></span>`;
+    if(q.kids) return `<span class="qz-diff qz-diff-kids" title="Otázka z dětského fondu"><i>Pro děti</i></span>`;
+    const d = q.difficulty||1, lbl = DIFF_LABEL[d]||"Těžká";
+    return `<span class="qz-diff" title="Obtížnost: ${lbl}">${ICO_STAR_DIFF.repeat(d)}<i>${lbl}</i></span>`;
   }
   // nabídka „kolik otázek" — pevné kotvy 10/15/20, jen pokud se do fondu vejdou;
   // je-li fond menší než nejmenší kotva, nabídne se aspoň celý fond
@@ -533,7 +533,7 @@
       ? `<button type="button" class="qz-crumb" data-ci="${i}">${esc(s.label)}</button>`
       : `<b>${esc(s.label)}</b>`
     ).join(' <span class="qz-crumb-sep">›</span> ');
-    return `<div class="qz-pickhead"><button class="qz-back" id="qz-back">${handArrowSvg(true)} zpět</button>
+    return `<div class="qz-pickhead"><button class="qz-back" id="qz-back">${handArrowSvg(true)} Zpět</button>
       ${modeTag}
       <div class="qz-crumbs" id="qz-crumbs">${crumbs}</div></div>`;
   }
@@ -585,7 +585,7 @@
     const tiles = CONTINENTS.map(c => {
       const has = contHasQuestions(c.id);
       const n = countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length;
-      return tileHtml({ ic:c.emoji, img:`assets/cont-${c.id}.jpg`, t:c.name, sub: has ? (n+" "+plur(n,"země","země","zemí")) : "připravujeme",
+      return tileHtml({ ic:c.emoji, img:`assets/cont-${c.id}.jpg`, t:c.name, sub: has ? (n+" "+plur(n,"země","země","zemí")) : "Připravujeme",
         soon:!has, selectable:true, attr:`data-cont="${c.id}"` });
     }).join("");
     const worldN = availConts.reduce((sum,c)=> sum + countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length, 0);
@@ -643,13 +643,13 @@
     const tiles = ccList.length ? ccList.map(cc => {
       const n = qsForCc(cc).length;
       return tileHtml({ ic:COUNTRY_FLAG[cc]||"🏳️", img:`assets/country-${cc}.jpg`, t:COUNTRY_BY_CC[cc]||cc,
-        sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "brzy otázky",
+        sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "Brzy otázky",
         soon:!n, selectable:true, attr:`data-cc="${cc}"` });
     }).join("") : `<div class="qz-pick-empty">Tady zatím žádné země nejsou — brzy.</div>`;
     const steps = [{label:contLabel, fn:renderContinentPick}, {label:"Země"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
-      <h2>${esc(contLabel)} | vyber země</h2>
+      <h2>${esc(contLabel)} | Vyber země</h2>
       <div class="qz-tiles">${allCcTile(hasSome)}${tiles}</div>
       ${hasSome ? `<div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cc-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>` : ""}
     </div>`;
@@ -702,7 +702,7 @@
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:COUNTRY, fn:backToCountry}, {label:"Téma"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
-      <h2>${flagStamp(cc)} ${esc(COUNTRY)} | vyber témata</h2>
+      <h2>${flagStamp(cc)} ${esc(COUNTRY)} | Vyber témata</h2>
       <div class="qz-tiles qz-tiles-sec">${allTile}${secTiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
     </div>`;
@@ -911,11 +911,11 @@
     const recentNames = loadRecentNames();
     const prow = (p,i) => `<div class="qz-prow" data-i="${i}">
       <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
-      <input class="qz-pname-in" placeholder="jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off">
+      <input class="qz-pname-in" placeholder="Jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off">
       <span class="qz-bandtoggle">
-        <button class="qz-bandbtn deti${p.band==="deti"?" on":""}" data-band="deti">děti</button>
-        <button class="qz-bandbtn starsi${p.band==="starsi"?" on":""}" data-band="starsi">puberťák</button>
-        <button class="qz-bandbtn dospeli${p.band==="dospeli"?" on":""}" data-band="dospeli">dospělí</button>
+        <button class="qz-bandbtn deti${p.band==="deti"?" on":""}" data-band="deti">Děti</button>
+        <button class="qz-bandbtn starsi${p.band==="starsi"?" on":""}" data-band="starsi">Puberťák</button>
+        <button class="qz-bandbtn dospeli${p.band==="dospeli"?" on":""}" data-band="dospeli">Dospělí</button>
       </span>
       ${S.players.length>2?`<button class="qz-prem" data-rem="${i}" title="odebrat">✕</button>`:""}
     </div>`;
@@ -926,10 +926,10 @@
       ${pickHeadHtml(steps)}
       <h2>${ICO_SPARK} Nová výprava — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <div class="qz-setcard">
-        <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">podle věku přitvrdíme, nebo přimhouříme oko</span></h3>
+        <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">Podle věku přitvrdíme, nebo přimhouříme oko</span></h3>
         <div id="qz-players">${S.players.map(prow).join("")}</div>
         <datalist id="qz-names-list">${recentNames.map(n=>`<option value="${esc(n)}">`).join("")}</datalist>
-        ${S.players.length<6?`<button class="qz-addp" id="qz-addp">+ přidat hráče</button>`:""}
+        ${S.players.length<6?`<button class="qz-addp" id="qz-addp">+ Přidat hráče</button>`:""}
       </div>
       <div class="qz-setrow">
         <div class="qz-setcard">
@@ -952,13 +952,13 @@
           <div class="qz-opt" data-opt="rotate"><span class="qz-sw${S.rotate==="auto"?" on":""}"></span> Otáčet obrazovku k hráči</div>
           <div class="qz-fieldlabel" style="margin-top:12px">Časový limit na odpověď</div>
           <div class="qz-bands" style="margin-top:4px">
-            <button class="qz-chip${S.timer===0?" on":""}" data-timer="0">vyp</button>
-            <button class="qz-chip${S.timer===30?" on":""}" data-timer="30">mírný · 30 s</button>
-            <button class="qz-chip${S.timer===15?" on":""}" data-timer="15">svižný · 15 s</button>
+            <button class="qz-chip${S.timer===0?" on":""}" data-timer="0">Vyp</button>
+            <button class="qz-chip${S.timer===30?" on":""}" data-timer="30">Mírný · 30 s</button>
+            <button class="qz-chip${S.timer===15?" on":""}" data-timer="15">Svižný · 15 s</button>
           </div>
         </div>
       </div>
-      <div class="qz-setnote">Fond: ${data.questions.length} otázek · ${flagStamp(S.sel&&S.sel.cc)} ${esc(COUNTRY)}${(S.sel&&S.sel.section&&S.sel.section!=="__all__")?" · "+esc(S.sel.section):""} · hráči ${S.players.length}</div>
+      <div class="qz-setnote">Fond: ${data.questions.length} otázek · ${flagStamp(S.sel&&S.sel.cc)} ${esc(COUNTRY)}${(S.sel&&S.sel.section&&S.sel.section!=="__all__")?" · "+esc(S.sel.section):""} · ${S.players.length} ${plur(S.players.length,"hráč","hráči","hráčů")}</div>
       <button class="qz-go" id="qz-setup-go" style="align-self:center">Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     // wiring
@@ -1058,13 +1058,13 @@
     if(S.mode==="party"){
       const pills=S.players.map((p,i)=>`<button class="qz-pl${i===S.turn?" active":""}" data-turn="${i}">
         <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
-        <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">na tahu</span>':""}</span>
+        <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">Na tahu</span>':""}</span>
         <span class="qz-plscore" data-score="${i}">${p.score}</span></button>`).join("");
       return `<div class="qz-scoreboard">${pills}</div>
-        <div class="qz-subtop"><span class="qz-progress">kolo ${S.round}/${S.totalRounds} · otázka ${n}</span></div>`;
+        <div class="qz-subtop"><span class="qz-progress">Kolo ${S.round}/${S.totalRounds} · otázka ${n}</span></div>`;
     }
     return `<div class="qz-top">
-      <span class="qz-progress">otázka ${n}/${total}</span>
+      <span class="qz-progress">Otázka ${n}/${total}</span>
       <span style="margin-left:auto;display:flex;gap:8px;align-items:center">
         ${S.school?"":`<span class="qz-scorepill" id="qz-scorepill">${scorePillHtml()}</span>`}
       </span></div>`;
@@ -1263,7 +1263,7 @@
     body.innerHTML = `<div class="qz-screen qz-end">
       <h2>Výprava dokončena!</h2>
       <div class="qz-endscore">${S.school?"Třída získala":"Získal(a) jsi"} ${score} ${plur(score,"bod","body","bodů")}</div>
-      <p style="color:var(--muted)">z ${S.order.length} otázek · teoretické maximum ${max} bodů</p>
+      <p style="color:var(--muted)">Z ${S.order.length} otázek · Teoretické maximum ${max} bodů</p>
       <div class="qz-endrow">
         <button class="qz-go" id="qz-again">Hrát znovu ${handArrowSvg(false)}</button>
         <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>

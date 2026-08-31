@@ -131,7 +131,7 @@ window.ZKOnline = (function () {
     say(vyzva
       ? "Někdo tě vyzval na souboj. Přihlas se a jdeme na to."
       : mode === "register"
-        ? "Založ si hráče — stačí přezdívka a PIN, ať se ti počítá rating."
+        ? "Založ si profil — stačí přezdívka a PIN, ať se ti počítá rating."
         : "Online hraní chce jméno. Stačí přezdívka a PIN.");
     var isReg = mode === "register";
     var podtitul = vyzva
@@ -158,7 +158,7 @@ window.ZKOnline = (function () {
       '<div class="zk-authside">' +
         '<img class="zk-authhero" src="' + AUTH_HERO + '" alt="" data-fb="hide">' +
         '<div class="zk-authtag">Online</div>' +
-        "<h2>" + (isReg ? "Nový hráč" : "Přihlášení") + "</h2>" +
+        "<h2>" + (isReg ? "Nový profil" : "Přihlášení") + "</h2>" +
         '<div class="zk-sub">' + esc(podtitul) + "</div>" +
       "</div>" +
       '<div class="zk-authmain">' +
@@ -180,7 +180,7 @@ window.ZKOnline = (function () {
             : "") +
           '<div class="zk-field" id="zk-nickwrap">' +
             '<div class="qz-fieldlabel">Přezdívka</div>' +
-            '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="jak ti mají říkat" value="' +
+            '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="Jak ti mají říkat" value="' +
               esc(stav.nick || "") + '">' +
           "</div>" +
           '<div class="zk-field">' +
@@ -199,7 +199,7 @@ window.ZKOnline = (function () {
           (isReg
             ? '<div class="zk-field">' +
                 '<div class="qz-fieldlabel">E-mail <span class="zk-opt">nepovinný</span></div>' +
-                '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="kdyby ti PIN vypadl z hlavy" value="' +
+                '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="Kdyby ti PIN vypadl z hlavy" value="' +
                   esc(stav.email || "") + '">' +
                 '<div class="qz-setnote zk-mailnote" id="zk-mailnote">' +
                   "Jediné, k čemu ho použijeme, je obnova zapomenutého PINu. Můžeš ho nechat prázdný " +
@@ -207,12 +207,14 @@ window.ZKOnline = (function () {
               "</div>"
             : "") +
           '<button class="qz-go" id="zk-go"' + (isReg ? " disabled" : "") + ">" +
-            (isReg ? "Založit hráče" : "Přihlásit se") + " →</button>" +
+            (isReg ? "Založit profil" : "Přihlásit se") + " →</button>" +
         "</div>" +
+        // Appka hráče OSLOVUJE, neodbavuje ho. Původní „Už tu hráče máš?" znělo
+        // jako formulář na úřadě; tohle je otázka, kterou by položil člověk.
         '<div class="zk-authfoot">' +
-          (isReg ? "Už tu hráče máš? " : "Ještě tu hráče nemáš? ") +
+          (isReg ? "Už se známe? " : "Ještě se neznáme? ") +
           '<button type="button" class="zk-linkbtn" id="zk-switch">' +
-            (isReg ? "Přihlas se" : "Založ si ho") + "</button>" +
+            (isReg ? "Přihlas se" : "Založ si profil") + "</button>" +
         "</div>" +
       "</div>" +   // .zk-authmain
       "</div>" +   // .zk-authgrid
@@ -258,7 +260,7 @@ window.ZKOnline = (function () {
           var mnote = body.querySelector("#zk-mailnote");
           if (mail && mnote) {
             var deti = band === "deti";
-            mail.placeholder = deti ? "e-mail rodiče" : "kdyby ti PIN vypadl z hlavy";
+            mail.placeholder = deti ? "E-mail rodiče" : "Kdyby ti PIN vypadl z hlavy";
             mnote.textContent = deti
               ? "Sem patří adresa rodiče. Použijeme ji jen na obnovu zapomenutého PINu a klidně ji nech prázdnou."
               : "Jediné, k čemu ho použijeme, je obnova zapomenutého PINu. Můžeš ho nechat prázdný a doplnit později v Účtu.";
@@ -369,7 +371,7 @@ window.ZKOnline = (function () {
         '<div class="zk-form">' +
           '<div class="zk-field">' +
             '<div class="qz-fieldlabel">' + (m.email ? "Nová adresa" : "E-mailová adresa") + "</div>" +
-            '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="adresa@priklad.cz">' +
+            '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="Např. adresa@priklad.cz">' +
           "</div>" +
           '<div class="zk-field">' +
             '<div class="qz-fieldlabel">Potvrď svým PINem</div>' +
@@ -410,7 +412,7 @@ window.ZKOnline = (function () {
         "<h3>Přihlášení</h3>" +
         '<div class="zk-sectnote">Odhlášením se odpojíš jen z tohohle zařízení. Účet, rating i ' +
           "historie zůstávají — vrátíš se přezdívkou a PINem.</div>" +
-        '<button type="button" class="qz-back" id="zk-logout">Odhlásit — přepnout na jiného hráče</button>' +
+        '<button type="button" class="qz-back" id="zk-logout">Odhlásit — přepnout na jiný profil</button>' +
       "</div></div>";
 
     function ulozit(metoda) {
@@ -515,12 +517,12 @@ window.ZKOnline = (function () {
           : '<div class="zk-form">' +
               '<div class="zk-field">' +
                 '<div class="qz-fieldlabel">Přezdívka</div>' +
-                '<input class="qz-pname-in" id="zk-fnick" maxlength="20" autocomplete="username" placeholder="jak ti říkáme">' +
+                '<input class="qz-pname-in" id="zk-fnick" maxlength="20" autocomplete="username" placeholder="Jak ti říkáme">' +
               "</div>" +
               '<button class="qz-go" id="zk-fgo">Poslat odkaz →</button>' +
             "</div>" +
             '<div class="zk-authfoot">Účet bez e-mailu obnovit nejde. ' +
-              '<button type="button" class="zk-linkbtn" id="zk-fnew">Založ si nového hráče</button></div>') +
+              '<button type="button" class="zk-linkbtn" id="zk-fnew">Založ si nový profil</button></div>') +
       "</div></div>";
 
     function odeslat() {
@@ -636,8 +638,8 @@ window.ZKOnline = (function () {
       // kdo jsem — jeden tichý proužek, ne dlaždice
       '<div class="zk-idbar"><b>' + esc(S.me.nick) + "</b>" +
         '<span class="zk-idband">' + esc(pasmo) + "</span>" +
-        (r ? '<span class="zk-idrating">rating <b>' + r.rating + "</b> · " +
-             (r.games ? r.games + " " + plur(r.games, "hra", "hry", "her") : "zatím nezahráno") + "</span>" : "") +
+        (r ? '<span class="zk-idrating">Rating <b>' + r.rating + "</b> · " +
+             (r.games ? r.games + " " + plur(r.games, "hra", "hry", "her") : "Zatím nezahráno") + "</span>" : "") +
       "</div>" +
       // JEDNA hlavní akce — hráč přišel hrát, ne spravovat účet
       '<button class="zk-hero" id="zk-live">' +
@@ -1044,9 +1046,9 @@ window.ZKOnline = (function () {
 
   // ---------------------------------------------------------------- turnaj (aréna)
   function statusLabel(t) {
-    if (t.status === "planovany") return "začíná brzy";
-    if (t.status === "bezi") return "běží";
-    return "skončil";
+    if (t.status === "planovany") return "Začíná brzy";
+    if (t.status === "bezi") return "Běží";
+    return "Skončil";
   }
   var TC_LABEL = { blesk: "Blesk", klasika: "Klasika" };
 
