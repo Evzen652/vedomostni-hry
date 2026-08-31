@@ -23,8 +23,8 @@ export async function onRequestPost({ request, env }) {
 
   const odpoved = json({
     ok: true,
-    zprava: 'Pokud účet existuje a má u sebe e-mail, odkaz je na cestě. ' +
-            'Nedorazil-li nic, účet e-mail nemá a PIN obnovit nejde.',
+    zprava: 'Pokud profil existuje a má u sebe e-mail, odkaz je na cestě. ' +
+            'Nedorazil-li nic, profil e-mail nemá a PIN obnovit nejde.',
   });
 
   const user = await env.DB.prepare(

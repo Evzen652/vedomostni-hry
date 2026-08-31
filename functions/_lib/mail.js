@@ -14,7 +14,7 @@ export async function sendPinReset(env, { email, nick, resetUrl }) {
   const predmet = 'Obnova PINu — Zeměkvíz';
   const text =
     'Ahoj ' + nick + ',\n\n' +
-    'někdo (snad ty) požádal o obnovu PINu k účtu ' + nick + ' v Zeměkvízu.\n' +
+    'někdo (snad ty) požádal o obnovu PINu k profilu ' + nick + ' v Zeměkvízu.\n' +
     'Nový PIN si nastavíš tady:\n\n' + resetUrl + '\n\n' +
     'Odkaz platí 30 minut a dá se použít jen jednou.\n' +
     'Pokud jsi o obnovu nežádal, nic nedělej — PIN zůstane starý.\n';
