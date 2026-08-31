@@ -17,13 +17,11 @@ window.ZKOnline = (function () {
   var S = {};
   var timer = null, poll = null;
 
-  // Obrázek na kartě přihlášení i obnovy PINu. Je to jediné místo, kde se mění —
-  // `landing-hero.jpg` je dědictví po landing.html a je v původním „hezkém" stylu,
-  // ne v ironickém, kterým appka jinak mluví. Na desktopu je od 2026-08-31 v celém
-  // sloupci, takže je ho vidět víc než dřív. Náhrada má připravený prompt `auth-hero`
-  // v data/ui-irony-prompts.json; až doběhne `gen-irony-images.js --ui`, přepíše se
-  // tahle jediná konstanta na "assets/auth-hero.jpg".
-  var AUTH_HERO = "assets/landing-hero.jpg";
+  // Obrázek na kartě přihlášení i obnovy PINu. Nahrazuje dřívější `landing-hero.jpg`
+  // (dědictví po landing.html, v původním „hezkém" stylu appky, ne v ironickém).
+  // Vygenerováno ručně v Gemini appce (ne přes gen-irony-images.js) a ořezáno
+  // přes scripts/crop-gemini-frame.ps1 na čtvercovou dlaždici 512×512 — 2026-08-31.
+  var AUTH_HERO = "assets/auth-hero.jpg";
 
   // ---------------------------------------------------------------- pomocníci
   function esc(s) {
@@ -185,9 +183,19 @@ window.ZKOnline = (function () {
             '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="jak ti mají říkat" value="' +
               esc(stav.nick || "") + '">' +
           "</div>" +
+          '<div class="zk-field">' +
+            '<div class="zk-labelrow">' +
+              '<div class="qz-fieldlabel">PIN (4 až 8 číslic)</div>' +
+              // Zapomenutý PIN patří k poli s PINem, ne mezi hlavní akce dole.
+              (isReg ? "" : '<button type="button" class="zk-linkbtn zk-forgot" id="zk-forgot">Zapomněl jsem PIN</button>') +
+            "</div>" +
+            '<input class="qz-pname-in" id="zk-pin" type="password" inputmode="numeric" maxlength="8" autocomplete="' +
+              (isReg ? "new-password" : "current-password") + '" placeholder="••••">' +
+          "</div>" +
           // E-mail je pořád NEPOVINNÝ a slouží jedinému účelu: obnově zapomenutého PINu
           // (rozhodnutí 2026-08-25). Nově se ale nabízí rovnou při zakládání, ne až
-          // v Účtu — kdo ho vyplní až po tom, co PIN zapomněl, má smůlu.
+          // v Účtu — kdo ho vyplní až po tom, co PIN zapomněl, má smůlu. Pole je pod PINem,
+          // logicky navazuje na "kdyby ti PIN vypadl z hlavy" (2026-08-31).
           (isReg
             ? '<div class="zk-field">' +
                 '<div class="qz-fieldlabel">E-mail <span class="zk-opt">nepovinný</span></div>' +
@@ -198,15 +206,6 @@ window.ZKOnline = (function () {
                   "a doplnit později v Účtu.</div>" +
               "</div>"
             : "") +
-          '<div class="zk-field">' +
-            '<div class="zk-labelrow">' +
-              '<div class="qz-fieldlabel">PIN (4 až 8 číslic)</div>' +
-              // Zapomenutý PIN patří k poli s PINem, ne mezi hlavní akce dole.
-              (isReg ? "" : '<button type="button" class="zk-linkbtn zk-forgot" id="zk-forgot">Zapomněl jsem PIN</button>') +
-            "</div>" +
-            '<input class="qz-pname-in" id="zk-pin" type="password" inputmode="numeric" maxlength="8" autocomplete="' +
-              (isReg ? "new-password" : "current-password") + '" placeholder="••••">' +
-          "</div>" +
           '<button class="qz-go" id="zk-go"' + (isReg ? " disabled" : "") + ">" +
             (isReg ? "Založit hráče" : "Přihlásit se") + " →</button>" +
         "</div>" +
@@ -334,6 +333,11 @@ window.ZKOnline = (function () {
     var m = S.me || {};
     var maDeti = m.band === "deti";
     var PASMA_T = { deti: "Děti", starsi: "Puberťáci", dospeli: "Dospělí" };
+    var PASMA = [
+      { id: "deti", t: "Děti", fb: "🧒" },
+      { id: "starsi", t: "Puberťáci", fb: "🧑‍🎓" },
+      { id: "dospeli", t: "Dospělí", fb: "🧑" },
+    ];
     say(m.email
       ? "E-mail máš uložený. Když zapomeneš PIN, pošleme na něj odkaz."
       : "E-mail je nepovinný. Bez něj ale zapomenutý PIN nikdo neobnoví.");
@@ -380,6 +384,28 @@ window.ZKOnline = (function () {
         (m.email ? '<button type="button" class="zk-dangerlink" id="zk-edel">Smazat e-mail z účtu</button>' : "") +
       "</div>" +
 
+      // Pásmo šlo do 2026-08-31 zvolit jen při registraci a pak už nikdy změnit —
+      // kdo se seknul, musel založit nový účet. Není to tvrzení o věku (ověřit ho
+      // nejde), ale volba fondu otázek, takže není důvod ho zamykat napořád.
+      '<div class="zk-sect">' +
+        "<h3>Pásmo — jaké otázky chceš dostávat</h3>" +
+        '<div class="zk-sectnote">Dětské pásmo má vlastní fond otázek psaných pro děti; ' +
+          "ostatní dvě losují z obecného fondu, puberťáci z jeho lehčí části. " +
+          "Hraješ vždycky jen proti lidem ze stejného pásma.</div>" +
+        '<div class="zk-bandpick" id="zk-accbands" role="group" aria-label="Věkové pásmo">' +
+          PASMA.map(function (b) {
+            var on = b.id === m.band;
+            return '<button type="button" class="zk-bandtile' + (on ? " on" : "") +
+              '" data-band="' + b.id + '" aria-pressed="' + (on ? "true" : "false") + '">' +
+              '<img src="assets/band-' + b.id + '.jpg" alt="" data-fb="' + b.fb + '">' +
+              '<span class="t">' + b.t + "</span></button>";
+          }).join("") +
+        "</div>" +
+        '<div class="qz-setnote" id="zk-bandnote">Každé pásmo má vlastní rating — ten ' +
+          "současný se nikam neztratí, ale v novém začínáš od začátku.</div>" +
+        '<button class="qz-go" id="zk-bandsave" disabled>Změnit pásmo →</button>' +
+      "</div>" +
+
       '<div class="zk-sect">' +
         "<h3>Přihlášení</h3>" +
         '<div class="zk-sectnote">Odhlášením se odpojíš jen z tohohle zařízení. Účet, rating i ' +
@@ -409,6 +435,46 @@ window.ZKOnline = (function () {
     body.querySelector("#zk-logout").addEventListener("click", function () {
       token.clear(); S = {}; renderAuth();
     });
+
+    // Změna pásma. Tlačítko je disabled, dokud hráč neklikne na JINÉ pásmo, než
+    // ve kterém je — jinak by šlo „uložit" stav, který už platí, a hráč by čekal,
+    // že se něco stalo.
+    var accBands = body.querySelector("#zk-accbands");
+    var bandSave = body.querySelector("#zk-bandsave");
+    var bandNote = body.querySelector("#zk-bandnote");
+    var novePasmo = m.band;
+    accBands.querySelectorAll(".zk-bandtile").forEach(function (c) {
+      c.addEventListener("click", function () {
+        accBands.querySelectorAll(".zk-bandtile").forEach(function (x) {
+          x.classList.remove("on");
+          x.setAttribute("aria-pressed", "false");
+        });
+        c.classList.add("on");
+        c.setAttribute("aria-pressed", "true");
+        novePasmo = c.dataset.band;
+        bandSave.disabled = novePasmo === m.band;
+        // Přechod do dětského pásma přezdívku přepíše — to se musí říct PŘEDEM,
+        // ne až se stane. Dětský prostor je schválně bez volného textu.
+        bandNote.textContent = novePasmo === "deti" && m.band !== "deti"
+          ? "V dětském pásmu přezdívky vymýšlíme my, ať do nich nejde schovat vzkaz — "
+            + "tvoje současná se tím přepíše. Rating má každé pásmo vlastní, ten "
+            + "současný se nikam neztratí."
+          : "Každé pásmo má vlastní rating — ten současný se nikam neztratí, ale "
+            + "v novém začínáš od začátku.";
+      });
+    });
+    bandSave.addEventListener("click", function () {
+      bandSave.disabled = true;
+      req("/auth/band", { method: "PUT", body: { band: novePasmo } }).then(function (r) {
+        if (r.status !== 200) return renderAccount((r.body && r.body.error) || "Nepovedlo se.");
+        req("/me").then(function (mm) {
+          S.me = mm.body;
+          renderAccount("", "Pásmo změněno na „" + (PASMA_T[novePasmo] || novePasmo) + "“."
+            + (r.body && r.body.nick !== m.nick ? " Nová přezdívka: " + r.body.nick + "." : ""));
+        });
+      });
+    });
+
     // Enter kdekoli ve dvojici polí odesílá — jinak by hráč po PINu musel trefit tlačítko.
     body.querySelectorAll(".zk-sect .qz-pname-in").forEach(function (inp) {
       inp.addEventListener("keydown", function (e) { if (e.key === "Enter") ulozit("PUT"); });
@@ -1156,6 +1222,22 @@ window.ZKOnline = (function () {
     say("Kdo je na tom nejlíp.");
     req("/leaderboard?band=" + S.me.band).then(function (r) {
       var rows = (r.body && r.body.rows) || [];
+      // Dětské pásmo veřejný žebříček nemá (viz functions/api/leaderboard.js).
+      // Prázdný seznam by vypadal jako porucha, tak se řekne rovnou proč — a hráč
+      // dostane místo slepé uličky odkaz na to, co mu zůstává.
+      if (r.body && r.body.closed) {
+        body.innerHTML =
+          '<div class="qz-screen qz-end zk-wrap">' +
+          backBar("Zpět", renderLobby) +
+          "<h2>Žebříček</h2>" +
+          '<div class="qz-setnote">V dětském pásmu žebříček nevedeme. Kdo si vybere ' +
+            "dětské otázky, nikdo neověřuje, takže by pořadí stejně nic neříkalo. " +
+            "Hraj turnaje nebo souboje s kamarády — tam jde o hru, ne o tabulku.</div>" +
+          '<button class="qz-go" id="zk-toturn">Turnaje →</button>' +
+          "</div>";
+        body.querySelector("#zk-toturn").addEventListener("click", renderTournaments);
+        return;
+      }
       body.innerHTML =
         '<div class="qz-screen qz-end zk-wrap">' +
         backBar("Zpět", renderLobby) +

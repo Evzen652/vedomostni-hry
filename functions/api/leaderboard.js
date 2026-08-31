@@ -23,6 +23,14 @@ export async function onRequestGet({ request, env }) {
     return json({ kind: 'daily', date, band, rows });
   }
 
+  // Dětské pásmo veřejný žebříček ratingu NEMÁ (rozhodnutí 2026-08-31). Pásmo je
+  // nutně jen čestné prohlášení — ověřit věk nejde a účet je schválně minimální —
+  // takže na předních příčkách dětského žebříčku může sedět kdokoli. Ve zbylých
+  // pásmech to nevadí, tam jde o hru mezi sobě rovnými; u dětí je to jediné místo,
+  // kde na pořadí nezáleží tak, aby za to stálo tuhle nejistotu vystavovat.
+  // Dětem zůstávají turnaje, hry s přáteli, souboj na odkaz i denní pětka.
+  if (band === 'deti') return json({ kind: 'rating', band, closed: true, rows: [] });
+
   const rows = (await env.DB.prepare(
     `SELECT u.nick, u.avatar, u.is_bot, r.rating, r.rd, r.games, r.wins, r.draws, r.losses
        FROM ratings r JOIN users u ON u.id = r.user_id

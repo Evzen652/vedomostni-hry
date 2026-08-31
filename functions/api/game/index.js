@@ -21,7 +21,14 @@ export async function onRequestPost({ request, env }) {
   const mode = body.mode || 'solo';
   if (!['solo', 'odkaz'].includes(mode)) return fail('neznámý režim: ' + mode);
 
-  const band = body.band || me.band;
+  // Pásmo se bere VÝHRADNĚ z účtu. Do 2026-08-31 tu bylo `body.band || me.band`
+  // a kontrolovalo se jen členství v BANDS, ne shoda s hráčem — dospělý účet si tak
+  // ručně sestaveným požadavkem mohl založit HODNOCENÝ souboj na odkaz (`rated=1`,
+  // níž) v dětském pásmu. Dítě se k němu smělo připojit, protože join.js porovnává
+  // jen s `game.band`, a `ratingRow()` v _lib/settle.js si řádek pro libovolné pásmo
+  // prostě založí — dospělý se tím dostal do dětského žebříčku. Z aplikace to nešlo
+  // (online.js `band` neposílá), ale díra to byla.
+  const band = me.band;
   if (!BANDS.includes(band)) return fail('neznámé pásmo: ' + band);
 
   const tcName = body.time_control || 'blesk';

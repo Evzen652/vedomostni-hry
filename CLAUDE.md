@@ -20,6 +20,67 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-08-31 — Rozcestník: mřížka 2×2, Online první a Škola poslední, bot z popisku pryč.**
+  Čtyři režimy se ve flexu (`.qz-modes`) lámaly na 3 + 1, takže online vypadal jako přílepek
+  přilepený zespoda, ne jako rovnocenný režim. Nově je to natvrdo dvousloupcová mřížka; na
+  displeji pod 560 px jeden sloupec, protože 2 × 220 + 16 mezera = 456 px se na telefon nevejde.
+  - **Online je první, škola poslední.** Online je jediný režim, kde na hráče někdo čeká; škola
+    je nejužší případ užití. Pořadí je v [quiz.js](quiz.js), mřížka v [quiz.css](quiz.css).
+  - **„Nebo proti botovi" z popisku pryč.** Bot je náhradní řešení pro prázdnou frontu, ne důvod,
+    proč do online jít — a slibovat ho na rozcestníku znamená prodávat režim tím nejslabším,
+    co umí. Nově „Proti živým soupeřům. Rating nelže."
+  - **Nová `assets/mode-online.jpg`.** Původní ironická holubice se sluchátky byla portrét zvířete
+    v detailu, kdežto zbylé tři dlaždice jsou scény s lidmi v prostředí — vypadala jako z jiné
+    sady, protože z jiné sady byla (vznikla pro online lobby, ne pro rozcestník). Vygenerováno
+    ručně v Gemini, ořezáno `crop-gemini-frame.ps1 -Margin 0.05`. Scéna je zapsaná i do
+    `data/ui-irony-prompts.json`, jinak by ji `gen-irony-images.js --ui --force` přepsal zpátky
+    na holubici. **Cestou vzniklo poučení o čitelnosti dlaždic ve 100 px — viz sekce Ilustrace.**
+
+- **2026-08-31 — Pásmo je volba FONDU OTÁZEK, ne tvrzení o věku. Zalepené dvě díry, pásmo jde nově změnit, dětský žebříček zrušen.**
+  Hráč se ptal, jak online pozná, že hraje dítě, a jestli může dospělý hrát proti dítěti.
+  **Ověřeno v kódu, že v běžné hře nemůže** — fronta páruje `WHERE band = ?` a pásmo se bere
+  z účtu, ne z požadavku ([match.js](functions/api/match.js)); stejně je hlídaný odkaz, turnaj,
+  otázky, boti i rating (`ratings` má `PRIMARY KEY (user_id, band)`). Skutečný problém je jinde:
+  **pásmo nikdo neověřuje a ověřit nejde**, takže je to fakticky volba obtížnosti.
+  - **ZAMÍTNUTO: sloučit vše do jedné úrovně.** Padl návrh zrušit pásma a losovat ze společného
+    fondu. Neřeší to ale nic z toho, proč vzniklo — **víc lidí u jednoho monitoru si pomáhá
+    stejně dobře v jednom fondu jako ve třech** — a stálo by to hodně: fondy jsou v D1 oddělené
+    (**děti 990, puberťáci 1310, dospělí 1442**, dohromady 3 742), takže by dítě dostávalo
+    **74 % otázek psaných pro dospělé**. Tím by padla i práce z téhož dne, kdy se dorovnávala
+    podlaha na 10 dětských otázek v každé zemi.
+  - **Obojí (lhaní o pásmu i parta u monitoru) řeší rating sám.** Glicko nepotřebuje vědět, PROČ
+    je někdo dobrý — vyhraje pár her, rating vyletí a matchmaking ho spáruje se stejně silnými.
+    Zbývá jen prvních pár her, než se rating usadí; to je cena každé hry bez ověřování identity
+    a projekt má volný anti-cheat vědomě (zápis 2026-08-24).
+  - **Díra 1: `body.band` u zakládání hry.** [game/index.js](functions/api/game/index.js) bralo
+    `body.band || me.band` a kontrolovalo jen členství v `BANDS`, ne shodu s hráčem. Souboj na
+    odkaz je přitom **hodnocený** (`rated=1`) a `ratingRow()` v [settle.js](functions/_lib/settle.js)
+    si řádek pro libovolné pásmo prostě založí — dospělý účet se tak ručně sestaveným požadavkem
+    dostal do **dětského žebříčku** a dítě proti němu směl `join.js` pustit. Z appky to nešlo
+    (`online.js` `band` neposílá), ale díra to byla. Nově se pásmo bere výhradně z účtu.
+  - **Díra 2: `?band=` u denní pětky.** Totéž v [daily/index.js](functions/api/daily/index.js) —
+    nehodnocená je, ale zapisovala se do denního žebříčku cizího pásma.
+  - **Pásmo jde nově změnit** ([auth/band.js](functions/api/auth/band.js), `PUT /api/auth/band`).
+    Do teď šlo zvolit jen při registraci, takže kdo se seknul, musel založit nový účet a přijít
+    o rating i historii. **Rating se nepřenáší a je to správně** — pásma losují z různých fondů,
+    čísla napříč nimi nejsou porovnatelná; v novém se začíná od 1500 a při návratu se najde to
+    původní. **PIN se schválně nežádá** (na rozdíl od změny e-mailu): tady se nedá získat nic,
+    co ten, kdo drží odemčené zařízení, už nemá.
+  - **Past, na kterou by se snadno zapomnělo: přechod DO dětského pásma musí přezdívku
+    vygenerovat znovu.** Dětský prostor je schválně bez volného textu (`register.js`) — bez
+    tohohle kroku by stačilo přijít s libovolnou přezdívkou z jiného pásma a ta ochrana by
+    nebyla k ničemu. Opačným směrem se generovaná přezdívka nechává, je neškodná.
+  - **Dětský žebříček ratingu zrušen** ([leaderboard.js](functions/api/leaderboard.js) vrací
+    `closed: true`). Je to jediné pásmo, kde na pořadí nezáleží tak, aby za to stálo vystavovat
+    tu nejistotu. Dětem zůstávají turnaje, přátelé, odkaz i denní pětka a obrazovka jim to řekne
+    místo prázdného seznamu. **Denní žebříček se tím NEZAVŘEL** — je jednodenní a dětské
+    přezdívky jsou generované, takže neprozrazují nic; kdyby to vadilo, je to stejný jeden řádek.
+  - **`test:api` má 119 kontrol (bylo 109) a nových 10 je ověřeno MUTACÍ**, ne tím, že svítí
+    zeleně: po dočasném vrácení všech tří chyb spadly právě tři testy, každý ten svůj.
+  - **Past zaplacená cestou: `Set-Content -Encoding utf8` ve Windows PowerShellu píše BOM**,
+    takže `test-api.js` přestal jít spustit (`SyntaxError` hned na prvním řádku). Na hromadnou
+    úpravu souboru patří `[System.IO.File]::WriteAllText` s `UTF8Encoding($false)`.
+
 - **2026-08-31 — Registrace: dva sloupce na desktopu a e-mail se nabízí HNED, ne až v Účtu.**
   Hráč nahlásil, že obrazovka vypadá „jen pro velikost mobilu". Měl pravdu a příčina byla
   konkrétní: `.zk-wrap` má strop **640 px**, což je správně pro lobby s dlaždicemi, ale
@@ -1266,6 +1327,28 @@ posuvné měřítko, hodinky, židle) bez hlavního motivu — model z toho udě
 kde nic nevyniklo. Přidání věty „jedna scéna, ne vinětky" to slepilo dohromady, ale skutečná příčina
 byla jinde: **chyběl střed**. Jakmile dominanta dostala vtip na sebe a zbytek se explicitně podřídil,
 vyšlo to napoprvé. Nikdy tedy nedávej víc rovnocenných vtipů vedle sebe.
+
+### Dlaždice se kreslí na 96–132 px. Rozdělená kompozice tam nefunguje. (2026-08-31)
+Zaplaceno třemi pokusy o novou dlaždici `mode-online.jpg`. Obě zamítnuté varianty byly samy
+o sobě v pořádku a v plné velikosti hezké — v dlaždici ale nečitelné, protože **rozdělovaly
+pozornost mezi dvě stejně důležitá místa**:
+- **dva pokoje vedle sebe** (hráč u nás × soupeř na druhé straně světa, den vs. noc) — dva středy,
+  ve zmenšenině šmouha;
+- **glóbus s hráčem nahoře a druhým vzhůru nohama pod ním** — hráč to shrnul „z toho bolí hlava";
+  převrácená půlka nutí mozek obrázek luštit, což je u dlaždice, na kterou se kouká půl vteřiny,
+  ta nejhorší možná vlastnost.
+
+**Pravidlo:** dlaždice musí jít popsat jednou větou, která má JEDEN podmět („člověk u stolu
+a kolem něj parta lidí"). Bod 4 receptu výš („one single continuous scene with one clear focal
+point") to říká taky, ale nestačí ho napsat do promptu — musí platit i o nápadu samotném.
+Symetrie (dva pokoje, dva póly, dvě půlky) tenhle test neprojde nikdy, ať je prompt jakkoli
+poctivý. Před generováním se zeptej: **co z toho zbude ve 100 px?**
+
+**Nálada patří do promptu stejně výslovně jako kompozice.** Verze se dvěma pokoji vyšla
+melancholicky — dva shrbení lidé ve studeném modrém světle — protože prompt říkal „hunched",
+„deep night", „ve dvě ráno v pyžamu". Model náladu bere doslova. Když má být dlaždice veselá,
+musí tam stát `cheerful and playful`, teplé světlo v celé scéně a velká gesta; a i poražený
+se musí smát, jinak appka vypadá, že se v ní prohrává smutně.
 
 ### Napojení v kódu
 Dlaždice ([quiz.js](quiz.js), fce `tileHtml`) načítají `assets/{cont|country|section}-*.jpg`

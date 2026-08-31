@@ -255,7 +255,12 @@
 .qz-shell { transition: transform .4s ease; }
 .qz-modepick { align-items: center; justify-content: center; text-align: center; gap: 18px; padding: 44px 24px; }
 .qz-modepick h2 { font-family: 'Nunito', sans-serif; font-size: 44px; font-weight: 800; color: var(--teal); }
-.qz-modes { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+/* Čtyři režimy ve 2×2, ne 3+1. Ve flexu se čtvrtá karta zalamovala sama pod trojici,
+   takže online vypadal jako přílepek, ne jako rovnocenný režim. Mřížka je proto
+   natvrdo dvousloupcová; na úzkém displeji jeden sloupec, protože 2 × 220 + 16 mezera
+   = 456 px se na telefon nevejde. (2026-08-31) */
+.qz-modes { display: grid; grid-template-columns: 1fr; gap: 16px; justify-content: center; }
+@media (min-width: 560px) { .qz-modes { grid-template-columns: repeat(2, auto); } }
 .qz-mode { width: 220px; background: var(--paper2); border: 2px solid #dccdb0; border-radius: 18px; padding: 22px 18px; cursor: pointer;
   box-shadow: 0 4px 0 #e3d5b8; font-family: inherit; text-align: center; transition: transform .12s, box-shadow .12s; }
 .qz-mode:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; }
@@ -269,8 +274,10 @@
 .qz-mode .t { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 650; margin: 6px 0 4px; }
 .qz-mode .d { font-size: 12.5px; color: var(--muted); }
 /* na desktopu je po zrušení rámečku místo — karty režimů můžou být větší.
-   Práh je 1000 px, ne 900: 3 × 290 + 2 × 16 mezera = 902 px a k tomu 2 × 24 padding
-   .qz-modepick, takže pod ~950 px by se třetí karta zalomila do druhého řádku. */
+   Práh 1000 px je dědictví po flexovém řádku tří karet (3 × 290 + 2 × 16 = 902 px).
+   Od 2026-08-31 je mřížka 2×2, takže se sem vejdou i dřív (2 × 290 + 16 = 596 px);
+   práh ale zůstává, protože nejde jen o šířku karet — na menším plátně by 132px
+   obrázky a 24px nadpisy vytlačily rozcestník mimo obrazovku. */
 @media (min-width: 1000px) {
   .qz-mode { width: 290px; padding: 26px 22px; }
   .qz-mode .ic-img { width: 132px; height: 132px; border-radius: 18px; }
@@ -649,8 +656,13 @@
    nepatří, hostitelova žárovka už kouká z levého horního rohu (.qz-host-av),
    takže by tu byla dvakrát. landing-hero.jpg je jinak osiřelý (landing.html
    jen přesměrovává) a „lidi kolem glóbu" je přesně to, co online režim je.
-   Rám = stejná nalepená fotka jako u ilustrací dlaždic (.qz-tile-ic .ic-img). */
-.zk-authhero { display: block; box-sizing: border-box; width: 100%; height: 128px; object-fit: cover; object-position: 50% 46%;
+   Rám = stejná nalepená fotka jako u ilustrací dlaždic (.qz-tile-ic .ic-img).
+
+   Výška 210 px (dřív 128) je kvůli ČTVERCOVÉ ilustraci auth-hero.jpg: starý
+   landing-hero.jpg byl na šířku, takže mu úzký proužek nevadil, ale ze čtverce
+   `cover` vyřízne jen prostřední pás — a na tom zbyla deka místo lidí, kvůli
+   kterým ten obrázek je. `object-position` je proto výš (34 %), ne na středu. */
+.zk-authhero { display: block; box-sizing: border-box; width: 100%; height: 210px; object-fit: cover; object-position: 50% 20%;
   border-radius: 12px; border: 3px solid #fffdf6; outline: 2px solid #e3d5b8;
   box-shadow: 0 6px 16px rgba(120,90,50,.22); }
 /* Štítek přes spodní hranu fotky říká, do jaké části appky hráč vlezl —
@@ -716,10 +728,11 @@
   .zk-authcard { padding: 22px 22px 18px; }
   .zk-authgrid { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
     gap: 26px; align-items: stretch; }
-  /* Obrázek dostane celý sloupec na výšku, ať sloupce opticky drží spolu.
-     `min-height` je pojistka pro krátký formulář (přihlášení má jen dvě pole). */
-  .zk-authside { display: flex; flex-direction: column; }
-  .zk-authhero { height: auto; flex: 1 1 auto; min-height: 300px; object-position: 50% 42%; }
+  /* Obrázek je čtvercová ilustrace (512×512) — necháme ho blízko svého
+     přirozeného tvaru místo roztažení na celou výšku sloupce (ta se řídí
+     vyšším formulářem u registrace) a zbytek sloupce vycentrujeme kolem něj. */
+  .zk-authside { display: flex; flex-direction: column; justify-content: center; }
+  .zk-authhero { height: auto; flex: 0 0 auto; max-height: 320px; min-height: 220px; object-position: 50% 42%; }
   .zk-authcard h2 { font-size: 28px; margin-top: 12px; }
   .zk-authcard .zk-sub { margin-bottom: 0; }
   .zk-authmain { display: flex; flex-direction: column; justify-content: center; }
@@ -742,7 +755,7 @@
 .zk-authfoot .zk-linkbtn { font-size: 13px; color: var(--teal); text-decoration-color: #a9cfcb; }
 
 @media (max-width: 480px) {
-  .zk-authhero { height: 104px; }
+  .zk-authhero { height: 175px; }
   .zk-authcard { padding: 14px 13px 12px; }
   .zk-authcard h2 { font-size: 22px; }
   .zk-bandtile img { width: 48px; height: 48px; }

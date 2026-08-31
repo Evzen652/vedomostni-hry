@@ -484,6 +484,64 @@ async function playAll(token, gameId, total, ms = 2000) {
   const me2 = await api('/api/me', { token: M.token });
   ok(me2.body.email === null, 'po smazání /me hlásí, že e-mail není');
 
+  // ---------------------------------------------------------------- pásmo
+  section('Pásmo je vlastnost účtu, ne požadavku');
+
+  const P = (await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'Band_' + uniq(), pin: '1234', band: 'dospeli' } })).body;
+
+  // Do 2026-08-31 se pásmo bralo jako `body.band || me.band` a kontrolovalo se jen
+  // členství v BANDS. Dospělý účet si tak mohl založit HODNOCENÝ souboj na odkaz
+  // v dětském pásmu, dítě se k němu smělo připojit (join.js porovnává jen s
+  // game.band) a settle.js dospělého zapsal do dětského ratingu.
+  const podvrh = await api('/api/game', { method: 'POST', token: P.token,
+    body: { mode: 'odkaz', time_control: 'blesk', band: 'deti' } });
+  ok(podvrh.status === 201 && podvrh.body.band === 'dospeli',
+     'pásmo z těla požadavku se ignoruje, hra je v pásmu účtu: ' + podvrh.body.band);
+
+  // Totéž u denní pětky, kde se pásmo bralo z ?band= — nehodnocená je, ale zapisovala
+  // se do denního žebříčku cizího pásma.
+  const dailyCizi = await api('/api/daily?band=deti', { token: P.token });
+  ok(dailyCizi.body.band === 'dospeli',
+     'denní pětka ignoruje ?band= a dá pásmo účtu: ' + dailyCizi.body.band);
+
+  // Dětské pásmo veřejný žebříček nemá: pásmo je nutně jen čestné prohlášení,
+  // takže by na předních příčkách mohl sedět kdokoli.
+  const zebDeti = await api('/api/leaderboard?band=deti');
+  ok(zebDeti.status === 200 && zebDeti.body.closed === true && zebDeti.body.rows.length === 0,
+     'dětský žebříček je uzavřený');
+  const zebDosp = await api('/api/leaderboard?band=dospeli');
+  ok(zebDosp.status === 200 && !zebDosp.body.closed,
+     'žebříček ostatních pásem se vrací dál');
+
+  const zmenaSpatna = await api('/api/auth/band', { method: 'PUT', token: P.token,
+    body: { band: 'nesmysl' } });
+  ok(zmenaSpatna.status === 400, 'neznámé pásmo se odmítne, dostal ' + zmenaSpatna.status);
+
+  const stejne = await api('/api/auth/band', { method: 'PUT', token: P.token,
+    body: { band: 'dospeli' } });
+  ok(stejne.status === 200 && stejne.body.changed === false,
+     'změna na totéž pásmo nic nemění');
+
+  // Přechod DO dětského pásma musí přezdívku vygenerovat znovu — jinak by stačilo
+  // přijít s libovolným textem z jiného pásma a ochrana dětského prostoru (žádný
+  // volný text, žádná moderace) by nebyla k ničemu.
+  const nickPred = P.nick;
+  const doDeti = await api('/api/auth/band', { method: 'PUT', token: P.token,
+    body: { band: 'deti' } });
+  ok(doDeti.status === 200 && doDeti.body.band === 'deti' && doDeti.body.changed === true,
+     'pásmo jde po registraci změnit');
+  ok(doDeti.body.nick !== nickPred,
+     'přechod do dětského pásma přezdívku přepíše: ' + doDeti.body.nick);
+  ok((await api('/api/me', { token: P.token })).body.band === 'deti',
+     '/me hlásí nové pásmo');
+
+  // Fond otázek se musí přepnout s ním, jinak by změna byla jen kosmetická.
+  const poZmene = await api('/api/game', { method: 'POST', token: P.token,
+    body: { mode: 'solo', time_control: 'blesk' } });
+  ok(poZmene.status === 201 && poZmene.body.band === 'deti',
+     'nová hra se losuje z nového pásma');
+
   console.log('\n' + (fail ? 'NEPROŠLO: ' + fail + ' chyb, ' + pass + ' v pořádku'
                            : 'VŠE V POŘÁDKU: ' + pass + ' kontrol'));
   process.exit(fail ? 1 : 0);

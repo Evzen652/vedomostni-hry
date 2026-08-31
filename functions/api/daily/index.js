@@ -18,7 +18,9 @@ export async function onRequestGet({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
 
-  const band = new URL(request.url).searchParams.get('band') || me.band;
+  // Pásmo se bere z účtu, ne z URL. Do 2026-08-31 tu bylo `?band=` s fallbackem na
+  // účet, takže šlo odehrát cizí pětku a zapsat se do denního žebříčku cizího pásma.
+  const band = me.band;
   if (!BANDS.includes(band)) return fail('neznámé pásmo');
 
   const date = today();
