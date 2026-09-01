@@ -1,13 +1,13 @@
 {
- "generated": "2026-08-30T23:30:04.179Z",
- "qTotal": 3702,
- "flagged": 813,
+ "generated": "2026-09-01T14:45:02.103Z",
+ "qTotal": 3742,
+ "flagged": 837,
  "codeCounts": {
-  "hlaska_mimo": 476,
+  "hlaska_mimo": 487,
   "kids_dlouha_otazka": 78,
-  "quip_wrong_opakuje": 138,
-  "sablona_jako": 74,
-  "kids_abstraktni": 63,
+  "quip_wrong_opakuje": 139,
+  "sablona_jako": 75,
+  "kids_abstraktni": 80,
   "kids_dlouhe_slovo": 31,
   "duplicita": 3
  },
@@ -653,6 +653,13 @@
     "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
    }
   ],
+  "ch-k-cervenokrizkovy-znak": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
   "ch-k-bernardyn": [
    {
     "code": "quip_wrong_opakuje",
@@ -702,6 +709,13 @@
     "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
    }
   ],
+  "cl-k-moai-sochy": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
   "cn-q-cinska-zed": [
    {
     "code": "hlaska_mimo",
@@ -742,6 +756,11 @@
     "code": "hlaska_mimo",
     "sev": "warn",
     "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
    }
   ],
   "cn-k-ryzoviste": [
@@ -989,6 +1008,13 @@
     "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
    }
   ],
+  "cz-k-hymna-puvod-hra": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
   "cz-k-lipa-narodni-strom": [
    {
     "code": "sablona_jako",
@@ -1006,6 +1032,11 @@
     "code": "kids_dlouhe_slovo",
     "sev": "warn",
     "msg": "dlouhé/odborné slovo „Svatováclavská“ — pro 8–11 náročné"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
    }
   ],
   "cz-k-maly-znak-jeden-lev": [
@@ -2106,6 +2137,11 @@
     "msg": "dlouhé/odborné slovo „Československa.“ — pro 8–11 náročné"
    },
    {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   },
+   {
     "code": "kids_dlouha_otazka",
     "sev": "warn",
     "msg": "dlouhá otázka (157 znaků) pro 8–11"
@@ -2555,6 +2591,13 @@
     "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
    }
   ],
+  "ec-k-panamsky-klobouk": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
   "eg-q-tutanchamon": [
    {
     "code": "hlaska_mimo",
@@ -2567,6 +2610,11 @@
     "code": "hlaska_mimo",
     "sev": "warn",
     "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
    }
   ],
   "eg-k-rude-more": [
@@ -2677,6 +2725,13 @@
     "code": "quip_wrong_opakuje",
     "sev": "flag",
     "msg": "quip_wrong doslovně obsahuje odpověď „Červenou a žlutou“ — chybí nadhled"
+   }
+  ],
+  "es-k-spanish-guitar": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
    }
   ],
   "fi-k-sob": [
@@ -2943,6 +2998,18 @@
     "msg": "quip_wrong doslovně obsahuje odpověď „Libreville“ — chybí nadhled"
    }
   ],
+  "ga-k-punu-maska": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   },
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
   "gb-q-lakedistrict": [
    {
     "code": "hlaska_mimo",
@@ -3137,6 +3204,20 @@
     "msg": "dlouhé/odborné slovo „nejoblíbenější“ — pro 8–11 náročné"
    }
   ],
+  "id-k-wayang-kulit-stiny": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "id-k-batik-vosk": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
   "ie-t-riverdance": [
    {
     "code": "hlaska_mimo",
@@ -3252,6 +3333,13 @@
     "code": "sablona_jako",
     "sev": "warn",
     "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "il-k-hebrejstina-ozivena": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
    }
   ],
   "in-q-taj-mahal": [
@@ -3492,6 +3580,20 @@
     "msg": "quip_wrong doslovně obsahuje odpověď „Osamu Tezuka“ — chybí nadhled"
    }
   ],
+  "jp-t-sibuja-diagonalni-prechod": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "jp-t-mrakodrapy-zemetreseni": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
   "ke-q-masai-mara": [
    {
     "code": "hlaska_mimo",
@@ -3567,6 +3669,13 @@
     "code": "kids_dlouha_otazka",
     "sev": "warn",
     "msg": "dlouhá otázka (161 znaků) pro 8–11"
+   }
+  ],
+  "ke-k-behci-vytrvalci": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
    }
   ],
   "kp-q-pektu": [
@@ -3721,6 +3830,13 @@
     "code": "sablona_jako",
     "sev": "warn",
     "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   }
+  ],
+  "kr-k-hangul-vznik": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
    }
   ],
   "mn-q-suchbatar": [
@@ -3950,6 +4066,25 @@
     "code": "quip_wrong_opakuje",
     "sev": "flag",
     "msg": "quip_wrong doslovně obsahuje odpověď „Otec nezávislosti“ — chybí nadhled"
+   }
+  ],
+  "my-k-kahau-nos": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "my-k-wau-bulan-drak": [
+   {
+    "code": "sablona_jako",
+    "sev": "warn",
+    "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
+   },
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
    }
   ],
   "nl-q-vilem-oransky": [
@@ -4288,6 +4423,20 @@
     "msg": "hláška používá šablonu „je jako / jako by“ (appka ji nadužívá)"
    }
   ],
+  "pe-k-nazca-obrazce": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
+  "pe-k-kipu-uzliky": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
+   }
+  ],
   "ph-q-basketbal": [
    {
     "code": "quip_wrong_opakuje",
@@ -4403,6 +4552,20 @@
     "code": "kids_dlouha_otazka",
     "sev": "warn",
     "msg": "dlouhá otázka (172 znaků) pro 8–11"
+   }
+  ],
+  "pk-k-snezny-levhart": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
+  "pk-k-malovane-nakladaky": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
    }
   ],
   "pl-q-krakow-unesco": [
@@ -5428,6 +5591,13 @@
     "msg": "quip_wrong doslovně obsahuje odpověď „Z turečtiny“ — chybí nadhled"
    }
   ],
+  "tr-k-nasreddin-hodza": [
+   {
+    "code": "hlaska_mimo",
+    "sev": "warn",
+    "msg": "quip_wrong nesdílí žádné klíčové slovo s otázkou/odpovědí — možná mluví o něčem jiném"
+   }
+  ],
   "tw-q-taipei-101": [
    {
     "code": "hlaska_mimo",
@@ -5538,6 +5708,13 @@
     "code": "kids_dlouhe_slovo",
     "sev": "warn",
     "msg": "dlouhé/odborné slovo „úzkorozchodnou“ — pro 8–11 náročné"
+   }
+  ],
+  "tw-k-taroko-mramor": [
+   {
+    "code": "quip_wrong_opakuje",
+    "sev": "flag",
+    "msg": "quip_wrong doslovně obsahuje odpověď „Z mramoru“ — chybí nadhled"
    }
   ],
   "ua-q-cernozem": [
@@ -5671,6 +5848,13 @@
     "msg": "dlouhá otázka (156 znaků) pro 8–11"
    }
   ],
+  "ua-k-pysanky-vejce": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Umění) v dětském fondu"
+   }
+  ],
   "us-q-grand-canyon": [
    {
     "code": "hlaska_mimo",
@@ -5737,6 +5921,13 @@
     "code": "quip_wrong_opakuje",
     "sev": "flag",
     "msg": "quip_wrong doslovně obsahuje odpověď „Super Bowl“ — chybí nadhled"
+   }
+  ],
+  "us-k-nasa": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
    }
   ],
   "vn-q-ha-long-bay": [
@@ -5924,6 +6115,13 @@
     "code": "quip_wrong_opakuje",
     "sev": "flag",
     "msg": "quip_wrong doslovně obsahuje odpověď „Duhový národ“ — chybí nadhled"
+   }
+  ],
+  "za-k-diamanty": [
+   {
+    "code": "kids_abstraktni",
+    "sev": "warn",
+    "msg": "abstraktní téma (Historie) v dětském fondu"
    }
   ],
   "za-k-vuvuzela": [

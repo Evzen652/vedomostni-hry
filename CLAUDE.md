@@ -20,6 +20,29 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Regresní průchod: `.qz-setup` mělo špatné pořadí CSS pravidel, drobečková lišta přesahovala do nadpisu „Nová výprava".**
+  Zadání znělo „proveď testy" (`test:api` 138, `test:offline` 568, `validate`, `audit`,
+  `lint-irony`, `lint-facts`, `sim-online` — všechno bez regrese) + ruční průchod obrazovkami
+  napříč šířkami. Ten odhalil jednu skutečnou vadu, starou přes měsíc, ne z dnešních úprav.
+  - **Příčina: dvě pravidla `.qz-setup` v opačném pořadí, než mají.** `.qz-pick, .qz-start`
+    mají vzor „nejdřív zkratka `padding: 70px…`, pak SAMOSTATNÉ `padding-top: 124px`
+    PŘEBIJÍCÍ tu zkratku" — to je schválně, protože `.qz-pickhead` je `position: absolute`
+    a potřebuje mít nahoře rezervované místo. `.qz-setup` mělo pořadí obrácené: zkratka
+    `padding: 58px…` byla AŽ ZA `padding-top: 112px`, takže tu 112 přebila zpátky na 58.
+    Lišta (`Zpět · PÁRTY · Evropa › Česko › Vše`) tak končila na 112 px a nadpis začínal
+    na 78 px — **34 px překryvu**, viditelné na obrazovce „Nová výprava" v párty i sólo
+    režimu, na všech šířkách (ověřeno 375, 768; na desktopu stejně, jen s jinou lištou).
+    Nebyla to náhoda dneška — `git log -L` ukázal poslední dotčení řádku k 2026-07-31.
+  - **Oprava: `.qz-setup` nově NEPOUŽÍVÁ zkratku `padding`, jen `padding-left/right/bottom`.**
+    Bez zkratky nemá co přebít `padding-top` z dřívějšího pravidla, takže na pořadí souborů
+    už nezáleží. Bezpečnější než přehazovat pořadí (to by za rok zase někdo omylem prohodil).
+  - **Vedlejší nález: komentář u `.zk-auth` (přihlašovací obrazovka, sdílí třídu `.qz-setup`)
+    popisoval neplatnou příčinu** („qz-setup dává 58 px") — `.zk-auth` má vlastní explicitní
+    `padding-top: 76px`, který kaskáda nemění bez ohledu na základ, takže se touhle opravou
+    chová beze změny. Přepsáno, ať příští session neluští odkaz na hodnotu, co už neplatí.
+  - Ověřeno v prohlížeči na 375 a 768 px: párty i sólo „Nová výprava" bez překryvu,
+    přihlašovací obrazovka online režimu beze změny. `test:offline` 568 kontrol po opravě.
+
 - **2026-09-01 — Průřezový audit (4 oblasti). Opraveny první čtyři nálezy; zbytek je sepsaný níž a NENÍ hotový.**
   Čtyři paralelní audity (bezpečnost serveru, XSS/klient, offline logika, online férovost).
   Nálezy jsem ověřoval sám v kódu — auditní agenti hlásí i teoretická rizika, která neplatí.

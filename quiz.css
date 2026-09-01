@@ -420,7 +420,12 @@
 .qz-tiles-sec .qz-tile-sub { font-size: 10px; }
 .qz-pick-empty { grid-column: 1 / -1; color: var(--muted); font-size: 14px; padding: 26px; }
 
-.qz-setup { padding: 58px 22px 20px; gap: 12px; overflow-y: auto; }
+/* `padding-left/right/bottom`, NE zkratka `padding` — ta by přepsala `padding-top: 112px`
+   z pravidla výš (2026-07-31), které rezervuje místo pro absolutně pozicovanou lištu
+   .qz-pickhead. Přesně to se stalo: zkratka tu byla donedávna a lišta na obrazovce
+   „Nová výprava" přesahovala 34 px do nadpisu (`Nastavení hry` bylo pod „Vše").
+   Ověřeno mutací: vrácení zkratky `padding: 58px 22px 20px` reprodukuje překryv. */
+.qz-setup { padding-left: 22px; padding-right: 22px; padding-bottom: 20px; gap: 12px; overflow-y: auto; }
 .qz-setup h2 { font-family: 'Nunito', sans-serif; font-size: 24px; text-align: center; margin-bottom: 2px; color: var(--teal); }
 .qz-setcard { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 14px; padding: 12px 14px; box-shadow: 0 3px 0 #e3d5b8; }
 .qz-setcard h3 { font-family: 'Nunito', sans-serif; font-size: 15px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
@@ -764,10 +769,11 @@
    je horní hranice, po kterou formulář o dvou polích ještě drží pohromadě.
    Pozor: .qz-setup je svislý flex, takže cokoli uvnitř se bez align-self
    roztáhne na plnou šířku — proto to má „Zpět" nastavené natvrdo. */
-/* padding-top: .qz-setup dává 58 px, jenže hostitelova hlava (.qz-host, absolutně
-   ukotvená k shellu) sahá do 62 px — „Zpět" se jí pak zezadu podlézá o pár pixelů.
-   Zbytek appky to má stejně, tady to ale bije do očí, protože pod tlačítkem
-   nezačíná mřížka dlaždic, ale jediná karta. */
+/* Vlastní padding-top, ne dědění ze `.qz-setup` (dnes 112 px, rezervováno pro lištu
+   .qz-pickhead — tu ale přihlašovací obrazovka nemá, jen hostitele a „Zpět"). 76 px je
+   vyladěno tak, aby se hostitelova hlava (.qz-host, absolutně ukotvená k shellu, sahá
+   do 62 px) nepodlézala pod „Zpět". Zbytek appky to má stejně, tady to ale bije do očí,
+   protože pod tlačítkem nezačíná mřížka dlaždic, ale jediná karta. */
 .zk-auth { max-width: 460px; padding-top: 76px; }
 /* Navigace zpět je navigace, ne hlavní akce. .qz-setup/.qz-modepick je svislý flex,
    takže bez align-self se „Zpět" roztáhne přes celou šířku obrazovky a vypadá
