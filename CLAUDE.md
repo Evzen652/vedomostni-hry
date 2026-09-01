@@ -20,6 +20,33 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-02 — Dětská hláška „Tys to věděl!" se opakovala u 62 % otázek; rozbito na 8 rotujících variant.**
+  Hráč si všiml, že hláška po správné odpovědi v dětském pásmu zní pořád stejně, a zeptal
+  se „jak často?". Změřeno přesně: **494 z 990** dětských otázek (50 %) mělo `quip_correct`
+  začínající doslova „Tys to věděl!", plus dalších **123** (12 %) variantou „Jé, tys to
+  věděl!" — dohromady **617/990 = 62,3 %**. Pro srovnání nejčastější opener u puberťáků
+  i dospělých sedí na 4–5 % (`Bod pro tebe,…`), takže je to specifické jen pro dětské pásmo.
+  - **Příčina je zdokumentované rozhodnutí, ne bug:** zápis z 2026-08-15 zavedl pro dětské
+    hlášky pevnou šablonu „opener „Tys to věděl!" + mírná ironie" — na rozdíl od ostatních
+    pásem, kde se hlášky psaly volně. Rozhodnutí samo bylo v pořádku (řešilo tehdejší
+    „Přesně!" u 80 % otázek), jen nikdy nedostalo víc než jeden opener.
+  - **[scripts/diversify-kids-openers.js](scripts/diversify-kids-openers.js)** (nový,
+    spustitelný znovu) nahrazuje jen úvodní frázi — zbytek věty (konkrétní vtipný fakt)
+    zůstává beze změny. Rotace je **deterministická** (`index % 8`, ne náhoda), ať je běh
+    opakovatelný. Sada 8 variant drží obě původní fráze (frekvence se sníží, nemizí úplně)
+    + 6 nových stejného tónu: „Bod pro tebe!", „Trefa do černého!", „Bystrá hlava!",
+    „Paráda, sedí to!", „To bylo hned vidět!", „Hop, a je to!" — nadšené, ne sarkastické,
+    bez rodu v minulém čase (stejné pravidlo jako u `_verdikt` v `fondy.json`).
+  - **Výsledek: 617 → 78+77 = 155/990 (15,7 %)**, obě frekvence teď ~7,8 % každá — blíž
+    zdravému základu (4–5 %) než dřív, ale schválně ne níž, protože „Tys to věděl!" je
+    fráze, kterou appka nechce úplně ztratit, jen aby nedominovala.
+  - **Zápis do JSON drží formát 1 mezera + CRLF** (`JSON.stringify(qs,null,1).replace(/\n/g,"\r\n")`),
+    ověřeno round-tripem na netknutém souboru, že je bajt po bajtu shodné s originálem.
+  - Ověřeno v prohlížeči na deseti odpovězených otázkách za sebou (`fetch` dotáhl správnou
+    odpověď z dat, aby šlo klikat schválně správně): žádná hláška se neopakovala víc než
+    dvakrát. `test:api` 138, `test:offline` 568, `lint-facts` 9 upozornění (beze změny),
+    `validate` 0 chyb.
+
 - **2026-09-01 — Poměr sloupců na desktopu 3:2 → 5:4 (karta užší a vyšší, rám širší).**
   Přání „zvýšit na výšku, snížit na délku" u první (textové) karty. Řešeno jen posunem
   poměru mřížky — protože rám drží `align-self: stretch` (viz zápis o líčování výš),
