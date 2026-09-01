@@ -20,6 +20,27 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — VYZKOUŠENO A ZAMÍTNUTO: karta a rám POD SEBOU místo vedle sebe.**
+  Nápad zněl dobře: když rám nemusí lícovat s ničím po straně, může mít prostě poměr
+  skutečné fotky (16:9) a pruh zmizí úplně — beze zbytku, ne jen zmenšený. Vizuálně to
+  fungovalo přesně takhle (rám 950×537, fotka 929×531 — pruh prakticky nulový).
+  **Hráč to i tak zamítl: „to je zbytečně velké. nepůsobí to dobře."** Rám na celou
+  šířku sloupce (~950 px) dělal z appky výrazně vyšší stránku — na notebooku s výškou
+  okna ~800 px se karta s fotkou pod ní přestaly vejít na jeden pohled a bylo nutné
+  scrollovat, což předtím (vedle sebe) nebyl problém.
+  - **Druhý důvod, proč to nebyl jasný kompromis ani po vizuální stránce:** appka dnes
+    (2026-09-01) **negenerovala žádnou skutečnou čtvercovou ilustraci k otázce** — jen
+    se přepnul generátor v kódu (`gen-irony-images.js`, `1:1`), dávka se nikdy nespustila.
+    Test na simulovaném čtverci (ořez existující fotky) ukázal, že by čtvercové obrázky
+    dostaly stejně velký pruh, jen PO STRANÁCH (~210 px na stranu) — takže i kdyby
+    hráč velikost přijal, řešení by za pár týdnů, jak poroste čtvercový fond, přestalo
+    fungovat pro rostoucí část otázek.
+  - **NEZKOUŠEJ TO ZNOVU jen kvůli pruhům** — důvod zamítnutí byl vizuální dojem
+    (`velikost`), ne technický. Vrátit se k tomu má smysl jen jako SAMOSTATNÉ rozhodnutí
+    o layoutu (např. při redesignu), ne jako vedlejší efekt honby za pruhy.
+  - Vráceno beze zbytku na stav z předchozího zápisu (karta vedle rámu, `align-self: stretch`,
+    žádný pevný poměr). `git diff` proti commitu `182eeed` po vrácení prázdný.
+
 - **2026-09-01 — Pruh kolem starých 16:9 fotek zmenšen sevřením TEXTOVÉ KARTY, ne honěním rámu.**
   Hráč se ptal na pruhy u fotky (viz zápis „Rám se tahne podle karty" výš) — rám je od
   dnešního odpoledne `align-self: stretch`, takže se drží výšky karty, a čím vyšší karta,
