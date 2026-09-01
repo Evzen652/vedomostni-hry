@@ -148,7 +148,15 @@
     } catch(e){}
   }
   function serializeState(){
-    return { mode:S.mode, school:!!S.school, band:S.band, cc:(S.sel&&S.sel.cc)||"ru", section:(S.sel&&S.sel.section)||null,
+    // `ccs` je seznam VŠECH vybraných zemí; `cc` je jen ta jediná, když je jediná.
+    // Do 2026-09-01 se ukládalo pouze `cc` s fallbackem "ru" — jenže selectCountries()
+    // nastavuje cc=null pokaždé, když je zemí víc, takže každá hra přes „Celý svět"
+    // nebo „Všechny země" se uložila jako RUSKÁ. Při obnovení se fond postavil jen
+    // z Ruska, žádné z uložených id se nenašlo (jsou prefixovaná zemí) a hra spadla
+    // na `shuffle(data.questions)` — z desetiotázkové výpravy byla 154otázková ruská.
+    return { mode:S.mode, school:!!S.school, band:S.band,
+      cc:(S.sel&&S.sel.cc)||null, ccs:(S.sel&&S.sel.ccs)||null, section:(S.sel&&S.sel.section)||null,
+      qLimit:S.qLimit, schoolLevel:S.schoolLevel,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
       turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, rotate:S.rotate, timer:S.timer||0,
       players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score })) };
@@ -166,14 +174,24 @@
     const rec=loadSaves()[id]; if(!rec || !data) return;
     showHomeBtn(true);   // odsud vede „Domů" zpátky na výběr režimu, takže dává smysl
     const st=rec.state;
-    const cc=st.cc||"ru";
-    S.sel={ cc, cont:COUNTRY_CONT[cc]||"asia", section:st.section||null };
-    COUNTRY=COUNTRY_BY_CC[cc]||cc.toUpperCase(); FLAG=COUNTRY_FLAG[cc]||"🏳️";
-    await loadCardsFor(cc); applyPool();
+    // Starší uložené hry `ccs` nemají — u nich se bere `cc` a fallback zůstává "ru"
+    // jako dřív, ať se aspoň otevřou. Nové hry `ccs` mají vždycky.
+    const ccs = (st.ccs && st.ccs.length) ? st.ccs : [st.cc || "ru"];
+    // selectCountries() umí obě větve (jedna země × víc zemí) včetně názvu, vlajky
+    // a sloučení karet — ruční kopie té logiky sem byla přesně to, co se rozešlo.
+    await selectCountries(ccs);
+    S.sel.cont = S.sel.cc ? (COUNTRY_CONT[S.sel.cc] || "asia") : null;
+    S.sel.section = st.section || null;
+    applyPool();
     S.mode=st.mode; S.school=!!st.school; S.band=st.band||"dospeli";
+    S.qLimit=st.qLimit||null; S.schoolLevel=st.schoolLevel||3;
     S.order=(st.orderIds||[]).map(qid=>data.questions.find(q=>q.id===qid)).filter(Boolean);
     if(!S.order.length) S.order=shuffle(data.questions);
-    S.idx=st.idx||0; S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
+    // Index MUSÍ do nové délky. Když z dat zmizí id (přejmenování, přeřazení sekcí),
+    // filter(Boolean) pole zkrátí — a nezaříznutý S.idx pak v sólu ukáže na undefined
+    // a renderQuestion() spadne na prázdnou obrazovku bez cesty ven. (2026-09-01)
+    S.idx=Math.min(st.idx||0, Math.max(0, S.order.length-1));
+    S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
     // hlas i steal jsou dočasně schované z UI (viz renderSetup) — starší uložená hra s
     // voice:true/steal:true by jinak dál mluvila / nabízela krádež bodů, aniž by šel přepínač vypnout
     S.voice=false; S.steal=false; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
@@ -787,6 +805,8 @@
   }
   function startSchool(level){
     S.mode="solo"; S.school=true;
+    S.timer=0;   // viz startGame — časomíra z párty se sem nesmí přenést
+    S.schoolLevel=level;   // ať „Hrát znovu" po škole spustí zase školu, ne sólo
     S.players=[{ name:"Třída", band:"deti", color:COLORS[1], score:0, side:"dole" }];
     S.turn=0;
     const filtered = data.questions.filter(q => (q.difficulty||1) <= level);
@@ -891,6 +911,11 @@
 
   function startGame(){
     S.mode="solo";
+    // Časomíru nabízí JEN párty setup, ale S.timer je globální stav — bez tohohle
+    // resetu si hráč odnesl „svižný · 15 s" z párty do sóla i do školy a neměl ho
+    // kde vypnout, protože ani jedna z těch obrazovek přepínač nemá. Ve škole navíc
+    // timeoutReveal() po patnácti vteřinách sám odhalil odpověď třídě. (2026-09-01)
+    S.timer=0;
     S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, side:"dole" }];
     S.turn=0;
     // tři pásma: „děti" jen vlastní fond (q.kids), „puberťáci" lehčí obecné trivia (difficulty ≤2), „dospělí" celé obecné trivia — všechna bez dětských otázek
@@ -1274,7 +1299,13 @@
         <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>
       </div>
     </div>`;
-    body.querySelector("#qz-again").addEventListener("click", startGame);
+    // endGame() je společný pro sólo i školu, takže „Hrát znovu" musí vědět, odkud
+    // se sem přišlo. Do 2026-09-01 volalo vždycky startGame(), což ze školní hry
+    // udělalo sólo pro dospělé: zahodila se úroveň, „Třída" se přejmenovala na „Ty"
+    // a zmizela třída qz-school, takže se uprostřed promítání zmenšil text.
+    body.querySelector("#qz-again").addEventListener("click", function () {
+      if (S.school) startSchool(S.schoolLevel); else startGame();
+    });
     body.querySelector("#qz-home").addEventListener("click", close);
   }
 

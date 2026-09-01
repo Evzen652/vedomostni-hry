@@ -639,6 +639,13 @@
   border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 12px; font-weight: 700;
   color: var(--teal); cursor: pointer; transition: background .12s; }
 .zk-challenge:hover { background: #e8f2f0; }
+/* Odebrání přítele. Schválně tiché a menší než „Vyzvat" — je to výjimečná akce,
+   ne rovnocenná nabídka. `margin-left` NEmá auto: to už si bere .zk-challenge,
+   která tím odsune obě tlačítka doprava jako dvojici. (2026-09-01) */
+.zk-unfriend { flex: none; margin-left: 6px; background: none; border: 1.5px solid transparent;
+  border-radius: 999px; width: 26px; height: 26px; line-height: 1; padding: 0; font: inherit;
+  font-size: 13px; color: var(--muted); cursor: pointer; transition: color .12s, border-color .12s; }
+.zk-unfriend:hover { color: var(--bad); border-color: #eec7bf; }
 
 /* Vlastní řádek v žebříčku. */
 .qz-standrow.zk-me { border-color: var(--teal); background: #eef6f4; }

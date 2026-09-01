@@ -20,6 +20,74 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Průřezový audit (4 oblasti). Opraveny první čtyři nálezy; zbytek je sepsaný níž a NENÍ hotový.**
+  Čtyři paralelní audity (bezpečnost serveru, XSS/klient, offline logika, online férovost).
+  Nálezy jsem ověřoval sám v kódu — auditní agenti hlásí i teoretická rizika, která neplatí.
+  **Opraveno teď** (vše ověřeno MUTACÍ, `test:api` 126 kontrol místo 119):
+  - **Dětský DENNÍ žebříček šel stáhnout BEZ PŘIHLÁŠENÍ.** `leaderboard.js` byl jediný
+    endpoint mimo `/auth/*` bez `currentUser()`, a větev `daily` se vyhodnocovala **dřív**
+    než ochrana dětského pásma. `?daily=1&band=deti` tedy vydal přezdívku, skóre a přesný
+    čas dohrání — denní rytmus konkrétního dítěte. Rozhodnutí z 2026-08-31 tuhle druhou
+    cestu přehlédlo; v jeho vlastním komentáři dokonce stálo „dětem zůstává denní pětka".
+    **Poučení: když se něco zavírá, hledej VŠECHNY větve, které to vracejí** — tady stačilo,
+    že `daily` měla vlastní `return` nad kontrolou. Klient `?daily=1` nikdy nevolal, takže
+    to byla čistě nepoužívaná plocha, která jen vydávala data.
+  - **Přítele nešlo odebrat.** `friends.js` měl jen GET a POST. Přidání je přitom oboustranné
+    a bez souhlasu druhé strany, takže kdo se jednou dostal do seznamu, zůstal tam napořád —
+    a to u appky, kde je friend_code podle vlastní dokumentace *jediná* ochrana dětí před
+    oslovením cizím člověkem. Nově `DELETE` (maže oba směry) + tlačítko v UI s potvrzením.
+  - **Hádání friend_code nemělo žádný limit.** Prostor 31⁶ chrání konkrétní účet, ne populaci:
+    útočník nehledá konkrétní dítě, stačí mu **jakékoli**, takže očekávaný počet pokusů je
+    31⁶/N. Nově klouzavé okno 10 neúspěchů za hodinu (`users.friend_tries*`, migrace
+    [2026-09-01-friend-limit.sql](migrations/2026-09-01-friend-limit.sql)). **Schválně NE zámek
+    jako u loginu** — ten se v `login.js` při zamčení resetuje na nulu, takže útočníka
+    nezpomalí víc než prvních deset minut.
+  - **Časomíra z párty prosakovala do sóla a do školy.** `S.timer` je globální stav, ale
+    nabízí ho jen párty setup; `startGame`/`startSchool` ho neresetovaly. Kdo si zahrál párty
+    se „svižný · 15 s", hrál pak pod limitem i v sólu a ve škole — a **neměl ho kde vypnout**,
+    protože ani jedna obrazovka přepínač nemá. Ve škole navíc `timeoutReveal()` po 15 s sám
+    odhalil odpověď promítané třídě.
+  - **Rozehraná hra přes víc zemí se obnovila jako RUSKÁ.** `serializeState()` ukládalo
+    `cc:(S.sel&&S.sel.cc)||"ru"`, jenže `selectCountries()` nastavuje `cc=null` pokaždé, když
+    je zemí víc, a `ccs` se neukládalo vůbec. Fond se tedy postavil jen z Ruska, žádné z
+    uložených id se nenašlo (jsou prefixovaná zemí) a hra spadla na `shuffle(data.questions)`
+    — z desetiotázkové výpravy „Celý svět" byla 154otázková ruská. **Týkalo se to každé hry
+    přes „Celý svět" nebo „Všechny země".** Nově se ukládá `ccs` a obnova volá `selectCountries()`
+    místo ruční kopie té logiky; `S.idx` se navíc zařízne do nové délky, jinak po zmizení id
+    ukáže na `undefined` a obrazovka spadne bez cesty ven.
+
+- **2026-09-01 — OTEVŘENÉ nálezy z auditu. Nic z toho není opravené, čti před další prací na online.**
+  - **Časová složka online hry NEEXISTUJE na serveru.** `ms` posílá klient, `answer.js` ověří
+    jen `Number.isInteger` a `ms >= 0`, a v `schema.sql` není nic jako `served_at` — server si
+    nepamatuje, kdy otázku vydal. `q/[n].js` navíc nehlídá pořadí, takže jde stáhnout všech
+    10–15 otázek naráz. Limit 10 s žije **výhradně v prohlížeči**. Kdokoli s `curl`em má
+    neomezený čas a přesto nárokuje maximální rychlostní bonus. Postihuje rating, denní
+    žebříček i turnaje. `docs/online-rezim.md` přitom tvrdí, že „krátký časovač prakticky
+    vylučuje googlení" — neplatí to.
+  - **Správné odpovědi jsou veřejně na webu** (`dist/data/questions/*.json`), protože je
+    potřebuje offline hra. Není to chyba v kódu, ale **střet dvou režimů nad jedním fondem**.
+    Dokud platí, je jakýkoli žebříček spíš ozdoba než měření. Buď to přiznat a žebříčky
+    odlehčit, nebo fond rozdělit na offline a serverový.
+  - **Souběhy:** `answer.js` čte `answered+1` a zapisuje absolutní hodnotu → dvě souběžné
+    odpovědi čítač rozbijí a hra se **nikdy neuzavře**; `settle.js` nastavuje `status='done'`
+    bez `WHERE status='open'` → dvojí zápis Glicka i turnajových bodů; `join.js` a `bot.js`
+    nemají zámek na slot, takže do souboje pro dva můžou vstoupit tři.
+  - **Žádná expirace her ani fronty.** Kdo prohrává, zavře prohlížeč — hra zůstane `open`
+    navždy, soupeř nedostane výhru a nemůže ani odvetu. Je to nejlevnější způsob, jak si
+    nikdy nepokazit rating. Chybí cron/`[triggers]`.
+  - **Odveta poškozuje soupeře:** `rematch.js` volá `markSeen()` na druhého hráče, takže mu
+    odečte 10 otázek z fondu neviděných, **aniž by je kdy uviděl** — a jde to opakovat.
+  - **Three.js z CDN bez `integrity`** (`hra.html`). Jde proti konvenci „appka je soběstačná"
+    i proti rozhodnutí z 2026-07-27, kdy se kvůli tomu stahovala textura glóbu do repa.
+  - **Žádný `_headers`** → žádná CSP u appky, která překresluje přes `innerHTML` na desítkách
+    míst. Chybí i `X-Frame-Options` a `Referrer-Policy`.
+  - **Odkaz na obnovu PINu se loguje v čistém textu** (`mail.js`) — v logu je plnohodnotný
+    převzímací klíč spárovaný s e-mailem.
+  - **Bez limitu:** registrace (sybil farming ratingu), zakládání her a turnajů.
+  - **Drobnosti:** `esc()` v `quiz.js` neescapuje apostrof (v `online.js` ano), `flagStamp()`
+    neescapuje `cc`, `avatar` se ukládá bez jakékoli validace, token platí 90 dní a nejde
+    odvolat ani změnou PINu, `denní pětka` jde odehrát 3× denně přepnutím pásma.
+
 - **2026-09-01 — Produkce nasazena a srovnaná s repem; `account_id` patří do `wrangler.toml`.**
   Produkční D1 byla od 2026-08-25 pozadu o všechno — sjednocení sekcí, 40 nových otázek,
   přejmenovaná id, turnajové tabulky. Protože v ní byl **jediný testovací účet a nula

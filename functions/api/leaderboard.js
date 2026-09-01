@@ -1,4 +1,5 @@
 import { BANDS, json, fail } from '../_lib/game.js';
+import { currentUser } from '../_lib/auth.js';
 
 /**
  * GET /api/leaderboard?band=dospeli[&daily=1]
@@ -8,9 +9,28 @@ import { BANDS, json, fail } from '../_lib/game.js';
  * nepatří na přední příčky (docs/online-rezim.md, sekce 3).
  */
 export async function onRequestGet({ request, env }) {
+  // Žebříček byl do 2026-09-01 JEDINÝ endpoint mimo /auth/* bez přihlášení. U pásem
+  // `starsi`/`dospeli` by to samo o sobě neškodilo, ale ve spojení s dírou níž to
+  // znamenalo, že přezdívky a skóre DĚTÍ šly stáhnout úplně bez účtu. Přihlášení
+  // nic nestojí: klient sem chodí jen z lobby, kam se bez tokenu nedostane.
+  const me = await currentUser(request, env);
+  if (!me) return fail('nepřihlášen', 401);
+
   const url = new URL(request.url);
   const band = url.searchParams.get('band') || 'dospeli';
   if (!BANDS.includes(band)) return fail('neznámé pásmo');
+
+  // Dětské pásmo veřejný žebříček NEMÁ — a kontrola musí být PŘED větví `daily`.
+  // Do 2026-09-01 stála až za ní, takže `?daily=1&band=deti` ochranu prostě obešel
+  // a vydal přezdívku, skóre i přesný čas dohrání, tedy denní rytmus konkrétního
+  // dítěte. Rozhodnutí z 2026-08-31 tuhle druhou cestu přehlédlo, protože v komentáři
+  // dokonce stálo „dětem zůstává denní pětka" — zůstává, ale bez veřejného pořadí.
+  //
+  // Pásmo je nutně jen čestné prohlášení (ověřit věk nejde), takže na předních
+  // příčkách může sedět kdokoli; u dětí to nestojí za vystavování jmen.
+  if (band === 'deti') {
+    return json({ kind: url.searchParams.get('daily') ? 'daily' : 'rating', band, closed: true, rows: [] });
+  }
 
   if (url.searchParams.get('daily')) {
     const date = url.searchParams.get('date') || new Date().toISOString().slice(0, 10);
@@ -22,14 +42,6 @@ export async function onRequestGet({ request, env }) {
         ORDER BY gp.score DESC, gp.finished_at ASC LIMIT 50`).bind(date, band).all()).results;
     return json({ kind: 'daily', date, band, rows });
   }
-
-  // Dětské pásmo veřejný žebříček ratingu NEMÁ (rozhodnutí 2026-08-31). Pásmo je
-  // nutně jen čestné prohlášení — ověřit věk nejde a účet je schválně minimální —
-  // takže na předních příčkách dětského žebříčku může sedět kdokoli. Ve zbylých
-  // pásmech to nevadí, tam jde o hru mezi sobě rovnými; u dětí je to jediné místo,
-  // kde na pořadí nezáleží tak, aby za to stálo tuhle nejistotu vystavovat.
-  // Dětem zůstávají turnaje, hry s přáteli, souboj na odkaz i denní pětka.
-  if (band === 'deti') return json({ kind: 'rating', band, closed: true, rows: [] });
 
   const rows = (await env.DB.prepare(
     `SELECT u.nick, u.avatar, u.is_bot, r.rating, r.rd, r.games, r.wins, r.draws, r.losses

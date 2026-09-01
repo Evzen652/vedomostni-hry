@@ -213,12 +213,16 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(dAgain.body.already_played === true, 'druhý pokus o denní pětku se nenabídne');
   ok(dAgain.body.game_id === d1.body.game_id, 'vrací se tatáž hra, ne nová');
 
-  const dBoard = await api('/api/leaderboard?band=dospeli&daily=1');
+  const dBoard = await api('/api/leaderboard?band=dospeli&daily=1', { token: A.token });
   ok(dBoard.body.rows?.length >= 1, 'žebříček dne má aspoň jeden zápis');
 
   // ------------------------------------------------------------ žebříček
   section('Žebříček');
-  const board = await api('/api/leaderboard?band=dospeli');
+  // Žebříček byl do 2026-09-01 jediný endpoint mimo /auth/* bez přihlášení.
+  const bezTokenu = await api('/api/leaderboard?band=dospeli');
+  ok(bezTokenu.status === 401, 'žebříček bez přihlášení neprojde, dostal ' + bezTokenu.status);
+
+  const board = await api('/api/leaderboard?band=dospeli', { token: A.token });
   ok(board.status === 200 && board.body.kind === 'rating', 'žebříček ratingu se vrátí');
   ok(Array.isArray(board.body.rows), 'obsahuje seznam');
   ok(board.body.rows.every(r => !r.is_bot), 'boti v žebříčku nejsou');
@@ -278,6 +282,31 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(selfAdd.status === 400, 'vlastní kód neprojde, dostal ' + selfAdd.status);
   const badCode = await api('/api/friends', { method: 'POST', token: A.token, body: { code: 'ZZZZZZ' } });
   ok(badCode.status === 404, 'neexistující kód je 404, dostal ' + badCode.status);
+
+  // Kód je JEDINÁ ochrana dětí před oslovením cizím člověkem, ale prostor 31^6
+  // chrání konkrétní účet, ne populaci — útočníkovi stačí jakékoli dítě. Limit se
+  // proto počítá jen z NEÚSPĚŠNÝCH pokusů; kdo kód opravdu dostal, na něj nenarazí.
+  const hadac = (await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'Hadac_' + uniq(), pin: '1234', band: 'dospeli' } })).body;
+  let posledni = null;
+  for (let i = 0; i < 12; i++) {
+    posledni = await api('/api/friends', { method: 'POST', token: hadac.token,
+      body: { code: 'QQQQQ' + String(i % 10) } });
+  }
+  ok(posledni.status === 429, 'hádání kódu se po deseti pokusech zastaví, dostal ' + posledni.status);
+  // Platný kód po vyčerpání limitu taky neprojde — jinak by limit nechránil nic.
+  const poLimitu = await api('/api/friends', { method: 'POST', token: hadac.token, body: { code: bCode } });
+  ok(poLimitu.status === 429, 'ani platný kód po limitu neprojde, dostal ' + poLimitu.status);
+
+  // Odebrat přítele muselo jít: přidání je oboustranné a bez souhlasu druhé strany,
+  // takže bez DELETE zůstal kdokoli v seznamu napořád.
+  const bId = listA.body.friends.find(f => f.nick === nickB).id;
+  const odebr = await api('/api/friends', { method: 'DELETE', token: A.token, body: { id: bId } });
+  ok(odebr.status === 200, 'přítel se odebere, dostal ' + odebr.status);
+  ok(!(await api('/api/friends', { token: A.token })).body.friends.some(f => f.nick === nickB),
+     'a v mém seznamu už není');
+  ok(!(await api('/api/friends', { token: B.token })).body.friends.some(f => f.nick === nickA),
+     'zmizelo i v seznamu druhé strany');
 
   const rematch = await api(`/api/game/${duel.body.id}/rematch`, { method: 'POST', token: A.token });
   ok(rematch.status === 201, 'odveta se založí', JSON.stringify(rematch.body));
@@ -518,10 +547,17 @@ async function playAll(token, gameId, total, ms = 2000) {
 
   // Dětské pásmo veřejný žebříček nemá: pásmo je nutně jen čestné prohlášení,
   // takže by na předních příčkách mohl sedět kdokoli.
-  const zebDeti = await api('/api/leaderboard?band=deti');
+  const zebDeti = await api('/api/leaderboard?band=deti', { token: P.token });
   ok(zebDeti.status === 200 && zebDeti.body.closed === true && zebDeti.body.rows.length === 0,
      'dětský žebříček je uzavřený');
-  const zebDosp = await api('/api/leaderboard?band=dospeli');
+  // A hlavně i DENNÍ. Do 2026-09-01 se větev `daily` vyhodnotila DŘÍV než tahle
+  // kontrola, takže `?daily=1&band=deti` vydal přezdívku, skóre i přesný čas
+  // dohrání — tedy denní rytmus konkrétního dítěte, a to bez jakéhokoli tokenu.
+  const zebDetiDenni = await api('/api/leaderboard?band=deti&daily=1', { token: P.token });
+  ok(zebDetiDenni.status === 200 && zebDetiDenni.body.closed === true
+     && zebDetiDenni.body.rows.length === 0,
+     'dětský DENNÍ žebříček je uzavřený taky');
+  const zebDosp = await api('/api/leaderboard?band=dospeli', { token: P.token });
   ok(zebDosp.status === 200 && !zebDosp.body.closed,
      'žebříček ostatních pásem se vrací dál');
 

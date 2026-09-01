@@ -1285,7 +1285,11 @@ window.ZKOnline = (function () {
         ((d.friends || []).length
           ? '<div class="zk-rowlist">' + d.friends.map(function (f) {
               return '<div class="qz-standrow"><span class="qz-standname">' + esc(f.nick) + "</span>" +
-                '<button class="zk-challenge" data-nick="' + esc(f.nick) + '">Vyzvat →</button></div>';
+                '<button class="zk-challenge" data-nick="' + esc(f.nick) + '">Vyzvat →</button>' +
+                // Odebrat musí jít. Přidání je oboustranné a bez souhlasu druhé strany,
+                // takže bez tohohle zůstal kdokoli v seznamu napořád. (2026-09-01)
+                '<button class="zk-unfriend" data-id="' + esc(f.id) + '" data-nick="' + esc(f.nick) +
+                  '" title="Odebrat z přátel" aria-label="Odebrat ' + esc(f.nick) + ' z přátel">✕</button></div>';
             }).join("") + "</div>"
           : '<div class="qz-setnote">Zatím nikdo. Dej svůj kód kamarádovi — nebo si rovnou ' +
             "založ souboj na odkaz a pošli mu ho.</div>") +
@@ -1301,6 +1305,17 @@ window.ZKOnline = (function () {
       // se založí hra s odkazem a hráči se rovnou ukáže, co má kamarádovi poslat.
       body.querySelectorAll(".zk-challenge").forEach(function (b) {
         b.addEventListener("click", function () { createLink(false, b.getAttribute("data-nick")); });
+      });
+      // Ptáme se schválně: odebrání je tiché a nevratné (zpátky jen přes kód).
+      body.querySelectorAll(".zk-unfriend").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var nick = b.getAttribute("data-nick");
+          if (!confirm("Odebrat " + nick + " z přátel?\n\nZmizí i tobě z jeho seznamu. Zpátky jen přes kód.")) return;
+          req("/friends", { method: "DELETE", body: { id: b.getAttribute("data-id") } })
+            .then(function (rr) {
+              renderFriends(rr.status === 200 ? "" : (rr.body && rr.body.error) || "Nepovedlo se.");
+            });
+        });
       });
     });
   }

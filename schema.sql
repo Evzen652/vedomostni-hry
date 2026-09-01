@@ -63,6 +63,13 @@ CREATE TABLE users (
   -- Skutečná ochrana slabého PINu není hashování, ale omezení počtu pokusů.
   login_fails  INTEGER NOT NULL DEFAULT 0,
   locked_until INTEGER NOT NULL DEFAULT 0,
+  -- Totéž pro hádání cizího friend_code. Kód je JEDINÁ ochrana dětí před oslovením
+  -- cizím člověkem, ale prostor 31^6 nechrání sám o sobě: útočník nehledá konkrétní
+  -- dítě, stačí mu JAKÉKOLI, takže očekávaný počet pokusů klesá s počtem účtů.
+  -- Klouzavé okno (ne zámek jako u loginu — ten se při zamčení resetuje na nulu,
+  -- takže útočníka nezpomalí víc než prvních 10 minut). (2026-09-01)
+  friend_tries    INTEGER NOT NULL DEFAULT 0,
+  friend_tries_at INTEGER NOT NULL DEFAULT 0,
   -- NEPOVINNÝ e-mail, jediné k čemu slouží je obnova zapomenutého PINu.
   -- Schválně BEZ UNIQUE: rodič musí smět mít stejný e-mail u víc dětí.
   -- U dětského pásma ho má vyplnit rodič (viz docs/online-rezim.md, sekce 5).
