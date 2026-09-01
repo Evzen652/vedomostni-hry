@@ -298,20 +298,22 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     Sport 4, Umění 2, Jazyk & slova 1. Výsledek 545 / 536 / 512 / 510 / 437 / 342 / 300 /
     298 / 262, celkem 3 742.
 
-- **2026-09-01 — Široký monitor: výběrové obrazovky a hra se rozšiřují, formuláře ne.**
-  Strop `#qz-body` (980 px) dělal na monitoru 1920 dva prázdné pruhy po 400 px. Každá
-  obrazovka se rozšiřuje jinak a **důvody jsou změřené, ne odhadnuté**:
-  - **výběr zemí** (56 dlaždic): až 7 sloupců, tam chceme co nejvíc;
-  - **kontinenty (8) a témata (10)**: stejný počet sloupců, jen větší dlaždice — 7+1 nebo
-    6+2 vypadá jako chyba sazby, ne jako nabídka;
-  - ~~**hra: strop 1460 px**~~ — **VRÁCENO ZPĚT NA 980 px** (2026-09-01, viz zápis nahoře).
-    Hrací obrazovka se nerozšiřuje vůbec; rozšiřují se jen výběrové;
-  - **formuláře, výsledky a online se nerozšiřují vůbec.**
-  - Vše je v `@media (min-width: 1300px)`, takže na telefon ani tablet to nedosáhne —
-    ověřeno měřením na 375, 768, 966, 1366, 1600 a 1920 px, nikde nic nepřetéká.
-    `:has()` se v nepodporujícím prohlížeči jen neuplatní a zůstane dnešní stav.
-  - **Past: `.qz-tiles:not(.qz-tiles-sec)` má stejnou specificitu jako `.qz-tiles-cc`**,
-    takže se strop 940 px nepřebil, dokud selektor nebyl `.qz-tiles.qz-tiles-cc`.
+- **2026-09-01 — CELÝ ZÁPIS NÍŽE JE ZRUŠENÝ. Žádná obrazovka se na širokém monitoru nerozšiřuje.**
+  Vzniklo to na přání „chtěl bych takto na šířku vše" a **týž hráč to týž den zrušil** —
+  nejdřív u hry („rozhodnutí dát to na celou šířku obrazovky nebyl dobrý nápad"), pak
+  i u výběrových obrazovek. Vše drží ve sloupci **980 px**, jak to bylo předtím.
+  Prázdné pruhy po stranách jsou menší zlo než obrazovka roztažená přes monitor.
+  **Nezkoušej to potřetí.** Původní zápis zůstává jen kvůli tomu, co se cestou zjistilo:
+  - ~~**výběr zemí** (56 dlaždic): až 7 sloupců, tam chceme co nejvíc;~~ **zrušeno**
+  - ~~**kontinenty (8) a témata (10)**: stejný počet sloupců, jen větší dlaždice — 7+1 nebo
+    6+2 vypadá jako chyba sazby, ne jako nabídka;~~ **zrušeno**
+  - ~~**hra: strop 1460 px**~~ — **zrušeno**, viz podrobný zápis nahoře (rám 464–570 px
+    roztahoval ilustrace široké 1000–1200 px nad jejich rozlišení).
+  - **formuláře, výsledky a online se nerozšiřují vůbec** — to platilo tehdy i teď.
+  - **Past, která PLATÍ DÁL, kdyby to někdo otevíral znovu: `.qz-tiles:not(.qz-tiles-sec)`
+    má strop 940 px a STEJNOU specificitu jako `.qz-tiles-cc`**, takže se přebije jen
+    dvojicí tříd `.qz-tiles.qz-tiles-cc`. Samotné rozšíření `#qz-body` tedy nestačí.
+    Třída `qz-tiles-cc` v [quiz.js](quiz.js) zůstává, i když k ní dnes není pravidlo.
 
 - **2026-09-01 — Slovník sjednocen na „profil" a všechny texty začínají velkým písmenem.**
   Patička registrace zněla jako formulář na úřadě („Už tu hráče máš?"); nově „Už se známe?

@@ -332,35 +332,19 @@
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-t { font-size: 18px; }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-sub { font-size: 13px; }
 }
-/* Výběrové obrazovky na širokém monitoru --------------------------------------
-   Strop #qz-body (980 px) dělal ze všech tří výběrů úzký proužek uprostřed
-   a dva prázdné pruhy po stranách. Rozšiřují se proto VŠECHNY .qz-pick.
+/* ŽÁDNÁ OBRAZOVKA SE NA ŠIROKÉM MONITORU NEROZŠIŘUJE. Všechno drží ve sloupci
+   980 px (#qz-body). (2026-09-01)
 
-   Práh je 1300 px, takže se to nemůže dotknout telefonu ani tabletu — ty se
-   pod něj vejdou i na šířku (iPad 1024). `:has()` v nepodporujícím prohlížeči
-   jen neuplatní a zůstane dnešní stav, nic se nerozbije.
+   ZAMÍTNUTO A NEZKOUŠEJ ZNOVU: tenhle den tu byl blok `@media (min-width: 1300px)`,
+   který roztahoval `.qz-pick` na 1460 px (a od 1700 px na 1720), k tomu rušil strop
+   940 px u dlaždic zemí a přepínal kontinenty i témata na pevné čtyři sloupce.
+   Vzniklo to na přání „chtěl bych takto na šířku vše" a týmž hráčem to bylo týž den
+   zrušeno, nejdřív u hry a pak i tady. Prázdné pruhy po stranách jsou menší zlo než
+   obrazovka roztažená přes celý monitor.
 
-   Co se ZÁMĚRNĚ nerozšiřuje: hrací obrazovka, výsledky a formuláře (nastavení
-   párty, sólo start, online). Dlouhá řádka textu se čte hůř — v 1720px sloupci
-   by měla přes 120 znaků — a fotky u otázek jsou ~1200 px široké, takže by na
-   dvojnásobné šířce změkly. Ten strop tam není omylem. */
-@media (min-width: 1300px) {
-  #qz-body:has(.qz-pick) { width: min(1460px, 100%); }
-  /* Země: 56 dlaždic, těch chceme na řádek co nejvíc.
-     Dvě třídy schválně: `.qz-tiles:not(.qz-tiles-sec)` výš má strop 940 px
-     a stejnou specificitu, takže samotné `.qz-tiles-cc` by se neuplatnilo. */
-  .qz-tiles.qz-tiles-cc { max-width: 100%; }
-  /* Kontinenty: 8 dlaždic zůstává 4+4, jen větších. Při volných sloupcích by
-     z toho bylo 6+2 nebo 7+1, což vypadá jako chyba sazby, ne jako nabídka. */
-  .qz-pick .qz-tiles:not(.qz-tiles-cc):not(.qz-tiles-sec) {
-    max-width: 1180px; grid-template-columns: repeat(4, 1fr);
-  }
-  /* Témata: 10 dlaždic zůstává 5+5 ze stejného důvodu, jen se roztáhnou. */
-  .qz-tiles-sec { max-width: 1240px; }
-}
-@media (min-width: 1700px) {
-  #qz-body:has(.qz-pick) { width: min(1720px, 100%); }
-}
+   Kdyby to někdo otevíral potřetí: samotné rozšíření `#qz-body` nestačí a je to past.
+   `.qz-tiles:not(.qz-tiles-sec)` má strop 940 px a STEJNOU specificitu jako
+   `.qz-tiles-cc`, takže se přebije jen dvojicí tříd `.qz-tiles.qz-tiles-cc`. */
 /* úvodní obrazovka: velký točící se glóbus za kartami režimů */
 .qz-modepick { position: relative; }
 .qz-globebg { position: absolute; inset: 0; margin: auto; width: min(500px, 78%); height: min(500px, 78%);
