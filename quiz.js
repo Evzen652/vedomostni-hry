@@ -263,7 +263,14 @@
   }
 
   // ---- reálný 3D glóbus v medailonku (natáčí se na zemi otázky) ----
-  const EARTH_TEX = "assets/earth.jpg";   // malovaná akvarelová mapa světa (equirekt 1024×512, geografie zachovaná); záloha původního blue-marble: assets/earth-bluemarble.jpg
+  // Malovaná akvarelová mapa světa, equirektangulární 1456×728 (od 2026-09-01; předtím
+  // 1024×512 — ta je v gitu, zálohu do assets/ schválně nedávám, celá složka se kopíruje
+  // do nasazení). Zálohu původního fotografického blue-marble drží assets/earth-bluemarble.jpg.
+  // GEOGRAFIE MUSÍ SEDĚT, není to dekorace: `spinGlobeTo()` natáčí kouli na souřadnice
+  // a značka `.qz-beacon` sedí napevno uprostřed rámu, takže posunutá pevnina = ukázaná
+  // špatná země. Nová textura byla proti staré ověřena blokovou korelací masek souše
+  // (medián odchylky 1,5° délky a 1° šířky, tj. ~4 px na glóbu při značce široké 13 px).
+  const EARTH_TEX = "assets/earth.jpg";
   // CSS animace řeší @media (prefers-reduced-motion), rotace glóbu je ale v JS — vypnout ji musíme tady
   const REDUCED_MOTION = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const COUNTRY_LL = { ar:[-54.44,-25.7], at:[16.31,48.18], au:[134,-25], be:[4.47,50.85], bg:[23.32,42.7], br:[-60,-3], ca:[-79.07,43.08], ch:[7.45,46.95], cl:[-68.5,-24], cn:[103,35], cz:[14.4,50.09], de:[10.75,47.56], dk:[10,56], ec:[-90.97,-0.95], eg:[31.2,30], es:[2.17,41.4], fi:[26,64], fj:[178.4,-18.1], fr:[2.12,48.8], ga:[9.6,-2.2], gb:[-1.83,51.18], gr:[23.73,37.97], hu:[19.04,47.5], id:[110.2,-7.61], ie:[-8,53.3], il:[35.23,31.78], in:[79,21], it:[12.32,45.44], jp:[139.7,35.7], ke:[36.8,-1.3], kp:[128.08,41.99], kr:[126.98,37.58], mn:[106.92,47.92], mx:[-99.1,19.4], my:[101.71,3.16], nl:[4.9,52.37], no:[9.5,61], nz:[174.8,-41.3], pe:[-72.54,-13.16], ph:[121.14,16.93], pk:[74.32,31.59], pl:[19.94,50.06], pt:[-8,39.5], ro:[26.1,44.43], ru:[100,62], sa:[37.95,26.79], se:[18.3,57.64], sk:[17.1,48.14], th:[100.49,13.74], tr:[28.98,41.01], tw:[121.56,25.03], ua:[30.51,50.45], us:[-98.5,39.8], vn:[107.18,20.91], za:[24.7,-28.5] };   // přibližný střed země pro natočení
@@ -325,7 +332,10 @@
   // 460 nebylo omylem: canvas se kreslil ve větším rozlišení, než se zobrazoval, takže
   // se okraj koule a hrany pevnin převzorkovaly. Násobek 1,6 to zachovává a na hustém
   // displeji navíc přidá. Podlaha 460 zajistí, že to nikdy nespadne pod původní stav.
-  // Strop 1024 px: nad ním už textura (1024×512) nemá co nabídnout a jen by se platil výkon.
+  // Strop 1024 px je z výkonu, ne z textury: v medailonu je vidět ~103° délky, což je
+  // při textuře 1456 px na 360° zhruba 416 texturových pixelů — nad 1024 už se jen
+  // zvětšuje. Textura 1456×728 není mocnina dvojky; ověřeno, že prohlížeč umí WebGL2,
+  // kde to nevadí (ve WebGL1 by three vypnulo mipmapy a vynutilo clamp).
   function resizeGlobe(){
     if(!g3 || !g3.canvas) return;
     const host=g3.canvas.parentElement; if(!host) return;

@@ -121,7 +121,40 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     glóbu); stažení knihovny do repa by závislost odstranilo úplně, zatím je aspoň
     ověřená. Ověřeno v prohlížeči: `THREE.REVISION === "137"`, žádné porušení CSP.
 
-- **2026-09-01 — Glóbus: kreslicí plocha se přizpůsobí displeji, ale STROP JE TEXTURA (1024×512).**
+- **2026-09-01 — Textura glóbu je nově 1456×728. Na druhý pokus, a POSTUP OVĚŘENÍ JE TU DŮLEŽITĚJŠÍ NEŽ VÝSLEDEK.**
+  Hráč texturu vygeneroval v Gemini podle promptu. **První pokus vypadal krásně a byl
+  nepoužitelný** — a poznat to šlo jedině měřením, ne okem.
+  - **Selhání č. 1: model svět PŘEKRESLIL ve vlastním měřítku, ne přemaloval na místě.**
+    Naměřeno korelací masek souše proti staré (ověřené) textuře: pokrýval **299° délky
+    a 161° šířky** místo 360/180. Afinní korekce (měřítko + posun) to nespravila —
+    Evropa a Afrika po ní seděly, ale Austrálie zůstala mimo, takže zkreslení není
+    rovnoměrné. Podezřelá byla formulace „at the highest resolution you can produce",
+    která model svede ke kompozici odznova.
+  - **Co zabralo ve druhém promptu:** výslovný zákaz „do not re-compose, re-frame, zoom,
+    crop, re-center or rescale" + **kotevní body v procentech**, které si model může sám
+    zkontrolovat (rovník na 50 % výšky, Dakar na 45,1 % šířky, Sydney na 92,0 % / 68,8 %,
+    Antarktida jako pás dotýkající se spodní hrany po celé šířce…). Druhý pokus vyšel.
+  - **JAK SE TO OVĚŘUJE — použij totéž, až se textura bude měnit znovu:**
+    1. Položit na obrázek **skutečné obrysy zemí** z `data/country-shapes.json`
+       (Natural Earth 110m) přes `x=(lon+180)/360·W`, `y=(90−lat)/180·H`. Na správné
+       textuře obrysy padnou na malované pobřeží; na špatné jsou viditelně vedle.
+       *(Právě proto ten soubor nemazat, i když ho appka nepoužívá.)*
+    2. **Bloková korelace masek souše** proti staré textuře — dá číslo, ne dojem.
+       Výsledek: medián odchylky **1,5° délky a 1° šířky**, tj. ~4 px na glóbu, kde
+       má značka 13 px a Česko ~14 px. Obě textury proti témuž etalonu vyšly shodně
+       (6,9 vs 7,1 — absolutní číslo je zkreslené tím, že etalon má jen 55 zemí, ale
+       rozdíl mezi nimi je nula).
+    3. **Maska souše se NESMÍ dělat podle jasu.** První verze brala „teplý odstín
+       a jas < 235", jenže nová mapa má Saharu skoro bílou, takže půlka Afriky vypadla
+       a měření lhalo. Správně je „ne-oceán" (`r > b`), což bere souš i led.
+  - **Zisk: 1024 → 1456 px na 360°, tedy 2,84 → 4,04 pixelu na stupeň (+42 %).** Soubor
+    113 → 212 kB. Poměr srovnán na přesně 2:1 (Gemini vrátilo 1456×720).
+  - **Textura není mocnina dvojky a je to v pořádku** — ověřeno, že prohlížeč dává WebGL2,
+    kde NPOT nevadí. Ve WebGL1 by three vypnulo mipmapy a vynutilo clamp.
+  - **Zálohu staré textury do `assets/` NEDÁVEJ** — celá složka se kopíruje do nasazení,
+    takže by se zbytečně nahrávala na web. Git ji drží stejně dobře.
+
+- **2026-09-01 — Glóbus: kreslicí plocha se přizpůsobí displeji, ale STROP BYLA TEXTURA (1024×512).**
   Hráč hlásil, že glóbus je v malém rozlišení. Má pravdu a hlavní příčinu **nejde spravit
   kódem** — je potřeba přemalovat texturu.
   - **Kolik detailu textura vůbec má:** 1024 px na 360° = **2,84 pixelu na stupeň**.
