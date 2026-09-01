@@ -37,6 +37,15 @@ export async function onRequestGet({ params, request, env }) {
   // načtení téže otázky nic nestojí.
   await markSeen(env, me.id, [q.id]);
 
+  // Od téhle chvíle běží stopky — a běží na SERVERU, ne v prohlížeči. `INSERT OR
+  // IGNORE` je tu zásadní: druhé načtení téže otázky čas NEPŘEPÍŠE, takže nejde
+  // stopky resetovat opakovaným dotazem těsně před odesláním odpovědi.
+  // Vedlejší efekt, který se hodí: kdo si stáhne všech deset otázek naráz, spustí
+  // si tím deset stopek zároveň — než dojde na poslední, limit dávno vypršel.
+  await env.DB.prepare(
+    'INSERT OR IGNORE INTO q_served (game_id, user_id, q_index, served_at) VALUES (?, ?, ?, ?)')
+    .bind(params.id, me.id, n, Date.now()).run();
+
   return json({
     n,
     total: ids.length,

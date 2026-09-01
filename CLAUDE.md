@@ -121,14 +121,36 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     glóbu); stažení knihovny do repa by závislost odstranilo úplně, zatím je aspoň
     ověřená. Ověřeno v prohlížeči: `THREE.REVISION === "137"`, žádné porušení CSP.
 
+- **2026-09-01 — ČAS ODPOVĚDI SE MĚŘÍ NA SERVERU. Největší nález auditu je zavřený.**
+  Do teď se `ms` bralo doslova z těla požadavku a server neměl s čím ho porovnat —
+  nikde si nepamatoval, kdy otázku vydal. `ms: 0` proto vždycky dalo 200 bodů
+  (maximum) a limit 10 s žil **výhradně v prohlížeči**. Rating, denní žebříček
+  i turnajové pořadí šly nastavit curlem.
+  - **Nová tabulka `q_served`** drží čas vydání každé otázky (migrace
+    [2026-09-01-cas-na-serveru.sql](migrations/2026-09-01-cas-na-serveru.sql)).
+    `answer.js` počítá `ms = Date.now() − served_at` a **`ms` z těla ignoruje**
+    (zůstává přijímané kvůli starším klientům).
+  - **`INSERT OR IGNORE` je tu zásadní, ne kosmetika:** druhé načtení téže otázky čas
+    NEPŘEPÍŠE. Bez toho by stačilo požádat o otázku znovu těsně před odesláním
+    odpovědi a stopky se resetovaly.
+  - **Předstažení otázek se tím obrátilo proti útočníkovi.** `q/[n].js` pořadí pořád
+    nehlídá, ale kdo si stáhne všech deset otázek naráz, spustí si tím deset stopek
+    zároveň — než dojde na poslední, limit dávno vypršel a dostane nulu.
+  - **Odpověď na nevyžádanou otázku se odmítá (409).** Na co ses nepodíval, na to
+    nemůžeš odpovědět; zavírá to i cestu „přeskoč načtení a hádej u všech naráz".
+  - **Boti se nemění:** `botPlay` skládá řádky do `game_answers` napřímo, bez endpointu,
+    takže `q_served` nepotřebuje.
+  - **Latence jde k tíži hráče, a je to v pořádku:** měřený úsek zahrnuje jednu cestu
+    tam a zpět. Při limitu 10 s a lineárním bonusu stojí stovka milisekund jeden bod
+    ze sta — pod rozlišovací schopností hráče.
+  - **Ověřeno MUTACÍ:** po návratu ke klientskému `ms` spadly dva testy — `ms: 0` dalo
+    přesně 200 bodů a odpověď 10 s po limitu 195 místo nuly.
+  - **Test odpovídá SCHVÁLNĚ SPRÁVNĚ**, jinak by nula bodů mohla znamenat prostě
+    špatný tip. Správný index bere `test-api.js` z `data/questions/*.json` — a to, že
+    to jde, je samo o sobě ten druhý nález (viz níž).
+
 - **2026-09-01 — OTEVŘENÉ nálezy z auditu. Nic z toho není opravené, čti před další prací na online.**
-  - **Časová složka online hry NEEXISTUJE na serveru.** `ms` posílá klient, `answer.js` ověří
-    jen `Number.isInteger` a `ms >= 0`, a v `schema.sql` není nic jako `served_at` — server si
-    nepamatuje, kdy otázku vydal. `q/[n].js` navíc nehlídá pořadí, takže jde stáhnout všech
-    10–15 otázek naráz. Limit 10 s žije **výhradně v prohlížeči**. Kdokoli s `curl`em má
-    neomezený čas a přesto nárokuje maximální rychlostní bonus. Postihuje rating, denní
-    žebříček i turnaje. `docs/online-rezim.md` přitom tvrdí, že „krátký časovač prakticky
-    vylučuje googlení" — neplatí to.
+  - ~~Časová složka online hry neexistuje na serveru~~ — **VYŘEŠENO 2026-09-01**, viz zápis výš.
   - **Správné odpovědi jsou veřejně na webu** (`dist/data/questions/*.json`), protože je
     potřebuje offline hra. Není to chyba v kódu, ale **střet dvou režimů nad jedním fondem**.
     Dokud platí, je jakýkoli žebříček spíš ozdoba než měření. Buď to přiznat a žebříčky

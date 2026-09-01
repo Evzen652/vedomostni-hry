@@ -15,11 +15,12 @@ export async function onRequestPost({ params, request, env }) {
   let body;
   try { body = await request.json(); } catch (e) { return fail('nečitelné tělo požadavku'); }
 
-  const { n, pick, ms } = body;
-  if (!Number.isInteger(n) || !Number.isInteger(pick) || !Number.isInteger(ms)) {
-    return fail('n, pick a ms musí být celá čísla');
+  // `ms` z těla se od 2026-09-01 IGNORUJE. Zůstává jen kvůli starším klientům, kteří
+  // ho posílají — čas se měří na serveru mezi vydáním otázky a touhle odpovědí.
+  const { n, pick } = body;
+  if (!Number.isInteger(n) || !Number.isInteger(pick)) {
+    return fail('n a pick musí být celá čísla');
   }
-  if (ms < 0) return fail('ms nesmí být záporné');
 
   const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(params.id).first();
   if (!game) return fail('hra nenalezena', 404);
@@ -42,6 +43,22 @@ export async function onRequestPost({ params, request, env }) {
 
   const q = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(ids[n]).first();
   if (!q) return fail('otázka nenalezena', 404);
+
+  // ČAS SE MĚŘÍ NA SERVERU. Do 2026-09-01 se bral `ms` z těla požadavku a server
+  // neměl s čím ho porovnat — nikde si nepamatoval, kdy otázku vydal. `ms: 0` proto
+  // dalo vždycky maximum a limit žil jen v prohlížeči.
+  //
+  // Odpověď na nevydanou otázku se odmítá: na co ses nepodíval, na to nemůžeš
+  // odpovědět. Zavírá to i cestu „přeskoč načtení a hádej rovnou u všech otázek".
+  const vydano = await env.DB
+    .prepare('SELECT served_at FROM q_served WHERE game_id = ? AND user_id = ? AND q_index = ?')
+    .bind(params.id, me.id, n).first();
+  if (!vydano) return fail('tuhle otázku sis nevyžádal', 409);
+
+  // Rozdíl je celý na serverových hodinách, takže se nemá o co rozejít. Zahrnuje
+  // i jednu cestu tam a zpět po síti — u limitu 10 s a lineárního bonusu stojí
+  // stovka milisekund jeden bod ze sta, což je pod rozlišovací schopností hráče.
+  const ms = Math.max(0, Date.now() - vydano.served_at);
 
   const ci = correctIndex(orders[n]);
   const correct = pick === ci;

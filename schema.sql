@@ -147,6 +147,22 @@ CREATE INDEX idx_gp_user ON game_players(user_id);
 -- tiše uzavřel BEZ ratingu a bez určení vítěze. (2026-09-01)
 CREATE UNIQUE INDEX idx_gp_slot ON game_players(game_id, slot);
 
+-- Kdy server vydal kterou otázku. Bez tohohle byl ČAS ODPOVĚDI čistě klientský údaj:
+-- `ms` se posílalo v těle požadavku a server neměl s čím ho porovnat, takže `ms: 0`
+-- dalo vždycky maximum bodů a limit 10 s žil jen v prohlížeči. Rating, denní žebříček
+-- i turnajové pořadí se tím daly nastavit curlem. (2026-09-01)
+--
+-- Zapisuje se `INSERT OR IGNORE`, takže opakované načtení otázky NERESETUJE stopky —
+-- jinak by stačilo požádat o otázku znovu těsně před odesláním odpovědi.
+-- Boti sem nezapisují: `botPlay` skládá řádky do game_answers napřímo, bez endpointu.
+CREATE TABLE q_served (
+  game_id   TEXT    NOT NULL,
+  user_id   TEXT    NOT NULL,
+  q_index   INTEGER NOT NULL,
+  served_at INTEGER NOT NULL,
+  PRIMARY KEY (game_id, user_id, q_index)
+);
+
 CREATE TABLE game_answers (
   game_id  TEXT    NOT NULL,
   user_id  TEXT    NOT NULL,

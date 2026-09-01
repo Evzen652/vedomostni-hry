@@ -36,6 +36,30 @@ const api = async (path, { method = 'GET', body, token } = {}) => {
 
 const uniq = () => Math.random().toString(36).slice(2, 8);
 
+/**
+ * Mapa id → správná odpověď, načtená z data/questions/*.json.
+ *
+ * Že to jde, JE SÁM O SOBĚ NÁLEZ: tytéž soubory se nasazují do dist/, takže správné
+ * odpovědi jsou veřejně na webu (potřebuje je offline hra). Anti-cheat online režimu
+ * na tomhle stojí a je to zapsané mezi otevřenými nálezy v CLAUDE.md.
+ *
+ * V testu se to hodí: umožňuje odpovídat SCHVÁLNĚ SPRÁVNĚ, takže se dá odlišit
+ * „nula bodů, protože vypršel čas" od „nula bodů, protože špatná odpověď".
+ */
+const ODPOVEDI = (() => {
+  const fs = require('fs'), path = require('path');
+  const dir = path.join(process.cwd(), 'data', 'questions');
+  const m = new Map();
+  for (const f of fs.readdirSync(dir)) {
+    if (!f.endsWith('.json')) continue;
+    for (const q of JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))) m.set(q.id, q.answer);
+  }
+  return m;
+})();
+
+/** Index správné možnosti v tom pořadí, v jakém ji server poslal. */
+const spravnyIndex = qBody => qBody.options.indexOf(ODPOVEDI.get(qBody.id));
+
 /** Odehraje hru do konce; vrací součet bodů. */
 async function playAll(token, gameId, total, ms = 2000) {
   let last = null;
@@ -111,7 +135,10 @@ async function playAll(token, gameId, total, ms = 2000) {
   const mid = await api(`/api/game/${solo.body.id}`, { token: A.token });
   ok(mid.body.review === undefined, 'rozbor se za běhu neukazuje');
 
+  // Otázku je nutné si nejdřív vyžádat — od 2026-09-01 se čas měří na serveru mezi
+  // vydáním a odpovědí, takže odpověď na nevydanou otázku je 409.
   for (let n = 1; n < solo.body.total; n++) {
+    await api(`/api/game/${solo.body.id}/q/${n}`, { token: A.token });
     await api(`/api/game/${solo.body.id}/answer`, {
       method: 'POST', token: A.token, body: { n, pick: 0, ms: 2000 } });
   }
@@ -122,6 +149,42 @@ async function playAll(token, gameId, total, ms = 2000) {
 
   const seenAfter = (await api('/api/me', { token: A.token })).body.seen_questions;
   ok(seenAfter >= 10, 'viděné otázky se evidují (' + seenAfter + ')');
+
+  // ---------------------------------------------------------------- čas na serveru
+  section('Čas odpovědi měří server, ne klient');
+
+  // Do 2026-09-01 se `ms` bralo doslova z těla požadavku a server neměl s čím ho
+  // porovnat — `ms: 0` dalo vždycky 200 bodů (maximum) a limit 10 s žil jen
+  // v prohlížeči. Rating, denní žebříček i turnaje šly nastavit curlem.
+  const casG = await api('/api/game', { method: 'POST', token: A.token, body: { time_control: 'blesk' } });
+
+  const bezVydani = await api(`/api/game/${casG.body.id}/answer`, {
+    method: 'POST', token: A.token, body: { n: 0, pick: 0, ms: 0 } });
+  ok(bezVydani.status === 409,
+     'na nevyžádanou otázku nejde odpovědět, dostal ' + bezVydani.status);
+
+  // Odpovídá se SCHVÁLNĚ SPRÁVNĚ, jinak by nula bodů mohla znamenat prostě špatný tip.
+  // Kdyby server věřil klientovu `ms: 0`, dostal by přesně 200 bodů (BASE 100 + plný
+  // bonus 100). Server ale ví, že uplynulo přes půl sekundy, takže musí dát míň.
+  const q0cas = await api(`/api/game/${casG.body.id}/q/0`, { token: A.token });
+  await new Promise(r => setTimeout(r, 700));
+  const podvod = await api(`/api/game/${casG.body.id}/answer`, {
+    method: 'POST', token: A.token, body: { n: 0, pick: spravnyIndex(q0cas.body), ms: 0 } });
+  ok(podvod.body.correct === true, 'odpověď je správně (kontrola měření času)');
+  ok(podvod.body.points > 0 && podvod.body.points < 200,
+     'ale ms:0 od klienta nedá maximum 200 — server měří sám (' + podvod.body.points + ' bodů)');
+
+  // Po vypršení limitu je i SPRÁVNÁ odpověď za nula bodů. Stopky běží od vydání
+  // otázky, takže předstažení všech otázek se obrací proti tomu, kdo si je stáhne:
+  // než dojde na poslední, limit dávno vypršel.
+  const q1cas = await api(`/api/game/${casG.body.id}/q/1`, { token: A.token });
+  ok(q1cas.body.limit_s === 10, 'blesk má limit 10 s (' + q1cas.body.limit_s + ')');
+  await new Promise(r => setTimeout(r, 10300));
+  const poLimitu2 = await api(`/api/game/${casG.body.id}/answer`, {
+    method: 'POST', token: A.token, body: { n: 1, pick: spravnyIndex(q1cas.body), ms: 500 } });
+  ok(poLimitu2.body.correct === true, 'i tahle odpověď je správně');
+  ok(poLimitu2.body.points === 0,
+     'ale po vypršení limitu je za nula bodů (' + poLimitu2.body.points + ')');
 
   // POZOR NA OČEKÁVÁNÍ: tohle NENÍ test ztraceného zápisu. Zkoušel jsem ho tak napsat
   // (dvě odpovědi přes Promise.all) a ověřoval mutací — po vrácení původního
@@ -136,11 +199,14 @@ async function playAll(token, gameId, total, ms = 2000) {
   // `finished_at` se nenastavilo a hra visela v 'open' navždy.
   const soub = await api('/api/game', {
     method: 'POST', token: A.token, body: { time_control: 'blesk' } });
+  await api(`/api/game/${soub.body.id}/q/0`, { token: A.token });
+  await api(`/api/game/${soub.body.id}/q/1`, { token: A.token });
   await Promise.all([
     api(`/api/game/${soub.body.id}/answer`, { method: 'POST', token: A.token, body: { n: 0, pick: 0, ms: 1000 } }),
     api(`/api/game/${soub.body.id}/answer`, { method: 'POST', token: A.token, body: { n: 1, pick: 0, ms: 1000 } }),
   ]);
   for (let n = 2; n < soub.body.total; n++) {
+    await api(`/api/game/${soub.body.id}/q/${n}`, { token: A.token });
     await api(`/api/game/${soub.body.id}/answer`, { method: 'POST', token: A.token, body: { n, pick: 0, ms: 1000 } });
   }
   const poSoubehu = await api(`/api/game/${soub.body.id}`, { token: A.token });
