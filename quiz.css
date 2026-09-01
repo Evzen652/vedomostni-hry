@@ -582,7 +582,7 @@
   /* align-content: start — .qz-play dědí flex:1, bez toho se řádky roztáhnou do zbylé výšky */
   /* align-items: stretch — obě karty musí být stejně vysoké, ať je vedle sebe nerozhodí obsah */
   .qz-play { display: grid; align-items: stretch; align-content: start; column-gap: 18px; padding: 0 18px 18px;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
     grid-template-areas: "top top" "box pic"; }
   .qz-play > .qz-top { grid-area: top; padding-left: 0; padding-right: 0; }
   .qz-play > .qz-box { grid-area: box; margin: 68px 0 0; }

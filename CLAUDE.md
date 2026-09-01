@@ -20,6 +20,17 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Poměr sloupců na desktopu 3:2 → 5:4 (karta užší a vyšší, rám širší).**
+  Přání „zvýšit na výšku, snížit na délku" u první (textové) karty. Řešeno jen posunem
+  poměru mřížky — protože rám drží `align-self: stretch` (viz zápis o líčování výš),
+  zúžení karty ji automaticky prodlouží (víc zalomených řádků) a rám vyroste s ní, aniž
+  by bylo nutné sahat na cokoli jiného.
+  - Naměřeno na sedmi otázkách za sebou (1920 px): karta 556 → **514 px**, rám 376 →
+    **418 px**, výšky se dál drží shodné páry (311/311, 294/294, 349/349…).
+  - Ověřeno na dolní hranici pásma (900 px), kde je karta nejužší — text i odpovědi
+    zůstávají čitelné, žádné nepříjemné zalomení na dvě slova na řádek.
+  - `test:offline` 568 kontrol beze změny.
+
 - **2026-09-01 — Online souboj od 900 px plýtval třetinou šířky — nemá ilustraci a mřížka pro ni pořád rezervovala sloupec.**
   Objeveno na žádost „zkontroluj to i online obrazovky". `online.js` si otázku kreslí
   **vlastní** funkcí (`nextQuestion()`, ne `renderQuestion()` z `quiz.js`) a jen recykluje
