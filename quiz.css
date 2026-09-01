@@ -88,8 +88,12 @@
   background: radial-gradient(120% 130% at 50% 18%, #e6f1ed 0%, #c6ddd6 50%, #a7c6bd 100%);
   transition: height .45s cubic-bezier(.22,.9,.3,1); }
 .qz-picframe.revealed { height: clamp(200px, 26vh, 280px); }
-/* 16:9 fotka v širokém pásu se ořízne — držet horizont, ne spodní popředí */
-.qz-pic { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; display: block; }
+/* `contain`, ne `cover` — ilustrace se NIKDY neořízne. Do 2026-09-01 tu bylo `cover`
+   a ve vysokém rámu 4:5 se ze 16:9 obrázku ztrácelo 54 % ŠÍŘKY: u hasičského bálu
+   zůstala mimo záběr celá třetí postava. Ořez byl důsledek dvou nezávislých rozhodnutí,
+   která se nikdy nepotkala — rám na výšku (2026-08-14) a generátor na šířku.
+   Prázdný pruh kolem obrázku nese pozadí rámu, takže to čte jako pasparta. */
+.qz-pic { width: 100%; height: 100%; object-fit: contain; display: block; }
 /* Fotka je bez popisku schválně — zemi i téma říká řádek .qz-meta nad otázkou. */
 /* fallback, dokud otázka nemá fotku: razítko země místo snímku */
 .qz-pic-fallback { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
@@ -525,10 +529,23 @@
   .qz-play > .qz-box { grid-area: box; margin: 68px 0 0; }
   /* width: 100% je nutné — při align-items: stretch je výška definitivní a aspect-ratio
      by z ní jinak dopočítalo šířku (a rám by přetekl ven z panelu). Takhle drží poměr
-     jen jako minimální výšku řádku a šířku bere ze sloupce. 4:5 (ne 16:9 = poměr fotek)
-     — na výšku vyšší rám na přání 2026-08-14; fotka je uvnitř ořezaná přes object-fit:cover. */
+     jen jako minimální výšku řádku a šířku bere ze sloupce.
+
+     1:1 je KOMPROMIS MEZI DVĚMA GENERACEMI OBRÁZKŮ (2026-09-01). Rám byl 4:5 (vysoký,
+     na přání 2026-08-14), ale ilustrace se generovaly 16:9 — s `cover` se ořezávalo
+     54 % šířky. Generátor je od dneška na 4:5, jenže hotovo je teprve 30 % fondu
+     (1 141 z 3 742), takže rám musí slušet obojímu. Při `contain` a šířce ~371 px:
+       16:9 (staré) → pruh 80 px nahoře i dole
+       4:5 (nové)   → pruh 37 px po stranách
+     Kdyby byl rám 4:5, staré obrázky by měly pruhy 126 px a působily by ztraceně.
+     AŽ BUDE VĚTŠINA FONDU 4:5, vrať sem `4 / 5` — nové obrázky pak rám vyplní přesně. */
+  /* `align-self: start` — bez něj řádek mřížky rám ROZTÁHNE na výšku textové karty
+     (`align-items: stretch`) a `aspect-ratio` se neuplatní: naměřeno 371×442 místo
+     371×371, tedy o 70 px vyšší pruhy kolem obrázku. Rovnost sloupců už není potřeba,
+     protože akce v kartě drží u spodní hrany sama (.qz-fbtns margin-top: auto). */
   .qz-play > .qz-picframe,
-  .qz-play > .qz-picframe.revealed { grid-area: pic; margin: 68px 0 0; width: 100%; height: auto; aspect-ratio: 4 / 5; }
+  .qz-play > .qz-picframe.revealed { grid-area: pic; align-self: start; margin: 68px 0 0;
+    width: 100%; height: auto; aspect-ratio: 1 / 1; }
   /* odpovědi pod sebou, ne 2×2 (přání 2026-08-14) — větší mezery mezi nimi a text
      zarovnaný doleva. Odsazení musí jít přes padding, ne mezery v textu — mezery v
      obsahu odsadí jen první řádek, zalomený druhý řádek pak začínal víc vlevo (bug). */

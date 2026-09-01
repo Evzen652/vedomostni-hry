@@ -121,6 +121,31 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     glóbu); stažení knihovny do repa by závislost odstranilo úplně, zatím je aspoň
     ověřená. Ověřeno v prohlížeči: `THREE.REVISION === "137"`, žádné porušení CSP.
 
+- **2026-09-01 — Ilustrace u otázky se už NEOŘEZÁVÁ; generátor jede na výšku (4:5).**
+  Hráč se zeptal, jestli je obrázek celý. Nebyl: rám u odpovědi je 4:5 (na výšku,
+  přání 2026-08-14), ilustrace se generovaly 16:9 (na šířku) a `object-fit: cover`
+  z nich **ukrajoval 54 % ŠÍŘKY** — u hasičského bálu zůstala mimo záběr celá třetí
+  postava. Byl to důsledek dvou rozhodnutí, která se nikdy nepotkala; ani jedno
+  samo o sobě špatné nebylo.
+  - **`object-fit: contain` místo `cover`** — nic se neořízne nikdy, prázdný pruh nese
+    pozadí rámu a čte se jako pasparta.
+  - **Generátor nově `4:5`** ([gen-irony-images.js](scripts/gen-irony-images.js)).
+    **Šířka zároveň 1200 → 1000**, protože 1200×1500 má 2,2× víc pixelů než dosavadní
+    1200×686: přes zbývajících 2 601 obrázků by to bylo skoro **+1 GB v repu** (dnes
+    má `img/` 184 MB). 1000×1250 vychází na ~265 kB a na retinu pořád stačí.
+  - **Rám na desktopu 4:5 → 1:1 a `align-self: start`.** Bez `align-self` řádek mřížky
+    rám ROZTÁHNE na výšku textové karty a `aspect-ratio` se neuplatní — naměřeno
+    371×442 místo 371×371. Rovnost sloupců už není potřeba, akce v kartě drží u spodní
+    hrany sama. Ověřeno, že rám má **stejnou výšku před i po odpovědi**, takže layout
+    mezi otázkou a odpovědí neposkočí (to je pravidlo z 2026-07-31).
+  - **1:1 je KOMPROMIS MEZI DVĚMA GENERACEMI, ne cílový stav.** Hotovo je teprve 30 %
+    fondu (1 141 z 3 742), takže rám musí slušet starým 16:9 i novým 4:5. Při šířce
+    ~371 px: staré → pruh 79 px nahoře a dole, nové → pruh 37 px po stranách.
+  - **AŽ BUDE VĚTŠINA FONDU 4:5, uprav OBA rámy** — desktopový v `@media (min-width:900px)`
+    zpátky na `4 / 5`, a hlavně **mobilní**: ten je dnes široký (343×196), takže současné
+    16:9 vyplní přesně, ale obrázek na výšku by v něm byl malý (240×300 s pruhy 51 px).
+    Dnes ho měnit nemá smysl — pro dnešní fond je optimální.
+
 - **2026-09-01 — ČAS ODPOVĚDI SE MĚŘÍ NA SERVERU. Největší nález auditu je zavřený.**
   Do teď se `ms` bralo doslova z těla požadavku a server neměl s čím ho porovnat —
   nikde si nepamatoval, kdy otázku vydal. `ms: 0` proto vždycky dalo 200 bodů
