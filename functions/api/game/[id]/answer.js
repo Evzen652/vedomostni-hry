@@ -46,22 +46,43 @@ export async function onRequestPost({ params, request, env }) {
   const ci = correctIndex(orders[n]);
   const correct = pick === ci;
   const points = score(correct, ms, game.limit_s);
-  const answered = player.answered + 1;
-  const done = answered === ids.length;
 
+  // `answered` se zvyšuje RELATIVNĚ, ne zápisem přečtené hodnoty. Do 2026-09-01 tu
+  // stálo `answered = player.answered + 1`, kde `player` se načetl o pár řádků výš —
+  // klasický ztracený zápis: dvě souběžné odpovědi na různé otázky (dvojklik, retry
+  // po výpadku sítě, dvě zařízení) obě spočítaly totéž číslo a čítač zůstal pozadu.
+  // `answered === ids.length` pak nikdy nenastalo, `finished_at` zůstalo NULL a hra
+  // visela v 'open' NAVŽDY — settleIfDone se nespustil a soupeř nedostal výsledek.
+  // Zneužitelné i schválně: takhle si šlo rozbít vlastní prohranou partii.
   await env.DB.batch([
     env.DB.prepare(`INSERT INTO game_answers (game_id, user_id, q_index, pick, ms, correct, points)
                     VALUES (?, ?, ?, ?, ?, ?, ?)`)
       .bind(params.id, me.id, n, pick, ms, correct ? 1 : 0, points),
-    env.DB.prepare(`UPDATE game_players SET score = score + ?, answered = ?, finished_at = ?
+    env.DB.prepare(`UPDATE game_players SET score = score + ?, answered = answered + 1
                      WHERE game_id = ? AND user_id = ?`)
-      .bind(points, answered, done ? Date.now() : null, params.id, me.id),
+      .bind(points, params.id, me.id),
     // statistika pro rating otázky (docs/online-rezim.md, sekce 3)
     env.DB.prepare('UPDATE questions SET served = served + 1, hit = hit + ? WHERE id = ?')
       .bind(correct ? 1 : 0, q.id),
   ]);
 
-  if (done) await settleIfDone(env, params.id);
+  // Skóre i počet se čtou ZPĚTNĚ, ať odpověď klientovi odpovídá skutečnosti i při
+  // souběhu. Duplicitní odpověď je vyloučená PK (game_id, user_id, q_index), takže
+  // je tenhle počet autoritativní.
+  const po = await env.DB
+    .prepare('SELECT score, answered FROM game_players WHERE game_id = ? AND user_id = ?')
+    .bind(params.id, me.id).first();
+  const answered = po.answered;
+  const done = answered >= ids.length;
+
+  if (done) {
+    // `finished_at IS NULL` drží zápis idempotentní — čas dohrání se nesmí posunout,
+    // když sem doběhnou dvě poslední odpovědi současně.
+    await env.DB.prepare(`UPDATE game_players SET finished_at = ?
+                           WHERE game_id = ? AND user_id = ? AND finished_at IS NULL`)
+      .bind(Date.now(), params.id, me.id).run();
+    await settleIfDone(env, params.id);
+  }
 
   return json({
     correct,
@@ -70,7 +91,7 @@ export async function onRequestPost({ params, request, env }) {
     // ho potřebuje jako nadpis (CLAUDE.md 2026-07-31).
     correct_answer: q.answer,
     points,
-    score: player.score + points,
+    score: po.score,
     answered,
     done,
     quip: correct ? q.quip_correct : q.quip_wrong,

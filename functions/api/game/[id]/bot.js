@@ -28,12 +28,18 @@ export async function onRequestPost({ params, request, env }) {
   const bot = await pickBot(env, game.band, mine ? mine.rating : 1500);
   if (!bot) return fail('pro pásmo ' + game.band + ' není žádný bot', 503);
 
-  await env.DB.batch([
-    env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 1)')
-      .bind(params.id, bot.user_id),
-    // Bot hraje nehodnoceně, ať nejde farmit rating na slabých botech.
-    env.DB.prepare('UPDATE games SET rated = 0 WHERE id = ?').bind(params.id),
-  ]);
+  // Zámek je UNIQUE index (game_id, slot) — kontrola počtu výš má mezi sebou a tímhle
+  // zápisem mezeru, kterou trefí /bot současně s /join (nebo dva klikové /bot).
+  try {
+    await env.DB.batch([
+      env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 1)')
+        .bind(params.id, bot.user_id),
+      // Bot hraje nehodnoceně, ať nejde farmit rating na slabých botech.
+      env.DB.prepare('UPDATE games SET rated = 0 WHERE id = ?').bind(params.id),
+    ]);
+  } catch (e) {
+    return fail('souboj už má oba hráče', 409);
+  }
   await markSeen(env, bot.user_id, JSON.parse(game.question_ids));
 
   const score = await botPlay(env, game, bot.user_id, bot.strength);

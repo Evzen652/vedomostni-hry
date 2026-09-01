@@ -56,6 +56,37 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     místo ruční kopie té logiky; `S.idx` se navíc zařízne do nové délky, jinak po zmizení id
     ukáže na `undefined` a obrazovka spadne bez cesty ven.
 
+- **2026-09-01 — Souběhy v online hře opraveny. A POUČENÍ: tyhle opravy se přes HTTP otestovat NEDAJÍ.**
+  Tři místa, kde chyběl zámek. Všechna poškozovala skutečné hráče, ne hypotetické
+  podvodníky — proto měla přednost před anti-cheatem.
+  - **`answered` se zapisovalo absolutní hodnotou** přečtenou o pár řádků výš
+    ([answer.js](functions/api/game/[id]/answer.js)). Dvě souběžné odpovědi (dvojklik,
+    retry po výpadku sítě, dvě zařízení) spočítaly totéž číslo, čítač zůstal pozadu,
+    `finished_at` se nenastavilo a **hra visela v `open` navždy** — `settleIfDone` se
+    nespustil a soupeř nikdy nedostal výsledek. Nově `answered = answered + 1`
+    (relativně), skóre i počet se čtou zpětně a `finished_at` se nastavuje zvlášť
+    s `WHERE finished_at IS NULL`, ať je zápis idempotentní.
+  - **`settleIfDone` neměl atomické přepnutí** ([settle.js](functions/_lib/settle.js)).
+    Kontrola `status === 'done'` a `UPDATE ... SET status='done'` byly dva kroky, takže
+    dva souběžné vstupy (poslední odpověď × `settleIfDone` z `/bot`) prošly oba → dvojí
+    zápis do Glicka a dvojí připsání turnajových bodů. Nově `WHERE id = ? AND status =
+    'open'` + kontrola `meta.changes`; UPDATE je zároveň zámek.
+  - **`game_players` neměl unikátnost na slot.** PK je `(game_id, user_id)`, takže
+    `SELECT počet → INSERT slot 1` v `join.js`/`bot.js` měl mezeru: dva lidé
+    s přeposlaným odkazem se vložili oba jako slot 1 a `settle.js` pak hru na
+    `players.length !== 2` tiše uzavřel BEZ ratingu. Nově `UNIQUE INDEX (game_id, slot)`
+    (migrace [2026-09-01-slot-unique.sql](migrations/2026-09-01-slot-unique.sql)),
+    handlery chytají výjimku a vrací 409.
+  - **POUČENÍ, ať to nikdo nezkouší znovu: ani jednu z těchhle tří oprav nejde ověřit
+    testem přes HTTP.** Napsal jsem test se dvěma odpověďmi přes `Promise.all` a ověřil
+    ho mutací — po vrácení původního absolutního zápisu **třikrát po sobě PROŠEL**.
+    Totéž u indexu: po `DROP INDEX` test dál procházel, protože v sekvenčním volání
+    zabere dřív aplikační kontrola počtu hráčů. Requesty se proti lokálnímu wrangleru
+    fakticky serializují a závod se vynutit nedá. **Testy proto v souboru zůstávají
+    s poznámkou, co doopravdy měří** (kouřová zkouška invariantu, ne důkaz zámku) —
+    jinak by příští session věřila, že souběh je pokrytý. Záruku dává tvar zápisu
+    a databázový index, ne zelený test.
+
 - **2026-09-01 — OTEVŘENÉ nálezy z auditu. Nic z toho není opravené, čti před další prací na online.**
   - **Časová složka online hry NEEXISTUJE na serveru.** `ms` posílá klient, `answer.js` ověří
     jen `Number.isInteger` a `ms >= 0`, a v `schema.sql` není nic jako `served_at` — server si

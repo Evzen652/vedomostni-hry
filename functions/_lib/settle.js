@@ -21,7 +21,16 @@ export async function settleIfDone(env, gameId) {
   const expect = game.mode === 'solo' || game.mode === 'daily' ? 1 : 2;
   if (players.length < expect || players.some(p => !p.finished_at)) return null;
 
-  await env.DB.prepare("UPDATE games SET status = 'done' WHERE id = ?").bind(gameId).run();
+  // Přepnutí na 'done' je ZÁROVEŇ zámek. Kontrola na řádku 15 je jen levná zkratka —
+  // mezi ní a tímhle UPDATE se vejde druhý souběžný vstup (poslední odpověď hráče
+  // × settleIfDone z /bot), a bez `AND status = 'open'` by prošly oba: dvojí zápis
+  // do Glicka (games+1, wins+1 dvakrát) a dvojí připsání turnajových bodů.
+  // `meta.changes === 0` znamená, že hru uzavřel někdo jiný a my nemáme co dělat.
+  const zamek = await env.DB
+    .prepare("UPDATE games SET status = 'done' WHERE id = ? AND status = 'open'")
+    .bind(gameId).run();
+  if (!zamek.meta.changes) return null;
+
   if (players.length !== 2) return { status: 'done' };
 
   const [a, b] = players;

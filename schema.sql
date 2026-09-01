@@ -140,6 +140,12 @@ CREATE TABLE game_players (
   PRIMARY KEY (game_id, user_id)
 );
 CREATE INDEX idx_gp_user ON game_players(user_id);
+-- Jeden hráč na slot, vynucené databází. PK je (game_id, user_id), takže na slot
+-- žádná unikátnost nebyla a `SELECT počet → INSERT` v join.js/bot.js měl mezi sebou
+-- mezeru: dva lidé s přeposlaným odkazem (nebo join současně s /bot) se vložili oba
+-- jako slot 1. Souboj pro dva pak měl tři hráče a settle.js ho na `players.length !== 2`
+-- tiše uzavřel BEZ ratingu a bez určení vítěze. (2026-09-01)
+CREATE UNIQUE INDEX idx_gp_slot ON game_players(game_id, slot);
 
 CREATE TABLE game_answers (
   game_id  TEXT    NOT NULL,

@@ -29,8 +29,15 @@ export async function onRequestPost({ params, request, env }) {
   }
 
   const ids = JSON.parse(game.question_ids);
-  await env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 1)')
-    .bind(params.id, me.id).run();
+  // Kontrola počtu výš je jen zdvořilá hláška — skutečný zámek je UNIQUE index
+  // (game_id, slot). Mezi SELECT a INSERT se vejde druhý požadavek (přeposlaný odkaz
+  // otevřou dva lidé naráz, nebo join potká /bot) a bez indexu se vložili oba.
+  try {
+    await env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 1)')
+      .bind(params.id, me.id).run();
+  } catch (e) {
+    return fail('souboj už má oba hráče', 409);
+  }
   await markSeen(env, me.id, ids);
 
   return json({ id: game.id, band: game.band, total: ids.length, limit_s: game.limit_s });

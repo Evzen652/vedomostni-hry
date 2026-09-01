@@ -123,6 +123,31 @@ async function playAll(token, gameId, total, ms = 2000) {
   const seenAfter = (await api('/api/me', { token: A.token })).body.seen_questions;
   ok(seenAfter >= 10, 'viděné otázky se evidují (' + seenAfter + ')');
 
+  // POZOR NA OČEKÁVÁNÍ: tohle NENÍ test ztraceného zápisu. Zkoušel jsem ho tak napsat
+  // (dvě odpovědi přes Promise.all) a ověřoval mutací — po vrácení původního
+  // `answered = <přečtená hodnota> + 1` test třikrát po sobě PROŠEL. Závod se přes
+  // HTTP proti lokálnímu wrangleru vynutit nedá, requesty se fakticky serializují.
+  // Nechávám ho jako kouřovou zkoušku toho, že dohrání uzavře hru a čítač sedí —
+  // to je invariant, který se dá porušit i jinak (readback, finished_at).
+  //
+  // Skutečnou záruku dává tvar zápisu, ne tenhle test: `answered = answered + 1` je
+  // relativní, takže se dvě souběžné odpovědi nemůžou přepsat. Do 2026-09-01 se
+  // zapisovala absolutní hodnota přečtená o pár řádků výš, čítač zůstal pozadu,
+  // `finished_at` se nenastavilo a hra visela v 'open' navždy.
+  const soub = await api('/api/game', {
+    method: 'POST', token: A.token, body: { time_control: 'blesk' } });
+  await Promise.all([
+    api(`/api/game/${soub.body.id}/answer`, { method: 'POST', token: A.token, body: { n: 0, pick: 0, ms: 1000 } }),
+    api(`/api/game/${soub.body.id}/answer`, { method: 'POST', token: A.token, body: { n: 1, pick: 0, ms: 1000 } }),
+  ]);
+  for (let n = 2; n < soub.body.total; n++) {
+    await api(`/api/game/${soub.body.id}/answer`, { method: 'POST', token: A.token, body: { n, pick: 0, ms: 1000 } });
+  }
+  const poSoubehu = await api(`/api/game/${soub.body.id}`, { token: A.token });
+  ok(poSoubehu.body.me.answered === soub.body.total,
+     'čítač odpovědí sedí po dohrání (' + poSoubehu.body.me.answered + '/' + soub.body.total + ')');
+  ok(poSoubehu.body.status === 'done', 'a hra se uzavře, ne aby visela v open');
+
   // ------------------------------------------------------------ souboj na odkaz
   section('Souboj na odkaz');
   const nickB = 'Souper_' + uniq();
@@ -141,6 +166,16 @@ async function playAll(token, gameId, total, ms = 2000) {
 
   const kidJoin = await api(`/api/game/${duel.body.id}/join`, { method: 'POST', token: kid.body.token });
   ok(kidJoin.status === 409, 'hráč z jiného pásma se nepřipojí, dostal ' + kidJoin.status);
+
+  // Třetí hráč do souboje pro dva. Ověřuje APLIKAČNÍ kontrolu v join.js — ta tam byla
+  // odjakživa. UNIQUE index (game_id, slot) přidaný 2026-09-01 tenhle test NEPROVĚŘÍ:
+  // zkoušel jsem ho mutací (DROP INDEX) a test dál procházel, protože v sekvenčním
+  // volání zabere kontrola počtu dřív. Index chrání jen souběh, který se přes HTTP
+  // vynutit nedá — je to obrana do hloubky, ne něco, co by tenhle test měřil.
+  const treti = (await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'Treti_' + uniq(), pin: '1234', band: 'dospeli' } })).body;
+  const tretiJoin = await api(`/api/game/${duel.body.id}/join`, { method: 'POST', token: treti.token });
+  ok(tretiJoin.status === 409, 'třetí hráč se do souboje nedostane, dostal ' + tretiJoin.status);
 
   // oba dostanou stejné otázky
   const qa = await api(`/api/game/${duel.body.id}/q/0`, { token: A.token });

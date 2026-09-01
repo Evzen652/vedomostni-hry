@@ -1,11 +1,18 @@
 name = "zemekviz"
 compatibility_date = "2026-08-24"
 
-# Účet, pod kterým projekt i databáze žijí (evzen.weigl@gmail.com). Není to tajemství —
-# stejné id je v adrese dashboardu —, ale MUSÍ tu být: bez něj si wrangler bere naposledy
-# použitý účet, a když je přihlášený jiný, hlásí u D1 „database could not be found
-# [code: 7404]". To svádí na smazanou databázi, i když jde jen o špatný účet. (2026-09-01)
-account_id = "3005fa92056c05be6e87ea85a5df5ab9"
+# POZOR: `account_id` sem NEPATŘÍ. Zkusil jsem ho sem 2026-09-01 dát a `wrangler pages
+# deploy` na tom spadl s „Configuration file for Pages projects does not support
+# account_id" — u Pages projektů se ta volba nepodporuje, i když `wrangler d1 execute`
+# ji tiše sní. Projekt i databáze žijí pod účtem evzen.weigl@gmail.com
+# (3005fa92056c05be6e87ea85a5df5ab9).
+#
+# Když wrangler sáhne po špatném účtu, hlásí u D1 „database could not be found
+# [code: 7404]" — což svádí na smazanou databázi, ne na špatný účet. Řeší se to
+# proměnnou prostředí pro ten jeden příkaz, ne konfigurací:
+#   $env:CLOUDFLARE_ACCOUNT_ID='3005fa92056c05be6e87ea85a5df5ab9'
+# Nejdřív si ale ověř `npx wrangler whoami` — obvykle stačí být přihlášený správným
+# e-mailem a nic dalšího není potřeba.
 
 # Nasazuje se VÝHRADNĚ z dist/, které staví scripts/build-public.js jen z toho, co má
 # být venku. Do 2026-08-25 tu stálo ".", což na web nahrálo i CLAUDE.md, schema.sql,
