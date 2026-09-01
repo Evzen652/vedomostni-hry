@@ -83,8 +83,7 @@
 .qz-scorepill b { font-size: 17px; }
 
 /* rám = jedno okno: u otázky v něm žije glóbus, u odpovědi se odhalí fotka */
-.qz-picframe { position: relative; display: flex; align-items: center; justify-content: center;
-  margin: 12px 16px 0; height: 320px; border-radius: 18px; overflow: hidden;
+.qz-picframe { position: relative; margin: 12px 16px 0; height: 320px; border-radius: 18px; overflow: hidden;
   border: 3px solid #fffdf6; outline: 2px solid #d8c9ad; box-shadow: 0 10px 26px rgba(120,90,50,.28);
   background: radial-gradient(120% 130% at 50% 18%, #e6f1ed 0%, #c6ddd6 50%, #a7c6bd 100%);
   transition: height .45s cubic-bezier(.22,.9,.3,1); }
@@ -94,12 +93,16 @@
    zůstala mimo záběr celá třetí postava. Ořez byl důsledek dvou nezávislých rozhodnutí,
    která se nikdy nepotkala — rám na výšku (2026-08-14) a generátor na šířku.
    Prázdný pruh kolem obrázku vyplní `.qz-picbg` — rozmazaná kopie TÉŽE ilustrace. */
-/* `max-width/max-height` + centrování rámem (flex) místo `width:100%; object-fit: contain`.
-   Vypadá to stejně, ale JE V TOM ROZDÍL: při `object-fit` má element pořád velikost celého
-   rámu a obrázek je jen vykreslený dovnitř, takže maska níž by změkčovala okraje RÁMU,
-   tedy prázdno — a šev by zůstal. Takhle se element velikostí kryje se skutečným
-   obrázkem a maska sedí přesně na jeho hraně. */
-.qz-pic { position: relative; z-index: 1; max-width: 100%; max-height: 100%; width: auto; height: auto; display: block;
+/* `max-width/max-height` + `inset: 0; margin: auto` (klasické centrování) místo
+   `width:100%; object-fit: contain`. Vypadá to stejně, ale JSOU V TOM DVA ROZDÍLY:
+   1. Při `object-fit` má element pořád velikost celého rámu a obrázek je jen vykreslený
+      dovnitř, takže maska níž by změkčovala okraje RÁMU, tedy prázdno — a šev by zůstal.
+      Takhle se element velikostí kryje s obrázkem a maska sedí na jeho hraně.
+   2. `position: absolute` je NUTNÉ, ne kosmetika. Rám se na desktopu roztahuje podle
+      řádku mřížky, takže jeho výška nesmí záviset na obsahu — obrázek v toku by do ní
+      vnesl svou přirozenou výšku (686 px) a řádek by se na ni nafoukl. */
+.qz-pic { position: absolute; inset: 0; margin: auto; z-index: 1;
+  max-width: 100%; max-height: 100%; width: auto; height: auto; display: block;
   /* Změkčený přechod do rozmazaného podkladu. Bez něj je mezi ostrým obrázkem a `.qz-picbg`
      vidět ostrá vodorovná linka — pruh sice barvou sedí, ale hrana ho prozradí. 10 px na
      obrázku širokém 464 px je pod prahem, kdy by to působilo jako rozostření. */
@@ -552,24 +555,26 @@
      Oba pruhy nese `.qz-picbg`, tedy rozmazaná kopie téhož obrázku, takže nejsou
      rušivé ani u jedné generace. AŽ BUDE VĚTŠINA FONDU 4:5, vrať sem `4 / 5`.
 
-     5:4 zároveň SROVNÁVÁ VÝŠKU obou obdélníků: při šířce sloupce 464 px vyjde rám
-     371 px, což je přesně výška, na kterou vychází textová karta po sevření odpovědí
-     (viz .qz-ans níž). Předchozí 16:9 dávalo 264 px, takže rám končil 70 px nad
-     kartou a sloupce vypadaly nedodělané.
+     Poměr rámu se na desktopu vůbec neurčuje — viz `align-self: stretch` níž. */
+  /* OBA OBDÉLNÍKY LÍCUJÍ ZVRCHU I ZESPODU, protože je táhne týž řádek mřížky
+     (`align-items: stretch`). Rám proto nemá `aspect-ratio` ani pevnou výšku a bere
+     si ji z řádku — tedy z toho vyššího z dvojice, v praxi z textové karty.
 
-     PŘESNÁ ROVNOST NA KAŽDÉ OTÁZCE NEJDE a nehoň ji: otázka má jeden až tři řádky
-     a karta se tomu musí přizpůsobit. 371 je nastaveno tak, aby jednořádkovou otázku
-     karta nepřerostla vůbec (řádek mřížky ji na výšku rámu dotáhne sám) a u dvou
-     řádků přesáhla o ~18 px. Roztahovat rám podle karty nejde — u odpovědi je karta
-     jinak vysoká než u otázky, takže by ilustrace poskočila (pravidlo 2026-07-31). */
-  /* `align-self: start` — bez něj řádek mřížky rám ROZTÁHNE na výšku textové karty
-     (`align-items: stretch`) a `aspect-ratio` se neuplatní: naměřeno 371×442 místo
-     371×371. Roztažení by navíc rám ZVĚTŠILO při otázce (karta má 461 px) a ZMENŠILO
-     u odpovědi (333 px) — ilustrace by mezi stavy poskočila, což zakazuje pravidlo
-     z 2026-07-31. Pevný poměr je proto jediná cesta, jak mít stejnou výšku i klid. */
+     PEVNÝ POMĚR SE PŘES DEN ZKOUŠEL PĚTKRÁT (4:5, 1:1, 16:9, 4:3, 5:4) a pokaždé
+     skončil stejně: rám a karta se o pár desítek pixelů míjely. Nemůže to vyjít —
+     karta měří podle počtu řádků otázky jednou 381 px a jindy 478, takže žádné jedno
+     číslo nesedí na všechny otázky. Řádek mřížky to řeší sám a zadarmo.
+
+     PODMÍNKA: rám nesmí mít obsah v toku, jinak by do řádku vnesl přirozenou výšku
+     obrázku (686 px) a nafoukl ho. Proto je `.qz-pic` i `.qz-picbg` absolutně
+     pozicovaný — viz komentář u `.qz-pic`.
+
+     Výška se mezi otázkou a odpovědí mění, ale ILUSTRACE TÍM NEPOSKAKUJE: u otázky
+     v rámu žije glóbus a obrázek se objeví teprve po odpovědi. Pravidlo z 2026-07-31
+     říká, že se nesmí hnout snímek, ne že se nesmí hnout karta. */
   .qz-play > .qz-picframe,
-  .qz-play > .qz-picframe.revealed { grid-area: pic; align-self: start; margin: 68px 0 0;
-    width: 100%; height: auto; aspect-ratio: 5 / 4; }
+  .qz-play > .qz-picframe.revealed { grid-area: pic; align-self: stretch; margin: 68px 0 0;
+    width: 100%; height: auto; }
   /* odpovědi pod sebou, ne 2×2 (přání 2026-08-14) — větší mezery mezi nimi a text
      zarovnaný doleva. Odsazení musí jít přes padding, ne mezery v textu — mezery v
      obsahu odsadí jen první řádek, zalomený druhý řádek pak začínal víc vlevo (bug). */

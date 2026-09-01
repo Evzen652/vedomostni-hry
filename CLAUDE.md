@@ -134,35 +134,44 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     z průhlednosti za hranou). Navazuje vždycky, u 16:9 i u budoucích 4:5.
     `.qz-picbg` **musí mizet a naskakovat s obrázkem** (`wirePic` v [quiz.js](quiz.js)),
     jinak by u chybějící ilustrace zůstal pod razítkem země barevný čtverec.
-  - **Rám 1:1 → 16:9 → nakonec 5:4.** Při šířce sloupce 464 px vychází 371 px, což je
-    přesně výška textové karty po sevření odpovědí. Naměřeno na osmi otázkách za sebou:
-    **u odpovědi 373 = 373 pokaždé**, u otázky 373 / 381 / 430 podle počtu řádků.
-  - **Karta se ZMENŠILA, aby se do rámu vešla** (výslovné přání „klidně udělej ten první
-    obdélník menší"): odpovědi 64 → 52 px, mezera 20 → 12 px, vnitřní okraj karty 18 → 14 px.
+  - **RÁM NEMÁ PEVNÝ POMĚR. Táhne ho řádek mřížky, a proto oba obdélníky LÍCUJÍ VŽDYCKY.**
+    Za jediný den se tu vystřídalo **pět pevných poměrů** (4:5 → 1:1 → 16:9 → 4:3 → 5:4)
+    a každý skončil stejně: rám a karta se o pár desítek pixelů míjely. **Nemůže to vyjít
+    a nezkoušej to znovu** — karta měří podle počtu řádků otázky jednou 381 px a jindy
+    510, takže žádné jedno číslo nesedí na všechny otázky. Řešení je `align-self: stretch`
+    místo `start`: rám si výšku bere z řádku, tedy z karty. Naměřeno na šesti otázkách
+    v obou stavech: **horní i dolní hrana obou obdélníků sedí na pixel, pokaždé.**
+  - **Podmínka, bez které to spadne: rám nesmí mít obsah V TOKU.** `.qz-pic` je proto
+    `position: absolute; inset: 0; margin: auto`. Obrázek v toku by do řádku vnesl svou
+    přirozenou výšku (686 px) a nafoukl ho — ověřeno, dělo se to.
+  - **Pravidlo z 2026-07-31 tím NENÍ porušené.** Říká, že se nesmí hnout snímek. Rám sice
+    mění výšku mezi otázkou a odpovědí, jenže u otázky v něm žije glóbus a snímek se
+    objeví teprve po odpovědi — takže není co poskočit.
+  - **Karta se ZMENŠILA** (výslovné přání „klidně udělej ten první obdélník menší"):
+    odpovědi 64 → 52 px, mezera 20 → 12 px, vnitřní okraj karty 18 → 14 px.
     Blok platí až od 900 px, takže mobil se nemění; 52 px je nad 44px minimem pro dotyk.
-  - **ROZTAHOVAT RÁM PODLE KARTY NEJDE — nezkoušej to.** Nabízí se zrušit `align-self: start`
-    a nechat řádek mřížky sloupce srovnat. Jenže karta má u otázky 381–430 px a u odpovědi
-    373 px, takže by ilustrace mezi stavy poskočila — a to zakazuje pravidlo z 2026-07-31.
-    Pevný poměr je jediná cesta, jak mít zároveň rovnost a klid.
-  - **Přesná rovnost na KAŽDÉ otázce neexistuje** a nemá se honit: otázka má jeden až tři
-    řádky. 5:4 je nastaveno tak, aby jednořádkovou otázku karta nepřerostla vůbec a u dvou
-    řádků přesáhla o ~8 px.
   - **ŠEV ZMĚKČEN maskou; a `object-fit: contain` kvůli tomu muselo pryč.** Pruh barvou
     seděl, ale hrana mezi ostrým obrázkem a rozmazaným podkladem byla vidět jako linka.
     Maska na `.qz-pic` ale s `object-fit` NEFUNGUJE: element má pořád velikost celého
-    rámu a obrázek je jen vykreslený dovnitř, takže by změkčovala okraje prázdna. Rám
-    je proto nově `display: flex` (centruje) a obrázek `max-width/max-height: 100%`,
-    čímž se element velikostí kryje s obrázkem a maska sedí na jeho hraně. 10 px.
-  - **GENERÁTOR PŘEPNUT 4:5 → 5:4 a je to past, kterou jsem si vyrobil sám.** Ráno byl
-    rám vysoký, tak šel generátor na 4:5; odpoledne se rám kvůli srovnání sloupců otočil
-    na 5:4 a generátor zůstal — všech 2 574 budoucích obrázků by mělo pruhy PO STRANÁCH
-    místo nahoře a dole. **Když se hýbe s rámem, musí se hýbat i generátor.**
+    rámu a obrázek je jen vykreslený dovnitř, takže by změkčovala okraje prázdna. Obrázek
+    je proto absolutně pozicovaný s `max-width/max-height: 100%`, čímž se element
+    velikostí kryje s obrázkem a maska (10 px) sedí na jeho hraně.
+  - **GENERÁTOR JE NOVĚ ČTVERCOVÝ (1:1) a mění se s rámem — dnes už potřetí.** Za jediný
+    den šel 16:9 → 4:5 → 5:4 → 1:1, pokaždé proto, že se pohnul rám, a dvakrát jsem na
+    to zapomněl. **Když se hýbe s rámem, MUSÍ se hýbat i generátor**, jinak budou mít
+    budoucí obrázky pruhy jen otočené o 90°. Čtverec je změřený, ne odhadnutý: rám je
+    široký 376 px a ve stavu, kdy je obrázek vidět (po odpovědi), měl na šesti otázkách
+    312–374 px, medián ~360. Ve stejném rámu vychází pruh u 1:1 na **8 px**, u 5:4 na
+    42 px a u 16:9 na 84 px. Šířka souboru zůstává 1000 px → 1000×1000.
   - **Přemalovat okraje starých obrázků skriptem NEMÁ SMYSL — a je to spočítané.** Lokální
     dopočet (zrcadlení, roztažení kraje, rozmazání) nevymyslí obsah; dá přesně to, co dnes
     dělá `.qz-picbg`, jen natvrdo v souboru a nevratně. Generativní domalování přes Gemini
     stojí **stejně jako přegenerování celého obrázku** (~$0,034/kus v batchi), takže za
     1 091 starých 16:9 kusů je to ~$37 tak či tak — a přegenerování dá pořádnou kompozici
-    v 5:4, ne dolepené okraje. Až bude kredit: `node scripts/gen-irony-images.js --force`.
+    ve čtverci, ne dolepené okraje. Až bude kredit: `node scripts/gen-irony-images.js --force`.
+  - **AŽ BUDE VĚTŠINA FONDU ČTVERCOVÁ, uprav MOBILNÍ rám.** Ten je dnes 343×196 (široký),
+    takže dnešním 16:9 sedí přesně, ale čtverec v něm bude 196×196 s pruhy 73 px po
+    stranách. Desktopový rám se měnit nemusí — ten se řídí kartou, ne poměrem.
   - **ROZŠIŘOVÁNÍ HRACÍ PLOCHY ZAMÍTNUTO A VRÁCENO ZPĚT — nezkoušej to znovu.** Během
     dne tu bylo postupně 1460 px a pak 1200 px (práh nejdřív 1300, pak 1150). Hráč to
     ukončil jednou větou: *„rozhodnutí dát to na celou šířku obrazovky nebyl dobrý
