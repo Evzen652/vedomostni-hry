@@ -287,11 +287,50 @@
 .qz-endrow { display: flex; gap: 12px; }
 
 @media (max-width: 767px) {
+  /* Obrázek na telefonu NAHOŘE, karta pod ním (přání 2026-09-01). DOM pořadí se
+     neobrací — desktop ho nepotřebuje (grid-template-areas řadí podle jména oblasti,
+     ne podle pořadí v HTML), takže by přehazování DOM struktury bylo riziko bez
+     přínosu. Řeší to `order` na flex položkách, jen tady na mobilu. */
+  .qz-play { display: flex; flex-direction: column; }
+  .qz-play > .qz-top { order: 1; }
+  .qz-play > .qz-picframe { order: 2; }
+  .qz-play > .qz-box { order: 3; }
   .qz-ans { grid-template-columns: 1fr 1fr; }
-  .qz-picframe { height: 210px; }
-  .qz-picframe.revealed { height: 190px; }
+  /* Pevná výška (210/190 px) nahrazena poměrem skutečné fotky — ZMĚŘENÝ DŮVOD, ne
+     kosmetika. Při 375 px šířky vycházela pevná výška téměř identicky (343×190 ≈ 16:9),
+     ale appka „mobil" počítá až do 767 px (phablety, telefon naležato) a tam už rám
+     rostl do šířky, zatímco výška zůstávala stejná — při 700 px vyšel pruh 168 px na
+     stranu, horší než na tabletu těsně nad touhle hranicí. Poměr škáluje s šířkou vždy
+     správně; obě stejná (revealed i ne), takže mezi otázkou a odpovědí rám neposkočí. */
+  .qz-picframe,
+  .qz-picframe.revealed { height: auto; aspect-ratio: 16 / 9; }
   .qz-host { max-width: 52%; }
   .qz-host-bubble { display: none; }
+  /* Tlačítka „Více o…" a „Další otázka" pod sebe, ne vedle sebe (přání 2026-09-01) —
+     na úzké obrazovce dělal delší popisek „Více o…" dvouřádkový text v půlce šířky.
+     `flex: 0 1 auto` ruší `flex: 1 1 0` ze základního pravidla (tam dávalo tlačítkům
+     stejnou ŠÍŘKU vedle sebe; ve sloupci by to dávalo stejnou VÝŠKU, ne to, co chceme). */
+  .qz-fbtns { flex-direction: column; }
+  .qz-fbtns > button { flex: 0 1 auto; width: 100%; }
+}
+
+/* MEZERA MEZI MOBILEM A DESKTOPEM (768–899 px, typicky tablet na výšku) — objevena
+   2026-09-01 při kontrole „zkontroluj to i na mobilu a tabletu", stará od založení
+   appky (2026-07-21), netýká se dnešní práce. Karta v tomhle pásmu zdědí ze základního
+   pravidla `height: 320px` / `clamp(200px, 26vh, 280px)`, což je výška počítaná z výšky
+   OKNA, ne ze skutečné šířky karty (ta v tomhle pásmu roste na 700–870 px). Naměřeno na
+   768 px: rám 736×272, fotka uvnitř 466×266 — pruh 135 px NA STRANU, přes třetinu rámu.
+
+   Řešení kopíruje dnešní poznatek ze stacked layoutu: v jednosloupcovém rozložení (a
+   tohle pásmo jím je stejně jako mobil) rám nemusí s ničím lícovat, takže může mít
+   prostě poměr skutečné fotky — 16:9 pro celý dnešní fond (appka dnes negenerovala
+   žádnou čtvercovou ilustraci, viz zápis „VYZKOUŠENO A ZAMÍTNUTO" výš). Na rozdíl od
+   zamítnutého desktopového pokusu tu neplatí důvod zamítnutí („zbytečně velké") —
+   tablety na výšku mají dost výšky okna (typicky 1024 px), takže i rám 400+ px vysoký
+   nenutí ke scrollování tak, jak to dělal na nízkém okně notebooku. */
+@media (min-width: 768px) and (max-width: 899px) {
+  .qz-picframe,
+  .qz-picframe.revealed { height: auto; aspect-ratio: 16 / 9; }
 }
 
 /* výběr režimu / setup párty / scoreboard / steal / ceremoniál */

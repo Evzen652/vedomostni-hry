@@ -20,6 +20,53 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Telefon: obrázek nahoře, tlačítka „Více o…"/"Další otázka" pod sebe.
+  Cestou i objevena a opravená mezera 768–899 px, kde appka měla pruh horší než tablet.**
+  Hráč požádal o dvě věci na mobilu: obrázek (nebo glóbus) nahoře nad kartou, a stažení
+  dvou tlačítek v patičce z vedle sebe pod sebe.
+  - **Pořadí se řeší `order` na flex položkách, ne přehozením HTML.** Desktop řadí podle
+    `grid-area` (jméno oblasti, ne pořadí v DOM), takže přehození pořadí v šabloně by
+    desktop nezajímalo, ale bylo by to riziko bez důvodu — zdroj pravdy zůstává jeden.
+    `.qz-play` na mobilu (`max-width:767px`) dostal `display:flex; flex-direction:column`
+    + `order: 1/2/3` na `.qz-top`/`.qz-picframe`/`.qz-box`. Ověřeno v obou stavech
+    (otázka s glóbem i odhalená fotka) — obrázek je nahoře v obou, žádný jump mezi nimi.
+  - **Tlačítka: `.qz-fbtns { flex-direction: column }` + `.qz-fbtns > button { flex: 0 1
+    auto; width: 100% }`.** Základní pravidlo dává tlačítkům `flex: 1 1 0` (stejná ŠÍŘKA
+    vedle sebe); ve sloupci by to dalo stejnou VÝŠKU, ne to, co chceme — proto se to musí
+    přebít, ne jen otočit `flex-direction`.
+  - **VEDLEJŠÍ NÁLEZ cestou: `.qz-picframe` na mobilu měla pevnou výšku (210/190 px),
+    která byla vyladěná jen pro ÚZKÝ telefon (~375 px).** Appka ale „mobil" počítá až
+    do 767 px (phablety, telefon naležato) — tam rám rostl do šířky, ale výška zůstala
+    stejná. Naměřeno při 700 px: rám 668×196, fotka uvnitř 332×190 → **pruh 168 px na
+    stranu**, horší než na tabletu těsně nad touhle hranicí (viz zápis níž). Nahrazeno
+    poměrem `aspect-ratio: 16/9` (dnešní fond je 100% na šířku) — stejná hodnota pro
+    otázku i odpověď, takže rám navíc mezi stavy neposkočí. Na úzkém telefonu (375 px)
+    je výsledek prakticky identický s předchozím (193 px místo 190) — nic se nezhoršilo.
+  - Ověřeno na 375 a 768 px (druhá beze změny, patří jinému pravidlu) a na 1400 px
+    (desktop beze změny — vedle sebe, tlačítka vedle sebe). `test:offline` 568 kontrol.
+
+- **2026-09-01 — Mezera 768–899 px (tablet na výšku) měla pruh HORŠÍ než mobil i desktop — stará od založení appky, ne z dneška.**
+  Objeveno na žádost „zkontroluj to i na mobilu a tabletu". Appka má dva ladicí body:
+  `max-width:767px` (telefon) a `min-width:900px` (desktop, dvousloupcové). Pásmo mezi
+  nimi — typicky tablet na výšku — spadalo na ZÁKLADNÍ pravidlo `.qz-picframe`
+  (`height:320px` / `revealed: clamp(200px, 26vh, 280px)`), které počítá výšku z výšky
+  OKNA, ne ze šířky karty. Karta v tomhle pásmu je přitom široká (700–870 px, jeden
+  sloupec jako mobil), takže vznikl rám široký a nízký s obrovským bočním pruhem.
+  Naměřeno na 768 px: rám 736×272, fotka uvnitř 466×266 → **pruh 135 px na stranu**,
+  přes třetinu rámu — horší, než co se dnes opravovalo jinde.
+  - **Řešení kopíruje poznatek ze zamítnutého stacked pokusu níž:** v jednosloupcovém
+    rozložení (tohle pásmo jím je, stejně jako mobil) rám nemusí s ničím lícovat, takže
+    může mít prostě poměr skutečné fotky. `aspect-ratio: 16/9`, scoped na
+    `(min-width:768px) and (max-width:899px)`. Po opravě 768 px → rám 736×417, fotka
+    718×411 — pruh **9 px** na stranu.
+  - **Proč TADY neplatí důvod, kterým hráč zamítl stejný nápad na desktopu** („zbytečně
+    velké"): tablety na výšku mají typicky ~1024 px výšky okna, takže rám 400–500 px
+    vysoký nenutí ke scrollování tak jako na nízkém okně notebooku (1400×800), kde padl
+    zamítavý verdikt. Ověřeno na krajích pásma (768 a 899 px) i na obou sousedních
+    hranicích (767 px zůstává mobilní pravidlo, 900 px přebírá desktopový grid) —
+    žádný skok, žádná regrese.
+  - `test:offline` 568 kontrol beze změny.
+
 - **2026-09-01 — VYZKOUŠENO A ZAMÍTNUTO: karta a rám POD SEBOU místo vedle sebe.**
   Nápad zněl dobře: když rám nemusí lícovat s ničím po straně, může mít prostě poměr
   skutečné fotky (16:9) a pruh zmizí úplně — beze zbytku, ne jen zmenšený. Vizuálně to
