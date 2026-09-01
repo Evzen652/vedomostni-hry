@@ -121,6 +121,29 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     glóbu); stažení knihovny do repa by závislost odstranilo úplně, zatím je aspoň
     ověřená. Ověřeno v prohlížeči: `THREE.REVISION === "137"`, žádné porušení CSP.
 
+- **2026-09-01 — Glóbus: kreslicí plocha se přizpůsobí displeji, ale STROP JE TEXTURA (1024×512).**
+  Hráč hlásil, že glóbus je v malém rozlišení. Má pravdu a hlavní příčinu **nejde spravit
+  kódem** — je potřeba přemalovat texturu.
+  - **Kolik detailu textura vůbec má:** 1024 px na 360° = **2,84 pixelu na stupeň**.
+    Evropa je široká ~35°, takže má v textuře **~100 pixelů** — a v medailonu se zobrazuje
+    na ~110 CSS px. Je to tedy zhruba 1:1: obraz není roztažený, prostě **není co roztáhnout**.
+    Jediná cesta k ostřejšímu glóbu je textura 2048×1024 (5,7 px/°, Evropa 200 px).
+    **Upscale hotového JPEGu je k ničemu** (zamítnuto už 2026-08-30) — musí se přemalovat,
+    tj. Gemini s dnešní texturou v příloze, aby zůstala geografie: `spinGlobeTo()` natáčí
+    kouli na souřadnice a značka sedí napevno uprostřed rámu, takže posunutá pevnina =
+    špatně ukázaná země. Podmínky: equirektangulární 2:1, full-bleed, šev v Pacifiku.
+  - **Opraveno zadarmo, ale je to jen okrajové:** canvas měl natvrdo 460×460 se
+    `setPixelRatio(1)`, takže na hustém displeji nebo při přiblížení prohlížeče (Chrome
+    tím zvedá `devicePixelRatio`) plochu nafukoval prohlížeč. Nově `resizeGlobe()` počítá
+    `css × dpr × 1,6` s podlahou 460 a stropem 1024. Přibylo anizotropní filtrování
+    (maximum je 16), které pomáhá na okraji koule, kde je textura viděná šikmo.
+  - **PAST, na kterou jsem naletěl a odhalilo ji až měření: `css × dpr` je MÁLO.** První
+    verze počítala jen tohle a při dpr 1 vyšla 290 px — tedy **míň než dosavadních 460**,
+    takže by ostrost zhoršila. Těch 460 nebylo omylem: canvas se kreslil ve větším
+    rozlišení, než se zobrazoval, takže se okraje převzorkovaly. Odtud násobek 1,6
+    a podlaha. Naměřeno po opravě: medailon 460 (beze změny při dpr 1), glóbus na
+    rozcestníku **800** místo 460.
+
 - **2026-09-01 — Pruh kolem ilustrace nese ROZMAZANÁ KOPIE téhož obrázku; oba obdélníky jsou stejně vysoké.**
   Dokončení předchozího bodu. Hráč hlásil, že „jemný pruh" u obrázku je pořád vidět a že
   levý obdélník je větší než pravý — chtěl to souměrné. Obojí opraveno, ale ani jedna cesta

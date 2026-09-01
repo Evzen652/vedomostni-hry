@@ -273,7 +273,7 @@
     try {
       const cv=document.createElement("canvas"); cv.width=cv.height=460; cv.style.width="100%"; cv.style.height="100%"; cv.style.display="block";
       const renderer=new THREE.WebGLRenderer({ canvas:cv, antialias:true, alpha:true });
-      renderer.setPixelRatio(1); renderer.setSize(460,460,false);
+      renderer.setPixelRatio(1); renderer.setSize(460,460,false);   // přepočítá resizeGlobe() při vložení
       if(THREE.sRGBEncoding!==undefined) renderer.outputEncoding=THREE.sRGBEncoding;
       const scene=new THREE.Scene();
       // POZOR, tohle je jedna ze DVOU nezávislých pák a pletou se:
@@ -288,6 +288,9 @@
       scene.add(new THREE.AmbientLight(0xffffff,0.7));
       const key=new THREE.DirectionalLight(0xffffff,0.0); key.position.set(-1,0.5,1.1); camera.add(key); scene.add(camera);
       const tex=new THREE.TextureLoader().load(EARTH_TEX); if(THREE.sRGBEncoding!==undefined) tex.encoding=THREE.sRGBEncoding;
+      // Anizotropní filtrování: u koule je textura na okrajích viděná hodně šikmo a bez
+      // tohohle se tam slévá do kaše. Karta hodnotu stejně ořízne na to, co umí.
+      try { tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); } catch(e){ /* starší three */ }
       const earth=new THREE.Mesh(new THREE.SphereGeometry(1,48,32), new THREE.MeshPhongMaterial({ map:tex, shininess:0 }));
       scene.add(earth);
       g3={ renderer, scene, camera, earth, canvas:cv, targetY:0, curY:0, targetX:0, curX:0, auto:false };
@@ -312,10 +315,30 @@
     g3.targetY=ty;
     g3.targetX=ll[1]*Math.PI/180;                        // plný náklon podle šířky, ať míří přesně na zemi
   }
+  // Kreslicí plocha musí mít tolik pixelů, kolik jich displej skutečně zobrazí. Do
+  // 2026-09-01 tu bylo natvrdo 460×460 s `setPixelRatio(1)`, takže na hustém displeji
+  // (nebo při přiblížení prohlížeče, které v Chrome zvedá `devicePixelRatio`) prohlížeč
+  // canvas nafukoval a glóbus byl měkký, aniž by za to mohla textura.
+  //
+  // POZOR NA PAST, na kterou jsem naletěl: první verze počítala jen `css × dpr`, což
+  // při dpr 1 vyšlo 290 px — tedy MÍŇ než dosavadních 460. Naměřeno a vráceno. Těch
+  // 460 nebylo omylem: canvas se kreslil ve větším rozlišení, než se zobrazoval, takže
+  // se okraj koule a hrany pevnin převzorkovaly. Násobek 1,6 to zachovává a na hustém
+  // displeji navíc přidá. Podlaha 460 zajistí, že to nikdy nespadne pod původní stav.
+  // Strop 1024 px: nad ním už textura (1024×512) nemá co nabídnout a jen by se platil výkon.
+  function resizeGlobe(){
+    if(!g3 || !g3.canvas) return;
+    const host=g3.canvas.parentElement; if(!host) return;
+    const css=host.clientWidth || 290;
+    const px=Math.min(Math.max(Math.round(css * (window.devicePixelRatio||1) * 1.6), 460), 1024);
+    if(px<=0 || g3.px===px) return;
+    g3.px=px; g3.renderer.setSize(px, px, false);
+  }
+  window.addEventListener("resize", resizeGlobe);
   function mountGlobeMedal(cc){
     const medal=document.getElementById("qz-medal"); if(!medal) return;
     initGlobe3d();
-    if(g3 && g3.canvas){ medal.innerHTML=""; medal.appendChild(g3.canvas); spinGlobeTo(cc); }
+    if(g3 && g3.canvas){ medal.innerHTML=""; medal.appendChild(g3.canvas); resizeGlobe(); spinGlobeTo(cc); }
     else { medal.innerHTML='<div class="land a"></div><div class="land b"></div>'; }   // fallback (Three.js chybí)
   }
   // úvodní obrazovka: velký glóbus v klidové rotaci za kartami režimů
@@ -324,7 +347,7 @@
     initGlobe3d();
     // Glóbus je sdílený singleton, takže se musí zhasnout zvýraznění z poslední otázky —
     // na rozcestníku nemá svítit žádná země.
-    if(g3 && g3.canvas){ bg.innerHTML=""; bg.appendChild(g3.canvas); g3.auto=true; g3.targetX=0.32; }
+    if(g3 && g3.canvas){ bg.innerHTML=""; bg.appendChild(g3.canvas); resizeGlobe(); g3.auto=true; g3.targetX=0.32; }
   }
 
   async function ensureData(){
