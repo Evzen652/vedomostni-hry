@@ -20,6 +20,28 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Výběr 2+ konkrétních zemí (ne „Vše") tahal zbytečné 404 na `country-at,cz.jpg`.**
+  Pokračování regresního testování. Objevilo se při ověřování dřívější opravy obnovy hry
+  (2026-08-31, `ccs`/`selectCountries`) — obnovil jsem sólo hru uloženou přes dvě konkrétní
+  země a v síti přistál request na `assets/country-at,cz.jpg`. `flagStamp()` skládá
+  `assets/country-${cc}.jpg`; `renderSectionPick()` (obrazovka „Vyber témata") jí ale
+  posílala `cc = S.sel.ccs || S.sel.cc`, což je u 2+ vybraných zemí **pole**, ne řetězec —
+  šablonový literál ho vezme přes `.toString()`, tedy `"at,cz"`.
+  - **Stejná třída chyby, jako appka už jednou řešila** (komentář o kousek níž v kódu):
+    u „všech zemí" je `S.sel.cc` `null` a `flagStamp(null)` tahalo `country-null.jpg`.
+    Ta oprava se ale netýkala případu konkrétního vícenásobného výběru — pole `S.sel.ccs`
+    tenkrát ještě neexistovalo (přibylo až s opravou obnovy her 2026-08-31).
+  - **Neprojevovalo se to viditelně** — `flagStamp()` má `onerror` schovávající obrázek,
+    takže žádné rozbité UI, jen zbytečný request a záznam v konzoli. Přesně proto to
+    validate/audit/test:offline nechytily; odhalilo to až sledování síťových požadavků
+    při ručním průchodu.
+  - **Oprava kopíruje existující vzor** (`(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""`,
+    použitý už u sólo úvodní obrazovky) — razítko se ukáže jen u JEDNÉ vybrané země,
+    jinak nic. Nadpis u dvou zemí teď zní „2 země | Vyber témata" bez ikony, stejně jako
+    „Celý svět" dřív ukazoval bez ikony u „Vše".
+  - Ověřeno: reprodukce (výběr Rakousko + Česko → 404 v síti) → oprava → stejný postup
+    bez jediného requestu na `country-*,*.jpg`. `test:offline` 568 kontrol beze změny.
+
 - **2026-09-01 — Regresní průchod: `.qz-setup` mělo špatné pořadí CSS pravidel, drobečková lišta přesahovala do nadpisu „Nová výprava".**
   Zadání znělo „proveď testy" (`test:api` 138, `test:offline` 568, `validate`, `audit`,
   `lint-irony`, `lint-facts`, `sim-online` — všechno bez regrese) + ruční průchod obrazovkami

@@ -758,7 +758,7 @@
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:COUNTRY, fn:backToCountry}, {label:"Téma"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
-      <h2>${flagStamp(cc)} ${esc(COUNTRY)} | Vyber témata</h2>
+      <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}${esc(COUNTRY)} | Vyber témata</h2>
       <div class="qz-tiles qz-tiles-sec">${allTile}${secTiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
     </div>`;
