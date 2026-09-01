@@ -20,6 +20,36 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Pruh kolem starých 16:9 fotek zmenšen sevřením TEXTOVÉ KARTY, ne honěním rámu.**
+  Hráč se ptal na pruhy u fotky (viz zápis „Rám se tahne podle karty" výš) — rám je od
+  dnešního odpoledne `align-self: stretch`, takže se drží výšky karty, a čím vyšší karta,
+  tím širší rozmazaný pruh kolem malé fotky. Nabídl jsem tři varianty (rám podle fotky /
+  strop výšky rámu / počkat na čtvercový fond) — hráč místo toho navrhl jinou osu: **zmenšit
+  kartu**. Je to chytřejší řešení, protože se rám drží karty automaticky — zmenšit kartu
+  zmenší rám se sebou, aniž by se muselo cokoli dolaďovat na rámu samotném.
+  - **Ověřeno na PŘESNÉ otázce z hráčova screenshotu** (`cz-k-punkevni-jeskyne`, špatná
+    odpověď „Koněpruské jeskyně"): karta **494 → 319 px**, pruh kolem 227px vysoké fotky
+    **133 → 46 px na stranu** (z 54 % rámu na 29 %). Napříč 10 dalšími otázkami medián
+    klesl z dřívějších ~330–374 px na **~280 px**.
+  - **Kam se ušetřilo:** `.qz-box` gap 12→8 px, `.qz-result .half` padding 12→8 px,
+    `.qz-quipbox`/`.qz-expl` margin-top 10→6 px, `.qz-frow` gap 12→8 px, tlačítka
+    (`.qz-more`/`.qz-next`) padding 11→8 px, hláška `.qz-ht` line-height 1.45→1.32.
+    Všechno jsou to **prázdné mezery**, ne text ani font — obsah (hláška, vysvětlení,
+    odpovědi) se nekrátil ani nezmenšil čitelnost.
+  - **STROP TÉHLE CESTY: hláška a vysvětlení jsou JÁDRO appky** (roky práce na jejich
+    kvalitě, viz standard z 2026-08-10 a přepisy 2026-08-15/08-30) a zkracovat JE by
+    appku ochudilo o to, proč appka vlastně je vtipná. Sevření dokázalo ubrat prázdné
+    místo kolem obsahu, ne obsah samotný — proto je zisk citelný (35 % na outlieru), ale
+    ne dost na to, aby pruh zmizel úplně. Zbytek je pořád na dřívějších třech variantách,
+    kdyby hráč chtěl jít dál.
+  - **Scoped jen do `@media (min-width:900px)`** (blok `.qz-play`) — mobil má vlastní
+    pevnou výšku rámu (210px) a s pruhem tenhle problém nemá, takže se nezměnil vůbec.
+    Ověřeno na 375 px beze změny.
+  - **Vedlejší úklid:** smazán zastaralý komentář u `.qz-picframe`, který ještě popisoval
+    zrušený přístup s pevným poměrem 4:3 (nahrazený `align-self: stretch` od dřívějšího
+    commitu dnes) — dvě protichůdná vysvětlení nad sebou by matla, ne pomáhala.
+  - `test:offline` 568 kontrol beze změny.
+
 - **2026-09-01 — Výběr 2+ konkrétních zemí (ne „Vše") tahal zbytečné 404 na `country-at,cz.jpg`.**
   Pokračování regresního testování. Objevilo se při ověřování dřívější opravy obnovy hry
   (2026-08-31, `ccs`/`selectCountries`) — obnovil jsem sólo hru uloženou přes dvě konkrétní

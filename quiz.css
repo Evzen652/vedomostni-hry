@@ -547,20 +547,6 @@
     grid-template-areas: "top top" "box pic"; }
   .qz-play > .qz-top { grid-area: top; padding-left: 0; padding-right: 0; }
   .qz-play > .qz-box { grid-area: box; margin: 68px 0 0; }
-  /* width: 100% je nutné — při align-items: stretch je výška definitivní a aspect-ratio
-     by z ní jinak dopočítalo šířku (a rám by přetekl ven z panelu). Takhle drží poměr
-     jen jako minimální výšku řádku a šířku bere ze sloupce.
-
-     4:3 je KOMPROMIS MEZI DVĚMA GENERACEMI OBRÁZKŮ (2026-09-01). Rám byl 4:5 (vysoký,
-     na přání 2026-08-14), ale ilustrace se generovaly 16:9 — s `cover` se ořezávalo
-     54 % šířky. Generátor je od dneška na 4:5, jenže hotovo je teprve 30 % fondu
-     (1 141 z 3 742), takže rám musí slušet obojímu. Při `contain` a šířce 464 px:
-       16:9 (staré) → pruh 44 px nahoře i dole
-       4:5 (nové)   → pruh 47 px po stranách
-     Oba pruhy nese `.qz-picbg`, tedy rozmazaná kopie téhož obrázku, takže nejsou
-     rušivé ani u jedné generace. AŽ BUDE VĚTŠINA FONDU 4:5, vrať sem `4 / 5`.
-
-     Poměr rámu se na desktopu vůbec neurčuje — viz `align-self: stretch` níž. */
   /* OBA OBDÉLNÍKY LÍCUJÍ ZVRCHU I ZESPODU, protože je táhne týž řádek mřížky
      (`align-items: stretch`). Rám proto nemá `aspect-ratio` ani pevnou výšku a bere
      si ji z řádku — tedy z toho vyššího z dvojice, v praxi z textové karty.
@@ -596,6 +582,19 @@
   .qz-play .qz-ans { grid-template-columns: 1fr; gap: 12px; }
   .qz-play .qz-ans .qz-a { text-align: left; justify-content: flex-start; padding: 9px 8px 9px 32px;
     min-height: 52px; }
+  /* Karta po odpovědi sevřená ještě víc, ať je frame (co ji lícuje) blíž skutečné výšce
+     obrázku — méně rozmazaného pruhu kolem, aniž by se muselo zase sahat na rám (ten
+     drží align-self: stretch, viz výš). Nejde o kosmetiku bez čísla: na 90 vzorcích
+     karta u odpovědi měřila medián 350 px, ale tenhle blok samotný o něm nerozhoduje
+     z poloviny — tu drží délka hlášky a vysvětlení (obsah appky, ne CSS). Odsazení tu
+     jde stlačit na dotykové minimum a níž ne. (2026-09-01) */
+  .qz-play .qz-box { gap: 8px; }
+  .qz-play .qz-result .half { padding: 8px 14px; }
+  .qz-play .qz-quipbox { margin-top: 6px; }
+  .qz-play .qz-ht { line-height: 1.32; }
+  .qz-play .qz-frow { gap: 8px; }
+  .qz-play .qz-expl { margin-top: 6px; }
+  .qz-play .qz-fbtns > button { padding: 8px 14px; }
 }
 
 /* POZN. k pokusu, který se NEOSVĚDČIL: mezitím tu bylo pravidlo, že od 1400 px dostane
