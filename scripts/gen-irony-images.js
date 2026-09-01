@@ -36,11 +36,10 @@ const MODEL = "gemini-2.5-flash-image";
 const URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 const REFERENCE = "assets/country-ch.jpg";   // vzor rukopisu, ne obsahu
 const OUT_DIR = "img";
-// Šířka klesla 1200 → 1000 spolu s přechodem na poměr 4:5 (2026-09-01). Při 1200 by
-// obrázek na výšku měl 1200×1500, tedy 2,2× víc pixelů než dosavadní 1200×686 — přes
-// zbývajících 2 601 kusů by to bylo skoro +1 GB v repu (dnes má img/ 184 MB).
-// 1000×1250 vychází na ~265 kB a pořád pokrývá retinu: rám u odpovědi má na desktopu
-// ~371 CSS px, na mobilu ~343, takže i při DPR 2,7 je z čeho brát.
+// Šířka 1000 (dřív 1200) spolu s přechodem na poměr 5:4 (2026-09-01). Rám u odpovědi
+// má na desktopu 464 CSS px, takže 1000 px pokryje i retinu s rezervou; 1200×960 by
+// mělo 1,7× víc pixelů než dosavadní 1200×686 a přes zbývajících 2 574 kusů by to
+// bylo stovky MB v repu navíc (dnes má img/ 184 MB). 1000×800 vychází na ~230 kB.
 const SIRKA = 1000, KVALITA = 84;            // dřív 1200 / ~176 kB při 16:9
 
 // Styl se drží TADY, ne v datech — ať jde doladit na jednom místě pro celý fond.
@@ -135,13 +134,14 @@ function apiKlic() {
 
   const o = args();
   const outDir = o.ui ? "assets" : OUT_DIR;
-  // Ilustrace k otázkám jsou od 2026-09-01 NA VÝŠKU (4:5), ne 16:9. Rám u odpovědi je
-  // vysoký (přání 2026-08-14) a se širokým obrázkem se v něm ořezávalo 54 % šířky —
-  // u hasičského bálu zmizela celá třetí postava. Klient teď používá `object-fit: contain`,
-  // takže se nic neztrácí ani u starých 16:9, ale 4:5 rám vyplní bez prázdných pruhů.
-  // Přegenerovávat hotových 1 141 obrázků se nevyplatí; fond se srovná sám, jak budou
-  // přibývat nové (chybí jich 2 601, tedy většina).
-  const pomer  = o.ui ? "1:1" : "4:5";
+  // POMĚR MUSÍ SEDĚT S RÁMEM V quiz.css, jinak si problém jen otočíš. Rám u odpovědi
+  // je na desktopu `aspect-ratio: 5 / 4` (464×371 px), takže 5:4 ho vyplní přesně.
+  // Past, na kterou jsem 2026-09-01 sám naletěl: ráno byl rám vysoký, tak sem šlo 4:5;
+  // odpoledne se rám kvůli srovnání sloupců otočil na 5:4 a generátor zůstal na 4:5 —
+  // budoucí obrázky by tedy měly pruhy PO STRANÁCH místo nahoře a dole. Když se hýbe
+  // s rámem, hýbe se i tady.
+  // Starých 1 091 obrázků je 16:9; pruh u nich zakrývá `.qz-picbg` (rozmazaná kopie).
+  const pomer  = o.ui ? "1:1" : "5:4";
   const sirka  = o.ui ? 512 : SIRKA;
   fs.mkdirSync(outDir, { recursive: true });
   let fronta = o.ui ? dlazdice() : otazky();

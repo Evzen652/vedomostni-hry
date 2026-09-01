@@ -147,6 +147,22 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **Přesná rovnost na KAŽDÉ otázce neexistuje** a nemá se honit: otázka má jeden až tři
     řádky. 5:4 je nastaveno tak, aby jednořádkovou otázku karta nepřerostla vůbec a u dvou
     řádků přesáhla o ~8 px.
+  - **ŠEV ZMĚKČEN maskou; a `object-fit: contain` kvůli tomu muselo pryč.** Pruh barvou
+    seděl, ale hrana mezi ostrým obrázkem a rozmazaným podkladem byla vidět jako linka.
+    Maska na `.qz-pic` ale s `object-fit` NEFUNGUJE: element má pořád velikost celého
+    rámu a obrázek je jen vykreslený dovnitř, takže by změkčovala okraje prázdna. Rám
+    je proto nově `display: flex` (centruje) a obrázek `max-width/max-height: 100%`,
+    čímž se element velikostí kryje s obrázkem a maska sedí na jeho hraně. 10 px.
+  - **GENERÁTOR PŘEPNUT 4:5 → 5:4 a je to past, kterou jsem si vyrobil sám.** Ráno byl
+    rám vysoký, tak šel generátor na 4:5; odpoledne se rám kvůli srovnání sloupců otočil
+    na 5:4 a generátor zůstal — všech 2 574 budoucích obrázků by mělo pruhy PO STRANÁCH
+    místo nahoře a dole. **Když se hýbe s rámem, musí se hýbat i generátor.**
+  - **Přemalovat okraje starých obrázků skriptem NEMÁ SMYSL — a je to spočítané.** Lokální
+    dopočet (zrcadlení, roztažení kraje, rozmazání) nevymyslí obsah; dá přesně to, co dnes
+    dělá `.qz-picbg`, jen natvrdo v souboru a nevratně. Generativní domalování přes Gemini
+    stojí **stejně jako přegenerování celého obrázku** (~$0,034/kus v batchi), takže za
+    1 091 starých 16:9 kusů je to ~$37 tak či tak — a přegenerování dá pořádnou kompozici
+    v 5:4, ne dolepené okraje. Až bude kredit: `node scripts/gen-irony-images.js --force`.
   - **Práh rozšíření hrací plochy 1300 → 1150 px.** Mezi 900 a 1300 měla plocha jen 980 px,
     takže na obrázek zbýval sloupec 376 px a rám vyšel 302 px proti kartě 325–534 px —
     přesně ten nesoulad, který se řešil. Níž než 1150 se jít nedá, tam už by šířka okna
