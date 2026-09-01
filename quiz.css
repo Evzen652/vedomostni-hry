@@ -611,34 +611,22 @@
    Poměr 3:2 platí proto na všech šířkách; obrázek zvětšila už samotná změna rámu
    na 16:9, protože zmizely prázdné pruhy. (2026-09-01) */
 
-/* Hrací obrazovka na širokém monitoru (2026-09-01) --------------------------
-   Ve sloupci 980 px zbývalo na monitoru 1920 přes 400 px prázdna po každé straně.
-   Strop je 1460, ne „co nejvíc", a obojí je změřené, ne odhadnuté:
+/* HRACÍ OBRAZOVKA SE NA ŠIROKÉM MONITORU NEROZŠIŘUJE. Zůstává ve sloupci 980 px
+   jako všechno ostatní kromě výběrových obrazovek. (2026-09-01)
 
-   1. DÉLKA ŘÁDKU. Při 980 px má otázka ~65 znaků na řádek, což je pásmo nejlepší
-      čitelnosti; při 1720 px přes 120 znaků a oko hůř trefí začátek dalšího řádku.
-      U kvízu, kde se čte pod časovým limitem, to není kosmetika. 1460 dá ~90 znaků.
-   2. OSTROST FOTEK. `img/{id}.jpg` je široká 1200 px. Ve sloupci 1460 vychází na
-      rám ~700 px, což retina displej (DPR 2 → potřebuje 1400) ještě unese. Při
-      1720 px by rám měl ~840 px a fotka by na hustém displeji viditelně změkla.
+   ZAMÍTNUTO A NEZKOUŠEJ ZNOVU: tentýž den to tu bylo postupně na 1460 a pak na
+   1200 px. Vypadalo to na širokém monitoru zaplněněji, ale hráč to shrnul jasně —
+   „rozhodnutí dát to na celou šířku obrazovky nebyl dobrý nápad". Důvod je věcný:
+   při 1200 px má rám 464 px a při 1460 dokonce ~570, jenže ilustrace jsou široké
+   1000 px (nové) a 1200 px (staré), takže se na retině (DPR 2 potřebuje dvojnásobek)
+   začaly roztahovat nad svoje rozlišení. Zvětšený rám navíc nutil zvětšovat i textovou
+   kartu, aby sloupce vypadaly souměrně, a celá obrazovka se rozjela do stran.
 
-   Formuláře (.qz-setup), výsledky (.qz-end) ani online (.zk-wrap) se nerozšiřují —
-   ty mají vlastní, užší stropy z dobrých důvodů.
+   Ve sloupci 980 px má otázka ~65 znaků na řádek, což je pásmo nejlepší čitelnosti —
+   a u kvízu, kde se čte pod časovým limitem, to není kosmetika.
 
-   Strop 1460 → 1200 (2026-09-01, po zvětšení ilustrace): jakmile obrázek dostal půlku
-   plátna, byly obě karty tak široké, že se kompozice rozjížděla do stran a pod nimi
-   zbývalo prázdno. 1200 je sevřenější: text má ~600 px (kolem 75 znaků na řádek, tedy
-   pořád v pásmu dobré čitelnosti) a rám ~570 px, což je i blíž skutečné šířce obrázků
-   (1000 px u nových, 1200 u starých) — snímek se tedy nezvětšuje nad svoje rozlišení. */
-/* Práh 1150, ne 1300 jako u výběrových obrazovek. Mezi 900 a 1300 px měla hrací plocha
-   jen 980 px, takže na obrázek zbýval sloupec 376 px a rám při poměru 5:4 vyšel 302 px
-   proti kartě 325–534 px — přesně ten nesoulad, který se tady řeší. Od 1150 dostane
-   plocha 1200 px (na užším okně jeho 100 %) a sloupce se srovnají. Níž už ne: pod
-   1150 px by šířka okna nestačila a text by se lámal hůř, než kolik by rovnost sloupců
-   vynesla. (2026-09-01) */
-@media (min-width: 1150px) {
-  #qz-body:has(.qz-play) { width: min(1200px, 100%); }
-}
+   Výběrové obrazovky (.qz-pick) se rozšiřují dál a je to v pořádku: tam jde o počet
+   dlaždic na řádek, ne o čtení textu ani o rozlišení jedné ilustrace. */
 
 /* ---- přístupnost ----
    Viditelný fokus: bez něj hráč na klávesnici (a projektor ve třídě) neví, kde stojí.

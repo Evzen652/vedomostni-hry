@@ -163,11 +163,21 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     stojí **stejně jako přegenerování celého obrázku** (~$0,034/kus v batchi), takže za
     1 091 starých 16:9 kusů je to ~$37 tak či tak — a přegenerování dá pořádnou kompozici
     v 5:4, ne dolepené okraje. Až bude kredit: `node scripts/gen-irony-images.js --force`.
-  - **Práh rozšíření hrací plochy 1300 → 1150 px.** Mezi 900 a 1300 měla plocha jen 980 px,
-    takže na obrázek zbýval sloupec 376 px a rám vyšel 302 px proti kartě 325–534 px —
-    přesně ten nesoulad, který se řešil. Níž než 1150 se jít nedá, tam už by šířka okna
-    nestačila a text by se lámal hůř, než kolik by rovnost sloupců vynesla.
-  - Ověřeno v prohlížeči na 375, 768, 1100, 1200 a 1920 px; `test:offline` 568 kontrol.
+  - **ROZŠIŘOVÁNÍ HRACÍ PLOCHY ZAMÍTNUTO A VRÁCENO ZPĚT — nezkoušej to znovu.** Během
+    dne tu bylo postupně 1460 px a pak 1200 px (práh nejdřív 1300, pak 1150). Hráč to
+    ukončil jednou větou: *„rozhodnutí dát to na celou šířku obrazovky nebyl dobrý
+    nápad"*. Důvod není jen vkus: při 1200 má rám 464 px a při 1460 skoro 570, jenže
+    ilustrace jsou široké 1000 px (nové) a 1200 px (staré) — na retině (DPR 2 chce
+    dvojnásobek) se tedy roztahovaly nad svoje rozlišení. A protože rám musí mít
+    partnera stejné výšky, tlačilo to zvětšovat i textovou kartu. **Hrací obrazovka
+    zůstává v 980 px**, kde má otázka ~65 znaků na řádek. Výběrové obrazovky
+    (`.qz-pick`) se rozšiřují dál a to je v pořádku — tam jde o počet dlaždic na řádek,
+    ne o čtení textu ani o rozlišení jedné ilustrace.
+  - **Čísla platná po návratu na 980 px:** sloupce 556 / 376, rám 5:4 = 302 px, obrázek
+    16:9 v něm 370×212 (celý, nic se neořezává). Karta u odpovědi 302–374 px, tedy
+    v nejlepším případě přesně tolik co rám. Rovnost sloupců je tu volnější než při
+    1200 px — to je cena za užší plochu a hráč ji zvolil vědomě.
+  - Ověřeno v prohlížeči na 375, 768, 1100 a 1920 px; `test:offline` 568 kontrol.
 
 - **2026-09-01 — Ilustrace u otázky se už NEOŘEZÁVÁ; generátor jede na výšku (4:5).**
   > **Rám už není 1:1 ani 16:9, ale `5 / 4`** — viz zápis nad tímhle. Zbytek platí.
@@ -294,9 +304,8 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **výběr zemí** (56 dlaždic): až 7 sloupců, tam chceme co nejvíc;
   - **kontinenty (8) a témata (10)**: stejný počet sloupců, jen větší dlaždice — 7+1 nebo
     6+2 vypadá jako chyba sazby, ne jako nabídka;
-  - **hra: strop 1460 px, ne víc.** Při 1720 by měla otázka přes 120 znaků na řádek (čte se
-    hůř, a čte se pod časovým limitem) a fotky jsou široké 1200 px, takže by na ~840px rámu
-    na retině změkly. 1460 dá ~90 znaků a rám ~700 px;
+  - ~~**hra: strop 1460 px**~~ — **VRÁCENO ZPĚT NA 980 px** (2026-09-01, viz zápis nahoře).
+    Hrací obrazovka se nerozšiřuje vůbec; rozšiřují se jen výběrové;
   - **formuláře, výsledky a online se nerozšiřují vůbec.**
   - Vše je v `@media (min-width: 1300px)`, takže na telefon ani tablet to nedosáhne —
     ověřeno měřením na 375, 768, 966, 1366, 1600 a 1920 px, nikde nic nepřetéká.
