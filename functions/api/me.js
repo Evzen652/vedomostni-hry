@@ -1,10 +1,17 @@
 import { json, fail } from '../_lib/game.js';
 import { currentUser } from '../_lib/auth.js';
+import { expireStaleGames } from '../_lib/settle.js';
 
 /** GET /api/me — profil, ratingy za pásma, posledních 20 her. */
 export async function onRequestGet({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
+
+  // Úklid nedohraných her se veze tady, protože Pages Functions neumí cron a tenhle
+  // endpoint klient volá při každém vstupu do lobby. Bez toho by hra, kterou soupeř
+  // opustil, visela v `open` navždy — a rovnou pod tím se vypisuje historie, kde by
+  // ji hráč viděl jako věčně nedohranou.
+  await expireStaleGames(env);
 
   const ratings = await env.DB
     .prepare('SELECT band, rating, rd, games, wins, draws, losses FROM ratings WHERE user_id = ?')

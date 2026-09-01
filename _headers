@@ -1,0 +1,26 @@
+# Bezpečnostní hlavičky pro Cloudflare Pages. Soubor musí být v kořeni NASAZENÉ složky,
+# takže ho scripts/build-public.js kopíruje do dist/ — bez toho se neuplatní.
+#
+# Proč to tu do 2026-09-01 nebylo a proč to vadí: appka překresluje celé obrazovky přes
+# `innerHTML` na desítkách míst. Escapování je disciplinované, ale jediný přehlédnutý
+# `esc()` by bez CSP znamenal spuštěný cizí skript a s ním přístup k přihlašovacímu
+# tokenu v localStorage. CSP je druhá obranná linie, ne náhrada za escapování.
+
+/*
+  # `unsafe-inline` pro skripty tu být MUSÍ: hra má inline `onerror` handlery u obrázků
+  # (fallback na emoji) a inline `style`. Odstranit je jde, ale je to refaktor napříč
+  # quiz.js i online.js — dokud se neudělá, drží aspoň `connect-src 'self'`, které
+  # zastaví odeslání ukradeného tokenu jinam.
+  #
+  # cdn.jsdelivr.net je povolený jen kvůli Three.js — jediné externí věci, kterou appka
+  # načítá. Má `integrity` v hra.html, takže podstrčený soubor prohlížeč neprovede.
+  # Kdyby se knihovna jednou stáhla do repa (konvence „vše je součástí repa"), tenhle
+  # zdroj odsud zmizí a CSP bude čistě 'self'.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  # Appka nemá co být v cizím rámu — bez tohohle ji jde vložit do stránky, která kolem
+  # ní postaví vlastní kulisu a sbírá, co do ní hráč píše.
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  # Odkaz na obnovu PINu chodí jako `/hra?obnova=TOKEN`. Bez tohohle by ho prohlížeč
+  # poslal v `Referer` každému externímu zdroji na stránce.
+  Referrer-Policy: same-origin

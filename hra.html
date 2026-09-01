@@ -20,7 +20,18 @@
       <div id="qz-body" style="display:flex;flex-direction:column;flex:1"></div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
+  <!-- Jediná externí věc, kterou appka za běhu načítá. `integrity` je proto povinné:
+       bez něj by kompromitované CDN (nebo MITM) podstrčilo skript se stejnými právy
+       jako online.js, tedy i s přístupem k přihlašovacímu tokenu v localStorage.
+       Otisk je spočítaný ze skutečně staženého souboru (three.js r137, MIT), ne opsaný.
+       Když se hash nesejde, prohlížeč skript neprovede a glóbus se prostě nevykreslí —
+       quiz.js s tím počítá (`typeof THREE === "undefined"`), takže hra běží dál.
+       Pozn.: pořád to odporuje konvenci „vše je součástí repa" (kvůli ní se 2026-07-27
+       stahovala do assets/ i textura glóbu). Stažení knihovny do repa by tu závislost
+       odstranilo úplně; zatím je to aspoň ověřené. (2026-09-01) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"
+          integrity="sha384-WgG62qhSmnkOoW866eO1eLJd4HfFyZ2f8XnAK/VJR9mv/JffD14EgnvgpNEw3MmF"
+          crossorigin="anonymous"></script>
   <!-- Online režim je nepovinný: když se nenačte nebo neběží server, quiz.js
        čtvrtou dlaždici prostě nevykreslí a offline hra funguje dál. -->
   <script src="online.js"></script>

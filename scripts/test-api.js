@@ -343,6 +343,20 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(!(await api('/api/friends', { token: B.token })).body.friends.some(f => f.nick === nickA),
      'zmizelo i v seznamu druhé strany');
 
+  // Odveta NESMÍ soupeři odepsat otázky, které nikdy neuvidí. Do 2026-09-01 mu
+  // markSeen běžel rovnou při založení a bez limitu na počet odvet, takže mu šlo
+  // ve smyčce vyprázdnit fond, dokud mu každá další hra nespadla na 503.
+  const seenPredOdvetou = (await api('/api/me', { token: B.token })).body.seen_questions;
+  const zkusebniOdveta = await api(`/api/game/${duel.body.id}/rematch`, { method: 'POST', token: A.token });
+  ok(zkusebniOdveta.status === 201, 'odveta se založí (kontrola markSeen)');
+  const seenPoOdvete = (await api('/api/me', { token: B.token })).body.seen_questions;
+  ok(seenPoOdvete === seenPredOdvetou,
+     'soupeři odveta neubrala otázky z fondu (' + seenPredOdvetou + ' → ' + seenPoOdvete + ')');
+  // Až když si otázku vyžádá, počítá se mu za viděnou.
+  await api(`/api/game/${zkusebniOdveta.body.id}/q/0`, { token: B.token });
+  ok((await api('/api/me', { token: B.token })).body.seen_questions === seenPredOdvetou + 1,
+     'ale po vyžádání otázky ano');
+
   const rematch = await api(`/api/game/${duel.body.id}/rematch`, { method: 'POST', token: A.token });
   ok(rematch.status === 201, 'odveta se založí', JSON.stringify(rematch.body));
   const rq = await api(`/api/game/${rematch.body.id}/q/0`, { token: B.token });

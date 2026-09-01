@@ -1,5 +1,50 @@
 import { glicko2 } from './glicko.js';
 
+/** Po jaké době se nedohraná hra uzavře sama. */
+const EXPIRE_MS = 48 * 60 * 60 * 1000;
+/** Kolik her uklidit najednou — ať jeden požadavek nezaplatí za celou historii. */
+const EXPIRE_BATCH = 20;
+
+/**
+ * Uklidí hry, které nikdo nedohrál.
+ *
+ * Proč to musí být takhle: `settleIfDone` čeká, až mají VŠICHNI `finished_at`. Kdo
+ * prohrával a zavřel prohlížeč, nechal hru v `open` NAVŽDY — soupeř nedostal výsledek,
+ * nemohl dát odvetu (`rematch.js` chce `status='done'`) a rating se nikdy nezapsal.
+ * Byl to zároveň nejlevnější způsob, jak si nikdy nepokazit rating.
+ *
+ * Cron tu nepomůže: Pages Functions `[triggers]` neumí (chtělo by to samostatný
+ * Worker navíc, viz rozhodnutí 2026-08-24 o dotazování místo WebSocketu). Úklid se
+ * proto veze na běžném provozu — volá se odtamtud, kam hráč stejně chodí.
+ *
+ * Nedohraným hráčům se dopíše `finished_at` a hra se vyrovná normálně, tedy podle
+ * bodů. Kdo odešel po třetí otázce, má jich míň a prohraje — ale je to důsledek
+ * skóre, ne trestu za odchod. Kontumaci schválně NEZAVÁDÍM: je to herní rozhodnutí,
+ * ne oprava chyby, a u appky pro děti by trestala i spadlé připojení.
+ */
+export async function expireStaleGames(env) {
+  const hranice = Date.now() - EXPIRE_MS;
+  const stare = (await env.DB.prepare(
+    `SELECT id FROM games WHERE status = 'open' AND created_at < ? LIMIT ?`)
+    .bind(hranice, EXPIRE_BATCH).all()).results;
+  if (!stare.length) return 0;
+
+  const ted = Date.now();
+  for (const { id } of stare) {
+    await env.DB.prepare(
+      `UPDATE game_players SET finished_at = ? WHERE game_id = ? AND finished_at IS NULL`)
+      .bind(ted, id).run();
+    const vysledek = await settleIfDone(env, id);
+    // `null` znamená, že hra nemá dost hráčů (založený odkaz, ke kterému nikdo nepřišel).
+    // Vyrovnávat není co, ale viset už taky nemá — zavřeme ji natvrdo.
+    if (!vysledek) {
+      await env.DB.prepare("UPDATE games SET status = 'done' WHERE id = ? AND status = 'open'")
+        .bind(id).run();
+    }
+  }
+  return stare.length;
+}
+
 /**
  * Uzavře hru, jakmile dohráli všichni účastníci, a promítne výsledek do ratingu.
  *

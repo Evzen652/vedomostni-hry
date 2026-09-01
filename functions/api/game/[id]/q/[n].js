@@ -1,5 +1,6 @@
 import { optionsFor, json, fail } from '../../../../_lib/game.js';
 import { currentUser } from '../../../../_lib/auth.js';
+import { markSeen } from '../../../../_lib/pool.js';
 
 /**
  * GET /api/game/:id/q/:n — n-tá otázka.
@@ -29,6 +30,12 @@ export async function onRequestGet({ params, request, env }) {
     .prepare('SELECT id, question, answer, distractors, country, section FROM questions WHERE id = ?')
     .bind(ids[n]).first();
   if (!q) return fail('otázka nenalezena', 404);
+
+  // Otázka se počítá za viděnou TEĎ, když si ji hráč vyžádal — ne dopředu při
+  // založení hry. Odveta to dřív dělala za soupeře, který ji nikdy neuviděl, a šlo
+  // mu tím vyprázdnit fond (viz rematch.js). `INSERT OR IGNORE`, takže opakované
+  // načtení téže otázky nic nestojí.
+  await markSeen(env, me.id, [q.id]);
 
   return json({
     n,

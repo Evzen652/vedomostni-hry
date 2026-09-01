@@ -87,6 +87,40 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     jinak by příští session věřila, že souběh je pokrytý. Záruku dává tvar zápisu
     a databázový index, ne zelený test.
 
+- **2026-09-01 — Expirace her, odveta neubírá otázky, a appka má konečně `_headers` s CSP.**
+  Doběhnutí bodů 2–4 z auditu.
+  - **Nedohraná hra se po 48 h uzavře sama** (`expireStaleGames` v [settle.js](functions/_lib/settle.js)).
+    Kdo prohrával a zavřel prohlížeč, nechal hru v `open` NAVŽDY: soupeř nedostal
+    výsledek, nemohl dát odvetu (`rematch.js` chce `status='done'`) a rating se nezapsal.
+    **Cron tu nepomůže — Pages Functions `[triggers]` neumí**, takže se úklid veze na
+    `/api/me`, kam klient chodí při každém vstupu do lobby. Dávka je omezená na 20 her
+    za volání, ať jeden požadavek nezaplatí za celou historii; ověřeno na 200 hrách
+    posunutých o tři dny zpět — 200 → 180 → … → 0.
+    **Kontumace se ZÁMĚRNĚ nezavádí**: nedohraným se dopíše `finished_at` a hra se
+    vyrovná normálně podle bodů. Kdo odešel po třetí otázce, prohraje kvůli skóre, ne
+    kvůli trestu. Trestat odchod je herní rozhodnutí, ne oprava chyby, a u appky pro
+    děti by to postihlo i spadlé připojení.
+  - **Odveta přestala soupeři ubírat otázky.** `rematch.js` mu volal `markSeen` rovnou
+    při založení — tedy dřív, než odvetu uviděl, a bez limitu na počet odvet. Šlo mu
+    tak ve smyčce vyprázdnit fond, dokud mu každá další hra nespadla na 503. Nově se
+    otázka započítá, až si ji hráč vyžádá ([q/[n].js](functions/api/game/[id]/q/[n].js));
+    `markSeen` je `INSERT OR IGNORE`, takže opakované načtení nic nestojí.
+    **Tohle mutací ověřit šlo** (na rozdíl od souběhů): po vrácení `markSeen` soupeři
+    test spadl s „15 → 25".
+  - **[_headers](_headers) s CSP, `X-Frame-Options: DENY`, `nosniff` a `Referrer-Policy`.**
+    Appka překresluje přes `innerHTML` na desítkách míst a neměla žádnou druhou obrannou
+    linii. **`_headers` MUSÍ být v kořeni NASAZENÉ složky**, takže ho `build-public.js`
+    kopíruje do `dist/` — jinak se neuplatní vůbec. `'unsafe-inline'` u skriptů zatím
+    zůstává (hra má inline `onerror` fallbacky na emoji), ale `connect-src 'self'`
+    zastaví odeslání ukradeného tokenu jinam.
+  - **Three.js z CDN má `integrity`.** Otisk je **spočítaný ze staženého souboru**
+    (`sha384-WgG62q…`, three.js r137, MIT), ne opsaný odjinud. Když se hash nesejde,
+    prohlížeč skript neprovede a glóbus se nevykreslí — `quiz.js` s tím počítá
+    (`typeof THREE === "undefined"`), takže hra běží dál. **Pořád to odporuje konvenci
+    „vše je součástí repa"** (kvůli ní se 2026-07-27 stahovala do `assets/` i textura
+    glóbu); stažení knihovny do repa by závislost odstranilo úplně, zatím je aspoň
+    ověřená. Ověřeno v prohlížeči: `THREE.REVISION === "137"`, žádné porušení CSP.
+
 - **2026-09-01 — OTEVŘENÉ nálezy z auditu. Nic z toho není opravené, čti před další prací na online.**
   - **Časová složka online hry NEEXISTUJE na serveru.** `ms` posílá klient, `answer.js` ověří
     jen `Number.isInteger` a `ms >= 0`, a v `schema.sql` není nic jako `served_at` — server si

@@ -15,7 +15,9 @@ const KOREN = process.cwd();
 const OUT = path.join(KOREN, "dist");
 
 // Co jde ven. Cokoli tu není, se na web nedostane.
-const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js"];
+// `_headers` MUSÍ být v kořeni nasazené složky, jinak si ho Pages nevšimnou a appka
+// zůstane bez CSP — pravidla v něm se nikde jinde neuplatní. (2026-09-01)
+const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers"];
 const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
 const JEDNOTLIVE = ["data/fondy.json"];
 

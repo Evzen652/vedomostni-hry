@@ -45,8 +45,12 @@ export async function onRequestPost({ params, request, env }) {
     env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 1)')
       .bind(id, other.user_id),
   ]);
+  // Soupeři se otázky NEODEPISUJÍ tady. Do 2026-09-01 se mu volalo markSeen rovnou
+  // při založení odvety — tedy dřív, než ji vůbec uviděl, a bez jakéhokoli limitu
+  // na počet odvet. Kdo si se mnou jednou zahrál, mohl mi ve smyčce vyprázdnit celý
+  // fond, dokud mi každá další hra nespadla na „došly otázky, které jste neviděli".
+  // Otázka se soupeři započítá, až si ji doopravdy vyžádá (q/[n].js).
   await markSeen(env, me.id, ids);
-  await markSeen(env, other.user_id, ids);
 
   // Bot musí odehrát rovnou, jinak by odveta zůstala viset a čekala na soupeře,
   // který se sám nikdy neozve.
