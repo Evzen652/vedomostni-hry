@@ -1,4 +1,28 @@
 {
+  "_verdikt": "Bublina hostitele po odpovědi. Je to KRÁTKÝ VERDIKT, ne vtip — ten už nese hláška v kartě (quip_correct/quip_wrong), a dva vtipy nad sebou se navzájem shodí. Držet do pěti slov a BEZ minulého času v rodě (žádné „uhodl jsi“ — hrají i holky).",
+  "verdict_correct": [
+    "Správně!", "Přesně tak!", "Sedí!", "Trefa!", "Máš to!",
+    "To je ono!", "Bez zaváhání!", "Přesná trefa!", "Výborně!", "Jasně!",
+    "Sedlo to!", "Bod pro tebe!", "Tak je to.", "Paráda!", "Skvěle!",
+    "Ano, přesně.", "Správná volba!", "Klobouk dolů!", "Šlo to samo, co?",
+    "Vidíš, jde to.", "Naprosto správně!", "Bez chybičky!", "To je přesné.",
+    "Přesně na komoru!"
+  ],
+  "verdict_wrong": [
+    "Tentokrát vedle.", "Skoro.", "Tudy cesta nevede.", "Bohužel ne.", "Ouha.",
+    "To nevyšlo.", "Vedle jak ta jedle.", "Ne tak docela.", "Chyba lávky.",
+    "Přihořívá — ale ne.", "Kdepak.", "Past sklapla.", "Lákavé, viď?",
+    "Škoda, byla blízko.", "Zkusíme další.", "Tentokrát smůla.", "Ne, ale chápu.",
+    "Ještě ne.", "Trochu vedle.", "To si zapamatuj.", "Za pokus to stálo.",
+    "Nic se neděje.", "Byla to past.", "Mimo.", "Hm, ne.", "Příště.",
+    "Vedle, ale se ctí.", "Ta byla zákeřná.", "Tahle si počkala.",
+    "Nedalo se nic dělat.", "Ta má háček.", "Zrádná otázka.", "Nevadí."
+  ],
+  "verdict_gold": [
+    "Zlatá odpověď!", "Zlato!", "Zlatá trefa!", "Rychle a přesně!",
+    "To byla klasa!", "Zlatý bod!", "Bleskově!", "Perfektní!", "Zlatá!",
+    "Tohle byla rychlovka!"
+  ],
   "timeout": [
     "Čas! Zeměkoule se otočila rychleji než ty.",
     "Tik tak, tik tak… a je to fuč. Ale aspoň sis to pořádně rozmyslel.",

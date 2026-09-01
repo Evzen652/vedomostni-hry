@@ -185,8 +185,11 @@
 /* citace po odpovědi: vědomě bez rámečku/stínu (starý .qz-hlaska box na kartě po odpovědi
    působil rozbitě — moc oddělených boxů). Jen seskupuje qz-ht + qz-hl.points, aby jim
    fungovalo vzájemné odsazení bez kolize s .qz-box gapem. Timeout/vyhlášení dál používají
-   původní .qz-hlaska box beze změny. */
-.qz-quipbox { }
+   původní .qz-hlaska box beze změny.
+
+   Odsazení nahoru je NAVÍC k `gap: 12px` z .qz-box: hláška i vysvětlení se na kartě
+   po odpovědi lepily na box s výsledkem a četly se jako jeden blok. (2026-09-01) */
+.qz-quipbox { margin-top: 10px; }
 
 /* výsledek odpovědi: JEDEN box napůl zelený/červený, ne dva boxy vedle sebe — a bez stínu.
    .solo (odpověděl(a) správně) skryje polovinu s tipem, radius drží .qz-result přes overflow:hidden. */
@@ -200,8 +203,13 @@
 
 /* Text a tlačítka pod sebou, ne vedle sebe — v užší kartě (poměr 3:2 s obrázkem)
    by se vysvětlení vedle tlačítek mačkalo do úzkého, zalamovaného sloupce. */
-.qz-frow { display: flex; flex-direction: column; gap: 12px; }
-.qz-expl { font-size: 12.5px; color: var(--muted); }
+/* `flex: 1` + `margin-top: auto` u tlačítek drží akci u SPODNÍ hrany karty. Na širokém
+   displeji je .qz-box roztažený na výšku obrázku (align-items: stretch), takže tlačítko
+   dřív viselo hned pod textem a pod ním zůstal prázdný pruh. Na mobilu je výška karty
+   daná obsahem, takže tam `auto` nemá co rozdělit a nic se nemění. (2026-09-01) */
+.qz-frow { display: flex; flex-direction: column; gap: 12px; flex: 1 1 auto; }
+.qz-fbtns { margin-top: auto; }
+.qz-expl { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
 .qz-expl a { color: var(--teal); text-decoration: none; font-weight: 600; }
 /* obě tlačítka stejně široká — flex: 1 1 0 je rozdělí napůl bez ohledu na délku textu */
 .qz-fbtns { display: flex; gap: 8px; align-items: stretch; width: 100%; }

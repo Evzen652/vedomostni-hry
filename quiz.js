@@ -1142,6 +1142,17 @@
     requestWake(); autosave(); startTimer(q);
   }
 
+  // Bublina hostitele po odpovědi. Do 2026-09-01 to byly TŘI pevné věty, takže „Tentokrát
+  // vedle." četl hráč u každé chybné odpovědi znovu a znovu. Fondy jsou v data/fondy.json
+  // (verdict_correct / verdict_wrong / verdict_gold); zůstávají KRÁTKÉ schválně — vtip nese
+  // hláška v kartě (quip_correct/quip_wrong) a dva vtipy nad sebou se navzájem shodí.
+  // Pevné věty tu zůstávají jako záloha: `loadData` při chybějícím fondy.json vrací {}.
+  const VERDIKT_ZALOHA = { correct: "Správně!", wrong: "Tentokrát vedle.", gold: "Zlatá odpověď!" };
+  function verdikt(druh){
+    const fond = data && data.fondy && data.fondy["verdict_" + druh];
+    return (Array.isArray(fond) && fond.length) ? pick(fond) : VERDIKT_ZALOHA[druh];
+  }
+
   // popisek tlačítka „Více o…" — 6. pád je v datech (pole `about`), česky se odvodit nedá
   function moreLabel(q){ return q.about ? `Více o ${q.about}` : "Více o tom"; }
   function frowHtml(q){
@@ -1174,7 +1185,7 @@
     // byly vidět až po kliku na „Další otázka", ne hned po odpovědi
     const pill=body.querySelector("#qz-scorepill"); if(pill) pill.innerHTML=scorePillHtml();
     // bublina hostitele = krátký verdikt; vtipná hláška žije v panelu HLÁŠKA (ať se netočí dvakrát)
-    say(gold ? "Zlatá odpověď!" : (correct ? "Správně!" : "Tentokrát vedle.")); if(S.voice) speakTTS(quipText);
+    say(verdikt(gold ? "gold" : correct ? "correct" : "wrong")); if(S.voice) speakTTS(quipText);
     revealPic();
     if(gold){ const gf=document.createElement("div"); gf.className="qz-goldflash"; document.getElementById("qz-shell").appendChild(gf); setTimeout(()=>gf.remove(),950); }
     const box=body.querySelector("#qz-box");
