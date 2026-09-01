@@ -20,6 +20,22 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-01 — Online souboj od 900 px plýtval třetinou šířky — nemá ilustraci a mřížka pro ni pořád rezervovala sloupec.**
+  Objeveno na žádost „zkontroluj to i online obrazovky". `online.js` si otázku kreslí
+  **vlastní** funkcí (`nextQuestion()`, ne `renderQuestion()` z `quiz.js`) a jen recykluje
+  CSS třídy `.qz-play`/`.qz-box` — nikdy nevolá `picframeHtml()`, takže `.qz-picframe`
+  v online souboji neexistuje vůbec. Dvousloupcová mřížka z `.qz-play` (od 2026-07-31)
+  ale pravý sloupec (2fr, pro rám) rezervuje bez ohledu na to, jestli tam něco je —
+  na 1024 px tak karta měla jen 556 px a skoro 300 px vedle zůstávalo prázdných.
+  **Stará vada, ne dnešní regrese** — mřížka existuje přes měsíc, jen jsem na ni narazil
+  až při dnešním systematickém průchodu šířek.
+  - **Oprava jedním pravidlem, bez zásahu do `online.js`:** `.qz-play:not(:has(.qz-picframe))
+    > .qz-box { grid-column: 1 / -1 }`. Když karta nemá souseda s ilustrací, dostane obě
+    sloupce mřížky. `:has()` je stejný vzorec jako jinde v souboru (`#qz-body:has(.qz-play)`
+    dřív) — v nepodporujícím prohlížeči se jen neuplatní, nic se nerozbije.
+  - Ověřeno na 1024 px: karta 556→**944 px** (neodhalený i odhalený stav), offline sólo
+    hra (rám existuje) beze změny — 556/376, lícuje jako předtím. `test:offline` 568.
+
 - **2026-09-01 — Telefon: obrázek nahoře, tlačítka „Více o…"/"Další otázka" pod sebe.
   Cestou i objevena a opravená mezera 768–899 px, kde appka měla pruh horší než tablet.**
   Hráč požádal o dvě věci na mobilu: obrázek (nebo glóbus) nahoře nad kartou, a stažení

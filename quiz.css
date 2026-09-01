@@ -586,6 +586,17 @@
     grid-template-areas: "top top" "box pic"; }
   .qz-play > .qz-top { grid-area: top; padding-left: 0; padding-right: 0; }
   .qz-play > .qz-box { grid-area: box; margin: 68px 0 0; }
+  /* ONLINE SOUBOJ NEMÁ ILUSTRACI VŮBEC — objeveno 2026-09-01 při kontrole „i online
+     obrazovky". `online.js` si otázku kreslí VLASTNÍ funkcí (`nextQuestion()`, ne
+     `renderQuestion()` z quiz.js) a recykluje jen CSS třídy `.qz-play`/`.qz-box`, nikdy
+     nevolá `picframeHtml()`. Pravý sloupec mřížky (2fr, rezervovaný pro `.qz-picframe`)
+     tak zůstává od 900 px prázdný — na 1024 px je to skoro 300 px nevyužité plochy
+     vedle úzké karty. Stará vada (dvousloupcová mřížka je tu od 2026-07-31), ne dnešní
+     regrese, ale `:has()` ji umí opravit bez zásahu do online.js: když `.qz-play` nemá
+     potomka `.qz-picframe`, karta dostane obě sloupce mřížky.
+     `:has()` v nepodporujícím prohlížeči jen neuplatní a karta zůstane úzká — nerozbije
+     se nic, jen se neopraví (stejná záchranná síť jako jinde v souboru). */
+  .qz-play:not(:has(.qz-picframe)) > .qz-box { grid-column: 1 / -1; }
   /* OBA OBDÉLNÍKY LÍCUJÍ ZVRCHU I ZESPODU, protože je táhne týž řádek mřížky
      (`align-items: stretch`). Rám proto nemá `aspect-ratio` ani pevnou výšku a bere
      si ji z řádku — tedy z toho vyššího z dvojice, v praxi z textové karty.
