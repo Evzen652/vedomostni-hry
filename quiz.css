@@ -92,8 +92,17 @@
    a ve vysokém rámu 4:5 se ze 16:9 obrázku ztrácelo 54 % ŠÍŘKY: u hasičského bálu
    zůstala mimo záběr celá třetí postava. Ořez byl důsledek dvou nezávislých rozhodnutí,
    která se nikdy nepotkala — rám na výšku (2026-08-14) a generátor na šířku.
-   Prázdný pruh kolem obrázku nese pozadí rámu, takže to čte jako pasparta. */
-.qz-pic { width: 100%; height: 100%; object-fit: contain; display: block; }
+   Prázdný pruh kolem obrázku vyplní `.qz-picbg` — rozmazaná kopie TÉŽE ilustrace. */
+.qz-pic { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; display: block; }
+/* Podklad pruhu: rozmazaná kopie obrázku, ne pevná barva. Důvod je změřený — u dvanácti
+   namátkových ilustrací má okraj obvykle krém rgb(223,203,170), ale `cz-a-trabant-ekologie`
+   má rgb(69,95,89) a `cz-k-kromeriz-kvetna-zahrada` rgb(146,142,107): scény, které jdou
+   do krajů, nemají s papírem společného nic. Jedna pevná barva by u nich byla vidět víc
+   než dnešní pruh. Takhle pruh navazuje na obrázek vždycky, u 16:9 i u budoucích 4:5.
+   `inset: -8%` je nutné — bez přesahu by se na okrajích ukázalo, jak blur vytahuje
+   průhlednost zpoza hrany, a vznikl by světlý lem. */
+.qz-picbg { position: absolute; inset: -8%; width: 116%; height: 116%; object-fit: cover;
+  filter: blur(24px) saturate(1.15); transform: scale(1.06); z-index: 0; display: block; }
 /* Fotka je bez popisku schválně — zemi i téma říká řádek .qz-meta nad otázkou. */
 /* fallback, dokud otázka nemá fotku: razítko země místo snímku */
 .qz-pic-fallback { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
@@ -138,10 +147,15 @@
   box-shadow: inset -3px -4px 8px rgba(150,50,30,.4), 0 0 0 3px #fffdf6, 0 0 18px rgba(226,114,91,.5); }
 /* u otázky: fotka schovaná (žádný spoiler), glóbus vyplní rám */
 .qz-picframe:not(.revealed) .qz-pic,
+.qz-picframe:not(.revealed) .qz-picbg,
 .qz-picframe:not(.revealed) .qz-pic-fallback { opacity: 0; pointer-events: none; }
 /* u odpovědi je hrdinou fotka: dojede zblízka a glóbus se odklidí */
 @keyframes qz-picin { from { opacity: 0; transform: scale(1.07); } to { opacity: 1; transform: none; } }
 .qz-picframe.revealed .qz-pic { animation: qz-picin .6s cubic-bezier(.22,.9,.3,1) both; }
+/* Podklad naskakuje se stejným náběhem, ale bez posunu — `transform` má vlastní
+   (scale 1.06), takže ho animace `qz-picin` nesmí přebít. */
+.qz-picframe.revealed .qz-picbg { animation: qz-picbgin .6s ease both; }
+@keyframes qz-picbgin { from { opacity: 0; } to { opacity: 1; } }
 .qz-picframe.revealed .qz-globewrap { opacity: 0; pointer-events: none; transition: opacity .3s ease; }
 
 .qz-box { margin: 14px 16px 2px; position: relative; z-index: 2; background: var(--paper2);
@@ -531,27 +545,57 @@
      by z ní jinak dopočítalo šířku (a rám by přetekl ven z panelu). Takhle drží poměr
      jen jako minimální výšku řádku a šířku bere ze sloupce.
 
-     1:1 je KOMPROMIS MEZI DVĚMA GENERACEMI OBRÁZKŮ (2026-09-01). Rám byl 4:5 (vysoký,
+     4:3 je KOMPROMIS MEZI DVĚMA GENERACEMI OBRÁZKŮ (2026-09-01). Rám byl 4:5 (vysoký,
      na přání 2026-08-14), ale ilustrace se generovaly 16:9 — s `cover` se ořezávalo
      54 % šířky. Generátor je od dneška na 4:5, jenže hotovo je teprve 30 % fondu
-     (1 141 z 3 742), takže rám musí slušet obojímu. Při `contain` a šířce ~371 px:
-       16:9 (staré) → pruh 80 px nahoře i dole
-       4:5 (nové)   → pruh 37 px po stranách
-     Kdyby byl rám 4:5, staré obrázky by měly pruhy 126 px a působily by ztraceně.
-     AŽ BUDE VĚTŠINA FONDU 4:5, vrať sem `4 / 5` — nové obrázky pak rám vyplní přesně. */
+     (1 141 z 3 742), takže rám musí slušet obojímu. Při `contain` a šířce 464 px:
+       16:9 (staré) → pruh 44 px nahoře i dole
+       4:5 (nové)   → pruh 47 px po stranách
+     Oba pruhy nese `.qz-picbg`, tedy rozmazaná kopie téhož obrázku, takže nejsou
+     rušivé ani u jedné generace. AŽ BUDE VĚTŠINA FONDU 4:5, vrať sem `4 / 5`.
+
+     5:4 zároveň SROVNÁVÁ VÝŠKU obou obdélníků: při šířce sloupce 464 px vyjde rám
+     371 px, což je přesně výška, na kterou vychází textová karta po sevření odpovědí
+     (viz .qz-ans níž). Předchozí 16:9 dávalo 264 px, takže rám končil 70 px nad
+     kartou a sloupce vypadaly nedodělané.
+
+     PŘESNÁ ROVNOST NA KAŽDÉ OTÁZCE NEJDE a nehoň ji: otázka má jeden až tři řádky
+     a karta se tomu musí přizpůsobit. 371 je nastaveno tak, aby jednořádkovou otázku
+     karta nepřerostla vůbec (řádek mřížky ji na výšku rámu dotáhne sám) a u dvou
+     řádků přesáhla o ~18 px. Roztahovat rám podle karty nejde — u odpovědi je karta
+     jinak vysoká než u otázky, takže by ilustrace poskočila (pravidlo 2026-07-31). */
   /* `align-self: start` — bez něj řádek mřížky rám ROZTÁHNE na výšku textové karty
      (`align-items: stretch`) a `aspect-ratio` se neuplatní: naměřeno 371×442 místo
-     371×371, tedy o 70 px vyšší pruhy kolem obrázku. Rovnost sloupců už není potřeba,
-     protože akce v kartě drží u spodní hrany sama (.qz-fbtns margin-top: auto). */
+     371×371. Roztažení by navíc rám ZVĚTŠILO při otázce (karta má 461 px) a ZMENŠILO
+     u odpovědi (333 px) — ilustrace by mezi stavy poskočila, což zakazuje pravidlo
+     z 2026-07-31. Pevný poměr je proto jediná cesta, jak mít stejnou výšku i klid. */
   .qz-play > .qz-picframe,
   .qz-play > .qz-picframe.revealed { grid-area: pic; align-self: start; margin: 68px 0 0;
-    width: 100%; height: auto; aspect-ratio: 1 / 1; }
+    width: 100%; height: auto; aspect-ratio: 5 / 4; }
   /* odpovědi pod sebou, ne 2×2 (přání 2026-08-14) — větší mezery mezi nimi a text
      zarovnaný doleva. Odsazení musí jít přes padding, ne mezery v textu — mezery v
      obsahu odsadí jen první řádek, zalomený druhý řádek pak začínal víc vlevo (bug). */
-  .qz-play .qz-ans { grid-template-columns: 1fr; gap: 20px; }
-  .qz-play .qz-ans .qz-a { text-align: left; justify-content: flex-start; padding-left: 32px; }
+  /* Sevřenější odpovědi, aby se textová karta VEŠLA DO VÝŠKY RÁMU (2026-09-01).
+     Řádek mřížky má `align-items: stretch`, takže kartu na výšku rámu dotáhne sám —
+     ale jen když je jejího obsahu míň. S mezerou 20 px a tlačítky 64 px měřila karta
+     u otázky 441 px proti rámu 348 a sloupce vypadaly rozhozeně. Nově 4×52 + 3×12
+     = 244 px, takže se běžná otázka vejde a oba obdélníky vyjdou stejně vysoké.
+     52 px je pořád nad 44px minimem pro dotyk (WCAG), a mobil se tohohle netýká —
+     celý blok platí až od 900 px. Sražený je i vnitřní okraj karty (18 → 14 px),
+     protože posledních pár pixelů rozhoduje o tom, jestli se dvouřádková otázka
+     do rámu vejde, nebo ho o kousek přeroste. */
+  .qz-play > .qz-box { padding: 14px 20px; }
+  .qz-play .qz-ans { grid-template-columns: 1fr; gap: 12px; }
+  .qz-play .qz-ans .qz-a { text-align: left; justify-content: flex-start; padding: 9px 8px 9px 32px;
+    min-height: 52px; }
 }
+
+/* POZN. k pokusu, který se NEOSVĚDČIL: mezitím tu bylo pravidlo, že od 1400 px dostane
+   ilustrace půlku plátna (1fr 1fr). Fungovalo jen dokud měla hrací plocha 1460 px —
+   po zúžení na 1200 px (viz níž) by ze stejného pravidla vyšla textová karta ~570 px
+   a odpověď by se lámala do sedmi řádků, tedy přesně to, čemu se ten práh vyhýbal.
+   Poměr 3:2 platí proto na všech šířkách; obrázek zvětšila už samotná změna rámu
+   na 16:9, protože zmizely prázdné pruhy. (2026-09-01) */
 
 /* Hrací obrazovka na širokém monitoru (2026-09-01) --------------------------
    Ve sloupci 980 px zbývalo na monitoru 1920 přes 400 px prázdna po každé straně.
@@ -565,9 +609,21 @@
       1720 px by rám měl ~840 px a fotka by na hustém displeji viditelně změkla.
 
    Formuláře (.qz-setup), výsledky (.qz-end) ani online (.zk-wrap) se nerozšiřují —
-   ty mají vlastní, užší stropy z dobrých důvodů. */
-@media (min-width: 1300px) {
-  #qz-body:has(.qz-play) { width: min(1460px, 100%); }
+   ty mají vlastní, užší stropy z dobrých důvodů.
+
+   Strop 1460 → 1200 (2026-09-01, po zvětšení ilustrace): jakmile obrázek dostal půlku
+   plátna, byly obě karty tak široké, že se kompozice rozjížděla do stran a pod nimi
+   zbývalo prázdno. 1200 je sevřenější: text má ~600 px (kolem 75 znaků na řádek, tedy
+   pořád v pásmu dobré čitelnosti) a rám ~570 px, což je i blíž skutečné šířce obrázků
+   (1000 px u nových, 1200 u starých) — snímek se tedy nezvětšuje nad svoje rozlišení. */
+/* Práh 1150, ne 1300 jako u výběrových obrazovek. Mezi 900 a 1300 px měla hrací plocha
+   jen 980 px, takže na obrázek zbýval sloupec 376 px a rám při poměru 5:4 vyšel 302 px
+   proti kartě 325–534 px — přesně ten nesoulad, který se tady řeší. Od 1150 dostane
+   plocha 1200 px (na užším okně jeho 100 %) a sloupce se srovnají. Níž už ne: pod
+   1150 px by šířka okna nestačila a text by se lámal hůř, než kolik by rovnost sloupců
+   vynesla. (2026-09-01) */
+@media (min-width: 1150px) {
+  #qz-body:has(.qz-play) { width: min(1200px, 100%); }
 }
 
 /* ---- přístupnost ----

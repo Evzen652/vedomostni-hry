@@ -121,7 +121,40 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     glóbu); stažení knihovny do repa by závislost odstranilo úplně, zatím je aspoň
     ověřená. Ověřeno v prohlížeči: `THREE.REVISION === "137"`, žádné porušení CSP.
 
+- **2026-09-01 — Pruh kolem ilustrace nese ROZMAZANÁ KOPIE téhož obrázku; oba obdélníky jsou stejně vysoké.**
+  Dokončení předchozího bodu. Hráč hlásil, že „jemný pruh" u obrázku je pořád vidět a že
+  levý obdélník je větší než pravý — chtěl to souměrné. Obojí opraveno, ale ani jedna cesta
+  nevedla tam, kam se nabízela.
+  - **Pruh NEJDE vyplnit pevnou barvou a je to změřené, ne odhad.** Nasamploval jsem rohy
+    dvanácti namátkových ilustrací: většina má krém kolem `rgb(223,203,170)`, jenže
+    `cz-a-trabant-ekologie` má `rgb(69,95,89)` a `cz-k-kromeriz-kvetna-zahrada`
+    `rgb(146,142,107)` — scény, které jdou do krajů, nemají s papírem společného nic.
+    Krémová pasparta by u nich byla vidět **víc** než dnešní pruh. Nově pruh nese
+    **`.qz-picbg`, rozmazaná kopie téhož souboru** (blur 24 px, `inset: -8%` kvůli lemu
+    z průhlednosti za hranou). Navazuje vždycky, u 16:9 i u budoucích 4:5.
+    `.qz-picbg` **musí mizet a naskakovat s obrázkem** (`wirePic` v [quiz.js](quiz.js)),
+    jinak by u chybějící ilustrace zůstal pod razítkem země barevný čtverec.
+  - **Rám 1:1 → 16:9 → nakonec 5:4.** Při šířce sloupce 464 px vychází 371 px, což je
+    přesně výška textové karty po sevření odpovědí. Naměřeno na osmi otázkách za sebou:
+    **u odpovědi 373 = 373 pokaždé**, u otázky 373 / 381 / 430 podle počtu řádků.
+  - **Karta se ZMENŠILA, aby se do rámu vešla** (výslovné přání „klidně udělej ten první
+    obdélník menší"): odpovědi 64 → 52 px, mezera 20 → 12 px, vnitřní okraj karty 18 → 14 px.
+    Blok platí až od 900 px, takže mobil se nemění; 52 px je nad 44px minimem pro dotyk.
+  - **ROZTAHOVAT RÁM PODLE KARTY NEJDE — nezkoušej to.** Nabízí se zrušit `align-self: start`
+    a nechat řádek mřížky sloupce srovnat. Jenže karta má u otázky 381–430 px a u odpovědi
+    373 px, takže by ilustrace mezi stavy poskočila — a to zakazuje pravidlo z 2026-07-31.
+    Pevný poměr je jediná cesta, jak mít zároveň rovnost a klid.
+  - **Přesná rovnost na KAŽDÉ otázce neexistuje** a nemá se honit: otázka má jeden až tři
+    řádky. 5:4 je nastaveno tak, aby jednořádkovou otázku karta nepřerostla vůbec a u dvou
+    řádků přesáhla o ~8 px.
+  - **Práh rozšíření hrací plochy 1300 → 1150 px.** Mezi 900 a 1300 měla plocha jen 980 px,
+    takže na obrázek zbýval sloupec 376 px a rám vyšel 302 px proti kartě 325–534 px —
+    přesně ten nesoulad, který se řešil. Níž než 1150 se jít nedá, tam už by šířka okna
+    nestačila a text by se lámal hůř, než kolik by rovnost sloupců vynesla.
+  - Ověřeno v prohlížeči na 375, 768, 1100, 1200 a 1920 px; `test:offline` 568 kontrol.
+
 - **2026-09-01 — Ilustrace u otázky se už NEOŘEZÁVÁ; generátor jede na výšku (4:5).**
+  > **Rám už není 1:1 ani 16:9, ale `5 / 4`** — viz zápis nad tímhle. Zbytek platí.
   Hráč se zeptal, jestli je obrázek celý. Nebyl: rám u odpovědi je 4:5 (na výšku,
   přání 2026-08-14), ilustrace se generovaly 16:9 (na šířku) a `object-fit: cover`
   z nich **ukrajoval 54 % ŠÍŘKY** — u hasičského bálu zůstala mimo záběr celá třetí

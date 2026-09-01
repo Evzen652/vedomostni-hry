@@ -1059,6 +1059,7 @@
   function picframeHtml(q){
     const country = esc(q.country||COUNTRY), section = esc(q.section||"");
     return `<div class="qz-picframe" id="qz-pic">
+      <img class="qz-picbg" id="qz-pic-bg" src="img/${esc(q.id)}.jpg" alt="" aria-hidden="true">
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
       <div class="qz-pic-fallback" id="qz-pic-fb">${flagStamp(q.cc,"qz-flagbig")}<span class="qz-pic-fb-text"><span class="country">${country}</span><span class="sec">${section}</span></span></div>
       <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
@@ -1073,8 +1074,11 @@
   function wirePic(){
     const img=body.querySelector("#qz-pic-img"), fb=body.querySelector("#qz-pic-fb"), pic=body.querySelector("#qz-pic");
     if(!img) return;
-    const show=()=>{ img.style.display="block"; fb.style.display="none"; pic.classList.remove("qz-pic-broken"); };
-    const showFallback=()=>{ img.style.display="none"; fb.style.display="flex"; pic.classList.add("qz-pic-broken"); };
+    // Rozmazaný podklad je jen kopie téhož souboru — musí mizet a naskakovat s obrázkem,
+    // jinak by u chybějící ilustrace zůstal pod razítkem země šedý čtverec s ikonou.
+    const bg=body.querySelector("#qz-pic-bg");
+    const show=()=>{ img.style.display="block"; if(bg) bg.style.display="block"; fb.style.display="none"; pic.classList.remove("qz-pic-broken"); };
+    const showFallback=()=>{ img.style.display="none"; if(bg) bg.style.display="none"; fb.style.display="flex"; pic.classList.add("qz-pic-broken"); };
     showFallback();
     img.onload=show;
     img.onerror=showFallback;
