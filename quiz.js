@@ -132,6 +132,9 @@
   // protože je to zároveň hodnota q.section u 1279 otázek napříč všemi zeměmi; přejmenovat
   // by se smělo jen tohle popisné jméno, ne samotný klíč, jinak dlaždice ztratí napojení na data.
   const SECTION_LABEL = { "Místa":"Co je kde" };
+  // Jména pásem pro člověka. Dlaždice v renderStart je mají zapsaná zvlášť (jsou tam
+  // i s popiskem a ilustrací), tohle je pro místa, kde se pásmo jen zmiňuje v textu.
+  const BAND_NAMES = { deti:"děti", starsi:"puberťáci", dospeli:"dospělí" };
 
   // ---- autosave / rozehrané výpravy / wake lock / časomíra (Život u stolu) ----
   const SAVES_KEY = "hricka_quiz_saves";
@@ -164,12 +167,94 @@
   function autosave(){
     if(!S.saveId) return;
     const saves=loadSaves(), st=serializeState();
-    saves[S.saveId] = { ts:Date.now(), meta:{ mode:st.mode, school:st.school, cc:st.cc, section:st.section, players:st.players.map(p=>({name:p.name,color:p.color})),
+    // `meta` je zobrazovací projekce pro seznam rozehraných her — `state` má všechno,
+    // ale sahat při vykreslování seznamu do celého stavu by znamenalo tahat i pole otázek.
+    // `band` a `ccs` přibyly 2026-09-02 kvůli řádku „téma · pásmo · čas"; starší uložené
+    // hry je v meta nemají, proto si je saveInfo() umí dobrat ze `state` (viz tam).
+    saves[S.saveId] = { ts:Date.now(), meta:{ mode:st.mode, school:st.school, band:st.band, level:st.schoolLevel, cc:st.cc, ccs:st.ccs,
+      section:st.section, players:st.players.map(p=>({name:p.name,color:p.color,band:p.band})),
       round:st.round, totalRounds:st.totalRounds, idx:st.idx, served:st.qServed, count:st.orderIds.length }, state:st };
     writeSaves(saves);
   }
   function clearSave(){ if(S.saveId){ const s=loadSaves(); delete s[S.saveId]; writeSaves(s); } S.saveId=null; }
   function newSave(){ S.saveId = "g"+Date.now()+"_"+Math.floor(Math.random()*1e4); }
+
+  // Relativní čas je u rozehrané hry čitelnější než datum — u hry z dnešního odpoledne
+  // nikoho nezajímá, kolikátého bylo. Nad týden se přepne na datum, protože „před 23 dny"
+  // si už nikdo nepřevede. Skloňování jde přes plur() stejně jako jinde v appce.
+  function relCas(ts){
+    if(!ts) return "";
+    const min = Math.floor((Date.now() - ts) / 60000);
+    if(min < 1) return "právě teď";
+    if(min < 60) return "před " + min + " " + plur(min, "minutou", "minutami", "minutami");
+    const h = Math.floor(min / 60);
+    if(h < 24) return "před " + h + " " + plur(h, "hodinou", "hodinami", "hodinami");
+    const dny = Math.floor(h / 24);
+    if(dny === 1) return "včera";
+    if(dny < 7) return "před " + dny + " dny";
+    return new Date(ts).toLocaleDateString("cs-CZ");
+  }
+  // Popisky úrovní školního režimu. Slovo je schválně TOTOŽNÉ s tlačítky v renderSchoolStart
+  // („★ Lehká" / „★★ Střední" / „★★★ Vše") — učitel má v seznamu najít přesně to, co klikl.
+  const SCHOOL_LEVELS = { 1:"★ Lehká", 2:"★★ Střední", 3:"★★★ Vše" };
+  // Výčet do věty: „děti a dospělí", ne „děti, dospělí". Poslední spojka je „a".
+  function vyctem(pole){
+    if(pole.length < 2) return pole[0] || "";
+    return pole.slice(0, -1).join(", ") + " a " + pole[pole.length - 1];
+  }
+  // ŽÁDNÝ TEXT V APPCE NEZAČÍNÁ MALÝM PÍSMENEM (pravidlo z 2026-09-01, znovu vymáháno
+  // 2026-09-02). Platí i pro hodnotu za dvojtečkou — „Úroveň obtížnosti: děti" je taky
+  // začátek textu, ne pokračování věty. Konstanty jako BAND_NAMES se ale kvůli tomu
+  // NEPŘEPISUJÍ: uvnitř věty (partyOpakovaniNote: „Pásmo „děti" má…") tam malé patří.
+  // Velké písmeno se proto nasazuje až při zobrazení, tady.
+  function velke(t){ t = String(t || ""); return t ? t[0].toLocaleUpperCase("cs") + t.slice(1) : t; }
+  // Popisky jedné položky v seznamu rozehraných her. Čte se primárně `meta`, ale `band`,
+  // `ccs`, `level` a pásma hráčů tam přibyly až 2026-09-02 — u starších uložených her se
+  // doberou ze `state`, jinak by měly řádek ochuzený, dokud by je hráč znovu neuložil.
+  function saveInfo(rec){
+    const m = rec.meta || {}, st = rec.state || {};
+    const band = m.band || st.band || null;
+    const ccs  = m.ccs  || st.ccs  || null;
+    const cc   = m.cc   || st.cc   || null;
+    const party = m.mode === "party";
+    // Kde se hraje: jedna země má jméno i vlajku, víc zemí jen počet. Razítko se u víc
+    // zemí sestavit NEDÁ — `assets/country-at,cz.jpg` je přesně ta chyba, co se
+    // 2026-09-01 opravovala na obrazovce výběru témat.
+    let kde, obr;
+    if(cc){ kde = COUNTRY_BY_CC[cc] || cc; obr = "assets/country-" + cc + ".jpg"; }
+    else if(ccs && ccs.length > 1){ kde = ccs.length + " " + plur(ccs.length, "země", "země", "zemí"); obr = "assets/cont-world.jpg"; }
+    else { kde = "Celý svět"; obr = "assets/cont-world.jpg"; }
+    // Řádek „Úroveň obtížnosti" se u KAŽDÉHO REŽIMU bere odjinud, protože každý se řídí
+    // něčím jiným: párty má pásmo u každého hráče zvlášť (S.band je jen sólová volba,
+    // jedno jméno by lhalo), a škola pásmo nepoužívá vůbec — filtruje podle `schoolLevel`
+    // (startSchool), takže by tam zděděná hodnota z posledního sóla přímo lhala.
+    // Rozhoduje PŘÍTOMNOST PÁSMA, ne počet hráčů: starší uložené párty mají v `meta.players`
+    // jen jméno a barvu (`band` tam přibyl 2026-09-02), takže test na délku by je propustil
+    // a párty z té doby by hlásila „různá podle hráče", i když se pásma dají zjistit ze `state`.
+    const hraciMeta = m.players || [], hraciSt = st.players || [];
+    const hraci = (hraciMeta.some(p => p.band) || !hraciSt.length) ? hraciMeta : hraciSt;
+    // Seřazeno podle VĚKU (pořadí klíčů v BAND_NAMES), ne podle pořadí u stolu — jinak
+    // by tentýž stůl vypsal pásma pokaždé jinak podle toho, kdo se zapsal první.
+    const poradi = Object.keys(BAND_NAMES);
+    const klic = b => (poradi.indexOf(b) < 0 ? poradi.length : poradi.indexOf(b));
+    const pasma = [...new Set(hraci.map(p => p.band).filter(Boolean))]
+      .sort((a, b) => klic(a) - klic(b)).map(b => BAND_NAMES[b] || b);
+    const uroven = m.level || st.schoolLevel || 3;
+    const rezim = party ? ("Párty (" + hraci.length + " " + plur(hraci.length, "hráč", "hráči", "hráčů") + ")")
+                        : (m.school ? "Škola" : "Sólo");
+    return {
+      obr, party,
+      // Hodnoty jdou přes velke(): za dvojtečkou začíná text, ne pokračuje věta.
+      // „Co jsi hrál" musí odpovědět celou větou: v jakém režimu, kde a na jaké téma.
+      coHral: velke([rezim, kde, sectionLabel(m.section, "Všechna témata")].join(" · ")),
+      uroven: velke(party    ? (vyctem(pasma) || "různá podle hráče")
+                  : m.school ? (SCHOOL_LEVELS[uroven] || SCHOOL_LEVELS[3])
+                  : ((band && (BAND_NAMES[band] || band)) || "neuvedena")),
+      postup: party ? ("Kolo " + (m.round || 1) + "/" + (m.totalRounds || 5))
+                    : ("Otázka " + ((m.idx || 0) + 1) + "/" + (m.count || 0)),
+      kdy: velke(relCas(rec.ts) || "neznámo kdy"),
+    };
+  }
   async function resumeSave(id){
     const rec=loadSaves()[id]; if(!rec || !data) return;
     showHomeBtn(true);   // odsud vede „Domů" zpátky na výběr režimu, takže dává smysl
@@ -464,14 +549,30 @@
     say("Vítejte, cestovatelé! Jak si dnes zahrajeme?");
     showHomeBtn(false);
     document.getElementById("qz-shell").style.transform="";
-    const saves=loadSaves(); const ids=Object.keys(saves).sort((a,b)=>saves[b].ts-saves[a].ts).slice(0,4);
+    // Bez stropu: writeSaves() drží nejvýš SAVES_MAX her a pop-up má vlastní scroll,
+    // takže seznam ukáže všechny. Dřív jich brala jen první čtyři — zbylých šest se
+    // sice ukládalo, ale hráč se k nim nedostal a vypadalo to, že se hra ztratila.
+    const saves=loadSaves(); const ids=Object.keys(saves).sort((a,b)=>saves[b].ts-saves[a].ts);
     const hasSaves = ids.length > 0;
-    const resumeItems = ids.map(id=>{ const m=saves[id].meta;
-        const where = m.mode==="party" ? ("Kolo "+m.round+"/"+m.totalRounds) : ("Otázka "+((m.idx||0)+1)+"/"+m.count);
+    // Každý řádek má vlastní popisek s dvojtečkou. Úsporná verze („Česko · Sólo" nad
+    // „Všechna témata · děti · včera") vypadala líp, ale u deseti podobných her z ní
+    // nešlo poznat, co která je — a co znamená který údaj, se dalo jen hádat.
+    const resumeItems = ids.map(id=>{ const s=saveInfo(saves[id]);
+        const radek = (popis, hodnota) => `<span class="qz-resume-row"><i>${popis}:</i> ${esc(hodnota)}</span>`;
+        // Avatary dávají smysl jen u párty. V sólu je hráč vždycky jeden („Ty"), takže
+        // by to bylo pořád stejné kolečko s „T" u každé položky.
+        const faces = s.party ? `<span class="qz-resume-faces">${(saves[id].meta.players||[]).map(p=>
+            `<span class="qz-face" style="background:${p.color}">${esc((p.name||"?")[0])}</span>`).join("")}</span>` : "";
         return `<div class="qz-resume-item" data-resume="${id}">
-          <span class="qz-resume-faces">${(m.players||[]).map(p=>`<span class="qz-face" style="background:${p.color}">${esc((p.name||"?")[0])}</span>`).join("")}</span>
-          <span class="qz-resume-meta">${m.cc?flagStamp(m.cc):""} ${m.mode==="party"?"Párty":(m.school?"Škola":"Sólo")} · ${where}</span>
-          <button class="qz-resume-del" data-del="${id}" title="Smazat">✕</button></div>`; }).join("");
+          <img class="qz-resume-img" src="${s.obr}" alt="" onerror="this.style.visibility='hidden'">
+          <span class="qz-resume-text">
+            ${radek("Co jsi hrál", s.coHral)}
+            ${radek("Úroveň obtížnosti", s.uroven)}
+            ${radek("Kdy", s.kdy)}
+          </span>
+          ${faces}
+          <span class="qz-resume-prog">${esc(s.postup)}</span>
+          <button class="qz-resume-del" data-del="${id}" title="Smazat hru">✕</button></div>`; }).join("");
     // Rozehrané hry se neukazují přímo — jen tlačítko, které otevře pop-up (modal) se seznamem.
     const resumeBtn = hasSaves ? `<button class="qz-resume-open" id="qz-resume-open"><img class="qz-ico-resume" src="assets/ico-resume.png" alt=""> Rozehrané hry</button>` : "";
     const resumeModal = hasSaves ? `<div class="qz-modal" id="qz-resume-modal" hidden>
@@ -488,7 +589,7 @@
              kde na hráče někdo čeká, takže patří dopředu; škola je nejužší případ užití.
              Bot se v popisku NEZMIŇUJE — je to náhradní řešení pro prázdnou frontu,
              ne důvod, proč sem jít. -->
-        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Online</div><div class="d">Proti živým soupeřům. Rating nelže.</div></button>` : ""}
+        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Světová liga</div><div class="d">Proti živým soupeřům. Zatím převážně z Česka.</div></button>` : ""}
         <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Nikdo nezmerčí, kde máš slabá místa...</div></button>
         <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Pro 2 až 6 hráčů. Vyhrává ten chytrej.</div></button>
         <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Třída hádá. Aspoň jeden musí něco vědět...</div></button>
@@ -563,9 +664,8 @@
     const pasma = [...new Set(S.players.map(p => p.band || "dospeli"))];
     const tesna = pasma.map(b => ({ b, n: bandPool(b).length })).filter(x => x.n < S.totalRounds);
     if(!tesna.length) return "";
-    const jmena = { deti:"děti", starsi:"puberťáci", dospeli:"dospělí" };
     const t = tesna.sort((a,b)=>a.n-b.n)[0];
-    return `<div class="qz-setnote">Pásmo „${esc(jmena[t.b]||t.b)}" má u téhle volby jen ${t.n} ${plur(t.n,"otázku","otázky","otázek")} — ` +
+    return `<div class="qz-setnote">Pásmo „${esc(BAND_NAMES[t.b]||t.b)}" má u téhle volby jen ${t.n} ${plur(t.n,"otázku","otázky","otázek")} — ` +
            `v ${S.totalRounds} kolech se některé zopakují. Kratší hra nebo víc zemí to spraví.</div>`;
   }
   function qLimitOptions(total){
@@ -575,7 +675,15 @@
   }
   const MODE_LABEL = { solo:"Sólo", party:"Párty", school:"Škola" };
   function beginPick(mode){ S.pickMode=mode; S.sel={}; showHomeBtn(true); renderContinentPick(); }
-  function selSectionLabel(){ const s=S.sel&&S.sel.section; if(!s||s==="__all__") return "Vše"; if(Array.isArray(s)) return s.length===1?(SECTION_LABEL[s[0]]||s[0]):s.length+" témata"; return SECTION_LABEL[s]||s; }
+  // `section` má tři podoby: null nebo „__all__" (vše), pole vybraných, nebo jeden název.
+  // `vse` je popisek pro první případ — drobečková lišta chce úsporné „Vše", seznam
+  // rozehraných her potřebuje větu, ze které je poznat, že jde o téma.
+  function sectionLabel(s, vse){
+    if(!s || s==="__all__") return vse || "Vše";
+    if(Array.isArray(s)) return s.length===1 ? (SECTION_LABEL[s[0]]||s[0]) : s.length+" "+plur(s.length,"téma","témata","témat");
+    return SECTION_LABEL[s]||s;
+  }
+  function selSectionLabel(){ return sectionLabel(S.sel&&S.sel.section); }
   function contsLabel(){
     const contsArr = (S.sel && S.sel.conts) || [];
     const contNames = contsArr.map(id => { const c = CONTINENTS.find(x=>x.id===id); return c ? c.name : id; });

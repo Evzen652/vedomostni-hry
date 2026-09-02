@@ -21,6 +21,9 @@ const path = require("path");
 const vm = require("vm");
 
 const SRC = fs.readFileSync(path.join(process.cwd(), "quiz.js"), "utf8");
+// Online klient se sem přidal 2026-09-02 kvůli vokativ(). `sim-online` testuje model
+// ratingu a `test:api` server — samotný online.js do té doby nekontroloval nikdo.
+const SRC_ONLINE = fs.readFileSync(path.join(process.cwd(), "online.js"), "utf8");
 
 /** Vytáhne `const NAME = …;` ze zdroje a vyhodnotí. Pro jednořádkové i víceřádkové literály. */
 function konstanta(jmeno) {
@@ -43,15 +46,16 @@ function konstanta(jmeno) {
 }
 
 /** Vytáhne čistou funkci (bez DOM) a vrátí ji volatelnou. */
-function funkce(jmeno, zavislosti) {
-  const zac = SRC.indexOf("function " + jmeno + "(");
-  if (zac < 0) throw new Error("v quiz.js chybí funkce " + jmeno);
-  let hloubka = 0, i = SRC.indexOf("{", zac), start = i;
-  for (; i < SRC.length; i++) {
-    if (SRC[i] === "{") hloubka++;
-    else if (SRC[i] === "}") { hloubka--; if (!hloubka) break; }
+function funkce(jmeno, zavislosti, zdroj) {
+  const src = zdroj || SRC;
+  const zac = src.indexOf("function " + jmeno + "(");
+  if (zac < 0) throw new Error("ve zdroji chybí funkce " + jmeno);
+  let hloubka = 0, i = src.indexOf("{", zac);
+  for (; i < src.length; i++) {
+    if (src[i] === "{") hloubka++;
+    else if (src[i] === "}") { hloubka--; if (!hloubka) break; }
   }
-  const kod = SRC.slice(zac, i + 1);
+  const kod = src.slice(zac, i + 1);
   const ctx = Object.assign({}, zavislosti || {});
   vm.runInNewContext(kod + "; __f = " + jmeno + ";", ctx);
   return ctx.__f;
@@ -228,6 +232,157 @@ S.mode = "solo";
 kontrola(qPoints({ difficulty: 3 }) === 300 && qPoints({ difficulty: 1 }) === 100,
   "v sólu se přestalo bodovat podle obtížnosti");
 kontrola(qPoints({}) === 100, "otázka bez difficulty nedává 100 bodů (chybí fallback)");
+
+// ---- popisky rozehraných her ----------------------------------------------------
+// saveInfo() skládá řádek v seznamu rozehraných her. Testuje se proto, že sahá na tři
+// věci, které se v projektu už jednou rozešly:
+//   - `cc` je u víc zemí null a `ccs` je POLE — sestavit z něj cestu k obrázku dá
+//     `assets/country-at,cz.jpg` (přesně ta chyba z 2026-09-01 na výběru témat)
+//   - `section` má tři podoby (null / "__all__" / pole), takže se nesmí vypsat rovnou
+//   - `band`/`level` přibyly do `meta` až 2026-09-02 — starší uložené hry je mají jen
+//     ve `state` a musí se dobrat odtamtud
+sekce("Rozehrané hry: popisek nesmí lhát ani prozradit „__all__\"");
+const SECTION_LABEL = konstanta("SECTION_LABEL");
+const BAND_NAMES = konstanta("BAND_NAMES");
+const SCHOOL_LEVELS = konstanta("SCHOOL_LEVELS");
+const sectionLabel = funkce("sectionLabel", { SECTION_LABEL, plur });
+const vyctem = funkce("vyctem", {});
+const velke = funkce("velke", { String });
+const saveInfo = funkce("saveInfo", { COUNTRY_BY_CC, BAND_NAMES, SCHOOL_LEVELS, sectionLabel, vyctem, velke, plur, relCas: () => "včera" });
+
+// Pravidlo z 2026-09-01, znovu vymáhané 2026-09-02: ŽÁDNÝ TEXT V APPCE NEZAČÍNÁ MALÝM
+// PÍSMENEM — a hodnota za dvojtečkou („Úroveň obtížnosti: děti") je taky začátek textu.
+// Konstanty jako BAND_NAMES zůstávají malé, protože uvnitř věty se hodí; velké písmeno
+// nasazuje až velke() při zobrazení. Tahle kontrola hlídá, že se to nevytratí.
+kontrola(velke("děti") === "Děti", "velke() nezvětšuje první písmeno");
+kontrola(velke("") === "" && velke(null) === "", "velke() spadne na prázdné hodnotě");
+kontrola(velke("★★ Střední") === "★★ Střední", "velke() poškodilo text začínající hvězdičkou");
+
+const info = (meta, state) => saveInfo({ ts: 1, meta, state: state || {} });
+
+const jednaZeme = info({ mode: "solo", band: "dospeli", cc: "cz", ccs: ["cz"], section: "Historie",
+                         players: [{ band: "dospeli" }], idx: 3, count: 10 });
+kontrola(jednaZeme.coHral === "Sólo · Česko · Historie", "sólo „Co jsi hrál\" je '" + jednaZeme.coHral + "'");
+kontrola(jednaZeme.obr === "assets/country-cz.jpg", "špatná cesta k obrázku: " + jednaZeme.obr);
+kontrola(jednaZeme.uroven === "Dospělí", "pásmo se nepřeložilo, je tam " + jednaZeme.uroven);
+kontrola(jednaZeme.postup === "Otázka 4/10", "sólo postup je " + jednaZeme.postup + ", má být Otázka 4/10");
+kontrola(jednaZeme.kdy === "Včera", "čas se nedostal do popisku, je tam '" + jednaZeme.kdy + "'");
+
+const vicZemi = info({ mode: "solo", band: "deti", cc: null, ccs: ["at", "cz", "sk"], section: "__all__",
+                       players: [{ band: "deti" }], idx: 0, count: 10 });
+kontrola(!vicZemi.obr.includes(","), "u víc zemí se sestavila cesta s čárkou: " + vicZemi.obr);
+kontrola(/3 země/.test(vicZemi.coHral), "víc zemí se nepopsalo počtem, je tam " + vicZemi.coHral);
+kontrola(!/__all__/.test(vicZemi.coHral), "„__all__\" prosáklo do popisku: " + vicZemi.coHral);
+
+const poleTemat = info({ mode: "solo", band: "deti", cc: "cz", section: ["Sport", "Jídlo", "Umění", "Historie", "Lidé"],
+                         players: [{ band: "deti" }], idx: 0, count: 10 });
+kontrola(/5 témat$/.test(poleTemat.coHral), "pole témat se nespočítalo/neskloňovalo, je tam " + poleTemat.coHral);
+
+// Párty: pásmo má každý hráč své, jedno jméno by lhalo — vypíšou se všechna, co u stolu jsou.
+// Hráči jsou schválně v rozhozeném pořadí a jedno pásmo je dvakrát: výstup musí být
+// odshora podle VĚKU a bez opakování, ne v pořadí, v jakém se lidi zapsali ke stolu.
+const party = info({ mode: "party", band: "dospeli", cc: "cz", section: null,
+                     players: [{ band: "dospeli" }, { band: "deti" }, { band: "starsi" }, { band: "deti" }],
+                     round: 2, totalRounds: 8 });
+kontrola(/4 hráči/.test(party.coHral), "párty neukazuje počet hráčů, je tam " + party.coHral);
+kontrola(party.uroven === "Děti, puberťáci a dospělí",
+  "párty pásma nejsou odshora podle věku nebo se opakují, je tam '" + party.uroven + "'");
+kontrola(party.postup === "Kolo 2/8", "párty postup je " + party.postup + ", má být Kolo 2/8");
+
+// Škola pásmo nepoužívá vůbec (startSchool filtruje podle schoolLevel), takže zděděná
+// hodnota ze sóla by tam přímo lhala. Popisek musí sedět s tlačítky v renderSchoolStart.
+const skola = info({ mode: "solo", school: true, band: "dospeli", level: 2, cc: "jp", section: "Příroda",
+                     players: [{ band: "deti" }], idx: 0, count: 20 });
+kontrola(/^Škola · /.test(skola.coHral), "škola se hlásí jako " + skola.coHral);
+kontrola(skola.uroven === "★★ Střední", "škola neukazuje svou úroveň, je tam '" + skola.uroven + "'");
+kontrola(!Object.values(BAND_NAMES).includes(skola.uroven), "škola ukazuje pásmo, které vůbec nepoužívá (filtruje podle schoolLevel)");
+
+// Starší uložená hra: meta bez band/ccs/level a bez pásem u hráčů — všechno jen ve state.
+const stare = info({ mode: "solo", cc: "pt", section: "Historie", players: [{ name: "Ty" }], idx: 0, count: 15 },
+                   { band: "starsi", ccs: ["pt"], schoolLevel: 1, players: [{ band: "starsi" }] });
+kontrola(stare.uroven === "Puberťáci", "starší uložená hra ztratila pásmo (fallback na state nefunguje), je tam '" + stare.uroven + "'");
+
+// Starší PÁRTY: `meta.players` existují a mají správný počet, ale `band` u nich chybí
+// (přibyl 2026-09-02). Fallback se proto nesmí ptát na počet hráčů, ale na to, jestli
+// pásmo vůbec nesou — jinak tahle hra hlásí „různá podle hráče" zbytečně.
+const starePárty = info({ mode: "party", cc: "cz", section: null, round: 1, totalRounds: 5,
+                          players: [{ name: "Eva", color: "#e2725b" }, { name: "Jan", color: "#2a7f7f" }] },
+                        { players: [{ band: "deti" }, { band: "dospeli" }] });
+kontrola(starePárty.uroven === "Děti a dospělí",
+  "starší párty ztratila pásma hráčů (fallback se ptá na počet místo na pásmo), je tam '" + starePárty.uroven + "'");
+kontrola(/2 hráči/.test(starePárty.coHral), "starší párty ztratila počet hráčů, je tam " + starePárty.coHral);
+
+// ---- oslovení v online lobby ----------------------------------------------------
+// vokativ() je ÚMYSLNĚ NEÚPLNÝ: skloňuje jen tam, kde české pravidlo nemá výjimku,
+// a jinak vrátí null, aby se jméno z pozdravu vynechalo. Tenhle test tu je hlavně
+// proto, aby to někdo „nevylepšil" na obecné pravidlo — z „Petr" by pak vzniklo
+// „Petre" (správně je Petře) a z generované dětské přezdívky úplný nesmysl.
+sekce("Online: oslovení skloňuj jen tam, kde to má jistotu");
+const vokativ = funkce("vokativ", { String, RegExp }, SRC_ONLINE);
+
+const SPRAVNE = { "Kuba": "Kubo", "Eva": "Evo", "Honza": "Honzo", "Tereza": "Terezo",
+  "Marek": "Marku", "Radek": "Radku", "Tomáš": "Tomáši", "Ondřej": "Ondřeji",
+  "Dominik": "Dominiku", "Vojtěch": "Vojtěchu", "Jan": "Jane", "Martin": "Martine",
+  "Adam": "Adame", "Michal": "Michale", "Ivo": "Ivo", "Marie": "Marie", "Jiří": "Jiří" };
+for (const [jm, ocek] of Object.entries(SPRAVNE))
+  kontrola(vokativ(jm) === ocek, "vokativ(\"" + jm + "\") dal \"" + vokativ(jm) + "\", má být \"" + ocek + "\"");
+
+// Tyhle MUSÍ vrátit null. Kdyby se někdy doplnily, ať to je vědomé rozhodnutí
+// s ověřením, ne vedlejší efekt zobecnění nějakého jiného pravidla.
+const NESMI = {
+  "Petr": "-r má dvě pravidla (Petr→Petře, ale Viktor→Viktore)",
+  "Pavel": "-el má dvě pravidla (Pavel→Pavle, ale Daniel→Danieli)",
+  "Karel": "-el, viz Pavel",
+  "Daniel": "-el, viz Pavel",
+  "Veselý krtek 20": "generovaná dětská přezdívka, není to jméno",
+  "xXx_Alex": "přezdívka s podtržítkem, ne jméno",
+  "A": "jedno písmeno",
+  "": "prázdná přezdívka",
+};
+for (const [jm, proc] of Object.entries(NESMI))
+  kontrola(vokativ(jm) === null, "vokativ(\"" + jm + "\") vrátil \"" + vokativ(jm) + "\" místo null — " + proc);
+kontrola(vokativ(null) === null && vokativ(undefined) === null, "vokativ() spadne na chybějící přezdívce");
+
+// Uvítací texty lobby. Appka NEZNÁ POHLAVÍ hráče, takže v nich nesmí být minulý čas
+// s rodem („zapsal ses", „věděl jsi") — stejné pravidlo jako u `_verdikt` v fondy.json.
+// A protože se texty vybírají podle pásma, musí je mít všechna tři kompletní; chybějící
+// klíč by se projevil až „undefined" na obrazovce přihlášeného hráče.
+const LOBBY_TEXTY = (() => {
+  const m = /var\s+LOBBY_TEXTY\s*=/.exec(SRC_ONLINE);
+  if (!m) throw new Error("v online.js chybí LOBBY_TEXTY");
+  let hloubka = 0, i = SRC_ONLINE.indexOf("{", m.index), zac = i;
+  for (; i < SRC_ONLINE.length; i++) {
+    if (SRC_ONLINE[i] === "{") hloubka++;
+    else if (SRC_ONLINE[i] === "}") { hloubka--; if (!hloubka) break; }
+  }
+  return vm.runInNewContext("(" + SRC_ONLINE.slice(zac, i + 1) + ")");
+})();
+const KLICE = ["uvod", "pasmo", "souperi", "rating0", "ratingN"];
+for (const band of ["deti", "starsi", "dospeli"]) {
+  const t = LOBBY_TEXTY[band];
+  kontrola(t, "LOBBY_TEXTY nemá pásmo " + band + " — hráči by se ukázalo undefined");
+  for (const k of KLICE) kontrola(t && t[k], "LOBBY_TEXTY." + band + " nemá „" + k + "\"");
+  for (const k of KLICE) {
+    const v = (t && t[k]) || "";
+    // 2. osoba minulého času: sloveso na -l/-la + „jsi"/„ses"/„sis"
+    const rod = v.match(/\S*l[aoiy]?\s+(jsi|ses|sis)\b/i);
+    kontrola(!rod, "LOBBY_TEXTY." + band + "." + k + " má minulý čas s rodem: „" + (rod && rod[0]) + "\"",
+      "appka nezná pohlaví hráče — přeformuluj do přítomného času");
+    kontrola(!/^[a-záčďéěíňóřšťúůýž]/.test(v.replace(/^<[^>]+>/, "")) || k === "uvod",
+      "LOBBY_TEXTY." + band + "." + k + " začíná malým písmenem: „" + v.slice(0, 40) + "\"");
+    // Bot se v uvítání NESLIBUJE. Je to náhradní řešení pro prázdnou frontu, ne důvod,
+    // proč sem jít — kdo si přečte „když nikdo není online, nastoupí bot", tomu se
+    // hrát nechce. Nabízí se až v čekárně, kde už hráč čeká a je to služba, ne slib
+    // (viz `zk-bot` v startQueue). Stejné rozhodnutí jako u dlaždice Online 2026-08-31.
+    kontrola(!/\bbot|\brobot/i.test(v),
+      "LOBBY_TEXTY." + band + "." + k + " slibuje bota: „" + v.slice(0, 60) + "\"",
+      "bota nabízej až v čekárně, ne v uvítání");
+  }
+}
+// Totéž pro dlaždici „Hrát teď" — je to první věc, kterou hráč po přihlášení vidí.
+const heroPopis = (/<span class="d">([^<]*)<\/span><\/span>/.exec(SRC_ONLINE) || [])[1] || "";
+kontrola(heroPopis && !/\bbot/i.test(heroPopis),
+  "dlaždice Hrát teď slibuje bota: „" + heroPopis + "\"");
 
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));

@@ -42,6 +42,72 @@ window.ZKOnline = (function () {
   };
   function znamyHrac() { try { return localStorage.getItem("zk_seen") === "1"; } catch (e) { return false; } }
 
+  /* 5. pád přezdívky pro oslovení („Kuba" → „Kubo").
+   *
+   * CLAUDE.md má tvrdou lekci, že český pád se v kódu odvodit nedá — proto je 6. pád
+   * u otázek uložený v datech (pole `about`). Tady to uložit nejde: přezdívku si píše
+   * hráč sám. Řešení je proto ÚMYSLNĚ NEÚPLNÉ: použijí se jen pravidla, která v češtině
+   * prakticky nemají výjimku, a **u všeho ostatního se jméno z pozdravu VYNECHÁ**.
+   * „Ahoj!" je lepší než „Ahoj Petre" (správně je Petře) — chyba ve jméně je vidět,
+   * chybějící jméno ne.
+   *
+   * Schválně NEOŠETŘENÉ (padají na pozdrav bez jména): -r (Petr → Petře, ale Viktor →
+   * Viktore) a -el (Pavel → Pavle, ale Daniel → Danieli) — obojí má dvě různá pravidla
+   * podle toho, co je před koncovkou, a splést se dá u velmi běžných jmen.
+   * Vynechává se taky všechno, co není jedno slovo z písmen — generované dětské
+   * přezdívky („Veselý krtek 20") ani „xXx_Alex" se skloňovat nemají.
+   */
+  function vokativ(nick) {
+    var n = String(nick == null ? "" : nick).trim();
+    if (!/^[A-Za-zÁ-Žá-ž]{2,20}$/.test(n)) return null;      // ne jedno slovo z písmen
+    var m = n.toLowerCase();
+    if (/[aá]$/.test(m)) return n.slice(0, -1) + "o";         // Kuba→Kubo, Eva→Evo, Péťa→Péťo
+    if (/ek$/.test(m)) return n.slice(0, -2) + "ku";          // Marek→Marku, Radek→Radku
+    if (/[ščžjřťďň]$/.test(m)) return n + "i";                // Tomáš→Tomáši, Ondřej→Ondřeji
+    if (/(ch|[kgh])$/.test(m)) return n + "u";                // Vojtěch→Vojtěchu, Dominik→Dominiku
+    if (/[oeiuyáéíóúý]$/.test(m)) return n;                   // Ivo, Marie, Jiří — beze změny
+    if (/el$/.test(m) || /r$/.test(m)) return null;           // dvojznačné, radši nic
+    if (/[dtnmvzsbpfl]$/.test(m)) return n + "e";             // Jan→Jane, Martin→Martine, Adam→Adame
+    return null;
+  }
+  /* Pozdrav: se jménem, když ho umíme oslovit, jinak bez něj. */
+  function pozdrav(nick, zbytek) {
+    var v = vokativ(nick);
+    return v ? "Ahoj " + esc(v) + ", " + zbytek : "Ahoj, " + zbytek;
+  }
+
+  /* Uvítání v lobby. Dřív tu byl jen proužek „Kuba · PUBERŤÁCI · Rating 1500 · Zatím
+   * nezahráno" — z toho hráč nepoznal, co pásmo znamená, proti komu bude hrát ani co
+   * je rating. Tón se drží pásma stejně jako hlášky u otázek (CLAUDE.md 2026-08-15):
+   * děti nadšeně a bez sarkasmu, puberťáci s popichováním, dospělí se sarkasmem.
+   *
+   * POZOR: v textech NESMÍ být minulý čas s rodem („zapsal ses", „věděl jsi") — appka
+   * pohlaví hráče nezná. Stejné pravidlo jako u `_verdikt` v fondy.json.
+   */
+  var LOBBY_TEXTY = {
+    deti: {
+      uvod: "jsme rádi, že jsi tady!",
+      pasmo: "Tvoje pásmo je <b>Děti</b> — otázky jsou psané přímo pro tebe, žádné nudné letopočty.",
+      souperi: "Hraješ proti jiným dětem — dospělí mají svoji ligu, takže tady nikdo nemá náskok dvacet let.",
+      rating0: "Rating je tvoje číslo šikovnosti. Každý začíná na <b>1500</b> a po každé výhře povyroste. To tvoje zatím nikdo netestoval.",
+      ratingN: "Rating je tvoje číslo šikovnosti. Čím víc vyhraješ, tím výš poletí.",
+    },
+    starsi: {
+      uvod: "dobře že jsi tady.",
+      pasmo: "Tvoje pásmo je <b>Puberťáci</b> — otázky, co se dají pochytit ve škole nebo na internetu, ne v encyklopedii.",
+      souperi: "Nastupuješ proti ostatním puberťákům. Dospělí mají svoji ligu, takže se sem nevloudí.",
+      rating0: "Rating je číslo, které říká, jak ti to jde. Všichni startují na <b>1500</b> — to tvoje je zatím jen slib.",
+      ratingN: "Rating je číslo, které říká, jak ti to jde. Roste s výhrami, klesá s prohrami.",
+    },
+    dospeli: {
+      uvod: "vítej v aréně.",
+      pasmo: "Tvoje pásmo je <b>Dospělí</b> — otázky bez slev, včetně těch, u kterých se bude hodit tvářit se, že to byla samozřejmost.",
+      souperi: "Hraješ proti dospělým. Děti mají vlastní ligu, takže není na koho svádět prohru.",
+      rating0: "Rating je číslo, které měří, jak ti to jde. Startuje se na <b>1500</b> a to tvoje zatím nikdo neprověřil.",
+      ratingN: "Rating je číslo, které měří, jak ti to jde. Roste s výhrami, klesá s prohrami.",
+    },
+  };
+
   function req(path, opts) {
     opts = opts || {};
     var headers = {};
@@ -157,7 +223,7 @@ window.ZKOnline = (function () {
       '<div class="zk-authgrid">' +
       '<div class="zk-authside">' +
         '<img class="zk-authhero" src="' + AUTH_HERO + '" alt="" data-fb="hide">' +
-        '<div class="zk-authtag">Online</div>' +
+        '<div class="zk-authtag">Světová liga</div>' +
         "<h2>" + (isReg ? "Nový profil" : "Přihlášení") + "</h2>" +
         '<div class="zk-sub">' + esc(podtitul) + "</div>" +
       "</div>" +
@@ -626,26 +692,35 @@ window.ZKOnline = (function () {
   function renderLobby(msg) {
     stopAll();
     var r = (S.me.ratings || []).filter(function (x) { return x.band === S.me.band; })[0];
-    say("Vítej zpátky, " + S.me.nick + ".");
-    var pasmo = { deti: "Děti", starsi: "Puberťáci", dospeli: "Dospělí" }[S.me.band];
+    var v = vokativ(S.me.nick);
+    say(v ? "Vítej zpátky, " + v + "." : "Vítej zpátky!");
     var hotovo = dailyHotovo();
+    var t = LOBBY_TEXTY[S.me.band] || LOBBY_TEXTY.dospeli;
+    // Rating dává smysl teprve ve chvíli, kdy je z čeho ho počítat — do té doby se
+    // vysvětluje, co to vlastně je, místo aby se ukázalo holé číslo bez kontextu.
+    var ratingText = !r ? ""
+      : r.games ? t.ratingN + " Po " + r.games + " " + plur(r.games, "hře", "hrách", "hrách") +
+                  " máš <b>" + r.rating + "</b>."
+                : t.rating0;
 
     body.innerHTML =
       '<div class="qz-screen qz-modepick zk-wrap zk-lobby">' +
       backBar("Zpět do hry", leave) +
-      "<h2>Online</h2>" +
+      "<h2>Světová liga</h2>" +
       errBox(msg) +
-      // kdo jsem — jeden tichý proužek, ne dlaždice
-      '<div class="zk-idbar"><b>' + esc(S.me.nick) + "</b>" +
-        '<span class="zk-idband">' + esc(pasmo) + "</span>" +
-        (r ? '<span class="zk-idrating">Rating <b>' + r.rating + "</b> · " +
-             (r.games ? r.games + " " + plur(r.games, "hra", "hry", "her") : "Zatím nezahráno") + "</span>" : "") +
+      // Uvítání místo dřívějšího proužku „Kuba · PUBERŤÁCI · Rating 1500 · Zatím
+      // nezahráno" — ten byl sice úsporný, ale hráč z něj nepoznal, co která věc znamená.
+      '<div class="zk-welcome">' +
+        '<p class="zk-wel-hi">' + pozdrav(S.me.nick, t.uvod) + "</p>" +
+        '<p class="zk-wel-l">' + t.pasmo + "</p>" +
+        '<p class="zk-wel-l">' + t.souperi + "</p>" +
+        (ratingText ? '<p class="zk-wel-l">' + ratingText + "</p>" : "") +
       "</div>" +
       // JEDNA hlavní akce — hráč přišel hrát, ne spravovat účet
       '<button class="zk-hero" id="zk-live">' +
         dlazdiceObr("zk-live", "🎯") +
         '<span class="zk-herotext"><span class="t">Hrát teď</span>' +
-        '<span class="d">Najdeme ti soupeře. Nikdo poblíž? Nastoupí bot.</span></span>' +
+        '<span class="d">Najdeme ti soupeře na tvojí úrovni.</span></span>' +
         '<span class="zk-heroarrow">→</span>' +
       "</button>" +
       // další způsoby hry
