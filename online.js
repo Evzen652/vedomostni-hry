@@ -100,7 +100,7 @@ window.ZKOnline = (function () {
       ratingN: "Rating je číslo, které říká, jak ti to jde. Roste s výhrami, klesá s prohrami.",
     },
     dospeli: {
-      uvod: "vítej v aréně.",
+      uvod: "vítej v aréně vědomostí. Držíme palce.",
       pasmo: "Tvoje pásmo je <b>Dospělí</b> — otázky bez slev. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
       souperi: "Hraješ proti dospělým. Děti mají vlastní ligu, takže není na koho svádět prohru.",
       rating0: "Rating je číslo, které měří, jak ti to jde. Startuje se na <b>1500</b> a teprve pár odehraných her z toho udělá skutečné číslo.",
