@@ -263,7 +263,14 @@
   }
 
   // ---- reálný 3D glóbus v medailonku (natáčí se na zemi otázky) ----
-  const EARTH_TEX = "assets/earth.jpg";   // malovaná akvarelová mapa světa (equirekt 1024×512, geografie zachovaná); záloha původního blue-marble: assets/earth-bluemarble.jpg
+  // Malovaná akvarelová mapa světa, equirektangulární 1456×728 (od 2026-09-01; předtím
+  // 1024×512 — ta je v gitu, zálohu do assets/ schválně nedávám, celá složka se kopíruje
+  // do nasazení). Zálohu původního fotografického blue-marble drží assets/earth-bluemarble.jpg.
+  // GEOGRAFIE MUSÍ SEDĚT, není to dekorace: `spinGlobeTo()` natáčí kouli na souřadnice
+  // a značka `.qz-beacon` sedí napevno uprostřed rámu, takže posunutá pevnina = ukázaná
+  // špatná země. Nová textura byla proti staré ověřena blokovou korelací masek souše
+  // (medián odchylky 1,5° délky a 1° šířky, tj. ~4 px na glóbu při značce široké 13 px).
+  const EARTH_TEX = "assets/earth.jpg";
   // CSS animace řeší @media (prefers-reduced-motion), rotace glóbu je ale v JS — vypnout ji musíme tady
   const REDUCED_MOTION = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const COUNTRY_LL = { ar:[-54.44,-25.7], at:[16.31,48.18], au:[134,-25], be:[4.47,50.85], bg:[23.32,42.7], br:[-60,-3], ca:[-79.07,43.08], ch:[7.45,46.95], cl:[-68.5,-24], cn:[103,35], cz:[14.4,50.09], de:[10.75,47.56], dk:[10,56], ec:[-90.97,-0.95], eg:[31.2,30], es:[2.17,41.4], fi:[26,64], fj:[178.4,-18.1], fr:[2.12,48.8], ga:[9.6,-2.2], gb:[-1.83,51.18], gr:[23.73,37.97], hu:[19.04,47.5], id:[110.2,-7.61], ie:[-8,53.3], il:[35.23,31.78], in:[79,21], it:[12.32,45.44], jp:[139.7,35.7], ke:[36.8,-1.3], kp:[128.08,41.99], kr:[126.98,37.58], mn:[106.92,47.92], mx:[-99.1,19.4], my:[101.71,3.16], nl:[4.9,52.37], no:[9.5,61], nz:[174.8,-41.3], pe:[-72.54,-13.16], ph:[121.14,16.93], pk:[74.32,31.59], pl:[19.94,50.06], pt:[-8,39.5], ro:[26.1,44.43], ru:[100,62], sa:[37.95,26.79], se:[18.3,57.64], sk:[17.1,48.14], th:[100.49,13.74], tr:[28.98,41.01], tw:[121.56,25.03], ua:[30.51,50.45], us:[-98.5,39.8], vn:[107.18,20.91], za:[24.7,-28.5] };   // přibližný střed země pro natočení
@@ -273,7 +280,7 @@
     try {
       const cv=document.createElement("canvas"); cv.width=cv.height=460; cv.style.width="100%"; cv.style.height="100%"; cv.style.display="block";
       const renderer=new THREE.WebGLRenderer({ canvas:cv, antialias:true, alpha:true });
-      renderer.setPixelRatio(1); renderer.setSize(460,460,false);
+      renderer.setPixelRatio(1); renderer.setSize(460,460,false);   // přepočítá resizeGlobe() při vložení
       if(THREE.sRGBEncoding!==undefined) renderer.outputEncoding=THREE.sRGBEncoding;
       const scene=new THREE.Scene();
       // POZOR, tohle je jedna ze DVOU nezávislých pák a pletou se:
@@ -288,6 +295,9 @@
       scene.add(new THREE.AmbientLight(0xffffff,0.7));
       const key=new THREE.DirectionalLight(0xffffff,0.0); key.position.set(-1,0.5,1.1); camera.add(key); scene.add(camera);
       const tex=new THREE.TextureLoader().load(EARTH_TEX); if(THREE.sRGBEncoding!==undefined) tex.encoding=THREE.sRGBEncoding;
+      // Anizotropní filtrování: u koule je textura na okrajích viděná hodně šikmo a bez
+      // tohohle se tam slévá do kaše. Karta hodnotu stejně ořízne na to, co umí.
+      try { tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); } catch(e){ /* starší three */ }
       const earth=new THREE.Mesh(new THREE.SphereGeometry(1,48,32), new THREE.MeshPhongMaterial({ map:tex, shininess:0 }));
       scene.add(earth);
       g3={ renderer, scene, camera, earth, canvas:cv, targetY:0, curY:0, targetX:0, curX:0, auto:false };
@@ -312,10 +322,33 @@
     g3.targetY=ty;
     g3.targetX=ll[1]*Math.PI/180;                        // plný náklon podle šířky, ať míří přesně na zemi
   }
+  // Kreslicí plocha musí mít tolik pixelů, kolik jich displej skutečně zobrazí. Do
+  // 2026-09-01 tu bylo natvrdo 460×460 s `setPixelRatio(1)`, takže na hustém displeji
+  // (nebo při přiblížení prohlížeče, které v Chrome zvedá `devicePixelRatio`) prohlížeč
+  // canvas nafukoval a glóbus byl měkký, aniž by za to mohla textura.
+  //
+  // POZOR NA PAST, na kterou jsem naletěl: první verze počítala jen `css × dpr`, což
+  // při dpr 1 vyšlo 290 px — tedy MÍŇ než dosavadních 460. Naměřeno a vráceno. Těch
+  // 460 nebylo omylem: canvas se kreslil ve větším rozlišení, než se zobrazoval, takže
+  // se okraj koule a hrany pevnin převzorkovaly. Násobek 1,6 to zachovává a na hustém
+  // displeji navíc přidá. Podlaha 460 zajistí, že to nikdy nespadne pod původní stav.
+  // Strop 1024 px je z výkonu, ne z textury: v medailonu je vidět ~103° délky, což je
+  // při textuře 1456 px na 360° zhruba 416 texturových pixelů — nad 1024 už se jen
+  // zvětšuje. Textura 1456×728 není mocnina dvojky; ověřeno, že prohlížeč umí WebGL2,
+  // kde to nevadí (ve WebGL1 by three vypnulo mipmapy a vynutilo clamp).
+  function resizeGlobe(){
+    if(!g3 || !g3.canvas) return;
+    const host=g3.canvas.parentElement; if(!host) return;
+    const css=host.clientWidth || 290;
+    const px=Math.min(Math.max(Math.round(css * (window.devicePixelRatio||1) * 1.6), 460), 1024);
+    if(px<=0 || g3.px===px) return;
+    g3.px=px; g3.renderer.setSize(px, px, false);
+  }
+  window.addEventListener("resize", resizeGlobe);
   function mountGlobeMedal(cc){
     const medal=document.getElementById("qz-medal"); if(!medal) return;
     initGlobe3d();
-    if(g3 && g3.canvas){ medal.innerHTML=""; medal.appendChild(g3.canvas); spinGlobeTo(cc); }
+    if(g3 && g3.canvas){ medal.innerHTML=""; medal.appendChild(g3.canvas); resizeGlobe(); spinGlobeTo(cc); }
     else { medal.innerHTML='<div class="land a"></div><div class="land b"></div>'; }   // fallback (Three.js chybí)
   }
   // úvodní obrazovka: velký glóbus v klidové rotaci za kartami režimů
@@ -324,7 +357,7 @@
     initGlobe3d();
     // Glóbus je sdílený singleton, takže se musí zhasnout zvýraznění z poslední otázky —
     // na rozcestníku nemá svítit žádná země.
-    if(g3 && g3.canvas){ bg.innerHTML=""; bg.appendChild(g3.canvas); g3.auto=true; g3.targetX=0.32; }
+    if(g3 && g3.canvas){ bg.innerHTML=""; bg.appendChild(g3.canvas); resizeGlobe(); g3.auto=true; g3.targetX=0.32; }
   }
 
   async function ensureData(){
@@ -725,7 +758,7 @@
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:COUNTRY, fn:backToCountry}, {label:"Téma"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
-      <h2>${flagStamp(cc)} ${esc(COUNTRY)} | Vyber témata</h2>
+      <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}${esc(COUNTRY)} | Vyber témata</h2>
       <div class="qz-tiles qz-tiles-sec">${allTile}${secTiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
     </div>`;
@@ -1059,6 +1092,7 @@
   function picframeHtml(q){
     const country = esc(q.country||COUNTRY), section = esc(q.section||"");
     return `<div class="qz-picframe" id="qz-pic">
+      <img class="qz-picbg" id="qz-pic-bg" src="img/${esc(q.id)}.jpg" alt="" aria-hidden="true">
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
       <div class="qz-pic-fallback" id="qz-pic-fb">${flagStamp(q.cc,"qz-flagbig")}<span class="qz-pic-fb-text"><span class="country">${country}</span><span class="sec">${section}</span></span></div>
       <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
@@ -1073,8 +1107,11 @@
   function wirePic(){
     const img=body.querySelector("#qz-pic-img"), fb=body.querySelector("#qz-pic-fb"), pic=body.querySelector("#qz-pic");
     if(!img) return;
-    const show=()=>{ img.style.display="block"; fb.style.display="none"; pic.classList.remove("qz-pic-broken"); };
-    const showFallback=()=>{ img.style.display="none"; fb.style.display="flex"; pic.classList.add("qz-pic-broken"); };
+    // Rozmazaný podklad je jen kopie téhož souboru — musí mizet a naskakovat s obrázkem,
+    // jinak by u chybějící ilustrace zůstal pod razítkem země šedý čtverec s ikonou.
+    const bg=body.querySelector("#qz-pic-bg");
+    const show=()=>{ img.style.display="block"; if(bg) bg.style.display="block"; fb.style.display="none"; pic.classList.remove("qz-pic-broken"); };
+    const showFallback=()=>{ img.style.display="none"; if(bg) bg.style.display="none"; fb.style.display="flex"; pic.classList.add("qz-pic-broken"); };
     showFallback();
     img.onload=show;
     img.onerror=showFallback;
