@@ -1,6 +1,13 @@
-import { BANDS, TIME_CONTROLS, shuffledOrder, json, fail, newId } from '../../_lib/game.js';
+import { BANDS, TIME_CONTROLS, shuffledOrder, json, fail, newId, checkRateLimit } from '../../_lib/game.js';
 import { currentUser } from '../../_lib/auth.js';
 import { pickQuestions, markSeen } from '../../_lib/pool.js';
+
+// Klouzavé okno na ZALOŽENÍ hry, per uživatel (2026-09-02) — bez limitu šlo skriptem
+// zaplavit tabulku `games` donekonečna. 30 za hodinu je nad tím, co udělá reálná hra
+// (jeden souboj trvá pár minut) — `test:api` má nejnáročnější scénář 14 her z jednoho
+// účtu v kalibračních smyčkách, tohle mu zůstává hodně nad hlavou.
+const MAX_GAMES = 30;
+const WINDOW_MS = 60 * 60 * 1000;
 
 /**
  * POST /api/game  { mode?, band?, time_control? }
@@ -14,6 +21,12 @@ import { pickQuestions, markSeen } from '../../_lib/pool.js';
 export async function onRequestPost({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
+
+  const pod = await checkRateLimit(
+    () => env.DB.prepare('SELECT game_tries AS tries, game_tries_at AS tries_at FROM users WHERE id = ?').bind(me.id).first(),
+    (tries, at) => env.DB.prepare('UPDATE users SET game_tries = ?, game_tries_at = ? WHERE id = ?').bind(tries, at, me.id).run(),
+    MAX_GAMES, WINDOW_MS);
+  if (!pod) return fail('příliš mnoho založených her, zkus to za chvíli', 429);
 
   let body = {};
   try { body = await request.json(); } catch (e) { /* prázdné tělo = výchozí */ }

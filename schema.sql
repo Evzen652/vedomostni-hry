@@ -4,6 +4,7 @@
 -- POZOR: každá nová tabulka musí přibýt i sem. Když se na to zapomene, skript
 -- spadne v půlce na „table X already exists" a databáze zůstane rozestavěná —
 -- s částí tabulek starých a částí nových.
+DROP TABLE IF EXISTS reg_attempts;
 DROP TABLE IF EXISTS pin_resets;
 DROP TABLE IF EXISTS game_answers;
 DROP TABLE IF EXISTS game_players;
@@ -70,6 +71,13 @@ CREATE TABLE users (
   -- takže útočníka nezpomalí víc než prvních 10 minut). (2026-09-01)
   friend_tries    INTEGER NOT NULL DEFAULT 0,
   friend_tries_at INTEGER NOT NULL DEFAULT 0,
+  -- Klouzavé okno na zakládání her a turnajů (2026-09-02) — bez limitu šlo skriptem
+  -- zaplavit tabulky games/tournaments donekonečna. Odděleně od friend_tries: založení
+  -- hry není „neúspěch", počítá se KAŽDÝ pokus, ne jen ty co selžou.
+  game_tries      INTEGER NOT NULL DEFAULT 0,
+  game_tries_at   INTEGER NOT NULL DEFAULT 0,
+  tourney_tries    INTEGER NOT NULL DEFAULT 0,
+  tourney_tries_at INTEGER NOT NULL DEFAULT 0,
   -- NEPOVINNÝ e-mail, jediné k čemu slouží je obnova zapomenutého PINu.
   -- Schválně BEZ UNIQUE: rodič musí smět mít stejný e-mail u víc dětí.
   -- U dětského pásma ho má vyplnit rodič (viz docs/online-rezim.md, sekce 5).
@@ -234,6 +242,17 @@ CREATE TABLE tournament_queue (
   PRIMARY KEY (tournament_id, user_id)
 );
 CREATE INDEX idx_tq_lookup ON tournament_queue(tournament_id, game_id);
+
+-- Klouzavé okno na registraci, klíčované IP adresou (2026-09-02) — v době založení
+-- účet ještě neexistuje, takže limit nejde pověsit na `users` jako u friend_tries.
+-- Bez tohohle šlo skriptem navyrábět libovolný počet účtů (sybil farming ratingu
+-- i denního žebříčku). Klíč je syrová IP, ne hash — tabulka nedrží nic citlivějšího,
+-- co by stálo za maskování, a hash by jen znemožnil ruční kontrolu při ladění.
+CREATE TABLE reg_attempts (
+  ip       TEXT PRIMARY KEY,
+  tries    INTEGER NOT NULL DEFAULT 0,
+  tries_at INTEGER NOT NULL DEFAULT 0
+);
 
 -- ---------------------------------------------------------------- obnova PINu
 -- Token se ukládá jen jako otisk: kdo by se dostal k databázi, nesmí z ní

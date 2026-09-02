@@ -50,3 +50,27 @@ export const fail = (msg, status = 400) => json({ error: msg }, status);
 export function newId() {
   return 'g' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 }
+
+/**
+ * Klouzavé okno pro rate limit (2026-09-02). Na rozdíl od `friends.js`, kde se
+ * počítají jen NEÚSPĚŠNÉ pokusy (kdo kód dostal, nikdy nenarazí), se tady počítá
+ * KAŽDÉ volání — u registrace/založení hry je totiž pokus sám o sobě to, co
+ * omezujeme, ne hádání něčeho cizího.
+ *
+ * `ziskej`/`uloz` jsou callbacky, protože per-uživatele (UPDATE existujícího
+ * řádku v `users`) a per-IP (UPSERT do `reg_attempts`, řádek nemusí existovat)
+ * potřebují jiné SQL — tahle funkce zná jen počítání, ne úložiště.
+ *
+ * Vrací `true` = pod limitem (a počítadlo se ZAPSALO navýšené). `false` = nad
+ * limitem — nezapisuje se nic, ať počítadlo neroste do nekonečna při opakovaném
+ * ťukání po zamčení (chování stejné jako klouzavé okno ve `friends.js`).
+ */
+export async function checkRateLimit(ziskej, uloz, max, windowMs) {
+  const now = Date.now();
+  const stav = await ziskej();
+  const vOkne = now - (stav?.tries_at || 0) < windowMs;
+  const pokusu = vOkne ? (stav?.tries || 0) : 0;
+  if (pokusu >= max) return false;
+  await uloz(pokusu + 1, vOkne ? (stav?.tries_at || now) : now);
+  return true;
+}
