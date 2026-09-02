@@ -45,7 +45,12 @@
 
   // --- malé ikonky HUD (jednotné s paletou; velikost 1em, inline; žádné emoji) ---
   const _sw = 'style="width:1em;height:1em;vertical-align:-0.14em;flex:none;display:inline-block"';
-  const ICO_STAR  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" stroke="#b98b3e" stroke-width="1" stroke-linejoin="round" d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 22l-5.3 2.8 1.1-5.9L3.5 15l5.9-.8z"/></svg>`;
+  // Cesta je SPOČÍTANÁ, ne kreslená od oka: 10 bodů po 36°, střídavě poloměr 9,4 a 4,35
+  // od středu (12; 12,6). Původní verze měla jen 9 bodů, nestřídala poloměry a jeden bod
+  // ležel na y = 24,8, tedy MIMO viewBox — ořízl se a hvězdě chyběl levý dolní hrot.
+  // V 16 px to vypadalo jako placatá skvrna. Kdyby se hvězda měnila, spočítej ji zas:
+  // bod i = (12 + r·cos(−90° + i·36°), 12,6 + r·sin(…)), r střídá vnější a vnitřní.
+  const ICO_STAR  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" stroke="#b98b3e" stroke-width="1" stroke-linejoin="round" d="M12 3.2L14.56 9.08L20.94 9.7L16.14 13.94L17.53 20.2L12 16.95L6.47 20.2L7.86 13.94L3.06 9.7L9.44 9.08Z"/></svg>`;
   // hvězdička pro obtížnost — o něco „malovanější" než ICO_STAR (kulatější hroty, lesklý fasetový highlight)
   const ICO_STAR_DIFF = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#e6b84f" stroke="#a8752a" stroke-width="1.2" stroke-linejoin="round" d="M12 2.4l2.9 5.9 6.5.9-4.7 4.6 1.1 6.6L12 17.3l-5.8 3.1 1.1-6.6-4.7-4.6 6.5-.9z"/><path fill="#fdf0c8" opacity=".6" d="M12 4.6l1.5 3-1.5 1.9-1.5-1.9z"/></svg>`;
   const DIFF_LABEL = { 1:"Lehká", 2:"Střední", 3:"Těžká" };   // obtížnost otázky (q.difficulty 1–3), slovně vedle hvězdiček
@@ -1206,6 +1211,19 @@
       <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
     </div>`;
   }
+  // JEDINÉ okno z quiz.js ven. Online režim si otázku kreslí vlastní funkcí
+  // (`nextQuestion()` v online.js) a do téhle closure nevidí, takže mu rám s glóbem
+  // i ilustrací chyběl úplně — a mřížka `.qz-play` mu přitom sloupec rezervovala.
+  // Vystavují se SCHVÁLNĚ jen čtyři funkce kolem `.qz-picframe`, ne vnitřek hry:
+  // stav (`S`, `data`) zůstává zavřený, jinak by se online mohl začít vázat na offline.
+  // Obě části sdílí `#qz-body`, takže `body.querySelector` uvnitř funguje i odsud.
+  window.ZKPicframe = {
+    html: q => picframeHtml(q),        // řetězec do innerHTML
+    wire: () => wirePic(),             // navěsí onload/onerror u ilustrace
+    globe: cc => mountGlobeMedal(cc),  // připne sdílený 3D glóbus a natočí na zemi
+    reveal: () => revealPic(),         // po odpovědi odhalí ilustraci
+  };
+
   // odhalení fotky u odpovědi — fotka je odměna, ať ji není nutné hledat scrollem
   function revealPic(){
     const pic=body.querySelector("#qz-pic"); if(!pic) return;

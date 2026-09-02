@@ -894,6 +894,28 @@ window.ZKOnline = (function () {
     });
   }
 
+  /* Rám s glóbem a ilustrací u otázky (2026-09-03). Online si otázku kresli sám, takže
+   * mu tenhle rám do teď chyběl — hráč u zeměpisné otázky neviděl, kde ta země je.
+   * Kreslí ho quiz.js přes `window.ZKPicframe`; když modul chybí (samostatně nasazený
+   * online, jiný pořádek skriptů), vrátí se prázdný řetězec a mřížka `.qz-play` dá kartě
+   * obě sloupce — přesně jako dřív. Proto to nikde nekontroluje `if` navíc.
+   *
+   * `cc` posílá server od téhož data; u starší rozehrané hry chybět může, takže se
+   * dobere z prefixu `id` (`se-k-…`). Bez něj by glóbus mířil na fallback [0,20],
+   * tedy do Guinejského zálivu — přesně chyba, co se řešila 2026-08-29. */
+  function picframe(q) {
+    if (!window.ZKPicframe) return "";
+    return window.ZKPicframe.html({
+      id: q.id, cc: q.cc || String(q.id || "").split("-")[0],
+      country: q.country, section: q.section,
+    });
+  }
+  function zapojPicframe(q) {
+    if (!window.ZKPicframe) return;
+    window.ZKPicframe.wire();
+    window.ZKPicframe.globe(q.cc || String(q.id || "").split("-")[0]);
+  }
+
   function nextQuestion() {
     stopAll();
     var g = S.game;
@@ -916,7 +938,8 @@ window.ZKOnline = (function () {
             return '<button class="qz-a" data-i="' + i + '">' + esc(o) +
                    "<small>" + "ABCD"[i] + "</small></button>";
           }).join("") + "</div>" +
-        "</div></div>";
+        "</div>" + picframe(q) + "</div>";
+      zapojPicframe(q);
 
       var started = Date.now();
       var bar = body.querySelector("#zk-timer").firstElementChild;
@@ -983,6 +1006,8 @@ window.ZKOnline = (function () {
         else if (i === pick) b.classList.add("bad");
       });
       say(a.correct ? "Správně!" : pick === -1 ? "Čas vypršel." : "Tentokrát vedle.");
+      // Ilustrace je odměna za odpověď, ne nápověda — do téhle chvíle je v rámu glóbus.
+      if (window.ZKPicframe) window.ZKPicframe.reveal();
       var pill = body.querySelector("#zk-score");
       if (pill) pill.textContent = a.score + " b";
 
@@ -994,30 +1019,17 @@ window.ZKOnline = (function () {
         ? '<button class="qz-more" id="zk-more">Více o ' + esc(a.about || "tom") +
           ' <span class="qz-more-ico">💡</span></button>'
         : "";
-      // Ilustrace se odhaluje AŽ TEĎ, ne u otázky — obrázek často odpověď prozradí
-      // (kapr ve vaně napoví, kam se dává kapr). Stejné pravidlo jako v sólu,
-      // jen tu není glóbus, který by mezitím rám vyplnil, takže se rám do té doby
-      // vůbec nevykreslí. Když fotka neexistuje, `onerror` celý rám odstraní —
-      // prázdné místo by vypadalo jako chyba.
-      var pic = q.id
-        ? '<div class="zk-picframe" id="zk-pic"><img src="img/' + esc(q.id) + '.jpg" alt=""></div>'
-        : "";
+      // Ilustrace se do karty UŽ NEVKLÁDÁ. Bývala tu proto, že online neměl rám s glóbem
+      // a jinde by se obrázek neobjevil — od 2026-09-03 rám má (viz picframe() výš), takže
+      // by se ilustrace kreslila dvakrát vedle sebe. Odhaluje ji `ZKPicframe.reveal()`
+      // o kus níž, pořád až po odpovědi: obrázek často odpověď prozradí (kapr ve vaně
+      // napoví, kam se dává kapr).
       box.insertAdjacentHTML("beforeend",
-        pic +
         '<div class="qz-quipbox"><div class="qz-hlaska">' + esc(a.quip || "") + "</div></div>" +
         '<div class="qz-frow"><div class="qz-expl">' + esc(a.explanation || "") + "</div>" +
         '<div class="qz-fbtns">' + more +
         '<button class="qz-next" id="zk-next">' +
           (a.done ? "Výsledek" : "Další otázka") + " →</button></div></div>");
-
-      var picEl = body.querySelector("#zk-pic");
-      if (picEl) {
-        var im = picEl.firstElementChild;
-        im.addEventListener("error", function () { picEl.remove(); });
-        im.addEventListener("load", function () { picEl.classList.add("on"); });
-        if (im.complete && im.naturalWidth > 0) picEl.classList.add("on");
-        else if (im.complete) picEl.remove();
-      }
 
       body.querySelector("#zk-next").addEventListener("click", function () {
         if (a.done) showResult(S.game.id, S.game.mode, S.game.tournamentId);

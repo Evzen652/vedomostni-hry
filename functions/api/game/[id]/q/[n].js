@@ -56,6 +56,10 @@ export async function onRequestGet({ params, request, env }) {
     // tolerované (docs/online-rezim.md, Anti-cheat) — na rozdíl od odpovědi,
     // která tu být nesmí za žádnou cenu.
     id: q.id,
+    // `cc` je tu kvůli glóbu a vlajce v rámu u otázky (2026-09-03). Odvodit se dá
+    // i z prefixu `id`, ale to je nepsaná dohoda o tvaru id — radši výslovně.
+    // Nic to neprozrazuje: jméno země je v payloadu hned na dalším řádku.
+    cc: q.cc,
     country: q.country,
     section: q.section,
     question: q.question,

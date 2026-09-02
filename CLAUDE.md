@@ -53,6 +53,43 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-03 — Online otázky mají konečně glóbus a ilustraci. A hvězdička u skóre byla rozbitá geometrie, ne špatný vkus.**
+  Hráčova otázka: *„proč u online otázek není globus?"* Odpověď: **online si otázku kreslí
+  vlastní funkcí.** `nextQuestion()` v [online.js](online.js) recykluje jen CSS třídy
+  `.qz-play`/`.qz-box` a nikdy nevolala `picframeHtml()`, takže rám neexistoval vůbec.
+  Není to rozhodnutí, je to díra z doby, kdy online vznikal — 2026-09-01 jsem opravil jen
+  její důsledek (mřížka rezervovala prázdný sloupec), ne příčinu.
+  - **`window.ZKPicframe` je JEDINÉ okno z quiz.js ven** (`html`/`wire`/`globe`/`reveal`).
+    Schválně jen čtyři funkce kolem `.qz-picframe` — stav (`S`, `data`) zůstává zavřený,
+    jinak by se online začal vázat na offline. Funguje to proto, že **obě části sdílí
+    `#qz-body`**, takže `body.querySelector()` uvnitř quiz.js trefí i online obrazovku.
+    Když modul chybí, `picframe()` vrátí prázdný řetězec a mřížka dá kartě obě sloupce —
+    přesně jako dřív, takže online.js nepotřebuje žádné `if` navíc.
+  - **Server nově posílá `cc`** ([q/[n].js](functions/api/game/[id]/q/[n].js)). Dalo by se
+    odvodit z prefixu `id`, ale to je nepsaná dohoda o tvaru id; klient si ji drží jen
+    jako fallback pro hry rozehrané před touhle změnou. Nic to neprozrazuje — jméno země
+    je v payloadu vedle.
+  - **Vlastní ilustrace uvnitř karty (`.zk-picframe`) SMAZÁNA** i s CSS. Existovala právě
+    proto, že online neměl rám; s ním by se obrázek kreslil dvakrát vedle sebe. Její
+    komentář ten důvod sám popisoval („jen tu není glóbus, který by rám vyplnil").
+  - **PAST, KTERÁ MĚ STÁLA NEJVÍC ČASU: `requestAnimationFrame` NEBĚŽÍ, když je panel
+    prohlížeče skrytý.** Glóbus proto v testech „nikdy nedotočil na zemi" — po devíti
+    sekundách ukazoval Karibik místo Maďarska a vypadalo to na skutečnou chybu. Ve
+    skutečnosti se posunul jen tehdy, když screenshot vynutil překreslení. Doloženo tím,
+    že smyčka `rAF` se v konzoli nedokončila a nástroj sám ohlásil „the Browser pane is
+    currently hidden". **Než začneš ladit animaci nebo CSS přechod přes headless panel,
+    ověř, že rAF vůbec běží** — jinak laboruješ s artefaktem.
+  - **Druhá slepá ulička: otisk WebGL canvasu přes `drawImage` vrací PRÁZDNO.** Bez
+    `preserveDrawingBuffer` je buffer po vykreslení zahozený, takže moje „měření, jestli
+    se glóbus hýbe" vracelo samé nuly a tvářilo se jako „glóbus stojí". Na WebGL použij
+    screenshot (ten kompozici zachytí), ne čtení pixelů z canvasu.
+  - **Hvězdička u skóre (`ICO_STAR`) měla ROZBITOU cestu.** Devět bodů místo deseti,
+    nestřídající se poloměry a jeden bod na `y = 24,8`, tedy **mimo `viewBox`** — ořízl se
+    a hvězdě chyběl levý dolní hrot; v 16 px to byla placatá skvrna. Nahrazeno
+    **spočítanou** cestou (10 bodů po 36°, poloměry 9,4 a 4,35 od středu 12; 12,6).
+    `ICO_STAR_DIFF` u obtížnosti je v pořádku, ta se neměnila.
+  - Ověřeno: `test:offline` 679, `test:api` 138.
+
 - **2026-09-03 — Režim „Online" se jmenuje „Světová liga". Vtip je v tom, že je česká.**
   Hráčova věta: *„název online je hrozná nuda."* Měl pravdu a bylo to horší, než se zdálo:
   ostatní režimy se jmenují **Sólo jízda / Párty souboj / Škola hrou**, takže „Online"
