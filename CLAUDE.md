@@ -85,9 +85,22 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     screenshot (ten kompozici zachytí), ne čtení pixelů z canvasu.
   - **Hvězdička u skóre (`ICO_STAR`) měla ROZBITOU cestu.** Devět bodů místo deseti,
     nestřídající se poloměry a jeden bod na `y = 24,8`, tedy **mimo `viewBox`** — ořízl se
-    a hvězdě chyběl levý dolní hrot; v 16 px to byla placatá skvrna. Nahrazeno
-    **spočítanou** cestou (10 bodů po 36°, poloměry 9,4 a 4,35 od středu 12; 12,6).
-    `ICO_STAR_DIFF` u obtížnosti je v pořádku, ta se neměnila.
+    a hvězdě chyběl levý dolní hrot; v 16 px to byla placatá skvrna. Nejdřív opraveno
+    **spočítanou** cestou (10 bodů po 36°, poloměry 9,4 a 4,35 od středu 12; 12,6),
+    nakonec ale **nahrazeno malovanou `assets/ico-star.png`** — appka je celá malovaná
+    a plochý vektor v ní působil jako cizí těleso; `ico-resume.png` byl precedens.
+    Porovnáno vedle sebe ve **skutečných 17 px** i ve čtyřnásobku: v odznaku jsou obě
+    čitelné, ve zvětšení maluje jasně vyhrává. `ICO_STAR_DIFF` u obtížnosti se neměnila,
+    ta je v pořádku (ověřeno vykreslením, ne parserem — viz níž).
+  - **Bílé pozadí z Gemini se odstraňuje ZÁPLAVOU OD OKRAJŮ, ne prahem na bílou.**
+    Práh by udělal díry ve světlých místech uvnitř hvězdy. Prompt je uložený
+    v `data/ui-irony-prompts.json` pod `ico-star` (jako jediný má i pokyn k pozadí,
+    protože ikona potřebuje průhlednost, ne papír).
+  - **Past: cesty SVG nejde parsovat naivně.** Můj rozklad `d` atributu hlásil u obou
+    hvězd nesmyslné počty bodů, protože neuměl zkrácený zápis (`l2.9 5.9 6.5.9` jsou
+    DVA příkazy, ne jeden se čtyřmi čísly) — u `ICO_STAR_DIFF` mě to málem svedlo
+    „opravovat" ikonu, která byla celou dobu správně. **Vykresli a podívej se**, nebo
+    použij `getBBox()`/`getTotalLength()` v prohlížeči.
   - Ověřeno: `test:offline` 679, `test:api` 138.
 
 - **2026-09-03 — Režim „Online" se jmenuje „Světová liga". Vtip je v tom, že je česká.**

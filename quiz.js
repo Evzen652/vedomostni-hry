@@ -45,12 +45,14 @@
 
   // --- malé ikonky HUD (jednotné s paletou; velikost 1em, inline; žádné emoji) ---
   const _sw = 'style="width:1em;height:1em;vertical-align:-0.14em;flex:none;display:inline-block"';
-  // Cesta je SPOČÍTANÁ, ne kreslená od oka: 10 bodů po 36°, střídavě poloměr 9,4 a 4,35
-  // od středu (12; 12,6). Původní verze měla jen 9 bodů, nestřídala poloměry a jeden bod
-  // ležel na y = 24,8, tedy MIMO viewBox — ořízl se a hvězdě chyběl levý dolní hrot.
-  // V 16 px to vypadalo jako placatá skvrna. Kdyby se hvězda měnila, spočítej ji zas:
-  // bod i = (12 + r·cos(−90° + i·36°), 12,6 + r·sin(…)), r střídá vnější a vnitřní.
-  const ICO_STAR  = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" stroke="#b98b3e" stroke-width="1" stroke-linejoin="round" d="M12 3.2L14.56 9.08L20.94 9.7L16.14 13.94L17.53 20.2L12 16.95L6.47 20.2L7.86 13.94L3.06 9.7L9.44 9.08Z"/></svg>`;
+  // Hvězda u skóre je MALOVANÁ (assets/ico-star.png), ne SVG — appka je celá malovaná
+  // a plochý vektor mezi tím působil jako cizí těleso. Stejný vzor jako ico-resume.png.
+  // Zdroj je 96 px na zobrazovaných ~17, takže i na retině je z čeho brát.
+  // Vyrobeno v Gemini (prompt v data/ui-irony-prompts.json), bílé pozadí odstraněno
+  // ZÁPLAVOU OD OKRAJŮ, ne prahem na bílou — ta by udělala díry ve světlých místech
+  // uvnitř hvězdy. Předchozí SVG mělo navíc rozbitou cestu (9 bodů místo 10, jeden bod
+  // mimo viewBox), takže mu chyběl levý dolní hrot; historie viz CLAUDE.md 2026-09-03.
+  const ICO_STAR  = `<img src="assets/ico-star.png" alt="" ${_sw}>`;
   // hvězdička pro obtížnost — o něco „malovanější" než ICO_STAR (kulatější hroty, lesklý fasetový highlight)
   const ICO_STAR_DIFF = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#e6b84f" stroke="#a8752a" stroke-width="1.2" stroke-linejoin="round" d="M12 2.4l2.9 5.9 6.5.9-4.7 4.6 1.1 6.6L12 17.3l-5.8 3.1 1.1-6.6-4.7-4.6 6.5-.9z"/><path fill="#fdf0c8" opacity=".6" d="M12 4.6l1.5 3-1.5 1.9-1.5-1.9z"/></svg>`;
   const DIFF_LABEL = { 1:"Lehká", 2:"Střední", 3:"Těžká" };   // obtížnost otázky (q.difficulty 1–3), slovně vedle hvězdiček
