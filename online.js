@@ -93,7 +93,7 @@ window.ZKOnline = (function () {
       ratingN: "Rating je tvoje číslo šikovnosti. Čím víc vyhraješ, tím výš poletí.",
     },
     starsi: {
-      uvod: "dobře že jsi tady.",
+      uvod: "dobře, že jsi tady.",
       pasmo: "Tvoje pásmo je <b>Puberťáci</b> — otázky, co se dají pochytit ve škole nebo na internetu, ne v encyklopedii.",
       souperi: "Nastupuješ proti ostatním puberťákům. Dospělí mají svoji ligu, takže se sem nevloudí.",
       rating0: "Rating je číslo, které říká, jak ti to jde. Všichni startují na <b>1500</b> — to tvoje je zatím jen slib.",
@@ -101,7 +101,7 @@ window.ZKOnline = (function () {
     },
     dospeli: {
       uvod: "vítej v aréně.",
-      pasmo: "Tvoje pásmo je <b>Dospělí</b> — otázky bez slev, včetně těch, u kterých se bude hodit tvářit se, že to byla samozřejmost.",
+      pasmo: "Tvoje pásmo je <b>Dospělí</b> — otázky bez slev. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
       souperi: "Hraješ proti dospělým. Děti mají vlastní ligu, takže není na koho svádět prohru.",
       rating0: "Rating je číslo, které měří, jak ti to jde. Startuje se na <b>1500</b> a to tvoje zatím nikdo neprověřil.",
       ratingN: "Rating je číslo, které měří, jak ti to jde. Roste s výhrami, klesá s prohrami.",
