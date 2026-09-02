@@ -14,11 +14,219 @@ Struktura viz [README.md](README.md).
 **Komunikace s uživatelem: vždy česky.** Bez ohledu na to, v jakém jazyce je psaný kód,
 komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášky) jsou vždy v češtině.
 
+**ŽÁDNÝ TEXT V APPCE NEZAČÍNÁ MALÝM PÍSMENEM. Platí to VŠUDE, bez výjimky.**
+Nadpisy, tlačítka, placeholdery, štítky, prázdné stavy, chybové hlášky, popisky dlaždic
+— a **taky každá HODNOTA za dvojtečkou** („Úroveň obtížnosti: **D**ěti", „Kdy: **P**řed
+22 hodinami"). Hodnota za dvojtečkou je začátek textu, ne pokračování věty; přesně na tom
+jsem 2026-09-02 pohořel, ačkoli pravidlo platí od 2026-09-01.
+- **Konstanty se kvůli tomu NEPŘEPISUJÍ na velké.** `BAND_NAMES` a spol. jsou malé
+  schválně, protože uvnitř věty se tak hodí („Pásmo „děti" má jen 4 otázky…"). Velké
+  písmeno nasazuje až **zobrazení** — v `quiz.js` je na to `velke()`.
+- **Grep na tohle nestačí** a je to zaplacená zkušenost (2026-09-01): mine texty skládané
+  za běhu i ty uprostřed řádku za oddělovačem. Kontroluje se **skenem textových uzlů
+  v prohlížeči** přes všechny obrazovky (`TreeWalker` nad `#qz-body`, hledá `/^[a-záč…]/`).
+- Jediná výjimka je e-mailový placeholder „Např. adresa@priklad.cz" — sama adresa velkým
+  začínat nemůže, aniž by vypadala jako chyba, proto je před ní „Např.".
+
+**VZDUŠNOST: mezery musí dělat SKUPINY, ne jen odsazovat. A všechno nemusí být v rámečku.**
+Opakovaná výtka hráče (2026-09-03: *„to, co děláš pořád je, že všechno lepíš strašně na
+sebe… nemá to žádnou vzdušnost a odlehčenost"*). Je to má výchozí chyba, ne jednorázová —
+při psaní nového CSS s tím počítej.
+- **Jedna hodnota `gap` na celý sloupec je ta chyba.** Když má stejnou mezeru nadpis
+  s odstavcem jako dvě sousední dlaždice, oko nepozná, co k čemu patří, a obrazovka
+  splyne v jeden hustý blok. Odstupňuj to: **uvnitř skupiny míň, mezi skupinami víc.**
+  Ověřený rytmus lobby (`.zk-lobby`): nadpis → text **55**, text → hlavní akce **34**,
+  hlavní akce → dlaždice hraní **18**, hraní → utility **30**. Základ je 18 px a hranice
+  vrstev si přidávají vlastní `margin`.
+- **Próza NEPATŘÍ do rámečku.** Uvítání v lobby mělo podklad i obrys a soupeřilo s kartami
+  pod sebou — čtyři rámečky nad sebou. Po sundání boxu se plocha otevřela a hlavní akce
+  zůstala jediná silná věc. Rámeček si zaslouží to, na co se klikne, ne to, co se čte.
+- **Text potřebuje víc než `line-height: 1.4`.** U delších odstavců **1.6** a mezi
+  odstavci aspoň 9 px, jinak to je zeď.
+- **Měř, nehádej.** Rozdíl mezi „prkenné" a „vzdušné" jsou desítky pixelů, které se okem
+  na screenshotu neodhadnou. `getBoundingClientRect()` na sousední bloky dá čísla, ze
+  kterých je hierarchie vidět rovnou (a odhalí, že 24 vs 18 px žádnou skupinu netvoří).
+
 ---
 
 ## Systémová rozhodnutí (log)
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
+
+- **2026-09-03 — Režim „Online" se jmenuje „Světová liga". Vtip je v tom, že je česká.**
+  Hráčova věta: *„název online je hrozná nuda."* Měl pravdu a bylo to horší, než se zdálo:
+  ostatní režimy se jmenují **Sólo jízda / Párty souboj / Škola hrou**, takže „Online"
+  byla jediná technická nálepka mezi hravými jmény.
+  - **Vtip zadal hráč sám:** *„je to české, tak nějak vtipně říct, že je to česká, čili
+    světová liga."* Klasická česká sebeironie — malá domácí věc, co si hrdě říká světová.
+    Nese ho popisek dlaždice: **„Proti živým soupeřům. Zatím převážně z Česka."** Bez něj
+    by „Světová liga" byla jen nabubřelá, s ním je to pointa.
+  - **Nahrazuje „Rating nelže."** O ratingu se hráč dozví hned v uvítání lobby (viz zápis
+    z 2026-09-02), takže ho popisek na rozcestníku už nemusí nést podruhé.
+  - Přejmenováno na **třech** místech: dlaždice rozcestníku ([quiz.js](quiz.js)), nadpis
+    lobby a štítek na přihlašovací obrazovce (`zk-authtag`, [online.js](online.js)).
+    Interní názvy (`ZKOnline`, id `qz-mode-online`, `assets/mode-online.jpg`) zůstávají —
+    je to jméno v UI, ne přejmenování modulu.
+  - **Ověřeno v prohlížeči, že ilustrace dlaždic nezmizely** — screenshot hned po reloadu
+    je ukázal prázdné a vypadalo to jako regrese, ale `img.complete && naturalWidth > 0`
+    hlásilo načteno u všech čtyř a v síti byly samé 200. **Screenshot umí zachytit stav
+    před dokreslením obrázků; než z něj usoudíš na chybu, ověř si to v DOM.**
+
+- **2026-09-03 — Online lobby a výsledky schovávaly „Zpět" pod hostitelovu hlavu. Stará vada, kterou už appka jinde vyřešila.**
+  Na telefonu se tlačítko „Zpět do hry" překrývalo s avatarem hostitele o **40×18 px**.
+  `.qz-host` je absolutně ukotvená k shellu a **sahá do 62 px**, jenže lobby dědí
+  `padding-top: 44px` z `.qz-modepick` a výsledkové obrazovky **46 px** z `.qz-end`.
+  - **Řešení už v repu bylo, jen se nepoužilo všude:** `.zk-auth` má od 2026-08-25
+    `padding-top: 76px` s komentářem, který přesně tuhle kolizi popisuje, a `.zk-acc`
+    taky. Zapomnělo se na lobby a na výsledky. Nastaveno na stejných 76 px.
+  - **Scoped SCHVÁLNĚ na `.zk-lobby` a `.qz-end.zk-wrap:has(> .qz-back)`, ne obecně na
+    `.zk-wrap:has(> .qz-back)`.** Obecný selektor má vyšší specificitu než `.qz-setup`
+    a srazil by mu 112 px na 76 u obrazovek, kterých se problém netýká; `.qz-pick`
+    dokonce potřebuje 124 px kvůli liště `.qz-pickhead`.
+  - **`:has()` u výsledků je nutné** — jedna ze čtyř výsledkových obrazovek „Zpět" nemá
+    (sólo výsledek má akce dole), takže by se odsazovala zbytečně.
+  - **Ověřeno měřením průniku obdélníků na VŠECH online obrazovkách** (lobby, žebříček,
+    přátelé, profil, turnaje, souboj na odkaz), ne jen na té nahlášené: překryv nikde.
+  - **Past při ověřování:** žebříček hlásil „Zpět" na 311 px, což vypadalo, že tam
+    tlačítko nahoře není a odsazení je zbytečné. Ve skutečnosti je to první prvek —
+    `.qz-end` má `justify-content: center`, takže při krátkém obsahu obsah plave
+    uprostřed. Změřeno v půlce načítání by to svádělo ke špatnému závěru; ověřuj
+    `firstElementChild`, ne polohu.
+
+- **2026-09-03 — Dlaždice „Hrát teď" je glóbus s boxerskou rukavicí. Čtyři pokusy, a poučení je v tom, PROČ ty tři předchozí spadly.**
+  Náhrada za robota (viz zápis o botovi níž). Hráč zamítl tři návrhy po sobě a každý
+  z jiného důvodu — všechny tři důvody stojí za zapamatování, protože recept v sekci
+  „Ilustrace" je popisuje jen obecně.
+  1. **Zvonek „fills the entire frame in close-up" → useknutá kopule, béžová elipsa bez
+     identity.** Ta formulace funguje u karet, láhve a poháru, protože mají výrazný obrys
+     i po oříznutí. **U nízkého širokého předmětu ne** — po přiblížení z něj zbyde tvar,
+     který nejde poznat. Do promptu pak musí přijít výslovný zákaz oříznutí, protože
+     „velký a dominantní" a „celý vidět" se perou a model si vybere to první.
+  2. **Dva zvonce sražené k sobě → chumel.** „Dva kusy něčeho" je vzor, který projekt
+     zamítl už 2026-08-31 (dva pokoje, dvě polokoule). Doufal jsem, že sražené do jednoho
+     tvaru projdou; neprošly. **Nezkoušej to potřetí.**
+  3. **Čertík v krabičce s rukavicí → technicky dobrý, ale „je to nuda, neevokuje to online
+     ani zeměpis".** Tohle je ten nejdůležitější bod: obrázek byl čistý, vtipný a čitelný,
+     a stejně k ničemu, protože **mohl být na jakékoli appce**. Dlaždice musí říct, čí
+     appka to je. Jakmile se stejný gag posadil na GLÓBUS, bylo hotovo.
+  - **Co zabralo:** glóbus na stojánku, z Pacifiku vyletuje na pružině boxerská rukavice.
+    Zeměpis je vidět hned (glóbus), soupeř taky (rukavice), „teď hned" nese pružina.
+  - **Prompt musí být KRÁTKÝ.** Sousední dlaždice, které vyšly napoprvé, mají ~40 slov;
+    moje zamítnuté měly 80+. Čím víc pokynů, tím víc si jich model přebere po svém —
+    dvě z těch tří selhání byla u nejdelších promptů.
+  - **Ověřeno ve SKUTEČNÉ velikosti, ne v plné.** Dlaždice se kreslí na 56–72 px
+    (komentář u `dlazdice()` v gen-irony-images.js). Nový kus vyrenderován na 72 px vedle
+    tří sousedů — glóbus se pozná okamžitě. Tenhle test v projektu už dvakrát shodil
+    návrh, co ve velkém vypadal dobře.
+  - **Ořez: obsah musí vyplnit ~85 % rámu jako sousedi.** Gemini vrátilo glóbus na 63 %
+    (kolem spousta papíru). Změřeno detektorem kresby (teal `b > r` nebo tmavé pixely —
+    NE podle jasu, papír má vlastní skvrny a lhalo by to, stejná past jako u masky souše
+    u textury glóbu 2026-09-01) a oříznuto na střed obsahu. `crop-gemini-frame.ps1`
+    se nehodil, ten ořezává rovnoměrně od kraje a obsah tu nebyl uprostřed.
+  - **Past cestou: `data/ui-irony-prompts.json` má odsazení 2 MEZERAMI, ne 1.** Pravidlo
+    o jedné mezeře platí pro `data/questions/*.json`, ne tady. Zápis přes
+    `JSON.stringify(j,null,1)` přeformátoval celý soubor (7 řádků diffu místo 1); vráceno
+    na `,2`. Obsah se neztratil (parse/stringify klíče zachová), ale diff to zbytečně
+    rozmázlo. **Před zápisem do cizího JSONu si ověř jeho skutečný formát**, nespoléhej
+    na to, co platí jinde v repu.
+  - **Známá vada, kterou vědomě NEŘEŠÍM: glóbus má na sobě drobné popisky zemí**
+    („Canada", „Japan", „Australia", pár zkomolených), ačkoli styl text zakazuje. Ve
+    zobrazované velikosti 56–72 px nejsou vidět vůbec, takže přegenerovat kvůli tomu
+    další dávku by byla ztráta času i kreditu.
+
+- **2026-09-02 — Online lobby má uvítání místo proužku „Kuba · PUBERŤÁCI · Rating 1500 · Zatím nezahráno". A bot se v něm NESLIBUJE.**
+  Hráčova věta: *„Rating 1500 · Zatím nezahráno… z toho uživatel nic nechápe."* Proužek
+  byl úsporný, ale nikde neříkal, co pásmo znamená, proti komu se hraje ani co je rating.
+  Nově čtyři věty: pozdrav jménem, co je tvoje pásmo, proti komu nastupuješ, co je rating.
+  Tón se drží pásma stejně jako hlášky u otázek (standard 2026-08-15).
+  - **BOT SE V UVÍTÁNÍ ANI NA DLAŽDICI „Hrát teď" NEZMIŇUJE.** Napsal jsem tam nejdřív
+    „když nikdo není online, nastoupí bot" a hráč to zamítl: *„to se pak nebude chtít
+    nikomu hrát."* Je to **totéž rozhodnutí jako 2026-08-31** u dlaždice Online („bot je
+    náhradní řešení pro prázdnou frontu, ne důvod, proč sem jít") — jen se tehdy uplatnilo
+    na rozcestníku a lobby zůstalo. Při té příležitosti smazáno i z popisku „Hrát teď",
+    kde to bylo od začátku.
+    **Kde bot naopak ZŮSTÁVÁ, a je to správně:** v čekárně (`zk-bot`, po 15 s se povýší
+    na hlavní akci) a ve výsledku u jména soupeře. Tam už hráč čeká nebo dohrál — je to
+    služba a poctivé přiznání, ne lákadlo. Hlídá to `test:offline`.
+    **Ilustrace `assets/zk-live.jpg` byla taky robot** (obrázek sliboval to, co text už ne)
+    — přemalována na **glóbus s boxerskou rukavicí vyletující z Pacifiku**. Viz zápis níž.
+  - **Oslovení v 5. pádu (`vokativ()`) je ÚMYSLNĚ NEÚPLNÉ.** CLAUDE.md má tvrdou lekci,
+    že český pád se v kódu odvodit nedá — proto je 6. pád u otázek v datech (`about`).
+    Přezdívku ale uložit nejde, píše si ji hráč. Řešení: použijí se jen pravidla bez
+    výjimek (-a→-o, -ek→-ku, měkké souhlásky→-i, -k/-g/-h/-ch→-u, samohláska beze změny,
+    ostatní souhlásky→-e) a **u všeho ostatního se jméno z pozdravu VYNECHÁ** („Ahoj!").
+    **Schválně neošetřené: -r a -el** — obojí má dvě různá pravidla podle toho, co je
+    před koncovkou (Petr→Petře, ale Viktor→Viktore; Pavel→Pavle, ale Daniel→Danieli),
+    a splést se dá u velmi běžných jmen. Vynechává se i všechno, co není jedno slovo
+    z písmen, ať se generovaná dětská přezdívka („Veselý krtek 20") neskloňuje.
+    **Chyba ve jméně je vidět, chybějící jméno ne** — proto je fallback tichý.
+  - **`test:offline` nově čte i `online.js`** (do teď ho nekontroloval nikdo — `sim-online`
+    testuje model ratingu a `test:api` server). **679 kontrol** (bylo 568 před dneškem).
+    Ověřeno mutací: zobecnění -r na „Petre", zobecnění -el, skloňování víceslovných
+    přezdívek, špatná koncovka u měkkých souhlásek, vrácení bota do uvítání i na dlaždici,
+    minulý čas s rodem, malé písmeno na začátku.
+    **Poučení z průběhu: `Petr` je chráněný DVAKRÁT** (výslovný guard na -r + to, že „r"
+    není v seznamu koncových souhlásek), takže mutace jedné pojistky projde nepovšimnuta.
+    Mutace musí sundat obě, jinak se testuje vlastní redundance, ne kontrola.
+    **A druhé poučení: kontrolní soubor sám měl syntaktickou chybu** (uvozovka uvnitř
+    řetězce), takže padal pořád a první běh mutací hlásil samé „chyceno" falešně.
+    **Před mutacemi vždy ověř, že základ PROCHÁZÍ.**
+  - **V textech NESMÍ být minulý čas s rodem** („zapsal ses", „věděl jsi") — appka pohlaví
+    hráče nezná. Stejné pravidlo jako u `_verdikt` v `fondy.json`; nově ho hlídá test.
+
+- **2026-09-02 — Rozehrané hry: tři POPSANÉ řádky („Co jsi hrál: …"), ne úsporné zkratky. Deset her vypadalo jako desetkrát totéž.**
+  Hráč nahlásil, že v seznamu „nevidí datum, témata, obtížnost" a že to graficky není ono.
+  Měl pravdu a příčina byla jedna: položka byla **jeden řádek** (`avatary · vlajka · režim
+  · postup`), do kterého se nic dalšího nevešlo. Deset uložených her tak vypadalo stejně
+  a lišilo se jen zlomkem „8/10".
+  - **NEJDŘÍV JSEM TO UDĚLAL ÚSPORNĚ A BYLO TO MÁLO.** První verze měla tučný titulek
+    „Česko · Sólo" a pod ním šedou řádku „Všechna témata · dospělí · před 20 minutami".
+    Vypadalo to líp, ale hráč to vrátil s tím, že to musí být **naprosto srozumitelné** —
+    a měl pravdu: co znamená který údaj, se dalo jen hádat. Teď má **každý řádek popisek
+    s dvojtečkou**: `Co jsi hrál:` / `Úroveň obtížnosti:` / `Kdy:`. **Nevracej to na
+    zkratky** — čitelnost tu vyhrála nad úsporností vědomě.
+  - **Data k tomu z velké části UŽ BYLA uložená, jen se nezobrazovala** — `ts` se ukládá
+    odjakživa (řadí se podle něj seznam) a `section` taky. Doplnit se musely jen `band`,
+    `level` (`schoolLevel`) a `band` u hráčů do `meta`; všechno ve `state` bylo. `meta` je
+    zobrazovací projekce, aby se při kreslení seznamu netahalo celé pole otázek.
+  - **„Úroveň obtížnosti" se u KAŽDÉHO REŽIMU bere odjinud, a je to nutné, ne kosmetika:**
+    sólo → pásmo; **párty → pásma VŠECH hráčů** („děti, puberťáci a dospělí"), protože
+    `S.band` je jen sólová volba a jedno jméno by lhalo; **škola → ★–★★★**, protože škola
+    pásmo nepoužívá vůbec (`startSchool` filtruje podle `schoolLevel`), takže zděděná
+    hodnota z posledního sóla by tam přímo lhala. Slovo u školy je schválně TOTOŽNÉ
+    s tlačítky v `renderSchoolStart` — učitel má najít přesně to, co klikl.
+  - **Pásma v párty se řadí podle VĚKU, ne podle pořadí u stolu** — jinak by tentýž stůl
+    vypsal pásma pokaždé jinak podle toho, kdo se zapsal první.
+  - **Relativní čas místo data** (`relCas`): u hry z dnešního odpoledne nikoho nezajímá,
+    kolikátého bylo. Nad týden se přepne na datum, protože „před 23 dny" si nikdo nepřevede.
+  - **`selSectionLabel()` rozdělena na `sectionLabel(s, vse)` + tenký obal**, protože
+    `section` má **tři podoby** (`null`/`"__all__"`, pole, jeden název) a naivní výpis by
+    hráči ukázal doslova „__all__". Cestou opraveno skloňování: „5 témata" → „5 témat".
+  - **Seznam už neřeže na první čtyři.** `writeSaves()` drží 10 her a pop-up má vlastní
+    scroll, takže šest z nich se ukládalo, ale hráč se k nim nedostal a vypadalo to, že
+    se hra ztratila.
+  - **Řádky se ZALAMUJÍ, neořezávají** — u popsaného údaje je useknutý konec horší než
+    o řádek vyšší karta („Úroveň obtížnosti: pu…" nikomu nepomůže). Na telefonu je položka
+    pod 520 px **mřížka**, kde odznak s postupem sleze pod text a obrázek drží přes oba
+    řádky se `align-items: start` (vycentrovaný by u pěti řádků plaval bez vztahu k textu).
+    Naměřeno na 375 px: 0 ořezaných řádků, karta 122 px (před sevřením ~250).
+  - **Hodnoty za dvojtečkou začínají VELKÝM písmenem** („Úroveň obtížnosti: Děti", ne
+    „…: děti"). Napsal jsem to nejdřív malými a hráč to vrátil — je to porušení pravidla,
+    které v projektu platí od 2026-09-01, jen jeho zápis nemyslel na případ „popisek:
+    hodnota". Pravidlo je proto **nově nahoře mezi konvencemi**, ne jen v datovaném logu.
+    Řeší to `velke()` při zobrazení; `BAND_NAMES` zůstává malé, protože uvnitř věty se
+    tak hodí. Ověřeno skenem textových uzlů v prohlížeči přes rozcestník, výběr kontinentu,
+    zemí i témat: **0 textů začínajících malým písmenem**.
+  - **Ověřeno MUTACÍ, ne tím, že svítí zeleně** (`test:offline` **589** kontrol, bylo 568).
+    Deset mutací, všechny odhaleny — a **jedna z nich našla skutečnou chybu v mém kódu**:
+    fallback hráčů se ptal na POČET (`m.players.length`) místo na to, jestli nesou pásmo,
+    takže párty uložená před touhle změnou (kde `meta.players` mají jméno a barvu, ale ne
+    `band`) by hlásila „různá podle hráče", i když se pásma dají zjistit ze `state`.
+    Ostatní mutace: sestavení cesty z pole (`assets/country-at,cz,sk.jpg` — **přesně ta
+    chyba, co se 2026-09-01 opravovala na výběru témat**), vypsání `__all__`, jedno pásmo
+    místo všech, neseřazená pásma, opakující se pásma, pásmo místo školní úrovně, chybějící
+    fallback `band`, neskloňovaná témata, výčet bez spojky „a". Po mutacích `diff` proti
+    záloze čistý a `quiz.js` má dál CRLF.
 
 - **2026-09-02 — Rate limit na registraci, zakládání her a turnajů (poslední tři body z auditu 2026-09-01 bez limitu).**
   Registrace, hry a turnaje neměly žádné omezení počtu volání — šlo skriptem navyrábět
