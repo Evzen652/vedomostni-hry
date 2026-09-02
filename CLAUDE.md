@@ -20,6 +20,240 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-02 — Rate limit na registraci, zakládání her a turnajů (poslední tři body z auditu 2026-09-01 bez limitu).**
+  Registrace, hry a turnaje neměly žádné omezení počtu volání — šlo skriptem navyrábět
+  libovolný počet účtů (sybil farming ratingu i denního žebříčku) nebo zaplavit tabulky
+  `games`/`tournaments`.
+  - **Registrace: klíčováno IP, ne účtem** — v okamžiku volání účet ještě neexistuje,
+    takže na něj nejde pověsit sloupec jako u `friend_tries`. Nová tabulka `reg_attempts`
+    (migrace [2026-09-02-rate-limits.sql](migrations/2026-09-02-rate-limits.sql)).
+    **8 za hodinu** — nad tím, co reálně udělá rodina zakládající účty víc dětem
+    (typicky 2–4), ale sybil farmění zpomalí o dva řády.
+  - **Hry a turnaje: klíčováno účtem**, stejný vzor jako `friend_tries` z 2026-09-01
+    (nové sloupce `game_tries`/`tourney_tries` + `_at`). **30 her / 5 turnajů za hodinu**
+    — `test:api` má nejnáročnější scénář 14 her z jednoho účtu v kalibrační smyčce,
+    tohle mu zůstává hodně nad hlavou; turnaj je vzácnější akce, proto přísnější strop.
+  - **Sdílená logika v `checkRateLimit()`** ([functions/_lib/game.js](functions/_lib/game.js))
+    — na rozdíl od `friends.js`, kde se počítají jen NEÚSPĚŠNÉ pokusy (kdo kód dostal,
+    nikdy nenarazí), se tady počítá KAŽDÉ volání, protože pokus sám o sobě je to, co
+    se omezuje. Bere callbacky na čtení/zápis, ne přímo SQL, protože per-účet (UPDATE
+    existujícího řádku) a per-IP (UPSERT, řádek nemusí existovat) potřebují jiné dotazy.
+  - **`ALLOW_DEV_SECRET` (stejná proměnná jako u `sessionSecret()`) vypíná limit
+    registrace v lokálním vývoji** — `test:api` samo zakládá přes 20 účtů v jednom
+    běhu ze stejné IP, což by o produkčním stropu 8/hod nešlo spustit. Produkce tuhle
+    proměnnou nikdy nemá nastavenou, takže limit tam platí bez výjimky. Hry a turnaje
+    bypass NEPOTŘEBUJÍ — jsou klíčované účtem a `test:api` nikdy nepřekročí 14/účet.
+  - **Ověřeno TROJÍM způsobem, ne jen tím, že svítí zeleně:**
+    1. Čistý unit test `checkRateLimit()` s falešným úložištěm — 8 povoleno, 4 zamítnuto,
+       počítadlo po zamítnutí neroste, po vypršení okna se obnoví. Mutací (`>` místo `>=`)
+       ověřeno, že by špatná hranice prošla nepovšimnuta (pustila by 9 misto 8).
+    2. Živě proti skutečné D1: turnaj limit 5 živě otestován beze změny kódu (5 projde,
+       6.+ dostane 429). Hry a registrace ověřeny DOČASNÝM snížením stropu (3 místo
+       30/8) a živým voláním — po ověření vráceno na produkční hodnoty, `diff` proti
+       verzi před mutací čistý.
+    3. `test:api` 138 kontrol po celé úpravě beze změny (dev-bypass funguje).
+  - **Past cestou:** `sed -i` na Windows/Git Bash převedlo CRLF na LF u jednoho ze
+    tří upravovaných souborů (`register.js`) — soubory `functions/**/*.js` v tomhle
+    repu CRLF mají (na rozdíl od `data/questions/*.json`, kde je to vynucené schválně,
+    zde je to jen dědictví editoru). Opraveno zpátky, `diff` teď čistý bajt po bajtu.
+
+- **2026-09-02 — Dětská hláška „Tys to věděl!" se opakovala u 62 % otázek; rozbito na 8 rotujících variant.**
+  Hráč si všiml, že hláška po správné odpovědi v dětském pásmu zní pořád stejně, a zeptal
+  se „jak často?". Změřeno přesně: **494 z 990** dětských otázek (50 %) mělo `quip_correct`
+  začínající doslova „Tys to věděl!", plus dalších **123** (12 %) variantou „Jé, tys to
+  věděl!" — dohromady **617/990 = 62,3 %**. Pro srovnání nejčastější opener u puberťáků
+  i dospělých sedí na 4–5 % (`Bod pro tebe,…`), takže je to specifické jen pro dětské pásmo.
+  - **Příčina je zdokumentované rozhodnutí, ne bug:** zápis z 2026-08-15 zavedl pro dětské
+    hlášky pevnou šablonu „opener „Tys to věděl!" + mírná ironie" — na rozdíl od ostatních
+    pásem, kde se hlášky psaly volně. Rozhodnutí samo bylo v pořádku (řešilo tehdejší
+    „Přesně!" u 80 % otázek), jen nikdy nedostalo víc než jeden opener.
+  - **[scripts/diversify-kids-openers.js](scripts/diversify-kids-openers.js)** (nový,
+    spustitelný znovu) nahrazuje jen úvodní frázi — zbytek věty (konkrétní vtipný fakt)
+    zůstává beze změny. Rotace je **deterministická** (`index % 8`, ne náhoda), ať je běh
+    opakovatelný. Sada 8 variant drží obě původní fráze (frekvence se sníží, nemizí úplně)
+    + 6 nových stejného tónu: „Bod pro tebe!", „Trefa do černého!", „Bystrá hlava!",
+    „Paráda, sedí to!", „To bylo hned vidět!", „Hop, a je to!" — nadšené, ne sarkastické,
+    bez rodu v minulém čase (stejné pravidlo jako u `_verdikt` v `fondy.json`).
+  - **Výsledek: 617 → 78+77 = 155/990 (15,7 %)**, obě frekvence teď ~7,8 % každá — blíž
+    zdravému základu (4–5 %) než dřív, ale schválně ne níž, protože „Tys to věděl!" je
+    fráze, kterou appka nechce úplně ztratit, jen aby nedominovala.
+  - **Zápis do JSON drží formát 1 mezera + CRLF** (`JSON.stringify(qs,null,1).replace(/\n/g,"\r\n")`),
+    ověřeno round-tripem na netknutém souboru, že je bajt po bajtu shodné s originálem.
+  - Ověřeno v prohlížeči na deseti odpovězených otázkách za sebou (`fetch` dotáhl správnou
+    odpověď z dat, aby šlo klikat schválně správně): žádná hláška se neopakovala víc než
+    dvakrát. `test:api` 138, `test:offline` 568, `lint-facts` 9 upozornění (beze změny),
+    `validate` 0 chyb.
+
+- **2026-09-01 — Poměr sloupců na desktopu 3:2 → 5:4 (karta užší a vyšší, rám širší).**
+  Přání „zvýšit na výšku, snížit na délku" u první (textové) karty. Řešeno jen posunem
+  poměru mřížky — protože rám drží `align-self: stretch` (viz zápis o líčování výš),
+  zúžení karty ji automaticky prodlouží (víc zalomených řádků) a rám vyroste s ní, aniž
+  by bylo nutné sahat na cokoli jiného.
+  - Naměřeno na sedmi otázkách za sebou (1920 px): karta 556 → **514 px**, rám 376 →
+    **418 px**, výšky se dál drží shodné páry (311/311, 294/294, 349/349…).
+  - Ověřeno na dolní hranici pásma (900 px), kde je karta nejužší — text i odpovědi
+    zůstávají čitelné, žádné nepříjemné zalomení na dvě slova na řádek.
+  - `test:offline` 568 kontrol beze změny.
+
+- **2026-09-01 — Online souboj od 900 px plýtval třetinou šířky — nemá ilustraci a mřížka pro ni pořád rezervovala sloupec.**
+  Objeveno na žádost „zkontroluj to i online obrazovky". `online.js` si otázku kreslí
+  **vlastní** funkcí (`nextQuestion()`, ne `renderQuestion()` z `quiz.js`) a jen recykluje
+  CSS třídy `.qz-play`/`.qz-box` — nikdy nevolá `picframeHtml()`, takže `.qz-picframe`
+  v online souboji neexistuje vůbec. Dvousloupcová mřížka z `.qz-play` (od 2026-07-31)
+  ale pravý sloupec (2fr, pro rám) rezervuje bez ohledu na to, jestli tam něco je —
+  na 1024 px tak karta měla jen 556 px a skoro 300 px vedle zůstávalo prázdných.
+  **Stará vada, ne dnešní regrese** — mřížka existuje přes měsíc, jen jsem na ni narazil
+  až při dnešním systematickém průchodu šířek.
+  - **Oprava jedním pravidlem, bez zásahu do `online.js`:** `.qz-play:not(:has(.qz-picframe))
+    > .qz-box { grid-column: 1 / -1 }`. Když karta nemá souseda s ilustrací, dostane obě
+    sloupce mřížky. `:has()` je stejný vzorec jako jinde v souboru (`#qz-body:has(.qz-play)`
+    dřív) — v nepodporujícím prohlížeči se jen neuplatní, nic se nerozbije.
+  - Ověřeno na 1024 px: karta 556→**944 px** (neodhalený i odhalený stav), offline sólo
+    hra (rám existuje) beze změny — 556/376, lícuje jako předtím. `test:offline` 568.
+
+- **2026-09-01 — Telefon: obrázek nahoře, tlačítka „Více o…"/"Další otázka" pod sebe.
+  Cestou i objevena a opravená mezera 768–899 px, kde appka měla pruh horší než tablet.**
+  Hráč požádal o dvě věci na mobilu: obrázek (nebo glóbus) nahoře nad kartou, a stažení
+  dvou tlačítek v patičce z vedle sebe pod sebe.
+  - **Pořadí se řeší `order` na flex položkách, ne přehozením HTML.** Desktop řadí podle
+    `grid-area` (jméno oblasti, ne pořadí v DOM), takže přehození pořadí v šabloně by
+    desktop nezajímalo, ale bylo by to riziko bez důvodu — zdroj pravdy zůstává jeden.
+    `.qz-play` na mobilu (`max-width:767px`) dostal `display:flex; flex-direction:column`
+    + `order: 1/2/3` na `.qz-top`/`.qz-picframe`/`.qz-box`. Ověřeno v obou stavech
+    (otázka s glóbem i odhalená fotka) — obrázek je nahoře v obou, žádný jump mezi nimi.
+  - **Tlačítka: `.qz-fbtns { flex-direction: column }` + `.qz-fbtns > button { flex: 0 1
+    auto; width: 100% }`.** Základní pravidlo dává tlačítkům `flex: 1 1 0` (stejná ŠÍŘKA
+    vedle sebe); ve sloupci by to dalo stejnou VÝŠKU, ne to, co chceme — proto se to musí
+    přebít, ne jen otočit `flex-direction`.
+  - **VEDLEJŠÍ NÁLEZ cestou: `.qz-picframe` na mobilu měla pevnou výšku (210/190 px),
+    která byla vyladěná jen pro ÚZKÝ telefon (~375 px).** Appka ale „mobil" počítá až
+    do 767 px (phablety, telefon naležato) — tam rám rostl do šířky, ale výška zůstala
+    stejná. Naměřeno při 700 px: rám 668×196, fotka uvnitř 332×190 → **pruh 168 px na
+    stranu**, horší než na tabletu těsně nad touhle hranicí (viz zápis níž). Nahrazeno
+    poměrem `aspect-ratio: 16/9` (dnešní fond je 100% na šířku) — stejná hodnota pro
+    otázku i odpověď, takže rám navíc mezi stavy neposkočí. Na úzkém telefonu (375 px)
+    je výsledek prakticky identický s předchozím (193 px místo 190) — nic se nezhoršilo.
+  - Ověřeno na 375 a 768 px (druhá beze změny, patří jinému pravidlu) a na 1400 px
+    (desktop beze změny — vedle sebe, tlačítka vedle sebe). `test:offline` 568 kontrol.
+
+- **2026-09-01 — Mezera 768–899 px (tablet na výšku) měla pruh HORŠÍ než mobil i desktop — stará od založení appky, ne z dneška.**
+  Objeveno na žádost „zkontroluj to i na mobilu a tabletu". Appka má dva ladicí body:
+  `max-width:767px` (telefon) a `min-width:900px` (desktop, dvousloupcové). Pásmo mezi
+  nimi — typicky tablet na výšku — spadalo na ZÁKLADNÍ pravidlo `.qz-picframe`
+  (`height:320px` / `revealed: clamp(200px, 26vh, 280px)`), které počítá výšku z výšky
+  OKNA, ne ze šířky karty. Karta v tomhle pásmu je přitom široká (700–870 px, jeden
+  sloupec jako mobil), takže vznikl rám široký a nízký s obrovským bočním pruhem.
+  Naměřeno na 768 px: rám 736×272, fotka uvnitř 466×266 → **pruh 135 px na stranu**,
+  přes třetinu rámu — horší, než co se dnes opravovalo jinde.
+  - **Řešení kopíruje poznatek ze zamítnutého stacked pokusu níž:** v jednosloupcovém
+    rozložení (tohle pásmo jím je, stejně jako mobil) rám nemusí s ničím lícovat, takže
+    může mít prostě poměr skutečné fotky. `aspect-ratio: 16/9`, scoped na
+    `(min-width:768px) and (max-width:899px)`. Po opravě 768 px → rám 736×417, fotka
+    718×411 — pruh **9 px** na stranu.
+  - **Proč TADY neplatí důvod, kterým hráč zamítl stejný nápad na desktopu** („zbytečně
+    velké"): tablety na výšku mají typicky ~1024 px výšky okna, takže rám 400–500 px
+    vysoký nenutí ke scrollování tak jako na nízkém okně notebooku (1400×800), kde padl
+    zamítavý verdikt. Ověřeno na krajích pásma (768 a 899 px) i na obou sousedních
+    hranicích (767 px zůstává mobilní pravidlo, 900 px přebírá desktopový grid) —
+    žádný skok, žádná regrese.
+  - `test:offline` 568 kontrol beze změny.
+
+- **2026-09-01 — VYZKOUŠENO A ZAMÍTNUTO: karta a rám POD SEBOU místo vedle sebe.**
+  Nápad zněl dobře: když rám nemusí lícovat s ničím po straně, může mít prostě poměr
+  skutečné fotky (16:9) a pruh zmizí úplně — beze zbytku, ne jen zmenšený. Vizuálně to
+  fungovalo přesně takhle (rám 950×537, fotka 929×531 — pruh prakticky nulový).
+  **Hráč to i tak zamítl: „to je zbytečně velké. nepůsobí to dobře."** Rám na celou
+  šířku sloupce (~950 px) dělal z appky výrazně vyšší stránku — na notebooku s výškou
+  okna ~800 px se karta s fotkou pod ní přestaly vejít na jeden pohled a bylo nutné
+  scrollovat, což předtím (vedle sebe) nebyl problém.
+  - **Druhý důvod, proč to nebyl jasný kompromis ani po vizuální stránce:** appka dnes
+    (2026-09-01) **negenerovala žádnou skutečnou čtvercovou ilustraci k otázce** — jen
+    se přepnul generátor v kódu (`gen-irony-images.js`, `1:1`), dávka se nikdy nespustila.
+    Test na simulovaném čtverci (ořez existující fotky) ukázal, že by čtvercové obrázky
+    dostaly stejně velký pruh, jen PO STRANÁCH (~210 px na stranu) — takže i kdyby
+    hráč velikost přijal, řešení by za pár týdnů, jak poroste čtvercový fond, přestalo
+    fungovat pro rostoucí část otázek.
+  - **NEZKOUŠEJ TO ZNOVU jen kvůli pruhům** — důvod zamítnutí byl vizuální dojem
+    (`velikost`), ne technický. Vrátit se k tomu má smysl jen jako SAMOSTATNÉ rozhodnutí
+    o layoutu (např. při redesignu), ne jako vedlejší efekt honby za pruhy.
+  - Vráceno beze zbytku na stav z předchozího zápisu (karta vedle rámu, `align-self: stretch`,
+    žádný pevný poměr). `git diff` proti commitu `182eeed` po vrácení prázdný.
+
+- **2026-09-01 — Pruh kolem starých 16:9 fotek zmenšen sevřením TEXTOVÉ KARTY, ne honěním rámu.**
+  Hráč se ptal na pruhy u fotky (viz zápis „Rám se tahne podle karty" výš) — rám je od
+  dnešního odpoledne `align-self: stretch`, takže se drží výšky karty, a čím vyšší karta,
+  tím širší rozmazaný pruh kolem malé fotky. Nabídl jsem tři varianty (rám podle fotky /
+  strop výšky rámu / počkat na čtvercový fond) — hráč místo toho navrhl jinou osu: **zmenšit
+  kartu**. Je to chytřejší řešení, protože se rám drží karty automaticky — zmenšit kartu
+  zmenší rám se sebou, aniž by se muselo cokoli dolaďovat na rámu samotném.
+  - **Ověřeno na PŘESNÉ otázce z hráčova screenshotu** (`cz-k-punkevni-jeskyne`, špatná
+    odpověď „Koněpruské jeskyně"): karta **494 → 319 px**, pruh kolem 227px vysoké fotky
+    **133 → 46 px na stranu** (z 54 % rámu na 29 %). Napříč 10 dalšími otázkami medián
+    klesl z dřívějších ~330–374 px na **~280 px**.
+  - **Kam se ušetřilo:** `.qz-box` gap 12→8 px, `.qz-result .half` padding 12→8 px,
+    `.qz-quipbox`/`.qz-expl` margin-top 10→6 px, `.qz-frow` gap 12→8 px, tlačítka
+    (`.qz-more`/`.qz-next`) padding 11→8 px, hláška `.qz-ht` line-height 1.45→1.32.
+    Všechno jsou to **prázdné mezery**, ne text ani font — obsah (hláška, vysvětlení,
+    odpovědi) se nekrátil ani nezmenšil čitelnost.
+  - **STROP TÉHLE CESTY: hláška a vysvětlení jsou JÁDRO appky** (roky práce na jejich
+    kvalitě, viz standard z 2026-08-10 a přepisy 2026-08-15/08-30) a zkracovat JE by
+    appku ochudilo o to, proč appka vlastně je vtipná. Sevření dokázalo ubrat prázdné
+    místo kolem obsahu, ne obsah samotný — proto je zisk citelný (35 % na outlieru), ale
+    ne dost na to, aby pruh zmizel úplně. Zbytek je pořád na dřívějších třech variantách,
+    kdyby hráč chtěl jít dál.
+  - **Scoped jen do `@media (min-width:900px)`** (blok `.qz-play`) — mobil má vlastní
+    pevnou výšku rámu (210px) a s pruhem tenhle problém nemá, takže se nezměnil vůbec.
+    Ověřeno na 375 px beze změny.
+  - **Vedlejší úklid:** smazán zastaralý komentář u `.qz-picframe`, který ještě popisoval
+    zrušený přístup s pevným poměrem 4:3 (nahrazený `align-self: stretch` od dřívějšího
+    commitu dnes) — dvě protichůdná vysvětlení nad sebou by matla, ne pomáhala.
+  - `test:offline` 568 kontrol beze změny.
+
+- **2026-09-01 — Výběr 2+ konkrétních zemí (ne „Vše") tahal zbytečné 404 na `country-at,cz.jpg`.**
+  Pokračování regresního testování. Objevilo se při ověřování dřívější opravy obnovy hry
+  (2026-08-31, `ccs`/`selectCountries`) — obnovil jsem sólo hru uloženou přes dvě konkrétní
+  země a v síti přistál request na `assets/country-at,cz.jpg`. `flagStamp()` skládá
+  `assets/country-${cc}.jpg`; `renderSectionPick()` (obrazovka „Vyber témata") jí ale
+  posílala `cc = S.sel.ccs || S.sel.cc`, což je u 2+ vybraných zemí **pole**, ne řetězec —
+  šablonový literál ho vezme přes `.toString()`, tedy `"at,cz"`.
+  - **Stejná třída chyby, jako appka už jednou řešila** (komentář o kousek níž v kódu):
+    u „všech zemí" je `S.sel.cc` `null` a `flagStamp(null)` tahalo `country-null.jpg`.
+    Ta oprava se ale netýkala případu konkrétního vícenásobného výběru — pole `S.sel.ccs`
+    tenkrát ještě neexistovalo (přibylo až s opravou obnovy her 2026-08-31).
+  - **Neprojevovalo se to viditelně** — `flagStamp()` má `onerror` schovávající obrázek,
+    takže žádné rozbité UI, jen zbytečný request a záznam v konzoli. Přesně proto to
+    validate/audit/test:offline nechytily; odhalilo to až sledování síťových požadavků
+    při ručním průchodu.
+  - **Oprava kopíruje existující vzor** (`(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""`,
+    použitý už u sólo úvodní obrazovky) — razítko se ukáže jen u JEDNÉ vybrané země,
+    jinak nic. Nadpis u dvou zemí teď zní „2 země | Vyber témata" bez ikony, stejně jako
+    „Celý svět" dřív ukazoval bez ikony u „Vše".
+  - Ověřeno: reprodukce (výběr Rakousko + Česko → 404 v síti) → oprava → stejný postup
+    bez jediného requestu na `country-*,*.jpg`. `test:offline` 568 kontrol beze změny.
+
+- **2026-09-01 — Regresní průchod: `.qz-setup` mělo špatné pořadí CSS pravidel, drobečková lišta přesahovala do nadpisu „Nová výprava".**
+  Zadání znělo „proveď testy" (`test:api` 138, `test:offline` 568, `validate`, `audit`,
+  `lint-irony`, `lint-facts`, `sim-online` — všechno bez regrese) + ruční průchod obrazovkami
+  napříč šířkami. Ten odhalil jednu skutečnou vadu, starou přes měsíc, ne z dnešních úprav.
+  - **Příčina: dvě pravidla `.qz-setup` v opačném pořadí, než mají.** `.qz-pick, .qz-start`
+    mají vzor „nejdřív zkratka `padding: 70px…`, pak SAMOSTATNÉ `padding-top: 124px`
+    PŘEBIJÍCÍ tu zkratku" — to je schválně, protože `.qz-pickhead` je `position: absolute`
+    a potřebuje mít nahoře rezervované místo. `.qz-setup` mělo pořadí obrácené: zkratka
+    `padding: 58px…` byla AŽ ZA `padding-top: 112px`, takže tu 112 přebila zpátky na 58.
+    Lišta (`Zpět · PÁRTY · Evropa › Česko › Vše`) tak končila na 112 px a nadpis začínal
+    na 78 px — **34 px překryvu**, viditelné na obrazovce „Nová výprava" v párty i sólo
+    režimu, na všech šířkách (ověřeno 375, 768; na desktopu stejně, jen s jinou lištou).
+    Nebyla to náhoda dneška — `git log -L` ukázal poslední dotčení řádku k 2026-07-31.
+  - **Oprava: `.qz-setup` nově NEPOUŽÍVÁ zkratku `padding`, jen `padding-left/right/bottom`.**
+    Bez zkratky nemá co přebít `padding-top` z dřívějšího pravidla, takže na pořadí souborů
+    už nezáleží. Bezpečnější než přehazovat pořadí (to by za rok zase někdo omylem prohodil).
+  - **Vedlejší nález: komentář u `.zk-auth` (přihlašovací obrazovka, sdílí třídu `.qz-setup`)
+    popisoval neplatnou příčinu** („qz-setup dává 58 px") — `.zk-auth` má vlastní explicitní
+    `padding-top: 76px`, který kaskáda nemění bez ohledu na základ, takže se touhle opravou
+    chová beze změny. Přepsáno, ať příští session neluští odkaz na hodnotu, co už neplatí.
+  - Ověřeno v prohlížeči na 375 a 768 px: párty i sólo „Nová výprava" bez překryvu,
+    přihlašovací obrazovka online režimu beze změny. `test:offline` 568 kontrol po opravě.
+
 - **2026-09-01 — Průřezový audit (4 oblasti). Opraveny první čtyři nálezy; zbytek je sepsaný níž a NENÍ hotový.**
   Čtyři paralelní audity (bezpečnost serveru, XSS/klient, offline logika, online férovost).
   Nálezy jsem ověřoval sám v kódu — auditní agenti hlásí i teoretická rizika, která neplatí.
@@ -121,7 +355,131 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     glóbu); stažení knihovny do repa by závislost odstranilo úplně, zatím je aspoň
     ověřená. Ověřeno v prohlížeči: `THREE.REVISION === "137"`, žádné porušení CSP.
 
+- **2026-09-01 — Textura glóbu je nově 1456×728. Na druhý pokus, a POSTUP OVĚŘENÍ JE TU DŮLEŽITĚJŠÍ NEŽ VÝSLEDEK.**
+  Hráč texturu vygeneroval v Gemini podle promptu. **První pokus vypadal krásně a byl
+  nepoužitelný** — a poznat to šlo jedině měřením, ne okem.
+  - **Selhání č. 1: model svět PŘEKRESLIL ve vlastním měřítku, ne přemaloval na místě.**
+    Naměřeno korelací masek souše proti staré (ověřené) textuře: pokrýval **299° délky
+    a 161° šířky** místo 360/180. Afinní korekce (měřítko + posun) to nespravila —
+    Evropa a Afrika po ní seděly, ale Austrálie zůstala mimo, takže zkreslení není
+    rovnoměrné. Podezřelá byla formulace „at the highest resolution you can produce",
+    která model svede ke kompozici odznova.
+  - **Co zabralo ve druhém promptu:** výslovný zákaz „do not re-compose, re-frame, zoom,
+    crop, re-center or rescale" + **kotevní body v procentech**, které si model může sám
+    zkontrolovat (rovník na 50 % výšky, Dakar na 45,1 % šířky, Sydney na 92,0 % / 68,8 %,
+    Antarktida jako pás dotýkající se spodní hrany po celé šířce…). Druhý pokus vyšel.
+  - **JAK SE TO OVĚŘUJE — použij totéž, až se textura bude měnit znovu:**
+    1. Položit na obrázek **skutečné obrysy zemí** z `data/country-shapes.json`
+       (Natural Earth 110m) přes `x=(lon+180)/360·W`, `y=(90−lat)/180·H`. Na správné
+       textuře obrysy padnou na malované pobřeží; na špatné jsou viditelně vedle.
+       *(Právě proto ten soubor nemazat, i když ho appka nepoužívá.)*
+    2. **Bloková korelace masek souše** proti staré textuře — dá číslo, ne dojem.
+       Výsledek: medián odchylky **1,5° délky a 1° šířky**, tj. ~4 px na glóbu, kde
+       má značka 13 px a Česko ~14 px. Obě textury proti témuž etalonu vyšly shodně
+       (6,9 vs 7,1 — absolutní číslo je zkreslené tím, že etalon má jen 55 zemí, ale
+       rozdíl mezi nimi je nula).
+    3. **Maska souše se NESMÍ dělat podle jasu.** První verze brala „teplý odstín
+       a jas < 235", jenže nová mapa má Saharu skoro bílou, takže půlka Afriky vypadla
+       a měření lhalo. Správně je „ne-oceán" (`r > b`), což bere souš i led.
+  - **Zisk: 1024 → 1456 px na 360°, tedy 2,84 → 4,04 pixelu na stupeň (+42 %).** Soubor
+    113 → 212 kB. Poměr srovnán na přesně 2:1 (Gemini vrátilo 1456×720).
+  - **Textura není mocnina dvojky a je to v pořádku** — ověřeno, že prohlížeč dává WebGL2,
+    kde NPOT nevadí. Ve WebGL1 by three vypnulo mipmapy a vynutilo clamp.
+  - **Zálohu staré textury do `assets/` NEDÁVEJ** — celá složka se kopíruje do nasazení,
+    takže by se zbytečně nahrávala na web. Git ji drží stejně dobře.
+
+- **2026-09-01 — Glóbus: kreslicí plocha se přizpůsobí displeji, ale STROP BYLA TEXTURA (1024×512).**
+  Hráč hlásil, že glóbus je v malém rozlišení. Má pravdu a hlavní příčinu **nejde spravit
+  kódem** — je potřeba přemalovat texturu.
+  - **Kolik detailu textura vůbec má:** 1024 px na 360° = **2,84 pixelu na stupeň**.
+    Evropa je široká ~35°, takže má v textuře **~100 pixelů** — a v medailonu se zobrazuje
+    na ~110 CSS px. Je to tedy zhruba 1:1: obraz není roztažený, prostě **není co roztáhnout**.
+    Jediná cesta k ostřejšímu glóbu je textura 2048×1024 (5,7 px/°, Evropa 200 px).
+    **Upscale hotového JPEGu je k ničemu** (zamítnuto už 2026-08-30) — musí se přemalovat,
+    tj. Gemini s dnešní texturou v příloze, aby zůstala geografie: `spinGlobeTo()` natáčí
+    kouli na souřadnice a značka sedí napevno uprostřed rámu, takže posunutá pevnina =
+    špatně ukázaná země. Podmínky: equirektangulární 2:1, full-bleed, šev v Pacifiku.
+  - **Opraveno zadarmo, ale je to jen okrajové:** canvas měl natvrdo 460×460 se
+    `setPixelRatio(1)`, takže na hustém displeji nebo při přiblížení prohlížeče (Chrome
+    tím zvedá `devicePixelRatio`) plochu nafukoval prohlížeč. Nově `resizeGlobe()` počítá
+    `css × dpr × 1,6` s podlahou 460 a stropem 1024. Přibylo anizotropní filtrování
+    (maximum je 16), které pomáhá na okraji koule, kde je textura viděná šikmo.
+  - **PAST, na kterou jsem naletěl a odhalilo ji až měření: `css × dpr` je MÁLO.** První
+    verze počítala jen tohle a při dpr 1 vyšla 290 px — tedy **míň než dosavadních 460**,
+    takže by ostrost zhoršila. Těch 460 nebylo omylem: canvas se kreslil ve větším
+    rozlišení, než se zobrazoval, takže se okraje převzorkovaly. Odtud násobek 1,6
+    a podlaha. Naměřeno po opravě: medailon 460 (beze změny při dpr 1), glóbus na
+    rozcestníku **800** místo 460.
+
+- **2026-09-01 — Pruh kolem ilustrace nese ROZMAZANÁ KOPIE téhož obrázku; oba obdélníky jsou stejně vysoké.**
+  Dokončení předchozího bodu. Hráč hlásil, že „jemný pruh" u obrázku je pořád vidět a že
+  levý obdélník je větší než pravý — chtěl to souměrné. Obojí opraveno, ale ani jedna cesta
+  nevedla tam, kam se nabízela.
+  - **Pruh NEJDE vyplnit pevnou barvou a je to změřené, ne odhad.** Nasamploval jsem rohy
+    dvanácti namátkových ilustrací: většina má krém kolem `rgb(223,203,170)`, jenže
+    `cz-a-trabant-ekologie` má `rgb(69,95,89)` a `cz-k-kromeriz-kvetna-zahrada`
+    `rgb(146,142,107)` — scény, které jdou do krajů, nemají s papírem společného nic.
+    Krémová pasparta by u nich byla vidět **víc** než dnešní pruh. Nově pruh nese
+    **`.qz-picbg`, rozmazaná kopie téhož souboru** (blur 24 px, `inset: -8%` kvůli lemu
+    z průhlednosti za hranou). Navazuje vždycky, u 16:9 i u budoucích 4:5.
+    `.qz-picbg` **musí mizet a naskakovat s obrázkem** (`wirePic` v [quiz.js](quiz.js)),
+    jinak by u chybějící ilustrace zůstal pod razítkem země barevný čtverec.
+  - **RÁM NEMÁ PEVNÝ POMĚR. Táhne ho řádek mřížky, a proto oba obdélníky LÍCUJÍ VŽDYCKY.**
+    Za jediný den se tu vystřídalo **pět pevných poměrů** (4:5 → 1:1 → 16:9 → 4:3 → 5:4)
+    a každý skončil stejně: rám a karta se o pár desítek pixelů míjely. **Nemůže to vyjít
+    a nezkoušej to znovu** — karta měří podle počtu řádků otázky jednou 381 px a jindy
+    510, takže žádné jedno číslo nesedí na všechny otázky. Řešení je `align-self: stretch`
+    místo `start`: rám si výšku bere z řádku, tedy z karty. Naměřeno na šesti otázkách
+    v obou stavech: **horní i dolní hrana obou obdélníků sedí na pixel, pokaždé.**
+  - **Podmínka, bez které to spadne: rám nesmí mít obsah V TOKU.** `.qz-pic` je proto
+    `position: absolute; inset: 0; margin: auto`. Obrázek v toku by do řádku vnesl svou
+    přirozenou výšku (686 px) a nafoukl ho — ověřeno, dělo se to.
+  - **Pravidlo z 2026-07-31 tím NENÍ porušené.** Říká, že se nesmí hnout snímek. Rám sice
+    mění výšku mezi otázkou a odpovědí, jenže u otázky v něm žije glóbus a snímek se
+    objeví teprve po odpovědi — takže není co poskočit.
+  - **Karta se ZMENŠILA** (výslovné přání „klidně udělej ten první obdélník menší"):
+    odpovědi 64 → 52 px, mezera 20 → 12 px, vnitřní okraj karty 18 → 14 px.
+    Blok platí až od 900 px, takže mobil se nemění; 52 px je nad 44px minimem pro dotyk.
+  - **ŠEV ZMĚKČEN maskou; a `object-fit: contain` kvůli tomu muselo pryč.** Pruh barvou
+    seděl, ale hrana mezi ostrým obrázkem a rozmazaným podkladem byla vidět jako linka.
+    Maska na `.qz-pic` ale s `object-fit` NEFUNGUJE: element má pořád velikost celého
+    rámu a obrázek je jen vykreslený dovnitř, takže by změkčovala okraje prázdna. Obrázek
+    je proto absolutně pozicovaný s `max-width/max-height: 100%`, čímž se element
+    velikostí kryje s obrázkem a maska (10 px) sedí na jeho hraně.
+  - **GENERÁTOR JE NOVĚ ČTVERCOVÝ (1:1) a mění se s rámem — dnes už potřetí.** Za jediný
+    den šel 16:9 → 4:5 → 5:4 → 1:1, pokaždé proto, že se pohnul rám, a dvakrát jsem na
+    to zapomněl. **Když se hýbe s rámem, MUSÍ se hýbat i generátor**, jinak budou mít
+    budoucí obrázky pruhy jen otočené o 90°. Čtverec je změřený, ne odhadnutý: rám je
+    široký 376 px a ve stavu, kdy je obrázek vidět (po odpovědi), měl na šesti otázkách
+    312–374 px, medián ~360. Ve stejném rámu vychází pruh u 1:1 na **8 px**, u 5:4 na
+    42 px a u 16:9 na 84 px. Šířka souboru zůstává 1000 px → 1000×1000.
+  - **Přemalovat okraje starých obrázků skriptem NEMÁ SMYSL — a je to spočítané.** Lokální
+    dopočet (zrcadlení, roztažení kraje, rozmazání) nevymyslí obsah; dá přesně to, co dnes
+    dělá `.qz-picbg`, jen natvrdo v souboru a nevratně. Generativní domalování přes Gemini
+    stojí **stejně jako přegenerování celého obrázku** (~$0,034/kus v batchi), takže za
+    1 091 starých 16:9 kusů je to ~$37 tak či tak — a přegenerování dá pořádnou kompozici
+    ve čtverci, ne dolepené okraje. Až bude kredit: `node scripts/gen-irony-images.js --force`.
+  - **AŽ BUDE VĚTŠINA FONDU ČTVERCOVÁ, uprav MOBILNÍ rám.** Ten je dnes 343×196 (široký),
+    takže dnešním 16:9 sedí přesně, ale čtverec v něm bude 196×196 s pruhy 73 px po
+    stranách. Desktopový rám se měnit nemusí — ten se řídí kartou, ne poměrem.
+  - **ROZŠIŘOVÁNÍ HRACÍ PLOCHY ZAMÍTNUTO A VRÁCENO ZPĚT — nezkoušej to znovu.** Během
+    dne tu bylo postupně 1460 px a pak 1200 px (práh nejdřív 1300, pak 1150). Hráč to
+    ukončil jednou větou: *„rozhodnutí dát to na celou šířku obrazovky nebyl dobrý
+    nápad"*. Důvod není jen vkus: při 1200 má rám 464 px a při 1460 skoro 570, jenže
+    ilustrace jsou široké 1000 px (nové) a 1200 px (staré) — na retině (DPR 2 chce
+    dvojnásobek) se tedy roztahovaly nad svoje rozlišení. A protože rám musí mít
+    partnera stejné výšky, tlačilo to zvětšovat i textovou kartu. **Hrací obrazovka
+    zůstává v 980 px**, kde má otázka ~65 znaků na řádek. Výběrové obrazovky
+    (`.qz-pick`) se rozšiřují dál a to je v pořádku — tam jde o počet dlaždic na řádek,
+    ne o čtení textu ani o rozlišení jedné ilustrace.
+  - **Čísla platná po návratu na 980 px:** sloupce 556 / 376, rám 5:4 = 302 px, obrázek
+    16:9 v něm 370×212 (celý, nic se neořezává). Karta u odpovědi 302–374 px, tedy
+    v nejlepším případě přesně tolik co rám. Rovnost sloupců je tu volnější než při
+    1200 px — to je cena za užší plochu a hráč ji zvolil vědomě.
+  - Ověřeno v prohlížeči na 375, 768, 1100 a 1920 px; `test:offline` 568 kontrol.
+
 - **2026-09-01 — Ilustrace u otázky se už NEOŘEZÁVÁ; generátor jede na výšku (4:5).**
+  > **Rám už není 1:1 ani 16:9, ale `5 / 4`** — viz zápis nad tímhle. Zbytek platí.
   Hráč se zeptal, jestli je obrázek celý. Nebyl: rám u odpovědi je 4:5 (na výšku,
   přání 2026-08-14), ilustrace se generovaly 16:9 (na šířku) a `object-fit: cover`
   z nich **ukrajoval 54 % ŠÍŘKY** — u hasičského bálu zůstala mimo záběr celá třetí
@@ -175,30 +533,32 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     to jde, je samo o sobě ten druhý nález (viz níž).
 
 - **2026-09-01 — OTEVŘENÉ nálezy z auditu. Nic z toho není opravené, čti před další prací na online.**
+  > **AKTUALIZACE 2026-09-02: tenhle seznam je z velké části VYŘEŠENÝ, jen o tom
+  > dřív nebyl zápis přímo tady.** Kdo čte tenhle bod, ať jde rovnou na novější
+  > zápisy — je jich šest, každý s vlastním datem a odkazem na commit/soubor.
   - ~~Časová složka online hry neexistuje na serveru~~ — **VYŘEŠENO 2026-09-01**, viz zápis výš.
-  - **Správné odpovědi jsou veřejně na webu** (`dist/data/questions/*.json`), protože je
-    potřebuje offline hra. Není to chyba v kódu, ale **střet dvou režimů nad jedním fondem**.
-    Dokud platí, je jakýkoli žebříček spíš ozdoba než měření. Buď to přiznat a žebříčky
-    odlehčit, nebo fond rozdělit na offline a serverový.
-  - **Souběhy:** `answer.js` čte `answered+1` a zapisuje absolutní hodnotu → dvě souběžné
-    odpovědi čítač rozbijí a hra se **nikdy neuzavře**; `settle.js` nastavuje `status='done'`
-    bez `WHERE status='open'` → dvojí zápis Glicka i turnajových bodů; `join.js` a `bot.js`
-    nemají zámek na slot, takže do souboje pro dva můžou vstoupit tři.
-  - **Žádná expirace her ani fronty.** Kdo prohrává, zavře prohlížeč — hra zůstane `open`
-    navždy, soupeř nedostane výhru a nemůže ani odvetu. Je to nejlevnější způsob, jak si
-    nikdy nepokazit rating. Chybí cron/`[triggers]`.
-  - **Odveta poškozuje soupeře:** `rematch.js` volá `markSeen()` na druhého hráče, takže mu
-    odečte 10 otázek z fondu neviděných, **aniž by je kdy uviděl** — a jde to opakovat.
-  - **Three.js z CDN bez `integrity`** (`hra.html`). Jde proti konvenci „appka je soběstačná"
-    i proti rozhodnutí z 2026-07-27, kdy se kvůli tomu stahovala textura glóbu do repa.
-  - **Žádný `_headers`** → žádná CSP u appky, která překresluje přes `innerHTML` na desítkách
-    míst. Chybí i `X-Frame-Options` a `Referrer-Policy`.
-  - **Odkaz na obnovu PINu se loguje v čistém textu** (`mail.js`) — v logu je plnohodnotný
-    převzímací klíč spárovaný s e-mailem.
-  - **Bez limitu:** registrace (sybil farming ratingu), zakládání her a turnajů.
-  - **Drobnosti:** `esc()` v `quiz.js` neescapuje apostrof (v `online.js` ano), `flagStamp()`
-    neescapuje `cc`, `avatar` se ukládá bez jakékoli validace, token platí 90 dní a nejde
-    odvolat ani změnou PINu, `denní pětka` jde odehrát 3× denně přepnutím pásma.
+  - ~~**Souběhy** (`answer.js` absolutní zápis, `settle.js` bez atomického zámku,
+    `join.js`/`bot.js` bez unikátnosti slotu)~~ — **VYŘEŠENO 2026-09-01**, „Souběhy
+    v online hře opraveny".
+  - ~~**Žádná expirace her**~~ — **VYŘEŠENO 2026-09-01**, „Expirace her, odveta
+    neubírá otázky…" (`expireStaleGames`, veze se na `/api/me`).
+  - ~~**Odveta poškozuje soupeře**~~ — **VYŘEŠENO 2026-09-01**, tentýž zápis
+    (`markSeen` se volá až při vyžádání otázky, ne při založení odvety).
+  - ~~**Three.js bez `integrity`**~~ — **VYŘEŠENO 2026-09-01**, tentýž zápis.
+  - ~~**Žádný `_headers`**~~ — **VYŘEŠENO 2026-09-01**, tentýž zápis.
+  - ~~**Bez limitu: registrace, zakládání her a turnajů**~~ — **VYŘEŠENO 2026-09-02**,
+    „Rate limit na registraci, zakládání her a turnajů".
+  - **Stále otevřené:**
+    - **Správné odpovědi jsou veřejně na webu** (`dist/data/questions/*.json`), protože
+      je potřebuje offline hra. Není to chyba v kódu, ale **střet dvou režimů nad jedním
+      fondem**. Dokud platí, je jakýkoli žebříček spíš ozdoba než měření. Buď to přiznat
+      a žebříčky odlehčit, nebo fond rozdělit na offline a serverový.
+    - **Odkaz na obnovu PINu se loguje v čistém textu** (`mail.js`) — v logu je
+      plnohodnotný převzímací klíč spárovaný s e-mailem.
+    - **Drobnosti:** `esc()` v `quiz.js` neescapuje apostrof (v `online.js` ano),
+      `flagStamp()` neescapuje `cc`, `avatar` se ukládá bez jakékoli validace, token
+      platí 90 dní a nejde odvolat ani změnou PINu, `denní pětka` jde odehrát 3× denně
+      přepnutím pásma.
 
 - **2026-09-01 — Produkce nasazena a srovnaná s repem; `account_id` patří do `wrangler.toml`.**
   Produkční D1 byla od 2026-08-25 pozadu o všechno — sjednocení sekcí, 40 nových otázek,
@@ -239,21 +599,22 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     Sport 4, Umění 2, Jazyk & slova 1. Výsledek 545 / 536 / 512 / 510 / 437 / 342 / 300 /
     298 / 262, celkem 3 742.
 
-- **2026-09-01 — Široký monitor: výběrové obrazovky a hra se rozšiřují, formuláře ne.**
-  Strop `#qz-body` (980 px) dělal na monitoru 1920 dva prázdné pruhy po 400 px. Každá
-  obrazovka se rozšiřuje jinak a **důvody jsou změřené, ne odhadnuté**:
-  - **výběr zemí** (56 dlaždic): až 7 sloupců, tam chceme co nejvíc;
-  - **kontinenty (8) a témata (10)**: stejný počet sloupců, jen větší dlaždice — 7+1 nebo
-    6+2 vypadá jako chyba sazby, ne jako nabídka;
-  - **hra: strop 1460 px, ne víc.** Při 1720 by měla otázka přes 120 znaků na řádek (čte se
-    hůř, a čte se pod časovým limitem) a fotky jsou široké 1200 px, takže by na ~840px rámu
-    na retině změkly. 1460 dá ~90 znaků a rám ~700 px;
-  - **formuláře, výsledky a online se nerozšiřují vůbec.**
-  - Vše je v `@media (min-width: 1300px)`, takže na telefon ani tablet to nedosáhne —
-    ověřeno měřením na 375, 768, 966, 1366, 1600 a 1920 px, nikde nic nepřetéká.
-    `:has()` se v nepodporujícím prohlížeči jen neuplatní a zůstane dnešní stav.
-  - **Past: `.qz-tiles:not(.qz-tiles-sec)` má stejnou specificitu jako `.qz-tiles-cc`**,
-    takže se strop 940 px nepřebil, dokud selektor nebyl `.qz-tiles.qz-tiles-cc`.
+- **2026-09-01 — CELÝ ZÁPIS NÍŽE JE ZRUŠENÝ. Žádná obrazovka se na širokém monitoru nerozšiřuje.**
+  Vzniklo to na přání „chtěl bych takto na šířku vše" a **týž hráč to týž den zrušil** —
+  nejdřív u hry („rozhodnutí dát to na celou šířku obrazovky nebyl dobrý nápad"), pak
+  i u výběrových obrazovek. Vše drží ve sloupci **980 px**, jak to bylo předtím.
+  Prázdné pruhy po stranách jsou menší zlo než obrazovka roztažená přes monitor.
+  **Nezkoušej to potřetí.** Původní zápis zůstává jen kvůli tomu, co se cestou zjistilo:
+  - ~~**výběr zemí** (56 dlaždic): až 7 sloupců, tam chceme co nejvíc;~~ **zrušeno**
+  - ~~**kontinenty (8) a témata (10)**: stejný počet sloupců, jen větší dlaždice — 7+1 nebo
+    6+2 vypadá jako chyba sazby, ne jako nabídka;~~ **zrušeno**
+  - ~~**hra: strop 1460 px**~~ — **zrušeno**, viz podrobný zápis nahoře (rám 464–570 px
+    roztahoval ilustrace široké 1000–1200 px nad jejich rozlišení).
+  - **formuláře, výsledky a online se nerozšiřují vůbec** — to platilo tehdy i teď.
+  - **Past, která PLATÍ DÁL, kdyby to někdo otevíral znovu: `.qz-tiles:not(.qz-tiles-sec)`
+    má strop 940 px a STEJNOU specificitu jako `.qz-tiles-cc`**, takže se přebije jen
+    dvojicí tříd `.qz-tiles.qz-tiles-cc`. Samotné rozšíření `#qz-body` tedy nestačí.
+    Třída `qz-tiles-cc` v [quiz.js](quiz.js) zůstává, i když k ní dnes není pravidlo.
 
 - **2026-09-01 — Slovník sjednocen na „profil" a všechny texty začínají velkým písmenem.**
   Patička registrace zněla jako formulář na úřadě („Už tu hráče máš?"); nově „Už se známe?
