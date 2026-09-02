@@ -36,11 +36,10 @@ const MODEL = "gemini-2.5-flash-image";
 const URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 const REFERENCE = "assets/country-ch.jpg";   // vzor rukopisu, ne obsahu
 const OUT_DIR = "img";
-// Šířka klesla 1200 → 1000 spolu s přechodem na poměr 4:5 (2026-09-01). Při 1200 by
-// obrázek na výšku měl 1200×1500, tedy 2,2× víc pixelů než dosavadní 1200×686 — přes
-// zbývajících 2 601 kusů by to bylo skoro +1 GB v repu (dnes má img/ 184 MB).
-// 1000×1250 vychází na ~265 kB a pořád pokrývá retinu: rám u odpovědi má na desktopu
-// ~371 CSS px, na mobilu ~343, takže i při DPR 2,7 je z čeho brát.
+// Šířka 1000 (dřív 1200) spolu s přechodem na čtverec (2026-09-01). Rám u odpovědi má
+// na desktopu 376 CSS px a na mobilu 343, takže 1000 px pokryje i retinu s rezervou.
+// Při 1200 by čtverec měl 1200×1200, tedy 2,1× víc pixelů než dosavadní 1200×686 —
+// přes zbývajících 2 574 kusů by to byly stovky MB v repu navíc (dnes má img/ 184 MB).
 const SIRKA = 1000, KVALITA = 84;            // dřív 1200 / ~176 kB při 16:9
 
 // Styl se drží TADY, ne v datech — ať jde doladit na jednom místě pro celý fond.
@@ -135,13 +134,16 @@ function apiKlic() {
 
   const o = args();
   const outDir = o.ui ? "assets" : OUT_DIR;
-  // Ilustrace k otázkám jsou od 2026-09-01 NA VÝŠKU (4:5), ne 16:9. Rám u odpovědi je
-  // vysoký (přání 2026-08-14) a se širokým obrázkem se v něm ořezávalo 54 % šířky —
-  // u hasičského bálu zmizela celá třetí postava. Klient teď používá `object-fit: contain`,
-  // takže se nic neztrácí ani u starých 16:9, ale 4:5 rám vyplní bez prázdných pruhů.
-  // Přegenerovávat hotových 1 141 obrázků se nevyplatí; fond se srovná sám, jak budou
-  // přibývat nové (chybí jich 2 601, tedy většina).
-  const pomer  = o.ui ? "1:1" : "4:5";
+  // POMĚR MUSÍ SEDĚT S RÁMEM V quiz.css, jinak si problém jen otočíš — a tenhle řádek
+  // se 2026-09-01 měnil třikrát, tak si to přečti celé, než na něj sáhneš.
+  // Rám u odpovědi nemá pevný poměr: na desktopu je široký 376 px a na výšku se táhne
+  // podle textové karty, aby s ní lícoval. Změřeno na šesti otázkách za sebou — ve
+  // stavu, kdy je obrázek vidět (tedy PO odpovědi), měl 312 až 374 px, medián ~360.
+  // Rám je tedy fakticky ČTVEREC, proto 1:1: při 370 px šířky vyjde obrázek 360×360
+  // a pruh je 8 px. Pro srovnání ve stejném rámu: 16:9 → pruh 84 px, 5:4 → 42 px.
+  // Starých 1 091 obrázků je 16:9; pruh u nich zakrývá `.qz-picbg` (rozmazaná kopie).
+  // (Dlaždice rozcestníku jsou čtvercové taky, ale z jiného důvodu — viz `dlazdice()`.)
+  const pomer  = "1:1";
   const sirka  = o.ui ? 512 : SIRKA;
   fs.mkdirSync(outDir, { recursive: true });
   let fronta = o.ui ? dlazdice() : otazky();
