@@ -1,9 +1,15 @@
-import { BANDS, TIME_CONTROLS, json, fail, newId } from '../../_lib/game.js';
+import { BANDS, TIME_CONTROLS, json, fail, newId, checkRateLimit } from '../../_lib/game.js';
 import { currentUser } from '../../_lib/auth.js';
 import { MIN_DURATION_MIN, MAX_DURATION_MIN, MAX_START_DELAY_MIN, tournamentStatus, tournamentEndsAt }
   from '../../_lib/tournament.js';
 
 const DEFAULT_NAME = { blesk: 'Bleskový turnaj', klasika: 'Klasický turnaj' };
+
+// Klouzavé okno na ZALOŽENÍ turnaje, per uživatel (2026-09-02) — turnaj je vzácnější
+// akce než hra (většina hráčů se jen přidává), 5 za hodinu je proto přísnější
+// než u her a pořád nad tím, co udělá reálný zakladatel.
+const MAX_TOURNEYS = 5;
+const WINDOW_MS = 60 * 60 * 1000;
 
 /**
  * GET /api/tournament?band= — turnaje pásma, co ještě neskončily dávno.
@@ -41,6 +47,12 @@ export async function onRequestGet({ request, env }) {
 export async function onRequestPost({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
+
+  const pod = await checkRateLimit(
+    () => env.DB.prepare('SELECT tourney_tries AS tries, tourney_tries_at AS tries_at FROM users WHERE id = ?').bind(me.id).first(),
+    (tries, at) => env.DB.prepare('UPDATE users SET tourney_tries = ?, tourney_tries_at = ? WHERE id = ?').bind(tries, at, me.id).run(),
+    MAX_TOURNEYS, WINDOW_MS);
+  if (!pod) return fail('příliš mnoho založených turnajů, zkus to za chvíli', 429);
 
   let body = {};
   try { body = await request.json(); } catch (e) { /* výchozí */ }

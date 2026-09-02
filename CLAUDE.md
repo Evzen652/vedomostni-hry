@@ -20,6 +20,43 @@ komentáře nebo tenhle soubor — odpovědi uživateli (chat, shrnutí, hlášk
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-02 — Rate limit na registraci, zakládání her a turnajů (poslední tři body z auditu 2026-09-01 bez limitu).**
+  Registrace, hry a turnaje neměly žádné omezení počtu volání — šlo skriptem navyrábět
+  libovolný počet účtů (sybil farming ratingu i denního žebříčku) nebo zaplavit tabulky
+  `games`/`tournaments`.
+  - **Registrace: klíčováno IP, ne účtem** — v okamžiku volání účet ještě neexistuje,
+    takže na něj nejde pověsit sloupec jako u `friend_tries`. Nová tabulka `reg_attempts`
+    (migrace [2026-09-02-rate-limits.sql](migrations/2026-09-02-rate-limits.sql)).
+    **8 za hodinu** — nad tím, co reálně udělá rodina zakládající účty víc dětem
+    (typicky 2–4), ale sybil farmění zpomalí o dva řády.
+  - **Hry a turnaje: klíčováno účtem**, stejný vzor jako `friend_tries` z 2026-09-01
+    (nové sloupce `game_tries`/`tourney_tries` + `_at`). **30 her / 5 turnajů za hodinu**
+    — `test:api` má nejnáročnější scénář 14 her z jednoho účtu v kalibrační smyčce,
+    tohle mu zůstává hodně nad hlavou; turnaj je vzácnější akce, proto přísnější strop.
+  - **Sdílená logika v `checkRateLimit()`** ([functions/_lib/game.js](functions/_lib/game.js))
+    — na rozdíl od `friends.js`, kde se počítají jen NEÚSPĚŠNÉ pokusy (kdo kód dostal,
+    nikdy nenarazí), se tady počítá KAŽDÉ volání, protože pokus sám o sobě je to, co
+    se omezuje. Bere callbacky na čtení/zápis, ne přímo SQL, protože per-účet (UPDATE
+    existujícího řádku) a per-IP (UPSERT, řádek nemusí existovat) potřebují jiné dotazy.
+  - **`ALLOW_DEV_SECRET` (stejná proměnná jako u `sessionSecret()`) vypíná limit
+    registrace v lokálním vývoji** — `test:api` samo zakládá přes 20 účtů v jednom
+    běhu ze stejné IP, což by o produkčním stropu 8/hod nešlo spustit. Produkce tuhle
+    proměnnou nikdy nemá nastavenou, takže limit tam platí bez výjimky. Hry a turnaje
+    bypass NEPOTŘEBUJÍ — jsou klíčované účtem a `test:api` nikdy nepřekročí 14/účet.
+  - **Ověřeno TROJÍM způsobem, ne jen tím, že svítí zeleně:**
+    1. Čistý unit test `checkRateLimit()` s falešným úložištěm — 8 povoleno, 4 zamítnuto,
+       počítadlo po zamítnutí neroste, po vypršení okna se obnoví. Mutací (`>` místo `>=`)
+       ověřeno, že by špatná hranice prošla nepovšimnuta (pustila by 9 misto 8).
+    2. Živě proti skutečné D1: turnaj limit 5 živě otestován beze změny kódu (5 projde,
+       6.+ dostane 429). Hry a registrace ověřeny DOČASNÝM snížením stropu (3 místo
+       30/8) a živým voláním — po ověření vráceno na produkční hodnoty, `diff` proti
+       verzi před mutací čistý.
+    3. `test:api` 138 kontrol po celé úpravě beze změny (dev-bypass funguje).
+  - **Past cestou:** `sed -i` na Windows/Git Bash převedlo CRLF na LF u jednoho ze
+    tří upravovaných souborů (`register.js`) — soubory `functions/**/*.js` v tomhle
+    repu CRLF mají (na rozdíl od `data/questions/*.json`, kde je to vynucené schválně,
+    zde je to jen dědictví editoru). Opraveno zpátky, `diff` teď čistý bajt po bajtu.
+
 - **2026-09-02 — Dětská hláška „Tys to věděl!" se opakovala u 62 % otázek; rozbito na 8 rotujících variant.**
   Hráč si všiml, že hláška po správné odpovědi v dětském pásmu zní pořád stejně, a zeptal
   se „jak často?". Změřeno přesně: **494 z 990** dětských otázek (50 %) mělo `quip_correct`
@@ -496,30 +533,32 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     to jde, je samo o sobě ten druhý nález (viz níž).
 
 - **2026-09-01 — OTEVŘENÉ nálezy z auditu. Nic z toho není opravené, čti před další prací na online.**
+  > **AKTUALIZACE 2026-09-02: tenhle seznam je z velké části VYŘEŠENÝ, jen o tom
+  > dřív nebyl zápis přímo tady.** Kdo čte tenhle bod, ať jde rovnou na novější
+  > zápisy — je jich šest, každý s vlastním datem a odkazem na commit/soubor.
   - ~~Časová složka online hry neexistuje na serveru~~ — **VYŘEŠENO 2026-09-01**, viz zápis výš.
-  - **Správné odpovědi jsou veřejně na webu** (`dist/data/questions/*.json`), protože je
-    potřebuje offline hra. Není to chyba v kódu, ale **střet dvou režimů nad jedním fondem**.
-    Dokud platí, je jakýkoli žebříček spíš ozdoba než měření. Buď to přiznat a žebříčky
-    odlehčit, nebo fond rozdělit na offline a serverový.
-  - **Souběhy:** `answer.js` čte `answered+1` a zapisuje absolutní hodnotu → dvě souběžné
-    odpovědi čítač rozbijí a hra se **nikdy neuzavře**; `settle.js` nastavuje `status='done'`
-    bez `WHERE status='open'` → dvojí zápis Glicka i turnajových bodů; `join.js` a `bot.js`
-    nemají zámek na slot, takže do souboje pro dva můžou vstoupit tři.
-  - **Žádná expirace her ani fronty.** Kdo prohrává, zavře prohlížeč — hra zůstane `open`
-    navždy, soupeř nedostane výhru a nemůže ani odvetu. Je to nejlevnější způsob, jak si
-    nikdy nepokazit rating. Chybí cron/`[triggers]`.
-  - **Odveta poškozuje soupeře:** `rematch.js` volá `markSeen()` na druhého hráče, takže mu
-    odečte 10 otázek z fondu neviděných, **aniž by je kdy uviděl** — a jde to opakovat.
-  - **Three.js z CDN bez `integrity`** (`hra.html`). Jde proti konvenci „appka je soběstačná"
-    i proti rozhodnutí z 2026-07-27, kdy se kvůli tomu stahovala textura glóbu do repa.
-  - **Žádný `_headers`** → žádná CSP u appky, která překresluje přes `innerHTML` na desítkách
-    míst. Chybí i `X-Frame-Options` a `Referrer-Policy`.
-  - **Odkaz na obnovu PINu se loguje v čistém textu** (`mail.js`) — v logu je plnohodnotný
-    převzímací klíč spárovaný s e-mailem.
-  - **Bez limitu:** registrace (sybil farming ratingu), zakládání her a turnajů.
-  - **Drobnosti:** `esc()` v `quiz.js` neescapuje apostrof (v `online.js` ano), `flagStamp()`
-    neescapuje `cc`, `avatar` se ukládá bez jakékoli validace, token platí 90 dní a nejde
-    odvolat ani změnou PINu, `denní pětka` jde odehrát 3× denně přepnutím pásma.
+  - ~~**Souběhy** (`answer.js` absolutní zápis, `settle.js` bez atomického zámku,
+    `join.js`/`bot.js` bez unikátnosti slotu)~~ — **VYŘEŠENO 2026-09-01**, „Souběhy
+    v online hře opraveny".
+  - ~~**Žádná expirace her**~~ — **VYŘEŠENO 2026-09-01**, „Expirace her, odveta
+    neubírá otázky…" (`expireStaleGames`, veze se na `/api/me`).
+  - ~~**Odveta poškozuje soupeře**~~ — **VYŘEŠENO 2026-09-01**, tentýž zápis
+    (`markSeen` se volá až při vyžádání otázky, ne při založení odvety).
+  - ~~**Three.js bez `integrity`**~~ — **VYŘEŠENO 2026-09-01**, tentýž zápis.
+  - ~~**Žádný `_headers`**~~ — **VYŘEŠENO 2026-09-01**, tentýž zápis.
+  - ~~**Bez limitu: registrace, zakládání her a turnajů**~~ — **VYŘEŠENO 2026-09-02**,
+    „Rate limit na registraci, zakládání her a turnajů".
+  - **Stále otevřené:**
+    - **Správné odpovědi jsou veřejně na webu** (`dist/data/questions/*.json`), protože
+      je potřebuje offline hra. Není to chyba v kódu, ale **střet dvou režimů nad jedním
+      fondem**. Dokud platí, je jakýkoli žebříček spíš ozdoba než měření. Buď to přiznat
+      a žebříčky odlehčit, nebo fond rozdělit na offline a serverový.
+    - **Odkaz na obnovu PINu se loguje v čistém textu** (`mail.js`) — v logu je
+      plnohodnotný převzímací klíč spárovaný s e-mailem.
+    - **Drobnosti:** `esc()` v `quiz.js` neescapuje apostrof (v `online.js` ano),
+      `flagStamp()` neescapuje `cc`, `avatar` se ukládá bez jakékoli validace, token
+      platí 90 dní a nejde odvolat ani změnou PINu, `denní pětka` jde odehrát 3× denně
+      přepnutím pásma.
 
 - **2026-09-01 — Produkce nasazena a srovnaná s repem; `account_id` patří do `wrangler.toml`.**
   Produkční D1 byla od 2026-08-25 pozadu o všechno — sjednocení sekcí, 40 nových otázek,
