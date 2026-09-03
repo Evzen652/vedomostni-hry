@@ -80,6 +80,25 @@ známým ratingem — ne nastavit natvrdo. Důvod je v sekci „Ověření model
 nemá absolutní kotvu, takže „bot za 1500“ nastavený od stolu nemusí odpovídat „hráči za 1500“.
 Bot se tedy kalibruje na fond, ne fond na bota.
 
+### „Ghost“ soupeř: přehrání skutečných lidských her (2026-09-03)
+Řídká základna (~19 účtů) znamená, že dva lidé se v živém duelu ve stejném okně skoro nepotkají —
+matchmaking tedy skoro vždy skončí soupeřem, který není živý člověk v reálném čase. Aby to přesto
+působilo lidsky, **soupeř nepřehrává jen statistický model, ale kde to jde SKUTEČNOU lidskou
+odpověď** na tutéž otázku (její trefu i čas). Lidské načasování a chyby se nedají prokouknout jako
+skript.
+
+- **Banka `replay_answers`** (`question_id`, `band`, `correct`, `ms`) se plní v `settleIfDone`
+  z odpovědí lidských hráčů (daily/duel/odkaz). Anonymní — nese jen chování, ne identitu (soukromí
+  + žádná impersonace). Boti/ghost jsou vyfiltrovaní přes `is_bot`, takže banka nesbírá sama sebe.
+- `botPlay` pro každou otázku losuje vzorek z banky (dané pásmo); **chybí-li otázka (cold start),
+  spadne na statistický model výš** — otázku po otázce. Mechanika běží pod účtem bota, takže se
+  kalibruje stejně (self-correcting) a žebříček zůstává poctivý.
+- **Prezentace:** soupeř se hráči ukazuje pod lidským jménem (zásoba jmen, odvozeno z id hry —
+  stabilní v rámci hry, různé mezi hrami), bez štítku „(bot)“. Server dál posílá `is_bot` (rozbor
+  a žebříček ho potřebují), jen se nekreslí. Matchmaking nasadí soupeře automaticky po pár vteřinách
+  (žádné fingované čekání); reálný člověk se stihne spárovat dřív. Reálný člověk vs. člověk v reálném
+  čase žije přes souboj na odkaz a turnaje.
+
 ---
 
 ## 3. Věková pásma a rating
@@ -202,8 +221,9 @@ Kdyby to jednou přestalo stačit, Durable Objects zůstávají cestou nahoru �
 je jediné místo, které by se měnilo.
 
 Fronta (`/api/match`) páruje uvnitř pásma a časové kontroly, okno ratingu se rozšiřuje
-o 100 bodů za každou sekundu čekání. Po 15 s vrátí `offer_bot`, takže hráč nikdy nekouká
-na prázdný lobby.
+o 100 bodů za každou sekundu čekání. Po **4 s** vrátí `offer_bot` (bylo 15 s — u řídké
+základny je dlouhé čekání jen divadlo, viz „Ghost soupeř“) a klient nasadí soupeře
+automaticky, takže hráč nikdy nekouká na prázdný lobby ani nečeká na nikoho.
 
 ### Datový model
 

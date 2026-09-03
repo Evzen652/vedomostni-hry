@@ -343,6 +343,30 @@ for (const [jm, proc] of Object.entries(NESMI))
   kontrola(vokativ(jm) === null, "vokativ(\"" + jm + "\") vrátil \"" + vokativ(jm) + "\" místo null — " + proc);
 kontrola(vokativ(null) === null && vokativ(undefined) === null, "vokativ() spadne na chybějící přezdívce");
 
+// ---- ghost soupeř: lidské jméno místo přezdívky bota ---------------------------
+// souperJmeno() ukazuje bota pod lidským jménem (řídká základna → matchmaking skoro vždy
+// skončí ghostem; má působit jako člověk). Ne-bota nechá být, bota přejmenuje ze zásoby
+// podle id hry: stabilní v rámci hry, různé mezi hrami. Server dál posílá is_bot, jen se
+// nekreslí — tenhle test hlídá, ať se štítek „(bot)" nevrátí a ať se jméno neustálí na jednom.
+sekce("Online: ghost soupeř má lidské jméno, ne „(bot)\"");
+const jmenaLit = /var\s+LIDSKA_JMENA\s*=\s*(\[[\s\S]*?\]);/.exec(SRC_ONLINE);
+kontrola(!!jmenaLit, "v online.js chybí zásoba LIDSKA_JMENA");
+const LIDSKA_JMENA = jmenaLit ? vm.runInNewContext(jmenaLit[1]) : [];
+kontrola(LIDSKA_JMENA.length >= 12, "zásoba jmen je moc malá (" + LIDSKA_JMENA.length + ") — jména by se opakovala");
+const souperJmeno = funkce("souperJmeno", { LIDSKA_JMENA }, SRC_ONLINE);
+
+kontrola(souperJmeno("Chytrá sova (ligový)", false, "g1") === "Chytrá sova (ligový)",
+  "ne-bota (skutečného hráče) souperJmeno přejmenoval — musí ho nechat být");
+kontrola(LIDSKA_JMENA.includes(souperJmeno("bot-nick", true, "g1")),
+  "bot nedostal jméno ze zásoby");
+kontrola(souperJmeno("x", true, "hra-A") === souperJmeno("x", true, "hra-A"),
+  "jméno není stabilní v rámci jedné hry (měnilo by se mezi dotazy)");
+const jmenaHer = new Set();
+for (const id of ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]) jmenaHer.add(souperJmeno("x", true, id));
+kontrola(jmenaHer.size >= 5, "jméno se skoro nemění mezi hrami (jen " + jmenaHer.size + " různých z 10)");
+kontrola([...jmenaHer].every(j => !/bot|\(/i.test(j)), "jméno soupeře obsahuje bot nebo štítek v závorce");
+kontrola(!SRC_ONLINE.includes("(bot)"), "online.js pořád někde kreslí štítek (bot) — ghost ho nesmí mít");
+
 // Uvítací texty lobby. Appka NEZNÁ POHLAVÍ hráče, takže v nich nesmí být minulý čas
 // s rodem („zapsal ses", „věděl jsi") — stejné pravidlo jako u `_verdikt` v fondy.json.
 // A protože se texty vybírají podle pásma, musí je mít všechna tři kompletní; chybějící
