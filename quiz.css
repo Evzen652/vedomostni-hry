@@ -222,15 +222,10 @@
    po odpovědi lepily na box s výsledkem a četly se jako jeden blok. (2026-09-01) */
 .qz-quipbox { margin-top: 10px; }
 
-/* výsledek odpovědi: JEDEN box napůl zelený/červený, ne dva boxy vedle sebe — a bez stínu.
-   .solo (odpověděl(a) správně) skryje polovinu s tipem, radius drží .qz-result přes overflow:hidden. */
-.qz-result { display: flex; border: 1.8px solid #dccdb0; border-radius: 14px; overflow: hidden; }
-.qz-result .half { flex: 1; padding: 12px 14px; font-family: 'Nunito', sans-serif; font-weight: 650; font-size: 15px; }
-/* malý popisek, ne VELKÁ PÍSMENA — ta appka na týhle kartě už jednou zkusila a působilo to křiklavě */
-.qz-result .half .lbl { display: block; font-size: 11px; font-weight: 600; opacity: .7; margin-bottom: 2px; }
-.qz-result .half.ok { background: #eef6ee; color: #2f6b46; }
-.qz-result .half.bad { background: #fbeeec; color: #9c4636; opacity: .85; }
-.qz-result.solo .half.bad { display: none; }
+/* Po odpovědi zůstávají všechny možnosti vidět (jako online): správná dostane .qz-a.ok
+   (zeleně), tvůj špatný tip .qz-a.bad (červeně) — viz answer()/timeoutReveal v quiz.js.
+   Dřív tu byl kompaktní box .qz-result „Správná / Tvoje", který dvě nevybrané možnosti
+   skryl; hráč pak neviděl všechny odpovědi (sjednoceno s online 2026-09-03). */
 
 /* Text a tlačítka pod sebou, ne vedle sebe — v užší kartě (poměr 3:2 s obrázkem)
    by se vysvětlení vedle tlačítek mačkalo do úzkého, zalamovaného sloupce. */
@@ -689,7 +684,6 @@
      z poloviny — tu drží délka hlášky a vysvětlení (obsah appky, ne CSS). Odsazení tu
      jde stlačit na dotykové minimum a níž ne. (2026-09-01) */
   .qz-play .qz-box { gap: 8px; }
-  .qz-play .qz-result .half { padding: 8px 14px; }
   .qz-play .qz-quipbox { margin-top: 6px; }
   .qz-play .qz-ht { line-height: 1.32; }
   .qz-play .qz-frow { gap: 8px; }

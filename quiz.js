@@ -319,12 +319,17 @@
     say(quipText); if(S.voice) speakTTS("Čas vypršel! "+quipText);
     revealPic();
     const box=body.querySelector("#qz-box");
+    // Stejně jako answer(): možnosti zůstanou, jen se zvýrazní správná (čas vypršel, nikdo
+    // nic nevybral). Dřív se čtyři odpovědi nahradily kompaktním boxem.
+    const correctIdx = (S.answers||[]).indexOf(q.answer);
+    box.querySelectorAll(".qz-a").forEach(btn => {
+      const i = +btn.dataset.i; btn.disabled = true;
+      if(i===correctIdx) btn.classList.add("ok");
+    });
     const allowSteal = S.mode==="party" && S.steal && S.players.length>1;
-    box.innerHTML = `
-      <div class="qz-ans two"><div class="qz-a ok locked">${esc(q.answer)}<small>Správná odpověď</small></div>
-      <div class="qz-a bad locked">${ICO_CLOCK}<small>ČAS VYPRŠEL</small></div></div>
-      <div class="qz-hlaska"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}"</div></div>
-      ${allowSteal ? stealHtml(q, "__timeout__") : frowHtml(q)}`;
+    box.insertAdjacentHTML("beforeend", `
+      <div class="qz-quipbox"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}"</div></div>
+      ${allowSteal ? stealHtml(q, "__timeout__") : frowHtml(q)}`);
     if(allowSteal) wireSteal(q, "__timeout__"); else wireFrow(q);
     autosave();
   }
@@ -1316,6 +1321,10 @@
     const n = S.mode==="party" ? (S.qServed+1) : (S.idx+1);
     say(q.quip_question ? "„"+resolveQuip(q.quip_question,b)+"“" : "Tak schválně…");
     const answers = shuffle([q.answer, ...(q.distractors||[])]);
+    // Zamíchané pořadí si držíme, aby `answer()`/`timeoutReveal()` uměly zvýraznit správnou
+    // a vybranou možnost PŘÍMO v seznamu (jako online), místo aby čtyři odpovědi nahradily
+    // kompaktním boxem — hráč jinak dvě nevybrané možnosti po odpovědi vůbec neuvidí.
+    S.answers = answers;
     const ansHtml = `<div class="qz-ans${answers.length<=2?" two":""}">${answers.map((a,i)=>`<button class="qz-a" data-i="${i}">${esc(a)}<small>${"ABCD"[i]||""}</small></button>`).join("")}</div>`;
     body.innerHTML = `<div class="qz-screen qz-play">
       ${topHtml(n,total)}
@@ -1390,17 +1399,23 @@
     revealPic();
     if(gold){ const gf=document.createElement("div"); gf.className="qz-goldflash"; document.getElementById("qz-shell").appendChild(gf); setTimeout(()=>gf.remove(),950); }
     const box=body.querySelector("#qz-box");
+    // Zvýrazni odpovědi PŘÍMO v seznamu (jako online): správná zeleně, tvůj špatný tip
+    // červeně, ostatní zůstanou vidět. Dřív se čtyři možnosti nahradily kompaktním boxem
+    // „Správná / Tvoje", takže dvě nevybrané mizely a hráč neviděl všechny možnosti.
+    const correctIdx = (S.answers||[]).indexOf(q.answer);
+    const pickIdx = (S.answers||[]).indexOf(choice);
+    box.querySelectorAll(".qz-a").forEach(btn => {
+      const i = +btn.dataset.i; btn.disabled = true;
+      if(i===correctIdx) btn.classList.add("ok");
+      else if(i===pickIdx) btn.classList.add("bad");
+    });
     const allowSteal = S.mode==="party" && S.steal && !correct && !gold && S.players.length>1;
-    box.innerHTML = `
-      <div class="qz-result${correct?" solo":""}">
-        <div class="half ok"><span class="lbl">Správná odpověď</span>${esc(q.answer)}</div>
-        ${correct?"":`<div class="half bad"><span class="lbl">${S.mode==="party"?esc(P.name):"Tvoje odpověď"}</span>${esc(choice)}</div>`}
-      </div>
+    box.insertAdjacentHTML("beforeend", `
       <div class="qz-quipbox">
         <div class="qz-ht">„${esc(quipText||"")}"</div>
         ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
       </div>
-      ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`;
+      ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`);
     if(allowSteal) wireSteal(q, choice); else wireFrow(q);
   }
 
