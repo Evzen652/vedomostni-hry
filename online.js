@@ -761,11 +761,17 @@ window.ZKOnline = (function () {
         '<p class="zk-wel-l">' + t.souperi + "</p>" +
         (ratingText ? '<p class="zk-wel-l">' + ratingText + "</p>" : "") +
       "</div>" +
-      // JEDNA hlavní akce — hráč přišel hrát, ne spravovat účet
+      // JEDNA hlavní akce — hráč přišel hrát, ne spravovat účet.
+      // Popisek říká MECHANIKU, ne slib (sousední dlaždice taky: „Pět otázek, jeden
+      // pokus"). Čísla musí sedět s TIME_CONTROLS.blesk ve functions/_lib/game.js —
+      // startQueue níž posílá time_control "blesk" (10 otázek, 10 s na každou).
       '<button class="zk-hero" id="zk-live">' +
         dlazdiceObr("zk-live", "🎯") +
         '<span class="zk-herotext"><span class="t">Hrát teď</span>' +
-        '<span class="d">Soupeř na tvojí úrovni, hned.</span></span>' +
+        // Nezlomitelná mezera před „každou": na telefonu se popisek láme na dva řádky
+        // a bez ní zůstane na druhém osamocené slovo. Takhle vyjde „…deset vteřin" /
+        // „na každou." Na desktopu je to jeden řádek, takže tam nemění nic.
+        '<span class="d">Deset otázek, deset vteřin na&nbsp;každou.</span></span>' +
         '<span class="zk-heroarrow">' + handArrowSvg(false) + '</span>' +
       "</button>" +
       // další způsoby hry
