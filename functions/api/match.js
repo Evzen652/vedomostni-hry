@@ -9,6 +9,24 @@ const BOT_AFTER_MS = 15 * 1000;      // po 15 s nabídneme bota, ať nikdo nekou
 const window = waitedMs => 100 + Math.floor(waitedMs / 1000) * 100;
 
 /**
+ * Hráč má ve frontě řádek s přiřazenou hrou (game_id) — spárovalo se, ale GET to ještě
+ * nestihl přečíst. Smaž řádek a vrať tu hru ve stejném tvaru, jaký vrací GET při match.
+ * Bez tohohle šlo o hru přijít: DELETE hlásil `left:true`, i když se nic nesmazalo,
+ * a POST („Hrát teď" znovu) přepsal game_id na NULL — spárovaná hra pak visela do
+ * expirace a připsala se jako prohra za partii, kterou hráč nikdy neviděl.
+ */
+async function matchedResponse(env, meId, gameId) {
+  await env.DB.prepare('DELETE FROM queue WHERE user_id = ?').bind(meId).run();
+  const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(gameId).first();
+  const opp = await env.DB.prepare(
+    `SELECT u.nick, u.avatar FROM game_players gp JOIN users u ON u.id = gp.user_id
+      WHERE gp.game_id = ? AND gp.user_id != ?`).bind(gameId, meId).first();
+  return json({ matched: true, game_id: gameId, opponent: opp,
+                total: game ? JSON.parse(game.question_ids).length : null,
+                limit_s: game ? game.limit_s : null });
+}
+
+/**
  * POST /api/match  { time_control? }  — postav se do fronty na živý duel.
  * GET  /api/match                     — dotaz, jestli už je soupeř.
  * DELETE /api/match                   — odejdi z fronty.
@@ -28,6 +46,12 @@ export async function onRequestPost({ request, env }) {
   if (!TC_NAMES.includes(tcName)) return fail('neznámá časová kontrola: ' + tcName);
   const tc = TIME_CONTROLS[tcName];
   if (!BANDS.includes(band)) return fail('neznámé pásmo');
+
+  // Souběh: mezitím, co jsem klikl „Hrát teď" znovu, mě někdo spároval. Nepřepisuj to
+  // na NULL (níž v upsertu) — vrať tu hru, ať se o ni hráč nepřipraví.
+  const spárován = await env.DB.prepare('SELECT game_id FROM queue WHERE user_id = ?')
+    .bind(me.id).first();
+  if (spárován && spárován.game_id) return matchedResponse(env, me.id, spárován.game_id);
 
   await env.DB.prepare('DELETE FROM queue WHERE joined_at < ? AND game_id IS NULL')
     .bind(Date.now() - STALE_MS).run();
@@ -99,16 +123,7 @@ export async function onRequestGet({ request, env }) {
   const row = await env.DB.prepare('SELECT * FROM queue WHERE user_id = ?').bind(me.id).first();
   if (!row) return json({ matched: false, waiting: false });
 
-  if (row.game_id) {
-    await env.DB.prepare('DELETE FROM queue WHERE user_id = ?').bind(me.id).run();
-    const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(row.game_id).first();
-    const opp = await env.DB.prepare(
-      `SELECT u.nick, u.avatar FROM game_players gp JOIN users u ON u.id = gp.user_id
-        WHERE gp.game_id = ? AND gp.user_id != ?`).bind(row.game_id, me.id).first();
-    return json({ matched: true, game_id: row.game_id, opponent: opp,
-                  total: game ? JSON.parse(game.question_ids).length : null,
-                  limit_s: game ? game.limit_s : null });
-  }
+  if (row.game_id) return matchedResponse(env, me.id, row.game_id);
 
   const waited = Date.now() - row.joined_at;
   return json({ matched: false, waiting: true, waited_ms: waited,
@@ -118,7 +133,16 @@ export async function onRequestGet({ request, env }) {
 export async function onRequestDelete({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
-  await env.DB.prepare('DELETE FROM queue WHERE user_id = ? AND game_id IS NULL')
+
+  const del = await env.DB.prepare('DELETE FROM queue WHERE user_id = ? AND game_id IS NULL')
     .bind(me.id).run();
+  if (del.meta.changes) return json({ left: true });
+
+  // Nic se nesmazalo. Buď jsem ve frontě vůbec nebyl (v pořádku), nebo mě mezitím někdo
+  // spároval a řádek nese game_id. Dřív se v obou případech vracelo `left:true`, takže
+  // hráč ve druhém případě odešel do lobby a o hru přišel. Rozliš to.
+  const row = await env.DB.prepare('SELECT game_id FROM queue WHERE user_id = ?')
+    .bind(me.id).first();
+  if (row && row.game_id) return matchedResponse(env, me.id, row.game_id);
   return json({ left: true });
 }

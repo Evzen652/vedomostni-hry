@@ -1,4 +1,5 @@
 import { glicko2 } from './glicko.js';
+import { tournamentStatus } from './tournament.js';
 
 /** Po jaké době se nedohraná hra uzavře sama. */
 const EXPIRE_MS = 48 * 60 * 60 * 1000;
@@ -120,6 +121,15 @@ export async function settleIfDone(env, gameId) {
 async function creditTournament(env, tournamentId, a, b, isBot) {
   const humans = [a, b].filter(p => !isBot[p.user_id]);
   if (!humans.length) return;
+
+  // Body se připisují jen dokud turnaj BĚŽÍ. Bez toho šlo minutu před koncem přes
+  // /tournament/{id}/bot založit dvacet kol, počkat, až turnaj skončí a tabulka se
+  // všem uzavře, a pak je v klidu hodinu po konci dohrát — konečné pořadí se změnilo
+  // po tom, co ho všichni viděli jako konečné. Kolo dohrané po buzeru prostě nepočítá.
+  const t = await env.DB.prepare('SELECT starts_at, duration_min FROM tournaments WHERE id = ?')
+    .bind(tournamentId).first();
+  if (!t || tournamentStatus(t) === 'hotovo') return;
+
   await env.DB.batch(humans.map(p =>
     env.DB.prepare(
       `UPDATE tournament_players SET score = score + ?, games_played = games_played + 1

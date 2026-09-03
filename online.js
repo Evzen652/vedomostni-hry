@@ -785,7 +785,13 @@ window.ZKOnline = (function () {
         // odpověď může dorazit dřív než DELETE a vtáhnout hráče do hodnocené hry, kterou
         // právě zrušil (okno stovek ms z dvousekundového cyklu).
         stopAll();
-        req("/match", { method: "DELETE" }).then(function () { renderLobby(); });
+        req("/match", { method: "DELETE" }).then(function (r) {
+          // Souběh: zrušil jsem hledání v tutéž chvíli, kdy mě někdo spároval. Server to
+          // pozná a vrátí matched — jdeme do té hry, ne do lobby, jinak by visela do
+          // expirace a připsala se jako prohra za partii, kterou jsem nikdy neviděl.
+          if (r.body && r.body.matched) return beginGame(r.body.game_id, "duel", r.body.opponent);
+          renderLobby();
+        });
       }) +
       "<h2>Hledám soupeře</h2>" +
       '<div class="qz-setcard" style="text-align:center">' +

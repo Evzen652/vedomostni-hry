@@ -1,4 +1,4 @@
-import { BANDS, shuffledOrder, json, fail, newId } from '../../_lib/game.js';
+import { BANDS, shuffledOrder, json, fail } from '../../_lib/game.js';
 import { currentUser } from '../../_lib/auth.js';
 import { markSeen } from '../../_lib/pool.js';
 
@@ -42,19 +42,31 @@ export async function onRequestGet({ request, env }) {
   }
 
   const ids = JSON.parse(set.question_ids);
-  const id = newId();
+  // Id je DETERMINISTICKÉ (den + pásmo + hráč), ne náhodné. Dvě souběžné žádosti (dvojklik,
+  // dvě záložky) tak přes INSERT OR IGNORE založí JEDNU hru, ne dvě — dřív mohly obě projít
+  // přes SELECT výš dřív, než kterákoli zapsala, a hráč skončil se dvěma hrami i dvěma
+  // řádky v denním žebříčku. Kdo prohraje, tomu druhá hra dovolila druhý pokus o čas.
+  const id = 'daily-' + date + '-' + band + '-' + me.id;
   await env.DB.batch([
-    env.DB.prepare(`INSERT INTO games (id, mode, band, limit_s, question_ids, orders, created_at, daily_date)
+    env.DB.prepare(`INSERT OR IGNORE INTO games (id, mode, band, limit_s, question_ids, orders, created_at, daily_date)
                     VALUES (?, 'daily', ?, ?, ?, ?, ?, ?)`)
       .bind(id, band, DAILY_LIMIT_S, set.question_ids, set.orders, Date.now(), date),
-    env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 0)')
+    env.DB.prepare('INSERT OR IGNORE INTO game_players (game_id, user_id, slot) VALUES (?, ?, 0)')
       .bind(id, me.id),
   ]);
   await markSeen(env, me.id, ids);
 
+  // Přečti zpět kanonický stav — kdyby náš insert prohrál souběh, čísla ať sedí na tu
+  // hru, co skutečně vznikla (idempotentní, oba requesty vrátí totéž game_id).
+  const g = await env.DB.prepare(
+    `SELECT g.id, gp.score, gp.answered, gp.finished_at
+       FROM games g JOIN game_players gp ON gp.game_id = g.id
+      WHERE g.id = ? AND gp.user_id = ?`).bind(id, me.id).first();
+
   return json({
     date, band, total: DAILY_COUNT, limit_s: DAILY_LIMIT_S,
-    game_id: id, already_played: false, score: 0, answered: 0,
+    game_id: id, already_played: !!(g && g.finished_at),
+    score: g ? g.score : 0, answered: g ? g.answered : 0,
   }, 201);
 }
 
