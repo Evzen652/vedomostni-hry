@@ -7,7 +7,6 @@
   const closeBtn = document.getElementById("qz-close");
   const hostBubble = document.getElementById("qz-host-bubble");
   const hostAv = document.getElementById("qz-host-av");
-  const HOST_NAME = "Průvodce";   // konfigurovatelné jméno hostitele
   let FLAG = "🇷🇺", COUNTRY = "Rusko";   // aktuálně vybraná země (mění se výběrem)
   // landing.html byl dřív úvodní rozcestník — teď je hra.html sama domovská stránka,
   // takže „Domů" (× i tlačítka po skončení hry) vede zpět na výběr režimu v ní samé,
@@ -62,7 +61,6 @@
   const ICO_SNDX  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#3d3229"/><path d="M17 10l5 4M22 10l-5 4" stroke="#3d3229" stroke-width="2" stroke-linecap="round"/></svg>`;
   const ICO_SPARK = `<svg ${_sw} viewBox="0 0 24 24"><path fill="#d9a441" d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6z"/></svg>`;
   const ICO_TROPHY= `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M7 4h10v4a5 5 0 01-10 0V4z" fill="#d9a441" stroke="#b98b3e" stroke-width="1.4"/><path d="M7 6H4v1a3 3 0 003 3M17 6h3v1a3 3 0 01-3 3" stroke="#b98b3e" stroke-width="1.5"/><path d="M12 13v3M9.5 20h5M10.5 20l.4-4h2.2l.4 4" stroke="#b98b3e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  const ICO_FOLDER= `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M3 6h6l2 2h10v11H3z" fill="#d9a441" stroke="#b98b3e" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 10h18" stroke="#b98b3e" stroke-width="1.2"/></svg>`;
   const ICO_LINK  = `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M9 15l6-6M8 12l-2 2a3.5 3.5 0 005 5l2-2M16 12l2-2a3.5 3.5 0 00-5-5l-2 2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   const _MEDALCOL = ["#d9a441","#b9b3a6","#c08457"];
   function medalSvg(i){ const c=_MEDALCOL[i]; if(!c) return (i+1)+"."; return `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M8 3l3 6M16 3l-3 6" stroke="#e2725b" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="6.2" fill="${c}" stroke="#00000022" stroke-width="1"/><circle cx="12" cy="15" r="3" fill="#ffffff40"/></svg>`; }
@@ -498,7 +496,6 @@
       data.cardsById = Object.assign({}, ...ccs.map(cc => data.cardsByCc[cc] || {}));
     }
   }
-  async function selectCountry(cc){ await selectCountries([cc]); }
   // sestaví fond otázek podle vybrané země a sekce (null/„__all__" = vše)
   function applyPool(){
     const cc = S.sel && (S.sel.ccs || S.sel.cc);
