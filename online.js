@@ -258,13 +258,13 @@ window.ZKOnline = (function () {
               "</div>"
             : "") +
           '<div class="zk-field" id="zk-nickwrap">' +
-            '<div class="qz-fieldlabel">Přezdívka</div>' +
+            '<label class="qz-fieldlabel" for="zk-nick">Přezdívka</label>' +
             '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="Jak ti mají říkat" value="' +
               esc(stav.nick || "") + '">' +
           "</div>" +
           '<div class="zk-field">' +
             '<div class="zk-labelrow">' +
-              '<div class="qz-fieldlabel">PIN (4 až 8 číslic)</div>' +
+              '<label class="qz-fieldlabel" for="zk-pin">PIN (4 až 8 číslic)</label>' +
               // Zapomenutý PIN patří k poli s PINem, ne mezi hlavní akce dole.
               (isReg ? "" : '<button type="button" class="zk-linkbtn zk-forgot" id="zk-forgot">Zapomněl jsem PIN</button>') +
             "</div>" +
@@ -277,7 +277,7 @@ window.ZKOnline = (function () {
           // logicky navazuje na "kdyby ti PIN vypadl z hlavy" (2026-08-31).
           (isReg
             ? '<div class="zk-field">' +
-                '<div class="qz-fieldlabel">E-mail <span class="zk-opt">nepovinný</span></div>' +
+                '<label class="qz-fieldlabel" for="zk-email">E-mail <span class="zk-opt">nepovinný</span></label>' +
                 '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="Kdyby ti PIN vypadl z hlavy" value="' +
                   esc(stav.email || "") + '">' +
                 '<div class="qz-setnote zk-mailnote" id="zk-mailnote">' +
@@ -448,11 +448,11 @@ window.ZKOnline = (function () {
               '<span class="d">Zapomenutý PIN by nešlo obnovit — profil i s ratingem by byl pryč.</span></div></div>') +
         '<div class="zk-form">' +
           '<div class="zk-field">' +
-            '<div class="qz-fieldlabel">' + (m.email ? "Nová adresa" : "E-mailová adresa") + "</div>" +
+            '<label class="qz-fieldlabel" for="zk-email">' + (m.email ? "Nová adresa" : "E-mailová adresa") + "</label>" +
             '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="Např. adresa@priklad.cz">' +
           "</div>" +
           '<div class="zk-field">' +
-            '<div class="qz-fieldlabel">Potvrď svým PINem</div>' +
+            '<label class="qz-fieldlabel" for="zk-epin">Potvrď svým PINem</label>' +
             '<input class="qz-pname-in" id="zk-epin" type="password" inputmode="numeric" maxlength="8" autocomplete="current-password" placeholder="••••">' +
             '<div class="qz-setnote">Ptáme se na PIN i u přihlášeného hráče — jinak by stačilo ' +
               "odemčené zařízení a profil se dá převést na cizí adresu.</div>" +
@@ -592,7 +592,7 @@ window.ZKOnline = (function () {
               '<button type="button" class="zk-linkbtn" id="zk-fagain">Zkusit jinou přezdívku</button></div>'
           : '<div class="zk-form">' +
               '<div class="zk-field">' +
-                '<div class="qz-fieldlabel">Přezdívka</div>' +
+                '<label class="qz-fieldlabel" for="zk-fnick">Přezdívka</label>' +
                 '<input class="qz-pname-in" id="zk-fnick" maxlength="20" autocomplete="username" placeholder="Jak ti říkáme">' +
               "</div>" +
               '<button class="qz-go" id="zk-fgo">Poslat odkaz →</button>' +
@@ -650,7 +650,7 @@ window.ZKOnline = (function () {
         (typeof msg === "string" && msg ? '<div class="zk-autherr">' + errBox(msg) + "</div>" : "") +
         '<div class="zk-form">' +
           '<div class="zk-field">' +
-            '<div class="qz-fieldlabel">Nový PIN (4 až 8 číslic)</div>' +
+            '<label class="qz-fieldlabel" for="zk-npin">Nový PIN (4 až 8 číslic)</label>' +
             '<input class="qz-pname-in" id="zk-npin" type="password" inputmode="numeric" maxlength="8" autocomplete="new-password" placeholder="••••">' +
           "</div>" +
           '<button class="qz-go" id="zk-ngo">Nastavit a přihlásit →</button>' +
@@ -851,7 +851,7 @@ window.ZKOnline = (function () {
           '<div class="qz-setnote" style="margin:.7rem 0 .2rem">' +
             (proKoho ? "Odkaz pošli hráči <b>" + esc(proKoho) + "</b>. " : "") +
             "Soupeř dostane stejné otázky ve stejném pořadí. Jeho výsledek uvidíš, až dohrajete oba.</div>" +
-          '<div class="qz-fieldlabel">Odkaz pro soupeře</div>' +
+          '<label class="qz-fieldlabel" for="zk-url">Odkaz pro soupeře</label>' +
           '<input class="qz-pname-in" id="zk-url" readonly value="' + esc(url) + '">' +
           '<button class="qz-back" id="zk-copy" style="margin:.6rem 0 0">Zkopírovat odkaz</button>' +
         "</div></div>";

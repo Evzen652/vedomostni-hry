@@ -1108,7 +1108,7 @@
     const recentNames = loadRecentNames();
     const prow = (p,i) => `<div class="qz-prow" data-i="${i}">
       <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
-      <input class="qz-pname-in" placeholder="Jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off">
+      <input class="qz-pname-in" aria-label="Jméno hráče ${i+1}" placeholder="Jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off">
       <span class="qz-bandtoggle">
         <button class="qz-bandbtn deti${p.band==="deti"?" on":""}" data-band="deti">Děti</button>
         <button class="qz-bandbtn starsi${p.band==="starsi"?" on":""}" data-band="starsi">Puberťák</button>
