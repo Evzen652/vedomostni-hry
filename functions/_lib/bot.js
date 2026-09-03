@@ -37,12 +37,34 @@ export async function botPlay(env, game, botUserId, strength) {
     .bind(...ids).all()).results;
   const rating = new Map(qs.map(q => [q.id, q.rating]));
 
+  // Ghost: kde to jde, přehraj SKUTEČNOU lidskou odpověď na tutéž otázku (její trefu
+  // i čas) místo pravděpodobnostního modelu — lidské načasování a chyby se nedají
+  // prokouknout jako skript. Vzorky se losují z banky replay_answers v daném pásmu;
+  // chybí-li otázka v bance (cold start), spadne se na model bota níž — otázku po
+  // otázce. Jeden dotaz na celou hru, seskupení a los pak v JS.
+  const bank = new Map();   // question_id -> [{correct, ms}, …]
+  const bankRows = (await env.DB.prepare(
+    `SELECT question_id, correct, ms FROM replay_answers
+      WHERE band = ? AND question_id IN (${ids.map(() => '?').join(',')})`)
+    .bind(game.band, ...ids).all()).results;
+  for (const r of bankRows) {
+    if (!bank.has(r.question_id)) bank.set(r.question_id, []);
+    bank.get(r.question_id).push(r);
+  }
+
   const stmts = [];
   let total = 0;
   for (let n = 0; n < ids.length; n++) {
     const qr = rating.get(ids[n]) ?? 1500;
-    const hit = Math.random() < pCorrect(strength, qr);
-    const ms = answerMs(strength, qr, game.limit_s);
+    const samples = bank.get(ids[n]);
+    let hit, ms;
+    if (samples && samples.length) {
+      const s = samples[Math.floor(Math.random() * samples.length)];   // reálná lidská odpověď
+      hit = !!s.correct; ms = s.ms;
+    } else {
+      hit = Math.random() < pCorrect(strength, qr);                     // fallback: model bota
+      ms = answerMs(strength, qr, game.limit_s);
+    }
     const timedOut = ms >= game.limit_s * 1000;
     const correct = hit && !timedOut;
     const ci = correctIndex(orders[n]);

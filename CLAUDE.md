@@ -65,6 +65,45 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-03 — „Ghost" soupeř: online hra přehrává SKUTEČNÉ lidské odpovědi z banky místo syntetického bota. MECHANIKA hotová a nasazená; PREZENTACE (jméno, přiznání bota) je vědomý další krok.**
+  Řídká základna (~19 účtů) znamená, že dva lidé se ve stejném ~15s okně živého duelu
+  prakticky nepotkají — „Hledám soupeře" skoro vždycky skončí botem a to čekání je
+  divadlo. Řešení podle toho, jak to dělají casual hry: **soupeř přehraje reálnou lidskou
+  odpověď na tutéž otázku** (její trefu i čas), takže má lidské načasování a chyby a nedá
+  se prokouknout jako skript. Reálný člověk vs. člověk pak žije přes odkaz a turnaje.
+  - **Nová tabulka `replay_answers`** (migrace [2026-09-03-replay-answers.sql](migrations/2026-09-03-replay-answers.sql),
+    přírůstková) = banka lidských odpovědí po otázkách: `question_id`, `band`, `correct`,
+    `ms`. **Anonymní schválně** — bez user_id a bez přezdívky. Nese jen chování, ne
+    identitu: kvůli soukromí a aby to nebyla impersonace konkrétního účtu.
+  - **Plní se v `settleIfDone`** ([functions/_lib/settle.js](functions/_lib/settle.js), `bankHumanAnswers`)
+    z odpovědí LIDSKÝCH hráčů (daily/duel/odkaz — offline sólo server nevidí, to nevadí).
+    Boti i ghost jsou vyfiltrovaní přes `is_bot` (píšou pod účet bota), takže **banka
+    nesbírá sama sebe — žádná zpětná smyčka.** Best-effort a AŽ ZA zámkem `status='done'`,
+    takže běží právě jednou a případný pád nerozbije vyrovnání hry.
+  - **Zabudováno do `botPlay`** ([functions/_lib/bot.js](functions/_lib/bot.js)), ne jako
+    nová funkce: tři volání (`/game/:id/bot`, `/tournament/:id/bot`, `rematch`) se tím
+    stala ghost-schopná **beze změny**. Pro každou otázku losuje vzorek z banky (dané
+    pásmo); **chybí-li otázka v bance (cold start), spadne na pravděpodobnostní model
+    bota** — otázku po otázce. `question_id` (ne `q_index`, ten je pozice v konkrétní hře).
+  - **Rating zůstává poctivý:** ghost hraje pod účtem bota, takže se kalibruje týmž
+    strojem (`calibrateBot`) — síla bota časem konverguje k tomu, jak reálně z banky hraje.
+    Self-correcting, žádný fake člověk v žebříčku.
+  - **CO ZBÝVÁ (a je to VĚDOMÉ rozhodnutí hráče, ne kód): PREZENTACE.** Mechanika je
+    neviditelná — soupeř se pořád jmenuje jako bot a má štítek „(bot)". „Malá lež" (dát
+    ghostovi lidské jméno, zrušit „(bot)", zrušit fingované 15s čekání) je ta část, co se
+    může vymstít u dětí a u důvěry, takže ji hráč musí schválit zvlášť. **Nedělej ji sám.**
+    Souvisí: dlaždice „Světová liga · Proti živým soupeřům" bude potřeba přeznačit, ať
+    neslibuje real-time živého člověka.
+  - **Testy:** [scripts/test-ghost.js](scripts/test-ghost.js) (`npm run test:ghost`, v CI)
+    ověřuje přes FALEŠNÉ `env.DB` (žádná síť/D1), že se banka přehrává a při prázdné
+    spadne na model — **ověřeno mutací** (vypnutí banky → test spadne). Plnění banky
+    ověřeno ŽIVĚ: dohraná daily přidala přesně 5 řádků. `test:api` 138 beze změny
+    (prázdná banka = původní chování bota).
+  - **Past: `wrangler d1 execute --local --file migrace.sql` shodila zámek běžícího dev
+    serveru** (exit 255, tabulka nevznikla), zatímco jednotlivé `--command` prošly. Když
+    migrace přes `--file` lokálně tiše selže, pusť příkazy po jednom, nebo dev server na
+    chvíli zastav.
+
 - **2026-09-03 — Online část kreslila plochou šipku „→"; sjednoceno na malovanou `handArrowSvg`. Pravidlo jsem NEMĚL zapsané, proto se vracelo.**
   Hráč ukázal tlačítko „Pokračuj" s malovanou šipkou a řekl *„všude měla být tahle"*.
   Offline část (`quiz.js`) používá ručně kreslenou `handArrowSvg()` odjakživa, ale **celý

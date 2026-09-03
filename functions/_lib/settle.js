@@ -77,6 +77,11 @@ export async function settleIfDone(env, gameId) {
     .bind(gameId).run();
   if (!zamek.meta.changes) return null;
 
+  // Ghost banka: ulož lidské odpovědi téhle hry pro budoucí přehrání soupeřem.
+  // Best-effort a až ZA zámkem, takže běží právě jednou a případný pád nerozbije
+  // vyrovnání hry. Boti/ghost se sem nedostanou (filtr is_bot uvnitř).
+  await bankHumanAnswers(env, game).catch(() => {});
+
   if (players.length !== 2) return { status: 'done' };
 
   const [a, b] = players;
@@ -112,6 +117,32 @@ export async function settleIfDone(env, gameId) {
       [b.user_id]: { before: Math.round(rb.rating), after: Math.round(nb.rating) },
     },
   };
+}
+
+/**
+ * Uloží odpovědi LIDSKÝCH hráčů dohrané hry do banky replay_answers, ze které pak
+ * „ghost" soupeř (botPlay) přehrává reálné lidské chování na tytéž otázky. Ukládá se
+ * anonymně — jen otázka, pásmo, trefa a čas, žádná identita. Boti i ghost jsou
+ * vyfiltrovaní přes `is_bot`, takže banka nesbírá sama sebe (žádná zpětná smyčka).
+ * `q_index` se překládá na `question_id` přes pořadí otázek hry.
+ */
+async function bankHumanAnswers(env, game) {
+  const ids = JSON.parse(game.question_ids);
+  const rows = (await env.DB.prepare(
+    `SELECT ga.q_index, ga.correct, ga.ms
+       FROM game_answers ga JOIN users u ON u.id = ga.user_id
+      WHERE ga.game_id = ? AND u.is_bot = 0`).bind(game.id).all()).results;
+  if (!rows.length) return;
+
+  const stmts = [];
+  for (const r of rows) {
+    const qid = ids[r.q_index];
+    if (!qid) continue;
+    stmts.push(env.DB.prepare(
+      'INSERT INTO replay_answers (question_id, band, correct, ms) VALUES (?, ?, ?, ?)')
+      .bind(qid, game.band, r.correct, r.ms));
+  }
+  if (stmts.length) await env.DB.batch(stmts);
 }
 
 /**

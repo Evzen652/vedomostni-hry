@@ -37,3 +37,8 @@ jobs:
 
       - name: Offline část hry
         run: npm run test:offline
+
+      # Ghost soupeř (replay) — běží na falešném env.DB, žádná síť ani D1.
+      # Importuje functions/_lib/bot.js + game.js, takže je zároveň syntaktická kontrola.
+      - name: Ghost soupeř
+        run: npm run test:ghost

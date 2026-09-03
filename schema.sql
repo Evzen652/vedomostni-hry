@@ -182,6 +182,26 @@ CREATE TABLE game_answers (
   PRIMARY KEY (game_id, user_id, q_index)
 );
 
+-- Banka SKUTEČNÝCH lidských odpovědí po otázkách — palivo pro „ghost" soupeře.
+-- Soupeř v online hře nemusí být syntetický bot: `botPlay` z týhle banky přehraje
+-- reálnou lidskou odpověď na tutéž otázku (její `correct` + `ms`), takže má lidské
+-- načasování i chyby a nedá se prokouknout jako skript. Chybí-li otázka v bance,
+-- spadne na pravděpodobnostní model bota (bot.js) — otázku po otázce.
+--   * Plní se v `settleIfDone` z odpovědí LIDSKÝCH hráčů (daily/duel/odkaz). Boti ani
+--     ghost sem nepřispívají (píšou pod účet s `is_bot=1`), takže žádná zpětná smyčka.
+--   * Anonymní SCHVÁLNĚ: bez user_id a bez přezdívky. Nese jen chování (trefa + čas),
+--     ne identitu — kvůli soukromí a aby to nebyla impersonace konkrétního účtu.
+--   * `question_id` (ne q_index): q_index je pozice v `games.question_ids`, jiná hra od
+--     hry; banka se klíčuje otázkou, aby šla dohledat napříč hrami.
+CREATE TABLE replay_answers (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  question_id TEXT    NOT NULL,
+  band        TEXT    NOT NULL,        -- filtr pásma: děti přehrávají jen z dětských her
+  correct     INTEGER NOT NULL,
+  ms          INTEGER NOT NULL
+);
+CREATE INDEX idx_replay_q ON replay_answers(question_id, band);
+
 -- Fronta na živý duel. Spárování zapíše oběma game_id, takže druhý hráč se to
 -- dozví při dalším dotazu. Místo WebSocketu se dotazuje po dvou sekundách —
 -- pro otázku s limitem 10–20 s je to k nerozeznání a nepotřebuje to Durable Objects.
