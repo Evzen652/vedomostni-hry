@@ -765,7 +765,7 @@ window.ZKOnline = (function () {
       '<button class="zk-hero" id="zk-live">' +
         dlazdiceObr("zk-live", "🎯") +
         '<span class="zk-herotext"><span class="t">Hrát teď</span>' +
-        '<span class="d">Najdeme ti soupeře na tvojí úrovni.</span></span>' +
+        '<span class="d">Soupeř na tvojí úrovni, hned.</span></span>' +
         '<span class="zk-heroarrow">' + handArrowSvg(false) + '</span>' +
       "</button>" +
       // další způsoby hry
