@@ -57,6 +57,13 @@ export async function onRequestGet({ params, request, env }) {
   const opponent = players.find(p => p.user_id !== me.id);
   out.review = ids.map((qid, n) => {
     const q = byId.get(qid), r = byUser[me.id]?.[n];
+    // Otázka mohla mezitím zmizet z fondu (přejmenování id, přeřazení sekcí — CLAUDE.md
+    // 2026-08-31 popisuje, že v `games.question_ids` můžou zůstat odkazy na neexistující
+    // řádky). Bez tohohle guardu `q.question` níž spadl na 500 a hráč se k rozboru CELÉ
+    // hry nedostal vůbec. Radši ten jeden řádek vynechat — skóre i výsledek se počítají
+    // z `game_answers`, ne odsud, takže je to neovlivní. Klient `review` jen mapuje,
+    // neindexuje podle pozice, takže kratší pole nevadí.
+    if (!q) return null;
     const item = {
       n, question: q.question, options: optionsFor(q, orders[n]),
       correct_index: correctIndex(orders[n]),
@@ -68,7 +75,7 @@ export async function onRequestGet({ params, request, env }) {
       item.opponent = o ? { pick: o.pick, correct: !!o.correct, points: o.points } : null;
     }
     return item;
-  });
+  }).filter(Boolean);
 
   if (allDone && opponent) {
     out.result = mine.score > opponent.score ? 'vyhra'
