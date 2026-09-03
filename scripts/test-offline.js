@@ -384,6 +384,21 @@ const heroPopis = (/<span class="d">([^<]*)<\/span><\/span>/.exec(SRC_ONLINE) ||
 kontrola(heroPopis && !/\bbot/i.test(heroPopis),
   "dlaždice Hrát teď slibuje bota: „" + heroPopis + "\"");
 
+// Šipky v UI jsou VÝHRADNĚ malované (handArrowSvg). Plochý typografický glyf je v celé
+// malované appce cizí těleso (2026-09-03, opakovaná výtka hráče — stejný důvod, proč
+// skóre přešlo z SVG hvězdy na malovanou ico-star.png). Po odstranění komentářů nesmí
+// v quiz.js ani online.js zůstat JEDINÝ arrow glyf — každý v kódu/řetězci je UI šipka.
+// Online část na tohle doplatila: kreslila plochý glyf na 20+ místech i na dlaždici Hrát teď.
+const bezKomentaru = (src) => src
+  .replace(/\/\*[\s\S]*?\*\//g, "")
+  .replace(/(^|[^:])\/\/[^\n]*/g, "$1");
+for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
+  kontrola(/handArrowSvg/.test(src), jmeno + " nemá malovanou šipku handArrowSvg");
+  const zbyle = (bezKomentaru(src).match(/[←→]/g) || []).length;
+  kontrola(zbyle === 0,
+    jmeno + " má " + zbyle + " plochých šipek v UI — použij malovanou handArrowSvg");
+}
+
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

@@ -28,6 +28,18 @@ jsem 2026-09-02 pohořel, ačkoli pravidlo platí od 2026-09-01.
 - Jediná výjimka je e-mailový placeholder „Např. adresa@priklad.cz" — sama adresa velkým
   začínat nemůže, aniž by vypadala jako chyba, proto je před ní „Např.".
 
+**ŠIPKY V UI JSOU VÝHRADNĚ MALOVANÉ (`handArrowSvg`). Nikdy plochý glyf „→"/„←".**
+Appka je celá malovaná, takže plochý typografický glyf v ní působí jako cizí těleso —
+stejný důvod, proč skóre přešlo z SVG hvězdy na malovanou `ico-star.png`. Opakovaná
+výtka hráče (2026-09-03: *„všude měla být tahle"*, s obrázkem malované šipky).
+- **`handArrowSvg(flip)` je ta jediná šipka.** Je v `quiz.js` i (kopie) v `online.js`;
+  `flip` ji otočí doleva pro „Zpět". Offline část ji používá odjakživa; online část
+  na to doplatila — kreslila plochý `→` na 20+ tlačítkách i na dlaždici „Hrát teď".
+- **Hlídá to `test:offline`** (po odstranění komentářů nesmí v `quiz.js` ani `online.js`
+  zůstat jediný glyf `←`/`→` — každý v kódu/řetězci je UI šipka). Ověřeno mutací.
+- Na `.textContent` SVG nejde — takové tlačítko musí použít `.innerHTML` (text je statický,
+  bez vstupu hráče, takže to je bezpečné).
+
 **VZDUŠNOST: mezery musí dělat SKUPINY, ne jen odsazovat. A všechno nemusí být v rámečku.**
 Opakovaná výtka hráče (2026-09-03: *„to, co děláš pořád je, že všechno lepíš strašně na
 sebe… nemá to žádnou vzdušnost a odlehčenost"*). Je to má výchozí chyba, ne jednorázová —
@@ -52,6 +64,31 @@ při psaní nového CSS s tím počítej.
 ## Systémová rozhodnutí (log)
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
+
+- **2026-09-03 — Online část kreslila plochou šipku „→"; sjednoceno na malovanou `handArrowSvg`. Pravidlo jsem NEMĚL zapsané, proto se vracelo.**
+  Hráč ukázal tlačítko „Pokračuj" s malovanou šipkou a řekl *„všude měla být tahle"*.
+  Offline část (`quiz.js`) používá ručně kreslenou `handArrowSvg()` odjakživa, ale **celý
+  `online.js` kreslil plochý typografický glyf `→`** na 20+ tlačítkách, v `backBar` (`←`)
+  i na dlaždici „Hrát teď" (`zk-heroarrow`). Je to stejný princip jako u hvězdy skóre
+  (2026-09-03: plochý vektor v malované appce = cizí těleso → malovaná `ico-star.png`).
+  - **Příčina, proč „zase": pravidlo nikde nebylo.** Prošel jsem CLAUDE.md, paměť
+    i `git log --grep=šipk` / `-S zk-heroarrow` — ani zmínka. Naopak jediný záznam
+    (2026-07-23) šipky jako „typografické ovládací glyfy" výslovně POVOLOVAL. Řídil jsem
+    se špatným záznamem. **Nově je pravidlo mezi konvencemi nahoře, ne jen tady v logu.**
+  - **`handArrowSvg` je v `online.js` KOPIE** (soubor je samostatný IIFE, na funkci
+    z `quiz.js` nedosáhne — stejně jako `esc`/`plur`). Napsaná konkatenací místo template
+    literalu, ať sedí do stylu `online.js`; výstup je bajtově shodný s quiz.js. Komentář
+    u obou říká „změníš-li doodle, uprav OBĚ".
+  - **Dvě tlačítka nastavovaná přes `.textContent` (nabídka bota v čekárně) přepnuta na
+    `.innerHTML`** — do textContent SVG nejde. Text je statický, bez vstupu hráče.
+  - **`.zk-heroarrow` CSS se neměnilo** — má `font-size:22px; color:var(--teal)`, SVG bere
+    velikost v `em` a `currentColor`, takže sedne barvou i velikostí bez zásahu. Na
+    korálovém `.qz-go` je šipka bílá ze stejného důvodu (`currentColor`).
+  - **Regresní pojistka v `test:offline` (683 kontrol, +4):** po odstranění komentářů nesmí
+    v `quiz.js` ani `online.js` zůstat jediný glyf `←`/`→`. Ověřeno mutací (vložení plochého
+    `→` do tlačítka → chyceno; čistá appka 0).
+  - **Ověřeno v prohlížeči** na třech kontextech: dlaždice „Hrát teď", „Zpět do hry" (levá,
+    flipnutá) i korálové „Uložit e-mail" / „Změnit pásmo" (bílá šipka). Nasazeno na produkci.
 
 - **2026-09-03 — Druhá dávka z auditu: rate limity jsou ATOMICKÉ a platí na všech čtyřech cestách. Plus zámek PINu, whitelist a záchytný bod API.**
   Pokračování předchozího zápisu; otevřené body dál v `AUDIT_REPORT.md`.
