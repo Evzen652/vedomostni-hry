@@ -40,6 +40,11 @@ window.ZKOnline = (function () {
       '<path d="M2.5 13c9-3.4 21-2.6 29-2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>' +
       '<path d="M23.5 4.5c3.5 2.4 6.7 4.4 10 6.4-3.4 2.2-7 4-10.8 6.4" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   }
+  // Skóre hry se všude ukazuje s malovanou hvězdou (assets/ico-star.png), stejně jako sólo
+  // (`scorePillHtml`/`ICO_STAR` v quiz.js) — dřív měl online „N b" a sólo „★ N", což hráč
+  // vytkl jako nejednotné (2026-09-03). Rating (číslo bez „b") hvězdu nedostává, není to skóre.
+  var ICO_STAR = '<img src="assets/ico-star.png" alt="" style="width:1em;height:1em;vertical-align:-0.14em;flex:none;display:inline-block">';
+  function starScore(n) { return ICO_STAR + " <b>" + n + "</b>"; }
   function say(t) {
     var el = document.getElementById("qz-host-bubble");
     if (el) { el.textContent = t || ""; el.style.display = t ? "" : "none"; }
@@ -959,7 +964,7 @@ window.ZKOnline = (function () {
       body.innerHTML =
         '<div class="qz-screen qz-play">' +
         '<div class="qz-top"><span class="qz-progress">Otázka ' + (q.n + 1) + "/" + q.total + "</span>" +
-          '<span class="qz-scorepill" id="zk-score">' + g.score + " b</span>" +
+          '<span class="qz-scorepill" id="zk-score">' + starScore(g.score) + "</span>" +
           '<span class="qz-meta zk-oppbar" id="zk-opp"></span></div>' +
         '<div class="qz-box" id="qz-box">' +
           '<div class="qz-timerbar" id="zk-timer"><div style="width:100%"></div></div>' +
@@ -1003,7 +1008,7 @@ window.ZKOnline = (function () {
         var o = r.body && r.body.opponent;
         if (!o) return;
         el.innerHTML = esc(o.nick) + ": " + o.answered + "/" + S.game.total +
-                       (o.score != null ? " · " + o.score + " b" : "");
+                       (o.score != null ? " · " + starScore(o.score) : "");
       });
     }, 2000);
   }
@@ -1047,7 +1052,7 @@ window.ZKOnline = (function () {
       // Ilustrace je odměna za odpověď, ne nápověda — do téhle chvíle je v rámu glóbus.
       if (window.ZKPicframe) window.ZKPicframe.reveal();
       var pill = body.querySelector("#zk-score");
-      if (pill) pill.textContent = a.score + " b";
+      if (pill) pill.innerHTML = starScore(a.score);
 
       var more = a.more_fact
         ? '<button class="qz-more" id="zk-more">Více o ' + esc(a.about || "tom") +
@@ -1111,7 +1116,7 @@ window.ZKOnline = (function () {
       var rows = g.players.map(function (p) {
         return '<div class="qz-standrow"><span class="qz-standname">' + esc(p.nick) +
           (p.is_bot ? " (bot)" : "") + "</span>" +
-          '<span class="qz-standscore">' + (p.score == null ? "—" : p.score + " b") + "</span></div>";
+          '<span class="qz-standscore">' + (p.score == null ? "—" : starScore(p.score)) + "</span></div>";
       }).join("");
 
       var review = (g.review || []).map(function (it) {
@@ -1250,7 +1255,7 @@ window.ZKOnline = (function () {
       var rows = (t.standings || []).map(function (p) {
         return '<div class="qz-standrow' + (p.rank === 1 ? " win" : "") + '"><span class="qz-rank">' + p.rank + ".</span>" +
           '<span class="qz-standname">' + esc(p.nick) + "</span>" +
-          '<span class="qz-standscore">' + p.score + " b · " + p.games_played + " " +
+          '<span class="qz-standscore">' + starScore(p.score) + " · " + p.games_played + " " +
             plur(p.games_played, "kolo", "kola", "kol") + "</span></div>";
       }).join("");
 
