@@ -1,4 +1,4 @@
-import { json, fail } from '../_lib/game.js';
+import { json, fail, limitUctu } from '../_lib/game.js';
 import { currentUser } from '../_lib/auth.js';
 
 /**
@@ -44,32 +44,37 @@ export async function onRequestPost({ request, env }) {
   const code = String(body.code || '').trim().toUpperCase();
   if (!/^[A-Z0-9]{6}$/.test(code)) return fail('kód má šest znaků');
 
-  const now = Date.now();
+  const now = Date.now();   // čas vzniku přátelství (zapisuje se níž)
 
-  // Klouzavé okno, ne zámek. Zámek jako u loginu (login.js) se při zamčení resetuje
-  // na nulu, takže útočníka nezpomalí víc než prvních deset minut; tady se počítadlo
-  // drží celou hodinu. Deset pokusů za hodinu je pro překlep víc než dost a brute
-  // force tím padá o čtyři řády.
-  const stav = await env.DB.prepare('SELECT friend_tries, friend_tries_at FROM users WHERE id = ?')
-    .bind(me.id).first();
-  const okno = now - (stav?.friend_tries_at || 0) < WINDOW_MS;
-  const pokusu = okno ? (stav?.friend_tries || 0) : 0;
-  if (pokusu >= MAX_TRIES) {
+  // Klouzavé okno, ne zámek — a od 2026-09-03 ATOMICKY (viz limitUctu v _lib/game.js).
+  // Dřív se čtení a zápis počítadla dělaly zvlášť, takže souběžné požadavky přečetly
+  // stejnou hodnotu a limit obešly. Deset pokusů za hodinu je pro překlep víc než dost
+  // a brute force tím padá o čtyři řády.
+  //
+  // POŘADÍ JE DŮLEŽITÉ A NEPŘEHAZUJ HO: počítadlo se navýší JEŠTĚ PŘED vyhledáním kódu,
+  // takže zámek platí i pro správný kód. Kdo si deseti tipy zamkne hodinu a v jedenáctém
+  // se konečně trefí, ho použít nemůže — což je u ochrany dětí to podstatné. (Zkusil
+  // jsem 2026-09-03 vyhledávat první a počítat až neúspěch; test „ani platný kód po
+  // limitu neprojde" to okamžitě odhalil.)
+  //
+  // Aby přitom pořád platilo „kdo kód dostal, na limit nikdy nenarazí", se pokus při
+  // ÚSPĚCHU zase odečte. Refund je jen na úspěšné cestě, tedy vzácný.
+  if (!(await limitUctu(env, me.id, 'friend_tries', MAX_TRIES, WINDOW_MS)))
     return fail('moc pokusů za sebou, zkus to za hodinu', 429);
-  }
 
   const other = await env.DB
     .prepare('SELECT id, nick, avatar, band, is_bot FROM users WHERE friend_code = ?')
     .bind(code).first();
 
-  // Počítá se JEN neúspěch — kdo kód opravdu dostal, na limit nikdy nenarazí.
-  // Vlastní kód se nepočítá taky: je to překlep, ne hádání.
-  if (!other || other.is_bot) {
-    await env.DB.prepare('UPDATE users SET friend_tries = ?, friend_tries_at = ? WHERE id = ?')
-      .bind(pokusu + 1, okno ? (stav?.friend_tries_at || now) : now, me.id).run();
-    return fail('takový kód nikomu nepatří', 404);
-  }
-  if (other.id === me.id) return fail('to je tvůj vlastní kód');
+  if (!other || other.is_bot) return fail('takový kód nikomu nepatří', 404);
+
+  // Vlastní kód je překlep, ne hádání — proto se taky vrací.
+  const vratPokus = () => env.DB
+    .prepare('UPDATE users SET friend_tries = friend_tries - 1 WHERE id = ? AND friend_tries > 0')
+    .bind(me.id).run();
+
+  if (other.id === me.id) { await vratPokus(); return fail('to je tvůj vlastní kód'); }
+  await vratPokus();
 
   await env.DB.batch([
     env.DB.prepare('INSERT OR IGNORE INTO friends (user_id, friend_id, created_at) VALUES (?, ?, ?)')

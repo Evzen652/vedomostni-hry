@@ -1,4 +1,4 @@
-import { TIME_CONTROLS, shuffledOrder, json, fail, newId } from '../../../_lib/game.js';
+import { TIME_CONTROLS, shuffledOrder, json, fail, newId, limitUctu } from '../../../_lib/game.js';
 import { currentUser } from '../../../_lib/auth.js';
 import { pickQuestions, markSeen } from '../../../_lib/pool.js';
 import { botPlay } from '../../../_lib/bot.js';
@@ -12,6 +12,15 @@ import { botPlay } from '../../../_lib/bot.js';
 export async function onRequestPost({ params, request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
+
+  // Zakládání hry má limit na VŠECH čtyřech cestách, ne jen v api/game/index.js.
+  // Do 2026-09-03 ho měla jen ta jedna, takže se dal obejít turnajovým botem: každé
+  // volání založilo hru, dva hráče, deset odpovědí a deset viděných otázek, a to bez
+  // jediné odpovědi hráče. Konstanty schválně tady, ne sdílené — každá cesta smí mít
+  // vlastní strop, kdyby se ukázalo, že jeden nesedí na všechny.
+  const MAX_HER = 30, OKNO_MS = 60 * 60 * 1000;
+  if (!(await limitUctu(env, me.id, 'game_tries', MAX_HER, OKNO_MS)))
+    return fail('příliš mnoho založených her, zkus to za chvíli', 429);
 
   const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(params.id).first();
   if (!game) return fail('hra nenalezena', 404);

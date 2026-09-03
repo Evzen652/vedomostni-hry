@@ -27,9 +27,13 @@ export async function onRequestPost({ request, env }) {
 
   if (!(await verifyPin(pin, user.pin_hash))) {
     const fails = user.login_fails + 1;
-    const lock = fails >= MAX_FAILS ? Date.now() + LOCK_MS : 0;
+    // Počítadlo se při zamčení NENULUJE. Dřív se zapisovalo 0, takže po vypršení
+    // desetiminutového zámku měl útočník znovu plných MAX_FAILS pokusů — trvale ~48
+    // pokusů za hodinu donekonečna, bez jakéhokoli zpomalování. Zámek se teď s každým
+    // dalším neúspěchem prodlužuje (10, 20, 30 … minut), takže hádání PINu odumře.
+    const lock = fails >= MAX_FAILS ? Date.now() + LOCK_MS * (fails - MAX_FAILS + 1) : 0;
     await env.DB.prepare('UPDATE users SET login_fails = ?, locked_until = ? WHERE id = ?')
-      .bind(lock ? 0 : fails, lock, user.id).run();
+      .bind(fails, lock, user.id).run();
     return fail('přezdívka nebo PIN nesedí', 401);
   }
 

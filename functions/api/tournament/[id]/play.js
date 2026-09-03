@@ -1,4 +1,4 @@
-import { TIME_CONTROLS, shuffledOrder, json, fail, newId } from '../../../_lib/game.js';
+import { TIME_CONTROLS, shuffledOrder, json, fail, newId, limitUctu } from '../../../_lib/game.js';
 import { currentUser } from '../../../_lib/auth.js';
 import { pickQuestions, markSeen } from '../../../_lib/pool.js';
 import { tournamentStatus } from '../../../_lib/tournament.js';
@@ -18,6 +18,15 @@ export async function onRequestPost({ params, request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
 
+  // Zakládání hry má limit na VŠECH čtyřech cestách, ne jen v api/game/index.js.
+  // Do 2026-09-03 ho měla jen ta jedna, takže se dal obejít turnajovým botem: každé
+  // volání založilo hru, dva hráče, deset odpovědí a deset viděných otázek, a to bez
+  // jediné odpovědi hráče. Konstanty schválně tady, ne sdílené — každá cesta smí mít
+  // vlastní strop, kdyby se ukázalo, že jeden nesedí na všechny.
+  const MAX_HER = 30, OKNO_MS = 60 * 60 * 1000;
+  if (!(await limitUctu(env, me.id, 'game_tries', MAX_HER, OKNO_MS)))
+    return fail('příliš mnoho založených her, zkus to za chvíli', 429);
+
   const t = await env.DB.prepare('SELECT * FROM tournaments WHERE id = ?').bind(params.id).first();
   if (!t) return fail('turnaj nenalezen', 404);
   if (tournamentStatus(t) !== 'bezi') return fail('turnaj zrovna neběží', 409);
@@ -30,7 +39,9 @@ export async function onRequestPost({ params, request, env }) {
   await env.DB.prepare('DELETE FROM tournament_queue WHERE joined_at < ? AND game_id IS NULL')
     .bind(Date.now() - STALE_MS).run();
 
+  // Pojistka pro turnaje uložené dřív, než se validace opravila (viz TC_NAMES v _lib/game.js).
   const tc = TIME_CONTROLS[t.time_control];
+  if (!tc) return fail('turnaj má poškozenou časovou kontrolu', 409);
   const candidates = (await env.DB.prepare(
     `SELECT user_id FROM tournament_queue
       WHERE tournament_id = ? AND game_id IS NULL AND user_id != ?

@@ -53,6 +53,47 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-03 — Druhá dávka z auditu: rate limity jsou ATOMICKÉ a platí na všech čtyřech cestách. Plus zámek PINu, whitelist a záchytný bod API.**
+  Pokračování předchozího zápisu; otevřené body dál v `AUDIT_REPORT.md`.
+  - **`checkRateLimit` nahrazen `limitUctu` / `limitIp`** — jedním atomickým příkazem
+    místo dvojice `SELECT` → `UPDATE`. Stará verze pustila souběžné požadavky všechny
+    najednou, protože přečetly stejnou hodnotu: limit fakticky znamenal „N DÁVEK za
+    hodinu, každá libovolně velká". O všem teď rozhoduje `WHERE` uvnitř příkazu
+    a odpověď se čte z `meta.changes` — stejný vzor jako zámek v `settle.js`.
+    **Poučení: mé tehdejší „ověřeno trojím způsobem" bylo třikrát SEKVENČNÍ**, takže
+    tuhle třídu chyby minulo. Souběh se přes lokální wrangler vynutit nedá.
+  - **Limit zakládání hry platí na VŠECH čtyřech cestách**, ne jen v `api/game/index.js`.
+    Nejlevnější obchvat byl turnajový bot: každé volání založilo hru, dva hráče, deset
+    odpovědí a deset viděných otázek, a to bez jediné odpovědi hráče.
+  - **U friend_code se počítadlo navyšuje PŘED vyhledáním kódu — NEPŘEHAZUJ TO.**
+    Zkusil jsem vyhledávat první a počítat až neúspěch (vypadá to čistěji, protože
+    „počítají se jen neúspěchy"), jenže tím zámek přestal platit pro správný kód: kdo
+    si deseti tipy zamkne hodinu a v jedenáctém se trefí, mohl by ho použít. U ochrany
+    dětí je to zrovna to podstatné. **Odhalil to existující test** „ani platný kód po
+    limitu neprojde". Aby přitom dál platilo „kdo kód dostal, na limit nenarazí",
+    se pokus při ÚSPĚCHU zase odečte.
+  - **Past při té úpravě:** smazal jsem s blokem limitu i `const now`, kterou používá
+    zápis přátelství o dvacet řádků níž — projevilo se to jako 500 na úspěšné cestě.
+    Test to chytil okamžitě; grep na osiřelé proměnné po smazání bloku se vyplatí.
+  - **`TC_NAMES` místo indexace `TIME_CONTROLS[x]`.** `TIME_CONTROLS["constructor"]`
+    vrací funkci z prototypu, takže kontrola `if (!tc)` takové jméno pustila — a u turnaje
+    se dokonce ULOŽILA do databáze, čímž vznikla položka, která každému, kdo do ní vstoupí,
+    vrací chybu. Do `bot.js` a `play.js` přidána i pojistka pro už uložené rozbité turnaje.
+  - **Zámek přihlašování se při zamčení už nenuluje** a s každým dalším neúspěchem se
+    prodlužuje (10, 20, 30 … minut). Dřív se zapisovalo `login_fails = 0`, takže po
+    vypršení zámku měl útočník znovu plných osm pokusů — trvale ~48 za hodinu donekonečna.
+    Úspěšné přihlášení počítadlo pořád nuluje, takže poctivého hráče eskalace nepotká.
+  - **Pásmo turnajů se bere z účtu, ne z `?band=`.** Přes parametr šlo vypsat běžící
+    DĚTSKÉ turnaje a přes detail pak přezdívky a skóre jejich účastníků. Stejná třída
+    díry, jakou se u denní pětky a her zavírala 2026-08-31 — na turnaje se zapomnělo.
+  - **Nový `functions/_middleware.js`.** Neošetřená výjimka dřív minula `json()`/`fail()`
+    a klient dostal HTML stránku Cloudflare, na které `r.json()` selhalo. Podrobnost
+    chyby se ven neposílá, jen loguje.
+  - **Ověřeno:** `test:api` 138, `test:offline` 679, `validate` 0 chyb.
+    **Pozor na známou nestabilitu:** kontrola „usazený hráč silou bota pohnul" je
+    nedeterministická (rating bota závisí na losu otázek, viz zápis 2026-09-01) —
+    spadla jednou ze tří běhů, pak dvakrát po sobě prošla. Není to regrese.
+
 - **2026-09-03 — Audit našel DVĚ VOLBY, na které se nedalo kliknout. Obojí byla stará vada, obojí měřitelná.**
   Průřezový audit (server, klient, CSS a přístupnost) — celý zápis je v `AUDIT_REPORT.md`.
   Nejzávažnější nález nebyl bezpečnostní, ale úplně obyčejný: **dvě volby na hlavní

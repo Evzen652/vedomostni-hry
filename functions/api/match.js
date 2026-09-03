@@ -1,4 +1,4 @@
-import { BANDS, TIME_CONTROLS, shuffledOrder, json, fail, newId } from '../_lib/game.js';
+import { BANDS, TIME_CONTROLS, TC_NAMES, shuffledOrder, json, fail, newId } from '../_lib/game.js';
 import { currentUser } from '../_lib/auth.js';
 import { pickQuestions, markSeen } from '../_lib/pool.js';
 
@@ -25,8 +25,8 @@ export async function onRequestPost({ request, env }) {
 
   const band = me.band;
   const tcName = body.time_control || 'blesk';
+  if (!TC_NAMES.includes(tcName)) return fail('neznámá časová kontrola: ' + tcName);
   const tc = TIME_CONTROLS[tcName];
-  if (!tc) return fail('neznámá časová kontrola: ' + tcName);
   if (!BANDS.includes(band)) return fail('neznámé pásmo');
 
   await env.DB.prepare('DELETE FROM queue WHERE joined_at < ? AND game_id IS NULL')

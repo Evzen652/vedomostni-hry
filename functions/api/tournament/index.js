@@ -1,4 +1,4 @@
-import { BANDS, TIME_CONTROLS, json, fail, newId, checkRateLimit } from '../../_lib/game.js';
+import { BANDS, TIME_CONTROLS, TC_NAMES, json, fail, newId, limitUctu } from '../../_lib/game.js';
 import { currentUser } from '../../_lib/auth.js';
 import { MIN_DURATION_MIN, MAX_DURATION_MIN, MAX_START_DELAY_MIN, tournamentStatus, tournamentEndsAt }
   from '../../_lib/tournament.js';
@@ -21,7 +21,10 @@ export async function onRequestGet({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
 
-  const band = new URL(request.url).searchParams.get('band') || me.band;
+  // Pásmo se bere VÝHRADNĚ z účtu, stejně jako v daily/index.js a game/index.js
+  // (narovnalo se to tam 2026-08-31, na turnaje se zapomnělo). Přes `?band=` šlo
+  // vypsat běžící DĚTSKÉ turnaje a přes detail pak přezdívky a skóre jejich účastníků.
+  const band = me.band;
   if (!BANDS.includes(band)) return fail('neznámé pásmo');
 
   const rows = (await env.DB.prepare(
@@ -48,17 +51,14 @@ export async function onRequestPost({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
 
-  const pod = await checkRateLimit(
-    () => env.DB.prepare('SELECT tourney_tries AS tries, tourney_tries_at AS tries_at FROM users WHERE id = ?').bind(me.id).first(),
-    (tries, at) => env.DB.prepare('UPDATE users SET tourney_tries = ?, tourney_tries_at = ? WHERE id = ?').bind(tries, at, me.id).run(),
-    MAX_TOURNEYS, WINDOW_MS);
+  const pod = await limitUctu(env, me.id, 'tourney_tries', MAX_TOURNEYS, WINDOW_MS);
   if (!pod) return fail('příliš mnoho založených turnajů, zkus to za chvíli', 429);
 
   let body = {};
   try { body = await request.json(); } catch (e) { /* výchozí */ }
 
   const tcName = body.time_control || 'blesk';
-  if (!TIME_CONTROLS[tcName]) return fail('neznámá časová kontrola: ' + tcName);
+  if (!TC_NAMES.includes(tcName)) return fail('neznámá časová kontrola: ' + tcName);
 
   const duration = Number.isInteger(body.duration_min) ? body.duration_min : 15;
   if (duration < MIN_DURATION_MIN || duration > MAX_DURATION_MIN) {

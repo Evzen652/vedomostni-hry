@@ -4,6 +4,11 @@
  */
 
 export const BANDS = ['deti', 'starsi', 'dospeli'];
+// Validuje se PROTI TOMUHLE SEZNAMU, ne indexaci objektu. `TIME_CONTROLS["constructor"]`
+// vrací funkci z prototypu, takže kontrola `if (!tc)` takové jméno pustí dál — a u turnaje
+// se hodnota dokonce ULOŽÍ do databáze, čímž vznikne položka, která každému, kdo do ní
+// vstoupí, vrací chybu. Stejný vzor jako `BANDS.includes(band)` o pár řádků níž.
+export const TC_NAMES = ["blesk", "klasika"];
 export const TIME_CONTROLS = {
   blesk:   { count: 10, limit_s: 10 },
   klasika: { count: 15, limit_s: 20 },
@@ -52,25 +57,49 @@ export function newId() {
 }
 
 /**
- * Klouzavé okno pro rate limit (2026-09-02). Na rozdíl od `friends.js`, kde se
- * počítají jen NEÚSPĚŠNÉ pokusy (kdo kód dostal, nikdy nenarazí), se tady počítá
- * KAŽDÉ volání — u registrace/založení hry je totiž pokus sám o sobě to, co
- * omezujeme, ne hádání něčeho cizího.
+ * Klouzavé okno pro rate limit — ATOMICKY, jedním příkazem.
  *
- * `ziskej`/`uloz` jsou callbacky, protože per-uživatele (UPDATE existujícího
- * řádku v `users`) a per-IP (UPSERT do `reg_attempts`, řádek nemusí existovat)
- * potřebují jiné SQL — tahle funkce zná jen počítání, ne úložiště.
+ * Do 2026-09-03 to byla dvojice `SELECT` → rozhodnutí → `UPDATE` bez transakce.
+ * Dvě stě souběžných požadavků tedy přečetlo stejnou hodnotu a všech dvě stě prošlo:
+ * limit se choval jako „N DÁVEK za hodinu, každá libovolně velká". Tehdejší ověření
+ * (unit test s falešným úložištěm + živé volání) to minulo, protože obojí bylo
+ * sekvenční — souběh se přes lokální wrangler vynutit nedá, viz CLAUDE.md 2026-09-01.
  *
- * Vrací `true` = pod limitem (a počítadlo se ZAPSALO navýšené). `false` = nad
- * limitem — nezapisuje se nic, ať počítadlo neroste do nekonečna při opakovaném
- * ťukání po zamčení (chování stejné jako klouzavé okno ve `friends.js`).
+ * Teď o všem rozhoduje `WHERE` uvnitř jediného příkazu a odpověď se čte z
+ * `meta.changes`: 0 = nad limitem (nezapsalo se nic), 1 = pod limitem (a počítadlo
+ * je už navýšené). Stejný vzor, jakým se 2026-09-01 zamykalo `settle.js`.
+ *
+ * Počítá se KAŽDÉ volání. `friends.js` má vlastní pořadí, protože tam se počítají
+ * jen NEÚSPĚŠNÉ pokusy — kdo kód opravdu dostal, na limit nikdy nenarazí.
  */
-export async function checkRateLimit(ziskej, uloz, max, windowMs) {
+
+/** Povolené sloupce, ať se do SQL nikdy nedostane cizí jméno. */
+const LIMIT_SLOUPCE = ['game_tries', 'tourney_tries', 'friend_tries'];
+
+/** Limit vázaný na účet. Vrací true, když se akce vejde. */
+export async function limitUctu(env, userId, sloupec, max, windowMs) {
+  if (!LIMIT_SLOUPCE.includes(sloupec)) throw new Error('neznámý sloupec limitu: ' + sloupec);
+  const at = sloupec + '_at';
   const now = Date.now();
-  const stav = await ziskej();
-  const vOkne = now - (stav?.tries_at || 0) < windowMs;
-  const pokusu = vOkne ? (stav?.tries || 0) : 0;
-  if (pokusu >= max) return false;
-  await uloz(pokusu + 1, vOkne ? (stav?.tries_at || now) : now);
-  return true;
+  const r = await env.DB.prepare(
+    `UPDATE users
+        SET ${sloupec} = CASE WHEN ? - ${at} < ? THEN ${sloupec} + 1 ELSE 1 END,
+            ${at}      = CASE WHEN ? - ${at} < ? THEN ${at} ELSE ? END
+      WHERE id = ?
+        AND (? - ${at} >= ? OR ${sloupec} < ?)`)
+    .bind(now, windowMs, now, windowMs, now, userId, now, windowMs, max).run();
+  return (r.meta && r.meta.changes) > 0;
+}
+
+/** Limit vázaný na IP (registrace — účet v tu chvíli ještě neexistuje). */
+export async function limitIp(env, ip, max, windowMs) {
+  const now = Date.now();
+  const r = await env.DB.prepare(
+    `INSERT INTO reg_attempts (ip, tries, tries_at) VALUES (?, 1, ?)
+     ON CONFLICT(ip) DO UPDATE
+        SET tries    = CASE WHEN ? - tries_at < ? THEN tries + 1 ELSE 1 END,
+            tries_at = CASE WHEN ? - tries_at < ? THEN tries_at ELSE ? END
+      WHERE ? - reg_attempts.tries_at >= ? OR reg_attempts.tries < ?`)
+    .bind(ip, now, now, windowMs, now, windowMs, now, now, windowMs, max).run();
+  return (r.meta && r.meta.changes) > 0;
 }

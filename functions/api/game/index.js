@@ -1,4 +1,4 @@
-import { BANDS, TIME_CONTROLS, shuffledOrder, json, fail, newId, checkRateLimit } from '../../_lib/game.js';
+import { BANDS, TIME_CONTROLS, TC_NAMES, shuffledOrder, json, fail, newId, limitUctu } from '../../_lib/game.js';
 import { currentUser } from '../../_lib/auth.js';
 import { pickQuestions, markSeen } from '../../_lib/pool.js';
 
@@ -22,10 +22,7 @@ export async function onRequestPost({ request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
 
-  const pod = await checkRateLimit(
-    () => env.DB.prepare('SELECT game_tries AS tries, game_tries_at AS tries_at FROM users WHERE id = ?').bind(me.id).first(),
-    (tries, at) => env.DB.prepare('UPDATE users SET game_tries = ?, game_tries_at = ? WHERE id = ?').bind(tries, at, me.id).run(),
-    MAX_GAMES, WINDOW_MS);
+  const pod = await limitUctu(env, me.id, 'game_tries', MAX_GAMES, WINDOW_MS);
   if (!pod) return fail('příliš mnoho založených her, zkus to za chvíli', 429);
 
   let body = {};
@@ -45,8 +42,8 @@ export async function onRequestPost({ request, env }) {
   if (!BANDS.includes(band)) return fail('neznámé pásmo: ' + band);
 
   const tcName = body.time_control || 'blesk';
+  if (!TC_NAMES.includes(tcName)) return fail('neznámá časová kontrola: ' + tcName);
   const tc = TIME_CONTROLS[tcName];
-  if (!tc) return fail('neznámá časová kontrola: ' + tcName);
 
   const ids = await pickQuestions(env, band, tc.count, [me.id]);
   if (ids.length < tc.count) return fail('v pásmu ' + band + ' není dost otázek', 503);
