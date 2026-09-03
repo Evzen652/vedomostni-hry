@@ -578,7 +578,7 @@
         // by to bylo pořád stejné kolečko s „T" u každé položky.
         const faces = s.party ? `<span class="qz-resume-faces">${(saves[id].meta.players||[]).map(p=>
             `<span class="qz-face" style="background:${p.color}">${esc((p.name||"?")[0])}</span>`).join("")}</span>` : "";
-        return `<div class="qz-resume-item" data-resume="${id}">
+        return `<div class="qz-resume-item" role="button" tabindex="0" aria-label="Pokračovat ve hře: ${esc(s.coHral)}" data-resume="${id}">
           <img class="qz-resume-img" src="${s.obr}" alt="" onerror="this.style.visibility='hidden'">
           <span class="qz-resume-text">
             ${radek("Co jsi hrál", s.coHral)}
@@ -631,10 +631,20 @@
       openBtn.addEventListener("click", () => { modal.hidden = false; });
       modal.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", () => { modal.hidden = true; }));
     }
-    body.querySelectorAll(".qz-resume-item").forEach(it => it.addEventListener("click", e => {
-      if(e.target.closest(".qz-resume-del")) return;
-      resumeSave(it.dataset.resume);
-    }));
+    body.querySelectorAll(".qz-resume-item").forEach(it => {
+      it.addEventListener("click", e => {
+        if(e.target.closest(".qz-resume-del")) return;
+        resumeSave(it.dataset.resume);
+      });
+      // Klávesnice: Enter/mezera pokračuje ve hře. Položka je <div> (nese vnořený křížek,
+      // takže nejde <button>), proto role="button" + tabindex + tenhle handler.
+      it.addEventListener("keydown", e => {
+        if((e.key === "Enter" || e.key === " ") && !e.target.closest(".qz-resume-del")){
+          e.preventDefault();
+          resumeSave(it.dataset.resume);
+        }
+      });
+    });
     body.querySelectorAll(".qz-resume-del").forEach(d => d.addEventListener("click", e => {
       e.stopPropagation();
       const s=loadSaves(); delete s[d.dataset.del]; writeSaves(s);
@@ -1143,7 +1153,7 @@
                pryč, ale stealHtml/wireSteal/finishSteal zůstávají funkční pod kapotou. allowSteal
                na obou místech (answer, timeoutReveal) čte S.steal, a to už nejde v UI nastavit na
                true, takže se ty větve nikdy nespustí (viz i tvrdý reset v resumeSave). -->
-          <div class="qz-opt" data-opt="rotate"><span class="qz-sw${S.rotate==="auto"?" on":""}"></span> Otáčet obrazovku k hráči</div>
+          <div class="qz-opt" role="switch" tabindex="0" aria-checked="${S.rotate==="auto"}" data-opt="rotate"><span class="qz-sw${S.rotate==="auto"?" on":""}"></span> Otáčet obrazovku k hráči</div>
           <div class="qz-fieldlabel" style="margin-top:12px">Časový limit na odpověď</div>
           <div class="qz-bands" style="margin-top:4px">
             <button class="qz-chip${S.timer===0?" on":""}" data-timer="0">Vyp</button>
@@ -1167,13 +1177,18 @@
     const add=body.querySelector("#qz-addp"); if(add) add.addEventListener("click", () => { const i=S.players.length; S.players.push({ name:"", band:"dospeli", color:COLORS[i%COLORS.length], side:SIDES[i%SIDES.length].k, score:0 }); renderSetup(); });
     body.querySelectorAll("[data-rounds]").forEach(b => b.addEventListener("click", () => { S.totalRounds=+b.dataset.rounds; renderSetup(); }));
     body.querySelectorAll("[data-timer]").forEach(b => b.addEventListener("click", () => { S.timer=+b.dataset.timer; renderSetup(); }));
-    body.querySelectorAll(".qz-opt").forEach(o => o.addEventListener("click", () => {
+    body.querySelectorAll(".qz-opt").forEach(o => {
+      const prepni = () => {
       const k=o.dataset.opt;
       if(k==="voice") S.voice=!S.voice;
       else if(k==="rotate") S.rotate = S.rotate==="auto" ? "button" : "auto";
       else if(k==="steal") S.steal=!S.steal;
       renderSetup();
-    }));
+      };
+      o.addEventListener("click", prepni);
+      // Klávesnice na přepínači: Enter/mezera přepne (role="switch").
+      o.addEventListener("keydown", e => { if(e.key === "Enter" || e.key === " "){ e.preventDefault(); prepni(); } });
+    });
     body.querySelector("#qz-setup-go").addEventListener("click", () => {
       const named = S.players.filter(p=>(p.name||"").trim());
       if(named.length<2){
