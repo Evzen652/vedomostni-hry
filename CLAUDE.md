@@ -53,6 +53,41 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-03 — NASAZENO NA PRODUKCI. Tři pasti, z toho dvě nové, a jedna z nich by mě málem donutila hlásit neexistující únik.**
+  Nasazeno všechno z 2026-09-02 a 09-03. **Produkce má 19 SKUTEČNÝCH ÚČTŮ** (zápis
+  z 2026-09-01 mluví o nule — od té doby se lidé zaregistrovali), takže destruktivní
+  postupy byly úplně mimo hru a všechno se dělalo přírůstkově.
+  - **Pořadí: migrace → obsah → deploy.** `migrations/2026-09-02-rate-limits.sql`
+    (4× ALTER + 1× CREATE, ověřeno grepem, že tam není `DROP`/`DELETE`), pak
+    `db:sync` (150 INSERTů s `ON CONFLICT DO UPDATE`), pak `pages deploy`.
+    Po každém kroku ověřeno, že **19 účtů a 19 ratingů zůstalo netknutých**.
+    Obsah byl skutečně zastaralý: dětské otázky měly starý opener u **617 otázek**,
+    po syncu 155 — přesně jako v repu.
+  - **PAST 1 (známá, ale s jiným číslem): wrangler sáhl po CIZÍM ÚČTU.**
+    `npx wrangler whoami` hlásilo správný účet `3005fa92…`, ale požadavek šel na
+    `88fa409d…` a spadl na **7403** („account is not valid or is not authorized"),
+    ne na 7404, které má zapsané `wrangler.toml`. Řeší to dokumentovaná proměnná:
+    `CLOUDFLARE_ACCOUNT_ID=3005fa92056c05be6e87ea85a5df5ab9` **před každým**
+    `wrangler d1 execute --remote`. **Samotné `whoami` tedy NESTAČÍ jako ověření.**
+  - **PAST 2 (nová): `wrangler pages deploy` bez `--branch` nasadí NÁHLED, ne produkci.**
+    První nasazení skončilo na `claude-lobby-rozehrane-hry.zemekviz.pages.dev` a ostrá
+    adresa `zemekviz.pages.dev` starý kód **nadále servírovala** — ověřeno grepem na
+    „Světová liga": náhled 1×, produkce 0×. Produkční větev projektu je **`master`**
+    (`wrangler pages deployment list` ji ukáže ve sloupci Environment). Nasazuj tedy
+    `npx wrangler pages deploy dist --project-name zemekviz --branch master`
+    a **předtím posuň `master`**, ať produkce neběží na kódu, který v master větvi není;
+    tady to byl čistý fast-forward (ověřeno `git merge-base --is-ancestor`).
+  - **PAST 3 (nová, a nejzrádnější): kontrola úniku souborů podle HTTP kódu NEFUNGUJE.**
+    `CLAUDE.md`, `schema.sql`, `wrangler.toml` i `d1-seed.sql` vracely na produkci **200**
+    a vypadalo to na sedminásobný únik. Ve skutečnosti je to **SPA fallback** — každá
+    neznámá cesta vrátí `index.html` s kódem 200, což potvrdila vymyšlená
+    `/tohle-neexistuje`, která vrátila totéž. **Kontroluj OBSAH odpovědi, ne status.**
+    (Skutečná pojistka je stejně jinde: `dist/` ty soubory vůbec neobsahuje, což se
+    ověřuje lokálně po `npm run build`.)
+  - Ověřeno na ostré adrese s obejitím cache: `Světová liga`, `ZKPicframe`, `ico-star`,
+    „vítej v aréně vědomostí" i „Co jsi hrál" jsou venku, `assets/ico-star.png` vrací 200,
+    `/api/leaderboard` bez přihlášení 401, konzole čistá.
+
 - **2026-09-03 — Online otázky mají konečně glóbus a ilustraci. A hvězdička u skóre byla rozbitá geometrie, ne špatný vkus.**
   Hráčova otázka: *„proč u online otázek není globus?"* Odpověď: **online si otázku kreslí
   vlastní funkcí.** `nextQuestion()` v [online.js](online.js) recykluje jen CSS třídy
