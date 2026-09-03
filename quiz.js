@@ -521,7 +521,14 @@
   // ZKOnline.stopAll() je tu nutnost, ne úklid navíc: online režim si drží vlastní časovač
   // otázky a dotazování na soupeře. Bez tohohle volání běžely dál nad odpojeným DOMem a po
   // vypršení limitu odeslaly odpověď a překreslily rozcestník, který hráč mezitím otevřel.
-  function close(){ stopTTS(); clearTimer(); releaseWake(); if(window.ZKOnline && window.ZKOnline.stopAll) window.ZKOnline.stopAll(); renderModePick(); }
+  // `qz-school` se MUSI sundat i tady. Pridava ji startSchool() a odebiraji jen
+  // startGame()/startParty()/resumeSave() — po sekvenci skola -> "x" -> Svetova liga
+  // tedy zustavala na shellu a online otazka se kreslila v promitacim pismu, protoze
+  // online recykluje presne ty tridy, ktere .qz-school zvetsuje (.qz-q, .qz-a, .qz-meta,
+  // .qz-picframe). Offline se to neprojevilo, protoze solo i party ji pri startu sundaji.
+  function close(){ stopTTS(); clearTimer(); releaseWake(); if(window.ZKOnline && window.ZKOnline.stopAll) window.ZKOnline.stopAll();
+    document.getElementById("qz-shell").classList.remove("qz-school");
+    renderModePick(); }
 
   // Odpovídání z klávesnice: 1–4 nebo A–D, Enter/mezera posune dál. Bez toho šlo hrát
   // jen myší nebo protabováním čtyř tlačítek u každé otázky. Ve školním režimu, kde se
@@ -994,7 +1001,7 @@
       <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}Oukej, vypravíme se na sólo jízdu. Jen ty a mapa.</h2>
       <div style="width:min(100%,460px)">
         <div class="qz-fieldlabel">Kdo dnes hraje?</div>
-        <div class="qz-tiles" style="grid-template-columns:repeat(3,1fr);max-width:100%">
+        <div class="qz-tiles" style="grid-template-columns:repeat(3,minmax(0,1fr));max-width:100%">
           ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
           ${tileHtml({ic:"🧑‍🎓", img:"assets/band-starsi.jpg", t:"Puberťáci", selectable:true, sel:S.bandTouched && S.band==="starsi", attr:`data-band="starsi"`})}
           ${tileHtml({ic:"🧑", img:"assets/band-dospeli.jpg", t:"Dospělí", selectable:true, sel:S.bandTouched && S.band==="dospeli", attr:`data-band="dospeli"`})}

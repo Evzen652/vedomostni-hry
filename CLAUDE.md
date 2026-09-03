@@ -53,6 +53,43 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-03 — Audit našel DVĚ VOLBY, na které se nedalo kliknout. Obojí byla stará vada, obojí měřitelná.**
+  Průřezový audit (server, klient, CSS a přístupnost) — celý zápis je v `AUDIT_REPORT.md`.
+  Nejzávažnější nález nebyl bezpečnostní, ale úplně obyčejný: **dvě volby na hlavní
+  cestě do hry byly fyzicky nedosažitelné.**
+  - **Výběr pásma přetékal na KAŽDÉM telefonu.** Při 375 px `scrollWidth 430` proti
+    `clientWidth 375` — dlaždice „Dospělí" byla rozseknutá v půlce a na její pravou
+    půlku nešlo kliknout. A protože `.qz-shell` má `overflow: clip`, nedalo se k ní
+    ani doscrollovat. „Jdeme na to" je přitom `disabled`, dokud pásmo nevybereš.
+  - **Výběr témat ořezával DVĚ Z DESETI témat na tabletu** (640–817 px). Při 700 px
+    mřížka `142px ×5` = 796 px v kontejneru širokém 700.
+  - **Společná příčina: `1fr` je `minmax(auto, 1fr)`, a `auto` u obrázku s pevnou
+    šířkou je ta šířka.** Stopa se proto nesmrskla a mřížka rostla přes kontejner.
+    Řešení je `minmax(0, 1fr)` u sloupců **a zároveň** `max-width: 100%; height: auto;
+    aspect-ratio: 1/1` u obrázku — jedno bez druhého nestačí. Online část to měla
+    správně už dřív (`.zk-bandpick` sráží obrázek pod 480 px).
+  - **Ověřeno měřením na 320 / 375 / 640 / 700 / 1400 px: přetečení 0 px všude.**
+    Screenshotem doloženo, že „Dospělí" i „Historie" jsou celé v obraze.
+  - **Zrušeno `user-scalable=no`** v `hra.html`. Porušovalo WCAG 1.4.4 a bylo to
+    zároveň jediná úniková cesta z obou přetečení, dokud existovala.
+  - **`qz-school` se nově sundává i v `close()`.** Přidává ji `startSchool()`, ale
+    odebíraly jen `startGame`/`startParty`/`resumeSave` — po sekvenci škola → „×" →
+    Světová liga tedy zůstávala na shellu a online otázka se kreslila v promítacím
+    písmu, protože online recykluje přesně ty třídy, které `.qz-school` zvětšuje.
+  - **`cc` doplněno do `SELECT`u** v `q/[n].js` — přidal jsem 2026-09-03 do odpovědi
+    `cc: q.cc` s komentářem, že se posílá výslovně, ale do dotazu jsem sloupec nedal.
+    Glóbus v online tedy fungoval jen díky fallbacku z prefixu id, který jsem označil
+    za pojistku pro staré hry. **Kód a komentář si odporovaly.**
+  - **Nově je CI** (`.github/workflows/kontroly.yml`): `node --check` na oba klientské
+    skripty, `validate`, `test:offline`. Schválně jen to, co nepotřebuje síť ani
+    databázi. Důvod je konkrétní: téhož dne jsem si `quiz.js` rozbil zpětným apostrofem
+    v komentáři uvnitř template literalu a appka se přestala vykreslovat úplně.
+  - **CO ZŮSTÁVÁ OTEVŘENÉ, viz `AUDIT_REPORT.md`:** obnova PINu je v produkci mrtvá
+    a přitom loguje odkaz i s e-mailem; rate limit pokrývá jednu ze čtyř cest
+    zakládajících hru a `checkRateLimit` není atomický (obojí moje práce z 2026-09-02);
+    odveta umí vyrobit hodnocené výhry; `TIME_CONTROLS[x]` prochází přes prototyp;
+    zámek přihlašování se při zamčení nuluje; kontrast `--muted` je 4,15:1 místo 4,5:1.
+
 - **2026-09-03 — Glóbus na rozcestníku je za NADPISEM, ne za dlaždicemi. Dvě předchozí verze spadly na magickém čísle.**
   Hráč se ptal, „kdo změnil posunutí glóbu dolů za dlaždice" — odpověď byla, že nikdo
   (je tam beze změny od 2026-07-21), ale výsledný dojem mu vadil a chtěl ho výš.

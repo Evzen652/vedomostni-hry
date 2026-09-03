@@ -1,0 +1,39 @@
+# Rychlé kontroly při každém push a pull requestu.
+#
+# Proč to vzniklo: sedm kontrolních skriptů v repu existovalo dávno, ale pouštěly se
+# jen ručně — takže projektem prošla i syntaktická chyba, po které se appka přestala
+# vykreslovat úplně (zpětný apostrof v komentáři uvnitř template literalu, 2026-09-03).
+# `node --check` to odhalí za setinu sekundy.
+#
+# Schválně jen kontroly, které NEPOTŘEBUJÍ síť ani databázi:
+#   - test:api vyžaduje běžící `wrangler pages dev` a naplněnou lokální D1,
+#   - sim-online, lint-irony a audit jsou dlouhé a vracejí upozornění, ne chyby.
+# Ty zůstávají na ruční spuštění.
+
+name: Kontroly
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  kontroly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Bez závislostí: validate i test:offline běží na čistém Node.
+      - name: Syntaxe klientských skriptů
+        run: |
+          node --check quiz.js
+          node --check online.js
+
+      - name: Kontrola dat
+        run: npm run validate
+
+      - name: Offline část hry
+        run: npm run test:offline

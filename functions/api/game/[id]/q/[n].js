@@ -27,7 +27,7 @@ export async function onRequestGet({ params, request, env }) {
   if (!Number.isInteger(n) || n < 0 || n >= ids.length) return fail('otázka mimo rozsah', 404);
 
   const q = await env.DB
-    .prepare('SELECT id, question, answer, distractors, country, section FROM questions WHERE id = ?')
+    .prepare('SELECT id, cc, question, answer, distractors, country, section FROM questions WHERE id = ?')
     .bind(ids[n]).first();
   if (!q) return fail('otázka nenalezena', 404);
 

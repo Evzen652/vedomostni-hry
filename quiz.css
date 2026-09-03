@@ -449,7 +449,7 @@
   transition: transform .12s, box-shadow .12s; color: var(--ink); }
 .qz-tile:hover:not(.soon) { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; border-color: var(--teal); }
 .qz-tile-ic { font-size: 40px; line-height: 1; margin-bottom: 2px; display: flex; align-items: center; justify-content: center; position: relative; }
-.qz-tile-ic .ic-img { width: 92px; height: 92px; object-fit: cover; border-radius: 14px; display: block;
+.qz-tile-ic .ic-img { width: 92px; max-width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; display: block;
   border: 3px solid #fffdf6; outline: 2px solid #e3d5b8; box-shadow: 0 6px 16px rgba(120,90,50,.24); transition: transform .12s; }
 .qz-tile:hover:not(.soon) .ic-img { transform: translateY(-2px) rotate(-1.5deg); }
 .qz-tile-ic .ic-fb { font-size: 40px; line-height: 1; align-items: center; justify-content: center; }
@@ -475,10 +475,10 @@
 /* 10 dlaždic (9 témat + Vybrat vše) — 5 a 5 pod sebou. max-width dědí z .qz-tiles
    (760px); na tomhle základě je 5 sloupců únosné až od ~640px, pod tím 2 sloupce. */
 .qz-tiles-sec { grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 1040px; }
-@media (min-width:640px) { .qz-tiles-sec { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width:640px) { .qz-tiles-sec { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 .qz-tiles-sec .qz-tile { padding: 16px 10px 12px; gap: 6px; }
 .qz-tiles-sec .qz-tile-ic { font-size: 36px; margin-bottom: 0; }
-.qz-tiles-sec .ic-img { width: 112px; height: 112px; border-radius: 14px; }
+.qz-tiles-sec .ic-img { width: 112px; max-width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 14px; }
 .qz-tiles-sec .ic-fb { font-size: 36px; }
 .qz-tiles-sec .qz-tile-t { font-size: 15px; }
 .qz-tiles-sec .qz-tile-sub { font-size: 10px; }
