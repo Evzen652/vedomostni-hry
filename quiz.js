@@ -1351,14 +1351,16 @@
 
   // popisek tlačítka „Více o…" — 6. pád je v datech (pole `about`), česky se odvodit nedá
   function moreLabel(q){ return q.about ? `Více o ${q.about}` : "Více o tom"; }
+  // „Konec" jen na SKUTEČNĚ poslední otázce. V párty se postup neřídí S.idx (ten se
+  // po sólu neresetuje a nese cizí hodnotu), ale počtem odehraných otázek qServed
+  // proti totalRounds×hráči — jinak párty ukazovala „Konec" pod každou odpovědí.
+  // POZOR: tenhle komentář MUSÍ zůstat MIMO template literal níž — uvnitř backticků se
+  // `//` nebere jako komentář a vykreslí se hráči do patičky karty (stalo se, commit 0195a4a).
   function frowHtml(q){
     return `<div class="qz-frow">
       <div class="qz-expl">${esc(q.explanation||"")} ${(SHOW_SOURCE_LINK && q.source_url)?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
       <div class="qz-fbtns">
         ${(q.source_card||q.more_fact)?`<button class="qz-more" id="qz-more">${esc(moreLabel(q))} <span class="qz-more-ico">💡</span></button>`:""}
-        // „Konec" jen na SKUTEČNĚ poslední otázce. V párty se postup neřídí S.idx (ten se
-        // po sólu neresetuje a nese cizí hodnotu), ale poštem odehraných otázek qServed
-        // proti totalRounds×hráči — jinak párty ukazovala „Konec" pod každou odpovědí.
         <button class="qz-next" id="qz-next">${(S.mode==="party" ? S.qServed+1<S.totalRounds*S.players.length : S.idx+1<S.order.length)?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
       </div>
     </div>`;

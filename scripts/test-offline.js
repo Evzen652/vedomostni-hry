@@ -384,6 +384,33 @@ const heroPopis = (/<span class="d">([^<]*)<\/span><\/span>/.exec(SRC_ONLINE) ||
 kontrola(heroPopis && !/\bbot/i.test(heroPopis),
   "dlaždice Hrát teď slibuje bota: „" + heroPopis + "\"");
 
+// Projde zdroj a vrátí čísla řádků, kde `//` komentář začíná uvnitř backtick šablony.
+// Parita zpětných apostrofů: mimo šablonu se přeskočí řetězce '…'/"…" a řádkové komentáře,
+// aby backticky uvnitř nich paritu nerozhodily; ${…} paritu drží (zanořená šablona = +2).
+function komentarVSablone(src) {
+  const radky = src.split("\n");
+  let bt = 0;   // počet zpětných apostrofů před aktuálním řádkem (lichý = uvnitř šablony)
+  const chyby = [];
+  for (let r = 0; r < radky.length; r++) {
+    const line = radky[r];
+    if (bt % 2 === 1 && line.trim().startsWith("//")) chyby.push(r + 1);
+    for (let i = 0; i < line.length; i++) {
+      const c = line[i];
+      if (bt % 2 === 0) {                                  // běžný kód
+        if (c === "/" && line[i + 1] === "/") break;       // zbytek řádku je komentář
+        if (c === '"' || c === "'") {                      // přeskoč řetězec
+          const q = c; i++;
+          while (i < line.length && line[i] !== q) { if (line[i] === "\\") i++; i++; }
+          continue;
+        }
+      }
+      if (c === "\\") { i++; continue; }                   // escape (i uvnitř šablony)
+      if (c === "`") bt++;
+    }
+  }
+  return chyby;
+}
+
 // Šipky v UI jsou VÝHRADNĚ malované (handArrowSvg). Plochý typografický glyf je v celé
 // malované appce cizí těleso (2026-09-03, opakovaná výtka hráče — stejný důvod, proč
 // skóre přešlo z SVG hvězdy na malovanou ico-star.png). Po odstranění komentářů nesmí
@@ -397,6 +424,14 @@ for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
   const zbyle = (bezKomentaru(src).match(/[←→]/g) || []).length;
   kontrola(zbyle === 0,
     jmeno + " má " + zbyle + " plochých šipek v UI — použij malovanou handArrowSvg");
+
+  // `//` komentář UVNITŘ template literalu se NEbere jako komentář a vykreslí se hráči do
+  // stránky (2026-09-03, commit 0195a4a — „// „Konec" jen na…" v patičce karty u frowHtml).
+  // `node --check` to nechytí, je to validní JS. Hlídá se paritou zpětných apostrofů: řádek
+  // začínající `//` při LICHÉM počtu backticků před sebou je uvnitř šablony = únik do UI.
+  const uniky = komentarVSablone(src);
+  kontrola(uniky.length === 0,
+    jmeno + " má `//` komentář uvnitř template literalu (vykreslí se hráči) na řádcích " + uniky.join(", "));
 }
 
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
