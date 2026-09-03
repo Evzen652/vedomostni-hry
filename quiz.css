@@ -387,9 +387,34 @@
    Kdyby to někdo otevíral potřetí: samotné rozšíření `#qz-body` nestačí a je to past.
    `.qz-tiles:not(.qz-tiles-sec)` má strop 940 px a STEJNOU specificitu jako
    `.qz-tiles-cc`, takže se přebije jen dvojicí tříd `.qz-tiles.qz-tiles-cc`. */
-/* úvodní obrazovka: velký točící se glóbus za kartami režimů */
+/* Úvodní obrazovka: točící se glóbus ZA NADPISEM, ne za dlaždicemi.
+   Do 2026-09-03 byl vycentrovaný na střed obrazovky a měl 500 px — jenže nad dlaždicemi
+   je jen ~195 px místa, takže se schoval skoro celý za karty a koukal jen okrajem.
+   Nově je menší a posunutý nahoru, aby ho nesl nadpis a dlaždice mu podebíraly patu.
+
+   GLÓBUS JE UVNITŘ `.qz-titlewrap` SPOLU S NADPISEM, ne volně v obrazovce — a to je
+   ten podstatný detail. Zkusil jsem napřed obojí volnou cestou a obě selhaly:
+   `top: -40px` (kotva k hornímu okraji) se rozešla na vysokém okně, protože obsah se
+   centruje svisle a klesl doprostřed, zatímco glóbus zůstal nahoře. `translateY(-317px)`
+   od středu obsahu vydrželo změny výšky okna, ale spadlo na TELEFONU: tam jsou dlaždice
+   pod sebou, obsah je dvakrát vyšší a pevný posun nestačil — glóbus skončil za první
+   kartou. Obojí byla magická čísla vázaná na výšku obsahu. Uvnitř obalu se glóbus
+   centruje přímo na nadpis (`inset: 0; margin: auto` vůči jeho boxu), takže drží
+   při jakékoli šířce i výšce a ladit není co. */
 .qz-modepick { position: relative; }
-.qz-globebg { position: absolute; inset: 0; margin: auto; width: min(500px, 78%); height: min(500px, 78%);
+.qz-titlewrap { position: relative; display: flex; align-items: center; justify-content: center; }
+.qz-titlewrap h2 { position: relative; z-index: 1; }
+/* Centruje se přes `left/top: 50%` + `translate(-50%, -50%)`, NE přes `inset: 0; margin: auto`.
+   Glóbus je totiž ŠIRŠÍ než jeho obal (obal má šířku nadpisu, ~194 px, glóbus 300),
+   a v takovém případě se `margin: auto` vodorovně vzdá a zarovná prvek doleva — svisle
+   přitom vycentruje, takže to vypadalo jako záhadný posun jen v jedné ose. */
+/* Svisle NENÍ přesně na středu nadpisu, ale o kousek níž (−35 % místo −50 %). Přesný
+   střed vyčníval nad horní okraj obrazovky o 39 px a `#qz-shell` má skryté přetečení,
+   takže se glóbus ořezával — nahoře je totiž jen 44 px odsazení, kdežto glóbus sahá
+   150 px nad střed nadpisu. Zvětšit odsazení nejde: na okně vysokém 700 px už se obsah
+   sotva vejde. Posun je v procentech VLASTNÍ velikosti glóbu, takže drží i po jeho změně. */
+.qz-globebg { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -35%);
+  width: min(300px, 70vw); height: min(300px, 70vw);
   border-radius: 50%; overflow: hidden; opacity: .28; pointer-events: none; z-index: 0;
   box-shadow: inset -18px -14px 40px rgba(20,50,60,.35); }
 .qz-globebg canvas { width: 100% !important; height: 100% !important; display: block; }

@@ -53,6 +53,41 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-03 — Glóbus na rozcestníku je za NADPISEM, ne za dlaždicemi. Dvě předchozí verze spadly na magickém čísle.**
+  Hráč se ptal, „kdo změnil posunutí glóbu dolů za dlaždice" — odpověď byla, že nikdo
+  (je tam beze změny od 2026-07-21), ale výsledný dojem mu vadil a chtěl ho výš.
+  - **Posunout nestačilo, muselo se i zmenšit.** Nad dlaždicemi je jen ~195 px místa,
+    zatímco glóbus měl 500 px. Nově **360 px** (`min(360px, 70vw)`).
+  - **DVĚ ŠPATNÉ CESTY, ať je nikdo nezkouší znovu:**
+    1. **`top: -40px`** (kotva k hornímu okraji obrazovky) — rozešlo se na okně vysokém
+       1250 px: obsah se centruje svisle a klesl doprostřed, glóbus zůstal nahoře
+       a nadpis skončil až na jeho spodní hraně.
+    2. **`translateY(-317px)`** od středu obsahu — přežilo změny výšky okna, ale spadlo
+       na TELEFONU: tam jsou dlaždice pod sebou, obsah je dvakrát vyšší a pevný posun
+       nestačil, takže glóbus skončil za první kartou.
+    Obojí byla **magická čísla vázaná na výšku obsahu**, která se mezi rozvrženími mění.
+  - **Co funguje: glóbus je SOUROZENEC NADPISU uvnitř `.qz-titlewrap`** (drobná změna
+    HTML v `renderModePick`). Centruje se na nadpis, takže drží při jakékoli výšce okna.
+  - **TŘETÍ past, čistě CSS: `inset: 0; margin: auto` NECENTRUJE prvek, který je VĚTŠÍ
+    než jeho rodič.** Obal má šířku nadpisu (~194 px), glóbus měl 360 — vodorovně se
+    `margin: auto` vzdalo a zarovnalo ho doleva, ZATÍMCO SVISLE vycentrovalo. Vypadalo
+    to jako záhadný posun v jedné ose. Správně je `left/top: 50%` + `translate(-50%, …)`,
+    které na poměru velikostí nezávisí.
+  - **ČTVRTÁ past: `#qz-shell` má skryté přetečení**, takže glóbus vyčnívající nad horní
+    okraj se ořezával (o 39 px na okně vysokém 900). Nahoře je jen 44 px odsazení, kdežto
+    glóbus sahá 150 px nad střed nadpisu, a zvětšit odsazení nejde — na 700 px se obsah
+    sotva vejde. Vyřešeno posunem na `translate(-50%, -35%)` (tedy o kousek níž než
+    přesný střed) a zmenšením na 300 px. Posun je v procentech VLASTNÍ velikosti glóbu,
+    takže přežije i jeho případnou změnu.
+  - **Ověřeno na pěti velikostech** (375×812, 1280×700, 1280×1250, 1920×900, 1920×1080):
+    posun středu proti nadpisu **0 px** a ořez shora **0 px** všude. Důkaz, že se glóbus
+    váže na nadpis a ne na okno, je v tom, že překryv s dlaždicemi vyjde na desktopu
+    shodně bez ohledu na výšku okna — to se u obou zamítnutých verzí lišilo.
+  - **PAST, na kterou jsem naletěl cestou: HTML komentář uvnitř template literalu nesmí
+    obsahovat ZPĚTNÉ APOSTROFY.** Napsal jsem do něj `` `.qz-titlewrap` `` a tím řetězec
+    ukončil — appka se přestala vykreslovat úplně a v konzoli bylo jen záhadné
+    „titlewrap is not defined". `node --check quiz.js` to odhalí okamžitě.
+
 - **2026-09-03 — NASAZENO NA PRODUKCI. Tři pasti, z toho dvě nové, a jedna z nich by mě málem donutila hlásit neexistující únik.**
   Nasazeno všechno z 2026-09-02 a 09-03. **Produkce má 19 SKUTEČNÝCH ÚČTŮ** (zápis
   z 2026-09-01 mluví o nule — od té doby se lidé zaregistrovali), takže destruktivní

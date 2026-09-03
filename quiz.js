@@ -589,8 +589,16 @@
         <div class="qz-modal-body">${resumeItems}</div>
       </div></div>` : "";
     body.innerHTML = `<div class="qz-screen qz-modepick">
-      <div class="qz-globebg" id="qz-globebg"></div>
-      <h2>Zeměkvíz</h2>
+      <!-- Glóbus je SOUROZENEC NADPISU uvnitř .qz-titlewrap, ne volně v obrazovce.
+           Volně musel mít posun vázaný na výšku obsahu, a ta se mezi desktopem
+           a telefonem liší dvojnásobně (dlaždice 2x2 vs. pod sebou), takže se glóbus
+           na mobilu sesunul za první kartu. Uvnitř obalu se centruje na nadpis sám
+           a žádné číslo se ladit nemusí. POZOR: tenhle komentář je uvnitř template
+           literalu, takže v něm NESMÍ být zpětné apostrofy — ukončily by řetězec. -->
+      <div class="qz-titlewrap">
+        <div class="qz-globebg" id="qz-globebg"></div>
+        <h2>Zeměkvíz</h2>
+      </div>
       <div class="qz-modes">
         <!-- Pořadí: Online první, Škola poslední (2026-08-31). Online je jediný režim,
              kde na hráče někdo čeká, takže patří dopředu; škola je nejužší případ užití.
