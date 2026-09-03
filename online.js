@@ -45,6 +45,25 @@ window.ZKOnline = (function () {
   // vytkl jako nejednotné (2026-09-03). Rating (číslo bez „b") hvězdu nedostává, není to skóre.
   var ICO_STAR = '<img src="assets/ico-star.png" alt="" style="width:1em;height:1em;vertical-align:-0.14em;flex:none;display:inline-block">';
   function starScore(n) { return ICO_STAR + " <b>" + n + "</b>"; }
+
+  // Ghost soupeř se hráči ukazuje pod LIDSKÝM jménem, ne pod přezdívkou bota („Chytrá
+  // sova (ligový)" = jasný NPC signál). Účet bota se NEPŘEJMENOVÁVÁ (nick_lower je UNIQUE,
+  // baking jmen do účtů by je zabral reálným hráčům) — jméno je jen ZOBRAZENÍ, odvozené
+  // z id hry: stabilní v rámci jedné hry (stejné na všech místech i při dotazování),
+  // ale různé hru od hry. Server pořád posílá is_bot (rozbor/žebříček to potřebují),
+  // jen ho tady nekreslíme. Mechanika (kdo to doopravdy je) se nemění — viz CLAUDE.md.
+  var LIDSKA_JMENA = [
+    "Honza", "Terka", "Pepa", "Klára", "Vojta", "Zuzka", "Adam", "Bára", "Matěj", "Eliška",
+    "Tomáš", "Verča", "Ondra", "Nikol", "Filip", "Denisa", "Kuba", "Anička", "Lukáš", "Míša",
+    "Petr", "Katka", "David", "Lucka", "Standa", "Péťa", "Radek", "Simča", "Marek", "Terezka",
+    "Vašek", "Janča", "Ríša", "Domča", "Klárka", "Honzík",
+  ];
+  function souperJmeno(rawNick, isBot, klic) {
+    if (!isBot) return rawNick;
+    var h = 0, s = String(klic || "");
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    return LIDSKA_JMENA[h % LIDSKA_JMENA.length];
+  }
   function say(t) {
     var el = document.getElementById("qz-host-bubble");
     if (el) { el.textContent = t || ""; el.style.display = t ? "" : "none"; }
@@ -812,19 +831,28 @@ window.ZKOnline = (function () {
       "<h2>Hledám soupeře</h2>" +
       '<div class="qz-setcard" style="text-align:center">' +
         '<div class="zk-radar"><span></span><span></span><span></span></div>' +
-        '<div class="qz-q" id="zk-qstat">Stavím se do fronty…</div>' +
-        '<div class="qz-setnote">Páruje se uvnitř tvého pásma. Čím déle čekáš, tím širší okno.</div>' +
-        // Bot je k dispozici HNED, jen tiše. Dřív byl schovaný do 15. vteřiny, takže
-        // hráč patnáct vteřin koukal na statický text a nevěděl, že má volbu.
-        '<button class="qz-back" id="zk-bot" style="width:100%;justify-content:center;margin-top:.7rem">Nechce se ti čekat? Vezmi bota ' + handArrowSvg(false) + '</button>' +
+        '<div class="qz-q" id="zk-qstat">Hledám soupeře…</div>' +
+        '<div class="qz-setnote">Páruje se uvnitř tvého pásma.</div>' +
+        // Tlačítko pro netrpělivé: přeskočí těch pár vteřin hledání a nastoupí hned.
+        '<button class="qz-back" id="zk-bot" style="width:100%;justify-content:center;margin-top:.7rem">Nechce se ti čekat? Hrát hned ' + handArrowSvg(false) + '</button>' +
       "</div></div>";
 
     var stat = body.querySelector("#zk-qstat");
     var botBtn = body.querySelector("#zk-bot");
-    botBtn.addEventListener("click", function () {
+
+    // Řídká základna: dva lidé se ve stejném okně skoro nepotkají, takže po pár vteřinách
+    // hledání nastoupí soupeř AUTOMATICKY — hráč nečeká na nikoho. Reálný člověk se stihne
+    // spárovat dřív (větev matched), tuhle chvíli hlásí server přes offer_bot. `vzato`
+    // hlídá, ať se souboj založí právě jednou (poll i klik nesmí střelit dvakrát).
+    var vzato = false;
+    function vezmiSoupere() {
+      if (vzato) return;
+      vzato = true;
       stopAll();
+      stat.textContent = "Soupeř nalezen!";
       req("/match", { method: "DELETE" }).then(createLink.bind(null, true));
-    });
+    }
+    botBtn.addEventListener("click", vezmiSoupere);
 
     req("/match", { method: "POST", body: { time_control: "blesk" } }).then(function (r) {
       if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Nepovedlo se.");
@@ -835,12 +863,8 @@ window.ZKOnline = (function () {
         req("/match").then(function (p) {
           if (!p.body) return;
           if (p.body.matched) { stopAll(); return beginGame(p.body.game_id, "duel", p.body.opponent); }
-          stat.textContent = "Čekám… " + waited + " s";
-          // Po 15 s server usoudí, že nikdo nepřijde — bot se z tiché volby stane hlavní akcí.
-          if (p.body.offer_bot && !botBtn.classList.contains("qz-go")) {
-            botBtn.className = "qz-go"; botBtn.style.marginTop = ".7rem";
-            botBtn.innerHTML = "Nikdo se nenašel. Zahrát si proti botovi " + handArrowSvg(false);
-          }
+          if (p.body.offer_bot) return vezmiSoupere();
+          stat.textContent = "Hledám soupeře… " + waited + " s";
         });
       }, 2000);
     });
@@ -856,8 +880,9 @@ window.ZKOnline = (function () {
       var id = r.body.id;
       if (withBot === true) {
         return req("/game/" + id + "/bot", { method: "POST" }).then(function (b) {
-          say(b.body && b.body.bot ? "Nastoupil " + b.body.bot.nick + "." : "Bot nastoupil.");
-          beginGame(id, "odkaz", b.body && b.body.bot ? { nick: b.body.bot.nick } : null);
+          var jmeno = souperJmeno((b.body && b.body.bot && b.body.bot.nick) || "", true, id);
+          say("Nastoupil " + jmeno + ".");
+          beginGame(id, "odkaz", { nick: jmeno });
         });
       }
       var url = location.origin + location.pathname + "?duel=" + id;
@@ -1007,7 +1032,7 @@ window.ZKOnline = (function () {
         if (!el.isConnected) { if (poll) { clearInterval(poll); poll = null; } return; }
         var o = r.body && r.body.opponent;
         if (!o) return;
-        el.innerHTML = esc(o.nick) + ": " + o.answered + "/" + S.game.total +
+        el.innerHTML = esc(souperJmeno(o.nick, o.is_bot, S.game.id)) + ": " + o.answered + "/" + S.game.total +
                        (o.score != null ? " · " + starScore(o.score) : "");
       });
     }, 2000);
@@ -1114,8 +1139,8 @@ window.ZKOnline = (function () {
       say(head);
 
       var rows = g.players.map(function (p) {
-        return '<div class="qz-standrow"><span class="qz-standname">' + esc(p.nick) +
-          (p.is_bot ? " (bot)" : "") + "</span>" +
+        return '<div class="qz-standrow"><span class="qz-standname">' +
+          esc(souperJmeno(p.nick, p.is_bot, S.game.id)) + "</span>" +
           '<span class="qz-standscore">' + (p.score == null ? "—" : starScore(p.score)) + "</span></div>";
       }).join("");
 
@@ -1207,8 +1232,8 @@ window.ZKOnline = (function () {
                 '<span class="qz-standname">' + esc(t.name) + " · " + (TC_LABEL[t.time_control] || t.time_control) + "</span>" +
                 '<span class="qz-standscore">' + statusLabel(t) + "</span></button>";
             }).join("") + "</div>"
-          : '<div class="qz-setnote">Zatím tu žádný turnaj neběží — založ první a hraj třeba ' +
-            "proti botovi, než se někdo přidá.</div>") +
+          : '<div class="qz-setnote">Zatím tu žádný turnaj neběží — založ první a hraj rovnou, ' +
+            "soupeř nastoupí hned.</div>") +
         '<div class="qz-setcard zk-form" style="margin-top:.8rem">' +
           '<div class="qz-fieldlabel">Založit nový</div>' +
           // Popisky u obou polí — dřív to byly dva holé selecty a nedalo se poznat, co je co.
@@ -1313,19 +1338,24 @@ window.ZKOnline = (function () {
       '<div class="qz-setcard" style="text-align:center">' +
         '<div class="zk-radar"><span></span><span></span><span></span></div>' +
         '<div class="qz-q" id="zk-qstat">Hledám soupeře…</div>' +
-        // Stejně jako u duelu: bot je volba od začátku, ne odměna za čekání.
-        '<button class="qz-back" id="zk-tbot" style="width:100%;justify-content:center;margin-top:.7rem">Nechce se ti čekat? Vezmi bota ' + handArrowSvg(false) + '</button>' +
+        // Tlačítko pro netrpělivé: přeskočí hledání a nastoupí na kolo hned.
+        '<button class="qz-back" id="zk-tbot" style="width:100%;justify-content:center;margin-top:.7rem">Nechce se ti čekat? Hrát hned ' + handArrowSvg(false) + '</button>' +
       "</div></div>";
 
     var stat = body.querySelector("#zk-qstat");
-    var botBtn = body.querySelector("#zk-tbot");
-    botBtn.addEventListener("click", function () {
+    var vzato = false;
+    function vezmiSoupere() {
+      if (vzato) return;
+      vzato = true;
       stopAll();
+      stat.textContent = "Soupeř nalezen!";
       req("/tournament/" + id + "/bot", { method: "POST" }).then(function (b) {
         if (b.status !== 200) return renderTournament(id, (b.body && b.body.error) || "Nepovedlo se.");
-        beginGame(b.body.game_id, "turnaj", b.body.bot ? { nick: b.body.bot.nick } : null, id);
+        beginGame(b.body.game_id, "turnaj",
+          { nick: souperJmeno((b.body.bot && b.body.bot.nick) || "", true, b.body.game_id) }, id);
       });
-    });
+    }
+    body.querySelector("#zk-tbot").addEventListener("click", vezmiSoupere);
 
     req("/tournament/" + id + "/play", { method: "POST" }).then(function (r) {
       if (r.status !== 200) return renderTournament(id, (r.body && r.body.error) || "Nepovedlo se.");
@@ -1336,11 +1366,8 @@ window.ZKOnline = (function () {
         req("/tournament/" + id + "/play").then(function (p) {
           if (!p.body) return;
           if (p.body.matched) { stopAll(); return beginGame(p.body.game_id, "turnaj", p.body.opponent, id); }
-          stat.textContent = "Čekám… " + waited + " s";
-          if (p.body.offer_bot && !botBtn.classList.contains("qz-go")) {
-            botBtn.className = "qz-go"; botBtn.style.marginTop = ".7rem";
-            botBtn.innerHTML = "Nikdo se nenašel. Zahrát proti botovi " + handArrowSvg(false);
-          }
+          if (p.body.offer_bot) return vezmiSoupere();
+          stat.textContent = "Hledám soupeře… " + waited + " s";
         });
       }, 2000);
     });

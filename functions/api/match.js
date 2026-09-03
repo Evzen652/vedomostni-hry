@@ -3,7 +3,11 @@ import { currentUser } from '../_lib/auth.js';
 import { pickQuestions, markSeen } from '../_lib/pool.js';
 
 const STALE_MS = 2 * 60 * 1000;      // opuštěné položky ve frontě
-const BOT_AFTER_MS = 15 * 1000;      // po 15 s nabídneme bota, ať nikdo nekouká do prázdna
+// Po 4 s klient nasadí soupeře AUTOMATICKY (offer_bot). Řídká základna (~19 účtů) znamená,
+// že dva lidé se ve stejném okně skoro nepotkají, takže dlouhé čekání je jen divadlo —
+// reálný člověk se stihne spárovat v těch pár vteřinách (matched má přednost). Kdyby
+// základna narostla, tady se okno prodlouží. (2026-09-04)
+const BOT_AFTER_MS = 4 * 1000;
 
 /** Okno pro párování se rozšiřuje s čekáním: začíná na ±100 a roste o 100 za sekundu. */
 const window = waitedMs => 100 + Math.floor(waitedMs / 1000) * 100;

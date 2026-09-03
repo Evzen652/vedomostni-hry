@@ -88,12 +88,26 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **Rating zůstává poctivý:** ghost hraje pod účtem bota, takže se kalibruje týmž
     strojem (`calibrateBot`) — síla bota časem konverguje k tomu, jak reálně z banky hraje.
     Self-correcting, žádný fake člověk v žebříčku.
-  - **CO ZBÝVÁ (a je to VĚDOMÉ rozhodnutí hráče, ne kód): PREZENTACE.** Mechanika je
-    neviditelná — soupeř se pořád jmenuje jako bot a má štítek „(bot)". „Malá lež" (dát
-    ghostovi lidské jméno, zrušit „(bot)", zrušit fingované 15s čekání) je ta část, co se
-    může vymstít u dětí a u důvěry, takže ji hráč musí schválit zvlášť. **Nedělej ji sám.**
-    Souvisí: dlaždice „Světová liga · Proti živým soupeřům" bude potřeba přeznačit, ať
-    neslibuje real-time živého člověka.
+  - **PREZENTACE — POSTAVENO 2026-09-04 (hráč schválil).** Mechanika je neviditelná; tohle
+    ji zviditelnilo, aby soupeř působil jako člověk:
+    - **Lidské jméno místo přezdívky bota.** `souperJmeno(nick, isBot, klic)` v online.js:
+    účet bota se NEPŘEJMENOVÁVÁ (`nick_lower` je UNIQUE — baking jmen do účtů by je zabral
+    reálným hráčům a byla by to jen zásoba 6), jméno je jen ZOBRAZENÍ ze zásoby 36, odvozené
+    z **id hry**: stabilní v rámci hry (na všech místech i při dotazování), různé hru od hry.
+    Aplikuje se u živého proužku soupeře, ve výsledcích a v hlášce „Nastoupil …". **Server
+    dál posílá `is_bot`** (rozbor/žebříček ho potřebují, `test:api` na něj spoléhá) — jen se
+    nekreslí. Štítek „(bot)" i slovo „bot" z UI pryč.
+    - **Zrušené fingované čekání.** `BOT_AFTER_MS` 15→**4 s** (a turnaj 8→4 s); klient na
+    `offer_bot` nasadí soupeře **AUTOMATICKY** (`vezmiSoupere`, guard `vzato` proti dvojímu
+    založení), místo aby čekal na klik. Reálný člověk se stihne spárovat v těch pár vteřinách
+    (`matched` má přednost). Tlačítko „Vezmi bota" → „Hrát hned" (přeskočí i ty 4 s).
+    - **Dlaždice přeznačena:** „Proti živým soupeřům. Zatím převážně z Česka." → **„Rychlé
+    souboje o rating. Zatím hlavně z Česka."** (drží českou sebeironii, neslibuje real-time
+    živého člověka). Uvítací texty lobby („Hraješ proti dospělým…") zůstávají — popisují
+    věkovou ligu, ne živost, a ghost přehrává reálné lidi daného pásma, takže platí.
+    - **Ověřeno v prohlížeči end-to-end:** „Hrát teď" naskočí rovnou do hry (žádné čekání),
+    výsledek ukázal soupeře **„Marek ★ 795"** — lidské jméno, žádné „(bot)". `souperJmeno`
+    ověřeno i jednotkově (36 jmen, stabilní na hru, jen na bota). `test:api` 138 beze změny.
   - **Testy:** [scripts/test-ghost.js](scripts/test-ghost.js) (`npm run test:ghost`, v CI)
     ověřuje přes FALEŠNÉ `env.DB` (žádná síť/D1), že se banka přehrává a při prázdné
     spadne na model — **ověřeno mutací** (vypnutí banky → test spadne). Plnění banky

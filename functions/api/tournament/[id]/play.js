@@ -4,7 +4,7 @@ import { pickQuestions, markSeen } from '../../../_lib/pool.js';
 import { tournamentStatus } from '../../../_lib/tournament.js';
 
 const STALE_MS = 2 * 60 * 1000;
-const BOT_AFTER_MS = 8 * 1000;   // kratší než u ranked duelu (sekce 5. návrhu): tady jde o tempo, ne o vyladěné párování
+const BOT_AFTER_MS = 4 * 1000;   // po 4 s nasadí klient soupeře sám — turnaj jede na tempo, žádné čekání na prázdnou frontu (2026-09-04)
 
 /**
  * POST /api/tournament/:id/play — nové kolo uvnitř turnaje.
