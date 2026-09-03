@@ -1500,7 +1500,7 @@
       <span class="qz-rank">${medalSvg(i)}</span>
       <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
       <span class="qz-standname">${esc(p.name)}</span>
-      <span class="qz-standscore">${p.score}</span></div>`).join("");
+      <span class="qz-standscore">${ICO_STAR} <b>${p.score}</b></span></div>`).join("");
     body.innerHTML=`<div class="qz-screen qz-end">
       <h2>${ICO_TROPHY} ${esc(winner.name)} vítězí!</h2>
       <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}"</div></div>
@@ -1519,7 +1519,7 @@
     say(vic); if(S.voice) speakTTS(vic);
     body.innerHTML = `<div class="qz-screen qz-end">
       <h2>Výprava dokončena!</h2>
-      <div class="qz-endscore">${S.school?"Třída získala":"Získal(a) jsi"} ${score} ${plur(score,"bod","body","bodů")}</div>
+      <div class="qz-endscore">${S.school?"Třída získala":"Získal(a) jsi"} ${ICO_STAR} <b>${score}</b></div>
       <p style="color:var(--muted)">Z ${S.order.length} otázek · Teoretické maximum ${max} bodů</p>
       <div class="qz-endrow">
         <button class="qz-go" id="qz-again">Hrát znovu ${handArrowSvg(false)}</button>

@@ -1150,7 +1150,7 @@ window.ZKOnline = (function () {
       body.innerHTML =
         '<div class="qz-screen qz-end zk-wrap">' +
         "<h2>" + esc(head) + "</h2>" +
-        '<div class="qz-endscore">' + g.me.score + " bodů</div>" +
+        '<div class="qz-endscore">' + starScore(g.me.score) + "</div>" +
         '<div class="zk-rowlist">' + rows + "</div>" +
         '<div class="qz-setnote">' + note + "</div>" +
         (review ? '<h3 style="margin-top:1.2rem">Rozbor</h3><div class="zk-rowlist">' + review + "</div>" : "") +
