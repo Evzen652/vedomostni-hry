@@ -27,6 +27,7 @@
     "db:sync": "node scripts/sync-d1-questions.js"
   },
   "devDependencies": {
+    "sharp": "^0.35.2",
     "wrangler": "^4.125.0"
   }
 }

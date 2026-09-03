@@ -2044,9 +2044,11 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   > **Opraveno 2026-08-24 — tenhle zápis je na třech místech nepravdivý, čti ho s tímhle vědomím:**
   > (1) **„dospělí = vše" už neplatí** — dospělí dostávají `!q.kids`, viz zápis z 2026-08-24 nahoře.
   > (2) **Čísla jsou dávno zastaralá** (12 dětských / 1190 puberťáckých / 1291 celkem); dnes je to
-  > 837 / 827 / 1969 z 2806. (3) **`admin.html` neexistuje a nikdy v repu nebyl** — ověřeno přes
-  > `git log --all -- admin.html` (žádný commit) i `git ls-files`. Popsaný filtr a zelený štítek
-  > v seznamu tedy nikdy nevznikly; štítek „pro děti" má od 2026-08-24 až hrací obrazovka v `quiz.js`.
+  > 837 / 827 / 1969 z 2806. (3) **OPRAVA 2026-09-03: `admin.html` V REPU JE** (verzovaný, 333 řádků,
+  > přibyl commitem `b6e4bb9`, odkazuje na něj `scripts/audit-questions.js`). Předchozí verze téhle
+  > poznámky tvrdila opak — mýlila se, nejspíš kvůli grepu ve špatné chvíli. Popsaný filtr a zelený
+  > štítek v `admin.html` tedy existují; štítek „pro děti" v HRACÍ obrazovce má `quiz.js` od 2026-08-24.
+  > `admin.html` se NENASAZUJE (není v `build-public.js`), je to jen vývojářský revizní nástroj.
 - **2026-08-14 — Pásmo „6–9 let" zrušeno; appka má jen pásma „děti" a „dospělí".** *(nahrazeno výše)*
   Věkové dlaždice 6–9 / 10–14 (`data-kmax`, `S.kidsMax`) jsou pryč z `renderStart` i ze stavu.
   Důvod: audit odhalil, že „difficulty 1" nikdy nebyl obsah psaný pro šestileté — jsou to všeobecné
