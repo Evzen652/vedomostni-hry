@@ -41,15 +41,23 @@ rušení hledání; kontrast `--muted` na AA, 8 `<label for>`, aria-label u pár
 klávesová dostupnost přepínače a položky rozehrané hry; README, `sharp` do devDeps,
 oprava tvrzení o `admin.html`; smazán prokazatelně mrtvý kód (3 JS + 12 CSS pravidel).
 
+**HOTOVO — dávka 4 (další bezpečné serverové body):** turnajové body se připisují jen
+dokud turnaj běží; `DELETE`/`POST /api/match` už neztratí spárovanou hru (helper
+`matchedResponse` + reakce klienta); denní pětka má deterministické id + `INSERT OR
+IGNORE`, takže souběh nezaloží dvě hry (ověřeno živě).
+
+**HOTOVO — obnova PINu (rychlá půlka):** produkce už neloguje převzímací odkaz s e-mailem
+a uživateli říká pravdu („obnova e-mailem zatím není v provozu"). Token se bez pošty
+vůbec negeneruje. **Plná půlka (skutečné doručování) pořád ČEKÁ na doménu** — viz níž.
+
 **ZBÝVÁ — vyžaduje TVOJE rozhodnutí (viz Fáze 5 níž):**
-1. **Obnova PINu** — v produkci nefunguje a loguje odkaz i s e-mailem. Potřebuje doménu.
+1. **Obnova PINu — doručování** — kód je hotový a bezpečný, ale poslat mail jde až
+   s vlastní doménou (SPF/DKIM) a `RESEND_API_KEY`. Do té doby obnova e-mailem neběží.
 2. **Veřejné odpovědi** — architektonické rozhodnutí (rozdělit fond, nebo odlehčit žebříčky).
 3. **Odveta a expirace** — mění zapsané pravidlo „bez kontumace".
 
 **ZBÝVÁ — bezpečné, ale zatím neuděláno (nižší priorita):**
-- Turnajové body se připisují i po konci turnaje.
 - `GET /api/game/:id` spadne na 500 u zmizelé otázky — `_middleware.js` to teď zabalí do JSON, ale hezčí by byl guard v handleru.
-- `DELETE /api/match` hlásí úspěch, i když neodešel; souběh v denní pětce může založit dvě hry.
 - Modal „Rozehrané hry" nemá past na fokus; aria-pressed u výběrových dlaždic.
 - Úklid 18 importních skriptů a 27 osiřelých obrázků.
 
