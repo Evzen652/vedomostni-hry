@@ -22,6 +22,39 @@ Co jsem neověřil, je označené. Co je jen teoretické, je označené taky.
 
 ---
 
+## STAV OPRAV (aktualizováno 2026-09-03)
+
+Audit vznikl jako čtení; pak jsem na pokyn opravil bezpečné věci ve třech vlnách.
+**Vše níže je nasazené na produkci a otestované.**
+
+**HOTOVO — dávka 1 (layout a moje chyby):** přetečení výběru pásma i témat
+(nedosažitelné volby), `user-scalable=no`, `qz-school` do online, `cc` do SELECTu, CI.
+
+**HOTOVO — dávka 2 (bezpečnost):** atomické rate limity (`limitUctu`/`limitIp`),
+limit na všech čtyřech cestách zakládajících hru, `TC_NAMES` proti prototypové díře,
+zámek přihlašování se prodlužuje místo nulování, pásmo turnajů z účtu, `_middleware.js`.
+
+**HOTOVO — dávka 3 (klient, přístupnost, dokumentace, úklid):**
+párty tlačítko „Konec"/„Další otázka", `flagStamp(null)` guard, `refreshMe` (5 míst),
+síťová chyba místo prázdna na 3 obrazovkách, pořadí guardu v `submit()`, závod při
+rušení hledání; kontrast `--muted` na AA, 8 `<label for>`, aria-label u párty jména,
+klávesová dostupnost přepínače a položky rozehrané hry; README, `sharp` do devDeps,
+oprava tvrzení o `admin.html`; smazán prokazatelně mrtvý kód (3 JS + 12 CSS pravidel).
+
+**ZBÝVÁ — vyžaduje TVOJE rozhodnutí (viz Fáze 5 níž):**
+1. **Obnova PINu** — v produkci nefunguje a loguje odkaz i s e-mailem. Potřebuje doménu.
+2. **Veřejné odpovědi** — architektonické rozhodnutí (rozdělit fond, nebo odlehčit žebříčky).
+3. **Odveta a expirace** — mění zapsané pravidlo „bez kontumace".
+
+**ZBÝVÁ — bezpečné, ale zatím neuděláno (nižší priorita):**
+- Turnajové body se připisují i po konci turnaje.
+- `GET /api/game/:id` spadne na 500 u zmizelé otázky — `_middleware.js` to teď zabalí do JSON, ale hezčí by byl guard v handleru.
+- `DELETE /api/match` hlásí úspěch, i když neodešel; souběh v denní pětce může založit dvě hry.
+- Modal „Rozehrané hry" nemá past na fokus; aria-pressed u výběrových dlaždic.
+- Úklid 18 importních skriptů a 27 osiřelých obrázků.
+
+---
+
 ## Souhrn nejzávažnějších nálezů
 
 | # | Nález | Závažnost | Stav |
