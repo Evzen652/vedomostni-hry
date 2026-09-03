@@ -21,6 +21,21 @@ export async function onRequestPost({ request, env }) {
   const nick = String(body.nick || '').trim();
   if (!nick) return fail('chybí přezdívka');
 
+  // Když pošta není nastavená (dnes produkce — chybí doména), obnova e-mailem NEJDE.
+  // Nesmíme dělat, jako by odkaz odešel: dřív se tvářilo „odkaz je na cestě", přitom
+  // se jen ZALOGOVAL do nasazení plný převzímací odkaz i s e-mailem (viz mail.js).
+  // Odsud se proto vůbec negeneruje token — není co poslat a není co logovat. Zpráva
+  // je pro všechny stejná (závisí jen na serverovém stavu, ne na konkrétním účtu),
+  // takže nic neprozrazuje. AŽ BUDE DOMÉNA a nastaví se RESEND_API_KEY/MAIL_FROM,
+  // tahle větev se přeskočí a poběží normální tok níž.
+  if (!env.RESEND_API_KEY || !env.MAIL_FROM) {
+    return json({
+      ok: true,
+      zprava: 'Obnova PINu e-mailem zatím není v provozu. Kdyby sis PIN nepamatoval, ' +
+              'napiš správci hry — nastaví ho ručně.',
+    });
+  }
+
   const odpoved = json({
     ok: true,
     zprava: 'Pokud profil existuje a má u sebe e-mail, odkaz je na cestě. ' +

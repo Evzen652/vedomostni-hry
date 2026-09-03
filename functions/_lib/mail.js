@@ -20,9 +20,12 @@ export async function sendPinReset(env, { email, nick, resetUrl }) {
     'Pokud jsi o obnovu nežádal, nic nedělej — PIN zůstane starý.\n';
 
   if (!env.RESEND_API_KEY || !env.MAIL_FROM) {
-    // Bez domény nemá smysl volat poskytovatele. Zaloguj a přiznej, že se nedoručilo.
-    console.log('[mail] NEODESLÁNO (chybí RESEND_API_KEY/MAIL_FROM). Odkaz pro ' +
-                email + ': ' + resetUrl);
+    // Bez domény nemá smysl volat poskytovatele. Do 2026-09-03 se sem logoval PLNÝ
+    // převzímací odkaz i s e-mailem — kdo měl přístup k logům nasazení, měl přístup
+    // k účtům. Teď se neloguje ani odkaz, ani adresa; jen fakt, že pošta chybí.
+    // (Tahle větev je navíc od téhož data skoro nedosažitelná: reset/index.js token
+    // vůbec negeneruje, když pošta není nastavená.)
+    console.log('[mail] NEODESLÁNO — pošta není nastavená (chybí RESEND_API_KEY/MAIL_FROM).');
     return { odeslano: false, duvod: 'neni-nastavena-posta' };
   }
 
