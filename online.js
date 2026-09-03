@@ -983,8 +983,34 @@ window.ZKOnline = (function () {
     window.ZKPicframe.globe(q.cc || String(q.id || "").split("-")[0]);
   }
 
+  /* Hlášky pro vypršení času.
+   *
+   * Server u neodpovězené otázky posílá `quip_wrong`, jenže ta je podle standardu
+   * (2026-08-15) psaná jako reakce na KONKRÉTNÍ špatný tip — u kondora tedy „Mimo
+   * tentokrát…", ačkoli hráč nic nevybral. Takový text mluví o něčem, co se nestalo.
+   * Offline hra tohle řeší odjakživa vlastním fondem, online ho jen nikdy nepoužil.
+   *
+   * Fond se NEKOPÍRUJE do kódu — bere se z `data/fondy.json`, tedy z téhož souboru,
+   * ze kterého ho čte quiz.js (`timeoutReveal`). Dvě kopie hlášek by se rozešly.
+   * Načítá se jednou a dopředu (při otázce), aby vykreslení odpovědi nečekalo na síť;
+   * dokud nedoběhne nebo když selže, platí `TIMEOUT_ZALOHA`. */
+  var timeoutQuips = null;
+  var TIMEOUT_ZALOHA = "Čas vypršel — tahle otázka ti ujela.";
+  function nactiTimeoutQuips() {
+    if (timeoutQuips) return;
+    fetch("data/fondy.json")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (f) { timeoutQuips = (f && f.timeout) || []; })
+      .catch(function () { timeoutQuips = []; });
+  }
+  function timeoutQuip() {
+    var f = timeoutQuips || [];
+    return f.length ? f[Math.floor(Math.random() * f.length)] : TIMEOUT_ZALOHA;
+  }
+
   function nextQuestion() {
     stopAll();
+    nactiTimeoutQuips();
     var g = S.game;
     if (g.n >= g.total) return showResult(g.id, g.mode, g.tournamentId);
 
@@ -1094,8 +1120,11 @@ window.ZKOnline = (function () {
       // by se ilustrace kreslila dvakrát vedle sebe. Odhaluje ji `ZKPicframe.reveal()`
       // o kus níž, pořád až po odpovědi: obrázek často odpověď prozradí (kapr ve vaně
       // napoví, kam se dává kapr).
+      // Při vypršení času nesmí jít do karty `quip_wrong` — ta reaguje na tip, který
+      // hráč neudělal (viz nactiTimeoutQuips výš).
+      var hlaska = pick === -1 ? timeoutQuip() : (a.quip || "");
       box.insertAdjacentHTML("beforeend",
-        '<div class="qz-quipbox"><div class="qz-hlaska">' + esc(a.quip || "") + "</div></div>" +
+        '<div class="qz-quipbox"><div class="qz-hlaska">' + esc(hlaska) + "</div></div>" +
         '<div class="qz-frow"><div class="qz-expl">' + esc(a.explanation || "") + "</div>" +
         '<div class="qz-fbtns">' + more +
         '<button class="qz-next" id="zk-next">' +

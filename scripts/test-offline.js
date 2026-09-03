@@ -408,6 +408,48 @@ const heroPopis = (/<span class="d">([^<]*)<\/span><\/span>/.exec(SRC_ONLINE) ||
 kontrola(heroPopis && !/\bbot/i.test(heroPopis),
   "dlaždice Hrát teď slibuje bota: „" + heroPopis + "\"");
 
+// ---- Vypršení času: hláška nesmí reagovat na tip, který hráč neudělal --------
+// Server posílá u neodpovězené otázky `quip_wrong`, jenže ta je psaná jako reakce na
+// KONKRÉTNÍ špatnou odpověď (standard 2026-08-15) — hráč, kterému vypršel čas, pak četl
+// „Mimo tentokrát…", ačkoli nic nevybral. Online proto musí u `pick === -1` sáhnout do
+// fondu `timeout`, ne do `a.quip`.
+sekce("Vypršení času: hláška nesmí mluvit o tipu, který nepadl");
+{
+  const vetev = /pick === -1 \? timeoutQuip\(\)/.test(SRC_ONLINE);
+  kontrola(vetev, "online.js při vypršení času nerozlišuje hlášku — do karty jde quip_wrong",
+    "u pick === -1 použij fond `timeout`, ne a.quip");
+
+  // Fond se NESMÍ zkopírovat do kódu: jeden zdroj je data/fondy.json, odkud ho bere
+  // i offline hra. Dvě kopie hlášek se rozejdou.
+  kontrola(/fetch\("data\/fondy\.json"\)/.test(SRC_ONLINE),
+    "online.js si fond hlášek nebere z data/fondy.json");
+
+  const fondy = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "fondy.json"), "utf8"));
+  kontrola(Array.isArray(fondy.timeout) && fondy.timeout.length >= 3,
+    "fond `timeout` ve fondy.json chybí nebo je příliš malý");
+
+  // Hlášky vidí i hráčka, takže minulý čas s rodem je zakázaný — stejné pravidlo,
+  // jaké si `_verdikt` v tomtéž souboru sám předepisuje. Klíče začínající `_` jsou
+  // poznámky pro autora, ne texty do appky, takže se přeskakují.
+  // Hledá se DVOJICE „jsi/ses/sis" + příčestí kdekoli ve VĚTĚ, ne vedle sebe. Sousedství
+  // je totiž to, co tady selhalo: „aspoň sis to pořádně rozmyslel" má mezi zájmenem
+  // a slovesem tři slova, takže kontrola postavená na `(sis)\s+\S*l` ho minula — a byla
+  // to zrovna ta věta, kvůli které vznikla. Ověřeno mutací (bez ní projde nepovšimnuta).
+  // Citlivost je schválně vysoká: dnes nemá jediná hláška ve fondech `jsi/ses/sis`, takže
+  // podmínka AND šum nedělá, a případný planý poplach vede leda k přečtení jedné věty.
+  const zajmeno = /\b(jsi|ses|sis)\b/i;
+  const pricesti = /\b\p{L}{3,}(?:l|la|lo|li)\b/iu;
+  for (const [klic, polozky] of Object.entries(fondy)) {
+    if (klic.startsWith("_") || !Array.isArray(polozky)) continue;
+    for (const v of polozky) {
+      const s = String(v);
+      const rod = zajmeno.test(s) && pricesti.exec(s);
+      kontrola(!rod, "fondy.json → " + klic + " má minulý čas s rodem: „" + s + "\"",
+        "appka nezná pohlaví hráče — přeformuluj do přítomného času");
+    }
+  }
+}
+
 // Projde zdroj a vrátí čísla řádků, kde `//` komentář začíná uvnitř backtick šablony.
 // Parita zpětných apostrofů: mimo šablonu se přeskočí řetězce '…'/"…" a řádkové komentáře,
 // aby backticky uvnitř nich paritu nerozhodily; ${…} paritu drží (zanořená šablona = +2).
