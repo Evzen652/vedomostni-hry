@@ -68,7 +68,11 @@
   function medalSvg(i){ const c=_MEDALCOL[i]; if(!c) return (i+1)+"."; return `<svg ${_sw} viewBox="0 0 24 24" fill="none"><path d="M8 3l3 6M16 3l-3 6" stroke="#e2725b" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="6.2" fill="${c}" stroke="#00000022" stroke-width="1"/><circle cx="12" cy="15" r="3" fill="#ffffff40"/></svg>`; }
   function handArrowSvg(flip){ return `<svg style="width:1.5em;height:.95em;vertical-align:-.15em;display:inline-block${flip?";transform:scaleX(-1)":""}" viewBox="0 0 40 24" fill="none"><path d="M2.5 13c9-3.4 21-2.6 29-2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M23.5 4.5c3.5 2.4 6.7 4.4 10 6.4-3.4 2.2-7 4-10.8 6.4" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
   function checkSvg(){ return `<svg viewBox="0 0 40 32" fill="none"><path d="M4 17c3 3.5 6 7.5 9.5 9.5C19.5 20 25 13.5 35 5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
-  function flagStamp(cc, cls){ return `<img class="${cls||"qz-stamp"}" src="assets/country-${cc}.jpg" alt="" onerror="this.style.display='none'">`; }
+  // Prázdné cc (Celý svět / víc zemí, kdy selectCountries nastaví cc=null) vrací prázdno,
+  // ne <img src="assets/country-null.jpg"> — to dělalo zbytečné 404 na školní i párty
+  // obrazovce. Guard je tady, ať se nemusí hlídat na sedmi volajících místech. Escape cc
+  // je jen pojistka: dnes je to vždy dvoupísmenný kód z řízené sady.
+  function flagStamp(cc, cls){ if(!cc) return ""; return `<img class="${cls||"qz-stamp"}" src="assets/country-${esc(cc)}.jpg" alt="" onerror="this.style.display='none'">`; }
 
   let data = null, csVoice = null;
   // Odkaz „zdroj" je schválně vypnutý všude (karta s odpovědí i překryv „Víc o tom").
@@ -1340,7 +1344,10 @@
       <div class="qz-expl">${esc(q.explanation||"")} ${(SHOW_SOURCE_LINK && q.source_url)?`<a href="${esc(q.source_url)}" target="_blank" rel="noopener">${ICO_LINK} zdroj</a>`:""}</div>
       <div class="qz-fbtns">
         ${(q.source_card||q.more_fact)?`<button class="qz-more" id="qz-more">${esc(moreLabel(q))} <span class="qz-more-ico">💡</span></button>`:""}
-        <button class="qz-next" id="qz-next">${S.idx+1<S.order.length?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
+        // „Konec" jen na SKUTEČNĚ poslední otázce. V párty se postup neřídí S.idx (ten se
+        // po sólu neresetuje a nese cizí hodnotu), ale poštem odehraných otázek qServed
+        // proti totalRounds×hráči — jinak párty ukazovala „Konec" pod každou odpovědí.
+        <button class="qz-next" id="qz-next">${(S.mode==="party" ? S.qServed+1<S.totalRounds*S.players.length : S.idx+1<S.order.length)?"Další otázka":"Konec"} ${handArrowSvg(false)}</button>
       </div>
     </div>`;
   }

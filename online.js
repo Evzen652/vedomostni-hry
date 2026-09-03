@@ -133,6 +133,19 @@ window.ZKOnline = (function () {
     if (poll) { clearInterval(poll); poll = null; }
   }
 
+  // Obnoví S.me z /me a teprve při úspěchu spustí pokračování. Do 2026-09-03 pět míst
+  // dělalo `S.me = m.body` bez kontroly stavu — při 5xx nebo výpadku je body null, S.me
+  // se přepsalo na null a renderLobby() spadl na S.me.ratings: mrtvá obrazovka bez hlášky.
+  // Když nemáme použitelný profil, jde se na přihlášení; jinak zůstane ten dosavadní.
+  function refreshMe(pokracuj) {
+    return req("/me").then(function (m) {
+      if (m.status === 200 && m.body) { S.me = m.body; return pokracuj(); }
+      if (m.status === 401) token.clear();
+      if (!S.me || !S.me.band) return renderAuth();
+      return renderLobby((m.body && m.body.error) || "Profil se nepodařilo obnovit, zkus to prosím znovu.");
+    });
+  }
+
   function errBox(msg) {
     return msg ? '<div class="qz-setnote" style="color:var(--bad,#cf5f4e)">' + esc(msg) + "</div>" : "";
   }
@@ -375,8 +388,7 @@ window.ZKOnline = (function () {
         if (isReg && band === "deti") {
           say("Tvoje jméno je " + r.body.nick + ". Zapamatuj si ho, budeš se jím přihlašovat.");
         }
-        req("/me").then(function (m) {
-          S.me = m.body;
+        refreshMe(function () {
           var duel = pendingDuel();
           if (duel) return joinFromLink(duel);
           renderLobby();
@@ -487,8 +499,7 @@ window.ZKOnline = (function () {
                                      : { email: body.querySelector("#zk-email").value || "", pin: pin };
       req("/auth/email", { method: metoda, body: telo }).then(function (r) {
         if (r.status !== 200) return renderAccount((r.body && r.body.error) || "Nepovedlo se.");
-        req("/me").then(function (mm) {
-          S.me = mm.body;
+        refreshMe(function () {
           // Bez potvrzení se po překreslení nezmění nic než maskovaná adresa v šedém
           // řádku — hráč pak neví, jestli uložení prošlo, nebo se nic nestalo.
           renderAccount("", metoda === "DELETE"
@@ -535,8 +546,7 @@ window.ZKOnline = (function () {
       bandSave.disabled = true;
       req("/auth/band", { method: "PUT", body: { band: novePasmo } }).then(function (r) {
         if (r.status !== 200) return renderAccount((r.body && r.body.error) || "Nepovedlo se.");
-        req("/me").then(function (mm) {
-          S.me = mm.body;
+        refreshMe(function () {
           renderAccount("", "Pásmo změněno na „" + (PASMA_T[novePasmo] || novePasmo) + "“."
             + (r.body && r.body.nick !== m.nick ? " Nová přezdívka: " + r.body.nick + "." : ""));
         });
@@ -667,7 +677,7 @@ window.ZKOnline = (function () {
         if (r.status !== 200) return renderResetPin(tok, (r.body && r.body.error) || "Nepovedlo se.");
         zahodOdkaz();
         token.set(r.body.token);
-        req("/me").then(function (m) { S.me = m.body; renderLobby(); });
+        refreshMe(renderLobby);
       });
     });
   }
@@ -771,6 +781,10 @@ window.ZKOnline = (function () {
     body.innerHTML =
       '<div class="qz-screen qz-setup zk-wrap">' +
       backBar("Zrušit hledání", function () {
+        // stopAll() PRVNÍ, ještě před DELETE — jinak dotazování na /match tiká dál a jeho
+        // odpověď může dorazit dřív než DELETE a vtáhnout hráče do hodnocené hry, kterou
+        // právě zrušil (okno stovek ms z dvousekundového cyklu).
+        stopAll();
         req("/match", { method: "DELETE" }).then(function () { renderLobby(); });
       }) +
       "<h2>Hledám soupeře</h2>" +
@@ -1000,6 +1014,13 @@ window.ZKOnline = (function () {
       S.game.score = a.score;
       S.game.n = a.answered;
 
+      // Guard MUSÍ být před say()/reveal()/vykreslením — hráč mohl mezitím odejít
+      // (křížek, zpět) a odpověď dorazila až potom. Dřív byl až za say(), takže na
+      // rozcestníku problesklo „Správně!" v bublině hostitele. Stav (skóre) se ale
+      // zapsat MÁ i tak, proto je guard až za jeho aktualizací.
+      var box = body.querySelector("#qz-box");
+      if (!box) return;
+
       var btns = body.querySelectorAll("#qz-box .qz-a");
       btns.forEach(function (b, i) {
         if (i === a.correct_index) b.classList.add("ok");
@@ -1011,10 +1032,6 @@ window.ZKOnline = (function () {
       var pill = body.querySelector("#zk-score");
       if (pill) pill.textContent = a.score + " b";
 
-      var box = body.querySelector("#qz-box");
-      // Hráč mezitím z obrazovky odešel (křížek, zpět) a odpověď dorazila až potom —
-      // není kam kreslit. Bez téhle pojistky to padalo na `insertAdjacentHTML` nad null.
-      if (!box) return;
       var more = a.more_fact
         ? '<button class="qz-more" id="zk-more">Více o ' + esc(a.about || "tom") +
           ' <span class="qz-more-ico">💡</span></button>'
@@ -1118,7 +1135,7 @@ window.ZKOnline = (function () {
         '<div class="qz-fbtns" style="margin-top:1.2rem">' + buttons + "</div></div>";
 
       on("zk-lobby", function () {
-        req("/me").then(function (m) { S.me = m.body; renderLobby(); });
+        refreshMe(renderLobby);
       });
       on("zk-rematch", function () {
         req("/game/" + id + "/rematch", { method: "POST" }).then(function (rr) {
@@ -1152,6 +1169,8 @@ window.ZKOnline = (function () {
     stopAll();
     say("Turnaj: kdo za daný čas nasbírá nejvíc bodů z jednotlivých kol.");
     req("/tournament?band=" + S.me.band).then(function (r) {
+      // Výpadek (status 0/5xx) se dřív tvářil jako „žádný turnaj neběží". msg feeduje errBox níž.
+      if (r.status !== 200) msg = (r.body && r.body.error) || "Turnaje se nepodařilo načíst, zkus to prosím znovu.";
       var list = (r.body && r.body.tournaments) || [];
       body.innerHTML =
         '<div class="qz-screen qz-setup zk-wrap">' +
@@ -1310,6 +1329,16 @@ window.ZKOnline = (function () {
     stopAll();
     say("Kdo je na tom nejlíp.");
     req("/leaderboard?band=" + S.me.band).then(function (r) {
+      // Výpadek (status 0/5xx) nemá body.closed ani rows — ukáže se chyba, ne prázdný žebříček.
+      if (r.status !== 200) {
+        body.innerHTML =
+          '<div class="qz-screen qz-end zk-wrap">' +
+          backBar("Zpět", renderLobby) +
+          "<h2>Žebříček</h2>" +
+          errBox((r.body && r.body.error) || "Žebříček se nepodařilo načíst, zkus to prosím znovu.") +
+          "</div>";
+        return;
+      }
       var rows = (r.body && r.body.rows) || [];
       // Dětské pásmo veřejný žebříček nemá (viz functions/api/leaderboard.js).
       // Prázdný seznam by vypadal jako porucha, tak se řekne rovnou proč — a hráč
@@ -1354,6 +1383,8 @@ window.ZKOnline = (function () {
     stopAll();
     say("Přátelé se přidávají na kód — nedají se vyhledat podle přezdívky.");
     req("/friends").then(function (r) {
+      // Výpadek se dřív tvářil jako prázdný seznam přátel. msg feeduje errBox níž.
+      if (r.status !== 200) msg = (r.body && r.body.error) || "Přátele se nepodařilo načíst, zkus to prosím znovu.";
       var d = r.body || {};
       body.innerHTML =
         '<div class="qz-screen qz-setup zk-wrap">' +
