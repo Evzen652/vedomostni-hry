@@ -56,8 +56,12 @@ vůbec negeneruje. **Plná půlka (skutečné doručování) pořád ČEKÁ na d
 2. **Veřejné odpovědi** — architektonické rozhodnutí (rozdělit fond, nebo odlehčit žebříčky).
 3. **Odveta a expirace** — mění zapsané pravidlo „bez kontumace".
 
+**HOTOVO — guard v `GET /api/game/:id`:** zmizelá otázka v `question_ids` (přejmenování/
+přeřazení id) už rozbor neshodí — ten jeden řádek se vynechá (`if(!q) return null` +
+`.filter(Boolean)`). Ověřeno reprodukcí proti lokální D1 (poškozený question_id: 500 →
+200, pole 10→9) i mutací, že bez guardu skutečně padá. Nasazeno na produkci (commit `74591c2`).
+
 **ZBÝVÁ — bezpečné, ale zatím neuděláno (nižší priorita):**
-- `GET /api/game/:id` spadne na 500 u zmizelé otázky — `_middleware.js` to teď zabalí do JSON, ale hezčí by byl guard v handleru.
 - Modal „Rozehrané hry" nemá past na fokus; aria-pressed u výběrových dlaždic.
 - Úklid 18 importních skriptů a 27 osiřelých obrázků.
 
