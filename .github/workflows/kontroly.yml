@@ -42,3 +42,8 @@ jobs:
       # Importuje functions/_lib/bot.js + game.js, takže je zároveň syntaktická kontrola.
       - name: Ghost soupeř
         run: npm run test:ghost
+
+      # Úklid nedohraných her. Hlídá, že se nevyrovnává hráč, který neodpověděl ani
+      # jednou — tudy se přes odvetu daly vyrábět hodnocené výhry. Taky falešné env.DB.
+      - name: Expirace her
+        run: npm run test:expire

@@ -534,7 +534,11 @@
   // tedy zustavala na shellu a online otazka se kreslila v promitacim pismu, protoze
   // online recykluje presne ty tridy, ktere .qz-school zvetsuje (.qz-q, .qz-a, .qz-meta,
   // .qz-picframe). Offline se to neprojevilo, protoze solo i party ji pri startu sundaji.
-  function close(){ stopTTS(); clearTimer(); releaseWake(); if(window.ZKOnline && window.ZKOnline.stopAll) window.ZKOnline.stopAll();
+  // `leaveQueue()` k tomu patří stejně nutně: kdo odešel z čekárny křížkem, zůstával
+  // do 2026-09-04 ve frontě na živý duel a mohl být spárován do HODNOCENÉ hry, o které
+  // se nikdy nedozvěděl. `stopAll()` zastaví jen časovače, řádek ve frontě neruší.
+  function close(){ stopTTS(); clearTimer(); releaseWake();
+    if(window.ZKOnline){ if(ZKOnline.stopAll) ZKOnline.stopAll(); if(ZKOnline.leaveQueue) ZKOnline.leaveQueue(); }
     document.getElementById("qz-shell").classList.remove("qz-school");
     renderModePick(); }
 

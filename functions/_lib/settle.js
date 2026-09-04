@@ -22,6 +22,11 @@ const EXPIRE_BATCH = 20;
  * bodů. Kdo odešel po třetí otázce, má jich míň a prohraje — ale je to důsledek
  * skóre, ne trestu za odchod. Kontumaci schválně NEZAVÁDÍM: je to herní rozhodnutí,
  * ne oprava chyby, a u appky pro děti by trestala i spadlé připojení.
+ *
+ * VÝJIMKA (2026-09-04): hra, ve které někdo neodpověděl ani jednou, se NEVYROVNÁVÁ —
+ * jen zavře. Nešlo o kontumaci, ale o zneužitelnost: odveta zapíše soupeře do hry bez
+ * jeho vědomí, takže se tudy daly vyrábět hodnocené výhry proti někomu, kdo se hry ani
+ * nedotkl. Viz komentář uvnitř.
  */
 export async function expireStaleGames(env) {
   const hranice = Date.now() - EXPIRE_MS;
@@ -32,6 +37,30 @@ export async function expireStaleGames(env) {
 
   const ted = Date.now();
   for (const { id } of stare) {
+    // Hráč, který neodpověděl ANI JEDNOU, se nevyrovnává — hra se jen zavře.
+    //
+    // Bez tohohle šlo vyrábět hodnocené výhry na počkání: `rematch.js` vloží soupeře
+    // do odvety bez jeho vědomí (a nijak mu to neoznámí — žádný odkaz, žádná
+    // notifikace), takže stačilo odehrát svou půlku a po 48 h sem hra dorazila,
+    // soupeři se dopsalo `finished_at` se skóre 0 a Glicko zapsalo výhru za partii,
+    // o které ten druhý nikdy nevěděl. Přes limit 30 her za hodinu to šlo opakovat.
+    //
+    // „Kdo odešel po třetí otázce, prohraje podle skóre" ZŮSTÁVÁ v platnosti
+    // (rozhodnutí o nezavádění kontumace výš) — ten hrál. Tohle je o někom, kdo hru
+    // ani neotevřel; u něj není co vyrovnávat, protože se žádná hra nekonala.
+    const hraci = (await env.DB.prepare(
+      `SELECT gp.user_id, gp.finished_at,
+              (SELECT COUNT(*) FROM game_answers ga
+                WHERE ga.game_id = gp.game_id AND ga.user_id = gp.user_id) AS odpovedi
+         FROM game_players gp WHERE gp.game_id = ?`).bind(id).all()).results;
+    const nikdyNezacal = hraci.some(h => !h.finished_at && !h.odpovedi);
+
+    if (nikdyNezacal) {
+      await env.DB.prepare("UPDATE games SET status = 'done' WHERE id = ? AND status = 'open'")
+        .bind(id).run();
+      continue;
+    }
+
     await env.DB.prepare(
       `UPDATE game_players SET finished_at = ? WHERE game_id = ? AND finished_at IS NULL`)
       .bind(ted, id).run();

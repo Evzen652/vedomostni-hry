@@ -168,6 +168,33 @@ window.ZKOnline = (function () {
     if (poll) { clearInterval(poll); poll = null; }
   }
 
+  /* Odchod z fronty na živý duel.
+   *
+   * `POST /match` zapíše hráče do fronty, ale `DELETE` posílalo do 2026-09-04 JEN tlačítko
+   * „Zrušit hledání". Kdo z čekárny odešel křížkem, zavřel záložku nebo obnovil stránku,
+   * zůstal ve frontě — mohl být spárován do hodnocené hry, o které se nikdy nedozvěděl.
+   * (Druhou polovinu téhle díry zavírá expireStaleGames: hra, ve které někdo neodpověděl
+   * ani jednou, se od téhož data nevyrovnává. Tohle brání tomu, aby vůbec vznikla.)
+   *
+   * `veFronte` schválně mimo S: `S` se přepisuje při refreshMe a tohle musí přežít.
+   */
+  var veFronte = false;
+  function opustFrontu(pouzitBeacon) {
+    if (!veFronte) return;
+    veFronte = false;
+    // Při zavírání stránky nemá běžný fetch šanci doběhnout — prohlížeč ho zruší.
+    // `keepalive` ho pustí i po zániku dokumentu; sendBeacon umí jen POST, takže se
+    // pro DELETE nehodí. Token jde hlavičkou stejně jako v req().
+    if (pouzitBeacon && typeof fetch === "function") {
+      try {
+        fetch(API + "/match", { method: "DELETE", keepalive: true,
+          headers: { Authorization: "Bearer " + (localStorage.getItem(TOKEN_KEY) || "") } });
+      } catch (e) { /* zavírá se stránka, není komu to hlásit */ }
+      return;
+    }
+    req("/match", { method: "DELETE" });
+  }
+
   // Obnoví S.me z /me a teprve při úspěchu spustí pokračování. Do 2026-09-03 pět míst
   // dělalo `S.me = m.body` bez kontroly stavu — při 5xx nebo výpadku je body null, S.me
   // se přepsalo na null a renderLobby() spadl na S.me.ratings: mrtvá obrazovka bez hlášky.
@@ -831,6 +858,7 @@ window.ZKOnline = (function () {
         // odpověď může dorazit dřív než DELETE a vtáhnout hráče do hodnocené hry, kterou
         // právě zrušil (okno stovek ms z dvousekundového cyklu).
         stopAll();
+        veFronte = false;               // DELETE se posílá rovnou tady, ne přes opustFrontu
         req("/match", { method: "DELETE" }).then(function (r) {
           // Souběh: zrušil jsem hledání v tutéž chvíli, kdy mě někdo spároval. Server to
           // pozná a vrátí matched — jdeme do té hry, ne do lobby, jinak by visela do
@@ -860,6 +888,7 @@ window.ZKOnline = (function () {
       if (vzato) return;
       vzato = true;
       stopAll();
+      veFronte = false;                 // DELETE níž je tentýž odchod, ať se neposílá dvakrát
       stat.textContent = "Soupeř nalezen!";
       req("/match", { method: "DELETE" }).then(createLink.bind(null, true));
     }
@@ -867,13 +896,15 @@ window.ZKOnline = (function () {
 
     req("/match", { method: "POST", body: { time_control: "blesk" } }).then(function (r) {
       if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Nepovedlo se.");
+      // Spárování frontu ruší samo (server řádek smaže), takže příznak jen u čekání.
       if (r.body.matched) return beginGame(r.body.game_id, "duel", r.body.opponent);
+      veFronte = true;
       var waited = 0;
       poll = setInterval(function () {
         waited += 2;
         req("/match").then(function (p) {
           if (!p.body) return;
-          if (p.body.matched) { stopAll(); return beginGame(p.body.game_id, "duel", p.body.opponent); }
+          if (p.body.matched) { stopAll(); veFronte = false; return beginGame(p.body.game_id, "duel", p.body.opponent); }
           if (p.body.offer_bot) return vezmiSoupere();
           stat.textContent = "Hledám soupeře… " + waited + " s";
         });
@@ -896,6 +927,16 @@ window.ZKOnline = (function () {
           beginGame(id, "odkaz", { nick: jmeno });
         });
       }
+      odkazNaHru(id, proKoho);
+    });
+  }
+
+  /**
+   * Obrazovka „pošli odkaz a hraj". Vytažená z createLink, protože ji potřebuje i ODVETA:
+   * ta soupeře sice zapíše do hry, ale nijak mu to neoznámí, takže bez odkazu by o ní
+   * nevěděl (2026-09-04). `proKoho` je jen jméno do textu — API přímé vyzvání neumí.
+   */
+  function odkazNaHru(id, proKoho, nadpis) {
       var url = location.origin + location.pathname + "?duel=" + id;
       say(proKoho ? "Pošli odkaz hráči " + proKoho + " a hraj." : "Pošli odkaz a hraj. Soupeř dostane stejné otázky.");
       // Pořadí akcí je schválně obrácené proti původnímu stavu: hrát se dá HNED,
@@ -903,7 +944,7 @@ window.ZKOnline = (function () {
       body.innerHTML =
         '<div class="qz-screen qz-setup zk-wrap">' +
         backBar("Zpět", renderLobby) +
-        "<h2>Souboj na odkaz</h2>" +
+        "<h2>" + esc(nadpis || "Souboj na odkaz") + "</h2>" +
         '<div class="qz-setcard zk-form">' +
           '<button class="qz-go" id="zk-play">Zahrát si svoji půlku ' + handArrowSvg(false) + '</button>' +
           '<div class="qz-setnote" style="margin:.7rem 0 .2rem">' +
@@ -922,7 +963,6 @@ window.ZKOnline = (function () {
       body.querySelector("#zk-play").addEventListener("click", function () {
         beginGame(id, "odkaz", null);
       });
-    });
   }
 
   function joinFromLink(id) {
@@ -1249,7 +1289,20 @@ window.ZKOnline = (function () {
       on("zk-rematch", function () {
         req("/game/" + id + "/rematch", { method: "POST" }).then(function (rr) {
           if (rr.status !== 201) return renderLobby((rr.body && rr.body.error) || "Odveta nešla založit.");
-          beginGame(rr.body.id, "odkaz", null);
+          // Proti botovi se hraje rovnou — ten už svou půlku odehrál při založení.
+          // Proti ČLOVĚKU se ale odveta chová jako souboj na odkaz, protože jím fakticky
+          // je: server soupeře zapíše do hry, ale nijak mu to neoznámí. Do 2026-09-04 se
+          // sem šlo rovnou do hry, takže hráč odehrál partii, o které soupeř nevěděl,
+          // a čekal na výsledek, který nemohl přijít. Odkaz je jediná cesta, jak se
+          // soupeř o odvetě dozví.
+          if (!rr.body.rated) return beginGame(rr.body.id, "odkaz", null);
+          // Jméno soupeře se odvozuje z id PŮVODNÍ hry (tam ho hráč viděl), ne z nové —
+          // jinak by mu odveta nabídla odkaz pro někoho, kdo se jmenuje jinak.
+          // Payload hráče nenese příznak „to jsem já", takže se soupeř pozná podle
+          // přezdívky (`nick_lower` je UNIQUE, takže je to spolehlivé).
+          var souper = g.players.filter(function (p) { return p.nick !== S.me.nick; })[0];
+          odkazNaHru(rr.body.id,
+            souper ? souperJmeno(souper.nick, souper.is_bot, id) : null, "Odveta");
         });
       });
       on("zk-tnext", function () { tournamentPlay(tournamentId); });
@@ -1551,5 +1604,9 @@ window.ZKOnline = (function () {
 
   // stopAll ven, aby ho mohlo zavolat „×" v quiz.js — jinak online časovače přežijí
   // odchod z rozehrané hry a přepíšou obrazovku, na kterou hráč mezitím odešel.
-  return { open: open, stopAll: stopAll };
+  // Zavření záložky, obnovení stránky, přepnutí na plochu na telefonu. `pagehide` je
+  // spolehlivější než `beforeunload` (ten na mobilech často neproběhne vůbec).
+  window.addEventListener("pagehide", function () { opustFrontu(true); });
+
+  return { open: open, stopAll: stopAll, leaveQueue: opustFrontu };
 })();

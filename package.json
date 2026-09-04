@@ -8,6 +8,7 @@
     "audit": "node scripts/audit-questions.js",
     "test:offline": "node scripts/test-offline.js",
     "test:ghost": "node scripts/test-ghost.js",
+    "test:expire": "node scripts/test-expire.js",
     "lint-irony": "node scripts/lint-irony-prompts.js",
     "gen-facts": "node scripts/gen-more-facts.js",
     "lint-facts": "node scripts/lint-more-facts.js",
