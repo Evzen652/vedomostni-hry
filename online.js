@@ -1107,7 +1107,14 @@ window.ZKOnline = (function () {
     });
   }
 
-  /** Průběh soupeře během živého duelu — obdoba šachových hodin. */
+  /* Průběh soupeře během živého duelu — obdoba šachových hodin.
+   *
+   * Do 2026-09-04 tu stálo jen „Marek: 3/10 · ★ 250". Čísla se sice hýbala, ale hráč
+   * z nich nepoznal, JESTLI SOUPEŘE PRÁVĚ DOSTAL — a bez toho to není souboj, jen dvě
+   * skóre vedle sebe. Nově proužek říká rozdíl slovy („Vedeš o 120") a hlásí, když
+   * soupeř na aktuální otázku už odpověděl, což je ten správný tlak na spěch.
+   * Poslední výsledek soupeře po otázkách drží `S.oppAnswers` pro kartu po odpovědi.
+   */
   function watchOpponent() {
     var el = body.querySelector("#zk-opp");
     if (!el) return;
@@ -1118,10 +1125,80 @@ window.ZKOnline = (function () {
         if (!el.isConnected) { if (poll) { clearInterval(poll); poll = null; } return; }
         var o = r.body && r.body.opponent;
         if (!o) return;
-        el.innerHTML = esc(souperJmeno(o.nick, o.is_bot, S.game.id)) + ": " + o.answered + "/" + S.game.total +
-                       (o.score != null ? " · " + starScore(o.score) : "");
+        S.oppAnswers = o.answers || [];
+        S.oppNick = souperJmeno(o.nick, o.is_bot, S.game.id);
+
+        var casti = [esc(S.oppNick)];
+        if (o.score != null && r.body.me) {
+          var rozdil = r.body.me.score - o.score;
+          casti.push(rozdil > 0 ? "vedeš o " + rozdil
+                   : rozdil < 0 ? "ztrácíš " + (-rozdil)
+                   : "je to nerozhodně");
+        } else {
+          casti.push(o.answered + "/" + S.game.total);
+        }
+        // Soupeř je s otázkou hotov dřív než já → ať to je vidět, je to půlka napětí.
+        if (!S.answered && o.answered > S.game.n) casti.push("už odpověděl");
+        else if (o.done) casti.push("dohrál");
+        el.innerHTML = casti.join(" · ");
       });
     }, 2000);
+  }
+
+  /* Srovnání s soupeřem na PRÁVĚ ZODPOVĚZENÉ otázce — jádro toho, aby duel byl souboj.
+   *
+   * Bez tohohle hráč viděl jen svoje „Správně!" a pak někde v rohu skóre, které se
+   * občas změnilo. Nepoznal, jestli soupeře na téhle otázce dostal, ani jestli byl
+   * rychlejší. Teď to stojí přímo pod odpovědí, tedy tam, kam se dívá.
+   *
+   * Data chodí z `/live` (viz watchOpponent) a server je posílá jen pro otázky, na které
+   * hráč UŽ ODPOVĚDĚL — dřív by to byla nápověda. Dotazování běží po 2 s, takže hned po
+   * odpovědi tam soupeřův výsledek být nemusí: pak se ukáže „ještě přemýšlí", což je taky
+   * informace. U souboje na odkaz (soupeř hraje jindy) se nekreslí nic.
+   */
+  function souboj(n, mojeSpravne, mojeMs) {
+    if (!S.game || (S.game.mode !== "duel" && S.game.mode !== "turnaj")) return "";
+    var jmeno = S.oppNick || "Soupeř";
+    var jeho = (S.oppAnswers || []).filter(function (x) { return x.n === n; })[0];
+
+    var mujRadek = '<span class="zk-duel-me">Ty: ' +
+      (mojeSpravne ? '<b class="ok">✓ správně</b>' : '<b class="bad">✗ vedle</b>') +
+      (mojeSpravne ? " za " + cas(mojeMs) : "") + "</span>";
+
+    var jehoRadek;
+    if (!jeho) {
+      jehoRadek = '<span class="zk-duel-opp">' + esc(jmeno) + ": <i>ještě přemýšlí…</i></span>";
+    } else {
+      // Rychlejší byl ten, kdo trefil dřív. Porovnává se jen když trefili OBA — jinak
+      // je „o 0,3 s rychlejší" u špatné odpovědi spíš výsměch než informace.
+      var kdoDrive = (mojeSpravne && jeho.correct)
+        ? (mojeMs < jeho.ms ? " <b class='ok'>— byl(a) jsi rychlejší</b>" : " <b class='bad'>— byl rychlejší</b>")
+        : "";
+      jehoRadek = '<span class="zk-duel-opp">' + esc(jmeno) + ": " +
+        (jeho.correct ? '<b class="ok">✓ správně</b> za ' + cas(jeho.ms) : '<b class="bad">✗ vedle</b>') +
+        kdoDrive + "</span>";
+    }
+    return '<div class="zk-duel">' + mujRadek + jehoRadek + "</div>";
+  }
+  function cas(ms) { return (Math.round(ms / 100) / 10).toFixed(1).replace(".", ",") + " s"; }
+
+  /* „Ještě přemýšlí…" se musí umět DOPLNIT. Dotazování běží po 2 s, takže hned po mé
+   * odpovědi soupeřův výsledek na téže otázce většinou ještě nemám — a karta se sama
+   * překreslí až u další otázky, takže by tam ta věta zůstala viset i potom, co soupeř
+   * dávno odpověděl. Doptáváme se po vteřině, nejvýš patnáctkrát (u blesku je limit
+   * 10 s, takže i nejpomalejší soupeř se do toho vejde). Slot `timer` je volný —
+   * časovač otázky skončil odesláním — a `stopAll()` ho uklidí při odchodu. */
+  function doplnSouboj(n, mojeSpravne, mojeMs) {
+    if (timer) { clearInterval(timer); timer = null; }
+    var pokusu = 0;
+    timer = setInterval(function () {
+      var box = body.querySelector(".zk-duel");
+      if (!box || !box.isConnected || ++pokusu > 15) { clearInterval(timer); timer = null; return; }
+      if ((S.oppAnswers || []).some(function (x) { return x.n === n; })) {
+        box.outerHTML = souboj(n, mojeSpravne, mojeMs);
+        clearInterval(timer); timer = null;
+      }
+    }, 1000);
   }
 
   // Odeslání odpovědi je nejdražší request celé hry: když selže, hráč přijde o rozehranou
@@ -1183,7 +1260,7 @@ window.ZKOnline = (function () {
       // Při vypršení času nesmí jít do karty `quip_wrong` — ta reaguje na tip, který
       // hráč neudělal (viz nactiTimeoutQuips výš).
       var hlaska = pick === -1 ? timeoutQuip() : (a.quip || "");
-      box.insertAdjacentHTML("beforeend",
+      box.insertAdjacentHTML("beforeend", souboj(q.n, a.correct, ms) +
         // `.qz-ht` jako offline, ne `.qz-hlaska`: ten zlatý box offline po odpovědi VĚDOMĚ
         // zrušil (komentář u .qz-quipbox v quiz.css — „moc oddělených boxů"), a `.qz-hlaska`
         // navíc nemá vlastní font-size, takže online hláška běžela na zděděných 16 px místo
@@ -1193,6 +1270,9 @@ window.ZKOnline = (function () {
         '<div class="qz-fbtns">' + more +
         '<button class="qz-next" id="zk-next">' +
           (a.done ? "Výsledek" : "Další otázka") + " " + handArrowSvg(false) + "</button></div></div>");
+
+      // Soupeřův výsledek na téhle otázce dorazí až dalším dotazem — doplň ho, až přijde.
+      if (S.game.mode === "duel" || S.game.mode === "turnaj") doplnSouboj(q.n, a.correct, ms);
 
       body.querySelector("#zk-next").addEventListener("click", function () {
         if (a.done) showResult(S.game.id, S.game.mode, S.game.tournamentId);

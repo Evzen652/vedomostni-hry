@@ -216,6 +216,18 @@
 .qz-a.locked.ok small { color: #2f6b45; }
 .qz-a.locked.bad small { color: #a8402f; }
 
+/* Souboj se soupeřem po odpovědi (online duel). Dva řádky pod sebou, ne box: hláška
+   a vysvětlení pod tím už boxy mají a tři rámečky nad sebou dělají z karty seznam
+   přihrádek (viz komentář u .qz-quipbox). Drží je pohromadě jen linka nahoře.
+   Jména jsou vlevo a výsledky za nimi, takže se dvojice čte jako výsledková listina. */
+.zk-duel { display: flex; flex-direction: column; gap: 3px; margin-top: 10px; padding-top: 9px;
+  border-top: 1.5px dashed #e0d2b4; font-size: 13.5px; font-family: 'Nunito', sans-serif; }
+.zk-duel b { font-weight: 800; }
+.zk-duel b.ok { color: #2f6b45; }     /* stejné odstíny jako štítky odpovědí — 4,5:1 na papíru */
+.zk-duel b.bad { color: #a8402f; }
+.zk-duel i { color: var(--muted); font-style: italic; }
+.zk-duel-opp { color: var(--ink); }
+
 /* hláška (hvězda revealu) */
 .qz-hlaska { background: linear-gradient(135deg, #fdf3d7, #fbe9d2); border: 2px solid var(--ochre); border-radius: 16px;
   padding: 14px 18px; box-shadow: 0 4px 0 #c78f35; }

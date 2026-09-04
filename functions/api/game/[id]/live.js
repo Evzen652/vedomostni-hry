@@ -26,11 +26,27 @@ export async function onRequestGet({ params, request, env }) {
   const opponent = players.find(p => p.user_id !== me.id);
   const allDone = players.length >= 2 && players.every(p => p.finished_at);
 
+  // Jak si soupeř vedl na otázkách, které už mám ZA SEBOU. Bez toho je duel jen dvě
+  // čísla v rohu — hráč nepozná, jestli soupeře na téhle otázce dostal, nebo naopak.
+  //
+  // Hranice `q_index < mine.answered` je to, co drží anti-cheat: dokud na otázku
+  // neodpovím, nevím o soupeřově tipu nic. Jakmile odpovím, správnou odpověď už mi
+  // vrátil /answer, takže „soupeř ji trefil" mi nedává žádnou výhodu — jen napětí.
+  let opponentAnswers = [];
+  if (opponent && mine.answered > 0) {
+    opponentAnswers = (await env.DB.prepare(
+      `SELECT q_index, correct, ms FROM game_answers
+        WHERE game_id = ? AND user_id = ? AND q_index < ?
+        ORDER BY q_index`).bind(params.id, opponent.user_id, mine.answered).all()).results
+      .map(r => ({ n: r.q_index, correct: !!r.correct, ms: r.ms }));
+  }
+
   return json({
     me: { score: mine.score, answered: mine.answered, done: !!mine.finished_at },
     opponent: opponent ? {
       nick: opponent.nick, is_bot: !!opponent.is_bot,
       answered: opponent.answered, done: !!opponent.finished_at,
+      answers: opponentAnswers,
       // Průběžné skóre jen u živého duelu, kde hrajete současně — tam z něj nejde
       // vytěžit výhoda, jen napětí. U souboje na odkaz soupeř většinou už dohrál,
       // takže by to prozradilo přesnou metu, na kterou stačí dojet.
