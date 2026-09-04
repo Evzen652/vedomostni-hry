@@ -651,8 +651,20 @@
     const openBtn = body.querySelector("#qz-resume-open");
     const modal = body.querySelector("#qz-resume-modal");
     if(openBtn && modal){
-      openBtn.addEventListener("click", () => { modal.hidden = false; });
-      modal.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", () => { modal.hidden = true; }));
+      // Pop-up se hlásí jako `aria-modal`, takže musí umět i to, co k tomu patří: přesunout
+      // fokus dovnitř (jinak odečítač i klávesnice zůstanou v pozadí) a zavřít se Escapem.
+      // Do 2026-09-04 uměl jen klik na křížek nebo pozadí.
+      const zavri = () => { modal.hidden = true; openBtn.focus({ preventScroll:true }); };
+      openBtn.addEventListener("click", () => {
+        modal.hidden = false;
+        // Dva dotazy, ne jeden se seznamem: `querySelector` vrací první shodu v pořadí DOMU,
+        // takže `.qz-resume-item, .qz-modal-close` padne na křížek (je v hlavičce, tedy výš).
+        // Hráč sem ale přišel pokračovat ve hře, ne zavírat.
+        const prvni = modal.querySelector(".qz-resume-item") || modal.querySelector(".qz-modal-close");
+        if(prvni) prvni.focus({ preventScroll:true });
+      });
+      modal.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", zavri));
+      modal.addEventListener("keydown", e => { if(e.key === "Escape"){ e.preventDefault(); zavri(); } });
     }
     body.querySelectorAll(".qz-resume-item").forEach(it => {
       it.addEventListener("click", e => {
@@ -1186,7 +1198,7 @@
     const recentNames = loadRecentNames();
     const prow = (p,i) => `<div class="qz-prow" data-i="${i}">
       <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
-      <input class="qz-pname-in" aria-label="Jméno hráče ${i+1}" placeholder="Jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off">
+      <input class="qz-pname-in" aria-label="Jméno hráče ${i+1}" placeholder="Jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off" maxlength="20">
       <span class="qz-bandtoggle">
         <button class="qz-bandbtn deti${p.band==="deti"?" on":""}" data-band="deti">Děti</button>
         <button class="qz-bandbtn starsi${p.band==="starsi"?" on":""}" data-band="starsi">Puberťák</button>

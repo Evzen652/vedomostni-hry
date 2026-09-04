@@ -272,7 +272,14 @@
 @keyframes qzGold { 0% { opacity: 0; } 20% { opacity: 1; } 100% { opacity: 0; } }
 
 /* karta „Víc o tom" */
-.qz-cardov { position: absolute; inset: 0; z-index: 12; background: rgba(61,50,41,.55); display: flex; align-items: center; justify-content: center; padding: 20px; }
+/* `fixed`, ne `absolute`: absolutní pozice se počítá vůči #qz-shell, a ten je při dlouhé
+   otázce vyšší než okno — karta se pak centrovala do jeho středu, tedy mimo obraz. Změřeno
+   na 375×500 po odpovědi a doscrollování: `top: -162px`, nadpis nad horní hranou.
+   V PÁRTY to funguje dál správně, i když se karta „přilepí" k shellu místo k oknu: párty
+   dává shellu `transform` (rotace ke hráči), a ten vytvoří containing block, takže se karta
+   otočí a naškáluje spolu se hrou — přesně jak to hráč u stolu potřebuje. Mimo párty je
+   transform prázdný (applyRotation), takže se karta drží okna. */
+.qz-cardov { position: fixed; inset: 0; z-index: 12; background: rgba(61,50,41,.55); display: flex; align-items: center; justify-content: center; padding: 20px; }
 .qz-cardbox { width: min(440px, 94%); max-height: 88%; overflow-y: auto; background: var(--paper2); border-radius: 18px; border: 2px solid #dccdb0;
   box-shadow: 0 20px 50px rgba(0,0,0,.4); }
 .qz-cardbody { padding: 16px 18px 18px; }
@@ -526,8 +533,12 @@
 .qz-pl { flex: 1; min-width: 120px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px; padding: 7px 10px;
   display: flex; align-items: center; gap: 8px; opacity: .72; box-shadow: 0 3px 0 #e3d5b8; cursor: pointer; font-family: inherit; color: var(--ink); }
 .qz-pl.active { opacity: 1; border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); }
-.qz-plmeta { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
-.qz-plname { font-size: 13px; font-weight: 650; }
+/* min-width: 0 je tu nutnost, ne kosmetika: flex položka se defaultně nesmrskne pod šířku
+   svého obsahu, takže dlouhé jméno hráče roztlačilo řádek a kreslilo se přes praporek
+   souseda (naměřeno na 375 px se šesti hráči: jméno končilo na x 245, sousedův praporek
+   začínal na 191). Vstup jména má nově maxlength=20, ale i tak musí řádek umět zalomit. */
+.qz-plmeta { display: flex; flex-direction: column; line-height: 1.1; text-align: left; min-width: 0; }
+.qz-plname { font-size: 13px; font-weight: 650; overflow-wrap: anywhere; }
 .qz-plturn { font-size: 10px; color: var(--coral); font-weight: 700; }
 .qz-plscore { margin-left: auto; font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; }
 .qz-subtop { display: flex; align-items: center; gap: 10px; padding: 8px 16px 0; position: relative; z-index: 3; }
@@ -553,7 +564,11 @@
 .qz-standrow { display: flex; align-items: center; gap: 10px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 12px; padding: 8px 12px; box-shadow: 0 3px 0 #e3d5b8; }
 .qz-standrow.win { border-color: var(--ochre); box-shadow: 0 3px 0 var(--ochre); }
 .qz-rank { font-size: 18px; width: 30px; text-align: center; }
-.qz-standname { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; }
+/* Totéž jako u .qz-plmeta: bez min-width:0 se jméno nesmrskne a odsune „✕ odebrat"
+   za okraj obrazovky — při 320 px a dvacetiznakové přezdívce (maxlength v online.js)
+   naměřeno 13 px mimo, a `.qz-shell{overflow:clip}` to ořízne. */
+.qz-standname { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650;
+  min-width: 0; overflow-wrap: anywhere; }
 .qz-standscore { margin-left: auto; font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 700; }
 
 /* režim Škola / projektor — velké písmo na plátno */

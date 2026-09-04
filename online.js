@@ -1057,6 +1057,12 @@ window.ZKOnline = (function () {
         });
       });
 
+      // Fokus na první odpověď, stejně jako offline (quiz.js). Obrazovka se překresluje
+      // přes innerHTML, takže fokus jinak spadne na začátek stránky a hráč se u KAŽDÉ
+      // otázky protabovává odshora. `preventScroll`, ať to nehne pohledem.
+      var prvni = body.querySelector("#qz-box .qz-a");
+      if (prvni) prvni.focus({ preventScroll: true });
+
       if (g.mode === "duel" || g.mode === "turnaj") watchOpponent();
     });
   }
@@ -1138,7 +1144,11 @@ window.ZKOnline = (function () {
       // hráč neudělal (viz nactiTimeoutQuips výš).
       var hlaska = pick === -1 ? timeoutQuip() : (a.quip || "");
       box.insertAdjacentHTML("beforeend",
-        '<div class="qz-quipbox"><div class="qz-hlaska">' + esc(hlaska) + "</div></div>" +
+        // `.qz-ht` jako offline, ne `.qz-hlaska`: ten zlatý box offline po odpovědi VĚDOMĚ
+        // zrušil (komentář u .qz-quipbox v quiz.css — „moc oddělených boxů"), a `.qz-hlaska`
+        // navíc nemá vlastní font-size, takže online hláška běžela na zděděných 16 px místo
+        // clamp(16px, 2.1vw, 20px). Uvozovky patří k citaci stejně jako offline.
+        '<div class="qz-quipbox"><div class="qz-ht">„' + esc(hlaska) + "\"</div></div>" +
         '<div class="qz-frow"><div class="qz-expl">' + esc(a.explanation || "") + "</div>" +
         '<div class="qz-fbtns">' + more +
         '<button class="qz-next" id="zk-next">' +
