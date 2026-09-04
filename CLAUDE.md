@@ -131,12 +131,26 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
       — dnes zanedbatelné, s růstem podílu denní pětky ale poroste.
     - **Appka stáhne při startu 4,71 MB otázek a do té doby je bílá stránka** (žádný
       spinner), i když hráč míří jen do Světové ligy.
-    - **Párty jméno hráče nemá `maxlength`** a dlouhé se kreslí přes sousední dlaždici;
-      v Přátelích vyjede „✕ odebrat" při 20znakové přezdívce mimo obrazovku.
-    - Drobnosti: `applyRotation()` není na `resize`/`orientationchange`; dotykové cíle
-      pod 44 px (`.qz-resume-del` 24×24, `.qz-crumb` výška 18); pop-up rozehraných her
-      nepřesouvá fokus a neumí Escape; online hláška má zlatý rámeček, který offline
-      záměrně zrušil.
+    - **Kontrast malých textů pod 4,5:1** — naměřeno u devíti míst (`.qz-tbadge` 2,21:1,
+      `.zk-statusico` 2,06:1, placeholder 2,30:1, `.qz-plturn` 2,97:1, `.qz-hl` 3,62:1,
+      `.zk-dangerlink` 3,74:1, `.qz-globecap` 4,11:1; bílá na korálu 3,04:1 projde jen
+      u 19px `.qz-go`, ne u `.qz-btn-start`). **Neopraveno schválně:** je to plošný zásah
+      do palety a vzhled je hráčovo území, ne moje. `--muted` je naopak v pořádku (5,02:1),
+      starší poznámka o 4,15:1 už neplatí.
+    - **Dotykové cíle pod 44 px** — `.qz-bandbtn` 40×25, `.qz-resume-del` 24×24 (9×),
+      `.qz-crumb` výška 18, `.qz-close` 34×34. Herní `.qz-a` je v pořádku (64/52 px).
+      Taky plošná změna rozměrů, tedy k rozhodnutí, ne k tichému provedení.
+    - **Dlaždice pásem nejsou na desktopu čtvercové** — `.qz-tiles:not(.qz-tiles-sec) .ic-img`
+      (specificita 0,3,0) přebíjí `aspect-ratio: 1/1` (0,2,0); na 1400 px naměřeno 115×134.
+    - **`applyRotation()` není navěšená na `resize`/`orientationchange`** — otočení tabletu
+      uprostřed párty nechá starý `scale` a obsah může zůstat useknutý do další otázky.
+      `resizeGlobe` i `positionPickHead` na `resize` navěšené jsou, takže je to opomenutí.
+    - ~~Párty jméno bez `maxlength`, „✕ odebrat" mimo obrazovku, karta „Více o…" mimo
+      obraz, pop-up bez fokusu a Escapu, online hláška se zlatým rámečkem, online bez
+      fokusu na první odpověď~~ — **VYŘEŠENO 2026-09-04** (tentýž den, druhá dávka):
+      `min-width: 0` + `overflow-wrap` u `.qz-plmeta` a `.qz-standname`, `maxlength=20`,
+      `.qz-cardov` na `position: fixed` (v párty se díky `transform` na shellu dál otáčí
+      se hrou), fokus a Escape v pop-upu, `.qz-ht` místo `.qz-hlaska` v online.
 
 - **2026-09-03 — „Ghost" soupeř: online hra přehrává SKUTEČNÉ lidské odpovědi z banky místo syntetického bota. MECHANIKA hotová a nasazená; PREZENTACE (jméno, přiznání bota) je vědomý další krok.**
   Řídká základna (~19 účtů) znamená, že dva lidé se ve stejném ~15s okně živého duelu
