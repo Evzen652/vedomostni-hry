@@ -65,6 +65,79 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-04 — Průřezový audit: fond raději PRÁZDNÝ než cizí, a dvě „připravené, ale nezapojené" věci v CSS.**
+  Čtyři paralelní audity (server, online klient, offline klient, CSS/přístupnost).
+  Nálezy jsem ověřoval sám — agenti hlásí i věci, které neplatí, a jeden dopad nadsadil
+  o tři řády (viz „ghost v blesku" mezi otevřenými).
+  - **`bandPool()` tiše podstrčil cizí fond a byl to nejzávažnější nález.** Každá větev
+    měla `if(f.length) pool=f`. `data.questions` je přitom fond UŽ ZÚŽENÝ výběrem země
+    a tématu, takže „pásmo tu nemá nic" je běžný stav: **203 z 495 kombinací země × sekce
+    nemá jedinou dětskou otázku.** Dítě, které si vybralo Rakousko → Sport, tedy dostalo
+    otázky psané pro dospělé a poznalo to leda podle hvězdiček — přesně to, co se
+    opravovalo 2026-08-24, jen jinými dveřmi. **Fond teď říká pravdu (klidně prázdno)**
+    a hráči se to řekne: start je zablokovaný a obrazovka vysvětlí proč
+    (`prazdnoNote` v sólu, `partyPrazdnoNote` u stolu) + pojistky ve `startGame`/`startParty`.
+  - **Dvě věci byly v CSS připravené, ale nikdo je nezapojil.** `.qz-a.locked` má
+    hotový vzhled odpovězené dlaždice včetně komentáře, proč vznikl — jenže tu třídu
+    **nikdo nenastavoval**, takže odznak zůstal tealovým kolečkem s písmenem a zelený
+    text v něm měl kontrast **1,45:1**. Správnost fakticky nesla jen barva rámečku.
+    Poučení: **existující CSS pravidlo není důkaz, že se používá** — grep na název třídy
+    v JS je otázka na dvě vteřiny.
+  - **`repeat(4, 1fr)` u odpovědí = táž past jako u dlaždic 2026-09-03**, jen na hlavní
+    obrazovce a tři měsíce nepovšimnutá. `1fr` je `minmax(auto,1fr)`, `auto` u dlouhého
+    slova je jeho šířka, `.qz-shell` má `overflow: clip` → text zmizí a nedá se
+    doscrollovat. Změřeno na 320 px: 8 px za okrajem, u nejdelšího slova ve fondu 167 px;
+    **559 z 3742 otázek** má v možnosti slovo ≥ 13 znaků. Nutné je `minmax(0,1fr)`
+    **i** `overflow-wrap: anywhere` — jedno bez druhého nestačí.
+  - **Karta „Více o…" visí v `#qz-shell` jako SOUROZENEC `#qz-body`**, takže ji překreslení
+    otázky neodstraní. Enter pod otevřenou kartou proto posunul hru a karta zůstala viset
+    nad novou otázkou (v párty se navíc posunul tah). Nově ji Enter/mezera/Escape zavře
+    a hrou nehne. **Escape neuměl do té doby nikdo.**
+  - **Server:** `matchedResponse` mazal řádek fronty dřív, než ověřil, že hra existuje —
+    kdo pollnul v okně mezi zamčením soupeře a `INSERT INTO games`, dostal `matched` na
+    neexistující hru, spadl na 404 a po 48 h mu naskočila **hodnocená prohra za partii,
+    kterou nikdy neviděl**. `match.js` byl navíc pátá cesta zakládající hru a jediná bez
+    rate limitu (počítá se až při skutečném založení, ne při zařazení do fronty).
+  - **`schema.sql` neměl `q_served` a `replay_answers` v seznamu `DROP TABLE`** — přesně
+    past, před kterou varuje komentář o tři řádky výš (`db:init` spadne v půlce).
+    Hlídá to nově `test:offline`.
+  - **`fondy.json` → `victory` nemělo pásmo `starsi`.** `resolveQuip` spadne přes
+    `?? Object.values(quip)[0]` na první klíč, tedy na DĚTSKÉ hlášky — puberťák po každé
+    výhře dostával „Zeměkoule se dnes točí jen pro tebe!". Test teď hlídá všechna tři
+    pásma u každého fondu členěného po pásmech.
+  - **PAST, na kterou jsem naletěl DVAKRÁT za jedno sezení: grep na zakázaný vzor chytá
+    vlastní komentáře.** Kontrola „není v migraci `DROP`?" vyhlásila poplach na větě
+    „žádný DROP ani DELETE", a kontrola nasazeného `bandPool` na komentáři, který ten
+    starý stav popisuje. **Před hledáním zakázaného vzoru odstraň komentáře.**
+  - **PAST, která mě stála práci: `git checkout -- soubor` na necommitnuté opravy.**
+    Chtěl jsem vrátit mutaci a smazal jsem tím celou dávku úprav v `quiz.js`. Na mutační
+    testy patří kopie souboru stranou, ne git.
+  - **Testy:** `test:offline` **792** (bylo 693), `test:api` 138, `test:ghost` 67.
+    Nové kontroly ověřeny mutací.
+  - **CO ZŮSTÁVÁ OTEVŘENÉ** (ověřeno, že platí, ale neopraveno):
+    - **Odveta umí vyrábět hodnocené výhry** — `rematch.js` vloží soupeře bez jeho vědomí
+      a po 48 h se hra vyrovná. Nese to CLAUDE.md jako otevřené od 2026-09-03.
+    - **Odchod z čekárny křížkem nechá hráče ve frontě** (`DELETE /match` posílá jen
+      tlačítko „Zrušit hledání"), takže může být spárován do hry, o které neví.
+    - **Hra proti botovi se založí i když server bota odmítl** (503/409 se nekontroluje).
+    - **`join.js` nekontroluje `game.status`** — do expirované hry na odkaz jde vstoupit,
+      odehrát ji a nedostat žádný rating.
+    - **`GET /api/tournament/:id` nemá kontrolu pásma** (listing ji od 2026-09-03 má).
+    - **Poškozený token vrací 500 místo 401**, takže si ho klient nesmaže a API zůstane
+      zablokované; `auth.js` volá `atob` bez `try`.
+    - **Ghost přehrává odpovědi napříč časovými kontrolami** — `replay_answers` neukládá
+      `limit_s`, takže odpověď z dvacetivteřinové hry se v blesku počítá jako vypršení.
+      **Agent to označil za „systematické", ale změřeno je to 2 z 3212 vzorků (0,06 %)**
+      — dnes zanedbatelné, s růstem podílu denní pětky ale poroste.
+    - **Appka stáhne při startu 4,71 MB otázek a do té doby je bílá stránka** (žádný
+      spinner), i když hráč míří jen do Světové ligy.
+    - **Párty jméno hráče nemá `maxlength`** a dlouhé se kreslí přes sousední dlaždici;
+      v Přátelích vyjede „✕ odebrat" při 20znakové přezdívce mimo obrazovku.
+    - Drobnosti: `applyRotation()` není na `resize`/`orientationchange`; dotykové cíle
+      pod 44 px (`.qz-resume-del` 24×24, `.qz-crumb` výška 18); pop-up rozehraných her
+      nepřesouvá fokus a neumí Escape; online hláška má zlatý rámeček, který offline
+      záměrně zrušil.
+
 - **2026-09-03 — „Ghost" soupeř: online hra přehrává SKUTEČNÉ lidské odpovědi z banky místo syntetického bota. MECHANIKA hotová a nasazená; PREZENTACE (jméno, přiznání bota) je vědomý další krok.**
   Řídká základna (~19 účtů) znamená, že dva lidé se ve stejném ~15s okně živého duelu
   prakticky nepotkají — „Hledám soupeře" skoro vždycky skončí botem a to čekání je
