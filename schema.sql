@@ -6,6 +6,11 @@
 -- s částí tabulek starých a částí nových.
 DROP TABLE IF EXISTS reg_attempts;
 DROP TABLE IF EXISTS pin_resets;
+-- q_served a replay_answers sem přibyly 2026-09-04, o dost později než tabulky samy:
+-- do té doby `db:init` nad existující databází spadl přesně tím způsobem, před kterým
+-- varuje odstavec výš. Hlídá to `test:offline` (sekce „schema.sql").
+DROP TABLE IF EXISTS q_served;
+DROP TABLE IF EXISTS replay_answers;
 DROP TABLE IF EXISTS game_answers;
 DROP TABLE IF EXISTS game_players;
 DROP TABLE IF EXISTS games;

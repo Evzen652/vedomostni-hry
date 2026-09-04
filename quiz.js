@@ -664,15 +664,22 @@
   function plur(n, one, few, many){ n=Math.abs(n); if(n===1) return one; if(n>=2&&n<=4) return few; return many; }
   function pointsLabel(n){ return `Získáváš ${n} ${plur(n,"bod","body","bodů")}`; }
   // pásmový fond otázek (kids -> q.kids, puberťáci -> !kids && difficulty<=2, dospělí -> !kids)
+  // POZOR: `data.questions` je fond UŽ ZÚŽENÝ výběrem země a tématu (applyPool), ne celý
+  // repertoár. Do 2026-09-04 měla každá větev `if(f.length) pool=f`, tedy tichý fallback
+  // na nefiltrovaný fond, když v tom výběru pásmo nemělo ani jednu otázku. To není vzácný
+  // případ: 203 z 495 kombinací země × sekce nemá jedinou dětskou otázku, takže dítě, které
+  // si vybralo třeba Rakousko → Sport, dostalo otázky psané pro dospělé — přesně to, co se
+  // opravovalo 2026-08-24, jen jinými dveřmi. Fond teď říká PRAVDU (klidně prázdno)
+  // a volající to musí ošetřit; hráči se to řekne na startovní obrazovce.
   function bandPool(band){
     let pool = data.questions;
-    if(band==="deti"){ const f=pool.filter(q=>q.kids); if(f.length) pool=f; }
-    else if(band==="starsi"){ const f=pool.filter(q=>!q.kids && (q.difficulty||1)<=2); if(f.length) pool=f; }
+    if(band==="deti"){ pool = pool.filter(q=>q.kids); }
+    else if(band==="starsi"){ pool = pool.filter(q=>!q.kids && (q.difficulty||1)<=2); }
     // Dospělí dřív brali „vše" — to dávalo smysl, dokud byly dětské otázky pilotní dávka
     // o dvanácti kusech. Po dorovnání dětské kategorie jich je 837 z 2806, takže by dospělému
     // vycházela skoro každá třetí otázka psaná pro osmileté. Catch-all větev (ne `band==="dospeli"`)
     // schválně: i při neznámé hodnotě pásma je správnější dětské otázky vynechat než přidat.
-    else { const f=pool.filter(q=>!q.kids); if(f.length) pool=f; }
+    else { pool = pool.filter(q=>!q.kids); }
     return pool;
   }
   // Body za správnou odpověď. V párty hraje každý ve svém pásmu (viz buildPartyOrder), takže
@@ -697,6 +704,27 @@
   // frontu na pásmo). Když je fond pásma menší než počet kol, fronta se domíchá znovu
   // a otázky se hráči zopakují. Sólo tenhle problém nemá — qLimitOptions nabídne jen počty,
   // které se do fondu vejdou. Párty má kola pevná (3/5/8), takže se to musí aspoň přiznat.
+  // Pásma hráčů u stolu, která v tomhle výběru nemají ANI JEDNU otázku. Dřív to
+  // `bandPool` zamaskoval fondem jiného pásma; bez toho by fronta obsahovala undefined
+  // a hra by spadla na první otázce, tak se start rovnou zablokuje.
+  function prazdnaPasmaParty(){
+    return [...new Set(S.players.map(p => p.band || "dospeli"))].filter(b => !bandPool(b).length);
+  }
+  function partyPrazdnoNote(){
+    const p = prazdnaPasmaParty();
+    if(!p.length) return "";
+    const jmena = p.map(b => `„${esc(BAND_NAMES[b]||b)}"`).join(" a ");
+    return `<div class="qz-setnote">Pro ${p.length===1?"pásmo":"pásma"} ${jmena} tu u téhle volby ` +
+           `${p.length===1?"není":"nejsou"} žádné otázky. Přidej téma nebo zemi, nebo hráči přepni pásmo.</div>`;
+  }
+  // Vybraná země a téma nemusí mít v hráčově pásmu ani jednu otázku (203 z 495 kombinací
+  // nemá dětskou). Dřív to appka schovala tím, že podstrčila fond jiného pásma; teď to
+  // řekne a nabídne cestu ven — start je do té doby zablokovaný (viz bandPool).
+  function prazdnoNote(total){
+    if(total || !S.bandTouched) return "";
+    return `<p class="qz-setnote">Pro pásmo „${esc(BAND_NAMES[S.band]||S.band)}" tu nemáme ani jednu otázku. ` +
+           `Zkus jiné pásmo, přidej téma nebo zemi — drobečky nahoře tě vezmou zpátky.</p>`;
+  }
   function partyOpakovaniNote(){
     if(!data || !data.questions) return "";
     const pasma = [...new Set(S.players.map(p => p.band || "dospeli"))];
@@ -1034,11 +1062,12 @@
       <!-- Shrnutí obou voleb, ne nadpis: proto stojí až pod nimi a naskočí, teprve když hráč
            vybral pásmo i počet. Dřív viselo nad dlaždicemi a hlásilo počet i velikost fondu
            dřív, než si hráč cokoli zvolil — fond navíc podle skryté výchozí hodnoty S.band. -->
-      ${(S.bandTouched && S.qLimitTouched) ? `<p class="qz-start-sum">Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>` : ""}
+      ${prazdnoNote(total)}
+      ${(S.bandTouched && S.qLimitTouched && total) ? `<p class="qz-start-sum">Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.</p>` : ""}
       <!-- Dokud hráč nesáhne na pásmo/počet, drží S.band a S.qLimit skryté výchozí hodnoty
            ("dospeli", poslední kotva) — bez disabled by klik rovnou na start tiše rozjel hru
            s výchozí volbou, aniž by hráč cokoli vybral. -->
-      <button class="qz-go" id="qz-start-go" style="margin-top:20px"${(S.bandTouched && S.qLimitTouched)?"":" disabled"}>Jdeme na to ${handArrowSvg(false)}</button>
+      <button class="qz-go" id="qz-start-go" style="margin-top:20px"${(S.bandTouched && S.qLimitTouched && total)?"":" disabled"}>Jdeme na to ${handArrowSvg(false)}</button>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderSectionPick);
     bindPickHead(steps);
@@ -1065,11 +1094,19 @@
       // shrnutí voleb
       const go = body.querySelector("#qz-start-go");
       let sum = body.querySelector(".qz-start-sum");
-      if(S.bandTouched && S.qLimitTouched){
+      if(S.bandTouched && S.qLimitTouched && total){
         if(!sum){ sum=document.createElement("p"); sum.className="qz-start-sum"; go.parentNode.insertBefore(sum, go); }
         sum.textContent = `Losujeme ${S.qLimit} ${plur(S.qLimit,"otázku","otázky","otázek")} z ${total}. Po nich budeš buď chytřejší, nebo aspoň skromnější.`;
       } else if(sum){ sum.remove(); }
-      go.disabled = !(S.bandTouched && S.qLimitTouched);
+      // Prázdný fond pásma — hláška musí naskakovat i tady, ne jen při prvním vykreslení:
+      // pásmo se přepíná právě přes refreshStart(), takže jinak by se ukázala jen náhodou.
+      let prazd = body.querySelector(".qz-setnote");
+      if(!total && S.bandTouched){
+        if(!prazd){ prazd=document.createElement("p"); prazd.className="qz-setnote"; go.parentNode.insertBefore(prazd, go); }
+        prazd.textContent = `Pro pásmo „${BAND_NAMES[S.band]||S.band}" tu nemáme ani jednu otázku. ` +
+                            `Zkus jiné pásmo, přidej téma nebo zemi — drobečky nahoře tě vezmou zpátky.`;
+      } else if(prazd){ prazd.remove(); }
+      go.disabled = !(S.bandTouched && S.qLimitTouched && total);
     }
     function bindQLimits(){
       body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => {
@@ -1099,6 +1136,9 @@
     S.turn=0;
     // tři pásma: „děti" jen vlastní fond (q.kids), „puberťáci" lehčí obecné trivia (difficulty ≤2), „dospělí" celé obecné trivia — všechna bez dětských otázek
     const pool = bandPool(S.band);
+    // Pojistka: tlačítko je při prázdném fondu disabled, ale sem se dá dojít i klávesnicí
+    // nebo obnovou stavu. Prázdný fond by znamenal hru bez jediné otázky.
+    if(!pool.length) return renderStart();
     const limit = Math.min(S.qLimit || pool.length, pool.length);
     S.order=shuffle(pool).slice(0, limit); S.idx=0; S.school=false; newSave();
     const shg=document.getElementById("qz-shell"); shg.classList.remove("qz-school"); shg.style.transform="";
@@ -1146,7 +1186,7 @@
           <div class="qz-bands">
             ${[["Rychlá",3],["Klasik",5],["Maraton",8]].map(([l,r])=>`<button class="qz-chip${S.totalRounds===r?" on":""}" data-rounds="${r}">${l} · ${r} kol</button>`).join("")}
           </div>
-          ${partyOpakovaniNote()}
+          ${partyPrazdnoNote()}${partyOpakovaniNote()}
         </div>
         <div class="qz-setcard">
           <h3><span class="n">3</span>Nastavení</h3>
@@ -1233,6 +1273,9 @@
     return out;
   }
   function startParty(){
+    // Pojistka proti frontě plné `undefined` — viz prazdnaPasmaParty(). Sem se dá dojít
+    // i z „Hrát znovu" na výsledkové obrazovce, kde žádná kontrola není.
+    if(prazdnaPasmaParty().length) return renderSetup();
     S.mode="party"; S.order=buildPartyOrder(); S.qServed=0; S.turn=0; S.round=1; S.manualRot=null; S.school=false; newSave();
     document.getElementById("qz-shell").classList.remove("qz-school");
     S.players.forEach(p=>{ p.score=0; });

@@ -408,6 +408,35 @@ const heroPopis = (/<span class="d">([^<]*)<\/span><\/span>/.exec(SRC_ONLINE) ||
 kontrola(heroPopis && !/\bbot/i.test(heroPopis),
   "dlaždice Hrát teď slibuje bota: „" + heroPopis + "\"");
 
+// ---- Pásmový fond nesmí tiše podstrčit cizí otázky ---------------------------
+// `data.questions` je fond UŽ ZÚŽENÝ výběrem země a tématu, takže „pásmo tu nemá nic"
+// je běžný stav (203 z 495 kombinací země × sekce nemá dětskou otázku). Do 2026-09-04
+// na to bandPool() reagoval fallbackem na nefiltrovaný fond — dítě dostalo dospělácké
+// otázky a poznalo to leda podle hvězdiček. Fond teď musí říkat pravdu.
+sekce("Pásmový fond: raději prázdno než cizí otázky");
+{
+  const src = SRC.slice(SRC.indexOf("function bandPool"), SRC.indexOf("function bandPool") + 900);
+  kontrola(!/if\s*\(\s*f\.length\s*\)\s*pool\s*=\s*f/.test(src),
+    "bandPool má zpátky tichý fallback `if(f.length) pool=f` — pásmo by dostalo cizí otázky");
+
+  // Hráč to musí uvidět: start se blokuje a obrazovka řekne proč.
+  kontrola(/function prazdnoNote/.test(SRC), "chybí prazdnoNote() — prázdný fond by se hráči neoznámil");
+  kontrola(/prazdnaPasmaParty/.test(SRC), "chybí prazdnaPasmaParty() — párty by postavila frontu z undefined");
+  kontrola(/S\.qLimitTouched\s*&&\s*total\s*\)\s*\?/.test(SRC) || /&&\s*total\)/.test(SRC),
+    "tlačítko startu se při prázdném fondu neblokuje");
+
+  // A kolik takových kombinací vlastně je — ať je vidět, že to není okrajový případ.
+  const kombi = {};
+  for (const q of otazky) {
+    const k = q.cc + "|" + (q.section || "");
+    (kombi[k] = kombi[k] || { kids: 0 }).kids += q.kids ? 1 : 0;
+  }
+  const bezDeti = Object.values(kombi).filter(x => !x.kids).length;
+  kontrola(bezDeti > 0, "kontrola je bezpředmětná — každá kombinace má dětskou otázku",
+    "pak se dá prazdnoNote zjednodušit");
+  console.log("  pozn.  kombinací země × sekce bez dětské otázky: " + bezDeti + " z " + Object.keys(kombi).length);
+}
+
 // ---- Vypršení času: hláška nesmí reagovat na tip, který hráč neudělal --------
 // Server posílá u neodpovězené otázky `quip_wrong`, jenže ta je psaná jako reakce na
 // KONKRÉTNÍ špatnou odpověď (standard 2026-08-15) — hráč, kterému vypršel čas, pak četl
@@ -427,6 +456,19 @@ sekce("Vypršení času: hláška nesmí mluvit o tipu, který nepadl");
   const fondy = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "fondy.json"), "utf8"));
   kontrola(Array.isArray(fondy.timeout) && fondy.timeout.length >= 3,
     "fond `timeout` ve fondy.json chybí nebo je příliš malý");
+
+  // Fond členěný po pásmech musí mít VŠECHNA TŘI. resolveQuip() jinak spadne přes
+  // `?? Object.values(quip)[0]` na první klíč, tedy na dětské hlášky — puberťák tak
+  // po každé výhře dostával „Zeměkoule se dnes točí jen pro tebe!", tón, kterému se
+  // jeho pásmo od 2026-08-15 vyhýbá.
+  for (const [klic, v] of Object.entries(fondy)) {
+    if (klic.startsWith("_") || Array.isArray(v) || typeof v !== "object") continue;
+    if (!v.deti && !v.dospeli) continue;             // není členěný po pásmech
+    for (const b of ["deti", "starsi", "dospeli"]) {
+      kontrola(v[b], "fondy.json → " + klic + " nemá pásmo „" + b + "\"",
+        "resolveQuip by spadl na cizí pásmo");
+    }
+  }
 
   // Hlášky vidí i hráčka, takže minulý čas s rodem je zakázaný — stejné pravidlo,
   // jaké si `_verdikt` v tomtéž souboru sám předepisuje. Klíče začínající `_` jsou

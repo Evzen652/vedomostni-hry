@@ -734,7 +734,12 @@ window.ZKOnline = (function () {
   function dailyHotovo() { try { return localStorage.getItem("zk_daily_done") === dnesniDatum(); } catch (e) { return false; } }
   function oznacDailyHotovo() { try { localStorage.setItem("zk_daily_done", dnesniDatum()); } catch (e) {} }
 
+  // `msg` je chybová hláška, ale renderLobby se na šesti místech předává rovnou jako
+  // klikací handler (`backBar("Zpět", renderLobby)`), takže dostane MouseEvent — a ten
+  // by se přes esc() vykreslil jako červené „[object MouseEvent]". Ostatní obrazovky
+  // (renderAccount, renderTournaments, renderFriends) ten guard mají; tady chyběl.
   function renderLobby(msg) {
+    if (typeof msg !== "string") msg = "";
     stopAll();
     var r = (S.me.ratings || []).filter(function (x) { return x.band === S.me.band; })[0];
     var v = vokativ(S.me.nick);
@@ -1178,7 +1183,10 @@ window.ZKOnline = (function () {
 
       var rows = g.players.map(function (p) {
         return '<div class="qz-standrow"><span class="qz-standname">' +
-          esc(souperJmeno(p.nick, p.is_bot, S.game.id)) + "</span>" +
+          // Klíč jména je `id` z parametru, NE S.game.id: sem se dá dojít i cestou, která
+          // beginGame() nikdy nevolala (denní pětka už odehraná → startDaily jde rovnou
+          // na showResult), a tam je S.game undefined → výjimka a mrtvé tlačítko.
+          esc(souperJmeno(p.nick, p.is_bot, id)) + "</span>" +
           '<span class="qz-standscore">' + (p.score == null ? "—" : starScore(p.score)) + "</span></div>";
       }).join("");
 

@@ -1,8 +1,12 @@
-import { BANDS, TIME_CONTROLS, TC_NAMES, shuffledOrder, json, fail, newId } from '../_lib/game.js';
+import { BANDS, TIME_CONTROLS, TC_NAMES, shuffledOrder, json, fail, newId, limitUctu } from '../_lib/game.js';
 import { currentUser } from '../_lib/auth.js';
 import { pickQuestions, markSeen } from '../_lib/pool.js';
 
 const STALE_MS = 2 * 60 * 1000;      // opuštěné položky ve frontě
+// Stejné okno i strop jako u ostatních cest zakládajících hru (game/index.js) — je to
+// táž věc, jen jinými dveřmi, takže sdílí i počítadlo `game_tries`.
+const MAX_GAMES = 30;
+const WINDOW_MS = 60 * 60 * 1000;
 // Po 4 s klient nasadí soupeře AUTOMATICKY (offer_bot). Řídká základna (~19 účtů) znamená,
 // že dva lidé se ve stejném okně skoro nepotkají, takže dlouhé čekání je jen divadlo —
 // reálný člověk se stihne spárovat v těch pár vteřinách (matched má přednost). Kdyby
@@ -20,14 +24,22 @@ const window = waitedMs => 100 + Math.floor(waitedMs / 1000) * 100;
  * expirace a připsala se jako prohra za partii, kterou hráč nikdy neviděl.
  */
 async function matchedResponse(env, meId, gameId) {
-  await env.DB.prepare('DELETE FROM queue WHERE user_id = ?').bind(meId).run();
+  // Hru načti DŘÍV, než smažeš řádek fronty. Ten, kdo páruje, si soupeře zamkne
+  // (`UPDATE queue SET game_id`) o kus dřív, než hru založí — mezi tím je okno, ve
+  // kterém `game_id` už svítí, ale `games` řádek ještě není. Kdyby se fronta smazala
+  // teď, čekající hráč by dostal `matched` na neexistující hru, spadl na 404 do lobby
+  // a hra by mu po 48 h naskočila jako HODNOCENÁ PROHRA za partii, kterou nikdy neviděl.
+  // Necháme ho tedy ve frontě a řekneme „ještě čekej" — pollne za 2 s znovu.
   const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(gameId).first();
+  if (!game) return json({ matched: false, waiting: true });
+
+  await env.DB.prepare('DELETE FROM queue WHERE user_id = ?').bind(meId).run();
   const opp = await env.DB.prepare(
     `SELECT u.nick, u.avatar FROM game_players gp JOIN users u ON u.id = gp.user_id
       WHERE gp.game_id = ? AND gp.user_id != ?`).bind(gameId, meId).first();
   return json({ matched: true, game_id: gameId, opponent: opp,
-                total: game ? JSON.parse(game.question_ids).length : null,
-                limit_s: game ? game.limit_s : null });
+                total: JSON.parse(game.question_ids).length,
+                limit_s: game.limit_s });
 }
 
 /**
@@ -82,6 +94,20 @@ export async function onRequestPost({ request, env }) {
       'UPDATE queue SET game_id = ? WHERE user_id = ? AND game_id IS NULL')
       .bind(gameId, c.user_id).run();
     if (!claim.meta.changes) continue;         // někdo byl rychlejší, zkus dalšího
+
+    // Limit na ZALOŽENÍ hry. Párování bylo pátá cesta, která vyrábí `games`, a jako
+    // jediná ho neměla — dvěma účty ve smyčce (A se zařadí, B ho spáruje) šlo vyrobit
+    // neomezeně her, hráčů a řádků `seen_questions`. Táž díra, jaká se 2026-09-03
+    // zavírala u turnajového bota.
+    // Počítá se AŽ TADY, ne na začátku handleru: samotné zařazení do fronty žádnou hru
+    // nezaloží, takže opakované „hledám → ruším → hledám" nesmí ukusovat z limitu.
+    // Když limit nepustí, claim se musí vrátit, jinak soupeř uvízne ve frontě s hrou,
+    // která nevznikne.
+    const pod = await limitUctu(env, me.id, 'game_tries', MAX_GAMES, WINDOW_MS);
+    if (!pod) {
+      await env.DB.prepare('UPDATE queue SET game_id = NULL WHERE user_id = ?').bind(c.user_id).run();
+      return fail('příliš mnoho založených her, zkus to za chvíli', 429);
+    }
 
     const ids = await pickQuestions(env, band, tc.count, [me.id, c.user_id]);
     if (ids.length < tc.count) {
