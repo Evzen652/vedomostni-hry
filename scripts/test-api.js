@@ -338,6 +338,17 @@ async function playAll(token, gameId, total, ms = 2000) {
   const q1 = await api('/api/match', { method: 'POST', token: C.token, body: { time_control: 'blesk' } });
   ok(q1.body.matched === false && q1.body.waiting === true, 'první hráč čeká ve frontě');
 
+  // Odchod z fronty musí řádek SKUTEČNĚ smazat. Klient ho do 2026-09-04 posílal jen
+  // z tlačítka „Zrušit hledání" — kdo odešel křížkem nebo zavřel záložku, zůstal ve
+  // frontě a mohl být spárován do hodnocené hry, o které se nikdy nedozvěděl. Klientskou
+  // část (close() + pagehide) tenhle test nepokrývá, ale tuhle serverovou ano.
+  const odchod = await api('/api/match', { method: 'DELETE', token: C.token });
+  ok(odchod.body.left === true && !odchod.body.matched, 'odchod z fronty projde');
+  const poOdchodu = await api('/api/match', { token: C.token });
+  ok(poOdchodu.body.matched !== true && poOdchodu.body.waiting !== true,
+     'po odchodu už hráč ve frontě není', JSON.stringify(poOdchodu.body));
+  await api('/api/match', { method: 'POST', token: C.token, body: { time_control: 'blesk' } });
+
   const q2 = await api('/api/match', { method: 'POST', token: D.token, body: { time_control: 'blesk' } });
   ok(q2.body.matched === true, 'druhý hráč se spáruje', JSON.stringify(q2.body));
   ok(!!q2.body.game_id, 'párování vrátí hru');

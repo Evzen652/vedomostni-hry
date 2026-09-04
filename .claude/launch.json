@@ -12,6 +12,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 8788
+    },
+    {
+      "name": "kviz-online-worktree",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["wrangler", "pages", "dev", ".", "--port", "8790"],
+      "port": 8790
     }
   ]
 }
