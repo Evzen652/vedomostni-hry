@@ -1108,10 +1108,16 @@ window.ZKOnline = (function () {
       var box = body.querySelector("#qz-box");
       if (!box) return;
 
+      // `locked` + štítek místo kolečka A–D: totéž, co dělá offline `answer()`. Bez toho
+      // zůstane odznak tealovým kolečkem a zelený/červený text v něm má kontrast 1,45:1,
+      // takže správnost nese fakticky jen barva rámečku (viz .qz-a.locked v quiz.css).
       var btns = body.querySelectorAll("#qz-box .qz-a");
       btns.forEach(function (b, i) {
-        if (i === a.correct_index) b.classList.add("ok");
-        else if (i === pick) b.classList.add("bad");
+        b.classList.add("locked");
+        var s = b.querySelector("small");
+        if (i === a.correct_index) { b.classList.add("ok"); if (s) s.textContent = "Správně"; }
+        else if (i === pick) { b.classList.add("bad"); if (s) s.textContent = "Tvůj tip"; }
+        else if (s) s.remove();
       });
       say(a.correct ? "Správně!" : pick === -1 ? "Čas vypršel." : "Tentokrát vedle.");
       // Ilustrace je odměna za odpověď, ne nápověda — do téhle chvíle je v rámu glóbus.

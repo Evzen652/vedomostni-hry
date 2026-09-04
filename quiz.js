@@ -324,7 +324,9 @@
     const correctIdx = (S.answers||[]).indexOf(q.answer);
     box.querySelectorAll(".qz-a").forEach(btn => {
       const i = +btn.dataset.i; btn.disabled = true;
-      if(i===correctIdx) btn.classList.add("ok");
+      btn.classList.add("locked");
+      if(i===correctIdx){ btn.classList.add("ok"); oznac(btn, "Správně"); }
+      else oznac(btn, "");
     });
     const allowSteal = S.mode==="party" && S.steal && S.players.length>1;
     box.insertAdjacentHTML("beforeend", `
@@ -545,10 +547,26 @@
     if(cil && (cil.tagName === "INPUT" || cil.tagName === "TEXTAREA" || cil.tagName === "SELECT" || cil.isContentEditable)) return;
     const box = body.querySelector("#qz-box"); if(!box) return;
 
+    // S otevřenou kartou „Více o…" nesmí klávesnice hýbat hrou pod ní: karta visí
+    // v #qz-shell jako SOUROZENEC #qz-body, takže ji překreslení otázky neodstraní —
+    // Enter by posunul na další otázku a karta by zůstala viset nad ní (v párty by se
+    // navíc posunul tah). Escape ji zavře, což do teď neuměl nikdo.
+    const karta = document.querySelector(".qz-cardov");
+    if(karta){
+      if(e.key === "Escape" || e.key === "Enter" || e.key === " "){ e.preventDefault(); karta.remove(); }
+      return;
+    }
+
     if(e.key === "Enter" || e.key === " "){
-      // dál se posouvá jen tehdy, když už je odpovězeno — jinak by mezera omylem přeskočila otázku
+      // Dál se posouvá jen tehdy, když už je odpovězeno — jinak by mezera omylem přeskočila
+      // otázku. `#zk-next` je tatáž akce v online hře; ta má vlastní id a vlastní funkci
+      // kreslení otázky, takže bez něj tu klávesnice fungovala jen do poloviny (odpovědět
+      // šlo, pokračovat ne). Že je online tlačítko na obrazovce, samo o sobě znamená,
+      // že je odpovězeno — S.answered patří offline stavu a online ho nenastavuje.
       const dal = body.querySelector("#qz-next");
+      const dalOnline = body.querySelector("#zk-next");
       if(dal && S.answered){ e.preventDefault(); dal.click(); }
+      else if(dalOnline){ e.preventDefault(); dalOnline.click(); }
       return;
     }
     let i = -1;
@@ -693,6 +711,14 @@
   // neplatí — všech 837 jich má difficulty 1, takže hvězdička u nich byla vždycky jedna a stejná:
   // nenesla žádnou informaci a přitom budila dojem známky na společné škále („★ lehká" u otázky,
   // která není lehká otázka pro dospělé, ale otázka z jiného fondu). Proto štítek místo hvězdiček.
+  // Odznak A–D u odpovězené dlaždice se mění na štítek („Správně" / „Tvůj tip"). U možností,
+  // které hráč nevybral, se odznak sundá úplně — písmeno po odpovědi nenese žádnou informaci
+  // a jen by dělalo šum. Text je statický, žádný vstup hráče, takže textContent stačí.
+  function oznac(btn, text){
+    const s = btn.querySelector("small");
+    if(!s) return;
+    if(text) s.textContent = text; else s.remove();
+  }
   function diffHtml(q){
     if(q.kids) return `<span class="qz-diff qz-diff-kids" title="Otázka z dětského fondu"><i>Pro děti</i></span>`;
     const d = q.difficulty||1, lbl = DIFF_LABEL[d]||"Těžká";
@@ -1456,8 +1482,14 @@
     const pickIdx = (S.answers||[]).indexOf(choice);
     box.querySelectorAll(".qz-a").forEach(btn => {
       const i = +btn.dataset.i; btn.disabled = true;
-      if(i===correctIdx) btn.classList.add("ok");
-      else if(i===pickIdx) btn.classList.add("bad");
+      // `locked` má v CSS připravený celý vzhled odpovězené dlaždice (štítek místo
+      // kolečka, žádné nadzvedávání při najetí), ale nikdo ji nenastavoval — takže
+      // odznak zůstal tealovým kolečkem a zelený/červený text v něm měl kontrast
+      // 1,45:1, tedy fakticky neviditelný. Správnost pak nesla JEN barva rámečku.
+      btn.classList.add("locked");
+      if(i===correctIdx){ btn.classList.add("ok"); oznac(btn, "Správně"); }
+      else if(i===pickIdx){ btn.classList.add("bad"); oznac(btn, "Tvůj tip"); }
+      else oznac(btn, "");
     });
     const allowSteal = S.mode==="party" && S.steal && !correct && !gold && S.players.length>1;
     box.insertAdjacentHTML("beforeend", `
