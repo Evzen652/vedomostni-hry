@@ -1082,6 +1082,10 @@ window.ZKOnline = (function () {
         "</div>" + picframe(q) + "</div>";
       zapojPicframe(q);
 
+      // Drží, jestli už mám tuhle otázku za sebou — proužek podle toho hlásí „už odpověděl"
+      // (má smysl jen dokud sám přemýšlím). Online nemá offline `S.answered`; na ten se tu
+      // omylem odkazoval kód pro proužek a fungoval jen náhodou, protože undefined je falsy.
+      S.odpovezeno = false;
       var started = Date.now();
       var bar = body.querySelector("#zk-timer").firstElementChild;
       var limitMs = q.limit_s * 1000;
@@ -1103,7 +1107,10 @@ window.ZKOnline = (function () {
       var prvni = body.querySelector("#qz-box .qz-a");
       if (prvni) prvni.focus({ preventScroll: true });
 
-      if (g.mode === "duel" || g.mode === "turnaj") watchOpponent();
+      // Sledovat soupeře i v „odkaz" hrách — sem patří „Hrát teď" s ghostem, tedy
+      // nejběžnější způsob, jak se do hry vůbec dostat. Bez toho se nestahovaly ani
+      // jeho výsledky po otázkách, takže souboj pod odpovědí neměl z čeho vzniknout.
+      if (g.mode === "duel" || g.mode === "turnaj" || g.mode === "odkaz") watchOpponent();
     });
   }
 
@@ -1135,11 +1142,15 @@ window.ZKOnline = (function () {
                    : rozdil < 0 ? "ztrácíš " + (-rozdil)
                    : "je to nerozhodně");
         } else {
+          // U souboje na odkaz (a tedy i u ghosta) server celkové skóre soupeře
+          // NEPOSÍLÁ — soupeř většinou už dohrál, takže by to byla přesná meta,
+          // na kterou stačí dojet. Postup po otázkách metu neprozradí.
           casti.push(o.answered + "/" + S.game.total);
         }
-        // Soupeř je s otázkou hotov dřív než já → ať to je vidět, je to půlka napětí.
-        if (!S.answered && o.answered > S.game.n) casti.push("už odpověděl");
-        else if (o.done) casti.push("dohrál");
+        // „Dohrál" má přednost: u ghosta odehraje bot celou hru hned při založení,
+        // takže by u KAŽDÉ otázky svítilo „už odpověděl" a byl by to jen šum.
+        if (o.done) casti.push("dohrál");
+        else if (!S.odpovezeno && o.answered > S.game.n) casti.push("už odpověděl");
         el.innerHTML = casti.join(" · ");
       });
     }, 2000);
@@ -1157,7 +1168,11 @@ window.ZKOnline = (function () {
    * informace. U souboje na odkaz (soupeř hraje jindy) se nekreslí nic.
    */
   function souboj(n, mojeSpravne, mojeMs) {
-    if (!S.game || (S.game.mode !== "duel" && S.game.mode !== "turnaj")) return "";
+    // Všechny režimy se soupeřem, tedy VČETNĚ „odkaz" — pod ten spadá i „Hrát teď"
+    // s ghost soupeřem, což je nejčastější cesta do hry vůbec. Podmínka tu nejdřív
+    // byla jen na duel/turnaj a souboj se proto v praxi skoro nikdy nevykreslil.
+    // Sólo a denní pětka soupeře nemají, tam se nekreslí nic.
+    if (!S.game || (S.game.mode !== "duel" && S.game.mode !== "turnaj" && S.game.mode !== "odkaz")) return "";
     var jmeno = S.oppNick || "Soupeř";
     var jeho = (S.oppAnswers || []).filter(function (x) { return x.n === n; })[0];
 
@@ -1214,6 +1229,7 @@ window.ZKOnline = (function () {
 
   function submit(q, pick, ms) {
     if (timer) { clearInterval(timer); timer = null; }
+    S.odpovezeno = true;
     body.querySelectorAll("#qz-box .qz-a").forEach(function (b) { b.disabled = true; });
 
     odesliOdpoved("/game/" + S.game.id + "/answer", {
@@ -1272,7 +1288,9 @@ window.ZKOnline = (function () {
           (a.done ? "Výsledek" : "Další otázka") + " " + handArrowSvg(false) + "</button></div></div>");
 
       // Soupeřův výsledek na téhle otázce dorazí až dalším dotazem — doplň ho, až přijde.
-      if (S.game.mode === "duel" || S.game.mode === "turnaj") doplnSouboj(q.n, a.correct, ms);
+      if (S.game.mode === "duel" || S.game.mode === "turnaj" || S.game.mode === "odkaz") {
+        doplnSouboj(q.n, a.correct, ms);
+      }
 
       body.querySelector("#zk-next").addEventListener("click", function () {
         if (a.done) showResult(S.game.id, S.game.mode, S.game.tournamentId);

@@ -10,6 +10,7 @@
     "test:ghost": "node scripts/test-ghost.js",
     "test:expire": "node scripts/test-expire.js",
     "test:duel": "node scripts/test-duel.js",
+    "test:duel:ghost": "node scripts/test-duel-ghost.js",
     "lint-irony": "node scripts/lint-irony-prompts.js",
     "gen-facts": "node scripts/gen-more-facts.js",
     "lint-facts": "node scripts/lint-more-facts.js",
