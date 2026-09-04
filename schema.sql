@@ -38,6 +38,11 @@ CREATE TABLE questions (
   explanation  TEXT,
   more_fact    TEXT,
   about        TEXT,
+  -- Obtížnost ★–★★★ ze zdrojových dat. Není to totéž co `band`: ten se z ní jen odvozuje
+  -- (kids → deti, ≤2 → starsi, jinak dospeli), takže zpětně z pásma nejde zjistit —
+  -- „starsi" míchá 1 a 2 dohromady. Online hra ji potřebuje na štítek u otázky.
+  -- `kids` se neukládá, je to totéž co band='deti'.
+  difficulty   INTEGER NOT NULL DEFAULT 1,
   -- Rating otázky se dopočítá z úspěšnosti hráčů; `difficulty` k tomu použít nejde,
   -- uvnitř pásma má nulový rozptyl. Do prvního sběru dat sedí na středu.
   rating       REAL    NOT NULL DEFAULT 1500,

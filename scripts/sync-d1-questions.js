@@ -47,8 +47,12 @@ const OUT = path.join(__dirname, "..", "data", "d1-sync.sql");
 const band = q => (q.kids === true ? "deti" : (q.difficulty || 1) <= 2 ? "starsi" : "dospeli");
 const sql = v => (v == null ? "NULL" : "'" + String(v).replace(/'/g, "''") + "'");
 
+// `difficulty` se sem doplnilo 2026-09-04 (migrace 2026-09-04-difficulty.sql). Do té doby
+// se ze zdrojových dat jen odvodil `band` a hodnota se zahodila, takže online hra neměla
+// z čeho vykreslit štítek ★–★★★, který offline část kreslí odjakživa.
+// `kids` se NEUKLÁDÁ schválně — je to totéž co band='deti' (viz `band()` výš).
 const SLOUPCE = ["id", "cc", "country", "band", "section", "question", "answer", "distractors",
-  "quip_correct", "quip_wrong", "explanation", "more_fact", "about"];
+  "quip_correct", "quip_wrong", "explanation", "more_fact", "about", "difficulty"];
 
 const rows = [];
 const videna = new Set();
@@ -63,7 +67,7 @@ for (const file of fs.readdirSync(SRC).filter(f => f.endsWith(".json"))) {
       sql(q.id), sql(q.cc), sql(q.country), sql(band(q)), sql(q.section),
       sql(q.question), sql(q.answer), sql(JSON.stringify(q.distractors)),
       sql(q.quip_correct), sql(q.quip_wrong), sql(q.explanation),
-      sql(q.more_fact), sql(q.about),
+      sql(q.more_fact), sql(q.about), Number(q.difficulty) || 1,
     ].join(",") + ")");
   }
 }

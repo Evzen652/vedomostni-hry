@@ -1,0 +1,11 @@
+-- Obtížnost otázky (★–★★★) do D1. Do teď se `difficulty` ze zdrojových dat při
+-- seedování jen odvodil `band` a samotná hodnota se ZAHODILA — proto online hra
+-- štítek obtížnosti nikdy nekreslila, zatímco offline (čte JSON napřímo) ano.
+--
+-- `kids` se ukládat NEMUSÍ: je to totéž co `band = 'deti'` (viz odvození v
+-- scripts/seed-d1.js). Jeden sloupec stačí, druhý by byl duplicitní pravda.
+--
+-- Přírůstkové, žádný DROP ani DELETE — bezpečné na produkci s reálnými účty.
+-- Hodnoty doplní `npm run db:sync` (ON CONFLICT DO UPDATE, rating otázek zůstane).
+-- Default 1 platí jen do syncu, ať sloupec nemá NULL u starých řádků.
+ALTER TABLE questions ADD COLUMN difficulty INTEGER NOT NULL DEFAULT 1;

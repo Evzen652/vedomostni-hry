@@ -1025,7 +1025,10 @@ window.ZKOnline = (function () {
           '<span class="qz-meta zk-oppbar" id="zk-opp"></span></div>' +
         '<div class="qz-box" id="qz-box">' +
           '<div class="qz-timerbar" id="zk-timer"><div style="width:100%"></div></div>' +
-          '<div class="qz-meta">' + esc(q.country) + " · " + esc(q.section) + "</div>" +
+          // Štítek obtížnosti kreslí quiz.js (`window.ZKDiff`) — SVG hvězd se nekopíruje.
+          // Když modul chybí, řádek prostě zůstane bez štítku, stejně jako do teď.
+          '<div class="qz-meta">' + esc(q.country) + " · " + esc(q.section) +
+            (window.ZKDiff ? " · " + window.ZKDiff.html(q) : "") + "</div>" +
           '<div class="qz-q">' + esc(q.question) + "</div>" +
           '<div class="qz-ans">' + q.options.map(function (o, i) {
             return '<button class="qz-a" data-i="' + i + '">' + esc(o) +

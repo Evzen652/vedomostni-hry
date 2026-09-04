@@ -30,12 +30,12 @@ for (const file of fs.readdirSync(SRC).filter(f => f.endsWith('.json'))) {
       sql(q.id), sql(q.cc), sql(q.country), sql(band(q)), sql(q.section),
       sql(q.question), sql(q.answer), sql(JSON.stringify(q.distractors)),
       sql(q.quip_correct), sql(q.quip_wrong), sql(q.explanation),
-      sql(q.more_fact), sql(q.about),
+      sql(q.more_fact), sql(q.about), Number(q.difficulty) || 1,
     ].join(',') + ')');
   }
 }
 
-const COLS = '(id,cc,country,band,section,question,answer,distractors,quip_correct,quip_wrong,explanation,more_fact,about)';
+const COLS = '(id,cc,country,band,section,question,answer,distractors,quip_correct,quip_wrong,explanation,more_fact,about,difficulty)';
 // Dávka po 25: otázka i s hláškami a vysvětlením má ~1–2 kB, takže při 200 řádcích
 // jeden příkaz přeteče limit D1 na délku SQL (SQLITE_TOOBIG).
 const BATCH = 25;

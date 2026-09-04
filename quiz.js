@@ -1249,7 +1249,7 @@
       <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
     </div>`;
   }
-  // JEDINÉ okno z quiz.js ven. Online režim si otázku kreslí vlastní funkcí
+  // Okno z quiz.js ven. Online režim si otázku kreslí vlastní funkcí
   // (`nextQuestion()` v online.js) a do téhle closure nevidí, takže mu rám s glóbem
   // i ilustrací chyběl úplně — a mřížka `.qz-play` mu přitom sloupec rezervovala.
   // Vystavují se SCHVÁLNĚ jen čtyři funkce kolem `.qz-picframe`, ne vnitřek hry:
@@ -1261,6 +1261,13 @@
     globe: cc => mountGlobeMedal(cc),  // připne sdílený 3D glóbus a natočí na zemi
     reveal: () => revealPic(),         // po odpovědi odhalí ilustraci
   };
+
+  // Druhé okno, SCHVÁLNĚ oddělené od ZKPicframe — se rámem u otázky nemá nic společného
+  // a schovat štítek pod jméno „Picframe" by příští session mátlo. Důvod, proč vůbec
+  // je: `diffHtml` potřebuje `ICO_STAR_DIFF` (SVG hvězdy) a `DIFF_LABEL`, takže kopie
+  // v online.js by znamenala třetí opis SVG v repu — a ten se dřív nebo později rozejde.
+  // Online bere `{difficulty, kids}` ze serveru, offline z JSONu; tvar je stejný.
+  window.ZKDiff = { html: q => diffHtml(q) };
 
   // odhalení fotky u odpovědi — fotka je odměna, ať ji není nutné hledat scrollem
   function revealPic(){

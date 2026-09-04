@@ -27,7 +27,7 @@ export async function onRequestGet({ params, request, env }) {
   if (!Number.isInteger(n) || n < 0 || n >= ids.length) return fail('otázka mimo rozsah', 404);
 
   const q = await env.DB
-    .prepare('SELECT id, cc, question, answer, distractors, country, section FROM questions WHERE id = ?')
+    .prepare('SELECT id, cc, question, answer, distractors, country, section, band, difficulty FROM questions WHERE id = ?')
     .bind(ids[n]).first();
   if (!q) return fail('otázka nenalezena', 404);
 
@@ -62,6 +62,12 @@ export async function onRequestGet({ params, request, env }) {
     cc: q.cc,
     country: q.country,
     section: q.section,
+    // Štítek obtížnosti u otázky (★–★★★, u dětského fondu „Pro děti"). Offline ho kreslí
+    // odjakživa z JSONu; online ho neměl z čeho vzít, protože `difficulty` se do D1
+    // do 2026-09-04 vůbec neukládalo. `kids` je odvozené, ne uložené — je to band='deti'.
+    // Obtížnost nic neprozrazuje: je to hodnocení otázky, ne nápověda ke správné možnosti.
+    difficulty: q.difficulty || 1,
+    kids: q.band === 'deti',
     question: q.question,
     options: optionsFor(q, orders[n]),
   });
