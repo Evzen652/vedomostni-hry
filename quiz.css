@@ -355,6 +355,18 @@
   .qz-picframe.revealed { height: auto; aspect-ratio: 16 / 9; }
 }
 
+/* Otázka BEZ vlastní ilustrace (většina fondu) — rám pak nese jen vlajku a název země,
+   takže poměr 16/9 z něj dělá poloprázdnou plochu: na tabletu 768×432 px, tedy skoro
+   půl obrazovky pod otázkou. Fallback je v odhaleném stavu vodorovný řádek (viz
+   `.qz-picframe.revealed .qz-pic-fallback`), na který stačí ~116 px.
+   JEN pod 900 px: na desktopu se rám záměrně táhne podle výšky textové karty
+   (`align-self: stretch`, rozhodnutí 2026-09-01) a pevná výška by to lícování rozbila.
+   Platí až po odhalení — do té doby je v rámu glóbus a ten velký být má.
+   Dvě třídy navíc dávají vyšší specificitu než pravidla výš, takže na pořadí nezáleží. */
+@media (max-width: 899px) {
+  .qz-picframe.revealed.qz-pic-broken { aspect-ratio: auto; height: 116px; }
+}
+
 /* výběr režimu / setup párty / scoreboard / steal / ceremoniál */
 .qz-shell { transition: transform .4s ease; }
 .qz-modepick { align-items: center; justify-content: center; text-align: center; gap: 18px; padding: 44px 24px; }
@@ -393,14 +405,6 @@
   .qz-tiles:not(.qz-tiles-sec) { max-width: 940px; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile { padding: 22px 14px 18px; }
   .qz-tiles:not(.qz-tiles-sec) .ic-img { width: 128px; height: 128px; border-radius: 18px; }
-  /* Dlaždice pásem („Kdo dnes hraje?") jsou jen tři a jsou to portréty lidí — tam na
-     obrázku záleží víc než u zemí, kde nese informaci hlavně vlajka. Dostávají proto
-     větší rozměr. Stojí to ZÁMĚRNĚ hned za obecným pravidlem výš, ne o dvě stě řádků
-     níž: obě mají prakticky stejnou specificitu, takže rozhoduje pořadí, a takhle je
-     ta souvislost vidět na jednom místě. `height: auto` + `aspect-ratio` místo pevné
-     výšky drží čtverec i na telefonu, kde `max-width: 100%` obrázek srazí (jinak z něj
-     je vysoký obdélník — naměřeno 78×166). */
-  .qz-tiles .qz-tile[data-band] .ic-img { width: 160px; height: auto; aspect-ratio: 1 / 1; }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-t { font-size: 18px; }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-sub { font-size: 13px; }
 }
@@ -481,6 +485,17 @@
 .qz-tile-ic { font-size: 40px; line-height: 1; margin-bottom: 2px; display: flex; align-items: center; justify-content: center; position: relative; }
 .qz-tile-ic .ic-img { width: 92px; max-width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; display: block;
   border: 3px solid #fffdf6; outline: 2px solid #e3d5b8; box-shadow: 0 6px 16px rgba(120,90,50,.24); transition: transform .12s; }
+/* Dlaždice pásem („Kdo dnes hraje?") jsou jen tři a jsou to portréty lidí — tam na
+   obrázku záleží víc než u zemí, kde nese informaci hlavně vlajka. Dostávají proto
+   větší rozměr než obecných 128 px.
+   MIMO media query schválně: uvnitř bloku od 1000 px zůstávaly dlaždice na tabletu
+   drobné (naměřeno 98 px při 768 px šířky), i když tam místa je dost. Takhle platí
+   všude a `max-width: 100%` je na úzkém telefonu sám srazí (78 px).
+   `height: auto` + `aspect-ratio` místo pevné výšky drží čtverec i po tom sražení —
+   s pevnou výškou z něj byl na telefonu vysoký obdélník (naměřeno 78×166).
+   Stojí AŽ ZA blokem s obecným pravidlem: obě mají skoro stejnou specificitu, takže
+   o vítězi rozhoduje pořadí v souboru. */
+.qz-tiles .qz-tile[data-band] .ic-img { width: 160px; height: auto; aspect-ratio: 1 / 1; }
 .qz-tile:hover:not(.soon) .ic-img { transform: translateY(-2px) rotate(-1.5deg); }
 .qz-tile-ic .ic-fb { font-size: 40px; line-height: 1; align-items: center; justify-content: center; }
 .qz-tile-t { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; }
