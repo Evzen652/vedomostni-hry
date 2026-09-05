@@ -120,6 +120,39 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
       38 px a dvouřádkové 56 a pod sebou je ten rozdíl vidět jako nedodělek (vedle sebe ho
       zakrývalo `align-items: stretch`). Nově 52/53. **Platí i na mobilu** (bylo 44 vs 62)
       a shodou okolností tím padá jeden bod z otevřeného seznamu dotykových cílů pod 44 px.
+    - **TŘETÍ KOLO — MEZERY. Hráč: „tlačítka v pravé části příliš blízko u sebe. radil ses
+      s designerem?" Neradil (dělal jsem to sám), tak jsem se zeptal dvou nezávislých.**
+      Rytmus je nově **22 / 8 / 16 / 28** (obrázek → body → vysvětlení → „Více o…" →
+      „Další otázka"), na mobilu o stupeň sražený **18 / 6 / 14 / 24**.
+      - **Chyba nebyla velikost mezery, ale to, KDE vedla hranice skupiny.** Bylo 20 nad
+        dvojicí a 10 uvnitř ní, tedy přesně obráceně: „Více o…" patří k vysvětlení téhle
+        otázky, „Další otázka" je odchod ze scény. Hranice musí vést MEZI tlačítky.
+      - **Číslo 28 je spočítané, ne odhad:** mezera pod ~25 % výšky prvku slepí dva bloky
+        v jeden. Při tlačítku 52 px bylo 10 px **0,19×** a oko to četlo jako segmentovaný
+        přepínač. Na oddělení je potřeba aspoň 0,5×. **Nediferencovaný přírůstek 10 → 14
+        je past** — jen povolí, skupinu nevytvoří.
+      - **8 px u zisku bodů je schválně nejtěsnější místo na obrazovce:** „Získáváš 100
+        bodů" je nadpis výsledku a vysvětlení jeho tělo; při 12 px z nich byly dvě
+        nesouvisející věty.
+      - **PAST V KASKÁDĚ, na kterou jsem naletěl podruhé za den:** odsazení uvnitř bloku
+        musí dělat výhradně `gap`, protože vlastní marginy dětí se k němu PŘIČÍTAJÍ.
+        `.qz-play .qz-expl { margin-top: 6px }` stojí v souboru později a má stejnou
+        specificitu jako reset, takže z 8px mezery udělalo 14 (a na mobilu 6 + 10 = 16).
+        Řeší to reset o třech třídách.
+      - **Designeři se rozešli v jedné věci a rozhodovalo se podle měření:** druhý chtěl
+        mezi tlačítky jen 12 px a místo toho blok tlačítek ukotvit ke dnu karty
+        (`margin-top: auto` se stropem 64 px). To je ale ta samá cesta, ze které vzešla
+        naměřená **díra 214 px**, jen zastropovaná — a mezera by se navíc měnila otázku
+        od otázky. Zvolen stabilní rytmus, který vypadá stejně u každé otázky.
+      - **NEDĚLAT:** oddělovací linku mezi tlačítka (vektorová čára v malované appce je
+        cizí těleso — stejný důvod jako plochá šipka), obal/podklad kolem pravého sloupce
+        (čtyři rámečky nad sebou a próza v boxu), nafukovat tlačítka na 64–80 px, ani
+        zaplňovat prázdno pod sloupcem dekorací. Prázdný papír je tu legitimní materiál.
+      - **NABÍDNUTO A ZATÍM NEPROVEDENO** (je to zásah nad rámec zadání, čeká na hráče):
+        sekundární tlačítko odlehčit (44 px, rámeček 1 px, bez stínu, jemný tyrkysový
+        podklad), aby dvojice nevypadala jako dvě stejně důležité věci; a vytáhnout
+        kurzívní hlášku z karty ven pod ni, čímž by vznikla symetrie typu „vlevo objekt
+        + volný text, vpravo objekt + volný text".
     - **Vysvětlení 12,5 → 13,5 px a řádkování 1,55.** V kartě bylo v rámečku mezi sousedy,
       teď stojí samo na papíře vedle silného obrázku a plného tlačítka — drobné šedé písmo
       by v té pozici zmizelo. Rytmus mezer je odstupňovaný podle pravidla o VZDUŠNOSTI:

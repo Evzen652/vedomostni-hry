@@ -140,9 +140,14 @@
    S obalem lícuje s kartou obal a rám si uvnitř bere zbytek výšky — glóbus tak
    před odpovědí zůstává velký a po odpovědi se rám stáhne na obrázek. */
 .qz-picwrap { display: flex; flex-direction: column; }
-/* `:empty` je nutné: před odpovědí je blok prázdný a jeho margin by rám o 10 px zkrátil. */
-.qz-extra { margin: 10px 16px 0; }
+/* `:empty` je nutné: před odpovědí je blok prázdný a jeho margin by rám o 18 px zkrátil. */
+.qz-extra { margin: 18px 16px 0; display: flex; flex-direction: column; gap: 6px; }
 .qz-extra:empty { display: none; }
+/* Odsazení uvnitř bloku řeší `gap`, ne vlastní marginy dětí — jinak se obojí sčítá
+   (naměřeno na mobilu: 6px gap + 10px margin vysvětlení = 16 místo zamýšlených 6)
+   a odstupňovaný rytmus se rozpadne zpátky na jednu velikost mezery. */
+.qz-extra > .qz-hl.points,
+.qz-extra .qz-expl { margin: 0; }
 
 /* glóbus (malovaný 3D) — u otázky hrdina uprostřed, u odpovědi malý odznak v rohu */
 .qz-globewrap { position: absolute; inset: 0; z-index: 6; display: flex;
@@ -357,6 +362,11 @@
      (dřív 62 vs 44 px, protože delší popisek se láme na dva řádky) — a 52 px je zároveň
      nad 44px minimem pro dotyk, takže se tím spraví i velikost cíle. */
   .qz-fbtns > button { flex: 0 1 auto; width: 100%; min-height: 52px; line-height: 1.25; }
+  /* Týž rytmus jako na desktopu, jen o stupeň sražený (18 / 6 / 14 / 24). Mezera mezi
+     tlačítky tu byla dokonce 8 px, tedy 0,15 násobku jejich výšky — pod sebou se to
+     četlo jako jeden dvouřádkový přepínač, ne jako dvě různá rozhodnutí. */
+  .qz-extra .qz-frow { gap: 14px; }
+  .qz-extra .qz-fbtns { gap: 24px; }
 }
 
 /* MEZERA MEZI MOBILEM A DESKTOPEM (768–899 px, typicky tablet na výšku) — objevena
@@ -780,16 +790,24 @@
      jako něco, co s textem nad ní nesouvisí. Blízkost je tu důležitější než zarovnaná
      spodní hrana: obrázek, vysvětlení a akce jsou jedna věc (výsledek odpovědi), tak
      drží pohromadě. Prázdno pod nimi je vzduch, ne díra — nic se v něm nekreslí. */
-  .qz-picwrap > .qz-extra { margin: 14px 0 0; flex: 0 0 auto; display: flex; flex-direction: column; gap: 12px; }
-  /* Odsazení řeší `gap` obalu, ne vlastní marginy dětí — jinak se sčítají a rytmus
-     (uvnitř skupiny míň, mezi skupinami víc) se rozpadne na jednu velikost mezery. */
-  .qz-picwrap > .qz-extra > .qz-hl.points,
+  /* RYTMUS MEZER 22 / 8 / 16 / 28 (obrázek → body → vysvětlení → „Více o…" → „Další
+     otázka"). Čtyři jasně rozlišitelné stupně, ne jedna hodnota na všechno; sousední
+     hodnoty se neperou (past „24 vs 18 žádnou skupinu netvoří").
+     22 px pod obrázkem je opticky ~18 — bílý rám a stín přidávají ke spodní hraně vzduch.
+     8 px u bodů je schválně NEJTĚSNĚJŠÍ: „Získáváš 100 bodů" je nadpis výsledku
+     a vysvětlení jeho tělo, při 12 px z nich byly dvě nesouvisející věty. */
+  .qz-picwrap > .qz-extra { margin: 22px 0 0; flex: 0 0 auto; display: flex; flex-direction: column; gap: 8px; }
+  /* Musí to být tři třídy: `.qz-play .qz-expl { margin-top: 6px }` o kus níž má stejnou
+     specificitu jako základní reset marginů a stojí v souboru později, takže by vyhrálo
+     a k 8px mezeře by se přičetlo 6 (naměřeno 14 místo 8). */
   .qz-picwrap > .qz-extra .qz-expl { margin: 0; }
   /* Vysvětlení je teď v širokém sloupci pod obrázkem, ne v úzké kartě — 1,55 místo
      výchozího řádkování, jinak je to při 12,5 px a 405 px šířky zeď (viz VZDUŠNOST). */
   .qz-picwrap > .qz-extra .qz-expl { line-height: 1.55; }
-  /* 20 px mezi textem a akcemi je hranice dvou skupin, proto víc než 12 px uvnitř bloku. */
-  .qz-picwrap > .qz-extra .qz-frow { gap: 20px; flex: 0 0 auto; }
+  /* 16 px váže „Více o…" k vysvětlení: čteš text → nabídne se ti víc téhož. HRANICE
+     SKUPINY VEDE AŽ MEZI TLAČÍTKY (28 px níž), ne tady — první verze to měla obráceně
+     (20 nad dvojicí, 10 uvnitř ní) a dvojice se proto četla jako jeden slepený blok. */
+  .qz-picwrap > .qz-extra .qz-frow { gap: 16px; flex: 0 0 auto; }
   .qz-picwrap > .qz-extra .qz-fbtns { margin-top: 0; }
   /* TLAČÍTKA POD SEBOU, každé přes celou šířku sloupce (přání hráče 2026-09-06).
      Vedle sebe měla v 405px sloupci jen 199 px, takže dlouhý popisek („Více o králi
@@ -798,7 +816,13 @@
      pravý sloupec drží jednu svislou linku: obrázek, text, tlačítko, tlačítko.
      `flex: 0 1 auto` ruší `flex: 1 1 0` ze základu (to dělá stejnou ŠÍŘKU vedle sebe;
      ve sloupci by z toho byla stejná VÝŠKA) — stejný postup jako na mobilu. */
-  .qz-picwrap > .qz-extra .qz-fbtns { flex-direction: column; gap: 10px; }
+  /* 28 px, ne 14 ani 16 — a je to spočítané, ne odhad. Mezera pod ~25 % výšky prvku
+     slepí dva bloky v jeden: při tlačítku vysokém 52 px bylo dosavadních 10 px **0,19×**
+     a oko to četlo jako segmentovaný přepínač, tedy jednu věc o dvou řádcích. Na
+     oddělení je potřeba aspoň 0,5×. Nediferencovaný přírůstek (10 → 14) je past:
+     jen povolí, skupinu nevytvoří. „Více o…" patří k vysvětlení téhle otázky,
+     „Další otázka" je odchod ze scény — hranice tedy vede TADY. */
+  .qz-picwrap > .qz-extra .qz-fbtns { flex-direction: column; gap: 28px; }
   /* `min-height` + sražené řádkování srovnají VÝŠKU obou tlačítek (53 vs 52 px), i když
      jedno je jednořádkové a druhé se láme na dva řádky. Pod sebou je rozdíl 38 vs 56 px
      vidět jako nedodělek — vedle sebe to dřív zakrývalo `align-items: stretch`. */
