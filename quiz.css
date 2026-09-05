@@ -689,7 +689,14 @@
   /* align-content: start — .qz-play dědí flex:1, bez toho se řádky roztáhnou do zbylé výšky */
   /* align-items: stretch — obě karty musí být stejně vysoké, ať je vedle sebe nerozhodí obsah */
   .qz-play { display: grid; align-items: stretch; align-content: start; column-gap: 18px; padding: 0 18px 18px;
-    grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
+    /* Rám je nově ŠIRŠÍ než karta (4:5, dřív 5:4). Ilustrace je limitovaná ŠÍŘKOU rámu,
+       ne jeho výškou — obrázek 16:9 v rámu širokém 418 px může být vysoký nejvýš 235,
+       takže zvětšovat rám na výšku nepomáhá, jen přibývá prázdna kolem. Změřeno na téže
+       otázce: 5:4 → 412×235 (97k px), 1:1 → 463×265, 4:5 → 514×294 (151k px, +56 %).
+       Dál už jen za cenu karty: 3:4 dá 160k, ale sráží ji na 397 px, kde se otázka láme
+       na příliš mnoho řádků. Je to pokračování posunu z 2026-09-01 (3:2 → 5:4), jen
+       o krok dál a tentokrát ve prospěch obrázku. */
+    grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
     grid-template-areas: "top top" "box pic"; }
   .qz-play > .qz-top { grid-area: top; padding-left: 0; padding-right: 0; }
   .qz-play > .qz-box { grid-area: box; margin: 68px 0 0; }
@@ -723,6 +730,17 @@
   .qz-play > .qz-picframe,
   .qz-play > .qz-picframe.revealed { grid-area: pic; align-self: stretch; margin: 68px 0 0;
     width: 100%; height: auto; }
+  /* STROP výšky rámu po odhalení. Lícování s kartou (`align-self: stretch`) zůstává —
+     tohle není návrat k pevnému poměru, který se 2026-09-01 pětkrát nepovedl; rám se
+     dál táhne podle karty, jen ne donekonečna.
+     Důvod je změřený: u dlouhé otázky se čtyřmi odpověďmi pod sebou vyrostla karta na
+     629 px, jenže ilustrace 16:9 může být v rámu širokém 418 px vysoká nejvýš 235 —
+     obrázek tedy zabíral 37 % rámu a zbytek byly dva rozmazané pruhy po 197 px.
+     320 px: dnešní 16:9 ilustrace je v širším rámu vysoká 294 px, takže kolem ní zbude
+     jen tenký lem místo dvou pruhů po 222 px. Čtvercová ilustrace (generátor je od
+     2026-09-01 na 1:1) se do stropu vejde taky — bude 320×320 s pruhy po stranách,
+     což je pořád mnohem míň prázdna než dnes. U běžně vysoké karty se strop neuplatní. */
+  .qz-play > .qz-picframe.revealed { max-height: 320px; }
   /* odpovědi pod sebou, ne 2×2 (přání 2026-08-14) — větší mezery mezi nimi a text
      zarovnaný doleva. Odsazení musí jít přes padding, ne mezery v textu — mezery v
      obsahu odsadí jen první řádek, zalomený druhý řádek pak začínal víc vlevo (bug). */
