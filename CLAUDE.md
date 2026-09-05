@@ -65,6 +65,43 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-06 — ROZDĚLANÉ: vysvětlení a tlačítka POD ILUSTRACI. Nápad hráče, funguje, ale tři pokusy o dotažení rozbily rám. Čte se to shora dolů, než se do toho někdo pustí znovu.**
+  Hráčův návrh, jak dostat pryč prázdno kolem ilustrace, aniž by se ořezávalo nebo
+  zužovala karta: **zisk bodů, vysvětlení a obě tlačítka přesunout z karty pod obrázek.**
+  Karta tím zkrátí, rám (který ji lícuje) s ní — a prázdno zmizí samo.
+  - **ZADÁNÍ, které musí platit současně** (každý bod je věta, kterou hráč skutečně řekl):
+    1. **Oba obdélníky stejně vysoké.** „Ty obdélníky měly zůstat stejně vysoké."
+    2. **Karta si drží šířku.** „Nechtěl jsem zmenšit ten box" (zúžení 514 → 412 zamítnuto).
+    3. **Glóbus před odpovědí zůstává velký.** „Proč jsi zmenšil i ten globus??? To jsem
+       nechtěl." — poměr 16:9 se tedy smí týkat JEN odhaleného rámu.
+    4. **Nic se neořezává.** Ani v CSS, ani ořezem souborů.
+  - **OVĚŘENO, ŽE TO FUNGUJE** (prototyp i implementace): desktop ✓, mobil ✓, prázdno
+    kolem obrázku **206 → 28 px**, obrázek si drží plnou velikost 412×235.
+    Na mobilu MUSÍ blok dostat `order: 4`, jinak „Další otázka" skončí nad odpověďmi —
+    ověřeno, že bez toho se hráč proklikne dál dřív, než uvidí výsledek.
+  - **CO JE HOTOVÉ V KÓDU** (vráceno `git checkout`, ale postup platí): prázdný
+    `<div class="qz-extra" id="qz-extra">` v `renderQuestion` uvnitř `.qz-play`, funkce
+    `presunPodObrazek(box)` volaná z `answer()` i `timeoutReveal()` (přesune
+    `.qz-frow` a `.qz-hl.points`), CSS `grid-area: extra` + `order: 4` na mobilu.
+    **Steal se nepřesouvá** — je to akce pro dalšího hráče u stolu, patří k odpovědím.
+  - **TŘI SLEPÉ ULIČKY. Problém je vždycky VÝŠKA RÁMU PŘED ODPOVĚDÍ**, protože karta se
+    v mřížce `"top top" "box pic" "box extra"` táhne přes dva spodní řádky, a řádek
+    s rámem tedy nemá co by ho roztáhlo:
+    1. **`aspect-ratio: 16/9` na oba stavy** → rám 418×238 i s glóbem. Zmenší glóbus
+       z 256 na 56 px. Porušuje bod 3 zadání.
+    2. **`min-height: 100%` na neodhalený rám** → nefunguje, procenta se počítají z výšky
+       rodiče, která je `auto`. Rám 418×**80**, glóbus 56.
+    3. **`grid-template-rows: auto 1fr auto`** → řádek s rámem dostane zbytek výšky
+       `.qz-play` (ta má `flex: 1`), takže rám **přeroste kartu** — naměřeno 765 vs 691.
+  - **DIAGNÓZA PRO PŘÍŠTĚ: rám a text pod ním chtějí být v JEDNOM OBALU, ne ve dvou
+    řádcích mřížky.** Mřížka ať zůstane dvousloupcová `"top top" "box pic"` (beze změny)
+    a do pravé buňky přijde obal `<div>` s rámem a extra blokem pod sebou. Tím rám dál
+    lícuje s kartou přes obal a nic se nesráží. Pozor: obal rozbije selektory
+    `.qz-play > .qz-picframe` (jsou na přímého potomka) a mobilní `order` — obojí se
+    musí přepsat na nový obal. V rychlém prototypu přes DOM to takhle fungovalo.
+  - **Proč se to nedodělalo:** tři nepovedené pokusy za sebou v jedné dlouhé session.
+    Zbytek zůstal nedotčený, appka je na `3bd4b6c`.
+
 - **2026-09-05 — VYZKOUŠENO A ZAMÍTNUTO (potřetí): sahat na rám ilustrace kvůli prázdnu kolem ní. Čeká se na ČTVERCOVÉ obrázky, ne na CSS.**
   Hráč hlásil, že ilustrace u otázky je „zbytečně oříznutá". Měřením se ukázalo, že
   oříznutá NENÍ — jen zabírá **35 % rámu**: obrázek 412×235 v rámu 418×648, tedy dva
