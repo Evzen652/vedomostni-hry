@@ -353,7 +353,10 @@
      `flex: 0 1 auto` ruší `flex: 1 1 0` ze základního pravidla (tam dávalo tlačítkům
      stejnou ŠÍŘKU vedle sebe; ve sloupci by to dávalo stejnou VÝŠKU, ne to, co chceme). */
   .qz-fbtns { flex-direction: column; }
-  .qz-fbtns > button { flex: 0 1 auto; width: 100%; }
+  /* `min-height` + sražené řádkování srovnají výšku obou tlačítek stejně jako na desktopu
+     (dřív 62 vs 44 px, protože delší popisek se láme na dva řádky) — a 52 px je zároveň
+     nad 44px minimem pro dotyk, takže se tím spraví i velikost cíle. */
+  .qz-fbtns > button { flex: 0 1 auto; width: 100%; min-height: 52px; line-height: 1.25; }
 }
 
 /* MEZERA MEZI MOBILEM A DESKTOPEM (768–899 px, typicky tablet na výšku) — objevena
@@ -771,11 +774,39 @@
   /* Otázka bez ilustrace: v toku není nic (razítko země je absolutní), takže by se rám
      smrskl na nulu. Stejná hodnota jako u téhož případu pod 900 px. */
   .qz-picwrap > .qz-picframe.revealed.qz-pic-broken { height: 116px; }
-  /* Blok pod obrázkem si bere zbytek sloupce, takže obal dál lícuje s kartou. Flex sloupec
-     je tu proto, aby `.qz-frow { flex: 1 }` + `.qz-fbtns { margin-top: auto }` fungovaly
-     stejně jako dřív uvnitř karty: vysvětlení hned pod obrázkem, akce u SPODNÍ hrany.
-     Bez toho by tlačítko viselo v půlce sloupce a pravá strana by končila výš než karta. */
-  .qz-picwrap > .qz-extra { margin: 10px 0 0; flex: 1 1 auto; display: flex; flex-direction: column; }
+  /* Blok pod obrázkem se drží OBRÁZKU, ne spodní hrany karty. První verze ho roztahovala
+     na zbytek sloupce a akce lepila dolů — bottom edge sice lícovala s kartou, jenže mezi
+     vysvětlením a tlačítky vznikla **naměřená díra 214 px** a dvojice tlačítek se četla
+     jako něco, co s textem nad ní nesouvisí. Blízkost je tu důležitější než zarovnaná
+     spodní hrana: obrázek, vysvětlení a akce jsou jedna věc (výsledek odpovědi), tak
+     drží pohromadě. Prázdno pod nimi je vzduch, ne díra — nic se v něm nekreslí. */
+  .qz-picwrap > .qz-extra { margin: 14px 0 0; flex: 0 0 auto; display: flex; flex-direction: column; gap: 12px; }
+  /* Odsazení řeší `gap` obalu, ne vlastní marginy dětí — jinak se sčítají a rytmus
+     (uvnitř skupiny míň, mezi skupinami víc) se rozpadne na jednu velikost mezery. */
+  .qz-picwrap > .qz-extra > .qz-hl.points,
+  .qz-picwrap > .qz-extra .qz-expl { margin: 0; }
+  /* Vysvětlení je teď v širokém sloupci pod obrázkem, ne v úzké kartě — 1,55 místo
+     výchozího řádkování, jinak je to při 12,5 px a 405 px šířky zeď (viz VZDUŠNOST). */
+  .qz-picwrap > .qz-extra .qz-expl { line-height: 1.55; }
+  /* 20 px mezi textem a akcemi je hranice dvou skupin, proto víc než 12 px uvnitř bloku. */
+  .qz-picwrap > .qz-extra .qz-frow { gap: 20px; flex: 0 0 auto; }
+  .qz-picwrap > .qz-extra .qz-fbtns { margin-top: 0; }
+  /* TLAČÍTKA POD SEBOU, každé přes celou šířku sloupce (přání hráče 2026-09-06).
+     Vedle sebe měla v 405px sloupci jen 199 px, takže dlouhý popisek („Více o králi
+     Janu Lucemburském") se lámal na tři řádky a natáhl OBĚ tlačítka na 75 px —
+     dvojice pak vypadala jako chyba sazby. Pod sebou mají obě šířku obrázku, takže
+     pravý sloupec drží jednu svislou linku: obrázek, text, tlačítko, tlačítko.
+     `flex: 0 1 auto` ruší `flex: 1 1 0` ze základu (to dělá stejnou ŠÍŘKU vedle sebe;
+     ve sloupci by z toho byla stejná VÝŠKA) — stejný postup jako na mobilu. */
+  .qz-picwrap > .qz-extra .qz-fbtns { flex-direction: column; gap: 10px; }
+  /* `min-height` + sražené řádkování srovnají VÝŠKU obou tlačítek (53 vs 52 px), i když
+     jedno je jednořádkové a druhé se láme na dva řádky. Pod sebou je rozdíl 38 vs 56 px
+     vidět jako nedodělek — vedle sebe to dřív zakrývalo `align-items: stretch`. */
+  .qz-picwrap > .qz-extra .qz-fbtns > button { flex: 0 1 auto; width: 100%;
+    min-height: 52px; line-height: 1.25; }
+  /* O krok větší než 12,5 px v kartě: text tu stojí sám na papíře, bez rámečku a bez
+     sousedů, takže drobné šedé písmo vedle silného obrázku a plného tlačítka mizí. */
+  .qz-picwrap > .qz-extra .qz-expl { font-size: 13.5px; }
   /* PŘED odpovědí je blok prázdný a MUSÍ zmizet i tady. Základní `.qz-extra:empty` má
      stejnou specificitu jako pravidlo o řádek výš, takže by ho pozdější `display: flex`
      přebilo — prázdný blok by si vzal `flex: 1` a rám by se s ním o sloupec podělil

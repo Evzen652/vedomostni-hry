@@ -103,6 +103,27 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     206 u nejhoršího případu), obrázek si drží plnou velikost 406×232, dolní hrany karty
     a pravého sloupce shodné. Ověřeno i na 375 / 768 / 899 / 900 / 1920 px, u otázky bez
     ilustrace (rám spadne na 116px pruh s vlajkou), po vypršení času a v párty.
+  - **DRUHÉ KOLO TÝŽ DEN — kompozice pravého sloupce.** Hráč: *„ty dvě tlačítka můžou být
+    klidně nad sebou… aby tato obrazovka dávala nějakou souměrnost."* Dvě změny, obě
+    měřené:
+    1. **Blok se drží OBRÁZKU, ne spodní hrany karty.** První verze ho roztahovala na
+       zbytek sloupce (`flex: 1`) a akce lepila dolů — dolní hrany sice lícovaly, ale mezi
+       vysvětlením a tlačítky zela **naměřená díra 214 px** a dvojice tlačítek se četla
+       jako něco, co s textem nad ní nesouvisí. **Blízkost vyhrála nad zarovnanou spodní
+       hranou:** obrázek, vysvětlení a akce jsou jedna věc (výsledek odpovědi). Prázdno
+       pod nimi je vzduch, ne díra — nic se v něm nekreslí.
+    2. **Tlačítka pod sebou, každé přes celou šířku sloupce.** Vedle sebe měla v 405px
+       sloupci jen 199 px, takže se dlouhý popisek („Více o králi Janu Lucemburském")
+       lámal na tři řádky a natáhl OBĚ na 75 px. Pod sebou drží pravý sloupec jednu
+       svislou linku: obrázek, text, tlačítko, tlačítko — všechno 405 px.
+    - **`min-height: 52px` + `line-height: 1.25` na obou tlačítkách**, jinak je jednořádkové
+      38 px a dvouřádkové 56 a pod sebou je ten rozdíl vidět jako nedodělek (vedle sebe ho
+      zakrývalo `align-items: stretch`). Nově 52/53. **Platí i na mobilu** (bylo 44 vs 62)
+      a shodou okolností tím padá jeden bod z otevřeného seznamu dotykových cílů pod 44 px.
+    - **Vysvětlení 12,5 → 13,5 px a řádkování 1,55.** V kartě bylo v rámečku mezi sousedy,
+      teď stojí samo na papíře vedle silného obrázku a plného tlačítka — drobné šedé písmo
+      by v té pozici zmizelo. Rytmus mezer je odstupňovaný podle pravidla o VZDUŠNOSTI:
+      obrázek → text 14, uvnitř bloku 12, text → akce 20, mezi tlačítky 10.
   - **`test:offline` má 799 kontrol** (bylo 792) a všech šest nových je **ověřeno mutací**.
     Dvě mutace nejdřív PROŠLY, protože kontrola hledala podřetězec: `qz-picwrapX` prošlo
     přes `/qz-picwrap/` a `.qz-hl.pointsX` přes `/\.qz-hl\.points/`. **U kontroly názvu
