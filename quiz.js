@@ -333,6 +333,7 @@
       <div class="qz-quipbox"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}"</div></div>
       ${allowSteal ? stealHtml(q, "__timeout__") : frowHtml(q)}`);
     if(allowSteal) wireSteal(q, "__timeout__"); else wireFrow(q);
+    presunPodObrazek(box);
     autosave();
   }
 
@@ -1433,7 +1434,10 @@
         <div class="qz-q">${esc(q.question)}</div>
         ${ansHtml}
       </div>
-      ${picframeHtml(q)}
+      <div class="qz-picwrap">
+        ${picframeHtml(q)}
+        <div class="qz-extra" id="qz-extra"></div>
+      </div>
     </div>`;
     wirePic(); wireTop(q); mountGlobeMedal(q.cc);
     body.querySelectorAll("#qz-box .qz-a").forEach(btn => btn.addEventListener("click", () => answer(q, answers[+btn.dataset.i])));
@@ -1476,6 +1480,20 @@
   function wireFrow(q){
     body.querySelector("#qz-next").addEventListener("click", next);
     const m=body.querySelector("#qz-more"); if(m) m.addEventListener("click", () => openMore(q));
+  }
+
+  // Zisk bodů, vysvětlení a obě tlačítka se po odpovědi stěhují z karty POD ILUSTRACI
+  // (nápad hráče 2026-09-06). Kolem obrázku bylo přes 200 px rozmazaného prázdna, protože
+  // rám lícuje s kartou (`align-self: stretch`) a karta u dlouhé otázky vyroste — ale
+  // obrázek je limitovaný ŠÍŘKOU rámu, takže se to prázdno neměnilo v obraz. Přesun kartu
+  // zkrátí, a rám se za ní stáhne sám; nic se přitom neořezává a karta si drží šířku.
+  // STEAL SE NESTĚHUJE — je to akce pro dalšího hráče u stolu, patří k odpovědím.
+  // Přesouvá se AŽ PO vykreslení, ne že by se rovnou renderovalo jinam: `answer()`
+  // i `finishSteal()` skládají obsah do karty a `frowHtml` je sdílený s párty i timeoutem.
+  function presunPodObrazek(box){
+    const extra=body.querySelector("#qz-extra"); if(!extra||!box) return;
+    const pts=box.querySelector(".qz-hl.points"); if(pts) extra.appendChild(pts);
+    const frow=box.querySelector(".qz-frow"); if(frow) extra.appendChild(frow);
   }
 
   function updateScorePill(i){ const el=body.querySelector(`.qz-plscore[data-score="${i}"]`); if(el) el.textContent=S.players[i].score; }
@@ -1522,6 +1540,7 @@
       </div>
       ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`);
     if(allowSteal) wireSteal(q, choice); else wireFrow(q);
+    presunPodObrazek(box);
   }
 
   function stealHtml(q, wrongChoice){
@@ -1545,7 +1564,7 @@
     }));
     box.querySelector("#qz-steal-skip").addEventListener("click", () => { say(stealer.name+" to nechává být."); finishSteal(q); });
   }
-  function finishSteal(q){ const st=body.querySelector("#qz-steal"); if(st){ const tmp=document.createElement("div"); tmp.innerHTML=frowHtml(q); st.replaceWith(tmp.firstElementChild); } wireFrow(q); }
+  function finishSteal(q){ const st=body.querySelector("#qz-steal"); if(st){ const tmp=document.createElement("div"); tmp.innerHTML=frowHtml(q); st.replaceWith(tmp.firstElementChild); } wireFrow(q); presunPodObrazek(body.querySelector("#qz-box")); }
 
   // „Více o…" se zobrazuje jen u otázek napojených na kartu z Glóbu (q.source_card) —
   // bez karty appka neměla nic k zobrazení (žádná fotka, žádný text navíc), tlačítko

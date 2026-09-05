@@ -542,6 +542,44 @@ for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
     jmeno + " má `//` komentář uvnitř template literalu (vykreslí se hráči) na řádcích " + uniky.join(", "));
 }
 
+// ---- vysvětlení a tlačítka POD ILUSTRACÍ (2026-09-06) ----
+// Přesun `.qz-frow` a `.qz-hl.points` z karty pod obrázek zkrátí kartu, a protože se rám
+// řídí kartou, srazí se s ní i on — prázdno kolem ilustrace tím spadlo z 206 na 3 px na
+// stranu. Drží to na čtyřech věcech, které se dají rozbít každá zvlášť, aniž by appka
+// spadla (jen by se vrátily rozmazané pruhy), takže je hlídá test:
+const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
+{
+  const render = SRC.slice(SRC.indexOf("function renderQuestion"), SRC.indexOf("function renderQuestion") + 2200);
+  // Uvozovky v obou vzorech jsou schválně: mutace `qz-picwrapX` prošla, dokud se hledal
+  // jen podřetězec — a to je přesně tvar, jakým se třída rozejde s CSS.
+  kontrola(/class="qz-picwrap"/.test(render) && /id="qz-extra"/.test(render),
+    "renderQuestion nekreslí obal .qz-picwrap s prázdným #qz-extra (rám a blok pod ním MUSÍ být v jednom obalu — dva řádky mřížky se 2026-09-06 zkoušely třikrát a pokaždé rozbily výšku rámu před odpovědí)");
+
+  for (const fn of ["answer", "timeoutReveal"]) {
+    const zac = SRC.indexOf("function " + fn + "(");
+    kontrola(/presunPodObrazek/.test(SRC.slice(zac, SRC.indexOf("\n  }", zac))),
+      fn + "() nevolá presunPodObrazek — vysvětlení a tlačítka by zůstaly v kartě");
+  }
+
+  const presun = SRC.slice(SRC.indexOf("function presunPodObrazek"), SRC.indexOf("function presunPodObrazek") + 500);
+  kontrola(/"\.qz-frow"/.test(presun) && /"\.qz-hl\.points"/.test(presun),
+    "presunPodObrazek nestěhuje .qz-frow i .qz-hl.points");
+  // Steal je akce pro DALŠÍHO hráče u stolu — patří k odpovědím, ne pod obrázek.
+  kontrola(!/qz-steal/.test(presun), "presunPodObrazek sahá i na steal, ten má zůstat v kartě");
+
+  // Past, na kterou jsem naletěl při stavbě: `.qz-extra:empty { display: none }` má stejnou
+  // specificitu jako desktopové `.qz-picwrap > .qz-extra { display: flex }`, takže ho pozdější
+  // pravidlo přebilo — prázdný blok si vzal `flex: 1` a rám se s ním o sloupec podělil
+  // (naměřeno: rám 225 px proti kartě 454, glóbus srazený z 290 na 149).
+  kontrola(/\.qz-picwrap\s*>\s*\.qz-extra:empty\s*\{[^}]*display:\s*none/.test(SRC_CSS),
+    "quiz.css nemá `.qz-picwrap > .qz-extra:empty { display: none }` — prázdný blok ukrojí rámu půl sloupce");
+
+  // Online souboj obal nemá (kreslí si otázku vlastní funkcí a bere jen ZKPicframe.html),
+  // takže mu pravidlo pro PŘÍMÉHO potomka musí zůstat, jinak spadne mimo mřížku.
+  kontrola(/\.qz-play\s*>\s*\.qz-picframe[^{]*\{[^}]*grid-area:\s*pic/.test(SRC_CSS.replace(/,\s*\n\s*/g, ", ")),
+    "quiz.css ztratil pravidlo pro `.qz-play > .qz-picframe` — online souboj by přišel o rám v mřížce");
+}
+
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

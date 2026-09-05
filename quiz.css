@@ -131,6 +131,19 @@
 .qz-picframe.revealed .qz-pic-fb-text .country { font-family: 'Nunito', sans-serif; font-weight: 750; font-size: 16px; color: var(--ink); }
 .qz-picframe.revealed .qz-pic-fallback .sec { font-size: 13px; }
 
+/* Obal pravého sloupce: rám a pod ním blok, kam se po odpovědi stěhuje zisk bodů,
+   vysvětlení a obě tlačítka (`presunPodObrazek` v quiz.js, nápad hráče 2026-09-06).
+   MUSÍ to být JEDEN OBAL, ne dva řádky mřížky — to se 2026-09-06 zkoušelo třikrát
+   a pokaždé selhalo na tom, že řádek s rámem neměl co by ho před odpovědí roztáhlo:
+   `aspect-ratio` srazil glóbus z 256 na 56 px, `min-height: 100%` se počítá z výšky
+   rodiče (`auto`, tedy nic) a `1fr` naopak nechal rám přerůst kartu o 74 px.
+   S obalem lícuje s kartou obal a rám si uvnitř bere zbytek výšky — glóbus tak
+   před odpovědí zůstává velký a po odpovědi se rám stáhne na obrázek. */
+.qz-picwrap { display: flex; flex-direction: column; }
+/* `:empty` je nutné: před odpovědí je blok prázdný a jeho margin by rám o 10 px zkrátil. */
+.qz-extra { margin: 10px 16px 0; }
+.qz-extra:empty { display: none; }
+
 /* glóbus (malovaný 3D) — u otázky hrdina uprostřed, u odpovědi malý odznak v rohu */
 .qz-globewrap { position: absolute; inset: 0; z-index: 6; display: flex;
   align-items: center; justify-content: center; }
@@ -314,9 +327,16 @@
      ne podle pořadí v HTML), takže by přehazování DOM struktury bylo riziko bez
      přínosu. Řeší to `order` na flex položkách, jen tady na mobilu. */
   .qz-play { display: flex; flex-direction: column; }
-  .qz-play > .qz-top { order: 1; }
-  .qz-play > .qz-picframe { order: 2; }
-  .qz-play > .qz-box { order: 3; }
+  /* `display: contents` rozpustí obal pravého sloupce, aby se rám a blok pod ním daly
+     seřadit samostatně: na mobilu je totiž všechno pod sebou a „Další otázka" by hned
+     pod obrázkem skončila NAD odpověďmi — hráč by se proklikal dál, než by výsledek
+     vůbec uviděl. Obal zůstává v DOMu, takže selektory musí být potomkové (` > ` by
+     přestalo platit — `display: contents` mění rozvržení, ne strom). */
+  .qz-play > .qz-picwrap { display: contents; }
+  .qz-play .qz-top { order: 1; }
+  .qz-play .qz-picframe { order: 2; }
+  .qz-play .qz-box { order: 3; }
+  .qz-play .qz-extra { order: 4; }
   .qz-ans { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   /* Pevná výška (210/190 px) nahrazena poměrem skutečné fotky — ZMĚŘENÝ DŮVOD, ne
      kosmetika. Při 375 px šířky vycházela pevná výška téměř identicky (343×190 ≈ 16:9),
@@ -726,8 +746,41 @@
      v rámu žije glóbus a obrázek se objeví teprve po odpovědi. Pravidlo z 2026-07-31
      říká, že se nesmí hnout snímek, ne že se nesmí hnout karta. */
   .qz-play > .qz-picframe,
-  .qz-play > .qz-picframe.revealed { grid-area: pic; align-self: stretch; margin: 68px 0 0;
+  .qz-play > .qz-picframe.revealed,
+  .qz-play > .qz-picwrap { grid-area: pic; align-self: stretch; margin: 68px 0 0;
     width: 100%; height: auto; }
+  /* Rám uvnitř obalu si bere ZBYTEK výšky po bloku pod ním (`flex: 1`), takže obal dál
+     lícuje s kartou. `min-height: 0` je nutné — výchozí `auto` u flex položky nedovolí
+     smrsknout se pod obsah a rám by obal přerostl. Sám rám drží obsah absolutně
+     pozicovaný (viz komentář u `.qz-pic`), takže se nemá o co opřít a poslušně se stáhne.
+     Selektor je záměrně na obal, ne `.qz-play > …`: online souboj obal nemá (kreslí si
+     otázku vlastní funkcí a bere jen `ZKPicframe.html`), takže mu dál platí pravidlo výš. */
+  .qz-picwrap > .qz-picframe,
+  .qz-picwrap > .qz-picframe.revealed { margin: 0; height: auto; flex: 1 1 auto; min-height: 0; }
+  /* PO ODPOVĚDI se rám naopak smrskne PŘESNĚ NA OBRÁZEK — tím zmizí rozmazané pruhy,
+     kvůli kterým se do toho celého šlo (2026-09-05: obrázek zabíral 35 % rámu).
+     Dělá to obrázek POSTAVENÝ DO TOKU, ne pevný poměr: `aspect-ratio: 16/9` by platil
+     jen pro dnešní fond a u čtvercových ilustrací (generátor je dělá od 2026-09-01)
+     by pruhy jen otočil o 90°. Takhle si rám vezme výšku toho, co v něm doopravdy je.
+     Komentář u `.qz-pic` varuje, že obrázek v toku vnese do řádku svou přirozenou
+     výšku (686 px) — to platí pro NEODHALENÝ rám, který se táhne podle karty; tady
+     je šířka omezená na 412 px, takže se výška dopočte na ~235 a nic se nenafoukne. */
+  .qz-picwrap > .qz-picframe.revealed { flex: 0 0 auto; }
+  .qz-picwrap > .qz-picframe.revealed .qz-pic { position: relative; inset: auto;
+    width: 100%; max-height: none; height: auto; }
+  /* Otázka bez ilustrace: v toku není nic (razítko země je absolutní), takže by se rám
+     smrskl na nulu. Stejná hodnota jako u téhož případu pod 900 px. */
+  .qz-picwrap > .qz-picframe.revealed.qz-pic-broken { height: 116px; }
+  /* Blok pod obrázkem si bere zbytek sloupce, takže obal dál lícuje s kartou. Flex sloupec
+     je tu proto, aby `.qz-frow { flex: 1 }` + `.qz-fbtns { margin-top: auto }` fungovaly
+     stejně jako dřív uvnitř karty: vysvětlení hned pod obrázkem, akce u SPODNÍ hrany.
+     Bez toho by tlačítko viselo v půlce sloupce a pravá strana by končila výš než karta. */
+  .qz-picwrap > .qz-extra { margin: 10px 0 0; flex: 1 1 auto; display: flex; flex-direction: column; }
+  /* PŘED odpovědí je blok prázdný a MUSÍ zmizet i tady. Základní `.qz-extra:empty` má
+     stejnou specificitu jako pravidlo o řádek výš, takže by ho pozdější `display: flex`
+     přebilo — prázdný blok by si vzal `flex: 1` a rám by se s ním o sloupec podělil
+     (naměřeno: rám 225 px proti kartě 454, glóbus srazený na 149). */
+  .qz-picwrap > .qz-extra:empty { display: none; }
   /* ŽÁDNÝ strop výšky rámu. Zkoušel jsem ho (320 i 250 px), aby kolem ilustrace nebylo
      tolik prázdna, jenže tím se rám přestal rovnat výšce karty — a oba obdélníky vedle
      sebe mají zůstat stejně vysoké (hráč 2026-09-05: „ty obdélníky měly zůstat stejně

@@ -65,7 +65,50 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
-- **2026-09-06 — ROZDĚLANÉ: vysvětlení a tlačítka POD ILUSTRACI. Nápad hráče, funguje, ale tři pokusy o dotažení rozbily rám. Čte se to shora dolů, než se do toho někdo pustí znovu.**
+- **2026-09-06 — HOTOVO: vysvětlení a tlačítka jsou POD ILUSTRACÍ. Prázdno kolem obrázku 206 → 3 px na stranu. Rozhodla DVĚ věci: jeden obal místo dvou řádků mřížky, a obrázek POSTAVENÝ DO TOKU.**
+  Dotažení předchozího zápisu (ten zůstává níž, protože jeho tři slepé uličky platí dál).
+  Karta drží otázku, odpovědi a hlášku; **zisk bodů, vysvětlení a obě tlačítka se po
+  odpovědi stěhují pod obrázek** (`presunPodObrazek` v [quiz.js](quiz.js), volaná
+  z `answer()`, `timeoutReveal()` i `finishSteal()`). Karta tím zkrátí a rám, který ji
+  lícuje, se stáhne s ní.
+  - **1. Rám a blok pod ním jsou v JEDNOM OBALU `.qz-picwrap`**, mřížka zůstala
+    dvousloupcová `"top top" "box pic"` beze změny. Obal lícuje s kartou
+    (`align-self: stretch`), rám si uvnitř bere zbytek výšky (`flex: 1; min-height: 0`).
+    Před odpovědí je blok prázdný, takže **rám = karta na pixel a glóbus zůstává velký**
+    (naměřeno na osmi otázkách za sebou: 527/527, 503/503, 454/454…, glóbus 250–290 px).
+  - **2. Po odpovědi se rám smrskne PŘESNĚ NA OBRÁZEK**, protože `.qz-pic` přejde do TOKU
+    (`position: relative`) místo absolutního centrování. **Ne přes `aspect-ratio`** — ten
+    by platil jen pro dnešní fond 16:9 a u čtvercových ilustrací (generátor je dělá od
+    2026-09-01) by pruhy jen otočil o 90°. Takhle si rám vezme výšku toho, co v něm
+    doopravdy je, ať je poměr jakýkoli. Komentář u `.qz-pic` varuje před obrázkem v toku
+    (vnesl by přirozenou výšku 686 px) — to platí pro NEODHALENÝ rám tažený kartou; tady
+    je šířka omezená na 412 px, takže se výška dopočte na 235 a nic se nenafoukne.
+  - **3. Blok pod obrázkem je flex sloupec s `flex: 1`**, aby `.qz-frow { flex: 1 }` +
+    `.qz-fbtns { margin-top: auto }` fungovaly stejně jako dřív uvnitř karty: vysvětlení
+    hned pod obrázkem, **akce u spodní hrany — a ta lícuje s dolní hranou karty** (dolní
+    hrany naměřeny shodně na všech vzorcích). Bez toho tlačítko viselo v půlce sloupce.
+  - **PAST, na kterou jsem naletěl: `.qz-extra:empty { display: none }` má STEJNOU
+    specificitu jako desktopové `.qz-picwrap > .qz-extra { display: flex }`**, takže ho
+    pozdější pravidlo přebilo — prázdný blok si vzal `flex: 1` a rám se s ním o sloupec
+    podělil (rám 225 px proti kartě 454, glóbus srazený z 290 na **149**). Vypadalo to
+    jako chyba mřížky, přitom to byla kaskáda. Řeší `.qz-picwrap > .qz-extra:empty`.
+  - **Mobil: obal se rozpouští `display: contents`** a řadí se `order` 1–4 (top, rám,
+    karta, blok). Bez toho by „Další otázka" skončila hned pod obrázkem, tedy NAD
+    odpověďmi. Pozor: `display: contents` mění rozvržení, ne strom — selektory se proto
+    musely přepsat z `.qz-play > …` na potomkové.
+  - **Online se nezměnil ani o pixel** — kreslí si otázku vlastní funkcí a obal nemá,
+    takže mu dál platí pravidlo pro PŘÍMÉHO potomka. Ověřeno tak, že jsem rám v DOMu
+    vyndal z obalu: `grid-area: pic`, `align-self: stretch`, výška = karta, jako dřív.
+  - **Naměřeno** (1400 px, osm otázek): prázdno kolem obrázku **3 px** na stranu (bylo
+    206 u nejhoršího případu), obrázek si drží plnou velikost 406×232, dolní hrany karty
+    a pravého sloupce shodné. Ověřeno i na 375 / 768 / 899 / 900 / 1920 px, u otázky bez
+    ilustrace (rám spadne na 116px pruh s vlajkou), po vypršení času a v párty.
+  - **`test:offline` má 799 kontrol** (bylo 792) a všech šest nových je **ověřeno mutací**.
+    Dvě mutace nejdřív PROŠLY, protože kontrola hledala podřetězec: `qz-picwrapX` prošlo
+    přes `/qz-picwrap/` a `.qz-hl.pointsX` přes `/\.qz-hl\.points/`. **U kontroly názvu
+    třídy nebo selektoru patří do vzoru i uvozovky** — jinak testuješ prefix, ne jméno.
+
+- **2026-09-06 — ZADÁNÍ A TŘI SLEPÉ ULIČKY k tomu, co je o zápis výš hotové. Platí dál: takhle se to dělat NEMÁ.**
   Hráčův návrh, jak dostat pryč prázdno kolem ilustrace, aniž by se ořezávalo nebo
   zužovala karta: **zisk bodů, vysvětlení a obě tlačítka přesunout z karty pod obrázek.**
   Karta tím zkrátí, rám (který ji lícuje) s ní — a prázdno zmizí samo.
@@ -99,8 +142,9 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     lícuje s kartou přes obal a nic se nesráží. Pozor: obal rozbije selektory
     `.qz-play > .qz-picframe` (jsou na přímého potomka) a mobilní `order` — obojí se
     musí přepsat na nový obal. V rychlém prototypu přes DOM to takhle fungovalo.
-  - **Proč se to nedodělalo:** tři nepovedené pokusy za sebou v jedné dlouhé session.
-    Zbytek zůstal nedotčený, appka je na `3bd4b6c`.
+  - **Proč se to tehdy nedodělalo:** tři nepovedené pokusy za sebou v jedné dlouhé session.
+    **Diagnóza se druhý den potvrdila a je postavená** — viz zápis o kus výš; tenhle bod
+    zůstává kvůli těm třem uličkám a kvůli zadání, které dál platí.
 
 - **2026-09-05 — VYZKOUŠENO A ZAMÍTNUTO (potřetí): sahat na rám ilustrace kvůli prázdnu kolem ní. Čeká se na ČTVERCOVÉ obrázky, ne na CSS.**
   Hráč hlásil, že ilustrace u otázky je „zbytečně oříznutá". Měřením se ukázalo, že
