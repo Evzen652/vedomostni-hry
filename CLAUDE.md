@@ -148,11 +148,25 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
         cizí těleso — stejný důvod jako plochá šipka), obal/podklad kolem pravého sloupce
         (čtyři rámečky nad sebou a próza v boxu), nafukovat tlačítka na 64–80 px, ani
         zaplňovat prázdno pod sloupcem dekorací. Prázdný papír je tu legitimní materiál.
-      - **NABÍDNUTO A ZATÍM NEPROVEDENO** (je to zásah nad rámec zadání, čeká na hráče):
-        sekundární tlačítko odlehčit (44 px, rámeček 1 px, bez stínu, jemný tyrkysový
-        podklad), aby dvojice nevypadala jako dvě stejně důležité věci; a vytáhnout
-        kurzívní hlášku z karty ven pod ni, čímž by vznikla symetrie typu „vlevo objekt
-        + volný text, vpravo objekt + volný text".
+      - **ČTVRTÉ KOLO — sekundární tlačítko odlehčeno** (hráč: „zkus to odlehčené
+        tlačítko"). Ubírá se VÁHA, ne barva: rámeček 1 px místo 1,5, písmo 600 místo 700,
+        rádius o 2 px menší, jemný podklad `rgba(47,125,120,.07)` a na desktopu výška
+        **44 px místo 52**. Plocha zůstane, obrys zeslábne — „Další otázka" je plná,
+        „Více o…" jen naznačená. Na mobilu zůstává 52 px (44 je dotykové minimum).
+        - **Scoped na `.qz-picwrap > .qz-extra .qz-more`**, protože třídu `.qz-more`
+          používá i online část („Zpět do turnaje", „Odveta"), kde to jsou samostatná
+          tlačítka, ne druhé housle.
+        - **Past se specificitou potřetí za den:** `… .qz-fbtns > button { min-height: 52px }`
+          má díky elementu `button` specificitu 0,3,1 a přebilo by `… .qz-more` (0,3,0),
+          takže 44 px se neprojevilo. Nutné `button.qz-more`.
+        - **ZMĚŘENÝ DLUH: kontrast textu na tom tlačítku je 4,05–4,33 : 1**, WCAG chce
+          u písma pod 18 px 4,5. Podklad z toho ubral ~0,15 — před ním to bylo 4,20–4,48,
+          tedy taky pod hranicí. Spraví to ztmavení textu na `#27736f` (4,77–5,10) nebo
+          rovnou na `#1f5f5c`, který v paletě už je (6,31–6,74). **Neprovedeno schválně:**
+          paleta je hráčovo území (stejný důvod jako u devíti míst v seznamu níž).
+      - **NABÍDNUTO A ZATÍM NEPROVEDENO:** vytáhnout kurzívní hlášku z karty ven pod ni,
+        čímž by vznikla symetrie typu „vlevo objekt + volný text, vpravo objekt + volný
+        text" a karta by se zkrátila o 60–110 px.
     - **Vysvětlení 12,5 → 13,5 px a řádkování 1,55.** V kartě bylo v rámečku mezi sousedy,
       teď stojí samo na papíře vedle silného obrázku a plného tlačítka — drobné šedé písmo
       by v té pozici zmizelo. Rytmus mezer je odstupňovaný podle pravidla o VZDUŠNOSTI:

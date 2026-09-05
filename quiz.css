@@ -148,6 +148,15 @@
    a odstupňovaný rytmus se rozpadne zpátky na jednu velikost mezery. */
 .qz-extra > .qz-hl.points,
 .qz-extra .qz-expl { margin: 0; }
+/* SEKUNDÁRNÍ TLAČÍTKO JE ODLEHČENÉ, ať dvojice pod sebou nevypadá jako dvě stejně
+   důležité věci. Mezera je oddělila, ale obě byly pořád stejně silné obdélníky.
+   Místo slabší barvy (ta by ubrala kontrast) se ubírá VÁHA: rámeček 1 px místo 1,5,
+   písmo 600 místo 700, menší rádius a jemný tyrkysový podklad — plocha zůstane, obrys
+   zeslábne, takže „Další otázka" je plná a „Více o…" jen naznačená.
+   SCOPED na blok pod ilustrací schválně: třídu `.qz-more` používá i online část
+   („Zpět do turnaje", „Odveta"), kde jsou to samostatná tlačítka, ne druhá housle. */
+.qz-picwrap > .qz-extra .qz-more { border-width: 1px; border-radius: 11px;
+  background: rgba(47, 125, 120, .07); font-weight: 600; }
 
 /* glóbus (malovaný 3D) — u otázky hrdina uprostřed, u odpovědi malý odznak v rohu */
 .qz-globewrap { position: absolute; inset: 0; z-index: 6; display: flex;
@@ -823,11 +832,18 @@
      jen povolí, skupinu nevytvoří. „Více o…" patří k vysvětlení téhle otázky,
      „Další otázka" je odchod ze scény — hranice tedy vede TADY. */
   .qz-picwrap > .qz-extra .qz-fbtns { flex-direction: column; gap: 28px; }
-  /* `min-height` + sražené řádkování srovnají VÝŠKU obou tlačítek (53 vs 52 px), i když
-     jedno je jednořádkové a druhé se láme na dva řádky. Pod sebou je rozdíl 38 vs 56 px
-     vidět jako nedodělek — vedle sebe to dřív zakrývalo `align-items: stretch`. */
+  /* `min-height` + sražené řádkování drží tlačítka v rozumné výšce i s dvouřádkovým
+     popiskem — bez toho bylo jednořádkové 38 px a dvouřádkové 56 a vypadalo to jako
+     nedodělek (vedle sebe to dřív zakrývalo `align-items: stretch`). */
   .qz-picwrap > .qz-extra .qz-fbtns > button { flex: 0 1 auto; width: 100%;
     min-height: 52px; line-height: 1.25; }
+  /* Sekundární je o osm pixelů nižší — hierarchie, ne symetrie: ty dvě tlačítka MAJÍ
+     vypadat nerovnocenně. Platí jen na desktopu; na mobilu zůstává 52, protože 44 px
+     je přesně dotykové minimum a pod ně se nesmí. U dvouřádkového popisku výška stejně
+     vyjde vyšší a odlišení pak nese podklad a tenčí rámeček.
+     Selektor musí být přes `button.qz-more`: pravidlo o řádek výš má díky elementu
+     `button` vyšší specificitu (0,3,1) než samotná třída (0,3,0) a 44 px by přebilo. */
+  .qz-picwrap > .qz-extra .qz-fbtns > button.qz-more { min-height: 44px; }
   /* O krok větší než 12,5 px v kartě: text tu stojí sám na papíře, bez rámečku a bez
      sousedů, takže drobné šedé písmo vedle silného obrázku a plného tlačítka mizí. */
   .qz-picwrap > .qz-extra .qz-expl { font-size: 13.5px; }
