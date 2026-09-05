@@ -1085,7 +1085,14 @@
            Razítko jen u jedné vybrané země: u „všech zemí" je S.sel.cc null (viz selectCountries),
            takže flagStamp skládal country-null.jpg a tahal zbytečné 404. -->
       <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}Oukej, vypravíme se na sólo jízdu. Jen ty a mapa.</h2>
-      <div style="width:min(100%,460px)">
+      <!-- 560 px, ne 460: při 460 vyšly tři dlaždice po 141 px a do nich se obrázek
+           s předepsanými 128 px nevešel — max-width 100 % ho srazil na 109 px, takže
+           přestal být čtvercový a object-fit cover ho ořízl po stranách. Vypadalo to
+           jako zmenšené a jinak ořezané dlaždice než ve zbytku appky. Při 560 px má
+           dlaždice ~177 px a čtvercových 128 px se do ní vejde i s odsazením.
+           POZOR: v tomhle komentáři nesmí být zpětné apostrofy — je uvnitř template
+           literalu a ukončily by ho (CLAUDE.md 2026-09-03; právě jsem na to naletěl). -->
+      <div style="width:min(100%,560px)">
         <div class="qz-fieldlabel">Kdo dnes hraje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,minmax(0,1fr));max-width:100%">
           ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}
