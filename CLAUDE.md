@@ -65,6 +65,35 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-05 — VYZKOUŠENO A ZAMÍTNUTO (potřetí): sahat na rám ilustrace kvůli prázdnu kolem ní. Čeká se na ČTVERCOVÉ obrázky, ne na CSS.**
+  Hráč hlásil, že ilustrace u otázky je „zbytečně oříznutá". Měřením se ukázalo, že
+  oříznutá NENÍ — jen zabírá **35 % rámu**: obrázek 412×235 v rámu 418×648, tedy dva
+  rozmazané pruhy po 206 px. Rám je vysoký proto, že lícuje s kartou (`align-self:
+  stretch`), a karta u dlouhé otázky se čtyřmi odpověďmi pod sebou vyroste na 648 px.
+  - **Klíčové číslo, ze kterého plyne všechno ostatní: obrázek je limitovaný ŠÍŘKOU
+    rámu, ne jeho výškou.** Ilustrace 16:9 v rámu širokém 412 px může být vysoká
+    nejvýš 235. Zvětšovat rám na výšku tedy nepomůže, jen přibude prázdna.
+  - **Zkusil jsem dvě cesty a hráč obě zamítl:**
+    1. **Strop výšky rámu** (320 px, pak 250 px). Prázdno kleslo z 206 na 10 px, ale
+       rám se přestal rovnat kartě — *„ty obdélníky měly zůstat stejně vysoké"*.
+    2. **Poměr sloupců 5:4 → 4:5** (rám širší než karta). Obrázek by byl o 56 % větší
+       (514×294 místo 412×235), jenže se to platí šířkou karty: 514 → 412 px, kde se
+       otázka i tlačítko „Více o…" lámou na příliš mnoho řádků — *„nechtěl jsem zmenšit
+       ten box"*. Pro pořádek naměřeno i 3:4 (obrázek 160k px), tam je karta 397.
+  - **ROZHODNUTÍ: nechat to být a počkat na obsah.** Generátor dělá od 2026-09-01
+    čtvercové ilustrace (1:1); ty budou v témže rámu vysoké **412 px místo 235**, tedy
+    o 75 % víc, a to bez jediného oříznutého pixelu. Cesta je tedy přegenerovat fond
+    (`node scripts/gen-irony-images.js --force`), ne dolaďovat CSS.
+  - **Ořez po stranách (`cover`) byl nabídnut a odmítnut** — u 340 px výšky by se
+    skrylo 30 % šířky, u 450 px skoro polovina. U scén, kde se něco děje po stranách,
+    by to ubralo pointu.
+  - **PAST PŘI MĚŘENÍ, kvůli které jsem nejdřív hlásil neexistující ořez:** panel
+    prohlížeče byl skrytý (`document.visibilityState === "hidden"`), takže se animace
+    odhalení nespustila a obrázek držel počáteční `scale(1.07)` z `@keyframes qz-picin`
+    — `getBoundingClientRect` pak vrátil 440 px v rámu 418 a vypadalo to na ořez.
+    **Skutečný stav se změří až po `img.getAnimations().forEach(a => a.finish())`.**
+    Je to tatáž třída pasti jako zapsané „rAF neběží, když je panel skrytý" (2026-09-03).
+
 - **2026-09-04 — Průřezový audit: fond raději PRÁZDNÝ než cizí, a dvě „připravené, ale nezapojené" věci v CSS.**
   Čtyři paralelní audity (server, online klient, offline klient, CSS/přístupnost).
   Nálezy jsem ověřoval sám — agenti hlásí i věci, které neplatí, a jeden dopad nadsadil
