@@ -1092,7 +1092,7 @@
            dlaždice ~177 px a čtvercových 128 px se do ní vejde i s odsazením.
            POZOR: v tomhle komentáři nesmí být zpětné apostrofy — je uvnitř template
            literalu a ukončily by ho (CLAUDE.md 2026-09-03; právě jsem na to naletěl). -->
-      <div style="width:min(100%,560px)">
+      <div style="width:min(100%,640px)">
         <div class="qz-fieldlabel">Kdo dnes hraje?</div>
         <div class="qz-tiles" style="grid-template-columns:repeat(3,minmax(0,1fr));max-width:100%">
           ${tileHtml({ic:"🧒", img:"assets/band-deti.jpg", t:"Děti", selectable:true, sel:S.bandTouched && S.band==="deti", attr:`data-band="deti"`})}

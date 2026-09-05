@@ -393,6 +393,14 @@
   .qz-tiles:not(.qz-tiles-sec) { max-width: 940px; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile { padding: 22px 14px 18px; }
   .qz-tiles:not(.qz-tiles-sec) .ic-img { width: 128px; height: 128px; border-radius: 18px; }
+  /* Dlaždice pásem („Kdo dnes hraje?") jsou jen tři a jsou to portréty lidí — tam na
+     obrázku záleží víc než u zemí, kde nese informaci hlavně vlajka. Dostávají proto
+     větší rozměr. Stojí to ZÁMĚRNĚ hned za obecným pravidlem výš, ne o dvě stě řádků
+     níž: obě mají prakticky stejnou specificitu, takže rozhoduje pořadí, a takhle je
+     ta souvislost vidět na jednom místě. `height: auto` + `aspect-ratio` místo pevné
+     výšky drží čtverec i na telefonu, kde `max-width: 100%` obrázek srazí (jinak z něj
+     je vysoký obdélník — naměřeno 78×166). */
+  .qz-tiles .qz-tile[data-band] .ic-img { width: 160px; height: auto; aspect-ratio: 1 / 1; }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-t { font-size: 18px; }
   .qz-tiles:not(.qz-tiles-sec) .qz-tile-sub { font-size: 13px; }
 }
