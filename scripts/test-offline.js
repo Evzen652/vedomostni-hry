@@ -549,11 +549,19 @@ for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
 // spadla (jen by se vrátily rozmazané pruhy), takže je hlídá test:
 const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
 {
-  const render = SRC.slice(SRC.indexOf("function renderQuestion"), SRC.indexOf("function renderQuestion") + 2200);
+  // Obal vzniká v `picframeHtml`, ne v `renderQuestion` — bere si ho přes `ZKPicframe.html`
+  // i online část, takže obě půlky appky mají tutéž stavbu pravého sloupce (2026-09-06).
+  const render = SRC.slice(SRC.indexOf("function picframeHtml"), SRC.indexOf("function picframeHtml") + 600);
   // Uvozovky v obou vzorech jsou schválně: mutace `qz-picwrapX` prošla, dokud se hledal
   // jen podřetězec — a to je přesně tvar, jakým se třída rozejde s CSS.
   kontrola(/class="qz-picwrap"/.test(render) && /id="qz-extra"/.test(render),
-    "renderQuestion nekreslí obal .qz-picwrap s prázdným #qz-extra (rám a blok pod ním MUSÍ být v jednom obalu — dva řádky mřížky se 2026-09-06 zkoušely třikrát a pokaždé rozbily výšku rámu před odpovědí)");
+    "picframeHtml nekreslí obal .qz-picwrap s prázdným #qz-extra (rám a blok pod ním MUSÍ být v jednom obalu — dva řádky mřížky se 2026-09-06 zkoušely třikrát a pokaždé rozbily výšku rámu před odpovědí)");
+
+  // Online část kreslí otázku vlastní funkcí a rám si bere přes `ZKPicframe`. Když se
+  // přestane stěhovat, vrátí se jí rozmazané pruhy kolem ilustrace, zatímco offline
+  // půlka bude v pořádku — a přesně takhle se ty dvě půlky 2026-09-03 už jednou rozešly.
+  kontrola(/podObrazek/.test(SRC) && /podObrazek/.test(SRC_ONLINE),
+    "online.js nestěhuje vysvětlení pod ilustraci přes ZKPicframe.podObrazek");
 
   for (const fn of ["answer", "timeoutReveal"]) {
     const zac = SRC.indexOf("function " + fn + "(");

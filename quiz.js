@@ -1333,7 +1333,14 @@
     renderQuestion();
   }
 
+  // Vrací OBAL, ne jen rám: uvnitř je rám a pod ním prázdný blok, do kterého se po
+  // odpovědi stěhuje vysvětlení a tlačítka (`presunPodObrazek`). Obal je součástí
+  // téhle funkce schválně — bere si ho i online část přes `ZKPicframe.html`, takže
+  // obě půlky appky mají tutéž stavbu pravého sloupce a nemůžou se rozejít.
   function picframeHtml(q){
+    return `<div class="qz-picwrap">${ramHtml(q)}<div class="qz-extra" id="qz-extra"></div></div>`;
+  }
+  function ramHtml(q){
     const country = esc(q.country||COUNTRY), section = esc(q.section||"");
     return `<div class="qz-picframe" id="qz-pic">
       <img class="qz-picbg" id="qz-pic-bg" src="img/${esc(q.id)}.jpg" alt="" aria-hidden="true">
@@ -1349,10 +1356,11 @@
   // stav (`S`, `data`) zůstává zavřený, jinak by se online mohl začít vázat na offline.
   // Obě části sdílí `#qz-body`, takže `body.querySelector` uvnitř funguje i odsud.
   window.ZKPicframe = {
-    html: q => picframeHtml(q),        // řetězec do innerHTML
+    html: q => picframeHtml(q),        // řetězec do innerHTML (obal + rám + prázdný blok)
     wire: () => wirePic(),             // navěsí onload/onerror u ilustrace
     globe: cc => mountGlobeMedal(cc),  // připne sdílený 3D glóbus a natočí na zemi
     reveal: () => revealPic(),         // po odpovědi odhalí ilustraci
+    podObrazek: box => presunPodObrazek(box),  // přestěhuje vysvětlení a tlačítka pod rám
   };
 
   // Druhé okno, SCHVÁLNĚ oddělené od ZKPicframe — se rámem u otázky nemá nic společného
@@ -1434,10 +1442,7 @@
         <div class="qz-q">${esc(q.question)}</div>
         ${ansHtml}
       </div>
-      <div class="qz-picwrap">
-        ${picframeHtml(q)}
-        <div class="qz-extra" id="qz-extra"></div>
-      </div>
+      ${picframeHtml(q)}
     </div>`;
     wirePic(); wireTop(q); mountGlobeMedal(q.cc);
     body.querySelectorAll("#qz-box .qz-a").forEach(btn => btn.addEventListener("click", () => answer(q, answers[+btn.dataset.i])));

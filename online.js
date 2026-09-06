@@ -888,9 +888,20 @@ window.ZKOnline = (function () {
       if (vzato) return;
       vzato = true;
       stopAll();
-      veFronte = false;                 // DELETE níž je tentýž odchod, ať se neposílá dvakrát
+      veFronte = false;                 // PUT frontu ruší sám, ať se odchod neposílá dvakrát
       stat.textContent = "Soupeř nalezen!";
-      req("/match", { method: "DELETE" }).then(createLink.bind(null, true));
+      // PUT /match, ne oklika přes vlastní hru na odkaz. Do 2026-09-06 se tu opouštěla
+      // fronta, zakládala hra typu `odkaz` a do ní se pouštěl bot přes /game/:id/bot —
+      // jenže ten hru odznačí jako NEHODNOCENOU, takže veškerý provoz hlavního režimu
+      // byl mimo rating (naměřeno: po celé partii dál 1500 / RD 350 / 0 her) a v historii
+      // se hlavní režim tvářil jako souboj na odkaz.
+      req("/match", { method: "PUT", body: { time_control: "blesk" } }).then(function (r) {
+        if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Nepovedlo se.");
+        var o = r.body.opponent || {};
+        var jmeno = souperJmeno(o.nick || "", o.is_bot, r.body.game_id);
+        say("Nastoupil " + jmeno + ".");
+        beginGame(r.body.game_id, "duel", { nick: jmeno, avatar: o.avatar });
+      });
     }
     botBtn.addEventListener("click", vezmiSoupere);
 
@@ -1296,6 +1307,13 @@ window.ZKOnline = (function () {
         if (a.done) showResult(S.game.id, S.game.mode, S.game.tournamentId);
         else nextQuestion();
       });
+      // Vysvětlení a tlačítka pod ilustraci, stejně jako offline (2026-09-06). Bez toho
+      // zůstal online souboj u starého chování: rám lícoval s vysokou kartou a kolem
+      // ilustrace byly rozmazané pruhy (naměřeno 418×635 rám proti 412×235 obrázku),
+      // takže dvě půlky téže appky vypadaly různě. Stěhování dělá quiz.js, ať je logika
+      // na jednom místě — online má jen ten samý obal z `ZKPicframe.html`.
+      if (window.ZKPicframe && window.ZKPicframe.podObrazek) window.ZKPicframe.podObrazek(box);
+
       var m = body.querySelector("#zk-more");
       if (m) m.addEventListener("click", function () { showMore(a); });
     });

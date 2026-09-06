@@ -374,6 +374,36 @@ async function playAll(token, gameId, total, ms = 2000) {
   const left = await api('/api/match', { method: 'DELETE', token: C.token });
   ok(left.body.left === true, 'z fronty se dá odejít');
 
+  // GHOST Z FRONTY JE HODNOCENÝ (2026-09-06). Do téhle změny klient místo čekání opustil
+  // frontu, založil si hru typu `odkaz` a pustil do ní bota — jenže ta cesta hru odznačí
+  // jako nehodnocenou. Protože se při dnešní základně živý člověk skoro nikdy nenajde,
+  // byl VŠECHEN provoz hlavního režimu mimo rating: naměřeno 1500 / RD 350 / 0 her po
+  // celé odehrané partii. Hlídá se obojí — tvar hry i to, že ratingem skutečně hne.
+  const preGhost = (await api('/api/me', { token: C.token }))
+    .body.ratings.find(r => r.band === 'dospeli');
+  const ghost = await api('/api/match', {
+    method: 'PUT', token: C.token, body: { time_control: 'blesk' } });
+  ok(ghost.status === 200 && ghost.body.matched === true,
+     'PUT /match nasadí soupeře hned, dostal ' + ghost.status);
+  ok(ghost.body.opponent?.is_bot === 1, 'a přiznává, že je to ghost (kvůli jménu v UI)');
+
+  const ghostGame = await api(`/api/game/${ghost.body.game_id}`, { token: C.token });
+  ok(ghostGame.body.mode === 'duel',
+     'hra z fronty je duel, ne souboj na odkaz (historie by jinak lhala), je ' + ghostGame.body.mode);
+  ok(ghostGame.body.rated === true, 'a je HODNOCENÁ, jinak by rating nikdy nikomu nehnul');
+
+  await playAll(C.token, ghost.body.game_id, ghostGame.body.total, 3000);
+  const postGhost = (await api('/api/me', { token: C.token }))
+    .body.ratings.find(r => r.band === 'dospeli');
+  ok(postGhost.games === preGhost.games + 1,
+     'partie proti ghostovi se započítala (' + preGhost.games + ' → ' + postGhost.games + ')');
+  ok(postGhost.rating !== preGhost.rating,
+     'a rating se pohnul (' + Math.round(preGhost.rating) + ' → ' + Math.round(postGhost.rating) + ')');
+
+  // Bot vzatý do souboje NA ODKAZ zůstává nehodnocený — tam sis soupeře vybral,
+  // kdežto ve frontě sis vybral jen to, že chceš hrát. Kontrola výš (řádek s
+  // „rating se proti botovi nehnul") tohle drží z druhé strany.
+
   // ------------------------------------------------------------ přátelé a odveta
   section('Přátelé a odveta');
   const mineFriends = await api('/api/friends', { token: A.token });
@@ -539,6 +569,14 @@ async function playAll(token, gameId, total, ms = 2000) {
 
   const wrongBand = await api(`/api/tournament/${tour.body.id}/join`, { method: 'POST', token: kidT.token });
   ok(wrongBand.status === 409, 'jiné pásmo se do turnaje nepřidá, dostal ' + wrongBand.status);
+
+  // Detail hlídá pásmo stejně jako výpis. Do 2026-09-06 ho hlídal JEN výpis, takže si
+  // cizí pásmo přečetlo turnaj i s přezdívkami a skóre účastníků — u dětských turnajů
+  // je to přesně to, co se 2026-08-31 zavíralo u her a denní pětky. 404 (ne 403), aby
+  // se cizí pásmo nedozvědělo ani to, že turnaj existuje.
+  const detailCizi = await api(`/api/tournament/${tour.body.id}`, { token: kidT.token });
+  ok(detailCizi.status === 404, 'detail turnaje cizího pásma se nevydá, dostal ' + detailCizi.status);
+  ok(!detailCizi.body.standings, 'a nevydá s ním ani přezdívky účastníků');
 
   const joinG = await api(`/api/tournament/${tour.body.id}/join`, { method: 'POST', token: G.token });
   ok(joinG.status === 200, 'druhý hráč se přidá');

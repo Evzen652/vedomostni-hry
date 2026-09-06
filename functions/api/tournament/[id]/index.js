@@ -10,6 +10,12 @@ export async function onRequestGet({ params, request, env }) {
   const t = await env.DB.prepare('SELECT * FROM tournaments WHERE id = ?').bind(params.id).first();
   if (!t) return fail('turnaj nenalezen', 404);
 
+  // Pásmo hlídá i DETAIL, nejen výpis. Výpis to má od 2026-09-03, tady se na to
+  // zapomnělo — a detail je přitom to místo, kde jsou přezdívky a skóre účastníků.
+  // Reprodukováno 2026-09-06: dospělý účet si takhle přečetl dětský turnaj i se jmény.
+  // 404 schválně, ne 403: cizí pásmo se nemá dozvědět ani to, že turnaj existuje.
+  if (t.band !== me.band) return fail('turnaj nenalezen', 404);
+
   const standings = (await env.DB.prepare(
     `SELECT tp.user_id, tp.score, tp.games_played, u.nick, u.avatar
        FROM tournament_players tp JOIN users u ON u.id = tp.user_id

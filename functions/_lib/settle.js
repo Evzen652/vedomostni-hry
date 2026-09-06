@@ -123,6 +123,44 @@ export async function settleIfDone(env, gameId) {
 
   if (game.tournament_id) await creditTournament(env, game.tournament_id, a, b, isBot);
 
+  // HODNOCENÁ HRA PROTI GHOSTOVI (2026-09-06). Do téhle změny se každá hra s botem
+  // vracela jako nehodnocená — a protože se při dnešní základně živý člověk skoro
+  // nikdy nenajde, znamenalo to, že rating v hlavním režimu nikdy nikomu nehnul.
+  // Naměřeno: po celé odehrané partii dál 1500 / RD 350 / 0 her, žebříček trvale prázdný.
+  //
+  // Byla to navíc SLEPÁ SMYČKA: `calibrateBot` váží posun důvěrou v hráčův rating
+  // (RD 350 → nula), takže dokud hráči nehráli hodnoceně, nekalibrovali se ani boti.
+  // Ani jedna půlka toho stroje se nikdy nerozjela.
+  //
+  // Hodnotí se JEN hra, která je `rated` — tedy z fronty (PUT /api/match). Bot vzatý
+  // do souboje na odkaz i turnajová kola mají `rated = 0` a nehodnotí se dál: tam sis
+  // soupeře vybral, kdežto ve frontě sis vybral jen to, že chceš hrát.
+  const jedenBot = isBot[a.user_id] !== isBot[b.user_id];
+  if (game.rated && jedenBot) {
+    // Kalibrace PRVNÍ — čte hráčův rating před zápisem, jinak by bot honil hodnotu,
+    // kterou právě sám způsobil.
+    await calibrateBot(env, game.band, a, b, sA, isBot);
+
+    const human = isBot[a.user_id] ? b : a;
+    const botPlayer = isBot[a.user_id] ? a : b;
+    const sHuman = human === a ? sA : 1 - sA;
+    const bot = await env.DB.prepare('SELECT strength FROM bots WHERE user_id = ?')
+      .bind(botPlayer.user_id).first();
+    if (!bot) return { status: 'done', rated: false };
+
+    // Ghostovi se přisuzuje RD 120: je jistější než nováček (350), ale míň než usazený
+    // člověk (~80) — jeho síla je odvozená z kalibrace, ne odehraná pod vlastním jménem.
+    // Hráčův rating se tím hýbe pomaleji, než kdyby šlo o rovnocenného soupeře.
+    const rh = await ratingRow(env, human.user_id, game.band);
+    const nh = glicko2(rh, [{ rating: bot.strength, rd: 120, s: sHuman }]);
+    await writeRating(env, human.user_id, game.band, nh, sHuman).run();
+
+    return {
+      status: 'done', rated: true,
+      ratings: { [human.user_id]: { before: Math.round(rh.rating), after: Math.round(nh.rating) } },
+    };
+  }
+
   if (!game.rated || botInvolved) {
     if (botInvolved) await calibrateBot(env, game.band, a, b, sA, isBot);
     return { status: 'done', rated: false };

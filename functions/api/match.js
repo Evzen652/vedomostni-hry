@@ -1,6 +1,7 @@
 import { BANDS, TIME_CONTROLS, TC_NAMES, shuffledOrder, json, fail, newId, limitUctu } from '../_lib/game.js';
 import { currentUser } from '../_lib/auth.js';
 import { pickQuestions, markSeen } from '../_lib/pool.js';
+import { pickBot, botPlay } from '../_lib/bot.js';
 
 const STALE_MS = 2 * 60 * 1000;      // opuštěné položky ve frontě
 // Stejné okno i strop jako u ostatních cest zakládajících hru (game/index.js) — je to
@@ -144,6 +145,83 @@ export async function onRequestPost({ request, env }) {
     .bind(me.id, band, tcName, myRating, now).run();
 
   return json({ matched: false, waiting: true, bot_after_ms: BOT_AFTER_MS });
+}
+
+/**
+ * PUT /api/match  { time_control? } — nečekej a nastup proti ghost soupeři HNED.
+ *
+ * Do 2026-09-06 tohle dělal klient oklikou: opustil frontu, založil si vlastní hru
+ * typu `odkaz` a do ní pustil bota přes /game/:id/bot. Mělo to dva důsledky, oba zlé.
+ * Za prvé se hlavní režim ukládal do historie jako „souboj na odkaz". Za druhé
+ * `/bot` hru odznačí jako nehodnocenou (`rated = 0`) — a protože se při dnešní
+ * základně živý člověk skoro nikdy nenajde, byl VŠECHEN provoz hlavního režimu
+ * nehodnocený. Naměřeno: po celé odehrané partii měl účet dál rating 1500, RD 350
+ * a nula odehraných her, takže se do žebříčku (5 her a RD < 150) nedostal nikdy nikdo.
+ * Dlaždice přitom slibuje „Rychlé souboje o rating".
+ *
+ * ROZHODNUTÍ: hra z FRONTY je hodnocená i proti ghostovi. Není to změkčení
+ * anti-farming pravidla z `/game/:id/bot` — tam si soupeře vybíráš (nahrazuješ
+ * kamaráda, který ještě nedorazil), kdežto tady sis vybral jen to, že chceš hrát.
+ * Soupeř se losuje `pickBot` podle TVÉHO ratingu a jeho síla se kalibruje z reálných
+ * výsledků, takže výhra nad ním nese tutéž informaci jako výhra nad člověkem téže
+ * úrovně; a ghost navíc přehrává skutečné lidské odpovědi (viz _lib/bot.js).
+ * Objem hlídá týž limit `game_tries` jako u ostatních cest zakládajících hru.
+ */
+export async function onRequestPut({ request, env }) {
+  const me = await currentUser(request, env);
+  if (!me) return fail('nepřihlášen', 401);
+
+  let body = {};
+  try { body = await request.json(); } catch (e) { /* výchozí */ }
+
+  const band = me.band;
+  const tcName = body.time_control || 'blesk';
+  if (!TC_NAMES.includes(tcName)) return fail('neznámá časová kontrola: ' + tcName);
+  const tc = TIME_CONTROLS[tcName];
+  if (!BANDS.includes(band)) return fail('neznámé pásmo');
+
+  // Živý člověk má přednost: když mě někdo mezitím spároval, ghost se nezakládá.
+  const radek = await env.DB.prepare('SELECT game_id FROM queue WHERE user_id = ?')
+    .bind(me.id).first();
+  if (radek && radek.game_id) return matchedResponse(env, me.id, radek.game_id);
+
+  const pod = await limitUctu(env, me.id, 'game_tries', MAX_GAMES, WINDOW_MS);
+  if (!pod) return fail('příliš mnoho založených her, zkus to za chvíli', 429);
+
+  const mine = await env.DB.prepare('SELECT rating FROM ratings WHERE user_id = ? AND band = ?')
+    .bind(me.id, band).first();
+  const myRating = mine ? mine.rating : 1500;
+
+  const bot = await pickBot(env, band, myRating);
+  if (!bot) return fail('pro pásmo ' + band + ' není žádný soupeř', 503);
+
+  const ids = await pickQuestions(env, band, tc.count, [me.id, bot.user_id]);
+  if (ids.length < tc.count) return fail('v pásmu ' + band + ' není dost otázek', 503);
+
+  const gameId = newId();
+  await env.DB.batch([
+    env.DB.prepare(`INSERT INTO games (id, mode, band, limit_s, question_ids, orders, created_at, rated)
+                    VALUES (?, 'duel', ?, ?, ?, ?, ?, 1)`)
+      .bind(gameId, band, tc.limit_s, JSON.stringify(ids),
+            JSON.stringify(ids.map(() => shuffledOrder())), Date.now()),
+    env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 0)')
+      .bind(gameId, bot.user_id),
+    env.DB.prepare('INSERT INTO game_players (game_id, user_id, slot) VALUES (?, ?, 1)')
+      .bind(gameId, me.id),
+    env.DB.prepare('DELETE FROM queue WHERE user_id = ?').bind(me.id),
+  ]);
+  await markSeen(env, me.id, ids);
+  await markSeen(env, bot.user_id, ids);
+
+  // Ghost odehraje svou půlku hned; hráčova půlka hru dovyrovná (settleIfDone v answer.js).
+  const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(gameId).first();
+  await botPlay(env, game, bot.user_id, bot.strength);
+
+  // `pickBot` avatar nevrací (vybírá se přes tabulku `bots`), a proužek soupeře ho čeká.
+  const opp = await env.DB.prepare('SELECT nick, avatar FROM users WHERE id = ?')
+    .bind(bot.user_id).first();
+  return json({ matched: true, game_id: gameId, total: ids.length, limit_s: tc.limit_s,
+                opponent: { nick: opp.nick, avatar: opp.avatar, is_bot: 1 } });
 }
 
 export async function onRequestGet({ request, env }) {
