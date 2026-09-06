@@ -41,6 +41,8 @@ export async function onRequestPost({ request, env }) {
     await env.DB.prepare('UPDATE users SET login_fails = 0 WHERE id = ?').bind(user.id).run();
   }
 
-  const token = await signToken(user.id, sessionSecret(env));
+  // Epocha účtu MUSÍ do tokenu, jinak by se po obnově PINu nešlo přihlásit vůbec:
+  // účet by měl epochu 1, čerstvý token 0 a `currentUser` by ho hned odmítl.
+  const token = await signToken(user.id, sessionSecret(env), 90, user.token_epoch);
   return json({ id: user.id, nick: user.nick, avatar: user.avatar, band: user.band, token });
 }

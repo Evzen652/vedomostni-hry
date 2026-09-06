@@ -53,3 +53,8 @@ jobs:
       # je málo. Falešné env.DB, žádná síť.
       - name: Serverový fond otázek
         run: npm run test:pool
+
+      # Přihlašovací token: podpis, vypršení a epocha, kterou se dá vydané přihlášení
+      # zneplatnit. Čistá kryptografie nad falešným env.DB, žádná síť.
+      - name: Přihlašovací token
+        run: npm run test:auth

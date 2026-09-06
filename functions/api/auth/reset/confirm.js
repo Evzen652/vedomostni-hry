@@ -30,7 +30,12 @@ export async function onRequestPost({ request, env }) {
   }
 
   await env.DB.batch([
-    env.DB.prepare('UPDATE users SET pin_hash = ?, login_fails = 0, locked_until = 0 WHERE id = ?')
+    // `token_epoch + 1` ODHLÁSÍ VŠECHNA STARŠÍ ZAŘÍZENÍ. Token je bezstavový a platí
+    // 90 dní, takže do 2026-09-06 přežil i změnu PINu — kdo se k účtu dostal, měl ho
+    // tři měsíce bez ohledu na to, co majitel udělal. Obnova PINu je přesně ta chvíle,
+    // kdy se to má utnout: buď PIN zapomněl majitel, nebo mu ho někdo vzal.
+    env.DB.prepare(`UPDATE users SET pin_hash = ?, login_fails = 0, locked_until = 0,
+                           token_epoch = token_epoch + 1 WHERE id = ?`)
       .bind(await hashPin(v.pin), zaznam.user_id),
     env.DB.prepare('UPDATE pin_resets SET used_at = ? WHERE token_hash = ?')
       .bind(Date.now(), zaznam.token_hash),
@@ -40,10 +45,12 @@ export async function onRequestPost({ request, env }) {
   ]);
 
   const user = await env.DB.prepare(
-    'SELECT id, nick, avatar, band FROM users WHERE id = ?').bind(zaznam.user_id).first();
+    'SELECT id, nick, avatar, band, token_epoch FROM users WHERE id = ?').bind(zaznam.user_id).first();
 
   return json({
     id: user.id, nick: user.nick, avatar: user.avatar, band: user.band,
-    token: await signToken(user.id, sessionSecret(env)),
+    // Nový token nese už novou epochu, takže tohle zařízení zůstane přihlášené,
+    // zatímco všechna ostatní vypadnou.
+    token: await signToken(user.id, sessionSecret(env), 90, user.token_epoch),
   });
 }

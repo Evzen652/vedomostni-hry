@@ -44,27 +44,40 @@ const secretKey = async secret =>
 const urlB64 = s => s.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 const unUrlB64 = s => s.replace(/-/g, '+').replace(/_/g, '/');
 
-export async function signToken(userId, secret, days = 90) {
+// Token nese od 2026-09-06 i `epoch` — čítač z účtu (`users.token_epoch`). Do té doby
+// se přihlášení nedalo zneplatnit NIJAK: token platil 90 dní a změna PINu na něj neměla
+// vliv, takže kdo někomu jednou půjčil odemčený telefon, neměl jak ho vypnout.
+// Tvar je tedy `uid.exp.epoch.mac`; starší tokeny `uid.exp.mac` se berou jako epoch 0,
+// což je i výchozí hodnota sloupce — migrace tedy nikoho neodhlásí.
+// (Id nikdy neobsahuje tečku, viz `newId()` v game.js, takže dělení podle teček sedí.)
+export async function signToken(userId, secret, days = 90, epoch = 0) {
   const exp = Date.now() + days * 86400000;
-  const payload = userId + '.' + exp;
+  const payload = userId + '.' + exp + '.' + (Number(epoch) || 0);
   const mac = await crypto.subtle.sign('HMAC', await secretKey(secret), enc.encode(payload));
   return payload + '.' + urlB64(b64(mac));
 }
 
+/** Vrací `{ uid, epoch }`, nebo null. Podpis se ověřuje VŽDY, i u starého tvaru. */
 export async function verifyToken(token, secret) {
   if (!token) return null;
-  const i = token.lastIndexOf('.');
-  if (i < 0) return null;
-  const payload = token.slice(0, i);
-  const mac = token.slice(i + 1);
-  const ok = await crypto.subtle.verify('HMAC', await secretKey(secret),
-                                        unb64(unUrlB64(mac)), enc.encode(payload));
+  const casti = String(token).split('.');
+  if (casti.length < 3 || casti.length > 4) return null;
+  const mac = casti.pop();
+  const payload = casti.join('.');
+  let ok = false;
+  try {
+    ok = await crypto.subtle.verify('HMAC', await secretKey(secret),
+                                    unb64(unUrlB64(mac)), enc.encode(payload));
+  } catch (e) {
+    return null;                       // poškozený base64 v podpisu není chyba serveru
+  }
   if (!ok) return null;
-  const dot = payload.lastIndexOf('.');
-  const uid = payload.slice(0, dot);
-  const exp = Number(payload.slice(dot + 1));
+  const uid = casti[0];
+  const exp = Number(casti[1]);
+  const epoch = casti.length === 3 ? Number(casti[2]) : 0;
   if (!uid || !Number.isFinite(exp) || exp < Date.now()) return null;
-  return uid;
+  if (!Number.isFinite(epoch)) return null;
+  return { uid, epoch };
 }
 
 /** Vytáhne přihlášeného hráče z hlavičky Authorization nebo cookie. */
@@ -76,10 +89,15 @@ export async function currentUser(request, env) {
     const m = cookie.match(/(?:^|;\s*)zk_session=([^;]+)/);
     if (m) token = decodeURIComponent(m[1]);
   }
-  const uid = await verifyToken(token, sessionSecret(env));
-  if (!uid) return null;
-  return env.DB.prepare('SELECT id, nick, avatar, band, is_bot, email FROM users WHERE id = ?')
-    .bind(uid).first();
+  const overeny = await verifyToken(token, sessionSecret(env));
+  if (!overeny) return null;
+  const user = await env.DB.prepare(
+    'SELECT id, nick, avatar, band, is_bot, email, token_epoch FROM users WHERE id = ?')
+    .bind(overeny.uid).first();
+  if (!user) return null;
+  // Účet mezitím zneplatnil starší přihlášení (dnes se to děje při obnově PINu).
+  if ((user.token_epoch || 0) !== overeny.epoch) return null;
+  return user;
 }
 
 export function sessionSecret(env) {

@@ -67,6 +67,8 @@ CREATE INDEX idx_questions_online ON questions(band, online_only);
 -- ---------------------------------------------------------------- hráči
 -- Bez e-mailu: přezdívka + PIN. Dětské pásmo dostává generovanou přezdívku,
 -- aby nešlo schovat vzkaz do jména a odpadla moderace.
+-- `token_epoch` (níž) je jediná cesta, jak zneplatnit vydané přihlášení: token je
+-- bezstavový a platí 90 dní, takže bez čítače v účtu by ho nešlo odvolat vůbec.
 CREATE TABLE users (
   id           TEXT PRIMARY KEY,
   nick         TEXT NOT NULL UNIQUE,
@@ -82,6 +84,10 @@ CREATE TABLE users (
   -- Skutečná ochrana slabého PINu není hashování, ale omezení počtu pokusů.
   login_fails  INTEGER NOT NULL DEFAULT 0,
   locked_until INTEGER NOT NULL DEFAULT 0,
+  -- Čítač, který se propisuje do podepsaného tokenu. Zvýšení ODHLÁSÍ všechna zařízení
+  -- (dnes se to děje při obnově PINu). Bez něj se vydaný token nedal zneplatnit nijak
+  -- a platil 90 dní bez ohledu na to, co majitel udělal. (2026-09-06)
+  token_epoch  INTEGER NOT NULL DEFAULT 0,
   -- Totéž pro hádání cizího friend_code. Kód je JEDINÁ ochrana dětí před oslovením
   -- cizím člověkem, ale prostor 31^6 nechrání sám o sobě: útočník nehledá konkrétní
   -- dítě, stačí mu JAKÉKOLI, takže očekávaný počet pokusů klesá s počtem účtů.
