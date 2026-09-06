@@ -65,6 +65,54 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-06 — REVIZE TECHNICKÁ, LOGISTICKÁ, BEZPEČNOSTNÍ. Tři nálezy, které by se v provozu projevily až pozdě: volné textové pole u turnaje, neodvolatelné přihlášení a nasazování do NÁHLEDU místo produkce.**
+  - **NÁZEV TURNAJE BYL VOLNÉ TEXTOVÉ POLE, KTERÉ VIDÍ CIZÍ LIDÉ.** Neověřoval se nijak
+    (jen `trim().slice(0,40)`) — ověřeno, že prošlo `<img src=x onerror=alert(1)> vzkaz`.
+    XSS z toho nebylo (obě místa v `online.js` escapují), ale **escapování dělá neškodný
+    TEXT, ne neškodný KANÁL**: dětské přezdívky se generují právě proto, aby se do nich
+    nedal schovat vzkaz, a název turnaje tu ochranu obcházel jinými dveřmi. Nově stejná
+    znaková sada jako u přezdívek a **v dětském pásmu se název nebere vůbec**.
+  - **Avatar se ukládal, jak přišel** — ověřeno 10 000 znaků. Klient ho neposílá vůbec,
+    takže omezení na číslo nic neubírá.
+  - **PŘIHLÁŠENÍ NEŠLO ZNEPLATNIT.** Token je bezstavový a platí 90 dní, takže ho
+    nespravila ani změna PINu: kdo někomu půjčil odemčený telefon, neměl jak ho vypnout.
+    Nově má účet čítač `token_epoch`, který se propisuje do tokenu (`uid.exp.epoch.mac`);
+    obnova PINu ho zvýší a všechna starší zařízení vypadnou.
+    - **Starý tvar `uid.exp.mac` se bere jako epocha 0**, což je i výchozí hodnota
+      sloupce — migrace tedy nikoho neodhlásí. **A login MUSÍ podepisovat aktuální
+      epochu účtu**, jinak by se po obnově PINu nešlo přihlásit vůbec (účet by měl 1,
+      čerstvý token 0). To je ta past, na kterou se u tohohle vzoru padá.
+  - **`npm run deploy` postrádal `--branch master`**, takže nasazoval NÁHLED a ostrá
+    adresa dál servírovala starý kód. Je to přesně ta past, před kterou CLAUDE.md sám
+    varuje od 2026-09-03 — jen zůstala v nasazovacím skriptu. Nově je tam, a před
+    nasazením se automaticky pouští `predeploy` (validace dat + offline + fond + token).
+  - **Three.js je v repu, CSP je čistě `self`.** Byla to jediná externí věc, kterou appka
+    za běhu načítala. Stažený soubor má **týž otisk, jaký byl v `integrity`**, takže je
+    bajtově shodný s tím, co appka brala z CDN. `.gitattributes` ho drží bez převodu
+    konců řádků, jinak by ho git na Windows přepsal a otisk by přestal sedět.
+    Ověřeno v prohlížeči: **nula zdrojů mimo doménu**. Doplněny HSTS a Permissions-Policy.
+  - **Naměřená technická čísla pro rozhodování o obchodech:** `dist` má **199 MB
+    v 1394 souborech**, z toho 184 MB ilustrace (průměr 161 kB). Pro Pages je to
+    v pohodě (limit 20 000 souborů, 25 MiB/soubor), ale **do obalu pro obchody se to
+    zabalit nedá** — obal je bude muset brát z webu. Minimální prohlížeč vychází na
+    **Chrome 105 / Safari 15.4** kvůli `:has()` a `mask-composite`; obojí má v kódu
+    záchranu, takže starší prohlížeč appku nerozbije, jen zhorší.
+  - **Co je v pořádku a nemusí se to řešit:** PIN je PBKDF2-SHA256 se solí a porovnáním
+    v konstantním čase (15 000 iterací je vědomý kompromis kvůli stropu CPU u Workers),
+    zámek přihlašování eskaluje a nepustí ani správný PIN, SQL jde výhradně přes vazby
+    (tři interpolace v kódu jsou generátory otazníků, ne vstup), souběžná registrace
+    téže přezdívky vrací 409, nečitelné tělo 400, `npm audit` čistý, žádná runtime
+    závislost, časovače se ruší a posluchače na `document`/`window` se věší jednou.
+  - **Nový `docs/nasazeni.md`** — runbook: pořadí migrace → obsah → kód, past se špatným
+    účtem (7403/7404), SPA fallback vracející 200 na cokoli (kontroluj OBSAH, ne kód),
+    tajemství, rollback a Time Travel u D1.
+  - **Testy:** `test:api` **152**, `test:offline` **805**, nový **`test:auth`** (12 kontrol).
+    Vše ověřeno mutací. **Past při psaní testu:** české uvozovky `„…"` uvnitř JS řetězce
+    ho ukončí — `node --check` to chytí, ale hláška ukazuje na jiné místo, než kde je vina.
+  - **ZŮSTÁVÁ OTEVŘENÉ:** účet pořád **nejde smazat** (blokér pro oba obchody a povinnost
+    v EU) — je to krok 3 a potřebuje rozhodnutí, co se stane s odehranými hrami
+    (smazat × anonymizovat); appka pořád **není instalovatelná** (krok 4).
+
 - **2026-09-06 — PŘÍPRAVA NA VYDÁNÍ (kroky 1 a 2 z plánu). Největší nález: HLAVNÍ REŽIM „Hrát teď" NEHODNOTIL, takže rating ani žebříček nikdy nikomu nefungovaly.**
   Zadání znělo připravit appku pro Google Play, App Store a desktopový web, a to tak,
   aby vydělávala. Cílovka **nejsou jen děti, hrají to hlavně dospělí** (hráč to upřesnil) —
