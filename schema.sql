@@ -52,9 +52,17 @@ CREATE TABLE questions (
   -- uvnitř pásma má nulový rozptyl. Do prvního sběru dat sedí na středu.
   rating       REAL    NOT NULL DEFAULT 1500,
   served       INTEGER NOT NULL DEFAULT 0,
-  hit          INTEGER NOT NULL DEFAULT 0
+  hit          INTEGER NOT NULL DEFAULT 0,
+  -- SERVEROVÁ OTÁZKA: do veřejného webu se nekopíruje (build-public.js ji z
+  -- `dist/data/questions/*.json` vyhodí), takže její správná odpověď nikde venku není.
+  -- Offline hra ji tím pádem nikdy nedostane — hraje se jen online. Řeší to jediný
+  -- otevřený problém integrity: fond je společný, ale odpovědi musí být v prohlížeči,
+  -- takže si je dosud mohl kdokoli dohledat i pro hodnocenou hru. `pickQuestions`
+  -- serverové otázky preferuje a zbytek dobírá z veřejných, dokud jich není dost.
+  online_only  INTEGER NOT NULL DEFAULT 0
 );
 CREATE INDEX idx_questions_band ON questions(band);
+CREATE INDEX idx_questions_online ON questions(band, online_only);
 
 -- ---------------------------------------------------------------- hráči
 -- Bez e-mailu: přezdívka + PIN. Dětské pásmo dostává generovanou přezdívku,

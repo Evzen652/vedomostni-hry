@@ -28,8 +28,12 @@ export async function onRequestGet({ request, env }) {
   if (!BANDS.includes(band)) return fail('neznámé pásmo');
 
   const rows = (await env.DB.prepare(
+    // NEJNOVĚJŠÍ PRVNÍ. Do 2026-09-06 tu bylo `ORDER BY starts_at ASC LIMIT 20`, takže
+    // jakmile bylo turnajů víc než dvacet, čerstvě založený se do seznamu NEVEŠEL —
+    // hráč ho založil a pak ho nenašel. Odhalilo se to při testech, kde se turnaje
+    // hromadí (29 běžících), ale s růstem základny je to jistota, ne náhoda.
     `SELECT * FROM tournaments WHERE band = ? AND starts_at + duration_min * 60000 > ?
-      ORDER BY starts_at ASC LIMIT 20`)
+      ORDER BY starts_at DESC LIMIT 20`)
     .bind(band, Date.now() - 3600000).all()).results;
 
   return json({

@@ -25,7 +25,10 @@ function spocitej() {
   for (const f of fs.readdirSync(DIR).filter(f => f.endsWith(".json")).sort()) {
     const cc = f.replace(/\.json$/, "");
     const qs = JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8"));
-    index[cc] = Array.isArray(qs) ? qs.length : 0;
+    // Serverové otázky se nepočítají: index popisuje fond, se kterým hraje OFFLINE
+    // appka, a ta je od 2026-09-06 nedostane (build-public.js je z `dist/` vyhazuje).
+    // Kdyby se počítaly, dlaždice by slibovaly víc otázek, než kolik jich je k dispozici.
+    index[cc] = Array.isArray(qs) ? qs.filter(q => q.online_only !== true).length : 0;
   }
   return index;
 }

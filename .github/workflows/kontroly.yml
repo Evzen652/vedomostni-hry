@@ -47,3 +47,9 @@ jobs:
       # jednou — tudy se přes odvetu daly vyrábět hodnocené výhry. Taky falešné env.DB.
       - name: Expirace her
         run: npm run test:expire
+
+      # Dělení fondu na veřejný a serverový. Hlídá, že online hra losuje přednostně
+      # z otázek, které nejsou na webu — a že se přesto neodmítne hrát, dokud jich
+      # je málo. Falešné env.DB, žádná síť.
+      - name: Serverový fond otázek
+        run: npm run test:pool

@@ -121,6 +121,26 @@ for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý 
   }
 }
 
+// Podíl serverového fondu. Otázky s `online_only: true` se nekopírují na web, takže
+// jejich správná odpověď není veřejně k dohledání — a jen z nich může být online hra
+// prokazatelně poctivá. Dokud jich je málo, `pickQuestions` dobírá z veřejných, takže
+// se nic nerozbije; je to ale přesně to číslo, které říká, nakolik jde ratingu věřit.
+{
+  let serverovych = 0, celkem = 0;
+  for (const f of qFiles) {
+    for (const q of JSON.parse(fs.readFileSync(path.join(QDIR, f), "utf8"))) {
+      celkem++; if (q.online_only === true) serverovych++;
+    }
+  }
+  const podil = celkem ? Math.round((serverovych / celkem) * 1000) / 10 : 0;
+  if (!serverovych) {
+    warn("serverový fond je PRÁZDNÝ — online hra losuje z otázek, jejichž odpovědi jsou " +
+         "veřejně v dist/data/questions (viz krok 2 v plánu vydání)");
+  } else {
+    warn("serverový fond: " + serverovych + " z " + celkem + " otázek (" + podil + " %)");
+  }
+}
+
 // ---- výstup ----
 console.log(`Zkontrolováno: ${qCount} otázek v ${qFiles.length} souboru/ech, ${cardIds.size} karet, ${imgs.length} obrázků.\n`);
 if (problems.length) { console.log(`CHYBY (${problems.length}):`); problems.forEach(p => console.log("  ✗ " + p)); }

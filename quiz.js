@@ -504,7 +504,12 @@
     if(!chybi.length) return;
     const nactene = await Promise.all(chybi.map(cc =>
       fetch(`data/questions/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[])));
-    chybi.forEach((cc,i) => { data.qByCc[cc] = nactene[i] || []; });
+    // `online_only` se odfiltruje i tady, i když je build-public.js z veřejných dat
+    // vyhazuje: v lokálním vývoji se servíruje kořen repa, kde JSOU, a offline hra
+    // by je jinak nabízela — tedy jinak než nasazená appka. Druhá pojistka stojí nic.
+    chybi.forEach((cc,i) => {
+      data.qByCc[cc] = (nactene[i] || []).filter(q => q.online_only !== true);
+    });
   }
   // dostupnost otázek
   function qsForCc(cc){

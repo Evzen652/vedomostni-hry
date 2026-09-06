@@ -49,9 +49,35 @@ for (const f of [...SOUBORY, ...JEDNOTLIVE]) {
 }
 for (const s of SLOZKY) celkem += kopirujStrom(s);
 
+// SERVEROVÉ OTÁZKY SE NA WEB NEDOSTANOU (2026-09-06). Fond je společný pro offline
+// i online hru, takže správné odpovědi musely být v prohlížeči — a tím pádem si je
+// kdokoli mohl dohledat i pro HODNOCENOU online partii. Otázky s `online_only: true`
+// se proto z veřejných dat vyhazují tady, na jednom místě, až při sestavení výstupu:
+// v repu i v databázi zůstávají, jen ven nejdou.
+//
+// Index počtů se musí přepočítat ZE ZBYLÝCH otázek, jinak by dlaždice offline hry
+// slibovaly víc, než kolik jich appka doopravdy má.
+let vyhozeno = 0;
+const indexDist = {};
+const QDIR = path.join(OUT, "data", "questions");
+if (fs.existsSync(QDIR)) {
+  for (const f of fs.readdirSync(QDIR).filter(f => f.endsWith(".json"))) {
+    const cesta = path.join(QDIR, f);
+    const qs = JSON.parse(fs.readFileSync(cesta, "utf8"));
+    const verejne = qs.filter(q => q.online_only !== true);
+    vyhozeno += qs.length - verejne.length;
+    indexDist[f.replace(/\.json$/, "")] = verejne.length;
+    // Formát fondu je 1 mezera + CRLF (CLAUDE.md) — dist není místo, kde to měnit.
+    fs.writeFileSync(cesta, JSON.stringify(verejne, null, 1).replace(/\n/g, "\r\n"), "utf8");
+  }
+  fs.writeFileSync(path.join(OUT, "data", "questions-index.json"),
+    JSON.stringify(indexDist, null, 2) + "\n", "utf8");
+}
+
 // Kořen webu musí appku podat taky — kdo napíše holou doménu, nesmí dostat 404.
 // hra.html je podle CLAUDE.md domovská stránka, tak z ní uděláme i index.html.
 fs.copyFileSync(path.join(KOREN, "hra.html"), path.join(OUT, "index.html"));
 celkem++;
 
-console.log("dist/ hotov: " + celkem + " souborů");
+console.log("dist/ hotov: " + celkem + " souborů" +
+  (vyhozeno ? " (serverových otázek vynecháno: " + vyhozeno + ")" : ""));
