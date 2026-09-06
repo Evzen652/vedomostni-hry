@@ -1,0 +1,5 @@
+# Three.js je VENDOROVANÝ soubor (assets/three.min.js) a musí zůstat bajtově shodný
+# s tím, co se stáhlo z npm — jeho otisk sha384 je zapsaný v komentáři v hra.html jako
+# důkaz, že jde o týž soubor, jaký appka načítala z CDN. Bez tohohle řádku by ho git
+# při každém checkoutu na Windows přepsal na CRLF a otisk by přestal sedět.
+assets/three.min.js -text
