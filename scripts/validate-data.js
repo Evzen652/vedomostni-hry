@@ -98,6 +98,29 @@ const imgs = fs.existsSync(P("img")) ? fs.readdirSync(P("img")).filter(f => f.en
 const known = new Set([...seenIds, ...cardIds]);
 for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý obrázek img/${f} (žádná otázka ani karta)`);
 
+// Index počtů (data/questions-index.json) je GENEROVANÝ a appka na něm od 2026-09-06
+// stojí při startu: výběrové dlaždice z něj berou počty, aby se nemusel stahovat celý
+// fond (4,72 MB). Zastaralý index by tiše lhal o počtech nebo by u nové země hlásil
+// „Brzy otázky", i když otázky má — proto to není upozornění, ale CHYBA.
+// Spraví se `npm run build-index`.
+{
+  const { spocitej } = require("./build-question-index.js");
+  const cesta = P("data/questions-index.json");
+  if (!fs.existsSync(cesta)) {
+    bad("chybí data/questions-index.json — spusť `npm run build-index`");
+  } else {
+    const ulozeny = JSON.parse(fs.readFileSync(cesta, "utf8"));
+    const cerstvy = spocitej();
+    const klice = new Set([...Object.keys(ulozeny), ...Object.keys(cerstvy)]);
+    const rozdily = [...klice].filter(cc => (ulozeny[cc] || 0) !== (cerstvy[cc] || 0));
+    if (rozdily.length) {
+      bad("data/questions-index.json je zastaralý u " + rozdily.length + " zemí (" +
+        rozdily.slice(0, 5).map(cc => cc + ": " + (ulozeny[cc] || 0) + " → " + (cerstvy[cc] || 0)).join(", ") +
+        (rozdily.length > 5 ? ", …" : "") + ") — spusť `npm run build-index`");
+    }
+  }
+}
+
 // ---- výstup ----
 console.log(`Zkontrolováno: ${qCount} otázek v ${qFiles.length} souboru/ech, ${cardIds.size} karet, ${imgs.length} obrázků.\n`);
 if (problems.length) { console.log(`CHYBY (${problems.length}):`); problems.forEach(p => console.log("  ✗ " + p)); }

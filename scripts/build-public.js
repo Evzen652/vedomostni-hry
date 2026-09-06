@@ -19,7 +19,7 @@ const OUT = path.join(KOREN, "dist");
 // zůstane bez CSP — pravidla v něm se nikde jinde neuplatní. (2026-09-01)
 const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers"];
 const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
-const JEDNOTLIVE = ["data/fondy.json"];
+const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json"];
 
 function kopiruj(zdroj, cil) {
   fs.mkdirSync(path.dirname(cil), { recursive: true });

@@ -462,16 +462,29 @@
     if(g3 && g3.canvas){ bg.innerHTML=""; bg.appendChild(g3.canvas); resizeGlobe(); g3.auto=true; g3.targetX=0.32; }
   }
 
+  // PŘI STARTU SE STAHUJE INDEX, NE CELÝ FOND (2026-09-06). Do téhle změny se tu
+  // čekalo na 56 souborů a 4,72 MB a appka do té doby ukazovala BÍLOU STRÁNKU —
+  // naměřeno 2 923 ms na localhostu, kde není žádná síť; na mobilních datech řádově
+  // víc. Přitom výběrové obrazovky potřebují jen POČTY otázek na zemi, což je
+  // `data/questions-index.json` o 666 bajtech. Samotné otázky se dotahují až ve
+  // chvíli, kdy je vybraná země (`ensureQuestionsFor`), a jsou tedy jen ty, se
+  // kterými se opravdu hraje.
   async function ensureData(){
     if(data) return;
-    const ccs = Object.keys(COUNTRY_BY_CC);
-    const [fondy, ...qsets] = await Promise.all([
+    const [fondy, index] = await Promise.all([
       fetch("data/fondy.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
-      ...ccs.map(cc => fetch(`data/questions/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]))
+      fetch("data/questions-index.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
     ]);
-    const qByCc = {}; ccs.forEach((cc,i)=> qByCc[cc] = qsets[i]||[]);
     // data.questions = aktuálně vybraný fond; cardsById = karty vybrané země
-    data = { qByCc, cardsByCc:{}, cardsById:{}, questions:[], fondy };
+    data = { qByCc:{}, index, cardsByCc:{}, cardsById:{}, questions:[], fondy };
+    // Záchranná síť: bez indexu by dlaždice hlásily u všech zemí „Brzy otázky" a do hry
+    // by se nedalo dostat vůbec. Radši pomalý start než mrtvá appka — a `validate`
+    // hlídá, aby index existoval a seděl, takže sem se to za normálního běhu nedostane.
+    if(!Object.keys(index).length){
+      const ccs = Object.keys(COUNTRY_BY_CC);
+      await ensureQuestionsFor(ccs);
+      ccs.forEach(cc => { data.index[cc] = (data.qByCc[cc]||[]).length; });
+    }
     initVoices();
     // hostitel: logo
     const im = new Image(); im.onload = () => { hostAv.innerHTML=""; const el=document.createElement("img"); el.src="assets/logo.jpg"; hostAv.appendChild(el); }; im.src="assets/logo.jpg";
@@ -484,17 +497,38 @@
     }
     data.cardsById = data.cardsByCc[cc];
   }
+  // Dotáhne otázky vybraných zemí. Volá se z `selectCountries`, takže se do `applyPool`
+  // nikdy nedostane nenačtená země — a naopak se nikdy nestahuje víc, než se hraje.
+  async function ensureQuestionsFor(ccs){
+    const chybi = ccs.filter(cc => !data.qByCc[cc]);
+    if(!chybi.length) return;
+    const nactene = await Promise.all(chybi.map(cc =>
+      fetch(`data/questions/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[])));
+    chybi.forEach((cc,i) => { data.qByCc[cc] = nactene[i] || []; });
+  }
   // dostupnost otázek
   function qsForCc(cc){
     if(!data.qByCc) return [];
     if(Array.isArray(cc)) return cc.flatMap(c => data.qByCc[c] || []);
     return data.qByCc[cc] || [];
   }
+  // POČET otázek země bez jejich stažení — z indexu. Výběrové dlaždice ukazují počty
+  // u všech 55 zemí naráz, takže kdyby se počítalo z `qsForCc`, stáhl by se tím zpátky
+  // celý fond a rychlý start by byl k ničemu.
+  function pocetProCc(cc){
+    if(Array.isArray(cc)) return cc.reduce((s,c) => s + pocetProCc(c), 0);
+    if(data.qByCc[cc]) return data.qByCc[cc].length;     // co je stažené, je pravdivější
+    return (data.index && data.index[cc]) || 0;
+  }
   function countriesInCont(cont){ return Object.keys(COUNTRY_BY_CC).filter(cc => COUNTRY_CONT[cc]===cont); }
-  function contHasQuestions(cont){ return countriesInCont(cont).some(cc => qsForCc(cc).length>0); }
+  function contHasQuestions(cont){ return countriesInCont(cont).some(cc => pocetProCc(cc)>0); }
   // nastaví vybrané země + načte karty; pool otázek pak dořeší applyPool()
   async function selectCountries(ccs){
     S.sel = S.sel || {}; S.sel.ccs = ccs; S.sel.cc = ccs.length === 1 ? ccs[0] : null;
+    // Otázky se stahují AŽ TADY, ne při startu appky. Musí to být před `applyPool`,
+    // který z nich staví fond — a obě jeho volání (výběr témat i obnova rozehrané hry)
+    // jsou až za `selectCountries`, takže stačí jedno místo.
+    await ensureQuestionsFor(ccs);
     if(ccs.length === 1){
       const cc = ccs[0]; COUNTRY = COUNTRY_BY_CC[cc] || cc.toUpperCase(); FLAG = COUNTRY_FLAG[cc] || "🏳️";
       await loadCardsFor(cc);
@@ -855,11 +889,11 @@
     const availConts = CONTINENTS.filter(c => contHasQuestions(c.id));
     const tiles = CONTINENTS.map(c => {
       const has = contHasQuestions(c.id);
-      const n = countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length;
+      const n = countriesInCont(c.id).filter(cc=>pocetProCc(cc)>0).length;
       return tileHtml({ ic:c.emoji, img:`assets/cont-${c.id}.jpg`, t:c.name, sub: has ? (n+" "+plur(n,"země","země","zemí")) : "Připravujeme",
         soon:!has, selectable:true, attr:`data-cont="${c.id}"` });
     }).join("");
-    const worldN = availConts.reduce((sum,c)=> sum + countriesInCont(c.id).filter(cc=>qsForCc(cc).length>0).length, 0);
+    const worldN = availConts.reduce((sum,c)=> sum + countriesInCont(c.id).filter(cc=>pocetProCc(cc)>0).length, 0);
     const worldTile = tileHtml({ ic:"🌍", img:"assets/cont-world.jpg", t:"Celý svět", selectable:true,
       sub: worldN+" "+plur(worldN,"země","země","zemí"), attr:`data-cont="__all__"` });
     const steps = [{label:"Kontinent"}];
@@ -906,13 +940,13 @@
     say("A do které země?");
     document.getElementById("qz-shell").style.transform="";
     const ccList = contsArr.flatMap(cont => countriesInCont(cont));
-    const hasSome = ccList.some(cc => qsForCc(cc).length > 0);
-    const ccWithQ = ccList.filter(cc => qsForCc(cc).length > 0);
-    const allTotal = ccWithQ.reduce((sum,cc) => sum + qsForCc(cc).length, 0);
+    const hasSome = ccList.some(cc => pocetProCc(cc) > 0);
+    const ccWithQ = ccList.filter(cc => pocetProCc(cc) > 0);
+    const allTotal = ccWithQ.reduce((sum,cc) => sum + pocetProCc(cc), 0);
     const allCcTile = hasSomeTile => hasSomeTile ? tileHtml({ ic:"🌍", img:"assets/country-all.jpg", t:"Všechny země", selectable:true,
       sub: allTotal+" "+plur(allTotal,"otázka","otázky","otázek"), attr:`data-cc="__all__"` }) : "";
     const tiles = ccList.length ? ccList.map(cc => {
-      const n = qsForCc(cc).length;
+      const n = pocetProCc(cc);
       return tileHtml({ ic:COUNTRY_FLAG[cc]||"🏳️", img:`assets/country-${cc}.jpg`, t:COUNTRY_BY_CC[cc]||cc,
         sub: n ? (n+" "+plur(n,"otázka","otázky","otázek")) : "Brzy otázky",
         soon:!n, selectable:true, attr:`data-cc="${cc}"` });
