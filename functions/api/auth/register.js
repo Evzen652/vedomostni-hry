@@ -1,5 +1,5 @@
 import { json, fail, newId, BANDS, limitIp } from '../../_lib/game.js';
-import { hashPin, signToken, sessionSecret, generateNick, validateNick, validatePin, friendCode, validateEmail } from '../../_lib/auth.js';
+import { hashPin, signToken, sessionSecret, generateNick, validateNick, validatePin, friendCode, validateEmail, validateAvatar } from '../../_lib/auth.js';
 
 // Klouzavé okno na REGISTRACI, klíčované IP (2026-09-02) — v okamžiku volání ještě
 // neexistuje účet, na který by šlo pověsit sloupec jako u friend_tries/game_tries.
@@ -67,7 +67,7 @@ export async function onRequestPost({ request, env }) {
 
   const id = 'u' + newId().slice(1);
   const pin_hash = await hashPin(pinCheck.pin);
-  const avatar = String(body.avatar || '1');
+  const avatar = validateAvatar(body.avatar);
 
   const code = friendCode();
   await env.DB.batch([

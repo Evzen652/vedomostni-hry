@@ -12,11 +12,10 @@
   # quiz.js i online.js — dokud se neudělá, drží aspoň `connect-src 'self'`, které
   # zastaví odeslání ukradeného tokenu jinam.
   #
-  # cdn.jsdelivr.net je povolený jen kvůli Three.js — jediné externí věci, kterou appka
-  # načítá. Má `integrity` v hra.html, takže podstrčený soubor prohlížeč neprovede.
-  # Kdyby se knihovna jednou stáhla do repa (konvence „vše je součástí repa"), tenhle
-  # zdroj odsud zmizí a CSP bude čistě 'self'.
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  # CSP je od 2026-09-06 čistě 'self': Three.js se přestal tahat z cdn.jsdelivr.net
+  # a leží v repu (assets/three.min.js, bajtově shodný — otisk sedí na `integrity`,
+  # které tu bylo předtím). Appka tedy za běhu nesahá na žádný cizí server.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
   # Appka nemá co být v cizím rámu — bez tohohle ji jde vložit do stránky, která kolem
   # ní postaví vlastní kulisu a sbírá, co do ní hráč píše.
   X-Frame-Options: DENY
@@ -24,3 +23,10 @@
   # Odkaz na obnovu PINu chodí jako `/hra?obnova=TOKEN`. Bez tohohle by ho prohlížeč
   # poslal v `Referer` každému externímu zdroji na stránce.
   Referrer-Policy: same-origin
+  # Appka nepotřebuje ani jedno z toho, co se tu zakazuje. Bez hlavičky by k tomu měl
+  # přístup jakýkoli podstrčený skript — a u appky, která míří do obchodů, se navíc
+  # v recenzi ptají, proč o oprávnění žádá něco, co ho nepoužívá.
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  # HTTPS napevno. Pages sice na HTTP nesluchá, ale bez HSTS se dá první požadavek
+  # z psané adresy odchytit dřív, než dojde na přesměrování.
+  Strict-Transport-Security: max-age=31536000; includeSubDomains

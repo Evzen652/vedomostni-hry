@@ -1,5 +1,5 @@
 import { BANDS, TIME_CONTROLS, TC_NAMES, json, fail, newId, limitUctu } from '../../_lib/game.js';
-import { currentUser } from '../../_lib/auth.js';
+import { currentUser, validateTournamentName } from '../../_lib/auth.js';
 import { MIN_DURATION_MIN, MAX_DURATION_MIN, MAX_START_DELAY_MIN, tournamentStatus, tournamentEndsAt }
   from '../../_lib/tournament.js';
 
@@ -71,7 +71,17 @@ export async function onRequestPost({ request, env }) {
   const delay = Number.isInteger(body.starts_in_min) ? body.starts_in_min : 0;
   if (delay < 0 || delay > MAX_START_DELAY_MIN) return fail('neplatný začátek');
 
-  const name = String(body.name || '').trim().slice(0, 40) || DEFAULT_NAME[tcName];
+  // Název je jediné volné textové pole, které v appce vidí cizí lidé. V DĚTSKÉM PÁSMU
+  // se proto nebere vůbec: přezdívky se tam generují právě proto, aby se do nich nedal
+  // schovat vzkaz, a název turnaje by tu ochranu obešel jinými dveřmi. V ostatních
+  // pásmech platí stejná znaková sada jako u přezdívek — do 2026-09-06 se název
+  // neověřoval nijak (ověřeno: prošlo `<img src=x onerror=alert(1)> vzkaz 😈`).
+  let name = DEFAULT_NAME[tcName];
+  if (me.band !== 'deti' && body.name != null && String(body.name).trim() !== '') {
+    const kontrola = validateTournamentName(body.name);
+    if (kontrola.error) return fail(kontrola.error);
+    name = kontrola.name;
+  }
   const id = newId();
   const now = Date.now();
   const startsAt = now + delay * 60000;

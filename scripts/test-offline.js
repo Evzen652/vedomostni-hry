@@ -588,6 +588,27 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
     "quiz.css ztratil pravidlo pro `.qz-play > .qz-picframe` — online souboj by přišel o rám v mřížce");
 }
 
+// ---- appka nesmí za běhu sahat na cizí server (2026-09-06) ----
+// Three.js se do téhle změny tahal z CDN — jediná externí věc, kterou appka načítala,
+// a tím i jediné místo, kudy mohl cizí skript získat tatáž práva jako online.js (včetně
+// přihlašovacího tokenu v localStorage). Teď leží v repu a CSP je čistě `self`. Obojí se
+// dá omylem vrátit jedním řádkem, tak to hlídá test.
+{
+  const HTML = fs.readFileSync(path.join(process.cwd(), "hra.html"), "utf8");
+  const HEADERS = fs.readFileSync(path.join(process.cwd(), "_headers"), "utf8");
+  const cizi = (HTML.match(/(?:src|href)\s*=\s*["']https?:\/\/[^"']+/gi) || []);
+  kontrola(cizi.length === 0,
+    "hra.html načítá cizí zdroj: " + cizi.join(", ") + " — konvence je, že vše je součástí repa");
+
+  const csp = (HEADERS.split("\n").find(l => /Content-Security-Policy:/i.test(l)) || "");
+  kontrola(csp && !/https?:\/\//.test(csp.replace(/^\s*#.*/, "")),
+    "CSP pouští cizí doménu — appka nemá za běhu chodit nikam ven");
+  kontrola(/Strict-Transport-Security/i.test(HEADERS), "_headers nemá HSTS");
+  kontrola(/Permissions-Policy/i.test(HEADERS), "_headers nemá Permissions-Policy");
+  kontrola(fs.existsSync(path.join(process.cwd(), "assets", "three.min.js")),
+    "assets/three.min.js chybí — glóbus by se nevykreslil vůbec");
+}
+
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

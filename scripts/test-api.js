@@ -94,6 +94,15 @@ async function playAll(token, gameId, total, ms = 2000) {
   });
   ok(shortPin.status === 400, 'krátký PIN se odmítne, dostal ' + shortPin.status);
 
+  // Avatar je index do sady obrázků, ne text. Do 2026-09-06 se bral jak přišel, takže
+  // se registrací dal uložit řetězec libovolné délky — ověřeno 10 000 znaků. Klient ho
+  // neposílá vůbec, takže omezením na číslo se nic neztrácí.
+  const dlouhyAvatar = await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'Av_' + uniq(), pin: '1234', avatar: 'X'.repeat(5000) },
+  });
+  ok(dlouhyAvatar.body.avatar === '1',
+     'nesmyslný avatar spadne na výchozí, je „' + String(dlouhyAvatar.body.avatar).slice(0, 20) + '"');
+
   const kid = await api('/api/auth/register', { method: 'POST', body: { band: 'deti', pin: '4321' } });
   ok(kid.status === 201, 'dětská registrace projde bez zadané přezdívky');
   ok(/\s/.test(kid.body.nick || ''), 'dítě dostalo generovanou přezdívku: ' + kid.body.nick);
@@ -574,6 +583,31 @@ async function playAll(token, gameId, total, ms = 2000) {
   // cizí pásmo přečetlo turnaj i s přezdívkami a skóre účastníků — u dětských turnajů
   // je to přesně to, co se 2026-08-31 zavíralo u her a denní pětky. 404 (ne 403), aby
   // se cizí pásmo nedozvědělo ani to, že turnaj existuje.
+  // NÁZEV TURNAJE JE JEDINÉ VOLNÉ TEXTOVÉ POLE, KTERÉ VIDÍ CIZÍ LIDÉ. Do 2026-09-06 se
+  // nekontrolovalo vůbec — ověřeno, že prošlo `<img src=x onerror=alert(1)> vzkaz 😈`.
+  // Escapování na výstupu z toho dělá neškodný text, ne neškodný KANÁL: dětské přezdívky
+  // jsou generované právě proto, aby se do nich nedal schovat vzkaz.
+  // Vlastní účet schválně: limit zakládání turnajů je 5 za hodinu na účet, takže by
+  // tyhle tři kontroly ukously kvótu hráči F a spadly by mu testy o kus níž.
+  const N = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'Nazvy_' + uniq(), pin: '1234' } })).body;
+
+  const zlyNazev = await api('/api/tournament', {
+    method: 'POST', token: N.token,
+    body: { time_control: 'blesk', duration_min: 15, name: '<img src=x onerror=alert(1)>' } });
+  ok(zlyNazev.status === 400, 'název turnaje se značkami se odmítne, dostal ' + zlyNazev.status);
+
+  const dobryNazev = await api('/api/tournament', {
+    method: 'POST', token: N.token,
+    body: { time_control: 'blesk', duration_min: 15, name: 'Vecerni klani' } });
+  ok(dobryNazev.body.name === 'Vecerni klani', 'slušný název projde beze změny');
+
+  const detskyNazev = await api('/api/tournament', {
+    method: 'POST', token: kidT.token,
+    body: { time_control: 'blesk', duration_min: 15, name: 'Tajny vzkaz pro tebe' } });
+  ok(detskyNazev.status !== 201 || !/vzkaz/i.test(detskyNazev.body.name || ''),
+     'v dětském pásmu se název turnaje nebere vůbec, je „' + (detskyNazev.body.name || '—') + '"');
+
   const detailCizi = await api(`/api/tournament/${tour.body.id}`, { token: kidT.token });
   ok(detailCizi.status === 404, 'detail turnaje cizího pásma se nevydá, dostal ' + detailCizi.status);
   ok(!detailCizi.body.standings, 'a nevydá s ním ani přezdívky účastníků');

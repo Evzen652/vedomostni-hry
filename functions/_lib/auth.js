@@ -127,6 +127,35 @@ export function friendCode() {
   return Array.from(buf, b => abc[b % abc.length]).join('');
 }
 
+/**
+ * Název turnaje. Je to jediné volné textové pole v celé appce, které vidí CIZÍ lidé —
+ * a do 2026-09-06 se nekontrolovalo vůbec (jen `trim().slice(0,40)`), takže se do něj
+ * dal napsat vzkaz komukoli v pásmu, HTML i cokoli jiného. Escapování na výstupu z toho
+ * dělá neškodný text, ne neškodný KANÁL: dětské přezdívky jsou generované právě proto,
+ * aby se do nich nedal schovat vzkaz, a tohle to obcházelo jinými dveřmi.
+ * Proto stejná znaková sada jako u přezdívek — a v dětském pásmu se název nebere vůbec
+ * (viz tournament/index.js).
+ */
+export function validateTournamentName(name) {
+  const n = String(name || '').trim().replace(/\s+/g, ' ');
+  if (n.length < 3) return { error: 'název turnaje musí mít aspoň 3 znaky' };
+  if (n.length > 40) return { error: 'název turnaje smí mít nejvýš 40 znaků' };
+  if (!/^[\p{L}\p{N} _-]+$/u.test(n)) {
+    return { error: 'název turnaje smí mít jen písmena, číslice, mezeru, _ a -' };
+  }
+  return { name: n };
+}
+
+/**
+ * Avatar je index do sady obrázků, ne text. Do 2026-09-06 se bral jak přišel
+ * (`String(body.avatar || '1')`), takže se registrací dal uložit řetězec libovolné
+ * délky — ověřeno 10 000 znaků. Klient ho neposílá vůbec, takže se tím nic neomezuje.
+ */
+export function validateAvatar(avatar) {
+  const a = String(avatar == null ? '' : avatar).trim();
+  return /^[1-9][0-9]?$/.test(a) ? a : '1';
+}
+
 export function validatePin(pin) {
   const p = String(pin || '');
   if (!/^\d{4,8}$/.test(p)) return { error: 'PIN musí být 4 až 8 číslic' };

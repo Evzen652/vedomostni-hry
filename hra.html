@@ -20,18 +20,18 @@
       <div id="qz-body" style="display:flex;flex-direction:column;flex:1"></div>
     </div>
   </div>
-  <!-- Jediná externí věc, kterou appka za běhu načítá. `integrity` je proto povinné:
-       bez něj by kompromitované CDN (nebo MITM) podstrčilo skript se stejnými právy
-       jako online.js, tedy i s přístupem k přihlašovacímu tokenu v localStorage.
-       Otisk je spočítaný ze skutečně staženého souboru (three.js r137, MIT), ne opsaný.
-       Když se hash nesejde, prohlížeč skript neprovede a glóbus se prostě nevykreslí —
-       quiz.js s tím počítá (`typeof THREE === "undefined"`), takže hra běží dál.
-       Pozn.: pořád to odporuje konvenci „vše je součástí repa" (kvůli ní se 2026-07-27
-       stahovala do assets/ i textura glóbu). Stažení knihovny do repa by tu závislost
-       odstranilo úplně; zatím je to aspoň ověřené. (2026-09-01) -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"
-          integrity="sha384-WgG62qhSmnkOoW866eO1eLJd4HfFyZ2f8XnAK/VJR9mv/JffD14EgnvgpNEw3MmF"
-          crossorigin="anonymous"></script>
+  <!-- Three.js JE NOVĚ V REPU (2026-09-06). Do té doby se tahal z cdn.jsdelivr.net —
+       jediná externí věc, kterou appka za běhu načítala, a tím i jediné místo, kde
+       kompromitované CDN mohlo podstrčit skript se stejnými právy jako online.js,
+       tedy i s přístupem k přihlašovacímu tokenu v localStorage. `integrity` to sice
+       hlídalo, ale zůstávala závislost na cizí dostupnosti a výjimka v CSP.
+       Stažený soubor má TENTÝŽ otisk, jaký tu byl v `integrity`
+       (sha384-WgG62qhSmnkOoW866eO1eLJd4HfFyZ2f8XnAK/VJR9mv/JffD14EgnvgpNEw3MmF),
+       takže je bajtově shodný s tím, co appka načítala doteď — three.js r137, MIT.
+       Tím se zároveň naplnila konvence „vše je součástí repa" a CSP je čistě 'self'.
+       Když se skript nenačte, quiz.js s tím počítá (`typeof THREE === "undefined"`)
+       a hra běží dál, jen bez glóbu. -->
+  <script src="assets/three.min.js"></script>
   <!-- Online režim je nepovinný: když se nenačte nebo neběží server, quiz.js
        čtvrtou dlaždici prostě nevykreslí a offline hra funguje dál. -->
   <script src="online.js"></script>
