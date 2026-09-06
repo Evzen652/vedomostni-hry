@@ -65,6 +65,69 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-06 — PŘÍPRAVA NA VYDÁNÍ (kroky 1 a 2 z plánu). Největší nález: HLAVNÍ REŽIM „Hrát teď" NEHODNOTIL, takže rating ani žebříček nikdy nikomu nefungovaly.**
+  Zadání znělo připravit appku pro Google Play, App Store a desktopový web, a to tak,
+  aby vydělávala. Cílovka **nejsou jen děti, hrají to hlavně dospělí** (hráč to upřesnil) —
+  tím padá většina omezení kolem reklamy v dětských appkách. Plán je v artefaktu
+  „Zeměkvíz do obchodů"; tady je, co se z něj UDĚLALO.
+  - **NÁLEZ, KTERÝ JE ZÁSADNÍ PRO CELÝ PRODUKT: „Hrát teď" bylo celé mimo rating.**
+    Když se do 4 s nenašel živý soupeř, klient **opustil frontu, založil si hru typu
+    `odkaz` a pustil do ní bota** — a `/game/:id/bot` hru odznačí jako nehodnocenou.
+    Při dnešní základně se člověk skoro nikdy nenajde, takže **veškerý** provoz hlavního
+    režimu byl nehodnocený: naměřeno po celé odehrané partii **rating 1500, RD 350,
+    0 her**, žebříček (5 her a RD < 150) trvale prázdný — a dlaždice přitom slibuje
+    „Rychlé souboje o rating". V historii se navíc hlavní režim tvářil jako „odkaz".
+    - **Byla to SLEPÁ SMYČKA:** `calibrateBot` váží posun důvěrou v hráčův rating
+      (RD 350 → nula), takže dokud hráči nehráli hodnoceně, **nekalibrovali se ani boti**.
+      Ani jedna půlka toho stroje se nikdy nerozjela.
+    - **ROZHODNUTÍ: hra Z FRONTY je hodnocená i proti ghostovi** (nový `PUT /api/match`
+      zakládá rovnou `duel` s `rated = 1`, `settle.js` ji hodnotí proti kalibrované síle
+      bota s RD 120). **Není to změkčení anti-farming pravidla** z `/game/:id/bot`: tam
+      si soupeře vybíráš (nahrazuješ kamaráda, co nedorazil), tady sis vybral jen to,
+      že chceš hrát. Soupeř se losuje podle tvého ratingu, jeho síla se kalibruje
+      z reálných výsledků a ghost přehrává skutečné lidské odpovědi. Bot v souboji na
+      odkaz i turnajová kola zůstávají nehodnocené.
+  - **START: 4,72 MB → 4,6 kB.** Appka stahovala při startu celý fond (56 souborů)
+    a do té doby byla bílá stránka — **2 923 ms na localhostu, kde není žádná síť**.
+    Nově se stahuje `data/questions-index.json` (666 B) s počty na zemi a otázky se
+    dotahují až při výběru země (`ensureQuestionsFor` v `selectCountries`, tedy před
+    `applyPool`). Index je **generovaný a verzovaný** (`npm run build-index`), protože
+    ho appka musí najít i v lokálním vývoji; že nezastaral, hlídá `validate` jako CHYBU.
+    Záchranná síť: bez indexu se stáhne všechno jako dřív — radši pomalý start než
+    mrtvá appka.
+  - **FOND SE DĚLÍ NA VEŘEJNÝ A SERVEROVÝ (`online_only`).** Správné odpovědi musí být
+    v prohlížeči kvůli offline hře, takže si je kdokoli mohl dohledat i pro hodnocenou
+    online partii. Otázka s tímhle příznakem zůstává v repu i v databázi, ale
+    **`build-public.js` ji z `dist/data` vyhodí**, do indexu se nepočítá a `pickQuestions`
+    ji **preferuje**; zbytek dobírá z veřejných, protože prázdná online hra by byla horší
+    než hra, kterou jde podvádět. Migrace `2026-09-06-online-only.sql`.
+    **Obsah zatím žádný — je to mechanismus, ne hotový fond**, a `validate` to hlásí.
+  - **Detail turnaje nehlídal pásmo.** Výpis ho hlídá od 2026-09-03, detail se zapomněl,
+    takže si dospělý účet přečetl **dětský turnaj i s přezdívkami a skóre**. Reprodukováno
+    živě. Vrací 404, ne 403 — cizí pásmo se nemá dozvědět ani to, že turnaj existuje.
+  - **Výpis turnajů bral 20 NEJSTARŠÍCH**, takže při víc než dvaceti se čerstvě založený
+    turnaj do seznamu nevešel a zakladatel ho nenašel. Nově nejnovější první. Odhalilo se
+    to tím, že v testovací databázi se turnaje nahromadily (29 běžících) — **testovací
+    „smetí" tu posloužilo jako simulace budoucího provozu**.
+  - **DVĚ POLOŽKY Z OTEVŘENÉHO SEZNAMU NEPLATÍ, ověřeno:** poškozený token vrací **401**
+    (ne 500 — nejspíš zásluha `_middleware.js`), a **odveta hodnocenou prohru nevyrobí** —
+    zkusil jsem přesně ten scénář (zakladatel odehraje, soupeř o hře neví, posun o 3 dny,
+    expirace) a rating soupeře se nehnul, protože `expireStaleGames` nehodnotí hru, kterou
+    hráč nezačal. Odveta pořád vkládá soupeře bez jeho vědomí, ale škoda z toho není.
+  - **CO ZŮSTÁVÁ JAKO BLOKÉR PRO OBCHODY** (neopraveno, je to krok 3 a 4):
+    **účet nejde smazat** (mezi 24 endpointy taková cesta není, a Apple i Google to
+    vyžadují u každé appky, která zakládá účty) a **appka není instalovatelná** —
+    chybí manifest i service worker, takže offline nefunguje a Apple by ji jako pouhý
+    obal webu odmítl.
+  - **Testy:** `test:api` **148** (bylo 140), `test:offline` **800**, nový **`test:pool`**
+    (8 kontrol, falešné `env.DB`, v CI). Všechny nové kontroly **ověřeny mutací** —
+    včetně toho, že serverová otázka neunikne do `dist` a že se nepočítá do indexu.
+  - **PAST PŘI MUTAČNÍM TESTOVÁNÍ NA WINDOWS, dvakrát za sezení:** PowerShell čte `.ps1`
+    jako ANSI, takže **skript s diakritikou bez BOM spadne na parse error**; a
+    `$ErrorActionPreference = "Stop"` + `npm ... 2>&1` shodí běh na prvním varování npm,
+    protože 5.1 dělá z nativního stderr chybu. Skripty na mutace psát **bez diakritiky**
+    (nebo s BOM) a exit kód číst z `$LASTEXITCODE`, ne z textu výstupu.
+
 - **2026-09-06 — HOTOVO: vysvětlení a tlačítka jsou POD ILUSTRACÍ. Prázdno kolem obrázku 206 → 3 px na stranu. Rozhodla DVĚ věci: jeden obal místo dvou řádků mřížky, a obrázek POSTAVENÝ DO TOKU.**
   Dotažení předchozího zápisu (ten zůstává níž, protože jeho tři slepé uličky platí dál).
   Karta drží otázku, odpovědi a hlášku; **zisk bodů, vysvětlení a obě tlačítka se po
