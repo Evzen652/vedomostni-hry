@@ -265,10 +265,11 @@
    a před ním stojí tatáž malovaná hvězda jako v bodovém praporku nahoře, ať se to čte
    jako totéž skóre. Rámeček to nedostává schválně: v pravém sloupci jsou dvě tlačítka
    a ohraničený obrázek, třetí orámovaná věc by z toho udělala změť.
-   Velikost hvězdy se řídí `font-size` řádku: ikony mají inline `width:1em`, a to by
-   pravidlo v CSS neporazilo (inline styl vyhrává), takže se hvězda zvětšuje takhle. */
+   Hvězda tu NENÍ schválně (hráč ji tu 2026-09-07 nechtěl): patří k praporku nahoře,
+   který drží celkové skóre, kdežto tady jde o přírůstek. U zlaté odpovědi hvězda
+   zůstává, ale nese ji ta hláška, ne číslo. */
 .qz-hl.points { text-transform: none; letter-spacing: 0; font-size: 19px; font-weight: 700;
-  color: #a8752a; margin: 10px 0 0; display: flex; align-items: baseline; gap: 8px; }
+  color: #a8752a; margin: 10px 0 0; }
 .qz-hl.points b { font-family: 'Nunito', sans-serif; font-size: 27px; font-weight: 800;
   line-height: 1; color: #b07d18; }
 .qz-ht { font-family: 'Nunito', sans-serif; font-size: clamp(16px, 2.1vw, 20px); line-height: 1.45; font-weight: 560; }

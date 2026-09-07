@@ -736,15 +736,14 @@
 
   // ---- výběr tématu: kontinent → země → sekce (jako u glóbu) ----
   function plur(n, one, few, many){ n=Math.abs(n); if(n===1) return one; if(n>=2&&n<=4) return few; return many; }
-  // Zisk bodů je ODMĚNA, takže nese malovanou hvězdu a velké číslo — do 2026-09-07 to
-  // byla věta o 12,5 px v barvě štítků a mezi obrázkem a vysvětlením zanikla („text
-  // získáváš 100 bodů je málo výrazné"). Hvězda je tatáž `ico-star.png` jako v bodovém
-  // praporku nahoře, ať se to čte jako totéž skóre, ne jako druhý údaj.
-  // PLUS je nutné, ne ozdobné: samotné „100 bodů" se dá číst jako celkové skóre —
-  // a u první otázky je to dokonce totéž číslo, co svítí v praporku.
-  // `sHvezdou` je false u zlaté odpovědi: ta si hvězdu kreslí sama o kus dřív.
-  function pointsLabel(n, sHvezdou = true){
-    return `${sHvezdou ? ICO_STAR + " " : ""}<b>+${n}</b> ${plur(n,"bod","body","bodů")}`;
+  // Zisk bodů je ODMĚNA, takže velké číslo — do 2026-09-07 to byla věta o 12,5 px
+  // v barvě štítků a mezi obrázkem a vysvětlením zanikla („text získáváš 100 bodů
+  // je málo výrazné"). PLUS je nutné, ne ozdobné: samotné „100 bodů" se dá číst jako
+  // celkové skóre, a u první otázky je to dokonce totéž číslo, co svítí v praporku.
+  // HVĚZDA SEM NEPATŘÍ (hráč ji tu 2026-09-07 výslovně nechtěl) — je od praporku
+  // nahoře, který drží celkové skóre; tady jde o přírůstek, ne o skóre.
+  function pointsLabel(n){
+    return `<b>+${n}</b> ${plur(n,"bod","body","bodů")}`;
   }
   // pásmový fond otázek (kids -> q.kids, puberťáci -> !kids && difficulty<=2, dospělí -> !kids)
   // POZOR: `data.questions` je fond UŽ ZÚŽENÝ výběrem země a tématu (applyPool), ne celý
@@ -1683,17 +1682,15 @@
     box.insertAdjacentHTML("beforeend", `
       <div class="qz-quipbox">
         <div class="qz-ht">„${esc(quipText||"")}"</div>
-        ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained,false)}`:""}`:pointsLabel(gained)}</div>`:""}
+        ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
       </div>
       ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`);
     if(allowSteal) wireSteal(q, choice); else wireFrow(q);
     presunPodObrazek(box);
-    // Zisk se přetáčí od nuly, praporek nahoře ze starého skóre na nové — obě čísla
-    // tedy dojedou k výsledku zároveň a je vidět, že spolu souvisí. Blok už je
-    // přestěhovaný pod obrázek; animace stěhování přežije, běží na tomtéž uzlu.
-    // Předpona „+" se předává zvlášť: je uvnitř `<b>`, takže by ji přepis textu smazal.
-    const ziskCislo = body.querySelector(".qz-hl.points b");
-    if(ziskCislo) animujCislo(ziskCislo, 0, gained, 650, "+");
+    // POČÍTADLO JE JEN V PRAPORKU NAHOŘE (upřesnění hráče 2026-09-07). Zkusil jsem
+    // dopočítávat i zisk pod obrázkem, ale dvě běžící čísla naráz jsou přebytek —
+    // a hlavně: přírůstek je pevný údaj, není co odpočítávat. Praporek naproti tomu
+    // ukazuje, jak skóre ROSTE, a tam ten pohyb něco říká.
   }
 
   function stealHtml(q, wrongChoice){
