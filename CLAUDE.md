@@ -61,6 +61,15 @@ při psaní nového CSS s tím počítej.
 
 ---
 
+## ⇢ ZAČNI TADY, KDYŽ POKRAČUJEŠ PO PŘESTÁVCE
+
+**[docs/pokracovani.md](docs/pokracovani.md)** — kde jsme skončili (7. 9. 2026), jak
+rozběhnout appku na novém počítači (`.dev.vars` se negituje!), co je hotové, co dělat
+dál a které migrace čekají na produkci. Práce žije na větvi
+**`claude/pokracujeme-e79708`**; `master` je pozadu a sloučení je rozhodnutí hráče.
+
+---
+
 ## Systémová rozhodnutí (log)
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.

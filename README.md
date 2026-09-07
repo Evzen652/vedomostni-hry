@@ -10,11 +10,24 @@ Vědomostní kvíz (zeměpis). Samostatný projekt, oddělený od aplikace **Gl�
 > Kanonický zdroj konvencí a rozhodnutí projektu je [CLAUDE.md](CLAUDE.md). Tenhle
 > soubor je jen rozcestník; když se něco rozchází, platí CLAUDE.md.
 
+> **Pokračuješ na jiném počítači?** Začni u [docs/pokracovani.md](docs/pokracovani.md) —
+> je tam stav rozdělané práce, rozběhnutí načisto (pozor, `.dev.vars` se negituje)
+> i seznam toho, co dělat dál.
+
 ## Spuštění
 
 ```bash
 npm install          # jednou; jediná závislost je wrangler
 npm run dev          # wrangler pages dev . → http://localhost:8788/hra
+```
+
+Před prvním během vytvoř v kořeni `.dev.vars` (negituje se, vzor je
+v `.dev.vars.example`) — bez něj server odmítne podepisovat tokeny a registrace
+padá na 500:
+
+```
+ALLOW_DEV_SECRET=1
+SESSION_SECRET=lokalni-test-tajemstvi-nepouzivat-v-produkci
 ```
 
 `npm run dev` obsluhuje statické soubory **i** `/api/*` (Functions) proti **lokální**
