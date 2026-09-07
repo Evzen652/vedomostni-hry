@@ -63,10 +63,14 @@ při psaní nového CSS s tím počítej.
 
 ## ⇢ ZAČNI TADY, KDYŽ POKRAČUJEŠ PO PŘESTÁVCE
 
-**[docs/pokracovani.md](docs/pokracovani.md)** — kde jsme skončili (7. 9. 2026), jak
-rozběhnout appku na novém počítači (`.dev.vars` se negituje!), co je hotové, co dělat
-dál a které migrace čekají na produkci. Práce žije na větvi
-**`claude/pokracujeme-e79708`**; `master` je pozadu a sloučení je rozhodnutí hráče.
+1. **[docs/predavaci-protokol.md](docs/predavaci-protokol.md)** — co převzít, co ověřit
+   (s očekávanými čísly, ať se pozná rozdíl mezi „jiné prostředí" a „regrese"), tvrdá
+   pravidla a fronta práce. **Proveď převzetí podle bodu 2, než začneš cokoli měnit.**
+2. **[docs/pokracovani.md](docs/pokracovani.md)** — popisný stav: co je hotové, jak
+   appku rozběhnout načisto (`.dev.vars` se negituje!) a které migrace čekají na produkci.
+
+Práce žije na větvi **`claude/pokracujeme-e79708`**; `master` je pozadu a sloučení
+i nasazení jsou rozhodnutí hráče.
 
 ---
 
