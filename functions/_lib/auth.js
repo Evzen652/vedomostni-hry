@@ -92,9 +92,14 @@ export async function currentUser(request, env) {
   const overeny = await verifyToken(token, sessionSecret(env));
   if (!overeny) return null;
   const user = await env.DB.prepare(
-    'SELECT id, nick, avatar, band, is_bot, email, token_epoch FROM users WHERE id = ?')
+    'SELECT id, nick, avatar, band, is_bot, email, token_epoch, deleted_at FROM users WHERE id = ?')
     .bind(overeny.uid).first();
   if (!user) return null;
+  // Smazaný profil je náhrobek kvůli cizí historii (viz DELETE /api/me), ne účet.
+  // Stejně jako u login.js je tahle podmínka NEDOSAŽITELNÁ: mazání zvyšuje
+  // `token_epoch`, takže každý dřív vydaný token padne o řádek níž. Žádný test na ni
+  // nesáhne (ověřeno mutací) — je tu pro případ, že by epocha jednou přestala stačit.
+  if (user.deleted_at) return null;
   // Účet mezitím zneplatnil starší přihlášení (dnes se to děje při obnově PINu).
   if ((user.token_epoch || 0) !== overeny.epoch) return null;
   return user;

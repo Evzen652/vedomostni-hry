@@ -259,10 +259,18 @@
 .qz-hlaska { background: linear-gradient(135deg, #fdf3d7, #fbe9d2); border: 2px solid var(--ochre); border-radius: 16px;
   padding: 14px 18px; box-shadow: 0 4px 0 #c78f35; }
 .qz-hl { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #a8752a; margin-bottom: 5px; font-family: 'Nunito', sans-serif; font-weight: 700; }
-/* zisk bodů je věta, ne štítek — verzálky s velkým prostrkáním by ji dělaly křiklavou.
-   Stojí pod hláškou, takže odsazení patří nahoru (na rozdíl od štítků „čas"/„vyhlášení"). */
-.qz-hl.points { text-transform: none; letter-spacing: .02em; font-size: 12.5px;
-  margin: 8px 0 0; }
+/* ZISK BODŮ JE ODMĚNA, ne popisek. Do 2026-09-07 to byl řádek o 12,5 px v téže ochrové
+   barvě jako štítky, takže mezi obrázkem a vysvětlením zanikl — hráč dostal body a nebylo
+   to na obrazovce znát („text získáváš 100 bodů je málo výrazné"). Číslo je proto velké
+   a před ním stojí tatáž malovaná hvězda jako v bodovém praporku nahoře, ať se to čte
+   jako totéž skóre. Rámeček to nedostává schválně: v pravém sloupci jsou dvě tlačítka
+   a ohraničený obrázek, třetí orámovaná věc by z toho udělala změť.
+   Velikost hvězdy se řídí `font-size` řádku: ikony mají inline `width:1em`, a to by
+   pravidlo v CSS neporazilo (inline styl vyhrává), takže se hvězda zvětšuje takhle. */
+.qz-hl.points { text-transform: none; letter-spacing: 0; font-size: 19px; font-weight: 700;
+  color: #a8752a; margin: 10px 0 0; display: flex; align-items: baseline; gap: 8px; }
+.qz-hl.points b { font-family: 'Nunito', sans-serif; font-size: 27px; font-weight: 800;
+  line-height: 1; color: #b07d18; }
 .qz-ht { font-family: 'Nunito', sans-serif; font-size: clamp(16px, 2.1vw, 20px); line-height: 1.45; font-weight: 560; }
 /* citace po odpovědi: vědomě bez rámečku/stínu (starý .qz-hlaska box na kartě po odpovědi
    působil rozbitě — moc oddělených boxů). Jen seskupuje qz-ht + qz-hl.points, aby jim
@@ -327,6 +335,13 @@
 .qz-cardvoice { font-family: 'Nunito', sans-serif; font-style: italic; color: var(--muted); margin-top: 10px; }
 .qz-cardclose { margin-top: 14px; background: var(--coral); color: #fffdf6; border: none; border-radius: 12px; padding: 10px 20px;
   font-family: 'Nunito', sans-serif; font-weight: 650; cursor: pointer; box-shadow: 0 3px 0 #b1543f; }
+
+/* Vysvětlení, proč je hlavní akce zablokovaná (2026-09-07). Hráč nahlásil „nefunguje
+   tlačítko Pokračuj" — ono fungovalo, jen čekalo na výběr, a nikde to nebylo napsané.
+   Ztlumené tlačítko samo o sobě nestačí: pořád vypadá jako tlačítko, takže klik a nic
+   se nestane. Text stojí NAD tlačítkem, ať se čte dřív, než na něj hráč klikne podruhé. */
+.qz-actionhint { font-size: 13.5px; color: var(--muted); text-align: center;
+  margin: 0 0 10px; max-width: 44ch; margin-inline: auto; line-height: 1.5; }
 
 /* konec sóla */
 .qz-end { align-items: center; justify-content: center; text-align: center; gap: 16px; padding: 46px 24px; }

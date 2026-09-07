@@ -65,6 +65,85 @@ při psaní nového CSS s tím počítej.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-07 — Zablokovaná hlavní akce už říká, na co se čeká. A zisk bodů je konečně vidět.**
+  Hráč nahlásil: *„proč nefunguje tlačítko Pokračuj?"* Ono fungovalo — bylo `disabled`,
+  dokud nevybral zemi, a **appka to nikde neřekla**. Naměřeno `cursor: not-allowed`
+  a ztlumení na 38 %, jenže ztlumené korálové tlačítko na krémovém papíře pořád vypadá
+  jako tlačítko: klikneš, nic se nestane, nikde není proč.
+  - **Netýkalo se to jedné obrazovky, ale VŠECH ČTYŘ** (kontinent, země, téma, sólo
+    start). Sdílená `hintAkce(btn, text)` vypíše nad tlačítko větu, co appce chybí,
+    a po výběru ji zase odstraní; má `aria-live`, jinak by odečítač o důvodu neřekl nic.
+  - **Sám jsem do toho spadl týž den při průchodu appkou** — klikl jsem „Jdeme na to",
+    nic se nestalo, a odepsal jsem to jako vlastní nepozornost místo jako vadu. Když se
+    o zablokované tlačítko potkne i ten, kdo appku právě programuje, je to vada UI.
+  - **Sólo start volá `refreshStart()` hned po vykreslení.** Do té doby se stav
+    aktualizoval až po prvním kliknutí, takže hlášku „vyber, kdo hraje" viděl jen ten,
+    kdo už něco klikl — tedy nikdy ten, kdo neví kam.
+  - **Zisk bodů byl řádek o 12,5 px v barvě štítků** a mezi obrázkem a vysvětlením
+    zanikal (výtka hráče: *„text získáváš 100 bodů je málo výrazné"*). Nově je z toho
+    **malovaná hvězda + velké číslo** (27 px, ochrová) — tatáž `ico-star.png` jako
+    v bodovém praporku, ať se to čte jako totéž skóre. **Plus je nutné, ne ozdobné:**
+    samotné „100 bodů" se dá číst jako celkové skóre, a u první otázky je to dokonce
+    totéž číslo, co svítí v praporku. Rámeček to nedostalo schválně — v pravém sloupci
+    už je ohraničený obrázek a dvě tlačítka.
+  - **PAST: velikost ikony nejde přebít z CSS.** `ICO_*` mají inline `style="width:1em"`
+    a inline styl vyhraje nad pravidlem v souboru — hvězda se proto zvětšuje `font-size`
+    celého řádku, ne pravidlem na `img`.
+  - **PAST, KTEROU JSEM SI VYROBIL SÁM: mutační skript běžící na pozadí PŘEPSAL úpravu,
+    kterou jsem mezitím udělal.** Skript si na začátku udělá kopii souboru a na konci ji
+    vrátí — takže všechno, co do toho souboru přibude během běhu, tiše zmizí. Projevilo
+    se to tak, že appka servírovala starý text, ačkoli v editoru byl nový.
+    **Když běží mutace, na dotčené soubory se nesahá** (a když se musí, skript se nechá
+    doběhnout a úprava zopakuje).
+  - **Nová kontrola v `test:offline` hlídá, že všechny čtyři obrazovky hlášku
+    nastavují — a v komentáři přiznává, co NECHYTÍ:** obrazovky volají `hintAkce`
+    dvakrát (při vykreslení a po kliknutí) a zmizení jednoho z těch volání test
+    propustí. Ověřeno mutací; je to hlídka proti ztrátě vazby, ne důkaz.
+  - **SKÓRE SE PŘETÁČÍ, NE PŘEPISUJE** (druhé přání hráče: *„šlo by to udělat jako
+    počítadlo, že se číslice točí?"*). `animujCislo` dopočítá praporek ze starého skóre
+    na nové a zisk od nuly; obojí doběhne zároveň, takže je vidět, že spolu souvisí.
+    Sdílí to i online část přes nové okno `ZKAnim` — kopie funkce v `online.js` by se
+    dřív nebo později rozešla, což je přesně to, co se dnes dvakrát opravovalo.
+  - **PODSTATNÝ NÁLEZ, na který jsem přišel jen díky tomu, že rAF v testovacím panelu
+    neběží: ANIMACE NESMÍ BÝT JEDINÉ, CO ČÍSLO ZAPÍŠE.** V praporku zůstal STARÝ počet
+    bodů (0), zatímco vedle svítil zisk (+300) — `requestAnimationFrame` se v odložené
+    kartě nezavolá ani jednou. Řeší to `setTimeout(dokonci, ms + 250)`: časovač na pozadí
+    běží, takže cíl dosedne vždycky. **Napřed jsem přitom udělal opak** — mutační test
+    ukázal, že tehdejší „pojistný" zápis nikdy nic nezměnil (kubický náběh dosedne na cíl
+    už o snímek dřív), tak jsem ho jako mrtvý kód smazal. Byl mrtvý ve správně běžící
+    animaci, ne v té, která se vůbec nespustí. **Pojistka patří ven z rAF, ne dovnitř.**
+  - **Past při ověřování: přepsat `document.visibilityState` na „visible" nestačí.**
+    Prohlížeč rAF v neviditelné kartě throttluje bez ohledu na tu vlastnost, takže se
+    tím jen obejde vlastní guard a animace stejně neběží — akorát se tím vyrobí přesně
+    ta situace, na kterou se pak přišlo. Skutečné chování animace se v bezhlavém panelu
+    ověřit nedá; testuje se jednotkově s falešným rAF (`rafBezi: false`).
+
+- **2026-09-07 — Profil jde smazat. HRY ZŮSTÁVAJÍ, jen se odpojí od identity — a účet se proto NEMAŽE z tabulky, ale přepíše na náhrobek.**
+  Poslední blokér obou obchodů (a povinnost v EU): appka uměla účet založit, ale ne zrušit.
+  **Rozhodl hráč:** odehrané hry zůstanou, jen se od účtu odpojí.
+  - **Smazat řádek z `users` NEJDE** a je dobře, že se to nezkoušelo: `game_players` na
+    něj odkazuje, takže by se tím rozpadla historie CIZÍM hráčům a turnajová umístění.
+    Účet se místo toho přepíše na náhrobek — jméno „Smazaný hráč", `nick_lower` na
+    technický klíč, e-mail a kód pro přátele na NULL, náhodný PIN, `deleted_at` a
+    `token_epoch + 1` (což okamžitě ruší všechna přihlášení, viz zápis o epoše níž).
+    Mažou se `ratings` (jinak by účet zůstal v žebříčku), `friends`, `queue`,
+    `pin_resets` a `seen_questions`.
+  - **PAST, kterou odhalil až DRUHÝ pokus: `users.nick` má UNIQUE, nejen `nick_lower`.**
+    První smazání prošlo, druhé spadlo na 500 — náhrobek nemůže mít u všech stejné
+    jméno. Přívěsek je proto **náhodný, ne odvozený z id**: z „Smazaný hráč 4m6n" se
+    nedá zpětně poznat, čí účet to byl. **Kdybych to otestoval jen jednou, jde to do
+    produkce rozbité** a narazil by na to druhý člověk, který by profil smazal.
+  - **Ověřeno na skutečné dvojici hráčů:** po smazání má soupeř svou hru dál v historii,
+    se skóre 594:594, jen jméno je „Smazaný hráč 4m6n". Rating soupeře beze změny.
+  - PIN se vyžaduje i u přihlášeného (stejně jako u změny e-mailu) a v UI je nad tím
+    ještě potvrzení — PIN chrání před cizím u odemčeného zařízení, potvrzení před
+    vlastním překliknutím. Text v Profilu **říká rovnou, že hry zůstanou**; tiché
+    „účet je pryč" by lhalo.
+  - `test:api` **162** (bylo 152), ověřeno mutací včetně toho druhého smazání.
+  - **PAST V ONLINE.JS: uvnitř řetězce v uvozovkách nesmí být české `„…"`** — ASCII
+    uvozovka řetězec ukončí. `node --check` to chytí, ale ukáže na jiné místo, než kde
+    je vina. Správně je typografická `“` (v template literalech v quiz.js to nevadí).
+
 - **2026-09-06 — REVIZE TECHNICKÁ, LOGISTICKÁ, BEZPEČNOSTNÍ. Tři nálezy, které by se v provozu projevily až pozdě: volné textové pole u turnaje, neodvolatelné přihlášení a nasazování do NÁHLEDU místo produkce.**
   - **NÁZEV TURNAJE BYL VOLNÉ TEXTOVÉ POLE, KTERÉ VIDÍ CIZÍ LIDÉ.** Neověřoval se nijak
     (jen `trim().slice(0,40)`) — ověřeno, že prošlo `<img src=x onerror=alert(1)> vzkaz`.

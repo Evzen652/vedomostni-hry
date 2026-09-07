@@ -88,6 +88,11 @@ CREATE TABLE users (
   -- (dnes se to děje při obnově PINu). Bez něj se vydaný token nedal zneplatnit nijak
   -- a platil 90 dní bez ohledu na to, co majitel udělal. (2026-09-06)
   token_epoch  INTEGER NOT NULL DEFAULT 0,
+  -- Smazaný profil se z tabulky NEMAŽE: `game_players` na něj odkazuje, takže by se tím
+  -- cizím hráčům rozpadla jejich vlastní historie. Místo toho se přepíše na náhrobek
+  -- (jméno „Smazaný hráč", bez e-mailu, bez kódu, nepoužitelný PIN) a tenhle sloupec
+  -- říká, že se na něj nedá přihlásit ani ho použít. (2026-09-07)
+  deleted_at   INTEGER NOT NULL DEFAULT 0,
   -- Totéž pro hádání cizího friend_code. Kód je JEDINÁ ochrana dětí před oslovením
   -- cizím člověkem, ale prostor 31^6 nechrání sám o sobě: útočník nehledá konkrétní
   -- dítě, stačí mu JAKÉKOLI, takže očekávaný počet pokusů klesá s počtem účtů.

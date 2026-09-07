@@ -553,6 +553,24 @@ window.ZKOnline = (function () {
         '<div class="zk-sectnote">Odhlášením se odpojíš jen z tohohle zařízení. Profil, rating i ' +
           "historie zůstávají — vrátíš se přezdívkou a PINem.</div>" +
         '<button type="button" class="qz-back" id="zk-logout">Odhlásit — přepnout na jiný profil</button>' +
+      "</div>" +
+
+      // Mazání profilu (2026-09-07). Appka ho do té doby neuměla vůbec, a je to
+      // podmínka obou obchodů i povinnost v EU. Text říká rovnou, co se stane
+      // s odehranými hrami — tichý „účet je pryč" by lhal, protože hry zůstávají.
+      '<div class="zk-sect">' +
+        "<h3>Smazání profilu</h3>" +
+        '<div class="zk-sectnote">Zmizí přezdívka, e-mail, kód pro přátele, seznam přátel ' +
+          "i rating — profil tím zmizí ze žebříčků. Odehrané hry zůstanou soupeřům " +
+          "v historii, ale už nepůjde poznat, že byly tvoje: budou vedené jako " +
+          "„Smazaný hráč“. Vrátit to nejde a přihlásit se zpátky taky ne.</div>" +
+        '<div class="zk-form">' +
+          '<div class="zk-field">' +
+            '<label class="qz-fieldlabel" for="zk-delpin">Potvrď svým PINem</label>' +
+            '<input class="qz-pname-in" id="zk-delpin" type="password" inputmode="numeric" maxlength="8" autocomplete="current-password" placeholder="••••">' +
+          "</div>" +
+        "</div>" +
+        '<button type="button" class="zk-dangerlink" id="zk-accdel">Smazat profil natrvalo</button>' +
       "</div></div>";
 
     function ulozit(metoda) {
@@ -575,6 +593,24 @@ window.ZKOnline = (function () {
     if (del) del.addEventListener("click", function () { ulozit("DELETE"); });
     body.querySelector("#zk-logout").addEventListener("click", function () {
       token.clear(); S = {}; renderAuth();
+    });
+
+    // Smazání profilu. Potvrzení je NAVÍC k PINu: PIN chrání před cizím člověkem
+    // u odemčeného zařízení, tohle před vlastním překliknutím — akce je nevratná
+    // a na rozdíl od odhlášení se z ní nedá vrátit ničím.
+    body.querySelector("#zk-accdel").addEventListener("click", function () {
+      var pin = body.querySelector("#zk-delpin").value || "";
+      if (!pin) return renderAccount("Napiš PIN, jinak profil smazat nejde.");
+      if (!window.confirm("Opravdu smazat profil " + (m.nick || "") + "?\n\n" +
+          "Přezdívka, e-mail, přátelé i rating zmizí. Odehrané hry zůstanou soupeřům " +
+          "v historii jako „Smazaný hráč“. Vrátit to nejde.")) return;
+      req("/me", { method: "DELETE", body: { pin: pin } }).then(function (r) {
+        if (r.status !== 200) return renderAccount((r.body && r.body.error) || "Nepovedlo se.");
+        token.clear(); S = {};
+        // Druhý parametr renderAuth je hláška nad formulářem (jediné místo, kam se
+        // po smazání dá něco napsat — profil, ze kterého se to dělalo, už neexistuje).
+        renderAuth("register", "Profil je smazaný. Kdyby ses vrátil, začneš načisto.");
+      });
     });
 
     // Změna pásma. Tlačítko je disabled, dokud hráč neklikne na JINÉ pásmo, než
@@ -1272,8 +1308,15 @@ window.ZKOnline = (function () {
       say(a.correct ? "Správně!" : pick === -1 ? "Čas vypršel." : "Tentokrát vedle.");
       // Ilustrace je odměna za odpověď, ne nápověda — do téhle chvíle je v rámu glóbus.
       if (window.ZKPicframe) window.ZKPicframe.reveal();
+      // Skóre se v praporku PŘETÁČÍ ze starého na nové, stejně jako offline (2026-09-07).
+      // Dopočítávání dělá quiz.js přes `ZKAnim`, ať je ta logika v appce jen jednou;
+      // když modul chybí (samostatně nasazený online), spadne to na dosavadní přepis.
       var pill = body.querySelector("#zk-score");
-      if (pill) pill.innerHTML = starScore(a.score);
+      if (pill) {
+        var cislo = pill.querySelector("b");
+        if (cislo && window.ZKAnim) window.ZKAnim.cislo(cislo, Number(cislo.textContent) || 0, a.score);
+        else pill.innerHTML = starScore(a.score);
+      }
 
       var more = a.more_fact
         ? '<button class="qz-more" id="zk-more">Více o ' + esc(a.about || "tom") +

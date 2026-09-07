@@ -736,7 +736,16 @@
 
   // ---- výběr tématu: kontinent → země → sekce (jako u glóbu) ----
   function plur(n, one, few, many){ n=Math.abs(n); if(n===1) return one; if(n>=2&&n<=4) return few; return many; }
-  function pointsLabel(n){ return `Získáváš ${n} ${plur(n,"bod","body","bodů")}`; }
+  // Zisk bodů je ODMĚNA, takže nese malovanou hvězdu a velké číslo — do 2026-09-07 to
+  // byla věta o 12,5 px v barvě štítků a mezi obrázkem a vysvětlením zanikla („text
+  // získáváš 100 bodů je málo výrazné"). Hvězda je tatáž `ico-star.png` jako v bodovém
+  // praporku nahoře, ať se to čte jako totéž skóre, ne jako druhý údaj.
+  // PLUS je nutné, ne ozdobné: samotné „100 bodů" se dá číst jako celkové skóre —
+  // a u první otázky je to dokonce totéž číslo, co svítí v praporku.
+  // `sHvezdou` je false u zlaté odpovědi: ta si hvězdu kreslí sama o kus dřív.
+  function pointsLabel(n, sHvezdou = true){
+    return `${sHvezdou ? ICO_STAR + " " : ""}<b>+${n}</b> ${plur(n,"bod","body","bodů")}`;
+  }
   // pásmový fond otázek (kids -> q.kids, puberťáci -> !kids && difficulty<=2, dospělí -> !kids)
   // POZOR: `data.questions` je fond UŽ ZÚŽENÝ výběrem země a tématu (applyPool), ne celý
   // repertoár. Do 2026-09-04 měla každá větev `if(f.length) pool=f`, tedy tichý fallback
@@ -874,6 +883,26 @@
     head.style.top = Math.round(ref.bottom - shellRect.top + 24) + "px";
   }
   window.addEventListener("resize", positionPickHead);
+  // ZABLOKOVANÁ HLAVNÍ AKCE MUSÍ ŘÍCT, CO JÍ CHYBÍ (2026-09-07, po hlášce hráče
+  // „proč nefunguje tlačítko Pokračuj?"). Tlačítko bylo `disabled`, protože nebyla
+  // vybraná země — jenže to appka nikde neřekla: hráč klikne, nic se nestane a nikde
+  // není proč. Ztlumení na 38 % opacity to nezachrání, protože pořád vypadá jako
+  // tlačítko. Týkalo se to VŠECH čtyř výběrových obrazovek stejně.
+  // `aria-live` je tu schválně: odečítač jinak o důvodu neřekne vůbec nic.
+  function hintAkce(btn, text){
+    if(!btn || !btn.parentNode) return;
+    let h = btn.parentNode.querySelector(".qz-actionhint");
+    if(text){
+      if(!h){
+        h = document.createElement("p");
+        h.className = "qz-actionhint";
+        h.setAttribute("aria-live", "polite");
+        btn.parentNode.insertBefore(h, btn);
+      }
+      if(h.textContent !== text) h.textContent = text;
+    } else if(h) h.remove();
+  }
+
   function tileHtml(o){ // {ic,img,t,sub,soon,attr,selectable,sel}
     const soon = o.soon ? " soon" : "";
     const sel = o.sel ? " sel" : "";
@@ -933,8 +962,10 @@
           else { selected.add(cont); b.classList.add("sel"); }
         }
         startBtn.disabled = selected.size === 0;
+        hintAkce(startBtn, startBtn.disabled ? "Vyber aspoň jeden kontinent — nebo rovnou Celý svět." : "");
       });
     });
+    hintAkce(startBtn, "Vyber aspoň jeden kontinent — nebo rovnou Celý svět.");
     startBtn.addEventListener("click", goNext);
   }
 
@@ -990,9 +1021,13 @@
           if(selected.has(cc)){ selected.delete(cc); b.classList.remove("sel"); }
           else { selected.add(cc); b.classList.add("sel"); }
         }
-        if(startBtn) startBtn.disabled = selected.size === 0;
+        if(startBtn){
+          startBtn.disabled = selected.size === 0;
+          hintAkce(startBtn, startBtn.disabled ? "Klepni na zemi, kterou chceš hrát — můžeš jich vybrat víc." : "");
+        }
       });
     });
+    hintAkce(startBtn, "Klepni na zemi, kterou chceš hrát — můžeš jich vybrat víc.");
     if(startBtn) startBtn.addEventListener("click", goNext);
   }
 
@@ -1024,7 +1059,9 @@
     const startBtn = body.querySelector("#qz-sec-start");
     function syncStart(){
       startBtn.disabled = selected.size === 0;
+      hintAkce(startBtn, startBtn.disabled ? "Vyber téma — nebo Vybrat vše, ať se do toho zamíchá všechno." : "");
     }
+    syncStart();
     const goNext = () => {
       if(!selected.size) return;
       S.sel.section = selected.has("__all__") ? "__all__" : [...selected];
@@ -1196,6 +1233,12 @@
                             `Zkus jiné pásmo, přidej téma nebo zemi — drobečky nahoře tě vezmou zpátky.`;
       } else if(prazd){ prazd.remove(); }
       go.disabled = !(S.bandTouched && S.qLimitTouched && total);
+      // Sólo start má DVĚ podmínky, takže hláška musí říct, která z nich chybí —
+      // „něco ještě vyber" by hráče nechalo hádat. Prázdný fond má vlastní vysvětlení
+      // o pár řádků výš, tam se hint neplete.
+      hintAkce(go, !total ? "" :
+        !S.bandTouched ? "Vyber, kdo hraje — podle toho se losují otázky." :
+        !S.qLimitTouched ? "Vyber, na kolik otázek si troufáš." : "");
     }
     function bindQLimits(){
       body.querySelectorAll("[data-qlimit]").forEach(b => b.addEventListener("click", () => {
@@ -1211,6 +1254,9 @@
       refreshStart();
     }));
     bindQLimits();
+    // Jednou hned po vykreslení, ať hláška „vyber, kdo hraje" svítí od začátku.
+    // Bez toho se ukázala až po prvním kliknutí — tedy nikdy tomu, kdo neví, kam kliknout.
+    refreshStart();
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
 
@@ -1409,6 +1455,13 @@
   // Online bere `{difficulty, kids}` ze serveru, offline z JSONu; tvar je stejný.
   window.ZKDiff = { html: q => diffHtml(q) };
 
+  // Třetí okno ven: dopočítávání čísla. Online část si praporek se skóre kreslí sama
+  // (`#zk-score` v online.js), takže by jinak číslo naskakovalo skokem, zatímco offline
+  // by se přetáčelo — a rozdíl mezi půlkami appky je přesně to, co se dnes dvakrát
+  // opravovalo (ilustrace, plochá šipka). Kopie funkce do online.js by se dřív nebo
+  // později rozešla, takže se sdílí ta jediná.
+  window.ZKAnim = { cislo: (el, od, na, ms, predpona) => animujCislo(el, od, na, ms, predpona) };
+
   // odhalení fotky u odpovědi — fotka je odměna, ať ji není nutné hledat scrollem
   function revealPic(){
     const pic=body.querySelector("#qz-pic"); if(!pic) return;
@@ -1540,7 +1593,49 @@
     const frow=box.querySelector(".qz-frow"); if(frow) extra.appendChild(frow);
   }
 
-  function updateScorePill(i){ const el=body.querySelector(`.qz-plscore[data-score="${i}"]`); if(el) el.textContent=S.players[i].score; }
+  /**
+   * Skóre se do praporku nezapíše skokem, ale DOPOČÍTÁ SE (přání hráče 2026-09-07):
+   * číslice se přetáčejí z původní hodnoty na novou. Je to jediná chvíle v celé hře,
+   * kdy se odměna dá ukázat pohybem — a praporek je zároveň jediné místo, kde je
+   * vidět celkové skóre, takže rolování říká „přibylo ti", ne jen „je to 300".
+   *
+   * DVĚ POJISTKY, bez kterých by to bylo horší než skok:
+   *  - `prefers-reduced-motion` — kdo si animace vypnul, dostane rovnou výsledek;
+   *  - skrytá karta prohlížeče, kde `requestAnimationFrame` NEBĚŽÍ (past zapsaná
+   *    2026-09-03 u glóbu). Bez téhle větve by v odložené kartě zůstalo staré číslo.
+   * ANIMACE JE OZDOBA, HODNOTA NE — proto je tu ještě `setTimeout` jako pojistka.
+   * Naměřeno: když `requestAnimationFrame` neběží (odložená karta, úsporný režim,
+   * přepnutí okna uprostřed), zůstal v praporku STARÝ počet bodů, zatímco vedle svítil
+   * zisk. Časovač se na rozdíl od rAF spustí i na pozadí, takže cílové číslo dosedne
+   * vždycky. Když animace doběhne normálně, zapíše se tatáž hodnota podruhé a nikdo
+   * to nepozná.
+   */
+  function animujCislo(el, od, na, ms = 650, predpona = ""){
+    if(!el) return;
+    const start = Math.round(Number(od) || 0), cil = Math.round(Number(na) || 0);
+    const napis = v => { el.textContent = predpona + v; };
+    const bezPohybu = (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+      || document.visibilityState !== "visible" || start === cil;
+    if(bezPohybu){ napis(cil); return; }
+    const t0 = performance.now();
+    let hotovo = false;
+    const dokonci = () => { if(!hotovo){ hotovo = true; napis(cil); } };
+    const krok = t => {
+      if(hotovo) return;
+      const p = Math.min(1, (t - t0) / ms);
+      // pomalejší dosednutí na konci — číslo se „doplazí", místo aby seklo
+      const e = 1 - Math.pow(1 - p, 3);
+      napis(Math.round(start + (cil - start) * e));
+      if(p < 1) requestAnimationFrame(krok); else dokonci();
+    };
+    requestAnimationFrame(krok);
+    setTimeout(dokonci, ms + 250);
+  }
+
+  function updateScorePill(i, od){
+    const el=body.querySelector(`.qz-plscore[data-score="${i}"]`);
+    if(el) animujCislo(el, od == null ? S.players[i].score : od, S.players[i].score);
+  }
 
   function answer(q, choice){
     if(S.answered) return; S.answered=true; clearTimer();
@@ -1550,11 +1645,19 @@
     if(correct){ gained=base; quipText=resolveQuip(q.quip_correct,b); }
     else if(q.golden_wrong!=null && String(choice)===String(q.golden_wrong)){ gold=true; gained=Math.round(base/2); quipText=q.golden_quip; }
     else { const dq=q.distractor_quips&&q.distractor_quips[choice]; quipText = dq?resolveQuip(dq,b):resolveQuip(q.quip_wrong,b); }
-    P.score+=gained; updateScorePill(S.turn);
+    const skorePred = P.score;
+    P.score+=gained; updateScorePill(S.turn, skorePred);
     // párty má vlastní praporek na hráče (updateScorePill výš); sólo/škola má jeden sdílený
     // v topHtml — ten se jinak přepisoval jen při vykreslení další otázky, takže nové body
-    // byly vidět až po kliku na „Další otázka", ne hned po odpovědi
-    const pill=body.querySelector("#qz-scorepill"); if(pill) pill.innerHTML=scorePillHtml();
+    // byly vidět až po kliku na „Další otázka", ne hned po odpovědi.
+    // Číslo se přetočí ze starého na nové; `innerHTML` se přepisuje jen tehdy, když
+    // uvnitř praporku není co animovat (jiná struktura, starší uložená hra).
+    const pill=body.querySelector("#qz-scorepill");
+    if(pill){
+      const cislo = pill.querySelector("b");
+      if(cislo) animujCislo(cislo, skorePred, P.score);
+      else pill.innerHTML = scorePillHtml();
+    }
     // bublina hostitele = krátký verdikt; vtipná hláška žije v panelu HLÁŠKA (ať se netočí dvakrát)
     say(verdikt(gold ? "gold" : correct ? "correct" : "wrong")); if(S.voice) speakTTS(quipText);
     revealPic();
@@ -1580,11 +1683,17 @@
     box.insertAdjacentHTML("beforeend", `
       <div class="qz-quipbox">
         <div class="qz-ht">„${esc(quipText||"")}"</div>
-        ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
+        ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained,false)}`:""}`:pointsLabel(gained)}</div>`:""}
       </div>
       ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`);
     if(allowSteal) wireSteal(q, choice); else wireFrow(q);
     presunPodObrazek(box);
+    // Zisk se přetáčí od nuly, praporek nahoře ze starého skóre na nové — obě čísla
+    // tedy dojedou k výsledku zároveň a je vidět, že spolu souvisí. Blok už je
+    // přestěhovaný pod obrázek; animace stěhování přežije, běží na tomtéž uzlu.
+    // Předpona „+" se předává zvlášť: je uvnitř `<b>`, takže by ji přepis textu smazal.
+    const ziskCislo = body.querySelector(".qz-hl.points b");
+    if(ziskCislo) animujCislo(ziskCislo, 0, gained, 650, "+");
   }
 
   function stealHtml(q, wrongChoice){
@@ -1602,7 +1711,7 @@
     if(S.voice) speakTTS(stealer.name+", chceš to sebrat?");
     box.querySelectorAll("#qz-steal .qz-a").forEach(btn => btn.addEventListener("click", () => {
       const correct=String(btn.childNodes[0].textContent)===String(q.answer), g=qPoints(q);
-      if(correct){ S.players[si].score+=g; updateScorePill(si); say(stealer.name+" to sebral! +"+g); if(S.voice) speakTTS(stealer.name+" sebral body!"); }
+      if(correct){ const pred=S.players[si].score; S.players[si].score+=g; updateScorePill(si, pred); say(stealer.name+" to sebral! +"+g); if(S.voice) speakTTS(stealer.name+" sebral body!"); }
       else { say(stealer.name+" taky mimo."); if(S.voice) speakTTS(stealer.name+" taky mimo."); }
       finishSteal(q);
     }));

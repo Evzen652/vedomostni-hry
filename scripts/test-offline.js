@@ -588,6 +588,90 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
     "quiz.css ztratil pravidlo pro `.qz-play > .qz-picframe` — online souboj by přišel o rám v mřížce");
 }
 
+// ---- dopočítávání skóre (2026-09-07) ----
+// Praporek se po odpovědi přetáčí ze starého skóre na nové (přání hráče). Animaci
+// samotnou v prohlížeči bez zobrazené karty ověřit NEJDE — `requestAnimationFrame` tam
+// neběží (past zapsaná 2026-09-03) — ale to podstatné se otestovat dá: že se číslo
+// VŽDYCKY dopočítá přesně na cíl a že se v situacích, kdy animace nemá běžet, dosadí
+// rovnou. Funkce se vytáhne ze zdroje a spustí ve `vm` s falešným rAF.
+//
+// CO SE OTESTOVAT NEDÁ (ověřeno mutací): že se zapisuje i POSLEDNÍ snímek. Náběh je
+// kubický, takže cílová hodnota vyjde po zaokrouhlení už o snímek dřív — vynechání
+// posledního zápisu se tedy na výsledku neprojeví nijak. Není to mezera v testu,
+// je to vlastnost té křivky.
+{
+  function spust({ hidden = false, reduced = false, od, na, predpona = "", rafBezi = true }) {
+    const zapsane = [];
+    const el = { set textContent(v) { zapsane.push(String(v)); }, get textContent() { return zapsane[zapsane.length - 1]; } };
+    let cas = 0;
+    const casovace = [];
+    const ctx = {
+      window: { matchMedia: () => ({ matches: reduced }) },
+      document: { visibilityState: hidden ? "hidden" : "visible" },
+      performance: { now: () => cas },
+      // Falešný rAF: posouvá čas po 100 ms, takže animace „doběhne" bez čekání.
+      // `rafBezi: false` napodobuje odloženou kartu, kde se callback NIKDY nezavolá.
+      requestAnimationFrame: fn => { if (!rafBezi) return; cas += 100; fn(cas); },
+      setTimeout: fn => casovace.push(fn),
+      Math,
+      Number,
+    };
+    const f = funkce("animujCislo", ctx);
+    f(el, od, na, 650, predpona);
+    casovace.forEach(fn => fn());          // pojistka doběhne až po animaci, jako v prohlížeči
+    return zapsane;
+  }
+
+  const bezneho = spust({ od: 0, na: 300 });
+  kontrola(bezneho[bezneho.length - 1] === "300",
+    "dopočítávání neskončilo přesně na cíli, ale na " + bezneho[bezneho.length - 1]);
+  kontrola(bezneho.length > 2, "číslo se nedopočítává, jen se dosadí (kroků: " + bezneho.length + ")");
+  kontrola(bezneho.every(v => Number(v) >= 0 && Number(v) <= 300),
+    "mezikroky vyjely mimo rozsah: " + bezneho.join(","));
+
+  kontrola(spust({ reduced: true, od: 0, na: 300 }).join() === "300",
+    "při vypnutých animacích se má hodnota dosadit rovnou");
+  kontrola(spust({ hidden: true, od: 0, na: 300 }).join() === "300",
+    "ve skryté kartě (kde rAF neběží) se má hodnota dosadit rovnou, jinak tam zůstane stará");
+
+  // NEJDŮLEŽITĚJŠÍ KONTROLA: animace je ozdoba, hodnota ne. Když `requestAnimationFrame`
+  // neběží (odložená karta, úsporný režim), musí cílové číslo dosednout přes `setTimeout` —
+  // jinak v praporku zůstane STARÝ počet bodů, zatímco vedle svítí zisk. Naměřeno
+  // v prohlížeči, kde rAF nejel: praporek ukazoval 0 a vedle „+300".
+  const bezRaf = spust({ od: 0, na: 300, rafBezi: false });
+  kontrola(bezRaf[bezRaf.length - 1] === "300",
+    "bez běžícího rAF zůstalo v praporku staré číslo (" + (bezRaf.join(",") || "nic se nezapsalo") + ")");
+
+  const sPlus = spust({ od: 0, na: 120, predpona: "+" });
+  kontrola(sPlus.every(v => v.startsWith("+")) && sPlus[sPlus.length - 1] === "+120",
+    "znaménko plus se při přepisu čísla ztrácí, výsledek je " + sPlus[sPlus.length - 1]);
+}
+
+// ---- zablokovaná hlavní akce musí říct, co jí chybí (2026-09-07) ----
+// Hráč nahlásil „proč nefunguje tlačítko Pokračuj?" — ono fungovalo, jen bylo `disabled`,
+// dokud nevybral zemi, a appka to nikde neřekla. Týkalo se to všech čtyř výběrových
+// obrazovek. Hlídá se, že každá z nich hlášku nastavuje: je to jednořádkové volání,
+// které se při úpravě renderu snadno ztratí, a chybět bude zase potichu.
+//
+// CO TENHLE TEST NECHYTÍ (ověřeno mutací, ať to nikdo nepřeceňuje): některé obrazovky
+// volají `hintAkce` DVAKRÁT — jednou při vykreslení a jednou po kliknutí — a zmizení
+// jednoho z těch dvou volání test propustí. Je to hlídka proti ztrátě celé vazby,
+// ne důkaz, že hláška naskočí ve všech stavech; to se dá ověřit jen v prohlížeči.
+{
+  const obrazovky = [
+    ["renderContinentPick", 3000],
+    ["renderCountryPick", 4000],
+    ["renderSectionPick", 3000],
+    ["refreshStart", 4000],       // dlouhá funkce, volání hintAkce je až na konci
+  ];
+  for (const [jmeno, delka] of obrazovky) {
+    const zac = SRC.indexOf("function " + jmeno);
+    kontrola(zac >= 0 && /hintAkce\(/.test(SRC.slice(zac, zac + delka)),
+      jmeno + " nenastavuje hlášku u zablokovaného tlačítka — hráč se nedozví, na co se čeká");
+  }
+  kontrola(/function hintAkce\(/.test(SRC), "chybí sdílená funkce hintAkce");
+}
+
 // ---- appka nesmí za běhu sahat na cizí server (2026-09-06) ----
 // Three.js se do téhle změny tahal z CDN — jediná externí věc, kterou appka načítala,
 // a tím i jediné místo, kudy mohl cizí skript získat tatáž práva jako online.js (včetně

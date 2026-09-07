@@ -787,6 +787,62 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(poZmene.status === 201 && poZmene.body.band === 'deti',
      'nová hra se losuje z nového pásma');
 
+  // ---------------------------------------------------------------- smazání profilu
+  // Apple i Google to vyžadují u appky, která zakládá účty, a v EU je to povinnost.
+  // ZPŮSOB (rozhodnutí hráče 2026-09-07): odehrané hry zůstávají, jen se odpojí od
+  // identity — účet se nemaže z tabulky, ale přepíše na náhrobek. Testuje se AŽ NA
+  // KONCI: účty, na kterých běží, tím přestanou existovat.
+  section('Smazání profilu');
+
+  const S1 = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'Maze_' + uniq(), pin: '1234', email: 'x@example.com' } })).body;
+  const S2 = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'Zbyva_' + uniq(), pin: '1234' } })).body;
+
+  // společná hra, aby bylo co odpojovat
+  const spolu = await api('/api/game', { method: 'POST', token: S2.token,
+    body: { mode: 'odkaz', time_control: 'blesk' } });
+  await api(`/api/game/${spolu.body.id}/join`, { method: 'POST', token: S1.token });
+  await playAll(S2.token, spolu.body.id, spolu.body.total, 3000);
+  await playAll(S1.token, spolu.body.id, spolu.body.total, 3000);
+
+  const smazSpatnyPin = await api('/api/me', { method: 'DELETE', token: S1.token, body: { pin: '0000' } });
+  ok(smazSpatnyPin.status === 401, 'bez správného PINu se profil nesmaže, dostal ' + smazSpatnyPin.status);
+  const smazBezPinu = await api('/api/me', { method: 'DELETE', token: S1.token, body: {} });
+  ok(smazBezPinu.status === 401, 'ani bez PINu, dostal ' + smazBezPinu.status);
+
+  const smazani = await api('/api/me', { method: 'DELETE', token: S1.token, body: { pin: '1234' } });
+  ok(smazani.status === 200, 'se správným PINem se profil smaže, dostal ' + smazani.status);
+  // Na tohle číslo se ptáme proto, že kontrola „zmizel ze žebříčku" o kus níž je sama
+  // o sobě SLEPÁ: do žebříčku se počítá až od páté hodnocené hry, takže čerstvý účet
+  // v něm není tak jako tak a projde i tehdy, když se rating vůbec nesmaže.
+  // Ověřeno mutací — bez tohohle řádku vypnutí mazání ratingů testem propadlo.
+  ok(smazani.body.odstraneno && smazani.body.odstraneno.ratingy >= 1,
+     'a smazal se i rating (odstraněno ' + JSON.stringify(smazani.body.odstraneno) + ')');
+
+  ok((await api('/api/me', { token: S1.token })).status === 401, 'token smazaného profilu neplatí');
+  const zpetLogin = await api('/api/auth/login', { method: 'POST', body: { nick: S1.nick, pin: '1234' } });
+  ok(zpetLogin.status === 401, 'na smazaný profil se nedá přihlásit, dostal ' + zpetLogin.status);
+
+  const zebr = await api('/api/leaderboard', { token: S2.token });
+  ok(!(zebr.body.rows || []).some(r => r.nick === S1.nick), 'smazaný profil zmizel ze žebříčku');
+
+  // Jádro rozhodnutí: hra zůstává soupeři v historii, jen pod anonymním jménem.
+  const hra = await api(`/api/game/${spolu.body.id}`, { token: S2.token });
+  const byvaly = (hra.body.players || []).find(p => p.nick !== S2.nick);
+  ok(byvaly && /^Smazaný hráč/.test(byvaly.nick || ''),
+     'soupeř v odehrané hře je anonymní, je „' + (byvaly && byvaly.nick) + '"');
+  ok(byvaly && typeof byvaly.score === 'number', 'a jeho skóre ve hře zůstalo');
+  ok((await api('/api/me', { token: S2.token })).body.history.some(h => h.id === spolu.body.id),
+     'hra zůstala v historii toho druhého');
+
+  // DRUHÉ smazání musí projít taky. `users.nick` je UNIQUE, takže náhrobek se stejným
+  // jménem u všech spadl na 500 — první smazání prošlo, druhé ne. Ověřeno mutací.
+  const S3 = (await api('/api/auth/register', {
+    method: 'POST', body: { band: 'dospeli', nick: 'Druhy_' + uniq(), pin: '1234' } })).body;
+  const druheSmazani = await api('/api/me', { method: 'DELETE', token: S3.token, body: { pin: '1234' } });
+  ok(druheSmazani.status === 200, 'druhý smazaný profil taky projde, dostal ' + druheSmazani.status);
+
   console.log('\n' + (fail ? 'NEPROŠLO: ' + fail + ' chyb, ' + pass + ' v pořádku'
                            : 'VŠE V POŘÁDKU: ' + pass + ' kontrol'));
   process.exit(fail ? 1 : 0);
