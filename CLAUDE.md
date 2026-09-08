@@ -107,7 +107,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     výrazem“ byla technicky přesně podle receptu — jeden hrdina, vtip na něm, tři podřízené gagy —
     a vyšel z ní zamračený zelený stařec v šedi. Déšť srazí paletu a „dignified“ model přeloží
     jako mrzutost. Prompt proto nově končí řádkem MOOD (veselé, slunečné, vtipné) a hrdina je
-    zvíře s jednoznačným úsměvem — kapr, který si místo štědrovečerní večeře užívá lázně.
+    veselý na první pohled. **Motiv nakonec zvolil hráč a je to sebeironie, ne zvíře:**
+    kulaťoučký voják v těsné uniformě zvedá půllitr s blaženým úsměvem někoho, kdo si nikdy
+    s ničím nedělal starost — „my jsme Švejci, pivaři“. **Hrdinou je ale ČLOVĚK, ne ten půllitr:**
+    velká nádoba jako dominanta by na téže obrazovce soupeřila s obřím kelímkem Severní Ameriky.
   - **Ověřeno mutací všech čtyř obrazovek** (ne jen té změněné): po odstranění všech volání
     `hintAkce` z těla funkce test pokaždé spadne a pojmenuje správnou obrazovku. Základ 817 kontrol.
 
