@@ -948,8 +948,9 @@
       <!-- Návod k obrazovce stojí POD nadpisem, ne nad tlačítkem dole (přání hráče
            2026-09-08). Je proto natrvalo vykreslený a nemizí po výběru: kdyby blikal,
            skočila by při prvním kliknutí celá mřížka dlaždic o dva řádky nahoru. Tím
-           přestal být hláškou u zablokované akce, a tak tahle obrazovka jako jediná
-           ze čtyř nevolá hintAkce() — hlídá to vlastní kontrola v test:offline.
+           přestal být hláškou u zablokované akce, takže všechny tři výběrové obrazovky
+           (kontinent, země, téma) mají .qz-pickhint a hintAkce() volá už jen sólo start,
+           kde tlačítko čeká na dvě různé volby — hlídají to kontroly v test:offline.
            POZOR: tenhle komentář je uvnitř template literalu, takže v něm nesmí být
            zpětný apostrof. Jeden tu byl a utnul řetězec — appka se nevykreslila vůbec. -->
       <p class="qz-pickhint">Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět.</p>
@@ -1021,6 +1022,10 @@
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>${esc(contLabel)} | Vyber země</h2>
+      <!-- Návod pod nadpisem, ne nad tlačítkem dole — stejně jako u výběru kontinentu.
+           Vykresluje se jen když je z čeho vybírat; u prázdného kontinentu by radil
+           klepnout na zemi, která tam žádná není. -->
+      ${hasSome ? `<p class="qz-pickhint">Klepni na zemi, kterou chceš hrát — můžeš jich vybrat víc.</p>` : ""}
       <!-- qz-tiles-cc: jediná mřížka v appce, která má desítky dlaždic (56 zemí).
            Na širokém monitoru se kvůli tomu rozšiřuje víc než ostatní obrazovky. -->
       <div class="qz-tiles qz-tiles-cc">${allCcTile(hasSome)}${tiles}</div>
@@ -1051,13 +1056,9 @@
           if(selected.has(cc)){ selected.delete(cc); b.classList.remove("sel"); }
           else { selected.add(cc); b.classList.add("sel"); }
         }
-        if(startBtn){
-          startBtn.disabled = selected.size === 0;
-          hintAkce(startBtn, startBtn.disabled ? "Klepni na zemi, kterou chceš hrát — můžeš jich vybrat víc." : "");
-        }
+        if(startBtn) startBtn.disabled = selected.size === 0;
       });
     });
-    hintAkce(startBtn, "Klepni na zemi, kterou chceš hrát — můžeš jich vybrat víc.");
     if(startBtn) startBtn.addEventListener("click", goNext);
   }
 
@@ -1080,6 +1081,7 @@
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>${(S.sel&&S.sel.cc) ? flagStamp(S.sel.cc)+" " : ""}${esc(COUNTRY)} | Vyber témata</h2>
+      <p class="qz-pickhint">Vyber téma — nebo Vybrat vše, ať se do toho zamíchá všechno.</p>
       <div class="qz-tiles qz-tiles-sec">${allTile}${secTiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-sec-start" disabled>Hrát ${handArrowSvg(false)}</button></div>
     </div>`;
@@ -1089,7 +1091,6 @@
     const startBtn = body.querySelector("#qz-sec-start");
     function syncStart(){
       startBtn.disabled = selected.size === 0;
-      hintAkce(startBtn, startBtn.disabled ? "Vyber téma — nebo Vybrat vše, ať se do toho zamíchá všechno." : "");
     }
     syncStart();
     const goNext = () => {

@@ -91,6 +91,17 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **`S.sel.conts` se při skoku musí naplnit (`["europe"]`), i když hráč Evropu nikdy neviděl.**
     `renderSectionPick` z něj staví drobečky přes `contsLabel()` a hlavně `backToCountry` —
     bez toho by Zpět ani drobeček neměly kam vést. Ověřeno: Zpět z témat vede na evropské země.
+  - **Návod patří POD nadpis, ne nad tlačítko — na všech třech výběrových obrazovkách.**
+    Hráč to nahlásil nejdřív u kontinentů, pak u zemí; sjednoceno rovnou i u témat, aby
+    obrazovky nebyly rozházené. Je to `<p class="qz-pickhint">` hned za `<h2>`, **natrvalo
+    vykreslený**: kdyby mizel po výběru jako dřív, uskočila by při prvním kliknutí celá
+    mřížka dlaždic o dva řádky nahoru. Tím taky zmizel důvod, proč tlačítko stálo mimo
+    střed — hláška vedle něj byla druhá položka ve flex řádku `.qz-sec-confirm`.
+    **`hintAkce()` zůstává jen sólo startu**, kde tlačítko čeká na dvě různé volby
+    (pásmo a počet), takže se text mění podle toho, co ještě chybí; pevný podtitulek
+    by musel být napsaný pro oba stavy najednou.
+  - **U prázdného kontinentu se podtitulek nevykreslí** (`hasSome`), jinak by radil klepnout
+    na zemi, která tam žádná není.
   - **Hláška u zablokovaného tlačítka přeformulována**, protože „Vyber aspoň jeden kontinent —
     nebo rovnou Celý svět" na obrazovce, kde je i země, přestala platit.
   - **Test spadl a NEBYLA to regrese: `test:offline` měl okno pevných 3 000 znaků od začátku

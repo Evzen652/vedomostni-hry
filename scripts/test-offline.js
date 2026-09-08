@@ -690,21 +690,24 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
     const konec = re.exec(SRC);
     return SRC.slice(zac, konec ? konec.index : SRC.length);
   };
-  for (const jmeno of ["renderCountryPick", "renderSectionPick", "refreshStart"]) {
-    kontrola(/hintAkce\(/.test(telo(jmeno)),
-      jmeno + " nenastavuje hlášku u zablokovaného tlačítka — hráč se nedozví, na co se čeká");
-  }
+  // Sólo start zůstal jediný, kdo hlášku váže na tlačítko: čeká tam na DVĚ různé volby
+  // (pásmo a počet otázek), takže se text mění podle toho, co ještě chybí — podtitulek
+  // pod nadpisem by musel být napsaný natvrdo pro oba stavy najednou.
+  kontrola(/hintAkce\(/.test(telo("refreshStart")),
+    "refreshStart nenastavuje hlášku u zablokovaného tlačítka — hráč se nedozví, na co se čeká");
   kontrola(/function hintAkce\(/.test(SRC), "chybí sdílená funkce hintAkce");
 
-  // Výběr kontinentu je od 2026-09-08 výjimka: návod tam nestojí nad tlačítkem, ale jako
-  // podtitulek pod nadpisem (.qz-pickhint), a proto se nevolá hintAkce. Kontrola tím ale
-  // nesmí zmizet — jinak by se návod dal odstranit úplně a nikdo by si toho nevšiml.
-  // Hlídá se tedy oboje: že tam podtitulek je, a že v něm je ta zkratka na Česko, kvůli
-  // které se věta přeformulovala (bez zmínky by dlaždice Česko zůstala nevysvětlená).
+  // Tři výběrové obrazovky mají od 2026-09-08 návod jako podtitulek pod nadpisem
+  // (.qz-pickhint), ne jako hlášku nad tlačítkem — proto na nich hintAkce není. Kontrola
+  // tím ale nesmí zmizet: bez ní by se návod dal odstranit úplně a nikdo by si toho nevšiml.
+  for (const jmeno of ["renderContinentPick", "renderCountryPick", "renderSectionPick"]) {
+    kontrola(/class="qz-pickhint"/.test(telo(jmeno)),
+      jmeno + " nevykresluje návod pod nadpisem (.qz-pickhint) — hráč se nedozví, na co se čeká");
+  }
   {
     const t = telo("renderContinentPick");
-    kontrola(/class="qz-pickhint"/.test(t),
-      "renderContinentPick nevykresluje návod pod nadpisem (.qz-pickhint) — hráč se nedozví, na co se čeká");
+    // Zmínka o Česku je součást návodu schválně: dlaždice Česko mezi kontinenty je
+    // překvapení a bez té věty by zůstala nevysvětlená.
     kontrola(/qz-pickhint[\s\S]{0,200}Česko/.test(t),
       "návod pod nadpisem nezmiňuje zkratku na Česko");
     kontrola(/\.qz-pickhint\s*\{/.test(SRC_CSS),
