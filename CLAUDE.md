@@ -78,6 +78,31 @@ i nasazení jsou rozhodnutí hráče.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-08 — Ve výběru kontinentu je zkratka na Česko; Antarktida vypadla. A pevná okna v testech jsou past.**
+  Přání hráče. Česko má **964 otázek z 3 742**, tedy zdaleka největší fond a nejčastější volbu —
+  a vedlo k němu proklikání přes Evropu a mřížku 23 zemí. Nová dlaždice jde rovnou na výběr témat.
+  - **Antarktida byla dlaždice, která nikdy nemohla nic nabídnout.** V `COUNTRY_CONT` na ni
+    neukazuje jediná země, takže se odjakživa kreslila jako zašedlé „Připravujeme". Vypadla ze
+    seznamu `CONTINENTS` a mřížka zůstala plná (8 dlaždic, 4×2). `assets/cont-antarctica.jpg`
+    tím osiřel — nemazán, kdyby se někdy hrálo o polárních stanicích.
+  - **Dlaždice NENÍ kontinent, a proto má `data-jump`, ne `data-cont`.** Mezi kontinenty by ji
+    vzala logika vícenásobného výběru, kam nepatří: klik na Česko je hotové rozhodnutí, stejně
+    jako u „Celý svět", takže se nečeká na Pokračuj.
+  - **`S.sel.conts` se při skoku musí naplnit (`["europe"]`), i když hráč Evropu nikdy neviděl.**
+    `renderSectionPick` z něj staví drobečky přes `contsLabel()` a hlavně `backToCountry` —
+    bez toho by Zpět ani drobeček neměly kam vést. Ověřeno: Zpět z témat vede na evropské země.
+  - **Hláška u zablokovaného tlačítka přeformulována**, protože „Vyber aspoň jeden kontinent —
+    nebo rovnou Celý svět" na obrazovce, kde je i země, přestala platit.
+  - **Test spadl a NEBYLA to regrese: `test:offline` měl okno pevných 3 000 znaků od začátku
+    funkce.** Zkratka volání `hintAkce` odsunula za tu hranici, takže test hlásil ztrátu hlášky,
+    která tam celou dobu byla. **Falešný poplach z pevného okna vypadá úplně stejně jako skutečná
+    vada** — proto se okno počítá z těla funkce: konec je další deklarace funkce se stejným nebo
+    menším odsazením. **Na odsazení tu záleží:** `refreshStart` je vnořená v `renderStart`,
+    takže hledat jen deklarace nejvyšší úrovně by jí dalo okno až do konce souboru a test by
+    prošel díky cizímu volání `hintAkce` v jiné funkci.
+  - **Ověřeno mutací všech čtyř obrazovek** (ne jen té změněné): po odstranění všech volání
+    `hintAkce` z těla funkce test pokaždé spadne a pojmenuje správnou obrazovku. Základ 817 kontrol.
+
 - **2026-09-08 — Větev sloučena do `master` a NASAZENA; produkci chyběly tři migrace a hodnoty obtížnosti.**
   Hráč nahlásil, že úpravy kolem ilustrace na `zemekviz.pages.dev` nejsou vidět. Nebyla to chyba
   kódu ani nasazení: **produkce běžela na masteru z 3. 9. (`86d362b`)**, zatímco všech 12 commitů

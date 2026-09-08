@@ -123,7 +123,9 @@
     { id:"namerica",   name:"Severní Amerika", emoji:"🗽" },
     { id:"samerica",   name:"Jižní Amerika",   emoji:"🌴" },
     { id:"oceania",    name:"Austrálie",       emoji:"🐨" },
-    { id:"antarctica", name:"Antarktida",      emoji:"🐧" },
+    // Antarktida tu byla do 2026-09-08 jako dlaždice "Připravujeme" — nemá jedinou zemi
+    // v COUNTRY_CONT, takže nikdy nemohla nabídnout otázku. Její místo v mřížce má teď
+    // zkratka na Česko (viz renderContinentPick). assets/cont-antarctica.jpg tím osiřel.
   ];
   // sekce („specifikace") — pořadí a ikony jako u karet na glóbu
   // TENHLE SEZNAM MUSÍ POKRÝT VŠECHNY HODNOTY q.section v datech. Co v něm chybí,
@@ -929,17 +931,37 @@
     const worldN = availConts.reduce((sum,c)=> sum + countriesInCont(c.id).filter(cc=>pocetProCc(cc)>0).length, 0);
     const worldTile = tileHtml({ ic:"🌍", img:"assets/cont-world.jpg", t:"Celý svět", selectable:true,
       sub: worldN+" "+plur(worldN,"země","země","zemí"), attr:`data-cont="__all__"` });
+    // Zkratka na domácí zemi. Česko má 964 otázek z 3 742, tedy zdaleka největší fond —
+    // je to nejčastější volba a proklikávat se k ní přes Evropu je cesta navíc.
+    // Dlaždice není kontinent, proto `data-jump` a vlastní obsluha: mezi `data-cont`
+    // by ji vzala logika vícenásobného výběru, kam nepatří (jde o hotové rozhodnutí).
+    const czN = pocetProCc("cz");
+    const czTile = czN ? tileHtml({ ic:COUNTRY_FLAG["cz"]||"🏳️", img:"assets/country-cz.jpg", t:"Česko",
+      selectable:true, sub: czN+" "+plur(czN,"otázka","otázky","otázek"), attr:`data-jump="cz"` }) : "";
     const steps = [{label:"Kontinent"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>Vyber kontinent</h2>
-      <div class="qz-tiles">${worldTile}${tiles}</div>
+      <div class="qz-tiles">${worldTile}${tiles}${czTile}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cont-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderModePick);
     bindPickHead(steps);
     const selected = new Set();
     const startBtn = body.querySelector("#qz-cont-start");
+    // Stejně jako "Celý svět": klik je kompletní rozhodnutí, takže se nečeká na Pokračuj.
+    // Přeskakuje se JEN výběr země, ne témat. `S.sel.conts` musí zůstat naplněné, jinak by
+    // drobečky i Zpět na obrazovce témat neměly kam vést (contsLabel() a backToCountry
+    // v renderSectionPick z něj čtou).
+    body.querySelector(".qz-tile[data-jump='cz']")?.addEventListener("click", async (e) => {
+      const b = e.currentTarget;
+      selected.clear();
+      body.querySelectorAll(".qz-tile.sel").forEach(t=>t.classList.remove("sel"));
+      b.classList.add("sel");
+      S.sel = S.sel || {}; S.sel.conts = ["europe"];
+      await selectCountries(["cz"]);
+      renderSectionPick();
+    });
     const goNext = () => {
       if(!selected.size) return;
       const conts = selected.has("__all__") ? availConts.map(c=>c.id) : [...selected];
@@ -961,10 +983,10 @@
           else { selected.add(cont); b.classList.add("sel"); }
         }
         startBtn.disabled = selected.size === 0;
-        hintAkce(startBtn, startBtn.disabled ? "Vyber aspoň jeden kontinent — nebo rovnou Celý svět." : "");
+        hintAkce(startBtn, startBtn.disabled ? "Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět." : "");
       });
     });
-    hintAkce(startBtn, "Vyber aspoň jeden kontinent — nebo rovnou Celý svět.");
+    hintAkce(startBtn, "Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět.");
     startBtn.addEventListener("click", goNext);
   }
 

@@ -658,15 +658,27 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
 // jednoho z těch dvou volání test propustí. Je to hlídka proti ztrátě celé vazby,
 // ne důkaz, že hláška naskočí ve všech stavech; to se dá ověřit jen v prohlížeči.
 {
-  const obrazovky = [
-    ["renderContinentPick", 3000],
-    ["renderCountryPick", 4000],
-    ["renderSectionPick", 3000],
-    ["refreshStart", 4000],       // dlouhá funkce, volání hintAkce je až na konci
-  ];
-  for (const [jmeno, delka] of obrazovky) {
+  // Okno kontroly je TĚLO funkce, ne pevný počet znaků. Dřív tu stály délky 3000/4000
+  // a rozbily se, jakmile funkce povyrostla: 2026-09-08 odsunula zkratka na Česko volání
+  // hintAkce v renderContinentPick za třítisící znak a test hlásil ztrátu hlášky, která
+  // tam celou dobu byla. Falešný poplach vypadá stejně jako skutečná vada, takže je horší
+  // než volnější hranice.
+  //
+  // Konec těla = další deklarace funkce se STEJNÝM NEBO MENŠÍM odsazením. Na odsazení
+  // tu záleží: refreshStart je vnořená v renderStart (4 mezery), takže hledat jen
+  // deklarace na nejvyšší úrovni by jí dalo okno až do konce souboru — a test by prošel
+  // díky volání hintAkce v úplně jiné funkci.
+  const telo = (jmeno) => {
     const zac = SRC.indexOf("function " + jmeno);
-    kontrola(zac >= 0 && /hintAkce\(/.test(SRC.slice(zac, zac + delka)),
+    if (zac < 0) return "";
+    const odsaz = zac - SRC.lastIndexOf("\n", zac) - 1;
+    const re = new RegExp("\\n {0," + odsaz + "}function ", "g");
+    re.lastIndex = zac + 1;
+    const konec = re.exec(SRC);
+    return SRC.slice(zac, konec ? konec.index : SRC.length);
+  };
+  for (const jmeno of ["renderContinentPick", "renderCountryPick", "renderSectionPick", "refreshStart"]) {
+    kontrola(/hintAkce\(/.test(telo(jmeno)),
       jmeno + " nenastavuje hlášku u zablokovaného tlačítka — hráč se nedozví, na co se čeká");
   }
   kontrola(/function hintAkce\(/.test(SRC), "chybí sdílená funkce hintAkce");
