@@ -709,6 +709,19 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
       "návod pod nadpisem nezmiňuje zkratku na Česko");
     kontrola(/\.qz-pickhint\s*\{/.test(SRC_CSS),
       "chybí styl .qz-pickhint v quiz.css — návod by se vykreslil jako obyčejný odstavec");
+
+    // Dlaždice Česko je jediná na téhle obrazovce s obrázkem zapsaným natvrdo (ostatní si
+    // cestu skládají z id kontinentu), takže překlep v názvu se nikde neprojeví chybou —
+    // jen tiše spadne na emoji fallback, a to je u Česka vlajková emoji, která se na
+    // Windows kreslí jako písmena „CZ" (viz rozhodnutí 2026-07-23).
+    // Kotvit se MUSÍ na `czTile`, ne na první `img:"assets/…"` ve funkci. První verze téhle
+    // kontroly to nedělala a chytala dlaždici „Celý svět" (cont-world.jpg), takže procházela
+    // i s rozbitým Českem. Odhalila to až mutace — sama o sobě svítila zeleně.
+    const mImg = /const czTile[\s\S]{0,400}?img:"(assets\/[^"]+)"/.exec(t);
+    kontrola(mImg && fs.existsSync(mImg[1]),
+      "dlaždice Česko odkazuje na obrázek, který neexistuje" + (mImg ? ": " + mImg[1] : ""));
+    kontrola(!mImg || !/country-cz/.test(mImg[1]),
+      "dlaždice Česko používá vlajku country-cz.jpg — mezi malovanými scénami sousedů vyčnívá");
   }
 }
 

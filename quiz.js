@@ -936,7 +936,10 @@
     // Dlaždice není kontinent, proto `data-jump` a vlastní obsluha: mezi `data-cont`
     // by ji vzala logika vícenásobného výběru, kam nepatří (jde o hotové rozhodnutí).
     const czN = pocetProCc("cz");
-    const czTile = czN ? tileHtml({ ic:COUNTRY_FLAG["cz"]||"🏳️", img:"assets/country-cz.jpg", t:"Česko",
+    // VLASTNÍ ilustrace, ne `country-cz.jpg`. To je vlajka a mezi malovanými scénami
+    // sousedních dlaždic vyčnívala jako cizí těleso; vlajka zůstává tam, kam patří —
+    // do výběru zemí a do razítka u nadpisu (flagStamp).
+    const czTile = czN ? tileHtml({ ic:COUNTRY_FLAG["cz"]||"🏳️", img:"assets/jump-cz.jpg", t:"Česko",
       selectable:true, sub: czN+" "+plur(czN,"otázka","otázky","otázek"), attr:`data-jump="cz"` }) : "";
     const steps = [{label:"Kontinent"}];
     body.innerHTML = `<div class="qz-screen qz-pick">

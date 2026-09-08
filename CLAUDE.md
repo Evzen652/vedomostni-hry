@@ -111,6 +111,17 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     kulaťoučký voják v těsné uniformě zvedá půllitr s blaženým úsměvem někoho, kdo si nikdy
     s ničím nedělal starost — „my jsme Švejci, pivaři“. **Hrdinou je ale ČLOVĚK, ne ten půllitr:**
     velká nádoba jako dominanta by na téže obrazovce soupeřila s obřím kelímkem Severní Ameriky.
+    **Vygenerováno a nasazeno** jako `assets/jump-cz.jpg`. Gemini podle očekávání přidalo
+    papírový rámeček (známá past) — ořez `sharp`em na čtverec 900 px z 1024 s posunem
+    (left 80, top 70), pak zmenšení na 512×512 q88 jako ostatní dlaždice. Posun není
+    kosmetika: rovnoměrný ořez nechal třetinu plochy prázdnou oblohou a hrdina byl proti
+    sousedním dlaždicím malý.
+  - **Slepá kontrola potřetí, a zase ji odhalila až mutace.** Nový test měl ověřit, že
+    dlaždice Česko odkazuje na existující obrázek. Hledal ale první `img:"assets/…"` v celé
+    funkci — a to je dlaždice „Celý svět“ (`cont-world.jpg`), takže procházel i s úplně
+    rozbitým Českem. **Kotvit se musí na to, co se měří** (`const czTile`), ne na první
+    podobný tvar v okolí. Po opravě chytá překlep v názvu i návrat k vlajce, každý vlastní
+    hláškou. Testů 823.
   - **Ověřeno mutací všech čtyř obrazovek** (ne jen té změněné): po odstranění všech volání
     `hintAkce` z těla funkce test pokaždé spadne a pojmenuje správnou obrazovku. Základ 817 kontrol.
 
