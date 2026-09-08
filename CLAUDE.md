@@ -100,6 +100,14 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     menším odsazením. **Na odsazení tu záleží:** `refreshStart` je vnořená v `renderStart`,
     takže hledat jen deklarace nejvyšší úrovně by jí dalo okno až do konce souboru a test by
     prošel díky cizímu volání `hintAkce` v jiné funkci.
+  - **Dlaždice Česko potřebuje VLASTNÍ ilustraci, ne vlajku** (`assets/jump-cz.jpg`, prompt
+    `jump-cz` v `data/ui-irony-prompts.json`). Sousedi na té obrazovce jsou malované scény
+    s jedním hrdinou, takže plocha vlajky mezi nimi vyčnívá. **A past, na kterou jsem doplatil
+    hned prvním pokusem: náladu je nutné napsat NAHLAS.** Scéna „vodník v dešti, s důstojným
+    výrazem“ byla technicky přesně podle receptu — jeden hrdina, vtip na něm, tři podřízené gagy —
+    a vyšel z ní zamračený zelený stařec v šedi. Déšť srazí paletu a „dignified“ model přeloží
+    jako mrzutost. Prompt proto nově končí řádkem MOOD (veselé, slunečné, vtipné) a hrdina je
+    zvíře s jednoznačným úsměvem — kapr, který si místo štědrovečerní večeře užívá lázně.
   - **Ověřeno mutací všech čtyř obrazovek** (ne jen té změněné): po odstranění všech volání
     `hintAkce` z těla funkce test pokaždé spadne a pojmenuje správnou obrazovku. Základ 817 kontrol.
 
