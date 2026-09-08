@@ -70,6 +70,19 @@ const kontrola = (podminka, popis, detail) => {
 };
 const sekce = t => console.log("\n" + t);
 
+// ---- zdroje musí být syntakticky platné (2026-09-08) ----
+// Celý zbytek testu čte quiz.js jako TEXT (regulární výrazy, vytahování konstant do vm),
+// takže rozbitý soubor projde vším a chybu první uvidí až prohlížeč — bílá stránka.
+// Stalo se to přesně takhle: do HTML komentáře UVNITŘ template literalu se dostal zpětný
+// apostrof (`hintAkce`), ten utnul řetězec a appka se nevykreslila vůbec, zatímco test
+// hlásil 819 kontrol v pořádku. `new Function` soubor jen zparsuje, nespustí — nesahá
+// tedy na DOM, kterého se quiz.js dotýká hned na šestém řádku.
+for (const [jmeno, zdroj] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
+  let chyba = null;
+  try { new Function(zdroj); } catch (e) { chyba = e.message; }
+  kontrola(!chyba, jmeno + " není platný JavaScript — appka se v prohlížeči nevykreslí", chyba);
+}
+
 const COUNTRY_BY_CC = konstanta("COUNTRY_BY_CC");
 const COUNTRY_FLAG = konstanta("COUNTRY_FLAG");
 const COUNTRY_CONT = konstanta("COUNTRY_CONT");
@@ -677,11 +690,26 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
     const konec = re.exec(SRC);
     return SRC.slice(zac, konec ? konec.index : SRC.length);
   };
-  for (const jmeno of ["renderContinentPick", "renderCountryPick", "renderSectionPick", "refreshStart"]) {
+  for (const jmeno of ["renderCountryPick", "renderSectionPick", "refreshStart"]) {
     kontrola(/hintAkce\(/.test(telo(jmeno)),
       jmeno + " nenastavuje hlášku u zablokovaného tlačítka — hráč se nedozví, na co se čeká");
   }
   kontrola(/function hintAkce\(/.test(SRC), "chybí sdílená funkce hintAkce");
+
+  // Výběr kontinentu je od 2026-09-08 výjimka: návod tam nestojí nad tlačítkem, ale jako
+  // podtitulek pod nadpisem (.qz-pickhint), a proto se nevolá hintAkce. Kontrola tím ale
+  // nesmí zmizet — jinak by se návod dal odstranit úplně a nikdo by si toho nevšiml.
+  // Hlídá se tedy oboje: že tam podtitulek je, a že v něm je ta zkratka na Česko, kvůli
+  // které se věta přeformulovala (bez zmínky by dlaždice Česko zůstala nevysvětlená).
+  {
+    const t = telo("renderContinentPick");
+    kontrola(/class="qz-pickhint"/.test(t),
+      "renderContinentPick nevykresluje návod pod nadpisem (.qz-pickhint) — hráč se nedozví, na co se čeká");
+    kontrola(/qz-pickhint[\s\S]{0,200}Česko/.test(t),
+      "návod pod nadpisem nezmiňuje zkratku na Česko");
+    kontrola(/\.qz-pickhint\s*\{/.test(SRC_CSS),
+      "chybí styl .qz-pickhint v quiz.css — návod by se vykreslil jako obyčejný odstavec");
+  }
 }
 
 // ---- appka nesmí za běhu sahat na cizí server (2026-09-06) ----

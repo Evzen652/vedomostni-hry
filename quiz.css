@@ -515,6 +515,13 @@
 /* výběr tématu: kontinent → země → sekce */
 .qz-pick { align-items: center; text-align: center; gap: 12px; padding: 70px 22px 20px; }
 .qz-pick h2 { font-family: 'Nunito', sans-serif; font-size: 26px; font-weight: 800; color: var(--teal); }
+/* Návod k obrazovce jako podtitulek pod nadpisem (přání hráče 2026-09-08). Proti
+   .qz-actionhint se liší dvěma věcmi, a obě jsou důvod, proč to není tatáž třída:
+   je natrvalo v DOMu (nemizí po výběru, jinak by uskočila celá mřížka dlaždic) a
+   hintAkce() si svoji hlášku hledá i maže právě podle .qz-actionhint.
+   .qz-pick má gap 12px, takže odsazení od nadpisu řeší mřížka — vlastní margin ne. */
+.qz-pickhint { font-size: 13.5px; color: var(--muted); text-align: center;
+  margin: 0; max-width: 52ch; line-height: 1.5; }
 /* Hostitel (.qz-host) je ukotvený k celé šířce shellu (position:absolute), ale obsah
    obrazovky žije ve vystředěném sloupci #qz-body — na širokém plátně (nad 980px) se
    proto levé okraje rozjedou, kdyby lišta byla jen margin-left v běžném toku. Proto je

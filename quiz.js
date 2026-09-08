@@ -942,6 +942,14 @@
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>Vyber kontinent</h2>
+      <!-- Návod k obrazovce stojí POD nadpisem, ne nad tlačítkem dole (přání hráče
+           2026-09-08). Je proto natrvalo vykreslený a nemizí po výběru: kdyby blikal,
+           skočila by při prvním kliknutí celá mřížka dlaždic o dva řádky nahoru. Tím
+           přestal být hláškou u zablokované akce, a tak tahle obrazovka jako jediná
+           ze čtyř nevolá hintAkce() — hlídá to vlastní kontrola v test:offline.
+           POZOR: tenhle komentář je uvnitř template literalu, takže v něm nesmí být
+           zpětný apostrof. Jeden tu byl a utnul řetězec — appka se nevykreslila vůbec. -->
+      <p class="qz-pickhint">Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět.</p>
       <div class="qz-tiles">${worldTile}${tiles}${czTile}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cont-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>
     </div>`;
@@ -983,10 +991,8 @@
           else { selected.add(cont); b.classList.add("sel"); }
         }
         startBtn.disabled = selected.size === 0;
-        hintAkce(startBtn, startBtn.disabled ? "Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět." : "");
       });
     });
-    hintAkce(startBtn, "Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět.");
     startBtn.addEventListener("click", goNext);
   }
 
