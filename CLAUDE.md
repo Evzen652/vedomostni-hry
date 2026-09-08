@@ -78,6 +78,32 @@ i nasazení jsou rozhodnutí hráče.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-08 — Větev sloučena do `master` a NASAZENA; produkci chyběly tři migrace a hodnoty obtížnosti.**
+  Hráč nahlásil, že úpravy kolem ilustrace na `zemekviz.pages.dev` nejsou vidět. Nebyla to chyba
+  kódu ani nasazení: **produkce běžela na masteru z 3. 9. (`86d362b`)**, zatímco všech 12 commitů
+  od té doby leželo jen na větvi `claude/pokracujeme-e79708` — tedy i přesun zisku bodů pod
+  ilustraci, dělení fondu, rychlý start a bezpečnostní opravy. Nasazeno postupem z
+  [docs/nasazeni.md](docs/nasazeni.md), pořadí migrace → obsah → kód.
+  - **Produkce měla migrace jen do `2026-09-04-difficulty` včetně.** Doběhly tři chybějící:
+    `2026-09-06-online-only`, `2026-09-06-token-epoch`, `2026-09-07-smazani-uctu`. Zjištěno
+    porovnáním `pragma_table_info` proti `migrations/`, ne odhadem podle data nasazení —
+    a vyplatilo se to, protože `difficulty` už tam podle data být nemělo, a bylo.
+  - **`db:sync --remote` dopsal obtížnost, kterou sloupec do teď neměl:** po migraci 09-04 měly
+    všechny otázky default 1, teď má 2 095 z 3 742 hodnotu vyšší. `--check` hlásil 0 přebytků,
+    `rating` otázek zůstal nedotčený (0 řádků mimo 1500 — v produkci je zatím jediná odehraná hra).
+  - **Zapsat si stav PŘED zásahem se vyplatilo:** 1 živý účet, 18 botů, 1 hra, 19 ratingů — a po
+    všech třech migracích i po syncu tatáž čísla. Bez toho je „nic se neztratilo" jen dojem.
+  - **Oprava údaje z předávacího protokolu: „19 živých účtů" jsou 19 řádků v `users`, z toho
+    18 botů.** Skutečný lidský účet je v produkci jeden jediný. Na opatrnosti se tím nic nemění,
+    ale je rozdíl mezi hracím provozem a prázdnou databází s bot fondem.
+  - **Ověřeno na ostré adrese, ne jen podle výstupu deploye:** `quiz.js` z produkce je bajtově
+    shodný s repem, při načtení `/hra` jdou z `data/` dva soubory (rychlý start drží),
+    `/api/leaderboard` bez přihlášení vrací 401, `CLAUDE.md` vrací SPA fallback (není v `dist/`),
+    konzole čistá a odehraná otázka ukazuje `+300 bodů` bez hvězdy pod ilustrací.
+  - **NEOVĚŘENO: online přihlášení a duel.** Šlo by to jen založením účtu v produkci, a ten by
+    po sobě i po smazání nechal náhrobek „Smazaný hráč" (mazání profilu účty schválně neodstraňuje).
+    Lokálně to pokrývá `test:api` (163 kontrol), včetně `token_epoch`.
+
 - **2026-09-07 — Zablokovaná hlavní akce už říká, na co se čeká. A zisk bodů je konečně vidět.**
   Hráč nahlásil: *„proč nefunguje tlačítko Pokračuj?"* Ono fungovalo — bylo `disabled`,
   dokud nevybral zemi, a **appka to nikde neřekla**. Naměřeno `cursor: not-allowed`

@@ -26,14 +26,15 @@ Zkopíruj do prvního vzkazu:
 | Repo | `github.com/Evzen652/vedomostni-hry` |
 | Pracovní větev | `claude/pokracujeme-e79708` |
 | Poslední commit | `docs: predavka pro pokracovani na jinem pocitaci` |
-| `master` | `Sekundarni tlacitko "Vice o..." odlehceno` — **pozadu za větví** |
-| Produkce | `zemekviz.pages.dev`, nasazená **3. 9. 2026** (nemá nic novějšího) |
-| Živých účtů v produkci | 19 (stav k 3. 9.) — **nic se nesmí mazat** |
+| `master` | `docs: predavaci protokol pro novou session` — **srovnaný s větví (8. 9.)** |
+| Produkce | `zemekviz.pages.dev`, nasazená **8. 9. 2026** — má vše z větve |
+| Účtů v produkci | **1 živý hráč + 18 botů** (dřív se to psalo jako „19 účtů") — **nic se nesmí mazat** |
 
-**Co je jen na větvi a v produkci ani v masteru to není:** hodnocené hry z fronty,
-rychlý start, dělení fondu na veřejný a serverový, bezpečnostní opravy (název turnaje,
-avatar, `token_epoch`, Three.js v repu, HSTS), mazání profilu, hlášky u zablokovaných
-tlačítek, přetáčení skóre.
+**Nasazeno 8. 9. 2026:** hodnocené hry z fronty, rychlý start, dělení fondu na veřejný
+a serverový, bezpečnostní opravy (název turnaje, avatar, `token_epoch`, Three.js v repu, HSTS),
+mazání profilu, hlášky u zablokovaných tlačítek, přetáčení skóre. Produkce i `master` tedy
+**odpovídají větvi**; migrace doběhly po `2026-09-07-smazani-uctu` včetně (podrobnosti v CLAUDE.md
+pod 2026-09-08).
 
 ---
 
