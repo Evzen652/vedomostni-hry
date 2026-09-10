@@ -1214,7 +1214,12 @@
    protože je zákon i obchody chtějí mít na dosah, ne aby soupeřily s hlavní akcí. */
 .zk-legal { margin-top: 10px; font-size: 12.5px; line-height: 1.6; color: var(--muted); }
 .zk-legal a { color: var(--teal); text-decoration-color: #a9cfcb; text-underline-offset: 2px; }
-.zk-legalnote { display: block; margin-bottom: 2px; }
+/* Potvrzení věku a podmínek u registrace (2026-09-10). Klikací je celý řádek (label),
+   zaškrtávátko v barvě appky, text drobný — je to podmínka, ne nabídka. */
+.zk-agree { display: flex; align-items: flex-start; gap: 10px; margin: 4px 0 14px;
+  font-size: 13.5px; line-height: 1.5; color: var(--ink); cursor: pointer; }
+.zk-agree input { width: 18px; height: 18px; margin: 1px 0 0; flex: none;
+  accent-color: var(--teal); cursor: pointer; }
 /* Totéž na rozcestníku, pro hráče bez profilu. Odstup od dlaždic je větší než mezi nimi,
    ať se to čte jako patička obrazovky, ne jako další volba (pravidlo o vzdušnosti). */
 .qz-legalfoot { margin-top: 30px; font-size: 12.5px; color: var(--muted); text-align: center; }

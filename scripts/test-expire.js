@@ -112,6 +112,38 @@ function mockEnv(hra, hraci) {
     kontrola(log.zavrel, "osamocená hra na odkaz se nezavřela");
   }
 
+  // 4) IP adresy z limitu registrací (2026-09-10). Zásady slibují, že se po hodině
+  //    smažou. Úklid musí proběhnout i když žádná stará hra není — jinak by ho časný
+  //    návrat „žádné staré hry“ nepustil ke slovu skoro nikdy.
+  {
+    const { REG_WINDOW_MS } = await import("../functions/_lib/game.js");
+    const sql = [];
+    const env = { DB: { prepare(s) { return { s, a: [], bind(...a) { this.a = a; return this; },
+      async all() { return { results: [] }; }, async first() { return null; },
+      async run() { sql.push({ s: this.s, a: this.a }); return { meta: { changes: 0 } }; } }; } } };
+    const pred = Date.now();
+    await expireStaleGames(env);
+    const del = sql.find(x => /DELETE FROM reg_attempts/.test(x.s));
+    kontrola(del, "expireStaleGames nemaže IP adresy z reg_attempts, když není žádná stará hra");
+    const hranice = del ? del.a[0] : NaN;
+    kontrola(Math.abs(hranice - (pred - REG_WINDOW_MS)) < 5000,
+      "hranice mazání IP neodpovídá oknu limitu (" + hranice + ")");
+  }
+
+  // 5) Totéž při registraci: limitIp uklidí prošlé řádky VŠECH IP, ne jen té své.
+  {
+    const { limitIp } = await import("../functions/_lib/game.js");
+    const sql = [];
+    const env = { DB: { prepare(s) { return { s, a: [], bind(...a) { this.a = a; return this; },
+      async run() { sql.push({ s: this.s, a: this.a }); return { meta: { changes: 1 } }; } }; } } };
+    const pred = Date.now();
+    await limitIp(env, "203.0.113.7", 8, 60 * 60 * 1000);
+    const del = sql.find(x => /DELETE FROM reg_attempts/.test(x.s));
+    kontrola(del, "limitIp nemaže prošlé IP adresy");
+    kontrola(del && del.a.length === 1 && Math.abs(del.a[0] - (pred - 60 * 60 * 1000)) < 5000,
+      "limitIp maže podle špatné hranice nebo jen jednu IP (" + (del && JSON.stringify(del.a)) + ")");
+  }
+
   console.log(chyb ? "\nNEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                    : "\nVŠE V POŘÁDKU: " + ok + " kontrol");
   process.exit(chyb ? 1 : 0);

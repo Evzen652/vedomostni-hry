@@ -1,5 +1,5 @@
-import { json, fail, BANDS } from '../../_lib/game.js';
-import { currentUser, generateNick } from '../../_lib/auth.js';
+import { json, fail, REG_BANDS } from '../../_lib/game.js';
+import { currentUser } from '../../_lib/auth.js';
 
 /**
  * PUT /api/auth/band  { band }
@@ -19,10 +19,10 @@ import { currentUser, generateNick } from '../../_lib/auth.js';
  * (schema.sql). V novém pásmu se tedy začíná od 1500 a při návratu zpátky se najde
  * to původní.
  *
- * Přechod DO dětského pásma vygeneruje přezdívku znovu. Dětský prostor je schválně
- * bez volného textu (register.js, docs/online-rezim.md sekce 5) — bez tohohle kroku
- * by stačilo přijít s libovolnou přezdívkou z jiného pásma a ta ochrana by nebyla
- * k ničemu. Opačným směrem se generovaná přezdívka nechává: je neškodná.
+ * Do dětského pásma se od 2026-09-10 přejít NEDÁ — Světová liga je od 13 let a dětské
+ * pásmo zůstává jen obtížností offline hry (`REG_BANDS` v game.js). Starší dětský
+ * účet, pokud nějaký existuje, z něj odejít smí; generované přezdívky, které se při
+ * přechodu dovnitř dělaly, tím odpadly.
  */
 export async function onRequestPut({ request, env }) {
   const me = await currentUser(request, env);
@@ -32,19 +32,13 @@ export async function onRequestPut({ request, env }) {
   try { body = await request.json(); } catch (e) { return fail('nečitelné tělo požadavku'); }
 
   const band = body.band;
-  if (!BANDS.includes(band)) return fail('neznámé pásmo');
+  // Rovnost napřed: starší dětský účet, který si „uloží“ vlastní pásmo, nemá dostat
+  // chybu, jen odpověď, že se nic nezměnilo.
   if (band === me.band) return json({ band, nick: me.nick, changed: false });
+  if (band === 'deti') return fail('do dětského pásma se přejít nedá — Světová liga je od 13 let');
+  if (!REG_BANDS.includes(band)) return fail('neznámé pásmo');
 
-  let nick = me.nick;
-  if (band === 'deti') {
-    nick = generateNick();
-    for (let i = 0; i < 8; i++) {
-      const clash = await env.DB.prepare('SELECT 1 FROM users WHERE nick_lower = ? AND id != ?')
-        .bind(nick.toLowerCase(), me.id).first();
-      if (!clash) break;
-      nick = generateNick();
-    }
-  }
+  const nick = me.nick;
 
   await env.DB.batch([
     env.DB.prepare('UPDATE users SET band = ?, nick = ?, nick_lower = ? WHERE id = ?')

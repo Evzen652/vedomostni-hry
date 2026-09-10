@@ -1,4 +1,5 @@
 import { glicko2 } from './glicko.js';
+import { REG_WINDOW_MS } from './game.js';
 import { tournamentStatus } from './tournament.js';
 
 /** Po jaké době se nedohraná hra uzavře sama. */
@@ -29,6 +30,12 @@ const EXPIRE_BATCH = 20;
  * nedotkl. Viz komentář uvnitř.
  */
 export async function expireStaleGames(env) {
+  // Úklid IP adres z limitu registrací (2026-09-10). Musí stát PŘED návratem
+  // „žádné staré hry“: ten nastává skoro pokaždé a úklid by se jinak nespustil.
+  // Je to spolehlivější ze dvou úklidů — /api/me volá každý hráč při vstupu do lobby,
+  // kdežto registrace (druhý úklid, v limitIp) je vzácná.
+  await env.DB.prepare('DELETE FROM reg_attempts WHERE tries_at <= ?')
+    .bind(Date.now() - REG_WINDOW_MS).run();
   const hranice = Date.now() - EXPIRE_MS;
   const stare = (await env.DB.prepare(
     `SELECT id FROM games WHERE status = 'open' AND created_at < ? LIMIT ?`)

@@ -1,5 +1,5 @@
-import { json, fail, newId, BANDS, limitIp } from '../../_lib/game.js';
-import { hashPin, signToken, sessionSecret, generateNick, validateNick, validatePin, friendCode, validateEmail, validateAvatar } from '../../_lib/auth.js';
+import { json, fail, newId, REG_BANDS, REG_WINDOW_MS, limitIp } from '../../_lib/game.js';
+import { hashPin, signToken, sessionSecret, validateNick, validatePin, friendCode, validateEmail, validateAvatar } from '../../_lib/auth.js';
 
 // Klouzavé okno na REGISTRACI, klíčované IP (2026-09-02) — v okamžiku volání ještě
 // neexistuje účet, na který by šlo pověsit sloupec jako u friend_tries/game_tries.
@@ -8,13 +8,15 @@ import { hashPin, signToken, sessionSecret, generateNick, validateNick, validate
 // o dva řády. `ALLOW_DEV_SECRET` (stejná proměnná jako u sessionSecret() níž) limit
 // v lokálním vývoji vypíná — `test:api` samo zakládá přes 20 účtů v jednom běhu.
 const MAX_REG = 8;
-const WINDOW_MS = 60 * 60 * 1000;
 
 /**
- * POST /api/auth/register  { band, pin, nick?, email? }
+ * POST /api/auth/register  { band, pin, nick, age13, email? }
  *
- * Dětské pásmo přezdívku nezadává — generuje se, aby do ní nešlo schovat vzkaz
- * a odpadla moderace (docs/online-rezim.md, sekce 5).
+ * Profil je od 13 let (rozhodnutí hráče 2026-09-10). `age13: true` je potvrzení
+ * z registrace („Je mi aspoň 13 let a souhlasím s podmínkami použití.“) — věk ověřit
+ * nejde, ale bez výslovného potvrzení se profil nezaloží ani voláním API mimo appku.
+ * Dětské pásmo proto registrace nenabízí vůbec (`REG_BANDS`), a s ním odpadly
+ * i generované přezdívky, které se pro něj dělaly.
  *
  * E-mail je NEPOVINNÝ a slouží jedinému účelu: obnově zapomenutého PINu
  * (rozhodnutí 2026-08-25). Do registrace se přidal 2026-08-31 — doplňovat ho až
@@ -25,7 +27,7 @@ const WINDOW_MS = 60 * 60 * 1000;
 export async function onRequestPost({ request, env }) {
   if (!env.ALLOW_DEV_SECRET) {
     const ip = request.headers.get('cf-connecting-ip') || 'unknown';
-    const pod = await limitIp(env, ip, MAX_REG, WINDOW_MS);
+    const pod = await limitIp(env, ip, MAX_REG, REG_WINDOW_MS);
     if (!pod) return fail('příliš mnoho nových účtů z tohohle připojení, zkus to za hodinu', 429);
   }
 
@@ -33,7 +35,9 @@ export async function onRequestPost({ request, env }) {
   try { body = await request.json(); } catch (e) { return fail('nečitelné tělo požadavku'); }
 
   const band = body.band;
-  if (!BANDS.includes(band)) return fail('neznámé pásmo');
+  if (band === 'deti') return fail('profil jde založit od 13 let — dětské pásmo je v sólu, párty a škole bez profilu');
+  if (!REG_BANDS.includes(band)) return fail('neznámé pásmo');
+  if (body.age13 !== true) return fail('potvrď, že ti je aspoň 13 let a souhlasíš s podmínkami použití');
 
   const pinCheck = validatePin(body.pin);
   if (pinCheck.error) return fail(pinCheck.error);
@@ -47,23 +51,12 @@ export async function onRequestPost({ request, env }) {
     email = e.email;
   }
 
-  let nick;
-  if (band === 'deti') {
-    nick = generateNick();
-    for (let i = 0; i < 8; i++) {
-      const clash = await env.DB.prepare('SELECT 1 FROM users WHERE nick_lower = ?')
-        .bind(nick.toLowerCase()).first();
-      if (!clash) break;
-      nick = generateNick();
-    }
-  } else {
-    const check = validateNick(body.nick);
-    if (check.error) return fail(check.error);
-    nick = check.nick;
-    const clash = await env.DB.prepare('SELECT 1 FROM users WHERE nick_lower = ?')
-      .bind(nick.toLowerCase()).first();
-    if (clash) return fail('tuhle přezdívku už někdo má', 409);
-  }
+  const check = validateNick(body.nick);
+  if (check.error) return fail(check.error);
+  const nick = check.nick;
+  const clash = await env.DB.prepare('SELECT 1 FROM users WHERE nick_lower = ?')
+    .bind(nick.toLowerCase()).first();
+  if (clash) return fail('tuhle přezdívku už někdo má', 409);
 
   const id = 'u' + newId().slice(1);
   const pin_hash = await hashPin(pinCheck.pin);

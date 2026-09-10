@@ -145,6 +145,13 @@ Praktický dopad: **výroba obsahu se stává průběžnou povinností**, ne jed
 
 ## 5. Bezpečí dětí
 
+> **Od 2026-09-10 je Světová liga od 13 let** (rozhodnutí hráče, viz [CLAUDE.md](../CLAUDE.md)).
+> Dětský profil se nově založit nedá a do dětského pásma nejde přejít (`REG_BANDS`
+> v `functions/_lib/game.js`). Dítě hraje sólo, párty i školu bez profilu, online s rodičem
+> na jeho profilu. Generované přezdívky a „e-mail rodiče“ tím odpadly; ochrany dětského
+> pásma na serveru (zavřený žebříček, název turnaje se nebere) zůstávají pro případné
+> starší dětské účty — v produkci žádný není (ověřeno 2026-09-10).
+
 - **Žádný chat nikde v appce.** Jen emoji reakce z pevné sady. Vyhýbá se to celé agendě
   moderace, která by tenhle projekt utopila.
 - **Dětské pásmo dostává generované přezdívky** ze slovníku (`Rychlý rys`, `Statečná veverka`).

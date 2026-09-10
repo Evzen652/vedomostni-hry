@@ -127,9 +127,9 @@ Podmínky, zásady zpracování údajů, veřejná stránka pro žádost o smaz�
 už mazání je), souhlasy pro EU a iOS.
 **Rozhodnuto 2026-09-10: appka je 13+, dětské pásmo zůstává jen jako obtížnost.**
 Stránky jsou napsané (`podminky.html`, `soukromi.html`, `smazani-uctu.html`), ale
-**nenasazené**, protože zatím tvrdí tři věci, které appka nedělá: registrace pořád
-nabízí dětské pásmo a neptá se na věk, IP adresy v `reg_attempts` se nemažou (zásady
-slibují hodinu) a kontakt `ahoj@zemekviz.cz` čeká na doménu. Podrobně CLAUDE.md pod 2026-09-10.
+**nenasazené**, protože kontakt `ahoj@zemekviz.cz` a doručovatel e-mailů čekají na doménu.
+Registrace je od 2026-09-10 jen 13+ s potvrzením a IP adresy z limitu registrací se mažou,
+takže zbytek stránek už pravdu říká. Podrobně CLAUDE.md pod 2026-09-10.
 
 **C. Instalovatelná appka** (krok 4, blokér obchodů)
 Manifest, service worker, ikony. Dnes appka nemá ani jedno, takže fakticky není appka,

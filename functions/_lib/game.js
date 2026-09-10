@@ -4,6 +4,20 @@
  */
 
 export const BANDS = ['deti', 'starsi', 'dospeli'];
+/**
+ * Pásma, do kterých smí vstoupit NOVÝ nebo MĚNĚNÝ profil (rozhodnutí hráče 2026-09-10).
+ * Světová liga je od 13 let; dětské pásmo zůstává jen jako obtížnost offline hry
+ * (sólo, párty, škola — bez profilu). `BANDS` zůstává celé: dětský fond dál slouží
+ * offline hře a denní pětka, žebříček i hry si pásmo berou z účtu, takže případný
+ * starší dětský účet musí fungovat dál. Omezuje se jen VSTUP do pásma.
+ */
+export const REG_BANDS = ['starsi', 'dospeli'];
+/**
+ * Okno limitu registrací a zároveň doba, po kterou se drží IP adresa (2026-09-10).
+ * Zásady ochrany údajů (soukromi.html) slibují, že se IP po hodině maže — to číslo
+ * žije tady a nikde jinde. Změníš-li ho, změň i text zásad.
+ */
+export const REG_WINDOW_MS = 60 * 60 * 1000;
 // Validuje se PROTI TOMUHLE SEZNAMU, ne indexaci objektu. `TIME_CONTROLS["constructor"]`
 // vrací funkci z prototypu, takže kontrola `if (!tc)` takové jméno pustí dál — a u turnaje
 // se hodnota dokonce ULOŽÍ do databáze, čímž vznikne položka, která každému, kdo do ní
@@ -94,6 +108,12 @@ export async function limitUctu(env, userId, sloupec, max, windowMs) {
 /** Limit vázaný na IP (registrace — účet v tu chvíli ještě neexistuje). */
 export async function limitIp(env, ip, max, windowMs) {
   const now = Date.now();
+  // IP adresa je osobní údaj a zásady slibují, že po uplynutí okna zmizí. Do 2026-09-10
+  // se tahle tabulka nemazala VŮBEC — v kódu na ni nevedl jediný DELETE. Mažou se
+  // všechny prošlé řádky, ne jen tenhle: registrace je vzácná, takže jinak by adresa
+  // ležela, dokud by ze stejné IP nepřišla další. Druhý úklid běží v expireStaleGames.
+  // `<=` sedí přesně na podmínku, podle které níž okno končí (`now - tries_at >= windowMs`).
+  await env.DB.prepare('DELETE FROM reg_attempts WHERE tries_at <= ?').bind(now - windowMs).run();
   const r = await env.DB.prepare(
     `INSERT INTO reg_attempts (ip, tries, tries_at) VALUES (?, 1, ?)
      ON CONFLICT(ip) DO UPDATE

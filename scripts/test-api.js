@@ -23,6 +23,13 @@ const ok = (cond, label, detail) => {
 const section = t => console.log('\n' + t);
 
 const api = async (path, { method = 'GET', body, token } = {}) => {
+  // Registrace chce od 2026-09-10 potvrzení věku (`age13`). Aby ho nemuselo nést
+  // všech 25 registrací v testu, doplní se samo — ALE jen tehdy, když ho volající
+  // vůbec neuvedl. Test, který chce vidět odmítnutí, pošle `age13: undefined`
+  // (klíč existuje, JSON ho zahodí) nebo `age13: false`.
+  if (path === '/api/auth/register' && body && typeof body === 'object' && !('age13' in body)) {
+    body = { ...body, age13: true };
+  }
   const headers = {};
   if (body !== undefined) headers['content-type'] = 'application/json';
   if (token) headers.authorization = 'Bearer ' + token;
@@ -103,9 +110,28 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(dlouhyAvatar.body.avatar === '1',
      'nesmyslný avatar spadne na výchozí, je „' + String(dlouhyAvatar.body.avatar).slice(0, 20) + '"');
 
-  const kid = await api('/api/auth/register', { method: 'POST', body: { band: 'deti', pin: '4321' } });
-  ok(kid.status === 201, 'dětská registrace projde bez zadané přezdívky');
-  ok(/\s/.test(kid.body.nick || ''), 'dítě dostalo generovanou přezdívku: ' + kid.body.nick);
+  // Světová liga je od 13 let (rozhodnutí hráče 2026-09-10). Dětské pásmo zůstává jen
+  // obtížností offline hry, takže registrace ho odmítne — i když ho někdo pošle mimo appku.
+  const kid = await api('/api/auth/register', { method: 'POST',
+    body: { band: 'deti', nick: 'Dite_' + uniq(), pin: '4321' } });
+  ok(kid.status === 400, 'dětské pásmo profil nezaloží (13+), dostal ' + kid.status);
+  const bezVeku = await api('/api/auth/register', { method: 'POST',
+    body: { band: 'dospeli', nick: 'BezVeku_' + uniq(), pin: '4321', age13: undefined } });
+  ok(bezVeku.status === 400, 'bez potvrzení věku se profil nezaloží, dostal ' + bezVeku.status);
+  const neVek = await api('/api/auth/register', { method: 'POST',
+    body: { band: 'dospeli', nick: 'NeVek_' + uniq(), pin: '4321', age13: false } });
+  ok(neVek.status === 400, 'age13: false profil nezaloží, dostal ' + neVek.status);
+  // Musí to být boolean true, ne cokoli pravdivého: řetězec by prošel, kdyby server
+  // kontroloval jen truthiness — a přesně ten by poslal špatně napsaný klient.
+  const retezecVek = await api('/api/auth/register', { method: 'POST',
+    body: { band: 'dospeli', nick: 'Retez_' + uniq(), pin: '4321', age13: 'ano' } });
+  ok(retezecVek.status === 400, 'age13 musí být true, ne jen pravdivá hodnota, dostal ' + retezecVek.status);
+  // Hráč z jiného pásma pro kontroly níž („cizí hráč se do hry nepodívá“, „hráč z jiného
+  // pásma se nepřipojí“). Do 2026-09-10 to byl dětský účet; ten od té doby založit nejde,
+  // takže je to hráč z toho druhého pásma, které A nemá.
+  const jiny = (await api('/api/auth/register', { method: 'POST',
+    body: { band: A.band === 'starsi' ? 'dospeli' : 'starsi', nick: 'Jiny_' + uniq(), pin: '4321' } })).body;
+  ok(!!(jiny && jiny.token), 'hráč z jiného pásma se zaregistruje');
 
   const badLogin = await api('/api/auth/login', { method: 'POST', body: { nick: nickA, pin: '0000' } });
   ok(badLogin.status === 401, 'špatný PIN neprojde, dostal ' + badLogin.status);
@@ -129,7 +155,7 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(!('correct_index' in q0.body), 'payload NEobsahuje index správné odpovědi');
   ok(q0.body.options && q0.body.options.length === 4, 'čtyři možnosti');
 
-  const stranger = await api(`/api/game/${solo.body.id}/q/0`, { token: kid.body.token });
+  const stranger = await api(`/api/game/${solo.body.id}/q/0`, { token: jiny.token });
   ok(stranger.status === 403, 'cizí hráč se do hry nepodívá, dostal ' + stranger.status);
 
   const a0 = await api(`/api/game/${solo.body.id}/answer`, {
@@ -239,7 +265,7 @@ async function playAll(token, gameId, total, ms = 2000) {
   const join = await api(`/api/game/${duel.body.id}/join`, { method: 'POST', token: B.token });
   ok(join.status === 200, 'soupeř se připojí', JSON.stringify(join.body));
 
-  const kidJoin = await api(`/api/game/${duel.body.id}/join`, { method: 'POST', token: kid.body.token });
+  const kidJoin = await api(`/api/game/${duel.body.id}/join`, { method: 'POST', token: jiny.token });
   ok(kidJoin.status === 409, 'hráč z jiného pásma se nepřipojí, dostal ' + kidJoin.status);
 
   // Třetí hráč do souboje pro dva. Ověřuje APLIKAČNÍ kontrolu v join.js — ta tam byla
@@ -555,7 +581,10 @@ async function playAll(token, gameId, total, ms = 2000) {
     method: 'POST', body: { band: 'dospeli', nick: 'TurF_' + uniq(), pin: '1234' } })).body;
   const G = (await api('/api/auth/register', {
     method: 'POST', body: { band: 'dospeli', nick: 'TurG_' + uniq(), pin: '5678' } })).body;
-  const kidT = (await api('/api/auth/register', { method: 'POST', body: { band: 'deti', pin: '4321' } })).body;
+  // Hráč z jiného pásma. Do 2026-09-10 to byl dětský účet; od té doby dětský profil
+  // založit nejde, a na izolaci pásem stačí kterékoli jiné než zakladatelovo (dospeli).
+  const ciziT = (await api('/api/auth/register', { method: 'POST',
+    body: { band: 'starsi', nick: 'TurCizi_' + uniq(), pin: '4321' } })).body;
 
   const badDur = await api('/api/tournament', {
     method: 'POST', token: F.token, body: { time_control: 'blesk', duration_min: 999 } });
@@ -576,7 +605,7 @@ async function playAll(token, gameId, total, ms = 2000) {
   const list = await api('/api/tournament?band=dospeli', { token: F.token });
   ok(list.body.tournaments.some(t => t.id === tour.body.id), 'turnaj je vidět v seznamu pásma');
 
-  const wrongBand = await api(`/api/tournament/${tour.body.id}/join`, { method: 'POST', token: kidT.token });
+  const wrongBand = await api(`/api/tournament/${tour.body.id}/join`, { method: 'POST', token: ciziT.token });
   ok(wrongBand.status === 409, 'jiné pásmo se do turnaje nepřidá, dostal ' + wrongBand.status);
 
   // Detail hlídá pásmo stejně jako výpis. Do 2026-09-06 ho hlídal JEN výpis, takže si
@@ -602,13 +631,12 @@ async function playAll(token, gameId, total, ms = 2000) {
     body: { time_control: 'blesk', duration_min: 15, name: 'Vecerni klani' } });
   ok(dobryNazev.body.name === 'Vecerni klani', 'slušný název projde beze změny');
 
-  const detskyNazev = await api('/api/tournament', {
-    method: 'POST', token: kidT.token,
-    body: { time_control: 'blesk', duration_min: 15, name: 'Tajny vzkaz pro tebe' } });
-  ok(detskyNazev.status !== 201 || !/vzkaz/i.test(detskyNazev.body.name || ''),
-     'v dětském pásmu se název turnaje nebere vůbec, je „' + (detskyNazev.body.name || '—') + '"');
+  // Kontrola „v dětském pásmu se název turnaje nebere" tu byla do 2026-09-10. Dětský
+  // profil od té doby založit ani do pásma přejít nejde, takže ji přes API otestovat
+  // nejde — ochrana v tournament/index.js zůstává pro případné starší dětské účty
+  // (v produkci žádný není, ověřeno 2026-09-10).
 
-  const detailCizi = await api(`/api/tournament/${tour.body.id}`, { token: kidT.token });
+  const detailCizi = await api(`/api/tournament/${tour.body.id}`, { token: ciziT.token });
   ok(detailCizi.status === 404, 'detail turnaje cizího pásma se nevydá, dostal ' + detailCizi.status);
   ok(!detailCizi.body.standings, 'a nevydá s ním ani přezdívky účastníků');
 
@@ -768,23 +796,30 @@ async function playAll(token, gameId, total, ms = 2000) {
   ok(stejne.status === 200 && stejne.body.changed === false,
      'změna na totéž pásmo nic nemění');
 
-  // Přechod DO dětského pásma musí přezdívku vygenerovat znovu — jinak by stačilo
-  // přijít s libovolným textem z jiného pásma a ochrana dětského prostoru (žádný
-  // volný text, žádná moderace) by nebyla k ničemu.
+  // Do dětského pásma se od 2026-09-10 přejít NEDÁ — Světová liga je od 13 let. Jinak
+  // by stačilo založit profil jako dospělý a pak se přepnout mezi děti.
   const nickPred = P.nick;
+  const predZmenou = (await api('/api/me', { token: P.token })).body.band;
   const doDeti = await api('/api/auth/band', { method: 'PUT', token: P.token,
     body: { band: 'deti' } });
-  ok(doDeti.status === 200 && doDeti.body.band === 'deti' && doDeti.body.changed === true,
+  ok(doDeti.status === 400, 'do dětského pásma se přejít nedá, dostal ' + doDeti.status);
+  ok((await api('/api/me', { token: P.token })).body.band === predZmenou,
+     'odmítnutý přechod pásmo nezměnil');
+
+  // Mezi zbylými pásmy se přejít dá a přezdívka zůstává.
+  const jine = predZmenou === 'starsi' ? 'dospeli' : 'starsi';
+  const zmena = await api('/api/auth/band', { method: 'PUT', token: P.token,
+    body: { band: jine } });
+  ok(zmena.status === 200 && zmena.body.band === jine && zmena.body.changed === true,
      'pásmo jde po registraci změnit');
-  ok(doDeti.body.nick !== nickPred,
-     'přechod do dětského pásma přezdívku přepíše: ' + doDeti.body.nick);
-  ok((await api('/api/me', { token: P.token })).body.band === 'deti',
+  ok(zmena.body.nick === nickPred, 'změna pásma přezdívku nechá: ' + zmena.body.nick);
+  ok((await api('/api/me', { token: P.token })).body.band === jine,
      '/me hlásí nové pásmo');
 
   // Fond otázek se musí přepnout s ním, jinak by změna byla jen kosmetická.
   const poZmene = await api('/api/game', { method: 'POST', token: P.token,
     body: { mode: 'solo', time_control: 'blesk' } });
-  ok(poZmene.status === 201 && poZmene.body.band === 'deti',
+  ok(poZmene.status === 201 && poZmene.body.band === jine,
      'nová hra se losuje z nového pásma');
 
   // ---------------------------------------------------------------- smazání profilu

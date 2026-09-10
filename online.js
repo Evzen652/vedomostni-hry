@@ -209,7 +209,11 @@ window.ZKOnline = (function () {
   }
 
   function errBox(msg) {
-    return msg ? '<div class="qz-setnote" style="color:var(--bad,#cf5f4e)">' + esc(msg) + "</div>" : "";
+    // Hlášky serveru jsou malými písmeny (skládají se i do vět), ale v appce text
+    // malým začínat nesmí (pravidlo v CLAUDE.md) — velké písmeno nasazuje až zobrazení.
+    if (!msg) return "";
+    msg = String(msg);
+    return '<div class="qz-setnote" style="color:var(--bad,#cf5f4e)">' + esc(msg.charAt(0).toUpperCase() + msg.slice(1)) + "</div>";
   }
 
   // Vlastní kopie — plur() v quiz.js žije uvnitř tamní closure a ven nevede.
@@ -280,8 +284,9 @@ window.ZKOnline = (function () {
       : isReg
         ? "Stačí přezdívka a PIN. E-mail je nepovinný — je jen pro případ, že PIN zapomeneš."
         : "Vítej zpátky. Zadej přezdívku a PIN.";
+    // Dětské pásmo tu SCHVÁLNĚ není (rozhodnutí hráče 2026-09-10): Světová liga je
+    // od 13 let a dítě hraje sólo, párty i školu bez profilu. Server ho odmítne taky.
     var PASMA = [
-      { id: "deti", t: "Děti", fb: "🧒" },
       { id: "starsi", t: "Puberťáci", fb: "🧑‍🎓" },
       { id: "dospeli", t: "Dospělí", fb: "🧑" },
     ];
@@ -315,8 +320,6 @@ window.ZKOnline = (function () {
                       '<span class="t">' + b.t + "</span></button>";
                   }).join("") +
                 "</div>" +
-                '<div class="qz-setnote zk-nicknote" id="zk-nicknote" style="display:none">' +
-                  "Dětem přezdívku vymyslíme, ať do ní nejde schovat vzkaz.</div>" +
               "</div>"
             : "") +
           '<div class="zk-field" id="zk-nickwrap">' +
@@ -347,6 +350,12 @@ window.ZKOnline = (function () {
                   "a doplnit později v Profilu.</div>" +
               "</div>"
             : "") +
+          // Potvrzení věku a podmínek (2026-09-10). Jedno zaškrtávátko pro obojí — hráč
+          // souhlas vyjadřuje, ne jen čte patičku. Server bez něj profil nezaloží (age13).
+          (isReg
+            ? '<label class="zk-agree"><input type="checkbox" id="zk-agree"> ' +
+                '<span>Je mi aspoň 13 let a souhlasím s podmínkami použití.</span></label>'
+            : "") +
           '<button class="qz-go" id="zk-go"' + (isReg ? " disabled" : "") + ">" +
             (isReg ? "Založit profil" : "Přihlásit se") + " " + handArrowSvg(false) + "</button>" +
         "</div>" +
@@ -362,7 +371,6 @@ window.ZKOnline = (function () {
         // text uvnitř <a> uprostřed věty by začínal malým písmenem a sken velkých
         // písmen (viz CLAUDE.md) by ho oprávněně hlásil.
         '<div class="zk-legal">' +
-          (isReg ? '<span class="zk-legalnote">Založením profilu souhlasíš s podmínkami použití.</span>' : "") +
           '<a href="podminky" target="_blank" rel="noopener">Podmínky použití</a> · ' +
           '<a href="soukromi" target="_blank" rel="noopener">Ochrana údajů</a>' +
         "</div>" +
@@ -387,6 +395,10 @@ window.ZKOnline = (function () {
     var band = isReg ? null : "dospeli";
     var predvolba = isReg ? stav.band : null;
     var goBtn = body.querySelector("#zk-go");
+    // „Založit profil“ čeká na DVĚ věci: pásmo a potvrzení věku a podmínek.
+    var agreeEl = body.querySelector("#zk-agree");
+    function syncGo() { if (isReg) goBtn.disabled = !band || !(agreeEl && agreeEl.checked); }
+    if (agreeEl) agreeEl.addEventListener("change", syncGo);
     var bandsEl = body.querySelector("#zk-bands");
     if (bandsEl) {
       bandsEl.querySelectorAll(".zk-bandtile").forEach(function (c) {
@@ -398,23 +410,7 @@ window.ZKOnline = (function () {
           c.classList.add("on");
           c.setAttribute("aria-pressed", "true");
           band = c.dataset.band;
-          goBtn.disabled = false;
-          var wrap = body.querySelector("#zk-nickwrap");
-          var note = body.querySelector("#zk-nicknote");
-          wrap.style.display = band === "deti" ? "none" : "";
-          note.style.display = band === "deti" ? "" : "none";
-          // U dětského pásma je to adresa rodiče — dítě e-mail obvykle nemá a odkaz
-          // na obnovu PINu má stejně přijít někomu dospělému. Sloupec `users.email`
-          // proto schválně NEMÁ UNIQUE: rodič smí mít tutéž adresu u víc dětí.
-          var mail = body.querySelector("#zk-email");
-          var mnote = body.querySelector("#zk-mailnote");
-          if (mail && mnote) {
-            var deti = band === "deti";
-            mail.placeholder = deti ? "E-mail rodiče" : "Kdyby ti PIN vypadl z hlavy";
-            mnote.textContent = deti
-              ? "Sem patří adresa rodiče. Použijeme ji jen na obnovu zapomenutého PINu a klidně ji nech prázdnou."
-              : "Jediné, k čemu ho použijeme, je obnova zapomenutého PINu. Můžeš ho nechat prázdný a doplnit později v Profilu.";
-          }
+          syncGo();
         });
       });
       if (predvolba) {
@@ -441,12 +437,12 @@ window.ZKOnline = (function () {
       body.querySelector("#zk-nick").focus();
     }
     goBtn.addEventListener("click", function () {
-      var nick = band === "deti" ? "" : ((body.querySelector("#zk-nick") || {}).value || "");
+      var nick = (body.querySelector("#zk-nick") || {}).value || "";
       var pin = body.querySelector("#zk-pin").value || "";
       var path = isReg ? "/auth/register" : "/auth/login";
       var mailEl = body.querySelector("#zk-email");
       var email = mailEl ? mailEl.value.trim() : "";
-      var payload = isReg ? { band: band, pin: pin, nick: nick } : { nick: nick, pin: pin };
+      var payload = isReg ? { band: band, pin: pin, nick: nick, age13: true } : { nick: nick, pin: pin };
       // Prázdný e-mail se neposílá vůbec, ať ho server nemusí odlišovat od vyplněného.
       if (isReg && email) payload.email = email;
       req(path, { method: "POST", body: payload }).then(function (r) {
@@ -456,9 +452,6 @@ window.ZKOnline = (function () {
         }
         token.set(r.body.token);
         S.me = r.body;
-        if (isReg && band === "deti") {
-          say("Tvoje jméno je " + r.body.nick + ". Zapamatuj si ho, budeš se jím přihlašovat.");
-        }
         refreshMe(function () {
           var duel = pendingDuel();
           if (duel) return joinFromLink(duel);
@@ -484,8 +477,8 @@ window.ZKOnline = (function () {
     var m = S.me || {};
     var maDeti = m.band === "deti";
     var PASMA_T = { deti: "Děti", starsi: "Puberťáci", dospeli: "Dospělí" };
+    // Bez dětského pásma — do něj se od 2026-09-10 přejít nedá (viz auth/band.js).
     var PASMA = [
-      { id: "deti", t: "Děti", fb: "🧒" },
       { id: "starsi", t: "Puberťáci", fb: "🧑‍🎓" },
       { id: "dospeli", t: "Dospělí", fb: "🧑" },
     ];
@@ -508,7 +501,7 @@ window.ZKOnline = (function () {
       '<div class="zk-sect">' +
         '<h3>E-mail pro obnovu PINu' +
           (maDeti ? '<span class="zk-h3note">vyplní rodič</span>' : "") + "</h3>" +
-        '<div class="zk-sectnote">Nepovinný a k ničemu jinému ho nepoužijeme. Kdybys zapomněl PIN, ' +
+        '<div class="zk-sectnote">Nepovinný a k ničemu jinému ho nepoužijeme. Kdyby ti PIN vypadl z hlavy, ' +
           "přijde na něj odkaz na nastavení nového. Bez e-mailu se profil obnovit nedá.</div>" +
         (m.email
           ? '<div class="zk-status on"><span class="zk-statusico">✓</span><div>' +
@@ -540,9 +533,8 @@ window.ZKOnline = (function () {
       // nejde), ale volba fondu otázek, takže není důvod ho zamykat napořád.
       '<div class="zk-sect">' +
         "<h3>Pásmo — jaké otázky chceš dostávat</h3>" +
-        '<div class="zk-sectnote">Dětské pásmo má vlastní fond otázek psaných pro děti; ' +
-          "ostatní dvě losují z obecného fondu, puberťáci z jeho lehčí části. " +
-          "Hraješ vždycky jen proti lidem ze stejného pásma.</div>" +
+        '<div class="zk-sectnote">Obě pásma losují z obecného fondu, puberťáci z jeho ' +
+          "lehčí části. Hraješ vždycky jen proti lidem ze stejného pásma.</div>" +
         '<div class="zk-bandpick" id="zk-accbands" role="group" aria-label="Věkové pásmo">' +
           PASMA.map(function (b) {
             var on = b.id === m.band;
@@ -641,14 +633,6 @@ window.ZKOnline = (function () {
         c.setAttribute("aria-pressed", "true");
         novePasmo = c.dataset.band;
         bandSave.disabled = novePasmo === m.band;
-        // Přechod do dětského pásma přezdívku přepíše — to se musí říct PŘEDEM,
-        // ne až se stane. Dětský prostor je schválně bez volného textu.
-        bandNote.textContent = novePasmo === "deti" && m.band !== "deti"
-          ? "V dětském pásmu přezdívky vymýšlíme my, ať do nich nejde schovat vzkaz — "
-            + "tvoje současná se tím přepíše. Rating má každé pásmo vlastní, ten "
-            + "současný se nikam neztratí."
-          : "Každé pásmo má vlastní rating — ten současný se nikam neztratí, ale "
-            + "v novém začínáš od začátku.";
       });
     });
     bandSave.addEventListener("click", function () {

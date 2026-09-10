@@ -78,6 +78,50 @@ i nasazení jsou rozhodnutí hráče.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-10 — Světová liga je od 13 let a IP adresy z limitu registrací se mažou. Z právních stránek zbývá nepravdivý už jen kontakt.**
+  Body 1 a 2 z předchozího zápisu. Hráč rozhodl „13+, dětské pásmo jen jako obtížnost“.
+  - **`REG_BANDS` (Puberťáci, Dospělí) stojí VEDLE `BANDS`, ne místo něj.** `BANDS` dál používá
+    offline hra, denní pětka, žebříček i zakládání her — ty si pásmo berou z účtu, takže případný
+    starší dětský účet musí fungovat dál. Omezuje se jen VSTUP do pásma: registrace i změna
+    pásma dětské pásmo odmítnou s vysvětlením. V produkci dětský účet žádný není (ověřeno
+    čtením produkční databáze), takže se nic nemigrovalo.
+  - **Registrace chce `age13: true` a musí to být boolean.** Zaškrtávátko „Je mi aspoň 13 let
+    a souhlasím s podmínkami použití.“ nahradilo pasivní větu pod formulářem — hráč souhlas
+    vyjadřuje, ne jen čte patičku. Server kontroluje přesnou shodu s true, ne pravdivost:
+    řetězec „ano“ by jinak prošel, a přesně ten by poslal špatně napsaný klient.
+  - **S dětským pásmem odešly generované přezdívky a „e-mail rodiče“.** Ochrany dětského pásma
+    na serveru (zavřený žebříček, název turnaje se nebere) v kódu ZŮSTÁVAJÍ pro případné starší
+    účty, ale **přes API je otestovat nejde** — dětský profil založit ani do pásma přejít nejde.
+    Kontrola názvu turnaje proto z `test:api` zmizela, s komentářem proč.
+  - **IP adresy se mažou na dvou místech:** `limitIp` při každé registraci smaže VŠECHNY prošlé
+    řádky (ne jen svůj — registrace je vzácná) a `expireStaleGames`, kterou volá `/api/me`
+    při vstupu do lobby. **Tam musí úklid stát PŘED časným návratem „žádné staré hry“** —
+    ten nastává skoro pokaždé, takže za ním by se úklid nespustil; mutace to potvrdila. Hodina
+    je jediná konstanta `REG_WINDOW_MS`, na kterou se odvolávají i zásady, a hranice `<=`
+    sedí přesně na podmínku, podle které okno limitu končí.
+  - **Zásady teď říkají „maže se automaticky s provozem hry“**, ne holé „po hodině“: Pages
+    Functions cron neumí, úklid jede s provozem. V praxi `/api/me` volá každý hráč.
+  - **Cestou dvě starší porušení pravidel na obrazovkách, které se měnily:** hlášky serveru se
+    v appce kreslily malým písmenem (server je píše malým, skládají se i do vět) — velké
+    písmeno teď nasazuje `errBox` při zobrazení; a v profilu stálo „Kdybys zapomněl PIN“
+    (minulý čas s rodem) — teď „Kdyby ti PIN vypadl z hlavy“.
+  - **Test API rozbil sám sebe, ne server:** dvě kontroly („cizí hráč se do hry nepodívá“,
+    „hráč z jiného pásma se nepřipojí“) braly jako cizího hráče dětský účet. Ten se po změně
+    nezaložil, neměl token, a kontroly dostaly 401 místo očekávaného odmítnutí. Cizí hráč je
+    teď z toho pásma, které hráč A nemá. **Poučení: když změna zakáže vytvořit nějaký účet,
+    projdi, kde ho testy používají jako pomocníka — ne jen kontroly, které ho testují přímo.**
+  - **Testy:** `test:api` **167** (bylo 163), `test:expire` **8** (bylo 4), `test:offline` 842.
+    Pomocná `api()` v testu doplní `age13` sama, ALE jen když ho volající neuvedl — odmítnutí
+    se testuje přes `age13: undefined` (klíč existuje, JSON ho zahodí) a `age13: false`.
+  - **Ověřeno mutací: 8 z 8 chyceno, obnova bajtově shodná a server zpět na původním kódu.**
+    U serverových mutací skript čekal, až dev server zmutovaný kód načte (sonda na změněné
+    chování), jinak by testoval starou verzi a „chycení“ by byla náhoda.
+  - **Ověřeno v prohlížeči:** registrace nabízí jen dvě pásma, tlačítko čeká na pásmo i
+    zaškrtnutí a registrace doběhne do lobby; profil nabízí jen dvě pásma; chybová hláška
+    začíná velkým písmenem.
+  - **Zbývá bod 3:** kontakt `ahoj@zemekviz.cz` a doručovatel Resend potřebují doménu. Do té
+    doby právní stránky NENASAZOVAT.
+
 - **2026-09-10 — Právní stránky napsané: podmínky, ochrana údajů, smazání profilu. NENASAZENO — tři věci v nich zatím nejsou pravda.**
   Krok B z předávacího protokolu (blokér obou obchodů). Hráč rozhodl dvě věci, na kterých stál rozsah:
   - **Appka je 13+, dětské pásmo zůstává jen jako obtížnost.** Dítě hraje sólo, párty i školu bez
@@ -106,6 +150,8 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     **Nasadit je dřív, než se to srovná, znamená zveřejnit dokument, který lže.** Body 1 a 2 jsou
     kód, bod 3 potřebuje doménu. Provozovatel je zatím obecně „provozovatel hry Zeměkvíz“ — pro
     placenou verzi nebo obchody bude potřeba jméno či IČO.
+    > **Doplněno 2026-09-10: body 1 a 2 jsou vyřešené** (registrace jen 13+ s potvrzením, IP
+    > adresy se mažou) — viz zápis výš. Nepravdivý zůstává jen kontakt a doručovatel e-mailů.
   - **Odkaz uprostřed věty nesmí začínat malým písmenem.** Sken velkých písmen čte textové uzly,
     takže `v <a>zásadách…</a>` hlásí jako chybu; odkazy proto nesou název stránky („Ochrana údajů“).
     **Výjimkou je e-mailová adresa** — velkým začínat nemůže, stejně jako placeholder u registrace.
