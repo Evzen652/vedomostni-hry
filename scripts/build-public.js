@@ -17,7 +17,10 @@ const OUT = path.join(KOREN, "dist");
 // Co jde ven. Cokoli tu není, se na web nedostane.
 // `_headers` MUSÍ být v kořeni nasazené složky, jinak si ho Pages nevšimnou a appka
 // zůstane bez CSP — pravidla v něm se nikde jinde neuplatní. (2026-09-01)
-const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers"];
+// Právní stránky (2026-09-10) jsou samostatné statické soubory BEZ JS — musí jít
+// otevřít i z obchodu s aplikacemi nebo z vyhledávače, bez spuštění hry.
+const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers",
+  "podminky.html", "soukromi.html", "smazani-uctu.html", "pravni.css"];
 const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
 const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json"];
 

@@ -78,6 +78,52 @@ i nasazení jsou rozhodnutí hráče.
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-10 — Právní stránky napsané: podmínky, ochrana údajů, smazání profilu. NENASAZENO — tři věci v nich zatím nejsou pravda.**
+  Krok B z předávacího protokolu (blokér obou obchodů). Hráč rozhodl dvě věci, na kterých stál rozsah:
+  - **Appka je 13+, dětské pásmo zůstává jen jako obtížnost.** Dítě hraje sólo, párty i školu bez
+    profilu (a v nich se o něm nic neukládá mimo zařízení), online s rodičem na jeho profilu.
+    Plnohodnotné dětské účty by znamenaly ověřitelný souhlas rodiče (GDPR čl. 8) a dětský režim
+    v obou obchodech — řádově víc papírování než celý zbytek kroku.
+  - **Kontakt je adresa na budoucí doméně, `ahoj@zemekviz.cz`** — ne osobní e-mail ani jméno.
+    Je ZÁSTUPNÁ: dokud doména není, poštu nepřijímá, a ze zákona na ni chodí žádosti o výmaz.
+  - **Tři statické stránky BEZ JS** (`podminky.html`, `soukromi.html`, `smazani-uctu.html` + `pravni.css`).
+    Musí jít otevřít z obchodu i z vyhledávače bez spuštění hry — Google Play výslovně chce odkaz
+    na smazání účtu dostupný bez přihlášení. Proto nesdílí `quiz.css`; paleta je kopie tokenů,
+    takže **změna palety v quiz.css se musí zopakovat i v pravni.css**. Stránky jsou v `SOUBORY`
+    v `build-public.js` — bez toho by se na web nedostaly (past z 2026-08-25).
+  - **Odkazy v appce na třech místech:** pod registrací („Založením profilu souhlasíš s podmínkami
+    použití.“ a odkazy do nové karty, ať hráč nepřijde o rozepsaný formulář), v profilu hned pod
+    „Smazat profil natrvalo“ a v patičce rozcestníku — i offline hra ukládá do prohlížeče hry a jména.
+  - **Každé tvrzení v zásadách je ověřené proti kódu, ne proti paměti.** Inventura našla dvě věci,
+    které jsem nečekal: prohlížeč drží **pět klíčů, ne dva** (`zk_online_token`, `zk_seen`,
+    `zk_daily_done`, `hricka_quiz_saves`, `hricka_quiz_names` — literální grep minul ty, jejichž
+    název je v konstantě), a **IP adresy z limitu registrací (`reg_attempts`) se nemažou vůbec** —
+    v celém kódu na tu tabulku nevede jediný `DELETE`.
+  - **PROČ NENASAZENO: stránky tvrdí tři věci, které appka zatím nedělá.**
+    1. „Profil je od 13 let“ — registrace přitom pořád nabízí pásmo Děti a na věk se neptá.
+    2. „IP adresu po hodině mažeme“ — nemaže se nikdy, viz výš.
+    3. Kontakt `ahoj@zemekviz.cz` a doručovatel Resend — doména ani pošta zatím nejsou.
+    **Nasadit je dřív, než se to srovná, znamená zveřejnit dokument, který lže.** Body 1 a 2 jsou
+    kód, bod 3 potřebuje doménu. Provozovatel je zatím obecně „provozovatel hry Zeměkvíz“ — pro
+    placenou verzi nebo obchody bude potřeba jméno či IČO.
+  - **Odkaz uprostřed věty nesmí začínat malým písmenem.** Sken velkých písmen čte textové uzly,
+    takže `v <a>zásadách…</a>` hlásí jako chybu; odkazy proto nesou název stránky („Ochrana údajů“).
+    **Výjimkou je e-mailová adresa** — velkým začínat nemůže, stejně jako placeholder u registrace.
+  - **Cestou opraven starší štítek „nepovinný“ u e-mailu na „Nepovinný“.** `.zk-opt` má
+    `text-transform: none`, takže se opravdu kreslil malým — porušení pravidla nahoře, ne planý poplach.
+  - **`test:offline` 842 kontrol (+19):** každá stránka existuje, je v `SOUBORY` (i s uvozovkami,
+    takže prefix `podminky.html.bak` neprojde), má styl, v navigaci označuje sama sebe a nemá plochou
+    šipku; appka na ně odkazuje ze všech tří míst. **Ověřeno mutací: 7 ze 7 chyceno, obnova bajtově
+    shodná**, plus opačná kontrola — šipka jen v HTML komentáři projít MUSÍ, jinak nefunguje
+    odstraňování komentářů.
+  - **PAST, KTERÁ STÁLA DVA POKUSY: heredoc v nástroji Bash tu požírá ZDVOJENÁ zpětná lomítka.**
+    Regulární výrazy v testu přišly o všechna lomítka (z třídy bílých znaků zbylo holé písmeno s)
+    a test nešel ani zparsovat. Jednoduché lomítko před n přežije, zdvojené ne — proto to u
+    dřívějších skriptů nebylo vidět. **Kód s regulárními výrazy psát nástrojem Write, ne heredocem.**
+    Táž vrstva shodila i jeden heredoc s HTML („unexpected EOF“) a soubor tehdy vůbec nevznikl.
+  - **`dist/` má 1 399 souborů** (4 nové). Výpis `wrangler pages deploy` ukáže o jeden míň:
+    `_headers` nahrává zvlášť a do počtu ho nezahrnuje.
+
 - **2026-09-08 — Ve výběru kontinentu je zkratka na Česko; Antarktida vypadla. A pevná okna v testech jsou past.**
   Přání hráče. Česko má **964 otázek z 3 742**, tedy zdaleka největší fond a nejčastější volbu —
   a vedlo k němu proklikání přes Evropu a mřížku 23 zemí. Nová dlaždice jde rovnou na výběr témat.

@@ -339,7 +339,7 @@ window.ZKOnline = (function () {
           // logicky navazuje na "kdyby ti PIN vypadl z hlavy" (2026-08-31).
           (isReg
             ? '<div class="zk-field">' +
-                '<label class="qz-fieldlabel" for="zk-email">E-mail <span class="zk-opt">nepovinný</span></label>' +
+                '<label class="qz-fieldlabel" for="zk-email">E-mail <span class="zk-opt">Nepovinný</span></label>' +
                 '<input class="qz-pname-in" id="zk-email" type="email" maxlength="254" autocomplete="email" placeholder="Kdyby ti PIN vypadl z hlavy" value="' +
                   esc(stav.email || "") + '">' +
                 '<div class="qz-setnote zk-mailnote" id="zk-mailnote">' +
@@ -356,6 +356,15 @@ window.ZKOnline = (function () {
           (isReg ? "Už se známe? " : "Ještě se neznáme? ") +
           '<button type="button" class="zk-linkbtn" id="zk-switch">' +
             (isReg ? "Přihlas se" : "Založ si profil") + "</button>" +
+        "</div>" +
+        // Právní odkazy (2026-09-10). V nové kartě, jinak by hráč uprostřed registrace
+        // přišel o rozepsaný formulář. Odkazy jsou samostatné popisky, ne kus věty:
+        // text uvnitř <a> uprostřed věty by začínal malým písmenem a sken velkých
+        // písmen (viz CLAUDE.md) by ho oprávněně hlásil.
+        '<div class="zk-legal">' +
+          (isReg ? '<span class="zk-legalnote">Založením profilu souhlasíš s podmínkami použití.</span>' : "") +
+          '<a href="podminky" target="_blank" rel="noopener">Podmínky použití</a> · ' +
+          '<a href="soukromi" target="_blank" rel="noopener">Ochrana údajů</a>' +
         "</div>" +
       "</div>" +   // .zk-authmain
       "</div>" +   // .zk-authgrid
@@ -571,6 +580,8 @@ window.ZKOnline = (function () {
           "</div>" +
         "</div>" +
         '<button type="button" class="zk-dangerlink" id="zk-accdel">Smazat profil natrvalo</button>' +
+        '<div class="zk-legal"><a href="smazani-uctu" target="_blank" rel="noopener">Co se smaže a co zůstane</a> · ' +
+          '<a href="soukromi" target="_blank" rel="noopener">Ochrana údajů</a></div>' +
       "</div></div>";
 
     function ulozit(metoda) {

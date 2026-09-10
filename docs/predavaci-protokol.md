@@ -125,9 +125,11 @@ a otestovaný (`npm run test:pool`).
 **B. Právní vrstva** (krok 3, blokér obou obchodů)
 Podmínky, zásady zpracování údajů, veřejná stránka pro žádost o smazání účtu (v appce
 už mazání je), souhlasy pro EU a iOS.
-**Nejdřív je ale potřeba odpověď hráče:** *zůstane dětské pásmo jako plnohodnotné účty,
-nebo z něj bude jen obtížnost pro rodinné hraní a appka bude 13+?* Mění to rozsah
-celého kroku, takže se bez toho nemá začínat.
+**Rozhodnuto 2026-09-10: appka je 13+, dětské pásmo zůstává jen jako obtížnost.**
+Stránky jsou napsané (`podminky.html`, `soukromi.html`, `smazani-uctu.html`), ale
+**nenasazené**, protože zatím tvrdí tři věci, které appka nedělá: registrace pořád
+nabízí dětské pásmo a neptá se na věk, IP adresy v `reg_attempts` se nemažou (zásady
+slibují hodinu) a kontakt `ahoj@zemekviz.cz` čeká na doménu. Podrobně CLAUDE.md pod 2026-09-10.
 
 **C. Instalovatelná appka** (krok 4, blokér obchodů)
 Manifest, service worker, ikony. Dnes appka nemá ani jedno, takže fakticky není appka,
@@ -145,7 +147,7 @@ cíle pod 44 px.
 
 ## 5. Rozhodnutí, která čekají na hráče
 
-1. **Dětské pásmo** — účty, nebo jen obtížnost? (blokuje krok B)
+1. ~~**Dětské pásmo** — účty, nebo jen obtížnost?~~ **Rozhodnuto 2026-09-10: 13+, dětské pásmo jen obtížnost.**
 2. **Reklama** ano/ne ve verzi zdarma. Doporučení: appka zdarma s omezeným online
    provozem + jednorázové odemčení, které vypne i reklamu; vedle toho školní licence.
 3. **Další jazyky** — dnes je česky natvrdo všechno včetně otázek. Když se s tím počítá,

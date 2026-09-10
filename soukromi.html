@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ochrana osobních údajů — Zeměkvíz</title>
+<meta name="description" content="Jaké údaje Zeměkvíz ukládá, proč, jak dlouho a kdo k nim má přístup.">
+<link rel="stylesheet" href="pravni.css">
+</head>
+<body>
+<!-- Kontaktní adresa ahoj@zemekviz.cz je ZÁSTUPNÁ (rozhodnutí 2026-09-10): doména zatím
+     není. Než se stránka nasadí, musí adresa doopravdy přijímat poštu — ze zákona na ni
+     chodí žádosti o přístup k údajům a o jejich výmaz. Je ve všech třech stránkách.
+     KAŽDÉ tvrzení níž je ověřené proti kódu. Když se změní, co appka ukládá nebo jak
+     dlouho, musí se změnit i tahle stránka — jinak lže. -->
+<div class="pr-wrap">
+  <header class="pr-head">
+    <a class="pr-back" href="hra"><svg aria-hidden="true" style="width:1.5em;height:.95em;vertical-align:-.15em;display:inline-block;transform:scaleX(-1)" viewBox="0 0 40 24" fill="none"><path d="M2.5 13c9-3.4 21-2.6 29-2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M23.5 4.5c3.5 2.4 6.7 4.4 10 6.4-3.4 2.2-7 4-10.8 6.4" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Zpět do hry</a>
+    <a class="pr-brand" href="hra"><img src="assets/logo.jpg" alt=""><span>Zeměkvíz</span></a>
+  </header>
+  <nav class="pr-nav" aria-label="Právní informace">
+    <a href="podminky">Podmínky použití</a>
+    <a href="soukromi" aria-current="page">Ochrana údajů</a>
+    <a href="smazani-uctu">Smazání profilu</a>
+  </nav>
+
+  <main>
+    <h1>Jak zacházíme s tvými údaji</h1>
+    <p class="pr-meta">Platí od 10. září 2026</p>
+    <p class="pr-lead">Tahle stránka popisuje, jaké údaje o tobě Zeměkvíz ukládá, proč, jak dlouho a kdo k nim má přístup. Snažili jsme se ji napsat jako vysvětlení, ne jako smlouvu.</p>
+
+    <h2>Stručně</h2>
+    <ul>
+      <li>Hrát se dá i bez profilu. Sólo jízda, párty souboj a školní režim o tobě nic nikam neposílají — všechno zůstává ve tvém zařízení.</li>
+      <li>Profil potřebuješ jen pro Světovou ligu. Chceme k němu přezdívku a PIN. E-mail je nepovinný a slouží jedině k obnově zapomenutého PINu.</li>
+      <li>Nemáme reklamu, analytiku ani sledovací cookies. Hra za běhu nenačítá nic z cizích serverů.</li>
+      <li>Profil si můžeš kdykoli smazat přímo ve hře.</li>
+    </ul>
+
+    <h2>Kdo údaje zpracovává</h2>
+    <p>Správcem údajů je provozovatel hry Zeměkvíz. S čímkoli, co se týká tvých údajů, nám napiš na <a href="mailto:ahoj@zemekviz.cz">ahoj@zemekviz.cz</a>.</p>
+
+    <h2>Hraní bez profilu</h2>
+    <p>Sólo jízda, párty souboj a školní režim běží celé v prohlížeči. Otázky se stahují z našeho serveru, ale o tobě při tom nic neposíláme a nic si neukládáme.</p>
+    <p>Aby šlo rozehranou hru dohrát i po zavření okna, ukládá ji hra do úložiště tvého prohlížeče. Tam zůstávají i jména hráčů z párty, ať je příště nemusíš psát znovu. K těmto údajům nemáme přístup. Smažeš je křížkem u rozehrané hry, nebo vymazáním dat webu v nastavení prohlížeče.</p>
+
+    <h2>Světová liga a profil</h2>
+    <p>Pro hru proti ostatním si zakládáš profil. Ukládáme k němu:</p>
+    <ul>
+      <li>Přezdívku. Vidí ji ostatní hráči — v soubojích, v žebříčku, v turnajích a mezi přáteli.</li>
+      <li>PIN, ale nikdy ne tak, jak ho píšeš. Máme jen jeho otisk (PBKDF2-SHA256 se solí), ze kterého se PIN zpátky získat nedá.</li>
+      <li>E-mail, pokud ho vyplníš. Použijeme ho jedině k tomu, abychom ti poslali odkaz na obnovu zapomenutého PINu. Nikomu ho neukazujeme a nic dalšího na něj neposíláme.</li>
+      <li>Obtížnostní pásmo, obrázek profilu, kód pro přidávání přátel a datum založení.</li>
+    </ul>
+    <p>Když hraješ, ukládáme:</p>
+    <ul>
+      <li>Odehrané hry — tvé odpovědi, čas odpovědi a skóre. Z toho počítáme rating a pořadí v žebříčku.</li>
+      <li>Seznam otázek, které už znáš, aby se ti v dalších hrách neopakovaly.</li>
+      <li>Přátele, které si přidáš, a turnaje, do kterých vstoupíš.</li>
+    </ul>
+    <p>A pár údajů, které chrání tebe i hru:</p>
+    <ul>
+      <li>Počet neúspěšných pokusů o přihlášení, aby tvůj PIN nešlo uhodnout zkoušením.</li>
+      <li>Počítadla pro limity — kolik her, turnajů a pokusů o kód přítele proběhlo za poslední hodinu.</li>
+      <li>IP adresu, ze které zakládáš profil. Slouží jen k tomu, aby nešlo hromadně zakládat profily. K profilu ji nevážeme a po hodině ji mažeme.</li>
+    </ul>
+
+    <h2>Co vidí ostatní hráči</h2>
+    <p>Přezdívku, obrázek profilu, rating, skóre z her, které jste spolu hráli, a tvé pořadí v žebříčku a v turnajích. E-mail ani PIN nevidí nikdo — PIN neznáme ani my.</p>
+
+    <h2>Anonymní statistika odpovědí</h2>
+    <p>Když hra skončí, uložíme si, jak se na jednotlivé otázky odpovídalo — jestli správně a za jak dlouho — ale bez vazby na tebe nebo tvůj profil. Z těchto záznamů hrají počítačoví soupeři, aby odpovídali jako skuteční lidé. Kdo odpovídal, se z nich zjistit nedá.</p>
+
+    <h2>Proč to smíme</h2>
+    <p>Údaje o profilu a hrách potřebujeme, abychom ti mohli hru poskytnout — bez nich by nebyl rating ani žebříček. Stejně tak e-mail, který vyplníš jen tehdy, když o obnovu PINu stojíš (plnění smlouvy, čl. 6 odst. 1 písm. b) GDPR).</p>
+    <p>Bezpečnostní údaje a IP adresu zpracováváme z oprávněného zájmu chránit hru a tvůj profil před zneužitím (čl. 6 odst. 1 písm. f) GDPR).</p>
+
+    <h2>Kdo další má k údajům přístup</h2>
+    <p>Nikdo, komu bychom je prodali nebo předali kvůli reklamě. Technicky je za nás zpracovávají tito dodavatelé:</p>
+    <ul>
+      <li>Cloudflare, Inc. — provozuje server a databázi, na kterých hra běží. Databáze je umístěná v Evropě. Cloudflare je americká společnost; předávání údajů se řídí standardními smluvními doložkami EU.</li>
+      <li>Resend, Inc. — doručuje e-maily s odkazem na obnovu PINu. Dostane jen adresu a samotný odkaz, a to jen tehdy, když o obnovu požádáš. Předávání se řídí stejnými doložkami.</li>
+    </ul>
+
+    <h2>Jak dlouho údaje držíme</h2>
+    <ul>
+      <li>Profil a herní data — dokud profil nesmažeš. Neaktivní profily automaticky nemažeme.</li>
+      <li>Odkaz na obnovu PINu — platí 30 minut a dá se použít jen jednou.</li>
+      <li>Nedohraná hra — po 48 hodinách se uzavře a vyhodnotí podle bodů.</li>
+      <li>IP adresa ze zakládání profilu — jednu hodinu.</li>
+      <li>Přihlášení v prohlížeči — 90 dní, pak je potřeba přihlásit se znovu.</li>
+    </ul>
+
+    <h2>Smazání profilu</h2>
+    <p>Profil smažeš přímo ve hře, ve Světové lize v Profilu. Přezdívka, e-mail i kód pro přátele zmizí, PIN přestane fungovat a všechna přihlášení se okamžitě zruší. Smažeme rating, přátele a seznam otázek, které znáš.</p>
+    <p>Odehrané hry zůstanou, ale už nebudou spojené s tebou — soupeř je u sebe uvidí jako hru se „Smazaným hráčem“. Jinak bychom ostatním hráčům mazali jejich vlastní historii. Podrobně to popisujeme na stránce <a href="smazani-uctu">Smazání profilu</a>.</p>
+
+    <h2>Tvoje práva</h2>
+    <p>Máš právo vědět, jaké údaje o tobě máme, nechat je opravit nebo smazat, dostat je ve strojově čitelné podobě, omezit jejich zpracování a vznést proti němu námitku. Stačí napsat na <a href="mailto:ahoj@zemekviz.cz">ahoj@zemekviz.cz</a> — odpovíme nejpozději do měsíce.</p>
+    <p>Když máš pocit, že s údaji zacházíme špatně, můžeš si stěžovat u Úřadu pro ochranu osobních údajů.</p>
+
+    <h2>Cookies a úložiště prohlížeče</h2>
+    <p>Cookies nepoužíváme vůbec. Hra si do úložiště prohlížeče ukládá jen to, co ke hraní potřebuje, a nic z toho neslouží ke sledování:</p>
+    <ul>
+      <li><code>zk_online_token</code> — Přihlášení do Světové ligy.</li>
+      <li><code>zk_seen</code> — Že se v tomhle prohlížeči už někdo přihlásil, abychom příště nabídli přihlášení místo registrace.</li>
+      <li><code>zk_daily_done</code> — Den, kdy byla dohraná denní pětka.</li>
+      <li><code>hricka_quiz_saves</code> — Rozehrané hry.</li>
+      <li><code>hricka_quiz_names</code> — Jména hráčů z párty.</li>
+    </ul>
+
+    <h2>Věk</h2>
+    <p>Profil ve Světové lize si může založit, komu je aspoň 13 let. Mladší můžou hrát sólo, párty i školu bez profilu, klidně v dětské obtížnosti — a v těch režimech se o nich nic neukládá mimo jejich zařízení. Online můžou hrát s rodičem na jeho profilu.</p>
+    <p>Když zjistíme, že profil založilo dítě mladší 13 let, smažeme ho.</p>
+
+    <h2>Změny</h2>
+    <p>Když tyhle zásady změníme, upravíme datum nahoře a o podstatných změnách dáme vědět ve hře.</p>
+  </main>
+
+  <footer class="pr-foot">Máš otázku? Napiš nám na <a href="mailto:ahoj@zemekviz.cz">ahoj@zemekviz.cz</a>.</footer>
+</div>
+</body>
+</html>

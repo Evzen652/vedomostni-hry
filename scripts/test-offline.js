@@ -749,6 +749,38 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
     "assets/three.min.js chybí — glóbus by se nevykreslil vůbec");
 }
 
+// ---- právní stránky (2026-09-10) ----
+// Tři statické stránky, které vyžaduje zákon i obchody. Hlídají se způsoby, jakými by
+// potichu přestaly fungovat — každý z nich se v projektu u jiného souboru už stal:
+// soubor chybí v seznamu build-public.js, takže se na web nedostane (2026-08-25);
+// odkaz v appce vede na stránku, která neexistuje; plochá šipka místo malované (2026-09-03).
+sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
+{
+  const BUILD = fs.readFileSync(path.join("scripts", "build-public.js"), "utf8");
+  const sezn = /const SOUBORY\s*=\s*\[([\s\S]*?)\]/.exec(BUILD);
+  const vBuildu = sezn ? sezn[1] : "";
+  for (const s of ["podminky", "soukromi", "smazani-uctu"]) {
+    const soubor = s + ".html";
+    const html = fs.existsSync(soubor) ? fs.readFileSync(soubor, "utf8") : "";
+    kontrola(html, "chybí právní stránka " + soubor);
+    // Uvozovky jsou součást vzoru: bez nich by prošel i "podminky.html.bak" (prefix, ne jméno).
+    kontrola(vBuildu.includes('"' + soubor + '"'),
+      soubor + " není v SOUBORY v build-public.js — na web se nedostane");
+    kontrola(/<link rel="stylesheet" href="pravni\.css">/.test(html), soubor + " neodkazuje na pravni.css");
+    kontrola(new RegExp('href="' + s + '" aria-current="page"').test(html),
+      soubor + " nemá v navigaci označenou sebe jako aktuální stránku");
+    kontrola(!/[←→]/.test(html.replace(/<!--[\s\S]*?-->/g, "")),
+      soubor + " má plochou šipku místo malované");
+  }
+  kontrola(vBuildu.includes('"pravni.css"'),
+    "pravni.css není v SOUBORY v build-public.js — stránky by na webu byly bez stylu");
+  kontrola(/href="podminky"/.test(SRC_ONLINE) && /href="soukromi"/.test(SRC_ONLINE),
+    "přihlášení v online.js neodkazuje na podmínky a ochranu údajů");
+  kontrola(/href="smazani-uctu"/.test(SRC_ONLINE),
+    "profil v online.js neodkazuje na stránku o smazání");
+  kontrola(/href="soukromi"/.test(SRC), "rozcestník v quiz.js neodkazuje na ochranu údajů");
+}
+
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

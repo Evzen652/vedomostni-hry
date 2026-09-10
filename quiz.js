@@ -687,6 +687,10 @@
         <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Třída hádá. Aspoň jeden musí něco vědět...</div></button>
       </div>
       ${resumeBtn}${resumeModal}
+      <!-- Právní odkazy (2026-09-10) i pro hráče bez profilu: offline hra taky ukládá
+           do prohlížeče rozehrané hry a jména. Ve stejné kartě — z rozcestníku se nic
+           neztratí a stránky mají vlastní Zpět do hry. -->
+      <div class="qz-legalfoot"><a href="podminky">Podmínky použití</a> · <a href="soukromi">Ochrana údajů</a></div>
     </div>`;
     body.querySelector("#qz-mode-solo").addEventListener("click", () => beginPick("solo"));
     body.querySelector("#qz-mode-party").addEventListener("click", () => beginPick("party"));

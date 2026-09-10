@@ -1210,6 +1210,15 @@
 .zk-authfoot { margin-top: 14px; padding-top: 12px; border-top: 1.5px solid #ecdfc7;
   text-align: center; font-size: 13px; color: var(--muted); }
 .zk-authfoot .zk-linkbtn { font-size: 13px; color: var(--teal); text-decoration-color: #a9cfcb; }
+/* Právní odkazy pod přihlášením a v profilu (2026-09-10). Drobné a tlumené — jsou tu,
+   protože je zákon i obchody chtějí mít na dosah, ne aby soupeřily s hlavní akcí. */
+.zk-legal { margin-top: 10px; font-size: 12.5px; line-height: 1.6; color: var(--muted); }
+.zk-legal a { color: var(--teal); text-decoration-color: #a9cfcb; text-underline-offset: 2px; }
+.zk-legalnote { display: block; margin-bottom: 2px; }
+/* Totéž na rozcestníku, pro hráče bez profilu. Odstup od dlaždic je větší než mezi nimi,
+   ať se to čte jako patička obrazovky, ne jako další volba (pravidlo o vzdušnosti). */
+.qz-legalfoot { margin-top: 30px; font-size: 12.5px; color: var(--muted); text-align: center; }
+.qz-legalfoot a { color: var(--teal); text-decoration-color: #a9cfcb; text-underline-offset: 2px; }
 
 @media (max-width: 480px) {
   .zk-authhero { height: 175px; }
