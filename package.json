@@ -6,6 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate-data.js",
     "audit": "node scripts/audit-questions.js",
+    "audit:konzistence": "node scripts/audit-konzistence.js",
     "test:offline": "node scripts/test-offline.js",
     "test:ghost": "node scripts/test-ghost.js",
     "test:pool": "node scripts/test-pool.js",

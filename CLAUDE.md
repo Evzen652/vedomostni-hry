@@ -68,15 +68,50 @@ při psaní nového CSS s tím počítej.
    pravidla a fronta práce. **Proveď převzetí podle bodu 2, než začneš cokoli měnit.**
 2. **[docs/pokracovani.md](docs/pokracovani.md)** — popisný stav: co je hotové, jak
    appku rozběhnout načisto (`.dev.vars` se negituje!) a které migrace čekají na produkci.
+3. **[docs/obsahovy-dluh.md](docs/obsahovy-dluh.md)** — co našel audit obsahu 2026-09-10 a čeká
+   na ruční opravu (duplicity, prozrazené odpovědi, rod v hláškách, dlouhé odpovědi).
 
-Práce žije na větvi **`claude/pokracujeme-e79708`**; `master` je pozadu a sloučení
-i nasazení jsou rozhodnutí hráče.
+Práce žije na větvi **`claude/pokracujeme-e79708`**. `master` se posouvá těsně před nasazením
+(viz [docs/nasazeni.md](docs/nasazeni.md)), takže bývá napřed i pozadu — sloučení i nasazení
+jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, jinak commity padají na master.
 
 ---
 
 ## Systémová rozhodnutí (log)
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
+
+- **2026-09-10 — Audit obsahu a konzistence: mechanické vady opravené, obsahová práce sepsaná v `docs/obsahovy-dluh.md`. Nový nástroj `npm run audit:konzistence`.**
+  Na přání hráče před psaním serverových otázek. Stávající nástroje beze změny v povaze:
+  `validate` 0 chyb, `audit` 837 (bylo 813 — přírůstek je ze 40 otázek z 31. 8. a kategorie
+  jsou prověřený šum), `lint-facts` 9, `lint-irony` 0 chyb, databáze = data.
+  - **`scripts/audit-konzistence.js` hlídá, co ostatní nástroje ne:** duplicity a vzájemné
+    prozrazování ve stejném fondu, odpověď v zadání, odpověď vyčnívající délkou, malé písmeno
+    na začátku (i u možností), minulý čas s rodem v hláškách i v UI, typografii a diakritiku.
+    U každé kontroly je v hlavičce napsané, co je na ní šum.
+  - **Opraveno v datech:** 96 možností odpovědí ve 24 otázkách začínalo malým písmenem
+    (skoro celá Austrálie) — kreslí se tak, jak jsou v datech, takže to porušovalo pravidlo
+    nahoře; 16× rovné uvozovky → „“, 7× tři tečky → výpustka. Zápis ověřený round-tripem
+    (1 mezera + CRLF), diff 119/119 řádků, `validate` 0 chyb. **Při nasazení to chce
+    `db:sync --remote`** — online si možnosti bere z D1, ne z JSONu.
+  - **Nekonzistence, kterou jsem ten den způsobil sám:** lobby dospělých pořád říkalo „Děti
+    mají vlastní ligu", ačkoli změna na 13+ ji zrušila → „Puberťáci hrají zvlášť". Cestou
+    i „Spletl ses ve jméně?" (minulý čas s rodem) → „Překlep v přezdívce?".
+  - **Obsahový dluh, který se bez hráče nedělá** (podrobně v `docs/obsahovy-dluh.md`):
+    9 dvojic duplicit ve stejném fondu, vzájemné prozrazování (Zátopek, Seifert, Heyrovský,
+    Karel IV. a vzorec „Jak se jmenuje X?" vedle otázek, které X jmenují), 4 odpovědi přímo
+    v zadání, **422 hlášek s minulým časem v rodu** (171× „Tys to věděl!" — rozporuje pravidlo
+    z 2026-09-02, které zápis o rotaci openerů sám cituje) a 205 otázek, kde správná odpověď
+    vyčnívá délkou. **Duplicity se nemažou, přepisují** — na id vedou odkazy z produkční D1.
+  - **PAST, KTEROU JSEM SI POSTAVIL VE FILTRU ŠUMU:** otázky „A, nebo B?" jsem nejdřív
+    vynechával podle slova „nebo" — a schoval tím skutečnou nápovědu u moravských koláčků
+    („s tvarohem, mákem nebo povidly" je výčet, ne volba). Správně: vynechat jen tehdy, když
+    zadání jmenuje i některý distraktor. **Filtr šumu je taky kontrola a může být slepý.**
+  - **Ověřeno, že nástroj měří:** tytéž kontroly před opravou našly 96 / 16 / 6 nálezů, po ní
+    nulu. Průchod obrazovek v prohlížeči (offline i online) bez jediného malého písmena
+    na začátku — jediný nález byl planý (text za tučným číslem, pokračování věty).
+  - **Dokumentace srovnaná:** protokol měl produkci z 8. 9., „master srovnaný s větví"
+    a testy 817 / 4 / 163; tabulka se už neváže na konkrétní commit, protože stárla s každým.
 
 - **2026-09-10 — Světová liga je od 13 let a IP adresy z limitu registrací se mažou. Z právních stránek zbývá nepravdivý už jen kontakt.**
   Body 1 a 2 z předchozího zápisu. Hráč rozhodl „13+, dětské pásmo jen jako obtížnost“.

@@ -137,7 +137,7 @@ window.ZKOnline = (function () {
     dospeli: {
       uvod: "vítej v aréně vědomostí. Držíme palce.",
       pasmo: "Tvoje pásmo je <b>Dospělí</b> — otázky bez zjednodušování. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
-      souperi: "Hraješ proti dospělým. Děti mají vlastní ligu, takže není na koho svádět prohru.",
+      souperi: "Hraješ proti dospělým. Puberťáci hrají zvlášť, takže není na koho svádět prohru.",
       rating0: "Rating je číslo, které měří, jak ti to jde. Startuje se na <b>1500</b> a teprve pár odehraných her z toho udělá skutečné číslo.",
       ratingN: "Rating je číslo, které měří, jak ti to jde. Roste s výhrami, klesá s prohrami.",
     },
@@ -681,7 +681,7 @@ window.ZKOnline = (function () {
               '<div class="zk-donetext">' + esc(hotovo) + "</div></div>" +
             '<button class="qz-go" id="zk-fback">Zpět na přihlášení ' + handArrowSvg(false) + '</button>' +
             '<div class="zk-authnote">Odkaz platí půl hodiny od odeslání.</div>' +
-            '<div class="zk-authfoot">Spletl ses ve jméně? ' +
+            '<div class="zk-authfoot">Překlep v přezdívce? ' +
               '<button type="button" class="zk-linkbtn" id="zk-fagain">Zkusit jinou přezdívku</button></div>'
           : '<div class="zk-form">' +
               '<div class="zk-field">' +

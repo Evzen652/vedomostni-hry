@@ -25,9 +25,9 @@ Zkopíruj do prvního vzkazu:
 |---|---|
 | Repo | `github.com/Evzen652/vedomostni-hry` |
 | Pracovní větev | `claude/pokracujeme-e79708` |
-| Poslední commit | `docs: predavka pro pokracovani na jinem pocitaci` |
-| `master` | `docs: predavaci protokol pro novou session` — **srovnaný s větví (8. 9.)** |
-| Produkce | `zemekviz.pages.dev`, nasazená **8. 9. 2026** — má vše z větve |
+| Poslední commit | viz `git log` — tabulka se schválně neváže na konkrétní commit, stárla s každým |
+| `master` | `65b35db` (10. 9.) — **napřed před produkcí**: obsahuje právní stránky, které se zatím nesmí nasadit |
+| Produkce | `zemekviz.pages.dev`, nasazená **10. 9. 2026** z `03d314f` (zkratka na Česko, návod pod nadpisy) |
 | Účtů v produkci | **1 živý hráč + 18 botů** (dřív se to psalo jako „19 účtů") — **nic se nesmí mazat** |
 
 **Nasazeno 8. 9. 2026:** hodnocené hry z fronty, rychlý start, dělení fondu na veřejný
@@ -35,6 +35,11 @@ a serverový, bezpečnostní opravy (název turnaje, avatar, `token_epoch`, Thre
 mazání profilu, hlášky u zablokovaných tlačítek, přetáčení skóre. Produkce i `master` tedy
 **odpovídají větvi**; migrace doběhly po `2026-09-07-smazani-uctu` včetně (podrobnosti v CLAUDE.md
 pod 2026-09-08).
+
+**Stav 10. 9. 2026:** produkce běží z `03d314f`. `master` je napřed o právní stránky a změnu
+na 13+ — ty se NESMÍ nasadit, dokud nebude doména (kontakt `ahoj@zemekviz.cz` zatím nepřijímá
+poštu). Pracovní větev je napřed i před masterem. Skutečný stav vždy ověř přes `git log`
+a `npx wrangler pages deployment list --project-name zemekviz`, ne podle téhle tabulky.
 
 ---
 
@@ -68,14 +73,14 @@ dohromady ~4,6 kB. Když se stahuje 56 souborů a 4,7 MB, běží starý kód.
 | Příkaz | Očekávaný výsledek |
 |---|---|
 | `npm run validate` | `CHYBY: žádné` (upozornění o chybějících fotkách jsou v pořádku) |
-| `npm run test:offline` | 817 kontrol |
+| `npm run test:offline` | 842 kontrol |
 | `npm run test:pool` | 8 kontrol |
 | `npm run test:auth` | 12 kontrol |
 | `npm run test:ghost` | 67 kontrol |
-| `npm run test:expire` | 4 kontroly |
+| `npm run test:expire` | 8 kontrol |
 
 **5) Testy proti serveru** (server musí běžet):
-`$env:API_BASE="http://127.0.0.1:8788"; npm run test:api` → **163** kontrol.
+`$env:API_BASE="http://127.0.0.1:8788"; npm run test:api` → **167** kontrol.
 Jedna kontrola („usazený hráč silou bota pohnul") je **nedeterministická**; když spadne
 jednou z několika běhů, není to regrese.
 

@@ -70,7 +70,7 @@ Obsluhuje statiku i `/api/*` proti lokální D1, takže funguje i Světová liga
 
 ```bash
 npm run validate       # data + index otázek
-npm run test:offline   # 817 kontrol, offline část
+npm run test:offline   # 842 kontrol, offline část
 npm run test:pool      # 8, dělení fondu (falešná DB)
 npm run test:auth      # 12, token a epocha (falešná DB)
 npm run test:ghost     # 67, ghost soupeř (falešná DB)
