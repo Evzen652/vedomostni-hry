@@ -7,23 +7,27 @@ práce, která potřebuje úsudek. Seznamy jde kdykoli vygenerovat znovu:
 
 ---
 
-## 1. Duplicity — tentýž fakt dvakrát v jednom fondu (9 dvojic)
+## 1. Duplicity — HOTOVO 2026-09-10
 
-Hráč může dostat obě otázky v jedné hře. U každé dvojice jednu nechat a druhou **přepsat
-na jiný fakt — nemazat**: na id vedou odkazy z produkční databáze (`seen_questions`,
-`games.question_ids`), viz CLAUDE.md 2026-08-31.
+Z každé dvojice zůstala jedna otázka a druhá dostala jiný fakt o tomtéž tématu. Id se
+neměnila (vedou na ně odkazy z produkční D1). Osm přepsaných otázek přišlo o obrázek, který
+ukazoval starou odpověď; nové `irony_prompt` jsou připravené a prošly `lint-irony`.
 
-| Fond | Dvojice |
+| Zůstala | Přepsaná → nový fakt |
 |---|---|
-| obecný | `cz-t-navratilova-wimbledon` / `cz-t-navratilova-wimbledon-2` |
-| obecný | `cz-t-lide-nemcova-babicka` / `cz-q-nemcova-babicka` |
-| obecný | `cz-t-lide-foglar-rychle-sipy` / `cz-q-foglar-rychle-sipy` |
-| obecný | `cz-q-smetana-ma-vlast-hluchota` / `cz-q-smetana-hluchota-ma-vlast` |
-| obecný | `cz-q-hasek-dominator-prezdivka` / `cz-q-hasek-dominator` |
-| obecný | `cz-q-capek-slovo-robot` / `cz-q-slovo-robot` |
-| dětský | `cz-k-spejbl-a-hurvinek` / `cz-k-spejbl-hurvinek` |
-| dětský | `cz-k-kraslice` / `cz-k-kraslice-velikonocni-vejce` |
-| dětský | `cz-k-ctyrlistek` / `cz-k-ctyrlistek-komiks` |
+| `cz-t-navratilova-wimbledon` | `cz-t-navratilova-wimbledon-2` → 49 let při posledním grandslamu (US Open 2006) |
+| `cz-q-nemcova-babicka` | `cz-t-lide-nemcova-babicka` → na které bankovce je Němcová |
+| `cz-q-foglar-rychle-sipy` | `cz-t-lide-foglar-rychle-sipy` → skautská přezdívka Jestřáb |
+| `cz-q-smetana-hluchota-ma-vlast` | `cz-q-smetana-ma-vlast-hluchota` → rodiště Litomyšl |
+| `cz-q-hasek-dominator` | `cz-q-hasek-dominator-prezdivka` → dvě Hartovy trofeje (1997, 1998) |
+| `cz-q-slovo-robot` | `cz-q-capek-slovo-robot` → román Válka s mloky |
+| `cz-k-spejbl-a-hurvinek` | `cz-k-spejbl-hurvinek` → pejsek Žeryk (obrázek zůstal, pejsek na něm je) |
+| `cz-k-kraslice` | `cz-k-kraslice-velikonocni-vejce` → velikonoční beránek |
+| `cz-k-ctyrlistek` | `cz-k-ctyrlistek-komiks` → městečko Třeskoprsky |
+
+Cestou opravena faktická chyba v `cz-k-ctyrlistek`: hrdinové jsou kocour, pes, **prasátko**
+a králík, ne „myšák“. Obrázek té otázky myš ukazuje — prompt je opravený, obrázek čeká na
+přegenerování.
 
 Stejná odpověď u **různých** faktů je v pořádku a neopravuje se: sedm pádů × sedm medailí
 Čáslavské, lev na znaku × lev na mincích, Finsko u Santy × u Angry Birds, červené autobusy
@@ -47,7 +51,7 @@ Nejsilnější případy (ručně posouzené):
   v zadání „za chemii", na což se ptá `cz-q-heyrovsky-nobelova-cena`.
 - **Karel IV.** — `cz-q-karlova-univerzita-zalozeni` a `cz-q-karel-iv-nove-mesto` říkají
   „Karel IV. založil univerzitu roku 1348", na což se ptá `cz-t-karlova-univerzita-nejstarsi`.
-- **Hašek** — `cz-t-lide-hasek-branbar` („přezdívalo Dominátor") prozrazuje obě otázky na přezdívku.
+- **Hašek** — `cz-t-lide-hasek-branbar` („přezdívalo Dominátor") prozrazuje zbylou otázku na přezdívku (`cz-q-hasek-dominator`).
 - **Mikuláš** — `cz-q-mikulasska-trojice` („Mikuláš, anděl a čert") prozrazuje `cz-q-mikulasska-nadilka`.
 - **Houfnice** — `cz-q-houfnice-howitzer` („howitzer (houfnice)") prozrazuje `cz-q-houfnice-a-howitzer`.
 - **Kafka** — `cz-t-franz-kafka` („psal v němčině") prozrazuje `cz-t-lide-kafka-spisovatel`.
@@ -63,13 +67,11 @@ v jiné otázce jen jako místo děje.
 `it-k-nutella-puvod` („V Itálii"), `fi-k-santa`, `fi-k-angry-birds`, `gb-k-fotbal-vznik`,
 `hu-a-houdini`. V hře o té zemi je odpověď zřejmá vždycky, bez ohledu na ostatní otázky.
 
-## 3. Odpověď přímo v zadání (4)
+## 3. Odpověď přímo v zadání — HOTOVO 2026-09-10
 
-- `cz-k-moravske-kolacky` — ptá se na „malé kulaté koláčky…", odpověď „Koláčky".
-- `cz-k-ch-jedno-pismeno` — zadání říká, že „CH je jedno písmeno", odpověď „Jedno".
-- `no-k-nisse-rysova-kase` — ptá se na „sladkou rýžovou kaši", odpověď „Rýžovou kaši".
-- `cz-k-hus-hacek-carka` — „vypadá jako drobný háček", odpověď „Háček". U dětské otázky
-  to může být záměrná nápověda — posoudit.
+Přepsané jen zadání, odpověď i obrázek zůstaly: `cz-k-moravske-kolacky`, `cz-k-ch-jedno-pismeno`,
+`no-k-nisse-rysova-kase` (místo „Perníčku“ mezi kašemi je „Krupicová kaše“, jinak by vypadl
+z řady) a `cz-k-hus-hacek-carka` (opraven i minulý čas s rodem v obou hláškách).
 
 ## 4. Minulý čas s rodem k hráči (422 hlášek)
 
@@ -93,8 +95,8 @@ ne zkracovat správnou odpověď.
 | | Obecný fond | Dětský fond |
 |---|---|---|
 | Otázek | 2 752 | 990 |
-| S ilustrací | 867 (32 %) | 274 (28 %) |
-| S „Více o…" | 1 927 (70 %) | 290 (29 %) |
+| S ilustrací | 861 (31 %) | 272 (27 %) |
+| S „Více o…“ | 1 927 (70 %) | 290 (29 %) |
 | S `irony_prompt` | 678 | 253 |
 
 Dětský fond má „Více o…" jen u necelé třetiny otázek — tlačítko se u zbytku nevykreslí.

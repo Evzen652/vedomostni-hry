@@ -81,6 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-10 — Obsahový dluh, body 1 a 3: 9 duplicit přepsaných na nové fakty, 4 nápovědy vytažené ze zadání. Nic se nemazalo.**
+  Z každé dvojice zůstala jedna otázka a druhá dostala jiný fakt o tomtéž tématu — **id beze změny**,
+  protože na ně vedou odkazy z produkční D1 (`seen_questions`, `games.question_ids`). Přehled, co
+  se čím nahradilo, je v `docs/obsahovy-dluh.md`.
+  - **Nový fakt se musel vybírat tak, aby ho neprozradila sestra-otázka** — jinak by oprava vyrobila
+    přesně tu vadu, kterou řeší. Tři kandidáti tím spadli: „Čí portrét je na pětistovce?“ (Boženu
+    Němcovou jmenuje zadání druhé otázky — proto „na které bankovce“), Pražské jaro začínající Mou
+    vlastí (Má vlast stojí v zadání sestry o Smetanově hluchotě) a Haškovy nájezdy v Naganu (tu
+    otázku fond už má, `cz-q-hasek-nagano-rozstrel-kanada`). **Před psaním nového faktu projít fond.**
+  - **8 přepsaným otázkám zmizel obrázek** — ilustroval starou odpověď (devět pohárů, brankář-gladiátor…),
+    a to je horší než žádný. Nové `irony_prompt` jsou napsané a prošly `lint-irony`. Výjimka: Hurvínkův
+    pejsek Žeryk si obrázek nechal, protože pejsek na něm je.
+  - **Nápovědy:** změnilo se jen zadání, odpověď i obrázek zůstaly. U nisse přitom „Perníček“ mezi
+    kašemi nahradila „Krupicová kaše“ — bez „rýžové“ v zadání by jinak jako jediný vypadl z řady.
+  - **Faktická chyba v otázce, která zůstala:** `cz-k-ctyrlistek` popisoval hrdiny jako „kocour, pes,
+    myšák a králík“. Bobík je prasátko — Myšpulín jen zní jako myš a je to kocour. Obrázek té otázky
+    myš ukazuje; opravený prompt čeká na přegenerování.
+  - **`lint-facts` chytil dvě nová „Více o…“:** uvozovací frázi „Kromě toho…“ u Haška a fakt
+    o Navrátilové, který sdílel 64 % kmenů se zadáním (zase grandslamy a čtyřhra). Druhý byl
+    schovaný pod „… a dalších 2“ — lint vypisuje nejvýš šest nálezů na kategorii. **Celý výpis
+    se dá dostat kopií skriptu bez limitu ve scratchpadu, repo se tím nemění.**
+  - **PAST NÁSTROJE: dlouhý příkaz s několika heredocy Bash nezparsuje** („unexpected EOF while
+    looking for matching“) — nespustí se nic, ani první krok. Stalo se dvakrát. Delší skripty
+    psát nástrojem Write do scratchpadu a Bashem je jen spouštět.
+  - **Ověřeno:** audit konzistence `skoro_duplicita` 0, `odpoved_v_zadani` 0, u upravených otázek
+    žádný nález; `validate` 0 chyb, `lint-facts` 9 (beze změny), `lint-irony` 0 chyb, `test:offline` 842.
+    **Při nasazení nutný `db:sync --remote`** — texty otázek jsou v D1.
+
 - **2026-09-10 — Audit obsahu a konzistence: mechanické vady opravené, obsahová práce sepsaná v `docs/obsahovy-dluh.md`. Nový nástroj `npm run audit:konzistence`.**
   Na přání hráče před psaním serverových otázek. Stávající nástroje beze změny v povaze:
   `validate` 0 chyb, `audit` 837 (bylo 813 — přírůstek je ze 40 otázek z 31. 8. a kategorie

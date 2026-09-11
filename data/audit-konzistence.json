@@ -3,13 +3,13 @@
  "stat": {
   "obecny": {
    "otazek": 2752,
-   "obrazek": 867,
+   "obrazek": 861,
    "irony_prompt": 678,
    "vice_o": 1927
   },
   "deti": {
    "otazek": 990,
-   "obrazek": 274,
+   "obrazek": 272,
    "irony_prompt": 253,
    "vice_o": 290
   }
@@ -222,12 +222,6 @@
    "vn-k-bambusovy-tanec: 87 vs nejdelší distraktor 37",
    "vn-t-lakova-malba: 81 vs nejdelší distraktor 38"
   ],
-  "odpoved_v_zadani": [
-   "cz-k-moravske-kolacky: „Koláčky“",
-   "cz-k-hus-hacek-carka: „Háček“",
-   "cz-k-ch-jedno-pismeno: „Jedno“",
-   "no-k-nisse-rysova-kase: „Rýžovou kaši“"
-  ],
   "prozrazuje_jinou": [
    "be-t-komiksove-zdi obsahuje odpověď „Brusel“ z be-t-brusel-eu",
    "ca-t-peameal-bacon obsahuje odpověď „Toronto“ z ca-t-toronto-nejvetsi-mesto",
@@ -259,7 +253,6 @@
    "cz-q-ledecka-dve-zlata-2018 obsahuje odpověď „Ester Ledecká“ z cz-t-ester-ledecka-dvoji-zlato",
    "cz-q-ledecka-dvoje-zlato obsahuje odpověď „Ester Ledecká“ z cz-t-ester-ledecka-dvoji-zlato",
    "cz-q-ledecka-dvoji-zlato-2018 obsahuje odpověď „Ester Ledecká“ z cz-t-ester-ledecka-dvoji-zlato",
-   "cz-q-rychle-sipy-vontove obsahuje odpověď „Rychlé šípy“ z cz-t-lide-foglar-rychle-sipy",
    "cz-t-franz-kafka obsahuje odpověď „V němčině“ z cz-t-lide-kafka-spisovatel",
    "cz-q-tri-rody-libovolnost obsahuje odpověď „V němčině“ z cz-t-lide-kafka-spisovatel",
    "cz-q-karel-iv obsahuje odpověď „Karel IV.“ z cz-t-karlova-univerzita-nejstarsi",
@@ -287,7 +280,6 @@
    "cz-q-zdenek-miler-krtek-beze-slov obsahuje odpověď „Krtečka“ z cz-q-miler-krtecek",
    "cz-q-miler-krtek-svetovy-uspech obsahuje odpověď „Krtečka“ z cz-q-miler-krtecek",
    "cz-q-rychle-sipy-vontove obsahuje odpověď „Rychlé šípy“ z cz-q-foglar-rychle-sipy",
-   "cz-t-lide-hasek-branbar obsahuje odpověď „Dominátor“ z cz-q-hasek-dominator-prezdivka",
    "cz-q-mikulasska-trojice obsahuje odpověď „Anděl a čert“ z cz-q-mikulasska-nadilka",
    "cz-q-kraslice-techniky obsahuje odpověď „Kraslice“ z cz-q-malovani-kraslic",
    "cz-q-chytilova-sedmikrasky-zakaz obsahuje odpověď „Sedmikrásky“ z cz-q-chytilova-sedmikrasky",
@@ -313,7 +305,6 @@
    "cz-k-hymna-jedna-sloka obsahuje odpověď „Kde domov můj“ z cz-k-hymna-nazev",
    "cz-k-standarta-auto obsahuje odpověď „Prezidentská standarta s lvem“ z cz-k-prezidentska-standarta",
    "cz-k-ludmila-naucila-cist obsahuje odpověď „Svatý Václav“ z cz-k-vaclav-socha-namesti",
-   "cz-k-moravske-kolacky obsahuje odpověď „Moravu“ z cz-k-moravska-orlice",
    "de-k-branibor-barva obsahuje odpověď „Braniborská brána“ z de-k-braniborska-brana",
    "fi-k-jokamies obsahuje odpověď „Ve Finsku“ z fi-k-santa",
    "fi-k-jokamies obsahuje odpověď „Ve Finsku“ z fi-k-angry-birds",
@@ -349,27 +340,12 @@
    "se-t-stokholmsky-syndrom obsahuje odpověď „Ve Stockholmu“ z se-t-spotify"
   ],
   "stejna_odpoved_spolecne_pasmo": [
-   "cz-t-navratilova-wimbledon ~ cz-t-navratilova-wimbledon-2",
-   "cz-t-lide-nemcova-babicka ~ cz-q-nemcova-babicka",
-   "cz-t-lide-foglar-rychle-sipy ~ cz-q-foglar-rychle-sipy",
-   "cz-q-smetana-ma-vlast-hluchota ~ cz-q-smetana-hluchota-ma-vlast",
-   "cz-q-hasek-dominator-prezdivka ~ cz-q-hasek-dominator",
    "cz-q-sedm-padu-cestiny ~ cz-q-caslavska-nejuspesnejsi-olympionicka",
-   "cz-q-capek-slovo-robot ~ cz-q-slovo-robot",
    "cz-k-lev ~ cz-k-mince-lev",
-   "cz-k-spejbl-a-hurvinek ~ cz-k-spejbl-hurvinek",
    "cz-k-tvrde-r ~ cz-k-abeceda-42-pismen",
-   "cz-k-kraslice ~ cz-k-kraslice-velikonocni-vejce",
-   "cz-k-ctyrlistek ~ cz-k-ctyrlistek-komiks",
    "fi-k-santa ~ fi-k-angry-birds",
    "gb-k-autobus ~ gb-k-schranka",
    "ru-q-balalajka ~ ru-q-tenis"
-  ],
-  "skoro_duplicita": [
-   "cz-t-lide-foglar-rychle-sipy ~ cz-q-foglar-rychle-sipy (0.41, „Rychlé šípy“)",
-   "cz-q-smetana-ma-vlast-hluchota ~ cz-q-smetana-hluchota-ma-vlast (0.41, „Byl už úplně hluchý“)",
-   "cz-q-hasek-dominator-prezdivka ~ cz-q-hasek-dominator (0.64, „Dominátor“)",
-   "cz-k-ctyrlistek ~ cz-k-ctyrlistek-komiks (0.36, „Čtyřlístek“)"
   ],
   "rod_k_hraci": [
    "ar-q-ba: Blízko duchu Paříže, ale ne z důvodu, který sis vybral.",
@@ -502,7 +478,6 @@
    "cz-t-lendl-tenis: Tys to věděl!",
    "cz-t-sokol-tyrs: Tys to věděl!",
    "cz-t-sparta-nejstarsi-klub: Tys to věděl!",
-   "cz-t-navratilova-wimbledon-2: Tys to věděl!",
    "cz-k-hokejova-zlata-nagano: Tys to věděl!",
    "cz-t-lide-burian-komik: Tys to věděl!",
    "cz-t-lide-mucha-plakaty: Tys to věděl!",
@@ -516,7 +491,6 @@
    "cz-k-loreta-zvonkohra: Jé, tys to věděl!",
    "cz-t-klementinum-strop: Tys to věděl!",
    "cz-t-jirasek-stare-povesti-ceske: Tys to věděl!",
-   "cz-k-hus-hacek-carka: Tys to věděl!",
    "cz-k-abeceda-42-pismen: Jé, tys to věděl!",
    "cz-k-vlajka-sport: Tys to věděl!",
    "cz-k-lipa-list-tvar: Jé, tys to věděl!",
@@ -854,7 +828,6 @@
    "cz-t-lendl-tenis",
    "cz-t-sokol-tyrs",
    "cz-t-sparta-nejstarsi-klub",
-   "cz-t-navratilova-wimbledon-2",
    "cz-k-hokejova-zlata-nagano",
    "cz-t-lide-burian-komik",
    "cz-t-lide-mucha-plakaty",
@@ -868,7 +841,6 @@
    "cz-k-loreta-zvonkohra",
    "cz-t-klementinum-strop",
    "cz-t-jirasek-stare-povesti-ceske",
-   "cz-k-hus-hacek-carka",
    "cz-k-abeceda-42-pismen",
    "cz-k-vlajka-sport",
    "cz-k-lipa-list-tvar",

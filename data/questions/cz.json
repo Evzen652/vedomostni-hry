@@ -2639,7 +2639,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenují malé kulaté koláčky s tvarohem, mákem nebo povidly, typické hlavně pro Moravu?",
+  "question": "Jak se jmenuje malé kulaté moravské pečivo plněné tvarohem, mákem nebo povidly?",
   "answer": "Koláčky",
   "distractors": [
    "Šišky",
@@ -3622,21 +3622,21 @@
   "difficulty": 2,
   "kids": false,
   "type": "choice",
-  "question": "Spisovatelka Božena Němcová napsala jednu z nejznámějších českých knih o životě na venkově a vztahu vnučky k moudré stařence. Jak se ta kniha jmenuje?",
-  "answer": "Babička",
+  "question": "Na které české bankovce je portrét spisovatelky Boženy Němcové?",
+  "answer": "Na pětisetkoruně",
   "distractors": [
-   "Dědeček",
-   "Maminka",
-   "Sousedka"
+   "Na stokoruně",
+   "Na dvousetkoruně",
+   "Na tisícikoruně"
   ],
-  "quip_correct": "Kniha sedí na poličkách škol už přes sto padesát let, to se jen tak nevidí.",
-  "quip_wrong": "Dědeček by taky slušel titulu knihy, jenže tahle patří jeho manželce – babičce.",
-  "explanation": "Božena Němcová je tak vážená spisovatelka, že je její podobizna vytištěná na české bankovce v hodnotě 500 korun.",
-  "more_fact": "Postava babičky v knize je inspirovaná skutečnou babičkou samotné spisovatelky, která ji vychovávala.",
+  "quip_correct": "Spisovatelka, kterou školy čtou z povinnosti, a v peněžence ji má skoro každý dobrovolně.",
+  "quip_wrong": "O pár nul vedle — Němcová bydlí na bankovce, se kterou se v obchodě zachází s trochu větší úctou.",
+  "explanation": "Na ostatních bankovkách najdeš třeba Karla IV. na stokoruně, Jana Amose Komenského na dvousetkoruně a Františka Palackého na tisícikoruně.",
+  "more_fact": "Pětisetkorunu s jejím portrétem vydala Česká národní banka poprvé v roce 1995 a v obměnách se s ní platí dodnes.",
   "source_url": "https://cs.wikipedia.org/wiki/Božena_Němcová",
-  "image_prompt": "Fotorealistický snímek staré knihy položené na dřevěném stole vedle petrolejové lampy a proutěného košíku s jablky, 16:9",
-  "about": "Boženě Němcové a knize Babička",
-  "irony_prompt": "An elderly woman wearing a traditional village headscarf and apron fills the frame, smiling warmly as she holds out a basket of round baked sweet buns. Smaller and subordinate: a young girl eagerly reaching for the treats, and a few farm geese curiously pecking at the grandmother's sturdy shoes."
+  "image_prompt": "Fotorealistický snímek dřevěné truhličky se starými dopisy a husím brkem na stole u okna, 16:9",
+  "about": "Boženě Němcové na bankovce",
+  "irony_prompt": "A giant ornate paper banknote decorated only with floral ornaments and an empty oval portrait frame fills the frame, fluttering like a sail above a small village cottage. Smaller and subordinate: a quill pen and inkwell on the windowsill; a curious goose trying to peck the corner of the huge note."
  },
  {
   "id": "cz-t-lide-komensky-ucitel",
@@ -3766,21 +3766,21 @@
   "difficulty": 2,
   "kids": false,
   "type": "choice",
-  "question": "Spisovatel Jaroslav Foglar psal populární dobrodružné komiksy a příběhy o partě kluků. Jak se ta parta jmenovala?",
-  "answer": "Rychlé šípy",
+  "question": "Jakou přezdívku měl mezi skauty spisovatel Jaroslav Foglar?",
+  "answer": "Jestřáb",
   "distractors": [
-   "Stateční medvědi",
-   "Divocí orlové",
-   "Odvážní lišáci"
+   "Rychlonožka",
+   "Sokol",
+   "Vlk"
   ],
-  "quip_correct": "Klub existoval jen na papíře, a přesto inspiroval generace kluků zakládat ty skutečné.",
-  "quip_wrong": "Divocí orlové zní dobrodružně, ale Foglarova nejslavnější parta měla ve znaku šíp, ne dravce.",
-  "explanation": "Postavička klučičího vůdce Rychlých šípů, chytrého Mirka Dušína, se stala tak populární, že mu lidé dodnes staví pamětní desky.",
-  "more_fact": "Za komunismu byly Foglarovy knihy a komiksy dlouho zakázané, protože se nehodily k tehdejší výchově dětí.",
+  "quip_correct": "Dravec, který shora hlídá celou partu kluků — přezdívka sedí líp než leckteré jméno.",
+  "quip_wrong": "Rychlonožka běhal v jeho komiksech, ne v jeho skautské legitimaci — autor si nechal dravější přezdívku.",
+  "explanation": "Jako Jestřáb vedl celá desetiletí pražský skautský oddíl Dvojka a mnoho zážitků z výprav se pak objevilo v jeho knihách.",
+  "more_fact": "Jeho nejslavnější kniha Hoši od Bobří řeky vyšla v roce 1937 a skautské oddíly podle ní dodnes hrají celotáborové hry.",
   "source_url": "https://cs.wikipedia.org/wiki/Jaroslav_Foglar",
-  "image_prompt": "Fotorealistický snímek starého komiksového sešitu s kresleným šípem na obálce, položeného na klubovním stole s kompasem, 16:9",
-  "about": "Jaroslavu Foglarovi a partě Rychlých šípů",
-  "irony_prompt": "A giant, wooden archery projectile soaring rapidly through the air fills the frame, serving as a makeshift flying log for five adventurous boy scouts sitting in a row on its shaft. Smaller and subordinate: a loyal stray dog trying to chase the flying projectile on the ground, and a small campfire left safely extinguished below."
+  "image_prompt": "Fotorealistický snímek skautského stanu a ohniště v lese za svítání, 16:9",
+  "about": "Jaroslavu Foglarovi",
+  "irony_prompt": "A large hawk wearing a knotted scout neckerchief fills the frame, perched on a wooden fence post and proudly spreading its wings over a forest campsite. Smaller and subordinate: a row of small canvas tents; a crackling campfire; three boys looking up in admiration."
  },
  {
   "id": "cz-t-lide-masaryk-prezident",
@@ -3862,20 +3862,20 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenují dvě nejslavnější české loutky, otec a syn, kteří na sebe v divadle pořád vtipně pokřikují?",
-  "answer": "Spejbl a Hurvínek",
+  "question": "Jak se jmenuje pejsek, který v divadle kamarádí s loutkou Hurvínkem?",
+  "answer": "Žeryk",
   "distractors": [
-   "Kašpárek a Petrklíč",
-   "Pat a Mat",
-   "Rumcajs a Cipísek"
+   "Ferda",
+   "Fík",
+   "Rexík"
   ],
-  "quip_correct": "Hurvínek by na tebe pyšně mrkl - kdyby uměl mrkat bez pomoci loutkoherce.",
-  "quip_wrong": "Pat a Mat by na tuhle otázku jen mlčky pokrčili rameny - oni totiž nikdy nic neřeknou, natož aby poradili.",
-  "explanation": "Postavičky vytvořil v roce 1920 herec Josef Skupa a od té doby mají v Praze vlastní divadlo, kam chodí na představení celé rodiny.",
-  "more_fact": "Hurvínek je věčný spratek, kterému je podle scénářů pořád jen šest let, i když ho diváci sledují už přes sto let.",
+  "quip_correct": "Paráda, sedí to! Žeryk by radostí zavrtěl ocasem.",
+  "quip_wrong": "Ferda je mravenec a Fík obří pes z pohádky — Hurvínkův věrný kamarád se jmenuje jinak.",
+  "explanation": "Žeryk v představeních neumí mluvit, jen štěká a vrčí, ale Hurvínek mu i tak rozumí každé štěknutí.",
+  "more_fact": "Kromě pejska Žeryka má Hurvínek i nejlepší kamarádku Máničku, se kterou se v představeních často škorpí a zase usmiřuje.",
   "source_url": "https://cs.wikipedia.org/wiki/Spejbl_a_Hurv%C3%ADnek",
   "image_prompt": "Fotorealistický snímek dřevěných marionet visících na nitkách v útulné loutkářské dílně, teplé večerní světlo, 16:9",
-  "about": "Spejblovi a Hurvínkovi",
+  "about": "Hurvínkově pejskovi Žerykovi",
   "irony_prompt": "A tall, bald wooden marionette in a tailcoat with huge ears fills the frame, looking exhausted as he gestures towards a smaller, equally large-eared wooden boy puppet whose eyes are rolling comically upward. Smaller and subordinate: tangled control strings forming a messy knot above them, and a wooden dog with floppy ears barking at the argument."
  },
  {
@@ -5695,21 +5695,21 @@
   "section": "Lidé",
   "difficulty": 2,
   "type": "choice",
-  "question": "V jakém stavu už byl skladatel Bedřich Smetana, když dokončoval svůj cyklus Má vlast?",
-  "answer": "Byl už úplně hluchý",
+  "question": "Ve kterém městě se narodil skladatel Bedřich Smetana?",
+  "answer": "V Litomyšli",
   "distractors": [
-   "Byl slepý",
-   "Byl upoutaný na vozík",
-   "Nemohl mluvit"
+   "V Praze",
+   "V Plzni",
+   "V Táboře"
   ],
-  "quip_correct": "Slyšíš dobře - on sám tou dobou už neslyšel vůbec nic.",
-  "quip_wrong": "Zrak mu sloužil dál, přišel jen o sluch, a přesto dál skládal celé symfonické básně.",
-  "explanation": "Hudbu k Mé vlasti si tak mohl kontrolovat jen v hlavě, protože orchestr při komponování fyzicky neslyšel.",
-  "more_fact": "Nejznámější část cyklu, symfonická báseň Vltava, popisuje řeku od pramene až po soutok s Labem.",
+  "quip_correct": "Trefa. Kdo zná rodiště, ten má u zkoušky z hudební výchovy napůl vyhráno.",
+  "quip_wrong": "Praha si ho vzala až později — první křik se ozval o pěkný kus dál na východ.",
+  "explanation": "Narodil se v roce 1824 v budově zámeckého pivovaru, kde jeho otec pracoval jako sládek.",
+  "more_fact": "Litomyšl na jeho počest každé léto pořádá hudební festival Smetanova Litomyšl a tamní renesanční zámek patří mezi památky UNESCO.",
   "source_url": "https://cs.wikipedia.org/wiki/Bed%C5%99ich_Smetana",
-  "image_prompt": "Fotorealistický snímek starého klavíru s otevřenými notami v tiché místnosti se soumrakovým světlem, 16:9",
-  "about": "Bedřichovi Smetanovi a cyklu Má vlast",
-  "irony_prompt": "A 19th-century composer wearing comically giant, thick earmuffs joyfully conducts an invisible orchestra with a baton, which fills the centre of the frame. He has a blissful, inspired smile, completely oblivious to his shockingly loud surroundings. Smaller and subordinate: a large cannon firing a blast right next to his head, and a songbird screaming directly into an abandoned ear trumpet on the floor."
+  "image_prompt": "Fotorealistický snímek renesančního zámku se sgrafitovou fasádou za letního odpoledne, 16:9",
+  "about": "Bedřichu Smetanovi a jeho rodišti",
+  "irony_prompt": "A cheerful baby lying in a round wooden brewing barrel instead of a cradle fills the frame, conducting with a tiny baton above the foamy rim. Smaller and subordinate: a renaissance castle with patterned walls in the background; a brewer father stirring a copper kettle; a few musical instruments leaning against the barrel."
  },
  {
   "id": "cz-q-dvorak-novosvetska-symfonie",
@@ -5876,24 +5876,24 @@
   "id": "cz-q-hasek-dominator-prezdivka",
   "cc": "cz",
   "country": "Česko",
-  "section": "Lidé",
-  "difficulty": 2,
+  "section": "Sport",
+  "difficulty": 3,
   "type": "choice",
-  "question": "Jakou přezdívku dostal hokejový brankář Dominik Hašek za svůj nezvyklý, hadovitý styl chytání?",
-  "answer": "Dominátor",
+  "question": "Čím se brankář Dominik Hašek zapsal do historie NHL v letech 1997 a 1998?",
+  "answer": "Jako první brankář dvakrát vyhrál trofej pro nejužitečnějšího hráče ligy",
   "distractors": [
-   "Pavouk",
-   "Železná zeď",
-   "Gumák"
+   "Odchytal celou základní část bez jediného inkasovaného gólu",
+   "Jako první brankář vstřelil gól přes celé kluziště do prázdné branky",
+   "Jako první Evropan dovedl jako kapitán tým ke Stanleyovu poháru"
   ],
-  "quip_correct": "Sedí přesně - a soupeři by asi souhlasili, že si ji vysloužil poctivě.",
-  "quip_wrong": "Ohebné tělo měl skoro doslova, ale přezdívku mu to nakonec nevyneslo tuhle.",
-  "explanation": "Hašek chytal nezvykle nízko a často padal na led v nečekaných pozicích, což soupeřům dlouho dělalo problém přečíst.",
-  "more_fact": "V zámoří odchytal většinu kariéry v NHL, kde dvakrát vyhrál nejcennější trofej pro nejlepšího brankáře ligy.",
+  "quip_correct": "Brankář jako nejužitečnější hráč celé ligy — útočníci to asi rozdýchávají dodnes.",
+  "quip_wrong": "Celou sezónu bez inkasovaného gólu nezvládne nikdo — jeho skutečný zápis v dějinách je jen o chlup méně neuvěřitelný.",
+  "explanation": "Hartovu trofej pro nejužitečnějšího hráče dostávají skoro vždy útočníci — brankáři ji před Haškem vyhráli jen výjimečně a nikdo z nich dvakrát.",
+  "more_fact": "Šestkrát získal Vezinovu trofej pro nejlepšího brankáře NHL a v roce 2002 s Detroitem konečně i Stanleyův pohár.",
   "source_url": "https://cs.wikipedia.org/wiki/Dominik_Ha%C5%A1ek",
-  "image_prompt": "Fotorealistický snímek hokejové brankářské masky položené na ledové ploše kluziště, 16:9",
-  "about": "Dominikovi Haškovi a jeho přezdívce Dominátor",
-  "irony_prompt": "An imposing ice hockey goaltender dressed in a mix of bulky goalie pads and ancient Roman gladiator armor, stretching unnaturally flexible, snake-like rubber limbs to block a net, which fills the centre of the frame. Smaller and subordinate: a pile of frozen black rubber discs scattered uselessly on the ice, and a frustrated opposing player snapping his own wooden stick in half."
+  "image_prompt": "Fotorealistický snímek prázdné hokejové branky na ledě pod jasnými světly haly, 16:9",
+  "about": "Dominiku Haškovi",
+  "irony_prompt": "An ice hockey goaltender in full padding fills the frame, sprawled across the ice while balancing two identical tall silver trophies on his outstretched leg pads. Smaller and subordinate: puzzled forwards staring at the trophies; a pile of pucks lying uselessly beside the net."
  },
  {
   "id": "cz-q-purkyne-otisky-prstu",
@@ -9165,21 +9165,21 @@
   "section": "Lidé",
   "difficulty": 3,
   "type": "choice",
-  "question": "Slovo 'robot' proslavila po celém světě hra R.U.R. Karla Čapka. Kdo ho ale ve skutečnosti jako první navrhl?",
-  "answer": "Jeho bratr, malíř a spisovatel Josef Čapek",
+  "question": "Ve kterém románu Karla Čapka lidstvo objeví inteligentní tvory, udělá z nich levnou pracovní sílu a samo si tím přivodí zkázu?",
+  "answer": "Válka s mloky",
   "distractors": [
-   "Vymyslel ho sám Karel Čapek přímo při psaní hry",
-   "Slovo převzali bratři z ruského vědeckého časopisu",
-   "Poprvé ho použil jejich otec, venkovský lékař, v deníku"
+   "Krakatit",
+   "Továrna na absolutno",
+   "Hordubal"
   ],
-  "quip_correct": "Slovo, které dnes zná celý svět, si Karel ani nevymyslel sám – Josefovi za to nikdy nepostavili pomník, natož aby po něm pojmenovali umělou inteligenci.",
-  "quip_wrong": "Ruský časopis, otec lékař, samotný Karel u psacího stroje – žádná z verzí nesedí, autorství patří bratru malíři.",
-  "explanation": "Slovo vychází ze staročeského výrazu 'robota', kterým se označovala nucená nevolnická práce na panském poli.",
-  "more_fact": "Hra R.U.R. měla premiéru v roce 1921 a slovo robot se z ní od té doby rozšířilo beze změny do desítek jazyků včetně angličtiny.",
+  "quip_correct": "Lidstvo si vyrobí vlastní zkázu a ještě na ní vydělá. Kdyby to Čapek psal dnes, nemusel by měnit ani čárku.",
+  "quip_wrong": "Krakatit je o výbušnině a Továrna na absolutno o stroji, který chrlí boha — tady si pro celý svět přišli jiní tvorové.",
+  "explanation": "Román vyšel v roce 1936 a Čapek jím varoval před nacismem — mloci, kteří žádají stále víc životního prostoru, byli čitelnou narážkou.",
+  "more_fact": "Čapek byl kvůli svým postojům na seznamu gestapa; zemřel o Vánocích 1938, ještě než si pro něj po okupaci přišli.",
   "source_url": "https://cs.wikipedia.org/wiki/R.U.R.",
-  "image_prompt": "Fotorealistický snímek staré psací mašinky s rozepsaným divadelním scénářem a inkoustovým perem na dřevěném stole, 16:9",
-  "about": "bratřích Čapkových a vzniku slova robot",
-  "irony_prompt": "A man in an artist's smock holding a dripping paintbrush fills the frame, triumphantly pointing his brush at a clunky, metallic mechanical man while his brother, a writer with a quill, looks up at him in sudden gratitude. Smaller and subordinate: the writer's desk is littered with crumpled, completely blank pieces of paper, and a nearby easel displays a painting of mechanical gears and bolts."
+  "image_prompt": "Fotorealistický snímek mlžného pobřeží s černými skalami a klidným mořem za soumraku, 16:9",
+  "about": "Karlu Čapkovi a Válce s mloky",
+  "irony_prompt": "A giant salamander in a smart business suit fills the frame, standing confidently on a beach and pointing at a painted globe that is half flooded with water. Smaller and subordinate: rows of smaller salamanders marching with shovels; a worried man in a straw hat stranded on a tiny island."
  },
  {
   "id": "cz-q-mucha-bankovky",
@@ -12699,7 +12699,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje oblíbený český komiksový časopis pro děti, jehož hlavní čtveřicí hrdinů jsou kocour, pes, myšák a králík?",
+  "question": "Jak se jmenuje oblíbený český komiksový časopis pro děti, jehož hlavní čtveřicí hrdinů jsou kocour, pes, prasátko a králík?",
   "answer": "Čtyřlístek",
   "distractors": [
    "Pentagram",
@@ -12713,7 +12713,7 @@
   "source_url": "https://cs.wikipedia.org/wiki/%C4%8Cty%C5%99l%C3%ADstek",
   "image_prompt": "Fotorealistická fotka hromádky starých barevných komiksových sešitů rozložených na dřevěném stole, bez lidí",
   "about": "komiksu Čtyřlístek a jeho hrdinech",
-  "irony_prompt": "A giant, glowing green four-leaf clover that fills the centre of the frame, carried proudly like an oversized umbrella by a group of four animals. A muscular dog, an elegant cat, a sporty rabbit, and a tiny smart mouse are all comically struggling to balance the massive plant together. Smaller and subordinate: the rabbit dropping a half-eaten carrot in the effort, and a completely blank, empty white speech bubble floating above the group to hint at a comic book."
+  "irony_prompt": "A giant, glowing green four-leaf clover that fills the centre of the frame, carried proudly like an oversized umbrella by a group of four animals. A muscular dog, an elegant cat, a sporty rabbit, and a sturdy pig are all comically struggling to balance the massive plant together. Smaller and subordinate: the rabbit dropping a half-eaten carrot in the effort, and a completely blank, empty white speech bubble floating above the group to hint at a comic book."
  },
  {
   "id": "cz-k-kocour-mikes",
@@ -13584,24 +13584,24 @@
   "cc": "cz",
   "country": "Česko",
   "section": "Sport",
-  "difficulty": 2,
+  "difficulty": 3,
   "kids": false,
   "type": "choice",
-  "question": "Tenistka Martina Navrátilová vyhrála slavný turnaj ve Wimbledonu ve dvouhře víckrát než kterákoli jiná žena v historii. Kolikrát se jí to povedlo?",
-  "answer": "Devětkrát",
+  "question": "Kolik let bylo Martině Navrátilové, když v roce 2006 vyhrála na US Open smíšenou čtyřhru — svůj poslední grandslamový titul?",
+  "answer": "49 let",
   "distractors": [
-   "Jednou",
-   "Třikrát",
-   "Dvacetkrát"
+   "37 let",
+   "43 let",
+   "55 let"
   ],
-  "quip_correct": "Tys to věděl! Devětkrát zvednout na stejném trávníku stejný pohár chce pořádnou vytrvalost.",
-  "quip_wrong": "Jednou by byl krásný úspěch a dvacetkrát skoro nemožné - pravé číslo leží někde mezi tím.",
-  "explanation": "Navrátilová odešla hrát tenis do Ameriky, kde strávila většinu své hráčské kariéry.",
-  "more_fact": "I po skončení hráčské kariéry se Navrátilová do Wimbledonu vracela jako komentátorka a trenérka.",
+  "quip_correct": "Ve věku, kdy se jiní radují z nové kyčle, zvedala nad hlavu grandslamový pohár.",
+  "quip_wrong": "Čtyřicet tři by bylo úctyhodné a třicet sedm běžné — jenže ona dohrála kariéru v době, kdy vrstevnice vodily na kurt vnoučata.",
+  "explanation": "Titul vybojovala po boku Američana Boba Bryana a stala se tak nejstarší vítězkou grandslamového turnaje v otevřené éře tenisu.",
+  "more_fact": "Hrála levou rukou a sázela na útočnou hru, kdy po podání vyrážela rovnou k síti — mezi hráčkami své doby to nebylo běžné.",
   "source_url": "https://cs.wikipedia.org/wiki/Martina_Navrátilová",
-  "image_prompt": "Fotorealistická fotka trávnatého tenisového kurtu s bílými čarami, bez lidí",
+  "image_prompt": "Fotorealistický snímek tenisového kurtu s tvrdým povrchem za soumraku a osamělé rakety u sítě, 16:9",
   "about": "tenistce Martině Navrátilové",
-  "irony_prompt": "A massive golden trophy cup fills the centre of the frame, overflowing ridiculously with exactly nine smaller identical silver cups. Smaller and subordinate: a generic female tennis player struggling to balance this absurd tower of nine cups while serving a tennis ball, a shocked umpire covering his eyes."
+  "irony_prompt": "A sprightly grey-haired tennis player in a white sports outfit fills the frame, leaping high to smash the ball over the net with a huge grin. Smaller and subordinate: a round, tall birthday cake with many lit candles waiting on the umpire's chair; a much younger opponent sitting exhausted on the court; a ball boy offering a walking stick that is cheerfully refused."
  },
  {
   "id": "cz-k-krkonose-bezky",
@@ -14091,21 +14091,21 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se jmenuje nejstarší a nejoblíbenější český komiks pro děti, jehož hlavní hrdinové jsou čtyři kamarádi Fifinka, Bobík, Pinďa a Myšpulín?",
-  "answer": "Čtyřlístek",
+  "question": "Jak se jmenuje městečko, ve kterém bydlí Fifinka, Bobík, Pinďa a Myšpulín?",
+  "answer": "Třeskoprsky",
   "distractors": [
-   "Sluníčko",
-   "Mateřídouška",
-   "ABC"
+   "Kocourkov",
+   "Hurvínkov",
+   "Lhotka"
   ],
-  "quip_correct": "To bylo hned vidět! Ta čtyřka kamarádů řeší dobrodružství déle, než žijí jejich čtenářovi prarodiče.",
-  "quip_wrong": "Mateřídouška je taky dětský časopis, ale tihle čtyři kamarádi v ní nebydlí - hledej jinde.",
-  "explanation": "Časopis vychází každý měsíc už od roku 1969, takže si ho dnes čtou i vnoučata jeho prvních čtenářů.",
-  "more_fact": "Myšpulín je z party ten nejchytřejší vynálezce a pozná se podle kulatých brýlí a bílého pláště.",
+  "quip_correct": "Bystrá hlava! V Třeskoprskách to s touhle partou nikdy není nuda.",
+  "quip_wrong": "Kocourkov je městečko z pohádek o popletech — naše čtveřice bydlí tam, kde to pořád třeská a prská.",
+  "explanation": "Čtyřlístek vymyslel výtvarník Jaroslav Němeček a první příběh party vyšel v roce 1969.",
+  "more_fact": "Myšpulín je z party vynálezce a Bobík je známý tím, že ze všeho nejraději jí, i když je zároveň ze všech nejsilnější.",
   "source_url": "https://cs.wikipedia.org/wiki/Čtyřlístek_(časopis)",
-  "image_prompt": "Fotorealistický záběr na hromádku barevných dětských komiksových sešitů rozložených na dřevěném stole, bez lidí",
-  "about": "komiksu Čtyřlístek",
-  "irony_prompt": "A gigantic, vibrant green four-leaf clover fills the centre of the frame, acting as a protective umbrella for four generic animal friends—a pig, a dog, a rabbit, and a cat—going on a hike. The cheerful animals are marching together happily under the oversized lucky plant to illustrate their famous group. Smaller and subordinate: a tiny scientist cat mixing colorful bubbling potions in a flask; a strong pig carrying a comically huge backpack filled with round, flat discs joined by caramel."
+  "image_prompt": "Fotorealistický snímek malebného městečka s barevnými domky a kostelíkem na kopci za slunečného dne, 16:9",
+  "about": "městečku Třeskoprsky",
+  "irony_prompt": "A tiny cheerful village of four crooked cottages fills the frame, each cottage shaped for its owner: one with a telescope on the roof, one with a bone-shaped doorway, one with an overflowing pantry, one with a flower garden. Smaller and subordinate: a cat, a dog, a pig and a rabbit waving from their doorsteps; a small puff of smoke from a failed invention."
  },
  {
   "id": "cz-k-muzeum-loutek-chrudim",
@@ -14183,25 +14183,25 @@
   "id": "cz-k-kraslice-velikonocni-vejce",
   "cc": "cz",
   "country": "Česko",
-  "section": "Umění",
+  "section": "Jídlo",
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Jak se česky říká vyfouknutým velikonočním vajíčkům zdobeným voskem nebo vyrytými vzory?",
-  "answer": "Kraslice",
+  "question": "Jaké zvířátko se o Velikonocích peče z těsta ve formě a zdobí se mašlí a zvonečkem?",
+  "answer": "Beránek",
   "distractors": [
-   "Perníčky",
-   "Mazance",
-   "Beránci"
+   "Zajíček",
+   "Kuřátko",
+   "Kohoutek"
   ],
-  "quip_correct": "Bod pro tebe! A umělo se to i bez pastelek - jen jehlou, voskem a šikovnou rukou.",
-  "quip_wrong": "Mazanec se peče a jí, kraslice se maluje a schovává - dvě různé velikonoční tradice.",
-  "explanation": "Vzory se dřív ryly jehlou nebo se nanášely rozehřátým voskem, který se po obarvení vajíčka seškrábal.",
-  "more_fact": "Hotové kraslice si děti vyměňují na Velikonoce - kluci je dostávají výměnou za vyšlehání pomlázkou.",
+  "quip_correct": "Hop, a je to! Tenhle beránek nebečí, zato krásně voní.",
+  "quip_wrong": "Zajíček vajíčka nosí a kuřátko se z nich klube — z těsta se peče jiné zvířátko.",
+  "explanation": "Beránek se peče z piškotového těsta v kovové formě a po upečení se poprášuje moučkovým cukrem, aby vypadal jako chlupatý.",
+  "more_fact": "Beránek je starý velikonoční symbol a v mnoha rodinách se peče právě o Velikonocích, aby byl ozdobou slavnostního stolu.",
   "source_url": "https://cs.wikipedia.org/wiki/Kraslice_(vejce)",
-  "image_prompt": "Fotorealistický záběr na několik ručně malovaných velikonočních vajíček s barevnými vzory v proutěném košíčku, bez lidí",
-  "about": "malování kraslic o Velikonocích",
-  "irony_prompt": "A giant, hollowed-out eggshell richly decorated with intricate wax droplet patterns completely fills the frame, serving as a fragile spherical house. Smaller and subordinate: a tiny painter inside the egg using a bellows to blow out the yolk through the window; a bee confusing the bright wax patterns for real flowers; a hedgehog carefully tiptoeing past so its spikes don't shatter the masterpiece."
+  "image_prompt": "Fotorealistický snímek velikonočního beránka z těsta poprášeného cukrem s červenou mašlí na bílém ubrusu, 16:9",
+  "about": "velikonočním beránkovi",
+  "irony_prompt": "A plump lamb-shaped cake — a small sponge loaf baked in the form of a lying lamb, dusted with white powdered sugar, with a red ribbon and a tiny bell around its neck — fills the frame on a festive table. Smaller and subordinate: a real lamb peeking over the table edge in disbelief; a basket of painted eggs."
  },
  {
   "id": "cz-t-klementinum-strop",
@@ -14379,15 +14379,15 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Nad písmeny jako Č, Ř nebo Š bývá malý zobáček. Jak se tomuhle znaménku říká, protože vypadá jako drobný háček zavěšený nad písmenem?",
+  "question": "Nad písmeny jako Č, Ř nebo Š sedí malé znaménko ve tvaru písmene V. Jak se mu česky říká?",
   "answer": "Háček",
   "distractors": [
    "Copánek",
    "Klobouček",
    "Ptačí zobáček"
   ],
-  "quip_correct": "Tys to věděl! Díky háčkům umí čeština zapsat hlásky, které jiné jazyky vůbec nemají.",
-  "quip_wrong": "Zkus se podívat na písmeno Č - ten drobný zobáček nahoře se jmenuje jinak, než sis myslel - je to háček.",
+  "quip_correct": "To bylo hned vidět! Díky háčkům umí čeština zapsat hlásky, které jiné jazyky vůbec nemají.",
+  "quip_wrong": "Copánek se splétá a klobouček nosí hlava — znaménko nad Č má jméno po něčem, na co se chytají ryby.",
   "explanation": "Podle tradice tahle znaménka do češtiny zavedl kněz Jan Hus, aby se hlásky nemusely psát dvěma nebo třemi písmeny najednou.",
   "more_fact": "Předtím se čeština zapisovala takzvaným spřežkovým pravopisem, kdy se jedna hláska skládala i ze dvou nebo tří písmen za sebou, třeba dnešní 'ř' se psalo jako 'rz'.",
   "source_url": "https://cs.wikipedia.org/wiki/Jan_Hus",
@@ -14427,7 +14427,7 @@
   "difficulty": 1,
   "kids": true,
   "type": "choice",
-  "question": "Ve slovníku najdeš slovo 'chleba' hned za slovy začínajícími na H, protože CH je v češtině jedno zvláštní písmeno. Kolik písmen tedy CH ve skutečnosti tvoří?",
+  "question": "Ve slovníku najdeš slovo 'chleba' až za všemi slovy na H, ne mezi slovy na C. Kolik písmen české abecedy dohromady tvoří CH?",
   "answer": "Jedno",
   "distractors": [
    "Dvě",
