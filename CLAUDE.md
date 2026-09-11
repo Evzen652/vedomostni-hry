@@ -122,6 +122,41 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     U velké dávky přes přehledové archy po desítkách, vadné znovu přes `--only`.
   - **Pozor: `submit` otázku s existujícím `img/{id}.jpg` přeskočí** — před přegenerováním starý
     obrázek přesunout stranou (ne `--force`, ten dávkový skript nemá).
+  - **Rusko, první velká dávka: 132 zadání psaných v session (za zadání se neplatí), dávka ~9 min,
+    132/132 uloženo, průměr 231 kB, celkem 29,8 MB.** Kontrola očima vyřadila **10 ze 132 (~8 %)**:
+    - **6× vymyšlený podpis malíře v dolním rohu — nejčastější vada vůbec.** Recept (`STYL` v obou
+      generátorech) má nově „no artist signature, no monogram, no scribbled name in any corner“.
+    - **2× pseudonápisy, které si vyžádala scéna, ne zákaz:** fronta úředníků nesoucích trofeje
+      „rok po roce“ dostala do rukou cedulky s vymyšlenými letopočty (**časový průběh nekreslit
+      přes popisky**) a stará továrna cedule nad dveřmi a skříňku s čísly.
+    - **1× americká vlajka na skafandru sovětského kosmonauta** — model si „vintage spacesuit“
+      spojuje s NASA. U skafandrů psát výslovně, jaký odznak má, a že vlajky nemá.
+    - **1× dva andělé místo tří u ikony Trojice** — obrázek tak popíral odpověď. Počet, na kterém
+      stojí fakt, psát výslovně („exactly three … one on the left, one in the middle…“).
+    - Všech 10 posláno znovu přes `--only`; původní verze leží v zálohách ve scratchpadu.
+      **Druhé kolo: 8 z 10 čistých hned.** Zákaz podpisu v receptu pomohl, ale ne stoprocentně —
+      chrám Vasila Blaženého měl podpis znovu, a Gagarin dostal vedle rudé hvězdy zase nášivku
+      s pruhovanou vlajkou (obecné „no flag patches“ nestačí; teprve „jediná ozdoba celého
+      skafandru je rudá hvězda, zbytek hladká oranžová látka“). **Ani to nestačilo:** třetí pokus
+      měl hvězdu na hrudi a americkou vlajku na RUKÁVU. Model má kosmonauta ve skafandru pevně
+      spojeného s NASA — **zákaz nepomůže, pomůže skafandr vůbec neukázat** (loď s okénkem,
+      z něj jen obličej v helmě a rukavice). Obecně: když model třikrát vrátí tutéž nechtěnou
+      věc, přestaň ji zakazovat a přestav scénu tak, aby pro ni nebylo místo. Čtvrtý pokus
+      (stříbrná kulatá loď, v okénku jen obličej a mávající rukavice) vyšel čistý napoprvé.
+    - **Výsledek Ruska: 132/132 ilustrací, všechny prošly kontrolou očima.** Stálo to ~4,50 USD
+      (132 + 10 + 1 + 1 generování).
+    - **Podpis u kraje se dá ODŘÍZNOUT, ne zakrýt.** Záplata z papíru vedle byla dvakrát vidět
+      jako světlý obdélník, protože podpis ležel na okraji stínu dlažby a záplata ho přetnula.
+      Spolehlivé je vzít horních 728 řádků, oříznout stejně z obou stran (poměr 1344:768 = 7:4,
+      ne přesně 16:9) a zvětšit zpět na 1344×768 — zvětšení 5,5 % není vidět a přijde se jen
+      o pruh prázdné dlažby. Hodí se jen tehdy, když u kraje nestojí nic podstatného; jinak
+      znovu vygenerovat.
+  - **Jak se kontroluje, aby to bylo rychlé a nic neuteklo** (skripty ve scratchpadu, postup platí):
+    1. **archy 3×3** (náhled 600 px + pořadí a id) — obsah, vtip, zjevné nápisy;
+    2. **arch dolních rohů** všech obrázků vedle sebe — podpisy jsou vždycky v rohu a v celkovém
+       náhledu se snadno přehlédnou;
+    3. **výřez pochybného místa ve dvojnásobku** — „písmena“ bývají i knoflíky nebo reliéf (Čapek,
+       Bolšoj), a naopak nášivka, která v náhledu vypadá jako proužek, je vlajka.
 
 - **2026-09-11 — Obsahový dluh, body 4 a 5: žádná hláška už nemá minulý čas s rodem (419 → 0) a žádná správná odpověď nevyčnívá délkou (205 → 0).**
   - **Rod:** 166 dětských úvodů „Tys to věděl!“ / „Jé, tys to věděl!“ vyměněno střídavě za „Jupí, správně!“

@@ -33,7 +33,8 @@ const SIRKA = 1344, KVALITA = 84;
 // Stejný stylový recept jako u synchronního generátoru — držet je v souladu.
 const STYL = "painterly textured watercolour and gouache illustration, aged vintage travel journal, " +
   "muted desaturated ochre cream and soft teal palette, weathered paper texture, warm affectionate irony, " +
-  "one single continuous scene with one clear focal point, no text, no words, no letters, no signage, no border";
+  "one single continuous scene with one clear focal point, no text, no words, no letters, no signage, no border, " +
+  "no artist signature, no monogram, no scribbled name in any corner";
 
 function klic() {
   if (process.env.GEMINI_API_KEY) return process.env.GEMINI_API_KEY;

@@ -47,7 +47,8 @@ const SIRKA = 1344, KVALITA = 84;
 // Styl se drží TADY, ne v datech — ať jde doladit na jednom místě pro celý fond.
 const STYL = "painterly textured watercolour and gouache illustration, aged vintage travel journal, " +
   "muted desaturated ochre cream and soft teal palette, weathered paper texture, warm affectionate irony, " +
-  "one single continuous scene with one clear focal point, no text, no words, no letters, no signage, no border";
+  "one single continuous scene with one clear focal point, no text, no words, no letters, no signage, no border, " +
+  "no artist signature, no monogram, no scribbled name in any corner";
 
 function args() {
   const a = process.argv.slice(2), o = { limit: 10, only: null, force: false, ui: false };

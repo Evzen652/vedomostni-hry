@@ -58,7 +58,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Time_in_Russia",
   "source_card": "ru-lide-pasma",
   "image_prompt": "Fotorealistický snímek východu slunce nad zasněženou sibiřskou tajgou, dlouhé stíny stromů, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "časových pásmech Ruska"
+  "about": "časových pásmech Ruska",
+  "irony_prompt": "A very long, cheerful Russian passenger train fills the frame, stretched across a snowy landscape so far that its front carriage rolls through sunrise while its last carriage sits under the stars; along its windows eleven passengers each live a different hour of the day, from yawning over breakfast to brushing teeth for bed. Smaller and subordinate: a confused conductor juggling eleven pocket watches with plain faces; a rooster crowing at one end while an owl hoots at the other. MOOD: cheerful, whimsical, gently ironic."
  },
  {
   "id": "ru-q-bajkal-nej",
@@ -158,7 +159,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kaliningrad",
   "source_card": "ru-historie-kaliningrad",
   "image_prompt": "Fotorealistický snímek baltského pobřeží s dunami a klidným mořem za podvečerního světla, kousky jantaru na písku v popředí, bez textu, bez lidí v popředí, 16:9",
-  "about": "Kaliningradu"
+  "about": "Kaliningradu",
+  "irony_prompt": "A small proud piece of land shaped like a puzzle piece fills the frame, sitting snugly between two larger neighbouring puzzle pieces painted white-and-red and yellow-green-red, with a tiny white-blue-red flag planted on it and a wide gap of sea separating it from a huge distant puzzle piece on the horizon. Smaller and subordinate: a lonely postman rowing a tiny boat toward the big piece; amber pebbles glittering on its beach; a seagull shrugging. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-volha",
@@ -183,7 +185,8 @@
   "explanation": "Volha měří přibližně 3 530 km a je nejdelší řekou Evropy; celý její tok leží v Rusku.",
   "source_url": "https://en.wikipedia.org/wiki/Volga",
   "image_prompt": "Fotorealistický letecký snímek široké majestátní řeky vinoucí se letní rovinatou krajinou s lesy a písčinami, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Volze"
+  "about": "Volze",
+  "irony_prompt": "A gigantic friendly river drawn as a long blue ribbon with a cheerful face fills the frame, winding across a vast green landscape and wearing a golden winner's medal around its neck, while several much shorter rivers in the distance look up at it with envy. Smaller and subordinate: a paddle steamer riding along its back; a fisherman on the bank measuring it with an absurdly long plain ribbon that vanishes over the horizon. MOOD: cheerful, sunny, playful."
  },
  {
   "id": "ru-q-pelmene",
@@ -210,7 +213,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pelmeni",
   "source_card": "ru-jidlo-pelmene",
   "image_prompt": "Fotorealistický snímek misky kouřících pelmeňů se zakysanou smetanou a koprem na dřevěném stole, měkké teplé světlo, bez textu, bez lidí, 16:9",
-  "about": "pelmeních"
+  "about": "pelmeních",
+  "irony_prompt": "A steaming bowl piled with dozens of small plump dumplings fills the frame — little round ear-shaped pockets of pale boiled dough pinched shut around minced meat — topped with a dollop of white sour cream. The joke: one dumpling has been cut open and a tiny cow and a tiny pig peek out of it and wave. Smaller and subordinate: floury hands pinching more dumplings closed; a wooden spoon waiting eagerly; steam curling into the shape of a cat. MOOD: cosy, warm, cheerful."
  },
  {
   "id": "ru-q-metro",
@@ -231,7 +235,8 @@
   "explanation": "Řada stanic moskevského metra je zdobena mramorem, mozaikami a lustry; nejslavnější pocházejí ze sovětské éry.",
   "source_url": "https://en.wikipedia.org/wiki/Moscow_Metro",
   "image_prompt": "IKONICKÁ PAMÁTKA — zvaž skutečnou fotku. Jinak: fotorealistický ilustrativní snímek honosné podzemní haly metra s mramorovými sloupy, mozaikami a lustry, teplé světlo, bez textu, bez lidí, 16:9",
-  "about": "moskevském metru"
+  "about": "moskevském metru",
+  "irony_prompt": "A grand underground metro station fills the frame, looking exactly like a royal palace ballroom with marble columns, golden mosaics and huge crystal chandeliers, while an ordinary train pulls in and tired commuters in winter coats step out as if arriving at a ball. Smaller and subordinate: one commuter bowing formally to another; a cleaning lady polishing a chandelier from a tall ladder; a pigeon admiring its reflection in the polished floor. MOOD: cheerful, grand, gently ironic."
  },
  {
   "id": "ru-q-bajkal-hloubka",
@@ -408,7 +413,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Borscht",
   "source_card": "ru-jidlo-boršč",
   "image_prompt": "Fotorealistický snímek misky boršče s lžící smetany, čerstvý koprový list navrch, teplé domácí světlo, 16:9",
-  "about": "boršči"
+  "about": "boršči",
+  "irony_prompt": "A deep bowl of vivid ruby-red soup with a swirl of white sour cream fills the frame, and a huge round dark-red beetroot with a leafy green top sits proudly on the rim like a king wearing a tiny crown, dripping red juice. Smaller and subordinate: a cook with bright red-stained hands shrugging; a white tablecloth splattered with pink spots; a slice of dark bread. MOOD: cheerful, warm, gently ironic."
  },
  {
   "id": "ru-q-kaviar",
@@ -430,7 +436,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Caviar",
   "source_card": "ru-jidlo-kaviar",
   "image_prompt": "Fotorealistický detailní snímek černého kaviáru na perleťové lžičce, elegantní servírování, tmavé pozadí, 16:9",
-  "about": "kaviáru"
+  "about": "kaviáru",
+  "irony_prompt": "A huge ancient sturgeon fills the frame — a long armoured fish with a pointed snout and rows of bony plates along its back — swimming alone through clear green sea water and raising a small white flag of surrender with its fin. Smaller and subordinate: in the distance a crowd of fishing boats with empty nets and long faces; a single tiny baby sturgeon hiding behind a rock; bubbles rising in the light. MOOD: gently ironic, hopeful, clear underwater light."
  },
  {
   "id": "ru-q-olivier",
@@ -452,7 +459,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Olivier_salad",
   "source_card": "ru-jidlo-olivier",
   "image_prompt": "Fotorealistický snímek mísy salátu Olivier na sváteční novoroční tabuli, svíčky v pozadí, teplé světlo, 16:9",
-  "about": "salátu Olivier"
+  "about": "salátu Olivier",
+  "irony_prompt": "A tall moustached 19th-century chef in a white toque fills the frame, proudly presenting an elegant dome-shaped mound of creamy potato salad garnished with crayfish tails on a silver platter in a grand restaurant hall with chandeliers. The joke: behind his back a row of cheerful guests are already stirring it all together with spoons into a simple everyday salad. Smaller and subordinate: a waiter hiding a jar of mayonnaise; a snowy onion dome visible through the tall window. MOOD: cheerful, warm, gently ironic."
  },
  {
   "id": "ru-q-gagarin",
@@ -474,7 +482,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vostok_1",
   "source_card": "ru-historie-gagarin",
   "image_prompt": "Fotorealistický snímek rakety Vostok při startu, plameny a kouř, jasná obloha, historická scéna kosmodromu, 16:9",
-  "about": "Gagarinově letu"
+  "about": "Gagarinově letu",
+  "irony_prompt": "A small round silver spacecraft ball with a single round porthole fills the frame, circling the big blue Earth along a loop of little white puffs, and through the porthole peeks a smiling face in a white helmet, waving one hand in a thick orange glove; only the face and the glove are visible, no suit, no badges, no flags. Smaller and subordinate: a spoon and a pencil floating out of a tiny open hatch; tiny people on Earth looking up through binoculars; a star winking. Deep blue night sky fills the whole background. MOOD: cheerful, triumphant, playful."
  },
  {
   "id": "ru-q-revoluce-1917",
@@ -496,7 +505,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russian_Revolution",
   "source_card": "ru-historie-revoluce",
   "image_prompt": "Fotorealistický černobílý snímek davu na ulici ruského města v roce 1917, transparenty, revoluční atmosféra, 16:9",
-  "about": "revoluci 1917"
+  "about": "revoluci 1917",
+  "irony_prompt": "An empty ornate imperial throne fills the frame in a palace hall, and two gusts of wind burst in through two tall windows — a snowy winter gust from the left blowing away an ermine royal cloak, and an autumn gust full of falling leaves from the right blowing away a row of top hats — while red flags flutter in through the open doors. Smaller and subordinate: a crown rolling across the parquet; a startled palace cat hiding under the throne. MOOD: dynamic, gently ironic, not violent."
  },
  {
   "id": "ru-q-ivan-hrozny",
@@ -518,7 +528,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible",
   "source_card": "ru-historie-ivan-hrozny",
   "image_prompt": "Fotorealistický snímek korunovačního obřadu v moskevské katedrále, zlaté ikony, svíce, historický kostým, 16:9",
-  "about": "Ivanu Hroznému"
+  "about": "Ivanu Hroznému",
+  "irony_prompt": "A stern bearded 16th-century ruler in heavy golden brocade robes fills the frame, seated on a throne while an archbishop lowers onto his head a fur-trimmed jewelled cap-crown, and the ruler scowls at the crown as if it were a size too small. Smaller and subordinate: a row of nervous nobles in tall fur hats holding their breath; a cat on the steps copying his scowl; candle smoke curling. MOOD: grand, gently ironic."
  },
  {
   "id": "ru-q-kozaci",
@@ -540,7 +551,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cossacks",
   "source_card": "ru-lide-kozaci",
   "image_prompt": "Fotorealistický snímek kozáckého jezdce na koni ve stepní krajině jižního Ruska, tradiční kroj, večerní světlo, 16:9",
-  "about": "Kozácích"
+  "about": "Kozácích",
+  "irony_prompt": "A dashing Cossack horseman in a tall fur hat with a big moustache and a curved sabre fills the frame, galloping along an endless golden steppe while carrying a striped wooden border barrier on his shoulder like a lance, a rolled scroll with a big wax seal tucked proudly in his belt. Smaller and subordinate: Cossacks dancing a squat-kick dance by a campfire; a royal messenger far away handing over another rolled scroll; a hawk circling overhead. MOOD: spirited, cheerful, gently ironic."
  },
  {
   "id": "ru-q-dacha",
@@ -562,7 +574,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Dacha",
   "source_card": "ru-lide-dacha",
   "image_prompt": "Fotorealistický snímek dřevěné ruské dači se zahradou plnou zeleniny, letní odpoledne, teplé světlo, bez lidí, 16:9",
-  "about": "dače"
+  "about": "dače",
+  "irony_prompt": "A small crooked wooden country cottage with carved window frames fills the frame, completely overrun by a vegetable garden so abundant that giant cabbages, cucumbers and tomatoes push out through its windows and door. The joke: a city family in office clothes happily digs with shovels while their briefcases hang forgotten on the fence. Smaller and subordinate: a grandmother in a headscarf proudly holding an enormous zucchini; a samovar steaming on the porch; a dog napping among strawberries. MOOD: sunny, cheerful, summer warmth."
  },
  {
   "id": "ru-q-pravoslavi",
@@ -584,7 +597,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Religion_in_Russia",
   "source_card": "ru-lide-pravoslavi",
   "image_prompt": "Fotorealistický snímek interiéru pravoslavného chrámu, ikonostas, svíce, teplé zlatavé světlo, bez lidí, 16:9",
-  "about": "náboženství v Rusku"
+  "about": "náboženství v Rusku",
+  "irony_prompt": "A white village church with bright blue and golden onion domes fills the frame, standing in fresh snow, and its golden domes shine so brightly that villagers stop in front of them to straighten their fur hats in the reflection. Smaller and subordinate: a bearded priest in black robes ringing a row of bells with ropes; an old woman lighting a candle in the doorway; pigeons circling the domes. MOOD: warm, peaceful, gently ironic."
  },
  {
   "id": "ru-q-matrjoska",
@@ -606,7 +620,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Matryoshka_doll",
   "source_card": "ru-kultura-matrjoska",
   "image_prompt": "Fotorealistický snímek sady ručně malovaných ruských matrjošek seřazených od největší po nejmenší, teplé světlo, jednobarevné pozadí, bez textu, 16:9",
-  "about": "matrjošce"
+  "about": "matrjošce",
+  "irony_prompt": "A tall painted wooden nesting doll in a red headscarf fills the frame, split open at the waist, and out of it marches a long line of smaller and smaller identical dolls across the table, the very last one no bigger than a pea. Smaller and subordinate: a surprised cat sniffing the smallest doll; a craftsman carving yet another doll in the background; curly wood shavings on the floor. MOOD: cheerful, whimsical, cosy."
  },
  {
   "id": "ru-q-usanka",
@@ -628,7 +643,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ushanka",
   "source_card": "ru-kultura-usanka",
   "image_prompt": "Fotorealistický portrét ušanky (kožešinové čepice s klapkami) na dřevěném stojanu, sněhové pozadí, přirozené světlo, bez lidí, 16:9",
-  "about": "ušance"
+  "about": "ušance",
+  "irony_prompt": "A cheerful man in a big fluffy fur hat with ear flaps fills the frame, standing in a snowstorm with the flaps pulled down and tied under his chin and frost on his moustache, while his reflection in a frozen puddle shows the very same man in summer sunshine with the flaps tied up on top of his head like rabbit ears. Smaller and subordinate: snowflakes landing on his nose; a stray dog wearing a tiny matching hat; icicles on a nearby roof. MOOD: cheerful, frosty, playful."
  },
  {
   "id": "ru-q-ded-moroz",
@@ -650,7 +666,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ded_Moroz",
   "source_card": "ru-kultura-ded-moroz",
   "image_prompt": "Fotorealistický snímek Dědečka Mráze v dlouhém modrém nebo červeném kožichu s holí, zasněžená novoroční scéna, teplé světlo, 16:9",
-  "about": "Dědečku Mrázovi"
+  "about": "Dědečku Mrázovi",
+  "irony_prompt": "A tall Grandfather Frost in a long blue fur-trimmed coat with a flowing white beard and a crystal staff fills the frame, arriving at a house on a sleigh pulled by three galloping horses exactly at midnight, as fireworks burst in the night sky behind him, while inside a decorated fir tree that has been waiting since Christmas taps its branch impatiently. Smaller and subordinate: his granddaughter the Snow Maiden in a pale blue coat carrying a sack of presents; children pressing their noses to the window. MOOD: festive, magical, cheerful."
  },
  {
   "id": "ru-q-vasil-blazeny",
@@ -672,7 +689,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Saint_Basil%27s_Cathedral",
   "source_card": "ru-umeni-vasil",
   "image_prompt": "Fotorealistický snímek Chrámu Vasila Blaženého na Rudém náměstí v Moskvě, barevné cibulové kupole, jasná obloha, bez davů lidí, 16:9",
-  "about": "Chrámu Vasila Blaženého"
+  "about": "Chrámu Vasila Blaženého",
+  "irony_prompt": "The colourful cathedral with swirling striped onion domes on Red Square fills the frame, looking like a cluster of giant candy-striped sweets, and a stern bearded ruler in a fur-trimmed crown stands in front of it tapping his foot impatiently at the builders. Smaller and subordinate: two nervous architects clutching rolled-up drawings; a street vendor selling striped candies that look exactly like the domes; pigeons perched on every dome. MOOD: cheerful, colourful, gently ironic."
  },
  {
   "id": "ru-q-louskacek",
@@ -694,7 +712,8 @@
   "source_url": "https://en.wikipedia.org/wiki/The_Nutcracker",
   "source_card": "ru-umeni-louskacek",
   "image_prompt": "Fotorealistický snímek klasické baletní scény z Louskáčka, tanečníci na jevišti ve světle reflektorů, zimní vánoční kulisa, bez textu, 16:9",
-  "about": "baletu Louskáček"
+  "about": "baletu Louskáček",
+  "irony_prompt": "A wooden nutcracker soldier in a red uniform with a tall black hat and a big square jaw fills the frame, dancing ballet on tiptoe on a theatre stage beside a giant decorated Christmas tree and gracefully cracking a walnut in his teeth mid-pirouette. Smaller and subordinate: a little girl in a white nightgown applauding; a group of mice in the wings watching in awe; sugared sweets raining down. MOOD: magical, festive, cheerful."
  },
  {
   "id": "ru-q-faberge",
@@ -716,7 +735,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Peter_Carl_Faberg%C3%A9",
   "source_card": "ru-umeni-faberge",
   "image_prompt": "Fotorealistický detailní snímek zlatého zdobeného Fabergého vejce s drahokamy, tmavé pozadí, dramatické osvětlení, 16:9",
-  "about": "Fabergého vajíčkách"
+  "about": "Fabergého vajíčkách",
+  "irony_prompt": "A luxurious jewelled egg of gold and blue enamel fills the frame, standing on a small golden stand and opening on a tiny hinge to reveal a miniature golden carriage inside, while a real hen standing next to it stares at the egg in total disbelief. Smaller and subordinate: a jeweller with a magnifying loupe polishing another egg; sparkles reflecting on a velvet cushion; an ordinary brown egg in a nest looking embarrassed. MOOD: sparkling, cheerful, gently ironic."
  },
  {
   "id": "ru-q-sachy",
@@ -738,7 +758,8 @@
   "source_url": "https://en.wikipedia.org/wiki/World_Chess_Championship",
   "source_card": "ru-sport-sachy",
   "image_prompt": "Fotorealistický snímek šachovnice s figurkami uprostřed partie, dramatické boční osvětlení, bez lidí, bez textu, 16:9",
-  "about": "šachu"
+  "about": "šachu",
+  "irony_prompt": "A giant chess king piece wearing a fur hat fills the frame, standing on the top step of a winner's podium on a snowy city square and looking bored while a pile of golden trophies grows higher and higher around its base. Smaller and subordinate: foreign challengers walking away empty-handed, shaking their heads; two old men playing chess on a park bench with thermoses; a snowman deep in thought over a move. Nobody holds placards or banners. MOOD: cheerful, wintry, gently ironic."
  },
  {
   "id": "ru-q-hokej",
@@ -760,7 +781,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ice_hockey_in_Russia",
   "source_card": "ru-sport-hokej",
   "image_prompt": "Fotorealistický snímek hráčů ledního hokeje na kluzišti, rychlý pohyb, ostré osvětlení haly, bez viditelných log, 16:9",
-  "about": "ledním hokeji"
+  "about": "ledním hokeji",
+  "irony_prompt": "A hockey player in a red uniform and a vintage helmet fills the frame, skating so fast across an open-air rink that he leaves a long trail of gold medals behind him like breadcrumbs, while the opposing goalie is buried under a mountain of pucks. Smaller and subordinate: a referee blowing his whistle in exasperation; a spectator in a fur hat cheering; snow falling on the rink. MOOD: energetic, cheerful, gently ironic."
  },
  {
   "id": "ru-q-karelin",
@@ -782,7 +804,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Alexander_Karelin",
   "source_card": "ru-sport-karelin",
   "image_prompt": "Fotorealistický snímek řecko-římského zápasníka ve chvíli vítězství na turnaji, sportovní hala, dramatické osvětlení, 16:9",
-  "about": "Alexandru Karelinovi"
+  "about": "Alexandru Karelinovi",
+  "irony_prompt": "An enormous calm wrestler in a red singlet fills the frame, standing like a mountain in the middle of the wrestling mat with his arms folded, while a line of smaller opponents keep bouncing off him in comic arcs like rubber balls. Smaller and subordinate: a referee yawning; a completely blank scoreboard behind them; an attendant sweeping the bounced opponents off the mat with a broom. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-azbuka",
@@ -804,7 +827,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cyrillic_script",
   "source_card": "ru-jazyk-azbuka",
   "image_prompt": "Fotorealistický detailní snímek ruského cyrilského textu na staré stránce, typografický záběr, bez lidí, 16:9",
-  "about": "azbuce"
+  "about": "azbuce",
+  "irony_prompt": "A kind bearded medieval monk in dark robes with a golden halo fills the frame, standing on a green hilltop and handing an enormous feather quill, taller than himself, to a crowd of cheerful peasants in fur hats, who carry it away toward distant onion domes like a precious relay baton. Smaller and subordinate: a second monk waving goodbye; an inkpot the size of a barrel; birds flying alongside. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "ru-q-patronymikum",
@@ -826,7 +850,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Patronymic",
   "source_card": "ru-jazyk-patronymikum",
   "image_prompt": "Fotorealistický detailní snímek ruského občanského dokumentu se třemi jmény, typografický záběr, bez čitelných osobních údajů, bez lidí, 16:9",
-  "about": "jméně po otci"
+  "about": "jméně po otci",
+  "irony_prompt": "A proud bearded father in an embroidered peasant shirt fills the frame, standing with his arms around a row of his grown-up children, and a strand of his long beard is tied like a ribbon to each child's collar, linking them all to him. Smaller and subordinate: a baby in a cradle already wearing a tiny beard ribbon; a grandmother knitting spare strands; a cat with one strand tied to its tail. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "ru-q-mamut",
@@ -848,7 +873,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mammoth",
   "source_card": "ru-jazyk-mamut",
   "image_prompt": "Fotorealistický snímek mamutího klu zamrzlého v ledu permafrostu, chladné světlo, bez lidí, bez textu, 16:9",
-  "about": "slově mamut"
+  "about": "slově mamut",
+  "irony_prompt": "A huge woolly mammoth fills the frame, pushing up out of the frozen Siberian ground like a giant mole, its two enormous curved tusks rising out of the earth first like two horns growing from the soil. Smaller and subordinate: a startled reindeer herder in furs dropping his cup of tea; a rabbit peering into the hole; frost glittering on the tusks. MOOD: cheerful, surprising, gently ironic."
  },
  {
   "id": "ru-q-rozloha",
@@ -870,7 +896,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russia",
   "source_card": "ru-regiony-rozloha",
   "image_prompt": "Fotorealistický snímek staré fyzické mapy světa se zvýrazněným obrysem Ruska, teplé knihovní světlo, bez textu čitelného zblízka, bez lidí, 16:9",
-  "about": "rozloze Ruska"
+  "about": "rozloze Ruska",
+  "irony_prompt": "A giant brown bear wearing a fur hat fills the frame, lying across a globe and hugging it so widely that its paws reach from one side of the world to the other, while tiny neighbouring countries peek out from under its armpit. Smaller and subordinate: a tailor standing on the globe with a plain measuring ribbon that is far too short; a penguin and a camel living on the bear's back at opposite ends. MOOD: cheerful, gently ironic."
  },
  {
   "id": "ru-q-sochi",
@@ -936,7 +963,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Permafrost",
   "source_card": "ru-priroda-permafrost",
   "image_prompt": "Fotorealistický snímek popraskané zmrzlé sibiřské půdy s ledovými žilami, chladné světlo, bez lidí, bez textu, 16:9",
-  "about": "permafrostu"
+  "about": "permafrostu",
+  "irony_prompt": "A huge block of frozen Siberian ground cut open like a slice of layered cake fills the frame, and trapped inside its icy layers are countless black puffs of smoke and dark bubbles, frozen in place like raisins in a cake. Smaller and subordinate: a scientist in a fur coat nervously checking a thermometer with a plain red line; an old mammoth tusk sticking out of one layer; the summer sun peeking over the horizon with a worried face. MOOD: gently ironic, bright arctic light."
  },
  {
   "id": "ru-q-gejzir",
@@ -980,7 +1008,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tundra",
   "source_card": "ru-priroda-tundra",
   "image_prompt": "Fotorealistický širokoúhlý snímek arktické tundry v létě, nízká vegetace, mechy a lišejníky, ploché rozlehlé území až k horizontu, bez lidí, 16:9",
-  "about": "tundře"
+  "about": "tundře",
+  "irony_prompt": "A lone determined young tree sapling fills the frame, standing on the flat frozen tundra and trying to push its roots down, but just below the surface its roots bump into a hard sheet of ice and curl up in frustration. Smaller and subordinate: a herd of reindeer watching sympathetically; mosses and lichens thriving happily around it; a snowy owl shaking its head. MOOD: gently ironic, bright polar light."
  },
  {
   "id": "ru-q-vodka",
@@ -1002,7 +1031,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vodka",
   "source_card": "ru-jidlo-vodka",
   "image_prompt": "Fotorealistický detailní snímek skleněné lahve a panáku vodky na ledu, chladné světlo, bez textu, bez lidí, 16:9",
-  "about": "vodce"
+  "about": "vodce",
+  "irony_prompt": "A tiny cheerful drop of water with a face fills the frame, standing on a wooden table and proudly holding up a crystal glass far too big for it, while a tall frosted bottle beside it looks down at the little drop with amusement. Smaller and subordinate: a pickled cucumber on a fork; a loaf of dark bread; a cat asleep under the table. MOOD: cheerful, cosy, gently ironic."
  },
  {
   "id": "ru-q-samovar",
@@ -1024,7 +1054,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Samovar",
   "source_card": "ru-jidlo-samovar",
   "image_prompt": "Fotorealistický snímek starého mosazného samovaru na stole s šálky čaje, teplé večerní světlo, bez lidí, 16:9",
-  "about": "samovaru"
+  "about": "samovaru",
+  "irony_prompt": "A large gleaming brass samovar fills the frame — a tall round metal urn with a small tap at the bottom and a teapot sitting on its crown — standing in the middle of a cosy table and puffing steam like a proud little locomotive, while family and neighbours crowd around holding out their teacups. Smaller and subordinate: a plate of sugar cubes; a cat warming itself against the samovar; jars of jam. MOOD: cosy, warm, cheerful."
  },
  {
   "id": "ru-q-pirozky",
@@ -1046,7 +1077,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pirozhki",
   "source_card": "ru-jidlo-pirozky",
   "image_prompt": "Fotorealistický snímek čerstvě upečených zlatavých pirožků na plechu, pára stoupající vzhůru, teplé světlo, 16:9",
-  "about": "pirožcích"
+  "about": "pirožcích",
+  "irony_prompt": "A busy man in a winter coat fills the frame, striding briskly down a snowy street with a briefcase in one hand and a golden oval stuffed bun in the other — a boat-shaped pastry with a crisp crust — taking a big bite without slowing down. Smaller and subordinate: a street seller with a steaming basket of identical oval buns; a dog following hopefully; other passers-by also eating buns on the move. MOOD: lively, cheerful, wintry."
  },
  {
   "id": "ru-q-rurik",
@@ -1068,7 +1100,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rurik_dynasty",
   "source_card": "ru-historie-rurik",
   "image_prompt": "Fotorealistický snímek historické rekonstrukce varjažského knížete přijíždějícího lodí ke starému Novgorodu, ranní mlha nad řekou, 16:9",
-  "about": "Rurikovcích"
+  "about": "Rurikovcích",
+  "irony_prompt": "A tall Viking chieftain with a braided beard and a round shield fills the frame, stepping off a dragon-headed longboat onto a river bank, where local Slavic villagers in linen shirts welcome him with a round loaf of bread and salt on an embroidered towel. Smaller and subordinate: a wooden fortress being built on a hill; a curious bear watching from the forest; river mist. MOOD: epic, warm, gently ironic."
  },
  {
   "id": "ru-q-mongol",
@@ -1090,7 +1123,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Rus%27",
   "source_card": "ru-historie-mongol",
   "image_prompt": "Fotorealistický snímek historické rekonstrukce mongolských jezdců na stepi u ruského opevněného města, večerní světlo, 16:9",
-  "about": "mongolské nadvládě"
+  "about": "mongolské nadvládě",
+  "irony_prompt": "A Mongol horseman in a fur-trimmed pointed helmet fills the frame, sitting on a small horse outside a wooden town gate and holding out a big basket for tribute, and he has waited there so long that a birch tree has grown up through his saddle and his grey beard reaches his knees. Smaller and subordinate: local princes queuing with sacks of tribute; his horse also grey-bearded; a family of birds nesting in his helmet. MOOD: whimsical, gently ironic, not violent."
  },
  {
   "id": "ru-q-sssr",
@@ -1112,7 +1146,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Soviet_Union",
   "source_card": "ru-historie-sssr",
   "image_prompt": "Fotorealistický snímek staré politické mapy Sovětského svazu, archivní tón, bez textu čitelného zblízka, bez lidí, 16:9",
-  "about": "Sovětském svazu"
+  "about": "Sovětském svazu",
+  "irony_prompt": "A huge red flag with a hammer-and-sickle emblem fills the frame, being slowly lowered from a flagpole above a snowy red fortress wall at night, while fifteen small colourful flags float up around it like balloons set free. Smaller and subordinate: a crowd below looking up in astonishment; a man in a fur hat holding a thermos; stars twinkling. MOOD: historic, calm, gently ironic."
  },
  {
   "id": "ru-q-jakuti",
@@ -1134,7 +1169,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sakha_people",
   "source_card": "ru-lide-jakuti",
   "image_prompt": "Fotorealistický snímek chundelatých jakutských koní na zasněžené pastvině v Jakutsku, mrazivá zimní krajina, bez lidí, 16:9",
-  "about": "Jakutech"
+  "about": "Jakutech",
+  "irony_prompt": "A small, very shaggy horse with thick long winter fur fills the frame, standing calmly in a Siberian blizzard with icicles hanging from its mane like a chandelier, chewing hay completely relaxed, while a thermometer on a nearby post has frozen solid and cracked. Smaller and subordinate: a shaggy cow beside it equally unbothered; a herder in reindeer furs shivering; a snowy owl huddled on the fence. MOOD: frosty, cheerful, gently ironic."
  },
  {
   "id": "ru-q-starovery",
@@ -1156,7 +1192,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Old_Believers",
   "source_card": "ru-lide-starovery",
   "image_prompt": "Fotorealistický snímek staroobřadnické vesnice hluboko v sibiřské tajze, dřevěné roubené domy, tradiční oděv, přirozené světlo, 16:9",
-  "about": "staroobřadcích"
+  "about": "staroobřadcích",
+  "irony_prompt": "A bearded old man in a long traditional robe fills the frame, rowing a small wooden boat deep into a vast untouched Siberian forest river, carrying a bundle of old icons and candles, while waving away a messenger on the far shore who holds up a shiny new incense burner. Smaller and subordinate: his family and a cow sitting in the boat; a log cabin waiting in a clearing ahead; a bear watching curiously. MOOD: gently ironic, peaceful, misty forest light."
  },
  {
   "id": "ru-q-urbanizace",
@@ -1178,7 +1215,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russia",
   "source_card": "ru-lide-urbanizace",
   "image_prompt": "Fotorealistický letecký snímek panoramatu velkého ruského města s vysokými panelovými domy, večerní světla, bez textu, 16:9",
-  "about": "městech v Rusku"
+  "about": "městech v Rusku",
+  "irony_prompt": "A huge train made of sixteen carriages fills the frame, each carriage carrying its own crowded miniature city of tall buildings and onion domes, puffing across an enormous empty snowy plain that stretches to the horizon. Smaller and subordinate: a lonely farmer waving from a tiny hut in the empty plain; a flock of birds flying alongside; a bear hitchhiking on the last carriage. MOOD: cheerful, whimsical, gently ironic."
  },
  {
   "id": "ru-q-balalajka",
@@ -1200,7 +1238,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Balalaika",
   "source_card": "ru-kultura-balalajka",
   "image_prompt": "Fotorealistický snímek dřevěné balalajky opřené o stěnu, detailní textura dřeva a strun, teplé světlo, bez lidí, 16:9",
-  "about": "balalajce"
+  "about": "balalajce",
+  "irony_prompt": "A cheerful bearded musician in a red embroidered shirt fills the frame, strumming a triangular wooden balalaika with exactly three strings, while a bear in a vest beside him tries to play along on its own triangle-shaped balalaika and gets its claws tangled in the three strings. Smaller and subordinate: villagers dancing in a circle; a dog howling along; a samovar in the background. MOOD: lively, folksy, cheerful."
  },
  {
   "id": "ru-q-baba-jaga",
@@ -1222,7 +1261,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Baba_Yaga",
   "source_card": "ru-kultura-baba-jaga",
   "image_prompt": "Fotorealistický ilustrativní snímek dřevěné chaloupky na kuřích nožkách v temném lese, měsíční svit, pohádková atmosféra, 16:9",
-  "about": "Baba Jaze"
+  "about": "Baba Jaze",
+  "irony_prompt": "A crooked wooden hut standing on two enormous scaly chicken legs fills the frame, strutting proudly through a dark forest, with an old witch with a long nose leaning out of its window like a passenger on a bus. Smaller and subordinate: a black cat riding on the roof; startled chickens in the clearing staring at the hut's legs; a broom and mortar parked by a tree. MOOD: spooky but cheerful, fairy-tale, playful."
  },
  {
   "id": "ru-q-bana",
@@ -1244,7 +1284,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Banya_(sauna)",
   "source_card": "ru-kultura-bana",
   "image_prompt": "Fotorealistický interiér tradiční dřevěné ruské baně, horká pára, svazek březových větviček na lavici, teplé světlo, bez lidí, 16:9",
-  "about": "ruské bani"
+  "about": "ruské bani",
+  "irony_prompt": "A red-cheeked man wrapped in a towel and wearing a felt cap fills the frame, sitting in a steaming wooden bathhouse while a friend gently swats his back with a leafy bundle of birch twigs, the leaves flying around them like green confetti. Smaller and subordinate: a wooden bucket with a ladle; through a small window someone jumping into a snowdrift; a cat keeping safely outside the door. MOOD: warm, steamy, cheerful."
  },
  {
   "id": "ru-q-bolsoj",
@@ -1266,7 +1307,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bolshoi_Theatre",
   "source_card": "ru-umeni-bolsoj",
   "image_prompt": "Fotorealistický snímek fasády Bolšoj těatru v Moskvě, sloupořadí, socha koňského spřežení na štítu, večerní osvětlení, 16:9",
-  "about": "Bolšoj těatru"
+  "about": "Bolšoj těatru",
+  "irony_prompt": "A grand theatre with a row of tall white columns and a bronze chariot with horses on its roof fills the frame, so enormous that a whole ballet troupe dancing on its front steps looks like tiny figurines, while a normal-sized little theatre beside it gazes up in awe. Smaller and subordinate: an usher using binoculars to see the dancers; a ballerina riding a lift up to the top step; pigeons lining the columns. MOOD: grand, cheerful, gently ironic."
  },
  {
   "id": "ru-q-dostojevskij",
@@ -1288,7 +1330,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky",
   "source_card": "ru-umeni-dostojevskij",
   "image_prompt": "Fotorealistický snímek staré knihy položené na dřevěném stole, měkké okenní světlo, atmosféra 19. století, bez lidí, 16:9",
-  "about": "Dostojevském"
+  "about": "Dostojevském",
+  "irony_prompt": "A gaunt young man in a long shabby coat fills the frame, sitting hunched on a narrow bed in a tiny slanted attic room, while his own enormous shadow on the wall has turned into a stern judge in robes pointing a finger at him. Smaller and subordinate: a single flickering candle; a crumpled coat on a hook; grey city rooftops outside the little window. MOOD: quietly dramatic, gently ironic."
  },
  {
   "id": "ru-q-rublev",
@@ -1310,7 +1353,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Andrei_Rublev",
   "source_card": "ru-umeni-rublev",
   "image_prompt": "Fotorealistický snímek staré pravoslavné ikony ve stylu Andreje Rubleva, zlaté pozadí, jemné barvy, muzejní osvětlení, 16:9",
-  "about": "Andreji Rublevovi"
+  "about": "Andreji Rublevovi",
+  "irony_prompt": "Exactly three graceful winged angels in soft blue, green and golden robes fill the frame, all three seated around a low table in a calm circle — one on the left, one in the middle behind the table and one on the right — painted like an old golden icon, gently passing a single cup between them like three friends sharing tea. Smaller and subordinate: a monk painter on a wooden scaffold adding the last touch of gold leaf; a small oak tree behind the angels; a cat curled at the painter's feet. MOOD: serene, warm, gently ironic."
  },
  {
   "id": "ru-q-krasobrusleni",
@@ -1332,7 +1376,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Figure_skating_in_Russia",
   "source_card": "ru-sport-krasobrusleni",
   "image_prompt": "Fotorealistický snímek krasobruslařského páru během zdvihu na ledové ploše, dramatické osvětlení haly, 16:9",
-  "about": "krasobruslení"
+  "about": "krasobruslení",
+  "irony_prompt": "An elegant figure-skating pair in sparkling costumes fills the frame, gliding across the ice in a perfect lift — but they are a silver-haired grandfather and grandmother, still winning after all these decades, with a long chain of gold medals trailing behind them across the ice. Smaller and subordinate: a judge in a fur hat applauding with tears of joy; young skaters watching in awe; glittering snowflakes. MOOD: graceful, cheerful, gently ironic."
  },
  {
   "id": "ru-q-sambo",
@@ -1354,7 +1399,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sambo_(martial_art)",
   "source_card": "ru-sport-sambo",
   "image_prompt": "Fotorealistický snímek dvou zápasníků samba v souboji na žíněnce, sportovní hala, dramatické osvětlení, 16:9",
-  "about": "sambu"
+  "about": "sambu",
+  "irony_prompt": "A sturdy soldier in an old army greatcoat and a fur hat with a red star fills the frame, standing on a wrestling mat and throwing his instructor over his shoulder with a clever grappling move, while a row of other soldiers watch and copy the move in the air. Smaller and subordinate: a pile of army boots at the edge of the mat; a sergeant with a whistle; a snowy barracks yard outside the window. MOOD: energetic, cheerful, gently ironic."
  },
  {
   "id": "ru-q-soci2014",
@@ -1376,7 +1422,8 @@
   "source_url": "https://en.wikipedia.org/wiki/2014_Winter_Olympics",
   "source_card": "ru-sport-soci2014",
   "image_prompt": "Fotorealistický snímek olympijského stadionu v Sočí s pochodní, hory Kavkazu v pozadí, večerní osvětlení, 16:9",
-  "about": "olympiádě v Sočí 2014"
+  "about": "olympiádě v Sočí 2014",
+  "irony_prompt": "A glittering winter sports stadium shaped like a giant snowflake fills the frame, standing on a sunny subtropical seashore beside palm trees, with its ski slope paved entirely with shiny gold bars, while a single real snowball is displayed under a glass dome like a precious treasure. Smaller and subordinate: an accountant fainting on a deck chair; a palm tree wearing a woolly scarf; seagulls trying to carry off a gold bar. MOOD: sunny, cheerful, gently ironic."
  },
  {
   "id": "ru-q-pady",
@@ -1398,7 +1445,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russian_grammar",
   "source_card": "ru-jazyk-pady",
   "image_prompt": "Fotorealistický detailní snímek ruské gramatické tabulky s pádovými koncovkami v otevřené učebnici, teplé světlo, bez lidí, 16:9",
-  "about": "pádech v ruštině"
+  "about": "pádech v ruštině",
+  "irony_prompt": "A small wooden toy soldier fills the frame, standing in front of a tall mirror and changing into six different outfits one after another — a fur hat, a crown, a helmet, a scarf, a bow tie and a sailor cap hanging on six hooks beside him — while a strict grandmother teacher inspects each outfit with a pointer. Smaller and subordinate: a pile of discarded outfits on the floor; a yawning cat; a clock with a plain face. MOOD: cheerful, whimsical, gently ironic."
  },
  {
   "id": "ru-q-ty-vy",
@@ -1420,7 +1468,8 @@
   "source_url": "https://en.wikipedia.org/wiki/T%E2%80%93V_distinction",
   "source_card": "ru-jazyk-ty-vy",
   "image_prompt": "Fotorealistický detailní snímek ruského psaného textu s zdůrazněnými slovy ty a vy, typografický záběr, bez lidí, 16:9",
-  "about": "tykání a vykání v ruštině"
+  "about": "tykání a vykání v ruštině",
+  "irony_prompt": "A young man in a smart coat fills the frame, caught mid-motion between two greetings: with one hand he lifts his hat in a deep formal bow toward a stately grandmother on the left, while his other arm is already wrapped warmly around his best friend's shoulders on the right. Smaller and subordinate: the grandmother nodding approvingly; the friend grinning; a dog wagging its tail between them. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "ru-q-car",
@@ -1442,7 +1491,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tsar",
   "source_card": "ru-jazyk-car",
   "image_prompt": "Fotorealistický detailní snímek staré ruské knihy s titulem car vytištěným cyrilicí, archivní tón, bez lidí, 16:9",
-  "about": "slově car"
+  "about": "slově car",
+  "irony_prompt": "A Roman emperor in a white toga and a green laurel wreath fills the frame, reaching across a snowy border to hand his laurel wreath to a bearded ruler in a heavy fur coat, who places it on top of his fur hat, where the green leaves promptly freeze and sprout icicles. Smaller and subordinate: a shivering Roman soldier in sandals; a bear holding the ruler's cloak; snowflakes landing on the toga. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-vladivostok",
@@ -1552,7 +1602,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Novosibirsk",
   "source_card": "ru-mista-novosibirsk",
   "image_prompt": "Fotorealistický letecký snímek řeky Ob s železničním mostem a novosibirskou zástavbou na břehu, večerní světlo, 16:9",
-  "about": "Novosibirsku"
+  "about": "Novosibirsku",
+  "irony_prompt": "A long iron railway bridge across a wide Siberian river fills the frame, and right where a steam train crosses it a whole city is sprouting up out of the ground like mushrooms after rain — houses, a domed theatre and cranes popping up along the rails. Smaller and subordinate: a railway worker planting a lamppost like a flower; a fisherman on the river looking amazed; a bear packing a suitcase to move in. MOOD: cheerful, whimsical, gently ironic."
  },
  {
   "id": "ru-q-ladoga",
@@ -1662,7 +1713,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chernozem",
   "source_card": "ru-priroda-cernozem",
   "image_prompt": "Fotorealistický snímek tmavé úrodné černozemě na okraji obdělaného pole, jižní ruská step, jasné denní světlo, bez lidí, 16:9",
-  "about": "černozemi"
+  "about": "černozemi",
+  "irony_prompt": "A deep slice of jet-black soil fills the frame, and out of it grow wheat stalks so tall and heavy that a farmer needs a ladder to harvest them, while a small pot of pale soil beside him grows a single sad little sprout. Smaller and subordinate: a tractor disappearing into a golden sea of wheat; a mole wearing sunglasses in the rich soil; sparrows feasting. MOOD: sunny, cheerful, gently ironic."
  },
  {
   "id": "ru-q-maslenice",
@@ -1684,7 +1736,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Maslenice",
   "source_card": "ru-jidlo-maslenice",
   "image_prompt": "Fotorealistický snímek hromady zlatavých ruských blínů na talíři, teplé sluneční světlo, bez textu, bez lidí, 16:9",
-  "about": "Maslenici"
+  "about": "Maslenici",
+  "irony_prompt": "A huge golden round pancake fills the frame — thin, lacy and perfectly circular — rising over a snowy village horizon exactly like the sun, with warm rays shining from its crispy edges, while villagers below raise their plates toward it and the snow melts in its warmth. Smaller and subordinate: a straw figure of winter waiting by a bonfire; children sliding down a hill on sleds; a tall stack of more pancakes dripping with butter. MOOD: festive, sunny, cheerful."
  },
  {
   "id": "ru-q-kvas",
@@ -1706,7 +1759,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kvass",
   "source_card": "ru-jidlo-kvas",
   "image_prompt": "Fotorealistický snímek sklenice kvasu s pěnou, vedle krajíc žitného chleba, letní světlo, 16:9",
-  "about": "kvasu"
+  "about": "kvasu",
+  "irony_prompt": "A big glass mug of dark amber drink with a foamy top fills the frame, and a whole round loaf of dark rye bread is dissolving into it like a bath bomb, fizzing happily. Smaller and subordinate: a clay jug of the same drink sweating in the summer heat; a slice of bread diving in like a swimmer; bees buzzing around the rim. MOOD: summery, cheerful, gently ironic."
  },
  {
   "id": "ru-q-cerny-chleba",
@@ -1728,7 +1782,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rye_bread",
   "source_card": "ru-jidlo-cerny-chleba",
   "image_prompt": "Fotorealistický snímek bochníku tmavého žitného chleba na dřevěném prkénku, krájené plátky, přirozené světlo, 16:9",
-  "about": "žitném chlebu"
+  "about": "žitném chlebu",
+  "irony_prompt": "A huge round loaf of dark rye bread with a cracked crust fills the frame, wearing a fur hat and a scarf and standing cheerfully in a snowy field, while a pale wheat loaf beside it shivers under a blanket. Smaller and subordinate: rye stalks poking up through the snow; a farmer in felt boots swinging a scythe; a crow pecking crumbs. MOOD: frosty, cheerful, gently ironic."
  },
  {
   "id": "ru-q-sci",
@@ -1750,7 +1805,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Shchi",
   "source_card": "ru-jidlo-sci",
   "image_prompt": "Fotorealistický snímek misky šči (zelné polévky) se lžící zakysané smetany, dřevěný stůl, teplé domácí světlo, 16:9",
-  "about": "šči"
+  "about": "šči",
+  "irony_prompt": "A big clay pot of steaming cabbage soup fills the frame — pale green shredded cabbage floating in golden broth — standing on a long table surrounded by people from ten centuries in a row, from a medieval knight to a modern office worker, all eating from it with wooden spoons. Smaller and subordinate: a bowl of buckwheat porridge beside the pot; a cat stealing a spoonful; steam curling upward. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "ru-q-pernik",
@@ -1772,7 +1828,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pryanik",
   "source_card": "ru-jidlo-pernik",
   "image_prompt": "Fotorealistický snímek zdobených tulských perníků na dřevěném talíři, vedle šálek čaje, teplé domácí světlo, 16:9",
-  "about": "tulském perníku"
+  "about": "tulském perníku",
+  "irony_prompt": "A large flat rectangular honey gingerbread cake fills the frame, its surface pressed with raised patterns of birds and flowers only, carried through the streets of a small old town by two proud bakers as carefully as a precious painting. Smaller and subordinate: a brass samovar gleaming in a doorway; children following the sweet smell; a honeybee escorting the procession. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "ru-q-perestrojka",
@@ -1794,7 +1851,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Perestroika",
   "source_card": "ru-historie-perestrojka",
   "image_prompt": "Fotorealistický snímek staré sovětské tovární haly z 80. let, tlumené světlo, archivní atmosféra, bez lidí, 16:9",
-  "about": "perestrojce"
+  "about": "perestrojce",
+  "irony_prompt": "A large creaky old factory building with plain bare walls fills the frame, being rebuilt by a cheerful workman who has lifted off the roof and is rearranging its rooms like building blocks, while the walls start to wobble and tilt dangerously. Smaller and subordinate: workers carrying doors and windows in opposite directions; a crane holding up a whole floor; a curious crowd peeking in from outside. The walls and doors are completely plain, without plaques or panels. MOOD: dynamic, gently ironic."
  },
  {
   "id": "ru-q-napoleon",
@@ -1816,7 +1874,8 @@
   "source_url": "https://en.wikipedia.org/wiki/French_invasion_of_Russia",
   "source_card": "ru-historie-napoleon",
   "image_prompt": "Fotorealistický snímek ustupující francouzské armády ve sněhu na ruské pláni, zasněžená pustina, ponuré světlo, 16:9",
-  "about": "Napoleonově tažení"
+  "about": "Napoleonově tažení",
+  "irony_prompt": "A small general in a black bicorne hat and a grey greatcoat fills the frame, sitting on a tired horse in a snowstorm and looking back over his shoulder in dismay: behind him the huge army that once stretched to the horizon has shrunk to a small shivering group huddled under blankets. Smaller and subordinate: a lost drum half buried in the snow; a crow sitting on an abandoned cannon; frozen breath hanging in the air. MOOD: wintry, gently ironic, not violent."
  },
  {
   "id": "ru-q-romanovci",
@@ -1838,7 +1897,8 @@
   "source_url": "https://en.wikipedia.org/wiki/House_of_Romanov",
   "source_card": "ru-historie-romanovci",
   "image_prompt": "Fotorealistický portrétní snímek ve stylu staré fotografie carské rodiny, sépiové tóny, historický kostým, 16:9",
-  "about": "Romanovcích"
+  "about": "Romanovcích",
+  "irony_prompt": "A grand empty palace hall fills the frame, with a golden imperial throne draped in a white dust sheet and a jewelled crown resting on a cushion beside it, lit by pale light from tall windows, while outside red flags flutter over a snowy square. Smaller and subordinate: an empty ornate portrait frame on the wall; a single burnt-out candle; a pigeon perched on the back of the throne. MOOD: quiet, melancholic but dignified, no violence."
  },
  {
   "id": "ru-q-leningrad",
@@ -1860,7 +1920,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
   "source_card": "ru-historie-leningrad",
   "image_prompt": "Fotorealistický černobílý dokumentární snímek zasněženého Leningradu za obležení, prázdné ulice, ponurá atmosféra, bez lidí v popředí, 16:9",
-  "about": "obležení Leningradu"
+  "about": "obležení Leningradu",
+  "irony_prompt": "A small bundled-up child pulling a wooden sled with a single loaf of bread fills the frame, walking along a snowy riverside embankment beneath grand classical palaces and a slender golden spire, while dry brown leaves swirl past like long days going by. Smaller and subordinate: a line of people passing buckets of water from the frozen river; a thin cat walking beside the child; warm light breaking through the clouds. MOOD: quiet, dignified, hopeful."
  },
  {
   "id": "ru-q-petrohrad",
@@ -1882,7 +1943,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Saint_Petersburg",
   "source_card": "ru-historie-petrohrad",
   "image_prompt": "Fotorealistický snímek historického centra Petrohradu s řekou Něvou, barokní paláce, zlaté věže, podvečerní světlo, bez textu, 16:9",
-  "about": "Petrohradu"
+  "about": "Petrohradu",
+  "irony_prompt": "A tall young ruler in a green uniform and a tricorne hat fills the frame, standing in a marshy field by the sea and holding up an enormous ornate window frame, through which a sunny view of sailing ships and formal gardens appears, while the snowy old wooden villages lie behind him. Smaller and subordinate: builders driving wooden piles into the mud; a surprised frog on a lily pad; seagulls flying through the window frame. MOOD: bold, cheerful, gently ironic."
  },
  {
   "id": "ru-q-narody",
@@ -1904,7 +1966,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia",
   "source_card": "ru-lide-narody",
   "image_prompt": "Fotorealistický snímek staré etnografické mapy Ruska s barevně odlišenými regiony, archivní tón, bez textu čitelného zblízka, bez lidí, 16:9",
-  "about": "národech v Rusku"
+  "about": "národech v Rusku",
+  "irony_prompt": "A huge round feast table fills the frame, stretching so far into the distance that its far end disappears over the horizon, surrounded by guests in dozens of different traditional costumes — fur hoods, embroidered caps, colourful headscarves — all happily passing dishes to one another. Smaller and subordinate: a waiter running along the table with a steaming pot; a child counting the guests on its fingers; a reindeer and a camel sharing a bench. MOOD: warm, festive, cheerful."
  },
  {
   "id": "ru-q-nenci",
@@ -1926,7 +1989,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nenets_people",
   "source_card": "ru-lide-nenci",
   "image_prompt": "Fotorealistický snímek nenecké rodiny se stádem sobů na zasněžené tundře, tradiční kožešinové oblečení, chladné světlo, 16:9",
-  "about": "Nencích"
+  "about": "Nencích",
+  "irony_prompt": "A cheerful herder in a thick fur parka with a hood fills the frame, riding a sled pulled by reindeer across the white tundra, with his whole home — a cone-shaped tent of reindeer hides — packed onto the sled, while the herd follows him like a moving forest of antlers. Smaller and subordinate: a child peeking out from the furs; a husky running alongside; the pale sun low on the horizon. MOOD: bright, cheerful, respectful."
  },
  {
   "id": "ru-q-kalmykia",
@@ -1948,7 +2012,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kalmykia",
   "source_card": "ru-lide-kalmykia",
   "image_prompt": "Fotorealistický snímek buddhistického chrámu v kalmycké stepi, jasná obloha, tradiční zlaté prvky architektury, bez lidí, 16:9",
-  "about": "Kalmycku"
+  "about": "Kalmycku",
+  "irony_prompt": "A golden Buddhist temple with curved upswept roofs fills the frame, standing in the middle of a flat grassy steppe, and a smiling monk in saffron robes on its steps bows politely to a curious rider in a fur hat who has stopped his horse in surprise. Smaller and subordinate: a lone birch tree nearby; a small onion-domed church far away on the horizon; a herd of camels grazing. MOOD: sunny, peaceful, gently ironic."
  },
  {
   "id": "ru-q-hustota",
@@ -1970,7 +2035,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia",
   "source_card": "ru-lide-hustota",
   "image_prompt": "Fotorealistický letecký snímek rozlehlé prázdné sibiřské krajiny bez jediné stavby, večerní světlo, 16:9",
-  "about": "hustotě osídlení Ruska"
+  "about": "hustotě osídlení Ruska",
+  "irony_prompt": "An enormous empty snowy landscape stretching to the horizon fills the frame, and in its middle one lonely man stands beside a tiny cottage, happily waving to his nearest neighbour, who is just a tiny dot far away on the horizon waving back through binoculars. Smaller and subordinate: a crowded little city squeezed into the far left corner; a bear walking alone; a single bird in the wide sky. MOOD: cheerful, wide, gently ironic."
  },
  {
   "id": "ru-q-porodnost",
@@ -1992,7 +2058,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Russia",
   "source_card": "ru-lide-porodnost",
   "image_prompt": "Fotorealistický snímek prázdné dětské herny na sídlišti, ticho, měkké denní světlo, bez lidí, bez textu, 16:9",
-  "about": "úbytku obyvatel Ruska"
+  "about": "úbytku obyvatel Ruska",
+  "irony_prompt": "A cosy nursery with a long row of wooden cradles fills the frame, all of them empty except one, in which a single happy baby sits surrounded by a crowd of doting grandparents, aunts and uncles all competing to rock that one cradle. Smaller and subordinate: a stork flying past the window looking lost; a pile of untouched toys; a cat asleep in one of the empty cradles. MOOD: warm, gently ironic."
  },
  {
   "id": "ru-q-chochloma",
@@ -2014,7 +2081,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Khokhloma",
   "source_card": "ru-kultura-chochloma",
   "image_prompt": "Fotorealistický snímek dřevěné mísy s tradičním chochloma zdobením — červená, černá a zlatá barva, květinové vzory, teplé světlo, 16:9",
-  "about": "chochlomě"
+  "about": "chochlomě",
+  "irony_prompt": "A set of carved wooden bowls and spoons painted with swirling red and black berries and leaves on a shining golden background fills the frame, and a greedy magpie tries to steal one of the golden spoons, while the craftsman laughs and holds up a plain tin of silvery powder and a jar of honey-coloured varnish. Smaller and subordinate: a clay oven where more bowls are baking; curly wood shavings; a cat batting at a spoon. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "ru-q-gzhel",
@@ -2036,7 +2104,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gzhel",
   "source_card": "ru-kultura-gzhel",
   "image_prompt": "Fotorealistický snímek modrobílého gželského porcelánu — konvice a talíře s modrými květinovými vzory, bílé pozadí, 16:9",
-  "about": "gželském porcelánu"
+  "about": "gželském porcelánu",
+  "irony_prompt": "A plump white porcelain teapot painted with bold cobalt-blue flowers fills the frame, and everything around it has turned blue and white as well — the cat, the curtains, the samovar and even the cook's rosy cheeks. Smaller and subordinate: a painter dipping a brush into blue; a tall stack of blue-and-white cups; a blue-and-white bird on the windowsill. MOOD: cheerful, fresh, gently ironic."
  },
  {
   "id": "ru-q-palech",
@@ -2058,7 +2127,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Palekh_miniature",
   "source_card": "ru-kultura-palech",
   "image_prompt": "Fotorealistický detailní snímek černé lakované krabičky s ručně malovanou pohádkovou scénou zlatou a barevnou temperou, 16:9",
-  "about": "palešské miniatuře"
+  "about": "palešské miniatuře",
+  "irony_prompt": "An old bearded painter at a wooden desk fills the frame, holding up a tiny glossy black lacquer box painted with a fairy-tale troika and a firebird in shimmering gold and red, while the stern painted saints on the old golden icons hanging behind him lean out of their panels to peek curiously over his shoulder. Smaller and subordinate: a jar of very fine brushes; a magnifying glass; a sleepy cat. MOOD: warm, gently ironic."
  },
  {
   "id": "ru-q-bogatyr",
@@ -2080,7 +2150,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bogatyr",
   "source_card": "ru-kultura-bogatyr",
   "image_prompt": "Fotorealistický snímek historické rekonstrukce ruského bogatyra v brnění na koni, stepní krajina, večerní světlo, 16:9",
-  "about": "bogatyrech"
+  "about": "bogatyrech",
+  "irony_prompt": "A mighty bearded warrior in a pointed helmet and chainmail fills the frame, sitting on a huge shaggy horse on the open steppe and shading his eyes with his hand as he scans the horizon for trouble, while a slim western knight in shiny plate armour on a thin horse beside him looks tiny by comparison. Smaller and subordinate: a crow on the warrior's mace; a three-headed dragon nervously hiding behind a hill. MOOD: epic, cheerful, gently ironic."
  },
  {
   "id": "ru-q-kupala",
@@ -2102,7 +2173,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day",
   "source_card": "ru-kultura-kupala",
   "image_prompt": "Fotorealistický snímek lidí skákajících přes noční táborák o letní slunovratu, věnce z květin, teplá záře ohně, 16:9",
-  "about": "svátku Ivana Kupaly"
+  "about": "svátku Ivana Kupaly",
+  "irony_prompt": "A young couple wearing wreaths of wildflowers on their heads fills the frame, leaping hand in hand over a crackling bonfire on a midsummer night. Smaller and subordinate: girls floating flower wreaths with little candles down the river; a frog jumping over a candle too; fireflies dancing in the warm dark. MOOD: magical, joyful, warm."
  },
  {
   "id": "ru-q-chleb-sul",
@@ -2124,7 +2196,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russian_wedding_traditions",
   "source_card": "ru-kultura-chleb-sul",
   "image_prompt": "Fotorealistický snímek kulatého bochníku chleba s miskou soli uprostřed, vyšívaný ubrus, slavnostní příležitost, 16:9",
-  "about": "chlebu a soli"
+  "about": "chlebu a soli",
+  "irony_prompt": "A beaming grandmother in a colourful embroidered dress fills the frame, standing in a doorway and holding out a huge round braided loaf of bread on an embroidered towel with a little salt cellar on top, while a newly married couple both lean in to bite the loaf at the same moment and bump noses. Smaller and subordinate: guests clapping; a cat eyeing the salt; flower petals in the air. MOOD: festive, warm, cheerful."
  },
  {
   "id": "ru-q-labuti-jezero",
@@ -2146,7 +2219,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Swan_Lake",
   "source_card": "ru-umeni-labuti-jezero",
   "image_prompt": "Fotorealistický snímek baletek v bílých kostýmech labutí na jevišti, měkké dramatické osvětlení, 16:9",
-  "about": "baletu Labutí jezero"
+  "about": "baletu Labutí jezero",
+  "irony_prompt": "A graceful ballerina in a white feathered tutu fills the frame, dancing on a stage beside a moonlit lake, while the 19th-century first-night audience yawns, frowns and tosses a few wilted cabbages, and a real swan on the lake gives the audience a disdainful look. Smaller and subordinate: a nervous conductor peeking up from the orchestra pit; a critic asleep in the front row; moonlight shimmering on the water. MOOD: elegant, gently ironic."
  },
  {
   "id": "ru-q-kandinskij",
@@ -2168,7 +2242,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wassily_Kandinsky",
   "source_card": "ru-umeni-kandinskij",
   "image_prompt": "Fotorealistický snímek galerie s abstraktním obrazem plným barevných tvarů ve stylu Kandinského, měkké osvětlení, 16:9",
-  "about": "Kandinském"
+  "about": "Kandinském",
+  "irony_prompt": "A painter in a smart suit fills the frame, standing proudly before a large canvas full of floating circles, triangles and wavy colourful lines with no recognisable subject at all, while the horse he was supposed to be painting stands next to the easel, peering at the canvas in search of itself. Smaller and subordinate: a visitor tilting her head sideways; a cat staring at a red circle; splashes of paint on the floor. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-repin",
@@ -2190,7 +2265,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ilya_Repin",
   "source_card": "ru-umeni-repin",
   "image_prompt": "Fotorealistický snímek inspirovaný obrazem Burlaci na Volze — skupina mužů táhnoucí loď podél řeky, drsné sluneční světlo, 16:9",
-  "about": "Ilji Repinovi"
+  "about": "Ilji Repinovi",
+  "irony_prompt": "A group of weary but determined barge haulers in ragged shirts fills the frame, straining together on a long rope as they pull a big wooden boat upstream along a sunny sandy riverbank, while a small cheerful boy sits on the boat's deck being towed along, happily fishing. Smaller and subordinate: a paddle steamer puffing past effortlessly; seagulls; heat shimmering over the water. MOOD: sunny, gently ironic, respectful."
  },
  {
   "id": "ru-q-cechov",
@@ -2212,7 +2288,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Anton_Chekhov",
   "source_card": "ru-umeni-cechov",
   "image_prompt": "Fotorealistický snímek prázdného jeviště divadla s otevřenou oponou, teplé reflektorové světlo, atmosféra ruského divadla, 16:9",
-  "about": "Antonu Čechovovi"
+  "about": "Antonu Čechovovi",
+  "irony_prompt": "A kind country doctor in a waistcoat fills the frame, sitting at a table by the window of a wooden country house, holding a stethoscope to a coughing patient's chest with one hand and a feather quill in the other, torn between the two, while a blossoming cherry orchard glows outside the window. Smaller and subordinate: a seagull perched on the windowsill; three young women waiting on a bench in the corridor; a samovar steaming. MOOD: warm, gently ironic."
  },
  {
   "id": "ru-q-rachmaninov",
@@ -2234,7 +2311,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
   "source_card": "ru-umeni-rachmaninov",
   "image_prompt": "Fotorealistický detailní snímek rukou hrajících na klavír, teplé koncertní osvětlení, atmosféra klasického koncertu, 16:9",
-  "about": "Sergeji Rachmaninovovi"
+  "about": "Sergeji Rachmaninovovi",
+  "irony_prompt": "A pianist with enormous hands fills the frame, playing a grand piano so fiercely that his fingers blur, little puffs of smoke rise from the keys and the piano's legs brace themselves, while a second, ordinary pianist beside him has tied his own fingers in knots trying to follow. Smaller and subordinate: a page-turner clinging to the piano lid; a chandelier swinging; an audience member holding on to her hat. MOOD: dramatic, cheerful, gently ironic."
  },
  {
   "id": "ru-q-ikony",
@@ -2256,7 +2334,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russian_icon",
   "source_card": "ru-umeni-ikony",
   "image_prompt": "Fotorealistický snímek stěny pokryté pravoslavnými ikonami (ikonostas) v chrámu, zlaté rámy, svíce, tlumené světlo, 16:9",
-  "about": "ikonách"
+  "about": "ikonách",
+  "irony_prompt": "A glowing golden icon in a small wooden church fills the frame, opened like a little window with carved shutters, through which soft heavenly light and clouds pour out onto an old kneeling woman holding a candle. Smaller and subordinate: rows of flickering candles; a curious child peeking from behind a pillar; a painter's brush resting on a stand. MOOD: warm, reverent, gentle."
  },
  {
   "id": "ru-q-bandy",
@@ -2278,7 +2357,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bandy",
   "source_card": "ru-sport-bandy",
   "image_prompt": "Fotorealistický širokoúhlý snímek zápasu bandy na velkém zamrzlém kluzišti, hráči na bruslích se zahnutými holemi, zimní den, bez textu, 16:9",
-  "about": "bandy"
+  "about": "bandy",
+  "irony_prompt": "An enormous frozen ice field the size of a football pitch fills the frame, with full-size football goals at each end, and a player in a fur hat chasing a small orange ball has had to stop halfway across to catch his breath and drink tea from a thermos. Smaller and subordinate: spectators watching through binoculars; a snowplough clearing the ice; a crow perched on a goalpost. MOOD: wintry, cheerful, gently ironic."
  },
  {
   "id": "ru-q-gymnastika",
@@ -2300,7 +2380,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rhythmic_gymnastics",
   "source_card": "ru-sport-gymnastika",
   "image_prompt": "Fotorealistický snímek gymnastky s barevnou stuhou během vystoupení, dynamický pohyb, sportovní hala, 16:9",
-  "about": "moderní gymnastice"
+  "about": "moderní gymnastice",
+  "irony_prompt": "A group of five rhythmic gymnasts in sparkling leotards fills the frame, leaping in perfect unison and twirling long silk ribbons that swirl into the shape of a giant golden circle like a medal in the air, while the podium beneath them is so crowded with their earlier trophies that there is no room left to stand. Smaller and subordinate: rival teams applauding politely; a judge wiping away a tear; balls and hoops rolling around. MOOD: sparkling, cheerful, gently ironic."
  },
  {
   "id": "ru-q-moskva1980",
@@ -2322,7 +2403,8 @@
   "source_url": "https://en.wikipedia.org/wiki/1980_Summer_Olympics",
   "source_card": "ru-sport-moskva1980",
   "image_prompt": "Fotorealistický snímek olympijského stadionu v Moskvě s hořícím olympijským ohněm, slavnostní atmosféra, 16:9",
-  "about": "olympiádě Moskva 1980"
+  "about": "olympiádě Moskva 1980",
+  "irony_prompt": "A huge sunny sports stadium fills the frame, with a friendly brown bear mascot waving happily from the middle of the field, but two thirds of the stands are empty, with just a few cheerful spectators and some birds sitting in the empty rows. Smaller and subordinate: a lonely sprinter waiting at the starting blocks; balloons drifting into the sky; a vendor with a full tray of ice cream and no customers. MOOD: sunny, bittersweet, gently ironic."
  },
  {
   "id": "ru-q-fotbal",
@@ -2344,7 +2426,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Football_in_Russia",
   "source_card": "ru-sport-fotbal",
   "image_prompt": "Fotorealistický snímek fotbalového stadionu plného diváků při zápase, večerní osvětlení, dramatická atmosféra, 16:9",
-  "about": "fotbale v Rusku"
+  "about": "fotbale v Rusku",
+  "irony_prompt": "A football the size of a hill fills the frame, rolling across an enormous landscape of forests, tundra and mountains that stretches to the horizon, while tiny football fans in colourful scarves chase after it with suitcases, trains and sleds. Smaller and subordinate: a reindeer heading the ball; a fan napping in a train carriage; a bear in a goalkeeper's gloves. MOOD: cheerful, whimsical, gently ironic."
  },
  {
   "id": "ru-q-tenis",
@@ -2366,7 +2449,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tennis_in_Russia",
   "source_card": "ru-sport-tenis",
   "image_prompt": "Fotorealistický snímek tenisového kurtu při zápase, hráč v pohybu, ostré sluneční světlo, 16:9",
-  "about": "tenise v Rusku"
+  "about": "tenise v Rusku",
+  "irony_prompt": "Three tennis players in white fill the frame, standing on three stepped podium blocks shaped like the tiers of an onion-domed tower, each proudly holding a golden trophy aloft, while a queue of rival players waits at the bottom holding their rackets sadly. Smaller and subordinate: a ball boy juggling tennis balls; a pigeon sitting on the net; a crowd cheering. MOOD: cheerful, triumphant, gently ironic."
  },
  {
   "id": "ru-q-bezky",
@@ -2388,7 +2472,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cross-country_skiing",
   "source_card": "ru-sport-bezky",
   "image_prompt": "Fotorealistický snímek běžkaře na zasněžené stopě mezi lesy, ranní mlha, přirozené světlo, 16:9",
-  "about": "běžeckém lyžování"
+  "about": "běžeckém lyžování",
+  "irony_prompt": "A long line of cheerful cross-country skiers in old woollen sweaters and knitted hats fills the frame, gliding across a snowy plain behind a big red flag, and even a grandmother, a postman and a goat on skis have joined the parade. Smaller and subordinate: a brass band playing while skiing; a little dog on tiny skis; snowy birch trees along the track. MOOD: festive, wintry, gently ironic."
  },
  {
   "id": "ru-q-rozsah",
@@ -2410,7 +2495,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russian_language",
   "source_card": "ru-jazyk-rozsah",
   "image_prompt": "Fotorealistický snímek staré nástěnné mapy světa s vyznačenou oblastí rozšíření ruského jazyka, knihovní světlo, bez textu čitelného zblízka, bez lidí, 16:9",
-  "about": "rozšíření ruštiny"
+  "about": "rozšíření ruštiny",
+  "irony_prompt": "A space station floating above the blue Earth fills the frame, and through its big round window two astronauts float upside down, clinking tea tubes, while one teaches the other a friendly greeting with a bow and a small wooden nesting doll floats between them. Smaller and subordinate: a floating spoon; a sunrise glowing along the Earth's edge; a star winking. MOOD: cheerful, weightless, gently ironic."
  },
  {
   "id": "ru-q-pismena",
@@ -2432,7 +2518,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russian_orthography",
   "source_card": "ru-jazyk-pismena",
   "image_prompt": "Fotorealistický detailní snímek ruského cyrilského textu se zvýrazněnými znaky ъ a ь, typografický záběr, bez lidí, 16:9",
-  "about": "tvrdém a měkkém znaku"
+  "about": "tvrdém a měkkém znaku",
+  "irony_prompt": "Two tiny silent mime artists fill the frame — one stiff and square in a black suit, the other soft and round in a white fluffy suit — standing between two choirboys and making no sound at all, yet the stiff mime makes the boy beside him sing in a hard deep voice while the soft mime makes the other boy sing gently and softly. Smaller and subordinate: a conductor scratching his head; a cat covering its ears; musical notes drifting as plain little dots. MOOD: whimsical, cheerful, gently ironic."
  },
  {
   "id": "ru-q-zdrobneliny",
@@ -2454,7 +2541,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Russian_name",
   "source_card": "ru-jazyk-zdrobneliny",
   "image_prompt": "Fotorealistický detailní snímek ručně psaného ruského dopisu s podpisem, teplé světlo, bez čitelného textu zblízka, bez lidí, 16:9",
-  "about": "ruských zdrobnělinách"
+  "about": "ruských zdrobnělinách",
+  "irony_prompt": "A tall formal man in a suit fills the frame, walking along a street toward his grandmother, and as he passes his boss, then a friend, then his sister, he gets smaller and cuter at every step, until in his grandmother's arms at the end he is a tiny cuddly boy with rosy cheeks. Smaller and subordinate: the boss shaking hands stiffly; the friend slapping his back; a dog wagging its tail. MOOD: warm, playful, gently ironic."
  },
  {
   "id": "ru-q-vid-slovesa",
@@ -2476,7 +2564,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Grammatical_aspect",
   "source_card": "ru-jazyk-vid-slovesa",
   "image_prompt": "Fotorealistický detailní snímek otevřené ruské gramatické učebnice se slovesnými tvary, teplé světlo, bez lidí, 16:9",
-  "about": "slovesném vidu"
+  "about": "slovesném vidu",
+  "irony_prompt": "A cheerful painter in overalls fills the frame, painting a long wooden fence: the half of the fence behind him is finished and gleaming bright yellow, the half ahead of him is still bare wood, and he looks from one to the other with a raised eyebrow. Smaller and subordinate: a cat walking along the finished part leaving paw prints; a bucket of paint; a neighbour offering him lemonade. MOOD: sunny, cheerful, gently ironic."
  },
  {
   "id": "ru-q-sponove-sloveso",
@@ -2498,7 +2587,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Copula_(linguistics)",
   "source_card": "ru-jazyk-sponove-sloveso",
   "image_prompt": "Fotorealistický detailní snímek ruského psaného textu s podtrženou větou bez slovesa, typografický záběr, bez lidí, 16:9",
-  "about": "větě bez slovesa v ruštině"
+  "about": "větě bez slovesa v ruštině",
+  "irony_prompt": "A small theatre stage fills the frame, where two actors perform a lively scene arm in arm, while the empty chair of a third actor stands between them — he simply never showed up, and the delighted audience does not notice anything missing. Smaller and subordinate: a prompter peeking out of his box in panic; a spotlight shining on the empty chair; a cat sitting in the front row. MOOD: cheerful, theatrical, gently ironic."
  },
  {
   "id": "ru-q-slovosled",
@@ -2520,7 +2610,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Word_order",
   "source_card": "ru-jazyk-slovosled",
   "image_prompt": "Fotorealistický detailní snímek ruské věty s barevně zvýrazněnými pádovými koncovkami, typografický záběr, bez lidí, 16:9",
-  "about": "volném slovosledu v ruštině"
+  "about": "volném slovosledu v ruštině",
+  "irony_prompt": "A row of five wooden toy figures fills the frame — a farmer, a cow, a milk bucket, a stool and a cat — lined up on a kitchen table, and a child keeps shuffling their order, yet no matter how they are arranged, the farmer still happily milks the cow into the bucket. Smaller and subordinate: the cat licking spilt milk; a grandmother watching with a smile; a clock with a plain face on the wall. MOOD: cosy, cheerful, gently ironic."
  },
  {
   "id": "ru-k-nerpa",
@@ -2540,7 +2631,8 @@
   "quip_correct": "Bravo, přesně tak! Nerpa je jediný tuleň na světě, co si za domov vybral sladkovodní jezero — a zůstal mu věrný.",
   "quip_wrong": "Skoro, ale ne úplně — Zkus to blíž středu Sibiře — Volha, Kaspické moře i Severní ledový oceán nechej být, nerpa žije jen v Bajkalu.",
   "explanation": "Bajkalský tuleň (nerpa) je jediný výhradně sladkovodní tuleň na světě. Vědci se domnívají, že se do jezera dostal před miliony let, když bylo Bajkalské údolí spojeno s arktickým mořem.",
-  "about": "bajkalském tuleni nerpa"
+  "about": "bajkalském tuleni nerpa",
+  "irony_prompt": "A round silvery seal with big shiny black eyes fills the frame, floating happily on its back in the crystal-clear blue water of a huge lake surrounded by pine-covered mountains, while a little freshwater fish swims past its nose. Smaller and subordinate: a surprised seagull that expected salty water; pebbles clearly visible on the lake bottom; a pine cone floating by. MOOD: bright, cheerful, gentle, for children."
  },
  {
   "id": "ru-k-kreml-hvezdy",
@@ -2560,7 +2652,8 @@
   "quip_correct": "Jupí, správně! Díky rubínovému sklu ty hvězdy září i po setmění, ne jen ve dne.",
   "quip_wrong": "Zlatá ani modrá to nejsou — na věžích Kremlu svítí pět červených rubínových hvězd.",
   "explanation": "Pět rudých rubínových hvězd nahradilo v roce 1937 původní zlaté dvouhlavé orly na věžích Kremlu. Každá hvězda je ze speciálního rubínového skla a váží přes tunu.",
-  "about": "hvězdách na Kremlu"
+  "about": "hvězdách na Kremlu",
+  "irony_prompt": "A tall pointed red-brick tower with a big glowing red star on its top fills the frame, the star shining like a ruby lamp at dusk, so brightly that a little bird perched on the tower shades its eyes with a wing. Smaller and subordinate: snowflakes sparkling around the star; a boy on the square pointing up in wonder; more towers with red stars in the distance. MOOD: magical, cheerful, for children."
  },
  {
   "id": "ru-k-bliny",
@@ -2581,7 +2674,8 @@
   "quip_wrong": "Blízko, ale ne tak úplně - pelmene jsou knedlíčky a vatrušky koláče, tenké palačinky mají svoje vlastní jméno: bliny.",
   "explanation": "Bliny se jedí při ruském svátku, kdy každá snědená palačinka symbolicky vítá jaro.",
   "about": "blinech",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- stack of thin Russian bliny pancakes with sour cream and honey"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- stack of thin Russian bliny pancakes with sour cream and honey",
+  "irony_prompt": "A tall stack of thin, round golden pancakes fills the frame, so tall that it reaches the ceiling, with honey dripping down its sides and a spoonful of sour cream on top, while a little girl climbs a ladder to reach the top pancake. Smaller and subordinate: a pot of honey; a bowl of berries; a cat licking a drop of honey off the floor. MOOD: cosy, cheerful, for children."
  },
  {
   "id": "ru-k-medved-symbol",
@@ -2601,7 +2695,8 @@
   "quip_correct": "Jsi bystrá hlava! Medvěd je tak spojený s Ruskem, že mu i cizí novináři neřeknou jinak než 'ruský medvěd'.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — Vlk, orel i tygr v Rusku žijí — ale symbolem, co zná celý svět, je medvěd.",
   "explanation": "Hnědý medvěd se v Rusku vyskytuje od tundry po tajgu. V ruské kultuře je symbolem síly — objevuje se v pohádkách, na turistických suvenýrech i v politické karikatuře.",
-  "about": "medvědovi jako symbolu Ruska"
+  "about": "medvědovi jako symbolu Ruska",
+  "irony_prompt": "A big friendly brown bear fills the frame, sitting proudly on a wooden shelf and posing like a star, surrounded by things made in its likeness — bear-shaped teapots, bear dolls, bear mugs and little bear hats. Smaller and subordinate: a tourist taking a photograph; a small bear cub hiding in a basket of souvenirs; a nesting doll looking jealous. MOOD: cheerful, cute, for children."
  },
  {
   "id": "ru-t-rude-namesti",
@@ -2622,7 +2717,8 @@
   "quip_wrong": "Ne, tentokrát to bylo jinak — Poprava, červená žula, sovětská vlajka — všechno zní logicky, ale to jméno je starší než všechny tyhle teorie.",
   "explanation": "Náměstí dostalo jméno „krasnaja“ už v 17. století, dávno před revolucí i sovětskou érou — teprve po roce 1917 začal svět jeho jméno mylně spojovat s komunistickou rudou barvou.",
   "about": "Rudém náměstí",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a cobbled city square with colorful onion domes in the distance"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a cobbled city square with colorful onion domes in the distance",
+  "irony_prompt": "A very wide cobbled square with a colourful onion-domed cathedral fills the frame, and an eager visitor in a red coat is painting the cobbles red with a big roller, while a kind old local grandmother gently stops him and points at the beautiful domes and flower beds around them. Smaller and subordinate: a pot of red paint tipping over; pigeons with red-painted feet; a street musician playing an accordion. MOOD: sunny, cheerful, gently ironic."
  },
  {
   "id": "ru-a-dan-z-vousu",
@@ -2643,7 +2739,8 @@
   "quip_wrong": "Ne tak úplně, ber to jako drobný detail navíc — Zákaz na dvoře, násilné holení na ulici nebo církevní povolení? Petr šel jednodušší, byrokratičtější cestou — přes peněženku.",
   "explanation": "Bronzová „vousová mince“ nesla nápis o zaplacené dani a majitel ji musel nosit stále u sebe jako doklad pro úředníky — kdo ji neměl, riskoval, že mu vous ostříhají násilím na místě.",
   "about": "dani z vousů Petra Velikého",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an old bronze coin with an engraved beard motif resting on a wooden table"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an old bronze coin with an engraved beard motif resting on a wooden table",
+  "irony_prompt": "A merchant with a long magnificent beard fills the frame, standing proudly and showing a small plain round bronze token hanging on a string around his neck, while beside him a stern official holding giant scissors looks deeply disappointed. Smaller and subordinate: a clean-shaven man shivering and touching his bare chin; a barber sharpening a razor; a bearded goat looking nervous. MOOD: cheerful, gently ironic."
  },
  {
   "id": "ru-t-sputnik",
@@ -2664,7 +2761,8 @@
   "quip_wrong": "Skoro, ale ne tak, jak sis myslel — Vostok vozil lidi, Mir byla stanice a Sojuz přišel až později — první píp na oběžné dráze patřil jinému jménu.",
   "explanation": "Sputnik 1 vážil jen 83,6 kilogramu a obletěl Zemi jednou za 96 minut; jeho pravidelné pípání šlo zachytit i na obyčejném rádiu, což po celém světě vyvolalo takzvaný sputnikový šok.",
   "about": "Sputniku 1",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a small metal sphere satellite with four thin antennas against a starry sky"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a small metal sphere satellite with four thin antennas against a starry sky",
+  "irony_prompt": "A small shiny metal ball with four long whisker-like antennas fills the frame, flying through space above the Earth and beeping cheerfully like a little bird, while down on Earth people everywhere lean out of windows holding old radios to their ears. Smaller and subordinate: a startled astronomer at a telescope; a dog howling at the sky; stars twinkling. MOOD: cheerful, historic, gently ironic."
  },
  {
   "id": "ru-a-tunguska",
@@ -2685,7 +2783,8 @@
   "quip_wrong": "Tentokrát prohrál odhad s fakty — Popel, zbořená města nebo kilometrový kráter? Skutečnost je bizarnější — po explozi nezůstal žádný kráter, jen spálený les až k obzoru.",
   "explanation": "Přesná příčina Tunguzské události se dodnes vědecky nepotvrdila — nejpravděpodobnější teorie mluví o meteoroidu nebo kometárním úlomku, který explodoval ve vzduchu ještě předtím, než stačil dopadnout na zem.",
   "about": "Tunguzské události",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a vast expanse of flattened, scorched taiga forest seen from a low hill, trees radiating outward from a distant center"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a vast expanse of flattened, scorched taiga forest seen from a low hill, trees radiating outward from a distant center",
+  "irony_prompt": "A vast Siberian forest fills the frame, where millions of trees lie flattened in a perfect radial pattern like the spokes of a giant wheel, and in the very centre a single bewildered tree still stands upright with its branches blown back like messy hair. Smaller and subordinate: a reindeer peeking out and holding its breath; a faint glowing streak high in the sky; an explorer in a fur hat scratching his head. MOOD: mysterious, gently ironic."
  },
  {
   "id": "ru-k-baikal-svetova-zasoba-vody",
@@ -2707,7 +2806,8 @@
   "explanation": "Do Bajkalu se vejde tolik vody, že by naplnila všechna Velká americká jezera dohromady a ještě by nějaká zbyla.",
   "source_url": "https://cs.wikipedia.org/wiki/Bajkal",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- panoramic view of crystal-clear Lake Baikal surrounded by snowy mountains",
-  "about": "jezeře Bajkal"
+  "about": "jezeře Bajkal",
+  "irony_prompt": "A giant crescent-shaped lake of crystal-clear blue water fills the frame, so deep that a tall lighthouse standing on its bottom is still completely underwater, while children on a rocky shore fill glass jars with its sparkling water. Smaller and subordinate: a round silvery seal waving; pine forests on the mountains; fish visible far down in the depths. MOOD: bright, fresh, for children."
  },
  {
   "id": "ru-k-kamcatka-nejvyssi-sopka",
@@ -2729,7 +2829,8 @@
   "explanation": "Ključevská sopka je tak činná, že vybuchuje pořád dokola, mnohem častěji než většina ostatních sopek na světě.",
   "source_url": "https://cs.wikipedia.org/wiki/Ključevská_sopka",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- snow-capped volcano on Kamchatka peninsula with a plume of smoke rising from the crater",
-  "about": "Ključevské sopce"
+  "about": "Ključevské sopce",
+  "irony_prompt": "A tall, perfectly cone-shaped volcano with a snowy top fills the frame, puffing little smoke rings into the blue sky like a grandfather with a pipe, while brown bears fish in a river at its foot. Smaller and subordinate: a steaming hot spring; a surprised eagle flying through a smoke ring; a tiny hut whose chimney copies the volcano's smoke. MOOD: bright, cheerful, for children."
  },
  {
   "id": "ru-t-ladozske-jezero-nejvetsi-evropa",
@@ -2751,7 +2852,8 @@
   "explanation": "Do Ladožského jezera se vlévá přes třicet řek, ale vytéká z něj jen jediná - řeka Něva.",
   "source_url": "https://cs.wikipedia.org/wiki/Ladožské_jezero",
   "image_prompt": "Fotorealistický snímek klidné hladiny Ladožského jezera při západu slunce s malým lesnatým ostrůvkem, 16:9",
-  "about": "Ladožském jezeře"
+  "about": "Ladožském jezeře",
+  "irony_prompt": "A huge wide lake stretching to the horizon fills the frame, with dozens of small rivers flowing into it from every side like guests arriving at a party, but only one single river leaves through a narrow gap at the far end, carrying all the water away. Smaller and subordinate: a lighthouse on a rocky island; a fishing boat; seagulls. MOOD: calm, cheerful, gently ironic."
  },
  {
   "id": "ru-k-kaspicke-more-nejvetsi-jezero",
@@ -2773,7 +2875,8 @@
   "explanation": "Kaspické moře je slané a jeho pobřeží si dělí hned pět zemí, mezi nimi i Rusko.",
   "source_url": "https://cs.wikipedia.org/wiki/Kaspické_moře",
   "image_prompt": "Fotorealistický snímek rozlehlého pobřeží Kaspického moře s vlnami a pískovou pláží, 16:9",
-  "about": "Kaspickém moři"
+  "about": "Kaspickém moři",
+  "irony_prompt": "A huge lake fills the frame, pretending to be a sea — it has big waves, seagulls and sailing ships and even wears a sailor's cap on its horizon — while a small freshwater pond beside it squints suspiciously at the lake's costume. Smaller and subordinate: a sturgeon swimming with a smile; a seal sunbathing; a lighthouse. MOOD: playful, cheerful, for children."
  },
  {
   "id": "ru-k-lena-nejdelsi-reka-rusko",
@@ -2795,7 +2898,8 @@
   "explanation": "V zimě Lena tak silně zamrzne, že se po ledu dá jezdit nákladními auty jako po obyčejné silnici.",
   "source_url": "https://cs.wikipedia.org/wiki/Lena_(řeka)",
   "image_prompt": "Fotorealistický snímek široké zamrzlé řeky Leny na Sibiři s ledovými krami a zasněženými břehy, 16:9",
-  "about": "řece Leně"
+  "about": "řece Leně",
+  "irony_prompt": "A wide frozen river winding through a snowy forest fills the frame, with big trucks driving along the ice as if it were an ordinary road, while fish under the clear ice look up at the wheels in surprise. Smaller and subordinate: a snowman directing traffic; a fox running alongside; pine trees heavy with snow. MOOD: wintry, cheerful, for children."
  },
  {
   "id": "ru-k-dalnevychodni-levhart",
@@ -2817,7 +2921,8 @@
   "explanation": "V přírodě dnes žije jen kolem stovky dálněvýchodních levhartů, všichni v okolí ruského Vladivostoku.",
   "source_url": "https://cs.wikipedia.org/wiki/Levhart_mandžuský",
   "image_prompt": "Fotorealistický snímek dálněvýchodního levharta se skvrnitou srstí kráčejícího zasněženým lesem ruského Přímoří, 16:9",
-  "about": "dálněvýchodním levhartovi"
+  "about": "dálněvýchodním levhartovi",
+  "irony_prompt": "A beautiful spotted leopard with a thick golden fur coat fills the frame, walking through a snowy forest and wearing its black rosette spots like a very fancy winter coat, while snowflakes settle on its long fluffy tail. Smaller and subordinate: a small squirrel peeking from a tree; paw prints in the snow; a pine cone. MOOD: wintry, gentle, for children."
  },
  {
   "id": "ru-k-bile-noci-petrohrad",
@@ -2839,7 +2944,8 @@
   "explanation": "Bílé noci trvají v Petrohradu zhruba od poloviny června do poloviny července a lidé si v tu dobu chodí užívat procházky podél řeky i o půlnoci.",
   "source_url": "https://cs.wikipedia.org/wiki/Bílé_noci",
   "image_prompt": "Fotorealistický snímek Petrohradu za bílé noci se zvednutými mosty přes řeku Něvu a jasně modrou noční oblohou, 16:9",
-  "about": "bílých nocích v Petrohradu"
+  "about": "bílých nocích v Petrohradu",
+  "irony_prompt": "A sleepy boy in pyjamas fills the frame, standing at his bedroom window at midnight and staring in wonder at a sky that is still bright and pale pink, while outside people stroll along the river embankment and a bridge is lifted open. Smaller and subordinate: the moon and the sun both in the sky, shrugging at each other; a cat wide awake on the windowsill. MOOD: dreamy, cheerful, for children."
  },
  {
   "id": "ru-t-vasjuganske-baziny",
@@ -2861,7 +2967,8 @@
   "explanation": "Vasjuganské bažiny jsou tak rozlehlé, že by se do nich vešlo území větší, než je celé Švýcarsko.",
   "source_url": "https://en.wikipedia.org/wiki/Great_Vasyugan_Mire",
   "image_prompt": "Fotorealistický snímek rozlehlých sibiřských Vasjuganských bažin s mechem, tůněmi a nízkými břízami, 16:9",
-  "about": "Vasjuganských bažinách"
+  "about": "Vasjuganských bažinách",
+  "irony_prompt": "An endless green-brown swamp fills the frame, stretching to the horizon with pools, mosses and crooked little birches, and floating in the middle of it on a raft sits a whole tiny alpine country — neat mountains, chalets and cows — fitting easily inside the swamp like a toy in a bathtub. Smaller and subordinate: a heron wading; mosquitoes buzzing; a duck paddling around the raft. MOOD: whimsical, gently ironic."
  },
  {
   "id": "ru-k-ural-drahokamy",
@@ -2883,7 +2990,8 @@
   "explanation": "Mezi nejznámější uralské drahokamy patří zelený malachit a průhledné uralské smaragdy.",
   "source_url": "https://cs.wikipedia.org/wiki/Malachit",
   "image_prompt": "Fotorealistický snímek lesklých zelených kamenů malachitu a dalších drahokamů z uralských dolů rozložených na kameni, 16:9",
-  "about": "uralských drahokamech"
+  "about": "uralských drahokamech",
+  "irony_prompt": "A friendly mountain with a cheerful face fills the frame, opening a little door in its side like a treasure chest, and inside glitter green malachite, sparkling green emeralds and colourful crystals, while a little miner with a lantern gazes in amazement. Smaller and subordinate: a lizard wearing a crown of gems; a pickaxe; a bird carrying away a tiny crystal. MOOD: magical, bright, for children."
  },
  {
   "id": "ru-k-polarni-liska",
@@ -2905,7 +3013,8 @@
   "explanation": "V zimě je pesec bílý jako sníh, ale v létě zhnědne, aby splynul s tundrou bez sněhu.",
   "source_url": "https://cs.wikipedia.org/wiki/Liška_polární",
   "image_prompt": "Fotorealistický snímek bílé polární lišky (pesce) sedící ve sněhu v ruské tundře, 16:9",
-  "about": "polární lišce"
+  "about": "polární lišce",
+  "irony_prompt": "A fluffy arctic fox fills the frame, sitting on a rock exactly where winter meets summer: behind it on one side the land is covered in white snow, on the other side it is brown summer tundra, and the fox's fur is snowy white on one side and brown on the other, like a coat half changed. Smaller and subordinate: a lemming peeking out; a snowflake and a flower side by side; a bird looking confused. MOOD: cheerful, cute, for children."
  },
  {
   "id": "ru-k-sajga-antilopa",
@@ -2927,7 +3036,8 @@
   "explanation": "Sajga umí běžet ohromnou rychlostí a její zvláštní nos jí pomáhá filtrovat prach a ohřívat studený vzduch, než ho vdechne.",
   "source_url": "https://cs.wikipedia.org/wiki/Sajga_tatarská",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- steppe antelope saiga with a distinctive bulbous nose standing in grassland",
-  "about": "sajze"
+  "about": "sajze",
+  "irony_prompt": "A funny steppe antelope with a big puffy droopy nose like a small trunk fills the frame, running across a golden grassy steppe with its nose bouncing comically, while a little bird perched on its back holds on tight. Smaller and subordinate: a cloud of dust behind it; a surprised hare; a tall blue sky. MOOD: cheerful, funny, for children."
  },
  {
   "id": "ru-k-petrohrad-benatky-severu",
@@ -2949,7 +3059,8 @@
   "explanation": "Petrohrad má přes 800 mostů, což je víc, než kolik jich mají skutečné italské Benátky.",
   "source_url": "https://cs.wikipedia.org/wiki/Petrohrad",
   "image_prompt": "Fotorealistický snímek petrohradského kanálu s barevnými domy podél břehu a klenutým kamenným mostem, slunečný den, odrazy ve vodě, 16:9",
-  "about": "petrohradských kanálech a mostech"
+  "about": "petrohradských kanálech a mostech",
+  "irony_prompt": "A city of rivers and canals fills the frame, with elegant pastel palaces and many arched bridges, and a gondola glides along a canal steered by a gondolier in a striped shirt who is also wearing a fur hat and a scarf, because it is snowing. Smaller and subordinate: little ice floes on the water; a seagull in a tiny scarf; children waving from a bridge. MOOD: cheerful, wintry, for children."
  },
  {
   "id": "ru-k-ermitaz-pocet-exponatu",
@@ -2971,7 +3082,8 @@
   "explanation": "Ermitáž sídlí v bývalém Zimním paláci ruských carů, kde kdysi opravdu bydleli panovníci se svými rodinami.",
   "source_url": "https://cs.wikipedia.org/wiki/Ermitáž",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- grand palace interior of the Hermitage museum with gilded columns and paintings on the walls",
-  "about": "petrohradské Ermitáži"
+  "about": "petrohradské Ermitáži",
+  "irony_prompt": "A tiny visitor with a backpack fills the frame, standing at the start of an endless palace gallery that stretches far into the distance, lined with gold-framed paintings and white statues, and he is already yawning with tired feet while a snail behind him has overtaken him. Smaller and subordinate: a guard dozing on a chair; a cat sleeping at the foot of a statue; glittering chandeliers. MOOD: grand, cheerful, for children."
  },
  {
   "id": "ru-k-petrohof-fontany-bez-cerpadel",
@@ -2993,7 +3105,8 @@
   "explanation": "Petrohofský areál dal vybudovat car Petr Veliký a jeho fontány patří mezi největší na světě.",
   "source_url": "https://cs.wikipedia.org/wiki/Petrodvorec",
   "image_prompt": "Fotorealistický snímek zlacených soch a tryskajících fontán v zahradách Petrohofu u Petrohradu za slunečného dne, 16:9",
-  "about": "peterhofských fontánách"
+  "about": "peterhofských fontánách",
+  "irony_prompt": "A golden fountain with tall jets of water fills the frame, sparkling in front of a palace, and behind it on a hill a big pond pours its water down a long winding slide straight into the fountain, while a grumpy mechanic with a useless pump sits on a bench with nothing to do. Smaller and subordinate: children splashing; shining golden statues; ducks riding down the water slide. MOOD: sunny, cheerful, for children."
  },
  {
   "id": "ru-k-gum-sklenena-strecha",
@@ -3015,7 +3128,8 @@
   "explanation": "GUM stojí přímo naproti Kremlu a obchod v něm funguje už od 19. století.",
   "source_url": "https://cs.wikipedia.org/wiki/GUM",
   "image_prompt": "Fotorealistický snímek interiéru obchodního domu GUM v Moskvě se skleněnou klenutou střechou a několika patry obchůdků, 16:9",
-  "about": "obchodním domě GUM"
+  "about": "obchodním domě GUM",
+  "irony_prompt": "A long shopping arcade under a huge curved glass roof fills the frame, flooded with warm daylight and decorated with flower pots, and shoppers inside stroll about in sunglasses and sunhats even though it is snowing outside the glass. Smaller and subordinate: a fountain with flowers in the middle; elegant iron balconies; pigeons sitting on the snowy roof outside. MOOD: bright, cheerful, for children."
  },
  {
   "id": "ru-k-ostankinska-vez-nejvyssi",
@@ -3037,7 +3151,8 @@
   "explanation": "Ve věži je i vyhlídková restaurace, jejíž podlaha se pomalu otáčí kolem dokola.",
   "source_url": "https://cs.wikipedia.org/wiki/Ostankinská_věž",
   "image_prompt": "Fotorealistický snímek vysoké štíhlé Ostankinské věže tyčící se nad Moskvou proti modré obloze, 16:9",
-  "about": "Ostankinské televizní věži"
+  "about": "Ostankinské televizní věži",
+  "irony_prompt": "An extremely tall slender tower like a giant needle fills the frame, piercing the clouds, with a small round restaurant near its top slowly turning, while a cloud has got stuck on its tip like a marshmallow on a stick and a bird has to stop and rest halfway up. Smaller and subordinate: diners waving from the restaurant windows; a helicopter circling; a tiny park at its foot. MOOD: cheerful, lofty, for children."
  },
  {
   "id": "ru-k-petrohrad-bile-noci",
@@ -3059,7 +3174,8 @@
   "explanation": "Bílé noci vznikají proto, že Petrohrad leží tak severně, že slunce v létě klesne jen těsně pod obzor.",
   "source_url": "https://cs.wikipedia.org/wiki/Bílé_noci",
   "image_prompt": "Fotorealistický snímek petrohradského nábřeží řeky Něvy za světlé letní noci s narůžovělou oblohou, 16:9",
-  "about": "petrohradských bílých nocích"
+  "about": "petrohradských bílých nocích",
+  "irony_prompt": "A long river embankment at midnight fills the frame, where people picnic, dance and ride bicycles under a pale bright sky, while a sleepy moon in a nightcap sits on the rooftops grumbling that nobody notices it. Smaller and subordinate: a drawbridge raised open; street lamps switched on for no reason; a sailboat on the river. MOOD: dreamy, cheerful, for children."
  },
  {
   "id": "ru-k-kazan-sikma-vez",
@@ -3081,7 +3197,8 @@
   "explanation": "Věž je pojmenovaná po tatarské královně Söjumbike a patří k symbolům města Kazaně.",
   "source_url": "https://cs.wikipedia.org/wiki/Věž_Söjumbike",
   "image_prompt": "Fotorealistický snímek nakloněné cihlové věže Söjumbike v kazaňském Kremlu za jasného dne, 16:9",
-  "about": "kazaňské šikmé věži Söjumbike"
+  "about": "kazaňské šikmé věži Söjumbike",
+  "irony_prompt": "A tall red-brick tower with a green pointed roof fills the frame, leaning to one side like a tired person, and a little boy is pushing against it with both hands to keep it upright, while a leaning white tower far away on the horizon waves at it like an old friend. Smaller and subordinate: a pigeon sliding down the sloping roof; flowers at the tower's foot; a white wall with little battlements. MOOD: cheerful, funny, for children."
  },
  {
   "id": "ru-k-moskva-city-mrakodrapy",
@@ -3103,7 +3220,8 @@
   "explanation": "První mrakodrapy tu začaly stavět až po roce 2000, dřív v Moskvě tak vysoké budovy nestály.",
   "source_url": "https://cs.wikipedia.org/wiki/Moskva_City",
   "image_prompt": "Fotorealistický snímek moderních skleněných mrakodrapů čtvrti Moskva-City za soumraku s rozsvícenými okny, 16:9",
-  "about": "čtvrti Moskva-City"
+  "about": "čtvrti Moskva-City",
+  "irony_prompt": "A cluster of giant glass skyscrapers fills the frame, glittering blue and gold in the sunshine and so tall that they look down at a small old onion-domed church in front of them, which proudly holds its ground. Smaller and subordinate: a window cleaner dangling on a rope; a crane building yet another tower; a pigeon exhausted from flying to the top. MOOD: bright, cheerful, for children."
  },
  {
   "id": "ru-k-transsib-delka",
@@ -3125,7 +3243,8 @@
   "explanation": "Vlak na cestě mezitím projede tolik časových pásem, že by sis musel hodinky přehazovat pořád dokola.",
   "source_url": "https://cs.wikipedia.org/wiki/Transsibiřská_magistrála",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- Trans-Siberian train crossing a snowy Siberian landscape",
-  "about": "cestě Transsibiřskou magistrálou"
+  "about": "cestě Transsibiřskou magistrálou",
+  "irony_prompt": "A long train fills the frame, winding through endless forests, mountains and snowy plains, and through its windows passengers live a whole little life — sleeping, eating, playing chess and drinking tea from glasses in metal holders — while the landscape outside changes from summer into winter along the train. Smaller and subordinate: a conductor carrying a tray of tea; a child pressing its nose to a window; the sun and the moon both hanging over the tracks. MOOD: cosy, cheerful, for children."
  },
  {
   "id": "ru-k-russkij-most-vladivostok",
@@ -3147,7 +3266,8 @@
   "explanation": "Most spojuje Vladivostok s ostrovem Russkij, kde se v roce 2012 konal summit APEC.",
   "source_url": "https://cs.wikipedia.org/wiki/Most_Russkij",
   "image_prompt": "Fotorealistický snímek mohutného závěsného mostu Russkij nad mořským průlivem u Vladivostoku, 16:9",
-  "about": "mostě Russkij u Vladivostoku"
+  "about": "mostě Russkij u Vladivostoku",
+  "irony_prompt": "An enormous white bridge with two tall pointed towers and fan-shaped cables fills the frame, stretching over a wide blue sea strait, and the gap between its towers is so wide that a tall sailing ship passes underneath without having to duck, while a seagull flying under the bridge looks tiny. Smaller and subordinate: little cars crossing; a lighthouse on a rocky shore; a whale spouting in the strait. MOOD: bright, cheerful, for children."
  },
  {
   "id": "ru-k-kizi-drevene-chramy-bez-hrebiku",
@@ -3169,7 +3289,8 @@
   "explanation": "Největší z chrámů, Chrám Proměnění Páně, má dvacet dva cibulovitých kopulí a je zapsán na seznamu UNESCO.",
   "source_url": "https://cs.wikipedia.org/wiki/Kiži",
   "image_prompt": "Fotorealistický snímek dřevěného ruského chrámu s mnoha cibulovitými kopulemi na ostrově Kiži za jasného dne, 16:9",
-  "about": "dřevěných chrámech na ostrově Kiži"
+  "about": "dřevěných chrámech na ostrově Kiži",
+  "irony_prompt": "A tall wooden church with a pyramid of many silvery onion domes fills the frame, standing on a green island by a lake, while a proud carpenter with an axe shows off a jar of nails that he never needed, and a crow searches the logs in vain for a single nail. Smaller and subordinate: neatly interlocking log corners; a wooden boat at the shore; wildflowers. MOOD: sunny, cheerful, for children."
  },
  {
   "id": "ru-k-kolobok-pohadka",
@@ -3191,7 +3312,8 @@
   "explanation": "Kolobokovi nakonec unikání nevyjde - přelstí ho liška, která ho pochlebováním přiměje, aby si sedl na jazyk, a rovnou ho sní.",
   "source_url": "https://cs.wikipedia.org/wiki/Kolobok",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- round loaf of bread with a smiling dough face resting on a wooden board in a rustic kitchen",
-  "about": "pohádce o Kolobokovi"
+  "about": "pohádce o Kolobokovi",
+  "irony_prompt": "A round golden bread bun with a cheerful face fills the frame, rolling happily down a forest path away from a little cottage, while a grandmother and grandfather run after it with their arms out. Smaller and subordinate: a hare, a wolf and a bear peeking from behind trees; a sly fox waiting on a tree stump further ahead; butterflies. MOOD: fairy-tale, cheerful, for children."
  },
  {
   "id": "ru-k-zar-ptak",
@@ -3213,7 +3335,8 @@
   "explanation": "Podle pohádky roste v carské zahradě jabloň se zlatými jablky a právě tu prý Žar-pták každou noc tajně navštěvuje.",
   "source_url": "https://en.wikipedia.org/wiki/Firebird_(Slavic_folklore)",
   "image_prompt": "Fotorealistický snímek nádherného bájného ptáka se zářivě oranžovo-zlatým peřím připomínajícím plameny, sedícího na větvi jabloně v nočním kouzelném lese, 16:9",
-  "about": "Žar-ptákovi"
+  "about": "Žar-ptákovi",
+  "irony_prompt": "A magical glowing bird with golden and orange feathers fills the frame, landing at night on a branch of an apple tree full of golden apples and lighting up the whole garden like a lantern, while a young prince hides behind the tree trying to catch its tail feather. Smaller and subordinate: a guard asleep on a bench; a glowing feather lying in the grass; fireflies. MOOD: magical, fairy-tale, for children."
  },
  {
   "id": "ru-k-snegurocka",
@@ -3235,7 +3358,8 @@
   "explanation": "Podle jedné staré pohádky byla Sněguročka stvořena ze sněhu a roztála poté, co v létě přeskočila přes svatojánský oheň.",
   "source_url": "https://en.wikipedia.org/wiki/Snegurochka",
   "image_prompt": "Fotorealistický snímek dívky v bílém kožešinovém plášti a stříbrné čelence stojící vedle ozdobeného vánočního stromku v zasněženém ruském městečku za soumraku, 16:9",
-  "about": "Sněguročce"
+  "about": "Sněguročce",
+  "irony_prompt": "A kind girl in a white fur coat and a sparkling white hat fills the frame, walking through a snowy forest with a sack of presents, the snowflakes around her turning into tiny sparkling stars, while an old bearded grandfather in a long blue coat follows her carrying a second sack. Smaller and subordinate: a rabbit carrying a small present; a decorated fir tree; a sleigh waiting between the trees. MOOD: magical, festive, for children."
  },
  {
   "id": "ru-k-ceburaska",
@@ -3257,7 +3381,8 @@
   "explanation": "Čeburaška se v příběhu spřátelí s krokodýlem jménem Gena a spolu postaví dům přátelství pro opuštěná zvířátka.",
   "source_url": "https://en.wikipedia.org/wiki/Cheburashka",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- small plush toy of a brown furry creature with huge round ears sitting on a children's shelf",
-  "about": "Čeburašce"
+  "about": "Čeburašce",
+  "irony_prompt": "A friendly crocodile in a hat and coat fills the frame, playing an accordion in front of a small cosy house that a group of little animals is building together, while a pair of enormous round furry ears peeks out from behind a wooden crate of oranges. Smaller and subordinate: a puppy carrying a plank; a bird bringing a flower; bright oranges spilling on the grass. MOOD: warm, cheerful, for children."
  },
  {
   "id": "ru-k-petruska-loutka",
@@ -3279,7 +3404,8 @@
   "explanation": "Petruškův pisklavý hlas vytvářeli loutkáři pomocí zvláštní pomůcky, kterou si dávali přímo do úst.",
   "source_url": "https://en.wikipedia.org/wiki/Petrushka",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- traditional Russian hand puppet in a bright red shirt and pointed bell cap at a street fair",
-  "about": "Petruškovi"
+  "about": "Petruškovi",
+  "irony_prompt": "A cheerful hand puppet in a red shirt and a pointed red cap fills the frame, popping up over the top of a small colourful puppet booth at a fair and waving a little stick, while children in the crowd laugh. Smaller and subordinate: a dog puppet popping up beside him; a balloon seller; a father carrying a child on his shoulders. MOOD: festive, funny, for children."
  },
  {
   "id": "ru-t-cukovskij-spisovatel",
@@ -3301,7 +3427,8 @@
   "explanation": "Čukovského pohádka o doktoru Ajbolitovi vznikla jako ruské zpracování britského příběhu o Doktoru Dolittlovi, který také léčí zvířata.",
   "source_url": "https://cs.wikipedia.org/wiki/Korn%C4%9Bj_%C4%8Cukovskij",
   "image_prompt": "Fotorealistický snímek otevřené staré dětské obrázkové knihy s ilustracemi veselých zvířátek, položené na dřevěném stole vedle brýlí a hrnku čaje, 16:9",
-  "about": "Korněji Čukovském"
+  "about": "Korněji Čukovském",
+  "irony_prompt": "A kind old doctor in a white coat and a round cap fills the frame, sitting under a palm tree in Africa and bandaging a hippo's aching tooth, while a long queue of patient animals waits their turn — a crocodile, a monkey and a giraffe with a scarf round its sore throat. Smaller and subordinate: a doctor's bag full of little bottles; a parrot handing him a thermometer with a plain red line; the sun wearing sunglasses. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "ru-k-dymkovska-hracka",
@@ -3323,7 +3450,8 @@
   "explanation": "Dymkovské hračky se vyrábějí z hlíny vykopané přímo na břehu řeky Vjatky a před malováním se nejdřív potírají bílým křídovým podkladem.",
   "source_url": "https://en.wikipedia.org/wiki/Dymkovo_toy",
   "image_prompt": "Fotorealistický snímek několika pestrobarevných hliněných figurek zvířátek a panenek s puntíkovaným vzorem na dřevěné poličce v řemeslné dílně, 16:9",
-  "about": "dymkovských hračkách"
+  "about": "dymkovských hračkách",
+  "irony_prompt": "A group of chunky clay toys painted white with bright red, blue and yellow dots and stripes fills the frame — a turkey with a huge fan tail, a horse and a lady in a wide skirt — dancing across a table together like a little parade. Smaller and subordinate: a craftswoman dotting paint with a small stick; a cat staring at the turkey toy; pots of bright paint. MOOD: cheerful, colourful, for children."
  },
  {
   "id": "ru-k-car-zvon",
@@ -3345,7 +3473,8 @@
   "explanation": "Car-zvon váží přes 200 tun a samotný odlomený kus, který z něj upadl, váží přes 11 tun.",
   "source_url": "https://cs.wikipedia.org/wiki/Car-zvon",
   "image_prompt": "Fotorealistický snímek obrovského starobylého bronzového zvonu s ornamenty, vystaveného na kamenném podstavci na nádvoří Kremlu, turisté v pozadí, 16:9",
-  "about": "Car-zvonu"
+  "about": "Car-zvonu",
+  "irony_prompt": "An enormous bronze bell decorated with raised patterns of leaves fills the frame, standing on a stone pedestal with a huge broken piece lying on the ground beside it, while a little bell-ringer holding a rope looks up at it and the bell looks a bit embarrassed. Smaller and subordinate: a pigeon sitting in the broken gap; tourists looking tiny next to it; a small hand bell ringing happily nearby. MOOD: cheerful, gently ironic, for children."
  },
  {
   "id": "ru-k-syrniki-jidlo",
@@ -3367,7 +3496,8 @@
   "explanation": "Tyhle koláčky se rusky jmenují syrniki, i když slovo připomíná „sýr“ – ve skutečnosti se ale dělají z tvarohu, ne z klasického sýra.",
   "source_url": "https://en.wikipedia.org/wiki/Syrniki",
   "image_prompt": "Fotorealistický snímek talíře se zlatavě osmaženými tvarohovými koláčky syrniki, ozdobenými lžící zakysané smetany a čerstvým ovocem, ranní světlo, 16:9",
-  "about": "syrnikách"
+  "about": "syrnikách",
+  "irony_prompt": "A plate of small, thick, golden-brown round patties fills the frame — fried pancakes made of white crumbly cottage cheese — topped with sour cream, honey and a few strawberries, while a proud white cow sits at the table wearing a napkin as if claiming the credit. Smaller and subordinate: a bowl of white crumbly curd; a jar of jam; a little girl licking honey off a spoon. MOOD: cosy, cheerful, for children."
  },
  {
   "id": "ru-k-ucha-rybi-polevka",
@@ -3389,7 +3519,8 @@
   "explanation": "Tahle rybí polévka se rusky jmenuje ucha a patří mezi nejstarší ruské polévky vůbec.",
   "source_url": "https://en.wikipedia.org/wiki/Ukha",
   "image_prompt": "Fotorealistický snímek kotlíku s vroucí rybí polévkou zavěšeného nad ohništěm na břehu řeky, v pozadí ranní mlha nad vodou, 16:9",
-  "about": "ruské rybí polévce ucha"
+  "about": "ruské rybí polévce ucha",
+  "irony_prompt": "A big black pot hanging over a crackling campfire on a river bank fills the frame, bubbling with golden fish soup, while cheerful fishermen in rubber boots sit around it on logs with their spoons ready and a fish in the river peeks out of the water looking worried. Smaller and subordinate: fishing rods leaning on a tree; a dog waiting patiently; the sunset glowing over the water. MOOD: cosy, cheerful, for children."
  },
  {
   "id": "ru-k-medovik-dort",
@@ -3411,6 +3542,7 @@
   "explanation": "Podle legendy vznikl medovik pro ruskou carevnu, která med neměla ráda, a tak ho cukráři schovali hluboko do vrstev těsta, aby ho vůbec nepoznala.",
   "source_url": "https://en.wikipedia.org/wiki/Medovik",
   "image_prompt": "Fotorealistický snímek naporcovaného vrstveného medového dortu medovik s viditelnými tenkými plátky a krémem, na porcelánovém talířku, 16:9",
-  "about": "medoviku"
+  "about": "medoviku",
+  "irony_prompt": "A tall round layered honey cake fills the frame — many thin golden cake layers stacked with white cream between them and dusted with crumbs on top — with a little bee sitting on top wearing a crown, while a surprised bear holds a spoon. Smaller and subordinate: a honey jar with a wooden dipper; a slice on a plate showing all the layers; a kitten sniffing the cream. MOOD: sweet, cheerful, for children."
  }
 ]
