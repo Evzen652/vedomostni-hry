@@ -81,6 +81,48 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-11 — Ilustrace k otázkám jsou ZPĚT NA 16:9, šířka 1344 px (nativní výstup modelu). Čtverec z 2026-09-01 padá.**
+  > **Doplněno týž den: šířka 1000 (níž) NEPROŠLA na iPadu na výšku.** Změřeno v okně 820×1180:
+  > stránka je tam jednosloupcová a obrázek se kreslí na **770×440 bodů**, retina (iPady mají
+  > vždy 2×) tedy chce ~1540 px. Tisícovka pokryje 65 %, staré 1200 px 78 %, nativních 1344 px
+  > z modelu 87 % — víc model v 16:9 nedá. Naležato má iPad rozvržení notebooku (~405 bodů) a
+  > stačí cokoli. **Ukládá se tedy bez zmenšování, 1344×768**; cena generování je stejná, platí se
+  > jen místem — naměřeno 206–255 kB, průměr **222 kB** na kus (tisícovka měla 127), takže
+  > zbylých ~2 600 ilustrací zabere ~580 MB. Úplně ostré by to na tabletu na výšku bylo jen se
+  > stropem šířky obrázku ~670 bodů v pásmu 768–899 px — to je změna vzhledu, NEPROVEDENO.
+  > Pět zkušebních obrázků (sedm generování — Němcová a Foglar šli dvakrát) přegenerováno
+  > v 1344 (dávka ~5 min), všech pět čistých. Podezřelá „písmena“ na Čapkově rukávu byly při
+  > zvětšení knoflíky — **pochybné místo zvětšit výřezem, ne odhadovat z celého obrázku**.
+  Čtverec se volil kvůli prázdnu kolem obrázku, dokud rám lícoval s textovou kartou. Od 2026-09-06
+  se rám po odpovědi smrskne PŘESNĚ na obrázek (`.qz-pic` v toku), takže pruhy zmizely při
+  jakémkoli poměru — hráč to ukázal screenshotem. Čtverec by teď jen prodloužil pravý sloupec
+  o ~170 px a „Další otázka“ by spadla pod spodní okraj notebooku. 16:9 navíc sedí na mobilní
+  rám i na 1 133 hotových obrázků.
+  - **Dávkový skript byl celou dobu na 16:9** (proto je české dávka široká), přepnutý byl jen
+    okamžitý generátor. Teď jsou oba srovnané: `gen-irony-images.js` bere 16:9 (dlaždice `--ui`
+    zůstávají čtverec), `batch-irony-images.js` má šířku 1000 místo 1200 a přepínač `--only id,id`
+    pro zkušební vzorek. **Šířka 1000:** rám se kreslí na ~405 CSS px, retina chce ~810, a oproti
+    1200 to ušetří zhruba třetinu místa v repu. Cena generování na šířce nezávisí.
+  - **ZAMÍTNUTO: dvě ilustrace na jednom obrázku** (napůl levnější). Panel by měl ~770–860 px,
+    na telefonu s DPR 3 je potřeba ~1030; stejný závěr jako 2026-08-15. K tomu řez mezi panely,
+    prosakování scén a filtr, který shodí obě naráz. Úspora by byla ~1 000 Kč za celý fond.
+  - **Klíče Gemini byly smazané a hráč vytvořil nový** do `.dev.vars` (gitignorovaný, v historii
+    gitu klíč nikdy nebyl). Nový formát klíče nezačíná „AIza“ — skripty berou celý řádek.
+  - **Zkušební dávka 5 obrázků (`submit --only`) prošla celou linkou:** dávka hotová za ~4 minuty,
+    5/5 uloženo, 1000×571 px, průměr **127 kB** (dosud 165) — zbytek fondu tedy ~330 MB, ne 430.
+    Tři obrázky čisté hned, dva měly TEXT:
+    - **Bankovka (Němcová) si o písmena řekne sama, i když zadání chce „jen ornamenty“** — model
+      dokreslil pseudonápisy („DENENA“, „CONINADT“). Nepomůže zákaz, pomůže **jiná scéna bez
+      potištěné plochy**: nově dáma vystupující z prázdného portrétového rámu s košíkem hladkých
+      papírků. Platí obecně: bankovky, mince, knihy, cedule, mapy s popisky do scény nepatří.
+    - **Vymyšlený podpis v rohu (Foglar) je náhodná vada**, zadání za ni nemůže — stačí přegenerovat
+      stejné zadání. Ořez by rozbil 16:9.
+    - Po opravě oba čisté. Varování `lint-irony` „dlouhé (723 znaků)“ tu nevadilo.
+  - **Obrázky se musí projít očima všechny** — písmena v obraze automaticky spolehlivě nepoznáš.
+    U velké dávky přes přehledové archy po desítkách, vadné znovu přes `--only`.
+  - **Pozor: `submit` otázku s existujícím `img/{id}.jpg` přeskočí** — před přegenerováním starý
+    obrázek přesunout stranou (ne `--force`, ten dávkový skript nemá).
+
 - **2026-09-11 — Obsahový dluh, body 4 a 5: žádná hláška už nemá minulý čas s rodem (419 → 0) a žádná správná odpověď nevyčnívá délkou (205 → 0).**
   - **Rod:** 166 dětských úvodů „Tys to věděl!“ / „Jé, tys to věděl!“ vyměněno střídavě za „Jupí, správně!“
     a „A je to tam!“ (zbytek věty beze změny); 253 dalších hlášek přepsáno ručně („sis spletl s…“ →

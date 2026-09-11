@@ -40,7 +40,9 @@ const OUT_DIR = "img";
 // na desktopu 376 CSS px a na mobilu 343, takže 1000 px pokryje i retinu s rezervou.
 // Při 1200 by čtverec měl 1200×1200, tedy 2,1× víc pixelů než dosavadní 1200×686 —
 // přes zbývajících 2 574 kusů by to byly stovky MB v repu navíc (dnes má img/ 184 MB).
-const SIRKA = 1000, KVALITA = 84;            // dřív 1200 / ~176 kB při 16:9
+// 2026-09-11: 1344 = nativní šířka modelu v 16:9, nezmenšuje se. iPad na výšku kreslí obrázek
+// na 770 bodů a retina chce ~1540 px — tisícovka tam byla znatelně rozmazaná (změřeno).
+const SIRKA = 1344, KVALITA = 84;
 
 // Styl se drží TADY, ne v datech — ať jde doladit na jednom místě pro celý fond.
 const STYL = "painterly textured watercolour and gouache illustration, aged vintage travel journal, " +
@@ -143,7 +145,11 @@ function apiKlic() {
   // a pruh je 8 px. Pro srovnání ve stejném rámu: 16:9 → pruh 84 px, 5:4 → 42 px.
   // Starých 1 091 obrázků je 16:9; pruh u nich zakrývá `.qz-picbg` (rozmazaná kopie).
   // (Dlaždice rozcestníku jsou čtvercové taky, ale z jiného důvodu — viz `dlazdice()`.)
-  const pomer  = "1:1";
+  // ZPĚT NA 16:9 (2026-09-11). Všechno výš platilo, dokud rám lícoval s kartou. Od 2026-09-06
+  // se po odpovědi smrskne PŘESNĚ na obrázek, takže pruhy zmizely při jakémkoli poměru — a čtverec
+  // by jen prodloužil pravý sloupec o ~170 px a „Další otázka" by spadla pod okraj notebooku.
+  // 16:9 navíc sedí na mobilní rám a na 1 133 hotových obrázků. Dlaždice (--ui) zůstávají čtverec.
+  const pomer  = o.ui ? "1:1" : "16:9";
   const sirka  = o.ui ? 512 : SIRKA;
   fs.mkdirSync(outDir, { recursive: true });
   let fronta = o.ui ? dlazdice() : otazky();

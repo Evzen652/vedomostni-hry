@@ -8,6 +8,7 @@
  * klidně z jiné session.
  *
  *   node scripts/batch-irony-images.js submit --cc cz    # sestaví a odešle dávku
+ *   node scripts/batch-irony-images.js submit --only a,b # jen vybrané otázky (zkušební vzorek)
  *   node scripts/batch-irony-images.js status            # kde to je
  *   node scripts/batch-irony-images.js fetch             # stáhne a uloží obrázky
  *
@@ -24,7 +25,10 @@ const MODEL = "gemini-2.5-flash-image";
 const REFERENCE = "assets/country-ch.jpg";
 const STAV = ".batch-irony.json";
 const OUT_DIR = "img";
-const SIRKA = 1200, KVALITA = 84;
+// 16:9 a šířka 1344 = nativní výstup modelu, nezmenšuje se (2026-09-11). Rám se po odpovědi
+// smrskne přesně na obrázek (od 2026-09-06), takže čtverec by jen prodloužil pravý sloupec.
+// Šířku určil iPad NA VÝŠKU: obrázek se tam kreslí na 770 bodů, retina chce ~1540 px (změřeno).
+const SIRKA = 1344, KVALITA = 84;
 
 // Stejný stylový recept jako u synchronního generátoru — držet je v souladu.
 const STYL = "painterly textured watercolour and gouache illustration, aged vintage travel journal, " +
@@ -84,6 +88,7 @@ function otazkyKeZpracovani(cc) {
     if (cc && f !== cc + ".json") continue;
     for (const q of JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))) {
       if (!q.irony_prompt) continue;
+      if (onlyArg && !onlyArg.includes(q.id)) continue;
       if (fs.existsSync(path.join(OUT_DIR, q.id + ".jpg"))) continue;
       out.push(q);
     }
@@ -199,6 +204,7 @@ async function fetchVysledky() {
 
 const prikaz = process.argv[2];
 const ccArg = process.argv.includes("--cc") ? process.argv[process.argv.indexOf("--cc") + 1] : null;
+const onlyArg = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1].split(",").map(x => x.trim()) : null;
 const akce = { submit: () => submit(ccArg), status, fetch: fetchVysledky }[prikaz];
-if (!akce) { console.error("Použití: submit --cc cz | status | fetch"); process.exit(1); }
+if (!akce) { console.error("Použití: submit [--cc cz] [--only id,id] | status | fetch"); process.exit(1); }
 akce().catch(e => { console.error("CHYBA: " + e.message); process.exit(1); });
