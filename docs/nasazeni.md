@@ -66,6 +66,12 @@ Skript nejdřív pustí `predeploy` (validace dat + offline testy + test fondu),
   starý kód. Vypadá to, že se nic nestalo.
 - **Posuň `master` dřív, než nasadíš**, ať produkce neběží na kódu, který ve větvi
   není. Fast-forward: `git -C <repo> merge --ff-only <vetev>`.
+- **Po nasazení se hned přepni zpátky na pracovní větev** (`git checkout <vetev>`).
+  Posunutí masteru tě na něm nechá, a další commity pak vznikají rovnou na `master` —
+  stalo se to 2026-09-10: právní stránky a změna na 13+ skončily na masteru a běžný
+  `git push` je poslal na `origin/master`. Produkci to nezměnilo (nasazuje se ručně,
+  ne z GitHubu), ale master pak obsahoval práci, která se nasadit ještě nesměla.
+  Před každým commitem proto `git branch --show-current`.
 
 ### 5. Ověření na ostré adrese
 
