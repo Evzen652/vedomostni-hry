@@ -119,9 +119,9 @@
   "question": "Čím je park Picos de Europa jedinečný mezi národními parky Španělska?",
   "answer": "Je nejstarším národním parkem ve Španělsku, vyhlášen roku 1918",
   "distractors": [
-   "Je jediný bez jediné hory",
-   "Je největší na světě",
-   "Vznikl teprve v 21. století"
+   "Je jediný park ve Španělsku, kde není žádná hora",
+   "Je největším národním parkem na světě",
+   "Vznikl teprve v 21. století jako nejmladší park"
   ],
   "quip_correct": "Rok 1918 měl na programu pandemii i konec světové války, a Španělsko si přesto našlo čas založit první národní park.",
   "quip_wrong": "Mimo — Picos de Europa je jedinečný jinak, než tipuješ.",
@@ -211,7 +211,7 @@
    "Zůstávají na náměstí celý rok",
    "Odešlou se do jiných měst"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — rok práce, jedna noc, popel. Jen vítěz přežije, a proto o vítěze jde od první chvíle.",
+  "quip_correct": "Jistá věc — rok práce, jedna noc, popel. Jen vítěz přežije, a proto o vítěze jde od první chvíle.",
   "quip_wrong": "Skoro, ale ne úplně — muzeum by byl příliš poklidný osud, figury z Fallas čeká něco dramatičtějšího: oheň.",
   "explanation": "Na festivalu Las Fallas se staví obří figury z kartonu a sádry, které v noci 19. března shoří kromě vítězné.",
   "source_url": "https://cs.wikipedia.org/wiki/Las_Fallas",
@@ -387,7 +387,7 @@
    "Vyhrálo na penalty proti Brazílii",
    "Porazilo Argentinu 2:0"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — sto dvacet minut, jeden gól. Iniesta ho dal ve 116. minutě. Stálo to za čekání.",
+  "quip_correct": "Tahle byla v kapse — sto dvacet minut, jeden gól. Iniesta ho dal ve 116. minutě. Stálo to za čekání.",
   "quip_wrong": "Skoro, ale ne úplně — penalty ani přestřelka 3:1, 2010 rozhodl jediný gól v prodloužení, a bylo po dramatu.",
   "explanation": "Španělští fotbalisté se v roce 2010 stali mistry světa, když ve finále porazili Nizozemsko 1:0 v prodloužení.",
   "source_url": "https://cs.wikipedia.org/wiki/Mistrovstv%C3%AD_sv%C4%9Bta_ve_fotbale_2010",
@@ -541,7 +541,7 @@
    "Osmanská nadvláda ve Středomoří",
    "Řím jako mocenské centrum"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — leden 1492 padla Granada, říjen 1492 Kolumbus připlul k Americe. Jedno datum, dvě dějiny.",
+  "quip_correct": "Přesně tak — leden 1492 padla Granada, říjen 1492 Kolumbus připlul k Americe. Jedno datum, dvě dějiny.",
   "quip_wrong": "Skoro, ale rok 1492 ukončil něco jiného.",
   "explanation": "Granadský emirát byl v letech 1238–1492 posledním muslimským státem v Andalusii, padl 2. ledna 1492.",
   "source_url": "https://cs.wikipedia.org/wiki/Granadsk%C3%BD_emir%C3%A1t",
@@ -608,7 +608,7 @@
    "Sevilla",
    "Valencia"
   ],
-  "quip_correct": "Jé, tys to věděl! Madrid sedí přímo uprostřed mapy - zatímco Barcelona i Sevilla si užívají moře, hlavní město je od pobřeží stovky kilometrů daleko.",
+  "quip_correct": "A je to tam! Madrid sedí přímo uprostřed mapy - zatímco Barcelona i Sevilla si užívají moře, hlavní město je od pobřeží stovky kilometrů daleko.",
   "quip_wrong": "Skoro, ale ne tak úplně - Barcelona i Sevilla leží u moře, hlavní město ale sedí přesně uprostřed mapy: je to Madrid.",
   "explanation": "Madrid leží v nadmořské výšce 667 metrů, a je tak nejvýše položeným hlavním městem celé Evropské unie.",
   "about": "Madridu",
@@ -753,7 +753,7 @@
    "Zakotvili to ve středověkých zákonech",
    "Aby ušetřili za elektřinu v klimatizaci"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — ve čtyřiceti stupních se prostě nepracuje. Španělé to pochopili jako první a nazvali to siesta.",
+  "quip_correct": "Bez váhání — ve čtyřiceti stupních se prostě nepracuje. Španělé to pochopili jako první a nazvali to siesta.",
   "quip_wrong": "Skoro, ale siesta vznikla z pragmatismu, ne ze zákona.",
   "explanation": "Siesta původně umožňovala zemědělcům přečkat nejteplejší část dne. Pracovní den pak pokračoval pozdě odpoledne a večer — odtud pozdní večeře, pozdní restaurace, pozdní vše.",
   "about": "spanelske kulture",
@@ -853,7 +853,7 @@
    "Rovná louka bez jediného kopce",
    "Hustá síť řek a bažin"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — sucho, horko, žádný stín. Don Quijote bloumal přesně touhle krajinou, Cervantes věděl, proč ji vybral.",
+  "quip_correct": "Tahle byla v kapse — sucho, horko, žádný stín. Don Quijote bloumal přesně touhle krajinou, Cervantes věděl, proč ji vybral.",
   "quip_wrong": "Ne tentokrát — žádná džungle, žádné bažiny, středem Španělska táhne suchá, hornatá náhorní plošina zvaná Meseta.",
   "explanation": "Meseta Central pokrývá přes 40 % rozlohy Španělska ve výšce 600–800 m n.m. Léto je rozpálené, zima krutá, srážek málo. Cervantes tu nechával bloudit Dona Quijota — krajina mu sedela.",
   "about": "spanelske krajine",
@@ -1070,9 +1070,9 @@
   "question": "Jak se jmenuje oblíbený španělský pokrm z osmažených vajec a brambor, který se jí za tepla i za studena?",
   "answer": "Tortilla, španělská bramborová omeleta",
   "distractors": [
-   "Paella",
-   "Gazpacho",
-   "Churros"
+   "Paella, španělská rýže s mořskými plody",
+   "Gazpacho, španělská studená polévka",
+   "Churros, španělské smažené tyčinky"
   ],
   "quip_correct": "Bystrá hlava! Vejce, brambory, a jedna věčná hádka navíc - smí do tortilly cibule, nebo ne?",
   "quip_wrong": "Skoro, ale ne tak úplně - paella je z rýže, gazpacho je studená polévka, tohle vaječno-bramborové kolo je tortilla.",
@@ -1116,7 +1116,7 @@
    "Plavecké závody v řece Arga",
    "Noční ohňostroj nad městskými hradbami"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — Hemingway to popsal jako dobrodružství, pojišťovny to spíš vidí jako statistiku úrazů.",
+  "quip_correct": "Sedí — Hemingway to popsal jako dobrodružství, pojišťovny to spíš vidí jako statistiku úrazů.",
   "quip_wrong": "Ne tak poklidně, jak sis představoval — San Fermín je spíš adrenalin než procesí s květinami.",
   "explanation": "Trasa běhu s býky měří necelý kilometr a běžci ji zvládnou za pár minut, přesto se během festivalu každý rok zraní desítky lidí — a na start přesto každé ráno v červenci nastupují tisíce.",
   "about": "festivalu San Fermín",
@@ -1330,7 +1330,7 @@
    "Marcipán",
    "Perník"
   ],
-  "quip_correct": "Tys to věděl! O Vánocích ho ve Španělsku najdeš snad na každém stole.",
+  "quip_correct": "Jupí, správně! O Vánocích ho ve Španělsku najdeš snad na každém stole.",
   "quip_wrong": "Chutné, ale ne ono - tahle mandlová dobrota se jmenuje turrón a bez ní si Španělé Vánoce neumí představit.",
   "explanation": "Turrón se vyrábí už od patnáctého století a existují desítky druhů - od tvrdého plátku s celými mandlemi po měkkou verzi podobnou nugátu.",
   "source_url": "https://cs.wikipedia.org/wiki/Turr%C3%B3n",
@@ -1352,7 +1352,7 @@
    "Ježíšek",
    "Mikuláš"
   ],
-  "quip_correct": "Jé, tys to věděl! Ve Španělsku se na dárky čeká skoro o dva týdny déle než jinde.",
+  "quip_correct": "A je to tam! Ve Španělsku se na dárky čeká skoro o dva týdny déle než jinde.",
   "quip_wrong": "Milé tušení, ale ve Španělsku má dárkovou službu jiná parta - tři velbloudí jezdci jménem Tři králové.",
   "explanation": "Večer před svátkem procházejí španělskými městy velké průvody zvané cabalgata, ve kterých tři králové jedou na velbloudech a házejí dětem sladkosti.",
   "source_url": "https://cs.wikipedia.org/wiki/T%C5%99i_kr%C3%A1lov%C3%A9",

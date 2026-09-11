@@ -17,9 +17,11 @@ const path = require("path");
 
 // Původní dvě fráze zůstávají v rotaci (jen přestávají být jediné), + 6 nových.
 // Tón podle standardu 2026-08-15: nadšené, ne sarkastické, bez rodu v minulém čase.
+// „Tys to věděl!" / „Jé, tys to věděl!" z rotace vypadly 2026-09-11: jsou to minulý čas
+// s rodem a appka pohlaví hráče nezná (pravidlo 2026-09-02). Nahradily je dvě neutrální.
 const VARIANTY = [
-  "Tys to věděl!",
-  "Jé, tys to věděl!",
+  "Jupí, správně!",
+  "A je to tam!",
   "Bod pro tebe!",
   "Trefa do černého!",
   "Bystrá hlava!",

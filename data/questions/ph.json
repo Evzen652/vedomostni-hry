@@ -97,9 +97,9 @@
   "question": "Čím je unikátní sopka Taal?",
   "answer": "Nachází se na ostrově uprostřed jezera a má uvnitř kráteru další jezero",
   "distractors": [
-   "Je to jediná vyhaslá sopka Filipín",
-   "Leží pod mořskou hladinou",
-   "Je to nejvyšší hora souostroví"
+   "Je to jediná vyhaslá sopka na celých Filipínách",
+   "Leží celá pod mořskou hladinou u pobřeží Luzonu",
+   "Je to nejvyšší hora celého souostroví"
   ],
   "quip_correct": "Ostrov v jezeře na ostrově, uprostřed sopky další jezero. Filipíny jsou přeborníky v rekurzivní geografii.",
   "quip_wrong": "Ne tentokrát — vyhaslá ani podmořská, Taal si dovoluje mnohem víc geografické recese.",
@@ -123,7 +123,7 @@
    "Na okraji Arktidy",
    "V mrtvé zóně bez života"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — srdce Korálového trojúhelníku, více druhů ryb na metr čtvereční než kdekoli jinde na planetě.",
+  "quip_correct": "Tahle byla v kapse — srdce Korálového trojúhelníku, více druhů ryb na metr čtvereční než kdekoli jinde na planetě.",
   "quip_wrong": "Skoro se to povedlo, ale ne úplně — Arktida ani mrtvá zóna, Filipíny leží přesně tam, kde je moře nejživější.",
   "explanation": "Filipíny leží v srdci Korálového trojúhelníku, centra světové mořské biodiverzity.",
   "source_url": "https://islandhoppinginthephilippines.com/cs/palawan/explore/beautiful-coral-reefs-philippines/",
@@ -211,7 +211,7 @@
    "Na počest vojenského vítězství",
    "Na počest sportovních výher"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — přes 42 000 barangayů, každý se svým patronem, každý se svou fiestou. Filipíny slaví průmyslově.",
+  "quip_correct": "Jistá věc — přes 42 000 barangayů, každý se svým patronem, každý se svou fiestou. Filipíny slaví průmyslově.",
   "quip_wrong": "Tvoje logika utekla jinam — turisté ani vojenská vítězství tu nehrají roli, jde o patrona, a těch je na Filipínách požehnaně.",
   "explanation": "Fiesta je na Filipínách všudypřítomná — země má přes 42 000 barangayů (nejmenších správních jednotek) a téměř každý z nich slaví svého patrona vlastní fiestou.",
   "source_url": "https://en.wikipedia.org/wiki/Fiesta",
@@ -365,7 +365,7 @@
    "Lední hokej",
    "Golf"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — nejstarší profesionální liga v Asii. Filipíny si basketbal od Američanů vzaly a udělaly ho svým.",
+  "quip_correct": "Přesně tak — nejstarší profesionální liga v Asii. Filipíny si basketbal od Američanů vzaly a udělaly ho svým.",
   "quip_wrong": "Vedle — rugby a hokej na Filipínách nemají šanci, basketbal tam vládne bez soupeře.",
   "explanation": "Basketbal je na Filipínách jednoznačně nejpopulárnějším sportem — místní liga PBA založená v roce 1975 je nejstarší profesionální basketbalovou ligou v Asii a druhou nejstarší na světě hned po NBA.",
   "source_url": "https://en.wikipedia.org/wiki/Philippine_Basketball_Association",
@@ -520,7 +520,7 @@
    "Sladký sen",
    "Barevný talíř"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — dezert, jehož recept je doslova příkaz: smíchej to. Co přidáš, je na tobě.",
+  "quip_correct": "Tahle byla v kapse — dezert, jehož recept je doslova příkaz: smíchej to. Co přidáš, je na tobě.",
   "quip_wrong": "Blízko nebylo — studený led je jen část příběhu, název je rovnou návod: smíchej to.",
   "explanation": "Halo-halo v překladu znamená smíchej to dohromady, je to směs drceného ledu, mléka, fazolí a ovoce.",
   "source_url": "https://en.wikipedia.org/wiki/Halo-halo",
@@ -538,9 +538,9 @@
   "question": "Jak dlouho byly Filipíny španělskou kolonií?",
   "answer": "Přes tři staletí, 1565 až 1898",
   "distractors": [
-   "Jen deset let",
-   "Necelý rok",
-   "Přes tisíc let"
+   "Jen deset let, 1888 až 1898",
+   "Necelý rok, během napoleonských válek",
+   "Přes tisíc let, od raného středověku"
   ],
   "quip_correct": "Trefa přesně doprostřed — tři sta třináct let. Španělé odešli v roce 1898, kostely, slova a příjmení zůstaly.",
   "quip_wrong": "Vedle — deset let by Španělé sotva stihli postavit jeden kostel, zůstali přes tři století.",
@@ -690,7 +690,7 @@
    "Osel",
    "Velbloud"
   ],
-  "quip_correct": "Tys to věděl! Karabao se v rozbahněném poli cítí líp než na suché louce.",
+  "quip_correct": "Jupí, správně! Karabao se v rozbahněném poli cítí líp než na suché louce.",
   "quip_wrong": "Ne tentokrát – kůň, osel ani velbloud na filipínských polích neorou, tam táhne pluh vodní buvol.",
   "explanation": "Karabao je filipínský poddruh vodního buvola a odedávna symbolizuje tvrdou práci a trpělivost. Filipínci ho chovají nejen jako tažné zvíře, ale i kvůli mléku, ze kterého se vyrábí místní sýr kesong puti.",
   "source_url": "https://en.wikipedia.org/wiki/Carabao",
@@ -706,18 +706,18 @@
   "kids": true,
   "type": "choice",
   "question": "Jak se jmenuje obří žralok, kterého lidé mohou v klidu pozorovat a plavat vedle něj u pobřeží Donsolu na Filipínách?",
-  "answer": "Žralok obrovský (butanding)",
+  "answer": "Žralok velrybí (butanding)",
   "distractors": [
-   "Žralok bílý",
-   "Žralok tygří",
-   "Piraňa"
+   "Žralok bílý (velký bílý žralok)",
+   "Žralok tygří (pruhovaný žralok)",
+   "Piraňa (dravá říční ryba)"
   ],
-  "quip_correct": "Jé, tys to věděl! Největší ryba světa si vystačí s nejmenším jídlem – drobným planktonem.",
+  "quip_correct": "A je to tam! Největší ryba světa si vystačí s nejmenším jídlem – drobným planktonem.",
   "quip_wrong": "Ne tenhle žralok – bílý ani tygří žralok by se s plavci u Donsolu nekamarádili, tenhle obr je naštěstí neškodný.",
-  "explanation": "Žralok obrovský může být dlouhý přes deset metrů, ale živí se planktonem a malými rybami, které cedí vodou. Donsol na Filipínách patří k nejlepším místům na světě, kde ho lidé mohou vidět zblízka při šnorchlování.",
+  "explanation": "Žralok velrybí může být dlouhý přes deset metrů, ale živí se planktonem a malými rybami, které cedí vodou. Donsol na Filipínách patří k nejlepším místům na světě, kde ho lidé mohou vidět zblízka při šnorchlování.",
   "source_url": "https://en.wikipedia.org/wiki/Whale_shark",
-  "image_prompt": "Fotorealistický podvodní snímek žraloka obrovského plavajícího u pobřeží Donsolu, čirá modrá voda, sluneční paprsky, 16:9",
-  "about": "žralocích obrovských u Donsolu"
+  "image_prompt": "Fotorealistický podvodní snímek žraloka velrybího plavajícího u pobřeží Donsolu, čirá modrá voda, sluneční paprsky, 16:9",
+  "about": "žralocích velrybích u Donsolu"
  },
  {
   "id": "ph-k-tinikling",
@@ -866,7 +866,7 @@
    "Pancit",
    "Halo-halo"
   ],
-  "quip_correct": "Tys to věděl! Křupavá lumpia zmizí z talíře dřív, než stihneš dojíst první kousek.",
+  "quip_correct": "Jupí, správně! Křupavá lumpia zmizí z talíře dřív, než stihneš dojíst první kousek.",
   "quip_wrong": "Halo-halo je studený dezert v misce, ne smažený závitek - tohle se ti spletlo pořádně.",
   "explanation": "Lumpia má kořeny v čínské kuchyni přistěhovalců, ale Filipínci si ji upravili po svém - třeba na tenoučké masové rolky zvané lumpiang shanghai.",
   "source_url": "https://en.wikipedia.org/wiki/Lumpia",
@@ -910,7 +910,7 @@
    "Lotos",
    "Orchidej"
   ],
-  "quip_correct": "Jé, tys to věděl! Ta malá kytička voní tak silně, že ji poznáš i poslepu.",
+  "quip_correct": "A je to tam! Ta malá kytička voní tak silně, že ji poznáš i poslepu.",
   "quip_wrong": "Hibiškus je nádherný, ale národní korunu nosí maličká voňavá sampaguita.",
   "explanation": "Sampaguita byla za národní květinu Filipín vyhlášená už moc dávno, a girlandy z ní lidé věší i na sochy a oltáře v kostelech.",
   "source_url": "https://en.wikipedia.org/wiki/Sampaguita",

@@ -14,7 +14,7 @@
    "Tvaroh",
    "Marmeláda"
   ],
-  "quip_correct": "Tys to věděl! Křupavé těsto a uvnitř žloutkový krém — Portugalci si ho dají klidně hned k snídani.",
+  "quip_correct": "A je to tam! Křupavé těsto a uvnitř žloutkový krém — Portugalci si ho dají klidně hned k snídani.",
   "quip_wrong": "Mineš chuť i texturu! Uvnitř pastel de nata je sladký vaječný krém, ne to, cos tipoval.",
   "explanation": "Pastel de nata vznikl v klášteře Jerónimos v Lisabonu — mniši prý recept vymysleli, aby nepřišly nazmar žloutky, které zbývaly po škrobení řádových hábitů bělkem.",
   "about": "pastelu de nata",
@@ -35,7 +35,7 @@
    "Vyřezávaným dřevem",
    "Slaměnými rohožemi"
   ],
-  "quip_correct": "Jé, tys to věděl! Modrobílé kachličky pokrývají Portugalsko od podlahy po střechu, celé ulice se tím lesknou.",
+  "quip_correct": "Jupí, správně! Modrobílé kachličky pokrývají Portugalsko od podlahy po střechu, celé ulice se tím lesknou.",
   "quip_wrong": "Zkus se příště rozhlédnout pozorněji — po portugalských fasádách se nerozlézá sklo ani dřevo, ale malované kachličky.",
   "explanation": "Tyto kachličky se jmenují azulejos, název pochází z arabštiny a znamená „malý leštěný kamínek“ — do Portugalska je přinesli Maurové ještě předtím, než tam vznikl dnešní modrobílý styl.",
   "about": "portugalských kachličkách azulejos",
@@ -78,7 +78,7 @@
    "Blues"
   ],
   "quip_correct": "Fado sedí. Flamenco si klidně nech pro Španěly, tango pro Argentinu — tohle je čistě portugalská melancholie.",
-  "quip_wrong": "Sáhl jsi vedle — a rovnou do jiné země. Ten smutný portugalský styl se jmenuje fado.",
+  "quip_wrong": "Vedle — a rovnou do jiné země. Ten smutný portugalský styl se jmenuje fado.",
   "explanation": "Fado se v Lisabonu zpívá hlavně ve starých čtvrtích jako Alfama a doprovází ho kulatá portugalská kytara — od roku 2011 je na seznamu nehmotného dědictví UNESCO.",
   "about": "hudebním stylu fado",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — a singer with a shawl in a narrow Lisbon alley at dusk, holding a round Portuguese guitar"
@@ -136,9 +136,9 @@
   "question": "Co těžce postihlo Lisabon na Boží hod vánoční 1755 a navždy změnilo jeho podobu?",
   "answer": "Ničivé zemětřesení s následným požárem a vlnou tsunami",
   "distractors": [
-   "Válka se Španělskem",
-   "Rozsáhlá povodeň",
-   "Epidemie moru"
+   "Válka se Španělskem a obléhání města",
+   "Rozsáhlá povodeň z rozvodněné řeky Tejo",
+   "Epidemie moru, která vylidnila přístav"
   ],
   "quip_correct": "Jedna rána a půl Lisabonu bylo pryč, otřesy, oheň a vlna dohromady byly brutální kombinace.",
   "quip_wrong": "Ne, tohle to nebylo. Město tehdy zdemolovalo zemětřesení, které přišlo v nejhorší možnou chvíli — na Boží hod, kdy v kostelích hořely svíčky.",
@@ -162,7 +162,7 @@
    "Provence"
   ],
   "quip_correct": "Algarve, správně. Baskicko si nech na Španělsko a Provence na Francii.",
-  "quip_wrong": "Netrefil ses o kus dál. Ty portugalské pláže s útesy a zlatým pískem se jmenují Algarve.",
+  "quip_wrong": "Vedle o kus dál. Ty portugalské pláže s útesy a zlatým pískem se jmenují Algarve.",
   "explanation": "Jméno Algarve pochází z arabského al-Gharb, tedy „západ“ — regionu vládli Maurové déle než zbytku dnešního Portugalska, prakticky až do poloviny 13. století.",
   "about": "regionu Algarve",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text — golden sandstone cliffs and turquoise sea coves of the Algarve coastline"
@@ -409,9 +409,9 @@
   "question": "Jaká surovina je základem stovek tradičních portugalských receptů, i když se v portugalských vodách skoro neloví?",
   "answer": "Sušená solená treska (bacalhau)",
   "distractors": [
-   "Čerstvý losos",
-   "Krevety",
-   "Chobotnice"
+   "Čerstvý losos z Norska",
+   "Krevety z Atlantiku",
+   "Chobotnice sušená na slunci"
   ],
   "quip_correct": "Recept na tresku na každý den v roce — Portugalci to slibují s naprostou vážností.",
   "quip_wrong": "Tahle ryba se na portugalských talířích moc neobjevuje - hlavní roli tam odjakživa hraje sušená treska.",
@@ -561,7 +561,7 @@
    "Baleárské ostrovy"
   ],
   "quip_correct": "Tamní počasí si asi spletlo kalendář — furt si myslí, že je duben.",
-  "quip_wrong": "Netrefil jsi ostrov ani počasí - to věčné jaro s banánovníky patří Madeiře, ne tomu, cos tipoval.",
+  "quip_wrong": "Ostrov ani počasí nesedí - to věčné jaro s banánovníky patří Madeiře, ne tvému tipu.",
   "explanation": "Madeira je tak hornatá, že tam už v 16. století začali kopat levady - stovky kilometrů umělých kanálů vedených podél srázů, které vodu z vlhkých hor vedou k suchému jihu a dnes slouží i jako oblíbené turistické stezky.",
   "about": "ostrově Madeira",
   "image_prompt": "Fotorealistický snímek zelených hornatých svahů ostrova Madeira s terasovitými vinicemi a mořem v pozadí, 16:9"
@@ -645,7 +645,7 @@
    "Bartolomeu Dias"
   ],
   "quip_correct": "Magalhães naplánoval cestu kolem světa a stihl z ní jen menší část, zbytek dotáhla hrstka posádky bez něj.",
-  "quip_wrong": "Netrefil jsi mořeplavce - tuhle výpravu kolem světa vymyslel a vedl Magalhães, i když sám ji celou neobjel.",
+  "quip_wrong": "Jiný mořeplavec - tuhle výpravu kolem světa vymyslel a vedl Magalhães, i když sám ji celou neobjel.",
   "explanation": "Magalhães byl Portugalec, ale vyplul pod španělskou vlajkou - portugalský král mu jeho plán nejdřív odmítl financovat, tak nabídku přijal španělský král Karel I. a sponzoroval tím vlastně úspěch, který zůstal navždy spojený hlavně se jménem jeho mořeplavecké konkurence.",
   "about": "mořeplavci Magalhãesovi",
   "image_prompt": "Fotorealistický snímek staré plachetnice na otevřeném oceánu při západu slunce, symbolizující cestu kolem světa, 16:9"
@@ -687,7 +687,7 @@
    "Clássicos do Norte"
   ],
   "quip_correct": "Tahle trojka si titul přehazuje už bezmála sto let, zbytek tabulky je tak akorát na vyplnění.",
-  "quip_wrong": "Netrefil jsi název - téhle nejúspěšnější trojici klubů se říká Os Três Grandes, Velká trojka.",
+  "quip_wrong": "Název nesedí - téhle nejúspěšnější trojici klubů se říká Os Três Grandes, Velká trojka.",
   "explanation": "Od založení celostátní ligy ve 30. letech unikl titul téhle trojici jen párkrát - naposledy se to v roce 2001 povedlo klubu Boavista z Porta, což byla tehdy obrovská fotbalová senzace.",
   "about": "portugalské fotbalové Velké trojce",
   "image_prompt": "Fotorealistický snímek zaplněného fotbalového stadionu v Portugalsku při večerním zápase, 16:9"
@@ -729,7 +729,7 @@
    "Baroko"
   ],
   "quip_correct": "Manuelský styl vypadá, jako by se kamenické dláto rozhodlo navěky napodobovat lodní lano.",
-  "quip_wrong": "Netrefil jsi styl - tahle kamenná směs provazů, kotev a korálů se jmenuje manuelský styl.",
+  "quip_wrong": "Styl nesedí - tahle kamenná směs provazů, kotev a korálů se jmenuje manuelský styl.",
   "explanation": "Styl je pojmenovaný po králi Manuelovi I., za jehož vlády ho z velké části financovalo bohatství z koření, které do Lisabonu proudilo díky nové námořní cestě do Indie - nejslavnější ukázkou je klášter Jerónimos.",
   "about": "manuelském stylu",
   "image_prompt": "Fotorealistický snímek detailu kamenného portálu s propletenými motivy provazů a mořských symbolů v manuelském stylu, 16:9"
@@ -856,7 +856,7 @@
    "Klobásy",
    "Mušle"
   ],
-  "quip_correct": "Tys to věděl! V červnu voní celý Lisabon jako jedna velká grilovačka u moře.",
+  "quip_correct": "A je to tam! V červnu voní celý Lisabon jako jedna velká grilovačka u moře.",
   "quip_wrong": "Klobásy by na téhle slavnosti vypadaly dost mimo - tahle party patří malým stříbrným rybkám, ne uzeninám.",
   "explanation": "Ulice se během svátků zdobí barevnými papírovými girlandami a lidé tančí v pestrých krojích v průvodech zvaných marchas populares.",
   "source_url": "https://en.wikipedia.org/wiki/Feast_of_St._Anthony",
@@ -878,7 +878,7 @@
    "Basketbal",
    "Stolní tenis"
   ],
-  "quip_correct": "Jé, tys to věděl! V hale je hřiště malé, ale portugalské kombinace tam létají rychleji než blesk.",
+  "quip_correct": "Jupí, správně! V hale je hřiště malé, ale portugalské kombinace tam létají rychleji než blesk.",
   "quip_wrong": "Na stolním tenise by se pět hráčů kolem jednoho stolečku akorát pomlátilo pálkami - to si radši nechte na halu.",
   "explanation": "Hvězdou portugalského futsalového týmu byl hráč Ricardinho, kterému fanoušci přezdívali Messi futsalu.",
   "source_url": "https://en.wikipedia.org/wiki/Portugal_national_futsal_team",

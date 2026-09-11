@@ -71,7 +71,7 @@
    "Hudebník, vynálezce a cestovatel"
   ],
   "quip_correct": "Astronom, generál, státník — a stihl to všechno do čtyřiceti let věku, kdy jiní řeší, kam na dovolenou.",
-  "quip_wrong": "Tentokrát ne — tři kariéry v jednom životě a ani jednu jsi netrefil.",
+  "quip_wrong": "Tentokrát ne — tři kariéry v jednom životě a tvůj tip netrefil ani jednu.",
   "explanation": "Milan Rastislav Štefánik byl astronom, francouzský generál a politik, jenž patřil ke spoluzakladatelům Československa.",
   "source_url": "https://cs.wikipedia.org/wiki/Milan_Rastislav_%C5%A0tef%C3%A1nik",
   "source_card": "sk-lide-stefanik",
@@ -210,11 +210,11 @@
    "28. října 1918",
    "1. května 2004"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse. Jeden stát šel spát, druhý se probudil — a oba tvrdili, že to přece chtěli.",
+  "quip_correct": "Tahle byla v kapse. Jeden stát šel spát, druhý se probudil — a oba tvrdili, že to přece chtěli.",
   "quip_wrong": {
    "deti": "Datum vedle, i když devadesátá léta toho na Slovensku stihla dost.",
    "starsi": "Skoro, ale rok netrefen — devadesátky na Slovensku nabídly dost jiných dat na výběr.",
-   "dospeli": "Slovenská státnost slaví jiný den, než sis vybral."
+   "dospeli": "Slovenská státnost slaví jiný den, než říká tvůj tip."
   },
   "distractor_quips": {
    "17. listopadu 1989": "17. listopad je Sametová revoluce — tehdy to celé teprve začalo, ne skončilo.",
@@ -324,9 +324,9 @@
   "question": "Odkud pocházeli rodiče Andyho Warhola, krále pop-artu?",
   "answer": "Z východoslovenské vesnice Miková",
   "distractors": [
-   "Z Bratislavy",
-   "Z Vídně",
-   "Z Krakova"
+   "Z Bratislavy, z čtvrti Petržalka",
+   "Z Vídně, z dělnické čtvrti",
+   "Z Krakova, ze staré židovské čtvrti"
   ],
   "quip_correct": "Sedí to na milimetr přesně. Z Mikové do New Yorku a zpátky aspoň na plakáty v muzeu — Miková se mezitím moc nezměnila.",
   "quip_wrong": "Tentokrát mimo — Warholova rodina by se tomuhle tipu jen tiše pousmála a šla dál.",
@@ -398,7 +398,7 @@
    "Pletení košíků z vrbového proutí"
   ],
   "quip_correct": "Bez okolků, prostě trefa. Drát, ruce, žádné nářadí navíc — a UNESCO uznalo, že to opravdu stačí.",
-  "quip_wrong": "Tentokrát ses netrefil — drát by se tomuhle tipu jen samolibě prohnul.",
+  "quip_wrong": "Tentokrát vedle — drát by se tomuhle tipu jen samolibě prohnul.",
   "explanation": "Drotárstvo, tradiční slovenské zpracování drátu, bylo v roce 2019 zapsáno na seznam UNESCO jako nehmotné kulturní dědictví lidstva.",
   "source_url": "https://ich.unesco.org/en/RL/drotarstvo-wire-craft-and-art-01478",
   "source_card": "sk-kultura-drotarstvo",
@@ -621,7 +621,7 @@
    "Nitra"
   ],
   "quip_correct": "Trefeno s jistotou, která zavazuje. Na necelé dva měsíce se z krajského města stalo srdce ozbrojeného odporu uprostřed Evropy ve válce.",
-  "quip_wrong": "Netrefil ses — odboj z roku 1944 měl centrum jinde, než sis myslel.",
+  "quip_wrong": "Vedle — odboj z roku 1944 měl centrum jinde.",
   "explanation": "Slovenské národní povstání vypuklo 29. srpna 1944 jako ozbrojený odpor proti vstupu německého wehrmachtu na slovenské území, jeho centrem se stala Banská Bystrica.",
   "source_url": "https://en.wikipedia.org/wiki/Slovak_National_Uprising",
   "source_card": "sk-historie-snp",
@@ -679,9 +679,9 @@
   "question": "Co vidíš na slovenském státním znaku?",
   "answer": "Dvojitý kříž na třech modrých kopcích",
   "distractors": [
-   "Orel s korunou",
-   "Lev s mečem",
-   "Hvězda a půlměsíc"
+   "Orel s korunou na hlavě",
+   "Lev s mečem v tlapě",
+   "Hvězda a půlměsíc na zeleném poli"
   ],
   "quip_correct": "Šikovná paměť! Ty tři kopce na znaku nejsou jen tak namalované — představují tři konkrétní pohoří, Tatry, Fatru a Matru.",
   "quip_wrong": "Zabloudil jsi k cizí vlajce — orel, lev i půlměsíc patří jiným státům. Slovenský znak má svůj vlastní pár symbolů: kříž a kopce.",
@@ -744,7 +744,7 @@
    "Plastelínou",
    "Rozpuštěnými bonbóny"
   ],
-  "quip_correct": "Uhodl jsi recept, co zná snad každá babička ve Vlkolínci — obyčejné práškové barvivo v hrsti vápna, a z chalupy je najednou nejveselejší dům v celé dědině.",
+  "quip_correct": "Správně, je to recept, co zná snad každá babička ve Vlkolínci — obyčejné práškové barvivo v hrsti vápna, a z chalupy je najednou nejveselejší dům v celé dědině.",
   "quip_wrong": "Chybička se vloudila — chalupu potřenou džemem by slízli první méďové z lesa. Naštěstí barvu dodává Vlkolínci obyčejné vápno, ne bonbóny ani plastelína.",
   "explanation": "Vápno chránilo dřevo před škůdci a vesničané do něj přidávali přírodní barviva, aby měly chalupy veselé barvy. Vlkolínec je zapsán na seznam UNESCO.",
   "about": "vesnici Vlkolínec a jejích barevných chaloupkách",
@@ -870,7 +870,7 @@
    "Místo, kde se stýkají tři časová pásma"
   ],
   "quip_correct": "Nečekaně přesné, ale budiž. I středobod Evropy potřebuje pamětní kámen — okolní katastr o tom vedl překvapivě málo sporů.",
-  "quip_wrong": "Tentokrát sis netrefil místo — Krahule si tenhle tip vůbec nevšimly.",
+  "quip_wrong": "Tentokrát místo nesedí — Krahule si tenhle tip vůbec nevšimly.",
   "explanation": "Měření středu Evropy závisí na tom, zda započítáš ostrovy jako Island či Špicberky. Slovenský výpočet z 19. století označil Krahule u Kremnice.",
   "about": "geografickém středu Evropy u Kremnických Baní",
   "image_prompt": "A memorial stone marking the geographical center of Europe next to an old stone church in Krahule, Slovakia, painterly watercolor style"
@@ -1049,7 +1049,7 @@
    "Sama se udala a vše sepsala do deníku",
    "Soud ji osvobodil pro nedostatek důkazů"
   ],
-  "quip_correct": "Kdo se ptá, dostane odpověď — a ty jsi ji měl první. Přes 650 zaznamenaných obětí, ani jeden soud. Právo v sedmnáctém století mělo jiné priority.",
+  "quip_correct": "Kdo se ptá, dostane odpověď — a tady byla hned. Přes 650 zaznamenaných obětí, ani jeden soud. Právo v sedmnáctém století mělo jiné priority.",
   "quip_wrong": "Tentokrát vedle — případ Báthoryové je bizarnější, než dokáže vymyslet fantazie.",
   "explanation": "Palatin Juraj Thurzo potřeboval zabavit obrovské majetky Báthoryové a vyhnout se splácení královských dluhů vůči její rodině. Svědectví byla získána mučením služebnictva. Báthoryová zemřela roku 1614 ve vězení na hradě Čachtice bez toho, aby stanula před soudem.",
   "about": "případu Alžběty Báthoryové a absenci řádného soudu",
@@ -1110,7 +1110,7 @@
    "Požárem, který zapálil bažinu a odhalil horký pramen"
   ],
   "quip_correct": "To zavání znalcem, ne náhodou. Co začalo u kulhavých koní na panských pastvinách, dnes stojí tisíce eur za týden.",
-  "quip_wrong": "Tentokrát ses netrefil — objev léčivého bahna měl totiž čtyři nohy, ne lidský původ.",
+  "quip_wrong": "Tentokrát vedle — objev léčivého bahna měl totiž čtyři nohy, ne lidský původ.",
   "explanation": "Hrabě Erdődy si všiml, že koně po práci v teplém bahnu u řeky Váh přestávají kulhat, a dal u teplých pramenů postavit první prkenné lázně. Symbolem Piešťan se stal muž rozbíjející berle — barlaník — dnes nejpopulárnější slovenská turistická socha.",
   "about": "odkrytí léčivého bahna v Piešťanech",
   "image_prompt": "Bronze statue of a crutch breaker in Piešťany spa, elegant colonnade background, painterly watercolor style"
@@ -1150,7 +1150,7 @@
    "Požádalo NATO o vojenskou ochranu hraniční řeky"
   ],
   "quip_correct": "Odpověď, která nepotřebuje obhajobu. Varianta C: Dunaj přesměrován jednostranně — Haag pak roky rozplétal to, co šlo vyřešit dohodou.",
-  "quip_wrong": "Haag řešil manévr přesnější, než sis tipnul.",
+  "quip_wrong": "Haag řešil manévr přesnější, než napovídá tvůj tip.",
   "explanation": "Slovensko v roce 1992 přehradilo Dunaj u Čunova a přesměrovalo 80 % průtoku do přívodního kanálu na vlastní straně. Mezinárodní soudní dvůr v Haagu v roce 1997 rozhodl, že obě strany porušily smlouvu. Spor o důsledky nebyl dodnes zcela uzavřen.",
   "about": "přehrazení Dunaje a mezinárodním sporu o Gabčíkovo",
   "image_prompt": "Massive dam structure of Gabčíkovo hydro power plant on the Danube river, aerial angle, painterly watercolor style"
@@ -1169,7 +1169,7 @@
    "Metro jezdilo jen 100 metrů tam a zpět pro stranické funkcionáře",
    "Tunely přebudovali na podzemní vinný sklep"
   ],
-  "quip_correct": "Přiznej si to, věděl jsi to jistě. Milionová investice, betonové tubusy a žádné vlaky — komunistická infrastruktura v kostce.",
+  "quip_correct": "Přiznejme si to, tohle byla jistota. Milionová investice, betonové tubusy a žádné vlaky — komunistická infrastruktura v kostce.",
   "quip_wrong": "Po bratislavském metru zbylo něco jiného než tenhle nápad.",
   "explanation": "Stavba byla po roce 1989 zastavena kvůli nedostatku financí a změně politické priority. Nedokončené tunely a betonové výkopy v Petržalce jsou dnes cílem urban explorerů a terčem debat o tom, co s nimi dál.",
   "about": "nedokončeném projektu bratislavského metra",
@@ -1295,7 +1295,7 @@
    "Vínem, které se dalo pít jen zmražené",
    "Vínem barveným zlatem pro šlechtu"
   ],
-  "quip_correct": "Kdo se ptá, ten ví — a ty jsi věděl. Přezdívka víno králů a král vín zavazuje. Slovenská část Tokaje se o ni dělí s Maďarskem, ale hrdosti má dost pro oba.",
+  "quip_correct": "Kdo se ptá, ten ví — a tady bylo jasno. Přezdívka víno králů a král vín zavazuje. Slovenská část Tokaje se o ni dělí s Maďarskem, ale hrdosti má dost pro oba.",
   "quip_wrong": "Královský přídomek sedí na něčem jiném, než napovídá tenhle tip.",
   "explanation": "Slovenská část vinařské oblasti Tokaj zahrnuje několik obcí na jihovýchodě Slovenska a společně s maďarskou částí je zapsána na seznamu UNESCO.",
   "about": "vinařské oblasti Tokaj na Slovensku",
@@ -1402,7 +1402,7 @@
    "Vypálí ho laser",
    "Vyryje ho nožem po upečení"
   ],
-  "quip_correct": "Tys to věděl! Sýr se nechá otisknout, dokud je ještě měkký jako plastelína, a vzor si pak nese celý život.",
+  "quip_correct": "A je to tam! Sýr se nechá otisknout, dokud je ještě měkký jako plastelína, a vzor si pak nese celý život.",
   "quip_wrong": "Kdepak, na oštiepok se s laserem ani se štětečkem nikdo nehrabe – vzor mu vtiskne obyčejná dřevěná formička.",
   "explanation": "Oštiepok se po vyformování ještě udí nad dřevem, čímž získá svou typickou zlatavou barvu a kouřovou chuť.",
   "source_url": "https://cs.wikipedia.org/wiki/O%C5%A1tiepok",

@@ -75,9 +75,9 @@
   "question": "Čím je jezero Loch Ness pozoruhodné mezi britskými jezery?",
   "answer": "Má větší objem vody než všechna anglická a velšská jezera dohromady",
   "distractors": [
-   "Je jediné slané jezero v Británii",
-   "Je nejmenší jezero ve Skotsku",
-   "Nikdy nezamrzá ani v zimě"
+   "Je jediné slané jezero v celé Velké Británii",
+   "Je nejmenší a nejmělčí jezero ve Skotsku",
+   "Leží výš v horách než kterékoli jiné britské jezero"
   ],
   "quip_correct": "Trefa přesně doprostřed. Víc vody než celá Anglie a Wales dohromady — a přesto ji proslavil tvor, který možná neexistuje.",
   "quip_wrong": "Blízko, ale slanost ani zamrzání s tím nemají nic společného — jde o objem vody.",
@@ -145,7 +145,7 @@
    "Z Cambridge",
    "Z Liverpoolu"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse. Ze Stratfordu nad Avonou — a přesto ho světová literatura pokládá za svého.",
+  "quip_correct": "Tahle byla v kapse. Ze Stratfordu nad Avonou — a přesto ho světová literatura pokládá za svého.",
   "quip_wrong": "Skoro, ale ne Cambridge ani Liverpool — rodiště se zásobou citátů leží jinde.",
   "explanation": "William Shakespeare ze Stratfordu nad Avonou napsal drama, komedie i sonety, dodnes nejhranější na světě.",
   "source_url": "https://en.wikipedia.org/wiki/William_Shakespeare",
@@ -428,9 +428,9 @@
   "question": "Jak funguje cockney rýmovaný slang?",
   "answer": "Slovo se nahradí rýmující se frází, například stairs se řekne apples and pears",
   "distractors": [
-   "Slova se čtou pozpátku",
-   "Přidávají se francouzská slova",
-   "Vynechávají se všechny samohlásky"
+   "Slova se čtou pozpátku, takže z beer je reeb",
+   "Do vět se přidávají francouzská slova z dob Normanů",
+   "Ze slov se vynechávají všechny samohlásky kromě první"
   ],
   "quip_correct": "Přesně tak. Jazyk vymyšlený proto, aby policista u vedlejšího stolu neměl tušení, o čem je řeč.",
   "quip_wrong": "Chytře vymyšleno, ale ne úplně — slova se nečtou pozpátku ani se nemíchají s francouzštinou, cockney je rým, co musíš znát zpaměti.",
@@ -450,9 +450,9 @@
   "question": "Proč má angličtina tolik dvojic synonym jako pig a pork?",
   "answer": "Po normanském dobytí vznikla dvojí vrstva slov — anglosaská a francouzsko-latinská",
   "distractors": [
-   "Kvůli vlivu americké angličtiny",
-   "Kvůli vikingským nájezdům výhradně",
-   "Je to jen náhoda bez historického důvodu"
+   "Kvůli vlivu americké angličtiny, která slova zdvojila",
+   "Kvůli vikingským nájezdům, které přinesly severská slova",
+   "Je to jen náhoda, která nemá žádný historický důvod"
   ],
   "quip_correct": "Pig na farmě, pork u stolu — normanské dobytí roku 1066 dodnes žije v každém jídelním lístku.",
   "quip_wrong": "Odvážná teorie, bohužel nesprávná — Vikingové s tím nemají nic společného, za tou jazykovou vrstvou stojí jiné dobytí.",
@@ -476,7 +476,7 @@
    "Vikingové",
    "Italští rybáři"
   ],
-  "quip_correct": "Klobouk dolů, trefil jsi to přesně. Ryba od Sephardů, hranolky od Belgičanů — britské národní jídlo je šampion importu.",
+  "quip_correct": "Klobouk dolů, přesná trefa. Ryba od Sephardů, hranolky od Belgičanů — britské národní jídlo je šampion importu.",
   "quip_wrong": "Kreativní, ale mimo — francouzský královský dvůr recept nevymyslel, cesta ryby v těstíčku do Británie vedla odjinud.",
   "explanation": "Smažená ryba v těstíčku přišla se sephardskými židovskými přistěhovalci, hranolky přinesla belgická a francouzská tradice.",
   "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
@@ -494,9 +494,9 @@
   "question": "Z čeho se připravuje skotský haggis?",
   "answer": "Z mletých ovčích vnitřností s ovesnými vločkami, vařených v ovčím žaludku",
   "distractors": [
-   "Z hovězího steaku a brambor",
-   "Z lososa a kopru",
-   "Z mléka a ovesné kaše bez masa"
+   "Z hovězího steaku a brambor pečených v troubě",
+   "Z lososa, kopru a smetany zapečených v těstě",
+   "Z mléka a ovesné kaše vařené úplně bez masa"
   ],
   "quip_correct": "Burns tomu jídlu napsal ódu, ostatní pokrmy si musí vystačit s recenzemi na internetu.",
   "quip_wrong": "Trefa vedle mísy — hovězí steak ani losos v tom nehledej, skotská klasika je syrovější.",
@@ -650,7 +650,7 @@
    "Windsor Castle"
   ],
   "quip_correct": "Perfektní! 775 pokojů, a král si stejně jistě pamatuje cestu jen k pár z nich.",
-  "quip_wrong": "Netrefil ses o kus Londýna vedle — král nesídlí ani u poslanců ve Westminsteru, ani mezi bývalými vězni v Toweru, ale ve svém vlastním paláci.",
+  "quip_wrong": "Vedle o kus Londýna — král nesídlí ani u poslanců ve Westminsteru, ani mezi bývalými vězni v Toweru, ale ve svém vlastním paláci.",
   "explanation": "Buckinghamský palác má 775 místností a vlastní velkou zahradu, kde panovník pořádá zahradní slavnosti pro tisíce pozvaných hostů.",
   "about": "Buckinghamském paláci"
  },
@@ -731,7 +731,7 @@
    "Kimono",
    "Pončo"
   ],
-  "quip_correct": "Výborně, uhodl jsi! Sukně, ve které chlap vypadá hrdě, a ne trapně — to umí jen skotský kilt.",
+  "quip_correct": "Výborně, správně! Sukně, ve které chlap vypadá hrdě, a ne trapně — to umí jen skotský kilt.",
   "quip_wrong": "Ne tak úplně — tógu ani kimono bys ve Skotsku nenašel, ptej se po kostkované sukni, co má svoje vlastní jméno.",
   "explanation": "Každý skotský rod neboli klan má na kiltu svůj vlastní vzor a kombinaci barev zvanou tartan. Vzorů je přes 7000 a každý klan si svůj chrání jako rodinný erb.",
   "about": "skotském tradičním kiltu",
@@ -876,7 +876,7 @@
    "Nalepil se na ciferník obřích hodin",
    "Označuje se tak zasedací sál parlamentu"
   ],
-  "quip_correct": "Uznání, trefil jsi to přesně. Věž se jmenuje Elizabeth Tower, Big Ben je třináctitunový zvon uvnitř — turisté fotí špatnou věc.",
+  "quip_correct": "Uznání, přesná trefa. Věž se jmenuje Elizabeth Tower, Big Ben je třináctitunový zvon uvnitř — turisté fotí špatnou věc.",
   "quip_wrong": "Blízko! Big Ben totiž neoznačuje celou věž, jen jejího hlučného obyvatele.",
   "explanation": "Zvon byl pojmenován pravděpodobně po Siru Benjaminu Hallovi, korpulentním stavebním komisaři, který na instalaci dohlížel v roce 1859. Váží přes 13 tun.",
   "about": "londýnském zvonu Big Ben",
@@ -896,7 +896,7 @@
    "Policejní stanice Scotland Yardu",
    "Pekařství pana Bakera"
   ],
-  "quip_correct": "Trefil jsi to s jistotou, která budí respekt. Adresa neexistovala, dům neexistoval — a přesto tam chodí dopisy dodnes, jen adresát stále chybí.",
+  "quip_correct": "Trefa s jistotou, která budí respekt. Adresa neexistovala, dům neexistoval — a přesto tam chodí dopisy dodnes, jen adresát stále chybí.",
   "quip_wrong": "Důmyslná domněnka, ale mylná — detektiv byl smyšlený, adresa taky, než ji Londýn dodatečně vytvořil kvůli fanouškům.",
   "explanation": "Až při pozdějším prodloužení ulice číslo 221 skutečně vzniklo. Banka, která tam pak sídlila, musela najmout sekretářku jen na vyřizování dopisů adresovaných Holmesovi.",
   "about": "adrese Sherlocka Holmese 221B Baker Street",
@@ -1096,7 +1096,7 @@
    "Ústava zakazuje panovníkovi skládat jakékoli zkoušky",
    "Má k dispozici šoféra garantovaného ústavou"
   ],
-  "quip_correct": "Trefil jsi to, a ne náhodou. Panovník je zdrojem veškeré státní autority — bylo by trochu zvláštní, aby si ji sám uděloval.",
+  "quip_correct": "Trefa, a ne náhodou. Panovník je zdrojem veškeré státní autority — bylo by trochu zvláštní, aby si ji sám uděloval.",
   "quip_wrong": "Logicky uvažováno, ale vedle — neřeš dopravní úřady ani ústavu, jde o čistou právní logiku kolem toho, kdo tu autoritu vlastně uděluje.",
   "explanation": "Ze stejného důvodu panovník nevlastní ani britský cestovní pas — pasy se vydávají 've jménu Jeho/Jejího Veličenstva'. Královská auta navíc nemusejí mít poznávací značky.",
   "about": "královských právních výsadách",
@@ -1474,8 +1474,8 @@
    "Palác Holyroodhouse",
    "Hrad Balmoral"
   ],
-  "quip_correct": "Tys to věděl! Král si tam jezdí o víkendu odpočinout — někteří lidé mají chatu, on má tisíc let starý hrad.",
-  "quip_wrong": "Blízko, ale spletl sis adresu - tenhle hrad nestojí přímo v Londýně, jen kousek od něj.",
+  "quip_correct": "Jupí, správně! Král si tam jezdí o víkendu odpočinout — někteří lidé mají chatu, on má tisíc let starý hrad.",
+  "quip_wrong": "Blízko, ale adresa nesedí - tenhle hrad nestojí přímo v Londýně, jen kousek od něj.",
   "explanation": "Windsorský hrad má vlastní kapli svatého Jiří, kde se konají královské svatby i pohřby.",
   "source_url": "https://en.wikipedia.org/wiki/Windsor_Castle",
   "image_prompt": "Fotorealistický snímek majestátního Windsorského hradu s kamennými věžemi a vlajkou na kulaté věži za slunečného dne, 16:9",
@@ -1496,7 +1496,7 @@
    "Skotský haggis",
    "Cornwallský koláč pasty"
   ],
-  "quip_correct": "Jé, tys to věděl! A i když se jmenuje pudink, se sladkým dezertem nemá vůbec nic společného.",
+  "quip_correct": "A je to tam! A i když se jmenuje pudink, se sladkým dezertem nemá vůbec nic společného.",
   "quip_wrong": "Nedá se ti to mít za zlé, ale tohle jídlo se sladkým pudinkem plete jen podle jména - je to slané těsto k masu.",
   "explanation": "Peče se ze stejného těsta jako palačinky, jen se místo na pánvi peče v troubě, kde vykyne do vysokých bochníčků.",
   "source_url": "https://en.wikipedia.org/wiki/Yorkshire_pudding",

@@ -123,7 +123,7 @@
    "Je jediné umělé jezero Itálie",
    "Leží celé v poušti"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — na severu Gardu obklopují Alpy, na jihu tam pěstují olivy a citróny. Jedno jezero, dvě podnebná pásma.",
+  "quip_correct": "Tahle byla v kapse — na severu Gardu obklopují Alpy, na jihu tam pěstují olivy a citróny. Jedno jezero, dvě podnebná pásma.",
   "quip_wrong": "Za trochu se to minulo — nejmenší ani umělé. Garda nemá čas na skromnost, je největší a ostatní italská jezera to vědí.",
   "explanation": "Gardské jezero s rozlohou necelých 370 km² je největším jezerem v Itálii.",
   "source_url": "https://en.wikipedia.org/wiki/Lake_Garda",
@@ -731,7 +731,7 @@
    "Žirafa",
    "Tučňák"
   ],
-  "quip_correct": "Uhodl jsi rovnou krále arény — sehnat lva na hry byl signál bohatství, takové zvíře z Afriky stálo pořadatele mnohem víc než třeba medvěd z Evropy.",
+  "quip_correct": "Správně, rovnou král arény — sehnat lva na hry byl signál bohatství, takové zvíře z Afriky stálo pořadatele mnohem víc než třeba medvěd z Evropy.",
   "quip_wrong": "Blízko, ale ne — sloni a tygři by rádi, ale hlavní hvězdu arény si Afrika nechala pro sebe, a jmenuje se jinak.",
   "explanation": "V Koloseu se konaly venationes — zápasy gladiátorů s divokými zvířaty. Přiváželi tam lvy z Afriky, tygry z Asie i medvědy. Odhaduje se, že za staletí provozu tam zahynulo přes milion zvířat.",
   "about": "římském Koloseu",
@@ -1117,7 +1117,7 @@
    "Baltské moře",
    "Černé moře"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — Jaderské moře je mělčí než Severní a teplejší než Atlantik. Chorvaté z jedné strany, Italové z druhé, oba tvrdí, že jejich pláže jsou lepší.",
+  "quip_correct": "Jistota — Jaderské moře je mělčí než Severní a teplejší než Atlantik. Chorvaté z jedné strany, Italové z druhé, oba tvrdí, že jejich pláže jsou lepší.",
   "quip_wrong": "Za trochu se to minulo — Severní moře ani Baltské. Italská bota sahá nohama do Středomoří, ale která jeho část záleží na straně boty.",
   "explanation": "Jaderské moře je poměrně mělké (průměrná hloubka 173 m) a kvůli uzavřené poloze je citlivé na znečištění. Benátky na jeho severním konci se topí nejen metaforicky.",
   "about": "italském pobřeží",
@@ -1547,7 +1547,7 @@
    "Kamínek",
    "Knoflík"
   ],
-  "quip_correct": "Tys to věděl! Město mince z fontány pravidelně sbírá a peníze putují lidem, co je potřebují.",
+  "quip_correct": "Jupí, správně! Město mince z fontány pravidelně sbírá a peníze putují lidem, co je potřebují.",
   "quip_wrong": "Ještě ne tentokrát — klíč ani kamínek se do fontány neházejí. Lidé tam hází drobné mince a přejí si vrátit se do Říma.",
   "explanation": "Tradici hodit minci přes pravé rameno proslavil až americký film z roku 1954 nazvaný Three Coins in the Fountain.",
   "about": "fontáně di Trevi",
@@ -1585,9 +1585,9 @@
   "question": "Ve kterém motoristickém sportu proslul Ital Valentino Rossi, přezdívaný The Doctor?",
   "answer": "V MotoGP (silniční motocyklové závody)",
   "distractors": [
-   "Ve Formuli 1",
-   "V rallye",
-   "V cyklistice"
+   "Ve Formuli 1 (závody monopostů)",
+   "V rallye (závody po šotolině)",
+   "V motokrosu (závody v terénu)"
   ],
   "quip_correct": "Sedí na sto procent — devět mistrovských titulů a přezdívka Doctor. Rossi diagnostikoval trať rychleji, než soupeři stihli nastartovat.",
   "quip_wrong": "Mimo, ale slušně mířeno — Formule 1, rallye ani cyklistika. Rossiho doména má dvě kola, ne čtyři, a vydělala mu úplně jinou přezdívku.",
@@ -1632,7 +1632,7 @@
    "Stromboli"
   ],
   "quip_correct": "Trefa do vrcholu! Monte Bianco je tak vysoký, že by na něj s obyčejným žebříkem nikdo nedosáhl.",
-  "quip_wrong": "Škoda, tahle hora se vypíná nejvýš ze všech - ať sis vybral kteroukoli sopku, na Mont Blanc to prostě nestačí.",
+  "quip_wrong": "Škoda, tahle hora se vypíná nejvýš ze všech - na Mont Blanc žádná z nabízených sopek prostě nestačí.",
   "explanation": "Mont Blanc měří 4 808 metrů a na jeho úbočí vyjede lanovka, takže se k němu podívají i turisté bez horolezeckého vybavení.",
   "source_url": "https://cs.wikipedia.org/wiki/Mont_Blanc",
   "image_prompt": "Fotorealistický snímek zasněženého vrcholu Mont Blancu tyčícího se nad alpským údolím za jasného dne, 16:9",
@@ -1675,7 +1675,7 @@
    "V Belgii",
    "Ve Francii"
   ],
-  "quip_correct": "Jé, tys to věděl! Nutella je tak oblíbená, že má i svůj vlastní svátek v kalendáři.",
+  "quip_correct": "A je to tam! Nutella je tak oblíbená, že má i svůj vlastní svátek v kalendáři.",
   "quip_wrong": "Vedle mísy - Nutella je stoprocentně italská pomazánka, i když se dnes namazuje po celém světě.",
   "explanation": "Nutella vznikla po druhé světové válce, kdy bylo kakao nedostatkové, a cukrář Pietro Ferrero ho proto nahradil větším množstvím mletých lískových oříšků.",
   "source_url": "https://cs.wikipedia.org/wiki/Nutella",

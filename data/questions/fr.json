@@ -163,9 +163,9 @@
   "question": "Na kom Louis Pasteur v roce 1885 poprvé úspěšně použil vakcínu proti vzteklině?",
   "answer": "Na devítiletém chlapci pokousaném nakaženým psem",
   "distractors": [
-   "Na sobě samém",
-   "Na laboratorní myši",
-   "Na dospělém vojákovi"
+   "Na sobě samém, aby nikoho neohrozil",
+   "Na laboratorní myši z pařížského ústavu",
+   "Na dospělém vojákovi z francouzské armády"
   ],
   "quip_correct": "Nehotová vakcína, živé dítě, žádná kontrolní skupina — fungovala, ale dnešní etickou komisí by neprošla.",
   "quip_wrong": "Šikovně vymyšleno, přesto mimo — ani na sobě, ani na myši; Pasteur vyzkoušel nehotovou vakcínu rovnou na devítiletém chlapci.",
@@ -189,7 +189,7 @@
    "Namaloval slavné pouštní krajiny",
    "Objevil nové souhvězdí"
   ],
-  "quip_correct": "Tenhle jsi měl jistý. Pilot, co si mezi přelety psal pohádku pro děti — letecká obec ho znala jako aviatika, zbytek světa jako autora Malého prince.",
+  "quip_correct": "Tahle byla jistá. Pilot, co si mezi přelety psal pohádku pro děti — letecká obec ho znala jako aviatika, zbytek světa jako autora Malého prince.",
   "quip_wrong": "Dobrý pokus, ale mimo — žádný tryskový motor, žádný obraz pouště; Saint-Exupéry proslul knihou, ne vynálezem.",
   "explanation": "Antoine de Saint-Exupéry napsal Malého prince, jedno z nejpřekládanějších literárních děl na světě.",
   "source_url": "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
@@ -586,7 +586,7 @@
    "Neúspěšným pokusem odraženým Němci"
   ],
   "quip_correct": "Přes milion vojáků, jedno pobřeží, jedna noc — logistika, co předčila všechno, co bylo před ní.",
-  "quip_wrong": "Tentokrát sis vsadil špatně — menší diverzní akce to rozhodně nebyla a Němci ji taky neodrazili; vylodění v Normandii bylo bezprecedentní co do rozsahu.",
+  "quip_wrong": "Tentokrát špatná sázka — menší diverzní akce to rozhodně nebyla a Němci ji taky neodrazili; vylodění v Normandii bylo bezprecedentní co do rozsahu.",
   "explanation": "Spojenecké vylodění v Normandii 6. června 1944 bylo největší vyloděním z moře v dějinách.",
   "source_url": "https://en.wikipedia.org/wiki/Normandy_landings",
   "source_card": "fr-historie-den-d",
@@ -608,7 +608,7 @@
    "Pařížská katedrála Notre-Dame",
    "Socha Svobody"
   ],
-  "quip_correct": "Tys to věděl! Měla po výstavě skončit v šrotu, zachránila ji jen anténa telegrafistů.",
+  "quip_correct": "Jupí, správně! Měla po výstavě skončit v šrotu, zachránila ji jen anténa telegrafistů.",
   "quip_wrong": "Blízko to nebylo, ale zkus to znovu — ten první stojí v Londýně, druhá v New Yorku; ta blikající věž s tisíci světýlky je pařížská Eiffelovka.",
   "explanation": "Eiffelova věž je 330 metrů vysoká a původně byla postavena jen jako dočasná výstavní konstrukce na světovou výstavu v roce 1889.",
   "about": "Eiffelově věži"
@@ -648,7 +648,7 @@
    "Modrá, žlutá a bílá",
    "Černá, bílá a zlatá"
   ],
-  "quip_correct": "Jé, tys to věděl! Každá barva má i svoje slovo - svoboda, rovnost, bratrství, jedno na každý pruh.",
+  "quip_correct": "A je to tam! Každá barva má i svoje slovo - svoboda, rovnost, bratrství, jedno na každý pruh.",
   "quip_wrong": "Ne tak docela — zelená patří jiným vlajkám, ta francouzská má jen modrou, bílou a červenou.",
   "explanation": "Francouzská trikolóra vznikla při revoluci v roce 1789 a stala se vzorem pro vlajky desítek dalších zemí světa.",
   "about": "francouzské vlajce"
@@ -668,7 +668,7 @@
    "Pompidouovo centrum",
    "Versailleský zámek"
   ],
-  "quip_correct": "Bravo, poznal jsi to! Je to Louvre — než se stal muzeem pro všechny, byl to palác jen pro krále, revoluce mu změnila publikum.",
+  "quip_correct": "Bravo, správně! Je to Louvre — než se stal muzeem pro všechny, byl to palác jen pro krále, revoluce mu změnila publikum.",
   "quip_wrong": "Tentokrát ne — Mona Lisa nevisí v Orsay ani ve Versailles, najdeš ji v muzeu Louvre.",
   "explanation": "Louvre byl původně královský palác a teprve po revoluci v roce 1793 se proměnil v muzeum — dnes je největším muzeem světa s přes 35 000 vystavenými díly.",
   "about": "muzeu Louvre"
@@ -688,8 +688,8 @@
    "Kaiserka",
    "Toastový chléb"
   ],
-  "quip_correct": "Trefil jsi to na jedničku! A zapamatuj si tenhle recept — do pravé francouzské bagety smí jen čtyři věci: mouka, voda, sůl a droždí, nic navíc.",
-  "quip_wrong": "Netrefil ses, ale zkus to příště — loupák ani kaiserka nemají ten dlouhý tvar s křupavou kůrkou; hledáš bagetu.",
+  "quip_correct": "Trefa na jedničku! A zapamatuj si tenhle recept — do pravé francouzské bagety smí jen čtyři věci: mouka, voda, sůl a droždí, nic navíc.",
+  "quip_wrong": "Vedle, ale zkus to příště — loupák ani kaiserka nemají ten dlouhý tvar s křupavou kůrkou; hledáš bagetu.",
   "explanation": "Bageta má chráněný statut — v pravé francouzské bagetě smí být jen mouka, voda, sůl a kvasnice. Díky svému tvaru se peče rychle a na francouzských stolech nikdy dlouho nevydrží.",
   "about": "francouzské bagetě",
   "image_prompt": "A painterly watercolor illustration of French baguette in a basket, vintage travel journal style"
@@ -1198,7 +1198,7 @@
    "Lucky Luke",
    "Spirou"
   ],
-  "quip_correct": "Zase jsi to trefil. Malý Gal s kouzelným lektvarem drží komiksový rekord — přeložili ho do víc jazyků než skoro cokoli jiného, co Francie kdy vyvezla.",
+  "quip_correct": "Zase trefa. Malý Gal s kouzelným lektvarem drží komiksový rekord — přeložili ho do víc jazyků než skoro cokoli jiného, co Francie kdy vyvezla.",
   "quip_wrong": "Bohužel, tentokrát ne — Tintin je belgický a Lucky Luke kovbojský; ten neporazitelný Gal s kouzelným lektvarem se jmenuje jinak, Asterix.",
   "explanation": "Sérii Asterix vytvořili Goscinny a Uderzo v roce 1959 a její příběhy se odehrávají v malé galské vesnici, která jako jediná vzdoruje římské nadvládě.",
   "about": "komiksovém hrdinovi Asterixovi",
@@ -1261,7 +1261,7 @@
    "Pohoří Vogézy",
    "Corsické pobřeží"
   ],
-  "quip_correct": "Voda je tam tak čistá a tyrkysová, že by sis v ní skoro viděl odraz obličeje, kdybys spadl z kánoe.",
+  "quip_correct": "Voda je tam tak čistá a tyrkysová, že by v ní šel skoro vidět odraz obličeje — třeba těsně po pádu z kánoe.",
   "quip_wrong": "Ale ne, tam bys akorát narazil na klidnou řeku bez jediné skalní stěny, žádný kaňon by ses nedočkal.",
   "explanation": "Kaňon je na některých místech hluboký přes 700 metrů a je oblíbeným cílem vodáků a horolezců z celé Evropy.",
   "source_url": "https://cs.wikipedia.org/wiki/Gorges_du_Verdon",
@@ -1284,7 +1284,7 @@
    "Pantheon"
   ],
   "quip_correct": "Bílý jak cukr a vidět skoro z celé Paříže - turisté mu prostě neodolají.",
-  "quip_wrong": "To by sis fakt spletl, ten kostel totiž nemá gotické věže ani chrliče, jen kulaté bílé kopule jako sněhové koule.",
+  "quip_wrong": "Tady se to plete — ten kostel nemá gotické věže ani chrliče, jen kulaté bílé kopule jako sněhové koule.",
   "explanation": "Na vrchol kopce k bazilice vede stovky schodů, ale kdo se jich bojí, může vyjet i malou lanovkou.",
   "source_url": "https://cs.wikipedia.org/wiki/Bazilika_Sacr%C3%A9-C%C5%93ur",
   "image_prompt": "Fotorealistický snímek bílé baziliky Sacré-Cœur s kulatými kopulemi na vrcholu kopce Montmartre v Paříži za jasného dne, 16:9",
@@ -1306,7 +1306,7 @@
    "Soufflé"
   ],
   "quip_correct": "Trefa do černého! Šikovní kuchaři je prý umí vyhodit do vzduchu a chytit zase na pánvi, ne na stropě.",
-  "quip_wrong": "Ale kdeže, to sis spletl s něčím, co se rozhodně nedá otočit ve vzduchu jedním pohybem zápěstí.",
+  "quip_wrong": "Ale kdeže, tohle se plete s něčím, co se rozhodně nedá otočit ve vzduchu jedním pohybem zápěstí.",
   "explanation": "V Bretani se tence pečou i z pohankové mouky a takové slané placky se pak jmenují galettes, zatímco sladké crêpes bývají z mouky pšeničné.",
   "source_url": "https://cs.wikipedia.org/wiki/Cr%C3%AApe",
   "image_prompt": "Fotorealistický snímek tenké francouzské palačinky crêpe na talíři posypané cukrem s kouskem másla na dřevěném stole v bretaňské kavárně, 16:9",

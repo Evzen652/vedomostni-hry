@@ -35,7 +35,7 @@
    "Je to jediný útes bez ryb",
    "Je to nejmladší útes na světě"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — polypi o velikosti špendlíkové hlavičky, a přesto je ta jejich práce vidět z vesmíru.",
+  "quip_correct": "Tahle byla v kapse — polypi o velikosti špendlíkové hlavičky, a přesto je ta jejich práce vidět z vesmíru.",
   "quip_wrong": "Blízko rekordu, ale ne tomuhle.",
   "explanation": "Velký bariérový útes je největší korálový útesový systém na světě — přes 2 900 jednotlivých útesů — a jediná živá stavba, kterou je vidět i z vesmíru.",
   "source_url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
@@ -520,9 +520,9 @@
   "question": "Referendum v roce 1967 schválilo přes 90 % australských voličů. Co konkrétně jím domorodí Australané získali?",
   "answer": "Právo být započítáni do celostátního sčítání lidu a aby o nich mohla zákony tvořit i federální vláda",
   "distractors": [
-   "Volební právo ve federálních volbách poprvé",
-   "Vlastnická práva k půdě svých předků",
-   "Australské občanství poprvé"
+   "Volební právo ve federálních volbách, a to vůbec poprvé v historii země",
+   "Vlastnická práva k půdě svých předků na celém území kontinentu",
+   "Australské občanství poprvé a s ním i právo na australský cestovní pas"
   ],
   "quip_correct": "Přes 90 % Australanů řeklo ano jedné kolonce ve sčítání – malý formulář, obrovský posun.",
   "quip_wrong": "Tohle domorodí Australané měli formálně zajištěné už roky předtím.",
@@ -583,9 +583,9 @@
   "question": "Jak lidé v Sydney kvůli tvaru přezdívají obrovský ocelový most přes přístav?",
   "answer": "Věšák na kabáty (the Coathanger)",
   "distractors": [
-   "Obří had",
-   "Želví krunýř",
-   "Housenka"
+   "Obří had (the Giant Snake)",
+   "Želví krunýř (the Turtle Shell)",
+   "Housenka (the Caterpillar)"
   ],
   "quip_correct": "Bez chybičky! Ten oblouk je tak velký, že by na něj klidně pověsilo kabáty celé Sydney najednou.",
   "quip_wrong": "Tenhle tvar si most nezasloužil – přezdívka mluví spíš o obyčejném věšáku ze skříně než o tomhle zvířeti.",
@@ -709,12 +709,12 @@
   "question": "Jak se jmenuje pohoří táhnoucí se podél celého východního pobřeží Austrálie, které odděluje úrodné pobřeží od suchého vnitrozemí?",
   "answer": "Velký předěl (Great Dividing Range)",
   "distractors": [
-   "Snowy Mountains",
-   "Flinders Ranges",
-   "Blue Mountains"
+   "Sněžné hory (Snowy Mountains)",
+   "Flindersovo pohoří (Flinders Ranges)",
+   "Modré hory (Blue Mountains)"
   ],
   "quip_correct": "Ten dlouhý val dělí zelené pobřeží od vyprahlého vnitrozemí, jako by ho někdo natáhl pravítkem.",
-  "quip_wrong": "Blízko, ale netrefil ses – hledáš mnohem delší pohoří, které táhne celým východním pobřežím, ne jen jeho výsek.",
+  "quip_wrong": "Blízko, ale vedle – hledáš mnohem delší pohoří, které táhne celým východním pobřežím, ne jen jeho výsek.",
   "explanation": "Je to čtvrté nejdelší pohoří na světě – táhne se přes 3 500 kilometrů od Queenslandu až po Victorii, přestože jeho nejvyšší vrcholy nejsou o moc vyšší než 2 200 metrů.",
   "about": "pohoří Velký předěl",
   "image_prompt": "Fotorealistický letecký snímek zalesněného horského hřebene Great Dividing Range za ranní mlhy, 16:9"
@@ -793,9 +793,9 @@
   "question": "Který australský pavouk patří mezi nejnebezpečnější na světě, přestože díky protijedu od roku 1981 už nikoho nezabil?",
   "answer": "Sklípkan nálevkovitý sydneyský (funnel-web spider)",
   "distractors": [
-   "Černá vdova",
-   "Tarantule ptakožravá",
-   "Slíďák tulák"
+   "Černá vdova australská (redback spider)",
+   "Tarantule ptakožravá (bird-eating spider)",
+   "Slíďák australský (wolf spider)"
   ],
   "quip_correct": "Dřív postrach Sydney, dnes hlavně vzácný dárce jedu pro laboratoře.",
   "quip_wrong": "Ne tenhle osminohý – hledáš pavouka, co se proslavil přímo v sydneyských předměstích, ne jinde na světě.",
@@ -840,7 +840,7 @@
    "Prší celý den",
    "Je podzim a padá listí"
   ],
-  "quip_correct": "Tys to věděl! Zatímco u nás mrzne, australské děti běhají o Štědrém dni bosky po horkém písku.",
+  "quip_correct": "Jupí, správně! Zatímco u nás mrzne, australské děti běhají o Štědrém dni bosky po horkém písku.",
   "quip_wrong": "Ne tak docela - žádný sníh, žádné rukavice, jen slunce, opalovací krém a spousta zmrzliny.",
   "explanation": "Mnoho australských rodin slaví Štědrý den piknikem nebo grilováním přímo na pláži.",
   "source_url": "https://en.wikipedia.org/wiki/Christmas_in_Australia",

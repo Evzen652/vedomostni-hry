@@ -86,22 +86,20 @@ Přepsané jen zadání, odpověď i obrázek zůstaly: `cz-k-moravske-kolacky`,
 `no-k-nisse-rysova-kase` (místo „Perníčku“ mezi kašemi je „Krupicová kaše“, jinak by vypadl
 z řady) a `cz-k-hus-hacek-carka` (opraven i minulý čas s rodem v obou hláškách).
 
-## 4. Minulý čas s rodem k hráči (422 hlášek)
+## 4. Minulý čas s rodem k hráči — HOTOVO 2026-09-11
 
-„Trefil jsi", „sis spletl", „jsi měl v kapse"… Appka pohlaví hráče nezná (pravidlo
-2026-09-02). **171 z nich je dětský opener „Tys to věděl!" / „Jé, tys to věděl!"** — zápis
-o rotaci openerů z téhož dne ho ponechal, ačkoli sám pravidlo o rodu cituje.
+419 textů (u 411 otázek) → 0. 166 dětských úvodů „Tys to věděl!“ vyměněno za neutrální
+„Jupí, správně!“ / „A je to tam!“ (vypadly i z rotace v `diversify-kids-openers.js`),
+253 hlášek přepsáno ručně. Hlídá `npm run audit:konzistence`, kategorie `rod_k_hraci`.
 
-Oprava vyžaduje přepis věty, ne náhradu slova: „Trefil jsi to" → „Trefa", „sis spletl
-s…" → „plete se s…". Vhodné dávkově přes skript s kontrolou `npm run audit:konzistence`
-(kategorie `rod_k_hraci` musí klesnout k nule).
+## 5. Správná odpověď vyčnívá délkou — HOTOVO 2026-09-11
 
-## 5. Správná odpověď vyčnívá délkou (205 otázek, 51 dětských)
+205 otázek → 0. Prodloužily se distraktory, správná odpověď zůstala. Cestou opraven
+`ph-k-zralok` (butanding je žralok velrybí, ne obrovský) a u Loch Ness odstraněn distraktor,
+který byl pravdivý.
 
-Správná odpověď je víc než dvakrát delší než nejdelší distraktor, takže se dá tipnout bez
-znalosti — třeba „Požadovaly informace o svých zmizelých dětech (desaparecidos)" proti
-„Za snížení daní". **Oprava: prodloužit distraktory** na podobnou délku a konkrétnost,
-ne zkracovat správnou odpověď.
+**K ověření, neopraveno:** `cz-k-vecernicek-hvezdicka` tvrdí, že pohádku uvádí „kreslená
+hvězdička“ — znělku Večerníčku ale uvádí kreslený chlapec v papírové čepici.
 
 ## 6. Pokrytí
 

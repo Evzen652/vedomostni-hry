@@ -35,7 +35,7 @@
    "Necelý rok",
    "Přes 200 let"
   ],
-  "quip_correct": "Trefil jsi to na puntík. 45 let stavby, 515 metrů délky, 16 oblouků — pořád stojí, pořád jsou na něm davy, Karel IV. by byl spokojený.",
+  "quip_correct": "Trefa na puntík. 45 let stavby, 515 metrů délky, 16 oblouků — pořád stojí, pořád jsou na něm davy, Karel IV. by byl spokojený.",
   "quip_wrong": "Blízko, ale ne dost blízko — rok by byl málo, dvě století zbytečně moc; stavba mostu trvala rovných 45 let.",
   "explanation": "Karlův most založil roku 1357 Karel IV.; stavba trvala 45 let a most je 515,76 metru dlouhý se 16 oblouky.",
   "source_url": "https://cs.wikipedia.org/wiki/Karl%C5%AFv_most",
@@ -75,9 +75,9 @@
   "question": "Co je zvláštní na vrcholu Sněžky, nejvyšší hory Česka?",
   "answer": "Skutečný vrchol leží pár metrů za hranicí, na polské straně",
   "distractors": [
-   "Nikdy na ni nenapadl sníh",
-   "Je to jediná sopka v Česku",
-   "Nemá žádné jméno na mapách"
+   "Nikdy na ni nenapadl sníh, přestože se tak jmenuje",
+   "Je to jediná vyhaslá sopka na území Česka",
+   "Nemá na mapách žádné oficiální jméno, jen přezdívku"
   ],
   "quip_correct": "Trefa. Česko má nejvyšší horu, na jejíž úplný vrcholek se musí přejít hranice — pěkná ukázka domácí skromnosti.",
   "quip_wrong": "Odvážný odhad, ale nesprávný — sníh na Sněžce padá běžně a sopku tam nenajdeš; háček je v tom, kde přesně leží vrchol.",
@@ -141,9 +141,9 @@
   "question": "Co založil Karel IV. roku 1348?",
   "answer": "Univerzitu Karlovu, první univerzitu severně od Alp",
   "distractors": [
-   "První českou tiskárnu",
-   "Národní divadlo",
-   "Českou akademii věd"
+   "První českou tiskárnu na Starém Městě",
+   "Národní divadlo na nábřeží Vltavy",
+   "Českou akademii věd a umění"
   ],
   "quip_correct": "Tenhle byl pro tebe hračka. Studenti si na tu instituci stěžují skoro sedm století — je to tradice starší než většina evropských států.",
   "quip_wrong": "Tentokrát tvoje logika utekla jinam — tiskárna ani divadlo počkaly, Karel IV. roku 1348 založil rovnou první univerzitu severně od Alp.",
@@ -211,7 +211,7 @@
    "Nesmí rušit hudbu",
    "Nemá se o čem bavit"
   ],
-  "quip_correct": "Zase jsi to trefil, jako by nic. Král celou dobu mlčí, aby ho nikdo nepoznal po hlase — nejpodivnější pravidlo folklorního průvodu, a přesto dává smysl.",
+  "quip_correct": "Zase trefa, jako by nic. Král celou dobu mlčí, aby ho nikdo nepoznal po hlase — nejpodivnější pravidlo folklorního průvodu, a přesto dává smysl.",
   "quip_wrong": "Tenhle tip nevyšel — žádný slib mlčenlivosti, žádný nedostatek témat; král mlčí jednoduše proto, aby ho nikdo nepoznal po hlase.",
   "explanation": "Jízda králů je moravský folklorní obyčej, při němž chlapec v dívčím kroji jede jako „král“ s růží v ústech, aby ho svým hlasem nikdo nepoznal.",
   "source_url": "https://cs.wikipedia.org/wiki/J%C3%ADzda_kr%C3%A1l%C5%AF",
@@ -366,7 +366,7 @@
    "Švédsko"
   ],
   "quip_correct": "To bylo jasné rovnou od začátku, co? Finále Česko vs. Rusko, jeden gól, zlatá medaile — celá republika zůstala ten večer vzhůru.",
-  "quip_wrong": "Tentokrát sis vsadil na špatného soupeře — Kanada ani USA nestály ve finále proti Česku; soupeřem bylo Rusko, prohrálo o gól.",
+  "quip_wrong": "Tentokrát sázka na špatného soupeře — Kanada ani USA nestály ve finále proti Česku; soupeřem bylo Rusko, prohrálo o gól.",
   "explanation": "Český hokejový tým porazil 22. února 1998 ve finále olympiády v Naganu Rusko 1:0 a získal zlatou medaili.",
   "source_url": "https://cs.wikipedia.org/wiki/Zimn%C3%AD_olympijsk%C3%A9_hry_1998",
   "source_card": "cz-sport-nagano-1998",
@@ -541,7 +541,7 @@
    "Zánik českého království",
    "Nic, jeho smrt zůstala bez odezvy"
   ],
-  "quip_correct": "Vsadil bych se, že sis byl jistý. Chtěli umlčet jednoho kazatele — probudili tím husitské války, které trvaly roky.",
+  "quip_correct": "Tohle vypadalo jako jistota. Chtěli umlčet jednoho kazatele — probudili tím husitské války, které trvaly roky.",
   "quip_wrong": "Tvoje intuice tentokrát zabloudila — žádné usmíření, žádný zánik království; Husova smrt vyvolala přesný opak klidu, válku.",
   "explanation": "Jan Hus byl upálen 6. července 1415 v Kostnici; jeho smrt rozhořčila jeho stoupence natolik, že to vedlo k vypuknutí husitských válek.",
   "source_url": "https://cs.wikipedia.org/wiki/Jan_Hus",
@@ -708,9 +708,9 @@
   "question": "Spousta českých rodin má vlastní chalupu nebo chatu na venkově. Co tam typicky dělají o víkendu?",
   "answer": "Odpočívají v přírodě — zahradničí, opékají špekáčky, chodí na houby",
   "distractors": [
-   "Pracují na polích jako farmáři",
-   "Pořádají velké hlučné diskotéky",
-   "Studují a připravují se na školu"
+   "Pracují od rána na polích jako opravdoví farmáři",
+   "Pořádají velké hlučné diskotéky pro celou vesnici",
+   "Sedí u učebnic a připravují se na školu"
   ],
   "quip_correct": "Paráda, sedí to! Víkend na chalupě znamená žádný budík, jen zahradu, oheň a košík hub.",
   "quip_wrong": "Tahle možnost nesedí — diskotéka do rána by souseda pěkně naštvala, pole se orat nebude, škola počká; na chalupě vládne klid, zahrada a oheň.",
@@ -756,7 +756,7 @@
    "Je tak lepkavý, že se přilepí ke všemu"
   ],
   "quip_correct": "Nos tě nezklamal! Tvarůžek patří mezi nejzápachovější sýry světa — a přitom je skoro beztukový, takže vůně mu nikdo neschválí ani na dietě.",
-  "quip_wrong": "Zkusil jsi to jinak, ale nevyšlo — ostré jako chilli, tvrdé na pilu, lepkavé na všechno tvarůžek není; trápí ho jen vůně v okolí.",
+  "quip_wrong": "Jiný pokus, ale nevyšel — ostré jako chilli, tvrdé na pilu, lepkavé na všechno tvarůžek není; trápí ho jen vůně v okolí.",
   "explanation": "Olomoucké tvarůžky se vyrábějí od 15. století a patří mezi nejstarší chráněná česká označení původu v EU. Jejich charakteristický zápach pochází z bakterie Brevibacterium linens, stejné jako u Limburger nebo Munster sýrů. Přezdívá se jim také 'tvargle'.",
   "about": "olomouckém tvarůžku a jeho nezaměnitelném zápachu",
   "image_prompt": "A painterly watercolor illustration of small round golden Olomouc cheese rounds on a wooden board with dark bread and Czech beer in a traditional Moravian tavern, vintage travel journal style"
@@ -1228,7 +1228,7 @@
    "Klub mu ji nařídil kvůli reklamní smlouvě",
    "Nosil ji celý tým jako společný symbol"
   ],
-  "quip_correct": "Tenhle jsi měl jistý. Jedna srážka na hřišti, a helma se stala jeho poznávacím znakem na roky dopředu — chytal v ní i góly, co by jinou hlavu možná ohrozily.",
+  "quip_correct": "Tahle byla jistá. Jedna srážka na hřišti, a helma se stala jeho poznávacím znakem na roky dopředu — chytal v ní i góly, co by jinou hlavu možná ohrozily.",
   "quip_wrong": "Kreativní myšlenka, ale nesprávná — žádná móda ani reklama za tím nestála; Čech helmu nosil kvůli vážnému zranění hlavy z utkání.",
   "explanation": "Petr Čech utrpěl v roce 2006 v zápase za Chelsea proražení lebky po srážce kolenem se spoluhráčem soupeře. Po operaci a rekonvalescenci nosil ochrannou helmu prakticky po zbytek kariéry.",
   "about": "Petru Čechovi a jeho ochranné helmě",
@@ -1543,7 +1543,7 @@
    "Barevnými mušlemi",
    "Sušenými květinami"
   ],
-  "quip_correct": "Tys to věděl! Řezbář z kostí a lebek vytvořil dokonce lustr – strašidelné a šikovné zároveň.",
+  "quip_correct": "Jupí, správně! Řezbář z kostí a lebek vytvořil dokonce lustr – strašidelné a šikovné zároveň.",
   "quip_wrong": "Mušle by se v Kutné Hoře hledaly těžko, moře je odsud pěkně daleko - tahle kaple sází na mnohem děsivější výzdobu.",
   "explanation": "Kosti pocházejí od desítek tisíc lidí pohřbených tu už od středověku, kdy si sem lidé nechávali dovážet posvěcenou hlínu z Jeruzaléma.",
   "more_fact": "Kutná Hora kdysi bohatla z těžby stříbra a razily se tu mince zvané pražské groše.",
@@ -1586,11 +1586,11 @@
   "question": "Co si nechali majitelé zámku Lednice postavit uprostřed svého anglického parku?",
   "answer": "Vysokou věž zvanou minaret, jaké se stavějí u mešit",
   "distractors": [
-   "Pravou egyptskou pyramidu",
-   "Maják jako u moře",
-   "Větrný mlýn z Holandska"
+   "Pravou egyptskou pyramidu z kamenných kvádrů",
+   "Maják, jaký svítí lodím u moře",
+   "Větrný mlýn přivezený až z Holandska"
   ],
-  "quip_correct": "Jé, tys to věděl! Šlechtici tehdy milovali exotiku, tak si ji nechali postavit rovnou na zahradu.",
+  "quip_correct": "A je to tam! Šlechtici tehdy milovali exotiku, tak si ji nechali postavit rovnou na zahradu.",
   "quip_wrong": "Maják by tu byl k ničemu, moře poblíž Lednice nikde nenajdeš - inspiraci si majitelé přivezli z úplně jiné strany světa.",
   "explanation": "Minaret v Lednici je přes 60 metrů vysoký a nahoru vede skoro 300 schodů na vyhlídku.",
   "more_fact": "Zámek Lednice patří spolu se sousedními Valticemi k největší uměle vytvořené krajině v Evropě, plné rybníků a lesíků.",
@@ -1730,9 +1730,9 @@
   "question": "Co stojí uprostřed hlavního náměstí v Olomouci a je zapsané na seznamu UNESCO?",
   "answer": "Sloup Nejsvětější Trojice, největší svého druhu ve střední Evropě",
   "distractors": [
-   "Fontána ve tvaru draka",
-   "Socha obřího medvěda",
-   "Kamenný maják"
+   "Fontána ve tvaru draka, který chrlí vodu",
+   "Socha obřího medvěda z bílého mramoru",
+   "Kamenný maják, který kdysi hlídal řeku"
   ],
   "quip_correct": "Hop, a je to! Na náměstí dohlíží desítky soch andělů a svatých – větší kus sochařiny ve střední Evropě nenajdeš.",
   "quip_wrong": "Maják by v Olomouci hledal marně kus moře a draka ani medvěda tam nečekej - náměstí zdobí místo toho vysoký sloup plný soch.",
@@ -2186,9 +2186,9 @@
   "question": "Pat a Mat jsou dva nešikovní kamarádi ze slavného českého kresleného seriálu, ve kterém nikdo nemluví. Čím se v dílech nejčastěji zabývají?",
   "answer": "Opravují a vylepšují věci doma - a skoro vždy z toho je pořádná bouračka",
   "distractors": [
-   "Cestují raketou do vesmíru",
-   "Vaří kouzelné lektvary",
-   "Hrají fotbal proti robotům"
+   "Cestují raketou do vesmíru a hledají nové planety",
+   "Vaří kouzelné lektvary a mění se v různá zvířata",
+   "Hrají fotbal proti robotům na velkém stadionu"
   ],
   "quip_correct": "Trefa do černého - vezmou šroubovák, a ať chtějí spravit cokoli, skončí to o to větším maléru.",
   "quip_wrong": "Raketu by ti Pat a Mat asi taky nějak polepili izolepou, ale ve skutečnosti nikdy neopustí svou zahradu a dílnu.",
@@ -2358,7 +2358,7 @@
    "Z papírových květin",
    "Z proutí bez jehličí"
   ],
-  "quip_correct": "Tys to věděl! A čím víc svíček na věnci hoří najednou, tím blíž jsou Vánoce.",
+  "quip_correct": "Jupí, správně! A čím víc svíček na věnci hoří najednou, tím blíž jsou Vánoce.",
   "quip_wrong": "Tohle by do adventu dlouho nevydrželo svěží - hledej něco, co roste na jehličnatém stromě.",
   "explanation": "Svíčky na věnci se zapalují jedna po druhé, každou adventní neděli jedna navíc, a bývají tři fialové a jedna růžová.",
   "more_fact": "Věnce se dají koupit hotové, ale spousta rodin si je pořád plete doma z větviček nastříhaných na zahradě.",
@@ -2382,7 +2382,7 @@
    "Řip",
    "Karlštejn"
   ],
-  "quip_correct": "Jé, tys to věděl! Jeho socha na koni hlídá i pražské Václavské náměstí - kdyby náhodou zaspal.",
+  "quip_correct": "A je to tam! Jeho socha na koni hlídá i pražské Václavské náměstí - kdyby náhodou zaspal.",
   "quip_wrong": "Vedle! Tahle hora je taky slavná, ale spící vojsko čeká jinde - v hoře, která se jmenuje Blaník.",
   "explanation": "Knížeti, který v hoře spí, se říkalo svatý Václav a na jeho počest se zpívá i prastará píseň Svatý Václave, jedna z nejstarších českých písní vůbec.",
   "more_fact": "V hoře prý čeká i kůň svatého Václava, který se probudí jako první a kopnutím kopyta vyvolá pramen vody.",
@@ -2450,9 +2450,9 @@
   "question": "Z čeho se hlavně vyrábí typický český houskový knedlík, který se krájí nití?",
   "answer": "Z těsta s kostičkami staršího pečiva",
   "distractors": [
-   "Z brambor a mouky",
-   "Z rýže a vajec",
-   "Z kukuřičné mouky"
+   "Z brambor a hladké mouky",
+   "Z rýže a rozšlehaných vajec",
+   "Z kukuřičné mouky a mléka"
   ],
   "quip_correct": "Bod pro tebe! Kostičky staré housky nebo rohlíku dají knedlíku ty roztomilé dírky uvnitř.",
   "quip_wrong": "Brambory patří spíš do bramborového knedlíku, rýže do jiných kuchyní a kukuřičná mouka do placek - houskový knedlík má uvnitř kostičky pečiva.",
@@ -2598,7 +2598,7 @@
    "Semtex",
    "Fernet"
   ],
-  "quip_correct": "Tys to věděl! Nakořeněná bylinková chuť ji od klasické coly pozná i zavřenýma očima.",
+  "quip_correct": "Jupí, správně! Nakořeněná bylinková chuť ji od klasické coly pozná i zavřenýma očima.",
   "quip_wrong": "Vinea je hroznová limonáda, Semtex je bohužel výbušnina a ne pití, a Fernet je hořký nápoj pro dospělé - hledaná odpověď byla Kofola.",
   "explanation": "Kofola vznikla v šedesátých letech, protože se do tehdejšího Československa nedala sehnat pravá cola.",
   "more_fact": "Přesný recept na Kofolu je tajný a zná ho jen pár lidí, podobně jako u slavných zahraničních limonád.",
@@ -2622,7 +2622,7 @@
    "V Brně",
    "V Ostravě"
   ],
-  "quip_correct": "Jé, tys to věděl! Tenké kulaté oplatky si výletníci vozí domů jako sladkou vzpomínku na lázně.",
+  "quip_correct": "A je to tam! Tenké kulaté oplatky si výletníci vozí domů jako sladkou vzpomínku na lázně.",
   "quip_wrong": "V Praze byste hledali spíš jiné pochutiny, v Brně veletrhy a v Ostravě doly - oplatky patří ke Karlovým Varům.",
   "explanation": "Oplatky se pečou ve velkých kulatých formách a bývají plněné oříškovou, čokoládovou nebo vanilkovou náplní.",
   "more_fact": "Recept na lázeňské oplatky vznikl už v devatenáctém století a chutnal i tehdejším lázeňským hostům z celé Evropy.",
@@ -2862,7 +2862,7 @@
    "Turnaj tří králů",
    "Vánoční klasik"
   ],
-  "quip_correct": "Tys to věděl! Vlaječky se mávají na obou stranách stadionu a nikdo nezůstává v klidu.",
+  "quip_correct": "Jupí, správně! Vlaječky se mávají na obou stranách stadionu a nikdo nezůstává v klidu.",
   "quip_wrong": "To zní spíš jako název pro nějakou soutěž na motorce nebo o svátcích, ne pro fotbalovou bitvu dvou pražských rivalů.",
   "explanation": "Sparta hraje v červenobílých dresech a Slavia v bílo-červených s kosočtvercem, takže se dá snadno splést, kdo je zrovna kdo.",
   "more_fact": "Oba kluby mají svá vlastní hřiště na opačných koncích Prahy a jejich fanoušci sedávají v oddělených tribunách, aby se nepomíchali.",
@@ -2982,7 +2982,7 @@
    "Vodní pólo",
    "Plavání"
   ],
-  "quip_correct": "Jé, tys to věděl! Ty branky nad vodou vypadají neškodně, dokud do jedné z nich nemusíš vjet pozpátku.",
+  "quip_correct": "A je to tam! Ty branky nad vodou vypadají neškodně, dokud do jedné z nich nemusíš vjet pozpátku.",
   "quip_wrong": "Tam se sice taky pádluje nebo plave, ale bez brankiček visících nad hlavou závodníka - to je jiná disciplína.",
   "explanation": "Čeští vodní slalomáři patří dlouhodobě mezi nejlepší na světě a závodí na uměle vytvořených divokých kanálech i na přírodních řekách.",
   "more_fact": "Za dotek nebo minutí branky dostává závodník trestné vteřiny, které se mu přičtou k výslednému času.",
@@ -3026,9 +3026,9 @@
   "question": "V severních Čechách jsou pískovcové skalní věže, po kterých lidé leze bez kovových skob zaražených do kamene. Jak se tomuto sportu říká?",
   "answer": "Horolezectví (skalní lezení)",
   "distractors": [
-   "Jeskyňaření",
-   "Paragliding",
-   "Bobování"
+   "Jeskyňaření (speleologie)",
+   "Paragliding (létání s padákem)",
+   "Bobování (jízda na bobech)"
   ],
   "quip_correct": "Trefa do černého! Pískovcové věže si zaslouží trochu úcty, ne kovové skoby zaražené do kamene.",
   "quip_wrong": "Tenhle koníček se odehrává buď hluboko pod zemí, nebo naopak vysoko ve vzduchu na padáku - ne po svislé skále nahoru.",
@@ -3150,7 +3150,7 @@
    "Zelenou, bílou a červenou",
    "Modrou, žlutou a černou"
   ],
-  "quip_correct": "Tys to věděl! Červená, bílá a modrá se na jednu vlajku vešly bez tlačenice.",
+  "quip_correct": "Jupí, správně! Červená, bílá a modrá se na jednu vlajku vešly bez tlačenice.",
   "quip_wrong": "Vlajka není duha, aby měla barev na rozdávání - zkus si ji v hlavě vybarvit znovu.",
   "explanation": "Vlajku navrhl student architektury Jaroslav Kursa, který k původní bílo-červené vlajce přidal modrý klín u žerdi.",
   "more_fact": "Stejnou vlajku dřív používalo celé Československo, dnes ji používá samostatně jen Česko a Slovensko má vlajku jinou, i když trochu podobnou.",
@@ -3198,7 +3198,7 @@
    "Věnec z listí",
    "Nic, hlavu má holou"
   ],
-  "quip_correct": "Jé, tys to věděl! Lev na znaku vypadá skoro jako malý panovník.",
+  "quip_correct": "A je to tam! Lev na znaku vypadá skoro jako malý panovník.",
   "quip_wrong": "Klobouk s pírkem by lvovi slušel, jenže na znaku má o něco vznešenější doplněk.",
   "explanation": "Lev na znaku stojí vzpřímeně na zadních nohou a je celý postříbřený, jen jazyk, drápy a korunka jsou zlaté.",
   "more_fact": "Stejný korunovaný lev se dvěma ocasy se objevuje i na úředních razítkách a pečetích.",
@@ -3294,7 +3294,7 @@
    "Antonín Dvořák",
    "Leoš Janáček"
   ],
-  "quip_correct": "Tys to věděl! Škroup si tím vysloužil místo v každé české učebnici.",
+  "quip_correct": "Jupí, správně! Škroup si tím vysloužil místo v každé české učebnici.",
   "quip_wrong": "Smetana i Dvořák psali nádhernou hudbu, ale hymnu na svědomí nemají.",
   "explanation": "Škroup byl v té době kapelníkem pražského divadla a melodii měl podle vyprávění složit narychlo za jediný den.",
   "more_fact": "Škroup později skládal i opery, hymna je ale zdaleka jeho nejznámější dílo.",
@@ -3486,7 +3486,7 @@
    "Lev a orlice dohromady",
    "Žádný, jen barvy"
   ],
-  "quip_correct": "Tys to věděl! Jeden lev, zato se dvěma ocasy - aby se prý nenudil.",
+  "quip_correct": "A je to tam! Jeden lev, zato se dvěma ocasy - aby se prý nenudil.",
   "quip_wrong": "To zní bohatě, ale malý znak si vystačí s jedním jediným lvem na štítě.",
   "explanation": "Kromě malého znaku existuje i velký státní znak, na kterém jsou čtyři pole se lvem i orlicemi dohromady.",
   "more_fact": "Velký znak se používá jen na důležitých budovách a dokumentech, běžně lidé kolem sebe vídají hlavně ten malý s jedním lvem.",
@@ -3553,9 +3553,9 @@
   "question": "Skladatel Antonín Dvořák napsal slavnou symfonii poté, co několik let žil a pracoval v jedné velké zemi za oceánem. Ve které zemi to bylo?",
   "answer": "Ve Spojených státech amerických",
   "distractors": [
-   "Ve Francii",
-   "V Rusku",
-   "V Brazílii"
+   "Ve Francii, v samotné Paříži",
+   "V Rusku, v carském Petrohradu",
+   "V Brazílii, v Riu de Janeiro"
   ],
   "quip_correct": "Amerika Dvořáka inspirovala natolik, že jí věnoval rovnou celou symfonii.",
   "quip_wrong": "Do Francie sice čeští muzikanti jezdívali na koncerty, ale symfonii, o kterou tu jde, napsal Dvořák až za velkou louží, v Americe.",
@@ -3605,7 +3605,7 @@
    "Odletěly pryč na Měsíc",
    "Rozhodly se lidem navždy sloužit"
   ],
-  "quip_correct": "Jé, tys to věděl! Roboti se tehdy na jevišti vzbouřili a od té doby se to ve filmech pořád opakuje.",
+  "quip_correct": "Jupí, správně! Roboti se tehdy na jevišti vzbouřili a od té doby se to ve filmech pořád opakuje.",
   "quip_wrong": "Skoro - v Čapkově hře to s roboty dopadlo dramatičtěji. Zkus něco méně poklidného.",
   "explanation": "Slovo robot pochází z českého slova robota, což znamená těžkou nucenou práci, a s nápadem přišel vlastně Karlův bratr Josef.",
   "more_fact": "Dnes se slovem robot říká strojům v desítkách jazyků po celém světě, aniž by lidé tušili, že mu dal jméno český spisovatel.",
@@ -3745,9 +3745,9 @@
   "question": "Hokejovému brankáři Dominiku Haškovi se pro jeho neobvyklé a nepředvídatelné pohyby v brance přezdívalo Dominátor. Čím byl jeho styl chytání zvláštní?",
   "answer": "Chytal v akrobatických pozicích, třeba vleže na zádech nebo na břiše",
   "distractors": [
-   "Chytal vždy jen jednou rukou",
-   "Nikdy nepoužíval hokejku",
-   "Chytal se zavřenýma očima"
+   "Chytal vždy jen jednou rukou, druhou měl za zády",
+   "Nikdy nepoužíval hokejku, puky odrážel jen betony",
+   "Chytal se zavřenýma očima a spoléhal na sluch"
   ],
   "quip_correct": "Soupeři nikdy nevěděli, odkud se Dominátor na puk vrhne příště.",
   "quip_wrong": "Se zavřenýma očima by asi žádný brankář dlouho nevydržel – Hašek naopak kotouč sledoval velmi pozorně, jen se k němu vrhal netradičně.",
@@ -3960,9 +3960,9 @@
   "question": "Kdo je Ferda Mravenec, hrdina oblíbených českých knížek pro děti?",
   "answer": "Kreslený mravenec v kabátku a s kloboukem, který si vždycky poradí",
   "distractors": [
-   "Křeček, co bydlí v botníku",
-   "Brouk, co staví hrady z písku",
-   "Pavouk, co plete svetry"
+   "Křeček, který bydlí v botníku a sbírá ponožky",
+   "Brouk, který na pláži staví hrady z písku",
+   "Pavouk, který plete svetry pro celou louku"
   ],
   "quip_correct": "Ferda by ti za správnou odpověď dal pracovní pochvalu - a možná i puntík navíc za pořádek.",
   "quip_wrong": "Křeček v botníku zní roztomile, ale kabátek s kloboukem nosí v knížkách jen tenhle mravenčí frajer.",
@@ -4032,9 +4032,9 @@
   "question": "Co se objeví na obrazovce těsně předtím, než v české televizi začne večerní pohádka na dobrou noc?",
   "answer": "Kreslená hvězdička, která pohádku uvádí",
   "distractors": [
-   "Sluníčko s brýlemi",
-   "Měsíček s knihou",
-   "Sova s budíkem"
+   "Sluníčko s brýlemi, které zívá",
+   "Měsíček, který čte z knihy",
+   "Sova s budíkem, která houká"
   ],
   "quip_correct": "A tahle hvězdička uspává české děti klidně už přes padesát let.",
   "quip_wrong": "Sova s budíkem by spíš hlídala, aby ses nezaspal do školy - na pohádku před spaním nemá trpělivost.",
@@ -4104,9 +4104,9 @@
   "question": "Na Vánoce si čeští řezbáři odjakživa vyřezávají z dřeva malé postavičky. Co spolu tyhle postavičky obvykle tvoří?",
   "answer": "Betlém (jesličky s Ježíškem, Marií, Josefem a zvířaty)",
   "distractors": [
-   "Šachovou sadu",
-   "Vojáčky na obranu hradu",
-   "Sadu na stolní hru mlýn"
+   "Šachovou sadu s králem, dámou a pěšci",
+   "Vojáčky, kteří brání hrad před drakem",
+   "Figurky na stolní hru mlýn a dámu"
   ],
   "quip_correct": "Šikovné ruce a kousek dřeva - a najednou máš celý vánoční příběh na jednom stole.",
   "quip_wrong": "Šachy se taky vyřezávají ze dřeva, jenže krále a věže si o Vánocích nikdo pod stromeček nedává.",
@@ -4228,7 +4228,7 @@
    "Ď",
    "Ch"
   ],
-  "quip_correct": "Tys to věděl! Písmeno Ř láme jazyk skoro každému, kdo v Česku nevyrostl.",
+  "quip_correct": "A je to tam! Písmeno Ř láme jazyk skoro každému, kdo v Česku nevyrostl.",
   "quip_wrong": "To se cizinci naučí docela rychle - schválně zkus vyslovit řeku, řízek a Dvořáka za sebou.",
   "explanation": "Hláska Ř spojuje najednou zvuk R a Ž, proto ji jazyk musí dělat dvě věci současně.",
   "more_fact": "Skladatel Antonín Dvořák má ve svém jméně hned dvě věci, které cizím mluvčím dělají potíže - Ř i háček nad ním.",
@@ -4274,7 +4274,7 @@
    "Neobsahuje ani jedno písmeno s háčkem",
    "Je to nejstarší zapsaná česká věta"
   ],
-  "quip_correct": "Jé, tys to věděl! Jedna věta a projedeš celou abecedu i s háčky a čárkami.",
+  "quip_correct": "Jupí, správně! Jedna věta a projedeš celou abecedu i s háčky a čárkami.",
   "quip_wrong": "Fajn nápad, ale s háčky a čárkami je ta věta doslova narvaná - to je právě její smysl.",
   "explanation": "Anglická obdoba stejného principu je věta o líném psu a rychlé lišce - The quick brown fox jumps over the lazy dog.",
   "more_fact": "Slovo žluťoučký si autoři vymysleli hlavně kvůli písmenům Ž a Ť, v běžné řeči se skoro vůbec nepoužívá.",
@@ -6271,9 +6271,9 @@
   "question": "Colours of Ostrava patří mezi největší akce svého druhu v Česku. O co jde?",
   "answer": "Vícedenní hudební festival konaný v areálu bývalé továrny",
   "distractors": [
-   "Mezinárodní filmový festival",
-   "Přehlídka pouličního divadla",
-   "Veletrh moderního umění"
+   "Mezinárodní filmový festival s vlastní soutěží",
+   "Přehlídka pouličního divadla v centru města",
+   "Veletrh moderního umění a designu"
   ],
   "quip_correct": "Bývalá ocelárna teď místo oceli chrlí baskytary a davy fanoušků.",
   "quip_wrong": "Filmy má na starosti jiné město i jiný festival, Ostrava v létě hlavně hraje na kytary, ne promítá.",
@@ -6386,9 +6386,9 @@
   "question": "Za jaký film natočený v Praze získal český režisér Miloš Forman Oscara za nejlepší režii?",
   "answer": "Amadeus, o skladateli Wolfgangu Amadeu Mozartovi",
   "distractors": [
-   "Krtek jde do vesmíru",
-   "Kolja",
-   "Pelíšky"
+   "Kolja, o violoncellistovi a ruském chlapci",
+   "Pelíšky, o dvou rodinách v roce 1968",
+   "Ostře sledované vlaky, podle Hrabala"
   ],
   "quip_correct": "Forman natočil Mozarta v Praze, protože barokní centrum vypadalo jako Vídeň osmnáctého století - a ušetřil tím kupu peněz.",
   "quip_wrong": "Kolja je skvělý film, ale Oscara pro Formana za režii vynesl jiný titul - ten o geniálním a drzém skladateli.",
@@ -7121,9 +7121,9 @@
   "question": "Co znamená v ruštině slovo „чёрствый“ (čerstvyj), které vypadá skoro stejně jako české „čerstvý“?",
   "answer": "Okoralý, starý (třeba o chlebu)",
   "distractors": [
-   "Čerstvý, nový",
-   "Barevný",
-   "Studený"
+   "Čerstvý, nový (stejně jako v češtině)",
+   "Barevný, pestrý (třeba o šatech)",
+   "Studený, chladný (třeba o vodě)"
   ],
   "quip_correct": "Objednat si v Rusku „čerstvyj chleb“ může dopadnout přesně obráceně, než čekáš.",
   "quip_wrong": "Barva ani teplota s tím slovem nemají nic společného a „nový“ je přesný opak – rusky „čerstvyj“ znamená tvrdý a starý.",
@@ -7213,9 +7213,9 @@
   "question": "Kolik různých významů může mít v běžné mluvě české slovíčko „prosím“?",
   "answer": "Hned několik – prosba, poděkování na díky, „co jste říkal?“ i podání věci",
   "distractors": [
-   "Jen jeden – zdvořilá prosba",
-   "Dva – prosba a pozdrav",
-   "Používá se výhradně v kostele"
+   "Jen jeden – zdvořilou prosbu, nic jiného",
+   "Dva – prosbu a pozdrav při setkání na ulici",
+   "Používá se výhradně v kostele při modlitbě"
   ],
   "quip_correct": "Jedno slovo, čtyři práce – cizinci si u „prosím“ lámou hlavu víc než u sedmi pádů.",
   "quip_wrong": "Kostel s tím nemá nic společného, pozdrav to taky není a jeden význam zdaleka nestačí – „prosím“ toho zvládá mnohem víc.",
@@ -7236,9 +7236,9 @@
   "question": "Co znamená v mluvě dnešních teenagerů sloveso „lajknout“?",
   "answer": "Dát někomu na sociální síti „like“, tedy palec nahoru",
   "distractors": [
-   "Namalovat obrázek",
-   "Pozvat kamaráda na oběd",
-   "Zapsat si domácí úkol"
+   "Namalovat obrázek a poslat ho kamarádovi",
+   "Pozvat kamaráda na oběd do školní jídelny",
+   "Zapsat si domácí úkol do sešitu"
   ],
   "quip_correct": "Anglické „like“ si čeština klidně osklonuje, jako by tu bylo odjakživa.",
   "quip_wrong": "S obrázkem, obědem ani úkolem to slovo nemá nic společného – „lajknout“ prostě znamená kliknout na srdíčko pod něčím příspěvkem.",
@@ -7374,9 +7374,9 @@
   "question": "Co je pravda o trdelníku, který dnes vidíš na každém rohu v centru Prahy?",
   "answer": "Není to tradiční české jídlo, do Prahy se ve velkém rozšířil až v posledních desetiletích",
   "distractors": [
-   "Peče se podle receptu z doby Karla IV.",
-   "Je to tradiční moravský svatební koláč",
-   "Vymysleli ho pražští pekaři už v 19. století"
+   "Peče se podle receptu z doby Karla IV., uloženého v archivu",
+   "Je to tradiční moravský svatební koláč, který se peče jen v létě",
+   "Vymysleli ho pražští pekaři v 19. století pro turisty z Vídně"
   ],
   "quip_correct": "Přiznat si, že trdelník je vlastně turista, který se u nás usadil, chce trochu odvahy.",
   "quip_wrong": "Karel IV. měl na talíři leccos, ale trdelník rozhodně ne — ten dorazil o pár století později.",
@@ -7558,9 +7558,9 @@
   "question": "Co jsou karlovarské oplatky?",
   "answer": "Velké kulaté tenké oplatky, tradiční suvenýr z lázeňských Karlových Varů",
   "distractors": [
-   "Malé čokoládové tyčinky z automatů",
-   "Slané krekry podávané k pivu",
-   "Kousky trdelníku plněné zmrzlinou"
+   "Malé čokoládové tyčinky, které se prodávají v automatech",
+   "Slané krekry, které se v hospodách podávají k pivu",
+   "Kousky trdelníku plněné zmrzlinou a šlehačkou"
   ],
   "quip_correct": "Velký kulatý suvenýr z Karlových Varů si domů odváží skoro každý návštěvník lázní.",
   "quip_wrong": "Automat s čokoládovými tyčinkami nemá s lázeňskou tradicí Karlových Varů vůbec nic společného.",
@@ -7604,9 +7604,9 @@
   "question": "Čím se plní švestkové knedlíky, oblíbená letní a podzimní pochoutka?",
   "answer": "Vypeckovanými švestkami zabalenými do bramborového nebo tvarohového těsta",
   "distractors": [
-   "Malinovým džemem a mákem",
-   "Nakrájenými jablky s rozinkami",
-   "Meruňkovým protlakem se skořicí"
+   "Malinovým džemem a mákem, zabalenými do kynutého těsta",
+   "Nakrájenými jablky s rozinkami v listovém těstě",
+   "Meruňkovým protlakem se skořicí v bramborovém těstě"
   ],
   "quip_correct": "Kousek zralé švestky schovaný v těstě a poté ve skořicovém cukru — léto na talíři.",
   "quip_wrong": "Malinový džem by takhle zabalený do knedlíku při vaření vytekl, švestky se v těstě drží líp.",
@@ -8133,12 +8133,12 @@
   "question": "Co se stalo s vesnicí Lidice v červnu 1942?",
   "answer": "Nacisté ji jako odvetu za atentát na Heydricha srovnali se zemí a vyvraždili většinu obyvatel",
   "distractors": [
-   "Stala se novým hlavním městem protektorátu",
-   "Vyhlásila samostatnost na Německu",
-   "Byla přejmenována na počest Heydricha"
+   "Stala se novým hlavním městem protektorátu a sídlem jeho vlády",
+   "Vyhlásila samostatnost na Německu a vydržela několik týdnů",
+   "Byla na počest Heydricha přejmenována a osídlena německými kolonisty"
   ],
   "quip_correct": "Jméno vesnice, které svět po válce dal na paměť desítkám dalších míst.",
-  "quip_wrong": "Tahle vesnice se do dějin nezapsala vzestupem, ale krutou odvetou - přesný opak toho, co jsi zvolil.",
+  "quip_wrong": "Tahle vesnice se do dějin nezapsala vzestupem, ale krutou odvetou - přesný opak tvého tipu.",
   "explanation": "Muži z Lidic byli zastřeleni na místě, ženy odvezeny do koncentračních táborů a téměř sto dětí bylo po válce nalezeno jen v jednotkách.",
   "more_fact": "Obec byla po roce 1945 vybudována znovu kousek od původního místa a dodnes existuje jako živá vesnice s památníkem.",
   "source_url": "https://cs.wikipedia.org/wiki/Lidice",
@@ -8156,9 +8156,9 @@
   "question": "Co se odehrálo v Praze na začátku května 1945?",
   "answer": "Pražské povstání proti německé okupaci, těsně před koncem druhé světové války",
   "distractors": [
-   "Podepsání mnichovské dohody",
-   "Vyhlášení Protektorátu Čechy a Morava",
-   "Sametová revoluce"
+   "Podepsání mnichovské dohody, kterou Československo ztratilo pohraničí",
+   "Vyhlášení Protektorátu Čechy a Morava na Pražském hradě",
+   "Sametová revoluce, která ukončila vládu komunistické strany"
   ],
   "quip_correct": "Poslední dny války si Praha neodseděla v klidu, ale na barikádách.",
   "quip_wrong": "Tenhle moment patří na úplně jiné místo časové osy - tohle bylo naopak samotný závěr války, ne její začátek.",
@@ -8202,9 +8202,9 @@
   "question": "Co byla Charta 77?",
   "answer": "Prohlášení disidentů požadující dodržování lidských práv v komunistickém Československu",
   "distractors": [
-   "Zákon zavádějící cenzuru novin",
-   "Oficiální program komunistické strany",
-   "Mezinárodní olympijská smlouva"
+   "Zákon, který zaváděl přísnou cenzuru novin, rozhlasu a televize",
+   "Oficiální program komunistické strany na další pětiletku",
+   "Mezinárodní olympijská smlouva o bojkotu her v Moskvě"
   ],
   "quip_correct": "Podpis pod tímhle dokumentem stál leckoho práci i klidný spánek.",
   "quip_wrong": "Tohle byl naopak hlas proti moci, ne nástroj v jejích rukou - stát na chartu reagoval nenávistnou kampaní, ne že by ji sám vydal.",
@@ -10341,9 +10341,9 @@
   "question": "České země měly na olympijských hrách vlastní samostatnou výpravu už desítky let před vznikem Československa. Jak to bylo možné, když nebyly samostatným státem?",
   "answer": "Mezinárodní olympijský výbor výjimečně uznal Český olympijský výbor jako samostatný národní výbor, přestože Čechy byly součástí Rakouska-Uherska",
   "distractors": [
-   "Čeští sportovci závodili tajně pod falešnou rakouskou identitou",
-   "Olympijský výbor tehdy uznával každé velké město zvlášť, nejen státy",
-   "Čechy byly krátce formálně nezávislé už koncem 19. století"
+   "Čeští sportovci závodili pod rakouskou vlajkou a českou výpravu si na hrách vymysleli až novináři",
+   "Olympijský výbor tehdy uznával každé velké město zvlášť, takže Praha měla vlastní tým jako Vídeň nebo Berlín",
+   "Čechy byly koncem 19. století krátce formálně nezávislé a olympijskou výpravu si vyjednaly právě tehdy"
   ],
   "quip_correct": "Stát bez vlastní vlajky na politické mapě, ale s vlastní výpravou na olympijském stadionu – byrokratická kuriozita, která by dnešní MOV rozhodně nenechal jen tak projít.",
   "quip_wrong": "Závodit tajně pod cizí identitou by byla docela dramatická historka, ale realita byla mnohem formálnější – šlo o oficiálně uznanou výjimku, ne o žádnou lest.",
@@ -10571,9 +10571,9 @@
   "question": "Hanácké nářečí ze středu Moravy je pro ostatní Čechy pověstné hlavně čím?",
   "answer": "Zaměňováním krátkých a dlouhých samohlásek – 'domu' místo 'domů', ale naopak i prodlužováním jinde",
   "distractors": [
-   "Úplnou absencí háčků ve výslovnosti",
-   "Tím, že vůbec nepoužívá minulý čas",
-   "Silným zastoupením maďarských výpůjček"
+   "Úplnou absencí háčků ve výslovnosti, takže zní skoro jako slovenština",
+   "Tím, že vůbec nepoužívá minulý čas a všechno vypráví v přítomném",
+   "Silným zastoupením maďarských výpůjček z dob společného království"
   ],
   "quip_correct": "Kdo poprvé slyší hanáčtinu, má pocit, že mluvčí délku samohlásek losuje jako v kostkách – a paradoxně to zní k moravské pohodě víc než celá spisovná učebnice.",
   "quip_wrong": "Maďarština do toho nemá co mluvit – hanáčtina si vystačí se svým vlastním rozhazováním délky samohlásek, žádné cizí výpůjčky za to nemohou.",
@@ -11820,7 +11820,7 @@
    "Jen v zahradách, v přírodě nerostou",
    "Výhradně na dně rybníků"
   ],
-  "quip_correct": "Tys to věděl! Šumava a Krkonoše mají pod stromy pravé borůvkové poklady.",
+  "quip_correct": "A je to tam! Šumava a Krkonoše mají pod stromy pravé borůvkové poklady.",
   "quip_wrong": "Mimo - brambory na poli borůvkám nekonkurují, zahrada ani rybník taky nesedí; hledej je v horských jehličnatých lesích.",
   "explanation": "Borůvky rostou na nízkých keřících přímo u země, a proto se jejich sběr tradičně dělá v předklonu nebo vsedě - odtud lidová přezdívka 'modré ruce' po celém odpoledni sbírání.",
   "more_fact": "V některých horských oblastech se dodnes používá speciální hřebenovitý sběrač na borůvky, který sesbírá bobule mnohem rychleji než ruce, i když poškodí víc keříků.",
@@ -11890,7 +11890,7 @@
    "Tvar obrovské krychle ze skla",
    "Tvar pyramidy jako v Egyptě"
   ],
-  "quip_correct": "Jé, tys to věděl! A vsadím se, že by ses tam nahoře nebál ani při bouřce.",
+  "quip_correct": "Jupí, správně! A vsadím se, že by ses tam nahoře nebál ani při bouřce.",
   "quip_wrong": "Žádné cimbuří ani pyramida - Ještěd je hladký kužel, skoro jako by mu na vrchol dosedlo UFO.",
   "explanation": "Stavba spojuje hotel, restauraci a televizní vysílač v jedné budově a za svůj neobvyklý tvar získala mezinárodní architektonické ocenění.",
   "more_fact": "Kvůli poloze na vrcholu osamělé hory do Ještědu často bijí blesky, a tak má stavba speciální bleskosvod, který ji chrání.",
@@ -12058,7 +12058,7 @@
    "Sbírkou starých kosmických raket",
    "Sbírkou závodních motorek"
   ],
-  "quip_correct": "Tys to věděl! Chodby plné pušek, parohů a trofejí - lovecký koníček, který se pořádně vymkl kontrole.",
+  "quip_correct": "A je to tam! Chodby plné pušek, parohů a trofejí - lovecký koníček, který se pořádně vymkl kontrole.",
   "quip_wrong": "Žádní žraloci ani rakety - Konopiště je slavné především sbírkou loveckých zbraní a trofejí.",
   "explanation": "Arcivévoda František Ferdinand miloval růže, a tak dal u zámku vysadit rozlehlou růžovou zahradu.",
   "more_fact": "Na zámku je i sbírka stovek soch a obrazů svatého Jiří, jak bojuje s drakem - sháněl je po celé Evropě.",
@@ -12082,7 +12082,7 @@
    "Kancelář se dala otočit vzhůru nohama",
    "Kancelář plavala na vlastním malém bazénu"
   ],
-  "quip_correct": "Jé, tys to věděl! Šéf nemusel chodit po patrech - přijela za ním rovnou celá místnost.",
+  "quip_correct": "Jupí, správně! Šéf nemusel chodit po patrech - přijela za ním rovnou celá místnost.",
   "quip_wrong": "Žádný led ani bazén - kancelář prostě jezdila po budově jako obří výtah.",
   "explanation": "Mrakodrap patřil obuvnické firmě Baťa a v době svého vzniku byl jednou z nejvyšších budov ve střední Evropě.",
   "more_fact": "Pojízdná kancelář měla vlastní umyvadlo, telefon a klimatizaci, což bylo ve třicátých letech 20. století naprostý unikát.",
@@ -12250,7 +12250,7 @@
    "Veverka obecná",
    "Myš domácí"
   ],
-  "quip_correct": "Tys to věděl! Sysel je jako malý strážce louky - pořád se rozhlíží a hlásí poplach.",
+  "quip_correct": "A je to tam! Sysel je jako malý strážce louky - pořád se rozhlíží a hlásí poplach.",
   "quip_wrong": "Křeček si taky hrabe doupátka, ale žije spíš sám a na zadní nožky se nestaví jako strážná věž. To dělá sysel.",
   "explanation": "Sysli si na zimu ukládají zásoby semen do svých nor a pak celou zimu prospí v hlubokém spánku.",
   "more_fact": "Jedna z nejznámějších českých kolonií syslů žije přímo na travnatých plochách kolem pražského letiště, kde je pro ně tráva posekaná nakrátko jako stvořená.",
@@ -12274,7 +12274,7 @@
    "Slepýš křehký",
    "Ještěrka obecná"
   ],
-  "quip_correct": "Jé, tys to věděl! Naštěstí se zmije sama lidem vyhýbá a uštkne jen když se opravdu vyleká.",
+  "quip_correct": "Jupí, správně! Naštěstí se zmije sama lidem vyhýbá a uštkne jen když se opravdu vyleká.",
   "quip_wrong": "Slepýš vypadá jako had, ale je to vlastně ještěrka bez nohou a jed nemá vůbec žádný. Ten pravý jedovatý strašák je jinde.",
   "explanation": "Zmiji poznáš podle klikatého tmavého pruhu, který jí vede po celém hřbetě až k ocasu.",
   "more_fact": "Zmije nejraději vyhřívá na sluníčku na kamenech nebo mýtinách, protože jako všichni plazi potřebuje teplo zvenčí, aby se vůbec mohla hýbat.",
@@ -12442,7 +12442,7 @@
    "Rybník",
    "Jeskyně"
   ],
-  "quip_correct": "Tys to věděl! Na slati roste rašeliník, který nasákne vodou jako houba, a proto se do ní nohy tak rády boří.",
+  "quip_correct": "A je to tam! Na slati roste rašeliník, který nasákne vodou jako houba, a proto se do ní nohy tak rády boří.",
   "quip_wrong": "Rybník má aspoň otevřenou hladinu, na kterou vyplaveš loďkou. Slať je něco jiného - měkký, mechem zarostlý mokřad, kam by se loďka vůbec nedostala.",
   "explanation": "Rašeliniště vznikají celá tisíce let, protože odumřelé rostliny se ve vodě bez vzduchu nestíhají rozkládat a jen se pomalu vrství jedna na druhou.",
   "more_fact": "V šumavských slatích roste i vzácná masožravá rostlina rosnatka, která si na živiny z chudé mokré půdy přilepšuje chytáním hmyzu na lepkavé listy.",
@@ -12466,7 +12466,7 @@
    "Jezero Lipno",
    "Máchovo jezero"
   ],
-  "quip_correct": "Jé, tys to věděl! Černé jezero je nejen největší, ale i nejhlubší přirozené jezero v celém Česku.",
+  "quip_correct": "Jupí, správně! Černé jezero je nejen největší, ale i nejhlubší přirozené jezero v celém Česku.",
   "quip_wrong": "Čertovo jezero leží kousek od něj a vzniklo stejně tak z ledovce, ale co do velikosti prohrává - největší šumavské jezero má o něco tmavší jméno.",
   "explanation": "Jezero vzniklo tak, že se v ledové době do horského svahu zakously mohutné ledovce a po jejich roztátí zůstala hluboká kotlina zalitá vodou.",
   "more_fact": "Voda v Černém jezeře je hodně kyselá a chudá na živiny, takže v ní žije jen pár otužilých druhů ryb, třeba pstruh.",
@@ -12634,7 +12634,7 @@
    "Přástevnice",
    "Karkulka"
   ],
-  "quip_correct": "Tys to věděl! Zima právě odplouvá po proudu pryč.",
+  "quip_correct": "A je to tam! Zima právě odplouvá po proudu pryč.",
   "quip_wrong": "Baba Jaga bydlí v ruských pohádkách na chaloupce na kuřích nožkách, ne v české řece - hozená figurína se jmenuje Morana.",
   "explanation": "Se zimou do vody prý odplouvají i nemoci a smůla a vesničané se pak vrací domů s jarní zelení a zpěvem, aby přivolali léto.",
   "more_fact": "Někde si lidé po utopení Morany nesou zpátky do vsi ozdobenou zelenou ratolest, která má symbolizovat příchod nového jara.",
@@ -12658,7 +12658,7 @@
    "Že přijel Mikuláš",
    "Že venku začalo sněžit"
   ],
-  "quip_correct": "Jé, tys to věděl! Teď už může vpadnout dovnitř celá rodina najednou.",
+  "quip_correct": "Jupí, správně! Teď už může vpadnout dovnitř celá rodina najednou.",
   "quip_wrong": "Mikuláš chodí v prosinci úplně jindy a k prostírání by stačilo zavolat - rolnička hlásí, že byl u stromečku Ježíšek.",
   "explanation": "Zvoneček prý rozezvoní sám Ježíšek, když s prázdným pytlem odlétá pryč, a děti pak mohou konečně vběhnout dovnitř.",
   "more_fact": "V mnoha rodinách zvoní rolničkou potají někdo z dospělých v kuchyni, aby to znělo, jako by dárky opravdu přinesl Ježíšek.",
@@ -12826,7 +12826,7 @@
    "Studenou limonádu",
    "Zmrzlinu"
   ],
-  "quip_correct": "Tys to věděl! Hrnek horké čokolády zahřeje ruce líp než jakákoli rukavice.",
+  "quip_correct": "A je to tam! Hrnek horké čokolády zahřeje ruce líp než jakákoli rukavice.",
   "quip_wrong": "Ledová tříšť a zmrzlina by ve zmrzlých prstech dlouho nevydržely — na prosincovém náměstí lidi zahřeje horký nápoj.",
   "explanation": "Vánoční trhy bývají doplněné velkým ozdobeným stromem uprostřed náměstí a stánky s dřevěnými hračkami a perníkem.",
   "more_fact": "Pražské vánoční trhy na Staroměstském náměstí patří mezi nejstarší a nejnavštěvovanější v celé Evropě.",
@@ -12850,7 +12850,7 @@
    "Salaš",
    "Jarmark"
   ],
-  "quip_correct": "Jé, tys to věděl! Kolotoč se točí přesně na tvou počest.",
+  "quip_correct": "Jupí, správně! Kolotoč se točí přesně na tvou počest.",
   "quip_wrong": "Dožínky slaví konec žní na poli a salaš patří k pastevcům v horách - kolotoče a perníková srdce patří k pouti.",
   "explanation": "Název posvícení pochází od slova posvětit - slavnost připomíná den, kdy byl vysvěcen místní kostel.",
   "more_fact": "Na pouťových stáncích se tradičně prodává velké perníkové srdce s nápisem, které se nosí zavěšené na stuze kolem krku.",
@@ -13354,7 +13354,7 @@
    "Na slalomu mezi kužely",
    "Na skákání přes překážky na bruslích"
   ],
-  "quip_correct": "Tys to věděl! Na takové dlouhé trati by ti asi i sníh na botách ztuhl dřív, než dojedeš do cíle.",
+  "quip_correct": "A je to tam! Na takové dlouhé trati by ti asi i sníh na botách ztuhl dřív, než dojedeš do cíle.",
   "quip_wrong": "Slalom ani skákání přes překážky rychlobruslení vůbec nezná - Sáblíková vyniká na dlouhé vytrvalostní trati, kde jede kolo za kolem.",
   "explanation": "Sáblíková začínala jako malá holka na kolečkových bruslích a na led přesedlala až později.",
   "more_fact": "Rychlobruslařská dráha je oválná a bruslaři na ní jezdí ve dvou drahách, které si uprostřed závodu vymění.",
@@ -13378,7 +13378,7 @@
    "V boxu",
    "V karate"
   ],
-  "quip_correct": "Jé, tys to věděl! Dvě zlaté medaile ve dvou různých váhách je jako vyhrát dva různé závody najednou.",
+  "quip_correct": "Jupí, správně! Dvě zlaté medaile ve dvou různých váhách je jako vyhrát dva různé závody najednou.",
   "quip_wrong": "Zápas, box i karate jsou taky tvrdé sporty, ale Krpálek soupeře nesráží pěstí ani netlačí k zemi - hází je přes rameno na žíněnku.",
   "explanation": "V judu se závodníci dělí do váhových kategorií, aby proti sobě nastupovali soupeři podobné váhy.",
   "more_fact": "Judo pochází z Japonska a jeho název v překladu znamená jemná cesta.",
@@ -13426,7 +13426,7 @@
    "Na sté",
    "Nikdy se do žebříčku nedostal"
   ],
-  "quip_correct": "Tys to věděl! Být jednička světa znamená, že v tu chvíli je líp než ty nikdo jiný na planetě.",
+  "quip_correct": "A je to tam! Být jednička světa znamená, že v tu chvíli je líp než ty nikdo jiný na planetě.",
   "quip_wrong": "Desátá i stá příčka by byly pěkný výkon, ale Lendl se vyšplhal úplně na vrchol žebříčku.",
   "explanation": "Lendl vyhrál osm grandslamových turnajů ve dvouhře, i když finále Wimbledonu mu nikdy nevyšlo.",
   "more_fact": "Lendl proslul tvrdým tréninkem a přísnou životosprávou, díky které vydržel hrát vrcholový tenis dlouho do třicítky.",
@@ -13498,7 +13498,7 @@
    "Turnaj",
    "Maraton"
   ],
-  "quip_correct": "Tys to věděl! Tisíce lidí cvičících stejný pohyb ve stejnou chvíli musí být pořádná podívaná.",
+  "quip_correct": "Jupí, správně! Tisíce lidí cvičících stejný pohyb ve stejnou chvíli musí být pořádná podívaná.",
   "quip_wrong": "Karneval má masky, turnaj se hraje o výhru a maraton se běhá - sletové cvičení místo toho ukazuje sladěný pohyb celého davu.",
   "explanation": "Sokol založil před více než 150 lety Miroslav Tyrš, který chtěl, aby byli Češi zdraví a fyzicky zdatní.",
   "more_fact": "Sletová cvičení se dodnes konají na pražském stadionu ve Strahově, jednom z největších stadionů světa.",
@@ -13570,7 +13570,7 @@
    "Ve 20. století, po druhé světové válce",
    "Vznikl teprve nedávno"
   ],
-  "quip_correct": "Tys to věděl! Dres, který nosí dnešní hráči, sahá kořeny až do doby pradědečků.",
+  "quip_correct": "A je to tam! Dres, který nosí dnešní hráči, sahá kořeny až do doby pradědečků.",
   "quip_wrong": "Kdyby vznikl ve 21. století nebo až po válce, sotva by stihl mít tolik historie - Sparta hraje fotbal už přes sto třicet let.",
   "explanation": "Sparta patří mezi nejstarší fotbalové kluby ve střední Evropě a hraje v tmavě rudých dresech.",
   "more_fact": "Klubovým znakem Sparty je od začátku písmeno S ve věnci.",
@@ -13642,7 +13642,7 @@
    "Naganský trest",
    "Ledová bouře"
   ],
-  "quip_correct": "Tys to věděl! Takové vítězství si Česko bude pamatovat ještě hodně dlouho.",
+  "quip_correct": "Jupí, správně! Takové vítězství si Česko bude pamatovat ještě hodně dlouho.",
   "quip_wrong": "Znělo by to dramaticky, ale žádná bitva, trest ani bouře - fanoušci tomu vítězství říkají prostě zázrak.",
   "explanation": "Do finálového utkání proti Rusku nastoupili Češi jako tým poskládaný z hráčů NHL i domácí ligy.",
   "more_fact": "Po návratu domů přivítaly hokejisty na Staroměstském náměstí v Praze desetitisíce nadšených fanoušků.",
@@ -13666,7 +13666,7 @@
    "Skákal jako kaskadér z vlaků",
    "Maloval kulisy pro filmové ateliéry"
   ],
-  "quip_correct": "Tys to věděl! Burian rozesmál celý sál, i když v ruce nedržel nic vtipnějšího než klobouk.",
+  "quip_correct": "A je to tam! Burian rozesmál celý sál, i když v ruce nedržel nic vtipnějšího než klobouk.",
   "quip_wrong": "Kdepak - do opery se Burian netrefil a z vlaků neskákal, jeho jedinou kaskadérskou disciplínou byl pád do křesla smíchy.",
   "explanation": "Než se proslavil na filmovém plátně, hrával Burian fotbal jako brankář a věnoval se i atletice.",
   "more_fact": "Jeho filmové hlášky si Češi citují a napodobují dodnes, i po devadesáti letech od natočení.",
@@ -13710,11 +13710,11 @@
   "question": "Malíř Alfons Mucha se proslavil v Paříži barevnými plakáty. Co na nich nejčastěji maloval?",
   "answer": "Krásné ženy obtočené květinami a ozdobnými vzory",
   "distractors": [
-   "Bitevní scény s rytíři",
-   "Přístavy plné lodí",
-   "Portréty psů a koček"
+   "Bitevní scény s rytíři a koňmi v brnění",
+   "Přístavy plné lodí a racků nad vodou",
+   "Portréty psů a koček v zámeckých salonech"
   ],
-  "quip_correct": "Tys to věděl! Muchovy plakáty poznáš na první pohled podle záplavy květin a vlnících se vlasů.",
+  "quip_correct": "Jupí, správně! Muchovy plakáty poznáš na první pohled podle záplavy květin a vlnících se vlasů.",
   "quip_wrong": "Kdepak, žádní rytíři ani přístavy - Muchovým podpisem byly ženy obklopené květinami, ne bitvy.",
   "explanation": "Muchovy plakáty pro herečku Sarah Bernhardtovou visely na pařížských ulicích a lidé je ze zdí kradli, aby si je odnesli domů.",
   "more_fact": "Styl, který Mucha proslavil, se dnes nazývá secese a najdeš ho i na budově pražského Obecního domu.",
@@ -13762,7 +13762,7 @@
    "O jelena",
    "O vlka"
   ],
-  "quip_correct": "Jé, tys to věděl! Ta liška se jmenuje Bystrouška a stala se jednou z nejhranějších postav české opery.",
+  "quip_correct": "A je to tam! Ta liška se jmenuje Bystrouška a stala se jednou z nejhranějších postav české opery.",
   "quip_wrong": "Medvěd bývá silák, jelen krasavec a vlk zlobil v pohádkách - ale ten nejmazanější je vždycky liška, a právě o ní Janáček napsal operu.",
   "explanation": "Janáček žil a tvořil hlavně na Moravě, v Brně, a rád do svých skladeb vkládal melodie moravských lidových písní.",
   "more_fact": "Janáček si zvuky lidské řeči zapisoval jako noty - poslouchal, jak lidé mluví, a snažil se to přenést do hudby.",
@@ -13858,7 +13858,7 @@
    "Protože byl v té době ještě naživu a nesměl soutěžit",
    "Protože cenu odmítl převzít"
   ],
-  "quip_correct": "Tys to věděl! Cimrman je nejslavnější Čech, který nikdy neexistoval.",
+  "quip_correct": "Jupí, správně! Cimrman je nejslavnější Čech, který nikdy neexistoval.",
   "quip_wrong": "Kdepak, nikam se neodstěhoval a nic neodmítl - Cimrman prostě nikdy skutečně nežil, je to vtipná fikce.",
   "explanation": "Postavu Járy Cimrmana vymysleli čeští divadelníci a v jejich divadle mu připisují úplně všechno - od žárovky po objev severního pólu.",
   "more_fact": "V Praze na Žižkově funguje divadlo, které je celé pojmenované po tomto vymyšleném geniálním muži.",
@@ -13954,7 +13954,7 @@
    "Pouze v rozhlase, na jeviště nikdy nevstoupila",
    "Zpívala jen dětem ve školkách"
   ],
-  "quip_correct": "Tys to věděl! Destinnová zpívala tam, kam se jinak dostanou jen ti úplně nejlepší pěvci na světě.",
+  "quip_correct": "A je to tam! Destinnová zpívala tam, kam se jinak dostanou jen ti úplně nejlepší pěvci na světě.",
   "quip_wrong": "Kdepak, žádný venkovský kostel ani jen rozhlas - Destinnová zpívala na světových jevištích, třeba v newyorské Metropolitní opeře.",
   "explanation": "Emma Destinnová měla tak silný a krásný hlas, že ji zvali na turné do zahraničí už jako mladou dívku.",
   "more_fact": "Po sobě zanechala nahrávky na starých gramofonových deskách, které se dochovaly dodnes.",
@@ -14026,7 +14026,7 @@
    "Máj",
    "Prodaná nevěsta"
   ],
-  "quip_correct": "Tys to věděl! Dvacet takových pláten by ti nezmizelo ani na fotbalovém hřišti.",
+  "quip_correct": "Jupí, správně! Dvacet takových pláten by ti nezmizelo ani na fotbalovém hřišti.",
   "quip_wrong": "Prodaná nevěsta je krásná, ale zpívá se, nemaluje - tohle je obří malířský cyklus, ne opera.",
   "explanation": "Mucha na obrazech pracoval skoro dvacet let a věnoval je českému národu, i když je maloval hlavně ve Francii a Americe.",
   "more_fact": "Proslavil se hlavně secesními plakáty s dívkami obtočenými květinami a vlnitými vlasy, kterými se inspirovala celá Evropa.",
@@ -14050,7 +14050,7 @@
    "Alfons Mucha",
    "Jiří Trnka"
   ],
-  "quip_correct": "Tys to věděl! Kdyby uměl malovat i vůni, cítili bychom z jeho obrazů bahno pravěkých bažin.",
+  "quip_correct": "A je to tam! Kdyby uměl malovat i vůni, cítili bychom z jeho obrazů bahno pravěkých bažin.",
   "quip_wrong": "Josef Lada maloval hlavně zasněžené vesnice a čerty, ne tyranosaury - to je úplně jiný pravěk.",
   "explanation": "Burianovy obrazy pravěku vznikaly ve spolupráci s vědci, aby dinosauři a jeskynní lidé vypadali podle nejnovějších objevů co nejvěrněji.",
   "more_fact": "Burian také ilustroval dobrodružné knihy, třeba romány Julese Verna, a za život namaloval přes deset tisíc obrázků.",
@@ -14074,7 +14074,7 @@
    "Zdeněk Miler",
    "Jan Svěrák"
   ],
-  "quip_correct": "Tys to věděl! A žádný počítač mu přitom nepomáhal - všechno vymyslel rukama a trpělivostí.",
+  "quip_correct": "Jupí, správně! A žádný počítač mu přitom nepomáhal - všechno vymyslel rukama a trpělivostí.",
   "quip_wrong": "Zdeněk Miler je táta Krtečka, ne dinosaurů - to je jiná parta pravěkých i mimopravěkých hrdinů.",
   "explanation": "Ve filmu Cesta do pravěku sledují diváci partu kluků, kteří na lodičce dopluli řekou času až mezi živé dinosaury.",
   "more_fact": "Jeho filmové triky dodnes obdivují filmaři po celém světě a v Praze má vlastní muzeum s ukázkami, jak jeho kouzla vznikala.",
@@ -14146,7 +14146,7 @@
    "Sláva umění",
    "Dar národa"
   ],
-  "quip_correct": "Tys to věděl! Dvě slova, a přitom vyprávějí celý příběh, jak si divadlo lidé sami postavili.",
+  "quip_correct": "A je to tam! Dvě slova, a přitom vyprávějí celý příběh, jak si divadlo lidé sami postavili.",
   "quip_wrong": "Sláva umění zní hezky, ale na jevišti nesvítí - ten pravý nápis je kratší a osobnější.",
   "explanation": "Peníze na stavbu posílali lidé z celého Česka, i chudí sedláci nebo školáci dávali, kolik mohli, aby divadlo patřilo opravdu všem.",
   "more_fact": "Divadlo těsně po slavnostním otevření v roce 1881 vyhořelo, ale díky další sbírce ho lidé znovu postavili za necelé dva roky.",
@@ -14170,7 +14170,7 @@
    "Zpěv ptáků z voliéry",
    "Troubení fanfáry"
   ],
-  "quip_correct": "Jé, tys to věděl! Sedmadvacet zvonků najednou - to je skoro celá školní třída zvonečků.",
+  "quip_correct": "Jupí, správně! Sedmadvacet zvonků najednou - to je skoro celá školní třída zvonečků.",
   "quip_wrong": "Jeden velký zvon by na tak jemnou melodii nestačil - Loreta potřebuje na tu písničku hned sedmadvacet.",
   "explanation": "Zvonky visí ve věži už od konce sedmnáctého století a hrají starou mariánskou píseň.",
   "more_fact": "Zvonky se musí pravidelně ručně ladit a starají se o ně zvoníci, kteří tuhle vzácnou dovednost předávají z generace na generaci.",
@@ -14218,7 +14218,7 @@
    "Na Vyšehradě",
    "V Betlémské kapli"
   ],
-  "quip_correct": "Tys to věděl! Kdo tam zvedne hlavu ke stropu, hned zapomene, že přišel jen pro knihu.",
+  "quip_correct": "A je to tam! Kdo tam zvedne hlavu ke stropu, hned zapomene, že přišel jen pro knihu.",
   "quip_wrong": "Na Petříně stojí spíš rozhledna než knihovna - ten malovaný strop hledej pod jinou střechou.",
   "explanation": "Strop sálu pokrývají malby s výjevy o moudrosti a vědění a knihovna dodnes uchovává vzácné staré knihy.",
   "more_fact": "Ke Klementinu patří i stará Astronomická věž, odkud meteorologové už přes dvě stě let sledují počasí nad Prahou.",
@@ -14338,7 +14338,7 @@
    "Božena Němcová",
    "Karel Čapek"
   ],
-  "quip_correct": "Tys to věděl! Bez něj by se všechny ty pověsti dodnes válely jen roztroušené po starých kronikách.",
+  "quip_correct": "Jupí, správně! Bez něj by se všechny ty pověsti dodnes válely jen roztroušené po starých kronikách.",
   "quip_wrong": "Božena Němcová napsala Babičku, ne sbírku dávných pověstí - hledej jiné jméno.",
   "explanation": "Jirásek učil dějepis na gymnáziu a knihu vydal roku 1894; čerpal hlavně z Kosmovy kroniky a z Kroniky tak řečeného Dalimila.",
   "more_fact": "V Hronově, kde se Jirásek narodil, se po něm dodnes jmenuje nejstarší český divadelní festival.",
@@ -14410,7 +14410,7 @@
    "M",
    "T"
   ],
-  "quip_correct": "Jé, tys to věděl! Ř je tak specifické pro češtinu, že cizinci se ho učí vyslovit i celé roky.",
+  "quip_correct": "A je to tam! Ř je tak specifické pro češtinu, že cizinci se ho učí vyslovit i celé roky.",
   "quip_wrong": "B, M i T znají anglicky mluvící děti stejně dobře jako ty - schválně hledej písmeno, co v angličtině vůbec neexistuje.",
   "explanation": "Česká abeceda má díky všem těm háčkům a čárkám celkem 42 písmen - skoro dvakrát tolik, co anglická abeceda se svými 26.",
   "more_fact": "Nejmladším písmenem české abecedy je Ě - dřív se stejná hláska zapisovala jinak a jeho dnešní podoba se ustálila až postupnou reformou pravopisu.",
@@ -14790,9 +14790,9 @@
   "question": "Podle pověsti o takzvané Dívčí válce se v pražském údolí, kterému dodnes říkáme Šárka, odehrál smutný příběh o lsti. Co udělala dívka Šárka bojovníkovi Ctiradovi, aby ho porazila?",
   "answer": "Přivázala se ke stromu, předstírala zajatkyni a Ctirada s jeho muži pak s pomocí ostatních dívek přemohla",
   "distractors": [
-   "Vyzvala ho na spravedlivý souboj mečem",
-   "Ukryla se před ním v jeskyni",
-   "Utekla mu na koni přes celé Čechy"
+   "Vyzvala ho na spravedlivý souboj mečem a porazila ho před zraky obou vojsk",
+   "Ukryla se před ním v jeskyni a čekala, dokud se jeho družina nerozešla domů",
+   "Utekla mu na koni přes celé Čechy a on se za ní vydal, až zabloudil v lese"
   ],
   "quip_correct": "Nejstarší doložená finta v českých dějinách - a fungovala.",
   "quip_wrong": "Souboj by v pověsti dopadl úplně jinak - vyhrála lest, ne meč.",
@@ -14814,9 +14814,9 @@
   "question": "Starý vládce Velké Moravy Svatopluk chtěl před smrtí naučit své syny důležitou věc. Podal jim svazek prutů svázaných dohromady a pak jeden proutek samotný. Co jim tím chtěl ukázat?",
   "answer": "Že svázané pruty nikdo nezlomí, ale osamocený proutek zlomí snadno - proto mají synové držet spolu",
   "distractors": [
-   "Jak se správně staví plot kolem hradu",
-   "Jak se pozná kvalitní dřevo na stavbu lodí",
-   "Kolik synů má být v jedné rodině"
+   "Jak se správně staví pevný plot kolem hradu, aby ho nepřítel nepřelezl",
+   "Jak se pozná kvalitní dřevo na stavbu lodí, které vydrží dlouhou plavbu",
+   "Kolik synů má být v jedné rodině, aby se o dědictví nemuseli dělit"
   ],
   "quip_correct": "Rodinná porada s proutky - jednodušší demonstrace síly jednoty snad ani neexistuje.",
   "quip_wrong": "Plot by z jednoho proutku stejně nepostavili - tahle lekce byla o něčem úplně jiném.",
@@ -15222,9 +15222,9 @@
   "question": "V jaké pozici stojí lev na českém státním znaku?",
   "answer": "Vzpřímeně na zadních nohou, jako by skákal",
   "distractors": [
-   "Leží a spí",
-   "Sedí jako pes",
-   "Běží po čtyřech"
+   "Leží na zemi a klidně spí",
+   "Sedí na zadku jako hodný pes",
+   "Běží po čtyřech tlapách do útoku"
   ],
   "quip_correct": "Hop, a je to! Lev na znaku se nikdy neuvelebí ke spánku, pořád stojí vzpřímeně na zadních.",
   "quip_wrong": "Spát, sedět ani běhat po čtyřech mu erbovní pravidla nedovolují - musí vzpřímeně stát na zadních.",
@@ -15246,11 +15246,11 @@
   "question": "Kdy si čeští lidé často pověsí vlajku i na okno svého bytu nebo domu, i když zrovna není žádný státní svátek?",
   "answer": "Když čeští sportovci hrají důležitý zápas, třeba na hokejovém nebo fotbalovém mistrovství",
   "distractors": [
-   "Když prší",
-   "O narozeninách souseda",
-   "Každé pondělí ráno"
+   "Když celý den prší a lidé chtějí mít doma trochu barvy",
+   "O narozeninách souseda, aby mu udělali radost z okna",
+   "Každé pondělí ráno, aby si připomněli začátek týdne"
   ],
-  "quip_correct": "Tys to věděl! Když jede česká hokejová reprezentace o zlato, vlajky vykouknou z oken po celé zemi.",
+  "quip_correct": "Jupí, správně! Když jede česká hokejová reprezentace o zlato, vlajky vykouknou z oken po celé zemi.",
   "quip_wrong": "Déšť, sousedovy narozeniny ani pondělky vlajky na okna nevytáhnou - to umí jedině důležitý zápas.",
   "explanation": "Lidé si vlajkou zdobí i auta nebo si malují trikolóru na tvář, když fandí na velkých akcích.",
   "more_fact": "Podobně se vlajky objevují v ulicích i o velkých výročích a oslavách, ne jen při sportu.",
@@ -15274,7 +15274,7 @@
    "Tvar jehličí jako u smrku",
    "Tvar dlouhé úzké šipky"
   ],
-  "quip_correct": "Jé, tys to věděl! Lípa nosí na větvích spoustu malých srdíček místo obyčejných listů.",
+  "quip_correct": "A je to tam! Lípa nosí na větvích spoustu malých srdíček místo obyčejných listů.",
   "quip_wrong": "Hvězdy, jehličí ani šipky na lípě nenajdeš - lipový list má tvar srdce.",
   "explanation": "Lípy bývaly odedávna vysazované na návsích a náměstích jako strom, pod kterým se lidé scházeli.",
   "more_fact": "Z lipových květů se dodnes vaří voňavý čaj, který pomáhá při nachlazení.",
@@ -15442,7 +15442,7 @@
    "Rakousko",
    "Maďarsko"
   ],
-  "quip_correct": "Tys to věděl! Slovensko sdílí s Českem stejnou trojici barev, jen je jinak naskládá a přidá znak.",
+  "quip_correct": "Jupí, správně! Slovensko sdílí s Českem stejnou trojici barev, jen je jinak naskládá a přidá znak.",
   "quip_wrong": "Německo, Rakousko ani Maďarsko slovanské barvy nemají - tam patří právě Slovensko.",
   "explanation": "Stejné tři barvy má i vlajka Ruska nebo Chorvatska, protože slovanské barvy se používají v mnoha slovanských zemích.",
   "more_fact": "Slovenská vlajka má navíc uprostřed svůj vlastní bílo-modro-červený znak se třemi vršky hor.",
@@ -15484,9 +15484,9 @@
   "question": "Co leze po Žižkovské televizní věži v Praze, jedné z nejpodivnějších staveb v zemi?",
   "answer": "Obří sochy lezoucích miminek bez tváře",
   "distractors": [
-   "Obří sochy pavouků",
-   "Neonové nápisy",
-   "Kovoví roboti"
+   "Obří sochy pavouků s dlouhýma nohama",
+   "Neonové nápisy blikající do tmy",
+   "Kovoví roboti s anténami na hlavě"
   ],
   "quip_correct": "Umělec David Černý dal věži něco, co se nedá jen tak přehlédnout ani zapomenout.",
   "quip_wrong": "Žádní pavouci ani roboti - po betonovém sloupu šplhají mnohem bizarnější tvorové, a jsou z bronzu.",
@@ -15507,9 +15507,9 @@
   "question": "Proč je brněnská vila Tugendhat zapsaná na seznamu UNESCO?",
   "answer": "Je to průlomová ukázka moderní architektury z konce dvacátých let, daleko před svou dobou",
   "distractors": [
-   "Bydlel v ní český král",
-   "Postavili ji jako kopii francouzského zámku",
-   "Je celá postavená ze skla jako skleník"
+   "Bydlel v ní český král, když přijížděl na Moravu na hony",
+   "Postavili ji jako přesnou kopii francouzského zámku na Loiře",
+   "Je celá postavená ze skla jako skleník pro tropické rostliny"
   ],
   "quip_correct": "Devadesát let stará a pořád vypadá, jako by ji architekt navrhl včera.",
   "quip_wrong": "Žádný král ani skleník - tahle vila proslavila hlavně to, jak moc předběhla svou dobu jednoduchými liniemi a otevřeným prostorem.",
@@ -15599,9 +15599,9 @@
   "question": "Čím byl posedlý arcivévoda František Ferdinand d'Este, poslední majitel zámku Konopiště před první světovou válkou?",
   "answer": "Sbíráním loveckých zbraní a trofejí - na zámku jich nashromáždil tisíce",
   "distractors": [
-   "Sbíráním starých automobilů",
-   "Chovem exotických ptáků",
-   "Sbíráním hodin"
+   "Sbíráním starých automobilů, které si nechával vozit z Vídně",
+   "Chovem exotických ptáků ve voliérách v zámeckém parku",
+   "Sbíráním hodin a hracích strojků ze všech koutů Evropy"
   ],
   "quip_correct": "Tisíce kusů zbraní na jednom zámku - a přesto ho nakonec zastřelili cizí.",
   "quip_wrong": "Žádná auta ani hodiny - Ferdinandovou vášní byly zbraně a lovecké trofeje, kterých na Konopišti nastřádal neuvěřitelné množství.",
@@ -15714,9 +15714,9 @@
   "question": "Co se skrývá pod ulicemi historického centra Znojma?",
   "answer": "Rozsáhlý labyrint chodeb a sklepů vytesaných do skály, dlouhý několik kilometrů",
   "distractors": [
-   "Zbytky pravěkého jezera",
-   "Opuštěné metro z 19. století",
-   "Podzemní jezero s rybami"
+   "Zbytky pravěkého jezera, které tu vyschlo před tisíci lety",
+   "Opuštěné metro z 19. století, které nikdy nezačalo jezdit",
+   "Podzemní jezero s rybami, do kterého se dá sestoupit po schodech"
   ],
   "quip_correct": "Nahoře náměstí, dole kilometry chodeb - Znojmo má prostě dvě patra města.",
   "quip_wrong": "Žádné metro ani jezero - pod znojemským náměstím se táhnou kilometry sklepů a chodeb vytesaných přímo do skály.",
@@ -15737,9 +15737,9 @@
   "question": "Která slavná bitva se roku 1805 odehrála u města Slavkov u Brna, kterému se v cizích jazycích říká Austerlitz?",
   "answer": "Bitva tří císařů, kde Napoleon porazil rakouské a ruské vojsko",
   "distractors": [
-   "Bitva na Bílé hoře",
-   "Bitva u Hradce Králové",
-   "Bitva na Moravském poli"
+   "Bitva na Bílé hoře, kde stavovské vojsko prohrálo s císařským",
+   "Bitva u Hradce Králové, kde Prusko porazilo Rakousko",
+   "Bitva na Moravském poli, kde padl král Přemysl Otakar II."
   ],
   "quip_correct": "Napoleon si prý tuhle bitvu později pamatoval jako svůj vůbec nejlepší den v sedle.",
   "quip_wrong": "Bílá hora i Hradec Králové mají svoje vlastní bitvy - u Slavkova se ale roku 1805 utkal Napoleon rovnou proti dvěma císařům najednou.",
@@ -15783,9 +15783,9 @@
   "question": "Komu je zasvěcený monumentální chrám svaté Barbory v Kutné Hoře?",
   "answer": "Patronce horníků, protože město bohatlo díky těžbě stříbra",
   "distractors": [
-   "Patronce kovářů",
-   "Patronce vinařů",
-   "Patronce rybářů"
+   "Patronce kovářů, protože se tu kovaly zbraně pro krále",
+   "Patronce vinařů, protože okolní svahy pokrývaly vinice",
+   "Patronce rybářů, protože město leželo u velkých rybníků"
   ],
   "quip_correct": "Když město stojí na stříbře, i kostel patří rovnou těm, co ho z důlních šachet vytahali.",
   "quip_wrong": "Žádní kováři, vinaři ani rybáři - kutnohorský chrám patří patronce horníků, protože celé bohatství města pocházelo z podzemních dolů.",
@@ -16197,9 +16197,9 @@
   "question": "Co je slovácký verbuňk, který má Česko zapsaný na seznamu UNESCO?",
   "answer": "Mužský lidový tanec z Moravy, který si každý tanečník do velké míry improvizuje sám",
   "distractors": [
-   "Tradiční moravský přípitek slivovicí",
-   "Lidový kroj nošený jen o svatbách",
-   "Typ moravského dechového orchestru"
+   "Tradiční moravský přípitek slivovicí před svatební hostinou",
+   "Lidový kroj, který se nosí jen o svatbách a na hodech",
+   "Typ moravského dechového orchestru s cimbálem uprostřed"
   ],
   "quip_correct": "Žádná pevná choreografie – každý tanečník si kroky vymýšlí za pochodu, a přesně proto na to UNESCO slyšelo.",
   "quip_wrong": "Přípitek, kroj i dechovka k moravskému folkloru patří, ale verbuňk je konkrétně tanec, ne oblečení ani hudební těleso.",
@@ -16570,7 +16570,7 @@
    "Vývozem piva do zahraničí"
   ],
   "quip_correct": "Statistika, na kterou jsou tu skoro hrdí jako na hokejové zlato.",
-  "quip_wrong": "Hustotu pivovarů na mapě nikdo takhle nepočítá - ale trefil ses aspoň do tématu.",
+  "quip_wrong": "Hustotu pivovarů na mapě nikdo takhle nepočítá - ale téma aspoň sedí.",
   "explanation": "Podle dlouhodobých statistik vypije průměrný obyvatel Česka ročně přes sto litrů piva, výrazně víc než ve kterékoli jiné zemi světa.",
   "more_fact": "Vysoká spotřeba piva v Česku má kořeny už ve středověku, kdy bylo pivo často bezpečnější pít než tehdejší znečištěná voda ze studní.",
   "source_url": "https://cs.wikipedia.org/wiki/Pivo",
@@ -16588,9 +16588,9 @@
   "question": "Co je typickým výsledkem tradiční venkovské „zabijačky“, konané obvykle v zimě?",
   "answer": "Uzeniny a pochoutky jako jitrnice nebo jelítka zpracované z celého poraženého prasete",
   "distractors": [
-   "Kysané zelí uskladněné na celou zimu",
-   "Sušené houby na zimní polévky",
-   "Marmelády uvařené z podzimního ovoce"
+   "Kysané zelí naložené v sudech a uskladněné na celou zimu",
+   "Sušené houby nasbírané v lese a schované na zimní polévky",
+   "Marmelády uvařené z podzimního ovoce, které vydrží do jara"
   ],
   "quip_correct": "Nic se nevyhodí - od rypáku po ocásek jde všechno do hrnce.",
   "quip_wrong": "Zelí se nakládá jinde a jindy, zabijačka je vyloženě o mase.",
@@ -16956,9 +16956,9 @@
   "question": "V jakém zimním sportu je Martina Sáblíková nejúspěšnější českou olympioničkou vůbec, co do počtu zlatých medailí?",
   "answer": "V rychlobruslení na dlouhých tratích",
   "distractors": [
-   "V krasobruslení",
-   "V biatlonu",
-   "V short tracku"
+   "V krasobruslení s klasickými skoky",
+   "V biatlonu na dlouhých tratích",
+   "V short tracku na krátkých tratích"
   ],
   "quip_correct": "Zatímco krasobruslařky sbírají body za elegantní piruety, ona sbírala zlato za to, kdo objede ledovou oválku nejrychleji.",
   "quip_wrong": "Žádné piruety ani střelba na terč — Sáblíková krouží po velké ledové oválce a boří časy na kilometrových tratích.",
@@ -17025,9 +17025,9 @@
   "question": "V jakém sportu vybojovala Kateřina Emmons pro Česko olympijské zlato na hrách v Athénách 2004?",
   "answer": "Ve sportovní střelbě ze vzduchové pušky",
   "distractors": [
-   "V lukostřelbě",
-   "V moderním pětiboji",
-   "V šermu"
+   "V lukostřelbě na olympijskou vzdálenost",
+   "V moderním pětiboji se střelbou z pistole",
+   "V šermu fleretem"
   ],
   "quip_correct": "Klidná ruka a nervy jako ze železa rozhodují u terče stejně jako na vrcholu žebříčku.",
   "quip_wrong": "Žádný luk, meč ani kombinace pěti disciplín — rozhodovala mířená rána ze vzduchovky do malého terče na desítky metrů.",
@@ -17807,9 +17807,9 @@
   "question": "O čem vypráví kniha Staré pověsti české, kterou čeští žáci čtou dodnes?",
   "answer": "O starých mýtech a legendách o počátcích české země, třeba o Libuši nebo praotci Čechovi",
   "distractors": [
-   "O druhé světové válce",
-   "O vynálezu kontaktních čoček",
-   "O sametové revoluci"
+   "O druhé světové válce a osudech vojáků z pražských ulic",
+   "O vynálezu kontaktních čoček a jiných českých vynálezech",
+   "O sametové revoluci a o tom, jak skončil komunismus"
   ],
   "quip_correct": "Trefa - ty pověsti spojují dohromady mýty, co si lidé vyprávěli po generace ještě dřív, než existovaly psané dějiny.",
   "quip_wrong": "Válka, kontaktní čočky ani sametová revoluce jsou z úplně jiné doby - tahle kniha sbírá staré mýty o Libuši, praotci Čechovi a založení Prahy.",
@@ -17853,9 +17853,9 @@
   "question": "Kde se narodil slavný český hudební skladatel Bohuslav Martinů?",
   "answer": "Ve věži kostela v Poličce, kde byl jeho otec kostelníkem a hlídačem",
   "distractors": [
-   "V paláci na Pražském hradě",
-   "V chudinské čtvrti v Brně",
-   "Na lodi plující po Vltavě"
+   "V paláci na Pražském hradě, kde jeho otec sloužil králi",
+   "V chudinské čtvrti v Brně, v domě u řeky Svratky",
+   "Na lodi plující po Vltavě, na které jeho rodina žila"
   ],
   "quip_correct": "Bod za tebe - vyrůstal doslova nad městem, celé dětství strávil vysoko ve věži s výhledem na celé okolí.",
   "quip_wrong": "Hrad, brněnská čtvrť ani loď na Vltavě - Martinů přišel na svět rovnou ve věži kostela, kam se jeho rodina nastěhovala kvůli otcově práci hlídače.",
@@ -18382,9 +18382,9 @@
   "question": "Co nechal Karel IV. v roce 1348 založit kromě pražské univerzity?",
   "answer": "Nové Město pražské, novou rozlehlou čtvrť kolem Starého Města",
   "distractors": [
-   "Přístav v německém Hamburku",
-   "Vlastní mincovnu ve Vídni",
-   "Loděnici na dolním toku Vltavy"
+   "Přístav v německém Hamburku pro obchod se solí",
+   "Vlastní mincovnu ve Vídni na ražbu pražských grošů",
+   "Loděnici na dolním toku Vltavy u Mělníka"
   ],
   "quip_correct": "Rok 1348 byl u Karla IV. na projekty nabitý - univerzita dopoledne, celá čtvrť odpoledne.",
   "quip_wrong": "Přístav v Hamburku Karlovi nepatřil ani náhodou. Rok 1348 znamená hlavně novou pražskou čtvrť pod Vyšehradem a Starým Městem.",
@@ -18474,9 +18474,9 @@
   "question": "Jakou přezdívku dostal král Vladislav Jagellonský za svůj slabý a nerozhodný způsob vlády?",
   "answer": "Král Bene, protože na návrhy šlechty jen přikyvoval „dobře“",
   "distractors": [
-   "Král Stín",
-   "Král Loutka",
-   "Král Mlčenlivý"
+   "Král Stín, protože se na veřejnosti skoro neukazoval",
+   "Král Loutka, protože za něj vládla jeho manželka",
+   "Král Mlčenlivý, protože na sněmech nepromluvil ani slovo"
   ],
   "quip_correct": "Přezdívka, co vznikla z jednoho slova, které říkal pořád dokola - a šlechtě to náramně vyhovovalo.",
   "quip_wrong": "Ty přezdívky zní chytře, ale žádnou z nich historie Vladislavovi nedala - jemu zůstalo jen věčné „dobře“, odtud Král Bene.",
@@ -19095,9 +19095,9 @@
   "question": "Zbrašovské aragonitové jeskyně u Teplic nad Bečvou patří mezi nejteplejší jeskyně ve střední Evropě. Čím je jejich neobvyklé teplo způsobené?",
   "answer": "Prouděním oxidu uhličitého a teplem z hlubinných termálních pramenů, díky nimž jeskyně vznikaly jiným způsobem než běžné vápencové jeskyně",
   "distractors": [
-   "Blízkostí činné sopky pod Beskydami",
-   "Umělým vytápěním kvůli ochraně vzácných netopýrů",
-   "Skleníkovým efektem způsobeným velkým množstvím turistů"
+   "Blízkostí činné sopky pod Beskydami, jejíž magma prohřívá okolní vápencové skály až k povrchu",
+   "Umělým vytápěním, které tu správci zavedli kvůli ochraně vzácných netopýrů zimujících v chodbách",
+   "Skleníkovým efektem, který v uzavřených prostorách vytváří dech a teplo desetitisíců turistů ročně"
   ],
   "quip_correct": "Jeskyně, která si topí sama - bez jediného radiátoru.",
   "quip_wrong": "Žádná sopka pod Beskydami není - teplo sem přivádí něco mnohem tišího, ale stejně účinného: plyny stoupající z hlubin země.",
@@ -19256,9 +19256,9 @@
   "question": "Milešovka je nejvyšší hora Českého středohoří a bývalá sopka. Čím je mezi meteorology v Česku pověstná?",
   "answer": "Extrémně silným a téměř nepřetržitým větrem, kvůli kterému na ní stojí jedna z nejstarších horských meteorologických stanic v Evropě",
   "distractors": [
-   "Nejnižším ročním úhrnem srážek v celé zemi",
-   "Tím, že na jejím vrcholu nikdy nenamrzá",
-   "Úplnou absencí sněhu i v zimních měsících"
+   "Nejnižším ročním úhrnem srážek v celé zemi, kvůli kterému na svazích neroste skoro žádný les",
+   "Tím, že na jejím vrcholu nikdy nenamrzá, protože ji zespodu hřeje dávno vyhaslá sopka",
+   "Úplnou absencí sněhu i v zimních měsících, na kterou meteorologové dodnes nemají vysvětlení"
   ],
   "quip_correct": "Vítr tam fouká tak vytrvale, že meteorologové ani nemuseli stavět větrnou elektrárnu - stačilo postavit barák a čekat.",
   "quip_wrong": "Nejnižší srážky? Milešovka je právě naopak proslulá tím, že se na ní srážky a mlha lepí jako smůla - jen ten vítr je odfoukne jinam.",
@@ -20452,9 +20452,9 @@
   "question": "Tenista Jan Kodeš vyhrál v 70. letech grandslamové turnaje ve Paříži i ve Wimbledonu. Co jeho vítězství ve Wimbledonu 1973 poznamenalo?",
   "answer": "Konal se v roce masového bojkotu většiny elitních hráčů kvůli sporu s tenisovými svazy, takže mu chybělo mnoho favoritů",
   "distractors": [
-   "Musel hrát celý turnaj se zraněnou rukou a přesto ho dohrál",
-   "Vyhrál ho jako první hráč z komunistického bloku vůbec",
-   "Finále se kvůli dešti hrálo přes tři dny v kuse"
+   "Musel hrát celý turnaj se zraněnou rukou a přesto ho dohrál až do vítězného finále",
+   "Byl to vůbec první Wimbledon, na kterém se hrálo s dnešními žlutými míčky",
+   "Finále se kvůli dešti hrálo přes tři dny v kuse a pořadatelé ho málem museli zrušit"
   ],
   "quip_correct": "Vyhrát grandslam bez poloviny konkurence pořád znamená vyhrát grandslam – trofej se neváží podle toho, kdo zrovna stávkoval.",
   "quip_wrong": "Ruka mu nescházela, prvenství z komunistického bloku už dřív měl někdo jiný a do počasí tehdy nikdo nezasahoval – chybět mu prostě mohli favorité, kteří se rozhodli nehrát.",
@@ -20659,9 +20659,9 @@
   "question": "Novinářka a překladatelka Milena Jesenská je dnes často zmiňována především jako adresátka dopisů Franze Kafky. Jak skončil její vlastní život za druhé světové války?",
   "answer": "Zemřela v koncentračním táboře Ravensbrück, kam ji gestapo poslalo za pomoc odboji a Židům",
   "distractors": [
-   "Emigrovala do Anglie a dožila se konce války",
-   "Spáchala sebevraždu krátce po okupaci",
-   "Přežila válku v ilegalitě v Praze"
+   "Emigrovala do Anglie, kde pracovala pro exilovou vládu a dožila se konce války",
+   "Spáchala sebevraždu krátce po okupaci, když ji gestapo začalo vyslýchat",
+   "Přežila válku v ilegalitě v Praze a po roce 1945 vedla vlastní noviny"
   ],
   "quip_correct": "Kafkovy dopisy jí zajistily místo v literárních dějinách – ale statečnost, za kterou skutečně zemřela, si dlouho nikdo nevšímal.",
   "quip_wrong": "Kýženého bezpečí Anglie se nedočkala – místo lodního lístku dostala transport do Ravensbrücku, kam ji poslalo gestapo za odbojovou činnost.",
@@ -21188,9 +21188,9 @@
   "question": "Grafik a designér Ladislav Sutnar emigroval v roce 1939 do USA a tam zásadně ovlivnil moderní obor, který dnes používá prakticky každá firma na světě. Který to byl?",
   "answer": "Informační design a firemní grafiku - pomohl mimo jiné standardizovat telefonní seznamy a piktogramy",
   "distractors": [
-   "Filmové triky a počítačem generovanou animaci",
-   "Módní návrhářství pro newyorské velké módní domy",
-   "Architekturu mrakodrapů v New Yorku"
+   "Filmové triky a počítačem generovanou animaci pro hollywoodská studia",
+   "Módní návrhářství pro velké newyorské módní domy a jejich výlohy",
+   "Architekturu mrakodrapů v New Yorku, zejména jejich ocelových konstrukcí"
   ],
   "quip_correct": "Sutnar odjel do USA na pár měsíců kvůli výstavě - zůstal tam natrvalo a mezitím vynalezl vizuální jazyk, kterým dnes na vás mluví každá tabulka na letišti.",
   "quip_wrong": "Sutnar nešil kabátky pro newyorské salony - kreslil diagramy a piktogramy, které měly být srozumitelné i bez jediného slova.",
@@ -21211,9 +21211,9 @@
   "question": "Architekt Adolf Loos, rodák z Brna, navrhl v Praze Müllerovu vilu, dnes považovanou za jednu z nejvýznamnějších staveb moderní architektury. Jaký princip prostorového uspořádání v ní uplatnil?",
   "answer": "Raumplan - jednotlivé místnosti mají různou výšku podle svého významu a propojují se do sebe jako navzájem provázaný prostorový celek",
   "distractors": [
-   "Striktně symetrické patra se stejnou výškou stropů v celé budově",
-   "Otevřený půdorys bez jakýchkoli vnitřních zdí",
-   "Kruhový půdorys inspirovaný antickými chrámy"
+   "Striktně symetrická patra se stejnou výškou stropů v celé budově, aby působila klidně a řádně",
+   "Otevřený půdorys bez jakýchkoli vnitřních zdí, v němž místnosti oddělují jen závěsy a nábytek",
+   "Kruhový půdorys inspirovaný antickými chrámy, kde se všechny místnosti otevírají do středu"
   ],
   "quip_correct": "Zatímco většina domů má patra jako naskládané krabice, Loosova vila je spíš skládanka, kde každý pokoj sedí přesně tam, kde má.",
   "quip_wrong": "Loosova vila naopak vnitřní zdi potřebuje - jeho princip stojí na propojených místnostech různé výšky, ne na jednom velkém otevřeném prostoru.",
@@ -21809,9 +21809,9 @@
   "question": "Čím se husitské město Tábor, založené roku 1420, v prvních letech odlišovalo od běžných středověkých měst?",
   "answer": "Nejradikálnější husité v něm zkoušeli žít bez soukromého majetku, ve společných kádích na jmění, podle víry v blížící se Boží království",
   "distractors": [
-   "Bylo to čistě vojenské ležení bez trvalých obyvatel",
-   "Jako jediné město v Čechách nemělo žádné hradby",
-   "Spravoval ho přímo papežský legát"
+   "Bylo to čistě vojenské ležení bez trvalých obyvatel, které se každou zimu rozpustilo a na jaře stavělo znovu",
+   "Jako jediné město v Čechách nemělo žádné hradby, protože husité věřili, že je ochrání sám Bůh",
+   "Spravoval ho přímo papežský legát, kterého si husité vyžádali jako nestranného soudce sporů"
   ],
   "quip_correct": "Sdílená ekonomika a čekání na konec světa najednou — Tábor si tenhle experiment troufl zkusit o šest století dřív, než se z toho stalo hipsterské heslo.",
   "quip_wrong": "Vojenské ležení by taková slova jako 'kádě na společné jmění' vůbec nepotřebovalo — Tábor byl skutečné trvalé město s vlastním, dost radikálním pořádkem.",
@@ -21878,9 +21878,9 @@
   "question": "S jakým nezvykle moderním diplomatickým návrhem přišel roku 1464 český král Jiří z Poděbrad?",
   "answer": "Navrhl evropským panovníkům smlouvu o mírové organizaci států, která by spory řešila společným shromážděním, ne válkou",
   "distractors": [
-   "Navrhl sjednotit celou Evropu pod jednu husitskou církev",
-   "Navrhl založit první celoevropskou univerzitu v Praze",
-   "Navrhl zrušit šlechtické tituly napříč celou Evropou"
+   "Navrhl sjednotit celou Evropu pod jednu husitskou církev s arcibiskupem sídlícím v Praze",
+   "Navrhl založit první celoevropskou univerzitu v Praze, kde by studovali synové všech panovníků",
+   "Navrhl zrušit šlechtické tituly napříč celou Evropou a nahradit je volenými úředníky"
   ],
   "quip_correct": "Pět set let před OSN a EU tu jeden český král navrhl, ať si vládci radši povídají u stolu než na bojišti — a nikdo ho tehdy nebral vážně.",
   "quip_wrong": "Žádnou církevní unii Jiří nenavrhoval — jeho projekt byl naopak světský, o mírovém soužití panovníků bez ohledu na vyznání.",
@@ -22366,7 +22366,7 @@
    "Je celá bílá a průhledná",
    "Má modrý klobouk s černými proužky"
   ],
-  "quip_correct": "Jé, tys to věděl! Vypadá jako z pohádky, a přesně proto ji každý v lese pozná a nechá být.",
+  "quip_correct": "A je to tam! Vypadá jako z pohádky, a přesně proto ji každý v lese pozná a nechá být.",
   "quip_wrong": "Hnědá, průhledná nebo modrá s proužky? To si spíš pleteš jinou houbu - muchomůrka červená se pozná na první pohled podle červeného klobouku s bílými tečkami.",
   "explanation": "Přestože je muchomůrka červená jedovatá pro lidi, někteří živočichové v lese, třeba veverky nebo slimáci, ji bez problémů okusují.",
   "more_fact": "Své jméno dostala podle staré tradice trhat ji a máčet v mléce, aby se v místnosti pomocí ní hubily mouchy.",

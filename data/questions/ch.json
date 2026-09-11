@@ -9,12 +9,12 @@
   "question": "Podle čeho se má podle pověsti jmenovat město Bern?",
   "answer": "Podle prvního zvířete, které zakladatel ulovil na lovu (medvěda)",
   "distractors": [
-   "Podle řeky, na které leží",
-   "Podle svatého patrona města",
-   "Podle barvy hradních zdí"
+   "Podle řeky Aary, na které město leží",
+   "Podle svatého patrona, jemuž zasvětili první kostel",
+   "Podle barvy pískovce, ze kterého postavili hradby"
   ],
   "quip_correct": "Bod pro tebe, a fér vydobytý — kdyby toho dne narazil vévoda na lišku, město by se dnes jmenovalo úplně jinak.",
-  "quip_wrong": "Skoro se to povedlo, ale ne úplně — vévoda měl na lovu štěstí úplně jiného druhu, než sis tipnul.",
+  "quip_wrong": "Skoro se to povedlo, ale ne úplně — vévoda měl na lovu štěstí úplně jiného druhu, než napovídá tvůj tip.",
   "explanation": "Podle pověsti dal zakladatel města vévoda Berchtold V. Zähringský Bernu jméno po prvním zvířeti, které při lovu ulovil — byl to medvěd, který se stal i znakem města.",
   "source_url": "https://en.wikipedia.org/wiki/Old_City_of_Bern",
   "source_card": "ch-mista-bern",
@@ -75,9 +75,9 @@
   "question": "Co je na hoře Matterhorn geograficky výjimečné?",
   "answer": "Její vrchol leží přesně na hranici mezi Švýcarskem a Itálií",
   "distractors": [
-   "Je to jediná sopka v Alpách",
-   "Nemá žádný ledovec",
-   "Je nejnižší horou Alp"
+   "Je to jediná vyhaslá sopka v celých Alpách",
+   "Na jejím vrcholu nikdy neleží sníh ani led",
+   "Je nejnižší horou, na kterou vede lanovka"
   ],
   "quip_correct": "No jasně, kdo jiný by to tipnul — vylezeš na vrchol a nohama se přitom dotýkáš dvou zemí najednou.",
   "quip_wrong": "Blízko, ale ne dost blízko — Matterhorn je výjimečný jinak, než sis myslel.",
@@ -102,7 +102,7 @@
    "Vodopád v zimě úplně vysychá"
   ],
   "quip_correct": "Bod pro tebe — zaslouženě, ne náhodou: třikrát víc vody v létě než v zimě, kdo ho viděl v lednu, viděl jen část příběhu.",
-  "quip_wrong": "Odvážná teorie, bohužel nesprávná — Rýnský vodopád má sezónní náladu, kterou sis netrefil.",
+  "quip_wrong": "Odvážná teorie, bohužel nesprávná — Rýnský vodopád má sezónní náladu, kterou tvůj tip minul.",
   "explanation": "Rýnský vodopád u Schaffhausenu je nejmohutnějším vodopádem Evropy; jeho průtok kolísá mezi 250 m³ za sekundu v zimě a až 600 m³ za sekundu v létě.",
   "source_url": "https://en.wikipedia.org/wiki/Rhine_Falls",
   "source_card": "ch-priroda-rheinfall",
@@ -123,7 +123,7 @@
    "Je otevřený jen v zimě",
    "Zvířata se tam uměle dokrmují"
   ],
-  "quip_correct": "Trefil jsi to s klidem, jako by to ani nebyla výzva — návštěvník tu smí jen dívat se a jít dál, příroda si tu vládne sama od roku 1914.",
+  "quip_correct": "Trefa s klidem, jako by to ani nebyla výzva — návštěvník tu smí jen dívat se a jít dál, příroda si tu vládne sama od roku 1914.",
   "quip_wrong": "Skoro sofistikované, ale ne správné — národní park má přísnější pravidla, než ukazuje tenhle tip.",
   "explanation": "Švýcarský národní park patří do nejpřísnější ochranné kategorie IUCN; turisté smí chodit jen po vyznačených cestách a je zakázáno sbírat rostliny nebo kempovat mimo vyhrazená místa.",
   "source_url": "https://en.wikipedia.org/wiki/Swiss_National_Park",
@@ -146,7 +146,7 @@
    "Studium mezinárodního práva"
   ],
   "quip_correct": "Trefa přesně doprostřed — na Solferino přijel jako obchodník vyřídit smlouvu, odjel jako zakladatel organizace.",
-  "quip_wrong": "Tentokrát tvoje logika utekla jinam — Dunant měl na Solferinu úplně jiný důvod, než sis myslel.",
+  "quip_wrong": "Tentokrát logika utekla jinam — Dunant měl na Solferinu úplně jiný důvod.",
   "explanation": "Henri Dunant založil po otřesném zážitku z bitvy u Solferina Mezinárodní výbor Červeného kříže.",
   "source_url": "https://en.wikipedia.org/wiki/Henry_Dunant",
   "source_card": "ch-lide-henri-dunant",
@@ -167,7 +167,7 @@
    "Byl to ve skutečnosti Francouz",
    "Žil až v 19. století"
   ],
-  "quip_correct": "Tenhle jsi měl v kapse — sochy mu stojí po celém Švýcarsku, ale žádný dokument z 14. století ho nepotvrzuje.",
+  "quip_correct": "Tahle byla v kapse — sochy mu stojí po celém Švýcarsku, ale žádný dokument z 14. století ho nepotvrzuje.",
   "quip_wrong": "Těsně vedle, zkus to příště — historikové mají k Vilému Tellovi skeptičtější vztah, než tenhle tip.",
   "explanation": "Vilém Tell je legendární postava švýcarské lidové tradice, přestože podle historiků neexistují žádné soudobé důkazy z počátku 14. století, že by kdy skutečně žil.",
   "source_url": "https://en.wikipedia.org/wiki/William_Tell",
@@ -189,7 +189,7 @@
    "Za 10 milionů dolarů",
    "Nebyla nikdy prodána"
   ],
-  "quip_correct": "Uhodl jsi — nečekaně přesně na první pokus: hubená bronzová postavička za 141 milionů dolarů, vytáhlé sochy se ukázaly zlatým dolem na aukcích.",
+  "quip_correct": "Správně — a nečekaně přesně na první pokus: hubená bronzová postavička za 141 milionů dolarů, vytáhlé sochy se ukázaly zlatým dolem na aukcích.",
   "quip_wrong": "Zajímavá domněnka, realita se ale liší — aukční síň by se tomuhle odhadu jen tiše usmála.",
   "explanation": "Socha Alberta Giacomettiho L'Homme au doigt se v roce 2015 vydražila za 141,3 milionu dolarů, což z ní udělalo jedno z nejdražších uměleckých děl vůbec vydražených.",
   "source_url": "https://en.wikipedia.org/wiki/Alberto_Giacometti",
@@ -212,7 +212,7 @@
    "Jako nádoba na vodu"
   ],
   "quip_correct": "Než existovaly telefony, sousední údolí si přes horský hřeben klidně popovídala alphornem.",
-  "quip_wrong": "Elegantní omyl, ale pořád omyl — alphorn sloužil praktičtějšímu účelu, než sis tipnul.",
+  "quip_wrong": "Elegantní omyl, ale pořád omyl — alphorn sloužil praktičtějšímu účelu.",
   "explanation": "Alphorn se používal i jako komunikační nástroj na dálku, protože jeho nízké tóny se horským vzduchem nesou dál než lidský hlas.",
   "source_url": "https://en.wikipedia.org/wiki/Alphorn",
   "source_card": "ch-kultura-alphorn",
@@ -256,7 +256,7 @@
    "Den díkůvzdání"
   ],
   "quip_correct": "Trefa do černého, i když bys to nepřiznal nahlas — konec zimy se v horách neoznamuje kalendářem, ale rachotem zvonců v rukou dětí.",
-  "quip_wrong": "Tentokrát mimo, i když sebevědomě — Chalandamarz ohlašuje něco jiného, než sis tipnul.",
+  "quip_wrong": "Tentokrát mimo, i když sebevědomě — Chalandamarz ohlašuje něco úplně jiného.",
   "explanation": "Chalandamarz se v rétorománsky mluvících vesnicích Engadinu slaví každoročně 1. března a označuje symbolický konec zimy.",
   "source_url": "https://en.wikipedia.org/wiki/Chalandamarz",
   "source_card": "ch-kultura-chalandamarz",
@@ -366,7 +366,7 @@
    "Narodil se tam zakladatel olympiády"
   ],
   "quip_correct": "Rovnou do černého — žádné vlastní hry, a přesto všechny olympiády na světě řídí lidé odsud.",
-  "quip_wrong": "Tentokrát sis vsadil na špatnou kartu — Lausanne má s olympiádou úplně jiný druh spojení.",
+  "quip_wrong": "Tentokrát sázka na špatnou kartu — Lausanne má s olympiádou úplně jiný druh spojení.",
   "explanation": "Lausanne je od roku 1994 oficiálně označována jako olympijská metropole a sídlí v ní Mezinárodní olympijský výbor i Sportovní arbitrážní soud.",
   "source_url": "https://en.wikipedia.org/wiki/Lausanne",
   "source_card": "ch-sport-lausanne",
@@ -388,7 +388,7 @@
    "Krasobruslení"
   ],
   "quip_correct": "Jedna ledová dráha, hlava napřed na saních – svět z toho udělal olympijskou disciplínu.",
-  "quip_wrong": "Sebevědomá odpověď, nesprávná ale zůstává — Cresta Run zrodila sport odvážnější, než sis tipnul.",
+  "quip_wrong": "Sebevědomá odpověď, nesprávná ale zůstává — Cresta Run zrodila sport odvážnější, než se nabízí.",
   "explanation": "Cresta Run ve Svatém Mořici se považuje za rodiště moderního skeletonu a hostila tuto disciplínu na olympiádách 1928 a 1948.",
   "source_url": "https://en.wikipedia.org/wiki/Cresta_Run",
   "source_card": "ch-sport-cresta-run",
@@ -405,11 +405,11 @@
   "question": "Kolik národních jazyků má Švýcarsko?",
   "answer": "Čtyři — němčinu, francouzštinu, italštinu a rétorománštinu",
   "distractors": [
-   "Dva",
-   "Šest",
-   "Jen jeden, němčinu"
+   "Dva — němčinu a francouzštinu, italština je jen místní",
+   "Šest — včetně angličtiny a švýcarské němčiny",
+   "Jen jeden, a to spisovnou němčinu"
   ],
-  "quip_correct": "Uhodl jsi to jako profík — jedna bankovka, čtyři jazyky, a nikdo se kvůli tomu netváří překvapeně.",
+  "quip_correct": "Odpověď jako od profíka — jedna bankovka, čtyři jazyky, a nikdo se kvůli tomu netváří překvapeně.",
   "quip_wrong": "Nezlob se, ale mimo — Švýcarsko má na jazyky bohatší apetit, než ukazuje tenhle tip.",
   "explanation": "Švýcarsko má čtyři národní jazyky — němčinu, francouzštinu, italštinu a rétorománštinu.",
   "source_url": "https://en.wikipedia.org/wiki/Languages_of_Switzerland",
@@ -454,7 +454,7 @@
    "Po historické bitvě"
   ],
   "quip_correct": "Zásah — čistý, bez omluv: jedna smažená bramborová placka dala jméno hranici, kterou na mapě nikde nenajdete nakreslenou.",
-  "quip_wrong": "Pěkný pokus, přesnost ale chyběla — Röstigraben má kulinářský původ, který sis netrefil.",
+  "quip_wrong": "Pěkný pokus, přesnost ale chyběla — Röstigraben má kulinářský původ, který tvůj tip minul.",
   "explanation": "Röstigraben je pojem pro pomyslnou kulturní a politickou hranici mezi německy a francouzsky mluvícím Švýcarskem, pojmenovanou po bramborovém pokrmu rösti.",
   "source_url": "https://en.wikipedia.org/wiki/R%C3%B6stigraben",
   "source_card": "ch-jazyk-rostigraben",
@@ -518,8 +518,8 @@
    "Do těsta na palačinky",
    "Do rybí kůže"
   ],
-  "quip_correct": "Trefil jsi hřebík na hlavičku, aniž bys zpomalil — horská kuchyně si poradila bez těsta na taštičky, nahradil ho mangoldový list ze zahrady.",
-  "quip_wrong": "Tentokrát ne — i sofistikovaný tip může minout: capuns se balí do něčeho zelenějšího, než sis tipnul.",
+  "quip_correct": "Hřebík na hlavičku, a bez zpomalení — horská kuchyně si poradila bez těsta na taštičky, nahradil ho mangoldový list ze zahrady.",
+  "quip_wrong": "Tentokrát ne — i sofistikovaný tip může minout: capuns se balí do něčeho zelenějšího.",
   "explanation": "Capuns, tradiční pokrm kantonu Graubünden, se dělá z knedlíkového těsta se sušeným masem zabaleného do mangoldového listu.",
   "source_url": "https://en.wikipedia.org/wiki/Capuns",
   "source_card": "ch-jidlo-capuns",
@@ -585,7 +585,7 @@
    "Bylo úplně neobydlené"
   ],
   "quip_correct": "Trefa — přiznej, žes to tipl s jistotou: staletí podřízené jiným kantonům, rovnocenným kantonem se stalo teprve díky Napoleonovi.",
-  "quip_wrong": "Logika hezká, výsledek bohužel jinde — Ticino čekalo na rovnoprávnost déle, než sis tipnul.",
+  "quip_wrong": "Logika hezká, výsledek bohužel jinde — Ticino čekalo na rovnoprávnost déle, než napovídá tvůj tip.",
   "explanation": "Ticino se plnohodnotným kantonem švýcarské konfederace stalo teprve v roce 1803, předtím bylo po staletí jen podřízeným územím ovládaným jinými kantony.",
   "source_url": "https://blog.nationalmuseum.ch/en/2024/02/why-is-ticino-part-of-switzerland/",
   "source_card": "ch-historie-ticino",
@@ -643,9 +643,9 @@
   "question": "Co se namáčí do roztaveného sýra při švýcarském fondue?",
   "answer": "Kousky chleba na dlouhé vidličce",
   "distractors": [
-   "Chipsy",
-   "Lžíce polévky",
-   "Dřevěná špejle"
+   "Chipsy rovnou z pytlíku",
+   "Lžíce plné polévky",
+   "Dřevěné špejle bez ničeho"
   ],
   "quip_correct": "Trefa! Vidlička dlouhá, chleba na jejím konci, sýr vroucí v hrnci — přesně jak jsi řekl.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — lžíce ani chipsy se do fondue nenamáčí, jde tam kousek chleba na dlouhé vidličce.",
@@ -667,7 +667,7 @@
    "GPS tracker",
    "Dřevěnou cedulku"
   ],
-  "quip_correct": "Jé, tys to věděl! Cinkání uslyšíš dřív, než krávu na louce vůbec zahlédneš.",
+  "quip_correct": "A je to tam! Cinkání uslyšíš dřív, než krávu na louce vůbec zahlédneš.",
   "quip_wrong": "Ne tak docela — žádná mašle ani GPS, pastýř slyší stádo v horách díky obyčejnému zvonci.",
   "explanation": "Švýcarské krávy nosí velké zvonce, které pastýřům pomáhají sledovat stádo v horách. V kantonu Appenzell pořádají slavnost Alpabfahrt, při níž krávy se zvonci slavnostně sestupují na podzim z horských pastvin dolů do údolí.",
   "about": "švýcarských kravských zvoncích"
@@ -708,7 +708,7 @@
    "Miniaturní vařič na čaj a skládací miska",
    "Svítilna, zrcátko a zápalky v nepromokavém pouzdře"
   ],
-  "quip_correct": "Super, uhodl jsi! Sáhni do kapsy a najdeš pilník, nůžky, šroubovák i otvírák — jedno červené pouzdro z ní udělá malou dílnu.",
+  "quip_correct": "Super, správně! Sáhni do kapsy a najdeš pilník, nůžky, šroubovák i otvírák — jedno červené pouzdro z ní udělá malou dílnu.",
   "quip_wrong": "Skoro trefa, ale ne úplně — pistole ani vařič na čaj se do švýcarského nože nevešly, tam jsou spíš nástroje na opravy.",
   "explanation": "Originální švýcarský armádní nůž vyrobila firma Victorinox v roce 1891 jako zakázku pro švýcarskou armádu. Název 'Swiss Army Knife' pochází od amerických vojáků po druhé světové válce, kteří ho nedokázali vyslovit německy. Dnes existuje přes 100 modelů s různými kombinacemi nástrojů.",
   "about": "švýcarském armádním noži a jeho historii",
@@ -750,7 +750,7 @@
    "Táhnou je koně zapřažení do speciálního saní",
    "Šplhají po visutém laně jako na obří houpačce"
   ],
-  "quip_correct": "Uhodl jsi přesně — na vrchol Jungfrau tě vyveze vlak rovnou tunelem v hoře, žádné vrtulníky ani saně se nekonají.",
+  "quip_correct": "Přesně tak — na vrchol Jungfrau tě vyveze vlak rovnou tunelem v hoře, žádné vrtulníky ani saně se nekonají.",
   "quip_wrong": "Tentokrát to nevyšlo — koně ani visuté lano tam cestující nevytáhnou, nahoru jezdí vlak tunelem přímo v hoře.",
   "explanation": "Jungfraubahn je ozubnicová železnice vedoucí tunelem uvnitř Eigeru a Möncku k stanici Jungfraujoch ve výšce 3 454 m n.m. — nejvýše položené vlakové nádraží v Evropě. Tunel byl ražen v letech 1896–1912 a stavba trvala 16 let. Na vrcholu je observatoř a poštovní úřad.",
   "about": "vlakové trase na Jungfraujoch ve švýcarských Alpách",
@@ -856,7 +856,7 @@
    "Výroba probíhá ve Švýcarsku, ale firmy jsou formálně zahraniční — Švýcarsko tedy technicky nic nevyváží"
   ],
   "quip_correct": "Mír kážeme, zbraně vyrábíme – neutralita a puškařská tradice žijí ve Švýcarsku vedle sebe klidně dál.",
-  "quip_wrong": "Trefa minula, s grácií — švýcarská neutralita má výjimky pružnější, než sis tipnul.",
+  "quip_wrong": "Trefa minula, s grácií — švýcarská neutralita má výjimky pružnější, než se zdá.",
   "explanation": "Švýcarský zbrojní průmysl (firmy jako Rheinmetall Air Defence, RUAG) je legální a regulovaný. Kontroverze propukají opakovaně — například při vývozu munice do Saúdské Arábie během jemenské války. Švýcarský zákon zakazuje vývoz do zemí v aktivním konfliktu, ale definice 'konfliktu' bývá předmětem politických sporů.",
   "about": "švýcarském zbrojním průmyslu a paradoxu neutrality",
   "image_prompt": "A painterly watercolor illustration of a Swiss precision engineering factory interior with gun components on a workbench, through the window a peaceful alpine lake, vintage travel journal style"
@@ -919,7 +919,7 @@
    "Modlitební výzvy z reproduktorů — hlukové znečištění v okolí mešit"
   ],
   "quip_correct": "Přímá demokracie rozhodla – minarety ne, a umí tak dát po nose i menšinám stejně snadno jako cokoli jiného.",
-  "quip_wrong": "Chyba se stala, i tak elegantně — referendum z roku 2009 zakázalo něco přesnějšího, než sis tipnul.",
+  "quip_wrong": "Chyba se stala, i tak elegantně — referendum z roku 2009 zakázalo něco přesnějšího.",
   "explanation": "Iniciativu za zákaz minaretů podpořilo 57,5 % hlasujících. V době hlasování stály ve Švýcarsku čtyři minarety — zákaz nezrušil stávající, jen zakázal stavět nové. Rozsudek Evropského soudu pro lidská práva v roce 2021 shledal zákaz slučitelným s Úmluvou o ochraně lidských práv — rozhodnutí, které samo o sobě vyvolalo velkou debatu.",
   "about": "švýcarském referendu o zákazu minaretů",
   "image_prompt": "A painterly watercolor illustration of a Swiss alpine village skyline with church steeples and a silhouette of a minaret tower visible among traditional rooftops, vintage travel journal style"
@@ -961,7 +961,7 @@
    "Obchody musí euro přijímat ze zákona — na hranicích s EU je to povinné"
   ],
   "quip_correct": "Bod pro tebe, a nikdo se u toho nemusí červenat — Švýcarsko není v EU, ale euro bere, frank je silnější a obchodníci pragmatičtí.",
-  "quip_wrong": "Nebylo to ono, přestože znělo přesvědčivě — frank drží euro na uzdě úplně jinak, než sis tipnul.",
+  "quip_wrong": "Nebylo to ono, přestože to znělo přesvědčivě — frank drží euro na uzdě úplně jinak.",
   "explanation": "Švýcarský frank je jednou z nejsilnějších světových měn a považuje se za bezpečný přístav v dobách krize. V roce 2015 švýcarská centrální banka nečekaně zrušila pevný kurz 1,20 CHF/EUR — frank okamžitě posílil o 30 % a způsobil chaos na devizových trzích světa.",
   "about": "švýcarském franku a jeho vztahu k euru",
   "image_prompt": "A painterly watercolor illustration of a Swiss market stall with prices shown in both Swiss francs and euros, with the Matterhorn visible in the background, vintage travel journal style"
@@ -1002,8 +1002,8 @@
    "Pracoval jako hodináře učeň — a přesnost hodinových mechanismů ho inspirovala k myšlence času",
    "Byl gymnazijní učitel matematiky, kterého fyzika zajímala jen jako koníček"
   ],
-  "quip_correct": "Trefil jsi to na první dobrou, a slušelo ti to — patentový úředník přepisoval fyziku ve volném čase, správné zaměstnání není podmínkou správného nápadu.",
-  "quip_wrong": "Mimo, ale s jistou dávkou stylu — Einstein v Bernu neseděl v profesorském křesle, jak sis tipnul.",
+  "quip_correct": "Na první dobrou, a s grácií — patentový úředník přepisoval fyziku ve volném čase, správné zaměstnání není podmínkou správného nápadu.",
+  "quip_wrong": "Mimo, ale s jistou dávkou stylu — v profesorském křesle Einstein v Bernu neseděl.",
   "explanation": "Einstein pracoval na bernském patentovém úřadě v letech 1902–1909. V roce 1905 — svém 'zázračném roce' — publikoval čtyři revoluční vědecké práce, včetně speciální teorie relativity a vysvětlení fotoelektrického jevu (za který dostal Nobelovu cenu). Byt, kde žil, je dnes muzeem.",
   "about": "Albertu Einsteinovi a jeho létech v Bernu",
   "image_prompt": "A painterly watercolor illustration of a modest early 20th century office with a young Einstein at a patent desk surrounded by technical drawings, with equations sketched on a notepad beside him, vintage travel journal style"
@@ -1066,7 +1066,7 @@
    "Nebyl nikdy formálně ukončen zákonem — jen se přestal používat po protestech v 70. letech"
   ],
   "quip_correct": "Máš to — přesnost, která se jen tak nevidí: Červený kříž v Ženevě, nucené sterilizace ve venkovských kantonech, Švýcarsko umělo oboje najednou.",
-  "quip_wrong": "Škoda, tip to byl chytrý, jen nesprávný — program skončil mnohem později, než by sis přál.",
+  "quip_wrong": "Škoda, tip to byl chytrý, jen nesprávný — program skončil mnohem později, než by se chtělo věřit.",
   "explanation": "Program eugeniky byl ve Švýcarsku legální od 20. let 20. století. Zvláště postiženi byli Jenischové — švýcarské kočovné etnikum — jejichž děti byly systematicky odebírány rodinám a dávány do ústavů v rámci projektu 'Kinder der Landstrasse' (1926–1973). Švýcarsko se formálně omluvilo v roce 1998 a oběti dostaly odškodnění.",
   "about": "švýcarském eugenickém programu a nucených sterilizacích",
   "image_prompt": "A painterly watercolor illustration of a somber 1950s Swiss institutional building with small windows, a humanitarian Red Cross visible on a distant building through foggy Alps, vintage travel journal style"
@@ -1108,7 +1108,7 @@
    "Jan Pavel II. je zavedl v 80. letech jako symbol evropské jednoty po vzoru napoleonské gardy"
   ],
   "quip_correct": "Kdo by řekl, že to trefíš — a přece ano, zcela přesně: Švýcaři byli neutrální v politice, ale vynikající v boji, a v 15. století platil nejlépe papež.",
-  "quip_wrong": "Odhad to byl smělý, správný bohužel ne — papežská garda má žoldnéřský původ praktičtější, než sis tipnul.",
+  "quip_wrong": "Odhad to byl smělý, správný bohužel ne — papežská garda má žoldnéřský původ praktičtější, než napovídá tvůj tip.",
   "explanation": "Švýcarské kantony ve středověku exportovaly žoldnéře jako hlavní exportní artikl — bylo to doslova národní hospodářství. Papežská garda vznikla v roce 1506 a přežila dodnes jako ceremoniální jednotka. Švýcarský stát mezitím žoldnéřskou službu zakázal (1874) — výjimku tvoří právě Vatikán. Nové gardisty musí přijmout sám papež.",
   "about": "švýcarské papežské gardě a žoldnéřské historii Švýcarska",
   "image_prompt": "A painterly watercolor illustration of Swiss Guards in their colorful Renaissance uniforms with halberds standing at the Vatican gate, St. Peter's dome visible behind them, vintage travel journal style"
@@ -1187,9 +1187,9 @@
   "question": "Co se děje se sýrem při tradičním švýcarském jídle raclette?",
   "answer": "Kus sýra se nechá roztát u tepla a roztavená vrstva se seškrábne rovnou na brambory",
   "distractors": [
-   "Sýr se nastrouhá studený na chleba",
-   "Sýr se smaží dokřupava jako lupínky",
-   "Sýr se rozšlehá se šlehačkou do pěny"
+   "Sýr se nastrouhá studený a nasype se na krajíc chleba",
+   "Sýr se osmaží dokřupava jako lupínky a sype se na salát",
+   "Sýr se rozšlehá se šlehačkou do pěny a jí se lžičkou"
   ],
   "quip_correct": "Trefa do černého! Sýr teče, škrabka pracuje, brambory čekají – přesně takhle vypadá raclette na talíři.",
   "quip_wrong": "Tentokrát mimo — u raclette se sýr nesmaží ani nešlehá, nechá se roztát a seškrábne přímo na brambory.",
@@ -1296,7 +1296,7 @@
    "Rozsáhlý požár, který zničil většinu dílen v pohoří Jura",
    "Hromadný odchod hodinářů do Německa"
   ],
-  "quip_correct": "Trefil jsi přesně, a ani se u toho nezapotil — nejpřesnější řemeslo na světě porazila baterka za pár dolarů, pýcha dostala na frak od obyčejné elektroniky.",
+  "quip_correct": "Přesně, a bez zapocení — nejpřesnější řemeslo na světě porazila baterka za pár dolarů, pýcha dostala na frak od obyčejné elektroniky.",
   "quip_wrong": "Nesprávně, přestože sebejistě — žádný požár ani exodus řemeslníků, Švýcarsko srazila na kolena obyčejná baterie v japonských hodinkách.",
   "explanation": "Mezi lety 1970 a 1988 klesla zaměstnanost ve švýcarském hodinářství z asi 90 000 na necelých 30 000 lidí. Odvětví nakonec zachránil podnikatel Nicolas Hayek, který v roce 1983 spustil značku Swatch — levné plastové quartzové hodinky, které naopak švýcarskou nálepku proměnily zpátky v módní symbol.",
   "about": "quartzové krizi švýcarského hodinářství v 70. letech",
@@ -1339,7 +1339,7 @@
    "Jelen lesní"
   ],
   "quip_correct": "Bystrá hlava! Ty zatočené rohy mu klidně dorostou přes metr – jako věčná zimní bunda na hlavě.",
-  "quip_wrong": "Skoro! Ale to zvíře, co sis vybral, by na téhle skalní stěně skončilo se sedřenými koleny, ne s klidem kozorožce.",
+  "quip_wrong": "Skoro! Ale tohle zvíře by na téhle skalní stěně skončilo se sedřenými koleny, ne s klidem kozorožce.",
   "explanation": "Kozorožci ve Švýcarsku v 19. století kvůli lovu úplně vymizeli. Vrátili se zpátky jen díky tomu, že se z Itálie, kde přežilo jen pár kusů, potají propašovala mláďata a znovu se vypustila do švýcarských hor.",
   "source_url": "https://cs.wikipedia.org/wiki/Kozoro%C5%BEec_alpsk%C3%BD",
   "image_prompt": "Fotorealistický snímek kozorožce alpského s mohutnými zahnutými rohy stojícího na strmé skalní stěně ve švýcarských Alpách, v pozadí zasněžené vrcholky a modrá obloha, 16:9",

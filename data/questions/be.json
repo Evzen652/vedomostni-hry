@@ -288,7 +288,7 @@
    "Asi 200 milionů"
   ],
   "quip_correct": "Malý stát na mapě, hustě obydlený k prasknutí švů.",
-  "quip_wrong": "Vedle - tipnul sis číslo, po kterém by se belgický statistický úřad rozesmál.",
+  "quip_wrong": "Vedle - tohle číslo by belgický statistický úřad rozesmálo.",
   "explanation": "Belgie má rozlohu jen asi třetinu Česka, přesto je jednou z nejhustěji zalidněných zemí Evropy.",
   "about": "velikosti Belgie",
   "image_prompt": "Fotorealistický letecký snímek belgické krajiny s malými vesnicemi, poli a dálnicemi, 16:9"
@@ -308,7 +308,7 @@
    "Gent",
    "Bruggy"
   ],
-  "quip_correct": "Jé, tys to věděl! Kapusta si tak nese jméno hlavního města, jako by byla drobná zelená diplomatka.",
+  "quip_correct": "A je to tam! Kapusta si tak nese jméno hlavního města, jako by byla drobná zelená diplomatka.",
   "quip_wrong": "Vedle - ta zelenina si jméno vypůjčila od úplně jiného města, ne tady od hlavního.",
   "explanation": "V Bruselu se tahle zelenina pěstovala už ve středověku a odtud se postupně rozšířila do celé Evropy.",
   "about": "růžičkové kapustě",
@@ -372,7 +372,7 @@
    "Sablon"
   ],
   "quip_correct": "Večer, když se rozsvítí fasády, je jasné, proč tam UNESCO razítko sedí.",
-  "quip_wrong": "Vedle - vybral sis náměstí, kam se turisté ani netrefí omylem.",
+  "quip_wrong": "Vedle - tohle je náměstí, kam se turisté ani netrefí omylem.",
   "explanation": "Náměstí obklopují honosné cechovní domy z konce 17. století, postavené narychlo po francouzském bombardování Bruselu v roce 1695.",
   "about": "bruselském Grote Markt",
   "image_prompt": "Fotorealistický snímek náměstí Grote Markt v Bruselu se zlacenými cechovními domy za soumraku, 16:9"
@@ -493,9 +493,9 @@
   "question": "Kolik oficiálních jazykových společenství (komunit) má federální Belgie ve své ústavě?",
   "answer": "Tři (vlámské, francouzské, německojazyčné)",
   "distractors": [
-   "Dvě",
-   "Čtyři",
-   "Pět"
+   "Dvě (vlámské a francouzské)",
+   "Čtyři (vlámské, francouzské, německé a bruselské)",
+   "Pět (podle počtu provincií v každém regionu)"
   ],
   "quip_correct": "Tři jazyková společenství, a k tomu ještě tři regiony, které se s nimi ani nekryjí.",
   "quip_wrong": "Ne, počet je jiný - typicky belgické, i počítání je tu komplikovanější, než by se zdálo.",
@@ -519,7 +519,7 @@
    "Bitva u Gembloux"
   ],
   "quip_correct": "Jméno dostala bitva až zpětně, podle ostruh sesbíraných z mrtvých francouzských rytířů na bojišti.",
-  "quip_wrong": "Ne tahle bitva - spletl sis ji s tou o pár století mladší a o pár set kilometrů jinde.",
+  "quip_wrong": "Ne tahle bitva - ta se plete s jinou, o pár století mladší a o pár set kilometrů vzdálenější.",
   "explanation": "Vítězům se po bitvě podařilo posbírat přes 500 zlacených rytířských ostruh, které pak vystavili v místním kostele jako trofej - odtud název bitvy.",
   "about": "bitvě zlatých ostruh",
   "image_prompt": "Fotorealistický snímek středověkého bojiště s mlhou nad plochou krajinou u Kortrijku, 16:9"
@@ -582,7 +582,7 @@
    "Rizoto se sépií"
   ],
   "quip_correct": "Paráda, sedí to! Prázdná lastura pak slouží jako kleštičky na tu další – šikovnější příbor v Belgii nenajdeš.",
-  "quip_wrong": "Ne tohle jídlo - belgický talíř má jasnou dvojici, mušle a hranolky, a žádné z jmen, co sis vybral, se do ní nevejde.",
+  "quip_wrong": "Ne tohle jídlo - belgický talíř má jasnou dvojici, mušle a hranolky, a žádné z nabízených jmen se do ní nevejde.",
   "explanation": "Přestože je pokrm považovaný za belgický národní symbol, mušle na talíř většinou nepocházejí z belgického pobřeží, ale dováží se z nizozemské oblasti Zeeland, kde jsou pro jejich chov ideální podmínky.",
   "about": "pokrmu moules-frites",
   "image_prompt": "Fotorealistický snímek kastrůlku mušlí s hranolky na dřevěném stole v belgické restauraci, 16:9"
@@ -750,7 +750,7 @@
    "Bohatší bylo vždy jen Flandry"
   ],
   "quip_correct": "Ekonomická mapa Belgie se za sto let otočila skoro o 180 stupňů.",
-  "quip_wrong": "Ne, takhle to nebylo - hospodářské karty se mezi severem a jihem země během dvacátého století přerozdaly úplně jinak, než sis tipl.",
+  "quip_wrong": "Ne, takhle to nebylo - hospodářské karty se mezi severem a jihem země během dvacátého století přerozdaly úplně jinak.",
   "explanation": "Valonský průmyslový úpadek odstartoval už v 60. letech s postupným zavíráním uhelných dolů a hutí, zatímco Flandry ve stejné době vsadily na přístavy, chemický průmysl a služby a dnešní nezaměstnanost je tam zhruba poloviční oproti Valonsku.",
   "about": "hospodářském obratu mezi Valonskem a Flandry",
   "image_prompt": "Fotorealistický snímek opuštěné industriální těžní věže na pozadí zeleného kopce, 16:9"
@@ -812,7 +812,7 @@
    "Border kolie",
    "Bernský salašnický pes"
   ],
-  "quip_correct": "Tys to věděl! Malinois je tak chytrý, že by možná zvládl i tvoje úkoly, kdyby uměl držet tužku.",
+  "quip_correct": "Jupí, správně! Malinois je tak chytrý, že by možná zvládl i tvoje úkoly, kdyby uměl držet tužku.",
   "quip_wrong": "Škoda, špatná tlapka! Tenhle pes možná umí přinést pantofle, ale hlídat letiště a pátrat po pachatelích nechává raději malinoisovi.",
   "explanation": "Malinois je jedním ze čtyř plemen belgických ovčáků, pojmenovaných podle míst svého původu - vedle malinois existují i groenendael, tervueren a laekenois.",
   "source_url": "https://en.wikipedia.org/wiki/Belgian_Malinois",
@@ -852,11 +852,11 @@
   "question": "Jakou bílo-žlutou zeleninu s nahořklou chutí Belgičané objevili náhodou, když jeden farmář schoval její kořeny v tmavém sklepě a na chvíli na ně zapomněl?",
   "answer": "Čekanku salátovou (belgickou endivii)",
   "distractors": [
-   "Celer",
-   "Fenykl",
-   "Pórek"
+   "Fenykl (sladký anýzový fenykl)",
+   "Pórek (zimní zahradní pórek)",
+   "Celer (bílý řapíkatý celer)"
   ],
-  "quip_correct": "Jé, tys to věděl! Kdyby farmář na ty kořeny ve sklepě nezapomněl, možná bychom čekanku dodnes neznali.",
+  "quip_correct": "A je to tam! Kdyby farmář na ty kořeny ve sklepě nezapomněl, možná bychom čekanku dodnes neznali.",
   "quip_wrong": "Mimo! Tahle zelenina sice taky roste na zahrádce, ale svůj vznik nevděčí žádné zapomnětlivosti ve tmavém sklepě.",
   "explanation": "Belgicky se této zelenině říká witloof, což doslova znamená bílý list, protože roste bez světla a zůstává skoro bílá.",
   "source_url": "https://en.wikipedia.org/wiki/Chicory",

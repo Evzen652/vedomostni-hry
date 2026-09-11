@@ -58,7 +58,7 @@
    "Zalednělé hory"
   ],
   "quip_correct": "Sedí to, žádná náhoda. Savana uprostřed deštného pralesa — a nikdo ji tam nevysekl, přežila sama od doby ledové.",
-  "quip_wrong": "Odvážně mimo mísu. Park Lopé skrývá něco jiného, než sis vybral.",
+  "quip_wrong": "Odvážně mimo mísu. Park Lopé skrývá něco jiného, než nabízí tvůj tip.",
   "explanation": "Národní park Lopé, chráněný organizací UNESCO, uchovává vzácnou mozaiku tropických pralesů a travnatých savan — savany tu ale nejsou dílem člověka, vědci je považují za pozůstatek mnohem sušší a chladnější doby ledové, který přežil obklopen deštným pralesem.",
   "source_url": "https://en.wikipedia.org/wiki/Lop%C3%A9_National_Park",
   "source_card": "ga-mista-lope",
@@ -145,7 +145,7 @@
    "Vedl gabonskou fotbalovou reprezentaci",
    "Vynalezl vakcínu proti malárii"
   ],
-  "quip_correct": "Uznání na místě, trefil jsi to. Čtyřicet let v gabonském pralese místo v pařížských sálech — Schweitzer byl typ, co potřebuje konkrétní pacienty, ne potlesk.",
+  "quip_correct": "Uznání na místě, trefa. Čtyřicet let v gabonském pralese místo v pařížských sálech — Schweitzer byl typ, co potřebuje konkrétní pacienty, ne potlesk.",
   "quip_wrong": "Skoro umělecké dílo fantazie. Schweitzerova stopa v Gabonu vypadala úplně jinak.",
   "explanation": "Albert Schweitzer, nositel Nobelovy ceny za mír z roku 1952, založil v gabonském Lambaréné v roce 1913 nemocnici, které pak zůstal věrný přes čtyřicet let — ačkoli byl současně uznávaným varhaníkem a odborníkem na Bacha, zbytek života raději strávil mezi pacienty v pralese než na evropských koncertních pódiích.",
   "source_url": "https://en.wikipedia.org/wiki/Albert_Schweitzer",
@@ -515,9 +515,9 @@
   "question": "Čím se ryba potírá před grilováním na Poisson Braisé?",
   "answer": "Směsí česneku, zázvoru, chilli a citronové šťávy",
   "distractors": [
-   "Jen solí a olejem",
-   "Medem a skořicí",
-   "Vůbec se nekoření"
+   "Jen solí a olivovým olejem, nic víc",
+   "Medem, skořicí a trochou hřebíčku",
+   "Vůbec se nekoření, jen se opeče nasucho"
   ],
   "quip_correct": "Česnek, zázvor, chilli, citron a pak uhlí — výsledek je jídlo, na které se slintá ještě před příchodem ke stánku.",
   "quip_wrong": "Zajímavé, leč fiktivní. Ta ryba se před grilováním potírá něčím úplně jiným.",
@@ -628,7 +628,7 @@
    "Holými horami",
    "Sněhovými poli"
   ],
-  "quip_correct": "Uhodl jsi správně husté stromy — skoro celý Gabon je samé stromy, prales tak hustý, že sluneční světlo se k zemi prodere jen s obtížemi.",
+  "quip_correct": "Správně, husté stromy — skoro celý Gabon je samé stromy, prales tak hustý, že sluneční světlo se k zemi prodere jen s obtížemi.",
   "quip_wrong": "Písečné duny bys tu hledal marně — Gabon má úplně jiný povrch.",
   "explanation": "Gabonský prales pohlcuje tolik oxidu uhličitého, že Gabon patří mezi hrstku zemí světa, které jsou pro životní prostředí čistým přínosem.",
   "about": "gabonském deštném pralese"
@@ -669,7 +669,7 @@
    "Tučňák"
   ],
   "quip_correct": "Trefa do vody! Hroši se v Loangu prostě rozhodli, že pláž patří i jim — a moře jim v tom nebrání.",
-  "quip_wrong": "Hádal jsi zvíře, které se v Loangu k moři vůbec nepřiblíží — na pláž tam chodí hroch, ne zebra ani nosorožec.",
+  "quip_wrong": "Tohle zvíře se v Loangu k moři vůbec nepřiblíží — na pláž tam chodí hroch, ne zebra ani nosorožec.",
   "explanation": "Národní park Loango je zvláštní tím, že se tu prales, savana i pláž potkávají na jednom místě, takže sloni i hroši tam opravdu chodí až k mořskému příboji.",
   "about": "hrocích v parku Loango"
  },
@@ -710,7 +710,7 @@
    "Makak",
    "Kočkodan"
   ],
-  "quip_correct": "Tys to věděl! Barvy v obličeji nosí jako vizitku — čím jasnější, tím výš ve smečce stojí.",
+  "quip_correct": "Jupí, správně! Barvy v obličeji nosí jako vizitku — čím jasnější, tím výš ve smečce stojí.",
   "quip_wrong": "Kapucínka, makak, kočkodan - všechno menší a míň barvité opice. Ta s modro-červeným čenichem v Gabonu je mandril.",
   "explanation": "Mandrilí samci se v Gabonu scházejí do skupin čítajících i přes sto zvířat najednou - jedno z největších shromáždění primátů, jaké kdy vědci u volně žijících opic napočítali.",
   "source_url": "https://en.wikipedia.org/wiki/Mandrill",
@@ -732,7 +732,7 @@
    "Nultý poledník",
    "Polární kruh"
   ],
-  "quip_correct": "Jé, tys to věděl! Gabon na něm doslova stojí obkročmo, jednou nohou na severní a druhou na jižní polokouli.",
+  "quip_correct": "A je to tam! Gabon na něm doslova stojí obkročmo, jednou nohou na severní a druhou na jižní polokouli.",
   "quip_wrong": "Obratník Raka ani polární kruh Gabonem neprochází - hledej rovnou čáru uprostřed zeměkoule, rovník.",
   "explanation": "Protože Gabon leží tak blízko rovníku, nemá čtyři roční období jako střední Evropa, jen období dešťů a období sucha, které se pravidelně střídají.",
   "source_url": "https://en.wikipedia.org/wiki/Geography_of_Gabon",

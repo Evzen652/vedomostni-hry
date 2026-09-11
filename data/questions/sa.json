@@ -31,9 +31,9 @@
   "question": "Co je NEOM?",
   "answer": "Megaprojekt města budoucnosti v severozápadní poušti Saúdské Arábie",
   "distractors": [
-   "Staré hlavní město Saúdské Arábie",
-   "Přírodní rezervace bez staveb",
-   "Podmořské muzeum v Rudém moři"
+   "Staré hlavní město Saúdské Arábie z doby karavan",
+   "Přírodní rezervace, kde se nesmí nic stavět",
+   "Podmořské muzeum na dně Rudého moře"
   ],
   "quip_correct": "Trefa, a přesná. Město budoucnosti: 170 km přímé linie bez aut, 500 miliard dolarů, termín neurčitý. Vizualizace jsou hotové.",
   "quip_wrong": "Hezká teorie, jenže odpověď leží úplně jinde než ve starých městech nebo přírodních rezervacích.",
@@ -123,7 +123,7 @@
    "Umělé ostrovy postavené v posledních letech",
    "Ledovcové útvary"
   ],
-  "quip_correct": "Uznání na místě, trefil jsi to. Dvě stě ostrovů, obydlených hrstka. Zbytek patří hnízdišti mořských ptáků a korálům — a tak to tam asi zůstane.",
+  "quip_correct": "Uznání na místě, trefa. Dvě stě ostrovů, obydlených hrstka. Zbytek patří hnízdišti mořských ptáků a korálům — a tak to tam asi zůstane.",
   "quip_wrong": "Kreativní nápad, ale příroda tam pracovala bez lidské pomoci.",
   "explanation": "Farasanské ostrovy tvoří skoro 200 většinou korálových ostrovů, od roku 2021 biosférická rezervace UNESCO.",
   "source_url": "https://en.wikipedia.org/wiki/Farasan_Islands",
@@ -251,9 +251,9 @@
   "question": "Co je tradiční tanec ardha?",
   "answer": "Nadždský tanec s meči, bubny a recitovanou poezií",
   "distractors": [
-   "Tanec s ohněm bez hudby",
-   "Sólový tanec pro nevěstu",
-   "Podvodní taneční rituál"
+   "Tanec s ohněm úplně bez hudby",
+   "Sólový tanec pro nevěstu na svatbě",
+   "Rychlý tanec žen s malými bubínky"
   ],
   "quip_correct": "Klobouk dolů, sedí to. Meče, bubny, recitovaná poezie — ardha je válečný tanec, který se proměnil v oslavný. Meče zůstaly, kontext se změnil.",
   "quip_wrong": "Chytrý odhad, jenže ten tanec má jiný rytmus i účel.",
@@ -405,9 +405,9 @@
   "question": "Z čeho se od 4. století postupně vyvinulo dnešní arabské písmo?",
   "answer": "Z kurzivní formy nabatejského písma",
   "distractors": [
-   "Z čínských znaků",
-   "Z latinky",
-   "Z klínového písma"
+   "Z čínských znaků přes Hedvábnou stezku",
+   "Z latinky římských obchodníků",
+   "Z mezopotámského klínového písma"
   ],
   "quip_correct": "Písmo z Hegry se za čtyři staletí proměnilo v arabské, dnes ho čte půl miliardy lidí.",
   "quip_wrong": "Zajímavá genealogie, jenže rodokmen arabského písma vede jinam.",
@@ -515,9 +515,9 @@
   "question": "Co je kabsa?",
   "answer": "Rýžový pokrm s masem a směsí koření, národní jídlo Saúdské Arábie",
   "distractors": [
-   "Studená polévka z jogurtu",
-   "Sladký koláč z medu a ořechů",
-   "Pokrm výhradně z ryb"
+   "Studená polévka z jogurtu, okurky a máty",
+   "Sladký koláč z medu, datlí a ořechů",
+   "Pokrm výhradně z ryb z Rudého moře"
   ],
   "quip_correct": "Trefa, přesná jako recept sám. Národní jídlo v zemi, kde se u jednoho talíře posadí celá rodina. Kabsa se nechystá pro jednoho.",
   "quip_wrong": "Chutná domněnka, ale mimo.",
@@ -669,7 +669,7 @@
    "Modrou",
    "Bílou"
   ],
-  "quip_correct": "Trefa, výborně! Věděl jsi, že se tahle vlajka musí šít oboustranně? Kdyby ji jen potiskli, nápis by se na druhé straně otočil pozpátku.",
+  "quip_correct": "Trefa, výborně! A víš, že se tahle vlajka musí šít oboustranně? Kdyby ji jen potiskli, nápis by se na druhé straně otočil pozpátku.",
   "quip_wrong": "Špatná barva! Saúdská vlajka nese barvu spojenou s islámem, a žádný z tvých tipů to není.",
   "explanation": "Zelená barva vlajky symbolizuje islám. Bílý nápis je výrok víry šaháda a pod ním leží bílý meč. Vlajka se nikdy nespouští na půl žerdi, protože nese posvátný text.",
   "about": "saúdskoarabské vlajce"
@@ -755,7 +755,7 @@
    "Skořici",
    "Med"
   ],
-  "quip_correct": "Tys to věděl! Celé karavany táhly týdny pouští kvůli pár pytlům voňavé pryskyřice.",
+  "quip_correct": "A je to tam! Celé karavany táhly týdny pouští kvůli pár pytlům voňavé pryskyřice.",
   "quip_wrong": "Ne tahle surovina – pepř, skořice a med se vozily jinými cestami, po Arábii putovaly karavany hlavně kvůli voňavé pryskyřici ze stromů.",
   "explanation": "Kadidlo se získává nařezáváním kůry stromů rodu Boswellia, které rostou v jižní Arábii. Staré obchodní trasy pro kadidlo vedly přes celý Arabský poloostrov a pomohly zbohatnout městům, kterými procházely.",
   "source_url": "https://en.wikipedia.org/wiki/Frankincense",
@@ -777,7 +777,7 @@
    "Nemá žádné velbloudy",
    "Chová jen pár velbloudů v zoo"
   ],
-  "quip_correct": "Jé, tys to věděl! Velbloudí mléko se v Saúdské Arábii prodává v obchodech vedle kravského, nikoho to tam nepřekvapí.",
+  "quip_correct": "Jupí, správně! Velbloudí mléko se v Saúdské Arábii prodává v obchodech vedle kravského, nikoho to tam nepřekvapí.",
   "quip_wrong": "Ne tahle možnost – velbloudi žijí i jinde na světě a Saúdská Arábie jich rozhodně nemá jen pár, má jich miliony.",
   "explanation": "V Saúdské Arábii žije přes milion velbloudů, chovaných na mléko, maso i pro velbloudí dostihy. Týdenní festival velbloudí krásy King Abdulaziz Camel Festival přiláká chovatele z celého Zálivu, kteří soutěží o miliony dolarů v cenách.",
   "source_url": "https://en.wikipedia.org/wiki/Camel",
@@ -821,7 +821,7 @@
    "Barhi"
   ],
   "quip_correct": "Trefa přesně doprostřed – Ajwa se prodává v malých krabičkách jako pralinky, ne v pytlích jako obyčejné datle.",
-  "quip_wrong": "Solidní tip, ale netrefený – vybral sis odrůdu, co se pěstuje jinde, ta nejceněnější saúdská roste hlavně kolem Medíny.",
+  "quip_wrong": "Solidní tip, ale netrefený – tahle odrůda se pěstuje jinde, ta nejceněnější saúdská roste hlavně kolem Medíny.",
   "explanation": "Saúdská Arábie pěstuje přes 400 pojmenovaných odrůd datlí, které se liší chutí, barvou i cenou. Ajwa, tmavá a měkká odrůda, patří mezi nejdražší a prodává se často jako dárkové balení.",
   "source_url": "https://en.wikipedia.org/wiki/Ajwa_date",
   "image_prompt": "Fotorealistický detailní snímek tmavých datlí odrůdy Ajwa v dárkové krabičce, teplé světlo, 16:9",
@@ -923,9 +923,9 @@
   "question": "Jak se jmenuje obrovská písečná poušť v Saúdské Arábii, kde skoro nikdo nebydlí?",
   "answer": "Rub al-Chálí, tedy Prázdná čtvrť",
   "distractors": [
-   "Sahara",
-   "Gobi",
-   "Atacama"
+   "Sahara, tedy Velká poušť",
+   "Gobi, tedy Kamenitá pláň",
+   "Kalahari, tedy Žíznivá země"
   ],
   "quip_correct": "Trefa do černého! Poušť, která má prázdnotu rovnou ve jméně.",
   "quip_wrong": "Sahara je v Africe, Gobi v Asii daleko na severu a Atacama v Jižní Americe. Tahle se jmenuje po tom, že tam nic není.",

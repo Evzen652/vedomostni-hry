@@ -115,9 +115,9 @@
   "question": "Co symbolizuje modrý kříž na bílé finské vlajce?",
   "answer": "Jezera a nebe (modrá) na sněhu (bílá)",
   "distractors": [
-   "Moře a ledovce",
-   "Lesy a kámen",
-   "Noc a polární záři"
+   "Moře a ledovce na severu země",
+   "Lesy a žulové skály Laponska",
+   "Noc a polární záři nad sněhem"
   ],
   "quip_correct": "Trefa, přesně tak — modrá a bílá, ani jedna barva navíc, protože Finsko je zkrátka přesně tahle dvoubarevná krajina.",
   "quip_wrong": "Vedle, ale krajinářsky — moře ani lesy do toho nemluví, finská vlajka kreslí krajinu, kterou má přímo pod nohama celý rok.",
@@ -308,7 +308,7 @@
    "Rovnou písečnou poušť",
    "Zamrzlé moře úplně bez ostrovů"
   ],
-  "quip_correct": "Tys to věděl! Ostrovů je tam tolik, že kdybys chtěl navštívit každý na jeden den, strávil bys tam roky.",
+  "quip_correct": "Jupí, správně! Ostrovů je tam tolik, že kdybys chtěl navštívit každý na jeden den, strávil bys tam roky.",
   "quip_wrong": "Ne tak docela - u Turku se moře doslova rozpadá na tisíce malých ostrůvků, žádné souvislé pobřeží ani poušť tam nenajdeš.",
   "explanation": "Souostroví Saaristomeri patří k nejrozsáhlejším na světě podle počtu ostrovů, přičemž naprostá většina z nich je trvale neobydlená.",
   "about": "finském souostroví",
@@ -329,7 +329,7 @@
    "Je vidět dvakrát denně",
    "Zmizí na celý týden"
   ],
-  "quip_correct": "Jé, tys to věděl! V Laponsku si v červnu klidně hraješ venku o půlnoci za bílého dne.",
+  "quip_correct": "A je to tam! V Laponsku si v červnu klidně hraješ venku o půlnoci za bílého dne.",
   "quip_wrong": "Ne - realita je přesně obrácená, slunce si tam v létě dá pauzu úplně jinak.",
   "explanation": "Tomuto jevu se říká yötön yö, noc beze tmy, a nad polárním kruhem trvá kolem 73 dní v kuse okolo letního slunovratu.",
   "about": "půlnočním slunci",
@@ -372,7 +372,7 @@
    "Mika Häkkinen"
   ],
   "quip_correct": "Servery po celém světě mu za to dodnes tiše děkují.",
-  "quip_wrong": "Ne - i ten, koho jsi vybral, by se pod tou odpovědí asi nestyděl podepsat.",
+  "quip_wrong": "Ne - i autor tvého tipu by se pod tou odpovědí asi nestyděl podepsat.",
   "explanation": "Torvalds začal jádro Linuxu psát v roce 1991 jako koníček při studiu na Helsinské univerzitě a zveřejnil ho na diskusní skupině jako skromný amatérský projekt.",
   "about": "Linusi Torvaldsovi",
   "image_prompt": "Fotorealistický snímek počítačového serverového sálu s řadami blikajících serverů, 16:9"
@@ -451,9 +451,9 @@
   "question": "Čím proslul finský architekt a designér Alvar Aalto?",
   "answer": "Funkcionalistickými budovami a organickým designem nábytku",
   "distractors": [
-   "Stavbou gotických katedrál",
-   "Sochami z ledu",
-   "Navrhováním vlajek"
+   "Stavbou gotických katedrál v Helsinkách",
+   "Sochami z ledu na zimních festivalech",
+   "Navrhováním vlajek a státních znaků"
   ],
   "quip_correct": "Jeho vlnitá váza dodnes stojí na poličkách po celém světě, i u lidí, co jeho jméno nikdy neslyšeli.",
   "quip_wrong": "Ne - to, co popisuješ, by mu z ateliéru vypadlo tak leda jako vtip.",
@@ -577,9 +577,9 @@
   "question": "Jak se jmenují tradiční finské pirožky s náplní z rýžové kaše v tenkém žitném těstě?",
   "answer": "Karjalanpiirakka (karelské pirožky)",
   "distractors": [
-   "Blini",
-   "Pelmeně",
-   "Perník"
+   "Blini (ruské palačinky)",
+   "Pelmeně (ruské taštičky)",
+   "Pulla (finská sladká houska)"
   ],
   "quip_correct": "Bystrá hlava! Tenhle pekařský klasik nechybí ve Finsku na žádné snídaňové tabuli.",
   "quip_wrong": "Ne, blini ani pelmeně finskou žitnou kůrku nemají - tohle pečivo si na rozdíl od nich klidně vezmeš i do ruky za pochodu.",
@@ -856,7 +856,7 @@
    "Munkki",
    "Piparkakku"
   ],
-  "quip_correct": "Tys to věděl! A věř tomu nebo ne, žádné ucho se při pečení netrápí.",
+  "quip_correct": "Jupí, správně! A věř tomu nebo ne, žádné ucho se při pečení netrápí.",
   "quip_wrong": "Chybka - tohle pečivo má úplně jiný tvar, i když by si spolu na talíři klidně sedly.",
   "explanation": "Finové si tuhle housku nejčastěji dávají k přestávce na kávu zvané kahvitauko, která se drží skoro v každé práci.",
   "source_url": "https://en.wikipedia.org/wiki/Korvapuusti",
@@ -878,7 +878,7 @@
    "Velký ohňostroj",
    "Svíčky v oknech domů"
   ],
-  "quip_correct": "Jé, tys to věděl! A hoří třeba i o půlnoci, protože slunce v tu dobu skoro vůbec nezapadá.",
+  "quip_correct": "A je to tam! A hoří třeba i o půlnoci, protože slunce v tu dobu skoro vůbec nezapadá.",
   "quip_wrong": "Ne tak úplně - na tenhle svátek Finové nepotřebují nebe plné světýlek, stačí jim pořádná hranice dřeva.",
   "explanation": "Juhannus se slaví kolem letního slunovratu a spousta Finů tou dobou odjíždí z měst na chaty k jezerům.",
   "source_url": "https://en.wikipedia.org/wiki/Midsummer",

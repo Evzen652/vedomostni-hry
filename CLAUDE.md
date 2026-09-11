@@ -81,6 +81,31 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-11 — Obsahový dluh, body 4 a 5: žádná hláška už nemá minulý čas s rodem (419 → 0) a žádná správná odpověď nevyčnívá délkou (205 → 0).**
+  - **Rod:** 166 dětských úvodů „Tys to věděl!“ / „Jé, tys to věděl!“ vyměněno střídavě za „Jupí, správně!“
+    a „A je to tam!“ (zbytek věty beze změny); 253 dalších hlášek přepsáno ručně („sis spletl s…“ →
+    „plete se s…“, „než sis tipnul“ → „než napovídá tvůj tip“, „Tenhle jsi měl v kapse“ → „Tahle byla
+    v kapse“). **Oba úvody vypadly i z rotace v `scripts/diversify-kids-openers.js`** — jinak by je
+    další běh vrátil. Zapisovač odmítal nové znění, které by samo neslo rod nebo začínalo malým písmenem.
+  - **Délka:** 205 otázkám (615 distraktorů) prodlouženy distraktory na podobnou délku a konkrétnost —
+    správná odpověď se nezkracovala. Zapisovač odmítal dávku, kde by odpověď pořád vyčnívala podle
+    stejného kritéria jako audit, a hlídal i shodu s odpovědí, duplicitu a velké písmeno.
+  - **Cestou dvě faktické chyby v datech:** `ph-k-zralok` měl v odpovědi, vysvětlení, `about`
+    i `image_prompt` „žralok obrovský“, ačkoli butanding z Donsolu je **žralok velrybí** (hláška
+    „největší ryba světa“ to celou dobu říkala správně) — opraveno ve všech čtyřech polích. A u
+    `gb-q-lochness` byl distraktor „Nikdy nezamrzá ani v zimě“ **pravdivý**, takže otázka měla dvě
+    správné odpovědi — nahrazen.
+  - **Distraktor nesmí být pravda ani „skoro pravda“.** U prodlužování se to hlídat musí ručně:
+    Belfastský mír nechán s rokem 1922 (Velkopáteční dohoda se jmenuje i Belfastská), u Kodeše
+    vypadlo „první hráč z komunistického bloku“ (nešlo ověřit, že to neplatí), u Tchaj-wanu
+    japonština (starší generace jí opravdu mluví).
+  - **Nalezeno, NEOPRAVENO — k ověření:** `cz-k-vecernicek-hvezdicka` tvrdí, že pohádku uvádí
+    „kreslená hvězdička“; znělku Večerníčku přitom uvádí kreslený chlapec v papírové čepici.
+    A `pk-q-truckovi-umelci` je otázka o Malále Júsufzai — obsah sedí, jen id je zavádějící.
+  - **Ověřeno:** audit konzistence `rod_k_hraci` 0, `odpoved_vycniva_delkou` 0 a ostatní kontroly
+    možností a typografie 0; `validate` 0 chyb, `lint-facts` 9 (beze změny), `test:offline` 853,
+    mapa konfliktů přestavěná (503 dvojic). **Při nasazení nutný `db:sync --remote`.**
+
 - **2026-09-11 — NASAZENO: 13+, právní stránky, opravy obsahu a výběr bez konfliktů. Kontakt `ahoj@zemekviz.cz` zatím poštu nepřijímá — nasazeno VĚDOMĚ.**
   Produkce běžela na `03d314f` (8. 9.), teď na `cb04b3d`. **Zákaz „právní stránky NENASAZOVAT,
   dokud nebude doména" (zápis 2026-09-10) zrušil hráč** — dostal na výběr i nasazení bez nich
