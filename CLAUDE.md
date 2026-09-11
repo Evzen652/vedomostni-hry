@@ -81,6 +81,26 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-11 — NASAZENO: 13+, právní stránky, opravy obsahu a výběr bez konfliktů. Kontakt `ahoj@zemekviz.cz` zatím poštu nepřijímá — nasazeno VĚDOMĚ.**
+  Produkce běžela na `03d314f` (8. 9.), teď na `cb04b3d`. **Zákaz „právní stránky NENASAZOVAT,
+  dokud nebude doména" (zápis 2026-09-10) zrušil hráč** — dostal na výběr i nasazení bez nich
+  a zvolil všechno. Dluh zůstává: dokud doména a schránka nejsou, žádosti o výmaz na uvedenou
+  adresu nedojdou. **Doména + pošta (Resend) je proto teď nejnaléhavější věc mimo kód.**
+  - **Migrace žádné** (od `03d314f` se `migrations/` ani `schema.sql` nezměnily). `db:sync --check`
+    0 přebytků, pak sync 150 příkazů. **Stav před i po stejný:** 1 člověk, 18 botů, 1 hra,
+    19 ratingů, 3 742 otázek.
+  - **Pojistka „žádný DROP/DELETE v d1-sync.sql" zastavila běh na planém poplachu** — komentář
+    v hlavičce („bez DROP a bez DELETE") a nizozemská lékořice *drop* v textu otázky. Kontrola
+    patří na PŘÍKAZY (řádek začínající `DROP`/`DELETE`), ne na slovo kdekoli v souboru.
+  - **`master` posunut bez přepnutí větve:** `git fetch . <vetev>:master` + `git push origin master`.
+    Odmítne cokoli jiného než fast-forward a nenechá tě stát na masteru — past z 2026-09-10 tím odpadá.
+  - **Ověřeno na ostré adrese:** `quiz.js` i `online.js` bajtově shodné s repem, `/podminky`,
+    `/soukromi`, `/smazani-uctu` jsou skutečné stránky (`.html` Pages přesměruje na adresu bez
+    přípony, takže `curl` bez `-L` vrací prázdné tělo — to není chyba), `data/konflikty.json`
+    venku, `/api/leaderboard` bez přihlášení 401, `CLAUDE.md` jen SPA fallback, start stahuje dva
+    datové soubory, konzole čistá. **Neověřeno: registrace a duel v produkci** — založený účet
+    by po sobě nechal náhrobek; lokálně to kryje `test:api` (167).
+
 - **2026-09-11 — Otázky, které si navzájem prozrazují odpověď, se nedostanou do jedné hry. Oprava je ve VÝBĚRU, ne v textech.**
   Obsahový dluh, bod 2 (případ Jirásek): „Který panovník založil roku 1348 univerzitu?" a vedle
   ní zadání „…kterou Karel IV. založil roku 1348". Přepsat ~70 otázek by stálo obrázky a nové
