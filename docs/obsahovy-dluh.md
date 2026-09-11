@@ -33,12 +33,25 @@ Stejná odpověď u **různých** faktů je v pořádku a neopravuje se: sedm p�
 Čáslavské, lev na znaku × lev na mincích, Finsko u Santy × u Angry Birds, červené autobusy
 × červené schránky.
 
-## 2. Otázky, které si prozrazují odpověď (případ Jirásek)
+## 2. Otázky, které si prozrazují odpověď (případ Jirásek) — VYŘEŠENO VÝBĚREM 2026-09-11
 
 Vzorec: otázka „Jak se jmenuje X?" a vedle ní otázky „Čím je X výjimečný?", které X
-jmenují přímo v zadání. Kdo dostane obě, má první zadarmo. **Oprava: přeformulovat tu
-otázku „Jak se jmenuje X?"** tak, aby se ptala na něco, co ostatní zadání neříkají —
-ostatní otázky se X vyhnout nemůžou.
+jmenují přímo v zadání. Kdo dostane obě, má první zadarmo.
+
+**Texty se nepřepisovaly — takové dvojice se prostě nedostanou do jedné hry.** Mapu
+staví `scripts/build-konflikty.js` (spouští ji `npm run build-index`, zastaralou hlásí
+`validate`): odpověď X celým slovem v zadání Y nebo ve vysvětlení a hláškách Y, tedy
+v tom, co hráč čte hned po odpovědi. **503 dvojic u 621 otázek.** Výběr je dodržuje
+offline v sólu, škole i párty a online v `pickQuestions` i v denní pětce; když fond
+jinak nestačí, odložená otázka se dobere, takže hra se nikdy nezkrátí. Přepis by stál
+obrázky a nové otázky by za měsíc vyrobily nové kolize — výběr pokryje i budoucí obsah.
+
+**Co mapa nechytí:** jiný tvar slova („Německy" × „psal v němčině") — takové dvojice
+patří do seznamu `RUCNI` v generátoru, i s důvodem. A odpověď kratší než 6 znaků
+(„Praha") — ta by jako místo děje zakazovala skoro všechno se vším.
+
+Pro pořádek, co tu bylo sepsané ručně. Všech 12 jmenovitě uvedených dvojic v mapě je
+(ověřeno 2026-09-11); souhrnný výčet „stejný vzorec dál" jednotlivě prověřený není:
 
 Nejsilnější případy (ručně posouzené):
 

@@ -503,9 +503,14 @@
   // nikdy nedostane nenačtená země — a naopak se nikdy nestahuje víc, než se hraje.
   async function ensureQuestionsFor(ccs){
     const chybi = ccs.filter(cc => !data.qByCc[cc]);
-    if(!chybi.length) return;
-    const nactene = await Promise.all(chybi.map(cc =>
-      fetch(`data/questions/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[])));
+    if(!chybi.length && data.konflikty) return;
+    // S první zemí přijde i mapa otázek, které si navzájem prozrazují odpověď (viz
+    // bezKonfliktu). Při startu ne — rychlý start stojí na dvou souborech. Když se
+    // nestáhne, hraje se jako dřív, jen bez téhle ohleduplnosti.
+    const [konflikty, ...nactene] = await Promise.all([
+      data.konflikty || fetch("data/konflikty.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
+      ...chybi.map(cc => fetch(`data/questions/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]))]);
+    data.konflikty = konflikty;
     // `online_only` se odfiltruje i tady, i když je build-public.js z veřejných dat
     // vyhazuje: v lokálním vývoji se servíruje kořen repa, kde JSOU, a offline hra
     // by je jinak nabízela — tedy jinak než nasazená appka. Druhá pojistka stojí nic.
@@ -769,6 +774,21 @@
     // schválně: i při neznámé hodnotě pásma je správnější dětské otázky vynechat než přidat.
     else { pool = pool.filter(q=>!q.kids); }
     return pool;
+  }
+  // Vylosuje `limit` otázek tak, aby žádná neprozradila odpověď jiné z téže hry (zadání
+  // „…kterou Karel IV. založil roku 1348" vedle otázky „Kdo založil univerzitu?"). Mapu
+  // staví scripts/build-konflikty.js. Když se hra jinak nenaplní, odložené se doberou —
+  // radši otázka s nápovědou než kratší hra.
+  function bezKonfliktu(pool, limit){
+    const K = (data && data.konflikty) || {};
+    const out = [], odlozene = [], zakaz = new Set();
+    for(const q of shuffle(pool)){
+      if(out.length >= limit) break;
+      if(zakaz.has(q.id)){ odlozene.push(q); continue; }
+      out.push(q); (K[q.id]||[]).forEach(id => zakaz.add(id));
+    }
+    for(const q of odlozene){ if(out.length >= limit) break; out.push(q); }
+    return out;
   }
   // Body za správnou odpověď. V párty hraje každý ve svém pásmu (viz buildPartyOrder), takže
   // absolutní obtížnost otázek není mezi hráči srovnatelná — dětská otázka má vždy difficulty 1
@@ -1173,7 +1193,7 @@
     const filtered = data.questions.filter(q => (q.difficulty||1) <= level);
     const pool = filtered.length ? filtered : data.questions;
     const limit = Math.min(S.qLimit || pool.length, pool.length);
-    S.order = shuffle(pool).slice(0, limit);
+    S.order = bezKonfliktu(pool, limit);
     S.idx=0; newSave();
     const shell=document.getElementById("qz-shell"); shell.classList.add("qz-school"); shell.style.transform="";
     renderQuestion();
@@ -1310,7 +1330,7 @@
     // nebo obnovou stavu. Prázdný fond by znamenal hru bez jediné otázky.
     if(!pool.length) return renderStart();
     const limit = Math.min(S.qLimit || pool.length, pool.length);
-    S.order=shuffle(pool).slice(0, limit); S.idx=0; S.school=false; newSave();
+    S.order=bezKonfliktu(pool, limit); S.idx=0; S.school=false; newSave();
     const shg=document.getElementById("qz-shell"); shg.classList.remove("qz-school"); shg.style.transform="";
     renderQuestion();
   }
@@ -1431,14 +1451,22 @@
   function buildPartyOrder(){
     const P = S.players.length;
     const need = Math.max(1, S.totalRounds) * P;
-    const queues = {};   // pásmo -> { pool: zamíchaný fond, i: kolik z něj už padlo }
-    const out = [];
+    const K = (data && data.konflikty) || {};
+    const queues = {};   // pásmo -> zamíchaný fond, ze kterého se odebírá
+    const out = [], zakaz = new Set();
     for(let i=0; i<need; i++){
       const band = S.players[i % P].band || "dospeli";
-      let qu = queues[band];
       // došel fond pásma (málo otázek, hodně kol) -> zamíchat znovu a jet od začátku
-      if(!qu || qu.i >= qu.pool.length) qu = queues[band] = { pool: shuffle(bandPool(band)), i:0 };
-      out.push(qu.pool[qu.i++]);
+      if(!queues[band] || !queues[band].length) queues[band] = shuffle(bandPool(band));
+      const qu = queues[band];
+      // U stolu je jedna obrazovka, takže otázku souseda čtou všichni a nápověda z ní
+      // platí napříč pásmy. Bere se první otázka, kterou nic položeného neprozrazuje
+      // a která ještě nepadla („starsi" je podmnožina „dospeli"); když taková není,
+      // tak prostě první.
+      const k = Math.max(0, qu.findIndex(q => !zakaz.has(q.id)));
+      const q = qu.splice(k, 1)[0];
+      out.push(q);
+      zakaz.add(q.id); (K[q.id]||[]).forEach(id => zakaz.add(id));
     }
     return out;
   }

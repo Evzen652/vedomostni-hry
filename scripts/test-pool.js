@@ -90,6 +90,33 @@ const q = (id, online_only) => ({ id, band: "dospeli", online_only });
     kontrola(new Set(ids).size === ids.length, "otázka se ve hře objevila dvakrát: " + ids.join(","));
   }
 
+  // 5) Otázky, které si prozrazují odpověď, nesmí do jedné hry (2026-09-11). Bere se
+  //    SKUTEČNÁ dvojice z generované mapy, takže test hlídá i to, že pool.js mapu čte.
+  {
+    const { KONFLIKTY } = await import("../functions/_lib/konflikty.js");
+    const { bezKonfliktu } = await import("../functions/_lib/pool.js");
+    const a = Object.keys(KONFLIKTY)[0], b = KONFLIKTY[a][0];
+    const vypln = [...Array(6)].map((_, i) => q("x" + i, 0));
+    // Mock vrací v pořadí, takže bez filtru by a i b šly do hry hned za sebou.
+    const { env } = mockEnv([q(a, 0), q(b, 0), ...vypln]);
+    const ids = await pickQuestions(env, "dospeli", 4, []);
+    kontrola(ids.length === 4, "s vyřazenou dvojicí hra nemá 4 otázky, má " + ids.length);
+    kontrola(!(ids.includes(a) && ids.includes(b)),
+      "do jedné hry padly otázky, které si prozrazují odpověď: " + a + " × " + b);
+
+    // Malý fond: dvojice je všechno, co je — radši nápověda než kratší hra.
+    const maly = mockEnv([q(a, 0), q(b, 0)]);
+    const ids2 = await pickQuestions(maly.env, "dospeli", 2, []);
+    kontrola(ids2.length === 2, "při malém fondu se hra zkrátila místo dobrání odložené otázky (" + ids2.length + ")");
+
+    // Denní pětka nejde přes pickQuestions, ale přes bezKonfliktu.
+    const d = bezKonfliktu([a, b, ...vypln.map(x => x.id)], 5);
+    kontrola(d.length === 5 && !(d.includes(a) && d.includes(b)),
+      "bezKonfliktu (denní pětka) pustil dvojici do jedné sady: " + d.join(","));
+    const dailySrc = require("fs").readFileSync(require("path").join(__dirname, "..", "functions", "api", "daily", "index.js"), "utf8");
+    kontrola(/bezKonfliktu\(/.test(dailySrc), "denní pětka nevybírá přes bezKonfliktu");
+  }
+
   console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                             : "VŠE V POŘÁDKU: " + ok + " kontrol"));
   process.exit(chyb ? 1 : 0);

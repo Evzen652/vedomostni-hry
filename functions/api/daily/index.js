@@ -1,6 +1,6 @@
 import { BANDS, shuffledOrder, json, fail } from '../../_lib/game.js';
 import { currentUser } from '../../_lib/auth.js';
-import { markSeen } from '../../_lib/pool.js';
+import { markSeen, bezKonfliktu, REZERVA } from '../../_lib/pool.js';
 
 const DAILY_COUNT = 5;
 const DAILY_LIMIT_S = 20;
@@ -76,9 +76,11 @@ async function ensureDaily(env, date, band) {
     .bind(date, band).first();
   if (have) return have;
 
-  const picked = (await env.DB
+  // S rezervou, ať se dají vyřadit otázky, které si navzájem prozrazují odpověď.
+  const kandidati = (await env.DB
     .prepare('SELECT id FROM questions WHERE band = ? ORDER BY RANDOM() LIMIT ?')
-    .bind(band, DAILY_COUNT).all()).results.map(r => r.id);
+    .bind(band, DAILY_COUNT + REZERVA).all()).results.map(r => r.id);
+  const picked = bezKonfliktu(kandidati, DAILY_COUNT);
   if (picked.length < DAILY_COUNT) return null;
 
   await env.DB.prepare(

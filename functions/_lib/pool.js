@@ -10,6 +10,8 @@
  *                              otázek zvýhodňujících prvního i druhého
  */
 
+import { KONFLIKTY } from './konflikty.js';
+
 const rows = r => (r && r.results ? r.results.map(x => x.id) : []);
 const marks = a => a.map(() => '?').join(',');
 
@@ -72,39 +74,84 @@ async function seenOnlyBy(env, band, userId, others, n, exclude, rezim) {
  * Kolik fondu je serverového, hlásí `npm run validate`.
  */
 export async function pickQuestions(env, band, n, userIds = []) {
-  const serverove = await vyber(env, band, n, userIds, 'server');
-  if (serverove.length >= n) return serverove.slice(0, n);
+  const vybrane = [], odlozene = [];
+  await vyber(env, band, n, userIds, 'server', vybrane, odlozene);
   // Dvě části fondu jsou disjunktní (online_only 0 × 1), takže se nemůžou překrýt
   // a druhý průchod nepotřebuje vylučovat, co vybral první.
-  const verejne = await vyber(env, band, n - serverove.length, userIds, 'verejne');
-  return [...serverove, ...verejne].slice(0, n);
+  if (vybrane.length < n) await vyber(env, band, n, userIds, 'verejne', vybrane, odlozene);
+  doplnOdlozene(vybrane, n, odlozene);
+  return vybrane.slice(0, n);
+}
+
+/**
+ * Kolik otázek se z databáze bere NAVÍC. Z kandidátů se vyřadí ty, které si s už
+ * vybranými prozrazují odpověď (mapa z scripts/build-konflikty.js), a rezerva zajistí,
+ * že hra kvůli tomu nezkrátí. Konfliktních dvojic je ve fondu ~500 na 3 742 otázek
+ * a nejvíc jich má jedna otázka 22, takže osm náhradníků na hru stačí s velkou rezervou.
+ */
+export const REZERVA = 8;
+
+const konflikt = (a, b) => (KONFLIKTY[a] || []).includes(b);   // mapa je souměrná
+
+/**
+ * Přidá do `vybrane` kandidáty, kteří nic z už vybraného neprozrazují (ani naopak), nejvýš
+ * do n. Odmítnuté odloží: kdyby fond nestačil, doberou se na konci — radši otázka
+ * s nápovědou než kratší hra.
+ */
+function prijmi(vybrane, kandidati, n, odlozene) {
+  for (const id of kandidati) {
+    if (vybrane.length >= n) break;
+    if (vybrane.includes(id)) continue;
+    if (vybrane.some(v => konflikt(v, id))) { odlozene.push(id); continue; }
+    vybrane.push(id);
+  }
+}
+function doplnOdlozene(vybrane, n, odlozene) {
+  for (const id of odlozene) {
+    if (vybrane.length >= n) break;
+    if (!vybrane.includes(id)) vybrane.push(id);
+  }
+}
+
+/** n otázek z kandidátů tak, aby si navzájem neprozrazovaly odpověď (denní pětka). */
+export function bezKonfliktu(kandidati, n) {
+  const vybrane = [], odlozene = [];
+  prijmi(vybrane, kandidati, n, odlozene);
+  doplnOdlozene(vybrane, n, odlozene);
+  return vybrane;
 }
 
 /** Původní algoritmus (neviděné → viděné oběma → symetricky viděné jedním), nad jednou částí fondu. */
-async function vyber(env, band, n, userIds, rezim) {
-  const picked = await unseenByAll(env, band, userIds, n, rezim);
-  if (picked.length >= n || userIds.length === 0) return picked.slice(0, n);
+async function vyber(env, band, n, userIds, rezim, vybrane, odlozene) {
+  const kolik = () => n - vybrane.length + REZERVA;
+  prijmi(vybrane, await unseenByAll(env, band, userIds, kolik(), rezim), n, odlozene);
+  if (vybrane.length >= n || userIds.length === 0) return;
 
   // 2) viděné všemi — výhoda je rozdělená rovnoměrně, takže fér
-  if (picked.length < n) {
-    const more = await seenByAll(env, band, userIds, n - picked.length, picked, rezim);
-    picked.push(...more);
-  }
+  prijmi(vybrane, await seenByAll(env, band, userIds, kolik(), vybrane, rezim), n, odlozene);
 
-  // 3) viděné právě jedním — jen symetricky, po stejném počtu za každého hráče
-  if (picked.length < n && userIds.length > 1) {
-    const need = n - picked.length;
-    const per = Math.floor(need / userIds.length);
+  // 3) viděné právě jedním — jen symetricky, po stejném počtu za každého hráče.
+  //    Odmítnuté se tu NEODKLÁDAJÍ: dobrat je na konci by tu symetrii rozbilo.
+  if (vybrane.length < n && userIds.length > 1) {
+    const per = Math.floor((n - vybrane.length) / userIds.length);
     if (per > 0) {
+      const zaHrace = [];
       for (const uid of userIds) {
         const others = userIds.filter(x => x !== uid);
-        const more = await seenOnlyBy(env, band, uid, others, per, picked, rezim);
-        picked.push(...more);
+        const kandidati = await seenOnlyBy(env, band, uid, others, per + REZERVA, vybrane, rezim);
+        const moje = [];
+        for (const id of kandidati) {
+          if (moje.length >= per) break;
+          const uz = [...vybrane, ...zaHrace.flat(), ...moje];
+          if (!uz.includes(id) && !uz.some(v => konflikt(v, id))) moje.push(id);
+        }
+        zaHrace.push(moje);
       }
+      // Kdyby konflikty jednomu hráči ubraly, zkrátí se to všem — jinak by nebyl fér.
+      const m = Math.min(...zaHrace.map(a => a.length));
+      zaHrace.forEach(a => vybrane.push(...a.slice(0, m)));
     }
   }
-
-  return picked.slice(0, n);
 }
 
 /** Zapíše, že hráč otázky viděl. Anonymní hra se neeviduje. */

@@ -81,6 +81,41 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-11 — Otázky, které si navzájem prozrazují odpověď, se nedostanou do jedné hry. Oprava je ve VÝBĚRU, ne v textech.**
+  Obsahový dluh, bod 2 (případ Jirásek): „Který panovník založil roku 1348 univerzitu?" a vedle
+  ní zadání „…kterou Karel IV. založil roku 1348". Přepsat ~70 otázek by stálo obrázky a nové
+  otázky by za měsíc vyrobily nové kolize; výběr pokryje i obsah, který teprve vznikne.
+  - **Mapa je GENEROVANÁ a zapisuje se dvakrát:** `data/konflikty.json` pro offline hru (bez
+    serverových otázek) a `functions/_lib/konflikty.js` pro online. Staví ji
+    `scripts/build-konflikty.js`, spouští **`npm run build-index`** (ten staví i index počtů),
+    zastaralou hlásí `validate` jako CHYBU — takže po úpravě textu otázky je nutné ji obnovit.
+  - **Pravidlo: odpověď X celým slovem v zadání Y, NEBO ve vysvětlení a hláškách Y.** Ty hráč čte
+    hned po odpovědi, takže prozrazují stejně (klokan ve vysvětlení u quokky). Jen zadání dávalo
+    219 dvojic, i s texty po odpovědi **503 dvojic u 621 otázek**. `more_fact` se nepočítá (jen na
+    klik). Vynechané: odpověď pod 6 znaků (jako místo děje stojí všude), čísla, názvy zemí.
+    Ručně (`RUCNI`) jen dvojice s jiným tvarem slova — Kafka: „Německy" × „psal v němčině".
+  - **Planý konflikt nevadí a hra se NIKDY nezkrátí:** když fond jinak nestačí, odložená otázka
+    se dobere. Radši nápověda než kratší hra — stejný princip jako u serverového fondu.
+  - **Offline:** sólo i škola losují přes `bezKonfliktu()`. `buildPartyOrder` hlídá mapu napříč
+    pásmy (u stolu je jedna obrazovka, otázku souseda čtou všichni) a **cestou přestal pouštět
+    tutéž otázku dvakrát** — „starsi" je podmnožina „dospeli", takže dvě fronty ji tahaly obě;
+    naslepo se to v testu stalo v 293 losech z 300. Mapa se stahuje s první zemí
+    (`ensureQuestionsFor`), **ne při startu** — rychlý start dál stojí na dvou souborech.
+  - **Online:** `pickQuestions` bere z D1 o `REZERVA = 8` kandidátů víc a konfliktní přeskočí.
+    Ve fázi „viděné právě jedním" se odmítnuté NEDOBÍRAJÍ a všem hráčům se bere stejný počet —
+    jinak by padla symetrie, na které ta fáze stojí. Denní pětka jde přes `bezKonfliktu()`.
+  - **Mapa pro server je JS modul, ne import JSON.** `test:pool` načítá `pool.js` v Node, kde
+    by import JSON chtěl `with { type: "json" }`, a jak s tím naloží bundler Pages Functions,
+    se lokálně spolehlivě neověří. Generovaný `export const` funguje všude stejně.
+  - **Guláš:** `cz-k-hovezi-gulas` měl v zadání „…českého hovězího guláše?" a odpověď „Hovězí".
+    Audit (`odpoved_v_zadani`) ho nechytil, protože hledá celé slovo a tady jde o jiný tvar.
+  - **Ověřeno mutací (13×, všechny chyceny):** mapa ignorovaná v sólu/škole, v párty i na
+    serveru, chybějící dobrání offline i online, startGame/startSchool naslepo, párty s dvojí
+    otázkou, mapa se nestahuje / nenasazuje, denní pětka naslepo, zastaralá klientská
+    i serverová mapa. `test:offline` **853**, `test:pool` **13**, `validate` 0 chyb.
+  - **Při nasazení:** kód s mapou jde běžným `npm run deploy`; kvůli guláši je nutný `db:sync --remote`.
+  - **Zbývá, a výběrem to nejde:** „Ve které zemi…?" uvnitř fondu té země (`cn-t-nudle` — „V Číně").
+
 - **2026-09-10 — Obsahový dluh, body 1 a 3: 9 duplicit přepsaných na nové fakty, 4 nápovědy vytažené ze zadání. Nic se nemazalo.**
   Z každé dvojice zůstala jedna otázka a druhá dostala jiný fakt o tomtéž tématu — **id beze změny**,
   protože na ně vedou odkazy z produkční D1 (`seen_questions`, `games.question_ids`). Přehled, co

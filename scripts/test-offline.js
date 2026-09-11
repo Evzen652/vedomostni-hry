@@ -227,13 +227,74 @@ for (const sestava of [["deti", "dospeli"], ["deti", "starsi", "dospeli"], ["dos
 // vrátit kratší frontu ani díru — fond se domíchá znovu.
 const maly = { questions: otazky.filter(q => q.kids).slice(0, 4).concat(otazky.filter(q => !q.kids).slice(0, 40)) };
 const bandPoolMaly = funkce("bandPool", { data: maly });
-const buildMaly = funkce("buildPartyOrder", { S, shuffle, bandPool: bandPoolMaly, Math });
+const buildMaly = funkce("buildPartyOrder", { S, shuffle, bandPool: bandPoolMaly, Math, data: maly });
 S.players = [{ band: "deti" }, { band: "dospeli" }];
 S.totalRounds = 8;
 const maleP = buildMaly();
 kontrola(maleP.length === 16, "malý fond: fronta má " + maleP.length + " otázek místo 16");
 kontrola(maleP.every(Boolean), "malý fond: fronta má prázdné místo (domíchání selhalo)");
 kontrola(maleP.filter((_, i) => i % 2 === 0).every(q => q.kids), "malý fond: dítě dostalo otázku mimo své pásmo");
+
+// Do 2026-09-11 se hra losovala naslepo, takže vedle „Který panovník založil roku 1348
+// univerzitu?" mohla padnout otázka, v jejímž zadání stojí „…kterou Karel IV. založil".
+// Mapu staví scripts/build-konflikty.js; výběr ji musí dodržet v sólu, škole i párty.
+sekce("Výběr: otázky ve hře si navzájem neprozrazují odpověď");
+{
+  const syn = n => [...Array(n)].map((_, i) => ({ id: "q" + i }));
+  const K = { q0: ["q1"], q1: ["q0"] };
+  const kolize = (poradi, m) => { const ids = new Set(poradi.map(q => q.id)); return poradi.find(q => (m[q.id] || []).some(id => ids.has(id))); };
+
+  // Syntetický fond: 20 otázek, jediná dvojice. Naslepo by obě padly do desetiotázkové
+  // hry ve ~24 % losů, takže 300 losů chybu chytí s jistotou.
+  const bez = funkce("bezKonfliktu", { shuffle, data: { konflikty: K } });
+  let spatne = 0;
+  for (let i = 0; i < 300; i++) if (kolize(bez(syn(20), 10), K)) spatne++;
+  kontrola(!spatne, "bezKonfliktu: dvojice, která si prozrazuje odpověď, padla do jedné hry " + spatne + "× z 300");
+  kontrola(bez(syn(20), 10).length === 10, "bezKonfliktu: hra nemá požadovanou délku");
+  // Malý fond: dvojice je všechno, co je. Hra se nesmí zkrátit.
+  kontrola(bez(syn(2), 2).length === 2, "bezKonfliktu: při malém fondu se hra zkrátila místo dobrání odložené otázky");
+
+  // Skutečná mapa na skutečných otázkách: otázka s nejvíc konflikty, všichni její
+  // „sourozenci" a výplň bez konfliktů. Hlídá i to, že id v mapě sedí na id ve fondu.
+  const mapa = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "konflikty.json"), "utf8"));
+  const podleId = new Map(otazky.map(q => [q.id, q]));
+  const neznama = Object.keys(mapa).filter(id => !podleId.has(id));
+  kontrola(!neznama.length, "data/konflikty.json odkazuje na otázky, které ve fondu nejsou", neznama.slice(0, 3).join(", "));
+  const stred = Object.keys(mapa).sort((a, b) => mapa[b].length - mapa[a].length)[0];
+  const vypln = otazky.filter(q => q.cc === podleId.get(stred).cc && !mapa[q.id]).slice(0, 15);
+  const fondReal = [stred, ...mapa[stred]].map(id => podleId.get(id)).concat(vypln);
+  const bezReal = funkce("bezKonfliktu", { shuffle, data: { konflikty: mapa } });
+  spatne = 0;
+  for (let i = 0; i < 300; i++) if (kolize(bezReal(fondReal, 10), mapa)) spatne++;
+  kontrola(!spatne, "skutečná mapa: do hry padla dvojice z data/konflikty.json " + spatne + "× z 300 (kolem " + stred + ")");
+
+  // Zapojení: sólo i škola losují přes bezKonfliktu a mapa se stahuje a nasazuje.
+  const telo = jmeno => {
+    const zac = SRC.indexOf("function " + jmeno + "(");
+    let h = 0, i = SRC.indexOf("{", zac);
+    for (; i < SRC.length; i++) { if (SRC[i] === "{") h++; else if (SRC[i] === "}" && !--h) break; }
+    return SRC.slice(zac, i + 1);
+  };
+  for (const f of ["startGame", "startSchool"])
+    kontrola(/S\.order\s*=\s*bezKonfliktu\(/.test(telo(f)), f + " nelosuje přes bezKonfliktu — otázky si můžou prozradit odpověď");
+  kontrola(telo("ensureQuestionsFor").includes('"data/konflikty.json"'), "ensureQuestionsFor nestahuje data/konflikty.json");
+  kontrola(fs.readFileSync(path.join(process.cwd(), "scripts", "build-public.js"), "utf8").includes('"data/konflikty.json"'),
+    "build-public.js nekopíruje data/konflikty.json do dist/ — nasazená hra by mapu neměla");
+
+  // Párty: jedna obrazovka pro všechny, takže nápověda platí napříč pásmy. Fond 12 otázek,
+  // 10 tahů — naslepo by dvojice padla do hry ve ~68 % losů.
+  const S2 = { players: [{ band: "starsi" }, { band: "dospeli" }], totalRounds: 5 };
+  const party = funkce("buildPartyOrder", { S: S2, shuffle, bandPool: () => syn(12), Math, data: { konflikty: K } });
+  let kol = 0, dvakrat = 0;
+  for (let i = 0; i < 300; i++) {
+    const p = party();
+    if (kolize(p, K)) kol++;
+    if (new Set(p.map(q => q.id)).size !== p.length) dvakrat++;
+  }
+  kontrola(!kol, "párty: dvojice, která si prozrazuje odpověď, padla do jedné hry " + kol + "× z 300");
+  // „starsi" je podmnožina „dospeli", takže dvě fronty můžou vytáhnout tutéž otázku.
+  kontrola(!dvakrat, "párty: táž otázka padla u stolu dvakrát " + dvakrat + "× z 300, ačkoli fond stačil");
+}
 
 // Body: v párty musí být správná odpověď stejně drahá pro všechna pásma. Kdyby se bodovalo
 // obtížností, dětská otázka (vždy difficulty 1) by dala 100 a dospělácká 300 — dítě by

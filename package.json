@@ -32,7 +32,7 @@
     "predeploy": "npm run validate && npm run test:offline && npm run test:pool && npm run test:auth",
     "deploy": "npm run build && wrangler pages deploy dist --project-name zemekviz --branch master",
     "build": "node scripts/build-public.js",
-    "build-index": "node scripts/build-question-index.js",
+    "build-index": "node scripts/build-question-index.js && node scripts/build-konflikty.js",
     "db:sync": "node scripts/sync-d1-questions.js"
   },
   "devDependencies": {

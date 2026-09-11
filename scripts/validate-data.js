@@ -121,6 +121,20 @@ for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý 
   }
 }
 
+// Mapa otázek, které si navzájem prozrazují odpověď (data/konflikty.json pro offline hru,
+// functions/_lib/konflikty.js pro online), je taky GENEROVANÁ. Zastaralá by nehlídala nové
+// otázky a u přepsaných by dál zakazovala dvojice, které už nekolidují — proto CHYBA,
+// stejně jako u indexu. Spraví se `npm run build-index`.
+{
+  const { spocitej, textKlient, textServer, CIL_KLIENT, CIL_SERVER } = require("./build-konflikty.js");
+  const { server, klient } = spocitej();
+  for (const [cil, cekam] of [[CIL_KLIENT, textKlient(klient)], [CIL_SERVER, textServer(server)]]) {
+    const jmeno = path.relative(process.cwd(), cil).split(path.sep).join("/");
+    if (!fs.existsSync(cil)) bad("chybí " + jmeno + " — spusť `npm run build-index`");
+    else if (fs.readFileSync(cil, "utf8").split("\r").join("") !== cekam) bad(jmeno + " je zastaralý — spusť `npm run build-index`");
+  }
+}
+
 // Podíl serverového fondu. Otázky s `online_only: true` se nekopírují na web, takže
 // jejich správná odpověď není veřejně k dohledání — a jen z nich může být online hra
 // prokazatelně poctivá. Dokud jich je málo, `pickQuestions` dobírá z veřejných, takže

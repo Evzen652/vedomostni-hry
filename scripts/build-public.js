@@ -22,7 +22,7 @@ const OUT = path.join(KOREN, "dist");
 const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers",
   "podminky.html", "soukromi.html", "smazani-uctu.html", "pravni.css"];
 const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
-const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json"];
+const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json", "data/konflikty.json"];
 
 function kopiruj(zdroj, cil) {
   fs.mkdirSync(path.dirname(cil), { recursive: true });
