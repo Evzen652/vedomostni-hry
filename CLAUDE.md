@@ -81,6 +81,43 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Řecko: 53/53 ilustrací. 9 vad z 53 (17 %) — nejvyšší podíl dosud —
+  ale jen 3 skutečně textové/vizuální, zbytek podpisy. Akropolis potřebovala TŘI pokusy.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **Slovo pojmenovávající KONKRÉTNÍ PŘEDMĚT (ne jen scénu) si řeklo o nápis potřetí
+    za dvě noci, stejný mechanismus jako u Švýcarska.** `gr-q-maria-callas` mělo
+    „An American passport… a Greek passport" → oba kryty dostaly čitelné (zkomolené)
+    „PASSPORT". Oprava: slovo „passport" úplně pryč, nahrazeno „a small closed travel
+    document…, its cover left completely blank".
+  - **Slovo „odds board" (sázková tabule) vyrobilo čitelné „BOOKGMAKRS/ODDS".**
+    `gr-q-euro-2004` přestavěno na analogový budík MÍSTO tabule — ale i tak si druhý
+    pokus řekl o popisek „EXTREME ZONE", protože zadání použilo slovo „extreme zone"
+    jako POPIS polohy ručičky. **Teprve třetí verze („its face completely blank and
+    unmarked except for plain evenly spaced tick lines") prošla čistě.** Poučení:
+    i nepřímé pojmenování stavu (ódy → „extrémní zóna") dokáže vyvolat popisek, ne
+    jen přímé jméno předmětu.
+  - **Zadání se má vyhýbat konkrétním písmenům, i když je fakt PŘÍMO o abecedě.**
+    `gr-q-abeceda` (nejstarší abeceda se soustavným zápisem samohlásek) mělo „colorful
+    vowel-shaped sound bubbles" → model nakreslil čitelná písmena A, E, I, O, U jako
+    bubliny. Oprava: „abstract sound-wave ribbons" bez zmínky o tvaru písmen — funguje,
+    protože fakt o abecedě lze ilustrovat i BEZ zobrazení konkrétních písmen.
+  - **Vizuální (ne textová) chyba: vlajka u `gr-q-valka-za-nezavislost` nevypadala
+    jako řecká** (jen modrý čtverec s bílým křížem, žádné pruhy) — obecné „blue and
+    white flag" nestačí, když je otázka přímo o TÉ vlajce. Popsáno explicitně
+    („alternating blue and white horizontal stripes and a white cross in its corner").
+  - **5 podpisů** (`gr-q-atheny-1896`, `gr-k-more`, `gr-t-kolos-rhodu`, a `gr-q-akropolis`
+    DVAKRÁT — po prvním přeposlání nový podpis jinde ve scéně, čistý až třetí pokus).
+    Stejný vzorec jako slovenská železnice, nizozemský Sinterklaas a švýcarské Lugano —
+    čtvrtý případ v řadě, kde jedna oprava vyrobí novou náhodnou vadu.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 665.** `validate` 0 chyb, `test:offline` 853.
+
+- **2026-09-13 — Zadání pro Bulharsko (52) napsána, zkontrolována a odeslána.**
+  Psáno Sonnetem 5 v session, `lint-irony` 0 chyb. Citlivá témata (osmanská nadvláda
+  482 let, rusko-turecká válka, revolucionář Vasil Levski, medvědi tančící na řetězu
+  před přesunem do sanktuáře) psaná neutrálně/nezobrazivě. Cyrilice (otázka o vzniku
+  písma) řešena stejně jako řecká abeceda — nečitelný „elegant flowing script", žádná
+  konkrétní písmena v popisu.
+
 - **2026-09-13 — Švýcarsko: 62/62 ilustrací. 7 vad z 62 (11 %) — čtyři textové, tři podpisy; Lugano potřebovalo TŘI pokusy, dvakrát kvůli textu a jednou kvůli podpisu.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
   - **Slovo popisující KONKRÉTNÍ TYP PODNIKU si samo řeklo o nápis, počtvrté stejný

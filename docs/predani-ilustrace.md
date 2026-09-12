@@ -1,23 +1,23 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. brzy ráno**, po dokončení Švýcarska
-a odeslání Řecka). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **13. 9. v noci**, po dokončení Řecka
+a odeslání Bulharska). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
-Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko).
+Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko).
 
 ---
 
-## 1. Stav k 13. 9. 2026 (brzy ráno)
+## 1. Stav k 13. 9. 2026 (noc)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 718** |
-| Hotovo dnes v noci | Slovensko 66/66, Nizozemsko 63/63, **Švýcarsko 62/62** |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Řecko 53 zadání odesláno (`submit --cc gr`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
-| Zadání připravená, ale zatím NEODESLANÁ | **Španělsko (62)** — `lint-irony` 0 chyb, čeká na `submit --cc es` (nástroj sleduje jen jednu dávku najednou, nejdřív musí doběhnout Řecko) |
-| Další v pořadí (po Řecku a Španělsku) | podle `docs/pokracovani.md` / velikosti zbylých fondů |
+| Bez ilustrace | **1 665** |
+| Hotovo dnes v noci | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, **Řecko 53/53** |
+| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Bulharsko 52 zadání odesláno (`submit --cc bg`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
+| Zadání připravená, ale zatím NEODESLANÁ | **Španělsko (62)** — `lint-irony` 0 chyb, čeká na `submit --cc es` |
+| Další v pořadí (po Bulharsku a Španělsku) | podle `docs/pokracovani.md` / velikosti zbylých fondů (Ukrajina 47, Rumunsko 46, Thajsko 45, Turecko 43…) |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -27,40 +27,44 @@ normálně. Kdyby se to stalo znovu, řešení je stejné (dobití, appka/skript
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Řecko, pak odeslat Španělsko
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Bulharsko, pak odeslat Španělsko
 
-Dávka pro Řecko (53 otázek, `batches/j0jrkq0g5zho4bw1fonxu067n5yj6mcjaiat`) byla odeslána
-na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
+Dávka pro Bulharsko (52 otázek, `batches/3epvztef1fsxe0gfmz1lnircw8y75ecrydpi`) byla
+odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
 
 ```bash
 node scripts/batch-irony-images.js status   # počkej na BATCH_STATE_SUCCEEDED
 node scripts/batch-irony-images.js fetch    # uloží do img/{id}.jpg
 
 NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" gr     # přehledové archy 3×3
-node "$NASTROJE/rohy.js" gr      # arch dolních rohů (podpisy)
+node "$NASTROJE/archy.js" bg     # přehledové archy 3×3
+node "$NASTROJE/rohy.js" bg      # arch dolních rohů (podpisy)
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-gr/`,
-pošli přes `submit --cc gr --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Švýcarsku a Nizozemsku výš), `validate` + `test:offline`, commit, push.
+Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-bg/`,
+pošli přes `submit --cc bg --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
+(vzor: zápisy o Řecku a Švýcarsku výš), `validate` + `test:offline`, commit, push.
 
 **Teprve PAK odešli Španělsko** (`submit --cc es`, zadání jsou už v `data/questions/es.json`,
 `lint-irony` 0 chyb) — stejným postupem kontroly.
 
-**Reálné historické osoby psané symbolicky** (Cervantes přes prázdný rukáv, Ramón y Cajal
-přes kresbu neuronů, Elcano přes loď, Nadal přes trofeje — Řecko; Cervantes/Nadal jsou
-Španělsko) a **citlivá témata** (španělská občanská válka, most v Rondě s vězením,
-pandemie 1918, kolonialismus, býčí zápasy — Španělsko; pád Konstantinopole, Thermopyly,
-Sokratova smrt, hora Athos — Řecko) jsou psaná neutrálně/nezobrazivě — zkontroluj, že
-nic nesklouzlo do grafického zobrazení.
+**Citlivá témata v Bulharsku psaná neutrálně/nezobrazivě:** osmanská nadvláda 482 let,
+rusko-turecká válka, revolucionář Vasil Levski (anti-osmanský odboj), medvědi tančící na
+řetězu (vyřešeno pozitivně — přesun do sanktuáře). **Cyrilice** (otázka o vzniku písma)
+je psaná bez konkrétních písmen („elegant flowing script too ornate to read") — stejné
+řešení jako u řecké abecedy, kde PŘÍMÝ popis písmen (A, E, I, O, U) selhal.
 
-**Past ze Švýcarska, na kterou dej pozor i tady:** slovo, které POJMENOVÁVÁ, co věc JE
-nebo K ČEMU SLOUŽÍ (ne jen jak vypadá), se propíše jako čitelný text i s `left blank`
-vedle sebe — u Švýcarska to bylo „espresso bar" na markýze, „export permit" na deskách,
-„quartz" na ciferníku, „franc" na minci. U Řecka/Španělska pozor na podobná slova
-(„betting shop's odds board", „telegraph office", „donation jar" apod.) — kontrolovat
-zvlášť pečlivě.
+**Past, na kterou dej pozor i tady — potvrzeno třikrát za noc (Švýcarsko, Řecko):**
+slovo, které POJMENOVÁVÁ, co věc JE, K ČEMU SLOUŽÍ nebo V JAKÉM JE STAVU (ne jen jak
+vypadá), se propíše jako čitelný text i s `left blank` vedle sebe. U Řecka to bylo
+„passport" na krytu (dvakrát) a „extreme zone" jako POPIS polohy ručičky — funguje
+i nepřímé pojmenování stavu, ne jen přímé jméno předmětu. Řešení je vždycky stejné:
+to slovo/frázi z popisu úplně odstranit.
+
+**Nová past ke sledování: JEDNA oprava dokáže vyrobit NOVÝ náhodný podpis, a to
+i DVAKRÁT po sobě u stejného obrázku** (řecká Akropolis potřebovala tři pokusy — druhý
+pokus opravil text, ale přidal podpis; teprve třetí byl čistý). Po každé opravě
+ZNOVU zkontroluj archy i rohy, i když opravovala jen jednu konkrétní vadu.
 
 ---
 
@@ -96,7 +100,7 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
 | `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
 Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se`, `fr`, `sk`, `nl` a `ch`; `ca` má starší `img-zaloha-ca/`).
+`se`, `fr`, `sk`, `nl`, `ch` a `gr`; `ca` má starší `img-zaloha-ca/`).
 
 ---
 
@@ -153,14 +157,29 @@ neodstraní.
   (espresso bar, export permit, quartz watch, franc coin), model napíše ten
   účel/typ na věc i přes `left blank` vedle. Řešení: to slovo z popisu úplně
   odstranit, ne jen doplnit zápor.
+- **I NEPŘÍMÉ pojmenování stavu vyvolá popisek, ne jen přímé jméno předmětu.**
+  Řecko: „needle pinned into an extreme zone“ vyrobilo čitelné „EXTREME ZONE“ na
+  ciferníku, ačkoli šlo jen o popis POLOHY ručičky, ne o pojmenování přístroje.
+  Pomohlo až úplně obecné „face completely blank and unmarked except for plain
+  evenly spaced tick lines“.
+- **Fakt PŘÍMO o písmenu/abecedě se musí ilustrovat BEZ zobrazení konkrétních
+  písmen.** „Vowel-shaped sound bubbles“ (Řecko, otázka o abecedě) vyrobilo čitelná
+  A/E/I/O/U. Funguje „abstract sound-wave ribbons“ — fakt jde ukázat i opisem.
+- **Obecný popis vlajky („blue and white flag“) nestačí, když je otázka přímo o TÉ
+  vlajce** — Řecko dostalo modrý čtverec s bílým křížem místo pruhované vlajky.
+  Popsat barevné SCHÉMA výslovně, stejně jako u Německa/Rakouska 2026-09-12.
+- **Jedna oprava umí vyrobit DVA po sobě jdoucí náhodné podpisy u téhož obrázku**
+  (řecká Akropolis: 3 pokusy — druhý opravil text, ale přidal podpis). Po každé
+  opravě kontroluj znovu archy i rohy, i když řešila jen jednu konkrétní vadu.
 
 ---
 
 ## 6. Co dělat dál
 
-1. **Stáhnout a zkontrolovat Řecko** (bod 2 výš) — priorita číslo jedna.
+1. **Stáhnout a zkontrolovat Bulharsko** (bod 2 výš) — priorita číslo jedna.
 2. **Odeslat Španělsko** (zadání hotová, jen počkat, až se uvolní sledování dávky).
-3. Pokračovat dál podle `docs/pokracovani.md` / velikosti zbylých fondů.
+3. Pokračovat dál podle `docs/pokracovani.md` / velikosti zbylých fondů — po Španělsku
+   je na řadě Ukrajina (47), Rumunsko (46), Thajsko (45), Turecko (43)…
 4. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 

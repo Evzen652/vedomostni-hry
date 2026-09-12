@@ -41,7 +41,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Plovdiv",
   "source_card": "bg-mista-plovdiv",
   "image_prompt": "Fotorealistický snímek starověkého římského divadla (Ancient Theatre) v Plovdivu při západu slunce, kamenné řady sedadel, staré město v pozadí, bez lidí, 16:9",
-  "about": "Plovdivu"
+  "about": "Plovdivu",
+  "irony_prompt": "A modern city street fills the frame with a deep excavation pit cut right through the middle of it, ancient stone ruins visible layer upon layer going down into the earth beneath the present-day pavement. Smaller and subordinate: an archaeologist brushing dust from a stone; modern trams passing on one side; potted flowers on a balcony above. MOOD: timeless, layered."
  },
  {
   "id": "bg-q-nesebar",
@@ -63,7 +64,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nessebar",
   "source_card": "bg-mista-nesebar",
   "image_prompt": "Fotorealistický snímek starobylých kamenných kostelů a dřevěných domů na poloostrově Nesebar obklopeném Černým mořem, večerní světlo, bez lidí, 16:9",
-  "about": "Nesebaru"
+  "about": "Nesebaru",
+  "irony_prompt": "A tiny peninsula town fills the frame absolutely crowded with dozens of small stone church domes and bell towers packed shoulder to shoulder, barely any space between them. Smaller and subordinate: fishing boats in the harbor; cobblestone alleys winding between the churches; seagulls perched on every rooftop. MOOD: dense, historic."
  },
  {
   "id": "bg-q-musala",
@@ -85,7 +87,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Musala",
   "source_card": "bg-priroda-musala",
   "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Musala v pohoří Rila, skalnaté hřebeny, jasná modrá obloha, bez lidí, 16:9",
-  "about": "hoře Musala"
+  "about": "hoře Musala",
+  "irony_prompt": "A snow-capped mountain peak fills the frame towering dramatically above every other surrounding summit on the horizon, clouds drifting below its rocky crown. Smaller and subordinate: a small mountain hut near the base; hikers roped together on a distant ridge; an eagle circling overhead. MOOD: majestic, towering."
  },
  {
   "id": "bg-q-ruzove-udoli",
@@ -107,7 +110,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rose_Valley,_Bulgaria",
   "source_card": "bg-priroda-ruzove-udoli",
   "image_prompt": "Fotorealistický snímek sklizně růží v Růžovém údolí u Kazanlaku za časného rána, ženy v tradičních krojích sbírají růžové květy do pytlů, mlha nad údolím, 16:9",
-  "about": "Růžovém údolí"
+  "about": "Růžovém údolí",
+  "irony_prompt": "A vast valley fills the frame absolutely carpeted in blooming pink roses stretching to the horizon, women in traditional dress hand-picking blossoms into large baskets at dawn. Smaller and subordinate: a copper distillation still steaming nearby; dew glistening on petals; bees buzzing between rows. MOOD: fragrant, abundant."
  },
  {
   "id": "bg-q-cerne-more",
@@ -129,7 +133,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bulgarian_Black_Sea_Coast",
   "source_card": "bg-priroda-cerne-more",
   "image_prompt": "Fotorealistický širokoúhlý snímek písečné pláže bulharského pobřeží Černého moře, klidné moře, ranní světlo, bez lidí, 16:9",
-  "about": "černomořském pobřeží Bulharska"
+  "about": "černomořském pobřeží Bulharska",
+  "irony_prompt": "A long sweeping coastline fills the frame curving into the hazy distance along the Black Sea, a single lighthouse standing at the very edge of what the eye can still see. Smaller and subordinate: fishing boats bobbing near the shore; sunbathers scattered on a beach; seagulls gliding over the waves. MOOD: sweeping, coastal."
  },
  {
   "id": "bg-q-etnika",
@@ -151,7 +156,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
   "source_card": "bg-lide-etnika",
   "image_prompt": "Fotorealistický snímek pouličního trhu v bulharském městě s různorodými návštěvníky, barevné stánky se zeleninou a kořením, denní světlo, bez detailních tváří v popředí, 16:9",
-  "about": "etnickém složení Bulharska"
+  "about": "etnickém složení Bulharska",
+  "irony_prompt": "A large communal table fills the frame set for a shared feast, three distinctly dressed groups of guests seated together in clearly unequal-sized clusters, the largest group filling most of the bench. Smaller and subordinate: shared dishes passed between groups; musicians playing together in the corner; children of different groups playing nearby. MOOD: warm, communal."
  },
  {
   "id": "bg-q-cirkev",
@@ -173,7 +179,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bulgarian_Orthodox_Church",
   "source_card": "bg-lide-cirkev",
   "image_prompt": "Fotorealistický snímek interiéru bulharského pravoslavného kostela se zlatými ikonostasy a freskami, svíčky, tlumené světlo, bez lidí, 16:9",
-  "about": "bulharské pravoslavné církvi"
+  "about": "bulharské pravoslavné církvi",
+  "irony_prompt": "A grand domed church fills the frame standing ancient and weathered among a row of newer, shinier domed churches from other Slavic nations lined up respectfully behind it like younger siblings. Smaller and subordinate: incense smoke curling from the doorway; pigeons on the eaves; worshippers lighting candles outside. MOOD: venerable, proud."
  },
  {
   "id": "bg-q-populace",
@@ -195,7 +202,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Demographics_of_Bulgaria",
   "source_card": "bg-lide-populace",
   "image_prompt": "Fotorealistický snímek téměř opuštěné bulharské horské vesnice, staré domy, prázdná náves, podzimní světlo, 16:9",
-  "about": "ubývajícím obyvatelstvu Bulharska"
+  "about": "ubývajícím obyvatelstvu Bulharska",
+  "irony_prompt": "A vast empty apartment block fills the frame with only a handful of lit windows scattered among rows of dark ones, laundry lines empty where dozens once hung. Smaller and subordinate: an elderly resident watering a single balcony plant; a playground standing empty below; a moving van parked nearby. MOOD: quiet, melancholic, not graphic."
  },
  {
   "id": "bg-q-klaster",
@@ -217,7 +225,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rila_Monastery",
   "source_card": "bg-kultura-klaster",
   "image_prompt": "Fotorealistický snímek Rilského kláštera s pruhovanými oblouky nádvoří v černo-bílo-hnědých barvách, obklopeného zalesněnými horami, denní světlo, 16:9",
-  "about": "Rilském klášteře"
+  "about": "Rilském klášteře",
+  "irony_prompt": "A single hermit's simple cave dwelling fills the frame tucked into a mountainside, while behind it in the far distance a grand monastery with striped arches and towers has grown up around the very same spot. Smaller and subordinate: a wooden staff leaning nearby; a small spring of water; pilgrims climbing the path far below. MOOD: humble, reverent, not graphic."
  },
  {
   "id": "bg-q-kukeri",
@@ -239,7 +248,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kukeri",
   "source_card": "bg-kultura-kukeri",
   "image_prompt": "Fotorealistický snímek bulharského kukera v masce zvířete a huňatém kostýmu s velkými kovovými zvony na opasku při vesnickém průvodu v zimě, sníh, 16:9",
-  "about": "kukerech"
+  "about": "kukerech",
+  "irony_prompt": "A towering figure fills the frame wearing an enormous shaggy costume covered in giant bells and a fearsome carved mask, stomping and leaping through a village street. Smaller and subordinate: startled shadowy wisps fleeing into the trees; children watching excitedly from doorways; snow crunching underfoot. MOOD: wild, festive, not graphic."
  },
  {
   "id": "bg-q-nestinarstvo",
@@ -261,7 +271,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nestinarstvo",
   "source_card": "bg-kultura-nestinarstvo",
   "image_prompt": "Fotorealistický snímek bulharského nestinaria tančícího bosý po žhnoucích uhlících za tmy, jiskry a záře ohně, diváci v pozadí, 16:9",
-  "about": "nestinarstvu"
+  "about": "nestinarstvu",
+  "irony_prompt": "A dancer fills the frame stepping calmly barefoot across a bed of glowing red-hot coals, an icon held reverently in their arms, face serene despite the heat. Smaller and subordinate: musicians playing drums and bagpipes nearby; a circle of awed villagers watching; embers glowing in the dark. MOOD: mystical, intense, not graphic."
  },
  {
   "id": "bg-q-banica",
@@ -283,7 +294,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Banitsa",
   "source_card": "bg-jidlo-banica",
   "image_prompt": "Fotorealistický snímek čerstvě upečené bulharské banici s křupavou zlatavou kůrkou na dřevěném prkénku, pár kousků na talíři, teplé domácí světlo, 16:9",
-  "about": "banici"
+  "about": "banici",
+  "irony_prompt": "A large golden-baked pastry fills the frame steaming fresh from the oven on a festive table, its flaky layered crust cracking open invitingly. Smaller and subordinate: a lit candle nearby; a fortune-telling coin peeking from a slice; family gathered around eagerly. MOOD: warm, festive."
  },
  {
   "id": "bg-q-jogurt",
@@ -305,7 +317,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lactobacillus_delbrueckii_subsp._bulgaricus",
   "source_card": "bg-jidlo-jogurt",
   "image_prompt": "Fotorealistický snímek misky domácího hustého bulharského jogurtu (kiselo mljako) s dřevěnou lžící, rustikální kuchyňský stůl, přirozené světlo, 16:9",
-  "about": "bulharském bacilu v jogurtu"
+  "about": "bulharském bacilu v jogurtu",
+  "irony_prompt": "A single glowing microscopic rod-shaped bacterium fills the frame magnified enormously under a lens, a tiny miniature flag in its home country's colors planted proudly right beside it. Smaller and subordinate: a bowl of thick yogurt nearby; a microscope's brass base; a notebook of sketches. MOOD: curious, proud."
  },
  {
   "id": "bg-q-shopska",
@@ -327,7 +340,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Shopska_salad",
   "source_card": "bg-jidlo-shopska",
   "image_prompt": "Fotorealistický snímek šopského salátu s nakrájenými rajčaty, okurkami, paprikou a hromadou strouhaného bílého sýra navrchu, dřevěný stůl, denní světlo, 16:9",
-  "about": "šopském salátu"
+  "about": "šopském salátu",
+  "irony_prompt": "A colorful chopped salad of red tomatoes and white crumbled cheese fills the frame arranged on a plate in three distinct horizontal bands of color, a small flag planted beside it revealing the same colors by pure coincidence. Smaller and subordinate: a sprig of parsley; olive oil drizzled over top; a rustic wooden table. MOOD: playful, coincidental."
  },
  {
   "id": "bg-q-asparuch",
@@ -349,7 +363,8 @@
   "source_url": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire",
   "source_card": "bg-historie-asparuch",
   "image_prompt": "Fotorealistická historizující ilustrace bulharských jezdců chána Asparucha na koních u řeky Dunaj, ranní mlha nad deltou, 16:9",
-  "about": "chánu Asparuchovi"
+  "about": "chánu Asparuchovi",
+  "irony_prompt": "A mounted warrior chieftain fills the frame standing triumphant on a riverbank as a formal treaty scroll is unrolled before him by kneeling envoys. Smaller and subordinate: a horsetail standard planted in the ground; distant fortifications on the horizon; a river marking the new border. MOOD: triumphant, historic, not graphic."
  },
  {
   "id": "bg-q-osmani",
@@ -371,7 +386,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria",
   "source_card": "bg-historie-osmani",
   "image_prompt": "Fotorealistická historizující ilustrace osmanské pevnosti a mešity v bulharském městě z 18. století, večerní světlo, 16:9",
-  "about": "osmanské nadvládě nad Bulharskem"
+  "about": "osmanské nadvládě nad Bulharskem",
+  "irony_prompt": "A tall hourglass fills the frame with sand slowly trickling down, centuries of grains already piled at the bottom beneath a crescent moon symbol etched into the glass. Smaller and subordinate: a folded banner waiting nearby; a quiet village in the background; mountains standing unchanged. MOOD: solemn, patient, not graphic."
  },
  {
   "id": "bg-q-osvobozeni",
@@ -393,7 +409,8 @@
   "source_url": "https://en.wikipedia.org/wiki/History_of_Bulgaria",
   "source_card": "bg-historie-osvobozeni",
   "image_prompt": "Fotorealistický snímek památníku svobody na vrcholu Šipka v Balkánském pohoří, kamenný monument na hřebeni hor, jasný den, 16:9",
-  "about": "osvobození Bulharska 1878"
+  "about": "osvobození Bulharska 1878",
+  "irony_prompt": "A soldier fills the frame planting a flag firmly into the ground atop a captured hilltop fortress at dawn, exhausted troops cheering behind him. Smaller and subordinate: a distant retreating column of soldiers; smoke clearing from the battlefield; church bells visible ringing in a nearby village. MOOD: triumphant, historic, not graphic."
  },
  {
   "id": "bg-q-zapas",
@@ -415,7 +432,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sport_in_Bulgaria",
   "source_card": "bg-sport-zapas",
   "image_prompt": "Fotorealistický snímek dvou zápasníků v akci na žíněnce v hale, dramatické osvětlení, diváci rozostření v pozadí, 16:9",
-  "about": "zápase jako bulharském olympijském sportu"
+  "about": "zápase jako bulharském olympijském sportu",
+  "irony_prompt": "Two wrestlers fill the frame locked in an intense grapple on a mat, muscles straining, a wall of gleaming medals visible hanging in the background training hall. Smaller and subordinate: a coach shouting instructions from the sideline; a referee watching closely; a trophy case nearby. MOOD: intense, triumphant, not graphic."
  },
  {
   "id": "bg-q-stoickov",
@@ -437,7 +455,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hristo_Stoichkov",
   "source_card": "bg-sport-stoickov",
   "image_prompt": "Fotorealistický snímek fotbalisty v bulharském dresu oslavujícího gól na velkém stadionu, večerní osvětlení, dav v pozadí, 16:9",
-  "about": "Hristu Stoičkovovi"
+  "about": "Hristu Stoičkovovi",
+  "irony_prompt": "A football fills the frame curling dramatically into the top corner of a goal net, the goalkeeper diving hopelessly a moment too late under floodlights. Smaller and subordinate: an ecstatic crowd erupting in the stands; a golden boot trophy glinting nearby; teammates sprinting to celebrate. MOOD: triumphant, explosive."
  },
  {
   "id": "bg-q-panova",
@@ -459,7 +478,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bianka_Panova",
   "source_card": "bg-sport-panova",
   "image_prompt": "Fotorealistický snímek moderní gymnastky ve fialovém dresu s barevnou stuhou během vystoupení v hale, dramatické osvětlení, 16:9",
-  "about": "Biance Panové"
+  "about": "Biance Panové",
+  "irony_prompt": "Five gleaming gold medals fill the frame hanging in a perfect row on a single ribbon, a ribbon gymnastics apparatus draped elegantly beside them. Smaller and subordinate: a spotlight shining down; a judge's scorecard glowing dimly out of focus; rose petals scattered on the floor. MOOD: triumphant, elegant."
  },
  {
   "id": "bg-q-kyvani",
@@ -481,7 +501,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Head_shake",
   "source_card": "bg-jazyk-kyvani",
   "image_prompt": "Fotorealistický portrétní snímek bulharského prodavače na tržišti gestikulujícího hlavou při rozhovoru se zákazníkem, přirozené denní světlo, bez textu, 16:9",
-  "about": "bulharském přikyvování"
+  "about": "bulharském přikyvování",
+  "irony_prompt": "A person fills the frame nodding their head firmly up and down while holding up a hand in a clear refusing gesture, a confused foreign tourist across from them looking increasingly puzzled. Smaller and subordinate: a market stall of goods being declined; pigeons scattering nearby; a shrugging bystander watching. MOOD: whimsical, confusing."
  },
  {
   "id": "bg-q-cyrilice",
@@ -503,7 +524,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Early_Cyrillic_alphabet",
   "source_card": "bg-jazyk-cyrilice",
   "image_prompt": "Fotorealistický snímek staré kamenné desky s vytesaným raně cyrilickým nápisem v archeologickém nalezišti Veliki Preslav, denní světlo, 16:9",
-  "about": "cyrilici"
+  "about": "cyrilici",
+  "irony_prompt": "A quill pen fills the frame hovering over a parchment covered in elegant flowing script too ornate and stylized to read clearly, monks bent over their own desks doing the same work in a candlelit scriptorium behind. Smaller and subordinate: pots of ink; stacks of blank parchment; a single candle burning low. MOOD: scholarly, foundational."
  },
  {
   "id": "bg-q-pady",
@@ -525,7 +547,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Balkan_sprachbund",
   "source_card": "bg-jazyk-pady",
   "image_prompt": "Fotorealistický snímek bulharského nápisu na ulici s cedulemi obchodů, detail cyrilického textu, denní světlo, 16:9",
-  "about": "bulharském pádovém systému"
+  "about": "bulharském pádovém systému",
+  "irony_prompt": "A single simplified wooden puzzle box fills the frame with most of its complicated moving compartments removed, sitting proudly beside a row of much more intricate, many-compartment puzzle boxes representing neighboring languages. Smaller and subordinate: wood shavings from the simplification; a craftsman's tool nearby; sunlight through a workshop window. MOOD: wry, clever."
  },
  {
   "id": "bg-q-bojana",
@@ -547,7 +570,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Boyana_Church",
   "source_card": "bg-umeni-bojana",
   "image_prompt": "Fotorealistický snímek interiéru Boyanského kostela u Sofie s barevnými středověkými freskami postav na klenutých zdech, tlumené světlo svíček, bez lidí, 16:9",
-  "about": "Boyanském kostele"
+  "about": "Boyanském kostele",
+  "irony_prompt": "A small stone church fills the frame with strikingly lifelike painted faces gazing out from its interior walls, centuries ahead of the flat stylized art typically expected from that era. Smaller and subordinate: a restorer carefully cleaning one fresco; candlelight flickering across the painted faces; dust motes in a sunbeam. MOOD: reverent, remarkable, not graphic."
  },
  {
   "id": "bg-q-christo",
@@ -569,7 +593,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Christo",
   "source_card": "bg-umeni-christo",
   "image_prompt": "Fotorealistický snímek berlínského Reichstagu zabaleného do stříbrné látky podle díla Christa Wrapped Reichstag, davy lidí v okolí, denní světlo, 16:9",
-  "about": "Christovi"
+  "about": "Christovi",
+  "irony_prompt": "A massive building fills the frame completely wrapped from top to bottom in flowing fabric, ropes tied in giant bows holding it all in place. Smaller and subordinate: curious onlookers pointing up in amazement; a crane still adjusting the final fold; wind rippling the fabric dramatically. MOOD: surreal, monumental."
  },
  {
   "id": "bg-q-balkanska",
@@ -591,7 +616,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Voyager_Golden_Record",
   "source_card": "bg-umeni-balkanska",
   "image_prompt": "Fotorealistický snímek bulharské zpěvačky v tradičním rodopském kroji zpívající na horské louce při západu slunce, bez dalších lidí, 16:9",
-  "about": "písni na Voyagerské zlaté desce"
+  "about": "písni na Voyagerské zlaté desce",
+  "irony_prompt": "A golden record fills the frame spinning slowly in the vacuum of space, delicate sound waves rippling visibly outward from it toward distant twinkling stars. Smaller and subordinate: a small spacecraft drifting nearby; Earth glimpsed tiny and blue in the far distance; a phonograph needle glinting in starlight. MOOD: wondrous, cosmic."
  },
  {
   "id": "bg-k-vlajka",
@@ -611,7 +637,8 @@
   "quip_correct": "Trefa do černého! Tuhle trojici barev bulharské děti kreslí ve školce jako úplně první vlajku zpaměti.",
   "quip_wrong": "Barvy sedí, pořadí ne — bulharská vlajka jde shora dolů bílá, zelená, červená.",
   "explanation": "Bulharská vlajka má tři vodorovné pruhy — bílý nahoře, zelený uprostřed a červený dole. Zelená symbolizuje přírodu a zemědělství, červená odvahu a boj za svobodu, bílá mír.",
-  "about": "bulharské vlajce"
+  "about": "bulharské vlajce",
+  "irony_prompt": "A giant flag fills the frame with three bold horizontal stripes, white, green and red, flapping proudly against a clear sky, a delighted child pointing at each color in turn. Smaller and subordinate: pigeons resting on the flagpole; a mountain backdrop; a rose bush blooming nearby. MOOD: cheerful, sunny."
  },
  {
   "id": "bg-k-ruzicky",
@@ -631,7 +658,8 @@
   "quip_correct": "Trefa do vůně! Sbírá se ještě za rosy, než vyjde slunce — jinak by droboučký olej v lístcích vyprchal.",
   "quip_wrong": "Skoro, ale ne tak úplně — tu slavnou vůni ti přisoudila špatná kytička, patří damašské růži, ne té, na kterou jsi myslel.",
   "explanation": "V Údolí růží kolem Kazanlaku se každý rok v květnu sbírají ručně okvětní lístky ještě před východem slunce. Na jeden litr vzácného růžového oleje je třeba přes tři tuny lístků.",
-  "about": "bulharských růžích"
+  "about": "bulharských růžích",
+  "irony_prompt": "A giant pink rose fills the frame with morning dew still glistening on its petals, a delighted child carefully placing a single bloom into a large wicker basket. Smaller and subordinate: rows of rose bushes stretching behind; bees buzzing gently; a copper distillery steaming in the distance. MOOD: cheerful, fragrant, sunny."
  },
  {
   "id": "bg-k-martenitsa",
@@ -651,7 +679,8 @@
   "quip_correct": "Skvěle! Červená a bílá na zápěstí — nosí se, dokud neuvidíš prvního čápa nebo rozkvetlý strom.",
   "quip_wrong": "Žlutá kytice? Zelený věnec? Ani jedno — na první březen patří červenobílá martenica.",
   "explanation": "Martenica je tradiční bulharský zvyk. Červená a bílá pletýnka se váže na zápěstí nebo připíná na oblečení a nosí se do chvíle, kdy poprvé uvidíš čápa, vlaštovku nebo kvetoucí strom — pak ji odneseš a uvážeš na větev.",
-  "about": "martenici"
+  "about": "martenici",
+  "irony_prompt": "A red and white woven bracelet fills the frame being tied gently around a delighted child's wrist by a smiling grown-up, tiny tassels dangling. Smaller and subordinate: budding tree branches nearby; a stork returning to its nest overhead; the last patch of melting snow. MOOD: cheerful, springlike, sunny."
  },
  {
   "id": "bg-k-banica-napln",
@@ -671,7 +700,8 @@
   "quip_correct": "Recept sedí napoprvé — vejce, jogurt, sýr sirene, tři suroviny a celá ulice voní snídaní.",
   "quip_wrong": "Sladká představa, ale omyl — banica je slaná, žádná jablka se skořicí ani čokoládový krém, jen vejce, jogurt a sýr.",
   "explanation": "Banica je bulharské slané pečivo z tenkých plátů těsta. Náplň tvoří vejce, jogurt a bílý sýr sirene, podobný feta sýru. Peče se ve spirále nebo ve vrstvách a jí se ráno k snídani.",
-  "about": "banici"
+  "about": "banici",
+  "irony_prompt": "A thick wedge of flaky pastry fills the frame revealing a rich creamy filling of eggs and crumbled white cheese oozing out, steam still rising. Smaller and subordinate: a delighted child reaching for a bite; a jar of yogurt nearby; a checkered napkin. MOOD: cheerful, cozy, sunny."
  },
  {
   "id": "bg-t-vitosha",
@@ -692,7 +722,8 @@
   "quip_wrong": "Tvůj tip je bulharská hora, jen ne sousedka Sofie — ta se jmenuje Vitoša.",
   "explanation": "Vitoša se zvedá hned za jižním okrajem Sofie a patří mezi mála hory na světě, které jsou vidět přímo z centra hlavního města — na sjezdovky se z města dostaneš i tramvají.",
   "about": "hoře Vitoša",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, snow-capped mountain rising directly behind a small hillside city, ski slopes visible on the near side"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, snow-capped mountain rising directly behind a small hillside city, ski slopes visible on the near side",
+  "irony_prompt": "A snow-covered mountain slope fills the frame rising directly behind a sprawling city skyline, skiers carving fresh tracks down its face while streetlights twinkle in the valley below. Smaller and subordinate: a cable car climbing the slope; pine trees dusted with snow; city traffic glimpsed far below. MOOD: dramatic, contrasting."
  },
  {
   "id": "bg-k-horo",
@@ -713,7 +744,8 @@
   "quip_wrong": "Valčík? Polka? Kankán? Žádný z nich se v bulharském kruhu netančí - tenhle tanec se jmenuje horo.",
   "explanation": "Horo se v Bulharsku tančí na svatbách i vesnických oslavách už stovky let a kroky se v rodinách dědí z generace na generaci, aniž by je někdo učil ve škole.",
   "about": "tanci horo",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a circle of dancers holding hands in traditional embroidered costumes on a village square"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a circle of dancers holding hands in traditional embroidered costumes on a village square",
+  "irony_prompt": "A joyful circle of dancers fills the frame holding hands and kicking in unison, spinning faster and faster around a central point. Smaller and subordinate: a delighted child joining the end of the line; musicians playing bagpipes nearby; onlookers clapping along. MOOD: cheerful, energetic, sunny."
  },
  {
   "id": "bg-t-levski",
@@ -734,7 +766,8 @@
   "quip_wrong": "Skoro se to povedlo, ale ne úplně — zbožnost do toho netahej, Levského zbraně byly konspirace a odvaha, ne kázání.",
   "explanation": "Osmanské úřady Levského roku 1873 dopadly a popravily; dnes po něm nese jméno stovky ulic a náměstí a v anketách bývá opakovaně volen za největšího Bulhara všech dob.",
   "about": "Vasilu Levském",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a lone 19th-century revolutionary figure in a dark coat and fur hat standing resolute on a hillside path at dusk"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a lone 19th-century revolutionary figure in a dark coat and fur hat standing resolute on a hillside path at dusk",
+  "irony_prompt": "A worn leather satchel and walking staff fill the frame resting against a humble roadside marker, a network of small red threads pinned on a map behind connecting dozens of distant villages. Smaller and subordinate: a lantern for night travel; simple peasant clothing folded nearby; a rooster crowing at dawn. MOOD: determined, quietly heroic, not graphic."
  },
  {
   "id": "bg-t-madara",
@@ -755,7 +788,8 @@
   "quip_wrong": "Zvíře máš správně, ale scénu sis domyslel jinak.",
   "explanation": "Madarský jezdec vznikl pravděpodobně na začátku 8. století, je jediným reliéfem svého druhu v Evropě a dnes se objevuje i na bulharských oběžných mincích.",
   "about": "Madarském jezdci",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a horseman relief carved high into a sheer cliff face, weathered stone, soft morning light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a horseman relief carved high into a sheer cliff face, weathered stone, soft morning light",
+  "irony_prompt": "A towering relief carved high into a sheer cliff face fills the frame, a mounted horseman frozen mid-thrust with a spear toward a lion beneath his horse's hooves. Smaller and subordinate: eagles nesting in nearby crevices; a small shrine at the cliff's base; hikers gazing up in awe. MOOD: ancient, dramatic, not graphic."
  },
  {
   "id": "bg-t-belogradchik",
@@ -776,7 +810,8 @@
   "quip_wrong": "Kamenný odhad, ale bohužel mylný — kamenné jsou, jenže žádný sochař ani filmový štáb za tím nestojí.",
   "explanation": "Červené pískovcové skály u Belogradčiku formovaly vítr a voda přes 200 milionů let a kolem nejznámějších útvarů dodnes koluje lidová pověst o zkamenělých mniších a jeptiškách.",
   "about": "belogradčických skalách",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, tall reddish rock formations shaped like robed figures rising from a forested hillside"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, tall reddish rock formations shaped like robed figures rising from a forested hillside",
+  "irony_prompt": "Towering reddish rock formations fill the frame, their weathered silhouettes eerily resembling a hooded figure and a lumbering bear standing side by side against the sky. Smaller and subordinate: hikers pointing up in wonder; a winding trail below; birds nesting in the crevices. MOOD: whimsical, striking."
  },
  {
   "id": "bg-t-dimitrov",
@@ -797,7 +832,8 @@
   "quip_wrong": "Sláva mu nechyběla, ale zrovna tenhle turnaj to nebyl.",
   "explanation": "Grigor Dimitrov vyhrál v listopadu 2017 Turnaj mistrů v Londýně a dostal se na třetí místo žebříčku ATP — výš se v historii bulharský tenista nikdy nedostal.",
   "about": "Grigoru Dimitrovovi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a tennis player mid-swing on an outdoor clay court, warm afternoon light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a tennis player mid-swing on an outdoor clay court, warm afternoon light",
+  "irony_prompt": "A trophy fills the frame held aloft triumphantly above a tennis court, a world ranking board glowing dimly out of focus in the background showing a dramatic climb near the very top. Smaller and subordinate: a national flag draped over a shoulder; scattered tennis balls; a cheering crowd blurred in the stands. MOOD: triumphant, historic."
  },
  {
   "id": "bg-t-ljutenica",
@@ -818,7 +854,8 @@
   "quip_wrong": "Pálivou stopu jsi vycítil správně, jenže formu úplně vedle.",
   "explanation": "Ljutenica se v Bulharsku tradičně vaří koncem léta z čerstvě upečených paprik a rajčat a zavařuje do sklenic na celou zimu — na stole je stejně samozřejmá jako u nás hořčice.",
   "about": "ljutenici",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a row of glass jars filled with deep red pepper spread on a sunlit kitchen windowsill"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a row of glass jars filled with deep red pepper spread on a sunlit kitchen windowsill",
+  "irony_prompt": "A tall glass jar of thick red pepper and tomato spread fills the frame standing proudly among dozens of identical jars lined up on a pantry shelf. Smaller and subordinate: a wooden spoon resting nearby; fresh peppers roasting on a stove in the background; bread waiting to be spread. MOOD: homely, abundant."
  },
  {
   "id": "bg-a-varna-zlato",
@@ -839,7 +876,8 @@
   "quip_wrong": "Rekord to skutečně je, jenom ne tenhle.",
   "explanation": "Varnenská nekropole pochází z 5. tisíciletí před naším letopočtem a obsahuje přes tři tisíce zlatých artefaktů — je to nejstarší doložené zpracované zlato, jaké se kdy na Zemi našlo.",
   "about": "varnenském zlatém pokladu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, small ancient gold ornaments laid out on dark excavated earth"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, small ancient gold ornaments laid out on dark excavated earth",
+  "irony_prompt": "A dazzling collection of ancient gold ornaments fills the frame laid out on dark soil in an excavation pit, their gleam completely undiminished despite being unearthed after thousands of years underground. Smaller and subordinate: an archaeologist's brush resting nearby; small flags marking the grave site; sunlight catching the gold's shine. MOOD: awe-inspiring, ancient, not graphic."
  },
  {
   "id": "bg-a-kostadinova",
@@ -860,7 +898,8 @@
   "quip_wrong": "Tentokrát ne — trend sis odhadl přesně obráceně.",
   "explanation": "Stefka Kostadinovová skočila 209 centimetrů v roce 1987 v Římě a je to nejdéle nepřekonaný světový rekord ze všech disciplín ženské atletiky.",
   "about": "světovém rekordu Stefky Kostadinovové",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a high jumper arched over a bar against a stadium sky at dusk"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, a high jumper arched over a bar against a stadium sky at dusk",
+  "irony_prompt": "A high jump bar fills the frame set impossibly high above a stadium track, decades of calendar pages fluttering away in the wind beneath it while the bar itself has never once been touched since. Smaller and subordinate: a foam landing mat waiting below; a stopwatch frozen on an official's wrist; an empty stadium at dusk. MOOD: awe-inspiring, timeless."
  },
  {
   "id": "bg-a-internet",
@@ -881,7 +920,8 @@
   "quip_wrong": "Tentokrát mimo, ačkoli logicky — tvůj odhad je přesný opak toho, co o Sofii historicky ukazovaly žebříčky rychlosti připojení.",
   "explanation": "Rychlý sofijský internet vznikl v 90. letech, když si sousedé sami natahovali kabely mezi paneláky a stavěli neoficiální lokální sítě — stát je později zlegalizoval a zdědil tak hustou a levnou infrastrukturu.",
   "about": "rychlosti internetu v Sofii",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, tangled cables strung between old apartment block balconies against a city skyline"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters, tangled cables strung between old apartment block balconies against a city skyline",
+  "irony_prompt": "A tangle of glowing fiber optic cables fills the frame pulsing with light beneath a modest city street, data streaming past far faster than the wealthier glass skyscrapers glimpsed on the distant horizon. Smaller and subordinate: a technician checking a junction box; a laptop open on a café table nearby; stars beginning to appear overhead. MOOD: quietly impressive, modern."
  },
  {
   "id": "bg-k-storks-village-roofs",
@@ -903,7 +943,8 @@
   "explanation": "Čápi se každý rok vracejí do stejného hnízda, které si postupně zvětšují, a na zimu odlétají celou cestu až do Afriky.",
   "source_url": "https://cs.wikipedia.org/wiki/%C4%8C%C3%A1p_b%C3%ADl%C3%BD",
   "image_prompt": "Fotorealistický snímek velkého čapího hnízda na komíně starého venkovského domu v Bulharsku, bílý čáp stojící v hnízdě, vesnická krajina v pozadí, jasné odpolední světlo, 16:9",
-  "about": "čápech v bulharských vesnicích"
+  "about": "čápech v bulharských vesnicích",
+  "irony_prompt": "A pair of large white storks fill the frame building an enormous twiggy nest atop a village chimney, a delighted child pointing up excitedly from the street below. Smaller and subordinate: a stork clattering its beak; village rooftops stretching into the distance; a cart passing below. MOOD: cheerful, charming, sunny."
  },
  {
   "id": "bg-k-belitsa-bear-park",
@@ -925,7 +966,8 @@
   "explanation": "Medvědi v parku u Belice se učí znovu chovat jako divocí medvědi – hrabat, lovit mravence a zimu prospat v pelechu.",
   "source_url": "https://en.wikipedia.org/wiki/Dancing_Bears_Park",
   "image_prompt": "Fotorealistický snímek hnědého medvěda odpočívajícího na trávě v rozlehlém lesnatém parku v bulharských horách, sluneční paprsky mezi stromy, klidná atmosféra, 16:9",
-  "about": "medvědím parku u Belice"
+  "about": "medvědím parku u Belice",
+  "irony_prompt": "A contented brown bear fills the frame lounging peacefully in a lush forest enclosure, a broken chain link lying forgotten and rusted in the grass beside it. Smaller and subordinate: a delighted child watching happily from a safe viewing platform; a pool for the bear to splash in; butterflies fluttering nearby. MOOD: cheerful, heartwarming, not graphic."
  },
  {
   "id": "bg-t-tsarevets-fortress-lights",
@@ -947,7 +989,8 @@
   "explanation": "Pevnost Carevec bývala sídlem bulharských panovníků a její světelná show vypráví pomocí laserů celou její dávnou historii.",
   "source_url": "https://cs.wikipedia.org/wiki/Carevec",
   "image_prompt": "Fotorealistický snímek pevnosti Carevec ve Velikém Tarnovu v noci osvětlené barevnými reflektory, kopec s hradbami nad řekou, hvězdné nebe, 16:9",
-  "about": "pevnosti Carevec"
+  "about": "pevnosti Carevec",
+  "irony_prompt": "An ancient hilltop fortress fills the frame glowing dramatically with colorful lights against the night sky, beams sweeping across its towers in time with unseen music. Smaller and subordinate: a crowd gathered on the riverbank below watching; reflections shimmering on the water; fireworks bursting overhead. MOOD: dramatic, magical."
  },
  {
   "id": "bg-t-alexander-nevsky-golden-domes",
@@ -969,7 +1012,8 @@
   "explanation": "Katedrála pojme dovnitř až deset tisíc lidí najednou a patří mezi největší pravoslavné chrámy na celém Balkáně.",
   "source_url": "https://cs.wikipedia.org/wiki/Katedr%C3%A1la_Alexandra_N%C4%9Bvsk%C3%A9ho_(Sofie)",
   "image_prompt": "Fotorealistický snímek katedrály Alexandra Něvského v Sofii se zlatými kopulemi za slunečného dne, lidé procházející náměstím před chrámem, modrá obloha, 16:9",
-  "about": "katedrále Alexandra Něvského"
+  "about": "katedrále Alexandra Něvského",
+  "irony_prompt": "A grand cathedral with gleaming golden domes fills the frame towering over the city skyline, catching the sunset light so brightly it seems to glow from within. Smaller and subordinate: pigeons circling the towers; pedestrians pausing to admire it; a tram passing in the foreground. MOOD: majestic, radiant."
  },
  {
   "id": "bg-k-sirene-white-cheese",
@@ -991,7 +1035,8 @@
   "explanation": "Sirene se dělá z kravského, ovčího nebo kozího mléka a zraje ponořené ve slaném nálevu, díky čemuž vydrží déle čerstvé.",
   "source_url": "https://en.wikipedia.org/wiki/Sirene",
   "image_prompt": "Fotorealistický snímek kostek bílého bulharského sýra sirene na dřevěném prkénku vedle rajčat a okurek, jasné denní světlo v kuchyni, 16:9",
-  "about": "bulharském sýru sirene"
+  "about": "bulharském sýru sirene",
+  "irony_prompt": "A block of crumbly white cheese fills the frame being generously crumbled over a colorful salad, a delighted child sprinkling extra on top. Smaller and subordinate: a wooden cheese board; a drizzle of olive oil; fresh herbs scattered nearby. MOOD: cheerful, sunny."
  },
  {
   "id": "bg-k-easter-egg-tapping",
@@ -1013,7 +1058,8 @@
   "explanation": "Tomu, komu vajíčko po celém klání zůstane celé, prý podle staré víry přeje štěstí po celý následující rok.",
   "source_url": "https://en.wikipedia.org/wiki/Egg_tapping",
   "image_prompt": "Fotorealistický snímek dětských rukou ťukajících spolu barevně obarvenými velikonočními vajíčky nad prostřeným stolem, sváteční bulharská atmosféra, 16:9",
-  "about": "velikonočním ťukání vajíček"
+  "about": "velikonočním ťukání vajíček",
+  "irony_prompt": "Two brightly dyed eggs fill the frame clinking together at their tips, one already showing a tiny crack while the other stays perfectly intact, two delighted children gripping them eagerly. Smaller and subordinate: a basket of more colored eggs; scattered eggshell fragments; a festive tablecloth. MOOD: cheerful, playful, sunny."
  },
  {
   "id": "bg-k-koledari-christmas-carolers",
@@ -1035,7 +1081,8 @@
   "explanation": "Hospodáři koledníky za jejich přání zdraví a bohaté úrody odměňují koláči, ovocem nebo drobnými mincemi.",
   "source_url": "https://en.wikipedia.org/wiki/Koleduvane",
   "image_prompt": "Fotorealistický snímek skupiny bulharských chlapců v tradičních krojích zpívajících koledy u dveří venkovského domu v zimě, sníh na zemi, večerní světlo z oken, 16:9",
-  "about": "bulharských koledařích"
+  "about": "bulharských koledařích",
+  "irony_prompt": "A group of young carolers in traditional costume fills the frame singing joyfully at a snowy doorstep, breath visible in the cold air. Smaller and subordinate: a delighted child listening from a lit window; a decorated wreath on the door; footprints trailing through fresh snow. MOOD: cheerful, festive, cozy."
  },
  {
   "id": "bg-k-rhythmic-gymnastics-ribbons",
@@ -1057,7 +1104,8 @@
   "explanation": "Bulharským družstvům v rytmické gymnastice se dlouho přezdívalo zlatá děvčátka díky sbírce olympijských a mistrovských medailí.",
   "source_url": "https://en.wikipedia.org/wiki/Rhythmic_gymnastics",
   "image_prompt": "Fotorealistický snímek mladé gymnastky v barevném dresu švihající dlouhou stuhou během vystoupení ve sportovní hale, dynamický pohyb, jasné osvětlení haly, 16:9",
-  "about": "bulharské rytmické gymnastice"
+  "about": "bulharské rytmické gymnastice",
+  "irony_prompt": "A gymnast fills the frame swirling a long colorful ribbon into elegant spiraling loops through the air, a delighted child in the audience trying to copy the shape with their arm. Smaller and subordinate: a hoop and ball resting nearby; judges watching attentively; spotlights sweeping the floor. MOOD: cheerful, graceful, sunny."
  },
  {
   "id": "bg-k-lion-coat-of-arms",
@@ -1079,7 +1127,8 @@
   "explanation": "Zlatý lev se objevuje na bulharských pečetích a mincích už stovky let, a proto se Bulharsku někdy říká lví země.",
   "source_url": "https://cs.wikipedia.org/wiki/St%C3%A1tn%C3%AD_znak_Bulharska",
   "image_prompt": "Fotorealistický snímek vyřezávaného zlatého lva jako součásti bulharského státního znaku na kamenné budově, detailní záběr, sluneční světlo zvýrazňující zlaté prvky, 16:9",
-  "about": "lvovi na bulharském státním znaku"
+  "about": "lvovi na bulharském státním znaku",
+  "irony_prompt": "A majestic golden lion fills the frame standing proudly on a hillside, mane flowing in the wind, a delighted child looking up at it in awe from a safe distance. Smaller and subordinate: mountains in the background; a fluttering flag on a nearby pole; butterflies drifting past. MOOD: cheerful, majestic, sunny."
  },
  {
   "id": "bg-k-seven-rila-lakes",
@@ -1101,7 +1150,8 @@
   "explanation": "Každé z jezer má vlastní jméno podle svého tvaru, třeba Slza, Oko nebo Ledvina.",
   "source_url": "https://cs.wikipedia.org/wiki/Sedm_rilsk%C3%BDch_jezer",
   "image_prompt": "Fotorealistický snímek horských jezer s tyrkysovou vodou v pohoří Rila v Bulharsku, turistická stezka mezi jezery, skalnaté vrcholky v pozadí, jasný letní den, 16:9",
-  "about": "sedmi rilských jezerech"
+  "about": "sedmi rilských jezerech",
+  "irony_prompt": "Seven sparkling blue lakes fill the frame nestled among rocky mountain peaks at different heights like a giant staircase, a delighted child pointing at each one in turn from a viewpoint. Smaller and subordinate: hikers following a winding trail below; wildflowers dotting the slopes; clouds reflected in the water. MOOD: cheerful, awe-struck, sunny."
  },
  {
   "id": "bg-k-black-sea-dolphins",
@@ -1123,7 +1173,8 @@
   "explanation": "V Černém moři žijí tři druhy kytovců, mezi nimi i sviňucha obecná, nejmenší kytovec celé Evropy.",
   "source_url": "https://en.wikipedia.org/wiki/Cetaceans_of_the_Black_Sea",
   "image_prompt": "Fotorealistický snímek delfínů vyskakujících z vln Černého moře u bulharského pobřeží, pláž a útesy v pozadí, slunečný den, 16:9",
-  "about": "delfínech v Černém moři"
+  "about": "delfínech v Černém moři",
+  "irony_prompt": "A pod of smiling dolphins fills the frame leaping playfully out of sparkling blue waves, a delighted child waving excitedly from a nearby boat. Smaller and subordinate: seagulls skimming the water; a lighthouse on a distant point; sunlight sparkling on the sea. MOOD: cheerful, joyful, sunny."
  },
  {
   "id": "bg-t-bansko-ski-resort",
@@ -1145,6 +1196,7 @@
   "explanation": "Bansko leží v podhůří hory Vichren, která svými necelými třemi tisíci metry patří k nejvyšším v celém Bulharsku.",
   "source_url": "https://cs.wikipedia.org/wiki/Bansko",
   "image_prompt": "Fotorealistický snímek zasněžené sjezdovky a lanovky v lyžařském středisku Bansko v bulharském pohoří Pirin, hory v pozadí, jasné zimní počasí, 16:9",
-  "about": "bulharském lyžařském středisku Bansko"
+  "about": "bulharském lyžařském středisku Bansko",
+  "irony_prompt": "A steep snowy ski slope fills the frame with a racer carving dramatically through gates at high speed, spray of snow flying up behind. Smaller and subordinate: cheering spectators lining the course; a chairlift climbing overhead; a scoreboard glowing dimly out of focus at the finish. MOOD: exhilarating, competitive."
  }
 ]
