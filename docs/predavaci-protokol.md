@@ -118,6 +118,11 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 
 ## 4. Fronta práce
 
+**0. Ilustrace k otázkám — rozdělané, začni tady**
+Německo (66) a Rakousko (64) mají napsaná a zkontrolovaná zadání, ale obrázky se ještě
+negenerovaly; stačí odeslat dávku. Celý postup, nástroje na kontrolu a pasti jsou
+v [predani-ilustrace.md](predani-ilustrace.md). Bez ilustrace je 2 398 otázek z 3 742.
+
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
 
@@ -170,3 +175,4 @@ cíle pod 44 px.
 | Jak nasadit na produkci | `docs/nasazeni.md` |
 | Jak funguje online režim | `docs/online-rezim.md` |
 | Otevřené nálezy z auditů | `AUDIT_REPORT.md` + zápisy v CLAUDE.md |
+| Jak se dělají ilustrace a kde se skončilo | `docs/predani-ilustrace.md` |

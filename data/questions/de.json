@@ -63,7 +63,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Speicherstadt",
   "source_card": "de-mista-speicherstadt",
   "image_prompt": "Fotorealistický širokoúhlý snímek cihlových skladišť Speicherstadt podél kanálů v Hamburku za soumraku, teplá světla odrážející se ve vodě, 16:9",
-  "about": "hamburské Speicherstadt"
+  "about": "hamburské Speicherstadt",
+  "irony_prompt": "A row of tall red-brick warehouses with pointed gables fills the frame, standing right in the water on a forest of thick oak posts like a house on stilts, while a diver in an old brass helmet hugs one post underwater and gives a cheerful thumbs-up. Smaller and subordinate: a narrow canal barge gliding between the walls; a gull perched on a hoist beam; a sack swinging on a crane. MOOD: cosy, gently ironic."
  },
  {
   "id": "de-q-zugspitze",
@@ -85,7 +86,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Zugspitze",
   "source_card": "de-priroda-zugspitze",
   "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Zugspitze v bavorských Alpách, jasná modrá obloha, bez lidí, 16:9",
-  "about": "hoře Zugspitze"
+  "about": "hoře Zugspitze",
+  "irony_prompt": "A snowy mountain summit with a golden cross fills the frame, split down the middle by a painted dotted line, while a beaming hiker stands astride it with one boot on each side and shakes his own hand. Smaller and subordinate: two small flags planted on opposite slopes; a cable-car cabin swaying; an alpine chough. MOOD: cheerful, gently ironic."
  },
  {
   "id": "de-q-vatove-more",
@@ -107,7 +109,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wadden_Sea",
   "source_card": "de-priroda-vatove-more",
   "image_prompt": "Fotorealistický širokoúhlý snímek přílivových bahnitých plání Vatového moře za odlivu podél německého pobřeží Severního moře, dramatická obloha, bez lidí, 16:9",
-  "about": "Vatovém moři"
+  "about": "Vatovém moři",
+  "irony_prompt": "A vast expanse of glistening wet sea floor fills the frame at low tide, with fishing boats sitting tilted in the mud and people in rubber boots strolling where water was an hour ago, while a stranded fish waits in a puddle under a tiny umbrella. Smaller and subordinate: wading birds probing the mud; a distant sandy island; a striped lighthouse. MOOD: funny, airy, gently ironic."
  },
  {
   "id": "de-q-saske-svycarsko",
@@ -129,7 +132,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Saxon_Switzerland",
   "source_card": "de-priroda-saske-svycarsko",
   "image_prompt": "Fotorealistický širokoúhlý snímek pískovcových skalních věží v Saském Švýcarsku nad údolím Labe, ranní mlha, bez lidí, 16:9",
-  "about": "Saském Švýcarsku"
+  "about": "Saském Švýcarsku",
+  "irony_prompt": "A whole forest of slender sandstone towers fills the frame, hundreds of them crowded together like a stone city, with tiny climbers hanging on ropes over every single one as if the whole landscape were a climbing gym. Smaller and subordinate: a stone arch bridge between two towers; mist pooling in the gorges; a falcon riding the updraft. MOOD: airy, cheerful, gently ironic."
  },
  {
   "id": "de-q-gutenberg",
@@ -151,7 +155,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Gutenbergova_bible",
   "source_card": "de-lide-johannes-gutenberg",
   "image_prompt": "Fotorealistický snímek tiskařské dílny 15. století s dřevěným tiskařským lisem a kovovými písmeny, teplé svíčkové osvětlení, 16:9",
-  "about": "Johannesu Gutenbergovi"
+  "about": "Johannesu Gutenbergovi",
+  "irony_prompt": "A heavy wooden printing press fills the frame, its big screw turning as a printer in a leather apron pulls out a freshly pressed sheet of completely blank cream paper, while a monk beside him with a quill drops his jaw at how fast it went. Smaller and subordinate: two round ink balls dripping black; a tall stack of pale empty pages; a candle burning low. MOOD: warm, gently ironic."
  },
  {
   "id": "de-q-einstein",
@@ -173,7 +178,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
   "source_card": "de-lide-albert-einstein",
   "image_prompt": "Fotorealistický archivní portrét fyzika v obleku počátku 20. století, studiové osvětlení, vážný výraz, 16:9",
-  "about": "Albertu Einsteinovi"
+  "about": "Albertu Einsteinovi",
+  "irony_prompt": "An elderly man with wild grey hair and a bushy moustache fills the frame, holding up a golden medal and grinning, while a sunbeam strikes a metal plate beside him and knocks off a spray of tiny glowing sparks. Smaller and subordinate: a drawing of curved bent space being politely shoved out of the picture; a bicycle leaning on the wall; a cat blinking. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "de-q-sophie-scholl",
@@ -195,7 +201,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sophie_Scholl",
   "source_card": "de-lide-sophie-scholl",
   "image_prompt": "Fotorealistický ponurý snímek tlumeně osvětlené univerzitní chodby s rozházenými letáky na zemi, styl 40. let, bez lidí, 16:9",
-  "about": "Sophii Schollové"
+  "about": "Sophii Schollové",
+  "irony_prompt": "A young woman with short dark hair fills the frame, standing at the top of a bright university atrium and letting a snowfall of pale empty leaflets flutter down into the hall below, her face calm and resolute. Smaller and subordinate: students far below looking up in surprise; a wide stone staircase; a shaft of sunlight through high windows. MOOD: quiet, brave, respectful."
  },
  {
   "id": "de-q-oktoberfest",
@@ -217,7 +224,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Oktoberfest",
   "source_card": "de-kultura-oktoberfest",
   "image_prompt": "Fotorealistický širokoúhlý snímek mnichovské louky Theresienwiese za soumraku během Oktoberfestu, obří osvětlené pivní stany, ruské kolo v pozadí, 16:9",
-  "about": "Oktoberfestu"
+  "about": "Oktoberfestu",
+  "irony_prompt": "A huge festival tent fills the frame, where a bride and groom in Bavarian dress stand on a decorated stage toasting each other with enormous foaming beer mugs, while the entire tent of guests raises mugs back at them. Smaller and subordinate: a brass band puffing away; a horse-drawn beer wagon in the entrance; a plain heart-shaped gingerbread hanging on a ribbon. MOOD: festive, cheerful, gently ironic."
  },
  {
   "id": "de-q-kolinsky-karneval",
@@ -239,7 +247,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cologne_Carnival",
   "source_card": "de-kultura-kolinsky-karneval",
   "image_prompt": "Fotorealistický širokoúhlý snímek průvodu Kolínského karnevalu Rosenmontag, barevně kostýmovaný dav podél historických budov, konfety ve vzduchu, denní světlo, 16:9",
-  "about": "Kolínském karnevalu"
+  "about": "Kolínském karnevalu",
+  "irony_prompt": "The balcony doors of an old town hall burst open and a flood of costumed revellers pours out over the square, led by a jester swinging from the hand of a big plain clock face that carries no numerals at all. Smaller and subordinate: confetti raining down; a trumpet blaring; a startled pigeon taking off. MOOD: exuberant, funny."
  },
  {
   "id": "de-q-norimbersky-vanocni-trh",
@@ -261,7 +270,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Christkindlesmarkt,_Nuremberg",
   "source_card": "de-kultura-norimbersky-vanocni-trh",
   "image_prompt": "Fotorealistický širokoúhlý snímek norimberského vánočního trhu Christkindlesmarkt na náměstí Hauptmarkt za soumraku, pruhované stánkové stříšky, teplá světýlka, sníh, 16:9",
-  "about": "norimberském vánočním trhu"
+  "about": "norimberském vánočním trhu",
+  "irony_prompt": "An archivist in white gloves fills the frame, holding up a small battered wooden box as carefully as a treasure, while behind her the wooden stalls of a snowy Christmas market stretch away into the dusk. Smaller and subordinate: steaming mugs of mulled wine; a stall hung with gingerbread hearts; fat snowflakes falling. MOOD: cosy, warm, gently ironic."
  },
  {
   "id": "de-q-bauhaus",
@@ -283,7 +293,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bauhaus",
   "source_card": "de-umeni-bauhaus",
   "image_prompt": "Fotorealistický snímek historické budovy Bauhausu v Desavě, skleněná fasáda, geometrická modernistická architektura, denní světlo, bez lidí, 16:9",
-  "about": "Bauhausu"
+  "about": "Bauhausu",
+  "irony_prompt": "A cube-shaped glass-and-concrete building fills the frame, and through its huge window a painter, a carpenter and a factory worker shake hands across one table on which stands a single sleek teapot that all three of them made together. Smaller and subordinate: a chair of red, blue and yellow tubes; a round lamp; a bundle of steel pipes. MOOD: bright, cheerful, gently ironic."
  },
  {
   "id": "de-q-durer",
@@ -305,7 +316,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)",
   "source_card": "de-umeni-durer",
   "image_prompt": "Fotorealistický detailní snímek renesančního olejomalby sebeportrétu vystaveného v muzejní galerii, tmavé pozadí, dramatické osvětlení, bez textu, 16:9",
-  "about": "Albrechtu Dürerovi"
+  "about": "Albrechtu Dürerovi",
+  "irony_prompt": "A young painter with long curls and a soft beard fills the frame, facing the viewer dead straight on with solemn eyes and one hand raised, while every other portrait on the studio wall is turned modestly three-quarters away and stares at him in shock. Smaller and subordinate: a mirror on an easel; a palette; a small dog looking up. MOOD: solemn, gently ironic."
  },
  {
   "id": "de-q-caspar-david-friedrich",
@@ -327,7 +339,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Poutn%C3%ADk_nad_mo%C5%99em_mlhy",
   "source_card": "de-umeni-caspar-david-friedrich",
   "image_prompt": "Fotorealistický širokoúhlý snímek osamělého poutníka stojícího na skalním výběžku nad mořem mlhy v horské krajině, dramatické zatažené světlo, 16:9",
-  "about": "obrazu Poutník nad mořem mlhy"
+  "about": "obrazu Poutník nad mořem mlhy",
+  "irony_prompt": "A man in a green coat stands on a rock with his back to us, filling the frame as he gazes over a sea of mist from which sandstone towers rise, while the open sketchbook under his arm shows those very towers drawn among nearby forests. Smaller and subordinate: a walking stick; pine tops poking through the mist; a raven. MOOD: dreamy, solemn."
  },
  {
   "id": "de-q-schumacher",
@@ -349,7 +362,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Michael_Schumacher",
   "source_card": "de-sport-schumacher",
   "image_prompt": "Fotorealistický snímek červeného vozu Formule 1 projíždějícího cílovou rovinkou, rozostření pohybu, tribuny v pozadí, denní světlo, bez textu, 16:9",
-  "about": "Michaelu Schumacherovi"
+  "about": "Michaelu Schumacherovi",
+  "irony_prompt": "A racing driver in a plain red overall fills the frame on a podium, trying to hold exactly seven golden trophies at once — cradled in both arms, squeezed under his chin and balanced on his head. Smaller and subordinate: champagne spraying; mechanics doubled up laughing; the nose of a red car. MOOD: triumphant, funny."
  },
  {
   "id": "de-q-zazrak-v-bernu",
@@ -371,7 +385,8 @@
   "source_url": "https://en.wikipedia.org/wiki/1954_FIFA_World_Cup_final",
   "source_card": "de-sport-zazrak-v-bernu",
   "image_prompt": "Fotorealistický dobový snímek nabitého fotbalového stadionu 50. let během finále mistrovství světa, hráči na hřišti, zatažená obloha, 16:9",
-  "about": "Zázraku v Bernu 1954"
+  "about": "Zázraku v Bernu 1954",
+  "irony_prompt": "A muddy football pitch in pouring rain fills the frame as a player slides in to score and the goalkeeper lies flat in a puddle; in the net behind him lie exactly two balls, while the other goal further off holds exactly three. Smaller and subordinate: soaked fans with hats in the air; a linesman running; a wooden bench. MOOD: dramatic, cheerful."
  },
  {
   "id": "de-q-steffi-graf",
@@ -393,7 +408,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Steffi_Graf",
   "source_card": "de-sport-steffi-graf",
   "image_prompt": "Fotorealistický snímek profesionální tenistky slavící bodový zisk v grandslamovém finále na antukovém kurtu, ruce vzhůru, rozostřený dav, denní světlo, 16:9",
-  "about": "Steffi Grafové"
+  "about": "Steffi Grafové",
+  "irony_prompt": "A young tennis player fills the frame, arms full of four different gleaming trophies with a round gold medal swinging from her neck, beaming as if she cannot believe it either. Smaller and subordinate: a racket tucked under her elbow; a tennis ball wearing a tiny crown; a crowd rising to its feet. MOOD: triumphant, cheerful, gently ironic."
  },
  {
   "id": "de-q-dlouha-slozena-slova",
@@ -415,7 +431,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Longest_word_in_German",
   "source_card": "de-jazyk-dlouha-slozena-slova",
   "image_prompt": "Fotorealistický typografický detailní snímek tištěné stránky německého slovníku s neobvykle dlouhým složeným slovem, měkké čtenářské světlo, 16:9",
-  "about": "dlouhých složených slovech v němčině"
+  "about": "dlouhých složených slovech v němčině",
+  "irony_prompt": "An absurdly long train of little wagons fills the frame, each wagon carrying one everyday thing — a boot, a house, a kettle, a hat, a duck — all hooked into one endless chain, while a red-faced man tries to say the whole train aloud in a single breath. Smaller and subordinate: a puffing locomotive at the front; a child counting wagons on its fingers; drifting steam. MOOD: funny, gently ironic."
  },
  {
   "id": "de-q-slova-v-anglictine",
@@ -437,7 +454,8 @@
   "source_url": "https://en.wikipedia.org/wiki/List_of_German_expressions_in_English",
   "source_card": "de-jazyk-slova-v-anglictine",
   "image_prompt": "Fotorealistický neformální snímek dvou lidí u stolu, jeden se samolibě usmívá, druhý vypadá zahanbeně, teplé vnitřní osvětlení, 16:9",
-  "about": "německých slovech v angličtině"
+  "about": "německých slovech v angličtině",
+  "irony_prompt": "A tall cupboard of glass jars fills the frame, each jar holding a small coloured cloud of a feeling, and a puzzled British gentleman finds one shelf completely bare while a German neighbour cheerfully hands him a full jar with a tiny grinning imp inside. Smaller and subordinate: through the window, a man slipping on a banana peel; a teacup; a cat pretending not to look. MOOD: funny, gently ironic."
  },
  {
   "id": "de-q-slovnik-bratri-grimmu",
@@ -459,7 +477,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Deutsches_W%C3%B6rterbuch",
   "source_card": "de-jazyk-slovnik-bratri-grimmu",
   "image_prompt": "Fotorealistický snímek dlouhé knihovní police plné sladěných starožitných kožených svazků slovníku, teplé čtenářské světlo, 16:9",
-  "about": "slovníku bratří Grimmů"
+  "about": "slovníku bratří Grimmů",
+  "irony_prompt": "One enormously long desk fills the frame, and along it the same work passes through generations — eager young scholars at the near end, white-bearded old ones at the far end — all adding pale sheets to a paper mountain that has grown to the ceiling. Smaller and subordinate: a ladder leaning against the paper; dusty inkpots; a spider with a little web of its own. MOOD: funny, gently ironic."
  },
  {
   "id": "de-q-reinheitsgebot",
@@ -504,7 +523,8 @@
   "source_url": "https://en.wikipedia.org/wiki/German_cuisine",
   "source_card": "de-jidlo-chlebova-kultura",
   "image_prompt": "Fotorealistický snímek německé pekařské vitríny s desítkami různých druhů chleba a pečiva, teplé vnitřní osvětlení, 16:9",
-  "about": "německé chlebové kultuře"
+  "about": "německé chlebové kultuře",
+  "irony_prompt": "A baker's counter fills the frame, heaped into a mountain of completely different loaves — dark round rye, long pale sticks, seeded braids, knobbly rolls, black bricks — while a customer stands in front of it paralysed by choice. Smaller and subordinate: flour dust floating in sunlight; a long wooden peel; a mouse carrying a sample on a tray. MOOD: cosy, funny."
  },
  {
   "id": "de-q-currywurst",
@@ -526,7 +546,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Currywurst",
   "source_card": "de-jidlo-currywurst",
   "image_prompt": "Fotorealistický snímek klobásy currywurst s kari kečupovou omáčkou a hranolky na papírovém tácu na stánku v Berlíně, večerní světlo, 16:9",
-  "about": "currywurstu"
+  "about": "currywurstu",
+  "irony_prompt": "A fat grilled sausage cut into thick rounds fills the frame on a little paper tray, drowned in glossy red sauce and dusted with bright yellow spice powder, steaming away. Smaller and subordinate: a bottle of red sauce and a bottle of dark brown sauce leaning together like old friends; a tiny wooden fork; a soldier's beret left on a stool. MOOD: cosy, cheerful, gently ironic."
  },
  {
   "id": "de-q-vestfalsky-mir",
@@ -548,7 +569,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
   "source_card": "de-historie-vestfalsky-mir",
   "image_prompt": "Fotorealistický snímek historického Mírového sálu (Friedenssaal) v münsterské radnici s tmavým dřevěným obložením a portréty, dramatické vnitřní světlo, 16:9",
-  "about": "Vestfálském míru"
+  "about": "Vestfálském míru",
+  "irony_prompt": "A long negotiating table fills the frame, where exhausted soldiers from every army pile their helmets, swords and pikes into one great heap in the middle while ambassadors reach over it to shake hands. Smaller and subordinate: a dove landing on top of the heap; through the window a burnt village being rebuilt; a dog asleep under the table. MOOD: relieved, warm."
  },
  {
   "id": "de-q-pad-berlinske-zdi",
@@ -570,7 +592,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Berl%C3%ADnsk%C3%A1_ze%C4%8F",
   "source_card": "de-historie-pad-berlinske-zdi",
   "image_prompt": "Fotorealistický širokoúhlý snímek dochovaného úseku Berlínské zdi pokrytého graffiti, zatažená obloha, bez lidí, 16:9",
-  "about": "pádu Berlínské zdi"
+  "about": "pádu Berlínské zdi",
+  "irony_prompt": "A long concrete wall fills the frame, winding like an endless ribbon all the way around a city until it vanishes at the horizon, while crowds dance along its top and chip pieces off it with hammers. Smaller and subordinate: someone passing flowers through a gap; a watchtower with laundry hung out of it; confetti in the air. MOOD: joyful, festive."
  },
  {
   "id": "de-q-zalozeni-nemeckeho-cisarstvi",
@@ -592,7 +615,8 @@
   "source_url": "https://en.wikipedia.org/wiki/German_Empire",
   "source_card": "de-historie-zalozeni-nemeckeho-cisarstvi",
   "image_prompt": "Fotorealistický širokoúhlý snímek Zrcadlového sálu versailleského zámku, zlaté dekorace a lustry, bez lidí, 16:9",
-  "about": "založení Německého císařství"
+  "about": "založení Německého císařství",
+  "irony_prompt": "A glittering mirrored palace hall fills the frame, where officers in spiked helmets solemnly proclaim a brand-new empire and the mirrors multiply them into infinity, while a French butler in the corner rolls his eyes at people doing this in somebody else's house. Smaller and subordinate: a raised sabre; an enormous chandelier; a dog hiding under a console table. MOOD: pompous, gently ironic."
  },
  {
   "id": "de-k-braniborska-brana",
@@ -612,7 +636,8 @@
   "quip_correct": "Bod pro tebe! Málokterý pomník v Berlíně viděl tolik historie jako tahle brána.",
   "quip_wrong": "Popletl sis to — Vítězný oblouk hlídá jinou metropoli, stejně jako Zlatá brána San Francisco. Berlín má svou vlastní bránu, Braniborskou.",
   "explanation": "Braniborská brána vznikla v roce 1791 jako symbol míru. Stojí na místě, kudy kdysi vedla cesta do města Braniborského markrabství.",
-  "about": "Braniborské bráně"
+  "about": "Braniborské bráně",
+  "irony_prompt": "A mighty stone gate with tall columns fills the frame, crowned by a chariot pulled by four horses, glowing in evening light while people stroll happily through its arches. Smaller and subordinate: a child on a parent's shoulders pointing up; a street musician; pigeons on the cornice. MOOD: grand, cheerful, for children."
  },
  {
   "id": "de-k-preclik",
@@ -632,7 +657,8 @@
   "quip_correct": "Trefa! Kolik jídel dokážeš jíst ke snídani, k pivu i jen tak z nudy? Preclík zvládá všechny tři příležitosti najednou.",
   "quip_wrong": "Skoro, ale ne tak úplně — bagel je kulatý a americký, křupavý croissant zas francouzský. Tenhle uzel se solí je čistě německý, preclík.",
   "explanation": "Preclík (Brezel) se peče v Německu přes 700 let. Jeho charakteristický tvar uzlu mají různé vysvětlení — jedno říká, že napodobuje složené paže při modlitbě.",
-  "about": "preclíku"
+  "about": "preclíku",
+  "irony_prompt": "One big glossy brown pretzel fills the frame — a fat rope of dough looped into a knot with its two arms crossed over its fat belly — sprinkled with coarse white salt crystals, still warm. Smaller and subordinate: a baker's hand reaching in; a wooden board with flour; a sparrow eyeing a fallen salt crystal. MOOD: cosy, cheerful, for children."
  },
  {
   "id": "de-k-cerny-les",
@@ -652,7 +678,8 @@
   "quip_correct": "Správně, je to les, kde si Grimmové nemuseli nic vymýšlet — kukačkové hodiny, černý dort a husté smrky patří ke Schwarzwaldu odjakživa.",
   "quip_wrong": "Blízko, ale ne tak úplně — Bavorský les leží jinde a jmenuje se jinak. Temný les s pověstí o Grimmových pohádkách se jmenuje Černý les.",
   "explanation": "Schwarzwald (Černý les) v Bádensku-Württembersku je vysoký až 1 493 m n. m. a je domovem typického voníku, kukačkových hodin a slavné Schwarzwaldské třešňové torty.",
-  "about": "Černém lese"
+  "about": "Černém lese",
+  "irony_prompt": "A dark forest of tall spruce trees fills the frame, so dense that only thin shafts of light reach the moss, while two storytellers with notebooks sit on a log and a gingerbread cottage peeks out between the trunks. Smaller and subordinate: a cuckoo clock nailed to a tree; a deer watching; a little red cap on a mushroom. MOOD: magical, cosy, for children."
  },
  {
   "id": "de-k-orel",
@@ -672,7 +699,8 @@
   "quip_correct": "Orel, přesně tak! Lev a vlk musely ustoupit — na německém znaku vládne jen on, s rozpjatými křídly a nulovou konkurencí.",
   "quip_wrong": "Málem — medvěd hlídá jen Berlín, celé Německo na znaku zastupuje orel.",
   "explanation": "Německý orel se jako symbol používá už od dob Karla Velikého, tedy přes 1 000 let. Dnešní podoba orla s roztaženými křídly na zlatém pozadí pochází z roku 1950.",
-  "about": "německém orlu"
+  "about": "německém orlu",
+  "irony_prompt": "A proud black eagle with spread wings fills the frame, perched on a shield and puffing out its chest like a very serious official, one eyebrow raised. Smaller and subordinate: a feather floating down; a small sparrow saluting; a golden ribbon. MOOD: funny, grand, for children."
  },
  {
   "id": "de-k-berlin-medved",
@@ -693,7 +721,8 @@
   "quip_wrong": "Ouha, tentokrát ne — lev by v Berlíně budil respekt, ale žádnou funkci by tam neměl, znak města odjakživa hlídá medvěd.",
   "explanation": "Medvěd se v berlínském znaku objevuje od 13. století. Proč zrovna medvěd? Pravděpodobně slovní hříčka se jménem zakladatele Albrechta Medvěda.",
   "about": "berlínském symbolu",
-  "image_prompt": "A painterly watercolor illustration of a Berlin bear statue on a city street, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Berlin bear statue on a city street, vintage travel journal style",
+  "irony_prompt": "A friendly brown bear standing on its hind legs fills the frame, waving at passers-by in a city square as if it lived there, with paws on its hips. Smaller and subordinate: a stone bear statue on a plinth copying its pose; a child waving back; a pigeon on its shoulder. MOOD: cheerful, funny, for children."
  },
  {
   "id": "de-k-bratwurst-barva",
@@ -714,7 +743,8 @@
   "quip_wrong": "Tentokrát to nevyšlo — fialová klobása by řezníka pěkně vyděsila. Dobře ugrilovaný bratwurst je zlatohnědý.",
   "explanation": "Bratwurst se griluje nebo smaží na tuku, dokud povrch nezíská typickou zlatohnědou barvu. Prodává se na trzích, stadionech i benzinkách — a všude chutná trochu jinak.",
   "about": "německém bratwurstu",
-  "image_prompt": "A painterly watercolor illustration of golden-brown grilled bratwurst on a plate, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of golden-brown grilled bratwurst on a plate, vintage travel journal style",
+  "irony_prompt": "A plump sausage fills the frame, sizzling on a grill and glowing a beautiful golden brown all over, with little crossed grill marks and a puff of fragrant smoke. Smaller and subordinate: tongs reaching in; a soft bun waiting; a hungry dog with wide eyes. MOOD: cosy, cheerful, for children."
  },
  {
   "id": "de-t-arkona",
@@ -735,7 +765,8 @@
   "quip_wrong": "Nešlo to — Sylt má krásné pláže, ale bílé křídové útesy najdeš jen na Rujáně.",
   "explanation": "Křídové útesy na mysu Arkona na Rujáně jsou až 45 metrů vysoké a jsou pozůstatkem mořského dna starého přes 70 milionů let. Ostrov byl od roku 2011 spojen s pevninou mostem.",
   "about": "ostrově Rujána",
-  "image_prompt": "A painterly watercolor illustration of white chalk cliffs at Cape Arkona on Rügen island, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of white chalk cliffs at Cape Arkona on Rügen island, vintage travel journal style",
+  "irony_prompt": "A wall of brilliant white chalk cliffs fills the frame, dropping straight into a blue-green sea, with a small lighthouse on the very tip of the headland and beech woods along the top. Smaller and subordinate: a boat far below; gulls circling; a couple on the cliff path shielding their eyes. MOOD: bright, grand, gently ironic."
  },
  {
   "id": "de-k-branibor-barva",
@@ -756,7 +787,8 @@
   "quip_wrong": "Skoro trefa, ale ne — červená by bránu proměnila k nepoznání, ve skutečnosti září světlou pískovcovou barvou.",
   "explanation": "Braniborská brána je postavena z pískovce a má světlou béžovou barvu. Stojí od roku 1791 a za studené války oddělovala Východní a Západní Berlín.",
   "about": "Braniborské bráně",
-  "image_prompt": "A painterly watercolor illustration of the Brandenburg Gate in Berlin in sunlight, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Brandenburg Gate in Berlin in sunlight, vintage travel journal style",
+  "irony_prompt": "A great stone gate with tall columns fills the frame, its pale sandstone glowing warm creamy beige in full sunshine, so bright that a tourist below shields his eyes and his ice cream melts. Smaller and subordinate: the chariot and horses on top; a flag hanging limp in the heat; a dog panting in the shade of a column. MOOD: sunny, cheerful, for children."
  },
  {
   "id": "de-t-rybarsky-pristav",
@@ -776,7 +808,8 @@
   "quip_wrong": "Mimo cíl — největší rybí tržnici nehledej v Kielu, je jinde.",
   "explanation": "Hamburský přístav je největší v Německu a druhý největší v Evropě. Rybí tržnice na Elbe funguje od roku 1703 — původně tam obchodníci prodávali úlovky dřív, než se otevřely kostely.",
   "about": "hamburském přístavu",
-  "image_prompt": "A painterly watercolor illustration of Hamburg fish market and harbor at dawn, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Hamburg fish market and harbor at dawn, vintage travel journal style",
+  "irony_prompt": "A busy harbour at dawn fills the frame, with huge container cranes standing like giraffes behind a lively fish market where traders hold up shining fish to a crowd in Sunday coats. Smaller and subordinate: a cheeky gull stealing a fish; a coffee stall steaming; a ship's horn blowing. MOOD: lively, cheerful, gently ironic."
  },
  {
   "id": "de-t-schwarzwald",
@@ -796,7 +829,8 @@
   "quip_wrong": "Tentokrát vedle — kukačkové hodiny nejsou specialita Bavorského lesa, patří jinému.",
   "explanation": "Schwarzwald (Černý les) ve spolkové zemi Bádensko-Württembersko je největší pohoří Německa. Hodiny s kukačkou se tam vyrábějí od 18. století — dnes jsou to miliony kusů ročně.",
   "about": "Černém lese",
-  "image_prompt": "A painterly watercolor illustration of dark dense Black Forest with a cuckoo clock on a tree, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of dark dense Black Forest with a cuckoo clock on a tree, vintage travel journal style",
+  "irony_prompt": "A steep hillside of almost black spruce forest fills the frame, so dark that the valley below looks like a bright window, with a wooden house on the slope and a huge cuckoo clock hanging on its wall. Smaller and subordinate: a wooden cuckoo popping out; a cow with a bell; mist between the trunks. MOOD: cosy, gently ironic."
  },
  {
   "id": "de-t-lipsko-bitva",
@@ -816,7 +850,8 @@
   "quip_wrong": "Mimo — Berlín má taky svůj příběh s Napoleonem, ale ten obří památník stojí jinde.",
   "explanation": "Bitva národů u Lipska v roce 1813 byla jednou z největších bitev v dějinách — účastnilo se jí přes půl milionu vojáků. Napoleonova porážka otevřela cestu k jeho abdikaci.",
   "about": "Lipsku",
-  "image_prompt": "A painterly watercolor illustration of the Monument to the Battle of Nations in Leipzig, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Monument to the Battle of Nations in Leipzig, vintage travel journal style",
+  "irony_prompt": "An enormous dark stone monument fills the frame, blocky and severe, towering over the trees and the little people at its foot who look like ants beside the giant carved figures. Smaller and subordinate: a reflecting pool in front; a family on the steps; crows on the top. MOOD: grand, gently ironic."
  },
  {
   "id": "de-t-bundesliga",
@@ -836,7 +871,8 @@
   "quip_wrong": "Tahle liga to není — Serie A je italská a Premier League anglická, německá liga má jiné jméno.",
   "explanation": "Bundesliga byla founded v roce 1963 a průměrná návštěvnost přes 40 000 diváků na zápas z ní dělá nejnavštěvovanější ligu na světě — více než Premier League.",
   "about": "německé bundeslize",
-  "image_prompt": "A painterly watercolor illustration of a packed German football stadium at night, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a packed German football stadium at night, vintage travel journal style",
+  "irony_prompt": "A packed football stadium fills the frame, one whole end a solid wall of yellow-and-black fans and the other a sea of red, all leaning in as a ball flies towards the net. Smaller and subordinate: a goalkeeper stretching in mid-air; scarves held up; confetti. MOOD: electric, cheerful."
  },
  {
   "id": "de-t-autoban",
@@ -856,7 +892,8 @@
   "quip_wrong": "Nedopadlo to — zdarma jsou jen osobní auta, kamiony platí, a hlavní specialita je jinde.",
   "explanation": "Přibližně třetina německých dálnic nemá pevné omezení rychlosti — platí tam doporučená rychlost 130 km/h. Debata o celoplošném limitu se vede v Německu už desítky let bez výsledku.",
   "about": "německých dálnicích",
-  "image_prompt": "A painterly watercolor illustration of an empty German autobahn stretching to the horizon, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of an empty German autobahn stretching to the horizon, vintage travel journal style",
+  "irony_prompt": "A wide empty motorway fills the frame, running dead straight into the distance, with one plain round white marker beside it crossed by grey diagonal stripes and nothing else on it at all, while a car blurs past with the driver's hair standing straight back. Smaller and subordinate: a slower car pulling politely to the right; a bird overtaken in mid-flight; heat shimmer on the tarmac. MOOD: dynamic, funny, gently ironic."
  },
  {
   "id": "de-a-reinheitsgebot",
@@ -876,7 +913,8 @@
   "quip_wrong": "Logická úvaha, ale mimo — mniši pivo vařili, zákon byl ale světský a předepisoval suroviny, ne výrobce.",
   "explanation": "Reinheitsgebot vydal bavorský vévoda Vilém IV. v roce 1516. Kvasnice se do zákonem povoleného seznamu dostaly až o tři staletí později, když vědci zjistili, že vůbec existují.",
   "about": "Reinheitsgebotu",
-  "image_prompt": "A painterly watercolor illustration of beer ingredients — hops, barley and water — with an old parchment, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of beer ingredients — hops, barley and water — with an old parchment, vintage travel journal style",
+  "irony_prompt": "A brewer in a leather apron fills the frame, holding up exactly three things over a copper kettle — a jug of water, a sheaf of barley and a handful of green hop cones — while sternly blocking a merchant who offers a fourth basket of odds and ends. Smaller and subordinate: the merchant's basket of cherries and herbs tipping over; a wooden barrel; a cat on the kettle rim. MOOD: stern, funny, gently ironic."
  },
  {
   "id": "de-a-wartburg",
@@ -896,7 +934,8 @@
   "quip_wrong": "Datum nesedí — 95 tezí přibil Luther ještě před Wartburgem, na hradě dělal něco jiného, mnohem tiššího.",
   "explanation": "Lutherův překlad Nového zákona z roku 1522 sjednotil desítky německých dialektů do jednoho psaného jazyka. Göthe, Schiller a celá německá literatura stojí na tomto základu.",
   "about": "Lutherově překladu Bible",
-  "image_prompt": "A painterly watercolor illustration of Martin Luther translating the Bible in Wartburg castle study, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Martin Luther translating the Bible in Wartburg castle study, vintage travel journal style",
+  "irony_prompt": "A small stone chamber in a castle tower fills the frame, where a bearded man disguised as a knight writes furiously on blank pages by candlelight, a fresh dark inkblot splattered on the wall behind him. Smaller and subordinate: a quill snapped in half; a window slit with snow outside; a mouse watching from the floor. MOOD: intense, warm, gently ironic."
  },
  {
   "id": "de-a-grimm-dospeli",
@@ -916,7 +955,8 @@
   "quip_wrong": "Milá představa, ale mimo — mravní četbu pro šlechtické děti dělali jiní, Grimmové sbírali folklor jako vědci, pro dospělé.",
   "explanation": "První vydání Dětských a domácích pohádek z roku 1812 obsahovalo explicitní násilí a sexualitu, která by dnes neprošla v dětské sekci knihkupectví. Teprve ve druhém vydání (1819) příběhy upravili.",
   "about": "pohádkách bratří Grimmů",
-  "image_prompt": "A painterly watercolor illustration of an open old scholarly book with fairy tale scenes, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of an open old scholarly book with fairy tale scenes, vintage travel journal style",
+  "irony_prompt": "A solemn room of learned gentlemen in spectacles fills the frame, all leaning forward gravely as one of them recounts a fairy tale, taking notes as if it were a scientific finding, while a little girl peeking round the door is gently shooed away. Smaller and subordinate: a wolf-shaped shadow on the wall; a globe; a cat under a chair. MOOD: funny, gently ironic."
  },
  {
   "id": "de-a-currywurst",
@@ -936,7 +976,8 @@
   "quip_wrong": "Nesedí to geograficky — Hamburk má taky currywurst, ale recept vznikl v Berlíně, a u zrodu stála žena.",
   "explanation": "Herta Heuwer si nechala recept na omáčku patentovat v roce 1959. Dnes se v Německu sní přes 800 milionů porcí currywurstu ročně a v Berlíně má vlastní muzeum.",
   "about": "currywurstu",
-  "image_prompt": "A painterly watercolor illustration of Currywurst with curry powder and ketchup on paper plate, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Currywurst with curry powder and ketchup on paper plate, vintage travel journal style",
+  "irony_prompt": "A woman in an apron at a small street stall fills the frame, pouring two different sauces together into a pan with a look of pure inspiration while a sliced sausage waits beside her. Smaller and subordinate: soldiers in berets watching curiously from the queue; a bombed-out house being rebuilt behind; a stray dog hoping. MOOD: warm, inventive, gently ironic."
  },
  {
   "id": "de-a-fuggerove",
@@ -956,7 +997,8 @@
   "quip_wrong": "Vedle, i když sympatický odhad — nemocnice ani knihovny to nejsou, Fuggerové postavili něco, co přežilo 500 let.",
   "explanation": "Jakob Fugger 'Bohatý' dal v roce 1521 postavit 67 domů pro chudé augsburské rodiny. Podmínky dodnes: katolická víra, bezúhonnost a tři denní modlitby za rodinu Fuggerů. Nájemné: 88 centů ročně.",
   "about": "Fuggerech",
-  "image_prompt": "A painterly watercolor illustration of the Fuggerei social housing in Augsburg with old cobblestone streets, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Fuggerei social housing in Augsburg with old cobblestone streets, vintage travel journal style",
+  "irony_prompt": "A banker at a huge counting table fills the frame, weighing gold coins while an emperor in a crown and a churchman in robes wait meekly in the queue behind him; through the window stands a row of tiny neat little houses where an old couple pays with one single small coin. Smaller and subordinate: a strongbox; a ledger-sized blank book; a cat asleep on the gold. MOOD: gently ironic, warm."
  },
  {
   "id": "de-a-bismarck",
@@ -976,7 +1018,8 @@
   "quip_wrong": "Blízko tématem, ale mimo faktem — rovnost před zákonem a školní docházka přišly jindy, Bismarckův šok byl jiný.",
   "explanation": "Bismarck zavedl v 80. letech 19. století zdravotní (1883), úrazové (1884) a důchodové (1889) pojištění. Byl to politický tah: pokud stát zajistí dělníky, nebudou potřebovat revoluce.",
   "about": "Ottu von Bismarckovi",
-  "image_prompt": "A painterly watercolor illustration of Otto von Bismarck in chancellor uniform, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Otto von Bismarck in chancellor uniform, vintage travel journal style",
+  "irony_prompt": "A stern moustached statesman in a spiked helmet fills the frame, handing a doctor's bag, a crutch and a fat purse to a line of astonished workers, as if giving away his own dinner. Smaller and subordinate: other top-hatted politicians fainting into each other's arms; a factory chimney; a small dog with a bandaged paw. MOOD: funny, gently ironic."
  },
  {
   "id": "de-a-bauhaus",
@@ -996,7 +1039,8 @@
   "quip_wrong": "Vedle skutečnosti — studenti neprotestovali, o zavření Bauhausu rozhodli přímo nacisté.",
   "explanation": "Bauhaus fungoval ve Výmaru, Desavě a Berlíně v letech 1919–1933. Po uzavření emigrovali Mies van der Rohe, Gropius a další do USA, kde ovlivnili celou modernistickou architekturu.",
   "about": "Bauhausu",
-  "image_prompt": "A painterly watercolor illustration of Bauhaus Dessau building with geometric shapes and flat roof, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Bauhaus Dessau building with geometric shapes and flat roof, vintage travel journal style",
+  "irony_prompt": "A plain cube-shaped school building with closed shutters fills the frame, and from its roof its teachers drift away over the world like dandelion seeds, each carrying a tiny chair, lamp or teapot. Smaller and subordinate: a padlock on the door; distant city skylines catching the seeds; a bird flying alongside them. MOOD: bittersweet, hopeful, gently ironic."
  },
  {
   "id": "de-a-stollen",
@@ -1016,7 +1060,8 @@
   "quip_wrong": "Romantická představa, bohužel mylná — tajný rodinný recept by byl hezčí příběh, ale realitou je přísná cechovní ochrana.",
   "explanation": "Drážďanský Stollen se peče od 15. století a má vlastní slavnost — Stollenfest — kde se krájí obří Stollen vážící přes 4 tuny. Každý kus musí mít zlatou pečeť cechu.",
   "about": "drážďanském Stollenu",
-  "image_prompt": "A painterly watercolor illustration of Dresden Stollen with powdered sugar and golden seal, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Dresden Stollen with powdered sugar and golden seal, vintage travel journal style",
+  "irony_prompt": "A long loaf thickly dusted with white sugar fills the frame, shaped and wrapped like a swaddled baby in a cloth, while a guild baker presses a round wax seal onto it with great ceremony. Smaller and subordinate: a second baker being politely turned away at the door; almonds and candied peel on the table; a cat sniffing the sugar. MOOD: solemn, funny, gently ironic."
  },
  {
   "id": "de-a-spreewald",
@@ -1036,7 +1081,8 @@
   "quip_wrong": "Chutná domněnka, ale vedle — med a pramice jsou taky zajímavé, ale chráněné označení EU má úplně jiná specialita.",
   "explanation": "Spreewaldský okurek se pěstuje v tomto kraji od 17. století, kdy tam lužickosrbští sedláci zavedli pěstování na podmáčených polích. Dnes se tam ročně vypěstuje přes 50 000 tun okurek.",
   "about": "Spreewaldu",
-  "image_prompt": "A painterly watercolor illustration of Spreewald canals with rowboats and cucumber fields, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Spreewald canals with rowboats and cucumber fields, vintage travel journal style",
+  "irony_prompt": "A narrow green canal fills the frame, a flat punt gliding along it steered by a man with a long pole, carrying a single enormous glass jar with one giant pickled cucumber inside it like a passenger. Smaller and subordinate: alder trees leaning over the water; a postman punting the other way; a heron watching. MOOD: cosy, funny, gently ironic."
  },
  {
   "id": "de-a-kolsch",
@@ -1056,7 +1102,8 @@
   "quip_wrong": "Blízko sklenicí, mimo zákonem — Stange je jen tradice, geografická ochrana Kölsch je ale skutečná a vymahatelná.",
   "explanation": "Kölsch Convention z roku 1985 podepsalo 24 pivovarů a stanovila přísná pravidla. Výsledek: světlé, jemně nakyslé pivo podávané v úzkých sklenicích 0,2 l — Kolíňané ho dopijí dřív, než vychladne.",
   "about": "pivu Kölsch",
-  "image_prompt": "A painterly watercolor illustration of Kölsch beer in small cylindrical glass with Cologne Cathedral behind, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Kölsch beer in small cylindrical glass with Cologne Cathedral behind, vintage travel journal style",
+  "irony_prompt": "A waiter with a round tray of tall thin beer glasses fills the frame, walking briskly up to a line painted across the road and stopping dead at it, refusing to take one more step outwards. Smaller and subordinate: thirsty people on the far side reaching out in vain; cathedral spires behind him; a dog sitting exactly on the line. MOOD: funny, gently ironic."
  },
  {
   "id": "de-a-letecky-most",
@@ -1076,7 +1123,8 @@
   "quip_wrong": "Vedle mechanikou — padáky to nebyly, letadla přistávala na Tempelhofu nepřetržitě, bez jediné pauzy.",
   "explanation": "Za 15 měsíců přistálo v Berlíně přes 270 000 letů s 2,3 miliony tun nákladu. Piloti vozili uhlí, jídlo i bonbóny pro berlínské děti — odtud přezdívka 'Raisenbomber' (rozinkový bombardér).",
   "about": "Berlínském leteckém mostu",
-  "image_prompt": "A painterly watercolor illustration of Berlin airlift cargo planes above Tempelhof airport, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Berlin airlift cargo planes above Tempelhof airport, vintage travel journal style",
+  "irony_prompt": "A sky packed with transport planes fills the frame, queueing nose to tail down to a runway one after another like a conveyor belt, while children on a heap of rubble wave up at tiny parachutes with sweets drifting down. Smaller and subordinate: a ground crew unloading sacks at a run; a city of ruins behind; a dog chasing a parachute. MOOD: hopeful, busy, warm."
  },
  {
   "id": "de-a-bach-lipsko",
@@ -1096,7 +1144,8 @@
   "quip_wrong": "Mimo pořadí — Bach do Lipska nešel jako první volba, před ním místo odmítli dva jiní kandidáti.",
   "explanation": "Lipské radnice hledaly kantora pro kostel sv. Tomáše. Telemann odmítl, Graupner nemohl odejít od svého zaměstnavatele — a Bach přijal místo, které ostatní nepovažovali za dost prestižní. Výsledkem bylo přes 1 100 skladeb.",
   "about": "Bachově Lipsku",
-  "image_prompt": "A painterly watercolor illustration of St Thomas Church Leipzig with choir and organ, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of St Thomas Church Leipzig with choir and organ, vintage travel journal style",
+  "irony_prompt": "A stout organist in a curled wig fills the frame at a church organ, surrounded by a swarm of his own children pulling stops and handing him pages, while two elegant candidates walk out of the door with their noses in the air. Smaller and subordinate: choirboys yawning; a coffee cup on the bench; a mouse in an organ pipe. MOOD: warm, funny, gently ironic."
  },
  {
   "id": "de-k-vanocni-strom",
@@ -1117,7 +1166,8 @@
   "quip_wrong": "Ne tak úplně tentokrát — adventní věnec má jen svíčky, žádné jehličí. Třpytivá ozdoba uprostřed pokoje je vánoční stromek.",
   "explanation": "Tradice zdobení jehličnanu uvnitř domu pochází ze středověkého Německa. Do Anglie ji přinesl v 19. století pruský princ Albert, manžel královny Viktorie — a britské noviny ji záhy rozšířily do celého světa.",
   "about": "vánočním stromečku",
-  "image_prompt": "A painterly watercolor illustration of a decorated Christmas tree with candles in a cozy German home, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a decorated Christmas tree with candles in a cozy German home, vintage travel journal style",
+  "irony_prompt": "A tall fir tree fills the frame, standing in a cosy living room and covered in glass baubles and glowing candles, with a family gathered around it in the warm light. Smaller and subordinate: a cat batting a low bauble; presents under the branches; snow falling behind the window. MOOD: cosy, magical, for children."
  },
  {
   "id": "de-t-kindergarten",
@@ -1138,7 +1188,8 @@
   "quip_wrong": "Vedle jazykem — nursery a preschool jsou jen anglické náhražky, originál je německý a znamená doslova něco úplně jiného.",
   "explanation": "Kindergarten vynalezl v roce 1837 německý pedagog Friedrich Fröbel v Blankenburgu. Věřil, že hravé učení v bezpečném prostředí rozvíjí děti lépe než strohá výuka — a pojmenoval svůj objev místem, kde věci přirozeně rostou.",
   "about": "vynálezu školky Kindergarten",
-  "image_prompt": "A painterly watercolor illustration of children playing in a sunlit garden with a teacher, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of children playing in a sunlit garden with a teacher, vintage travel journal style",
+  "irony_prompt": "A sunny garden fills the frame where children grow in big flowerpots like cheerful plants, and a teacher with a watering can gives each one a drink while they wave their arms like leaves. Smaller and subordinate: a butterfly on a child's hat; a sandpit; a friendly dog with a trowel in its mouth. MOOD: playful, warm, gently ironic."
  },
  {
   "id": "de-t-aspirin",
@@ -1159,7 +1210,8 @@
   "quip_wrong": "Špatná firma — Siemens dělá turbíny, ne léky, za tímhle slavným lékem stojí jiná firma.",
   "explanation": "Felix Hoffmann syntetizoval kyselinu acetylsalicylovou v Bayeru v roce 1897. Od roku 1899 se Aspirin prodává bez přestávky — dnes je to jeden z nejprodávanějších léků světa a zároveň jeden z mála, pro které se prokázaly nové využití (například prevence srdečního infarktu) dvě století po vynálezu.",
   "about": "Aspirinu",
-  "image_prompt": "A painterly watercolor illustration of a vintage pharmaceutical laboratory with glass flasks and Bayer signage, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a vintage pharmaceutical laboratory with glass flasks and Bayer signage, vintage travel journal style",
+  "irony_prompt": "A single small white tablet fills the frame, standing on a pharmacy counter like a treasure under a glass dome, while a chemist in a white coat compares it with a curl of willow bark in his other hand. Smaller and subordinate: a mortar and pestle; glass bottles on a shelf; a patient outside the window holding his head. MOOD: warm, gently ironic."
  },
  {
   "id": "de-a-made-in-germany",
@@ -1180,7 +1232,8 @@
   "quip_wrong": "Vymyšleno chytře, ale vedle — cla a zákazy by pomohly nepřímo, tenhle paradox byl přímočařejší: britský štítek se obrátil proti svým autorům.",
   "explanation": "Britský Merchandise Marks Act z roku 1887 přinutil německé výrobce označovat zboží zemí původu, protože britský průmysl si stěžoval na levné napodobeniny. Místo odstrašení ale štítek přinutil německé firmy investovat do kvality — a „Made in Germany“ se za pár desetiletí stalo celosvětovou zárukou přesnosti a spolehlivosti.",
   "about": "vzniku značky Made in Germany",
-  "image_prompt": "A painterly watercolor illustration of vintage German industrial machinery with a Made in Germany stamp, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of vintage German industrial machinery with a Made in Germany stamp, vintage travel journal style",
+  "irony_prompt": "A British customs inspector fills the frame, solemnly tying a completely blank paper tag onto a crate of goods as a warning, while behind him eager shoppers grab those very crates off the pile with delight. Smaller and subordinate: a German workman quietly polishing the next crate; a ship at the quay; a seagull. MOOD: funny, gently ironic."
  },
  {
   "id": "de-a-von-braun",
@@ -1201,7 +1254,8 @@
   "quip_wrong": "Ne tak, jak by se čekalo — v Norimberku souzen nebyl, americká armáda si ho vytáhla z Německa dřív, než mohl kdokoli klást otázky.",
   "explanation": "Wernher von Braun byl v roce 1945 spolu se stovkami dalších německých vědců tajně převezen do USA v rámci operace Paperclip. Jako ředitel NASA Marshall Space Flight Center navrhl Saturn V — dosud nejsilnější raketu, která skutečně letěla — a přivedla Apollo 11 na Měsíc v roce 1969.",
   "about": "Wernheru von Braunovi",
-  "image_prompt": "A painterly watercolor illustration of Saturn V rocket launch at dawn over the Florida coast, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Saturn V rocket launch at dawn over the Florida coast, vintage travel journal style",
+  "irony_prompt": "A drafting table with a tall slender rocket model on it fills the frame, and the rocket throws two shadows across the wall — one of a ruined street, one of the round Moon — while the engineer stands between them looking at both. Smaller and subordinate: a pair of compasses; a globe; a lamp casting the light. MOOD: sombre, thoughtful, respectful."
  },
  {
   "id": "de-k-plysovy-medvidek",
@@ -1222,7 +1276,8 @@
   "quip_wrong": "Skoro, ale ne tak docela — porcelánovou panenku by sis do postele moc nebral, viď? Vláček je zas dřevěný, na mazlení a spaní je ze všech tří nejlepší měkký plyšový medvídek.",
   "explanation": "Prvního plyšového medvídka vyrobila roku 1902 německá firma Steiff v Giengenu a dodnes ho poznáš podle knoflíčku v uchu, kterým firma svoje medvídky značí.",
   "about": "vynálezu plyšového medvídka",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a classic teddy bear sitting on a wooden shelf"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a classic teddy bear sitting on a wooden shelf",
+  "irony_prompt": "A soft plush teddy bear fills the frame, worn and beloved, hugged tightly by a sleeping child in a warm bed. Smaller and subordinate: a night lamp glowing; a shelf of other toys watching enviously; a slipper on the floor. MOOD: cosy, tender, for children."
  },
  {
   "id": "de-t-klose",
@@ -1243,7 +1298,8 @@
   "quip_wrong": "Blízko jménem, mimo faktem — Müller i Neuer jsou legendy, ale rekord na mistrovstvích světa v počtu gólů drží jiný Němec, Klose.",
   "explanation": "Miroslav Klose se narodil v Polsku, odkud jeho rodina emigrovala do Německa, a rekord 16 gólů na mistrovstvích světa překonal na MS 2014 v Brazílii.",
   "about": "Miroslavu Klosem",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a football player celebrating a goal on a stadium pitch"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a football player celebrating a goal on a stadium pitch",
+  "irony_prompt": "A footballer fills the frame in mid-somersault celebration above the grass, arms wide, while behind him an enormous heap of footballs shows how many goals he has scored. Smaller and subordinate: teammates running with open arms; a dizzy goalkeeper; a stadium of raised hands. MOOD: joyful, funny."
  },
  {
   "id": "de-t-karl-benz",
@@ -1264,7 +1320,8 @@
   "quip_wrong": "Motor se tu plete s autem — Diesel vynalezl motor pojmenovaný po sobě a Porsche přišel mnohem později, první patent na automobil má na svědomí Karl Benz.",
   "explanation": "Benzův patentovaný vůz měl jen tři kola a jeho žena Bertha ho proslavila první dálkovou jízdou automobilem v dějinách, o které manžela předem neinformovala.",
   "about": "Karlu Benzovi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a vintage three-wheeled early automobile on a cobblestone street"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a vintage three-wheeled early automobile on a cobblestone street",
+  "irony_prompt": "A strange three-wheeled motor carriage with a tiny chugging engine fills the frame, rolling down a dusty road with a confident woman at the tiller, while two horses at the roadside stare with their mouths open. Smaller and subordinate: a farmer dropping his hat; a cloud of blue smoke; a boy running alongside. MOOD: funny, cheerful, gently ironic."
  },
  {
   "id": "de-a-deutsche-bahn",
@@ -1285,7 +1342,8 @@
   "quip_wrong": "Optimistický odhad, bohužel mimo — devadesát pět procent by chtěl slyšet každý cestující, realita Deutsche Bahn je o dost skromnější.",
   "explanation": "Vlastní cíl Deutsche Bahn je dochvilnost 80 procent u dálkových spojů, ale v posledních letech se firma dlouhodobě pohybuje kolem 60 až 65 procent, což pravidelně řeší i německá média a politici.",
   "about": "dochvilnosti Deutsche Bahn",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a German intercity train waiting at a station platform with a departure board"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a German intercity train waiting at a station platform with a departure board",
+  "irony_prompt": "A big station clock fills the frame above a platform, while below it exactly ten little trains arrive: six pull in neatly side by side, and four straggle far behind, one still puffing at the horizon. Smaller and subordinate: commuters tapping their wrists; a conductor shrugging apologetically; a pigeon waiting patiently. MOOD: gently ironic, funny."
  },
  {
   "id": "de-k-rhine-river",
@@ -1307,7 +1365,8 @@
   "explanation": "Rýn je jednou z nejrušnějších vodních cest na světě - denně po něm propluje přes tisíc nákladních lodí.",
   "source_url": "https://cs.wikipedia.org/wiki/Rýn",
   "image_prompt": "Fotorealistický snímek řeky Rýn s výletními loděmi a strmými vinicemi na březích, v pozadí skalnatý útes, slunečný den, 16:9",
-  "about": "řece Rýn"
+  "about": "řece Rýn",
+  "irony_prompt": "A wide river fills the frame, curving between steep vineyard slopes with barges gliding along it, while a long-haired mermaid sits on a rock above combing her hair and the bargemen forget to steer. Smaller and subordinate: a hilltop castle; a ferry crossing; a heron on a buoy. MOOD: magical, cheerful, for children."
  },
  {
   "id": "de-k-europa-park",
@@ -1329,7 +1388,8 @@
   "explanation": "Europa-Park leží v městečku Rust a je po Disneylandu Paris druhým nejnavštěvovanějším zábavním parkem v Evropě.",
   "source_url": "https://cs.wikipedia.org/wiki/Europa-Park",
   "image_prompt": "Fotorealistický snímek barevné horské dráhy a věží zábavního parku Europa-Park s vlaječkami evropských zemí, slunečný den, 16:9",
-  "about": "zábavním parku Europa-Park"
+  "about": "zábavním parku Europa-Park",
+  "irony_prompt": "A huge amusement park fills the frame, with looping roller coasters weaving between little pavilions built in the styles of different countries, all packed with excited families. Smaller and subordinate: a carousel horse; a child with a huge ice cream; a mascot mouse waving. MOOD: fun, lively, for children."
  },
  {
   "id": "de-k-gummy-bears",
@@ -1351,7 +1411,8 @@
   "explanation": "Název HARIBO vznikl spojením jména vynálezce a jeho německého města - Hans Riegel Bonn.",
   "source_url": "https://cs.wikipedia.org/wiki/Haribo",
   "image_prompt": "Barevní gumoví medvídci nasypaní na dřevěném stole, detailní záběr, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
-  "about": "vzniku gumových medvídků HARIBO"
+  "about": "vzniku gumových medvídků HARIBO",
+  "irony_prompt": "A parade of colourful chewy gummy bears fills the frame, marching cheerfully out of a big copper sweet kettle in rows of red, green, yellow and white, straight into plain open paper bags. Smaller and subordinate: a confectioner in a white hat conducting them; a child's delighted face at the window; one bear tripping over. MOOD: playful, sweet, for children."
  },
  {
   "id": "de-k-st-martin-lanterns",
@@ -1373,7 +1434,8 @@
   "explanation": "Svatý Martin se podle legendy rozdělil o svůj plášť s promrzlým žebrákem, a proto dětem připomíná vzor štědrosti.",
   "source_url": "https://cs.wikipedia.org/wiki/Martin_z_Tours",
   "image_prompt": "Fotorealistický snímek dětí s rozsvícenými papírovými lampiony na tyčkách, jak jdou večerním průvodem městem, 16:9",
-  "about": "svatomartinském průvodu"
+  "about": "svatomartinském průvodu",
+  "irony_prompt": "A procession of children with glowing paper lanterns on sticks fills the frame, winding through a blue winter dusk, their faces lit warm orange by the little candles. Smaller and subordinate: a rider on a white horse sharing his cloak with a beggar; a brass band; a dog trotting along with a lantern tied to its collar. MOOD: warm, magical, for children."
  },
  {
   "id": "de-t-boris-becker-wimbledon",
@@ -1395,7 +1457,8 @@
   "explanation": "Boris Becker vyhrál Wimbledon celkem třikrát, ale ten první titul z roku 1985 mu vynesl přezdívku Boom Boom.",
   "source_url": "https://cs.wikipedia.org/wiki/Boris_Becker",
   "image_prompt": "Fotorealistický snímek mladého tenisty v bílém oblečení na travnatém tenisovém kurtu s raketou při podání, slunečný den, 16:9",
-  "about": "Borisi Beckerovi"
+  "about": "Borisi Beckerovi",
+  "irony_prompt": "A very young tennis player fills the frame, diving full length across the grass with his racket outstretched and grass stains on his shirt, while a huge silver trophy waits on the other side of the net. Smaller and subordinate: older players in the stands raising their eyebrows; strawberries and cream on a chair; a ball boy staring. MOOD: dynamic, cheerful, gently ironic."
  },
  {
   "id": "de-k-flag-colors",
@@ -1417,7 +1480,8 @@
   "explanation": "Tyto barvy pocházejí z uniforem dobrovolnických jednotek z počátku 19. století a jako státní vlajka platí od roku 1949.",
   "source_url": "https://cs.wikipedia.org/wiki/Vlajka_Německa",
   "image_prompt": "Fotorealistický snímek vlající německé vlajky s černým, červeným a žlutým pruhem na modré obloze, 16:9",
-  "about": "německé vlajce"
+  "about": "německé vlajce",
+  "irony_prompt": "A big flag with three horizontal stripes — black on top, red in the middle, gold below — fills the frame, waving over a cheering crowd of sports fans with painted faces in the same three colours. Smaller and subordinate: a child on shoulders; a drum; confetti in the air. MOOD: festive, cheerful, for children."
  },
  {
   "id": "de-k-stork-legend",
@@ -1439,7 +1503,8 @@
   "explanation": "Německo patří k zemím s největší evropskou populací čápa bílého, hlavně na severu a východě země.",
   "source_url": "https://cs.wikipedia.org/wiki/Čáp_bílý",
   "image_prompt": "Fotorealistický snímek čápa bílého stojícího v hnízdě na komíně staré německé vesnické chalupy, 16:9",
-  "about": "čápu bílém v Německu"
+  "about": "čápu bílém v Německu",
+  "irony_prompt": "A tall white stork with a red beak fills the frame, standing in a big untidy nest on a chimney with a bundle tied in a cloth dangling from its beak, looking extremely pleased with itself. Smaller and subordinate: two chicks peering over the nest rim; a village roof below; a cat watching from the gutter. MOOD: funny, warm, for children."
  },
  {
   "id": "de-k-miniatur-wunderland",
@@ -1461,6 +1526,7 @@
   "explanation": "Přes celou halu vede tolik kolejí, elektrických kabelů a řídicích počítačů, že by pokryly vzdálenost mezi několika velkými městy.",
   "source_url": "https://cs.wikipedia.org/wiki/Miniatur_Wunderland",
   "image_prompt": "Rozsáhlá modelová železnice s maličkými vláčky, budovami, horami a mrňavým letadélkem ve vzduchu v hale Miniatur Wunderland, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
-  "about": "Miniatur Wunderlandu, největší modelové železnici na světě"
+  "about": "Miniatur Wunderlandu, největší modelové železnici na světě",
+  "irony_prompt": "A miniature world fills the frame — tiny houses, hills and a station — and above its little airport a real model aeroplane lifts off into the air on its own, while a giant human hand hovers, not daring to touch it. Smaller and subordinate: tiny passengers on a platform; a model train crossing a bridge; a visitor with his nose almost in the landscape. MOOD: amazing, playful, for children."
  }
 ]

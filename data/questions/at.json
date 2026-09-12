@@ -85,7 +85,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Grossglockner",
   "source_card": "at-priroda-grossglockner",
   "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Grossglockneru s ledovcem Pasterze pod ním, jasná obloha, bez lidí, bez textu, 16:9",
-  "about": "hoře Grossglockner"
+  "about": "hoře Grossglockner",
+  "irony_prompt": "One sharp snowy peak with a slender summit cross fills the frame, standing a clear head taller than every other mountain around it, with a rope of tiny climbers inching up its ridge. Smaller and subordinate: a glacier tongue spilling into the valley; a marmot on a rock looking up; an eagle circling below the summit. MOOD: grand, cheerful, gently ironic."
  },
  {
   "id": "at-q-krimmelske-vodopady",
@@ -107,7 +108,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Krimml_Waterfalls",
   "source_card": "at-priroda-krimmelske-vodopady",
   "image_prompt": "Fotorealistický snímek mohutných Krimmelských vodopádů padajících z alpského srázu, vodní tříšť a duha v popředí, jasný den, bez lidí, bez textu, 16:9",
-  "about": "Krimmelských vodopádech"
+  "about": "Krimmelských vodopádech",
+  "irony_prompt": "A thundering waterfall fills the frame, falling in exactly three separate leaps one below another down a green mountain wall, with a rainbow in its spray. Smaller and subordinate: hikers on a zigzag path at the second leap, soaked and laughing; pine trees bent by the draught; a dipper bird on a wet stone. MOOD: refreshing, grand, cheerful."
  },
  {
   "id": "at-q-neziderske-jezero",
@@ -129,7 +131,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lake_Neusiedl",
   "source_card": "at-priroda-neziderske-jezero",
   "image_prompt": "Fotorealistický širokoúhlý snímek Neziderského jezera s rákosím na břehu a plochou stepní krajinou kolem, večerní světlo, bez lidí, bez textu, 16:9",
-  "about": "Neziderském jezeře"
+  "about": "Neziderském jezeře",
+  "irony_prompt": "A huge lake fills the frame under a wide sky, and people are standing far out in the middle of it with the water only up to their knees, waving at the shore. Smaller and subordinate: a sailing boat leaning over with its crew pushing it along on foot; reeds all around the edge; a stork wading with dignity. MOOD: funny, airy, gently ironic."
  },
  {
   "id": "at-q-mozart",
@@ -151,7 +154,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
   "source_card": "at-lide-mozart",
   "image_prompt": "Fotorealistický dobový portrét malého Wolfganga Amadea Mozarta u cembala v barokním oděvu, svíčkové osvětlení, 16:9",
-  "about": "Wolfgangu Amadeu Mozartovi"
+  "about": "Wolfgangu Amadeu Mozartovi",
+  "irony_prompt": "A tiny child in a powdered wig fills the frame at an enormous harpsichord, feet dangling far above the floor, playing with total concentration while grown-ups behind him clutch their heads. Smaller and subordinate: a nurse holding a spilled bowl of porridge; a violin far too big leaning on a chair; a cat with its ears back. MOOD: funny, warm, gently ironic."
  },
  {
   "id": "at-q-sisi",
@@ -173,7 +177,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Empress_Elisabeth_of_Austria",
   "source_card": "at-lide-sisi",
   "image_prompt": "Fotorealistický dobový portrét mladé císařovny Alžběty Bavorské (Sisi) ve svatebních šatech, honosný interiér vídeňského paláce, 16:9",
-  "about": "císařovně Alžbětě (Sisi)"
+  "about": "císařovně Alžbětě (Sisi)",
+  "irony_prompt": "A very young bride with a long plait down her back fills the frame in an enormous ballgown, standing at a vast palace altar and looking like a child playing dress-up, while an emperor beams at her. Smaller and subordinate: courtiers in a long row; a dropped rag doll on the marble floor; a small dog sniffing the train of her dress. MOOD: bittersweet, gently ironic."
  },
  {
   "id": "at-q-schwarzenegger",
@@ -195,7 +200,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Arnold_Schwarzenegger",
   "source_card": "at-lide-schwarzenegger",
   "image_prompt": "Fotorealistický snímek malé štýrské vesnice Thal v Rakousku s tradičními domy a kopcovitou krajinou, jasný den, 16:9",
-  "about": "Arnoldu Schwarzeneggerovi"
+  "about": "Arnoldu Schwarzeneggerovi",
+  "irony_prompt": "An enormously muscular young man fills the frame, stepping off a plane in a new country with an absurdly tiny suitcase in one huge hand, shrugging cheerfully at a taxi driver who is waiting for an answer. Smaller and subordinate: a dumbbell poking out of the little case; palm trees; a pigeon staring up at his biceps. MOOD: funny, warm, gently ironic."
  },
  {
   "id": "at-q-opernball",
@@ -217,7 +223,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vienna_Opera_Ball",
   "source_card": "at-kultura-opernball",
   "image_prompt": "Fotorealistický snímek slavnostního sálu vídeňské Státní opery během plesu, tanečníci ve večerních šatech, křišťálové lustry, 16:9",
-  "about": "vídeňském Opernballu"
+  "about": "vídeňském Opernballu",
+  "irony_prompt": "A golden opera ballroom fills the frame, filled edge to edge with a sea of debutantes in white gowns and young men in black, so many that the last pairs are still queueing out of the doors. Smaller and subordinate: a conductor raising his baton; a waiter squeezing through with a tray; a chandelier the size of a carriage. MOOD: festive, grand, gently ironic."
  },
  {
   "id": "at-q-krampus",
@@ -239,7 +246,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Krampus",
   "source_card": "at-kultura-krampus",
   "image_prompt": "Fotorealistický snímek muže v děsivé masce a kožichu Krampuse s rohy během tradičního průvodu v rakouské alpské vesnici, večerní pochodně, 16:9",
-  "about": "Krampusovi"
+  "about": "Krampusovi",
+  "irony_prompt": "A shaggy horned Krampus with a long tongue fills the frame, leaning over a desk where a nervous official in a grey suit has dived underneath it in fright, while a small child calmly pulls the monster's tongue and giggles. Smaller and subordinate: a bundle of birch twigs; a snowy street through the window; a dog hiding behind the child. MOOD: funny, gently ironic."
  },
  {
   "id": "at-q-jezdecka-skola",
@@ -261,7 +269,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Spanish_Riding_School",
   "source_card": "at-kultura-spanelska-jezdecka-skola",
   "image_prompt": "Fotorealistický snímek bílých lipicánských hřebců předvádějících klasickou drezuru v barokní Zimní jízdárně ve Vídni, křišťálové lustry, 16:9",
-  "about": "Španělské jezdecké škole"
+  "about": "Španělské jezdecké škole",
+  "irony_prompt": "A bright baroque riding hall fills the frame as a young woman in uniform rides a white horse into the middle of it for the first time, chin high; along the walls the portraits of generations of old male riders lean out of their frames to stare. Smaller and subordinate: a groom dropping his brush; chandeliers; a cat on a balustrade. MOOD: triumphant, funny, gently ironic."
  },
  {
   "id": "at-q-schnitzel",
@@ -283,7 +292,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wiener_schnitzel",
   "source_card": "at-jidlo-wiener-schnitzel",
   "image_prompt": "Fotorealistický snímek křupavého telecího řízku Wiener Schnitzel na talíři s citronem a bramborovým salátem, teplé restaurační osvětlení, 16:9",
-  "about": "Wiener Schnitzelu"
+  "about": "Wiener Schnitzelu",
+  "irony_prompt": "An enormous thin breaded cutlet fills the frame, so wide it hangs over the edges of the plate, golden and crisp with a wedge of lemon beside it, while a proud calf watches from the window and a pig sulks in the corner. Smaller and subordinate: a fork and knife dwarfed by the meat; parsley; a waiter's white cloth. MOOD: funny, cosy, gently ironic."
  },
  {
   "id": "at-q-sachertorte",
@@ -305,7 +315,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sachertorte",
   "source_card": "at-jidlo-sachertorte",
   "image_prompt": "Fotorealistický snímek tradičního čokoládového dortu Sachertorte s meruňkovou náplní na talíři, kavárenské prostředí, teplé světlo, 16:9",
-  "about": "Sachertorte"
+  "about": "Sachertorte",
+  "irony_prompt": "A teenage apprentice baker in a too-big white hat fills the frame, holding up a dark glossy chocolate cake with both hands and a nervous grin, while the head chef leans on a doorway with his eyebrows up. Smaller and subordinate: a copper pot of apricot jam; a stool he had to stand on; a cat licking chocolate off the floor. MOOD: warm, funny, gently ironic."
  },
  {
   "id": "at-q-kaiserschmarrn",
@@ -327,7 +338,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kaiserschmarrn",
   "source_card": "at-jidlo-kaiserschmarrn",
   "image_prompt": "Fotorealistický snímek talíře s trhaným sladkým palačinkovým dezertem Kaiserschmarrn poprášeným cukrem a s ovocným kompotem, teplé restaurační osvětlení, 16:9",
-  "about": "Kaiserschmarrnu"
+  "about": "Kaiserschmarrnu",
+  "irony_prompt": "A big pan of torn-up fluffy pancake pieces fills the frame, tumbled into a glorious sugary mess and dusted with icing sugar, with plums beside it. Smaller and subordinate: an emperor in uniform eating straight from the pan with a huge spoon; a cook shrugging happily at the mess; a fork abandoned on the table. MOOD: cosy, funny, gently ironic."
  },
  {
   "id": "at-q-vidensky-kongres",
@@ -349,7 +361,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Congress_of_Vienna",
   "source_card": "at-historie-vidensky-kongres",
   "image_prompt": "Fotorealistický snímek honosného sálu vídeňského Hofburgu s diplomaty v dobových oděvech u velkého stolu s mapou Evropy, svíčky, 16:9",
-  "about": "Vídeňském kongresu"
+  "about": "Vídeňském kongresu",
+  "irony_prompt": "An endless round table fills the frame, curving away out of sight with chairs for more delegates than anyone can count, and half of them have abandoned their seats to waltz around the room in pairs. Smaller and subordinate: a secretary asleep on a pile of blank paper; violins in the corner; a servant with an enormous cake. MOOD: festive, funny, gently ironic."
  },
  {
   "id": "at-q-vyrovnani",
@@ -371,7 +384,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
   "source_card": "at-historie-vyrovnani-1867",
   "image_prompt": "Fotorealistický snímek historické budovy uherského parlamentu v Budapešti za soumraku, řeka Dunaj v popředí, 16:9",
-  "about": "rakousko-uherském vyrovnání"
+  "about": "rakousko-uherském vyrovnání",
+  "irony_prompt": "A double-headed eagle fills the frame, its two heads wearing two different crowns and glaring in opposite directions while sharing one plump body, one head holding a fork and the other a spoon over the same dinner. Smaller and subordinate: a ribbon tying the two necks loosely together; two ministers below tugging opposite ways; a nest for one. MOOD: funny, gently ironic."
  },
  {
   "id": "at-q-anschluss",
@@ -393,7 +407,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Anschluss",
   "source_card": "at-historie-anschluss",
   "image_prompt": "Fotorealistický archivní snímek vídeňského náměstí Heldenplatz zaplněného davem v roce 1938, historický tón, 16:9",
-  "about": "anšlusu roku 1938"
+  "about": "anšlusu roku 1938",
+  "irony_prompt": "A striped border barrier across a country road fills the frame, lifted high as a column of soldiers marches under it into a small river town, while an elderly couple at a garden gate watch them pass without moving. Smaller and subordinate: a river and a bridge behind the town; a dropped bicycle in the ditch; low grey clouds. MOOD: sombre, quiet, respectful."
  },
  {
   "id": "at-q-maier",
@@ -415,7 +430,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hermann_Maier",
   "source_card": "at-sport-hermann-maier",
   "image_prompt": "Fotorealistický snímek sjezdového lyžaře v prudké zatáčce na zasněžené alpské trati, sněhová tříšť za lyžemi, jasný den, 16:9",
-  "about": "Hermannu Maierovi"
+  "about": "Hermannu Maierovi",
+  "irony_prompt": "A skier in a torn suit and one twisted goggle fills the frame, standing on the top step of a podium with a round gold medal in each fist and snow still packed in his collar; behind him a safety fence has a skier-shaped hole in it. Smaller and subordinate: a physiotherapist with a roll of bandage; two other skiers applauding; a lost ski pole. MOOD: funny, triumphant, gently ironic."
  },
  {
   "id": "at-q-lauda",
@@ -437,7 +453,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Niki_Lauda",
   "source_card": "at-sport-niki-lauda",
   "image_prompt": "Fotorealistický dobový snímek formulového vozu v plamenech na okruhu Nürburgring v roce 1976, dramatická scéna, 16:9",
-  "about": "Nikim Laudovi"
+  "about": "Nikim Laudovi",
+  "irony_prompt": "A racing driver in a red cap and bandages fills the frame, calmly swinging one leg back into the cockpit of his car while a doctor beside him raises both hands in protest. Smaller and subordinate: a helmet resting on the tyre; mechanics exchanging looks; a stopwatch. MOOD: determined, respectful, gently ironic."
  },
  {
   "id": "at-q-ctyriskok",
@@ -459,7 +476,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Four_Hills_Tournament",
   "source_card": "at-sport-ctyriskok",
   "image_prompt": "Fotorealistický snímek skokana na lyžích ve vzduchu nad skokanským můstkem v Bischofshofenu, zasněžené hory v pozadí, 16:9",
-  "about": "Turné čtyř můstků"
+  "about": "Turné čtyř můstků",
+  "irony_prompt": "Four huge ski jumping hills stand in a row across the frame, and exactly two of them fly red-white-red flags while the other two fly a different flag, with a jumper sailing through the air between them. Smaller and subordinate: crowds with cowbells on the landing slope; snow cannons puffing; a fox watching from the woods. MOOD: dynamic, festive, gently ironic."
  },
  {
   "id": "at-q-klimt",
@@ -481,7 +499,8 @@
   "source_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
   "source_card": "at-umeni-klimt",
   "image_prompt": "Fotorealistický snímek obrazu Polibek od Gustava Klimta zavěšeného na zdi galerie Belvedere ve Vídni, zlatavé odlesky, návštěvníci v uctivé vzdálenosti, 16:9",
-  "about": "obrazu Polibek od Gustava Klimta"
+  "about": "obrazu Polibek od Gustava Klimta",
+  "irony_prompt": "A painter in a long smock fills the frame, pressing a delicate square of real gold leaf onto a canvas with a brush, his fingers and beard glittering with flakes of gold. Smaller and subordinate: a cat sitting in his lap covered in gold dust; a stack of gold-leaf booklets; sunlight catching the shimmer. MOOD: shimmering, warm, gently ironic."
  },
  {
   "id": "at-q-hundertwasserhaus",
@@ -503,7 +522,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hundertwasserhaus",
   "source_card": "at-umeni-hundertwasserhaus",
   "image_prompt": "Fotorealistický snímek barevné fasády domu Hundertwasserhaus ve Vídni s nepravidelnými okny, stromy rostoucími z teras, jasný den, 16:9",
-  "about": "domě Hundertwasserhaus"
+  "about": "domě Hundertwasserhaus",
+  "irony_prompt": "A wildly colourful apartment house fills the frame with wobbly walls, uneven windows and onion turrets, and full-sized trees growing out of its windows and terraces so that the house looks like a hill with rooms. Smaller and subordinate: a resident watering a tree from a balcony; birds nesting in a window; tourists craning their necks. MOOD: playful, magical, gently ironic."
  },
  {
   "id": "at-q-secese",
@@ -525,7 +545,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Secession_Building",
   "source_card": "at-umeni-secese",
   "image_prompt": "Fotorealistický snímek fasády budovy Secese ve Vídni se zlatou kopulí a nápisem nad vchodem, jasný den, 16:9",
-  "about": "budově Secese"
+  "about": "budově Secese",
+  "irony_prompt": "A cube-shaped white pavilion fills the frame, crowned by a big openwork golden dome of laurel leaves that glows like a cabbage of gold, while inside young artists paint whatever they please with the doors of a broken cage lying open behind them. Smaller and subordinate: a stiff academic professor turning away in horror; a lizard on the wall; sunlight on the gilding. MOOD: bright, rebellious, gently ironic."
  },
  {
   "id": "at-q-servus",
@@ -547,7 +568,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Servus",
   "source_card": "at-jazyk-servus",
   "image_prompt": "Fotorealistický snímek dvou lidí zdravících se potřesením ruky na rakouské vesnické návsi, přátelský úsměv, sluneční odpoledne, bez textu, 16:9",
-  "about": "pozdravu servus"
+  "about": "pozdravu servus",
+  "irony_prompt": "A cheerful man in an apron fills the frame, greeting a guest with a deep sweeping bow and a hand on his heart, mock-serving him like a devoted servant with a towel over his arm. Smaller and subordinate: the guest laughing and waving it off; a coffee tray on the table; a dog bowing its head too. MOOD: warm, funny, gently ironic."
  },
  {
   "id": "at-q-gruss-gott",
@@ -569,7 +591,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gr%C3%BC%C3%9F_Gott",
   "source_card": "at-jazyk-gruss-gott",
   "image_prompt": "Fotorealistický snímek horské vesnice v rakouských Alpách s kostelní věží, ranní slunce, bez lidí, bez textu, 16:9",
-  "about": "pozdravu Grüß Gott"
+  "about": "pozdravu Grüß Gott",
+  "irony_prompt": "Two hikers meeting on a sunny alpine path fill the frame, tipping their hats to each other while a beam of light breaks through the clouds above them and lands neatly between them like a third greeting. Smaller and subordinate: a wayside shrine with flowers; cows on the slope; a marmot standing to attention. MOOD: warm, sunny, gently ironic."
  },
  {
   "id": "at-q-paradeiser",
@@ -591,7 +614,8 @@
   "source_url": "https://de.wiktionary.org/wiki/Paradeiser",
   "source_card": "at-jazyk-paradeiser",
   "image_prompt": "Fotorealistický detailní snímek zralých červených rajčat na dřevěném trhovém stánku v Rakousku, ranní světlo, 16:9",
-  "about": "rakouských slovech Paradeiser a Erdapfel"
+  "about": "rakouských slovech Paradeiser a Erdapfel",
+  "irony_prompt": "A plump red tomato fills the frame, sitting in a tiny paradise garden on a velvet cushion with a leafy apple tree and a friendly snake coiled above it, while beside it a potato hangs proudly from a branch pretending to be an apple of the earth. Smaller and subordinate: a confused German greengrocer scratching his head; a basket; a butterfly. MOOD: funny, warm, gently ironic."
  },
  {
   "id": "at-k-apfelstrudel",
@@ -611,7 +635,8 @@
   "quip_correct": "Bravo, přesně tak! Víš, co znamená Apfel německy? Jablko — takže recept prozradí název rovnou sám.",
   "quip_wrong": "Skoro, ale ne tak úplně — zkus poslouchat název pozorněji. Apfelstrudel je z jablek, přesně jak říká to německé slovo Apfel.",
   "explanation": "Apfelstrudel je tradiční vídeňský dezert z tenkého vrstveného těsta plněného jablky, skořicí, rozinkami a strouhankou. Peče se do zlatova a podává se teplý se šlehačkou nebo vanilkovou omáčkou.",
-  "about": "Apfelstrudelu"
+  "about": "Apfelstrudelu",
+  "irony_prompt": "A long rolled pastry fills the frame, cut open to show spirals of thin dough wrapped around soft apple slices and raisins, dusted with icing sugar and still steaming. Smaller and subordinate: an apple with a bite out of it; a rolling pin and a cloth; a child reaching for a slice. MOOD: cosy, cheerful, for children."
  },
  {
   "id": "at-k-edelweiss",
@@ -631,7 +656,8 @@
   "quip_correct": "Trefa! Edelweiss, a nikdo jiný. Bílá, chlupatá, houževnatá — a tahle kytička si dokonce vysloužila vlastní písničku ve Zvuku hudby.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — zahrádka v nížině to není, tahle kytička bydlí jen vysoko v horách, tam kde už skoro nic jiného nepřežije.",
   "explanation": "Edelweiss roste jen v horách nad 1800 metry nadmořské výšky. V Rakousku i Švýcarsku je zákonem chráněný, protože turisté ho příliš trhali. Jeho bílé chlupaté lístky mu pomáhají snášet mráz a sluneční záření ve výšinách.",
-  "about": "edelweissu"
+  "about": "edelweissu",
+  "irony_prompt": "A single white star-shaped flower with thick furry petals fills the frame, growing out of a crack in a grey rock high in the mountains, glowing against the stone. Smaller and subordinate: a chamois peeking over the ridge; snowy peaks behind; a bee deciding whether to land. MOOD: tender, magical, for children."
  },
  {
   "id": "at-k-vlajka",
@@ -651,7 +677,8 @@
   "quip_correct": "Jsi bystrá hlava! Co by taky mělo být jednodušší — rakouská vlajka nepotřebuje žádné znaky ani hvězdy, stačí jí dva pruhy a je hned jasno.",
   "quip_wrong": "Ouha, málem — modrá by slušela hodně vlajkám, ale ta rakouská si vystačí jen s červenou a bílou.",
   "explanation": "Podle legendy vznikla rakouská vlajka z erbu vévody Leopolda V.: po bitvě byl celý zakrvácený, ale pod řemenem bílý — tak prý vznikly pruhy. Vlajka v téhle podobě je jednou z nejstarších na světě.",
-  "about": "rakouské vlajce"
+  "about": "rakouské vlajce",
+  "irony_prompt": "A big flag fills the frame, waving in mountain air with three horizontal stripes — red on top, white in the middle, red below — bright against the blue sky. Smaller and subordinate: a child holding the flagpole with both hands; an alpine hut; a cow with a bell watching. MOOD: cheerful, bright, for children."
  },
  {
   "id": "at-k-lipican",
@@ -671,7 +698,8 @@
   "quip_correct": "Skvěle, nenechal ses zmást bílou srstí! Lipicánský kůň se totiž nenarodí bílý — hříbata jsou tmavá a zbělají teprve postupně, ne hned.",
   "quip_wrong": "Blízko, ale ne — slon by se do vídeňské jízdárny asi nevešel, tancuje tam bílý lipicánský kůň.",
   "explanation": "Lipicánský kůň pochází z chovu šlechtěného v 16. století. Španělská jezdecká škola ve Vídni trénuje tyto koně na složité skoky zvané airs above the ground, při nichž kůň vyskočí do vzduchu se složenýma nohama.",
-  "about": "lipicánských koních"
+  "about": "lipicánských koních",
+  "irony_prompt": "A dazzling white horse fills the frame, rearing gracefully on its hind legs in a golden baroque hall, with a rider in a brown coat and bicorn hat sitting perfectly still. Smaller and subordinate: chandeliers above; a groom with a brush; a foal born dark peeking through a doorway. MOOD: elegant, magical, for children."
  },
  {
   "id": "at-k-mozartkugel",
@@ -692,7 +720,8 @@
   "quip_wrong": "Skoro, ale ne úplně — džem si nech na jiné sladkosti, uvnitř zlatého papírku Mozartkugel najdeš marcipán s nugátem.",
   "explanation": "Originální Mozartkugel vynalezl cukrář Paul Fürst v Salcburku v roce 1890. Jeho recept se dodnes dědí v rodině a tyto bonbony se stále vyrábí ručně — proto jsou výrazně dražší než průmyslové kopie.",
   "about": "salcburských bonbonech Mozartkugel",
-  "image_prompt": "A painterly watercolor illustration of gold-wrapped Mozart chocolate balls in a decorative box with a Salzburg skyline, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of gold-wrapped Mozart chocolate balls in a decorative box with a Salzburg skyline, vintage travel journal style",
+  "irony_prompt": "One round chocolate ball wrapped in shiny gold foil fills the frame, cut neatly in half to show the layers inside: a green marzipan core wrapped in soft nougat under dark chocolate. Smaller and subordinate: more wrapped balls in a box; a tiny powdered wig resting on one of them; a child's hand reaching. MOOD: sweet, playful, for children."
  },
  {
   "id": "at-k-alpy",
@@ -713,7 +742,8 @@
   "quip_wrong": "Tentokrát vedle — plavat v zamrzlém jezeře by bylo dost odvážné, v zimě Rakušané raději jezdí na lyžích.",
   "explanation": "Rakousko patří mezi pět největších lyžařských destinací světa. Stát má přes 400 lyžařských středisek a některé sjezdovky jsou otevřené i v létě díky ledovcům.",
   "about": "lyžování v rakouských Alpách",
-  "image_prompt": "A painterly watercolor illustration of colorful ski slopes in the Austrian Alps with wooden chalets and pine trees dusted with snow, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of colorful ski slopes in the Austrian Alps with wooden chalets and pine trees dusted with snow, vintage travel journal style",
+  "irony_prompt": "A snowy alpine slope fills the frame, with skiers of all sizes carving down through the powder, a wooden hut halfway with steaming mugs outside, and high white peaks all around. Smaller and subordinate: a sledge crossing the piste; a snowman in ski goggles; a chairlift above. MOOD: crisp, joyful, for children."
  },
  {
   "id": "at-k-dunaj",
@@ -734,7 +764,8 @@
   "quip_wrong": "Skoro, ale ne tak úplně — ve valčíku zní modře, v realitě vypadá jinak, Dunaj má spíš zelenošedou barvu.",
   "explanation": "Johann Strauss napsal valčík 'Na krásném modrém Dunaji' v roce 1866 — název byl poetický, ne vědecký. Řeka nese sedimenty z Alp, které jí dávají charakteristickou šedozelenou barvu.",
   "about": "řece Dunaj ve Vídni",
-  "image_prompt": "A painterly watercolor illustration of the Danube River flowing through Vienna with green-grey water and autumn light, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Danube River flowing through Vienna with green-grey water and autumn light, vintage travel journal style",
+  "irony_prompt": "A wide river fills the frame flowing through a grand city, its water clearly greenish-grey, while on the bank a painter with a blue-loaded brush stares at the water in disappointment. Smaller and subordinate: a pleasure boat with dancers on deck; a bridge; ducks unimpressed by the colour debate. MOOD: funny, gently ironic, for children."
  },
  {
   "id": "at-t-mozart",
@@ -754,7 +785,8 @@
   "quip_wrong": "Tentokrát ne — Mozart žil mnohem skromněji, než by sláva napovídala.",
   "explanation": "Mozart zemřel v 35 letech zadlužený a byl pohřben do společného hrobu pro chudé. Přitom byl za svého života velmi slavný a vystupoval před panovníky celé Evropy — jeho problémem bylo utrácení stejně rychlé jako vydělávání.",
   "about": "Mozartově životě",
-  "image_prompt": "A painterly watercolor illustration of young Mozart at a harpsichord in a candlelit baroque salon in Salzburg, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of young Mozart at a harpsichord in a candlelit baroque salon in Salzburg, vintage travel journal style",
+  "irony_prompt": "A composer in a shabby coat fills the frame, playing a golden harpsichord in a glittering palace while emperors applaud — and his coat pockets, turned inside out, hang empty with a moth flying out of one. Smaller and subordinate: a landlord waiting at the door with an open hand; a pile of manuscript paper; a candle stub. MOOD: bittersweet, gently ironic."
  },
  {
   "id": "at-t-kafehausy",
@@ -774,7 +806,8 @@
   "quip_wrong": "Tvoje logika se tentokrát vydala jinam — vídeňská kavárna funguje jinak.",
   "explanation": "Vídeňská kavárenská kultura je od roku 2011 na seznamu UNESCO. Kavárny historicky sloužily jako místo setkávání umělců, filozofů a politiků — Freud, Klimt i Lenin tu trávili hodiny nad šálkem melange.",
   "about": "vídeňské kavárenské kultuře",
-  "image_prompt": "A painterly watercolor illustration of an elegant Viennese coffeehouse interior with marble tables, bentwood chairs, newspapers on wooden holders, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of an elegant Viennese coffeehouse interior with marble tables, bentwood chairs, newspapers on wooden holders, vintage travel journal style",
+  "irony_prompt": "A marble-topped café table fills the frame, where a guest has sat so long over one single little cup that his beard has grown down to his knees, while the waiter calmly brings him another glass of water. Smaller and subordinate: a chess game half finished; a coat rack with a hat; a cat asleep on the bench. MOOD: cosy, funny, gently ironic."
  },
  {
   "id": "at-t-habsburkove",
@@ -794,7 +827,8 @@
   "quip_wrong": "Ne tak úplně — Habsburkové vsadili na úplně jiné latinské heslo.",
   "explanation": "Habsburská strategie dynastických sňatků skutečně fungovala: bez větší války získali Španělsko, Burgundsko a části Itálie. Ironií je, že tato politika nakonec vedla k příbuzenské degeneraci — Habsburská čelist a různé genetické problémy jsou jejím výsledkem.",
   "about": "habsburské dynastické politice",
-  "image_prompt": "A painterly watercolor illustration of a Habsburg royal wedding ceremony in a grand Vienna cathedral with baroque decorations, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Habsburg royal wedding ceremony in a grand Vienna cathedral with baroque decorations, vintage travel journal style",
+  "irony_prompt": "A battlefield fills the frame where two armies stand idle and bored, leaning on their pikes, while in the middle a royal wedding takes place with rings being exchanged over a cannon that someone has planted with flowers. Smaller and subordinate: a cupid in armour aiming an arrow; a general checking his watch; a dove on the cannon. MOOD: funny, gently ironic."
  },
  {
   "id": "at-t-arnold",
@@ -814,7 +848,8 @@
   "quip_wrong": "Cool nápad, ale mimo — Arnold investuje jinam.",
   "explanation": "Schwarzenegger se narodil ve Štýrském Talu u Grazu. Po kariéře guvernéra Kalifornie se aktivně věnuje klimatické osvětě — provozuje výzkumné centrum čistých technologií a financuje solární projekty ve svém rodném regionu.",
   "about": "Arnoldu Schwarzeneggerovi a jeho vztahu k Rakousku",
-  "image_prompt": "A painterly watercolor illustration of green rolling hills of Styria Austria with a traditional farmhouse and solar panels, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of green rolling hills of Styria Austria with a traditional farmhouse and solar panels, vintage travel journal style",
+  "irony_prompt": "A hugely muscular man in hiking boots fills the frame, planting a young tree on a green Styrian hillside with the same seriousness as lifting a weight, sleeves rolled up. Smaller and subordinate: a row of saplings already planted; children carrying watering cans; a deer watching from the edge of the wood. MOOD: warm, cheerful, gently ironic."
  },
  {
   "id": "at-t-silvestr",
@@ -834,7 +869,8 @@
   "quip_wrong": "Tvoje logika tentokrát utekla jinam — Vídeň slaví Nový rok jinak, než tipuješ.",
   "explanation": "Novoroční koncert Vídeňských filharmoniků se vysílá do více než 90 zemí světa a sleduje ho přes 50 milionů diváků. Dirigent se každý rok mění a pozvání je považováno za jeden z nejvyšších hudebních vrcholů kariéry.",
   "about": "vídeňském Novoročním koncertu",
-  "image_prompt": "A painterly watercolor illustration of the golden Musikverein concert hall in Vienna filled with flowers and an orchestra performing, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the golden Musikverein concert hall in Vienna filled with flowers and an orchestra performing, vintage travel journal style",
+  "irony_prompt": "A golden concert hall fills the frame on New Year's morning, an orchestra in full swing among banks of flowers, while the whole world watches through a window in the form of countless glowing living-room lights outside. Smaller and subordinate: a conductor mid-leap; a double bass player smiling; a cat asleep in the flower arrangement. MOOD: festive, warm, grand."
  },
  {
   "id": "at-t-rakousko-neutralita",
@@ -854,7 +890,8 @@
   "quip_wrong": "Kreativní, ale mimo — klíč k rychlé dohodě byl jinde než v penězích nebo velikosti.",
   "explanation": "Státní smlouva z roku 1955 ukončila spojeneckou okupaci výměnou za ústavní neutralitu. Tato neutralita trvá dodnes — Rakousko není členem NATO, přestože je členem EU. Vídeň se proto stala oblíbeným místem pro mezinárodní diplomatická jednání.",
   "about": "rakouské neutralitě po druhé světové válce",
-  "image_prompt": "A painterly watercolor illustration of the Vienna Belvedere Palace where the Austrian State Treaty was signed in 1955, with Austrian flags flying, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Vienna Belvedere Palace where the Austrian State Treaty was signed in 1955, with Austrian flags flying, vintage travel journal style",
+  "irony_prompt": "A man in an alpine hat fills the frame, standing in his doorway and politely refusing two heavy military coats held out to him from both sides, keeping his hands firmly in his pockets. Smaller and subordinate: four soldiers in different uniforms walking away with their kit; a white handkerchief tied to the gatepost; a cat on the fence. MOOD: calm, funny, gently ironic."
  },
  {
   "id": "at-a-freud",
@@ -874,7 +911,8 @@
   "quip_wrong": "Odvážná teorie, bohužel nesprávná — Freudův útěk měl úplně jiný scénář.",
   "explanation": "Marie Bonaparte, francouzská princezna a Freudova žákyně, zaplatila výkupné za jeho propuštění. Freudovy čtyři sestry, které zůstaly, zahynuly v koncentračních táborech. Freud zemřel v Londýně v roce 1939 — požádal lékaře o smrtelnou dávku morfia, protože trpěl rakovinou čelisti.",
   "about": "Sigmundu Freudovi a jeho útěku z Vídně",
-  "image_prompt": "A painterly watercolor illustration of Freud's study in Vienna with his famous couch, antiquities collection, and writing desk in warm lamplight, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Freud's study in Vienna with his famous couch, antiquities collection, and writing desk in warm lamplight, vintage travel journal style",
+  "irony_prompt": "An elderly bearded gentleman in a homburg hat fills the frame, walking to a waiting car while porters carry his famous couch out of the house behind him, its rug still folded on top. Smaller and subordinate: an officer stepping aside with a stiff bow; a princess handing over a purse; a dog waiting by the car door. MOOD: bittersweet, dignified, gently ironic."
  },
  {
   "id": "at-a-ledovec-otzi",
@@ -894,7 +932,8 @@
   "quip_wrong": "Trefa vedle mísy — Ötziho smrt byla mnohem násilnější, než tipuješ.",
   "explanation": "Analýza ukázala, že Ötzi jedl krátce před smrtí — pak ho někdo sestřelil šípem zezadu. Vědci navíc zjistili, že měl arteriosklerózu, nesnášenlivost laktózy a byl pravděpodobně plešatý. Jeho DNA stále žije v přibližně 19 současných lidech v Alpách.",
   "about": "Ötziho — ledovcové mumii z Alp",
-  "image_prompt": "A painterly watercolor illustration of the alpine glacier landscape near the Ötztal valley with dramatic mountain peaks and ice, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the alpine glacier landscape near the Ötztal valley with dramatic mountain peaks and ice, vintage travel journal style",
+  "irony_prompt": "A leathery ice mummy lying in a hollow of blue glacier ice fills the frame, and scientists lean over it with a magnifier, their faces astonished at a small flint arrowhead still lodged in its shoulder. Smaller and subordinate: a copper axe and a bow lying nearby; a helicopter on the snowfield; mountain peaks on the border ridge. MOOD: solemn, curious, respectful."
  },
  {
   "id": "at-a-red-bull",
@@ -914,7 +953,8 @@
   "quip_wrong": "Vedle — Mateschitzova inspirace přiletěla z úplně jiného kontinentu.",
   "explanation": "Mateschitz byl v roce 1982 v Bangkoku, kde narazil na Krating Daeng (Červený buvol). Dohodl se s thajským výrobcem Chaleo Yoovidhyou na partnerství — každý vlastnil 49 %, zbývající 2 % dostaly jejich děti. Red Bull dnes prodá přes 12 miliard plechovek ročně.",
   "about": "vzniku značky Red Bull",
-  "image_prompt": "A painterly watercolor illustration of a Bangkok street market stall in the 1980s with Thai energy drinks, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Bangkok street market stall in the 1980s with Thai energy drinks, vintage travel journal style",
+  "irony_prompt": "A busy Thai street stall fills the frame, where an Austrian businessman in a suit sips from a small glass bottle with his eyebrows shooting up, while two little bulls — one in a Thai straw hat, one in an alpine hat — shake hoofs beside him. Smaller and subordinate: tuk-tuks in the traffic; a crate of plain bottles; a street cat. MOOD: funny, gently ironic."
  },
  {
   "id": "at-a-habsburska-cast",
@@ -934,7 +974,8 @@
   "quip_wrong": "Netrefeno — Habsburkové to řešili zbožně, ne z bezpečnostních důvodů.",
   "explanation": "Habsburské srdce je uloženo v Augustiniánském kostele (54 stříbrných uren), vnitřnosti v Katedrále sv. Štěpána, těla v Kapuzínské kryptě — vše ve Vídni. Tato praxe skončila s Karlem I. v roce 1922. Poslední pohřbení v Kapuzínské kryptě bylo v roce 2011 — Otto von Habsburg.",
   "about": "habsburském pohřebním rituálu",
-  "image_prompt": "A painterly watercolor illustration of the Imperial Crypt beneath the Kapuzinerkirche in Vienna with ornate metal sarcophagi in candlelight, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Imperial Crypt beneath the Kapuzinerkirche in Vienna with ornate metal sarcophagi in candlelight, vintage travel journal style",
+  "irony_prompt": "A solemn candlelit crypt fills the frame, where a procession of mourners carries away exactly three vessels in three different directions down three corridors — a large coffin, a small heart-shaped urn and a copper jar. Smaller and subordinate: monks with candles; a stone double-headed eagle above the arch; a confused visitor looking left and right. MOOD: solemn, gently ironic, respectful."
  },
  {
   "id": "at-a-klimt",
@@ -954,7 +995,8 @@
   "quip_wrong": "Mimo — skutečný průlom případu Bloch-Bauerové byl jinde.",
   "explanation": "Maria Altmannová, neteř Adele Bloch-Bauerové, bojovala sedm let. Případ skončil u amerického Nejvyššího soudu. Obraz pak koupil Ronald Lauder za 135 milionů dolarů pro newyorskou galerii Neue Galerie. Případ inspiroval film 'Žena ve zlatém' (2015) s Helen Mirren.",
   "about": "Klimtově obraze a jeho navrácení",
-  "image_prompt": "A painterly watercolor illustration of a golden art nouveau portrait in a gallery with dramatic lighting echoing Klimt's gold leaf patterns, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a golden art nouveau portrait in a gallery with dramatic lighting echoing Klimt's gold leaf patterns, vintage travel journal style",
+  "irony_prompt": "A glittering golden painting of a seated lady in a shimmering gown fills the frame, being carried out of a museum by a family with tears and smiles, while a guard holds the door open and waves goodbye. Smaller and subordinate: an empty patch of wall with a bright rectangle where it hung; a judge's gavel on a bench; a photographer waiting outside. MOOD: bittersweet, warm, dignified."
  },
  {
   "id": "at-a-kafemlyn",
@@ -974,7 +1016,8 @@
   "quip_wrong": "Ne tentokrát — vídeňská káva má válečnější, méně diplomatický původ.",
   "explanation": "Georg Franz Kolschitzky, zvěd, který pomohl při obléhání, dostal jako odměnu pytle s kávou. Otevřel jednu z prvních vídeňských kaváren a prý jako první přidal med a mléko — základ vídeňské tradice melange.",
   "about": "historii kávy ve Vídni",
-  "image_prompt": "A painterly watercolor illustration of a 17th century Viennese street scene with the first coffeehouse opening after the Ottoman siege, with coffee sacks and curious citizens, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a 17th century Viennese street scene with the first coffeehouse opening after the Ottoman siege, with coffee sacks and curious citizens, vintage travel journal style",
+  "irony_prompt": "A city square strewn with abandoned sacks fills the frame just after a siege, and citizens are prying one open to find dark roasted beans pouring out, sniffing them with amazement. Smaller and subordinate: tents and a crescent banner left behind in the distance; a horse trotting off riderless; a cat sneezing in the coffee dust. MOOD: astonished, warm, gently ironic."
  },
  {
   "id": "at-a-zillertal",
@@ -994,7 +1037,8 @@
   "quip_wrong": "Netrefeno — dirndl a lederhosen jsou novější vynález, než by se zdálo.",
   "explanation": "Zájem o alpský kroj vznikl v době romantismu, kdy měšťané z Vídně jezdili do Alp na prázdniny a toužili po 'autentickém' vesnickém životě. Módní návrháři oděv stylizovali a prodávali zpět jako tradiční. Historik Eric Hobsbawm tento fenomén nazval 'invented tradition' (vynalezená tradice).",
   "about": "historii dirndlu a lederhosen",
-  "image_prompt": "A painterly watercolor illustration of a 19th century Viennese illustration showing idealized alpine peasants in dirndl and lederhosen, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a 19th century Viennese illustration showing idealized alpine peasants in dirndl and lederhosen, vintage travel journal style",
+  "irony_prompt": "An elegant city tailor's salon fills the frame, where fashionable ladies and gentlemen are being sewn into brand-new dirndls and leather shorts in front of a mirror, while three real farmers at the window watch in complete bewilderment. Smaller and subordinate: a fashion plate on an easel; pins and a tape measure; a goat peering in. MOOD: funny, gently ironic."
  },
  {
   "id": "at-a-anschluss",
@@ -1014,7 +1058,8 @@
   "quip_wrong": "Mimo — zlom v sebepojetí přišel později a bolestněji, než tipuješ.",
   "explanation": "Kurt Waldheim byl generální tajemník OSN a kandidát na prezidenta. V roce 1986 vyšlo najevo, že sloužil v jednotkách zodpovědných za deportace. Přesto byl zvolen — ale ocitl se na mezinárodním bojkotovém seznamu. Tato krize spustila v Rakousku první skutečnou veřejnou debatu o vlastní roli ve válce.",
   "about": "rakouském vyrovnání s nacistickou minulostí",
-  "image_prompt": "A painterly watercolor illustration of the Austrian Parliament building in Vienna with a reflective mood, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Austrian Parliament building in Vienna with a reflective mood, vintage travel journal style",
+  "irony_prompt": "A tidy alpine parlour fills the frame, where a man in a loden jacket sweeps a grey pile of dust under a heavy rug with a broom — and a hard beam of light from an opened door falls exactly on the lump in the carpet. Smaller and subordinate: a mirror on the wall reflecting the lump; a clock on the mantel; a dog sniffing at the rug edge. MOOD: sombre, gently ironic, respectful."
  },
  {
   "id": "at-a-opera-kriz",
@@ -1034,7 +1079,8 @@
   "quip_wrong": "Netrefeno — reakce publika byla mnohem tragičtější, než sis myslel.",
   "explanation": "Budova se jevila příliš nízká, protože mezitím byl snížen terén Ringstrasse. Architekt Eduard van der Nüll se oběsil krátce po kritice; jeho kolega Sicardsburg zemřel na infarkt dva měsíce nato. František Josef pak začal diplomaticky říkat jen 'bylo to velmi zajímavé'.",
   "about": "historii Vídeňské státní opery",
-  "image_prompt": "A painterly watercolor illustration of the Vienna State Opera house on the Ringstrasse at dusk with warm lamplight and elegant visitors, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Vienna State Opera house on the Ringstrasse at dusk with warm lamplight and elegant visitors, vintage travel journal style",
+  "irony_prompt": "A grand opera house fills the frame, sunk so low into the street that it looks like a heavy box dropped into the ground, while passers-by gesture at it and shake their heads. Smaller and subordinate: a lone architect walking away in the rain with his plans rolled up; a horse-drawn cab; a beggar unimpressed. MOOD: melancholy, gently ironic."
  },
  {
   "id": "at-a-salzburg-festival",
@@ -1054,7 +1100,8 @@
   "quip_wrong": "Vedle — Hofmannsthalova ironie je osobnější, ne organizační.",
   "explanation": "Hugo von Hofmannsthal zemřel v roce 1929 — dva dny po sebevraždě syna Franze. Festival, který spoluzaložil roku 1920 s Maxem Reinhardtem a Richardem Straussem, se stal světovou institucí až po jeho smrti. Turistické brožury jeho osobní tragédii neuvádějí.",
   "about": "Hugovi von Hofmannsthalovi a Salcburském festivalu",
-  "image_prompt": "A painterly watercolor illustration of the Felsenreitschule open-air stage in Salzburg carved into rock with baroque arches and evening performance lighting, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Felsenreitschule open-air stage in Salzburg carved into rock with baroque arches and evening performance lighting, vintage travel journal style",
+  "irony_prompt": "A packed open-air festival courtyard fills the frame at dusk, glowing with lanterns and applause, while in the front row one single chair stands empty with a wreath of flowers laid on its seat. Smaller and subordinate: actors bowing on the stage; a fortress on the hill above; a swallow crossing the sky. MOOD: bittersweet, dignified, warm."
  },
  {
   "id": "at-a-schoenbrunn-zoo",
@@ -1074,7 +1121,8 @@
   "quip_wrong": "Ne úplně — původ zoo byl soukromější, ne vědecký nebo vojenský.",
   "explanation": "Zoo ve Schönbrunnu vznikla v roce 1752 jako soukromá menažerie Františka I. Veřejnosti byla otevřena roku 1779. Dnes je jednou z mála zoo na světě, kde se pravidelně daří chovat velké pandy — díky dlouhodobé dohodě s Čínou.",
   "about": "historii zoo ve Schönbrunnu",
-  "image_prompt": "A painterly watercolor illustration of the historic baroque Tiergarten Schönbrunn with its octagonal pavilion and exotic animals in 18th century Vienna, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the historic baroque Tiergarten Schönbrunn with its octagonal pavilion and exotic animals in 18th century Vienna, vintage travel journal style",
+  "irony_prompt": "A round baroque pavilion fills the frame, where an emperor and his court eat breakfast at a laid table while, all around them in a ring of cages and paddocks, elephants, camels and monkeys watch them eat. Smaller and subordinate: a gardener with a wheelbarrow; a gate still locked to the public; a peacock strutting on the path. MOOD: grand, funny, gently ironic."
  },
  {
   "id": "at-k-riesenrad",
@@ -1095,7 +1143,8 @@
   "quip_wrong": "Blízko, ale ne — horská dráha ani skluzavka to nejsou, v Prateru se točí obrovské vyhlídkové kolo vysoko nad městem.",
   "explanation": "Vídeňské vyhlídkové kolo v parku Prater patří k nejstarším svého druhu na světě. Jeho kabinky se pomalu otáčí dokola a z nejvyššího bodu je vidět kus celé Vídně.",
   "about": "vídeňském vyhlídkovém kole v Prateru",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a giant Ferris wheel in a Vienna amusement park against a soft sky"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a giant Ferris wheel in a Vienna amusement park against a soft sky",
+  "irony_prompt": "An enormous ferris wheel fills the frame, turning slowly above a fairground with red cabins the size of little rooms, and happy faces pressed to every window high above the city. Smaller and subordinate: a carousel below; a stall with candyfloss; pigeons on the wheel's spokes. MOOD: nostalgic, cheerful, for children."
  },
  {
   "id": "at-k-kravske-zvonce",
@@ -1116,7 +1165,8 @@
   "quip_wrong": "Tentokrát vedle — vlky ani hračka to nejsou, zvonec slouží k tomu, aby pastevci slyšeli, kde se která kráva zrovna toulá.",
   "explanation": "V alpských horách se stáda krav na léto pouštějí volně na rozlehlé pastviny. Bez zvonců by je pastevci mezi skalami a lesy jen těžko hledali — cinkání je prozradí na dálku.",
   "about": "kravských zvoncích v rakouských horách",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a brown alpine cow with a large bell around its neck grazing on a green mountain meadow"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a brown alpine cow with a large bell around its neck grazing on a green mountain meadow",
+  "irony_prompt": "A shaggy brown cow with an enormous bell on a broad collar fills the frame, standing on a steep mountain meadow, while far below a herder cups his hand to his ear and follows the sound with a smile. Smaller and subordinate: other cows hidden behind a fold of the hill, only their bells showing; a wooden hut; a marmot. MOOD: sunny, cosy, for children."
  },
  {
   "id": "at-t-vidensky-chlapecky-sbor",
@@ -1137,7 +1187,8 @@
   "quip_wrong": "Blízko, ale ne dost blízko — ne o centimetrech ani o pevném věkovém limitu tu jde, chlapce ze sboru vyřadí až mutace hlasu.",
   "explanation": "Vídeňský chlapecký sbor založil v roce 1498 císař Maxmilián I. jako dvorní kapelu. Bývalí zpěváci ze sboru později často pokračují v hudební kariéře jako dospělí pěvci nebo dirigenti.",
   "about": "Vídeňském chlapeckém sboru",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a boys choir singing in sailor-style uniforms inside an ornate Vienna chapel"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a boys choir singing in sailor-style uniforms inside an ornate Vienna chapel",
+  "irony_prompt": "A row of boys in sailor collars fills the frame, singing with wide-open mouths, and from one of them comes a note that suddenly drops and wobbles into a deep rumble, to his own horror. Smaller and subordinate: the choirmaster raising an eyebrow; a younger boy stepping eagerly into the gap; a pigeon startled off the windowsill. MOOD: funny, warm, gently ironic."
  },
  {
   "id": "at-t-falco",
@@ -1158,7 +1209,8 @@
   "quip_wrong": "Skoro se to povedlo, ale ne úplně — do USA se dostaly i jiné evropské písně, jenže výjimečnost Rock Me Amadeus je v tom, že šlo o němčinu přímo na vrcholu Billboardu.",
   "explanation": "Falco vlastním jménem Johann Hölzel pocházel z Vídně a píseň Rock Me Amadeus, věnovaná Wolfgangu Amadeu Mozartovi, se v roce 1986 na týden dostala na první místo Billboard Hot 100.",
   "about": "písni Rock Me Amadeus od Falca",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a 1980s pop singer silhouette on stage with neon stage lights in Vienna"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a 1980s pop singer silhouette on stage with neon stage lights in Vienna",
+  "irony_prompt": "A singer in sunglasses and a sharp suit fills the frame on a stage, one finger raised in mid-song, while behind him a figure in a powdered wig conducts along to the beat with obvious delight. Smaller and subordinate: a wall of stage lights; a golden record award on a stand; fans with raised arms. MOOD: cool, funny, gently ironic."
  },
  {
   "id": "at-t-vinice-ve-vidni",
@@ -1179,7 +1231,8 @@
   "quip_wrong": "Tentokrát tvoje logika utekla jinam — žádný zákaz vína ani květináč na balkoně, Vídeň je naopak jediná metropole s opravdovými vinicemi přímo ve městě.",
   "explanation": "Na okraji Vídně se rozkládá přes 600 hektarů vinic, kde se pěstuje mimo jiné odrůda Wiener Gemischter Satz. Mladé víno se čepuje přímo v tradičních vinárnách zvaných Heuriger.",
   "about": "vídeňských vinicích",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, rolling vineyard hills on the edge of Vienna with the city skyline faint in the distance"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, rolling vineyard hills on the edge of Vienna with the city skyline faint in the distance",
+  "irony_prompt": "A steep hillside of vineyard rows fills the frame — and the rows run right into a city, with tram tracks, apartment houses and church spires standing among the vines. Smaller and subordinate: a tram with a barrel on its roof; a winemaker tasting under a pergola; starlings in the grapes. MOOD: sunny, cosy, gently ironic."
  },
  {
   "id": "at-t-strecha-stephansdomu",
@@ -1200,7 +1253,8 @@
   "quip_wrong": "Blízko se to netrefilo — žádná mapa ani portrét stavitele, na střeše katedrály je vyskládaný dvouhlavý habsburský orel.",
   "explanation": "Střecha Stephansdómu je pokrytá více než 230 000 glazovanými taškami. Na jižní straně tvoří vzor habsburského dvouhlavého orla, na severní straně znak Vídně a Rakouska.",
   "about": "střeše vídeňského Stephansdómu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, the colorful tiled roof pattern of a gothic cathedral in Vienna forming a large eagle mosaic"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, the colorful tiled roof pattern of a gothic cathedral in Vienna forming a large eagle mosaic",
+  "irony_prompt": "The steep tiled roof of a gothic cathedral fills the frame, seen from above, its glazed tiles laid out as an enormous double-headed eagle with spread wings in green, gold and black. Smaller and subordinate: a roofer clinging to the ridge; the tall spire at the edge of the frame; a kestrel flying past. MOOD: grand, playful, gently ironic."
  },
  {
   "id": "at-a-filharmonie-zeny",
@@ -1221,7 +1275,8 @@
   "quip_wrong": "Odvážný odhad, bohužel vedle — rozhodně ne od založení a ne v 19. ani v polovině 20. století, na první řádnou členku čekala filharmonie až do roku 1997.",
   "explanation": "Harfenistka Anna Lelkes hrála s Vídeňskou filharmonií neoficiálně už od roku 1971, ale hlasovací právo řádné členky dostala teprve v roce 1997 po mezinárodních protestech proti politice orchestru.",
   "about": "historii žen ve Vídeňské filharmonii",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, an elegant orchestra harpist on a golden concert hall stage in Vienna"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, an elegant orchestra harpist on a golden concert hall stage in Vienna",
+  "irony_prompt": "A glowing concert hall doorway fills the frame, where a woman with a violin under her arm steps in at last, while a row of stiff gentlemen in tails holds the heavy door open with visible effort. Smaller and subordinate: the empty chair waiting for her in the orchestra; a bust on a pedestal looking away; a cleaner giving her a thumbs-up. MOOD: triumphant, gently ironic."
  },
  {
   "id": "at-a-nejstarsi-restaurace",
@@ -1242,7 +1297,8 @@
   "quip_wrong": "Odvážná teorie, bohužel nesprávná — ani středověk, ani napoleonská doba, natož poválečná léta, písemná zmínka o salcburské restauraci sahá až k roku 803.",
   "explanation": "Restauraci provozuje benediktinský klášter svatého Petra a první písemná zmínka pochází z textu učence Alkuina, přítele Karla Velikého. Kvůli tomu se traduje jako nejstarší dosud fungující restaurace v Evropě.",
   "about": "salcburské restauraci St. Peter Stiftskeller",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a cozy medieval monastery restaurant interior with stone arches and candlelight in Salzburg"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, a cozy medieval monastery restaurant interior with stone arches and candlelight in Salzburg",
+  "irony_prompt": "A vaulted stone dining room fills the frame, where a medieval monk sets a plate before a knight at one table while, at the very next table under the same vault, a modern waiter serves a family — the same room, a thousand years apart. Smaller and subordinate: a barrel of wine; a cat on the flagstones; candles and an electric lamp burning side by side. MOOD: warm, funny, gently ironic."
  },
  {
   "id": "at-k-svist-hvizda",
@@ -1264,7 +1320,8 @@
   "explanation": "Svišti žijí v koloniích a mají hlídky — jeden svišť hlídá, zatímco ostatní se pasou nebo hrabou nory, a při jeho pískání všichni okamžitě zmizí pod zem.",
   "source_url": "https://cs.wikipedia.org/wiki/Svi%C5%A1%C5%A5_horsk%C3%BD",
   "image_prompt": "Fotorealistický snímek svišťa horského stojícího na zadních nohách na skalnaté alpské louce v rakouských Alpách, pozorně natočená hlava, v pozadí zasněžené vrcholky, 16:9",
-  "about": "sviších v rakouských Alpách"
+  "about": "sviších v rakouských Alpách",
+  "irony_prompt": "A plump marmot fills the frame, standing bolt upright on a rock with its paws at its chest and whistling so hard its cheeks puff out, while other marmots dive into their burrows. Smaller and subordinate: an eagle's shadow sliding across the meadow; alpine flowers; a burrow entrance with one pair of eyes. MOOD: funny, lively, for children."
  },
  {
   "id": "at-k-innsbruck-zlata-strisska",
@@ -1286,7 +1343,8 @@
   "explanation": "Balkón s Goldenes Dachl si nechal postavit císař Maximilián I. kolem roku 1500, aby z něj mohl v teple sledovat turnaje a divadla konaná na náměstí pod ním.",
   "source_url": "https://cs.wikipedia.org/wiki/Zlat%C3%A1_st%C5%99%C3%AD%C5%A1ka",
   "image_prompt": "Fotorealistický snímek historického domu se Zlatou stříškou (Goldenes Dachl) na náměstí v Innsbrucku, detailní záběr na lesknoucí se pozlacenou stříšku s horami v pozadí, slunečný den, 16:9",
-  "about": "innsbrucké Zlaté stříšce (Goldenes Dachl)"
+  "about": "innsbrucké Zlaté stříšce (Goldenes Dachl)",
+  "irony_prompt": "A small ornate balcony roof fills the frame, covered in thousands of gleaming gilded copper tiles that blaze in the sun, while tourists below shield their eyes and take it in. Smaller and subordinate: painted frescoes under the balcony; snowy mountains closing off the street; a pigeon sitting on the gold. MOOD: dazzling, cheerful, for children."
  },
  {
   "id": "at-k-germknodel",
@@ -1308,7 +1366,8 @@
   "explanation": "Germknödel se vaří v páře z kynutého těsta a servíruje se politý rozpuštěným máslem s mákem a moučkovým cukrem navrch.",
   "source_url": "https://cs.wikipedia.org/wiki/Germknedl",
   "image_prompt": "Fotorealistický snímek horkého rakouského knedlíku Germknödel na talíři, politý rozpuštěným máslem, posypaný mákem a moučkovým cukrem, s vykousnutým kouskem odhalujícím švestkovou náplň, 16:9",
-  "about": "knedlíku Germknödel"
+  "about": "knedlíku Germknödel",
+  "irony_prompt": "A big soft steamed dumpling fills the frame on a plate, split open to show a dark plum jam filling oozing out, buried under a snowdrift of ground poppy seed and sugar with melted butter running down. Smaller and subordinate: a spoon sinking in; a mountain hut window with skis outside; a plum on the table. MOOD: cosy, sweet, for children."
  },
  {
   "id": "at-k-ticha-noc-oberndorf",
@@ -1330,7 +1389,8 @@
   "explanation": "Koledu složili varhaník Franz Gruber a farář Joseph Mohr - dodnes je to jedna z nejznámějších vánočních písní na světě, zpívá se v desítkách jazyků.",
   "source_url": "https://cs.wikipedia.org/wiki/Tich%C3%A1_noc",
   "image_prompt": "Fotorealistický snímek malého sněhem pokrytého kostelíka v rakouské vesnici za soumraku, opřená kytara u dveří, okna svítí teplým světlem, vánoční atmosféra, 16:9",
-  "about": "vzniku koledy Tichá noc a rozbitých varhanách"
+  "about": "vzniku koledy Tichá noc a rozbitých varhanách",
+  "irony_prompt": "A small village church interior fills the frame on Christmas Eve, where a man plays a guitar by candlelight for the congregation while behind him the organ stands silent with a mouse sitting in one of its pipes. Smaller and subordinate: a choir of children singing; snow piled on the window ledges; a lantern by the door. MOOD: warm, magical, for children."
  },
  {
   "id": "at-t-streif-kitzbuhel",
@@ -1352,7 +1412,8 @@
   "explanation": "Nejnebezpečnější úsek trati se jmenuje Mausefalle (Myší past) a má tak strmý start, že lyžaři z něj v prvních sekundách doslova létají vzduchem.",
   "source_url": "https://cs.wikipedia.org/wiki/Hahnenkamm",
   "image_prompt": "Fotorealistický snímek prudce strmé zasněžené sjezdovky Streif v rakouském Kitzbühelu s bezpečnostními sítěmi po stranách a horskou scenérií v pozadí, 16:9",
-  "about": "sjezdovce Streif v Kitzbühelu"
+  "about": "sjezdovce Streif v Kitzbühelu",
+  "irony_prompt": "A terrifyingly steep icy ski slope fills the frame, falling away so sharply that the racer on it looks as if he is dropping down a wall, his skis chattering on blue ice. Smaller and subordinate: a wall of spectators with cowbells along the fence; a helicopter above; a course worker clinging to the net. MOOD: dramatic, dynamic, gently ironic."
  },
  {
   "id": "at-t-vlajka-povest",
@@ -1374,7 +1435,8 @@
   "explanation": "Podle legendy patřil plášť vévodovi Leopoldovi V. a příběh se váže ke třetí křížové výpravě koncem 12. století.",
   "source_url": "https://cs.wikipedia.org/wiki/Vlajka_Rakouska",
   "image_prompt": "Fotorealistický snímek vlající rakouské červeno-bílo-červené vlajky na stožáru proti modré obloze s alpskými vrcholky v pozadí, 16:9",
-  "about": "pověsti o vzniku rakouské vlajky"
+  "about": "pověsti o vzniku rakouské vlajky",
+  "irony_prompt": "An armoured duke fills the frame after a battle, lifting off his broad belt to reveal one clean white band across his blood-darkened red surcoat, his soldiers staring at the pattern in astonishment. Smaller and subordinate: a standard bearer already copying it onto a plain cloth; a tent in the camp behind; a horse nuzzling his shoulder. MOOD: dramatic, gently ironic, dignified."
  },
  {
   "id": "at-k-stift-melk-skala",
@@ -1396,7 +1458,8 @@
   "explanation": "Uvnitř kláštera je obrovská barokní knihovna s tisíci starými knihami a strop plný nástěnných maleb.",
   "source_url": "https://cs.wikipedia.org/wiki/Melk_(kl%C3%A1%C5%A1ter)",
   "image_prompt": "Fotorealistický snímek monumentálního žlutého barokního kláštera Stift Melk na vysoké skále nad řekou Dunaj, slunečný den, malebná rakouská krajina, 16:9",
-  "about": "klášteře Stift Melk nad Dunajem"
+  "about": "klášteře Stift Melk nad Dunajem",
+  "irony_prompt": "A huge golden-yellow abbey with twin towers fills the frame, perched on a high rock above a wide river so that it seems to float over the valley, visible for miles. Smaller and subordinate: a riverboat passing far below; monks walking in the garden; swallows around the towers. MOOD: grand, warm, for children."
  },
  {
   "id": "at-k-dynovy-olej-styrsko",
@@ -1418,6 +1481,7 @@
   "explanation": "Olej se lisuje za studena z pražených dýňových semínek a Štýrsko jím zásobuje kuchyně po celém světě.",
   "source_url": "https://cs.wikipedia.org/wiki/D%C3%BD%C5%88ov%C3%BD_olej",
   "image_prompt": "Fotorealistický snímek tmavě zeleného štýrského dýňového oleje nalévaného ze skleněné lahve na salát, detailní záběr, rustikální kuchyňský stůl, 16:9",
-  "about": "štýrském dýňovém oleji"
+  "about": "štýrském dýňovém oleji",
+  "irony_prompt": "A stream of oil so dark green it looks almost black fills the frame, being drizzled from a jug over a pale soup and a salad, catching an emerald shine where the light hits it. Smaller and subordinate: a heap of flat dark pumpkin seeds; a halved pumpkin; a farmer tasting from a spoon with satisfaction. MOOD: cosy, rich, for children."
  }
 ]
