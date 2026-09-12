@@ -81,6 +81,26 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Británie: 75/75 ilustrací. 7 vad ze 74 (9,5 %) — čtyři textové, tři podpisy; poštovní schránka potřebovala TŘI pokusy, protože reálná britská schránka nese vývěsku i vyražený nápis, a model si je domýšlí i přes zákaz.**
+  Dokončeno samostatně, zadání připravena souběžně s čekáním na předchozí dávky.
+  - **Textové vady (4): u tří stačilo popsat předmět jako prázdný, u jedné to chtělo tři kola.**
+    Sherlockova adresa měla na zdi čitelnou ceduli „FANS' NEW ADDITION" (mapa na zdi si o
+    popisek řekla, i když zadání mluvilo jen o „starých mapách"); Tikka Masala měla na plechovce
+    rajčatové polévky vymyšlenou značku a nápis; Turingovy popsané listy měly čitelné šifrové
+    znaky (i když jde o kód, ne slova, lint i oko to hodnotí stejně — **libovolný text, i „in-universe"
+    kód, je vada**). Všechny tři opraveny jedním popisem navíc („zcela prázdný", „bez popisku").
+    **Poštovní schránka je jiný případ:** frázi „entirely plain and unmarked" model ignoroval a
+    přidal vývěsku se svozovými časy (reálné schránky ji mají). Až explicitní „absolutely nothing
+    pinned, printed or fixed to it anywhere" pomohlo — obecné přídavné jméno nestačí, když
+    skutečný předmět tu součást prostě MÁ; musí se řct, že konkrétní věc (vývěska) chybí.
+  - **Podpisy (3): dva náhodné (poslány znovu se stejným zadáním), jeden false positive.**
+    Sherlockova adresa má čísla „221B" na dveřích — to je v pořádku a žádoucí, číslice nejsou
+    v zákazu, jen písmena. Drobné svislé čárky v trávě u Hadriánova valu vypadaly na první pohled
+    jako podpis, po zvětšení šlo o obyčejnou texturu trávy (stejný typ nálezu jako u vlajky Švédska).
+  - **Fond 3 742 otázek: bez ilustrace zbývá 2 113** (bylo 2 187). `validate` 0 chyb,
+    `test:offline` 853. Zadání pro Maďarsko (74) a Švédsko (67) napsána a zkontrolována
+    souběžně, obrázky zatím negenerované.
+
 - **2026-09-12 — Itálie: 81/81 ilustrací. Jeden obrázek (Giro d'Italia) potřeboval PĚT pokusů — past nebyla v zadání, ale v samotném NÁPADU (tiskařský stroj/noviny si o text řekne pořád dokola, ať se scéna upravuje jakkoli).**
   Práce pokračovala samostatně (bez uživatele) po předchozím zápisu — psaní zadání, `lint-irony`, dávka, kontrola, opravy. Zadání psal Sonnet 5, hráč u toho zvažoval, jestli je pro psaní zadání potřeba Opus — rozhodnuto zůstat na Sonnetu, kvalita byla dostatečná.
   - **6 vad z 81 (7,4 %) v první dávce:** dvě otázky si vynutily čitelný text i přes formulaci „illegible squiggles“ (Leonardova poznámka, noviny u Gira), jedna měla falešnou smlouvu s rukopisem (Lateránská smlouva), tři měly vymyšlený podpis (sjednocení Itálie, Jaderské moře, trulli). Opraveno stejným postupem jako u Německa — **text: přestavět scénu tak, aby předmět nemohl nést popisek** (zrcadlové technické náčrtky místo poznámkového sešitu, prázdný pergamen jen s pečetěmi místo psané smlouvy); **podpis: poslat totéž zadání znovu.**
