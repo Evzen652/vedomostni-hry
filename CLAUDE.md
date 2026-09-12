@@ -81,6 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Kanada: 74/74 ilustrací. Sedm vad z 81 generování, a všechny čtyři textové si vyžádala SCÉNA, ne slabý zákaz.**
+  Druhá velká dávka po Rusku, stejný postup: zadání psaná v session (za ně se neplatí), `lint-irony`,
+  `submit --cc ca`, dávka ~9 minut, 74/74 uloženo, kontrola očima přes archy 3×3, arch dolních rohů
+  a zvětšené výřezy deseti podezřelých míst. Cena celkem ~$2,75 (74 + 6 + 1 generování).
+  - **Vadných 6 z 74 (8 %), tedy stejný podíl jako u Ruska**, ale jiné složení: čtyřikrát nápis,
+    dvakrát podpis. Zákaz podpisu v receptu (od Ruska) tedy zabírá, ale ne stoprocentně.
+  - **Text vždycky nesl PŘEDMĚT, který se bez popisku nekreslí:** cedule nad obchody v podzemním
+    městě, cíl na čele tramvaje, bublina u krávy („N!“) a písmeno na kšiltovce sojky. Pomohlo až
+    scénu přestavět tak, aby pro popisek nebylo místo — holé stěny nad výlohami, sojka bez čepice,
+    kráva bez bubliny. **Obecně: co v reálu nese nápis (cedule, dres, bublina, výloha), se do zadání
+    nesmí dostat jako věc, jen jako prázdná plocha — nebo se musí vynechat.**
+  - **Tramvaj to vrátila i podruhé**, jen o kus výš (střešní cedule místo čela). Platí tedy pravidlo
+    z Ruska i tady: po druhém stejném nálezu se scéna otáčí, ne doplňuje zákaz — nově je tramvaj
+    vidět **zezadu**, kde cedule není. Napotřetí čistá.
+  - **PAST V KONTROLE, a hlásí ji právem: `lint-irony` bere slova „written“ a „letter“ jako chybu
+    i v ZÁPORU** („nothing written anywhere“, „no letter on it“). Není to planý poplach — model čte
+    zákaz jako pozvánku a přesně tyhle dvě formulace vyrobily nápis. Správně je popsat plochu
+    kladně: „smooth unmarked paintwork“, „every surface is plain and unmarked“.
+  - **Podpis a razítko jsou náhodná vada, zadání za ně nemůže** (Capilano, bowling) — stačí poslat
+    totéž zadání znovu. **Ořez by tu nepomohl:** obě značky ležely ~50 px nad spodní hranou, kdežto
+    ořez ubírá 40 řádků; hodí se jen na podpis těsně u kraje.
+  - **Výřez dvakrát zachránil obrázek, který v náhledu vypadal vadně:** Terry Fox protézu opravdu má
+    (v archu splývá se stínem) a kečupové brambůrky jsou plátky, ne zmrzlina. Naopak bublina u krávy
+    vypadala jako tři tečky a nese písmeno. **Z náhledu 600 px se to nepozná ani nahoru, ani dolů.**
+  - **Sporné, ponecháno:** `ca-k-imax-kino` má u chlapce dva drobné znaky velké ~20 px (na papíře
+    mimo scénu), nečitelné a ve zobrazované velikosti ~6 px. Přegenerovat kvůli tomu celý obrázek
+    se nevyplatí; kdyby vadily, jde to kdykoli přes `--only`.
+
 - **2026-09-11 — Ilustrace k otázkám jsou ZPĚT NA 16:9, šířka 1344 px (nativní výstup modelu). Čtverec z 2026-09-01 padá.**
   > **Doplněno týž den: šířka 1000 (níž) NEPROŠLA na iPadu na výšku.** Změřeno v okně 820×1180:
   > stránka je tam jednosloupcová a obrázek se kreslí na **770×440 bodů**, retina (iPady mají
