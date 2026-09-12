@@ -19,7 +19,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Ben%C3%A1tky",
   "source_card": "it-mista-benatky",
   "image_prompt": "Fotorealistický širokoúhlý snímek benátských kanálů za zlaté hodiny, gondoly plující kolem historických paláců, Rialtský most v dálce, teplé světlo, 16:9",
-  "about": "Benátkách"
+  "about": "Benátkách",
+  "irony_prompt": "A single grand stone bridge arches steeply over a Venetian canal, filling the frame, while a confused driver leans out of his car window at its foot, unable to find a road up the steps. Smaller and subordinate: a gondola gliding beneath the arch; a cat crossing the bridge; another identical bridge visible further down the canal. MOOD: cheerful, gently absurd."
  },
  {
   "id": "it-q-cinque-terre",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cinque_Terre",
   "source_card": "it-mista-cinque-terre",
   "image_prompt": "Fotorealistický širokoúhlý snímek barevných domů vesnice Manarola v Cinque Terre, terasovité vinice na strmých svazích, Ligurské moře pod nimi, západ slunce, 16:9",
-  "about": "Cinque Terre"
+  "about": "Cinque Terre",
+  "irony_prompt": "Five brightly painted villages are stacked one above another up a steep cliff face like a lopsided layer cake, filling the frame. Smaller and subordinate: a small fishing boat bobbing below; a narrow cliffside path zigzagging between them; a seagull gliding past. MOOD: sunny, cheerful."
  },
  {
   "id": "it-q-matera",
@@ -63,7 +65,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Matera",
   "source_card": "it-mista-matera",
   "image_prompt": "Fotorealistický širokoúhlý snímek čtvrti Sassi v Matteře za soumraku, starobylé jeskynní obydlí vytesané do vápence, teplá světla oken, 16:9",
-  "about": "Matteře a čtvrti Sassi"
+  "about": "Matteře a čtvrti Sassi",
+  "irony_prompt": "A cluster of ancient stone cave dwellings carved into a cliff dominates the frame, and from one weathered doorway pokes a satellite dish bolted crookedly to the rock. Smaller and subordinate: laundry strung between two caves; a cat dozing on a step; a scooter parked at a cave entrance. MOOD: warm, gently ironic."
  },
  {
   "id": "it-q-dolomity",
@@ -85,7 +88,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Dolomity",
   "source_card": "it-priroda-dolomity",
   "image_prompt": "Fotorealistický širokoúhlý snímek zubatých vrcholů Dolomit při východu slunce, růžová záře na vápencových stěnách, alpská louka v popředí, 16:9",
-  "about": "Dolomitech"
+  "about": "Dolomitech",
+  "irony_prompt": "A jagged rocky mountain peak fills the frame at dawn, and near its summit is wedged an oversized fossilized seashell the size of a boulder, with a startled hiker pointing at it. Smaller and subordinate: pink alpenglow on the rock; a chamois goat; a distant climber on a ridge. MOOD: whimsical, quietly astonished."
  },
  {
   "id": "it-q-etna",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mount_Etna",
   "source_card": "it-priroda-etna",
   "image_prompt": "Fotorealistický širokoúhlý snímek erupce sopky Etna v noci, žhnoucí lávová fontána a popelový oblak proti tmavé obloze, siluetu sicilské krajiny pod ní, 16:9",
-  "about": "sopce Etna"
+  "about": "sopce Etna",
+  "irony_prompt": "Mount Etna dominates the frame erupting calmly at night with a glowing lava fountain, while in the foreground a Sicilian farmer waters his tomato plants with his back turned to the eruption, entirely unbothered. Smaller and subordinate: a small stone house with lit windows; a sleeping dog; distant town lights along the coast. MOOD: dry, unbothered humor."
  },
  {
   "id": "it-q-gardske-jezero",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lake_Garda",
   "source_card": "it-priroda-gardske-jezero",
   "image_prompt": "Fotorealistický širokoúhlý snímek severního pobřeží Gardského jezera se strmými alpskými horami vystupujícími přímo z vody, malé jezerní městečko, jasné odpolední světlo, 16:9",
-  "about": "Gardském jezeře"
+  "about": "Gardském jezeře",
+  "irony_prompt": "A fisherman in a small rowboat fills the frame on a calm lake, one arm wrapped in a scarf against a snow-capped alpine peak looming behind him, the other reaching toward a sunny lemon grove growing right down to the opposite shore. Smaller and subordinate: a swan nearby; a distant sailboat; a small bell tower. MOOD: playful, sunny confusion."
  },
  {
   "id": "it-q-leonardo-da-vinci",
@@ -151,7 +157,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Zrcadlov%C3%A9_p%C3%ADsmo",
   "source_card": "it-lide-leonardo-da-vinci",
   "image_prompt": "Fotorealistický detailní snímek staré renesanční poznámkové stránky plné zrcadlového písma a technických skic, brk vedle ní, teplé světlo svíčky, 16:9",
-  "about": "Leonardu da Vincim"
+  "about": "Leonardu da Vincim",
+  "irony_prompt": "A detailed technical sketch of a flying-machine wing fills the frame, drawn entirely mirror-flipped and reversed, propped against a small round mirror that flips it back into a normal, correctly oriented diagram. Smaller and subordinate: a quill resting beside it; a lit candle; a cat peering curiously at the reflection. MOOD: clever, quietly mischievous."
  },
  {
   "id": "it-q-galileo-galilei",
@@ -173,7 +180,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Galileo_Galilei",
   "source_card": "it-lide-galileo-galilei",
   "image_prompt": "Fotorealistická rekonstrukce astronoma 17. století pozorujícího noční oblohu mosazným dalekohledem na terase, hvězdy a Jupiter viditelné nahoře, 16:9",
-  "about": "Galileu Galileiovi"
+  "about": "Galileu Galileiovi",
+  "irony_prompt": "A bearded old astronomer in Renaissance dress leans over a long brass telescope on a rooftop terrace, dominating the frame, while four tiny glowing dots orbit a painted Jupiter high above him like obedient ducklings following their mother. Smaller and subordinate: scattered star-charts; a candle lantern; a sleepy cat on the railing. MOOD: quiet wonder, gently whimsical."
  },
  {
   "id": "it-q-maria-montessori",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maria_Montessori",
   "source_card": "it-lide-maria-montessori",
   "image_prompt": "Fotorealistická rekonstrukce montessori třídy z počátku 20. století v Římě, děti pracující samostatně s dřevěnými výukovými pomůckami, teplé přirozené světlo, 16:9",
-  "about": "Marii Montessori"
+  "about": "Marii Montessori",
+  "irony_prompt": "A single small wooden chair and table, sized perfectly for a toddler, sits centre-frame in an otherwise grand echoing Roman room built for adults, with a row of towering full-size furniture shrinking away into the background. Smaller and subordinate: small wooden learning blocks; a potted plant at child height; a mouse peeking from a corner. MOOD: warm, quietly clever."
  },
  {
   "id": "it-q-karneval-benatky",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Carnival_of_Venice",
   "source_card": "it-kultura-karneval-benatky",
   "image_prompt": "Fotorealistický širokoúhlý snímek benátského karnevalu, lidé v honosných historických maskách a barevných kostýmech na kamenném mostě, náměstí svatého Marka v pozadí, 16:9",
-  "about": "karnevalu v Benátkách"
+  "about": "karnevalu v Benátkách",
+  "irony_prompt": "An elaborate white carnival mask fills the frame, held up by a masked figure in Renaissance dress, and through its eye-holes are visible two utterly different reflections — a nobleman's silk sleeve on one side, a servant's rough wool cuff on the other. Smaller and subordinate: confetti in the air; a gondola behind; the columns of a grand square. MOOD: playful, sly."
  },
  {
   "id": "it-q-palio-di-siena",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Palio_di_Siena",
   "source_card": "it-kultura-palio-di-siena",
   "image_prompt": "Fotorealistický širokoúhlý snímek koňského dostihu Palio di Siena v plném trysku kolem Piazza del Campo, plné tribuny, středověké budovy okolo, prach ve vzduchu, 16:9",
-  "about": "dostihu Palio di Siena"
+  "about": "dostihu Palio di Siena",
+  "irony_prompt": "A riderless horse gallops triumphantly, filling the frame with flying mane and rising dust, while behind it its thrown jockey sits dazed on the ground, still cheered on by the crowd. Smaller and subordinate: a trophy banner fluttering; tightly packed grandstands; a dust cloud. MOOD: comic, triumphant chaos."
  },
  {
   "id": "it-q-ferragosto",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ferragosto",
   "source_card": "it-kultura-ferragosto",
   "image_prompt": "Fotorealistický širokoúhlý snímek italského rodinného pikniku na slunečné pláži v polovině srpna, slunečníky podél středomořského pobřeží, letní atmosféra, 16:9",
-  "about": "svátku Ferragosto"
+  "about": "svátku Ferragosto",
+  "irony_prompt": "A Roman emperor in a laurel wreath and toga lounges centre-frame on a beach towel under a striped umbrella, sunglasses on, sipping from a coconut, utterly relaxed among modern beachgoers who don't notice him at all. Smaller and subordinate: a beach ball; a gull stealing a snack; distant sailboats. MOOD: cheerful, anachronistic fun."
  },
  {
   "id": "it-q-david",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
   "source_card": "it-umeni-david",
   "image_prompt": "Fotorealistický detailní snímek Michelangelovy sochy Davida v Galerii Accademia, detailní mramorová muskulatura a výraz obličeje, měkké muzejní osvětlení, 16:9",
-  "about": "Michelangelově Davidovi"
+  "about": "Michelangelově Davidovi",
+  "irony_prompt": "A single enormous rough-hewn block of marble dominates the frame, half carved into the recognizable shoulder and arm of a heroic figure emerging from the raw stone, with several sculptors standing at its base scratching their heads in defeat. Smaller and subordinate: chisels scattered on the ground; a measuring compass; a curious pigeon on the block. MOOD: quietly triumphant, wry."
  },
  {
   "id": "it-q-giotto-assisi",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Basilica_of_San_Francesco_d%27Assisi",
   "source_card": "it-umeni-giotto-assisi",
   "image_prompt": "Fotorealistický širokoúhlý interiérový snímek baziliky svatého Františka v Assisi, středověké fresky pokrývající stěny lodi, měkké světlo okny, 16:9",
-  "about": "Giottových freskách v Assisi"
+  "about": "Giottových freskách v Assisi",
+  "irony_prompt": "A painted fresco figure fills the frame, stepping half out of a flat golden medieval halo into full three-dimensional shading and a lifelike expression, one foot still in the old flat style and one already modern. Smaller and subordinate: a scaffold beam; a paintbrush resting in a pot; candle sconces on the wall. MOOD: clever, quietly reverent."
  },
  {
   "id": "it-q-la-scala",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/La_Scala",
   "source_card": "it-umeni-la-scala",
   "image_prompt": "Fotorealistický širokoúhlý interiérový snímek opery La Scala v Miláně, zdobené červenozlaté lóže, velký lustr, tlumeně osvětlené jeviště, 16:9",
-  "about": "opeře La Scala"
+  "about": "opeře La Scala",
+  "irony_prompt": "A grand opera house dominates the frame, its ornate golden balconies still wrapped in wooden scaffolding and missing a section of roof, while inside a lone conductor in a tuxedo rehearses passionately on the exposed stage regardless. Smaller and subordinate: a stack of bricks; a violin case; a work lantern glowing nearby. MOOD: resilient, quietly moving."
  },
  {
   "id": "it-q-ferrari",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
   "source_card": "it-sport-ferrari",
   "image_prompt": "Fotorealistický širokoúhlý snímek červeného Ferrari Formule 1 závodícího na trati vysokou rychlostí, rozmazané pozadí, slunečný den, 16:9",
-  "about": "stáji Ferrari ve Formuli 1"
+  "about": "stáji Ferrari ve Formuli 1",
+  "irony_prompt": "A gleaming red Formula 1 car fills the frame parked proudly among a lineup of much newer, shinier rival cars, wearing a tiny weathered racing cap and reading glasses like the elder statesman of the group. Smaller and subordinate: a checkered flag; a trophy shelf in the background; a mechanic polishing its bonnet. MOOD: proud, gently comic."
  },
  {
   "id": "it-q-giro-ditalia",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Giro_d%27Italia",
   "source_card": "it-sport-giro-ditalia",
   "image_prompt": "Fotorealistický širokoúhlý snímek pelotonu profesionálních cyklistů projíždějících italskou krajinou během Giro d'Italia, kopce a vinice v pozadí, denní světlo, 16:9",
-  "about": "cyklistickém závodě Giro d'Italia"
+  "about": "cyklistickém závodě Giro d'Italia",
+  "irony_prompt": "A mountain of gold coins piled higher than a house dominates the frame, and a peloton of racing cyclists in vintage jerseys pedals furiously up and over its slope as if racing straight toward the profit it represents. Smaller and subordinate: a rolled-up newsboy's cap perched on the coin pile's peak; a bicycle bell; cheering spectators waving. MOOD: playful, cheeky."
  },
  {
   "id": "it-q-fotbalova-reprezentace",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Italy_national_football_team",
   "source_card": "it-sport-fotbalova-reprezentace",
   "image_prompt": "Fotorealistický širokoúhlý snímek italského fotbalového týmu slavícího po výhře na hřišti, modré dresy, jásající stadion, večerní reflektory, 16:9",
-  "about": "italské fotbalové reprezentaci"
+  "about": "italské fotbalové reprezentaci",
+  "irony_prompt": "Four golden World Cup trophies are stacked precariously in the arms of a jubilant Italian footballer in a blue jersey, dominating the frame as he beams under stadium floodlights. Smaller and subordinate: confetti falling; two teammates hoisting him on their shoulders; a wall of cheering fans. MOOD: triumphant, joyful."
  },
  {
   "id": "it-q-ciao",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ciao",
   "source_card": "it-jazyk-ciao",
   "image_prompt": "Fotorealistický snímek dvou lidí, kteří se vřele zdraví na ulici u benátského kanálu, historické budovy a gondola v pozadí, měkké odpolední světlo, 16:9",
-  "about": "slově ciao"
+  "about": "slově ciao",
+  "irony_prompt": "Two friends meet on a sunny street, filling the frame, one bowing with an exaggerated sweeping servant's flourish worthy of a royal court while the other just waves back lazily in shorts and flip-flops, utterly unbothered by the formality. Smaller and subordinate: a Venetian canal in the background; a pigeon; a gelato cone in someone's hand. MOOD: playful, ironic contrast."
  },
  {
   "id": "it-q-paparazzi",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Paparazzi",
   "source_card": "it-jazyk-paparazzi",
   "image_prompt": "Fotorealistická černobílá scéna fotografa 60. let se starým fotoaparátem a bleskem pronásledujícího celebritu před římským nočním klubem, dramatické pouliční osvětlení, 16:9",
-  "about": "slově paparazzi"
+  "about": "slově paparazzi",
+  "irony_prompt": "A film director's chair and clapperboard sit centre-frame on a movie set, and stepping out from behind the chair is a scruffy photographer with an old flash camera, clearly a minor extra rather than a star. Smaller and subordinate: a spotlight on a stand; a film reel can; a rolled script page corner. MOOD: playful, wry."
  },
  {
   "id": "it-q-hudebni-terminy",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/List_of_Italian_musical_terms_used_in_English",
   "source_card": "it-jazyk-hudebni-terminy",
   "image_prompt": "Fotorealistický detailní snímek ručně psaných not s italskými tempovými a dynamickými značkami jako allegro a forte, brk a inkoust, teplé světlo, 16:9",
-  "about": "italských hudebních termínech"
+  "about": "italských hudebních termínech",
+  "irony_prompt": "A grand piano dominates the frame, its open lid releasing a swirl of musical notes and a single large ornate treble clef drifting up into the sky like smoke, carried toward tiny distant orchestras around a spinning globe. Smaller and subordinate: a violin leaning against the piano; a conductor's baton; a candle. MOOD: whimsical, proud."
  },
  {
   "id": "it-q-pizza-neapolska",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Neapolitan_pizza",
   "source_card": "it-jidlo-pizza-neapolska",
   "image_prompt": "Fotorealistický detailní snímek neapolské pizzy margherity pečoucí se v dřevěné peci, viditelné plameny a připálené okraje kůrky, teplá záře, 16:9",
-  "about": "neapolské pizze"
+  "about": "neapolské pizze",
+  "irony_prompt": "A round flat pizza margherita slides into a blazing wood-fired oven, filling the frame, its edges already blistering and charring within seconds under the fierce orange glow. Smaller and subordinate: a wooden peel leaning nearby; a small hourglass with sand almost gone; a chef's rolled sleeve. MOOD: intense, quietly funny."
  },
  {
   "id": "it-q-parmigiano",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Parmigiano_Reggiano",
   "source_card": "it-jidlo-parmigiano",
   "image_prompt": "Fotorealistický detailní snímek celého kola sýra Parmigiano Reggiano rozlamovaného tradičními noži, drobivá struktura viditelná, teplé sklepní osvětlení, 16:9",
-  "about": "sýru Parmigiano Reggiano"
+  "about": "sýru Parmigiano Reggiano",
+  "irony_prompt": "A single enormous round wheel of Parmigiano cheese fills the frame, sitting on one side of a low wooden fence marking an invisible provincial border, with identical-looking cows grazing peacefully on the forbidden side of the fence. Smaller and subordinate: a wooden cheese-testing hammer; a cut wedge showing its grainy texture; a curious mouse. MOOD: proud, gently territorial humor."
  },
  {
   "id": "it-q-gelato",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gelato",
   "source_card": "it-jidlo-gelato",
   "image_prompt": "Fotorealistický detailní snímek barevných kopečků gelata v tradiční italské gelaterii, krémová textura, měkké obchodní osvětlení, 16:9",
-  "about": "gelatu"
+  "about": "gelatu",
+  "irony_prompt": "A tall dense mound of gelato sits centre-frame in a cone, visibly heavier and denser than a fluffy scoop of ordinary ice cream melting quickly beside it in the same sun. Smaller and subordinate: a gelato spade-shaped scoop; a marble counter; a bee investigating. MOOD: proud, quietly smug."
  },
  {
   "id": "it-q-koloseum",
@@ -547,7 +571,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Koloseum",
   "source_card": "it-historie-koloseum",
   "image_prompt": "Fotorealistický širokoúhlý snímek Kolosea v Římě za zlaté hodiny, starobylé kamenné oblouky a zvětralé zdi, teplé světlo západu slunce, 16:9",
-  "about": "Koloseu"
+  "about": "Koloseu",
+  "irony_prompt": "The Colosseum's ancient stone arches dominate the frame at golden hour, packed tier upon tier with a sea of tiny cheering spectators filling every single seat right up to the top row. Smaller and subordinate: a vendor selling snacks below; pigeons circling above; a lone statue at the entrance. MOOD: epic, warmly nostalgic."
  },
  {
   "id": "it-q-pompeje",
@@ -569,7 +594,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Erupce_Vesuvu_(79)",
   "source_card": "it-historie-pompeje",
   "image_prompt": "Fotorealistický širokoúhlý snímek antických ruin Pompejí s Vesuvem tyčícím se v pozadí, zachovalé kamenné ulice a sloupy, dramatická obloha, 16:9",
-  "about": "zániku Pompejí"
+  "about": "zániku Pompejí",
+  "irony_prompt": "A tall hourglass fills the frame with volcanic ash instead of sand pouring steadily down onto a miniature Roman street scene below, already half-buried, with tiny fleeing figures caught mid-stride. Smaller and subordinate: a volcano smoking in the distance; a forgotten sandal on the ground; a startled cat. MOOD: dramatic, quietly somber, not graphic."
  },
  {
   "id": "it-q-sjednoceni-italie",
@@ -591,7 +617,8 @@
   "source_url": "https://www.dejepis.com/ucebnice/sjednoceni-italie/",
   "source_card": "it-historie-sjednoceni-italie",
   "image_prompt": "Fotorealistická historizující scéna Garibaldiho dobrovolníků v červených košilích vyloďujících se na sicilské pláži roku 1860, dobové lodě v pozadí, dramatické světlo, 16:9",
-  "about": "sjednocení Itálie"
+  "about": "sjednocení Itálie",
+  "irony_prompt": "A thousand tiny red-shirted figures stream off boats onto a Sicilian beach, filling the frame like a wave of scarlet ants, led by one figure in front raising his hat high. Smaller and subordinate: anchored ships offshore; a startled local farmer watching from a hill; scattered gulls. MOOD: stirring, quietly rousing."
  },
  {
   "id": "it-k-pizza",
@@ -611,7 +638,8 @@
   "quip_correct": "Bravo, trefa! Pizza! Chudí dělníci v Neapoli ji jedli svitou do ruličky jako jídlo z ruky — talíř k tomu vůbec nepotřebovali.",
   "quip_wrong": "Ne tak rychle — sushi má domov v Japonsku, guláš v Maďarsku, ale to kulaté jídlo se sýrem a rajčaty vzniklo v Itálii.",
   "explanation": "Nejznámější pizza margherita má červenou, bílou a zelenou barvu — stejně jako italská vlajka.",
-  "about": "pizze"
+  "about": "pizze",
+  "irony_prompt": "A giant round pizza with bubbling cheese and bright red tomato sauce fills the frame, and a delighted Italian baker slides it out of a wood oven on a long wooden paddle. Smaller and subordinate: a cat sniffing at the crust; a basil leaf falling; steam rising. MOOD: joyful, warm, kid-friendly."
  },
  {
   "id": "it-k-pisa",
@@ -631,7 +659,8 @@
   "quip_correct": "Vidíš tu šikmost správně — věž se naklání skoro čtyři stupně, a přesto stojí už přes 800 let, turisté ji na fotkách rádi „podpírají“ rukama.",
   "quip_wrong": "Blízko, ale ne — rozhledna ani maják se takhle nenaklánějí a přesto nespadnou. Ta věž má jiné jméno.",
   "explanation": "Věž se naklonila, protože se stavěla na měkké zemi, do které se jedna strana pomalu zabořila.",
-  "about": "šikmé věži v Pise"
+  "about": "šikmé věži v Pise",
+  "irony_prompt": "The Leaning Tower of Pisa fills the frame, tilting dramatically, and a cheerful tourist below poses with both hands stretched out as if propping it up, grinning at the camera. Smaller and subordinate: pigeons on the grass; a gelato cart nearby; a fluffy cloud. MOOD: playful, sunny fun."
  },
  {
   "id": "it-k-spagety",
@@ -651,7 +680,8 @@
   "quip_correct": "Prima volba! Jedna porce špaget dovede v natažení měřit i přes deset metrů těstovin — proto se raději namotávají na vidličku.",
   "quip_wrong": "Rýže na vidličku? To by byl cirkus. Ty dlouhé tenké nitě, co se namotat dají, jsou italské špagety.",
   "explanation": "Těstovin je na světě tolik tvarů, že by ses jich mohl každý den najíst jiné a vydrželo by ti to roky.",
-  "about": "špagetách"
+  "about": "špagetách",
+  "irony_prompt": "A single giant fork twirls an enormous nest of long spaghetti strands that fills the frame, the noodles stretching up impossibly high like a golden tower. Smaller and subordinate: a splash of tomato sauce; a sprinkle of parmesan; a delighted child reaching up. MOOD: joyful, playful, kid-friendly."
  },
  {
   "id": "it-k-gelato-barva",
@@ -672,7 +702,8 @@
   "quip_wrong": "Podívej se ještě jednou — tahle barva to nebyla. Růžová patří jahodám, hnědá čokoládě, bílá vanilce, ale pistácie barví gelato tlumeně zeleně.",
   "explanation": "Pistácie dávají gelatu typickou zelenou barvu i oříškovou chuť. Nejlepší pistáciové gelato pochází ze Sicílie, kde se pěstují pistácie z Brontë u Etny.",
   "about": "italském gelatu",
-  "image_prompt": "A painterly watercolor illustration of a green pistachio gelato in a cone, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a green pistachio gelato in a cone, vintage travel journal style",
+  "irony_prompt": "A round scoop of pale dusty-green pistachio gelato sits centre-frame in a cone, and right beside it a bright neon-green imposter scoop wilts sadly under the same sun, clearly dyed rather than made from real nuts. Smaller and subordinate: whole pistachio shells scattered nearby; a small volcano silhouette on the horizon; a bee investigating. MOOD: playful, gently smug."
  },
  {
   "id": "it-k-tiramisu-vrstva",
@@ -693,7 +724,8 @@
   "quip_wrong": "Skoro, ale ne tak úplně — ovoce a čokoládu zkoušej jinde. Tady vrstvy tvoří piškoty namočené v kávě.",
   "explanation": "Tiramisu se skládá z vrstev piškotů namočených v kávě a krému z mascarpone. Název znamená italsky 'potáhni mě nahoru' — prý proto, že dezert dodává energii.",
   "about": "tiramisu",
-  "image_prompt": "A painterly watercolor illustration of a slice of tiramisu on a plate with cocoa dusting, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a slice of tiramisu on a plate with cocoa dusting, vintage travel journal style",
+  "irony_prompt": "A tall slice of tiramisu fills the frame, its layers of coffee-soaked ladyfinger biscuits and creamy mascarpone clearly visible in cross-section, with a dusting of cocoa powder falling from above like light snow. Smaller and subordinate: a small espresso cup nearby; a fork mid-bite; a curious cat sniffing the plate. MOOD: cozy, delighted."
  },
  {
   "id": "it-k-mandolina-nastroj",
@@ -714,7 +746,8 @@
   "quip_wrong": "Poslouchej pozorně — kytara je větší a housle se hrají smyčcem, ale ten malý hruškovitý nástroj, co se drnká trsátkem, je mandolína.",
   "explanation": "Mandolína se hojně používá v neapolské hudbě. Má osm strun ve čtyřech párech, které se ladí jako housle. Proslavila ji i filmová hudba, třeba v Godfather.",
   "about": "mandolíně",
-  "image_prompt": "A painterly watercolor illustration of a mandolin on a wooden table, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a mandolin on a wooden table, vintage travel journal style",
+  "irony_prompt": "A pear-shaped mandolin rests centre-frame on a wooden table, its strings still faintly vibrating, while a small bird perched on its neck seems to be singing along in harmony. Smaller and subordinate: a pick resting on the strings; a small wooden music stand nearby; warm afternoon light. MOOD: gentle, musical, kid-friendly."
  },
  {
   "id": "it-k-koloseum-zvire",
@@ -735,7 +768,8 @@
   "quip_wrong": "Blízko, ale ne — sloni a tygři by rádi, ale hlavní hvězdu arény si Afrika nechala pro sebe, a jmenuje se jinak.",
   "explanation": "V Koloseu se konaly venationes — zápasy gladiátorů s divokými zvířaty. Přiváželi tam lvy z Afriky, tygry z Asie i medvědy. Odhaduje se, že za staletí provozu tam zahynulo přes milion zvířat.",
   "about": "římském Koloseu",
-  "image_prompt": "A painterly watercolor illustration of the Roman Colosseum with an arena scene, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Roman Colosseum with an arena scene, vintage travel journal style",
+  "irony_prompt": "A magnificent lion stands proudly centre-frame inside the ancient stone arches of the Colosseum, mane glowing in golden light, looking more like visiting royalty than a fighter. Smaller and subordinate: sand underfoot; a distant crowd of tiny spectators; a fluttering banner. MOOD: majestic, kid-friendly, not violent."
  },
  {
   "id": "it-t-florencie-kupole",
@@ -755,7 +789,8 @@
   "quip_wrong": "Kreativní, ale mimo — Vatikán ani Benátky. Brunelleschiho kupole stojí ve třetím městě, a způsobem výstavby, který nikdo po pěti stech letech nedokázal přesně popsat.",
   "explanation": "Filippo Brunelleschi navrhl kupoli bez lešení ani vnějších opěráků — způsobem, který tehdy nikdo neznal. Tajemství své techniky si vzal do hrobu.",
   "about": "Florentském dómu",
-  "image_prompt": "A painterly watercolor illustration of Florence Cathedral dome against blue sky, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Florence Cathedral dome against blue sky, vintage travel journal style",
+  "irony_prompt": "A vast red-tiled cathedral dome dominates the frame against a blue sky, floating seemingly without any visible support beneath it, while a group of rival architects stand at its base scratching their heads in bafflement. Smaller and subordinate: scattered blueprints on the ground; a compass tool; a pigeon landing on the lantern at top. MOOD: quietly triumphant, clever."
  },
  {
   "id": "it-t-gorgonzola",
@@ -775,7 +810,8 @@
   "quip_wrong": "Blízko, ale ne dost blízko — parmigiano strouháš, mozzarella je čerstvá, pecorino z ovcí, ale sýr s modrými žilkami je úplně jiná kategorie.",
   "explanation": "Gorgonzola pochází z Lombardie a Piemontu a je jedním z nejstarších italských sýrů — doklady o výrobě sahají do 10. století. Modré pruhy jsou forma plísně Penicillium glaucum.",
   "about": "sýru Gorgonzola",
-  "image_prompt": "A painterly watercolor illustration of a wedge of Gorgonzola cheese with blue veins, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a wedge of Gorgonzola cheese with blue veins, vintage travel journal style",
+  "irony_prompt": "A wedge of Gorgonzola cheese fills the frame, its blue-green veins running through the creamy interior like a tiny marbled map, cut open on a wooden board. Smaller and subordinate: a cheese knife resting nearby; a cluster of grapes; a curious mouse peeking from behind the board. MOOD: proud, a little cheeky."
  },
  {
   "id": "it-t-garda",
@@ -795,7 +831,8 @@
   "quip_wrong": "Tentokrát tvoje logika utekla jinam — Como je v každém druhém hollywoodském filmu, ale o první místo ve velikosti zápolí jiné jezero.",
   "explanation": "Lago di Garda leží na hranici Lombardie, Benátska a Tridentska. Na jeho jihozápadním břehu roste olivy a citrusy — tak mírné je tamní klima. Celý obvod jezera měří přes 150 km.",
   "about": "jezeře Lago di Garda",
-  "image_prompt": "A painterly watercolor illustration of Lake Garda with mountains and olive trees, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Lake Garda with mountains and olive trees, vintage travel journal style",
+  "irony_prompt": "A single giant lake fills the frame from above, dwarfing three much smaller neighboring lakes lined up beside it like a parent with its children, all reflecting the same evening sky. Smaller and subordinate: tiny sailboats on the big lake; a lakeside village; distant mountains. MOOD: proud, gently playful."
  },
  {
   "id": "it-t-fellini",
@@ -815,7 +852,8 @@
   "quip_wrong": "Mimo, ale slušně mířeno — Benigni dělá komedie, Leone westerny ve španělské poušti. Sladký život v Římě byl projekt pro jiného.",
   "explanation": "La Dolce Vita z roku 1960 přinesla do jazyka slovo 'paparazzi' — Fellini pojmenoval postavu fotografa Paparazzo. Dnes se slovo používá celosvětově.",
   "about": "Federicu Fellinim",
-  "image_prompt": "A painterly watercolor illustration of a vintage Italian film set with director's chair, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a vintage Italian film set with director's chair, vintage travel journal style",
+  "irony_prompt": "An old-fashioned canvas director's chair and megaphone sit centre-frame on a sunlit film set, with a scruffy photographer perched cheekily on its armrest holding an old flash camera, clearly more interested in candid shots than the film itself. Smaller and subordinate: a clapperboard on the ground; a spotlight on a stand; a curled film reel. MOOD: playful, wry."
  },
  {
   "id": "it-t-lamborghini",
@@ -835,7 +873,8 @@
   "quip_wrong": "Logicky, ale ne správně — traktory Lamborghini skutečně vyráběl a soutěž o logo mohla dopadnout jinak, ale rozzuřený býk v logu má přesnější důvod, než je výroční soutěž.",
   "explanation": "Ferruccio Lamborghini (1916–1993) se narodil 28. dubna — tedy ve znamení Býka (Taurus). Proto je na logu rozzuřený býk. Traktory Lamborghini, které vyráběl dřív, mají dodnes vlastní divizi.",
   "about": "automobilce Lamborghini",
-  "image_prompt": "A painterly watercolor illustration of a Lamborghini car with bull logo detail, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Lamborghini car with bull logo detail, vintage travel journal style",
+  "irony_prompt": "A sleek red sports car with a raging bull emblem on its hood fills the frame, and standing right behind it, casting an identical silhouette, is an actual bull glaring at its own reflection in the shiny paintwork. Smaller and subordinate: an old tractor parked in the same garage; a mechanic's toolbox; oil drips on the floor. MOOD: playful, cheeky."
  },
  {
   "id": "it-a-espresso-vstoje",
@@ -855,7 +894,8 @@
   "quip_wrong": "Kreativní, ale mimo — povinné mléko, konvičky ani jen v baru. Italská kávová pravidla jsou komplikovaná, ale vstoje u pultu je ta záchrana, co stojí méně.",
   "explanation": "V italských barech platí duální tarif: caffe al banco (u pultu) je výrazně levnější než caffe al tavolo (u stolu). Systém existuje od 20. let jako daňová regulace.",
   "about": "italské kávové kultuře",
-  "image_prompt": "A painterly watercolor illustration of a cup of espresso on a marble bar counter, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a cup of espresso on a marble bar counter, vintage travel journal style",
+  "irony_prompt": "A marble café bar dominates the frame lined with people drinking small espresso cups standing shoulder to shoulder, while behind them a single empty table and chair sits roped off behind a velvet cord like a forbidden luxury. Smaller and subordinate: a steaming espresso machine; a barista polishing a cup; a pigeon outside the window. MOOD: dry, knowing humor."
  },
  {
   "id": "it-a-tarantella",
@@ -875,7 +915,8 @@
   "quip_wrong": "Odvážná teorie, bohužel nesprávná — kněz, námořníci ani arabské slovo. Tarantella má původ zarostlejší folklórem, a pavouci v něm hrají klíčovou roli.",
   "explanation": "Tarantismus byl středověký fenomén v jižní Itálii — lidé kousnutí pavoukem upadali do hysterických záchvatů, které léčili extází z tance. Moderní vědci se přou, zda to byl skutečný jed nebo masová hysterie.",
   "about": "tanci tarantella",
-  "image_prompt": "A painterly watercolor illustration of people dancing the tarantella in a southern Italian village, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of people dancing the tarantella in a southern Italian village, vintage travel journal style",
+  "irony_prompt": "A dancer whirls dramatically centre-frame in a sun-baked village square, skirts flying, while a tiny cartoonish spider tumbles off her sleeve mid-spin, looking thoroughly seasick from the motion. Smaller and subordinate: onlookers clapping in a circle; a tambourine on the ground; dust kicked up around her feet. MOOD: energetic, folk-tale whimsy."
  },
  {
   "id": "it-a-farfalle",
@@ -895,7 +936,8 @@
   "quip_wrong": "Elegantní odpověď, jen bohužel chybná — luček, vrabec ani pták. Příroda tvůrce těstovin inspirovala jiným tvorem, lehčím a křídlatějším.",
   "explanation": "Farfalle pocházejí z oblasti Emilia-Romagna a Lombardie. Tvar není jen estetický — záhyby zadržují omáčku lépe než rovné těstoviny. V dialektu se jim říká také strichetti nebo gasse.",
   "about": "těstovinách farfalle",
-  "image_prompt": "A painterly watercolor illustration of farfalle pasta scattered on a wooden surface, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of farfalle pasta scattered on a wooden surface, vintage travel journal style",
+  "irony_prompt": "A cluster of bow-shaped farfalle pasta fills the frame, pinched in the middle just like folded butterfly wings, with one piece appearing to flutter mid-air as if about to fly off the plate. Smaller and subordinate: a scattering of flour; a wooden pasta board; a real butterfly landing nearby in comparison. MOOD: whimsical, light."
  },
  {
   "id": "it-a-collodi-pinokio",
@@ -915,7 +957,8 @@
   "quip_wrong": "Trefa vedle mísy — dívka, americké prostředí ani jiné svědomí. Collodi žádnou z těchto změn neudělal, změnil jinou věc, a tak zásadní, že dnes žádné dětské vydání originál nepřetiskne.",
   "explanation": "Collodi vydával příběh v novinách od roku 1881 a v původním konci Pinokio skončil oběšen. Čtenáři ho donutili pokračovat — pak přišla modrá víla a happier ending. Knižní verze z roku 1883 je kompromis.",
   "about": "Pinociovi",
-  "image_prompt": "A painterly watercolor illustration of Pinocchio as a wooden puppet on strings, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Pinocchio as a wooden puppet on strings, vintage travel journal style",
+  "irony_prompt": "A wooden marionette puppet sits slumped centre-frame on a workshop shelf, still made entirely of plain unpainted wood with visible strings, never transformed into a real boy, gazing wistfully at a small empty cricket cage beside him. Smaller and subordinate: wood shavings on the floor; a carving chisel; a single candle. MOOD: bittersweet, gently wry, not scary."
  },
  {
   "id": "it-a-pompeje-odlitky",
@@ -935,7 +978,8 @@
   "quip_wrong": "Škoda, mimo cíl — mumifikace, zkamenění pod tlakem ani lávová krusta. Vezuv si vybral jiný způsob, a Giuseppe Fiorelli přišel na to, jak z prázdnoty vyrobit tvář.",
   "explanation": "Giuseppe Fiorelli přišel na metodu sádrových odlitků v roce 1863. V dutinách, kde se rozložila organická hmota, zůstal přesný negativ těl. Odlitky jsou tak detailní, že vidíme záhyby oblečení i výrazy tváří.",
   "about": "Pompejích",
-  "image_prompt": "A painterly watercolor illustration of Pompeii ruins with Vesuvius in the background at sunset, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Pompeii ruins with Vesuvius in the background at sunset, vintage travel journal style",
+  "irony_prompt": "A pale plaster cast fills the frame in a museum gallery, its form perfectly capturing the folds of ancient clothing and a curled sleeping posture, looking almost peaceful under soft display lighting. Smaller and subordinate: a small empty pedestal; a visitor's silhouette observing respectfully; a volcano sketched faintly on a wall mural behind. MOOD: solemn, respectful, not graphic."
  },
  {
   "id": "it-k-tvar",
@@ -956,7 +1000,8 @@
   "quip_wrong": "Skoro, ale ne tak úplně — rukavice ani čepice na mapě takhle nevypadají. Itálie má tvar holínky, jako by se obouvala do Středozemního moře.",
   "explanation": "Apeninský poloostrov vybíhá hluboko do Středozemního moře a tvar 'boty' vidí jasně každý, kdo se podívá na mapu Evropy.",
   "about": "italské geografii",
-  "image_prompt": "A painterly watercolor illustration of Italy map shaped like a leather boot, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Italy map shaped like a leather boot, vintage travel journal style",
+  "irony_prompt": "A map of Italy fills the frame in the unmistakable shape of a tall leather boot, so real it even has visible stitching along its edge, with a tiny person cheerfully trying it on for size. Smaller and subordinate: a small football being kicked off the 'toe'; a few boot-shaped clouds nearby; small waves lapping at its sole. MOOD: playful, whimsical, kid-friendly."
  },
  {
   "id": "it-k-vlajka",
@@ -977,7 +1022,8 @@
   "quip_wrong": "Chybička se vloudila — modrá se do italské vlajky vůbec nevešla. Ty tři pruhy jsou zelený, bílý a červený.",
   "explanation": "Zelená barva symbolizuje naději, bílá víru a červená oběti italského národa. Trochu náhoda: pizza Margherita vznikla v roce 1889 právě ve barvách vlajky.",
   "about": "italské vlajce",
-  "image_prompt": "A painterly watercolor illustration of the Italian tricolor flag waving, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Italian tricolor flag waving, vintage travel journal style",
+  "irony_prompt": "A large Italian flag fills the frame, rippling with three vertical stripes — green on the left, white in the middle, red on the right, no other colors — held proudly by a cheerful child on a sunny piazza. Smaller and subordinate: confetti in the air; a small dog running past; pigeons taking flight. MOOD: joyful, patriotic fun, kid-friendly."
  },
  {
   "id": "it-k-zmrzlina-vanocni",
@@ -998,7 +1044,8 @@
   "quip_wrong": "Málem, ale ne — preclík je slaný a bábovka česká. Ta voňavá italská vánoční kupole s rozinkami se jmenuje panettone.",
   "explanation": "Panettone pochází z Milána a peče se do vysoké kulaté formy. Plní se kandovaným ovocem a rozinkami. Dnes je k dostání po celém světě, ale Italové tvrdí, že originál je jen milánský.",
   "about": "italských Vánocích",
-  "image_prompt": "A painterly watercolor illustration of a festive panettone cake dusted with powdered sugar, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a festive panettone cake dusted with powdered sugar, vintage travel journal style",
+  "irony_prompt": "A tall round panettone cake with a rounded dome top and dusted with powdered sugar fills the frame on a festive table, steam still rising from its freshly baked golden crust. Smaller and subordinate: candied fruit peeking from a slice beside it; a string of fairy lights; a cat sniffing curiously at the base. MOOD: cozy, festive, kid-friendly."
  },
  {
   "id": "it-k-maso",
@@ -1041,7 +1088,8 @@
   "quip_wrong": "Ještě ne tentokrát — smrk patří do hor a bříza k rybníkům. Ten štíhlý tmavě zelený strom podél toskánských cest je cypřiš.",
   "explanation": "Cypřiše (Cupressus sempervirens) jsou symbolem středomořské krajiny. V Itálii se sázejí podél cest a k hřbitovům — jejich úzký tvar nezabíral příliš místa a rostly rychle.",
   "about": "toskánské krajině",
-  "image_prompt": "A painterly watercolor illustration of tall cypress trees lining a dirt road in Tuscany, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of tall cypress trees lining a dirt road in Tuscany, vintage travel journal style",
+  "irony_prompt": "A row of tall slender dark green cypress trees stands like green candles along a dirt road, filling the frame in perfect diminishing perspective toward a distant Tuscan farmhouse. Smaller and subordinate: a cyclist pedaling along the road; rolling golden hills; a small flock of birds. MOOD: peaceful, picturesque, kid-friendly."
  },
  {
   "id": "it-t-opera",
@@ -1061,7 +1109,8 @@
   "quip_wrong": "Skoro se to povedlo, ale ne úplně — muzikál přišel z Ameriky, jazz taky odtamtud, opereta je lehčí odnož. Italský vynález z přelomu 16. a 17. století je vzletnější než všechno.",
   "explanation": "První opery vznikly ve Florencii v kroužku Camerata fiorentina, který chtěl oživit starověké řecké drama. Jak to Řekové zpívali, nikdo nevěděl, tak to vymysleli znovu — a tím náhodou stvořili nový žánr.",
   "about": "italské opeře",
-  "image_prompt": "A painterly watercolor illustration of an ornate opera house stage interior with curtain, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of an ornate opera house stage interior with curtain, vintage travel journal style",
+  "irony_prompt": "A single opera singer stands centre-stage in full voice, dominating the frame in dramatic spotlight, while behind her a group of confused ancient Greek philosophers in togas scratch their heads, clearly not recognizing this as their own invention. Smaller and subordinate: a grand chandelier above; empty sheet-music stands; red velvet curtains. MOOD: theatrical, wry."
  },
  {
   "id": "it-t-rim",
@@ -1081,7 +1130,8 @@
   "quip_wrong": "Dobrý pokus, ale vedle — město světla i větrů je zabrané. Řím si přezdívku vydělal jinak: tisícem let jako centrum světa.",
   "explanation": "Přezdívka Caput Mundi (hlava světa) a Città Eterna (věčné město) odráží věčnost Říma jako centra nejmocnější antické říše. Paradoxně, čím více se Řím bourá, tím víc se zjišťuje, co pod ním ještě leží.",
   "about": "Římě",
-  "image_prompt": "A painterly watercolor illustration of Rome cityscape at sunset with ancient ruins, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Rome cityscape at sunset with ancient ruins, vintage travel journal style",
+  "irony_prompt": "A cross-section of a Roman street fills the frame, showing layer upon layer of ancient ruins stacked beneath a modern sidewalk like the world's oldest layer cake, with a surprised utility worker mid-dig discovering a marble column. Smaller and subordinate: a shovel and hard hat; scattered pottery shards; a curious cat peering into the hole. MOOD: quietly amazed, clever."
  },
  {
   "id": "it-t-katedrala",
@@ -1101,7 +1151,8 @@
   "quip_wrong": "Blízko, ale ne dost blízko — Palermo, Bologna ani Verona. Každé má svůj dóm, ale šest set let stavby a bílý mramor s věžičkami, to je jinde.",
   "explanation": "Milánský dóm je třetí největší kostel na světě a jeho výstavba začala roku 1386. Na střeše je vyhlídkový ochoz s výhledem na Alpy — a v jasný den i na Mont Blanc.",
   "about": "milánské architektuře",
-  "image_prompt": "A painterly watercolor illustration of the white marble Milan Cathedral with gothic spires, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the white marble Milan Cathedral with gothic spires, vintage travel journal style",
+  "irony_prompt": "An enormous white marble gothic cathedral bristling with countless spires and statues dominates the frame, its uppermost tower still surrounded by scaffolding after centuries, with a tiny elderly architect handing blueprints to an even older successor. Smaller and subordinate: pigeons on a ledge; a cloud drifting past the spires; distant mountains on the horizon. MOOD: quietly funny, grand."
  },
  {
   "id": "it-t-moce",
@@ -1121,7 +1172,8 @@
   "quip_wrong": "Za trochu se to minulo — Severní moře ani Baltské. Italská bota sahá nohama do Středomoří, ale která jeho část záleží na straně boty.",
   "explanation": "Jaderské moře je poměrně mělké (průměrná hloubka 173 m) a kvůli uzavřené poloze je citlivé na znečištění. Benátky na jeho severním konci se topí nejen metaforicky.",
   "about": "italském pobřeží",
-  "image_prompt": "A painterly watercolor illustration of calm blue Adriatic waves on a sunny beach, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of calm blue Adriatic waves on a sunny beach, vintage travel journal style",
+  "irony_prompt": "Calm turquoise Adriatic waves fill the frame lapping a sunny pebble beach, with a fisherman mending nets on one side while, just visible across the water on the horizon, sits a hint of a distant coastline. Smaller and subordinate: a small fishing boat; seagulls overhead; beach umbrellas in the distance. MOOD: peaceful, sun-drenched."
  },
  {
   "id": "it-t-pismo",
@@ -1141,7 +1193,8 @@
   "quip_wrong": "Tentokrát to nesedělo — cyrilice, azbuka ani hlaholice. Každé má svůj příběh, ale to písmo, co dnes používá 70 % světa, je starší a pochází od legií.",
   "explanation": "Latinská abeceda se rozšířila s římskou říší po celé Evropě. Dnes ji nebo z ní odvozené varianty používá přes 70 % světové populace při psaní.",
   "about": "latinském písmu",
-  "image_prompt": "A painterly watercolor illustration of ancient Roman stone inscriptions carved in a wall, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of ancient Roman stone inscriptions carved in a wall, vintage travel journal style",
+  "irony_prompt": "A weathered stone Roman milestone stands centre-frame at a crossroads, its surface worn smooth and blank with age, with countless roads fanning out from it toward the horizon in every direction, reaching distant lands. Smaller and subordinate: a sandal print in the dust; ivy climbing the stone; a small lizard sunning itself. MOOD: quietly proud, clever."
  },
  {
   "id": "it-a-kava",
@@ -1161,7 +1214,8 @@
   "quip_wrong": "Kreativní, ale mimo — po obědě ani večer. Italský číšník si při cappuccinu po poledni dělá poznámku, a ne pochvalnou.",
   "explanation": "Italská kávová etiketa má svá pravidla: cappuccino (a další mléčné nápoje) se pijí ráno, protože mléko se po jídle považuje za 'těžké na žaludek'. Po obědě a večeři se pije jen espresso nebo ristretto.",
   "about": "italské kávové kultuře",
-  "image_prompt": "A painterly watercolor illustration of a creamy cappuccino cup on a marble bar counter, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a creamy cappuccino cup on a marble bar counter, vintage travel journal style",
+  "irony_prompt": "A frothy cappuccino sits centre-frame on a café table in warm morning light, steam curling upward, while a small wall clock behind it clearly shows an early hour. Smaller and subordinate: a warm croissant beside it; a waiter approaching with a tray; morning sunlight through a window. MOOD: cozy, quietly particular."
  },
  {
   "id": "it-a-pesto",
@@ -1181,7 +1235,8 @@
   "quip_wrong": "Elegantní odpověď, jen bohužel chybná — Toskánsko ani Sicílie s paradajkami a mandlemi. Pesto Genovese prozrazuje původ už v názvu, a Janov není ani jedno z těchto míst.",
   "explanation": "Basilico genovese (ligurská bazalka) má menší a jemnější listy s nižším obsahem mentolu než jiné odrůdy. Pravé pesto DOP obsahuje ještě parmigiano, pecorino, piniové oříšky, česnek a olivový olej — a mele se v mramorovém hmoždíři, ne mixérem.",
   "about": "omáčce pesto",
-  "image_prompt": "A painterly watercolor illustration of a mortar and pestle with basil and pine nuts, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a mortar and pestle with basil and pine nuts, vintage travel journal style",
+  "irony_prompt": "A large marble mortar and pestle sits centre-frame filled with vivid green basil leaves being ground into a thick paste, tiny pine nuts and garlic cloves visible mixed throughout. Smaller and subordinate: a small blender sitting unplugged and untouched nearby; a wedge of parmesan; a basil plant on a sunny windowsill. MOOD: proud, quietly traditional."
  },
  {
   "id": "it-a-cizinci",
@@ -1201,7 +1256,8 @@
   "quip_wrong": "Škoda, mimo cíl — Keltové, Gótové ani Féničané. Každý svůj čas v Itálii měl, ale ten národ, co předcházel Římu a dodnes vzdoruje překladačům, jde hledat jinde.",
   "explanation": "Etruský jazyk je izolovaný — nepříbuzný žádnému jinému evropskému jazyku. Přestože máme stovky etruských nápisů, jejich jazyk byl rozluštěn jen částečně. Etruská kultura přežila v Římě jako architektura, symboly moci (fasces, tóga) a způsob věštění.",
   "about": "etruské kultuře",
-  "image_prompt": "A painterly watercolor illustration of an ancient Etruscan terracotta sarcophagus with reclining figures, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of an ancient Etruscan terracotta sarcophagus with reclining figures, vintage travel journal style",
+  "irony_prompt": "An ancient terracotta sarcophagus with a lifelike reclining couple sculpted on its lid dominates the frame in a museum hall, while two modern linguists stand beside it scratching their heads over a thick stack of unopened reference books. Smaller and subordinate: a magnifying glass on a stand; dim gallery lighting; a museum bench. MOOD: quietly puzzled, clever."
  },
  {
   "id": "it-a-zivot",
@@ -1221,7 +1277,8 @@
   "quip_wrong": "Hezky vymyšlené, ale nesprávné — la vita bella ani tempo lento. Italská filozofie sladkého nicnedělání má přesnější název, a ten nepotřebuje překlad.",
   "explanation": "Fráze il dolce far niente (doslova 'sladké nicnedělání') je zakotvena v italské kultuře jako protipól k produktivitě. Je součástí rytmu deníku: práce, espresso, passeggiata, oběd, polední ticho. Nejde o lenost, ale o vědomé zastavení.",
   "about": "italském životním stylu",
-  "image_prompt": "A painterly watercolor illustration of an empty cafe chair on a sunny Italian piazza, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of an empty cafe chair on a sunny Italian piazza, vintage travel journal style",
+  "irony_prompt": "A single empty café chair sits centre-frame on a sun-drenched piazza at midday, tilted back at a perfectly relaxed angle with a hat resting on its own knee as if someone just melted contentedly into thin air. Smaller and subordinate: a half-finished espresso on the table; a cat dozing in a patch of sun; laundry lines overhead. MOOD: warm, blissfully lazy."
  },
  {
   "id": "it-a-svatky",
@@ -1241,7 +1298,8 @@
   "quip_wrong": "Trefa vedle mísy — siesta je španělská odpolední dřímota a serenáda se zpívá pod oknem. Italský večerní rituál je o pohybu, ne o spánku.",
   "explanation": "Passeggiata se koná typicky podvečer, zvláště v neděli. Lidé se obléknou, projdou hlavním náměstím a corso, potkají sousedy, zkritizují oblečení a vrátí se domů. V malých jižních městech tento rituál přežil dodnes.",
   "about": "italském společenském životě",
-  "image_prompt": "A painterly watercolor illustration of people strolling through a town plaza at dusk in Italy, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of people strolling through a town plaza at dusk in Italy, vintage travel journal style",
+  "irony_prompt": "A well-dressed couple stroll arm-in-arm across a bustling piazza at dusk, filling the frame mid-stride, clearly going nowhere in particular but greeting every single person they pass with a nod. Smaller and subordinate: café tables with chatting locals; string lights overhead; a small dog trotting alongside. MOOD: warm, sociable, unhurried."
  },
  {
   "id": "it-a-kostel",
@@ -1261,7 +1319,8 @@
   "quip_wrong": "Odvážná teorie, bohužel nesprávná — vibrace kazící malby ani strážná hlídka. Oba důvody mají logiku, ale campanile sloužil komunitě i bez otevřeného kostela.",
   "explanation": "Italská tradice samostatných zvonicí sahá do raného středověku. Campanile plnilo více funkcí: svolávalo k modlitbě, oznamovalo čas, varovalo před nebezpečím. Nejslavnější je šikmá věž v Pise — campanile tamního dómu.",
   "about": "italské architektuře",
-  "image_prompt": "A painterly watercolor illustration of a tall campanile bell tower standing beside a medieval church, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a tall campanile bell tower standing beside a medieval church, vintage travel journal style",
+  "irony_prompt": "A tall freestanding bell tower stands centre-frame beside — but clearly separate from — a modest little church, ringing loudly on its own schedule while the church door stays firmly locked below. Smaller and subordinate: pigeons scattering from the bells; a cypress tree beside the tower; a shepherd glancing up from a distance. MOOD: quietly amusing, architectural."
  },
  {
   "id": "it-a-pohyb",
@@ -1281,7 +1340,8 @@
   "quip_wrong": "Kreativní, ale mimo — mimica, parlare con le mani ani gestualità. Výzkum z roku 2007 byl přesnější, katalog gest, co popsal, je obsáhlejší než mnohé slovníky.",
   "explanation": "Italská gesta mají konkrétní, sdílené významy — napínání bříška ukazováčku pod okem znamená 'dávej pozor', sevřená ruka před obličejem znamená 'co chceš?'. Výzkum z roku 2007 popsal 250 standardizovaných gest s pevným významem.",
   "about": "italské komunikaci",
-  "image_prompt": "A painterly watercolor illustration of expressive Italian hands gesturing in conversation, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of expressive Italian hands gesturing in conversation, vintage travel journal style",
+  "irony_prompt": "A pair of expressive hands fills the frame mid-conversation, fingers pinched together in the classic 'what do you want' gesture, radiating small motion-lines in every direction like a burst of silent exclamation. Smaller and subordinate: a half-finished espresso on a table below; a shrugging shoulder just visible; a parked scooter. MOOD: lively, expressive, playful."
  },
  {
   "id": "it-a-reka",
@@ -1301,7 +1361,8 @@
   "quip_wrong": "Škoda, mimo cíl — Tiber zásobuje Řím a Arno Florencii, ale nejdelší a hospodářsky nejvýnosnější italská řeka slavná města nepotřebuje.",
   "explanation": "Řeka Pád (Po) je se 682 km nejdelší italskou řekou. Pádská nížina zásobuje vodou největší zemědělskou oblast Itálie a část průmyslového severu. Paradox: Pád je zároveň nejznečištěnější italskou řekou.",
   "about": "italské hydrografii",
-  "image_prompt": "A painterly watercolor illustration of a wide river flowing through green farmland in northern Italy, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a wide river flowing through green farmland in northern Italy, vintage travel journal style",
+  "irony_prompt": "A wide slow river winds through lush green farmland filling the frame, its water visibly carrying tiny rafts of cheese wheels, cured ham legs, and a miniature red sports car float downstream like a proud economic parade. Smaller and subordinate: tractors working the fields; a heron standing in the shallows; distant factory chimneys. MOOD: whimsical, proud."
  },
  {
   "id": "it-a-umelecke-hnuti",
@@ -1321,7 +1382,8 @@
   "quip_wrong": "Elegantní odpověď, jen bohužel chybná — italská soutěž s francouzským dvorem ani vzpoura umělců. Baroko mělo konkrétnějšího zadavatele, s velmi jasnými propagandistickými cíli.",
   "explanation": "Baroko vzniklo v Římě jako součást protireformace. Jezuité a papežové zadávali velkolepé chrámy, fresky a sochy, aby dokázali sílu katolické církve a přilákali zpět věřící. Berniniho andělé na mostě sv. Anděla nebo strop Gesù jsou typickými příklady.",
   "about": "baroku v Itálii",
-  "image_prompt": "A painterly watercolor illustration of a baroque church interior with dramatic light and gilded ceiling, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a baroque church interior with dramatic light and gilded ceiling, vintage travel journal style",
+  "irony_prompt": "A dazzlingly gilded baroque church ceiling fills the frame with swirling painted clouds and golden sunbeams radiating outward, so overwhelming that a small modest reformer figure below shields his eyes and looks distinctly unconvinced. Smaller and subordinate: ornate gold stucco framing; a wisp of incense smoke; a single flickering candle. MOOD: theatrical, wry."
  },
  {
   "id": "it-a-univerzita",
@@ -1341,7 +1403,8 @@
   "quip_wrong": "Logicky, ale ne správně — Padova ani Pisa. Obě jsou staré a slavné, ale Bologna je starší o celé generace a celé století.",
   "explanation": "Universita di Bologna vznikla roku 1088 jako studium práva. Dnes má přes 80 000 studentů. Její latinský motto 'Alma mater studiorum' (živící matka studií) se stalo obecným označením pro університetu v mnoha jazycích.",
   "about": "Boloni",
-  "image_prompt": "A painterly watercolor illustration of historic arched university porticos in Bologna, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of historic arched university porticos in Bologna, vintage travel journal style",
+  "irony_prompt": "An ancient stone archway with covered porticoes fills the frame outside a grand university building, where a line of students in ever more modern clothing stretches from a medieval scholar in robes at the front to a student with a laptop at the back. Smaller and subordinate: stacked old books; a bicycle leaning nearby; ivy climbing the columns. MOOD: quietly proud, timeless."
  },
  {
   "id": "it-k-gondola",
@@ -1362,7 +1425,8 @@
   "quip_wrong": "Trochu jinak, než sis myslel — kajak i kánoe potřebují pádlo. Tahle elegantní loď, kterou žene gondolier bidlem, se jmenuje gondola.",
   "explanation": "Všechny gondoly v Benátkách jsou natřeny na černo od 17. století, kdy vyhláška zakázala majitelům předhánět se ve zdobení lodiček zlatem a barvami.",
   "about": "gondolách v Benátkách",
-  "image_prompt": "A painterly watercolor illustration of a black gondola gliding through a narrow Venetian canal with gondolier in striped shirt, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a black gondola gliding through a narrow Venetian canal with gondolier in striped shirt, vintage travel journal style",
+  "irony_prompt": "A sleek black gondola glides through a narrow Venetian canal, filling the frame with its elegant curved silhouette, steered smoothly by a striped-shirted gondolier standing at the back with a single long oar. Smaller and subordinate: a small arched stone bridge overhead; rippling reflections in the water; a pigeon perched on a windowsill. MOOD: elegant, calm, kid-friendly."
  },
  {
   "id": "it-t-trulli",
@@ -1383,7 +1447,8 @@
   "quip_wrong": "Hezky vymyšlené, ale nesprávné — teplota, Řekové ani chybějící písek. Skutečný důvod je prozaičtější a zahrnuje daňový úřad.",
   "explanation": "Trulli se stavěly v 14. století pod nadvládou Taranta. Majitelé se technicky vyhýbali daním tím, že střechu z nasucho kladených kamenů mohli kdykoli rozebrat. Dnes jsou trulli zapsány na seznam UNESCO.",
   "about": "domcích trulli v Alberobello",
-  "image_prompt": "A painterly watercolor illustration of whitewashed trulli houses with conical grey stone roofs in Alberobello, southern Italy, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of whitewashed trulli houses with conical grey stone roofs in Alberobello, southern Italy, vintage travel journal style",
+  "irony_prompt": "A cluster of whitewashed conical stone houses fills the frame in a sunny southern village, and one owner is shown mid-action cheerfully lifting individual roof stones off his own house one by one at the approach of a tax collector's cart in the distance. Smaller and subordinate: a wheelbarrow of loose stones; chickens pecking nearby; a washing line. MOOD: playful, sly humor."
  },
  {
   "id": "it-t-dante-jazyk",
@@ -1404,7 +1469,8 @@
   "quip_wrong": "Zákon zakazoval latinu nebo Florencie ji neznala? Žádné z toho. Dante latinsky uměl — a přesto ji vědomě odložil.",
   "explanation": "Dante Alighieri napsal Božskou komedii v toskánštině, čímž povýšil lidový jazyk na literární rovinu. Právě jeho dílo se stalo hlavním kamenem, ze kterého se vyvinula moderní standardní italština.",
   "about": "Dantovi Alighierim a Božské komedii",
-  "image_prompt": "A painterly watercolor illustration of a medieval Italian poet writing by candlelight with a quill, a manuscript open beside him, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a medieval Italian poet writing by candlelight with a quill, a manuscript open beside him, vintage travel journal style",
+  "irony_prompt": "An old book with a plain worn cover sits open centre-frame on a wooden desk, beside an ornate, untouched Latin tome gathering dust on a high shelf, with a single candle and quill placed beside the humbler open book. Smaller and subordinate: a window showing a medieval skyline; a stack of blank parchment; an ink pot. MOOD: quietly rebellious, warm."
  },
  {
   "id": "it-a-karantena",
@@ -1425,7 +1491,8 @@
   "quip_wrong": "Kreativní, ale mimo — pomstychtivý dóže ani rituální čísla. Benátky si vybraly pragmatičtější důvod: mor a obchod se nesnáší, a přístav to pochopil dřív než kdokoli jiný.",
   "explanation": "V roce 1377 zavedl přístav Ragusa třicetidenní izolaci. V roce 1403 Benátky prodloužily lhůtu na 40 dní a zřídily první karanténní ostrov na světě — Lazzaretto Vecchio. Odtud název quarantina a dnes globální slovo karanténa.",
   "about": "původu karantény v Benátkách",
-  "image_prompt": "A painterly watercolor illustration of historic Venetian ships anchored offshore near a quarantine island with a warning flag, foggy lagoon, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of historic Venetian ships anchored offshore near a quarantine island with a warning flag, foggy lagoon, vintage travel journal style",
+  "irony_prompt": "Several old sailing ships fill the frame anchored offshore near a small fortified island in a misty lagoon, each flying an identical plain warning flag while officials on the shore keep a wary distance. Smaller and subordinate: a lantern glowing on the island; seagulls circling; a rowboat delivering supplies from afar. MOOD: solemn but not scary, quietly historical."
  },
  {
   "id": "it-a-vatikan-lateran",
@@ -1446,7 +1513,8 @@
   "quip_wrong": "Odvážná teorie, bohužel nesprávná — zbožný král ani papežský výnos pod evropským tlakem. Šest desetiletí demokratických vlád problém ignorovalo, diktátor ho jedním podpisem uzavřel.",
   "explanation": "Od roku 1870, kdy italská vojska obsadila Řím, se papeži považovali za dobrovolné vězně Vatikánu a odmítali uznat Itálii. Lateránské smlouvy z roku 1929 tento konflikt ukončily a stvořily Vatikánský městský stát, který dnes existuje.",
   "about": "vzniku Vatikánu jako suverénního státu",
-  "image_prompt": "A painterly watercolor illustration of St. Peter's Basilica and the Vatican walls seen from above, the tiny independent state visible within Rome, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of St. Peter's Basilica and the Vatican walls seen from above, the tiny independent state visible within Rome, vintage travel journal style",
+  "irony_prompt": "A single ornate fountain pen rests centre-frame atop a rolled parchment scroll on a polished desk, its nib still wet with a single fresh ink blot, the parchment left completely blank except for one large red wax seal, dwarfed by the towering dome of a great basilica visible rising through the window behind it. Smaller and subordinate: a second wax seal beside it; a ribbon-tied stack of older papers; soft desk lamp light. MOOD: quietly momentous, understated."
  },
  {
   "id": "it-k-vesuv",
@@ -1467,7 +1535,8 @@
   "quip_wrong": "Kousek vedle — Etna i Stromboli chrlí oheň taky, ale ta konkrétní hora kousek od Neapole, co kdysi pohřbila celé město, se jmenuje Vesuv.",
   "explanation": "Vesuv je jediná aktivní sopka na evropské pevnině a dnes kolem ní žijí přes tři miliony lidí — nejhustěji obydlené sopečné okolí na světě.",
   "about": "sopce Vesuv",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a single cone-shaped volcano with a thin smoke plume overlooking a bay"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a single cone-shaped volcano with a thin smoke plume overlooking a bay",
+  "irony_prompt": "A cone-shaped volcano fills the frame with a thin wisp of smoke curling from its peak, overlooking a sunny bay dotted with fishing boats far below. Smaller and subordinate: a pizza chef in a rooftop kitchen glancing up nonchalantly; a lemon tree on a terrace; seagulls circling. MOOD: cheerful despite the smoke, kid-friendly."
  },
  {
   "id": "it-t-vatikan-nejmensi",
@@ -1488,7 +1557,8 @@
   "quip_wrong": "Blízko, ale ne dost blízko — Monako je fakt drobné, ale titul nejmenšího mu patří jinam. Vatikán je ještě o kousek skromnější.",
   "explanation": "Vatikán má rozlohu necelých 0,49 km² a žije v něm jen kolem 800 obyvatel — méně lidí, než kolik jich bydlí v jednom pražském paneláku.",
   "about": "Vatikánu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a tiny walled city state with a great dome nestled among rooftops"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a tiny walled city state with a great dome nestled among rooftops",
+  "irony_prompt": "A tiny walled city no bigger than a single city block sits centre-frame, its one great dome towering absurdly over its own miniature borders, completely surrounded by the much larger city outside its walls. Smaller and subordinate: a single guard at a small gate; a postage-stamp-sized garden; a lone flagpole with a plain banner. MOOD: quietly amusing, proud."
  },
  {
   "id": "it-t-sixtinska-kaple",
@@ -1509,7 +1579,8 @@
   "quip_wrong": "Tentokrát tvoje logika utekla jinam — baptisterium má slavné bronzové dveře a Milán mramorovou katedrálu. Strop plný postav visí jinde, ve Vatikánu.",
   "explanation": "Podle rozšířené legendy Michelangelo ležel roky na zádech, ve skutečnosti ale stál na vlastní konstrukci a hlavu měl zakloněnou dozadu — pro krční páteř to bylo ještě horší.",
   "about": "Sixtinské kapli",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a vast painted ceiling fresco glimpsed from below with wooden scaffolding beams"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a vast painted ceiling fresco glimpsed from below with wooden scaffolding beams",
+  "irony_prompt": "A vast painted ceiling fresco fills the frame with swirling figures and clouds, viewed from directly below through a maze of wooden scaffolding beams, with a painter's head craned uncomfortably backward near the top. Smaller and subordinate: paint pots hanging from the scaffold; a dropped paintbrush mid-fall; dust motes in a shaft of light. MOOD: quietly impressive, wry."
  },
  {
   "id": "it-a-machiavelli",
@@ -1530,7 +1601,8 @@
   "quip_wrong": "Trefa vedle mísy — papežské úklady, mafiánský kód ani shakespearovská postava. Realita je fádnější a byrokratičtější, a přesto nebezpečnější.",
   "explanation": "Machiavelli napsal Vladaře po vyhnání z florentské politiky ve snaze získat zpět místo u dvora Medicejů — ironií je, že sám ve skutečnosti obdivoval republikánské zřízení víc než tyranii, o které psal.",
   "about": "Niccolòu Machiavellim a slovu machiavelistický",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an antique quill pen and leather-bound book on a wooden desk with a candle, a Renaissance skyline faint through a window"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an antique quill pen and leather-bound book on a wooden desk with a candle, a Renaissance skyline faint through a window",
+  "irony_prompt": "An old leather-bound book lies open centre-frame on a wooden desk beside a candle, and rising from its pages like a wisp of smoke is the shadow of a sly grinning fox wearing a tiny crown. Smaller and subordinate: a quill resting nearby; a Renaissance skyline faint through a window; an ink blot. MOOD: sly, cleverly mischievous."
  },
  {
   "id": "it-k-fontana-di-trevi",
@@ -1551,7 +1623,8 @@
   "quip_wrong": "Ještě ne tentokrát — klíč ani kamínek se do fontány neházejí. Lidé tam hází drobné mince a přejí si vrátit se do Říma.",
   "explanation": "Tradici hodit minci přes pravé rameno proslavil až americký film z roku 1954 nazvaný Three Coins in the Fountain.",
   "about": "fontáně di Trevi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a coin sinking through clear fountain water past baroque stone carvings"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a coin sinking through clear fountain water past baroque stone carvings",
+  "irony_prompt": "A shiny coin sinks slowly through crystal-clear fountain water past ornate baroque stone carvings, filling the frame mid-splash with a ring of ripples spreading above it. Smaller and subordinate: other coins already resting on the fountain floor; a tourist's hand mid-toss at the water's surface; a stone sea-horse statue nearby. MOOD: cheerful, magical, kid-friendly."
  },
  {
   "id": "it-t-romulus-remus",
@@ -1572,7 +1645,8 @@
   "quip_wrong": "Za trochu se to minulo — medvědice, kozy ani orlice. Zvíře, co zachránilo dvojčata budoucího Říma, mělo ostřejší zuby.",
   "explanation": "Podle legendy se bratři později pohádali o to, čí jméno bude nové město nést — spor Romulus vyhrál tak, že vlastního bratra zabil.",
   "about": "založení Říma",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a she-wolf nursing two human infants beneath a fig tree on a hillside"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a she-wolf nursing two human infants beneath a fig tree on a hillside",
+  "irony_prompt": "A she-wolf stands centre-frame calmly nursing two human infant twins beneath a fig tree on a grassy hillside, utterly unfazed by her unusual foster children. Smaller and subordinate: a woodpecker watching from a branch; distant hills where a future city will rise; scattered wildflowers. MOOD: gentle, mythic, kid-friendly, not violent."
  },
  {
   "id": "it-t-valentino-rossi",
@@ -1593,7 +1667,8 @@
   "quip_wrong": "Mimo, ale slušně mířeno — Formule 1, rallye ani cyklistika. Rossiho doména má dvě kola, ne čtyři, a vydělala mu úplně jinou přezdívku.",
   "explanation": "Rossi závodil ve světovém šampionátu motocyklů 26 sezón a při odchodu na odpočinek v roce 2021 byl teprve druhým jezdcem historie, který startoval v grand prix ve čtyřech různých dekádách.",
   "about": "Valentinu Rossim",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a single motorcycle racer leaning into a curve on a sunlit track"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - a single motorcycle racer leaning into a curve on a sunlit track",
+  "irony_prompt": "A single motorcycle racer leans dramatically into a curve, tyres nearly scraping the tarmac, filling the frame mid-turn on a sunlit track, wearing a small stethoscope draped humorously over his racing leathers. Smaller and subordinate: a checkered flag waving; blurred grandstands; a trophy glinting in the pit lane. MOOD: fast, playful."
  },
  {
   "id": "it-a-jazyk-pri-sjednoceni",
@@ -1614,7 +1689,8 @@
   "quip_wrong": "Škoda, mimo cíl — devadesát, padesát ani pětadvacet procent. Realita roku 1861 byla o dost skromnější, sněte si o jednotném národě.",
   "explanation": "Sjednocená Itálie vznikla politicky roku 1861, ale spisovnou italštinu tehdy ovládala jen hrstka vzdělanců; skutečně jazyk sjednotilo až celostátní televizní vysílání RAI od 50. let 20. století.",
   "about": "vzniku italštiny jako národního jazyka",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an old wooden radio set glowing warmly on a shelf, faint map of Italy behind it"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, warm cozy, single centered subject, minimal simple, no text, no words, no letters, no border - an old wooden radio set glowing warmly on a shelf, faint map of Italy behind it",
+  "irony_prompt": "An old wooden radio set glows warmly on a shelf centre-frame, and radiating from its speaker like sound waves are countless tiny identical figures all speaking in unison, replacing a scattered crowd of figures who were each mumbling something different just moments before. Smaller and subordinate: a faint map on the wall behind it; a rug on the floor; evening lamplight. MOOD: quietly clever, warm."
  },
  {
   "id": "it-k-mont-blanc",
@@ -1636,7 +1712,8 @@
   "explanation": "Mont Blanc měří 4 808 metrů a na jeho úbočí vyjede lanovka, takže se k němu podívají i turisté bez horolezeckého vybavení.",
   "source_url": "https://cs.wikipedia.org/wiki/Mont_Blanc",
   "image_prompt": "Fotorealistický snímek zasněženého vrcholu Mont Blancu tyčícího se nad alpským údolím za jasného dne, 16:9",
-  "about": "Mont Blanku"
+  "about": "Mont Blanku",
+  "irony_prompt": "A single snow-capped mountain peak fills the frame, its summit piercing through fluffy white clouds, with a tiny cable car dangling on a wire far below making the climb look effortless. Smaller and subordinate: skiers on a distant slope; a mountain goat on a rocky ledge; a lone eagle soaring past. MOOD: majestic, kid-friendly."
  },
  {
   "id": "it-k-verona-balkon-julie",
@@ -1658,7 +1735,8 @@
   "explanation": "Pod balkónem stojí bronzová socha Julie a podle pověsti přináší štěstí v lásce, když se jí sáhne na pravé rameno.",
   "source_url": "https://cs.wikipedia.org/wiki/D%C5%AFm_Julie",
   "image_prompt": "Fotorealistický snímek úzké uličky ve Veroně s kamenným balkónem a bronzovou sochou Julie obklopenou turisty, 16:9",
-  "about": "balkóně Julie ve Veroně"
+  "about": "balkóně Julie ve Veroně",
+  "irony_prompt": "A small stone balcony fills the frame on a narrow old street, and below it a bronze statue of a young woman gleams brightly on one shoulder from countless hopeful hands touching it for luck. Smaller and subordinate: a scatter of fresh flowers at its base; tourists' hands reaching up; a pigeon on the balcony rail. MOOD: romantic, gently playful, kid-friendly."
  },
  {
   "id": "it-k-nutella-puvod",
@@ -1680,7 +1758,8 @@
   "explanation": "Nutella vznikla po druhé světové válce, kdy bylo kakao nedostatkové, a cukrář Pietro Ferrero ho proto nahradil větším množstvím mletých lískových oříšků.",
   "source_url": "https://cs.wikipedia.org/wiki/Nutella",
   "image_prompt": "Fotorealistický snímek krajíce chleba namazaného čokoládovo-oříškovou pomazánkou na dřevěném prkénku, 16:9",
-  "about": "pomazánce Nutella"
+  "about": "pomazánce Nutella",
+  "irony_prompt": "A thick round mound of chocolate-hazelnut spread fills the frame on a thick slice of bread, with a small mound of whole hazelnuts piled beside it as if to prove exactly what makes up most of the jar. Smaller and subordinate: a butter knife resting nearby; a glass of milk; a cheerful child's fingerprint in the spread. MOOD: cozy, delighted, kid-friendly."
  },
  {
   "id": "it-k-befana-svatek",
@@ -1702,7 +1781,8 @@
   "explanation": "Zlobivým dětem prý Befana místo sladkostí nechává v punčoše kousek uhlí – dnes se ale peče jako sladké černé cukrové uhlí.",
   "source_url": "https://cs.wikipedia.org/wiki/Befana",
   "image_prompt": "Fotorealistický snímek dětské punčochy pověšené u krbu a plné sladkostí v italském domě o svátku Tří králů, 16:9",
-  "about": "italské čarodějnici Befaně"
+  "about": "italské čarodějnici Befaně",
+  "irony_prompt": "A kindly old woman on a broomstick soars across a starry night sky above rooftop chimneys, filling the frame with her patched shawl fluttering, a sack of sweets slung over her shoulder. Smaller and subordinate: a stocking hanging from a chimney below; a black cat watching from a windowsill; falling snow. MOOD: warm, magical, kid-friendly, not scary."
  },
  {
   "id": "it-k-bocce-hra",
@@ -1724,6 +1804,7 @@
   "explanation": "Bocce patří mezi nejstarší hry na světě – podobné koulové hry se hrávaly prý už ve starověkém Římě i Egyptě.",
   "source_url": "https://en.wikipedia.org/wiki/Bocce",
   "image_prompt": "Fotorealistický snímek skupiny lidí hrajících bocce s kovovými koulemi v italském parku za slunečného odpoledne, 16:9",
-  "about": "italské hře bocce"
+  "about": "italské hře bocce",
+  "irony_prompt": "A large metal bocce ball rolls dramatically across a sandy court, filling the frame as it curves in to nudge a tiny white target ball, with a cluster of other balls already scattered nearby from earlier throws. Smaller and subordinate: a park bench with onlookers; a shady tree overhead; a dog watching intently. MOOD: relaxed, sunny, kid-friendly."
  }
 ]

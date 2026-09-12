@@ -19,7 +19,8 @@
   "source_url": "https://whc.unesco.org/en/list/373",
   "source_card": "gb-mista-stonehenge",
   "image_prompt": "Fotorealistický snímek Stonehenge za rozbřesku, mlha kolem kamenů, teplé světlo vycházejícího slunce, bez lidí, 16:9",
-  "about": "Stonehenge"
+  "about": "Stonehenge",
+  "irony_prompt": "A ring of towering stone slabs dominates the frame at dawn mist, one stone visibly more finely carved and perfectly balanced than all its rougher neighbors, standing slightly taller and prouder in the circle. Smaller and subordinate: a lone raven perched on a lintel; grazing sheep nearby; the sun rising exactly between two stones. MOOD: mysterious, quietly reverent."
  },
  {
   "id": "gb-q-edinburghhrad",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Edinburgh_Castle",
   "source_card": "gb-mista-edinburghhrad",
   "image_prompt": "Fotorealistický snímek Edinburského hradu na strmé sopečné skále, historické město pod ním, dramatická oblačnost, 16:9",
-  "about": "Edinburském hradu"
+  "about": "Edinburském hradu",
+  "irony_prompt": "An imposing stone castle perches dramatically atop a jagged black volcanic crag, dominating the frame, its rock visibly scorched and craggy compared to the smooth green hills around it. Smaller and subordinate: a piper on the ramparts; dramatic storm clouds; a seagull circling. MOOD: dramatic, proud."
  },
  {
   "id": "gb-q-caernarfon",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Caernarfon_Castle",
   "source_card": "gb-mista-caernarfon",
   "image_prompt": "Fotorealistický snímek hradu Caernarfon při řece ve Walesu, mohutné věže odrážející se ve vodě, 16:9",
-  "about": "hradu Caernarfon"
+  "about": "hradu Caernarfon",
+  "irony_prompt": "A mighty medieval castle with polygonal towers fills the frame beside a calm river, its banners flying stiffly as if standing at attention for royal inspection. Smaller and subordinate: a stonemason's chisel resting on a wall; a moored rowboat; a heron on the bank. MOOD: stately, quietly imposing."
  },
  {
   "id": "gb-q-lochness",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Loch_Ness",
   "source_card": "gb-priroda-lochness",
   "image_prompt": "Fotorealistický snímek jezera Loch Ness za mlhavého skotského rána, temná voda, zelené kopce po stranách, 16:9",
-  "about": "jezeru Loch Ness"
+  "about": "jezeru Loch Ness",
+  "irony_prompt": "A single vast dark loch fills the frame stretching to the horizon, and beside it on a miniature map sit many tiny toy-sized lakes clustered together, all together barely reaching the same waterline as the one great loch. Smaller and subordinate: misty green hills; a lone fishing boat; a ripple on the surface hinting at something beneath. MOOD: mysterious, quietly grand."
  },
  {
   "id": "gb-q-giantscauseway",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
   "source_card": "gb-priroda-giantscauseway",
   "image_prompt": "Fotorealistický snímek šestibokých čedičových sloupců Giant's Causeway v Severním Irsku s Atlantským oceánem v pozadí, 16:9",
-  "about": "Giant's Causeway"
+  "about": "Giant's Causeway",
+  "irony_prompt": "Thousands of tightly packed hexagonal stone columns fill the frame like a giant's honeycomb stepping into the sea, each one perfectly six-sided and uniform. Smaller and subordinate: crashing Atlantic waves; a curious puffin perched on a column; distant cliffs. MOOD: awe-inspiring, quietly geometric wonder."
  },
  {
   "id": "gb-q-lakedistrict",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lake_District",
   "source_card": "gb-priroda-lakedistrict",
   "image_prompt": "Fotorealistický snímek ledovcového jezera v Jezerním distriktu, okolní zelené kopce se zrcadlí ve vodě, klidné ráno, 16:9",
-  "about": "Jezerním distriktu"
+  "about": "Jezerním distriktu",
+  "irony_prompt": "A long glacial valley fills the frame, its smooth U-shaped walls curving down to a mirror-calm lake, with a single giant ghostly ice sheet retreating into the distant mountains as if it just carved the scene moments ago. Smaller and subordinate: a lone hiker with a walking stick; grazing sheep; a heron in the shallows. MOOD: serene, quietly majestic."
  },
  {
   "id": "gb-q-shakespeare",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/William_Shakespeare",
   "source_card": "gb-lide-shakespeare",
   "image_prompt": "Fotorealistický snímek Shakespeareova rodného domu ve Stratfordu nad Avonou, historická anglická architektura, 16:9",
-  "about": "Williamu Shakespearovi"
+  "about": "Williamu Shakespearovi",
+  "irony_prompt": "A half-timbered Tudor house fills the frame beside a gentle river, a quill pen resting on its windowsill catching the morning light as if just set down mid-thought. Smaller and subordinate: swans gliding on the river below; ivy climbing the timber frame; a robin on the roof. MOOD: quietly inspired, warm."
  },
  {
   "id": "gb-q-newton",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Isaac_Newton",
   "source_card": "gb-lide-newton",
   "image_prompt": "Fotorealistický snímek budovy Trinity College v Cambridgi s historickými kamennými zdmi a trávníkem, 16:9",
-  "about": "Isaacu Newtonovi"
+  "about": "Isaacu Newtonovi",
+  "irony_prompt": "A single red apple falls in mid-air, filling the frame, its shadow tracing a perfect parabolic arc across the grass below toward a thoughtful scholar seated beneath the tree, notebook open on his knee. Smaller and subordinate: an old brass telescope nearby; ivy-covered college walls; a curious squirrel. MOOD: quietly clever, iconic."
  },
  {
   "id": "gb-q-adalovelace",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
   "source_card": "gb-lide-adalovelace",
   "image_prompt": "Fotorealistický snímek historických knih, matematických diagramů a ozubeného kolečka na starém stole, viktoriánská atmosféra, 16:9",
-  "about": "Adě Lovelace"
+  "about": "Adě Lovelace",
+  "irony_prompt": "An ornate brass mechanical calculating engine fills the frame, its countless gears and levers whirring, while a single elegant gloved hand reaches in to adjust it with the confidence of someone who understands machines a century ahead of their time. Smaller and subordinate: a notebook covered in diagrams; a quill; a candle. MOOD: quietly visionary, elegant."
  },
  {
   "id": "gb-q-changingsteguard",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Changing_of_the_Guard_(United_Kingdom)",
   "source_card": "gb-kultura-changingsteguard",
   "image_prompt": "Fotorealistický snímek britské královské gardy v červených uniformách a medvědích čepicích při přechodu přes náměstí, 16:9",
-  "about": "střídání stráže"
+  "about": "střídání stráže",
+  "irony_prompt": "A row of guards in tall bearskin hats and red tunics fills the frame, marching in perfect unison outside a grand palace gate, each stride landing at the exact same instant like a single many-legged creature. Smaller and subordinate: a brass band in the background; pigeons scattering; iron palace railings. MOOD: stately, precise, quietly funny."
  },
  {
   "id": "gb-q-highlandgames",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Highland_games",
   "source_card": "gb-kultura-highlandgames",
   "image_prompt": "Fotorealistický snímek atleta v kiltu házejícího dřevěný kmen na tradičních Highland Games s kopci v pozadí, 16:9",
-  "about": "Highland Games"
+  "about": "Highland Games",
+  "irony_prompt": "A kilted athlete dominates the frame mid-throw, heaving an enormous wooden caber log end-over-end through the air with tremendous effort, while a bagpiper marches obliviously past in the background still playing. Smaller and subordinate: a dancer mid-leap nearby; rolling green hills; a cheering crowd. MOOD: energetic, boisterous fun."
  },
  {
   "id": "gb-q-afternoontea",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Afternoon_tea",
   "source_card": "gb-kultura-afternoontea",
   "image_prompt": "Fotorealistický snímek afternoon tea: porcelánový servis, scones s džemem, drobné sendviče na třípatrovém stojánku, 16:9",
-  "about": "britské tradici afternoon tea"
+  "about": "britské tradici afternoon tea",
+  "irony_prompt": "An elegant lady in Victorian dress sits centre-frame at a small table set with a full tiered stand of tiny sandwiches and cakes, glancing impatiently at a grand clock on the wall showing the long gap between lunch and dinner. Smaller and subordinate: a steaming teapot; a lapdog waiting hopefully; lace curtains. MOOD: refined, gently amused."
  },
  {
   "id": "gb-q-globe",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Shakespeare%27s_Globe",
   "source_card": "gb-umeni-globe",
   "image_prompt": "Fotorealistický snímek exteriéru Shakespeare's Globe Theatre v Southwarku, kulatá dřevěná budova se slaměnou střechou, řeka Temže v pozadí, 16:9",
-  "about": "divadle Shakespeare's Globe"
+  "about": "divadle Shakespeare's Globe",
+  "irony_prompt": "A round wooden theatre with a distinctive thatched roof fills the frame, standing out amid a skyline of modern glass and steel towers, with a single anxious fireman keeping a watchful eye on it from below. Smaller and subordinate: the Thames glinting nearby; actors in costume at the entrance; a seagull on the thatch. MOOD: quaint, quietly funny."
  },
  {
   "id": "gb-q-beatles",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/The_Beatles",
   "source_card": "gb-umeni-beatles",
   "image_prompt": "Fotorealistický snímek Abbey Road v Londýně, slavný přechod pro chodce, historická budova nahrávacího studia, 16:9",
-  "about": "kapele Beatles"
+  "about": "kapele Beatles",
+  "irony_prompt": "A group of four musicians in matching suits, shown only as anonymous silhouettes with instrument cases, fills the frame walking in a row past towering cranes and ships on a busy port-city dock. Smaller and subordinate: a seagull overhead; coiled ropes on the quay; a distant ferry. MOOD: iconic, quietly proud."
  },
  {
   "id": "gb-q-tate",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tate_Modern",
   "source_card": "gb-umeni-tate",
   "image_prompt": "Fotorealistický snímek budovy Tate Modern v Londýně, přestavěná elektrárna s komínem, pohled přes lávku Millennium Bridge, 16:9",
-  "about": "galerii Tate Modern"
+  "about": "galerii Tate Modern",
+  "irony_prompt": "A vast industrial building with a single tall brick chimney dominates the frame beside a river, its cavernous interior visible through open doors revealing colourful modern art installations where coal furnaces used to roar. Smaller and subordinate: a footbridge crossing the river; a seagull; a cyclist passing. MOOD: quietly transformed, proud."
  },
  {
   "id": "gb-q-premier",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Premier_League",
   "source_card": "gb-sport-premier",
   "image_prompt": "Fotorealistický snímek moderního anglického fotbalového stadionu zaplněného fanoušky, zelený trávník, 16:9",
-  "about": "Premier League"
+  "about": "Premier League",
+  "irony_prompt": "A packed football stadium fills the frame under bright floodlights, a sea of tiny cheering fans in every colour of jersey stretching up into the night sky, far outnumbering any national team match crowd. Smaller and subordinate: a floating match ball; a corner flag; television camera silhouettes at pitch-side. MOOD: electric, proud."
  },
  {
   "id": "gb-q-wimbledon",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
   "source_card": "gb-sport-wimbledon",
   "image_prompt": "Fotorealistický snímek travnatého tenisového kurtu Wimbledon za slunného dne, zelená tráva, bílé lajny, bez lidí, 16:9",
-  "about": "Wimbledonu"
+  "about": "Wimbledonu",
+  "irony_prompt": "A pristine green grass tennis court fills the frame, its surface already worn bare and brown along the baselines from two weeks of relentless play, three other Grand Slam courts visible faintly in the background all made of hard clay or concrete instead. Smaller and subordinate: a ball boy waiting; a straw hat on an empty chair; a bowl of strawberries. MOOD: proud, quietly particular."
  },
  {
   "id": "gb-q-rugby",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/History_of_rugby_union",
   "source_card": "gb-sport-rugby",
   "image_prompt": "Fotorealistický snímek rugbyového zápasu na trávníku ve Spojeném království, hráči v mlýně, bez rozpoznatelných tváří, 16:9",
-  "about": "vzniku rugby"
+  "about": "vzniku rugby",
+  "irony_prompt": "A schoolboy on a football pitch dominates the frame, caught mid-stride clutching the ball tightly under his arm and sprinting away, while a crowd of stunned football players behind him stand frozen in disbelief at the broken rule. Smaller and subordinate: a dropped football rolling nearby; a referee's whistle mid-blow; old school buildings in the background. MOOD: rebellious, quietly funny."
  },
  {
   "id": "gb-q-britvsamer",
@@ -438,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cockney_rhyming_slang",
   "source_card": "gb-jazyk-cockney",
   "image_prompt": "Fotorealistický snímek historické East End tržnice v Londýně, rušná ulice, staré cihlové budovy, bez rozpoznatelných tváří, 16:9",
-  "about": "cockney rýmovaném slangu"
+  "about": "cockney rýmovaném slangu",
+  "irony_prompt": "A small pile of apples and pears is stacked centre-frame on a market barrow in the unmistakable shape of a short staircase, with a puzzled tourist peering at it and a local market trader winking knowingly. Smaller and subordinate: a red double-decker bus passing; a striped awning; a pigeon on the barrow. MOOD: playful, cheeky, clever."
  },
  {
   "id": "gb-q-etymologie",
@@ -460,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Norman_conquest_of_England",
   "source_card": "gb-jazyk-etymologie",
   "image_prompt": "Fotorealistický snímek historické středověké tapisérie s rytíři a vojáky, historická vizualita, 16:9",
-  "about": "vlivu normanského dobytí na angličtinu"
+  "about": "vlivu normanského dobytí na angličtinu",
+  "irony_prompt": "A grand banquet table dominates the frame, French-mannered Norman lords in fine robes cutting into a beautifully roasted joint of meat, while underneath the table a small pink pig peeks out looking utterly betrayed by what it's watching. Smaller and subordinate: silver banquet cutlery; a hunting dog waiting for scraps; candlelight. MOOD: wry, cleverly funny."
  },
  {
   "id": "gb-q-fishandchips",
@@ -482,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fish_and_chips",
   "source_card": "gb-jidlo-fishandchips",
   "image_prompt": "Fotorealistický snímek porce fish and chips zabalené v papíru, zlatavá ryba v těstíčku a hranolky, venkovní světlo, 16:9",
-  "about": "jídle fish and chips"
+  "about": "jídle fish and chips",
+  "irony_prompt": "A large golden battered fish fillet fills the frame, cut into a thick rectangular slab and resting beside a stack of golden chip sticks, wrapped loosely in paper on a seaside bench. Smaller and subordinate: a bottle of vinegar; a hovering seagull; a pier railing in the distance. MOOD: proud, cheerful."
  },
  {
   "id": "gb-q-haggis",
@@ -504,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Haggis",
   "source_card": "gb-jidlo-haggis",
   "image_prompt": "Fotorealistický snímek tradičního skotského jídla haggis s tuřínem a bramborami na rustikálním talíři, 16:9",
-  "about": "skotském haggisu"
+  "about": "skotském haggisu",
+  "irony_prompt": "A round plump haggis sits centre-frame on a wooden board, its casing bulging tight and glistening, steam rising as it's ceremonially sliced open to reveal its coarse oat-flecked filling. Smaller and subordinate: a small glass of whisky beside it; a set of bagpipes leaning against the wall; a sprig of thistle. MOOD: proud, ceremonial, slightly cheeky."
  },
  {
   "id": "gb-q-scones",
@@ -526,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cream_tea",
   "source_card": "gb-jidlo-scones",
   "image_prompt": "Fotorealistický snímek čerstvě upečených scones na dřevěné desce se smetanou a jahodovým džemem vedle, 16:9",
-  "about": "scones"
+  "about": "scones",
+  "irony_prompt": "A single round scone sits centre-frame split in half on a plate, one half topped jam-first then cream, the other topped cream-first then jam, with two tiny toy soldiers standing solemn guard over their respective halves as if defending sacred territory. Smaller and subordinate: a teapot nearby; a linen napkin; a spoon resting on the saucer. MOOD: playful, mock-serious."
  },
  {
   "id": "gb-q-magnacarta",
@@ -548,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
   "source_card": "gb-historie-magnacarta",
   "image_prompt": "Fotorealistický snímek středověkého pergamenu s pečetí na dřevěném stole s přirozeným světlem, historická atmosféra, 16:9",
-  "about": "Magně Cartě"
+  "about": "Magně Cartě",
+  "irony_prompt": "A medieval king's crown sits centre-frame on a velvet cushion with a single sturdy iron chain looped gently but firmly around it, resting atop a large unrolled parchment scroll covered only in wax seals, completely blank of any writing. Smaller and subordinate: a quill lying unused nearby; barons' shields lined up in the background; a candle. MOOD: solemn, quietly historic."
  },
  {
   "id": "gb-q-bitvaobritanii",
@@ -570,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
   "source_card": "gb-historie-bitvaobritanii",
   "image_prompt": "Fotorealistický snímek britského letounu Spitfire letícího nad dramatickou oblačností nad Anglií, historická atmosféra druhé světové války, 16:9",
-  "about": "Bitvě o Británii"
+  "about": "Bitvě o Británii",
+  "irony_prompt": "A lone fighter plane fills the frame banking sharply through dramatic storm clouds high above the white cliffs of a coastline, its wings glinting in weak sunlight. Smaller and subordinate: distant chalk cliffs below; a formation of birds; a wisp of vapor trail. MOOD: dramatic, solemn, not violent."
  },
  {
   "id": "gb-q-prumyslovarev",
@@ -592,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
   "source_card": "gb-historie-prumyslovarev",
   "image_prompt": "Fotorealistický snímek historické anglické textilní továrny s parními stroji, industriální atmosféra 19. století, 16:9",
-  "about": "průmyslové revoluci"
+  "about": "průmyslové revoluci",
+  "irony_prompt": "A single tall brick factory chimney dominates the frame billowing dark smoke over a landscape of small windmills and farmhouses that are visibly being replaced one by one by more chimneys stretching into the distance. Smaller and subordinate: a steam train passing below; a farmer watching from a hedge; a flock of sheep grazing nearby. MOOD: quietly momentous, historical."
  },
  {
   "id": "gb-k-autobus",
@@ -612,7 +638,8 @@
   "quip_correct": "Bravo, trefa! Červená, a jen červená — osm tisíc londýnských autobusů se v tom nikdy neodchýlí ani o odstín!",
   "quip_wrong": "Modrá, žlutá, zelená? Zkus to o barvu dál — londýnský autobus zná jen jednu a drží se jí už přes šedesát let.",
   "explanation": "Londýnské červené dvouposchoďové autobusy jezdí ulicemi města od roku 1956 a dnes jich je přes 8 000, takže tvoří jednu z největších flotil dvouposchoďáků na světě.",
-  "about": "londýnských červených autobusech"
+  "about": "londýnských červených autobusech",
+  "irony_prompt": "A bright red double-decker bus fills the frame trundling down a busy street, so vividly red that even the nearby postbox and phone booth seem to be checking their own shade against it for comparison. Smaller and subordinate: a black cab following behind; pigeons scattering; a string of plain colourful bunting overhead. MOOD: cheerful, kid-friendly."
  },
  {
   "id": "gb-k-nessie",
@@ -632,7 +659,8 @@
   "quip_correct": "Jsi bystrá hlava! Nikdo ji pořádně nevyfotil, a přesto ji zná celý svět — na to fakt nepotřebuješ důkaz.",
   "quip_wrong": "Skoro, ale ne tak úplně — chobotnice by v hlubinách Loch Ness působila fádně, tenhle slavný tvor má jméno, co zná celý svět.",
   "explanation": "Jezero Loch Ness je tak hluboké a tmavé, že se v něm špatně vidí — záhada Nessie přivádí do Skotska tisíce turistů každý rok, i když ji věda nikdy nepotvrdila.",
-  "about": "Lochneské příšeře"
+  "about": "Lochneské příšeře",
+  "irony_prompt": "A gentle long-necked creature peeks its head shyly above the dark still water of a misty loch, filling the frame, ripples spreading outward as tourists on the shore fumble excitedly with their cameras just a fraction too late. Smaller and subordinate: green hills around the loch; a rowboat nearby; a curious heron. MOOD: playful, mysterious, kid-friendly."
  },
  {
   "id": "gb-k-buckingham",
@@ -652,7 +680,8 @@
   "quip_correct": "Perfektní! 775 pokojů, a král si stejně jistě pamatuje cestu jen k pár z nich.",
   "quip_wrong": "Vedle o kus Londýna — král nesídlí ani u poslanců ve Westminsteru, ani mezi bývalými vězni v Toweru, ale ve svém vlastním paláci.",
   "explanation": "Buckinghamský palác má 775 místností a vlastní velkou zahradu, kde panovník pořádá zahradní slavnosti pro tisíce pozvaných hostů.",
-  "about": "Buckinghamském paláci"
+  "about": "Buckinghamském paláci",
+  "irony_prompt": "A grand palace with countless identical windows fills the frame, and a tiny figure of a king stands looking utterly lost holding a rolled floor-plan, clearly still unsure which door leads where after all these years. Smaller and subordinate: manicured garden hedges; a guard at the gate; a corgi trotting past. MOOD: playful, warm, kid-friendly."
  },
  {
   "id": "gb-k-fotbal-vznik",
@@ -672,7 +701,8 @@
   "quip_correct": "Anglie, přesně! Pravidla sepsali v roce 1863, a od té doby si je s drobnými úpravami vypůjčuje celý svět.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — Brazílie fotbal proslavila góly, ne pravidly, ta vznikla o desítky let dřív a jinde.",
   "explanation": "Fotbalový svaz Football Association vznikl v Londýně v roce 1863 a sepsal první standardní pravidla, která jsou dodnes základem moderního fotbalu po celém světě.",
-  "about": "vzniku fotbalu v Anglii"
+  "about": "vzniku fotbalu v Anglii",
+  "irony_prompt": "An old leather football sits centre-frame on a grassy pitch beside a stack of countless modern footballs of every colour and design from around the world, all clearly descended from this single humble original. Smaller and subordinate: an old wooden goalpost; a referee's whistle; muddy boot prints. MOOD: proud, kid-friendly."
  },
  {
   "id": "gb-k-jednorozec",
@@ -693,7 +723,8 @@
   "quip_wrong": "Myslel sis draka nebo fénixe? Skotský erb patří tvorovi s jediným rohem na čele, ne ohnivému ptákovi ani plazovi.",
   "explanation": "Skotové si jednorožce zvolili pro jeho nespoutanost a sílu — věřili, že ho nikdo nedokáže přemoci. Na skotském královském erbu ho drží na řetězu, aby nenapadl lva anglického.",
   "about": "skotském národním symbolu jednorožci",
-  "image_prompt": "A majestic mythical unicorn standing proud in front of misty Scottish mountains, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A majestic mythical unicorn standing proud in front of misty Scottish mountains, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A proud white unicorn with a single spiralling horn rears up centre-frame against misty Scottish mountains, a light chain draped decoratively around its neck as tradition demands, looking far more dignified than restrained. Smaller and subordinate: heather on the hillside; a soaring eagle; distant castle turrets. MOOD: majestic, magical, kid-friendly."
  },
  {
   "id": "gb-k-schranka",
@@ -714,7 +745,8 @@
   "quip_wrong": "Ne tak docela — modrá, žlutá, zelená jsou hezké barvy, jen ne britské. Tahle schránka svítí do dálky přesně jedním odstínem.",
   "explanation": "Původně byly schránky zelené, ale lidé do nich v noci naráželi. Přetřeli je na červenou — a zároveň vznikla jedna z nejznámějších vizuálních identit Británie.",
   "about": "červených britských poštovních schránkách",
-  "image_prompt": "A classic bright red British post box standing on a rainy London sidewalk, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A classic bright red British post box standing on a rainy London sidewalk, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A classic cylindrical red post box fills the frame standing proudly on a rainy pavement, its bright paint gleaming so vividly under the grey sky that it seems to be the only spot of colour in sight. Smaller and subordinate: raindrops on the pavement; a passing red bus blurred in the background; a pigeon sheltering underneath. MOOD: cheerful despite the rain, kid-friendly."
  },
  {
   "id": "gb-k-kilt",
@@ -735,7 +767,8 @@
   "quip_wrong": "Ne tak úplně — tógu ani kimono bys ve Skotsku nenašel, ptej se po kostkované sukni, co má svoje vlastní jméno.",
   "explanation": "Každý skotský rod neboli klan má na kiltu svůj vlastní vzor a kombinaci barev zvanou tartan. Vzorů je přes 7000 a každý klan si svůj chrání jako rodinný erb.",
   "about": "skotském tradičním kiltu",
-  "image_prompt": "A Scottish bagpiper wearing a traditional tartan kilt performing at a highland festival, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A Scottish bagpiper wearing a traditional tartan kilt performing at a highland festival, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A cheerful bagpiper in a bold tartan kilt strides centre-frame across a grassy hillside, the pleated fabric swinging rhythmically with each confident step in time with his playing. Smaller and subordinate: a distant castle on a hill; sheep grazing nearby; puffy white clouds. MOOD: proud, musical, kid-friendly."
  },
  {
   "id": "gb-k-caj-mleko",
@@ -756,7 +789,8 @@
   "quip_wrong": "Pomerančový džus v šálku čaje? To by leckterého Brita vyděsilo — sáhnou po něčem mnohem prostším, po mléku.",
   "explanation": "Tradice přilévání mléka vznikla proto, že studené mléko ochladilo čaj a zabránilo prasknutí jemných porcelánových šálků. Dnes Britové vypijí přes 100 milionů šálků čaje denně.",
   "about": "britském zvyku pití čaje s mlékem",
-  "image_prompt": "A steaming cup of English tea with a splash of milk being poured in, cozy afternoon setting, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A steaming cup of English tea with a splash of milk being poured in, cozy afternoon setting, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A small jug of milk pours a graceful white swirl into a round steaming cup of dark tea, filling the frame, the two liquids blending into a warm caramel colour mid-pour. Smaller and subordinate: a plate of round biscuits nearby; a china teapot; a cosy armchair in the background. MOOD: cozy, kid-friendly."
  },
  {
   "id": "gb-k-straz-cepice",
@@ -777,7 +811,8 @@
   "quip_wrong": "Napadlo by tě, že takovou parádu udělá ptačí peří nebo ovčí vlna? Sáhni jinam — ta vysoká čepice je z medvědí kůže.",
   "explanation": "Vysoké čepice z medvědí kožešiny měly v minulosti opticky zvětšit vojáky a nahnat strach nepřátelům na bitevním poli. Dnes jsou součástí ceremoniálního oblečení a váží přes 700 gramů.",
   "about": "čepicích britské královské stráže",
-  "image_prompt": "A British Royal Guard standing at attention in red uniform and tall black bearskin hat outside Buckingham Palace, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A British Royal Guard standing at attention in red uniform and tall black bearskin hat outside Buckingham Palace, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A tall furry black bearskin hat fills the frame perched perfectly straight on the head of an unmoving guard in a red tunic, not a single hair out of place despite a mischievous pigeon perched right on top of it. Smaller and subordinate: palace railings behind; a tourist snapping a photo; cobblestones underfoot. MOOD: playful, kid-friendly."
  },
  {
   "id": "gb-k-excalibur",
@@ -798,7 +833,8 @@
   "quip_wrong": "Skoro, ale ne tenhle meč — Excalibur je správná odpověď: Durandal i Hrunting patří úplně jiným legendám, ne meči, co čekal zaklíněný v kameni.",
   "explanation": "Podle legendy mohl meč z kamene vytáhnout pouze ten, kdo se měl stát spravedlivým vládcem celé Británie. Příběhy o králi Artušovi se převypráví od 12. století dodnes.",
   "about": "legendárním meči Excalibur",
-  "image_prompt": "A glowing magical sword stuck in an ancient stone in an enchanted British forest, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A glowing magical sword stuck in an ancient stone in an enchanted British forest, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A gleaming magical sword stands upright, wedged deep into a moss-covered boulder, filling the frame with a faint golden glow, in an enchanted misty forest clearing. Smaller and subordinate: a young hopeful figure reaching toward the hilt; ferns around the base; a shaft of light through the trees. MOOD: magical, wondrous, kid-friendly."
  },
  {
   "id": "gb-k-mind-the-gap",
@@ -819,7 +855,8 @@
   "quip_wrong": "Ne tak docela - jídlo, hlasitost ani batoh tahle hláška vůbec neřeší. Varuje tě před mezerou mezi vlakem a nástupištěm.",
   "explanation": "Tahle slavná hláška se v londýnském metru nepřetržitě ozývá od roku 1969, a Londýňané ji tak milují, že se prodává na tričkách i hrncích.",
   "about": "hlášce Mind the gap v londýnském metru",
-  "image_prompt": "A yellow caution line on a London Underground platform with Mind the Gap warning, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A yellow caution line on a London Underground platform with Mind the Gap warning, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A single bright yellow-and-black striped gap gapes dramatically between a train carriage and the platform edge, filling the frame, with a cartoonishly oversized shoe frozen mid-step just before nearly tumbling into it. Smaller and subordinate: a station clock; commuters waiting patiently; pigeons on the platform. MOOD: playful, cautionary, kid-friendly."
  },
  {
   "id": "gb-k-curling",
@@ -840,7 +877,8 @@
   "quip_wrong": "Blízko, ale ne přesně — hokej ani bobování se s košťaty nezahazují, ten sport s kamenem na ledě má úplně jiné jméno.",
   "explanation": "Curling vznikl ve Skotsku v 16. století. Těžké leštěné kameny se vyrábějí ze speciální žuly, která se těží výhradně na malém skotském ostrově Ailsa Craig.",
   "about": "skotském zimním sportu curlingu",
-  "image_prompt": "A granite curling stone sliding on smooth ice with players sweeping in front, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A granite curling stone sliding on smooth ice with players sweeping in front, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A large polished granite curling stone glides dramatically across gleaming ice, filling the frame, with two intensely focused players sweeping furiously in front of it with brooms as if their lives depended on it. Smaller and subordinate: a quiet rink in the background; spectators bundled in scarves; chalk circles on the ice. MOOD: comic, intensely focused, kid-friendly."
  },
  {
   "id": "gb-t-dover-utesy",
@@ -860,7 +898,8 @@
   "quip_wrong": "Elegantní domněnka, bohužel pomýlená — žula ani mramor takovou bělobu nedají, za útesy stojí měkčí a mnohem drobnější materiál.",
   "explanation": "Útesy podléhají neustálé erozi — mořské vlny z nich každý rok odrolí přibližně 1–3 centimetry. Přesto jsou stále viditelné z francouzského pobřeží pouhých 34 km vzdáleného.",
   "about": "bílých křídových útesech u Doveru",
-  "image_prompt": "Dramatic white chalk cliffs of Dover rising above the blue-green sea on a sunny day, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "Dramatic white chalk cliffs of Dover rising above the blue-green sea on a sunny day, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "Towering white chalk cliffs dominate the frame rising sheer from a blue-green sea, their bright surface made of countless microscopic ancient sea shells compressed together over millions of years. Smaller and subordinate: seabirds nesting on ledges; a small boat below; grassy clifftop in view. MOOD: majestic, quietly ancient."
  },
  {
   "id": "gb-t-big-ben-zvon",
@@ -880,7 +919,8 @@
   "quip_wrong": "Blízko! Big Ben totiž neoznačuje celou věž, jen jejího hlučného obyvatele.",
   "explanation": "Zvon byl pojmenován pravděpodobně po Siru Benjaminu Hallovi, korpulentním stavebním komisaři, který na instalaci dohlížel v roce 1859. Váží přes 13 tun.",
   "about": "londýnském zvonu Big Ben",
-  "image_prompt": "The Elizabeth Tower of Westminster Palace at dusk with Big Ben clock face illuminated, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "The Elizabeth Tower of Westminster Palace at dusk with Big Ben clock face illuminated, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A single enormous bronze bell fills the frame inside a gothic clock tower, clearly the true owner of the famous nickname, while the tall stone tower around it stands somewhat overlooked in the background despite being what everyone photographs. Smaller and subordinate: pigeons on the tower ledge; gears of the clock mechanism; London rooftops below. MOOD: quietly clever, proud."
  },
  {
   "id": "gb-t-sherlock-adresa",
@@ -900,7 +940,8 @@
   "quip_wrong": "Důmyslná domněnka, ale mylná — detektiv byl smyšlený, adresa taky, než ji Londýn dodatečně vytvořil kvůli fanouškům.",
   "explanation": "Až při pozdějším prodloužení ulice číslo 221 skutečně vzniklo. Banka, která tam pak sídlila, musela najmout sekretářku jen na vyřizování dopisů adresovaných Holmesovi.",
   "about": "adrese Sherlocka Holmese 221B Baker Street",
-  "image_prompt": "A Victorian street scene with a door numbered 221B on Baker Street under gaslit lamp, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A Victorian street scene with a door numbered 221B on Baker Street under gaslit lamp, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A gaslit Victorian street corner fills the frame with a single door bearing a shiny brass number plaque, standing confidently at an address that, according to old maps pinned nearby, simply never existed until fans demanded it. Smaller and subordinate: a magnifying glass resting on a windowsill; a deerstalker hat on a hook; foggy cobblestones. MOOD: quietly clever, atmospheric."
  },
  {
   "id": "gb-t-sandwich-puvod",
@@ -920,7 +961,8 @@
   "quip_wrong": "Šikovná domněnka, přesto vedle — lov ani úspora příborů za tím nestojí, hrabě prostě nechtěl pustit karty z ruky.",
   "explanation": "John Montagu, 4. hrabě ze Sandwich, dokázal u karbaního stolu prohrát celé jmění, ale dal světu celosvětově oblíbený pokrm. Dnes ho jeho jménem pojmenovávají lidé ve sto zemích.",
   "about": "původu sendviče",
-  "image_prompt": "An 18th-century English aristocrat playing cards at a candlelit table while holding a meat sandwich, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "An 18th-century English aristocrat playing cards at a candlelit table while holding a meat sandwich, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "An 18th-century gentleman sits centre-frame at a candlelit card table, one hand holding a fan of playing cards close to his chest, the other casually eating a layered meat sandwich cut into a thick rectangular slab without ever looking away from his hand. Smaller and subordinate: scattered coins and chips on the table; a glass of port; a clock striking late. MOOD: wry, quietly clever."
  },
  {
   "id": "gb-t-banksy-sablony",
@@ -940,7 +982,8 @@
   "quip_wrong": "Logika sedí, fakta ne tentokrát — počasí ani nešikovnost Banksyho netrápí, spěchá kvůli tomu, co dělá v noci na cizí zdi.",
   "explanation": "Identita Banksyho zůstává dodnes neznámá, přestože jeho díla mají hodnotu milionů liber. Londýn jeho graffiti občas přetírá, občas chrání plotem jako turistickou atrakci.",
   "about": "pouličním umělci Banksym",
-  "image_prompt": "A shadowed graffiti artist spray painting a stencil on a brick wall at night in Bristol, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A shadowed graffiti artist spray painting a stencil on a brick wall at night in Bristol, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A shadowy figure sprays a stencil onto a brick wall at night, filling the frame in a single swift motion, already glancing over one shoulder toward a distant torch beam approaching down the alley. Smaller and subordinate: a spray can rolling on the ground; a folded stencil sheet tucked under one arm; a startled cat darting away. MOOD: sly, atmospheric, cinematic."
  },
  {
   "id": "gb-t-pozar-londyna",
@@ -960,7 +1003,8 @@
   "quip_wrong": "Tvořivá představa, bohužel mylná — hadi ani ohňostroj v tom nehledej, požár měl nečekaně blahodárný vedlejší účinek na zdraví Londýňanů.",
   "explanation": "Rok před požárem zabila morová epidemie v Londýně přes 100 000 lidí. Požár město desinfikoval a mor se již nevrátil. Ze 13 000 shořelých domů však museli lidé odejít bez náhrady.",
   "about": "velkém požáru Londýna",
-  "image_prompt": "Historical scene of London burning in 1666 with silhouettes of wooden buildings against bright orange fire and the Thames river, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "Historical scene of London burning in 1666 with silhouettes of wooden buildings against bright orange fire and the Thames river, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "Flames engulf a row of wooden houses along a narrow street, filling the frame with dramatic orange light reflecting off a nearby river, while tiny figures hurry to safety carrying only bundles of belongings. Smaller and subordinate: a bucket brigade passing water; smoke curling into the night sky; a church spire silhouetted against the blaze. MOOD: dramatic, historic, not gruesome."
  },
  {
   "id": "gb-t-waleska-vesnice",
@@ -980,7 +1024,8 @@
   "quip_wrong": "Poutavá teorie, ale mylná — žádné dávné sloučení vesnic ani trest, za rekordním jménem stojí obchodní nápad z 19. století.",
   "explanation": "Název v překladu znamená: 'Kostel svaté Marie v rolině bílého lískového oříšku blízko prudkého víru a kostela svatého Tysilia u červené jeskyně.' Název funguje — nádraží je turistická zastávka.",
   "about": "nejdelším waleském názvu vesnice",
-  "image_prompt": "An extremely long railway station name sign in a green Welsh landscape, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "An extremely long railway station name sign in a green Welsh landscape, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A tiny railway station platform fills the frame with a single impossibly long board stretching nearly the platform's entire length, propped up like an oversized ruler, dwarfing the small train waiting beside it. Smaller and subordinate: green Welsh hills in the background; a sheep grazing by the tracks; a bemused tourist walking the board's full length. MOOD: playful, absurd."
  },
  {
   "id": "gb-t-wimbledon-jahody",
@@ -1000,7 +1045,8 @@
   "quip_wrong": "Chytrý pokus, bohužel vedle — ostatní lesní plody nemají šanci, tenhle turnaj má svého jasného favorita.",
   "explanation": "Během dvou týdnů turnaje diváci sní přes 140 000 porcí jahod nasbíraných tentýž den ráno. Tradice sahá až do 19. století a je součástí wimbledonského zážitku stejně jako tráva na kurtu.",
   "about": "wimbledonské tradici jahod se smetanou",
-  "image_prompt": "A bowl of fresh red strawberries with cream at a sunny Wimbledon tennis venue, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A bowl of fresh red strawberries with cream at a sunny Wimbledon tennis venue, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A large pyramid of fresh red strawberries towers dramatically over a small dish of cream, filling the frame courtside at a grass tennis venue, entirely dwarfing a tiny distant tennis match happening in the background. Smaller and subordinate: a linesman's chair; a straw boater hat; a wasp investigating. MOOD: proud, cheeky."
  },
  {
   "id": "gb-a-kralovske-labute",
@@ -1020,7 +1066,8 @@
   "quip_wrong": "Vynalézavý nápad, přesto mylný — poštu ani ekologii nech stranou, středověku šlo hlavně o to, co bude na talíři šlechty.",
   "explanation": "Dodnes se na Temži každoročně koná tradiční sčítání labutí zvané Swan Upping, kde zástupci koruny a dvou historických cechů kontrolují a značkují mláďata. Rituál trvá pět dní.",
   "about": "královském vlastnictví britských labutí",
-  "image_prompt": "A regal mute swan swimming on the Thames with Windsor Castle in background, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A regal mute swan swimming on the Thames with Windsor Castle in background, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A regal white swan glides serenely across calm water, filling the frame, wearing a tiny jewelled crown balanced improbably on its head as if formally declaring royal ownership. Smaller and subordinate: a castle silhouette on the far bank; ripples trailing behind; a cygnet following close. MOOD: elegant, quietly amusing."
  },
  {
   "id": "gb-a-city-of-london",
@@ -1040,7 +1087,8 @@
   "quip_wrong": "Zajímavý odhad, přesto vedle — žádné mince ani razítka, jde o starobylé gesto, které City of London dodnes chrání.",
   "explanation": "Lord starosta pak panovníkovi nabídne Perlový meč na znamení věrnosti. City of London má vlastní policii, vlastní vládu a svá pravidla — je to stát ve státě s historií sahající k normanské invazi.",
   "about": "zvláštním statusu čtvrti City of London",
-  "image_prompt": "The Lord Mayor of London in ceremonial robes offering a Pearl Sword at Temple Bar gate to the monarch, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "The Lord Mayor of London in ceremonial robes offering a Pearl Sword at Temple Bar gate to the monarch, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A crowned figure stands respectfully at an ornate old city gate, filling the frame, bowing slightly to accept a ceremonial sword offered by a robed official standing guard, as if awaiting formal permission to pass. Smaller and subordinate: a mounted guard nearby; old stone gate towers; a small crowd watching. MOOD: quietly funny, stately."
  },
  {
   "id": "gb-a-postovni-znamka",
@@ -1060,7 +1108,8 @@
   "quip_wrong": "Rozumná úvaha, přesto mylná — zákaz ani smlouva za tím nestojí, Británie si tuhle výsadu vydobyla prvenstvím, které nikdo nepřekoná.",
   "explanation": "Slavná první známka Penny Black z roku 1840 nesla jen profil královny Viktorie, což Britům jako označení zůstalo dodnes. Stejné pravidlo stále platí — na britských známkách je jen portrét panovníka.",
   "about": "britských poštovních známkách bez názvu země",
-  "image_prompt": "A classic Penny Black postage stamp from 1840 featuring profile of Queen Victoria, detailed painterly watercolor illustration, vintage journal style"
+  "image_prompt": "A classic Penny Black postage stamp from 1840 featuring profile of Queen Victoria, detailed painterly watercolor illustration, vintage journal style",
+  "irony_prompt": "A single antique postage stamp fills the frame in extreme close-up, its surface completely blank except for a simple royal profile silhouette, resting proudly beside a small pile of ordinary foreign stamps that look comparatively cluttered and busy. Smaller and subordinate: a magnifying glass; a stamp collector's tweezers; soft desk lamp light. MOOD: quietly proud, particular."
  },
  {
   "id": "gb-a-tikka-masala",
@@ -1080,7 +1129,8 @@
   "quip_wrong": "Půvabná představa, ale mylná — indický palác zapomeň, tenhle hit vznikl mnohem blíž, v obyčejné restauraci.",
   "explanation": "Britský ministr zahraničí Robin Cook prohlásil v roce 2001 Chicken Tikka Masalu za symbol moderní Británie — ukázku toho, jak země přijímá a přetváří zahraniční vlivy. V Británii je dnes více indických restaurací než ve většině indických měst.",
   "about": "původu pokrmu Chicken Tikka Masala",
-  "image_prompt": "A steaming bowl of Chicken Tikka Masala with naan bread in a Glasgow curry house, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A steaming bowl of Chicken Tikka Masala with naan bread in a Glasgow curry house, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A steaming bowl of golden-orange curry sauce coats tender lumps of chicken, filling the frame in a cosy restaurant setting, with a tin of ordinary tomato soup casually resting open beside the stove as its secret ingredient. Smaller and subordinate: a stack of warm flatbreads; a chef's spoon mid-stir; a checked tablecloth. MOOD: cozy, quietly clever."
  },
  {
   "id": "gb-a-kralovsky-prukaz",
@@ -1100,7 +1150,8 @@
   "quip_wrong": "Logicky uvažováno, ale vedle — neřeš dopravní úřady ani ústavu, jde o čistou právní logiku kolem toho, kdo tu autoritu vlastně uděluje.",
   "explanation": "Ze stejného důvodu panovník nevlastní ani britský cestovní pas — pasy se vydávají 've jménu Jeho/Jejího Veličenstva'. Královská auta navíc nemusejí mít poznávací značky.",
   "about": "královských právních výsadách",
-  "image_prompt": "A royal British car driving through the English countryside without a license plate, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "A royal British car driving through the English countryside without a license plate, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A gleaming vintage royal car cruises down a country lane, filling the frame with no number plate at all on its rear bumper, while a bemused traffic officer watches it pass without reaching for his ticket book. Smaller and subordinate: hedgerows lining the lane; a corgi in the back seat window; rolling countryside. MOOD: quietly amusing, proud."
  },
  {
   "id": "gb-a-valka-scilly",
@@ -1120,7 +1171,8 @@
   "quip_wrong": "Vtipná domněnka, přesto mylná — rybáři ani šachy v tom nefigurují, tahle 'válka' byla unikátní hlavně tím, co se v ní nikdy nestalo.",
   "explanation": "Když historik Roy Duncan v roce 1985 zkontroloval archivy, zjistil, že mír nebyl nikdy podepsán. Pozval holandského velvyslance na čaj na Scilly a formálně válku ukončili. Ostrované si pak ze srandy stěžovali, že přišli o bezpečnostní záruky.",
   "about": "335leté válce mezi Británií a Nizozemskem",
-  "image_prompt": "Peaceful sunny view of the Isles of Scilly with colorful boats in harbour and a tiny peace treaty document, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "Peaceful sunny view of the Isles of Scilly with colorful boats in harbour and a tiny peace treaty document, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "Two elderly diplomats in old-fashioned formal dress sit centre-frame calmly sharing a formal pot of tea at a garden table overlooking a peaceful sunny harbour, quietly signing a small peace document between sips, having somehow gone three centuries without ever needing to. Smaller and subordinate: colourful boats bobbing in the harbour; a gull on the railing; a plate of biscuits. MOOD: gently comic, peaceful."
  },
  {
   "id": "gb-a-syrove-kouleni",
@@ -1140,7 +1192,8 @@
   "quip_wrong": "Sympatický tip, ale ne tenhle — medaile ani pivo nečekej, vítěz sjíždí kopec za mnohem chutnější odměnou.",
   "explanation": "Koulející se sýr dosahuje na strmém svahu rychlosti až 110 km/h, takže ho závodníci prakticky nemohou chytit během běhu. Závod se koná od středověku a každý rok si několik účastníků zlomí nohu nebo kotník.",
   "about": "tradičním závodě v koulení sýra v Gloucestershiru",
-  "image_prompt": "People tumbling down a steep English hillside chasing a rolling wheel of cheese at Cooper's Hill, painterly watercolor gouache illustration, vintage travel journal style"
+  "image_prompt": "People tumbling down a steep English hillside chasing a rolling wheel of cheese at Cooper's Hill, painterly watercolor gouache illustration, vintage travel journal style",
+  "irony_prompt": "A large round wheel of cheese hurtles down an impossibly steep grassy hillside, filling the frame, with a tumble of runners chasing hopelessly behind it, several already sprawled comically on the slope. Smaller and subordinate: a cheering crowd at the bottom; a marshal with a flag; scattered wildflowers on the hill. MOOD: chaotic, comic, joyful."
  },
  {
   "id": "gb-k-havrani",
@@ -1161,7 +1214,8 @@
   "quip_wrong": "Ne tak úplně — žádný čtyřicetidenní déšť ani povodeň, legenda o havranech v Toweru slibuje koruně mnohem horší osud.",
   "explanation": "Tower of London chová nejméně šest havranů se zastřiženými křídly. Legenda pochází prý od krále Karla II. Dnes mají havrani vlastního ošetřovatele, který nese titul Ravenmaster a stará se i o jejich stravu.",
   "about": "havranech v Toweru of London",
-  "image_prompt": "A painterly watercolor illustration of a black raven perched on ancient stone battlements of the Tower of London with the Thames in the background, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a black raven perched on ancient stone battlements of the Tower of London with the Thames in the background, vintage travel journal style",
+  "irony_prompt": "Several glossy black ravens perch proudly along ancient stone battlements, filling the frame, one of them holding a single loose feather in its beak as if it's just decided, teasingly, whether or not to fly away. Smaller and subordinate: the Thames glinting below; a Beefeater guard glancing up nervously; a tower flag fluttering. MOOD: playful, slightly mischievous, kid-friendly."
  },
  {
   "id": "gb-t-guy-fawkes",
@@ -1182,7 +1236,8 @@
   "quip_wrong": "Kreativní nápad, ale vedle — Cromwell u toho nebyl a druidi taky ne, tahle noc patří chlapíkovi, co málem odpálil krále i s celým parlamentem.",
   "explanation": "Spiknutí střelného prachu se odehrálo v noci z 4. na 5. listopadu 1605. Fawkes byl chycen s výbušninami a popraven. Parlament pak schválil 5. listopadu jako den díkůvzdání za záchranu krále, a tradice ohňostrojů a pálení figurín přetrvala dodnes.",
   "about": "Spiknutí střelného prachu a Guyovi Fawkesovi",
-  "image_prompt": "A painterly watercolor illustration of a bonfire night scene with fireworks bursting in the dark sky and a burning Guy Fawkes effigy, crowds watching below, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a bonfire night scene with fireworks bursting in the dark sky and a burning Guy Fawkes effigy, crowds watching below, vintage travel journal style",
+  "irony_prompt": "A blazing bonfire dominates the frame against a dark night sky bursting with colourful fireworks, a straw effigy in an old-fashioned hat perched atop the flames, cheerful crowds bundled in scarves watching from a safe distance. Smaller and subordinate: sparklers held by children; a hot dog stall nearby; smoke drifting upward. MOOD: festive, warmly historical, not scary."
  },
  {
   "id": "gb-t-hadrianus-val",
@@ -1203,7 +1258,8 @@
   "quip_wrong": "Blízko, ale žádné bažiny ani silnice — Řím si tou zdí hlídal severní hranici říše.",
   "explanation": "Hadriánův val se táhne 117 km napříč severní Anglií a byl nejseverozápadnější pevnou hranicí Římské říše v Evropě. V době svého vrcholu byl složitý systém pevností, věží a bran s posádkou čítající tisíce vojáků.",
   "about": "Hadriánově valu",
-  "image_prompt": "A painterly watercolor illustration of ancient stone ruins of Hadrian's Wall winding across rolling green hills in northern England, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of ancient stone ruins of Hadrian's Wall winding across rolling green hills in northern England, vintage travel journal style",
+  "irony_prompt": "A long stone wall snakes across rolling green hills into the distance, filling the frame, with a small Roman guard standing watch at a turret squinting suspiciously toward the misty hills just beyond. Smaller and subordinate: a Roman standard planted nearby; sheep grazing along the wall; a hawk circling overhead. MOOD: solemn, quietly impressive."
  },
  {
   "id": "gb-a-turing",
@@ -1224,7 +1280,8 @@
   "quip_wrong": "Odvážná představa vděčnosti státu. Turingův osud byl mnohem krutější, než by si kdo přál.",
   "explanation": "Alan Turing byl posmrtně omilostněn královnou Alžbětou II. teprve v roce 2013 — 59 let po své smrti. Od roku 2021 je jeho portrét na britské bankovce 50 liber. Chemická kastrace způsobovala gynekomastii a úbytek libida; Turing zemřel s rozhryznutým jablkem nasyceným kyanidem po boku.",
   "about": "Alanu Turingovi",
-  "image_prompt": "A painterly watercolor illustration of a wartime mathematician surrounded by papers covered in code-breaking equations at a wooden desk with a single lamp, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a wartime mathematician surrounded by papers covered in code-breaking equations at a wooden desk with a single lamp, vintage travel journal style",
+  "irony_prompt": "A wartime mathematician sits centre-frame at a cluttered desk beneath a single lamp, surrounded by reels of tape and a large humming code-breaking machine, quietly deciphering a message that will end up shortening the entire war. Smaller and subordinate: a chess piece resting on the desk; a cup of cold tea; stacks of intercepted papers. MOOD: quietly poignant, respectful, not tragic in depiction."
  },
  {
   "id": "gb-a-darien",
@@ -1245,7 +1302,8 @@
   "quip_wrong": "Rozumná domněnka, ale mylná — blokáda ani Francie za tím nestojí, Skotsko do unie dohnala vlastní zkrachovalá kolonie.",
   "explanation": "Darienská výprava (1698–1700) chtěla získat kontrolu nad Panamskou šíjí a ovládnout světový obchod. Osada zahynula na tropické nemoci a španělský odpor; Anglie záměrně odmítla pomoci. Finanční pohroma vedla k Aktu o unii roku 1707, kde Anglie skotský dluh splatila.",
   "about": "Darienské výpravě a vzniku Velké Británie",
-  "image_prompt": "A painterly watercolor illustration of Scottish ships wrecked on a tropical shore with dense jungle, exhausted colonists gathered on the beach, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Scottish ships wrecked on a tropical shore with dense jungle, exhausted colonists gathered on the beach, vintage travel journal style",
+  "irony_prompt": "A handful of exhausted colonists sit slumped on a lush tropical shore beside the broken hull of a stranded ship, filling the frame, counting out their last few coins from an otherwise empty chest with rueful expressions. Smaller and subordinate: dense jungle looming behind them; a parrot watching from a branch; a torn sail draped over rocks. MOOD: rueful, quietly historic, not graphic."
  },
  {
   "id": "gb-k-london-eye",
@@ -1266,7 +1324,8 @@
   "quip_wrong": "Znějí ta ostatní jména londýnsky? Klidně, ale vyhlídkové kolo u Temže žádné z nich nenosí.",
   "explanation": "London Eye má 32 uzavřených kabin (jednu z nich raději neoznačují číslem 13) a jedna otočka trvá kolem 30 minut, takže se kolo prakticky nikdy úplně nezastavuje ani při nástupu cestujících.",
   "about": "vyhlídkovém kole London Eye",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a giant observation wheel beside a wide river with a city skyline glowing behind it"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a giant observation wheel beside a wide river with a city skyline glowing behind it",
+  "irony_prompt": "A giant observation wheel dominates the frame beside a wide glinting river, its glass capsules slowly rising like a string of soap bubbles against a glowing city skyline. Smaller and subordinate: a small tour boat passing below; seagulls circling; a cheerful family waving from a capsule. MOOD: cheerful, kid-friendly."
  },
  {
   "id": "gb-t-union-jack-wales",
@@ -1287,7 +1346,8 @@
   "quip_wrong": "Nesedí to tentokrát — Skotsko i Irsko svůj kříž na vlajce mají, hledej zemi, která na Union Jacku chybí úplně.",
   "explanation": "Union Jack vznikl spojením kříže svatého Jiří (Anglie), svatého Ondřeje (Skotsko) a svatého Patrika (Irsko) — Wales byl v roce 1801, kdy vlajka vznikla, už dávno součástí Anglického království, takže vlastní kříž nedostal.",
   "about": "britské vlajce Union Jack",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a large national flag with overlapping crosses waving against a cloudy sky"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a large national flag with overlapping crosses waving against a cloudy sky",
+  "irony_prompt": "A large national flag with overlapping red and white crosses on a deep blue background fills the frame, rippling proudly on a tall flagpole, while just below it a small red dragon sits looking rather left out, holding its own tiny green-and-white pennant that clearly doesn't match. Smaller and subordinate: castle battlements below; a cloudy sky; a curious sheep grazing nearby. MOOD: wry, gently sympathetic."
  },
  {
   "id": "gb-t-metro-prvni",
@@ -1308,7 +1368,8 @@
   "quip_wrong": "Chytrý odhad, ale ne tenhle — elektrika ani konkurence odjinud z Evropy tu nehraje roli, jde o čisté prvenství v celosvětovém měřítku.",
   "explanation": "První linka metra, Metropolitan Railway, vozila cestující v dřevěných vagonech tažených parními lokomotivami — tunely proto potřebovaly větrací šachty, aby se kouř měl kam ztrácet.",
   "about": "vzniku londýnského metra",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a vintage steam train emerging from a brick tunnel at an old underground station platform"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a vintage steam train emerging from a brick tunnel at an old underground station platform",
+  "irony_prompt": "A vintage steam locomotive emerges dramatically from a brick tunnel into an old underground station platform, filling the frame with a cloud of white steam, while curious onlookers in Victorian dress marvel at the entirely new idea of traveling beneath the streets. Smaller and subordinate: gas lamps along the platform; a station clock; a pigeon startled by the noise. MOOD: quietly momentous, historic."
  },
  {
   "id": "gb-a-taxi-knowledge",
@@ -1329,7 +1390,8 @@
   "quip_wrong": "Uvažoval jsi správným směrem, ale ne tentokrát — řidičák, kurz angličtiny ani doporučení kolegů zkoušku nenahradí, Knowledge chce vědět, jestli máš celé město v hlavě.",
   "explanation": "Zkouška zvaná The Knowledge trvá uchazečům v průměru tři až čtyři roky přípravy a u londýnských taxikářů, kteří jí prošli, naměřili neurovědci zvětšenou zadní část hipokampu — část mozku zodpovědnou za prostorovou paměť.",
   "about": "zkoušce The Knowledge londýnských taxikářů",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a black cab driver studying a large paper street map by lamplight"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a black cab driver studying a large paper street map by lamplight",
+  "irony_prompt": "A black cab driver fills the frame sitting on a moped, his head glowing faintly from within with a visible tangle of countless tiny glowing streets and lanes, like a city-sized maze memorized entirely inside his skull. Smaller and subordinate: a black taxi parked nearby; a notebook closed on the seat; London rooftops in the distance. MOOD: quietly impressive, whimsical."
  },
  {
   "id": "gb-k-robinhood",
@@ -1350,7 +1412,8 @@
   "quip_wrong": "Epping, Nový les i Dean jsou pěkné anglické lesy, ale Robinu Hoodovi žádný z nich nepatří — ten má svůj vlastní, mnohem slavnější.",
   "explanation": "Robin Hood je jen legenda, ale strom zvaný Majorův dub (Major Oak) v Sherwoodském lese je skutečný — je mu přes 800 let a podle pověsti se pod ním prý Robin se svou družinou scházel.",
   "about": "legendě o Robinu Hoodovi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a massive ancient oak tree deep in a green English forest, dappled sunlight"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a massive ancient oak tree deep in a green English forest, dappled sunlight",
+  "irony_prompt": "A massive ancient oak tree dominates the frame deep in a green English forest, dappled sunlight filtering through its huge canopy, with a single arrow still stuck quivering in its thick trunk from a shot fired moments ago. Smaller and subordinate: a longbow leaning against the roots; a deer watching from the undergrowth; fallen autumn leaves. MOOD: adventurous, kid-friendly, not violent."
  },
  {
   "id": "gb-t-kingscross",
@@ -1371,7 +1434,8 @@
   "quip_wrong": "Skoro, ale ne tahle stanice — Paddington má medvídka, ne kouzelnický vlak, zkus nádraží o pár stanic dál.",
   "explanation": "Nástupiště 9¾ je čistě fiktivní, ale King's Cross tam pro fanoušky nechal nainstalovat skutečný vozík zapůl zaražený do zdi a vedle otevřel suvenýrový obchod, který ročně navštíví přes milion lidí.",
   "about": "nástupišti 9¾ na King's Cross",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a luggage trolley half-vanished into a brick station wall, crowds queuing nearby"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a luggage trolley half-vanished into a brick station wall, crowds queuing nearby",
+  "irony_prompt": "A luggage trolley appears half-vanished into a solid brick station wall, filling the frame, its back wheels still visibly spinning as if it just passed straight through moments ago. Smaller and subordinate: a queue of excited tourists waiting to pose; a station clock; pigeons on the platform roof. MOOD: magical, playful, kid-friendly."
  },
  {
   "id": "gb-t-wembley-oblouk",
@@ -1392,7 +1456,8 @@
   "quip_wrong": "Pěkný pokus, ale ne tahle stavba — kopule, věž, sloupořadí, Wembley na nic z toho nevsadilo, drží se jednoho obřího oblouku.",
   "explanation": "Oblouk je nejdelší jednorozponnou konstrukcí na světě a nese většinu váhy střechy, díky čemuž stadion uvnitř nepotřebuje žádné nosné sloupy, které by divákům bránily ve výhledu.",
   "about": "oblouku stadionu Wembley",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a massive steel arch rising over a football stadium against a London skyline"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a massive steel arch rising over a football stadium against a London skyline",
+  "irony_prompt": "A massive steel arch rises dramatically over a football stadium, dominating the frame and the London skyline behind it, so tall that a small aeroplane passing overhead looks tiny by comparison. Smaller and subordinate: floodlight towers below; a distant crowd streaming toward the entrance; a football rolling on the pitch inside. MOOD: grand, proud."
  },
  {
   "id": "gb-a-necropolis",
@@ -1413,7 +1478,8 @@
   "quip_wrong": "Malebná představa, přesto mylná — noční jízda beze světel, propustka od biskupa, veřejné vážení, vlak mrtvých měl mnohem prozaičtější třídní systém.",
   "explanation": "Trať vznikla po přeplnění londýnských hřbitovů během cholerových epidemií 40. let 19. století a jezdila až do roku 1941, kdy nádražní zastávku na Waterloo zničilo bombardování za druhé světové války.",
   "about": "vlaku mrtvých Necropolis Railway",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a foggy Victorian railway platform with a hearse carriage and mourners in dark coats"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a foggy Victorian railway platform with a hearse carriage and mourners in dark coats",
+  "irony_prompt": "A foggy Victorian railway platform fills the frame with a solemn black funeral carriage waiting quietly at the buffers, three different carriage doors marked only by different fabric quality — plain wood, polished brass, and velvet-lined — hinting at the different classes within. Smaller and subordinate: mourners in dark coats and veils; a lantern glowing softly; wisps of steam. MOOD: solemn, respectful, quietly wry."
  },
  {
   "id": "gb-k-highland-kravy",
@@ -1435,7 +1501,8 @@
   "explanation": "Jejich dlouhá ofina přes oči prý chrání kravky před mušími a hmyzem i mrazivým větrem ve vysočině.",
   "source_url": "https://en.wikipedia.org/wiki/Highland_cattle",
   "image_prompt": "Fotorealistický snímek chlupaté rezavé skotské krávy plemene Highland s dlouhými rohy a hustou ofinou, pasoucí se na mlhavé horské louce ve skotské vysočině, 16:9",
-  "about": "skotské huňaté krávě Highland"
+  "about": "skotské huňaté krávě Highland",
+  "irony_prompt": "A shaggy ginger Highland cow with a huge fringe of hair covering its eyes stands centre-frame on a misty mountain meadow, long curved horns silhouetted against the fog, looking utterly unbothered by not being able to see a thing. Smaller and subordinate: heather on the hillside; a distant loch; a curious sheep nearby. MOOD: gentle, funny, kid-friendly."
  },
  {
   "id": "gb-k-cervenka-vanocni",
@@ -1457,7 +1524,8 @@
   "explanation": "Červenky jsou navzdory svému roztomilému vzhledu velmi bojovné a tvrdě si hlídají své teritorium i proti jiným červenkám.",
   "source_url": "https://en.wikipedia.org/wiki/European_robin",
   "image_prompt": "Fotorealistický snímek malé červenky obecné s jasně oranžově červenou hrudí sedící na zasněžené větvi v britské zahradě v zimě, 16:9",
-  "about": "britské července, oblíbeném vánočním ptáčkovi"
+  "about": "britské července, oblíbeném vánočním ptáčkovi",
+  "irony_prompt": "A small plump robin with a bright orange-red breast perches centre-frame on a snow-dusted branch, puffed up proudly against the winter cold, its chest seeming to glow like a tiny warm ember against the white snow. Smaller and subordinate: holly berries nearby; falling snowflakes; a garden fence in the background. MOOD: cozy, festive, kid-friendly."
  },
  {
   "id": "gb-k-windsor-hrad",
@@ -1479,7 +1547,8 @@
   "explanation": "Windsorský hrad má vlastní kapli svatého Jiří, kde se konají královské svatby i pohřby.",
   "source_url": "https://en.wikipedia.org/wiki/Windsor_Castle",
   "image_prompt": "Fotorealistický snímek majestátního Windsorského hradu s kamennými věžemi a vlajkou na kulaté věži za slunečného dne, 16:9",
-  "about": "Windsorském hradu"
+  "about": "Windsorském hradu",
+  "irony_prompt": "A massive stone castle with round towers and battlements dominates the frame under a bright sky, its flag fluttering above while a small removal van with tiny weekend suitcases waits humbly at a side entrance. Smaller and subordinate: manicured lawns; a guard at the gate; swans on a nearby lake. MOOD: grand, gently amusing, kid-friendly."
  },
  {
   "id": "gb-k-yorkshirsky-pudink",
@@ -1501,7 +1570,8 @@
   "explanation": "Peče se ze stejného těsta jako palačinky, jen se místo na pánvi peče v troubě, kde vykyne do vysokých bochníčků.",
   "source_url": "https://en.wikipedia.org/wiki/Yorkshire_pudding",
   "image_prompt": "Fotorealistický snímek zlatavě upečených nadýchaných yorkshirských pudinků na talíři vedle plátků pečeného hovězího masa a omáčky, 16:9",
-  "about": "yorkshirském pudinku"
+  "about": "yorkshirském pudinku",
+  "irony_prompt": "A tall round Yorkshire pudding puffed up like a hollow crown sits centre-frame fresh from the oven beside slices of roast beef and gravy, steam still rising from its crisp risen sides. Smaller and subordinate: a gravy boat nearby; roast potatoes on the plate; a fork resting on the tablecloth. MOOD: cozy, homely, kid-friendly."
  },
  {
   "id": "gb-k-vanocni-crackery",
@@ -1523,7 +1593,8 @@
   "explanation": "Vynalezl je v 19. století cukrář Tom Smith, kterého k tomu prý inspiroval praskot dřeva v krbu.",
   "source_url": "https://en.wikipedia.org/wiki/Christmas_cracker",
   "image_prompt": "Fotorealistický snímek barevných vánočních crackerů na slavnostně prostřeném vánočním stole s papírovými korunkami vedle talířů, 16:9",
-  "about": "vánočním crackeru"
+  "about": "vánočním crackeru",
+  "irony_prompt": "A row of colourful paper Christmas crackers lies centre-frame across a festive table, one already pulled apart with a small paper crown and trinket spilling out mid-pop, tiny sparks of confetti frozen in the air. Smaller and subordinate: mince pies on a nearby plate; candlelight; holly sprigs. MOOD: festive, joyful, kid-friendly."
  },
  {
   "id": "gb-k-kriket-anglie",
@@ -1545,7 +1616,8 @@
   "explanation": "Díky bývalému britskému impériu je dnes kriket obrovsky populární hlavně v Indii, Pákistánu a Austrálii.",
   "source_url": "https://en.wikipedia.org/wiki/Cricket",
   "image_prompt": "Fotorealistický snímek hráče kriketu v bílém dresu odpalujícího pálkou míček na hřišti před dřevěnými brankami wickets, 16:9",
-  "about": "anglickém sportu kriketu"
+  "about": "anglickém sportu kriketu",
+  "irony_prompt": "A cricket batsman in white kit stands centre-frame mid-swing before a set of wooden wickets, while behind him looms a giant hourglass, its sand falling so slowly it barely seems to move at all. Smaller and subordinate: fielders scattered across the green; a red ball mid-air; a quiet pavilion in the distance. MOOD: relaxed, whimsical, kid-friendly."
  },
  {
   "id": "gb-t-zavod-osmiverek",
@@ -1567,7 +1639,8 @@
   "explanation": "Závod se poprvé konal v roce 1829 a dnes ho živě sleduje u řeky i v televizi několik milionů lidí.",
   "source_url": "https://en.wikipedia.org/wiki/The_Boat_Race",
   "image_prompt": "Fotorealistický snímek dvou osmiveslic s veslaři v akci závodících po řece Temži v Londýně, sledovaných davem na břehu, 16:9",
-  "about": "veslařském závodě Oxfordu s Cambridge"
+  "about": "veslařském závodě Oxfordu s Cambridge",
+  "irony_prompt": "Two long slender rowing eights slice through the water side by side, filling the frame with perfectly synchronized oars flashing in unison, wakes crossing behind them on a wide river. Smaller and subordinate: crowds cheering from the riverbank; a launch boat following with a coach; a bridge arching overhead. MOOD: intense, competitive, proud."
  },
  {
   "id": "gb-k-velsska-vlajka-drak",
@@ -1589,6 +1662,7 @@
   "explanation": "Waleská vlajka patří mezi nejstarší dosud používané národní vlajky na světě, symbol draka se datuje už do doby před více než tisíci lety.",
   "source_url": "https://en.wikipedia.org/wiki/Flag_of_Wales",
   "image_prompt": "Fotorealistický snímek vlající waleské vlajky s červeným drakem na zeleno-bílém pozadí proti modré obloze, 16:9",
-  "about": "waleské vlajce s červeným drakem"
+  "about": "waleské vlajce s červeným drakem",
+  "irony_prompt": "A fierce red dragon fills the frame standing proudly on a flag with a green lower half and white upper half, wings spread wide as if guarding the whole banner by itself. Smaller and subordinate: rolling green Welsh hills behind; a castle silhouette; a soaring red kite bird. MOOD: proud, majestic, kid-friendly."
  }
 ]

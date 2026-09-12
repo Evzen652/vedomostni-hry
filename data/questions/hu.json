@@ -19,7 +19,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Budape%C5%A1%C5%A5",
   "source_card": "hu-mista-budapest",
   "image_prompt": "Fotorealistický širokoúhlý snímek Budapešti při západu slunce, Řetězový most přes Dunaj, budova Parlamentu na břehu, 16:9",
-  "about": "Budapešti"
+  "about": "Budapešti",
+  "irony_prompt": "Three small distinct old towns are shown fusing together into one seamless city skyline along a wide river, filling the frame, their rooftops and church spires blending mid-transformation like a slow-motion collage. Smaller and subordinate: a bridge spanning the river; a tram crossing; river reflections. MOOD: quietly momentous, proud."
  },
  {
   "id": "hu-q-balaton",
@@ -41,7 +42,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Balaton",
   "source_card": "hu-mista-balaton",
   "image_prompt": "Fotorealistický širokoúhlý snímek jezera Balaton při západu slunce, klidná vodní hladina, vinice na svazích v pozadí, 16:9",
-  "about": "jezeru Balaton"
+  "about": "jezeru Balaton",
+  "irony_prompt": "A vast lake fills the frame stretching to the horizon like an inland sea, complete with a small sailboat and gentle waves, while a single confused seagull hovers overhead looking for the ocean that clearly isn't there. Smaller and subordinate: vineyards on distant hills; a lighthouse-shaped marker; a swimmer far offshore. MOOD: playful, proud."
  },
  {
   "id": "hu-q-debrecin",
@@ -63,7 +65,8 @@
   "source_url": "https://www.radynacestu.cz/magazin/debrecin/",
   "source_card": "hu-mista-debrecin",
   "image_prompt": "Fotorealistický snímek centra Debrecínu, Velký reformovaný kostel v klasicistním stylu, náměstí Kossuth, denní světlo, 16:9",
-  "about": "Debrecínu"
+  "about": "Debrecínu",
+  "irony_prompt": "A grand plain classical church dominates the frame on a wide town square, its stern unadorned façade standing in deliberate contrast to a small ornate golden chapel glimpsed faintly in the distance, as if the two are having a quiet architectural disagreement. Smaller and subordinate: pigeons on the square; a market stall; townsfolk in dark modest clothing. MOOD: solemn, quietly wry."
  },
  {
   "id": "hu-q-hortobagy",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hortob%C3%A1gy_National_Park",
   "source_card": "hu-priroda-hortobagy",
   "image_prompt": "Fotorealistický širokoúhlý snímek stepní krajiny Hortobágy, rozlehlá rovina s pastvinami, stádo skotu na obzoru, večerní světlo, 16:9",
-  "about": "národním parku Hortobágy"
+  "about": "národním parku Hortobágy",
+  "irony_prompt": "A vast flat grassy plain stretches to the horizon filling the frame, a herd of grey cattle grazing peacefully while a shepherd with a long staff stands watch, the land shaped entirely by centuries of grazing rather than any dramatic geology. Smaller and subordinate: a well sweep silhouette; a grey Hungarian sheepdog; distant storks. MOOD: peaceful, quietly vast."
  },
  {
   "id": "hu-q-dunakanyar",
@@ -107,7 +111,8 @@
   "source_url": "https://visitvisegrad.hu/en/dunakanyar/",
   "source_card": "hu-priroda-dunakanyar",
   "image_prompt": "Fotorealistický letecký snímek zákrutu Dunaje u Visegrádu, řeka obtékající zalesněné kopce, hrad na kopci nad řekou, ranní světlo, 16:9",
-  "about": "Dunakanyaru"
+  "about": "Dunakanyaru",
+  "irony_prompt": "A wide river makes a dramatic hairpin turn through forested hills, filling the frame from above, doubling back on itself so sharply it nearly touches its own earlier course. Smaller and subordinate: a hilltop castle ruin overlooking the bend; a small ferry crossing; morning mist on the water. MOOD: majestic, quietly dramatic."
  },
  {
   "id": "hu-q-aggtelek",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Aggtelek_National_Park",
   "source_card": "hu-priroda-aggtelek",
   "image_prompt": "Fotorealistický snímek interiéru jeskyně Baradla, krápníkové útvary osvětlené teplým světlem, podzemní chodba, 16:9",
-  "about": "jeskyni Baradla"
+  "about": "jeskyni Baradla",
+  "irony_prompt": "A dramatic stalactite-filled cave passage fills the frame, and running along its floor is a single thin painted line marking an international border, with a curious bat perched exactly on top of it as if unsure which country to be loyal to. Smaller and subordinate: dripping stalactites; a lantern glowing on a rock ledge; an underground stream. MOOD: whimsical, quietly clever."
  },
  {
   "id": "hu-q-semmelweis",
@@ -151,7 +157,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Ign%C3%A1c_Filip_Semmelweis",
   "source_card": "hu-lide-semmelweis",
   "image_prompt": "Fotorealistický portrét ve stylu 19. století, lékař v černém obleku u nemocničního umyvadla, historická porodnice, tlumené světlo, 16:9",
-  "about": "Ignáci Semmelweisovi"
+  "about": "Ignáci Semmelweisovi",
+  "irony_prompt": "A doctor in old-fashioned dark clothing scrubs his hands vigorously at a wash basin, filling the frame, a faint protective glow surrounding his freshly washed hands as skeptical colleagues in the background continue examining patients without washing at all. Smaller and subordinate: a bottle of chlorinated lime; a maternity ward door ajar; a candle. MOOD: quietly heroic, historical."
  },
  {
   "id": "hu-q-biro",
@@ -173,7 +180,8 @@
   "source_url": "https://regiony.rozhlas.cz/laszlo-biro-dal-svetu-kulickove-pero-9569762",
   "source_card": "hu-lide-biro",
   "image_prompt": "Fotorealistický still-life snímek historického kuličkového pera na dřevěném stole, inkoustová kaluž vedle něj, teplé světlo, 16:9",
-  "about": "Lászlu Bírówi"
+  "about": "Lászlu Bírówi",
+  "irony_prompt": "A single elegant fountain pen sits abandoned and leaking a small ink puddle on one side of a wooden desk, while a sleek new ballpoint pen sits proudly dry and clean on the other side, filling the frame with the clear contrast between old and new. Smaller and subordinate: a blotting cloth; a rolled shut patent document; a desk lamp glow. MOOD: quietly proud, clever."
  },
  {
   "id": "hu-q-rubik",
@@ -195,7 +203,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Rubikova_kostka",
   "source_card": "hu-lide-rubik",
   "image_prompt": "Fotorealistický detailní snímek barevné Rubikovy kostky na dřevěném stole, ostré světlo zvýrazňující barvy čtverečků, 16:9",
-  "about": "Rubikově kostce"
+  "about": "Rubikově kostce",
+  "irony_prompt": "A colorful twisted puzzle cube dominates the frame resting on a school desk beside an open geometry textbook, its scrambled colored squares looking far more chaotic than any diagram in the book beside it. Smaller and subordinate: a compass and protractor; chalk dust; a curious student's hand reaching for it. MOOD: playful, quietly clever."
  },
  {
   "id": "hu-q-kalocsa",
@@ -217,7 +226,8 @@
   "source_url": "https://www.hungarikum.hu/en/content/kalocsa-folk-art-%E2%80%93-drawing-embroidery-and-wall-painting",
   "source_card": "hu-kultura-kalocsa",
   "image_prompt": "Fotorealistický detailní snímek ručně vyšívaného kalocsského textilu s barevnými květinovými motivy, přirozené světlo, 16:9",
-  "about": "kalocsské výšivce"
+  "about": "kalocsské výšivce",
+  "irony_prompt": "A vividly embroidered folk blouse sleeve fills the frame with dense colorful flower patterns, so detailed and unique that it looks like it could function as a personal signature rather than mere decoration. Smaller and subordinate: a painted flower motif on a whitewashed wall in the background; a needle and thread resting nearby; a woven basket. MOOD: proud, quietly artistic."
  },
  {
   "id": "hu-q-busojaras",
@@ -239,7 +249,8 @@
   "source_url": "https://ich.unesco.org/en/RL/buso-festivities-at-mohacs-masked-end-of-winter-carnival-custom-00252",
   "source_card": "hu-kultura-busojaras",
   "image_prompt": "Fotorealistický snímek maskovaných postav busó na karnevalu v Moháči, vyřezávané dřevěné ovčí masky, huňaté kožichy, večerní světlo s ohněm, 16:9",
-  "about": "karnevalu busójárás"
+  "about": "karnevalu busójárás",
+  "irony_prompt": "A group of fearsome wooden ram-horned masks and shaggy fur costumes dominate the frame around a bonfire at dusk, dramatically gesturing as if physically shooing away a pale wintry mist retreating into the distance. Smaller and subordinate: sparks rising from the fire; a wooden rattle; onlookers bundled in scarves. MOOD: theatrical, festive, not scary."
  },
  {
   "id": "hu-q-betyar",
@@ -261,7 +272,8 @@
   "source_url": "https://grokipedia.com/page/S%C3%A1ndor_R%C3%B3zsa",
   "source_card": "hu-kultura-betyar",
   "image_prompt": "Fotorealistický snímek jezdce v tradičním maďarském pastýřském oděvu na koni uprostřed pusztské stepi, širokánský klobouk, večerní světlo, 16:9",
-  "about": "betyárech"
+  "about": "betyárech",
+  "irony_prompt": "A dashing horseman in a wide-brimmed hat and embroidered cloak gallops across the open puszta, filling the frame, tossing a small purse of coins toward a grateful peasant family while a court record ledger lies torn and forgotten in the grass behind him. Smaller and subordinate: a distant manor house; a startled hare; tall grass swaying. MOOD: romantic, quietly wry."
  },
  {
   "id": "hu-q-liszt",
@@ -283,7 +295,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Ferenc_Liszt",
   "source_card": "hu-umeni-liszt",
   "image_prompt": "Fotorealistický portrét klavíristy u velkého koncertního křídla v sále 19. století, svíčky, sametové závěsy, teplé světlo, 16:9",
-  "about": "Ferenci Lisztovi"
+  "about": "Ferenci Lisztovi",
+  "irony_prompt": "A grand piano dominates the frame mid-performance, several strings visibly snapped and curling upward from the sheer intensity of playing, while a spare piano waits ready in the wings just in case. Smaller and subordinate: an audience member fainting gracefully in the front row; candlelight; velvet curtains. MOOD: dramatic, quietly theatrical."
  },
  {
   "id": "hu-q-bartok",
@@ -305,7 +318,8 @@
   "source_url": "https://vltava.rozhlas.cz/genius-bela-bartok-pred-140-lety-se-narodil-madarsky-skladatel-klavirista-a-8452101",
   "source_card": "hu-umeni-bartok",
   "image_prompt": "Fotorealistický snímek muže s fonografem na klikačku ve venkovské maďarské chalupě, sedlák zpívající do trychtýře přístroje, teplé světlo, 16:9",
-  "about": "Béle Bartókovi"
+  "about": "Béle Bartókovi",
+  "irony_prompt": "An old wind-up phonograph with a large brass horn sits centre-frame in a rustic village cottage, a farmer leaning in close to sing directly into it, utterly unaware he is being preserved for a museum archive. Smaller and subordinate: a rooster on the windowsill; a wax cylinder recording spool; simple wooden furniture. MOOD: quietly warm, historical."
  },
  {
   "id": "hu-q-herend",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Herend_Porcelain_Manufactory",
   "source_card": "hu-umeni-herend",
   "image_prompt": "Fotorealistický detailní snímek ručně malovaného herendského porcelánového servisu s jemným květinovým vzorem, měkké světlo, 16:9",
-  "about": "herendském porcelánu"
+  "about": "herendském porcelánu",
+  "irony_prompt": "An elegant hand-painted porcelain teacup with delicate floral patterns sits centre-frame on a velvet display cushion, while a single elegant gloved hand reaches toward it with unmistakable royal interest. Smaller and subordinate: a matching teapot nearby; other porcelain pieces slightly out of focus; soft exhibition lighting. MOOD: elegant, quietly proud."
  },
  {
   "id": "hu-q-vodni-polo",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Water_polo_at_the_Summer_Olympics",
   "source_card": "hu-sport-vodni-polo",
   "image_prompt": "Fotorealistický snímek zápasu vodního póla v maďarském venkovním bazénu, hráči v čepicích zápasící o míč, rozstříkaná voda, 16:9",
-  "about": "maďarském vodním pólu"
+  "about": "maďarském vodním pólu",
+  "irony_prompt": "A fierce water polo match fills the frame with players wrestling for a ball amid churning splashes in an outdoor pool, nine golden medals stacked improbably on the pool's edge despite the country having no coastline in sight. Smaller and subordinate: a lifeguard chair; a folded towel on a bench; droplets frozen mid-splash. MOOD: intense, proud."
  },
  {
   "id": "hu-q-aranycsapat",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Match_of_the_Century_(1953_England_v_Hungary_football_match)",
   "source_card": "hu-sport-aranycsapat",
   "image_prompt": "Fotorealistický snímek fotbalového zápasu na stadionu Wembley v roce 1953, hráči v dobových dresech, hustý dav diváků, 16:9",
-  "about": "zápase Aranycsapatu na Wembley"
+  "about": "zápase Aranycsapatu na Wembley",
+  "irony_prompt": "A jubilant footballer in a bright red shirt fills the frame mid-celebration on a packed stadium pitch, six footballs stacked triumphantly on one side of the centre line against three lonely ones on the other. Smaller and subordinate: a roaring crowd; floodlights; a discarded cap on the grass. MOOD: triumphant, proud."
  },
  {
   "id": "hu-q-hosszu",
@@ -393,7 +410,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Katinka_Hossz%C3%BAov%C3%A1",
   "source_card": "hu-sport-hosszu",
   "image_prompt": "Fotorealistický snímek plavkyně na startovním bloku olympijského bazénu těsně před startem, soustředěný výraz, sportovní osvětlení haly, 16:9",
-  "about": "Katince Hosszúové"
+  "about": "Katince Hosszúové",
+  "irony_prompt": "A determined swimmer fills the frame standing on the starting block wearing not one but four different swim caps stacked on her head, each a different color for a different event she's about to race. Smaller and subordinate: lane ropes stretching into the distance; a stopwatch on the poolside; a coach glancing anxiously at a wristwatch. MOOD: intense, playful."
  },
  {
   "id": "hu-q-uralska-rodina",
@@ -415,7 +433,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Ma%C4%8Far%C5%A1tina",
   "source_card": "hu-jazyk-uralska-rodina",
   "image_prompt": "Fotorealistický snímek staré jazykové mapy střední Evropy na dřevěném stole, barevně odlišené jazykové oblasti, teplé světlo, 16:9",
-  "about": "uralských jazycích"
+  "about": "uralských jazycích",
+  "irony_prompt": "Three small painted figures in distinct folk costumes — one Hungarian, one Finnish, one Estonian — stand centre-frame holding hands in a circle around a glowing globe, clearly speaking a shared secret language that none of their geographic neighbors understand. Smaller and subordinate: a faded map in the background; birch trees; northern lights faint in the sky. MOOD: quietly clever, warm."
  },
  {
   "id": "hu-q-kocar",
@@ -437,7 +456,8 @@
   "source_url": "https://cs.wiktionary.org/wiki/ko%C4%8D%C3%A1r",
   "source_card": "hu-jazyk-kocar",
   "image_prompt": "Fotorealistický snímek historického dostavníku taženého koňmi na venkovské cestě střední Evropy, prašná cesta, podvečerní světlo, 16:9",
-  "about": "původu slova kočár"
+  "about": "původu slova kočár",
+  "irony_prompt": "A finely built horse-drawn carriage fills the frame rolling along a dusty country road, its smooth suspension clearly the pride of the tiny village visible in the far distance where it was first invented. Smaller and subordinate: two trotting horses; a coachman's whip; dust rising behind the wheels. MOOD: quietly proud, historical."
  },
  {
   "id": "hu-q-aglutinace",
@@ -459,7 +479,8 @@
   "source_url": "https://www.jazykovy-koutek.cz/?p=14444",
   "source_card": "hu-jazyk-aglutinace",
   "image_prompt": "Fotorealistický snímek dětské stavebnice z kostek skládaných do dlouhé řady na stole, metafora skládání přípon, denní světlo, 16:9",
-  "about": "aglutinaci v maďarštině"
+  "about": "aglutinaci v maďarštině",
+  "irony_prompt": "A tall tower of eighteen small colorful building blocks stacks precariously centre-frame on a table, one after another like a growing chain of grammatical suffixes, beside a noticeably shorter seven-block tower for comparison. Smaller and subordinate: scattered wooden blocks; a compass and ruler; warm daylight. MOOD: playful, quietly clever."
  },
  {
   "id": "hu-q-gulyas",
@@ -481,7 +502,8 @@
   "source_url": "https://www.madarske-delikatesy.cz/zajimavosti/magyar-gulyas--aneb-historie-madarskeho-narodniho-pokrmu/",
   "source_card": "hu-jidlo-gulyas",
   "image_prompt": "Fotorealistický snímek kotlíku guláše vařícího se nad otevřeným ohněm ve venkovní krajině, hovězí maso a cibule v hustém vývaru, 16:9",
-  "about": "gulyáši"
+  "about": "gulyáši",
+  "irony_prompt": "A large black cauldron of thick beef stew bubbles over an open outdoor fire, filling the frame, with a weathered herdsman in traditional dress stirring it proudly as if the dish were named directly after him. Smaller and subordinate: a herd of cattle grazing in the distance; a wooden ladle; curling smoke. MOOD: hearty, proud."
  },
  {
   "id": "hu-q-paprika",
@@ -503,7 +525,8 @@
   "source_url": "https://dailynewshungary.com/the-brief-history-of-the-hungarian-paprika/",
   "source_card": "hu-jidlo-paprika",
   "image_prompt": "Fotorealistický snímek girlandy sušených červených paprik zavěšené na fasádě venkovského domu v Maďarsku, jasné sluneční světlo, 16:9",
-  "about": "papriky v Maďarsku"
+  "about": "papriky v Maďarsku",
+  "irony_prompt": "A cheerful cluster of bright red peppers grows on a potted plant on a sunny windowsill, filling the frame, admired purely as pretty decoration while a cook eyes them suspiciously from a safe distance, clearly still unsure if they're safe to eat. Smaller and subordinate: a watering can; a cat sniffing at the pot; lace curtains. MOOD: wry, quietly funny."
  },
  {
   "id": "hu-q-langos",
@@ -525,7 +548,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Lango%C5%A1",
   "source_card": "hu-jidlo-langos",
   "image_prompt": "Fotorealistický snímek čerstvě smaženého langoše potřeného kysanou smetanou, česnekem a strouhaným sýrem, stánek na maďarském trhu, 16:9",
-  "about": "langoši"
+  "about": "langoši",
+  "irony_prompt": "A round golden fried dough disc sits centre-frame fresh from bubbling oil, small wisps of flame still visible flickering in the fire beneath the pan, topped generously with sour cream and cheese. Smaller and subordinate: a market stall awning; a jar of garlic paste; steam rising. MOOD: warm, cheerful."
  },
  {
   "id": "hu-q-honfoglalas",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/%C3%81rp%C3%A1d",
   "source_card": "hu-historie-honfoglalas",
   "image_prompt": "Fotorealistická rekonstrukční malba starých maďarských jezdeckých kmenů překračujících horský průsmyk Karpat s vozy a stády, dramatické světlo, 16:9",
-  "about": "honfoglalás"
+  "about": "honfoglalás",
+  "irony_prompt": "A long procession of horseback riders and loaded wagons crosses a dramatic mountain pass, filling the frame, descending toward a lush green basin below as if arriving somewhere entirely new after a very long journey. Smaller and subordinate: cattle herded alongside; banners fluttering; distant peaks behind them. MOOD: epic, quietly momentous."
  },
  {
   "id": "hu-q-trianon",
@@ -569,7 +594,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Trianonsk%C3%A1_smlouva",
   "source_card": "hu-historie-trianon",
   "image_prompt": "Fotorealistický snímek staré mapy Uherska před rokem 1920 a po něm položené vedle sebe na stole, historické dokumenty, tlumené světlo, 16:9",
-  "about": "Trianonské smlouvě"
+  "about": "Trianonské smlouvě",
+  "irony_prompt": "A large old map fills the frame, its surface simple blocks of muted color with no borders or place names visible, and a huge chunk of it has been dramatically and neatly cut away with scissors left resting on top, leaving only a modest fraction of the original shape behind. Smaller and subordinate: a magnifying glass; an inkwell; a solemn desk lamp. MOOD: solemn, quietly historic."
  },
  {
   "id": "hu-q-revoluce-1956",
@@ -591,7 +617,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Ma%C4%8Farsk%C3%A9_povst%C3%A1n%C3%AD",
   "source_card": "hu-historie-revoluce-1956",
   "image_prompt": "Fotorealistický černobílý dokumentární snímek ulic Budapešti během podzimu 1956, poškozené budovy, sovětský tank na křižovatce, 16:9",
-  "about": "maďarské revoluci 1956"
+  "about": "maďarské revoluci 1956",
+  "irony_prompt": "A young protester stands defiantly centre-frame atop a toppled statue's empty pedestal in a city square, holding a flag with a hole cut clean out of its center where an emblem used to be. Smaller and subordinate: scattered cobblestones; a distant tank silhouette; autumn leaves blowing. MOOD: solemn, dramatic, not violent."
  },
  {
   "id": "hu-k-rubik-kdo",
@@ -612,7 +639,8 @@
   "quip_wrong": "Tentokrát vedle, zkus to příště - Japonsko, Amerika ani Německo za tím nestojí. Kostka pochází z Maďarska.",
   "explanation": "Vynálezce kostky Ernő Rubik dlouho nevěděl, jestli ji sám dokáže složit - trvalo mu to tři měsíce zkoušení.",
   "about": "Rubikově kostce a jejím maďarském původu",
-  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters - a colorful twisted puzzle cube resting on a wooden table"
+  "image_prompt": "Painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters - a colorful twisted puzzle cube resting on a wooden table",
+  "irony_prompt": "A colorful twisted puzzle cube rests centre-frame on a wooden table, its scrambled squares glowing invitingly under a warm desk lamp. Smaller and subordinate: a curious cat pawing at it; scattered wooden toys; warm evening light. MOOD: playful, kid-friendly."
  },
  {
   "id": "hu-k-balaton-jezero",
@@ -632,7 +660,8 @@
   "quip_correct": "Jupí, správně! Balaton měří přes sedmdesát kilometrů — přeplavat ho po délce by dalo víc zabrat než kus moře.",
   "quip_wrong": "Ouha, ne tahle trojka — Fertő, Velence a Tisza mají svoje kouzlo, ale obří letní jezero plné šlapadel se jmenuje Balaton.",
   "explanation": "Balaton je mělké a teplé jezero, takže se jeho voda v létě ohřeje rychle — ve vedru může dosáhnout skoro 30 stupňů Celsia.",
-  "about": "jezeru Balaton"
+  "about": "jezeru Balaton",
+  "irony_prompt": "A vast sparkling lake fills the frame with a family paddling a bright pedal boat near the shore, sailboats dotting the water further out under a bright summer sky. Smaller and subordinate: a striped beach towel on the sand; a floating inflatable ring; seagulls overhead. MOOD: cheerful, sunny, kid-friendly."
  },
  {
   "id": "hu-k-gulyas-jidlo",
@@ -652,7 +681,8 @@
   "quip_correct": "Šikovně vyluštěno — zkus si tohle zapamatovat: slovo gulyás vlastně znamená pastevec, jídlo je pojmenované po lidech, co ho vařili, ne naopak.",
   "quip_wrong": "Zkus to jinak — to smažené těsto ani rybí polévka nejsou ono, voňavé maso s paprikou z kotlíku se jmenuje gulyás.",
   "explanation": "Gulyás původně vařili maďarští pastevci v kotlíku na ohni, když honili stáda dobytka přes stepi — do Čech se jídlo dostalo jako guláš.",
-  "about": "maďarském gulyáši"
+  "about": "maďarském gulyáši",
+  "irony_prompt": "A large black cauldron of thick beef and paprika stew bubbles cheerfully over a crackling campfire, filling the frame, red-orange steam curling upward into the evening sky. Smaller and subordinate: a wooden ladle resting on the rim; a herd of cattle grazing nearby; a curious dog sniffing the air. MOOD: cozy, kid-friendly."
  },
  {
   "id": "hu-k-dunaj",
@@ -672,7 +702,8 @@
   "quip_correct": "Výborně! Víš, kolik mostů drží Budapešť nad Dunajem pohromadě? Devět — a každý jinak starý, jinak krásný.",
   "quip_wrong": "Uhodneš to napodruhé? Tisa protéká Maďarskem taky, Dráva a Rýn jsou úplně jinde — Budapešť dělí na dvě půlky jen jedna slavná řeka.",
   "explanation": "Dunaj je druhá nejdelší řeka v Evropě a protéká deseti různými zeměmi — žádná jiná řeka v Evropě neprotéká tolika státy najednou.",
-  "about": "Dunaji v Budapešti"
+  "about": "Dunaji v Budapešti",
+  "irony_prompt": "A wide river fills the frame flowing directly between two halves of a city, an elegant bridge connecting hilly rooftops on one bank to flat rooftops on the other. Smaller and subordinate: a small tour boat passing below; seagulls circling; evening lights reflecting on the water. MOOD: cheerful, kid-friendly."
  },
  {
   "id": "hu-k-cervena-paprika-su",
@@ -692,7 +723,8 @@
   "quip_correct": "Tak je to! Fasády místo tapety nosí na podzim červené girlandy papriky — barvou i vůní to přebije kdejakou reklamu.",
   "quip_wrong": "Ne tak docela — paprika nepatří do mrazáku, pod vodu ani do země, potřebuje jen slunce a proudění vzduchu.",
   "explanation": "Před domy na jihu Maďarska visí na podzim dlouhé šňůry sušící se papriky. Právě sušením vzniká sladká i pálivá mletá paprika, základ maďarské kuchyně.",
-  "about": "maďarské paprice"
+  "about": "maďarské paprice",
+  "irony_prompt": "Long strands of bright red dried peppers hang cheerfully from a whitewashed farmhouse wall, filling the frame like festive garlands, swaying gently in a warm autumn breeze. Smaller and subordinate: a basket of fresh peppers below; a cat dozing in the sun; a wooden ladder leaning nearby. MOOD: warm, cheerful, kid-friendly."
  },
  {
   "id": "hu-k-balaton-leto",
@@ -712,7 +744,8 @@
   "quip_correct": "Bravo! A víš, že v zimě Balaton zamrzne tak pevně, že se po něm dá bruslit? V létě ale vládnou plavky a šlapadla.",
   "quip_wrong": "Bruslení na ledu a stavění sněhuláků? To si počkej na zimu — teď na Balatonu vládnou plavky a šlapadla.",
   "explanation": "Balaton je největší jezero ve střední Evropě. Jeho jižní břeh je velmi mělký a oblíbený u rodin s dětmi — voda tam sahá do pasu ještě daleko od břehu.",
-  "about": "Balatonu"
+  "about": "Balatonu",
+  "irony_prompt": "A cheerful family paddles a bright yellow pedal boat across a sparkling lake, filling the frame, splashes flying as children lean over the sides to touch the water. Smaller and subordinate: a beach ball floating nearby; distant sailboats; a lifeguard tower on the shore. MOOD: joyful, sunny, kid-friendly."
  },
  {
   "id": "hu-k-madarska-vlajka",
@@ -732,7 +765,8 @@
   "quip_correct": "A je to tam! Tyhle tři barvy nosili Maďaři ve znaku už ve středověku, do pruhů je poskládali až mnohem později.",
   "quip_wrong": "Málem to bylo ono — tři pruhy má maďarská vlajka správně, ale barvy jsou úplně jiné.",
   "explanation": "Červená symbolizuje sílu, bílá věrnost a zelená naději. Vlajka vypadá podobně jako italská — ale tam jsou barvy v jiném pořadí a svislé.",
-  "about": "maďarské vlajce"
+  "about": "maďarské vlajce",
+  "irony_prompt": "A large Hungarian flag fills the frame, rippling proudly with three horizontal stripes — red on top, white in the middle, green on the bottom, no other colors — held by a cheerful child on a sunny town square. Smaller and subordinate: pigeons taking flight; a small dog running past; confetti in the air. MOOD: joyful, patriotic, kid-friendly."
  },
  {
   "id": "hu-t-kral-stefan",
@@ -752,7 +786,8 @@
   "quip_correct": "Skvěle! Zkus hádat, co hlídá víc ochranky než leckterý prezident — Štěpánova koruna nikdy neopouští budovu bez doprovodu.",
   "quip_wrong": "Tentokrát vedle, zkus to znovu — Matyáš, Béla a Ondřej byli slavní králové, ale ten úplně první křesťanský měl jiné jméno.",
   "explanation": "Svatý Štěpán sjednotil maďarské kmeny a přijal křesťanství kolem roku 1000. Dodnes je největší národní hrdina — jeho svátek 20. srpna je největším maďarským státním svátkem.",
-  "about": "svatém Štěpánovi"
+  "about": "svatém Štěpánovi",
+  "irony_prompt": "An ornate golden crown with a distinctive tilted cross on top sits centre-frame on a velvet cushion inside a heavily guarded glass case, more armed guards standing around it than around most modern leaders. Smaller and subordinate: red-and-white ceremonial ropes; soft museum lighting; a hushed queue of visitors. MOOD: solemn, quietly impressive."
  },
  {
   "id": "hu-k-puli-pes",
@@ -772,7 +807,8 @@
   "quip_correct": "Trefa! Srst se pulíkovi sama zplsťuje do provazců kolem prvního roku života — žádný salon, žádný fén, jen čas.",
   "quip_wrong": "Zkus to znovu — čivava ani dalmatin by na velké pustě moc nepomohli, maďarský pastevecký pes je úplně jiné plemeno.",
   "explanation": "Puli je tradiční maďarský pastevecký pes s typickými šňůrami srsti, které ho chrání před chladem i kousnutím vlků. Na maďarské pustě hlídá stáda ovcí po staletí.",
-  "about": "maďarském psovi puli"
+  "about": "maďarském psovi puli",
+  "irony_prompt": "A shaggy grey Puli dog with thick dreadlocked cords of fur trots proudly centre-frame across a grassy field, looking exactly like an animated floor mop that somehow grew legs. Smaller and subordinate: a flock of sheep in the background; a shepherd's crook; wildflowers underfoot. MOOD: playful, kid-friendly."
  },
  {
   "id": "hu-k-budin-hrad",
@@ -792,7 +828,8 @@
   "quip_correct": "Jsi bystrá hlava! Kolikrát myslíš, že byl tenhle hrad dobyt a znovu postaven? Tolikrát, že dnešní podoba nepamatuje skoro nic z té původní ze třináctého století.",
   "quip_wrong": "Ne tenhle směr — Karlštejn je v Čechách a Spišský hrad na Slovensku, nad Dunajem v Budapešti stojí úplně jiný hrad.",
   "explanation": "Budínský hrad byl centrem uherského království po staletí. Výhled z jeho teras na Dunaj a Pešť je jeden z nejhezčích v celé Evropě.",
-  "about": "Budínském hradě"
+  "about": "Budínském hradě",
+  "irony_prompt": "A massive hilltop castle complex dominates the frame overlooking a wide river below, its walls and domes glowing warmly at sunset after centuries of being rebuilt again and again. Smaller and subordinate: a funicular railway climbing the hillside; pigeons circling the towers; boats on the river. MOOD: grand, kid-friendly."
  },
  {
   "id": "hu-k-csikos-kone",
@@ -813,7 +850,8 @@
   "quip_wrong": "Škoda, vedle – gauči jezdí v Argentině a kovbojové v Americe, na maďarské pustě mají svoje vlastní jezdce s jiným jménem.",
   "explanation": "Čikošové nosí černé klobouky a volné pruhované kalhoty a své umění dodnes předvádějí na Hortobágyské pustě, kam se jezdí dívat i turisté z celého světa.",
   "about": "čikošech",
-  "image_prompt": "A painterly watercolor gouache illustration of čikošech, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of čikošech, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A skilled horseman stands proudly astride two galloping horses at once, filling the frame, five more horses fanning out obediently ahead of him across the open plain with no reins in sight, just a long whip raised high. Smaller and subordinate: dust kicked up by the hooves; a wide-brimmed black hat; endless grassland. MOOD: impressive, energetic, kid-friendly."
  },
  {
   "id": "hu-k-marcipan-szentendre",
@@ -833,7 +871,8 @@
   "quip_correct": "Trefa do černého! Některé exponáty v muzeu měří přes metr a modelovaly se celé týdny — a přitom by šly sníst.",
   "quip_wrong": "Vedle — čokoládová vajíčka, žvýkačky ani perníky tam nejsou, to muzeum je celé z marcipánu.",
   "explanation": "Marcipánové muzeum v Szentendre láká návštěvníky na sochy, modely a figurky z mandlové hmoty. Největší exponáty jsou přes metr velké a trvalo je vyrobit týdny.",
-  "about": "Szentendre"
+  "about": "Szentendre",
+  "irony_prompt": "An enormous marzipan sculpture fills the frame inside a cozy little museum room, sculpted into an elaborate castle shape taller than the delighted child standing beside it. Smaller and subordinate: smaller marzipan figurines on shelves; a sculptor's tiny knife; soft museum lighting. MOOD: whimsical, delighted, kid-friendly."
  },
  {
   "id": "hu-k-lazne-termalni",
@@ -853,7 +892,8 @@
   "quip_correct": "Správně! Teplá voda si cestu na povrch najde úplně sama, bez jediné pumpy — příroda tu topí zadarmo už tisíce let.",
   "quip_wrong": "Špatný směr — solární panely ani kotel s tím nemají co dělat, teplá voda si sama razí cestu z hlubin země.",
   "explanation": "Pod Maďarskem leží obrovské zásoby termální vody, které se přirozeně ohřívají zemským teplem. Proto má Budapešť více lázní než jakékoli jiné hlavní město Evropy.",
-  "about": "maďarských lázních"
+  "about": "maďarských lázních",
+  "irony_prompt": "Steam rises gently from a large outdoor thermal pool filling the frame, bathers relaxing happily in the warm water even as snow dusts the surrounding rooftops and trees. Smaller and subordinate: two men playing chess on a small floating wooden board; icicles on a nearby railing; warm golden light through the steam. MOOD: cozy, kid-friendly."
  },
  {
   "id": "hu-k-candak-balaton",
@@ -873,7 +913,8 @@
   "quip_correct": "Trefa do černého! Zkus hádat, kolika způsoby rybáři na Balatonu na candáta lákají — je jich přes dvacet, a každý rybář přísahá na ten svůj.",
   "quip_wrong": "Ne tak úplně, přemýšlej ještě jednou — žralok a losos v Balatonu neplavou, sladkovodní král tamních vod má jiné jméno.",
   "explanation": "Candát je dravá sladkovodní ryba s bílým masem a téměř bez kostí. Na Balatonu se loví tradičně a místní restaurace ho připravují na desítky způsobů.",
-  "about": "rybách v Balatonu"
+  "about": "rybách v Balatonu",
+  "irony_prompt": "A large silvery pikeperch leaps triumphantly out of the lake's surface, filling the frame with splashing droplets, wearing an invisible crown of respect as the undisputed king of these waters. Smaller and subordinate: a fisherman's rod bending nearby; a rowboat; ripples spreading outward. MOOD: playful, kid-friendly."
  },
  {
   "id": "hu-t-matra-turistika",
@@ -892,7 +933,8 @@
   "quip_correct": "Sedí to naprosto přesně — tisíc metrů a přitom to nepovažují za hory. Maďarský rekord výšky se drží na laťce, kde jinde teprve začínají sjezdovky.",
   "quip_wrong": "Hezký pokus, mimo mísu — zasněžené štíty nebo písečné duny? Maďarský rekord výšky si vystačí s tisícem metrů a smrkovým lesem.",
   "explanation": "Pohoří Mátra tvoří část Severomaďarského středohoří a vzniklo starou vulkanickou činností. Nejvyšší bod Kékes měří 1 014 m — na maďarské poměry slušná výška.",
-  "about": "pohoří Mátra"
+  "about": "pohoří Mátra",
+  "irony_prompt": "Gentle forested hills fill the frame rolling under a clear sky, their volcanic origins betrayed only by dark rocky outcrops peeking through the trees near the modest highest peak. Smaller and subordinate: a hiking trail winding upward; a wooden lookout tower; a deer at the treeline. MOOD: peaceful, quietly proud."
  },
  {
   "id": "hu-t-pecs-zsolnay",
@@ -911,7 +953,8 @@
   "quip_correct": "Máš pravdu, a to bez váhání — glazura, která přežila dvě světové války na fasádách a střechách, zatímco továrna mezitím zkrachovala a musela se prodávat.",
   "quip_wrong": "Pěkně vymyšleno, ale vedle — parní stroje nebo uhlí by Zsolnaye proslavily jinde, ne v Pécsi. Tam šli cestou hlíny a barev.",
   "explanation": "Zsolnayho porcelánka v Pécsi vznikla v roce 1853 a proslavila se unikátní glazurou pyrogranit. Jejich dlaždice zdobí třeba střechu kostela Matyáše v Budapešti.",
-  "about": "Pécsi a rodině Zsolnayů"
+  "about": "Pécsi a rodině Zsolnayů",
+  "irony_prompt": "A dazzling array of iridescent glazed ceramic roof tiles fills the frame catching the sunlight in shifting rainbow colors, far more ornate than the plain rooftops of the buildings around them. Smaller and subordinate: a potter's wheel nearby; kiln smoke rising; a cat sunning on the ridge. MOOD: proud, quietly dazzling."
  },
  {
   "id": "hu-t-eger-bikaver",
@@ -930,7 +973,8 @@
   "quip_correct": "Kdo by pochyboval — máš pravdu. Legenda o krvavém víně vznikla nejspíš shodou červené barvy a osmanské imaginace. Dobré víno tím dostalo lepší marketing, než by vymyslel jakýkoli středověký vinař.",
   "quip_wrong": "Krvavá představa, ale mimo realitu — skutečná krev nebo kůže, takový recept by víno prodávalo těžko. Turecká fantazie pracovala jinak.",
   "explanation": "Bitva u Egeru v roce 1552 je v maďarských dějinách legendární: malá posádka pod vedením Istvána Dobóa ubránila hrad proti obrovské osmanské přesile. Víno Egri Bikavér je dodnes jedním z nejznámějších maďarských vín.",
-  "about": "Egri Bikavér"
+  "about": "Egri Bikavér",
+  "irony_prompt": "A defender in old armor drinks deeply from a large round goblet of dark red wine atop a besieged castle wall, filling the frame, red droplets running down his chin as distant enemy soldiers below stare up in visible terror at his fearsome strength. Smaller and subordinate: a round wine barrel nearby; a raised sword; castle battlements. MOOD: dramatic, wry, not gory."
  },
  {
   "id": "hu-t-szentendre-umeni",
@@ -949,7 +993,8 @@
   "quip_correct": "Trefa, přesná a klidná — srbští uprchlíci přišli bez pozvání, postavili kostely, otevřeli kavárny, a dnes z toho žije turistický průmysl celého regionu.",
   "quip_wrong": "Průmyslová domněnka, ale vedle — strojírenství nebo chemičky, tam Szentendre nikdy nesměřovalo. Útočiště malířů a turistů se průmyslovými zónami nezejména.",
   "explanation": "Szentendre si zachovalo balkánský ráz díky srbským uprchlíkům, kteří se tu usadili po ústupu Turků v 18. století. Dnes tam žijí desítky umělců a stojí tam přes dvacet galerií.",
-  "about": "Szentendre"
+  "about": "Szentendre",
+  "irony_prompt": "A narrow cobblestone street winds between colorful old houses filling the frame, an easel and half-finished painting propped in a doorway where an artist has clearly just stepped away for coffee. Smaller and subordinate: potted geraniums on windowsills; a cat on a step; a church dome peeking above rooftops. MOOD: charming, artistic."
  },
  {
   "id": "hu-t-miskolc-tapolca",
@@ -968,7 +1013,8 @@
   "quip_correct": "Máš to přesně — jediné jeskynní lázně v Evropě, co jiného dělat s krasovými chodbami plnými teplé vody, než do nich pustit turisty.",
   "quip_wrong": "Vynalézavé, ale mimo — kráterové jezero nebo slané doly? Miskolc-Tapolca jde cestou krasových chodeb, ne sopek.",
   "explanation": "Jeskynní lázně v Miskolc-Tapolci jsou jediné svého druhu v Evropě. Termální voda ohřívaná zemským teplem proudí přírodními vápencovými chodbami, kde se hosté mohou volně pohybovat.",
-  "about": "Miskolc-Tapolca"
+  "about": "Miskolc-Tapolca",
+  "irony_prompt": "Warm turquoise thermal water fills a cavernous natural rock passage, dominating the frame, bathers floating peacefully beneath stalactites in a scene that looks more like a hidden grotto than a spa. Smaller and subordinate: a lantern glowing on a ledge; steam rising off the water; smooth cave walls. MOOD: serene, quietly magical."
  },
  {
   "id": "hu-t-tihany-poloostrov",
@@ -987,7 +1033,8 @@
   "quip_correct": "Sedí to, žádné dohady — poloostrov, kde v červenci levandule přebijí vůni samotného jezera. Klášter tam stojí déle, než existuje spousta evropských států.",
   "quip_wrong": "Dobrý odhad, ale ne cíl — Siófok a Keszthely jsou na břehu Balatonu, ale poloostrov s levandulovými poli a klášterem od 11. století je jinde.",
   "explanation": "Tihany je chráněná přírodní oblast s unikátními gejzírovými kópami (pozůstatky po starých gejzírech). Benediktinské opatství tam stojí od roku 1055 a je to jedna z nejstarších staveb v Maďarsku.",
-  "about": "poloostrovu Tihany"
+  "about": "poloostrovu Tihany",
+  "irony_prompt": "Rows of vivid purple lavender fill the frame stretching toward an old stone monastery on a hilltop overlooking a lake, the fragrance almost visible in the shimmering summer heat. Smaller and subordinate: buzzing bees; a stone well; distant sailboats on the water below. MOOD: peaceful, fragrant, quietly proud."
  },
  {
   "id": "hu-t-szeged-divadlo",
@@ -1006,7 +1053,8 @@
   "quip_correct": "Festival pod hvězdami pro šest tisíc diváků běží od třicátých let — přerušit ho dokázal jen Hitler a Stalin, každý jednou.",
   "quip_wrong": "Kreativní nápad, špatný cíl — ledové bludiště nebo africké koření? Dómové náměstí si vybírá jiný program, a to od třicátých let.",
   "explanation": "Dómové náměstí je jedno z největších uzavřených náměstí v Evropě. Letní divadelní festival tam pořádají od 30. let 20. století a sedí tam přes šest tisíc diváků.",
-  "about": "Szegedu"
+  "about": "Szegedu",
+  "irony_prompt": "A dramatic actor performs mid-gesture on an open-air stage beneath a towering brick cathedral facade, filling the frame, thousands of empty seats fanning out before him waiting to fill for tonight's performance. Smaller and subordinate: stage lighting rigs; a conductor's podium; pigeons on the cathedral ledge. MOOD: theatrical, grand."
  },
  {
   "id": "hu-t-heviz-lekniny",
@@ -1025,7 +1073,8 @@
   "quip_correct": "Trefa, klidná a jistá — indický leknín, který přežil sto let v celoroční teplé vodě uprostřed střední Evropy. Adaptace probíhá pomalu, ale funguje.",
   "quip_wrong": "Exotická domněnka, ale vedle — amazónská viktorie nebo egyptský papyrus, obojí by v středoevropském jezeře překvapilo. Hévíz si vystačí s Asií.",
   "explanation": "Indické lekníny byly do jezera úspěšně vysazeny koncem 19. století. Jezero Hévíz je s plochou 4,4 hektaru největší přírodní termální jezerou v Evropě a druhou největší na světě.",
-  "about": "Hévízu"
+  "about": "Hévízu",
+  "irony_prompt": "Vivid pink tropical water lilies float thickly across the surface of a steaming thermal lake, filling the frame, utterly out of place beside the wintry pine trees and snow-dusted banks surrounding it. Smaller and subordinate: a dragonfly hovering; a wooden bathing platform; steam rising off the water. MOOD: whimsical, quietly surprising."
  },
  {
   "id": "hu-t-egri-var",
@@ -1044,7 +1093,8 @@
   "quip_correct": "Bod pro tebe, jasná věc — pár set obránců zastavilo obléhání, které mělo trvat dny a trvalo čtyřicet. Porážka Turků tam dostala literárního agenta jménem Géza Gárdonyi.",
   "quip_wrong": "Slušný pokus, ale minul cíl — ústava, poklad nebo vídeňská pevnost, Egerský hrad vstoupil do dějin jiným příběhem, vojenským a bez diplomacie.",
   "explanation": "Obrana Egeru v roce 1552 inspirovala Gézu Gárdonyiho k napsání slavného románu Egerské hvězdy. Kapitan Dobó se stal národním hrdinou, protože dokázal, že Turky lze porazit.",
-  "about": "Egerskému hradu"
+  "about": "Egerskému hradu",
+  "irony_prompt": "A small determined garrison of defenders stands firm along ancient stone castle walls, filling the frame, vastly outnumbered by a sea of distant besieging tents and banners stretching to the horizon below. Smaller and subordinate: a raised sword catching the light; a weathered banner; smoke drifting from distant cannon fire. MOOD: dramatic, heroic, not graphic."
  },
  {
   "id": "hu-t-busojaras-legenda",
@@ -1063,7 +1113,8 @@
   "quip_correct": "Historicky se to nepotvrdilo, ale karneval táhne přes tři sta let — na vyhnání zimy stačí i neprokázaná legenda.",
   "quip_wrong": "Fantazii máš bohatou, odpověď ne — bouře, ptáci nebo lupiči, legenda karnevalu v Moháči si zvolila soupeře o dost nebezpečnějšího.",
   "explanation": "Busójárás je karneval konaný každoročně na konci února, symbolizující konec zimy a vyhnání zlých sil. UNESCO ho zapsalo na seznam světového nehmotného dědictví v roce 2009.",
-  "about": "Busójárás"
+  "about": "Busójárás",
+  "irony_prompt": "A crowd of fearsome horned wooden masks and shaggy fur costumes dominates the frame, advancing menacingly by torchlight, while in the far distance a startled group of soldiers flees toward the horizon. Smaller and subordinate: sparks from torches; a wooden rattle; a full moon overhead. MOOD: theatrical, triumphant, not scary."
  },
  {
   "id": "hu-t-danube-kanyar",
@@ -1082,7 +1133,8 @@
   "quip_correct": "Bod pro tebe — a to jasný. Tam kde se řeka otočí o devadesát stupňů, postavili středověcí panovníci hrad. Pak přidali druhý, pak třetí. Region vypadá jako soutěž o nejlepší výhled.",
   "quip_wrong": "Zajímavý nápad, ale mimo — přehradní hráz nebo sto ramen jako v deltě? Dunaj v Dunakanyaru dramatizuje jinak, záhybem, ne rozvětvením.",
   "explanation": "V místě Dunakanyar se Dunaj otáčí o 90 stupňů a teče na jih. Oblast je historicky strategicky důležitá — proto tam stojí tolik hradů a královských sídel.",
-  "about": "Dunakanyar"
+  "about": "Dunakanyar",
+  "irony_prompt": "A dramatic river bend curves sharply through hills, dominating the frame from above, with a cluster of hilltop castles perched proudly along its banks like a chain of competing lookout posts. Smaller and subordinate: a small boat on the water; morning mist; church spires in a riverside town. MOOD: majestic, quietly grand."
  },
  {
   "id": "hu-t-parlament-budapesti",
@@ -1101,7 +1153,8 @@
   "quip_correct": "Trefa do puntíku — dokonalá symetrie pro dvě sněmovny, poté co monarchie zanikla, jedna sněmovna se zrušila a polovina parlamentu zůstala zrcadlově prázdná.",
   "quip_wrong": "Vynalézavá teorie, bohužel vedle — omyl, pověra nebo letní a zimní sezóna? Symetrie budapešťského parlamentu měla přesnější důvod než estetika.",
   "explanation": "Maďarský parlament byl dokončen v roce 1902 a je třetím největším parlamentním budovám na světě. Symetrie odráží dualismus Rakouska-Uherska — dvě sněmovny se zrcadlově rovnocenným zázemím.",
-  "about": "budapešťském parlamentu"
+  "about": "budapešťském parlamentu",
+  "irony_prompt": "A grand riverside parliament building fills the frame with two absolutely identical wings mirrored perfectly on either side of a central dome, so symmetrical that a bird flying past on one side is matched by an identical bird on the other. Smaller and subordinate: the river reflecting the building; a bridge nearby; evening lights glowing. MOOD: grand, quietly clever."
  },
  {
   "id": "hu-t-badacsony-vino",
@@ -1120,7 +1173,8 @@
   "quip_correct": "Čedič si pamatuje teplo a vinicím na svazích díky tomu naskočí o pár týdnů delší sezóna než sousedům.",
   "quip_wrong": "Malebná představa, ale mimo — fjordy nebo duny na severním břehu Balatonu by byla geografie, kterou si Maďarsko nezasloužilo. Sopky to vyřešily jinak.",
   "explanation": "Badacsony a okolní kopce jsou zbytky vyhaslých sopek. Čedičové svahy akumulují teplo a víno z těchto poloh (zejména odrůda Szürkebarát) patří k nejlepším maďarským bílým vínům.",
-  "about": "Badacsony"
+  "about": "Badacsony",
+  "irony_prompt": "A flat-topped volcanic hill rises dramatically over neat rows of vineyards climbing its basalt slopes, filling the frame, a lake glinting far below at its base. Smaller and subordinate: a farmer tending the vines; a wine barrel; swallows swooping over the grapes. MOOD: proud, picturesque."
  },
  {
   "id": "hu-a-albert-szentgyorgyi",
@@ -1139,7 +1193,8 @@
   "quip_correct": "Kdo by to čekal, a přece — vybral si jako zdroj vitaminu C papriku, ne pomeranč, a výsledky ho potvrdily. Maďarský národní pokrm tím získal vědeckou legitimitu.",
   "quip_wrong": "Impozantní seznam, špatná trefa — inzulín, DNA nebo transplantace, každý by stačil na Nobelovu cenu. Maďar šel cestou papriky a kyseliny askorbové.",
   "explanation": "Szent-Györgyi pracoval na Szegedské univerzitě a zjistil, že paprika obsahuje enormní množství kyseliny askorbové — mnohonásobně víc než citrusy. Nobelovu cenu dostal v roce 1937.",
-  "about": "Albertu Szent-Györgyimu"
+  "about": "Albertu Szent-Györgyimu",
+  "irony_prompt": "A single bright red paprika pepper sits centre-frame in a laboratory dish beside a sliced orange, a faint golden glow around the pepper showing it is clearly the more remarkable of the two. Smaller and subordinate: a microscope nearby; a stack of papers; a medal glinting softly. MOOD: quietly proud, clever."
  },
  {
   "id": "hu-a-gellert-jeskynni-kaple",
@@ -1158,7 +1213,8 @@
   "quip_correct": "Máš pravdu, přesně tak — komunisté vchod zabetonovali v roce 1951. Pavláni se vrátili po roce 1989 a kostel dnes slouží stejnému účelu jako předtím, jen s novým vchodem.",
   "quip_wrong": "Dramatická domněnka, ale vedle — tajný bunker nebo archivní sklepy tokajského vína? Komunisté vchod zabetonovali, ne proto, co tam bylo, ale proto, kdo tam sloužil.",
   "explanation": "Jeskynní kostel (Sziklatemplom) inspirovala lurdská grotta ve Francii. V komunistickém Maďarsku byl vchod zabetonován a mniši uvězněni. Po roce 1989 byl kostel obnoven a je opět přístupný.",
-  "about": "Gellértově vrchu"
+  "about": "Gellértově vrchu",
+  "irony_prompt": "A small chapel is carved directly into a rocky hillside, filling the frame, its entrance freshly reopened with fresh mortar patchwork visible around an old bricked-up section nearby. Smaller and subordinate: candles glowing inside the entrance; ivy on the rock; a monk's silhouette at the doorway. MOOD: solemn, quietly hopeful."
  },
  {
   "id": "hu-a-tokaj-botrytis",
@@ -1177,7 +1233,8 @@
   "quip_correct": "Bod pro tebe, přesně vydobytý — plíseň, která pěstitele vinic kdekoliv jinde dovede k zoufalství, tu za určitých podmínek vyrábí nejsladší víno na světě. Záleží jen na mlze a teplotě.",
   "quip_wrong": "Technická teorie, ale mimo — mrazicí komory nebo teplý vzduch z jihu, příroda má vlastní metody. V Tokaji to obstarává plíseň, která by jinde zničila celou sklizeň.",
   "explanation": "Botrytis cinerea se v tokajské oblasti šíří v ranních mlhách ze soutoku Tisy a Bodrogu. V ostatních vinohradnických oblastech je postrachem pěstitelů — v Tokaji je základem nejslavnějšího sladkého vína světa.",
-  "about": "tokajském víně"
+  "about": "tokajském víně",
+  "irony_prompt": "A cluster of grapes fills the frame, half still plump and purple, half shriveled into wrinkled golden raisins under a fine grey bloom of noble rot, morning mist drifting through the vineyard behind. Smaller and subordinate: a wicker picking basket; dew on the leaves; a distant river. MOOD: quietly magical, proud."
  },
  {
   "id": "hu-a-sopron-fidelitas",
@@ -1196,7 +1253,8 @@
   "quip_correct": "Němečtí obyvatelé Sopronu si odhlasovali Maďarsko — jediný případ, kdy lidové hlasování přepsalo trianonské hranice, a nikdo to po nich nezopakoval.",
   "quip_wrong": "Válečná domněnka, ale mimo — tři obléhání, emigrace nebo blokáda? Sopron prokázal věrnost bez jediného výstřelu, jen hlasovacím lístkem.",
   "explanation": "Po první světové válce připadl Sopron s okolím ke kandidátskému území Rakouska. Referendum v prosinci 1921 ale rozhodlo poměrem 65 : 35 pro Maďarsko. Byl to jediný případ, kdy hlasování změnilo výsledky trianonské mírové smlouvy.",
-  "about": "Sopronu"
+  "about": "Sopronu",
+  "irony_prompt": "A ballot box sits centre-frame on a town square table, a small crowd of townsfolk lining up cheerfully to cast their votes, a border post visible in the distance quietly deciding to remain exactly where it is. Smaller and subordinate: a town hall in the background; bunting overhead; a dog waiting patiently. MOOD: quietly proud, historical."
  },
  {
   "id": "hu-a-heviz-termodynamika",
@@ -1215,7 +1273,8 @@
   "quip_correct": "Sedí to do puntíku — voda v jezeře se vymění přibližně každé tři dny. Kdo si koupí permanentku, koupá se technicky vždy v čerstvém pramenu.",
   "quip_wrong": "Dramatická teorie, klidná realita jinde — elektrárna, vulkány nebo zemský plášť? Hévíz si vystačí skromněji, krasový systém a geotermální voda, žádná dramatická geologie.",
   "explanation": "Hévíz je s plochou 4,4 ha největší přírodní termální jezero v Evropě. Voda vyvěrá ze 38 metrů hluboké průrvy v dně jezera a má teplotu 25–38 °C podle roční doby.",
-  "about": "termálním jezeru Hévíz"
+  "about": "termálním jezeru Hévíz",
+  "irony_prompt": "Steam rises gently off a wide natural lake filling the frame, its warm turquoise water completely ice-free while snow blankets the surrounding trees and reeds along the shore. Smaller and subordinate: floating water lily pads; a wooden bathing pier; a heron standing at the water's edge. MOOD: serene, quietly magical."
  },
  {
   "id": "hu-a-debrecin-kolegium",
@@ -1234,7 +1293,8 @@
   "quip_correct": "Bod pro tebe, jasně a zaslouženě — zatímco uherský parlament psal latinsky a dvůr německy, kolegium v Debrecínu tisklo učebnice maďarsky. Jazyk přežil i bez státní podpory.",
   "quip_wrong": "Institucionální dohad, ale vedle — vojenská akademie nebo královská mincovna, instituce s jiným posláním. Debrecínské kolegium pracovalo se slovy, ne se zbraněmi ani zlatem.",
   "explanation": "Debrecínské kolegium funguje od roku 1538. V jeho knihovně je přes 650 000 svazků. Kossuth, Ady, Jókai — řada klíčových maďarských osobností tam studovala.",
-  "about": "Debrecínském kolegiu"
+  "about": "Debrecínském kolegiu",
+  "irony_prompt": "An old wooden lectern fills the frame inside a grand but plain lecture hall, an open book resting on it with a single candle beside it, the surrounding shelves lined with countless leather-bound volumes stretching into the shadows. Smaller and subordinate: a globe on a side table; a student's empty chair; dust motes in a shaft of light. MOOD: solemn, quietly proud."
  },
  {
   "id": "hu-a-margit-hid",
@@ -1253,7 +1313,8 @@
   "quip_correct": "Most, který se zalomí přesně nad středem řeky kvůli ostrovu v cestě — od roku 1876 to nikomu nevadilo.",
   "quip_wrong": "Geometrická fantazie, ale mimo — písmeno S, šikmý přechod nebo polokruh? Markétin most si zvolil jinou nekonvenčnost, jediný, přesně daný zlom uprostřed Dunaje.",
   "explanation": "Markétin most byl postaven v roce 1876. Odbočka na Markétino ostrov způsobuje, že most mění směr přesně uprostřed Dunaje — pohled shora připomíná boomerang.",
-  "about": "Markétině mostu"
+  "about": "Markétině mostu",
+  "irony_prompt": "A long river bridge fills the frame bending sharply at an obtuse angle exactly at its midpoint, curving toward a small green island nestled in the water below. Smaller and subordinate: streetlamps along the railing; a tram crossing; river reflections. MOOD: quietly clever, elegant."
  },
  {
   "id": "hu-a-hortobagy-kilenclyuku",
@@ -1272,7 +1333,8 @@
   "quip_correct": "Máš to přesně, bez okolků — na ploché pustě bez jediné vyvýšeniny je most s devíti oblouky vidět na kilometry. Jméno je navigační instrukce i architektonická vizitka zároveň.",
   "quip_wrong": "Květnaté přívlastky, špatný závěr — nejdelší, pastýřský nebo říční, a přitom jméno mostu je prostší a přesnější než všechny tyto přívlastky.",
   "explanation": "Kilenclyukú híd (Devítiobloukový most) byl postaven v první polovině 19. století. Národní park Hortobágy, kde stojí, je největší stepní národní park v Evropě a je na seznamu UNESCO.",
-  "about": "Devítiobloukovém mostu"
+  "about": "Devítiobloukovém mostu",
+  "irony_prompt": "A long stone bridge with nine graceful arches stretches across a lazy river on the flat open steppe, filling the frame, visible for miles across the completely flat landscape around it. Smaller and subordinate: a herd of grey cattle nearby; a horse-drawn cart crossing; storks nesting on a post. MOOD: quietly grand, peaceful."
  },
  {
   "id": "hu-a-pecs-mecset",
@@ -1291,7 +1353,8 @@
   "quip_correct": "Minaret dolů, kříž nahoru, oltář místo mihrábu — Pécs si sto čtyřicet tři let osmanské nadvlády zazdilo přímo do fasády náměstí.",
   "quip_wrong": "Historická domněnka, ale mimo — replika z 19. století nebo diplomatické gesto křižáků? Pécs si 143 let osmanské nadvlády zazdilo do centra náměstí — doslova, jako autentickou mešitu.",
   "explanation": "Pécs byl pod osmanskou nadvládou 143 let (1543–1686). Mešita pachy Kasima je největší zachovanou osmanskou stavbou v Maďarsku a připomíná, že střední Evropa byl po staletí kontaktní zóna civilizací.",
-  "about": "Pécsi"
+  "about": "Pécsi",
+  "irony_prompt": "A domed building with the unmistakable silhouette of a mosque dominates the frame on a town square, a simple cross now perched where a crescent once stood, the building serving an entirely different faith than the one it was built for. Smaller and subordinate: pigeons on the square; outdoor café tables nearby; afternoon light on the dome. MOOD: quietly historic, wry."
  },
  {
   "id": "hu-a-tokaj-soutok",
@@ -1310,7 +1373,8 @@
   "quip_correct": "Sedí to naprosto — dvě řeky, ranní mlha a plíseň, která by jinde zničila úrodu. Tokaj existuje díky velmi specifické shodě počasí, geografie a náhody.",
   "quip_wrong": "Geografická domněnka, ale mimo — Dunaj a Tisza nebo tři řeky bez vlivu? Tokajské víno vzniká díky mlhám z přesně dvou řek, a správná dvojice je klíčová.",
   "explanation": "Tokajská vinohradnická oblast je na seznamu UNESCO. Mikroklima u soutoku Tisy a Bodrogu je jedinečné na celém světě — přesně ta kombinace vlhkosti, tepla a mlh, která botrytis potřebuje.",
-  "about": "Tokaji"
+  "about": "Tokaji",
+  "irony_prompt": "Two rivers merge into one at a quiet bend, filling the frame in soft morning mist, the fog drifting up the nearby vineyard slopes like a slow, deliberate blessing. Smaller and subordinate: a fisherman's rowboat; reeds along the bank; a heron watching from the shallows. MOOD: quietly magical, atmospheric."
  },
  {
   "id": "hu-a-budapest-szabadsag-hid",
@@ -1329,7 +1393,8 @@
   "quip_correct": "Císař osobně zatloukl zlatý nýt při otevření — most pak dostal jméno, které by se mu asi vůbec nelíbilo.",
   "quip_wrong": "Skromná teorie, realita okázalejší — tajná noční montáž nebo sbírka od občanů? Most svobody šel na věc s větší pompou, zlatým nýtem zatlučeným osobně.",
   "explanation": "Most svobody (Szabadság híd) byl otevřen v roce 1896 a původně se jmenoval po Františku Josefovi. Zlatý nýt, který císař symbolicky zatloukl, je tam prý dodnes. Po druhé světové válce most přejmenovali.",
-  "about": "Mostu svobody"
+  "about": "Mostu svobody",
+  "irony_prompt": "A vividly green steel bridge fills the frame spanning a wide river, a single gleaming golden rivet catching the light among thousands of ordinary grey ones near its base. Smaller and subordinate: a tram crossing; river barges below; evening light on the ironwork. MOOD: proud, quietly ceremonial."
  },
  {
   "id": "hu-a-balaton-vulkany",
@@ -1348,7 +1413,8 @@
   "quip_correct": "Trefa, klidná a přesná — sopky vyhasly před miliony let a vinaři za to platí nájmem v hroznech. Čedič si daně nikdy zpět nepožadoval.",
   "quip_wrong": "Geologická domněnka, ale mimo — říční haldy nebo ledovcové morény? Severní pobřeží Balatonu si svůj tvar dluhuje sopkám, které tam vyhasly dávno před prvním vinařem.",
   "explanation": "Sopečná aktivita na severu Balatonu skončila před miliony let, ale čedičové horniny zůstaly. Badacsony, Gulács, Csobánc — každý kopec je zbytek sopky a každý nese vinice s odrůdami jako Szürkebarát nebo Olaszrizling.",
-  "about": "sopečných kopcích u Balatonu"
+  "about": "sopečných kopcích u Balatonu",
+  "irony_prompt": "A cluster of flat-topped volcanic hills rises dramatically along a lakeshore, filling the frame, dark basalt columns visible beneath neat rows of vineyards climbing their slopes. Smaller and subordinate: a wine cellar door built into the hillside; swallows overhead; the lake glinting below. MOOD: proud, picturesque."
  },
  {
   "id": "hu-k-lanchid",
@@ -1369,7 +1435,8 @@
   "quip_wrong": "Blízko, ale ne úplně – Budapešť má přes Dunaj víc mostů, ale ten hlídaný kamennými lvy se jmenuje jinak.",
   "explanation": "Řetězový most byl první stálý most přes Dunaj v Budapešti – než ho postavili, lidé se přes řeku museli plavit loďkami nebo po dřevěném pontonovém mostě, který se v zimě musel kvůli ledu rozebírat.",
   "about": "Řetězovém mostě",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a stone bridge guarded by lion statues spanning a wide river between two riverbanks"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a stone bridge guarded by lion statues spanning a wide river between two riverbanks",
+  "irony_prompt": "Two enormous stone lion statues guard the entrance to a grand chain-suspension bridge, filling the frame, both roaring proudly with their mouths wide open and suspiciously empty of tongues. Smaller and subordinate: the chains looping gracefully overhead; the river below; a pigeon perched on a lion's paw. MOOD: playful, kid-friendly."
  },
  {
   "id": "hu-t-buda-pest-krajina",
@@ -1390,7 +1457,8 @@
   "quip_wrong": "Skoro obráceně, nebo úplně mimo — kopce a rovina v Budapešti mají přesně opačné rozdělení, než napovídá tvůj tip.",
   "explanation": "Budínské kopce dosahují výšky přes 500 metrů (nejvyšší je János-hegy), zatímco pešťská strana leží v nadmořské výšce kolem 100 metrů — rozdíl je vidět i z letadla při přistání.",
   "about": "topografii Budapešti",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a hilly riverbank on one side and a flat riverbank on the other, a wide river between them"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a hilly riverbank on one side and a flat riverbank on the other, a wide river between them",
+  "irony_prompt": "A wide river fills the frame flowing between two dramatically different landscapes — steep green hills rising on one bank, a perfectly flat plain stretching on the other. Smaller and subordinate: a funicular climbing the hilly side; church spires on the flat side; a bridge connecting both banks. MOOD: quietly striking, geographic."
  },
  {
   "id": "hu-t-hungaroring",
@@ -1411,7 +1479,8 @@
   "quip_wrong": "Lákavý tip, ale vedle — Balaton, Debrecín nebo centrum Budapešti zní lákavě, ale piloti F1 zatáčejí jinde, na okruhu postaveném přesně pro tenhle účel.",
   "explanation": "Hungaroring se otevřel v roce 1986 jako první okruh Formule 1 v tehdejším východním bloku a je proslulý úzkou klikatou tratí, na které se závodníkům extrémně těžko předjíždí.",
   "about": "okruhu Hungaroring",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a winding racetrack curving through green hills with a lone racing car"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a winding racetrack curving through green hills with a lone racing car",
+  "irony_prompt": "A single racing car leans hard into a tight curve on a winding racetrack that snakes through green rolling hills, filling the frame, tyre smoke trailing behind it. Smaller and subordinate: grandstands in the distance; a checkered marker post; trackside greenery. MOOD: fast, exciting."
  },
  {
   "id": "hu-a-houdini",
@@ -1432,7 +1501,8 @@
   "quip_wrong": "Skoro slavné, ale ne správné — New York, Vídeň, Praha, zvučná města, špatná odpověď. Otec všech únikových triků se narodil o dost skromněji.",
   "explanation": "Erik Weisz se narodil v Budapešti roku 1874 a do USA emigroval jako čtyřletý s rodinou; umělecké jméno Houdini si vzal později podle francouzského kouzelníka Jeana Eugèna Robert-Houdina.",
   "about": "Harrym Houdinim",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; an escape artist in chains inside an old wooden trunk, a spotlight on a stage"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; an escape artist in chains inside an old wooden trunk, a spotlight on a stage",
+  "irony_prompt": "A famous escape artist in chains struggles dramatically inside a locked wooden trunk on a spotlit stage, filling the frame, a faint skyline of domes and bridges glowing nostalgically in a soft memory-like haze behind him. Smaller and subordinate: a padlock dangling open; a top hat on the stage floor; theatre curtains. MOOD: dramatic, theatrical."
  },
  {
   "id": "hu-k-turorudi",
@@ -1453,7 +1523,8 @@
   "quip_wrong": "Ne tak rychle – Kürtőskalács je trdelník a Dobos torta koláč, tahle čokoládová tyčinka z tvarohu se jmenuje jinak.",
   "explanation": "Túró Rudi vyrábí maďarská firma už od roku 1968 podle receptu s tvarohem (túró), typickým pro maďarskou kuchyni – a dodnes patří mezi nejoblíbenější svačinky v zemi.",
   "about": "maďarské svačince Túró Rudi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a chocolate-coated curd cheese bar unwrapped on a wooden table"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; a chocolate-coated curd cheese bar unwrapped on a wooden table",
+  "irony_prompt": "A chocolate-coated curd cheese bar sits centre-frame on a wooden table, cut open to reveal its creamy white filling in a neat rectangular cross-section. Smaller and subordinate: a glass of milk nearby; a delighted child's hand reaching for it; warm kitchen light. MOOD: cozy, kid-friendly."
  },
  {
   "id": "hu-t-csardas",
@@ -1474,7 +1545,8 @@
   "quip_wrong": "Rytmicky mimo — zpomalování, stejné tempo nebo tanec vsedě? Csárdás jde přesně opačným směrem, než sis myslel.",
   "explanation": "Název csárdás pochází od slova csárda, staré maďarské venkovské hospody, kde se tanec podle legendy poprvé tančil v 18. století.",
   "about": "maďarském tanci csárdás",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; dancers in traditional Hungarian folk costume mid-spin, a fiddler playing beside them"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; dancers in traditional Hungarian folk costume mid-spin, a fiddler playing beside them",
+  "irony_prompt": "A pair of folk dancers spin together faster and faster across a wooden floor, filling the frame with motion-blurred skirts and boots mid-whirl, a fiddler playing beside them with increasingly frantic bow strokes. Smaller and subordinate: onlookers clapping in rhythm; a lantern swaying; dust kicked up from the floor. MOOD: energetic, joyful."
  },
  {
   "id": "hu-t-libamaj",
@@ -1495,7 +1567,8 @@
   "quip_wrong": "Exotický tip, ale vedle — ryby, káva, banány? Maďarsko je vnitrozemský stát bez moře i palem, zkus to blíž kachní a husí farmě.",
   "explanation": "Maďarsko je po Francii druhým největším producentem husích a kachních jater na světě, převážná část produkce míří na export do zahraničních restaurací.",
   "about": "maďarské produkci husích jater",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; geese grazing on a misty Hungarian farmstead at dawn"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; geese grazing on a misty Hungarian farmstead at dawn",
+  "irony_prompt": "A flock of plump white geese grazes contentedly on a misty farmstead at dawn, filling the frame, clearly living a life of considerable culinary importance judging by how well cared for they are. Smaller and subordinate: a farmer scattering feed; a wooden barn in the background; morning mist rising. MOOD: quietly wry, pastoral."
  },
  {
   "id": "hu-a-martani",
@@ -1516,6 +1589,7 @@
   "quip_wrong": "Vynalézavé teorie, špatný směr — poušť, obleky, narozeniny, vtip s Marťany měl prozaičtější důvod: nikdo jejich mateřštině nerozuměl a jejich mozkům taky ne.",
   "explanation": "Všichni čtyři pocházeli z Budapešti přelomu 19. a 20. století a podíleli se na Projektu Manhattan i na vývoji poválečné informatiky — přezdívka se tradičně připisuje vtipu, který sám o sobě šířil Leó Szilárd.",
   "about": "přezdívce Marťané pro maďarské vědce",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; four scientists at a chalkboard covered in equations under warm desk lamps"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; four scientists at a chalkboard covered in equations under warm desk lamps",
+  "irony_prompt": "Four scientists huddle around a chalkboard covered in equations under warm desk lamps, filling the frame, one of them gesturing upward toward a small glowing green planet visible faintly through the window as if to acknowledge the joke about their origin. Smaller and subordinate: scattered papers; a globe on a shelf; steaming cups of tea. MOOD: quietly clever, warm."
  }
 ]

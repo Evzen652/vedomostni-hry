@@ -81,6 +81,18 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Itálie: 81/81 ilustrací. Jeden obrázek (Giro d'Italia) potřeboval PĚT pokusů — past nebyla v zadání, ale v samotném NÁPADU (tiskařský stroj/noviny si o text řekne pořád dokola, ať se scéna upravuje jakkoli).**
+  Práce pokračovala samostatně (bez uživatele) po předchozím zápisu — psaní zadání, `lint-irony`, dávka, kontrola, opravy. Zadání psal Sonnet 5, hráč u toho zvažoval, jestli je pro psaní zadání potřeba Opus — rozhodnuto zůstat na Sonnetu, kvalita byla dostatečná.
+  - **6 vad z 81 (7,4 %) v první dávce:** dvě otázky si vynutily čitelný text i přes formulaci „illegible squiggles“ (Leonardova poznámka, noviny u Gira), jedna měla falešnou smlouvu s rukopisem (Lateránská smlouva), tři měly vymyšlený podpis (sjednocení Itálie, Jaderské moře, trulli). Opraveno stejným postupem jako u Německa — **text: přestavět scénu tak, aby předmět nemohl nést popisek** (zrcadlové technické náčrtky místo poznámkového sešitu, prázdný pergamen jen s pečetěmi místo psané smlouvy); **podpis: poslat totéž zadání znovu.**
+  - **Giro d'Italia je učebnicový případ „po druhém nálezu se scéna PŘESTAVUJE, ne dolaďuje“ — tady to platilo doslova PĚTKRÁT:**
+    1. Novinový svitek → cyklisté prorážejí díru v titulní straně: **čitelný odstavec textu** na stránce.
+    2. Tiskařský lis (bez novin, jen stroj): **vymyšlená výrobní cedulka** na rámu stroje.
+    3. Tiskařský lis + explicitní „no plaques or markings of any kind": **vyražené nesmyslné slovo** na dřevěném trámu — model si cedulku domyslel přesto.
+    4. Stejné zadání znovu (náhodná vada, ne systém): **nový vymyšlený podpis** v rohu.
+    5. **Teprve úplná výměna dominanty vyřešila problém**: hora zlatých mincí místo tiskařského stroje — cyklisté šplhají po svahu k novinářské čepici na vrcholu. Bez stroje a bez novin nebylo pro text kam se schovat. **Vedlejší detail „loose newspaper pages“ v prvním pokusu s mincemi ale PADL NA STEJNOU past** (stránky s viditelným sloupcovým rozvržením a rámečky na fotky — i bez čitelných písmen to oko čte jako „noviny s textem“), takže musel zmizet i ten. **Poučení nad rámec „tiskařský stroj/noviny si vždycky řekne o text": i VEDLEJŠÍ REKVIZITA se stejným tématem nese stejné riziko, ne jen dominanta.**
+  - **Fond 3 742 otázek: bez ilustrace zbývá 2 187** (bylo 2 268). `validate` 0 chyb, `test:offline` 853.
+  - Zadání pro Británii (74) a Maďarsko (74) napsána a zkontrolována (`lint-irony` 0 chyb) souběžně s čekáním na dávky — obrázky zatím nevygenerované.
+
 - **2026-09-12 — Německo a Rakousko: 130/130 ilustrací. Zadání psaná v předchozím sezení, teď jen odesláno a zkontrolováno — 5 vad z 130 (3,8 %), jedna faktická (špatné vlajky), ne jen kosmetická.**
   Dokončení rozdělané práce z `docs/predani-ilustrace.md`. Postup stejný jako u Ruska/Kanady:
   `lint-irony` 0 chyb, `submit --only <130 id>` (dávka ~4 min), 130/130 uloženo, kontrola přes
