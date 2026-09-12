@@ -1,25 +1,27 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026**, když se zastavilo uprostřed Německa a Rakouska.
+Sepsáno **12. září 2026**, po dokončení Německa a Rakouska.
 Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení a rozhodnutí jsou
-v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko) a **2026-09-12** (Kanada).
+v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko) a **2026-09-12** (Kanada, Německo+Rakousko).
 
 ---
 
-## 1. Stav k 12. 9. 2026
+## 1. Stav k 12. 9. 2026 (večer)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **2 398** (53 zemí) |
-| Hotovo naposledy | Rusko 132/132 (11. 9.), Kanada 74/74 (12. 9., commit `a15cbc5`) |
-| Rozdělané | **Německo 66 + Rakousko 64 zadání zapsaných, obrázky NEVYGENEROVANÉ** |
+| Bez ilustrace | **2 268** (51 zemí) |
+| Hotovo naposledy | Kanada 74/74 (12. 9., commit `a15cbc5`), Německo+Rakousko 130/130 (12. 9.) |
+| Další v pořadí | **Itálie 81** — zadání zatím NEPSANÁ |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
-| Cena | ~$0,034 za obrázek v dávce, tedy ~$4,4 za Německo + Rakousko |
+| Cena | ~$0,034 za obrázek v dávce |
 
-**Necommitnuto:** `data/questions/de.json` a `data/questions/at.json` (130 nových
-`irony_prompt`). Prošly `lint-irony` (0 chyb), `validate` 0 chyb, `test:offline` 853.
-Obrázky k nim ještě nevznikly, takže se jimi nic nerozbije — jen se zatím nevyužívají.
+**Německo a Rakousko: 5 vad ze 130 (3,8 %)** — 1 faktická (`de-q-zugspitze`, otázka je o hranici
+s Rakouskem a obrázek měl švýcarskou a švédskou vlajku — obecné „two small flags“ nestačí, když
+otázka stojí na tom, KTERÉ dvě), 3 vymyšlené podpisy, 1 renderovací artefakt. `de-t-schwarzwald`
+si vyžádal TŘI pokusy (artefakt → nový podpis → čisté). Podrobný rozbor v CLAUDE.md pod
+2026-09-12 (druhý zápis pod tím datem).
 
 ---
 
@@ -88,10 +90,11 @@ neodstraní.
 
 ## 5. Co dělat dál
 
-1. **Odeslat Německo a Rakousko** — zadání jsou napsaná a zkontrolovaná, chybí jen dávka.
-2. Pak podle velikosti fondu: Itálie 81, Británie 74, Maďarsko 74, Švédsko 67,
-   Francie 65, Slovensko 64, Nizozemsko 63, Švýcarsko 62, Španělsko 62, Řecko 53…
+1. **Napsat zadání pro Itálii (81)** — další v pořadí podle velikosti fondu.
+2. Pak: Británie 74, Maďarsko 74, Švédsko 67, Francie 65, Slovensko 64, Nizozemsko 63,
+   Švýcarsko 62, Španělsko 62, Řecko 53…
 3. Po každé zemi: zápis do CLAUDE.md, `validate`, `test:offline`, commit na pracovní větev.
 
-**Nezapomeň:** obrázky jsou v repu (dnes 184 MB + 17 MB Kanada), takže při nasazení
-přibývají i do `dist/`. Limit Cloudflare Pages je 20 000 souborů, dnes jich je ~1 470.
+**Nezapomeň:** obrázky jsou v repu (dnes 184 MB + 17 MB Kanada + ~29 MB Německo/Rakousko),
+takže při nasazení přibývají i do `dist/`. Limit Cloudflare Pages je 20 000 souborů,
+dnes jich je ~1 600.

@@ -81,6 +81,30 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Německo a Rakousko: 130/130 ilustrací. Zadání psaná v předchozím sezení, teď jen odesláno a zkontrolováno — 5 vad z 130 (3,8 %), jedna faktická (špatné vlajky), ne jen kosmetická.**
+  Dokončení rozdělané práce z `docs/predani-ilustrace.md`. Postup stejný jako u Ruska/Kanady:
+  `lint-irony` 0 chyb, `submit --only <130 id>` (dávka ~4 min), 130/130 uloženo, kontrola přes
+  archy 3×3, arch dolních rohů, zvětšené výřezy podezřelých míst. Cena ~$4,4.
+  - **Nový typ vady, který dosavadní seznam nekryl: obrázek popřel vlastní odpověď.**
+    `de-q-zugspitze` (vrchol leží na hranici s Rakouskem) dostal švýcarskou a švédskou vlajku
+    místo německé a rakouské — zadání říkalo jen „two small flags", model si domaloval, co ho
+    napadlo. **Obecné „dvě vlajky" nestačí, když je otázka přímo o tom, KTERÉ dvě** — muselo se
+    napsat barevné schéma obou vlajek výslovně (černo-červeno-zlatá / červeno-bílo-červená).
+    Po opravě zadání čisté napoprvé.
+  - **Podpis se objevil TŘIKRÁT ve 130 kusech, pokaždé jinde a jednou i PO přegenerování stejného
+    zadání** (`de-t-schwarzwald` dostal při prvním přegenerování nový podpis „Bongiem" místo
+    původního renderovacího artefaktu — vyžádalo si to ještě třetí pokus). Potvrzuje to zápis
+    u Kanady: zákaz v receptu podpis omezuje, ne ruší.
+  - **Jeden nález byl čistý renderovací artefakt** (`de-t-schwarzwald`, první verze) — bílý
+    obdélník vyplavaný uprostřed oblohy, nesouvisí s textem ani podpisem. Přegenerování stejného
+    zadání ho odstranilo (a nahradilo dočasně podpisem, viz výš).
+  - **Falešný poplach:** drobné škrábance ve stylu dřevoryt/vousky u několika obrázků
+    (`at-k-ticha-noc-oberndorf`, tráva u `at-k-vlajka`) vypadaly na první pohled jako písmena —
+    po zvětšení šlo o obyčejnou texturu (paprsky světla, trsy trávy). Zvětšený výřez je tu
+    jediný spolehlivý rozhodčí, přehledový arch 600 px na to nestačí.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 2 268** (bylo 2 398). Německo a Rakousko mají
+    obrázek u všech svých otázek (`validate` 0 chyb, `test:offline` 853).
+
 - **2026-09-12 — Kanada: 74/74 ilustrací. Sedm vad z 81 generování, a všechny čtyři textové si vyžádala SCÉNA, ne slabý zákaz.**
   Druhá velká dávka po Rusku, stejný postup: zadání psaná v session (za ně se neplatí), `lint-irony`,
   `submit --cc ca`, dávka ~9 minut, 74/74 uloženo, kontrola očima přes archy 3×3, arch dolních rohů

@@ -118,10 +118,10 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 
 ## 4. Fronta práce
 
-**0. Ilustrace k otázkám — rozdělané, začni tady**
-Německo (66) a Rakousko (64) mají napsaná a zkontrolovaná zadání, ale obrázky se ještě
-negenerovaly; stačí odeslat dávku. Celý postup, nástroje na kontrolu a pasti jsou
-v [predani-ilustrace.md](predani-ilustrace.md). Bez ilustrace je 2 398 otázek z 3 742.
+**0. Ilustrace k otázkám — průběžná práce**
+Německo a Rakousko dokončeny (12. 9., 130/130). Další v pořadí je Itálie (81) — zadání
+zatím nenapsaná. Celý postup, nástroje na kontrolu a pasti jsou v
+[predani-ilustrace.md](predani-ilustrace.md). Bez ilustrace je 2 268 otázek z 3 742.
 
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
