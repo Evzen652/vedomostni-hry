@@ -81,6 +81,19 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Francie: 66/66 ilustrací. 4 vady z 65 generování (6 %), všechny podpisy — žádná textová vada, přestože zadání obsahuje dvě rizikové scény (tiskárna/noviny, kino).**
+  Zadání psaná v předchozím sezení, teď jen odeslána a zkontrolována — stejný postup jako
+  u ostatních zemí. Jedna otázka (`fr-t-tour`) měla obrázek už dřív, takže dávka poslala 65.
+  - **4 podpisy, všechny náhodné, všechny spravilo přeposlání stejného zadání:**
+    `fr-a-sireny` (holubi na střeše), `fr-t-lumiere` (kino s parním vlakem), `fr-t-sacre-coeur-
+    montmartre` (malíři na schodech) a `fr-k-crepes-bretan` (utěrka s třásněmi u sporáku).
+    Žádná scéna se nemusela přestavovat.
+  - **Past nenastala tam, kde se čekala.** `fr-t-lumiere` (kino, promítací plátno) a
+    `fr-q-versailles`/`fr-q-carcassonne` (cedule, plakáty) jsou přesně ten typ scény, který
+    u jiných zemí vyráběl text — tady prošly čistě. Potvrzuje to, že past je pravděpodobnostní,
+    ne jistá: i rizikový motiv projde bez vady, jen s nižší pravděpodobností.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 907.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-12 — Švédsko: 67/67 ilustrací. 5 vad ze 67 (7,5 %) — tři textové, dva podpisy; obě textové vady vznikly ze SLOVA v zadání, ne ze scény samotné.**
   Dokončeno samostatně. Postup stejný jako u předchozích zemí: `lint-irony` 0 chyb, dávka, kontrola
   přes archy 3×3, arch dolních rohů, zvětšené výřezy podezřelých míst.
