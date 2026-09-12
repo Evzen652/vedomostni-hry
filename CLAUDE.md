@@ -81,6 +81,50 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Slovensko: 66/66 ilustrací. 10 vad z 66 (15 %) — nejvyšší podíl ze všech zemí dosud, ale osm z deseti byly podpisy (náhodná vada), jen dvě byly textové.**
+  Dokončeno na začátku session: obrázky byly z minulé session vygenerované, ale NEPROŠLY
+  kontrolou očima (viz `docs/predani-ilustrace.md`). Kontrola udělala rozdíl — postup stejný
+  jako u předchozích zemí: archy 3×3, arch dolních rohů, zvětšené výřezy podezřelých míst.
+  - **Dvě textové vady, obě ze stejné příčiny jako u Švédska: KONKRÉTNÍ SLOVO v zadání
+    popisuje předmět, který nápis v realitě nese.** `sk-q-sagan` mělo „three identical
+    rainbow jerseys hanging proudly behind him like trophies" → model dokreslil na dresy
+    čitelné „IUL/UCL" a barevnou nášivku; `sk-a-valka-usa` mělo „a large plain world map"
+    → model přidal nesmyslná písmena nad Afriku, i když slovo „plain" tam bylo. Obecné
+    přídavné jméno u mapy nestačilo — pomohlo až explicitní „no place names, no labels
+    and no writing of any kind anywhere on it" a u dresů „completely blank and unmarked
+    with no crest, no patch, no lettering of any kind". Oboje opraveno jedním přeposláním.
+  - **Osm podpisů, a to je nejvíc, kolik jich kdy padlo v jedné dávce.** `sk-t-tajchy`,
+    `sk-k-morena-spring`, `sk-q-fujara`, `sk-q-demanovska-jaskyna`, `sk-q-velka-morava`,
+    `sk-q-snp`, `sk-k-ciernohronska-zeleznica`, `sk-t-modra-majolika` — všechny náhodné,
+    scéna za ně nemohla. **`sk-k-ciernohronska-zeleznica` potřebovalo TŘI pokusy**: druhé
+    přegenerování zbavilo obrázek prvního podpisu, ale vyrobilo nový, jinde ve scéně (tráva
+    u fotbalistů místo rohu u lokomotivy) — potvrzuje to poučení z Německa, že zákaz podpisu
+    v receptu riziko jen omezuje, nikdy nevynuluje.
+  - **Sporné nálezy, ponechané:** drobné škrábance na dřevěném trámu u `sk-q-stur` (rukopis
+    mnichů — nečitelné čmáranice, stejný typ jako u italského zápisníku), suk ve dřevě
+    u `sk-q-stur` (druhá kontrola), lišejník na kamenném sloupu u `sk-t-stred-evropy`
+    a fasáda domu u `sk-t-kosice-cathedral` — při 10× zvětšení se rozpadla na šum, ne na
+    čitelná písmena, takže se ponechala beze změny.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 843.** `validate` 0 chyb, `test:offline` 853.
+
+- **2026-09-12 — Zadání pro Nizozemsko (63) napsána, zkontrolována a odeslána; obrázky zatím negenerované.**
+  Psáno Sonnetem 5 přímo v session (bez API), stejně jako u předchozích zemí. Tři reálné
+  historické osoby v zadáních (Rembrandt, Van Gogh, Vermeer) i dvě citlivá témata druhé
+  světové války (Anne Franková, Hladová zima) záměrně vynechávají portrét/tvář a stavějí
+  scénu na symbolu — prázdný stojan na obraz, pootevřená knihovna se schodištěm, talíř
+  s kaší — stejný princip jako Evita v Argentině.
+  - **Past objevená při lintu: 60 z 63 zadání chybělo klíčové slovní spojení „fills the
+    frame"/„dominates the frame".** Kontrola `DOMINANTA` v `lint-irony-prompts.js` na něj
+    váže celé varování „nepojmenovaná dominanta" — psal jsem scény s jasným jedním hrdinou,
+    ale bez doslovné fráze z receptu. Po doplnění do všech 60 zadání varování zmizelo.
+    **Poučení: samotný popis jednoho jasného hrdiny nestačí, recept vyžaduje SLOVO, které
+    si lint umí ohlídat** — jinak je kontrola slepá vůči scénám, které jsou kompozičně
+    v pořádku, ale nepojmenované.
+  - **Šest jídel dostalo varování na chybějící tvar** (gouda, slaneček ×2, tulipánová kaše,
+    hranolky, poffertjes) — dopsán tvar přesným slovem ze seznamu (`round`, `shaped like`,
+    `paste`, `cone-shaped`, `stick-shaped`). Po opravě `lint-irony` 0 vlastních varování.
+  - **Odesláno `submit --cc nl`** (~$2), stav se zjišťuje přes `batch-irony-images.js status`.
+
 - **2026-09-12 — Francie: 66/66 ilustrací. 4 vady z 65 generování (6 %), všechny podpisy — žádná textová vada, přestože zadání obsahuje dvě rizikové scény (tiskárna/noviny, kino).**
   Zadání psaná v předchozím sezení, teď jen odeslána a zkontrolována — stejný postup jako
   u ostatních zemí. Jedna otázka (`fr-t-tour`) měla obrázek už dřív, takže dávka poslala 65.

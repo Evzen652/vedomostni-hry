@@ -1,21 +1,21 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno večer, po dokončení Slovenska).
+Sepsáno **12. září 2026** (aktualizováno v noci, po dokončení Slovenska a odeslání Nizozemska).
 Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení a rozhodnutí jsou
 v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko) a **2026-09-12**
-(Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie).
+(Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie, Slovensko).
 
 ---
 
-## 1. Stav k 12. 9. 2026 (večer)
+## 1. Stav k 12. 9. 2026 (noc)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 907** |
-| Hotovo dnes | Itálie 81/81, Británie 75/75, Maďarsko 74/74, Švédsko 67/67, Francie 66/66 |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Slovensko 66/66 vygenerováno, ale ZATÍM NEPROŠLO kontrolou očima** (žádný arch, žádný výřez rohů) — viz bod 2 níž |
-| Další v pořadí (po kontrole Slovenska) | Nizozemsko 63 → Švýcarsko 62 → Španělsko 62 → Řecko 53 |
+| Bez ilustrace | **1 843** |
+| Hotovo dnes | Itálie 81/81, Británie 75/75, Maďarsko 74/74, Švédsko 67/67, Francie 66/66, **Slovensko 66/66** |
+| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Nizozemsko 63 zadání odesláno (`submit --cc nl`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
+| Další v pořadí (po kontrole Nizozemska) | Švýcarsko 62 → Španělsko 62 → Řecko 53 |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -25,23 +25,27 @@ normálně. Kdyby se to stalo znovu, řešení je stejné (dobití, appka/skript
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: zkontrolovat Slovensko
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Nizozemsko
 
-Slovenských 66 obrázků (`sk-*.jpg`) je stažených v `img/`, ale **NEPROŠLY třístupňovou
-kontrolou** popsanou v bodě 4. Udělej to jako první věc:
+Dávka pro Nizozemsko (63 otázek, `batches/n87epem6oy1xa0wc0lw1qevowvv5l45j84ul`) byla
+odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
 
 ```bash
+node scripts/batch-irony-images.js status   # počkej na BATCH_STATE_SUCCEEDED
+node scripts/batch-irony-images.js fetch    # uloží do img/{id}.jpg
+
 NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" sk     # přehledové archy 3×3
-node "$NASTROJE/rohy.js" sk      # arch dolních rohů (podpisy)
+node "$NASTROJE/archy.js" nl     # přehledové archy 3×3
+node "$NASTROJE/rohy.js" nl      # arch dolních rohů (podpisy)
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-sk/`,
-pošli přes `submit --cc sk --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Švédsku a Francii výš), `validate` + `test:offline`, commit, push.
+Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-nl/`,
+pošli přes `submit --cc nl --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
+(vzor: zápisy o Slovensku a Francii výš), `validate` + `test:offline`, commit, push.
 
-**Prompty pro Slovensko** (3 shape-fix pro jídlo — kapustnica, tokaj, oštiepok) jsou
-v `data/questions/sk.json` už zapsané a `lint-irony` na nich hlásí 0 chyb.
+**Tři reálné historické osoby v zadáních (Rembrandt, Van Gogh, Vermeer) a dvě otázky
+o 2. světové válce (Anne Franková, Hladová zima) jsou psané SYMBOLICKY, bez tváře/portrétu**
+— ověř při kontrole, že to Gemini respektovalo a nevrátilo portrét ani nic přes čáru vkusu.
 
 ---
 
@@ -77,7 +81,7 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
 | `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
 Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se` a `fr`; `ca` má starší `img-zaloha-ca/`).
+`se`, `fr` a `sk`; `ca` má starší `img-zaloha-ca/`).
 
 ---
 
@@ -115,13 +119,17 @@ neodstraní.
 - **Počet, na kterém stojí fakt, piš výslovně** („exactly three …“), jinak model počítá po svém.
 - **Notové osnovy, matematické rovnice a technické náčrtky NEJSOU zakázaný text** — lint
   na ně správně nereaguje (potvrzeno u Švédska, Maďarska).
+- **Lint na „nepojmenovanou dominantu“ chce DOSLOVNOU frázi** („fills the frame“,
+  „dominates the frame“, „centre-frame“) — jasný jeden hrdina ve scéně nestačí, kontrola
+  je jinak slepá. Psát ji do první věty u KAŽDÉHO zadání (Nizozemsko: 60 z 63 to nejdřív
+  nemělo a lint to správně odchytil).
 
 ---
 
 ## 6. Co dělat dál
 
-1. **Zkontrolovat Slovensko** (bod 2 výš) — priorita číslo jedna.
-2. **Napsat zadání pro Nizozemsko (63)** a pokračovat pořadím: Švýcarsko 62, Španělsko 62,
+1. **Stáhnout a zkontrolovat Nizozemsko** (bod 2 výš) — priorita číslo jedna.
+2. **Napsat zadání pro Švýcarsko (62)** a pokračovat pořadím: Španělsko 62,
    Řecko 53, a dál podle `docs/pokracovani.md` / velikosti zbylých fondů.
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.

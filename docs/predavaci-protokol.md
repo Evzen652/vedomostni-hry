@@ -119,10 +119,10 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 ## 4. Fronta práce
 
 **0. Ilustrace k otázkám — průběžná práce**
-12. 9. dokončeny Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie (všechny
-100 % s vyřešenými defekty). **Slovensko (66) je VYGENEROVANÉ, ale zatím NEPROŠLO
-kontrolou očima — udělej to jako první věc**, viz bod 2 v
-[predani-ilustrace.md](predani-ilustrace.md). Bez ilustrace je 1 907 otázek z 3 742.
+12. 9. dokončeny Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie, Slovensko
+(všechny 100 % s vyřešenými defekty). **Nizozemsko (63) má zadání ODESLANÁ, ale obrázky
+zatím NESTAŽENÉ ani NEZKONTROLOVANÉ — udělej to jako první věc**, viz bod 2 v
+[predani-ilustrace.md](predani-ilustrace.md). Bez ilustrace je 1 843 otázek z 3 742.
 
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
