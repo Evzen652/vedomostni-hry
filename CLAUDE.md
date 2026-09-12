@@ -81,6 +81,19 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Maďarsko: 74/74 ilustrací. Nejnižší podíl vad ze všech pěti zemí zpracovaných tuhle session — jen 3 z 74 (4 %), a všechny tři byly podpisy, žádná textová.**
+  Dokončeno samostatně. Zadání pro Francii (66) napsána a zkontrolována souběžně s čekáním
+  na dávku, obrázky zatím negenerované.
+  - **Podpisy: Aggtelek (jeskyně), marcipánové muzeum, Hortobágyský most.** Všechny tři
+    opraveny jedním přegenerováním stejného zadání — žádné z nich nepotřebovalo přepis
+    scény. U mostu zůstala po opravě drobná abstraktní kresba (kolo/kompas bez písmen)
+    v rohu — posouzeno jako neškodná dekorace, ne podpis, ponecháno.
+  - **Rovnice na tabuli u „Marťanů" (čtyři maďarští vědci) jsou v pořádku** — matematický
+    zápis s proměnnými (x, a, b) se nepočítá jako zakázaný text, stejně jako notové osnovy
+    u Švédska nebo Adiny náčrty u Británie. Lint na to správně nereaguje.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 973** (bylo 2 113). `validate` 0 chyb,
+    `test:offline` 853.
+
 - **2026-09-12 — Británie: 75/75 ilustrací. 7 vad ze 74 (9,5 %) — čtyři textové, tři podpisy; poštovní schránka potřebovala TŘI pokusy, protože reálná britská schránka nese vývěsku i vyražený nápis, a model si je domýšlí i přes zákaz.**
   Dokončeno samostatně, zadání připravena souběžně s čekáním na předchozí dávky.
   - **Textové vady (4): u tří stačilo popsat předmět jako prázdný, u jedné to chtělo tři kola.**
