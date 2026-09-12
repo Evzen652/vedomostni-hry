@@ -73,7 +73,7 @@ dohromady ~4,6 kB. Když se stahuje 56 souborů a 4,7 MB, běží starý kód.
 | Příkaz | Očekávaný výsledek |
 |---|---|
 | `npm run validate` | `CHYBY: žádné` (upozornění o chybějících fotkách jsou v pořádku) |
-| `npm run test:offline` | 842 kontrol |
+| `npm run test:offline` | 853 kontrol |
 | `npm run test:pool` | 8 kontrol |
 | `npm run test:auth` | 12 kontrol |
 | `npm run test:ghost` | 67 kontrol |
@@ -119,9 +119,10 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 ## 4. Fronta práce
 
 **0. Ilustrace k otázkám — průběžná práce**
-Německo a Rakousko dokončeny (12. 9., 130/130). Další v pořadí je Itálie (81) — zadání
-zatím nenapsaná. Celý postup, nástroje na kontrolu a pasti jsou v
-[predani-ilustrace.md](predani-ilustrace.md). Bez ilustrace je 2 268 otázek z 3 742.
+12. 9. dokončeny Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie (všechny
+100 % s vyřešenými defekty). **Slovensko (66) je VYGENEROVANÉ, ale zatím NEPROŠLO
+kontrolou očima — udělej to jako první věc**, viz bod 2 v
+[predani-ilustrace.md](predani-ilustrace.md). Bez ilustrace je 1 907 otázek z 3 742.
 
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
