@@ -81,6 +81,26 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Švédsko: 67/67 ilustrací. 5 vad ze 67 (7,5 %) — tři textové, dva podpisy; obě textové vady vznikly ze SLOVA v zadání, ne ze scény samotné.**
+  Dokončeno samostatně. Postup stejný jako u předchozích zemí: `lint-irony` 0 chyb, dávka, kontrola
+  přes archy 3×3, arch dolních rohů, zvětšené výřezy podezřelých míst.
+  - **Tři textové vady měly společnou příčinu: KONKRÉTNÍ SLOVO v zadání si řeklo o vývěsku,
+    i když zbytek věty popisoval scénu jako prázdnou.** `se-t-stokholmsky-syndrom` mělo
+    „bank's brick facade" → model dokreslil ceduli „BANK"; `se-a-alkohol-paradox` mělo
+    „state liquor store" → cedule „STATE LIQUOR STORE"; `se-k-icehotel` mělo „glowing hotel"
+    → nápis „HOTEL" vyrytý do ledu. **Zákaz textu na tom nic nezměnil — model kreslí to, co
+    ten typ budovy v realitě MÁ, bez ohledu na obecné „no text" ve stylu.** Oprava ve všech
+    třech: slovo, které pojmenovává objekt nesoucí popisek (banka, obchod, hotel), z promptu
+    ÚPLNĚ ODSTRANIT a nahradit neutrálním popisem („plain brick building with a completely
+    blank facade", „plain shuttered storefront with a completely blank sign board",
+    „fortress-like structure" místo „hotel"). Stejný princip jako Kanadin autobus/tramvaj —
+    tady ale poprvé u BUDOVY, ne u dopravního prostředku.
+  - **Podpisy (2): `se-k-aurora` a `se-a-goteborska-pozar`, oba náhodné, oba spravilo
+    přeposlání stejného zadání.** Žádná scéna se nemusela přestavovat.
+  - **`se-q-abba` (drobné čmáranice na deskách) posouzeno jako abstraktní kresba desky,
+    ne text — stejný typ nálezu jako notové osnovy a rovnice u jiných zemí.**
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 972.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-12 — Maďarsko: 74/74 ilustrací. Nejnižší podíl vad ze všech pěti zemí zpracovaných tuhle session — jen 3 z 74 (4 %), a všechny tři byly podpisy, žádná textová.**
   Dokončeno samostatně. Zadání pro Francii (66) napsána a zkontrolována souběžně s čekáním
   na dávku, obrázky zatím negenerované.

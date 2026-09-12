@@ -28,7 +28,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Spi%C5%A1sk%C3%BD_hrad",
   "source_card": "sk-mista-spissky-hrad",
   "image_prompt": "Fotorealistický snímek rozlehlé kamenné zříceniny Spišského hradu na zeleném návrší, modrá obloha, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Spišském hradě"
+  "about": "Spišském hradě",
+  "irony_prompt": "A vast ruined stone castle complex sprawls across a green hilltop, filling the frame, one particularly proud tower catching the very first rays of morning sun as if celebrating an anniversary. Smaller and subordinate: a hawk circling above; wildflowers on the slope; a winding path below. MOOD: proud, majestic."
  },
  {
   "id": "sk-q-gerlachovsky-stit",
@@ -53,7 +54,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Gerlachovsk%C3%BD_%C5%A1t%C3%ADt",
   "source_card": "sk-priroda-gerlachovsky-stit",
   "image_prompt": "Fotorealistický snímek skalnatého zasněženého vrcholu Gerlachovského štítu ve Vysokých Tatrách za jasného dne, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Gerlachovském štítu"
+  "about": "Gerlachovském štítu",
+  "irony_prompt": "A sharp snow-capped peak rises dramatically above its neighboring summit, filling the frame, standing proudly alone with no cable car or crowds anywhere near it unlike the more touristy peak beside it. Smaller and subordinate: a mountaineer's ice axe planted in the snow; drifting clouds; a golden eagle soaring past. MOOD: majestic, proud."
  },
  {
   "id": "sk-q-stefanik",
@@ -76,7 +78,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Milan_Rastislav_%C5%A0tef%C3%A1nik",
   "source_card": "sk-lide-stefanik",
   "image_prompt": "Fotorealistický dobový černobílý portrétní snímek muže ve vojenské uniformě generála z počátku 20. století, studiové světlo, bez textu, 16:9",
-  "about": "Štefánikovi"
+  "about": "Štefánikovi",
+  "irony_prompt": "A tripod telescope, a general's peaked cap, and a diplomat's leather satchel sit stacked together centre-frame on a wooden desk, filling the frame, as if one extraordinarily busy person just set down all three at once between appointments. Smaller and subordinate: star charts pinned to a wall; a globe; a single candle burning late. MOOD: quietly impressive, busy."
  },
  {
   "id": "sk-q-fujara",
@@ -98,7 +101,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fujara",
   "source_card": "sk-kultura-fujara",
   "image_prompt": "Fotorealistický snímek dřevěné fujary opřené o dřevěnou stěnu horské salaše, tradiční zdobení, teplé přirozené světlo, bez textu, bez lidí, 16:9",
-  "about": "fujaře"
+  "about": "fujaře",
+  "irony_prompt": "An enormous wooden shepherd's pipe nearly as tall as the shepherd himself leans centre-frame against a mountain hut wall, filling the frame, its impossible length making an ordinary flute look like a toy in comparison. Smaller and subordinate: sheep grazing nearby; carved decorative patterns on the wood; a mountain meadow. MOOD: whimsical, proud."
  },
  {
   "id": "sk-q-drevene-kostoly",
@@ -120,7 +124,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wooden_churches_of_the_Slovak_Carpathians",
   "source_card": "sk-umeni-drevene-kostoly",
   "image_prompt": "Fotorealistický snímek tradičního dřevěného kostela ve slovenských Karpatech se strmou šindelovou střechou, horská krajina v pozadí, přirozené světlo, bez textu, bez lidí, 16:9",
-  "about": "dřevěných kostelích slovenských Karpat"
+  "about": "dřevěných kostelích slovenských Karpat",
+  "irony_prompt": "A tall wooden church with a steep shingled roof stands centre-frame in a mountain clearing, filling the frame, every joint fitted together with visible wooden pegs and notches instead of a single metal nail. Smaller and subordinate: a carpenter's wooden mallet resting nearby; mountain peaks behind; autumn leaves scattered. MOOD: quietly proud, historic."
  },
  {
   "id": "sk-q-sagan",
@@ -142,7 +147,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Peter_Sagan",
   "source_card": "sk-sport-sagan",
   "image_prompt": "Fotorealistický snímek profesionálního cyklisty v duhovém dresu mistra světa během závodu, dynamický pohyb, přirozené světlo, bez textu, 16:9",
-  "about": "Peteru Saganovi"
+  "about": "Peteru Saganovi",
+  "irony_prompt": "A triumphant cyclist in a rainbow-striped jersey fills the frame crossing the finish line for the third year running, three identical rainbow jerseys already hanging proudly behind him like trophies. Smaller and subordinate: a cheering crowd; confetti in the air; other exhausted riders trailing behind. MOOD: triumphant, proud."
  },
  {
   "id": "sk-q-vlk",
@@ -167,7 +173,8 @@
   "source_url": "https://www.istream.sk/toto-su-priklady-na-slabikotvorne-spoluhlasky-co-su-a-ako-ich-rozpoznat/",
   "source_card": "sk-jazyk-slabikotvorne-rl",
   "image_prompt": "Fotorealistický snímek dětské učebnice slovenštiny otevřené na stránce s příklady slov, školní prostředí, přirozené světlo, bez lidí, 16:9",
-  "about": "slabikotvorném r a l"
+  "about": "slabikotvorném r a l",
+  "irony_prompt": "A single grey wolf howls proudly centre-frame atop a rocky outcrop, filling the frame, its silhouette forming a shape so sharp and consonant-like that it seems to need no vowels at all to make its presence known. Smaller and subordinate: a full moon behind it; pine trees below; scattered paw prints in snow. MOOD: proud, whimsical."
  },
  {
   "id": "sk-q-halusky",
@@ -194,7 +201,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky",
   "source_card": "sk-jidlo-halusky",
   "image_prompt": "Fotorealistický snímek talíře bryndzových halušek posypaných kousky opečené slaniny, měkké teplé světlo, bez textu, bez lidí, 16:9",
-  "about": "bryndzových haluškách"
+  "about": "bryndzových haluškách",
+  "irony_prompt": "A generous plate of small potato dumplings sits centre-frame, thickly coated in creamy white sheep cheese and topped with crispy bacon bits. Smaller and subordinate: a wooden spoon resting on the plate; a rustic tablecloth; steam rising gently. MOOD: hearty, cozy."
  },
  {
   "id": "sk-q-vznik-1993",
@@ -224,7 +232,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Slovensko",
   "source_card": "sk-historie-vznik-1993",
   "image_prompt": "Fotorealistický snímek slovenské vlajky vlající před budovou parlamentu v Bratislavě, jasná obloha, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "vzniku samostatného Slovenska"
+  "about": "vzniku samostatného Slovenska",
+  "irony_prompt": "A single candle burns down to its very last moment and a fresh new one is lit right beside it exactly at the stroke of midnight, filling the frame, as fireworks begin quietly in the distance behind a dark window. Smaller and subordinate: a clock striking twelve; a bottle of wine uncorked; two glasses raised. MOOD: quietly momentous, hopeful."
  },
  {
   "id": "sk-q-bratislavsky-hrad",
@@ -246,7 +255,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Bratislavsk%C3%BD_hrad",
   "source_card": "sk-mista-bratislavsky-hrad",
   "image_prompt": "Fotorealistický snímek bílého Bratislavského hradu se čtyřmi nárožními věžemi na kopci nad řekou Dunaj za soumraku, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Bratislavském hradě"
+  "about": "Bratislavském hradě",
+  "irony_prompt": "A grand white castle with four corner towers sits centre-frame on a hilltop, filling the frame, its perfectly square shape and four legs-like towers making it look exactly like an upturned table set down on the hill. Smaller and subordinate: the Danube river below; a small boat passing; evening light glowing on the walls. MOOD: charming, quietly funny."
  },
  {
   "id": "sk-q-devin",
@@ -268,7 +278,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Dev%C3%ADn_Castle",
   "source_card": "sk-mista-devin",
   "image_prompt": "Fotorealistický snímek zříceniny hradu Devín na skalním ostrohu nad soutokem Dunaje a Moravy, podzimní odpoledne, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "hradu Devín"
+  "about": "hradu Devín",
+  "irony_prompt": "A rocky castle ruin perches dramatically on a cliff, filling the frame, overlooking the exact spot where two rivers of noticeably different colors merge into one below. Smaller and subordinate: autumn trees on the slope; a hawk circling; a small boat on the water. MOOD: majestic, historic."
  },
  {
   "id": "sk-q-demanovska-jaskyna",
@@ -290,7 +301,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Dem%C3%A4novsk%C3%A1_ledov%C3%A1_jeskyn%C4%9B",
   "source_card": "sk-priroda-demanovska-jaskyna",
   "image_prompt": "Fotorealistický snímek modře nasvícené ledové výzdoby uvnitř Demänovské ledové jeskyně, tajemná atmosféra, bez textu, bez lidí, 16:9",
-  "about": "Demänovské ledové jeskyni"
+  "about": "Demänovské ledové jeskyni",
+  "irony_prompt": "A cavern glows with pale blue ice formations frozen solid centre-frame deep underground, filling the frame, a single visitor in a warm winter coat looking bewildered as if he'd forgotten it was the middle of summer outside. Smaller and subordinate: a lantern glowing on a rock ledge; icicles hanging from the ceiling; dripping meltwater. MOOD: mysterious, quietly surprising."
  },
  {
   "id": "sk-q-slovensky-raj",
@@ -312,7 +324,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Slovak_Paradise_National_Park",
   "source_card": "sk-priroda-slovensky-raj",
   "image_prompt": "Fotorealistický snímek turisty šplhajícího po kovovém žebříku v úzké soutěsce se skalními stěnami a vodopádem, Slovenský ráj, přirozené světlo, bez textu, 16:9",
-  "about": "Slovenském ráji"
+  "about": "Slovenském ráji",
+  "irony_prompt": "A hiker climbs a metal ladder bolted directly into a narrow rocky gorge wall centre-frame, filling the frame, a waterfall crashing down right beside the ladder's rungs. Smaller and subordinate: chains bolted along the rock; a wooden walkway further up; dense green forest above the gorge. MOOD: adventurous, dramatic."
  },
  {
   "id": "sk-q-warhol",
@@ -334,7 +347,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Andy_Warhol",
   "source_card": "sk-lide-warhol",
   "image_prompt": "Fotorealistický snímek pestrobarevného pop-artového plátna ve stylu Andyho Warhola v galerii, výstavní osvětlení, bez textu, bez lidí, 16:9",
-  "about": "Andym Warholovi"
+  "about": "Andym Warholovi",
+  "irony_prompt": "A humble small village house with a simple thatched roof sits centre-frame in rolling eastern hills, filling the frame, one single window glowing with unexpectedly bright pop-art colors completely out of place with the rest of the quiet street. Smaller and subordinate: chickens pecking in the yard; a wooden fence; distant hills. MOOD: quietly ironic, charming."
  },
  {
   "id": "sk-q-dubcek",
@@ -359,7 +373,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Alexander_Dub%C4%8Dek",
   "source_card": "sk-lide-dubcek",
   "image_prompt": "Fotorealistický dobový černobílý portrétní snímek muže v obleku, vážný výraz, studiové světlo, bez textu, 16:9",
-  "about": "Alexandru Dubčekovi"
+  "about": "Alexandru Dubčekovi",
+  "irony_prompt": "A single hand rests centre-frame on a stack of official documents at a wooden desk, filling the frame, a small potted flower blooming defiantly beside an old rotary telephone as if new growth just arrived overnight. Smaller and subordinate: a window showing a city skyline; a coat draped on a chair; morning light. MOOD: quietly hopeful, historic."
  },
  {
   "id": "sk-q-vychodna",
@@ -381,7 +396,8 @@
   "source_url": "https://sk.wikipedia.org/wiki/Folkl%C3%B3rny_festival_V%C3%BDchodn%C3%A1",
   "source_card": "sk-kultura-vychodna",
   "image_prompt": "Fotorealistický snímek folklórního průvodu v krojích na amfiteátru ve Východné, hory v pozadí, slunečný den, bez textu, 16:9",
-  "about": "folklórním festivalu ve Východné"
+  "about": "folklórním festivalu ve Východné",
+  "irony_prompt": "A vast outdoor amphitheater fills with colorful folk dancers in traditional costume performing centre-frame, filling the frame, tiered mountainside seating packed with spectators watching from every direction. Smaller and subordinate: a fiddler leading the music; embroidered costumes swirling; distant mountain peaks. MOOD: festive, proud."
  },
  {
   "id": "sk-q-drotarstvo",
@@ -403,7 +419,8 @@
   "source_url": "https://ich.unesco.org/en/RL/drotarstvo-wire-craft-and-art-01478",
   "source_card": "sk-kultura-drotarstvo",
   "image_prompt": "Fotorealistický snímek starého drotára pletoucího ozdobný předmět z drátu v dílně, teplé světlo, bez textu, 16:9",
-  "about": "drotárstvu"
+  "about": "drotárstvu",
+  "irony_prompt": "A weathered craftsman's hands bend and twist a single length of wire centre-frame into an intricate decorative basket shape, filling the frame, no tools visible at all beyond the wire and his bare fingers. Smaller and subordinate: finished wire baskets hanging on the wall; a simple wooden stool; warm workshop light. MOOD: quietly skilled, proud."
  },
  {
   "id": "sk-q-fulla",
@@ -425,7 +442,8 @@
   "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_Fulla",
   "source_card": "sk-umeni-fulla",
   "image_prompt": "Fotorealistický snímek galerie s barevnými obrazy ve stylu slovenské moderny inspirované lidovým uměním, denní světlo, bez textu, bez lidí, 16:9",
-  "about": "Ľudovítu Fullovi"
+  "about": "Ľudovítu Fullovi",
+  "irony_prompt": "A vividly colorful modern painting fills the frame on a gallery wall, its bold folk-inspired shapes and patterns clearly breaking from centuries of more traditional art hanging in dimmer rooms further back. Smaller and subordinate: a gallery bench; soft spotlight; a curious visitor's silhouette. MOOD: bold, proud."
  },
  {
   "id": "sk-q-danubiana",
@@ -447,7 +465,8 @@
   "source_url": "https://de.wikipedia.org/wiki/Danubiana_Meulensteen_Art_Museum",
   "source_card": "sk-umeni-danubiana",
   "image_prompt": "Fotorealistický snímek moderní oválné budovy galerie Danubiana na poloostrově v řece Dunaj, sochy v okolní zahradě, přirozené světlo, bez textu, bez lidí, 16:9",
-  "about": "galerii Danubiana"
+  "about": "galerii Danubiana",
+  "irony_prompt": "An oval modern art gallery building sits centre-frame on a narrow peninsula, filling the frame, surrounded by river water on three sides so completely it looks like a ship that simply forgot to keep sailing. Smaller and subordinate: sculptures dotting the surrounding garden; a small boat passing; reflections in the water. MOOD: striking, quietly whimsical."
  },
  {
   "id": "sk-q-ms2002-hokej",
@@ -469,7 +488,8 @@
   "source_url": "https://en.wikipedia.org/wiki/2002_IIHF_World_Championship",
   "source_card": "sk-sport-ms2002-hokej",
   "image_prompt": "Fotorealistický snímek hokejistů v modrých dresech slavících vítězství na ledě, konfety, arénové osvětlení, bez textu, 16:9",
-  "about": "hokejovém zlatu z MS 2002"
+  "about": "hokejovém zlatu z MS 2002",
+  "irony_prompt": "A jubilant hockey team in blue jerseys hoists a golden trophy high centre-frame on the ice, filling the frame, three small crowns barely visible stitched on their chests amid the celebration pile-up. Smaller and subordinate: confetti falling; a roaring arena crowd; scattered pucks on the ice. MOOD: triumphant, joyful."
  },
  {
   "id": "sk-q-vlhova",
@@ -491,7 +511,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Petra_Vlhov%C3%A1",
   "source_card": "sk-sport-vlhova",
   "image_prompt": "Fotorealistický snímek lyžařky v cíli slalomové trati se zvednutými pažemi, sněžné hory v pozadí, přirozené světlo, bez textu, 16:9",
-  "about": "Petře Vlhové"
+  "about": "Petře Vlhové",
+  "irony_prompt": "A skier in a national team suit crosses the finish line of a slalom course with arms raised triumphantly, filling the frame, a single gold medal glinting around her neck moments later. Smaller and subordinate: snow-capped mountains behind; scattered slalom gates; a cheering crowd. MOOD: triumphant, proud."
  },
  {
   "id": "sk-q-cestina",
@@ -513,7 +534,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Slovak_language",
   "source_card": "sk-jazyk-cestina",
   "image_prompt": "Fotorealistický snímek pohraniční krajiny mezi Českem a Slovenskem, řeka a kopce, přirozené světlo, bez textu, bez lidí, 16:9",
-  "about": "srozumitelnosti slovenštiny a češtiny"
+  "about": "srozumitelnosti slovenštiny a češtiny",
+  "irony_prompt": "Two people from either side of a gentle hill greet each other warmly and shake hands centre-frame, filling the frame, both clearly speaking easily without a single moment of confusion despite standing on opposite sides of an old wooden border post. Smaller and subordinate: rolling hills behind them; a river in the valley; birds overhead. MOOD: warm, friendly."
  },
  {
   "id": "sk-q-stur",
@@ -535,7 +557,8 @@
   "source_url": "https://en.wikipedia.org/wiki/%C4%BDudov%C3%ADt_%C5%A0t%C3%BAr",
   "source_card": "sk-jazyk-stur-kodifikacia",
   "image_prompt": "Fotorealistický detailní snímek rukou psaného slovenského textu z 19. století, brk a inkoust, teplé světlo, bez lidí, 16:9",
-  "about": "Štúrově kodifikaci spisovné slovenštiny"
+  "about": "Štúrově kodifikaci spisovné slovenštiny",
+  "irony_prompt": "A small group of scholars huddles around a wooden table inside a modest rectory room, filling the frame, quill pens resting mid-thought as they lean together over a single open notebook with quiet determination. Smaller and subordinate: a candle burning low; a simple wooden cross on the wall; a window showing rolling countryside. MOOD: quietly momentous, historic."
  },
  {
   "id": "sk-q-bryndza",
@@ -557,7 +580,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Brynza",
   "source_card": "sk-jidlo-bryndza",
   "image_prompt": "Fotorealistický snímek misky bílé bryndze s kouskem chleba na dřevěném stole, měkké teplé světlo, bez textu, bez lidí, 16:9",
-  "about": "bryndze"
+  "about": "bryndze",
+  "irony_prompt": "A round wheel of soft white sheep cheese sits centre-frame on a wooden board, a small plain circular wax seal pressed into its rind as if freshly approved by an important committee. Smaller and subordinate: a cheese knife nearby; a sprig of thyme; a rustic cloth. MOOD: proud, quietly official."
  },
  {
   "id": "sk-q-kapustnica",
@@ -579,7 +603,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Kapustnica",
   "source_card": "sk-jidlo-kapustnica",
   "image_prompt": "Fotorealistický snímek misky kapustnice s uzeným masem a klobásou na štědrovečerním stole, teplé světlo, bez textu, bez lidí, 16:9",
-  "about": "kapustnici"
+  "about": "kapustnici",
+  "irony_prompt": "A steaming bowl of sauerkraut stew thick with round slices of smoked meat and sausage sits centre-frame on a candlelit Christmas Eve table, filling the frame, the very first dish set out before anything else. Smaller and subordinate: a lit candle; a decorated tree in the background; empty plates waiting their turn. MOOD: cozy, festive."
  },
  {
   "id": "sk-q-velka-morava",
@@ -604,7 +629,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Velk%C3%A1_Morava",
   "source_card": "sk-historie-velka-morava",
   "image_prompt": "Fotorealistický snímek rekonstruovaného velkomoravského hradiště s dřevěnými valy, ranní mlha, přirozené světlo, bez textu, bez lidí, 16:9",
-  "about": "Velké Moravě a Konstantinovi s Metodějem"
+  "about": "Velké Moravě a Konstantinovi s Metodějem",
+  "irony_prompt": "Two robed missionaries stand centre-frame before a wooden Great Moravian hillfort gate, filling the frame, one holding up a blank scroll of parchment as if about to give an entire people something they never had before. Smaller and subordinate: a wooden palisade wall; morning mist; a small gathered crowd waiting nearby. MOOD: quietly momentous, historic."
  },
  {
   "id": "sk-q-snp",
@@ -626,7 +652,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Slovak_National_Uprising",
   "source_card": "sk-historie-snp",
   "image_prompt": "Fotorealistický dobový snímek partyzánů a vojáků na náměstí v Banské Bystrici v roce 1944, zamračená obloha, bez textu, 16:9",
-  "about": "Slovenském národním povstání"
+  "about": "Slovenském národním povstání",
+  "irony_prompt": "A determined group of resistance fighters gathers quietly centre-frame in a mountain town square at dusk, filling the frame, rifles slung over shoulders and a resolute look shared among them before heading into the hills. Smaller and subordinate: a church spire silhouette; smoke from distant chimneys; autumn leaves blowing. MOOD: solemn, resolute, not graphic."
  },
  {
   "id": "sk-k-medved",
@@ -646,7 +673,8 @@
   "quip_correct": "Bod pro tebe! Medvěd hnědý — přes tisíc jich žije v slovenských lesích, na tak malou zemi pořádná hustota chlupatých sousedů.",
   "quip_wrong": "Ne tak docela — lev by se na slovenské hoře necítil ve své kůži, tygr s žirafou taky ne, tady odjakživa kraluje medvěd hnědý.",
   "explanation": "Slovensko má jednu z největších populací medvědů hnědých ve střední Evropě. Medvěd je také vyobrazen na slovenském erbu — stojí v modrém pruhu vedle dvojitého kříže.",
-  "about": "medvědech na Slovensku"
+  "about": "medvědech na Slovensku",
+  "irony_prompt": "A large brown bear stands proudly centre-frame at the edge of a misty forest, filling the frame, its shaggy fur catching the morning light like a shield emblem come to life. Smaller and subordinate: pine trees around it; a small stream; a curious fox watching from a distance. MOOD: majestic, kid-friendly."
  },
  {
   "id": "sk-k-bratislava-rieka",
@@ -666,7 +694,8 @@
   "quip_correct": "To bylo hned vidět! Dunaj teče skoro přes celou Evropu a Bratislava se mu klidí přímo pod okny.",
   "quip_wrong": "Popletl sis řeky? Vltava patří Praze, Rýn Německu, Temže Londýnu — Bratislava sedí na úplně jiné řece, na Dunaji.",
   "explanation": "Dunaj je druhá nejdelší řeka v Evropě — delší je jen ruská Volha. Bratislava je jedna z mála hlavních měst na světě, která zároveň hraničí se dvěma sousedními státy: Rakouskem a Maďarskem.",
-  "about": "Dunaji a Bratislavě"
+  "about": "Dunaji a Bratislavě",
+  "irony_prompt": "A wide river fills the frame flowing gently past a hilltop castle and city skyline, filling the frame, a small boat gliding along its surface catching the afternoon sun. Smaller and subordinate: swans on the water; a bridge in the distance; seagulls overhead. MOOD: cheerful, kid-friendly."
  },
  {
   "id": "sk-k-erb",
@@ -686,7 +715,8 @@
   "quip_correct": "Šikovná paměť! Ty tři kopce na znaku nejsou jen tak namalované — představují tři konkrétní pohoří, Tatry, Fatru a Matru.",
   "quip_wrong": "Zabloudil jsi k cizí vlajce — orel, lev i půlměsíc patří jiným státům. Slovenský znak má svůj vlastní pár symbolů: kříž a kopce.",
   "explanation": "Dvojitý kříž na erbu se nazývá patriarchální a symbolizuje křesťanství. Tři modré kopce pod ním představují tři historická pohoří — Tatry, Fatry a Matry. Kříž a kopce jsou na slovenském erbu od 13. století.",
-  "about": "slovenském státním znaku"
+  "about": "slovenském státním znaku",
+  "irony_prompt": "A large stylized double cross rises centre-frame from three rounded blue hills, filling the frame, painted boldly like a proud emblem on a shield. Smaller and subordinate: a decorative border of leaves; soft golden light; a fluttering ribbon. MOOD: proud, kid-friendly."
  },
  {
   "id": "sk-k-kofola",
@@ -706,7 +736,8 @@
   "quip_correct": "Bravo! A víš, proč recept na Kofolu dodnes tají? Aby žádná zahraniční limonáda nemohla okopírovat tuhle sladkohořkou chuť.",
   "quip_wrong": "Skoro, ale ne tak úplně — Pepsi, Fanta, Sprite? Všechno dovoz ze zahraničí, ten tmavý nápoj vymyšlený u nás se jmenuje Kofola.",
   "explanation": "Kofola vznikla v Československu v 60. letech jako socialistická alternativa k americké Coca-Cole. Dnes se prodává i točená — do sklenice se nalévá na čep jako pivo a je tak oblíbená, že má na Slovensku kulový stav.",
-  "about": "kofole"
+  "about": "kofole",
+  "irony_prompt": "A tall glass of dark fizzy soda sits centre-frame on a wooden bar counter, filling the frame, a thick head of foam settling slowly as if guarding a secret recipe underneath. Smaller and subordinate: ice cubes nearby; a bottle cap on the counter; condensation on the glass. MOOD: refreshing, kid-friendly."
  },
  {
   "id": "sk-k-kamzik",
@@ -727,7 +758,8 @@
   "quip_wrong": "Milý pokus, ale vedle — klokan na tatranské skále? To by byl risk i pro odvázaného klokana z Austrálie. Svišť pískne a schová se, srnec upaluje jinam — po těch stěnách skáče kamzík.",
   "explanation": "Kamzíci mají na kopytech měkký polštářek a tvrdý okraj, takže se přisají ke skále jako přísavka.",
   "about": "kamzíkovi tatranském",
-  "image_prompt": "A cute chamois standing proudly on a rocky mountain peak in High Tatras, clear blue sky, painterly watercolor style"
+  "image_prompt": "A cute chamois standing proudly on a rocky mountain peak in High Tatras, clear blue sky, painterly watercolor style",
+  "irony_prompt": "A nimble chamois with small curved horns leaps confidently across a steep rocky cliff face, filling the frame, barely touching each ledge before bounding to the next. Smaller and subordinate: alpine flowers growing in cracks; distant snowy peaks; a soaring eagle. MOOD: agile, kid-friendly."
  },
  {
   "id": "sk-k-vlkolinec",
@@ -748,7 +780,8 @@
   "quip_wrong": "Chybička se vloudila — chalupu potřenou džemem by slízli první méďové z lesa. Naštěstí barvu dodává Vlkolínci obyčejné vápno, ne bonbóny ani plastelína.",
   "explanation": "Vápno chránilo dřevo před škůdci a vesničané do něj přidávali přírodní barviva, aby měly chalupy veselé barvy. Vlkolínec je zapsán na seznam UNESCO.",
   "about": "vesnici Vlkolínec a jejích barevných chaloupkách",
-  "image_prompt": "Traditional colorful wooden houses in Vlkolínec village, bright pastel colors, green hills background, painterly watercolor style"
+  "image_prompt": "Traditional colorful wooden houses in Vlkolínec village, bright pastel colors, green hills background, painterly watercolor style",
+  "irony_prompt": "A row of charming wooden cottages painted in cheerful pastel colors lines a quiet village street, filling the frame, their timber walls glowing warmly under a clear sky. Smaller and subordinate: green hills behind the village; a wooden fence; chickens pecking in a yard. MOOD: charming, kid-friendly."
  },
  {
   "id": "sk-k-ciernohronska-zeleznica",
@@ -769,7 +802,8 @@
   "quip_wrong": "Tentokrát to nevyšlo — závodní formule kolem fotbalového hřiště? To by měl rozhodčí co dělat. Kolem hřiště ve skutečnosti jezdí parní vlak na úzkokolejce, žádné krávy ani formule.",
   "explanation": "Koleje Čiernohronské železnice tam ležely dříve, než se postavilo hřiště — fotbalisté se domluvili a trať prostě zachovali. Úzkokolejka vozila dřevo z hor od roku 1908.",
   "about": "Čiernohronské železnici a fotbalovém hřišti",
-  "image_prompt": "A vintage steam train passing alongside a green football pitch during a match, spectators watching, sunny day, painterly watercolor style"
+  "image_prompt": "A vintage steam train passing alongside a green football pitch during a match, spectators watching, sunny day, painterly watercolor style",
+  "irony_prompt": "A vintage steam train chugs along tracks running directly beside a green football pitch, filling the frame, players and spectators alike pausing mid-match to watch it pass. Smaller and subordinate: puffs of white steam; a goal post nearby; forested hills behind. MOOD: whimsical, kid-friendly."
  },
  {
   "id": "sk-k-parenica",
@@ -790,7 +824,8 @@
   "quip_wrong": "Ne úplně — díra, kostka, pyramida, nic z toho to není. Rozbalená parenica vypadá jako zamotaná stuha nebo šnek.",
   "explanation": "Sýr se nejprve paří v horké vodě, vytáhne do dlouhého pásu a pak svine do dvou spojených válečků. Pochází z oblasti Kysuce a Oravy.",
   "about": "tradičním sýru parenica",
-  "image_prompt": "Traditional Slovak parenica cheese, wound ribbon-like roll on a wooden plate, painterly watercolor style"
+  "image_prompt": "Traditional Slovak parenica cheese, wound ribbon-like roll on a wooden plate, painterly watercolor style",
+  "irony_prompt": "A pale cheese unrolled into a long coiled ribbon shape sits centre-frame on a wooden plate, filling the frame, its spiral form looking almost like a small edible snail shell. Smaller and subordinate: a cheese knife nearby; a rustic cloth; a sprig of herbs. MOOD: playful, kid-friendly."
  },
  {
   "id": "sk-k-ochtsinska-jaskyna",
@@ -811,7 +846,8 @@
   "quip_wrong": "Blízko, ale ne — zlaté dukáty na stěně jeskyně? To by byla slušná loupež, ne geologie. Ochtinská jeskyně místo toho nabízí kamenné květy a hvězdičky.",
   "explanation": "Minerál aragonit vytváří trsy tenkých jehliček, které rostou do všech stran bez ohledu na gravitaci. Ochtinská aragonitová jaskyňa je unikátní i v celosvětovém měřítku — patří k UNESCO.",
   "about": "Ochtinské aragonitové jeskyni",
-  "image_prompt": "Close-up of white aragonite mineral formations resembling delicate flowers on cave wall, painterly watercolor style"
+  "image_prompt": "Close-up of white aragonite mineral formations resembling delicate flowers on cave wall, painterly watercolor style",
+  "irony_prompt": "Delicate white mineral formations shaped like tiny flowers and stars cover a cave wall centre-frame, filling the frame, glowing softly under careful lighting deep underground. Smaller and subordinate: dripping moisture on the rock; a narrow cave passage; a miner's lantern nearby. MOOD: magical, kid-friendly."
  },
  {
   "id": "sk-k-cuvac",
@@ -832,7 +868,8 @@
   "quip_wrong": "Ne úplně — mléko, sníh ani sluníčko za to nemůžou, čuvač je bílý, aby ho bača v noci nespletl s vlkem.",
   "explanation": "Čuvač dokáže sám ubránit stádo ovcí před vlky. Název pochází ze slova čúvať — poslouchat a bdít. Je to starobylé slovenské plemeno, uznané celosvětově.",
   "about": "psím plemeni slovenský čuvač",
-  "image_prompt": "Large fluffy white Slovenský čuvač dog standing proudly next to sheep on a green mountain meadow, painterly watercolor style"
+  "image_prompt": "Large fluffy white Slovenský čuvač dog standing proudly next to sheep on a green mountain meadow, painterly watercolor style",
+  "irony_prompt": "A large fluffy white sheepdog stands proudly centre-frame among a flock of sheep at dusk, filling the frame, its bright white coat glowing clearly visible even as shadows deepen around it. Smaller and subordinate: a shepherd's crook leaning nearby; mountain silhouettes; a crescent moon rising. MOOD: gentle, kid-friendly."
  },
  {
   "id": "sk-k-opal",
@@ -853,7 +890,8 @@
   "quip_wrong": "Skoro trefa, ale ne úplně — nesvítí, nehřeje, nezvoní. Slovenský opál umí jen jedno terno: hrát všemi barvami duhy.",
   "explanation": "Slovenský opál z dolů u Dubníka byl tak slavný, že největší kus zvaný Harlekýn zdobil i korunovační klenoty francouzských císařů. Ložiska opálů jsou v Slovenském rudohoří.",
   "about": "slovenském drahém opálu",
-  "image_prompt": "A glittering polished Slovak opal gemstone showing vibrant rainbow colors against dark stone, painterly watercolor style"
+  "image_prompt": "A glittering polished Slovak opal gemstone showing vibrant rainbow colors against dark stone, painterly watercolor style",
+  "irony_prompt": "A polished opal gemstone sits centre-frame on dark velvet, filling the frame, flashing a shifting rainbow of colors as it catches the light from different angles. Smaller and subordinate: a jeweler's loupe nearby; rough uncut stones; soft display lighting. MOOD: magical, kid-friendly."
  },
  {
   "id": "sk-t-stred-evropy",
@@ -873,7 +911,8 @@
   "quip_wrong": "Tentokrát místo nesedí — Krahule si tenhle tip vůbec nevšimly.",
   "explanation": "Měření středu Evropy závisí na tom, zda započítáš ostrovy jako Island či Špicberky. Slovenský výpočet z 19. století označil Krahule u Kremnice.",
   "about": "geografickém středu Evropy u Kremnických Baní",
-  "image_prompt": "A memorial stone marking the geographical center of Europe next to an old stone church in Krahule, Slovakia, painterly watercolor style"
+  "image_prompt": "A memorial stone marking the geographical center of Europe next to an old stone church in Krahule, Slovakia, painterly watercolor style",
+  "irony_prompt": "A simple stone marker sits centre-frame beside an old countryside church wall, filling the frame, perfectly ordinary in every way except for being the exact mathematical middle of an entire continent. Smaller and subordinate: a grassy churchyard; a wooden gate; distant rolling hills. MOOD: quietly amusing, understated."
  },
  {
   "id": "sk-t-kremnica-mincovna",
@@ -893,7 +932,8 @@
   "quip_wrong": "Tentokrát by tě nerazili — mincovna razí mince už od středověku, ale tenhle nápad by nerazila.",
   "explanation": "Mincovna funguje nepřetržitě od roku 1328, což z ní dělá jeden z nejstarších stále fungujících podniků na celé planetě — přes 700 let bez přestávky.",
   "about": "Kremnické mincovně a její nepřerušené tradici",
-  "image_prompt": "Historic Kremnica mint building, gold coins being minted, elegant detail shot, painterly watercolor style"
+  "image_prompt": "Historic Kremnica mint building, gold coins being minted, elegant detail shot, painterly watercolor style",
+  "irony_prompt": "A glowing furnace and heavy press stamp plain blank golden discs centre-frame in an old stone workshop, filling the frame, the machinery looking centuries old yet still humming along exactly as it always has. Smaller and subordinate: stacks of finished blank discs; a leather apron hanging nearby; warm forge light. MOOD: proud, historic."
  },
  {
   "id": "sk-t-tajchy",
@@ -913,7 +953,8 @@
   "quip_wrong": "Tentokrát ne — tajchy měly mnohem praktičtější poslání než tohle.",
   "explanation": "Geniální systém kanálů a nádrží zachytával dešťovou vodu a zachránil štiavnické banictví před zatopením. Banská Štiavnica a tajchy jsou zapsány na seznam UNESCO.",
   "about": "štiavnických tajchách a těžbě stříbra",
-  "image_prompt": "Serene artificial lake Tajch near Banská Štiavnica surrounded by green hills and forests, painterly watercolor style"
+  "image_prompt": "Serene artificial lake Tajch near Banská Štiavnica surrounded by green hills and forests, painterly watercolor style",
+  "irony_prompt": "A calm artificial lake nestled among green hills fills the frame, its still water once quietly powering pumps deep underground in mining shafts far below. Smaller and subordinate: an old wooden sluice gate; reeds along the shore; distant mining tower ruins. MOOD: peaceful, quietly ingenious."
  },
  {
   "id": "sk-t-cicmany",
@@ -933,7 +974,8 @@
   "quip_wrong": "Trochu vedle — Čičmany inspirovaly něco úplně jiného než sportovní obuv.",
   "explanation": "Původně bílé vápenné ozdoby chránily dřevo před vlhkostí a sluncem, časem se z nich staly ikonické ornamenty — a slovenský design je dnes přenáší na oblečení, keramiku i výrobky.",
   "about": "ornamentální výzdobě v Čičmanech",
-  "image_prompt": "Black wooden log cabin with distinctive white painted geometric patterns in Čičmany, painterly watercolor style"
+  "image_prompt": "Black wooden log cabin with distinctive white painted geometric patterns in Čičmany, painterly watercolor style",
+  "irony_prompt": "A black wooden log cabin decorated with intricate white painted geometric patterns fills the frame, the same swirling motifs echoed faintly on a folded athletic jacket draped nearby. Smaller and subordinate: a wooden fence; mountain village rooftops; soft afternoon light. MOOD: charming, proud."
  },
  {
   "id": "sk-t-levoca-oltar",
@@ -953,7 +995,8 @@
   "quip_wrong": "Tentokrát ne — Mistr Pavol by tenhle tip vyřezal leda jako vtip.",
   "explanation": "Oltář byl vyřezán z lipového dřeva a jeho dokončení trvalo přibližně deset let (kolem roku 1517). Levoča je součástí UNESCO jako část Spišského hradu a okolí.",
   "about": "oltáři Mistra Pavla v Levoči",
-  "image_prompt": "Magnificent tall wooden Gothic altar inside St. James Church in Levoča, warm light, intricate carving, painterly watercolor style"
+  "image_prompt": "Magnificent tall wooden Gothic altar inside St. James Church in Levoča, warm light, intricate carving, painterly watercolor style",
+  "irony_prompt": "An enormous wooden Gothic altar towers dramatically inside a church nave, filling the frame, countless carved figures rising tier upon tier almost to the vaulted ceiling. Smaller and subordinate: candlelight flickering below; stained glass windows; a carpenter's chisel resting nearby. MOOD: awe-inspiring, solemn."
  },
  {
   "id": "sk-t-modra-majolika",
@@ -973,7 +1016,8 @@
   "quip_wrong": "Tuhle nápovědu jsi přeslechl — Modra má totiž ve svém jméně docela slušnou nápovědu.",
   "explanation": "Keramické řemeslo do oblasti přinesli habáni v 16. století — náboženská komunita, která do Uher přinesla vyspělé řemeslné techniky. Modranská majolika je zapsána na seznam nehmotného dědictví.",
   "about": "modranské majolice a hrnčířství",
-  "image_prompt": "Traditional Modra majolica pottery, white ceramic jug with blue and yellow floral ornaments, painterly watercolor style"
+  "image_prompt": "Traditional Modra majolica pottery, white ceramic jug with blue and yellow floral ornaments, painterly watercolor style",
+  "irony_prompt": "A white ceramic jug painted with bold blue and yellow floral patterns sits centre-frame on a wooden shelf, filling the frame, its colors so vivid they seem to echo the town's own name. Smaller and subordinate: a potter's wheel nearby; other painted plates; warm workshop light. MOOD: charming, proud."
  },
  {
   "id": "sk-t-herlansky-gejzir",
@@ -993,7 +1037,8 @@
   "quip_wrong": "Tentokrát ne úplně — fyzika Herľanského gejzíru je nudnější, než by sis přál.",
   "explanation": "Gejzír byl navrtán v 19. století při hledání minerálních pramenů pro lázně. Erupce se opakují periodicky díky hromadění oxidu uhličitého v podzemí.",
   "about": "Herľanském studeném gejzíru",
-  "image_prompt": "Herľany cold water geyser shooting water high into the air in a park setting, painterly watercolor style"
+  "image_prompt": "Herľany cold water geyser shooting water high into the air in a park setting, painterly watercolor style",
+  "irony_prompt": "A tall geyser shoots a column of cold water high into the air centre-frame in a quiet park, filling the frame, no steam rising from it at all unlike every other geyser anyone would expect. Smaller and subordinate: onlookers keeping a respectful distance; a wooden viewing platform; surrounding trees. MOOD: quietly surprising, dramatic."
  },
  {
   "id": "sk-t-komarno-pevnost",
@@ -1013,7 +1058,8 @@
   "quip_wrong": "Tentokrát tě pevnost odrazila — v Komárně by se tomuhle tipu jen ubránila.",
   "explanation": "Pevnostní systém v Komárně byl jedním z největších v Habsburské říši — kapacita pro desítky tisíc vojáků a systém bastionů, který Osmané i přes obléhání nikdy nepronikli.",
   "about": "protiturecké pevnosti v Komárně",
-  "image_prompt": "Massive bastions and stone walls of the historic fortress in Komárno at the confluence of rivers, painterly watercolor style"
+  "image_prompt": "Massive bastions and stone walls of the historic fortress in Komárno at the confluence of rivers, painterly watercolor style",
+  "irony_prompt": "A massive star-shaped fortress with thick stone bastions dominates the frame at the confluence of two rivers, filling the frame, its walls standing completely intact and unbreached after centuries of sieges. Smaller and subordinate: cannons pointed outward; a moat surrounding the walls; swallows nesting in the stonework. MOOD: proud, imposing."
  },
  {
   "id": "sk-a-valka-usa",
@@ -1033,7 +1079,8 @@
   "quip_wrong": "Absurdita roku 1941 byla ještě přízemnější, než sis myslel.",
   "explanation": "Vojtech Tuka vyhlásil válku USA a Velké Británii bez vědomí parlamentu i prezidenta Tisa, čímž postavil slovenskou diasporu v Americe do pozice občanů nepřátelského státu. Pittsburgh podepsal v roce 1918 Pittsburghskou dohodu, která zaručovala Slovensku autonomii v ČSR — a o 23 let později byl jeho národ formálně ve válce s ním.",
   "about": "vyhlášení války USA a Velké Británii Slovenskem v roce 1941",
-  "image_prompt": "Vintage 1940s newspaper headline reporting Slovakia's declaration of war on USA, historical tone, painterly watercolor style"
+  "image_prompt": "Vintage 1940s newspaper headline reporting Slovakia's declaration of war on USA, historical tone, painterly watercolor style",
+  "irony_prompt": "A small figure in an oversized government suit signs a declaration centre-frame at an ornate desk, filling the frame, entirely unaware of a large plain world map on the wall behind him with countless tiny pins scattered across a distant ocean exactly where his own countrymen already live. Smaller and subordinate: a quill pen; a globe on a side table; heavy velvet curtains. MOOD: quietly ironic, absurd, not graphic."
  },
  {
   "id": "sk-a-cachticka-pani",
@@ -1053,7 +1100,8 @@
   "quip_wrong": "Tentokrát vedle — případ Báthoryové je bizarnější, než dokáže vymyslet fantazie.",
   "explanation": "Palatin Juraj Thurzo potřeboval zabavit obrovské majetky Báthoryové a vyhnout se splácení královských dluhů vůči její rodině. Svědectví byla získána mučením služebnictva. Báthoryová zemřela roku 1614 ve vězení na hradě Čachtice bez toho, aby stanula před soudem.",
   "about": "případu Alžběty Báthoryové a absenci řádného soudu",
-  "image_prompt": "Dark stone corridors of Čachtice Castle, dramatic shadows, historical mystery atmosphere, painterly watercolor style"
+  "image_prompt": "Dark stone corridors of Čachtice Castle, dramatic shadows, historical mystery atmosphere, painterly watercolor style",
+  "irony_prompt": "A single narrow window is bricked up halfway centre-frame in an ancient stone castle wall, filling the frame, leaving just enough of a gap for a tray of food to be silently passed through by an unseen hand. Smaller and subordinate: ivy climbing the stonework; a raven perched nearby; a heavy iron-studded door long sealed shut. MOOD: solemn, mysterious, not graphic."
  },
  {
   "id": "sk-a-most-snp",
@@ -1073,7 +1121,8 @@
   "quip_wrong": "Cena za Most SNP byla mnohem hmatatelnější než tenhle tip.",
   "explanation": "Demolice Podhradí zničila přes dvě třetiny historického Starého Města pod hradem — včetně neologické synagogy a hustě obydlené uličky. Čtyřproudá magistrála dnes kříží místo, kde stávala stovky let stará zástavba.",
   "about": "kontroverzní výstavbě Mostu SNP v Bratislavě",
-  "image_prompt": "Modernist UFO bridge in Bratislava with castle silhouette at dusk, contrast old and new, painterly watercolor style"
+  "image_prompt": "Modernist UFO bridge in Bratislava with castle silhouette at dusk, contrast old and new, painterly watercolor style",
+  "irony_prompt": "A striking modern bridge with a flying-saucer-shaped observation deck spans a wide river centre-frame at dusk, filling the frame, an old castle silhouette watching over it from a nearby hill as if still remembering what once stood in its shadow. Smaller and subordinate: city lights reflecting in the water; a tram crossing; distant construction dust settling. MOOD: striking, quietly bittersweet."
  },
  {
   "id": "sk-a-strbske-pleso",
@@ -1093,7 +1142,8 @@
   "quip_wrong": "Byznys na Štrbském plese byl praktičtější, než zní tvůj tip.",
   "explanation": "Těžba ledu byla tak intenzivní, že se hoteliéři obávali snížení hladiny plesa. Přesto zisk z prodeje ledu platil provoz prvních tatranských hotelů. S příchodem umělého chlazení na počátku 20. století byznys zanikl.",
   "about": "těžbě ledu ze Štrbského plesa v 19. století",
-  "image_prompt": "Historical style illustration of workers harvesting ice blocks from frozen Štrbské Pleso lake in Tatras, vintage watercolor style"
+  "image_prompt": "Historical style illustration of workers harvesting ice blocks from frozen Štrbské Pleso lake in Tatras, vintage watercolor style",
+  "irony_prompt": "Workers cut large rectangular blocks of ice from a frozen glacial lake centre-frame using long saws, filling the frame, stacking them onto horse-drawn sledges bound for distant city cafés. Smaller and subordinate: snow-capped peaks behind; steaming horses' breath; a wooden sled loaded high. MOOD: quietly historic, industrious."
  },
  {
   "id": "sk-a-piestany-bahno",
@@ -1113,7 +1163,8 @@
   "quip_wrong": "Tentokrát vedle — objev léčivého bahna měl totiž čtyři nohy, ne lidský původ.",
   "explanation": "Hrabě Erdődy si všiml, že koně po práci v teplém bahnu u řeky Váh přestávají kulhat, a dal u teplých pramenů postavit první prkenné lázně. Symbolem Piešťan se stal muž rozbíjející berle — barlaník — dnes nejpopulárnější slovenská turistická socha.",
   "about": "odkrytí léčivého bahna v Piešťanech",
-  "image_prompt": "Bronze statue of a crutch breaker in Piešťany spa, elegant colonnade background, painterly watercolor style"
+  "image_prompt": "Bronze statue of a crutch breaker in Piešťany spa, elegant colonnade background, painterly watercolor style",
+  "irony_prompt": "A limping horse steps hesitantly into a warm muddy bog centre-frame beside a river, filling the frame, and a curious estate owner watches in amazement as the horse walks out again without a trace of its limp. Smaller and subordinate: reeds along the bank; a simple wooden bathhouse being built nearby; steam rising from the mud. MOOD: quietly amazed, historic."
  },
  {
   "id": "sk-a-slemence",
@@ -1133,7 +1184,8 @@
   "quip_wrong": "Slemence zažily absurditu úplně jiného druhu.",
   "explanation": "Vznikly tak dvě obce — Velké Slemence na Slovensku a Malé Slemence na Ukrajině (tehdy sovětské). Hraniční přechod byl otevřen až v roce 2005. Rodiny rozdělené přes ulici se nesměly navštěvovat přes padesát let.",
   "about": "rozdělení obce Slemence sovětsko-československou hranicí",
-  "image_prompt": "A wooden border gate and fence dividing a quiet village street in Slemence, emotional historic mood, painterly watercolor style"
+  "image_prompt": "A wooden border gate and fence dividing a quiet village street in Slemence, emotional historic mood, painterly watercolor style",
+  "irony_prompt": "A simple wooden border gate and fence cuts directly across a quiet village street centre-frame, filling the frame, two neighboring houses facing each other now separated by the barrier running right between them. Smaller and subordinate: a lone chicken pecking on one side; laundry hanging in a yard on the other; overcast sky. MOOD: solemn, quietly poignant, not graphic."
  },
  {
   "id": "sk-a-gabcikovo",
@@ -1153,7 +1205,8 @@
   "quip_wrong": "Haag řešil manévr přesnější, než napovídá tvůj tip.",
   "explanation": "Slovensko v roce 1992 přehradilo Dunaj u Čunova a přesměrovalo 80 % průtoku do přívodního kanálu na vlastní straně. Mezinárodní soudní dvůr v Haagu v roce 1997 rozhodl, že obě strany porušily smlouvu. Spor o důsledky nebyl dodnes zcela uzavřen.",
   "about": "přehrazení Dunaje a mezinárodním sporu o Gabčíkovo",
-  "image_prompt": "Massive dam structure of Gabčíkovo hydro power plant on the Danube river, aerial angle, painterly watercolor style"
+  "image_prompt": "Massive dam structure of Gabčíkovo hydro power plant on the Danube river, aerial angle, painterly watercolor style",
+  "irony_prompt": "A massive concrete dam redirects a wide river's entire flow into a single new channel centre-frame, filling the frame, the river's original curved course visible running dry and empty beside it. Smaller and subordinate: construction cranes in the distance; birds circling; a lone fisherman on the new channel. MOOD: quietly dramatic, engineering feat."
  },
  {
   "id": "sk-a-bratislavske-metro",
@@ -1173,7 +1226,8 @@
   "quip_wrong": "Po bratislavském metru zbylo něco jiného než tenhle nápad.",
   "explanation": "Stavba byla po roce 1989 zastavena kvůli nedostatku financí a změně politické priority. Nedokončené tunely a betonové výkopy v Petržalce jsou dnes cílem urban explorerů a terčem debat o tom, co s nimi dál.",
   "about": "nedokončeném projektu bratislavského metra",
-  "image_prompt": "Abandoned overgrown concrete metro tunnel entrance in Petržalka, Bratislava, urban exploration aesthetic, painterly watercolor style"
+  "image_prompt": "Abandoned overgrown concrete metro tunnel entrance in Petržalka, Bratislava, urban exploration aesthetic, painterly watercolor style",
+  "irony_prompt": "A dark concrete tunnel entrance sits abandoned and half-flooded centre-frame beneath a housing estate, filling the frame, weeds and moss creeping over tracks that were never actually laid. Smaller and subordinate: a rusted ladder leaning against the wall; dripping water echoing; a stray cat exploring cautiously. MOOD: eerie, quietly ironic."
  },
  {
   "id": "sk-k-trdelnik",
@@ -1194,7 +1248,8 @@
   "quip_wrong": "Tentokrát vedle, zkus to příště — štrúdl na rožni nad ohněm by dopadl jako uhlík. Preclík ani pagáč se taky netočí, ta trubkovitá sladkost se jmenuje trdelník.",
   "explanation": "Trdelník se peče navinutý na dřevěném válci, který se pomalu otáčí nad žhavým uhlím, a nakonec se obalí v cukru se skořicí nebo v drceném ořechu.",
   "about": "trdelníku ze Skalice",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a spiral pastry roll baking on a rotating wooden spit over glowing coals at an outdoor market stall"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a spiral pastry roll baking on a rotating wooden spit over glowing coals at an outdoor market stall",
+  "irony_prompt": "A spiral of golden pastry dough turns slowly on a wooden spit over glowing coals centre-frame, filling the frame, sugar and cinnamon coating its crisp outer layers. Smaller and subordinate: a market stall awning; other pastries cooling nearby; sparks from the coals. MOOD: warm, kid-friendly."
  },
  {
   "id": "sk-k-svist",
@@ -1215,7 +1270,8 @@
   "quip_wrong": "Ouha, málem — los v Tatrách? Ten by se tam citelně nudil, a sob tam taky nepatří. Hvízdavé zvířátko pod sněhem je svišť vrchovský.",
   "explanation": "Svišti žijí ve velkých podzemních norách, kde v zimě upadnou do hlubokého spánku a jejich tělesná teplota i tep srdce se výrazně sníží, aby vydrželi bez jídla až do jara.",
   "about": "svišti vrchovském v Tatrách",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a plump alpine marmot standing alert on a rock among mountain wildflowers in the High Tatras"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a plump alpine marmot standing alert on a rock among mountain wildflowers in the High Tatras",
+  "irony_prompt": "A plump alpine marmot stands alert centre-frame on a rock among mountain wildflowers, filling the frame, mouth open mid-whistle as an entire hidden colony dives for cover underground around it. Smaller and subordinate: scattered burrow entrances; distant peaks; fluttering butterflies. MOOD: playful, kid-friendly."
  },
  {
   "id": "sk-t-chara",
@@ -1236,7 +1292,8 @@
   "quip_wrong": "Chára měl v rukávu jiný rekord, než čekáš.",
   "explanation": "Zdeno Chára měřil 206 cm a v soutěži rychlosti střely NHL v roce 2012 nastřílel puk rychlostí 175,1 km/h, což je dodnes platný rekord soutěže.",
   "about": "hokejistovi Zdenu Chárovi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a towering ice hockey defenseman in full gear on the rink, dramatic low angle"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a towering ice hockey defenseman in full gear on the rink, dramatic low angle",
+  "irony_prompt": "A towering ice hockey defenseman winds up for a slap shot centre-frame on the rink, filling the frame, his stick already a blur while the goaltender across the ice looks visibly nervous just watching him line up. Smaller and subordinate: a roaring arena crowd; scattered pucks; bright rink lighting. MOOD: intense, kid-friendly."
  },
  {
   "id": "sk-t-tatry-nejmensi",
@@ -1257,7 +1314,8 @@
   "quip_wrong": "Vysoké Tatry mají jinou výjimečnost, než napovídá tenhle tip.",
   "explanation": "Vysoké Tatry mají rozlohu kolem 260 čtverečních kilometrů, přesto nabízí typicky alpský reliéf s ostrými štíty, ledovcovými jezery zvanými plesa a strmými dolinami.",
   "about": "Vysokých Tatrách jako nejmenších velehorách světa",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — jagged alpine peaks with a glacial lake reflecting the mountains in the High Tatras"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — jagged alpine peaks with a glacial lake reflecting the mountains in the High Tatras",
+  "irony_prompt": "A dense cluster of over twenty jagged snow-capped peaks crowds together within a surprisingly small area, filling the frame, a glacial lake mirroring them all perfectly despite how little space they actually occupy. Smaller and subordinate: alpine meadows below; a hiking trail winding between peaks; circling birds. MOOD: majestic, quietly impressive."
  },
  {
   "id": "sk-t-banic",
@@ -1278,7 +1336,8 @@
   "quip_wrong": "Banič si nechal patentovat něco úplně jiného, než tenhle tip.",
   "explanation": "Štefan Banič svůj padák v roce 1913 osobně vyzkoušel skokem z mrakodrapu ve Washingtonu a americká armáda ho následně použila jako základ pro vlastní vybavení pilotů.",
   "about": "vynálezci Štefanu Baničovi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a vintage early twentieth century fabric parachute unfurling above a city skyline"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a vintage early twentieth century fabric parachute unfurling above a city skyline",
+  "irony_prompt": "A fabric parachute unfurls dramatically above a city skyline centre-frame, filling the frame, a small determined figure dangling beneath it as astonished onlookers far below crane their necks upward. Smaller and subordinate: a tall building silhouette; scattered clouds; birds scattering in surprise. MOOD: daring, historic."
  },
  {
   "id": "sk-t-tokaj",
@@ -1299,7 +1358,8 @@
   "quip_wrong": "Královský přídomek sedí na něčem jiném, než napovídá tenhle tip.",
   "explanation": "Slovenská část vinařské oblasti Tokaj zahrnuje několik obcí na jihovýchodě Slovenska a společně s maďarskou částí je zapsána na seznamu UNESCO.",
   "about": "vinařské oblasti Tokaj na Slovensku",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — rolling vineyard hills with rows of grapevines under golden afternoon light near a small stone village"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — rolling vineyard hills with rows of grapevines under golden afternoon light near a small stone village",
+  "irony_prompt": "Rows of round golden late-harvest grapes hang heavy in clusters on the vine centre-frame in warm afternoon light, filling the frame, a single elegant wine glass filled with deep amber liquid resting on a nearby barrel as if awaiting royalty. Smaller and subordinate: a wicker picking basket; a stone village in the distance; morning mist. MOOD: proud, luxurious."
  },
  {
   "id": "sk-a-automobilova-velmoc",
@@ -1320,7 +1380,8 @@
   "quip_wrong": "Slovenský automobilový rekord vypadá jinak, než tenhle tip.",
   "explanation": "Ve fabrikách Volkswagenu, Kie, Stellantisu a Jaguar Land Roveru se ročně sjede přes milion vozů, a to při necelých 5,5 milionu obyvatel — žádná jiná země na světě nemá vyšší poměr vyrobených aut na počet lidí.",
   "about": "slovenském automobilovém průmyslu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — rows of freshly assembled cars inside a vast industrial factory hall under warm overhead lighting"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — rows of freshly assembled cars inside a vast industrial factory hall under warm overhead lighting",
+  "irony_prompt": "Rows of freshly assembled cars stretch endlessly inside a vast factory hall centre-frame, filling the frame, far more vehicles in sight than could possibly belong to the small number of workers walking between them. Smaller and subordinate: overhead conveyor arms; sparks from welding stations; stacked tires. MOOD: proud, industrious."
  },
  {
   "id": "sk-a-studna-lasky",
@@ -1341,7 +1402,8 @@
   "quip_wrong": "Pověst o studni skončila hořčeji, než napovídá tenhle tip.",
   "explanation": "Studna lásky na Trenčianském hradě je vyhloubená do skály do hloubky přes 70 metrů a její stavba měla podle historických záznamů trvat desítky let — dnes patří k nejnavštěvovanějším místům hradu.",
   "about": "studni lásky na Trenčianském hradě",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a deep stone well shaft carved into rock inside a medieval castle courtyard, dramatic light falling from above"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, weathered plaster texture background, no text, no words, no letters — a deep stone well shaft carved into rock inside a medieval castle courtyard, dramatic light falling from above",
+  "irony_prompt": "A deep stone well shaft plunges into darkness centre-frame inside a medieval castle courtyard, filling the frame, a single weathered rope and bucket hanging motionless as if the digger finally stopped, decades too late. Smaller and subordinate: castle walls surrounding the courtyard; ivy on the stones; a lone dove perched on the well's rim. MOOD: solemn, quietly tragic, not graphic."
  },
  {
   "id": "sk-k-stork-chimney",
@@ -1363,7 +1425,8 @@
   "explanation": "Čápi na Slovensku odlétají na zimu až do Afriky a na jaře se vracejí do úplně stejného hnízda.",
   "source_url": "https://cs.wikipedia.org/wiki/%C4%8C%C3%A1p_b%C3%ADl%C3%BD",
   "image_prompt": "Fotorealistický snímek bílého čápa stojícího ve velkém hnízdě z větví na komíně slovenského venkovského domu, jasná obloha, vesnice v pozadí, 16:9",
-  "about": "čápu bílém a jeho hnízdě na komíně"
+  "about": "čápu bílém a jeho hnízdě na komíně",
+  "irony_prompt": "A large white stork stands proudly centre-frame in a sprawling twig nest built directly on a farmhouse chimney, filling the frame, smoke curling out from underneath the nest without bothering the bird at all. Smaller and subordinate: a village rooftop below; a second stork circling to land; fields stretching to the horizon. MOOD: charming, kid-friendly."
  },
  {
   "id": "sk-t-kosice-cathedral",
@@ -1385,7 +1448,8 @@
   "explanation": "Dóm svaté Alžběty je nejvýchodněji položená gotická katedrála v celé Evropě a vejde se do ní přes 5000 lidí.",
   "source_url": "https://cs.wikipedia.org/wiki/D%C3%B3m_svat%C3%A9_Al%C5%BEb%C4%9Bty",
   "image_prompt": "Fotorealistický snímek gotické katedrály Dóm svaté Alžběty v centru Košic, hlavní ulice, slunečný den, lidé procházející kolem, 16:9",
-  "about": "Dómu svaté Alžběty v Košicích"
+  "about": "Dómu svaté Alžběty v Košicích",
+  "irony_prompt": "A grand gothic cathedral with towering spires dominates a town square centre-frame, filling the frame, dwarfing the town hall and every other building nearby into looking almost toy-sized by comparison. Smaller and subordinate: pigeons on the square; market stalls nearby; morning light on the spires. MOOD: majestic, kid-friendly."
  },
  {
   "id": "sk-k-ostiepok-cheese",
@@ -1407,7 +1471,8 @@
   "explanation": "Oštiepok se po vyformování ještě udí nad dřevem, čímž získá svou typickou zlatavou barvu a kouřovou chuť.",
   "source_url": "https://cs.wikipedia.org/wiki/O%C5%A1tiepok",
   "image_prompt": "Fotorealistický snímek tradičního slovenského uzeného sýra oštiepok s ozdobným vzorem na povrchu, položeného na dřevěném prkénku, 16:9",
-  "about": "oštiepku a jeho výrobě"
+  "about": "oštiepku a jeho výrobě",
+  "irony_prompt": "A round golden smoked cheese with an intricate pressed pattern sits centre-frame on a wooden board, filling the frame, its decorative surface looking as if a carved wooden stamp left its mark while the cheese was still soft. Smaller and subordinate: a wooden carving mold nearby; wisps of smoke; a rustic knife. MOOD: proud, kid-friendly."
  },
  {
   "id": "sk-k-morena-spring",
@@ -1429,6 +1494,7 @@
   "explanation": "Tento jarní zvyk se nazývá vynášení Moreny a věří se, že díky němu opravdu odejde zima a přijde jaro.",
   "source_url": "https://cs.wikipedia.org/wiki/Morana_(bohyn%C4%9B)",
   "image_prompt": "Fotorealistický snímek dětí a vesničanů na břehu řeky na Slovensku, jak pouštějí po vodě slaměnou panenku ozdobenou stuhami při jarní tradici, 16:9",
-  "about": "vynášení Moreny na jaře"
+  "about": "vynášení Moreny na jaře",
+  "irony_prompt": "A straw doll decorated with colorful ribbons drifts gently down a river centre-frame, filling the frame, a group of cheerful children waving goodbye to it from the riverbank as winter floats away with it. Smaller and subordinate: budding trees along the bank; scattered flower petals in the water; a rustic wooden bridge. MOOD: joyful, kid-friendly."
  }
 ]
