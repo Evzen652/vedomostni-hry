@@ -19,7 +19,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Akropolis_(Ath%C3%A9ny)",
   "source_card": "gr-mista-akropolis",
   "image_prompt": "Fotorealistický širokoúhlý snímek athénské Akropole s Parthenonem za zlatého odpoledního světla, pohled od města, jasná obloha, bez lidí, 16:9",
-  "about": "Akropoli a Parthenónu"
+  "about": "Akropoli a Parthenónu",
+  "irony_prompt": "A grand marble temple with towering columns fills the frame perched high above a sprawling city on a rocky hill, dwarfing every other ancient ruin scattered around its base. Smaller and subordinate: tourists climbing the worn steps; scaffolding on one restored corner; swallows circling the columns. MOOD: majestic, timeless."
  },
  {
   "id": "gr-q-meteora",
@@ -41,7 +42,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Meteora",
   "source_card": "gr-mista-meteora",
   "image_prompt": "Fotorealistický širokoúhlý snímek klášterů Meteora na vrcholcích skalních věží ve středním Řecku, ranní mlha v údolí, bez lidí, 16:9",
-  "about": "Meteoře"
+  "about": "Meteoře",
+  "irony_prompt": "A tiny stone monastery fills the frame perched impossibly on the flat summit of a towering rock pillar, a single rope-and-basket pulley system dangling down the sheer cliff face below. Smaller and subordinate: monks tending a small garden on the ledge; clouds drifting below the summit; a distant valley far underneath. MOOD: awe-inspiring, serene."
  },
  {
   "id": "gr-q-santorini",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Santorini",
   "source_card": "gr-mista-santorini",
   "image_prompt": "Fotorealistický širokoúhlý snímek bílých domů na útesu Oia na Santorini nad modrou kalderou, západ slunce, bez lidí, 16:9",
-  "about": "Santorini"
+  "about": "Santorini",
+  "irony_prompt": "A dramatic crescent-shaped island cliff fills the frame with whitewashed houses clinging along its curved rim, the deep flooded volcanic caldera stretching out below like a bite taken from the island. Smaller and subordinate: a cruise ship anchored in the caldera; a donkey path zigzagging down the cliff; a sunset glowing behind. MOOD: dramatic, breathtaking."
  },
  {
   "id": "gr-q-samaria",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Samaria_Gorge",
   "source_card": "gr-priroda-samaria",
   "image_prompt": "Fotorealistický snímek soutěsky Samaria na Krétě, vysoké skalní stěny, turistická stezka mezi kameny, ranní světlo, 16:9",
-  "about": "soutěsce Samaria"
+  "about": "soutěsce Samaria",
+  "irony_prompt": "A narrow gorge fills the frame with towering rock walls stretching endlessly into the distance, a lone hiker looking tiny against the sheer scale of it. Smaller and subordinate: a wild goat perched on a ledge; a dry riverbed underfoot; a hawk circling overhead. MOOD: vast, dramatic."
  },
  {
   "id": "gr-q-olymp",
@@ -107,7 +111,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Olymp",
   "source_card": "gr-priroda-olymp",
   "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu Mytikas na hoře Olymp, dramatická obloha, pohled od úpatí, 16:9",
-  "about": "hoře Olymp"
+  "about": "hoře Olymp",
+  "irony_prompt": "A grand mountain summit fills the frame wreathed in clouds, a throne of clouds at its peak occupied by a thunderbolt-wielding figure surrounded by eleven other seated figures in a circle. Smaller and subordinate: an eagle perched on the throne's arm; lightning flickering at the edges; mortals looking up from the valley far below. MOOD: majestic, mythical, not graphic."
  },
  {
   "id": "gr-q-navagio",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Navagio",
   "source_card": "gr-priroda-navagio",
   "image_prompt": "Fotorealistický širokoúhlý snímek pláže Navagio na Zakynthosu s vrakem lodi na bílém písku, tyrkysové moře, pohled shora z útesu, 16:9",
-  "about": "pláži Navagio"
+  "about": "pláži Navagio",
+  "irony_prompt": "A rusted shipwreck fills the frame beached dramatically on a pristine white sand cove, turquoise water lapping gently against its broken hull. Smaller and subordinate: tourists taking photos from a boat nearby; scattered cardboard cartons washed up on the sand; seabirds perched on the mast. MOOD: dramatic, scenic."
  },
  {
   "id": "gr-q-alexandr-veliky",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
   "source_card": "gr-lide-alexandr-veliky",
   "image_prompt": "Fotorealistický snímek mramorové sochy Alexandra Velikého v aténském muzeu, klasické antické sochařství, měkké světlo, 16:9",
-  "about": "Alexandru Velikému"
+  "about": "Alexandru Velikému",
+  "irony_prompt": "A young king's crown and cloak fill the frame laid ceremoniously across an ornate throne, a war map spread open on a table beside it showing arrows sweeping across three continents. Smaller and subordinate: a horse's bridle resting nearby; a general's helmet; a torch flickering. MOOD: ambitious, commanding, not graphic."
  },
  {
   "id": "gr-q-maria-callas",
@@ -173,7 +180,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Maria_Callas",
   "source_card": "gr-lide-maria-callas",
   "image_prompt": "Fotorealistický dobový portrét operní pěvkyně Marie Callas na jevišti, dramatické scénické osvětlení, 16:9",
-  "about": "Marii Callas"
+  "about": "Marii Callas",
+  "irony_prompt": "An American passport fills the frame lying closed and set gently aside on a velvet cushion, a Greek passport open proudly beside it under a spotlight, as if on an opera stage. Smaller and subordinate: a bouquet of roses; a conductor's baton; a curtain half-drawn. MOOD: dramatic, resolute."
  },
  {
   "id": "gr-q-venizelos",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Eleftherios_Venizelos",
   "source_card": "gr-lide-venizelos",
   "image_prompt": "Fotorealistický dobový portrét Elefthéria Venizélose v obleku, vážný výraz, studiové osvětlení počátku 20. století, 16:9",
-  "about": "Elefthériu Venizélosovi"
+  "about": "Elefthériu Venizélosovi",
+  "irony_prompt": "A large map of Greece fills the frame, its borders visibly expanding and stretching outward as pins are pushed into new territories one by one by an unseen hand. Smaller and subordinate: a quill resting on a treaty; a naval flag on a side table; a globe nearby. MOOD: ambitious, historic, not graphic."
  },
  {
   "id": "gr-q-velikonoce",
@@ -217,7 +226,8 @@
   "source_url": "https://www.toprecepty.cz/clanky/2789-velikonoce-v-recku-symbolem-jsou-cervena-vejce-odhalili-jsme-tajemstvi-jak-je-spravne-nabarvit/",
   "source_card": "gr-kultura-velikonoce",
   "image_prompt": "Fotorealistický snímek košíku s tradičními červeně obarvenými velikonočními vejci na řeckém stole, jarní výzdoba, teplé světlo, 16:9",
-  "about": "řeckých pravoslavných Velikonocích"
+  "about": "řeckých pravoslavných Velikonocích",
+  "irony_prompt": "A basket overflowing with deep red-dyed eggs fills the frame sitting on a festive table, one egg being cracked gently against another in the traditional tapping game. Smaller and subordinate: a lit candle nearby; a woven Easter bread ring; children's hands reaching eagerly. MOOD: festive, warm, not graphic."
  },
  {
   "id": "gr-q-jmeniny",
@@ -239,7 +249,8 @@
   "source_url": "https://www.xpatathens.com/living-in-athens/taste-experience/greek-traditions/item/1590-name-days-name-day-customs-in-greece",
   "source_card": "gr-kultura-jmeniny",
   "image_prompt": "Fotorealistický snímek slavnostně prostřeného řeckého stolu s hosty a sladkostmi při oslavě jmenin, teplé domácí osvětlení, 16:9",
-  "about": "řeckých jmeninách"
+  "about": "řeckých jmeninách",
+  "irony_prompt": "A festive table fills the frame overflowing with cakes and gifts to celebrate a saint's name, while a small forgotten birthday cake with unlit candles sits pushed to the side, completely ignored. Smaller and subordinate: a guest arriving with flowers; a coffee pot steaming; neighbors dropping by unannounced. MOOD: warm, communal, wry."
  },
  {
   "id": "gr-q-karneval-patra",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Patras_Carnival",
   "source_card": "gr-kultura-karneval-patra",
   "image_prompt": "Fotorealistický snímek barevného karnevalového průvodu v ulicích Patrasu, konfety ve vzduchu, alegorické vozy, denní světlo, 16:9",
-  "about": "karnevalu v Patrasu"
+  "about": "karnevalu v Patrasu",
+  "irony_prompt": "A giant colorful parade float fills the frame rolling through cheering crowds, a towering effigy of a carnival king seated proudly on top just before being set alight. Smaller and subordinate: confetti raining down; masked revelers dancing alongside; fireworks bursting overhead. MOOD: festive, dramatic, not graphic."
  },
  {
   "id": "gr-q-el-greco",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/El_Greco",
   "source_card": "gr-umeni-el-greco",
   "image_prompt": "Fotorealistický snímek staré byzantské ikony na dřevěné desce se zlatým pozadím, ateliér s přirozeným světlem, 16:9",
-  "about": "malíři El Grecovi"
+  "about": "malíři El Grecovi",
+  "irony_prompt": "An elongated, stretched painting style fills the frame on an easel, its saintly figures rendered unnaturally tall and flame-like, a small map of Crete pinned proudly to the studio wall behind. Smaller and subordinate: jars of pigment; a well-worn paintbrush; candlelight flickering. MOOD: mystical, distinctive."
  },
  {
   "id": "gr-q-epidauros",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Theatre_of_Epidaurus",
   "source_card": "gr-umeni-epidauros",
   "image_prompt": "Fotorealistický širokoúhlý snímek antického divadla v Epidauru, kamenné řady sedadel v půlkruhu, zelené kopce v pozadí, denní světlo, 16:9",
-  "about": "divadle v Epidauru"
+  "about": "divadle v Epidauru",
+  "irony_prompt": "A vast semicircular ancient stone theater fills the frame, a single actor standing tiny at its center whispering, while spectators in the farthest top row lean in, clearly hearing him perfectly. Smaller and subordinate: pine trees framing the hillside; a dropped coin visibly audible from the stage; birds perched silently on the stone seats. MOOD: awe-inspiring, quiet."
  },
  {
   "id": "gr-q-rebetiko",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rebetiko",
   "source_card": "gr-umeni-rebetiko",
   "image_prompt": "Fotorealistický snímek starého bouzouki opřeného o stůl v řecké taverně, kouřová atmosféra, teplé večerní světlo, 16:9",
-  "about": "hudebním stylu rebetiko"
+  "about": "hudebním stylu rebetiko",
+  "irony_prompt": "A dimly lit tavern fills the frame with a musician bent intently over a long-necked instrument, weary refugees gathered close around small tables listening in shared silence. Smaller and subordinate: a smoky oil lamp; a half-empty glass of ouzo; suitcases stacked in the corner. MOOD: melancholic, soulful, not graphic."
  },
  {
   "id": "gr-q-antika-olympiada",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
   "source_card": "gr-sport-antika-olympiada",
   "image_prompt": "Fotorealistický snímek antických ruin stadionu v Olympii, kamenné startovní čáry, olivové stromy kolem, denní světlo, 16:9",
-  "about": "starověkých olympijských hrách"
+  "about": "starověkých olympijských hrách",
+  "irony_prompt": "A single flaming torch fills the frame held aloft beside towering ancient ruins and columns, a lone runner captured mid-stride on a dusty track that has clearly seen centuries of races. Smaller and subordinate: an olive wreath resting on a pedestal; a bronze discus; spectators seated on stone terraces. MOOD: timeless, ceremonial, not graphic."
  },
  {
   "id": "gr-q-atheny-1896",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
   "source_card": "gr-sport-atheny-1896",
   "image_prompt": "Fotorealistický snímek mramorového Panathinaiko stadionu v Athénách, prázdné hlediště, jasný den, 16:9",
-  "about": "olympijských hrách v Athénách 1896"
+  "about": "olympijských hrách v Athénách 1896",
+  "irony_prompt": "A modest water pitcher fills the frame set down on the ground beside a finish-line tape, a simple laborer's tunic draped over a nearby fence post where a champion's victory laurel now hangs. Smaller and subordinate: a cheering crowd in old-fashioned hats; a stopwatch dangling from an official's hand; dust settling on the track. MOOD: humble, triumphant."
  },
  {
   "id": "gr-q-euro-2004",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/UEFA_Euro_2004",
   "source_card": "gr-sport-euro-2004",
   "image_prompt": "Fotorealistický snímek řeckých fotbalistů slavících vítězství s pohárem mistrů Evropy, konfety, stadion v noci, 16:9",
-  "about": "Euru 2004"
+  "about": "Euru 2004",
+  "irony_prompt": "A betting shop's odds board fills the frame glowing with an absurdly long shot number beside a small Greek flag, while a football trophy sits gleaming triumphantly in a nearby shop window completely unnoticed. Smaller and subordinate: a stunned bookmaker scratching his head; discarded losing tickets on the floor; a jubilant fan running past outside. MOOD: wry, triumphant, ironic."
  },
  {
   "id": "gr-q-demokracie",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Democracy",
   "source_card": "gr-jazyk-demokracie",
   "image_prompt": "Fotorealistický snímek antických ruin athénské agory s mramorovými sloupy, jasný den, bez lidí, 16:9",
-  "about": "slově demokracie"
+  "about": "slově demokracie",
+  "irony_prompt": "A crowd of ordinary citizens fills the frame all gripping a shared giant scale together, tipping it firmly to their own side away from a single ornate throne left empty nearby. Smaller and subordinate: a fallen crown on the ground; an amphora tipped over; olive branches held aloft. MOOD: proud, foundational."
  },
  {
   "id": "gr-q-abeceda",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Greek_alphabet",
   "source_card": "gr-jazyk-abeceda",
   "image_prompt": "Fotorealistický detailní snímek vytesaných řeckých písmen alfa, pí a omega do mramorové desky, 16:9",
-  "about": "řecké abecedě"
+  "about": "řecké abecedě",
+  "irony_prompt": "A single open mouth fills the frame with a stream of colorful vowel-shaped sound bubbles floating out, drifting past faint ancient stone tablets carved with dense unreadable symbols in the background. Smaller and subordinate: an ancient scribe listening closely; a chisel and stone tablet; scattered pottery shards. MOOD: curious, foundational."
  },
  {
   "id": "gr-q-gymnazium",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gymnasium_(ancient_Greece)",
   "source_card": "gr-jazyk-gymnazium",
   "image_prompt": "Fotorealistický snímek antického řeckého cvičiště s kamenným sloupovím, olivové stromy kolem, denní světlo, 16:9",
-  "about": "původu slova gymnázium"
+  "about": "původu slova gymnázium",
+  "irony_prompt": "A pile of neatly folded robes and sandals fills the frame stacked beside a sunny outdoor running track, athletes' long bare-legged shadows stretching across the sand as they run in the morning light. Smaller and subordinate: a discus resting nearby; an olive oil flask; spectators watching from stone benches. MOOD: energetic, classical, not graphic."
  },
  {
   "id": "gr-q-jogurt",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Strained_yogurt",
   "source_card": "gr-jidlo-jogurt",
   "image_prompt": "Fotorealistický snímek mísy hustého řeckého jogurtu s medem a ořechy, dřevěný stůl, přirozené světlo, 16:9",
-  "about": "řeckém jogurtu"
+  "about": "řeckém jogurtu",
+  "irony_prompt": "A thick, impossibly dense spoonful of pale yogurt fills the frame standing upright without dripping, a stream of watery whey draining slowly through a cloth strainer just behind it. Smaller and subordinate: a drizzle of honey nearby; a bowl of walnuts; morning light on a kitchen counter. MOOD: wholesome, satisfying."
  },
  {
   "id": "gr-q-feta",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Feta",
   "source_card": "gr-jidlo-feta",
   "image_prompt": "Fotorealistický snímek kostek bílého sýra feta v nálevu, olivy a bylinky kolem, přirozené světlo, 16:9",
-  "about": "sýru feta"
+  "about": "sýru feta",
+  "irony_prompt": "A block of crumbly white cheese fills the frame stamped with an official wax seal, standing proudly apart from a row of pale imitation cheeses fading into shadow behind it. Smaller and subordinate: olive branches draped nearby; a wooden cheese board; a map outline visible faintly in the background. MOOD: proud, authentic."
  },
  {
   "id": "gr-q-olivovy-olej",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Olive_oil",
   "source_card": "gr-jidlo-olivovy-olej",
   "image_prompt": "Fotorealistický snímek starého olivovníkového háje na Krétě, řady stromů, sklizené olivy na zemi, teplé odpolední světlo, 16:9",
-  "about": "řeckém olivovém oleji"
+  "about": "řeckém olivovém oleji",
+  "irony_prompt": "Three tall glass bottles of golden olive oil fill the frame standing side by side on a wooden shelf, the third one slightly shorter than the two ahead of it but still gleaming proudly. Smaller and subordinate: olive branches draped nearby; a wicker basket of olives; sunlight streaming through a window. MOOD: proud, warm."
  },
  {
   "id": "gr-q-byzantska-rise",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Byzantine_Empire",
   "source_card": "gr-historie-byzantska-rise",
   "image_prompt": "Fotorealistický snímek chrámu Hagia Sofia zvenčí, byzantská kupolová architektura, večerní světlo, 16:9",
-  "about": "Byzantské říši"
+  "about": "Byzantské říši",
+  "irony_prompt": "A grand domed cathedral fills the frame with its cross being carefully lowered from the highest spire at dusk, a crescent moon symbol waiting to be raised in its place. Smaller and subordinate: banners changing along the city walls; ships anchored in the harbor; birds scattering from the towers. MOOD: solemn, historic, not graphic."
  },
  {
   "id": "gr-q-valka-za-nezavislost",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence",
   "source_card": "gr-historie-valka-za-nezavislost",
   "image_prompt": "Fotorealistický snímek řecké vlajky vlající nad starobylou pevností za úsvitu, dramatická obloha, 16:9",
-  "about": "řecké válce za nezávislost"
+  "about": "řecké válce za nezávislost",
+  "irony_prompt": "A blue and white flag fills the frame being raised for the first time over a mountain village at dawn, villagers gathering below with raised farm tools and old muskets. Smaller and subordinate: a church bell ringing; a distant fortress on a hill; smoke rising from a signal fire. MOOD: determined, hopeful, not graphic."
  },
  {
   "id": "gr-q-minojska-civilizace",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Minoan_civilization",
   "source_card": "gr-historie-minojska-civilizace",
   "image_prompt": "Fotorealistický snímek ruin paláce v Knossu na Krétě, červené sloupy, staré fresky na zdi, denní světlo, 16:9",
-  "about": "minojské civilizaci"
+  "about": "minojské civilizaci",
+  "irony_prompt": "An elaborate palace complex fills the frame with colorful frescoes of leaping bulls and dolphins covering its walls, a maze of countless interconnected rooms stretching in every direction. Smaller and subordinate: a large storage jar taller than a person; a spiral staircase; potted olive trees in a sunny courtyard. MOOD: sophisticated, ancient."
  },
  {
   "id": "gr-k-vlajka",
@@ -611,7 +638,8 @@
   "quip_correct": "Paráda, sedí to! Modrá jako nebe a moře, bílá jako pěna vln — a víc barev na té vlajce fakt není.",
   "quip_wrong": "Skoro, ale ne tak úplně — červenou si nech na jindy, řecká vlajka jede jen na modré a bílé.",
   "explanation": "Devět pruhů řecké vlajky symbolizuje podle tradice devět slabik hesla Svoboda nebo smrt ze dob boje za nezávislost.",
-  "about": "řecké vlajce"
+  "about": "řecké vlajce",
+  "irony_prompt": "A giant blue and white flag fills the frame flapping proudly against a matching blue sky with white clouds, blending almost perfectly into the scenery behind it. Smaller and subordinate: a delighted child pointing out the matching colors; seagulls flying past; a sailboat with a matching sail. MOOD: cheerful, sunny."
  },
  {
   "id": "gr-k-zeus",
@@ -631,7 +659,8 @@
   "quip_correct": "To bylo hned vidět! Král bohů si vybral horský vrchol místo paláce — asi nechtěl sousedy nad hlavou.",
   "quip_wrong": "Skoro, ale ptáš se špatného boha — trojzubec patří Poseidónovi, Zeus na Olympu vystačil s bleskem v ruce.",
   "explanation": "Zeus byl vrchní bůh starořeckého náboženství a žil s dalšími jedenácti nejvýznamnějšími bohy na hoře Olymp, která je zároveň nejvyšší horou celého Řecka.",
-  "about": "bohu Zeusovi"
+  "about": "bohu Zeusovi",
+  "irony_prompt": "A towering, thunderbolt-wielding figure fills the frame seated on a cloud throne atop a mountain peak, a delighted child looking up in wonder from the valley far below. Smaller and subordinate: an eagle perched on the throne's arm; fluffy clouds swirling; distant other gods waving cheerfully. MOOD: cheerful, majestic, not graphic."
  },
  {
   "id": "gr-k-gyros",
@@ -651,7 +680,8 @@
   "quip_correct": "Trefa, výborně! Gyros se na rožni otáčí hodiny, ale k tobě na talíř doletí za pár minut — někdo tu dře víc než ty.",
   "quip_wrong": "Ne, to je záměna s párátkem — špízy na dřevěné tyčce jsou souvlaki, maso krájené z rožně je gyros.",
   "explanation": "Slovo gyros pochází z řeckého gyrós, což znamená kruh nebo otáčení — přesně tak se maso na rožni točí celé hodiny, než se podá.",
-  "about": "gyrosu"
+  "about": "gyrosu",
+  "irony_prompt": "A giant vertical rotisserie fills the frame slowly turning with layers of sizzling meat, thin slices falling directly into a warm pita held eagerly by a delighted child below. Smaller and subordinate: a jar of tzatziki nearby; fresh tomato slices; a napkin dispenser on the counter. MOOD: cheerful, cozy, sunny."
  },
  {
   "id": "gr-k-akropolis-kopec",
@@ -671,7 +701,8 @@
   "quip_correct": "Hop, a je to! Parthenón shlíží na Athény odevšad, protože jinak než shora se dívat neumí.",
   "quip_wrong": "Na dně moře by se chrám dost špatně fotil. Zkus se podívat nahoru, na kopec Akropolis.",
   "explanation": "Slovo akropolis znamená řecky horní město — takto se nazývalo výše položené místo, kde stávaly nejdůležitější stavby celého starověkého města.",
-  "about": "Akropoli v Athénách"
+  "about": "Akropoli v Athénách",
+  "irony_prompt": "A grand hilltop temple fills the frame glowing golden at sunset, visible above the rooftops of an entire sprawling city below where a delighted child points up at it from a rooftop terrace. Smaller and subordinate: swallows circling the columns; string lights on nearby balconies; potted geraniums. MOOD: cheerful, warm, sunny."
  },
  {
   "id": "gr-k-olivy",
@@ -692,7 +723,8 @@
   "quip_wrong": "Dub by v řecké krajině vypadal jako cizinec. Tady vládnou olivovníky.",
   "explanation": "Řecko má přes 120 milionů olivovníků, z nichž mnoho je stovky let starých. Některé stromy na Krétě jsou staré přes 2000 let a stále plodí.",
   "about": "řeckých olivovnících",
-  "image_prompt": "Traditional Greek olive grove with old twisted olive trees under bright sun, painterly watercolor style"
+  "image_prompt": "Traditional Greek olive grove with old twisted olive trees under bright sun, painterly watercolor style",
+  "irony_prompt": "A vast hillside fills the frame covered entirely in silvery-green olive trees, a delighted child climbing one low sturdy branch to pick a handful of ripe olives. Smaller and subordinate: a wicker picking basket; a farmer's straw hat on a fence post; a lizard sunning on a rock wall. MOOD: cheerful, sunny."
  },
  {
   "id": "gr-k-more",
@@ -713,7 +745,8 @@
   "quip_wrong": "Zkus barvu, co na slunci nepálí paty — na Santorini je bílá, ne modrá.",
   "explanation": "Bílá omítka odrážívá sluneční světlo a udržuje v interiéru nižší teplotu. Tradice bílení domů pochází z dob osmanské nadvlády — Řekové ji přijali jako praktické řešení středomořského horka.",
   "about": "řeckých ostrovních vesnicích",
-  "image_prompt": "Whitewashed Greek houses with blue shutters on a sunny Cycladic island, painterly watercolor style"
+  "image_prompt": "Whitewashed Greek houses with blue shutters on a sunny Cycladic island, painterly watercolor style",
+  "irony_prompt": "A cluster of brilliant white houses fills the frame stacked along a steep cliffside, a delighted child running between them with a bright blue door and matching sea sparkling behind. Smaller and subordinate: potted red geraniums on windowsills; a cat napping in a doorway; a donkey resting in the shade. MOOD: cheerful, sunny, bright."
  },
  {
   "id": "gr-k-jidlo-sladke",
@@ -734,7 +767,8 @@
   "quip_wrong": "Tiramisu je italské. Ten medový zázrak z tenkého těsta se jmenuje baklava.",
   "explanation": "Baklava je vrstvený dezert z lístkového těsta, mletých ořechů a medu. V Řecku ji přinesli Osmané a Řekové ji dokonale přijali za vlastní — dnes je to jeden z nejoblíbenějších místních dezertů.",
   "about": "řecké baklavě",
-  "image_prompt": "Greek baklava with layers of phyllo, nuts, and honey syrup on a decorated plate, painterly watercolor style"
+  "image_prompt": "Greek baklava with layers of phyllo, nuts, and honey syrup on a decorated plate, painterly watercolor style",
+  "irony_prompt": "A golden, flaky pastry dessert fills the frame cut into diamond shapes, thick honey dripping slowly down its layered crispy sides. Smaller and subordinate: a delighted child licking sticky fingers; crushed nuts scattered on top; a teapot steaming nearby. MOOD: cheerful, indulgent, sunny."
  },
  {
   "id": "gr-k-narodni-tanec",
@@ -755,7 +789,8 @@
   "quip_wrong": "Zkus si vzpomenout na jiný kontinent - flamenco patří Španělsku, v kruhu se v Řecku točí sirtaki.",
   "explanation": "Sirtaki proslavil film Řek Zorba (1964), kde ho tančil Anthony Quinn. Hudba pochází od řeckého skladatele Mikise Theodorakise.",
   "about": "řeckém tanci sirtaki",
-  "image_prompt": "Group of people dancing Sirtaki in a circle at a Greek festival by the sea, painterly watercolor style"
+  "image_prompt": "Group of people dancing Sirtaki in a circle at a Greek festival by the sea, painterly watercolor style",
+  "irony_prompt": "A joyful circle of dancers fills the frame holding shoulders and kicking in unison, moving faster and faster together in a lively line. Smaller and subordinate: a delighted child copying the steps at the end of the line; a bouzouki player nearby; clapping onlookers. MOOD: cheerful, energetic, sunny."
  },
  {
   "id": "gr-k-ostrov-barva",
@@ -776,7 +811,8 @@
   "quip_wrong": "Bílý písek hledej jinde. Santorini se chlubí černým, sopečným.",
   "explanation": "Pláže na Santorini jsou černé nebo tmavě šedé díky sopečnému původu ostrova. Písek tvoří ztuhlá a rozpadlá láva. Santorini vzniklo z obří sopečné erupce před 3600 lety.",
   "about": "santorinských plážích",
-  "image_prompt": "Black sand beach of Santorini with turquoise water and dramatic white cliffs above, painterly watercolor style"
+  "image_prompt": "Black sand beach of Santorini with turquoise water and dramatic white cliffs above, painterly watercolor style",
+  "irony_prompt": "A dramatic black sand beach fills the frame contrasting sharply against brilliant turquoise water, a delighted child leaving little footprints in the dark volcanic sand. Smaller and subordinate: a striped beach umbrella; scattered smooth black pebbles; a seagull walking along the shore. MOOD: cheerful, striking, sunny."
  },
  {
   "id": "gr-k-ryba",
@@ -797,7 +833,8 @@
   "quip_wrong": "Lososa bys u řeckého mola hledal marně. Místní síť lapá hlavně sardinky.",
   "explanation": "Řecko obklopuje more ze tří stran a rybaření je součástí kultury po tisíce let. Sardinky se grilují na dřevěném uhlí a jsou jedním z nejlevnějších a nejčastějších jídel v tavernách.",
   "about": "řeckých sardinkách",
-  "image_prompt": "Grilled sardines on a rustic plate with lemon wedges and olive oil at a Greek taverna, painterly watercolor style"
+  "image_prompt": "Grilled sardines on a rustic plate with lemon wedges and olive oil at a Greek taverna, painterly watercolor style",
+  "irony_prompt": "A row of small whole grilled fish fills the frame sizzling on a charcoal grill, wedges of lemon and a drizzle of golden olive oil glistening over them. Smaller and subordinate: a delighted child waiting eagerly with a fork; a smoky grill in the background; a cat watching hopefully nearby. MOOD: cheerful, sunny, savory."
  },
  {
   "id": "gr-t-tanec-hudba",
@@ -817,7 +854,8 @@
   "quip_wrong": "V řecké taverně nehraje housle, ale bouzouki.",
   "explanation": "Bouzouki je příbuzné s tureckou sazem a do Řecka se rozšířilo ve 20. letech 20. století s uprchlíky z Malé Asie. Je základem hudebního stylu rebetiko — řeckého blues.",
   "about": "řeckém bouzouki",
-  "image_prompt": "Traditional Greek bouzouki instrument with long neck resting against a taverna wall, painterly watercolor style"
+  "image_prompt": "Traditional Greek bouzouki instrument with long neck resting against a taverna wall, painterly watercolor style",
+  "irony_prompt": "A long-necked stringed instrument fills the frame being strummed passionately by a musician in a dimly lit tavern, its strings a blur of motion. Smaller and subordinate: dancers moving nearby; a glass of ouzo on the table; warm lantern light glowing. MOOD: passionate, lively."
  },
  {
   "id": "gr-a-parthenon-vybuch",
@@ -837,7 +875,8 @@
   "quip_wrong": "Parthenón nezničilo počasí ani lidé zvenčí — bouchlo to zevnitř.",
   "explanation": "V roce 1687 benátský generál Morosini ostřeloval Atény. Střela trefila Parthenón, kde Osmané skladovali střelný prach. Výbuch vyhodil střed chrámu do vzduchu a zničil více než 2000 let starou stavbu víc než cokoliv předtím.",
   "about": "zničení Parthenónu",
-  "image_prompt": "The Parthenon on the Acropolis at dramatic dusk light showing its ruined state, painterly watercolor style"
+  "image_prompt": "The Parthenon on the Acropolis at dramatic dusk light showing its ruined state, painterly watercolor style",
+  "irony_prompt": "A grand ancient temple fills the frame with a gaping hole blasted through its once-perfect roof, scattered marble columns lying broken around its base after a great explosion. Smaller and subordinate: soldiers surveying the wreckage from a distance; smoke still curling from the ruins; startled birds scattering. MOOD: dramatic, solemn, not graphic."
  },
  {
   "id": "gr-a-fasolada",
@@ -878,7 +917,8 @@
   "quip_wrong": "Réva na Santorini roste jinak, než sis představoval — a mnohem nížeji.",
   "explanation": "Santorinský způsob pěstování révy zvané 'kouloura' (košatka) je UNESCO dědictví. Réva se neopírá o kůly, ale stáčí se do nízkého kruhu, který drží hrozny nad sopečnou půdou. Díky mlze z moře nepotřebuje zavlažování — a vinaři ji pěstují bez změn přes 3500 let.",
   "about": "santorinském vínu a réví",
-  "image_prompt": "Unique basket-trained vines in volcanic black soil on Santorini with the caldera in background, painterly watercolor style"
+  "image_prompt": "Unique basket-trained vines in volcanic black soil on Santorini with the caldera in background, painterly watercolor style",
+  "irony_prompt": "A grapevine fills the frame woven cleverly into a low circular basket shape nestled directly on volcanic black soil, sheltering its grapes from the wind. Smaller and subordinate: rows of identical basket-vines stretching across the vineyard; a distant caldera view; a farmer inspecting the grapes. MOOD: ingenious, stark."
  },
  {
   "id": "gr-k-trojsky-kun",
@@ -899,7 +939,8 @@
   "quip_wrong": "Tunel ani beranidlo — Řekové se dovnitř propašovali v bříše dřevěného koně.",
   "explanation": "Podle Homérovy pověsti válka o Tróju trvala deset let, než Řekové vymysleli lest s dřevěným koněm plným vojáků, kterého si Trójané sami vtáhli dovnitř hradeb.",
   "about": "trojském koni",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a giant wooden horse statue standing before ancient stone city gates at dusk"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a giant wooden horse statue standing before ancient stone city gates at dusk",
+  "irony_prompt": "A massive wooden horse statue fills the frame being wheeled through a city gate at night, a single trapdoor in its belly hanging slightly ajar with a soldier's boot just visible peeking out. Smaller and subordinate: torches lighting the procession; startled guards looking away; stars twinkling above the walls. MOOD: sneaky, dramatic, not graphic."
  },
  {
   "id": "gr-k-chobotnice",
@@ -920,7 +961,8 @@
   "quip_wrong": "Sítě ani mušle se na slunci nesuší kvůli obědu — visí tam chobotnice.",
   "explanation": "Chobotnice se před grilováním nejdřív několikrát udeří o kámen a pak se suší na slunci, aby maso pěkně změklo — tenhle postup se u řeckých přístavů dělá už po staletí.",
   "about": "sušených chobotnicích",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — octopus tentacles hanging to dry on a rope by a small Greek harbor, fishing boats in background"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — octopus tentacles hanging to dry on a rope by a small Greek harbor, fishing boats in background",
+  "irony_prompt": "A whole octopus fills the frame hanging by its tentacles from a clothesline near a sunny harbor, drying in the sea breeze before grilling. Smaller and subordinate: fishing boats bobbing nearby; a delighted child pointing curiously; seagulls eyeing it hungrily. MOOD: cheerful, sunny, coastal."
  },
  {
   "id": "gr-t-sparta-300",
@@ -941,7 +983,8 @@
   "quip_wrong": "Kousek vedle — číslo najdeš rovnou v názvu filmu, tam se nemýlili ani scenáristé.",
   "explanation": "Sparťanům kromě filmové trojky sekundovaly ještě tisíce dalších řeckých spojenců, ti ale byli před finálním útokem propuštěni — v pasti u Thermopyl nakonec zůstala jen ta hrstka, co měla zdržet Peršany co nejdéle.",
   "about": "bitvě u Thermopyl",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a narrow rocky mountain pass with ancient Greek warriors in bronze armor standing in formation, dramatic light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a narrow rocky mountain pass with ancient Greek warriors in bronze armor standing in formation, dramatic light",
+  "irony_prompt": "A narrow mountain pass fills the frame with a tight, unbroken shield wall of warriors standing firm, facing an overwhelming horde of shadows stretching endlessly into the distance beyond. Smaller and subordinate: a red cloak snapping in the wind; spears bristling forward; dust rising from the vast opposing army. MOOD: heroic, tense, not graphic."
  },
  {
   "id": "gr-t-korintsky-kanal",
@@ -962,7 +1005,8 @@
   "quip_wrong": "Ne tak úplně. Korintský průplav je extrémní hlavně svou úzkostí, ne šířkou nebo suchem.",
   "explanation": "Korintský průplav je dlouhý necelých 6,5 kilometru, ale jen asi 21 metrů široký při hladině, takže větší lodě jím musí táhnout remorkéry — svislé skalní stěny kolem se navíc tyčí až do výšky 90 metrů.",
   "about": "Korintském průplavu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — an extremely narrow canal cut through tall rock cliffs with a small boat passing through, steep stone walls"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — an extremely narrow canal cut through tall rock cliffs with a small boat passing through, steep stone walls",
+  "irony_prompt": "A dramatically narrow canal fills the frame slicing through towering rock walls, a massive cargo ship squeezing through with barely any gap on either side, pulled slowly by a small tugboat ahead. Smaller and subordinate: tourists watching from a bridge high above; seagulls skimming the water; a lighthouse at the canal's mouth. MOOD: dramatic, precise."
  },
  {
   "id": "gr-t-kolos-rhodu",
@@ -983,7 +1027,8 @@
   "quip_wrong": "Klid, žádný dramatický pád — osud Kolosu byl mnohem pomalejší a nudnější.",
   "explanation": "Bronzová socha slunečního boha Hélia stála u vjezdu do přístavu Rhodos jen asi 54 let, než ji roku 226 př. n. l. zlomilo zemětřesení; trosky prý nakonec odkoupil obchodník, kterému je odvezlo přes devět set velbloudů.",
   "about": "Rhodském kolosu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — fallen fragments of an ancient bronze giant statue lying broken on a Mediterranean harbor shore, weathered stone"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — fallen fragments of an ancient bronze giant statue lying broken on a Mediterranean harbor shore, weathered stone",
+  "irony_prompt": "A colossal fallen bronze statue fills the frame lying broken across a harbor for what looks like centuries, weeds and barnacles growing over its massive limbs. Smaller and subordinate: scrap merchants inspecting it with interest; ships sailing carefully around the wreckage; seabirds nesting in its hollow arm. MOOD: melancholic, monumental, not graphic."
  },
  {
   "id": "gr-t-sokrates",
@@ -1004,7 +1049,8 @@
   "quip_wrong": "Ne tak dramaticky rychle. Sókratova poprava měla úplně jinou podobu.",
   "explanation": "Sókratés byl v roce 399 př. n. l. odsouzen za kažení mládeže a bezbožnost; jeho poslední hodiny popsal žák Platón v dialogu Faidón, který se dodnes čte na hodinách filozofie.",
   "about": "Sókratovi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — an elderly philosopher in a toga sitting calmly in an ancient prison cell, soft light through a barred window"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — an elderly philosopher in a toga sitting calmly in an ancient prison cell, soft light through a barred window",
+  "irony_prompt": "A simple stone cup fills the frame resting untouched on a philosopher's table in a quiet prison cell, sunlight streaming through a barred window onto an open scroll beside it. Smaller and subordinate: devoted students seated respectfully nearby; a single olive branch on the sill; a candle burning low. MOOD: solemn, dignified, not graphic."
  },
  {
   "id": "gr-t-delfy",
@@ -1025,7 +1071,8 @@
   "quip_wrong": "Ne tak temně. Delfy měly v mytologii pozici středu světa, ne brány do podsvětí.",
   "explanation": "Podle pověsti Zeus vypustil dva orly z opačných konců světa a tam, kde se setkali, označil kámen zvaný omfalos — přesně v Delfách, kde stál i slavný Apollónův chrám s věštírnou.",
   "about": "Delfách",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — ancient stone ruins of a temple on a mountainside with a round omphalos stone marker, misty mountains behind"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — ancient stone ruins of a temple on a mountainside with a round omphalos stone marker, misty mountains behind",
+  "irony_prompt": "A carved stone marker fills the frame sitting at the exact center of a grand temple courtyard, ancient pilgrims from every direction converging toward it like spokes on a wheel. Smaller and subordinate: mist rising from a nearby chasm; olive trees framing the hillside; an eagle circling directly overhead. MOOD: mystical, central."
  },
  {
   "id": "gr-a-delfska-vestba",
@@ -1046,7 +1093,8 @@
   "quip_wrong": "Vysvětlení je mnohem přízemnější — doslova. Jde o něco, co stoupá ze země, ne o víno ani herectví.",
   "explanation": "Geologové Jelle de Boer a John Hale v roce 2001 potvrdili, že chrám v Delfách stojí přesně nad křížením dvou geologických zlomů, ze kterých mohl unikat plyn etylén, jenž ve zředěné podobě vyvolává mírnou euforii a stav podobný transu.",
   "about": "vědeckém vysvětlení delfské věštby",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a mysterious oracle temple ruin with faint mist rising from cracks in the rocky ground, dim golden light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a mysterious oracle temple ruin with faint mist rising from cracks in the rocky ground, dim golden light",
+  "irony_prompt": "A hidden crack in the temple floor fills the frame with faint wisps of vapor curling up from deep underground, a priestess seated on a tripod just above it lost in a trance. Smaller and subordinate: attendants waiting anxiously nearby; a bowl of laurel leaves; flickering oil lamps. MOOD: mystical, eerie, not graphic."
  },
  {
   "id": "gr-a-athos",
@@ -1067,7 +1115,8 @@
   "quip_wrong": "Zákaz na Athosu je konkrétnější a mnohem starší, než tipuješ.",
   "explanation": "Zákaz vstupu ženám, tzv. avaton, pochází z byzantského ediktu z roku 1046; při vstupu Řecka do Evropské unie v roce 1979 dostala tato autonomní mnišská oblast zvláštní protokol, který ji vyňal z unijních pravidel o rovnosti pohlaví.",
   "about": "hoře Athos",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a remote Byzantine monastery clinging to a steep forested cliff above the sea, misty morning light, no people"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a remote Byzantine monastery clinging to a steep forested cliff above the sea, misty morning light, no people",
+  "irony_prompt": "A tall stone monastery gate fills the frame standing firmly closed on a rocky peninsula, a small weathered sign board, its face left completely blank, mounted beside it. Smaller and subordinate: monks tending a garden within the walls; a fishing boat passing respectfully offshore; seabirds circling the towers. MOOD: solemn, quiet, not graphic."
  },
  {
   "id": "gr-a-uzo-efekt",
@@ -1088,7 +1137,8 @@
   "quip_wrong": "Zákal v ouzu nemá s mlékem ani s osvětlením nic společného — je to čistá chemie, kapička proti kapičce.",
   "explanation": "Jev se vědecky nazývá ouzo efekt neboli spontánní emulzifikace a používá se i mimo gastronomii, například ve farmacii a nanotechnologiích při výrobě mikroskopických kapiček bez použití emulgátoru.",
   "about": "ouzo efektu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a glass of clear ouzo turning milky cloudy as water is poured in, ice cubes, warm taverna table light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text, no words, no letters — a glass of clear ouzo turning milky cloudy as water is poured in, ice cubes, warm taverna table light",
+  "irony_prompt": "A clear glass of ouzo fills the frame transforming into a swirling milky cloud the instant a splash of water is poured in, ice cubes clinking as they drop. Smaller and subordinate: a bowl of olives nearby; a sunny taverna table; a fly swatted lazily away. MOOD: curious, refreshing."
  },
  {
   "id": "gr-k-sea-turtle-zakynthos",
@@ -1110,7 +1160,8 @@
   "explanation": "Samička se po letech na moři vrací klást vejce přesně na tu pláž, kde se sama kdysi vylíhla.",
   "source_url": "https://cs.wikipedia.org/wiki/Karetta_obecn%C3%A1",
   "image_prompt": "Fotorealistický snímek mořské želvy karetty plazící se po písečné pláži ostrova Zakynthos za soumraku směrem k moři, 16:9",
-  "about": "mořské želvě karetta na Zakynthosu"
+  "about": "mořské želvě karetta na Zakynthosu",
+  "irony_prompt": "A large sea turtle fills the frame digging a nest in moonlit sand, a delighted child watching quietly from a respectful distance with a flashlight covered in red film. Smaller and subordinate: gentle waves lapping nearby; a nesting sign, its face left blank, staked in the sand; stars twinkling above. MOOD: cheerful, gentle, awe-struck."
  },
  {
   "id": "gr-k-mati-blue-eye-charm",
@@ -1132,7 +1183,8 @@
   "explanation": "Modrá barva se používá proto, že podle staré pověry právě modré oči snadno uřknou, a tak má modré sklo tuto sílu odrážet zpátky.",
   "source_url": "https://en.wikipedia.org/wiki/Nazar_(amulet)",
   "image_prompt": "Fotorealistický snímek modrých skleněných amuletů mati zavěšených na stánku na řeckém tržišti, detailní záběr, 16:9",
-  "about": "řeckém amuletu mati proti uřknutí"
+  "about": "řeckém amuletu mati proti uřknutí",
+  "irony_prompt": "A large blue glass charm painted with a wide staring eye fills the frame hanging from a doorway, swaying gently in the breeze. Smaller and subordinate: a delighted child reaching up to touch it; strings of smaller matching charms nearby; a whitewashed wall behind. MOOD: cheerful, protective, sunny."
  },
  {
   "id": "gr-k-horiatiki-no-lettuce",
@@ -1154,6 +1206,7 @@
   "explanation": "Místo listové zeleniny se navrch salátu položí celý kus fety a talíř se až u stolu dosolí a pokape olivovým olejem.",
   "source_url": "https://en.wikipedia.org/wiki/Greek_salad",
   "image_prompt": "Fotorealistický snímek tradičního řeckého salátu horiatiki s rajčaty, okurkou, olivami a kouskem fety na talíři v taverně, 16:9",
-  "about": "řeckém salátu horiatiki"
+  "about": "řeckém salátu horiatiki",
+  "irony_prompt": "A colorful bowl of chunky tomatoes, cucumber, olives and a thick slab of feta fills the frame, a single wilted lettuce leaf comically tossed out and discarded on the table beside it. Smaller and subordinate: a drizzle of olive oil; a sprinkle of oregano; a delighted child pushing the lettuce further away. MOOD: cheerful, playful, sunny."
  }
 ]

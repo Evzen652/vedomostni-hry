@@ -81,6 +81,37 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Švýcarsko: 62/62 ilustrací. 7 vad z 62 (11 %) — čtyři textové, tři podpisy; Lugano potřebovalo TŘI pokusy, dvakrát kvůli textu a jednou kvůli podpisu.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **Slovo popisující KONKRÉTNÍ TYP PODNIKU si samo řeklo o nápis, počtvrté stejný
+    mechanismus jako u Švédska/Nizozemska.** `ch-q-lugano` mělo „an Italian espresso
+    bar's striped awning" → model dokreslil na markýzu „ESPRESSO BAR". Oprava: slovo
+    „espresso bar" nahrazeno obecným „café awning" — po opravě prošlo čistě, ale
+    obrázek pak ještě DVAKRÁT dostal náhodný podpis (viz níž), takže Lugano je
+    učebnicový příklad dvou nezávislých vad v jedné otázce.
+  - **„Export permit" v zadání (i s `left blank`) se propsalo jako čitelný nápis
+    na deskách.** `ch-t-neutralita-zbrane` mělo „a stack of export permit folders,
+    their covers left blank" → na deskách bylo přesto „EXPORT PERMIT". `left blank`
+    tentokrát nestačilo, protože fráze pojmenovávala KONKRÉTNÍ ÚČEL desek — pomohla
+    až úplná přestavba scény bez desek vůbec (jen ruce s olivovou ratolestí a puškou).
+  - **Slovo „quartz" v popisu hodinek se propsalo přímo na ciferník** (`ch-a-quartz-kriz”):
+    „A tiny, plain quartz watch" → čitelné (zkomolené) „QUARTZ" na číselníku. Stejná
+    past jako u desek výš — když popis SÁM POJMENUJE, co věc je nebo dělá, model si
+    myslí, že to má napsat. Oprava: slovo „quartz" úplně pryč z popisu hodinek
+    (zůstalo jen v id/kategorii dat, ne v `irony_prompt`), navíc explicitní
+    „its face left blank and unmarked".
+  - **Mince s nápisem „1 franc" u `ch-t-schokoladentaler`** — „a silver franc coin"
+    vyrobilo čitelný (zkomolený) nápis na minci. Oprava: mince popsané jako
+    „left plain and unmarked", slovo „franc" pryč z popisu samotné mince.
+  - **3 podpisy** (`ch-q-henri-dunant`, `ch-q-le-corbusier`, `ch-t-hodinky`) plus
+    Lugano dvakrát navíc (po opravě textu nový podpis, po přeposlání ještě jeden,
+    jinde ve scéně) — stejný vzorec jako u slovenské železnice a nizozemského
+    Sinterklaase: oprava jedné vady umí náhodně vyrobit jinou.
+  - **Sporné, ponechané:** drobný modrý ornament na ubrousku u `ch-k-raclette`
+    (dekorativní kudrlinka, ne písmeno) a číslice na hřbetech knih u `ch-a-eugenics`
+    (číslice jsou povolené).
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 718.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-12 — Nizozemsko: 63/63 ilustrací. 8 vad z 63 (13 %) — druhá nejvyšší dosud po Slovensku, tři nová poučení, žádné z ostatních zemí předtím nenastalo.**
   Zadání psaná v session (Sonnet 5), 60 z 63 nejdřív chybělo klíčová fráze „fills the
   frame" (viz zápis o zadáních výš) — po doplnění a dvou opravách tvaru jídla `lint-irony`
