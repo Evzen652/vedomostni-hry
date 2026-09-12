@@ -41,7 +41,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chillon_Castle",
   "source_card": "ch-mista-chillon",
   "image_prompt": "Fotorealistický širokoúhlý snímek zámku Chillon na Ženevském jezeře při východu slunce, Alpy v pozadí, klidná voda, bez lidí, 16:9",
-  "about": "zámku Chillon"
+  "about": "zámku Chillon",
+  "irony_prompt": "A shadowy stone pillar fills the frame deep in a castle dungeon, worn smooth by unseen chains, a single shaft of light falling from a barred window high above onto an open book of poetry left on the floor. Smaller and subordinate: a rusted chain coiled nearby; a swallow nesting in the rafters; lake water glimpsed through the bars. MOOD: solemn, atmospheric, not graphic."
  },
  {
   "id": "ch-q-lugano",
@@ -63,7 +64,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lugano",
   "source_card": "ch-mista-lugano",
   "image_prompt": "Fotorealistický snímek jezerního náměstí v Luganu s palmami, jezerem a horami v pozadí, teplé denní světlo, 16:9",
-  "about": "Luganu"
+  "about": "Luganu",
+  "irony_prompt": "An Italian espresso bar's striped awning fills the frame perched incongruously on the edge of a Swiss lake, a barber-pole and Italian flag standing proudly beside unmistakably Swiss mountains rising behind. Smaller and subordinate: palm trees along the promenade; a waiter balancing a tray; swans on the water. MOOD: warm, sunny, quietly surprising."
  },
  {
   "id": "ch-q-matterhorn",
@@ -85,7 +87,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Matterhorn",
   "source_card": "ch-priroda-matterhorn",
   "image_prompt": "Fotorealistický širokoúhlý snímek pyramidového vrcholu Matterhornu při východu slunce, sníh a skála, jasná obloha, bez lidí, 16:9",
-  "about": "hoře Matterhorn"
+  "about": "hoře Matterhorn",
+  "irony_prompt": "The pyramid-shaped peak of a great mountain fills the frame, a single thin dotted line drawn straight up its face and over the very tip, with a hiker on each side waving to the other. Smaller and subordinate: an eagle circling; alpine choughs; a distant cable car. MOOD: whimsical, geographically clever."
  },
  {
   "id": "ch-q-rheinfall",
@@ -107,7 +110,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rhine_Falls",
   "source_card": "ch-priroda-rheinfall",
   "image_prompt": "Fotorealistický snímek Rýnského vodopádu s mlhou a stříkající vodou, vyhlídková plošina na skále, denní světlo, 16:9",
-  "about": "Rýnském vodopádu"
+  "about": "Rýnském vodopádu",
+  "irony_prompt": "A thundering waterfall fills the frame in full summer flood, three separate roaring channels of white water crashing down together over the rocks. Smaller and subordinate: tourists in raincoats on a viewing platform; a small boat near the base; a rainbow in the mist. MOOD: dramatic, powerful."
  },
  {
   "id": "ch-q-narodni-park",
@@ -129,7 +133,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Swiss_National_Park",
   "source_card": "ch-priroda-narodni-park",
   "image_prompt": "Fotorealistický snímek panenského alpského údolí ve Švýcarském národním parku s kamzíky, hory Engadinu, denní světlo, 16:9",
-  "about": "Švýcarském národním parku"
+  "about": "Švýcarském národním parku",
+  "irony_prompt": "A pristine alpine valley fills the frame completely untouched, deer and ibex roaming freely right up to a small roped-off viewing platform where visitors watch through binoculars without setting foot beyond it. Smaller and subordinate: a fallen tree left to rot naturally; wildflowers growing through old rockfall; a marmot sunning itself. MOOD: peaceful, reverent."
  },
  {
   "id": "ch-q-henri-dunant",
@@ -151,7 +156,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Henry_Dunant",
   "source_card": "ch-lide-henri-dunant",
   "image_prompt": "Fotorealistický snímek vlajky Červeného kříže vlající proti jasné obloze poblíž Ženevského jezera, bez lidí, 16:9",
-  "about": "Henrim Dunantovi"
+  "about": "Henrim Dunantovi",
+  "irony_prompt": "A simple white armband with a plain red cross fills the frame, tied gently around the arm of someone kneeling to help a fallen soldier in a field at dusk. Smaller and subordinate: a water canteen; a torn tent used as a stretcher; distant smoke on the horizon. MOOD: solemn, compassionate, not graphic."
  },
  {
   "id": "ch-q-vilem-tell",
@@ -173,7 +179,8 @@
   "source_url": "https://en.wikipedia.org/wiki/William_Tell",
   "source_card": "ch-lide-vilem-tell",
   "image_prompt": "Fotorealistický snímek sochy Viléma Tella na náměstí švýcarského města, hory v pozadí, denní světlo, 16:9",
-  "about": "Vilému Tellovi"
+  "about": "Vilému Tellovi",
+  "irony_prompt": "A statue of a crossbow-wielding folk hero fills the frame standing proudly in a town square, its stone pedestal completely blank where a founding date should be carved, cobwebs quietly gathering in the empty corner. Smaller and subordinate: pigeons perched on his hat; tourists posing for photos; a souvenir stall nearby. MOOD: wry, quietly skeptical."
  },
  {
   "id": "ch-q-giacometti",
@@ -195,7 +202,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Alberto_Giacometti",
   "source_card": "ch-lide-giacometti",
   "image_prompt": "Fotorealistický snímek protáhlé bronzové sochy v moderní galerii s muzejním osvětlením, 16:9",
-  "about": "Albertu Giacomettim"
+  "about": "Albertu Giacomettim",
+  "irony_prompt": "A tall, impossibly thin bronze figure sculpture fills the frame standing alone on an auction pedestal, spotlights blazing on it as an auctioneer's gavel hovers mid-strike above a sea of raised paddles. Smaller and subordinate: hushed bidders in suits; a velvet rope; a chandelier reflecting off the polished floor. MOOD: tense, dramatic, ironic."
  },
  {
   "id": "ch-q-alphorn",
@@ -217,7 +225,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Alphorn",
   "source_card": "ch-kultura-alphorn",
   "image_prompt": "Fotorealistický snímek hudebníka v tradičním švýcarském kroji hrajícího na dlouhý alphorn na alpské louce, hory v pozadí, 16:9",
-  "about": "alphornu"
+  "about": "alphornu",
+  "irony_prompt": "A giant alphorn fills the frame stretching from a mountainside down into the valley below, its sound visibly rippling across the peaks toward a distant village where a farmer looks up and waves in reply. Smaller and subordinate: grazing cows with bells; a shepherd resting nearby; birds scattering from the blast. MOOD: whimsical, echoing."
  },
  {
   "id": "ch-q-souboj-krav",
@@ -239,7 +248,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Combat_de_Reines",
   "source_card": "ch-kultura-souboj-krav",
   "image_prompt": "Fotorealistický snímek dvou krav plemene Hérens tlačících hlavy k sobě v aréně, hory Valais v pozadí, 16:9",
-  "about": "soubojích krav ve Valais"
+  "about": "soubojích krav ve Valais",
+  "irony_prompt": "Two sturdy black cows fill the frame locking horns head-to-head in a dusty alpine meadow, the rest of the herd gathered in a respectful circle around them like spectators at a match. Smaller and subordinate: a farmer leaning on a fence; alphorns propped nearby; dust kicked up underfoot. MOOD: energetic, good-natured."
  },
  {
   "id": "ch-q-chalandamarz",
@@ -261,7 +271,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chalandamarz",
   "source_card": "ch-kultura-chalandamarz",
   "image_prompt": "Fotorealistický snímek dětí v tradičních modrých košilích a červených čepicích zvonících velkými kravskými zvonci v ulici Engadinu, zasněžené hory, 16:9",
-  "about": "svátku Chalandamarz"
+  "about": "svátku Chalandamarz",
+  "irony_prompt": "A parade of children fills the frame marching through a mountain village swinging huge cowbells over their heads, winter visibly retreating as a patch of green grass and a single crocus poke through the melting snow at their feet. Smaller and subordinate: onlookers clapping from doorways; a departing flock of birds; icicles dripping from a roof. MOOD: joyful, springlike."
  },
  {
   "id": "ch-q-paul-klee",
@@ -283,7 +294,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Paul_Klee",
   "source_card": "ch-umeni-paul-klee",
   "image_prompt": "Fotorealistický snímek budovy muzea Zentrum Paul Klee poblíž Bernu, výrazná zvlněná architektura, zelená krajina, denní světlo, 16:9",
-  "about": "Paulu Klee"
+  "about": "Paulu Klee",
+  "irony_prompt": "An overflowing studio fills the frame with thousands of small colorful paintings stacked floor to ceiling in leaning towers, a single easel barely visible in the clutter still holding a wet canvas. Smaller and subordinate: jars of brushes; a ladder needed to reach the top stacks; a cat napping on a pile. MOOD: whimsical, overwhelming, prolific."
  },
  {
   "id": "ch-q-le-corbusier",
@@ -305,7 +317,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Le_Corbusier",
   "source_card": "ch-umeni-le-corbusier",
   "image_prompt": "Fotorealistický snímek města La Chaux-de-Fonds s pravidelnou mřížkovou zástavbou, švýcarské pohoří Jura kolem, denní světlo, 16:9",
-  "about": "Le Corbusierovi"
+  "about": "Le Corbusierovi",
+  "irony_prompt": "An architect's drafting table fills the frame, a pair of round black glasses and a bow tie laid neatly beside an open blueprint, while a plain nameplate, blank and turned face-down, lies forgotten beside it. Smaller and subordinate: a model of a concrete building; a ruler and compass; rolled-up plans. MOOD: wry, quietly mysterious."
  },
  {
   "id": "ch-q-mario-botta",
@@ -327,7 +340,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mario_Botta",
   "source_card": "ch-umeni-mario-botta",
   "image_prompt": "Fotorealistický snímek geometrické fasády budovy ve stylu Maria Botty, výrazný cihlový vzor, denní světlo, 16:9",
-  "about": "Mariu Bottovi"
+  "about": "Mariu Bottovi",
+  "irony_prompt": "A striking building made of pure geometric shapes fills the frame, a perfect cylinder, cone and cube stacked deliberately against each other in warm red brick. Smaller and subordinate: a tiny figure walking past for scale; a row of small square windows; a single tree beside it. MOOD: bold, striking."
  },
  {
   "id": "ch-q-federer",
@@ -349,7 +363,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Roger_Federer",
   "source_card": "ch-sport-federer",
   "image_prompt": "Fotorealistický snímek tenisty při podání na travnatém kurtu, stadion ve stylu Wimbledonu, denní světlo, 16:9",
-  "about": "Rogeru Federerovi"
+  "about": "Rogeru Federerovi",
+  "irony_prompt": "Twenty gleaming trophies fill the frame lined up in a long, perfectly ordered row, a single tennis racket leaning proudly against the very last one. Smaller and subordinate: a ball boy peeking around the corner; discarded practice balls; a towel draped over a chair. MOOD: triumphant, understated."
  },
  {
   "id": "ch-q-lausanne",
@@ -371,7 +386,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lausanne",
   "source_card": "ch-sport-lausanne",
   "image_prompt": "Fotorealistický snímek nábřeží Lausanne s budovou Olympijského muzea, Ženevské jezero a Alpy v pozadí, denní světlo, 16:9",
-  "about": "Lausanne jako olympijské metropoli"
+  "about": "Lausanne jako olympijské metropoli",
+  "irony_prompt": "The five Olympic rings fill the frame carved into stone above a grand doorway, an athlete in full medal-ceremony pose practicing alone on the steps below, no crowd in sight. Smaller and subordinate: a flagpole with fabric left plain and blank; a lake glimpsed in the distance; pigeons on the cornice. MOOD: quietly grand, wry."
  },
  {
   "id": "ch-q-cresta-run",
@@ -393,7 +409,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cresta_Run",
   "source_card": "ch-sport-cresta-run",
   "image_prompt": "Fotorealistický snímek ledové sáňkařské dráhy vinoucí se zasněženou alpskou krajinou u Svatého Mořice, denní světlo, 16:9",
-  "about": "dráze Cresta Run"
+  "about": "dráze Cresta Run",
+  "irony_prompt": "A rider fills the frame lying flat face-first on a tiny sled hurtling down a twisting ice channel at terrifying speed, snow spraying up behind. Smaller and subordinate: spectators bundled in coats above the track; a stopwatch dangling from a coach's neck; icicles lining the chute. MOOD: thrilling, breakneck."
  },
  {
   "id": "ch-q-ctyri-jazyky",
@@ -415,7 +432,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Languages_of_Switzerland",
   "source_card": "ch-jazyk-ctyri-jazyky",
   "image_prompt": "Fotorealistický snímek švýcarské dopravní cedule s místními názvy v různých jazycích, alpská silnice, denní světlo, 16:9",
-  "about": "čtyřech úředních jazycích Švýcarska"
+  "about": "čtyřech úředních jazycích Švýcarska",
+  "irony_prompt": "Four identical wooden signposts fill the frame standing in a perfect row at a mountain crossroads, each pointing the exact same direction but with a completely different shape of arrowhead carved for its own region. Smaller and subordinate: a hiker checking a compass; alpine flowers at the base; a distant church spire. MOOD: whimsical, harmonious."
  },
  {
   "id": "ch-q-retoromanstina",
@@ -437,7 +455,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Romansh_language",
   "source_card": "ch-jazyk-retoromanstina",
   "image_prompt": "Fotorealistický snímek horské vesnické cedule v alpském prostředí Graubündenu, zeleň a vrcholky kolem, 16:9",
-  "about": "rétorománštině"
+  "about": "rétorománštině",
+  "irony_prompt": "A single shepherd fills the frame standing alone on a vast empty alpine meadow, speaking cheerfully into an old-fashioned megaphone that echoes back at him from the empty mountains, no one else in sight for miles. Smaller and subordinate: grazing sheep ignoring him; distant snowy peaks; a small dog watching curiously. MOOD: whimsical, gently lonely."
  },
  {
   "id": "ch-q-rostigraben",
@@ -459,7 +478,8 @@
   "source_url": "https://en.wikipedia.org/wiki/R%C3%B6stigraben",
   "source_card": "ch-jazyk-rostigraben",
   "image_prompt": "Fotorealistický snímek údolí řeky Sarine ve Fribourgu se starým mostem, město na kopci, denní světlo, 16:9",
-  "about": "Röstigrabenu"
+  "about": "Röstigrabenu",
+  "irony_prompt": "A giant crispy golden potato patty, sliced clean in half, fills the frame lying across an invisible border in a field, one side surrounded by French-style vineyards and the other by German-style alpine chalets. Smaller and subordinate: a fork planted upright in each half; grazing cows on both sides; a shared picnic blanket underneath. MOOD: whimsical, good-natured."
  },
  {
   "id": "ch-q-fondue",
@@ -481,7 +501,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fondue",
   "source_card": "ch-jidlo-fondue",
   "image_prompt": "Fotorealistický snímek tradičního švýcarského hrnce na sýrové fondue s roztaveným sýrem a kostkami chleba na vidličkách, dřevěný stůl, teplé světlo, 16:9",
-  "about": "sýrovém fondue"
+  "about": "sýrovém fondue",
+  "irony_prompt": "A giant round fondue pot fills the frame bubbling with melted cheese on a checkered tablecloth, a line of people from every corner of the country reaching in with long forks at once, unified around it. Smaller and subordinate: a poster easel nearby with its surface left blank; loaves of crusty bread in a basket; a bottle of white wine. MOOD: warm, communal, wry."
  },
  {
   "id": "ch-q-rosti",
@@ -502,7 +523,8 @@
   "explanation": "Toblerone vytvořil Theodor Tobler v roce 1908 a trojúhelníkový tvar tyčinky má připomínat švýcarské hory, konkrétně siluetu Matterhornu — dodnes je to jedna z nejrozpoznatelnějších čokoládových tyčinek na světě.",
   "source_url": "https://en.wikipedia.org/wiki/Toblerone",
   "image_prompt": "Fotorealistický snímek trojúhelníkové čokoládové tyčinky Toblerone na dřevěném stole, alpské hory v pozadí přes okno, teplé světlo, 16:9",
-  "about": "čokoládě Toblerone"
+  "about": "čokoládě Toblerone",
+  "irony_prompt": "A giant triangular chocolate bar fills the frame standing upright on a table, its jagged peaked shape echoing the exact silhouette of a snow-capped mountain looming behind it through a window. Smaller and subordinate: a torn gold wrapper; a bitten-off triangular piece; crumbs on the table. MOOD: playful, clever."
  },
  {
   "id": "ch-q-capuns",
@@ -524,7 +546,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Capuns",
   "source_card": "ch-jidlo-capuns",
   "image_prompt": "Fotorealistický snímek pokrmu capuns — taštičky zabalené v mangoldu ve smetanovém vývaru, venkovské prostředí Graubündenu, teplé světlo, 16:9",
-  "about": "capuns"
+  "about": "capuns",
+  "irony_prompt": "A large green chard leaf fills the frame wrapped snugly around a fat dumpling stuffed with visible shreds of dried meat and dough, tied with a thin string like a little parcel. Smaller and subordinate: a pot of simmering broth; a wooden spoon; fresh chard growing in a garden bed nearby. MOOD: cozy, homely."
  },
  {
   "id": "ch-q-listina-1291",
@@ -546,7 +569,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Federal_Charter_of_1291",
   "source_card": "ch-historie-listina-1291",
   "image_prompt": "Fotorealistický snímek louky Rütli u Lucernského jezera, dramatické alpské scenérie, historické místo, denní světlo, 16:9",
-  "about": "Federální listině z roku 1291"
+  "about": "Federální listině z roku 1291",
+  "irony_prompt": "An ancient parchment scroll fills the frame, its surface left completely blank and aged, sealed shut with three large wax seals pressed side by side along its bottom edge. Smaller and subordinate: a quill and inkpot; three simple hats representing the founding regions resting nearby; candlelight flickering. MOOD: solemn, foundational, respectful."
  },
  {
   "id": "ch-q-kalvin-zeneva",
@@ -568,7 +592,8 @@
   "source_url": "https://en.wikipedia.org/wiki/John_Calvin",
   "source_card": "ch-historie-kalvin-zeneva",
   "image_prompt": "Fotorealistický snímek starého města Ženeva s katedrálou Saint-Pierre, historická architektura z doby reformace, denní světlo, 16:9",
-  "about": "Janu Kalvínovi v Ženevě"
+  "about": "Janu Kalvínovi v Ženevě",
+  "irony_prompt": "A dusty traveler's cloak and walking staff fill the frame, propped against a city gate, one road ahead blocked by a fallen barricade forcing the path through the gate instead. Smaller and subordinate: a weary horse tied nearby; distant soldiers marching away in another direction; Lake Geneva glinting beyond the walls. MOOD: quietly fateful, wry."
  },
  {
   "id": "ch-q-ticino",
@@ -590,7 +615,8 @@
   "source_url": "https://blog.nationalmuseum.ch/en/2024/02/why-is-ticino-part-of-switzerland/",
   "source_card": "ch-historie-ticino",
   "image_prompt": "Fotorealistický snímek hradů v Bellinzoně v kantonu Ticino, italsky mluvící Švýcarsko, historické opevnění, denní světlo, 16:9",
-  "about": "kantonu Ticino"
+  "about": "kantonu Ticino",
+  "irony_prompt": "A small mountainous region fills the frame, its own tiny flag lowered halfway on a pole while much larger neighboring flags fly proudly at full height around it. Smaller and subordinate: a stern tax collector's ledger, its pages left blank, on a table; a border marker stone; grazing goats. MOOD: wry, quietly resentful."
  },
  {
   "id": "ch-k-vlajka",
@@ -610,7 +636,8 @@
   "quip_correct": "Bravo! Čtverec, ne obdélník — Švýcarsko se rozhodlo, že vlajka podle vzoru ostatních zemí prostě není jejich styl.",
   "quip_wrong": "Skoro, ale ne tak úplně — rohy si přepočítej ještě jednou, švýcarská vlajka je čtvercová, žádný obdélník jako skoro všude jinde.",
   "explanation": "Švýcarská vlajka je červená s bílým křížem uprostřed. Je čtvercová — stejně jako vlajka Vatikánu, jinak jsou téměř všechny vlajky světa obdélníkové. Červený kříž na bílém pozadí je zrcadlovým obrazem vlajky Červeného kříže.",
-  "about": "švýcarské vlajce"
+  "about": "švýcarské vlajce",
+  "irony_prompt": "A perfectly square Swiss flag fills the frame flapping proudly on a pole, its corners comically sticking out sideways next to a row of ordinary rectangular flags that all look oddly stretched by comparison. Smaller and subordinate: a delighted child pointing at the difference; a mountain backdrop; a curious bird landing on the pole. MOOD: cheerful, playful, sunny."
  },
  {
   "id": "ch-k-svist",
@@ -630,7 +657,8 @@
   "quip_correct": "Skvěle, svišť! Jedno jeho hvízdnutí, a celá kolonie zmizí pod zem dřív, než bys stihl domluvit větu.",
   "quip_wrong": "Blízko, ale ne — kamzík ani vlk takhle nepískají, poplach v Alpách vyhlašuje svišť.",
   "explanation": "Alpský svišť žije ve skupinách nad hranicí lesa. Jeden svišť vždy hlídá okolí a jakmile zahlédne orla nebo lišku, vydá pronikavý hvizd. Celá kolonie pak uteče do nor. V zimě svišti hibernují až sedm měsíců.",
-  "about": "svišti alpském"
+  "about": "svišti alpském",
+  "irony_prompt": "A plump alpine marmot fills the frame standing bolt upright on a rock, cheeks puffed and mouth wide open mid-whistle, the whole meadow of other marmots diving for cover behind it. Smaller and subordinate: a soaring eagle shadow passing overhead; scattered wildflowers; a delighted child watching from a trail. MOOD: cheerful, alert, sunny."
  },
  {
   "id": "ch-k-fondue-chleb",
@@ -650,7 +678,8 @@
   "quip_correct": "Trefa! Vidlička dlouhá, chleba na jejím konci, sýr vroucí v hrnci — přesně jak jsi řekl.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — lžíce ani chipsy se do fondue nenamáčí, jde tam kousek chleba na dlouhé vidličce.",
   "explanation": "Švýcarské sýrové fondue se připravuje v hrnci, do kterého se roztaví sýr s vínem. Každý si nabodne kostku chleba na dlouhou vidličku a namočí ji do sýra. Podle tradice platí pokuta ten, kdo chléb utopí.",
-  "about": "sýrovém fondue"
+  "about": "sýrovém fondue",
+  "irony_prompt": "A giant fondue pot fills the frame with a long fork dipping a cube of bread into the bubbling melted cheese, cheesy strings stretching comically long as it lifts out. Smaller and subordinate: a delighted child waiting with an open mouth; a basket of bread cubes; a checkered tablecloth. MOOD: cheerful, cozy, sunny."
  },
  {
   "id": "ch-k-kravy-zvonce",
@@ -670,7 +699,8 @@
   "quip_correct": "A je to tam! Cinkání uslyšíš dřív, než krávu na louce vůbec zahlédneš.",
   "quip_wrong": "Ne tak docela — žádná mašle ani GPS, pastýř slyší stádo v horách díky obyčejnému zvonci.",
   "explanation": "Švýcarské krávy nosí velké zvonce, které pastýřům pomáhají sledovat stádo v horách. V kantonu Appenzell pořádají slavnost Alpabfahrt, při níž krávy se zvonci slavnostně sestupují na podzim z horských pastvin dolů do údolí.",
-  "about": "švýcarských kravských zvoncích"
+  "about": "švýcarských kravských zvoncích",
+  "irony_prompt": "A happy cow fills the frame wearing an enormous bell around her neck, the sound so loud it visibly ripples across the whole meadow, other cows nodding along like a chorus. Smaller and subordinate: a delighted child covering their ears and giggling; alpine flowers; a distant chalet. MOOD: cheerful, playful, sunny."
  },
  {
   "id": "ch-k-cokolada",
@@ -691,7 +721,8 @@
   "quip_wrong": "Málem, ale ne — žádný alpský sníh ani tajné boby, za krémovost může obyčejné sušené mléko.",
   "explanation": "Klíčový vynález byl tzv. mléčná čokoláda — v roce 1875 ji vyvinul Daniel Peter ve spolupráci s Henri Nestlém, který mu dodal kondenzované mléko. Do té doby se čokoláda jedla hořká nebo pila jako nápoj. Švýcarsko tímto vynálezem v podstatě definovalo moderní čokoládu.",
   "about": "švýcarské mléčné čokoládě a jejím vzniku",
-  "image_prompt": "A painterly watercolor illustration of a Swiss chocolate shop with rows of milk chocolate bars and pralines, a happy cow visible through the window in an alpine meadow, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Swiss chocolate shop with rows of milk chocolate bars and pralines, a happy cow visible through the window in an alpine meadow, vintage travel journal style",
+  "irony_prompt": "A thick strand of creamy milk chocolate fills the frame pouring in a glossy coil over a mountain of milk bottles, a delighted child catching a drip on their tongue below. Smaller and subordinate: a contented cow watching nearby; a chocolate bar wrapper left blank; steam rising from the warm chocolate. MOOD: cheerful, indulgent, sunny."
  },
  {
   "id": "ch-k-nuz",
@@ -712,7 +743,8 @@
   "quip_wrong": "Skoro trefa, ale ne úplně — pistole ani vařič na čaj se do švýcarského nože nevešly, tam jsou spíš nástroje na opravy.",
   "explanation": "Originální švýcarský armádní nůž vyrobila firma Victorinox v roce 1891 jako zakázku pro švýcarskou armádu. Název 'Swiss Army Knife' pochází od amerických vojáků po druhé světové válce, kteří ho nedokázali vyslovit německy. Dnes existuje přes 100 modelů s různými kombinacemi nástrojů.",
   "about": "švýcarském armádním noži a jeho historii",
-  "image_prompt": "A painterly watercolor illustration of a classic red Swiss Army Knife with multiple tools unfolded displayed on a wooden mountain hut table, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a classic red Swiss Army Knife with multiple tools unfolded displayed on a wooden mountain hut table, vintage travel journal style",
+  "irony_prompt": "A giant red pocket knife fills the frame with every single tool popped open at once, fanning out like a mechanical peacock tail of blades, scissors and screwdrivers. Smaller and subordinate: a delighted child trying to count all the tools; wood shavings from whittling; a picnic basket nearby. MOOD: cheerful, marveling, sunny."
  },
  {
   "id": "ch-k-medved-bern",
@@ -733,7 +765,8 @@
   "quip_wrong": "Ne tak úplně — žádní vycpaní medvědi ani strážci pokladu, v Bernu žijí ti skuteční, přímo u řeky.",
   "explanation": "Medvědí příkop (Bärengraben) existuje v Bernu od roku 1513 — dnes je modernizován na prostorný park u řeky Aare. Název města Bern pravděpodobně pochází ze starého slova pro medvěda. Medvědi v parku jsou skuteční, přístupní veřejnosti zdarma a jsou jakýmsi živým symbolem města.",
   "about": "medvědím parku v Bernu a jeho historii",
-  "image_prompt": "A painterly watercolor illustration of brown bears playing by a river in Bern's bear park with the medieval city towers visible on the cliff above, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of brown bears playing by a river in Bern's bear park with the medieval city towers visible on the cliff above, vintage travel journal style",
+  "irony_prompt": "A friendly brown bear fills the frame lounging happily in a sunny riverside pit right in the middle of a city, a delighted child waving down at it from the railing above. Smaller and subordinate: old townhouses visible behind the pit; a second bear splashing in the river; pigeons watching from a ledge. MOOD: cheerful, sunny, delightful."
  },
  {
   "id": "ch-k-vlak-hora",
@@ -754,7 +787,8 @@
   "quip_wrong": "Tentokrát to nevyšlo — koně ani visuté lano tam cestující nevytáhnou, nahoru jezdí vlak tunelem přímo v hoře.",
   "explanation": "Jungfraubahn je ozubnicová železnice vedoucí tunelem uvnitř Eigeru a Möncku k stanici Jungfraujoch ve výšce 3 454 m n.m. — nejvýše položené vlakové nádraží v Evropě. Tunel byl ražen v letech 1896–1912 a stavba trvala 16 let. Na vrcholu je observatoř a poštovní úřad.",
   "about": "vlakové trase na Jungfraujoch ve švýcarských Alpách",
-  "image_prompt": "A painterly watercolor illustration of a yellow cogwheel train emerging from a mountain tunnel into brilliant snowy alpine scenery at Jungfraujoch station, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a yellow cogwheel train emerging from a mountain tunnel into brilliant snowy alpine scenery at Jungfraujoch station, vintage travel journal style",
+  "irony_prompt": "A little red train fills the frame emerging from a tunnel carved straight through a snowy mountain, a delighted child pressing their face to the window as the peak's summit appears right outside. Smaller and subordinate: icicles hanging at the tunnel mouth; a conductor waving a flag; distant skiers on the slopes. MOOD: cheerful, adventurous, sunny."
  },
  {
   "id": "ch-k-rosti",
@@ -775,7 +809,8 @@
   "quip_wrong": "Mimo, ale dobrý pokus — rösti není polévka ani knedlík, je to placka z brambor opečená na pánvi.",
   "explanation": "Rösti pochází z kantonu Bern, kde ho farmáři jedli tradičně k snídani. Dnes je rozšířený po celém Švýcarsku a slouží jako příloha nebo samostatné jídlo. Tzv. 'Röstigraben' — imaginární hranice mezi německy a francouzsky mluvícím Švýcarskem — nese název právě podle tohoto pokrmu.",
   "about": "rösti jako tradičním švýcarském bramborovém pokrmu",
-  "image_prompt": "A painterly watercolor illustration of a golden crispy rösti potato cake in a cast iron pan with herbs and butter in a cozy Swiss farmhouse kitchen, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a golden crispy rösti potato cake in a cast iron pan with herbs and butter in a cozy Swiss farmhouse kitchen, vintage travel journal style",
+  "irony_prompt": "A giant golden-brown potato patty, crispy and round, fills the frame sizzling in a big pan, a delighted child leaning in to sniff the steam rising off it. Smaller and subordinate: a spatula flipping it; a pat of butter melting on top; a rustic kitchen window behind. MOOD: cheerful, cozy, sunny."
  },
  {
   "id": "ch-k-cervenokrizkovy-znak",
@@ -796,7 +831,8 @@
   "quip_wrong": "Ouha, málem — papež do toho nezasahoval, Červený kříž má prostě barvy švýcarské vlajky přehozené naopak.",
   "explanation": "Henri Dunant, zakladatel Červeného kříže, byl Švýcar z Ženevy. Když v roce 1863 zakládal organizaci, navrhl znak jako obrácené barvy švýcarské vlajky — jako hold své domovině. V islámských zemích se používá Červený půlměsíc, v Izraeli Červená hvězda Davidova.",
   "about": "symbolu Červeného kříže a jeho vztahu ke švýcarské vlajce",
-  "image_prompt": "A painterly watercolor illustration showing a Swiss flag and a Red Cross flag side by side on wooden poles against an alpine backdrop, demonstrating the inverted color scheme, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration showing a Swiss flag and a Red Cross flag side by side on wooden poles against an alpine backdrop, demonstrating the inverted color scheme, vintage travel journal style",
+  "irony_prompt": "A plain white flag with a bold red cross fills the frame flapping right beside an identical flag with the colors swapped, a red flag with a white cross, the two mirroring each other perfectly. Smaller and subordinate: a delighted child comparing the two with pointed fingers; a first-aid kit; a nurse's cap on a hook. MOOD: cheerful, curious, sunny."
  },
  {
   "id": "ch-k-aare",
@@ -817,7 +853,8 @@
   "quip_wrong": "Ne úplně, zkus znovu — Aare není hnědá ani šedá, má tyrkysově modrozelenou barvu díky ledovcovému prachu z hor.",
   "explanation": "Tyrkysová barva Aare pochází z tzv. glaciálního mléka — jemně mletého minerálního prachu, který ledovce brousí z hornin a který odnášejí řeky. Berňané plavání v Aare berou velmi vážně — v létě se tam koupe i spolkový prezident a řeka má vlastní aplikaci s teplotou vody.",
   "about": "řece Aare a koupání v Bernu",
-  "image_prompt": "A painterly watercolor illustration of people swimming in the turquoise Aare river flowing through the medieval city of Bern on a sunny summer day, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of people swimming in the turquoise Aare river flowing through the medieval city of Bern on a sunny summer day, vintage travel journal style",
+  "irony_prompt": "A wide river the color of pure turquoise fills the frame flowing gently through a city, a delighted child floating happily downstream in an inflatable ring. Smaller and subordinate: old bridges arching overhead; ducks paddling alongside; sunbathers on the grassy bank. MOOD: cheerful, refreshing, sunny."
  },
  {
   "id": "ch-k-syr",
@@ -838,7 +875,8 @@
   "quip_wrong": "Skoro, ale ne — nikdo díry ručně nevrtá ani nelisuje, dělají je bakterie, které při zrání vypouštějí plyn.",
   "explanation": "Díry v ementálu tvoří bakterie Propionibacterium freudenreichii, které při fermentaci produkují oxid uhličitý. Výzkum z roku 2015 zjistil, že velikost děr se v posledních desetiletích zmenšila — protože moderní hygiena v mlékárnách omezila přítomnost malých sláměných úlomků, které byly zárodkem velkých bublin.",
   "about": "ementálském sýru a vzniku jeho děr",
-  "image_prompt": "A painterly watercolor illustration of a large wheel of Emmental cheese cut open showing its characteristic holes, on a wooden board in a Swiss dairy with alpine meadows visible outside, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a large wheel of Emmental cheese cut open showing its characteristic holes, on a wooden board in a Swiss dairy with alpine meadows visible outside, vintage travel journal style",
+  "irony_prompt": "A giant wheel of pale yellow cheese fills the frame riddled with huge round holes, a delighted child peeking through one hole to the other side like a porthole. Smaller and subordinate: tiny bubbles still forming near a fresh wedge; a cheese knife; a mouse peeking from another hole. MOOD: cheerful, playful, sunny."
  },
  {
   "id": "ch-t-neutralita-zbrane",
@@ -859,7 +897,8 @@
   "quip_wrong": "Trefa minula, s grácií — švýcarská neutralita má výjimky pružnější, než se zdá.",
   "explanation": "Švýcarský zbrojní průmysl (firmy jako Rheinmetall Air Defence, RUAG) je legální a regulovaný. Kontroverze propukají opakovaně — například při vývozu munice do Saúdské Arábie během jemenské války. Švýcarský zákon zakazuje vývoz do zemí v aktivním konfliktu, ale definice 'konfliktu' bývá předmětem politických sporů.",
   "about": "švýcarském zbrojním průmyslu a paradoxu neutrality",
-  "image_prompt": "A painterly watercolor illustration of a Swiss precision engineering factory interior with gun components on a workbench, through the window a peaceful alpine lake, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Swiss precision engineering factory interior with gun components on a workbench, through the window a peaceful alpine lake, vintage travel journal style",
+  "irony_prompt": "A pair of hands fills the frame holding an olive branch in one and a gleaming rifle in the other, both offered outward with the exact same friendly smile. Smaller and subordinate: a stack of export permit folders, their covers left blank; a scale balanced perfectly between the two; a dove perched nearby unbothered. MOOD: wry, quietly ironic."
  },
  {
   "id": "ch-t-davos",
@@ -880,7 +919,8 @@
   "quip_wrong": "Odvážný pokus, výsledek jiný — Davos hostí setkání úplně jiného druhu, než tenhle tip.",
   "explanation": "Světové ekonomické fórum (WEF) se koná v Davosu každý leden od roku 1971. Účastní se ho přes 3 000 pozvaných hostů — šéfů firem, ministrů, vědců. Kritici ho označují za 'olympiádu elit', příznivci za platformu pro řešení globálních problémů. Bezpečnostní opatření během konání jsou srovnatelná s návštěvou prezidenta USA.",
   "about": "Světovém ekonomickém fóru v Davosu",
-  "image_prompt": "A painterly watercolor illustration of the alpine town of Davos in winter with luxury hotels, helicopters overhead, and suited figures walking between conference buildings in snow, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the alpine town of Davos in winter with luxury hotels, helicopters overhead, and suited figures walking between conference buildings in snow, vintage travel journal style",
+  "irony_prompt": "A luxury ski chalet fills the frame with a line of limousines queued up outside in the snow, well-dressed executives stepping out still wearing their skis. Smaller and subordinate: a helicopter landing nearby; security guards in dark coats; a snowplow clearing the red carpet. MOOD: wry, opulent."
  },
  {
   "id": "ch-t-banky-tajemstvi",
@@ -901,7 +941,8 @@
   "quip_wrong": "Sofistikovaně mimo, ale mimo přece — bankovní tajemství padlo pod tlakem konkrétnějším, než čekáš.",
   "explanation": "V roce 2009 UBS pod hrozbou amerických sankcí vydala data o 4 500 amerických klientech. Program FATCA (2010) pak fakticky přinutil švýcarské banky automaticky sdílet data s USA. Od roku 2017 Švýcarsko přistoupilo na mezinárodní automatickou výměnu informací (AEI) s desítkami zemí — konec éry absolutního bankovního tajemství.",
   "about": "pádu švýcarského bankovního tajemství",
-  "image_prompt": "A painterly watercolor illustration of a grand Swiss bank facade in Zurich with heavy bronze doors slightly ajar, a small US flag reflected in the polished marble floor, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a grand Swiss bank facade in Zurich with heavy bronze doors slightly ajar, a small US flag reflected in the polished marble floor, vintage travel journal style",
+  "irony_prompt": "A colossal iron vault door fills the frame standing wide open under pressure, a single giant key shaped like an eagle wedged forcefully into its lock. Smaller and subordinate: stacks of anonymous ledgers, their covers left blank; a nervous clerk peering out; a spilled tray of coins. MOOD: tense, quietly dramatic."
  },
  {
   "id": "ch-t-minarety",
@@ -922,7 +963,8 @@
   "quip_wrong": "Chyba se stala, i tak elegantně — referendum z roku 2009 zakázalo něco přesnějšího.",
   "explanation": "Iniciativu za zákaz minaretů podpořilo 57,5 % hlasujících. V době hlasování stály ve Švýcarsku čtyři minarety — zákaz nezrušil stávající, jen zakázal stavět nové. Rozsudek Evropského soudu pro lidská práva v roce 2021 shledal zákaz slučitelným s Úmluvou o ochraně lidských práv — rozhodnutí, které samo o sobě vyvolalo velkou debatu.",
   "about": "švýcarském referendu o zákazu minaretů",
-  "image_prompt": "A painterly watercolor illustration of a Swiss alpine village skyline with church steeples and a silhouette of a minaret tower visible among traditional rooftops, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Swiss alpine village skyline with church steeples and a silhouette of a minaret tower visible among traditional rooftops, vintage travel journal style",
+  "irony_prompt": "A row of tall church steeples and clock towers fills the frame across a peaceful town skyline, with one single empty round gap between them where a slender tower's silhouette is conspicuously absent, like a missing puzzle piece. Smaller and subordinate: a ballot box on a nearby square; pigeons on the rooftops; evening light glowing warmly. MOOD: quiet, thoughtful, not graphic."
  },
  {
   "id": "ch-t-hodinky",
@@ -943,7 +985,8 @@
   "quip_wrong": "Skoro trefa, ale ne tak docela — hodinářství se do hor dostalo zimní cestou, ne takovou, jak sis myslel.",
   "explanation": "Obojí je pravda: hugenoti přinesli hodinářství do Ženevy po roce 1685, ale venkovské hodinářství v Jura Mountains vzniklo nezávisle jako domácká výroba v zimních měsících. Kantony Neuchâtel a Jura se staly centrem výroby. Výraz 'Swiss Made' je dnes legálně definován: nejméně 60 % výrobních nákladů musí vzniknout ve Švýcarsku.",
   "about": "historii švýcarského hodinářství a jeho venkovských kořenech",
-  "image_prompt": "A painterly watercolor illustration of a 18th century Swiss farmhouse interior in winter with a family assembling tiny watch components by candlelight while snow falls outside, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a 18th century Swiss farmhouse interior in winter with a family assembling tiny watch components by candlelight while snow falls outside, vintage travel journal style",
+  "irony_prompt": "A farmer's calloused hands fill the frame carefully assembling tiny watch gears at a kitchen table, snow piling up against the window behind him where his idle plow sits buried outside. Smaller and subordinate: a basket of unused farm tools; a warm stove in the corner; a finished pocket watch ticking nearby. MOOD: cozy, industrious."
  },
  {
   "id": "ch-t-schokoladentaler",
@@ -964,7 +1007,8 @@
   "quip_wrong": "Nebylo to ono, přestože to znělo přesvědčivě — frank drží euro na uzdě úplně jinak.",
   "explanation": "Švýcarský frank je jednou z nejsilnějších světových měn a považuje se za bezpečný přístav v dobách krize. V roce 2015 švýcarská centrální banka nečekaně zrušila pevný kurz 1,20 CHF/EUR — frank okamžitě posílil o 30 % a způsobil chaos na devizových trzích světa.",
   "about": "švýcarském franku a jeho vztahu k euru",
-  "image_prompt": "A painterly watercolor illustration of a Swiss market stall with prices shown in both Swiss francs and euros, with the Matterhorn visible in the background, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Swiss market stall with prices shown in both Swiss francs and euros, with the Matterhorn visible in the background, vintage travel journal style",
+  "irony_prompt": "A shopkeeper's open palm fills the frame accepting a shiny gold euro coin and a silver franc coin side by side without hesitation, both coins gleaming equally in the light. Smaller and subordinate: a price tag turned blank and unreadable; a cash register drawer half-open; a tourist's wallet nearby. MOOD: wry, pragmatic."
  },
  {
   "id": "ch-t-bund",
@@ -985,7 +1029,8 @@
   "quip_wrong": "Zajímavý úhel pohledu, bohužel špatný — švýcarská vláda funguje na rovnováze jemnější, než tenhle odhad.",
   "explanation": "Federální rada (Bundesrat) existuje od roku 1848. Jejích sedm členů se volí parlamentem a zastupují různé strany, regiony i jazykové komunity. Předsednictví rotuje ročně podle abecedy nebo dohody. Zahraniční média někdy neví, jak reportovat o 'prezidentovi', protože funkce je ceremoniální a každý rok jiná.",
   "about": "švýcarském kolegialním vládním systému Federální rady",
-  "image_prompt": "A painterly watercolor illustration of the Swiss Federal Palace in Bern with seven equal seats arranged around a circular table in a grand chamber, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Swiss Federal Palace in Bern with seven equal seats arranged around a circular table in a grand chamber, vintage travel journal style",
+  "irony_prompt": "Seven identical wooden chairs fill the frame arranged in a perfect circle around a round table, each seat exactly the same height and distance from the center, with no chair raised above the rest. Smaller and subordinate: seven matching name cards left completely blank; a single gavel resting neutrally in the middle; a window showing four different flags fluttering equally outside. MOOD: calm, deliberately balanced."
  },
  {
   "id": "ch-t-einstein",
@@ -1006,7 +1051,8 @@
   "quip_wrong": "Mimo, ale s jistou dávkou stylu — v profesorském křesle Einstein v Bernu neseděl.",
   "explanation": "Einstein pracoval na bernském patentovém úřadě v letech 1902–1909. V roce 1905 — svém 'zázračném roce' — publikoval čtyři revoluční vědecké práce, včetně speciální teorie relativity a vysvětlení fotoelektrického jevu (za který dostal Nobelovu cenu). Byt, kde žil, je dnes muzeem.",
   "about": "Albertu Einsteinovi a jeho létech v Bernu",
-  "image_prompt": "A painterly watercolor illustration of a modest early 20th century office with a young Einstein at a patent desk surrounded by technical drawings, with equations sketched on a notepad beside him, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a modest early 20th century office with a young Einstein at a patent desk surrounded by technical drawings, with equations sketched on a notepad beside him, vintage travel journal style",
+  "irony_prompt": "A cluttered patent office desk fills the frame, stacks of ordinary invention drawings piled high, while a single scrap of paper covered in swirling equations peeks out from underneath, clearly scribbled during a quiet moment. Smaller and subordinate: a pocket watch ticking on the desk; a half-eaten sandwich; a window showing a clock tower outside. MOOD: quietly clever, wry."
  },
  {
   "id": "ch-a-zeny-1971",
@@ -1027,7 +1073,8 @@
   "quip_wrong": "Tentokrát prohrál i sebevědomý tón — cesta žen k volebnímu právu byla vytrvalejší, než ukazuje tenhle tip.",
   "explanation": "Švýcarsko zavedlo přímou demokracii pro muže v roce 1848. Referenda o volebním právu žen proběhla v letech 1959, 1971 — teprve to druhé prošlo. Kanton Appenzell Innerrhoden odmítal ženám právo hlasovat na kantonální úrovni až do roku 1990, kdy mu to přikázal Federální soud. Ironií je, že Švýcarsko bylo první zemí, která měla ženu jako hlavu státu (1999 — Bundesrätin Ruth Dreifuss).",
   "about": "švýcarském volebním právu žen a jeho pozdním zavedení",
-  "image_prompt": "A painterly watercolor illustration of Swiss women marching through a Bern street in the 1960s with banners demanding voting rights, Federal Palace visible in the background, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Swiss women marching through a Bern street in the 1960s with banners demanding voting rights, Federal Palace visible in the background, vintage travel journal style",
+  "irony_prompt": "A large ballot box fills the frame surrounded entirely by men's hands dropping in their votes, one single woman's hand reaching toward it from just outside a low fence that blocks her way. Smaller and subordinate: a stack of four rejected ballot papers, their surfaces left blank, tossed aside; a torn calendar page; onlookers in old-fashioned suits. MOOD: solemn, quietly indignant, not graphic."
  },
  {
   "id": "ch-a-onu-clen",
@@ -1048,7 +1095,8 @@
   "quip_wrong": "Ne tak docela, i přes odvahu — Švýcarsko čekalo se vstupem do OSN déle, než sis myslel.",
   "explanation": "Vstup do OSN byl podřízen referendu — v roce 1986 Švýcaři členství odmítli (75 % proti). Teprve v roce 2002 druhé referendum schválilo vstup (54 % pro). Klíčový argument pro byl, že OSN má doložku umožňující neutrálním zemím nestrannost — Švýcarsko ji mohlo mít i jako člen.",
   "about": "švýcarském členství v OSN a paradoxu ženevského sídla",
-  "image_prompt": "A painterly watercolor illustration of the Palais des Nations in Geneva with UN flags flying and a small Swiss flag being raised among them for the first time in 2002, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of the Palais des Nations in Geneva with UN flags flying and a small Swiss flag being raised among them for the first time in 2002, vintage travel journal style",
+  "irony_prompt": "A grand flag bearing a plain olive wreath around a globe fills the frame flying outside a stately Geneva building, a single Swiss delegate standing patiently outside the locked front gate with a suitcase. Smaller and subordinate: pigeons perched on the fence; a taxi waiting nearby; Lake Geneva sparkling in the background. MOOD: wry, patient, quietly ironic."
  },
  {
   "id": "ch-a-eugenics",
@@ -1069,7 +1117,8 @@
   "quip_wrong": "Škoda, tip to byl chytrý, jen nesprávný — program skončil mnohem později, než by se chtělo věřit.",
   "explanation": "Program eugeniky byl ve Švýcarsku legální od 20. let 20. století. Zvláště postiženi byli Jenischové — švýcarské kočovné etnikum — jejichž děti byly systematicky odebírány rodinám a dávány do ústavů v rámci projektu 'Kinder der Landstrasse' (1926–1973). Švýcarsko se formálně omluvilo v roce 1998 a oběti dostaly odškodnění.",
   "about": "švýcarském eugenickém programu a nucených sterilizacích",
-  "image_prompt": "A painterly watercolor illustration of a somber 1950s Swiss institutional building with small windows, a humanitarian Red Cross visible on a distant building through foggy Alps, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a somber 1950s Swiss institutional building with small windows, a humanitarian Red Cross visible on a distant building through foggy Alps, vintage travel journal style",
+  "irony_prompt": "A stack of closed medical files fills the frame on an official's desk, one drawer left slightly ajar revealing dozens more identical folders stretching back into shadow. Smaller and subordinate: a wilted flower in a small vase; a clock on the wall; a window with bars of afternoon light. MOOD: solemn, somber, respectful, not graphic."
  },
  {
   "id": "ch-a-bunker-narod",
@@ -1090,7 +1139,8 @@
   "quip_wrong": "Elegantně vedle, tentokrát — švýcarská neutralita měla ozbrojenější podklad, než tenhle tip.",
   "explanation": "Zákon z roku 1963 ukládá každé obci mít dostatek krytů pro všechny obyvatele. Stavba krytů byla povinná i pro soukromé domy. Alpské pevnosti (Reduit) schovávaly armádu, munici i celé továrny uvnitř hor. Kryty mají zásoby jídla a vody na týdny, filtraci vzduchu, a pravidelně se testují. Systém byl zrušen jako povinný teprve v roce 2012.",
   "about": "švýcarské síti protiatomových krytů a vojenské infrastruktuře",
-  "image_prompt": "A painterly watercolor illustration of a hidden Swiss mountain fortress entrance disguised as a barn door, with Alpine scenery above and a cross-section hint of tunnels beneath, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a hidden Swiss mountain fortress entrance disguised as a barn door, with Alpine scenery above and a cross-section hint of tunnels beneath, vintage travel journal style",
+  "irony_prompt": "A cutaway hillside fills the frame revealing a vast underground bunker honeycombed with countless identical bunk rooms, ordinary alpine cows grazing peacefully on the grassy slope above completely unaware. Smaller and subordinate: a heavy blast door standing open; stacked supply crates; a ventilation pipe disguised as a rock. MOOD: wry, quietly unsettling, not graphic."
  },
  {
   "id": "ch-a-papezska-garda",
@@ -1111,7 +1161,8 @@
   "quip_wrong": "Odhad to byl smělý, správný bohužel ne — papežská garda má žoldnéřský původ praktičtější, než napovídá tvůj tip.",
   "explanation": "Švýcarské kantony ve středověku exportovaly žoldnéře jako hlavní exportní artikl — bylo to doslova národní hospodářství. Papežská garda vznikla v roce 1506 a přežila dodnes jako ceremoniální jednotka. Švýcarský stát mezitím žoldnéřskou službu zakázal (1874) — výjimku tvoří právě Vatikán. Nové gardisty musí přijmout sám papež.",
   "about": "švýcarské papežské gardě a žoldnéřské historii Švýcarska",
-  "image_prompt": "A painterly watercolor illustration of Swiss Guards in their colorful Renaissance uniforms with halberds standing at the Vatican gate, St. Peter's dome visible behind them, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Swiss Guards in their colorful Renaissance uniforms with halberds standing at the Vatican gate, St. Peter's dome visible behind them, vintage travel journal style",
+  "irony_prompt": "A colorfully uniformed guard fills the frame standing at rigid attention with a tall halberd, his shadow on the wall behind stretching into the shape of a fierce medieval mercenary in full battle armor. Smaller and subordinate: an ornate archway behind him; a dove landing nearby unbothered; tourists posing for photos at a respectful distance. MOOD: proud, quietly fierce."
  },
  {
   "id": "ch-a-cokolada-objev",
@@ -1132,7 +1183,8 @@
   "quip_wrong": "Sázka nevyšla, i když měla styl — kakao putovalo do Švýcarska oklikou koloniálnější, než čekáš.",
   "explanation": "Švýcarsko nikdy nemělo kolonie, ale svůj čokoládový průmysl budovalo na kakau z Pobřeží slonoviny, Ghany a Brazílie — tedy z oblastí ovládaných jinými koloniálními mocnostmi, kde se pracovalo podmínkami blízkými otroctví. Dnes švýcarský čokoládový průmysl čelí tlaku za 'fair trade' certifikaci a transparentnost dodavatelských řetězců.",
   "about": "koloniálních zdrojích švýcarského čokoládového průmyslu",
-  "image_prompt": "A painterly watercolor illustration of a split scene: a Swiss chocolate factory with happy workers on one side, and a colonial cacao plantation in West Africa on the other, connected by a shipping route on an old map, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a split scene: a Swiss chocolate factory with happy workers on one side, and a colonial cacao plantation in West Africa on the other, connected by a shipping route on an old map, vintage travel journal style",
+  "irony_prompt": "A ship's cargo hold fills the frame stacked with sacks of raw cacao beans being loaded onto smaller wagons bound for a distant snowy mountain factory glimpsed through the ship's porthole. Smaller and subordinate: a dockworker's ledger, its pages left blank; coiled rope; gulls circling the mast. MOOD: solemn, thought-provoking, not graphic."
  },
  {
   "id": "ch-a-referendum-paradox",
@@ -1153,7 +1205,8 @@
   "quip_wrong": "Trefa se rozplynula, fakta říkají jinak — přímá demokracie má nerovnost skrytější, než tenhle tip.",
   "explanation": "Výzkumy švýcarských politologů ukazují, že v průměrném referendu hlasuje o 20 procentních bodů více vysokoškolsky vzdělaných než těch se základním vzděláním. V kantonech s elektronickým hlasováním se účast zvýšila, ale socioekonomická nerovnost přetrvává. To je jeden z hlavních argumentů kritiků přímé demokracie jako systému.",
   "about": "paradoxech švýcarské přímé demokracie a nerovné účasti",
-  "image_prompt": "A painterly watercolor illustration of a Swiss voting station with a ballot box, some urns full and some nearly empty, people of different ages and dress entering, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Swiss voting station with a ballot box, some urns full and some nearly empty, people of different ages and dress entering, vintage travel journal style",
+  "irony_prompt": "A grand voting hall fills the frame with a small cluster of well-dressed, silver-haired citizens comfortably filling out ballots at ornate desks, while dozens of empty simple chairs stretch out behind them into shadow. Smaller and subordinate: a ballot box overflowing on one side only; discarded voting pamphlets, their pages left blank, on the floor; a clock showing an inconvenient hour. MOOD: wry, quietly pointed."
  },
  {
   "id": "ch-k-bernardyn",
@@ -1174,7 +1227,8 @@
   "quip_wrong": "Tentokrát ne, ale dobrý pokus — v horách nezachraňovala kolie ani ovčák, tuhle práci měl na starosti bernardýn.",
   "explanation": "Bernardýni jsou pojmenovaní po průsmyku Velký Svatý Bernard, kde ve středověku mniši založili útulek pro poutníky. Od 17. století jim pomáhali hledat zavátá lidi v horách právě tito psi. Nejslavnější z nich, pes jménem Barry, prý za svůj život zachránil přes 40 lidí a dnes je vycpaný k vidění v muzeu v Bernu.",
   "about": "bernardýnech, alpských záchranářských psech",
-  "image_prompt": "A gentle St. Bernard rescue dog standing in snowy alpine terrain near a stone mountain hospice, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A gentle St. Bernard rescue dog standing in snowy alpine terrain near a stone mountain hospice, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A huge, gentle Saint Bernard dog fills the frame trudging through deep snow with a small wooden barrel around its neck, a delighted child riding piggyback on its broad furry back. Smaller and subordinate: a lost hiker's footprints trailing behind; a mountain hut glowing in the distance; snowflakes falling softly. MOOD: cheerful, heartwarming, sunny."
  },
  {
   "id": "ch-k-raclette",
@@ -1195,7 +1249,8 @@
   "quip_wrong": "Tentokrát mimo — u raclette se sýr nesmaží ani nešlehá, nechá se roztát a seškrábne přímo na brambory.",
   "explanation": "Slovo raclette pochází z francouzského racler, tedy škrábat. Pokrm vznikl v kantonu Valais, kde si pastýři nechávali sýr opékat u ohně a odkrajovali si nožem měkčí roztavenou vrstvu. Dnes se raclette nejčastěji dělá v elektrickém přístroji s malými pánvičkami pro každého u stolu.",
   "about": "raclette, tradičním švýcarském sýrovém jídle",
-  "image_prompt": "A wheel of cheese melting by an open flame with a person scraping the melted layer onto a plate of potatoes, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A wheel of cheese melting by an open flame with a person scraping the melted layer onto a plate of potatoes, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A huge round wheel of cheese fills the frame tilted sideways near a glowing heater, its melted face sagging into a thick golden drip that a delighted child catches directly onto a waiting potato below. Smaller and subordinate: a long-handled scraper; a basket of boiled potatoes; pickles on a side plate. MOOD: cheerful, cozy, sunny."
  },
  {
   "id": "ch-t-cern",
@@ -1216,7 +1271,8 @@
   "quip_wrong": "Tentokrát to nevyšlo, ale bylo to blízko — servery ani vojáci, pod Ženevou jezdí částice, ne data nebo tanky.",
   "explanation": "Tunel Velkého hadronového urychlovače měří v obvodu 27 kilometrů a leží až 175 metrů pod zemí na hranici Švýcarska a Francie. Kromě objevu Higgsova bosonu v roce 2012 se v CERNu v roce 1989 zrodil i vynález, který změnil celý svět — World Wide Web.",
   "about": "CERNu a Velkém hadronovém urychlovači u Ženevy",
-  "image_prompt": "A vast underground circular particle accelerator tunnel glowing with soft light beneath the Swiss countryside near Geneva, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A vast underground circular particle accelerator tunnel glowing with soft light beneath the Swiss countryside near Geneva, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A colossal circular tunnel fills the frame glowing with a bright blur of light as two tiny particles race toward each other at incredible speed, scientists in white coats watching anxiously from a control room window above. Smaller and subordinate: a wall of blinking monitors; a coffee cup abandoned mid-shift; warning lights flashing. MOOD: tense, awe-inspiring."
  },
  {
   "id": "ch-t-jodlovani",
@@ -1237,7 +1293,8 @@
   "quip_wrong": "Trefa se nekonala, zkus to znovu — chorál ani rap, tenhle skákavý hlasový trik v horách se jmenuje jódlování.",
   "explanation": "Jódlování původně sloužilo pastevcům ke svolávání dobytka a k dorozumívání mezi vzdálenými stráněmi. Dnes se koná i celostátní Federální jódlerský festival, kterého se účastní přes 10 000 zpěváků a hudebníků najednou.",
   "about": "jódlování, tradičním alpském zpěvu",
-  "image_prompt": "A yodeling singer standing on a green alpine meadow with mountains in the background, mouth open mid-song, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A yodeling singer standing on a green alpine meadow with mountains in the background, mouth open mid-song, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A jubilant singer fills the frame on an alpine hillside, his voice visibly drawn as a wavy line leaping wildly up and down between low and high peaks that mirror the actual mountains behind him. Smaller and subordinate: startled cows looking up; an alphorn resting nearby; echoing birds scattering. MOOD: joyful, exuberant."
  },
  {
   "id": "ch-t-cervelat",
@@ -1258,7 +1315,8 @@
   "quip_wrong": "Přemýšlel jsi dobře, vyšlo to špatně — ústava ani lingvistický vtip, cervelat spojuje jazykové oblasti chutí, ne slovníkem.",
   "explanation": "Obliba cervelatu je taková, že v roce 2006 vyvolal skutečnou národní krizi: Brazílie kvůli nákaze zakázala vývoz hovězích střívek potřebných na obal klobásy a Švýcarsko čelilo nedostatku své nejmilovanější uzeniny. Parlament se tím vážně zabýval, dokud se nenašla náhradní dodávka.",
   "about": "klobáse cervelat a její oblibě ve Švýcarsku",
-  "image_prompt": "Grilled cervelat sausages with characteristic split ends over a campfire grill in a Swiss meadow, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "Grilled cervelat sausages with characteristic split ends over a campfire grill in a Swiss meadow, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A single plump sausage fills the frame lying across a shared picnic table, four hands from four different directions all reaching in at once to grab a slice, meeting perfectly in the middle without conflict. Smaller and subordinate: a mustard pot; a checkered picnic blanket; regional flags planted playfully around the table's edge. MOOD: warm, unifying, playful."
  },
  {
   "id": "ch-t-jet-deau",
@@ -1279,7 +1337,8 @@
   "quip_wrong": "Byl to pokus se stylem, jen ne se štěstím — žádný vodopád ani gejzír, tenhle vodní sloupec vystřeluje uměle, čerpadlem přímo z jezera.",
   "explanation": "Jet d'Eau vznikl v roce 1886 jako obyčejný bezpečnostní ventil vodní elektrárny, který odpouštěl přetlak v potrubí. Teprve později si obyvatelé Ženevy jeho impozantní vzhled oblíbili natolik, že se z technické nutnosti stal záměrnou turistickou atrakcí přemístěnou přímo do jezera.",
   "about": "fontáně Jet d'Eau v Ženevě",
-  "image_prompt": "A tall water fountain jet shooting high above Lake Geneva with the city skyline in the background, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A tall water fountain jet shooting high above Lake Geneva with the city skyline in the background, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A colossal jet of water fills the frame shooting straight up from a lake into the sky, far higher than the surrounding buildings, a single startled seagull caught mid-flight beside its towering white plume. Smaller and subordinate: tourists on the promenade looking up in awe; sailboats bobbing nearby; spray catching the sunlight in a faint rainbow. MOOD: dramatic, awe-inspiring."
  },
  {
   "id": "ch-a-quartz-kriz",
@@ -1300,7 +1359,8 @@
   "quip_wrong": "Nesprávně, přestože sebejistě — žádný požár ani exodus řemeslníků, Švýcarsko srazila na kolena obyčejná baterie v japonských hodinkách.",
   "explanation": "Mezi lety 1970 a 1988 klesla zaměstnanost ve švýcarském hodinářství z asi 90 000 na necelých 30 000 lidí. Odvětví nakonec zachránil podnikatel Nicolas Hayek, který v roce 1983 spustil značku Swatch — levné plastové quartzové hodinky, které naopak švýcarskou nálepku proměnily zpátky v módní symbol.",
   "about": "quartzové krizi švýcarského hodinářství v 70. letech",
-  "image_prompt": "A dusty abandoned Swiss watchmaking workbench with tiny gears next to a shiny cheap digital watch on the same table, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A dusty abandoned Swiss watchmaking workbench with tiny gears next to a shiny cheap digital watch on the same table, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A tiny, plain quartz watch fills the frame sitting confidently on a velvet cushion, casting an enormous dramatic shadow shaped like a toppling stack of ornate mechanical pocket watches behind it. Smaller and subordinate: a magnifying loupe abandoned on a workbench; scattered watch gears; a closed shop sign hanging crooked, its face left blank. MOOD: wry, dramatic, ironic."
  },
  {
   "id": "ch-a-jehlovy-park",
@@ -1321,7 +1381,8 @@
   "quip_wrong": "Mimo mísu, tentokrát s grácií — žádné kasino ani vojenský výcvik, Platzspitz proslul temnějším experimentem: tolerovanou drogovou scénou.",
   "explanation": "Park byl kvůli zdravotní katastrofě uzavřen v roce 1992, ale zkušenost z něj nakonec vedla k dnešní švýcarské politice léčby heroinem pod lékařským dohledem — přístupu, který se dnes studuje po celém světě jako jeden z nejúspěšnějších modelů harm reduction.",
   "about": "curyšském Jehlovém parku a jeho vlivu na švýcarskou drogovou politiku",
-  "image_prompt": "A bleak empty city park at dusk with scattered benches and a distant church spire, somber atmosphere, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A bleak empty city park at dusk with scattered benches and a distant church spire, somber atmosphere, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A quiet city park fills the frame at dusk, its benches and grass eerily empty except for a single park sign, its face left completely blank, standing amid scattered fallen leaves. Smaller and subordinate: a lone pigeon pecking at the ground; a flickering streetlamp; distant city lights beyond the trees. MOOD: somber, quiet, not graphic."
  },
  {
   "id": "ch-k-alpsky-kozorozec",
@@ -1343,6 +1404,7 @@
   "explanation": "Kozorožci ve Švýcarsku v 19. století kvůli lovu úplně vymizeli. Vrátili se zpátky jen díky tomu, že se z Itálie, kde přežilo jen pár kusů, potají propašovala mláďata a znovu se vypustila do švýcarských hor.",
   "source_url": "https://cs.wikipedia.org/wiki/Kozoro%C5%BEec_alpsk%C3%BD",
   "image_prompt": "Fotorealistický snímek kozorožce alpského s mohutnými zahnutými rohy stojícího na strmé skalní stěně ve švýcarských Alpách, v pozadí zasněžené vrcholky a modrá obloha, 16:9",
-  "about": "kozorožci alpském"
+  "about": "kozorožci alpském",
+  "irony_prompt": "A magnificent ibex with huge curved horns fills the frame standing impossibly balanced on a near-vertical rock face, a delighted child watching in wonder from a safe viewing trail far below. Smaller and subordinate: loose pebbles tumbling down the cliff; a soaring eagle overhead; alpine flowers growing in cracks. MOOD: cheerful, awe-struck, sunny."
  }
 ]

@@ -81,6 +81,40 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-12 — Nizozemsko: 63/63 ilustrací. 8 vad z 63 (13 %) — druhá nejvyšší dosud po Slovensku, tři nová poučení, žádné z ostatních zemí předtím nenastalo.**
+  Zadání psaná v session (Sonnet 5), 60 z 63 nejdřív chybělo klíčová fráze „fills the
+  frame" (viz zápis o zadáních výš) — po doplnění a dvou opravách tvaru jídla `lint-irony`
+  0 chyb, teprve pak odesláno.
+  - **NOVÉ: konkrétní slovo abstraktního pojmu ve scéně SAMO vyvolalo popisek, stejně
+    jako konkrétní slovo instituce u Švédska.** `nl-q-vilem-oransky` mělo „a banner of
+    independence" → model napsal na prapor čitelné „INDEPENDENCE". Oprava: prapor popsán
+    jako „plain unmarked... its fabric completely blank", bez slova, které pojmenovává,
+    co má nést. Platí to i pro abstrakta, ne jen pro fyzické objekty jako banka nebo hotel.
+  - **NOVÉ: „dollop" (chomáč) u bílé omáčky se modelu čte jako tvar točené zmrzliny.**
+    `nl-t-hranolky-majoneza` mělo „an enormous white dollop of mayonnaise" → vyšlo jako
+    naprosto čitelná točená zmrzlina na hranolkách, ne majonéza — obrázek by popíral
+    vlastní odpověď. Oprava nebyla o slově „mayonnaise", ale o TVARU: „a thick smear…
+    squeezed messily… drooping down… in flat opaque ribbons" místo „dollop". Po opravě
+    vyšlo čistě napoprvé — racek dokonce krade hranolek, gag navíc zdarma.
+  - **NOVÉ: nápisová tabule (menu/ceník) uvnitř interiéru se vynořila, i když ji zadání
+    vůbec nezmiňovalo.** `nl-a-coffeeshop-paradox` mělo jen „a cosy coffee shop's front
+    door… welcoming customers inside" — model si do interiéru domyslel viditelnou
+    nástěnnou tabuli s řádky textu, protože kavárna/coffee shop si o ceník řekne sama,
+    podobně jako banka o vývěsku. Oprava: „past plain bare walls with no menu board or
+    price list anywhere in sight" — explicitní zápor pomohl, i když obecné bary/kavárny
+    ve zbytku fondu (Nizozemsko má hausbót i sýrový trh s klidnými interiéry) takový
+    problém neměly — zjevně jde o konkrétní asociaci „coffee shop = ceník na zdi".
+  - **Falešná vada, kterou zvětšení na 10× rozpustilo v šum:** bledý kruhový vodoznak
+    a slovo připomínající razítko na `nl-k-van-gogh-slunecnice` byly REÁLNÉ (potvrzeny
+    5× zvětšením) — ale u druhého podezřelého místa (fasáda Košic ve Slovensku, viz výš)
+    stejné zvětšení naopak potvrdilo, že jde jen o šum. **Vyšší zvětšení rozhoduje oběma
+    směry, ne jen k odhalení.**
+  - **6 podpisů** (`nl-q-kinderdijk`, `nl-q-fristina`, `nl-q-delta-plan`, a `nl-q-sinterklaas`
+    dokonce potřeboval TŘETÍ pokus — druhé přeposlání vrátilo nový podpis jinam, stejný
+    vzorec jako u slovenské železnice). `nl-k-van-gogh-slunecnice` mělo podpis i vodoznak
+    najednou — jedno přeposlání spravilo obojí.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 780.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-12 — Slovensko: 66/66 ilustrací. 10 vad z 66 (15 %) — nejvyšší podíl ze všech zemí dosud, ale osm z deseti byly podpisy (náhodná vada), jen dvě byly textové.**
   Dokončeno na začátku session: obrázky byly z minulé session vygenerované, ale NEPROŠLY
   kontrolou očima (viz `docs/predani-ilustrace.md`). Kontrola udělala rozdíl — postup stejný
