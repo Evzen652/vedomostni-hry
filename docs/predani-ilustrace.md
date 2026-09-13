@@ -1,10 +1,11 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Ukrajiny
-a odeslání Rumunska). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Rumunska
+a odeslání Thajska). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
-Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina).
+Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
+Ukrajina, Rumunsko).
 
 ---
 
@@ -13,10 +14,10 @@ Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španě
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 504** |
-| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, **Ukrajina 47/47** |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Rumunsko 46 zadání odesláno (`submit --cc ro`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
-| Další v pořadí (po Rumunsku) | podle `docs/pokracovani.md` / velikosti zbylých fondů — Thajsko 45, Turecko 43, Irsko 42, Izrael 42… |
+| Bez ilustrace | **1 458** |
+| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, **Rumunsko 46/46** |
+| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Thajsko 45 zadání napsaných, zkontrolovaných (`lint-irony` 0 chyb) a ODESLANÝCH, obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
+| Další v pořadí (po Thajsku) | podle `docs/pokracovani.md` / velikosti zbylých fondů — Turecko 43, Irsko 42, Izrael 42, Jižní Korea 42… |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -34,14 +35,14 @@ spolehlivě, pokud je podpis blízko okraje. Postup: `sharp extract` horních ~8
 plochy (zachovej poměr stran, u 1344×768 např. left:100, top:0, width:1143, height:653),
 pak `.resize(1344, 768)`.
 
-**Ukrajina jako první země NEMĚLA ANI JEDEN náhodný podpis** — všechny 4 vady byly
-textové/vlajkové. Sleduj to i u Rumunska.
+**Ukrajina jako jediná země NEMĚLA ANI JEDEN náhodný podpis** — u Rumunska se jeden
+zase objevil, a to na NEČEKANÉM MÍSTĚ (radlice buldozeru, ne roh).
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Rumunsko
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Thajsko
 
-Dávka pro Rumunsko (46 otázek, `batches/i8t3rylsdbpmfk06oewbket6pc7h2i7o6v9l`) byla
+Dávka pro Thajsko (45 otázek, `batches/awm1w8gkpnzu6bn0cq1jtwmnnw88ga1tph24`) byla
 odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
 
 ```bash
@@ -49,35 +50,45 @@ node scripts/batch-irony-images.js status   # počkej na BATCH_STATE_SUCCEEDED
 node scripts/batch-irony-images.js fetch    # uloží do img/{id}.jpg
 
 NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" ro     # přehledové archy 3×3
-node "$NASTROJE/rohy.js" ro      # arch dolních rohů (podpisy)
+node "$NASTROJE/archy.js" th     # přehledové archy 3×3
+node "$NASTROJE/rohy.js" th      # arch dolních rohů (podpisy)
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-ro/`,
-pošli přes `submit --cc ro --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Ukrajině a Španělsku výš), `validate` + `test:offline`, commit, push.
+Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-th/`,
+pošli přes `submit --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
+(vzor: zápisy o Rumunsku a Ukrajině výš), `validate` + `test:offline`, commit, push.
 
-**Extrémně citlivá témata v Rumunsku psaná symbolicky/nezobrazivě:** Vlad Țepeš
-(jen prázdný kůl v lese, ŽÁDNÉ násilí), Elie Wiesel (kniha a svíčka, ŽÁDNÉ zobrazení
-holokaustu), revoluce 1989 (skácená socha a vlajka s vystřiženým znakem — skutečný
-historický detail — místo zobrazení popravy), demolice pro Ceaușescův palác (jen
-důsledek, ne diktátor). Zkontroluj obzvlášť pečlivě, že žádná z těchto scén nesklouzla
-do grafického zobrazení.
+**Nejrizikovější thajské otázky, projdi je nejpřísněji — VŠECHNY jsou o písmu nebo
+číslech a zadání je proto obchází úplně bez symbolů:**
+- `th-q-thajske-pismo` (král vytvořil písmo) — pilíř je ZÁMĚRNĚ PRÁZDNÝ, teprve se
+  do něj zatne dláto. Kdyby na něm cokoli bylo, je to vada.
+- `th-q-thajska-abeceda` (44 souhlásek) — 44 hliněných figurek zvířat na polici místo
+  jakékoli tabulky se znaky.
+- `th-q-jmeno-bangkoku` (nejdelší jméno, 168 písmen) — nekonečný svitek, ale zcela
+  prázdný; vtip nese délka, ne obsah.
+- `th-q-tony` (pět tónů) — pět barevných stuh zvuku z otevřených úst, žádná písmena.
+- `th-q-comaneci-typ` pozor obecně: **jakýkoli displej, tabule nebo ciferník si nápis
+  vynutí** (viz Rumunsko a Řecko). V thajské sadě takový objekt schválně není žádný.
 
-**Past z Bulharska/Ukrajiny, hlídej ji i tady: špatná NÁRODNÍ VLAJKA.** Obecný popis
-bez konkrétních barev/orientace pruhů vyrobí vlajku jiné země. Zkontroluj vlajky
-u fotbalových/tenisových otázek (Hagi, Halep, Năstase, Steaua).
-
-**Past ze Švýcarska/Řecka/Ukrajiny, platí furt:** slovo, které POJMENOVÁVÁ, co věc
-JE, K ČEMU SLOUŽÍ nebo V JAKÉM JE STAVU, se propíše jako čitelný text i s `left blank`
+**Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska, platí furt:** slovo, které
+POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text i s `left blank`
 vedle sebe. Řešení: to slovo/frázi z popisu úplně odstranit.
 
-**Past z Bulharska: „ornate/elegant script" NENÍ záruka nečitelnosti.** Rumunská
-otázka o cyrilici (než přešla na latinku) řešena stejně jako bulharská/ukrajinská —
-abstraktní nečitelné symboly, ne pero na pergamenu.
+**Past z Rumunska, NOVÁ a lint ji nechytí: vada může být VKUSOVÁ.** U citlivého tématu
+nestačí napsat `not graphic` — scéna nesmí obsahovat prvek, který se dá číst jako tělo,
+násilí nebo nenávistný symbol. V thajské sadě je rizikový `th-q-pad-ajutthaje` (pád
+města po obléhání) — zadání drží jen rozbitou bránu a opuštěný tábor, žádné postavy.
+
+**Past z Bulharska/Ukrajiny: špatná NÁRODNÍ VLAJKA.** `th-k-vlajka` má barvy a pořadí
+pruhů vypsané explicitně (červená / bílá / silná modrá / bílá / červená) — zkontroluj,
+že sedí, protože ta otázka je přímo o nich.
 
 **Past, kterou hlídej po KAŽDÉ opravě: jedna oprava umí vyrobit nový náhodný podpis**,
 i opakovaně u téhož obrázku. Po každé opravě ZNOVU zkontroluj archy i rohy.
+
+**A od Rumunska navíc: podpis NEMUSÍ ležet v rohu.** `ro-a-palac-demolice` ho měl na
+radlici buldozeru uprostřed dolní třetiny, takže arch rohů ho minul. Když je ve scéně
+stroj, vozidlo nebo jiná velká hladká plocha, projdi ji zvětšeným výřezem.
 
 ---
 
@@ -184,14 +195,29 @@ neodstraní.
 - **Jedna oprava umí vyrobit DVA po sobě jdoucí náhodné podpisy u téhož obrázku**
   (řecká Akropolis: 3 pokusy — druhý opravil text, ale přidal podpis). Po každé
   opravě kontroluj znovu archy i rohy, i když řešila jen jednu konkrétní vadu.
+- **Podpis NEMUSÍ ležet v rohu** (Rumunsko, `ro-a-palac-demolice`): rukopisná klikyháka
+  seděla na radlici buldozeru uprostřed dolní třetiny, takže arch rohů ji neukázal.
+  Velká hladká plocha stroje nebo vozidla je druhé oblíbené místo — projdi ji výřezem.
+- **Vada může být VKUSOVÁ a žádná kontrola ji nechytí** (Rumunsko, `ro-q-revoluce`):
+  „toppled bronze statue lies broken on a city square" vyšlo jako realistické lidské
+  tělo na dlažbě, u otázky o revoluci zakončené popravou. `not graphic` v zadání to
+  nezachránilo. **U citlivého tématu scéna nesmí obsahovat ležící lidskou figuru vůbec** —
+  pomohl prázdný podstavec se dvěma ulomenými botami, který je navíc vtipnější.
+- **„Stopy nástrojů" (tool marks) si model vyplní libovolným geometrickým znakem**
+  — u `ro-a-rosia-montana` vyšla značka připomínající hákový kříž. Popisovat TVAR
+  („even parallel chisel grooves"), ne „značky".
+- **Akt psaní ve scéně přinese text vždycky, ať se formuluje jakkoli** (Bulharsko,
+  Ukrajina, Rumunsko — třikrát „ornate script too stylized to read"). Jediné, co
+  spolehlivě funguje, je psaní ze scény ODSTRANIT: u rumunské cyrilice ruce ZAVÍRAJÍ
+  starý svazek a sahají po novém, oba zavřené, žádná stránka není vidět.
 
 ---
 
 ## 6. Co dělat dál
 
-1. **Stáhnout a zkontrolovat Rumunsko** (bod 2 výš) — priorita číslo jedna.
-2. **Napsat zadání pro Thajsko (45)** a pokračovat pořadím: Turecko 43,
-   Irsko 42, Izrael 42, Jižní Korea 42…
+1. **Stáhnout a zkontrolovat Thajsko** (bod 2 výš) — priorita číslo jedna.
+2. **Napsat zadání pro Turecko (43)** a pokračovat pořadím: Irsko 42,
+   Izrael 42, Jižní Korea 42…
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 

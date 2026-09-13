@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wat_Arun",
   "source_card": "th-mista-wat-arun",
   "image_prompt": "Fotorealistický širokoúhlý snímek věže chrámu Wat Arun v Bangkoku při východu slunce, zdobná porcelánová mozaika, řeka Chao Phraya v popředí, teplé zlaté světlo, bez lidí, 16:9",
-  "about": "chrámu Wat Arun"
+  "about": "chrámu Wat Arun",
+  "irony_prompt": "A towering temple spire fills the frame, its entire surface encrusted with fragments of broken porcelain teacups and plates and pressed seashells set into mortar. Smaller and subordinate: a workman on bamboo scaffolding pressing in another shard; a basket of smashed crockery; longtail boats on the river below. MOOD: dazzling, ingenious."
  },
  {
   "id": "th-q-ajutthaja",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ayutthaya_Historical_Park",
   "source_card": "th-mista-ajutthaja",
   "image_prompt": "Fotorealistický širokoúhlý snímek starých cihlových chrámových zřícenin a stúp v Historickém parku Ajutthaja, Thajsko, zlaté hodiny, bez lidí, 16:9",
-  "about": "Historickém parku Ajutthaja"
+  "about": "Historickém parku Ajutthaja",
+  "irony_prompt": "A serene stone Buddha head fills the frame, cradled and half swallowed by the twisting roots of an old fig tree. Smaller and subordinate: crumbling brick stupas leaning in the distance; a fallen column overgrown with grass; a lone visitor crouching to look. MOOD: melancholy, majestic."
  },
  {
   "id": "th-q-doi-suthep",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep",
   "source_card": "th-mista-doi-suthep",
   "image_prompt": "Fotorealistický širokoúhlý snímek zlaté chedi u chrámu Wat Phra That Doi Suthep s výhledem na mlžné hory u Chiang Mai, ranní světlo, bez lidí, 16:9",
-  "about": "chrámu Wat Phra That Doi Suthep"
+  "about": "chrámu Wat Phra That Doi Suthep",
+  "irony_prompt": "A white elephant fills the frame plodding up a misty forest mountain path with a small golden casket strapped carefully to its back. Smaller and subordinate: monks following in single file; a golden spire just emerging above the trees; mist curling between the trunks. MOOD: mythic, reverent."
  },
  {
   "id": "th-q-similan",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Similan_Islands",
   "source_card": "th-priroda-similan",
   "image_prompt": "Fotorealistický letecký snímek tyrkysové vody a žulových balvanů souostroví Similan, Thajsko, jasná obloha, bez lidí, 16:9",
-  "about": "Similanských ostrovech"
+  "about": "Similanských ostrovech",
+  "irony_prompt": "A cluster of huge rounded granite boulder islands fills the frame rising out of turquoise sea. Smaller and subordinate: a boatman in the foreground holding up nine fingers with a baffled look while two extra little islands sit off to one side; a longtail boat; snorkellers in the shallows. MOOD: sunny, comic."
  },
  {
   "id": "th-q-doi-inthanon",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Doi_Inthanon",
   "source_card": "th-priroda-doi-inthanon",
   "image_prompt": "Fotorealistický širokoúhlý snímek mlžného vrcholu Doi Inthanon pokrytého mračným lesem, Thajsko, chladné ranní světlo, bez lidí, 16:9",
-  "about": "hoře Doi Inthanon"
+  "about": "hoře Doi Inthanon",
+  "irony_prompt": "A broad misty mountain summit fills the frame with two matching tiered pagodas standing side by side on its shoulder above a sea of cloud. Smaller and subordinate: a visitor bundled in a woolly hat and scarf, shivering in the tropics; rhododendron blossoms; a mossy rain forest edge. MOOD: cool, lofty, gently comic."
  },
  {
   "id": "th-q-zlaty-trojuhelnik",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Golden_Triangle_(Southeast_Asia)",
   "source_card": "th-priroda-zlaty-trojuhelnik",
   "image_prompt": "Fotorealistický letecký snímek soutoku řek Mekong a Ruak ve Zlatém trojúhelníku, zalesněné kopce Thajska, Laosu a Myanmaru, zlaté hodiny, 16:9",
-  "about": "Zlatém trojúhelníku"
+  "about": "Zlatém trojúhelníku",
+  "irony_prompt": "A wide river confluence fills the frame where two brown rivers merge, with three separate banks facing one another across the water. Smaller and subordinate: three differently shaped temple roofs, one on each bank; a boat drifting exactly in the middle, undecided; fishermen on each shore ignoring each other. MOOD: hazy, borderland."
  },
  {
   "id": "th-q-rama-v",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chulalongkorn",
   "source_card": "th-lide-rama-v",
   "image_prompt": "Fotorealistický snímek zdobného sálu siamského královského paláce z 19. století, pozlacená architektura, měkké interiérové světlo, bez lidí, 16:9",
-  "about": "králi Chulalongkornovi"
+  "about": "králi Chulalongkornovi",
+  "irony_prompt": "A pair of heavy iron shackles fills the frame lying sprung open and empty on a polished palace table, beside a rolled palm-leaf scroll tied with ribbon and a red wax seal, the scroll completely blank. Smaller and subordinate: freed workers walking out through an open gate; a key dropped on the floor; a palace colonnade. MOOD: liberating, dignified."
  },
  {
   "id": "th-q-rama-ix",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bhumibol_Adulyadej",
   "source_card": "th-lide-rama-ix",
   "image_prompt": "Fotorealistický snímek nádvoří velkého thajského královského paláce se zlatými věžemi, slavnostní atmosféra, jasný den, bez lidí, 16:9",
-  "about": "králi Bhumibolu Adulyadejovi"
+  "about": "králi Bhumibolu Adulyadejovi",
+  "irony_prompt": "A grand tiered royal umbrella fills the frame, its silk canopy bleached pale at the very top by decades of sun while the lower tiers stay bright. Smaller and subordinate: a throne cushion worn into a permanent hollow; a stack of seventy slender candles; an attendant polishing the same armrest for the thousandth time. MOOD: reverent, enduring."
  },
  {
   "id": "th-q-sunthorn-phu",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sunthorn_Phu",
   "source_card": "th-lide-sunthorn-phu",
   "image_prompt": "Fotorealistický snímek starobylého ručně psaného básnického rukopisu na dřevěném stole, svíčkové světlo, bez lidí, 16:9",
-  "about": "Sunthornu Phu"
+  "about": "Sunthornu Phu",
+  "irony_prompt": "A poet in flowing Thai silk fills the frame reciting with one hand flung theatrically wide, incongruously wearing a stiff white Elizabethan ruff collar around his neck. Smaller and subordinate: listeners sitting cross-legged, enraptured; a bundle of palm-leaf pages tied firmly shut; an oil lamp guttering. MOOD: theatrical, affectionate."
  },
  {
   "id": "th-q-songkran",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Songkran_(Thailand)",
   "source_card": "th-kultura-songkran",
   "image_prompt": "Fotorealistický snímek thajské pouliční slavnosti, lidé si radostně stříkají vodu během Songkranu, barevná atmosféra, jasné denní světlo, bez čitelného textu, 16:9",
-  "about": "svátku Songkran"
+  "about": "svátku Songkran",
+  "irony_prompt": "An elder's weathered hands fill the frame being gently anointed with scented water poured from a small silver bowl by a kneeling younger relative. Smaller and subordinate: the street behind them erupting in a full water fight with buckets and hoses; a soaked motorbike rider laughing; marigold petals floating in the bowl. MOOD: tender in front, joyous chaos behind."
  },
  {
   "id": "th-q-loy-krathong",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Loy_Krathong",
   "source_card": "th-kultura-loy-krathong",
   "image_prompt": "Fotorealistický snímek mnoha malých plovoucích lotosových svíček zářících na tmavé řece v noci v Thajsku, odrazy na vodě, bez lidí, 16:9",
-  "about": "svátku Loy Krathong"
+  "about": "svátku Loy Krathong",
+  "irony_prompt": "A small banana-leaf float fills the frame drifting on dark water, a single lit candle and marigolds on top, the flame doubled in the reflection. Smaller and subordinate: hundreds of tiny lights receding upriver; two hands just releasing another float; a full moon low over the trees. MOOD: serene, magical."
  },
  {
   "id": "th-q-san-phra-phum",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Spirit_house",
   "source_card": "th-kultura-san-phra-phum",
   "image_prompt": "Fotorealistický snímek tradičního zdobného thajského domečku pro ducha na podstavci v koutě zahrady, obětiny uvnitř, měkké denní světlo, bez lidí, 16:9",
-  "about": "domečcích pro ducha san phra phum"
+  "about": "domečcích pro ducha san phra phum",
+  "irony_prompt": "An ornate miniature temple perched on a post fills the frame in a garden, with tiny offerings of fruit and a little glass of bright red soda set out on its platform. Smaller and subordinate: the full-size house behind it looking plain by comparison; a jasmine garland; a gecko sunbathing on the miniature roof. MOOD: charming, devout."
  },
  {
   "id": "th-q-khon",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Khon",
   "source_card": "th-umeni-khon",
   "image_prompt": "Fotorealistický snímek thajských maskovaných tanečníků khon ve zdobných kostýmech na tradičním jevišti, dramatické scénické osvětlení, bez čitelného textu, 16:9",
-  "about": "tanci khon"
+  "about": "tanci khon",
+  "irony_prompt": "An elaborate gilded demon mask fills the frame, worn by a dancer frozen in a sharp angular pose with fingers bent impossibly far back. Smaller and subordinate: a monkey-faced dancer crouching low; a row of other masks waiting on wooden stands; drummers at the side of the stage. MOOD: dramatic, ornate."
  },
  {
   "id": "th-q-jim-thompson",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Jim_Thompson_(designer)",
   "source_card": "th-umeni-jim-thompson",
   "image_prompt": "Fotorealistický snímek tradičního thajského domu na kůlech z týkového dřeva v muzejní zahradě, Bangkok, měkké odpolední světlo, bez lidí, 16:9",
-  "about": "Jimu Thompsonovi a thajském hedvábí"
+  "about": "Jimu Thompsonovi a thajském hedvábí",
+  "irony_prompt": "A cascade of shimmering silk fills the frame tumbling off a wooden handloom in brilliant peacock colours. Smaller and subordinate: a pair of Western leather shoes left neatly beside the loom with nobody in them; weavers working further down the row; a teak house on stilts. MOOD: brilliant, quietly mysterious."
  },
  {
   "id": "th-q-ramakien",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wat_Phra_Kaew",
   "source_card": "th-umeni-ramakien",
   "image_prompt": "Fotorealistický snímek zdobných nástěnných maleb podél chrámové ochozové zdi zobrazujících mytologické bojovníky, Bangkok, denní světlo, bez lidí, 16:9",
-  "about": "nástěnných malbách Ramakien ve Wat Phra Kaew"
+  "about": "nástěnných malbách Ramakien ve Wat Phra Kaew",
+  "irony_prompt": "A vast painted temple gallery wall fills the frame, curving away into the distance and crowded with hundreds of tiny gold and green battle scenes that never seem to end. Smaller and subordinate: a visitor craning their neck, exhausted, having long since lost count; a painted monkey army mid-charge; a bench nobody has time to use. MOOD: overwhelming, magnificent."
  },
  {
   "id": "th-q-muay-thai",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Muay_Thai",
   "source_card": "th-sport-muay-thai",
   "image_prompt": "Fotorealistický snímek dvou bojovníků Muay Thai trénujících ve venkovním thajském boxerském ringu, dramatické osvětlení, bez čitelného textu, 16:9",
-  "about": "Muay Thai"
+  "about": "Muay Thai",
+  "irony_prompt": "A muay thai fighter fills the frame mid-strike, elbow, knee, fist and shin all flashing at once so he seems to have eight limbs. Smaller and subordinate: a flower headband hanging on the ropes; a drummer and a reed-pipe player at ringside; an opponent leaning backwards out of reach. MOOD: explosive, athletic."
  },
  {
   "id": "th-q-sepak-takraw",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
   "source_card": "th-sport-sepak-takraw",
   "image_prompt": "Fotorealistický akční snímek hráče sepak takraw provádějícího akrobatický kop nůžkami na ratanový míč přes síť, venkovní hřiště, dynamický pohyb, bez textu, 16:9",
-  "about": "sepak takraw"
+  "about": "sepak takraw",
+  "irony_prompt": "A player fills the frame upside down in mid-air, foot lashing a woven rattan ball over a net, both hands clasped firmly behind his back. Smaller and subordinate: a teammate crouched ready; a spare rattan ball resting on the court; spectators leaning in. MOOD: acrobatic, electric."
  },
  {
   "id": "th-q-somluck-kamsing",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Somluck_Kamsing",
   "source_card": "th-sport-somluck-kamsing",
   "image_prompt": "Fotorealistický snímek amatérského boxerského ringu na olympijské aréně, dramatické bodové osvětlení, bez lidí, 16:9",
-  "about": "Somlucku Kamsingovi"
+  "about": "Somlucku Kamsingovi",
+  "irony_prompt": "A boxer fills the frame roaring with joy, gloves thrown high, a single heavy gold medal swinging on his chest. Smaller and subordinate: a long row of empty pedestals behind him with only his occupied; a mouthguard spat onto the canvas; a crowd of countrymen on their feet. MOOD: euphoric, historic."
  },
  {
   "id": "th-q-thajske-pismo",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Thai_script",
   "source_card": "th-jazyk-thajske-pismo",
   "image_prompt": "Fotorealistický detailní snímek ručně psaného textu na zestárlém papíře, kaligrafické pero vedle, teplé světlo, bez čitelného významu, 16:9",
-  "about": "thajském písmu"
+  "about": "thajském písmu",
+  "irony_prompt": "A king's hand fills the frame pressing a stone chisel to a tall smooth pillar whose surface is still completely blank and untouched, the very first stroke about to be struck. Smaller and subordinate: a wooden mallet raised; fresh stone chips on the ground; courtiers watching in absolute silence. MOOD: momentous, hushed."
  },
  {
   "id": "th-q-tony",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Thai_language",
   "source_card": "th-jazyk-tony",
   "image_prompt": "Fotorealistický snímek dvou lidí vedoucích živý rozhovor na thajském pouličním trhu, výrazná gestikulace, denní světlo, bez čitelného textu, 16:9",
-  "about": "tónech v thajštině"
+  "about": "tónech v thajštině",
+  "irony_prompt": "A singer's wide open mouth fills the frame with five ribbons of coloured air curling out of it, each ribbon rising, dipping or holding level at a different angle. Smaller and subordinate: a foreigner behind, sweating and trying to copy one curve; a bird echoing another; a bamboo wind chime. MOOD: playful, musical."
  },
  {
   "id": "th-q-jmeno-bangkoku",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bangkok",
   "source_card": "th-jazyk-jmeno-bangkoku",
   "image_prompt": "Fotorealistický snímek zdobené zlaté chrámové brány v Bangkoku, teplé večerní světlo, bez čitelného textu, 16:9",
-  "about": "plném jméně Bangkoku"
+  "about": "plném jméně Bangkoku",
+  "irony_prompt": "A ceremonial scroll fills the frame unrolling endlessly across a palace floor, out through the doorway and off down the street, its surface completely blank apart from a decorative border. Smaller and subordinate: an exhausted herald still unrolling; a second herald holding the far end far away in the distance; a cat asleep on the middle of it. MOOD: absurd, grand."
  },
  {
   "id": "th-q-pad-thai",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pad_thai",
   "source_card": "th-jidlo-pad-thai",
   "image_prompt": "Fotorealistický detailní snímek talíře smažených nudlí s krevetami, arašídy, limetkou a klíčky, stánek s pouličním jídlem, teplé světlo, bez textu, 16:9",
-  "about": "pad thai"
+  "about": "pad thai",
+  "irony_prompt": "A blackened wok fills the frame heaped with long flat pale noodles tangled around prawns, crushed peanuts and a lime wedge, flames licking up the side. Smaller and subordinate: an almost empty rice sack slumped in the corner; an official nodding approvingly at the wok; a squeezed-out lime half. MOOD: thrifty, delicious."
  },
  {
   "id": "th-q-tom-yum",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tom_yum",
   "source_card": "th-jidlo-tom-yum",
   "image_prompt": "Fotorealistický detailní snímek dýmající misky pikantní polévky s krevetami, citronovou trávou a chilli, rustikální dřevěný stůl, teplé světlo, bez textu, 16:9",
-  "about": "polévce tom yum"
+  "about": "polévce tom yum",
+  "irony_prompt": "A steaming clay pot of clear red-orange broth fills the frame with curled prawns, round mushroom caps and bruised lemongrass stalks bobbing in it, a ladle stirring hard. Smaller and subordinate: a swirl lifted dripping from the pot; scattered red chillies; a diner fanning their open mouth. MOOD: fiery, fragrant."
  },
  {
   "id": "th-q-som-tam",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Som_tam",
   "source_card": "th-jidlo-som-tam",
   "image_prompt": "Fotorealistický detailní snímek dřevěného hmoždíře tlukoucího nastrouhaný zelený papájový salát, rustikální venkovní kuchyně, přirozené světlo, bez lidí, 16:9",
-  "about": "salátu som tam"
+  "about": "salátu som tam",
+  "irony_prompt": "A tall clay mortar fills the frame with a wooden pestle caught mid-thump, shredded pale green papaya strands, tomato halves and long beans leaping up out of the top. Smaller and subordinate: the cook's hand blurred with speed; limes and chillies on the board; a basket of sticky rice waiting. MOOD: rhythmic, punchy."
  },
  {
   "id": "th-q-sukhothajske-kralovstvi",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom",
   "source_card": "th-historie-sukhothajske-kralovstvi",
   "image_prompt": "Fotorealistický širokoúhlý snímek starobylých chrámových zřícenin a lotosových stúp při západu slunce, historický park, bez lidí, 16:9",
-  "about": "Sukhothajském království"
+  "about": "Sukhothajském království",
+  "irony_prompt": "A graceful seated stone Buddha fills the frame under a ruined brick arch, weathered and simple, the oldest thing in sight. Smaller and subordinate: a long receding row of ever newer, ever more gilded temple roofs stretching away behind it; lotus ponds; a toppled column. MOOD: ancestral, calm."
  },
  {
   "id": "th-q-pad-ajutthaje",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom",
   "source_card": "th-historie-pad-ajutthaje",
   "image_prompt": "Fotorealistický snímek spálených a zničených starobylých chrámových staveb za soumraku, dramatická zakouřená obloha, historická atmosféra, bez lidí, 16:9",
-  "about": "pádu Ajutthaji"
+  "about": "pádu Ajutthaji",
+  "irony_prompt": "A great city gate fills the frame standing scorched and broken open, its enormous timber doors hanging off their hinges. Smaller and subordinate: the cold cooking fires of an abandoned siege camp out on the plain; a very worn siege ladder propped against the wall; crows perched along the parapet. MOOD: sombre, historic, not graphic."
  },
  {
   "id": "th-q-siam-nezavislost",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Franco-Siamese_War",
   "source_card": "th-historie-siam-nezavislost",
   "image_prompt": "Fotorealistický snímek staré koloniální říční kanonýrské lodi na široké tropické řece, historická atmosféra, zatažená obloha, bez lidí, 16:9",
-  "about": "Siamu jako nezkolonizované zemi"
+  "about": "Siamu jako nezkolonizované zemi",
+  "irony_prompt": "A slender palm tree fills the frame bent almost double in a storm but still firmly rooted, while snapped bare flagpoles lie broken all around it. Smaller and subordinate: two warships steaming away on the horizon; a gardener calmly watering the palm as if nothing happened; neighbouring trees torn out by the roots. MOOD: wry, resilient."
  },
  {
   "id": "th-k-slon",
@@ -611,7 +638,8 @@
   "quip_correct": "Jupí, správně! Než přijely traktory, dělal tuhle práci slon — a ještě k tomu měl v Thajsku posvátný status.",
   "quip_wrong": "Zkus to jinak — tygr ani krokodýl netahali klády z lesa, tuhle dřinu i úctu měl na starosti slon.",
   "explanation": "Slon byl v Thajsku pracovním zvířetem pro přepravu klád z džungle. Bílý slon zdobil thajskou vlajku až do roku 1917 a byl považován za královský symbol. Dnes jsou sloni chráněni a žijí v přírodních rezervacích.",
-  "about": "slonech v Thajsku"
+  "about": "slonech v Thajsku",
+  "irony_prompt": "A huge working elephant fills the frame hauling an enormous teak log on a chain, a mahout perched just behind its ears. Smaller and subordinate: a forest of tall straight teak trunks; a bucket of bananas waiting as wages; a baby elephant solemnly dragging a twig in imitation. MOOD: warm, respectful."
  },
  {
   "id": "th-k-vlajka",
@@ -631,7 +659,8 @@
   "quip_correct": "Bod pro tebe! Modrý pruh uprostřed je schválně dvakrát širší — vlajka si tak trochu hraje na důležitost.",
   "quip_wrong": "Vedle — zelená s žlutou ani jen bílá s červenou, thajská vlajka staví na červené, bílé a modré.",
   "explanation": "Thajská vlajka má pět pruhů: červená symbolizuje národ, bílá náboženství a modrá krále. Nynější vlajku zavedl král Ráma VI. v roce 1917 a dodnes se nezměnila.",
-  "about": "thajské vlajce"
+  "about": "thajské vlajce",
+  "irony_prompt": "A large flag fills the frame rippling on a tall pole, showing exactly five horizontal stripes in this order from top to bottom: red, then white, then a thick navy blue band across the middle, then white, then red again. Smaller and subordinate: a small boy standing stiffly to attention; a temple roof behind; palm tops bending in the same breeze. MOOD: proud, sunny."
  },
  {
   "id": "th-k-wai",
@@ -651,7 +680,8 @@
   "quip_correct": "Bravo, trefa! Dlaně k sobě, hlava mírně skloněná — jedno gesto vyřeší pozdrav bez debat o podání ruky.",
   "quip_wrong": "Ne tak docela — podání ruky ani objetí to není, Thajci zdraví sepnutými dlaněmi a úklonem hlavy.",
   "explanation": "Wai pochází z indické a buddhistické tradice. Výška, do které dlaně zdvihneš, závisí na věku a postavení člověka: mniši a starší lidé dostávají hluboký úklon se dlaněmi u čela, vrstevníci jen jemný sklon.",
-  "about": "pozdravu wai"
+  "about": "pozdravu wai",
+  "irony_prompt": "Two people fill the frame greeting each other with palms pressed together and heads bowed, one bowing far deeper than the other. Smaller and subordinate: a monk receiving a very deep bow from a passer-by; a tourist offering a handshake to nobody at all; a temple doorway. MOOD: gracious, gently comic."
  },
  {
   "id": "th-k-mango-ryz",
@@ -671,7 +701,8 @@
   "quip_correct": "Jsi bystrá hlava! Teplá kokosová rýže vedle studeného manga — kombinace, co zní podezřele a chutná skvěle.",
   "quip_wrong": "Hádej znovu — čokoládový pudink ani ovocný jogurt to nejsou, thajská klasika je lepkavá rýže s mangem.",
   "explanation": "Mangová lepkavá rýže (khao niao mamuang) je nejoblíbenější thajský dezert. Lepkavá rýže se vaří s kokosovým mlékem a cukrem, pak se nalije ještě vrstva kokosové omáčky a přiloží plátky zralého manga.",
-  "about": "mangové lepkavé rýži"
+  "about": "mangové lepkavé rýži",
+  "irony_prompt": "A glossy white mound of sticky rice fills the frame beside a fan of deep orange mango slices, warm coconut cream pouring over the rice from a small jug. Smaller and subordinate: a sprinkle of toasted yellow beans; a whole mango and its flat stone; a spoon already dug in. MOOD: indulgent, tropical."
  },
  {
   "id": "th-k-durian",
@@ -693,7 +724,8 @@
   "explanation": "Tohle ovoce se jmenuje durian, dokáže vážit opravdu hodně a jeho tvrdá slupka je pokrytá ostrými trny.",
   "source_url": "https://en.wikipedia.org/wiki/Durian",
   "image_prompt": "Fotorealistický detailní snímek ostnatého durianu rozříznutého napůl na dřevěném stole, thajský trh v pozadí, přirozené světlo, 16:9",
-  "about": "durianu"
+  "about": "durianu",
+  "irony_prompt": "A huge spiky green-brown fruit fills the frame cracked open on a bench, thick wavy stink lines rising off its custard-yellow flesh. Smaller and subordinate: a hotel doorman recoiling with a pinched nose; an airport trolley stopped dead in its tracks; two locals tucking in, delighted. MOOD: pungent, comic."
  },
  {
   "id": "th-k-plovouci-trh",
@@ -715,7 +747,8 @@
   "explanation": "Plovoucí trhy vznikly v době, kdy byly kanály hlavními dopravními cestami Bangkoku. Nejznámější, Damnoen Saduak, dnes navštěvují hlavně turisté, místní tam nakupují čím dál méně.",
   "source_url": "https://en.wikipedia.org/wiki/Damnoen_Saduak_Floating_Market",
   "image_prompt": "Fotorealistický snímek rušného thajského plovoucího trhu, dřevěné lodičky naložené ovocem na kanálu, prodavačky v kloboucích, ranní světlo, 16:9",
-  "about": "plovoucích trzích"
+  "about": "plovoucích trzích",
+  "irony_prompt": "A wooden boat piled high with rambutans, mangoes and a steaming wok fills the frame, its vendor in a conical straw hat paddling with one hand and cooking with the other. Smaller and subordinate: a buyer reaching down from a narrow footbridge; a canal jammed with more boats behind; a cat balancing on the bow. MOOD: bustling, cheerful."
  },
  {
   "id": "th-k-takraw-mic",
@@ -737,7 +770,8 @@
   "explanation": "Sepak takraw se hraje bez rukou, míč se odbíjí nohama, koleny, hrudníkem i hlavou přes síť podobně jako u volejbalu.",
   "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
   "image_prompt": "Fotorealistický detailní snímek pleteného ratanového míče sepak takraw ležícího na hřišti, ostré denní světlo, bez lidí, 16:9",
-  "about": "míči na sepak takraw"
+  "about": "míči na sepak takraw",
+  "irony_prompt": "A woven rattan ball fills the frame in close-up, its open lattice of pale springy cane strips criss-crossing, caught spinning in mid-air. Smaller and subordinate: a bare foot just below it; the top of a net; players silhouetted mid-leap. MOOD: crisp, kinetic."
  },
  {
   "id": "th-k-zlaty-buddha",
@@ -759,7 +793,8 @@
   "explanation": "Zlatou sochu ukryli mniši před barmskou armádou pod vrstvou sádry, a její skutečnou hodnotu objevili až v roce 1955 při náhodném pádu jeřábu.",
   "source_url": "https://en.wikipedia.org/wiki/Wat_Traimit",
   "image_prompt": "Fotorealistický snímek zářící zlaté sochy Buddhy v chrámu Wat Traimit v Bangkoku, měkké vnitřní osvětlení, bez lidí, 16:9",
-  "about": "Zlatém Buddhovi ve Wat Traimit"
+  "about": "Zlatém Buddhovi ve Wat Traimit",
+  "irony_prompt": "A cracked shell of dull grey plaster fills the frame falling away in slabs from a seated Buddha to reveal blazing solid gold underneath. Smaller and subordinate: startled monks stepping back; a snapped hoisting cable swinging overhead; chunks of plaster scattered on the floor. MOOD: astonishing, revelatory."
  },
  {
   "id": "th-k-siamska-kocka",
@@ -781,7 +816,8 @@
   "explanation": "Siamské kočky se v Thajsku (dříve Siamu) chovaly už za starých královských dvorů, do Evropy je přivezli až v 19. století jako vzácný dar.",
   "source_url": "https://en.wikipedia.org/wiki/Siamese_cat",
   "image_prompt": "Fotorealistický detailní snímek siamské kočky s modrýma očima sedící na verandě thajského domu, měkké odpolední světlo, 16:9",
-  "about": "siamské kočce"
+  "about": "siamské kočce",
+  "irony_prompt": "A slender cream-coloured cat with a dark chocolate face, ears, paws and tail fills the frame sitting bolt upright with piercing blue eyes. Smaller and subordinate: a silk cushion on a carved royal stool; a palace lattice window; a second cat peering out from behind a pillar. MOOD: regal, aloof."
  },
  {
   "id": "th-t-narodni-kvetina",
@@ -803,7 +839,8 @@
   "explanation": "Zlatý déšť rozkvétá v Thajsku hlavně v dubnu a květnu, jeho žluté hrozny květů zdobí silnice po celé zemi během horkého období před monzunem.",
   "source_url": "https://en.wikipedia.org/wiki/Cassia_fistula",
   "image_prompt": "Fotorealistický snímek kvetoucího stromu zlatého deště s hrozny žlutých květů, thajská krajina v pozadí, jasné denní světlo, 16:9",
-  "about": "zlatém dešti, národní rostlině Thajska"
+  "about": "zlatém dešti, národní rostlině Thajska",
+  "irony_prompt": "A spreading tree fills the frame hung with long cascading chains of bright yellow blossom falling like rain. Smaller and subordinate: a whole road lined with more of them; a motorbike rider slowing to look up; petals drifting onto hot tarmac. MOOD: radiant, golden."
  },
  {
   "id": "th-q-buakaw",
@@ -824,7 +861,8 @@
   "explanation": "Buakaw Banchamek vyrůstal v chudém zemědělském kraji Isán a k muay thai se dostal jako dítě, aby rodině přivydělal na živobytí.",
   "source_url": "https://en.wikipedia.org/wiki/Buakaw_Banchamek",
   "image_prompt": "Fotorealistický snímek thajského boxera muay thai trénujícího na pytli v otevřené tělocvičně, ranní světlo, bez čitelného textu, 16:9",
-  "about": "boxerovi Buakawu Banchamekovi"
+  "about": "boxerovi Buakawu Banchamekovi",
+  "irony_prompt": "A muay thai fighter fills the frame holding up two identical golden trophy cups, one in each raised hand, flower headband still around his brow. Smaller and subordinate: a dusty rice field with a wooden stilt house far behind him; a pair of worn child-sized gloves hanging on a nail; a cheering corner team. MOOD: triumphant, rags-to-riches."
  },
  {
   "id": "th-q-smaragdovy-buddha",
@@ -845,7 +883,8 @@
   "explanation": "Sochu podle legendy objevili v 15. století, když blesk rozlomil starou stúpu v severním Thajsku, dnes ji třikrát ročně přeobléká sám thajský král.",
   "source_url": "https://en.wikipedia.org/wiki/Emerald_Buddha",
   "image_prompt": "Fotorealistický snímek zlatého oltáře s malou sochou Smaragdového Buddhy ve Wat Phra Kaew, zdobný interiér chrámu, měkké světlo, 16:9",
-  "about": "Smaragdovém Buddhovi"
+  "about": "Smaragdovém Buddhovi",
+  "irony_prompt": "A small seated Buddha carved from deep green stone fills the frame high on a towering golden throne, dressed in a glittering seasonal robe. Smaller and subordinate: a jeweller below squinting through a loupe and shrugging; two other robes folded on a tray, waiting their season; a vast gilded hall dwarfing the little figure. MOOD: sacred, quietly ironic."
  },
  {
   "id": "th-q-thajsky-caj",
@@ -866,7 +905,8 @@
   "explanation": "Thajský ledový čaj se servíruje se slazeným kondenzovaným mlékem nalitým navrch, takže v průhledné sklenici vznikají dvě zřetelné vrstvy.",
   "source_url": "https://en.wikipedia.org/wiki/Thai_tea",
   "image_prompt": "Fotorealistický detailní snímek sklenice thajského ledového čaje s vrstvou kondenzovaného mléka, slámka, teplé denní světlo, bez textu, 16:9",
-  "about": "thajském ledovém čaji cha yen"
+  "about": "thajském ledovém čaji cha yen",
+  "irony_prompt": "A tall clear glass fills the frame holding vivid orange tea with a thick white layer of condensed milk sinking through it in curling ribbons. Smaller and subordinate: a long cloth straining bag dripping into a pot; a punctured tin of condensed milk; a street cart under a faded umbrella. MOOD: sweet, street-side."
  },
  {
   "id": "th-q-thajska-masaz",
@@ -887,7 +927,8 @@
   "explanation": "Tradiční thajská masáž se dostala v roce 2019 na seznam nehmotného kulturního dědictví UNESCO, vychází z indických jógových a ajurvédských tradic.",
   "source_url": "https://en.wikipedia.org/wiki/Thai_massage",
   "image_prompt": "Fotorealistický snímek tradiční thajské masáže, terapeut protahuje klienta na podlahové matraci v masážním salonu, tlumené světlo, bez textu, 16:9",
-  "about": "tradiční thajské masáži nuad thai"
+  "about": "tradiční thajské masáži nuad thai",
+  "irony_prompt": "A masseur fills the frame folding a client into an impossible backward stretch, one foot braced against the client's spine, both of them perfectly serene. Smaller and subordinate: a bottle of oil pushed aside, unopened; a thin mat on a polished wooden floor; another client waiting with very wide eyes. MOOD: serene, alarming, comic."
  },
  {
   "id": "th-q-thajska-abeceda",
@@ -908,7 +949,8 @@
   "explanation": "Několik souhlásek thajské abecedy se vyslovuje stejně, ale píše se jinak podle toho, z jakého slova nebo jazyka (často sanskrtu či pálí) písmeno pochází.",
   "source_url": "https://en.wikipedia.org/wiki/Thai_script",
   "image_prompt": "Fotorealistický detailní snímek řady thajských písmen vyřezaných do dřevěné tabulky, tradiční škola, měkké světlo, bez čitelného významu, 16:9",
-  "about": "thajské abecedě"
+  "about": "thajské abecedě",
+  "irony_prompt": "A schoolteacher fills the frame standing before a long shelf crowded with forty-four little painted clay figures in a row — a chicken, an egg, a buffalo, a water jar and dozens more — each one standing in for a sound. Smaller and subordinate: pupils sitting cross-legged, counting on their fingers and running out; a bamboo pointing stick; an open window. MOOD: charming, patient."
  },
  {
   "id": "th-q-zalozeni-bangkoku",
@@ -929,7 +971,8 @@
   "explanation": "Rama I. přenesl hlavní město z Thonburi na východní břeh řeky Chao Phraya a založil dynastii Chakri, která na thajském trůně vládne dodnes.",
   "source_url": "https://en.wikipedia.org/wiki/Rama_I",
   "image_prompt": "Fotorealistický snímek řeky Chao Phraya s pohledem na starobylou část Bangkoku při ranním oparu, historická atmosféra, bez lidí, 16:9",
-  "about": "založení Bangkoku králem Ramou I."
+  "about": "založení Bangkoku králem Ramou I.",
+  "irony_prompt": "A gleaming new tiered palace roof fills the frame rising directly behind a humble huddle of stilted fishing huts and drying nets on a muddy riverbank. Smaller and subordinate: a fisherman pausing with his bucket to stare up; surveyors stretching cords across the ground; boats ferrying cut stone across the river. MOOD: transformative, upstart."
  },
  {
   "id": "th-q-erawan-vodopady",
@@ -950,7 +993,8 @@
   "explanation": "Vodopád Erawan má sedm kaskádovitých stupňů s tyrkysovými jezírky, ve kterých se dá koupat, a patří mezi nejnavštěvovanější přírodní lokality Thajska.",
   "source_url": "https://en.wikipedia.org/wiki/Erawan_Falls",
   "image_prompt": "Fotorealistický širokoúhlý snímek tyrkysového vodopádu Erawan s kaskádami mezi zelenou džunglí, sluneční paprsky, bez lidí, 16:9",
-  "about": "vodopádech Erawan"
+  "about": "vodopádech Erawan",
+  "irony_prompt": "A tall seven-step waterfall fills the frame tumbling down into turquoise pools, its topmost cascade splitting into three white plumes shaped unmistakably like the heads of an elephant. Smaller and subordinate: bathers laughing in a lower pool; little fish nibbling someone's toes; jungle ferns leaning over the water. MOOD: lush, enchanted."
  },
  {
   "id": "th-k-songkran-voda",
@@ -971,6 +1015,7 @@
   "quip_wrong": "Mlčet ani sedět doma by v tom horku nikoho nenapadlo. Songkran je o vodě.",
   "explanation": "Polévání vodou původně znamenalo očištění do nového roku. Dnes se v ulicích střílí z vodních pistolí a nikdo neprojde suchý, ani turista.",
   "about": "svátku Songkran",
-  "more_fact": "Suchý nezůstaneš ani v autobuse. Řidiči proto v těch dnech raději zavírají okna — kbelík vody přiletí i z projíždějícího náklaďáku."
+  "more_fact": "Suchý nezůstaneš ani v autobuse. Řidiči proto v těch dnech raději zavírají okna — kbelík vody přiletí i z projíždějícího náklaďáku.",
+  "irony_prompt": "A grinning soaked child fills the frame firing an enormous water pistol straight at the viewer. Smaller and subordinate: a bucket of ice water being tipped over a laughing grandmother; a blazing sun overhead; a whole street of drenched people dancing. MOOD: riotous, joyful, scorching hot."
  }
 ]

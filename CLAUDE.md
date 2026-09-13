@@ -81,6 +81,45 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Rumunsko: 46/46 ilustrací. 6 vad ze 46 (13 %) — dvě textové, jedna
+  písmová, jedna VKUSOVÁ (skácená socha se četla jako lidské tělo), jedna RIZIKOVÁ
+  (značka připomínající hákový kříž) a jeden podpis. Poprvé byla vada jinde než
+  v textu nebo podpisu.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním i po opravách.
+  - **NOVÉ: vada nemusí být technická, ale VKUSOVÁ — a tu žádná kontrola nechytí.**
+    `ro-q-revoluce` (otázka o revoluci zakončené popravou) dostalo podle zadání
+    „a toppled bronze statue lies broken on a city square" — a model to vykreslil jako
+    realistické lidské tělo ležící na dlažbě. Technicky přesně podle zadání, `lint-irony`
+    bez nálezu, žádný text ani podpis. **U citlivého tématu nestačí napsat „not graphic";
+    scéna nesmí obsahovat ležící lidskou figuru vůbec.** Oprava: prázdný podstavec, na
+    němž zbyly jen dvě ulomené bronzové boty, dav s vlajkami s vystřiženým znakem.
+    Vyšlo čistě napoprvé a gag je navíc silnější než původní.
+  - **NOVÉ: „weathered Roman tool marks on its walls" vyrobilo na oblouku jednu značku
+    připomínající hákový kříž** (`ro-a-rosia-montana`). Obecné „stopy nástrojů" si model
+    vyplní libovolným geometrickým znakem. Oprava: popsat je jako TVAR, ne jako „značky" —
+    „ridged with even parallel chisel grooves left by Roman picks". Po opravě čisté.
+  - **Slovo pojmenovávající ÚČEL objektu si řeklo o nápis, počtvrté v řadě** (Švédsko,
+    Švýcarsko, Řecko, teď Rumunsko). `ro-q-bran` mělo „a customs toll gate" → na budce
+    čitelné „CUSTOMS"; `ro-q-comaneci` mělo „a scoreboard" → čitelné „STIZERAD".
+    U brány stačilo slovo vypustit (závora + váha, bez budky); **tabule se musela
+    zrušit úplně** — displej s čísly a jmény si nápis vynutí vždycky. Fakt o desítce
+    ilustruje nově řada rozhodčích se zdviženýma rukama, tedy bez jediné číslice.
+  - **„Ornate script too stylized to read clearly" selhalo i potřetí** (po Bulharsku
+    a Ukrajině) — `ro-q-azbuka` mělo písaře opisujícího z jednoho písma do druhého
+    a vyšlo z toho čitelné pseudopísmo. **Definitivní závěr: jakmile je ve scéně akt
+    psaní nebo popsaná plocha, text přijde bez ohledu na formulaci.** Oprava odstranila
+    psaní úplně: ruce ZAVÍRAJÍ starý okovaný svazek a sahají po novém, oba zavřené,
+    žádná stránka není vidět. Čisté napoprvé.
+  - **Podpis (1): `ro-a-palac-demolice` měl vymyšlený rukopisný podpis NA RADLICI
+    buldozeru, ne v rohu.** Arch dolních rohů ho proto minul — našel se až na zvětšeném
+    výřezu spodní třetiny. **Poučení: podpis nemusí ležet v rohu; stroj s velkou hladkou
+    plochou je druhé oblíbené místo.** Spravilo přeposlání stejného zadání.
+  - **Sporné, ponecháno:** hradby Branu (`ro-q-bran`) nesou při 8× zvětšení drobné
+    čmáranice připomínající písmena, vysoké ~2 px v originále (tedy pod 1 px na
+    zobrazované šířce 405 px). Stejný typ nálezu jako `ca-k-imax-kino` — přegenerovat
+    kvůli tomu celý obrázek se nevyplatí.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 458.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-13 — Ukrajina: 47/47 ilustrací. 4 vady z 47 (9 %) — a POPRVÉ ŽÁDNÝ PODPIS,
   jen textové/vlajkové vady. Všechny 4 opravilo jedno přeposlání (jen Ševčenko potřeboval
   ještě druhé kolo kvůli selhanému generování, ne kvůli vadě).**
