@@ -1,22 +1,22 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. dopoledne**, po dokončení Španělska
-a odeslání Ukrajiny). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Ukrajiny
+a odeslání Rumunska). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
-Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko).
+Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina).
 
 ---
 
-## 1. Stav k 13. 9. 2026 (dopoledne)
+## 1. Stav k 13. 9. 2026 (odpoledne)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 551** |
-| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, **Španělsko 62/62** |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Ukrajina 47 zadání odesláno (`submit --cc ua`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
-| Další v pořadí (po Ukrajině) | podle `docs/pokracovani.md` / velikosti zbylých fondů — Rumunsko 46, Thajsko 45, Turecko 43… |
+| Bez ilustrace | **1 504** |
+| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, **Ukrajina 47/47** |
+| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Rumunsko 46 zadání odesláno (`submit --cc ro`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
+| Další v pořadí (po Rumunsku) | podle `docs/pokracovani.md` / velikosti zbylých fondů — Thajsko 45, Turecko 43, Irsko 42, Izrael 42… |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -28,18 +28,20 @@ normálně. Kdyby se to stalo znovu, řešení je stejné (dobití, appka/skript
 `es-a-vinice`) — mnohem déle než velké dávky. Batch API negarantuje čas dokončení,
 řešením je jen počkat.
 
-**NOVÁ TECHNIKA ZE ŠPANĚLSKA: když 3–4 přeposlání stejného zadání pořád vrací podpis
-(pokaždé jinde ve scéně), je RYCHLEJŠÍ A LEVNĚJŠÍ obrázek OŘÍZNOUT než platit za další
-generování** — funguje spolehlivě, pokud je podpis blízko okraje. Postup: `sharp
-extract` horních ~85 % plochy (zachovej poměr stran, u 1344×768 např. left:100,
-top:0, width:1143, height:653), pak `.resize(1344, 768)`. Kontroluj, že ořez neubral
-nic z kompozice — u krajinné scény bývá dole jen prázdná země/tráva.
+**Technika ze Španělska: když 3–4 přeposlání stejného zadání pořád vrací podpis,
+je RYCHLEJŠÍ A LEVNĚJŠÍ obrázek OŘÍZNOUT než platit za další generování** — funguje
+spolehlivě, pokud je podpis blízko okraje. Postup: `sharp extract` horních ~85 %
+plochy (zachovej poměr stran, u 1344×768 např. left:100, top:0, width:1143, height:653),
+pak `.resize(1344, 768)`.
+
+**Ukrajina jako první země NEMĚLA ANI JEDEN náhodný podpis** — všechny 4 vady byly
+textové/vlajkové. Sleduj to i u Rumunska.
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Ukrajinu
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Rumunsko
 
-Dávka pro Ukrajinu (47 otázek, `batches/q0dgfre4qbwqgyr819zrhn4hv94ifry3ldwq`) byla
+Dávka pro Rumunsko (46 otázek, `batches/i8t3rylsdbpmfk06oewbket6pc7h2i7o6v9l`) byla
 odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
 
 ```bash
@@ -47,36 +49,35 @@ node scripts/batch-irony-images.js status   # počkej na BATCH_STATE_SUCCEEDED
 node scripts/batch-irony-images.js fetch    # uloží do img/{id}.jpg
 
 NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" ua     # přehledové archy 3×3
-node "$NASTROJE/rohy.js" ua      # arch dolních rohů (podpisy)
+node "$NASTROJE/archy.js" ro     # přehledové archy 3×3
+node "$NASTROJE/rohy.js" ro      # arch dolních rohů (podpisy)
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-ua/`,
-pošli přes `submit --cc ua --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Španělsku a Bulharsku výš), `validate` + `test:offline`, commit, push.
+Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-ro/`,
+pošli přes `submit --cc ro --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
+(vzor: zápisy o Ukrajině a Španělsku výš), `validate` + `test:offline`, commit, push.
 
-**Citlivá témata v Ukrajině psaná neutrálně/nezobrazivě:** Holodomor (hladomor
-1932–33, 3,5–5 milionů obětí — extrémně citlivé, psáno čistě symbolicky přes svíčku
-a pole, ŽÁDNÉ zobrazení utrpení), mumifikovaní mniši v jeskyních Lávry (posvátné
-ostatky, ne horor).
+**Extrémně citlivá témata v Rumunsku psaná symbolicky/nezobrazivě:** Vlad Țepeš
+(jen prázdný kůl v lese, ŽÁDNÉ násilí), Elie Wiesel (kniha a svíčka, ŽÁDNÉ zobrazení
+holokaustu), revoluce 1989 (skácená socha a vlajka s vystřiženým znakem — skutečný
+historický detail — místo zobrazení popravy), demolice pro Ceaușescův palác (jen
+důsledek, ne diktátor). Zkontroluj obzvlášť pečlivě, že žádná z těchto scén nesklouzla
+do grafického zobrazení.
 
-**Past z Bulharska, hlídej ji i tady: špatná NÁRODNÍ VLAJKA.** Obecný popis „a flag
-in its home country's colors" bez konkrétních barev/orientace pruhů vyrobí vlajku
-jiné země. Ukrajina má explicitně „a flag with a blue top half and yellow bottom
-half" (ua-k-vlajka) — riziko by mělo být nízké, ale zkontroluj.
+**Past z Bulharska/Ukrajiny, hlídej ji i tady: špatná NÁRODNÍ VLAJKA.** Obecný popis
+bez konkrétních barev/orientace pruhů vyrobí vlajku jiné země. Zkontroluj vlajky
+u fotbalových/tenisových otázek (Hagi, Halep, Năstase, Steaua).
 
-**Past ze Švýcarska/Řecka, platí furt:** slovo, které POJMENOVÁVÁ, co věc JE, K ČEMU
-SLOUŽÍ nebo V JAKÉM JE STAVU (ne jen jak vypadá), se propíše jako čitelný text i s
-`left blank` vedle sebe. Řešení: to slovo/frázi z popisu úplně odstranit.
+**Past ze Švýcarska/Řecka/Ukrajiny, platí furt:** slovo, které POJMENOVÁVÁ, co věc
+JE, K ČEMU SLOUŽÍ nebo V JAKÉM JE STAVU, se propíše jako čitelný text i s `left blank`
+vedle sebe. Řešení: to slovo/frázi z popisu úplně odstranit.
 
-**Past z Bulharska: „ornate/elegant script" NENÍ záruka nečitelnosti.** Ukrajina má
-otázku o cyrilici řešenou stejně jako bulharská — sochař tvarující abstraktní vzor,
-ne pero na pergamenu.
+**Past z Bulharska: „ornate/elegant script" NENÍ záruka nečitelnosti.** Rumunská
+otázka o cyrilici (než přešla na latinku) řešena stejně jako bulharská/ukrajinská —
+abstraktní nečitelné symboly, ne pero na pergamenu.
 
 **Past, kterou hlídej po KAŽDÉ opravě: jedna oprava umí vyrobit nový náhodný podpis**,
-i opakovaně u téhož obrázku — Španělsko mělo obrázek, který si vyžádal ČTYŘI generování
-(pokaždé nový podpis jinde), nakonec zachráněný ořezem (viz technika výš). Po každé
-opravě ZNOVU zkontroluj archy i rohy, i když řešila jen jednu konkrétní vadu.
+i opakovaně u téhož obrázku. Po každé opravě ZNOVU zkontroluj archy i rohy.
 
 ---
 
@@ -112,7 +113,7 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
 | `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
 Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg` a `es`; `ca` má starší `img-zaloha-ca/`).
+`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es` a `ua`; `ca` má starší `img-zaloha-ca/`).
 
 ---
 
@@ -188,8 +189,8 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Stáhnout a zkontrolovat Ukrajinu** (bod 2 výš) — priorita číslo jedna.
-2. **Napsat zadání pro Rumunsko (46)** a pokračovat pořadím: Thajsko 45, Turecko 43,
+1. **Stáhnout a zkontrolovat Rumunsko** (bod 2 výš) — priorita číslo jedna.
+2. **Napsat zadání pro Thajsko (45)** a pokračovat pořadím: Turecko 43,
    Irsko 42, Izrael 42, Jižní Korea 42…
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.

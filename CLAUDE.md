@@ -81,6 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Ukrajina: 47/47 ilustrací. 4 vady z 47 (9 %) — a POPRVÉ ŽÁDNÝ PODPIS,
+  jen textové/vlajkové vady. Všechny 4 opravilo jedno přeposlání (jen Ševčenko potřeboval
+  ještě druhé kolo kvůli selhanému generování, ne kvůli vadě).**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **Konkrétní typ ulice s obchody si řekl o cedule, i když zadání cedule vůbec
+    nezmiňovalo** — stejný mechanismus jako u Nizozemska (coffee shop) a Německa
+    (espresso bar). `ua-q-lvov` mělo jen „ornate medieval and Habsburg-era buildings…
+    café tables on the cobblestones" → model dokreslil na fasády čitelné cedule
+    obchodů. Oprava: explicitní „every storefront front completely plain and blank
+    above the doorway".
+  - **Obecné „a national flag" bez barev vyrobilo špatnou vlajku DVAKRÁT.**
+    `ua-q-andrij-sevcenko` (jeden hráč, jedna vlajka) dostal tyrkysovo-bílou vlajku
+    místo modro-žluté; `ua-t-euro2012` (dav, dvě vlajky Ukrajina+Polsko) dostal dvě
+    zcela jiné abstraktní vlajky. Oprava obojí: barvy vypsat explicitně po plochách
+    („a flag with a blue top half and yellow bottom half"), u dvou vlajek navíc
+    rozdělit dav na poloviny se sadou barev pro každou.
+  - **Trofeje si řekly o cedulku stejně jako v Řecku** (`ua-t-eurovize`) — oprava
+    „each standing on a plain round base with no plaque or marking of any kind".
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 504.** `validate` 0 chyb, `test:offline` 853.
+
+- **2026-09-13 — Zadání pro Rumunsko (46) napsána, zkontrolována a odeslána.**
+  Psáno Sonnetem 5 v session. Extrémně citlivá témata psaná symbolicky/nezobrazivě:
+  Vlad Țepeš (jen prázdný kůl v lese, žádné násilí), Elie Wiesel (kniha a svíčka,
+  žádné zobrazení holokaustu), revoluce 1989 (skácená socha a vlajka s vystřiženým
+  znakem — skutečný historický detail — místo zobrazení popravy), demolice pro
+  Ceaușescův palác (jen důsledek, ne diktátor). Cyrilice u rumunštiny (než přešla na
+  latinku) řešena stejně jako u Bulharska/Ukrajiny — abstraktní nečitelné symboly.
+
 - **2026-09-13 — Španělsko: 62/62 ilustrací. Jen 3 vady z 62 (5 %) — nejnižší podíl
   za celou noc — ale ŽÁDNÁ nebyla textová ani vlajková, všechny podpisy. Jeden obrázek
   (`es-a-vinice`) potřeboval ČTYŘI generování a nakonec i ořez.**
