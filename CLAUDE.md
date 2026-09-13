@@ -81,6 +81,31 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Španělsko: 62/62 ilustrací. Jen 3 vady z 62 (5 %) — nejnižší podíl
+  za celou noc — ale ŽÁDNÁ nebyla textová ani vlajková, všechny podpisy. Jeden obrázek
+  (`es-a-vinice`) potřeboval ČTYŘI generování a nakonec i ořez.**
+  Zadání psaná dřív (Sonnet 5), `lint-irony` 0 chyb. Vzorek za noc potvrzuje, že
+  poučení z předchozích zemí (přesné barvy/orientace vlajky, žádné „ornate script",
+  slovo nepojmenovávat účel věci) fungují — Španělsko mělo `es-q-paella` s regionální
+  vlajkou (Valencie, správně jiná než národní — to je fakticky správně, otázka je
+  o paelle jako REGIONÁLNÍM jídle) a čtyři vlaječky jazyků jako čistě abstraktní
+  symboly (slunce, ozubená kola) bez jediného písmene.
+  - **`es-a-vinice` je nový rekord v počtu pokusů kvůli podpisu.** Čtyři po sobě
+    jdoucí generování (stejné zadání beze změny) vrátila čtyři RŮZNÉ vymyšlené podpisy
+    na čtyřech různých místech scény — teprve ořez (` sharp extract` horních ~85 %
+    plochy + zvětšení zpět na 1344×768) obrázek zachránil, aniž by se muselo znovu
+    platit za další generování. **Poučení: když čtvrté přeposlání pořád vrací podpis,
+    ořez je rychlejší a levnější než pátý pokus** — funguje to spolehlivě, pokud
+    podpis leží blízko okraje (zde v pravém dolním rohu, ořezána byla jen prázdná
+    sopečná půda, ne nic z kompozice).
+  - **2 další podpisy** (`es-q-nadal`, `es-a-ceuta-melilla`) opraveny běžným
+    přeposláním napoprvé.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 551.** `validate` 0 chyb, `test:offline` 853.
+
+- **2026-09-13 — Zadání pro Ukrajinu (47) odeslána** (napsána a zkontrolována dřív,
+  `lint-irony` 0 chyb). Citlivá témata (Holodomor, mumifikovaní mniši) psaná čistě
+  symbolicky/nezobrazivě — viz zápis u odeslání zadání výš.
+
 - **2026-09-13 — Bulharsko: 52/52 ilustrací. 9 vad z 52 (17 %) + 1 selhané generování —
   poprvé se objevila ŠPATNÁ NÁRODNÍ VLAJKA místo textu jako hlavní typ vady (3×), a jedna
   otázka (shopska) potřebovala ČTYŘI pokusy.**

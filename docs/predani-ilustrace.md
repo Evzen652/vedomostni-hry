@@ -1,10 +1,10 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. dopoledne**, po dokončení Bulharska
-a odeslání Španělska). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **13. 9. dopoledne**, po dokončení Španělska
+a odeslání Ukrajiny). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
-Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko).
+Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko).
 
 ---
 
@@ -13,10 +13,10 @@ Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko).
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 613** |
-| Hotovo dnes v noci | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, **Bulharsko 52/52** |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Španělsko 62 zadání odesláno (`submit --cc es`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
-| Další v pořadí (po Španělsku) | podle `docs/pokracovani.md` / velikosti zbylých fondů — **Ukrajina (47) má zadání HOTOVÁ a zkontrolovaná** (`lint-irony` 0 chyb), čeká na odeslání; pak Rumunsko 46, Thajsko 45, Turecko 43… |
+| Bez ilustrace | **1 551** |
+| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, **Španělsko 62/62** |
+| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Ukrajina 47 zadání odesláno (`submit --cc ua`), obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
+| Další v pořadí (po Ukrajině) | podle `docs/pokracovani.md` / velikosti zbylých fondů — Rumunsko 46, Thajsko 45, Turecko 43… |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -24,15 +24,22 @@ Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko).
 při odesílání dávky pro Slovensko) — hráč dobil na `ai.studio/projects` a dávka pak prošla
 normálně. Kdyby se to stalo znovu, řešení je stejné (dobití, appka/skript s tím nic neudělá).
 
-**Jedna dávka o jediném obrázku (`bg-q-shopska`, 4. pokus) trvala přes 30 minut** —
-mnohem déle než jindy. Batch API negarantuje čas dokončení, může se to stát znovu;
-řešením je jen počkat, appka/skript s tím nic neudělá.
+**Dávky o jediném/pár obrázcích někdy trvají 30+ minut** (viděno u `bg-q-shopska` i
+`es-a-vinice`) — mnohem déle než velké dávky. Batch API negarantuje čas dokončení,
+řešením je jen počkat.
+
+**NOVÁ TECHNIKA ZE ŠPANĚLSKA: když 3–4 přeposlání stejného zadání pořád vrací podpis
+(pokaždé jinde ve scéně), je RYCHLEJŠÍ A LEVNĚJŠÍ obrázek OŘÍZNOUT než platit za další
+generování** — funguje spolehlivě, pokud je podpis blízko okraje. Postup: `sharp
+extract` horních ~85 % plochy (zachovej poměr stran, u 1344×768 např. left:100,
+top:0, width:1143, height:653), pak `.resize(1344, 768)`. Kontroluj, že ořez neubral
+nic z kompozice — u krajinné scény bývá dole jen prázdná země/tráva.
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Španělsko, pak odeslat Ukrajinu
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Ukrajinu
 
-Dávka pro Španělsko (62 otázek, `batches/i4uekslwx7eeuvzcjzp6nha1biyd23f7hgy1`) byla
+Dávka pro Ukrajinu (47 otázek, `batches/q0dgfre4qbwqgyr819zrhn4hv94ifry3ldwq`) byla
 odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
 
 ```bash
@@ -40,46 +47,36 @@ node scripts/batch-irony-images.js status   # počkej na BATCH_STATE_SUCCEEDED
 node scripts/batch-irony-images.js fetch    # uloží do img/{id}.jpg
 
 NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" es     # přehledové archy 3×3
-node "$NASTROJE/rohy.js" es      # arch dolních rohů (podpisy)
+node "$NASTROJE/archy.js" ua     # přehledové archy 3×3
+node "$NASTROJE/rohy.js" ua      # arch dolních rohů (podpisy)
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-es/`,
-pošli přes `submit --cc es --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Bulharsku a Řecku výš), `validate` + `test:offline`, commit, push.
+Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-ua/`,
+pošli přes `submit --cc ua --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
+(vzor: zápisy o Španělsku a Bulharsku výš), `validate` + `test:offline`, commit, push.
 
-**Teprve PAK odešli Ukrajinu** (`submit --cc ua`, zadání jsou už v `data/questions/ua.json`,
-`lint-irony` 0 chyb) — stejným postupem kontroly.
-
-**Citlivá témata ve Španělsku psaná neutrálně/nezobrazivě:** občanská válka, most
-v Rondě s vězením a popravami, pandemie 1918 (přejmenováno na telegrafní úřad, ne
-noviny — viz past níž), kolonialismus (košenila), býčí zápasy (jen fakt o barvosleposti,
-ne krev). **Citlivá témata v Ukrajině** (připravená, ale neodeslaná): Holodomor
-(hladomor 1932–33, 3,5–5 milionů obětí — extrémně citlivé, psáno čistě symbolicky přes
-svíčku a pole, ŽÁDNÉ zobrazení utrpení), mumifikovaní mniši v jeskyních Lávry (posvátné
+**Citlivá témata v Ukrajině psaná neutrálně/nezobrazivě:** Holodomor (hladomor
+1932–33, 3,5–5 milionů obětí — extrémně citlivé, psáno čistě symbolicky přes svíčku
+a pole, ŽÁDNÉ zobrazení utrpení), mumifikovaní mniši v jeskyních Lávry (posvátné
 ostatky, ne horor).
 
-**NOVÁ PAST Z BULHARSKA, hlídej ji i tady: špatná NÁRODNÍ VLAJKA.** Když zadání řekne
-jen „a flag in its home country's colors" bez konkrétních barev NEBO bez orientace
-pruhů (vodorovné/svislé), model si domyslí vlajku jiné země (Bulharsko dostalo
-švýcarskou i italskou/rakouskou vlajku, jednou dokonce nevyžádanou v davu). Když fakt
-vyžaduje PŘESNÉ národní barvy, **nespoléhat na samostatnou vlaječku jako rekvizitu** —
-lepší nechat barvy nést něčím, co už ve scéně existuje z jiného důvodu (bulharský salát
-shopska to nakonec vyřešil vrstvami zeleniny místo vlajky).
+**Past z Bulharska, hlídej ji i tady: špatná NÁRODNÍ VLAJKA.** Obecný popis „a flag
+in its home country's colors" bez konkrétních barev/orientace pruhů vyrobí vlajku
+jiné země. Ukrajina má explicitně „a flag with a blue top half and yellow bottom
+half" (ua-k-vlajka) — riziko by mělo být nízké, ale zkontroluj.
 
 **Past ze Švýcarska/Řecka, platí furt:** slovo, které POJMENOVÁVÁ, co věc JE, K ČEMU
 SLOUŽÍ nebo V JAKÉM JE STAVU (ne jen jak vypadá), se propíše jako čitelný text i s
 `left blank` vedle sebe. Řešení: to slovo/frázi z popisu úplně odstranit.
 
-**Past z Bulharska: „ornate/elegant script" NENÍ záruka nečitelnosti** — kurzíva může
-vyjít jako čitelná (byť nesmyslná) slova stejně jako tiskací písmena. Bezpečné je scénu
-přestavět tak, aby v ní vůbec nebyl proces psaní na viditelnou plochu (např. sochař
-tvarující abstraktní vzor v hlíně místo pera na pergamenu).
+**Past z Bulharska: „ornate/elegant script" NENÍ záruka nečitelnosti.** Ukrajina má
+otázku o cyrilici řešenou stejně jako bulharská — sochař tvarující abstraktní vzor,
+ne pero na pergamenu.
 
 **Past, kterou hlídej po KAŽDÉ opravě: jedna oprava umí vyrobit nový náhodný podpis**,
-i opakovaně u téhož obrázku (řecká Akropolis a slovenská železnice = 3 pokusy,
-bulharská shopska = 4 pokusy kvůli opakované vlajce). Po každé opravě ZNOVU zkontroluj
-archy i rohy, i když řešila jen jednu konkrétní vadu.
+i opakovaně u téhož obrázku — Španělsko mělo obrázek, který si vyžádal ČTYŘI generování
+(pokaždé nový podpis jinde), nakonec zachráněný ořezem (viz technika výš). Po každé
+opravě ZNOVU zkontroluj archy i rohy, i když řešila jen jednu konkrétní vadu.
 
 ---
 
@@ -115,7 +112,7 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
 | `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
 Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se`, `fr`, `sk`, `nl`, `ch`, `gr` a `bg`; `ca` má starší `img-zaloha-ca/`).
+`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg` a `es`; `ca` má starší `img-zaloha-ca/`).
 
 ---
 
@@ -191,11 +188,10 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Stáhnout a zkontrolovat Španělsko** (bod 2 výš) — priorita číslo jedna.
-2. **Odeslat Ukrajinu** (zadání hotová, jen počkat, až se uvolní sledování dávky).
-3. Pokračovat dál podle `docs/pokracovani.md` / velikosti zbylých fondů — po Ukrajině
-   je na řadě Rumunsko (46), Thajsko (45), Turecko (43)…
-4. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
+1. **Stáhnout a zkontrolovat Ukrajinu** (bod 2 výš) — priorita číslo jedna.
+2. **Napsat zadání pro Rumunsko (46)** a pokračovat pořadím: Thajsko 45, Turecko 43,
+   Irsko 42, Izrael 42, Jižní Korea 42…
+3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 
 **Nezapomeň:** obrázky jsou v repu (odhad dnes ~250 MB jen z tohohle sezení navíc),
