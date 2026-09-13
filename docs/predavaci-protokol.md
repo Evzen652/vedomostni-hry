@@ -121,11 +121,12 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 **0. Ilustrace k otázkám — průběžná práce**
 12.–13. 9. dokončeny Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko, Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina, Rumunsko,
-Thajsko, Turecko, Irsko, Izrael, Jižní Korea (všechny 100 % s vyřešenými defekty).
-**Malajsie (42) má zadání ODESLANÁ, ale obrázky zatím NESTAŽENÉ ani NEZKONTROLOVANÉ —
-udělej to jako první věc**, viz bod 2 v [predani-ilustrace.md](predani-ilustrace.md).
-Zadání pro **Pákistán (42) jsou taky hotová a po lintu**, stačí je odeslat.
-Bez ilustrace je 1 244 otázek z 3 742.
+Thajsko, Turecko, Irsko, Izrael, Jižní Korea (všechny 100 % s vyřešenými defekty)
+a Malajsie 37/42. **DOŠEL KREDIT GEMINI API — pět malajsijských obrázků čeká na
+přegenerování; hráč musí dobít kredit na `ai.studio/projects`, pak stačí jeden
+`submit --only`**, viz bod 2 v [predani-ilustrace.md](predani-ilustrace.md).
+Zadání pro **Pákistán (42), Portugalsko (42) a Saúdskou Arábii (42) jsou hotová
+a po lintu**, stačí je odeslat. Bez ilustrace je 1 207 otázek z 3 742.
 
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).

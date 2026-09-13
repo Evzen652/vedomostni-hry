@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hegra_(Mada%27in_Salih)",
   "source_card": "sa-mista-hegra",
   "image_prompt": "Fotorealistický širokoúhlý snímek nabatejských skalních hrobek Hegra u Al-Uly, zlaté pouštní světlo, pískovcové fasády s monumentálními vstupy, bez lidí, 16:9",
-  "about": "Hegře"
+  "about": "Hegře",
+  "irony_prompt": "An enormous tomb facade fills the frame carved straight down into a freestanding sandstone outcrop, its pillars and stepped crown cut out of the living rock. Smaller and subordinate: more carved outcrops scattered across the desert behind; a stonecutter's chisel and mallet at the base; a camel resting in the shade. MOOD: monumental, solitary, ancient."
  },
  {
   "id": "sa-q-neom",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/NEOM",
   "source_card": "sa-mista-neom",
   "image_prompt": "Fotorealistický snímek futuristického staveniště v saúdskoarabské poušti u pobřeží Rudého moře, jeřáby a skleněné konstrukce, jasné denní světlo, 16:9",
-  "about": "projektu NEOM"
+  "about": "projektu NEOM",
+  "irony_prompt": "A ruler-straight mirrored wall fills the frame running away across empty desert to the horizon, reflecting only sand and sky. Smaller and subordinate: a tiny surveyor's stake and a theodolite in the foreground; a helicopter alongside for scale; an untouched dune reaching the base of it. MOOD: audacious, unreal, vast."
  },
  {
   "id": "sa-q-turaif",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Diriyah",
   "source_card": "sa-mista-turaif",
   "image_prompt": "Fotorealistický snímek obnovené hliněné najdské architektury čtvrti At-Turaif v Dirríji, zlaté hodiny, palmy podél údolí, bez lidí, 16:9",
-  "about": "At-Turaif v Dirríji"
+  "about": "At-Turaif v Dirríji",
+  "irony_prompt": "A dense quarter of tall mud-brick palaces fills the frame, their walls the colour of the earth, topped with triangular battlements. Smaller and subordinate: a palm-fringed valley below the walls; a horseman arriving at the gate; scaffolding of palm trunks against one tower. MOOD: earthen, fortified, first."
  },
  {
   "id": "sa-q-rub-al-chali",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rub%27_al_Khali",
   "source_card": "sa-priroda-rub-al-chali",
   "image_prompt": "Fotorealistický širokoúhlý snímek vysokých červenooranžových písečných dun v poušti Rub al-Chálí, Saúdská Arábie, jasná obloha, bez lidí, 16:9",
-  "about": "poušti Rub al-Chálí"
+  "about": "poušti Rub al-Chálí",
+  "irony_prompt": "An endless sea of enormous orange dunes fills the frame rolling away in every direction with no landmark anywhere. Smaller and subordinate: a caravan of three camels reduced to specks on one crest; a single set of footprints already half filled in; heat shimmer on the horizon. MOOD: boundless, empty."
  },
  {
   "id": "sa-q-jabal-sawda",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Jabal_Sawda",
   "source_card": "sa-priroda-jabal-sawda",
   "image_prompt": "Fotorealistický širokoúhlý snímek vrcholu hory Džabal Saúda v pohoří Asír, zelená vysokohorská vegetace, mlžná údolí, denní světlo, bez lidí, 16:9",
-  "about": "hoře Džabal Saúda"
+  "about": "hoře Džabal Saúda",
+  "irony_prompt": "A high green mountain ridge fills the frame wrapped in cloud, terraced fields cut into its flanks and juniper trees clinging to the rocks. Smaller and subordinate: a stone watchtower on the summit; a man in a flower crown of herbs looking out; desert visible far below on the other side. MOOD: unexpectedly green, lofty."
  },
  {
   "id": "sa-q-farasan",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Farasan_Islands",
   "source_card": "sa-priroda-farasan",
   "image_prompt": "Fotorealistický letecký snímek tyrkysových vod a korálových útesů kolem Farasanských ostrovů v Rudém moři, jasná obloha, bez lidí, 16:9",
-  "about": "Farasanských ostrovech"
+  "about": "Farasanských ostrovech",
+  "irony_prompt": "A scattering of low flat coral islands fills the frame in shallow turquoise water, their edges fringed white with reef. Smaller and subordinate: dozens more islets receding into the haze; a gazelle standing improbably on one of them; a wooden fishing boat in a channel. MOOD: dispersed, sunlit."
  },
  {
   "id": "sa-q-ibn-saud",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ibn_Saud",
   "source_card": "sa-lide-ibn-saud",
   "image_prompt": "Fotorealistický historizující portrét arabského vůdce v tradičním rouchu před pouštní pevností za soumraku, důstojný postoj, bez moderních prvků, 16:9",
-  "about": "Ibn Saúdovi"
+  "about": "Ibn Saúdovi",
+  "irony_prompt": "A city wall at night fills the frame with palm trunks leaned against it as ramps, dark figures climbing silently up them under a thin moon. Smaller and subordinate: forty men waiting in the shadow at the base; a sleeping sentry's spear propped against the gate; date palms beyond the wall. MOOD: audacious, hushed, not graphic."
  },
  {
   "id": "sa-q-hayat-sindi",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hayat_Sindi",
   "source_card": "sa-lide-hayat-sindi",
   "image_prompt": "Fotorealistický portrét vědkyně v laboratoři zkoumající diagnostický test, soustředěný výraz, měkké laboratorní osvětlení, 16:9",
-  "about": "Hajat Sindí"
+  "about": "Hajat Sindí",
+  "irony_prompt": "A laboratory bench fills the frame with a row of pipettes, a microscope and a small portable diagnostic device on it. Smaller and subordinate: a black academic cap and hood hanging on the chair back; an ancient English college quad through the window; a rack of samples. MOOD: first-of-her-kind, precise."
  },
  {
   "id": "sa-q-raha-moharrak",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Raha_Moharrak",
   "source_card": "sa-lide-raha-moharrak",
   "image_prompt": "Fotorealistický snímek horolezkyně v plné výbavě stojící na zasněženém himálajském hřebeni při východu slunce, dramatické vrcholy v pozadí, 16:9",
-  "about": "Raze Moharrakové"
+  "about": "Raze Moharrakové",
+  "irony_prompt": "A climber in a snow-crusted down suit and goggles fills the frame standing on a narrow summit ridge with both arms thrown up, the curve of the earth behind. Smaller and subordinate: a line of prayer flags snapping in the wind; the tops of other mountains far below; a rope trailing down the ridge. MOOD: soaring, first, triumphant."
  },
  {
   "id": "sa-q-sokolnictvi",
@@ -217,7 +226,8 @@
   "source_url": "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01209",
   "source_card": "sa-kultura-sokolnictvi",
   "image_prompt": "Fotorealistický snímek saúdského sokolníka v tradičním oděvu s kápí zakrytým sokolem na kožené rukavici, pouštní pozadí, zlaté hodiny, 16:9",
-  "about": "sokolnictví"
+  "about": "sokolnictví",
+  "irony_prompt": "A hooded falcon fills the frame perched on a gauntleted fist, its plumage crisp, tiny leather hood tooled with pattern. Smaller and subordinate: ancient rock carvings of a man with a bird on his arm on a cliff behind; a desert camp at dawn; a lure swinging on a cord. MOOD: ancient, poised."
  },
  {
   "id": "sa-q-madzlis",
@@ -239,7 +249,8 @@
   "source_url": "https://ich.unesco.org/en/RL/majlis-a-cultural-and-social-space-01076",
   "source_card": "sa-kultura-madžlis",
   "image_prompt": "Fotorealistický snímek interiéru tradičního arabského madžlisu s polštáři podél stěn, konvicí a šálky na kávu uprostřed, teplé okolní světlo, bez lidí, 16:9",
-  "about": "madžlisu"
+  "about": "madžlisu",
+  "irony_prompt": "A long low reception room fills the frame lined on all sides with cushions and armrests on a carpeted floor, coffee pots waiting in the centre. Smaller and subordinate: men seated around the walls in conversation; a newcomer being greeted at the door; incense smoking in a burner. MOOD: hospitable, deliberative."
  },
  {
   "id": "sa-q-ardha",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ardah",
   "source_card": "sa-kultura-ardha",
   "image_prompt": "Fotorealistický snímek saúdských mužů v tradičních bílých thobech tančících tanec ardha s meči ve dvou řadách proti sobě, bubeníci uprostřed, slavnostní denní scéna, 16:9",
-  "about": "tanci ardha"
+  "about": "tanci ardha",
+  "irony_prompt": "A row of men fills the frame shoulder to shoulder, swords raised in unison above their heads, chanting. Smaller and subordinate: huge drums being beaten at the end of the line; a poet standing forward, arm out, mid-verse; a crowd clapping in time. MOOD: martial, rhythmic, ceremonial."
  },
  {
   "id": "sa-q-al-sadu",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Al_Sadu",
   "source_card": "sa-umeni-al-sadu",
   "image_prompt": "Fotorealistický snímek rukou beduínské ženy tkající geometrické vzory na tradičním pozemním stavu z velbloudí srsti a vlny, teplé pouštní světlo, 16:9",
-  "about": "tkalcovství Al-Sadu"
+  "about": "tkalcovství Al-Sadu",
+  "irony_prompt": "A ground loom fills the frame stretched between stakes in the sand, a woman's hands packing down a band of bold red, black and white geometric pattern. Smaller and subordinate: a camel being combed for hair and a goat beside it; balls of spun yarn; a tent panel woven in the same pattern. MOOD: rooted, geometric, nomadic."
  },
  {
   "id": "sa-q-skalni-umeni-hail",
@@ -305,7 +318,8 @@
   "source_url": "https://whc.unesco.org/en/list/1472",
   "source_card": "sa-umeni-skalni-umeni-hail",
   "image_prompt": "Fotorealistický detailní snímek starověkých petroglyfů vytesaných do pískovcové skály u Džubby, oblast Hail, zobrazujících lidské a zvířecí postavy, denní světlo, 16:9",
-  "about": "skalním umění v oblasti Hail"
+  "about": "skalním umění v oblasti Hail",
+  "irony_prompt": "A tall desert rock face fills the frame covered in pecked outlines of ibex, camels and long-limbed human figures, hundreds of them overlapping, and nothing else at all. Smaller and subordinate: a hand holding a stone hammer against the rock; a modern visitor tracing a shape in the air; a sandstone plain beyond. MOOD: prehistoric, crowded, mute."
  },
  {
   "id": "sa-q-qatt-al-asiri",
@@ -327,7 +341,8 @@
   "source_url": "https://ich.unesco.org/en/RL/al-qatt-al-asiri-female-traditional-interior-wall-decoration-in-asir-saudi-arabia-01261",
   "source_card": "sa-umeni-qatt-al-asiri",
   "image_prompt": "Fotorealistický snímek interiéru tradičního asírského domu se zdí zdobenou barevnými geometrickými vzory Al-Qatt v červené, zelené, žluté a modré, přirozené denní světlo, 16:9",
-  "about": "nástěnné malbě Al-Katt al-Asírí"
+  "about": "nástěnné malbě Al-Katt al-Asírí",
+  "irony_prompt": "An interior wall fills the frame painted from floor to ceiling in dense bands of bright geometric pattern — triangles, zigzags and chevrons in red, white, green and yellow. Smaller and subordinate: a woman with a brush adding another row; her daughter watching and copying on a small board; a plain undecorated wall next door. MOOD: dazzling, matrilineal."
  },
  {
   "id": "sa-q-velbloudi-dostihy",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Camel_racing",
   "source_card": "sa-sport-velbloudi-dostihy",
   "image_prompt": "Fotorealistický snímek závodících velbloudů s žokeji sprintujících po pouštní závodní dráze v Saúdské Arábii, zvířený prach, denní světlo, dynamická akce, 16:9",
-  "about": "velbloudích dostizích"
+  "about": "velbloudích dostizích",
+  "irony_prompt": "A line of racing camels fills the frame at full gallop across flat desert, necks stretched out, sand flying. Smaller and subordinate: tiny robot jockeys strapped to their humps; a convoy of cars racing alongside on a parallel track; a finish gate in the distance. MOOD: thundering, ancient-and-modern."
  },
  {
   "id": "sa-q-dakar",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/2020_Dakar_Rally",
   "source_card": "sa-sport-dakar",
   "image_prompt": "Fotorealistický snímek rallye vozu uhánějícího přes pouštní duny v Saúdské Arábii během Rallye Dakar, prachová stopa, jasné denní světlo, 16:9",
-  "about": "Rallye Dakar v Saúdské Arábii"
+  "about": "Rallye Dakar v Saúdské Arábii",
+  "irony_prompt": "A rally car fills the frame flying off the crest of a dune with all four wheels in the air, its bodywork plain and unmarked, sand exploding behind it. Smaller and subordinate: a motorbike carving a line up the next dune; a helicopter shadowing them; a bivouac of tents far off. MOOD: airborne, gruelling."
  },
  {
   "id": "sa-q-al-nassr",
@@ -393,7 +410,8 @@
   "source_url": "https://www.cnbc.com/2022/12/30/cristiano-ronaldo-signs-with-saudi-arabian-club-al-nassr-for-reported-record-breaking-salary.html",
   "source_card": "sa-sport-al-nassr",
   "image_prompt": "Fotorealistický snímek nabitého fotbalového stadionu v Rijádu v noci s osvětlenou hrací plochou, fanoušci na tribunách, 16:9",
-  "about": "příchodu fotbalových hvězd do saúdské ligy"
+  "about": "příchodu fotbalových hvězd do saúdské ligy",
+  "irony_prompt": "A footballer fills the frame pulling a plain yellow and blue shirt over his head with no crest or marking of any kind on it, arms up. Smaller and subordinate: a stadium of phone lights; a contract lying on a table with its pages face down; a desert skyline of towers. MOOD: seismic transfer, dazzling."
  },
  {
   "id": "sa-q-nabatejske-pismo",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nabataean_alphabet",
   "source_card": "sa-jazyk-nabatejske-pismo",
   "image_prompt": "Fotorealistický detailní snímek starověkého nabatejského písma vytesaného do pískovcového náhrobku v Hegře, zvětralá struktura kamene, měkké světlo, 16:9",
-  "about": "nabatejském původu arabského písma"
+  "about": "nabatejském původu arabského písma",
+  "irony_prompt": "A carved stone block with hard angular chiselled grooves fills the frame beside a second block whose grooves have been worn by wind into soft flowing curves, the two standing side by side on the sand. Smaller and subordinate: a reed pen and a closed leather case lying on a completely blank cloth; a tomb facade behind; centuries of drifting sand. MOOD: gradual, evolutionary."
  },
  {
   "id": "sa-q-qahwa",
@@ -437,7 +456,8 @@
   "source_url": "https://www.etymonline.com/word/coffee",
   "source_card": "sa-jazyk-qahwa",
   "image_prompt": "Fotorealistický snímek arabské kávy nalévané z dallahu do malých šálků, pára stoupá, teplé světlo, 16:9",
-  "about": "slově qahwa a cestě ke kávě"
+  "about": "slově qahwa a cestě ke kávě",
+  "irony_prompt": "A small handleless cup of dark coffee fills the frame being passed from one hand to the next along a chain of hands in different sleeves — an Arabian robe, an Ottoman coat, a Dutch cuff, an English shirt. Smaller and subordinate: the cup changing shape slightly at each pair of hands; a long-spouted brass pot at the start of the line; roasted beans scattered. MOOD: travelling, aromatic."
  },
  {
   "id": "sa-q-nabatska-poezie",
@@ -459,7 +479,8 @@
   "source_url": "https://www.aramcoworld.com/articles/2021/preserving-arabias-bedouin-poetry",
   "source_card": "sa-jazyk-nabatska-poezie",
   "image_prompt": "Fotorealistický snímek staršího beduínského básníka recitujícího verše malému shromážděnému publiku v pouštním stanu za soumraku, teplé světlo ohně, 16:9",
-  "about": "nabatské poezii"
+  "about": "nabatské poezii",
+  "irony_prompt": "A poet fills the frame standing at a desert campfire with one hand raised, mid-verse, firelight on his face. Smaller and subordinate: listeners of three generations seated in a ring, an old man's lips moving as he memorises; not a single page or pen anywhere; stars overhead. MOOD: oral, firelit, inherited."
  },
  {
   "id": "sa-q-datle",
@@ -481,7 +502,8 @@
   "source_url": "https://saudipedia.com/en/dates-in-saudi-arabia",
   "source_card": "sa-jidlo-datle",
   "image_prompt": "Fotorealistický detailní snímek čerstvých datlí visících v trsech na palmě, pozadí pouštní oázy, teplé sluneční světlo, 16:9",
-  "about": "datlích"
+  "about": "datlích",
+  "irony_prompt": "An endless plantation of date palms fills the frame in perfectly spaced rows stretching to the horizon, each crown heavy with hanging bunches. Smaller and subordinate: a worker roped high up a trunk cutting a bunch free; a truck already loaded with crates; irrigation channels glinting between the rows. MOOD: abundant, industrial-scale."
  },
  {
   "id": "sa-q-arabska-kava",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Arabic_coffee",
   "source_card": "sa-jidlo-arabska-kava",
   "image_prompt": "Fotorealistický snímek arabské kávy nalévané z tradičního mosazného dallahu do malých šálků vedle talíře datlí, atmosféra pohostinnosti, 16:9",
-  "about": "arabské kávě a pohostinnosti"
+  "about": "arabské kávě a pohostinnosti",
+  "irony_prompt": "A long-spouted brass coffee pot fills the frame pouring a thin stream of pale spiced coffee into a tiny handleless cup. Smaller and subordinate: a dish of glossy dark dates set right beside the cup; a guest's hand receiving it; cardamom pods and a brazier. MOOD: ceremonial, warm, welcoming."
  },
  {
   "id": "sa-q-kabsa",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kabsa",
   "source_card": "sa-jidlo-kabsa",
   "image_prompt": "Fotorealistický snímek velkého společného talíře kabsy s rýží a kořeněným kuřetem, ozdobeného ořechy a rozinkami, servírovaného na tradičním stole, 16:9",
-  "about": "kabse"
+  "about": "kabse",
+  "irony_prompt": "An enormous communal platter fills the frame heaped with spiced saffron-orange rice topped by a whole roast joint of meat, scattered with almonds and raisins. Smaller and subordinate: a ring of hands reaching in from all sides; a bowl of fiery red sauce; a carpet spread on the floor. MOOD: generous, communal, festive."
  },
  {
   "id": "sa-q-sjednoceni",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ibn_Saud",
   "source_card": "sa-historie-sjednoceni",
   "image_prompt": "Fotorealistický historizující snímek pouštní pevnosti a arabské vlajky za soumraku, symbolika počátku 20. století, bez moderních prvků, 16:9",
-  "about": "sjednocení Saúdské Arábie"
+  "about": "sjednocení Saúdské Arábie",
+  "irony_prompt": "Several separate desert banners fills the frame being gathered into one hand and bound together with a single cord. Smaller and subordinate: a mud-brick palace gate behind; tribal leaders shaking hands in a line; a new flagpole being raised in the courtyard. MOOD: unifying, decisive."
  },
  {
   "id": "sa-q-objev-ropy",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Dammam_No._7",
   "source_card": "sa-historie-objev-ropy",
   "image_prompt": "Fotorealistický historizující snímek raného ropného vrtného věže v arabské poušti u Dahránu, dělníci a vybavení, sépiové denní světlo, 16:9",
-  "about": "objevu ropy v Dammámu"
+  "about": "objevu ropy v Dammámu",
+  "irony_prompt": "A drilling derrick fills the frame with a black column of oil blasting straight up out of it, drenching the scaffolding. Smaller and subordinate: engineers running back with their hats blown off, arms up in disbelief; a row of six earlier dry wellheads standing capped and silent; empty desert to the horizon. MOOD: explosive, world-changing."
  },
  {
   "id": "sa-q-mekka-medina",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mecca",
   "source_card": "sa-historie-mekka-medina",
   "image_prompt": "Fotorealistický širokoúhlý snímek historické pouštní karavanní trasy na Arabském poloostrově poblíž Mekky, hornatý terén, zlaté hodiny, bez rozpoznatelných náboženských míst, 16:9",
-  "about": "Mekce a Medíně jako poutních a obchodních městech"
+  "about": "Mekce a Medíně jako poutních a obchodních městech",
+  "irony_prompt": "A great caravan of laden camels fills the frame winding into a walled desert town between bare hills, packs bulging with goods. Smaller and subordinate: bales of incense and cloth being unloaded in a market square; traders from three different regions haggling; a well with a queue at it. MOOD: bustling, crossroads, pre-modern."
  },
  {
   "id": "sa-k-velbloud",
@@ -611,7 +638,8 @@
   "quip_correct": "Bravo, přesně! Dvě řady řas a nozdry, co umí zaklapnout jako dveře — dromedár má na písečnou bouři vybavení, o kterém sis nikdy nesnil.",
   "quip_wrong": "Zkus si to spočítat ještě jednou — arabský velbloud nosí přesně jeden hrb, ne dva ani žádný.",
   "explanation": "Hrb dromedára neslouží k ukládání vody, ale tuku. Ten velbloud spaluje jako zdroj energie a díky tomu vydrží bez jídla i pití několik dní v poušti.",
-  "about": "dromedáru"
+  "about": "dromedáru",
+  "irony_prompt": "A single camel fills the frame in close-up profile against a dune, its one tall hump unmistakable, long lashes and a supercilious expression. Smaller and subordinate: a two-humped cousin drawn small and far away in a snowy landscape, clearly elsewhere; a herder's stick; sand blowing past. MOOD: haughty, iconic."
  },
  {
   "id": "sa-t-rijad",
@@ -631,7 +659,8 @@
   "quip_correct": "Rijád znamená v arabštině zahrady — docela odvážné jméno pro město obklopené pískem na stovky kilometrů.",
   "quip_wrong": "Zkoušíš to znovu? Posvátná města i přístavy má Saúdská Arábie jiná — hlavní město leží uprostřed pouště a jmenuje se jinak.",
   "explanation": "Rijád v arabštině znamená 'zahrady' nebo 'oázy'. Dnes je to moderní metropole s mrakodrapy a dálnicemi stojící uprostřed arabské pouště.",
-  "about": "Rijádu"
+  "about": "Rijádu",
+  "irony_prompt": "A skyline of glass towers fills the frame rising abruptly out of flat desert, one of them with an enormous open arch through its top. Smaller and subordinate: date palms and a green garden strip at the base of the towers; a mud-brick fort preserved among them; dunes reaching the edge of the last suburb. MOOD: sudden, modern, oasis-born."
  },
  {
   "id": "sa-k-datle-plod",
@@ -672,7 +701,8 @@
   "quip_correct": "Trefa, výborně! A víš, že se tahle vlajka musí šít oboustranně? Kdyby ji jen potiskli, nápis by se na druhé straně otočil pozpátku.",
   "quip_wrong": "Špatná barva! Saúdská vlajka nese barvu spojenou s islámem, a žádný z tvých tipů to není.",
   "explanation": "Zelená barva vlajky symbolizuje islám. Bílý nápis je výrok víry šaháda a pod ním leží bílý meč. Vlajka se nikdy nespouští na půl žerdi, protože nese posvátný text.",
-  "about": "saúdskoarabské vlajce"
+  "about": "saúdskoarabské vlajce",
+  "irony_prompt": "A large flag fills the frame rippling on a pole, a deep green field with a single horizontal white sword lying along its lower half, pointing towards the pole, and nothing else on it at all. Smaller and subordinate: the flagpole with no halyard to lower it; palm fronds moving in the same breeze; hard blue sky. MOOD: emphatic, green."
  },
  {
   "id": "sa-k-oryx",
@@ -694,7 +724,8 @@
   "explanation": "Arabský oryx byl v divočině zcela vyhuben v roce 1972, poslední zvířata přežila jen v zajetí. Od 80. let ho lidé postupně vypouštějí zpět do rezervací v Saúdské Arábii a dnes žijí stovky kusů znovu volně v poušti.",
   "source_url": "https://en.wikipedia.org/wiki/Arabian_oryx",
   "image_prompt": "Fotorealistický snímek arabského oryxe stojícího v poušti při západu slunce, bílá srst a rovné rohy, bez lidí, 16:9",
-  "about": "arabském oryxovi"
+  "about": "arabském oryxovi",
+  "irony_prompt": "A pure white antelope fills the frame in profile on pale sand, two impossibly long straight ringed horns rising from its head, dark markings on its face. Smaller and subordinate: a small herd behind it; an empty zoo enclosure with its gate standing open far away; desert grasses. MOOD: restored, elegant, hopeful."
  },
  {
   "id": "sa-t-dzidda",
@@ -716,7 +747,8 @@
   "explanation": "Historická čtvrť Al-Balad v Džiddě je zapsaná na seznamu UNESCO a po staletí sloužila jako brána pro obchodníky přijíždějící po moři. Vysoké domy s dřevěnými arkýři tu chránily obyvatele před pouštním sluncem.",
   "source_url": "https://en.wikipedia.org/wiki/Al-Balad,_Jeddah",
   "image_prompt": "Fotorealistický snímek historické korálové architektury čtvrti Al-Balad v Džiddě, dřevěné arkýře, teplé večerní světlo, bez lidí, 16:9",
-  "about": "Džiddě a čtvrti Al-Balad"
+  "about": "Džiddě a čtvrti Al-Balad",
+  "irony_prompt": "A tall old merchant house fills the frame built of pale coral blocks, its whole front hung with intricately carved wooden balcony screens in teal and brown. Smaller and subordinate: a narrow shaded alley of similar houses; dhows moored at a quay beyond; a pilgrim caravan arriving at the gate. MOOD: weathered, ornate, gateway."
  },
  {
   "id": "sa-k-thob",
@@ -738,7 +770,8 @@
   "explanation": "Tohle bílé roucho se arabsky jmenuje thob. K němu muži nosí i šátek na hlavě zvaný ghutra, který drží na místě černý kroužek.",
   "source_url": "https://en.wikipedia.org/wiki/Thawb",
   "image_prompt": "Fotorealistický snímek saúdského muže v bílém thobu a ghutře na tržišti, jasné denní světlo, 16:9",
-  "about": "tradičním oděvu v Saúdské Arábii"
+  "about": "tradičním oděvu v Saúdské Arábii",
+  "irony_prompt": "A man fills the frame in a long crisp white ankle-length robe, a white headcloth held on by a black double cord. Smaller and subordinate: a thermometer on a wall reading extremely high; his shadow pooled tight beneath him at noon; others dressed identically crossing a sunlit square. MOOD: cool, dignified, practical."
  },
  {
   "id": "sa-k-kadidlo",
@@ -760,7 +793,8 @@
   "explanation": "Kadidlo se získává nařezáváním kůry stromů rodu Boswellia, které rostou v jižní Arábii. Staré obchodní trasy pro kadidlo vedly přes celý Arabský poloostrov a pomohly zbohatnout městům, kterými procházely.",
   "source_url": "https://en.wikipedia.org/wiki/Frankincense",
   "image_prompt": "Fotorealistický detailní snímek kapiček kadidla na kůře stromu a hromádky pryskyřice v misce, teplé světlo, 16:9",
-  "about": "obchodu s kadidlem"
+  "about": "obchodu s kadidlem",
+  "irony_prompt": "A lump of pale golden resin fills the frame smouldering on charcoal in a carved burner, fragrant smoke curling thickly upward. Smaller and subordinate: a gnarled tree with sap beading from a cut in its bark; a caravan crossing the desert with sacks of it; a merchant weighing it against gold on a balance. MOOD: precious, aromatic, ancient trade."
  },
  {
   "id": "sa-k-velbloudi-pocet",
@@ -782,7 +816,8 @@
   "explanation": "V Saúdské Arábii žije přes milion velbloudů, chovaných na mléko, maso i pro velbloudí dostihy. Týdenní festival velbloudí krásy King Abdulaziz Camel Festival přiláká chovatele z celého Zálivu, kteří soutěží o miliony dolarů v cenách.",
   "source_url": "https://en.wikipedia.org/wiki/Camel",
   "image_prompt": "Fotorealistický snímek velkého stáda velbloudů na saúdské poušti při západu slunce, prašný obzor, 16:9",
-  "about": "chovu velbloudů v Saúdské Arábii"
+  "about": "chovu velbloudů v Saúdské Arábii",
+  "irony_prompt": "An enormous herd of camels fills the frame spread right across the desert to the horizon, hundreds upon hundreds of them. Smaller and subordinate: a single herder on a pickup truck looking small among them; milking pails and a pen; a festival arch of ropes over the ground. MOOD: overwhelming, countless."
  },
  {
   "id": "sa-k-cervene-more",
@@ -804,7 +839,8 @@
   "explanation": "Rudé moře patří mezi místa s nejbohatší mořskou biodiverzitou na světě, žije v něm přes tisíc druhů ryb, z nichž desítky se nevyskytují nikde jinde. Podél saúdského pobřeží vede jeden z nejdelších nedotčených korálových útesů na světě.",
   "source_url": "https://en.wikipedia.org/wiki/Red_Sea",
   "image_prompt": "Fotorealistický podvodní snímek barevného korálového útesu v Rudém moři u saúdského pobřeží, hejno ryb, sluneční paprsky, 16:9",
-  "about": "korálových útesech Rudého moře"
+  "about": "korálových útesech Rudého moře",
+  "irony_prompt": "A crowded coral reef fills the frame in clear warm water, branching and table corals covered in shoals of tiny bright fish. Smaller and subordinate: a diver hanging motionless above it; a bare desert shoreline right at the water's edge above; a turtle gliding past. MOOD: teeming, improbable, vivid."
  },
  {
   "id": "sa-q-ajwa",
@@ -825,7 +861,8 @@
   "explanation": "Saúdská Arábie pěstuje přes 400 pojmenovaných odrůd datlí, které se liší chutí, barvou i cenou. Ajwa, tmavá a měkká odrůda, patří mezi nejdražší a prodává se často jako dárkové balení.",
   "source_url": "https://en.wikipedia.org/wiki/Ajwa_date",
   "image_prompt": "Fotorealistický detailní snímek tmavých datlí odrůdy Ajwa v dárkové krabičce, teplé světlo, 16:9",
-  "about": "odrůdě datlí Ajwa"
+  "about": "odrůdě datlí Ajwa",
+  "irony_prompt": "A dish fills the frame heaped with small very dark, almost black, soft wrinkled dates. Smaller and subordinate: a row of other dishes beside it holding paler, larger and redder varieties for comparison; a price-free wooden crate stamped only with a plain pattern; a palm oasis outside the shop. MOOD: prized, dark, particular."
  },
  {
   "id": "sa-q-dialekty",
@@ -868,7 +905,8 @@
   "explanation": "Úd se považuje za předchůdce evropské loutny, jeho arabské jméno pravděpodobně dalo základ i slovu loutna v mnoha evropských jazycích. V Saúdské Arábii doprovází tradiční zpěv i moderní aranže arabské populární hudby.",
   "source_url": "https://en.wikipedia.org/wiki/Oud",
   "image_prompt": "Fotorealistický snímek tradičního arabského strunného nástroje úd položeného na koberci, teplé světlo, 16:9",
-  "about": "loutně úd"
+  "about": "loutně úd",
+  "irony_prompt": "A deep pear-shaped wooden lute fills the frame across a player's lap, its rounded back gleaming, neck bent sharply back, fingerboard completely smooth with no frets. Smaller and subordinate: a European lute hanging on the wall with frets, clearly descended from it; a plectrum of eagle feather; listeners on cushions. MOOD: mellow, ancestral."
  },
  {
   "id": "sa-q-metro-rijad",
@@ -889,7 +927,8 @@
   "explanation": "Rijádské metro má šest linek o celkové délce přes 176 kilometrů a stavělo se přes deset let. Součástí projektu jsou i architektonicky výrazné stanice navržené světoznámými ateliéry, například Zaha Hadid Architects.",
   "source_url": "https://en.wikipedia.org/wiki/Riyadh_Metro",
   "image_prompt": "Fotorealistický snímek moderní stanice metra v Rijádu, architektonicky výrazný interiér, jasné osvětlení, bez lidí, 16:9",
-  "about": "rijádském metru"
+  "about": "rijádském metru",
+  "irony_prompt": "The front window of a metro train fills the frame with an unobstructed view straight down the tunnel and absolutely no driver's cab, children pressed against the glass. Smaller and subordinate: an empty seat where a driver would sit, simply not there; a station of soaring latticed architecture; six coloured lines braided on a plain diagram with no marks. MOOD: futuristic, driverless."
  },
  {
   "id": "sa-q-ms-fotbal-2034",
@@ -910,7 +949,8 @@
   "explanation": "Saúdská Arábie byla v roce 2024 oficiálně potvrzena jako jediný kandidát a následně pořadatel mistrovství světa ve fotbale mužů 2034. Zápasy se mají hrát v nově budovaných stadionech v několika městech včetně Rijádu a Džiddy.",
   "source_url": "https://en.wikipedia.org/wiki/2034_FIFA_World_Cup",
   "image_prompt": "Fotorealistický snímek moderního fotbalového stadionu v Saúdské Arábii při večerním osvětlení, prázdné hřiště, 16:9",
-  "about": "mistrovství světa ve fotbale 2034 v Saúdské Arábii"
+  "about": "mistrovství světa ve fotbale 2034 v Saúdské Arábii",
+  "irony_prompt": "A golden football trophy fills the frame standing on a plinth in the middle of a floodlit desert stadium under construction, with a plain round base and no plaque or marking of any kind. Smaller and subordinate: cranes and scaffolding around the stands; a ball resting on new turf; dunes visible past the unfinished roof. MOOD: anticipatory, enormous."
  },
  {
   "id": "sa-k-rub-al-chali",
@@ -931,7 +971,8 @@
   "quip_wrong": "Sahara je v Africe, Gobi v Asii daleko na severu a Atacama v Jižní Americe. Tahle se jmenuje po tom, že tam nic není.",
   "explanation": "Je to největší souvislá písečná poušť světa. Některé duny jsou vysoké jako panelák a pomalu se s větrem stěhují z místa na místo.",
   "about": "poušti Rub al-Chálí",
-  "more_fact": "Pod pískem se skrývají zbytky dávných jezer. Poušť tam kdysi nebyla — chodila tudy zvířata a po některých se dodnes nacházejí kosti."
+  "more_fact": "Pod pískem se skrývají zbytky dávných jezer. Poušť tam kdysi nebyla — chodila tudy zvířata a po některých se dodnes nacházejí kosti.",
+  "irony_prompt": "A single colossal dune fills the frame rising like a mountain of orange sand, its ridge razor-sharp against the sky. Smaller and subordinate: a block of flats drawn small beside it for scale, barely reaching halfway up; wind stripping sand off the crest; not a building or road anywhere else. MOOD: gigantic, deserted."
  },
  {
   "id": "sa-k-sokolnictvi",
@@ -952,6 +993,7 @@
   "quip_wrong": "Papoušek by si spíš povídal a tučňák v poušti nemá co dělat. Loví tam sokol.",
   "explanation": "Sokolnictví je na Arabském poloostrově staré tisíce let. Sokol sedí lovci na rukavici a vypouští se z ruky, když se objeví kořist.",
   "about": "sokolnictví",
-  "more_fact": "Sokoli mají vlastní pasy a v letadle sedí na opěradle vedle svého majitele. Aerolinky v tamních zemích pro ně mají zvláštní pravidla i vlastní palubní lístek."
+  "more_fact": "Sokoli mají vlastní pasy a v letadle sedí na opěradle vedle svého majitele. Aerolinky v tamních zemích pro ně mají zvláštní pravidla i vlastní palubní lístek.",
+  "irony_prompt": "A falcon fills the frame in mid-launch off a gloved fist, wings just opening, hood swept away in the other hand. Smaller and subordinate: a falconer on a camel watching the sky; a lure being swung; low desert scrub and long dawn shadows. MOOD: explosive, poised, traditional."
  }
 ]

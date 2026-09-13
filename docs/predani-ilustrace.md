@@ -1,11 +1,11 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Jižní Koreje
-a odeslání Malajsie). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po Malajsii, kde došel
+kredit Gemini API). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
-Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea).
+Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea, Malajsie).
 
 ---
 
@@ -14,10 +14,10 @@ Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea).
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 244** |
-| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, Thajsko 45/45, Turecko 43/43, Irsko 42/42, Izrael 42/42, **Jižní Korea 42/42** |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Malajsie 42 zadání ODESLANÝCH, obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
-| Další v pořadí (po Malajsii) | **Pákistán 42 — zadání UŽ NAPSANÁ a po lintu, stačí `submit --cc pk`**; pak Portugalsko 42, Saúdská Arábie 42, Dánsko 41, Indonésie 41… |
+| Bez ilustrace | **1 207** |
+| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, Thajsko 45/45, Turecko 43/43, Irsko 42/42, Izrael 42/42, Jižní Korea 42/42, **Malajsie 37/42** |
+| **ZASTAVENO — DOŠEL KREDIT GEMINI** | **Pět malajsijských obrázků čeká na přegenerování**, zadání jsou opravená a po lintu — viz bod 2 níž |
+| Další v pořadí (po Malajsii) | **Pákistán 42, Portugalsko 42 a Saúdská Arábie 42 — zadání UŽ NAPSANÁ a po lintu**; pak Dánsko 41, Indonésie 41, Norsko 41… |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -40,72 +40,75 @@ zase objevil, a to na NEČEKANÉM MÍSTĚ (radlice buldozeru, ne roh).
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Malajsii
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: dobít kredit a dogenerovat pět obrázků Malajsie
 
-Dávka pro Malajsii (42 otázek, `batches/z4nxci7grvb2f0xfmwrqf0dse5i1crxw2kdu`) byla
-odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
+**Práce se zastavila na tom, že došel kredit Gemini API** (429 "prepayment credits are
+depleted") uprostřed opravné dávky pro Malajsii. Stalo se to už jednou v noci na 13. 9.
+u Slovenska a řešení je stejné: **hráč dobije kredit na `ai.studio/projects`** a dávka
+pak projde normálně. Skript ani appka s tím nic neudělají.
+
+Po dobití spusť jako první věc:
 
 ```bash
-node scripts/batch-irony-images.js status   # pockej na BATCH_STATE_SUCCEEDED
-node scripts/batch-irony-images.js fetch    # ulozi do img/{id}.jpg
-
-NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" my     # prehledove archy 3x3
-node "$NASTROJE/rohy.js" my      # arch dolnich rohu (podpisy)
+node scripts/batch-irony-images.js submit --only my-t-vlajka,my-q-malacky-sultanat,my-q-nicol-david,my-q-batik-my,my-k-petronas-most
+node scripts/batch-irony-images.js status
+node scripts/batch-irony-images.js fetch
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-my/`,
-pošli přes `submit --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Jižní Koreji a Izraeli výš), `validate` + `test:offline`, commit, push.
+**Opravená zadání jsou už v datech a prošla lintem**, nic se nepřepisuje. Vadné verze
+leží v `nastroje-ilustrace/vadne-zaloha-my/`. **V `img/` těch pět obrázků schválně NENÍ** —
+kdyby tam byly, `submit` by je přeskočil.
 
-**Po Malajsii je na řadě PÁKISTÁN (42) — zadání jsou UŽ NAPSANÁ a prošla lintem**,
-takže stačí `submit --cc pk`. Nepiš je znovu.
+Co se u každého opravovalo, ať víš, na co se dívat:
+- `my-t-vlajka` — vyšla úplně špatná vlajka (krémovo-tyrkysová, pět pruhů). Nová verze
+  má vypsané "fourteen alternating red and white horizontal stripes with a dark blue
+  rectangle in its upper corner carrying a yellow crescent moon and a yellow star with
+  fourteen points". **Zkontroluj počet pruhů i půlměsíc s hvězdou.**
+- `my-q-malacky-sultanat` — na pytlích bylo čitelné "SPICES"; slovo "spices" ze zadání
+  zmizelo, nově "bulging plain unmarked sacks and rolled bales".
+- `my-q-nicol-david`, `my-q-batik-my`, `my-k-petronas-most` — náhodné podpisy,
+  zadání beze změny. **Zkontroluj rohy.**
 
-**Nejrizikovější malajsijské otázky, projdi je nejpřísněji:**
-- `my-q-truck-art` a `my-k-malovane-nakladaky` — **malajsijské a pákistánské náklaďáky
-  v realitě NESOU verše a nápisy**, takže zadání říká „every panel carrying only pictures
-  and patterns and nothing else". Jakékoli písmeno na korbě = vada.
-- `my-t-jawi` (staré arabské písmo) — ve scéně je jen brass pouzdro na pero ve vitríně
-  a moderní propiska, „every surface around them completely blank". Žádný znak.
-- `my-q-manglish` (částice lah) — prkno s polštářkem na konci, žádná písmena.
-- `my-q-bahasa-melayu` (bez rodů a skloňování) — dětská vkládačka, kde jeden tvar pasuje
-  do všech otvorů; žádná písmena.
-- `my-k-velky-bazar`-typ past tady nastat nemůže, ale `my-q-melaka` (tři koloniální
-  fasády) a `my-q-peranakan` (obchodní dům) jsou budovy — hlídej cedule nad vchody.
-- `my-q-badminton-my` — pohár „on a plain round base with no plaque or marking of any kind".
-- `my-t-vlajka` už obrázek MÁ z dřívějška (zadání se nepřepisovalo) — nekontroluj ho znovu.
-- `my-k-durian-slupka`, `my-q-durian` — dvě otázky o durianu, ať se scény neopakují.
-- `my-q-orangutan-my` vs `my-k-orangutan-barva` a `my-q-sepak-takraw-my` vs `my-k-sepak-ruce`
-  a `my-q-nasi-lemak` vs `my-k-nasi-lemak-kokos` a `my-q-wau-bulan` vs `my-k-wau-bulan-drak`
-  — čtyři dvojice na totéž téma; zkontroluj, že se obrázky navzájem neduplikují.
+**Pak pokračuj Pákistánem, Portugalskem a Saúdskou Arábií — všechny tři mají zadání
+UŽ NAPSANÁ a po lintu** (`submit --cc pk`, `--cc pt`, `--cc sa`). Nepiš je znovu.
 
-**Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka/Irska/Izraele, platí furt:**
-slovo, které POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text
-i s `left blank` vedle sebe. **Platí to i pro VEDLEJŠÍ gag** (turecké „ferry queue")
-**a i pro popis ÚČELU bez jména věci** (izraelské „a marker post showing where sea level
-would be" vyrobilo čitelné „sea level").
+**Nejrizikovější otázky v těch třech připravených sadách:**
+- Pákistán: `pk-q-kaligrafie` (islámská kaligrafie — scéna je schválně jen geometrické
+  a květinové kachle, žádný znak), `pk-q-pismo` (zprava doleva — kniha otevřená z pravé
+  strany, všechny stránky prázdné), `pk-q-truck-art` a `pk-k-malovane-nakladaky`
+  (náklaďáky v realitě nesou verše — "only pictures and patterns and nothing else"),
+  `pk-k-sialkot-mice` (míče "in plain black and white with no marking of any kind").
+- Portugalsko: `pt-t-cabo-roca` (sloup s nápisem v realitě — v zadání "its face
+  completely blank"), `pt-t-pessoa` (heteronymy — několik verzí téhož muže u stolu,
+  žádná stránka), `pt-t-vinho-porto` ("plain unlabelled dark bottles"), `pt-t-mourinho`
+  ("plain unmarked microphones", pozadí "completely blank"), `pt-t-benfica-porto`
+  (tři šály bez znaků).
+- Saúdská Arábie: `sa-k-vlajka` — **POZOR, vědomé zjednodušení**: skutečná vlajka nese
+  arabský nápis šahády, ale text je v projektu zakázaný, takže zadání popisuje jen
+  zelené pole s bílým mečem. Otázka se ptá na BARVU, takže odpověď to neporušuje.
+  Dál `sa-q-nabatejske-pismo` (dva kamenné bloky, ostrý a ohlazený, žádný znak),
+  `sa-q-nabatska-poezie` ("not a single page or pen anywhere"), `sa-q-dakar`
+  a `sa-q-al-nassr` (bodywork a dres bez značek).
 
-**Past z Irska: řádek MOOD nese asociace stejně silně jako popis scény.** `MOOD: fresh,
-lucky` u trojlístku vyrobilo ČTYŘLÍSTEK, tedy obrázek popírající vlastní odpověď, dvakrát
-po sobě. **Když je fakt o POČTU nebo tvaru, projdi celé zadání včetně MOOD.**
+**Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka/Irska/Izraele/Malajsie:**
+slovo, které POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text.
+**Platí to i pro VEDLEJŠÍ gag** — turecké "ferry queue" postavilo budovu s nápisem
+a malajsijské "sacks of spices" vyrobilo na pytlích "SPICES". **A i pro popis ÚČELU
+bez jména věci** (izraelské "showing where sea level would be").
 
-**CO SPOLEHLIVĚ FUNGUJE (potvrzeno Thajskem a Jižní Koreou, dohromady 7 otázek o písmu
-bez jediné vady): scéně se předem NEDÁ plocha, na kterou by se dal napsat znak.**
-Zavřená kniha, deska postavená hranou, prázdný pilíř před první ránou dláta, přesýpací
-hodiny místo abecedy, figurky zvířat místo tabulky znaků. **Opravovat text po generování
-je mnohem dražší než scénu rovnou postavit bez plochy.**
+**Past z Německa, Bulharska a Malajsie: obecný popis vlajky vyrobí špatnou vlajku.**
+Když se otázka ptá přímo na vlajku, vypiš barvy, počet i rozvržení doslova.
 
-**Past z Rumunska, lint ji nechytí: vada může být VKUSOVÁ.** U citlivého tématu nestačí
-napsat `not graphic`.
+**Past z Irska: řádek MOOD nese asociace stejně silně jako popis scény** (`lucky`
+u trojlístku vyrobilo čtyřlístek, dvakrát po sobě).
 
-**Past, kterou hlídej po KAŽDÉ opravě: jedna oprava umí vyrobit nový náhodný podpis**,
-i opakovaně u téhož obrázku — u Irska to vyžádalo třetí kolo.
+**CO SPOLEHLIVĚ FUNGUJE (Thajsko, Jižní Korea, Malajsie — 10 otázek o písmu bez jediné
+vady): scéně se předem NEDÁ plocha, na kterou by se dal napsat znak.**
 
-**A podpis NEMUSÍ ležet v rohu.** U Rumunska seděl na radlici buldozeru, u Thajska
-a Irska vepsaný přímo do hlíny/trávy, u Turecka dvakrát uvnitř scény.
+**Past, kterou hlídej po KAŽDÉ opravě: jedna oprava umí vyrobit nový náhodný podpis.**
 
-**Občas dávka vrátí obrázek „bez výsledku" bez chybové hlášky** (Bulharsko, Ukrajina,
-Izrael) — stačí ho přeposlat znovu.
+**A podpis NEMUSÍ ležet v rohu** — u Rumunska seděl na radlici buldozeru, u Thajska
+a Irska vepsaný do hlíny/trávy, u Turecka dvakrát uvnitř scény.
 
 ---
 
@@ -141,7 +144,7 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
 | `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
 Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es`, `ua`, `ro`, `th`, `tr`, `ie`, `il` a `kr`; `ca` má starší `img-zaloha-ca/`).
+`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es`, `ua`, `ro`, `th`, `tr`, `ie`, `il`, `kr` a `my`; `ca` má starší `img-zaloha-ca/`).
 
 ---
 
@@ -232,9 +235,9 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Stáhnout a zkontrolovat Malajsii** (bod 2 výš) — priorita číslo jedna.
-2. **Odeslat Pákistán (42) — zadání jsou hotová a po lintu**, pak pokračovat pořadím:
-   Portugalsko 42, Saúdská Arábie 42, Dánsko 41, Indonésie 41…
+1. **Dobít kredit a dogenerovat pět malajsijských obrázků** (bod 2 výš) — priorita číslo jedna.
+2. **Odeslat Pákistán (42), Portugalsko (42) a Saúdskou Arábii (42) — zadání jsou hotová
+   a po lintu**, pak pokračovat pořadím: Dánsko 41, Indonésie 41, Norsko 41…
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 

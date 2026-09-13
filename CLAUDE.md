@@ -81,6 +81,35 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Malajsie: 37/42 ilustrací. PRÁCE PŘERUŠENA — došel kredit Gemini API
+  uprostřed opravné dávky. Pět vadných obrázků je odložených a čeká na dobití.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Z 42 obrázků bylo 37 čistých.
+  - **CO ZBÝVÁ UDĚLAT (první věc po dobití kreditu na `ai.studio/projects`):**
+    ```
+    node scripts/batch-irony-images.js submit --only my-t-vlajka,my-q-malacky-sultanat,my-q-nicol-david,my-q-batik-my,my-k-petronas-most
+    ```
+    Opravená zadání jsou už v datech a po lintu; vadné verze leží v
+    `nastroje-ilustrace/vadne-zaloha-my/`. **Obrázky v `img/` schválně NEJSOU** —
+    kdyby tam byly, `submit` by je přeskočil.
+  - **Chybějící popis vlajky se vymstil potřetí (Německo, Bulharsko, teď Malajsie).**
+    `my-t-vlajka` mělo zadání napsané v dřívějším sezení jen jako „a large striped flag"
+    — model nakreslil krémovo-tyrkysový hadr o pěti pruzích, ačkoli otázka zní přímo
+    „kolik pruhů má malajsijská vlajka" (odpověď 14). **Zadání, které se ptá na vlajku,
+    musí barvy, počet i rozvržení vypsat doslova**; opravené zní „fourteen alternating
+    red and white horizontal stripes with a dark blue rectangle in its upper corner
+    carrying a yellow crescent moon and a yellow star with fourteen points".
+  - **Slovo „spices" v podřízeném gagu vyrobilo čitelné „SPICES" na pytlích**
+    (`my-q-malacky-sultanat`) — pátý případ v řadě (Švédsko, Švýcarsko, Řecko, Turecko,
+    teď Malajsie) a druhý, kde vinu nese VEDLEJŠÍ gag, ne dominanta. Oprava: „bulging
+    plain unmarked sacks and rolled bales".
+  - **3 náhodné podpisy** (`my-q-nicol-david`, `my-q-batik-my`, `my-k-petronas-most`).
+  - **Rizikové scény prošly napoprvé:** malované náklaďáky (past na verše na korbě —
+    „every panel carrying only pictures and patterns and nothing else"), jawi (vitrína
+    s pouzdrem na pero, všechny plochy prázdné), manglish (prkno s polštářkem),
+    malajština bez rodů (vkládačka s jedním tvarem do všech otvorů) a tři koloniální
+    fasády Malacky bez jediné cedule.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 207.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-13 — Jižní Korea: 42/42 ilustrací. JEDINÁ vada ze 42 (2,4 %) — nejnižší podíl
   ze všech 22 zemí zpracovaných za poslední dva dny, a byl to náhodný podpis. Všechny
   TŘI otázky o písmu hangul i Tripitaka Koreana (81 258 desek s texty) prošly napoprvé.**
