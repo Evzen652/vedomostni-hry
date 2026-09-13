@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gyeongbokgung",
   "source_card": "kr-mista-gyeongbokgung",
   "image_prompt": "Fotorealistický širokoúhlý snímek paláce Gyeongbokgung v Soulu s trůnním sálem Geunjeongjeon, hory v pozadí, jasný den, bez lidí, 16:9",
-  "about": "paláci Gyeongbokgung"
+  "about": "paláci Gyeongbokgung",
+  "irony_prompt": "A grand tiled palace roof fills the frame half collapsed and blackened, charred beams sticking up where the ridge used to run. Smaller and subordinate: a crane and fresh pale timbers being hoisted at the far end, rebuilding already starting; a scorched stone lion still standing guard; smoke drifting off the courtyard. MOOD: ruined, resilient, not graphic."
  },
  {
   "id": "kr-q-bukchon-hanok",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bukchon_Hanok_Village",
   "source_card": "kr-mista-bukchon-hanok",
   "image_prompt": "Fotorealistický snímek tradičních dřevěných domů hanok s prohnutými taškovými střechami ve čtvrti Bukchon v Soulu, moderní panorama města v dálce, měkké ranní světlo, 16:9",
-  "about": "čtvrti Bukchon Hanok Village"
+  "about": "čtvrti Bukchon Hanok Village",
+  "irony_prompt": "A steep alley of traditional dark-tiled wooden houses fills the frame, their gracefully curved roof corners stacked one above the other up the hill. Smaller and subordinate: glass office towers looming pale in the haze behind them; a paper-screen door slid half open; a cat on a garden wall. MOOD: preserved, tucked away."
  },
  {
   "id": "kr-q-hwaseong",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hwaseong_Fortress",
   "source_card": "kr-mista-hwaseong",
   "image_prompt": "Fotorealistický širokoúhlý snímek hradeb pevnosti Hwaseong v Suwonu, kamenné opevnění s tradiční bránou, zelené kopce kolem, jasné denní světlo, 16:9",
-  "about": "pevnosti Hwaseong"
+  "about": "pevnosti Hwaseong",
+  "irony_prompt": "A long crenellated stone fortress wall fills the frame curving over a hill with an elegant tiled gate tower at its crest. Smaller and subordinate: a king laying a single white flower at the foot of the gate; a wooden rice chest left closed and empty on the grass; masons finishing the parapet. MOOD: monumental, mournful, not graphic."
  },
  {
   "id": "kr-q-hallasan",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hallasan",
   "source_card": "kr-priroda-hallasan",
   "image_prompt": "Fotorealistický širokoúhlý snímek vrcholu štítové sopky Hallasan na ostrově Čedžu, kráterové jezero na vrcholu, mírné zelené svahy, jasná obloha, bez lidí, 16:9",
-  "about": "hoře Hallasan"
+  "about": "hoře Hallasan",
+  "irony_prompt": "A broad shield-shaped volcano fills the frame with a round crater lake in its flat summit, wrapped in cloud. Smaller and subordinate: hikers strung out along the ridge path; tiny black basalt grandfather statues at the trailhead; tangerine groves on the lower slopes. MOOD: lofty, island-bound."
  },
  {
   "id": "kr-q-seoraksan",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Seoraksan",
   "source_card": "kr-priroda-seoraksan",
   "image_prompt": "Fotorealistický širokoúhlý snímek pohoří Seoraksan, zubaté žulové vrcholy s podzimním listím, turistická stezka, jasná obloha, bez lidí, 16:9",
-  "about": "pohoří Seoraksan"
+  "about": "pohoří Seoraksan",
+  "irony_prompt": "Three jagged granite peaks fill the frame rising from autumn forest, the third one from the left standing slightly lower than the other two. Smaller and subordinate: a hiker counting on their fingers and pointing at the third; a temple roof among the pines; a cable car hanging on its wire. MOOD: sharp, crisp, faintly competitive."
  },
  {
   "id": "kr-q-getbol-suncheon",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Getbol,_Korean_Tidal_Flats",
   "source_card": "kr-priroda-getbol-suncheon",
   "image_prompt": "Fotorealistický širokoúhlý snímek přílivových bahenních plání zálivu Suncheon za západu slunce, zlaté rákosí a klikaté vodní kanály, tažní ptáci, bez lidí, 16:9",
-  "about": "přílivových pláních getbol"
+  "about": "přílivových pláních getbol",
+  "irony_prompt": "A vast shining expanse of wet tidal mudflat fills the frame at low tide, rippled and silver to the horizon. Smaller and subordinate: thousands of wading birds rising in one flock; a woman in rubber boots pushing a wooden sled across the mud; reed beds at the edge. MOOD: glistening, teeming, vast."
  },
  {
   "id": "kr-q-sejong",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sejong_the_Great",
   "source_card": "kr-lide-sejong",
   "image_prompt": "Fotorealistická historizující scéna korejského krále dynastie Joseon v královském rouchu sedícího v palácovém sále, teplé světlo svíčky, důstojná póza, 16:9",
-  "about": "králi Sejongovi Velikém"
+  "about": "králi Sejongovi Velikém",
+  "irony_prompt": "A king in robes fills the frame kneeling to place one small plain wooden key into a farmer's calloused palm, while behind him an enormous iron-bound chest crammed with many thousand tiny carved seals stands shut and unused. Smaller and subordinate: scholars frowning at the chest; a child peering over the farmer's shoulder; a night lamp burning late. MOOD: generous, quietly revolutionary."
  },
  {
   "id": "kr-q-yu-gwan-sun",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Yu_Gwan-sun",
   "source_card": "kr-lide-yu-gwan-sun",
   "image_prompt": "Fotorealistická historizující scéna korejského tržiště z roku 1919, dav lidí s bílými protestními vlajkami, černobílé tóny, 16:9",
-  "about": "Yu Gwan-sun"
+  "about": "Yu Gwan-sun",
+  "irony_prompt": "A young woman fills the frame standing above a packed market crowd with both arms raised, a flag held high: a white field with a red-and-blue circle in the centre and four small groups of short black bars in the corners. Smaller and subordinate: dozens of the same flags in the crowd; a market stall pushed aside; lanterns swinging. MOOD: defiant, electric, not graphic."
  },
  {
   "id": "kr-q-jang-yeong-sil",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Jang_Yeong-sil",
   "source_card": "kr-lide-jang-yeong-sil",
   "image_prompt": "Fotorealistický snímek vynálezcovy dílny se stolem s tradičními korejskými bronzovými vědeckými přístroji, teplé světlo svíčky, 16:9",
-  "about": "Jangu Yeong-silovi"
+  "about": "Jangu Yeong-silovi",
+  "irony_prompt": "A magnificent brass water clock fills the frame with basins, siphons and a striking figure poised to hit a gong. Smaller and subordinate: the inventor's rough working hands beside the delicate mechanism; a broken slave's wooden tally left on the floor; a king leaning in, fascinated. MOOD: ingenious, rags-to-court."
  },
  {
   "id": "kr-q-kimjang",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kimjang",
   "source_card": "kr-kultura-kimjang",
   "image_prompt": "Fotorealistický snímek korejské rodiny a sousedů připravujících společně velké množství kimchi venku, hromady zelí a chilli pasty, podzimní odpolední světlo, 16:9",
-  "about": "kimjangu"
+  "about": "kimjangu",
+  "irony_prompt": "A courtyard full of women fills the frame, sleeves rolled up, rubbing red paste into whole heads of cabbage from a vast shared tub. Smaller and subordinate: rows of buried earthenware jars with only their necks showing; a mountain of salted cabbage waiting; frost on the roof tiles. MOOD: communal, pungent, wintery."
  },
  {
   "id": "kr-q-hanbok",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hanbok",
   "source_card": "kr-kultura-hanbok",
   "image_prompt": "Fotorealistický snímek korejské ženy a muže v barevném tradičním hanboku před palácovou bránou v Soulu, jasné hedvábné látky, denní světlo, 16:9",
-  "about": "hanboku"
+  "about": "hanboku",
+  "irony_prompt": "A woman in a short fitted jacket and an enormous bell-shaped skirt fills the frame mid-turn, the silk flaring into a perfect dome. Smaller and subordinate: ancient tomb wall paintings showing the very same silhouette; a ribbon tie being knotted; wooden shoes at the door. MOOD: graceful, ancestral."
  },
  {
   "id": "kr-q-chuseok-jizni",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chuseok",
   "source_card": "kr-kultura-chuseok",
   "image_prompt": "Fotorealistický snímek korejské rodiny u stolu prostřeného na svátek Chuseok, úplněk viditelný oknem, teplé večerní světlo, 16:9",
-  "about": "svátku Chuseok v Jižní Koreji"
+  "about": "svátku Chuseok v Jižní Koreji",
+  "irony_prompt": "An enormous full moon fills the frame low over a harvested field, so bright the stubble throws shadows. Smaller and subordinate: a family bowing towards it with a low table of food; half-moon shaped stuffed rice cakes steaming on pine needles; a lunar wall chart with only phases drawn on it and no marks. MOOD: abundant, moonlit."
  },
  {
   "id": "kr-q-goryeo-celadon",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Goryeo_ware",
   "source_card": "kr-umeni-goryeo-celadon",
   "image_prompt": "Fotorealistický snímek elegantní vázy celadon z Goryeo s nefritově zelenou glazurou na dřevěném podstavci, měkké muzejní osvětlení, tmavé pozadí, 16:9",
-  "about": "keramice celadon z dynastie Goryeo"
+  "about": "keramice celadon z dynastie Goryeo",
+  "irony_prompt": "A tall slender vase fills the frame glazed a soft translucent jade green, its surface inlaid with delicate white and black cranes. Smaller and subordinate: a lump of raw grey clay beside it; a potter tilting it to catch the light; a kiln mouth glowing. MOOD: refined, luminous."
  },
  {
   "id": "kr-q-tripitaka-koreana",
@@ -305,7 +318,8 @@
   "source_url": "https://www.unesco.org/en/memory-world/printing-woodblocks-tripitaka-koreana-and-miscellaneous-buddhist-scriptures",
   "source_card": "kr-umeni-tripitaka-koreana",
   "image_prompt": "Fotorealistický snímek interiéru depozitáře Janggyeong Panjeon v chrámu Haeinsa, řady starobylých vyřezávaných dřevěných tiskařských desek na policích, měkké filtrované světlo, 16:9",
-  "about": "Tripitace Koreaně"
+  "about": "Tripitace Koreaně",
+  "irony_prompt": "An endless wooden storage hall fills the frame, its slatted shelves packed floor to ceiling with tens of thousands of dark carved blocks stacked edge-on, only their narrow wooden ends facing out. Smaller and subordinate: a monk walking the aisle, dwarfed; ventilation slats letting in bars of light; the hall stretching away out of sight. MOOD: staggering, meticulous."
  },
  {
   "id": "kr-q-pansori",
@@ -327,7 +341,8 @@
   "source_url": "https://ich.unesco.org/en/RL/pansori-epic-chant-00070",
   "source_card": "kr-umeni-pansori",
   "image_prompt": "Fotorealistický snímek tradičního korejského vystoupení pansori, zpěvačka v hanboku gestikulující vějířem a bubeník vedle ní, scénické osvětlení, 16:9",
-  "about": "pansori"
+  "about": "pansori",
+  "irony_prompt": "A single singer fills the frame mid-cry with a folding fan snapped open, one drummer seated at her feet with a barrel drum, and nobody else on the mat at all. Smaller and subordinate: an audience sitting cross-legged on the floor; a straw mat and a water bowl; a bare wall behind. MOOD: raw, intimate, epic."
  },
  {
   "id": "kr-q-taekwondo-jizni",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taekwondo",
   "source_card": "kr-sport-taekwondo",
   "image_prompt": "Fotorealistický snímek sportovců taekwondo v bílých dobocích trénujících v hale, dynamický vysoký kop zachycený uprostřed pohybu, jasné osvětlení tělocvičny, 16:9",
-  "about": "taekwondu"
+  "about": "taekwondu",
+  "irony_prompt": "A fighter in a white uniform fills the frame frozen in a soaring flying kick, foot leading, fist cocked, a long path of footprints receding into the distance behind him. Smaller and subordinate: a row of broken boards falling; a black belt tied neatly; a hall of students bowing. MOOD: explosive, disciplined."
  },
  {
   "id": "kr-q-ms-2002",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup",
   "source_card": "kr-sport-ms-2002",
   "image_prompt": "Fotorealistický širokoúhlý snímek zaplněného jihokorejského fotbalového stadionu během MS 2002, fanoušci v červeném, večerní reflektory, 16:9",
-  "about": "mistrovství světa ve fotbale 2002"
+  "about": "mistrovství světa ve fotbale 2002",
+  "irony_prompt": "A single gold football trophy fills the frame held up by two entirely separate pairs of hands reaching in from opposite sides of the picture. Smaller and subordinate: two different stadium roofs side by side on the horizon; a sea of red shirts on one side and blue on the other; confetti. MOOD: shared, historic."
  },
  {
   "id": "kr-q-kim-yuna",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kim_Yuna",
   "source_card": "kr-sport-kim-yuna",
   "image_prompt": "Fotorealistický snímek krasobruslařky v třpytivém kostýmu předvádějící dramatickou pózu na olympijském ledě, arénová světla a rozmazaný dav v pozadí, 16:9",
-  "about": "Kim Yuně"
+  "about": "Kim Yuně",
+  "irony_prompt": "A figure skater fills the frame at the peak of a spiral, one leg extended high behind her, ice spray still hanging in the air. Smaller and subordinate: a heavy gold medal on a ribbon waiting on the barrier; a row of empty places on a podium; flowers and soft toys raining onto the ice. MOOD: elegant, first-ever."
  },
  {
   "id": "kr-q-hangul-jizni",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hangul",
   "source_card": "kr-jazyk-hangul",
   "image_prompt": "Fotorealistický typografický snímek velkých vytesaných korejských znaků hangul na starém kamenném monumentu, dramatické boční osvětlení, 16:9",
-  "about": "písmu hangul"
+  "about": "písmu hangul",
+  "irony_prompt": "A pair of hands fills the frame presenting a closed ceremonial volume bound in indigo silk on a cushion, its covers shut tight and clasped. Smaller and subordinate: courtiers bowing low to receive it; a date-marked lantern with only patterns on it; a palace hall in golden light. MOOD: formal, epochal."
  },
  {
   "id": "kr-q-urovne-zdvorilosti",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Korean_speech_levels",
   "source_card": "kr-jazyk-urovne-zdvorilosti",
   "image_prompt": "Fotorealistický snímek dvou korejských studentů zdvořile se klanějících v učebně, formální školní uniformy, denní světlo, 16:9",
-  "about": "úrovních zdvořilosti v korejštině"
+  "about": "úrovních zdvořilosti v korejštině",
+  "irony_prompt": "A row of seven identical people fills the frame bowing to exactly seven different depths, from the barest nod on one end to a full kneeling bow on the other. Smaller and subordinate: a foreigner at the end frozen halfway, unsure; a floor mat marked only with plain lines; an office doorway. MOOD: precise, comic, hierarchical."
  },
  {
   "id": "kr-q-cislovky",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Korean_numerals",
   "source_card": "kr-jazyk-cislovky",
   "image_prompt": "Fotorealistický typografický snímek dvou oddělených sloupců korejských číslovkových znaků napsaných na tabuli, prostředí učebny, měkké světlo, 16:9",
-  "about": "korejských číslovkách"
+  "about": "korejských číslovkách",
+  "irony_prompt": "A market trader fills the frame counting the same single basket of apples twice over, working a wooden bead abacus with the left hand and a completely different wooden bead abacus with the right. Smaller and subordinate: the one basket of apples between them; a customer looking increasingly confused; a stall awning. MOOD: doubled, comic."
  },
  {
   "id": "kr-q-kimchi-jizni",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kimchi",
   "source_card": "kr-jidlo-kimchi",
   "image_prompt": "Fotorealistický detailní snímek misky červeného fermentovaného kimchi z pekingského zelí na dřevěném stole, teplé kuchyňské osvětlení, 16:9",
-  "about": "kimchi v Jižní Koreji"
+  "about": "kimchi v Jižní Koreji",
+  "irony_prompt": "A cellar wall of shelves fills the frame crammed with glass jars of fermented vegetables in every imaginable colour — scarlet, white, green, amber, purple. Smaller and subordinate: a cook standing on a stool unable to choose; one whole cabbage being lowered into a jar; cold breath in the air. MOOD: overwhelming, varied."
  },
  {
   "id": "kr-q-bibimbap",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bibimbap",
   "source_card": "kr-jidlo-bibimbap",
   "image_prompt": "Fotorealistický snímek shora na barevnou misku bibimbapu s rýží, zeleninou, žloutkem a červenou chilli pastou před smícháním, přirozené světlo, 16:9",
-  "about": "bibimbapu"
+  "about": "bibimbapu",
+  "irony_prompt": "A wide stone bowl fills the frame with warm rice under neat separate mounds of coloured vegetables, a fried egg on top and a spoonful of red paste, a spoon plunging in to wreck the arrangement. Smaller and subordinate: the same bowl behind, already stirred into a glorious mess; sesame oil drizzling; a hot stone bowl hissing. MOOD: orderly then joyfully ruined."
  },
  {
   "id": "kr-q-grilovani",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Korean_barbecue",
   "source_card": "kr-jidlo-grilovani",
   "image_prompt": "Fotorealistický snímek syčícího vepřového boku samgyeopsal grilujícího se na stolním grilu v korejské restauraci, přílohy a saláty kolem, teplé osvětlení, 16:9",
-  "about": "korejském grilování"
+  "about": "korejském grilování",
+  "irony_prompt": "A round grill built directly into the middle of a dining table fills the frame with strips of pork belly curling and sizzling on it, diners reaching in with tongs from every side. Smaller and subordinate: an extractor pipe coming straight down over the table; lettuce leaves and little side dishes crowding the edges; smoke and laughter. MOOD: sociable, sizzling."
  },
  {
   "id": "kr-q-joseon",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Joseon",
   "source_card": "kr-historie-joseon",
   "image_prompt": "Fotorealistický snímek interiéru starobylého korejského královského trůnního sálu z dynastie Joseon, zdobený dřevěný trůn a malovaná zástěna, tlumené historické osvětlení, 16:9",
-  "about": "dynastii Joseon"
+  "about": "dynastii Joseon",
+  "irony_prompt": "An enormous ancient tree stump fills the frame sawn flat, its growth rings so numerous and fine they blur towards the centre. Smaller and subordinate: a scholar bent over it with a magnifier, having lost count; a long line of tiled palace roof ridges receding behind; a single fresh sapling at the edge. MOOD: immense span, patient."
  },
  {
   "id": "kr-q-korejska-valka-jizni",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Korean_War",
   "source_card": "kr-historie-korejska-valka",
   "image_prompt": "Fotorealistický archivní snímek scény z korejské války, vojáci a poškozený most, tlumené zatažené tóny, 16:9",
-  "about": "korejské válce"
+  "about": "korejské válce",
+  "irony_prompt": "A long negotiating table fills the frame in an empty hut, two chairs facing each other, a single unrolled parchment lying between them completely blank and never signed. Smaller and subordinate: dust thick on the table and a spider's web between the chairs; two pens still capped; a plain door standing shut. MOOD: frozen, unfinished, sombre."
  },
  {
   "id": "kr-q-zazrak-na-rece-han",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Miracle_on_the_Han_River",
   "source_card": "kr-historie-zazrak-na-rece-han",
   "image_prompt": "Fotorealistický letecký snímek moderního panoramatu Soulu s mrakodrapy podél řeky Han za soumraku, světla města odrážející se ve vodě, 16:9",
-  "about": "zázraku na řece Han"
+  "about": "zázraku na řece Han",
+  "irony_prompt": "A broad river fills the frame with a forest of gleaming glass towers erupting along its banks, cranes still working at the top of the newest ones. Smaller and subordinate: a low shanty roof preserved in a small park at the water's edge; an expressway looping across; ships heading downstream. MOOD: vertical, astonishing."
  },
  {
   "id": "kr-k-kpop",
@@ -611,7 +638,8 @@
   "quip_correct": "Paráda, sedí to! Fanoušci po světě se učí zpaměti nejen písničky, ale i celou choreografii do posledního pohybu.",
   "quip_wrong": "Bojový sport, čaj s kořením, tichý tanec bez hudby — zkus to jinak, K-pop je popová hudba se zpěvem a tancem.",
   "explanation": "K-pop se od 90. let rozšířil po celém světě. Korejské skupiny trénují mnoho let před debutem a každé vystoupení je přesně nacvičené do posledního pohybu.",
-  "about": "K-popu"
+  "about": "K-popu",
+  "irony_prompt": "A row of dancers fills the frame frozen in perfectly identical sharp poses, hands at exactly the same angle, hair flying the same way, under blazing stage light. Smaller and subordinate: an ocean of glowing handheld lights in the dark; a practice room mirror behind with a clock showing very late; sweat flying. MOOD: polished, electric, relentless."
  },
  {
   "id": "kr-t-seoul",
@@ -631,7 +659,8 @@
   "quip_correct": "Soul a s okolím skoro čtvrtina obyvatel celé Jižní Koreje na jedné hromadě.",
   "quip_wrong": "Ne tak docela — Pusan a Tegu mají svoje kouzlo, ale hlavní město Jižní Koreje se jmenuje Soul.",
   "explanation": "Soul stojí u řeky Han a je centrem korejské kultury, technologií i módního průmyslu. Město existuje přes 600 let a dodnes v něm stojí paláce z doby dynastie Joseon.",
-  "about": "Soulu"
+  "about": "Soulu",
+  "irony_prompt": "A dense city fills the frame packed with glass towers along a wide river, with an old tiled palace roof sitting calmly in the very middle of them. Smaller and subordinate: a mountain ridge rising right behind the skyscrapers; a tower on a hill with a lit spire; bridges strung across the water. MOOD: layered, humming."
  },
  {
   "id": "kr-t-mugunghwa",
@@ -651,7 +680,8 @@
   "quip_correct": "Trefa, mugunghwa! Jméno znamená doslova „květina věčnosti“ — kvete znovu a znovu celé léto, jako by neuměla přestat.",
   "quip_wrong": "Ne tenhle směr — třešňový květ patří Japonsku, lotos a chryzantéma taky jinam, korejský národní květ se jmenuje mugunghwa.",
   "explanation": "Mugunghwa, česky ibišek syrský, je symbolem korejské vytrvalosti. Jmenuje se tak i korejská národní hymna (Aegukga). Kvete v červené, fialové nebo bílé barvě.",
-  "about": "mugunghwě"
+  "about": "mugunghwě",
+  "irony_prompt": "A branch of pale pink hibiscus flowers fills the frame, each bloom with a deep crimson heart and long pollen column. Smaller and subordinate: spent blooms dropping while fresh buds open right beside them; the same shrub flowering along a whole roadside; a bee. MOOD: persistent, summer-long."
  },
  {
   "id": "kr-k-tteok",
@@ -671,7 +701,8 @@
   "quip_correct": "Bravo, tteok! Barvy a tvary mají tolik, že by z nich šla poskládat celá duha — a přitom je to poctivě jen rýžová mouka.",
   "quip_wrong": "Mimo mísu — sušenky z trouby, bramborové lupínky, čokoládové bonbony, tteok je něco úplně jiného: žvýkavé rýžové koláčky.",
   "explanation": "Tteok se v Koreji jedí od starověku při svátcích a slavnostech. Červené a bílé tteok symbolizují štěstí a přináší se jako dárek při narozeninách nebo stěhování.",
-  "about": "korejských rýžových koláčcích tteok"
+  "about": "korejských rýžových koláčcích tteok",
+  "irony_prompt": "A tray fills the frame heaped with glossy chewy rice cakes in every shape and shade — white discs, pink cylinders, green half-moons, striped layered squares. Smaller and subordinate: a wooden mallet and a stone mortar for pounding the dough; a child picking a pink one; a gift box lined with paper. MOOD: colourful, festive, chewy."
  },
  {
   "id": "kr-q-busan",
@@ -692,7 +723,8 @@
   "explanation": "Pusan leží na jihovýchodním pobřeží a jeho přístav patří k největším a nejrušnějším na světě, ročně jím proplují miliony kontejnerů.",
   "source_url": "https://cs.wikipedia.org/wiki/Pusan",
   "image_prompt": "Fotorealistický širokoúhlý snímek přístavu Pusan s jeřáby a kontejnerovými loděmi, večerní světlo, 16:9",
-  "about": "Pusanu"
+  "about": "Pusanu",
+  "irony_prompt": "An enormous container port fills the frame with gantry cranes marching along the quay and stacks of shipping boxes in plain solid colours with no marking of any kind. Smaller and subordinate: a steep hillside of tiny pastel houses rising behind; a fish market awning; ships queueing out at sea. MOOD: colossal, busy."
  },
  {
   "id": "kr-q-haenyeo",
@@ -713,7 +745,8 @@
   "explanation": "Tradice haenyeo je zapsaná na seznamu nehmotného dědictví UNESCO, mnohým ženám, které tímto způsobem loví, je dnes přes šedesát nebo sedmdesát let.",
   "source_url": "https://en.wikipedia.org/wiki/Haenyeo",
   "image_prompt": "Fotorealistický snímek jihokorejské potápěčky haenyeo vynořující se z moře u ostrova Čedžu, 16:9",
-  "about": "potápěčkách haenyeo"
+  "about": "potápěčkách haenyeo",
+  "irony_prompt": "A woman in a black wetsuit fills the frame deep underwater with no air tank at all, twisting to prise a shellfish off a rock, a net bag at her waist. Smaller and subordinate: an orange float bobbing on the surface far above her; sunlight rays through the water; a curious fish. MOOD: fearless, free."
  },
  {
   "id": "kr-k-namsan",
@@ -735,7 +768,8 @@
   "explanation": "Namsanská věž stojí na kopci uprostřed Soulu, výtahem i lanovkou se na ni dostanou davy turistů denně, hlavně kvůli výhledu na celé město.",
   "source_url": "https://en.wikipedia.org/wiki/N_Seoul_Tower",
   "image_prompt": "Fotorealistický snímek N Seoul Tower na hoře Namsan za soumraku, panorama Soulu v pozadí, 16:9",
-  "about": "Namsanské věži"
+  "about": "Namsanské věži",
+  "irony_prompt": "A slender lit tower fills the frame on a wooded hilltop, its viewing deck fenced with a solid crust of thousands of padlocks, every one of them plain and unmarked. Smaller and subordinate: a couple clicking another one shut; a city of lights spread out below; a cable car climbing. MOOD: romantic, cluttered, glittering."
  },
  {
   "id": "kr-k-jindo",
@@ -757,7 +791,8 @@
   "explanation": "Jindo je v Jižní Koreji prohlášen národní přírodní památkou a plemeno pochází ze stejnojmenného ostrova.",
   "source_url": "https://en.wikipedia.org/wiki/Korea_Jindo_Dog",
   "image_prompt": "Fotorealistický snímek psa plemene Jindo stojícího na pobřeží ostrova, bílá srst, 16:9",
-  "about": "psím plemeni Jindo"
+  "about": "psím plemeni Jindo",
+  "irony_prompt": "A muscular white dog with pricked ears and a tightly curled tail fills the frame trotting steadily along a country road, paws worn, eyes fixed ahead. Smaller and subordinate: a milestone-free empty road stretching to the horizon behind it; a farmhouse gate ahead with a figure running out; a rising sun. MOOD: loyal, unstoppable."
  },
  {
   "id": "kr-k-lukostrelba",
@@ -779,7 +814,8 @@
   "explanation": "Jihokorejští lukostřelci a lukostřelkyně dominují olympijským hrám už od 80. let a pravidelně berou většinu zlatých medailí v tomto sportu.",
   "source_url": "https://en.wikipedia.org/wiki/Archery_at_the_Summer_Olympics",
   "image_prompt": "Fotorealistický snímek jihokorejské lukostřelkyně mířící lukem na terč na venkovní střelnici, 16:9",
-  "about": "jihokorejské lukostřelbě"
+  "about": "jihokorejské lukostřelbě",
+  "irony_prompt": "An archer fills the frame at full draw, fingers at the cheek, absolutely still. Smaller and subordinate: a distant target with three arrows already clustered dead centre; a rack of bows; a stand of spectators holding their breath. MOOD: still, lethal, dominant."
  },
  {
   "id": "kr-t-samulnori",
@@ -801,7 +837,8 @@
   "explanation": "Název samulnori doslova znamená „hra čtyř předmětů“, soubor hraje na dva bubny a dva druhy gongů, které napodobují déšť, vítr, hrom a mraky.",
   "source_url": "https://en.wikipedia.org/wiki/Samul_nori",
   "image_prompt": "Fotorealistický snímek čtyř korejských hudebníků souboru samulnori hrajících na bubny a gongy, barevné kostýmy, 16:9",
-  "about": "souboru samulnori"
+  "about": "souboru samulnori",
+  "irony_prompt": "Four seated musicians fill the frame in a tight square, two beating barrel drums and two striking bronze gongs, ribbons on their hats whirling. Smaller and subordinate: rain, wind, thunder and cloud suggested faintly in the air above each of them; a straw mat; a village yard. MOOD: thunderous, elemental."
  },
  {
   "id": "kr-k-prijmeni",
@@ -823,7 +860,8 @@
   "explanation": "V Koreji patří většina lidí jen k několika málo nejčastějším příjmením — samotné příjmení Kim nosí přes pětinu celé populace.",
   "source_url": "https://en.wikipedia.org/wiki/Korean_name",
   "image_prompt": "Fotorealistický snímek korejské vizitky se jménem v tradičním pořadí, 16:9",
-  "about": "pořadí korejských jmen"
+  "about": "pořadí korejských jmen",
+  "irony_prompt": "A family photograph arrangement fills the frame with the grandparents standing firmly in front and the youngest child peeking out from behind them, exactly the reverse of the usual order. Smaller and subordinate: a photographer under a cloth waving at them to swap; a hall of identical family groups all arranged the same way; a wooden studio chair. MOOD: comic, ordered, filial."
  },
  {
   "id": "kr-k-kimbap",
@@ -845,7 +883,8 @@
   "explanation": "Kimbap si Korejci často balí s sebou na výlet nebo piknik, podobně jako u nás obložený chlebíček — v obchodech se prodává i hotový, zabalený do fólie.",
   "source_url": "https://en.wikipedia.org/wiki/Kimbap",
   "image_prompt": "Fotorealistický detailní snímek nakrájených koleček kimbapu na dřevěném prkénku, 16:9",
-  "about": "kimbapu"
+  "about": "kimbapu",
+  "irony_prompt": "A dark seaweed roll fills the frame sliced into neat rounds, each showing a spiral of white rice around bright fillings — yellow pickle, orange carrot, pink ham, green spinach. Smaller and subordinate: a bamboo rolling mat and a whole uncut roll; a hiking backpack and a picnic cloth; sesame seeds scattered. MOOD: neat, portable, cheerful."
  },
  {
   "id": "kr-k-hangul-vznik",
@@ -866,7 +905,8 @@
   "quip_wrong": "Od Číny si Korejci znaky vypůjčovali dřív, jenže právě to chtěli změnit. Tohle písmo je vymyšlené naschvál.",
   "explanation": "Dřív se korejsky psalo čínskými znaky, kterých byly tisíce a uměli je jen bohatí. Nové písmo mělo necelých třicet znaků a naučil se je i rolník.",
   "about": "písmu hangul",
-  "more_fact": "Tvary písmen nejsou náhodné. Kreslí, jak má člověk při té hlásce postavený jazyk a rty — takže podle písmenka poznáš, jak se má vyslovit."
+  "more_fact": "Tvary písmen nejsou náhodné. Kreslí, jak má člověk při té hlásce postavený jazyk a rty — takže podle písmenka poznáš, jak se má vyslovit.",
+  "irony_prompt": "A small hourglass fills the frame with only a pinch of sand run through and already finished, standing beside a colossal hourglass whose sand is still pouring endlessly after years. Smaller and subordinate: a farmer beside the small one, beaming; a scholar slumped beside the huge one, grey-bearded and exhausted; a bench between them. MOOD: comic, liberating."
  },
  {
   "id": "kr-k-haenyeo-potapecky",
@@ -887,7 +927,8 @@
   "quip_wrong": "Sítě plete někdo jiný a na břehu nezůstávají. Tyhle ženy jsou celý den pod hladinou.",
   "explanation": "Potápí se na jeden nádech několik metrů hluboko a pod vodou vydrží přes minutu. Mnohým z nich je přes sedmdesát let a do moře chodí dál.",
   "about": "potápěčkách haenyeo",
-  "more_fact": "Po vynoření vydávají zvláštní hvízdavý zvuk, kterému se říká sumbisori. Je to prudký výdech, kterým si plíce rychle vymění vzduch — a slyšet je až na břeh."
+  "more_fact": "Po vynoření vydávají zvláštní hvízdavý zvuk, kterému se říká sumbisori. Je to prudký výdech, kterým si plíce rychle vymění vzduch — a slyšet je až na břeh.",
+  "irony_prompt": "A woman fills the frame breaking the surface of the sea with a sharp whistling breath, a net bag of shellfish and seaweed hauled up beside her, grey hair escaping her hood. Smaller and subordinate: several more women surfacing across the bay; an orange float and a wooden tub; the volcanic shore behind. MOOD: tough, weathered, joyful."
  },
  {
   "id": "kr-k-ondol-podlaha",
@@ -908,6 +949,7 @@
   "quip_wrong": "Teplo od stropu je k ničemu — stoupá vzhůru samo. Korejci ho pustili pod podlahu.",
   "explanation": "Pod podlahou vede teplo z pece a prohřívá kameny, na kterých se stojí. Právě proto Korejci tradičně sedí i spí na zemi, ne na židli a posteli.",
   "about": "topení ondol",
-  "more_fact": "V dnešních bytech ondol zůstal, jen místo kouře pod podlahou koluje horká voda. Zvyk sedět na zemi z korejských domácností nezmizel s ním."
+  "more_fact": "V dnešních bytech ondol zůstal, jen místo kouře pod podlahou koluje horká voda. Zvyk sedět na zemi z korejských domácností nezmizel s ním.",
+  "irony_prompt": "A cutaway of a warm room fills the frame showing a family sitting and lying directly on the floor, with a stone flue channel running underneath carrying heat from a kitchen fire at one end. Smaller and subordinate: a cat sprawled flat on the warmest spot; an unused chair pushed into a corner; frost on the window. MOOD: cosy, ground-level."
  }
 ]

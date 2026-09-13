@@ -81,6 +81,44 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Irsko: 42/42 ilustrací. 4 vady ze 42 (9,5 %) — a jedna z nich je NOVÝ
+  TYP: obrázek popřel odpověď kvůli MÉMU VLASTNÍMU vedlejšímu gagu a kvůli jedinému
+  slovu v řádku MOOD. Trojlístek vyšel jako ČTYŘLÍSTEK dvakrát po sobě.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **NOVÉ A DŮLEŽITÉ: vedlejší gag a slovo v MOOD dokážou přebít dominantu, i když
+    je dominanta popsaná číslem.** `ie-k-jetelicek` (otázka zní „jaká rostlinka
+    s TROJLÍSTKEM je symbolem Irska") mělo dominantu „a single bright green clover leaf
+    with three perfect round lobes", ale v podřízených gagách stálo „one rare four-lobed
+    leaf hiding at the edge" a řádek končil `MOOD: fresh, lucky.` Model nakreslil
+    čtyřlístek. **Druhý pokus s „exactly three round lobes and no more" a s odstraněným
+    čtyřlístkovým gagem selhal ÚPLNĚ STEJNĚ** — protože v MOOD pořád stálo „lucky",
+    a „lucky clover" je pro model čtyřlístek.
+    **Teprve přestavba scény podle pravidla „po druhém stejném nálezu se scéna otáčí,
+    ne doplňuje" zabrala:** slovo `clover` i `lucky` ze zadání ZMIZELO úplně, list je
+    popsaný jako „one small trefoil leaf made of exactly three heart-shaped leaflets
+    joined at a single point, a trio and nothing more" a scéna dostala jiný důvod
+    existence (svatý Patrik vysvětlující trojici davu). Vyšlo správně napoprvé.
+    **Poučení obecně: řádek MOOD není dekorace — nese asociace stejně silně jako popis
+    scény.** Je to druhá zaplacená lekce o MOOD po dlaždici Česka (2026-09-08), kde
+    „dignified" v dešti vyrobilo mrzutého starce.
+  - **Textová vada (1): `ie-t-halloween` mělo vepsané pseudopísmo přímo do TRÁVY**
+    („IHGD-MEERS"), ne na žádný předmět. Zadání nic takového nezmiňovalo. Stejný typ
+    jako thajský zlatý déšť — **prázdná plocha země je pro model taky plocha na podpis.**
+  - **Nálepky na kufru si řekly o text** (`ie-a-joyce-nobel`): „a battered leather
+    suitcase" → nálepky s čitelnými zkomolenými slovy. Oprava „a plain scuffed brown
+    leather suitcase with nothing stuck to it anywhere, its sides bare" vyšla čistě.
+    Řadí se k dresům, vývěskám a cedulkám: **co v realitě nálepky/nápisy NESE, musí
+    být v zadání výslovně popsané jako holé.**
+  - **1 podpis** (`ie-a-australie-trestanci`), a **oprava textové vady u Halloweenu
+    i podpisu u trestanců vyrobila napoprvé DVA NOVÉ podpisy** — potvrzeno počtvrté
+    v řadě (Slovensko, Nizozemsko, Řecko, teď Irsko). Třetí kolo už bylo čisté.
+  - **Rizikové scény prošly napoprvé:** Book of Kells (jen zavřená kniha ve vitríně),
+    mniši opisující antické texty (jen zavřené okované truhly), irština jako první
+    úřední jazyk (dvě křesla, žádná písmena), pohraničí po brexitu (jen změna odstínu
+    asfaltu, žádná cedule), Velkopáteční dohoda (prázdný pergamen s pečetěmi) a euro
+    (mince jen s harfou a věncem hvězd).
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 328.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-13 — Turecko: 43/43 ilustrací. 5 vad ze 43 (11,6 %) — ČTYŘI z pěti byly
   náhodné podpisy, jediná textová vada vznikla ze slova ve VEDLEJŠÍM gagu, ne v dominantě.
   Mapa světa, tři jazykové otázky i bazar — všechno, co mělo selhat — prošlo čistě.**

@@ -121,10 +121,11 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 **0. Ilustrace k otázkám — průběžná práce**
 12.–13. 9. dokončeny Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko, Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina, Rumunsko,
-Thajsko, Turecko (všechny 100 % s vyřešenými defekty). **Irsko (42) má zadání ODESLANÁ,
-ale obrázky zatím NESTAŽENÉ ani NEZKONTROLOVANÉ — udělej to jako první věc**, viz bod 2 v
-[predani-ilustrace.md](predani-ilustrace.md). Zadání pro **Izrael (42) jsou taky hotová
-a po lintu**, stačí je odeslat. Bez ilustrace je 1 370 otázek z 3 742.
+Thajsko, Turecko, Irsko (všechny 100 % s vyřešenými defekty). **Izrael (42) má zadání
+ODESLANÁ, ale obrázky zatím NESTAŽENÉ ani NEZKONTROLOVANÉ — udělej to jako první věc**,
+viz bod 2 v [predani-ilustrace.md](predani-ilustrace.md). Zadání pro **Jižní Koreu (42)
+a Malajsii (42) jsou taky hotová a po lintu**, stačí je odeslat.
+Bez ilustrace je 1 328 otázek z 3 742.
 
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
