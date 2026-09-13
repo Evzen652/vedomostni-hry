@@ -56,7 +56,8 @@ node scripts/batch-irony-images.js fetch
 ```
 
 **Opravená zadání jsou už v datech a prošla lintem**, nic se nepřepisuje. Vadné verze
-leží v `nastroje-ilustrace/vadne-zaloha-my/`. **V `img/` těch pět obrázků schválně NENÍ** —
+ležely ve scratchpadu (na jiném počítači nebudou, nevadí). **V `img/` těch pět obrázků
+schválně NENÍ** —
 kdyby tam byly, `submit` by je přeskočil.
 
 Co se u každého opravovalo, ať víš, na co se dívat:
@@ -142,20 +143,27 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
    zemi, musíš předchozí `fetch`nout (nebo `rm .batch-irony.json`, pokud už je fetchnutá).
 5. Po `fetch` **projít očima úplně všechno**, viz bod 4 níž.
 
-**Nástroje na kontrolu leží mimo repo i mimo scratchpad session:**
-`C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace/`
+**Nástroje na kontrolu jsou od 13. 9. V REPU, ve `scripts/ilustrace/`.** Do té doby ležely
+ve scratchpadu session, což byla past: **při přechodu na jiný počítač by se ztratily.**
+Cesty si dopočítají samy z umístění skriptu, takže fungují na jakémkoli stroji.
 
-| Skript | K čemu |
+| Příkaz | K čemu |
 |---|---|
-| `archy.js XX` nebo `archy.js id1,id2` | přehledové archy 3×3 (náhled 600 px + pořadí a id) |
-| `rohy.js XX` | arch dolních rohů všech obrázků — tam se objevují podpisy |
-| `vyrez.js` | dvojnásobný výřez pochybného místa (seznam se upraví v hlavičce skriptu) |
-| `pridej-prompty.js soubor.json` | doplní `irony_prompt` tam, kde chybí (vstup `{id: scéna}`) |
-| `prepis-prompty.js soubor.json` | přepíše existující zadání (kontroluje původní text) |
-| `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
+| `node scripts/ilustrace/archy.js XX [max]` | přehledové archy 3×3 (náhled 600 px + pořadí a id); `XX` je země, nebo seznam id přes čárku |
+| `node scripts/ilustrace/rohy.js XX` | arch dolních rohů všech obrázků — tam bývají podpisy |
+| `node scripts/ilustrace/vyrez.js id L T Š V [zoom]` | zvětšený výřez podezřelého místa, souřadnice v PROCENTECH, zvětšení výchozí 5× |
+| `node scripts/ilustrace/pridej-prompty.js soubor.json` | doplní `irony_prompt` tam, kde chybí (vstup `{id: scéna}`) |
+| `node scripts/ilustrace/prepis-prompty.js soubor.json` | přepíše EXISTUJÍCÍ zadání (kontroluje původní text) |
+| `node scripts/ilustrace/aplikuj.js upravy.json` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
-Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es`, `ua`, `ro`, `th`, `tr`, `ie`, `il`, `kr` a `my`; `ca` má starší `img-zaloha-ca/`).
+Archy a výřezy jdou do **`.ilustrace/`** v kořeni repa, což je **gitignorované** — je to
+pracovní materiál ke kontrole očima, ne obsah appky.
+
+**`pridej-prompty.js` při kolizi NEZAPÍŠE NIC** a vypíše, která id už zadání mají.
+Tehdy ta id ze vstupního JSONu vyhoď a spusť znovu; stalo se to u Malajsie i Saúdské Arábie.
+
+**Zálohy vadných verzí ležely ve scratchpadu a při přechodu na jiný počítač se ztratí** —
+nevadí, jsou to vadné obrázky a `img/` je nemá, takže `submit --only` je vygeneruje znovu.
 
 ---
 

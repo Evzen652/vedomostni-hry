@@ -25,3 +25,6 @@ dist/
 irony-prompts.log
 more-facts.log
 data/d1-sync.sql
+
+# pracovní archy a výřezy ke kontrole ilustrací (scripts/ilustrace/*)
+.ilustrace/

@@ -1,7 +1,8 @@
 # Předávací protokol
 
 Pro novou session na jiném počítači. Sepsáno **7. září 2026**, po dlouhé session,
-která končila u úprav skóre v hrací obrazovce.
+která končila u úprav skóre v hrací obrazovce. **Aktualizováno 13. 9. 2026 odpoledne**
+při předávce po dvou dnech práce na ilustracích.
 
 Tenhle soubor je **protokol**: co převzít, co ověřit, co je zakázané a co dělat
 v jakém pořadí. Popisný stav projektu je v [pokracovani.md](pokracovani.md),
@@ -16,6 +17,15 @@ Zkopíruj do prvního vzkazu:
 > Pokračuju v projektu Zeměkvíz na druhém počítači. Přečti si
 > `docs/predavaci-protokol.md`, proveď převzetí podle bodu 2 a řekni mi,
 > jestli stav sedí. Pracuje se na větvi `claude/pokracujeme-e79708`.
+
+### ⚠ Jediná věc, která teď blokuje práci: VYČERPANÝ KREDIT GEMINI
+
+Generování ilustrací spadne na `429 prepayment credits are depleted`. **Hráč musí dobít
+kredit na `ai.studio/projects`** — jinak se nedá vygenerovat ani jeden obrázek. Zadání
+pro **4 země (168 otázek) jsou hotová, olintovaná a čekají jen na `submit`**, plus pět
+malajsijských oprav. Podrobnosti v bodu 2 [predani-ilustrace.md](predani-ilustrace.md).
+
+**Všechno ostatní je commitnuté a pushnuté** — na druhém počítači stačí `git pull`.
 
 ---
 
@@ -59,7 +69,13 @@ npm install
 ```
 ALLOW_DEV_SECRET=1
 SESSION_SECRET=lokalni-test-tajemstvi-nepouzivat-v-produkci
+GEMINI_API_KEY=<klíč z ai.studio, celý řádek>
 ```
+
+**`GEMINI_API_KEY` je nutný pro generování ilustrací** — bez něj `batch-irony-images.js`
+neudělá nic. Klíč má hráč na `ai.studio/projects`; **nový formát nezačíná „AIza"**,
+skripty berou celý řádek. Do gitu se nikdy nesmí dostat (soubor je gitignorovaný
+a v historii klíč nikdy nebyl).
 
 **2) Lokální databáze:** `npm run db:init` → v `questions` má být **3 742** otázek
 a **18** botů. Migrace se lokálně nepouštějí, `schema.sql` je má v sobě.
@@ -74,10 +90,15 @@ dohromady ~4,6 kB. Když se stahuje 56 souborů a 4,7 MB, běží starý kód.
 |---|---|
 | `npm run validate` | `CHYBY: žádné` (upozornění o chybějících fotkách jsou v pořádku) |
 | `npm run test:offline` | 853 kontrol |
-| `npm run test:pool` | 8 kontrol |
+| `npm run test:pool` | **13** kontrol (tabulka tu do 13. 9. chybně uváděla 8) |
 | `npm run test:auth` | 12 kontrol |
 | `npm run test:ghost` | 67 kontrol |
 | `npm run test:expire` | 8 kontrol |
+| `npm run lint-irony` | **0 chyb**, ~76 varování (varování jsou prověřený šum) |
+
+**4b) Nástroje na ilustrace** (od 13. 9. v repu, viz `scripts/ilustrace/`):
+`node scripts/ilustrace/archy.js kr 1` musí vyrobit arch do `.ilustrace/archy/`.
+Když spadne na chybějícím `sharp`, chybí `npm install`.
 
 **5) Testy proti serveru** (server musí běžet):
 `$env:API_BASE="http://127.0.0.1:8788"; npm run test:api` → **167** kontrol.
@@ -127,6 +148,21 @@ přegenerování; hráč musí dobít kredit na `ai.studio/projects`, pak stač�
 `submit --only`**, viz bod 2 v [predani-ilustrace.md](predani-ilustrace.md).
 Zadání pro **Pákistán (42), Portugalsko (42), Saúdskou Arábii (42) a Dánsko (42) jsou
 hotová a po lintu**, stačí je odeslat. Bez ilustrace je 1 207 otázek z 3 742.
+
+**Přesné pořadí po dobití kreditu** (nic z toho nevyžaduje psát nová zadání):
+
+```bash
+node scripts/batch-irony-images.js submit --only my-t-vlajka,my-q-malacky-sultanat,my-q-nicol-david,my-q-batik-my,my-k-petronas-most
+# az dobehne a je zkontrolovano:
+node scripts/batch-irony-images.js submit --cc pk     # pak pt, sa, dk
+```
+
+Po každé zemi: `archy.js` + `rohy.js` → kontrola očima → opravy přes `--only` →
+zápis do CLAUDE.md → `validate` + `test:offline` → commit + push.
+**Skript sleduje jen JEDNU dávku najednou**, takže se země nedají posílat paralelně.
+
+**Nástroje na kontrolu jsou od 13. 9. v repu** (`scripts/ilustrace/`), takže na novém
+počítači fungují po `git pull` a `npm install`. Dřív ležely ve scratchpadu session.
 
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).

@@ -81,6 +81,25 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Nástroje na kontrolu ilustrací jsou NOVĚ V REPU (`scripts/ilustrace/`).
+  Do teď ležely ve scratchpadu session, a to je past: při přechodu na jiný počítač
+  by se ztratily i s celým postupem kontroly.**
+  Šest skriptů, dohromady ~200 řádků, které za dva dny odbavily 22 zemí a bez kterých
+  se ilustrace kontrolovat nedají. Přesunuto při přípravě předávky na druhý počítač.
+  - **Cesty si dopočítají samy z umístění skriptu** (`path.resolve(__dirname, "..", "..")`),
+    takže fungují na jakémkoli stroji a pod jakoukoli cestou k repu. Dřív měly natvrdo
+    `C:/Users/Evzen/Desktop/kviz` i absolutní cestu na `sharp` — obojí pryč, `require("sharp")`
+    si Node dohledá sám nahoru z `scripts/ilustrace/`.
+  - **Výstup jde do `.ilustrace/` v kořeni repa a je GITIGNOROVANÝ.** Archy a výřezy jsou
+    pracovní materiál ke kontrole očima, ne obsah appky — do nasazení nesmí a v historii
+    by jen nafukovaly repo.
+  - **`vyrez.js` bere souřadnice z příkazové řádky, ne z hlavičky skriptu.** Dřív se
+    seznam míst editoval přímo v souboru, což znamenalo po každé kontrole upravovat
+    nástroj. Nově `node scripts/ilustrace/vyrez.js id levý% horní% šířka% výška% [zoom]`.
+  - **Zálohy vadných verzí (`vadne-zaloha-{cc}`) zůstávají mimo repo a přechodem se
+    ztratí — a to je v pořádku:** jsou to vadné obrázky, `img/` je nemá, takže
+    `submit --only` je prostě vygeneruje znovu.
+
 - **2026-09-13 — Malajsie: 37/42 ilustrací. PRÁCE PŘERUŠENA — došel kredit Gemini API
   uprostřed opravné dávky. Pět vadných obrázků je odložených a čeká na dobití.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Z 42 obrázků bylo 37 čistých.
@@ -88,8 +107,7 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     ```
     node scripts/batch-irony-images.js submit --only my-t-vlajka,my-q-malacky-sultanat,my-q-nicol-david,my-q-batik-my,my-k-petronas-most
     ```
-    Opravená zadání jsou už v datech a po lintu; vadné verze leží v
-    `nastroje-ilustrace/vadne-zaloha-my/`. **Obrázky v `img/` schválně NEJSOU** —
+    Opravená zadání jsou už v datech a po lintu. **Obrázky v `img/` schválně NEJSOU** —
     kdyby tam byly, `submit` by je přeskočil.
   - **Chybějící popis vlajky se vymstil potřetí (Německo, Bulharsko, teď Malajsie).**
     `my-t-vlajka` mělo zadání napsané v dřívějším sezení jen jako „a large striped flag"
