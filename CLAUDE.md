@@ -81,6 +81,38 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Thajsko: 45/45 ilustrací. Jen 3 vady ze 45 (6,7 %) — a POPRVÉ neselhala
+  ANI JEDNA ze čtyř nejrizikovějších otázek, přestože všechny čtyři jsou o písmu nebo
+  číslech. Poučení z Rumunska („scéna nesmí obsahovat plochu, která by text nesla")
+  zabralo napoprvé.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **Čtyři otázky, které by podle dosavadní zkušenosti musely selhat, prošly čistě,
+    protože zadání symbol vůbec nepřipustilo:** `th-q-thajske-pismo` (král vytvořil
+    písmo) → pilíř je ještě ZCELA PRÁZDNÝ a dláto se teprve zvedá k první ráně;
+    `th-q-thajska-abeceda` (44 souhlásek) → police se 44 hliněnými figurkami zvířat,
+    protože thajská abeceda se tak opravdu učí; `th-q-jmeno-bangkoku` (nejdelší jméno
+    světa, 168 písmen) → nekonečný svitek rozvinutý až na ulici, ale úplně prázdný,
+    vtip nese délka; `th-q-tony` (pět tónů) → pět barevných stuh zvuku z otevřených úst.
+    **Je to potvrzení, že fakt o písmu se dá ilustrovat bez jediného písmene — jen
+    to musí být v zadání vymyšlené předem, ne opravované potom.**
+  - **Tabule/displej se nesmí do scény dostat vůbec.** `th-q-comaneci` v Rumunsku
+    ukázalo, že displej si nápis vynutí i s prázdným popisem; u Thajska proto žádná
+    otázka žádnou tabuli neměla a text se neobjevil ani jednou.
+  - **Vada, která se zopakovala potřetí (Kanada, Slovensko, teď Thajsko): DRES.**
+    `th-q-buakaw` mělo „red shorts" a model na pas dokreslil bílý panel s pseudonápisem —
+    reálné muay thai trenýrky jméno tělocvičny nesou, takže si o něj scéna řekla sama.
+    Oprava explicitním „the wide waistband one continuous strip of red with no panel,
+    patch, badge or trim sewn onto it anywhere" panel NEODSTRANILA, ale nechala ho
+    **úplně prázdný** — a to stačí. **Prázdná plocha je přijatelný výsledek, nemusí se
+    honit její zmizení.**
+  - **2 podpisy, oba na nečekaném místě, ani jeden v rohu obrázku podle archu:**
+    `th-q-smaragdovy-buddha` měl podpis na podlaze vpravo dole (arch rohů ho ukázal)
+    a `th-t-narodni-kvetina` vymyšlený popisek napsaný přímo do hlíny pod stromem.
+    Obojí spravilo přeposlání stejného zadání.
+  - **Vlajka vyšla správně napoprvé** (`th-k-vlajka`, pět pruhů červená/bílá/modrá/
+    bílá/červená) díky explicitnímu výpisu barev i pořadí — poučení z Bulharska drží.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 413.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-13 — Rumunsko: 46/46 ilustrací. 6 vad ze 46 (13 %) — dvě textové, jedna
   písmová, jedna VKUSOVÁ (skácená socha se četla jako lidské tělo), jedna RIZIKOVÁ
   (značka připomínající hákový kříž) a jeden podpis. Poprvé byla vada jinde než

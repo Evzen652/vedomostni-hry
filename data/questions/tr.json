@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
   "source_card": "tr-mista-hagia-sofie",
   "image_prompt": "Fotorealistický širokoúhlý snímek Hagia Sofie v Istanbulu za zlaté hodiny, mohutná kopule a minarety, průliv Bospor v jemném pozadí, bez lidí, 16:9",
-  "about": "Hagia Sofii"
+  "about": "Hagia Sofii",
+  "irony_prompt": "A vast ancient domed building fills the frame with four slender minarets around it, its central roof finial built as a tall spindle carrying three emblems stacked one above the other — a cross at the bottom, then a crescent, then another crescent at the top. Smaller and subordinate: scaffolding left permanently in place; pigeons on the dome; a queue of visitors at the door. MOOD: monumental, wryly layered."
  },
  {
   "id": "tr-q-kappadokie",
@@ -41,7 +42,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Kappadokie",
   "source_card": "tr-mista-kappadokie",
   "image_prompt": "Fotorealistický širokoúhlý snímek skalních útvarů víly komínů v Kappadokii při východu slunce, měkká růžová a oranžová obloha, bez lidí, 16:9",
-  "about": "Kappadokii"
+  "about": "Kappadokii",
+  "irony_prompt": "A forest of tall pale rock cones with dark boulder caps fills the frame, wind visibly scouring soft dust off their flanks. Smaller and subordinate: doorways and windows carved into several of the cones; a ladder propped against one; a tiny figure emerging from a hole in the ground. MOOD: otherworldly, patient."
  },
  {
   "id": "tr-q-efes",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ephesus",
   "source_card": "tr-mista-efes",
   "image_prompt": "Fotorealistický širokoúhlý snímek starověkých ruin Efesu, fasáda knihovny Celsovy, mramorové sloupy, jasné denní světlo, bez lidí, 16:9",
-  "about": "Efesu"
+  "about": "Efesu",
+  "irony_prompt": "A magnificent marble ruin of columns and a grand stair fills the frame, standing marooned in a flat green field with not a drop of water anywhere near it. Smaller and subordinate: a stone mooring ring in the grass with sheep grazing around it; a thin muddy river winding far off in the distance; a stranded anchor half buried in soil. MOOD: absurd, melancholy."
  },
  {
   "id": "tr-q-ararat",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mount_Ararat",
   "source_card": "tr-priroda-ararat",
   "image_prompt": "Fotorealistický širokoúhlý snímek zasněžené hory Ararat tyčící se nad anatolskou plání, jasná obloha, bez lidí, 16:9",
-  "about": "hoře Ararat"
+  "about": "hoře Ararat",
+  "irony_prompt": "A huge snow-capped twin-peaked mountain fills the frame rising alone from a dusty plain. Smaller and subordinate: a small weathered wooden boat perched improbably near the summit; pairs of animals picking their way down the slope; a raven circling. MOOD: mythic, grand."
  },
  {
   "id": "tr-q-pamukkale",
@@ -107,7 +111,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Pamukkale",
   "source_card": "tr-priroda-pamukkale",
   "image_prompt": "Fotorealistický širokoúhlý snímek bílých travertinových teras Pamukkale naplněných tyrkysovou termální vodou, jasná obloha, bez lidí, 16:9",
-  "about": "Pamukkale"
+  "about": "Pamukkale",
+  "irony_prompt": "A hillside of brilliant white terraced basins fills the frame, each brimming with still turquoise water and spilling gently into the one below. Smaller and subordinate: steam curling off the surface; bathers dangling their feet in a pool; white crust building up on a fallen branch. MOOD: dazzling, otherworldly."
  },
  {
   "id": "tr-q-jezero-van",
@@ -129,7 +134,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Van_(jezero)",
   "source_card": "tr-priroda-jezero-van",
   "image_prompt": "Fotorealistický širokoúhlý snímek jezera Van na východě Turecka, hluboká modrá voda obklopená drsnými horami, jasný den, bez lidí, 16:9",
-  "about": "jezeru Van"
+  "about": "jezeru Van",
+  "irony_prompt": "An enormous glassy lake fills the frame under a bare mountain, its shore rimmed with dried white salt crust. Smaller and subordinate: a single stubborn little fish looking around a completely empty expanse of water; a fisherman with an empty net shrugging; a bird skimming the surface. MOOD: vast, lonely, gently comic."
  },
  {
   "id": "tr-q-ataturk",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk",
   "source_card": "tr-lide-ataturk",
   "image_prompt": "Fotorealistický dobový portrét Mustafy Kemala Atatürka ve formálním obleku, vážný výraz, studiové osvětlení, 16:9",
-  "about": "Mustafě Kemalu Atatürkovi"
+  "about": "Mustafě Kemalu Atatürkovi",
+  "irony_prompt": "A tall figure in a sharp Western suit fills the frame seen from behind, arms spread wide, with citizens of every age — grandmothers, workers, schoolchildren — crowding in around him like a family gathering round a father. Smaller and subordinate: a small child perched on his shoulders; a fez lying discarded on the ground; a new civic building rising behind. MOOD: warm, foundational."
  },
  {
   "id": "tr-q-piri-reis",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Piri_Reis_map",
   "source_card": "tr-lide-piri-reis",
   "image_prompt": "Fotorealistický snímek staré zvětralé námořní mapy na gazelí kůži s ručně kreslenými pobřežími a růžicemi kompasu, zestárlá textura pergamenu, měkké archivní osvětlení, 16:9",
-  "about": "Piri Reisovi"
+  "about": "Piri Reisovi",
+  "irony_prompt": "A large tawny gazelle hide fills the frame stretched flat and pinned at the corners, its surface carrying only inked coastlines, rhumb lines and a compass rose, every stretch of hide between them completely blank. Smaller and subordinate: an admiral's hands smoothing the hide; a brass divider and a quill; a palace chest standing open. MOOD: scholarly, adventurous."
  },
  {
   "id": "tr-q-orhan-pamuk",
@@ -195,7 +203,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Orhan_Pamuk",
   "source_card": "tr-lide-orhan-pamuk",
   "image_prompt": "Fotorealistický portrétní snímek spisovatele středního věku u stolu u okna s výhledem na Bospor, knihy a papíry, teplé odpolední světlo, 16:9",
-  "about": "Orhanu Pamukovi"
+  "about": "Orhanu Pamukovi",
+  "irony_prompt": "A heavy gold medal on a ribbon fills the frame held up against a hazy skyline of domes, minarets and ferry smoke. Smaller and subordinate: a writer seen from behind at a window desk, a cat asleep on the papers; a stack of closed novels; seagulls over the strait. MOOD: proud, contemplative."
  },
  {
   "id": "tr-q-tancici-dervisove",
@@ -217,7 +226,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Maul%C3%A1w%C3%ADja",
   "source_card": "tr-kultura-tancici-dervisove",
   "image_prompt": "Fotorealistický snímek tančících dervišů v bílých róbách a vysokých čepicích roztočených během obřadu sema, tlumené atmosférické osvětlení, bez textu, 16:9",
-  "about": "tančících derviších"
+  "about": "tančících derviších",
+  "irony_prompt": "A dervish in a towering camel-hair hat and vast white skirt fills the frame spinning so fast the skirt has flared into a perfect disc, one palm turned up to the sky and the other down to the earth. Smaller and subordinate: two more dervishes turning behind him; a reed-flute player seated at the edge; candlelight on a wooden floor. MOOD: hypnotic, devotional."
  },
  {
   "id": "tr-q-turecky-caj",
@@ -239,7 +249,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Tureck%C3%BD_%C4%8Daj",
   "source_card": "tr-kultura-turecky-caj",
   "image_prompt": "Fotorealistický snímek tradiční turecké dvoupatrové konvice çaydanlık na sporáku, tulipánové skleničky na čaj vedle, teplé kuchyňské světlo, 16:9",
-  "about": "tureckém čaji"
+  "about": "tureckém čaji",
+  "irony_prompt": "A two-tier brass and enamel teapot fills the frame in cross-section-like clarity, water boiling furiously in the fat lower kettle while a small pot of very dark brew sits steeping on top. Smaller and subordinate: a tulip-shaped glass being filled half dark, half hot water; two sugar cubes on a saucer; a tray with more glasses. MOOD: cosy, ritual."
  },
  {
   "id": "tr-q-nazar-boncuk",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nazar_(amulet)",
   "source_card": "tr-kultura-nazar-boncuk",
   "image_prompt": "Fotorealistický detailní snímek skleněných modrých amuletů nazar visících v řadě, rozmazané pozadí tureckého bazaru, jasné denní světlo, 16:9",
-  "about": "amuletu nazar boncuğu"
+  "about": "amuletu nazar boncuğu",
+  "irony_prompt": "A big round glass amulet fills the frame — concentric rings of deep blue, white and pale blue around a black centre, like a staring eye — hanging on a cord. Smaller and subordinate: an envious neighbour peering over a wall and recoiling; a whole tree strung with hundreds of the same blue discs; a cracked one on the ground, having done its job. MOOD: superstitious, charming."
  },
  {
   "id": "tr-q-ebru",
@@ -283,7 +295,8 @@
   "source_url": "https://www.ceskoturecko.cz/tradicni-turecka-technika-malovani-na-vodni-hladinu-ebru/",
   "source_card": "tr-umeni-ebru",
   "image_prompt": "Fotorealistický snímek umělce vytvářejícího barevné vířivé vzory na vodní hladině technikou ebru, detailní záběr na barvy plovoucí na vodě, 16:9",
-  "about": "technice ebru"
+  "about": "technice ebru",
+  "irony_prompt": "A shallow tray of thick water fills the frame with swirls of red, blue and gold pigment floating and combing into a feathered pattern on the surface, the paint sitting entirely on top of the liquid. Smaller and subordinate: a fine brush flicking another drop in; a sheet of plain paper being laid down to take the print; a row of pigment bowls. MOOD: mesmerising, delicate."
  },
  {
   "id": "tr-q-iznik-kachle",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Iznik_pottery",
   "source_card": "tr-umeni-iznik-kachle",
   "image_prompt": "Fotorealistický detailní snímek zdobných modrobílých kachlí İznik pokrývajících zeď mešity, spletité květinové vzory, měkké interiérové světlo, 16:9",
-  "about": "İznik kachlích"
+  "about": "İznik kachlích",
+  "irony_prompt": "A wall of square ceramic tiles fills the frame, each one brilliant white and covered edge to edge in swirling cobalt blue tulips, carnations and vine curls and nothing else at all. Smaller and subordinate: a potter holding one up to the light; a kiln glowing behind; broken shards in a basket. MOOD: luminous, ornate."
  },
  {
   "id": "tr-q-karagoz",
@@ -327,7 +341,8 @@
   "source_url": "https://ich.unesco.org/en/RL/karagoz-00180",
   "source_card": "tr-umeni-karagoz",
   "image_prompt": "Fotorealistický snímek tradičních tureckých stínových loutek z kůže před osvětleným plátnem, teplé zákulisní osvětlení, 16:9",
-  "about": "stínovém divadle Karagöz"
+  "about": "stínovém divadle Karagöz",
+  "irony_prompt": "A translucent amber leather puppet fills the frame held against a lit cotton screen, the light glowing through its pierced patterns and hinged jointed limbs. Smaller and subordinate: an oil lamp behind the screen; a puppeteer's hands on two control rods; more cut leather figures hanging on a line to dry. MOOD: warm, theatrical."
  },
  {
   "id": "tr-q-kirkpinar",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Oil_wrestling",
   "source_card": "tr-sport-kirkpinar",
   "image_prompt": "Fotorealistický snímek tureckých olejových zápasníků v kožených kalhotách kisbet soupeřících venku, lesknoucí se naolejovaná kůže, travnaté pole, denní světlo, bez textu, 16:9",
-  "about": "olejových zápasech yağlı güreş"
+  "about": "olejových zápasech yağlı güreş",
+  "irony_prompt": "Two burly wrestlers in tight black leather trousers fill the frame gripping each other and sliding straight out of the hold, both gleaming and dripping from head to foot with oil. Smaller and subordinate: a huge cauldron of oil with a ladle; a spectator wiping oil off his face; a drum and reed-pipe pair playing at the edge of the grass. MOOD: slippery, comic, festive."
  },
  {
   "id": "tr-q-galatasaray-uefa",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/2000_UEFA_Cup_final",
   "source_card": "tr-sport-galatasaray-uefa",
   "image_prompt": "Fotorealistický snímek oslav na fotbalovém stadionu s fanoušky v červenožlutých barvách Galatasaraye, ohňostroj, noční atmosféra, bez textu, 16:9",
-  "about": "vítězství Galatasaraye v Poháru UEFA 2000"
+  "about": "vítězství Galatasaraye v Poháru UEFA 2000",
+  "irony_prompt": "A silver football trophy fills the frame held aloft by a crowd of red-and-yellow shirted players, standing on a plain round base with no plaque or marking of any kind. Smaller and subordinate: confetti in the air; a dejected opponent in red walking away; a wall of flares and raised scarves. MOOD: ecstatic, historic."
  },
  {
   "id": "tr-q-basketbal-2010",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship",
   "source_card": "tr-sport-basketbal-2010",
   "image_prompt": "Fotorealistický snímek nabité basketbalové arény v Istanbulu během finále mistrovství, dav mávající tureckými vlajkami, dramatické osvětlení, bez textu, 16:9",
-  "about": "domácím mistrovství světa v basketbale 2010"
+  "about": "domácím mistrovství světa v basketbale 2010",
+  "irony_prompt": "A basketball fills the frame hanging on the rim, teetering, with a packed home crowd frozen mid-gasp behind it. Smaller and subordinate: a silver medal being hung round a player's neck; a bench of teammates on their feet; a sea of raised hands. MOOD: electric, so-close."
  },
  {
   "id": "tr-q-pismenova-reforma",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Turkish_alphabet",
   "source_card": "tr-jazyk-pismenova-reforma",
   "image_prompt": "Fotorealistický snímek učebny gramotnosti pro dospělé v Turecku 30. let, tabule s latinskými písmeny, teplé osvětlení, bez čitelného textu, 16:9",
-  "about": "Atatürkově písmenné reformě"
+  "about": "Atatürkově písmenné reformě",
+  "irony_prompt": "A large schoolroom slate fills the frame held up wiped completely clean and blank in a fresh unscratched wooden frame. Smaller and subordinate: an old reed pen, a brass inkpot and a sand shaker being packed away into a crate; a schoolmaster gesturing proudly at the empty slate; rows of children sitting bolt upright. MOOD: brisk, reforming."
  },
  {
   "id": "tr-q-samohlaskova-harmonie",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Turkish_language",
   "source_card": "tr-jazyk-samohlaskova-harmonie",
   "image_prompt": "Fotorealistický snímek jazykové učebny s tureckými gramatickými tabulkami na tabuli, studenti studující, denní světlo, bez čitelného textu, 16:9",
-  "about": "samohláskové harmonii v turečtině"
+  "about": "samohláskové harmonii v turečtině",
+  "irony_prompt": "A row of stacking wooden dolls fills the frame, the front doll a deep red and every single doll lined up behind it painted that exact same red. Smaller and subordinate: one stray blue doll set apart on its own, clearly rejected; a craftsman nodding approvingly along the matched row; a pot of red paint and a brush. MOOD: orderly, satisfying."
  },
  {
   "id": "tr-q-aglutinace",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Turkish_language",
   "source_card": "tr-jazyk-aglutinace",
   "image_prompt": "Fotorealistický detailní snímek ruky píšící turecký text do sešitu, přirozené světlo, bez čitelného textu, 16:9",
-  "about": "aglutinaci v turečtině"
+  "about": "aglutinaci v turečtině",
+  "irony_prompt": "A tiny locomotive fills the frame at the head of an absurdly long chain of identical little carriages, all coupled tight into one unbroken piece and stretching away out of the frame. Smaller and subordinate: a railwayman on tiptoe trying to see the far end; a modest two-carriage train on the next track; steam drifting. MOOD: comic, relentless."
  },
  {
   "id": "tr-q-turecka-kava",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Turkish_coffee",
   "source_card": "tr-jidlo-turecka-kava",
   "image_prompt": "Fotorealistický detailní snímek turecké kávy nalévané z měděné konvičky cezve do malého šálku, viditelná kávová sedlina, teplé světlo, bez textu, 16:9",
-  "about": "turecké kávě"
+  "about": "turecké kávě",
+  "irony_prompt": "A small long-handled copper pot fills the frame on hot sand, a dome of thick brown foam swelling up over its rim. Smaller and subordinate: a tiny cup with a thick dark sludge settled in the bottom; an upturned cup on its saucer being read for fortunes; a glass of water and a cube of sweetmeat. MOOD: rich, unhurried."
  },
  {
   "id": "tr-q-lokum",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Turkish_delight",
   "source_card": "tr-jidlo-lokum",
   "image_prompt": "Fotorealistický detailní snímek barevných kostek tureckého lokumu posypaných moučkovým cukrem na ozdobném talíři, měkké přirozené světlo, bez textu, 16:9",
-  "about": "lokumu"
+  "about": "lokumu",
+  "irony_prompt": "A small dusty cube of pale rose jelly fills the frame held between two fingertips, powdered sugar drifting off it, with one neat bite taken out of the corner. Smaller and subordinate: a wooden box packed with more identical cubes in rows; a pistachio-studded cube beside it; a tiny two-pronged fork. MOOD: delicate, moreish."
  },
  {
   "id": "tr-q-kebab",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kebab",
   "source_card": "tr-jidlo-kebab",
   "image_prompt": "Fotorealistický snímek masových špízů grilovaných nad otevřeným ohněm v turecké restauraci, stoupající kouř, teplé večerní světlo, bez textu, 16:9",
-  "about": "kebabu"
+  "about": "kebabu",
+  "irony_prompt": "A long metal skewer fills the frame threaded with charred chunks of meat and onion, dripping over glowing coals. Smaller and subordinate: a tall rotating vertical column of stacked meat behind; a flatbread being warmed at the edge of the grill; a cook fanning the embers. MOOD: smoky, mouth-watering."
  },
  {
   "id": "tr-q-osmanska-rise",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ottoman_Empire",
   "source_card": "tr-historie-osmanska-rise",
   "image_prompt": "Fotorealistický snímek areálu paláce Topkapı v Istanbulu za soumraku, osmanská architektura, bez lidí v popředí, bez textu, 16:9",
-  "about": "vzniku Osmanské říše"
+  "about": "vzniku Osmanské říše",
+  "irony_prompt": "A small rough wooden watchtower on a hilltop fills the frame, its tiny shadow stretching out enormously across the plain below and over the curve of the horizon. Smaller and subordinate: two sentries leaning on the rail, unaware; a goat herd on the slope; distant coastlines of three far-off landmasses just visible in the haze. MOOD: modest beginnings, vast destiny."
  },
  {
   "id": "tr-q-gallipoli",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
   "source_card": "tr-historie-gallipoli",
   "image_prompt": "Fotorealistický historizující snímek pobřeží poloostrova Gallipoli se zákopy z první světové války, zatažená obloha, bez textu, 16:9",
-  "about": "bitvě o Gallipoli"
+  "about": "bitvě o Gallipoli",
+  "irony_prompt": "A narrow blue strait between steep headlands fills the frame with a heavy chain strung across it, and a line of grey warships turned around and steaming back out to sea. Smaller and subordinate: gun emplacements dug into the cliffs; empty landing boats drawn up on a beach; gulls over the water. MOOD: sombre, strategic, not graphic."
  },
  {
   "id": "tr-q-lausannska-smlouva",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Lausanne",
   "source_card": "tr-historie-lausannska-smlouva",
   "image_prompt": "Fotorealistický snímek elegantního konferenčního sálu z počátku 20. století s dlouhým stolem, diplomatická atmosféra, bez lidí v ostrém záběru, bez textu, 16:9",
-  "about": "Lausannské mírové smlouvě"
+  "about": "Lausannské mírové smlouvě",
+  "irony_prompt": "A long polished table fills the frame with a rolled parchment lying open across it, its surface completely blank apart from a row of heavy red wax seals along the bottom edge. Smaller and subordinate: rows of empty chairs pushed back; a jug of water and two glasses; tall windows with alpine light coming in. MOOD: formal, decisive."
  },
  {
   "id": "tr-k-tulipan",
@@ -611,7 +638,8 @@
   "quip_correct": "Správně, je to země, kterou si Holanďané nikdy nepřiznají nahlas — tulipány dovedli k dokonalosti, ale první cibulky pocházely ze zahrad osmanského Turecka.",
   "quip_wrong": "Myslel sis, že tulipán je odjakživa holandský? Holandsko ho proslavilo po celém světě, ale samotný květ si přivezlo odjinud, z Turecka.",
   "explanation": "Slovo tulipán pochází z tureckého slova tülbend, což znamená turban — květ totiž připomíná tvar čerstvě omotaného turbanu. Do Evropy se tulipán dostal v 16. století přes osmanské Turecko.",
-  "about": "tulipánech a jejich původu"
+  "about": "tulipánech a jejich původu",
+  "irony_prompt": "A single tall red tulip fills the frame, its closed bloom shaped exactly like a freshly wrapped cloth turban complete with folded coils. Smaller and subordinate: a Dutch trader gaping at it with his hat off; a wooden crate of bulbs bound for a ship; a hillside of wild tulips behind. MOOD: elegant, gently ironic."
  },
  {
   "id": "tr-k-vlajka",
@@ -631,7 +659,8 @@
   "quip_correct": "A je to tam! Zkus najít další vlajky s půlměsícem a hvězdou — turecká jim byla vzorem.",
   "quip_wrong": "Skoro, ale ne tak úplně — červený kříž hlídej na jiných vlajkách, ta turecká sází na půlměsíc a hvězdu.",
   "explanation": "Turecká vlajka se jmenuje Ay Yıldız, česky Měsíc-Hvězda. Půlměsíc byl symbolem Osmanské říše a dnes je spojen s islámem. Tmavě červená barva symbolizuje krev tureckých vojáků.",
-  "about": "turecké vlajce"
+  "about": "turecké vlajce",
+  "irony_prompt": "A large flag fills the frame rippling on a pole, showing a bright crimson field with a white crescent moon opening to the right and a small white five-pointed star tucked just beyond its horns. Smaller and subordinate: a child craning up at it; a domed roofline behind; the same crescent repeated on a distant finial. MOOD: proud, sunlit."
  },
  {
   "id": "tr-k-simit",
@@ -652,7 +681,8 @@
   "quip_wrong": "Zkus to jinak – žádný košík na krku ani psí vozík. Nejčastěji ho vidíš na velkém tácu přímo na hlavě prodavače.",
   "explanation": "Tenhle sezamový chléb se turecky jmenuje simit a prodává se na ulicích už celá staletí.",
   "about": "simitu",
-  "image_prompt": "Fotorealistický snímek prodavače nesoucího na hlavě velký tác s kulatými sezamovými chleby simit na rušné turecké ulici, teplé ranní světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek prodavače nesoucího na hlavě velký tác s kulatými sezamovými chleby simit na rušné turecké ulici, teplé ranní světlo, 16:9",
+  "irony_prompt": "A street vendor fills the frame walking with a huge round wooden tray balanced flat on his head, stacked high with ring-shaped sesame-crusted bread loops. Smaller and subordinate: a customer reaching up on tiptoe for one; sesame seeds raining down; a ferry queue behind. MOOD: bustling, cheerful."
  },
  {
   "id": "tr-t-hamam",
@@ -672,7 +702,8 @@
   "quip_correct": "Žádný bazén, žádný tobogán — jen horká pára a rukavice, co tě pořádně vydrbe.",
   "quip_wrong": "Trh s kořením bys tam nenašel ani se svíčkou — ten se jmenuje bazar. Hamam je něco úplně jiného, plné horké páry.",
   "explanation": "Tradiční turecká parní lázeň hamam existuje od dob Osmanů. Zákazník si lehne na vyhřívaný mramorový stůl zvaný göbek taşı, kde ho kešan (pomocník) vydrbe speciální rukavicí a důkladně umyje. Největší hamamy v Istanbulu staví i slavní architekti.",
-  "about": "hamamu"
+  "about": "hamamu",
+  "irony_prompt": "A broad heated marble slab fills the frame under a domed ceiling pierced with star-shaped glass eyes casting beams through the steam. Smaller and subordinate: an attendant in a coarse mitt scrubbing a very relaxed customer; brass bowls and a marble basin; slippers left by the door. MOOD: steamy, blissful."
  },
  {
   "id": "tr-k-baklava",
@@ -694,7 +725,8 @@
   "explanation": "Tenhle zákusek se jmenuje baklava a mezi vrstvami těsta se skrývá med a mleté pistácie.",
   "source_url": "https://en.wikipedia.org/wiki/Baklava",
   "image_prompt": "Fotorealistický detailní snímek kostek baklavy s pistáciovou drtí na měděném tácu, teplé světlo, bez textu, 16:9",
-  "about": "baklavě"
+  "about": "baklavě",
+  "irony_prompt": "A flat diamond-shaped piece of pastry fills the frame in close-up, showing dozens of paper-thin layers stacked like the pages of a book, glossy with honey and heaped with green ground pistachio. Smaller and subordinate: a baker stretching one sheet so thin the table shows through; a tray of more diamonds; a honey ladle. MOOD: sticky, painstaking."
  },
  {
   "id": "tr-k-vanska-kocka",
@@ -716,7 +748,8 @@
   "explanation": "Turecká vanská kočka má bílou srst s barevnou hlavou a ocasem a často má dvě různobarevné oči, chová se jako vzácné a chráněné plemeno.",
   "source_url": "https://en.wikipedia.org/wiki/Turkish_Van",
   "image_prompt": "Fotorealistický snímek bíle-oranžové turecké vanské kočky sedící na kameni u jezera, přirozené světlo, 16:9",
-  "about": "turecké vanské kočce"
+  "about": "turecké vanské kočce",
+  "irony_prompt": "A snow-white long-haired cat fills the frame mid-leap into a lake, its ginger head and ringed ginger tail flying, one eye blue and the other amber. Smaller and subordinate: another of the same cats paddling happily; a bewildered fisherman; the wide pale lake shore. MOOD: joyful, contrary."
  },
  {
   "id": "tr-k-balony-kappadokie",
@@ -738,7 +771,8 @@
   "explanation": "Lety balonem nad Kappadokií patří mezi nejoblíbenější turistické zážitky v Turecku, denně jich při dobrém počasí vzlétá i přes sto.",
   "source_url": "https://en.wikipedia.org/wiki/G%C3%B6reme",
   "image_prompt": "Fotorealistický širokoúhlý snímek desítek horkovzdušných balonů letících nad skalními komíny Kappadokie za úsvitu, 16:9",
-  "about": "letech balonem nad Kappadokií"
+  "about": "letech balonem nad Kappadokií",
+  "irony_prompt": "An enormous striped hot-air balloon fills the frame drifting at dawn just above a valley of pale rock cones, its burner flaring orange. Smaller and subordinate: dozens more balloons receding into the pink haze; passengers leaning out of the basket; long shadows across the rocks. MOOD: magical, first light."
  },
  {
   "id": "tr-k-velbloudi-zapasy",
@@ -760,7 +794,8 @@
   "explanation": "Velbloudí zápasy se v Turecku pořádají hlavně v zimě, kdy jsou samci nejagresivnější kvůli období páření, zvířatům samotným se přitom neubližuje.",
   "source_url": "https://en.wikipedia.org/wiki/Camel_wrestling",
   "image_prompt": "Fotorealistický snímek dvou ozdobených velbloudů zápasících na písčitém hřišti, diváci v pozadí, slunečný zimní den, 16:9",
-  "about": "velbloudích zápasech"
+  "about": "velbloudích zápasech",
+  "irony_prompt": "Two enormous decorated camels fill the frame leaning their necks against each other in a slow-motion shoving match, both draped in embroidered rugs and tassels. Smaller and subordinate: a wary handler holding a rope; a picnicking crowd on the hillside eating sausages; a winter sky. MOOD: absurd, festive, harmless."
  },
  {
   "id": "tr-k-velky-bazar",
@@ -782,7 +817,8 @@
   "explanation": "Velký bazar v Istanbulu vznikl už hodně dávno a patří mezi nejstarší a největší kryté trhy na světě – denně jím projdou davy návštěvníků.",
   "source_url": "https://en.wikipedia.org/wiki/Grand_Bazaar,_Istanbul",
   "image_prompt": "Fotorealistický snímek rušné klenuté uličky Velkého bazaru v Istanbulu plné barevných výloh, teplé světlo lamp, 16:9",
-  "about": "Velkém bazaru v Istanbulu"
+  "about": "Velkém bazaru v Istanbulu",
+  "irony_prompt": "A vaulted painted arcade fills the frame running off in every direction, crammed with lamps, rugs and brass, every storefront front completely plain and blank above the doorway. Smaller and subordinate: a hopelessly lost tourist turning a map upside down; a shopkeeper offering tea; four identical corridors branching away. MOOD: labyrinthine, dazzling."
  },
  {
   "id": "tr-t-nasreddin",
@@ -804,7 +840,8 @@
   "explanation": "Příběhy o Nasreddinu Hodžovi se datují do 13. století a jejich varianty se vyprávějí od Balkánu až po střední Asii, ne jen v Turecku.",
   "source_url": "https://en.wikipedia.org/wiki/Nasreddin",
   "image_prompt": "Fotorealistický ilustrativní snímek starého tureckého venkovského náměstí s oslem a mešitou v pozadí, teplé odpolední světlo, bez lidí, 16:9",
-  "about": "Nasreddinu Hodžovi"
+  "about": "Nasreddinu Hodžovi",
+  "irony_prompt": "A round bearded man in a huge white turban fills the frame riding a small donkey while sitting backwards on it, facing the way he came, entirely at ease. Smaller and subordinate: villagers pointing and laughing; one listener suddenly frowning as the point sinks in; a dusty village square. MOOD: comic, sly."
  },
  {
   "id": "tr-q-turecke-koberce",
@@ -825,7 +862,8 @@
   "explanation": "Vzory tureckých kilimů se tradičně předávaly z generace na generaci a každý region či kmen měl svou vlastní sadu motivů a barev.",
   "source_url": "https://en.wikipedia.org/wiki/Kilim",
   "image_prompt": "Fotorealistický detailní snímek barevného tureckého kilimu s geometrickými vzory rozloženého na dřevěné podlaze, přirozené světlo, 16:9",
-  "about": "tureckých kobercích kilim"
+  "about": "tureckých kobercích kilim",
+  "irony_prompt": "A flat woven rug fills the frame being flipped over mid-air by two pairs of hands, showing the identical bold geometric pattern on both faces and no pile at all. Smaller and subordinate: a fluffy knotted rug beside it looking thick and one-sided; a wooden loom with taut warp threads; a grandmother and granddaughter weaving. MOOD: crafty, generational."
  },
  {
   "id": "tr-q-konstantinopol-istanbul",
@@ -846,7 +884,8 @@
   "explanation": "Jméno Istanbul se v turečtině neformálně používalo už staletí, ale mezinárodně uznávaným oficiálním názvem se stalo až reformou z roku 1930.",
   "source_url": "https://en.wikipedia.org/wiki/Names_of_Istanbul",
   "image_prompt": "Fotorealistický širokoúhlý snímek Istanbulu s mešitami a Bosporem za soumraku, panorama města, teplé světlo, bez textu, 16:9",
-  "about": "přejmenování Konstantinopole na Istanbul"
+  "about": "přejmenování Konstantinopole na Istanbul",
+  "irony_prompt": "A postman fills the frame holding up a completely blank envelope with a baffled shrug, standing on a quay in front of a skyline of domes and minarets. Smaller and subordinate: a sack at his feet spilling more plain unmarked envelopes; a ferry crossing behind him; gulls wheeling overhead. MOOD: comic, bureaucratic."
  },
  {
   "id": "tr-q-bospor",
@@ -867,7 +906,8 @@
   "explanation": "Bosporem denně proplouvá několik tisíc lodí včetně velkých tankerů, což z něj dělá jednu z nejrušnějších vodních cest na světě.",
   "source_url": "https://en.wikipedia.org/wiki/Bosphorus",
   "image_prompt": "Fotorealistický širokoúhlý snímek průlivu Bospor s mostem spojujícím Evropu a Asii, lodě na vodě, jasný den, bez textu, 16:9",
-  "about": "průlivu Bospor"
+  "about": "průlivu Bospor",
+  "irony_prompt": "A broad blue strait fills the frame slicing straight through the middle of a dense city, ferries and tankers threading along it and a suspension bridge leaping across. Smaller and subordinate: a commuter eating breakfast on the ferry deck with one continent behind him and the other ahead; fishermen lining the bridge approach; a cormorant. MOOD: bustling, unique."
  },
  {
   "id": "tr-q-slovo-jogurt",
@@ -888,7 +928,8 @@
   "explanation": "Turecký jogurt je hustší a kyselejší než mnoho západních verzí a v turecké kuchyni se používá i jako základ omáček a nápojů, třeba slaného ayranu.",
   "source_url": "https://en.wikipedia.org/wiki/Yogurt",
   "image_prompt": "Fotorealistický detailní snímek mísy hustého bílého jogurtu s dřevěnou lžící na dřevěném stole, přirozené světlo, bez textu, 16:9",
-  "about": "slově jogurt a jeho tureckém původu"
+  "about": "slově jogurt a jeho tureckém původu",
+  "irony_prompt": "A deep bowl of very thick white yogurt fills the frame, so stiff that a spoon stands upright in it. Smaller and subordinate: a tall glass of frothy salted white drink beside it; a strainer hanging over a pot; a ladle of it being spooned over a dish of meat. MOOD: tangy, hearty."
  },
  {
   "id": "tr-k-pamukkale-terasy",
@@ -909,7 +950,8 @@
   "quip_wrong": "Bavlna ani sníh v tom nejsou. Ty bílé schody vyrobila stékající voda.",
   "explanation": "Voda s rozpuštěným vápencem stéká po svahu, vápenec se cestou usazuje a vznikají z něj bílé mísy plné teplé vody, jedna nad druhou.",
   "about": "Pamukkale",
-  "more_fact": "Stupně rostou pořád dál, jenže hodně pomalu. Vrstva vápence přibývá tak nepatrně, že za celý lidský život povyroste sotva o pár centimetrů."
+  "more_fact": "Stupně rostou pořád dál, jenže hodně pomalu. Vrstva vápence přibývá tak nepatrně, že za celý lidský život povyroste sotva o pár centimetrů.",
+  "irony_prompt": "A white hillside of rounded basins fills the frame stacked one above the other like a castle carved from cotton wool, each bowl full of warm turquoise water. Smaller and subordinate: steam drifting off the top pool; a child wading barefoot down the steps; chalky white crust creeping over a twig. MOOD: soft, dreamlike."
  },
  {
   "id": "tr-k-nasreddin-hodza",
@@ -930,6 +972,7 @@
   "quip_wrong": "Nesportoval ani nevládl. Jeho zbraní byla hláška ve správnou chvíli.",
   "explanation": "V příbězích jezdí na oslu pozpátku a odpovídá tak, že to zní jako hloupost — dokud si člověk nedomyslí zbytek. Historky jsou krátké, často jen pár vět.",
   "about": "Nasreddinu Hodžovi",
-  "more_fact": "Jeho příběhy se vyprávějí i daleko od Turecka, od Balkánu až po střední Asii. V každé zemi má trochu jiné jméno, ale osla a odpovědi naruby má všude stejné."
+  "more_fact": "Jeho příběhy se vyprávějí i daleko od Turecka, od Balkánu až po střední Asii. V každé zemi má trochu jiné jméno, ale osla a odpovědi naruby má všude stejné.",
+  "irony_prompt": "A round bearded man in an oversized turban fills the frame perched on a low wall in a village square, one finger raised mid-punchline, a mischievous glint in his eye. Smaller and subordinate: a ring of villagers roaring with laughter; one old man staring into the distance, only now getting it; his donkey waiting patiently. MOOD: witty, warm."
  }
 ]
