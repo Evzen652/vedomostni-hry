@@ -17,7 +17,7 @@ Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea, Malajsie).
 | Bez ilustrace | **1 207** |
 | Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, Thajsko 45/45, Turecko 43/43, Irsko 42/42, Izrael 42/42, Jižní Korea 42/42, **Malajsie 37/42** |
 | **ZASTAVENO — DOŠEL KREDIT GEMINI** | **Pět malajsijských obrázků čeká na přegenerování**, zadání jsou opravená a po lintu — viz bod 2 níž |
-| Další v pořadí (po Malajsii) | **Pákistán 42, Portugalsko 42 a Saúdská Arábie 42 — zadání UŽ NAPSANÁ a po lintu**; pak Dánsko 41, Indonésie 41, Norsko 41… |
+| Další v pořadí (po Malajsii) | **Pákistán 42, Portugalsko 42, Saúdská Arábie 42 a Dánsko 42 — zadání UŽ NAPSANÁ a po lintu**; pak Indonésie 41, Norsko 41, Filipíny 41… |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -69,8 +69,9 @@ Co se u každého opravovalo, ať víš, na co se dívat:
 - `my-q-nicol-david`, `my-q-batik-my`, `my-k-petronas-most` — náhodné podpisy,
   zadání beze změny. **Zkontroluj rohy.**
 
-**Pak pokračuj Pákistánem, Portugalskem a Saúdskou Arábií — všechny tři mají zadání
-UŽ NAPSANÁ a po lintu** (`submit --cc pk`, `--cc pt`, `--cc sa`). Nepiš je znovu.
+**Pak pokračuj Pákistánem, Portugalskem, Saúdskou Arábií a Dánskem — všechny čtyři mají
+zadání UŽ NAPSANÁ a po lintu** (`submit --cc pk`, `--cc pt`, `--cc sa`, `--cc dk`).
+Nepiš je znovu.
 
 **Nejrizikovější otázky v těch třech připravených sadách:**
 - Pákistán: `pk-q-kaligrafie` (islámská kaligrafie — scéna je schválně jen geometrické
@@ -89,6 +90,16 @@ UŽ NAPSANÁ a po lintu** (`submit --cc pk`, `--cc pt`, `--cc sa`). Nepiš je zn
   Dál `sa-q-nabatejske-pismo` (dva kamenné bloky, ostrý a ohlazený, žádný znak),
   `sa-q-nabatska-poezie` ("not a single page or pen anywhere"), `sa-q-dakar`
   a `sa-q-al-nassr` (bodywork a dres bez značek).
+- Dánsko: `dk-t-bluetooth` — **logo Bluetooth je runová ligatura, tedy PÍSMENA**; zadání
+  je proto staví na vikingském králi s jedním modrým zubem a dvou bzučících přístrojích,
+  žádná runa. `dk-a-carlsberg` (vynález stupnice pH) — místo stupnice s čísly je to
+  barevný žebřík zkumavek od červené po modrou. `dk-a-kierkegaard` (pseudonymy) — několik
+  verzí téhož muže vedle sebe, žádná stránka. `dk-a-karen-blixen` (mužský pseudonym) —
+  mužský klobouk na stole, žádný text. `dk-t-dannebrog` má barvy i posunutý kříž vypsané
+  doslova. `dk-a-egtved` (mumie z doby bronzové) — v rakvi je JEN oděv a bronzový disk,
+  žádná postava.
+- **Past zaplacená u Dánska: `lint-irony` bere „writing desk" jako chybu**, protože slovo
+  `writing` je na seznamu. Psací stůl popisuj jako `desk` nebo `lamplit desk`.
 
 **Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka/Irska/Izraele/Malajsie:**
 slovo, které POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text.
@@ -236,8 +247,8 @@ neodstraní.
 ## 6. Co dělat dál
 
 1. **Dobít kredit a dogenerovat pět malajsijských obrázků** (bod 2 výš) — priorita číslo jedna.
-2. **Odeslat Pákistán (42), Portugalsko (42) a Saúdskou Arábii (42) — zadání jsou hotová
-   a po lintu**, pak pokračovat pořadím: Dánsko 41, Indonésie 41, Norsko 41…
+2. **Odeslat Pákistán (42), Portugalsko (42), Saúdskou Arábii (42) a Dánsko (42) — zadání
+   jsou hotová a po lintu**, pak pokračovat pořadím: Indonésie 41, Norsko 41, Filipíny 41…
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 

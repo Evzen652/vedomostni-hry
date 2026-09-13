@@ -125,8 +125,8 @@ Thajsko, Turecko, Irsko, Izrael, Jižní Korea (všechny 100 % s vyřešenými d
 a Malajsie 37/42. **DOŠEL KREDIT GEMINI API — pět malajsijských obrázků čeká na
 přegenerování; hráč musí dobít kredit na `ai.studio/projects`, pak stačí jeden
 `submit --only`**, viz bod 2 v [predani-ilustrace.md](predani-ilustrace.md).
-Zadání pro **Pákistán (42), Portugalsko (42) a Saúdskou Arábii (42) jsou hotová
-a po lintu**, stačí je odeslat. Bez ilustrace je 1 207 otázek z 3 742.
+Zadání pro **Pákistán (42), Portugalsko (42), Saúdskou Arábii (42) a Dánsko (42) jsou
+hotová a po lintu**, stačí je odeslat. Bez ilustrace je 1 207 otázek z 3 742.
 
 Pořadí je závazné — každý krok otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
