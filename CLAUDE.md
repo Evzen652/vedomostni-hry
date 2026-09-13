@@ -81,6 +81,44 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Bulharsko: 52/52 ilustrací. 9 vad z 52 (17 %) + 1 selhané generování —
+  poprvé se objevila ŠPATNÁ NÁRODNÍ VLAJKA místo textu jako hlavní typ vady (3×), a jedna
+  otázka (shopska) potřebovala ČTYŘI pokusy.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **Obecný popis „a tiny flag in its home country's colors" bez konkrétních barev
+    vyrobil ŠVÝCARSKOU vlajku** (`bg-q-jogurt`) a **bez určení orientace pruhů
+    ITALSKOU/RAKOUSKOU vlajku** (`bg-q-shopska`, dvakrát — druhý pokus s „white,
+    green and red stripes" bez slova „horizontal" vyšel jako svislý italský trikolor).
+    Model si obecné zadání vyplní podle vlastní asociace, ne podle skutečné země otázky.
+    **`bg-q-stoickov` dostal švýcarskou vlaječku v davu, aniž by ji zadání vůbec
+    zmiňovalo** — čistá halucinace, opraveno nahrazením za neutrální oranžovou cedulku
+    rohového praporku.
+  - **Shopska nakonec vyřešena AŽ přestavbou scény bez vlajky vůbec** — po dvou
+    neúspěšných pokusech s explicitním popisem barev/orientace (3. pokus: chyběla
+    červená úplně) čtvrtý pokus nechal barvy nést přímo SALÁTEM (vrstva zelené
+    petrželky/bílého sýra/červených rajčat), ne oddělenou vlaječkou. Vyšlo čistě,
+    i když pořadí zelená/bílá je prohozené oproti skutečné vlajce — vtip (náhodná
+    shoda barev) funguje i tak. **Poučení pro příště: když fakt vyžaduje PŘESNÉ
+    národní barvy, nespoléhat na vlaječku jako rekvizitu — nechat barvy nést něčím,
+    co už ve scéně je z jiného důvodu.**
+  - **`gr`/`ch` poučení o písmenech platí i pro KURZIVU, ne jen tiskací písmena.**
+    `bg-q-cyrilice` s „elegant flowing script too ornate to read clearly" vyrobilo
+    ČITELNÁ (byť nesmyslná) kurzívní slova na pergamenu — formulace „ornate script"
+    sama o sobě nestačí jako záruka nečitelnosti. Opraveno úplnou změnou scény:
+    sochař tvaruje abstraktní hliněné destičky s geometrickým vzorem místo psaní
+    na pergamen — žádná scéna nablízko připomínající psací proces.
+  - **`bg-k-banica-napln` dostalo čitelný (zkomolený) štítek na sklenici jogurtu**,
+    ačkoli zadání štítek vůbec nezmiňovalo — oprava „a jar with a plain unlabeled lid".
+  - **1 obrázek selhal při generování bez chyby** (`bg-k-black-sea-dolphins`,
+    „bez výsledku") — přeposláno stejné zadání, prošlo napoprvé.
+  - **2 podpisy** (`bg-a-kostadinova`, `bg-t-tsarevets-fortress-lights`).
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 613.** `validate` 0 chyb, `test:offline` 853.
+
+- **2026-09-13 — Zadání pro Španělsko (62) odeslána** (byla připravena a zkontrolována
+  už dřív, `lint-irony` 0 chyb). Vzhledem k dnešnímu poučení o vlajkách u Bulharska:
+  žádná španělská otázka nevyžaduje vlaječku jako rekvizitu s přesnými barvami, takže
+  riziko je nízké.
+
 - **2026-09-13 — Řecko: 53/53 ilustrací. 9 vad z 53 (17 %) — nejvyšší podíl dosud —
   ale jen 3 skutečně textové/vizuální, zbytek podpisy. Akropolis potřebovala TŘI pokusy.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.

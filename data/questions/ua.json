@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Saint_Sophia_Cathedral,_Kyiv",
   "source_card": "ua-mista-sofijsky-chram",
   "image_prompt": "Fotorealistický snímek Sofijského chrámu v Kyjevě, bílé stěny a zelenozlaté kupole ve stylu ukrajinského baroka, zvonice v popředí, jasný den, bez lidí, 16:9",
-  "about": "Sofijském chrámu"
+  "about": "Sofijském chrámu",
+  "irony_prompt": "A grand golden-domed cathedral fills the frame standing ancient and dignified, a small fresh laurel wreath carved into its cornerstone, newer and cleaner than the weathered stone around it. Smaller and subordinate: pigeons circling the domes; pilgrims lighting candles at the entrance; scaffolding on one restored wall. MOOD: venerable, proud."
  },
  {
   "id": "ua-q-lvov",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lviv",
   "source_card": "ua-mista-lvov",
   "image_prompt": "Fotorealistický snímek historického náměstí Rynok ve Lvově, barevné renesanční a barokní měšťanské domy, dlážděné ulice, ranní světlo, bez lidí v popředí, 16:9",
-  "about": "Lvově"
+  "about": "Lvově",
+  "irony_prompt": "A row of ornate medieval and Habsburg-era buildings fills the frame standing perfectly intact, their elaborate facades, turrets and rooftops undamaged and gleaming in the sun. Smaller and subordinate: café tables on the cobblestones; a tram passing by; pigeons on a balcony. MOOD: preserved, charming."
  },
  {
   "id": "ua-q-krym",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Crimea",
   "source_card": "ua-mista-krym",
   "image_prompt": "Fotorealistický letecký snímek úzké pevninské šíje spojující poloostrov se stepní pevninou, moře po obou stranách, denní světlo, 16:9",
-  "about": "Krymu"
+  "about": "Krymu",
+  "irony_prompt": "A narrow strip of land fills the frame stretching between two seas, so thin that a person standing in the middle can see water shimmering on both sides at once. Smaller and subordinate: a lone road running its length; seabirds crossing overhead; salt flats glinting in the sun. MOOD: geographically striking, neutral."
  },
  {
   "id": "ua-q-cernozem",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chernozem",
   "source_card": "ua-priroda-cernozem",
   "image_prompt": "Fotorealistický širokoúhlý snímek obdělaných polí ukrajinské stepi, tmavá černozemní půda na okraji pole, zlatá pšenice na obzoru, přirozené světlo, bez lidí, 16:9",
-  "about": "černozemi"
+  "about": "černozemi",
+  "irony_prompt": "A deep vertical trench fills the frame cut into a farm field, revealing rich black soil layered far deeper than an ordinary person is tall standing beside it for scale. Smaller and subordinate: a farmer's shovel stuck in the ground; golden wheat stalks at the surface; earthworms visible in the dark earth. MOOD: fertile, impressive."
  },
  {
   "id": "ua-q-dnepr",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Dnieper",
   "source_card": "ua-priroda-dnepr",
   "image_prompt": "Fotorealistický širokoúhlý snímek řeky Dněpr protékající Kyjevem, mosty přes řeku, zelené břehy, večerní světlo, bez lidí v popředí, 16:9",
-  "about": "řece Dněpr"
+  "about": "řece Dněpr",
+  "irony_prompt": "A vast wide river fills the frame flowing powerfully through the landscape, dwarfing every smaller tributary stream joining it along its banks. Smaller and subordinate: a barge navigating the current; fishermen on the shore; bridges spanning far in the distance. MOOD: majestic, sweeping."
  },
  {
   "id": "ua-q-karpaty",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hoverla",
   "source_card": "ua-priroda-karpaty",
   "image_prompt": "Fotorealistický širokoúhlý snímek zalesněných hřebenů ukrajinských Karpat, vrchol Hoverly v pozadí, horské louky, ranní mlha v údolích, bez lidí, 16:9",
-  "about": "ukrajinských Karpatech"
+  "about": "ukrajinských Karpatech",
+  "irony_prompt": "A rounded mountain peak fills the frame standing clearly taller than every neighboring summit in the range, its top brushed with early snow while the others remain bare. Smaller and subordinate: hikers on a winding trail; a wooden trail marker; clouds drifting below the peak. MOOD: towering, proud."
  },
  {
   "id": "ua-q-koroljov",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sergei_Korolev",
   "source_card": "ua-lide-koroljov",
   "image_prompt": "Fotorealistický archivní styl snímek raketového startu v noci na kosmodromu, plameny raketových motorů, hvězdná obloha, 16:9",
-  "about": "Sergeji Koroljovovi"
+  "about": "Sergeji Koroljovovi",
+  "irony_prompt": "A small silver satellite fills the frame beeping as it drifts against a starfield, a modest drafting table with rolled blueprints glimpsed reflected faintly in its polished surface. Smaller and subordinate: a launch tower in the far distance; Earth's curve glowing below; a single star flashing in response. MOOD: wondrous, historic, not graphic."
  },
  {
   "id": "ua-q-mecnikov",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/%C3%89lie_Metchnikoff",
   "source_card": "ua-lide-mecnikov",
   "image_prompt": "Fotorealistický historizující portrétní snímek vědce u mikroskopu v laboratoři konce 19. století, teplé světlo, 16:9",
-  "about": "Ilji Mečnikovovi"
+  "about": "Ilji Mečnikovovi",
+  "irony_prompt": "A giant white blood cell fills the frame under a microscope's lens, caught mid-motion engulfing a much smaller invading particle like a hungry amoeba. Smaller and subordinate: a medal resting nearby; a brass microscope base; a notebook of sketches. MOOD: curious, triumphant."
  },
  {
   "id": "ua-q-sikorskyj",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Igor_Sikorsky",
   "source_card": "ua-lide-sikorskyj",
   "image_prompt": "Fotorealistický archivní snímek raného vrtulníku při zkušebním letu, otevřená konstrukce, 40. léta 20. století, 16:9",
-  "about": "Igoru Sikorskyjovi"
+  "about": "Igoru Sikorskyjovi",
+  "irony_prompt": "An early experimental helicopter fills the frame with its rotor blades a blur overhead, lifting hesitantly just off the ground for the very first time. Smaller and subordinate: onlookers shielding their eyes from the wind; a stopwatch in an assistant's hand; scattered tools on a workbench. MOOD: pioneering, exciting."
  },
  {
   "id": "ua-q-vysyvanka",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vyshyvanka",
   "source_card": "ua-kultura-vysyvanka",
   "image_prompt": "Fotorealistický detailní snímek tradiční ukrajinské vyšívané košile vyšyvanky s červeno-černým geometrickým vzorem, ruční výšivka zblízka, přirozené světlo, 16:9",
-  "about": "vyšyvance"
+  "about": "vyšyvance",
+  "irony_prompt": "A white linen shirt fills the frame covered in intricate colorful embroidered patterns along its collar and sleeves, each stitch catching the light like a tiny protective charm. Smaller and subordinate: a needle and thread resting nearby; a spool of colorful yarn; a wildflower tucked into a buttonhole. MOOD: warm, traditional."
  },
  {
   "id": "ua-q-pysanky",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pysanka_Museum",
   "source_card": "ua-kultura-pysanky",
   "image_prompt": "Fotorealistický snímek Muzea pysanky v Kolomyji, budova ve tvaru obří malované kraslice s tradičními ukrajinskými vzory, jasný den, 16:9",
-  "about": "muzeu pysanky"
+  "about": "muzeu pysanky",
+  "irony_prompt": "A colossal building shaped exactly like a giant decorated Easter egg fills the frame standing proudly in a town square, its curved walls painted with intricate traditional patterns. Smaller and subordinate: tourists posing for photos at its base; a flower bed shaped like a nest around it; pigeons perched on its curved roof. MOOD: whimsical, striking."
  },
  {
   "id": "ua-q-ivana-kupala",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ivan_Kupala_Day",
   "source_card": "ua-kultura-ivana-kupala",
   "image_prompt": "Fotorealistický snímek lidí skákajících přes táborový oheň za soumraku na břehu řeky, věnce z květin plavou po vodě, letní večer, 16:9",
-  "about": "svátku Ivana Kupala"
+  "about": "svátku Ivana Kupala",
+  "irony_prompt": "A young couple fills the frame leaping hand in hand over a bonfire at dusk, flower wreaths with ribbons floating gently down a nearby river behind them. Smaller and subordinate: onlookers clapping and singing; sparks rising into the night sky; candles flickering along the riverbank. MOOD: joyful, mystical, not graphic."
  },
  {
   "id": "ua-q-taras-sevcenko",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taras_Shevchenko",
   "source_card": "ua-umeni-taras-sevcenko",
   "image_prompt": "Fotorealistický historizující portrét ukrajinského básníka 19. století v tradičním oděvu, vážný výraz, tlumené světlo, 16:9",
-  "about": "Tarasu Ševčenkovi"
+  "about": "Tarasu Ševčenkovi",
+  "irony_prompt": "A worn leather-bound book of poetry fills the frame lying open on a wooden desk, its pages radiating outward into countless younger books on a shelf behind, as if it were their common ancestor. Smaller and subordinate: a quill pen resting nearby; a candle burning low; a pressed wildflower marking a page. MOOD: foundational, reverent."
  },
  {
   "id": "ua-q-malevic",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kazimir_Malevich",
   "source_card": "ua-umeni-malevic",
   "image_prompt": "Fotorealistický snímek galerie s vystaveným velkým černým čtvercovým obrazem na bílé zdi, minimalistické osvětlení, bez lidí, 16:9",
-  "about": "Kazimiru Malevičovi"
+  "about": "Kazimiru Malevičovi",
+  "irony_prompt": "A single plain black square fills the frame hanging alone on a vast white gallery wall, visitors staring at it in hushed contemplation from a respectful distance. Smaller and subordinate: a velvet rope; a museum guard standing quietly; a shaft of light falling across the floor. MOOD: minimalist, thought-provoking."
  },
  {
   "id": "ua-q-bandura",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bandura",
   "source_card": "ua-umeni-bandura",
   "image_prompt": "Fotorealistický snímek ukrajinského hráče na banduru, velký hruškovitý nástroj s mnoha strunami, tradiční oblečení, jeviště, teplé světlo, 16:9",
-  "about": "banduře"
+  "about": "banduře",
+  "irony_prompt": "A large traditional stringed instrument fills the frame with dozens upon dozens of strings fanning out from its body, a musician's hands barely able to reach across them all. Smaller and subordinate: sheet music, its pages left blank, on a stand nearby; a spare set of strings coiled beside it; a spotlight on stage. MOOD: intricate, musical."
  },
  {
   "id": "ua-q-andrij-sevcenko",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Andriy_Shevchenko",
   "source_card": "ua-sport-andrij-sevcenko",
   "image_prompt": "Fotorealistický snímek fotbalisty ve žlutomodrém ukrajinském dresu na stadionu, akční záběr při střele, večerní osvětlení, 16:9",
-  "about": "Andriji Ševčenkovi"
+  "about": "Andriji Ševčenkovi",
+  "irony_prompt": "A golden trophy shaped like a small sphere fills the frame held aloft triumphantly above a football pitch under floodlights, teammates cheering around the raised arm. Smaller and subordinate: a national flag draped over a shoulder; scattered confetti; a photographer's flash glinting. MOOD: triumphant, celebratory."
  },
  {
   "id": "ua-q-klickove",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vitali_Klitschko",
   "source_card": "ua-sport-klickove",
   "image_prompt": "Fotorealistický snímek dvou vysokých boxerů v těžké váze v ringu při vážení, ukrajinské vlajky v pozadí, ostré světlo reflektorů, 16:9",
-  "about": "bratrech Kličkových"
+  "about": "bratrech Kličkových",
+  "irony_prompt": "Two matching championship belts fill the frame hanging side by side on a wall, their gleaming buckles catching the light equally, a single pair of boxing gloves resting on a shelf beneath them. Smaller and subordinate: a training gym glimpsed through a doorway; a punching bag swaying gently; a stopwatch on a bench. MOOD: triumphant, powerful, not graphic."
  },
  {
   "id": "ua-q-bubka",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sergey_Bubka",
   "source_card": "ua-sport-bubka",
   "image_prompt": "Fotorealistický snímek atleta při skoku o tyči přes vysokou laťku na stadionu, dramatický okamžik ve vzduchu, večerní osvětlení, 16:9",
-  "about": "Serhiji Bubkovi"
+  "about": "Serhiji Bubkovi",
+  "irony_prompt": "A pole vaulter's silhouette fills the frame soaring impossibly high over a bar set far above any stadium marking, clouds drifting past at that height. Smaller and subordinate: a stunned crowd looking straight up; a discarded pole lying on the mat; officials checking their measuring tape. MOOD: awe-inspiring, historic."
  },
  {
   "id": "ua-q-cyrilice",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ukrainian_alphabet",
   "source_card": "ua-jazyk-cyrilice",
   "image_prompt": "Fotorealistický typografický snímek zvětšených ukrajinských cyrilických písmen na starém psacím stroji, detail kláves, 16:9",
-  "about": "ukrajinské cyrilici"
+  "about": "ukrajinské cyrilici",
+  "irony_prompt": "A tall bookshelf fills the frame with two nearly identical rows of ornate stone tablets carved in dense unreadable script, one row noticeably longer than the other by a few extra tablets at the end. Smaller and subordinate: a scholar comparing the two rows with a magnifying glass; scattered notes; a candle burning low. MOOD: scholarly, comparative."
  },
  {
   "id": "ua-q-surzyk",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Surzhyk",
   "source_card": "ua-jazyk-surzyk",
   "image_prompt": "Fotorealistický snímek mapy Ukrajiny s barevně vyznačenými jazykovými oblastmi, ilustrativní styl, 16:9",
-  "about": "suržyku"
+  "about": "suržyku",
+  "irony_prompt": "A single loaf of bread fills the frame baked from two different colors of dough swirled together in one rustic countryside kitchen, neither fully separated nor fully blended. Smaller and subordinate: two flour sacks side by side; a wooden kneading board; a farmhouse window with fields beyond. MOOD: rustic, blended."
  },
  {
   "id": "ua-q-hymna",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/National_anthem_of_Ukraine",
   "source_card": "ua-jazyk-hymna",
   "image_prompt": "Fotorealistický snímek staré rukopisné básně s ukrajinským textem na zažloutlém papíře, brk vedle ní, teplé světlo, 16:9",
-  "about": "ukrajinské hymně"
+  "about": "ukrajinské hymně",
+  "irony_prompt": "A yellowed handwritten music manuscript fills the frame lying in a dusty drawer for what looks like generations, a fresh official stamp seal pressed onto it at last, breaking a thick layer of dust. Smaller and subordinate: a conductor's baton resting nearby; an old gramophone; sunlight breaking through a window. MOOD: quietly triumphant, patient, not graphic."
  },
  {
   "id": "ua-q-borsc",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Borscht",
   "source_card": "ua-jidlo-borsc",
   "image_prompt": "Fotorealistický snímek talíře syté červené boršče se zakysanou smetanou a petrželkou na dřevěném stole, teplé domácí světlo, 16:9",
-  "about": "boršči"
+  "about": "boršči",
+  "irony_prompt": "A steaming bowl of deep red soup fills the frame placed carefully under a glass protective dome like a museum artifact, a small reverent spotlight shining down on it. Smaller and subordinate: a wooden spoon resting nearby; a dollop of sour cream on top; a sprig of dill. MOOD: proud, protective."
  },
  {
   "id": "ua-q-vareniky",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Varenyky",
   "source_card": "ua-jidlo-vareniky",
   "image_prompt": "Fotorealistický snímek talíře ukrajinských vareniků se zakysanou smetanou a osmaženou cibulkou, teplé domácí světlo, 16:9",
-  "about": "varenikách"
+  "about": "varenikách",
+  "irony_prompt": "A translucently thin dumpling fills the frame stuffed generously with mashed potato visible through its delicate skin, steam curling up from a full plate. Smaller and subordinate: a dollop of sour cream nearby; fried onions scattered on top; a fork resting on the plate's edge. MOOD: cozy, homely."
  },
  {
   "id": "ua-q-salo",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Salo_(food)",
   "source_card": "ua-jidlo-salo",
   "image_prompt": "Fotorealistický snímek nakrájených plátků bílého sádla salo na dřevěném prkénku s žitným chlebem, česnekem a paprikou, přirozené světlo, 16:9",
-  "about": "salu"
+  "about": "salu",
+  "irony_prompt": "A thick slab of pale cured pork fat fills the frame resting on a wooden board, thin translucent slices already cut and glistening beside it. Smaller and subordinate: a clove of garlic and rye bread nearby; a sharp knife; coarse salt sprinkled on the board. MOOD: rustic, hearty."
  },
  {
   "id": "ua-q-kyjevska-rus",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kievan_Rus%27",
   "source_card": "ua-historie-kyjevska-rus",
   "image_prompt": "Fotorealistický snímek rekonstruovaného dřevěného opevněného hradiště na břehu řeky, raný středověk, ranní mlha, bez lidí, 16:9",
-  "about": "Kyjevské Rusi"
+  "about": "Kyjevské Rusi",
+  "irony_prompt": "An ancient family tree carved into stone fills the frame with one thick root splitting cleanly into three equally sturdy branches growing upward and outward. Smaller and subordinate: moss growing over the old carving; a bird's nest in one branch; ivy climbing the stone. MOOD: ancient, foundational, not graphic."
  },
  {
   "id": "ua-q-holodomor",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Holodomor",
   "source_card": "ua-historie-holodomor",
   "image_prompt": "Fotorealistický snímek pamětní svíčky a obilných klasů na památníku Holodomoru v Kyjevě, tlumené večerní světlo, 16:9",
-  "about": "Holodomoru"
+  "about": "Holodomoru",
+  "irony_prompt": "A single simple candle fills the frame burning steadily on a windowsill overlooking an empty golden wheat field stretching to the horizon, its flame the only light in the quiet dusk. Smaller and subordinate: a handful of wheat grains resting on the sill; a folded embroidered cloth; distant birds flying home. MOOD: solemn, memorial, deeply respectful, not graphic."
  },
  {
   "id": "ua-q-nezavislost-1991",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine",
   "source_card": "ua-historie-nezavislost-1991",
   "image_prompt": "Fotorealistický snímek volební místnosti s ukrajinskou vlajkou v roce 1991, lidé vhazující hlasovací lístky, denní světlo, 16:9",
-  "about": "vyhlášení nezávislosti Ukrajiny"
+  "about": "vyhlášení nezávislosti Ukrajiny",
+  "irony_prompt": "A blue and yellow flag fills the frame being raised slowly up a tall pole against a clear morning sky, a crowd below reaching their hands up in celebration. Smaller and subordinate: church bells visible ringing in a tower; scattered flowers thrown in celebration; doves taking flight. MOOD: hopeful, jubilant, not graphic."
  },
  {
   "id": "ua-k-slunecnice",
@@ -611,7 +638,8 @@
   "quip_correct": "To bylo hned vidět! Slunečnice si celý den natáčí hlavu za sluncem — národní květina, co se nikdy neschovává ve stínu.",
   "quip_wrong": "Skoro, ale ne tak úplně — růže ani chrpa netočí hlavou za sluncem, hledej žlutou květinu, co to umí.",
   "explanation": "Ukraina je jedním z největších světových výrobců slunečnicového oleje. Slunečnice je jejím národním symbolem a zdobí lidové kroje i folklórní vzory. Každá slunečnice obsahuje až 2 000 semínek.",
-  "about": "slunečnici"
+  "about": "slunečnici",
+  "irony_prompt": "A giant sunflower fills the frame towering over a delighted child, its enormous face turned to follow the sun. Smaller and subordinate: rows of sunflowers stretching to the horizon; bees buzzing around the petals; a basket of sunflower seeds nearby. MOOD: cheerful, bright, sunny."
  },
  {
   "id": "ua-k-vlajka",
@@ -631,7 +659,8 @@
   "quip_correct": "Bravo! Dva pruhy, jeden pohled — nebe nahoře, zralé pole dole, přesně jak to vidí sedlák z kraje pole.",
   "quip_wrong": "Chybička se vloudila — moře, led, písek, nic z toho na vlajce není. Je tam nebe nad pšeničným polem.",
   "explanation": "Modrá barva symbolizuje nebe a řeky, žlutá zlatou pšenici na polích. Ukraina patří k největším vývozcům pšenice na světě a říkají ji obilnice Evropy. Nynější dvoubarevná vlajka pochází z 19. století.",
-  "about": "ukrajinské vlajce"
+  "about": "ukrajinské vlajce",
+  "irony_prompt": "A flag with a blue top half and yellow bottom half fills the frame flapping proudly, blending seamlessly into a real sky above and a real wheat field below it. Smaller and subordinate: a delighted child pointing at the matching colors; birds flying past; wheat swaying in the breeze. MOOD: cheerful, sunny."
  },
  {
   "id": "ua-k-hopak",
@@ -652,7 +681,8 @@
   "quip_wrong": "Zkus to jinak – juchání, pozdrav ani bouchnutí to nejsou. Tanečníci při skoku křičí hop.",
   "explanation": "Tenhle divoký tanec se jmenuje hopak a skoky, dřepy i přemety z něj dělají jeden z nejakrobatičtějších tanců na světě.",
   "about": "ukrajinském tanci hopak",
-  "image_prompt": "A painterly watercolor gouache illustration of ukrajinském tanci hopak, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of ukrajinském tanci hopak, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A dancer fills the frame leaping high in mid-air during a wild folk dance, mouth wide open shouting joyfully, baggy trousers billowing. Smaller and subordinate: a delighted child trying to copy the jump; musicians playing nearby; onlookers clapping in rhythm. MOOD: cheerful, energetic, sunny."
  },
  {
   "id": "ua-k-pampusky",
@@ -673,7 +703,8 @@
   "quip_wrong": "Zkus to jinak – med, kečup ani citron se sem nehodí. Potírají se česnekovým olejem s petrželkou.",
   "explanation": "Tyhle buchtičky se ukrajinsky jmenují pampušky a bez nich by talíř s boršči vypadal nějak prázdně.",
   "about": "pampuškách",
-  "image_prompt": "A painterly watercolor gouache illustration of pampuškách, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of pampuškách, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A tray of small round fluffy buns fills the frame being brushed generously with garlicky green oil, steam rising and glistening. Smaller and subordinate: a delighted child leaning in to sniff them; a bowl of borscht waiting nearby; a pastry brush resting on the tray's edge. MOOD: cheerful, cozy, sunny."
  },
  {
   "id": "ua-k-odesa-schody",
@@ -694,7 +725,8 @@
   "quip_wrong": "Zkus to jinak – žádný labyrint, vodopád ani duha. Ze shora to vypadá jako obyčejná rovná ulice.",
   "explanation": "Tomuhle schodišti se říká Potěmkinovy schody a vede od moře až do parku vysoko nad přístavem.",
   "about": "slavném schodišti v Oděse",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- grand wide stone staircase descending toward a harbor with ships, seagulls, morning light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- grand wide stone staircase descending toward a harbor with ships, seagulls, morning light",
+  "irony_prompt": "A grand stone stairway fills the frame descending toward the sea, its steps widening so cleverly toward the bottom that a delighted child looking down from the top sees what looks like one smooth straight street instead of stairs. Smaller and subordinate: gulls flying over the harbor below; a lamppost at the top landing; tourists posing for photos. MOOD: cheerful, clever, sunny."
  },
  {
   "id": "ua-k-arsenalna",
@@ -715,7 +747,8 @@
   "quip_wrong": "Ouha, ne tak úplně — sklo ani noční jízdy bys u Arsenalne nehledal správně, sjeď mnohem hlouběji, tam se skrývá ten rekord.",
   "explanation": "Stanice leží přes sto metrů pod zemí kvůli prudkému svahu nad řekou Dněpr, jízda na eskalátoru trvá skoro pět minut — nejdéle ze všech stanic metra na světě.",
   "about": "stanici metra Arsenalna",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- extremely long steep escalator tunnel deep underground, warm lighting"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- extremely long steep escalator tunnel deep underground, warm lighting",
+  "irony_prompt": "A long escalator fills the frame descending so deep into the earth that the bottom disappears into a tiny glowing point far below, a delighted child looking down in wonder. Smaller and subordinate: bright lights lining the tunnel walls; other passengers riding alongside; a train arriving far below. MOOD: cheerful, awe-struck."
  },
  {
   "id": "ua-t-kyjevsky-rizek",
@@ -736,7 +769,8 @@
   "quip_wrong": "Vedle vysvětlením — jméno pokrmu vede jinam, ne k tomuhle.",
   "explanation": "Někteří kulinární historici tvrdí, že podobný recept vznikl už dřív ve francouzské kuchyni a na Ukrajinu i do Ruska se dostal přes carské kuchaře, jméno kyjevský se ustálilo až ve 20. století.",
   "about": "kyjevském řízku",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- golden breaded chicken cutlet cut open with butter spilling out, rustic wooden table"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- golden breaded chicken cutlet cut open with butter spilling out, rustic wooden table",
+  "irony_prompt": "A golden breaded chicken cutlet fills the frame sliced open dramatically, a jet of melted garlic butter spraying out mid-cut. Smaller and subordinate: a fork catching the spray; mashed potatoes on the side; a napkin tucked into a collar. MOOD: playful, indulgent."
  },
  {
   "id": "ua-t-eurovize",
@@ -757,7 +791,8 @@
   "quip_wrong": "Skoro, ale ne tolikrát — Ukrajina na Eurovizi vyhrávala, jen ne tolikrát.",
   "explanation": "První výhru přinesla Ruslana v roce 2004, druhou Jamala v roce 2016 s písní o deportaci krymských Tatarů a třetí Kalush Orchestra v roce 2022.",
   "about": "ukrajinských výhrách na Eurovizi",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- colorful concert stage with dramatic lights and a singer silhouette, festive atmosphere"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- colorful concert stage with dramatic lights and a singer silhouette, festive atmosphere",
+  "irony_prompt": "Three identical glass trophies fill the frame lined up on a stage, confetti still settling around them from the most recent win. Smaller and subordinate: a microphone stand nearby; spotlights sweeping the stage; a cheering crowd blurred in the background. MOOD: triumphant, celebratory."
  },
  {
   "id": "ua-t-cernobyl-priroda",
@@ -778,7 +813,8 @@
   "quip_wrong": "Mimo scénářem — příroda tam žije bohatě, jen ne podle tohohle.",
   "explanation": "Vědci v černobylské zóně dokumentují stabilní populace losů a bobrů i vzácných koní Převalského, kteří sem byli v 90. letech vysazeni jako experiment.",
   "about": "přírodě v černobylské zóně",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- overgrown forest reclaiming an abandoned building, wolf silhouette in tall grass, misty light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- overgrown forest reclaiming an abandoned building, wolf silhouette in tall grass, misty light",
+  "irony_prompt": "A pack of wild horses fills the frame galloping freely through overgrown streets between abandoned buildings, wolves and lynxes glimpsed resting calmly nearby, nature completely reclaiming the empty town. Smaller and subordinate: trees growing through cracked pavement; a rusted swing set overtaken by vines; birds nesting in a window frame. MOOD: wild, quietly hopeful, not graphic."
  },
  {
   "id": "ua-t-bukovel",
@@ -799,7 +835,8 @@
   "quip_wrong": "Blízko místem, mimo účelem — v horách to je, ale s lyžováním to nemá nic společného.",
   "explanation": "Bukovel vznikl až po roce 2000 a rychle se stal nejnavštěvovanějším lyžařským střediskem na Ukrajině, s desítkami sjezdovek a moderními vleky.",
   "about": "Bukovelu",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- snow-covered ski slopes in forested mountains, ski lift cables, winter sunlight"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- snow-covered ski slopes in forested mountains, ski lift cables, winter sunlight",
+  "irony_prompt": "A bustling ski slope fills the frame packed with skiers of every skill level weaving between each other under strings of festive lights. Smaller and subordinate: a chairlift climbing the mountain; a cozy chalet with smoke rising; snow machines humming nearby. MOOD: lively, festive."
  },
  {
   "id": "ua-t-euro2012",
@@ -820,7 +857,8 @@
   "quip_wrong": "Mimo druhem — spolupráce to byla, jen úplně jiného druhu.",
   "explanation": "Finále turnaje se hrálo v Kyjevě, kde Španělsko porazilo Itálii 4:0, a pro Ukrajinu šlo o největší sportovní akci v její samostatné historii.",
   "about": "Euru 2012",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- packed football stadium at dusk with floodlights, national flags waving"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- packed football stadium at dusk with floodlights, national flags waving",
+  "irony_prompt": "A football stadium fills the frame packed with cheering fans waving two different national flags side by side in equal numbers, floodlights blazing above. Smaller and subordinate: a match ball resting on the center circle; broadcast cameras positioned around the pitch; confetti cannons ready. MOOD: festive, unifying."
  },
  {
   "id": "ua-a-katakomby-odesa",
@@ -841,7 +879,8 @@
   "quip_wrong": "Mimo městem — podzemní bludiště existuje, jen jinde.",
   "explanation": "Chodby vznikly těžbou vápence na stavbu města, za druhé světové války se v nich měsíce ukrývali partyzáni bojující proti okupaci.",
   "about": "oděských katakombách",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- dark limestone tunnel underground with rough carved walls, single lantern light"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- dark limestone tunnel underground with rough carved walls, single lantern light",
+  "irony_prompt": "A vast underground tunnel network fills the frame stretching endlessly in every direction, a small lantern-carrying explorer looking tiny against the maze's scale. Smaller and subordinate: old wooden support beams; a discarded miner's pick; cool mist drifting through the passage. MOOD: mysterious, vast, not graphic."
  },
  {
   "id": "ua-a-lavra-mumie",
@@ -862,7 +901,8 @@
   "quip_wrong": "Mimo povahou — poklad tam je, jen úplně jiné povahy.",
   "explanation": "Lavra byla založena v 11. století a její jeskynní chodby jsou dodnes aktivní součástí kláštera, kam míří poutníci z celé pravoslavné církve.",
   "about": "Kyjevsko-pečerské lavře",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- dim candlelit underground monastery cave corridor, ancient stone walls, golden icon glow"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- dim candlelit underground monastery cave corridor, ancient stone walls, golden icon glow",
+  "irony_prompt": "A dim candlelit cave passage fills the frame lined with small alcoves, each holding a simple cloth-draped resting place, pilgrims kneeling respectfully at a distance with heads bowed. Smaller and subordinate: icons hanging on the walls; incense smoke curling upward; a monk lighting a candle nearby. MOOD: solemn, reverent, deeply respectful, not graphic."
  },
  {
   "id": "ua-a-grammarly",
@@ -883,7 +923,8 @@
   "quip_wrong": "Mimo souvislostí — souvislost s Ukrajinou existuje, akorát úplně jiná.",
   "explanation": "Grammarly založili v roce 2009 Alex Ševčenko, Max Lytvyn a Dmytro Lider, dnes patří k nejúspěšnějším softwarovým firmám založeným Ukrajinci.",
   "about": "aplikaci Grammarly",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- laptop glowing softly on a desk with a coffee cup, cozy home office"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- laptop glowing softly on a desk with a coffee cup, cozy home office",
+  "irony_prompt": "A glowing green checkmark fills the frame hovering triumphantly over a tangled red squiggly line, straightening it into a single clean confident stroke below. Smaller and subordinate: a coffee cup steaming nearby; a laptop keyboard; a city skyline glimpsed through a window. MOOD: clever, quietly proud."
  },
  {
   "id": "ua-k-bily-cap",
@@ -905,7 +946,8 @@
   "explanation": "V ukrajinských vesnicích lidé čápům někdy na sloupy přidávají speciální dřevěná kolečka, aby se jim hnízdo stavělo snáz a nepadalo dolů.",
   "source_url": "https://en.wikipedia.org/wiki/White_stork",
   "image_prompt": "Fotorealistický snímek čápa bílého stojícího ve velkém hnízdě na vrcholu komína ukrajinského venkovského domu, jasná obloha, 16:9",
-  "about": "čápu bílém"
+  "about": "čápu bílém",
+  "irony_prompt": "A large white stork with a long red beak fills the frame building a nest atop a chimney, a delighted child waving up happily from below. Smaller and subordinate: the stork clattering its beak; village rooftops stretching into the distance; a lucky four-leaf clover growing nearby. MOOD: cheerful, charming, sunny."
  },
  {
   "id": "ua-k-cibulova-kopule",
@@ -927,7 +969,8 @@
   "explanation": "Cibulovitý tvar kopule pomáhá sněhu snadno sklouznout dolů, takže se v zimě na střeše nehromadí.",
   "source_url": "https://en.wikipedia.org/wiki/Onion_dome",
   "image_prompt": "Fotorealistický snímek zlatých cibulovitých kopulí pravoslavného kostela na Ukrajině na pozadí jasně modré oblohy, 16:9",
-  "about": "cibulových kopulích ukrajinských kostelů"
+  "about": "cibulových kopulích ukrajinských kostelů",
+  "irony_prompt": "A grand church fills the frame topped with a shiny golden dome shaped exactly like a giant onion, a delighted child looking up and pointing at the resemblance. Smaller and subordinate: smaller matching domes nearby; birds circling the towers; a basket of real onions held by a passerby for comparison. MOOD: cheerful, whimsical, sunny."
  },
  {
   "id": "ua-k-chersonske-melouny",
@@ -949,7 +992,8 @@
   "explanation": "Tohle jihoukrajinské město se jmenuje Cherson a jeho melouny se sklízí hlavně v létě, kdy je největší vedro.",
   "source_url": "https://en.wikipedia.org/wiki/Kherson",
   "image_prompt": "Fotorealistický snímek pole s velkými zelenými melouny pod slunečnou oblohou poblíž ukrajinského města Cherson, 16:9",
-  "about": "chersonských melounech"
+  "about": "chersonských melounech",
+  "irony_prompt": "A giant pile of huge striped watermelons fills the frame stacked in a town square, a delighted child hugging one nearly as big as themselves. Smaller and subordinate: bunting strung between stalls; a brass band playing nearby; juice dripping from a freshly cut slice. MOOD: cheerful, festive, sunny."
  },
  {
   "id": "ua-t-didukh-svazek",
@@ -971,7 +1015,8 @@
   "explanation": "Po svátcích se didukh tradičně spálil na zahradě nebo na poli, aby půda příští rok dobře rodila.",
   "source_url": "https://en.wikipedia.org/wiki/Didukh",
   "image_prompt": "Fotorealistický snímek slavnostně ozdobeného svazku obilných klasů (didukh) stojícího na štědrovečerním stole v ukrajinské chalupě, kolem hoří svíčky, 16:9",
-  "about": "diduchu"
+  "about": "diduchu",
+  "irony_prompt": "A tall bundle of golden wheat stalks fills the frame standing proudly in the place of honor in a cozy cottage corner, tied with a bright ribbon. Smaller and subordinate: a candle burning nearby; a woven tablecloth; frost patterns on the window behind. MOOD: warm, traditional, cozy."
  },
  {
   "id": "ua-t-tryzub-znak",
@@ -993,7 +1038,8 @@
   "explanation": "Tryzub používali jako svou osobní pečeť už kyjevští knížata před více než tisíci lety.",
   "source_url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine",
   "image_prompt": "Fotorealistický snímek detailního záběru na ukrajinskou minci se symbolem tryzubu, mince leží na dřevěném stole, 16:9",
-  "about": "tryzubu"
+  "about": "tryzubu",
+  "irony_prompt": "A golden trident symbol fills the frame mounted proudly above a grand entrance gate, its three prongs catching the afternoon light. Smaller and subordinate: a flag fluttering beside it; pigeons perched on the gate; a coin lying nearby with a matching shape. MOOD: proud, iconic."
  },
  {
   "id": "ua-k-pysanky-vejce",
@@ -1014,6 +1060,7 @@
   "quip_wrong": "Perník se dá sníst a panenka vydrží pád. Tohle je křehčí a maluje se to voskem.",
   "explanation": "Vzor se kreslí horkým voskem a vejce se barví postupně od nejsvětlejší barvy k nejtmavší. Vosk se nakonec sundá a vzor se objeví ve všech barvách naráz.",
   "about": "pysankách",
-  "more_fact": "Každý kraj má vlastní vzory a barvy, takže znalec pozná podle vajíčka, odkud pochází. Některé vzory se v rodinách předávají z babičky na vnučku."
+  "more_fact": "Každý kraj má vlastní vzory a barvy, takže znalec pozná podle vajíčka, odkud pochází. Některé vzory se v rodinách předávají z babičky na vnučku.",
+  "irony_prompt": "A brightly patterned decorated egg fills the frame held carefully in a delighted child's hands, a thin stream of melted wax being traced onto a fresh egg beside it. Smaller and subordinate: small pots of colorful dye; a lit candle for the wax; a basket of finished eggs nearby. MOOD: cheerful, delicate, sunny."
  }
 ]
