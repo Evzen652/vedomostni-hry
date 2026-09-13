@@ -19,7 +19,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Star%C3%A9_M%C4%9Bsto_(Jeruzal%C3%A9m)",
   "source_card": "il-mista-stare-mesto-jeruzalema",
   "image_prompt": "Fotorealistický širokoúhlý snímek kamenných hradeb a střech jeruzalémského Starého Města za zlaté hodiny, teplé světlo, bez lidí, 16:9",
-  "about": "Starém Městě Jeruzaléma"
+  "about": "Starém Městě Jeruzaléma",
+  "irony_prompt": "A compact walled old town of pale limestone fills the frame seen from above, two narrow lanes crossing it and dividing the whole warren neatly into four distinct districts. Smaller and subordinate: four different rooflines, one in each quarter; a single gate in the wall; laundry strung across an alley. MOOD: ancient, layered, peaceful."
  },
  {
   "id": "il-q-masada",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Masada",
   "source_card": "il-mista-masada",
   "image_prompt": "Fotorealistický širokoúhlý snímek ruin pevnosti Masada na poušťové plošině nad Mrtvým mořem, dramatické ranní světlo, bez lidí, 16:9",
-  "about": "pevnosti Masada"
+  "about": "pevnosti Masada",
+  "irony_prompt": "A sheer flat-topped desert mesa fills the frame with the ruins of a luxurious terraced palace clinging to its northern cliff edge, hundreds of metres above the plain. Smaller and subordinate: a mosaic floor and a bathhouse among the ruins; a tiny winding snake path up the rock; the pale haze of a salt sea beyond. MOOD: audacious, sun-bleached."
  },
  {
   "id": "il-q-caesarea",
@@ -63,7 +65,8 @@
   "source_url": "https://www.romanports.org/en/the-ports/115-caesarea-maritima.html",
   "source_card": "il-mista-caesarea",
   "image_prompt": "Fotorealistický širokoúhlý snímek ruin starověkého římského přístavu Caesarea Maritima u Středozemního moře, západ slunce, bez lidí, 16:9",
-  "about": "Caesarei"
+  "about": "Caesarei",
+  "irony_prompt": "A long curving stone breakwater fills the frame reaching far out into open sea from a perfectly straight, harbourless coastline, enclosing a calm basin full of ships. Smaller and subordinate: workmen lowering an enormous block of concrete into the water; waves smashing on the outer side; a lighthouse tower at the tip. MOOD: engineered, improbable."
  },
  {
   "id": "il-q-mrtve-more",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Dead_Sea",
   "source_card": "il-priroda-mrtve-more",
   "image_prompt": "Fotorealistický širokoúhlý snímek Mrtvého moře se solnými útvary podél pobřeží a horami v pozadí, zlaté světlo, bez lidí, 16:9",
-  "about": "Mrtvém moři"
+  "about": "Mrtvém moři",
+  "irony_prompt": "A shore of white salt-crusted rocks fills the frame beside flat turquoise water, the land dropping away to the lowest place there is. Smaller and subordinate: a hiker checking an altimeter and squinting at it in disbelief; a marker post standing far up a distant cliff showing where sea level would be; shimmering heat haze. MOOD: surreal, deep."
  },
  {
   "id": "il-q-negev",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Negev",
   "source_card": "il-priroda-negev",
   "image_prompt": "Fotorealistický širokoúhlý snímek suché pouštní krajiny Negev se skalnatými kopci a řídkou vegetací, zlatá hodina, bez lidí, 16:9",
-  "about": "poušti Negev"
+  "about": "poušti Negev",
+  "irony_prompt": "A vast rippling desert of pale rock and sand fills the frame stretching to the horizon under a hard blue sky. Smaller and subordinate: a thin green strip of orchards squeezed along one edge; a solitary acacia; a camel and rider crossing a dry wadi. MOOD: immense, arid."
  },
  {
   "id": "il-q-machtes-ramon",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Makhtesh_Ramon",
   "source_card": "il-priroda-machtes-ramon",
   "image_prompt": "Fotorealistický letecký snímek kráteru Machteš Ramon v poušti Negev, barevné vrstvy hornin, denní světlo, 16:9",
-  "about": "kráteru Machteš Ramon"
+  "about": "kráteru Machteš Ramon",
+  "irony_prompt": "An enormous elongated crater fills the frame, its layered sides worn into soft pastel bands of rock and its floor strewn with weathered hills. Smaller and subordinate: wind and a trickle of water visibly scouring the softer layers away; a meteorite sitting uselessly on the rim, unused; a dormant volcano cone far off, equally uninvolved. MOOD: geological, patient, wryly comic."
  },
  {
   "id": "il-q-chaim-weizmann",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chaim_Weizmann",
   "source_card": "il-lide-chaim-weizmann",
   "image_prompt": "Fotorealistický portrét staršího státníka ve formálním obleku, studiové osvětlení počátku 20. století, 16:9",
-  "about": "Chaimu Weizmannovi"
+  "about": "Chaimu Weizmannovi",
+  "irony_prompt": "A worn white laboratory coat fills the frame hanging on a peg beside a crisp formal dark suit on the very next peg. Smaller and subordinate: racks of glass flasks and a bubbling retort on one side; a grand carved chair and a flag pole on the other; a pair of spectacles on the bench between them. MOOD: unlikely career, dignified."
  },
  {
   "id": "il-q-ada-yonath",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ada_Yonath",
   "source_card": "il-lide-ada-yonath",
   "image_prompt": "Fotorealistický portrét vědkyně v moderní chemické laboratoři, bílý plášť, soustředěný výraz, denní světlo, 16:9",
-  "about": "Adě Yonath"
+  "about": "Adě Yonath",
+  "irony_prompt": "An enormous intricate molecular model of interlocking spirals and ribbons fills the frame, built from coloured rods and spheres. Smaller and subordinate: a scientist seen from behind, tiny beside it, reaching up to adjust one node; a frost-covered sample flask on ice; a heavy gold medal lying on a desk. MOOD: intricate, triumphant."
  },
  {
   "id": "il-q-eliezer-ben-jehuda",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Eliezer_Ben-Yehuda",
   "source_card": "il-lide-eliezer-ben-jehuda",
   "image_prompt": "Fotorealistický portrét učence 19. století s vousy píšícího u dřevěného stolu plného papírů a knih, teplé světlo lampy, 16:9",
-  "about": "Eliezeru Ben-Jehudovi"
+  "about": "Eliezeru Ben-Jehudovi",
+  "irony_prompt": "A father fills the frame at the family dinner table with one finger firmly raised, while several coloured ribbons of sound stream out of the window and away into the night. Smaller and subordinate: a child looking baffled over a bowl of soup; a single remaining ribbon curling happily around the room; a lamp and shuttered window. MOOD: stubborn, domestic, historic."
  },
  {
   "id": "il-q-sabat",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Shabbat",
   "source_card": "il-kultura-sabat",
   "image_prompt": "Fotorealistický snímek pátečního večerního stolu na šabat s hořícími svíčkami, pletenou chalou a vínem, teplé vnitřní světlo, 16:9",
-  "about": "šabatu"
+  "about": "šabatu",
+  "irony_prompt": "Two candle flames fill the frame burning on a white tablecloth as the last orange light drains from a window behind them. Smaller and subordinate: three small stars appearing in the darkening sky outside; a braided loaf under a cloth; hands lowered from covering the eyes. MOOD: hushed, warm, ceremonial."
  },
  {
   "id": "il-q-kibuc",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kibbutz",
   "source_card": "il-kultura-kibuc",
   "image_prompt": "Fotorealistický širokoúhlý snímek zeleného zemědělského kibucu s poli a jednoduchými domy u jezera, denní světlo, 16:9",
-  "about": "kibucu"
+  "about": "kibucu",
+  "irony_prompt": "A long communal dining hall fills the frame with everyone eating at shared tables from shared platters, no individual portions anywhere. Smaller and subordinate: a rack of identical work boots by the door with no names on them; a tractor being handed over from one worker to the next; children playing together outside the window. MOOD: collective, industrious."
  },
  {
   "id": "il-q-chanuka",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hanukkah",
   "source_card": "il-kultura-chanuka",
   "image_prompt": "Fotorealistický snímek rozsvíceného devítiramenného svícnu chanukija se svícemi zářícími v tmavé místnosti, teplé světlo, 16:9",
-  "about": "svátku Chanuka"
+  "about": "svátku Chanuka",
+  "irony_prompt": "A branched candelabrum fills the frame with eight small flames burning in a row and one raised helper flame above them. Smaller and subordinate: a tiny clay oil jug tipped on its side, long since empty, still somehow dripping; a spinning four-sided top on the floor; frying pan with golden pancakes. MOOD: miraculous, cosy."
  },
  {
   "id": "il-q-bile-mesto-tel-avivu",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/White_City_(Tel_Aviv)",
   "source_card": "il-umeni-bile-mesto-tel-avivu",
   "image_prompt": "Fotorealistický snímek bílých modernistických budov ve stylu bauhaus na stromořadí v Tel Avivu, jasné denní světlo, 16:9",
-  "about": "Bílém městě Tel Avivu"
+  "about": "Bílém městě Tel Avivu",
+  "irony_prompt": "A street of crisp white buildings fills the frame, every one with curved corners, long horizontal balconies and ribbon windows, repeating away into the distance. Smaller and subordinate: a resident counting on their fingers and giving up; a ficus tree throwing shade on a white wall; a bicycle leaning on a rounded corner. MOOD: clean, rhythmic, endless."
  },
  {
   "id": "il-q-klezmer",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Klezmer",
   "source_card": "il-umeni-klezmer",
   "image_prompt": "Fotorealistický snímek klezmerového hudebníka hrajícího na klarinet na venkovním festivalu v Izraeli, teplé večerní světlo, 16:9",
-  "about": "hudbě klezmer"
+  "about": "hudbě klezmer",
+  "irony_prompt": "A clarinet fills the frame tilted upward mid-wail, its player's cheeks blown out, sound visibly bending in loops around it. Smaller and subordinate: a fiddler and a double bass leaning in; a circle of dancers with linked arms; snow on the roofs of a small wooden town behind. MOOD: soaring, bittersweet, joyous."
  },
  {
   "id": "il-q-batsheva",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Batsheva_Dance_Company",
   "source_card": "il-umeni-batsheva",
   "image_prompt": "Fotorealistický snímek moderních tanečníků v pohybu na holé scéně, dramatické scénické osvětlení, 16:9",
-  "about": "souboru Batševa a stylu Gaga"
+  "about": "souboru Batševa a stylu Gaga",
+  "irony_prompt": "A dancer fills the frame caught in a loose, boneless, entirely un-posed movement, spine curling and fingers trailing, nothing held rigid. Smaller and subordinate: a whole studio of dancers each moving differently; a mirror-less bare wall; a choreographer sitting cross-legged watching. MOOD: fluid, instinctive."
  },
  {
   "id": "il-q-makabiada",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maccabiah_Games",
   "source_card": "il-sport-makabiada",
   "image_prompt": "Fotorealistický širokoúhlý snímek atletického stadionu plného mezinárodních vlajek během zahajovacího ceremoniálu, denní světlo, 16:9",
-  "about": "Makabiádě"
+  "about": "Makabiádě",
+  "irony_prompt": "A burning torch fills the frame held aloft by a runner entering a packed stadium, the flame streaming back. Smaller and subordinate: athletes from many countries filing in behind; five running tracks converging; a stadium bowl of waving spectators. MOOD: ceremonial, global."
  },
  {
   "id": "il-q-gal-fridman",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gal_Fridman",
   "source_card": "il-sport-gal-fridman",
   "image_prompt": "Fotorealistický snímek windsurfaře závodícího na otevřeném moři pod jasným sluncem, 16:9",
-  "about": "Galu Fridmanovi"
+  "about": "Galu Fridmanovi",
+  "irony_prompt": "A windsurfer fills the frame leaning right out over the water with the sail hauled flat, spray flying off the board. Smaller and subordinate: a single gold medal glinting on the beach towel ashore; a row of other boards left far behind on the water; blue Mediterranean chop. MOOD: exhilarating, first-of-its-kind."
  },
  {
   "id": "il-q-maccabi-tel-aviv",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maccabi_Tel_Aviv_B.C.",
   "source_card": "il-sport-maccabi-tel-aviv",
   "image_prompt": "Fotorealistický snímek zaplněné vnitřní basketbalové arény během profesionálního zápasu, dramatické osvětlení arény, 16:9",
-  "about": "klubu Maccabi Tel Aviv"
+  "about": "klubu Maccabi Tel Aviv",
+  "irony_prompt": "Six identical silver basketball trophies fill the frame lined up on a shelf, each on a plain round base with no plaque or marking of any kind. Smaller and subordinate: a basketball wedged in beside them; a mop and bucket of the cleaner who has to dust all six; a hoop net visible through a doorway. MOOD: proud, well-stocked."
  },
  {
   "id": "il-q-hebrejske-pismo",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hebrew_alphabet",
   "source_card": "il-jazyk-hebrejske-pismo",
   "image_prompt": "Fotorealistický detailní snímek stránky hebrejské modlitební knihy s tečkami a čárkami pro samohlásky pod písmeny, měkké světlo, 16:9",
-  "about": "hebrejském písmu"
+  "about": "hebrejském písmu",
+  "irony_prompt": "A pair of hands fills the frame opening a book from its right-hand edge, the cover swinging open the opposite way to expectation, every page inside completely blank. Smaller and subordinate: a Western book beside it opening the other way, looking confused; a bookmark ribbon falling to the right; a reading lamp. MOOD: mirror-image, matter-of-fact."
  },
  {
   "id": "il-q-slovo-shalom",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Shalom",
   "source_card": "il-jazyk-slovo-shalom",
   "image_prompt": "Fotorealistický snímek dvou lidí, kteří si podávají ruce a usmívají se venku v Izraeli, teplé denní světlo, 16:9",
-  "about": "slově šalom"
+  "about": "slově šalom",
+  "irony_prompt": "A doorway fills the frame with one person stepping in and another stepping out at the same moment, both giving the exact same cheerful wave. Smaller and subordinate: a suitcase coming in and a suitcase going out; a coat being hung up and a coat being taken down; a jug of tea on the hall table. MOOD: symmetrical, warm, comic."
  },
  {
   "id": "il-q-slovo-sabra",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sabra_(person)",
   "source_card": "il-jazyk-slovo-sabra",
   "image_prompt": "Fotorealistický detailní snímek trnitého kaktusu opuncie se zralými plody v izraelské krajině, jasné denní světlo, 16:9",
-  "about": "slově sabra"
+  "about": "slově sabra",
+  "irony_prompt": "A prickly pear cactus pad fills the frame bristling with fine spines, one oval fruit split open to show soft juicy crimson flesh inside. Smaller and subordinate: a hand wearing a thick leather glove reaching for it; a child eating a piece, delighted; dry stony ground. MOOD: tough outside, sweet inside."
  },
  {
   "id": "il-q-falafel",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Falafel",
   "source_card": "il-jidlo-falafel",
   "image_prompt": "Fotorealistický snímek čerstvě smažených kuliček falafelu podávaných v pitě se zeleninou, pouliční stánek, denní světlo, 16:9",
-  "about": "falafelu"
+  "about": "falafelu",
+  "irony_prompt": "A deep pan of oil fills the frame with a dozen small round deep-fried balls bobbing in it, one split open to show a bright green herbed crumb inside. Smaller and subordinate: a bowl of soaked pale chickpeas waiting; a scoop pressing out another ball; chopped parsley and a heap of spice. MOOD: sizzling, fragrant."
  },
  {
   "id": "il-q-hummus",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hummus",
   "source_card": "il-jidlo-hummus",
   "image_prompt": "Fotorealistický snímek misky hummusu pokropeného olivovým olejem, pita chléb vedle, teplé přirozené světlo, 16:9",
-  "about": "hummusu"
+  "about": "hummusu",
+  "irony_prompt": "A wide shallow bowl fills the frame filled with a thick pale swirl of chickpea paste, a deep pool of green olive oil in its central well, dusted with red spice. Smaller and subordinate: a very old leather-bound volume lying closed beside it with a ribbon marker; a torn piece of flatbread mid-scoop; whole chickpeas scattered on top. MOOD: ancient, creamy."
  },
  {
   "id": "il-q-shakshuka",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Shakshouka",
   "source_card": "il-jidlo-shakshuka",
   "image_prompt": "Fotorealistický snímek litinové pánve se šakšukou — vejci pošírovanými v rajčatové omáčce, ozdobené bylinkami, rustikální stůl, denní světlo, 16:9",
-  "about": "šakšuce"
+  "about": "šakšuce",
+  "irony_prompt": "A blackened iron pan fills the frame with a bubbling chunky red pepper and tomato sauce, four eggs nestled into hollows with their yolks still bright and domed. Smaller and subordinate: a suitcase and a folded travel rug propped by the stove; a sprig of coriander dropped on top; bread being torn ready. MOOD: bubbling, imported, homely."
  },
  {
   "id": "il-q-vznik-statu-izrael",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence",
   "source_card": "il-historie-vznik-statu-izrael",
   "image_prompt": "Fotorealistický archivní snímek slavnostního sálu s řadami židlí a řečnickým pultem, dekor poloviny 20. století, teplé světlo, 16:9",
-  "about": "vzniku státu Izrael"
+  "about": "vzniku státu Izrael",
+  "irony_prompt": "A figure at a lectern fills the frame seen from behind, holding up a sheaf of pages whose blank backs face us, addressing a packed hall of people on their feet. Smaller and subordinate: a clock on the wall; rows of chairs pushed back in haste; a photographer crouching at the front. MOOD: momentous, crowded."
  },
  {
   "id": "il-q-svitky-od-mrtveho-more",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
   "source_card": "il-historie-svitky-od-mrtveho-more",
   "image_prompt": "Fotorealistický snímek starobylých pouštních jeskyní u Mrtvého moře, skalnaté útesy, suchá krajina, zlaté světlo, bez lidí, 16:9",
-  "about": "svitcích od Mrtvého moře"
+  "about": "svitcích od Mrtvého moře",
+  "irony_prompt": "A row of tall sealed clay jars fills the frame standing in a dry cave, the lid lifted off one to reveal a tightly rolled bundle of parchment still wound shut inside. Smaller and subordinate: a young herder peering in with a lamp, a goat behind him; a stone slipping down the cave mouth; desert cliffs beyond. MOOD: dusty, accidental, enormous."
  },
  {
   "id": "il-q-zalozeni-tel-avivu",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tel_Aviv",
   "source_card": "il-historie-zalozeni-tel-avivu",
   "image_prompt": "Fotorealistický archivní snímek prázdných písečných dun u pobřeží s několika domy z počátku 20. století ve výstavbě, teplé světlo, 16:9",
-  "about": "založení Tel Avivu"
+  "about": "založení Tel Avivu",
+  "irony_prompt": "A bare sand dune fills the frame with a crowd of families standing on it while two people draw seashells one by one out of two boxes. Smaller and subordinate: a surveyor's cord marking out empty plots on the sand; a family beaming at the shell they have just been handed; the sea behind and not one building anywhere. MOOD: hopeful, improvised."
  },
  {
   "id": "il-k-mrtve-more",
@@ -611,7 +638,8 @@
   "quip_correct": "To bylo hned vidět! Zkus se v Mrtvém moři potopit schválně — nepůjde to, sůl tě vždycky vynese zpátky nahoru.",
   "quip_wrong": "Ne tak docela — kouzelné dno ani teplá voda za to nemůžou, nadnáší tě obyčejná, ale extrémně slaná voda.",
   "explanation": "Mrtvé moře je nejslanějším jezerem na světě a leží přes 430 metrů pod hladinou moře — nejníže položené místo na souši vůbec.",
-  "about": "Mrtvém moři"
+  "about": "Mrtvém moři",
+  "irony_prompt": "A person fills the frame floating flat on their back on dense turquoise water, half out of it, completely unable to sink, knees and toes bobbing above the surface. Smaller and subordinate: crystalline salt crusting a rock at the edge; another bather coated head to toe in black mud; the bare brown hills of the far shore. MOOD: comic, weightless."
  },
  {
   "id": "il-k-vlajka",
@@ -631,7 +659,8 @@
   "quip_correct": "Bravo! Modrá a bílá, hvězda uprostřed — vlajka, kterou nakreslíš tužkou za deset vteřin.",
   "quip_wrong": "Skoro, ale ne — půlměsíc ani kříž tam nehledej, uprostřed vlajky svítí modrá šesticípá hvězda.",
   "explanation": "Davidova hvězda je starým symbolem judaismu. Na vlajce ho doplňují dvě modré vodorovné čáry, které připomínají pruhy na modlitebním šálu.",
-  "about": "vlajce Izraele"
+  "about": "vlajce Izraele",
+  "irony_prompt": "A large flag fills the frame rippling on a pole: a plain white field with one horizontal blue stripe near the top and another near the bottom, and in the very centre a blue six-pointed star made of two overlapping triangles. Smaller and subordinate: the same star repeated small on a gate; a prayer shawl with matching blue stripes folded on a bench; bright sky. MOOD: crisp, proud."
  },
  {
   "id": "il-k-pita",
@@ -651,7 +680,8 @@
   "quip_correct": "Trefa! Do žádného jiného chleba nenacpeš falafel tak snadno — pita si tu kapsičku udělá sama.",
   "quip_wrong": "Tentokrát vedle — zahrabat chleba do země by čekal leda archeolog za sto let, ne pekař. Pita se ve skutečnosti peče v peci a sama si nadme dutou kapsičku.",
   "explanation": "Pita se při pečení nafukuje a uvnitř vznikne dutina. Podobný chléb se peče po celém Středomoří a na Blízkém východě.",
-  "about": "pitě"
+  "about": "pitě",
+  "irony_prompt": "A round flatbread fills the frame torn open to reveal a completely hollow pocket inside, the two halves puffed apart like a pouch. Smaller and subordinate: another one inflating like a balloon in the oven; salad and fried balls waiting to be stuffed in; flour dusting the board. MOOD: clever, warm."
  },
  {
   "id": "il-t-jeruzalem",
@@ -671,7 +701,8 @@
   "quip_correct": "Výborně! Tři různé bohoslužby, tři různé svátky, jedno město, co se v tom nějak vyzná.",
   "quip_wrong": "Jedno ani dvě nestačí — Jeruzalém drží posvátný status hned pro tři náboženství najednou.",
   "explanation": "Jeruzalém je posvátný pro židy (Zeď nářků), křesťany (Chrám Božího hrobu) i muslimy (Mešita Al-Aksá). Všechna tři místa leží jen pár set metrů od sebe.",
-  "about": "Jeruzalému"
+  "about": "Jeruzalému",
+  "irony_prompt": "Three very different roofs fill the frame packed almost shoulder to shoulder on one small hill — a great golden dome, a grey church cupola with a cross, and a massive ancient stone wall with people praying at its foot. Smaller and subordinate: narrow lanes threading between them; pilgrims of three kinds converging; olive trees on the slope. MOOD: dense, sacred, quiet."
  },
  {
   "id": "il-k-klima",
@@ -693,7 +724,8 @@
   "explanation": "Cesta autem z jednoho konce Izraele na druhý trvá necelý den, přesto při ní projedete zasněženými svahy, zelenými pahorky i pouštními kaňony.",
   "source_url": "https://en.wikipedia.org/wiki/Geography_of_Israel",
   "image_prompt": "Fotorealistický širokoúhlý snímek kontrastu pouštní krajiny v popředí a zasněžených hor v dálce v Izraeli, bez lidí, 16:9",
-  "about": "podnebí Izraele"
+  "about": "podnebí Izraele",
+  "irony_prompt": "A single car fills the frame driving along a highway with skis strapped to its roof, snowy pine slopes filling the left half of the scene and bare orange desert canyon the right half, meeting right down the middle. Smaller and subordinate: a snowman melting at the roadside; a camel watching from the sand; one road sign post standing completely blank. MOOD: absurd, compact country."
  },
  {
   "id": "il-k-kozorozec",
@@ -715,7 +747,8 @@
   "explanation": "Kozorožci núbijští mají zahnuté rohy dlouhé přes metr a v oáze Ein Gedi se občas proplíží jen pár metrů od odpočívajících turistů, aniž by je to nějak znervózňovalo.",
   "source_url": "https://en.wikipedia.org/wiki/Nubian_ibex",
   "image_prompt": "Fotorealistický snímek kozorožce núbijského stojícího na strmé skále v oáze Ein Gedi u Mrtvého moře, 16:9",
-  "about": "kozorožci núbijském"
+  "about": "kozorožci núbijském",
+  "irony_prompt": "A wild goat with enormous ribbed backward-curving horns fills the frame standing calmly on a ledge no wider than its hooves, high on a sheer cliff. Smaller and subordinate: a tourist below gaping with a sandwich halfway to their mouth; a waterfall and green oasis palms in the gorge; more goats picking their way down. MOOD: effortless, vertiginous."
  },
  {
   "id": "il-k-koralovy-utes",
@@ -737,7 +770,8 @@
   "explanation": "Korály u Eilatu snášejí i vyšší teploty vody líp než útesy jinde na světě, takže je vědci zkoumají jako možnou naději pro záchranu korálů tam, kde už kvůli oteplování hynou.",
   "source_url": "https://en.wikipedia.org/wiki/Red_Sea_coral_reef",
   "image_prompt": "Fotorealistický podvodní snímek barevného korálového útesu s tropickými rybami u pobřeží Eilatu v Rudém moři, 16:9",
-  "about": "korálovém útesu u Eilatu"
+  "about": "korálovém útesu u Eilatu",
+  "irony_prompt": "A dense coral garden fills the frame in warm shallow water, branching and brain corals crowded with tiny bright fish. Smaller and subordinate: a scuba diver taking notes on a slate that is completely blank; a desert shoreline of bare hills right above the water; a thermometer reading high. MOOD: vivid, surprising, hopeful."
  },
  {
   "id": "il-t-ptitim",
@@ -759,7 +793,8 @@
   "explanation": "Ptitim se tehdy pekl z pšeničného těsta do drobných kuliček nebo hvězdiček a lidem se kvůli tomu, kdo dal recept vymyslet, vžila přezdívka 'Ben-Gurionova rýže'.",
   "source_url": "https://en.wikipedia.org/wiki/Ptitim",
   "image_prompt": "Fotorealistický detailní snímek misky s uvařeným izraelským kuskusem ptitim, drobné kuličky těsta, teplé světlo, 16:9",
-  "about": "izraelském kuskusu ptitim"
+  "about": "izraelském kuskusu ptitim",
+  "irony_prompt": "A bowl fills the frame heaped with tiny toasted pasta balls and little star shapes, glossy with oil. Smaller and subordinate: an empty rice sack slumped in the corner; a cook tipping another pan of them in; a child picking out only the stars. MOOD: inventive, homely."
  },
  {
   "id": "il-k-stehovavi-ptaci",
@@ -781,7 +816,8 @@
   "explanation": "Obletět Středozemní moře po souši je pro velké ptáky jako čápy a dravce mnohem méně namáhavé než letět rovnou přes vodu, a tak si všichni razí cestu přesně tímhle úzkým pruhem země.",
   "source_url": "https://en.wikipedia.org/wiki/Hula_Valley",
   "image_prompt": "Fotorealistický snímek velkého hejna stěhovavých čápů letících nad izraelskou krajinou při západu slunce, 16:9",
-  "about": "ptačí migraci přes Izrael"
+  "about": "ptačí migraci přes Izrael",
+  "irony_prompt": "A sky absolutely full of storks and birds of prey fills the frame, spiralling in enormous stacked columns from horizon to horizon. Smaller and subordinate: a narrow strip of land below with the sea on one side and desert on the other; a birdwatcher lying flat, overwhelmed; one exhausted stork resting on a pylon. MOOD: staggering, migratory."
  },
  {
   "id": "il-k-kapkova-zavlaha",
@@ -803,7 +839,8 @@
   "explanation": "Metodu dnes používají farmáři v desítkách zemí po celém světě, protože šetří vodu i tam, kde jí je v porovnání s Izraelem daleko víc.",
   "source_url": "https://en.wikipedia.org/wiki/Drip_irrigation",
   "image_prompt": "Fotorealistický detailní snímek kapkové závlahy na poli v izraelské poušti, kapky vody u kořenů rostlin, 16:9",
-  "about": "kapkové závlaze"
+  "about": "kapkové závlaze",
+  "irony_prompt": "A thin black pipe fills the frame running along a row of tomato plants in dry sand, a single drop of water hanging from each tiny outlet directly above a root. Smaller and subordinate: lush red tomatoes on the plants right beside bare desert; a cracked dry patch just centimetres away where no pipe runs; the sun overhead. MOOD: ingenious, thrifty."
  },
  {
   "id": "il-q-galilejske-jezero",
@@ -824,7 +861,8 @@
   "explanation": "Hladina Kineretu leží přes 200 metrů pod úrovní moře, a v suchých letech vodárenské úřady sledují její pokles stejně napjatě, jako jinde sledují stav zásobníků paliva.",
   "source_url": "https://en.wikipedia.org/wiki/Sea_of_Galilee",
   "image_prompt": "Fotorealistický širokoúhlý snímek Galilejského jezera obklopeného kopci za ranního světla, bez lidí, 16:9",
-  "about": "Galilejském jezeře"
+  "about": "Galilejském jezeře",
+  "irony_prompt": "A wide harp-shaped freshwater lake fills the frame ringed by green hills, fishing boats out on the flat morning water. Smaller and subordinate: an official on the shore anxiously measuring the water against a marked post; a dry pale band of exposed rock around the shoreline; a pump house and pipeline heading inland. MOOD: precious, watched."
  },
  {
   "id": "il-q-cherry-tomato",
@@ -845,7 +883,8 @@
   "explanation": "Nová odrůda se z izraelských skleníků rozšířila do celého světa tak rychle, že dnes je cherry rajčátko běžnou součástí salátů skoro všude, aniž by si to lidé spojovali s Izraelem.",
   "source_url": "https://en.wikipedia.org/wiki/Cherry_tomato",
   "image_prompt": "Fotorealistický detailní snímek misky s čerstvými cherry rajčátky, kapky rosy na slupce, teplé světlo, 16:9",
-  "about": "vývoji cherry rajčátek v Izraeli"
+  "about": "vývoji cherry rajčátek v Izraeli",
+  "irony_prompt": "A cluster of tiny round bright red tomatoes fills the frame still on the vine, glossy and perfectly firm. Smaller and subordinate: two scientists in a greenhouse peering closely at one; an ordinary large tomato beside them already going soft and wrinkled; salad bowls stacked ready. MOOD: neat, quietly world-conquering."
  },
  {
   "id": "il-q-golda-meirova",
@@ -866,7 +905,8 @@
   "explanation": "Do úřadu nastoupila v roce 1969 a vedla vládu přes pět let, včetně období jomkipurské války, kdy musela čelit jednomu z nejtěžších rozhodnutí v izraelských dějinách.",
   "source_url": "https://en.wikipedia.org/wiki/Golda_Meir",
   "image_prompt": "Fotorealistický portrét izraelské státnice ve formálním oblečení, sebevědomý výraz, 16:9",
-  "about": "Goldě Meirové"
+  "about": "Goldě Meirové",
+  "irony_prompt": "A long cabinet table fills the frame lined with dark-suited men, and at its head one woman seen from behind in a plain dress, a worn handbag set firmly on the table beside her papers. Smaller and subordinate: a cup of tea and an ashtray in front of her; a map on the wall with no marks on it; aides waiting at the door. MOOD: formidable, singular."
  },
  {
   "id": "il-k-hebrejstina-ozivena",
@@ -887,7 +927,8 @@
   "quip_wrong": "Kdyby zůstala jen v knihách, nebylo by o čem mluvit. Ona se vrátila mezi lidi.",
   "explanation": "Dnes se hebrejsky mluví ve škole, v obchodě i na hřišti. Je to jediný případ, kdy se z jazyka používaného jen při obřadech stala znovu řeč celé země.",
   "about": "hebrejštině",
-  "more_fact": "Pro nové věci se musela slova teprve vymýšlet. Existuje kvůli tomu zvláštní jazyková rada, která hledá výrazy pro auto, elektřinu nebo počítač ze starých kořenů."
+  "more_fact": "Pro nové věci se musela slova teprve vymýšlet. Existuje kvůli tomu zvláštní jazyková rada, která hledá výrazy pro auto, elektřinu nebo počítač ze starých kořenů.",
+  "irony_prompt": "An ornate old silver ceremonial cup fills the frame lifted out of a velvet-lined display case and set down on an ordinary kitchen table among chipped everyday mugs. Smaller and subordinate: a child reaching for it quite casually; a market stall and a playground visible through the window; the empty case left open behind. MOOD: revived, everyday, remarkable."
  },
  {
   "id": "il-k-sabat-den-klidu",
@@ -908,6 +949,7 @@
   "quip_wrong": "Trhy a závody by se do klidného dne moc nehodily. Šabat je přesný opak.",
   "explanation": "Obchody zavřou, mnoho autobusů nejezdí a rodiny se scházejí u společné večeře. Ulice ve městech bývají tak tiché, jak jindy nikdy nejsou.",
   "about": "šabatu",
-  "more_fact": "Některé izraelské výtahy o šabatu jezdí samy a staví v každém patře. Kdo nechce mačkat tlačítko, prostě nastoupí a počká, až ho výtah doveze."
+  "more_fact": "Některé izraelské výtahy o šabatu jezdí samy a staví v každém patře. Kdo nechce mačkat tlačítko, prostě nastoupí a počká, až ho výtah doveze.",
+  "irony_prompt": "A completely empty city street fills the frame at golden hour, shutters down, not a car or a bus anywhere, a ball left lying in the middle of the road. Smaller and subordinate: one lit window with a family around a table; a cat walking calmly down the centre line; a bus stop with nobody at it. MOOD: still, unusually quiet."
  }
 ]

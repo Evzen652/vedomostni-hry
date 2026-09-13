@@ -81,6 +81,39 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Turecko: 43/43 ilustrací. 5 vad ze 43 (11,6 %) — ČTYŘI z pěti byly
+  náhodné podpisy, jediná textová vada vznikla ze slova ve VEDLEJŠÍM gagu, ne v dominantě.
+  Mapa světa, tři jazykové otázky i bazar — všechno, co mělo selhat — prošlo čistě.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **Nejrizikovější scény prošly napoprvé, protože zadání předem nepřipustilo plochu
+    pro text:** `tr-q-piri-reis` (mapa světa na gazelí kůži) — mapa si o popisky říká
+    vždycky (past ze Slovenska), tady dostala jen obrysy pobřeží, loxodromy a větrnou
+    růžici a zbytek kůže „completely blank"; `tr-q-pismenova-reforma` (arabské písmo →
+    latinka) — tabule setřená dočista, psací náčiní se jen balí do bedny;
+    `tr-q-samohlaskova-harmonie` — řada stejně červených matrjošek; `tr-q-aglutinace` —
+    lokomotiva s nekonečnou řadou vagónů; `tr-q-konstantinopol-istanbul` — pošťák
+    s úplně prázdnou obálkou; `tr-q-iznik-kachle` (reálné iznické kachle často nesou
+    kaligrafii) — „swirling cobalt tulips, carnations and vine curls **and nothing else
+    at all**"; `tr-k-velky-bazar` — „every storefront front completely plain and blank
+    above the doorway".
+  - **Jediná textová vada přišla z VEDLEJŠÍHO gagu, ne z dominanty.** `tr-k-simit` mělo
+    v podřízeném výčtu „a ferry queue behind" → model postavil do pozadí budovu s čitelným
+    nápisem „FERRRI TERMINAL". Dominanta (prodavač s tácem preclíků na hlavě) byla
+    v pořádku. **Potvrzuje to italské poučení, že vedlejší rekvizita nese stejné riziko
+    jako hlavní motiv** — a švédské, že stačí SLOVO pojmenovávající typ budovy. Oprava:
+    „ferry queue" pryč, nahrazeno „a crowd of hurrying commuters passing behind him along
+    a plain stone quayside". Po opravě čisté.
+  - **4 podpisy z 43 (9 %) je nejvyšší podíl čistě podpisových vad od Slovenska.**
+    `tr-q-hagia-sofie`, `tr-q-pismenova-reforma` (monogram vedle bedny s pery),
+    `tr-k-balony-kappadokie` (vepsaný do skály) a `tr-q-bospor`. Všechny spravilo
+    přeposlání stejného zadání napoprvé. **Dva z nich by arch dolních rohů sám o sobě
+    našel, dva ne** — u reformy i balonů ležely nad spodní hranou uvnitř scény, takže
+    je odhalil až zvětšený výřez podezřelého místa z přehledového archu.
+  - **Vlajka vyšla správně napoprvé** (bílý půlměsíc otevřený doprava a hvězda za jeho
+    hroty na sytě červeném poli) díky explicitnímu popisu — poučení z Bulharska drží
+    už potřetí v řadě.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 370.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-13 — Thajsko: 45/45 ilustrací. Jen 3 vady ze 45 (6,7 %) — a POPRVÉ neselhala
   ANI JEDNA ze čtyř nejrizikovějších otázek, přestože všechny čtyři jsou o písmu nebo
   číslech. Poučení z Rumunska („scéna nesmí obsahovat plochu, která by text nesla")

@@ -1,11 +1,11 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Rumunska
-a odeslání Turecka). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Turecka
+a odeslání Irska). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
-Ukrajina, Rumunsko, Thajsko).
+Ukrajina, Rumunsko, Thajsko, Turecko).
 
 ---
 
@@ -14,10 +14,10 @@ Ukrajina, Rumunsko, Thajsko).
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 413** |
-| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, **Thajsko 45/45** |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Turecko 43 zadání napsaných, zkontrolovaných (`lint-irony` 0 chyb) a ODESLANÝCH, obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
-| Další v pořadí (po Turecku) | **Irsko 42 — zadání UŽ NAPSANÁ a po lintu, stačí odeslat**; pak Izrael 42, Jižní Korea 42… |
+| Bez ilustrace | **1 370** |
+| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, Thajsko 45/45, **Turecko 43/43** |
+| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Irsko 42 zadání ODESLANÝCH, obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
+| Další v pořadí (po Irsku) | **Izrael 42 — zadání UŽ NAPSANÁ a po lintu, stačí `submit --cc il`**; pak Jižní Korea 42, Malajsie, Pákistán… |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -40,66 +40,64 @@ zase objevil, a to na NEČEKANÉM MÍSTĚ (radlice buldozeru, ne roh).
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Turecko
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Irsko
 
-Dávka pro Turecko (43 otázek, `batches/vwjdmwm5puqwur4qobt49a8cpm0igrirueef`) byla
-odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
+Dávka pro Irsko (42 otázek, `batches/d8wlzkqa1y0p3l9b6iojwwvtyjwavbl0yw8u`) byla odeslána
+na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
 
 ```bash
 node scripts/batch-irony-images.js status   # počkej na BATCH_STATE_SUCCEEDED
-node scripts/batch-irony-images.js fetch    # uloží do img/{id}.jpg
+node scripts/batch-irony-images.js fetch    # ulozi do img/{id}.jpg
 
 NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" tr     # přehledové archy 3x3
-node "$NASTROJE/rohy.js" tr      # arch dolních rohů (podpisy)
+node "$NASTROJE/archy.js" ie     # prehledove archy 3x3
+node "$NASTROJE/rohy.js" ie      # arch dolnich rohu (podpisy)
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-tr/`,
+Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-ie/`,
 pošli přes `submit --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Thajsku a Rumunsku výš), `validate` + `test:offline`, commit, push.
+(vzor: zápisy o Turecku a Thajsku výš), `validate` + `test:offline`, commit, push.
 
-**Hned po Turecku je na řadě IRSKO (42) — zadání jsou UŽ NAPSANÁ a prošla lintem,
-takže stačí `submit --cc ie`.** Nepiš je znovu.
+**Hned po Irsku je na řadě IZRAEL (42) — zadání jsou UŽ NAPSANÁ a prošla lintem,
+takže stačí `submit --cc il`.** Nepiš je znovu.
 
-**Nejrizikovější turecké otázky, projdi je nejpřísněji:**
-- `tr-q-piri-reis` (mapa světa na gazelí kůži) — **mapa si o popisky říká vždycky**
-  (past ze Slovenska). Zadání proto povoluje jen obrysy pobřeží, loxodromy a větrnou
-  růžici; všechno ostatní na kůži musí zůstat prázdné.
-- `tr-q-pismenova-reforma` (arabské písmo -> latinka) — tabulka je ZÁMĚRNĚ setřená
-  a prázdná, psací náčiní se jen balí do bedny. Jakýkoli znak = vada.
-- `tr-q-samohlaskova-harmonie` — řada stejně červených matrjošek, žádná písmena.
-- `tr-q-aglutinace` — lokomotiva s nekonečnou řadou spřažených vagónů, žádná písmena.
-- `tr-q-konstantinopol-istanbul` (přejmenování 1930) — pošťák s ÚPLNĚ PRÁZDNOU obálkou;
-  kdyby na obálce cokoli bylo, je to vada.
-- `tr-q-iznik-kachle` — skutečné iznické kachle často nesou kaligrafii, takže zadání
-  výslovně žádá jen tulipány, karafiáty a úponky „and nothing else at all".
-- `tr-k-velky-bazar` — obchody v bazaru si o cedule říkají (past ze Lvova); zadání má
-  „every storefront front completely plain and blank above the doorway".
-- `tr-q-lausannska-smlouva` — pergamen jen s pečetěmi, jinak prázdný (past z Itálie).
-- **Trofeje** (`tr-q-galatasaray-uefa`) — „plain round base with no plaque or marking
-  of any kind"; u Řecka i Ukrajiny si podstavec cedulku vynutil.
-- **Dresy** (`tr-q-kirkpinar`, `tr-q-galatasaray-uefa`, `tr-q-basketbal-2010`) —
-  třetí opakovaná past v řadě (Kanada, Slovensko, Thajsko). Když na dresu vyjde
-  prázdný panel bez písmen, je to v pořádku a nepřegeneruje se.
-- `tr-k-vlajka` — barvy a tvar vypsané explicitně (bílý půlměsíc otevřený doprava
-  a hvězda za jeho hroty na sytě červeném poli); otázka je přímo o nich.
+**Nejrizikovější irské otázky, projdi je nejpřísněji:**
+- `ie-t-guinness` — značka piva; zadání ji vůbec nejmenuje, jen „tall straight-sided
+  glass" s krémovou pěnou. Jakýkoli nápis na skle nebo na pípě = vada.
+- `ie-t-trinity-kells` (Book of Kells) — **iluminovaný rukopis je zaručený text**;
+  zadání proto drží jen sál knihovny a JEDINOU ZAVŘENOU knihu ve vitríně.
+- `ie-a-mnisi-evropa` (mniši opisovali antické texty) — opisování ze scény odstraněno
+  úplně, mniši nesou jen zavřené okované truhly (poučení z rumunské cyrilice).
+- `ie-a-irstina` (irština je první úřední jazyk, mluví jí menšina) — dvě křesla místo
+  jakéhokoli nápisu; žádná písmena.
+- `ie-a-joyce-nobel` (čtyři Nobelovy ceny) — medaile nesou JEN vavřínový věnec
+  „and no other marking"; medaile v realitě nápis mají, tak to hlídej.
+- `ie-k-euro` — mince nesou jen harfu a věnec hvězd; bankovky ve scéně schválně nejsou.
+- `ie-t-vlajka` — pořadí pruhů vypsané explicitně (zelená u žerdi, bílá, oranžová vně).
+- `ie-t-rugby` a `ie-t-hurling` — dresy „with no crest or marking of any kind"
+  (čtvrtá opakovaná past v řadě: Kanada, Slovensko, Thajsko, Turecko).
+- `ie-a-mirovy-proces` (Velkopáteční dohoda) — pergamen jen s pečetěmi, jinak prázdný.
+- `ie-a-brexit-hranice` — schválně BEZ jakékoli cedule a bez poštovních schránek
+  (britská schránka je zdokumentovaná past); hranici nese jen změna odstínu asfaltu.
+- `ie-a-hladomor` — citlivé téma; zadání drží jen prázdné chalupy a zčernalé pole,
+  žádné postavy. Zkontroluj, že to nesklouzlo do grafického zobrazení.
 
-**Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska, platí furt:** slovo, které
+**Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka, platí furt:** slovo, které
 POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text i s `left blank`
-vedle sebe. Řešení: to slovo/frázi z popisu úplně odstranit.
+vedle sebe. **A od Turecka nově: platí to i pro VEDLEJŠÍ gag, ne jen pro dominantu** —
+„a ferry queue behind" postavilo do pozadí budovu s nápisem „FERRRI TERMINAL".
 
 **Past z Rumunska, lint ji nechytí: vada může být VKUSOVÁ.** U citlivého tématu nestačí
 napsat `not graphic` — scéna nesmí obsahovat prvek, který se dá číst jako tělo, násilí
-nebo nenávistný symbol. V turecké sadě je rizikový `tr-q-gallipoli` (bitva) — zadání drží
-jen průliv s řetězem a odplouvající lodě, žádné postavy.
+nebo nenávistný symbol.
 
 **Past, kterou hlídej po KAŽDÉ opravě: jedna oprava umí vyrobit nový náhodný podpis**,
 i opakovaně u téhož obrázku. Po každé opravě ZNOVU zkontroluj archy i rohy.
 
-**A podpis NEMUSÍ ležet v rohu.** `ro-a-palac-demolice` ho měl na radlici buldozeru
-uprostřed dolní třetiny a `th-t-narodni-kvetina` vepsaný přímo do hlíny pod stromem —
-arch rohů první z nich minul. Když je ve scéně stroj, vozidlo nebo velká hladká plocha,
-projdi ji zvětšeným výřezem.
+**A podpis NEMUSÍ ležet v rohu.** U Rumunska seděl na radlici buldozeru, u Thajska byl
+vepsaný do hlíny pod stromem a u Turecka dvakrát uvnitř scény (vedle bedny s pery,
+vepsaný do skály) — arch dolních rohů takové případy MINE. Když je ve scéně stroj,
+vozidlo, skála nebo jiná velká hladká plocha, projdi ji zvětšeným výřezem.
 
 ---
 
@@ -135,7 +133,7 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
 | `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
 Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es`, `ua`, `ro` a `th`; `ca` má starší `img-zaloha-ca/`).
+`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es`, `ua`, `ro`, `th` a `tr`; `ca` má starší `img-zaloha-ca/`).
 
 ---
 
@@ -226,9 +224,9 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Stáhnout a zkontrolovat Turecko** (bod 2 výš) — priorita číslo jedna.
-2. **Odeslat Irsko (42) — zadání jsou hotová a po lintu**, pak pokračovat pořadím:
-   Izrael 42, Jižní Korea 42…
+1. **Stáhnout a zkontrolovat Irsko** (bod 2 výš) — priorita číslo jedna.
+2. **Odeslat Izrael (42) — zadání jsou hotová a po lintu**, pak pokračovat pořadím:
+   Jižní Korea 42, Malajsie, Pákistán…
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 
