@@ -19,7 +19,8 @@
   "source_url": "https://www.infoglobe.cz/cestovatelsky-pruvodce/pakistan-lahore-srdce-pakistanu/",
   "source_card": "pk-mista-lahore-fort",
   "image_prompt": "Fotorealistický snímek Lahorské pevnosti, červené pískovcové zdi, mughalská architektura, modrá obloha, bez lidí, 16:9",
-  "about": "Lahorské pevnosti"
+  "about": "Lahorské pevnosti",
+  "irony_prompt": "A vast red sandstone palace gateway fills the frame with soaring arches and slender corner turrets, a courtyard of marble pavilions stretching away behind it. Smaller and subordinate: an emperor on an elephant passing through the arch; masons setting inlaid marble into a wall; a peacock on the parapet. MOOD: imperial, grand."
  },
  {
   "id": "pk-q-k2",
@@ -41,7 +42,8 @@
   "source_url": "https://www.rajbas.cz/k2-pakistan-karakoram/",
   "source_card": "pk-mista-k2",
   "image_prompt": "Fotorealistický snímek zasněženého vrcholu hory K2 v pohoří Karákoram, ostré skalnaté hřebeny, modrá obloha, bez lidí, 16:9",
-  "about": "hoře K2"
+  "about": "hoře K2",
+  "irony_prompt": "A brutal pyramid of black rock and blue ice fills the frame, its summit ridge whipped by a plume of snow torn sideways by the wind. Smaller and subordinate: a tiny rope of climbers pinned against the face; a tent half buried at a camp far below; clouds boiling up the valley. MOOD: savage, unforgiving."
  },
  {
   "id": "pk-q-mohenjodaro",
@@ -63,7 +65,8 @@
   "source_url": "https://sk.wikipedia.org/wiki/Mohend%C5%BEodaro",
   "source_card": "pk-mista-mohenjodaro",
   "image_prompt": "Fotorealistický snímek archeologických vykopávek v Mohendžodáru, cihlové zdi a ulice, pouštní krajina, bez lidí, 16:9",
-  "about": "Mohendžodáru"
+  "about": "Mohendžodáru",
+  "irony_prompt": "A cutaway of an ancient brick street fills the frame showing a covered drainage channel running beneath it, neat baked-brick walls on both sides. Smaller and subordinate: a bathing tank with steps leading down; a modern archaeologist crouching and looking impressed; a well and a tidy grid of streets beyond. MOOD: startlingly modern, ancient."
  },
  {
   "id": "pk-q-indus",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Indus_River",
   "source_card": "pk-priroda-indus",
   "image_prompt": "Fotorealistický širokoúhlý snímek řeky Indus, šedozelená voda, úrodná krajina na březích, 16:9",
-  "about": "řece Indus"
+  "about": "řece Indus",
+  "irony_prompt": "A vast river fills the frame winding down out of high snow-capped mountains, widening as it goes. Smaller and subordinate: a tiny trickle emerging from a glacier snout at the very top of the frame on the far side of the peaks; fields and villages along the lower banks; a boat far downstream. MOOD: mighty, long-travelled."
  },
  {
   "id": "pk-q-thar",
@@ -107,7 +111,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Th%C3%A1rsk%C3%A1_pou%C5%A1%C5%A5",
   "source_card": "pk-priroda-thar",
   "image_prompt": "Fotorealistický snímek pouště Thar, zvlněné písečné duny, suché keře, modrá obloha, bez lidí, 16:9",
-  "about": "Thárské poušti"
+  "about": "Thárské poušti",
+  "irony_prompt": "An enormous sand dune fills the frame rising like a wall, its crest smoking with blown sand. Smaller and subordinate: a camel train reduced to specks along its base for scale; a lone tree at the foot; ripples combing the near slope. MOOD: monumental, shifting."
  },
  {
   "id": "pk-q-karakoram",
@@ -130,7 +135,8 @@
   "source_url": "https://www.rajbas.cz/k2-pakistan-karakoram/",
   "source_card": "pk-priroda-karakoram",
   "image_prompt": "Fotorealistický panoramatický snímek pohoří Karákoram, zasněžené vrcholy, modrá obloha, 16:9",
-  "about": "pohoří Karákoram"
+  "about": "pohoří Karákoram",
+  "irony_prompt": "A wall of jagged ice-plastered peaks fills the frame crowding one behind another to the horizon. Smaller and subordinate: a slightly higher range just visible far away on one side; a glacier grinding down a valley between the peaks; a yak train on a moraine. MOOD: stacked, forbidding."
  },
  {
   "id": "pk-q-jinnah",
@@ -152,7 +158,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Muhammad_Al%C3%AD_D%C5%BEinn%C3%A1h",
   "source_card": "pk-lide-jinnah",
   "image_prompt": "Fotorealistický portrét Muhammad Ali Jinnaha, vážný pohled, formální oblek, historická atmosféra, 16:9",
-  "about": "Muhammadu Ali Jinnahovi"
+  "about": "Muhammadu Ali Jinnahovi",
+  "irony_prompt": "A tall astrakhan cap and a long buttoned coat fill the frame displayed on a wooden stand under a spotlight, a monocle on a chain hanging beside them. Smaller and subordinate: a crowd of silhouettes filling a square outside the window; a brand-new flagpole; an empty chair at the head of a long table. MOOD: founding, dignified."
  },
  {
   "id": "pk-q-sufi",
@@ -174,7 +181,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sufism",
   "source_card": "pk-lide-sufi",
   "image_prompt": "Fotorealistický snímek súfijského derviše tančícího, bílé roucho, tradiční atmosféra, 16:9",
-  "about": "súfismu"
+  "about": "súfismu",
+  "irony_prompt": "A whirling figure in a long white robe fills the frame spinning with eyes closed, one palm turned up, a warm glow radiating outward from the chest. Smaller and subordinate: an ornate shrine doorway hung with coloured threads; drummers seated in a ring; a moth circling a lamp. MOOD: ecstatic, inward."
  },
  {
   "id": "pk-q-truckovi-umelci",
@@ -195,7 +203,8 @@
   "explanation": "Malála Júsufzai, aktivistka za vzdělání dívek, kterou v roce 2012 postřelili členové Tálibánu, se v roce 2014 ve věku sedmnácti let stala nejmladší nositelkou Nobelovy ceny míru v historii.",
   "source_url": "https://cs.wikipedia.org/wiki/Mal%C3%A1la_J%C3%BAsufzajov%C3%A1",
   "image_prompt": "Fotorealistický portrét mladé pákistánské aktivistky s knihou v ruce, sebevědomý pohled, teplé denní světlo, 16:9",
-  "about": "Malále Júsufzai"
+  "about": "Malále Júsufzai",
+  "irony_prompt": "A schoolgirl in a headscarf fills the frame striding forward with a bundle of books under one arm, chin up. Smaller and subordinate: hundreds of other girls with books falling in behind her; a heavy gold medal on a ribbon glinting on a cushion ahead; a school gate standing wide open. MOOD: defiant, hopeful, not graphic."
  },
  {
   "id": "pk-q-svatby",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Marriage_in_Pakistan",
   "source_card": "pk-kultura-svatby",
   "image_prompt": "Fotorealistický snímek pákistánské svatby, nevěsta v červených šatech a zlatých špercích, ruce s hennou, 16:9",
-  "about": "pákistánských svatebních tradicích"
+  "about": "pákistánských svatebních tradicích",
+  "irony_prompt": "A bride's two hands fill the frame turned palm up, covered from fingertips to wrist in intricate dark red swirling flower and vine patterns. Smaller and subordinate: an artist squeezing a fine cone of paste onto another woman's palm; marigold garlands; drums and clapping in the background. MOOD: festive, intricate."
  },
  {
   "id": "pk-q-chai",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Doodh_pati_chai",
   "source_card": "pk-kultura-chai",
   "image_prompt": "Fotorealistický snímek tradičního podávání čaje chai, šálek na podnose, pára stoupá, 16:9",
-  "about": "čajové kultuře chai"
+  "about": "čajové kultuře chai",
+  "irony_prompt": "A battered kettle fills the frame pouring a long arcing stream of milky orange tea from high above into a waiting cup. Smaller and subordinate: a whole tray of identical cups going out to a shop; sugar being spooned in generously; cardamom pods and a boiling pan. MOOD: sweet, everyday, endless."
  },
  {
   "id": "pk-q-kaligrafie",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Islamic_calligraphy",
   "source_card": "pk-kultura-kaligrafie",
   "image_prompt": "Fotorealistický snímek detailu islámské kaligrafie na zdi mešity, zlaté a modré barvy, 16:9",
-  "about": "islámské kaligrafii"
+  "about": "islámské kaligrafii",
+  "irony_prompt": "A workshop wall fills the frame tiled entirely in interlocking geometric stars and flowing floral arabesques, filling every inch of the surface. Smaller and subordinate: a small clay figurine of a bird sitting on a shelf with a cloth draped over it; a craftsman's compass and ruler; a stack of blank plain tiles. MOOD: abstract, devout, ornamental."
  },
  {
   "id": "pk-q-truck-art",
@@ -283,7 +295,8 @@
   "source_url": "https://craftandtravel.com/pakistani-truck-art/",
   "source_card": "pk-umeni-truck-art",
   "image_prompt": "Fotorealistický snímek náklaďáku zdobeného truck art, samolepky, kovové výlisky, lampy, 16:9",
-  "about": "truck artu"
+  "about": "truck artu",
+  "irony_prompt": "A huge lorry fills the frame painted from bumper to roof in blazing peacocks, roses, mountains and mirrored discs, fringed with hundreds of jingling chains along its bottom edge, every panel carrying only pictures and patterns and nothing else. Smaller and subordinate: a painter on a stool adding another petal; the driver polishing a mirrored panel; a plain grey lorry parked next to it, looking naked. MOOD: dazzling, rolling gallery."
  },
  {
   "id": "pk-q-qawwali",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Qawwali",
   "source_card": "pk-umeni-qawwali",
   "image_prompt": "Fotorealistický snímek zpěváků qawwali, tradiční oblečení, harmonium, ruce zdvižené k nebi, 16:9",
-  "about": "hudbě qawwali"
+  "about": "hudbě qawwali",
+  "irony_prompt": "A row of singers fills the frame seated cross-legged, hands thrown up mid-clap, mouths open, a harmonium and tabla driving the rhythm. Smaller and subordinate: listeners in the courtyard swaying with eyes shut; one man on his feet, lost to it; rose petals thrown through the air. MOOD: trance-inducing, thunderous."
  },
  {
   "id": "pk-q-textil",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pakistani_craft",
   "source_card": "pk-umeni-textil",
   "image_prompt": "Fotorealistický snímek detailu ručně vyšívané látky, tradiční motivy, 16:9",
-  "about": "pákistánských textilních řemeslech"
+  "about": "pákistánských textilních řemeslech",
+  "irony_prompt": "A length of cloth fills the frame hung up and covered in dense hand embroidery — tiny mirrors, silk knots and chain-stitched flowers packed edge to edge. Smaller and subordinate: a woman's hands working a needle at a wooden frame; a stack of finished shawls; a wooden printing block and dye pot. MOOD: painstaking, sumptuous."
  },
  {
   "id": "pk-q-kriket",
@@ -349,7 +364,8 @@
   "source_url": "https://tr.wikipedia.org/wiki/Pakistan_mill%C3%AE_kriket_tak%C4%B1m%C4%B1",
   "source_card": "pk-sport-kriket",
   "image_prompt": "Fotorealistický snímek kriketového zápasu, pákistánští hráči v zeleném dresu, dav fanoušků, 16:9",
-  "about": "kriketu v Pákistánu"
+  "about": "kriketu v Pákistánu",
+  "irony_prompt": "A silver cricket trophy fills the frame held aloft in a pair of raised hands under stadium floodlights, standing on a plain round base with no plaque or marking of any kind. Smaller and subordinate: teammates in green shirts piling in; a cricket ball and stumps on the grass; a night sky full of camera flashes. MOOD: euphoric, once-in-a-generation."
  },
  {
   "id": "pk-q-squash",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Squash_in_Pakistan",
   "source_card": "pk-sport-squash",
   "image_prompt": "Fotorealistický akční snímek profesionálního squashisty odehrávajícího míček na skleněném kurtu, dynamický pohyb, 16:9",
-  "about": "pákistánské squashové dynastii"
+  "about": "pákistánské squashové dynastii",
+  "irony_prompt": "A glass-walled squash court fills the frame with two players in white lunging for the same ball in the front corner. Smaller and subordinate: a long shelf of identical trophies behind the glass, all on plain bases; a worn racket with a taped grip; a scattering of defeated opponents' rackets. MOOD: relentless, dynastic."
  },
  {
   "id": "pk-q-hokej",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pakistan_men's_national_field_hockey_team",
   "source_card": "pk-sport-hokej",
   "image_prompt": "Fotorealistický snímek hokejového zápasu na trávě, pákistánští hráči v bílých dresech, 16:9",
-  "about": "zlaté éře pákistánského hokeje"
+  "about": "zlaté éře pákistánského hokeje",
+  "irony_prompt": "A field hockey stick fills the frame sweeping a ball off the turf in a spray of grass, a player in green stretched full out behind it. Smaller and subordinate: three gold medals hanging side by side on a hook; a packed old grandstand of wooden benches; a goalkeeper diving. MOOD: golden era, driving."
  },
  {
   "id": "pk-q-urdu",
@@ -415,7 +433,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Urd%C5%A1tina",
   "source_card": "pk-jazyk-urdu",
   "image_prompt": "Fotorealistický snímek učebnice urdštiny, arabské písmo, 16:9",
-  "about": "urdštině"
+  "about": "urdštině",
+  "irony_prompt": "Two young men fill the frame greeting each other warmly across a low fence, one in a long tunic and the other in a dhoti, and the identical ribbon of sound coming out of both their mouths. Smaller and subordinate: a shopkeeper serving both without blinking; two different styles of teacup on the same tray; the fence itself looking very newly built. MOOD: near-identical, cousinly."
  },
  {
   "id": "pk-q-slova",
@@ -437,7 +456,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Urd%C5%A1tina",
   "source_card": "pk-jazyk-slova",
   "image_prompt": "Fotorealistický snímek starého perského rukopisu, 16:9",
-  "about": "vlivech perštiny a arabštiny na urdštinu"
+  "about": "vlivech perštiny a arabštiny na urdštinu",
+  "irony_prompt": "A great simmering cooking pot fills the frame with two separate streams of coloured spice being poured into it from two ornate jars at once, swirling together. Smaller and subordinate: a cook tasting from a wooden spoon, delighted; a shelf of other untouched jars; steam rising in curls. MOOD: blended, rich."
  },
  {
   "id": "pk-q-pismo",
@@ -459,7 +479,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Urd%C5%A1tina",
   "source_card": "pk-jazyk-pismo",
   "image_prompt": "Fotorealistický snímek kaligrafického díla v urdštině, zlaté písmo na modrém podkladě, 16:9",
-  "about": "urdském písmu"
+  "about": "urdském písmu",
+  "irony_prompt": "A pair of hands fills the frame opening a book from its right-hand edge, the cover swinging open the opposite way to expectation, every page inside completely blank. Smaller and subordinate: a Western book beside it opening the other way; a reed pen and inkpot; a low table and floor cushion. MOOD: mirror-image, matter-of-fact."
  },
  {
   "id": "pk-q-biryani",
@@ -482,7 +503,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Biryani",
   "source_card": "pk-jidlo-biryani",
   "image_prompt": "Fotorealistický snímek biryani, vrstvy rýže a masa, šafrán, koriandr, 16:9",
-  "about": "biryani"
+  "about": "biryani",
+  "irony_prompt": "A huge copper pot fills the frame lifted open to reveal layers of long saffron-yellow and white rice studded with chunks of meat, whole spices and fried onions, steam billowing up. Smaller and subordinate: a royal-looking cloth spread underneath it; a hand scattering more fried onion on top; a queue of held-out plates. MOOD: opulent, aromatic."
  },
  {
   "id": "pk-q-karahi",
@@ -504,7 +526,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Karahi",
   "source_card": "pk-jidlo-karahi",
   "image_prompt": "Fotorealistický snímek karahi v hliníkové pánvi, maso, rajčata, papriky, 16:9",
-  "about": "jídle karahi"
+  "about": "jídle karahi",
+  "irony_prompt": "A wide shallow two-handled iron pan fills the frame sizzling over a fierce flame with chunks of meat, tomato and green chilli tumbling in it. Smaller and subordinate: an identical empty pan hanging on the wall, clearly where the dish gets its name; a stack of flatbread; a cook shaking the pan with both hands. MOOD: fiery, immediate."
  },
  {
   "id": "pk-q-halva",
@@ -526,7 +549,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Halva",
   "source_card": "pk-jidlo-halva",
   "image_prompt": "Fotorealistický snímek halvy na talíři, posypané pistáciemi, 16:9",
-  "about": "sladkosti halva"
+  "about": "sladkosti halva",
+  "irony_prompt": "A glossy amber slab of dense sweet fills the frame being cut into diamonds with a knife, buttery ghee still glistening on its surface. Smaller and subordinate: a pan of semolina toasting; a sugar syrup pouring in; a festival table of other sweets. MOOD: rich, celebratory."
  },
  {
   "id": "pk-q-harappa",
@@ -548,7 +572,8 @@
   "source_url": "https://sk.wikipedia.org/wiki/Mohend%C5%BEodaro",
   "source_card": "pk-historie-mohenjodaro",
   "image_prompt": "Fotorealistický snímek artefaktů z Mohendžodára, pečetidla, keramika, 16:9",
-  "about": "civilizaci v údolí Indu"
+  "about": "civilizaci v údolí Indu",
+  "irony_prompt": "A neat grid of ancient baked-brick streets fills the frame seen from above, with a great raised citadel platform at one end. Smaller and subordinate: a pyramid and a ziggurat drawn small on the horizon for comparison, both looking younger; carts on a straight street; a granary block. MOOD: astonishingly early, orderly."
  },
  {
   "id": "pk-q-rozdeleni",
@@ -570,7 +595,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Partition_of_India",
   "source_card": "pk-historie-pakistan",
   "image_prompt": "Fotorealistický snímek mapy Pákistánu a Indie v roce 1947, historické dokumenty, 16:9",
-  "about": "rozdělení Indie"
+  "about": "rozdělení Indie",
+  "irony_prompt": "A single railway platform fills the frame with two crowded trains pulling out of it in exactly opposite directions, hands waving from every window. Smaller and subordinate: a freshly painted line drawn straight across the platform floor; two station clocks showing the same time; bundles and trunks left behind. MOOD: wrenching, historic, not graphic."
  },
  {
   "id": "pk-q-vznik",
@@ -592,7 +618,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Muhammad_Al%C3%AD_D%C5%BEinn%C3%A1h",
   "source_card": "pk-historie-vznik",
   "image_prompt": "Fotorealistický snímek vlajky Pákistánu, zelená a bílá, vlaje ve větru, 16:9",
-  "about": "vzniku Pákistánu"
+  "about": "vzniku Pákistánu",
+  "irony_prompt": "A brand-new flag fills the frame being hoisted up a pole against a dawn sky, its green field with a white band at the pole edge and a white crescent and star in the middle. Smaller and subordinate: an enormous crowd below with arms raised; a colonial flag folded away on a table; birds scattering. MOOD: jubilant, founding."
  },
  {
   "id": "pk-k-markhor",
@@ -613,7 +640,8 @@
   "quip_wrong": "Ne tak docela - lev nebo tygr by na vlajce vypadali impozantně, viď? Národním zvířetem Pákistánu je ale kozel se šroubovitými rohy - markhor.",
   "explanation": "Markhor žije ve skalnatých horách Pákistánu, Afghánistánu a střední Asie. Kdysi mu lovci hodně ubližovali, ale díky ochraně se mu dnes daří o něco líp.",
   "about": "markhoru",
-  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- wild mountain goat with long spiral-twisted horns standing on a rocky ridge"
+  "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- wild mountain goat with long spiral-twisted horns standing on a rocky ridge",
+  "irony_prompt": "A powerful wild goat fills the frame standing on a crag, two enormous horns spiralling upward from its head like twin corkscrews, a long beard blowing sideways. Smaller and subordinate: a kid picking its way along a ledge below; a snow-dusted mountain slope; a ranger with binoculars, pleased. MOOD: majestic, saved."
  },
  {
   "id": "pk-t-islamabad",
@@ -633,7 +661,8 @@
   "quip_correct": "Karáčí má chaos a moře, Islámábád má rovné ulice a klid — vláda si prostě vybrala tu nudnější variantu.",
   "quip_wrong": "Zkus to znovu na mapě — Karáčí, Láhaur i Péšávar jsou velká pákistánská města, ale hlavní je odjakživa jen jedno: Islámábád, tiše na severu.",
   "explanation": "Islámábád bylo vybudováno v 60. letech 20. století a nahradilo Karáčí jako hlavní město. Jméno v arabštině znamená přibližně 'příbytek islámu'.",
-  "about": "Islámábádu"
+  "about": "Islámábádu",
+  "irony_prompt": "A calm modern capital fills the frame laid out in perfectly straight tree-lined avenues at the foot of green hills, a great white mosque with four slender minarets at its head. Smaller and subordinate: surveyors' pegs and cord still marking a new sector; a much older crowded port city sketched hazily far away on the coast; birds over the hills. MOOD: planned, serene."
  },
  {
   "id": "pk-k-vlajka",
@@ -653,7 +682,8 @@
   "quip_correct": "Výborně, sedí to! Všimni si, že na pákistánské vlajce nesvítí slunce ani žádný orel — jen tenký srpek měsíce a hvězda vedle něj.",
   "quip_wrong": "Tahle možnost nesedí — slunce, kříž, lev s mečem; nic z toho na pákistánské vlajce nenajdeš, tam září jen srpek měsíce a hvězda.",
   "explanation": "Zelená barva vlajky symbolizuje islám a muslimskou většinu. Bílý svislý pruh na levé straně zastupuje náboženské menšiny žijící v Pákistánu.",
-  "about": "pákistánské vlajce"
+  "about": "pákistánské vlajce",
+  "irony_prompt": "A large flag fills the frame rippling on a pole: a deep green field with a narrow white vertical band down the edge nearest the pole, and in the middle of the green a white crescent moon with a white five-pointed star beside its horns. Smaller and subordinate: a child holding a small paper version of the same; a domed roofline behind; bright sky. MOOD: proud, crisp."
  },
  {
   "id": "pk-k-kriket",
@@ -673,7 +703,8 @@
   "quip_correct": "Bystrý pohled! Kdo by hrál fotbal, když stačí klacek, míček a kus zdi místo branky? V Pákistánu vládne kriket, klidně přímo na ulici.",
   "quip_wrong": "Mimo, i když blízko — fotbal, basketbal, tenis jsou skvělé sporty, ale v Pákistánu jim ulice nepatří; tam vládne kriket, i s pálkou narychlo vyrobenou z čehokoli po ruce.",
   "explanation": "Kriket přinesli do Pákistánu Britové v 19. století. Dnes Pákistán patří k nejsilnějším kriketovým národům světa a jeho hráči jsou tam skutečné hvězdy.",
-  "about": "kriketu v Pákistánu"
+  "about": "kriketu v Pákistánu",
+  "irony_prompt": "A narrow city street fills the frame turned into a cricket pitch, a boy mid-bowl and another swinging a bat, with a chalked wicket on a wall behind him. Smaller and subordinate: a neighbour leaning out of a window to watch; a parked scooter serving as a fielder's marker; a ball bouncing off a shutter. MOOD: improvised, everywhere."
  },
  {
   "id": "pk-k-delfin",
@@ -695,7 +726,8 @@
   "explanation": "Delfín indický ztratil v kalné vodě řeky Indus během evoluce zrak úplně a orientuje se pomocí echolokace. Patří mezi nejohroženější savce světa, dnes jich žije jen několik tisíc.",
   "source_url": "https://en.wikipedia.org/wiki/Indus_river_dolphin",
   "image_prompt": "Fotorealistický snímek delfína indického vynořujícího se z kalné vody řeky Indus, přirozené světlo, 16:9",
-  "about": "delfínovi indickém z řeky Indus"
+  "about": "delfínovi indickém z řeky Indus",
+  "irony_prompt": "A pale grey river dolphin fills the frame swimming on its side through murky brown water, its long narrow beak full of tiny teeth and its eyes reduced to two tiny useless dots. Smaller and subordinate: sound waves drawn as faint rings spreading from its forehead; a silty riverbed with a catfish; a fishing boat silhouetted above. MOOD: strange, endangered, endearing."
  },
  {
   "id": "pk-t-sul",
@@ -717,7 +749,8 @@
   "explanation": "Solný důl Khewra patří mezi největší na světě, jeho chodby měří přes 40 kilometrů. Uvnitř dolu je dokonce vytesaná malá mešita a nemocnice pro léčbu dýchacích potíží solným vzduchem.",
   "source_url": "https://en.wikipedia.org/wiki/Khewra_Salt_Mine",
   "image_prompt": "Fotorealistický snímek osvětlené chodby solného dolu Khewra s růžovými solnými stěnami, teplé světlo, bez lidí, 16:9",
-  "about": "solném dole Khewra"
+  "about": "solném dole Khewra",
+  "irony_prompt": "A cavernous salt mine chamber fills the frame with walls of pink translucent crystal glowing from lamps set behind them. Smaller and subordinate: a small mosque carved entirely out of the pink salt, lit from within; a miner's trolley on rails vanishing down a tunnel; a chunk of rose-coloured rock salt on the floor. MOOD: glowing, subterranean, magical."
  },
  {
   "id": "pk-t-badshahi",
@@ -739,7 +772,8 @@
   "explanation": "Badšáhí mešitu nechal v roce 1673 postavit císař Aurangzéb a téměř tři sta let byla největší mešitou na světě. Stojí hned vedle Lahorské pevnosti, obě památky střeží stejné staré hradby.",
   "source_url": "https://en.wikipedia.org/wiki/Badshahi_Mosque",
   "image_prompt": "Fotorealistický snímek Badšáhí mešity v Láhauru, rozlehlé nádvoří z červeného pískovce, jasná obloha, bez lidí, 16:9",
-  "about": "Badšáhí mešitě v Láhauru"
+  "about": "Badšáhí mešitě v Láhauru",
+  "irony_prompt": "An immense red sandstone mosque fills the frame with three white marble domes and four tall corner minarets above a vast empty courtyard. Smaller and subordinate: a single worshipper crossing the courtyard, tiny for scale; a fort wall right next door; pigeons wheeling over the domes. MOOD: monumental, serene."
  },
  {
   "id": "pk-k-satky",
@@ -761,7 +795,8 @@
   "explanation": "Šalvár kamíz nosí v Pákistánu denně miliony lidí bez ohledu na věk - je to zároveň národní kroj i běžné každodenní oblečení. Ženská verze bývá doplněná dlouhým šátkem zvaným dupatta.",
   "source_url": "https://en.wikipedia.org/wiki/Shalwar_kameez",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- colorful shalwar kameez outfits displayed at a Pakistani market stall",
-  "about": "oděvu šalvár kamíz"
+  "about": "oděvu šalvár kamíz",
+  "irony_prompt": "A row of people fills the frame — a schoolchild, an office worker, a farmer and a bride — all wearing the very same outfit of loose trousers and a long straight tunic over them, differing only in fabric. Smaller and subordinate: a bolt of plain cotton beside a bolt of gold-shot silk; a tailor measuring; a washing line of the same shape in ten colours. MOOD: unifying, practical, elegant."
  },
  {
   "id": "pk-k-mango",
@@ -783,7 +818,8 @@
   "explanation": "Pákistán patří mezi pět největších světových pěstitelů manga, hlavní sezóna trvá od května do srpna. Odrůda zvaná Sindhri z provincie Sindh patří k nejvyváženějším na světě.",
   "source_url": "https://en.wikipedia.org/wiki/Mango",
   "image_prompt": "Fotorealistický detailní snímek zralých pákistánských mang na tržním stánku, teplé světlo, 16:9",
-  "about": "mangu v Pákistánu"
+  "about": "mangu v Pákistánu",
+  "irony_prompt": "An enormous golden-orange mango fills the frame on a crown-shaped cushion, its skin blushing red at the shoulder, one cheek sliced open to show deep saffron flesh. Smaller and subordinate: crates of more mangoes being loaded onto a truck; a hand squeezing one to test it; other fruits bowing in the background. MOOD: regal, sticky, summer."
  },
  {
   "id": "pk-t-nanga-parbat",
@@ -805,7 +841,8 @@
   "explanation": "Nanga Parbat měří 8126 metrů a je devátou nejvyšší horou světa. Na rozdíl od K2 leží v pohoří Himálaj, ne v Karákoramu, a jako první ji v roce 1953 zdolal rakouský horolezec Hermann Buhl, sám a bez kyslíku.",
   "source_url": "https://en.wikipedia.org/wiki/Nanga_Parbat",
   "image_prompt": "Fotorealistický širokoúhlý snímek zasněženého vrcholu hory Nanga Parbat, strmé svahy, dramatická obloha, bez lidí, 16:9",
-  "about": "hoře Nanga Parbat"
+  "about": "hoře Nanga Parbat",
+  "irony_prompt": "A colossal mountain face fills the frame rising in one unbroken sweep from green foothills to an ice summit, dwarfing everything around it. Smaller and subordinate: a cloud cap boiling off the top; a memorial cairn of stones at the base; a lone climber looking up, hands on hips. MOOD: overwhelming, ominous, not graphic."
  },
  {
   "id": "pk-t-karachi-largest-city",
@@ -827,7 +864,8 @@
   "explanation": "Karáčí bylo krátce i prvním hlavním městem Pákistánu, než se jím později stal Islámábád.",
   "source_url": "https://cs.wikipedia.org/wiki/Kar%C3%A1%C4%8D%C3%AD",
   "image_prompt": "Fotorealistický snímek rušného přístavu v pákistánském městě Karáčí s barevnými rybářskými loděmi a mrakodrapy v pozadí, 16:9",
-  "about": "Karáčí, největším pákistánském městě a přístavu"
+  "about": "Karáčí, největším pákistánském městě a přístavu",
+  "irony_prompt": "A colossal seaside city fills the frame stretching along a harbour crammed with cargo ships and cranes. Smaller and subordinate: a fishing boat threading between two tankers; a mausoleum with a white dome standing among the buildings; traffic jamming a flyover. MOOD: immense, humming, coastal."
  },
  {
   "id": "pk-k-k2-druha-hora",
@@ -848,7 +886,8 @@
   "quip_wrong": "Everest je jinde a Kilimandžáro dokonce na jiném světadílu. Tahle má místo jména značku.",
   "explanation": "K2 je jen o něco nižší než Everest, ale je mnohem strmější a leze se na ni podstatně hůř. Většina cesty vede po ledu a strmé skále.",
   "about": "hoře K2",
-  "more_fact": "Značka K2 vznikla jako poznámka na staré mapě: dvojka znamenala druhou zaměřenou horu pohoří Karákóram. Jméno mělo být dočasné, jenže už jí zůstalo."
+  "more_fact": "Značka K2 vznikla jako poznámka na staré mapě: dvojka znamenala druhou zaměřenou horu pohoří Karákóram. Jméno mělo být dočasné, jenže už jí zůstalo.",
+  "irony_prompt": "A vast steep pyramid of rock and ice fills the frame, its slopes far sharper than anything around it. Smaller and subordinate: a slightly taller, gentler mountain drawn small and hazy on the far horizon; two climbers roped together on a near ridge; a glacier below. MOOD: second but harder."
  },
  {
   "id": "pk-k-snezny-levhart",
@@ -869,7 +908,8 @@
   "quip_wrong": "Lev leží v trávě, gepard běhá po pláni a tygr má rád vlhký les. Do sněhu a skal patří jiná kočka.",
   "explanation": "Sněžný levhart má hustou srst, široké tlapy jako sněžnice a nesmírně dlouhý ocas, kterým balancuje při skoku ze skály na skálu.",
   "about": "sněžném levhartovi",
-  "more_fact": "Na rozdíl od lva nebo tygra neumí řvát — vydává prskavé zvuky a zvláštní táhlé zavytí. A když spí, omotá si ocas kolem těla jako šálu."
+  "more_fact": "Na rozdíl od lva nebo tygra neumí řvát — vydává prskavé zvuky a zvláštní táhlé zavytí. A když spí, omotá si ocas kolem těla jako šálu.",
+  "irony_prompt": "A thick-furred pale grey cat with dark rosettes fills the frame crouched on a snowy rock, its enormously long tail curled round its paws. Smaller and subordinate: its broad snowshoe paws pressed into the snow; a wild goat on a distant ledge, unaware; blowing spindrift. MOOD: ghostly, watchful."
  },
  {
   "id": "pk-k-malovane-nakladaky",
@@ -890,7 +930,8 @@
   "quip_wrong": "Bílý a nenápadný je tam náklaďák leda po nehodě. Řidiči je nechávají malovat jako obrazy.",
   "explanation": "Řidiči si vozy nechávají zdobit u malířů. Každý má jiné květiny, ptáky, oči i verše a výzdoba dokáže stát víc než ojeté auto.",
   "about": "malovaných náklaďácích",
-  "more_fact": "Řetízky na nárazníku nejsou jen ozdoba. Cinkají už z dálky, takže chodci na úzké horské silnici slyší náklaďák dřív, než ho zpoza zatáčky uvidí."
+  "more_fact": "Řetízky na nárazníku nejsou jen ozdoba. Cinkají už z dálky, takže chodci na úzké horské silnici slyší náklaďák dřív, než ho zpoza zatáčky uvidí.",
+  "irony_prompt": "The back panel of a lorry fills the frame painted edge to edge with roses, peacocks, mountain lakes and painted eyes, hung with rows of jingling metal chains and dangling mirrored discs. Smaller and subordinate: a painter halfway through a flower on a ladder; the driver admiring it with folded arms; a row of similar lorries in a yard. MOOD: exuberant, hand-made."
  },
  {
   "id": "pk-k-sialkot-mice",
@@ -911,6 +952,7 @@
   "quip_wrong": "Lyže ani brusle by v Siálkótu nikdo nepotřeboval. Vyrábí se tam něco, co se kope.",
   "explanation": "V Siálkótu se ručně sešívají fotbalové míče už přes sto let. Odtud putují na hřiště po celém světě, včetně těch nejslavnějších turnajů.",
   "about": "míčích ze Siálkótu",
-  "more_fact": "Klasický míč se skládá z dvaatřiceti kousků — dvanácti pětiúhelníků a dvaceti šestiúhelníků. Musí být sešité opravdu přesně, jinak by míč nelétal rovně."
+  "more_fact": "Klasický míč se skládá z dvaatřiceti kousků — dvanácti pětiúhelníků a dvaceti šestiúhelníků. Musí být sešité opravdu přesně, jinak by míč nelétal rovně.",
+  "irony_prompt": "A pair of hands fills the frame stitching together the panels of a football with a curved needle and waxed thread, the ball held between the knees. Smaller and subordinate: crates of finished balls in plain black and white with no marking of any kind; a whole workshop of stitchers at low benches; a distant floodlit stadium. MOOD: skilled, patient, world-supplying."
  }
 ]

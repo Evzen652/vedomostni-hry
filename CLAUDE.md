@@ -81,6 +81,33 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Jižní Korea: 42/42 ilustrací. JEDINÁ vada ze 42 (2,4 %) — nejnižší podíl
+  ze všech 22 zemí zpracovaných za poslední dva dny, a byl to náhodný podpis. Všechny
+  TŘI otázky o písmu hangul i Tripitaka Koreana (81 258 desek s texty) prošly napoprvé.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **Potvrzení thajského postupu, tentokrát na nejtěžší možné sadě.** Korea má v jednom
+    fondu čtyři otázky, které si o text říkají přímo: `kr-q-sejong` (král VYTVOŘIL písmo),
+    `kr-q-hangul-jizni` (kdy bylo písmo ZVEŘEJNĚNO), `kr-k-hangul-vznik` (proč se dá
+    rychle naučit) a `kr-q-tripitaka-koreana` (81 258 desek s buddhistickými TEXTY).
+    **Ani jedna nevyrobila jediný znak, protože zadání předem neposkytlo plochu, kam
+    by se znak vešel:** král podává rolníkovi jeden malý dřevěný klíč, zatímco truhla
+    s tisíci pečetěmi zůstává zavřená; kniha je zavřená a sepnutá na polštáři; dvoje
+    přesýpací hodiny (malé skoro hotové, obří pořád tekoucí); a desky stojí **HRANOU**,
+    takže vidět jsou jen jejich úzké dřevěné konce, nikdy vyřezaná plocha.
+  - **Stejně prošly i tři další rizikové otázky:** sedm rovin zdvořilosti (sedm úklonů
+    různé hloubky), dvě soustavy číslovek (dva různé abakusy nad jedním košíkem jablek)
+    a příjmení na prvním místě (rodinná fotka, kde prarodiče stojí VPŘEDU) — všechno
+    bez jediného nápisu.
+  - **Kontejnery v přístavu a zámky lásky na věži zůstaly holé** díky explicitnímu
+    „in plain solid colours with no marking of any kind" a „every one of them plain
+    and unmarked" — čtvrtá a pátá potvrzená aplikace kanadského pravidla.
+  - **Jediná vada: podpis u `kr-q-getbol-suncheon`** (přílivové pláně), náhodný, spravilo
+    přeposlání stejného zadání napoprvé.
+  - **Falešný poplach ponechán:** čela desek Tripitaky nesou dekorativní květinové
+    a souměrné motivy, které na první pohled vypadají jako znaky. Při zvětšení jde
+    o čistý ornament — stejný typ nálezu jako maďarské rovnice a švédské notové osnovy.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 244.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-13 — Izrael: 42/42 ilustrací. 5 vad ze 42 (12 %) + 1 selhané generování —
   a čtyři z pěti byly podpisy. Jediná textová vada vznikla z popisu ÚČELU rekvizity,
   ne z jejího jména.**
