@@ -1,11 +1,11 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Irska
-a odeslání Izraele). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po dokončení Izraele
+a odeslání Jižní Koreje). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
-Ukrajina, Rumunsko, Thajsko, Turecko, Irsko).
+Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael).
 
 ---
 
@@ -14,10 +14,10 @@ Ukrajina, Rumunsko, Thajsko, Turecko, Irsko).
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 328** |
-| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, Thajsko 45/45, Turecko 43/43, **Irsko 42/42** |
-| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Izrael 42 zadání ODESLANÝCH, obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
-| Další v pořadí (po Izraeli) | **Jižní Korea 42 a Malajsie 42 — zadání UŽ NAPSANÁ a po lintu, stačí `submit --cc kr` / `--cc my`**; pak Pákistán 42, Portugalsko 42, Saúdská Arábie 42… |
+| Bez ilustrace | **1 286** |
+| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, Thajsko 45/45, Turecko 43/43, Irsko 42/42, **Izrael 42/42** |
+| **ROZDĚLANO — VYŽADUJE OKAMŽITOU AKCI** | **Jižní Korea 42 zadání ODESLANÝCH, obrázky ZATÍM NESTAŽENÉ ani nezkontrolované** — viz bod 2 níž |
+| Další v pořadí (po Jižní Koreji) | **Malajsie 42 — zadání UŽ NAPSANÁ a po lintu, stačí `submit --cc my`**; pak Pákistán 42, Portugalsko 42, Saúdská Arábie 42, Dánsko 41… |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -40,69 +40,71 @@ zase objevil, a to na NEČEKANÉM MÍSTĚ (radlice buldozeru, ne roh).
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Izrael
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: stáhnout a zkontrolovat Jižní Koreu
 
-Dávka pro Izrael (42 otázek, `batches/hg2ti8y35tpmi79z9ov62cyrqeydf80y49f8`) byla odeslána
-na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
+Dávka pro Jižní Koreu (42 otázek, `batches/026oeugkpwgatvv5t76b3nbbdyt3owkurqpe`) byla
+odeslána na konci téhle session a NEBYLA stažená ani zkontrolovaná. Udělej jako první věc:
 
 ```bash
 node scripts/batch-irony-images.js status   # pockej na BATCH_STATE_SUCCEEDED
 node scripts/batch-irony-images.js fetch    # ulozi do img/{id}.jpg
 
 NASTROJE="C:/Users/Evzen/AppData/Local/Temp/claude/C--Users-Evzen-Desktop-kviz/nastroje-ilustrace"
-node "$NASTROJE/archy.js" il     # prehledove archy 3x3
-node "$NASTROJE/rohy.js" il      # arch dolnich rohu (podpisy)
+node "$NASTROJE/archy.js" kr     # prehledove archy 3x3
+node "$NASTROJE/rohy.js" kr      # arch dolnich rohu (podpisy)
 ```
 
-Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-il/`,
+Pak projdi archy (Read tool), najdi vadné, přesuň je do `nastroje-ilustrace/vadne-zaloha-kr/`,
 pošli přes `submit --only id1,id2,...`, zkontroluj znovu, zapiš do CLAUDE.md
-(vzor: zápisy o Irsku a Turecku výš), `validate` + `test:offline`, commit, push.
+(vzor: zápisy o Izraeli a Irsku výš), `validate` + `test:offline`, commit, push.
 
-**Po Izraeli jsou na řadě JIŽNÍ KOREA (42) a MALAJSIE (42) — zadání jsou UŽ NAPSANÁ
-a prošla lintem**, takže stačí `submit --cc kr` a `submit --cc my`. Nepiš je znovu.
+**Po Jižní Koreji je na řadě MALAJSIE (42) — zadání jsou UŽ NAPSANÁ a prošla lintem**,
+takže stačí `submit --cc my`. Nepiš je znovu.
 
-**Nejrizikovější izraelské otázky, projdi je nejpřísněji:**
-- `il-q-hebrejske-pismo` (píše se zprava doleva) — kniha se otevírá z pravé strany
-  a VŠECHNY stránky jsou prázdné. Jakýkoli znak = vada.
-- `il-k-hebrejstina-ozivena` (oživení jazyka) — ceremoniální pohár na kuchyňském stole,
-  žádná písmena.
-- `il-q-eliezer-ben-jehuda` — barevné stuhy zvuku odcházející oknem, žádná písmena.
-- `il-q-svitky-od-mrtveho-more` — **svitky musí zůstat SVINUTÉ v džbánech**; rozvinutý
-  svitek je zaručený text (poučení z rumunské cyrilice a irského Book of Kells).
-- `il-q-vznik-statu-izrael` — řečník je vidět ZEZADU a drží listy prázdnou stranou k nám.
-- `il-k-vlajka` — barvy a rozvržení vypsané explicitně (bílé pole, dva modré vodorovné
-  pruhy, uprostřed modrá šesticípá hvězda ze dvou trojúhelníků); otázka je přímo o tom.
-- `il-q-maccabi-tel-aviv` — šest trofejí „on a plain round base with no plaque or
-  marking of any kind" (past z Řecka a Ukrajiny).
-- `il-q-hummus` — stará kuchařka ve scéně je ZAVŘENÁ a jen s páskovou záložkou.
-- `il-k-klima` — ve scéně je „one road sign post standing completely blank"; kdyby na
-  něm cokoli bylo, je to vada.
-- `il-k-koralovy-utes` — potápěčova tabulka je „completely blank".
-- **Citlivá témata:** všechny izraelské otázky jsou kulturní, přírodní nebo vědecké;
-  žádné politické ani konfliktní. `il-q-korejska-valka-jizni`-typ scéna je jen u
-  `il-q-masada` (Herodův palác, NE obléhání) — zkontroluj, že tam nejsou postavy ani násilí.
+**Nejrizikovější korejské otázky, projdi je nejpřísněji — TŘI jsou o písmu hangul
+a zadání je proto obcházejí úplně bez znaků:**
+- `kr-q-sejong` (král vytvořil hangul) — král podává rolníkovi JEDEN malý dřevěný klíč,
+  zatímco obří truhla s tisíci vyřezanými pečetěmi zůstává zavřená. Žádné znaky.
+- `kr-q-hangul-jizni` (zveřejněno 1446) — kniha je ZAVŘENÁ a sepnutá, na hedvábném polštáři.
+- `kr-k-hangul-vznik` (schválně snadné k naučení) — dvoje přesýpací hodiny, malé skoro
+  hotové a obří pořád tekoucí. Žádná písmena ani tvary znaků.
+- `kr-q-tripitaka-koreana` (81 258 dřevěných desek s texty) — **desky stojí HRANOU**,
+  vidět jsou jen jejich úzké dřevěné konce, nikdy vyřezaná plocha.
+- `kr-q-urovne-zdvorilosti` (7 rovin) — sedm úklonů různé hloubky, žádný nápis.
+- `kr-q-cislovky` (dvě soustavy) — dva různé kuličkové abakusy, žádné číslice.
+- `kr-k-prijmeni` (příjmení první) — rodinná fotka, kde prarodiče stojí VPŘEDU; žádné jmenovky.
+- `kr-q-busan` — kontejnery „in plain solid colours with no marking of any kind"
+  (reálné kontejnery nápisy nesou, to je past z Kanady a Slovenska).
+- `kr-k-namsan` — zámky lásky „every one of them plain and unmarked".
+- `kr-q-ms-2002` — pohár drží dva páry rukou; vlajky se schválně nekreslí vůbec.
+- `kr-q-yu-gwan-sun` — vlajka popsaná explicitně (bílé pole, červeno-modrý kruh,
+  čtyři skupiny černých čárek v rozích), protože je to skutečná vlajka.
 
-**Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka/Irska, platí furt:** slovo,
-které POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text i s
-`left blank` vedle sebe. **Platí to i pro VEDLEJŠÍ gag, ne jen pro dominantu** (turecké
-„ferry queue" postavilo do pozadí budovu s nápisem).
+**Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka/Irska/Izraele, platí furt:**
+slovo, které POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text
+i s `left blank` vedle sebe. **Platí to i pro VEDLEJŠÍ gag** (turecké „ferry queue")
+**a nově i pro popis ÚČELU bez jména věci** — izraelské „a marker post showing where
+sea level would be" vyrobilo na obrázku čitelné „sea level".
 
-**NOVÁ PAST Z IRSKA, nejdražší toho dne: řádek MOOD nese asociace stejně silně jako
-popis scény.** `MOOD: fresh, lucky` u trojlístku vyrobilo ČTYŘLÍSTEK, tedy obrázek
-popírající vlastní odpověď — a to DVAKRÁT po sobě, protože první oprava měnila jen
-popis dominanty a slovo „lucky" v MOOD nechala. **Když je fakt o POČTU nebo tvaru,
-projdi celé zadání včetně MOOD a vyhoď každé slovo, které nese jinou asociaci.**
+**Past z Irska: řádek MOOD nese asociace stejně silně jako popis scény.** `MOOD: fresh,
+lucky` u trojlístku vyrobilo ČTYŘLÍSTEK, tedy obrázek popírající vlastní odpověď, a to
+dvakrát po sobě. **Když je fakt o POČTU nebo tvaru, projdi celé zadání včetně MOOD.**
 
 **Past z Rumunska, lint ji nechytí: vada může být VKUSOVÁ.** U citlivého tématu nestačí
 napsat `not graphic` — scéna nesmí obsahovat prvek, který se dá číst jako tělo nebo násilí.
+V korejské sadě je rizikový `kr-q-gyeongbokgung` (vyhořelý palác) a `kr-q-korejska-valka-jizni`
+(nepodepsaná smlouva) — obojí je v zadání bez postav.
 
 **Past, kterou hlídej po KAŽDÉ opravě: jedna oprava umí vyrobit nový náhodný podpis**,
-i opakovaně u téhož obrázku — u Irska se to stalo hned u DVOU oprav najednou, takže
-bylo nutné třetí kolo. Po každé opravě ZNOVU zkontroluj archy i rohy.
+i opakovaně u téhož obrázku — u Irska se to stalo hned u DVOU oprav najednou a bylo
+nutné třetí kolo. Po každé opravě ZNOVU zkontroluj archy i rohy.
 
 **A podpis NEMUSÍ ležet v rohu.** U Rumunska seděl na radlici buldozeru, u Thajska
-a Irska byl vepsaný přímo do hlíny/trávy a u Turecka dvakrát uvnitř scény — arch dolních
-rohů takové případy MINE. Velkou hladkou plochu (stroj, skálu, zem) projdi výřezem.
+a Irska vepsaný přímo do hlíny/trávy, u Turecka dvakrát uvnitř scény — arch dolních rohů
+takové případy MINE. Velkou hladkou plochu (stroj, skálu, zem) projdi výřezem.
+
+**Občas dávka vrátí obrázek „bez výsledku" bez chybové hlášky** (viděno u Bulharska,
+Ukrajiny a Izraele) — není to vada zadání, stačí ho přeposlat znovu.
 
 ---
 
@@ -138,7 +140,7 @@ node scripts/batch-irony-images.js fetch               # uloží do img/{id}.jpg
 | `aplikuj.js` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
 
 Zálohy vadných verzí leží v `nastroje-ilustrace/vadne-zaloha-{cc}/` (dnes existují pro
-`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es`, `ua`, `ro`, `th`, `tr` a `ie`; `ca` má starší `img-zaloha-ca/`).
+`se`, `fr`, `sk`, `nl`, `ch`, `gr`, `bg`, `es`, `ua`, `ro`, `th`, `tr`, `ie` a `il`; `ca` má starší `img-zaloha-ca/`).
 
 ---
 
@@ -229,9 +231,9 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Stáhnout a zkontrolovat Izrael** (bod 2 výš) — priorita číslo jedna.
-2. **Odeslat Jižní Koreu (42) a Malajsii (42) — zadání jsou hotová a po lintu**, pak
-   pokračovat pořadím: Pákistán 42, Portugalsko 42, Saúdská Arábie 42…
+1. **Stáhnout a zkontrolovat Jižní Koreu** (bod 2 výš) — priorita číslo jedna.
+2. **Odeslat Malajsii (42) — zadání jsou hotová a po lintu**, pak pokračovat pořadím:
+   Pákistán 42, Portugalsko 42, Saúdská Arábie 42, Dánsko 41…
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 

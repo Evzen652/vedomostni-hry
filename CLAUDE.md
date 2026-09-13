@@ -81,6 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-13 — Izrael: 42/42 ilustrací. 5 vad ze 42 (12 %) + 1 selhané generování —
+  a čtyři z pěti byly podpisy. Jediná textová vada vznikla z popisu ÚČELU rekvizity,
+  ne z jejího jména.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb před odesláním.
+  - **NOVÁ VARIANTA staré pasti: nestačí nejmenovat věc, nesmí se popsat ani její ÚČEL.**
+    `il-q-mrtve-more` mělo v podřízeném výčtu „a marker post standing far up a distant
+    cliff **showing where sea level would be**" — slovo „post" je neutrální, ale popis
+    toho, CO ten sloupek ukazuje, vyrobil na obrázku čitelné „sea level" s šipkou.
+    Oprava: účel z popisu úplně pryč, zůstal jen tvar („one horizontal blue band painted
+    round it and nothing else on it"). Po opravě čisté. **Řadí se k řecké „extrémní zóně"
+    na ciferníku — nepřímé pojmenování funkce je stejně nebezpečné jako přímé jméno.**
+  - **4 podpisy** (`il-q-masada`, `il-k-stehovavi-ptaci`, `il-k-hebrejstina-ozivena`,
+    `il-k-sabat-den-klidu`), všechny náhodné, všechny spravilo přeposlání stejného
+    zadání napoprvé. Tři ze čtyř ležely v rohu, takže je arch rohů odhalil.
+  - **1 selhané generování bez chyby** (`il-q-batsheva`, „bez výsledku") — stejný jev
+    jako u bulharských delfínů a ukrajinského Ševčenka. Přeposlání stejného zadání
+    prošlo napoprvé; není to vada zadání, ale výpadek na straně API.
+  - **Rizikové scény prošly napoprvé:** hebrejské písmo zprava doleva (kniha se otevírá
+    z pravé strany a VŠECHNY stránky jsou prázdné), svitky od Mrtvého moře (zůstaly
+    svinuté v džbánech), vyhlášení státu (řečník zezadu, listy prázdnou stranou k nám),
+    oživení hebrejštiny (ceremoniální pohár mezi otlučenými hrnky), vlajka (správně
+    bílé pole, dva modré pruhy, Davidova hvězda) a šest trofejí Maccabi s prázdnými
+    podstavci.
+  - **Falešný poplach ponechán:** `il-q-hummus` má na pozadí pergamenu velmi bledé
+    tvary připomínající písmo. Při zobrazované šířce 405 px jsou pod jedním pixelem —
+    stejný typ nálezu jako `ca-k-imax-kino` a slovenský lišejník, přegenerovat se nevyplatí.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 1 286.** `validate` 0 chyb, `test:offline` 853.
+
 - **2026-09-13 — Irsko: 42/42 ilustrací. 4 vady ze 42 (9,5 %) — a jedna z nich je NOVÝ
   TYP: obrázek popřel odpověď kvůli MÉMU VLASTNÍMU vedlejšímu gagu a kvůli jedinému
   slovu v řádku MOOD. Trojlístek vyšel jako ČTYŘLÍSTEK dvakrát po sobě.**
