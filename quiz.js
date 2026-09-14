@@ -943,7 +943,9 @@
   }
 
   function renderContinentPick(){
-    say("Kam se vydáme? Vyber kontinent.");
+    // Obrazovka nabízí i Česko a Celý svět, takže nadpis je otázka „Kam se vydáme?",
+    // ne pokyn „Vyber kontinent" (ten na dvě z osmi dlaždic nesedí). Bublina ho neopakuje.
+    say("Kam to dnes bude?");
     document.getElementById("qz-shell").style.transform="";
     const availConts = CONTINENTS.filter(c => contHasQuestions(c.id));
     const tiles = CONTINENTS.map(c => {
@@ -965,10 +967,10 @@
     // do výběru zemí a do razítka u nadpisu (flagStamp).
     const czTile = czN ? tileHtml({ ic:COUNTRY_FLAG["cz"]||"🏳️", img:"assets/jump-cz.jpg", t:"Česko",
       selectable:true, sub: czN+" "+plur(czN,"otázka","otázky","otázek"), attr:`data-jump="cz"` }) : "";
-    const steps = [{label:"Kontinent"}];
+    const steps = [{label:"Kam"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
-      <h2>Vyber kontinent</h2>
+      <h2>Kam se vydáme?</h2>
       <!-- Návod k obrazovce stojí POD nadpisem, ne nad tlačítkem dole (přání hráče
            2026-09-08). Je proto natrvalo vykreslený a nemizí po výběru: kdyby blikal,
            skočila by při prvním kliknutí celá mřížka dlaždic o dva řádky nahoru. Tím
@@ -977,7 +979,7 @@
            kde tlačítko čeká na dvě různé volby — hlídají to kontroly v test:offline.
            POZOR: tenhle komentář je uvnitř template literalu, takže v něm nesmí být
            zpětný apostrof. Jeden tu byl a utnul řetězec — appka se nevykreslila vůbec. -->
-      <p class="qz-pickhint">Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět.</p>
+      <p class="qz-pickhint">Vyber jeden nebo víc kontinentů — nebo rovnou Česko či celý svět.</p>
       <div class="qz-tiles">${worldTile}${czTile}${tiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cont-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>
     </div>`;
