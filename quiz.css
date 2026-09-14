@@ -634,6 +634,26 @@
 .qz-sw.on::after { left: 23px; }
 .qz-setnote { font-size: 11.5px; color: var(--muted); font-style: italic; text-align: center; }
 
+/* Nastavení párty — VZDUŠNOST (2026-09-15, výtka hráče „boxy i texty jsou nalepené na
+   sebe"). Naměřeno předtím: nadpis → karta 20, mezi kartami 12–14, karty → poznámka 12,
+   poznámka → tlačítko 12, uvnitř karty 12 px odsazení a 8 px pod nadpisem — jedna plochá
+   mezera všude, takže obrazovka splynula v blok. Nově odstupňováno: mezi skupinami víc
+   (nadpis → karty 34, karta ↔ karta 18, karty → poznámka 30), uvnitř míň (poznámka patří
+   k tlačítku, 12). Scoped na .qz-partysetup: .qz-setup/.qz-setcard sdílí i online část. */
+.qz-partysetup { gap: 18px; }
+.qz-partysetup > h2 { margin-bottom: 16px; }
+.qz-partysetup .qz-setrow { gap: 18px; }
+.qz-partysetup .qz-setcard { padding: 20px 22px; }
+.qz-partysetup .qz-setcard h3 { margin-bottom: 16px; }
+.qz-partysetup .qz-prow { padding: 7px 0; }
+.qz-partysetup .qz-addp { padding-top: 12px; }
+.qz-partysetup .qz-fieldlabel { margin-bottom: 10px; }
+.qz-partysetup > .qz-setnote { margin-top: 12px; margin-bottom: -6px; }
+@media (max-width: 520px) {
+  .qz-partysetup .qz-setcard { padding: 16px; }
+  .qz-partysetup > h2 { margin-bottom: 8px; }
+}
+
 .qz-scoreboard { display: flex; gap: 8px; padding: 58px 16px 0; flex-wrap: wrap; position: relative; z-index: 3; }
 .qz-pl { flex: 1; min-width: 120px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px; padding: 7px 10px;
   display: flex; align-items: center; gap: 8px; opacity: .72; box-shadow: 0 3px 0 #e3d5b8; font-family: inherit; color: var(--ink); }

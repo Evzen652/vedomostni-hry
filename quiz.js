@@ -1380,7 +1380,7 @@
     const _cLabel3=esc(COUNTRY);
     const backToCountry4 = () => renderCountryPick(S.sel.conts || [S.sel.cont]);
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:_cLabel3, fn:backToCountry4}, {label:selSectionLabel(), fn:renderSectionPick}];
-    body.innerHTML = `<div class="qz-screen qz-setup">
+    body.innerHTML = `<div class="qz-screen qz-setup qz-partysetup">
       ${pickHeadHtml(steps)}
       <h2>${ICO_SPARK} Nová výprava — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <div class="qz-setcard">

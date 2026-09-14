@@ -81,6 +81,15 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-15 — Nastavení párty dostalo vzdušnost: odstupňované mezery místo jedné ploché.**
+  Výtka hráče „boxy i texty jsou příliš nalepené na sebe". Naměřeno předtím 12–20 px mezi
+  VŠEMI bloky a 8 px pod nadpisem karty. Nově (změřeno po úpravě na 1100×800): nadpis →
+  karty **34**, karta ↔ karta **18**, karty → poznámka o fondu **30**, poznámka → „Jdeme na to"
+  **12** (patří k sobě), odsazení karty 20/22, nadpis karty → obsah 16, řádky hráčů 14.
+  - **Scoped na novou třídu `.qz-partysetup`**, protože `.qz-setup` a `.qz-setcard` používá
+    i online část (15×) — sdílené pravidlo by jí mezery tiše změnilo.
+  - Obrazovka se na 1100×800 pořád vejde bez scrollu (772 px). Pod 520 px je odsazení karty 16.
+
 - **2026-09-15 — Délky párty: Rychlá 5, Klasik 8, Maraton 12 kol (bylo 3 / 5 / 8). Výchozí je Klasik = 8.**
   Přání hráče. Výchozí `S.totalRounds` se posunulo s Klasikem, jinak by nastavení otevřelo
   bez vybrané volby. **12 kol je víc než podlaha fondu (10 otázek na pásmo v každé zemi)**,
