@@ -332,7 +332,7 @@
     });
     const allowSteal = S.mode==="party" && S.steal && S.players.length>1;
     box.insertAdjacentHTML("beforeend", `
-      <div class="qz-quipbox"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}"</div></div>
+      <div class="qz-quipbox"><div class="qz-hl">čas</div><div class="qz-ht">„${esc(quipText)}“</div></div>
       ${allowSteal ? stealHtml(q, "__timeout__") : frowHtml(q)}`);
     if(allowSteal) wireSteal(q, "__timeout__"); else wireFrow(q);
     presunPodObrazek(box);
@@ -829,7 +829,7 @@
   function partyPrazdnoNote(){
     const p = prazdnaPasmaParty();
     if(!p.length) return "";
-    const jmena = p.map(b => `„${esc(BAND_NAMES[b]||b)}"`).join(" a ");
+    const jmena = p.map(b => `„${esc(BAND_NAMES[b]||b)}“`).join(" a ");
     return `<div class="qz-setnote">Pro ${p.length===1?"pásmo":"pásma"} ${jmena} tu u téhle volby ` +
            `${p.length===1?"není":"nejsou"} žádné otázky. Přidej téma nebo zemi, nebo hráči přepni pásmo.</div>`;
   }
@@ -838,7 +838,7 @@
   // řekne a nabídne cestu ven — start je do té doby zablokovaný (viz bandPool).
   function prazdnoNote(total){
     if(total || !S.bandTouched) return "";
-    return `<p class="qz-setnote">Pro pásmo „${esc(BAND_NAMES[S.band]||S.band)}" tu nemáme ani jednu otázku. ` +
+    return `<p class="qz-setnote">Pro pásmo „${esc(BAND_NAMES[S.band]||S.band)}“ tu nemáme ani jednu otázku. ` +
            `Zkus jiné pásmo, přidej téma nebo zemi — drobečky nahoře tě vezmou zpátky.</p>`;
   }
   function partyOpakovaniNote(){
@@ -847,7 +847,7 @@
     const tesna = pasma.map(b => ({ b, n: bandPool(b).length })).filter(x => x.n < S.totalRounds);
     if(!tesna.length) return "";
     const t = tesna.sort((a,b)=>a.n-b.n)[0];
-    return `<div class="qz-setnote">Pásmo „${esc(BAND_NAMES[t.b]||t.b)}" má u téhle volby jen ${t.n} ${plur(t.n,"otázku","otázky","otázek")} — ` +
+    return `<div class="qz-setnote">Pásmo „${esc(BAND_NAMES[t.b]||t.b)}“ má u téhle volby jen ${t.n} ${plur(t.n,"otázku","otázky","otázek")} — ` +
            `v ${S.totalRounds} kolech se některé zopakují. Kratší hra nebo víc zemí to spraví.</div>`;
   }
   function qLimitOptions(total){
@@ -1284,7 +1284,7 @@
       let prazd = body.querySelector(".qz-setnote");
       if(!total && S.bandTouched){
         if(!prazd){ prazd=document.createElement("p"); prazd.className="qz-setnote"; go.parentNode.insertBefore(prazd, go); }
-        prazd.textContent = `Pro pásmo „${BAND_NAMES[S.band]||S.band}" tu nemáme ani jednu otázku. ` +
+        prazd.textContent = `Pro pásmo „${BAND_NAMES[S.band]||S.band}“ tu nemáme ani jednu otázku. ` +
                             `Zkus jiné pásmo, přidej téma nebo zemi — drobečky nahoře tě vezmou zpátky.`;
       } else if(prazd){ prazd.remove(); }
       go.disabled = !(S.bandTouched && S.qLimitTouched && total);
@@ -1745,7 +1745,7 @@
     const allowSteal = S.mode==="party" && S.steal && !correct && !gold && S.players.length>1;
     box.insertAdjacentHTML("beforeend", `
       <div class="qz-quipbox">
-        <div class="qz-ht">„${esc(quipText||"")}"</div>
+        <div class="qz-ht">„${esc(quipText||"")}“</div>
         ${(gold||gained)?`<div class="qz-hl points">${gold?`${ICO_STAR} zlatá odpověď${gained?` · ${pointsLabel(gained)}`:""}`:pointsLabel(gained)}</div>`:""}
       </div>
       ${allowSteal ? stealHtml(q, choice) : frowHtml(q)}`);
@@ -1832,17 +1832,26 @@
     document.getElementById("qz-shell").style.transform="";
     const sorted=[...S.players].sort((a,b)=>b.score-a.score);
     const winner=sorted[0];
-    const vic = (data.fondy && data.fondy.victory) ? pick(resolveQuip(data.fondy.victory, winner.band)) : "Máme vítěze!";
-    say(vic); if(S.voice) speakTTS(winner.name+" vyhrává! "+vic);
-    const rows=sorted.map((p,i)=>`<div class="qz-standrow${i===0?" win":""}">
-      <span class="qz-rank">${medalSvg(i)}</span>
+    // Remíza: do 2026-09-15 vyhrál při shodném skóre ten, kdo seděl v pořadí první —
+    // i při 0:0 dostal korunu a hlášku „Zeměkoule se točí jen pro tebe".
+    const spolecni=sorted.filter(p=>p.score===winner.score);
+    const remiza=spolecni.length>1;
+    // Hláška se řídí nejmladším pásmem mezi remizujícími, ať tón sedí i dítěti u stolu.
+    const PORADI=["deti","starsi","dospeli"];
+    const bandRemizy=spolecni.map(p=>p.band).sort((a,b)=>PORADI.indexOf(a)-PORADI.indexOf(b))[0];
+    const fond = data.fondy && (remiza ? data.fondy.tie : data.fondy.victory);
+    const vic = fond ? pick(resolveQuip(fond, remiza ? bandRemizy : winner.band)) : (remiza ? "Remíza!" : "Máme vítěze!");
+    say(vic); if(S.voice) speakTTS((remiza ? "Remíza! " : winner.name+" vyhrává! ")+vic);
+    // Pořadí = počet hráčů s VYŠŠÍM skóre, takže stejné body dostanou stejnou medaili.
+    const rows=sorted.map(p=>{ const r=sorted.filter(q=>q.score>p.score).length; return `<div class="qz-standrow${r===0?" win":""}">
+      <span class="qz-rank">${medalSvg(r)}</span>
       <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
       <span class="qz-standname">${esc(p.name)}</span>
-      <span class="qz-standscore">${ICO_STAR} <b>${p.score}</b></span></div>`).join("");
+      <span class="qz-standscore">${ICO_STAR} <b>${p.score}</b></span></div>`; }).join("");
     body.innerHTML=`<div class="qz-screen qz-end">
       <img class="qz-endimg" src="assets/end-party.jpg" alt="" onerror="this.style.display='none'">
-      <h2>${ICO_TROPHY} ${esc(winner.name)} vítězí!</h2>
-      <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}"</div></div>
+      <h2>${ICO_TROPHY} ${remiza ? "Remíza!" : esc(winner.name)+" vítězí!"}</h2>
+      <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}“</div></div>
       <div class="qz-standings">${rows}</div>
       <div class="qz-endrow"><button class="qz-go" id="qz-again">Odveta ${handArrowSvg(false)}</button><button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button></div>
     </div>`;

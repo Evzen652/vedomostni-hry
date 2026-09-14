@@ -81,6 +81,25 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-15 — Párty při shodném skóre vyhlásí remízu, ne toho, kdo seděl první. A výsledkové obrazovky mají ilustrace.**
+  - **Do teď vyhrál při shodě první v pořadí** — i při 0:0 dostal korunu a hlášku „Zeměkoule se
+    dnes točí jen pro tebe!". `endCeremony()` teď při shodném nejvyšším skóre ukáže „Remíza!"
+    a hlášku z nového fondu **`tie`** ve `fondy.json` (tři pásma jako `victory`). Pásmo hlášky je
+    **nejmladší mezi remizujícími**, ať tón sedí i dítěti u stolu. Medaile se počítá jako počet
+    hráčů s VYŠŠÍM skóre, takže stejné body = stejná medaile i u druhého a dalších míst.
+  - **Hlášky remízy nezačínají slovem „Remíza"** — stojí v nadpisu hned nad nimi a hlas je
+    předříkává taky (`speakTTS("Remíza! " + vic)`).
+  - **`fondy.json` NEJDE přepsat přes `JSON.stringify`** — round-trip s odsazením 2 mezery nesedí
+    (ruční formátování jinde v souboru). Vkládá se textově a pojistka to hlídá.
+  - **Sedm koncových rovných uvozovek `„${…}"` v `quiz.js` → `“`** (hláška u odpovědi, po vypršení
+    času, vyhlášení, zprávy o pásmech). Audit konzistence je nechytal: čte data, ne šablony v kódu.
+  - **Ilustrace na výsledku sóla/školy (`end-solo.jpg`) a vyhlášení párty (`end-party.jpg`)**, třída
+    `.qz-endimg` s rámečkem jako dlaždice rozcestníku. Dlaždice kontinentů a režimů byly týž den
+    dobarvené lokálně (`sharp`, sytost jen tam, kde barva už je — papír nežloutne); Evropa je nová
+    z Gemini, přebarvením staré, protože „MUCH more saturated" v promptu dalo komiks.
+  - **Past zaplacená znovu: `node -e` s regulárním výrazem v Bashi.** `\\$` v dvojitých uvozovkách
+    výraz rozbilo a nahrazení hlásilo 0 nálezů. Skripty s regexy psát nástrojem Write.
+
 - **2026-09-14 — Stažené tvary „Uhodls", „věděls" prošly kontrolou rodu; 11 hlášek přepsáno. Plus „Česko" všude a jedna nestabilní kontrola v `test:api`.**
   Nalezeno při převzetí na druhém počítači, ručním průchodem hry — ne nástrojem.
   - **Zápis z 2026-09-11 „419 → 0" nebyl úplný.** `audit-konzistence.js` hledal dvojici osoba +
