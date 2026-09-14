@@ -143,7 +143,9 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     času, vyhlášení, zprávy o pásmech). Audit konzistence je nechytal: čte data, ne šablony v kódu.
   - **Ilustrace na výsledku sóla/školy (`end-solo.jpg`) a vyhlášení párty (`end-party.jpg`)**, třída
     `.qz-endimg` s rámečkem jako dlaždice rozcestníku. Dlaždice kontinentů a režimů byly týž den
-    dobarvené lokálně (`sharp`, sytost jen tam, kde barva už je — papír nežloutne); Evropa je nová
+    dobarvené lokálně (`sharp`, sytost jen tam, kde barva už je — papír nežloutne; váha podle
+    vzdálenosti pixelu od barvy papíru navzorkované z rohů, síla ~0,55 — takhle později
+    i `auth-hero.jpg` na obrazovce Nový profil); Evropa je nová
     z Gemini, přebarvením staré, protože „MUCH more saturated" v promptu dalo komiks.
   - **Past zaplacená znovu: `node -e` s regulárním výrazem v Bashi.** `\\$` v dvojitých uvozovkách
     výraz rozbilo a nahrazení hlásilo 0 nálezů. Skripty s regexy psát nástrojem Write.
