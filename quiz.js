@@ -1856,6 +1856,7 @@
     const vic = data.fondy && data.fondy.victory ? pick(resolveQuip(data.fondy.victory, S.band)) : "Dohráno!";
     say(vic); if(S.voice) speakTTS(vic);
     body.innerHTML = `<div class="qz-screen qz-end">
+      <img class="qz-endimg" src="assets/end-solo.jpg" alt="" onerror="this.style.display='none'">
       <h2>Výprava dokončena!</h2>
       <div class="qz-endscore">${S.school?"Třída získala":"Získal(a) jsi"} ${ICO_STAR} <b>${score}</b></div>
       <p style="color:var(--muted)">Z ${S.order.length} otázek · Teoretické maximum ${max} bodů</p>

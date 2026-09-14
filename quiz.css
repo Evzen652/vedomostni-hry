@@ -350,6 +350,11 @@
 /* z holého čísla je věta — 52 px by přeteklo, korálová zůstává jako akcent proti tyrkysovému nadpisu */
 .qz-endscore { font-family: 'Nunito', sans-serif; font-size: clamp(24px, 4vw, 34px); font-weight: 700; color: var(--coral); }
 .qz-endrow { display: flex; gap: 12px; }
+/* Ilustrace nad výsledkem — rámeček jako u dlaždic rozcestníku (.qz-mode .ic-img), jen větší.
+   Margin navíc dělá z obrázku vlastní skupinu nad nadpisem (pravidlo o vzdušnosti). */
+.qz-endimg { width: min(220px, 52vw); height: auto; aspect-ratio: 1 / 1; object-fit: cover;
+  border-radius: 18px; border: 3px solid #fffdf6; outline: 2px solid #e3d5b8;
+  box-shadow: 0 6px 16px rgba(120, 90, 50, .18); margin-bottom: 8px; }
 
 @media (max-width: 767px) {
   /* Obrázek na telefonu NAHOŘE, karta pod ním (přání 2026-09-01). DOM pořadí se
