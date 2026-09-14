@@ -984,7 +984,7 @@
     // do výběru zemí a do razítka u nadpisu (flagStamp).
     const czTile = czN ? tileHtml({ ic:COUNTRY_FLAG["cz"]||"🏳️", img:"assets/jump-cz.jpg", t:"Česko",
       selectable:true, sub: czN+" "+plur(czN,"otázka","otázky","otázek"), attr:`data-jump="cz"` }) : "";
-    const steps = [{label:"Kam"}];
+    const steps = [{label:"Vyber destinaci"}];
     body.innerHTML = `<div class="qz-screen qz-pick">
       ${pickHeadHtml(steps)}
       <h2>Kam se vydáme?</h2>
