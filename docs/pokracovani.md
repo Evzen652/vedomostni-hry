@@ -136,7 +136,6 @@ z webu), platby a provoz. Detaily v artefaktu.
   ověřeno).
 - Odchod z čekárny křížkem nechá hráče ve frontě.
 - `join.js` nekontroluje `game.status`.
-- `applyRotation()` není navěšená na `resize`.
 - Kontrast drobných textů pod 4,5:1 a dotykové cíle pod 44 px (plošná změna palety,
   patří hráči k rozhodnutí).
 

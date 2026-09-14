@@ -77,10 +77,12 @@
   // Data zůstávají (`source_url` u otázek i karet), stačí přepnout na true.
   const SHOW_SOURCE_LINK = false;
   const COLORS = ["#e2725b","#2a7f7f","#d9a441","#8a6fae","#7ba05b","#4e9e6f"];
-  const SIDES = [{k:"dole",deg:0},{k:"nahoře",deg:180},{k:"vlevo",deg:90},{k:"vpravo",deg:270}];
+  // Otáčení obrazovky u stolu: S.rot (0/90/180/270) mění VÝHRADNĚ tlačítko „Otoč obrazovku"
+  // (jen párty a jen na tabletu, viz .qz-rotbtn v quiz.css). Automatika podle strany hráče
+  // i přepínač v nastavení byly 2026-09-15 zrušené — hráč chtěl otáčet sám.
   const S = { mode:"solo", order:[], idx:0, band:"dospeli", bandTouched:false, answered:false,
               players:[], turn:0, round:1, totalRounds:5, qServed:0,
-              voice:false, steal:false, rotate:"auto", manualRot:null,
+              voice:false, steal:false, rot:0,
               school:false, timer:0, saveId:null,
               qLimit:null, qLimitTouched:false, schoolLevel:3 };
 
@@ -91,7 +93,7 @@
   function say(t){ hostBubble.textContent = t||""; hostBubble.style.display = t ? "" : "none"; }
 
   // aktivní hráč / pásmo (v sólu jediný „hráč")
-  function cur(){ return S.players[S.turn] || {name:"Ty", band:S.band, color:COLORS[0], score:0, side:"dole"}; }
+  function cur(){ return S.players[S.turn] || {name:"Ty", band:S.band, color:COLORS[0], score:0}; }
   function bandOf(){ return S.mode==="party" ? cur().band : S.band; }
   function qCurrent(){ return S.mode==="party" ? S.order[S.qServed % S.order.length] : S.order[S.idx]; }
 
@@ -183,8 +185,8 @@
       cc:(S.sel&&S.sel.cc)||null, ccs:(S.sel&&S.sel.ccs)||null, section:(S.sel&&S.sel.section)||null,
       qLimit:S.qLimit, schoolLevel:S.schoolLevel,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
-      turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, rotate:S.rotate, timer:S.timer||0,
-      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, side:p.side, score:p.score })) };
+      turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, timer:S.timer||0,
+      players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, score:p.score })) };
   }
   function autosave(){
     if(!S.saveId) return;
@@ -301,8 +303,8 @@
     S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
     // hlas i steal jsou dočasně schované z UI (viz renderSetup) — starší uložená hra s
     // voice:true/steal:true by jinak dál mluvila / nabízela krádež bodů, aniž by šel přepínač vypnout
-    S.voice=false; S.steal=false; S.rotate=st.rotate||"auto"; S.timer=st.timer||0; S.manualRot=null;
-    S.players=(st.players||[]).map(p=>({...p})); if(!S.players.length) S.players=[{name:"Ty",band:S.band,color:COLORS[0],score:0,side:"dole"}];
+    S.voice=false; S.steal=false; S.timer=st.timer||0; S.rot=0;
+    S.players=(st.players||[]).map(p=>({...p})); if(!S.players.length) S.players=[{name:"Ty",band:S.band,color:COLORS[0],score:0}];
     S.saveId=id;
     const shell=document.getElementById("qz-shell"); shell.classList.toggle("qz-school", S.school); shell.style.transform="";
     requestWake(); if(S.mode==="party") applyRotation();
@@ -364,11 +366,10 @@
     parts.push(q.question); const qq=resolveQuip(q.quip_question, bandOf()); if(qq) parts.push(qq); speakTTS(parts.join(" ")); }
 
   // ---- otáčení obrazovky k hráči (kulatý stůl) ----
-  function sideDeg(side){ const s=SIDES.find(x=>x.k===side); return s?s.deg:0; }
   function applyRotation(){
     const shell=document.getElementById("qz-shell");
     if(S.mode!=="party"){ shell.style.transform=""; return; }
-    let deg = (S.manualRot!=null) ? S.manualRot : (S.rotate==="auto" ? sideDeg(cur().side) : 0);
+    const deg = S.rot||0;
     const rot=(deg%180)!==0, vw=window.innerWidth, vh=window.innerHeight;
     const w=shell.offsetWidth||960, h=shell.offsetHeight||600;
     let scale = rot ? Math.min(vw/h, vh/w, 1) : Math.min(vw/w, vh/h, 1);
@@ -376,6 +377,11 @@
     shell.style.transformOrigin="center center";
     shell.style.transform = `rotate(${deg}deg) scale(${scale.toFixed(3)})`;
   }
+  // Jeden stisk = čtvrt otáčky po směru hodinek (dole → vlevo → nahoře → vpravo → dole).
+  function otocObrazovku(){ S.rot = ((S.rot||0) + 90) % 360; applyRotation(); }
+  // Otočení tabletu nebo změna okna mění poměr stran, a tím i zmenšení otočené hry.
+  // Jen když je shell právě otočený — jinak by resize přepsal transform i jiným obrazovkám.
+  window.addEventListener("resize", () => { if(S.mode==="party" && document.getElementById("qz-shell").style.transform) applyRotation(); });
 
   // ---- reálný 3D glóbus v medailonku (natáčí se na zemi otázky) ----
   // Malovaná akvarelová mapa světa, equirektangulární 1456×728 (od 2026-09-01; předtím
@@ -1201,7 +1207,7 @@
     S.mode="solo"; S.school=true;
     S.timer=0;   // viz startGame — časomíra z párty se sem nesmí přenést
     S.schoolLevel=level;   // ať „Hrát znovu" po škole spustí zase školu, ne sólo
-    S.players=[{ name:"Třída", band:"deti", color:COLORS[1], score:0, side:"dole" }];
+    S.players=[{ name:"Třída", band:"deti", color:COLORS[1], score:0 }];
     S.turn=0;
     const filtered = data.questions.filter(q => (q.difficulty||1) <= level);
     const pool = filtered.length ? filtered : data.questions;
@@ -1335,7 +1341,7 @@
     // kde vypnout, protože ani jedna z těch obrazovek přepínač nemá. Ve škole navíc
     // timeoutReveal() po patnácti vteřinách sám odhalil odpověď třídě. (2026-09-01)
     S.timer=0;
-    S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0, side:"dole" }];
+    S.players=[{ name:"Ty", band:S.band, color:COLORS[0], score:0 }];
     S.turn=0;
     // tři pásma: „děti" jen vlastní fond (q.kids), „puberťáci" lehčí obecné trivia (difficulty ≤2), „dospělí" celé obecné trivia — všechna bez dětských otázek
     const pool = bandPool(S.band);
@@ -1352,8 +1358,8 @@
   function ensureSetup(){
     if(S.players.length>=2) return;
     S.players = [
-      { name:"", band:"deti",    color:COLORS[0], side:"dole",   score:0 },
-      { name:"", band:"dospeli", color:COLORS[1], side:"nahoře", score:0 }
+      { name:"", band:"deti",    color:COLORS[0], score:0 },
+      { name:"", band:"dospeli", color:COLORS[1], score:0 }
     ];
   }
   function renderSetup(){
@@ -1401,8 +1407,9 @@
                pryč, ale stealHtml/wireSteal/finishSteal zůstávají funkční pod kapotou. allowSteal
                na obou místech (answer, timeoutReveal) čte S.steal, a to už nejde v UI nastavit na
                true, takže se ty větve nikdy nespustí (viz i tvrdý reset v resumeSave). -->
-          <div class="qz-opt" role="switch" tabindex="0" aria-checked="${S.rotate==="auto"}" data-opt="rotate"><span class="qz-sw${S.rotate==="auto"?" on":""}"></span> Otáčet obrazovku k hráči</div>
-          <div class="qz-fieldlabel" style="margin-top:12px">Časový limit na odpověď</div>
+          <!-- Přepínač automatického otáčení k hráči zrušen 2026-09-15: otáčí se jen tlačítkem
+               „Otoč obrazovku" během hry, a to jen na tabletu (viz otocObrazovku). -->
+          <div class="qz-fieldlabel">Časový limit na odpověď</div>
           <div class="qz-bands" style="margin-top:4px">
             <button class="qz-chip${S.timer===0?" on":""}" data-timer="0">Vyp</button>
             <button class="qz-chip${S.timer===30?" on":""}" data-timer="30">Mírný · 30 s</button>
@@ -1422,14 +1429,13 @@
       row.querySelectorAll(".qz-bandbtn").forEach(b => b.addEventListener("click", () => { S.players[i].band=b.dataset.band; renderSetup(); }));
       const rem=row.querySelector(".qz-prem"); if(rem) rem.addEventListener("click", () => { S.players.splice(+rem.dataset.rem,1); renderSetup(); });
     });
-    const add=body.querySelector("#qz-addp"); if(add) add.addEventListener("click", () => { const i=S.players.length; S.players.push({ name:"", band:"dospeli", color:COLORS[i%COLORS.length], side:SIDES[i%SIDES.length].k, score:0 }); renderSetup(); });
+    const add=body.querySelector("#qz-addp"); if(add) add.addEventListener("click", () => { const i=S.players.length; S.players.push({ name:"", band:"dospeli", color:COLORS[i%COLORS.length], score:0 }); renderSetup(); });
     body.querySelectorAll("[data-rounds]").forEach(b => b.addEventListener("click", () => { S.totalRounds=+b.dataset.rounds; renderSetup(); }));
     body.querySelectorAll("[data-timer]").forEach(b => b.addEventListener("click", () => { S.timer=+b.dataset.timer; renderSetup(); }));
     body.querySelectorAll(".qz-opt").forEach(o => {
       const prepni = () => {
       const k=o.dataset.opt;
       if(k==="voice") S.voice=!S.voice;
-      else if(k==="rotate") S.rotate = S.rotate==="auto" ? "button" : "auto";
       else if(k==="steal") S.steal=!S.steal;
       renderSetup();
       };
@@ -1478,7 +1484,7 @@
     // Pojistka proti frontě plné `undefined` — viz prazdnaPasmaParty(). Sem se dá dojít
     // i z „Hrát znovu" na výsledkové obrazovce, kde žádná kontrola není.
     if(prazdnaPasmaParty().length) return renderSetup();
-    S.mode="party"; S.order=buildPartyOrder(); S.qServed=0; S.turn=0; S.round=1; S.manualRot=null; S.school=false; newSave();
+    S.mode="party"; S.order=buildPartyOrder(); S.qServed=0; S.turn=0; S.round=1; S.rot=0; S.school=false; newSave();
     document.getElementById("qz-shell").classList.remove("qz-school");
     S.players.forEach(p=>{ p.score=0; });
     applyRotation();
@@ -1554,12 +1560,15 @@
   function scorePillHtml(){ return `${ICO_STAR} <b>${cur().score}</b>`; }
   function topHtml(n, total){
     if(S.mode==="party"){
-      const pills=S.players.map((p,i)=>`<button class="qz-pl${i===S.turn?" active":""}" data-turn="${i}">
+      // Praporek hráče není tlačítko: poklep na něj dřív natáčel obrazovku k hráči,
+      // otáčí se ale jen tlačítkem .qz-rotbtn (2026-09-15).
+      const pills=S.players.map((p,i)=>`<div class="qz-pl${i===S.turn?" active":""}">
         <span class="qz-pav" style="background:${p.color}">${esc(inicial(p.name))}</span>
         <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">Na tahu</span>':""}</span>
-        <span class="qz-plscore" data-score="${i}">${p.score}</span></button>`).join("");
+        <span class="qz-plscore" data-score="${i}">${p.score}</span></div>`).join("");
       return `<div class="qz-scoreboard">${pills}</div>
-        <div class="qz-subtop"><span class="qz-progress">Kolo ${S.round}/${S.totalRounds} · otázka ${n}</span></div>`;
+        <div class="qz-subtop"><span class="qz-progress">Kolo ${S.round}/${S.totalRounds} · otázka ${n}</span>
+          <button class="qz-rotbtn" id="qz-rot" type="button">Otoč obrazovku</button></div>`;
     }
     return `<div class="qz-top">
       <span class="qz-progress">Otázka ${n}/${total}</span>
@@ -1576,9 +1585,8 @@
       mb.setAttribute("aria-pressed", String(S.voice));
       if(!S.voice) stopTTS(); else speakCurrent(q);
     });
-    body.querySelectorAll(".qz-pl[data-turn]").forEach(b => b.addEventListener("click", () => {
-      if(S.mode!=="party") return; S.manualRot=sideDeg(S.players[+b.dataset.turn].side); applyRotation();
-    }));
+    const rb=body.querySelector("#qz-rot");
+    if(rb) rb.addEventListener("click", otocObrazovku);
   }
 
   function renderQuestion(){
@@ -1827,13 +1835,13 @@
     S.qServed++; S.turn++;
     if(S.turn>=S.players.length){ S.turn=0; S.round++; }
     if(S.round>S.totalRounds){ endCeremony(); return; }
-    S.manualRot=null; applyRotation();
     renderQuestion();
+    applyRotation();   // otočení zůstává; jen se přepočte zmenšení na výšku nové otázky
   }
 
   function endCeremony(){
     stopTTS(); clearTimer(); clearSave(); releaseWake();
-    document.getElementById("qz-shell").style.transform="";
+    S.rot=0; document.getElementById("qz-shell").style.transform="";
     const sorted=[...S.players].sort((a,b)=>b.score-a.score);
     const winner=sorted[0];
     // Remíza: do 2026-09-15 vyhrál při shodném skóre ten, kdo seděl v pořadí první —

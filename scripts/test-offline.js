@@ -622,6 +622,46 @@ for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
 // stranu. Drží to na čtyřech věcech, které se dají rozbít každá zvlášť, aniž by appka
 // spadla (jen by se vrátily rozmazané pruhy), takže je hlídá test:
 const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
+
+// Otáčení obrazovky v párty (2026-09-15, přání hráče): žádná automatika podle strany
+// hráče a žádný přepínač v nastavení — jen tlačítko „Otoč obrazovku", které se ukáže
+// výhradně na tabletu a každým stiskem otočí o čtvrt otáčky po směru hodinek.
+{
+  const bez = bezKomentaru(SRC);
+  kontrola(!/Otáčet obrazovku/.test(bez) && !/data-opt="rotate"/.test(bez),
+    "nastavení párty má zase přepínač otáčení obrazovky — hráč ho nechce");
+  kontrola(!/manualRot|sideDeg|S\.rotate\b|SIDES/.test(bez),
+    "vrátila se automatika otáčení k hráči (manualRot/sideDeg/S.rotate/SIDES) — otáčí se jen tlačítkem");
+
+  const zac = SRC.indexOf("function topHtml(");
+  const top = SRC.slice(zac, SRC.indexOf("\n  }", zac));
+  kontrola(/class="qz-rotbtn"/.test(top) && /Otoč obrazovku/.test(top),
+    "horní lišta párty nemá tlačítko „Otoč obrazovku\" (.qz-rotbtn)");
+  const zacW = SRC.indexOf("function wireTop(");
+  kontrola(/otocObrazovku/.test(SRC.slice(zacW, SRC.indexOf("\n  }", zacW))),
+    "wireTop nenapojuje tlačítko na otocObrazovku");
+
+  const zacO = SRC.indexOf("function otocObrazovku(");
+  const srcO = SRC.slice(zacO, SRC.indexOf("\n", zacO));
+  const S = { rot: 0 };
+  const otoc = new Function("S", "applyRotation", srcO + "\nreturn otocObrazovku;")(S, () => {});
+  const kroky = [];
+  for (let i = 0; i < 5; i++) { otoc(); kroky.push(S.rot); }
+  kontrola(kroky.join(",") === "90,180,270,0,90",
+    "otocObrazovku netočí po čtvrtotáčkách dokola (vyšlo " + kroky.join(",") + ")");
+
+  const zacN = SRC.indexOf("function next(");
+  kontrola(!/S\.rot\s*=/.test(SRC.slice(zacN, SRC.indexOf("\n  }", zacN))),
+    "next() mění S.rot — otočení se nemá měnit se změnou tahu, jen tlačítkem");
+
+  // Tlačítko musí být mimo tablet SKRYTÉ: výchozí display:none a zobrazení jen v media
+  // query s dotykem a minimální šířkou i výškou (výška vyřadí telefon naležato).
+  const css = SRC_CSS.replace(/\/\*[\s\S]*?\*\//g, "");
+  kontrola(/\.qz-rotbtn\s*\{[^}]*display:\s*none/.test(css),
+    ".qz-rotbtn není ve výchozím stavu skryté — ukázalo by se i na počítači a telefonu");
+  const mq = /@media\s*\(pointer:\s*coarse\)\s*and\s*\(min-width:\s*\d+px\)\s*and\s*\(min-height:\s*\d+px\)\s*\{\s*\.qz-rotbtn\s*\{[^}]*display:\s*inline-flex/.test(css);
+  kontrola(mq, ".qz-rotbtn se neukazuje jen na tabletu (media query s pointer: coarse, min-width a min-height)");
+}
 {
   // Obal vzniká v `picframeHtml`, ne v `renderQuestion` — bere si ho přes `ZKPicframe.html`
   // i online část, takže obě půlky appky mají tutéž stavbu pravého sloupce (2026-09-06).

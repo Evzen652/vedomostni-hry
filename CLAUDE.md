@@ -81,6 +81,30 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-15 — Obrazovka v párty se otáčí JEN tlačítkem „Otoč obrazovku", a to jen na tabletu. Automatika i přepínač zrušeny.**
+  Přání hráče: přepínač „Otáčet obrazovku k hráči" v nastavení nechtěl; chtěl malé tlačítko
+  během hry, které otáčí jedním směrem. Rozhodl i tři otázky: **o 90° po směru hodinek**,
+  **automatika podle strany hráče pryč** a **jen v párty**.
+  - **Zmizelo:** `S.rotate`, `S.manualRot`, `SIDES`, `sideDeg`, pole `side` u hráčů i poklep
+    na praporek hráče (praporek `.qz-pl` je teď `div`, ne `button`). Staré uložené hry `side`
+    nesou dál, nic ho nečte.
+  - **Nově `S.rot` (0/90/180/270) a `otocObrazovku()`** — tlačítko `.qz-rotbtn` v `.qz-subtop`.
+    Otočení **drží přes změnu tahu** (`next()` ho nemění, jen přepočte zmenšení), vynuluje se
+    při startu párty, obnově hry a vyhlášení.
+  - **Tablet = `(pointer: coarse) and (min-width: 600px) and (min-height: 600px)`**, jinak
+    `display: none`. Podmínka na VÝŠKU je nutná: telefon naležato má šířku ~844, takže by
+    šířkou prošel. Na počítači tlačítko není, protože myš není `coarse`.
+  - **`applyRotation` je nově na `resize`** (jen když je shell otočený) — tím padá otevřená
+    položka z auditu 2026-09-04. Při 90° se hra zmenší (naměřeno `scale(0.7)` na 700×1000).
+  - **`test:offline` 864 kontrol (+8)**: bez přepínače, bez automatiky, tlačítko v liště
+    a napojené, kroky 90,180,270,0,90, `next()` nesahá na `S.rot`, CSS skryté mimo tablet.
+    **Past při psaní: HTML komentář v šabloně `bezKomentaru` NEodstraní** (bere jen JS
+    komentáře), takže poznámka se slovy „Otáčet obrazovku" shodila vlastní kontrolu.
+    **Ověřeno mutací 8 z 8** (přepínač zpět, automatika, krok 180°, tlačítko mimo lištu,
+    nenapojené, `next()` nuluje, CSS neskryté, media bez výšky), obnova bajtově shodná.
+  - **Ověřeno v prohlížeči** na 700×1000 s dotykem: tlačítko vidět (36 px), sekvence otočení
+    sedí, po změně tahu zůstává `rotate(90deg)`, nastavení přepínač nemá.
+
 - **2026-09-15 — Párty při shodném skóre vyhlásí remízu, ne toho, kdo seděl první. A výsledkové obrazovky mají ilustrace.**
   - **Do teď vyhrál při shodě první v pořadí** — i při 0:0 dostal korunu a hlášku „Zeměkoule se
     dnes točí jen pro tebe!". `endCeremony()` teď při shodném nejvyšším skóre ukáže „Remíza!"
