@@ -623,6 +623,16 @@ for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
 // spadla (jen by se vrátily rozmazané pruhy), takže je hlídá test:
 const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
 
+// Délka párty (2026-09-15, přání hráče): Rychlá 5, Klasik 8, Maraton 12 kol. Výchozí je
+// Klasik — jinak by nastavení otevřelo s žádnou volbou vybranou.
+{
+  const volby = /\[\["Rychlá",(\d+)\],\["Klasik",(\d+)\],\["Maraton",(\d+)\]\]/.exec(SRC);
+  kontrola(volby && volby.slice(1).join(",") === "5,8,12",
+    "délky párty nejsou Rychlá 5 / Klasik 8 / Maraton 12 kol");
+  const vychozi = /totalRounds:(\d+)/.exec(SRC);
+  kontrola(vychozi && vychozi[1] === "8", "výchozí délka párty není Klasik (8 kol)");
+}
+
 // Otáčení obrazovky v párty (2026-09-15, přání hráče): žádná automatika podle strany
 // hráče a žádný přepínač v nastavení — jen tlačítko „Otoč obrazovku", které se ukáže
 // výhradně na tabletu a každým stiskem otočí o čtvrt otáčky po směru hodinek.

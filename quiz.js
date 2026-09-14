@@ -81,7 +81,7 @@
   // (jen párty a jen na tabletu, viz .qz-rotbtn v quiz.css). Automatika podle strany hráče
   // i přepínač v nastavení byly 2026-09-15 zrušené — hráč chtěl otáčet sám.
   const S = { mode:"solo", order:[], idx:0, band:"dospeli", bandTouched:false, answered:false,
-              players:[], turn:0, round:1, totalRounds:5, qServed:0,
+              players:[], turn:0, round:1, totalRounds:8, qServed:0,
               voice:false, steal:false, rot:0,
               school:false, timer:0, saveId:null,
               qLimit:null, qLimitTouched:false, schoolLevel:3 };
@@ -1393,7 +1393,7 @@
         <div class="qz-setcard">
           <h3><span class="n">2</span>Délka</h3>
           <div class="qz-bands">
-            ${[["Rychlá",3],["Klasik",5],["Maraton",8]].map(([l,r])=>`<button class="qz-chip${S.totalRounds===r?" on":""}" data-rounds="${r}">${l} · ${r} kol</button>`).join("")}
+            ${[["Rychlá",5],["Klasik",8],["Maraton",12]].map(([l,r])=>`<button class="qz-chip${S.totalRounds===r?" on":""}" data-rounds="${r}">${l} · ${r} kol</button>`).join("")}
           </div>
           ${partyPrazdnoNote()}${partyOpakovaniNote()}
         </div>

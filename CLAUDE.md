@@ -81,6 +81,12 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-15 — Délky párty: Rychlá 5, Klasik 8, Maraton 12 kol (bylo 3 / 5 / 8). Výchozí je Klasik = 8.**
+  Přání hráče. Výchozí `S.totalRounds` se posunulo s Klasikem, jinak by nastavení otevřelo
+  bez vybrané volby. **12 kol je víc než podlaha fondu (10 otázek na pásmo v každé zemi)**,
+  takže u jedné země a úzkého pásma se otázky zopakují — `partyOpakovaniNote` to hlásí sama,
+  počítá s `S.totalRounds`. Rozehrané hry si drží svůj uložený počet kol.
+
 - **2026-09-15 — Obrazovka v párty se otáčí JEN tlačítkem „Otoč obrazovku", a to jen na tabletu. Automatika i přepínač zrušeny.**
   Přání hráče: přepínač „Otáčet obrazovku k hráči" v nastavení nechtěl; chtěl malé tlačítko
   během hry, které otáčí jedním směrem. Rozhodl i tři otázky: **o 90° po směru hodinek**,
