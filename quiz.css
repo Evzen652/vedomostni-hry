@@ -184,6 +184,10 @@
   background: radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
   border: 3px solid #fffdf6; outline: 2px solid #d8c9ad;
   box-shadow: inset -10px -8px 20px rgba(20,60,55,.35), 0 10px 22px rgba(60,90,80,.35); }
+/* Dobarvení glóbu u otázky (2026-09-15, přání hráče „trochu dobarvi ten globus"). Filtrem
+   na plátně, NE přemalováním assets/earth.jpg: textura je ověřená proti skutečným obrysům
+   zemí a sdílí ji i glóbus na rozcestníku — tady se dá síla doladit jedním číslem. */
+.qz-medal canvas { filter: saturate(1.45) contrast(1.06); }
 .qz-medal .land { position: absolute; background: #a9bf77; border-radius: 52% 48% 60% 40%/58% 46% 54% 42%;
   box-shadow: inset -3px -4px 8px rgba(90,110,50,.45); }
 .qz-medal .land.a { width: 34%; height: 24%; left: 12%; top: 26%; transform: rotate(-10deg); }
