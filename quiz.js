@@ -1840,6 +1840,7 @@
       <span class="qz-standname">${esc(p.name)}</span>
       <span class="qz-standscore">${ICO_STAR} <b>${p.score}</b></span></div>`).join("");
     body.innerHTML=`<div class="qz-screen qz-end">
+      <img class="qz-endimg" src="assets/end-party.jpg" alt="" onerror="this.style.display='none'">
       <h2>${ICO_TROPHY} ${esc(winner.name)} vítězí!</h2>
       <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}"</div></div>
       <div class="qz-standings">${rows}</div>
