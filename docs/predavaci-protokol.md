@@ -178,6 +178,16 @@ Po každé zemi: `archy.js` + `rohy.js` → kontrola očima → opravy přes `--
 zápis do CLAUDE.md → `validate` + `test:offline` → commit + push.
 **Skript sleduje jen JEDNU dávku najednou**, takže se země nedají posílat paralelně.
 
+**0a. ⚠ DODĚLAT: každá země musí mít v každém pásmu aspoň 12 otázek** (zadal hráč 15. 9.)
+Párty má od 15. 9. Maraton = **12 kol**, ale podlaha fondu je jen 10. Hráč u jedné země
+pak dostane tutéž otázku dvakrát (appka to přizná hláškou, ale je to dluh, ne řešení).
+Stav 15. 9.: **29 kombinací země × pásmo pod 12, chybí 50 otázek** — skoro vše dětské
+pásmo (po 1–2 otázkách u 26 zemí), u puberťáků Brazílie, Japonsko, Thajsko a Tchaj-wan.
+Seznam vypisuje `npm run validate` (upozornění „pod 12 otázek"). Psát ručně v session
+jako 31. 8. (každá s `about` a `more_fact`), pak `build-index`, `build-konflikty`
+(přes `npm run build-index`), `validate`, `test:offline`, a při nasazení `db:sync --remote`.
+**Hotovo je to, až validate žádné upozornění „pod 12" nehlásí.**
+
 **0b. UI drobnosti, které se nabízejí** (nic z toho není rozbité):
 - Dlaždice kontinentů Severní Amerika, Jižní Amerika, Austrálie a Afrika se nedobarvovaly —
   sloužily jako barevný vzor při dobarvování ostatních. Kdyby se sjednocovalo dál, lokální skript na dobarvení (sytost

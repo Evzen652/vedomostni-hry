@@ -86,6 +86,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   bez vybrané volby. **12 kol je víc než podlaha fondu (10 otázek na pásmo v každé zemi)**,
   takže u jedné země a úzkého pásma se otázky zopakují — `partyOpakovaniNote` to hlásí sama,
   počítá s `S.totalRounds`. Rozehrané hry si drží svůj uložený počet kol.
+  - **⚠ ZADÁNO K DODĚLÁNÍ: podlaha fondu se zvedá z 10 na 12 otázek na zemi × pásmo**, aby
+    ani Maraton nemusel opakovat. Stav 15. 9.: 29 kombinací pod 12, chybí 50 otázek (skoro
+    vše dětské pásmo). `npm run validate` je vypisuje jako upozornění „pod 12 otázek", dokud
+    nejsou dopsané. Postup: předávací protokol, fronta bod 0a.
 
 - **2026-09-15 — Obrazovka v párty se otáčí JEN tlačítkem „Otoč obrazovku", a to jen na tabletu. Automatika i přepínač zrušeny.**
   Přání hráče: přepínač „Otáčet obrazovku k hráči" v nastavení nechtěl; chtěl malé tlačítko

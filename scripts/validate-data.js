@@ -155,6 +155,27 @@ for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý 
   }
 }
 
+// Podlaha fondu: aspoň 12 otázek na zemi × pásmo (zadal hráč 2026-09-15). Maraton v párty
+// má 12 kol a hráč u jedné země jinak dostane tutéž otázku dvakrát. Pásma počítá stejně
+// jako bandPool() v quiz.js; serverové otázky se nepočítají, na web se nedostanou.
+// Je to UPOZORNĚNÍ, ne chyba — dokud nejsou otázky dopsané, hra jen přizná opakování.
+{
+  const PODLAHA = 12;
+  const PASMA = { deti: q => q.kids, starsi: q => !q.kids && q.difficulty <= 2, dospeli: q => !q.kids };
+  const pod = [];
+  let chybi = 0;
+  for (const f of qFiles) {
+    const qs = JSON.parse(fs.readFileSync(path.join(QDIR, f), "utf8")).filter(q => q.online_only !== true);
+    for (const [b, patri] of Object.entries(PASMA)) {
+      const n = qs.filter(patri).length;
+      if (n < PODLAHA) { pod.push(path.basename(f, ".json") + "/" + b + " " + n); chybi += PODLAHA - n; }
+    }
+  }
+  if (pod.length)
+    warn("pod " + PODLAHA + " otázek na zemi × pásmo (Maraton má " + PODLAHA + " kol, otázky se opakují): " +
+         pod.length + " kombinací, chybí " + chybi + " otázek — " + pod.join(", "));
+}
+
 // ---- výstup ----
 console.log(`Zkontrolováno: ${qCount} otázek v ${qFiles.length} souboru/ech, ${cardIds.size} karet, ${imgs.length} obrázků.\n`);
 if (problems.length) { console.log(`CHYBY (${problems.length}):`); problems.forEach(p => console.log("  ✗ " + p)); }

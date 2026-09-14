@@ -131,6 +131,12 @@ nemá ani jedno, takže to fakticky není appka, ale stránka.
 Obaly pro obchody (pozor: 184 MB ilustrací se do balíčku nevejde, obal je musí brát
 z webu), platby a provoz. Detaily v artefaktu.
 
+### ⚠ Dodělat: min. 12 otázek na zemi × pásmo
+Maraton v párty má od 2026-09-15 12 kol, podlaha fondu je ale 10 — u jedné země se pak
+otázky opakují. K 15. 9. je pod 12 **29 kombinací a chybí 50 otázek** (hlavně dětské
+pásmo). Aktuální seznam vypíše `npm run validate`. Postup a pořadí v předávacím protokolu,
+bod 0a fronty.
+
 ### Otevřené drobnosti z auditů
 - Odveta vloží soupeře bez jeho vědomí (hodnocenou prohru z toho ale vyrobit nejde —
   ověřeno).
