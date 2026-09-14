@@ -87,6 +87,11 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     a hlášku z nového fondu **`tie`** ve `fondy.json` (tři pásma jako `victory`). Pásmo hlášky je
     **nejmladší mezi remizujícími**, ať tón sedí i dítěti u stolu. Medaile se počítá jako počet
     hráčů s VYŠŠÍM skóre, takže stejné body = stejná medaile i u druhého a dalších míst.
+  - **Jméno hráče v párty je NEPOVINNÉ.** Start dřív chtěl aspoň dvě vyplněná jména a řádky bez
+    jména tiše vyřadil. Teď prázdné pole dostane „Hráč N" podle pořadí řádku (ukazuje to rovnou
+    placeholder) a hraje každý řádek. Výchozí jména se neukládají mezi poslední jména
+    (`VYCHOZI_JMENO` v `rememberNames`) a kolečko má číslo místo „H" (`inicial()`), jinak by se
+    nepojmenovaní lišili jen barvou.
   - **Hlášky remízy nezačínají slovem „Remíza"** — stojí v nadpisu hned nad nimi a hlas je
     předříkává taky (`speakTTS("Remíza! " + vic)`).
   - **`fondy.json` NEJDE přepsat přes `JSON.stringify`** — round-trip s odsazením 2 mezery nesedí

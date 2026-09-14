@@ -98,11 +98,22 @@
   // ---- zapamatovaná jména hráčů (jen párty — sólo/škola mají pevné jméno) ----
   const NAMES_KEY = "hricka_quiz_names";
   const NAMES_MAX = 12;
+  // Jméno v párty je nepovinné: prázdné pole dostane při startu „Hráč N" podle pořadí řádku.
+  // Výchozí jména se neukládají mezi poslední jména a v kolečku mají číslo místo „H" —
+  // jinak by všichni nepojmenovaní měli stejné písmeno a lišili se jen barvou.
+  const VYCHOZI_JMENO = /^Hráč (\d+)$/;
+  function vychoziJmeno(i){ return "Hráč " + (i + 1); }
+  function inicial(name, i){
+    const m = VYCHOZI_JMENO.exec((name || "").trim());
+    if (m) return m[1];
+    if ((name || "").trim()) return name.trim()[0];
+    return i == null ? "?" : String(i + 1);
+  }
   function loadRecentNames(){ try { return JSON.parse(localStorage.getItem(NAMES_KEY)||"[]"); } catch(e){ return []; } }
   function rememberNames(names){
     try {
       const prev = loadRecentNames();
-      const merged = [...names, ...prev].filter(n=>n && n.trim());
+      const merged = [...names, ...prev].filter(n=>n && n.trim() && !VYCHOZI_JMENO.test(n.trim()));
       // odstraň duplicity bez ohledu na velikost písmen, ponech první (nejnovější) výskyt
       const seen = new Set(), out = [];
       for (const n of merged) { const k=n.trim().toLowerCase(); if(!seen.has(k)){ seen.add(k); out.push(n.trim()); } }
@@ -651,7 +662,7 @@
         // Avatary dávají smysl jen u párty. V sólu je hráč vždycky jeden („Ty"), takže
         // by to bylo pořád stejné kolečko s „T" u každé položky.
         const faces = s.party ? `<span class="qz-resume-faces">${(saves[id].meta.players||[]).map(p=>
-            `<span class="qz-face" style="background:${p.color}">${esc((p.name||"?")[0])}</span>`).join("")}</span>` : "";
+            `<span class="qz-face" style="background:${p.color}">${esc(inicial(p.name))}</span>`).join("")}</span>` : "";
         return `<div class="qz-resume-item" role="button" tabindex="0" aria-label="Pokračovat ve hře: ${esc(s.coHral)}" data-resume="${id}">
           <img class="qz-resume-img" src="${s.obr}" alt="" onerror="this.style.visibility='hidden'">
           <span class="qz-resume-text">
@@ -1351,8 +1362,8 @@
     document.getElementById("qz-shell").style.transform="";
     const recentNames = loadRecentNames();
     const prow = (p,i) => `<div class="qz-prow" data-i="${i}">
-      <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
-      <input class="qz-pname-in" aria-label="Jméno hráče ${i+1}" placeholder="Jméno hráče ${i+1}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off" maxlength="20">
+      <span class="qz-pav" style="background:${p.color}">${esc(inicial(p.name, i))}</span>
+      <input class="qz-pname-in" aria-label="Jméno hráče ${i+1}" placeholder="${vychoziJmeno(i)}" value="${esc(p.name)}" data-f="name" list="qz-names-list" autocomplete="off" maxlength="20">
       <span class="qz-bandtoggle">
         <button class="qz-bandbtn deti${p.band==="deti"?" on":""}" data-band="deti">Děti</button>
         <button class="qz-bandbtn starsi${p.band==="starsi"?" on":""}" data-band="starsi">Puberťák</button>
@@ -1367,7 +1378,7 @@
       ${pickHeadHtml(steps)}
       <h2>${ICO_SPARK} Nová výprava — ${flagStamp(S.sel&&S.sel.cc)} ${COUNTRY}</h2>
       <div class="qz-setcard">
-        <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">Podle věku přitvrdíme, nebo přimhouříme oko</span></h3>
+        <h3><span class="n">1</span>Kdo hraje? <span style="font-size:11px;color:var(--muted);font-weight:400">Jména jsou nepovinná · Podle věku přitvrdíme, nebo přimhouříme oko</span></h3>
         <div id="qz-players">${S.players.map(prow).join("")}</div>
         <datalist id="qz-names-list">${recentNames.map(n=>`<option value="${esc(n)}">`).join("")}</datalist>
         ${S.players.length<6?`<button class="qz-addp" id="qz-addp">+ Přidat hráče</button>`:""}
@@ -1407,7 +1418,7 @@
     bindPickHead(steps);
     body.querySelectorAll(".qz-prow").forEach(row => {
       const i = +row.dataset.i;
-      row.querySelector('[data-f="name"]').addEventListener("input", e => { S.players[i].name=e.target.value; row.querySelector(".qz-pav").textContent=(e.target.value||"?")[0]; e.target.classList.remove("err"); });
+      row.querySelector('[data-f="name"]').addEventListener("input", e => { S.players[i].name=e.target.value; row.querySelector(".qz-pav").textContent=inicial(e.target.value, i); e.target.classList.remove("err"); });
       row.querySelectorAll(".qz-bandbtn").forEach(b => b.addEventListener("click", () => { S.players[i].band=b.dataset.band; renderSetup(); }));
       const rem=row.querySelector(".qz-prem"); if(rem) rem.addEventListener("click", () => { S.players.splice(+rem.dataset.rem,1); renderSetup(); });
     });
@@ -1427,18 +1438,9 @@
       o.addEventListener("keydown", e => { if(e.key === "Enter" || e.key === " "){ e.preventDefault(); prepni(); } });
     });
     body.querySelector("#qz-setup-go").addEventListener("click", () => {
-      const named = S.players.filter(p=>(p.name||"").trim());
-      if(named.length<2){
-        say("Potřebuju aspoň dvě jména, ať vím, koho vítat.");
-        let first=null;
-        body.querySelectorAll(".qz-prow").forEach(row => {
-          const inp=row.querySelector('[data-f="name"]');
-          if(!inp.value.trim()){ inp.classList.add("err"); if(!first) first=inp; }
-        });
-        if(first){ first.scrollIntoView({block:"center", behavior:REDUCED_MOTION?"auto":"smooth"}); first.focus(); }
-        return;
-      }
-      S.players = named.map((p,i)=>({ ...p, name:p.name.trim(), color:COLORS[i%COLORS.length], score:0 }));
+      // Do 2026-09-15 chtěl start aspoň dvě vyplněná jména a nepojmenované řádky tiše
+      // vyřadil. Teď hraje každý řádek; kdo hrát nemá, odebere se křížkem.
+      S.players = S.players.map((p,i)=>({ ...p, name:(p.name||"").trim() || vychoziJmeno(i), color:COLORS[i%COLORS.length], score:0 }));
       rememberNames(S.players.map(p=>p.name));
       startParty();
     });
@@ -1553,7 +1555,7 @@
   function topHtml(n, total){
     if(S.mode==="party"){
       const pills=S.players.map((p,i)=>`<button class="qz-pl${i===S.turn?" active":""}" data-turn="${i}">
-        <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
+        <span class="qz-pav" style="background:${p.color}">${esc(inicial(p.name))}</span>
         <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">Na tahu</span>':""}</span>
         <span class="qz-plscore" data-score="${i}">${p.score}</span></button>`).join("");
       return `<div class="qz-scoreboard">${pills}</div>
@@ -1847,7 +1849,7 @@
     // Pořadí = počet hráčů s VYŠŠÍM skóre, takže stejné body dostanou stejnou medaili.
     const rows=sorted.map(p=>{ const r=sorted.filter(q=>q.score>p.score).length; return `<div class="qz-standrow${r===0?" win":""}">
       <span class="qz-rank">${medalSvg(r)}</span>
-      <span class="qz-pav" style="background:${p.color}">${esc((p.name||"?")[0])}</span>
+      <span class="qz-pav" style="background:${p.color}">${esc(inicial(p.name))}</span>
       <span class="qz-standname">${esc(p.name)}</span>
       <span class="qz-standscore">${ICO_STAR} <b>${p.score}</b></span></div>`; }).join("");
     body.innerHTML=`<div class="qz-screen qz-end">
