@@ -978,7 +978,7 @@
            POZOR: tenhle komentář je uvnitř template literalu, takže v něm nesmí být
            zpětný apostrof. Jeden tu byl a utnul řetězec — appka se nevykreslila vůbec. -->
       <p class="qz-pickhint">Vyber aspoň jeden kontinent — nebo si zkrať cestu: Česko, případně celý svět.</p>
-      <div class="qz-tiles">${worldTile}${tiles}${czTile}</div>
+      <div class="qz-tiles">${worldTile}${czTile}${tiles}</div>
       <div class="qz-sec-confirm"><button class="qz-btn-start" id="qz-cont-start" disabled>Pokračuj ${handArrowSvg(false)}</button></div>
     </div>`;
     body.querySelector("#qz-back").addEventListener("click", renderModePick);
