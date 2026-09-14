@@ -48,9 +48,13 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const celeSlovo = s => new RegExp("(?<!\\p{L})" + esc(s) + "(?!\\p{L})", "iu");
 const malym = s => /^[a-záčďéěíňóřšťúůýž]/.test(String(s).trim());
 const osoba = /(?<!\p{L})(jsi|sis|ses|tys)(?!\p{L})/iu;
-const minuly = /(?<!\p{L})(věděl|nevěděl|trefil|netrefil|uhodl|neuhodl|tipnul|tipl|vsadil|zvolil|vybral|odpověděl|zapomněl|spletl|poznal|nepoznal|zkusil|hádal|zaváhal|četl|slyšel|viděl|sáhl|šel|dal|měl|byl)(?!\p{L})/iu;
+const SLOVESA = "věděl|nevěděl|trefil|netrefil|uhodl|neuhodl|tipnul|tipl|vsadil|zvolil|vybral|odpověděl|zapomněl|spletl|poznal|nepoznal|zkusil|hádal|zaváhal|četl|slyšel|viděl|sáhl|šel|dal|měl|byl";
+const minuly = new RegExp("(?<!\\p{L})(" + SLOVESA + ")(?!\\p{L})", "iu");
+// Stažený tvar nese osobu i rod v jednom slově („Uhodls", „věděls"), takže dvojice
+// osoba + sloveso ho nechytí — takhle 11 hlášek prošlo až do 2026-09-14.
+const stazeny = new RegExp("(?<!\\p{L})(" + SLOVESA + ")s(?!\\p{L})", "iu");
 const vety = s => String(s).split(/(?<=[.!?])\s+/);
-const rodovy = v => osoba.test(v) && minuly.test(v) && !v.includes("(a)");
+const rodovy = v => ((osoba.test(v) && minuly.test(v)) || stazeny.test(v)) && !v.includes("(a)");
 
 const N = {};
 const add = (k, x) => (N[k] = N[k] || []).push(x);

@@ -11,7 +11,7 @@ const NEW_QUESTIONS = [
 // DĚTI (6)
 {
   "id": "cz-k-medved",
-  "cc": "cz", "country": "Česká republika", "section": "Příroda",
+  "cc": "cz", "country": "Česko", "section": "Příroda",
   "difficulty": 1, "kids": true, "type": "choice",
   "question": "V českých pohádkách je medvěd oblíbená postava. Ale žijí medvědi i ve skutečné české přírodě?",
   "answer": "Jen vzácně — občas přijdou ze Slovenska, ale v Česku trvale nežijí",
@@ -24,7 +24,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-k-chalupa",
-  "cc": "cz", "country": "Česká republika", "section": "Kultura",
+  "cc": "cz", "country": "Česko", "section": "Kultura",
   "difficulty": 1, "kids": true, "type": "choice",
   "question": "Spousta českých rodin má vlastní chalupu nebo chatu na venkově. Co tam typicky dělají o víkendu?",
   "answer": "Odpočívají v přírodě — zahradničí, opékají špekáčky, chodí na houby",
@@ -37,7 +37,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-k-krtek",
-  "cc": "cz", "country": "Česká republika", "section": "Kultura",
+  "cc": "cz", "country": "Česko", "section": "Kultura",
   "difficulty": 1, "kids": true, "type": "choice",
   "question": "Krteček je slavná česká kreslená postavička, kterou znají děti po celém světě. Jak vypadá?",
   "answer": "Je to malý černý krtek s bílým bříškem a velkým nosem",
@@ -50,7 +50,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-k-olomoucky-tvaruzek",
-  "cc": "cz", "country": "Česká republika", "section": "Jídlo",
+  "cc": "cz", "country": "Česko", "section": "Jídlo",
   "difficulty": 1, "kids": true, "type": "choice",
   "question": "Olomoucký tvarůžek je slavný moravský sýr. Proč ho ne každý snese v místnosti?",
   "answer": "Velmi silně zapáchá — je to jeden z nejzápachovějších sýrů na světě",
@@ -63,7 +63,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-k-orloj",
-  "cc": "cz", "country": "Česká republika", "section": "Místa",
+  "cc": "cz", "country": "Česko", "section": "Místa",
   "difficulty": 1, "kids": true, "type": "choice",
   "question": "Pražský orloj na Staroměstském náměstí jsou slavné hodiny. Co se stane každou celou hodinu?",
   "answer": "Otočí se okénka a vyjede průvod dvanácti apoštolů",
@@ -76,7 +76,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-k-pivni-lazne",
-  "cc": "cz", "country": "Česká republika", "section": "Kultura",
+  "cc": "cz", "country": "Česko", "section": "Kultura",
   "difficulty": 1, "kids": true, "type": "choice",
   "question": "V Česku existují lázně, kde se místo vody koupete v pivu. Co to má dělat s vaší kůží?",
   "answer": "Kůže se prý vyhlazuje díky kvasinkám a chmelům v pivu",
@@ -91,7 +91,7 @@ const NEW_QUESTIONS = [
 // PUBERŤÁCI (8)
 {
   "id": "cz-t-pivni-stat",
-  "cc": "cz", "country": "Česká republika", "section": "Jídlo",
+  "cc": "cz", "country": "Česko", "section": "Jídlo",
   "difficulty": 1, "kids": false, "type": "choice",
   "question": "Češi drží světový rekord ve spotřebě piva na osobu. Jak si stojí ve srovnání s dalšími pivními národy — Němci, Iry, Belgičany?",
   "answer": "Vedou daleko před všemi — přes 130 litrů na hlavu ročně, Němci jsou druzí se znatelným odstupem",
@@ -104,7 +104,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-t-franz-kafka",
-  "cc": "cz", "country": "Česká republika", "section": "Kultura",
+  "cc": "cz", "country": "Česko", "section": "Kultura",
   "difficulty": 2, "kids": false, "type": "choice",
   "question": "Franz Kafka psal v němčině, byl Žid, celý život žil v Praze a na smrtelné posteli žádal, aby byly jeho rukopisy spáleny. Co se místo toho stalo?",
   "answer": "Jeho přítel Max Brod rukopisy zachránil a vydal — navzdory Kafkově přání",
@@ -117,7 +117,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-t-cesky-raj",
-  "cc": "cz", "country": "Česká republika", "section": "Příroda",
+  "cc": "cz", "country": "Česko", "section": "Příroda",
   "difficulty": 1, "kids": false, "type": "choice",
   "question": "Český ráj je chráněná krajinná oblast plná pískovcových věží. Proč má tak zvláštní název — ráj?",
   "answer": "Název vymysleli turisté v 19. století — krajina jim připadala tak krásná, že ji přirovnali k ráji",
@@ -130,7 +130,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-t-sparta-slavia",
-  "cc": "cz", "country": "Česká republika", "section": "Sport",
+  "cc": "cz", "country": "Česko", "section": "Sport",
   "difficulty": 1, "kids": false, "type": "choice",
   "question": "Sparta Praha a Slavia Praha jsou největší rivaly v českém fotbalu. Co je zajímavé na jejich původu z konce 19. století?",
   "answer": "Oba kluby vznikly v Praze v rozmezí dvou let — a od začátku si konkurovaly jako studentský vs. dělnický klub",
@@ -143,7 +143,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-t-lidice",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 2, "kids": false, "type": "choice",
   "question": "Obec Lidice byla v roce 1942 nacisty srovnána se zemí jako odveta za atentát na Heydricha. Co se stalo s názvem Lidice ve světě po válce?",
   "answer": "Desítky měst po celém světě přijaly název Lidice nebo ho připojily ke svému — jako gesto solidarity",
@@ -156,7 +156,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-t-skoda-auto",
-  "cc": "cz", "country": "Česká republika", "section": "Kultura",
+  "cc": "cz", "country": "Česko", "section": "Kultura",
   "difficulty": 2, "kids": false, "type": "choice",
   "question": "Škoda Auto je nejstarší stále fungující automobilka v Evropě. Kde ale Škoda vznikla a co původně vyráběla?",
   "answer": "V Mladé Boleslavi v roce 1895 — nejdřív jako výrobna jízdních kol",
@@ -169,7 +169,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-t-cesky-jazyk-obtiznost",
-  "cc": "cz", "country": "Česká republika", "section": "Jazyk",
+  "cc": "cz", "country": "Česko", "section": "Jazyk",
   "difficulty": 2, "kids": false, "type": "choice",
   "question": "Čeština je pro cizince notoricky obtížná. Která vlastnost češtiny mate nejvíc anglicky mluvící studenty?",
   "answer": "Sedm pádů — stejné slovo mění koncovku podle toho, jakou roli ve větě plní",
@@ -182,7 +182,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-t-semtex",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 2, "kids": false, "type": "choice",
   "question": "Semtex je výbušnina vyvinutá v Česku, dnes používaná armádami i teroristy po celém světě. Jak dostala své jméno?",
   "answer": "Podle obce Semtín u Pardubic, kde se vyráběla",
@@ -197,7 +197,7 @@ const NEW_QUESTIONS = [
 // DOSPĚLÍ (7)
 {
   "id": "cz-a-heydrich-sepse",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 3, "kids": false, "type": "choice",
   "question": "Atentát na Reinharda Heydricha v roce 1942 provedli parašutisté s pistolemi a granátem. Granát explodoval těsně vedle auta — ale Heydrich zemřel o týden později. Co ho skutečně zabilo?",
   "answer": "Sepse — střepiny granátu vnesly do rány žíně z čalounění auta plné bakterií",
@@ -210,7 +210,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-a-komunismus-kostely",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 3, "kids": false, "type": "choice",
   "question": "Česko je nejateističtější zemí EU — přes 60 % obyvatel se nehlásí k žádné víře. Komunismus to ale nezpůsobil. Co za to může?",
   "answer": "Sekularizace začala pod Josefem II. v 18. století — komunismus jen zdědil tradici, která tu byla 200 let před ním",
@@ -223,7 +223,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-a-benes-dekrety-nemci",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 3, "kids": false, "type": "choice",
   "question": "Po druhé světové válce bylo z Československa vyhnáno přes 2,5 milionu Němců. Co je méně známé: jak se k tomu postavili samotní Češi v té době?",
   "answer": "Naprostá většina Čechů odsun schválila — včetně demokratické opozice a exilové vlády, ne jen komunisté",
@@ -236,7 +236,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-a-vaclav-havel-absurdita",
-  "cc": "cz", "country": "Česká republika", "section": "Lidé",
+  "cc": "cz", "country": "Česko", "section": "Lidé",
   "difficulty": 3, "kids": false, "type": "choice",
   "question": "Václav Havel byl dramatik píšící o absurditě systému — a pak se sám stal prezidentem. Co bylo na jeho prezidentství paradoxní?",
   "answer": "Musel řídit stát, jehož fungování celý život ironizoval — a přiznal, že moc ho postupně deformovala i jeho samého",
@@ -249,7 +249,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-a-trabant-ekologie",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 3, "kids": false, "type": "choice",
   "question": "Sametová revoluce v listopadu 1989 přinesla svobodu — ale také ekologický problém, který byl do té doby tajný. Co odhalily první svobodné průzkumy?",
   "answer": "Severní Čechy patřily k nejznečištěnějším místům na Zemi — komunismus ničil životní prostředí daleko hůř než kapitalismus",
@@ -262,7 +262,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-a-jan-palach",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 3, "kids": false, "type": "choice",
   "question": "Jan Palach se upálil v lednu 1969 na protest proti sovětské okupaci. Co bylo méně známé: jak bezprostředně reagovala česká veřejnost?",
   "answer": "Stovky tisíc lidí se zúčastnily pohřbu — ale politicky se nic nezměnilo; normalizace pokračovala",
@@ -275,7 +275,7 @@ const NEW_QUESTIONS = [
 },
 {
   "id": "cz-a-sametova-rozvod",
-  "cc": "cz", "country": "Česká republika", "section": "Historie",
+  "cc": "cz", "country": "Česko", "section": "Historie",
   "difficulty": 3, "kids": false, "type": "choice",
   "question": "Rozdělení Československa v roce 1993 se říká 'sametový rozvod'. Co je méně známý fakt o tom, kdo ho vlastně chtěl?",
   "answer": "Průzkumy ukazovaly, že majorita Čechů i Slováků rozvod nechtěla — rozhodli ho politici, ne občané",

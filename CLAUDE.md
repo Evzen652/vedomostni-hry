@@ -81,6 +81,24 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-14 — Stažené tvary „Uhodls", „věděls" prošly kontrolou rodu; 11 hlášek přepsáno. Plus „Česko" všude a jedna nestabilní kontrola v `test:api`.**
+  Nalezeno při převzetí na druhém počítači, ručním průchodem hry — ne nástrojem.
+  - **Zápis z 2026-09-11 „419 → 0" nebyl úplný.** `audit-konzistence.js` hledal dvojici osoba +
+    sloveso („Trefil jsi"), jenže stažený tvar nese obojí v jednom slově. Nová kontrola `stazeny`
+    staví ze stejného seznamu sloves (`SLOVESA`) tvar s koncovým -s. **Ověřeno na datech:**
+    před přepisem našla přesně 11, po něm 0; vlastní jména končící na -ls (Falls, Nils) nechytá,
+    protože hledá jen slovesa ze seznamu. Přepis drží tón: „Uhodls" → „Trefa", „Zkusils to, ale
+    netrefil" → „Pokus dobrý, trefa žádná", „poznals/věděls to" → „přesně on" / „sedí to".
+  - **29 českých otázek mělo `country: "Česká republika"`, zbytek „Česko"** — v záhlaví otázky se
+    to střídalo. Přišlo to z `import-cz-gemini.js`, opraveno i tam, ať to opakovaný import nevrátí.
+    V prose zůstává „Česká republika" tam, kde je vlastní jméno („Charita Česká republika").
+  - **`test:api`: „body z kola proti botovi se přičetly" padala v ~6 % běhů** (0,75¹⁰), protože
+    `playAll` tipuje vždy A a při deseti minelách je skóre turnaje 0. Nově `playAll(…, spravne)`.
+    Ověřeno mutací (špatný index → kontrola spadne se skórem 0), obnova bajtově shodná.
+  - **Past při ověřování: v malém písmu prohlížeče vypadá „é" jako „ě".** Ze screenshotu jsem
+    nahlásil překlep „Chodové Planě", v datech je správně „Plané". Text ověřuj z DOM/dat, ne okem.
+  - **Při nasazení nutný `db:sync --remote`** — `country` i hlášky jsou v D1.
+
 - **2026-09-13 — Nástroje na kontrolu ilustrací jsou NOVĚ V REPU (`scripts/ilustrace/`).
   Do teď ležely ve scratchpadu session, a to je past: při přechodu na jiný počítač
   by se ztratily i s celým postupem kontroly.**

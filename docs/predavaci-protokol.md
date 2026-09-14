@@ -103,7 +103,9 @@ Když spadne na chybějícím `sharp`, chybí `npm install`.
 **5) Testy proti serveru** (server musí běžet):
 `$env:API_BASE="http://127.0.0.1:8788"; npm run test:api` → **167** kontrol.
 Jedna kontrola („usazený hráč silou bota pohnul") je **nedeterministická**; když spadne
-jednou z několika běhů, není to regrese.
+jednou z několika běhů, není to regrese. Druhá taková („body z kola proti botovi se
+přičetly") padala v ~6 % běhů, protože testovací hráč tipoval vždy A — od 14. 9. v tom
+kole odpovídá správně (`playAll(…, true)`), takže už padat nemá.
 
 **6) Ruční zkouška v prohlížeči:** Sólo jízda → Evropa → Česko → Vybrat vše → Dospělí →
 10 otázek → odpověz. Musí platit všechno z tohohle seznamu:

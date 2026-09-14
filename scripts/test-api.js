@@ -67,13 +67,18 @@ const ODPOVEDI = (() => {
 /** Index správné možnosti v tom pořadí, v jakém ji server poslal. */
 const spravnyIndex = qBody => qBody.options.indexOf(ODPOVEDI.get(qBody.id));
 
-/** Odehraje hru do konce; vrací součet bodů. */
-async function playAll(token, gameId, total, ms = 2000) {
+/**
+ * Odehraje hru do konce; vrací součet bodů.
+ * Výchozí tip je vždy A, takže skóre závisí na losu otázek. Kontrola, která potřebuje
+ * nenulové body, musí poslat `spravne = true` — jinak v ~6 % běhů netrefí nic a spadne.
+ */
+async function playAll(token, gameId, total, ms = 2000, spravne = false) {
   let last = null;
   for (let n = 0; n < total; n++) {
     const q = await api(`/api/game/${gameId}/q/${n}`, { token });
     if (q.status !== 200) throw new Error('otázka ' + n + ' selhala: ' + JSON.stringify(q.body));
-    last = await api(`/api/game/${gameId}/answer`, { method: 'POST', token, body: { n, pick: 0, ms } });
+    const pick = spravne ? spravnyIndex(q.body) : 0;
+    last = await api(`/api/game/${gameId}/answer`, { method: 'POST', token, body: { n, pick, ms } });
   }
   return last.body;
 }
@@ -653,7 +658,8 @@ async function playAll(token, gameId, total, ms = 2000) {
   const tbot = await api(`/api/tournament/${tour.body.id}/bot`, { method: 'POST', token: F.token });
   ok(tbot.status === 200 && typeof tbot.body.bot_score === 'number',
      'kolo proti botovi se rovnou odehraje (bot dal ' + tbot.body.bot_score + ')');
-  await playAll(F.token, tbot.body.game_id, tbot.body.total, 2000);
+  // Správně, ne naslepo: kontrola níž chce nenulové body a tip „vždy A" občas netrefí nic.
+  await playAll(F.token, tbot.body.game_id, tbot.body.total, 2000, true);
 
   const afterBot = await api(`/api/tournament/${tour.body.id}`, { token: F.token });
   ok(afterBot.body.me.games_played === 1 && afterBot.body.me.score > 0,
