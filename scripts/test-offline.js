@@ -623,6 +623,22 @@ for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
 // spadla (jen by se vrátily rozmazané pruhy), takže je hlídá test:
 const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
 
+// Registrace bez volby pásma (2026-09-15, přání hráče): nový profil je vždy Dospělí,
+// puberťácké pásmo se přepíná v Profilu. Tlačítko čeká jen na souhlas, ne na pásmo.
+{
+  const bez = bezKomentaru(SRC_ONLINE);
+  const zac = bez.indexOf("function renderAuth(");
+  const auth = bez.slice(zac, bez.indexOf("\n  function ", zac + 10));
+  kontrola(!/id="zk-bands"/.test(auth) && !/Kdo bude hrát/.test(auth),
+    "registrace má zase volbu pásma „Kdo bude hrát?\"");
+  kontrola(/var band = "dospeli";/.test(auth) && /\{ band: band, pin: pin/.test(auth),
+    "registrace neposílá pásmo dospeli — server by profil bez pásma odmítl");
+  kontrola(!/!band\b/.test(auth),
+    "tlačítko Založit profil pořád čeká na výběr pásma, který už v registraci není");
+  kontrola(/puberťácké pásmo si můžeš zapnout v Profilu/.test(auth),
+    "registrace neříká, že puberťácké pásmo jde zapnout v Profilu");
+}
+
 // Délka párty (2026-09-15, přání hráče): Rychlá 5, Klasik 8, Maraton 12 kol. Výchozí je
 // Klasik — jinak by nastavení otevřelo s žádnou volbou vybranou.
 {

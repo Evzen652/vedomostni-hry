@@ -284,13 +284,6 @@ window.ZKOnline = (function () {
       : isReg
         ? "Stačí přezdívka a PIN. E-mail je nepovinný — je jen pro případ, že PIN zapomeneš."
         : "Vítej zpátky. Zadej přezdívku a PIN.";
-    // Dětské pásmo tu SCHVÁLNĚ není (rozhodnutí hráče 2026-09-10): Světová liga je
-    // od 13 let a dítě hraje sólo, párty i školu bez profilu. Server ho odmítne taky.
-    var PASMA = [
-      { id: "starsi", t: "Puberťáci", fb: "🧑‍🎓" },
-      { id: "dospeli", t: "Dospělí", fb: "🧑" },
-    ];
-
     // Jedna karta: obrázek → nadpis → pole → jediná barevná akce → tiché odkazy.
     body.innerHTML =
       '<div class="qz-screen qz-setup zk-wrap zk-auth">' +
@@ -310,18 +303,9 @@ window.ZKOnline = (function () {
       '<div class="zk-authmain">' +
         (msg ? '<div class="zk-autherr">' + errBox(msg) + "</div>" : "") +
         '<div class="zk-form">' +
-          (isReg
-            ? '<div class="zk-field">' +
-                '<div class="qz-fieldlabel">Kdo bude hrát?</div>' +
-                '<div class="zk-bandpick" id="zk-bands" role="group" aria-label="Věkové pásmo">' +
-                  PASMA.map(function (b) {
-                    return '<button type="button" class="zk-bandtile" data-band="' + b.id + '" aria-pressed="false">' +
-                      '<img src="assets/band-' + b.id + '.jpg" alt="" data-fb="' + b.fb + '">' +
-                      '<span class="t">' + b.t + "</span></button>";
-                  }).join("") +
-                "</div>" +
-              "</div>"
-            : "") +
+          // Volba pásma („Kdo bude hrát?") z registrace zmizela 2026-09-15: po vyřazení dětí
+          // zbyly jen Puberťáci a Dospělí a hráč ji měl za zbytečnou. Nový profil začíná
+          // jako Dospělí, puberťácké pásmo se přepíná v Profilu (viz poznámka u souhlasu).
           '<div class="zk-field" id="zk-nickwrap">' +
             '<label class="qz-fieldlabel" for="zk-nick">Přezdívka</label>' +
             '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="Jak ti mají říkat" value="' +
@@ -354,7 +338,8 @@ window.ZKOnline = (function () {
           // souhlas vyjadřuje, ne jen čte patičku. Server bez něj profil nezaloží (age13).
           (isReg
             ? '<label class="zk-agree"><input type="checkbox" id="zk-agree"> ' +
-                '<span>Je mi aspoň 13 let a souhlasím s podmínkami použití.</span></label>'
+                '<span>Je mi aspoň 13 let a souhlasím s podmínkami použití.</span></label>' +
+              '<div class="qz-setnote zk-mailnote">Hraješ mezi dospělými. Lehčí puberťácké pásmo si můžeš zapnout v Profilu.</div>'
             : "") +
           '<button class="qz-go" id="zk-go"' + (isReg ? " disabled" : "") + ">" +
             (isReg ? "Založit profil" : "Přihlásit se") + " " + handArrowSvg(false) + "</button>" +
@@ -389,35 +374,14 @@ window.ZKOnline = (function () {
       });
     });
 
-    // Pásmo se schválně NEPŘEDVYBÍRÁ: určuje fond otázek i žebříček natrvalo,
-    // takže tichá výchozí hodnota by dítě zapsala mezi dospělé. Do té doby je
-    // primární tlačítko disabled — stejný vzor jako S.bandTouched v sólo hře.
-    var band = isReg ? null : "dospeli";
-    var predvolba = isReg ? stav.band : null;
+    // Nový profil je vždy Dospělí (2026-09-15). Dřív se pásmo schválně nepředvybíralo,
+    // aby se dítě nezapsalo mezi dospělé — děti ale profil od 2026-09-10 nemají.
+    var band = "dospeli";
     var goBtn = body.querySelector("#zk-go");
-    // „Založit profil“ čeká na DVĚ věci: pásmo a potvrzení věku a podmínek.
+    // „Založit profil“ čeká jen na potvrzení věku a podmínek.
     var agreeEl = body.querySelector("#zk-agree");
-    function syncGo() { if (isReg) goBtn.disabled = !band || !(agreeEl && agreeEl.checked); }
+    function syncGo() { if (isReg) goBtn.disabled = !(agreeEl && agreeEl.checked); }
     if (agreeEl) agreeEl.addEventListener("change", syncGo);
-    var bandsEl = body.querySelector("#zk-bands");
-    if (bandsEl) {
-      bandsEl.querySelectorAll(".zk-bandtile").forEach(function (c) {
-        c.addEventListener("click", function () {
-          bandsEl.querySelectorAll(".zk-bandtile").forEach(function (x) {
-            x.classList.remove("on");
-            x.setAttribute("aria-pressed", "false");
-          });
-          c.classList.add("on");
-          c.setAttribute("aria-pressed", "true");
-          band = c.dataset.band;
-          syncGo();
-        });
-      });
-      if (predvolba) {
-        var zvolena = bandsEl.querySelector('.zk-bandtile[data-band="' + predvolba + '"]');
-        if (zvolena) zvolena.click();
-      }
-    }
     var zapomnel = body.querySelector("#zk-forgot");
     if (zapomnel) zapomnel.addEventListener("click", function () { renderForgot(); });
     body.querySelector("#zk-switch").addEventListener("click", function () {

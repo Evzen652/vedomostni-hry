@@ -81,6 +81,23 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-15 — Registrace se na pásmo neptá: nový profil je vždy Dospělí, Puberťáky jde zapnout v Profilu.**
+  Hráč měl volbu „Kdo bude hrát?" po vyřazení dětí (2026-09-10) za zbytečnou. Z tří možností
+  (výchozí Dospělí / sloučit ligy / jen zmenšit) vybral výchozí Dospělí — pásma, ligy
+  a žebříčky zůstávají, jen se nevolí při zakládání.
+  - **Server se neměnil:** klient posílá `band: "dospeli"` výslovně, takže `register.js`
+    dál vyžaduje známé pásmo a `test:api` platí beze změny. Změna pásma přes
+    `PUT /api/auth/band` (Profil) zůstává.
+  - **Zrušen komentář „pásmo se schválně NEPŘEDVYBÍRÁ"** — ten chránil dítě před zápisem
+    mezi dospělé, a děti profil od 2026-09-10 nemají. Cena: třináctiletý dostane těžší
+    otázky, dokud si v Profilu nepřepne; pod souhlasem to proto stojí jednou větou.
+  - `test:offline` hlídá: žádný `zk-bands` v registraci, `band: "dospeli"` v payloadu,
+    tlačítko nečeká na pásmo, a zmínku o Profilu. **Ověřeno mutací 5 z 5.** Past při psaní:
+    první verze hledala doslova `band: "dospeli"`, kód ale má `var band = "dospeli"`
+    a v payloadu `band: band` — test tedy padal na správném kódu.
+  - Ověřeno v prohlížeči: „Nový profil" bez volby pásma, „Založit profil" se odemkne
+    zaškrtnutím souhlasu, pod ním věta o puberťáckém pásmu.
+
 - **2026-09-15 — Nastavení párty dostalo vzdušnost: odstupňované mezery místo jedné ploché.**
   Výtka hráče „boxy i texty jsou příliš nalepené na sebe". Naměřeno předtím 12–20 px mezi
   VŠEMI bloky a 8 px pod nadpisem karty. Nově (změřeno po úpravě na 1100×800): nadpis →
