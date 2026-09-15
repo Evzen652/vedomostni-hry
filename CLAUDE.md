@@ -81,6 +81,15 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-15 — Po chybném přihlášení se pod hláškou nabízí „Obnovit PIN e-mailem"; „Zapomněl jsem PIN" → „Zapomenutý PIN?".**
+  Hráč po špatném PINu obnovu nenašel — malý odkaz u pole PIN v tu chvíli nikdo nehledá.
+  Odkaz `#zk-errforgot` stojí v `.zk-autherr` hned pod hláškou (jen u přihlášení) a obě cesty
+  (`naObnovu`) předají do `renderForgot(msg, hotovo, nick)` už napsané jméno.
+  - **„Zapomněl jsem PIN" porušovalo pravidlo o minulém čase s rodem** — appka pohlaví hráče
+    nezná. Hlídá to nově `test:offline`.
+  - **⚠ E-mail pořád NEDOCHÁZÍ:** `mail.js` bez domény a `RESEND_API_KEY` odkaz jen zaloguje
+    (viz zápis 2026-08-25). Tlačítko vede na hotový tok, poslední článek chybí.
+
 - **2026-09-15 — Registrace se na pásmo neptá: nový profil je vždy Dospělí, Puberťáky jde zapnout v Profilu.**
   Hráč měl volbu „Kdo bude hrát?" po vyřazení dětí (2026-09-10) za zbytečnou. Z tří možností
   (výchozí Dospělí / sloučit ligy / jen zmenšit) vybral výchozí Dospělí — pásma, ligy

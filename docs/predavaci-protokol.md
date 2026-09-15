@@ -102,7 +102,7 @@ z `.claude/launch.json` (port **8790**, servíruje ze živých souborů worktree
 | Příkaz | Očekávaný výsledek |
 |---|---|
 | `npm run validate` | `CHYBY: žádné` (upozornění o chybějících fotkách jsou v pořádku) |
-| `npm run test:offline` | **870** kontrol (od 15. 9., přibyl fond `tie`, tlačítko „Otoč obrazovku", délky párty 5/8/12 a registrace bez volby pásma) |
+| `npm run test:offline` | **874** kontrol (od 15. 9., přibyl fond `tie`, tlačítko „Otoč obrazovku", délky párty 5/8/12, registrace bez volby pásma a obnova PINu po chybném přihlášení) |
 | `npm run test:pool` | 13 kontrol |
 | `npm run test:auth` | 12 kontrol |
 | `npm run test:ghost` | 67 kontrol |

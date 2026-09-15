@@ -639,6 +639,23 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
     "registrace neříká, že puberťácké pásmo jde zapnout v Profilu");
 }
 
+// Obnova PINu po chybném přihlášení (2026-09-15, přání hráče): pod hláškou je odkaz
+// na obnovu e-mailem a obnova si vezme už napsané jméno. A žádný minulý čas s rodem.
+{
+  const bez = bezKomentaru(SRC_ONLINE);
+  const zac = bez.indexOf("function renderAuth(");
+  const auth = bez.slice(zac, bez.indexOf("\n  function ", zac + 10));
+  kontrola(/id="zk-errforgot"/.test(auth) && /Obnovit PIN e-mailem/.test(auth),
+    "po chybném přihlášení chybí odkaz „Obnovit PIN e-mailem\"");
+  kontrola(/zk-errforgot[\s\S]*renderForgot\([^)]*nick/.test(auth),
+    "odkaz na obnovu PINu nepředává napsané jméno do renderForgot");
+  const zacF = bez.indexOf("function renderForgot(");
+  const forgot = bez.slice(zacF, bez.indexOf("\n  function ", zacF + 10));
+  kontrola(/function renderForgot\(msg, hotovo, nick\)/.test(forgot) && /id="zk-fnick"[^>]*value="/.test(forgot),
+    "renderForgot si neumí předvyplnit jméno");
+  kontrola(!/Zapomněl jsem/.test(bez), "v online části je zase „Zapomněl jsem“ — minulý čas s rodem");
+}
+
 // Délka párty (2026-09-15, přání hráče): Rychlá 5, Klasik 8, Maraton 12 kol. Výchozí je
 // Klasik — jinak by nastavení otevřelo s žádnou volbou vybranou.
 {

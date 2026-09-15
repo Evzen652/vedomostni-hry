@@ -301,7 +301,11 @@ window.ZKOnline = (function () {
         '<div class="zk-sub">' + esc(podtitul) + "</div>" +
       "</div>" +
       '<div class="zk-authmain">' +
-        (msg ? '<div class="zk-autherr">' + errBox(msg) + "</div>" : "") +
+        // Po nepovedeném přihlášení nabídneme obnovu PINu přímo pod hláškou (2026-09-15,
+        // přání hráče) — malý odkaz u pole PIN v tu chvíli nikdo nehledá.
+        (msg ? '<div class="zk-autherr">' + errBox(msg) +
+          (isReg ? "" : '<button type="button" class="zk-linkbtn zk-errforgot" id="zk-errforgot">Obnovit PIN e-mailem</button>') +
+          "</div>" : "") +
         '<div class="zk-form">' +
           // Volba pásma („Kdo bude hrát?") z registrace zmizela 2026-09-15: po vyřazení dětí
           // zbyly jen Puberťáci a Dospělí a hráč ji měl za zbytečnou. Nový profil začíná
@@ -315,7 +319,7 @@ window.ZKOnline = (function () {
             '<div class="zk-labelrow">' +
               '<label class="qz-fieldlabel" for="zk-pin">PIN (4 až 8 číslic)</label>' +
               // Zapomenutý PIN patří k poli s PINem, ne mezi hlavní akce dole.
-              (isReg ? "" : '<button type="button" class="zk-linkbtn zk-forgot" id="zk-forgot">Zapomněl jsem PIN</button>') +
+              (isReg ? "" : '<button type="button" class="zk-linkbtn zk-forgot" id="zk-forgot">Zapomenutý PIN?</button>') +
             "</div>" +
             '<input class="qz-pname-in" id="zk-pin" type="password" inputmode="numeric" maxlength="8" autocomplete="' +
               (isReg ? "new-password" : "current-password") + '" placeholder="••••">' +
@@ -382,8 +386,12 @@ window.ZKOnline = (function () {
     var agreeEl = body.querySelector("#zk-agree");
     function syncGo() { if (isReg) goBtn.disabled = !(agreeEl && agreeEl.checked); }
     if (agreeEl) agreeEl.addEventListener("change", syncGo);
-    var zapomnel = body.querySelector("#zk-forgot");
-    if (zapomnel) zapomnel.addEventListener("click", function () { renderForgot(); });
+    // Obě cesty na obnovu si vezmou už napsané jméno, ať ho hráč nepíše podruhé.
+    function naObnovu() { var nick = (body.querySelector("#zk-nick") || {}).value || ""; renderForgot("", "", nick); }
+    ["#zk-forgot", "#zk-errforgot"].forEach(function (sel) {
+      var el = body.querySelector(sel);
+      if (el) el.addEventListener("click", naObnovu);
+    });
     body.querySelector("#zk-switch").addEventListener("click", function () {
       renderAuth(isReg ? "login" : "register");
     });
@@ -621,7 +629,7 @@ window.ZKOnline = (function () {
   // takže tatáž karta. Hero fotku ale NEMÁ: hráč ji viděl před vteřinou na obrazovce,
   // ze které přišel, a druhá kopie by jen odsunula jediné pole pod okraj displeje.
   // Kontext tu nese štítek + nadpis, ne obrázek.
-  function renderForgot(msg, hotovo) {
+  function renderForgot(msg, hotovo, nick) {
     stopAll();
     say(hotovo
       ? "Mrkni do pošty. Odkaz platí půl hodiny."
@@ -650,7 +658,8 @@ window.ZKOnline = (function () {
           : '<div class="zk-form">' +
               '<div class="zk-field">' +
                 '<label class="qz-fieldlabel" for="zk-fnick">Jméno nebo přezdívka</label>' +
-                '<input class="qz-pname-in" id="zk-fnick" maxlength="20" autocomplete="username" placeholder="Jak ti říkáme">' +
+                '<input class="qz-pname-in" id="zk-fnick" maxlength="20" autocomplete="username" placeholder="Jak ti říkáme" value="' +
+                  esc(nick || "") + '">' +
               "</div>" +
               '<button class="qz-go" id="zk-fgo">Poslat odkaz ' + handArrowSvg(false) + '</button>' +
             "</div>" +

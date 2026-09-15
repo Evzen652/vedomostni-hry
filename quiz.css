@@ -1180,7 +1180,7 @@
 
 .zk-authcard .zk-form { gap: 12px; }
 .zk-field .qz-fieldlabel { margin-bottom: 6px; }
-/* „Zapomněl jsem PIN" patří k poli s PINem, ne mezi hlavní akce dole (vzor
+/* „Zapomenutý PIN?" patří k poli s PINem, ne mezi hlavní akce dole (vzor
    Google/GitHub/chess.com: odkaz sedí na řádku s popiskem pole). */
 .zk-labelrow { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
 .zk-labelrow .qz-fieldlabel { margin-bottom: 0; }
@@ -1247,6 +1247,8 @@
   text-decoration-color: #d8c9ad; }
 .zk-linkbtn:hover { color: var(--teal); text-decoration-color: var(--teal); }
 .zk-forgot { font-size: 12.5px; flex-shrink: 0; padding: 0; }
+/* Obnova PINu přímo pod hláškou o nepovedeném přihlášení — čitelnější než odkaz u pole. */
+.zk-errforgot { display: inline-block; margin-top: 6px; font-size: 14px; font-weight: 700; padding: 0; }
 
 .zk-authfoot { margin-top: 14px; padding-top: 12px; border-top: 1.5px solid #ecdfc7;
   text-align: center; font-size: 13px; color: var(--muted); }
@@ -1275,7 +1277,7 @@
 }
 
 /* ---- obnova PINu (renderForgot, renderResetPin) --------------------------
-   Obojí je plnohodnotný krok TÉHOŽ toku — na „Zapomněl jsem PIN" se kliká přímo
+   Obojí je plnohodnotný krok TÉHOŽ toku — na „Zapomenutý PIN?" se kliká přímo
    z přihlašovací karty —, takže obě obrazovky berou stejnou kartu i štítek.
    Hero fotku má ale jen „Nový PIN": tam hráč přistane rovnou z odkazu v e-mailu,
    bez jakéhokoli kontextu, a obrazovka mu musí sama říct, kde je. Do „Zapomenutého
