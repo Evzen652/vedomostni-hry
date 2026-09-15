@@ -100,6 +100,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - **Zrušen komentář „pásmo se schválně NEPŘEDVYBÍRÁ"** — ten chránil dítě před zápisem
     mezi dospělé, a děti profil od 2026-09-10 nemají. Cena: třináctiletý dostane těžší
     otázky, dokud si v Profilu nepřepne; pod souhlasem to proto stojí jednou větou.
+  - **Uvítání lobby přepsáno (Puberťáci, Dospělí):** „Tvoje pásmo je…" a „Hraješ proti
+    dospělým. Puberťáci hrají zvlášť, takže není na koho svádět prohru" mluvily, jako by si
+    hráč pásmo vybral, a nedávaly logiku. Nově „Hraješ v lize…", „Soupeři jsou taky…"
+    + kde se pásmo přepíná (Profil). Dětské texty zůstaly kvůli starším účtům.
   - `test:offline` hlídá: žádný `zk-bands` v registraci, `band: "dospeli"` v payloadu,
     tlačítko nečeká na pásmo, a zmínku o Profilu. **Ověřeno mutací 5 z 5.** Past při psaní:
     první verze hledala doslova `band: "dospeli"`, kód ale má `var band = "dospeli"`

@@ -127,19 +127,22 @@ window.ZKOnline = (function () {
       rating0: "Rating je tvoje číslo šikovnosti. Každý začíná na <b>1500</b> a s každou výhrou povyroste. Dokud nezahraješ, zůstane na startu.",
       ratingN: "Rating je tvoje číslo šikovnosti. Čím víc vyhraješ, tím výš poletí.",
     },
+    // Puberťáci a Dospělí přepsáni 2026-09-15: registrace se na pásmo už neptá (nový
+    // profil je Dospělí), takže texty nesmí mluvit, jako by si ho hráč vybral, a musí
+    // říct, kde se přepíná. Dětské texty zůstávají kvůli starším účtům.
     starsi: {
       uvod: "dobře, že jsi tady.",
-      pasmo: "Tvoje pásmo je <b>Puberťáci</b> — otázky, co se dají pochytit ve škole nebo na internetu, ne v encyklopedii.",
-      souperi: "Nastupuješ proti ostatním puberťákům. Dospělí hrají zvlášť, takže na ně tady nenarazíš.",
-      rating0: "Rating je číslo, které říká, jak ti to jde. Všichni začínají na <b>1500</b> — dokud neodehraješ pár her, neříká o tobě nic.",
-      ratingN: "Rating je číslo, které říká, jak ti to jde. Roste s výhrami, klesá s prohrami.",
+      pasmo: "Hraješ v lize <b>Puberťáci</b>: otázky, co se dají pochytit ve škole nebo na internetu, ne v encyklopedii.",
+      souperi: "Soupeři jsou taky puberťáci. Těžší otázky dospělých si můžeš zapnout v Profilu.",
+      rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
+      ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
     },
     dospeli: {
       uvod: "vítej v aréně vědomostí. Držíme palce.",
-      pasmo: "Tvoje pásmo je <b>Dospělí</b> — otázky bez zjednodušování. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
-      souperi: "Hraješ proti dospělým. Puberťáci hrají zvlášť, takže není na koho svádět prohru.",
-      rating0: "Rating je číslo, které měří, jak ti to jde. Startuje se na <b>1500</b> a teprve pár odehraných her z toho udělá skutečné číslo.",
-      ratingN: "Rating je číslo, které měří, jak ti to jde. Roste s výhrami, klesá s prohrami.",
+      pasmo: "Hraješ v lize <b>Dospělí</b>: otázky bez zjednodušování. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
+      souperi: "Soupeři jsou taky dospělí. Kdo chce lehčí otázky, přepne si v Profilu na Puberťáky.",
+      rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
+      ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
     },
   };
 
