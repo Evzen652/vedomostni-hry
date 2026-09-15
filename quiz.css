@@ -1226,12 +1226,14 @@
     gap: 26px; align-items: stretch; }
   /* Obrázek je čtvercová ilustrace (512×512) — necháme ho blízko svého
      přirozeného tvaru místo roztažení na celou výšku sloupce (ta se řídí
-     vyšším formulářem u registrace) a zbytek sloupce vycentrujeme kolem něj. */
-  .zk-authside { display: flex; flex-direction: column; justify-content: center; }
+     vyšším formulářem u registrace). Oba sloupce začínají NAHOŘE (2026-09-15, přání
+     hráče): horní hrana obrázku lícuje s polem „Přezdívka". Vycentrované sloupce
+     se míjely o 40 px, protože formulář je vyšší než obrázek s nadpisem. */
+  .zk-authside { display: flex; flex-direction: column; justify-content: flex-start; }
   .zk-authhero { height: auto; flex: 0 0 auto; max-height: 320px; min-height: 220px; object-position: 50% 42%; }
   .zk-authcard h2 { font-size: 28px; margin-top: 12px; }
   .zk-authcard .zk-sub { margin-bottom: 0; }
-  .zk-authmain { display: flex; flex-direction: column; justify-content: center; }
+  .zk-authmain { display: flex; flex-direction: column; justify-content: flex-start; }
   /* Pole nemá cenu roztahovat přes celý sloupec — dlouhá řádka se hůř čte
      a e-mail ani PIN tolik místa nepotřebují. */
   .zk-authmain .zk-form, .zk-authmain .zk-autherr { max-width: 420px; width: 100%; }
