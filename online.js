@@ -307,7 +307,7 @@ window.ZKOnline = (function () {
           // zbyly jen Puberťáci a Dospělí a hráč ji měl za zbytečnou. Nový profil začíná
           // jako Dospělí, puberťácké pásmo se přepíná v Profilu (viz poznámka u souhlasu).
           '<div class="zk-field" id="zk-nickwrap">' +
-            '<label class="qz-fieldlabel" for="zk-nick">Přezdívka</label>' +
+            '<label class="qz-fieldlabel" for="zk-nick">Jméno nebo přezdívka</label>' +
             '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="Jak ti mají říkat" value="' +
               esc(stav.nick || "") + '">' +
           "</div>" +
@@ -649,7 +649,7 @@ window.ZKOnline = (function () {
               '<button type="button" class="zk-linkbtn" id="zk-fagain">Zkusit jinou přezdívku</button></div>'
           : '<div class="zk-form">' +
               '<div class="zk-field">' +
-                '<label class="qz-fieldlabel" for="zk-fnick">Přezdívka</label>' +
+                '<label class="qz-fieldlabel" for="zk-fnick">Jméno nebo přezdívka</label>' +
                 '<input class="qz-pname-in" id="zk-fnick" maxlength="20" autocomplete="username" placeholder="Jak ti říkáme">' +
               "</div>" +
               '<button class="qz-go" id="zk-fgo">Poslat odkaz ' + handArrowSvg(false) + '</button>' +
