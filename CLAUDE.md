@@ -163,7 +163,8 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     dobarvené lokálně (`sharp`, sytost jen tam, kde barva už je — papír nežloutne; váha podle
     vzdálenosti pixelu od barvy papíru navzorkované z rohů, síla ~0,55 — takhle později
     i `auth-hero.jpg` na obrazovce Nový profil a všech 10 dlaždic témat `section-*.jpg`
-    se silou 0,4); Evropa je nová
+    se silou 0,7 — hráči 0,4 nestačilo; dobarvuje se vždy z ORIGINÁLU v gitu, ne podruhé
+    z už upraveného JPEGu); Evropa je nová
     z Gemini, přebarvením staré, protože „MUCH more saturated" v promptu dalo komiks.
   - **Past zaplacená znovu: `node -e` s regulárním výrazem v Bashi.** `\\$` v dvojitých uvozovkách
     výraz rozbilo a nahrazení hlásilo 0 nálezů. Skripty s regexy psát nástrojem Write.
