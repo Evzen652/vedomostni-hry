@@ -42,23 +42,13 @@ a napojí (postup viz CLAUDE.md, zápis 2026-09-15).
 |---|---|
 | Repo | `github.com/Evzen652/vedomostni-hry` |
 | Pracovní větev | `claude/pokracujeme-e79708` — poslední commit viz `git log` |
-| `master` | `cb04b3d` (11. 9.) — **pracovní větev je o 14+ commitů napřed** |
-| Produkce | `zemekviz.pages.dev`, nasazená z **`cb04b3d`** (ověřeno 15. 9. přes `wrangler pages deployment list`) |
+| `master` | `0dfa574` (16. 9.) — srovnaný s pracovní větví k nasazení; další commity už jsou jen na větvi |
+| Produkce | `zemekviz.pages.dev`, nasazená z **`0dfa574`** 16. 9. (včetně `db:sync --remote`, viz CLAUDE.md) |
 | Účtů v produkci | **1 živý hráč + 18 botů** — **nic se nesmí mazat** |
 
-**Co je na větvi a NENÍ na produkci** (od `cb04b3d`):
-- 11 hlášek bez staženého minulého času („Uhodls" → „Trefa"), kontrola `stazeny` v auditu,
-- 29 otázek `country` „Česká republika" → „Česko",
-- stabilní `test:api` (turnajové kolo proti botovi odpovídá správně),
-- výběr kontinentu: dlaždice Česko druhá, nadpis „Kam se vydáme?",
-- dobarvené dlaždice (Evropa nová z Gemini, Celý svět, Asie, Česko, 4 režimy),
-- ilustrace na výsledku sóla/školy (`end-solo.jpg`) a vyhlášení párty (`end-party.jpg`),
-- párty: remíza při shodném skóre (fond `tie` ve `fondy.json`), typografické uvozovky,
-  nepovinná jména („Hráč N"),
-- nástroje na kontrolu ilustrací v `scripts/ilustrace/` a dokončené země z 12.–13. 9.
-
-**Při nasazení tohohle stavu je nutný `npm run db:sync -- --remote`** — hlášky i `country`
-čte online hra z D1. Pořadí a pasti v [nasazeni.md](nasazeni.md). Sloučení do `master`
+**Co je na větvi a NENÍ na produkci:** zjistíš `git log --oneline 0dfa574..HEAD`.
+Když mezi tím přibyly změny textů otázek, je při nasazení nutný `db:sync` (online hra
+čte otázky z D1). Pořadí a pasti v [nasazeni.md](nasazeni.md). Sloučení do `master`
 a nasazení jsou rozhodnutí hráče.
 
 Skutečný stav vždy ověř přes `git log` a

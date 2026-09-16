@@ -81,6 +81,30 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-16 — NASAZENO: produkce i `master` na `0dfa574` (60 commitů od `cb04b3d`). Migrace žádné, obsah přes `db:sync`.**
+  Ilustrace z 12.–13. 9., dobarvené dlaždice, výsledkové ilustrace, remíza a nepovinná jména
+  v párty, registrace bez volby pásma, obnova PINu po chybném přihlášení, „Česko" a hlášky
+  bez staženého rodu. Pořadí podle `docs/nasazeni.md`: obsah → `master` → kód.
+  - **`db:sync --check` bez `--remote` kontroluje LOKÁLNÍ databázi**, ne produkci — snadno
+    se přehlédne, protože výstup vypadá stejně. Produkce: `--check --remote` (0 přebytků).
+  - **`npm run db:sync` jen vyrobí `data/d1-sync.sql`**; na produkci ho pošle až
+    `wrangler d1 execute zemekviz --remote --file=data/d1-sync.sql`. Soubor: 150 INSERTů,
+    žádný řádek začínající `DROP`/`DELETE`.
+  - **Stav před i po stejný:** 1 člověk, 18 botů, 1 hra, 19 ratingů, 3 742 otázek.
+    „Česká republika" v `country` 29 → 0, „Uhodls" v hláškách 0.
+  - **`git fetch . vetev:master` odmítne, když je `master` vybraný v hlavní složce repa**
+    („refusing to fetch into branch … checked out"). Pak `git -C <repo> merge --ff-only vetev`
+    — ale jen po ověření, že tam `git status` nic nehlásí.
+  - **Porovnání souborů z produkce přes `Invoke-WebRequest … .Content` v PowerShellu 5.1 lže**
+    (dekóduje odpověď jako Latin-1, takže vyjde „neshoda"). Stáhnout `-OutFile` a porovnat
+    `Get-FileHash` — `quiz.js`, `online.js` i `quiz.css` bajtově shodné.
+  - **Ověřeno na ostré adrese:** nasazení `4afd4b14` je `Production / master / 0dfa574`,
+    `/api/leaderboard` bez přihlášení 401, `CLAUDE.md` jen SPA fallback, rozcestník se všemi
+    čtyřmi obrázky, start stahuje dva datové soubory, konzole čistá. **Neověřeno: registrace
+    a duel v produkci** (náhrobek po smazání účtu) — lokálně to kryje `test:api`.
+  - **Kontakt `ahoj@zemekviz.cz` pořád poštu nepřijímá** (viz 2026-09-11) a obnova PINu e-mail
+    nedoručí — obojí čeká na doménu.
+
 - **2026-09-15 — Po chybném přihlášení se pod hláškou nabízí „Obnovit PIN e-mailem"; „Zapomněl jsem PIN" → „Zapomenutý PIN?".**
   Hráč po špatném PINu obnovu nenašel — malý odkaz u pole PIN v tu chvíli nikdo nehledá.
   Odkaz `#zk-errforgot` stojí v `.zk-autherr` hned pod hláškou (jen u přihlášení) a obě cesty
