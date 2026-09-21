@@ -1,8 +1,8 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-15. 9. 2026 v noci** po session s úpravami UI (ilustrace výsledků, dobarvení dlaždic, remíza
-a nepovinná jména v párty, stažené tvary v kontrole rodu).
+21. 9. 2026 večer** před přechodem na druhý počítač (ilustrace deseti zemí, pomocné skripty
+přesunuté ze scratchpadu do repa).
 
 Tenhle soubor je **protokol**: co převzít, co ověřit, co je zakázané a co dělat
 v jakém pořadí. Popisný stav projektu je v [pokracovani.md](pokracovani.md),
@@ -26,8 +26,15 @@ Zkopíruj do prvního vzkazu:
 21. 9. dokončeny Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina a Belgie; bez ilustrace
 zbývá **832** otázek. Klíč `GEMINI_API_KEY` (nový formát `AQ.…`) je v `.dev.vars`
 worktree `pokracujeme-e79708` — v novém worktree nebo na jiném počítači chybí a hráč ho
-musí vložit znovu. **Další země (Finsko, Gabon, Peru…) nemají `irony_prompt`**,
-takže první krok je napsat zadání. Podrobnosti v bodu 2 [predani-ilustrace.md](predani-ilustrace.md).
+musí vložit znovu (řádek je nově zakomentovaný ve `.dev.vars.example`; **doporučen nový
+klíč**, starý zazněl v chatu). **Další země (Finsko, Gabon, Peru…) nemají `irony_prompt`**,
+takže první krok je napsat zadání. **Postup na druhém počítači krok za krokem je v bodu 0
+[predani-ilustrace.md](predani-ilustrace.md)**, pravidla psaní zadání v jeho bodu 2.
+Všechny pomocné skripty (zápis zadání, čekání na dávku, ořez, záplata) jsou v `scripts/ilustrace/`.
+
+**Produkce je pořád na `0dfa574` (16. 9.).** Od té doby přibylo na větvi jen obsahové:
+ilustrace, `irony_prompt` v datech, dokumentace a skripty — **žádný kód appky ani migrace**.
+Nasazení je rozhodnutí hráče; kdyby padlo, stačí `db:sync` + `npm run deploy` podle nasazeni.md.
 
 Ilustrace do UI (dlaždice, výsledkové obrazovky) jdou i bez klíče: hráč je vygeneruje
 v chatu Gemini a uloží do `D:\weigle\plocha\Kvíz_ILUSTRACE`, session je jen zmenší
@@ -157,8 +164,9 @@ Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentin
 
 **Další krok:** napsat `irony_prompt` pro Finsko (pak další) v session, `npm run lint-irony`
 (0 chyb), pak `node scripts/batch-irony-images.js submit --cc fi`. Na hromadný zápis zadání
-do dat se hodí malý skript (JSON mapa `id → zadání`, round-trip kontrola formátu 1 mezera +
-CRLF) — Indonésie tak prošla na první pokus.
+do dat slouží `node scripts/ilustrace/zapis-prompty.js fi mapa.json` (JSON mapa `id → zadání`,
+round-trip kontrola formátu 1 mezera + CRLF), na čekání `node scripts/ilustrace/cekej-davka.js`
+na pozadí, na podpis u spodní hrany `node scripts/ilustrace/orez.js id 700`.
 
 Po každé zemi: `archy.js` + `rohy.js` → kontrola očima → opravy přes `--only` →
 zápis do CLAUDE.md → `validate` + `test:offline` → commit + push.

@@ -1,12 +1,44 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **21. 9.**, po Malajsii, Pákistánu, Portugalsku,
-Saúdské Arábii a Dánsku). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **21. 9.** před přechodem na druhý počítač,
+po Belgii). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
 Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea) a **2026-09-21**
-(Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko).
+(Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny,
+Argentina, Belgie).
+
+---
+
+## 0. NA DRUHÉM POČÍTAČI — nejdřív tohle
+
+1. **Stáhnout větev a přepnout se na ni:**
+   ```bash
+   git fetch origin
+   git checkout claude/pokracujeme-e79708
+   git pull
+   npm install
+   ```
+   Poslední commit ilustrací je Belgie; `git log --oneline -3` musí ukázat předávací commit
+   nad `0ecafb0`. **Pracovní strom má být čistý, nic rozdělaného nezůstalo** — žádná dávka
+   neběží a `.batch-irony.json` ukazuje na dokončenou (a stáhnutou) opravnou dávku Belgie.
+2. **Vložit klíč Gemini do `.dev.vars`** (gitignorovaný, na druhý stroj NEPŘEJDE). Vzor je
+   v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **Doporučeno vytvořit NOVÝ klíč**
+   na `ai.studio` a starý smazat — ten současný zazněl v chatu. Bez klíče skončí `submit`
+   hned chybou, nic se nezkazí.
+3. **Ověřit, že všechno sedí** (čísla k porovnání):
+   ```bash
+   npm run validate
+   npm run test:offline
+   npm run lint-irony
+   ```
+   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **832**.
+4. **Všechny pomocné skripty jsou v repu** (`scripts/ilustrace/`, tabulka v bodu 3), včetně
+   těch čtyř, které do 21. 9. žily jen ve scratchpadu session (`zapis-prompty`, `orez`,
+   `zaplata`, `cekej-davka`). Na druhém stroji tedy nechybí nic.
+5. **Pokračovat Finskem** (bod 2 a 6). Všechny ostatní země ve frontě mají po 40 otázkách
+   bez ilustrace a zadání (`irony_prompt`) zatím nenapsaná.
 
 ---
 
@@ -26,7 +58,8 @@ Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea) a **2026-09-
 řešení je vždycky dobití na `ai.studio/projects`, skript ani appka s tím nic neudělají.
 
 **Dávky o jediném/pár obrázcích někdy trvají 30+ minut** — Batch API negarantuje čas.
-Na čekání slouží smyčka volající `status` jednou za minutu, puštěná na pozadí.
+Na čekání slouží `node scripts/ilustrace/cekej-davka.js` (volá `status` jednou za minutu
+a skončí, jakmile je hotovo), puštěný na pozadí.
 
 **Skript drží JEN JEDNU dávku naráz** (`.batch-irony.json`), takže země jdou postupně:
 `submit` → počkat → `fetch` → kontrola → opravná dávka → commit → další země.
@@ -49,6 +82,20 @@ pak `npm run lint-irony` (0 chyb), a teprve pak `submit --cc id`.
 - **Slovo o účelu nebo typu věci se propíše jako nápis:** „new funding“ → „NEW FUNDS“,
   „contract“ → „CONTRACT“, „past its stop“ → „STOP“. Budík/měřidlo radši vůbec.
 - **Obchodní ulice = cedule s pseudopísmem.** Scénu stavět u holých zdí.
+- **Slova „stall/shop/stand“ ani ve VEDLEJŠÍM gagu** (Norsko: stánek i výloha dostaly ceduli).
+- **Metafora o kódu/písmu se propíše stejně jako nápis** (Argentina: pečivo „like a secret
+  code“ dostalo škrábance jako písmo). Popisuj tvar, ne význam.
+- **Když záleží, KDO ve scéně je, řekni to** (Filipíny: „family group“ vyšla jako evropská
+  rodina). Etnicitu a místní prostředí psát výslovně.
+- **Sportovní dav si domyslí vlajky, klidně cizí** (Belgie: švédské u cyklistiky). Když nemají
+  být, „with no flags anywhere“.
+- **„football“ = ragbyový míč**; psát „round black-and-white patched soccer football“.
+- **„seen from behind“ model ignoruje**, když je to až ve vedlejší větě — dát na začátek
+  a doplnit „only the back of his head and shoulders visible“ (Argentina, Maradona).
+- **Chráněné komiksové postavy (Tintin, Šmoulové, Lucky Luke) se nekreslí** — scéna nese jen
+  jejich svět (prázdná políčka, houbová vesnička, kovboj a jeho stín). Vyšlo napoprvé.
+- **Abstraktní vtip chce JEDNU velkou pózu**, ne detail na tácu (Argentina, lunfardo:
+  obrácené hrnky se ztratily, číšník vzhůru nohama zabral).
 
 
 **Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka/Irska/Izraele/Malajsie:**
@@ -104,6 +151,10 @@ Cesty si dopočítají samy z umístění skriptu, takže fungují na jakémkoli
 | `node scripts/ilustrace/pridej-prompty.js soubor.json` | doplní `irony_prompt` tam, kde chybí (vstup `{id: scéna}`) |
 | `node scripts/ilustrace/prepis-prompty.js soubor.json` | přepíše EXISTUJÍCÍ zadání (kontroluje původní text) |
 | `node scripts/ilustrace/aplikuj.js upravy.json` | obecný zapisovač s round-tripem (1 mezera + CRLF) |
+| `node scripts/ilustrace/zapis-prompty.js XX soubor.json` | **hlavní zapisovač zadání pro celou zemi**: zapíše i přepíše `irony_prompt` z mapy `{id: scéna}` a vypíše, co v zemi zadání ještě nemá |
+| `node scripts/ilustrace/cekej-davka.js` | čeká na dokončení dávky (status 1× za minutu, max 90 min) — pouštět na pozadí |
+| `node scripts/ilustrace/orez.js id 700` | odřízne spodní pruh s podpisem (horních N řádků, vycentrovaně) a vrátí 1344×768; přepisuje `img/{id}.jpg` |
+| `node scripts/ilustrace/zaplata.js vstup výstup x y š v posunY` | překryje logo/podpis kouskem téhož obrázku posunutým svisle, se změkčeným okrajem |
 
 Archy a výřezy jdou do **`.ilustrace/`** v kořeni repa, což je **gitignorované** — je to
 pracovní materiál ke kontrole očima, ne obsah appky.
@@ -113,6 +164,7 @@ Tehdy ta id ze vstupního JSONu vyhoď a spusť znovu; stalo se to u Malajsie i 
 
 **Zálohy vadných verzí ležely ve scratchpadu a při přechodu na jiný počítač se ztratí** —
 nevadí, jsou to vadné obrázky a `img/` je nemá, takže `submit --only` je vygeneruje znovu.
+Vadný obrázek před přeposláním přesuň kamkoli mimo `img/` (jinak ho `submit` přeskočí).
 
 ---
 
@@ -204,7 +256,8 @@ neodstraní.
 ## 6. Co dělat dál
 
 1. **Napsat zadání pro další zemi** (Finsko 40, pak další) — v session, podle poučení
-   v bodu 2; zápis do dat malým skriptem s round-trip kontrolou formátu.
+   v bodu 2. Zadání se píšou do JSON mapy `{id: scéna}` (mimo repo, třeba do dočasné
+   složky) a do dat je zapíše `node scripts/ilustrace/zapis-prompty.js fi mapa.json`.
 2. `npm run lint-irony` (0 chyb) → `submit --cc xx` → archy + rohy → opravy → commit.
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.

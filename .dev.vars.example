@@ -2,3 +2,5 @@
 # Produkce tenhle soubor nikdy nevidí; tam se tajemství nastavuje přes
 #   wrangler pages secret put SESSION_SECRET
 ALLOW_DEV_SECRET=1
+# Klíč pro generování ilustrací (scripts/batch-irony-images.js); z ai.studio, formát AQ.…
+# GEMINI_API_KEY=
