@@ -81,6 +81,24 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Argentina 48/48 ilustrací. 8 vad ze 40: čtyři podpisy, dvakrát past v MÉM zadání, dvakrát model zadání nedodržel.**
+  Zadání psaná v session, `lint-irony` 0 chyb (jednou zachytil slovo „letters“ v záporu u Xula
+  Solara — přepsáno kladně na tvary). Citlivá témata prošla napoprvé: Matky z Plaza de Mayo
+  (kruh žen v bílých šátcích), Falklandy (fronta k volební schránce + odložená důstojnická
+  čepice), Che Guevara (jen motorka a batoh), San Martín zezadu, vlajka u vyhlášení nezávislosti.
+  - **`ar-q-empanadas`: přirovnání „like a secret code“ vyrobilo na vršku pečiva škrábance
+    podobné písmu.** Metafora o kódu/písmu se propíše stejně jako slovo o nápisu. Oprava: vršky
+    „smooth, plain and glossy“, tři druhy záhybů popsané tvarem jen na okraji.
+  - **`ar-q-lunfardo`: gag „vše obráceně“ se v obrázku ztratil** (hrnky stály normálně). Zabral
+    až výrazný tvar — číšník chodí vzhůru nohama po rukou. Abstraktní vtip chce jednu velkou,
+    nepřehlédnutelnou pózu, ne detail na tácu.
+  - **`ar-q-maradona`: „seen from behind“ model ignoroval** a nakreslil obličej. Pomohlo
+    „seen from directly behind … only the back of his head and shoulders visible“ na začátku věty.
+  - **`ar-q-atletika`: „a football“ dal ragbyový míč** — v angličtině je slovo dvojznačné. Psát
+    „round black-and-white patched soccer football“.
+  - **Podpisy:** asado, pólo, Ushuaia, medialunas — všechny spravilo přeposlání.
+  - **Bez ilustrace zbývá 872.** Další: Belgie, Finsko, Gabon, Peru, USA, Vietnam (po 40).
+
 - **2026-09-21 — Filipíny 42/42 ilustrací. 5 vad ze 41: čtyři podpisy a jedna rodina, která vyšla EVROPSKÁ.**
   Zadání psaná v session, `lint-irony` 0 chyb. Rizikové otázky prošly napoprvé: obě vlajky
   (modrá nahoře, cihlově červená dole, slunce s osmi paprsky), Rizal jen jako odložené pero,
