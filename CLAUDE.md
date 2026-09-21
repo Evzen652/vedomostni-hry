@@ -81,6 +81,19 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Saúdská Arábie 44/44 ilustrací. Jediná vadná otázka, ale tři pokusy: „contract" vyrobil nápis, sportovní dres pak DVAKRÁT LOGO VÝROBCE.**
+  Žádný podpis v rozích (poprvé od začátku série). Rizikové otázky o písmu prošly — nabatejské
+  kameny nesou jen geometrické a oblé rýhy.
+  - **`sa-q-al-nassr`: „a contract lying on a table with its pages face down" → čitelné „CONTRACT".**
+    Slovo si nápis vynutilo i přes „face down". Nahrazeno „a single golden fountain pen lying
+    alone on a bare wooden table".
+  - **NOVÝ TYP VADY: logo obchodní značky.** Dres vyšel s fajfkou (Nike), po přeposlání
+    s kočkou (Puma) — ačkoli zadání mělo „no crest or marking of any kind". Model má fotbalový
+    dres pevně spojený s logem výrobce. Třetí verze zachráněna **záplatou**: pruhy dresu jsou
+    svislé, takže místo loga překryl kousek téhož pruhu o 72 px níž se změkčenými okraji
+    (skript `zaplata.js` ve scratchpadu; malá záplata nechá na okraji konečky loga, musí logo
+    přesahovat). **U budoucích dresů hlídat logo výrobce stejně jako podpis.**
+
 - **2026-09-21 — Portugalsko 42/42 ilustrací. 5 vad ze 42: dvakrát text z POPISU ÚČELU nebo typu ulice, třikrát podpis.**
   - **`pt-a-eu-vstup`: „a bridge under construction with new funding" → pytel s čitelným
     „NEW FUNDS".** Další případ pasti „slovo o účelu se propíše jako nápis". Nově „cranes and
