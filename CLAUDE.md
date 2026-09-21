@@ -81,6 +81,20 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Belgie 42/42 ilustrací. 5 vad ze 40: pět podpisů, u cyklistiky navíc cizí vlajky, které zadání vůbec nechtělo.**
+  Zadání psaná v session, `lint-irony` 0 chyb. **Komiksové postavy (Tintin, Šmoulové, Lucky Luke)
+  se schválně nekreslí** — jsou chráněné: Tintin = kreslířský stůl s PRÁZDNÝMI políčky, teriér
+  a kostkovaná raketa; Šmoulové = houbová vesnička s bílými čepičkami na šňůře, bez postaviček;
+  Lucky Luke = obecný kovboj tasící rychleji než jeho stín. Vyšlo to napoprvé a čitelně.
+  Citlivá témata symbolicky (Kongo = zamčená brána s korunou před pralesem, Baudouin = prázdný
+  trůn s přesýpacími hodinami), Manneken Pis v kostýmu.
+  - **`be-t-cyklistika`: dav fanoušků dostal modré vlaječky se žlutým křížem** (švédské), aniž
+    by zadání vlajky zmiňovalo — stejná halucinace jako u Stoičkova v Bulharsku. **Sportovní dav
+    si o vlajky řekne sám; když nejsou potřeba, napsat „with no flags anywhere“.**
+  - **Podpisy:** cyklistika, bez vlády, Atomium, NATO, Belfort. `be-a-nato` měl podpis i po
+    přeposlání → ořez (horních 700 řádků).
+  - **Bez ilustrace zbývá 832.** Další: Finsko, Gabon, Peru, USA, Vietnam (po 40).
+
 - **2026-09-21 — Argentina 48/48 ilustrací. 8 vad ze 40: čtyři podpisy, dvakrát past v MÉM zadání, dvakrát model zadání nedodržel.**
   Zadání psaná v session, `lint-irony` 0 chyb (jednou zachytil slovo „letters“ v záporu u Xula
   Solara — přepsáno kladně na tvary). Citlivá témata prošla napoprvé: Matky z Plaza de Mayo
