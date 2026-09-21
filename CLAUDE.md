@@ -81,6 +81,20 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Norsko 42/42 ilustrací. 5 vad ze 41: tři podpisy (ořez) a dvakrát cedule z pojmenovaného podniku.**
+  Zadání psaná v session. Rizikové otázky prošly napoprvé: black metal (kytarista a hasič
+  s hasicím přístrojem, žádný oheň), cela jako hotelový pokoj, velryba daleko před harpunou,
+  všechny norské vlajky správně (i u Amundsena a v Antarktidě), elektromobily z boku bez SPZ,
+  značka „pozor los" jen se siluetou.
+  - **`no-t-holmenkollen`: „a hot chocolate stall" → stánek s nápisem „HOT CHOCO…“.** Nahrazeno
+    dítětem s hrnkem v palčácích. **`no-a-ustava-17-kvetna`: „a toy tank in a shop window" →
+    výloha s cedulí.** Tank na obyčejném parapetu a „every house front completely plain".
+    Obojí je stará past (pojmenovaný podnik = vývěska), jen jsem ji tentokrát sám napsal do
+    VEDLEJŠÍHO gagu — **i v podřízených detailech se slovo „stall/shop/stand" nesmí objevit.**
+  - **Podpisy ořezem:** `no-k-vlajka`, `no-t-nordkapp`, `no-t-bryggen` (horních 700 řádků).
+  - **Ponecháno:** čísla na biatlonových terčích (číslice se tolerují), prázdný štítek na dresu
+    házenkářky, hřebíky v krabici u stavkirke (zvětšením ověřeno, že nejde o písmo).
+
 - **2026-09-21 — Indonésie 41/41 ilustrací. Zadání psaná v session podle poučení z 21. 9. — ani jedna textová vada, jen podpisy.**
   Rizikové otázky prošly napoprvé: Sukarno (vlajka správně cihlově červená nahoře, bílá dole),
   Kartini a Habibie anonymně, VOC s holými plachtami, badminton bez log, Garuda bez pásky

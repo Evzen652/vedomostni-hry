@@ -23,10 +23,10 @@ Zkopíruj do prvního vzkazu:
 
 ### Ilustrace k otázkám: kredit dobitý, další země čekají na ZADÁNÍ
 
-21. 9. dokončeny Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko a Indonésie; bez ilustrace
-zbývá **994** otázek. Klíč `GEMINI_API_KEY` (nový formát `AQ.…`) je v `.dev.vars`
+21. 9. dokončeny Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko, Indonésie a Norsko; bez ilustrace
+zbývá **953** otázek. Klíč `GEMINI_API_KEY` (nový formát `AQ.…`) je v `.dev.vars`
 worktree `pokracujeme-e79708` — v novém worktree nebo na jiném počítači chybí a hráč ho
-musí vložit znovu. **Další země (Norsko, Filipíny…) nemají `irony_prompt`**,
+musí vložit znovu. **Další země (Filipíny…) nemají `irony_prompt`**,
 takže první krok je napsat zadání. Podrobnosti v bodu 2 [predani-ilustrace.md](predani-ilustrace.md).
 
 Ilustrace do UI (dlaždice, výsledkové obrazovky) jdou i bez klíče: hráč je vygeneruje
@@ -153,10 +153,10 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 12.–13. 9. dokončeny Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko, Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina, Rumunsko,
 Thajsko, Turecko, Irsko, Izrael, Jižní Korea (všechny 100 %); 21. 9. Malajsie, Pákistán,
-Portugalsko, Saúdská Arábie, Dánsko a Indonésie. Bez ilustrace je **994** otázek z 3 742.
+Portugalsko, Saúdská Arábie, Dánsko, Indonésie a Norsko. Bez ilustrace je **953** otázek z 3 742.
 
-**Další krok:** napsat `irony_prompt` pro Norsko (pak Filipíny…) v session, `npm run lint-irony`
-(0 chyb), pak `node scripts/batch-irony-images.js submit --cc no`. Na hromadný zápis zadání
+**Další krok:** napsat `irony_prompt` pro Filipíny (pak další) v session, `npm run lint-irony`
+(0 chyb), pak `node scripts/batch-irony-images.js submit --cc ph`. Na hromadný zápis zadání
 do dat se hodí malý skript (JSON mapa `id → zadání`, round-trip kontrola formátu 1 mezera +
 CRLF) — Indonésie tak prošla na první pokus.
 

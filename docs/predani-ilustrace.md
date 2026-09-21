@@ -15,10 +15,10 @@ Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea) a **2026-09-
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **994** |
-| Hotovo 21. 9. | Malajsie 42/42, Pákistán 42/42, Portugalsko 42/42, Saúdská Arábie 44/44, Dánsko 42/42, Indonésie 41/41 |
+| Bez ilustrace | **953** |
+| Hotovo 21. 9. | Malajsie 42/42, Pákistán 42/42, Portugalsko 42/42, Saúdská Arábie 44/44, Dánsko 42/42, Indonésie 41/41, Norsko 42/42 |
 | Klíč Gemini | **nový formát `AQ.…`**, v `.dev.vars` tohohle worktree (negituje se). Na jiném počítači ho tam musí hráč vložit znovu. |
-| Další v pořadí | Norsko 41, Filipíny 41… — **zadání (`irony_prompt`) zatím NENAPSANÁ** |
+| Další v pořadí | Filipíny 41… — **zadání (`irony_prompt`) zatím NENAPSANÁ** |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -33,7 +33,7 @@ Na čekání slouží smyčka volající `status` jednou za minutu, puštěná n
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: napsat zadání pro Norsko (a další)
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: napsat zadání pro Filipíny (a další)
 
 Čtyři připravené sady (Pákistán, Portugalsko, Saúdská Arábie, Dánsko) jsou vyčerpané.
 Další země nemají `irony_prompt`, takže se nejdřív píšou zadání (v session, zadarmo),
@@ -203,9 +203,9 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Dobít kredit a dogenerovat pět malajsijských obrázků** (bod 2 výš) — priorita číslo jedna.
-2. **Odeslat Pákistán (42), Portugalsko (42), Saúdskou Arábii (42) a Dánsko (42) — zadání
-   jsou hotová a po lintu**, pak pokračovat pořadím: Indonésie 41, Norsko 41, Filipíny 41…
+1. **Napsat zadání pro další zemi** (Filipíny 41, pak další) — v session, podle poučení
+   v bodu 2; zápis do dat malým skriptem s round-trip kontrolou formátu.
+2. `npm run lint-irony` (0 chyb) → `submit --cc xx` → archy + rohy → opravy → commit.
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 
