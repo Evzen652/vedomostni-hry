@@ -81,6 +81,18 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Pákistán 42/42 ilustrací. 4 vady ze 42; náklaďák potřeboval tři pokusy, protože ZADNÍ ČÁST vozu si řekne o SPZ.**
+  Všechny rizikové otázky o písmu (kaligrafie, psaní zprava doleva, truck art s verši) prošly
+  napoprvé bez znaku — thajský postup „nedat scéně plochu na písmo" drží dál.
+  - **`pk-k-malovane-nakladaky`: „back panel of a lorry" → čitelná SPZ „TRO-1999".** Druhý pokus
+    s „malba pokračuje přes nárazník, jen obrázky a vzory" vyrobil SPZ znovu (číslice). Zákaz
+    nepomohl, pomohlo **otočit vůz z boku** („seen exactly side-on"), kde značka není. Stejná
+    lekce jako u tramvaje v Kanadě a skafandru v Rusku: po druhém nálezu se scéna otáčí.
+  - **Podpisy:** `pk-q-rozdeleni`, `pk-k-delfin`, `pk-t-karachi-largest-city`. U vlaků přeposlání
+    vyrobilo místo podpisu písmena na nárazníku lokomotivy; teprve třetí pokus čistý.
+  - **Záměrné, ne vady:** pyramida a zikkurat na obzoru u Harappy (srovnání stáří) a vzdálené
+    přístavní město u Islámábádu (Karáčí) — obojí je v zadání.
+
 - **2026-09-21 — Malajsie 42/42 ilustrací. Vlajka selhala podruhé kvůli PALETĚ STYLU, ne popisu.**
   Kredit dobit, nový klíč v `.dev.vars` (nový formát `AQ.…`). Pět odložených malajsijských
   obrázků přegenerováno: sultanát (už bez „SPICES") a most Petronas čisté hned.
