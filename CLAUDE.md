@@ -81,6 +81,20 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Portugalsko 42/42 ilustrací. 5 vad ze 42: dvakrát text z POPISU ÚČELU nebo typu ulice, třikrát podpis.**
+  - **`pt-a-eu-vstup`: „a bridge under construction with new funding" → pytel s čitelným
+    „NEW FUNDS".** Další případ pasti „slovo o účelu se propíše jako nápis". Nově „cranes and
+    plain stacked building materials" — čisté napoprvé.
+  - **`pt-a-diaspora`: „a foreign city street" → obchody s cedulemi pseudopísma.** Obchodní ulice
+    si o cedule řekne sama (jako Lvov). Obě rodiny přesunuty do dvorků s holými zdmi.
+  - **Podpisy:** Vasco da Gama, ovos moles a `pt-t-vinho-porto` — ten dokonce jako vodoznak
+    „@…" a podruhé i po přeposlání. **Oříznut** (horních 715 řádků, vycentrovaně, zpět na
+    1344×768) místo třetího placeného pokusu. **Past při ořezu: `sharp(soubor)` drží soubor
+    otevřený a zápis na stejné místo spadne na „UNKNOWN: open"** — načíst nejdřív
+    `fs.readFileSync` do bufferu a vypnout `sharp.cache(false)`.
+  - **Prošlo, ač hrozilo:** sloup na Cabo da Roca, šály Benfica/Porto, mikrofony u Mourinha,
+    Pessoovy heteronymy. Tabulka u Benfiky vyšla prázdná (jen linky), bez čísel i písmen.
+
 - **2026-09-21 — Pákistán 42/42 ilustrací. 4 vady ze 42; náklaďák potřeboval tři pokusy, protože ZADNÍ ČÁST vozu si řekne o SPZ.**
   Všechny rizikové otázky o písmu (kaligrafie, psaní zprava doleva, truck art s verši) prošly
   napoprvé bez znaku — thajský postup „nedat scéně plochu na písmo" drží dál.
