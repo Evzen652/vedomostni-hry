@@ -81,6 +81,18 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Indonésie 41/41 ilustrací. Zadání psaná v session podle poučení z 21. 9. — ani jedna textová vada, jen podpisy.**
+  Rizikové otázky prošly napoprvé: Sukarno (vlajka správně cihlově červená nahoře, bílá dole),
+  Kartini a Habibie anonymně, VOC s holými plachtami, badminton bez log, Garuda bez pásky
+  s heslem, tempeh jako bílá cihlička. **Potvrzuje, že poučení fungují, když jsou v zadání
+  od začátku** — opravovat se nemuselo žádné zadání.
+  - **1 obrázek „bez výsledku"** (`id-t-angklung`) — výpadek API, stejné zadání prošlo napoprvé.
+  - **Podpisy:** Nyepi, sopky, Toba spravilo přeposlání. `id-t-jakarta` měl podpis podruhé →
+    ořez (horních 680 řádků). `id-q-bahasa-indonesia` dostal podruhé dokonce **razítko s logem
+    a podpisem uprostřed moře** → záplata z vody nad ním (`zaplata.js`, posun −150 px).
+  - **Rendang:** stupně vítězů mají čísla 1–3, ač zadání chtělo „no numbers". Číslice se
+    tolerují (jako hodiny či „221B"), ponecháno.
+
 - **2026-09-21 — Dánsko 42/42 ilustrací. 6 vad ze 41 generovaných; tři podpisy ořezem, budík u elektráren dvakrát vyrobil text a musel ze scény pryč.**
   Rizikové otázky prošly napoprvé: Bluetooth (Viking se svítícím modrým zubem, na přístrojích
   žádná runa), Carlsberg (duhová řada zkumavek bez čísel), Kierkegaard (víc verzí téhož muže),
