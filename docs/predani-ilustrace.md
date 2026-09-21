@@ -15,10 +15,10 @@ Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea) a **2026-09-
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **953** |
-| Hotovo 21. 9. | Malajsie 42/42, Pákistán 42/42, Portugalsko 42/42, Saúdská Arábie 44/44, Dánsko 42/42, Indonésie 41/41, Norsko 42/42 |
+| Bez ilustrace | **912** |
+| Hotovo 21. 9. | Malajsie 42/42, Pákistán 42/42, Portugalsko 42/42, Saúdská Arábie 44/44, Dánsko 42/42, Indonésie 41/41, Norsko 42/42, Filipíny 42/42 |
 | Klíč Gemini | **nový formát `AQ.…`**, v `.dev.vars` tohohle worktree (negituje se). Na jiném počítači ho tam musí hráč vložit znovu. |
-| Další v pořadí | Filipíny 41… — **zadání (`irony_prompt`) zatím NENAPSANÁ** |
+| Další v pořadí | Argentina 40, Belgie 40, Finsko 40, Gabon 40, Peru 40, USA 40, Vietnam 40… — **zadání (`irony_prompt`) zatím NENAPSANÁ** |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -33,7 +33,7 @@ Na čekání slouží smyčka volající `status` jednou za minutu, puštěná n
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: napsat zadání pro Filipíny (a další)
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: napsat zadání pro Argentinu (a další)
 
 Čtyři připravené sady (Pákistán, Portugalsko, Saúdská Arábie, Dánsko) jsou vyčerpané.
 Další země nemají `irony_prompt`, takže se nejdřív píšou zadání (v session, zadarmo),
@@ -203,7 +203,7 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Napsat zadání pro další zemi** (Filipíny 41, pak další) — v session, podle poučení
+1. **Napsat zadání pro další zemi** (Argentina 40, pak další) — v session, podle poučení
    v bodu 2; zápis do dat malým skriptem s round-trip kontrolou formátu.
 2. `npm run lint-irony` (0 chyb) → `submit --cc xx` → archy + rohy → opravy → commit.
 3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,

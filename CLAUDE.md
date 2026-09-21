@@ -81,6 +81,21 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Filipíny 42/42 ilustrací. 5 vad ze 41: čtyři podpisy a jedna rodina, která vyšla EVROPSKÁ.**
+  Zadání psaná v session, `lint-irony` 0 chyb. Rizikové otázky prošly napoprvé: obě vlajky
+  (modrá nahoře, cihlově červená dole, slunce s osmi paprsky), Rizal jen jako odložené pero,
+  boxeři a hráči bez log, jeepney z boku bez SPZ, sari-sari bez cedule (štítky na krabičkách
+  nesou jen linky, ponecháno), medaile u manga s číslicí 1 (číslice se tolerují).
+  - **NOVÝ TYP VADY: etnicita.** `ph-q-rodina` („an enormous family group“) vyšla jako dav
+    blonďatých evropských dětí — na filipínskou otázku zjevně mimo. Model si neurčené lidi
+    doplní podle vlastního výchozího typu. **Když na tom, KDO ve scéně je, záleží, musí to
+    zadání říct** („Filipino family with warm brown skin and black hair“ + místní dům na kůlech).
+    Po úpravě správně napoprvé. Totéž platí pro dav u lechonu, ten ale jako vedlejší kulisa prošel.
+  - **Podpisy:** `ph-q-jeepney` (slabý, pod vozem), `ph-q-lechon`, `ph-q-spanelsko`,
+    `ph-k-tinikling` — všechny spravilo přeposlání; jeepney navíc dostal „plain bare walls“,
+    protože v pozadí prosvítaly náznaky vývěsek.
+  - **Bez ilustrace zbývá 912.** Další: Argentina, Belgie, Finsko, Gabon, Peru, USA, Vietnam (po 40).
+
 - **2026-09-21 — Norsko 42/42 ilustrací. 5 vad ze 41: tři podpisy (ořez) a dvakrát cedule z pojmenovaného podniku.**
   Zadání psaná v session. Rizikové otázky prošly napoprvé: black metal (kytarista a hasič
   s hasicím přístrojem, žádný oheň), cela jako hotelový pokoj, velryba daleko před harpunou,
