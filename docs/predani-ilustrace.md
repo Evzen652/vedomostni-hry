@@ -1,106 +1,55 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **13. 9. odpoledne**, po Malajsii, kde došel
-kredit Gemini API). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
+Sepsáno **12. září 2026** (aktualizováno **21. 9.**, po Malajsii, Pákistánu, Portugalsku,
+Saúdské Arábii a Dánsku). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
 a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
 **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
-Slovensko, Nizozemsko) a **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
-Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea, Malajsie).
+Slovensko, Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
+Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea) a **2026-09-21**
+(Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko).
 
 ---
 
-## 1. Stav k 13. 9. 2026 (odpoledne)
+## 1. Stav k 21. 9. 2026
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **1 207** |
-| Hotovo dnes v noci/dopoledne | Slovensko 66/66, Nizozemsko 63/63, Švýcarsko 62/62, Řecko 53/53, Bulharsko 52/52, Španělsko 62/62, Ukrajina 47/47, Rumunsko 46/46, Thajsko 45/45, Turecko 43/43, Irsko 42/42, Izrael 42/42, Jižní Korea 42/42, **Malajsie 37/42** |
-| **ZASTAVENO — DOŠEL KREDIT GEMINI** | **Pět malajsijských obrázků čeká na přegenerování**, zadání jsou opravená a po lintu — viz bod 2 níž |
-| Další v pořadí (po Malajsii) | **Pákistán 42, Portugalsko 42, Saúdská Arábie 42 a Dánsko 42 — zadání UŽ NAPSANÁ a po lintu**; pak Indonésie 41, Norsko 41, Filipíny 41… |
+| Bez ilustrace | **1 035** |
+| Hotovo 21. 9. | Malajsie 42/42, Pákistán 42/42, Portugalsko 42/42, Saúdská Arábie 44/44, Dánsko 42/42 |
+| Klíč Gemini | **nový formát `AQ.…`**, v `.dev.vars` tohohle worktree (negituje se). Na jiném počítači ho tam musí hráč vložit znovu. |
+| Další v pořadí | Indonésie 41, Norsko 41, Filipíny 41… — **zadání (`irony_prompt`) zatím NENAPSANÁ** |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
-**Kredit Gemini API se v noci na chvíli vyčerpal** (429 „prepayment credits are depleted"
-při odesílání dávky pro Slovensko) — hráč dobil na `ai.studio/projects` a dávka pak prošla
-normálně. Kdyby se to stalo znovu, řešení je stejné (dobití, appka/skript s tím nic neudělá).
+**Kredit Gemini API se už dvakrát vyčerpal** (429 „prepayment credits are depleted“) —
+řešení je vždycky dobití na `ai.studio/projects`, skript ani appka s tím nic neudělají.
 
-**Dávky o jediném/pár obrázcích někdy trvají 30+ minut** (viděno u `bg-q-shopska` i
-`es-a-vinice`) — mnohem déle než velké dávky. Batch API negarantuje čas dokončení,
-řešením je jen počkat.
+**Dávky o jediném/pár obrázcích někdy trvají 30+ minut** — Batch API negarantuje čas.
+Na čekání slouží smyčka volající `status` jednou za minutu, puštěná na pozadí.
 
-**Technika ze Španělska: když 3–4 přeposlání stejného zadání pořád vrací podpis,
-je RYCHLEJŠÍ A LEVNĚJŠÍ obrázek OŘÍZNOUT než platit za další generování** — funguje
-spolehlivě, pokud je podpis blízko okraje. Postup: `sharp extract` horních ~85 %
-plochy (zachovej poměr stran, u 1344×768 např. left:100, top:0, width:1143, height:653),
-pak `.resize(1344, 768)`.
-
-**Ukrajina jako jediná země NEMĚLA ANI JEDEN náhodný podpis** — u Rumunska se jeden
-zase objevil, a to na NEČEKANÉM MÍSTĚ (radlice buldozeru, ne roh).
+**Skript drží JEN JEDNU dávku naráz** (`.batch-irony.json`), takže země jdou postupně:
+`submit` → počkat → `fetch` → kontrola → opravná dávka → commit → další země.
 
 ---
 
-## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: dobít kredit a dogenerovat pět obrázků Malajsie
+## 2. PRVNÍ KROK PŘÍŠTÍ SESSION: napsat zadání pro Indonésii (a další)
 
-**Práce se zastavila na tom, že došel kredit Gemini API** (429 "prepayment credits are
-depleted") uprostřed opravné dávky pro Malajsii. Stalo se to už jednou v noci na 13. 9.
-u Slovenska a řešení je stejné: **hráč dobije kredit na `ai.studio/projects`** a dávka
-pak projde normálně. Skript ani appka s tím nic neudělají.
+Čtyři připravené sady (Pákistán, Portugalsko, Saúdská Arábie, Dánsko) jsou vyčerpané.
+Další země nemají `irony_prompt`, takže se nejdřív píšou zadání (v session, zadarmo),
+pak `npm run lint-irony` (0 chyb), a teprve pak `submit --cc id`.
 
-Po dobití spusť jako první věc:
+**Na co si při psaní zadání dát pozor — nové z 21. 9.:**
+- **Vlajka: jmenuj ODSTÍN, který sedí do palety, a řekni, že má být vidět** („deep brick red
+  … the red clearly reading as red“). Samotné „red and white“ tlumená paleta přebije
+  (malajsijská vlajka vyšla dvakrát krémově-tyrkysová).
+- **Sportovní dres si řekne o logo výrobce** (Nike, Puma) i přes „no marking of any kind“.
+  Dres ukazovat co nejméně; když už, hlídat logo stejně jako podpis.
+- **Zadní část vozidla = SPZ.** Náklaďák ukazovat z boku.
+- **Slovo o účelu nebo typu věci se propíše jako nápis:** „new funding“ → „NEW FUNDS“,
+  „contract“ → „CONTRACT“, „past its stop“ → „STOP“. Budík/měřidlo radši vůbec.
+- **Obchodní ulice = cedule s pseudopísmem.** Scénu stavět u holých zdí.
 
-```bash
-node scripts/batch-irony-images.js submit --only my-t-vlajka,my-q-malacky-sultanat,my-q-nicol-david,my-q-batik-my,my-k-petronas-most
-node scripts/batch-irony-images.js status
-node scripts/batch-irony-images.js fetch
-```
-
-**Opravená zadání jsou už v datech a prošla lintem**, nic se nepřepisuje. Vadné verze
-ležely ve scratchpadu (na jiném počítači nebudou, nevadí). **V `img/` těch pět obrázků
-schválně NENÍ** —
-kdyby tam byly, `submit` by je přeskočil.
-
-Co se u každého opravovalo, ať víš, na co se dívat:
-- `my-t-vlajka` — vyšla úplně špatná vlajka (krémovo-tyrkysová, pět pruhů). Nová verze
-  má vypsané "fourteen alternating red and white horizontal stripes with a dark blue
-  rectangle in its upper corner carrying a yellow crescent moon and a yellow star with
-  fourteen points". **Zkontroluj počet pruhů i půlměsíc s hvězdou.**
-- `my-q-malacky-sultanat` — na pytlích bylo čitelné "SPICES"; slovo "spices" ze zadání
-  zmizelo, nově "bulging plain unmarked sacks and rolled bales".
-- `my-q-nicol-david`, `my-q-batik-my`, `my-k-petronas-most` — náhodné podpisy,
-  zadání beze změny. **Zkontroluj rohy.**
-
-**Pak pokračuj Pákistánem, Portugalskem, Saúdskou Arábií a Dánskem — všechny čtyři mají
-zadání UŽ NAPSANÁ a po lintu** (`submit --cc pk`, `--cc pt`, `--cc sa`, `--cc dk`).
-Nepiš je znovu.
-
-**Nejrizikovější otázky v těch třech připravených sadách:**
-- Pákistán: `pk-q-kaligrafie` (islámská kaligrafie — scéna je schválně jen geometrické
-  a květinové kachle, žádný znak), `pk-q-pismo` (zprava doleva — kniha otevřená z pravé
-  strany, všechny stránky prázdné), `pk-q-truck-art` a `pk-k-malovane-nakladaky`
-  (náklaďáky v realitě nesou verše — "only pictures and patterns and nothing else"),
-  `pk-k-sialkot-mice` (míče "in plain black and white with no marking of any kind").
-- Portugalsko: `pt-t-cabo-roca` (sloup s nápisem v realitě — v zadání "its face
-  completely blank"), `pt-t-pessoa` (heteronymy — několik verzí téhož muže u stolu,
-  žádná stránka), `pt-t-vinho-porto` ("plain unlabelled dark bottles"), `pt-t-mourinho`
-  ("plain unmarked microphones", pozadí "completely blank"), `pt-t-benfica-porto`
-  (tři šály bez znaků).
-- Saúdská Arábie: `sa-k-vlajka` — **POZOR, vědomé zjednodušení**: skutečná vlajka nese
-  arabský nápis šahády, ale text je v projektu zakázaný, takže zadání popisuje jen
-  zelené pole s bílým mečem. Otázka se ptá na BARVU, takže odpověď to neporušuje.
-  Dál `sa-q-nabatejske-pismo` (dva kamenné bloky, ostrý a ohlazený, žádný znak),
-  `sa-q-nabatska-poezie` ("not a single page or pen anywhere"), `sa-q-dakar`
-  a `sa-q-al-nassr` (bodywork a dres bez značek).
-- Dánsko: `dk-t-bluetooth` — **logo Bluetooth je runová ligatura, tedy PÍSMENA**; zadání
-  je proto staví na vikingském králi s jedním modrým zubem a dvou bzučících přístrojích,
-  žádná runa. `dk-a-carlsberg` (vynález stupnice pH) — místo stupnice s čísly je to
-  barevný žebřík zkumavek od červené po modrou. `dk-a-kierkegaard` (pseudonymy) — několik
-  verzí téhož muže vedle sebe, žádná stránka. `dk-a-karen-blixen` (mužský pseudonym) —
-  mužský klobouk na stole, žádný text. `dk-t-dannebrog` má barvy i posunutý kříž vypsané
-  doslova. `dk-a-egtved` (mumie z doby bronzové) — v rakvi je JEN oděv a bronzový disk,
-  žádná postava.
-- **Past zaplacená u Dánska: `lint-irony` bere „writing desk" jako chybu**, protože slovo
-  `writing` je na seznamu. Psací stůl popisuj jako `desk` nebo `lamplit desk`.
 
 **Past ze Švédska/Švýcarska/Řecka/Ukrajiny/Rumunska/Turecka/Irska/Izraele/Malajsie:**
 slovo, které POJMENOVÁVÁ, co věc JE nebo K ČEMU SLOUŽÍ, se propíše jako čitelný text.

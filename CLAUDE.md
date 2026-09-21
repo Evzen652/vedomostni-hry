@@ -81,6 +81,21 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Dánsko 42/42 ilustrací. 6 vad ze 41 generovaných; tři podpisy ořezem, budík u elektráren dvakrát vyrobil text a musel ze scény pryč.**
+  Rizikové otázky prošly napoprvé: Bluetooth (Viking se svítícím modrým zubem, na přístrojích
+  žádná runa), Carlsberg (duhová řada zkumavek bez čísel), Kierkegaard (víc verzí téhož muže),
+  Karen Blixen (pánský klobouk), Egtved (v rakvi jen oděv a disk), Dannebrog (správná vlajka).
+  - **`dk-a-vitr`: „a meter dial swung right past its stop" → čitelné „STOP".** Druhá verze
+    („round gauge … only plain tick marks") vyrobila pod ručičkou pseudotext s procenty.
+    **Měřidlo si o nápis řekne vždycky** — třetí verze ho vypustila úplně, přebytek elektřiny
+    nese kabel pod mořem k rozsvícenému pobřeží.
+  - **Podpisy u spodní hrany odstraněny ořezem** (`dk-t-oresund`, `dk-a-monarchie`, pseudotext
+    v obilí u `dk-k-nejvyssi-bod`) — horních 700 řádků vycentrovaně a zpět na 1344×768.
+    `dk-k-fastelavn` měl podpis uprostřed scény, ten šel znovu.
+  - **Počet v dávce (41) ≠ počet otázek (42)** — jedna otázka měla obrázek už dřív; není to chyba.
+  - **Stav: bez ilustrace 1 035 otázek.** Zásoba připravených zadání je vyčerpaná, další země
+    (Indonésie, Norsko, Filipíny…) potřebují nejdřív napsat `irony_prompt`.
+
 - **2026-09-21 — Saúdská Arábie 44/44 ilustrací. Jediná vadná otázka, ale tři pokusy: „contract" vyrobil nápis, sportovní dres pak DVAKRÁT LOGO VÝROBCE.**
   Žádný podpis v rozích (poprvé od začátku série). Rizikové otázky o písmu prošly — nabatejské
   kameny nesou jen geometrické a oblé rýhy.

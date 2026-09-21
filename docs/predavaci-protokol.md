@@ -21,12 +21,13 @@ Zkopíruj do prvního vzkazu:
 (14. 9. to byl `cb04b3d`, 12 commitů pozadu). Nejdřív `git fetch` a posunout se na
 `origin/claude/pokracujeme-e79708` (fast-forward), teprve pak cokoli ověřovat.
 
-### ⚠ Blokuje ilustrace k otázkám: VYČERPANÝ KREDIT GEMINI
+### Ilustrace k otázkám: kredit dobitý, další země čekají na ZADÁNÍ
 
-Generování spadne na `429 prepayment credits are depleted`. **Hráč musí dobít kredit na
-`ai.studio/projects`** a vložit `GEMINI_API_KEY` do `.dev.vars` (na tomhle počítači klíč
-není nikde). Zadání pro **4 země (168 otázek) jsou hotová a olintovaná**, plus pět
-malajsijských oprav. Podrobnosti v bodu 2 [predani-ilustrace.md](predani-ilustrace.md).
+21. 9. dokončeny Malajsie, Pákistán, Portugalsko, Saúdská Arábie a Dánsko; bez ilustrace
+zbývá **1 035** otázek. Klíč `GEMINI_API_KEY` (nový formát `AQ.…`) je v `.dev.vars`
+worktree `pokracujeme-e79708` — v novém worktree nebo na jiném počítači chybí a hráč ho
+musí vložit znovu. **Další země (Indonésie, Norsko, Filipíny…) nemají `irony_prompt`**,
+takže první krok je napsat zadání. Podrobnosti v bodu 2 [predani-ilustrace.md](predani-ilustrace.md).
 
 Ilustrace do UI (dlaždice, výsledkové obrazovky) jdou i bez klíče: hráč je vygeneruje
 v chatu Gemini a uloží do `D:\weigle\plocha\Kvíz_ILUSTRACE`, session je jen zmenší
