@@ -81,6 +81,21 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-21 — Malajsie 42/42 ilustrací. Vlajka selhala podruhé kvůli PALETĚ STYLU, ne popisu.**
+  Kredit dobit, nový klíč v `.dev.vars` (nový formát `AQ.…`). Pět odložených malajsijských
+  obrázků přegenerováno: sultanát (už bez „SPICES") a most Petronas čisté hned.
+  - **Vlajka vyšla krémově-tyrkysová s osmicípou hvězdou, přestože zadání vypisovalo
+    „red and white stripes" doslova.** Stylový recept (tlumená okrová a tyrkysová paleta) holou
+    „red" přebil. Zabralo „deep brick red … the red clearly reading as red" + pořadí pruhů +
+    poloha kantonu; přesný počet cípů („fourteen points") model stejně nedodrží, tak je v zadání
+    „many-pointed". **Poučení: u vlajky nestačí barvy vyjmenovat, musí se pojmenovat odstín,
+    který do palety sedí, a výslovně říct, že má být vidět.** Otazník nad kočkou („curious")
+    zmizel s „watching quietly".
+  - **Hráč vědomě ponechal dva sporné kusy:** pás kartiček s čmáranicemi u `my-q-nicol-david`
+    a tahy připomínající písmo na malém plátně u `my-q-batik-my`. Při přegenerování je nenahrazovat.
+  - Bez ilustrace zbývá 1 202 otázek. Další: Pákistán, Portugalsko, Saúdská Arábie, Dánsko
+    (zadání hotová a po lintu).
+
 - **2026-09-16 — NASAZENO: produkce i `master` na `0dfa574` (60 commitů od `cb04b3d`). Migrace žádné, obsah přes `db:sync`.**
   Ilustrace z 12.–13. 9., dobarvené dlaždice, výsledkové ilustrace, remíza a nepovinná jména
   v párty, registrace bez volby pásma, obnova PINu po chybném přihlášení, „Česko" a hlášky
