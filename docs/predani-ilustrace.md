@@ -1,6 +1,6 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **22. 9. noc** po Novém Zélandu — 14. hotové
+Sepsáno **12. září 2026** (aktualizováno **22. 9. pozdní noc** po Tchaj-wanu — 15. hotové
 zemi z fronty, 100 %).
 Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení a rozhodnutí jsou
 v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko), **2026-09-12**
@@ -9,8 +9,8 @@ Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko, Ukraji
 Thajsko, Turecko, Irsko, Izrael, Jižní Korea), **2026-09-21** (Malajsie, Pákistán,
 Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina, Belgie),
 **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži,
-Indie, Keňa), **2026-09-22 večer** (Mongolsko), **2026-09-22 pozdní večer** (Mexiko)
-a **2026-09-22 noc** (Nový Zéland).
+Indie, Keňa), **2026-09-22 večer** (Mongolsko), **2026-09-22 pozdní večer** (Mexiko),
+**2026-09-22 noc** (Nový Zéland) a **2026-09-22 pozdní noc** (Tchaj-wan).
 
 ---
 
@@ -23,8 +23,8 @@ a **2026-09-22 noc** (Nový Zéland).
    git pull
    npm install
    ```
-   Poslední commit ilustrací je Nový Zéland; `git log --oneline -3` musí ukázat
-   commit o Novém Zélandu (38/38 ilustrací). **Pracovní strom má být
+   Poslední commit ilustrací je Tchaj-wan; `git log --oneline -3` musí ukázat
+   commit o Tchaj-wanu (38/38 ilustrací). **Pracovní strom má být
    čistý** — žádná dávka neběží a `.batch-irony.json` ukazuje na dokončenou dávku.
 2. **Vložit klíč Gemini do `.dev.vars`** (gitignorovaný, na druhý stroj NEPŘEJDE). Vzor je
    v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **Kredit byl 22. 9. dobitý a funguje** —
@@ -36,26 +36,26 @@ a **2026-09-22 noc** (Nový Zéland).
    npm run test:offline
    npm run lint-irony
    ```
-   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **246**.
-4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — Nový Zéland je hotový. **První
-   krok další session: napsat `irony_prompt` pro novou zemi** (Tchaj-wan `tw`, 38 otázek,
-   je další v pořadí a je zatím úplně nedotčené — ani jedno zadání). Postup psaní zadání je
-   v bodu 5 níž.
-5. **Po Tchaj-wanu pokračovat** Jižní Afrikou (taky 38/38 ještě bez jediného zadání,
-   zcela nedotčená).
+   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **208**.
+4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — Tchaj-wan je hotový. **První
+   krok další session: napsat `irony_prompt` pro Jižní Afriku** (`za`, 38 otázek, poslední
+   z původní čtveřice Mexiko/Nový Zéland/Tchaj-wan/Jižní Afrika, zatím úplně nedotčená).
+   Postup psaní zadání je v bodu 5 níž.
+5. **Po Jižní Africe pokračovat** dál podle tabulky v bodu 1 (Egypt, Čína, Japonsko,
+   Polsko, Severní Korea mají zadání jen částečně — zbytek otázek bez jediného).
 
 ---
 
-## 1. Stav k 22. 9. 2026 (noc, po Novém Zélandu)
+## 1. Stav k 22. 9. 2026 (pozdní noc, po Tchaj-wanu)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **246** |
-| Hotovo 22. 9. | Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži, Indie, Keňa, Mongolsko, Mexiko, **Nový Zéland 38/38** — **14 zemí, všechny 100 %** |
+| Bez ilustrace | **208** |
+| Hotovo 22. 9. | Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži, Indie, Keňa, Mongolsko, Mexiko, Nový Zéland, **Tchaj-wan 38/38** — **15 zemí, všechny 100 %** |
 | **Zadání čekající na obrázky** | žádná — fronta je celá vyčerpaná |
-| Další v pořadí (bez zadání) | Tchaj-wan 38, Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
-| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~20 dávkách týž den. |
+| Další v pořadí (bez zadání) | Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
+| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~21 dávkách týž den. |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -329,15 +329,29 @@ neodstraní.
   musela pomoct záplata), tady jedno přeposlání s `„completely plain … jerseys with no
   crest, logo, or marking of any kind"` zabralo napoprvé. I tak se dres MUSÍ hlídat vždycky,
   ne jen u fotbalu/klubů.
+- **Past s vývěskou je jazykově univerzální — funguje i s ČÍNSKÝMI znaky, ne jen latinkou**
+  (Tchaj-wan, `tw-q-nocni-trhy`): konkrétní typ ulice s obchody (noční trh) si vyžádal
+  vývěsku, i když o ní zadání nemluvilo, stejně jako holandský coffee shop nebo lvovská
+  ulice. Oprava stejná: `„every shopfront … left completely plain and blank with no signs
+  anywhere"`.
+- **„Turned away from view" u PEČETI/PŘEDMĚTU S VYRYTÝM TEXTEM nestačí — model ho
+  otočí čelem k divákovi stejně** (Tchaj-wan, `tw-q-tradicni-znaky`). Slabá negace o SMĚRU
+  nefunguje jako `left blank` o STAVU. Zabralo až silnější fyzické omezení „carved
+  undersides pressed flat against the table and completely hidden" — důvod (leží na
+  vyrytou stranou), ne jen popis natočení.
+- **Měřicí přístroj/displej na dopravním prostředku (odometr, tachometr) vyrobí čitelné
+  slovo i číslice, i bez zmínky v zadání** (Tchaj-wan, `tw-q-cyklistika-huandao`: „AIR" na
+  odometru kola) — stejná rodina jako dánský elektroměr a řecká sázková tabule. Řešeno
+  úplným vynecháním přístroje ze scény.
 
 ---
 
 ## 6. Co dělat dál
 
-**Nový Zéland je hotový (100 %).** Žádná země teď nemá zadání čekající na obrázky —
+**Tchaj-wan je hotový (100 %).** Žádná země teď nemá zadání čekající na obrázky —
 první krok je vždycky napsat nová zadání.
 
-1. **Napsat zadání pro Tchaj-wan** (38 otázek, úplně nedotčené) — v session, podle
+1. **Napsat zadání pro Jižní Afriku** (38 otázek, úplně nedotčené) — v session, podle
    poučení v bodu 2/5 tohohle souboru.
    Zadání se píšou do JSON mapy `{id: scéna}` (do scratchpadu) a do dat je zapíše
    `node scripts/ilustrace/zapis-prompty.js xx mapa.json`.

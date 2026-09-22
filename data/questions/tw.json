@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taipei_101",
   "source_card": "tw-mista-taipei-101",
   "image_prompt": "Fotorealistický snímek mrakodrapu Taipei 101 sahajícího do modré oblohy, obklopeného moderní panoramatem Tchaj-peje, denní osvětlení, 16:9",
-  "about": "mrakodrapu Taipei 101"
+  "about": "mrakodrapu Taipei 101",
+  "irony_prompt": "A colossal skyscraper fills the frame built as a giant jointed bamboo stalk, its stacked segments narrowing gracefully toward the clouds above the city skyline. Smaller and subordinate: a small panda-shaped cloud drifting past its peak, just for fun; tiny cars crawling along the streets far below; other ordinary buildings dwarfed around its base. MOOD: towering, elegant, iconic."
  },
  {
   "id": "tw-q-narodni-palacove-muzeum",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/National_Palace_Museum",
   "source_card": "tw-mista-narodni-palacove-muzeum",
   "image_prompt": "Fotorealistický snímek exteriéru Národního palácového muzea v Tchaj-peji s tradiční čínskou architekturou, denní světlo, jasná obloha, 16:9",
-  "about": "Národním palácovém muzeu"
+  "about": "Národním palácovém muzeu",
+  "irony_prompt": "An endless museum storage vault fills the frame, shelves stretching back into the distance packed with countless crated artifacts and vases, far more than any single visit could ever see. Smaller and subordinate: a curator with a clipboard looking overwhelmed at the sheer scale; a single spotlighted vase on display at the very front; dust motes drifting in a shaft of light. MOOD: vast, reverent, endless."
  },
  {
   "id": "tw-q-vesnice-duha",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rainbow_Village",
   "source_card": "tw-mista-vesnice-duha",
   "image_prompt": "Fotorealistický snímek Vesnice Duha v Tchaj-čungu s jasně barevnými malovanými zdmi a uličkami, slunečný den, 16:9",
-  "about": "Vesnici Duha"
+  "about": "Vesnici Duha",
+  "irony_prompt": "An elderly painter fills the frame standing his ground with a raised paintbrush, facing down a looming bulldozer, the wall behind him already covered in vivid swirling colors and cartoon eyes. Smaller and subordinate: the bulldozer driver scratching his head, hesitating; buckets of bright paint lined up along the alley; tourists already gathering to take photos. MOOD: defiant, colorful, triumphant."
  },
  {
   "id": "tw-q-jusan",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Yushan_(mountain)",
   "source_card": "tw-priroda-jusan",
   "image_prompt": "Fotorealistický dramatický snímek vrcholu Yu Shan tyčícího se nad mořem mraků při východu slunce, drsná alpská krajina, 16:9",
-  "about": "hoře Yu Shan"
+  "about": "hoře Yu Shan",
+  "irony_prompt": "A jagged rocky peak fills the frame rising triumphantly above a sea of clouds at sunrise, standing head and shoulders above a smaller, unmistakably cone-shaped snow-capped volcano just visible beside it. Smaller and subordinate: a hiker planting a flag at the summit; a hawk circling below the peak; frost glittering on the exposed rock. MOOD: triumphant, crisp, towering."
  },
  {
   "id": "tw-q-souteska-taroko",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taroko_National_Park",
   "source_card": "tw-priroda-souteska-taroko",
   "image_prompt": "Fotorealistický snímek hlubokého mramorového kaňonu soutěsky Taroko s tyrkysovou řekou pod dramatickými skalními útesy, 16:9",
-  "about": "soutěsce Taroko"
+  "about": "soutěsce Taroko",
+  "irony_prompt": "A deep marble gorge fills the frame with sheer polished white and grey walls rising on both sides, a turquoise river rushing through the narrow channel below. Smaller and subordinate: a tiny tunnel road cut into the cliff face; a sculptor's chisel and unfinished statue resting incongruously on a ledge, as if the mountain itself were being carved; mist rising off the rapids. MOOD: dramatic, polished, immense."
  },
  {
   "id": "tw-q-jezero-slunce-a-mesice",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sun_Moon_Lake",
   "source_card": "tw-priroda-jezero-slunce-a-mesice",
   "image_prompt": "Fotorealistický klidný snímek jezera Sun Moon Lake s okolními zelenými horami odrážejícími se v klidné vodě za svítání, 16:9",
-  "about": "jezeru Sun Moon Lake"
+  "about": "jezeru Sun Moon Lake",
+  "irony_prompt": "A tranquil lake fills the frame shaped unmistakably like a round rising sun on one side and a curved crescent moon on the other, green mountains reflected perfectly in its still water. Smaller and subordinate: a small wooden boat drifting near the sun-shaped shore; mist clinging to the moon-shaped inlet; a heron standing motionless at the water's edge. MOOD: serene, symbolic, mirror-still."
  },
  {
   "id": "tw-q-ang-lee",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ang_Lee",
   "source_card": "tw-lide-ang-lee",
   "image_prompt": "Fotorealistický umělecký záběr filmového studia s režisérskou židlí, kamerou a teplým filmovým osvětlením, atmosférické, 16:9",
-  "about": "Angu Lee"
+  "about": "Angu Lee",
+  "irony_prompt": "An empty director's chair fills the frame on a film set where two completely different backdrops blend seamlessly into one another behind it - a windswept mountain range fading into a moonlit ocean with a small boat and a tiger's silhouette. Smaller and subordinate: two golden statuettes resting side by side on the chair's armrest; a clapperboard on the ground; film lights glowing warmly from both sides. MOOD: masterful, dreamlike, versatile."
  },
  {
   "id": "tw-q-tai-tzu-ying",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tai_Tzu-ying",
   "source_card": "tw-lide-tai-tzu-ying",
   "image_prompt": "Fotorealistický snímek badmintonového kurtu v moderní profesionální sportovní hale, jasné stropní osvětlení, košík na zeleném kurtu, 16:9",
-  "about": "Tai Tzu-ying"
+  "about": "Tai Tzu-ying",
+  "irony_prompt": "A badminton player fills the frame mid-swing, the shuttlecock's trail curving in an impossible, unpredictable zigzag through the air behind her. Smaller and subordinate: her opponent frozen mid-lunge in totally the wrong direction; an empty umpire chair off to the side; the net stretched taut between them. MOOD: unpredictable, sharp, masterful."
  },
  {
   "id": "tw-q-yuan-tseh-lee",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Yuan_T._Lee",
   "source_card": "tw-lide-yuan-tseh-lee",
   "image_prompt": "Fotorealistický snímek moderní vědecké laboratoře se skleněnými baňkami, molekulárními modely a pokročilými přístroji, 16:9",
-  "about": "Yuanu Tsehu Lee"
+  "about": "Yuanu Tsehu Lee",
+  "irony_prompt": "Two glowing streams of molecules fill the frame colliding in a beam chamber, scattering into a brilliant burst of trailing sparks frozen mid-explosion. Smaller and subordinate: a scientist watching intently through thick protective glass; dials and gauges lining the chamber's control panel; a small gold medal resting on a nearby desk. MOOD: precise, luminous, triumphant."
  },
  {
   "id": "tw-q-nocni-trhy",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Night_markets_in_Taiwan",
   "source_card": "tw-kultura-a-tradice-nocni-trhy",
   "image_prompt": "Fotorealistický živý snímek nočního trhu na Tchaj-wanu se zářícími lampiony, stánky s pouličním jídlem, neonovými cedulemi a davem, 16:9",
-  "about": "nočních trzích"
+  "about": "nočních trzích",
+  "irony_prompt": "A bustling night market alley fills the frame packed shoulder to shoulder with hungry visitors weaving between glowing food stalls and hanging red lanterns, every shopfront and awning behind them left completely plain and blank with no signs anywhere. Smaller and subordinate: steam rising from a row of sizzling griddles; a vendor tossing food in a wok with a flourish; the same street shown empty and paved like a parking lot at the edge of the frame, hinting at its daytime life. MOOD: buzzing, warm, sensory."
  },
  {
   "id": "tw-q-lampiovy-festival",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pingxi_Sky_Lantern_Festival",
   "source_card": "tw-kultura-a-tradice-lampiovy-festival",
   "image_prompt": "Fotorealistický noční snímek stovek zářících papírových lampionů stoupajících do tmavé oblohy nad Pingxi, 16:9",
-  "about": "lampionovém festivalu v Pingxi"
+  "about": "lampionovém festivalu v Pingxi",
+  "irony_prompt": "Hundreds of glowing paper lanterns fill the frame rising together into a dark night sky, their warm light turning the clouds above into a soft golden glow. Smaller and subordinate: a family below releasing one last lantern together, its paper glowing plain and blank; train tracks running through the small town beneath; sparklers held by children watching. MOOD: magical, hopeful, luminous."
  },
  {
   "id": "tw-q-cajova-kultura",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taiwanese_tea",
   "source_card": "tw-kultura-a-tradice-cajova-kultura",
   "image_prompt": "Fotorealistický snímek terasovité plantáže zeleného čaje na strmých mlžných horách na Tchaj-wanu, ranní světlo, 16:9",
-  "about": "čajové kultuře oolong"
+  "about": "čajové kultuře oolong",
+  "irony_prompt": "A steep terraced tea plantation fills the frame clinging to a misty mountainside, workers with woven baskets hand-picking leaves at a dizzying height above the clouds. Smaller and subordinate: a rope and harness clipped to one picker for safety; a small teahouse perched at the plantation's edge; tea leaves fluttering in the wind. MOOD: lofty, meticulous, misty."
  },
  {
   "id": "tw-q-nefritove-zeli",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Jadeite_Cabbage",
   "source_card": "tw-umeni-kamenny-zeli-prak",
   "image_prompt": "Fotorealistický muzejní snímek slavné sochy Nefritové zelí vytesané ze zeleného a bílého nefritu, prosvětlená vitrína, 16:9",
-  "about": "Nefritovém zelí"
+  "about": "Nefritovém zelí",
+  "irony_prompt": "A single cabbage carved entirely from one piece of jade fills the frame inside a museum display case, its leaves so lifelike that two carved insects seem ready to crawl off it. Smaller and subordinate: a visitor leaning in close, searching for a price tag out of habit; soft spotlight illuminating the jade's translucent green and white; a velvet-lined pedestal beneath it. MOOD: exquisite, uncanny, precious."
  },
  {
   "id": "tw-q-loutkove-divadlo",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Glove_puppetry",
   "source_card": "tw-umeni-loutkove-divadlo-pili",
   "image_prompt": "Fotorealistický detailní snímek ručně vyrobených zdobných tchajwanských maňáskových loutek Budaixi s barevnými hedvábnými kostýmy, 16:9",
-  "about": "loutkovém divadle Budaixi"
+  "about": "loutkovém divadle Budaixi",
+  "irony_prompt": "An ornately costumed hand puppet fills the frame striking a dramatic warrior pose under bright television studio lights, its embroidered silk robes catching the glow. Smaller and subordinate: a camera crew filming just out of focus behind it; a second puppet waiting in the wings; a boom microphone dipping into frame from above. MOOD: theatrical, vivid, surprising."
  },
  {
   "id": "tw-q-cloud-gate",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cloud_Gate_Dance_Theatre",
   "source_card": "tw-umeni-cloud-gate",
   "image_prompt": "Fotorealistický snímek moderního tanečního vystoupení na jevišti s atmosférickým osvětlením, tanečníci provádějící plynulé pohyby, 16:9",
-  "about": "souboru Cloud Gate Dance Theatre"
+  "about": "souboru Cloud Gate Dance Theatre",
+  "irony_prompt": "A dancer fills the frame frozen mid-motion in a sweeping, fluid pose, their body curving through the air like a single continuous brushstroke. Smaller and subordinate: a fellow dancer meditating cross-legged in stillness at the stage's edge; another executing a slow martial-arts-like sweep nearby; soft stage lighting casting long shadows. MOOD: fluid, meditative, powerful."
  },
  {
   "id": "tw-q-baseball",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Taiwan",
   "source_card": "tw-sport-baseball",
   "image_prompt": "Fotorealistický snímek profesionálního baseballového stadionu osvětleného reflektory během večerního zápasu na Tchaj-wanu, zelené hřiště, 16:9",
-  "about": "baseballu na Tchaj-wanu"
+  "about": "baseballu na Tchaj-wanu",
+  "irony_prompt": "A baseball batter fills the frame mid-swing under blazing stadium floodlights, the ball a blur just leaving the bat. Smaller and subordinate: a packed crowd rising to their feet in the stands; a pitcher still following through on the mound; the outfield fence glowing under the lights. MOOD: electric, national, floodlit."
  },
  {
   "id": "tw-q-stolni-tenis",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sport_in_Taiwan",
   "source_card": "tw-sport-stolni-tenis",
   "image_prompt": "Fotorealistický snímek profesionálního stolního tenisu s modrým stolem, sítí a bílým míčkem v ostrém záběru, interiér, 16:9",
-  "about": "stolním tenise na Tchaj-wanu"
+  "about": "stolním tenise na Tchaj-wanu",
+  "irony_prompt": "A table tennis player fills the frame lunging low over a blue table, paddle blurring as the ball rockets back across the net. Smaller and subordinate: their opponent already recovering into position on the far side; a small trophy cabinet glinting in the background; spectators leaning in tensely at courtside. MOOD: fast, intense, precise."
  },
  {
   "id": "tw-q-cyklistika-huandao",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taiwan_Cycle_Route_No._1",
   "source_card": "tw-sport-cyklistika-oko-ostrova",
   "image_prompt": "Fotorealistický snímek pobřežní cyklostezky podél oceánského pobřeží Tchaj-wanu s tyrkysovou vodou a útesy, slunečný den, 16:9",
-  "about": "cyklistickém okruhu Huandao"
+  "about": "cyklistickém okruhu Huandao",
+  "irony_prompt": "A lone cyclist fills the frame pedaling along a coastal road that winds endlessly along cliffs and turquoise water stretching to the horizon in both directions. Smaller and subordinate: a small round rearview mirror clipped to the handlebars reflecting the road behind; distant mountains rising from the sea further along the route; seabirds gliding alongside. MOOD: epic, salty, endless."
  },
  {
   "id": "tw-q-tradicni-znaky",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Traditional_Chinese_characters",
   "source_card": "tw-jazyk-tradicni-znaky",
   "image_prompt": "Fotorealistický umělecký snímek černých inkoustových čínských kaligrafických znaků psaných na rýžovém papíře tradičním štětcem, 16:9",
-  "about": "tradičních čínských znacích"
+  "about": "tradičních čínských znacích",
+  "irony_prompt": "A calligrapher's brush fills the frame poised motionless just above a blank sheet of rice paper, ink dripping from its tip but not yet touching down. Smaller and subordinate: a stack of ornate stone seals waiting nearby, each one resting with its smooth blank top facing upward, carved undersides pressed flat against the table and completely hidden from view; an inkstone with a pool of black ink; a second sheet of paper lying blank and untouched. MOOD: poised, deliberate, still."
  },
  {
   "id": "tw-q-hokkien",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taiwanese_Hokkien",
   "source_card": "tw-jazyk-hokkien",
   "image_prompt": "Fotorealistický snímek tradičního tchajwanského čajovny s dřevěnými stoly a červenými lampiony, atmosférické odpoledne, 16:9",
-  "about": "dialektu Hokkien"
+  "about": "dialektu Hokkien",
+  "irony_prompt": "A bustling market fills the frame with two different ribbons of spoken sound swirling between vendors and customers, one smooth and official-looking, the other warm and looping like an old family recipe. Smaller and subordinate: a grandmother haggling animatedly over vegetables; a young shopper listening closely, trying to follow both; red lanterns strung overhead. MOOD: layered, lively, familiar."
  },
  {
   "id": "tw-q-bopomofo",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bopomofo",
   "source_card": "tw-jazyk-bopomofo",
   "image_prompt": "Fotorealistický snímek barevné školní lavice s dětskými knihami zobrazujícími fonetické symboly Bopomofo vedle znaků, 16:9",
-  "about": "fonetické abecedě Bopomofo"
+  "about": "fonetické abecedě Bopomofo",
+  "irony_prompt": "A row of blank flashcards fills the frame held up one by one by a teacher's hand, each card completely plain except for a small colorful shape in the corner instead of any symbol. Smaller and subordinate: a classroom of small children repeating sounds aloud, mouths wide open; a chalkboard turned away from view; a stack of picture books on the desk. MOOD: playful, foundational, encouraging."
  },
  {
   "id": "tw-q-bubble-tea",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bubble_tea",
   "source_card": "tw-jidlo-bubble-tea",
   "image_prompt": "Fotorealistický snímek průhledného kelímku mléčného bubble tea s tmavými tapiokovými kuličkami na dně a širokým brčkem, dřevěný stůl, 16:9",
-  "about": "nápoji Bubble Tea"
+  "about": "nápoji Bubble Tea",
+  "irony_prompt": "A tall glass fills the frame packed with round black tapioca pearls settling at the bottom beneath swirling milky tea, a wide straw already plunged in. Smaller and subordinate: a vendor shaking a cocktail shaker behind the counter; a queue of customers waiting outside a small shop; condensation dripping down the glass. MOOD: refreshing, playful, iconic."
  },
  {
   "id": "tw-q-hovezi-nudlova-polevka",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Beef_noodle_soup",
   "source_card": "tw-jidlo-hovezi-nudlova-polevka",
   "image_prompt": "Fotorealistický snímek dýmající misky tchajwanské hovězí nudlové polévky s masem, pšeničnými nudlemi a jarní cibulkou, 16:9",
-  "about": "hovězí nudlové polévce"
+  "about": "hovězí nudlové polévce",
+  "irony_prompt": "A steaming bowl of beef noodle soup fills the frame, thick wheat noodles coiled beneath tender braised beef chunks and floating green onion rings. Smaller and subordinate: a street lined with competing soup stalls each with steam rising from their own pots; chopsticks poised mid-air over the bowl; evening lanterns glowing along the street. MOOD: comforting, steaming, beloved."
  },
  {
   "id": "tw-q-smradlave-tofu",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Stinky_tofu",
   "source_card": "tw-jidlo-smradlave-tofu",
   "image_prompt": "Fotorealistický snímek zlatavě křupavého smaženého smradlavého tofu na talíři s nakládaným zelím a chilli omáčkou na stánku na nočním trhu, 16:9",
-  "about": "smradlavém tofu"
+  "about": "smradlavém tofu",
+  "irony_prompt": "A golden crispy block of fried stinky tofu fills the frame on a paper plate, steam visibly wafting up in wavy green-tinted lines suggesting its infamous pungent smell. Smaller and subordinate: a passerby pinching their nose while walking past; pickled cabbage piled beside the tofu; chili sauce drizzled generously over the top. MOOD: pungent, crispy, divisive."
  },
  {
   "id": "tw-q-japonska-era",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
   "source_card": "tw-historie-japonska-era",
   "image_prompt": "Fotorealistický snímek historické dřevěné železniční stanice v japonském stylu na Tchaj-wanu obklopené zelenými stromy, slunečný den, 16:9",
-  "about": "japonském období na Tchaj-wanu"
+  "about": "japonském období na Tchaj-wanu",
+  "irony_prompt": "A wooden railway station fills the frame in elegant Japanese architectural style, its platform stretching alongside gleaming rails cutting through the Taiwanese countryside. Smaller and subordinate: a station clock tower without any numerals, just plain hands; schoolchildren in old-fashioned uniforms walking past; a steam locomotive puffing in the distance. MOOD: nostalgic, orderly, transitional."
  },
  {
   "id": "tw-q-rok-1949",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Retreat_of_the_Government_of_the_Republic_of_China_to_Taiwan",
   "source_card": "tw-historie-rok-1949",
   "image_prompt": "Fotorealistický snímek historického náměstí Liberty Square v Tchaj-peji s tradiční bránou a modrou oblohou, jasné odpoledne, 16:9",
-  "about": "přesunu v roce 1949"
+  "about": "přesunu v roce 1949",
+  "irony_prompt": "An overflowing harbor fills the frame packed with ships unloading endless crowds of people carrying bundled belongings onto the docks, far more arriving than the port seems built to hold. Smaller and subordinate: a small government official's desk hastily set up right on the pier; luggage piled higher than the people beside it; the island's hills rising green in the background, unaware of what's coming. MOOD: overwhelming, historic, momentous."
  },
  {
   "id": "tw-q-demokratizace",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan",
   "source_card": "tw-historie-demokratizace",
   "image_prompt": "Fotorealistický snímek moderního centrálního bulváru v Tchaj-peji z ptačí perspektivy pod jasnou oblohou, 16:9",
-  "about": "cestě Tchaj-wanu k demokracii"
+  "about": "cestě Tchaj-wanu k demokracii",
+  "irony_prompt": "A massive rusted chain fills the frame falling away from an iron gate as its old padlock springs open on its own, morning light flooding through the widening gap. Smaller and subordinate: a crowd gathering hesitantly at the threshold, unsure whether to step through; a discarded curfew whistle lying in the dust; birds taking flight from the gate's top. MOOD: liberating, dawning, historic."
  },
  {
   "id": "tw-t-hlavni-mesto",
@@ -611,7 +638,8 @@
   "quip_correct": "Bod pro tebe! Tchaj-pej je správně — mrakodrap Taipei 101 byl od roku 2004 šest let nejvyšší budovou světa, než ho předstihla Dubaj.",
   "quip_wrong": "Tipoval jsi Peking, Tokio, nebo Šanghaj? Každé z nich patří jiné zemi — hlavní město Tchaj-wanu se jmenuje Tchaj-pej.",
   "explanation": "Tchaj-pej leží na severu Tchaj-wanu a žije v něm přes 2,5 milionu lidí. Město je proslulé nočními trhy, mrakodrapem Taipei 101 a příjemným metrem, kde je absolutně zakázáno jíst a pít.",
-  "about": "Tchaj-peji"
+  "about": "Tchaj-peji",
+  "irony_prompt": "Taipei 101 fills the frame towering above a dense sprawling city skyline at golden hour, its bamboo-segmented silhouette catching the last light. Smaller and subordinate: a subway train gliding quietly beneath the streets below; night market lights just beginning to flicker on; mountains ringing the city in the distance. MOOD: gleaming, sprawling, proud."
  },
  {
   "id": "tw-k-formosansky-medved",
@@ -631,7 +659,8 @@
   "quip_correct": "Bravo! Všimni si bílého V na jeho hrudi — jediný důkaz totožnosti, co tenhle medvěd potřebuje. Nikde jinde na světě ho nenajdeš.",
   "quip_wrong": "Ale kdeže — panda patří Číně a koala Austrálii. Tchaj-wan má vlastního, tchajwanského černého medvěda.",
   "explanation": "Tchajwanský černý medvěd (Ursus thibetanus formosanus) je vzácný poddruh asijského medvěda, žijící v horských lesích Tchaj-wanu. Je chráněný a stal se neoficiálním symbolem ostrova — zdobí turistické suvenýry i sportovní dresy.",
-  "about": "tchajwanském černém medvědovi"
+  "about": "tchajwanském černém medvědovi",
+  "irony_prompt": "A sturdy black bear fills the frame standing on its hind legs in a misty forest clearing, a bright white V-shaped patch glowing clearly on its chest like a badge. Smaller and subordinate: a curious deer watching from behind a tree; a wildlife camera strapped to a trunk nearby; mountain peaks fading into mist beyond. MOOD: proud, wild, distinctive."
  },
  {
   "id": "tw-k-mango-led",
@@ -651,7 +680,8 @@
   "quip_correct": "Výborně! Baobing, přesně tak — hora ledu, mango navrch a pod tím ještě kondenzované mléko, ideální zbraň proti tchajwanskému vedru.",
   "quip_wrong": "Zapomeň na zmrzlinový kornout, ovocný salát i šlehačkový dort — tenhle ledový dezert s mangem se jmenuje baobing.",
   "explanation": "Baobing je tchajwanský dezert z jemně nastrouhaného ledu, který připomíná sníh. Přelije se mangovou omáčkou, kondenzovaným mlékem a přidají se čerstvé plátky manga. Prodává se na nočních trzích i v restauracích.",
-  "about": "mangové ledové tříšti baobing"
+  "about": "mangové ledové tříšti baobing",
+  "irony_prompt": "A towering mound of finely shaved snow-white ice fills the frame, generously drizzled with golden mango sauce and topped with fresh mango slices and condensed milk. Smaller and subordinate: a spoon sinking into the mountain of ice; a sweaty glass of iced tea beside it; a fan cooling a queue of customers waiting nearby. MOOD: refreshing, towering, sweet."
  },
  {
   "id": "tw-k-drakoni-clun",
@@ -671,7 +701,8 @@
   "quip_correct": "Šikovně vypozorováno! A víš, že za tím vězí stará legenda? Svátek dračích lodí připomíná básníka utonulého v řece — lidé prý dodnes házejí do vody knedlíčky zongzi, aby ho ryby nechaly být.",
   "quip_wrong": "Ale ne — lampiony patří jinému svátku, ledové sochy jinému kraji a draci na strunách jiné příležitosti. Tenhle se slaví na vodě s pádly a bubnem.",
   "explanation": "Svátek dračích lodí se slaví 5. den 5. měsíce lunárního kalendáře (obvykle v červnu). Na každé lodi sedí 20 veslarů, jeden bubeník udává rytmus a jeden člen posádky na přídi drží rovnováhu. Závody jsou velmi rychlé a bouřlivé.",
-  "about": "svátku dračích lodí"
+  "about": "svátku dračích lodí",
+  "irony_prompt": "A long narrow dragon boat fills the frame slicing through the water, paddlers rowing in perfect unison behind a fierce carved dragon head at the bow. Smaller and subordinate: a drummer pounding a rhythm at the boat's center; rival boats racing neck and neck alongside; rice dumplings wrapped in leaves floating gently near the riverbank. MOOD: fast, thunderous, competitive."
  },
  {
   "id": "tw-k-tlumic-taipei101",
@@ -693,7 +724,8 @@
   "explanation": "Tlumič kmitů v Taipei 101 je zavěšený mezi 87. a 92. patrem a patří mezi největší a nejtěžší tlumiče kyvadlového typu na světě.",
   "source_url": "https://en.wikipedia.org/wiki/Taipei_101",
   "image_prompt": "Fotorealistický detailní snímek obří zlaté koule tlumiče kmitů zavěšené na ocelových lanech uvnitř mrakodrapu Taipei 101, dramatické vnitřní osvětlení, 16:9",
-  "about": "tlumiči kmitů v Taipei 101"
+  "about": "tlumiči kmitů v Taipei 101",
+  "irony_prompt": "An enormous golden steel ball fills the frame suspended on thick cables deep inside a skyscraper's upper floors, swaying gently as if breathing with the building. Smaller and subordinate: an engineer inspecting the cables with a flashlight far below; visitors pressed against a viewing window, pointing in awe; the building's steel skeleton visible around the shaft. MOOD: massive, mesmerizing, reassuring."
  },
  {
   "id": "tw-k-modrastraka",
@@ -715,7 +747,8 @@
   "explanation": "Tchajwanská modrá straka žije jen v horských lesích Tchaj-wanu a místní jí přezdívají dlouhoocasá horská dáma.",
   "source_url": "https://en.wikipedia.org/wiki/Taiwan_blue_magpie",
   "image_prompt": "Fotorealistický detailní snímek tchajwanské modré straky s dlouhým ocasem sedící na větvi v horském lese, přirozené světlo, 16:9",
-  "about": "tchajwanské modré strace"
+  "about": "tchajwanské modré strace",
+  "irony_prompt": "A striking blue magpie with a long trailing tail fills the frame perched on a mountain branch, its red beak catching the light. Smaller and subordinate: a younger sibling magpie helping feed chicks in a nearby nest; dense forest canopy framing the scene; morning mist drifting between the trees. MOOD: vivid, familial, serene."
  },
  {
   "id": "tw-k-ananasovy-kolacek",
@@ -737,7 +770,8 @@
   "explanation": "Křehké těsto koláčku fengli su se peče z másla a mouky, náplň se dnes často míchá s dužinou zimní melounu, aby nebyla moc kyselá.",
   "source_url": "https://en.wikipedia.org/wiki/Pineapple_cake",
   "image_prompt": "Fotorealistický detailní snímek zlatavých ananasových koláčků naskládaných na talíři, drobky těsta kolem, teplé světlo, bez textu, 16:9",
-  "about": "ananasovém koláčku fengli su"
+  "about": "ananasovém koláčku fengli su",
+  "irony_prompt": "A neat stack of golden rectangular pineapple cakes fills the frame, one broken open to reveal its glossy amber fruit filling inside. Smaller and subordinate: crumbs of buttery pastry scattered around the plate; a small gift box lined with tissue paper nearby; a cup of tea steaming beside the stack. MOOD: buttery, cheerful, giftable."
  },
  {
   "id": "tw-k-zlate-rybky",
@@ -759,7 +793,8 @@
   "explanation": "Hra pochází z Japonska, ale na tchajwanských nočních trzích zdomácněla natolik, že dnes patří k nejoblíbenějším atrakcím pro děti.",
   "source_url": "https://en.wikipedia.org/wiki/Night_market",
   "image_prompt": "Fotorealistický snímek stánku s lovením zlatých rybiček na tchajwanském nočním trhu, papírové síťky, misky se zlatými rybkami, večerní osvětlení, 16:9",
-  "about": "lovení zlatých rybiček na nočním trhu"
+  "about": "lovení zlatých rybiček na nočním trhu",
+  "irony_prompt": "A child fills the frame leaning eagerly over a shallow basin of goldfish, a flimsy paper net dipping into the water with its edge already starting to tear. Smaller and subordinate: a row of small fishbowls waiting as prizes nearby; other children crowding around to watch; a stallholder timing the attempt with a stopwatch. MOOD: tense, playful, delicate."
  },
  {
   "id": "tw-k-strasi-strechy",
@@ -781,7 +816,8 @@
   "explanation": "Tato zdobná technika se nazývá jiannian a přišla na Tchaj-wan z jihu Číny, řemeslníci ji dodnes ručně opravují po tajfunech.",
   "source_url": "https://en.wikipedia.org/wiki/Jiannian",
   "image_prompt": "Fotorealistický detailní snímek barevné porcelánové mozaiky draka na hřebeni střechy tchajwanského chrámu, jasná obloha, 16:9",
-  "about": "zdobených střechách tchajwanských chrámů"
+  "about": "zdobených střechách tchajwanských chrámů",
+  "irony_prompt": "A temple roof ridge fills the frame covered in a vivid mosaic dragon built entirely from thousands of broken porcelain shards, its scales glinting in the sunlight. Smaller and subordinate: a craftsman on a ladder carefully gluing another shard into place; a basket of colorful broken pottery pieces beside him; the temple's curved eaves sweeping outward below. MOOD: intricate, vivid, ornamental."
  },
  {
   "id": "tw-k-alishan-vlacek",
@@ -803,7 +839,8 @@
   "explanation": "Železnice na Ali-šan vznikla na počátku 20. století za japonské správy kvůli těžbě cypřišů, dnes je jednou z nejvýše položených horských drah v Asii.",
   "source_url": "https://en.wikipedia.org/wiki/Alishan_Forest_Railway",
   "image_prompt": "Fotorealistický snímek malého červeného horského vláčku projíždějícího mlžným lesem na Ali-šanu, ranní světlo, 16:9",
-  "about": "horské železnici na Ali-šan"
+  "about": "horské železnici na Ali-šan",
+  "irony_prompt": "A small red train fills the frame winding along a narrow mountain track through misty forest, its single headlamp glowing softly in the early morning haze. Smaller and subordinate: passengers leaning out the windows to watch the sunrise; towering cypress trees lining the track; a conductor waving from the platform as the train departs. MOOD: nostalgic, misty, scenic."
  },
  {
   "id": "tw-k-taroko-mramor",
@@ -824,6 +861,7 @@
   "quip_wrong": "Písek by se rozsypal a sůl by déšť rozpustil. Ty stěny jsou z mramoru.",
   "explanation": "Řeka se do mramoru zařezávala miliony let, až vznikla úzká soutěska s kolmými stěnami vysokými jako mrakodrap. Silnice v ní vede tunely přímo ve skále.",
   "about": "soutěsce Taroko",
-  "more_fact": "Soutěska se pořád prohlubuje. Pohoří se kvůli srážce dvou zemských desek zvedá o několik milimetrů ročně, takže řeka musí řezat dál, aby udržela krok."
+  "more_fact": "Soutěska se pořád prohlubuje. Pohoří se kvůli srážce dvou zemských desek zvedá o několik milimetrů ročně, takže řeka musí řezat dál, aby udržela krok.",
+  "irony_prompt": "Towering white marble cliffs fill the frame rising like a giant's sculpture gallery on both sides of a narrow gorge, a turquoise river rushing far below. Smaller and subordinate: a family looking straight up in awe from a footbridge; a small tunnel entrance carved directly into the cliff face; polished rock textures catching the sunlight. MOOD: majestic, polished, awe-inspiring."
  }
 ]

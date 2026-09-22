@@ -81,6 +81,36 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-22 — Tchaj-wan 38/38 ilustrací. 5 vad z 38 (13 %, nejvyšší podíl z dnešní
+  fronty): dvě textové, jedna past s odometrem, dva náhodné podpisy.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Otázky o písmu (tradiční čínské
+  znaky, bopomofo) měly stejné riziko jako korejské/mongolské precedenty — jedna prošla
+  napoprvé (bopomofo, prázdné kartičky), druhá ne.
+  - **NOVÝ TYP: noční trh si vyžádal čínsky vyhlížející vývěsku, i když zadání o žádné
+    ceduli nemluvilo** (`tw-q-nocni-trhy`) — stejný mechanismus jako holandský coffee shop
+    a lvovská obchodní ulice, poprvé s ČÍNSKÝMI znaky místo latinky. Past je tedy jazykově
+    univerzální: konkrétní typ ulice s obchody si o vývěsku řekne bez ohledu na skript.
+    Oprava: `„every shopfront and awning … left completely plain and blank with no signs
+    anywhere"` zabrala napoprvé.
+  - **`„Turned away from view"` U PEČETI NESTAČILO — model ji stejně otočil čelem k divákovi
+    s vyrytými znaky** (`tw-q-tradicni-znaky`). Slabší varianta negace („otočeno pryč")
+    nefunguje stejně jako `left blank` u věcí s pevně svázanou identitou (Švýcarsko).
+    Zabralo až silnější fyzické omezení: „each one resting with its smooth blank top facing
+    upward, carved undersides pressed flat against the table and **completely hidden**" —
+    důvod, ne jen směr, proč znaky nejdou vidět.
+  - **Odometr na kole vyrobil čitelné anglické slovo „AIR" a pseudo-číslice**, ačkoli o něm
+    zadání nic neříkalo (`tw-q-cyklistika-huandao`) — měřicí přístroj/displej je stará past
+    (dánský elektroměr, řecká sázková tabule) a číslicový displej ji nese stejně jako
+    analogový. Řešeno úplným vynecháním (nahrazeno kulatým zpětným zrcátkem).
+  - **2 vymyšlené podpisy** (`tw-q-vesnice-duha`, `tw-q-bopomofo`) — oba spravilo přeposlání
+    stejného zadání napoprvé.
+  - **Sporné, ponecháno:** drobné abstraktní čmáranice na roletách tržních stánků
+    (`tw-q-hokkien`) — při zvětšení jde o nekonzistentní klikyháky, ne o čitelné znaky,
+    stejný typ nálezu jako maďarské rovnice.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 208.** Další v pořadí: Jižní Afrika (38/38,
+    zcela nedotčená) — poslední země z původní čtveřice (Mexiko, Nový Zéland, Tchaj-wan,
+    Jižní Afrika).
+
 - **2026-09-22 — Nový Zéland 38/38 ilustrací. 1 vada z 38: logo výrobce na dresu, stejný typ
   jako u Saúdské Arábie (21. 9.), oprava jedním přeposláním s výslovným zákazem.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Smlouva z Waitangi (dvě jazykové
