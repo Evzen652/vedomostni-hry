@@ -1,13 +1,15 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **22. 9.** po Finsku, Gabonu, Peru, USA,
-Austrálii a částečně Brazílii). Doplňuje [predavaci-protokol.md](predavaci-protokol.md);
-poučení a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát,
-Rusko), **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko,
-Francie, Slovensko, Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
-Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea), **2026-09-21**
-(Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny,
-Argentina, Belgie) a **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie 33/38).
+Sepsáno **12. září 2026** (aktualizováno **22. 9. večer** po Finsku, Gabonu, Peru, USA,
+Austrálii, Brazílii, Chile, Ekvádoru, Fidži, Indii a Keni — všech 11 zemí HOTOVO 100 %).
+Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení a rozhodnutí jsou
+v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko), **2026-09-12**
+(Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie, Slovensko,
+Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina, Rumunsko,
+Thajsko, Turecko, Irsko, Izrael, Jižní Korea), **2026-09-21** (Malajsie, Pákistán,
+Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina, Belgie)
+a **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži,
+Indie, Keňa).
 
 ---
 
@@ -20,44 +22,44 @@ Argentina, Belgie) a **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Braz�
    git pull
    npm install
    ```
-   Poslední commit ilustrací je Brazílie (částečná); `git log --oneline -3` musí ukázat
-   commit „Brazilie: 33/38 ilustraci, kredit Gemini API dosel…“. **Pracovní strom má být
+   Poslední commit ilustrací je Keňa; `git log --oneline -3` musí ukázat
+   commit „Kena: 39/39 ilustraci, 5 vad opraveno…“. **Pracovní strom má být
    čistý** — žádná dávka neběží a `.batch-irony.json` ukazuje na dokončenou dávku.
 2. **Vložit klíč Gemini do `.dev.vars`** (gitignorovaný, na druhý stroj NEPŘEJDE). Vzor je
-   v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **DOJDE KREDIT — nutné dobít na
-   `ai.studio/projects` PŘED pokračováním**, jinak `submit` skončí hned chybou 402
-   „prepayment credits are depleted“.
+   v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **Kredit byl 22. 9. dobitý a funguje** —
+   ověřeno na desítkách dávek týž den. Může dojít znovu (402 „prepayment credits are
+   depleted“), pak nezbývá než počkat na dobití.
 3. **Ověřit, že všechno sedí** (čísla k porovnání):
    ```bash
    npm run validate
    npm run test:offline
    npm run lint-irony
    ```
-   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **561**.
-4. **Dokončit Brazílii** — 5 obrázků čeká na dobití kreditu:
-   ```bash
-   node scripts/batch-irony-images.js submit --only br-q-candomble,br-k-vlajka,br-q-otroctvi,br-q-senna,br-k-iguazu-falls
-   ```
-   Zadání jsou už opravená a v datech (commitnuto), tohle jen znovu odešle.
-5. **Pak pokračovat Chile** (zadání hotová, zlintovaná, commitnutá — jen čekají na `submit --cc cl`),
-   pak Ekvádor, Fidži, Indie, Keňa (stejný stav — zadání hotová, čekají na obrázky).
-   Teprve po nich psát zadání pro další novou zemi.
+   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **361**.
+4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — všech 11 zemí z fronty
+   21.–22. 9. je hotovo. **První krok další session: napsat `irony_prompt` pro novou zemi**
+   (Mongolsko `mn`, 40 otázek, je další v pořadí a je zatím úplně nedotčené — ani jedno
+   zadání). Postup psaní zadání je v bodu 5 níž.
+5. **Po Mongolsku pokračovat** dalšími zeměmi v pořadí podle `bezImg` z tabulky v bodu 1
+   (Mexiko, Nový Zéland, Tchaj-wan, Jižní Afrika mají taky 38/38 ještě bez jediného
+   zadání — všechny čtyři plně nedotčené, výběr pořadí je libovolný).
 
 ---
 
-## 1. Stav k 22. 9. 2026
+## 1. Stav k 22. 9. 2026 (večer)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **561** |
-| Hotovo 22. 9. | Finsko 42/42, Gabon 41/41, Peru 40/40, USA 40/40, Austrálie 38/38, Brazílie 33/38 (5 čeká na kredit) |
-| **Zadání HOTOVÁ, čekají na obrázky** | Chile 40, Ekvádor 40, Fidži 39, Indie 39, Keňa 39 — `lint-irony` 0 chyb, commitnuto, stačí `submit --cc xx` |
-| Klíč Gemini | **DOŠEL KREDIT** — nutné dobít na `ai.studio/projects`, jinak `submit` vrátí 402 hned. |
+| Bez ilustrace | **361** |
+| Hotovo 22. 9. | Finsko 42/42, Gabon 41/41, Peru 40/40, USA 40/40, Austrálie 38/38, Brazílie 38/38, Chile 39/39, Ekvádor 39/39, Fidži 39/39, Indie 39/39, Keňa 39/39 — **11 zemí, všechny 100 %** |
+| **Zadání čekající na obrázky** | žádná — fronta z 21.–22. 9. je celá vyčerpaná |
+| Další v pořadí (bez zadání) | Mongolsko 40, Mexiko 38, Nový Zéland 38, Tchaj-wan 38, Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
+| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~15 dávkách týž den. |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
-**Kredit Gemini API se už dvakrát vyčerpal** (429 „prepayment credits are depleted“) —
+**Kredit Gemini API se už třikrát vyčerpal** (402/429 „prepayment credits are depleted“) —
 řešení je vždycky dobití na `ai.studio/projects`, skript ani appka s tím nic neudělají.
 
 **Dávky o jediném/pár obrázcích někdy trvají 30+ minut** — Batch API negarantuje čas.
@@ -270,6 +272,22 @@ neodstraní.
   nic neříkal — a navíc přeloženo/přehozené na „PROGGRESO"). Když má vlajka/předmět
   v realitě nápis, MUSÍ se výslovně zakázat i bez zmínky v pozitivním popisu:
   „the circle otherwise completely plain with no ribbon or banner crossing it anywhere".
+  **U brazilské vlajky tenhle text vyšel PĚTKRÁT za sebou** i přes postupně sílící zákazy
+  (explicitní negace → zjednodušení hvězd → fyzické zakrytí křídlem papouška — křídlo
+  pásku zakrylo, ale roh textu vykoukl zpod něj). **Po 5. neúspěchu vyřešeno LOKÁLNĚ, ne
+  šestým generováním**: skript (napsaný ad hoc pro tenhle jeden zásah, nezůstal v repu)
+  flood-fillem v `sharp`/raw pixelech nejdřív najde celý modrý kruh vlajky (od bodu uvnitř
+  pásky, přes všechno kromě žluto-oranžové diamantu), pak DRUHÝM flood-fillem uvnitř
+  kruhu najde samotnou pásku (vše, co není čistě modré ani bílá hvězda — tím se chytí
+  i antialiasing kolem písmen, ne jen plná barva), nahradí ji průměrnou modrou barvou
+  kruhu s drobným jitterem (ať to není plocha jako přes pravítko) a nakonec **jemně
+  rozmaže jen tu rozšířenou oblast** (dilatace o 4 px), čímž zmizí i zbytkové stopy.
+  Na skutečné zobrazovací velikosti appky (670 px) je výsledek čistý — čte se jako
+  jemný odstín ve vodovce, ne jako vada. **Poučení: když model pětkrát za sebou vrátí
+  tutéž vadu na stejném místě, další generování je vyhozený kredit — lokální pixelová
+  oprava (flood fill + průměrná barva + rozmazání) je rychlejší, levnější a spolehlivější
+  než šestý pokus.** Hodí se všude, kde je vadná oblast jasně ohraničená barvou (text na
+  jednobarevném pozadí), ne třeba na složité textury.
 - **I symbol (ne slovo) se počítá jako text** — Brazílie, `br-q-candomble` vyrobilo
   vedle svíčky doslova „®" (kolečko s R). `lint-irony` na tohle nemá vzor, protože to
   není písmeno ani slovo z jeho seznamu — kontroluj i symboly jako ©/®/™ ručně při
@@ -282,10 +300,11 @@ neodstraní.
 
 ## 6. Co dělat dál
 
-1. **Dobít kredit Gemini**, pak dokončit Brazílii (5 obrázků, viz bod 0.4).
-2. **Odeslat obrázky pro zemi, co už má hotová zadání**: Chile → Ekvádor → Fidži →
-   Indie → Keňa (`submit --cc xx`, žádné psaní zadání není potřeba).
-3. **Teprve pak psát zadání pro další novou zemi** — v session, podle poučení v bodu 2/5.
+**Fronta z 21.–22. 9. je celá hotová (11 zemí, 100 %).** Žádná země teď nemá zadání
+čekající na obrázky — první krok je vždycky napsat nová zadání.
+
+1. **Napsat zadání pro Mongolsko** (40 otázek, úplně nedotčené) — v session, podle
+   poučení v bodu 2/5 tohohle souboru.
    Zadání se píšou do JSON mapy `{id: scéna}` (do scratchpadu) a do dat je zapíše
    `node scripts/ilustrace/zapis-prompty.js xx mapa.json`.
 4. `npm run lint-irony` (0 chyb) → `submit --cc xx` → archy + rohy + zvětšené výřezy
