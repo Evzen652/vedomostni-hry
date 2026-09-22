@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ha_Long_Bay",
   "source_card": "vn-mista-ha-long-bay",
   "image_prompt": "Fotorealistický širokoúhlý letecký snímek zálivu Ha Long při východu slunce, tisíce vápencových ostrovů vystupujících ze smaragdové vody, tradiční lodě, přirozené světlo, bez textu, 16:9",
-  "about": "zálivu Ha Long"
+  "about": "zálivu Ha Long",
+  "irony_prompt": "Countless tall limestone karst islands fill the frame rising straight out of emerald-green water like a forest of stone pillars stretching to every horizon. Smaller and subordinate: a small wooden junk boat with a rolled sail threading between two of the closest islands; a fishing eagle circling above one peak; a lone kayaker dwarfed beside a towering rock. MOOD: majestic, misty, endless."
  },
  {
   "id": "vn-q-hoi-an",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/H%E1%BB%99i_An_Old_Town",
   "source_card": "vn-mista-hoi-an",
   "image_prompt": "Fotorealistický snímek starého města Hoi An za soumraku, barevné hedvábné lampiony visící nad úzkými uličkami, tradiční žluté fasády, odrazy v řece, bez textu, 16:9",
-  "about": "starém městě Hoi An"
+  "about": "starém městě Hoi An",
+  "irony_prompt": "A row of pastel-yellow riverside shophouses fills the frame with beautifully carved wooden shutters and lantern hooks, the water at their doorstep now a mere trickle of a stream where a wide harbour once was. Smaller and subordinate: colourful paper lanterns strung between the buildings, unlit in daylight; an old wooden boat resting stranded and dry on cracked mud where the river retreated; a bicycle leaning against a weathered wall. MOOD: quaint, sun-faded, timeless."
  },
  {
   "id": "vn-q-hue-cisarske-mesto",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Imperial_City,_Hu%E1%BA%BF",
   "source_card": "vn-mista-hue-cisarske-mesto",
   "image_prompt": "Fotorealistický snímek Císařského města v Hue, starobylé hradby citadely a brána odrážející se v příkopu, měkké ranní světlo, bez textu, 16:9",
-  "about": "Císařském městě Hue"
+  "about": "Císařském městě Hue",
+  "irony_prompt": "A grand fortified palace gate fills the frame with tiered curved roofs and ornate stone dragons coiling along its ridges, a wide moat reflecting the whole structure below. Smaller and subordinate: guards in ceremonial robes standing at attention on either side of the gate; a single lotus blooming in the moat; a flag fluttering plain and unmarked atop the highest roof. MOOD: grand, imperial, serene."
  },
  {
   "id": "vn-q-mekong-delta",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mekong_Delta",
   "source_card": "vn-priroda-mekong-delta",
   "image_prompt": "Fotorealistický širokoúhlý snímek delty Mekongu, zelené rýžové pole protkané kanály, malé dřevěné lodě, teplé denní světlo, bez textu, 16:9",
-  "about": "deltě Mekongu"
+  "about": "deltě Mekongu",
+  "irony_prompt": "A vast patchwork of flooded green rice paddies fills the frame stretching to the horizon, a wide brown river winding through the middle of it all like the main vein of a leaf. Smaller and subordinate: a small boat piled high with produce gliding along a narrow side channel; a farmer in a conical hat wading between the paddy rows; a heron lifting off from the water's edge. MOOD: fertile, vast, abundant."
  },
  {
   "id": "vn-q-fansipan",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fansipan",
   "source_card": "vn-priroda-fansipan",
   "image_prompt": "Fotorealistický širokoúhlý snímek vrcholu Fansipan tyčícího se nad mořem mraků, mlžné pohoří Hoang Lien Son, ranní světlo, bez textu, 16:9",
-  "about": "vrcholu Fansipan"
+  "about": "vrcholu Fansipan",
+  "irony_prompt": "A single jagged granite peak fills the frame towering high above a sea of clouds, its summit catching the very first light of dawn while every surrounding mountain in the whole Indochinese peninsula remains lower and still in shadow. Smaller and subordinate: a hiker standing tiny at the peak with arms raised in triumph; a cable car cabin dangling far below on its cable; a hawk gliding level with the summit. MOOD: triumphant, vast, glowing."
  },
  {
   "id": "vn-q-son-doong",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90o%C3%B2ng_Cave",
   "source_card": "vn-priroda-son-doong",
   "image_prompt": "Fotorealistický širokoúhlý snímek nitra jeskyně Son Doong, mohutná kaverna se svazky slunečního světla pronikajícími propadlým stropem, bujná džungle na dně jeskyně, bez textu, 16:9",
-  "about": "jeskyni Son Doong"
+  "about": "jeskyni Son Doong",
+  "irony_prompt": "An almost impossibly enormous underground cave chamber fills the frame, so vast that a whole patch of jungle and its own weather system of drifting cloud have grown up inside it under a shaft of daylight from a collapsed ceiling far above. Smaller and subordinate: a line of explorers with headlamps looking tiny at the base of one wall; a river winding through the cave floor below the jungle patch; stalactites hanging like a distant ceiling of icicles. MOOD: colossal, awe-struck, otherworldly."
  },
  {
   "id": "vn-q-ho-chi-minh",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
   "source_card": "vn-lide-ho-chi-minh",
   "image_prompt": "Fotorealistický historizující snímek evokující Hanoj roku 1945, veřejné náměstí s řečnickým pódiem a davem viděným z dálky, teplý archivní tón, bez textu, 16:9",
-  "about": "Ho Či Minovi"
+  "about": "Ho Či Minovi",
+  "irony_prompt": "A single hand fills the frame raising a plain flag on a tall pole in a packed city square at the exact moment of sunrise, the crowd below caught mid-cheer with hats thrown in the air. Smaller and subordinate: doves scattering upward from the square in a burst; a row of bicycles parked neatly at the square's edge; red morning light catching the flag's fabric as it snaps open. MOOD: jubilant, momentous, glowing."
  },
  {
   "id": "vn-q-sestry-trung",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Trung_Sisters",
   "source_card": "vn-lide-sestry-trung",
   "image_prompt": "Fotorealistický historizující rekonstrukční snímek dvou vietnamských bojovnic vedoucích vojsko na válečných slonech, starověké bojiště, dramatické osvětlení, bez textu, 16:9",
-  "about": "sestrách Trung"
+  "about": "sestrách Trung",
+  "irony_prompt": "Two women on matching elephants fill the frame riding side by side at the head of a determined column of spear-carrying followers, both women sitting tall with unwavering resolve. Smaller and subordinate: a third, smaller elephant following close behind carrying supplies; a river crossing visible in the background with more followers wading through; banners in plain solid colours with no marking of any kind. MOOD: resolute, commanding, historic."
  },
  {
   "id": "vn-q-vo-nguyen-giap",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vo_Nguyen_Giap",
   "source_card": "vn-lide-vo-nguyen-giap",
   "image_prompt": "Fotorealistický snímek vojenského stratéga studujícího mapy ve velitelském stanovišti v džungli, světlo olejové lampy, historická vietnamská vojenská atmosféra, bez textu, 16:9",
-  "about": "Vo Nguyen Giapovi"
+  "about": "Vo Nguyen Giapovi",
+  "irony_prompt": "A simple wooden schoolteacher's desk fills the frame in a jungle clearing, a hand-drawn terrain map spread across it weighted down by stones at the corners, a modest satchel and a well-worn history book resting beside it instead of any military decoration. Smaller and subordinate: a row of soldiers studying the map intently over the desk's edge; a single compass resting on the map's centre; jungle canopy filtering soft green light overhead. MOOD: quietly resolute, focused, humble."
  },
  {
   "id": "vn-q-tet",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/T%E1%BA%BFt",
   "source_card": "vn-kultura-tet",
   "image_prompt": "Fotorealistický snímek vietnamské rodinné oslavy Tet, strom kumquatu a broskvové květy zdobící domov, červené šťastné obálky na stole, teplé slavnostní světlo, bez textu, 16:9",
-  "about": "svátku Tet"
+  "about": "svátku Tet",
+  "irony_prompt": "A large round golden mochi-like watermelon fills the frame balanced on a scale opposite a single glowing crescent moon, the two pans hovering exactly level as if the calendar itself were being weighed. Smaller and subordinate: a small kumquat tree in a red pot standing beside the scale, heavy with fruit; a string of firecrackers coiled but unlit nearby; a lantern glowing softly at the scale's base. MOOD: festive, balanced, warm."
  },
  {
   "id": "vn-q-ao-dai",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/%C3%81o_d%C3%A0i",
   "source_card": "vn-kultura-ao-dai",
   "image_prompt": "Fotorealistický snímek vietnamské ženy v tradičních splývavých šatech áo dài kráčející starobylou uličkou, měkké odpolední světlo, bez textu, 16:9",
-  "about": "šatech áo dài"
+  "about": "šatech áo dài",
+  "irony_prompt": "A flowing silk tunic fills the frame hanging freshly finished on a dressmaker's mannequin in a sunlit 1930s Hanoi studio, its long panels swaying gently as if caught mid-step. Smaller and subordinate: a tailor's measuring tape draped over a nearby stool; a sketch pad open to a fresh design on the workbench, pages otherwise blank; a bicycle bell visible through the window from the street below. MOOD: elegant, fresh, graceful."
  },
  {
   "id": "vn-q-uctivani-predku",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vietnamese_folk_religion",
   "source_card": "vn-kultura-uctivani-predku",
   "image_prompt": "Fotorealistický snímek tradičního vietnamského oltáře předků doma, kadidelnice, rámečky s fotografiemi, obětiny ovoce, teplé světlo svící, bez textu, 16:9",
-  "about": "uctívání předků"
+  "about": "uctívání předků",
+  "irony_prompt": "A small home altar fills the frame on a polished wooden shelf, framed photographs of smiling elders arranged among smoking incense sticks, a bowl of fresh fruit and two lit red candles glowing warmly. Smaller and subordinate: a cat curled asleep on the floor just beneath the shelf; a string of fresh marigolds draped along the altar's edge; morning light slanting softly across the photographs. MOOD: reverent, warm, quiet."
  },
  {
   "id": "vn-q-vodni-loutky",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Water_puppetry",
   "source_card": "vn-umeni-vodni-loutky",
   "image_prompt": "Fotorealistický snímek tradičního vietnamského vodního loutkového divadla, dřevěné loutky vystupující na hladině rybníka před kulisou ve stylu pagody, barevné odrazy, večerní světlo, bez textu, 16:9",
-  "about": "vodním loutkovém divadle"
+  "about": "vodním loutkovém divadle",
+  "irony_prompt": "A carved wooden dragon puppet fills the frame bursting up through a rippling water stage, spray flying, its painted scales gleaming in coloured light. Smaller and subordinate: a bamboo screen just visible at the water's edge hiding the puppeteers standing waist-deep behind it; a second smaller puppet, a fisherman figure, floating nearby; an audience of delighted faces reflected faintly in the water. MOOD: playful, splashy, magical."
  },
  {
   "id": "vn-q-dong-ho",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting",
   "source_card": "vn-umeni-dong-ho",
   "image_prompt": "Fotorealistický detailní snímek tradičních lidových dřevořezových tisků z Dong Ho, motivy prasete a kohouta, texturovaný perleťový papír, přirozené světlo, bez textu, 16:9",
-  "about": "obrázcích z Dong Ho"
+  "about": "obrázcích z Dong Ho",
+  "irony_prompt": "A woodblock print fills the frame glowing with an unmistakable soft pearly shimmer across its whole surface, a bold painted rooster and lotus pattern catching the light like the inside of a seashell. Smaller and subordinate: a carved wooden printing block resting beside it, ink still wet on its raised pattern; a small dish of crushed white shell powder mixed into paste; a printer's hand lifting the paper gently by one corner. MOOD: luminous, delicate, proud."
  },
  {
   "id": "vn-q-nha-nhac",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nh%C3%A3_nh%E1%BA%A1c",
   "source_card": "vn-umeni-nha-nhac",
   "image_prompt": "Fotorealistický snímek tradičních vietnamských dvorních hudebníků hrajících nha nhac v Císařském městě Hue, zdobené kostýmy, tradiční nástroje, večerní světlo lampionů, bez textu, 16:9",
-  "about": "dvorní hudbě nha nhac"
+  "about": "dvorní hudbě nha nhac",
+  "irony_prompt": "A formal court orchestra fills the frame performing in a grand palace hall, musicians in silk robes kneeling in a wide arc around an empty ornate throne at the centre, playing for it alone. Smaller and subordinate: an incense burner curling smoke up past a carved pillar; a single peacock feather fan resting on the throne's armrest; morning light falling through tall lacquered doors. MOOD: ceremonial, solemn, refined."
  },
  {
   "id": "vn-q-vovinam",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vovinam",
   "source_card": "vn-sport-vovinam",
   "image_prompt": "Fotorealistický snímek cvičenců vovinamu v bílých uniformách s modrými pásky provádějících skákající nůžkový kop venku, dynamická akce, přirozené světlo, bez textu, 16:9",
-  "about": "bojovém umění vovinam"
+  "about": "bojovém umění vovinam",
+  "irony_prompt": "A martial artist fills the frame captured mid-scissor-kick, both legs wrapped tight around a training partner's shoulders in a dynamic throw, plain training uniform with no marking of any kind. Smaller and subordinate: a row of students in the background practising the same stance in perfect unison; a wooden training dummy in the corner scuffed from years of use; a single lotus flower painted on the dojo's far wall. MOOD: dynamic, disciplined, powerful."
  },
  {
   "id": "vn-q-da-cau",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/%C4%90%C3%A1_c%E1%BA%A7u",
   "source_card": "vn-sport-da-cau",
   "image_prompt": "Fotorealistický snímek mladých Vietnamců hrajících da cau v parku, akční záběr kopu, barevný opeřený míček ve vzduchu, slunečný den, bez textu, 16:9",
-  "about": "sportu da cau"
+  "about": "sportu da cau",
+  "irony_prompt": "A player fills the frame arching backward mid-air to strike a small feathered shuttlecock with the sole of one bare foot, hands kept pointedly clear behind their back. Smaller and subordinate: a small circle of friends around a street corner net, all watching the shuttlecock's rise; a second player crouched ready to receive; motorbikes parked neatly along the kerb behind them. MOOD: nimble, playful, energetic."
  },
  {
   "id": "vn-q-cau-may",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sepak_takraw",
   "source_card": "vn-sport-cau-may",
   "image_prompt": "Fotorealistický akční snímek hráče sepak takraw provádějícího akrobatický kop nůžkami na ratanový míč přes síť, venkovní hřiště, dynamický pohyb, bez textu, 16:9",
-  "about": "sportu cau may"
+  "about": "sportu cau may",
+  "irony_prompt": "A player fills the frame launching into a full mid-air bicycle-kick over a low net, striking a woven rattan ball with the sole of one foot, both hands tucked safely out of the way. Smaller and subordinate: two teammates crouched on either side ready to receive; a small crowd pressed close around the outdoor court; the rattan ball's woven pattern caught mid-spin. MOOD: acrobatic, thrilling, intense."
  },
  {
   "id": "vn-q-quoc-ngu",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vietnamese_alphabet",
   "source_card": "vn-jazyk-quoc-ngu",
   "image_prompt": "Fotorealistický snímek starého ručně psaného vietnamského rukopisu latinkou ze 17. století, brk, teplé archivní světlo, bez textu, 16:9",
-  "about": "písmu chu quoc ngu"
+  "about": "písmu chu quoc ngu",
+  "irony_prompt": "Two robed missionaries fill the frame bent together over a wooden desk by candlelight, carefully arranging a set of small carved wooden stamp blocks face-down into a new tray, only their blank rounded backs visible, their expressions deep in concentration. Smaller and subordinate: a shelf of old scrolls tied shut with cord behind them; a small crucifix on the wall; a cup of tea gone cold beside the tray. MOOD: studious, quiet, dedicated."
  },
  {
   "id": "vn-q-sest-tonu",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vietnamese_phonology",
   "source_card": "vn-jazyk-sest-tonu",
   "image_prompt": "Fotorealistický detailní snímek sešitu studenta jazyka se slovem 'ma' napsaným šestkrát, pokaždé s jiným vietnamským tónovým znaménkem, tužka a papír, měkké světlo, 16:9",
-  "about": "šesti tónech vietnamštiny"
+  "about": "šesti tónech vietnamštiny",
+  "irony_prompt": "A single rounded speech bubble fills the frame floating above a speaker's head, its outline splitting into six identical wavy ribbon shapes stacked one above another, each ribbon a different pastel colour and curving at a distinctly different angle. Smaller and subordinate: a listener leaning in closely, eyes narrowed in careful concentration; a second, much simpler single flat ribbon floating above a foreign visitor nearby, looking confused; birds on a wire outside echoing the same six curved shapes. MOOD: precise, musical, subtle."
  },
  {
   "id": "vn-q-vietnam-jmeno",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vietnam",
   "source_card": "vn-jazyk-vietnam-jmeno",
   "image_prompt": "Fotorealistický snímek staré ručně kreslené mapy Vietnamu z 19. století s kaligrafickými názvy míst, zestárlá textura papíru, teplé archivní světlo, bez textu, 16:9",
-  "about": "jménu Vietnam"
+  "about": "jménu Vietnam",
+  "irony_prompt": "A tall compass rose fills the frame painted on old parchment, its needle swinging decisively and resting pointed firmly toward the southern edge where a small cluster of village rooftops sits nestled. Smaller and subordinate: a family standing proudly at the southern point marked on the compass; a river winding down from the northern edge of the parchment toward them; morning light warming the southern corner. MOOD: proud, rooted, warm."
  },
  {
   "id": "vn-q-pho",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ph%E1%BB%9F",
   "source_card": "vn-jidlo-pho",
   "image_prompt": "Fotorealistický detailní snímek dýmající misky vietnamské polévky pho s plátky hovězího masa, bylinkami a limetkou, stánek s pouličním jídlem, teplé světlo, bez textu, 16:9",
-  "about": "polévce pho"
+  "about": "polévce pho",
+  "irony_prompt": "A steaming bowl of noodle soup fills the frame with wide flat rice noodles curling beneath thin slices of beef, fresh herbs and bean sprouts scattered generously on top, rich broth glistening. Smaller and subordinate: a small plate of lime wedges and chilli rings beside the bowl; chopsticks and a spoon crossed on the table's edge; steam curling up to fog a nearby window. MOOD: comforting, hearty, homely."
  },
  {
   "id": "vn-q-banh-mi",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC",
   "source_card": "vn-jidlo-banh-mi",
   "image_prompt": "Fotorealistický detailní snímek rozříznutého vietnamského sendviče banh mi s paštikou, vepřovým masem, nakládanou zeleninou a koriandrem, pouliční stánek v pozadí, přirozené světlo, bez textu, 16:9",
-  "about": "sendviči banh mi"
+  "about": "sendviči banh mi",
+  "irony_prompt": "A crusty baguette-shaped sandwich fills the frame split open and stuffed generously with pickled carrot ribbons, cucumber slices, fresh coriander and glistening slices of pork. Smaller and subordinate: a street vendor's hands wrapping a second one in paper just at the edge of frame; a small jar of pickled chillies on the stall counter; a moped parked just behind, ready for the next delivery. MOOD: crunchy, vibrant, appetising."
  },
  {
   "id": "vn-q-nuoc-mam",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fish_sauce",
   "source_card": "vn-jidlo-nuoc-mam",
   "image_prompt": "Fotorealistický snímek tradičních dřevěných sudů na fermentaci rybí omáčky na ostrově Phu Quoc, rybářské lodě v přístavu v pozadí, teplé světlo západu slunce, bez textu, 16:9",
-  "about": "rybí omáčce nuoc mam"
+  "about": "rybí omáčce nuoc mam",
+  "irony_prompt": "A tall glass jar fills the frame layered with small silvery fish and coarse salt, deep amber liquid slowly pooling at the bottom beneath the layers. Smaller and subordinate: rows of identical clay jars lined up fermenting in the sun behind it; a small dish for tasting resting on the barrel lid; a fisherman's net drying on a rail nearby. MOOD: pungent, traditional, sun-baked."
  },
  {
   "id": "vn-q-dien-bien-phu",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Battle_of_Dien_Bien_Phu",
   "source_card": "vn-historie-dien-bien-phu",
   "image_prompt": "Fotorealistický historizující snímek mlžného džunglového údolí se zbytky válečných zákopů a kopců, ponuré zatažené světlo, bez lidí, bez textu, 16:9",
-  "about": "bitvě u Dien Bien Phu"
+  "about": "bitvě u Dien Bien Phu",
+  "irony_prompt": "A single white flag fills the frame being lowered slowly from a shattered command post on a smoke-hazed hilltop, the surrounding valley below scarred but quiet in the fading light. Smaller and subordinate: a map spread on a nearby table with its markers all pushed to one side; an empty helmet resting on a sandbag; a distant column of soldiers beginning a long, weary march away. MOOD: solemn, weighty, conclusive."
  },
  {
   "id": "vn-q-pad-saigonu",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
   "source_card": "vn-historie-pad-saigonu",
   "image_prompt": "Fotorealistický historizující snímek vrtulníku nad městskou střechou během chaotické evakuace, dramatická zatažená obloha, vzdálená siluetu města, bez textu, 16:9",
-  "about": "pádu Saigonu"
+  "about": "pádu Saigonu",
+  "irony_prompt": "A single tank fills the frame rolling calmly through an open palace gate as a small crowd on the pavement outside watches in stunned silence, no violence anywhere in the scene. Smaller and subordinate: a flag being raised over the palace roof in the soft afternoon light; a bicycle abandoned mid-street with its wheel still spinning; doves scattering from the palace eaves. MOOD: momentous, hushed, historic."
  },
  {
   "id": "vn-q-bach-dang",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Battle_of_B%E1%BA%A1ch_%C4%90%E1%BA%B1ng_River_(938)",
   "source_card": "vn-historie-bach-dang",
   "image_prompt": "Fotorealistický historizující snímek dřevěných kůlů vyčnívajících z řeky za odlivu, starobylé vraky lodí uvízlé mezi nimi, dramatická zatažená obloha, bez textu, 16:9",
-  "about": "bitvě na řece Bach Dang"
+  "about": "bitvě na řece Bach Dang",
+  "irony_prompt": "A wide river fills the frame at low tide, revealing a dense forest of sharpened wooden stakes driven into the riverbed, several enemy ships caught helplessly impaled and listing among them. Smaller and subordinate: a small victorious fleet of local boats gliding safely through the one clear channel they alone knew; a general standing tall on the lead boat's prow; birds scattering from the stranded ships' rigging. MOOD: triumphant, clever, decisive."
  },
  {
   "id": "vn-t-hanoj",
@@ -611,7 +638,8 @@
   "quip_correct": "Turisté vsadí na Ho Či Minovo Město, ale hlavní slovo má odjakživa Hanoj.",
   "quip_wrong": "Skoro, ale ne — lidnaté a hlavní nejsou totéž, Ho Či Minovo Město vede v počtu obyvatel, ale vládne se z Hanoje.",
   "explanation": "Hanoj leží na severu Vietnamu a funguje jako hlavní město přes tisíc let. Dřív se jmenovalo Thang Long, což česky znamená Vzestupný drak.",
-  "about": "Hanoji"
+  "about": "Hanoji",
+  "irony_prompt": "An ancient stone dragon fills the frame coiling protectively around a cluster of red-roofed pagodas and a calm lake at the centre of a bustling modern city, its scales weathered by over a thousand years. Smaller and subordinate: a swarm of scooters weaving through streets radiating out from the dragon's tail; a street vendor balancing baskets on a pole beneath one coiled loop; lanterns strung between rooftops. MOOD: ancient, enduring, lively."
  },
  {
   "id": "vn-k-buvol",
@@ -631,7 +659,8 @@
   "quip_correct": "Trefa! Kůň, velbloud, osel? Žádný z nich by na rýžovém poli nevydržel — buvol tam kraluje jako jediný, co se v bahně neboří.",
   "quip_wrong": "Ne tak docela — zkus si představit ta zvířata po kolena v bahně rýžového pole, jenom jedno z nich by se tam cítilo doma, a je to vodní buvol.",
   "explanation": "Vodní buvol má široká kopyta, díky nimž se v mokrém bahně rýžových polí neboří. Ve Vietnamu a dalších zemích Asie pomáhá farmářům stovky let.",
-  "about": "vodním buvolovi"
+  "about": "vodním buvolovi",
+  "irony_prompt": "A sturdy water buffalo fills the frame wading calmly through a flooded rice paddy, its wide splayed hooves barely sinking into the soft mud as it pulls a simple wooden plough behind it. Smaller and subordinate: a young farmer walking behind guiding the plough with a long stick; a white egret perched on the buffalo's broad back; neat green rows of rice seedlings stretching out behind them. MOOD: patient, hardworking, peaceful."
  },
  {
   "id": "vn-k-klobouk",
@@ -652,7 +681,8 @@
   "quip_wrong": "Zkus to jinak – zrcátko, kapsa na peníze ani zvoneček to nejsou. Je to namalovaný obrázek schovaný mezi vrstvami slámy.",
   "explanation": "Tenhle klobouk se vietnamsky jmenuje non la, což doslova znamená listový klobouk, a lidé ho nosí už celá staletí.",
   "about": "vietnamském slaměném klobouku",
-  "image_prompt": "A painterly watercolor gouache illustration of vietnamském slaměném klobouku, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of vietnamském slaměném klobouku, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A cone-shaped straw hat fills the frame held up against bright sunlight, its layers glowing translucent to reveal a hidden painted scene of a boat on a river tucked secretly between the woven layers. Smaller and subordinate: a child's delighted eye peeking through from below to spot the hidden picture; a weaver's hands nearby still mid-stitch on a second hat; a basket of fresh palm leaves waiting to be woven. MOOD: delightful, secret, sunlit."
  },
  {
   "id": "vn-k-draci-ovoce",
@@ -672,7 +702,8 @@
   "quip_correct": "A je to tam! Ta růžová šupinatá slupka a černé tečky mu daly jméno rovnou samy.",
   "quip_wrong": "Blízko, ale netrefeno — mango, papája ani liči nemají tu růžovou šupinatou slupku, hledáš dračí ovoce.",
   "explanation": "Dračí ovoce je vlastně plod kaktusu pitahaya. Vietnam patří mezi největší pěstitele na světě a každý rok ho vyváží do desítek zemí.",
-  "about": "dračím ovoci"
+  "about": "dračím ovoci",
+  "irony_prompt": "A large oval fruit with vivid pink scaly skin fills the frame sliced open to reveal snowy white flesh speckled with tiny black seeds, glistening and fresh. Smaller and subordinate: a whole uncut fruit resting beside the sliced half, its scales curling like dragon skin; a child's finger poking curiously at one of the black seeds; a fruit stall basket piled with more behind it. MOOD: exotic, vivid, refreshing."
  },
  {
   "id": "vn-k-kava",
@@ -694,7 +725,8 @@
   "explanation": "Kovový filtr se vietnamsky jmenuje phin, kávu do něj lidé nechávají kapat přímo na stole, zatímco si povídají nebo čtou noviny.",
   "source_url": "https://en.wikipedia.org/wiki/Vietnamese_iced_coffee",
   "image_prompt": "Fotorealistický detailní snímek vietnamského kovového kávového filtru phin na skleničce s kondenzovaným mlékem, kapky kávy, teplé světlo, 16:9",
-  "about": "vietnamské ledové kávě"
+  "about": "vietnamské ledové kávě",
+  "irony_prompt": "A small round metal drip filter fills the frame perched atop a tall glass, dark coffee dripping slowly drop by drop through it into a pool of sweet condensed milk swirling at the bottom. Smaller and subordinate: a spoon resting on a saucer beside the glass, ready to stir; a newspaper folded open on the café table; a ceiling fan blurred gently overhead. MOOD: patient, rich, unhurried."
  },
  {
   "id": "vn-k-sao-la",
@@ -716,7 +748,8 @@
   "explanation": "Tohle zvíře se jmenuje sao la a vědci ho objevili přímo ve vietnamských horách jako jednoho z posledních velkých savců, které se lidem podařilo najít tak pozdě.",
   "source_url": "https://en.wikipedia.org/wiki/Saola",
   "image_prompt": "Fotorealistický snímek vzácného sao la s dlouhými rovnými růžky v mlžném horském lese na hranici Vietnamu a Laosu, přirozené světlo, 16:9",
-  "about": "vzácném zvířeti sao la"
+  "about": "vzácném zvířeti sao la",
+  "irony_prompt": "A shy antelope-like creature with two long straight parallel horns fills the frame peering out cautiously from dense misty undergrowth, ready to vanish at the slightest sound. Smaller and subordinate: a researcher's camera trap strapped to a distant tree trunk, its lens just catching the creature's eye; a single dewdrop clinging to a nearby leaf; mist curling low between the tree trunks. MOOD: elusive, mysterious, hushed."
  },
  {
   "id": "vn-k-bambusovy-tanec",
@@ -738,7 +771,8 @@
   "explanation": "Tanec múa sạp pochází od horských etnických menšin na severu Vietnamu a dnes se hraje i jako oblíbená párty hra pro turisty.",
   "source_url": "https://en.wikipedia.org/wiki/Bamboo_dance",
   "image_prompt": "Fotorealistický snímek vietnamských tanečníků v tradičních krojích skákajících mezi bambusovými tyčemi, venkovní slavnost, večerní světlo, 16:9",
-  "about": "bambusovém tanci múa sạp"
+  "about": "bambusovém tanci múa sạp",
+  "irony_prompt": "A dancer fills the frame leaping nimbly between two long bamboo poles held low by kneeling helpers who clap them rhythmically open and shut around her ankles. Smaller and subordinate: a row of more dancers waiting their turn just behind her, swaying to the beat; the pole-holders' hands caught mid-clap; a drummer keeping time at the circle's edge. MOOD: rhythmic, joyful, lively."
  },
  {
   "id": "vn-k-hoan-kiem",
@@ -760,7 +794,8 @@
   "explanation": "Uprostřed jezera Hoan Kiem stojí malá Věž želvy, která legendu připomíná dodnes, a jezero je oblíbeným místem k ranním procházkám obyvatel Hanoje.",
   "source_url": "https://en.wikipedia.org/wiki/Ho%C3%A0n_Ki%E1%BA%BFm_Lake",
   "image_prompt": "Fotorealistický snímek jezera Hoan Kiem v Hanoji s malou Věží želvy uprostřed, ranní opar, klidná hladina, bez textu, 16:9",
-  "about": "jezeru Hoan Kiem a jeho legendě"
+  "about": "jezeru Hoan Kiem a jeho legendě",
+  "irony_prompt": "A giant golden turtle fills the frame rising from a calm lake at dusk to hand a gleaming sword up to a king standing in a small boat, moonlight rippling across the water around them. Smaller and subordinate: a small stone tower reflected on the lake's surface in the background; lotus leaves floating nearby; a single firefly glowing above the water. MOOD: mythical, serene, moonlit."
  },
  {
   "id": "vn-t-lakova-malba",
@@ -782,7 +817,8 @@
   "explanation": "Práce na jednom obraze sơn mài může trvat i několik měsíců, protože každá vrstva laku musí před broušením a leštěním pořádně zaschnout.",
   "source_url": "https://en.wikipedia.org/wiki/Vietnamese_lacquerware",
   "image_prompt": "Fotorealistický detailní snímek lesklého vietnamského lakovaného obrazu s perleťovými vzory, ateliér s přirozeným světlem, bez textu, 16:9",
-  "about": "vietnamské lakované malbě sơn mài"
+  "about": "vietnamské lakované malbě sơn mài",
+  "irony_prompt": "A glossy black lacquered panel fills the frame catching the light in deep rippling layers, fragments of mother-of-pearl and eggshell inlaid across its surface forming a shimmering abstract pattern of a mountain landscape. Smaller and subordinate: an artist's hand carefully polishing one corner with a soft cloth; small dishes of crushed shell and eggshell fragments waiting nearby; a stack of earlier panels drying against the studio wall. MOOD: lustrous, patient, refined."
  },
  {
   "id": "vn-k-vlajka",
@@ -804,7 +840,8 @@
   "explanation": "Vietnamská vlajka se používala už za války za nezávislost v 40. letech 20. století a po sjednocení země v roce 1976 se stala vlajkou celého státu.",
   "source_url": "https://en.wikipedia.org/wiki/Flag_of_Vietnam",
   "image_prompt": "Fotorealistický detailní snímek vlající vietnamské vlajky, žlutá hvězda na červeném poli, jasná obloha v pozadí, 16:9",
-  "about": "vietnamské vlajce"
+  "about": "vietnamské vlajce",
+  "irony_prompt": "A crisp flag fills the frame with a bold five-pointed golden-yellow star clearly reading as yellow, sitting perfectly centred on a deep solid red field clearly reading as red, snapping gently in a warm breeze. Smaller and subordinate: a single lantern glowing the same warm red hung just below the pole; a dove gliding past the star's topmost point; palm fronds brushing the flag's lower edge. MOOD: proud, vivid, warm."
  },
  {
   "id": "vn-q-motorky",
@@ -825,7 +862,8 @@
   "explanation": "Ve Vietnamu je registrovaných přes 70 milionů motorek, což znamená zhruba jednu na každého druhého obyvatele země.",
   "source_url": "https://en.wikipedia.org/wiki/Transport_in_Vietnam",
   "image_prompt": "Fotorealistický snímek rušné vietnamské ulice plné motorek za soumraku, rozmazané pohybem, městské osvětlení, bez textu, 16:9",
-  "about": "motorkách jako hlavní dopravě ve Vietnamu"
+  "about": "motorkách jako hlavní dopravě ve Vietnamu",
+  "irony_prompt": "A dense swarm of scooters fills the frame flowing through a city intersection like a school of fish, riders weaving smoothly around each other without a single collision. Smaller and subordinate: a single hesitant tourist frozen on the kerb, unsure how to cross; a food vendor's basket balanced impossibly on one passing scooter's handlebars; traffic lights blinking, cheerfully ignored by the flow. MOOD: chaotic, fluid, lively."
  },
  {
   "id": "vn-k-ha-long-skaly",
@@ -846,7 +884,8 @@
   "quip_wrong": "Kry v tropech neuvidíš a duny se nedrží nad vodou. Ha Long je z kamene.",
   "explanation": "Skály jsou zbytky dávného pohoří, které moře zaplavilo. Některé mají uvnitř velké jeskyně s krápníky, do kterých se vjíždí na lodi.",
   "about": "zálivu Ha Long",
-  "more_fact": "V zálivu žijí lidé v plovoucích vesnicích — domy stojí na sudech a plovácích, mezi nimi jsou sítě s rybami a děti jezdí do školy loďkou."
+  "more_fact": "V zálivu žijí lidé v plovoucích vesnicích — domy stojí na sudech a plovácích, mezi nimi jsou sítě s rybami a děti jezdí do školy loďkou.",
+  "irony_prompt": "Countless tall limestone pillars fill the frame jutting straight up out of calm emerald water, their sheer cliff faces streaked green with clinging jungle plants. Smaller and subordinate: a small tour boat gliding through a narrow gap between two of the tallest pillars; a monkey perched on a ledge halfway up one rock; a cave mouth just visible in the nearest pillar's base. MOOD: dramatic, lush, serene."
  },
  {
   "id": "vn-k-kava-vyvoz",
@@ -867,6 +906,7 @@
   "quip_wrong": "Čaj by tipoval každý, jenže právě proto je to past. Vietnam vyváží hlavně kávu.",
   "explanation": "Káva roste hlavně ve vysočině na jihu země, kde je pro ni vhodná půda a chladnější noci. Pěstují ji tam desetitisíce menších rodinných farem.",
   "about": "vietnamské kávě",
-  "more_fact": "Kávovník do Vietnamu původně vůbec nepatřil. Přivezli ho tam Francouzi před víc než sto padesáti lety a dnes je z něj pro zemi jedna z nejdůležitějších plodin."
+  "more_fact": "Kávovník do Vietnamu původně vůbec nepatřil. Přivezli ho tam Francouzi před víc než sto padesáti lety a dnes je z něj pro zemi jedna z nejdůležitějších plodin.",
+  "irony_prompt": "A wicker basket fills the frame overflowing with round bright red coffee cherries freshly picked, glossy and plump against dark green leaves. Smaller and subordinate: a farmer's weathered hands reaching for one more cluster on the bush; a row of drying racks spread with beans in the sunny background; a small robusta coffee plant sapling in a pot nearby. MOOD: abundant, earthy, sunlit."
  }
 ]
