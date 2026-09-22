@@ -1,13 +1,13 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **21. 9.** před přechodem na druhý počítač,
-po Belgii). Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení
-a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko),
-**2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
-Slovensko, Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
-Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea) a **2026-09-21**
+Sepsáno **12. září 2026** (aktualizováno **22. 9.** po Finsku, Gabonu, Peru, USA,
+Austrálii a částečně Brazílii). Doplňuje [predavaci-protokol.md](predavaci-protokol.md);
+poučení a rozhodnutí jsou v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát,
+Rusko), **2026-09-12** (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko,
+Francie, Slovensko, Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko,
+Ukrajina, Rumunsko, Thajsko, Turecko, Irsko, Izrael, Jižní Korea), **2026-09-21**
 (Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny,
-Argentina, Belgie).
+Argentina, Belgie) a **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie 33/38).
 
 ---
 
@@ -20,37 +20,40 @@ Argentina, Belgie).
    git pull
    npm install
    ```
-   Poslední commit ilustrací je Belgie; `git log --oneline -3` musí ukázat předávací commit
-   nad `0ecafb0`. **Pracovní strom má být čistý, nic rozdělaného nezůstalo** — žádná dávka
-   neběží a `.batch-irony.json` ukazuje na dokončenou (a stáhnutou) opravnou dávku Belgie.
+   Poslední commit ilustrací je Brazílie (částečná); `git log --oneline -3` musí ukázat
+   commit „Brazilie: 33/38 ilustraci, kredit Gemini API dosel…“. **Pracovní strom má být
+   čistý** — žádná dávka neběží a `.batch-irony.json` ukazuje na dokončenou dávku.
 2. **Vložit klíč Gemini do `.dev.vars`** (gitignorovaný, na druhý stroj NEPŘEJDE). Vzor je
-   v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **Doporučeno vytvořit NOVÝ klíč**
-   na `ai.studio` a starý smazat — ten současný zazněl v chatu. Bez klíče skončí `submit`
-   hned chybou, nic se nezkazí.
+   v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **DOJDE KREDIT — nutné dobít na
+   `ai.studio/projects` PŘED pokračováním**, jinak `submit` skončí hned chybou 402
+   „prepayment credits are depleted“.
 3. **Ověřit, že všechno sedí** (čísla k porovnání):
    ```bash
    npm run validate
    npm run test:offline
    npm run lint-irony
    ```
-   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **832**.
-4. **Všechny pomocné skripty jsou v repu** (`scripts/ilustrace/`, tabulka v bodu 3), včetně
-   těch čtyř, které do 21. 9. žily jen ve scratchpadu session (`zapis-prompty`, `orez`,
-   `zaplata`, `cekej-davka`). Na druhém stroji tedy nechybí nic.
-5. **Pokračovat Finskem** (bod 2 a 6). Všechny ostatní země ve frontě mají po 40 otázkách
-   bez ilustrace a zadání (`irony_prompt`) zatím nenapsaná.
+   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **561**.
+4. **Dokončit Brazílii** — 5 obrázků čeká na dobití kreditu:
+   ```bash
+   node scripts/batch-irony-images.js submit --only br-q-candomble,br-k-vlajka,br-q-otroctvi,br-q-senna,br-k-iguazu-falls
+   ```
+   Zadání jsou už opravená a v datech (commitnuto), tohle jen znovu odešle.
+5. **Pak pokračovat Chile** (zadání hotová, zlintovaná, commitnutá — jen čekají na `submit --cc cl`),
+   pak Ekvádor, Fidži, Indie, Keňa (stejný stav — zadání hotová, čekají na obrázky).
+   Teprve po nich psát zadání pro další novou zemi.
 
 ---
 
-## 1. Stav k 21. 9. 2026
+## 1. Stav k 22. 9. 2026
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **832** |
-| Hotovo 21. 9. | Malajsie 42/42, Pákistán 42/42, Portugalsko 42/42, Saúdská Arábie 44/44, Dánsko 42/42, Indonésie 41/41, Norsko 42/42, Filipíny 42/42, Argentina 48/48, Belgie 42/42 |
-| Klíč Gemini | **nový formát `AQ.…`**, v `.dev.vars` tohohle worktree (negituje se). Na jiném počítači ho tam musí hráč vložit znovu. |
-| Další v pořadí | Finsko 40, Gabon 40, Peru 40, USA 40, Vietnam 40… — **zadání (`irony_prompt`) zatím NENAPSANÁ** |
+| Bez ilustrace | **561** |
+| Hotovo 22. 9. | Finsko 42/42, Gabon 41/41, Peru 40/40, USA 40/40, Austrálie 38/38, Brazílie 33/38 (5 čeká na kredit) |
+| **Zadání HOTOVÁ, čekají na obrázky** | Chile 40, Ekvádor 40, Fidži 39, Indie 39, Keňa 39 — `lint-irony` 0 chyb, commitnuto, stačí `submit --cc xx` |
+| Klíč Gemini | **DOŠEL KREDIT** — nutné dobít na `ai.studio/projects`, jinak `submit` vrátí 402 hned. |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -250,18 +253,52 @@ neodstraní.
   Ukrajina, Rumunsko — třikrát „ornate script too stylized to read"). Jediné, co
   spolehlivě funguje, je psaní ze scény ODSTRANIT: u rumunské cyrilice ruce ZAVÍRAJÍ
   starý svazek a sahají po novém, oba zavřené, žádná stránka není vidět.
+- **OTEVŘENÁ kniha si o text řekne vždycky, i s formulací „ink merges into one pattern"**
+  (Peru, `pe-q-mariategui`) — stránky dostaly čitelný text. Řešení stejné jako u Rumunska:
+  DVĚ ZAVŘENÉ knihy, vtip (marxismus + andská tradice) nese rostlina rostoucí mezi hřbety.
+- **Uvozovky s frází „as if to say '…'" vyrobí SKUTEČNOU bublinu s tím slovem**, i když
+  zadání o textu vůbec nemluví (Peru, `pe-q-aymara`: „as if to say 'I heard this'"
+  vyrobilo bublinu se slovem „Noding"). Past není jen v zakázaných slovech — je i
+  v uvozených frázích, které naznačují řeč. Gesto popsat čistě fyzicky, bez citace.
+- **DIVADELNÍ MARKÝZA (marquee) si o písmena řekne i přes explicitní „no readable
+  lettering at all"** (USA, `us-k-broadway`) — negace nepomohla. Slovo „marquee" z promptu
+  úplně pryč, nahrazeno „theatre canopy" se žárovkami a `front panels left completely
+  blank and plain` — funguje, protože canopy nenese očekávání nápisu tak silně jako slovo
+  marquee (divadelní plakátovací tabule).
+- **Model dopíše SKUTEČNÝ text reálné věci i bez vyžádání, jen podle vlastní znalosti**
+  (Brazílie, `br-k-vlajka`: motto „ORDEM E PROGRESSO" na vlajce, ačkoli o něm prompt
+  nic neříkal — a navíc přeloženo/přehozené na „PROGGRESO"). Když má vlajka/předmět
+  v realitě nápis, MUSÍ se výslovně zakázat i bez zmínky v pozitivním popisu:
+  „the circle otherwise completely plain with no ribbon or banner crossing it anywhere".
+- **I symbol (ne slovo) se počítá jako text** — Brazílie, `br-q-candomble` vyrobilo
+  vedle svíčky doslova „®" (kolečko s R). `lint-irony` na tohle nemá vzor, protože to
+  není písmeno ani slovo z jeho seznamu — kontroluj i symboly jako ©/®/™ ručně při
+  prohlídce, ne jen spoléhej na lint.
+- **NOVINY na stole si o text řeknou vždycky** (Vietnam, `vn-k-kava`) — stejná past jako
+  italské Giro d'Italia, jen v jiné zemi. Noviny z vedlejšího gagu úplně pryč, nahrazeno
+  rohoží z ratanu.
 
 ---
 
 ## 6. Co dělat dál
 
-1. **Napsat zadání pro další zemi** (Finsko 40, pak další) — v session, podle poučení
-   v bodu 2. Zadání se píšou do JSON mapy `{id: scéna}` (mimo repo, třeba do dočasné
-   složky) a do dat je zapíše `node scripts/ilustrace/zapis-prompty.js fi mapa.json`.
-2. `npm run lint-irony` (0 chyb) → `submit --cc xx` → archy + rohy → opravy → commit.
-3. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
+1. **Dobít kredit Gemini**, pak dokončit Brazílii (5 obrázků, viz bod 0.4).
+2. **Odeslat obrázky pro zemi, co už má hotová zadání**: Chile → Ekvádor → Fidži →
+   Indie → Keňa (`submit --cc xx`, žádné psaní zadání není potřeba).
+3. **Teprve pak psát zadání pro další novou zemi** — v session, podle poučení v bodu 2/5.
+   Zadání se píšou do JSON mapy `{id: scéna}` (do scratchpadu) a do dat je zapíše
+   `node scripts/ilustrace/zapis-prompty.js xx mapa.json`.
+4. `npm run lint-irony` (0 chyb) → `submit --cc xx` → archy + rohy + zvětšené výřezy
+   podezřelých míst → opravy → **commit VŽDY i `data/questions/*.json`, ne jen `img/`**
+   (past z 22. 9.: tři opravy zadání se zapomněly commitnout, protože commit sahal
+   jen po `img/`).
+5. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
 
-**Nezapomeň:** obrázky jsou v repu (odhad dnes ~250 MB jen z tohohle sezení navíc),
-takže při nasazení přibývají i do `dist/`. Limit Cloudflare Pages je 20 000 souborů,
-dnes jich je odhadem ~1 900.
+**PAST 22. 9., ať se neopakuje: `git commit` po opravě zadání musí sáhnout i po
+`data/questions/xx.json`, ne jen po `img/`.** Třikrát se stalo, že se commitly jen nové
+obrázky a opravený `irony_prompt` zůstal jen na disku — `git status` by to ukázal
+(soubor „modified", ne staged), kdyby se zkontroloval před commitem.
+
+**Nezapomeň:** obrázky jsou v repu, takže při nasazení přibývají i do `dist/`.
+Limit Cloudflare Pages je 20 000 souborů.

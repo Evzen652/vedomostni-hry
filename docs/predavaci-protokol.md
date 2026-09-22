@@ -1,8 +1,7 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-21. 9. 2026 večer** před přechodem na druhý počítač (ilustrace deseti zemí, pomocné skripty
-přesunuté ze scratchpadu do repa).
+22. 9. 2026** po session s Finskem, Gabonem, Peru, USA, Austrálií a částečně Brazílií.
 
 Tenhle soubor je **protokol**: co převzít, co ověřit, co je zakázané a co dělat
 v jakém pořadí. Popisný stav projektu je v [pokracovani.md](pokracovani.md),
@@ -21,16 +20,19 @@ Zkopíruj do prvního vzkazu:
 (14. 9. to byl `cb04b3d`, 12 commitů pozadu). Nejdřív `git fetch` a posunout se na
 `origin/claude/pokracujeme-e79708` (fast-forward), teprve pak cokoli ověřovat.
 
-### Ilustrace k otázkám: kredit dobitý, další země čekají na ZADÁNÍ
+### Ilustrace k otázkám: DOŠEL KREDIT GEMINI, zadání pro 5 zemí HOTOVÁ a čekají jen na submit
 
-21. 9. dokončeny Malajsie, Pákistán, Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina a Belgie; bez ilustrace
-zbývá **832** otázek. Klíč `GEMINI_API_KEY` (nový formát `AQ.…`) je v `.dev.vars`
-worktree `pokracujeme-e79708` — v novém worktree nebo na jiném počítači chybí a hráč ho
-musí vložit znovu (řádek je nově zakomentovaný ve `.dev.vars.example`; **doporučen nový
-klíč**, starý zazněl v chatu). **Další země (Finsko, Gabon, Peru…) nemají `irony_prompt`**,
-takže první krok je napsat zadání. **Postup na druhém počítači krok za krokem je v bodu 0
-[predani-ilustrace.md](predani-ilustrace.md)**, pravidla psaní zadání v jeho bodu 2.
-Všechny pomocné skripty (zápis zadání, čekání na dávku, ořez, záplata) jsou v `scripts/ilustrace/`.
+22. 9. dokončeny Finsko, Gabon, Peru, USA, Austrálie (100 %) a Brazílie (33/38 — zbylých
+5 čeká na kredit); bez ilustrace zbývá **561** otázek. **Kredit Gemini API došel** (402
+„prepayment credits are depleted") — **hráč musí dobít na `ai.studio/projects`**, jinak
+se nedá vygenerovat ani jeden obrázek. Klíč `GEMINI_API_KEY` je v `.dev.vars` (negituje
+se, na jiném počítači chybí a musí se vložit znovu).
+
+**Zadání pro Chile, Ekvádor, Fidži, Indii a Keňu (197 otázek) jsou už napsaná,
+zlintovaná a commitnutá** — po dobití kreditu stačí `submit --cc xx`, žádné psaní
+zadání není potřeba. **Postup krok za krokem je v bodu 0
+[predani-ilustrace.md](predani-ilustrace.md)**, pravidla psaní zadání pro DALŠÍ nové
+země v jeho bodu 5 (dřív bod 2). Všechny pomocné skripty jsou v `scripts/ilustrace/`.
 
 **Produkce je pořád na `0dfa574` (16. 9.).** Od té doby přibylo na větvi jen obsahové:
 ilustrace, `irony_prompt` v datech, dokumentace a skripty — **žádný kód appky ani migrace**.
@@ -159,14 +161,21 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 **0. Ilustrace k otázkám — průběžná práce**
 12.–13. 9. dokončeny Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie,
 Slovensko, Nizozemsko, Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina, Rumunsko,
-Thajsko, Turecko, Irsko, Izrael, Jižní Korea (všechny 100 %); 21. 9. Malajsie, Pákistán,
-Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina a Belgie. Bez ilustrace je **832** otázek z 3 742.
+Thajsko, Turecko, Irsko, Izrael, Jižní Korea; 21. 9. Malajsie, Pákistán, Portugalsko,
+Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina, Belgie; 22. 9. Finsko,
+Gabon, Peru, USA, Austrálie (100 %) a Brazílie (33/38). Bez ilustrace je **561** otázek z 3 742.
 
-**Další krok:** napsat `irony_prompt` pro Finsko (pak další) v session, `npm run lint-irony`
-(0 chyb), pak `node scripts/batch-irony-images.js submit --cc fi`. Na hromadný zápis zadání
-do dat slouží `node scripts/ilustrace/zapis-prompty.js fi mapa.json` (JSON mapa `id → zadání`,
-round-trip kontrola formátu 1 mezera + CRLF), na čekání `node scripts/ilustrace/cekej-davka.js`
-na pozadí, na podpis u spodní hrany `node scripts/ilustrace/orez.js id 700`.
+**Další krok: DOBÍT KREDIT, pak dokončit Brazílii a odeslat 5 zemí s hotovým zadáním**
+(Chile, Ekvádor, Fidži, Indie, Keňa — `submit --cc xx`, zadání už jsou v datech). Teprve
+pak psát `irony_prompt` pro další novou zemi v session, `npm run lint-irony` (0 chyb).
+Na hromadný zápis zadání do dat slouží `node scripts/ilustrace/zapis-prompty.js xx mapa.json`
+(JSON mapa `id → zadání`, round-trip kontrola formátu 1 mezera + CRLF), na čekání
+`node scripts/ilustrace/cekej-davka.js` na pozadí, na podpis u spodní hrany
+`node scripts/ilustrace/orez.js id 700`.
+
+**Past 22. 9.: commit po opravě zadání musí sáhnout i po `data/questions/xx.json`,
+ne jen po `img/`** — třikrát se stalo, že oprava `irony_prompt` zůstala jen na disku
+a commitly se jen nové obrázky. Než commitovat, zkontrolovat `git status`.
 
 Po každé zemi: `archy.js` + `rohy.js` → kontrola očima → opravy přes `--only` →
 zápis do CLAUDE.md → `validate` + `test:offline` → commit + push.
