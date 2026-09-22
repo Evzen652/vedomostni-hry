@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mount_Rushmore",
   "source_card": "us-mista-rushmore",
   "image_prompt": "Fotorealistický snímek Mount Rushmore s vytesanými tvářemi čtyř prezidentů, jasná obloha, 16:9",
-  "about": "Mount Rushmore"
+  "about": "Mount Rushmore",
+  "irony_prompt": "Four colossal stone faces fill the frame carved into a granite mountainside, each one wearing a different pair of comically oversized novelty sunglasses propped on its stone nose. Smaller and subordinate: a tiny climber dangling on a rope beside one giant stone ear, utterly dwarfed; a flock of birds nesting in a stone eyebrow; pine trees at the mountain's base looking impossibly small. MOOD: monumental, playful, grand."
  },
  {
   "id": "us-q-grand-canyon",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Grand_Canyon",
   "source_card": "us-priroda-grand-canyon",
   "image_prompt": "Fotorealistický širokoúhlý snímek Grand Canyonu při západu slunce, vrstevnaté skalní stěny, 16:9",
-  "about": "Grand Canyonu"
+  "about": "Grand Canyonu",
+  "irony_prompt": "A vast striped canyon wall fills the frame in cross-section, countless thin horizontal bands of rock in warm reds, oranges and greys stacked from base to rim like the pages of an enormous ancient book. Smaller and subordinate: a tiny hiker standing at the very top edge, dwarfed by the scale; a condor gliding along the layered wall halfway down; the Colorado River glinting far below at the canyon's base. MOOD: vast, ancient, humbling."
  },
  {
   "id": "us-q-mlk",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.",
   "source_card": "us-lide-mlk",
   "image_prompt": "Historizující fotorealistický snímek davu na pochodu za občanská práva ve Washingtonu, dokumentární styl, 16:9",
-  "about": "Martinu Lutheru Kingovi"
+  "about": "Martinu Lutheru Kingovi",
+  "irony_prompt": "A single wooden podium fills the frame standing before an enormous peaceful crowd stretching to the horizon, every hand raised together in stillness rather than clenched fists, sunlight breaking warmly through clouds above them. Smaller and subordinate: doves rising in a slow arc above the crowd; a row of linked arms in the front line; a banner in plain solid colours with no marking of any kind. MOOD: hopeful, resolute, luminous."
  },
  {
   "id": "us-q-hamburger",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hamburger",
   "source_card": "us-jidlo-hamburger",
   "image_prompt": "Fotorealistický snímek klasického amerického hamburgeru se salátem a rajčetem, dřevěné prkénko, 16:9",
-  "about": "původu hamburgeru"
+  "about": "původu hamburgeru",
+  "irony_prompt": "A thick juicy burger fills the frame stacked high between two round golden buns, melted cheese dripping down the sides onto a plain plate. Smaller and subordinate: a crowd of five different identical vendors in the background all pointing proudly at their own nearly identical burger stands; a jar of pickles just visible at the edge; steam rising off the patty. MOOD: hearty, contested, mouth-watering."
  },
  {
   "id": "us-q-apollo11",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Apollo_11",
   "source_card": "us-historie-apollo11",
   "image_prompt": "Fotorealistický snímek astronauta v skafandru na povrchu Měsíce, americká vlajka, černá obloha, 16:9",
-  "about": "misi Apollo 11"
+  "about": "misi Apollo 11",
+  "irony_prompt": "Two astronauts in bulky white spacesuits fill the frame planting a plain flagpole together on a grey dusty lunar surface, their reflective helmet visors showing only the glow of Earth rising behind them instead of any face. Smaller and subordinate: a third figure's helmet reflected tiny in a porthole of the lander behind them; a single bootprint pressed perfectly into the dust nearby; Earth hanging blue and small in the black sky above. MOOD: awe-struck, historic, silent."
  },
  {
   "id": "us-q-dekovani",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)",
   "source_card": "us-kultura-dekovani",
   "image_prompt": "Fotorealistický snímek sváteční tabule s pečeným krocanem a podzimní výzdobou, teplé domácí světlo, 16:9",
-  "about": "Díkůvzdání"
+  "about": "Díkůvzdání",
+  "irony_prompt": "A long wooden table fills the frame outdoors under autumn trees, laden with roasted turkey, pumpkins and baskets of corn, two very different groups of people sitting together and passing dishes warmly to one another. Smaller and subordinate: a child offering a basket of corn across the table to an elder; smoke curling up from a cooking fire nearby; fallen leaves scattered across the tablecloth. MOOD: warm, communal, grateful."
  },
  {
   "id": "us-q-jazz",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Jazz",
   "source_card": "us-umeni-jazz",
   "image_prompt": "Fotorealistický snímek jazzové kapely hrající v malém klubu, saxofon a trubka, teplé tlumené světlo, 16:9",
-  "about": "vzniku jazzu"
+  "about": "vzniku jazzu",
+  "irony_prompt": "A battered brass trumpet fills the frame mid-note on a sunlit New Orleans balcony, a swirl of golden musical notes spiralling out of its bell and drifting down over the street below like confetti. Smaller and subordinate: a street parade with umbrellas and a tuba passing beneath the balcony; wrought-iron railings draped with drying laundry; a cat stretching lazily on the balcony rail. MOOD: soulful, vibrant, warm."
  },
  {
   "id": "us-q-nba",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/National_Basketball_Association",
   "source_card": "us-sport-nba",
   "image_prompt": "Fotorealistický snímek basketbalisty ve skoku ke koši na plné hale, dynamický pohyb, dramatické osvětlení, 16:9",
-  "about": "NBA"
+  "about": "NBA",
+  "irony_prompt": "A basketball hoop fills the frame with a ball caught mid-swish through the net, and circling the rim in a wide ring are dozens of tiny flags from countries all over the world, all reaching upward toward the same net. Smaller and subordinate: a stadium roaring in a blurred wash of colour below; a single sneaker mid-air just below the rim; a scoreboard turned away so its face cannot be read. MOOD: electric, global, triumphant."
  },
  {
   "id": "us-q-americka-anglictina",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/American_English",
   "source_card": "us-jazyk-americka-anglictina",
   "image_prompt": "Fotorealistický snímek otevřeného slovníku americké a britské angličtiny vedle sebe, teplé světlo, 16:9",
-  "about": "americké angličtině"
+  "about": "americké angličtině",
+  "irony_prompt": "Two identical red mailboxes fill the frame standing side by side on a garden path, one carrying a small brass plate stamped only with a plain drawing of an envelope and the other a small brass plate stamped only with a plain drawing of a postbox slot, both clearly meaning the very same thing. Smaller and subordinate: a confused delivery robin hopping between the two, unsure which to use; identical plain envelopes poking out of both boxes; a garden fence separating them by only a few feet. MOOD: wry, playful, quaint."
  },
  {
   "id": "us-k-vlajka-hvezdy",
@@ -216,7 +225,8 @@
   "quip_wrong": "Zkus to jinak – hlavní města, řeky ani parky za hvězdičkami nestojí. Každá hvězdička je jeden stát.",
   "explanation": "Pruhů je na vlajce vždycky stejně a nikdy se nemění – připomínají první kolonie, ze kterých USA vznikly. Hvězdičky naopak postupně přibývaly, jak přibývaly nové státy.",
   "about": "vlajce USA",
-  "image_prompt": "A painterly watercolor gouache illustration of vlajce USA, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of vlajce USA, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A crisp flag fills the frame with rows of white stars scattered across a deep blue rectangle in one corner, each single star glowing faintly brighter than the rest, alongside broad red and white horizontal stripes clearly reading as red and white. Smaller and subordinate: a small choir of children pointing proudly at one glowing star each; a breeze rippling the stripes below; a flagpole rope tapping gently against the pole. MOOD: proud, bright, breezy."
  },
  {
   "id": "us-k-orel",
@@ -236,7 +246,8 @@
   "quip_correct": "Skvěle, bílá hlava je poznat na první pohled! Orel bělohlavý sedí i na prezidentské pečeti.",
   "quip_wrong": "Ne tak úplně — ten pták ze znaku se jmenuje orel bělohlavý, ne tak, jak říká tvůj tip.",
   "explanation": "Orel bělohlavý žije jen v Severní Americe. Staví obří hnízda, která si stejný pár ptáků opravuje každý rok na stejném místě — nejstarší známé hnízdo vážilo přes tunu.",
-  "about": "orlovi bělohlavém"
+  "about": "orlovi bělohlavém",
+  "irony_prompt": "A magnificent white-headed eagle fills the frame perched on a towering pine branch, wings half-spread and catching the wind, its sharp gaze fixed on the horizon. Smaller and subordinate: an enormous nest visible in a neighbouring tree, patched and rebuilt many times over; a fish held loosely in one talon; smaller birds scattering respectfully out of its way. MOOD: majestic, proud, soaring."
  },
  {
   "id": "us-k-socha-svobody",
@@ -256,7 +267,8 @@
   "quip_correct": "Bravo, přesně tak! Pravačka svítí pochodní od roku 1886 a nikdy si neodpočinula.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — v pravé ruce Sochy Svobody hoří pochodeň, žádná zbraň ani vlajka.",
   "explanation": "Sochu Svobody dostaly USA jako dárek od Francie; v levé ruce drží tabulku s datem 4. července 1776, kdy USA vyhlásily nezávislost na Anglii.",
-  "about": "Soše Svobody"
+  "about": "Soše Svobody",
+  "irony_prompt": "A towering bronze-green statue's raised arm fills the frame holding a glowing torch high against a bright sky, flame-shaped rays of golden light radiating outward from it. Smaller and subordinate: a ferry boat crossing the harbour far below, passengers craning their necks upward; seagulls circling near the torch's flame; a single cloud drifting past the statue's crown. MOOD: inspiring, radiant, proud."
  },
  {
   "id": "us-k-hot-dog",
@@ -276,7 +288,8 @@
   "quip_correct": "Perfektní, hot dog přesně tak! Jméno tak jednoduché, že by ho vymyslelo dítě, a možná taky vymyslelo.",
   "quip_wrong": "Ouha, málem — tenhle párek v rohlíku má jméno hot dog, i když tvůj tip zněl jinak.",
   "explanation": "Hot dog se v USA prodává skoro všude — jen na amerických baseballových stadionech se ročně sní přes 18 milionů hot dogů za jednu sezónu.",
-  "about": "hot dogu"
+  "about": "hot dogu",
+  "irony_prompt": "A long soft bun fills the frame cradling a plump cylindrical grilled sausage, a bright zigzag of mustard and a straight line of ketchup drizzled generously along its length. Smaller and subordinate: a small pile of diced onions scattered on top; a paper napkin tucked beside it on the tray; steam curling up from the freshly grilled sausage. MOOD: casual, appetising, cheerful."
  },
  {
   "id": "us-k-yellowstone",
@@ -297,7 +310,8 @@
   "quip_wrong": "Ne, hledáš Yellowstone — park, kde si medvědi chodí po stezkách, jako by jim patřily úplně celé.",
   "explanation": "Pod Yellowstonem leží obří supervulkán; kdyby někdy vybuchl naplno, popel by podle vědců zasypal většinu Severní Ameriky.",
   "about": "Yellowstonu",
-  "image_prompt": "Fotorealistický snímek gejzíru Old Faithful v Yellowstonském parku při erupci, 16:9"
+  "image_prompt": "Fotorealistický snímek gejzíru Old Faithful v Yellowstonském parku při erupci, 16:9",
+  "irony_prompt": "A vivid rainbow-coloured hot spring fills the frame steaming gently in a wide geyser basin, its rings of blue, green, orange and yellow glowing like a giant eye set into the earth. Smaller and subordinate: a bison grazing calmly at the pool's edge, utterly unbothered; a wooden boardwalk curving around the spring for visitors; a geyser erupting in the distant background. MOOD: otherworldly, vivid, serene."
  },
  {
   "id": "us-k-mississippi",
@@ -318,7 +332,8 @@
   "quip_wrong": "Mississippi to je — řeka tak dlouhá, že projet ji od pramene k ústí trvá dýl než dovolená.",
   "explanation": "Jméno řeky pochází z jazyka domorodých Odžibvejů a znamená doslova „velká řeka“; kdysi po ní jezdily kolesové parníky napříč skoro celým kontinentem.",
   "about": "řece Mississippi",
-  "image_prompt": "Fotorealistický letecký snímek řeky Mississippi meandrující zelenou krajinou, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek řeky Mississippi meandrující zelenou krajinou, 16:9",
+  "irony_prompt": "A wide brown river fills the frame winding lazily from a distant misty northern horizon all the way down to a warm southern gulf shimmering with heat, an old paddle-wheel steamboat churning along its length. Smaller and subordinate: fishing boats moored along a muddy bank; a heron standing still in the shallows; cotton fields stretching along one riverbank further south. MOOD: sprawling, timeless, hazy."
  },
  {
   "id": "us-k-broadway",
@@ -339,7 +354,8 @@
   "quip_wrong": "Broadway to je — ulice, kde se i o placení nájmu dá zazpívat tak, že za to lidi zaplatí vstupné.",
   "explanation": "Broadwayi se přezdívá „Velká bílá cesta“, protože patřila mezi první newyorské ulice osvětlené elektrickými reklamami.",
   "about": "Broadwayi",
-  "image_prompt": "Fotorealistický snímek rozsvícené newyorské Broadway večer s divadelními plakáty, 16:9"
+  "image_prompt": "Fotorealistický snímek rozsvícené newyorské Broadway večer s divadelními plakáty, 16:9",
+  "irony_prompt": "A dazzling row of glowing theatre marquees fills the frame lining a bustling street at dusk, each one blazing with colourful light bulbs in swirling patterns and no readable lettering at all. Smaller and subordinate: a crowd in evening coats streaming in beneath the lights; a horse-drawn carriage rattling past below; a single spotlight sweeping up into the darkening sky. MOOD: dazzling, glamorous, electric."
  },
  {
   "id": "us-k-superbowl",
@@ -360,7 +376,8 @@
   "quip_wrong": "Super Bowl to je — den, kdy si celá země objedná víc pizzy než o kterémkoli jiném dni v roce.",
   "explanation": "Vítězný tým dostane prsten posetý drahokamy, který si hráči nechávají jako trvalou památku na sezónu.",
   "about": "Super Bowlu",
-  "image_prompt": "Fotorealistický snímek nabitého fotbalového stadionu při finále Super Bowlu, večerní osvětlení, 16:9"
+  "image_prompt": "Fotorealistický snímek nabitého fotbalového stadionu při finále Super Bowlu, večerní osvětlení, 16:9",
+  "irony_prompt": "A gleaming silver football trophy fills the frame held high above a roaring stadium crowd, confetti in team colours raining down all around it. Smaller and subordinate: two players embracing in celebration just below the trophy; a marching band mid-formation on the field far below; fireworks bursting in the night sky above the stadium rim. MOOD: triumphant, explosive, electric."
  },
  {
   "id": "us-t-route66",
@@ -381,7 +398,8 @@
   "quip_wrong": "Route 66 to je — silnice, co se proslavila víc než většina měst, kterými prochází.",
   "explanation": "Route 66 byla roku 1985 oficiálně vyřazená ze systému dálnic, protože ji nahradily rychlejší mezistátní silnice; dnes žije dál jen jako turistická nostalgická trasa.",
   "about": "Route 66",
-  "image_prompt": "Fotorealistický snímek opuštěné silnice Route 66 s historickou cedulí uprostřed pouště, 16:9"
+  "image_prompt": "Fotorealistický snímek opuštěné silnice Route 66 s historickou cedulí uprostřed pouště, 16:9",
+  "irony_prompt": "A single long straight desert highway fills the frame stretching to a distant horizon between red rock mesas, its faded asphalt cracked and sun-bleached from decades of travel. Smaller and subordinate: a vintage convertible car parked at a lonely roadside diner with a plain round neon sign, unlit; a tumbleweed rolling across the empty lane; telephone poles marching off into the heat haze. MOOD: nostalgic, sun-baked, wide open."
  },
  {
   "id": "us-t-hollywood-sign",
@@ -402,7 +420,8 @@
   "quip_wrong": "HOLLYWOOD původně prodával pozemky, ne filmy — billboard, co se sám povýšil na symbol celé čtvrti.",
   "explanation": "Nápis původně zněl HOLLYWOODLAND; poslední čtyři písmena odstranili až později, když se z reklamy na bydlení stal symbol filmové čtvrti.",
   "about": "nápisu HOLLYWOOD",
-  "image_prompt": "Fotorealistický snímek nápisu HOLLYWOOD na kopci nad Los Angeles za jasného dne, 16:9"
+  "image_prompt": "Fotorealistický snímek nápisu HOLLYWOOD na kopci nad Los Angeles za jasného dne, 16:9",
+  "irony_prompt": "Nine enormous white block-shaped structures fill the frame standing on a dry hillside overlooking a sprawling city below, scaffolding still clinging to one of the last four being quietly dismantled and hauled away by a small work crew. Smaller and subordinate: a film crew's spotlight beam sweeping across the remaining structures from the valley below; a hawk perched on the tallest one's crossbar; a delivery truck loaded with the removed pieces driving off down the hill. MOOD: transformative, sun-bleached, wry."
  },
  {
   "id": "us-t-death-valley",
@@ -423,7 +442,8 @@
   "quip_wrong": "Death Valley to je — písek tam bývá tak rozpálený, že by na něm klidně šlo usmažit vejce, a lidi si tam přesto jezdí na výlet.",
   "explanation": "Rekordní teplota 56,7 °C tam byla naměřena už v roce 1913 a dodnes nebyla nikde na světě spolehlivě překonaná; nedaleko přitom leží Badwater Basin, nejníže položené místo Severní Ameriky.",
   "about": "Death Valley",
-  "image_prompt": "Fotorealistický snímek popraskané solné pláně Badwater Basin v Death Valley za horkého dne, 16:9"
+  "image_prompt": "Fotorealistický snímek popraskané solné pláně Badwater Basin v Death Valley za horkého dne, 16:9",
+  "irony_prompt": "A vast cracked salt flat fills the frame stretching to shimmering heat-hazed mountains, its hexagonal mud-crack pattern glowing white-hot under a blazing sun. Smaller and subordinate: a single thermometer on a wooden post reading impossibly high in the foreground; a lone lizard darting between two cracks, seeking shade; a distant sign marking the lowest point, its face left blank. MOOD: scorching, stark, extreme."
  },
  {
   "id": "us-t-levis-jeans",
@@ -444,7 +464,8 @@
   "quip_wrong": "Byly to pracovní kalhoty pro zlatokopy, ne večerní róba — plátno, co mělo vydržet kopání v horninách, dnes vydrží tak akorát sezení v kavárně.",
   "explanation": "Kapsy džínů zpevňují kovové nýty, které si nechal patentovat krejčí Jacob Davis společně s obchodníkem Levi Straussem v roce 1873 — a stejné nýty na kapsách drží dodnes.",
   "about": "vzniku džínů Levi's",
-  "image_prompt": "Fotorealistický detailní snímek starých modrých džínů s kovovými nýty na kapse, 16:9"
+  "image_prompt": "Fotorealistický detailní snímek starých modrých džínů s kovovými nýty na kapse, 16:9",
+  "irony_prompt": "A sturdy pair of blue denim trousers fills the frame hanging from a workshop hook, small metal rivets gleaming at every stress point on the pockets, fabric worn and patched from hard labour. Smaller and subordinate: a tailor's hammer and a small tin of rivets resting on a nearby workbench; a miner's pickaxe leaning against the wall beside the jeans; gold-panning dust settled on the workshop floor. MOOD: sturdy, practical, earned."
  },
  {
   "id": "us-a-prohibice",
@@ -465,7 +486,8 @@
   "quip_wrong": "Organizovaný zločin, ne čistší Amerika — stačilo zakázat alkohol a přes noc vznikl byznys výnosnější než leckterá legální firma.",
   "explanation": "Zákaz platil třináct let, od roku 1920 do 1933, a nakonec ho zrušil dodatek ústavy — jediný případ v americké historii, kdy byl jeden ústavní dodatek zcela odvolán jiným.",
   "about": "prohibici v USA",
-  "image_prompt": "Historizující fotorealistický snímek tajného baru speakeasy ve 20. letech, kouř a přítmí, 16:9"
+  "image_prompt": "Historizující fotorealistický snímek tajného baru speakeasy ve 20. letech, kouř a přítmí, 16:9",
+  "irony_prompt": "A quiet corner shop fills the frame with an ordinary front window, while behind a sliding bookshelf just visible through a half-open back door, an entire hidden room glows with clinking glasses and lively music. Smaller and subordinate: a delivery man wheeling in crates disguised as ordinary milk bottles; a lookout peering through a curtain crack at the street; a police officer strolling past outside, none the wiser. MOOD: sly, lively, conspiratorial."
  },
  {
   "id": "us-a-volebni-kolegium",
@@ -486,7 +508,8 @@
   "quip_wrong": "Menší počet hlasů a přesto vítězství — americký systém dokáže poslat do Bílého domu i kandidáta, kterého ve skutečnosti volilo míň lidí.",
   "explanation": "Naposledy se to stalo v letech 2016 a 2000 — v obou případech vítěz prohrál v celkovém součtu hlasů napříč zemí, ale vyhrál dost jednotlivých států na většinu ve volitelském kolegiu.",
   "about": "volitelském kolegiu",
-  "image_prompt": "Fotorealistický snímek mapy USA rozdělené na jednotlivé státy, studiové osvětlení, 16:9"
+  "image_prompt": "Fotorealistický snímek mapy USA rozdělené na jednotlivé státy, studiové osvětlení, 16:9",
+  "irony_prompt": "A giant old-fashioned balance scale fills the frame, one pan piled high and overflowing with countless small identical marbles representing the popular vote, sinking low, while the other pan holds just a handful of large gleaming gemstones representing states and sits higher but tips the whole scale. Smaller and subordinate: a puzzled onlooker scratching his head at the scale's odd balance; a map of stars scattered unevenly beneath the gemstone pan; a single feather drifting down to land decisively on the gemstone side. MOOD: puzzling, wry, deliberate."
  },
  {
   "id": "us-a-area51",
@@ -507,7 +530,8 @@
   "quip_wrong": "Area 51, ne UFO základna z filmů — stát přiznal jen to, že místo existuje, ne že tam skladuje mimozemšťany.",
   "explanation": "Area 51 sloužila hlavně k utajenému testování špionážních letounů jako U-2 nebo SR-71 Blackbird; právě tahle utajovaná letadla, ne mimozemšťané, stála za desítkami dobových hlášení o UFO v okolí.",
   "about": "základně Area 51",
-  "image_prompt": "Fotorealistický snímek pouštní vojenské základny obehnané plotem s výstražnými cedulemi, Nevada, 16:9"
+  "image_prompt": "Fotorealistický snímek pouštní vojenské základny obehnané plotem s výstražnými cedulemi, Nevada, 16:9",
+  "irony_prompt": "A remote desert airstrip fills the frame behind a tall chain-link fence with a single plain guard post, a sleek dark experimental aircraft just visible under a canvas cover in a hangar beyond. Smaller and subordinate: a folder of documents finally being stamped and handed through a window after decades on a shelf; a distant watchtower silhouette; tumbleweeds rolling along the perimeter fence. MOOD: secretive, dry, wry."
  },
  {
   "id": "us-k-havaj",
@@ -528,7 +552,8 @@
   "quip_wrong": "Zkus to jinak — leda bys chtěl přebrodit celý Pacifik, do Havaje suchou nohou nedojdeš.",
   "explanation": "Havaj se stala 50. a zatím posledním americkým státem v roce 1959; ostrovy pořád rostou, protože sopka Kilauea patří k nejaktivnějším na světě.",
   "about": "Havaji",
-  "image_prompt": "Fotorealistický snímek havajského ostrova s vulkanickou horou a tyrkysovým oceánem, jasný den, 16:9"
+  "image_prompt": "Fotorealistický snímek havajského ostrova s vulkanickou horou a tyrkysovým oceánem, jasný den, 16:9",
+  "irony_prompt": "A lush green volcanic island fills the frame surrounded entirely by sparkling blue ocean on every side, a single winding coastal road the only thing connecting one palm-fringed beach to the next. Smaller and subordinate: a surfer paddling out past gentle waves; a plume of steam rising from a distant volcano crater; a humpback whale breaching just offshore. MOOD: lush, tropical, serene."
  },
  {
   "id": "us-k-sekvoje",
@@ -549,7 +574,8 @@
   "quip_wrong": "Ne, hledáš sekvoj — strom tak obrovský, že vedle něj auto vypadá jako hračka pod vánočním stromkem.",
   "explanation": "Nejmohutnější žijící strom světa, sekvoj s přezdívkou General Sherman, roste v Sequoia National Parku a jen jeho kmen váží víc než sto plně naložených kamionů.",
   "about": "obřích sekvojích",
-  "image_prompt": "Fotorealistický snímek mohutné sekvoje v kalifornském lese, člověk pro měřítko u paty kmene, 16:9"
+  "image_prompt": "Fotorealistický snímek mohutné sekvoje v kalifornském lese, člověk pro měřítko u paty kmene, 16:9",
+  "irony_prompt": "A single colossal tree trunk fills the frame rising so wide and tall that its base alone could fit an entire small house, its reddish bark deeply furrowed and ancient. Smaller and subordinate: a line of hikers with arms linked failing to circle even half its base; a woodpecker tapping high up near a branch; sunlight filtering down in thin beams through the distant canopy far above. MOOD: colossal, ancient, humbling."
  },
  {
   "id": "us-k-jablecny-kolac",
@@ -570,7 +596,8 @@
   "quip_wrong": "Vedle — hledaný zákusek je jablečný koláč; zkus to příště podat se lžící zmrzliny navrch, třeba to pomůže uhodnout.",
   "explanation": "Jablka přitom nejsou v Americe původní — do Nového světa je přivezli evropští osadníci, domorodá jablka byla malá a trpká, na pečení se nehodila.",
   "about": "jablečném koláči",
-  "image_prompt": "Fotorealistický snímek čerstvě upečeného jablečného koláče na kuchyňském stole, teplé světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek čerstvě upečeného jablečného koláče na kuchyňském stole, teplé světlo, 16:9",
+  "irony_prompt": "A golden-brown round pie fills the frame with a lattice-woven crust of criss-crossing pastry strips, thick cinnamon-spiced apple filling bubbling up between the gaps. Smaller and subordinate: a scoop of vanilla ice cream melting slowly on the nearest slice; a small paring knife and apple peelings resting beside the pie tin; steam curling up from the fresh-cut wedge. MOOD: warm, homely, comforting."
  },
  {
   "id": "us-k-nasa",
@@ -591,7 +618,8 @@
   "quip_wrong": "NASA to je — ostatní firmy a agentury na Marsu zatím nezaparkovaly ani jedno kolo.",
   "explanation": "Vozítko Perseverance vezlo na palubě i malou vrtulník Ingenuity — první stroj, který kdy vzlétl na jiné planetě.",
   "about": "vesmírné agentuře NASA",
-  "image_prompt": "Fotorealistický snímek robotického vozítka na červeném povrchu Marsu, prašná krajina, 16:9"
+  "image_prompt": "Fotorealistický snímek robotického vozítka na červeném povrchu Marsu, prašná krajina, 16:9",
+  "irony_prompt": "A small six-wheeled robotic rover fills the frame rolling across a rust-red rocky landscape, its cameras and antenna mast tilted up curiously toward a pale pink sky. Smaller and subordinate: a tiny helicopter drone hovering just above one of its solar panels, dust kicking up beneath its blades; wheel tracks trailing behind across the dusty ground; a distant crater rim on the horizon. MOOD: curious, adventurous, vast."
  },
  {
   "id": "us-k-fotbal-hraci",
@@ -612,7 +640,8 @@
   "quip_wrong": "Zkus to jinak – branky, krátký zápas ani jediné kopnutí s tím nemají nic společného. Jde o to, že tým může mít v kádru mnohem víc hráčů, než kolik jich běhá po hřišti.",
   "explanation": "Na hřišti přitom hraje za každý tým najednou pořád stejný, docela malý počet hráčů – ne víc, ne míň.",
   "about": "americkém fotbalu",
-  "image_prompt": "Fotorealistický snímek týmu amerického fotbalu v sestavě na hřišti, stadionové osvětlení, 16:9"
+  "image_prompt": "Fotorealistický snímek týmu amerického fotbalu v sestavě na hřišti, stadionové osvětlení, 16:9",
+  "irony_prompt": "A packed team bench fills the frame with dozens of players in full padded gear sitting shoulder to shoulder, helmets in laps, watching intently, while out on the sunlit field beyond only a small, tidy cluster of players actually plays. Smaller and subordinate: a coach with a clipboard directing two players to swap places at the sideline; a water cooler surrounded by resting players; a scoreboard turned away so its face cannot be read. MOOD: organised, tactical, energetic."
  },
  {
   "id": "us-t-silicon-valley",
@@ -633,7 +662,8 @@
   "quip_wrong": "Vedle — jméno padlo kvůli křemíku v čipech; přejmenovat údolí podle firmy by mu vydrželo tak pár let, ne desítky.",
   "explanation": "V Silicon Valley dnes sídlí firmy jako Apple, Google nebo Meta; oblast se oficiálně nazývá Santa Clara Valley a leží kousek od San Franciska.",
   "about": "Silicon Valley",
-  "image_prompt": "Fotorealistický snímek moderních technologických kampusů v kalifornském Silicon Valley, slunečný den, 16:9"
+  "image_prompt": "Fotorealistický snímek moderních technologických kampusů v kalifornském Silicon Valley, slunečný den, 16:9",
+  "irony_prompt": "A gleaming grey crystal fills the frame standing enormous in a sunny orchard where fruit trees once grew, glowing faintly from within with tiny circuit-like patterns etched across its facets. Smaller and subordinate: a farmer's abandoned wooden fruit crate resting at its base, forgotten; a cluster of modern glass office buildings rising just behind the orchard's edge; a single ladybird crawling across one gleaming facet. MOOD: futuristic, sunlit, transformative."
  },
  {
   "id": "us-t-blues",
@@ -654,7 +684,8 @@
   "quip_wrong": "Mimo — kolébka blues leží na venkovském Jihu u Mississippi, ne tam, kam sis to v hlavě přesunul.",
   "explanation": "Blues vznikl z pracovních písní a spirituálů afroamerických farmářů koncem 19. století a o pár desetiletí později se stal základem rock and rollu i rhythm and blues.",
   "about": "vzniku blues",
-  "image_prompt": "Fotorealistický snímek osamělého kytaristy hrajícího blues na verandě na americkém Jihu, večerní světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek osamělého kytaristy hrajícího blues na verandě na americkém Jihu, večerní světlo, 16:9",
+  "irony_prompt": "A weathered acoustic guitar fills the frame resting against a porch post at dusk, a single string still vibrating after being plucked, its sound curling upward into a slow ribbon of deep blue mist that drifts across the whole sky. Smaller and subordinate: a pair of worn boots resting on the porch step below; cotton fields stretching out toward the river in the fading light; a harmonica resting on the guitar's body. MOOD: soulful, melancholic, warm."
  },
  {
   "id": "us-t-ellis-island",
@@ -675,7 +706,8 @@
   "quip_wrong": "Ne tak úplně — na ostrově se odbavovali přistěhovalci; fronty tam bývaly delší než na leckterém dnešním letišti.",
   "explanation": "Ellis Island leží v newyorském přístavu kousek od Sochy Svobody, kterou přistěhovalci po dlouhé plavbě přes oceán často spatřili jako úplně první.",
   "about": "Ellis Islandu",
-  "image_prompt": "Historizující fotorealistický snímek přistěhovalců čekajících v hale na Ellis Islandu, dokumentární styl, 16:9"
+  "image_prompt": "Historizující fotorealistický snímek přistěhovalců čekajících v hale na Ellis Islandu, dokumentární styl, 16:9",
+  "irony_prompt": "A grand red-brick immigration hall fills the frame with a soaring vaulted ceiling, a long winding queue of travelers in old-fashioned coats and headscarves carrying worn suitcases and bundles, faces turned hopefully toward tall arched windows. Smaller and subordinate: a small child clutching a single toy peeking out from a parent's coat; luggage tags fluttering from every bundle, left blank; a ferry visible through the window in the harbour beyond. MOOD: hopeful, weary, momentous."
  },
  {
   "id": "us-t-yosemite",
@@ -696,7 +728,8 @@
   "quip_wrong": "Vedle — ty stěny jsou rájem horolezců; leda bys tam chtěl jezdit na kole po kolmé skále.",
   "explanation": "Yosemite chránil zákonem už prezident Lincoln v roce 1864, dřív než vůbec vznikl pojem národní park; oficiálním národním parkem se stal až o šest let po Yellowstonu.",
   "about": "Yosemitském národním parku",
-  "image_prompt": "Fotorealistický snímek žulové stěny El Capitan v Yosemitském národním parku, ranní světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek žulové stěny El Capitan v Yosemitském národním parku, ranní světlo, 16:9",
+  "irony_prompt": "A sheer, towering granite cliff face fills the frame catching the last golden light of evening, its smooth vertical walls rising thousands of feet from a forested valley floor. Smaller and subordinate: a tiny climber clinging to a rope halfway up the enormous rock face, utterly dwarfed; a waterfall cascading down a neighbouring cliff; a valley meadow glowing green far below. MOOD: sheer, majestic, humbling."
  },
  {
   "id": "us-t-dolar-symboly",
@@ -717,7 +750,8 @@
   "quip_wrong": "Ne, hledáš oko v trojúhelníku nad pyramidou — orel na bankovce sedí jinde, ne vedle nedokončené stavby.",
   "explanation": "Oko i pyramida patří k Velké pečeti Spojených států; pyramida je záměrně nedokončená jako symbol toho, že budování země ještě neskončilo.",
   "about": "symbolech na dolarové bankovce",
-  "image_prompt": "Fotorealistický detailní snímek zadní strany americké jednodolarové bankovky s pyramidou a okem, 16:9"
+  "image_prompt": "Fotorealistický detailní snímek zadní strany americké jednodolarové bankovky s pyramidou a okem, 16:9",
+  "irony_prompt": "A single glowing eye fills the frame set inside a triangle, floating above an unfinished stone pyramid with its top section still missing, rays of soft golden light radiating outward from the eye into a pale sky. Smaller and subordinate: a stonemason's chisel and mallet left resting on the pyramid's incomplete top step; a small flock of birds circling the gap where the capstone should be; morning mist curling around the pyramid's base. MOOD: solemn, symbolic, quietly grand."
  },
  {
   "id": "us-a-bill-of-rights",
@@ -738,7 +772,8 @@
   "quip_wrong": "Ne, hledáš Bill of Rights — základní svobody, ne byrokratický ceník; tohle je ústavní text, ne účtenka ze státního úřadu.",
   "explanation": "Bill of Rights přijal Kongres roku 1791 poté, co několik států hrozilo, že bez záruky osobních svobod novou ústavu vůbec neratifikuje.",
   "about": "Listině práv (Bill of Rights)",
-  "image_prompt": "Fotorealistický snímek historického dokumentu ústavy USA pod sklem v archivu, tlumené osvětlení, 16:9"
+  "image_prompt": "Fotorealistický snímek historického dokumentu ústavy USA pod sklem v archivu, tlumené osvětlení, 16:9",
+  "irony_prompt": "A parchment scroll fills the frame unrolled on a wooden desk, ten identical wax seals pressed neatly in a row along its bottom edge, each one glowing faintly with its own soft colour representing a different freedom. Smaller and subordinate: a quill pen resting beside the scroll, still wet with ink; a pair of spectacles left folded on the desk; candlelight flickering warmly across the seals. MOOD: solemn, foundational, warm."
  },
  {
   "id": "us-a-aljaska-koupe",
@@ -759,7 +794,8 @@
   "quip_wrong": "Vedle — Aljašku si USA koupily, ne dobyly ani nezdědily; faktura na 7,2 milionu dolarů má pořád platnou adresu doručení Rusko.",
   "explanation": "Obchod tehdejší tisk vysmíval jako „Sewardovu bláznovinu“ podle ministra zahraničí, co ho dojednal — až desítky let po podpisu se na Aljašce objevilo zlato a později ropa.",
   "about": "koupi Aljašky",
-  "image_prompt": "Fotorealistický snímek zasněžené aljašské krajiny s ledovcem, studené světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek zasněžené aljašské krajiny s ledovcem, studené světlo, 16:9",
+  "irony_prompt": "A vast snowy landscape fills the frame being handed over on a giant old-fashioned scale, one pan holding a modest stack of gold coins and the other tipping down heavily under the sheer weight of glaciers, mountains and forest. Smaller and subordinate: two officials shaking hands stiffly beside the scale, one looking faintly smug and the other faintly embarrassed; a polar bear watching curiously from atop a snowy ridge; a raven perched on the scale's arm. MOOD: wry, historic, vast."
  },
  {
   "id": "us-a-wall-street",
@@ -780,7 +816,8 @@
   "quip_wrong": "Ne, hledáš dřevěnou hradbu Nizozemců — žádného bankéře Walla čekat nemusíš, ten si tu ulici nikdy nezamluvil.",
   "explanation": "Hradbu Nizozemci postavili v roce 1653 kvůli obraně osady Nový Amsterdam; dnes na stejném místě stojí newyorská burza, jedna z největších na světě.",
   "about": "Wall Street",
-  "image_prompt": "Fotorealistický snímek newyorské Wall Street s budovou burzy, ranní ruch, 16:9"
+  "image_prompt": "Fotorealistický snímek newyorské Wall Street s budovou burzy, ranní ruch, 16:9",
+  "irony_prompt": "A tall weathered wooden palisade wall fills the frame cutting straight across a busy cobbled street, with dense modern glass skyscrapers rising directly behind it as if grown right out of the old timber. Smaller and subordinate: a horse-drawn cart from an earlier century passing beneath the shadow of a modern skyscraper; a bull statue standing proudly at the wall's base; ticker tape drifting down from an upper window. MOOD: layered, bustling, historic."
  },
  {
   "id": "us-a-texas-nezavislost",
@@ -801,7 +838,8 @@
   "quip_wrong": "Ne, hledáš samostatnou republiku Texas — Mexiko o ni tou dobou přišlo, ne že by si ji drželo dál.",
   "explanation": "Nezávislost si Texas vybojoval válkou s Mexikem, ve které padla i posádka pevnosti Alamo; dodnes se jí v Texasu připomíná heslem „Remember the Alamo“.",
   "about": "texaské nezávislosti",
-  "image_prompt": "Historizující fotorealistický snímek pevnosti Alamo v Texasu za soumraku, 16:9"
+  "image_prompt": "Historizující fotorealistický snímek pevnosti Alamo v Texasu za soumraku, 16:9",
+  "irony_prompt": "A weathered stone mission fortress fills the frame standing alone under a wide starry sky, a single lantern glowing steadily in one window, its walls scarred but still standing tall and proud. Smaller and subordinate: a lone rider silhouetted on the horizon approaching at a gallop; a flag with a single plain star hanging still in the windless night; cactus silhouettes dotting the moonlit plain. MOOD: solemn, resolute, vast."
  },
  {
   "id": "us-k-bizon-narodni-zvire",
@@ -823,7 +861,8 @@
   "explanation": "Dospělý samec bizona může vážit skoro tunu, a přesto dokáže vyběhnout rychlostí přes 50 kilometrů v hodině.",
   "source_url": "https://en.wikipedia.org/wiki/American_bison",
   "image_prompt": "Fotorealistický snímek stáda amerických bizonů pasoucích se na travnaté prérii Velkých plání za východu slunce, 16:9",
-  "about": "americkém bizonovi"
+  "about": "americkém bizonovi",
+  "irony_prompt": "A massive shaggy-maned bison fills the frame thundering across an open golden prairie, its huge humped shoulders powering forward at full gallop, dust kicking up behind its hooves. Smaller and subordinate: a small herd following close behind, matching its pace; a prairie dog popping up from a burrow to watch it pass; grass rippling in waves ahead of the stampede. MOOD: powerful, wild, thundering."
  },
  {
   "id": "us-k-den-nezavislosti-ohnostroj",
@@ -845,6 +884,7 @@
   "explanation": "Tradice slavit tento den ohňostroji je téměř stejně stará jako svátek samotný - první velké oslavy s rachejtlemi se konaly už v roce 1777.",
   "source_url": "https://en.wikipedia.org/wiki/Independence_Day_(United_States)",
   "image_prompt": "Fotorealistický snímek barevného ohňostroje nad večerním americkým městem 4. července, s davem lidí sledujícím show, 16:9",
-  "about": "Dni nezávislosti"
+  "about": "Dni nezávislosti",
+  "irony_prompt": "A brilliant burst of red, white and blue fireworks fills the frame exploding high above a packed evening picnic blanket scene, their glowing trails reflected in a nearby lake. Smaller and subordinate: a family cheering upward with sparklers held aloft; a picnic basket spilling watermelon slices onto the blanket; a dog covering its ears with its paws, unimpressed. MOOD: jubilant, dazzling, festive."
  }
 ]
