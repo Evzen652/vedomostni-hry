@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maasai_Mara",
   "source_card": "ke-mista-masai-mara",
   "image_prompt": "Fotorealistický širokoúhlý snímek stáda pakoňů překračujících řeku v Masai Mara, prašný oblak, dramatické světlo, 16:9",
-  "about": "migraci pakoňů v Masai Maře"
+  "about": "migraci pakoňů v Masai Maře",
+  "irony_prompt": "A vast golden savanna fills the frame with an unbroken river of wildebeest stretching from one horizon to the other, dust rising in a long low cloud behind the moving herd. Smaller and subordinate: a lone lion watching from a termite mound, dwarfed by the sheer scale of the herd; a safari jeep parked respectfully at a distance; vultures circling high above the dust cloud. MOOD: sweeping, thunderous, vast."
  },
  {
   "id": "ke-q-rift-valley",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kalenjin_people",
   "source_card": "ke-priroda-kalendzin",
   "image_prompt": "Fotorealistický širokoúhlý snímek vysočiny keňské Rift Valley za úsvitu, kopcovitá krajina, ranní mlha v údolích, 16:9",
-  "about": "vysokohorském tréninku v keňské Rift Valley"
+  "about": "vysokohorském tréninku v keňské Rift Valley",
+  "irony_prompt": "A runner fills the frame striding effortlessly along a high dirt trail with thin misty air visibly swirling around their lungs, breathing steady and calm despite the visible altitude haze. Smaller and subordinate: a second runner struggling and gasping for breath just behind, clearly unused to the thin air; a herd of gazelle grazing on the high plateau; distant valley floor stretching far below. MOOD: crisp, disciplined, elevated."
  },
  {
   "id": "ke-q-masajove",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maasai_people",
   "source_card": "ke-lide-masajove",
   "image_prompt": "Fotorealistický snímek masajského muže v tradičním červeném rouchu (šúka) uprostřed stáda dobytka, savana v pozadí, 16:9",
-  "about": "Masajích a jejich způsobu života"
+  "about": "Masajích a jejich způsobu života",
+  "irony_prompt": "A herder fills the frame standing tall with a long wooden staff among a loose herd of cattle grazing on golden grassland, red-and-blue checked cloth draped over one shoulder. Smaller and subordinate: a calf nuzzling close to its mother; a second herder walking the herd's far edge; acacia trees dotting the horizon under a wide sky. MOOD: proud, pastoral, timeless."
  },
  {
   "id": "ke-q-ugali",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ugali",
   "source_card": "ke-jidlo-ugali",
   "image_prompt": "Fotorealistický snímek hromádky bílého ugali vedle grilovaného masa a zeleninové omáčky na talíři, 16:9",
-  "about": "ugali"
+  "about": "ugali",
+  "irony_prompt": "A round wooden pot fills the frame with a thick, smooth pale-yellow cornmeal mound being stirred by a long wooden paddle, steam rising from its dense, stiff surface. Smaller and subordinate: a plate nearby already holding a firm sliced wedge of the same mound; a pot of leafy greens simmering just beside it; a child's hand reaching eagerly for the plate. MOOD: hearty, staple, homely."
  },
  {
   "id": "ke-q-mau-mau",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mau_Mau_rebellion",
   "source_card": "ke-historie-nezavislost",
   "image_prompt": "Historizující fotorealistický snímek keňské vesnice v koloniální éře, sépiové tóny, dokumentární styl, 16:9",
-  "about": "povstání Mau Mau"
+  "about": "povstání Mau Mau",
+  "irony_prompt": "A dense forest clearing fills the frame with a single narrow forest path leading out toward a bright, open horizon where a new flag-shaped patch of colour glows in the distance. Smaller and subordinate: a weathered wooden oath stone resting quietly among the undergrowth, moss creeping over it; a bird taking flight from the forest canopy toward the open horizon; morning light breaking through the trees along the path. MOOD: solemn, resolute, dawning."
  },
  {
   "id": "ke-q-korale",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maasai_people",
   "source_card": "ke-kultura-korale",
   "image_prompt": "Fotorealistický detailní snímek pestrobarevných masajských korálkových náhrdelníků a náramků na tmavém pozadí, 16:9",
-  "about": "masajských korálkových šperkách"
+  "about": "masajských korálkových šperkách",
+  "irony_prompt": "A woman's neck and shoulders fill the frame adorned with layers of intricately beaded collars in bold reds, blues and whites, each row a slightly different pattern stacked in perfect concentric circles. Smaller and subordinate: a second, smaller beaded bracelet on her wrist in a matching but distinct pattern; a beading tray with loose colourful beads sorted by colour nearby; sunlight catching every bead's tiny facet. MOOD: intricate, proud, vivid."
  },
  {
   "id": "ke-q-kisii",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Soapstone_mining_in_Tabaka,_Kenya",
   "source_card": "ke-umeni-kisii",
   "image_prompt": "Fotorealistický snímek řemeslníka vyřezávajícího sochu z měkkého mastku v dílně v Tabace, sochy na pracovním stole, 16:9",
-  "about": "řezbářství z mastku v Kisii"
+  "about": "řezbářství z mastku v Kisii",
+  "irony_prompt": "A pale greenish-grey stone sculpture fills the frame taking shape on a carver's workbench, smooth curved forms emerging from the rough block under careful chisel strokes. Smaller and subordinate: a pile of soft stone shavings curling on the workshop floor; a row of finished sculptures on a nearby shelf, each a different smooth shape; sunlight glinting off the polished surface already achieved. MOOD: tactile, patient, smooth."
  },
  {
   "id": "ke-q-bezci",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kalenjin_people",
   "source_card": "ke-sport-bezci",
   "image_prompt": "Fotorealistický snímek vytrvalostních běžců trénujících na horské cestě v keňské vysočině, ranní světlo, 16:9",
-  "about": "Kalendžinech a jejich běžecké nadvládě"
+  "about": "Kalendžinech a jejich běžecké nadvládě",
+  "irony_prompt": "A runner fills the frame striding powerfully across a dirt track at dawn, and stretching out behind in a long faded line are countless fainter echoes of other runners from the very same village, generation after generation training on the exact same path. Smaller and subordinate: a coach with a stopwatch timing from the trackside; a row of running shoes lined up neatly by a fence; mist rising off the high plateau grass. MOOD: relentless, proud, dawning."
  },
  {
   "id": "ke-q-svahilstina",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Swahili_language",
   "source_card": "ke-jazyk-svahilstina",
   "image_prompt": "Fotorealistický snímek otevřeného slovníku svahilštiny, teplé světlo, bez lidí, 16:9",
-  "about": "svahilštině jako obchodním jazyce"
+  "about": "svahilštině jako obchodním jazyce",
+  "irony_prompt": "A single warm ribbon of speech fills the frame flowing from a market trader's mouth and branching into countless smaller ribbons that spread across a wide painted map reaching into several neighbouring countries. Smaller and subordinate: customers from clearly different regions all nodding in understanding at the same ribbon; a dhow boat sailing along the coast beneath the branching lines; a caravan of camels following one of the inland branches. MOOD: far-reaching, warm, connective."
  },
  {
   "id": "ke-t-nairobi",
@@ -215,7 +224,8 @@
   "quip_correct": "Nairobi je jediné hlavní město na světě, kde vidíš lvy a mrakodrapy v jednom záběru.",
   "quip_wrong": "Skoro, ale ne tak úplně — Mombasa je přístav, Kisumu leží u jezera Viktoria, Zanzibar je ostrov jinam patřící, hlavní město Keni je Nairobi.",
   "explanation": "Nairobi je největší město Keni s více než 4 miliony obyvatel. Leží ve výšce asi 1700 metrů, takže vzduch je příjemně chladnější, než by čekal kdokoli, kdo ví, kde leží rovník.",
-  "about": "Nairobi"
+  "about": "Nairobi",
+  "irony_prompt": "A modern city skyline fills the frame rising directly at the edge of open golden savanna, skyscrapers and grazing giraffes sharing the very same horizon line. Smaller and subordinate: a matatu minibus painted in wild colours weaving through city traffic; a lion resting in the grass just beyond the last office tower; clouds catching the high-altitude light. MOOD: striking, layered, cool."
  },
  {
   "id": "ke-k-zebra",
@@ -235,7 +245,8 @@
   "quip_correct": "Bod pro tebe! Mouchy prý mají na pruhovaném vzoru problém se vůbec pořádně posadit.",
   "quip_wrong": "Skoro, ale ne tak úplně — sluneční opálení, noční vidění, mizející pruhy s věkem, žádná z těch teorií neplatí, zebřin vzor slouží proti dravcům a hmyzu.",
   "explanation": "Každá zebra má jedinečný vzor pruhů jako otisk prstu — žádné dvě nejsou stejné. Ve stádě se pruhy slívají dohromady, takže predátor hůře rozpozná jednotlivce.",
-  "about": "zebrách"
+  "about": "zebrách",
+  "irony_prompt": "A zebra fills the frame standing proudly in tall grass, its bold black-and-white stripes seeming to shimmer and blur at the edges when a second and third zebra crowd in close beside it, all their stripes merging into one confusing pattern. Smaller and subordinate: a lion squinting in confusion at the merged herd from a distance; a mosquito veering away from the dazzling pattern; grass swaying gently around their legs. MOOD: dazzling, clever, playful."
  },
  {
   "id": "ke-k-girafa",
@@ -255,7 +266,8 @@
   "quip_correct": "Trefa do černého! Ten dlouhý krk má stejně obratlů jako ty — jen sedm, jenže pořádně natažených.",
   "quip_wrong": "Kopce, prach, souboje krkem — zajímavé nápady, ale dlouhý krk slouží žirafě hlavně k snadnému obědu vysoko v korunách.",
   "explanation": "Žirafa je nejvyšší živočich na Zemi. Její fialový jazyk je dlouhý přes 40 centimetrů — dokonale obratný na trhání listů z trnitých větví akácií.",
-  "about": "žirafách"
+  "about": "žirafách",
+  "irony_prompt": "A towering giraffe fills the frame stretching its impossibly long neck upward, lips just reaching a cluster of leaves at the very top of a thorny acacia tree. Smaller and subordinate: a shorter animal below looking enviously up at the leaves it can't reach; a bird perched calmly on the giraffe's ossicone; dappled shade falling across its patterned coat. MOOD: graceful, reaching, sunny."
  },
  {
   "id": "ke-k-chai",
@@ -275,7 +287,8 @@
   "quip_correct": "Bystrá hlava! Většina keňského čaje se prodá v aukci a pak cestuje do šálků po celém světě.",
   "quip_wrong": "Ledový se sodou, zelený jako japonský, bez kofeinu — to keňský čaj rozhodně není, ten je silný, černý a sytě červený.",
   "explanation": "Keňa je jedním z největších světových producentů čaje. Keňský černý čaj roste ve výškách kolem 2000 metrů v Rift Valley a má výraznou chuť i barvu.",
-  "about": "keňském čaji"
+  "about": "keňském čaji",
+  "irony_prompt": "A glass teapot fills the frame pouring a stream of deep, rich reddish-brown tea into a small cup, steam curling up richly from the vivid colour. Smaller and subordinate: a tea plantation's neat green rows visible through a nearby window; a small jug of milk waiting beside the cup; a spoon resting on the saucer. MOOD: rich, vivid, warm."
  },
  {
   "id": "ke-k-mount-kenya",
@@ -296,7 +309,8 @@
   "quip_wrong": "Mount Kenya, ne Kilimandžáro (to leží v Tanzanii), Rift Valley ani Mount Elgon. Slavnější soused za hranicemi bere výšku, ale keňský rekord drží hora, po které se jmenuje celá země.",
   "explanation": "I když Mount Kenya leží skoro přesně na rovníku, na vrcholu má ledovce — kvůli oteplování ale rychle mizí.",
   "about": "hoře Mount Kenya",
-  "image_prompt": "Fotorealistický letecký snímek zasněženého vrcholu hory Mount Kenya nad africkou savanou, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek zasněženého vrcholu hory Mount Kenya nad africkou savanou, 16:9",
+  "irony_prompt": "A jagged snow-capped peak fills the frame rising dramatically above a ring of green forested foothills, its icy summit catching the very first light of dawn. Smaller and subordinate: a climber's tiny figure on a distant ridge, roped up and dwarfed by the scale; an eagle gliding level with the snowline; clouds pooling in the valleys far below. MOOD: majestic, crisp, towering."
  },
  {
   "id": "ke-k-plamenaci",
@@ -317,7 +331,8 @@
   "quip_wrong": "Jezero Nakuru, ne Viktoriino jezero, jezero Turkana ani Indický oceán. Plameňáci si prostě vybrali adresu, kterou si žádný cestovní fotograf nenechá ujít.",
   "explanation": "Plameňáci mají růžové peří díky barvivům z drobných korýšů a řas, které vyfiltrují z vody.",
   "about": "plameňácích na jezeře Nakuru",
-  "image_prompt": "Fotorealistický snímek tisíců růžových plameňáků na hladině jezera Nakuru v Keni, 16:9"
+  "image_prompt": "Fotorealistický snímek tisíců růžových plameňáků na hladině jezera Nakuru v Keni, 16:9",
+  "irony_prompt": "A vast flock of pink flamingos fills the frame wading through a shallow lake, their reflections doubling the flock perfectly on the glassy pink-tinged water. Smaller and subordinate: a single flamingo taking flight, wings spread wide against the crowd; a fish eagle watching from a lakeside tree; morning mist rising softly off the water's surface. MOOD: vivid, serene, abundant."
  },
  {
   "id": "ke-k-slon-amboseli",
@@ -338,7 +353,8 @@
   "quip_wrong": "Amboseli, ne Masai Mara, Tsavo ani Nairobi National Park. Ten slavný snímek slona s Kilimandžárem v pozadí zná internet přesně díky téhle adrese.",
   "explanation": "Amboseli je domovem jedněch z posledních volně žijících slonů s opravdu obřími kly, tzv. „tuskerů“.",
   "about": "slonech v Amboseli",
-  "image_prompt": "Fotorealistický snímek stáda slonů v parku Amboseli s horou Kilimandžáro v pozadí, 16:9"
+  "image_prompt": "Fotorealistický snímek stáda slonů v parku Amboseli s horou Kilimandžáro v pozadí, 16:9",
+  "irony_prompt": "A family of elephants fills the frame walking calmly across an open plain, a single towering snow-capped mountain rising directly behind them, seeming to sit right on their backs from this angle. Smaller and subordinate: a baby elephant trotting to keep up between two adults; dust kicking up gently from their footsteps; birds resting on one elephant's broad back. MOOD: majestic, striking, serene."
  },
  {
   "id": "ke-k-matatu",
@@ -359,7 +375,8 @@
   "quip_wrong": "Matatu, ne boda-boda (to je motorkový taxík), tuk-tuk (spíš asijská trojkolka) ani žádný „safari van“. Pomalovaný minibus s vlastním jménem je ryze keňská značka.",
   "explanation": "Matatu bývají polepené hesly i portréty celebrit a vybavené hlasitými reproduktory – řidiči si tak navzájem konkurují o nápadnost.",
   "about": "keňských matatu",
-  "image_prompt": "Fotorealistický snímek pestrobarevně pomalovaného minibusu matatu na ulici v Nairobi, 16:9"
+  "image_prompt": "Fotorealistický snímek pestrobarevně pomalovaného minibusu matatu na ulici v Nairobi, 16:9",
+  "irony_prompt": "A boxy minibus fills the frame painted edge to edge in wild swirling colours and cartoon-style patterns, chrome details gleaming, giant speakers visible mounted on its roof. Smaller and subordinate: a queue of passengers waving it down at a busy roadside stop; a conductor leaning out the open door, arm waving; music-note-shaped decals scattered playfully across its bumper. MOOD: loud, flamboyant, energetic."
  },
  {
   "id": "ke-t-nyama-choma",
@@ -380,7 +397,8 @@
   "quip_wrong": "Nyama choma, ne ugali (to je příloha), sukuma wiki (zelenina) ani chapati (placka). Maso na grilu má v Keni svoje vlastní jméno, a hlavně vlastní neděli.",
   "explanation": "Maso se často griluje vcelku i s kostí, teprve pak se na dřevěném prkně seká na kousky přímo před hosty.",
   "about": "nyama choma",
-  "image_prompt": "Fotorealistický snímek grilovaného masa nyama choma na dřevěném uhlí, 16:9"
+  "image_prompt": "Fotorealistický snímek grilovaného masa nyama choma na dřevěném uhlí, 16:9",
+  "irony_prompt": "A whole cut of meat fills the frame sizzling over open charcoal flames on a simple metal grill, its surface deeply charred and glistening. Smaller and subordinate: a wooden chopping board and large knife waiting nearby, ready to carve it into pieces; a circle of friends' silhouettes gathered close, plates in hand; smoke curling up into the evening sky. MOOD: sizzling, communal, festive."
  },
  {
   "id": "ke-t-lamu",
@@ -401,7 +419,8 @@
   "quip_wrong": "Lamu, ne Mombasa, Malindi ani Diani. Tahle uličky jsou tak úzké, že by se tam auto akorát zaseklo mezi zdmi.",
   "explanation": "Staré město Lamu je zapsané na seznamu UNESCO jako nejstarší a nejlépe dochované swahilské osídlení východní Afriky.",
   "about": "ostrově Lamu",
-  "image_prompt": "Fotorealistický snímek úzké uličky ve starém městě Lamu s oslem nesoucím náklad, 16:9"
+  "image_prompt": "Fotorealistický snímek úzké uličky ve starém městě Lamu s oslem nesoucím náklad, 16:9",
+  "irony_prompt": "A narrow stone-walled alley fills the frame winding between tall coral-block buildings, an old donkey plodding calmly along the lane laden with woven baskets. Smaller and subordinate: an intricately carved wooden door standing open at one building's entrance; a second donkey resting in a patch of shade; laundry strung between two upper balconies. MOOD: quaint, timeless, shaded."
  },
  {
   "id": "ke-t-wangari-maathai",
@@ -422,7 +441,8 @@
   "quip_wrong": "Wangari Maathai, ne Wangechi Mutu, Ngozi Okonjo-Iweala ani Graça Machel. Tahle dáma vzala boj o keňské lesy doslova do vlastních rukou, strom po stromu.",
   "explanation": "V roce 2004 se stala první Afričankou, která získala Nobelovu cenu míru — mimo jiné právě za práci s hnutím Green Belt.",
   "about": "hnutí Green Belt",
-  "image_prompt": "Fotorealistický snímek skupiny žen sázejících stromky na keňském kopci, 16:9"
+  "image_prompt": "Fotorealistický snímek skupiny žen sázejících stromky na keňském kopci, 16:9",
+  "irony_prompt": "A single hand fills the frame planting a small green sapling in freshly turned earth, and stretching out behind it across the whole landscape is an enormous, thriving forest that clearly grew from countless identical plantings just like this one. Smaller and subordinate: a small gold medal on a ribbon resting on the ground beside the hand; a group of volunteers planting more saplings along the tree line; birds already nesting in the older, taller trees further back. MOOD: hopeful, growing, quietly triumphant."
  },
  {
   "id": "ke-t-mpesa",
@@ -443,7 +463,8 @@
   "quip_wrong": "M-Pesa, ne PayBox, Safaricash ani KenyaPay — ty poslední dvě znějí chytře vymyšleně, protože přesně to jsou, vymyšlené. Peníze v Keni dnes běžně putují SMSkou, bez jediné bankovní pobočky.",
   "explanation": "Přes M-Pesu dnes v Keni protečou platby v hodnotě, která odpovídá velké části celého hrubého domácího produktu země.",
   "about": "mobilních platbách M-Pesa",
-  "image_prompt": "Fotorealistický snímek ženy na keňském tržišti platící za nákup pomocí mobilního telefonu, 16:9"
+  "image_prompt": "Fotorealistický snímek ženy na keňském tržišti platící za nákup pomocí mobilního telefonu, 16:9",
+  "irony_prompt": "A simple mobile phone fills the frame glowing in a market vendor's hand, a soft stream of golden coin-shaped light flowing directly from its screen into a customer's open palm, no paper money or bank counter anywhere in sight. Smaller and subordinate: a second phone nearby catching the very same golden stream in return; a basket of vegetables changing hands at the same moment; a queue of customers waiting their turn, phones already out. MOOD: seamless, modern, practical."
  },
  {
   "id": "ke-a-turkana-boy",
@@ -464,7 +485,8 @@
   "quip_wrong": "Turkana Boy, ne Lucy (ta leží v Etiopii), Java Man (Indonésie) ani Peking Man (Čína). Jméno prozradí i adresu — kostra se našla u jezera Turkana v Keni, ne jinde.",
   "explanation": "Kostra je stará asi 1,5 milionu let a dochovalo se z ní víc než 100 kostí, díky čemuž je jedním z nejúplnějších nálezů raného člověka na světě.",
   "about": "nálezu Turkana Boy",
-  "image_prompt": "Fotorealistický snímek vykopávek fosilních kostí u jezera Turkana v keňské poušti, 16:9"
+  "image_prompt": "Fotorealistický snímek vykopávek fosilních kostí u jezera Turkana v keňské poušti, 16:9",
+  "irony_prompt": "A carefully arranged set of ancient bones fills the frame laid out in perfect anatomical order on a dark velvet cloth in a museum case, remarkably complete from skull to foot. Smaller and subordinate: a researcher's gloved hand adjusting a small support beneath one rib, utterly absorbed; a magnifying glass resting on the case's edge; soft directional light picking out the smooth, aged bone surface. MOOD: reverent, meticulous, profound."
  },
  {
   "id": "ke-a-kipchoge",
@@ -485,7 +507,8 @@
   "quip_wrong": "Vídeň, ne Berlín, Londýn ani Praha. Trasu i podmínky vybírali tak pečlivě, že ostatním maratonským metropolím nezbylo nic než přihlížet.",
   "explanation": "Čas se ale nezapisuje jako oficiální světový rekord — pravidla mezinárodní atletiky vylučují závody se střídajícími se tempaři, jaké měl Kipchoge k dispozici ve Vídni.",
   "about": "rekordu Eliuda Kipchoge",
-  "image_prompt": "Fotorealistický snímek běžce Eliuda Kipchoge obklopeného tempaři při běhu ulicemi Vídně, 16:9"
+  "image_prompt": "Fotorealistický snímek běžce Eliuda Kipchoge obklopeného tempaři při běhu ulicemi Vídně, 16:9",
+  "irony_prompt": "A runner fills the frame crossing a finish line arch in a grand European city square, arms raised, a stopwatch frozen on a nearby timing post showing a number just under a significant round mark. Smaller and subordinate: a pace car with a large digital clock rolling steadily just ahead of him; a small crowd of official timekeepers with clipboards, faces focused; confetti beginning to fall around the arch. MOOD: historic, triumphant, electric."
  },
  {
   "id": "ke-a-jomo-kenyatta",
@@ -506,7 +529,8 @@
   "quip_wrong": "Od ozdobného opasku, který nosil, ne od rodné vesnice, otce ani britského guvernéra. Nejmocnější muž Keni si politickou značku doslova uvázal kolem pasu.",
   "explanation": "Narodil se pod jménem Kamau; příjmení Kenyatta si podle svého zvyku přidal až v dospělosti.",
   "about": "prezidentu Jomo Kenyattovi",
-  "image_prompt": "Fotorealistický portrétní snímek muže v tradičním keňském korálkovém opasku, 16:9"
+  "image_prompt": "Fotorealistický portrétní snímek muže v tradičním keňském korálkovém opasku, 16:9",
+  "irony_prompt": "An ornately beaded leather belt fills the frame hanging proudly on a wall hook, its intricate pattern catching the light, clearly the most striking accessory in an otherwise simple room. Smaller and subordinate: a presidential seal resting on a desk below it, unrelated in origin to the belt itself; a young man's portrait sketch pinned nearby showing him wearing the very same belt years earlier; morning light falling across the leather. MOOD: proud, distinctive, quietly symbolic."
  },
  {
   "id": "ke-t-mombasa",
@@ -527,7 +551,8 @@
   "quip_wrong": "Skoro, ale ne tak úplně — Kisumu leží u jezera Viktoria, Nakuru ve vysočině a Malindi je menší sousední město, přístavní velikán na pobřeží se jmenuje Mombasa.",
   "explanation": "Mombasa leží na ostrově spojeném s pevninou mosty a silnicemi a je hlavním námořním přístavem nejen pro Keňu, ale i pro sousední vnitrozemské státy jako Uganda nebo Jižní Súdán.",
   "about": "Mombase",
-  "image_prompt": "Fotorealistický letecký snímek přístavu Mombasa s loděmi a starým městem u pobřeží Indického oceánu, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek přístavu Mombasa s loděmi a starým městem u pobřeží Indického oceánu, 16:9",
+  "irony_prompt": "A busy harbour city fills the frame built across a coastal island connected to the mainland by long causeway bridges, dhows and cargo ships sharing the same blue water. Smaller and subordinate: a line of trucks crossing one of the bridges loaded with goods bound inland; a fisherman casting a net from the shore; palm trees lining the waterfront promenade. MOOD: bustling, coastal, connective."
  },
  {
   "id": "ke-k-koralovy-utes",
@@ -548,7 +573,8 @@
   "quip_wrong": "Sopka, sloni, ruiny — zajímavé nápady, ale tenhle park chrání svět pod hladinou, ne na souši.",
   "explanation": "Malindi Marine Park vznikl v roce 1968 a byl vůbec prvním mořským národním parkem v Africe — dal tak vzor ochraně korálových útesů po celém kontinentu.",
   "about": "mořském parku Malindi",
-  "image_prompt": "Fotorealistický podvodní snímek korálového útesu s barevnými rybami u keňského pobřeží, 16:9"
+  "image_prompt": "Fotorealistický podvodní snímek korálového útesu s barevnými rybami u keňského pobřeží, 16:9",
+  "irony_prompt": "A vivid underwater coral garden fills the frame in every colour imaginable, branching formations rising from a sandy seabed toward sunlit shallows above. Smaller and subordinate: a clownfish darting between two anemones; a sea turtle gliding past at the edge of frame; shafts of sunlight piercing down through the clear warm water. MOOD: vivid, thriving, warm."
  },
  {
   "id": "ke-t-kanga",
@@ -569,7 +595,8 @@
   "quip_wrong": "Zlaté nitky, jméno, datum narození — hezké nápady, ale kanga mluví jinak, píše se na ni chytré swahilské rčení.",
   "explanation": "Kanga se od podobné látky kitenge liší právě tím textem — nosí se jako sukně, šátek nebo i na miminko přivázané na zádech.",
   "about": "látce kanga",
-  "image_prompt": "Fotorealistický snímek pestrobarevných látek kanga s potiskem rozložených na tržním stánku, 16:9"
+  "image_prompt": "Fotorealistický snímek pestrobarevných látek kanga s potiskem rozložených na tržním stánku, 16:9",
+  "irony_prompt": "A tall stack of folded cloths fills the frame piled high on a market stall, each one a different vivid colour and bold pattern, tightly folded so only their solid-coloured centres show while their busier printed borders stay tucked completely out of sight in the fold. Smaller and subordinate: a vendor's hand pulling one out to unfurl for a customer, just beginning to open at the corner; a woman nearby wrapping a plain-coloured section around a baby on her back; morning market bustle all around. MOOD: vibrant, personal, bustling."
  },
  {
   "id": "ke-k-nosorozec",
@@ -590,7 +617,8 @@
   "quip_wrong": "Zkus si to představit jinak – téhle nosorožčí rodiny je na světě už jen pár kusů, a právě proto ji dnem i nocí hlídají ozbrojení strážci.",
   "explanation": "Poslední samec Sudán zemřel v Ol Pejetě v roce 2018 – vědci teď zkoušejí zachránit poddruh alespoň pomocí zmražených embryí a náhradních matek z příbuzného jižního bílého nosorožce.",
   "about": "severních bílých nosorožcích",
-  "image_prompt": "Fotorealistický snímek bílého nosorožce se strážcem v rezervaci Ol Pejeta, 16:9"
+  "image_prompt": "Fotorealistický snímek bílého nosorožce se strážcem v rezervaci Ol Pejeta, 16:9",
+  "irony_prompt": "A massive grey rhinoceros fills the frame grazing calmly in golden grassland at dusk, utterly at ease under the watchful presence of two alert rangers standing a respectful distance away with binoculars raised. Smaller and subordinate: a second, smaller rhino grazing close by, equally calm; a radio handset clipped to one ranger's shoulder, its light blinking steadily; the last light of sunset catching the rhino's thick hide. MOOD: watchful, protective, calm."
  },
  {
   "id": "ke-t-fotbal",
@@ -611,7 +639,8 @@
   "quip_wrong": "Simba Warriors, Safari Eagles, Rift Lions — hezky znějící vymyšlené názvy, ta skutečná přezdívka vzala slovo přímo ze státního hesla.",
   "explanation": "Slovo harambee se v Keni používá i mimo fotbal — označuje tradiční setkání, na kterém lidé společně vybírají peníze třeba na stavbu školy nebo pomoc sousedovi.",
   "about": "reprezentaci Harambee Stars",
-  "image_prompt": "Fotorealistický snímek keňských fotbalistů v dresech na stadionu při zápase, 16:9"
+  "image_prompt": "Fotorealistický snímek keňských fotbalistů v dresech na stadionu při zápase, 16:9",
+  "irony_prompt": "A football player fills the frame leaping high to head a ball at the peak of a jump, plain green kit with no marking of any kind, a stadium crowd roaring behind in a blur of colour. Smaller and subordinate: teammates sprinting into position below, arms raised; a coach on the sideline gesturing energetically; a scoreboard turned away so its face cannot be read. MOOD: energetic, spirited, electric."
  },
  {
   "id": "ke-t-benga",
@@ -632,7 +661,8 @@
   "quip_wrong": "Pobřeží, hory, velkoměsto — benga má úplně jinou adresu, kolébka leží u jezera Viktoria.",
   "explanation": "Benga se rozšířila hlavně od 60. let 20. století z rádií po celé Keni a stala se jedním ze základů, ze kterých později vyrostla velká část moderní keňské populární hudby.",
   "about": "hudebním stylu benga",
-  "image_prompt": "Fotorealistický snímek keňského kytaristy hrajícího benga hudbu na pódiu, 16:9"
+  "image_prompt": "Fotorealistický snímek keňského kytaristy hrajícího benga hudbu na pódiu, 16:9",
+  "irony_prompt": "A guitarist fills the frame mid-strum on a lakeside porch at dusk, fingers a blur across the strings, a bright ribbon of quick, dancing notes curling out over the water toward a distant radio tower. Smaller and subordinate: a small crowd dancing barefoot in the sand nearby; fishing boats silhouetted on the lake behind; a second guitarist joining in from a neighbouring porch. MOOD: lively, rhythmic, warm."
  },
  {
   "id": "ke-t-kikujove",
@@ -653,7 +683,8 @@
   "quip_wrong": "Masajové, Luové, Somálci — každý z nich má v Keni svoje pevné místo, ale co do počtu vede jiný národ, Kikujové.",
   "explanation": "Kikujský jazyk gikuyu patří mezi bantuské jazyky a mluví jím v Keni více lidí než kterýmkoli jiným domácím jazykem kromě svahilštiny.",
   "about": "Kikujích",
-  "image_prompt": "Fotorealistický snímek kikujského zemědělce na políčku v keňské centrální vysočině, 16:9"
+  "image_prompt": "Fotorealistický snímek kikujského zemědělce na políčku v keňské centrální vysočině, 16:9",
+  "irony_prompt": "A farmer fills the frame tending rows of thriving crops on terraced, fertile hillside fields, a wide highland vista of similarly cultivated slopes stretching into the distance behind. Smaller and subordinate: a woven basket overflowing with fresh vegetables at the field's edge; a second farmer working a neighbouring terrace; morning mist settling in the valley below. MOOD: fertile, industrious, verdant."
  },
  {
   "id": "ke-t-caj-vyvoz",
@@ -674,7 +705,8 @@
   "quip_wrong": "Bez kofeinu, jediný producent, jen v sáčcích — žádné z toho neplatí, výjimečnost Keni je ve vývozu, ne ve zvláštní receptuře.",
   "explanation": "Většinu keňské úrody sklízejí ručně drobní pěstitelé na malých políčkách, ne velké plantáže jedné firmy — čaj tak živí statisíce rodin po celé zemi.",
   "about": "vývozu keňského čaje",
-  "image_prompt": "Fotorealistický snímek ženy ručně sklízející čajové lístky na plantáži v keňské vysočině, 16:9"
+  "image_prompt": "Fotorealistický snímek ženy ručně sklízející čajové lístky na plantáži v keňské vysočině, 16:9",
+  "irony_prompt": "A tea picker's hands fill the frame plucking bright green leaf tips from a neatly trimmed bush, a woven basket on their back already overflowing with the day's harvest. Smaller and subordinate: rows of identical tea bushes stretching into misty hills behind; a second picker working a neighbouring row; a truck waiting at the field's edge, already half-loaded with sacks. MOOD: verdant, industrious, misty."
  },
  {
   "id": "ke-t-iten",
@@ -695,7 +727,8 @@
   "quip_wrong": "Údolí rychlíků, kolébka maratonu, země větru — chytlavá jména, ale skutečná přezdívka Itenu je prostší a slavnější.",
   "explanation": "Do Itenu dnes jezdí trénovat i zahraniční běžci, kteří si tu pronajímají místní tréninkové kempy, aby okoukali tempo a životní styl domácích šampionů.",
   "about": "městečku Iten",
-  "image_prompt": "Fotorealistický snímek skupiny běžců trénujících za úsvitu na cestě u městečka Iten, 16:9"
+  "image_prompt": "Fotorealistický snímek skupiny běžců trénujících za úsvitu na cestě u městečka Iten, 16:9",
+  "irony_prompt": "A group of runners fills the frame training together at dawn on a red-dirt track high in the hills, breath visible in the crisp morning air, strides perfectly matched. Smaller and subordinate: a row of medals hanging in a modest trainer's window overlooking the track; a coach with a stopwatch calling out splits; the sun just cresting the hills behind them. MOOD: disciplined, crisp, inspiring."
  },
  {
   "id": "ke-t-madaraka",
@@ -716,7 +749,8 @@
   "quip_wrong": "Narozeniny prezidenta, podpis ústavy, vstup do OSN — nic z toho, Madaraka Day slaví krok k samosprávě, ne tyhle jiné události.",
   "explanation": "Samotné slovo „madaraka“ znamená ve svahilštině zhruba „moc“ nebo „pravomoc“ — název svátku tak přímo pojmenovává, o co v roce 1963 šlo.",
   "about": "svátku Madaraka Day",
-  "image_prompt": "Fotorealistický snímek slavnostní přehlídky v keňských barvách na náměstí v Nairobi, 16:9"
+  "image_prompt": "Fotorealistický snímek slavnostní přehlídky v keňských barvách na náměstí v Nairobi, 16:9",
+  "irony_prompt": "A single flag fills the frame rising partway up a pole at dawn, pausing exactly halfway between the ground and the very top, caught in a moment of partial but proud ascent. Smaller and subordinate: a small crowd below watching with quiet anticipation, some already smiling; a second, taller pole standing empty nearby, waiting for the final rise months later; morning light warming the half-raised flag. MOOD: hopeful, transitional, proud."
  },
  {
   "id": "ke-a-devoluce",
@@ -737,7 +771,8 @@
   "quip_wrong": "8, 22, 100 — žádné z těch čísel nesedí, ústava z roku 2010 rozdělila zemi na přesně 47 krajů.",
   "explanation": "Před reformou z roku 2010 se moc soustředila hlavně v centrální vládě v Nairobi — devoluce měla mimo jiné zmírnit napětí mezi regiony, které cítily, že na ně stát zapomíná.",
   "about": "keňské devoluci a 47 krajích",
-  "image_prompt": "Fotorealistický snímek mapy Keni rozdělené na kraje na stěně úřední budovy, 16:9"
+  "image_prompt": "Fotorealistický snímek mapy Keni rozdělené na kraje na stěně úřední budovy, 16:9",
+  "irony_prompt": "A single large map fills the frame splitting apart into forty-seven differently coloured puzzle pieces, each piece drifting slightly outward from the centre as if gaining its own independent weight. Smaller and subordinate: a tiny government building icon settling onto one of the outer pieces, newly built; strings of light connecting each piece back to a smaller, dimmer capital at the centre; a compass rose in one corner. MOOD: decentralising, orderly, deliberate."
  },
  {
   "id": "ke-a-safari-ekonomika",
@@ -758,7 +793,8 @@
   "quip_wrong": "Výkup zvěří, darování, zákaz turistiky — nic z toho se neděje, model stojí na nájmu půdy a podílu z tržeb, ne na těchhle jiných opatřeních.",
   "explanation": "Tenhle model vznikl mimo jiné v okolí Masai Mary a pomohl vyřešit spor, který provázel ochranu přírody desítky let — totiž že místní komunity nesly náklady na divokou zvěř (zničenou úrodu, ohrožený dobytek), ale ze zisku z turistiky měly jen málo.",
   "about": "soukromých konzervačních oblastech",
-  "image_prompt": "Fotorealistický snímek safari vozidla s turisty a masajského strážce pozorujících zvěř v konzervanci, 16:9"
+  "image_prompt": "Fotorealistický snímek safari vozidla s turisty a masajského strážce pozorujících zvěř v konzervanci, 16:9",
+  "irony_prompt": "A wide savanna fills the frame with a giraffe and a herd of zebra grazing calmly, and stretching from the herd toward a nearby farmhouse is a glowing golden thread connecting the animals directly to a farmer's outstretched, open palm. Smaller and subordinate: a safari jeep of tourists photographing the herd in the background; a ledger book open on the farmhouse porch, its columns filling with light instead of ink; a fence line standing open rather than blocking the animals' path. MOOD: connective, hopeful, balanced."
  },
  {
   "id": "ke-a-svahilska-literatura",
@@ -779,7 +815,8 @@
   "quip_wrong": "Kalevala, Ílias, Epos o Gilgamešovi — slavná díla, ale žádné z nich není svahilské, ta skutečná odpověď pochází z východoafrického pobřeží.",
   "explanation": "Báseň se připisuje básníkovi Bwana Mwengovi a vypráví o vojenských taženích spjatých s raným islámem; dochovala se v mnoha různých rukopisných opisech, které se od sebe místy liší, což badatelům dodnes komplikuje hledání „původního“ znění.",
   "about": "svahilské literární tradici",
-  "image_prompt": "Fotorealistický snímek starého rukopisu psaného arabským písmem na dřevěném stole, 16:9"
+  "image_prompt": "Fotorealistický snímek starého rukopisu psaného arabským písmem na dřevěném stole, 16:9",
+  "irony_prompt": "A single ancient leather-bound manuscript fills the frame lying closed and reverently displayed on a velvet cushion, its worn cover catching soft candlelight. Smaller and subordinate: several other slightly different copies of the very same closed manuscript fanned out beside it, each a little different in size and wear; a scholar's magnifying glass resting nearby, unused for now; dust motes drifting in the candlelight. MOOD: reverent, ancient, layered."
  },
  {
   "id": "ke-a-menengai",
@@ -800,7 +837,8 @@
   "quip_wrong": "Nejhlubší jezero, bahenní sopka, meteorit — zajímavé teorie, ale Menengai je především obří kaldera, ne nic z tohohle.",
   "explanation": "Kaldera Menengai vznikla zhroucením sopky do sebe po mohutné erupci a jejím dnem se táhnou praskliny, kterými dodnes uniká horká pára — obvod okraje měří přes 12 kilometrů, což z něj dělá jednu z největších kalder na světě.",
   "about": "kráteru Menengai",
-  "image_prompt": "Fotorealistický letecký snímek obřího kráteru Menengai s parou stoupající z geotermálních vrtů, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek obřího kráteru Menengai s parou stoupající z geotermálních vrtů, 16:9",
+  "irony_prompt": "A colossal volcanic crater fills the frame stretching for miles across its own flat floor, thin wisps of steam rising steadily from cracks scattered across the crater's surface. Smaller and subordinate: a geothermal pipe network glinting at the crater's edge, channelling the rising steam; a hawk circling high above the vast rim; morning mist pooling in the crater's lowest point. MOOD: colossal, steaming, powerful."
  },
  {
   "id": "ke-k-behci-vytrvalci",
@@ -821,6 +859,7 @@
   "quip_wrong": "Na lyže ani na led to v Keni moc není. Zato v běhu jim to jde jako nikomu.",
   "explanation": "Většina nejlepších běžců pochází z vysoko položených údolí, kde je řidší vzduch. Tělo si na něj zvykne a v nížině pak dýchá o poznání snáz.",
   "about": "keňských běžcích",
-  "more_fact": "Spousta z nich běhala každý den do školy a zpátky, několik kilometrů tam i zpět. Trénink jim tak vlastně začal dřív, než vůbec věděli, že trénují."
+  "more_fact": "Spousta z nich běhala každý den do školy a zpátky, několik kilometrů tam i zpět. Trénink jim tak vlastně začal dřív, než vůbec věděli, že trénují.",
+  "irony_prompt": "A runner fills the frame striding powerfully along a high dirt trail at dawn, breath steady despite the thin mountain air, muscles lean and perfectly conditioned. Smaller and subordinate: a whole training group following close behind in a tight, disciplined line; a coach on a bicycle keeping pace alongside; the sun rising golden over distant hills. MOOD: disciplined, relentless, dawning."
  }
 ]
