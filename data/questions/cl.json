@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert",
   "source_card": "cl-mista-atacama",
   "image_prompt": "Fotorealistický snímek Atacamské pouště — skalnaté solné pláně a červené sopky na obzoru za bezoblačného nebe, bez lidí, 16:9",
-  "about": "poušti Atacama"
+  "about": "poušti Atacama",
+  "irony_prompt": "A vast cracked desert plain fills the frame stretching to distant reddish mountains under a cloudless sky, its surface so parched that not a single plant or puddle breaks the endless dry expanse. Smaller and subordinate: an old rain gauge standing forgotten on a post, its collection funnel bone dry and dusty; a lone salt crystal formation glinting nearby; a weather station's flag hanging perfectly still in the windless air. MOOD: parched, vast, stark."
  },
  {
   "id": "cl-q-torres",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Torres_del_Paine_National_Park",
   "source_card": "cl-mista-torres",
   "image_prompt": "Fotorealistický snímek Torres del Paine — tři žulové věže nad jezerem s ledovcovým odrazem, dramatická oblačnost, bez lidí, 16:9",
-  "about": "Torres del Paine"
+  "about": "Torres del Paine",
+  "irony_prompt": "Three colossal granite towers fill the frame rising sheer and jagged straight out of open golden steppe, their peaks catching the last warm light of evening. Smaller and subordinate: a turquoise glacial lake pooling at their base; a guanaco grazing calmly on the grassland below; a hiker standing tiny at a lookout, dwarfed by the scale. MOOD: monumental, wild, glowing."
  },
  {
   "id": "cl-q-easternisland",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Easter_Island",
   "source_card": "cl-mista-easternisland",
   "image_prompt": "Fotorealistický snímek řady moai na Velikonočním ostrově při západu slunce, tichomořský oceán v pozadí, bez lidí, 16:9",
-  "about": "Velikonočním ostrově"
+  "about": "Velikonočním ostrově",
+  "irony_prompt": "A row of colossal stone statues with elongated faces fills the frame standing shoulder to shoulder on a grassy coastal ridge, gazing solemnly inland with hollow stone eyes. Smaller and subordinate: waves crashing on the rocky shore behind them; a lone horse grazing near the statues' bases; clouds drifting low over the volcanic hillside. MOOD: solemn, monumental, timeless."
  },
  {
   "id": "cl-q-humboldt",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Humboldt_Current",
   "source_card": "cl-priroda-humboldt",
   "image_prompt": "Fotorealistický snímek tichomořského pobřeží Chile s rybářskými loděmi na kotvisku, mlha nad studenou vodou, přirozené světlo, 16:9",
-  "about": "Humboldtově proudu"
+  "about": "Humboldtově proudu",
+  "irony_prompt": "A wide, cool ocean current fills the frame flowing along a rocky coastline, its water churning with an impossibly dense, swirling school of silvery fish rising up from unseen depths. Smaller and subordinate: pelicans diving in a cluster into the fish-rich water; a fishing boat with nets already bulging; sea lions surfacing to snatch a quick meal. MOOD: teeming, cold, abundant."
  },
  {
   "id": "cl-q-altiplano",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Altiplano",
   "source_card": "cl-priroda-altiplano",
   "image_prompt": "Fotorealistický snímek plameňáků na solné pláni Atacamaského altiplana, sopka a modré nebe v pozadí, přirozené světlo, bez lidí, 16:9",
-  "about": "chilském altiplanu"
+  "about": "chilském altiplanu",
+  "irony_prompt": "A vivid pink flock of long-legged birds fills the frame wading through a mirror-still salt lake high in the mountains, their reflections doubling the flock perfectly on the glassy surface. Smaller and subordinate: a vicuña grazing on the sparse grass at the lake's edge; distant snow-capped volcanoes ringing the horizon; salt crystals crunching visibly underfoot on the shoreline. MOOD: vivid, serene, otherworldly."
  },
  {
   "id": "cl-q-araukarie",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Araucaria_araucana",
   "source_card": "cl-priroda-araukarie",
   "image_prompt": "Fotorealistický snímek starobylých araukárií v chilských Andách — mohutné kmeny a deštníkové koruny na sopečné krajině, dramatické světlo, bez lidí, 16:9",
-  "about": "araukárii"
+  "about": "araukárii",
+  "irony_prompt": "A single towering tree fills the frame with strange, thick, overlapping scale-like branches spiralling up its trunk unlike any modern tree, silhouetted against a pale prehistoric-looking sky. Smaller and subordinate: a small fossil of an ancient leaf embedded in a nearby rock, its pattern matching the living tree's branches exactly; a hiker touching the bark in wonder; mist curling low around the base. MOOD: ancient, mysterious, enduring."
  },
  {
   "id": "cl-q-mapuche",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mapuche",
   "source_card": "cl-lide-mapuche",
   "image_prompt": "Fotorealistický snímek chilské jihoanderské krajiny regionu Araucanía, lesy araukárií, hory v pozadí, přirozené světlo, 16:9",
-  "about": "Mapuchech"
+  "about": "Mapuchech",
+  "irony_prompt": "A weaver fills the frame at an upright loom strung between two posts, working a complex geometric pattern in deep reds and blacks, back straight and utterly focused. Smaller and subordinate: a silver ceremonial headdress resting on a nearby stool, catching the light; a horse tied loosely nearby, saddle already worn from long use; araucaria trees framing the scene behind. MOOD: resolute, skilled, proud."
  },
  {
   "id": "cl-q-bernardo",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bernardo_O%27Higgins",
   "source_card": "cl-lide-bernardo",
   "image_prompt": "Fotorealistický snímek historického hlavního náměstí Santiaga de Chile s jezdeckou sochou, kolonialní architektura, přirozené světlo, 16:9",
-  "about": "Bernardu O'Higginsovi"
+  "about": "Bernardu O'Higginsovi",
+  "irony_prompt": "Two figures fill the frame leading a long column of soldiers and mules up a steep, snow-choked mountain pass, breath visible in the cold air, banners in plain solid colours snapping in the wind. Smaller and subordinate: a mule slipping slightly on an icy ledge, quickly steadied; a condor circling high above the pass; the first glimpse of a green valley visible far below through the clouds. MOOD: resolute, arduous, triumphant."
  },
  {
   "id": "cl-q-violeta",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Violeta_Parra",
   "source_card": "cl-lide-violeta",
   "image_prompt": "Fotorealistický snímek chilské venkovské krajiny s dřevěným kostelem a hráčem na kytaru — atmosféra lidové hudby, přirozené světlo, 16:9",
-  "about": "Violetě Parře"
+  "about": "Violetě Parře",
+  "irony_prompt": "A woman fills the frame sitting on a rustic wooden porch with a guitar, leaning in close to an elderly farmer singing beside her, a small notebook open on her knee with musical notes sketched across the page. Smaller and subordinate: chickens pecking in the yard behind them; a basket of wool and weaving tools resting nearby; the sun setting warm and golden over the rural landscape. MOOD: warm, attentive, nostalgic."
  },
  {
   "id": "cl-q-cueca",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cueca",
   "source_card": "cl-kultura-cueca",
   "image_prompt": "Fotorealistický snímek tradičního chilského tance cueca — tanečnice se šátkem v tradičním kroji, huasaský muž vedle ní, festivalová atmosféra, 16:9",
-  "about": "tanci cueca"
+  "about": "tanci cueca",
+  "irony_prompt": "Two dancers fill the frame circling each other with white handkerchiefs raised and twirling overhead, one strutting with proud puffed-up bravado like a rooster and the other stepping neatly and coyly like a hen evading pursuit. Smaller and subordinate: a guitarist and accordion player keeping time at the circle's edge; onlookers clapping along in a loose ring; dust kicking up gently from their boots. MOOD: playful, flirtatious, spirited."
  },
  {
   "id": "cl-q-rodeo",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chilean_rodeo",
   "source_card": "cl-kultura-rodeo",
   "image_prompt": "Fotorealistický snímek chilského rodea — huasos v tradičních plášťových pončech a kloboucích jedou na koních v aréně, přirozené světlo, 16:9",
-  "about": "chilském rodeu"
+  "about": "chilském rodeu",
+  "irony_prompt": "Two riders fill the frame working together on horseback, expertly pressing a young calf between their two horses along a curved wooden corral wall, moving in perfect unison. Smaller and subordinate: a wide-brimmed huaso hat flying off one rider's head mid-motion; spectators cheering from wooden stands around the ring; dust rising in a soft cloud from the horses' hooves. MOOD: coordinated, dynamic, proud."
  },
  {
   "id": "cl-q-terremoto",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Terremoto_(drink)",
   "source_card": "cl-kultura-terremoto",
   "image_prompt": "Fotorealistický snímek vysoké sklenice terremoto — bílé víno s kopečkem ananasové zmrzliny, chilský bar, přirozené světlo, 16:9",
-  "about": "nápoji terremoto"
+  "about": "nápoji terremoto",
+  "irony_prompt": "A tall glass fills the frame with red wine poured over a generous scoop of pale pineapple ice cream, the two swirling together as a small measure of grenadine drips in from above like a tiny tremor rippling through the glass. Smaller and subordinate: a bartender's hand steadying the glass as it wobbles slightly on the counter; a second identical glass already tipped precariously by a laughing patron nearby; bubbles fizzing gently at the rim. MOOD: playful, potent, festive."
  },
  {
   "id": "cl-q-neruda",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pablo_Neruda",
   "source_card": "cl-umeni-neruda",
   "image_prompt": "Fotorealistický snímek přímořského domu La Sebastiana ve Valparaísu, barevné fasády chilského přístavu, přirozené světlo, 16:9",
-  "about": "Pablu Nerudovi"
+  "about": "Pablu Nerudovi",
+  "irony_prompt": "A single fountain pen fills the frame resting on a stack of handwritten poetry pages on a wooden desk overlooking the ocean, a small golden medal on a ribbon placed beside it. Smaller and subordinate: a conch shell used as a paperweight on one corner of the pages; waves visible crashing against rocks through the window; a cup of tea gone cold beside the pen. MOOD: quiet, accomplished, oceanic."
  },
  {
   "id": "cl-q-moai-art",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Moai",
   "source_card": "cl-umeni-moai-art",
   "image_prompt": "Fotorealistický detailní snímek tváře moai — expresivní rysy, tufa kámen, přirozené světlo, oceán v pozadí, 16:9",
-  "about": "sochách moai"
+  "about": "sochách moai",
+  "irony_prompt": "A single colossal stone statue fills the frame half-carved and still attached to the volcanic crater wall it was cut from, chisel marks visible across its rough grey surface. Smaller and subordinate: a stone chisel and mallet resting on a ledge beside the unfinished statue; a finished statue standing nearby for comparison, smoothed and complete; volcanic ash dust settled on every surface. MOOD: monumental, unfinished, weighty."
  },
  {
   "id": "cl-q-murales",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Muralism_in_Chile",
   "source_card": "cl-umeni-murales",
   "image_prompt": "Fotorealistický snímek barevného politického muralu na zdi v chilském Santiagu nebo Valparaísu, expresivní styl, přirozené světlo, 16:9",
-  "about": "chilském politickém muralismu"
+  "about": "chilském politickém muralismu",
+  "irony_prompt": "A long city wall fills the frame with a faded ghostly outline of an old mural still barely visible beneath a fresh coat of plain grey paint, while at the wall's far end a new brightly coloured mural is already blooming back to life. Smaller and subordinate: a painter's ladder and open paint cans resting at the base of the new mural; a passerby pausing to watch the colours return; a paintbrush mid-stroke adding the final vivid patch. MOOD: resilient, quietly defiant, hopeful."
  },
  {
   "id": "cl-q-futbal",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chile_national_football_team",
   "source_card": "cl-sport-futbal",
   "image_prompt": "Fotorealistický snímek chilského fotbalového stadionu za soumraku, rozsvícená světla nad trávníkem, slavnostní atmosféra, bez rozpoznatelných tváří, 16:9",
-  "about": "chilském fotbale"
+  "about": "chilském fotbale",
+  "irony_prompt": "A football trophy fills the frame held aloft by a jubilant player in a plain red kit with no marking of any kind, confetti in the national colours raining down around him. Smaller and subordinate: teammates embracing in a tight huddle just behind him; a stadium crowd roaring in a blur of red and white; a scoreboard turned away so its face cannot be read. MOOD: triumphant, electric, jubilant."
  },
  {
   "id": "cl-q-tenis",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Marcelo_R%C3%ADos",
   "source_card": "cl-sport-tenis",
   "image_prompt": "Fotorealistický snímek tenisového hřiště na antuce v záchvatu latinskoamerického turnaje, dramatické světlo, bez rozpoznatelných tváří, 16:9",
-  "about": "Marcelu Ríosovi"
+  "about": "Marcelu Ríosovi",
+  "irony_prompt": "A tennis player fills the frame captured mid-serve on a clay court, racket arm fully extended at the peak of the swing, plain white kit with no marking of any kind. Smaller and subordinate: a small number-one flag planted proudly at the edge of the court; a stack of trophies gleaming on a nearby bench; a ball frozen mid-flight just leaving the racket strings. MOOD: powerful, focused, triumphant."
  },
  {
   "id": "cl-q-andinismo",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ojos_del_Salado",
   "source_card": "cl-sport-andinismo",
   "image_prompt": "Fotorealistický snímek horolezce na sněžném svahu andské sopky v Chile, jasné modré nebe, dramatický výhled do hloubky, 16:9",
-  "about": "horolezectví (andinismo) a sopce Ojos del Salado"
+  "about": "horolezectví (andinismo) a sopce Ojos del Salado",
+  "irony_prompt": "A single snow-capped volcanic peak fills the frame towering above every neighbouring mountain for as far as the eye can see, its summit catching the very first light of dawn while the rest of the range remains in shadow. Smaller and subordinate: a climber's tiny figure roped up on a distant ridge, dwarfed by the scale; a thin plume of volcanic steam rising from a vent near the summit; a condor gliding level with the peak. MOOD: towering, majestic, extreme."
  },
  {
   "id": "cl-q-chilenismo",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chilean_Spanish",
   "source_card": "cl-jazyk-chilenismo",
   "image_prompt": "Fotorealistický pohled na mapu jihoamerického Chile — dlouhý úzký pás od severu k jihu, hora na jedné straně, oceán na druhé, 16:9",
-  "about": "chilské španělštině"
+  "about": "chilské španělštině",
+  "irony_prompt": "A single rounded speech bubble fills the frame drifting from a relaxed speaker's mouth, its shape twisting into unusually sharp zigzags and sudden loops that a second, more formal ribbon nearby simply cannot follow or match. Smaller and subordinate: a visiting Spanish-speaker from another country tilting their head, utterly lost; a dictionary lying open nearby, clearly of no help; a parrot attempting to mimic the zigzag shape and failing. MOOD: playful, bewildering, spirited."
  },
  {
   "id": "cl-q-mapudungun",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mapuche_language",
   "source_card": "cl-jazyk-mapudungun",
   "image_prompt": "Fotorealistický snímek mapuchského tradičního tkaní s geometrickými vzory, přirozené světlo, 16:9",
-  "about": "mapudungunu v chilské španělštině"
+  "about": "mapudungunu v chilské španělštině",
+  "irony_prompt": "A single speech-shaped ribbon fills the frame emerging from deep mountain roots below ground and rising up through the soil to blossom into everyday speech bubbles floating above a busy modern city street above. Smaller and subordinate: a weaver's loom pattern echoing the same root shape in the corner; a city dweller unknowingly using the very same expression without a second thought; araucaria branches framing the underground root system. MOOD: rooted, quiet, enduring."
  },
  {
   "id": "cl-q-poetika",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Gabriela_Mistral",
   "source_card": "cl-jazyk-poetika",
   "image_prompt": "Fotorealistický snímek chilského tichomořského pobřeží se skalami a vlnami — krajina inspirující básníky, dramatické světlo, 16:9",
-  "about": "chilské poetické tradici"
+  "about": "chilské poetické tradici",
+  "irony_prompt": "Two identical golden medals fill the frame resting side by side on matching velvet cushions, a single open poetry book laid flat between them with its pages left completely blank. Smaller and subordinate: a modest country outline sketched faintly on the wall behind the cushions, small on a large world map; two quill pens crossed beneath the medals; candlelight glowing warmly over both. MOOD: proud, quiet, extraordinary."
  },
  {
   "id": "cl-q-empanadas",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Empanada",
   "source_card": "cl-jidlo-empanadas",
   "image_prompt": "Fotorealistický snímek zlatavých chilských empanadas právě vyndaných z trouby na plechovém tácu, přirozené světlo, 16:9",
-  "about": "chilských empanadas"
+  "about": "chilských empanadas",
+  "irony_prompt": "A tray fills the frame piled with golden, crescent-shaped pastry parcels, one split open to reveal a savoury filling of seasoned meat, onion and a single olive nestled inside. Smaller and subordinate: a flag in plain solid colours hanging from a nearby stall pole; a family gathering eagerly around the tray at an outdoor celebration; steam rising from the freshly baked pastries. MOOD: festive, hearty, celebratory."
  },
  {
   "id": "cl-q-cazuela",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cazuela",
   "source_card": "cl-jidlo-cazuela",
   "image_prompt": "Fotorealistický snímek hluboké misky cazuela — vývar s hovězím, kukuřičným klasem, brambory a dýní, přirozené světlo, rustikální prostředí, 16:9",
-  "about": "cazuele a andské kukuřici choclo"
+  "about": "cazuele a andské kukuřici choclo",
+  "irony_prompt": "A steaming round clay bowl fills the frame with a rich broth, a large plump golden cylindrical corn cob standing upright at its centre, chunks of meat, squash and potato surrounding it. Smaller and subordinate: a market stall behind piled high with more identical thick-kernelled corn cobs; a spoon resting on the bowl's rim; steam curling up past a window showing distant mountains. MOOD: hearty, homely, warming."
  },
  {
   "id": "cl-q-congrio",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chilean_cuisine",
   "source_card": "cl-jidlo-congrio",
   "image_prompt": "Fotorealistický snímek caldillo de congrio — ryba v hluboké misce s rajčaty, koriandrem a citronem, pobřežní restaurace, přirozené světlo, 16:9",
-  "about": "congriu a Nerudově ódě"
+  "about": "congriu a Nerudově ódě",
+  "irony_prompt": "A wide round clay bowl fills the frame with golden fish broth, a long silvery eel-like fish curled around its rim, potatoes and herbs floating in the rich liquid. Smaller and subordinate: an open poetry book resting on the table beside the bowl, its pages left blank; a glass of white wine catching the light; a fisherman's net visible through a nearby window overlooking the harbour. MOOD: rich, celebrated, coastal."
  },
  {
   "id": "cl-q-pinochet",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/1973_Chilean_coup_d%27%C3%A9tat",
   "source_card": "cl-historie-pinochet",
   "image_prompt": "Fotorealistický snímek prezidentského paláce La Moneda v Santiagu de Chile za slunného dne, monumentální budova, 16:9",
-  "about": "vojenském převratu 1973"
+  "about": "vojenském převratu 1973",
+  "irony_prompt": "A grand palace gate fills the frame standing ajar at dawn, a column of tanks halted just outside without advancing further, smoke rising faintly from a distant building in the misty city beyond. Smaller and subordinate: a single presidential sash left draped over an empty balcony railing; startled pigeons scattering from the palace roof; a newspaper stand nearby with its papers blown empty and blank across the street. MOOD: tense, heavy, momentous."
  },
  {
   "id": "cl-q-dicoba",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/1988_Chilean_national_plebiscite",
   "source_card": "cl-historie-dicoba",
   "image_prompt": "Fotorealistický snímek chilského volebního lístku z roku 1988 nebo muzejního exponátu dokumentujícího plebiscit, historická atmosféra, 16:9",
-  "about": "chilském plebiscitu 1988"
+  "about": "chilském plebiscitu 1988",
+  "irony_prompt": "A tall glass ballot box fills the frame overflowing with an enormous flood of identical paper slips being poured in from every direction by dozens of hands at once, the box practically bursting. Smaller and subordinate: an official calendar page on the wall nearby with a single date circled boldly; a queue of voters stretching out the door into bright morning light; a dove landing calmly on the box's rim. MOOD: momentous, overwhelming, hopeful."
  },
  {
   "id": "cl-q-atacamawojny",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/War_of_the_Pacific",
   "source_card": "cl-historie-atacamawojny",
   "image_prompt": "Fotorealistický snímek opuštěného těžebního města ledku (salitreras) v chilské Atacamě — rezavé stroje a bílé solné pláně, dramatické světlo, 16:9",
-  "about": "Válce o ledek"
+  "about": "Válce o ledek",
+  "irony_prompt": "A vast desert plain fills the frame with a boundary line being redrawn on a large map spread across a field table, one side's territory expanding while a small flag on the other side is quietly lowered and folded away. Smaller and subordinate: sacks of pale mineral crystals stacked high just inside the newly redrawn line; a surveyor's compass and ruler resting on the map; a distant mountain range unchanged by the shifting border below it. MOOD: consequential, dry, weighty."
  },
  {
   "id": "cl-k-tvar",
@@ -611,7 +638,8 @@
   "quip_correct": "Paráda, sedí to! Chile je tak dlouhé, že položené na Evropu by sáhlo od Londýna až za Egypt.",
   "quip_wrong": "Skoro, ale ne tak úplně — ani čtverec, ani trojúhelník. Chile je na mapě dlouhý úzký pruh podél pobřeží, jako by ho někdo natáhl jak gumu.",
   "explanation": "Chile je nejužší zemí světa — v průměru jen 177 km na šířku, ale přes 4 300 km na délku, od tropické severu až po ledový jih.",
-  "about": "tvaru Chile"
+  "about": "tvaru Chile",
+  "irony_prompt": "A single impossibly long, thin ribbon of green land fills the frame stretching from a snow-capped tip at the very top of the scene down through desert, forest and glaciers to an icy tip at the very bottom, squeezed between towering mountains and the wide blue ocean the whole way. Smaller and subordinate: a tiny toy airplane flying the entire length, taking hours to cross it all; a compass rose in one corner showing just how narrow the strip really is; waves lapping the ribbon's edge continuously along its length. MOOD: sprawling, narrow, striking."
  },
  {
   "id": "cl-k-lama",
@@ -631,7 +659,8 @@
   "quip_correct": "Bravo, trefa! Lama unese náklad, dá teplou vlnu, a když ji otravuješ, umí i plivnout — tři talenty v jednom zvířeti.",
   "quip_wrong": "Málem, ale ne — velbloud má hrb navíc a los žije úplně jinde. V chilských Andách nosí náklad lama.",
   "explanation": "Lamy žijí v Andách už tisíce let; původní obyvatelé je používali jako nákladní zvířata a pro vlnu, která je velmi teplá a lehká.",
-  "about": "lamách"
+  "about": "lamách",
+  "irony_prompt": "A shaggy long-necked llama fills the frame standing proudly on a high mountain trail, a woven saddle bag balanced on its back and thick woolly coat catching the crisp mountain light. Smaller and subordinate: a herder walking alongside with a wooden staff; a second llama following close behind; jagged snow-capped peaks framing the high trail. MOOD: sturdy, proud, majestic."
  },
  {
   "id": "cl-k-avokado",
@@ -651,7 +680,8 @@
   "quip_correct": "Výborně! Chilané mažou avokádo na chleba místo másla, a ani je nenapadne se za to omlouvat.",
   "quip_wrong": "Ještě ne tentokrát — kiwi ani mango tam nehrají hlavní roli. Chilané dávají skoro do všeho zelené avokádo.",
   "explanation": "Avokádo původem pochází ze Střední Ameriky, ale Chile je dnes jedním z největších světových pěstitelů; chilská odrůda Hass je nejprodávanější na světě.",
-  "about": "avokádu"
+  "about": "avokádu",
+  "irony_prompt": "A large green fruit fills the frame sliced open to reveal smooth, buttery pale-green flesh cradling a single large round pit, a spoon already dipped in for a scoop. Smaller and subordinate: a second whole fruit resting beside the sliced half, its bumpy skin catching the light; a slice of toast waiting on a nearby plate; a small bowl of lime wedges close by. MOOD: creamy, fresh, wholesome."
  },
  {
   "id": "cl-t-santiago",
@@ -671,7 +701,8 @@
   "quip_correct": "Trefa do černého! Santiago má hory tak blízko za humny, že se místní diví, proč by vůbec jezdili na výlet do Alp.",
   "quip_wrong": "Kousek vedle — Buenos Aires leží v Argentině a Lima v Peru. Hlavní město Chile je Santiago.",
   "explanation": "Santiago leží v nadmořské výšce přibližně 520 metrů a žije v něm přes sedm milionů lidí — téměř třetina celé chilské populace.",
-  "about": "Santiagu"
+  "about": "Santiagu",
+  "irony_prompt": "A sprawling city fills the frame nestled in a wide valley, its buildings and rooftops stretching to the very base of a towering wall of snow-capped mountains rising sharply just behind it. Smaller and subordinate: a cable car climbing a hill overlooking the skyline; morning haze softening the distant peaks; a park with tall trees in the foreground below the skyline. MOOD: framed, vast, crisp."
  },
  {
   "id": "cl-k-condor",
@@ -693,7 +724,8 @@
   "explanation": "Chilský státní znak nese motto „Por la razón o la fuerza“ (Rozumem, nebo silou) a po stranách ho drží kondor andský symbolizující sílu a huemul symbolizující vytrvalost.",
   "source_url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile",
   "image_prompt": "Fotorealistický snímek kondora andského plachtícího nad chilskými Andami, zasněžené vrcholy v pozadí, 16:9",
-  "about": "kondoru andském na chilském znaku"
+  "about": "kondoru andském na chilském znaku",
+  "irony_prompt": "A magnificent black condor with a white neck ruff fills the frame gliding with enormous wings spread fully open above a jagged mountain ridge, riding the wind without a single flap. Smaller and subordinate: a slender deer-like creature standing alert on a rocky outcrop far below, watching it soar; wisps of cloud drifting past the condor's wingtips; a smaller hawk struggling to keep pace far beneath. MOOD: majestic, soaring, wild."
  },
  {
   "id": "cl-k-vlajka",
@@ -715,7 +747,8 @@
   "explanation": "Chilská vlajka se přezdívá „La Estrella Solitaria“ (Osamělá hvězda) stejně jako texaská; podobnost je čistá náhoda, obě vznikly nezávisle na sobě v devatenáctém století.",
   "source_url": "https://en.wikipedia.org/wiki/Flag_of_Chile",
   "image_prompt": "Fotorealistický snímek chilské vlajky vlající na stožáru na pozadí And, jasné modré nebe, 16:9",
-  "about": "chilské vlajce"
+  "about": "chilské vlajce",
+  "irony_prompt": "A crisp flag fills the frame with a single white star clearly reading as white set on a deep blue square in the upper corner, alongside a broad white stripe and a bold red stripe both clearly reading as their colours, snapping in a coastal breeze. Smaller and subordinate: a second, oddly similar flag glimpsed on a postcard from a faraway state, pinned beside it with a puzzled note; a seagull gliding past the star; ocean waves rippling below the pole. MOOD: proud, crisp, curious."
  },
  {
   "id": "cl-k-valparaiso",
@@ -737,7 +770,8 @@
   "explanation": "Valparaíso je přístavní město postavené na strmých kopcích nad Tichým oceánem; jeho barevné domy a historické výtahy ascensores, z nichž nejstarší jezdí už od 19. století, mu vynesly zápis na seznam UNESCO.",
   "source_url": "https://en.wikipedia.org/wiki/Valpara%C3%ADso",
   "image_prompt": "Fotorealistický snímek barevných domů na kopcích Valparaísa s historickým výtahem ascensor, přirozené světlo, 16:9",
-  "about": "Valparaísu a jeho ascensorech"
+  "about": "Valparaísu a jeho ascensorech",
+  "irony_prompt": "A small wooden cable car fills the frame climbing a dizzyingly steep hillside track between colourful patchwork houses stacked one above another. Smaller and subordinate: a cat stretching lazily on a windowsill as the car passes; the harbour and ships glinting far below at the base of the hill; laundry lines strung between two leaning houses. MOOD: quaint, vertical, colourful."
  },
  {
   "id": "cl-t-huemul",
@@ -759,7 +793,8 @@
   "explanation": "Huemul je ohrožený jihoandský jelenec, kterého v divočině zbývá už jen kolem patnácti set kusů; přesto reprezentuje Chile na státním znaku po boku kondora už od 19. století.",
   "source_url": "https://en.wikipedia.org/wiki/Huemul",
   "image_prompt": "Fotorealistický snímek jelence huemula v horské krajině chilské Patagonie, přirozené světlo, 16:9",
-  "about": "huemulovi"
+  "about": "huemulovi",
+  "irony_prompt": "A slender, alert deer-like creature fills the frame standing on a rocky mountain ledge beside the very same condor from the national emblem, both animals framed together in profile against a dramatic Andean skyline. Smaller and subordinate: a patch of hardy alpine wildflowers growing between the rocks; snow dusting the distant peaks behind them; a small stream trickling past the ledge. MOOD: noble, rare, dignified."
  },
  {
   "id": "cl-k-hrozny",
@@ -781,7 +816,8 @@
   "explanation": "Chile leží na jižní polokouli, takže jeho hrozny dozrávají v době, kdy má severní polokoule zimu; díky tomu je země jedním z největších světových vývozců čerstvého stolního ovoce mimo sezónu.",
   "source_url": "https://en.wikipedia.org/wiki/Agriculture_in_Chile",
   "image_prompt": "Fotorealistický snímek vinice s hrozny v chilském Centrálním údolí, Andy v pozadí, zlaté odpolední světlo, 16:9",
-  "about": "chilském vývozu hroznů"
+  "about": "chilském vývozu hroznů",
+  "irony_prompt": "A wooden crate fills the frame overflowing with plump green and deep purple grape clusters, packed tightly and ready for export, morning dew still glistening on the skins. Smaller and subordinate: a vineyard worker's basket resting nearby, freshly picked; snow-capped Andes visible on the horizon beyond the vine rows; a delivery truck waiting with its doors open behind the crate. MOOD: abundant, fresh, bountiful."
  },
  {
   "id": "cl-k-lyzovani",
@@ -803,7 +839,8 @@
   "explanation": "Chilská střediska jako Portillo nebo Valle Nevado leží necelou hodinu od Santiaga a v červenci a srpnu tam panuje plná zimní sezóna; jezdí sem trénovat i profesionální lyžaři ze severní polokoule, kterým doma zrovna probíhá léto.",
   "source_url": "https://en.wikipedia.org/wiki/Skiing_in_Chile",
   "image_prompt": "Fotorealistický snímek lyžařů na svahu horského střediska v chilských Andách, modré nebe, zasněžené vrcholy, 16:9",
-  "about": "lyžování v chilských Andách"
+  "about": "lyžování v chilských Andách",
+  "irony_prompt": "A skier fills the frame carving down a brilliant white slope under a clear blue sky, spray of snow arcing off the skis mid-turn. Smaller and subordinate: a chairlift climbing the mountain behind, carrying more skiers up; a mountain hut with smoke curling from its chimney at the base; distant Andean peaks glowing under the winter sun. MOOD: exhilarating, crisp, sunlit."
  },
  {
   "id": "cl-t-flor-copihue",
@@ -825,7 +862,8 @@
   "explanation": "Copihue je tak vzácný a chráněný, že trhat ho volně v chilské přírodě je dnes ze zákona zakázané.",
   "source_url": "https://cs.wikipedia.org/wiki/Lapageria_r%C5%AF%C5%BEov%C3%A1",
   "image_prompt": "Fotorealistický snímek popínavé liány s velkými červenými zvonkovitými květy copihue v zeleném jihochilském lese, detailní záběr na květy, sluneční paprsky mezi listy, 16:9",
-  "about": "chilském národním květu copihue"
+  "about": "chilském národním květu copihue",
+  "irony_prompt": "A vivid crimson bell-shaped flower fills the frame dangling from a climbing vine twisted around a tall tree trunk deep in a southern forest, its waxy petals glowing bright against the dark green foliage. Smaller and subordinate: a hummingbird hovering close to sip nectar from the bell-shaped bloom; a second, still-closed bud nearby; dappled forest light filtering through the canopy above. MOOD: vivid, precious, lush."
  },
  {
   "id": "cl-k-atacama-sucho",
@@ -846,7 +884,8 @@
   "quip_wrong": "Sahara, Gobi i Kalahari leží na úplně jiných světadílech. Ta chilská se jmenuje jinak.",
   "explanation": "Atacama je nejsušší poušť světa. Astronomové sem staví velké dalekohledy, protože obloha nad ní je téměř pořád jasná a bez mraků.",
   "about": "poušti Atacama",
-  "more_fact": "Půda v Atacamě se podobá té na Marsu, a tak se tam zkoušely přístroje ještě předtím, než odletěly na skutečnou rudou planetu."
+  "more_fact": "Půda v Atacamě se podobá té na Marsu, a tak se tam zkoušely přístroje ještě předtím, než odletěly na skutečnou rudou planetu.",
+  "irony_prompt": "A vast cracked desert plain fills the frame stretching to distant mountains under a brilliant star-filled night sky, not a single cloud or drop of moisture anywhere in sight. Smaller and subordinate: a giant telescope dome standing open to the clear sky at the desert's edge; a lizard's tracks in the dry dust, the only sign of life for miles; a lone cactus silhouette on the horizon. MOOD: parched, vast, celestial."
  },
  {
   "id": "cl-k-moai-sochy",
@@ -867,6 +906,7 @@
   "quip_wrong": "Pyramidy jsou v Egyptě a totemy v Americe. Na Velikonočním ostrově stojí něco úplně jiného.",
   "explanation": "Soch je skoro devět set a ta největší je vysoká jako dům. Vytesali je obyvatelé ostrova z jednoho kusu sopečné horniny a pak je dopravili až na pobřeží.",
   "about": "sochách moai",
-  "more_fact": "Většina moai má i tělo. Jsou zahrabané v půdě až po ramena, takže z dálky vypadají jenom jako hlavy — pod zemí ale pokračují ruce i břicho."
+  "more_fact": "Většina moai má i tělo. Jsou zahrabané v půdě až po ramena, takže z dálky vypadají jenom jako hlavy — pod zemí ale pokračují ruce i břicho.",
+  "irony_prompt": "A row of colossal stone statues with elongated faces and deep hollow eyes fills the frame standing shoulder to shoulder on a grassy ridge, all gazing solemnly inland toward the island's centre. Smaller and subordinate: a child standing at the base of the largest one, utterly dwarfed by its size; waves breaking on the rocky coast behind the row; clouds casting slow-moving shadows across the grass. MOOD: solemn, monumental, mysterious."
  }
 ]
