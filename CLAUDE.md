@@ -81,6 +81,26 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-22 — Nový Zéland 38/38 ilustrací. 1 vada z 38: logo výrobce na dresu, stejný typ
+  jako u Saúdské Arábie (21. 9.), oprava jedním přeposláním s výslovným zákazem.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Smlouva z Waitangi (dvě jazykové
+  verze se v klíčových bodech liší) vyřešena stejně jako korejské/rumunské precedenty:
+  **dva svinuté pergameny se svými voskovými pečetěmi, nikdy nerozvinuté** — fakt o
+  NESHODĚ dvou textů se dá ilustrovat bez jediného viditelného písmene.
+  - **Logo na dresu (`nz-t-black-ferns`): drobná bílá značka na trenýrkách**, přestože
+    zadání o výrobci mlčelo — potvrzuje, že sportovní dres si o logo řekne i bez zmínky.
+    Oprava jedním přeposláním s `„completely plain black jerseys with no crest, logo, or
+    marking of any kind"` fungovala napoprvé (na rozdíl od Saúdské Arábie, kde to samo
+    nestačilo a musela pomoct záplata) — rozdíl je možná v tom, že jde o dres týmu, ne
+    o dres s asociací na konkrétní klub/výrobce.
+  - **Reálné osoby (Lorde, moderátorka Oriini Kaipara) v zadání nejmenované jmény** — jen
+    „young singer's silhouette" a „a news anchor", obě navíc ve stylizované/siluetové pozici,
+    která přímo brání konkrétní podobě.
+  - **Vlastnoruční pověst o rybě (Maui) a dresová trofej All Blacks** — obě prošly napoprvé
+    bez zásahu, žádná past nenastala tam, kde ji zkušenost z minula nepředvídala.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 246.** Další v pořadí: Tchaj-wan, Jižní Afrika
+    (obě 38/38, zcela nedotčené).
+
 - **2026-09-22 — Mexiko 38/38 ilustrací. 2 vady ze 38: oba náhodné podpisy, žádná textová past.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb (jeden zásah `words` u `mx-q-nahuatl`
   opraven přeformulováním). Nejcitlivější dvě otázky prošly napoprvé díky čistě symbolickému

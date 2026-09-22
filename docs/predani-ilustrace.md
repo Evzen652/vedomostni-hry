@@ -1,6 +1,6 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **22. 9. pozdní večer** po Mexiku — 13. hotové
+Sepsáno **12. září 2026** (aktualizováno **22. 9. noc** po Novém Zélandu — 14. hotové
 zemi z fronty, 100 %).
 Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení a rozhodnutí jsou
 v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko), **2026-09-12**
@@ -9,7 +9,8 @@ Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko, Ukraji
 Thajsko, Turecko, Irsko, Izrael, Jižní Korea), **2026-09-21** (Malajsie, Pákistán,
 Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina, Belgie),
 **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži,
-Indie, Keňa), **2026-09-22 večer** (Mongolsko) a **2026-09-22 pozdní večer** (Mexiko).
+Indie, Keňa), **2026-09-22 večer** (Mongolsko), **2026-09-22 pozdní večer** (Mexiko)
+a **2026-09-22 noc** (Nový Zéland).
 
 ---
 
@@ -22,8 +23,8 @@ Indie, Keňa), **2026-09-22 večer** (Mongolsko) a **2026-09-22 pozdní večer**
    git pull
    npm install
    ```
-   Poslední commit ilustrací je Mexiko; `git log --oneline -3` musí ukázat
-   commit o Mexiku (38/38 ilustrací). **Pracovní strom má být
+   Poslední commit ilustrací je Nový Zéland; `git log --oneline -3` musí ukázat
+   commit o Novém Zélandu (38/38 ilustrací). **Pracovní strom má být
    čistý** — žádná dávka neběží a `.batch-irony.json` ukazuje na dokončenou dávku.
 2. **Vložit klíč Gemini do `.dev.vars`** (gitignorovaný, na druhý stroj NEPŘEJDE). Vzor je
    v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **Kredit byl 22. 9. dobitý a funguje** —
@@ -35,26 +36,26 @@ Indie, Keňa), **2026-09-22 večer** (Mongolsko) a **2026-09-22 pozdní večer**
    npm run test:offline
    npm run lint-irony
    ```
-   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **284**.
-4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — Mexiko je hotové. **První
-   krok další session: napsat `irony_prompt` pro novou zemi** (Nový Zéland `nz`, 38 otázek,
+   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **246**.
+4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — Nový Zéland je hotový. **První
+   krok další session: napsat `irony_prompt` pro novou zemi** (Tchaj-wan `tw`, 38 otázek,
    je další v pořadí a je zatím úplně nedotčené — ani jedno zadání). Postup psaní zadání je
    v bodu 5 níž.
-5. **Po Novém Zélandu pokračovat** dalšími zeměmi v pořadí (Tchaj-wan, Jižní Afrika mají
-   taky 38/38 ještě bez jediného zadání — obě plně nedotčené, výběr pořadí je libovolný).
+5. **Po Tchaj-wanu pokračovat** Jižní Afrikou (taky 38/38 ještě bez jediného zadání,
+   zcela nedotčená).
 
 ---
 
-## 1. Stav k 22. 9. 2026 (pozdní večer, po Mexiku)
+## 1. Stav k 22. 9. 2026 (noc, po Novém Zélandu)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **284** |
-| Hotovo 22. 9. | Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži, Indie, Keňa, Mongolsko, **Mexiko 38/38** — **13 zemí, všechny 100 %** |
+| Bez ilustrace | **246** |
+| Hotovo 22. 9. | Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži, Indie, Keňa, Mongolsko, Mexiko, **Nový Zéland 38/38** — **14 zemí, všechny 100 %** |
 | **Zadání čekající na obrázky** | žádná — fronta je celá vyčerpaná |
-| Další v pořadí (bez zadání) | Nový Zéland 38, Tchaj-wan 38, Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
-| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~19 dávkách týž den. |
+| Další v pořadí (bez zadání) | Tchaj-wan 38, Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
+| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~20 dávkách týž den. |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -323,15 +324,20 @@ neodstraní.
 - **Masakr/válka se dá ilustrovat BEZ jediné lidské oběti** (Mexiko, `mx-a-tlatelolco-1968`):
   prázdné náměstí, rozházené boty a leták místo těl — stejný princip jako rumunská revoluce.
   Násilí nahraď jeho DŮSLEDKEM (prázdný prostor, opuštěné věci), ne jeho zobrazením.
+- **Logo výrobce na TÝMOVÉM dresu je slabší past než na klubovém** (Nový Zéland,
+  `nz-t-black-ferns`) — na rozdíl od Saúdské Arábie (kde samotné „no crest" nestačilo a
+  musela pomoct záplata), tady jedno přeposlání s `„completely plain … jerseys with no
+  crest, logo, or marking of any kind"` zabralo napoprvé. I tak se dres MUSÍ hlídat vždycky,
+  ne jen u fotbalu/klubů.
 
 ---
 
 ## 6. Co dělat dál
 
-**Mexiko je hotové (100 %).** Žádná země teď nemá zadání čekající na obrázky —
+**Nový Zéland je hotový (100 %).** Žádná země teď nemá zadání čekající na obrázky —
 první krok je vždycky napsat nová zadání.
 
-1. **Napsat zadání pro Nový Zéland** (38 otázek, úplně nedotčené) — v session, podle
+1. **Napsat zadání pro Tchaj-wan** (38 otázek, úplně nedotčené) — v session, podle
    poučení v bodu 2/5 tohohle souboru.
    Zadání se píšou do JSON mapy `{id: scéna}` (do scratchpadu) a do dat je zapíše
    `node scripts/ilustrace/zapis-prompty.js xx mapa.json`.
