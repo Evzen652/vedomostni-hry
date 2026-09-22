@@ -81,6 +81,35 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-22 — Mexiko 38/38 ilustrací. 2 vady ze 38: oba náhodné podpisy, žádná textová past.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb (jeden zásah `words` u `mx-q-nahuatl`
+  opraven přeformulováním). Nejcitlivější dvě otázky prošly napoprvé díky čistě symbolickému
+  zpracování:
+  - **`mx-a-tlatelolco-1968` (masakr studentů) nemá jedinou lidskou postavu** — jen prázdné
+    noční náměstí, rozházené boty a leták, olympijské kruhy na budově v pozadí (hry začaly
+    o deset dní později). Přesně stejný princip jako rumunská revoluce (2026-09-13):
+    násilí nahrazeno jeho DŮSLEDKEM, ne zobrazením.
+  - **`mx-a-narkokartely` (drogová válka) má vojáky s puškami mířícími k zemi**, žádná
+    zbraň namířená na cíl, žádné násilí — jen napjatá hlídka za soumraku a obchodník
+    stahující roletu.
+  - **Mayský kalendář (`mx-t-maysky-kalendar`) NENÍ past, i když vypadá jako kandidát.**
+    Skutečný Aztécký sluneční kámen je sám o sobě piktografický reliéf, ne abecední text —
+    replika s abstraktními symboly prošla lintem i okem bez zásahu, stejná kategorie jako
+    maďarské rovnice nebo švédské notové osnovy („dekorativní/technický vzor není zakázaný text").
+  - **Reálné osoby (Frida Kahlo, Diego Rivera, Villa/Zapata) se do zadání nedostaly jmenovitě**
+    — Frida je jen „flower-crowned silhouette" v zrcadle, revoluční velitelé jsou anonymní
+    „mounted revolutionary leaders". U `mx-a-rivera-rockefeller` (spor o portrét Lenina ve
+    fresce) je portrét popsaný jako „one particular unnamed leader's portrait" — Gemini
+    domalovalo věrohodnou, ale nekonkrétní tvář, ne skutečnou podobu Lenina.
+  - **Past, kterou jsem vyrobil sám: slovo „words" v podřízeném gagu.** `mx-q-nahuatl`
+    (odkud čeština/svět převzala „čokoláda, rajče, avokádo") mělo frázi „matching one of the
+    borrowed words" — jediné slovo `words` spustilo `lint-irony` chybu. Přeformulováno na
+    „the same borrowed names now spoken worldwide" (slovo „names" v seznamu pastí není).
+  - **2 vymyšlené podpisy** (`mx-t-azteca-stadion` na trávníku, `mx-a-rivera-rockefeller`
+    v rohu rámu fresky) — oba spravilo přeposlání stejného zadání napoprvé.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 284.** Další v pořadí: Nový Zéland, Tchaj-wan,
+    Jižní Afrika (všechny 38/38, zcela nedotčené).
+
 - **2026-09-22 — Mongolsko 39/39 ilustrací (40. otázka měla obrázek už dřív). 5 vad z 39: tři podpisy,
   doslovné slovo „blue" na vlajce, mantry na modlitebním mlýnku. Po opravě jeden podpis přibyl znovu.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Rizikové otázky o písmu prošly napoprvé:
