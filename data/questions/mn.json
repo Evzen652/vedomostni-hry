@@ -19,7 +19,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Ul%C3%A1nb%C3%A1tar",
   "source_card": "mn-mista-ulaanbaatar",
   "image_prompt": "Fotorealistický snímek moderního Ulánbátaru s tradičními jurtami na okraji města, zasněžené hory v pozadí, 16:9",
-  "about": "Ulánbátaru"
+  "about": "Ulánbátaru",
+  "irony_prompt": "A bundled-up city dweller fills the frame wearing so many layers that only two eyes peek out, thick icicles hanging from their scarf and eyelashes, walking past modern glass skyscrapers rimmed with frost. Smaller and subordinate: a distant ger camp with smoke frozen into a solid white plume; a small dog wearing tiny knitted boots trotting behind; snow drifts piled against a bus stop. MOOD: frozen, cozy, stoic."
  },
  {
   "id": "mn-q-karakorum",
@@ -41,7 +42,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Karakorum",
   "source_card": "mn-mista-karakorum",
   "image_prompt": "Fotorealistický snímek archeologických vykopávek v Karakorumu, kamenné sochy želv, klášter Erdene Zuu v pozadí, 16:9",
-  "about": "Karakorumu"
+  "about": "Karakorumu",
+  "irony_prompt": "A weathered stone tortoise statue fills the frame sitting placidly amid wind-blown grass where a mighty capital once stood, tumbleweeds catching on its shell. Smaller and subordinate: a monastery's colorful roof visible in the background; a lone shepherd walking past, uninterested; sheep grazing among low grassy mounds. MOOD: quiet, faded, ironic."
  },
  {
   "id": "mn-q-gobi",
@@ -63,7 +65,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Gobi",
   "source_card": "mn-mista-gobi",
   "image_prompt": "Fotorealistický snímek písečných dun pouště Gobi, v pozadí skalnaté pohoří, bez lidí, 16:9",
-  "about": "poušti Gobi"
+  "about": "poušti Gobi",
+  "irony_prompt": "A snow-dusted sand dune fills the frame with a bewildered two-humped camel standing on top wearing a knitted scarf, its breath visibly frosting in the air despite the bare dunes stretching behind it. Smaller and subordinate: a small icicle hanging from a lone thorny shrub; distant rocky mountains capped with snow; a pale winter sun blazing weakly overhead. MOOD: absurd, bone-chilling, deadpan."
  },
  {
   "id": "mn-q-step",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mongolian_Steppe",
   "source_card": "mn-priroda-step",
   "image_prompt": "Fotorealistický širokoúhlý snímek zelené mongolské stepi, stádo koní, nekonečná obloha, bez lidí, 16:9",
-  "about": "mongolských stepích"
+  "about": "mongolských stepích",
+  "irony_prompt": "A lone herder on horseback fills the frame, tiny against an enormous herd of sheep and goats stretching to every horizon, utterly outnumbered. Smaller and subordinate: a distant white ger with smoke curling from its roof; two colts play-fighting at the herd's edge; an eagle circling high above. MOOD: vast, timeless, pastoral."
  },
  {
   "id": "mn-q-kone",
@@ -107,7 +111,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/K%C5%AF%C5%88_P%C5%99evalsk%C3%A9ho",
   "source_card": "mn-priroda-kone",
   "image_prompt": "Fotorealistický snímek stáda koní Převalského v mongolské stepi, hnědé a bílé zbarvení, bez lidí, 16:9",
-  "about": "koni Převalského"
+  "about": "koni Převalského",
+  "irony_prompt": "A stocky wild horse with a thick dun coat and upright mane fills the frame, trotting proudly out of an open wooden shipping crate onto open grassland, as if just delivered. Smaller and subordinate: two zookeepers in the distance waving farewell; a smaller domestic horse watching curiously from behind a fence; loose straw scattered around its hooves. MOOD: triumphant, ironic, homecoming."
  },
  {
   "id": "mn-q-dzungar",
@@ -129,7 +134,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Mongolsko",
   "source_card": "mn-priroda-dzungar",
   "image_prompt": "Fotorealistický snímek sněžného levharta na skalnatém svahu v Mongolsku, 16:9",
-  "about": "divoké fauně Mongolska"
+  "about": "divoké fauně Mongolska",
+  "irony_prompt": "A snow leopard fills the frame, perfectly camouflaged against grey rocky cliffs, its spotted coat blending in so well that only its glowing eyes give it away. Smaller and subordinate: a small hidden camera trap strapped to a boulder nearby, its lens pointed the wrong way; a mountain goat grazing obliviously below; swirling snow drifting past the peaks. MOOD: elusive, wild, silent."
  },
  {
   "id": "mn-q-chingis-khan",
@@ -151,7 +157,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Chingisch%C3%A1n",
   "source_card": "mn-lide-chingis-khan",
   "image_prompt": "Fotorealistický snímek velké sochy Čingischána na koni, 16:9",
-  "about": "Čingischánovi"
+  "about": "Čingischánovi",
+  "irony_prompt": "A mounted Mongol khan in fur-trimmed robes fills the frame holding a single long rope that fans out behind him, tied to dozens of smaller horsemen from rival tribes all being reeled in together into one column. Smaller and subordinate: a fallen banner from a scattered clan lying in the grass; a vast horizon of open grassland; his cloak flapping hard in the wind. MOOD: commanding, unifying, epic."
  },
  {
   "id": "mn-q-suchbatar",
@@ -173,7 +180,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Damdin_S%C3%BChb%C3%A1tar",
   "source_card": "mn-lide-suchbatar",
   "image_prompt": "Fotorealistický snímek pomníku Damdina Süchbátara na náměstí v Ulánbátaru, 16:9",
-  "about": "Damdinu Süchbátarovi"
+  "about": "Damdinu Süchbátarovi",
+  "irony_prompt": "A bronze equestrian statue fills the frame, a revolutionary leader frozen mid-gallop atop his horse in the centre of a busy city square, pigeons perched along his outstretched arm. Smaller and subordinate: children playing tag around the statue's plinth; a street vendor's cart parked nearby; modern buildings framing the wide square. MOOD: proud, monumental, lively."
  },
  {
   "id": "mn-q-zapasnici",
@@ -195,7 +203,8 @@
   "source_url": "https://ich.unesco.org/en/RL/naadam-mongolian-traditional-festival-00395",
   "source_card": "mn-lide-zapasnici",
   "image_prompt": "Fotorealistický snímek dvou mongolských zápasníků v tradičních kostýmech zodog během Naadamu, 16:9",
-  "about": "mongolských zápasnících"
+  "about": "mongolských zápasnících",
+  "irony_prompt": "A massive triumphant wrestler fills the frame, a real lion's mane draped over his shoulders like a trophy cape and a small carved wooden elephant tucked proudly under one arm. Smaller and subordinate: a cheering crowd in the background; his tattered wrestling boots kicking up dust; a judge holding both arms up in victory. MOOD: triumphant, larger-than-life, proud."
  },
  {
   "id": "mn-q-naadam-kultura",
@@ -217,7 +226,8 @@
   "source_url": "https://ich.unesco.org/en/RL/naadam-mongolian-traditional-festival-00395",
   "source_card": "mn-kultura-naadam",
   "image_prompt": "Fotorealistický snímek slavnostního zahájení Naadamu, barevné kostýmy, vlajky, 16:9",
-  "about": "festivalu Naadam"
+  "about": "festivalu Naadam",
+  "irony_prompt": "A vast crowd in vividly colored ceremonial robes fills the frame at a summer festival's opening parade, tall horsetail standards raised high under a blazing midsummer sun. Smaller and subordinate: wrestlers warming up at the field's edge; archers testing their bowstrings; a line of saddled horses waiting nearby. MOOD: festive, sun-drenched, triumphant."
  },
  {
   "id": "mn-q-ger",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Yurt",
   "source_card": "mn-kultura-ger",
   "image_prompt": "Fotorealistický snímek mongolské jurty uprostřed stepi, kouř stoupá z komína, 16:9",
-  "about": "mongolské jurtě ger"
+  "about": "mongolské jurtě ger",
+  "irony_prompt": "A folded collapsible ger, its wooden lattice walls and thick felt covering strapped into a surprisingly small bundle, fills the frame balanced on a camel's back mid-stride across the steppe. Smaller and subordinate: a family walking alongside, one carrying the door frame; a half-erected ger already standing in the distance; sheep scattered nearby. MOOD: practical, nomadic, ingenious."
  },
  {
   "id": "mn-q-kostym",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Deel",
   "source_card": "mn-kultura-kostym",
   "image_prompt": "Fotorealistický snímek Mongola v tradičním déelu, červený plášť, vysoké boty, 16:9",
-  "about": "tradičním oděvu déel"
+  "about": "tradičním oděvu déel",
+  "irony_prompt": "A galloping horseman fills the frame wearing a loose flowing red robe that billows freely behind him without ever catching on the saddle, boots secure in the stirrups. Smaller and subordinate: a second rider close behind, laughing; wildflowers scattered across the grassland; the horse's mane flying in the wind. MOOD: free, swift, effortless."
  },
  {
   "id": "mn-q-chomej",
@@ -283,7 +295,8 @@
   "source_url": "https://ich.unesco.org/en/RL/naadam-mongolian-traditional-festival-00395",
   "source_card": "mn-umeni-chomej",
   "image_prompt": "Fotorealistický snímek mongolského zpěváka při hrdelním zpěvu, tradiční oděv, 16:9",
-  "about": "hrdelním zpěvu chöömej"
+  "about": "hrdelním zpěvu chöömej",
+  "irony_prompt": "A throat singer fills the frame mid-performance, two distinctly different ribbons of visible sound - one low and wide, one high and thin - swirling out of his mouth at the same time. Smaller and subordinate: a small audience sitting cross-legged, transfixed; a horsehead fiddle resting nearby; felt wall hangings of a ger in the background. MOOD: mesmerizing, otherworldly, calm."
  },
  {
   "id": "mn-q-morin",
@@ -305,7 +318,8 @@
   "source_url": "https://ich.unesco.org/en/RL/naadam-mongolian-traditional-festival-00395",
   "source_card": "mn-umeni-morin",
   "image_prompt": "Fotorealistický snímek hudebníka hrajícího na morin chuur, smyčec v ruce, 16:9",
-  "about": "nástroji morin chuur"
+  "about": "nástroji morin chuur",
+  "irony_prompt": "A traditional two-stringed fiddle fills the frame, its neck topped with a finely carved wooden horse head that seems to whinny along with the music, bow gliding across the strings. Smaller and subordinate: the musician's weathered hands in soft focus; a felt-covered stool; sunlight streaming through a ger's open roof ring. MOOD: soulful, resonant, warm."
  },
  {
   "id": "mn-q-malba",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mongolian_painting",
   "source_card": "mn-umeni-malba",
   "image_prompt": "Fotorealistický snímek tradiční mongolské malby zobrazující Čingischána na koni, 16:9",
-  "about": "mongolské malbě"
+  "about": "mongolské malbě",
+  "irony_prompt": "A painter fills the frame at an easel, one hand painting a serene seated deity on one half of a silk canvas while the other hand simultaneously paints galloping horses on the other half, the two halves blending seamlessly into one image. Smaller and subordinate: small pots of natural pigment nearby; a coiled incense stick trailing smoke from a plain bronze holder; a felt saddle blanket draped over a nearby stool. MOOD: harmonious, meditative, blended."
  },
  {
   "id": "mn-q-naadam-sport",
@@ -349,7 +364,8 @@
   "source_url": "https://ich.unesco.org/en/RL/naadam-mongolian-traditional-festival-00395",
   "source_card": "mn-sport-naadam",
   "image_prompt": "Fotorealistický snímek mongolského dostihu během Naadamu, děti na koních ve stepi, 16:9",
-  "about": "třech disciplínách Naadamu"
+  "about": "třech disciplínách Naadamu",
+  "irony_prompt": "A single Naadam athlete fills the frame doing all three sports at once - riding a galloping horse while grappling one arm around a wrestling opponent, and firing a bow with the other hand. Smaller and subordinate: a stunned judge staring in disbelief; the racecourse's dust cloud swirling behind; an arrow already stuck in a distant target. MOOD: comic, chaotic, athletic."
  },
  {
   "id": "mn-q-bokh",
@@ -371,7 +387,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/N%C3%A1dam",
   "source_card": "mn-sport-bokh",
   "image_prompt": "Fotorealistický snímek souboje dvou mongolských zápasníků na Naadamu, tradiční kroje, 16:9",
-  "about": "zápasu bökh"
+  "about": "zápasu bökh",
+  "irony_prompt": "Two wrestlers fill the frame locked in a fierce grip, one straining to keep his elbow a hair's breadth above the ground while the other pushes harder. Smaller and subordinate: a broken stopwatch lying forgotten and discarded in the dirt nearby; a referee frozen mid-shout; a small crowd leaning in tensely. MOOD: tense, dramatic, timeless."
  },
  {
   "id": "mn-q-lukostrelba",
@@ -393,7 +410,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/N%C3%A1dam",
   "source_card": "mn-sport-lukostrelba",
   "image_prompt": "Fotorealistický snímek mongolského lukostřelce při Naadamu, luk a šíp, step, 16:9",
-  "about": "mongolské lukostřelbě"
+  "about": "mongolské lukostřelbě",
+  "irony_prompt": "An archer fills the frame at full draw, bowstring taut, aiming across an enormous stretch of open steppe at a target so far away it's barely a speck on the horizon. Smaller and subordinate: a line of spectators shielding their eyes to watch; a quiver of feathered arrows at his hip; wind-blown grass bending sideways. MOOD: focused, epic-scaled, tense."
  },
  {
   "id": "mn-q-pismo",
@@ -415,7 +433,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Mongol%C5%A1tina",
   "source_card": "mn-jazyk-pismo",
   "image_prompt": "Fotorealistický snímek nápisu v tradičním mongolském písmu na buddhistickém chrámu, 16:9",
-  "about": "tradičním mongolském písmu"
+  "about": "tradičním mongolském písmu",
+  "irony_prompt": "A tightly rolled scroll fills the frame hanging straight down from a monk's raised hand like a young tree trunk, its outer covering completely blank and closed, never unrolled. Smaller and subordinate: a real sapling growing beside it in a matching straight vertical line; a second monk watching, hands folded; a temple gate in soft focus behind. MOOD: reverent, elegant, still."
  },
  {
   "id": "mn-q-slova",
@@ -437,7 +456,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Mongol%C5%A1tina",
   "source_card": "mn-jazyk-slova",
   "image_prompt": "Fotorealistický snímek tabule se základními mongolskými frázemi, 16:9",
-  "about": "mongolštině"
+  "about": "mongolštině",
+  "irony_prompt": "A herder fills the frame gesturing animatedly with both hands at a huge variety of horses around him - dun, piebald, grey, chestnut - each subtly different, clearly naming distinctions only he can see. Smaller and subordinate: a bewildered city visitor scratching his head, seeing only 'horses'; a cloud formation drifting overhead; tall grass rippling in the wind. MOOD: expressive, knowing, warm."
  },
  {
   "id": "mn-q-cyrilice",
@@ -459,7 +479,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Mongol%C5%A1tina",
   "source_card": "mn-jazyk-cyrilice",
   "image_prompt": "Fotorealistický snímek tabule s mongolskou cyrilicí v Ulánbátaru, 16:9",
-  "about": "mongolské cyrilici"
+  "about": "mongolské cyrilici",
+  "irony_prompt": "A pair of weathered hands fills the frame closing one thick book bound in one style of cover and immediately reaching to open a different book bound in another style, both covers completely plain and blank. Smaller and subordinate: the first book sliding onto a high shelf, already gathering dust; a lit oil lamp on the desk; a window showing distant government buildings. MOOD: transitional, deliberate, quiet."
  },
  {
   "id": "mn-q-buuz",
@@ -481,7 +502,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Buuz",
   "source_card": "mn-jidlo-buuz",
   "image_prompt": "Fotorealistický snímek košíku s buuz, plněné knedlíky, pára stoupá, 16:9",
-  "about": "buuz"
+  "about": "buuz",
+  "irony_prompt": "A steaming bamboo basket of plump round dumplings fills the frame, wisps of fragrant steam curling upward, one dumpling slightly larger than the rest as if extra proud. Smaller and subordinate: a fluffy sheep peering nervously around the kitchen doorway; a grandmother's flour-dusted hands mid-fold; a stack of empty baskets waiting nearby. MOOD: cozy, comforting, warm."
  },
  {
   "id": "mn-q-airag",
@@ -503,7 +525,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Kumys",
   "source_card": "mn-jidlo-airag",
   "image_prompt": "Fotorealistický snímek kumysu v tradiční kožené nádobě, 16:9",
-  "about": "nápoji airag"
+  "about": "nápoji airag",
+  "irony_prompt": "A round leather pouch of fermented mare's milk fills the frame being vigorously churned by a herder, pale foam bursting out the top and dripping down the sides. Smaller and subordinate: a mare standing nearby with a knowing, slightly offended expression; wooden bowls lined up ready to be filled; a ger's felt wall in soft focus behind. MOOD: earthy, communal, tangy."
  },
  {
   "id": "mn-q-khorkhog",
@@ -525,7 +548,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Khorkhog",
   "source_card": "mn-jidlo-khorkhog",
   "image_prompt": "Fotorealistický snímek přípravy khorkhog, kusy masa s kameny, oheň, 16:9",
-  "about": "pokrmu khorkhog"
+  "about": "pokrmu khorkhog",
+  "irony_prompt": "A large sealed cylindrical metal milk-can fills the frame with a herder dropping in a glowing red-hot stone using long tongs, steam hissing violently from under the rattling lid. Smaller and subordinate: a small pile of spare hot stones cooling nearby; a curious dog sniffing from a safe distance; a campfire crackling where the stones were heated. MOOD: sizzling, communal, primal."
  },
  {
   "id": "mn-q-rise",
@@ -547,7 +571,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Mongolsk%C3%A1_%C5%99%C3%AD%C5%A1e",
   "source_card": "mn-historie-rise",
   "image_prompt": "Fotorealistický snímek staré mapy Mongolské říše v maximálním rozsahu, 16:9",
-  "about": "vzniku Mongolské říše"
+  "about": "vzniku Mongolské říše",
+  "irony_prompt": "A newly proclaimed khan fills the frame standing tall on a raised platform as dozens of rival clan chiefs kneel below him, their separate clan banners being lowered while one single unified banner rises high above them all. Smaller and subordinate: a shaman burning incense to one side; a vast crowd stretching into the grassland; distant gers dotting the horizon. MOOD: monumental, unifying, historic."
  },
  {
   "id": "mn-q-sovetsky",
@@ -569,7 +594,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Mongolsk%C3%A1_lidov%C3%A1_republika",
   "source_card": "mn-historie-sovetsky",
   "image_prompt": "Fotorealistický snímek sovětského pomníku v Ulánbátaru, 16:9",
-  "about": "období sovětského vlivu"
+  "about": "období sovětského vlivu",
+  "irony_prompt": "An enormous brown bear fills the frame standing protectively - and a little possessively - over a small ger and grazing horses, its shadow stretching across the whole camp. Smaller and subordinate: a herder glancing up warily; distant snow-capped mountains marking the northern border; a worn dirt road leading off toward the horizon. MOOD: looming, uneasy, watchful."
  },
  {
   "id": "mn-q-nezavislost",
@@ -591,7 +617,8 @@
   "source_url": "https://cs.wikipedia.org/wiki/Mongolsko",
   "source_card": "mn-historie-nezavislost",
   "image_prompt": "Fotorealistický snímek státní vlajky Mongolska, 16:9",
-  "about": "vyhlášení nezávislosti Mongolska"
+  "about": "vyhlášení nezávislosti Mongolska",
+  "irony_prompt": "A massive ornate gate fills the frame swinging wide open as a lone horseman rides boldly out from behind it into open grassland, the gate's shadow still stretching from an enormous empire behind him. Smaller and subordinate: a torn length of red silk fluttering loose from the gatepost; a small crowd cheering from a distance; the gate's hinges groaning with rust. MOOD: liberating, defiant, dawning."
  },
  {
   "id": "mn-k-velbloud",
@@ -611,7 +638,8 @@
   "quip_correct": "Trefa! Dva hrby, žádný omyl — a v Gobi mu pomůžou přežít i osmdesátistupňový rozdíl mezi létem a zimou.",
   "quip_wrong": "Skoro, ale ne tak úplně — spočítej hrby znovu, jsou tam dva, ne jeden ani tři.",
   "explanation": "Velbloud v hrbech neskladuje vodu, jak si mnozí myslí, ale tuk. Z tuku pak tělo za sucha vyrábí energii i vodu. Baktrický velbloud se dvěma hrby snese i silný mráz, na rozdíl od dromedára s jedním hrbem.",
-  "about": "velbloudech v mongolské poušti"
+  "about": "velbloudech v mongolské poušti",
+  "irony_prompt": "A sturdy two-humped camel fills the frame standing proudly on a sandy dune, a delighted child perched between the humps holding up two fingers to count them. Smaller and subordinate: a second camel resting nearby, chewing lazily; rippling dunes stretching to the horizon; a small water skin hanging from the saddle. MOOD: playful, cheerful, sunny."
  },
  {
   "id": "mn-k-vlajka",
@@ -631,7 +659,8 @@
   "quip_correct": "Bystrý postřeh! Modrá vévodí přesně uprostřed vlajky, mezi dvěma červenými pruhy.",
   "quip_wrong": "Ještě ne tentokrát — podívej se znovu doprostřed vlajky, tam, kde čekáš červenou, svítí modrá.",
   "explanation": "Mongolská vlajka má tři svislé pruhy: červený, modrý a červený. Vlevo na červené stojí zlatý symbol sojombo — starobylý znak nezávislosti Mongolska. Modrá barva symbolizuje Věčné modré nebe, které Mongolové uctívají jako posvátnou sílu.",
-  "about": "mongolské vlajce"
+  "about": "mongolské vlajce",
+  "irony_prompt": "A large flag fills the frame with three bold vertical stripes - deep red, a vivid sky-blue band filling the middle, and deep red again - rippling proudly in a strong steppe wind. Smaller and subordinate: a small golden flame-shaped emblem glowing on the left red stripe; a flagpole rope snapping taut; a wide open sky behind. MOOD: bold, proud, bright."
  },
  {
   "id": "mn-k-ger-jmeno",
@@ -652,7 +681,8 @@
   "quip_wrong": "Zkus si to představit jinak – kempovací stan by vítr na stepi rozfoukal, iglú by roztálo a chatrč na kůlech se pastevci nedá vzít s sebou. Ger je stavěný přesně na časté stěhování.",
   "explanation": "Ger stojí na dřevěné mřížkové stěně pokryté plstěnými dekami z ovčí vlny; kulatý tvar mu pomáhá odolávat silným stepním větrům.",
   "about": "mongolském stanu ger",
-  "image_prompt": "A painterly watercolor gouache illustration of mongolském stanu ger, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of mongolském stanu ger, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A round felt-covered ger fills the frame springing up almost by magic, its wooden lattice walls unfolding as a family works together in a blur of motion to raise the roof ring into place. Smaller and subordinate: a modern canvas tent lying half-collapsed and abandoned nearby for comparison; sheep grazing calmly, unbothered by the rush; a small dog running excited circles around the site. MOOD: swift, cheerful, ingenious."
  },
  {
   "id": "mn-t-hlavni-mesto",
@@ -672,7 +702,8 @@
   "quip_correct": "Trefa přímo do srdce Mongolska — jméno Ulánbátar totiž znamená Červený hrdina.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — Karakorum by tě dovedl jen do historických knih, dnešní hlavní adresa zní Ulánbátar.",
   "explanation": "V Ulánbátaru žije zhruba 1,5 milionu lidí — skoro polovina všech obyvatel Mongolska. Zvláštností města je, že vedle moderních budov stojí na jeho okrajích tisíce tradičních jurt.",
-  "about": "Ulánbátaru"
+  "about": "Ulánbátaru",
+  "irony_prompt": "A caped hero in flowing red fabric fills the frame standing triumphantly atop a hill overlooking a sprawling city skyline, one fist on hip in a classic heroic pose. Smaller and subordinate: modern glass towers mixed with rows of white gers on the city's edge; pigeons scattering from his cape's shadow; distant mountains ringing the valley. MOOD: heroic, proud, sunlit."
  },
  {
   "id": "mn-t-khuvsgul",
@@ -694,7 +725,8 @@
   "explanation": "Jezero Chövsgöl obsahuje asi 70 % veškeré sladké vody Mongolska a je tak čisté, že je vidět hluboko pod hladinu.",
   "source_url": "https://en.wikipedia.org/wiki/Kh%C3%B6vsg%C3%B6l_Lake",
   "image_prompt": "Fotorealistický snímek jezera Chövsgöl obklopeného zalesněnými horami, čistá modrá voda, bez lidí, 16:9",
-  "about": "jezeře Chövsgöl"
+  "about": "jezeře Chövsgöl",
+  "irony_prompt": "A herder fills the frame kneeling at a lake's edge, cupping crystal-clear water to drink straight from his hands, fish clearly visible swimming far below the glassy surface. Smaller and subordinate: forested mountains reflecting perfectly in the still water; a small wooden boat resting on the shore; a heron standing motionless nearby. MOOD: pristine, tranquil, pure."
  },
  {
   "id": "mn-k-jizda-na-koni",
@@ -716,7 +748,8 @@
   "explanation": "Jízda na koni je pro mongolské děti na stepi tak přirozená součást dětství jako pro jiné děti jízda na kole, malí jezdci pak závodí i při Naadamu.",
   "source_url": "https://en.wikipedia.org/wiki/Naadam",
   "image_prompt": "Fotorealistický snímek malého mongolského dítěte jedoucího na koni po stepi, dospělý nablízku, 16:9",
-  "about": "jízdě mongolských dětí na koni"
+  "about": "jízdě mongolských dětí na koni",
+  "irony_prompt": "A tiny toddler fills the frame sitting confidently in a saddle atop a calm horse, chubby hands gripping the reins like an old pro, a proud grin on their face. Smaller and subordinate: a parent walking alongside holding a lead rope just in case; a slightly older sibling cheering from the grass; the family ger in soft focus behind. MOOD: adorable, confident, joyful."
  },
  {
   "id": "mn-k-zodog",
@@ -738,7 +771,8 @@
   "explanation": "Zodog patří k tradičnímu kostýmu mongolského zápasu bökh spolu s vysokými botami a malými plátěnými kalhotami, celý kostým se prakticky nezměnil po staletí.",
   "source_url": "https://en.wikipedia.org/wiki/Mongolian_wrestling",
   "image_prompt": "Fotorealistický snímek mongolského zápasníka v tradiční otevřené vestě zodog před zápasem, 16:9",
-  "about": "kostýmu mongolských zápasníků"
+  "about": "kostýmu mongolských zápasníků",
+  "irony_prompt": "A muscular wrestler fills the frame in a traditional open-chested vest, chest puffed out with theatrical pride, both arms raised to show off unmistakably. Smaller and subordinate: two rival wrestlers striking the exact same pose nearby, equally proud; a judge nodding in approval; a small crowd of onlookers grinning. MOOD: comic, boastful, proud."
  },
  {
   "id": "mn-k-tsam",
@@ -760,7 +794,8 @@
   "explanation": "Tanec tsam se v Mongolsku odehrává při klášterních slavnostech pod širým nebem, masky mohou vážit i několik kilogramů a představují ochranná i děsivá božstva buddhismu.",
   "source_url": "https://en.wikipedia.org/wiki/Tsam",
   "image_prompt": "Fotorealistický snímek mongolských mnichů v obřích barevných maskách při tanci tsam před klášterem, 16:9",
-  "about": "tanci tsam"
+  "about": "tanci tsam",
+  "irony_prompt": "A monk fills the frame mid-leap in a dramatic dance, wearing an enormous colorful demon mask with bulging eyes and curling horns, heavy robes swirling around him. Smaller and subordinate: fellow masked dancers spinning in the background, each a different creature; monastery banners fluttering above; a hushed crowd watching from the courtyard steps. MOOD: dramatic, otherworldly, thrilling."
  },
  {
   "id": "mn-k-jmena",
@@ -782,7 +817,8 @@
   "explanation": "Dědičná příjmení zavedlo Mongolsko celostátně teprve na konci 90. let 20. století, předtím se lidé odlišovali hlavně jménem otce a příslušností ke klanu.",
   "source_url": "https://en.wikipedia.org/wiki/Mongolian_name",
   "image_prompt": "Fotorealistický snímek mongolské rodiny před jurtou, 16:9",
-  "about": "mongolských jménech"
+  "about": "mongolských jménech",
+  "irony_prompt": "A herder fills the frame proudly pointing at himself, while behind him his father points at himself too, and his father's father does the same further back, a chain of pointing men stretching into the distance instead of any family nameplate. Smaller and subordinate: a puzzled foreign visitor holding a blank notepad, unsure what to write; grazing horses nearby; a ger with smoke rising. MOOD: playful, proud, timeless."
  },
  {
   "id": "mn-k-suutei-tsai",
@@ -804,7 +840,8 @@
   "explanation": "Suutei tsai se vaří z cihlového čaje, mléka a špetky soli, v mongolských rodinách se jím obvykle vítají hosté hned při vstupu do jurty.",
   "source_url": "https://en.wikipedia.org/wiki/Suutei_tsai",
   "image_prompt": "Fotorealistický snímek misky mongolského slaného čaje s mlékem na dřevěném stole v jurtě, 16:9",
-  "about": "mongolském čaji suutei tsai"
+  "about": "mongolském čaji suutei tsai",
+  "irony_prompt": "A round wooden bowl of pale milky tea fills the frame being poured in a long steaming stream, and a first-time visitor's face nearby scrunches up in surprise at the salty taste. Smaller and subordinate: a kettle simmering over a small stove; a plate of dried curds waiting alongside; felt wall hangings softly lit behind. MOOD: warm, surprising, hospitable."
  },
  {
   "id": "mn-k-zlaty-orel-lovec",
@@ -826,7 +863,8 @@
   "explanation": "Lovci si nejvíc cení samic orlů, protože jsou větší a silnější než samci.",
   "source_url": "https://en.wikipedia.org/wiki/Golden_Eagle_Festival",
   "image_prompt": "Fotorealistický snímek mongolského lovce v teplém kožichu s obrovským zlatým orlem na paži, v zasněžených horách pohoří Altaj, 16:9",
-  "about": "mongolských lovcích se zlatými orly"
+  "about": "mongolských lovcích se zlatými orly",
+  "irony_prompt": "A fur-clad hunter fills the frame on horseback with an enormous golden eagle perched proudly on his outstretched arm, its wings half-spread against the wind. Smaller and subordinate: a rifle left leaning unused against a rock nearby; jagged snow-capped peaks rising behind; the eagle's fierce eyes fixed on something far below. MOOD: majestic, wild, ancient."
  },
  {
   "id": "mn-k-socha-cingischana-na-koni",
@@ -848,7 +886,8 @@
   "explanation": "Uvnitř sochy vede výtah a schody až na hřívu koně, odkud je výhled do širé stepi.",
   "source_url": "https://en.wikipedia.org/wiki/Genghis_Khan_Equestrian_Statue",
   "image_prompt": "Fotorealistický snímek obrovské lesklé stříbrné jezdecké sochy Čingischána na koni tyčící se nad mongolskou stepí za slunečného dne, 16:9",
-  "about": "soše Čingischána na koni u Ulánbátaru"
+  "about": "soše Čingischána na koni u Ulánbátaru",
+  "irony_prompt": "A colossal gleaming silver statue of a horseman fills the frame, so enormous that tiny visitors can be seen climbing a staircase up the horse's flowing mane to a viewing platform. Smaller and subordinate: tour buses parked like toys far below; the steppe stretching flat to the horizon; sunlight blazing off the polished silver surface. MOOD: awe-inspiring, colossal, gleaming."
  },
  {
   "id": "mn-k-aaruul-suseny-tvaroh",
@@ -870,6 +909,7 @@
   "explanation": "Aaruul se suší celé léto na sluníčku na střeše jurty, aby mléko vydrželo na dlouhou zimu.",
   "source_url": "https://en.wikipedia.org/wiki/Aaruul",
   "image_prompt": "Fotorealistický snímek hromádky bílých sušených tvarohových kousků aaruul rozložených na plátně na sluníčku před mongolskou jurtou, 16:9",
-  "about": "sušeném mléčném pamlsku aaruul"
+  "about": "sušeném mléčném pamlsku aaruul",
+  "irony_prompt": "A child fills the frame with cheeks comically puffed out, determinedly sucking on a large hard white curd lump like it's the toughest candy in the world. Smaller and subordinate: a woven tray piled with more curd pieces drying in the sun; a ger's felt wall behind; a dog watching hopefully, waiting for a dropped piece. MOOD: playful, sunny, wholesome."
  }
 ]

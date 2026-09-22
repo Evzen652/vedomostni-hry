@@ -81,6 +81,44 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-22 — Mongolsko 39/39 ilustrací (40. otázka měla obrázek už dřív). 5 vad z 39: tři podpisy,
+  doslovné slovo „blue" na vlajce, mantry na modlitebním mlýnku. Po opravě jeden podpis přibyl znovu.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Rizikové otázky o písmu prošly napoprvé:
+  `mn-q-pismo` (jediné svislé písmo světa) má jen TĚSNĚ SVINUTÝ svitek visící jako strom, nikdy
+  rozvinutý; `mn-q-cyrilice` (přechod na cyrilici 1941) řeší výměna dvou ZAVŘENÝCH knih se zcela
+  holými deskami — stejný princip jako korejské zavřené svazky a rumunská cyrilice. Symbolická
+  náhrada reálné osoby fungovala i tady: Čingischán a Süchbátar jsou v zadání jen „mounted Mongol
+  khan"/„revolutionary leader", nikdy jmenovaní přímo — Gemini tak nemusel kreslit podobu.
+  - **NOVÝ TYP VADY: modlitební mlýnek si vyžádal SKUTEČNÉ mantry.** `mn-q-malba` mělo ve vedlejším
+    gagu „a prayer wheel spinning" bez jediné zmínky o textu — model přesto vyryl na buben čitelné
+    (byť nesmyslné) písmo připomínající dévanágarí, protože reálné modlitební mlýnky mantry NESOU.
+    Stejný mechanismus jako u pojmenovaného typu podniku (Švédsko) nebo účelu věci (Izrael), jen
+    poprvé u NÁBOŽENSKÉHO rekvizity. Oprava: mlýnek ze scény úplně pryč (nahrazen tyčinkou kadidla
+    v hladkém bronzovém držáku) — `left blank` by tu podle zkušenosti z Švýcarska stejně nepomohlo.
+  - **Past, kterou jsem si vyrobil sám: „reading clearly as blue" se přečetlo jako pokyn napsat
+    slovo „blue".** `mn-k-vlajka` mělo podle poučení z 21. 9. („u vlajky pojmenuj přesný odstín a
+    řekni, že má být vidět") větu „a wide sky-blue stripe reading clearly as blue right in the
+    middle" — model vážně napsal anglické slovo BLUE doprostřed modrého pruhu. Sloveso „reading as"
+    je slovní spojení o ČTENÍ, a to si o text řekne úplně stejně jako „showing/saying/spelling".
+    Oprava: „a vivid sky-blue band filling the middle" — popsat barvu jako FAKT o ploše, ne jako
+    něco, co se dá „přečíst". Po opravě čistá vlajka s prostým plaménkovým emblémem (sojombo
+    zjednodušený na plamínek, aby nevznikl prostor pro další písmenkové pokušení).
+  - **3 vymyšlené podpisy** (`mn-q-dzungar` na skále vedle fotopasti, `mn-q-khorkhog` u tlapek psa,
+    `mn-t-khuvsgul` v pravém dolním rohu) — první dva spravilo přeposlání stejného zadání napoprvé.
+  - **`mn-t-khuvsgul` dostal PO OPRAVĚ nový, jiný podpis na tomtéž místě** — potvrzuje pravidlo
+    „jedna oprava umí vyrobit nový náhodný podpis, kontroluj znovu i po cílené opravě". Řešeno
+    ořezem (horních 700 řádků, zpět na 1344×768) místo třetího placeného pokusu — ušetřilo se tím
+    negenerovat znovu jen kvůli podpisu 40 px nad okrajem.
+  - **Past v samotném provozu dávky, ne v zadání: `cekej-davka.js` spuštěný přes `&` uvnitř
+    jednoho backgroundovaného Bash příkazu skončí okamžitě, ne až po dokončení.** Bashový nástroj
+    s `run_in_background: true` sleduje CELÝ shell, který se s `&` na konci hned vrátí (echo doběhne
+    a proces na pozadí osiří) — task-notification pak přijde prakticky ihned, ale dávka pořád běží.
+    Řešení: pustit `node scripts/ilustrace/cekej-davka.js` jako JEDINÝ příkaz s `run_in_background:
+    true` (bez `&` uvnitř) — pak nástroj sleduje přímo ten proces a notifikace přijde až po
+    doběhnutí (potvrzeno na dvou dávkách týž den).
+  - **Fond 3 742 otázek: bez ilustrace zbývá 322.** Další v pořadí (bez zadání): Mexiko, Nový
+    Zéland, Tchaj-wan, Jižní Afrika (všechny 38/38, zcela nedotčené).
+
 - **2026-09-21 — Belgie 42/42 ilustrací. 5 vad ze 40: pět podpisů, u cyklistiky navíc cizí vlajky, které zadání vůbec nechtělo.**
   Zadání psaná v session, `lint-irony` 0 chyb. **Komiksové postavy (Tintin, Šmoulové, Lucky Luke)
   se schválně nekreslí** — jsou chráněné: Tintin = kreslířský stůl s PRÁZDNÝMI políčky, teriér

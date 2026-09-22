@@ -1,15 +1,15 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **22. 9. večer** po Finsku, Gabonu, Peru, USA,
-Austrálii, Brazílii, Chile, Ekvádoru, Fidži, Indii a Keni — všech 11 zemí HOTOVO 100 %).
+Sepsáno **12. září 2026** (aktualizováno **22. 9. večer** po Mongolsku — 12. hotové zemi
+z fronty, 100 %).
 Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení a rozhodnutí jsou
 v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko), **2026-09-12**
 (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie, Slovensko,
 Nizozemsko), **2026-09-13** (Švýcarsko, Řecko, Bulharsko, Španělsko, Ukrajina, Rumunsko,
 Thajsko, Turecko, Irsko, Izrael, Jižní Korea), **2026-09-21** (Malajsie, Pákistán,
-Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina, Belgie)
-a **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži,
-Indie, Keňa).
+Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina, Belgie),
+**2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži,
+Indie, Keňa) a **2026-09-22 večer** (Mongolsko).
 
 ---
 
@@ -22,8 +22,8 @@ Indie, Keňa).
    git pull
    npm install
    ```
-   Poslední commit ilustrací je Keňa; `git log --oneline -3` musí ukázat
-   commit „Kena: 39/39 ilustraci, 5 vad opraveno…“. **Pracovní strom má být
+   Poslední commit ilustrací je Mongolsko; `git log --oneline -3` musí ukázat
+   commit o Mongolsku (39/39 ilustrací). **Pracovní strom má být
    čistý** — žádná dávka neběží a `.batch-irony.json` ukazuje na dokončenou dávku.
 2. **Vložit klíč Gemini do `.dev.vars`** (gitignorovaný, na druhý stroj NEPŘEJDE). Vzor je
    v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **Kredit byl 22. 9. dobitý a funguje** —
@@ -35,27 +35,27 @@ Indie, Keňa).
    npm run test:offline
    npm run lint-irony
    ```
-   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **361**.
-4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — všech 11 zemí z fronty
-   21.–22. 9. je hotovo. **První krok další session: napsat `irony_prompt` pro novou zemi**
-   (Mongolsko `mn`, 40 otázek, je další v pořadí a je zatím úplně nedotčené — ani jedno
-   zadání). Postup psaní zadání je v bodu 5 níž.
-5. **Po Mongolsku pokračovat** dalšími zeměmi v pořadí podle `bezImg` z tabulky v bodu 1
-   (Mexiko, Nový Zéland, Tchaj-wan, Jižní Afrika mají taky 38/38 ještě bez jediného
-   zadání — všechny čtyři plně nedotčené, výběr pořadí je libovolný).
+   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **322**.
+4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — Mongolsko je hotové. **První
+   krok další session: napsat `irony_prompt` pro novou zemi** (Mexiko `mx`, 38 otázek, je
+   další v pořadí a je zatím úplně nedotčené — ani jedno zadání). Postup psaní zadání je
+   v bodu 5 níž.
+5. **Po Mexiku pokračovat** dalšími zeměmi v pořadí (Nový Zéland, Tchaj-wan, Jižní Afrika
+   mají taky 38/38 ještě bez jediného zadání — všechny tři plně nedotčené, výběr pořadí je
+   libovolný).
 
 ---
 
-## 1. Stav k 22. 9. 2026 (večer)
+## 1. Stav k 22. 9. 2026 (večer, po Mongolsku)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **361** |
-| Hotovo 22. 9. | Finsko 42/42, Gabon 41/41, Peru 40/40, USA 40/40, Austrálie 38/38, Brazílie 38/38, Chile 39/39, Ekvádor 39/39, Fidži 39/39, Indie 39/39, Keňa 39/39 — **11 zemí, všechny 100 %** |
-| **Zadání čekající na obrázky** | žádná — fronta z 21.–22. 9. je celá vyčerpaná |
-| Další v pořadí (bez zadání) | Mongolsko 40, Mexiko 38, Nový Zéland 38, Tchaj-wan 38, Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
-| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~15 dávkách týž den. |
+| Bez ilustrace | **322** |
+| Hotovo 22. 9. | Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži, Indie, Keňa, **Mongolsko 39/39 (+1 měla obrázek dřív)** — **12 zemí, všechny 100 %** |
+| **Zadání čekající na obrázky** | žádná — fronta je celá vyčerpaná |
+| Další v pořadí (bez zadání) | Mexiko 38, Nový Zéland 38, Tchaj-wan 38, Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
+| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~17 dávkách týž den. |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -77,7 +77,18 @@ a skončí, jakmile je hotovo), puštěný na pozadí.
 Další země nemají `irony_prompt`, takže se nejdřív píšou zadání (v session, zadarmo),
 pak `npm run lint-irony` (0 chyb), a teprve pak `submit --cc id`.
 
-**Na co si při psaní zadání dát pozor — nové z 21. 9.:**
+**Na co si při psaní zadání dát pozor — nové z 22. 9. (Mongolsko):**
+- **„Reading clearly as [barva]" se přečte jako pokyn NAPSAT tu barvu slovem.** Snaha
+  poučení z 21. 9. („řekni, že barva má být vidět") dovést až k „reading clearly as blue"
+  vyrobila na mongolské vlajce doslovné anglické slovo BLUE. Sloveso „read/reading" u barvy
+  nebo plochy je past stejná jako „written"/"label" — popiš barvu jako FAKT o ploše
+  („a vivid sky-blue band filling the middle"), nikdy jako něco, co se dá „přečíst".
+- **Modlitební mlýnek (a podobné NÁBOŽENSKÉ rekvizity s pevně spojeným textem) se do
+  vedlejšího gagu nesmí dostat vůbec** — reálné mlýnky nesou mantry, model je vyryje i bez
+  jediné zmínky o textu v zadání. Stejné pravidlo jako u espresso baru či „export permit":
+  když věc v realitě VŽDY nese text, ani „left blank" nepomůže, věc musí ze scény zmizet.
+
+**Na co si při psaní zadání dát pozor — z 21. 9.:**
 - **Vlajka: jmenuj ODSTÍN, který sedí do palety, a řekni, že má být vidět** („deep brick red
   … the red clearly reading as red“). Samotné „red and white“ tlumená paleta přebije
   (malajsijská vlajka vyšla dvakrát krémově-tyrkysová).
@@ -295,15 +306,26 @@ neodstraní.
 - **NOVINY na stole si o text řeknou vždycky** (Vietnam, `vn-k-kava`) — stejná past jako
   italské Giro d'Italia, jen v jiné zemi. Noviny z vedlejšího gagu úplně pryč, nahrazeno
   rohoží z ratanu.
+- **Sloveso „reading as [barva]" vyrobí doslovné slovo té barvy** (Mongolsko, `mn-k-vlajka`:
+  „reading clearly as blue" → anglické „BLUE" napsané na vlajce). Past stejné rodiny jako
+  „written"/„label", jen u barvy místo u předmětu — popisuj barvu jako fakt o ploše, ne
+  jako něco k „přečtení".
+- **Modlitební mlýnek (a další nábožensky vázané rekvizity) si vyžádá skutečné mantry
+  i BEZ zmínky o textu** (Mongolsko, `mn-q-malba`) — reálný předmět má text pevně spojený
+  se svou identitou, takže se nesmí dostat do scény vůbec, ani jako „left blank". Řešeno
+  úplným vynecháním (nahrazeno tyčinkou kadidla).
+- **I po opravě jedné vady může na TOTÉŽ místo přijít NOVÝ náhodný podpis** (Mongolsko,
+  `mn-t-khuvsgul`, potvrzeno podruhé po Řecku/Nizozemsku) — kontroluj znovu i po cíleném
+  přeposlání. Když leží blízko okraje, ořez je levnější než třetí placené generování.
 
 ---
 
 ## 6. Co dělat dál
 
-**Fronta z 21.–22. 9. je celá hotová (11 zemí, 100 %).** Žádná země teď nemá zadání
-čekající na obrázky — první krok je vždycky napsat nová zadání.
+**Mongolsko je hotové (100 %).** Žádná země teď nemá zadání čekající na obrázky —
+první krok je vždycky napsat nová zadání.
 
-1. **Napsat zadání pro Mongolsko** (40 otázek, úplně nedotčené) — v session, podle
+1. **Napsat zadání pro Mexiko** (38 otázek, úplně nedotčené) — v session, podle
    poučení v bodu 2/5 tohohle souboru.
    Zadání se píšou do JSON mapy `{id: scéna}` (do scratchpadu) a do dat je zapíše
    `node scripts/ilustrace/zapis-prompty.js xx mapa.json`.
@@ -313,6 +335,12 @@ neodstraní.
    jen po `img/`).
 5. Po každé zemi: zápis do CLAUDE.md (nejnovější nahoře, hned po intro řádku), `validate`,
    `test:offline`, commit + push na `claude/pokracujeme-e79708`.
+
+**Past s čekáním na dávku (Mongolsko, 22. 9.):** `node scripts/ilustrace/cekej-davka.js`
+spusť jako JEDINÝ příkaz s `run_in_background: true` u Bash nástroje, BEZ `&` na konci
+uvnitř příkazu. Když se `&` použije uvnitř backgroundovaného příkazu, nástroj sleduje
+celý shell, který se s `&` vrátí okamžitě — notifikace přijde ihned, ale dávka pořád běží
+a `fetch` pak hlásí „BATCH_STATE_RUNNING".
 
 **PAST 22. 9., ať se neopakuje: `git commit` po opravě zadání musí sáhnout i po
 `data/questions/xx.json`, ne jen po `img/`.** Třikrát se stalo, že se commitly jen nové
