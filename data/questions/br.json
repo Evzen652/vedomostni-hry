@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Amazon_rainforest",
   "source_card": "br-mista-amazon",
   "image_prompt": "Fotorealistický letecký snímek amazonského pralese — nekonečný zelený baldachýn s řekou meandrující krajinou, bez lidí, 16:9",
-  "about": "Amazonském pralese"
+  "about": "Amazonském pralese",
+  "irony_prompt": "A single vast green treetop canopy fills the frame stretching to every horizon, and scattered across its surface are countless tiny silhouettes of different animals — birds, monkeys, a jaguar's tail, a butterfly — each occupying its own leafy patch like pieces of one enormous puzzle covering roughly a third of the whole scene. Smaller and subordinate: a macaw taking flight from one corner of the canopy; a thin river glinting through a gap in the trees; morning mist rising between two hills. MOOD: teeming, vast, alive."
  },
  {
   "id": "br-q-rio",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro",
   "source_card": "br-mista-rio",
   "image_prompt": "Fotorealistický snímek Ria de Janeira — socha Krista Spasitele na hoře Corcovado nad zálivem Guanabara, západ slunce, dramatické světlo, 16:9",
-  "about": "Riu de Janeiru"
+  "about": "Riu de Janeiru",
+  "irony_prompt": "A steep, narrow strip of land fills the frame wedged tightly between a looming green mountain on one side and the flat blue ocean on the other, colourful houses stacked and squeezed onto every possible ledge from the shoreline up to the peak. Smaller and subordinate: a cable car crossing high above the crowded rooftops; a narrow winding street switchbacking up the mountainside; fishing boats bobbing in the small strip of water left at the bottom. MOOD: vertical, vibrant, compressed."
  },
  {
   "id": "br-q-pantanal",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pantanal",
   "source_card": "br-mista-pantanal",
   "image_prompt": "Fotorealistický snímek Pantanalu při rozlití — vodní plocha se stromy, kajman na břehu, ranní mlha, přirozené světlo, 16:9",
-  "about": "Pantanalu"
+  "about": "Pantanalu",
+  "irony_prompt": "A vast wetland plain fills the frame completely submerged under a thin sheet of reflective floodwater, countless herons and storks wading and feeding across its glassy surface. Smaller and subordinate: a caiman drifting lazily between two feeding birds; fish visible just beneath the water's surface, drawn by the seasonal flood; a lone capybara standing knee-deep, watching. MOOD: abundant, reflective, teeming."
  },
  {
   "id": "br-q-amazonbio",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Amazon_River",
   "source_card": "br-priroda-amazonbio",
   "image_prompt": "Fotorealistický snímek amazonského pralese ze spodku — světlo pronikající přes vrstvy listí do hustého porostu, žabí perspektiva, přirozené světlo, 16:9",
-  "about": "biodiverzitě Amazonie"
+  "about": "biodiverzitě Amazonie",
+  "irony_prompt": "A wide river cross-section fills the frame showing an impossibly dense, layered school of countless different fish species all swimming together, each one a slightly different shape and colour, packed shoulder to shoulder from surface to riverbed. Smaller and subordinate: a fisherman's canoe paddle dipping in from the surface above, barely disturbing the crowded water; a turtle threading carefully between two larger fish; sunlight filtering down in beams through the crowd. MOOD: teeming, vivid, abundant."
  },
  {
   "id": "br-q-cerrado",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cerrado",
   "source_card": "br-priroda-cerrado",
   "image_prompt": "Fotorealistický snímek brazilského cerrada — torzovité stromy se zkroucenou kůrou, travnatá savana, dramatické suché světlo, bez lidí, 16:9",
-  "about": "cerradu"
+  "about": "cerradu",
+  "irony_prompt": "A single tough, twisted savanna shrub fills the frame growing from cracked dry earth above ground, while below the surface in cutaway view its roots plunge down through countless metres of soil layers to reach a distant pool of groundwater far beneath. Smaller and subordinate: a small fire licking harmlessly across the parched surface, the shrub's leaves untouched; an armadillo digging nearby, unaware of the roots' true depth; a hawk circling in the hazy sky above. MOOD: resilient, dry, deep-rooted."
  },
  {
   "id": "br-q-chapada",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Chapada_Diamantina",
   "source_card": "br-priroda-amanhecer",
   "image_prompt": "Fotorealistický snímek tabulových hor Chapada Diamantina v Bahii — dramatické skalní stěny a vodopád do džungle pod nimi, přirozené světlo, 16:9",
-  "about": "Chapada Diamantina"
+  "about": "Chapada Diamantina",
+  "irony_prompt": "A dramatic tabletop mountain fills the frame with sheer cliff faces and a thundering waterfall spilling off its rim, a scattering of rough uncut gemstones glinting among the rocks at its base. Smaller and subordinate: an old prospector's abandoned sieve and pan resting half-buried in the streambed; a hiker standing at a lookout admiring the plateau; a cave mouth just visible in the cliff face. MOOD: dramatic, glinting, wild."
  },
  {
   "id": "br-q-indigenni",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Indigenous_peoples_in_Brazil",
   "source_card": "br-lide-indigenni",
   "image_prompt": "Fotorealistický snímek amazonské vesnice s tradičními domy a kanoemi na říčním břehu, džungle za ní, přirozené světlo, 16:9",
-  "about": "domorodých národech Amazonie"
+  "about": "domorodých národech Amazonie",
+  "irony_prompt": "A dense, untouched stretch of rainforest fills the frame with a single gentle glowing boundary line drawn around it like a protective ribbon of light, respectfully keeping the world outside. Smaller and subordinate: a government ranger's small boat patrolling the boundary river without crossing it; a distant column of smoke rising from within, the only sign of life inside the protected zone; a toucan flying freely across the glowing line in either direction. MOOD: respectful, protective, quiet."
  },
  {
   "id": "br-q-pele",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pel%C3%A9",
   "source_card": "br-lide-pelé",
   "image_prompt": "Fotorealistický snímek Brazílie fotbalového stadionu Maracanã ve slavnostním osvětlení — symbol brazilského fotbalu, přirozené světlo, 16:9",
-  "about": "Pelému"
+  "about": "Pelému",
+  "irony_prompt": "Three identical golden trophies fill the frame lined up on a shelf, each engraved with nothing but a plain star shape, a single worn leather football resting proudly in front of them all. Smaller and subordinate: a pair of well-worn football boots placed neatly beneath the shelf; a young boy's silhouette in a doorway gazing up at the trophies in awe; sunlight catching the gold surfaces. MOOD: triumphant, proud, legendary."
  },
  {
   "id": "br-q-oscar",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Oscar_Niemeyer",
   "source_card": "br-lide-oscar",
   "image_prompt": "Fotorealistický snímek Kongresového paláce v Brasílii od Niemeyera — dvě věže a misky na rovné plošině, dramatická moderní architektura, přirozené světlo, 16:9",
-  "about": "Oscaru Niemeyerovi"
+  "about": "Oscaru Niemeyerovi",
+  "irony_prompt": "A cluster of sweeping white concrete buildings fills the frame with impossibly smooth curved roofs and soaring columns, rising like sculpture from an open plaza under a brilliant blue sky. Smaller and subordinate: an architect's drafting compass and curved ruler resting on a rolled blueprint nearby; a tiny figure walking dwarfed beneath one soaring column; a reflecting pool mirroring the curved white forms perfectly. MOOD: futuristic, sweeping, luminous."
  },
  {
   "id": "br-q-karneval",
@@ -217,7 +226,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Samba_school",
   "source_card": "br-kultura-karneval",
   "image_prompt": "Fotorealistický snímek sambového průvodu na karnevalu v Riu — barevné kostýmy a alegorické vozy na sambodromu, noční světla, 16:9",
-  "about": "brazilském karnevalu"
+  "about": "brazilském karnevalu",
+  "irony_prompt": "A modest community hall fills the frame in a hillside neighbourhood, its open doors spilling warm light and music, dozens of people inside stitching enormous sequinned costumes and painting a towering parade float together. Smaller and subordinate: a calendar on the wall with almost every month crossed off in preparation; children peeking in through the open door, delighted; feathers and sequins scattered across every surface. MOOD: communal, industrious, joyful."
  },
  {
   "id": "br-q-candomble",
@@ -239,7 +249,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Candombl%C3%A9",
   "source_card": "br-kultura-candomble",
   "image_prompt": "Fotorealistický snímek candomblé rituálu v Salvadoru de Bahia — bílé oblečení, rituální tanec a bubnování, teplé světlo, 16:9",
-  "about": "candomblé"
+  "about": "candomblé",
+  "irony_prompt": "A small home altar fills the frame with two figures standing side by side on it, one carved in a traditional style and the other a plaster statue of a robed saint, both dressed in matching blue and white cloth and clearly understood as one and the same. Smaller and subordinate: candles flickering warmly in front of both figures equally; a bowl of fruit offered at the altar's base; a worshipper's hand touching both figures' hems at once in quiet reverence. MOOD: reverent, layered, quietly resilient."
  },
  {
   "id": "br-q-capoeira",
@@ -261,7 +272,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Capoeira",
   "source_card": "br-kultura-capoeira",
   "image_prompt": "Fotorealistický snímek capoeira jogo — dva hráči v ginga pohybu a akrobatickém výměně, venkovní prostředí v Bahii, přirozené světlo, 16:9",
-  "about": "capoeiře"
+  "about": "capoeiře",
+  "irony_prompt": "Two figures fill the frame locked in a fluid, cartwheeling exchange of kicks and dodges to the rhythm of a berimbau being played just behind them, the whole scene reading as pure dance even as every motion doubles as a fighting technique. Smaller and subordinate: a circle of onlookers clapping the beat, swaying in time; a second berimbau player waiting his turn at the circle's edge; dust rising softly around the dancers' bare feet. MOOD: fluid, rhythmic, sly."
  },
  {
   "id": "br-q-feijoada",
@@ -283,7 +295,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Feijoada",
   "source_card": "br-jidlo-feijoada",
   "image_prompt": "Fotorealistický snímek hliněného hrnce s feijoada — černé fazole a maso, obklopené rýží, kalem a plátky pomeranče, přirozené světlo, 16:9",
-  "about": "feijoadě"
+  "about": "feijoadě",
+  "irony_prompt": "A deep black clay pot fills the frame simmering with thick dark bean stew, chunks of humble cured pork pieces — ears, tails, trotters — nestled among the beans, steam rising richly. Smaller and subordinate: a small bowl of orange slices waiting on the side, traditional garnish; a wooden spoon resting across the pot's rim; a plate of collard greens and rice beside it. MOOD: hearty, humble, comforting."
  },
  {
   "id": "br-q-acai",
@@ -305,7 +318,8 @@
   "source_url": "https://en.wikipedia.org/wiki/A%C3%A7a%C3%AD_palm",
   "source_card": "br-jidlo-acai",
   "image_prompt": "Fotorealistický snímek açaí bowl — fialová zmrzlina s banánem, granolem a exotickým ovocem v bílé misce, přirozené světlo, 16:9",
-  "about": "açaí"
+  "about": "açaí",
+  "irony_prompt": "A wide clay bowl fills the frame with a thick, deep purple savoury stew, a whole grilled fish laid across the top and a mound of cassava flour dusted beside it. Smaller and subordinate: a river fisherman's net drying just visible through a nearby window; a second smaller bowl with the same purple base topped instead with granola and banana, set apart as a different tradition entirely; steam curling up from the fish. MOOD: earthy, hearty, riverine."
  },
  {
   "id": "br-q-churrasco",
@@ -327,7 +341,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Churrasco",
   "source_card": "br-jidlo-churrasco",
   "image_prompt": "Fotorealistický snímek brazilského churrascaria — číšník s šampaňským šídlem plného grilovaného masa porcuje u stolu, teplé restaurační světlo, 16:9",
-  "about": "churrascu"
+  "about": "churrascu",
+  "irony_prompt": "A long metal skewer fills the frame laden with thick cylindrical cuts of sizzling meat over open flame, a gaucho's wide-brimmed hat and leather chaps just visible at the edge as he turns it slowly. Smaller and subordinate: a knife resting on a wooden board nearby, ready to carve; a horse tied loosely to a fence post in the background; smoke curling up into a wide open sky. MOOD: smoky, hearty, rustic."
  },
  {
   "id": "br-q-otroctvi",
@@ -349,7 +364,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Slavery_in_Brazil",
   "source_card": "br-historie-otroctvi",
   "image_prompt": "Fotorealistický snímek historické Salvadoru de Bahia — koloniální architektura a afrobrazilská kultura v pelourinho, přirozené světlo, 16:9",
-  "about": "otrocké minulosti Brazílie"
+  "about": "otrocké minulosti Brazílie",
+  "irony_prompt": "A vast empty harbour fills the frame at dawn with row upon row of anchor chains disappearing into still water, no ships visible, gulls circling silently overhead in the heavy quiet. Smaller and subordinate: a single rusted anchor half-buried in wet sand at the shoreline, overgrown with creeping vine; a distant lighthouse standing dark and unlit; waves lapping gently against the empty pier. MOOD: solemn, heavy, vast."
  },
  {
   "id": "br-q-republica",
@@ -371,7 +387,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Proclamation_of_the_Republic_(Brazil)",
   "source_card": "br-historie-republica",
   "image_prompt": "Fotorealistický snímek Muzea Republiky v Rio de Janeiru — historická vila Catete, former Imperial Palace, přirozené světlo, 16:9",
-  "about": "proklamaci brazilské republiky"
+  "about": "proklamaci brazilské republiky",
+  "irony_prompt": "A grand palace gate fills the frame standing wide open with nobody guarding it, a single ornate carriage rolling calmly away down a tree-lined avenue toward a waiting ship in the harbour beyond, no soldiers or crowds in sight. Smaller and subordinate: a flag being quietly lowered from the palace roof by one attendant; a discarded royal cloak left folded neatly on an empty bench; morning mist softening the whole quiet scene. MOOD: quiet, momentous, understated."
  },
  {
   "id": "br-q-vargas",
@@ -393,7 +410,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Get%C3%BAlio_Vargas",
   "source_card": "br-historie-trabalhismo",
   "image_prompt": "Fotorealistický snímek prezidentského paláce Catete v Rio de Janeiru, historická vila, symbol Vargasovy éry, přirozené světlo, 16:9",
-  "about": "Getúliu Vargasovi"
+  "about": "Getúliu Vargasovi",
+  "irony_prompt": "A grand presidential sash fills the frame draped formally over one shoulder of a figure standing at a podium, while the very same figure's other hand reaches down warmly to shake hands with a crowd of ordinary workers pressing close, both gestures happening in the same instant. Smaller and subordinate: a factory smokestack rising proudly in the background; a row of microphones angled up at the podium; a child in the crowd waving a small plain pennant. MOOD: commanding, warm, complex."
  },
  {
   "id": "br-q-futbal",
@@ -415,7 +433,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Brazil_national_football_team",
   "source_card": "br-sport-futbal",
   "image_prompt": "Fotorealistický snímek brazilského fotbalového zápasu na stadionu Maracanã v Riu, tribuna nabitá fanoušky, přirozené denní světlo, 16:9",
-  "about": "brazilském fotbale"
+  "about": "brazilském fotbale",
+  "irony_prompt": "A single well-worn leather football fills the frame resting on a patch of grass, and drawn faintly around it in the ground are countless overlapping footprints from every era of shoe styles imaginable, layered one over another without a single gap in the pattern. Smaller and subordinate: a modern boy in modern boots stepping up to take his turn; an old sepia-toned photograph corner just visible tucked into the grass; floodlights glowing faintly on the horizon. MOOD: unbroken, proud, historic."
  },
  {
   "id": "br-q-volejbal",
@@ -437,7 +456,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Beach_volleyball_in_Brazil",
   "source_card": "br-sport-volejbal",
   "image_prompt": "Fotorealistický snímek beach volejbalu na Copacabaně v Riu de Janeiru — dva hráči u sítě, Sugarloaf v pozadí, přirozené světlo, 16:9",
-  "about": "brazilském beach volejbale"
+  "about": "brazilském beach volejbale",
+  "irony_prompt": "A beach volleyball net fills the frame stretched between two posts on a busy public beach, dozens of games happening at once on every visible patch of sand from the shoreline to the boardwalk, not a single empty court anywhere. Smaller and subordinate: a small child practising a serve against a sandcastle wall; a fitness class stretching on the sidelines waiting their turn at a court; the sun setting golden over the packed beach. MOOD: energetic, communal, sun-soaked."
  },
  {
   "id": "br-q-senna",
@@ -459,7 +479,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ayrton_Senna",
   "source_card": "br-sport-formula",
   "image_prompt": "Fotorealistický snímek závodního okruhu Interlagos v São Paulu — start Formule 1 Grand Prix v Brazílii, dramatické světlo, bez rozpoznatelných tváří, 16:9",
-  "about": "Ayrtonu Sennovi"
+  "about": "Ayrtonu Sennovi",
+  "irony_prompt": "A single empty racing helmet fills the frame resting on a checkered flag laid across a quiet racetrack barrier, three days' worth of candles burned low around its base. Smaller and subordinate: a small crowd gathered respectfully at a distance, heads bowed; a toy race car left by a child among the candles; the empty track curving away into soft morning mist. MOOD: solemn, heavy, quiet."
  },
  {
   "id": "br-q-bossa",
@@ -481,7 +502,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bossa_nova",
   "source_card": "br-umeni-bossa",
   "image_prompt": "Fotorealistický snímek pláže Ipanema v Riu de Janeiru za zlatého odpoledního světla, vlny, piassavaové stromy, romantická atmosféra, 16:9",
-  "about": "bossa nově a Joãu Gilbertovi"
+  "about": "bossa nově a Joãu Gilbertovi",
+  "irony_prompt": "A single acoustic guitar fills the frame resting gently in a musician's lap on a quiet balcony at dusk, one hand barely touching the strings, a soft thread of sound curling out and settling low near the ground instead of soaring loudly into the air. Smaller and subordinate: a tall empty orchestra stand pushed into a shadowy corner, unused; the ocean glimmering calm and still beyond the balcony rail; a single candle flickering steadily, undisturbed by any loud note. MOOD: intimate, hushed, cool."
  },
  {
   "id": "br-q-samba",
@@ -503,7 +525,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Samba",
   "source_card": "br-umeni-samba",
   "image_prompt": "Fotorealistický snímek samba tance na ulici v Rio de Janeiru — tanečnice v barevném kostýmu v pohybu, teplé noční světlo, 16:9",
-  "about": "sambě"
+  "about": "sambě",
+  "irony_prompt": "A grand government building's façade fills the frame with an enormous colourful parade of drummers and dancers in feathered costumes flowing directly out of its front doors and down the steps like an official proclamation come to life. Smaller and subordinate: an official on the balcony above gesturing proudly down at the parade; a radio broadcast tower visible on the roof, antenna glowing; confetti drifting down from an upper window. MOOD: triumphant, orchestrated, vibrant."
  },
  {
   "id": "br-q-tropicalia",
@@ -525,7 +548,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tropic%C3%A1lia",
   "source_card": "br-umeni-oscarniemeyer2",
   "image_prompt": "Fotorealistický snímek brazilského rockového festivalu z konce šedesátých let — živá kultura, psychedelické plakáty, historická atmosféra, 16:9",
-  "about": "hnutí Tropicália"
+  "about": "hnutí Tropicália",
+  "irony_prompt": "A single electric guitar fills the frame draped in tropical flowers and bright feathers, propped against a wall in a small studio, its cord looping in playful defiant curls across the floor instead of plugging into anything visible. Smaller and subordinate: a military boot silhouette just visible through a half-open door, standing stiffly apart from the colourful scene; a parrot perched on the guitar's neck; a reel-to-reel tape recorder spinning quietly in the corner. MOOD: playful, defiant, surreal."
  },
  {
   "id": "br-q-portugaltina",
@@ -547,7 +571,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Brazilian_Portuguese",
   "source_card": "br-jazyk-portugaltina",
   "image_prompt": "Fotorealistický snímek moderního brazilského města São Paulo — mrakodrapy a rušné ulice, letecký pohled, zlatá hodina, 16:9",
-  "about": "brazilské portugalštině"
+  "about": "brazilské portugalštině",
+  "irony_prompt": "Two identical rounded speech bubbles fill the frame floating above two speakers on opposite sides of an ocean, each ribbon curving and looping in a distinctly different rhythm and shape even though both spring from the very same root pattern at their base. Smaller and subordinate: a ship sailing the ocean between them, carrying a small basket of fruit back and forth; a confused parrot on the ship's mast tilting its head at both ribbons; waves rippling in sync with neither ribbon exactly. MOOD: divergent, familiar, playful."
  },
  {
   "id": "br-q-tupi",
@@ -569,7 +594,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tupi_language",
   "source_card": "br-jazyk-tupi",
   "image_prompt": "Fotorealistický snímek brazilského regionálního nápisu nebo mapy s domorodými místními názvy a přírodou v pozadí, přirozené světlo, 16:9",
-  "about": "slovech z jazyka Tupi"
+  "about": "slovech z jazyka Tupi",
+  "irony_prompt": "A rich rainforest floor fills the frame with a jaguar, a piranha in a shallow pool, and a cluster of cassava roots all arranged naturally together in one scene, each creature and plant glowing faintly as if sharing an invisible thread connecting them to unseen roots deep underground. Smaller and subordinate: a small hummingbird hovering between the jaguar's ear and the piranha's pool; morning mist rising from the forest floor; a fallen leaf drifting down to rest beside the cassava. MOOD: interconnected, lush, ancient."
  },
  {
   "id": "br-q-carioca",
@@ -591,7 +617,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Brazilian_Portuguese",
   "source_card": "br-jazyk-carioca",
   "image_prompt": "Fotorealistický snímek Rio de Janeira kavárny s carioca hosty, lehká konverzace, přirozené světlo, 16:9",
-  "about": "brazilských regionálních dialektech"
+  "about": "brazilských regionálních dialektech",
+  "irony_prompt": "Three identical speech bubbles fill the frame drifting up side by side from three different figures on one crowded beach promenade, each ribbon curling, pitching and looping in a noticeably different rhythm despite starting from the very same shoreline. Smaller and subordinate: a fourth, much simpler ribbon drifting from a visiting tourist further back, clearly a different shape from all three; palm trees swaying at slightly different angles behind each speaker; waves breaking in three different soft patterns beneath the ribbons. MOOD: varied, lively, sun-drenched."
  },
  {
   "id": "br-k-tukan",
@@ -612,7 +639,8 @@
   "quip_wrong": "Ne tihle dva — papoušek ani kondor nemají tenhle pestrobarevný obr na tváři, ten patří tukanovi.",
   "explanation": "Tukan žije v tropických lesích Jižní Ameriky. Jeho zobák může měřit až třetinu délky celého těla, ale je dutý a lehký. Tukani ho využívají k trhání ovoce i ke komunikaci.",
   "more_fact": "Tukani si nestaví vlastní hnízdo — bydlí v dutinách po datlech. Ke spánku se schoulí do klubíčka a ocas si přehodí přes záda a hlavu, aby se do dutiny vešli celí.",
-  "about": "tukanovi"
+  "about": "tukanovi",
+  "irony_prompt": "A vividly colourful toucan fills the frame perched on a high jungle branch, its enormous curved beak striped in orange, yellow and green taking up nearly half its whole body. Smaller and subordinate: a piece of fruit balanced delicately at the very tip of its beak; a second toucan calling out from a neighbouring branch; morning mist drifting through the canopy below. MOOD: vivid, striking, cheerful."
  },
  {
   "id": "br-k-vlajka",
@@ -633,7 +661,8 @@
   "quip_wrong": "Podívej se doprostřed kosočtverce ještě jednou — tam září modrý kruh plný hvězd, ne kříž ani strom.",
   "explanation": "Brazilská vlajka je zelená s žlutým kosočtvercem uprostřed. Uvnitř kosočtverce je modrý kruh s bílými hvězdami. Hvězd je 27 — jedna za každý stát a za federální okres Brasília.",
   "more_fact": "Napříč modrým kruhem se táhne bílá stuha s heslem „Ordem e Progresso“ — Řád a pokrok. Vlajka se objevila hned po pádu císařství v roce 1889, takže to heslo bylo i vzkazem: nová republika chce být stabilní a moderní zároveň.",
-  "about": "brazilské vlajce"
+  "about": "brazilské vlajce",
+  "irony_prompt": "A crisp flag fills the frame with a bold yellow diamond clearly reading as yellow set on a deep green field clearly reading as green, and at its centre a round blue circle scattered with small white stars, snapping gently in a warm breeze. Smaller and subordinate: a child pointing delightedly at one particular star; a macaw flying past matching the yellow diamond's colour; palm fronds brushing the flag's lower edge. MOOD: vivid, proud, breezy."
  },
  {
   "id": "br-k-brigadeiro",
@@ -654,7 +683,8 @@
   "quip_wrong": "Mimo mísu — karamel, pistácie, ovoce na brigadeiro nesedí, ten se dělá z mléka a kakaa.",
   "explanation": "Brigadeiro je nejoblíbenější brazilský dezert. Dělá se z kondenzovaného mléka, kakaa a másla, pak se sválí do kuličky a obalí v čokoládových posypech. Na každé narozeninové oslavě v Brazílii brigadeiro nechybí.",
   "more_fact": "Jméno dezertu pochází od brigádního generála Eduarda Gomese, který ve 40. letech kandidoval na prezidenta. Sladkost prý na jeho podporu prodávaly ženy z kampaně — Gomes volby prohrál, ale kulička s jeho přezdívkou zůstala v kuchyni navždy.",
-  "about": "brigadeiru"
+  "about": "brigadeiru",
+  "irony_prompt": "A small round chocolate ball fills the frame rolled generously in dark chocolate sprinkles, sitting in a tiny paper cup on a birthday party table. Smaller and subordinate: a child's hand reaching eagerly for a second one; a half-empty saucepan with a wooden spoon resting nearby, still glossy with chocolate; balloons blurred softly in the background. MOOD: sweet, festive, indulgent."
  },
  {
   "id": "br-k-karneval-kostym",
@@ -675,7 +705,8 @@
   "quip_wrong": "Černé a bílé necháme na jindy — na karnevalu v Riu vítězí peří a barvy.",
   "explanation": "Karneval v Riu de Janeiru je jeden z největších na světě. Sambové školy soutěží na sambodromu s alegorickými vozy a tanečnicemi v obrovských kostýmech s barevnými pery. Přípravy na pět minut průvodu trvají celý rok.",
   "more_fact": "Ty největší peřové kostýmy váží i přes 20 kilo, a přitom je tanečnice musí unést celou trasu průvodu a ještě se v nich hbitě hýbat. Každý rok se šijí úplně nové — stejný kostým se na sambodromu neopakuje.",
-  "about": "karnevalu v Riu de Janeiru"
+  "about": "karnevalu v Riu de Janeiru",
+  "irony_prompt": "A dazzling parade dancer fills the frame in an enormous feathered headdress and a costume ablaze with sequins in every bright colour imaginable, arms spread wide mid-spin. Smaller and subordinate: a float rolling past behind her covered in even more feathers and glitter; a drummer keeping the beat at the parade's edge; confetti raining down all around her. MOOD: dazzling, exuberant, colourful."
  },
  {
   "id": "br-k-mistrsveta",
@@ -698,7 +729,8 @@
   "more_fact": "Brazilský tým kdysi hrál v bílých dresech. Po prohraném finále mistrovství světa 1950 doma v Riu se bílá barva národu tak znechutila, že se hráči od té doby oblékají do nezaměnitelné žluté a zelené.",
   "source_url": "https://en.wikipedia.org/wiki/Brazil_national_football_team",
   "image_prompt": "Fotorealistický snímek dětí hrajících fotbal na pláži v Riu de Janeiru, žlutozelené dresy, zapadající slunce, 16:9",
-  "about": "barvách dresu brazilské fotbalové reprezentace"
+  "about": "barvách dresu brazilské fotbalové reprezentace",
+  "irony_prompt": "A football jersey fills the frame in bold sunshine yellow with green trim, stretched taut as a player leaps to head a ball at the very top of the frame. Smaller and subordinate: a stadium crowd roaring in a blur of matching yellow and green behind him; a second player sliding into frame from below; a scoreboard turned away so its face cannot be read. MOOD: electric, triumphant, vivid."
  },
  {
   "id": "br-k-pirana",
@@ -721,7 +753,8 @@
   "more_fact": "Piraně mají trojúhelníkové zuby, které do sebe zapadají jako zip, takže dokážou jedním kousnutím odseknout přesný kousek masa. Rybáři v Amazonii je přesto běžně chytají k jídlu — piraně samy patří na stůl stejně často, jako jiné ryby.",
   "source_url": "https://en.wikipedia.org/wiki/Piranha",
   "image_prompt": "Fotorealistický snímek hejna piraní pod vodní hladinou amazonské řeky, zelenavá voda, přirozené světlo, 16:9",
-  "about": "piraních"
+  "about": "piraních",
+  "irony_prompt": "A small school of sharp-toothed fish fills the frame darting together through murky river water, their jagged teeth bared as they snap at a piece of fallen fruit drifting past. Smaller and subordinate: a heron watching cautiously from a low branch above the water; bubbles trailing from the swirling school; a turtle sliding unhurriedly off a nearby log, unbothered by their presence. MOOD: quick, snapping, lively."
  },
  {
   "id": "br-k-kristus",
@@ -744,7 +777,8 @@
   "more_fact": "Protože socha stojí na nejvyšším bodě hory, bijí do ní blesky poměrně často. Jeden v roce 2014 poškodil Kristu prst na ruce — kameníci ho museli opravit stejnou technikou jako před devadesáti lety, kousek po kousku z mýdlového kamene.",
   "source_url": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)",
   "image_prompt": "Fotorealistický snímek sochy Krista Vykupitele na hoře Corcovado nad Riem de Janeiro, oblaka pod vrcholem, ranní světlo, 16:9",
-  "about": "soše Krista Vykupitele"
+  "about": "soše Krista Vykupitele",
+  "irony_prompt": "A colossal stone figure fills the frame standing with arms spread wide atop a lush green mountain peak, overlooking a sprawling city and curving bay far below through drifting clouds. Smaller and subordinate: a small cable car climbing the mountainside toward the summit; birds circling level with the outstretched stone arms; sailboats dotting the bay in the hazy distance below. MOOD: majestic, serene, sweeping."
  },
  {
   "id": "br-k-paodequeijo",
@@ -767,7 +801,8 @@
   "more_fact": "Na brazilských benzinkách a v pekárnách bývá přímo u pultu malá pícka, kde se pão de queijo peče kousek po kousku před zákazníky — voňavé bochánky se tak prodávají ještě teplé, přímo z trouby.",
   "source_url": "https://en.wikipedia.org/wiki/P%C3%A3o_de_queijo",
   "image_prompt": "Fotorealistický snímek košíku teplých kulatých bochánků pão de queijo na snídaňovém stole, přirozené světlo, 16:9",
-  "about": "pão de queijo"
+  "about": "pão de queijo",
+  "irony_prompt": "A small round golden roll fills the frame with a delicately cracked crust and a soft, stretchy interior just visible where one has been pulled apart, steam rising from the warm cheesy centre. Smaller and subordinate: a basket piled with more identical rolls just behind it; a cup of coffee steaming alongside on the breakfast table; a child's hand reaching for a second one. MOOD: warm, comforting, homely."
  },
  {
   "id": "br-k-festajunina",
@@ -790,7 +825,8 @@
   "more_fact": "Slavnost oslavuje sklizeň kukuřice, takže na stolech nechybí pečené klasy, kukuřičný koláč pamonha ani sladká kaše canjica. Lidé se oblékají za venkovany caipira — v kostkovaných šatech, se záplatami a namalovanými pihami.",
   "source_url": "https://en.wikipedia.org/wiki/Festa_Junina",
   "image_prompt": "Fotorealistický snímek brazilské vesnické slavnosti Festa Junina — lampiony a papíroví draci nad ohněm, kostkované kostýmy, noční světlo, 16:9",
-  "about": "svátku Festa Junina"
+  "about": "svátku Festa Junina",
+  "irony_prompt": "A pair of colourful paper kites fills the frame soaring high against a warm evening sky, tails fluttering, while a scattering of small glowing paper lanterns drift upward beside them. Smaller and subordinate: a bonfire crackling below on a decorated village square; children in checkered shirts and straw hats looking up, delighted; a string of bunting fluttering between two poles. MOOD: festive, warm, joyful."
  },
  {
   "id": "br-k-onca",
@@ -813,7 +849,8 @@
   "more_fact": "Na rozdíl od lva nebo tygra, kteří kořist škrtí kousnutím do krku, jaguár míří rovnou na lebku mezi uši. Je to jediná velká kočka na světě, která loví tímhle způsobem.",
   "source_url": "https://en.wikipedia.org/wiki/Jaguar",
   "image_prompt": "Fotorealistický snímek jaguára odpočívajícího na břehu řeky v brazilském Pantanalu, skvrnitá srst, přirozené světlo, 16:9",
-  "about": "jaguárovi"
+  "about": "jaguárovi",
+  "irony_prompt": "A powerful spotted big cat fills the frame padding silently along a riverbank at dusk, muscular shoulders rolling with each confident step, rosette-patterned coat glowing amber in the fading light. Smaller and subordinate: a caiman slipping hurriedly into the water at its approach; a toucan startled into flight from a low branch; ripples spreading across the still river surface. MOOD: powerful, silent, commanding."
  },
  {
   "id": "br-k-iguazu-falls",
@@ -836,6 +873,7 @@
   "more_fact": "Nejmohutnější a nejnebezpečnější část vodopádů se jmenuje Ďáblovo hrdlo — podkovovitý kaňon, do kterého se sesypává skoro polovina veškeré vody z celých Iguaçu.",
   "source_url": "https://cs.wikipedia.org/wiki/Vodop%C3%A1dy_Iguazu",
   "image_prompt": "Fotorealistický snímek mohutných vodopádů Iguaçu na hranici Brazílie a Argentiny, desítky proudů padající vody obklopené zeleným deštným pralesem, stoupající mlha a duha nad kaňonem, 16:9",
-  "about": "vodopádech Iguaçu"
+  "about": "vodopádech Iguaçu",
+  "irony_prompt": "A vast curtain of countless separate waterfalls fills the frame plunging together over a wide jungle-fringed cliff edge, spray rising in constant clouds and catching a shimmering rainbow across its full width. Smaller and subordinate: a small tour boat approaching the base, utterly dwarfed by the scale; a toucan perched on a misty overlook railing; butterflies drifting through the spray at the cliff's edge. MOOD: thunderous, vast, radiant."
  }
 ]
