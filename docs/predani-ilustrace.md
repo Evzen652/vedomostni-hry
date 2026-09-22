@@ -1,7 +1,7 @@
 # Předání: ilustrace k otázkám
 
-Sepsáno **12. září 2026** (aktualizováno **22. 9. pozdní noc** po Tchaj-wanu — 15. hotové
-zemi z fronty, 100 %).
+Sepsáno **12. září 2026** (aktualizováno **23. 9. brzy ráno** po Jižní Africe — 16. hotové
+zemi z fronty, 100 %; **celá fronta Mexiko/Nový Zéland/Tchaj-wan/Jižní Afrika je hotová**).
 Doplňuje [predavaci-protokol.md](predavaci-protokol.md); poučení a rozhodnutí jsou
 v [CLAUDE.md](../CLAUDE.md) pod datem **2026-09-11** (formát, Rusko), **2026-09-12**
 (Kanada, Německo+Rakousko, Itálie, Británie, Maďarsko, Švédsko, Francie, Slovensko,
@@ -10,7 +10,8 @@ Thajsko, Turecko, Irsko, Izrael, Jižní Korea), **2026-09-21** (Malajsie, Páki
 Portugalsko, Saúdská Arábie, Dánsko, Indonésie, Norsko, Filipíny, Argentina, Belgie),
 **2026-09-22** (Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži,
 Indie, Keňa), **2026-09-22 večer** (Mongolsko), **2026-09-22 pozdní večer** (Mexiko),
-**2026-09-22 noc** (Nový Zéland) a **2026-09-22 pozdní noc** (Tchaj-wan).
+**2026-09-22 noc** (Nový Zéland), **2026-09-22 pozdní noc** (Tchaj-wan) a **2026-09-23
+brzy ráno** (Jižní Afrika).
 
 ---
 
@@ -23,8 +24,8 @@ Indie, Keňa), **2026-09-22 večer** (Mongolsko), **2026-09-22 pozdní večer** 
    git pull
    npm install
    ```
-   Poslední commit ilustrací je Tchaj-wan; `git log --oneline -3` musí ukázat
-   commit o Tchaj-wanu (38/38 ilustrací). **Pracovní strom má být
+   Poslední commit ilustrací je Jižní Afrika; `git log --oneline -3` musí ukázat
+   commit o Jižní Africe (38/38 ilustrací). **Pracovní strom má být
    čistý** — žádná dávka neběží a `.batch-irony.json` ukazuje na dokončenou dávku.
 2. **Vložit klíč Gemini do `.dev.vars`** (gitignorovaný, na druhý stroj NEPŘEJDE). Vzor je
    v `.dev.vars.example`; řádek `GEMINI_API_KEY=AQ.…`. **Kredit byl 22. 9. dobitý a funguje** —
@@ -36,26 +37,27 @@ Indie, Keňa), **2026-09-22 večer** (Mongolsko), **2026-09-22 pozdní večer** 
    npm run test:offline
    npm run lint-irony
    ```
-   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **208**.
-4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — Tchaj-wan je hotový. **První
-   krok další session: napsat `irony_prompt` pro Jižní Afriku** (`za`, 38 otázek, poslední
-   z původní čtveřice Mexiko/Nový Zéland/Tchaj-wan/Jižní Afrika, zatím úplně nedotčená).
-   Postup psaní zadání je v bodu 5 níž.
-5. **Po Jižní Africe pokračovat** dál podle tabulky v bodu 1 (Egypt, Čína, Japonsko,
-   Polsko, Severní Korea mají zadání jen částečně — zbytek otázek bez jediného).
+   `validate` 0 chyb, `test:offline` 874 kontrol, `lint-irony` 0 chyb. Bez ilustrace **170**.
+4. **ŽÁDNÁ země teď nemá hotová zadání čekající na obrázky** — Jižní Afrika je hotová a
+   celá fronta zadaná na začátku předchozí session (Mexiko/Nový Zéland/Tchaj-wan/Jižní
+   Afrika) je vyčerpaná. **První krok další session: vybrat další zemi z tabulky v bodu 1**
+   (Egypt/Čína/Japonsko/Polsko/Severní Korea mají zadání jen částečně — zbytek jejich
+   otázek bez jediného — nebo zvolit úplně novou zemi bez zadání). Postup psaní zadání
+   je v bodu 5 níž.
+5. **Po výběru další země pokračovat** stejným postupem jako dosud.
 
 ---
 
-## 1. Stav k 22. 9. 2026 (pozdní noc, po Tchaj-wanu)
+## 1. Stav k 23. 9. 2026 (brzy ráno, po Jižní Africe)
 
 | Položka | Hodnota |
 |---|---|
 | Otázek celkem | 3 742 |
-| Bez ilustrace | **208** |
-| Hotovo 22. 9. | Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži, Indie, Keňa, Mongolsko, Mexiko, Nový Zéland, **Tchaj-wan 38/38** — **15 zemí, všechny 100 %** |
+| Bez ilustrace | **170** |
+| Hotovo 22.–23. 9. | Finsko, Gabon, Peru, USA, Austrálie, Brazílie, Chile, Ekvádor, Fidži, Indie, Keňa, Mongolsko, Mexiko, Nový Zéland, Tchaj-wan, **Jižní Afrika 38/38** — **16 zemí, všechny 100 %** |
 | **Zadání čekající na obrázky** | žádná — fronta je celá vyčerpaná |
-| Další v pořadí (bez zadání) | Jižní Afrika 38, Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
-| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~21 dávkách týž den. |
+| Další v pořadí (bez zadání) | Egypt 40 (37 bez), Čína 38 (36 bez), Japonsko 37 (36 bez), Polsko 49 (34 bez), Severní Korea 44 (20 bez), Česko 964 (jen 7 bez) |
+| Klíč Gemini | **Kredit dobitý 22. 9., funguje** — ověřeno na ~22 dávkách za necelý den. |
 | Formát | 16:9, **1344×768**, JPG q84, ~222 kB/kus |
 | Cena | ~$0,034 za obrázek v dávce |
 
@@ -343,16 +345,29 @@ neodstraní.
   slovo i číslice, i bez zmínky v zadání** (Tchaj-wan, `tw-q-cyklistika-huandao`: „AIR" na
   odometru kola) — stejná rodina jako dánský elektroměr a řecká sázková tabule. Řešeno
   úplným vynecháním přístroje ze scény.
+- **Vlajka může vyjít ve ŠPATNÉM TVARU, ne jen ve špatných barvách** (Jižní Afrika,
+  `za-k-vlajka`) — obecný popis barev bez geometrie vyrobil obyčejný diagonální kříž (X)
+  místo skutečného tvaru Y. Když je fakt o TVARU vlajky, nestačí vyjmenovat barvy; musí
+  se vypsat i přesná geometrie krok za krokem („black triangular wedge at the hoist
+  tapers into a horizontal band that splits into two diagonal arms … forming a sideways
+  Y"). Po doplnění geometrie vyšla vlajka prakticky identická se skutečnou.
+- **Slovo „passport" u cestovního dokladu vyrobí čitelný nápis „PASSPORT"** (Jižní Afrika,
+  `za-t-makeba`) — stejná past jako řecká Maria Callas (2026-09-13). Slovo úplně pryč,
+  nahrazeno „a small travel document … completely blank".
+- **OTEVŘENÁ kniha/deník na stole si vyžádá rukopis i bez zmínky o textu** (Jižní Afrika,
+  `za-a-manzelstvi`, „open ledger page") — stejná past jako otevřená kniha/mapa jinde.
+  Řešení: kniha zůstává ZAVŘENÁ po celou scénu.
 
 ---
 
 ## 6. Co dělat dál
 
-**Tchaj-wan je hotový (100 %).** Žádná země teď nemá zadání čekající na obrázky —
-první krok je vždycky napsat nová zadání.
+**Jižní Afrika je hotová (100 %) a celá fronta ze začátku předchozí session je vyčerpaná.**
+Žádná země teď nemá zadání čekající na obrázky — první krok je vždycky napsat nová zadání.
 
-1. **Napsat zadání pro Jižní Afriku** (38 otázek, úplně nedotčené) — v session, podle
-   poučení v bodu 2/5 tohohle souboru.
+1. **Vybrat další zemi** — buď dopsat zbytek Egypta/Číny/Japonska/Polska/Severní Koreje
+   (mají zadání jen částečně), nebo zvolit libovolnou další zemi bez zadání — a napsat
+   pro ni zadání v session, podle poučení v bodu 2/5 tohohle souboru.
    Zadání se píšou do JSON mapy `{id: scéna}` (do scratchpadu) a do dat je zapíše
    `node scripts/ilustrace/zapis-prompty.js xx mapa.json`.
 4. `npm run lint-irony` (0 chyb) → `submit --cc xx` → archy + rohy + zvětšené výřezy

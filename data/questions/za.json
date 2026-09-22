@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Table_Mountain",
   "source_card": "za-mista-table-mountain",
   "image_prompt": "Fotorealistický snímek Stolové hory nad Kapským Městem, plochý vrchol, mraky obtékající horu, 16:9",
-  "about": "Stolové hoře"
+  "about": "Stolové hoře",
+  "irony_prompt": "A perfectly flat-topped mountain fills the frame rising sheer above a coastal city, its tabletop surface so level that a small breakfast tray balances impossibly on its very edge. Smaller and subordinate: a cable car dangling partway up the cliff face; clouds spilling over the flat rim like a tablecloth; gulls circling below the summit. MOOD: iconic, level, striking."
  },
  {
   "id": "za-q-kruger",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kruger_National_Park",
   "source_card": "za-priroda-kruger",
   "image_prompt": "Fotorealistický snímek stáda slonů procházejících savanou Krugerova parku při západu slunce, 16:9",
-  "about": "Velké pětce v Krugerově parku"
+  "about": "Velké pětce v Krugerově parku",
+  "irony_prompt": "Five animals fill the frame standing together in an improbable lineup on the savanna - a lion, an elephant, a rhino, a buffalo, and a leopard - each turning to face a row of camera lenses instead of rifles. Smaller and subordinate: a safari jeep parked respectfully at a distance; tall acacia trees dotting the horizon; dust rising softly around their feet. MOOD: majestic, respectful, iconic."
  },
  {
   "id": "za-q-mandela",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nelson_Mandela",
   "source_card": "za-lide-mandela",
   "image_prompt": "Fotorealistický portrétní snímek starší postavy v tradičním jihoafrickém oděvu, důstojný výraz, teplé světlo, 16:9",
-  "about": "Nelsonu Mandelovi"
+  "about": "Nelsonu Mandelovi",
+  "irony_prompt": "A small stone prison cell fills the frame, its narrow window barely admitting a shaft of light, rows of tally marks scratched deep into the wall counting toward the door. Smaller and subordinate: a folded prison uniform left neatly on the cot; the heavy cell door standing wide open at last; a single small potted plant somehow thriving on the windowsill. MOOD: solemn, enduring, quietly triumphant."
  },
  {
   "id": "za-q-braai",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Braai",
   "source_card": "za-jidlo-braai",
   "image_prompt": "Fotorealistický snímek jihoafrického grilování braai na zahradě, kouř stoupající z uhlí, přátelé okolo, teplé večerní světlo, 16:9",
-  "about": "braai"
+  "about": "braai",
+  "irony_prompt": "A lively group of friends fills the frame gathered tightly around a glowing braai fire at dusk, laughing and raising drinks as thick meat patties and coiled sausage links sizzle on the grate between them. Smaller and subordinate: a dog sitting hopefully nearby, nose twitching; folding chairs arranged in a loose circle; smoke curling up into the darkening sky. MOOD: warm, communal, joyful."
  },
  {
   "id": "za-q-apartheid",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Apartheid",
   "source_card": "za-historie-apartheid",
   "image_prompt": "Historizující fotorealistický dokumentární snímek jihoafrického města v éře apartheidu, sépiové tóny, 16:9",
-  "about": "apartheidu a jeho konci"
+  "about": "apartheidu a jeho konci",
+  "irony_prompt": "A long winding queue of people of every skin color fills the frame stretching toward a single wooden ballot box, the first voter carefully folding a ballot before dropping it in. Smaller and subordinate: an elderly woman being helped into line by her grandson; a soldier standing relaxed and unarmed nearby, just watching; the sun rising calmly over the scene. MOOD: historic, peaceful, hopeful."
  },
  {
   "id": "za-q-jazyky",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa",
   "source_card": "za-kultura-jazyky",
   "image_prompt": "Fotorealistický snímek jihoafrické bankovky s nápisy ve více jazycích, detailní záběr, 16:9",
-  "about": "dvanácti úředních jazycích JAR"
+  "about": "dvanácti úředních jazycích JAR",
+  "irony_prompt": "A crowded market square fills the frame with a dozen differently colored ribbons of spoken sound swirling and weaving above the heads of the chattering crowd, never quite tangling. Smaller and subordinate: two friends laughing as they switch effortlessly between ribbons mid-conversation; a fruit vendor calling out over their stall; children playing beneath the colorful swirl. MOOD: layered, vibrant, harmonious."
  },
  {
   "id": "za-q-ndebele",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ndebele_house_painting",
   "source_card": "za-umeni-ndebele",
   "image_prompt": "Fotorealistický snímek domu s pestrobarevnými geometrickými vzory ve stylu Ndebele, jasné sluneční světlo, 16:9",
-  "about": "ndebelské nástěnné malbě"
+  "about": "ndebelské nástěnné malbě",
+  "irony_prompt": "An Ndebele woman fills the frame carefully painting bold geometric patterns in brilliant colors across her home's outer wall, brush steady and precise. Smaller and subordinate: a neighbor glancing meaningfully at the finished pattern next door, as if reading something in it; children playing in the painted courtyard; distant hills beyond the vivid walls. MOOD: vivid, precise, quietly defiant."
  },
  {
   "id": "za-q-rugby1995",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/1995_Rugby_World_Cup",
   "source_card": "za-sport-rugby1995",
   "image_prompt": "Fotorealistický snímek ragbyového stadionu při finále, jihoafrický tým v zeleno-zlatých dresech, jásající davy, 16:9",
-  "about": "mistrovství světa v ragby 1995"
+  "about": "mistrovství světa v ragby 1995",
+  "irony_prompt": "An elderly statesman fills the frame wearing a green-and-gold rugby jersey over his suit shirt, handing a gleaming trophy to a beaming team captain at midfield. Smaller and subordinate: a stunned stadium crowd rising to its feet behind them; teammates crowding in for the moment; confetti drifting down onto the pitch. MOOD: historic, unifying, electric."
  },
  {
   "id": "za-q-code-switching",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Languages_of_South_Africa",
   "source_card": "za-jazyk-slovnik",
   "image_prompt": "Fotorealistický snímek pouliční cedule s nápisy ve více jihoafrických jazycích, jasné sluneční světlo, 16:9",
-  "about": "přepínání kódů v jazycích JAR"
+  "about": "přepínání kódů v jazycích JAR",
+  "irony_prompt": "Two friends fill the frame chatting animatedly on a park bench, a single ribbon of sound between their mouths shifting color and pattern several times within one sentence. Smaller and subordinate: a third friend listening and nodding along easily; a radio on a nearby windowsill playing yet another language; pigeons pecking unconcerned at their feet. MOOD: fluid, effortless, lively."
  },
  {
   "id": "za-k-tucnaci",
@@ -215,7 +224,8 @@
   "quip_correct": "Bravo! Tučňáci brýlatí žijí přímo na kapských plážích a jsou tak zvědaví, že sami chodí za turisty, ne naopak.",
   "quip_wrong": "Skoro, ale ne tak úplně – lední medvědi ani koaly na kapských plážích nežijí, tam se courají tučňáci.",
   "explanation": "Africký tučňák je jediný tučňák, který žije v Africe. Největší kolonie sídlí na pláži Boulders Beach u Kapského Města a turisté k nim mohou přijít docela blízko.",
-  "about": "tučňácích u Kapského Města"
+  "about": "tučňácích u Kapského Města",
+  "irony_prompt": "A waddle of penguins fills the frame strutting confidently across a sandy beach towel-to-towel among sunbathing beachgoers, utterly unbothered by the crowd. Smaller and subordinate: a startled tourist lowering their sunglasses in disbelief; waves rolling in behind the colony; a chick peeking out from behind its parent. MOOD: comic, charming, sunny."
  },
  {
   "id": "za-k-vlajka",
@@ -236,7 +246,8 @@
   "quip_wrong": "Zkus to jinak – X, V ani Z to nejsou. Uprostřed vlajky je jasně vidět tvar písmene Y.",
   "explanation": "Tahle vlajka patří mezi nejpestřejší na světě a navrhla ji jedna šikovná designérka za pouhých pár dní – tvar Y symbolizuje sjednocení různých národů.",
   "about": "vlajce Jihoafrické republiky",
-  "image_prompt": "A painterly watercolor gouache illustration of vlajce Jihoafrické republiky, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of vlajce Jihoafrické republiky, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A large flag fills the frame rippling in a strong coastal wind: a black triangular wedge at the flagpole edge tapers into a single horizontal green band that splits partway across into two diagonal arms, one sweeping up toward the top corner and one down toward the bottom corner, together forming an unmistakable sideways Y reaching across the whole flag, bordered in white and gold, with red filling the space above and blue below. Smaller and subordinate: a flagpole rope snapping taut; a bright blue sky behind; a bird gliding past the top corner. MOOD: vivid, unifying, bold."
  },
  {
   "id": "za-k-slon",
@@ -256,7 +267,8 @@
   "quip_correct": "Skvěle! Slon mává ušima jako obřím ventilátorem – je to jeho vlastní klimatizace proti africkému vedru.",
   "quip_wrong": "Blízko, ale ne – nosorožce, hrocha ani žirafu si sem nepleť, rekord v ušních rozměrech drží africký slon.",
   "explanation": "Africký slon je největší suchozemské zvíře na světě. Jeho obří uši mají uvnitř síť cév a mávání ušima funguje jako přirozená klimatizace — ochlazuje krev a pomáhá slonovi přežít africké vedro.",
-  "about": "africkém slonovi"
+  "about": "africkém slonovi",
+  "irony_prompt": "An African elephant fills the frame flapping its enormous ears like two giant fans, dust puffing up with each flap in the shimmering heat. Smaller and subordinate: a smaller antelope in the background actually cooling off in the elephant's ear-breeze; a mud wallow nearby; acacia trees providing thin shade. MOOD: comic, majestic, sun-baked."
  },
  {
   "id": "za-k-springbok",
@@ -277,7 +289,8 @@
   "quip_wrong": "Zkus to jinak – lev, nosorožec ani gepard nejsou známí tím, že by takhle vysoko skákali. Na dresu jihoafrických ragbistů skáče springbok.",
   "explanation": "Springbok je jihoafrická antilopa a stejné jméno nese i celý národní ragbyový tým této země.",
   "about": "springbokovi",
-  "image_prompt": "A painterly watercolor gouache illustration of springbokovi, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of springbokovi, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A springbok antelope fills the frame leaping impossibly high in mid-air, back arched and legs stiff in its signature pronking bounce, dust barely disturbed below where it last touched ground. Smaller and subordinate: a startled smaller antelope watching from the grass, unable to match the jump; a rugby ball resting forgotten nearby, echoing the leap; golden savanna stretching to the horizon. MOOD: springy, joyful, electric."
  },
  {
   "id": "za-k-pstros",
@@ -298,7 +311,8 @@
   "quip_wrong": "Pštros — křídla má, ale používá je hlavně k mávání, ne k létání.",
   "explanation": "Pštros dokáže běžet rychlostí až 70 km/h a je to vůbec největší žijící pták na světě.",
   "about": "pštrosovi",
-  "image_prompt": "Fotorealistický snímek pštrosa běžícího po jihoafrické savaně, oblaka prachu za nohama, 16:9"
+  "image_prompt": "Fotorealistický snímek pštrosa běžícího po jihoafrické savaně, oblaka prachu za nohama, 16:9",
+  "irony_prompt": "An ostrich fills the frame sprinting flat-out across the savanna, wings spread wide for balance rather than flight, dust kicking up in a long trail behind its powerful legs. Smaller and subordinate: a jackal left comically far behind, giving up the chase; a low sun casting a long shadow; grass bending flat in its wake. MOOD: fast, comic, sun-drenched."
  },
  {
   "id": "za-k-duhovy-narod",
@@ -319,7 +333,8 @@
   "quip_wrong": "Duhový národ — přezdívka vznikla, protože soupis všech národností by se do jedné věty prostě nevešel.",
   "explanation": "Přezdívku popularizoval arcibiskup Desmond Tutu hned po prvních svobodných volbách v roce 1994.",
   "about": "duhovém národě",
-  "image_prompt": "Fotorealistický snímek pestrobarevného jihoafrického trhu s lidmi různých kultur, 16:9"
+  "image_prompt": "Fotorealistický snímek pestrobarevného jihoafrického trhu s lidmi různých kultur, 16:9",
+  "irony_prompt": "A joyful crowd fills the frame arranged in a sweeping arc of brilliantly colored clothing that forms an unmistakable rainbow shape across the market square. Smaller and subordinate: children weaving between the adults, laughing; fruit stalls piled with equally colorful produce; a real rainbow faintly visible in the sky above, echoing the crowd below. MOOD: joyful, vibrant, unified."
  },
  {
   "id": "za-k-diamanty",
@@ -340,7 +355,8 @@
   "quip_wrong": "V Kimberley se nekopalo zlato ani sochy — kopaly se tam diamanty, a to tak usilovně, že po sobě zanechaly obří díru.",
   "explanation": "Kimberley Big Hole je jedna z největších ručně vykopaných jam na světě — horníci ji vyhloubili krumpáči a lopatami do hloubky přes 200 metrů.",
   "about": "diamantovém dole v Kimberley",
-  "image_prompt": "Fotorealistický letecký snímek obrovského kráteru Kimberley Big Hole v Jihoafrické republice, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek obrovského kráteru Kimberley Big Hole v Jihoafrické republice, 16:9",
+  "irony_prompt": "An enormous hand-dug crater fills the frame plunging hundreds of meters straight down, its terraced walls ringed with tiny figures who once worked it with picks and shovels. Smaller and subordinate: an old mining cart abandoned at the rim; a viewing platform with a few visitors peering down in awe; scrubby grass reclaiming the crater's edge. MOOD: staggering, vast, humbling."
  },
  {
   "id": "za-k-zebra",
@@ -361,7 +377,8 @@
   "quip_wrong": "Pruhy nejsou kopírák od sousedky — každá zebra si nosí vlastní, neopakovatelný vzor.",
   "explanation": "Zebry žijící v jižní Africe patří k druhu zebra stepní a jejich pruhovaný vzor pomáhá matce poznat vlastní mládě i v hustém stádu.",
   "about": "pruzích zebry",
-  "image_prompt": "Fotorealistický detailní snímek zebry stepní v jihoafrické savaně, zblízka viditelné jedinečné pruhy, 16:9"
+  "image_prompt": "Fotorealistický detailní snímek zebry stepní v jihoafrické savaně, zblízka viditelné jedinečné pruhy, 16:9",
+  "irony_prompt": "A herd of zebras fills the frame grazing together, each one's stripe pattern subtly but clearly different from its neighbors, like a crowd of individual fingerprints. Smaller and subordinate: a foal nuzzling up to the one zebra whose pattern matches its own markings; dust rising softly from their hooves; golden grass stretching to the horizon. MOOD: intricate, warm, sun-drenched."
  },
  {
   "id": "za-t-mys-agulhas",
@@ -382,7 +399,8 @@
   "quip_wrong": "Mys Dobré naděje je slavnější, ale oceány se tam nepotkávají — to místo leží o kus dál na jihovýchod, u mysu Agulhas.",
   "explanation": "Mys Agulhas je nejjižnějším bodem afrického kontinentu a jeho jméno pochází z portugalského slova pro „jehly“ — podle ostrých útesů, které tam kdysi trápily námořníky.",
   "about": "mysu Agulhas",
-  "image_prompt": "Fotorealistický snímek majáku na mysu Agulhas s vlnami dvou oceánů narážejícími na skalnaté pobřeží, 16:9"
+  "image_prompt": "Fotorealistický snímek majáku na mysu Agulhas s vlnami dvou oceánů narážejícími na skalnaté pobřeží, 16:9",
+  "irony_prompt": "A lighthouse fills the frame standing at a rocky point where two distinctly colored currents of ocean water swirl together in a visible line, one deep blue and one greener. Smaller and subordinate: a scientist's buoy bobbing right at the meeting line; waves crashing from two different directions at once; a simple cairn of stones marking the spot. MOOD: dramatic, elemental, precise."
  },
  {
   "id": "za-t-johannesburg-zlato",
@@ -403,7 +421,8 @@
   "quip_wrong": "Přístav ani hlavní město za tím nestály — Johannesburg vyrostl kolem zlata, které lákalo davy rychleji, než stihli postavit pořádné silnice.",
   "explanation": "Johannesburg leží na pohoří Witwatersrand, které dodnes patří k nejbohatším zlatonosným oblastem světa, i když samotné město od moře dělí přes 500 kilometrů.",
   "about": "vzniku Johannesburgu",
-  "image_prompt": "Fotorealistický snímek panoramatu moderního Johannesburgu s mrakodrapy při západu slunce, 16:9"
+  "image_prompt": "Fotorealistický snímek panoramatu moderního Johannesburgu s mrakodrapy při západu slunce, 16:9",
+  "irony_prompt": "A dense modern skyline fills the frame rising straight up out of bare golden-flecked earth, as if the skyscrapers had simply grown from the gold-bearing ground itself. Smaller and subordinate: an old miner's pickaxe left leaning against a glass office tower's base; a mine headframe silhouette on the horizon; a dusty road leading into the city. MOOD: rapid, gleaming, rooted."
  },
  {
   "id": "za-t-desmond-tutu",
@@ -424,7 +443,8 @@
   "quip_wrong": "Žádný lék ani fotbal — Tutu si Nobelovu cenu vysloužil tím, že proti apartheidu bojoval slovy, kázáními a mezinárodním tlakem, ne zbraněmi.",
   "explanation": "Desmond Tutu cenu získal už v roce 1984, tedy celou dekádu před koncem apartheidu, a později vedl i komisi Pravda a usmíření, která zpracovávala zločiny minulého režimu.",
   "about": "Desmondu Tutuovi",
-  "image_prompt": "Fotorealistický portrétní snímek staršího muže v duchovním rouchu s vřelým úsměvem, 16:9"
+  "image_prompt": "Fotorealistický portrétní snímek staršího muže v duchovním rouchu s vřelým úsměvem, 16:9",
+  "irony_prompt": "A robed clergyman fills the frame with both arms raised joyfully skyward, his purple vestments catching the light as a crowd gathers peacefully behind him. Smaller and subordinate: a dove settling on a nearby railing; a single unlit candle held by someone in the crowd; a modest wooden pulpit just visible at the edge. MOOD: joyful, peaceful, radiant."
  },
  {
   "id": "za-t-boerewors",
@@ -445,7 +465,8 @@
   "quip_wrong": "Boerewors si na svém mase potrpí — zákon jí předepisuje aspoň 90 % masa, žádné texty o barvení ani pletení.",
   "explanation": "Boerewors se tradičně stáčí do jedné dlouhé spirály a peče vcelku na grilu, teprve na talíři se krájí na porce.",
   "about": "klobáse boerewors",
-  "image_prompt": "Fotorealistický detailní snímek spirálovité jihoafrické klobásy boerewors grilované na ohni, 16:9"
+  "image_prompt": "Fotorealistický detailní snímek spirálovité jihoafrické klobásy boerewors grilované na ohni, 16:9",
+  "irony_prompt": "A long coiled spiral of sausage fills the frame sizzling on a grill grate, its tightly wound shape glistening with juices over open flame. Smaller and subordinate: a hand ready with tongs to turn it; smoke curling upward into the evening air; a plate waiting nearby for the first sliced portion. MOOD: sizzling, hearty, communal."
  },
  {
   "id": "za-a-district-six",
@@ -466,7 +487,8 @@
   "quip_wrong": "Žádné nové domy ani referendum — přes šedesát tisíc lidí z District Six museli vystěhovat a jejich domovy srovnat se zemí kvůli barvě pleti zapsané v zákoně.",
   "explanation": "Pozemek po zbouraném District Six zůstal desítky let téměř nezastavěný, protože žádná stavební firma se do „prokleté“ parcely nehrnula; dnes tam funguje muzeum připomínající vystěhovaným obyvatelům.",
   "about": "District Six",
-  "image_prompt": "Fotorealistický snímek prázdné pusté plochy s pár osamělými domy v centru Kapského Města, kontrast s okolní zástavbou, 16:9"
+  "image_prompt": "Fotorealistický snímek prázdné pusté plochy s pár osamělými domy v centru Kapského Města, kontrast s okolní zástavbou, 16:9",
+  "irony_prompt": "A vast empty lot fills the frame at dusk, bare foundations and a single lonely lamppost the only trace of the thousands of homes that once stood there, weeds pushing up through cracked concrete. Smaller and subordinate: a child's single shoe left half-buried in the rubble; the thriving city skyline glowing untouched just beyond the empty plot's edge; a small commemorative garden bed freshly planted at one corner. MOOD: haunting, empty, quietly defiant."
  },
  {
   "id": "za-a-load-shedding",
@@ -487,7 +509,8 @@
   "quip_wrong": "Se slevami ani s tříděním odpadu to nemá nic společného — „load shedding“ znamená, že elektrárenská firma podle rozvrhu vypíná proud celým čtvrtím, protože ho nemá dost pro všechny.",
   "explanation": "Za load shedding může především zchátralá flotila uhelných elektráren státní firmy Eskom; v nejhorších letech byly výpadky plánované i na deset a více hodin denně.",
   "about": "jevu zvaném load shedding",
-  "image_prompt": "Fotorealistický snímek jihoafrické čtvrti za soumraku s tmavými domy bez elektřiny a lidmi se svíčkami v oknech, 16:9"
+  "image_prompt": "Fotorealistický snímek jihoafrické čtvrti za soumraku s tmavými domy bez elektřiny a lidmi se svíčkami v oknech, 16:9",
+  "irony_prompt": "A row of houses fills the frame sitting in complete darkness at dusk, every window glowing instead with the warm flicker of candles and lanterns. Smaller and subordinate: a family playing cards by candlelight at a kitchen table; a lone streetlight glowing on the next block over, untouched; a child reading a book with a headlamp. MOOD: resourceful, cozy, resilient."
  },
  {
   "id": "za-a-shaka-zulu",
@@ -508,7 +531,8 @@
   "quip_wrong": "Střelný prach ani pevnosti za tím nestály — Shaka svou armádu proměnil krátkým bodným oštěpem iklwa a obklíčením ve tvaru býčích rohů, které nepříteli nedávalo únik.",
   "explanation": "Shakovy vojenské reformy vedly k takzvané mfecane, rozsáhlému období válek a přesunů národů v jižní Africe, které natrvalo změnilo mapu regionu ještě předtím, než tam dorazili evropští osadníci ve větším počtu.",
   "about": "králi Shakovi",
-  "image_prompt": "Fotorealistický snímek rekonstrukce zulského válečníka s koženým štítem a krátkým oštěpem na jihoafrické savaně, 16:9"
+  "image_prompt": "Fotorealistický snímek rekonstrukce zulského válečníka s koženým štítem a krátkým oštěpem na jihoafrické savaně, 16:9",
+  "irony_prompt": "A disciplined line of warriors fills the frame holding tall cowhide shields and short stabbing spears, moving together into a curving buffalo-horn formation on open ground. Smaller and subordinate: a commander directing the flanks with a raised arm; dust rising from their synchronized footsteps; distant hills rolling toward the horizon. MOOD: disciplined, powerful, historic."
  },
  {
   "id": "za-k-surikaty",
@@ -529,7 +553,8 @@
   "quip_wrong": "Tanec, kamarádi, sušení kožíšku – zní to roztomile, ale surikata na zadních nožkách má ve skutečnosti jednu jedinou práci: hlídkovat.",
   "explanation": "Surikaty žijí v koloniích a střídají se v hlídkování – zatímco ostatní hledají potravu se skloněnou hlavou, jeden nebo dva jedinci stojí zpříma a sledují oblohu i okolí kvůli orlům a šakalům.",
   "about": "surikatách v Kalahari",
-  "image_prompt": "Fotorealistický snímek surikat stojících vzpřímeně na zadních nožkách v poušti Kalahari, ostražitý výraz, 16:9"
+  "image_prompt": "Fotorealistický snímek surikat stojících vzpřímeně na zadních nožkách v poušti Kalahari, ostražitý výraz, 16:9",
+  "irony_prompt": "A meerkat fills the frame standing bolt upright on its hind legs atop a termite mound, scanning the sky intently while its colony forages around its feet. Smaller and subordinate: a hawk's shadow passing far overhead; several meerkats digging busily in the sand; heat shimmering off the desert floor. MOOD: alert, watchful, sun-baked."
  },
  {
   "id": "za-k-vuvuzela",
@@ -550,7 +575,8 @@
   "quip_wrong": "Zkus to jinak – žádné vypnutí zvuku, stadion pod zem ani špunty do uší. Musely přidat speciální filtr přímo do zvuku přenosu.",
   "explanation": "Tahle hlučná trubka se jmenuje vuvuzela a jejímu zvuku se říká, že zní skoro jako sbíječka.",
   "about": "vuvuzele",
-  "image_prompt": "Fotorealistický snímek fanouška troubícího na dlouhou barevnou plastovou trubku vuvuzelu na stadionu, 16:9"
+  "image_prompt": "Fotorealistický snímek fanouška troubícího na dlouhou barevnou plastovou trubku vuvuzelu na stadionu, 16:9",
+  "irony_prompt": "A jubilant fan fills the frame blowing a long colorful plastic horn with cheeks puffed to bursting, thick wavy sound lines radiating out from its bell. Smaller and subordinate: a television cameraman wincing and covering one ear nearby; a packed stadium stand behind, all doing the same; confetti drifting through the noisy air. MOOD: loud, joyful, overwhelming."
  },
  {
   "id": "za-k-ms-fotbal-2010",
@@ -571,7 +597,8 @@
   "quip_wrong": "Olympiáda ani raketa se nekonaly – JAR v roce 2010 hostila mistrovství světa ve fotbale, a to jako první africká země vůbec.",
   "explanation": "Domácí tým JAR na turnaji sice vypadl už ve skupině, ale finále na stadionu Soccer City v Johannesburgu vyhrálo Španělsko nad Nizozemskem.",
   "about": "mistrovství světa ve fotbale 2010",
-  "image_prompt": "Fotorealistický snímek zaplněného fotbalového stadionu Soccer City v Johannesburgu, 16:9"
+  "image_prompt": "Fotorealistický snímek zaplněného fotbalového stadionu Soccer City v Johannesburgu, 16:9",
+  "irony_prompt": "A packed football stadium fills the frame glowing under floodlights against a deep African sunset, the pitch a vivid green rectangle ringed by roaring fans. Smaller and subordinate: a giant inflatable trophy replica bouncing through the crowd; flags of many nations waving side by side; a marching band warming up pitchside. MOOD: proud, historic, electric."
  },
  {
   "id": "za-t-mambazo",
@@ -592,7 +619,8 @@
   "quip_wrong": "Pozpátku, šeptem, jen v noci – vymyšlené kuriozity. Skutečná kuriozita je, že Ladysmith Black Mambazo zvládne bohatý zvuk čistě lidskými hlasy, bez jediného nástroje.",
   "explanation": "Skupina zpívá stylem isicathamiya, který vznikl v hornických ubytovnách – horníci si takhle potichu zpívali po večerech, aby nerušili strážné, a slavnou se skupina stala i díky spolupráci s americkým zpěvákem Paulem Simonem.",
   "about": "skupině Ladysmith Black Mambazo",
-  "image_prompt": "Fotorealistický snímek pěveckého sboru mužů v tradičních jihoafrických oblecích zpívajících a capella, 16:9"
+  "image_prompt": "Fotorealistický snímek pěveckého sboru mužů v tradičních jihoafrických oblecích zpívajících a capella, 16:9",
+  "irony_prompt": "A group of ten singers fills the frame standing in a tight semicircle, mouths open and hands clasped, rich layered ribbons of harmony rising visibly from their voices alone. Smaller and subordinate: an empty music stand with no instrument case beside it; the audience swaying, eyes closed; soft stage light warming their traditional suits. MOOD: rich, harmonious, moving."
  },
  {
   "id": "za-t-tri-mesta",
@@ -613,7 +641,8 @@
   "quip_wrong": "Žádné stěhování ani ostrov – JAR jde jinou cestou: má rovnou tři hlavní města najednou, každé pro jinou část vlády.",
   "explanation": "Pretoria je sídlem vlády, Kapské Město sídlem parlamentu a Bloemfontein sídlem nejvyššího odvolacího soudu – rozdělení vzniklo jako kompromis mezi bývalými koloniemi při sjednocení země v roce 1910.",
   "about": "třech hlavních městech JAR",
-  "image_prompt": "Fotorealistický snímek budovy jihoafrického parlamentu v Kapském Městě, 16:9"
+  "image_prompt": "Fotorealistický snímek budovy jihoafrického parlamentu v Kapském Městě, 16:9",
+  "irony_prompt": "Three grand government buildings fill the frame standing at the points of a triangle on a stylized landscape, each with its own small crowd of officials bustling in and out. Smaller and subordinate: a courier riding hard between two of the buildings with a satchel of papers; three separate flagpoles each flying the same flag; mountains dividing the distant horizon. MOOD: bureaucratic, sprawling, orderly."
  },
  {
   "id": "za-t-mlaskavky",
@@ -634,7 +663,8 @@
   "quip_wrong": "Bez samohlásek by se nedalo nic vyslovit a obrázkové písmo xhosa nemá – jeho pověstná zvláštnost je jinde: mlaskavé souhlásky přejaté z khoisanských jazyků.",
   "explanation": "Xhosa má v abecedě tři základní typy kliků přejaté od původních khoisanských obyvatel jižní Afriky a stejné hlásky používá i sousední jazyk zulu.",
   "about": "mlaskavých hláskách v jazyce xhosa",
-  "image_prompt": "Fotorealistický snímek jihoafrické ženy mluvící a gestikulující na tržišti, výrazná mimika, 16:9"
+  "image_prompt": "Fotorealistický snímek jihoafrické ženy mluvící a gestikulující na tržišti, výrazná mimika, 16:9",
+  "irony_prompt": "A speaker's mouth fills the frame mid-sentence, tongue clicking sharply against the roof of the mouth as a small bright spark of sound bursts visibly from the motion. Smaller and subordinate: a listener leaning in, delighted by the sound; birds startled briefly off a nearby fence at the sharp pop; a market scene blurred softly behind. MOOD: sharp, playful, distinctive."
  },
  {
   "id": "za-t-makeba",
@@ -655,7 +685,8 @@
   "quip_wrong": "Autorská práva ani vrtoch kariéry za tím nestály – Makeba promluvila proti apartheidu na půdě OSN, a vláda jí za to sebrala občanství i cestovní pas.",
   "explanation": "Do vlasti se mohla vrátit až po skončení apartheidu na počátku 90. let, a mezitím jí ve světě vynesla přezdívku Mama Afrika její píseň Qongqothwane, známá jako Click Song.",
   "about": "zpěvačce Miriam Makebě",
-  "image_prompt": "Fotorealistický portrétní snímek jihoafrické zpěvačky v tradičním oděvu se šátkem na hlavě, 16:9"
+  "image_prompt": "Fotorealistický portrétní snímek jihoafrické zpěvačky v tradičním oděvu se šátkem na hlavě, 16:9",
+  "irony_prompt": "A singer's silhouette fills the frame standing tall at a podium microphone, her headscarf and flowing dress catching stage light as she addresses an unseen assembly. Smaller and subordinate: a small travel document lying closed and completely blank on a nearby ledge; a world map on the wall with a single pin far from home; a single rose left on the podium's edge. MOOD: defiant, dignified, distant."
  },
  {
   "id": "za-t-stellenbosch",
@@ -676,7 +707,8 @@
   "quip_wrong": "Silnice tam vedou, elektřinu mají a založeno bylo dávno před koncem apartheidu – Stellenbosch je druhé nejstarší město země a centrum vinařství.",
   "explanation": "Město nese jméno po holandském guvernérovi Simonu van der Stelovi a jeho ulice lemované duby a bělostné domy ve stylu kapského holandského baroka patří k nejfotografovanějším v zemi.",
   "about": "městě Stellenbosch",
-  "image_prompt": "Fotorealistický snímek vinic a bělostných domů v kapském holandském stylu ve Stellenboschi při západu slunce, 16:9"
+  "image_prompt": "Fotorealistický snímek vinic a bělostných domů v kapském holandském stylu ve Stellenboschi při západu slunce, 16:9",
+  "irony_prompt": "A row of gleaming white Cape Dutch buildings fills the frame lining an oak-shaded street, vineyards climbing the hills directly behind the rooftops. Smaller and subordinate: a wine barrel resting outside a cellar door; a cyclist pedaling lazily down the avenue; grape leaves rustling in a warm breeze. MOOD: elegant, sun-dappled, historic."
  },
  {
   "id": "za-t-coetzee",
@@ -697,7 +729,8 @@
   "quip_wrong": "Afrikánština ani dětská kniha za tím nestojí – Coetzeeho jedinečnost je v tom, že jako první v historii ceny vyhrál Booker Prize dvakrát.",
   "explanation": "V roce 2003 přidal Coetzee k dvěma Bookerům ještě Nobelovu cenu za literaturu a je tak jedním z mála autorů, kteří získali obě nejprestižnější literární ocenění anglického jazyka.",
   "about": "spisovateli J. M. Coetzeem",
-  "image_prompt": "Fotorealistický snímek hromady starých knih na dřevěném stole u okna, měkké světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek hromady starých knih na dřevěném stole u okna, měkké světlo, 16:9",
+  "irony_prompt": "A writer's desk fills the frame with two identical golden medals resting side by side on a stack of manuscript pages, a typewriter's keys still warm from use. Smaller and subordinate: an empty chair pushed back as if just vacated; a window overlooking quiet countryside; a stack of unopened letters tied with string. MOOD: contemplative, quietly triumphant, still."
  },
  {
   "id": "za-t-safari-ekonomika",
@@ -718,7 +751,8 @@
   "quip_wrong": "Export masa, zoo ani filmaři nejsou ten hlavní byznys – soukromé rezervace u Krugerova parku dnes vydělávají hlavně na turistech, co si zaplatí safari.",
   "explanation": "Řada soukromých rezervací funguje bez plotů mezi vlastní zemí a Krugerovým parkem, takže zvířata se volně pohybují mezi oběma a část výdělku z turistiky plyne i okolním komunitám.",
   "about": "safari turistice u Krugerova parku",
-  "image_prompt": "Fotorealistický snímek safari džípu s turisty pozorujícími lvy v soukromé rezervaci, 16:9"
+  "image_prompt": "Fotorealistický snímek safari džípu s turisty pozorujícími lvy v soukromé rezervaci, 16:9",
+  "irony_prompt": "A safari jeep fills the frame packed with tourists leaning out eagerly with cameras instead of rifles, a pride of lions lounging calmly just meters away, unbothered. Smaller and subordinate: a guide pointing out something in the grass; a discarded old rifle rack now empty and repurposed as a coat rack back at the lodge; golden grass swaying in the breeze. MOOD: peaceful, respectful, sun-drenched."
  },
  {
   "id": "za-a-ustava-lgbt",
@@ -739,7 +773,8 @@
   "quip_wrong": "Trest smrti, přímá volba i školné řeší ústavy jinde – ta jihoafrická z roku 1996 je světovým unikátem v jiném bodě: jako první výslovně zakázala diskriminaci podle sexuální orientace.",
   "explanation": "Ústavní soud se na tento článek později odvolal i při rozhodnutích, která postupně vedla k legalizaci registrovaného partnerství a manželství stejnopohlavních párů.",
   "about": "jihoafrické ústavě z roku 1996",
-  "image_prompt": "Fotorealistický snímek budovy Ústavního soudu v Johannesburgu, moderní architektura, 16:9"
+  "image_prompt": "Fotorealistický snímek budovy Ústavního soudu v Johannesburgu, moderní architektura, 16:9",
+  "irony_prompt": "A grand constitutional court building fills the frame with its distinctive slanted pillars catching the morning light, doors standing wide open in welcome. Smaller and subordinate: a diverse crowd of citizens climbing the steps together, side by side; a smooth stone plaque carrying only a carved abstract emblem, otherwise completely blank; jacaranda trees blooming purple nearby. MOOD: dignified, progressive, welcoming."
  },
  {
   "id": "za-a-manzelstvi",
@@ -760,7 +795,8 @@
   "quip_wrong": "Rozvody, povinný sňatek ani věkový limit se neřešily – v roce 2006 JAR jako první africká země zákonem otevřela manželství i párům stejného pohlaví.",
   "explanation": "V celosvětovém pořadí byla JAR teprve pátou zemí, která tento krok udělala, a stalo se tak jen dvanáct let po skončení apartheidu, kdy ještě homosexualita byla trestným činem.",
   "about": "legalizaci manželství stejnopohlavních párů v JAR",
-  "image_prompt": "Fotorealistický snímek jihoafrické vlajky vlající před vládní budovou, jasná obloha, 16:9"
+  "image_prompt": "Fotorealistický snímek jihoafrické vlajky vlající před vládní budovou, jasná obloha, 16:9",
+  "irony_prompt": "Two wedding rings fill the frame resting together on top of a closed leather-bound register at a registry office counter, sunlight glinting off the gold. Smaller and subordinate: a registrar's pen resting beside the closed book; a small bouquet of proteas in a vase nearby; a government building's flag visible through the window behind. MOOD: quiet, historic, tender."
  },
  {
   "id": "za-a-afrikanstina-puvod",
@@ -781,7 +817,8 @@
   "quip_wrong": "Francouzština, němčina ani latina nejsou základ – afrikánština vyrostla hlavně z holandštiny osadníků, do níž se vmísila malajština, jazyky Khoi a San i portugalština.",
   "explanation": "Přes svůj mladý věk – úředním jazykem se afrikánština stala teprve v roce 1925 místo spisovné holandštiny – má dnes více rodilých mluvčích mezi barevným a černošským obyvatelstvem JAR než mezi bílými Afrikánci.",
   "about": "vzniku afrikánštiny",
-  "image_prompt": "Fotorealistický snímek staré knihy s afrikánským textem na dřevěném stole, měkké světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek staré knihy s afrikánským textem na dřevěném stole, měkké světlo, 16:9",
+  "irony_prompt": "Several distinctly colored ribbons of spoken sound fill the frame braiding together into one entirely new pattern above a bustling 17th-century harbor market. Smaller and subordinate: sailors, traders and laborers of many backgrounds standing shoulder to shoulder; crates and barrels stacked on the dock; tall ships anchored in the bay behind. MOOD: blended, historic, bustling."
  },
  {
   "id": "za-a-kapske-mesto-vzniklo",
@@ -802,6 +839,7 @@
   "quip_wrong": "Pevnost, trestanci ani zlato nebyly ten záměr – osada u mysu měla sloužit jako zásobovací zastávka pro lodě Východoindické společnosti na cestě do Asie.",
   "explanation": "Z plánované dočasné zastávky se nakonec vyvinulo trvalé osídlení, protože osadníci postupně začali obdělávat okolní půdu a najímat i zotročovat pracovní sílu z Asie a Afriky, což položilo základ pozdější rasové struktury kolonie.",
   "about": "založení Kapského Města",
-  "image_prompt": "Fotorealistický snímek rekonstruovaného opevnění Castle of Good Hope v Kapském Městě, 16:9"
+  "image_prompt": "Fotorealistický snímek rekonstruovaného opevnění Castle of Good Hope v Kapském Městě, 16:9",
+  "irony_prompt": "A modest stone fort fills the frame beside a busy dock, workers loading crates of fresh vegetables and fruit onto a tall ship bound for distant seas. Smaller and subordinate: a vegetable garden flourishing just behind the fort's walls; Table Mountain rising in the background; a ship's captain checking a delivery list. MOOD: practical, industrious, foundational."
  }
 ]

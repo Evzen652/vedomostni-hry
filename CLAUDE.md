@@ -81,6 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-22 — Jižní Afrika 38/38 ilustrací. POSLEDNÍ ZEMĚ z fronty Mexiko/Nový Zéland/
+  Tchaj-wan/Jižní Afrika, celkem 5 zemí za jednu session (+ Mongolsko). 4 vady ze 38:
+  chybný tvar vlajky, dvě textové (pas, deník), jeden náhodný podpis.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Citlivá témata (nucené vystěhování
+  District Six, apartheid, král Shaka) řešena stejně jako předchozí precedenty — bez násilí,
+  bez lidských obětí, jen důsledek nebo formace/kázeň.
+  - **NOVÝ TYP VADY: obecný popis vlajky vyrobil geometricky ŠPATNÝ tvar, ne jen špatné
+    barvy.** `za-k-vlajka` (otázka je přímo o tvaru Y uprostřed vlajky) mělo v zadání
+    barvy pojmenované, ale ne přesnou geometrii — model nakreslil běžný diagonální
+    kříž (X), ne sofistikovaný tvar Y skutečné jihoafrické vlajky. Dosavadní poučení
+    „pojmenuj barvy" u vlajky NESTAČÍ, když je fakt o TVARU, ne o barvě — musí se
+    vypsat i přesná geometrie („black triangular wedge … tapers into a single horizontal
+    band that splits … into two diagonal arms … forming a sideways Y"). Po opravě
+    vyšla vlajka prakticky identická se skutečnou.
+  - **Slovo „passport" u cestovního dokladu vyrobilo čitelný (byť zkomolený) nápis
+    „PASSPORT"** (`za-t-makeba`) — stejná past jako řecká Maria Callas 2026-09-13.
+    Oprava: slovo úplně pryč, nahrazeno „a small travel document … completely blank".
+  - **„Otevřená stránka deníku" (open ledger page) si vyžádala kurzívní rukopis**
+    (`za-a-manzelstvi`), i když zadání o textu nemluvilo — kniha OTEVŘENÁ na stole
+    je stejná past jako otevřená kniha/mapa jinde. Oprava: kniha ZAVŘENÁ celou dobu.
+  - **1 vymyšlený podpis** (`za-a-district-six`, vyrytý do dlažby) — spravilo přeposlání
+    stejného zadání napoprvé.
+  - **Drobné stylizované postavičky na terasách diamantového dolu (`za-k-diamanty`)
+    a čmáranice pod medailemi (`za-t-coetzee`) ponechány** — při zvětšení jde o abstraktní
+    tahy, ne čitelný text, stejná kategorie jako maďarské rovnice.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 170.** Fronta zadaná na začátku session
+    (Mexiko, Nový Zéland, Tchaj-wan, Jižní Afrika) je kompletně hotová.
+
 - **2026-09-22 — Tchaj-wan 38/38 ilustrací. 5 vad z 38 (13 %, nejvyšší podíl z dnešní
   fronty): dvě textové, jedna past s odometrem, dva náhodné podpisy.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Otázky o písmu (tradiční čínské
