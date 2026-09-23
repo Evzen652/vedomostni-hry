@@ -81,6 +81,28 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-24 — Polsko: chybějících 34/34 ilustrací dopsáno, 1 vada — náhodný podpis
+  v rákosí, spraveno prostým přeposláním. Poslední velká země z fronty, zbývá jen
+  7 českých otázek se starým zadáním.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Dávka `submit --cc pl` prošla
+  celá napoprvé (34/34 uloženo), kontrola přes archy 3×3 a arch dolních rohů našla
+  jedinou vadu.
+  - **`pl-k-losi-biebrza` (los stojící v bažině Biebrza) měl slabý kurzívní podpis
+    v rákosí vpravo dole** — potvrzeno zvětšeným výřezem (`vyrez.js` 65/80/30/20 při
+    8× zoomu). Standardní náhodná vada, ne past v zadání: opraveno přeposláním
+    stejného zadání beze změny (`submit --only pl-k-losi-biebrza`), po opravě čisté
+    na obou dolních rozích.
+  - **Zbytek fondu (varšavský drak, Chopin, Kopernik, żubr, bociany, Wieliczka, Malbork,
+    smigus-dyngus, gorale) prošel bez zásahu** — žádná past s písmem ani reálnou osobou,
+    přestože sada obsahovala rizikové motivy (jazykolam s polskými souhláskami,
+    Szymborska jako spisovatelka, sazba slovanských jazyků).
+  - **Fond 3 742 otázek: bez ilustrace zbývá 7.** Zbývá jen 7 českých otázek
+    (`cz-q-macocha-pojmenovani`, `cz-q-hasek-dominator-prezdivka`,
+    `cz-q-nejdelsi-ceske-slovo`, `cz-q-vestonicka-venuse-dospeli`,
+    `cz-t-navratilova-wimbledon-2`, `cz-k-ctyrlistek-komiks`,
+    `cz-k-zdrobneliny-naklonnost`) se starým zadáním čekajícím na obrázek — poslední
+    zbytek celého ilustračního dluhu appky.
+
 - **2026-09-24 — Japonsko: chybějících 36/37 ilustrací dopsáno, 6 vad ze 36 (17 %) —
   reálná slavná rytina si vynutila dvě kola oprav, protože model reprodukuje
   SKUTEČNÉ dílo i s jeho textem.**
