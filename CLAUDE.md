@@ -81,6 +81,25 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-23 — Egypt: chybějících 37/40 ilustrací dopsáno, 0 vad — nejčistší dávka od
+  jihokorejských 2,4 %.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb po dvou opravách. Citlivá témata
+  (sourozenecké sňatky ve vládnoucí rodině, revoluce 2011) řešena symbolicky bez lidských
+  postav — dvě propletené korunky na polštáři, prázdné náměstí s opuštěnými sandály a
+  prázdnými transparenty (stejný princip jako mexický Tlatelolco a rumunská revoluce).
+  - **Hieroglyfy na Rosettské desce prošly bez zásahu** — piktografické symboly (oči,
+    postavičky, ptáci), ne abecední písmo, stejná kategorie jako mexický kalendář nebo
+    maďarské rovnice. Otevřený svitek papyru zůstal záměrně prázdný.
+  - **Mohamed Salah nakreslen jako prázdný dres s číslem 11 na trůnu** — bez podoby,
+    stejný princip jako u jiných reálných sportovců (žádná tvář, jen dres/rekvizita).
+  - **Mumie faraona Ramesse II. cestující do Paříže (1976) měla mít podle skutečné historky
+    „pas" — slovo vynecháno úplně**, nahrazeno „an official travel document ... completely
+    blank", aby se nezopakovala past s čitelným nápisem PASSPORT (Jižní Afrika, Řecko).
+  - **Fotbalový dres Al Ahly zůstal čistě červený bez loga** — kontrola zvětšeným výřezem
+    potvrdila žádnou značku, na první pokus.
+  - **0 vad z 37.** Fond 3 742 otázek: bez ilustrace zbývá **113**. Zapsána i zadání pro
+    Čínu (36) a Japonsko (36), čekají na odeslání.
+
 - **2026-09-23 — Severní Korea: chybějících 20/44 ilustrací dopsáno, 0 vad.**
   Zbytek fondu Severní Koreje (24 otázek už mělo obrázek ze staršího importu) dostal
   chybějících 20 zadání napsaných v session, `lint-irony` 0 chyb po jedné drobné opravě.

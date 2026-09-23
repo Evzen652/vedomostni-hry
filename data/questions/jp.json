@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tokyo",
   "source_card": "jp-mista-tokio",
   "image_prompt": "Fotorealistický noční snímek Tokia s nasvícenými mrakodrapy a neonovými reklamami, 16:9",
-  "about": "Tokiu a jeho velikosti"
+  "about": "Tokiu a jeho velikosti",
+  "irony_prompt": "A vast city skyline fills the frame stretching to the horizon in every direction, an unbroken sea of rooftops and towers glowing under a hazy afternoon sun with no visible edge to the sprawl. Smaller and subordinate: a single elevated train line curving through the density; a distant mountain peak barely visible above the haze; tiny boats dotting a bay glimpsed between towers. MOOD: overwhelming, dense, endless."
  },
  {
   "id": "jp-q-fudzi",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mount_Fuji",
   "source_card": "jp-priroda-fudzi",
   "image_prompt": "Fotorealistický snímek symetrického zasněženého vrcholu hory Fudži nad jezerem, jasná obloha, 16:9",
-  "about": "hoře Fudži jako kulturním symbolu"
+  "about": "hoře Fudži jako kulturním symbolu",
+  "irony_prompt": "A perfectly symmetrical snow-capped volcano fills the frame rising serenely above a foreground of blossoming trees and an artist's easel propped nearby with a half-finished painting of the very same peak. Smaller and subordinate: a poet's open notebook resting on a rock, page left blank; a small shrine gate at the mountain's base; cherry petals drifting past on the wind. MOOD: revered, poetic, timeless."
  },
  {
   "id": "jp-q-ainu",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ainu_people",
   "source_card": "jp-lide-ainu",
   "image_prompt": "Fotorealistický snímek tradičního ainuského oděvu s výšivkami vystaveného v muzeu, přirozené světlo, 16:9",
-  "about": "Ainuech a jejich jazyce"
+  "about": "Ainuech a jejich jazyce",
+  "irony_prompt": "An elderly Ainu elder fills the frame standing proudly in traditional embroidered robes with a distinctive long beard and intricate geometric patterns woven into the fabric, gazing calmly toward a misty forest. Smaller and subordinate: a carved wooden bear figure resting on a nearby stump; a woven basket of foraged plants; a salmon leaping in a stream behind. MOOD: dignified, ancient, distinct."
  },
  {
   "id": "jp-q-sushi",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sushi",
   "source_card": "jp-jidlo-sushi",
   "image_prompt": "Fotorealistický detailní snímek čerstvého nigiri sushi na dřevěném podnosu, minimalistický styl, 16:9",
-  "about": "vzniku sushi"
+  "about": "vzniku sushi",
+  "irony_prompt": "A block of pressed rice fills the frame wrapped tightly with a whole preserved fish laid across the top, weighted beneath a heavy flat stone in a wooden barrel, clearly mid-fermentation rather than freshly made. Smaller and subordinate: a second barrel stacked nearby, lid slightly ajar; salt crystals scattered on the wooden surface; a calendar-like row of tally marks scratched faintly into the barrel's side. MOOD: patient, preserving, humble."
  },
  {
   "id": "jp-q-meidzi",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
   "source_card": "jp-historie-meidzi",
   "image_prompt": "Historizující fotorealistický snímek raně industrializovaného japonského města konce 19. století, tovární komíny vedle tradičních střech, 16:9",
-  "about": "Meidžiho restauraci a modernizaci Japonska"
+  "about": "Meidžiho restauraci a modernizaci Japonska",
+  "irony_prompt": "A massive stone gate fills the frame standing wide open for the first time, its ancient wooden doors swung back to reveal a bustling modern harbor of ships and cranes beyond, while old fortress walls crumble on either side. Smaller and subordinate: an abandoned watchtower overtaken by vines; a discarded suit of samurai armor propped against the gate; steam rising from a distant factory chimney. MOOD: pivotal, sweeping, transformative."
  },
  {
   "id": "jp-q-origami",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Origami",
   "source_card": "jp-kultura-origami",
   "image_prompt": "Fotorealistický detailní snímek barevných papírových origami jeřábů na jednobarevném pozadí, měkké světlo, 16:9",
-  "about": "origami"
+  "about": "origami",
+  "irony_prompt": "A single square sheet of paper fills the frame mid-fold, crisp creases forming the emerging wings of a crane, hands guiding the paper with careful precision and nothing else — no scissors, no glue — in sight. Smaller and subordinate: a small stack of unfolded blank squares waiting nearby; a finished paper crane already perched on the table; soft window light falling across the scene. MOOD: precise, meditative, transformative."
  },
  {
   "id": "jp-q-ukijoe",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ukiyo-e",
   "source_card": "jp-umeni-ukijoe",
   "image_prompt": "Fotorealistický snímek japonského dřevořezu ve stylu Velké vlny od Hokusaie vystaveného v galerii, 16:9",
-  "about": "ukijo-e a jeho vlivu na Západ"
+  "about": "ukijo-e a jeho vlivu na Západ",
+  "irony_prompt": "A dramatic woodblock print fills the frame showing a towering cresting wave curling over three tiny boats, rendered in bold flat blues and whites with striking graphic lines. Smaller and subordinate: a European painter's easel just visible at the edge, brush paused mid-stroke while studying the print pinned beside it; a carved printing block resting on a table; scattered ink-stained rags. MOOD: dramatic, influential, striking."
  },
  {
   "id": "jp-q-sumo",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sumo",
   "source_card": "jp-sport-sumo",
   "image_prompt": "Fotorealistický snímek dvou zápasníků sumo v kruhu dohó během zápasu, tradiční japonská aréna, 16:9",
-  "about": "sumo a jeho šintoistických kořenech"
+  "about": "sumo a jeho šintoistických kořenech",
+  "irony_prompt": "Two massive sumo wrestlers fill the frame crouched low and locked in fierce stillness at the center of a sacred straw ring, salt frozen mid-air from a ritual toss moments before. Smaller and subordinate: a referee in ornate ceremonial robes poised to one side; a small offering of rice and fruit at the ring's edge; a purification fountain steaming faintly nearby. MOOD: ritualistic, tense, powerful."
  },
  {
   "id": "jp-q-kandzi",
@@ -195,7 +203,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kanji",
   "source_card": "jp-jazyk-kandzi",
   "image_prompt": "Fotorealistický detailní snímek japonského textu psaného kandži, hiraganou a katakanou na starém papíře, 16:9",
-  "about": "japonském písmu"
+  "about": "japonském písmu",
+  "irony_prompt": "Three distinct styles of brushed symbols fill the frame arranged side by side on a single scroll — one dense and pictographic, one flowing and cursive, one blocky and angular — each clearly a different script yet part of the same sentence. Smaller and subordinate: a brush resting across the scroll's lower edge; an ink stone with a fresh pool of black ink; a paperweight holding the scroll flat. MOOD: layered, intricate, harmonious."
  },
  {
   "id": "jp-k-vlajka",
@@ -215,7 +224,8 @@
   "quip_correct": "Trefa, červená! Tohle byla asi nejjednodušší otázka na barvy v celém kvízu.",
   "quip_wrong": "Tahle barva na vlajce chybí. Japonská vlajka má jen bílou a jednu sytou barvu — zkus tu druhou.",
   "explanation": "Japonsku se někdy říká „země vycházejícího slunce“, a přesně to to červené kolečko na vlajce znázorňuje.",
-  "about": "japonské vlajce"
+  "about": "japonské vlajce",
+  "irony_prompt": "A large white flag fills the frame rippling gently in a soft breeze, a single bold crimson-red circle centered perfectly on its fabric, glowing warmly against the plain white field. Smaller and subordinate: a bamboo flagpole rope swaying below; a clear blue sky stretching behind; a single bird gliding past in the distance. MOOD: simple, bold, serene."
  },
  {
   "id": "jp-k-sakura",
@@ -235,7 +245,8 @@
   "quip_correct": "Bingo! Pod rozkvetlými větvemi si Japonci nosí piknikové deky — sledování květů je skoro národní svátek.",
   "quip_wrong": "Kytka to je, ale ne ta jarní hvězda Japonska. Zkus tu, na kterou se každé jaro sjíždí davy s foťákem.",
   "explanation": "Ty růžové kytičky se japonsky jmenují sakura a na stromech vydrží kvést jen asi týden.",
-  "about": "třešňových květech"
+  "about": "třešňových květech",
+  "irony_prompt": "A blossoming cherry tree fills the frame, its branches heavy with delicate pale pink flowers, petals drifting loose and swirling gently on the breeze. Smaller and subordinate: a wooden bench half-covered in fallen petals beneath the tree; a small bird perched on a lower branch; a paper lantern hanging from a nearby post. MOOD: fleeting, delicate, joyful."
  },
  {
   "id": "jp-k-sushi",
@@ -255,7 +266,8 @@
   "quip_correct": "Trefa, gurmáne! Japonský sushi bar nemusíš umět ani přečíst — menu bývá jen s obrázky, ať si vybereš správně.",
   "quip_wrong": "Chutná to skvěle, ale recept nemá nic společného s Japonskem. Hledáš jídlo z rýže a ryby, zabalené v řase.",
   "explanation": "Ta tmavá řasa kolem sushi se jmenuje nori a je úplně jedlá, takže se sní i s obalem.",
-  "about": "sushi"
+  "about": "sushi",
+  "irony_prompt": "A neat roll of rice and fish wrapped in a dark sheet of seaweed fills the frame, sliced into round pieces revealing a colorful cross-section of pink, white and green layers inside. Smaller and subordinate: a small dish of dark sauce beside the plate; a pair of chopsticks resting on a ceramic rest; a sprig of pickled ginger curled nearby. MOOD: fresh, precise, appetizing."
  },
  {
   "id": "jp-k-shinkansen",
@@ -276,7 +288,8 @@
   "quip_wrong": "Pěkně vymyšlené jméno, ale vlak se tak nejmenuje. Zkus japonské slovo, které slyšíš u každého rychlíku v zemi.",
   "explanation": "Šinkansen jezdí od roku 1964 a dosahuje rychlosti až 320 km/h. Na japonských nástupištích jsou na zemi namalované přesné značky, kde se otevřou dveře — vlak zastaví na centimetr přesně.",
   "about": "japonském rychlovlaku šinkansen",
-  "image_prompt": "A painterly watercolor illustration of a white bullet train with a pointed nose speeding through Japanese countryside with Mount Fuji visible in the background, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a white bullet train with a pointed nose speeding through Japanese countryside with Mount Fuji visible in the background, vintage travel journal style",
+  "irony_prompt": "A sleek white bullet train fills the frame with its long, pointed nose slicing through the air at tremendous speed, streaking past a snow-capped mountain in the background. Smaller and subordinate: overhead power lines blurring with motion; a small station platform receding in the distance; cherry blossoms swirling in the train's wake. MOOD: swift, futuristic, precise."
  },
  {
   "id": "jp-t-haiku",
@@ -297,7 +310,8 @@
   "quip_wrong": "Pěkný pokus o rytmus. Bašó by tě ale opravil.",
   "explanation": "Haiku tradičně obsahuje tzv. kigo — slovo odkazující na roční období. Nejslavnější haiku napsal Macuo Bašó: 'Starý rybník — žába skočí — šplouchnutí vody.' Celá filozofie zachycení jediného záblesku okamžiku se vejde do sedmnácti slabik.",
   "about": "japonské poezii haiku",
-  "image_prompt": "A painterly watercolor illustration of a Japanese calligraphy scroll with haiku poem beside a small pond with a frog, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Japanese calligraphy scroll with haiku poem beside a small pond with a frog, vintage travel journal style",
+  "irony_prompt": "Three neat rows of smooth river pebbles fill the frame arranged on raked sand, the first row short, the middle row noticeably longer, the last row matching the first — a clear pattern of counted stones and nothing else. Smaller and subordinate: a small rake leaning nearby with fresh lines in the sand; a dried leaf resting beside the middle row; a single dragonfly hovering just above the stones. MOOD: contemplative, minimal, rhythmic."
  },
  {
   "id": "jp-t-ostrovy",
@@ -318,7 +332,8 @@
   "quip_wrong": "Solidní odhad, jen o pár tisíc ostrovů vedle.",
   "explanation": "Nejsevernější japonské ostrovy sousedí s Ruskem (Hokkaidó leží naproti Sachalinu), nejjižnější tropické ostrůvky Okinawa jsou blíže Šanghaji než Tokiu. Japonsko tak pokrývá klimatické pásmo od severského sněhu až po subtropy.",
   "about": "japonském souostroví",
-  "image_prompt": "A painterly watercolor illustration of a Japanese island archipelago seen from above, small green islands surrounded by deep blue ocean, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of a Japanese island archipelago seen from above, small green islands surrounded by deep blue ocean, vintage travel journal style",
+  "irony_prompt": "A dramatic aerial view fills the frame showing a scattered chain of countless small green islands stretching across a vast sparkling sea, far too many to count. Smaller and subordinate: a lone ferry boat threading between two of the nearer islands; fishing nets drying on a small dock; gulls circling above the water. MOOD: sprawling, scattered, vast."
  },
  {
   "id": "jp-a-ustava",
@@ -339,7 +354,8 @@
   "quip_wrong": "Hezká vlastenecká verze. Skutečný text psala úplně jiná ruka.",
   "explanation": "Japonský parlament ústavu formálně schválil, ale obsah určoval americký tým. Paradox přetrvává: Japonsko článek 9 udržuje, přesto má 'Síly sebeobrany' s osmým největším obranným rozpočtem světa a spoléhá na americký jaderný deštník — tedy závisí na arzenálu státu, který mu armádu zakázal.",
   "about": "japonské mírové ústavě a článku 9",
-  "image_prompt": "A painterly watercolor illustration of the Japanese surrender ceremony on USS Missouri in September 1945, historical watercolor style, vintage travel journal"
+  "image_prompt": "A painterly watercolor illustration of the Japanese surrender ceremony on USS Missouri in September 1945, historical watercolor style, vintage travel journal",
+  "irony_prompt": "A formal document fills the frame lying closed on a polished conference table, its cover completely blank and bound in dark leather, flanked by an American officer's cap and a Japanese official's folded fan resting side by side. Smaller and subordinate: two pens crossed on the table's surface; a window showing a rebuilding city outside; a single chair pushed back as if just vacated. MOOD: formal, consequential, quiet."
  },
  {
   "id": "jp-a-dluh",
@@ -360,7 +376,8 @@
   "quip_wrong": "Chytrá konstrukce, ale účetní by ji nikdy nepodepsali.",
   "explanation": "Japonská centrální banka dnes drží přes 50 % státních dluhopisů a pravidelně tiskne jen na jejich nákup — jev zvaný 'monetizace dluhu', jenž u jiných zemí vede k inflaci. Japonsko naopak desítky let bojuje s deflací: čím víc stát tiskne, tím víc Japonci spoří místo aby utráceli, a inflace nepřichází.",
   "about": "japonském státním dluhu a ekonomickém paradoxu",
-  "image_prompt": "A painterly watercolor illustration of Tokyo financial district at night with illuminated skyscrapers and electronic displays, vintage travel journal style"
+  "image_prompt": "A painterly watercolor illustration of Tokyo financial district at night with illuminated skyscrapers and electronic displays, vintage travel journal style",
+  "irony_prompt": "A single ornate safe fills the frame standing open to reveal neatly stacked bundles of currency inside, while a long queue of tiny identical figures patiently waits to deposit more bundles into it themselves. Smaller and subordinate: a ticking clock on the wall showing decades passing; a calm guard dog dozing beside the safe; potted bonsai trees flanking the entrance. MOOD: paradoxical, orderly, stable."
  },
  {
   "id": "jp-k-opice-onsen",
@@ -381,7 +398,8 @@
   "quip_wrong": "Aby se zahřály v horkých pramenech — neučí se plavat na závody, neperou si kožíšek a nečeká je hostina z banánů. Ve sněhu s párou nad hlavou vypadají spokojeněji než leckterý turista v lázních.",
   "explanation": "Tyto makaky japonské žijí v parku Jigokudani (Peklo-údolí) v horách Nagano a jsou nejseverněji žijícími volně žijícími primáty na světě kromě lidí.",
   "about": "makacích v horkých pramenech",
-  "image_prompt": "Fotorealistický snímek japonských sněžných opic koupajících se v horkém prameni obklopeném sněhem, pára stoupá z vody, 16:9"
+  "image_prompt": "Fotorealistický snímek japonských sněžných opic koupajících se v horkém prameni obklopeném sněhem, pára stoupá z vody, 16:9",
+  "irony_prompt": "A troop of snow monkeys fills the frame soaking contentedly in a steaming natural hot spring, snow piled thick on the rocks around the water while their faces stay warm and relaxed. Smaller and subordinate: a baby monkey clinging to its mother's back at the pool's edge; steam curling up into the cold air; icicles hanging from an overhanging branch. MOOD: cozy, contented, wintry."
  },
  {
   "id": "jp-k-sakura-hanami",
@@ -402,7 +420,8 @@
   "quip_wrong": "Pořádají piknik pod rozkvetlými korunami zvaný hanami — květy se netrhají do váz, parky se kvůli nim nezavírají a na padlé plody taky nikdo nečeká. Deka na trávě a bento krabička patří ke květům stejně jako slavnostní přípitek k Silvestru.",
   "explanation": "Japonská meteorologická agentura každý rok sleduje a předpovídá takzvanou frontu sakur — postup kvetení třešní od jihu k severu země.",
   "about": "sakuře a hanami",
-  "image_prompt": "Fotorealistický snímek japonského parku s rozkvetlými třešněmi sakura a lidmi na pikniku na dekách, jarní slunce, 16:9"
+  "image_prompt": "Fotorealistický snímek japonského parku s rozkvetlými třešněmi sakura a lidmi na pikniku na dekách, jarní slunce, 16:9",
+  "irony_prompt": "A cheerful family fills the frame sitting on a blue picnic mat beneath a canopy of blooming cherry blossoms, sharing food and laughter as petals drift down onto their spread. Smaller and subordinate: a thermos of tea and stacked lunch boxes on the mat; a paper lantern strung between two branches; a dog curled up napping nearby. MOOD: cheerful, communal, blossoming."
  },
  {
   "id": "jp-k-takoyaki",
@@ -423,7 +442,8 @@
   "quip_wrong": "Uvnitř je kousek chobotnice, ne jahoda, čokoláda ani sýr – tohle je slané pouliční jídlo z moře, ne sladký dezert.",
   "explanation": "Takoyaki vzniklo ve 30. letech 20. století v Ósace a peče se ve speciální pánvi s kulatými prohlubněmi; hotové kuličky se navrch sypou vločkami sušeného tuňáka bonito, které se teplem vlní, jako by tančily.",
   "about": "takoyaki",
-  "image_prompt": "Fotorealistický detailní snímek horkých kuliček takoyaki na talíři s vlnícími se vločkami bonito a majonézou, 16:9"
+  "image_prompt": "Fotorealistický detailní snímek horkých kuliček takoyaki na talíři s vlnícími se vločkami bonito a majonézou, 16:9",
+  "irony_prompt": "A round golden-brown fried ball fills the frame just bitten open, revealing a small chunk of pale octopus tucked inside its soft molten center, steam escaping from the fresh cut. Smaller and subordinate: a tray of identical golden balls waiting behind it, drizzled with dark sauce and mayonnaise; a sprinkle of dancing bonito flakes on top; a wooden pick resting nearby. MOOD: playful, surprising, steamy."
  },
  {
   "id": "jp-k-hachiko",
@@ -444,7 +464,8 @@
   "quip_wrong": "Věrně čekal na mrtvého pána — nezachraňoval při zemětřesení, nesloužil jako policejní pes a nepatřil císaři. Kdo v soše hledá hrdinský čin se štítkem záchranné služby, najde tu jen psa, co nikdy nepřestal čekat na nástupišti.",
   "explanation": "Dnešní socha je už druhá v pořadí — tu první roztavili za druhé světové války na vojenský kov a novou v roce 1948 odlil syn původního sochaře; plemeno psa, akita inu, je od té doby v Japonsku symbolem věrnosti.",
   "about": "psu Hačikovi u stanice Šibuja",
-  "image_prompt": "Fotorealistický snímek bronzové sochy psa Hačika obklopené lidmi a květinami u stanice Šibuja v Tokiu, večerní světla, 16:9"
+  "image_prompt": "Fotorealistický snímek bronzové sochy psa Hačika obklopené lidmi a květinami u stanice Šibuja v Tokiu, večerní světla, 16:9",
+  "irony_prompt": "A bronze statue of a loyal dog fills the frame sitting patiently at a busy station corner, its polished surface worn smooth by countless gentle hands over the years. Smaller and subordinate: a small bouquet of fresh flowers laid at its paws; a crowd of blurred commuters passing behind; a single pigeon perched briefly on its head. MOOD: devoted, touching, enduring."
  },
  {
   "id": "jp-t-prodejni-automaty",
@@ -465,7 +486,8 @@
   "quip_wrong": "Má jich nejvíc na hlavu ze všech zemí světa — nejsou zakázané, neprodávají jen žvýkačky a nemají otvírací dobu jen o víkendech. Fungují ve dne v noci, klidně i v uličce, kde by člověk čekal spíš tmu než nápojový regál.",
   "explanation": "V Japonsku připadá jeden prodejní automat přibližně na 23 obyvatel, přičemž kromě nápojů prodávají třeba horké polévky, deštníky nebo baterie.",
   "about": "prodejních automatech v Japonsku",
-  "image_prompt": "Fotorealistický noční snímek řady svítících prodejních automatů na japonské ulici, 16:9"
+  "image_prompt": "Fotorealistický noční snímek řady svítících prodejních automatů na japonské ulici, 16:9",
+  "irony_prompt": "A long row of brightly lit vending machines fills the frame glowing softly on an empty nighttime street corner, their fronts displaying only simple colorful product silhouettes and nothing else. Smaller and subordinate: a lone bicycle parked beside the machines; steam rising faintly from a nearby drink dispenser slot; a streetlamp casting a warm pool of light. MOOD: convenient, glowing, ubiquitous."
  },
  {
   "id": "jp-t-manga-tezuka",
@@ -486,7 +508,8 @@
   "quip_wrong": "Byl to Osamu Tezuka, ne Mijazaki, Torijama ani Oda — ti všichni přišli na scénu později a stavěli na tom, co on nakreslil jako první. Bez jeho tužky by dnešní anime klidně vypadalo úplně jinak.",
   "explanation": "Tezukův seriál Tecuwan Atomu (Astro Boy) z roku 1963 byl prvním pravidelně vysílaným japonským animovaným seriálem v televizi a založil vizuální konvence, které anime používá dodnes.",
   "about": "Osamu Tezukovi a počátcích anime",
-  "image_prompt": "Fotorealistický snímek starých animačních cel a náčrtů postavy s velkýma očima na kreslířském stole, 16:9"
+  "image_prompt": "Fotorealistický snímek starých animačních cel a náčrtů postavy s velkýma očima na kreslířském stole, 16:9",
+  "irony_prompt": "A stack of hand-drawn comic panels fills the frame showing a wide-eyed robot boy character mid-flight, ink lines bold and expressive across the blank white page. Smaller and subordinate: a well-worn drawing pen resting beside the pages; an eraser and ruler on the desk; a cup of cold tea forgotten nearby. MOOD: imaginative, energetic, groundbreaking."
  },
  {
   "id": "jp-t-keigo",
@@ -529,7 +552,8 @@
   "quip_wrong": "Je to celostátní turnaj středoškolského baseballu, ne juniorská liga sumo, ne olympijský stadion a ne bojové umění se dřevěnými meči. Hrají patnáctiletí kluci, ale sledovanost finále přebije nejednu ligu dospělých profesionálů.",
   "explanation": "Turnaj se koná od roku 1915 na stadionu Kóšien poblíž Ósaky; každý rok se kvalifikací účastní přes tři tisíce středních škol z celého Japonska, ale na samotný turnaj postoupí jen 49 z nich.",
   "about": "Kóšienu a středoškolském baseballu",
-  "image_prompt": "Fotorealistický snímek plného baseballového stadionu s hráči středoškolského týmu na hřišti, 16:9"
+  "image_prompt": "Fotorealistický snímek plného baseballového stadionu s hráči středoškolského týmu na hřišti, 16:9",
+  "irony_prompt": "A packed baseball stadium fills the frame under blazing summer sun, a young pitcher mid-windup on the mound while the entire stands roar in unified excitement. Smaller and subordinate: a scoreboard glowing in the distance, kept generic without readable digits; players huddled in the dugout wiping sweat; a single ball frozen mid-air near home plate. MOOD: electric, sweltering, hopeful."
  },
  {
   "id": "jp-a-ustava-clanek9",
@@ -550,7 +574,8 @@
   "quip_wrong": "Zakazuje vedení války a budování armády k tomu účelu — nemá nic společného se zahraničním obchodem, frekvencí voleb ani úředním jazykem. Tahle věta v ústavě je jedna z nejradikálnějších v poválečném světě, i po desítkách let sporů o to, co přesně znamená.",
   "explanation": "Kvůli článku 9 nemá Japonsko oficiálně armádu, ale takzvané Síly sebeobrany (Self-Defense Forces) — velmi dobře vybavenou organizaci, jejíž přesný ústavní status je dodnes předmětem politických sporů.",
   "about": "japonské pacifistické ústavě",
-  "image_prompt": "Fotorealistický snímek budovy japonského parlamentu (Kokkai) v Tokiu za jasného dne, 16:9"
+  "image_prompt": "Fotorealistický snímek budovy japonského parlamentu (Kokkai) v Tokiu za jasného dne, 16:9",
+  "irony_prompt": "A soldier's helmet and rifle fill the frame laid to rest gently atop a folded flag on a plain wooden table, deliberately set aside rather than carried. Smaller and subordinate: a dove perched calmly on the table's edge; a single candle burning steadily nearby; sunlight streaming softly through a nearby window. MOOD: solemn, deliberate, peaceful."
  },
  {
   "id": "jp-a-starnuti-populace",
@@ -571,7 +596,8 @@
   "quip_wrong": "Má nejvyšší podíl lidí nad 65 let na světě — ne nejvyšší podíl dětí, ne nejrychlejší růst populace, a rozhodně ne nejnižší průměrný věk. Realita je přesně opačná, než všechny tři nabízené možnosti tvrdí.",
   "explanation": "Japonská populace od roku 2008 celkově klesá, protože počet úmrtí dlouhodobě převyšuje počet narozených dětí, a některé venkovské vesnice kvůli tomu postupně zanikají úplně.",
   "about": "stárnutí japonské populace",
-  "image_prompt": "Fotorealistický snímek téměř opuštěné japonské venkovské vesnice s prázdnými domy, podzimní světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek téměř opuštěné japonské venkovské vesnice s prázdnými domy, podzimní světlo, 16:9",
+  "irony_prompt": "A single rocking chair fills the frame occupied by an elderly figure knitting quietly on a porch, surrounded by many more empty rocking chairs lined up beside it, all unused. Smaller and subordinate: a cat curled asleep on one empty chair; a faded photograph on a nearby table showing a much larger family; wind chimes swaying gently. MOOD: quiet, contemplative, sparse."
  },
  {
   "id": "jp-a-mira-odsouzeni",
@@ -592,7 +618,8 @@
   "quip_wrong": "Skoro 99 procent případů skončí odsouzením — ne polovina, ne pětina, ani přesně půl na půl. Kdo u japonského soudu skončí jako obžalovaný, ten by si radši rovnou vsadil na horší konec.",
   "explanation": "Tak vysoké číslo souvisí s tím, že japonští žalobci žalobu podávají jen u případů s téměř jistým důkazním materiálem, a přiznání obviněných hraje v přípravném vyšetřování mimořádně velkou roli.",
   "about": "japonském soudnictví a míře odsouzení",
-  "image_prompt": "Fotorealistický snímek interiéru japonské soudní síně, dřevěný nábytek, formální atmosféra, 16:9"
+  "image_prompt": "Fotorealistický snímek interiéru japonské soudní síně, dřevěný nábytek, formální atmosféra, 16:9",
+  "irony_prompt": "A courtroom gavel fills the frame resting decisively on its sound block, the surrounding bench and empty witness chair suggesting a verdict already all but certain before the trial even begins. Smaller and subordinate: a stack of case files piled neatly to one side; a single scale of justice tipped heavily to one side; soft light streaming through tall courtroom windows. MOOD: formal, weighty, decisive."
  },
  {
   "id": "jp-k-boty",
@@ -612,7 +639,8 @@
   "quip_wrong": "Skoro, ale ne — boty zůstávají venku hned u dveří, ne až u postele. Kdo si je nechá na nohou o kus dál, čeká ho jen trapná procházka zpátky k předsíni.",
   "explanation": "Předsíň, kde se boty zouvají, se japonsky jmenuje genkan a bývá o pár centimetrů níž než zbytek podlahy — schůdek jasně odděluje „špinavou“ venkovní zónu od čisté vnitřní.",
   "about": "zouvání bot v japonských domácnostech",
-  "kids": true
+  "kids": true,
+  "irony_prompt": "A neat row of shoes fills the frame lined up just inside a doorway, toes pointing outward, while a pair of soft house slippers waits invitingly on the raised floor just beyond. Smaller and subordinate: a small wooden step separating the two levels; a potted plant beside the entrance; a folded umbrella leaning in the corner. MOOD: tidy, welcoming, ritual."
  },
  {
   "id": "jp-k-karaoke",
@@ -633,7 +661,8 @@
   "explanation": "Slovo karaoke vzniklo spojením japonského kara (prázdný) a zkráceného anglického okesutora (orchestra), tedy doslova „prázdný orchestr“; první karaoke stroj sestrojil v roce 1971 hudebník Daisuke Inoue v Kóbe.",
   "about": "vzniku karaoke",
   "kids": true,
-  "image_prompt": "A painterly watercolor gouache illustration of vzniku karaoke, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of vzniku karaoke, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A single microphone fills the frame held mid-song by an enthusiastic singer in a small private room, colorful mood lighting washing over the walls around them. Smaller and subordinate: a tambourine and maracas scattered on a low table; a half-empty drink glass sweating with condensation; friends clapping along on a nearby couch. MOOD: exuberant, private, joyful."
  },
  {
   "id": "jp-t-cajovy-obrad",
@@ -654,7 +683,8 @@
   "quip_wrong": "Rychlost, úspora, souboj — tři návnady, žádná z nich to netrefuje. Čanoju je obřad, kde by kdokoli spěchající vypadal jako vetřelec na vlastní party.",
   "explanation": "Podobu, jakou obřad má dodnes, mu v 16. století dal čajový mistr Sen no Rikjú, který ho spojil se zenbuddhistickou estetikou wabi-sabi — oceněním prostoty a nedokonalosti.",
   "about": "japonském čajovém obřadu čanoju",
-  "image_prompt": "Fotorealistický snímek tradičního japonského čajového obřadu, keramická miska matcha čaje na tatami, měkké přirozené světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek tradičního japonského čajového obřadu, keramická miska matcha čaje na tatami, měkké přirozené světlo, 16:9",
+  "irony_prompt": "A tea master's hand fills the frame whisking pale green tea into a delicate froth inside a simple ceramic bowl, every movement deliberate and unhurried. Smaller and subordinate: a folded silk cloth resting beside the bowl; a small bamboo scoop laid precisely across the tea container; a single flower arranged in an alcove behind. MOOD: deliberate, meditative, precise."
  },
  {
   "id": "jp-t-kapslovy-hotel",
@@ -675,7 +705,8 @@
   "quip_wrong": "Zajímavý tip, ale kapsle vznikla jinde a jindy — ani olympijský rok 1964, ani New York, ani rok 2000 to netrefily. Kdo si první noc v kapsli užil, spal v Ósace, ne v žádném z těch měst.",
   "explanation": "Hotel Capsule Inn Osaka navrhl architekt Kišo Kurokawa, čelní představitel hnutí metabolismus, jehož stavby šly skládat a vyměňovat jako moduly; kapsle byly původně určeny hlavně businessmanům, kteří v noci nestihli poslední vlak domů.",
   "about": "vzniku kapslových hotelů v Japonsku",
-  "image_prompt": "Fotorealistický snímek interiéru japonského kapslového hotelu s řadami malých spacích kapslí nad sebou, 16:9"
+  "image_prompt": "Fotorealistický snímek interiéru japonského kapslového hotelu s řadami malých spacích kapslí nad sebou, 16:9",
+  "irony_prompt": "A wall of stacked sleeping pods fills the frame, each compact capsule glowing softly from within with just enough room for one person to rest, curtains drawn halfway across a few openings. Smaller and subordinate: a small ladder leading to the upper row of pods; a pair of slippers left neatly below one capsule; a vending machine glowing faintly at the end of the corridor. MOOD: compact, futuristic, efficient."
  },
  {
   "id": "jp-a-oshiya",
@@ -696,7 +727,8 @@
   "quip_wrong": "Představa s jízdenkami, úklidem nebo hlídáním zní civilizovaně, jenže realita je fyzičtější — ranní špička na některých linkách řeší přeplněnost tlakem, ne organizací.",
   "explanation": "Japonské ministerstvo dopravy měří přeplněnost vlaků v procentech kapacity; některé tokijské linky ve špičce dlouhodobě přesahují 180 až 200 procent, tedy skoro dvojnásobek počtu míst, pro který byl vagon navržen.",
   "about": "přeplněnosti tokijských vlaků a zaměstnancích oshiya",
-  "image_prompt": "Fotorealistický snímek přeplněného tokijského vlakového nástupiště v ranní špičce, zaměstnanec v bílých rukavicích pomáhá cestujícím nastoupit, 16:9"
+  "image_prompt": "Fotorealistický snímek přeplněného tokijského vlakového nástupiště v ranní špičce, zaměstnanec v bílých rukavicích pomáhá cestujícím nastoupit, 16:9",
+  "irony_prompt": "A white-gloved attendant fills the frame pressing firmly against a crowd of commuters to help the train doors close, faces squeezed but good-natured amid the crush. Smaller and subordinate: a briefcase pinned awkwardly between two riders; the train doors sliding shut just behind the attendant's hands; a station clock ticking toward departure. MOOD: frantic, orderly, comedic."
  },
  {
   "id": "jp-a-nintendo-karty",
@@ -717,7 +749,8 @@
   "quip_wrong": "Hračky, tisk, nástroje — všechno znělo věrohodně, ale žádné z toho nebyl skutečný start. Než firma potkala Maria, přes sto let prodávala něco úplně jiného.",
   "explanation": "Než se Nintendo v 70. a 80. letech 20. století prosadilo videohrami, zkoušelo mimo jiné provozovat taxislužbu, síť milostných hotelů i výrobu instantní rýže — teprve videohry z něj udělaly globální značku.",
   "about": "původním podnikání firmy Nintendo",
-  "image_prompt": "Fotorealistický snímek tradičních japonských hracích karet hanafuda rozložených na dřevěném stole, 16:9"
+  "image_prompt": "Fotorealistický snímek tradičních japonských hracích karet hanafuda rozložených na dřevěném stole, 16:9",
+  "irony_prompt": "A small deck of colorful playing cards fills the frame fanned out on a wooden workshop table, each card decorated with plain abstract floral patterns and nothing else on their surface. Smaller and subordinate: a stack of blank cardstock waiting to be cut; a simple hand-cranked printing press in the background; a jar of paste and a brush nearby. MOOD: humble, meticulous, foundational."
  },
  {
   "id": "jp-t-judo-jemna-cesta",
@@ -737,7 +770,8 @@
   "quip_wrong": "Karate je taky japonské, ale jeho jméno znamená „prázdná ruka“. Tady jde o cestu, ne o ruku.",
   "explanation": "Judo sestavil Džigoró Kanó z technik starého ju-jutsu. Místo úderů se používají hody a páky, při kterých se obrací soupeřova vlastní síla proti němu. Na olympiádě se poprvé bojovalo v Tokiu roku 1964.",
   "about": "judu",
-  "more_fact": "Barevné pásy zavedl právě Kanó, aby bylo na první pohled vidět, jak daleko kdo došel. Dřív se v bojových uměních žádné takové stupně nenosily — odtud se systém rozšířil do karate, taekwonda i dál."
+  "more_fact": "Barevné pásy zavedl právě Kanó, aby bylo na první pohled vidět, jak daleko kdo došel. Dřív se v bojových uměních žádné takové stupně nenosily — odtud se systém rozšířil do karate, taekwonda i dál.",
+  "irony_prompt": "Two judo practitioners fill the frame locked in a controlled grip on a padded mat, one using gentle leverage to redirect the other's much larger momentum rather than brute force. Smaller and subordinate: a folded white belt resting at the mat's edge; a referee crouched low nearby watching closely; a row of spectators blurred softly in the background. MOOD: controlled, graceful, disciplined."
  },
  {
   "id": "jp-t-sibuja-diagonalni-prechod",
@@ -757,7 +791,8 @@
   "quip_wrong": "Kdyby to byla porucha, opravili by ji. Tohle je záměr — a docela chytrý.",
   "explanation": "Takovému uspořádání se říká diagonální přechod. Chodci nemusí obcházet křižovatku po dvou stranách, ale jdou rovnou napříč. Při jedné zelené jich Šibují projde i přes tisíc.",
   "about": "křižovatce Šibuja",
-  "more_fact": "Stejný typ přechodu funguje i v jiných zemích, jenže se mu v angličtině přezdívá podle téhle křižovatky. Šibuja se tak stala pojmem i pro dopravní inženýry, kteří v Tokiu nikdy nebyli."
+  "more_fact": "Stejný typ přechodu funguje i v jiných zemích, jenže se mu v angličtině přezdívá podle téhle křižovatky. Šibuja se tak stala pojmem i pro dopravní inženýry, kteří v Tokiu nikdy nebyli.",
+  "irony_prompt": "A massive pedestrian crossing fills the frame from above, hundreds of tiny figures streaming across every diagonal and direction at once the instant all traffic lights turn red together. Smaller and subordinate: neon storefront glow reflecting on wet pavement; a single cyclist weaving carefully through the crowd; umbrellas dotting the crossing on a rainy day. MOOD: chaotic, synchronized, electric."
  },
  {
   "id": "jp-t-mrakodrapy-zemetreseni",
@@ -777,6 +812,7 @@
   "quip_wrong": "Postavit něco, co se vůbec nehne, zní bezpečně — a je to přesně ta chyba, kvůli které budovy padají.",
   "explanation": "Dokonale tuhá stavba by při otřesech popraskala, protože by veškerý pohyb země přenesla do zdí. Proto se konstrukce dělá pružná a některé budovy stojí na gumových a olověných ložiscích, která pohyb pohltí dřív, než se dostane nahoru.",
   "about": "japonských mrakodrapech",
-  "more_fact": "Japonské děti nacvičují chování při zemětřesení stejně pravidelně jako u nás požární poplach. V lavici mají polstrovanou kapuci, kterou si při poplachu nasadí na hlavu proti padajícím věcem."
+  "more_fact": "Japonské děti nacvičují chování při zemětřesení stejně pravidelně jako u nás požární poplach. V lavici mají polstrovanou kapuci, kterou si při poplachu nasadí na hlavu proti padajícím věcem.",
+  "irony_prompt": "A tall skyscraper fills the frame swaying gently and visibly at its upper floors during a tremor, thick shock-absorbing dampers glowing faintly at its base like giant springs. Smaller and subordinate: a hanging lamp inside a nearby office swinging in sync; a coffee cup balanced perfectly still despite the motion; birds scattering briefly from the rooftop. MOOD: resilient, ingenious, steady."
  }
 ]
