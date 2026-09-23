@@ -71,6 +71,21 @@
   // obrazovce. Guard je tady, ať se nemusí hlídat na sedmi volajících místech. Escape cc
   // je jen pojistka: dnes je to vždy dvoupísmenný kód z řízené sady.
   function flagStamp(cc, cls){ if(!cc) return ""; return `<img class="${cls||"qz-stamp"}" src="assets/country-${esc(cc)}.jpg" alt="" onerror="this.style.display='none'">`; }
+  // Na glóbu je místo holé tečky ZAPÍCHNUTÁ VLAJKA (přání hráče 2026-09-24 — "ten
+  // glóbus je nudnej"). Recykluje se tatáž ironická vlajka jako na dlaždici výběru
+  // země (assets/country-{cc}.jpg u flagStamp výš), takže je to gag zadarmo, ne nový
+  // obsah k vygenerování. Chybějící/nenačtená vlajka nechá jen barevný praporek
+  // (obrázek zmizí, prosvitne pozadí .qz-flagpin-flagpop) — nikdy prázdné místo.
+  // Bez `cc` (velmi stará uložená hra bez kódu země) padá zpět na starou holou tečku.
+  function flagPinHtml(cc){
+    if(!cc) return `<span class="qz-beacon"></span>`;
+    return `<span class="qz-flagpin">
+      <span class="qz-flagpin-dot"></span>
+      <span class="qz-flagpin-pole"><span class="qz-flagpin-flagpop">
+        <img class="qz-flagpin-flag" src="assets/country-${esc(cc)}.jpg" alt="" onerror="this.removeAttribute('src')">
+      </span></span>
+    </span>`;
+  }
 
   let data = null, csVoice = null;
   // Odkaz „zdroj" je schválně vypnutý všude (karta s odpovědí i překryv „Víc o tom").
@@ -1504,7 +1519,7 @@
       <img class="qz-picbg" id="qz-pic-bg" src="img/${esc(q.id)}.jpg" alt="" aria-hidden="true">
       <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
       <div class="qz-pic-fallback" id="qz-pic-fb">${flagStamp(q.cc,"qz-flagbig")}<span class="qz-pic-fb-text"><span class="country">${country}</span><span class="sec">${section}</span></span></div>
-      <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span><span class="qz-beacon"></span></span><span class="qz-globecap">${country}</span></div>
+      <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span>${flagPinHtml(q.cc)}</span><span class="qz-globecap">${country}</span></div>
     </div>`;
   }
   // Okno z quiz.js ven. Online režim si otázku kreslí vlastní funkcí

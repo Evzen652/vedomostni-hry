@@ -81,6 +81,31 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-24 — Glóbus u otázky: místo holé pulzující tečky je na místě zapíchnutá VLAJKA.**
+  Hráč: *„ten glóbus se mi zdá hrozně nudnej, co kdyby jsme do toho vtipně zakomponovali
+  tu vlajku?"* Řešení recykluje existující ironickou vlajku země (`assets/country-{cc}.jpg`,
+  tatáž, co je na dlaždici výběru země a v `flagStamp()`) — je to gag zadarmo, žádný nový
+  obsah k vygenerování.
+  - **`flagPinHtml(cc)` ([quiz.js](quiz.js)) nahrazuje `.qz-beacon` v `ramHtml()`.** Tečka
+    (`.qz-beacon`) žije dál jen jako záložní stav pro otázku bez `cc` (velmi stará uložená
+    hra) — nový kód na ni bez `cc` sám spadne.
+  - **Žerď roste od bodu na zemi nahoru (`scaleY` z nuly), praporek pak popem naskočí
+    a nekonečně se mírně vlní (`skewY` ±4°).** Vlnění a jednorázový pop JSOU ZÁMĚRNĚ na
+    DVOU vnořených elementech (`.qz-flagpin-pole` → `.qz-flagpin-flagpop` →
+    `.qz-flagpin-flag`), ne na jednom — dvě animace měnící `transform` na TÉMŽ elementu
+    by se navzájem přebily, ne složily. Animace se přehrává znovu u KAŽDÉ otázky (nový
+    prvek při každém `innerHTML`), takže vlajka „se zapíchne" pokaždé nanovo.
+  - **Chybějící/nenačtený obrázek vlajky nenechá prázdné místo.** `onerror="this.
+    removeAttribute('src')"` (ne `display:none`, jak to dělá `flagStamp()` jinde —
+    tam je obrázek jen doplněk, tady je to celý smysl prvku) — bez `src` prohlížeč
+    nekreslí rozbitou ikonku a prosvitne `background: var(--coral)` na `.qz-flagpin-flag`
+    samotném, takže zůstane aspoň holý korálový praporek. Ověřeno vynucenou chybou v konzoli.
+  - **Existující `@media (prefers-reduced-motion: reduce)` (plošné pravidlo `#quiz-root *`)
+    pokrývá i tohle** — nové `@keyframes` nepotřebují vlastní výjimku.
+  - Ověřeno v prohlížeči (desktop, 1100px, mobil 375px): vlajka viditelná a čitelná i na
+    nejmenší šířce, žádný přesah rámu, `.qz-picframe.revealed .qz-globewrap{opacity:0}`
+    ji schová spolu se zbytkem glóbu stejně jako dřív tečku. `test:offline` 874 beze změny.
+
 - **2026-09-24 — Polsko: chybějících 34/34 ilustrací dopsáno, 1 vada — náhodný podpis
   v rákosí, spraveno prostým přeposláním. Poslední velká země z fronty, zbývá jen
   7 českých otázek se starým zadáním.**
