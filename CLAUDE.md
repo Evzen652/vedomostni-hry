@@ -81,6 +81,45 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-24 — Japonsko: chybějících 36/37 ilustrací dopsáno, 6 vad ze 36 (17 %) —
+  reálná slavná rytina si vynutila dvě kola oprav, protože model reprodukuje
+  SKUTEČNÉ dílo i s jeho textem.**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Riziková sada (tři písma
+  kandži/hiragana/katakana, ukijo-e rytina, sudy na sushi) — 4 skutečné textové vady
+  a 2 náhodné podpisy/monogram.
+  - **NOVÝ TYP: reprodukce SKUTEČNÉHO slavného díla (Hokusaiova Velká vlna) si vynutila
+    i jeho reálnou titulní kartuš s japonským textem — DVAKRÁT.** `jp-q-ukijoe` mělo
+    „a dramatic woodblock print... its corner completely blank with no title cartouche"
+    — model přesto namaloval skutečnou kartuš i s kurzívním podpisem, protože kreslí
+    ze skutečné znalosti obrazu, ne z abstraktní instrukce (stejný mechanismus jako
+    čínské znaky u `cn-q-znaky` předešlý den). **Negace nestačila ani podruhé.** Zabralo
+    až úplné vyloučení okraje ze záběru: samotná vlna vyplňuje celý rám „edge-to-edge...
+    cropped so tightly that no print border, frame, margin or panel is visible anywhere".
+    Bez okraje není kam kartuš umístit. **Poučení: u reprodukce SKUTEČNÉHO díla s textem
+    nejde spoléhat na zákaz jeho součásti — musí zmizet celá plocha, kde ta součást
+    v realitě sedí** (rozšíření pravidla z Rumunska na existující umělecká díla).
+  - **Past, kterou jsem si vyrobil sám podruhé v řadě: „tally marks scratched into
+    barrel's side" vyrobilo vyrytý znak podobný kandži.** `jp-q-sushi` mělo ve vedlejším
+    gagu vlastní nápad na „kalendářové čárky" na sudu — model je vykreslil jako
+    blokové rytiny připomínající výrobní razítko. Oprava: fráze úplně pryč, nahrazeno
+    „the barrel's staves smooth and completely plain with no marks of any kind".
+  - **Tři písma (kandži/hiragana/katakana) ilustrovaná jako TŘI RŮZNĚ TVAROVANÉ KLÍČE
+    pasující do jednoho zámku** (`jp-q-kandzi`) — po přestavbě ze svitku s kaligrafií
+    (první verze vyrobila čitelná písmena všech tří stylů) vyšlo čistě. Fakt o třech
+    systémech písma jde ilustrovat bez jediného tahu štětcem.
+  - **Konkrétní typ komerční ulice (přechod v Šibuji) si řekl o neonové vývěsky** i bez
+    zmínky v zadání — stejný mechanismus jako čínský noční trh (23. 9.) a nizozemský
+    coffee shop, potvrzeno počtvrté napříč jazyky/skripty. Oprava: „colorful building
+    facades left completely plain and blank".
+  - **2 náhodné podpisy/monogramy** (`jp-t-manga-tezuka` kurzívní podpis v rohu kresby,
+    `jp-a-ustava-clanek9` monogram „HA" vyrytý do zdi) — oba spravilo přeposlání
+    stejného zadání napoprvé.
+  - **Vroubkování na klíči (`jp-q-kandzi`) a mahjongové/razítkové vzory posouzeny jako
+    mechanický/dekorativní vzor, ne text** — stejná kategorie jako čínský abstraktní
+    uzlový vzor předešlý den.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 41.** Zbývá jen Polsko (34) a 7 českých
+    otázek se starým zadáním.
+
 - **2026-09-23 — Čína: chybějících 36/38 ilustrací dopsáno, 1 vada — SKUTEČNÉ ČÍNSKÉ
   ZNAKY vykreslené i přes výslovný pokyn „abstract, unreadable".**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Fond Číny má logicky vysoké
