@@ -415,7 +415,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hangul",
   "source_card": "kp-jazyk-hangul",
   "image_prompt": "Fotorealistický detailní snímek znaků hangulu psaných tuší na tradičním papíře, 16:9",
-  "about": "písmu hangul"
+  "about": "písmu hangul",
+  "irony_prompt": "A wise king fills the frame extending a single small wooden character-shaped block toward a kneeling farmer, both smiling as the gift changes hands. Smaller and subordinate: a locked wooden chest covered in countless pictorial seals sitting shut behind them; a calligrapher's brush resting idle and unused; a rice paddy stretching to the horizon. MOOD: generous, historic, hopeful."
  },
  {
   "id": "kp-q-rozdily",
@@ -437,7 +438,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Korean_language",
   "source_card": "kp-jazyk-rozdily",
   "image_prompt": "Fotorealistický snímek dvojjazyčných korejských textových ukázek na papíře, čistý layout, 16:9",
-  "about": "rozdílech severo- a jihokorejštiny"
+  "about": "rozdílech severo- a jihokorejštiny",
+  "irony_prompt": "Two elderly grandmothers fill the frame leaning over a low garden fence, gesturing animatedly at the same basket of vegetables between them, mouths open mid-conversation, clearly enjoying the same easy exchange. Smaller and subordinate: identical woven baskets on each side of the fence; a cat watching from a low wall; laundry drying on a line behind. MOOD: warm, familiar, chatty."
  },
  {
   "id": "kp-q-pozdravy",
@@ -459,7 +461,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Korean_language",
   "source_card": "kp-jazyk-pozdravy",
   "image_prompt": "Fotorealistický snímek ručně psaných korejských pozdravů v sešitu, 16:9",
-  "about": "korejských pozdravech"
+  "about": "korejských pozdravech",
+  "irony_prompt": "A row of five people of different ages fills the frame each bowing at a distinctly different depth, from a barely-tilted nod by a small child to a deep, formal bow by an elderly figure, all facing the same direction in sequence. Smaller and subordinate: a doorway they all face; soft morning light streaming in; a pair of shoes lined up neatly outside. MOOD: respectful, orderly, gentle."
  },
  {
   "id": "kp-q-naengmyeon",
@@ -569,7 +572,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Korean_War",
   "source_card": "kp-historie-valka",
   "image_prompt": "Fotorealistická klidná krajina kopců poblíž bývalé frontové linie, mlhavé počasí, bez lidí a vojenské techniky, 16:9",
-  "about": "korejské válce"
+  "about": "korejské válce",
+  "irony_prompt": "A low barbed-wire fence fills the frame bisecting a wide green field, two soldiers in plain uniform standing rigidly at attention on opposite sides, motionless and facing each other across the wire, no weapons raised. Smaller and subordinate: tall grass swaying untouched along the fence line; a watchtower silhouette far in the background; a single bird perched calmly on the wire itself. MOOD: tense, still, unresolved."
  },
  {
   "id": "kp-q-rozdeleni",
@@ -612,7 +616,8 @@
   "quip_wrong": "Kimono, saree, dobok? Hezké tipy, jen z jiných zemí – tenhle sváteční korejský oděv má svoje vlastní jméno: hanbok.",
   "explanation": "Hanbok se skládá z krátké horní části (jeogori) a vzdušné sukně (chima) u žen nebo dlouhých kalhot (baji) u mužů.",
   "about": "hanboku",
-  "image_prompt": "A painterly watercolor gouache illustration of hanboku, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text"
+  "image_prompt": "A painterly watercolor gouache illustration of hanboku, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
+  "irony_prompt": "A flowing traditional dress fills the frame, its short fitted bodice and voluminous long skirt rippling in bright silk of vivid rose and gold, caught mid-twirl as if worn by an unseen dancer. Smaller and subordinate: a matching pair of embroidered silk shoes waiting below; a ribbon sash trailing in the breeze; soft petals drifting past. MOOD: graceful, festive, radiant."
  },
  {
   "id": "kp-k-hora-pektu-jezero",
@@ -632,7 +637,8 @@
   "quip_correct": "Bravo! Jezero Chon je tak hluboké, že by se do něj vešly na sobě tři Eiffelovky, a klidně by zůstalo místo navrch.",
   "quip_wrong": "Ne tak úplně — ledovec ani chrám tam nehledej, na vrcholu hory Pektu čeká hluboké jezero v kráteru staré sopky.",
   "explanation": "Nebeské jezero (Chon) na vrcholu hory Pektu dosahuje hloubky přes 300 metrů a leží v sopečné kaldéře. Je jedním z nejvýše položených jezer světa.",
-  "about": "Nebeském jezeře na vrcholu hory Pektu"
+  "about": "Nebeském jezeře na vrcholu hory Pektu",
+  "irony_prompt": "A vast crater lake fills the frame, its deep blue water ringed by steep volcanic cliffs at the summit of a tall mountain, mist curling off the surface in the crisp air. Smaller and subordinate: a lone hiker standing small at the crater rim gazing down; hardy alpine flowers clinging to the rock; a thin waterfall trickling from a crack in the cliff. MOOD: majestic, serene, ancient."
  },
  {
   "id": "kp-k-drak-korea",
@@ -652,7 +658,8 @@
   "quip_correct": "Trefa! Evropské draky bys asi radši obešel obloukem — ten korejský přináší jen déšť a štěstí, ne zkázu.",
   "quip_wrong": "Skoro, ale ne tak úplně — zapomeň na oheň a zkázu, korejský drak vládne dešti a přináší štěstí, ne strach.",
   "explanation": "Korejský drak (jongui) žije ve vodě nebo mracích a ovládá déšť. Je spojen s královskou mocí a na rozdíl od evropských draků je dobrou a ochrannou bytostí.",
-  "about": "draku v korejské kultuře"
+  "about": "draku v korejské kultuře",
+  "irony_prompt": "A long sinuous dragon fills the frame coiling gently through a swirl of rain clouds, its expression benevolent and calm rather than fierce, scales gleaming in soft blue-green light. Smaller and subordinate: gentle rain falling onto rice paddies below; a rainbow arcing faintly nearby; a farmer looking up gratefully at the sky. MOOD: benevolent, powerful, auspicious."
  },
  {
   "id": "kp-k-borovice",
@@ -672,7 +679,8 @@
   "quip_correct": "Borovice, přesně tak! Ostatní stromy v zimě svlečou listí, ona zůstává zelená i pod sněhem — proto se stala symbolem vytrvalosti.",
   "quip_wrong": "Bambus ani třešeň bys tady nehledal správně — vytrvalost v korejské kultuře patří borovici, věčně zelené i v mrazu.",
   "explanation": "Borovice se v korejské kultuře a umění objevuje po staletí. Tradiční malby zdobí borovice na kopcích a básníci ji opěvují jako symbol věrnosti a odolnosti.",
-  "about": "borovici jako symbolu Koreje"
+  "about": "borovici jako symbolu Koreje",
+  "irony_prompt": "A tall, weathered pine tree fills the frame standing alone on a rocky ridge, its gnarled branches holding firm against a stiff wind while everything else bends. Smaller and subordinate: a thin layer of frost dusting its needles; smaller young pines sheltering in its lee; distant mountains fading into mist. MOOD: resilient, steadfast, quiet."
  },
  {
   "id": "kp-t-pchjongjang",
@@ -694,7 +702,8 @@
   "explanation": "Pchjongjang patří k nejstarším nepřetržitě osídleným místům na Korejském poloostrově — archeologové tu nacházejí stopy osídlení už z doby bronzové, tisíce let před vznikem dnešního státu.",
   "source_url": "https://cs.wikipedia.org/wiki/Pchjongjang",
   "image_prompt": "Fotorealistický širokoúhlý snímek řeky Tedong protékající Pchjongjangem, mosty a nábřeží, jasný den, bez lidí, 16:9",
-  "about": "Pchjongjangu"
+  "about": "Pchjongjangu",
+  "irony_prompt": "A wide, calm river fills the frame reflecting a skyline of tall apartment towers along its banks at golden hour, a few small fishing boats drifting on the water. Smaller and subordinate: willow trees leaning over the riverside path; a cyclist crossing a distant bridge; birds skimming low over the water. MOOD: calm, expansive, glowing."
  },
  {
   "id": "kp-t-kaesong",
@@ -716,7 +725,8 @@
   "explanation": "Kaesong leží jen pár kilometrů od hranice se Jižní Koreou a dodnes v něm stojí hrobky a paláce dynastie Kórjo zapsané na seznamu UNESCO.",
   "source_url": "https://en.wikipedia.org/wiki/Kaesong",
   "image_prompt": "Fotorealistický snímek starobylých kamenných hrobek a bran ve městě Kaesong, podzimní světlo, bez lidí, 16:9",
-  "about": "Kaesongu"
+  "about": "Kaesongu",
+  "irony_prompt": "An ancient stone palace gate fills the frame, its weathered dragon carvings and crumbling arch standing amid overgrown grass, a faint modern wire fence just visible in the soft-focus distance behind it. Smaller and subordinate: moss creeping across the old stones; a single persimmon tree growing beside the ruin; a stray cat sunning itself on a fallen block. MOOD: faded, layered, quiet."
  },
  {
   "id": "kp-k-tygr",
@@ -761,7 +771,8 @@
   "explanation": "Tanec talchum kdysi sloužil i k tomu, aby si obyčejní lidé mohli pod maskou dovolit škádlit bohaté a mocné, aniž by je někdo poznal.",
   "source_url": "https://en.wikipedia.org/wiki/Talchum",
   "image_prompt": "Fotorealistický snímek tanečníka v barevné dřevěné masce při tradičním korejském tanci talchum, venkovní vystoupení, 16:9",
-  "about": "tanci talchum"
+  "about": "tanci talchum",
+  "irony_prompt": "A dancer fills the frame mid-leap wearing an oversized colorful wooden mask with an exaggerated grinning expression, sleeves flaring wide in dramatic motion. Smaller and subordinate: a second masked dancer spinning further back, slightly blurred with movement; a small drum resting on the ground nearby; ribbons trailing from the dancer's hat. MOOD: exuberant, theatrical, wild."
  },
  {
   "id": "kp-k-ssirum",
@@ -783,7 +794,8 @@
   "explanation": "Ssirum se v Koreji zápasí odedávna na písčitém kruhovém kolbišti, vítěz shodí soupeře na zem nebo ho donutí dotknout se země jinou částí těla než chodidly.",
   "source_url": "https://en.wikipedia.org/wiki/Ssireum",
   "image_prompt": "Fotorealistický snímek dvou zápasníků ssirum na písčitém kolbišti, drží se za pásky na stehnech, 16:9",
-  "about": "zápase ssirum"
+  "about": "zápase ssirum",
+  "irony_prompt": "Two wrestlers fill the frame locked in a tense grip, each gripping the other's satba leg-belt tightly, muscles straining as they lean into a sandy ring under bright daylight. Smaller and subordinate: a referee crouched low nearby watching intently; a small trophy resting at the ring's edge; a crowd blurred softly in the background. MOOD: intense, gritty, determined."
  },
  {
   "id": "kp-k-hulky",
@@ -805,7 +817,8 @@
   "explanation": "Kovové hůlky se v Koreji používaly odedávna i proto, že se u královského dvora věřilo, že stříbro dokáže odhalit jed v jídle — obyčejné rodiny pak přešly na levnější a odolnější nerez.",
   "source_url": "https://en.wikipedia.org/wiki/Chopsticks#Korea",
   "image_prompt": "Fotorealistický detailní snímek kovových korejských hůlek a lžíce vedle misky rýže, 16:9",
-  "about": "korejských hůlkách"
+  "about": "korejských hůlkách",
+  "irony_prompt": "A pair of slender metal chopsticks fills the frame resting neatly across a small bowl, their cool silvery surface catching the light differently from ordinary wood. Smaller and subordinate: a scattering of rice grains beside the bowl; a folded cloth napkin nearby; steam rising gently from a nearby dish. MOOD: precise, homely, clean."
  },
  {
   "id": "kp-k-straka-posel",
@@ -827,7 +840,8 @@
   "explanation": "Straka je tak oblíbená, že se objevuje i v korejských pohádkách jako chytré a šikovné zvíře.",
   "source_url": "https://en.wikipedia.org/wiki/Oriental_magpie",
   "image_prompt": "Fotorealistický snímek strakatého ptáka s dlouhým ocasem sedícího na větvi stromu v korejské zahradě za slunečného dne, 16:9",
-  "about": "korejské strace"
+  "about": "korejské strace",
+  "irony_prompt": "A magpie fills the frame perched proudly on a bare winter branch, head tilted alertly as if about to announce something wonderful, black and white feathers gleaming. Smaller and subordinate: a second magpie landing nearby in a flurry of motion; a red ribbon caught fluttering on a twig below; a pale morning sky behind. MOOD: alert, cheerful, auspicious."
  },
  {
   "id": "kp-k-jerab-mandzursky",
@@ -849,7 +863,8 @@
   "explanation": "Jeřáb mandžuský patří mezi nejvzácnější ptáky na světě a v Koreji se často objevuje na starých malbách vedle borovic.",
   "source_url": "https://en.wikipedia.org/wiki/Red-crowned_crane",
   "image_prompt": "Fotorealistický snímek majestátního jeřába s červenou skvrnou na hlavě stojícího na zamrzlém poli v zimní krajině, 16:9",
-  "about": "jeřábu mandžuském"
+  "about": "jeřábu mandžuském",
+  "irony_prompt": "A tall crane fills the frame with wings spread wide mid-landing, its snow-white body and elegant black wingtips set off by a vivid patch of red on its crown. Smaller and subordinate: a frozen wetland stretching out beneath it; a second crane already standing watchfully nearby; reeds poking through thin ice. MOOD: elegant, rare, wintry."
  },
  {
   "id": "kp-k-dve-more",
@@ -871,7 +886,8 @@
   "explanation": "Žluté moře dostalo jméno podle nažloutlé barvy vody, kterou způsobuje jemný písek splavovaný řekami.",
   "source_url": "https://en.wikipedia.org/wiki/Yellow_Sea",
   "image_prompt": "Fotorealistický snímek skalnatého pobřeží Korejského poloostrova s vlnami moře v pozadí za jasného dne, 16:9",
-  "about": "mořích kolem Korejského poloostrova"
+  "about": "mořích kolem Korejského poloostrova",
+  "irony_prompt": "A rugged coastal cliff fills the frame jutting out where two very different seas meet, muddy yellow-brown water churning on one side and clear deep teal water lapping calmly on the other. Smaller and subordinate: gulls wheeling above the meeting point; a lone fishing boat anchored on the calmer side; wind-bent grass along the clifftop. MOOD: dramatic, contrasting, coastal."
  },
  {
   "id": "kp-k-hornata-zeme",
@@ -893,7 +909,8 @@
   "explanation": "Kvůli hornatému terénu se v Severní Koreji obdělává jen malá část půdy a pole se často budují na terasách do svahů.",
   "source_url": "https://en.wikipedia.org/wiki/Geography_of_North_Korea",
   "image_prompt": "Fotorealistický snímek zvlněné hornaté krajiny severní Koreje s terasovitými poli na svazích a mlhou mezi vrcholky, 16:9",
-  "about": "hornaté krajině Severní Koreje"
+  "about": "hornaté krajině Severní Koreje",
+  "irony_prompt": "A vast panorama of jagged mountain ridges fills the frame, one range after another fading into blue haze toward the horizon with barely a flat patch of land in sight. Smaller and subordinate: a thin dirt path winding up the nearest slope; a solitary goat grazing on a rocky outcrop; low clouds catching on a distant peak. MOOD: rugged, endless, humbling."
  },
  {
   "id": "kp-k-korejske-hrusky",
@@ -915,7 +932,8 @@
   "explanation": "Korejské hrušky se kvůli tvaru podobají spíš jablku a mají křupavou, velmi šťavnatou dužinu.",
   "source_url": "https://en.wikipedia.org/wiki/Pyrus_pyrifolia",
   "image_prompt": "Fotorealistický snímek velkých šťavnatých korejských hrušek na dřevěném podnose s kapkami vody na slupce, 16:9",
-  "about": "korejských hruškách"
+  "about": "korejských hruškách",
+  "irony_prompt": "An enormous pear fills the frame cradled in both hands, its golden-brown skin dimpled and glistening with juice, comically larger than any ordinary fruit. Smaller and subordinate: a small knife and plate waiting nearby; a basket of slightly smaller pears just out of focus; a leaf still attached to its stem. MOOD: juicy, abundant, wholesome."
  },
  {
   "id": "kp-t-sollal-svatek",
@@ -937,7 +955,8 @@
   "explanation": "K Sollalu neodmyslitelně patří polévka tteokguk z rýžových nudliček, kterou Korejci jedí na oslavu toho, že jsou o rok starší.",
   "source_url": "https://en.wikipedia.org/wiki/Korean_New_Year",
   "image_prompt": "Fotorealistický snímek korejské rodiny v tradičních hanbocích, kde dítě klaní pozdravuje prarodiče při novoročním svátku, 16:9",
-  "about": "svátku Sollal"
+  "about": "svátku Sollal",
+  "irony_prompt": "A young child fills the frame bowing deeply and formally on a cushioned floor before a seated grandparent in bright silk hanbok, small hands pressed together with great concentration. Smaller and subordinate: a low table set with rice cakes and fruit nearby; a folded envelope waiting on the grandparent's lap; warm lantern light filling the room. MOOD: tender, respectful, warm."
  },
  {
   "id": "kp-k-narodni-kvetina",
@@ -959,6 +978,7 @@
   "explanation": "Květy mokranu kvetou už brzy na jaře a v Koreji se jim přezdívá také 'severokorejská magnólie'.",
   "source_url": "https://en.wikipedia.org/wiki/Magnolia_sieboldii",
   "image_prompt": "Fotorealistický snímek bílých voňavých květů magnólie kvetoucích na jarní větvi proti modré obloze, 16:9",
-  "about": "korejské magnólii (mokran)"
+  "about": "korejské magnólii (mokran)",
+  "irony_prompt": "A single magnolia blossom fills the frame, its pale white petals unfurling wide and fragrant against a soft blurred green background, a few dewdrops clinging to the edges. Smaller and subordinate: a second bud just beginning to open on the same branch; a bee hovering near the center; a scattering of fallen petals below. MOOD: pure, fragrant, delicate."
  }
 ]

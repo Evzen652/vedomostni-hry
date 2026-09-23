@@ -63,7 +63,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tutankhamun",
   "source_card": "eg-lide-tutanchamon",
   "image_prompt": "Fotorealistický snímek zlaté posmrtné masky Tutanchamona v muzejní vitríně, dramatické osvětlení, 16:9",
-  "about": "faraonu Tutanchamonovi"
+  "about": "faraonu Tutanchamonovi",
+  "irony_prompt": "A small boy fills the frame sitting on a towering golden throne far too large for him, his little legs dangling well above the floor while a heavy crown and false beard threaten to slip off his head. Smaller and subordinate: two attendants adjusting the oversized crown from either side; ornate carved armrests dwarfing his small hands; a striped headcloth pooling loosely on his shoulders. MOOD: solemn, comical, overwhelming."
  },
  {
   "id": "eg-q-kosari",
@@ -85,7 +86,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Koshari",
   "source_card": "eg-jidlo-kosari",
   "image_prompt": "Fotorealistický snímek misky košárí s rajčatovou omáčkou a křupavou cibulkou navrch, 16:9",
-  "about": "košárí"
+  "about": "košárí",
+  "irony_prompt": "A deep bowl of koshari fills the frame in glossy layers — white rice, dark brown lentils, short pasta tubes and pale chickpeas, all drenched in a rich red tomato sauce and topped with a generous heap of crispy golden fried onions. Smaller and subordinate: a small jug of extra sauce waiting beside the bowl; a spoon resting half-buried in the layers; steam curling gently upward. MOOD: hearty, layered, comforting."
  },
  {
   "id": "eg-q-suez",
@@ -107,7 +109,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
   "source_card": "eg-historie-suez",
   "image_prompt": "Fotorealistický snímek obří nákladní lodi proplouvající Suezským průplavem, pouštní krajina po obou stranách, 16:9",
-  "about": "Suezském průplavu"
+  "about": "Suezském průplavu",
+  "irony_prompt": "A massive cargo ship fills the frame squeezed dramatically through a narrow desert canal, its hull towering many times taller than the golden dunes lining either bank. Smaller and subordinate: a row of camels resting unbothered on the ridge above, watching the giant hull glide past; a small pilot boat trailing behind; heat shimmer rising off the sand. MOOD: monumental, improbable, sweeping."
  },
  {
   "id": "eg-q-mumifikace",
@@ -129,7 +132,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mummy",
   "source_card": "eg-kultura-mumifikace",
   "image_prompt": "Fotorealistický snímek staroegyptské mumie v ozdobném sarkofágu v muzejní expozici, tlumené osvětlení, 16:9",
-  "about": "egyptské mumifikaci"
+  "about": "egyptské mumifikaci",
+  "irony_prompt": "A carefully wrapped mummy fills the frame lying in dignified repose on a low stone table, linen bandages wound in neat overlapping bands from head to foot. Smaller and subordinate: four plain canopic jars with carved animal-head lids standing in a row nearby; a small dish of aromatic resin beside the table; soft lamplight flickering on the stone walls. MOOD: solemn, careful, reverent."
  },
  {
   "id": "eg-q-rosetta",
@@ -151,7 +155,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
   "source_card": "eg-umeni-rosetta",
   "image_prompt": "Fotorealistický detailní snímek Rosettské desky s vytesaným textem ve třech písmech, muzejní osvětlení, 16:9",
-  "about": "Rosettské desce"
+  "about": "Rosettské desce",
+  "irony_prompt": "A weathered stone slab fills the frame covered edge to edge in rows of small pictorial carvings — birds, eyes, wavy lines, upright figures — deeply cut into its dark surface, catching raking light. Smaller and subordinate: a scholar's magnifying glass held just above one corner; a soft pencil and notebook resting nearby, page left blank; dust motes drifting in a shaft of light. MOOD: mysterious, revelatory, intent."
  },
  {
   "id": "eg-q-salah",
@@ -173,7 +178,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mohamed_Salah",
   "source_card": "eg-sport-salah",
   "image_prompt": "Fotorealistický snímek fotbalisty v červeném dresu slavícího gól na přeplněném stadionu, dynamický pohyb, 16:9",
-  "about": "Mohamedu Salahovi"
+  "about": "Mohamedu Salahovi",
+  "irony_prompt": "An empty red football jersey numbered eleven fills the frame draped reverently over the high back of an ornate golden throne, sleeves hanging like folded arms. Smaller and subordinate: a leather football resting at the foot of the throne; a laurel wreath hung on one armrest; stadium floodlight glow softening the background. MOOD: reverent, triumphant, larger-than-life."
  },
  {
   "id": "eg-q-hieroglyfy",
@@ -195,7 +201,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
   "source_card": "eg-jazyk-hieroglyfy",
   "image_prompt": "Fotorealistický ilustrativní snímek staroegyptských hieroglyfů vytesaných do kamenné stěny chrámu, teplé světlo, bez lidí, 16:9",
-  "about": "staroegyptských hieroglyfech"
+  "about": "staroegyptských hieroglyfech",
+  "irony_prompt": "A crumbling stone wall fills the frame, its carved rows of ancient pictorial symbols half-buried under drifted sand and draped in delicate cobwebs, clearly untouched for centuries. Smaller and subordinate: a lizard basking on a fallen block; a shaft of light slanting through a collapsed doorway; wind-blown sand pooling in the carved grooves. MOOD: forgotten, silent, timeless."
  },
  {
   "id": "eg-k-pyramidy",
@@ -215,7 +222,8 @@
   "quip_correct": "Hop, a je to! Žádné jeřáby, žádné motory, a přesto stojí už přes čtyři tisíce let.",
   "quip_wrong": "Skoro, ale ne tak úplně — mrakodrapy? Hrady? Ani jedno nevypadá jako ty špičaté obry v poušti; tam kralují pyramidy.",
   "explanation": "Největší pyramida v Gíze je poskládaná z tolika kamenných kvádrů, že by jimi šlo naložit tisíce náklaďáků.",
-  "about": "pyramidách"
+  "about": "pyramidách",
+  "irony_prompt": "A colossal stone pyramid fills the frame rising in sharp, sun-bleached tiers against a cloudless desert sky, its point catching the last warm light of day. Smaller and subordinate: a line of tiny camels and riders passing at its base for scale; wind-rippled sand dunes in the foreground; two smaller pyramids fading into haze behind. MOOD: monumental, ancient, awe-inspiring."
  },
  {
   "id": "eg-k-velbloud",
@@ -235,7 +243,8 @@
   "quip_correct": "Správně, je to tažné zvíře pouště — kráva by tam vydržela sotva den, ale velbloud tam prostě patří, hrb nehrb.",
   "quip_wrong": "Ne tak docela — na krávu ani kozu v poušti nesázej; s hrbem na zádech tam cestuje velbloud.",
   "explanation": "V hrbu velbloud nemá vodu, ale tuk — je to jeho zásoba jídla na dlouhou cestu pouští.",
-  "about": "velbloudovi"
+  "about": "velbloudovi",
+  "irony_prompt": "A camel fills the frame striding across a golden dune with its distinctive humped back silhouetted against the setting sun, long legs kicking up fine trails of sand. Smaller and subordinate: a woven saddle blanket draped over its back; a second camel following in single file behind; heat haze shimmering along the horizon. MOOD: patient, enduring, sunlit."
  },
  {
   "id": "eg-k-nil",
@@ -255,7 +264,8 @@
   "quip_correct": "Jsi bystrá hlava! Zkus si představit, že bys Nil plaval od pramene k ústí — jeden den by ti ani zdaleka nestačil.",
   "quip_wrong": "Tentokrát vedle, zkus to příště — Vltavu, Labe i Moravu znáš z domova, ale ta dlouhá řeka v Egyptě se jmenuje Nil.",
   "explanation": "Nil patří mezi nejdelší řeky na světě a skoro všichni lidé v Egyptě bydlí kousek od něj.",
-  "about": "řece Nil"
+  "about": "řece Nil",
+  "irony_prompt": "A wide, calm river fills the frame winding through a lush green ribbon of palm trees and reeds that cuts sharply through the surrounding tan desert on either side. Smaller and subordinate: a small wooden felucca sailboat drifting on the current; fishermen casting a net from the bank; birds wading in the shallows. MOOD: lush, life-giving, tranquil."
  },
  {
   "id": "eg-k-sfinga",
@@ -276,7 +286,8 @@
   "quip_wrong": "Kdyby měla hlavu krokodýla, turisté by se fotili z bezpečnější vzdálenosti.",
   "explanation": "Sfinga je vytesaná z jednoho jediného kusu vápencové skály přímo na místě, takže ji nikam nedopravovali – je to jedna z největších a nejstarších soch na Zemi.",
   "about": "Sfinze u Gízy",
-  "image_prompt": "Fotorealistický snímek Velké sfingy u pyramid v Gíze v podvečerním světle, 16:9"
+  "image_prompt": "Fotorealistický snímek Velké sfingy u pyramid v Gíze v podvečerním světle, 16:9",
+  "irony_prompt": "A colossal stone statue fills the frame with the calm face of a human resting atop a great crouching lion's body, weathered by thousands of years of desert wind. Smaller and subordinate: two towering pyramids rising behind in the haze; tiny tourists dwarfed at its stone paws; sand drifting gently across the base. MOOD: ancient, watchful, majestic."
  },
  {
   "id": "eg-k-kocky",
@@ -297,7 +308,8 @@
   "quip_wrong": "Kdepak – kočky si tu nevydupaly ani škrábátko navíc, rovnou trůn.",
   "explanation": "Když v rodině zemřela domácí kočka, truchlící si na znamení smutku holili obočí.",
   "about": "posvátných kočkách starého Egypta",
-  "image_prompt": "Fotorealistický snímek egyptské mourovaté kočky sedící na slunném dvorku s hliněnými zdmi, 16:9"
+  "image_prompt": "Fotorealistický snímek egyptské mourovaté kočky sedící na slunném dvorku s hliněnými zdmi, 16:9",
+  "irony_prompt": "A sleek, regal cat fills the frame sitting bolt upright on a woven cushion, adorned with a thin gold collar and tiny earrings, gazing calmly ahead as if fully aware of its own importance. Smaller and subordinate: a small bowl of milk offered nearby; carved stone cat statuettes lining a shelf behind; incense smoke curling softly upward. MOOD: dignified, revered, serene."
  },
  {
   "id": "eg-k-rude-more",
@@ -318,7 +330,8 @@
   "quip_wrong": "Bohužel ne – žádné ledovce, tady je i v zimě tepleji než ve většině evropských bazénů.",
   "explanation": "Rudé moře patří mezi nejteplejší moře světa, a proto se v něm potápěčům daří vidět korály i v hloubkách, kam jinde sluneční světlo skoro nedosáhne.",
   "about": "korálových útesech Rudého moře",
-  "image_prompt": "Fotorealistický podvodní snímek barevného korálového útesu s hejnem ryb v Rudém moři, 16:9"
+  "image_prompt": "Fotorealistický podvodní snímek barevného korálového útesu s hejnem ryb v Rudém moři, 16:9",
+  "irony_prompt": "A vivid coral reef fills the frame in dazzling branches of orange, purple and pink beneath crystal-clear turquoise water, small fish darting between the fronds. Smaller and subordinate: a sea turtle gliding past in the background; sunlight rippling down through the surface above; a diver's fin just entering frame at the edge. MOOD: vibrant, otherworldly, alive."
  },
  {
   "id": "eg-k-papyrus",
@@ -339,7 +352,8 @@
   "quip_wrong": "Ne tak úplně – zvířecí kůže na psaní taky existovala, ale jinde a jindy.",
   "explanation": "Právě z názvu této rostliny vzniklo i české slovo „papír“, ačkoli dnešní papír se vyrábí úplně jinou technologií.",
   "about": "papyru, prvním „papíru“ světa",
-  "image_prompt": "Fotorealistický detailní snímek svazku rostlin papyru rostoucích na břehu Nilu, 16:9"
+  "image_prompt": "Fotorealistický detailní snímek svazku rostlin papyru rostoucích na břehu Nilu, 16:9",
+  "irony_prompt": "A tall clump of papyrus reeds fills the frame growing thick along a muddy riverbank, their feathery umbrella-shaped tops swaying gently, with a single rolled blank sheet made from the same plant lying nearby, its surface completely bare. Smaller and subordinate: a reed-cutting knife resting on a flat stone; strips of pith drying in the sun; dragonflies hovering above the water. MOOD: fibrous, riverside, quiet."
  },
  {
   "id": "eg-t-kleopatra",
@@ -360,7 +374,8 @@
   "quip_wrong": "Ne – tahle královna nestavěla pyramidy, jen ovládala celou zemi z paláce.",
   "explanation": "Kleopatra pocházela z řecké dynastie Ptolemaiovců, přesto se z egyptských vládců jako jediná naučila i egyptský jazyk.",
   "about": "královně Kleopatře",
-  "image_prompt": "Fotorealistický snímek staroegyptské sochy královny s klenoty a zlatými ozdobami v muzejní expozici, 16:9"
+  "image_prompt": "Fotorealistický snímek staroegyptské sochy královny s klenoty a zlatými ozdobami v muzejní expozici, 16:9",
+  "irony_prompt": "An elegant royal figure's silhouette fills the frame standing at the prow of an ornate barge, heavy jeweled collar and headdress catching the last golden light as she gazes toward the horizon. Smaller and subordinate: rowers bent to their oars further back in the boat; lotus blossoms floating on the river surface; incense smoke drifting from a brazier at her feet. MOOD: commanding, luminous, legendary."
  },
  {
   "id": "eg-t-alexandrijska-knihovna",
@@ -403,7 +418,8 @@
   "quip_wrong": "Ne – nikdo ho nenechal zatopit, inženýři si dali práci ho zachránit po kouscích.",
   "explanation": "Chrám rozřezali na více než tisíc bloků a smontovali o 65 metrů výš a 200 metrů dál tak přesně, že si zachoval i vzácný úkaz, kdy sluneční paprsky dvakrát ročně proniknou až k sochám v nejhlubší části stavby.",
   "about": "chrámu Abú Simbel",
-  "image_prompt": "Fotorealistický letecký snímek chrámu Abú Simbel s obřími sochami faraona u jezera, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek chrámu Abú Simbel s obřími sochami faraona u jezera, 16:9",
+  "irony_prompt": "A colossal carved stone head fills the frame suspended mid-air in a sturdy cradle of ropes and steel beams, being carefully lowered by a crane onto a new rocky platform high above its original site. Smaller and subordinate: workers in hard hats guiding the ropes from below; the original cliff face visible half-dismantled behind; a dusty work truck parked nearby. MOOD: painstaking, monumental, ingenious."
  },
  {
   "id": "eg-t-asuanska-prehrada",
@@ -424,7 +440,8 @@
   "quip_wrong": "Ne, řeka směr nezměnila – ale vznikla vodní plocha, která přerostla staré mapy.",
   "explanation": "Kvůli zatopení údolí muselo být přesídleno přes sto tisíc lidí, hlavně núbijských obyvatel, kteří o svůj domov definitivně přišli.",
   "about": "Asuánské přehradě a Násirově jezeře",
-  "image_prompt": "Fotorealistický letecký snímek Asuánské přehrady a rozlehlého Násirova jezera v poušti, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek Asuánské přehrady a rozlehlého Násirova jezera v poušti, 16:9",
+  "irony_prompt": "A massive concrete dam wall fills the frame holding back an enormous shimmering lake that stretches to the horizon, stark against the dry tan desert hills on the far side. Smaller and subordinate: a small motorboat crossing the vast water; birds wheeling above the spillway; a thin line of green vegetation clinging to the lake's near shore. MOOD: vast, powerful, transformative."
  },
  {
   "id": "eg-t-nefertiti",
@@ -445,7 +462,8 @@
   "quip_wrong": "Ne – do Káhiry se nikdy nevrátila, spor o ni trvá dodnes v cizí zemi.",
   "explanation": "Egypt už přes sto let žádá o její navrácení, Německo to ale odmítá s tím, že byla ze země vyvezena zcela legálně už v roce 1913.",
   "about": "bustě královny Nefertiti",
-  "image_prompt": "Fotorealistický detailní snímek vystavené busty egyptské královny s vysokou korunou v muzejní vitríně, 16:9"
+  "image_prompt": "Fotorealistický detailní snímek vystavené busty egyptské královny s vysokou korunou v muzejní vitríně, 16:9",
+  "irony_prompt": "An elegant carved bust fills the frame displayed behind protective glass in a hushed museum gallery, its tall blue crown and serene painted features lit by a single soft spotlight. Smaller and subordinate: a small engraved placard mount left completely blank beneath it; visitors' silhouettes reflected faintly in the glass; a velvet rope cordoning off the pedestal. MOOD: serene, revered, timeless."
  },
  {
   "id": "eg-t-squash",
@@ -466,7 +484,8 @@
   "quip_wrong": "Ne, na lyžích egyptští sportovci historii nepíšou – tam vládnou spíš čtyřem stěnám kurtu.",
   "explanation": "Řadu let ovládají žebříčky mužů i žen v tomto sportu právě egyptští hráči, což dává vyniknout squashovým akademiím v Káhiře, odkud jich vzešlo hned několik.",
   "about": "egyptské squashové nadvládě",
-  "image_prompt": "Fotorealistický snímek profesionálního squashového utkání ve skleněném kurtu s diváky, 16:9"
+  "image_prompt": "Fotorealistický snímek profesionálního squashového utkání ve skleněném kurtu s diváky, 16:9",
+  "irony_prompt": "A squash racket and ball fill the frame frozen mid-swing against a glass court wall, the ball caught in a blur just after impact with a faint smudge trail behind it. Smaller and subordinate: a sweat towel draped over the court's side rail; a scoreboard light glowing softly out of focus; chalk dust hanging faintly in the air. MOOD: explosive, precise, dominant."
  },
  {
   "id": "eg-a-mumie-pas",
@@ -487,7 +506,8 @@
   "quip_wrong": "Ne, žádné anonymní bednění – tahle mumie cestovala s papíry, co by jí záviděl leckterý živý turista.",
   "explanation": "V kolonce povolání měl pas uvedeno „král (zemřelý)“ a na letišti v Paříži mumii přivítali s vojenskými poctami, jaké se běžně prokazují hlavám státu.",
   "about": "cestě mumie Ramesse II. do Paříže",
-  "image_prompt": "Fotorealistický snímek staré egyptské mumie vystavené v prosklené vitríně muzea, 16:9"
+  "image_prompt": "Fotorealistický snímek staré egyptské mumie vystavené v prosklené vitríně muzea, 16:9",
+  "irony_prompt": "A carefully wrapped mummy on a padded stretcher fills the frame being wheeled up a short ramp toward an airplane's open cargo hold, an official travel document with a wax-sealed cover lying completely blank on a velvet cushion beside it. Smaller and subordinate: two attendants in white gloves steadying the stretcher; a small international flight tag looped to the handle, left blank; the plane's silver fuselage gleaming behind. MOOD: surreal, ceremonious, absurd."
  },
  {
   "id": "eg-a-sourozenecke-svatky",
@@ -508,7 +528,8 @@
   "quip_wrong": "Ne, žádný obecný zákon pro všechny – tahle výsada patřila jen vládnoucí rodině.",
   "explanation": "DNA analýzy mumií, například Tutanchamonovy, odhalily zdravotní vady, které vědci přičítají právě generacím příbuzenského křížení.",
   "about": "sourozeneckých sňatcích egyptských faraonů",
-  "image_prompt": "Fotorealistický snímek staroegyptského nástěnného reliéfu zobrazujícího faraona a královnu vedle sebe, 16:9"
+  "image_prompt": "Fotorealistický snímek staroegyptského nástěnného reliéfu zobrazujícího faraona a královnu vedle sebe, 16:9",
+  "irony_prompt": "Two matching golden crowns fill the frame resting together on a single embroidered cushion, a length of woven gold ribbon looping between them to bind the pair as one. Smaller and subordinate: a carved family tree symbol etched faintly into the cushion's edge; two identical ceremonial scepters crossed behind; soft temple candlelight glowing around them. MOOD: formal, entwined, dynastic."
  },
  {
   "id": "eg-a-slovo-chemie",
@@ -529,7 +550,8 @@
   "quip_wrong": "Ne, s pyramidou to slovo nesouvisí – kořen sahá k barvě nilské půdy, ne ke tvaru stavby.",
   "explanation": "Přes arabské slovo „al-kimiya“ se výraz dostal do latiny a odtud i do většiny evropských jazyků, včetně češtiny.",
   "about": "egyptském původu slova „chemie“",
-  "image_prompt": "Fotorealistický snímek tmavé úrodné nilské půdy na břehu řeky za soumraku, 16:9"
+  "image_prompt": "Fotorealistický snímek tmavé úrodné nilské půdy na břehu řeky za soumraku, 16:9",
+  "irony_prompt": "A shallow dish of rich black river silt fills the frame contrasted sharply against a border of pale golden desert sand at its edge, a bubbling glass alembic vessel resting just beside it. Smaller and subordinate: a small mortar and pestle with dark powder; a single green shoot sprouting from the black soil; warm afternoon light slanting across the divide. MOOD: elemental, fertile, transformative."
  },
  {
   "id": "eg-a-alexandrijsky-majak",
@@ -550,7 +572,8 @@
   "quip_wrong": "Ne, nestojí dodnes – po majáku zbyly akorát kameny v základech úplně jiné stavby.",
   "explanation": "Jeho kamenné bloky později posloužily jako stavební materiál pro pevnost Qaitbay, která na stejném místě stojí dodnes.",
   "about": "Alexandrijském majáku, jednom ze sedmi divů světa",
-  "image_prompt": "Fotorealistický snímek pevnosti Qaitbay v Alexandrii na místě starověkého majáku za západu slunce, 16:9"
+  "image_prompt": "Fotorealistický snímek pevnosti Qaitbay v Alexandrii na místě starověkého majáku za západu slunce, 16:9",
+  "irony_prompt": "A towering ancient lighthouse fills the frame leaning at a dramatic tilt with great cracks running through its upper tiers, chunks of masonry already fallen into the churning sea below. Smaller and subordinate: gulls wheeling anxiously around the crumbling top; small fishing boats keeping a cautious distance; a signal fire still flickering weakly at its base. MOOD: crumbling, dramatic, fading."
  },
  {
   "id": "eg-k-oaza",
@@ -571,7 +594,8 @@
   "quip_wrong": "Delta ani meandr v poušti nekvetou – tohle zelené místo s vodou a palmami se jmenuje oáza.",
   "explanation": "Voda v oázách nepřichází z deště, ale z podzemních pramenů a studní – v některých částech Sahary neprší celé roky.",
   "about": "oázách v Sahaře",
-  "image_prompt": "Fotorealistický letecký snímek zelené oázy s palmami uprostřed žlutého písku Sahary, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek zelené oázy s palmami uprostřed žlutého písku Sahary, 16:9",
+  "irony_prompt": "A lush cluster of tall palm trees fills the frame surrounding a small pool of clear water, their fronds casting cool shade over the sand in stark contrast to the endless golden dunes stretching away on every side. Smaller and subordinate: a camel drinking at the water's edge; date clusters hanging heavy from the palms; a woven mat spread in the shade. MOOD: refreshing, sheltering, precious."
  },
  {
   "id": "eg-k-bavlna",
@@ -592,7 +616,8 @@
   "quip_wrong": "Vlna ani len se s egyptskou pověstí neperou – tahle sláva patří bavlně.",
   "explanation": "Egyptská bavlna má neobvykle dlouhá vlákna, díky kterým je výsledná látka hladší a pevnější než z běžné bavlny.",
   "about": "egyptské bavlně",
-  "image_prompt": "Fotorealistický snímek pole s bílými chomáčky bavlny při sklizni, 16:9"
+  "image_prompt": "Fotorealistický snímek pole s bílými chomáčky bavlny při sklizni, 16:9",
+  "irony_prompt": "A cluster of cotton bolls fills the frame, their fluffy white tufts bursting open from dry brown husks against a backdrop of tall green stalks stretching in neat rows. Smaller and subordinate: a woven basket half-filled with picked cotton; a bee hovering near a stray blossom; irrigation water glinting between the rows. MOOD: soft, abundant, sun-warmed."
  },
  {
   "id": "eg-k-galabija",
@@ -613,7 +638,8 @@
   "quip_wrong": "Kimono je z Japonska a sárí z Indie - v Egyptě se ve vedru nosí galabíja.",
   "explanation": "Barva galabíje často prozrazuje, odkud majitel pochází - tmavě modrá bývá typická třeba pro venkovany z jižního Egypta.",
   "about": "galabíji, tradičním egyptském rouchu",
-  "image_prompt": "Fotorealistický snímek muže v tradiční dlouhé galabíji na ulici starého Egypta, 16:9"
+  "image_prompt": "Fotorealistický snímek muže v tradiční dlouhé galabíji na ulici starého Egypta, 16:9",
+  "irony_prompt": "A long, loose-flowing robe fills the frame billowing gently in a warm desert breeze, its plain fabric rippling from shoulder to ankle in soft folds. Smaller and subordinate: a pair of simple leather sandals waiting below the hem; a woven headscarf draped loosely nearby; heat shimmer rising from sunbaked ground. MOOD: airy, practical, timeless."
  },
  {
   "id": "eg-k-hora-sinaj",
@@ -634,7 +660,8 @@
   "quip_wrong": "Ararat i Olymp mají svoje vlastní příběhy, ale Mojžíšova hora se jmenuje Sinaj.",
   "explanation": "Poutníci na vrchol hory Sinaj (2 285 m) vystupují často ještě za tmy, aby tam stihli východ slunce.",
   "about": "hoře Sinaj",
-  "image_prompt": "Fotorealistický snímek hory Sinaj při východu slunce s poutníky na stezce, 16:9"
+  "image_prompt": "Fotorealistický snímek hory Sinaj při východu slunce s poutníky na stezce, 16:9",
+  "irony_prompt": "A rugged, misty mountain peak fills the frame at dawn, its rocky slopes glowing gold as the first sunlight breaks over jagged ridgelines below. Smaller and subordinate: a narrow stone stairway winding up toward the summit; a small monastery nestled at the mountain's base; a lone bird circling high above. MOOD: sacred, still, luminous."
  },
  {
   "id": "eg-t-anubis",
@@ -655,7 +682,8 @@
   "quip_wrong": "Krokodýlí hlavu měl bůh Sobek, ne Anubis – tenhle si na starosti vzal mrtvé se šakalí tváří.",
   "explanation": "Podle mýtu Anubis na posmrtném soudu vážil srdce zemřelého proti pírku bohyně Maat – pokud srdce převážilo, duše o věčný život přišla.",
   "about": "bohu Anubisovi",
-  "image_prompt": "Fotorealistický snímek staroegyptské sochy boha Anubise se šakalí hlavou v muzejní expozici, 16:9"
+  "image_prompt": "Fotorealistický snímek staroegyptské sochy boha Anubise se šakalí hlavou v muzejní expozici, 16:9",
+  "irony_prompt": "A tall statue fills the frame with the powerful body of a standing man and the sharp, alert head of a jackal, painted in deep black and gold, one hand resting on a ceremonial staff. Smaller and subordinate: a set of golden scales balanced nearby; two flickering oil lamps flanking the figure; smooth stone floor reflecting faint torchlight. MOOD: solemn, watchful, otherworldly."
  },
  {
   "id": "eg-t-udoli-kralu",
@@ -676,7 +704,8 @@
   "quip_wrong": "Kámen ani technika za tím nestály – šlo čistě o to schovat poklady lupičům z dohledu.",
   "explanation": "Údolí králů leží na západním břehu Nilu naproti Luxoru, dřívějším Thébám – staří Egypťané věřili, že strana, kam zapadá slunce, patří říši mrtvých.",
   "about": "Údolí králů",
-  "image_prompt": "Fotorealistický snímek skalnatého Údolí králů u Luxoru s ústími hrobek ve skále, 16:9"
+  "image_prompt": "Fotorealistický snímek skalnatého Údolí králů u Luxoru s ústími hrobek ve skále, 16:9",
+  "irony_prompt": "A narrow rock-cut doorway fills the frame nearly invisible against the surrounding sun-bleached cliff face, its entrance deliberately camouflaged with loose rubble and matching stone. Smaller and subordinate: a single set of old footprints leading away into the valley; sheer cliffs rising on both sides; a lizard sunning itself near the hidden threshold. MOOD: secretive, guarded, desolate."
  },
  {
   "id": "eg-t-mesity-kahira",
@@ -697,7 +726,8 @@
   "quip_wrong": "Rozhledny ani majáky za tím nestojí – ty věže patří mešitám, je jich tu požehnaně.",
   "explanation": "Mezi mešitami vyniká Al-Azhar z roku 970, při které vznikla i jedna z nejstarších dosud fungujících univerzit na světě.",
   "about": "mešitách v Káhiře",
-  "image_prompt": "Fotorealistický panoramatický snímek Káhiry s minarety mnoha mešit na obzoru za soumraku, 16:9"
+  "image_prompt": "Fotorealistický panoramatický snímek Káhiry s minarety mnoha mešit na obzoru za soumraku, 16:9",
+  "irony_prompt": "A sprawling city skyline fills the frame at dusk, dozens of slender minarets rising above rooftops in every direction, their silhouettes catching the last warm glow of sunset. Smaller and subordinate: birds circling one distant tower; laundry lines strung between close rooftops; a felucca sail passing on the river below. MOOD: layered, ancient, glowing."
  },
  {
   "id": "eg-t-fotbal-al-ahly",
@@ -718,7 +748,8 @@
   "quip_wrong": "Zamalek je věčný rival, ne rekordman – tenhle primát drží Al Ahly.",
   "explanation": "Zápasy Al Ahly proti odvěkému rivalovi Zamaleku, zvané Káhirské derby, patří mezi nejsledovanější fotbalové zápasy celé Afriky.",
   "about": "klubu Al Ahly",
-  "image_prompt": "Fotorealistický snímek přeplněného fotbalového stadionu v Káhiře s fanoušky v červených dresech, 16:9"
+  "image_prompt": "Fotorealistický snímek přeplněného fotbalového stadionu v Káhiře s fanoušky v červených dresech, 16:9",
+  "irony_prompt": "A red football jersey fills the frame hanging on a locker hook, completely plain and unmarked with no crest, logo, or lettering of any kind, its fabric slightly worn from countless matches. Smaller and subordinate: a row of gleaming trophies lined up on a shelf behind it; a pair of muddy cleats resting below; a rolled team scarf draped over the bench. MOOD: proud, storied, victorious."
  },
  {
   "id": "eg-a-revoluce-2011",
@@ -739,7 +770,8 @@
   "quip_wrong": "Žádná válka ani soud za tím nestál – tohle rozhodly davy lidí na jednom náměstí.",
   "explanation": "Protesty byly součástí vlny arabského jara, která ve stejném roce svrhla i vládce Tuniska a Libye.",
   "about": "egyptské revoluci roku 2011",
-  "image_prompt": "Fotorealistický snímek davu lidí s egyptskými vlajkami na náměstí Tahrír v Káhiře, 16:9"
+  "image_prompt": "Fotorealistický snímek davu lidí s egyptskými vlajkami na náměstí Tahrír v Káhiře, 16:9",
+  "irony_prompt": "A vast city square fills the frame at first light, completely empty except for hundreds of abandoned sandals and scattered blank protest signs strewn across the pavement. Smaller and subordinate: a lone street sweeper's cart parked at the edge; a paper lantern rolling gently in the breeze; the sky brightening from deep blue to gold. MOOD: charged, exhausted, transformed."
  },
  {
   "id": "eg-a-lekarstvi",
@@ -760,7 +792,8 @@
   "quip_wrong": "Recepty ani hvězdy tenhle svitek neřeší – je to učebnice chirurgie stará tisíce let.",
   "explanation": "Popisuje 48 konkrétních případů poranění, hlavně hlavy a páteře, a u řady z nich autor upřímně přiznává, že léčba není možná – bez náboženských zaříkávání, jaká byla v jiných dobových lékařských textech běžná.",
   "about": "Edwinově Smithově papyru",
-  "image_prompt": "Fotorealistický snímek starého popsaného papyrového svitku rozloženého na stole, tlumené světlo, 16:9"
+  "image_prompt": "Fotorealistický snímek starého popsaného papyrového svitku rozloženého na stole, tlumené světlo, 16:9",
+  "irony_prompt": "A tightly rolled ancient scroll fills the frame lying beside a small set of bronze medical instruments — a probe, a pair of tweezers, a shallow dish — all arranged neatly on a linen cloth. Smaller and subordinate: a broken wax seal beside the scroll's edge; a mortar with crushed herbs nearby; soft daylight through a high narrow window. MOOD: precise, ancient, studious."
  },
  {
   "id": "eg-a-hustota-obyvatel",
@@ -781,7 +814,8 @@
   "quip_wrong": "Rovnoměrně to rozhodně není – lidé se tísní na úzkém pásu úrodné půdy, poušť zůstává skoro liduprázdná.",
   "explanation": "Přibližně 95 procent z více než 100 milionů Egypťanů žije natěsnáno na necelých 6 procentech rozlohy státu – v úrodném pásu podél Nilu a v jeho deltě.",
   "about": "hustotě osídlení podél Nilu",
-  "image_prompt": "Fotorealistický letecký snímek úzkého zeleného pásu polí podél Nilu obklopeného pouští, 16:9"
+  "image_prompt": "Fotorealistický letecký snímek úzkého zeleného pásu polí podél Nilu obklopeného pouští, 16:9",
+  "irony_prompt": "A narrow green ribbon of farmland fills the frame snaking through a vast expanse of pale tan desert stretching away on either side, densely packed with tiny fields and clustered rooftops along its length. Smaller and subordinate: a thin road following the green strip's edge; a small boat on the river running through its center; the desert's stark emptiness pressing in from both sides. MOOD: crowded, contrasting, vital."
  },
  {
   "id": "eg-a-ful-medames",
@@ -802,7 +836,8 @@
   "quip_wrong": "Kuře, rýže ani jogurtová polévka to nejsou – k ranní kávě patří v Egyptě hlavně dušené fazole.",
   "explanation": "Fúl medames se v Egyptě jedl už ve starověku – archeologové našli stopy podobného pokrmu i v hrobkách, takže je to možná nejdéle nepřetržitě vařené jídlo na světě.",
   "about": "fúl medames",
-  "image_prompt": "Fotorealistický snímek misky dušených fazolí fúl s olivovým olejem a citronem, 16:9"
+  "image_prompt": "Fotorealistický snímek misky dušených fazolí fúl s olivovým olejem a citronem, 16:9",
+  "irony_prompt": "A bowl of stewed brown fava beans fills the frame glistening with a drizzle of olive oil, dotted with a sprinkle of cumin and a wedge of lemon balanced on the rim. Smaller and subordinate: a piece of warm flatbread torn open beside the bowl; a small dish of chopped tomato and parsley nearby; steam curling gently upward. MOOD: hearty, simple, warming."
  },
  {
   "id": "eg-k-vlajka-zlaty-orel",
@@ -824,7 +859,8 @@
   "explanation": "Egyptská vlajka má tři vodorovné pruhy - červený, bílý a černý - které symbolizují boj za svobodu a naději do budoucna.",
   "source_url": "https://cs.wikipedia.org/wiki/Egyptsk%C3%A1_vlajka",
   "image_prompt": "Fotorealistický snímek egyptské vlajky s červeným, bílým a černým pruhem a zlatým orlem uprostřed, vlající na stožáru proti modré obloze, 16:9",
-  "about": "egyptské vlajce"
+  "about": "egyptské vlajce",
+  "irony_prompt": "A golden eagle emblem fills the frame with wings spread wide and a small shield clutched in its talons, rendered in gleaming metallic detail against a softly blurred backdrop of red, white and black fabric folds. Smaller and subordinate: a fluttering length of ribbon trailing from one wingtip; sunlight catching the emblem's polished edge; a flagpole's brass finial glinting nearby. MOOD: proud, gleaming, emblematic."
  },
  {
   "id": "eg-k-nilsky-krokodyl",
@@ -846,6 +882,7 @@
   "explanation": "Nilský krokodýl může vyrůst přes 5 metrů a patří mezi vůbec největší krokodýly na světě.",
   "source_url": "https://cs.wikipedia.org/wiki/Krokod%C3%BDl_nilsk%C3%BD",
   "image_prompt": "Fotorealistický snímek nilského krokodýla vyhřívajícího se na břehu řeky Nil s pootevřenou tlamou, 16:9",
-  "about": "nilském krokodýlovi"
+  "about": "nilském krokodýlovi",
+  "irony_prompt": "A large crocodile fills the frame gliding low through calm river water, only its ridged eyes and snout breaking the surface, ripples spreading out behind it. Smaller and subordinate: crumbling temple columns rising from the reeds on the riverbank; a heron standing frozen nearby, watching warily; sunlight glinting off the water's surface. MOOD: ancient, watchful, powerful."
  }
 ]

@@ -81,6 +81,25 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-23 — Severní Korea: chybějících 20/44 ilustrací dopsáno, 0 vad.**
+  Zbytek fondu Severní Koreje (24 otázek už mělo obrázek ze staršího importu) dostal
+  chybějících 20 zadání napsaných v session, `lint-irony` 0 chyb po jedné drobné opravě.
+  - **`lint-irony` chytil slovo „writing" ve VEDLEJŠÍM gagu** (`kp-q-hangul`: „a scribe's
+    writing brush" u krále vytvářejícího písmo) — stejná past jako jinde, samotné slovo
+    „writing" spouští chybu bez ohledu na kontext. Oprava: „a calligrapher's brush", bez
+    slova „writing".
+  - **Truhla s piktografickými pečetěmi (`kp-q-hangul`) prošla bez zásahu** — při zvětšení
+    jde o abstraktní kruhové symboly/čmáranice (postavička, tvary), ne o čitelné hangulské
+    ani jiné písmo. Stejná kategorie jako maďarské rovnice nebo mexický kalendář: piktogram
+    není zakázaný text, dokud nejde o abecední znaky.
+  - **Otevřená obálka v ruce babičky u svátku Sollal** (`kp-t-sollal-svatek`) vyšla čistě
+    prázdná i bez explicitního „completely blank" u obálky samotné — zadání mělo blank
+    jen u jiných prvků scény, ale obálka i tak vyšla bez nápisu. Ne every prop potřebuje
+    vlastní explicitní zákaz, pokud v zadání není slovo, které by nápis vyvolalo.
+  - **0 vad z 20** — nejnižší podíl za dlouhou dobu. Žádný náhodný podpis, žádný text.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 150.** Zapsána i zadání pro celý Egypt
+    (37 otázek), čekají na odeslání v další dávce.
+
 - **2026-09-22 — Jižní Afrika 38/38 ilustrací. POSLEDNÍ ZEMĚ z fronty Mexiko/Nový Zéland/
   Tchaj-wan/Jižní Afrika, celkem 5 zemí za jednu session (+ Mongolsko). 4 vady ze 38:
   chybný tvar vlajky, dvě textové (pas, deník), jeden náhodný podpis.**
