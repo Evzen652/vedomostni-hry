@@ -46,13 +46,18 @@
 }
 
 /* postava hostitele */
-.qz-host { position: absolute; left: 14px; top: 12px; z-index: 8; display: flex; align-items: center; gap: 10px; max-width: 60%; }
+.qz-host { position: absolute; left: 14px; top: 12px; z-index: 8; display: flex; align-items: center; gap: 12px; max-width: 72%; }
 .qz-host-av { width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0; border: 2.5px solid #fffdf6; outline: 2px solid #d8c9ad;
   background: radial-gradient(circle at 40% 34%, #f6d789, #d9a441 70%); display: flex; align-items: center; justify-content: center; font-size: 24px;
   box-shadow: 0 6px 14px rgba(120,90,40,.3); overflow: hidden; }
 .qz-host-av img { width: 100%; height: 100%; object-fit: cover; }
-.qz-host-bubble { background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 14px 14px 14px 4px;
-  padding: 7px 12px; font-size: 12.5px; font-style: italic; color: var(--muted); box-shadow: 0 3px 0 #e3d5b8; }
+/* Bublina zvětšena na přání hráče (2026-09-24) — 12,5px na 46px avatarovi vedle sebe
+   působilo jako drobná poznámka pod čarou, ne jako hláška maskota. Ať roste podle textu
+   (`width: max-content` s `max-width` stropem), ne aby byla pořád stejně široká bez ohledu
+   na délku věty. */
+.qz-host-bubble { background: var(--paper2); border: 1.8px solid #dccdb0; border-radius: 16px 16px 16px 5px;
+  padding: 10px 16px; font-size: 14.5px; line-height: 1.35; font-style: italic; font-weight: 600;
+  color: var(--muted); box-shadow: 0 4px 0 #e3d5b8; width: max-content; max-width: 100%; }
 
 .qz-screen { display: flex; flex-direction: column; flex: 1; }
 
@@ -385,8 +390,26 @@
      správně; obě stejná (revealed i ne), takže mezi otázkou a odpovědí rám neposkočí. */
   .qz-picframe,
   .qz-picframe.revealed { height: auto; aspect-ratio: 16 / 9; }
-  .qz-host { max-width: 52%; }
-  .qz-host-bubble { display: none; }
+  /* Bublina hostitele se do 2026-09-24 na mobilu schovávala úplně (`display:none`) —
+     ztrácely se tak i verdikty a hlášky během hry, ne jen uvítání na rozcestníku
+     (`say()` nese oboje stejnou bublinou). Teď zůstává vidět, jen užší a s menším
+     písmem, aby se do 767px vešla na víc řádků místo do jednoho širokého. Šířku
+     hostitele (avatar+bublina) srážíme na to, co zbyde vedle křížku „Domů"
+     (34px + 14px odstup + 14px levý okraj hostitele ≈ 62px). */
+  .qz-host { max-width: calc(100% - 74px); }
+  .qz-host-bubble { font-size: 13px; padding: 8px 12px; line-height: 1.3; }
+  /* `positionPickHead()` (quiz.js) dopočítá drobečkovou lištu podle SKUTEČNÉ výšky
+     bubliny za běhu, takže víceřádkovou bublinu sama obejde. Padding obrazovek pod
+     ní je ale pevné číslo — muselo se zvednout tam, kde bylo tuze na jednořádkovou
+     bublinu (44px na rozcestníku, 58px nad otázkou), aby delší hláška nezajela do
+     nadpisu/mřížky pod sebou. `.qz-pick`/`.qz-start`/`.qz-setup` (124/112px) mají
+     rezervu už teď dost i na dva řádky. */
+  .qz-modepick { padding-top: 108px; }
+  .qz-top { padding-top: 96px; }
+  /* Vyhlášení (`say(vic)` z fondu `victory`/`tie`) umí mít i dvouřádkovou větu —
+     46px stačilo jen na jednořádkovou bublinu. `.zk-wrap` verze (online výsledek,
+     řádek 1166) je specifičtější a tohle nepřebije, zůstává na svých 76px. */
+  .qz-end { padding-top: 108px; }
   /* Tlačítka „Více o…" a „Další otázka" pod sebe, ne vedle sebe (přání 2026-09-01) —
      na úzké obrazovce dělal delší popisek „Více o…" dvouřádkový text v půlce šířky.
      `flex: 0 1 auto` ruší `flex: 1 1 0` ze základního pravidla (tam dávalo tlačítkům

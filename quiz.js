@@ -652,7 +652,7 @@
 
   // ---- výběr režimu ----
   function renderModePick(){
-    say("Vítejte, cestovatelé! Jak si dnes zahrajeme?");
+    say("Vítejte, cestovatelé! Pasy orazítkované, glóbus netrpělivý — co si dnes zahrajeme?");
     showHomeBtn(false);
     document.getElementById("qz-shell").style.transform="";
     // Bez stropu: writeSaves() drží nejvýš SAVES_MAX her a pop-up má vlastní scroll,
@@ -962,7 +962,7 @@
   function renderContinentPick(){
     // Obrazovka nabízí i Česko a Celý svět, takže nadpis je otázka „Kam se vydáme?",
     // ne pokyn „Vyber kontinent" (ten na dvě z osmi dlaždic nesedí). Bublina ho neopakuje.
-    say("Kam to dnes bude?");
+    say("Zavři oči a dloubni do mapy… nebo si vyber poctivě.");
     document.getElementById("qz-shell").style.transform="";
     const availConts = CONTINENTS.filter(c => contHasQuestions(c.id));
     const tiles = CONTINENTS.map(c => {
@@ -1047,7 +1047,7 @@
     const contsArr = Array.isArray(conts) ? conts : [conts];
     S.sel = S.sel || {}; S.sel.conts = contsArr;
     const contLabel = contsLabel();
-    say("A do které země?");
+    say("Kontinent padl. Kterou zemí to prošlápneme?");
     document.getElementById("qz-shell").style.transform="";
     const ccList = contsArr.flatMap(cont => countriesInCont(cont));
     const hasSome = ccList.some(cc => pocetProCc(cc) > 0);
@@ -1107,7 +1107,7 @@
 
   function renderSectionPick(){
     const cc = S.sel.ccs || S.sel.cc;
-    say(`${COUNTRY} — na co máš dnes chuť?`);
+    say(`${COUNTRY}, výborná volba! Na co máš dnes chuť?`);
     document.getElementById("qz-shell").style.transform="";
     const all = qsForCc(cc);
     const bySec = {}; for(const q of all){ const s=q.section||"—"; (bySec[s]=bySec[s]||[]).push(q); }
@@ -1171,7 +1171,7 @@
 
   // ---- škola / projektor ----
   function renderSchoolStart(){
-    say("Vyber úroveň a promítni to třídě.");
+    say("Nastav obtížnost a spusť to na plátno — třída už netrpělivě čeká!");
     document.getElementById("qz-shell").style.transform="";
     const _cLabel2=esc(COUNTRY);
     const backToCountry2 = () => renderCountryPick(S.sel.conts || [S.sel.cont]);
@@ -1220,7 +1220,7 @@
   if(closeBtn) closeBtn.addEventListener("click", close);
 
   function renderStart(){
-    say("Řekni mi, kdo dnes cestuje — a hned vyrážíme.");
+    say("Kdo dnes sedá za volant výpravy? Řekni a hned vyrážíme!");
     const _cLabel=esc(COUNTRY);
     const backToCountry3 = () => renderCountryPick(S.sel.conts || [S.sel.cont]);
     const steps = [{label:contsLabel(), fn:renderContinentPick}, {label:_cLabel, fn:backToCountry3}, {label:selSectionLabel(), fn:renderSectionPick}];
@@ -1364,7 +1364,7 @@
   }
   function renderSetup(){
     ensureSetup();
-    say("Sesbírej posádku — jména a věkové pásmo.");
+    say("Naber posádku na palubu — jména a věk, ať víme, s kým plujeme!");
     document.getElementById("qz-shell").style.transform="";
     const recentNames = loadRecentNames();
     const prow = (p,i) => `<div class="qz-prow" data-i="${i}">
@@ -1824,7 +1824,7 @@
       </div>
     </div>`;
     document.getElementById("qz-shell").appendChild(ov);
-    say("Odkud otázka vzešla — mrkni na to.");
+    say("Tady je zdroj té šílenosti, co jsi právě přečetl.");
     ov.addEventListener("click", e=>{ if(e.target===ov) ov.remove(); });
     ov.querySelector(".qz-cardclose").addEventListener("click", ()=>ov.remove());
   }
