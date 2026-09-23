@@ -81,6 +81,31 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-23 — Čína: chybějících 36/38 ilustrací dopsáno, 1 vada — SKUTEČNÉ ČÍNSKÉ
+  ZNAKY vykreslené i přes výslovný pokyn „abstract, unreadable".**
+  Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb. Fond Číny má logicky vysoké
+  riziko (kaligrafie, znaky, dynastie) — přesto jen 1 vada z 36.
+  - **NOVÝ TYP VADY: „too stylized to read as any specific character" NESTAČÍ u
+    čínských znaků, stejně jako to od Bulharska/Rumunska neplatí na cyrilici.**
+    `cn-q-znaky` (fakt o tom, že jeden čínský znak = slovo, ne hláska) mělo zadání
+    „abstract inked symbol too stylized... resembling a tree and a mountain merged" —
+    model přesto namaloval dominantní tah připomínající skutečný znak PLUS tři slabě
+    viditelné, ale čitelné opakující se znaky v pozadí. **Model zjevně kreslí ze
+    skutečné znalosti hanzi, ne z abstraktní instrukce.** Potvrzuje definitivní závěr
+    z Rumunska: „akt psaní/kaligrafie ve scéně přinese text vždycky, ať se formuluje
+    jakkoli" — platí i pro logografické písmo, ne jen abecední skript.
+    Oprava: **kaligrafie ze scény úplně pryč**, nahrazeno jiným vizuálním konceptem
+    beze slov — zabalený dárek s jednou stužkou (jeden celek) vedle rozsypaných
+    dřevěných kostek (mnoho kousků) — funguje stejně dobře na fakt „jeden znak = jedno
+    slovo" bez jediného tahu štětcem. Vyšlo čistě napoprvé.
+  - **Otisk razítka u `cn-t-jazyk-dialekty`** (dva lidé razítkují STEJNÝ symbol, fakt
+    o sdíleném písmu napříč dialekty) vyšel jako abstraktní geometrický/uzlový vzor,
+    ne čitelné znaky — stejná bezpečná kategorie jako maďarské rovnice.
+  - **Mahjongové kostky, otisky razítek a archeologická cedulka s číslicí „5" prošly
+    bez zásahu** — dekorativní vzory a číslice jsou v appce dlouhodobě tolerované.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 77.** Zbývá jen Japonsko (36) a Polsko (34)
+    plus zbylých 7 českých otázek se starým zadáním čekajícím na obrázek.
+
 - **2026-09-23 — Egypt: chybějících 37/40 ilustrací dopsáno, 0 vad — nejčistší dávka od
   jihokorejských 2,4 %.**
   Zadání psaná v session (Sonnet 5), `lint-irony` 0 chyb po dvou opravách. Citlivá témata
