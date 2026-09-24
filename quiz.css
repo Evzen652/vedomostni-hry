@@ -183,59 +183,63 @@
 @keyframes qz-ping { 0% { transform: scale(1); opacity: .5; } 100% { transform: scale(2.1); opacity: 0; } }
 @keyframes qz-breathe { 0%,100% { opacity: .7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
 /* Vlajka zapíchnutá do glóbu (2026-09-24, přání hráče "ten glóbus je nudnej", pak
-   ještě jednou "je to málo vtipné, málo animace"). Nahrazuje holou tečku `.qz-beacon`
-   na otázkách, které mají `cc` — tečka žije dál jako záložní stav pro velmi staré
-   uložené hry (`flagPinHtml` bez cc). Stejné centrování jako mělo `.qz-beacon` (žádný
-   top/left, jen `inset:0` a děti centrované přes transform), ať vlajka sedí přesně
-   na místě, kam se glóbus natočil.
-   PŘÍBĚH DRUHÉHO KOLA: žerď už neroste plynule zdola, ale PŘILÉTÁ SESHORA jako hozený
-   šíp, zapíchne se s pružným bouncem, u dopadu blikne rázová vlna (`.qz-flagpin-impact`)
-   a glóbus pod ní lehce trkne (`.qz-medal` níž) — pak teprve nastoupí veselé vlnění. */
+   "je to málo vtipné, málo animace", pak "co kdyby ta vlajka přeletěla v hezké
+   animaci přes glóbus zleva doprava"). Nahrazuje holou tečku `.qz-beacon` na
+   otázkách, které mají `cc` — tečka žije dál jako záložní stav pro velmi staré
+   uložené hry (`flagPinHtml` bez cc). Stejné centrování jako mělo `.qz-beacon`
+   (žádný top/left, jen `inset:0` a děti centrované přes transform), ať vlajka
+   PŘISTANE přesně na místě, kam se glóbus natočil — na tom se nesmí hnout nic,
+   ať je let sebehezčí.
+   TŘETÍ KOLO, PŘEPSÁNO CELÉ: vlajka už nepadá seshora na místě, ale PŘELÉTÁ CELÝ
+   GLÓBUS ZLEVA DOPRAVA (`.qz-flagpin-fly`, proměnná `--flagfly` = odkud start —
+   viz `mountGlobeMedal()` v quiz.js, počítá se ze skutečné šířky rámu, aby na
+   úzkém mobilu let nevylétl mimo zaoblený `.qz-picframe` a neuřízl se). Cestou
+   se vlní jako praporek ve větru (`.qz-flagpin-flag`, běží po celou dobu letu,
+   ne až po dosednutí), houpe se nahoru/dolů a naklápí (banking), u přistání
+   maličko přestřelí a vrátí se. Přesně v tu chvíli blikne rázová vlna
+   (`.qz-flagpin-impact`) a glóbus pod ní lehce trkne (`.qz-medal` níž). */
 .qz-flagpin { position: absolute; inset: 0; z-index: 7; pointer-events: none; }
 .qz-flagpin-dot { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
   width: 13px; height: 13px; border-radius: 50%; background: var(--coral);
   box-shadow: 0 0 0 3px #fffdf6, 0 2px 6px rgba(0,0,0,.35); }
 .qz-flagpin-dot::after { content: ""; position: absolute; inset: -2px; border-radius: 50%;
   border: 2px solid var(--coral); animation: qz-ping 3.4s ease-out infinite; }
-/* Rázová vlna při dopadu — VĚTŠÍ a RYCHLEJŠÍ než klidová `qz-ping` na tečce výš
-   (ta pulzuje pořád, tahle blikne jednou přesně v okamžiku, kdy žerď dosedne). */
+/* Rázová vlna při dosednutí — VĚTŠÍ a RYCHLEJŠÍ než klidová `qz-ping` na tečce výš
+   (ta pulzuje pořád, tahle blikne jednou přesně v okamžiku, kdy vlajka doletí). */
 .qz-flagpin-impact { position: absolute; left: 50%; top: 50%; width: 26px; height: 26px;
   margin: -13px 0 0 -13px; border-radius: 50%; border: 2.5px solid var(--coral);
-  opacity: 0; animation: qz-flagimpact .5s ease-out .55s both; }
+  opacity: 0; animation: qz-flagimpact .5s ease-out 1s both; }
 @keyframes qz-flagimpact { 0% { transform: scale(.3); opacity: .95; }
   100% { transform: scale(2.6); opacity: 0; } }
-/* Žerď PŘILÉTÁ seshora pod úhlem (jako hozený šíp), ne že by plynule vyrostla ze
-   země — 0–55 % je let, 55–100 % je pružný bounce po zapíchnutí (přestřelí, vrátí
-   se, ještě jednou maličko). `transform-origin: bottom center` drží patu žerdi
-   NAPEVNO na tečce po celou dobu, i uprostřed rotace a bouncu. */
+/* Žerď čeká na místě od začátku (jemný fade), vlajka na ni dosedne až na konci letu —
+   proto žádná vlastní dramatická animace, tu nese let (`.qz-flagpin-fly` níž). */
 .qz-flagpin-pole { position: absolute; left: 50%; top: 50%; width: 2.4px; height: 30px;
   background: linear-gradient(#cdb98d, #a3875c); border-radius: 1px;
-  transform-origin: bottom center;
-  animation: qz-flagplant .7s cubic-bezier(.2,.9,.3,1) both; }
-@keyframes qz-flagplant {
-  0%   { transform: translate(-50%,-320%) rotate(-35deg) scaleY(.7); opacity: 0; }
-  50%  { transform: translate(-50%,-100%) rotate(10deg)  scaleY(1); opacity: 1; }
-  62%  { transform: translate(-50%,-100%) rotate(-10deg) scaleY(.88); }
-  76%  { transform: translate(-50%,-100%) rotate(6deg)   scaleY(1.06); }
-  88%  { transform: translate(-50%,-100%) rotate(-3deg)  scaleY(.97); }
-  100% { transform: translate(-50%,-100%) rotate(0deg)   scaleY(1); }
+  transform: translate(-50%,-100%); transform-origin: bottom center;
+  opacity: 0; animation: qz-poleup .25s ease .05s both; }
+@keyframes qz-poleup { to { opacity: 1; } }
+/* LET ZLEVA DOPRAVA: start je `calc(var(--flagfly) * -1)` od cílového bodu (proměnná
+   v px, dopočítaná v JS), cestou se houpe nahoru/dolů a naklápí, u dosednutí (94–100 %)
+   maličko přestřelí. `--flagfly` má záložní hodnotu 140px, kdyby JS nestihlo doběhnout. */
+.qz-flagpin-fly { position: absolute; left: 1px; top: -1px;
+  animation: qz-flagfly 1.1s cubic-bezier(.22,.61,.36,1) both; }
+@keyframes qz-flagfly {
+  0%   { transform: translate(calc(var(--flagfly, 140px) * -1), 18px) rotate(-18deg) scale(.85); opacity: 0; }
+  9%   { opacity: 1; }
+  38%  { transform: translate(calc(var(--flagfly, 140px) * -0.55), -18px) rotate(10deg) scale(1); }
+  64%  { transform: translate(calc(var(--flagfly, 140px) * -0.22), 13px) rotate(-8deg) scale(1); }
+  84%  { transform: translate(calc(var(--flagfly, 140px) * -0.05), -6px) rotate(5deg) scale(1); }
+  94%  { transform: translate(2px, 2px) rotate(-4deg) scale(1.06); }
+  100% { transform: translate(0,0) rotate(0deg) scale(1); opacity: 1; }
 }
-/* Praporek: DVA vnořené prvky schválně, ne jeden — jednorázové "přistání" (pop)
-   a nekonečné vlnění (wave) by se na jednom elementu přes `transform` přebíjely
-   (druhá animace by tu první přepsala, ne složila). Vnější dělá pop PŘESNĚ v čase
-   dopadu žerdi (delay 0,5s = 50 % z 0,7s letu), vnitřní pak nekonečně vlní. */
-.qz-flagpin-flagpop { position: absolute; left: 1px; top: -1px;
-  animation: qz-flagpop .4s cubic-bezier(.34,1.56,.64,1) .5s both; }
-@keyframes qz-flagpop { 0% { opacity: 0; transform: scale(.3) rotate(-18deg); }
-  60% { opacity: 1; transform: scale(1.15) rotate(6deg); }
-  100% { opacity: 1; transform: scale(1) rotate(0deg); } }
 .qz-flagpin-flag { display: block; width: 24px; height: 16px; object-fit: cover;
   border-radius: 1px 6px 6px 1px; border: 1.3px solid #fffdf6;
   box-shadow: 0 2px 5px rgba(0,0,0,.3); background: var(--coral);
-  transform-origin: left center; animation: qz-flagwave 1.6s ease-in-out .9s infinite; }
-/* Vlnění je skew + jemný scaleX, ne obyčejný posun — žerď se nehýbe, mává jen látka.
-   Rychlejší a výraznější (±8°) než v prvním kole (±4° / 2,4s), ať je z glóbu vidět
-   pořádný vítr, ne jen chvění — pořád v mezích toho, co "u otázky nerozptyluje". */
+  transform-origin: left center; animation: qz-flagwave 1.1s ease-in-out infinite; }
+/* Vlnění je skew + jemný scaleX, ne obyčejný posun — žerď/let se nehýbe, mává jen
+   látka. Běží OD ZAČÁTKU (žádný delay), takže se vlajka vlní i za letu, ne až po
+   dosednutí — jako praporek tažený proti větru. Nezávislé na `.qz-flagpin-fly`
+   (jiný element), takže se dvě transformace neperou o tutéž vlastnost. */
 @keyframes qz-flagwave { 0%,100% { transform: skewY(-8deg) scaleX(1); }
   50% { transform: skewY(8deg) scaleX(.94); } }
 .qz-globecap { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center;
@@ -245,11 +249,11 @@
   background: radial-gradient(circle at 36% 30%, #9fd0c6 0%, #5aa79e 45%, #2f7d78 78%, #1f5f5c 100%);
   border: 3px solid #fffdf6; outline: 2px solid #d8c9ad;
   box-shadow: inset -10px -8px 20px rgba(20,60,55,.35), 0 10px 22px rgba(60,90,80,.35);
-  /* Glóbus lehce "trkne", přesně v okamžiku, kdy do něj dosedne žerď vlajky
-     (stejný čas jako .qz-flagpin-impact výš) — prodává to dopad jako skutečný
-     náraz, ne jen dekoraci vedle. Element je čerstvý při každé otázce, takže
-     se přehraje znovu pokaždé, stejně jako zbytek vlajky. */
-  animation: qz-medalthump .3s ease-out .55s; }
+  /* Glóbus lehce "trkne", přesně v okamžiku, kdy na něj dosedne přeletující vlajka
+     (stejný čas jako .qz-flagpin-impact výš, 1s = konec letu `.qz-flagpin-fly`) —
+     prodává to dopad jako skutečný náraz, ne jen dekoraci vedle. Element je čerstvý
+     při každé otázce, takže se přehraje znovu pokaždé, stejně jako zbytek vlajky. */
+  animation: qz-medalthump .3s ease-out 1s; }
 @keyframes qz-medalthump { 0%,100% { transform: scale(1); } 50% { transform: scale(.96); } }
 /* Dobarvení glóbu u otázky (2026-09-15, přání hráče „trochu dobarvi ten globus"). Filtrem
    na plátně, NE přemalováním assets/earth.jpg: textura je ověřená proti skutečným obrysům

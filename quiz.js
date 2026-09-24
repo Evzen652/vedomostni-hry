@@ -75,17 +75,18 @@
   // glóbus je nudnej"). Recykluje se tatáž ironická vlajka jako na dlaždici výběru
   // země (assets/country-{cc}.jpg u flagStamp výš), takže je to gag zadarmo, ne nový
   // obsah k vygenerování. Chybějící/nenačtená vlajka nechá jen barevný praporek
-  // (obrázek zmizí, prosvitne pozadí .qz-flagpin-flagpop) — nikdy prázdné místo.
+  // (obrázek zmizí, prosvitne pozadí .qz-flagpin-fly) — nikdy prázdné místo.
   // Bez `cc` (velmi stará uložená hra bez kódu země) padá zpět na starou holou tečku.
-  // 2026-09-24, druhé kolo: hráč chtěl víc vtipu a víc pohybu — žerď teď PŘILÉTÁ
-  // seshora jako hozený šíp a s bouncem se zapíchne, u dopadu blikne rázová vlna
-  // (.qz-flagpin-impact) a glóbus pod ní lehce "trkne" (.qz-medal má vlastní thump).
+  // TŘETÍ KOLO (2026-09-24 — "vlajka přeletí přes glóbus zleva doprava"): vlajka
+  // teď LETÍ přes celý glóbus a přistane přesně na místě (viz .qz-flagpin-fly
+  // a proměnná --flagfly v CSS; tu dopočítá mountGlobeMedal() níž ze skutečné
+  // šířky rámu, aby let na úzkém mobilu nevylétl mimo zaoblený .qz-picframe).
   function flagPinHtml(cc){
     if(!cc) return `<span class="qz-beacon"></span>`;
     return `<span class="qz-flagpin">
       <span class="qz-flagpin-dot"></span>
       <span class="qz-flagpin-impact"></span>
-      <span class="qz-flagpin-pole"><span class="qz-flagpin-flagpop">
+      <span class="qz-flagpin-pole"><span class="qz-flagpin-fly">
         <img class="qz-flagpin-flag" src="assets/country-${esc(cc)}.jpg" alt="" onerror="this.removeAttribute('src')">
       </span></span>
     </span>`;
@@ -488,6 +489,16 @@
   function mountGlobeMedal(cc){
     const medal=document.getElementById("qz-medal"); if(!medal) return;
     initGlobe3d();
+    // Odkud vlajka "přiletí" (.qz-flagpin-fly v quiz.css) se počítá ze SKUTEČNÉ
+    // mezery mezi kruhem glóbu a okrajem `.qz-picframe` (ten má overflow:hidden,
+    // zaoblený roh) — pevné číslo by na úzkém mobilu vylétlo mimo rám a uřízlo se,
+    // na širokém desktopu by naopak vypadalo směšně krátké. Strop 220px, ať let
+    // na velkém plátně nevypadá jako přelet přes půl obrazovky.
+    const stage = medal.parentElement, frame = document.getElementById("qz-pic");
+    if(stage && frame){
+      const margin = (frame.clientWidth - stage.clientWidth) / 2;
+      stage.style.setProperty("--flagfly", Math.round(Math.max(40, Math.min(margin-10, 220))) + "px");
+    }
     if(g3 && g3.canvas){ medal.innerHTML=""; medal.appendChild(g3.canvas); resizeGlobe(); spinGlobeTo(cc); }
     else { medal.innerHTML='<div class="land a"></div><div class="land b"></div>'; }   // fallback (Three.js chybí)
   }

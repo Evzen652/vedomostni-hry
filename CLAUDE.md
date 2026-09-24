@@ -107,6 +107,32 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     > po 80 ms** (ne jen okem) — screenshoty let/dopad nechytí, je moc rychlý, ale
     > vzorky potvrdily celou choreografii: let a bounce do ~650 ms, rázová vlna
     > a trknutí glóbu 550–900 ms, pak nepřerušené vlnění.
+  - > **Doplněno potřetí, opět tentýž den: „co kdyby ta vlajka přeletěla v hezké
+    > animaci přes glóbus zleva doprava".** Přepsáno úplně — vlajka už nepadá
+    > seshora NA MÍSTĚ, ale LETÍ CELÝ GLÓBUS ZLEVA DOPRAVA (`.qz-flagpin-fly`),
+    > houpe se nahoru/dolů a naklápí (banking) jako praporek tažený proti větru,
+    > u přistání maličko přestřelí. Vlnění (`skewY` ±8°) běží NEZÁVISLE na letu
+    > (jiný vnořený element) od úplného začátku, takže se vlajka vlní i za letu,
+    > ne až po dosednutí. Rázová vlna a trknutí glóbu teď čekají na konec letu
+    > (delay 1 s = délka `.qz-flagpin-fly`), ne na 0,55 s jako v druhém kole.
+    > **Vzdálenost startu (`--flagfly`, CSS proměnná) se POČÍTÁ V JS**
+    > (`mountGlobeMedal()`), ne napevno: `.qz-picframe` má `overflow:hidden`
+    > (zaoblený roh) a pevné číslo by na úzkém mobilu vylétlo mimo rám a uřízlo
+    > se — spočítá se ze skutečné mezery mezi kruhem glóbu a okrajem rámu
+    > (`(frame.clientWidth - stage.clientWidth) / 2`, ořezáno na 40–220 px).
+    > Element, na který se proměnná zapisuje (`.qz-globe-stage`), je nadřazený
+    > oběma sourozencům (`.qz-medal` i `.qz-flagpin`), takže proměnná se dědí dolů
+    > k letící vlajce bez ohledu na to, který z nich ji čte.
+    > **Past, na kterou by se dalo naletět: nastavovat proměnnou uvnitř
+    > `resizeGlobe()`.** Ta má na začátku `if(g3.px===px) return` — kdyby se do
+    > větve za tím dala i proměnná, u druhé a další otázky se stejnou velikostí
+    > obrazovky by se vůbec nenastavila (nová `.qz-globe-stage` PŘI KAŽDÉ otázce
+    > vzniká znovu přes `innerHTML`, takže si nic nepamatuje ze staré). Proto je
+    > nastavení v `mountGlobeMedal()`, která běží vždycky, ne v cachované funkci.
+    > **Ověřeno frame-by-frame** (`getBoundingClientRect()` vlajky proti rámu,
+    > ne jen okem) na 1100 px (start −139 px od cíle) i na mobilu 375 px
+    > (`--flagfly` vyšlo 95 px, start 98 px od levého okraje rámu, který je na
+    > 16 px — nikdy neuteklo mimo). `test:offline` 874 beze změny.
   - **Chybějící/nenačtený obrázek vlajky nenechá prázdné místo.** `onerror="this.
     removeAttribute('src')"` (ne `display:none`, jak to dělá `flagStamp()` jinde —
     tam je obrázek jen doplněk, tady je to celý smysl prvku) — bez `src` prohlížeč
