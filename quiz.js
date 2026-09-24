@@ -77,10 +77,14 @@
   // obsah k vygenerování. Chybějící/nenačtená vlajka nechá jen barevný praporek
   // (obrázek zmizí, prosvitne pozadí .qz-flagpin-flagpop) — nikdy prázdné místo.
   // Bez `cc` (velmi stará uložená hra bez kódu země) padá zpět na starou holou tečku.
+  // 2026-09-24, druhé kolo: hráč chtěl víc vtipu a víc pohybu — žerď teď PŘILÉTÁ
+  // seshora jako hozený šíp a s bouncem se zapíchne, u dopadu blikne rázová vlna
+  // (.qz-flagpin-impact) a glóbus pod ní lehce "trkne" (.qz-medal má vlastní thump).
   function flagPinHtml(cc){
     if(!cc) return `<span class="qz-beacon"></span>`;
     return `<span class="qz-flagpin">
       <span class="qz-flagpin-dot"></span>
+      <span class="qz-flagpin-impact"></span>
       <span class="qz-flagpin-pole"><span class="qz-flagpin-flagpop">
         <img class="qz-flagpin-flag" src="assets/country-${esc(cc)}.jpg" alt="" onerror="this.removeAttribute('src')">
       </span></span>

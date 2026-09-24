@@ -95,6 +95,18 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     `.qz-flagpin-flag`), ne na jednom — dvě animace měnící `transform` na TÉMŽ elementu
     by se navzájem přebily, ne složily. Animace se přehrává znovu u KAŽDÉ otázky (nový
     prvek při každém `innerHTML`), takže vlajka „se zapíchne" pokaždé nanovo.
+  - > **Doplněno vzápětí, tentýž den: „je to málo vtipné, málo animace".** Klidné
+    > vyrůstání ze země nahradil dramatičtější přílet — žerď teď PADÁ SESHORA pod
+    > úhlem jako hozený šíp (`translate(-50%,-320%) rotate(-35deg)`), zapíchne se
+    > s pružným bouncem (tři překmity `scaleY`/`rotate` než se ustálí) a přesně
+    > v okamžiku dopadu (delay 0,55 s) bliknou DVĚ nové věci: `.qz-flagpin-impact`
+    > (rázová vlna, větší a rychlejší než klidová `qz-ping` na tečce) a `.qz-medal`
+    > sama lehce „trkne" (`scale(.96)` na 0,3 s) — dopad tak cítí i glóbus pod vlajkou,
+    > ne jen vlajka sama. Vlnění zrychleno a zvětšeno (±4°/2,4 s → ±8°/1,6 s + jemný
+    > `scaleX`). **Ověřeno frame-by-frame vzorkováním `getComputedStyle().transform`
+    > po 80 ms** (ne jen okem) — screenshoty let/dopad nechytí, je moc rychlý, ale
+    > vzorky potvrdily celou choreografii: let a bounce do ~650 ms, rázová vlna
+    > a trknutí glóbu 550–900 ms, pak nepřerušené vlnění.
   - **Chybějící/nenačtený obrázek vlajky nenechá prázdné místo.** `onerror="this.
     removeAttribute('src')"` (ne `display:none`, jak to dělá `flagStamp()` jinde —
     tam je obrázek jen doplněk, tady je to celý smysl prvku) — bez `src` prohlížeč
