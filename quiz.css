@@ -81,7 +81,12 @@
 
 /* ---- play ---- */
 .qz-play { position: relative; padding-bottom: 16px; }
-.qz-top { display: flex; gap: 8px; padding: 58px 16px 0; position: relative; z-index: 2; align-items: center; flex-wrap: wrap; }
+/* 58px stačilo, dokud byla bublina hostitele (`.qz-host-bubble`) drobná — po jejím
+   zvětšení 2026-09-24 (12,5→14,5px, víc paddingu) host reálně sahá do ~70px a 58px
+   nechávalo nulovou mezeru (ověřeno měřením: spodní hrana bubliny a horní hrana řádku
+   pod ní na stejném pixelu). U `.qz-top` to bije do očí míň (skórový praporek je vpravo,
+   host vlevo), ale u `.qz-scoreboard` (párty, viz níž) jsou obě věci u LEVÉHO okraje. */
+.qz-top { display: flex; gap: 8px; padding: 76px 16px 0; position: relative; z-index: 2; align-items: center; flex-wrap: wrap; }
 .qz-progress { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 650; color: var(--ink); }
 .qz-scorepill { margin-left: auto; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px;
   padding: 6px 14px; font-family: 'Nunito', sans-serif; font-weight: 650; box-shadow: 0 3px 0 #e3d5b8; display: flex; gap: 8px; align-items: center; }
@@ -472,6 +477,10 @@
      rezervu už teď dost i na dva řádky. */
   .qz-modepick { padding-top: 108px; }
   .qz-top { padding-top: 96px; }
+  /* Párty verze `.qz-top` — na tuhle třídu se při mobilní opravě 2026-09-24
+     zapomnělo, protože se jí tehdy netestovalo (zkouška byla v sólu). Stejná
+     hodnota, stejný důvod: víceřádková bublina nesmí zajet do praporků hráčů. */
+  .qz-scoreboard { padding-top: 96px; }
   /* Vyhlášení (`say(vic)` z fondu `victory`/`tie`) umí mít i dvouřádkovou větu —
      46px stačilo jen na jednořádkovou bublinu. `.zk-wrap` verze (online výsledek,
      řádek 1166) je specifičtější a tohle nepřebije, zůstává na svých 76px. */
@@ -747,7 +756,10 @@
   .qz-partysetup > h2 { margin-bottom: 8px; }
 }
 
-.qz-scoreboard { display: flex; gap: 8px; padding: 58px 16px 0; flex-wrap: wrap; position: relative; z-index: 3; }
+/* Stejný nedostatek jako `.qz-top` (58px), ale tady je to VIDĚT: hráčský praporek 1
+   začíná u LEVÉHO okraje, přesně tam, kde je i hostitel — takže se bublina a praporek
+   reálně dotýkaly (nahlášeno hráčem přes screenshot, změřeno 0px mezera). */
+.qz-scoreboard { display: flex; gap: 8px; padding: 76px 16px 0; flex-wrap: wrap; position: relative; z-index: 3; }
 .qz-pl { flex: 1; min-width: 120px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px; padding: 7px 10px;
   display: flex; align-items: center; gap: 8px; opacity: .72; box-shadow: 0 3px 0 #e3d5b8; font-family: inherit; color: var(--ink); }
 .qz-pl.active { opacity: 1; border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); }

@@ -81,6 +81,32 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-24 — Párty souboj: bublina hostitele se dotýkala praporků hráčů (0 px mezera).
+  `.qz-scoreboard` bylo přehlédnuté dvakrát v jedné session.**
+  Hráč nahlásil přes screenshot: „tady to není ok. překrývá se to" — vlevo nahoře bublina
+  „Tak schválně…", hned pod ní praporek prvního hráče, prakticky bez mezery.
+  - **Příčina je stejná zvětšená bublina, co se opravovala pár hodin předtím** (2026-09-24,
+    „Bublina hostitele je větší a hravější"). Ta oprava zvedla padding-top u `.qz-modepick`,
+    `.qz-top` a `.qz-end`, ale **jen v MOBILNÍ media query** (`max-width:767px`) a jen tam,
+    kde se to tehdy zkoušelo (sólo). `.qz-scoreboard` (párty verze `.qz-top`, samostatná
+    třída) tak zůstalo na původních **58px i na desktopu, i na mobilu** — a 58px bylo podle
+    vlastního komentáře v kódu „tuze na jednořádkovou bublinu" i PŘED zvětšením.
+  - **Změřeno, ne odhadnuto:** `getBoundingClientRect()` na `.qz-host-bubble` a první
+    `.qz-pl` v běžící párty hře (1024px) — spodní hrana bubliny a horní hrana praporku na
+    **stejném pixelu** (rozdíl 0,1 px). U `.qz-top` (sólo) je to vidět míň, protože skórový
+    praporek je tam vpravo a hostitel vlevo; v párty jsou oba u LEVÉHO okraje, takže se
+    dotýkaly doslova.
+  - **Oprava: `.qz-top` i `.qz-scoreboard` base 58px → 76px** (dost na jednořádkovou
+    bublinu s rezervou), **a `.qz-scoreboard { padding-top: 96px }` DOPLNĚNO do mobilní
+    media query** vedle `.qz-top` — tam předtím nebylo vůbec.
+  - **Ověřeno měřením, ne pohledem:** po opravě mezera bubliny a praporku **~18px** na
+    1024px (otázka i po verdiktu „To je ono!") a **~16px** na mobilu (375px). `test:offline`
+    874 beze změny, sólo mód (`.qz-top`) zkontrolován vizuálně bez kolize.
+  - **Poučení pro příště: když se padding kvůli hostiteli opravuje, projít VŠECHNY obrazovky
+    s vlastní kopií stejného vzoru, ne jen tu, na které se to zkouší.** `.qz-top` a
+    `.qz-scoreboard` dělají totéž (odsazení pod hostitelem), ale jsou to dvě oddělená
+    CSS pravidla — hledat podle vzoru `padding.*58px` by tuhle dvojici bylo odhalilo hned.
+
 - **2026-09-24 — ILUSTRAČNÍ DLUH APPKY KOMPLETNĚ HOTOV: 3 742/3 742 otázek má ilustraci, 0 chybí.
   Poslední dávka (7 českých otázek) odhalila tři nové typy vad a jedna otázka (hokejista Hašek)
   potřebovala PĚT pokusů.**
