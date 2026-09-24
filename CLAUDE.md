@@ -81,6 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-25 — Šest zemí bez `data/cards/{cc}.json` appka při KAŽDÉM výběru víc zemí
+  zbytečně stahovala a 404 zalogovala do konzole. Opraveno + zabezpečeno proti driftu.**
+  Objeveno při ověřování flow Světové ligy: appka i mimo online (kdykoli se vybere víc
+  zemí, typicky „Celý svět"/„Vybrat vše") volá `loadCardsFor(cc)` pro každou vybranou
+  zemi. Šest zemí přidaných 2026-08-15 (Belgie, Dánsko, Finsko, Irsko, Norsko,
+  Portugalsko) nikdy nemělo kartový import z Hricka, takže `data/cards/{cc}.json`
+  u nich neexistuje a nikdy neexistovat nemusí — `loadCardsFor` už to zvládalo
+  gracefully (`.then(r=>r.ok?r.json():[])`), jenže **`.catch()` v JS chytí jen
+  výjimku, ne síťovou vrstvu** — prohlížeč sám zaloguje „Failed to load resource: 404"
+  do konzole za KAŽDÝ neúspěšný request, ať ho kód zpracuje sebelíp.
+  - **Oprava: `BEZ_KARET` (Set šesti kódů) v `quiz.js` u `loadCardsFor`** — pro tyhle
+    země se `fetch` vůbec nevolá, rovnou se nastaví `data.cardsByCc[cc] = {}`.
+    Ověřeno v prohlížeči přes `performance.getEntriesByType('resource')` (skutečný
+    zdroj pravdy, ne nástroj na čtení síťových požadavků — ten v týhle session
+    vracel viditelně zastaralá data, identické milisekundové časy napříč několika
+    čerstvými navigacemi): po výběru všech 55 zemí proběhlo **55× `data/questions/*`
+    a jen 49× `data/cards/*`** — přesně 55 − 6, žádná z šestice mezi nimi.
+  - **Past, na kterou by šlo snadno narazit: ručně psaný seznam v JS duplikuje realitu
+    na disku a může se s ní časem rozejít** (zapomenutá nová země bez karet, nebo
+    zapomenutý úklid poté, co karty přibudou). Řeší `npm run validate` — nová kontrola
+    parsuje `BEZ_KARET` přímo ze zdrojového textu `quiz.js` (regex, appka nemá build
+    krok) a porovná ho se skutečným obsahem `data/cards/`; nesoulad na kteroukoli
+    stranu je CHYBA, ne varování. **Ověřeno mutací obou směrů** (smazání země ze
+    seznamu i přidání země, co karty už má — obojí `validate` odhalilo).
+  - Vedlejší nález ze stejného ověřování: appka dřív (2026-09-03) přidala malovaný
+    glóbus a ghost soupeře do online duelu — ověřeno end-to-end přes `/api/me`, že
+    Glicko rating funguje oboustranně (výhra 1500→1675, prohra →1565, RD konverguje).
+
 - **2026-09-25 — DRUHÝ ILUSTRAČNÍ DLUH ODHALEN A UZAVŘEN: 202 otázek mělo pořád starou
   FOTOREALISTICKOU ilustraci (import z Hricka, 2026-08), ne malovanou — appka to tvrdila
   za hotové, ale „má obrázek" ≠ „má SPRÁVNÝ styl obrázku". Hráč to odhalil na jedné

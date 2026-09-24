@@ -98,6 +98,20 @@ const imgs = fs.existsSync(P("img")) ? fs.readdirSync(P("img")).filter(f => f.en
 const known = new Set([...seenIds, ...cardIds]);
 for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý obrázek img/${f} (žádná otázka ani karta)`);
 
+// `BEZ_KARET` v quiz.js přeskakuje fetch data/cards/{cc}.json pro země, co karty
+// nemají (jinak appka na každé z nich vystřelí zbytečný 404 do konzole). Ten
+// seznam je ale ručně psaný duplikát reality na disku — musí se hlídat, ať se
+// časem nerozejde: buď zapomenutá země po smazání karet, nebo zapomenutý úklid
+// po jejich doplnění (pak by appka karty té země tiše ignorovala).
+{
+  const cardCcs = new Set(fs.existsSync(CDIR) ? fs.readdirSync(CDIR).filter(f => f.endsWith(".json")).map(f => f.replace(/\.json$/, "")) : []);
+  const questionCcs = qFiles.map(f => f.replace(/\.json$/, ""));
+  const skutecneBezKaret = new Set(questionCcs.filter(cc => !cardCcs.has(cc)));
+  const zapsaneBezKaret = new Set([...(js.match(/const BEZ_KARET\s*=\s*new Set\(\[([^\]]*)\]\)/) || ["", ""])[1].matchAll(/"([a-z]+)"/g)].map(m => m[1]));
+  for (const cc of skutecneBezKaret) if (!zapsaneBezKaret.has(cc)) bad(`quiz.js BEZ_KARET: chybí "${cc}" — data/cards/${cc}.json neexistuje, appka na to bude zbytečně útočit 404`);
+  for (const cc of zapsaneBezKaret) if (!skutecneBezKaret.has(cc)) bad(`quiz.js BEZ_KARET: "${cc}" už karty MÁ (data/cards/${cc}.json existuje) — appka je tiše ignoruje, smaž ${cc} ze seznamu`);
+}
+
 // Index počtů (data/questions-index.json) je GENEROVANÝ a appka na něm od 2026-09-06
 // stojí při startu: výběrové dlaždice z něj berou počty, aby se nemusel stahovat celý
 // fond (4,72 MB). Zastaralý index by tiše lhal o počtech nebo by u nové země hlásil

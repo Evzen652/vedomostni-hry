@@ -538,10 +538,19 @@
     // hostitel: logo
     const im = new Image(); im.onload = () => { hostAv.innerHTML=""; const el=document.createElement("img"); el.src="assets/logo.jpg"; hostAv.appendChild(el); }; im.src="assets/logo.jpg";
   }
+  // Země přidané 2026-08-15 bez importu z Hricka — pro ně `data/cards/{cc}.json`
+  // nikdy neexistoval a neexistovat nemusí (appka na to bere ohled, jsou to jen
+  // doplňkové karty k „Více o…"). Bez tohohle seznamu appka pro každou z nich
+  // pokaždé vystřelí zbytečný request, co skončí 404 — prohlížeč to zaloguje jako
+  // chybu do konzole i přes `.catch()` v kódu (to hlídá jen JS výjimku, ne síťovou
+  // vrstvu). `npm run validate` hlídá, že se tenhle seznam neodchýlí od reality
+  // (`data/cards/` adresáře) ani na jednu stranu.
+  const BEZ_KARET = new Set(["be","dk","fi","ie","no","pt"]);
   // načte karty země (pro „Víc o tom") do cache a nastaví je jako aktivní
   async function loadCardsFor(cc){
     if(!data.cardsByCc[cc]){
-      const cards = await fetch(`data/cards/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]);
+      const cards = BEZ_KARET.has(cc) ? [] :
+        await fetch(`data/cards/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]);
       const byId={}; for(const c of cards) byId[c.id]=c; data.cardsByCc[cc]=byId;
     }
     data.cardsById = data.cardsByCc[cc];
