@@ -1039,5 +1039,49 @@
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- children playing traditional Romanian bat-and-ball game oina on a grassy field",
   "about": "oině, rumunském národním sportu",
   "irony_prompt": "A player fills the frame swinging a wooden bat at a small leather ball on a sunny school field, a delighted child cheering from the sideline. Smaller and subordinate: teammates waiting their turn; a scattered pile of bats; a dog chasing a stray ball. MOOD: cheerful, energetic, sunny."
+ },
+ {
+  "id": "ro-k-delta-dunaje",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje obrovské bažinaté území v Rumunsku, kde se řeka Dunaj před vtokem do moře rozlévá do spousty kanálů plných ptáků?",
+  "answer": "Delta Dunaje",
+  "distractors": [
+   "Delta Nilu",
+   "Amazonská delta",
+   "Delta Volhy"
+  ],
+  "quip_correct": "Hop, a je to! Žije tu přes tři sta druhů ptáků — je to jedno z nejbohatších ptačích království v Evropě.",
+  "quip_wrong": "Amazonská ani nilská delta v Rumunsku netečou — Dunaj se tam rozlévá do vlastní, hodně ptačí delty.",
+  "explanation": "Delta Dunaje je druhá nejzachovalejší říční delta v Evropě a je zapsaná na seznamu světového dědictví UNESCO.",
+  "about": "deltě Dunaje",
+  "more_fact": "Po klikatých kanálech delty se dá cestovat jen lodí — pořádné silnice tam totiž skoro nejsou.",
+  "irony_prompt": "A vast maze of winding water channels fills the frame, reed beds and lily pads stretching to the horizon under an open sky. Smaller and subordinate: a pelican perched on a half-submerged log; a small wooden fishing boat drifting between reeds; a flock of birds rising in the distance. MOOD: peaceful, wild, teeming with life."
+ },
+ {
+  "id": "ro-k-bukurest-parizek",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se přezdívá rumunskému hlavnímu městu Bukurešti kvůli jeho honosným bulvárům a secesní architektuře, které připomínají jiné velké evropské město?",
+  "answer": "Malá Paříž",
+  "distractors": [
+   "Malý Londýn",
+   "Malé Řím",
+   "Malé Vídeň"
+  ],
+  "quip_correct": "Bystrá hlava! Bukurešť má dokonce svůj vlastní Vítězný oblouk, jen o pár metrů nižší než ten pařížský.",
+  "quip_wrong": "Londýn ani Vídeň v tom nehrají roli — Bukurešti se kvůli bulvárům a secesi přezdívá Malá Paříž.",
+  "explanation": "Přezdívka vznikla na přelomu 19. a 20. století, kdy si bohatí Rumuni nechávali stavět domy podle pařížské módy a posílali své děti studovat do Francie.",
+  "about": "Bukurešti",
+  "more_fact": "Bukurešťský Vítězný oblouk (Arcul de Triumf) je skoro přesná kopie toho pařížského, jen o něco menší.",
+  "irony_prompt": "A grand tree-lined boulevard fills the frame, ornate stone buildings with wrought-iron balconies and a triumphal arch rising at the far end. Smaller and subordinate: a small outdoor café table with two empty chairs; a bicycle leaning against a lamppost; pigeons pecking on the cobblestones. MOOD: elegant, charming, proud."
  }
 ]

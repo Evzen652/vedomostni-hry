@@ -911,5 +911,27 @@
   "image_prompt": "Fotorealistický snímek hromádky bílých sušených tvarohových kousků aaruul rozložených na plátně na sluníčku před mongolskou jurtou, 16:9",
   "about": "sušeném mléčném pamlsku aaruul",
   "irony_prompt": "A child fills the frame with cheeks comically puffed out, determinedly sucking on a large hard white curd lump like it's the toughest candy in the world. Smaller and subordinate: a woven tray piled with more curd pieces drying in the sun; a ger's felt wall behind; a dog watching hopefully, waiting for a dropped piece. MOOD: playful, sunny, wholesome."
+ },
+ {
+  "id": "mn-k-dinosauri-gobi",
+  "cc": "mn",
+  "country": "Mongolsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Proč je poušť Gobi v Mongolsku slavná mezi vědci, kteří zkoumají pravěk?",
+  "answer": "Našli se tam vejce a kostry dinosaurů",
+  "distractors": [
+   "Našlo se tam ztracené město ze zlata",
+   "Objevili tam obří jeskyni s ledem",
+   "Vykopali tam nejstarší loď na světě"
+  ],
+  "quip_correct": "Bystrá hlava! Písek a sucho Gobi vlastně skvěle konzervují kosti — proto se tam dinosauří poklady dochovaly tak dobře.",
+  "quip_wrong": "Zlaté město, ledová jeskyně, stará loď — žádné z toho. Gobi proslavily hlavně kostry a vejce dinosaurů.",
+  "explanation": "V Gobi vědci poprvé na světě našli celé hnízdo dinosauřích vajec i kostru dinosaura sedícího na vejcích jako slepice. Díky suchému podnebí se tam kosti dochovaly v neuvěřitelně dobrém stavu.",
+  "about": "dinosauřích nálezech v poušti Gobi",
+  "more_fact": "Právě v mongolské Gobi paleontologové objevili slavnou zkamenělinu dvou zápasících dinosaurů — dravého velociraptora a rohatého protoceratopse, zamrzlé uprostřed souboje.",
+  "irony_prompt": "A large fossilized dinosaur skeleton fills the frame, half-emerging from a golden sand dune with its curved ribs and long tail exposed to the sun. Smaller and subordinate: a cluster of round fossilized eggs nestled in a shallow sandy hollow nearby; a small paintbrush and soft-bristled tool resting beside the bones; distant flat desert horizon under a bright sky. MOOD: adventurous, sunny, wondrous."
  }
 ]

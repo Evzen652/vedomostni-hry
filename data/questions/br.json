@@ -875,5 +875,48 @@
   "image_prompt": "Fotorealistický snímek mohutných vodopádů Iguaçu na hranici Brazílie a Argentiny, desítky proudů padající vody obklopené zeleným deštným pralesem, stoupající mlha a duha nad kaňonem, 16:9",
   "about": "vodopádech Iguaçu",
   "irony_prompt": "A vast curtain of countless separate waterfalls fills the frame plunging together over a wide jungle-fringed cliff edge, spray rising in constant clouds and catching a shimmering rainbow across its full width. Smaller and subordinate: a small tour boat approaching the base, utterly dwarfed by the scale; a toucan perched on a misty overlook railing; butterflies drifting through the spray at the cliff's edge. MOOD: thunderous, vast, radiant."
+ },
+ {
+  "id": "br-k-kapybara",
+  "cc": "br",
+  "country": "Brazílie",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaký největší hlodavec světa je tak klidný, že si na jeho hřbetě v brazilských řekách klidně sedají ptáci?",
+  "answer": "Kapybara",
+  "distractors": [
+   "Bobr",
+   "Dikobraz",
+   "Křeček"
+  ],
+  "quip_correct": "Kapybara je totiž tak vyrovnaná, že by jí na hlavě klidně usnulo celé ptačí hejno a nikam by neutekla.",
+  "quip_wrong": "Bobr staví hráze a křeček by se do brazilské řeky vůbec nevešel — hledej mnohem většího a mnohem klidnějšího tvora.",
+  "explanation": "Kapybara může vážit přes 60 kilogramů a je to největší žijící hlodavec na Zemi. Žije ve skupinách u vody po celé Jižní Americe, nejvíc právě v Brazílii.",
+  "more_fact": "Kapybary jsou výborní plavci a umí dlouho zůstat pod hladinou. Před dravci se schovávají tak, že se ponoří a nechají nad vodou jen nos a oči.",
+  "about": "kapybaře",
+  "irony_prompt": "A giant capybara fills the frame lounging half-submerged at the edge of a muddy river, utterly relaxed with its round nose just above the waterline. Smaller and subordinate: a small yellow bird perched calmly on top of its head; a dragonfly hovering just above the water; distant riverbank reeds swaying gently. MOOD: cheerful, cozy, amusing."
+ },
+ {
+  "id": "br-q-kafe",
+  "cc": "br",
+  "country": "Brazílie",
+  "section": "Jídlo",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Čím je Brazílie už přes sto padesát let neotřesitelně největší na světě, k velké radosti ranních spáčů na všech kontinentech?",
+  "answer": "Pěstováním a vývozem kávy",
+  "distractors": [
+   "Pěstováním čaje",
+   "Těžbou kakaových bobů",
+   "Výrobou čokolády"
+  ],
+  "quip_correct": "Svět by se bez brazilské kávy ráno jen loudal — země zásobuje šálky od Tokia po Toronto.",
+  "quip_wrong": "Kakao i čaj Brazílie taky pěstuje, ale na světovou špičku ji katapultovala až káva.",
+  "explanation": "Brazílie vypěstuje zhruba třetinu veškeré kávy na světě, hlavně ve státě Minas Gerais, kde mírné podnebí a nadmořská výška svědčí kávovníkům nejvíc.",
+  "more_fact": "Kávovník do Brazílie na počátku 18. století propašoval důstojník Francisco de Melo Palheta. Podle legendy mu sazenice tajně věnovala manželka francouzského guvernéra, protože jejich vývoz byl přísně zakázaný.",
+  "about": "brazilské kávě",
+  "irony_prompt": "An enormous steaming ceramic coffee cup fills the frame sitting on sun-baked red earth in the middle of a coffee plantation, dark coffee brimming right at its rim. Smaller and subordinate: neat rows of glossy-leafed coffee bushes stretching into misty hills behind it; a handful of ripe red coffee cherries scattered on the ground; a small tin scoop leaning against the cup's base. MOOD: warm, energizing, homely."
  }
 ]

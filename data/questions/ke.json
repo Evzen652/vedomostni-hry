@@ -861,5 +861,49 @@
   "about": "keňských běžcích",
   "more_fact": "Spousta z nich běhala každý den do školy a zpátky, několik kilometrů tam i zpět. Trénink jim tak vlastně začal dřív, než vůbec věděli, že trénují.",
   "irony_prompt": "A runner fills the frame striding powerfully along a high dirt trail at dawn, breath steady despite the thin mountain air, muscles lean and perfectly conditioned. Smaller and subordinate: a whole training group following close behind in a tight, disciplined line; a coach on a bicycle keeping pace alongside; the sun rising golden over distant hills. MOOD: disciplined, relentless, dawning."
+ },
+ {
+  "id": "ke-k-migrace",
+  "cc": "ke",
+  "country": "Keňa",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje ohromný přesun milionu pruhovaných antilop gnu a zeber přes keňskou savanu Masai Mara, který láká turisty z celého světa?",
+  "answer": "Velká migrace",
+  "distractors": [
+   "Velký útěk",
+   "Savanní karneval",
+   "Zvířecí pouť"
+  ],
+  "quip_correct": "Hop, a je to! Velká migrace — milion kopyt najednou, savana se doslova otřásá.",
+  "quip_wrong": "Útěk, karneval ani pouť to není. Ten obrovský roční přesun zeber a gnu přes savanu má jméno velká migrace.",
+  "explanation": "Každý rok putuje přes Masai Maru a sousední Serengeti přes milion kusů zvěře za novou trávou a vodou. Cestou musí zvířata překonat i řeky plné krokodýlů.",
+  "more_fact": "Migrace nemá pevné datum – zvířata se řídí podle deště a čerstvé trávy, takže přesný čas přechodu přes řeku se každý rok mírně liší. Turisté proto na tu pravou chvíli často čekají celé dny.",
+  "about": "velké migraci",
+  "irony_prompt": "A vast herd of striped wildebeest and zebras fills the frame, stretching across the golden savanna in a thick moving line under a wide sky. Smaller and subordinate: a cloud of dust kicked up at the herd's edge; a lone acacia tree silhouetted nearby; a distant safari jeep parked on a low hill. MOOD: epic, sweeping, alive."
+ },
+ {
+  "id": "ke-k-viktoriino-jezero",
+  "cc": "ke",
+  "country": "Keňa",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje obrovské jezero na hranicích Keni, Ugandy a Tanzanie, ze kterého vytéká řeka Nil?",
+  "answer": "Viktoriino jezero",
+  "distractors": [
+   "Jezero Turkana",
+   "Jezero Nakuru",
+   "Jezero Natron"
+  ],
+  "quip_correct": "Paráda, sedí to! Viktoriino jezero je tak obrovské, že tři země o něj musely sdílet pobřeží.",
+  "quip_wrong": "Turkana, Nakuru i Natron jsou taky africká jezera, ale řeka Nil vytéká právě z Viktoriina jezera.",
+  "explanation": "Viktoriino jezero je největší jezero Afriky a druhé největší sladkovodní jezero na světě. Pojmenoval ho po britské královně Viktorii britský cestovatel John Hanning Speke v roce 1858.",
+  "more_fact": "Do Viktoriina jezera se vlévají stovky menších řek, ale vytéká z něj jen jedna jediná – Viktoriin Nil, který se dál na severu spojí s dalšími přítoky a stane se řekou Nil, jak ji známe.",
+  "about": "Viktoriině jezeře",
+  "irony_prompt": "A vast calm lake fills the frame, its surface stretching to the horizon under a bright sky, with a narrow wooden fishing boat drifting near the shore. Smaller and subordinate: a fisherman untangling a net at the boat's edge; a cluster of reeds along the muddy bank; distant green hills fading into haze. MOOD: peaceful, expansive, serene."
  }
 ]

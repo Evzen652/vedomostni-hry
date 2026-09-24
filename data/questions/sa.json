@@ -995,5 +995,49 @@
   "about": "sokolnictví",
   "more_fact": "Sokoli mají vlastní pasy a v letadle sedí na opěradle vedle svého majitele. Aerolinky v tamních zemích pro ně mají zvláštní pravidla i vlastní palubní lístek.",
   "irony_prompt": "A falcon fills the frame in mid-launch off a gloved fist, wings just opening, hood swept away in the other hand. Smaller and subordinate: a falconer on a camel watching the sky; a lure being swung; low desert scrub and long dawn shadows. MOOD: explosive, poised, traditional."
+ },
+ {
+  "id": "sa-k-kraj-sveta",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje strmý skalní útes nedaleko Rijádu, který se náhle zvedá z pouště a turistům se zdá, jako by za ním svět prostě končil?",
+  "answer": "Kraj světa (Jebel Fihrajn)",
+  "distractors": [
+   "Brána pouště (Bawwabat al-Sahra)",
+   "Zeď obrů (Sur al-Amalika)",
+   "Konec cesty (Nihajat at-Tarík)"
+  ],
+  "quip_correct": "Trefa do černého! Stojíš na kraji a před tebou je jen prázdná poušť až za obzor.",
+  "quip_wrong": "Brána, zeď ani konec cesty se tomu neříká — útesu kousek od Rijádu, co vypadá jako okraj světa, se říká přesně Kraj světa.",
+  "explanation": "Útes je pozůstatkem dávného mořského dna a ční přes 300 metrů nad okolní pouštní plošinou.",
+  "about": "útesu Kraj světa",
+  "more_fact": "Místo je oblíbené hlavně při západu slunce, kdy poušť pod útesem zbarví do oranžova a fialova.",
+  "irony_prompt": "A dramatic sheer cliff edge fills the frame, jagged rock dropping away into an endless flat desert stretching to the horizon. Smaller and subordinate: a lone acacia tree clinging to the cliff top; small distant dunes far below; a hawk circling in the sky. MOOD: vast, dramatic, breathtaking."
+ },
+ {
+  "id": "sa-k-arabska-kava",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje tradiční saúdskoarabská káva zlatavé barvy, kterou hostitelé podávají hostům v malých šálcích bez ucha spolu se sladkými datlemi?",
+  "answer": "Arabská káva (kahwa)",
+  "distractors": [
+   "Turecká káva",
+   "Ledová káva",
+   "Mátový čaj"
+  ],
+  "quip_correct": "A je to! Voní po kardamomu a šafránu, ne po klasické kávě, jak bys čekal.",
+  "quip_wrong": "Turecká káva ani čaj to nejsou — v Saúdské Arábii se hostům odedávna nalévá voňavá arabská kahwa s datlemi.",
+  "explanation": "Kahwa se připravuje ze slabě pražených zelených kávových zrn a ochucuje kardamomem, což jí dává charakteristickou zlatavou barvu i vůni místo klasické hořkosti.",
+  "about": "arabské kávě",
+  "more_fact": "Nalévá se z dlouhé zobanaté konvice zvané dalla a hostitel dolévá hostům, dokud šálkem lehce nezakývou na znamení, že mají dost.",
+  "irony_prompt": "A tall brass coffee pot with a long curved spout fills the frame, pouring golden cardamom-scented coffee into a small handleless cup. Smaller and subordinate: a plate of plump dates beside the cup; a second empty cup waiting nearby; wisps of steam rising into the air. MOOD: warm, welcoming, fragrant."
  }
 ]

@@ -81,6 +81,48 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-25 — Podlaha fondu dorovnána podruhé: 50 nových otázek napříč 25 zeměmi,
+  ať Maraton (12 kol) neopakuje otázky. Fond 3 742 → 3 792, všechny mají ilustraci.**
+  Navazuje na první dorovnání z 2026-08-31 — appka od 15. 9. má delší párty (Maraton
+  12 kol místo 8), takže se podlaha znovu propadla pod potřebnou hranici. `npm run
+  validate` hlásilo 29 kombinací země × pásmo pod 12 otázek (chybělo přesně 50,
+  skoro všechno dětské pásmo). Pět paralelních agentů (po 5 zemích) napsalo přesně
+  chybějící počet — každá nová otázka rovnou s `irony_prompt` (appka už fotky
+  nepoužívá vůbec, viz zápis o 202 otázkách výš), `about`, `more_fact` bez překryvu.
+  - **`npm run build-index` NESMÍ běžet souběžně ve víc agentech** — přepisuje týž
+    soubor (`data/questions-index.json`). Agenti dostali instrukci ho nespouštět,
+    spustil se centrálně JEDNOU až po dokončení všech pěti (3742+50=3792 sedělo
+    na první pokus).
+  - **`test:offline` po sloučení nahlásil 1 chybu: otázka použila sekci „Symboly"**,
+    kterou appka zrušila 2026-08-30 (sloučena do zbylých devíti). Agent nevěděl,
+    že sekce byla zrušena — spletl si ji s `SECTION_EMOJI`/starým fondem. Oprava:
+    `kr-k-taegeukgi-vlajka` → `Kultura & tradice` (stejný merge cíl jako u jiných
+    otázek o heraldice/vlajkách). **Poučení pro příští dávku: brief agentům musí
+    obsahovat platný seznam sekcí, ne spoléhat na to, že si ho odvodí ze souboru.**
+  - **`audit:konzistence` po sloučení odhalil 2 nové nálezy** (z 550 celkových,
+    žádný jiný se nezměnil): `sa-k-kraj-sveta` mělo odpověď „Kraj světa (Jebel
+    Fihrajn)" dvakrát delší než nejdelší distraktor — dorovnáno přidáním
+    vymyšlených arabsky znějících názvů ke všem třem distraktorům (stejný vzorec
+    jako `at-k-edelweiss`/`au-k-most` v existujícím fondu), **odpověď se
+    nezkracovala** (pravidlo z 2026-09-11). A `pk-k-hokej` mělo v zadání i hláškách
+    doslova „kriket", což je přesná odpověď sousední otázky `pk-k-kriket` — přepsáno
+    na „jiný míčový sport" na všech třech místech (otázka, `quip_wrong`, `more_fact`
+    — prozrazení funguje stejně v obou).
+  - **Ilustrace: 50/50, 2 vady (4 %).** `id-k-durian` mělo v zadání „a small paper
+    sign propped nearby showing just a crossed-out fruit shape" — i tenhle výslovný
+    zákaz textu model porušil a dokreslil čitelné (nesmyslné) písmo na cedulku,
+    protože skutečné zákazy durianu v realitě text nesou. Řešeno úplným vypuštěním
+    cedulky ze scény (nahrazeno mdlou muškou nad ovocem) — stejný postup jako
+    u kanadské archy/obchodu s kožešinami předešlý den. `th-k-tuktuk` mělo v
+    zadání slovo „taxi" u vozidla → čitelný nápis „TAXI" na střeše, přestože
+    zadání o žádné ceduli nemluvilo — pátý potvrzený případ „slovo pojmenovávající
+    typ vozidla/podniku vyvolá jeho reálný popisek" (banka, kavárna, hotel, taxi
+    v Bruselu předešlý den, teď tuk-tuk). Oprava: slovo „taxi" pryč, „no sign or
+    roof light of any kind" navíc.
+  - **Fond: 3 792 otázek, VŠECHNY mají ilustraci** (0 chybí). `validate` 0 chyb,
+    `test:offline` 874, `lint-irony` 0 chyb, `audit:konzistence` beze změny oproti
+    stavu před dávkou (kromě dvou vyřešených nálezů výš).
+
 - **2026-09-25 — Šest zemí bez `data/cards/{cc}.json` appka při KAŽDÉM výběru víc zemí
   zbytečně stahovala a 404 zalogovala do konzole. Opraveno + zabezpečeno proti driftu.**
   Objeveno při ověřování flow Světové ligy: appka i mimo online (kdykoli se vybere víc

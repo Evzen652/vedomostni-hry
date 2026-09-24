@@ -929,5 +929,49 @@
   "about": "maskách kmene Punu",
   "more_fact": "Tyhle masky obdivovali evropští malíři na začátku dvacátého století. Jejich zjednodušené tvary pak ovlivnily i podobu moderního evropského umění.",
   "irony_prompt": "A wooden mask fills the frame with a smooth chalky-white painted face and a tall, elaborately carved black hairstyle rising above it in neat coiled ridges. Smaller and subordinate: a pair of tall wooden stilts leaning against the wall beside it; a drum with a taut skin resting below; a single feather tucked behind the mask's carved ear. MOOD: striking, ceremonial, serene."
+ },
+ {
+  "id": "ga-k-krokodyl",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaký velký plaz s ostrými zuby číhá nehnutě v řekách a mokřadech Gabonu, než bleskově zaútočí?",
+  "answer": "Krokodýl (nilský)",
+  "distractors": [
+   "Leguán",
+   "Varan",
+   "Krajta"
+  ],
+  "quip_correct": "Ta nehybnost je past — krokodýl umí čekat celé hodiny, než se voda kolem něj jen zavlní.",
+  "quip_wrong": "Leguán ani varan takhle u vody nečíhají — ten trpělivý dravec s ostrými zuby je krokodýl.",
+  "explanation": "V řekách a mokřadech Gabonu žije krokodýl nilský, jeden z největších sladkovodních predátorů Afriky. Loví hlavně ryby, ale stáhne pod hladinu i větší zvíře, které přijde k vodě napít.",
+  "more_fact": "Krokodýl dokáže zadržet dech pod vodou i přes hodinu, pokud se nehýbe. Kořist pak stahuje pod hladinu ve slavném smrtícím kotouči, kdy se s ní rychle otáčí dokola.",
+  "about": "gabonských krokodýlech",
+  "irony_prompt": "A massive crocodile fills the frame lying utterly still at the water's edge, only its ridged eyes and nostrils breaking the still brown river surface. Smaller and subordinate: a small white egret standing fearlessly on a log nearby; a dragonfly resting on a floating leaf; distant mangrove roots reflected in the water. MOOD: tense, watchful, atmospheric."
+ },
+ {
+  "id": "ga-k-kapustnak",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaký klidný vodní savec s kulatým čenichem a ploskatým ocasem se pase na rostlinách v řekách a lagunách Gabonu?",
+  "answer": "Kapustňák (africký)",
+  "distractors": [
+   "Delfín",
+   "Tuleň",
+   "Vydra obrovská"
+  ],
+  "quip_correct": "Kapustňák je vlastně podmořská kráva — celý den jen líně spásá vodní rostliny.",
+  "quip_wrong": "Delfín ani tuleň se rostlinami neživí — ten pomalý bylinožravec v gabonských lagunách je kapustňák.",
+  "explanation": "Africký kapustňák žije podél pobřeží a v řekách západní a střední Afriky, včetně gabonských lagun. Je to příbuzný slonů, i když vypadá úplně jinak, a denně sní desítky kilogramů vodních rostlin.",
+  "more_fact": "Kapustňáci se pohybují velmi pomalu a mají špatný zrak, takže se často spoléhají hlavně na citlivé vousky kolem tlamy, kterými nahmatávají potravu i překážky v kalné vodě.",
+  "about": "africkém kapustňákovi",
+  "irony_prompt": "A large gentle manatee fills the frame drifting just beneath the calm surface of a mangrove lagoon, munching on a trailing strand of water plants. Smaller and subordinate: a small fish nibbling near its rounded snout; sunlight filtering through the murky green water above; mangrove roots framing the edges of the lagoon. MOOD: peaceful, gentle, dreamy."
  }
 ]

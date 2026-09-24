@@ -861,5 +861,49 @@
   "about": "datové hranici na Fidži",
   "more_fact": "Hranice se kolem ostrovů schválně zakřivuje, aby mělo celé Fidži stejné datum. Bez toho zahnutí by na jednom ostrově byla neděle a na sousedním už pondělí.",
   "irony_prompt": "A single glowing dotted line fills the frame running straight through the middle of a sunny tropical island, a signpost planted exactly where it crosses a village path, one side already lit by morning sun and the other still holding the last shadow of night. Smaller and subordinate: a child jumping back and forth across the line, delighted; two roosters crowing on opposite sides at slightly different moments; palm trees casting matching shadows on both sides. MOOD: playful, curious, bright."
+ },
+ {
+  "id": "fj-k-koraly",
+  "cc": "fj",
+  "country": "Fidži",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Fidži se pyšní přezdívkou hlavní město jednoho podmořského pokladu, který láká potápěče z celého světa barevnými keři pod hladinou. Čeho?",
+  "answer": "Měkkých korálů",
+  "distractors": [
+   "Perel",
+   "Chobotnic",
+   "Mušlí"
+  ],
+  "quip_correct": "Ty barevné keře pod hladinou nejsou rostliny, ale živí tvorové — měkké korály, kterými je Fidži pověstné.",
+  "quip_wrong": "Perly i mušle se u Fidži taky najdou, ale přezdívku mu vysloužily měkké korály rozkvetlé pod hladinou.",
+  "explanation": "Fidžijské vody obklopují stovky druhů měkkých korálů v pestrých barvách, které rostou hlavně kolem ostrova Taveuni — celé souostroví si tak vysloužilo přezdívku soft coral capital of the world.",
+  "more_fact": "Na rozdíl od tvrdých korálů, co tvoří útesy jako kámen, jsou měkké korály ohebné a vlní se v proudu jako podmořské kytky. Potápěči je fotí hlavně v noci, kdy rozevřou svá chapadélka a rozkvetou do sytých barev.",
+  "about": "fidžijských korálových útesech",
+  "irony_prompt": "A vast underwater garden of soft coral fills the frame swaying gently in the current, its branches glowing in vivid pink, orange and purple beneath sun-dappled turquoise water. Smaller and subordinate: a small striped clownfish darting between the coral branches; a sea turtle gliding past in the distance; sunlight rays piercing down from the surface above. MOOD: vivid, mesmerizing, peaceful."
+ },
+ {
+  "id": "fj-k-kava",
+  "cc": "fj",
+  "country": "Fidži",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaký tradiční nápoj z rozmělněného kořene si Fidžijci připravují při slavnostních obřadech a nabízejí ho i hostům na uvítanou?",
+  "answer": "Kavu (yaqonu)",
+  "distractors": [
+   "Kokosové mléko",
+   "Zázvorový čaj",
+   "Cukrovou šťávu"
+  ],
+  "quip_correct": "Kava je tak trochu fidžijský podpis pohostinnosti — bez ní se žádná pořádná ceremonie neobejde.",
+  "quip_wrong": "Kokosové mléko ani zázvorový čaj do obřadní misky nepatří — tou pravou fidžijskou slavnostní tekutinou je kava.",
+  "explanation": "Kava se vyrábí z rozdrceného kořene pepřovníku opojného rozmíchaného ve vodě. Má nahořklou chuť a mírně uvolňující účinek a pije se ze společné misky, ze které si hosté postupně nabírají.",
+  "more_fact": "Než se kava podá hostovi, doprovází to tlesknutí dlaní a slovo bula. Odmítnout nabízenou misku se považuje za nezdvořilé, i když nápoj nikomu nechutná.",
+  "about": "fidžijském kavovém obřadu",
+  "irony_prompt": "A large wooden ceremonial bowl fills the frame filled with pale cloudy kava liquid, a half coconut-shell cup resting on its rim ready to be dipped in. Smaller and subordinate: woven mats spread on the floor around the bowl; a pair of hands captured mid-clap just beside it; a small dried root piece resting on the mat's edge. MOOD: warm, ceremonial, welcoming."
  }
 ]

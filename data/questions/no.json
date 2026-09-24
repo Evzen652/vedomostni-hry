@@ -926,5 +926,27 @@
   "image_prompt": "Fotorealistický snímek misky teplé bílé rýžové kaše se skořicí posazené na sněhu před dřevěnou norskou stodolou za soumraku, 16:9",
   "about": "vánočním skřítkovi nisse a rýžové kaši",
   "irony_prompt": "A small bearded gnome in a red pointed cap fills the frame sitting in a hay-filled barn, happily spooning up a bowl of creamy white rice pudding with a knob of butter melting on top. Smaller and subordinate: a single whole almond hidden in the pudding; a cow watching over the stall door; a cat eyeing the bowl. MOOD: cosy, wintry, merry."
+ },
+ {
+  "id": "no-k-stavovy-kostel",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenují staré norské dřevěné kostely s ostrými, na sebe skládanými střechami a vyřezávanými dračími hlavami, jaké stavěli už Vikingové?",
+  "answer": "Stavové kostely (stavkirke)",
+  "distractors": [
+   "Iglú kostely",
+   "Kamenné katedrály",
+   "Plovoucí kostely"
+  ],
+  "quip_correct": "Hop, a je to! Ty dračí hlavy na střeše nejsou náhoda — stavitelé je tam dali podobně jako na příď vikingských lodí, aby odháněly zlé duchy.",
+  "quip_wrong": "Iglú, kámen, voda — nic z toho. Hledáš dřevěné stavové kostely, kterým se říká stavkirke.",
+  "explanation": "Stavové kostely se stavěly bez jediného hřebíku, jen ze dřeva spojovaného čepy a zářezy. V Norsku jich z tisíců původních přežilo jen kolem třiceti, protože dřevo je náchylné na požár i hnilobu.",
+  "about": "norských stavových kostelech",
+  "more_fact": "Nejstarší dochovaný stavový kostel v Urnes je starý přes 850 let a je zapsaný na seznamu UNESCO — jeho vyřezávané dveře zdobí propletení hadi a draci ve stylu, který používali i staří Vikingové.",
+  "irony_prompt": "A tall dark wooden stave church fills the frame, its steep stacked shingled roofs rising in tiers, each gable tipped with a carved dragon head snarling into the sky. Smaller and subordinate: a light dusting of snow along the roof edges; a single evergreen tree beside the entrance; soft grey morning light behind the silhouette. MOOD: mysterious, majestic, quietly magical."
  }
 ]

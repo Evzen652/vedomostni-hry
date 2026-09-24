@@ -839,5 +839,49 @@
   "about": "mlékárenském družstvu Fonterra",
   "image_prompt": "Fotorealistický snímek mlékárenského zpracovatelského závodu s cisternami na mléko na Novém Zélandu, 16:9",
   "irony_prompt": "Enormous round stainless steel milk silos fill the frame standing in a row at a dairy processing plant, tanker trucks queuing beneath them to fill up. Smaller and subordinate: a worker checking gauges on a control panel; steam rising from a nearby drying tower; farmland stretching to the horizon beyond the plant's fence. MOOD: industrial, vast, productive."
+ },
+ {
+  "id": "nz-k-svetlusky-jeskyne",
+  "cc": "nz",
+  "country": "Nový Zéland",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím svítí stropy jeskyní Waitomo na Novém Zélandu, jako by tam byla hvězdná obloha?",
+  "answer": "Světélkujícími larvami světlušek",
+  "distractors": [
+   "Neonovými nápisy",
+   "Odrazem měsíce ve vodě",
+   "Fosforovými kamínky"
+  ],
+  "quip_correct": "Máš to v malíčku! Tisíce svítících larev na stropě jeskyně opravdu vypadají jako hvězdná obloha pod zemí.",
+  "quip_wrong": "Neon, odraz měsíce, kamínky — zkus to jinak. Ten zázrak na stropě dělají svítící larvy hmyzu zvaného světluška jeskynní.",
+  "explanation": "Novozélandská světluška jeskynní není příbuzná s obyčejnou muškou — patří mezi komáříky a její larva svítí modrozeleným světlem, aby si do lepkavých vláken chytala potravu jako do sítě.",
+  "about": "svítících jeskyních Waitomo",
+  "more_fact": "Larva svítí tím jasněji, čím je hladovější — když se pořádně nasytí, její světlo trochu pohasne, dokud si zase nevytvoří chuť na další hmyz.",
+  "irony_prompt": "A vast dark cave ceiling fills the frame, dotted with countless tiny glowing blue-green lights scattered like a starry night sky, each one hanging on a faint silky thread. Smaller and subordinate: the dark silhouette of a small rowboat gliding silently far below; a narrow beam of daylight breaking in from a distant cave opening; smooth wet cave walls fading into shadow. MOOD: magical, hushed, wondrous."
+ },
+ {
+  "id": "nz-k-tuatara-plaz",
+  "cc": "nz",
+  "country": "Nový Zéland",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje novozélandský plaz, který vypadá jako ještěrka, ale je tak starobylý, že pamatuje ještě dinosaury?",
+  "answer": "Tuatara",
+  "distractors": [
+   "Gekon",
+   "Leguán",
+   "Varan"
+  ],
+  "quip_correct": "Sedí to na první dobrou! Tuatara patří do vlastní skupiny plazů, která je starší než hadi a ještěrky dohromady — přežila i vymírání dinosaurů.",
+  "quip_wrong": "Gekon, leguán, varan jsou sice taky plazi, ale tenhle živoucí pamětník z Nového Zélandu se jmenuje tuatara.",
+  "explanation": "Tuatara se řadí do skupiny plazů, která žila už před 200 miliony let a jinak celá vyhynula — tuatara je jediný přeživší zástupce. Roste velmi pomalu a dožívá se přes sto let.",
+  "about": "plazu tuatara",
+  "more_fact": "Na temeni hlavy má tuatara takzvané temenní oko, citlivé na světlo, které u dospělých jedinců zakrývá kůže a šupiny, ale u mláďat je slabě vidět.",
+  "irony_prompt": "A tuatara reptile fills the frame basking on a mossy grey rock, its spiky crest running down its back and its calm ancient eye catching the light. Smaller and subordinate: a small fern frond curling nearby; a distant burrow entrance in the soft earth; warm afternoon sunlight glowing across the scene. MOOD: calm, ancient, quietly charming."
  }
 ]

@@ -907,5 +907,49 @@
   "about": "kipu",
   "more_fact": "Něco znamenaly i barvy provázků, takže jediný svazek uzlů uměl zaznamenat, kolik čeho a ve které vesnici. Úředník ho nosil sbalený jako klubko vlny.",
   "irony_prompt": "A bundle of colourful knotted cords fills the frame hanging from a wooden peg, dozens of thinner strings dangling from one thick main cord, each tied with a different pattern and number of knots at different heights. Smaller and subordinate: an official's hand carefully counting along one string with a fingertip; a woven pouch at the belt where more cord bundles are kept; a llama caravan visible through a doorway behind, waiting to be counted and recorded. MOOD: meticulous, ingenious, orderly."
+ },
+ {
+  "id": "pe-k-kondor",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaký obrovský dravý pták s bílým límcem kolem krku krouží vysoko nad peruánskými Andami a je národním symbolem Peru?",
+  "answer": "Andský kondor",
+  "distractors": [
+   "Orel skalní",
+   "Sup krocanovitý",
+   "Papoušek ara"
+  ],
+  "quip_correct": "Trefa do černého! Rozpětí křídel má přes tři metry — širší než leckterá postel.",
+  "quip_wrong": "Orel ani sup takhle obří nejsou — Peru na vlajce nosí právě kondora, létajícího obra And.",
+  "explanation": "Andský kondor patří mezi nejtěžší létající ptáky na světě a dokáže se bez jediného mávnutí křídly vznášet celé hodiny na teplých vzdušných proudech.",
+  "about": "andském kondorovi",
+  "more_fact": "Kondor se dožívá až 70 let a mláďata vychovává jen jednou za dva roky — je to jeden z nejpomaleji se množících ptáků vůbec.",
+  "irony_prompt": "A massive Andean condor with a striking white feather collar around its neck fills the frame, wings spread wide as it glides against a mountain sky. Smaller and subordinate: distant snow-capped Andean peaks below; a tiny llama grazing on a far ridge; wispy clouds drifting past the wingtips. MOOD: majestic, soaring, awe-inspiring."
+ },
+ {
+  "id": "pe-k-duhova-hora",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje peruánská hora, jejíž svahy jsou díky vrstvám různobarevných minerálů pruhované jako duha?",
+  "answer": "Duhová hora (Vinicunca)",
+  "distractors": [
+   "Ohnivá hora",
+   "Zlatá hora",
+   "Stříbrná hora"
+  ],
+  "quip_correct": "Bystrá hlava! Příroda tu namalovala pruhy sama, žádný fotoaparát to nedokreslil.",
+  "quip_wrong": "Žádný oheň ani zlato — barvy dělají minerály v hlíně, a hoře se proto říká Duhová.",
+  "explanation": "Pruhy vznikly usazováním různých minerálů (železa, mědi, síry) během milionů let a odkryly se teprve nedávno, když z hory roztál led a sníh.",
+  "about": "Duhové hoře",
+  "more_fact": "Hora leží ve výšce přes 5 000 metrů nad mořem, takže se k ní turisté musí vydat na několikahodinový pochod s aklimatizací na řídký vzduch.",
+  "irony_prompt": "A dramatic mountain slope fills the frame, striped horizontally in bands of rust red, mustard yellow, lavender and turquoise like a painted rainbow across the rock. Smaller and subordinate: a thin trail of hikers as tiny dots near the base; a llama standing on a lower ridge; distant snow peaks in the background. MOOD: wondrous, vivid, jaw-dropping."
  }
 ]

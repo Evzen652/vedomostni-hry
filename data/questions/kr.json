@@ -951,5 +951,49 @@
   "about": "topení ondol",
   "more_fact": "V dnešních bytech ondol zůstal, jen místo kouře pod podlahou koluje horká voda. Zvyk sedět na zemi z korejských domácností nezmizel s ním.",
   "irony_prompt": "A cutaway of a warm room fills the frame showing a family sitting and lying directly on the floor, with a stone flue channel running underneath carrying heat from a kitchen fire at one end. Smaller and subordinate: a cat sprawled flat on the warmest spot; an unused chair pushed into a corner; frost on the window. MOOD: cosy, ground-level."
+ },
+ {
+  "id": "kr-k-kimchi-nadoby",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Do čeho Korejci tradičně ukládají kimchi, aby v zemi vydrželo čerstvé celou zimu?",
+  "answer": "Do velkých hliněných nádob",
+  "distractors": [
+   "Do dřevěných sudů",
+   "Do skleněných zavařovaček",
+   "Do kovových beden"
+  ],
+  "quip_correct": "Bod pro tebe! Země funguje jako přírodní lednička — proto se kimchi zahrabává hluboko pod povrch.",
+  "quip_wrong": "Dřevo, sklo, kov? Zkus si vzpomenout, z čeho se dělají tradiční korejské hrnce zvané onggi — právě do nich kimchi patří.",
+  "explanation": "Tyhle hliněné nádoby se jmenují onggi. Mají drobné póry, kterými prodýchávají, takže kimchi uvnitř správně kvasí a nekazí se. Dnes mnoho rodin používá místo zahrabávání speciální kimchi lednice, ale princip zůstal stejný.",
+  "about": "hliněných nádobách na kimchi",
+  "more_fact": "Kimchi existuje ve stovkách různých druhů — podle roční doby, oblasti i zeleniny se liší chutí i barvou. Nejznámější je pálivé kimchi z pekingského zelí, ale dělá se i z ředkve, okurky nebo mladého ředkvičkového natě.",
+  "irony_prompt": "A row of tall round-bellied clay onggi jars fills the frame, half-buried in the ground up to their shoulders with their domed lids slightly tilted open, a wisp of fragrant steam curling from the gap. Smaller and subordinate: a wooden ladle leaning against the nearest jar; frost dusting the ground around the buried jars; a small brass bell hanging from a nearby branch. MOOD: cozy, wholesome, quietly cheerful."
+ },
+ {
+  "id": "kr-k-taegeukgi-vlajka",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje červeno-modrý kroužek uprostřed jihokorejské vlajky, který připomíná dvě propletené kapky?",
+  "answer": "Taegeuk",
+  "distractors": [
+   "Mandala",
+   "Feng-šuej",
+   "Bumerang"
+  ],
+  "quip_correct": "Trefa do černého! Ten kroužek se jmenuje taegeuk a symbolizuje rovnováhu protikladů.",
+  "quip_wrong": "Mandala, feng-šuej i bumerang znějí exoticky, ale ten červeno-modrý kroužek na korejské vlajce se jmenuje taegeuk.",
+  "explanation": "Taegeuk představuje rovnováhu protikladů — světla a tmy, ohně a vody. V rozích vlajky jsou navíc čtyři sady černých čárek, kterým se říká trigramy; každá sada znázorňuje jiný živel jako nebe, zemi, oheň nebo vodu.",
+  "about": "jihokorejské vlajce",
+  "more_fact": "Jihokorejská vlajka se jmenuje Taegukgi a bílé pozadí na ní symbolizuje mír a čistotu. Korejci ji vyvěšují hlavně o státních svátcích, třeba 15. srpna na Den osvobození.",
+  "irony_prompt": "A large round taegeuk emblem, its red and blue halves swirling together like two chasing raindrops, fills the frame spinning cheerfully on a tall wooden stick like a pinwheel toy. Smaller and subordinate: four short sets of black parallel bars floating near the corners like tiny flags; a child's hand gripping the stick from below; a clear blue sky background. MOOD: playful, spinning, joyful."
  }
 ]

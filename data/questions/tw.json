@@ -863,5 +863,70 @@
   "about": "soutěsce Taroko",
   "more_fact": "Soutěska se pořád prohlubuje. Pohoří se kvůli srážce dvou zemských desek zvedá o několik milimetrů ročně, takže řeka musí řezat dál, aby udržela krok.",
   "irony_prompt": "Towering white marble cliffs fill the frame rising like a giant's sculpture gallery on both sides of a narrow gorge, a turquoise river rushing far below. Smaller and subordinate: a family looking straight up in awe from a footbridge; a small tunnel entrance carved directly into the cliff face; polished rock textures catching the sunlight. MOOD: majestic, polished, awe-inspiring."
+ },
+ {
+  "id": "tw-k-nefritova-kapusta",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V tchajwanském Národním palácovém muzeu je slavná soška zeleniny vyřezaná z jednoho kusu drahého kamene. Jakou zeleninu socha zobrazuje?",
+  "answer": "Pekingské zelí",
+  "distractors": [
+   "Mrkev",
+   "Ředkev",
+   "Salát"
+  ],
+  "quip_correct": "Bystrá hlava! Řezbář dokázal využít barevné žíly v kameni tak šikovně, že list zelí vypadá skoro živě — a na něm ještě sedí dva vyřezaní hmyzáci.",
+  "quip_wrong": "Mrkev, ředkev ani salát by se do bílo-zeleného nefritu netrefily barvou — sochař vybral kámen přesně podle listů pekingského zelí.",
+  "explanation": "Soška se jmenuje Nefritová kapusta a řezbář využil přirozené bílé a zelené zbarvení kamene tak, aby kopírovalo barvu skutečné zeleniny.",
+  "about": "Nefritové kapustě",
+  "more_fact": "Na lístcích zelí sedí vyřezaní kobylka a sarančátko — v čínské kultuře jsou symbolem plodnosti a hojnosti.",
+  "irony_prompt": "A single carved jade sculpture of a leafy cabbage fills the frame, displayed upright on a small dark wooden stand, its stone naturally shading from pure white at the stalk to rich green at the curling leaf tips. Smaller and subordinate: two tiny carved insects perched on the upper leaves; a soft museum spotlight beam catching the stone's polish; a velvet-lined glass case edge visible at the very corner. MOOD: wondrous, delicate, admiring."
+ },
+ {
+  "id": "tw-k-horke-prameny",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Proč má Tchaj-wan tolik přírodních horkých pramenů, do kterých si lidé rádi chodí odpočinout?",
+  "answer": "Ostrov leží v sopečně a geotermálně aktivní oblasti",
+  "distractors": [
+   "Vodu tam někdo uměle ohřívá",
+   "Prameny plní horká mořská voda",
+   "Slunce tam vodu prohřívá extrémně silně"
+  ],
+  "quip_correct": "To je ono! Pod ostrovem to vře doopravdy — horko jde přímo ze země, ne od žádného kotle.",
+  "quip_wrong": "Žádný kotel ani slunce za to nemůže — voda se ohřívá hluboko pod zemí, tam kde je ostrov sopečně činný.",
+  "explanation": "Tchaj-wan leží na styku tektonických desek, což ostrovu dává hory, časté zemětřesení i desítky horkých pramenů plných minerálů.",
+  "about": "tchajwanských horkých pramenech",
+  "more_fact": "Jeden z nejznámějších pramenů, Beitou u Tchaj-peje, má vodu tak horkou a sytě zbarvenou, že se jí přezdívá peklo v údolí.",
+  "irony_prompt": "A steaming outdoor hot spring pool fills the frame, carved from dark natural rock, thick wisps of white steam rising into cool mountain air. Smaller and subordinate: a row of wooden buckets stacked beside the pool; a single red maple leaf floating on the water's surface; forested mountain slopes fading into mist in the background. MOOD: cozy, relaxing, warm."
+ },
+ {
+  "id": "tw-q-palac-muzeum-1949",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Proč má tchajwanské Národní palácové muzeum jednu z největších sbírek čínského císařského umění na světě?",
+  "answer": "Sbírku si při ústupu na Tchaj-wan v roce 1949 odvezla čínská národní vláda",
+  "distractors": [
+   "Sbírku muzeu darovala britská královna",
+   "Poklady tam našli místní archeologové",
+   "Sbírku vykoupili tchajwanští podnikatelé od Číny"
+  ],
+  "quip_correct": "Bod pro tebe. Tisíce beden s poklady putovaly přes moře v době, kdy šlo hlavně o to zachránit je před válkou — a skončily nakonec na ostrově.",
+  "quip_wrong": "Nikdo je nedaroval ani nevykopal — poklady odvezla ustupující čínská vláda s sebou na Tchaj-wan, když prohrávala občanskou válku.",
+  "explanation": "Během čínské občanské války na konci 40. let nechala vláda přesunout tisíce uměleckých děl z pekingských palácových sbírek na Tchaj-wan, kam sama později přesídlila.",
+  "about": "tchajwanském Národním palácovém muzeu",
+  "more_fact": "Sbírka je tak rozsáhlá, že se v muzeu exponáty pravidelně obměňují — na leccos tak čekáte roky, než to uvidíte na vlastní oči.",
+  "irony_prompt": "A long procession of wooden crates fills the frame, stacked high on the deck of an old cargo ship, roped down tightly against the open sea. Smaller and subordinate: a single crate cracked slightly open, a golden ornamental edge just visible inside; a lighthouse silhouette on a distant coastline; a sailor checking the ropes. MOOD: dramatic, momentous, quietly tense."
  }
 ]

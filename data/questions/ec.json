@@ -907,5 +907,49 @@
   "about": "sopce Cotopaxi",
   "more_fact": "Ten sníh je pro okolí důležitý. Když taje, stéká z hory voda do potoků, ze kterých berou vodu vesnice a pole hluboko pod ní.",
   "irony_prompt": "A perfectly symmetrical snow-capped volcanic cone fills the frame rising sharply above lush green farmland, its icy summit glowing white against a warm blue sky while cattle graze contentedly on the sun-baked slopes below. Smaller and subordinate: a wisp of steam curling from a vent near the snowline; a farmer leading cattle along a dusty path at the base; clouds ringing the mountain's middle like a belt. MOOD: striking, contrasted, majestic."
+ },
+ {
+  "id": "ec-k-amazonie",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Kromě ostrovů Galapágy má Ekvádor na východě země i kousek jiného slavného deštného pralesa. Kterého?",
+  "answer": "Amazonského pralesa",
+  "distractors": [
+   "Konžského pralesa",
+   "Bornejského pralesa",
+   "Sibiřské tajgy"
+  ],
+  "quip_correct": "Ekvádor si tak trochu nabral dvakrát — jednou ostrovní zázrak Galapágy, podruhé kus zeleného amazonského srdce.",
+  "quip_wrong": "Konžský prales je v Africe a tajga zase úplně jinde na severu — ekvádorský prales patří k Amazonii.",
+  "explanation": "Amazonský prales v Ekvádoru se nazývá El Oriente. Žijí tam opice, papoušci, jaguáři i domorodé kmeny, které v pralese bydlí odjakživa.",
+  "more_fact": "Ekvádorská Amazonie je i přes svou malou rozlohu jedním z nejbohatších míst na druhy rostlin a hmyzu na Zemi — na jediném stromě tam vědci napočítali stovky druhů brouků.",
+  "about": "ekvádorské Amazonii",
+  "irony_prompt": "A single towering rainforest tree fills the frame with its buttress roots sprawling wide across the jungle floor, sunlight breaking through the dense green canopy far above. Smaller and subordinate: a small green parrot perched on a low branch; a trail of leafcutter ants marching along one root; mist drifting between distant trunks. MOOD: lush, vibrant, alive."
+ },
+ {
+  "id": "ec-k-quito",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ekvádorské hlavní město Quito leží vysoko v horách mezi sopkami. Co se tam turistům po vystoupení z letadla někdy hned stane?",
+  "answer": "Bývají zadýchaní, protože je tam řidší vzduch",
+  "distractors": [
+   "Bývá jim horko jako na poušti",
+   "Musí nosit brýle proti sněhu",
+   "Slyší hůř kvůli tlaku hluboko pod mořem"
+  ],
+  "quip_correct": "Vzduch je tam pořádně řídký, takže i pár schodů dá zabrat víc než doma.",
+  "quip_wrong": "V Quitu není ani vedro jako na poušti, ani hluboko pod mořem — lidem se tam spíš špatně dýchá kvůli výšce.",
+  "explanation": "Quito leží ve výšce skoro 2 850 metrů nad mořem, obklopené sopkami. Je to jedno z nejvýše položených hlavních měst na světě.",
+  "more_fact": "Místním lidem nadmořská výška nevadí — jejich těla jsou na ni zvyklá odmalička. Mají trochu víc červených krvinek, které lépe roznášejí kyslík v řidším vzduchu.",
+  "about": "vysoko položeném Quitu",
+  "irony_prompt": "A cheerful cartoonish tourist figure fills the frame standing on a mountaintop street gasping with wide eyes and puffed-out cheeks, suitcase dropped beside them, snow-capped volcanoes rising behind the rooftops. Smaller and subordinate: a local vendor calmly selling fruit nearby, completely unbothered; a small dog trotting past unfazed; thin wisps of cloud drifting at street level. MOOD: playful, comedic, breathless."
  }
 ]

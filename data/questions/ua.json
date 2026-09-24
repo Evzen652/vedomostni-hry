@@ -1062,5 +1062,49 @@
   "about": "pysankách",
   "more_fact": "Každý kraj má vlastní vzory a barvy, takže znalec pozná podle vajíčka, odkud pochází. Některé vzory se v rodinách předávají z babičky na vnučku.",
   "irony_prompt": "A brightly patterned decorated egg fills the frame held carefully in a delighted child's hands, a thin stream of melted wax being traced onto a fresh egg beside it. Smaller and subordinate: small pots of colorful dye; a lit candle for the wax; a basket of finished eggs nearby. MOOD: cheerful, delicate, sunny."
+ },
+ {
+  "id": "ua-k-borscht",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje sytá ukrajinská polévka syté červené barvy, která se vaří hlavně z červené řepy?",
+  "answer": "Boršč",
+  "distractors": [
+   "Guláš",
+   "Zelňačka",
+   "Kulajda"
+  ],
+  "quip_correct": "Bod pro tebe! Ta sytě rudá barva je od řepy — a boršč se skoro vždycky podává se lžící zakysané smetany navrch.",
+  "quip_wrong": "Guláš, zelňačka i kulajda jsou taky polévky, ale tahle sytě červená patří boršči a jeho řepě.",
+  "explanation": "Do boršče kromě řepy patří i zelí, mrkev a brambory. Na Ukrajině existují desítky regionálních variant a každá rodina ho vaří trochu jinak.",
+  "about": "boršči",
+  "more_fact": "Boršč je zapsaný na seznamu UNESCO jako součást nehmotného kulturního dědictví Ukrajiny.",
+  "irony_prompt": "A steaming bowl of deep ruby-red soup fills the frame, viewed from above, its surface swirled with a generous dollop of white sour cream. Smaller and subordinate: a slice of dark rye bread resting on the table beside the bowl; a wooden spoon dipped halfway in; a sprig of fresh dill floating on top. MOOD: cozy, hearty, warm."
+ },
+ {
+  "id": "ua-k-hoverla",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje nejvyšší hora Ukrajiny, která se tyčí v Karpatech?",
+  "answer": "Hoverla",
+  "distractors": [
+   "Elbrus",
+   "Triglav",
+   "Rysy"
+  ],
+  "quip_correct": "Trefa do černého! Hoverla měří přes dva tisíce metrů a v jasný den je z ní vidět daleko do okolních hor.",
+  "quip_wrong": "Elbrus, Triglav i Rysy leží úplně jinde — nejvyšší vrchol Ukrajiny samotné se jmenuje Hoverla.",
+  "explanation": "Hoverla se nachází v Karpatech na západě Ukrajiny a měří 2 061 metrů. Je oblíbeným cílem turistů i horských běžců.",
+  "about": "Hoverle",
+  "more_fact": "Na vrchol Hoverly každoročně vystupují tisíce turistů — pěšina tam patří k nejfrekventovanějším horským trasám v celé zemi.",
+  "irony_prompt": "A single rounded mountain peak fills the frame, its grassy summit rising above a sea of forested Carpathian ridges rolling into the distance. Smaller and subordinate: a small wooden trail marker post near the summit; a hiker's walking stick leaning against a rock; wisps of cloud drifting just below the peak. MOOD: fresh, adventurous, uplifting."
  }
 ]

@@ -930,5 +930,49 @@
   "about": "tempehu",
   "more_fact": "Tempeh se tradičně nechává zrát zabalený v banánovém listu. Ten propouští přesně tolik vzduchu, kolik plíseň potřebuje — víc by ji vysušilo, míň by ji udusilo.",
   "irony_prompt": "A pile of round pale beige soybeans fills the frame being poured from a basket onto a big green banana leaf, beans bouncing everywhere. Smaller and subordinate: neat little leaf-wrapped parcels stacked beside it; a finished white block shaped like a brick waiting on a plate; a chicken trying to steal a stray bean. MOOD: homely, busy, playful."
+ },
+ {
+  "id": "id-k-durian",
+  "cc": "id",
+  "country": "Indonésie",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje indonéské ostnaté ovoce, které smrdí tak silně, že ho v hotelích a autobusech zakazují nosit?",
+  "answer": "Durian",
+  "distractors": [
+   "Mangostan",
+   "Ananas",
+   "Kokos"
+  ],
+  "quip_correct": "Přesně tak! Durian voní tak silně, že mu radši říkají páchnout, ne vonět.",
+  "quip_wrong": "Mangostan, ananas i kokos voní docela mile – ovoce, po kterém vyklidíš celý autobus, se jmenuje durian.",
+  "explanation": "Durian pokrývá tvrdá slupka plná ostnů, uvnitř je krémová žlutá dužina. Zápach popisují lidé různě – někdo ho přirovnává ke shnilé cibuli, jiný k plesnivým ponožkám.",
+  "more_fact": "V mnoha asijských hotelech, letadlech a metru visí cedule s přeškrtnutým durianem, stejně jako se jinde zakazuje kouření. Kdo ho ale jednou zkusí přes prvotní odpor, prý si dužinu snadno zamiluje.",
+  "about": "durianu",
+  "irony_prompt": "A large spiky durian fruit fills the frame sitting cracked open on a market table, its thick yellow custardy segments spilling out. Smaller and subordinate: a market seller in a plain apron holding his nose with one hand while ringing up the sale with the other; two customers backing away with wrinkled noses and watering eyes; a fly comically fainting mid-air above the fruit. MOOD: funny, pungent, over-the-top."
+ },
+ {
+  "id": "id-k-rafflesia",
+  "cc": "id",
+  "country": "Indonésie",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje obrovská indonéská květina, která páchne jako shnilé maso a láká si tak k sobě mouchy?",
+  "answer": "Rafflesie",
+  "distractors": [
+   "Leknín",
+   "Slunečnice",
+   "Orchidej"
+  ],
+  "quip_correct": "Přesně tak – rafflesie! Největší květ světa, a vůně, po které utečeš, ne přiběhneš.",
+  "quip_wrong": "Leknín, slunečnice i orchidej voní docela příjemně. Tahle obrovská indonéská květina naopak páchne jako zdechlina, a jmenuje se rafflesie.",
+  "explanation": "Rafflesia arnoldii je největší jednotlivý květ na světě, může měřit přes metr v průměru a vážit i deset kilo. Nemá žádné listy ani stonek – žije jako parazit na kořenech liány.",
+  "more_fact": "Rafflesie kvete jen na pár dní v roce a pak celá shnije. Její puch napodobuje rozkládající se maso schválně, aby přilákal masařky, které ji opylují místo včel.",
+  "about": "rafflesii",
+  "irony_prompt": "A gigantic reddish-brown five-petaled rafflesia flower fills the frame, sprawled open flat on the dark jungle floor, its surface covered in pale warty spots. Smaller and subordinate: a fly hovering just above one petal; a few fallen leaves scattered around its base; dense green jungle vines looping in the background. MOOD: strange, wonderfully gross, funny."
  }
 ]

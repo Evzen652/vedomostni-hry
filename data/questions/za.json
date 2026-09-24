@@ -841,5 +841,27 @@
   "about": "založení Kapského Města",
   "image_prompt": "Fotorealistický snímek rekonstruovaného opevnění Castle of Good Hope v Kapském Městě, 16:9",
   "irony_prompt": "A modest stone fort fills the frame beside a busy dock, workers loading crates of fresh vegetables and fruit onto a tall ship bound for distant seas. Smaller and subordinate: a vegetable garden flourishing just behind the fort's walls; Table Mountain rising in the background; a ship's captain checking a delivery list. MOOD: practical, industrious, foundational."
+ },
+ {
+  "id": "za-k-tabulova-hora",
+  "cc": "za",
+  "country": "Jihoafrická republika",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje hora s naprosto plochým vrcholem, která se tyčí nad Kapským Městem?",
+  "answer": "Stolová hora",
+  "distractors": [
+   "Kilimandžáro",
+   "Drakensberg",
+   "Mount Kenya"
+  ],
+  "quip_correct": "Bod pro tebe! Vrchol je tak rovný, že by se na něj dal položit obří stůl — odtud má hora své jméno.",
+  "quip_wrong": "Kilimandžáro, Drakensberg i Mount Kenya jsou slavné africké hory, ale ta s naprosto plochým vrcholem nad Kapským Městem je Stolová hora.",
+  "explanation": "Stolová hora je vysoká přes tisíc metrů a její vrchol často zahaluje husté bílé mraky, kterým místní přezdívají ubrus.",
+  "about": "Stolové hoře",
+  "more_fact": "Na vrchol Stolové hory vyváží turisty lanovka s kabinou, která se během jízdy celá pomalu otáčí, aby všichni viděli výhled dokola.",
+  "irony_prompt": "A single massive flat-topped mountain fills the frame, its sheer rock face rising straight up above a coastal city sprawled below. Smaller and subordinate: a thick white cloud draped neatly across the very top of the mountain like a blanket; a small cable car dangling on a wire partway up the cliff; a lone seabird gliding past the peak. MOOD: majestic, awe-inspiring, calm."
  }
 ]

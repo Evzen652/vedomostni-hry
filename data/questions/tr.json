@@ -974,5 +974,49 @@
   "about": "Nasreddinu Hodžovi",
   "more_fact": "Jeho příběhy se vyprávějí i daleko od Turecka, od Balkánu až po střední Asii. V každé zemi má trochu jiné jméno, ale osla a odpovědi naruby má všude stejné.",
   "irony_prompt": "A round bearded man in an oversized turban fills the frame perched on a low wall in a village square, one finger raised mid-punchline, a mischievous glint in his eye. Smaller and subordinate: a ring of villagers roaring with laughter; one old man staring into the distance, only now getting it; his donkey waiting patiently. MOOD: witty, warm."
+ },
+ {
+  "id": "tr-k-istanbul-most-kontinent",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Istanbul leží na dvou různých světadílech najednou. Které dva?",
+  "answer": "Evropu a Asii",
+  "distractors": [
+   "Afriku a Asii",
+   "Evropu a Ameriku",
+   "Asii a Austrálii"
+  ],
+  "quip_correct": "Trefa! Stačí přejet most přes úžinu Bospor a jsi rovnou na jiném kontinentu, aniž bys nastoupil do letadla.",
+  "quip_wrong": "Afrika ani Amerika se tam vejít nemůžou — Istanbul si sedí přesně na hranici Evropy a Asie.",
+  "explanation": "Úžina Bospor rozděluje Istanbul na dvě poloviny — evropskou a asijskou. Přes vodu je spojují mosty i podmořský tunel metra.",
+  "more_fact": "Kdysi se Istanbul jmenoval Konstantinopol a byl hlavním městem Byzantské i Osmanské říše — jméno Istanbul se oficiálně vžilo až ve 20. století.",
+  "about": "Istanbulu",
+  "irony_prompt": "A single grand suspension bridge fills the frame, stretching across a wide strait between two very different hillsides — the left hillside lush and green with tidy rooftops, the right hillside warm and dusty gold with domes and minarets, as if the bridge itself stitches two different worlds together. Smaller and subordinate: a small ferry boat chugging underneath; a seagull gliding past a bridge tower; a cat sunbathing on the railing exactly in the middle of the bridge. MOOD: cheerful, playful, wondrous."
+ },
+ {
+  "id": "tr-k-lokum",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje tradiční turecká sladkost — měkké kostičky posypané cukrem, které se vyrábějí třeba s příchutí růže, citronu nebo pistácií?",
+  "answer": "Lokum (turecký med)",
+  "distractors": [
+   "Baklava",
+   "Halva",
+   "Marcipán"
+  ],
+  "quip_correct": "Bod pro tebe! Ty měkké kostičky v pudrovém cukru jsou lokum a v Evropě se mu říká turecký med, i když s medem nemá skoro nic společného.",
+  "quip_wrong": "Baklava, halva i marcipán jsou taky sladké, ale ta měkká kostička v pudrovém cukru s vůní růže se jmenuje lokum.",
+  "explanation": "Lokum se vaří z cukru, vody a škrobu, díky kterému má typickou gumovitě měkkou texturu. Kostičky se často plní ořechy a válí v moučkovém cukru.",
+  "more_fact": "Lokum se v Evropě rozšířil přes Anglii — první dovozci mu tam začali říkat turkish delight, tedy turecké potěšení, a to jméno mu zůstalo dodnes.",
+  "about": "lokumu",
+  "irony_prompt": "A generous heap of soft powdery-white cubes fills the frame, piled high on an ornate brass tray, each cube dusted so thickly with icing sugar it looks like fresh snow. Smaller and subordinate: a single cube with a bite taken out, revealing a blush-pink interior; a sprig of dried rose petals resting on the pile; a small pair of ornate tongs leaning against the tray. MOOD: cozy, sweet, inviting."
  }
 ]

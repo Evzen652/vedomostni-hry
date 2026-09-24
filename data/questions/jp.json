@@ -814,5 +814,93 @@
   "about": "japonských mrakodrapech",
   "more_fact": "Japonské děti nacvičují chování při zemětřesení stejně pravidelně jako u nás požární poplach. V lavici mají polstrovanou kapuci, kterou si při poplachu nasadí na hlavu proti padajícím věcem.",
   "irony_prompt": "A tall skyscraper fills the frame swaying gently and visibly at its upper floors during a tremor, thick shock-absorbing dampers glowing faintly at its base like giant springs. Smaller and subordinate: a hanging lamp inside a nearby office swinging in sync; a coffee cup balanced perfectly still despite the motion; birds scattering briefly from the rooftop. MOOD: resilient, ingenious, steady."
+ },
+ {
+  "id": "jp-k-fuji",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje nejvyšší a nejslavnější japonská hora, sopka s dokonale souměrným kuželem, jejíž vrchol pokrývá sníh skoro celý rok?",
+  "answer": "Fudži",
+  "distractors": [
+   "Kilimandžáro",
+   "Matterhorn",
+   "Etna"
+  ],
+  "quip_correct": "Hop, a je to! Fudži — ten kužel je tak dokonalý, že vypadá spíš jako namalovaný než skutečný.",
+  "quip_wrong": "Kilimandžáro je v Africe, Matterhorn ve Švýcarsku a Etna sopka na Sicílii. Tahle nejvyšší japonská hora se jmenuje Fudži.",
+  "explanation": "Fudži měří 3776 metrů a je nejvyšší horou Japonska. Naposledy vybuchla v roce 1707, dnes je oblíbeným cílem turistů i poutníků.",
+  "more_fact": "Na vrchol Fudži každé léto vystoupají statisíce lidí – oficiální sezóna na výstup trvá jen asi dva měsíce, v červenci a srpnu, kdy je hora bez sněhu a bezpečná.",
+  "about": "hoře Fudži",
+  "irony_prompt": "A perfectly symmetrical snow-capped volcanic cone fills the frame against a clear blue sky, its slopes a smooth even triangle. Smaller and subordinate: a row of small pink cherry blossom branches framing the bottom corners; a single crane flying past; a calm lake reflecting the peak at the base. MOOD: majestic, serene, postcard-perfect."
+ },
+ {
+  "id": "jp-k-onigiri",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje trojúhelníkový knedlík z lepkavé rýže, který si Japonci balí do proužku tmavé řasy a berou s sebou na svačinu?",
+  "answer": "Onigiri",
+  "distractors": [
+   "Mochi",
+   "Dango",
+   "Tempura"
+  ],
+  "quip_correct": "Přesně tak – onigiri! Rýže zabalená do řasy jako svačina, co se dá sníst jednou rukou i za chůze.",
+  "quip_wrong": "Mochi je sladká rýžová oplatka, dango kuličky na špejli a tempura smažené těstíčko. Trojúhelník z rýže v řase se jmenuje onigiri.",
+  "explanation": "Onigiri se dělá tak, že se vařená rýže vytvaruje rukama do trojúhelníku nebo kuličky, často s náplní uprostřed – třeba kouskem lososa nebo kyselou švestkou. Prodává se prakticky v každém japonském obchodě.",
+  "more_fact": "Aby zůstala řasa kolem onigiri křupavá, prodává se často zabalená zvlášť v plastu s chytrým skládáním – rozbalí se přesně ve chvíli, kdy si jídlo bereš do ruky, takže řasa navlhne až těsně před kousnutím.",
+  "about": "onigiri",
+  "irony_prompt": "A triangular rice ball wrapped in a dark strip of seaweed fills the frame, resting on a small wooden plate, its surface glossy and neatly packed. Smaller and subordinate: a pair of wooden chopsticks laid beside it; a single pink pickled plum peeking from a bite taken out of one corner; a simple bento box lid open in the background. MOOD: cozy, appetizing, simple."
+ },
+ {
+  "id": "jp-t-kabuki",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Umění",
+  "difficulty": 2,
+  "kids": false,
+  "type": "choice",
+  "question": "Co je typické pro tradiční japonské divadlo kabuki, včetně rolí, které hrají ženy?",
+  "answer": "Všechny role, i ženské, hrají muži s výraznou bílou líčidlem",
+  "distractors": [
+   "Hraje se výhradně za tmy, diváci herce jen slyší",
+   "Herci mluví jen v cizím jazyce, ne v japonštině",
+   "Na jevišti nikdy nesmí zaznít hudba"
+  ],
+  "quip_correct": "Přesně tak! Ženskou postavu na jevišti kabuki hraje muž tak přesvědčivě, že to divák rychle přestane vnímat.",
+  "quip_wrong": "Kabuki se hraje za světla, v japonštině a s hudbou – zvláštní je něco jiného: všechny role, i ty ženské, hrají muži s nápadně bílým líčením.",
+  "explanation": "Kabuki vzniklo na počátku 17. století a specializovaní herci zvaní onnagata se celý život věnují jen ztvárňování ženských postav. Líčení, kostýmy i pohyby mají přesně dané tradiční pravidlo.",
+  "more_fact": "Některé kabuki rodiny předávají role z otce na syna už přes deset generací. Jméno slavného herce tak může nosit postupně několik mužů z téže rodiny během staletí.",
+  "about": "divadle kabuki",
+  "irony_prompt": "A kabuki actor fills the frame mid-pose on stage, face painted stark white with bold red and black lines, an elaborate embroidered kimono flaring wide around him. Smaller and subordinate: a wooden clapper block held by an unseen stagehand at the very edge of the frame; a folded fan resting near his feet; a painted backdrop of a pine tree behind him. MOOD: dramatic, striking, theatrical."
+ },
+ {
+  "id": "jp-t-neko-kavarna",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": false,
+  "type": "choice",
+  "question": "Kolem čeho se v Japonsku točí oblíbené neko kavárny, kam si lidé bez vlastního mazlíčka chodí od stresu odpočinout?",
+  "answer": "Kolem koček, které se volně procházejí mezi hosty",
+  "distractors": [
+   "Kolem sov, které sedí hostům na ruce",
+   "Kolem ježků, které si hosté berou do klína",
+   "Kolem malých prasátek, co pobíhají po podlaze"
+  ],
+  "quip_correct": "Přesně tak! Neko znamená kočka a v téhle kavárně kočka rozhoduje, kdo dneska dostane pohlazení a kdo ne.",
+  "quip_wrong": "Sovy, ježci i prasátka mají v Japonsku taky svoje tematické kavárny – ale neko kavárna je jasně o kočkách, co si chodí po vlastní vůli mezi stoly.",
+  "explanation": "První neko kavárna vznikla na Tchaj-wanu, ale obrovskou popularitu si získala právě v Japonsku, kde spousta lidí bydlí v nájmech, kde zvířata nejsou povolená. Za vstup a čas s kočkami se platí zvlášť.",
+  "more_fact": "V Japonsku dnes existují i kavárny s dalšími zvířaty – od sov přes ježky až po malé kozy. Nejstarší a pořád nejoblíbenější zůstává ale právě ta kočičí.",
+  "about": "neko kavárnách",
+  "irony_prompt": "A cozy café interior fills the frame with several sleepy cats draped across cushioned window seats and low tables. Smaller and subordinate: a steaming cup of coffee left untouched on a side table; a customer's hand gently offering a treat; a shelf of cat toys in the background. MOOD: cozy, soothing, charming."
  }
 ]

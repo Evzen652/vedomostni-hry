@@ -973,5 +973,49 @@
   "about": "draku wau bulan",
   "more_fact": "Některým drakům se nad hlavu připevňuje napnutý luk se strunou. Ve větru hučí jako píšťala, takže se dřív poznalo podle zvuku, čí drak zrovna letí.",
   "irony_prompt": "A man fills the frame holding up a kite almost as tall as he is, shaped like a fat crescent moon and covered in layered cut-paper scrollwork in red, gold and green. Smaller and subordinate: a spool of line on the grass; children reaching up to touch it; another kite already high in the sky. MOOD: festive, handcrafted, proud."
+ },
+ {
+  "id": "my-k-tapir-malajsky",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak je zbarvený malajský tapír, lesní zvíře s dlouhým pohyblivým rypákem, které žije i v malajsijských deštných pralesech?",
+  "answer": "Přední půlka černá, zadní bílá",
+  "distractors": [
+   "Celý oranžový s černými pruhy",
+   "Celý zelený s hnědými skvrnami",
+   "Celý stříbrošedý"
+  ],
+  "quip_correct": "Paráda, sedí to! To dvoubarevné tělo v noci rozbíjí obrys zvířete a predátorům splývá se skvrnami měsíčního světla.",
+  "quip_wrong": "Pruhovaný, skvrnitý, stříbřitý? Malajský tapír je nápadně dvoubarevný — černý vpředu, bílý vzadu.",
+  "explanation": "Malajský tapír je největší ze čtyř druhů tapírů na světě a přes svůj vzhled je příbuzný spíš s koněm a nosorožcem než s prasetem. Krátký pohyblivý rypák mu pomáhá utrhávat listí a mladé výhonky.",
+  "about": "malajském tapírovi",
+  "more_fact": "Mládě malajského tapíra se vůbec nepodobá rodičům — rodí se hnědé s bílými pruhy a skvrnami, které mu pomáhají schovat se v podrostu, a dospělé dvoubarevné zbarvení získá až po několika měsících.",
+  "irony_prompt": "A Malayan tapir fills the frame standing calmly on a jungle path, its body dramatically two-toned: jet black at the front half, pure white across its rounded back half, with a short flexible snout reaching toward a low leaf. Smaller and subordinate: a few broad rainforest leaves framing the edges; a small striped baby tapir peeking out from behind its legs; soft dappled light filtering through the canopy. MOOD: gentle, curious, charming."
+ },
+ {
+  "id": "my-k-batu-caves-schody",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jakou barvu mají schody vedoucí ke slavným jeskyním Batu Caves poblíž Kuala Lumpuru?",
+  "answer": "Duhové, mnohobarevné",
+  "distractors": [
+   "Zlaté",
+   "Černobílé jako šachovnice",
+   "Průhledné skleněné"
+  ],
+  "quip_correct": "To bylo hned vidět! Než ty schody přebarvili, bývaly obyčejně šedé — teď je jich přes dvě stě sedmdesát a hrají všemi barvami duhy.",
+  "quip_wrong": "Zlato, šachovnice, sklo — zkus to jinak. Schody k Batu Caves přemalovali do duhových barev.",
+  "explanation": "Schodů je 272 a vedou k soustavě vápencových jeskyní s hinduistickými svatyněmi. Před vchodem stojí obří zlatá socha boha Murugana, vysoká přes 40 metrů.",
+  "about": "jeskyních Batu Caves",
+  "more_fact": "V jeskyních i kolem schodů volně pobíhají opice makak jávský — jsou zvyklé na turisty a rády jim sáhnou do tašky, pokud v ní vidí něco k snědku.",
+  "irony_prompt": "A dramatic staircase painted in bold rainbow stripes fills the frame, climbing steeply toward a dark cave mouth framed by towering limestone cliffs. Smaller and subordinate: a small mischievous monkey sitting on the handrail; a huge golden statue glinting at the base of the stairs; a few pigeons fluttering near the cave entrance. MOOD: vibrant, playful, adventurous."
  }
 ]

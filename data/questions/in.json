@@ -887,5 +887,27 @@
   "image_prompt": "Fotorealistický snímek slavnostně pomalovaného indického slona s barevnými vzory na hlavě během festivalového průvodu v Indii, 16:9",
   "about": "indických slonech",
   "irony_prompt": "A large grey elephant fills the frame painted from trunk to tail in swirling bright patterns of red, yellow and blue, walking proudly at the head of a festival procession. Smaller and subordinate: a handler perched on its neck holding a colourful parasol; musicians with drums and horns following close behind; flower petals scattered along the procession's path. MOOD: festive, vibrant, grand."
+ },
+ {
+  "id": "in-k-monzun",
+  "cc": "in",
+  "country": "Indie",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje období prudkých dešťů, na které se v Indii po měsících horka a sucha všichni těší?",
+  "answer": "Monzun",
+  "distractors": [
+   "Tajfun",
+   "Pasát",
+   "Suchý vítr"
+  ],
+  "quip_correct": "Hop, a je to! Monzun — déšť, na který se v Indii netěší jen políčka, ale celé vesnice, lidé při něm tančí v ulicích.",
+  "quip_wrong": "Tajfun je bouře, pasát stálý vítr a suchý vítr žádnou vodu nepřinese. To, co v Indii přinese vytoužený déšť, je monzun.",
+  "explanation": "Monzun přichází do Indie obvykle v červnu a přináší až 80 procent celoroční vláhy. Bez něj by nerostla rýže ani většina dalších plodin, na kterých závisí obživa milionů lidí.",
+  "more_fact": "Monzun postupuje napříč Indií jako vlna – nejdřív zasáhne jih poloostrova a teprve o pár týdnů později dorazí na sever země. Meteorologové jeho příchod sledují den po dni.",
+  "about": "monzunu",
+  "irony_prompt": "A narrow village street fills the frame, drenched in heavy grey monsoon rain, with wide puddles reflecting the sky. Smaller and subordinate: a bright yellow umbrella tilted against the wind; two children splashing barefoot through a puddle; strings of laundry swaying on a balcony above. MOOD: joyful, energetic, refreshing."
  }
 ]

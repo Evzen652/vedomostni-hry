@@ -908,5 +908,49 @@
   "about": "vietnamské kávě",
   "more_fact": "Kávovník do Vietnamu původně vůbec nepatřil. Přivezli ho tam Francouzi před víc než sto padesáti lety a dnes je z něj pro zemi jedna z nejdůležitějších plodin.",
   "irony_prompt": "A wicker basket fills the frame overflowing with round bright red coffee cherries freshly picked, glossy and plump against dark green leaves. Smaller and subordinate: a farmer's weathered hands reaching for one more cluster on the bush; a row of drying racks spread with beans in the sunny background; a small robusta coffee plant sapling in a pot nearby. MOOD: abundant, earthy, sunlit."
+ },
+ {
+  "id": "vn-k-pho",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje slavná vietnamská polévka s rýžovými nudlemi, masem a voňavým vývarem, kterou lidé jedí klidně i k snídani?",
+  "answer": "Pho",
+  "distractors": [
+   "Ramen",
+   "Pad thai",
+   "Tom yum"
+  ],
+  "quip_correct": "Bod pro tebe! Pho voní skořicí, badyánem a zázvorem — a ve Vietnamu ji snídají úplně normálně, ne jen k obědu.",
+  "quip_wrong": "Ramen je japonský, pad thai a tom yum zase thajské — ta vietnamská nudlová polévka s voňavým vývarem se jmenuje pho.",
+  "explanation": "Vývar na pho se vaří i celé hodiny z hovězích nebo kuřecích kostí spolu s kořením. Servíruje se s čerstvými bylinkami, klíčky a limetkou.",
+  "about": "pho",
+  "more_fact": "Pho vzniklo na severu Vietnamu na počátku 20. století a dnes je jedním z nejznámějších vietnamských jídel na světě.",
+  "irony_prompt": "A large bowl of steaming noodle soup fills the frame, viewed from above, thin rice noodles and pale slices of meat submerged in fragrant golden broth. Smaller and subordinate: a small plate of fresh herbs and bean sprouts beside the bowl; a wedge of lime perched on the rim; a pair of chopsticks resting across the top. MOOD: fresh, comforting, inviting."
+ },
+ {
+  "id": "vn-k-plovouci-trh",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co se odehrává na plovoucích trzích v deltě Mekongu na jihu Vietnamu?",
+  "answer": "Prodejci nabízejí ovoce a zeleninu přímo z lodiček na řece",
+  "distractors": [
+   "Lidé loví ryby jen pro zábavu",
+   "Obchoduje se výhradně s látkami",
+   "Prodejci staví stánky přímo na vodě na kůlech"
+  ],
+  "quip_correct": "Bod pro tebe! Loďka se tam mění v pojízdný krámek — nahoře na dlouhé tyči visí ukázka toho, co má prodejce na palubě.",
+  "quip_wrong": "Žádné rybaření pro zábavu ani stánky na kůlech — na plovoucím trhu prodejci nabízejí ovoce a zeleninu přímo ze svých lodí.",
+  "explanation": "Nejznámější plovoucí trhy jsou Cai Rang a Cai Be. Prodejci na dlouhou tyč zavěšují ukázku zboží, aby kupující zdálky poznali, co loďka veze.",
+  "about": "plovoucích trzích v deltě Mekongu",
+  "more_fact": "Někteří prodejci na trhu vaří a prodávají i teplá jídla přímo z malé lodní kuchyňky, takže se dá nasnídat přímo na vodě.",
+  "irony_prompt": "A cluster of small wooden boats fills the frame, each piled high with colorful mounds of fruit — bright yellow pineapples, green melons, orange papayas — floating close together on calm river water. Smaller and subordinate: a tall bamboo pole rising from one boat with a single pineapple tied near its top, held high above the fruit piles; a conical hat resting on a boat's edge; morning mist drifting just above the water. MOOD: lively, colorful, bustling."
  }
 ]

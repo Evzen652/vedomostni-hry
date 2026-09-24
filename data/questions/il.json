@@ -951,5 +951,49 @@
   "about": "šabatu",
   "more_fact": "Některé izraelské výtahy o šabatu jezdí samy a staví v každém patře. Kdo nechce mačkat tlačítko, prostě nastoupí a počká, až ho výtah doveze.",
   "irony_prompt": "A completely empty city street fills the frame at golden hour, shutters down, not a car or a bus anywhere, a ball left lying in the middle of the road. Smaller and subordinate: one lit window with a family around a table; a cat walking calmly down the centre line; a bus stop with nobody at it. MOOD: still, unusually quiet."
+ },
+ {
+  "id": "il-k-datle",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Vědci v Izraeli vypěstovali datlovník ze semínka starého skoro 2000 let, které se našlo poblíž Mrtvého moře. Jak stromu přezdívají?",
+  "answer": "Metuzalém",
+  "distractors": [
+   "Goliáš",
+   "Faraon",
+   "Methuselah junior"
+  ],
+  "quip_correct": "Hop, a je to! Metuzalém — pojmenovaný po biblickém staříkovi, co se dožil nejvyššího věku ze všech.",
+  "quip_wrong": "Goliáš, faraon ani žádný junior – semínku staré skoro dvě tisíciletí sluší jméno Metuzalém, po nejstarším muži z Bible.",
+  "explanation": "Semínko se našlo při archeologickém výzkumu pevnosti Masada a bylo staré přibližně 2000 let. Vědci ho v roce 2005 zasadili a ono vyklíčilo.",
+  "more_fact": "Metuzalém je samčí strom, takže sám datle nerodí. Později se povedlo vypěstovat i samičí stromy ze stejně starých semínek a jeden z nich s Metuzalémem dokonce opylili – takže datle staré odrůdy, co lidé jedli před dvěma tisíci lety, dnes znovu rostou.",
+  "about": "datlovníku Metuzalém",
+  "irony_prompt": "A tall young date palm fills the frame growing alone in a sandy nursery plot, its fronds bright green against the desert sky. Smaller and subordinate: a small archaeologist crouched nearby holding a tiny old seed with tweezers, comparing it to the tree in disbelief; a clay pot and a trowel beside him; distant desert cliffs in the haze. MOOD: astonishing, hopeful, quietly funny."
+ },
+ {
+  "id": "il-k-jaffa-pomerance",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Podle kterého izraelského přístavního města se pojmenovaly sladké pomeranče, které se odsud kdysi vyvážely do celého světa?",
+  "answer": "Jaffa",
+  "distractors": [
+   "Haifa",
+   "Eilat",
+   "Akko"
+  ],
+  "quip_correct": "Přesně tak – Jaffa! Pomeranč nese jméno po přístavu, ze kterého odjížděl na lodi po celé Evropě.",
+  "quip_wrong": "Haifa, Eilat i Akko jsou taky izraelská přístavní města, ale pomeranč s tlustou slupkou a sladkou dužinou nese jméno po Jaffě.",
+  "explanation": "Pomeranče Jaffa mají typicky silnou slupku, díky které vydrží dlouhou cestu lodí bez poškození. Ve 20. století patřily mezi nejznámější izraelský vývozní produkt.",
+  "more_fact": "Než se pomeranče vyvážely, balil je do papíru ručně celý zástup dělníků – jedna bedna jich mohla obsahovat i přes sto kusů. Dnes se stejná odrůda pěstuje i v jiných zemích, ale jméno Jaffa jí zůstalo.",
+  "about": "pomerančích Jaffa",
+  "irony_prompt": "A wooden crate overflowing with bright orange Jaffa oranges fills the frame, their thick dimpled peels glossy in warm sunlight. Smaller and subordinate: a few loose oranges rolled out onto a wooden dock; a coil of ship's rope; the blurred outline of a harbour and boats in the background. MOOD: sunny, fresh, cheerful."
  }
 ]

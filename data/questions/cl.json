@@ -908,5 +908,49 @@
   "about": "sochách moai",
   "more_fact": "Většina moai má i tělo. Jsou zahrabané v půdě až po ramena, takže z dálky vypadají jenom jako hlavy — pod zemí ale pokračují ruce i břicho.",
   "irony_prompt": "A row of colossal stone statues with elongated faces and deep hollow eyes fills the frame standing shoulder to shoulder on a grassy ridge, all gazing solemnly inland toward the island's centre. Smaller and subordinate: a child standing at the base of the largest one, utterly dwarfed by its size; waves breaking on the rocky coast behind the row; clouds casting slow-moving shadows across the grass. MOOD: solemn, monumental, mysterious."
+ },
+ {
+  "id": "cl-k-sopky",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Proč se v chilských horách najde tolik sopek, z nichž některé občas vychrlí obláček kouře nebo popela?",
+  "answer": "Chile leží na Ohnivém kruhu Tichomoří, kde se potkávají tektonické desky",
+  "distractors": [
+   "Chile leží přímo na rovníku",
+   "Chile je poseté starými pyramidami",
+   "Chile leží uprostřed pouštního oceánu"
+  ],
+  "quip_correct": "Sopky tam nejsou náhoda — Chile sedí přímo na švu, kde se dvě obří kamenné desky pod zemí tlačí proti sobě.",
+  "quip_wrong": "Rovník je úplně jinde a pyramidy taky — v Chile za sopky můžou desky pod nohama, ne poloha na mapě.",
+  "explanation": "Chile má přes 500 sopek, z toho desítky aktivních. Patří k takzvanému Ohnivému kruhu Tichomoří, pásu podél oceánu, kde vzniká většina sopek a zemětřesení na Zemi.",
+  "more_fact": "Jedna z nejaktivnějších chilských sopek, Villarrica, má na dně kráteru přímo jezero rozžhavené lávy. V noci je z dálky vidět, jak kráter tiše žhne.",
+  "about": "chilských sopkách",
+  "irony_prompt": "A perfectly cone-shaped volcano fills the frame puffing a small round cloud of grey smoke from its snow-dusted summit against a clear blue sky. Smaller and subordinate: a herd of tiny grazing goats on the green slope far below; a thin trickle of steam rising from a vent near the base; a lone condor circling high above the peak. MOOD: majestic, dramatic, awe-inspiring."
+ },
+ {
+  "id": "cl-k-med",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaký načervenalý kov, ze kterého se vyrábí elektrické dráty i mince, těží Chile víc než kterákoli jiná země světa?",
+  "answer": "Měď",
+  "distractors": [
+   "Zlato",
+   "Železo",
+   "Cín"
+  ],
+  "quip_correct": "Chilská měď putuje do drátů po celém světě — bez ní by nesvítila skoro žádná žárovka.",
+  "quip_wrong": "Zlato ani cín Chile takhle neproslavily — k vítězství ho dotáhla právě měď.",
+  "explanation": "Chile vytěží zhruba čtvrtinu veškeré mědi na světě, hlavně v obřím dole Chuquicamata na severu země, jednom z největších důlních jam na planetě.",
+  "more_fact": "Měď je pro chilskou ekonomiku tak důležitá, že se jí přezdívá el sueldo de Chile, tedy chilská výplata. Peníze z jejího prodeje pomáhají platit i školy a nemocnice.",
+  "about": "chilské mědi",
+  "irony_prompt": "A colossal glinting mound of raw copper ore fills the frame piled high beside an open-pit mine, its reddish-orange chunks catching the desert sun. Smaller and subordinate: a tiny mining truck parked at the base, dwarfed by the pile; a coil of bright copper wire resting on top; distant terraced mine walls stepping down into the pit. MOOD: gritty, impressive, sun-baked."
  }
 ]

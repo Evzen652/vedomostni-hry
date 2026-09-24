@@ -1017,5 +1017,70 @@
   "about": "svátku Songkran",
   "more_fact": "Suchý nezůstaneš ani v autobuse. Řidiči proto v těch dnech raději zavírají okna — kbelík vody přiletí i z projíždějícího náklaďáku.",
   "irony_prompt": "A grinning soaked child fills the frame firing an enormous water pistol straight at the viewer. Smaller and subordinate: a bucket of ice water being tipped over a laughing grandmother; a blazing sun overhead; a whole street of drenched people dancing. MOOD: riotous, joyful, scorching hot."
+ },
+ {
+  "id": "th-k-tuktuk",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje pestrobarevná tříkolová taxi s otevřenými boky, která hlučně projíždí ulicemi thajských měst a je pro turisty jedním z nejznámějších symbolů Thajska?",
+  "answer": "Tuktuk",
+  "distractors": [
+   "Rikša",
+   "Songthaew",
+   "Motokára"
+  ],
+  "quip_correct": "A je to! Jméno má podle zvuku, který vydává jeho stará dvoutaktní motorka.",
+  "quip_wrong": "Rikšu tahá člověk pěšky a songthaew je náklaďák s lavicemi — hlučné tříkolové taxi s otevřenými boky je tuktuk.",
+  "explanation": "Tuktuk vznikl úpravou motorové tříkolky a v Bangkoku funguje jako rychlé taxi, které se protáhne i tam, kam se auto nevejde.",
+  "about": "tuktuku",
+  "more_fact": "V některých thajských městech jsou tuktuky ozdobené barevnými světýlky a hudbou a v noci vypadají skoro jako malé diskotéky na kolech.",
+  "irony_prompt": "A brightly painted three-wheeled tuktuk fills the frame, open-sided with colourful fringed trim fluttering along its roof edge, its bodywork completely plain and unmarked with no sign or roof light of any kind. Smaller and subordinate: a string of small lights along the dashboard; a tiny golden good-luck charm hanging from the mirror; a busy street market blurred in the background. MOOD: lively, cheerful, buzzing with energy."
+ },
+ {
+  "id": "th-k-orchidej",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Které nápadně krásné a barevné květiny se v Thajsku pěstují ve velkém a země je jedním z největších vývozců na světě?",
+  "answer": "Orchideje",
+  "distractors": [
+   "Tulipány",
+   "Růže",
+   "Slunečnice"
+  ],
+  "quip_correct": "Bystrá hlava! V Thajsku jich roste tolik druhů, že by jimi šlo vyzdobit celé město.",
+  "quip_wrong": "Tulipány ani slunečnice v Thajsku takhle nekvetou — do světa se odtud po tunách vyváží hlavně orchideje.",
+  "explanation": "Thajské teplé a vlhké podnebí je pro pěstování orchidejí ideální a květiny se odtud letecky vyváží do desítek zemí po celém světě.",
+  "about": "thajských orchidejích",
+  "more_fact": "V thajské přírodě roste přes tisíc druhů divokých orchidejí, od drobných kvítků po veliké květy velikosti dlaně.",
+  "irony_prompt": "A cluster of vividly coloured orchid blossoms fills the frame, purple and magenta petals glistening with morning dew. Smaller and subordinate: a small butterfly landing on one petal; a bamboo greenhouse structure faint in the background; a gardener's straw hat resting nearby. MOOD: lush, delicate, vibrant."
+ },
+ {
+  "id": "th-t-loi-krathong",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Kultura & tradice",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se jmenuje thajský podzimní svátek, při kterém lidé pouštějí po řekách malé plovoucí košíčky s květinami a hořící svíčkou jako poděkování vodě?",
+  "answer": "Loi Krathong",
+  "distractors": [
+   "Songkran",
+   "Yi Peng",
+   "Vesak"
+  ],
+  "quip_correct": "Trefa do černého! Řeky tou dobou zazáří stovkami malých plovoucích světýlek najednou.",
+  "quip_wrong": "Songkran je vodní bitva a Yi Peng patří nebeským lampionům — na řeku s košíčky a svíčkami patří svátek Loi Krathong.",
+  "explanation": "Slaví se za úplňku dvanáctého měsíce thajského kalendáře, obvykle v listopadu, a lidé při něm symbolicky pouštějí po vodě smůlu uplynulého roku.",
+  "about": "svátku Loi Krathong",
+  "more_fact": "Krathong se tradičně plete z banánových listů a zdobí květinami, takže se po pár dnech ve vodě sám rozloží.",
+  "irony_prompt": "A dark river surface fills the frame, dotted with dozens of small floating banana-leaf baskets each cradling a lit candle and fresh flowers, their glow reflecting on the water. Smaller and subordinate: a pair of hands gently releasing one more basket at the water's edge; distant silhouettes of temple spires on the riverbank; a few sky lanterns glowing faintly in the night sky above. MOOD: magical, serene, glowing."
  }
 ]

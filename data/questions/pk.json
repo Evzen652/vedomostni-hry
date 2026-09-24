@@ -954,5 +954,49 @@
   "about": "míčích ze Siálkótu",
   "more_fact": "Klasický míč se skládá z dvaatřiceti kousků — dvanácti pětiúhelníků a dvaceti šestiúhelníků. Musí být sešité opravdu přesně, jinak by míč nelétal rovně.",
   "irony_prompt": "A pair of hands fills the frame stitching together the panels of a football with a curved needle and waxed thread, the ball held between the knees. Smaller and subordinate: crates of finished balls in plain black and white with no marking of any kind; a whole workshop of stitchers at low benches; a distant floodlit stadium. MOOD: skilled, patient, world-supplying."
+ },
+ {
+  "id": "pk-k-mohendzodaro",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje starověké město v Pákistánu, které bylo před tisíci lety jedním z nejvyspělejších měst na světě, s promyšlenou kanalizací a rovnými ulicemi?",
+  "answer": "Mohendžodaro",
+  "distractors": [
+   "Petra",
+   "Babylon",
+   "Théby"
+  ],
+  "quip_correct": "Paráda, sedí to! Tady lidé stavěli koupelny a odpady dávno předtím, než to uměl skoro kdokoli jiný na světě.",
+  "quip_wrong": "Ty starobylé zříceniny leží jinde — v Pákistánu se tomuhle vyspělému městu s dokonalou kanalizací říká Mohendžodaro.",
+  "explanation": "Město patřilo k civilizaci v údolí Indu a bylo objeveno archeology až ve dvacátých letech minulého století, ukryté celé pod pískem.",
+  "about": "starověkém městě Mohendžodaro",
+  "more_fact": "Obyvatelé měli ve svých domech soukromé záchody napojené na společnou kanalizaci pod ulicemi — v té době naprostou vzácnost.",
+  "irony_prompt": "The ancient ruins of an ochre-brick city fill the frame, neat rows of low brick walls and straight narrow streets stretching into the distance under a hot sun. Smaller and subordinate: a small uncovered drainage channel running along one street; a lizard sunning itself on a warm brick; distant flat desert horizon. MOOD: mysterious, ancient, quietly impressive."
+ },
+ {
+  "id": "pk-k-hokej",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Který sport hraný zahnutou holí a tvrdým míčkem je oficiálním národním sportem Pákistánu, i když dnes ho v oblibě dávno předběhl jiný míčový sport?",
+  "answer": "Pozemní hokej",
+  "distractors": [
+   "Ragby",
+   "Baseball",
+   "Lakros"
+  ],
+  "quip_correct": "A je to! Pákistánský tým s pozemním hokejem kdysi vyhrával olympiády i mistrovství světa.",
+  "quip_wrong": "Ragby ani baseball to nejsou — národním sportem Pákistánu je odjakživa pozemní hokej, i když dnes lidem učaroval jiný míčový sport.",
+  "explanation": "Pákistánský hokejový tým vyhrál čtyřikrát mistrovství světa a třikrát olympijské zlato, hlavně v šedesátých až osmdesátých letech minulého století.",
+  "about": "pozemním hokeji",
+  "more_fact": "Hraje se na menším hřišti s brankami jako fotbal, míček se pohání zahnutou holí po zemi — úplně jiná hra než ta s pálkou a wiketem, co dnes táhne davy nejvíc.",
+  "irony_prompt": "A dusty outdoor hockey field fills the frame, a curved wooden hockey stick and a small hard ball caught mid-action in the foreground. Smaller and subordinate: a goal net in the distance; a few players blurred in motion; a stack of old trophies faintly visible on the sideline. MOOD: energetic, nostalgic, proud."
  }
 ]
