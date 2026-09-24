@@ -1,9 +1,11 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-24. 9. 2026** po session, která dokončila skoro celý ilustrační dluh appky (Severní Korea,
-Egypt, Čína, Japonsko, Polsko) a přidala dvě UI vylepšení k otázce (bublina hostitele,
-vlajka na glóbu).
+25. 9. 2026** po session, která opravila drobný bug (bublina hostitele v párty), odhalila
+a uzavřela DRUHÝ ilustrační dluh (202 otázek mělo starou fotorealistickou ilustraci místo
+malované), opravila zbytečné 404 pro 6 zemí bez karet a podruhé dorovnala podlahu fondu
+na 12 otázek/pásmo (Maraton má od 15. 9. 12 kol) — 50 nových otázek napříč 25 zeměmi.
+Fond je teď **3 792 otázek, všechny s malovanou ilustrací, 0 chybí.**
 
 Tenhle soubor je **protokol**: co převzít, co ověřit, co je zakázané a co dělat
 v jakém pořadí. Popisný stav projektu je v [pokracovani.md](pokracovani.md),
@@ -22,32 +24,40 @@ Zkopíruj do prvního vzkazu:
 Nejdřív `git fetch` a posunout se na `origin/claude/pokracujeme-e79708` (fast-forward),
 teprve pak cokoli ověřovat.
 
-### Ilustrace k otázkám: HOTOVO. 3 742/3 742, 0 chybí. Celá kampaň od 22. 8. je u konce.
+### Ilustrace k otázkám: HOTOVO NADRUHÉ. 3 792/3 792, 0 chybí, VŠECHNY malované.
 
-24. 9. hráč dobil kredit a odeslána poslední dávka (7 zbývajících českých otázek). Kontrola
-očima odhalila tři nové typy vad a `cz-q-hasek-dominator-prezdivka` potřebovala **pět pokusů**
-kvůli sportovnímu vybavení a dresu (podrobný rozbor je v CLAUDE.md 2026-09-24 — nový vzorec:
-špatné pohlaví reálné osoby, číslice v podřízeném zadání se vyklubaly jako písmena, halucinovaná
-švýcarská vlajka na dresu). Mimo dávku opravena i gramatická chyba v `cz-k-linecke-cukrovi`
-(„kolečků" → „koleček") a přepsáno nečitelné `irony_prompt` u `pt-k-portugalstina-brazilie`
-(dva rovnocenné davy → jeden dominantní motiv s malou podřízenou stopou).
+24. 9. appka dosáhla „3742/3742 má obrázek" — jenže 25. 9. hráč ukázal screenshotem, že
+jedna otázka má pořád STAROU FOTOREALISTICKOU ilustraci, ne malovanou. Ukázalo se, že
+**202 otázek** (import z Hricka — Kanada 69, Česko 55, KLDR 23, Rusko 22, Polsko 15, zbytek
+roztroušeně) mělo `img/{id}.jpg` existující, ale bez `irony_prompt` — appka roky počítala
+„má soubor" za „hotovo", což byla mezera v kontrole, ne v obsahu. Přepsáno (6 paralelních
+agentů napsalo prompty, jedna velká dávka), zkontrolováno (21 vad z 202, opraveno), a hned
+za tím se dorovnala **podruhé i podlaha fondu** (12 otázek/pásmo kvůli Maratonu — 50 nových
+otázek, 25 zemí, 2 vady z 50). **Postup a všechny objevené pasti jsou v CLAUDE.md
+2026-09-25** (dvě dlouhé položky nahoře logu) — nové vzorce: špatné pohlaví reálné osoby,
+římské číslice místo arabských, halucinovaný švýcarský kříž na dresu/v davu (potvrzeno
+už 3×), slovo „taxi"/„sign" v zadání vyrobí čitelný nápis i přes výslovný zákaz.
 
-**Žádná další práce na ilustracích není naplánovaná.** Kdyby přibyla nová země nebo otázka,
-postup psaní zadání je v [predani-ilustrace.md](predani-ilustrace.md) bodu 5, nástroje
-v `scripts/ilustrace/`.
+**Žádná další práce na ilustracích ani na podlaze fondu není naplánovaná.** Kdyby přibyla
+nová země/otázka, postup psaní zadání je v [predani-ilustrace.md](predani-ilustrace.md)
+bodu 5, nástroje v `scripts/ilustrace/`. **Past, na kterou appka narazila opakovaně:**
+`npm run build-index` (přepočet `data/questions-index.json` a `data/konflikty.json`)
+**nesmí běžet souběžně ve víc agentech/procesech** — přepisují stejný soubor; spouštět
+centrálně jednou po dokončení všech paralelních zápisů.
 
-**Tahle session navíc přidala dvě UI vylepšení k otázce** (obojí hotové, commitnuté a
-pushnuté, viz CLAUDE.md 2026-09-24 pro detaily):
-- **Bublina hostitele (`say()`) je větší, hravější a na mobilu se už neschovává** — dřív
-  mizela pod `display:none`, což mazalo i verdikty a hlášky během hry, ne jen uvítání.
-- **Glóbus u otázky má místo holé tečky vlajku dané země**, která přeletí přes glóbus
-  zleva doprava a s malým dopadem (rázová vlna + trknutí glóbu) přistane přesně na místě.
+**Tahle session navíc opravila dva drobné nálezy** (obojí hotové, commitnuté a pushnuté):
+- **Bublina hostitele v párty se dotýkala praporků hráčů** (0 px mezera) — mobilní oprava
+  z 24. 9. zvedla padding jen u `.qz-top` (sólo), ne u `.qz-scoreboard` (párty verze téže
+  věci). Viz CLAUDE.md 2026-09-24 (druhý zápis od vrchu).
+- **6 zemí bez `data/cards/{cc}.json`** (Belgie, Dánsko, Finsko, Irsko, Norsko, Portugalsko)
+  appka zbytečně stahovala při každém výběru víc zemí → 404 v konzoli. `quiz.js` má nový
+  `BEZ_KARET` seznam, `validate` hlídá, ať se nerozejde s realitou na disku.
 
 **Produkce je pořád na `0dfa574` (16. 9.).** Od té doby přibylo na větvi jen obsahové
-a UI: ilustrace (KOMPLETNÍ FOND), `irony_prompt` v datech, bublina hostitele, vlajka na
-glóbu, dokumentace a skripty — **žádná migrace databáze**. Nasazení je rozhodnutí hráče;
-kdyby padlo, stačí `db:sync` + `npm run deploy` podle nasazeni.md (kód i obsah se změnily,
-takže obojí).
+a UI: ilustrace (KOMPLETNÍ FOND, teď i stylově sjednocený), `irony_prompt` v datech,
+50 nových otázek, bublina hostitele (2×), vlajka na glóbu, `BEZ_KARET`, dokumentace
+a skripty — **žádná migrace databáze**. Nasazení je rozhodnutí hráče; kdyby padlo, stačí
+`db:sync` + `npm run deploy` podle nasazeni.md (kód i obsah se změnily, takže obojí).
 
 Ilustrace do UI (dlaždice, výsledkové obrazovky) jdou i bez klíče: hráč je vygeneruje
 v chatu Gemini a uloží do `D:\weigle\plocha\Kvíz_ILUSTRACE`, session je jen zmenší
@@ -102,7 +112,7 @@ GEMINI_API_KEY=<klíč z ai.studio, celý řádek>
 `batch-irony-images.js` neudělá nic. Klíč má hráč na `ai.studio/projects`; **nový formát
 nezačíná „AIza"**, skripty berou celý řádek. Do gitu se nikdy nesmí dostat.
 
-**2) Lokální databáze:** `npm run db:init` → v `questions` má být **3 742** otázek
+**2) Lokální databáze:** `npm run db:init` → v `questions` má být **3 792** otázek
 a **18** botů. Migrace se lokálně nepouštějí, `schema.sql` je má v sobě.
 
 **3) Server:** `npm run dev` (port 8788), nebo ve worktree konfigurace `kviz-online-worktree`
@@ -171,24 +181,22 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 
 ## 4. Fronta práce
 
-**0. Ilustrace k otázkám — HOTOVO (3 742/3 742, 0 chybí). Bod odstraněn z fronty.**
-24. 9. dokončena i poslední dávka (7 českých otázek). Kdyby v budoucnu přibyla nová
-otázka nebo země, postup je popsaný v [predani-ilustrace.md](predani-ilustrace.md) a
-nástroje v `scripts/ilustrace/`.
+**0. Ilustrace k otázkám — HOTOVO NADRUHÉ (3 792/3 792, 0 chybí, VŠECHNY malované). Bod
+odstraněn z fronty.** 25. 9. dořešen druhý ilustrační dluh (202 otázek se starou fotkou
+místo malované ilustrace) i druhé dorovnání podlahy fondu (+50 otázek). Kdyby v budoucnu
+přibyla nová otázka nebo země, postup je popsaný v [predani-ilustrace.md](predani-ilustrace.md)
+a nástroje v `scripts/ilustrace/`.
 
 **Past, na kterou appka narazila opakovaně: commit po opravě zadání musí sáhnout i po
 `data/questions/xx.json`, ne jen po `img/`** — víckrát se stalo, že oprava `irony_prompt`
 zůstala jen na disku a commitly se jen nové obrázky. Než commitovat, zkontrolovat `git status`.
 
-**0a. ⚠ DODĚLAT: každá země musí mít v každém pásmu aspoň 12 otázek** (zadal hráč 15. 9.)
-Párty má od 15. 9. Maraton = **12 kol**, ale podlaha fondu je jen 10. Hráč u jedné země
-pak dostane tutéž otázku dvakrát (appka to přizná hláškou, ale je to dluh, ne řešení).
-Stav 15. 9.: **29 kombinací země × pásmo pod 12, chybí 50 otázek** — skoro vše dětské
-pásmo (po 1–2 otázkách u 26 zemí), u puberťáků Brazílie, Japonsko, Thajsko a Tchaj-wan.
-Seznam vypisuje `npm run validate` (upozornění „pod 12 otázek"). Psát ručně v session
-jako 31. 8. (každá s `about` a `more_fact`), pak `build-index`, `build-konflikty`
-(přes `npm run build-index`), `validate`, `test:offline`, a při nasazení `db:sync --remote`.
-**Hotovo je to, až validate žádné upozornění „pod 12" nehlásí.**
+**0a. Podlaha fondu (12 otázek/zemi × pásmo) — HOTOVO NADRUHÉ.** Zadal hráč 15. 9., poprvé
+dorovnáno týž den, ale appka mezitím dál rostla o nové otázky a podlaha se propadla znovu —
+25. 9. znovu **29 kombinací pod 12, chybělo přesně 50**, dorovnáno stejným postupem
+(paralelní agenti, `about` + `more_fact` + `irony_prompt` u každé nové otázky). Kdyby se
+podlaha propadla potřetí (přibude-li dost nových otázek bez rovnoměrného rozložení mezi
+pásma), postup je zdokumentovaný v CLAUDE.md 2026-09-25 a 2026-08-31.
 
 **0b. UI drobnosti, které se nabízejí** (nic z toho není rozbité):
 - Dlaždice kontinentů Severní Amerika, Jižní Amerika, Austrálie a Afrika se nedobarvovaly —
