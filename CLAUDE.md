@@ -81,6 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-24 — Bublina hostitele je větší a hravější; na mobilu se konečně neschovává.**
+  Hráč: *„ukaž mi to živě v prohlížeči"* přišlo po přání *„chci tu bublinu větší a texty
+  vtipnější a více hravé a originální"*. Zvětšeno (12,5→14,5 px, víc paddingu, šířka podle
+  textu místo pevné) a přepsáno všech 8 hlášek `say()` na hravější tón v cestovatelském
+  duchu appky (např. rozcestník „Vítejte, cestovatelé! Pasy orazítkované, glóbus
+  netrpělivý — co si dnes zahrajeme?" místo suchého „Jak si dnes zahrajeme?").
+  - **Cestou se ukázalo, že `.qz-host-bubble { display: none }` na mobilu byla mnohem
+    vážnější věc, než se zdálo.** `say()` nenese jen uvítání — je to JEDINÁ bublina pro
+    verdikty po odpovědi, hlášky při vypršení času i vyhlášení vítěze (`renderQuestion`,
+    `timeoutReveal`, `answer`, `endCeremony` do ní všechny píšou). Schovat ji na mobilu
+    tedy nemazalo kosmetiku, ale mazalo funkčnost hry na každém telefonu.
+  - **Oprava není proste „zrušit display:none"** — text je teď mnohem delší (hravé věty
+    místo jednoho slova), takže by na úzké obrazovce přetekl mimo zaoblený `.qz-picframe`
+    nebo se srazil s křížkem „Domů". Řešeno: na mobilu menší písmo (13px) a užší šířka
+    hostitele (`calc(100% - 74px)`, tj. místo vedle křížku), plus zvednuté odsazení
+    obrazovek, které měly nachystané místo jen na jednořádkovou bublinu (`.qz-modepick`
+    44→108px, `.qz-top` 58→96px, `.qz-end` 46→108px) — jinak by delší hláška zajížděla
+    do nadpisu nebo mřížky pod sebou.
+  - **`positionPickHead()` (drobečková lišta) se PODLE KOMENTÁŘE VE VLASTNÍM KÓDU dřív
+    sama ošetřovala pro schovanou bublinu** („pod 768px se bublina schovává… pak se
+    ukotví pod celého hostitele") — po zviditelnění bubliny na mobilu tahle větev
+    přestala platit a lišta se automaticky dopočítává podle SKUTEČNÉ výšky bubliny
+    (i víceřádkové), beze změny kódu.
+  - **Ověřeno frame-by-frame i vizuálně na 375/768/850/1100 px**, na všech obrazovkách,
+    co `say()` používají (rozcestník, výběr kontinentu/země/tématu, škola, sólo start,
+    párty setup, otázka, verdikt, vyhlášení) — nikde přetečení ani kolize. `test:offline`
+    874 beze změny (žádná z existujících kontrol na přesný text hlášek neváže).
+
 - **2026-09-24 — Glóbus u otázky: místo holé pulzující tečky je na místě zapíchnutá VLAJKA.**
   Hráč: *„ten glóbus se mi zdá hrozně nudnej, co kdyby jsme do toho vtipně zakomponovali
   tu vlajku?"* Řešení recykluje existující ironickou vlajku země (`assets/country-{cc}.jpg`,
