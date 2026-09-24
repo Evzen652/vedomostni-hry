@@ -27,7 +27,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Moscow",
   "source_card": "ru-mista-transsib",
   "image_prompt": "Fotorealistický snímek panoramatu Moskvy za soumraku od řeky, rozsvícená historická věžovitá silueta v dálce, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Moskvě"
+  "about": "Moskvě",
+  "irony_prompt": "A giant matryoshka doll painted like the domed towers of the Kremlin fills the frame, standing proudly in the very center of a vast empty green map of Russia, so enormous that tiny painted cities are lined up around its base like smaller nesting dolls waiting their turn. Smaller and subordinate: a tiny toy train circling its base; a compass with no markings, its needle spinning in confusion because it keeps pointing at the doll instead of any direction; a flock of pigeons perched on its painted crown. MOOD: cheerful, playful, warm."
  },
  {
   "id": "ru-q-pasma",
@@ -89,7 +90,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
   "source_card": "ru-priroda-bajkal",
   "image_prompt": "Fotorealistický snímek jezera Bajkal v zimě, průzračný modrý led s prasklinami, hory na obzoru, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Bajkalu"
+  "about": "Bajkalu",
+  "irony_prompt": "A colossal cross-section of Lake Baikal, drawn like a giant deep blue drinking glass plunging far below a row of ordinary lakes shown as small shallow saucers lined up on a shelf beside it, fills the frame. Smaller and subordinate: a diving fish wearing tiny swim goggles disappearing into the depths; a plain smooth ribbon dangling from the surface far past the other lakes' saucers, with no markings on it; a seal peeking over the rim. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-elbrus",
@@ -110,7 +112,8 @@
   "explanation": "Elbrus na Kavkaze měří 5 642 m; je nejvyšší horou Ruska a bývá počítán i za nejvyšší horu Evropy.",
   "source_url": "https://en.wikipedia.org/wiki/Mount_Elbrus",
   "image_prompt": "Fotorealistický snímek zasněženého dvouvrcholového masivu na Kavkaze za jasného rána, alpské louky v popředí, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Elbrusu"
+  "about": "Elbrusu",
+  "irony_prompt": "A twin-peaked snowy mountain wearing a golden crown balanced on each of its two summits fills the frame, towering over a cluster of noticeably shorter mountains that crane their necks upward to see the top. Smaller and subordinate: a mountain goat taking a selfie using a smooth flat rock as a mirror; a cloud resting like a scarf around one peak; a climber's bare pole planted near the crown with nothing on it. MOOD: cheerful, majestic, playful."
  },
  {
   "id": "ru-q-transsib-cil",
@@ -137,7 +140,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
   "source_card": "ru-mista-transsib",
   "image_prompt": "Fotorealistický snímek dálkového vlaku projíždějícího podzimní sibiřskou tajgou, zlaté modříny, mlha nad krajinou, přirozené světlo, bez textu, bez lidí v popředí, 16:9",
-  "about": "Transsibiřské magistrále"
+  "about": "Transsibiřské magistrále",
+  "irony_prompt": "An impossibly long passenger train fills the frame, stretching corner to corner across the scene so that its front carriage splashes into Pacific Ocean waves at one edge while its last carriage still sits in snowy Moscow at the other edge. Smaller and subordinate: a conductor walking the full length of the train looking increasingly tired; a seagull perched on the front carriage's roof; passengers' pajamas hanging out the windows to dry. MOOD: cheerful, whimsical, gently ironic."
  },
  {
   "id": "ru-q-kaliningrad",
@@ -259,7 +263,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
   "source_card": "ru-priroda-bajkal",
   "image_prompt": "Fotorealistický snímek pohledu z útesu na temně modrou hladinu obrovského jezera mizícího za obzorem, skály v popředí, přirozené světlo, bez textu, bez lidí, 16:9",
-  "about": "Bajkalu"
+  "about": "Bajkalu",
+  "irony_prompt": "A single diver on a very long plain rope descends deep into the dark blue water of Lake Baikal, which fills the frame as an enormous cross-section, while far above at the surface a fisherman in a rowboat looks impossibly tiny and distant. Smaller and subordinate: curious fish with surprised expressions swimming past the diver at different depths; a school of small fish holding a smooth plain ribbon between them, with no markings on it; bubbles trailing upward in a long spiral. MOOD: playful, mysterious, cheerful."
  },
  {
   "id": "ru-q-kreml",
@@ -281,7 +286,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Moscow_Kremlin",
   "source_card": "ru-mista-kreml",
   "image_prompt": "Fotorealistický snímek Moskevského Kremlu při západu slunce, cihlové hradby a věže, zlaté kupole katedrál v pozadí, bez lidí, 16:9",
-  "about": "Moskevském Kremlu"
+  "about": "Moskevském Kremlu",
+  "irony_prompt": "A grand red-walled fortress crowned with five golden onion domes fills the frame, its towers so packed with palaces and cathedrals that new little rooftops keep popping up like mushrooms after rain. Smaller and subordinate: a guard in a tall fur hat trying to count all the domes on his fingers and running out; a cat sunbathing on a crenellated wall; a flock of pigeons landing on every spire at once. MOOD: cheerful, grand, playful."
  },
  {
   "id": "ru-q-sachalin",
@@ -303,7 +309,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sakhalin",
   "source_card": "ru-mista-sachalin",
   "image_prompt": "Fotorealistický širokoúhlý snímek skalnatého pobřeží ostrova Sachalin, husté jehličnaté lesy, moře, zamračená obloha, bez lidí, 16:9",
-  "about": "Sachalinu"
+  "about": "Sachalinu",
+  "irony_prompt": "A long narrow island shaped like Sakhalin fills the frame, stretching out one rocky tip on tiptoe across a thin strip of sea toward a much larger neighbouring island in the distance, almost close enough to shake hands. Smaller and subordinate: a fisherman's boat crossing the narrow gap in just a few paddle strokes; a bear on the Sakhalin shore waving at a distant deer on the other shore; seagulls making the short hop between the two islands. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-ural",
@@ -325,7 +332,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Ural_Mountains",
   "source_card": "ru-mista-ural",
   "image_prompt": "Fotorealistický širokoúhlý snímek zvlněných zalesněných hřebenů pohoří Ural, podzimní barvy, ranní mlha v údolích, bez lidí, 16:9",
-  "about": "pohoří Ural"
+  "about": "pohoří Ural",
+  "irony_prompt": "A single jagged mountain ridge fills the frame as one continuous scene, dividing it so that one gentle green slope has a cozy cottage with a small garden and the other rugged slope has a yurt and open steppe, the peaks acting like a fence between two entirely different worlds. Smaller and subordinate: a mountain goat standing with one front hoof on each slope, looking confused about which breakfast to have; a bird flying freely from one side to the other without stopping; a wooden trail marker post with a plain arrow pointing both ways. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-ojmjakon",
@@ -347,7 +355,8 @@
   "source_url": "https://www.guinnessworldrecords.com/world-records/lowest-temperature-inhabited",
   "source_card": "ru-klima-ojmjakon",
   "image_prompt": "Fotorealistický snímek malé sibiřské vesnice v hlubokém mrazu za soumraku, dřevěné domy, kouř z komínů stoupá rovně vzhůru, ojíněné stromy, bez lidí v popředí, 16:9",
-  "about": "Ojmjakonu"
+  "about": "Ojmjakonu",
+  "irony_prompt": "A tiny wooden village fills the frame, its every rooftop iced thick with frost and chimney smoke frozen mid-air into solid grey curls, while a giant outdoor thermometer nearby has its mercury frozen so far down that it has burst clean through the bottom of the glass tube. Smaller and subordinate: a villager casually walking by in a light scarf, completely unbothered; a dog with icicles hanging from its whiskers, wagging its tail anyway; a steaming cup of tea turning solid the moment it's poured. MOOD: cheerful, playful, gently absurd."
  },
  {
   "id": "ru-q-tajga",
@@ -369,7 +378,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Taiga",
   "source_card": "ru-priroda-tajga",
   "image_prompt": "Fotorealistický letecký záběr nekonečné sibiřské tajgy, jehličnaté lesy táhnoucí se k horizontu, ranní mlha, bez lidí a budov, 16:9",
-  "about": "tajze"
+  "about": "tajze",
+  "irony_prompt": "An endless sea of dark green pine trees fills the frame from edge to edge, stretching so far into the horizon that it visibly swallows up a noticeably smaller patch of jungle trees sitting timidly at its border like a shy neighbor. Smaller and subordinate: a single squirrel triumphantly standing atop an enormous pile of pinecones; a plain compass with no markings, its needle spinning helplessly because every direction just shows more forest; a lone deer peeking out from an impossibly vast tree line. MOOD: cheerful, majestic, gently playful."
  },
  {
   "id": "ru-q-tygr",
@@ -391,7 +401,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Siberian_tiger",
   "source_card": "ru-priroda-tygr",
   "image_prompt": "Fotorealistický snímek sibiřského tygra kráčejícího zasněženým lesem, hustá zimní srst, přirozené světlo, bez lidí, 16:9",
-  "about": "sibiřském tygrovi"
+  "about": "sibiřském tygrovi",
+  "irony_prompt": "An enormous striped Siberian tiger fills the frame, curling through a snowy forest clearing so massively that its tail alone wraps twice around a full-grown pine tree, the only big cat for miles around. Smaller and subordinate: a flock of small birds using its back as a snowy perch, unbothered; a rabbit cautiously peeking from behind a stump, more curious than scared; falling snowflakes catching in its whiskers. MOOD: majestic, warm, gently playful."
  },
  {
   "id": "ru-q-borsc",
@@ -919,7 +930,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Sochi",
   "source_card": "ru-mista-sochi",
   "image_prompt": "Fotorealistický snímek pobřeží Sochi u Černého moře, subtropická vegetace, hory Kavkazu v pozadí, slunečný den, bez lidí v popředí, 16:9",
-  "about": "Sočí"
+  "about": "Sočí",
+  "irony_prompt": "A towering snow-capped mountain fills the frame, standing like a giant windbreak right behind a sunny palm-lined beach, holding back a swirl of icy winter clouds with one raised peak while the shore below basks in sunshine. Smaller and subordinate: a sunbather in beach shorts waving up at a skier zooming down the very same mountain slope; a palm tree and a pine tree growing side by side, seemingly arguing about the weather; a seagull wearing tiny sunglasses. MOOD: cheerful, sunny, playful."
  },
  {
   "id": "ru-q-kazan",
@@ -941,7 +953,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Kazan",
   "source_card": "ru-mista-kazan",
   "image_prompt": "Fotorealistický snímek Kazaňského Kremlu, bíle-modrá mešita Kul Šarif a pravoslavná katedrála vedle sebe, jasná obloha, bez lidí, 16:9",
-  "about": "Kazani"
+  "about": "Kazani",
+  "irony_prompt": "A fortress courtyard fills the frame, a white Orthodox cathedral topped with golden onion domes standing right beside a turquoise mosque with tall slender minarets, the two buildings leaning together like old friends sharing the same passing cloud. Smaller and subordinate: a cat napping on the cathedral steps while another cat naps on the mosque steps, both equally unbothered; two flocks of pigeons circling each dome in one shared loop; a tea vendor's cart parked exactly halfway between the two. MOOD: warm, cheerful, peaceful."
  },
  {
   "id": "ru-q-permafrost",
@@ -986,7 +999,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Valley_of_Geysers",
   "source_card": "ru-priroda-gejzir",
   "image_prompt": "Fotorealistický snímek Údolí gejzírů na Kamčatce, pára stoupající z gejzírů, hornatá sopečná krajina, ranní světlo, bez lidí, 16:9",
-  "about": "Údolí gejzírů"
+  "about": "Údolí gejzírů",
+  "irony_prompt": "A steep volcanic valley fills the frame, its slopes dotted with dozens of small geysers all puffing up little plumes of steam at once like a natural spa having a party, mist drifting everywhere. Smaller and subordinate: a mountain goat startled mid-leap by a sudden puff of steam right under its hooves; a researcher in a raincoat holding a small blank notebook, staring in amazement; a faint rainbow forming in the drifting mist. MOOD: cheerful, lively, playful."
  },
  {
   "id": "ru-q-tundra",
@@ -1514,7 +1528,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vladivostok",
   "source_card": "ru-mista-vladivostok",
   "image_prompt": "Fotorealistický snímek přístavu Vladivostok s mostem přes Zlatý roh, lodě v zálivu, večerní světlo, bez textu, 16:9",
-  "about": "Vladivostoku"
+  "about": "Vladivostoku",
+  "irony_prompt": "A single giant round clock face fills the frame, completely blank except for two plain hands, its rim split into a warm sunrise-orange half glowing over a sleepy Moscow skyline on one side and a deep starry-night half over the Vladivostok harbor skyline on the other, both cities sharing this one continuous clock. Smaller and subordinate: a rooster crowing on the Moscow side while an owl hoots on the Vladivostok side; a fisherman heading out to sea under the stars while a commuter yawns over coffee in daylight; the clock's hands spinning dizzily between the two halves. MOOD: cheerful, whimsical, gently ironic."
  },
  {
   "id": "ru-q-murmansk",
@@ -1536,7 +1551,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Murmansk",
   "source_card": "ru-mista-murmansk",
   "image_prompt": "Fotorealistický snímek přístavu Murmansk v zimě, ledoborec u mola, sníh, nízké slunce nad obzorem, bez textu, 16:9",
-  "about": "Murmansku"
+  "about": "Murmansku",
+  "irony_prompt": "A busy port fills the frame, ships floating easily in dark open water that curls through the middle of an otherwise frozen white harbor like a warm orange ribbon of current cutting straight through solid ice. Smaller and subordinate: a polar bear standing puzzled on a nearby ice floe, unable to reach the ships; a sailor in a heavy coat sunbathing on deck with sunglasses despite the snow all around; steam rising gently from the warm water. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-norilsk",
@@ -1558,7 +1574,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Norilsk",
   "source_card": "ru-mista-norilsk",
   "image_prompt": "Fotorealistický snímek panelových domů v Norilsku v zimě, sníh, průmyslové komíny v dálce, ponuré světlo, bez lidí, 16:9",
-  "about": "Norilsku"
+  "about": "Norilsku",
+  "irony_prompt": "A row of apartment buildings fills the frame, each one standing up on tall concrete stilt legs like a building on tiptoes, carefully keeping its warm feet just barely off the icy frozen ground below. Smaller and subordinate: a construction worker in a fur hat measuring the gap underneath with a plain wooden ruler; a reindeer casually walking through the open space beneath a building; icicles hanging from the stilts like frozen shoelaces. MOOD: cheerful, playful, gently whimsical."
  },
  {
   "id": "ru-q-volha-matuska",
@@ -1580,7 +1597,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Volga",
   "source_card": "ru-mista-volha",
   "image_prompt": "Fotorealistický širokoúhlý snímek řeky Volhy za soumraku, klidná hladina, ruské město na břehu, teplé světlo, bez textu, 16:9",
-  "about": "Volze"
+  "about": "Volze",
+  "irony_prompt": "A wide, gentle river fills the frame, drawn with a warm motherly face and wearing a flowing apron patterned like rippling water, cradling several small riverside towns snugly against her banks like children tucked into her arms. Smaller and subordinate: a paddle steamer resting peacefully on her open palm like a toy boat; a fisherman waving up at her face; a row of ducklings floating along her sleeve. MOOD: warm, cheerful, tender and playful."
  },
  {
   "id": "ru-q-novosibirsk",
@@ -1625,7 +1643,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lake_Ladoga",
   "source_card": "ru-priroda-ladoga",
   "image_prompt": "Fotorealistický širokoúhlý snímek Ladožského jezera, klidná hladina, severská krajina na břehu, chladné světlo, bez lidí, 16:9",
-  "about": "Ladožském jezeře"
+  "about": "Ladožském jezeře",
+  "irony_prompt": "A frozen lake fills the frame, its icy surface forming one narrow road stretching from a distant snowy shoreline city toward safety, with a single truck loaded with sacks of bread rolling carefully across the ice, its headlights the only light in the vast white expanse. Smaller and subordinate: a lone lantern glowing faintly on the shore; tire tracks reflecting the winter moon; a flock of birds flying low overhead in the same direction as the truck. MOOD: solemn, hopeful, quietly tender — no violence, no people in distress shown."
  },
  {
   "id": "ru-q-elbrus-evropa",
@@ -1647,7 +1666,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Mount_Elbrus",
   "source_card": "ru-priroda-elbrus",
   "image_prompt": "Fotorealistický snímek zasněženého vrcholu hory Elbrus na Kavkaze, dvě zaoblené sopečné kupole, jasná modrá obloha, bez lidí, 16:9",
-  "about": "Elbrusu"
+  "about": "Elbrusu",
+  "irony_prompt": "A twin-peaked snowy mountain fills the frame, standing on a wobbly dotted border line that zigzags right at its base while two friendly rival mapmakers on either side stretch a plain measuring ribbon toward the peak, each trying to claim it stands on their own side. Smaller and subordinate: a confused mountain goat sitting exactly on the dotted line, refusing to move; two small triangular pennants on poles, one on each side, both left completely plain and blank, fluttering in the wind; a bird flying over the peak not caring which side it's on. MOOD: cheerful, playful, gently ironic."
  },
  {
   "id": "ru-q-jenisej",
@@ -1669,7 +1689,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Yenisei_River",
   "source_card": "ru-priroda-jenisej",
   "image_prompt": "Fotorealistický širokoúhlý letecký snímek řeky Jenisej vinoucí se sibiřskou krajinou, podzimní barvy, bez lidí a staveb, 16:9",
-  "about": "sibiřských řekách"
+  "about": "sibiřských řekách",
+  "irony_prompt": "A wide river fills the frame, flowing in one single-minded determined stream straight toward a distant icy Arctic horizon at the top of the scene, flowing steadily past inviting warm detours without ever turning. Smaller and subordinate: a plain compass with no markings floating on the water, its needle stubbornly fixed toward the top of the frame; a fish swimming backward against the current just to enjoy the view; small ice floes drifting ahead of the river like a welcoming committee. MOOD: cheerful, determined, playful."
  },
  {
   "id": "ru-q-medved",
@@ -1691,7 +1712,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wrangel_Island",
   "source_card": "ru-priroda-medved",
   "image_prompt": "Fotorealistický snímek ledního medvěda na tundře Wrangelova ostrova, zasněžená krajina, chladné světlo, bez lidí, 16:9",
-  "about": "Wrangelově ostrově"
+  "about": "Wrangelově ostrově",
+  "irony_prompt": "A small Arctic island fills the frame, its snowy hillsides dotted with dozens of cozy round polar bear dens dug into the snow like a fully booked bear hotel, with fluffy white ears and paws poking out of nearly every opening. Smaller and subordinate: a mother bear tucking a cub back into its den; a single fish looking nervously at the crowded island from the water; snow gently falling over the busy dens. MOOD: cheerful, cosy, playful."
  },
  {
   "id": "ru-q-cernozem",

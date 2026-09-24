@@ -81,6 +81,59 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-25 — DRUHÝ ILUSTRAČNÍ DLUH ODHALEN A UZAVŘEN: 202 otázek mělo pořád starou
+  FOTOREALISTICKOU ilustraci (import z Hricka, 2026-08), ne malovanou — appka to tvrdila
+  za hotové, ale „má obrázek" ≠ „má SPRÁVNÝ styl obrázku". Hráč to odhalil na jedné
+  otázce screenshotem („tady není ilustrace, ale fotka"), audit ukázal celkem 202.**
+  Rozložení: Kanada 69, Česko 55, Severní Korea 23, Rusko 22, Polsko 15, zbytek
+  roztroušeně (Španělsko, Rakousko, Argentina, Belgie, Německo, Egypt, Bulharsko,
+  Švýcarsko, Čína po 1–4). Šest paralelních agentů (po zemích/skupině) napsalo všech
+  202 `irony_prompt` podle zavedeného receptu a pastí z tohoto souboru — 0 chyb `lint-irony`
+  napoprvé u všech šesti dávek. Jedna dávka (~$7) odeslána najednou, po kontrole 21 vad
+  (~10 %, v souladu s historickým průměrem) opraveno jednou opravnou dávkou (~$1).
+  - **Kontrola PROBÍHALA SYSTEMATICKY PRVNÍKRÁT PŘES CELÝ OBSAHOVÝ ARCH, NE JEN ROHY** —
+    23 archů po 9 obrázcích + 9 archů rohů, každý ručně prohlédnutý. Vyplatilo se: **textová
+    vada u bonbónů (`cz-q-strc-prst-skrz-krk`) byla UPROSTŘED scény, ne v rohu** — kdyby se
+    kontrolovaly jen rohy (jak to appka dělala dřív jako druhý krok), unikla by úplně.
+  - **NOVÁ VADA: reálná osoba vyšla ŠPATNÉHO POHLAVÍ (Navrátilová jako muž)** — objevena
+    tentýž den ještě před spuštěním celé kampaně (viz zápis o ní níž) a poučení se
+    hned promítlo do briefu pro agenty; žádná z 202 nových otázek na to nenarazila.
+  - **NOVÁ VADA: `„exactly N segments"` v zadání i BEZ zmínky čísel/písmen vyrobilo ŘÍMSKÉ
+    ČÍSLICE** (housenka u nejdelšího slova) — římské číslice JSOU písmena (I, V, X…), i
+    když nesou číselný význam, takže spadají pod zákaz na rozdíl od arabských číslic.
+    Oprava: nežádat přesný počet (obecné „dozens of"), popsat plochu kladně („bare wood
+    grain") bez slova „numbers/letters" — to slovo i v záporu je past (Kanada, 2026-08-25).
+  - **NOVÁ VADA, POTVRZENÁ POTŘETÍ: hokejový dres si vyžádal ZNAK (bílý kříž jako švýcarská
+    vlajka) DVAKRÁT ZA SEBOU u TÉŽE otázky** (`cz-q-nagano-1998`) — jednou na dresu, po
+    opravě ještě jednou (medaile místo dresu, ale medaile dostala dekorativní kříž — ten
+    už jako vlajka nečte a ponechán). **Potvrzuje frekvenci: sportovní dres/vybavení si
+    o cizí odznak řekne samo, i v jinak čisté scéně bez jediné zmínky vlajky v zadání**
+    (`ca-q-kovbojove` — dav na tribuně dostal švýcarskou vlaječku, ačkoli zadání žádnou
+    vlajku vůbec nezmiňovalo). Oprava obojího: „no flags, banners or signs of any kind" /
+    „no crest, no cross, no badge, no marking of any kind" — druhé opravě SCHVÁLNĚ chybí
+    slovo „letters" (lint by ho odmítl i v záporu), řeší to „no marking of any kind".
+  - **NOVÁ VADA: „a taxi idling at the curb" vyrobilo čitelný nápis „TAXI"** na střešním
+    světle vozu (`be-t-brusel-eu`) — stejný mechanismus jako u banky/kavárny/hotelu
+    (2026-09-12): slovo pojmenovávající TYP vozidla/podniku vyvolá jeho reálný popisek.
+    Oprava: „a plain yellow car with no markings" místo „a taxi".
+  - **NOVÁ VADA: kamenný oblouk národního parku (`ca-q-narodni-parky`) a stěna
+    obchodní stanice (`ca-q-obchod-kozesinami`) dostaly nápis/cedulku i BEZ zmínky v
+    zadání** — čtvrtý a pátý doklad, že architektura s plochou (nadpraží, průčelí) si
+    text řekne sama. Oprava: „its wide stone lintel smooth and completely bare" /
+    „its plank walls completely bare with no sign, plaque or notice of any kind".
+  - **8 z 21 vad byly čisté náhodné podpisy/vodoznaky** (Quebec, Bay of Fundy, Mucha,
+    Háček, Trdelník, Šumava, Chalupa, Kutná Hora, Pektu, Kimchi kultura, Gymnastika,
+    Ladoga, Hranolky, Nil, Čínská zeď — 15 celkem) — spraveno prostým přeposláním
+    stejného zadání, beze změny textu.
+  - **Fond 3 742 otázek: teď VŠECH 3 742 má malovanou ilustraci se stylem appky, 0 fotek.**
+    `validate` 0 chyb, `test:offline` 874 beze změny, `lint-irony` 0 chyb.
+  - **Poučení pro příště: „bez ilustrace zbývá 0" a „všechny mají SPRÁVNÝ styl ilustrace"
+    jsou DVĚ RŮZNÉ otázky.** Import z Hricka (Polsko/Slovensko/Kanada/Rusko/KLDR/Česko)
+    přinesl fotky, které appka roky počítala jako „hotové", protože `img/{id}.jpg`
+    existoval — `validate` i dřívější kontroly testovaly jen PŘÍTOMNOST souboru, ne jeho
+    STYL. Když se příště dělá bilance ilustračního dluhu, kontroluj i pole `irony_prompt`
+    (jeho nepřítomnost u existujícího obrázku = starý fotorealistický styl).
+
 - **2026-09-24 — Párty souboj: bublina hostitele se dotýkala praporků hráčů (0 px mezera).
   `.qz-scoreboard` bylo přehlédnuté dvakrát v jedné session.**
   Hráč nahlásil přes screenshot: „tady to není ok. překrývá se to" — vlevo nahoře bublina

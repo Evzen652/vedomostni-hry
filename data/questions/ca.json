@@ -19,7 +19,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Niagara_Falls",
   "source_card": "ca-mista-niagarsk-vody",
   "image_prompt": "Fotorealistický snímek Horseshoe Falls z kanadské strany, mlha a duha, bez lidí, 16:9",
-  "about": "Niagarských vodopádech"
+  "about": "Niagarských vodopádech",
+  "irony_prompt": "A colossal horseshoe-shaped waterfall fills the frame, water thundering over the curved rim like a giant lucky horseshoe nailed into the earth, a full rainbow arching through the rising mist above it like the horseshoe's own lucky glow. Smaller and subordinate: a small tour boat bobbing bravely at the base with tiny rain-ponchoed tourists staring up; a plainer straight-edged waterfall visible far across the river, looking flat and unlucky by comparison. MOOD: playful, majestic, charmed."
  },
  {
   "id": "ca-q-cntower",
@@ -41,7 +42,8 @@
   "source_url": "https://en.wikipedia.org/wiki/CN_Tower",
   "source_card": "ca-mista-cn-tower",
   "image_prompt": "Fotorealistický snímek CN Tower nad panoramatem Toronta při západu slunce, bez lidí, 16:9",
-  "about": "CN Tower"
+  "about": "CN Tower",
+  "irony_prompt": "The CN Tower fills the frame, impossibly tall and slender, its saucer-shaped observation deck perched near the top like a proud chin held high, gazing down over the entire city skyline stretched miniature below it. Smaller and subordinate: a few small office towers huddled together like nervous onlookers; a tiny airplane passing respectfully below its waistline; a single cloud caught on its antenna like a scarf. MOOD: proud, towering, cheerful."
  },
  {
   "id": "ca-q-parliament-hill",
@@ -63,7 +65,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Parliament_Hill",
   "source_card": "ca-mista-parliament-hill",
   "image_prompt": "Fotorealistický snímek Parliament Hill v Ottawě s Peace Tower a Centre Block, denní světlo, bez lidí, 16:9",
-  "about": "Parliament Hill"
+  "about": "Parliament Hill",
+  "irony_prompt": "Parliament Hill's Gothic clock tower fills the frame, standing with one foot planted firmly on each side of a wide river border, arms out for balance like a tightrope walker keeping two very different neighbourhoods happy at once. Smaller and subordinate: on one side, small rooftops in a tidy plain style; on the other, rooftops with steep chateau-style roofs; a peacekeeping dove perched calmly on the tower's peak. MOOD: balanced, whimsical, dignified."
  },
  {
   "id": "ca-q-quebec",
@@ -85,7 +88,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Old_Quebec",
   "source_card": "ca-mista-quebec",
   "image_prompt": "Fotorealistický snímek hradeb Starého Quebecu a Château Frontenac, podzimní barvy, bez lidí, 16:9",
-  "about": "Starém Quebecu"
+  "about": "Starém Quebecu",
+  "irony_prompt": "The turreted copper-roofed Château Frontenac fills the frame, perched like a fairy-tale castle king on its clifftop throne high above the river, its many pointed towers standing at attention like a crown. Smaller and subordinate: the cobblestone rooftops of the old walled town clustering obediently below the cliff; a small ferry crossing the river far beneath; seagulls circling the tallest turret like courtiers. MOOD: regal, storybook, proud."
  },
  {
   "id": "ca-q-banff",
@@ -107,7 +111,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Banff_National_Park",
   "source_card": "ca-mista-banff",
   "image_prompt": "Fotorealistický snímek Banffského národního parku s tyrkysovým jezerem a Skalistými horami, bez lidí, 16:9",
-  "about": "národním parku Banff"
+  "about": "národním parku Banff",
+  "irony_prompt": "A steaming turquoise hot spring pool fills the frame, bursting straight up through a cracked railway track where startled workers' picks and shovels lie abandoned at the edge, steam already curling invitingly upward. Smaller and subordinate: a bighorn sheep and a bear cub both dipping a toe in from opposite sides like spa guests; a small steam locomotive frozen mid-chug in the background, its crew peering back in surprise. MOOD: whimsical, warm, delighted."
  },
  {
   "id": "ca-q-vancouver",
@@ -129,7 +134,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Vancouver",
   "source_card": "ca-mista-vancouver",
   "image_prompt": "Fotorealistický snímek panoramatu Vancouveru s horami a přístavem, jasný den, bez lidí, 16:9",
-  "about": "Vancouveru"
+  "about": "Vancouveru",
+  "irony_prompt": "A single rainforest-covered mountain fills the frame, dense mossy evergreens sprouting glass skyscrapers halfway up its slope like mushrooms after rain, its snowy peak still wild above the treeline. Smaller and subordinate: a cruise ship gliding across harbour water lapping at the mountain's base; a small seaplane taking off nearby; a lone hiker on a rooftop garden looking genuinely puzzled whether they're in a city or a forest. MOOD: lush, surprising, cheerful."
  },
  {
   "id": "ca-q-halifax",
@@ -151,7 +157,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Halifax,_Nova_Scotia",
   "source_card": "ca-mista-halifax",
   "image_prompt": "Fotorealistický snímek nábřeží Halifaxu a přístavu s citadelou na kopci, denní světlo, 16:9",
-  "about": "Halifaxu"
+  "about": "Halifaxu",
+  "irony_prompt": "The star-shaped Halifax Citadel fills the frame on its grassy hilltop, its old cannons all pointing out over the harbour like a pack of loyal watchdogs sniffing the sea air for trouble. Smaller and subordinate: a kilted bagpiper marching along the ramparts; small sailboats bobbing in the harbour far below; a single seagull perched cheekily on a cannon's mouth. MOOD: watchful, proud, gently comic."
  },
  {
   "id": "ca-q-montreal",
@@ -173,7 +180,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Montreal",
   "source_card": "ca-mista-montreal",
   "image_prompt": "Fotorealistický snímek panoramatu Montrealu s řekou Svatého Vavřince a Mount Royal, 16:9",
-  "about": "Montrealu"
+  "about": "Montrealu",
+  "irony_prompt": "The island of Montreal fills the frame like a great green ship afloat on a wide river, a rounded hill rising from its centre like a captain's lookout, city towers clustered along its edges like rigging. Smaller and subordinate: small ferries crossing the surrounding water like a moat; a glowing cross-shaped beacon atop the hill; church spires poking up along the shoreline. MOOD: grand, floating, cheerful."
  },
  {
   "id": "ca-q-yukon",
@@ -194,7 +202,8 @@
   "explanation": "Ve vesnici Snag na Yukonu naměřili 3. února 1947 teplotu −63 °C — dodnes nejnižší zaznamenanou teplotu v celé Severní Americe.",
   "source_url": "https://en.wikipedia.org/wiki/Snag,_Yukon",
   "image_prompt": "Fotorealistický snímek mrazivé yukonské krajiny v zimě, ledová mlha nad zamrzlou řekou, jasná obloha, bez lidí, 16:9",
-  "about": "yukonské vesnici Snag a rekordním mrazu"
+  "about": "yukonské vesnici Snag a rekordním mrazu",
+  "irony_prompt": "A tiny frost-caked northern village fills the frame, buried in impossibly thick snowdrifts, a giant outdoor thermometer standing at its centre with its red mercury plunged so far down it has frozen solid at the very bottom of the tube. Smaller and subordinate: a husky mid-howl with its frozen breath hanging in the air like a solid cloud; a mug of coffee frozen mid-pour into a cup; icicles bigger than the cabins themselves. MOOD: comically extreme, cozy, cheerful."
  },
  {
   "id": "ca-q-skaliste-hory",
@@ -216,7 +225,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
   "source_card": "ca-priroda-skaliste-hory",
   "image_prompt": "Fotorealistický snímek vrcholů kanadských Skalistých hor s ledovci a zalesněnými údolími, 16:9",
-  "about": "kanadských Skalistých horách"
+  "about": "kanadských Skalistých horách",
+  "irony_prompt": "A jagged mountain peak fills the frame, its glacier capping the summit like a giant scoop of vanilla ice cream slowly dripping down into a perfectly turquoise lake mirror at its base. Smaller and subordinate: a tiny row of hikers on a switchback trail looking awestruck; a moose wading at the lake's edge; a small park ranger cabin dwarfed at the shoreline. MOOD: majestic, sparkling, awe-filled."
  },
  {
   "id": "ca-q-velka-jezera",
@@ -238,7 +248,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Great_Lakes",
   "source_card": "ca-priroda-velka-jezera",
   "image_prompt": "Fotorealistický snímek pobřeží Velkých jezer s čistou vodou a vzdáleným horizontem, Kanada, 16:9",
-  "about": "Velkých jezerech"
+  "about": "Velkých jezerech",
+  "irony_prompt": "A chain of enormous sparkling lakes fills the frame from a bird's-eye view, shaped like a row of giant puddles left by some cosmic footprint, two giant friendly hands — one reaching down from the north, one up from the south — each dipping a fingertip into the same water to share it. Smaller and subordinate: tiny cargo ships crossing between the lakes; a wavy border line drawn playfully across the water; gulls circling overhead. MOOD: cheerful, cooperative, grand-scale."
  },
  {
   "id": "ca-q-borealni-les",
@@ -260,7 +271,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Boreal_forest_of_Canada",
   "source_card": "ca-priroda-boreální-les",
   "image_prompt": "Fotorealistický letecký snímek kanadského boreálního lesa se smrky a jezery, 16:9",
-  "about": "boreálním lese Kanady"
+  "about": "boreálním lese Kanady",
+  "irony_prompt": "An immense unbroken ribbon of dark evergreen forest fills the frame, stretching from one horizon to the other like a long green scarf tossed across the entire continent, its far ends dipping into ocean waves on either side. Smaller and subordinate: a lone moose standing knee-deep in the trees partway along; wisps of mist rising between the pines; a single winding river cutting through the green. MOOD: vast, calm, majestic."
  },
  {
   "id": "ca-q-arkticka-tundra",
@@ -282,7 +294,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_Arctic",
   "source_card": "ca-priroda-arktická-tundra",
   "image_prompt": "Fotorealistický snímek kanadské arktické tundry v létě s nízkými rostlinami a vzdáleným ledem, 16:9",
-  "about": "arktické tundře v Kanadě"
+  "about": "arktické tundře v Kanadě",
+  "irony_prompt": "An endless flat arctic tundra fills the frame under a huge pale sky, the ground a patchwork of low colourful mosses and wildflowers hugging tight to the frozen earth, one lonely stunted little shrub barely daring to lift a branch above knee height. Smaller and subordinate: a caribou grazing on the horizon; frost cracks patterning the soil into giant polygon shapes; a ptarmigan camouflaged almost invisibly in the low growth. MOOD: stark, quietly beautiful, cold."
  },
  {
   "id": "ca-q-bay-of-fundy",
@@ -304,7 +317,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Bay_of_Fundy",
   "source_card": "ca-priroda-bay-of-fundy",
   "image_prompt": "Fotorealistický snímek Bay of Fundy za odlivu s obnaženým mořským dnem a útesy, 16:9",
-  "about": "zálivu Bay of Fundy"
+  "about": "zálivu Bay of Fundy",
+  "irony_prompt": "A fishing boat fills the frame sitting stranded on the exposed muddy sea floor at low tide, its hull tilted at a comic angle, a tall wooden ladder propped against its side reaching up to the deck far above the fisherman's head. Smaller and subordinate: seaweed-draped rocks towering nearby with bare rings showing how high the water usually reaches; a gull walking on the mudflat where waves should be; distant cliffs with a dramatic waterline stain far above the current shore. MOOD: dramatic, funny, larger-than-life."
  },
  {
   "id": "ca-q-canadian-shield",
@@ -326,7 +340,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_Shield",
   "source_card": "ca-priroda-canadian-shield",
   "image_prompt": "Fotorealistický snímek krajiny Kanadského štítu s žulovými skalami, jezery a borovicemi, 16:9",
-  "about": "Kanadském štítu"
+  "about": "Kanadském štítu",
+  "irony_prompt": "A vast dome of ancient bare grey bedrock fills the frame, smooth and weathered like the shell of some enormous sleeping stone turtle, with everything else in the landscape balanced carefully on top of it. Smaller and subordinate: a lone pine tree with roots gripping a crack in the rock for dear life; a small lake filling a natural bowl worn into the stone; a canoe pulled up on the shore. MOOD: ancient, solid, quietly grand."
  },
  {
   "id": "ca-q-javorove-lesy",
@@ -348,7 +363,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maple",
   "source_card": "ca-priroda-javorove-lesy",
   "image_prompt": "Fotorealistický snímek kanadského javorového lesa v plných podzimních barvách, 16:9",
-  "about": "javorových lesích"
+  "about": "javorových lesích",
+  "irony_prompt": "A colossal maple tree fills the frame in early spring, dozens of little spouts and buckets tapped into its trunk, thick golden sap streaming down in ribbons directly into an enormous steaming cauldron at its roots that's already thickening into glossy syrup. Smaller and subordinate: a raccoon dipping a curious paw toward the cauldron; patchy snow still melting on the ground nearby; a trail of sticky golden drips leading toward a nearby cabin. MOOD: cozy, sweet, warm."
  },
  {
   "id": "ca-q-polarni-medvedi",
@@ -370,7 +386,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Churchill,_Manitoba",
   "source_card": "ca-priroda-polarni-medvedi",
   "image_prompt": "Fotorealistický snímek polárního medvěda na tundře poblíž Hudsonova zálivu na podzim, 16:9",
-  "about": "polárních medvědech u Churchillu"
+  "about": "polárních medvědech u Churchillu",
+  "irony_prompt": "A huge polar bear fills the frame standing at the edge of a wide bay, arms crossed and one paw tapping impatiently on a half-frozen puddle, staring hopefully out at the grey water as if willing it to freeze faster. Smaller and subordinate: a handful of other bears lounging nearby looking equally bored; a tundra buggy full of bundled tourists watching from a respectful distance; a thin skin of ice just beginning to form at the shoreline. MOOD: funny, patient, chilly."
  },
  {
   "id": "ca-q-prerie",
@@ -392,7 +409,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_Prairies",
   "source_card": "ca-priroda-prerie",
   "image_prompt": "Fotorealistický snímek kanadských prérijních polí pšenice pod širokým nebem, bez lidí, 16:9",
-  "about": "kanadských preriích"
+  "about": "kanadských preriích",
+  "irony_prompt": "An ocean of golden wheat fills the frame stretching flat to the horizon, growing thick and tall in defiant, glowing abundance right at the foot of distant grey mountains that are visibly hoarding all the rain clouds for themselves. Smaller and subordinate: a single combine harvester crawling through the gold like a small beetle; tall grain elevators standing on the horizon; a gopher popping up between the stalks. MOOD: abundant, golden, cheerfully stubborn."
  },
  {
   "id": "ca-q-prvni-narody",
@@ -414,7 +432,8 @@
   "source_url": "https://en.wikipedia.org/wiki/First_Nations_in_Canada",
   "source_card": "ca-lide-prvni-narody",
   "image_prompt": "Fotorealistický snímek tradičních totemových sloupů v lese severozápadního Pacifiku, Kanada, 16:9",
-  "about": "Prvních národech"
+  "about": "Prvních národech",
+  "irony_prompt": "A great circle of dozens of hand-carved canoes fills the frame, gathered together on a wide riverbank at dusk, each canoe painted with different regional patterns and crests representing many distinct nations sharing the same rising campfire smoke at the centre. Smaller and subordinate: a separate skin-covered kayak resting apart near icy northern water; a third cluster of canoes with mixed painted patterns beached a little further down the shore; wisps of campfire smoke curling upward. MOOD: respectful, warm, communal."
  },
  {
   "id": "ca-q-inuite",
@@ -436,7 +455,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Inuit",
   "source_card": "ca-lide-inuité",
   "image_prompt": "Fotorealistický snímek arktické krajiny s tradičním inuitským inuksukem, Kanada, 16:9",
-  "about": "Inuitech a inuksuku"
+  "about": "Inuitech a inuksuku",
+  "irony_prompt": "A tall inuksuk built from stacked stones fills the frame, its arm-shaped rocks stretched out wide as if enthusiastically pointing the way across the snowy tundra, standing like a patient stone guide. Smaller and subordinate: a bundled traveller following the pointed direction with a compass held sideways in confusion; a fox trotting past at its base; smaller distant inuksuit dotting the horizon like a line of siblings. MOOD: helpful, warm, whimsical."
  },
  {
   "id": "ca-q-francouzsti-kanadane",
@@ -458,7 +478,8 @@
   "source_url": "https://en.wikipedia.org/wiki/French_Canadians",
   "source_card": "ca-lide-francouzsti-kanadane",
   "image_prompt": "Fotorealistický snímek ulice v Quebec City s francouzskými nápisy a historickou architekturou, 16:9",
-  "about": "francouzských Kanaďanech"
+  "about": "francouzských Kanaďanech",
+  "irony_prompt": "An old sailing ship fills the frame, its hull half-sunk into the riverbank soil of a wide valley and clearly taken root there for centuries, its mast grown thick with ivy and its sails transformed into leafy branches. Smaller and subordinate: small farmhouses with steep silver roofs clustered along the shore nearby; a church spire rising just behind the ship; a fisherman casting a line from what used to be the ship's deck. MOOD: rooted, timeless, warm."
  },
  {
   "id": "ca-q-metisove",
@@ -480,7 +501,8 @@
   "source_url": "https://en.wikipedia.org/wiki/M%C3%A9tis",
   "source_card": "ca-lide-metisove",
   "image_prompt": "Fotorealistický snímek metisovské tkané šály a kulturních symbolů na dřevěném pozadí, 16:9",
-  "about": "Métisech"
+  "about": "Métisech",
+  "irony_prompt": "A long woven sash fills the frame close up, its bold arrow-patterned threads visibly braided together from two distinct traditions meeting and interlacing into one brand new pattern, the weave still visibly in motion where the two styles merge. Smaller and subordinate: a fiddle and bow resting nearby on a red wooden cart wheel; distant prairie grass swaying beyond; beadwork trim glinting along the sash's fringed edge. MOOD: warm, unifying, proud."
  },
  {
   "id": "ca-q-multiculturalismus",
@@ -502,7 +524,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Multiculturalism_in_Canada",
   "source_card": "ca-lide-multiculturalismus",
   "image_prompt": "Fotorealistický snímek rozmanitého pouličního trhu v Torontu nebo Vancouveru s mezinárodními jídly, 16:9",
-  "about": "kanadském multikulturalismu"
+  "about": "kanadském multikulturalismu",
+  "irony_prompt": "An enormous patchwork quilt fills the frame, spread out like a warm blanket over the whole land, each square stitched from a wildly different colourful fabric pattern yet all sewn neatly together into one cozy whole. Smaller and subordinate: a pair of hands still stitching a brand-new patch onto the edge; a steaming mug resting on one corner; a cat curled up asleep across several patches at once, unbothered by the differences. MOOD: warm, welcoming, cozy."
  },
  {
   "id": "ca-q-kovbojove",
@@ -524,7 +547,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Calgary_Stampede",
   "source_card": "ca-lide-kovbojove",
   "image_prompt": "Fotorealistický snímek rodeo arény v Albertě za denního světla, 16:9",
-  "about": "kanadských kovbojích a Calgary Stampede"
+  "about": "kanadských kovbojích a Calgary Stampede",
+  "irony_prompt": "A huge bucking rodeo bull fills the frame mid-leap under a wide prairie sky, somehow still balancing a cowboy hat perfectly on its own head despite all the bucking, dust flying from its hooves. Smaller and subordinate: a chuckwagon racing past in the background trailing pots and pans; a small crowd cheering from plain wooden bleachers with no flags, banners or signs of any kind; a lone tumbleweed rolling through the dust. MOOD: energetic, dusty, fun."
  },
  {
   "id": "ca-q-rybari",
@@ -546,7 +570,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Fishing_industry_in_Canada",
   "source_card": "ca-lide-rybari",
   "image_prompt": "Fotorealistický snímek kanadského rybářského přístavu s barevnými loděmi, atlantické nebo pacifické pobřeží, 16:9",
-  "about": "pobřežních rybářích Kanady"
+  "about": "pobřežních rybářích Kanady",
+  "irony_prompt": "A single snow-capped mountain range fills the frame acting like a giant natural fish-sorting machine, meltwater cascading down its eastern slope carrying tumbling lobsters and its western slope carrying leaping salmon, both streams parting perfectly at the peak. Smaller and subordinate: a fisherman's net dangling from each slope's base; gulls following each stream; a small red maple leaf caught in the eastern current. MOOD: playful, grand, whimsical."
  },
  {
   "id": "ca-q-horolezci",
@@ -568,7 +593,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_Rockies",
   "source_card": "ca-lide-horolezci",
   "image_prompt": "Fotorealistický snímek horské turistické stezky s alpskou chatou v kanadských Skalistých horách, 16:9",
-  "about": "horalech a průzkumnících kanadských hor"
+  "about": "horalech a průzkumnících kanadských hor",
+  "irony_prompt": "A giant beaver fills the frame clad in mountaineering gear, its huge flat tail doubling as a hammer to pound a railway spike into the rocky mountainside as it climbs, a coil of rope slung over one shoulder. Smaller and subordinate: a small pile of pelts stacked neatly at the base of the slope; a tiny steam locomotive chugging along the freshly laid track behind it; a mountain goat watching with polite bewilderment. MOOD: adventurous, industrious, cheerful."
  },
  {
   "id": "ca-q-hokej",
@@ -589,7 +615,8 @@
   "explanation": "Ontarijský Apology Act z roku 2009 stanovil, že vyslovená omluva se nesmí u soudu použít jako důkaz viny — reakce na kanadský zvyk omlouvat se i za věci, za které člověk vůbec nemůže.",
   "source_url": "https://en.wikipedia.org/wiki/Apology_Act_(Ontario)",
   "image_prompt": "Fotorealistický snímek zasněžené ulice v Ontariu, dva lidé si zdvořile ustupují u dveří, denní světlo, 16:9",
-  "about": "kanadském zákonu o omluvách (Apology Act)"
+  "about": "kanadském zákonu o omluvách (Apology Act)",
+  "irony_prompt": "A giant judge's gavel fills the frame hovering mid-air above a courtroom bench, while directly beneath it a small figure bows apologetically over and over in a blur of motion, hands clasped, completely unbothered by the gavel above since somehow none of the bowing counts against them. Smaller and subordinate: a stack of blank paper notes fluttering harmlessly off the bench like snow; a stern-looking owl perched as the judge's assistant; a maple leaf drifting past the window. MOOD: comic, gently ironic, warm."
  },
  {
   "id": "ca-q-javorovy-sirup",
@@ -611,7 +638,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
   "source_card": "ca-kultura-javorovy-sirup",
   "image_prompt": "Fotorealistický snímek lahví javorového sirupu a palačinek, kanadská chata, 16:9",
-  "about": "výrobě javorového sirupu"
+  "about": "výrobě javorového sirupu",
+  "irony_prompt": "An enormous lake of glossy amber maple syrup fills the frame, calm and mirror-still, fed by a giant maple-leaf-shaped funnel at its centre into which thousands of tiny maple trees on the distant hills are all quietly draining their sap. Smaller and subordinate: a canoe paddling slowly across the syrup leaving a thick glossy wake; a bear cub happily stuck ankle-deep at the shallow shore; steam rising gently from one warm corner where it's still being boiled. MOOD: sweet, abundant, cozy."
  },
  {
   "id": "ca-q-powwow",
@@ -633,7 +661,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Pow_wow",
   "source_card": "ca-kultura-powwow",
   "image_prompt": "Fotorealistický snímek powwow shromáždění s barevnými regáliemi a bubny, respektující kulturní scéna, 16:9",
-  "about": "powwow"
+  "about": "powwow",
+  "irony_prompt": "A great circular dance arbour fills the frame from above, a large hide drum at its very centre with drumsticks mid-beat sending visible ripples of sound outward across the whole gathering, colourful ribbon and fringe swirling in wide circles around it. Smaller and subordinate: rows of craft stalls with beadwork and blankets ringing the outer edge; a line of jingling bells catching the light; children weaving happily between the outer benches. MOOD: joyful, vibrant, communal."
  },
  {
   "id": "ca-q-canada-day",
@@ -655,7 +684,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canada_Day",
   "source_card": "ca-kultura-canada-day",
   "image_prompt": "Fotorealistický snímek kanadských vlajek na Parliament Hill o Dni Kanady, sváteční atmosféra, 16:9",
-  "about": "Dni Kanady"
+  "about": "Dni Kanady",
+  "irony_prompt": "A gigantic birthday cake fills the frame, built from several differently patterned cake layers all being gently pushed together into one tall unified cake by a pair of giant careful hands, a single candle already lit on top. Smaller and subordinate: fireworks bursting red and white in the sky above; a picnic blanket scattered with small plain pennants at the base; a dog in a paper hat barking happily at the cake. MOOD: festive, joyful, warm."
  },
  {
   "id": "ca-q-winterlude",
@@ -677,7 +707,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Winterlude",
   "source_card": "ca-kultura-winterlude",
   "image_prompt": "Fotorealistický snímek bruslení na zamrzlém kanálu Rideau v Ottawě s ledovými sochami, zima, 16:9",
-  "about": "festivalu Winterlude"
+  "about": "festivalu Winterlude",
+  "irony_prompt": "A long frozen canal fills the frame, its water frozen solid into one long silver-white ribbon winding straight through the heart of the city, fresh skate-blade marks curling playfully across its surface like giant looping ribbons. Smaller and subordinate: a small hut selling steaming pastries right at the ice's edge; a family gliding along bundled in bright scarves; snow-dusted stone buildings lining the frozen canal's banks. MOOD: festive, crisp, joyful."
  },
  {
   "id": "ca-q-thanksgiving",
@@ -699,7 +730,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)",
   "source_card": "ca-kultura-thanksgiving",
   "image_prompt": "Fotorealistický snímek kanadského stolu na díkůvzdání s podzimní výzdobou a pečení, 16:9",
-  "about": "kanadském díkůvzdání"
+  "about": "kanadském díkůvzdání",
+  "irony_prompt": "An enormous pumpkin patch fills the frame already dusted with an early frost, a full feast table set up right in the middle of the field because the harvest simply couldn't wait any longer, steam rising urgently from the dishes. Smaller and subordinate: geese flying south overhead in a hurry; a scarecrow already bundled in a scarf and mittens; fallen leaves swirling around the table legs. MOOD: cozy, hurried, warm."
  },
  {
   "id": "ca-q-bilingualismus",
@@ -720,7 +752,8 @@
   "explanation": "RCMP vznikla v roce 1873 jako Severozápadní jízdní policie a její rudá uniforma se stala jedním z nejrozšířenějších symbolů Kanady na světě; při Musical Ride dnes Mounties předvádějí přesné jízdní formace, ne skutečné zásahy.",
   "source_url": "https://en.wikipedia.org/wiki/Royal_Canadian_Mounted_Police",
   "image_prompt": "Fotorealistický snímek jezdců RCMP v rudých uniformách při formaci Musical Ride, prašná aréna, denní světlo, 16:9",
-  "about": "kanadské jízdní policii RCMP a jejím Musical Ride"
+  "about": "kanadské jízdní policii RCMP a jejím Musical Ride",
+  "irony_prompt": "A dazzling formation of red-coated riders on matching black horses fills the frame, weaving through an elaborate braided pattern so perfectly synchronized that their lances all tilt at the exact same angle like one giant fan opening and closing. Smaller and subordinate: a proud stable dog trotting along the formation's edge; a small brass band visible at the arena's rim; dust rising softly from the hooves in unison. MOOD: precise, proud, dazzling."
  },
  {
   "id": "ca-q-indigenous-art",
@@ -742,7 +775,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Indigenous_art_of_the_Americas",
   "source_card": "ca-kultura-indigenous-art",
   "image_prompt": "Fotorealistický snímek domorodých kanadských uměleckých děl včetně řezby a korálkování, muzejní styl, 16:9",
-  "about": "domorodém umění Kanady"
+  "about": "domorodém umění Kanady",
+  "irony_prompt": "A half-finished cedar carving fills the frame, wood shavings curling away under a carver's chisel as a bold animal crest slowly emerges from the grain, the warm smell of fresh-cut wood almost visible in the light. Smaller and subordinate: a beaded pouch resting on the same workbench; a small carved bone figure and polished stone tool tucked in the corner; a neat pile of curled wood shavings at the carver's feet. MOOD: focused, warm, masterful."
  },
  {
   "id": "ca-q-group-of-seven",
@@ -764,7 +798,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Group_of_Seven_(artists)",
   "source_card": "ca-umeni-group-of-seven",
   "image_prompt": "Fotorealistický snímek krajinomalby ve stylu Group of Seven, jezero Kanadského štítu a borovice, 16:9",
-  "about": "skupině Group of Seven"
+  "about": "skupině Group of Seven",
+  "irony_prompt": "A large easel fills the frame standing in the middle of a windswept lake shore, its half-finished canvas so vividly painted that the wild pines and jagged rocks depicted on it seem to spill right off the canvas edge and merge seamlessly into the real landscape behind it. Smaller and subordinate: a wooden paint box with dabs of green and grey paint open on a rock; a canoe pulled up on the shore nearby; a loon swimming past unaware it might be either painted or real. MOOD: wild, painterly, awe-inspiring."
  },
  {
   "id": "ca-q-inuitske-sochy",
@@ -786,7 +821,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Inuit_art",
   "source_card": "ca-umeni-inuitske-sochy",
   "image_prompt": "Fotorealistický snímek inuitských kamenných soch polárního medvěda a lovce, měkké muzejní světlo, 16:9",
-  "about": "inuitském sochařství"
+  "about": "inuitském sochařství",
+  "irony_prompt": "A stone carving of a bear fills the frame, still half-buried in its raw grey stone block, one paw and the snout already smoothed and polished free while the rest of the body remains rough-edged and unfinished. Smaller and subordinate: a curved tusk resting nearby, partly carved into a slender figure; small carving tools laid out in a neat row; stone dust dusting the carver's worktable. MOOD: patient, masterful, warm."
  },
  {
   "id": "ca-q-totemy",
@@ -808,7 +844,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Totem_pole",
   "source_card": "ca-umeni-totemy",
   "image_prompt": "Fotorealistický snímek vysokých totemových sloupů v pobřežním deštném lese Britské Kolumbie, 16:9",
-  "about": "totemových sloupech"
+  "about": "totemových sloupech",
+  "irony_prompt": "A towering carved pole fills the frame, its lower half still clearly a living cedar tree trunk with bark and roots, its upper half already transformed into a tall stack of bold carved crest figures gazing outward in every direction. Smaller and subordinate: fresh cedar shavings curling at its base; a raven perched respectfully on the topmost figure's head; carving tools leaning against the trunk. MOOD: proud, ancient, masterful."
  },
  {
   "id": "ca-q-hudba",
@@ -830,7 +867,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Music_of_Canada",
   "source_card": "ca-umeni-hudba",
   "image_prompt": "Fotorealistický snímek akustické kytary a kanadské krajiny za oknem, hudební atmosféra, 16:9",
-  "about": "kanadské hudbě"
+  "about": "kanadské hudbě",
+  "irony_prompt": "An enormous fiddle fills the frame lying across the whole land like a long winding road, its neck stretching from a rocky eastern coastline all the way to the shining towers of the west, waves of sound visibly rippling out differently along its length. Smaller and subordinate: a tiny kilted fiddler bowing energetically near the scroll on the east coast; a lone cowboy strumming a guitar out on the prairie section of the neck; a saxophone glinting under city lights near the bridge. MOOD: musical, sweeping, joyful."
  },
  {
   "id": "ca-q-literatura",
@@ -852,7 +890,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_literature",
   "source_card": "ca-umeni-literatura",
   "image_prompt": "Fotorealistický snímek hromádky knih s kanadskou krajinnou pohlednicí, útulná čtenářská atmosféra, 16:9",
-  "about": "kanadské literatuře"
+  "about": "kanadské literatuře",
+  "irony_prompt": "A giant open book fills the frame standing upright like a tree, its two pages branching out from a shared spine like two thick trunks, one side sprouting leaves shaped like tiny scrolls, the other sprouting leaves shaped like tiny quills, both canopies growing lush and intertwined at the top. Smaller and subordinate: a squirrel gathering fallen leaf-pages into a cozy nest; a reading bench tucked among the book's roots; a soft breeze scattering a few blank leaf-shaped pages into the air. MOOD: literary, warm, whimsical."
  },
  {
   "id": "ca-q-architektura",
@@ -874,7 +913,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Architecture_of_Canada",
   "source_card": "ca-umeni-architektura",
   "image_prompt": "Fotorealistický snímek zámeckého hotelu v kanadských Skalistých horách, 16:9",
-  "about": "kanadské architektuře"
+  "about": "kanadské architektuře",
+  "irony_prompt": "A grand copper-roofed castle hotel fills the frame, somehow mounted on giant train wheels and chugging determinedly along a railway track straight toward the mountains, steam billowing from its tallest turret like a smokestack. Smaller and subordinate: a cluster of delighted tourists waving handkerchiefs from its balconies; a conductor's flag waving from the front gate; small pinecones bouncing off the tracks as it rumbles past. MOOD: whimsical, grand, cheerful."
  },
  {
   "id": "ca-q-film",
@@ -896,7 +936,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Cinema_of_Canada",
   "source_card": "ca-umeni-film",
   "image_prompt": "Fotorealistický snímek filmové kamery na horské lokaci v Kanadě, filmová atmosféra, 16:9",
-  "about": "kanadském filmu"
+  "about": "kanadském filmu",
+  "irony_prompt": "A city skyline fills the frame caught mid-costume-change on a giant film set, stagehands hurriedly bolting a tall cardboard cutout tower and a colourful foreign-looking rooftop onto its real buildings while a film clapperboard snaps shut in the foreground. Smaller and subordinate: a director's chair perched on a nearby rooftop; a small crew adjusting studio lights aimed at the skyline; a coiled thick camera cable snaking along the street below. MOOD: playful, theatrical, busy."
  },
  {
   "id": "ca-q-tanec",
@@ -918,7 +959,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Dance_in_Canada",
   "source_card": "ca-umeni-tanec",
   "image_prompt": "Fotorealistický snímek taneční scény s kanadskou kulturní rozmanitostí, 16:9",
-  "about": "kanadském tanci"
+  "about": "kanadském tanci",
+  "irony_prompt": "A single pair of dancing feet fills the frame in a blur of motion, captured mid-leap so fast that a soft moccasin, a buckled folk shoe, and a ballet slipper all seem to flicker into view at once on the very same pair of feet. Smaller and subordinate: a fiddle bow frozen mid-stroke in the background; a wooden dance floor worn smooth in a circular pattern; a feather and a ribbon both caught fluttering in the air above. MOOD: energetic, blended, joyful."
  },
  {
   "id": "ca-q-sport-hokej",
@@ -940,7 +982,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Hockey_in_Canada",
   "source_card": "ca-sport-hokej",
   "image_prompt": "Fotorealistický snímek kluziště s kanadskou hokejovou atmosférou, prázdný led, 16:9",
-  "about": "hokeji jako kanadském sportu"
+  "about": "hokeji jako kanadském sportu",
+  "irony_prompt": "One continuous sheet of hockey ice fills the frame, starting as a small backyard pond with a wobbly snowbank goal at one end and stretching seamlessly into a roaring professional arena at the other, players of every size skating across the same unbroken ice. Smaller and subordinate: a stack of mismatched mittens and toques piled at the pond end; bright arena floodlights glowing at the far end; a stray puck rolling the entire length between them. MOOD: unifying, energetic, warm."
  },
  {
   "id": "ca-q-lacrosse",
@@ -962,7 +1005,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Lacrosse",
   "source_card": "ca-sport-lacrosse",
   "image_prompt": "Fotorealistický snímek lakrosových holí a míčku na zeleném hřišti, kanadské sportovní prostředí, 16:9",
-  "about": "lakrosu"
+  "about": "lakrosu",
+  "irony_prompt": "A single lacrosse stick fills the frame held upright, its woven leather netting glowing warmly at the top and gradually shifting shape down the handle into a sleeker modern version near the grip, one ball caught mid-bounce inside the pocket. Smaller and subordinate: a small drum resting at the stick's base; tall prairie grass bending around it; a second, smaller traditional stick leaning nearby for scale. MOOD: proud, dynamic, respectful."
  },
  {
   "id": "ca-q-curling",
@@ -984,7 +1028,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Curling",
   "source_card": "ca-sport-curling",
   "image_prompt": "Fotorealistický snímek curlingové haly s kameny a koštětem na ledě, 16:9",
-  "about": "curlingu"
+  "about": "curlingu",
+  "irony_prompt": "A giant curling stone fills the frame sitting on the ice with thick roots growing straight down from its base into the rink, as if it planted itself there generations ago, its polished granite gleaming under the arena lights. Smaller and subordinate: two sweepers hurrying beside it, brooms leaving a shower of glittering ice chips; a plaid scarf slung casually over the stone's handle; the house rings glowing on the ice like a target. MOOD: warm, rooted, cheerful."
  },
  {
   "id": "ca-q-fotbal-canadian",
@@ -1006,7 +1051,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_football",
   "source_card": "ca-sport-fotbal-canadian",
   "image_prompt": "Fotorealistický snímek hřiště kanadského fotbalu s brankovými tyčemi, prázdný stadion, 16:9",
-  "about": "kanadském fotbale"
+  "about": "kanadském fotbale",
+  "irony_prompt": "A football field fills the frame stretched comically longer than usual, the yard lines visibly pulled taut into the distance like an accordion, one determined player still sprinting toward a goal line that keeps retreating further away. Smaller and subordinate: a referee checking a tape measure with a baffled expression; extra-tall goalposts glinting far in the distance; a football spiralling mid-air far behind the runner. MOOD: comic, energetic, exaggerated."
  },
  {
   "id": "ca-q-lyzovani",
@@ -1028,7 +1074,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Skiing_in_Canada",
   "source_card": "ca-sport-lyzovani",
   "image_prompt": "Fotorealistický snímek kanadského lyžařského střediska ve Skalistých horách s čerstvým sněhem, 16:9",
-  "about": "lyžování v Kanadě"
+  "about": "lyžování v Kanadě",
+  "irony_prompt": "A steep snowy mountain slope fills the frame with a lone skier carving a bold curving trail down through fresh powder, a spray of snow arcing behind like a comet's tail. Smaller and subordinate: a cozy chalet with smoke curling from its chimney tucked at the base; a chairlift line of bundled skiers rising up the slope; a distant smaller icy hill on the horizon hinting at a very different, colder range. MOOD: exhilarating, crisp, joyful."
  },
  {
   "id": "ca-q-kanoistika",
@@ -1050,7 +1097,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canoeing",
   "source_card": "ca-sport-kanoistika",
   "image_prompt": "Fotorealistický snímek kánoe na klidném jezeře Kanadského štítu za východu slunce, 16:9",
-  "about": "kanoistice v Kanadě"
+  "about": "kanoistice v Kanadě",
+  "irony_prompt": "A birchbark canoe fills the frame piled impossibly high with bundled fur pelts, riding surprisingly light and steady on the water despite the towering load, the paddlers leaning hard into each stroke. Smaller and subordinate: a beaver watching warily from a half-submerged log; a winding river vanishing into dense forest ahead; a small trading post dock just visible far in the distance. MOOD: adventurous, industrious, warm."
  },
  {
   "id": "ca-q-baseball",
@@ -1072,7 +1120,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Baseball_in_Canada",
   "source_card": "ca-sport-baseball",
   "image_prompt": "Fotorealistický snímek baseballového hřiště v kanadském parku, letní den, 16:9",
-  "about": "baseballu v Kanadě"
+  "about": "baseballu v Kanadě",
+  "irony_prompt": "A baseball fills the frame mid-flight, streaking north across an open snowy field with a trail of stitching sparks behind it, heading straight for a huge, eagerly waiting mitt on the far side. Smaller and subordinate: a maple leaf caught in the ball's wake; a small wooden bleacher of cheering fans in toques; a hot dog stand steaming nearby. MOOD: energetic, cheerful, fast-paced."
  },
  {
   "id": "ca-q-basketball",
@@ -1094,7 +1143,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Basketball_in_Canada",
   "source_card": "ca-sport-basketball",
   "image_prompt": "Fotorealistický snímek basketbalového hřiště s košem, atmosféra tělocvičny, 16:9",
-  "about": "basketbalu a Jamesi Naismithovi"
+  "about": "basketbalu a Jamesi Naismithovi",
+  "irony_prompt": "A weathered peach basket fills the frame nailed high on an old gymnasium balcony rail, a leather ball frozen mid-arc just about to drop through it, a rickety wooden ladder propped underneath for retrieving it every single time. Smaller and subordinate: a coiled length of rope hanging nearby as an afterthought; a stack of two peach crates ready as spares; a lone figure's shadow stretching across the gym floor, seen only from behind. MOOD: inventive, historic, cheerful."
  },
  {
   "id": "ca-q-atletika-outdoor",
@@ -1116,7 +1166,8 @@
   "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
   "source_card": "ca-sport-atletika-outdoor",
   "image_prompt": "Fotorealistický snímek turistické stezky v kanadském národním parku s horami, 16:9",
-  "about": "outdoorových sportech v Kanadě"
+  "about": "outdoorových sportech v Kanadě",
+  "irony_prompt": "A hiking trail fills the frame unspooling endlessly from a giant ball of trail like yarn, winding across mountains, through forests and along a lakeshore before disappearing over the horizon still unwinding. Smaller and subordinate: a determined hiker with an overstuffed backpack trudging along one bend; a simple wooden trail post standing at the base of the giant yarn ball, its face bare and unmarked; a mountain goat watching from a nearby ridge. MOOD: adventurous, endless, cheerful."
  },
  {
   "id": "ca-q-anglictina-francouzstina",
@@ -1321,7 +1372,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Poutine",
   "source_card": "ca-jidlo-poutine",
   "image_prompt": "Fotorealistický snímek talíře poutine se sýrovými zrny a omáčkou, kanadský bister styl, 16:9",
-  "about": "poutine"
+  "about": "poutine",
+  "irony_prompt": "A towering mountain of poutine fills the frame, thick golden fries stacked into long crisscrossed sticks, scattered with dozens of small irregular white cheese curd lumps, all being smothered by a thick brown gravy pouring down over the peak like a waterfall. Smaller and subordinate: a fork planted defiantly at the summit like a flag; steam curling up from the hot gravy; a small paper takeout container overflowing at the base. MOOD: indulgent, cozy, playful."
  },
  {
   "id": "ca-q-javorovy-sirup-jidlo",
@@ -1343,7 +1395,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Maple_syrup",
   "source_card": "ca-jidlo-javorovy-sirup-jidlo",
   "image_prompt": "Fotorealistický snímek palačinek s politým javorovým sirupem, kanadská snídaně, 16:9",
-  "about": "javorovém sirupu v kanadské kuchyni"
+  "about": "javorovém sirupu v kanadské kuchyni",
+  "irony_prompt": "A long ribbon of hot golden maple syrup fills the frame, poured directly onto a fresh bank of white snow where it instantly hardens into a thick twisted taffy rope, a wooden stick rolling it up from one end. Smaller and subordinate: a mitten-clad hand reaching eagerly for the finished treat; a small pot of syrup still steaming nearby; footprints scattered across the snow from other eager visitors. MOOD: sweet, wintry, joyful."
  },
  {
   "id": "ca-q-butter-tarts",
@@ -1365,7 +1418,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Butter_tart",
   "source_card": "ca-jidlo-butter-tarts",
   "image_prompt": "Fotorealistický snímek butter tarts na dřevěném talíři, styl kanadské pekárny, 16:9",
-  "about": "butter tarts"
+  "about": "butter tarts",
+  "irony_prompt": "A row of golden butter tarts fills the frame, each one a small round flaky pastry shell brimming with glossy, gooey amber filling that's clearly still bubbling slightly from the oven. Smaller and subordinate: a light dusting of flour scattered across the wooden counter; a rolling pin resting nearby; one tart tipped on its side with a thick drip of filling caught mid-ooze. MOOD: cozy, indulgent, warm."
  },
  {
   "id": "ca-q-nanaimo",
@@ -1387,7 +1441,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Nanaimo_bar",
   "source_card": "ca-jidlo-nanaimo",
   "image_prompt": "Fotorealistický snímek naskládaných Nanaimo bars s viditelnými třemi vrstvami, 16:9",
-  "about": "dezertu Nanaimo bars"
+  "about": "dezertu Nanaimo bars",
+  "irony_prompt": "A single thick square of layered dessert fills the frame in cross-section, its three distinct layers clearly stacked — a crumbly dark base, a smooth pale custard-yellow middle, and a glossy dark chocolate top — like a tiny edible layer cake. Smaller and subordinate: a small ferry boat silhouette visible through a nearby window, hinting at the coastal town it's named after; a fork resting beside it with one bite already taken; crumbs scattered on the plate. MOOD: rich, satisfying, cozy."
  },
  {
   "id": "ca-q-tourtiere",
@@ -1409,7 +1464,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Tourti%C3%A8re",
   "source_card": "ca-jidlo-tourtiere",
   "image_prompt": "Fotorealistický snímek masového koláče tourtière na sváteční tabuli, 16:9",
-  "about": "tourtière"
+  "about": "tourtière",
+  "irony_prompt": "A golden-crusted meat pie fills the frame fresh out of the oven, its lattice top glistening and a thick curl of savoury steam rising straight up into a cold windowpane behind it, fogging the glass. Smaller and subordinate: a sprig of pine and a red ribbon resting beside it; snow piling up visibly on the windowsill outside; a well-worn oven mitt tossed on the counter. MOOD: cozy, festive, warm."
  },
  {
   "id": "ca-q-seafood",
@@ -1431,7 +1487,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_cuisine",
   "source_card": "ca-jidlo-seafood",
   "image_prompt": "Fotorealistický snímek kanadského talíře s humrem a lososem, pobřežní prostředí, 16:9",
-  "about": "kanadských mořských plodech"
+  "about": "kanadských mořských plodech",
+  "irony_prompt": "A giant lobster fills the frame fresh from cold ocean waters, claws raised triumphantly on a bed of seaweed and ice, its shell gleaming a deep proud red. Smaller and subordinate: a single glistening salmon leaping in a small inset wave motif far in the background hinting at the opposite coast; a lemon wedge and small bowl of melted butter nearby; a fishing net draped loosely at the edge. MOOD: fresh, celebratory, coastal."
  },
  {
   "id": "ca-q-beaver-tails",
@@ -1453,7 +1510,8 @@
   "source_url": "https://en.wikipedia.org/wiki/BeaverTails",
   "source_card": "ca-jidlo-beaver-tails",
   "image_prompt": "Fotorealistický snímek pečiva beaver tail se skořicí a cukrem, zimní tržní styl, 16:9",
-  "about": "pečivu beaver tails"
+  "about": "pečivu beaver tails",
+  "irony_prompt": "A giant flat oval of fried dough fills the frame, shaped unmistakably like a wide beaver's tail, sizzling gold and dusted thick with cinnamon sugar, steam rising off it straight into the cold air. Smaller and subordinate: a pair of ice skates resting nearby with blades still glinting; a frozen canal stretching pale and icy just behind the stand; a mitten reaching in for the first bite. MOOD: cozy, festive, warm."
  },
  {
   "id": "ca-q-wild-rice",
@@ -1475,7 +1533,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Wild_rice",
   "source_card": "ca-jidlo-wild-rice",
   "image_prompt": "Fotorealistický snímek zrn divoké rýže a uvařeného pokrmu, náznak kanadského jezera, 16:9",
-  "about": "divoké rýži"
+  "about": "divoké rýži",
+  "irony_prompt": "A canoe fills the frame gliding slowly through a dense stand of tall wild rice growing straight out of the lake water, a harvester leaning out to gently knock ripe grains loose with two long wooden sticks, rice raining softly into the boat's bottom. Smaller and subordinate: a heron standing statue-still nearby in the shallows; ripples spreading outward from the canoe's path; a burlap sack already half full at the canoe's centre. MOOD: peaceful, bountiful, calm."
  },
  {
   "id": "ca-q-caesar",
@@ -1497,7 +1556,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Caesar_(cocktail)",
   "source_card": "ca-jidlo-caesar",
   "image_prompt": "Fotorealistický snímek koktejlu Caesar s celerovou stonkou a kořeněným okrajem, 16:9",
-  "about": "koktejlu Caesar"
+  "about": "koktejlu Caesar",
+  "irony_prompt": "A colossal red cocktail fills the frame in a giant glass rimmed thick with coarse salt, its deep red juice sloshing gently, an oversized celery stalk standing tall inside it like a mast. Smaller and subordinate: a cowboy hat resting jauntily on the rim's edge; ice cubes clinking near the base; a small lime wedge perched on the glass rim. MOOD: bold, zesty, cheerful."
  },
  {
   "id": "ca-q-konfederace",
@@ -1519,7 +1579,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_Confederation",
   "source_card": "ca-historie-konfederace",
   "image_prompt": "Fotorealistický snímek historické architektury spojené s konfederací, Ottawa, 16:9",
-  "about": "Kanadské konfederaci"
+  "about": "Kanadské konfederaci",
+  "irony_prompt": "A giant maple-leaf-shaped patchwork quilt fills the frame, stitched together from four differently patterned fabric pieces by an oversized needle and thread caught mid-stitch, one corner still gaping open just before the final pull. Smaller and subordinate: a small beaver sitting proudly on the finished portion, watching the stitching; a spool of red thread rolling nearby; a pair of scissors resting off to the side. MOOD: cozy, homemade, quietly triumphant."
  },
  {
   "id": "ca-q-zeleznice",
@@ -1541,7 +1602,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Canadian_Pacific_Railway",
   "source_card": "ca-historie-zeleznice",
   "image_prompt": "Fotorealistický snímek historického vlaku v kanadských Skalistých horách, 16:9",
-  "about": "Kanadské pacifické železnici"
+  "about": "Kanadské pacifické železnici",
+  "irony_prompt": "A giant iron railway spike fills the frame mid-hammer-strike, driving two vast stretches of very different-looking land — golden prairie on one side, rocky forest on the other — together like two pieces of fabric being stitched into one seamless whole. Smaller and subordinate: a small steam locomotive puffing along the freshly joined track; a surveyor's tripod leaning nearby; tiny wildflowers already growing up through the new gravel bed. MOOD: triumphant, industrious, hopeful."
  },
  {
   "id": "ca-q-zlata-horeccka",
@@ -1563,7 +1625,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Klondike_Gold_Rush",
   "source_card": "ca-historie-zlata-horeccka",
   "image_prompt": "Fotorealistický snímek krajiny éry zlaté horečky na Klondiku, hory a řeka, Yukon, 16:9",
-  "about": "zlaté horečce na Klondiku"
+  "about": "zlaté horečce na Klondiku",
+  "irony_prompt": "An enormous gold pan fills the frame overflowing with glittering nuggets, being swirled so vigorously in an icy river that water splashes out in every direction, a prospector's patched boots planted firmly in the mud beside it. Smaller and subordinate: a long line of tiny bundled miners trudging up a distant snowy mountain pass like a string of ants; a hastily pitched tent camp sprawling along the riverbank; a mule loaded impossibly high with gear. MOOD: frenzied, hopeful, gritty."
  },
  {
   "id": "ca-q-nova-francie",
@@ -1585,7 +1648,8 @@
   "source_url": "https://en.wikipedia.org/wiki/New_France",
   "source_card": "ca-historie-nova-francie",
   "image_prompt": "Fotorealistický snímek historického opevnění Quebecu a řeky Svatého Vavřince, 16:9",
-  "about": "Nové Francii"
+  "about": "Nové Francii",
+  "irony_prompt": "A single old seed fills the frame, cracked open and sprouting directly into a tall, thriving tree whose trunk is shaped like a ship's hull turned upright, its branches growing into a mix of a church spire, a fiddle neck, and a bundle of wheat all at once. Smaller and subordinate: fallen leaves shaped like tiny scrolls scattered at its roots; a small stone farmhouse nestled among the roots; a river curling past the base. MOOD: rooted, flourishing, warm."
  },
  {
   "id": "ca-q-obchod-kozesinami",
@@ -1607,7 +1671,8 @@
   "source_url": "https://en.wikipedia.org/wiki/North_American_fur_trade",
   "source_card": "ca-historie-obchod-kozesinami",
   "image_prompt": "Fotorealistický snímek historické obchodní stanice s kožešinami u kanadského jezera, kánoe a les, 16:9",
-  "about": "obchodu s kožešinami v Kanadě"
+  "about": "obchodu s kožešinami v Kanadě",
+  "irony_prompt": "A weathered wooden trading post fills the frame with countless well-worn trails radiating outward from its front door in every direction like spokes of a giant wheel, each path vanishing into distant forest and mountains, its plank walls completely bare with no sign, plaque or notice of any kind anywhere on them. Smaller and subordinate: a stack of bundled beaver pelts piled by the entrance; a birchbark canoe leaning against the wall; a fur trader's snowshoes hanging by the door. MOOD: adventurous, industrious, warm."
  },
  {
   "id": "ca-q-svetove-valky",
@@ -1629,7 +1694,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Military_history_of_Canada",
   "source_card": "ca-historie-svetove-valky",
   "image_prompt": "Fotorealistický snímek kanadské válečné památeční architektury, důstojné a tiché, 16:9",
-  "about": "Kanadě ve světových válkách"
+  "about": "Kanadě ve světových válkách",
+  "irony_prompt": "A single maple tree fills the frame, standing remarkably tall and sturdy on a windswept hill, its trunk clearly thickened and its roots dug deep as two distant storm clouds finally drift away behind it toward the horizon. Smaller and subordinate: a small flock of geese flying past in a steady formation; poppies growing quietly at the tree's base; a worn wooden bench placed respectfully beneath its branches. MOOD: resilient, solemn, quietly proud."
  },
  {
   "id": "ca-q-immigration",
@@ -1651,7 +1717,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Immigration_to_Canada",
   "source_card": "ca-historie-immigration",
   "image_prompt": "Fotorealistický snímek historického kanadského přístavu nebo nádraží spojeného s přistěhovalectvím, 16:9",
-  "about": "přistěhovalectví do Kanady"
+  "about": "přistěhovalectví do Kanady",
+  "irony_prompt": "A towering tree fills the frame built entirely from a stack of old travel suitcases of every different shape, colour and style, its topmost cases already sprouting fresh green leaves as if the tree has taken root right there on the harbour dock. Smaller and subordinate: a ship's gangplank leading up to its base; gulls circling the upper branches; a stroller and a bicycle both leaning against the trunk. MOOD: hopeful, warm, flourishing."
  },
  {
   "id": "ca-q-narodni-parky",
@@ -1673,7 +1740,8 @@
   "source_url": "https://en.wikipedia.org/wiki/National_parks_of_Canada",
   "source_card": "ca-historie-narodni-parky",
   "image_prompt": "Fotorealistický snímek Banffského národního parku v historizujícím stylu s horami, 16:9",
-  "about": "vzniku kanadských národních parků"
+  "about": "vzniku kanadských národních parků",
+  "irony_prompt": "A grand stone park gate fills the frame standing proudly at the front of a long line of smaller, similarly shaped gates trailing off into the distance behind it like ducklings following their mother across the mountains, its wide stone lintel smooth and completely bare. Smaller and subordinate: a bighorn sheep grazing calmly right beside the first gate; a ranger's cabin tucked just past the entrance; a steaming hot spring pool glowing turquoise at the gate's base. MOOD: proud, foundational, warm."
  },
  {
   "id": "ca-q-ustava",
@@ -1695,7 +1763,8 @@
   "source_url": "https://en.wikipedia.org/wiki/Constitution_of_Canada",
   "source_card": "ca-historie-ustava",
   "image_prompt": "Fotorealistický snímek kanadské vlajky nad Parliament Hill, 16:9",
-  "about": "ústavní samostatnosti Kanady"
+  "about": "ústavní samostatnosti Kanady",
+  "irony_prompt": "A large ornate wooden chest fills the frame sitting proudly at home on a mantelpiece, filled with tightly rolled blank parchment scrolls, a hand turning a brand-new key firmly in its lock while an old ship sails away empty-handed on the horizon outside the window. Smaller and subordinate: a maple leaf pressed flat under the chest's lid; a quill resting unused beside it; a small model ship left behind on the shelf as a keepsake. MOOD: proud, settled, quietly triumphant."
  },
  {
   "id": "ca-k-vlajka",
