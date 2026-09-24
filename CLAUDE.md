@@ -81,6 +81,61 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-24 — ILUSTRAČNÍ DLUH APPKY KOMPLETNĚ HOTOV: 3 742/3 742 otázek má ilustraci, 0 chybí.
+  Poslední dávka (7 českých otázek) odhalila tři nové typy vad a jedna otázka (hokejista Hašek)
+  potřebovala PĚT pokusů.**
+  Hráč dobil kredit Gemini API, poslední dávka (7 zbývajících českých + 1 znovu-zadání pro
+  Portugalsko, viz níž) odeslána a zkontrolována stejným postupem jako celá kampaň od 22. 8.
+  - **Nová vada, dosud nezaznamenaná: reálná osoba vyšla ŠPATNÉHO POHLAVÍ.** `cz-t-navratilova-
+    wimbledon-2` (fakt o Martině Navrátilové, 49 let, poslední grandslamový titul) mělo zadání
+    „a sprightly grey-haired tennis player" — bez explicitního pohlaví model nakreslil zjevně
+    MUŽSKOU postavu (mužská čelist, plochý hrudník, mužská stavba nohou), ačkoli fakt je o ženě.
+    **Stejný mechanismus jako etnicita u filipínské rodiny (2026-08-31): když na tom, KDO ve
+    scéně je, záleží, musí to zadání říct explicitně.** Oprava: „a sprightly elderly WOMAN tennis
+    player, her grey hair pulled back in a ponytail, wearing a white tennis dress … her feminine
+    build and face clearly visible" + soupeř výslovně „younger MALE opponent". Vyšlo napoprvé.
+  - **Housenka s délkou slova (`cz-q-nejdelsi-ceske-slovo`) si o číslice řekla sama kvůli
+    vlastnímu zadání „exactly ninety-nine clearly visible segments".** Model segmenty očísloval
+    ŘÍMSKÝMI ČÍSLICEMI (I, V, XII…) — a římské číslice jsou PÍSMENA, ne číslice, takže je
+    kontrola `lint-irony` na `letters` v negaci správně odmítla, když jsem to poprvé opravoval
+    frází „no numbers, numerals, letters". **Slovo „letters" i v záporu je past** (zdokumentováno
+    už u Kanady) — správně je popsat plochu KLADNĚ: „each one showing bare wood grain and nothing
+    else", bez zmínky slova, co by mohlo pozvat text. Zároveň zmizel `„v-shaped wooden accent
+    mark"` (diakritické znaménko je taky potenciální písmeno) → nahrazeno neutrálním „plain
+    wooden knob". Přesný požadavek na POČET segmentů (99) byl kořen problému — obecné „dozens of"
+    stačí na vtip stejně dobře a nenutí model nic počítat/značit.
+  - **Hašek (hokejový brankář, MVP dvakrát) je nový REKORD v počtu pokusů kvůli vybavení: PĚT.**
+    Sportovní vybavení (hokejka, betony) i dres si o značku/znak řeknou samy, i přes explicitní
+    zákaz — potvrzeno počtvrté v řadě po Švédsku/Kanadě/Thajsku/Saúdské Arábii, ale tady to
+    vygenerovalo TŘI RŮZNÉ vady popořadě, ne jednu opakovanou:
+    1. Nezakázáno vůbec → čitelné „SADOSK"/„TCUM" na hokejce a betonu.
+    2. Zákaz textu na betonech + hokejka „schovaná pod betonem, jen čepel ven" → betony čisté,
+       ale čitelné „CIOHR" na ŠACHTĚ hokejky (druhý nález stejné vady = scéna se má PŘESTAVĚT,
+       ne dolaďovat — ale ještě jsem to zkusil dolaďovat).
+    3. Hokejka úplně ODSTRANĚNA ze scény (jen dvě paže objímající trofej) → hokejka pryč, ALE
+       na dresech všech čtyř postav se objevil **bílý kříž na kruhovém odznaku — halucinovaná
+       ŠVÝCARSKÁ VLAJKA**, kterou zadání vůbec nezmiňovalo. Nová varianta staré pasti (americká
+       vlajka na sovětském skafandru, švédská vlaječka v bulharském davu): **sportovní dres si
+       vždycky vyžádá NĚJAKÝ odznak, i když je scéna jinak čistá.**
+    4. Teprve explicitní „jersey … completely plain solid colours with no crest, no badge, no
+       cross, no emblem" u VŠECH postav (gólmana i tří hráčů) vyšlo čistě. **Poučení: u sportovní
+       scény nestačí ošetřit vybavení HRDINY, i vedlejší postavy v dresech nesou stejné riziko.**
+  - **Vedlejší nález, spravený mimo dávku: gramatická chyba v zadání `cz-k-linecke-cukrovi`**
+    („ze dvou křehkých **kolečků**" → správně **koleček**, 2. pád množného čísla od „kolečko"
+    stejně jako „jablko" → „jablek") — nahlásil hráč z běžícího UI, ne audit. Ilustrace k této
+    otázce nebyla dotčená, jen text zadání.
+  - **Vedlejší přepis mimo dávku: `pt-k-portugalstina-brazilie` (fakt, že portugalsky mluví víc
+    lidí v Brazílii než v Portugalsku) mělo od začátku appky nečitelnou ilustraci** — dva stejně
+    velké davy přes úžinu vody se „stužkou řeči" mezi nimi, abstraktní vizuální metafora, kterou
+    hráč označil za zcela nesrozumitelnou. **Stejná past jako u online dlaždice 2026-08-31: DVA
+    ROVNOCENNÉ FOKUSY se nedají přečíst, ani ve velkém obrázku u otázky, ne jen na malé dlaždici.**
+    Přepsáno na JEDEN dominantní motiv (obří karnevalová tanečnice v Riu, celá scéna kolem ní)
+    s JEDNOU podřízenou stopou původu (malý vyšívaný odznak kohoutka na hrudi) — vyšlo čistě
+    napoprvé a čitelně na první pohled.
+  - **Fond 3 742 otázek: bez ilustrace zbývá 0.** Celá kampaň běžela od 22. 8. napříč desítkami
+    zemí; tohle byla poslední dávka. `validate` 0 chyb, `test:offline` 874 beze změny,
+    `lint-irony` 0 chyb.
+
 - **2026-09-24 — Bublina hostitele je větší a hravější; na mobilu se konečně neschovává.**
   Hráč: *„ukaž mi to živě v prohlížeči"* přišlo po přání *„chci tu bublinu větší a texty
   vtipnější a více hravé a originální"*. Zvětšeno (12,5→14,5 px, víc paddingu, šířka podle

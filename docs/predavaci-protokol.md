@@ -22,28 +22,18 @@ Zkopíruj do prvního vzkazu:
 Nejdřív `git fetch` a posunout se na `origin/claude/pokracujeme-e79708` (fast-forward),
 teprve pak cokoli ověřovat.
 
-### Ilustrace k otázkám: ZBÝVÁ JEN 7 OTÁZEK (všechny české), zadání hotová, čekají na kredit
+### Ilustrace k otázkám: HOTOVO. 3 742/3 742, 0 chybí. Celá kampaň od 22. 8. je u konce.
 
-24. 9. dokončeny Severní Korea, Egypt, Čína, Japonsko a Polsko (všechny 100 %) — z **3 742**
-otázek fondu zbývá bez ilustrace **jen 7**, všechny z Česka: `cz-q-macocha-pojmenovani`,
-`cz-q-hasek-dominator-prezdivka`, `cz-q-nejdelsi-ceske-slovo`, `cz-q-vestonicka-venuse-dospeli`,
-`cz-t-navratilova-wimbledon-2`, `cz-k-ctyrlistek-komiks`, `cz-k-zdrobneliny-naklonnost`.
+24. 9. hráč dobil kredit a odeslána poslední dávka (7 zbývajících českých otázek). Kontrola
+očima odhalila tři nové typy vad a `cz-q-hasek-dominator-prezdivka` potřebovala **pět pokusů**
+kvůli sportovnímu vybavení a dresu (podrobný rozbor je v CLAUDE.md 2026-09-24 — nový vzorec:
+špatné pohlaví reálné osoby, číslice v podřízeném zadání se vyklubaly jako písmena, halucinovaná
+švýcarská vlajka na dresu). Mimo dávku opravena i gramatická chyba v `cz-k-linecke-cukrovi`
+(„kolečků" → „koleček") a přepsáno nečitelné `irony_prompt` u `pt-k-portugalstina-brazilie`
+(dva rovnocenné davy → jeden dominantní motiv s malou podřízenou stopou).
 
-**Všech 7 už má napsané `irony_prompt`, `npm run lint-irony` na nich hlásí 0 chyb** — žádné
-psaní zadání není potřeba, jen odeslat dávku. **Kredit Gemini API je ale ZASE vyčerpaný**
-(402 „prepayment credits are depleted", ověřeno 24. 9. při pokusu o tuhle poslední dávku) —
-**hráč musí dobít na `ai.studio/projects`**. Klíč `GEMINI_API_KEY` je v `.dev.vars` (negituje
-se, na jiném počítači/worktree chybí a musí se vložit znovu).
-
-**Jakmile je dobito, tohle je úplně poslední krok celého ilustračního dluhu appky:**
-```bash
-node scripts/batch-irony-images.js submit --only cz-q-macocha-pojmenovani,cz-q-hasek-dominator-prezdivka,cz-q-nejdelsi-ceske-slovo,cz-q-vestonicka-venuse-dospeli,cz-t-navratilova-wimbledon-2,cz-k-ctyrlistek-komiks,cz-k-zdrobneliny-naklonnost
-```
-Pak jako u každé jiné země: počkat na dávku (`node scripts/ilustrace/cekej-davka.js` na
-pozadí), `fetch`, zkontrolovat archy/rohy/výřezy očima, případné vady opravit přes
-`--only`, zapsat do CLAUDE.md, `validate` + `test:offline`, commit + push. **Postup krok za
-krokem je v [predani-ilustrace.md](predani-ilustrace.md)**, pravidla psaní zadání pro
-DALŠÍ novou zemi (pokud by nějaká přibyla) v jeho bodu 5. Všechny pomocné skripty jsou
+**Žádná další práce na ilustracích není naplánovaná.** Kdyby přibyla nová země nebo otázka,
+postup psaní zadání je v [predani-ilustrace.md](predani-ilustrace.md) bodu 5, nástroje
 v `scripts/ilustrace/`.
 
 **Tahle session navíc přidala dvě UI vylepšení k otázce** (obojí hotové, commitnuté a
@@ -54,9 +44,10 @@ pushnuté, viz CLAUDE.md 2026-09-24 pro detaily):
   zleva doprava a s malým dopadem (rázová vlna + trknutí glóbu) přistane přesně na místě.
 
 **Produkce je pořád na `0dfa574` (16. 9.).** Od té doby přibylo na větvi jen obsahové
-a UI: ilustrace, `irony_prompt` v datech, bublina hostitele, vlajka na glóbu, dokumentace
-a skripty — **žádná migrace databáze**. Nasazení je rozhodnutí hráče; kdyby padlo, stačí
-`db:sync` + `npm run deploy` podle nasazeni.md (kód i obsah se změnily, takže obojí).
+a UI: ilustrace (KOMPLETNÍ FOND), `irony_prompt` v datech, bublina hostitele, vlajka na
+glóbu, dokumentace a skripty — **žádná migrace databáze**. Nasazení je rozhodnutí hráče;
+kdyby padlo, stačí `db:sync` + `npm run deploy` podle nasazeni.md (kód i obsah se změnily,
+takže obojí).
 
 Ilustrace do UI (dlaždice, výsledkové obrazovky) jdou i bez klíče: hráč je vygeneruje
 v chatu Gemini a uloží do `D:\weigle\plocha\Kvíz_ILUSTRACE`, session je jen zmenší
@@ -180,15 +171,10 @@ Tohle nejsou doporučení. Každé z nich stálo v tomhle projektu škodu:
 
 ## 4. Fronta práce
 
-**0. Ilustrace k otázkám — SKORO HOTOVO, zbývá 7 otázek**
-24. 9. dokončeny Severní Korea, Egypt, Čína, Japonsko, Polsko (100 %). Bez ilustrace zbývá
-**jen 7 otázek, všechny české**, se zadáním už napsaným a zlintovaným — viz bod 0 výš pro
-přesný seznam id a příkaz k odeslání. **Jediná překážka je vyčerpaný kredit Gemini.**
-
-Po dobití kreditu a odeslání téhle poslední dávky: `archy.js` + `rohy.js` → kontrola
-očima → opravy přes `--only` → zápis do CLAUDE.md → `validate` + `test:offline` →
-commit + push. **Tím je ilustrační dluh appky kompletně u konce (3 742/3 742).**
-**Skript sleduje jen JEDNU dávku najednou**, takže se země nedají posílat paralelně.
+**0. Ilustrace k otázkám — HOTOVO (3 742/3 742, 0 chybí). Bod odstraněn z fronty.**
+24. 9. dokončena i poslední dávka (7 českých otázek). Kdyby v budoucnu přibyla nová
+otázka nebo země, postup je popsaný v [predani-ilustrace.md](predani-ilustrace.md) a
+nástroje v `scripts/ilustrace/`.
 
 **Past, na kterou appka narazila opakovaně: commit po opravě zadání musí sáhnout i po
 `data/questions/xx.json`, ne jen po `img/`** — víckrát se stalo, že oprava `irony_prompt`
