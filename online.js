@@ -452,7 +452,6 @@ window.ZKOnline = (function () {
     stopAll();
     var m = S.me || {};
     var maDeti = m.band === "deti";
-    var PASMA_T = { deti: "Děti", starsi: "Puberťáci", dospeli: "Dospělí" };
     say(m.email
       ? "E-mail máš uložený. Když zapomeneš PIN, pošleme na něj odkaz."
       : "E-mail je nepovinný. Bez něj ale zapomenutý PIN nikdo neobnoví.");
@@ -462,9 +461,10 @@ window.ZKOnline = (function () {
       "<h2>Profil</h2>" +
       // Kdo je přihlášený, se hráč nikde jinde v nastavení nedozví — a odhlašovací
       // tlačítko dole má smysl až ve chvíli, kdy je vidět, koho vlastně odhlašuje.
+      // Odznak s pásmem vedle přezdívky tu byl do 2026-09-25: pojmenovával nastavení,
+      // které se týž den přestalo dát měnit, takže z něj zbyl štítek bez obsahu i akce.
       '<div class="zk-idrow">' +
         '<span class="zk-idnick">' + esc(m.nick || "") + "</span>" +
-        (PASMA_T[m.band] ? '<span class="zk-idband">' + PASMA_T[m.band] + "</span>" : "") +
       "</div>" +
       (typeof msg === "string" && msg ? '<div class="zk-autherr">' + errBox(msg) + "</div>" : "") +
       (typeof hotovo === "string" && hotovo ? '<div class="zk-okbox">' + esc(hotovo) + "</div>" : "") +

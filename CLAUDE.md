@@ -93,6 +93,13 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   kde se dva lidé potkají jen stěží, čistá ztráta.
   - **Pásma v sólu a v párty ZŮSTÁVAJÍ beze změny.** Ta se volí v prohlížeči
     (`S.band` v `quiz.js`) a s účtem nesouvisí vůbec — tahle změna se jich netýká.
+  - **Za dlaždicemi šel pryč i odznak pásma u přezdívky** (`zk-idband`, tentýž den na
+    přání hráče). Sám o sobě to byl jen štítek, ale pojmenovával nastavení, které se
+    přestalo dát měnit — tedy informace, se kterou hráč nemůže nic udělat. **Smazáno
+    i jeho CSS**: pravidlo bez jediného uživatele je přesně to, na co appka doplatila
+    2026-09-04 u `.qz-a.locked` (hotový vzhled, který nikdo nenasadil, a tři měsíce
+    to vypadalo funkčně). Změřeno po zásahu: přezdívka zůstala vycentrovaná a mezery
+    nad i pod řádkem symetrické (12 px), takže po odznaku nezbyla díra.
   - **Nesahalo se na schéma ani na server.** `band` je v sedmi tabulkách a na 183
     místech serveru (`ratings` ho má dokonce v primárním klíči), takže vytrhnout ho
     by byla migrace produkční databáze kvůli kosmetice. Sloupec tedy zůstává, jen ho

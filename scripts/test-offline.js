@@ -645,6 +645,11 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
   const bez = bezKomentaru(SRC_ONLINE);
   kontrola(!/zk-accbands|zk-bandsave/.test(bez),
     "Profil má zase dlaždice pro výběr pásma");
+  // Odznak s pásmem u přezdívky šel pryč hned za dlaždicemi: pojmenovával nastavení,
+  // které se nedá měnit. Hlídá se i CSS — pravidlo bez jediného uživatele je přesně to,
+  // na co appka doplatila 2026-09-04 u `.qz-a.locked` (hotový vzhled, nikdo ho nenasadil).
+  kontrola(!/zk-idband/.test(bez) && !/\.zk-idband/.test(SRC_CSS),
+    "odznak pásma u přezdívky (zk-idband) je zpátky, nebo po něm zbylo mrtvé CSS");
   kontrola(!/"\/auth\/band"/.test(bez),
     "online.js zase volá /auth/band — pásmo se z appky měnit nemá");
   kontrola(!/(zapnout|přepne\w*|přepíná) (si )?v Profilu/.test(bez),
