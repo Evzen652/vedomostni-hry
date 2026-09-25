@@ -81,6 +81,31 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-26 — Rozbor má i sólo, škola a párty (stejné karty jako online).**
+  Na přání hráče hned po rozboru online. Offline hra si do teď odpovědi nepamatovala
+  vůbec — jen skóre.
+  - **`S.log` + `zapisDoRozboru()` v `answer()` i `timeoutReveal()`.** Klíčem je POŘADÍ
+    otázky (`S.idx`, v párty `S.qServed`), ne `push`: obnovená rozehraná hra otevře tutéž
+    otázku znovu (uloží se až při vykreslení další), takže push by ji zdvojil. Ukládá se
+    jen id, tip a výsledek — text se dohledá v `S.order`, ať save v localStorage nebobtná.
+  - **Záznam se ukládá s rozehranou hrou** (`serializeState` → `log`) a obnovuje
+    (`resumeSave`); hry uložené dřív ho nemají a rozbor pak ukáže jen dohrané po obnovení.
+    **Nuluje se ve všech třech startech**, jinak by „Hrát znovu“ ukázalo i minulou hru.
+  - **Rozbor stojí POD tlačítky „Hrát znovu / Domů“**, ne nad nimi: u Maratonu v párty
+    (12 kol × 6 hráčů = 72 karet) by jinak hlavní akce odjely o desítky obrazovek.
+  - **V párty nese karta jméno hráče s tečkou v jeho barvě** a štítek tipu je „Tip: …“;
+    ve škole „Tip třídy: …“. Souhrn v párty je „10 otázek“, ne „x z y správně“ — mísí se
+    v něm tahy všech hráčů a pořadí podle bodů stojí hned nad tím. Zlatá odpověď má
+    okrový štítek i odznak (špatně, ale za polovic bodů).
+  - **CSS karet je sdílené s online** (`.zk-rev*` v `quiz.css`); offline `.qz-end` nemá
+    strop šířky, proto `.qz-end > .zk-revlist { max-width: 640px }`.
+  - **Cestou: „Získal(a) jsi“ na výsledku sóla → „Celkem máš“** (rod hráče appka nezná).
+  - Ověřeno v prohlížeči: sólo 10 otázek na 322 px (10 karet, 10 ilustrací, bez přetečení,
+    34 px pod tlačítky) a párty Anna + Petr na 1280 px (jména střídavě, správné barvy).
+    `test:offline` **902**, ověřeno mutací 8 z 8. **Past v mutačním skriptu:** `quiz.js`
+    má CRLF, takže kotvy s `\n` se tiše neaplikovaly (4 z 8 „PRESKOCENO“) — mutace
+    se proto dělají nad LF kopií a zapisují zpět s CRLF.
+
 - **2026-09-26 — Rozbor po online hře: karty s ilustrací a štítky místo odstavců.**
   Hráč: *„rozbor by měl obsahovat ilustrace a být strukturovanější. příliš mnoho vět."*
   Dřív byl každý řádek vystředěný odstavec: otázka, „Správně: …“, tip, soupeř a CELÉ

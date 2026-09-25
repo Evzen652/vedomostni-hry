@@ -1064,6 +1064,26 @@ sekce("Výzvy podle přezdívky místo přátel");
   kontrola(/\.zk-revlist\s*\{[^}]*text-align:\s*left/.test(SRC_CSS),
     "rozbor dědí vystředěný text z .qz-end — víceřádkový text na střed se čte špatně");
 
+  // Rozbor i v sólu, škole a párty (2026-09-26). Odpověď se zapisuje KLÍČEM podle pořadí
+  // otázky, ne pushem: obnovená hra otevře tutéž otázku znovu (uloží se až s další)
+  // a push by ji v rozboru zdvojil.
+  const bezQ = bezKomentaru(SRC);
+  const fnOd = (jmeno) => { const i = bezQ.indexOf("function " + jmeno + "("); return i < 0 ? "" : bezQ.slice(i, bezQ.indexOf("\n  function ", i + 10)); };
+  kontrola(/zapisDoRozboru\(q, choice, correct, gold\)/.test(fnOd("answer")), "answer() nezapisuje odpověď do rozboru");
+  kontrola(/zapisDoRozboru\(q, null/.test(fnOd("timeoutReveal")), "vypršený čas se do rozboru nezapisuje");
+  kontrola(/S\.log\[pos\]\s*=/.test(fnOd("zapisDoRozboru")) && !/S\.log\.push/.test(bezQ),
+    "rozbor se plní pushem — po obnovení rozehrané hry by se otázka zdvojila");
+  kontrola(/log:S\.log/.test(fnOd("serializeState")), "rozehraná hra neukládá záznam pro rozbor");
+  kontrola(/S\.log=Array\.isArray\(st\.log\)/.test(fnOd("resumeSave")), "obnovená hra neobnoví záznam pro rozbor");
+  for (const f of ["startGame", "startSchool", "startParty"]) {
+    kontrola(/S\.log=\[\]/.test(fnOd(f)), f + " nenuluje záznam — rozbor by ukázal i minulou hru");
+  }
+  kontrola(/rozborHtml\(\)/.test(fnOd("endGame")) && /rozborHtml\(\)/.test(fnOd("endCeremony")),
+    "výsledek sóla nebo párty nemá rozbor");
+  kontrola(/<details class="zk-revwhy">/.test(fnOd("rozborHtml")) && /img\/\$\{esc\(q\.id\)\}/.test(fnOd("rozborHtml")),
+    "offline rozbor nemá ilustraci nebo vysvětlení pod „Proč?“");
+  kontrola(!/Získal\(a\)/.test(bezQ), "výsledek sóla zase říká „Získal(a)“ — rod hráče appka nezná");
+
   for (const s of ["soukromi.html", "smazani-uctu.html", "podminky.html"]) {
     const text = fs.readFileSync(s, "utf8").replace(/<!--[\s\S]*?-->/g, "");
     kontrola(!/přátel|kód pro/i.test(text), s + " pořád mluví o přátelích nebo kódu pro ně");

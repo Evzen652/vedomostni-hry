@@ -1252,6 +1252,15 @@
 .zk-tag.ok { color: #2f6e4b; border-color: #9fcaaf; background: #eef7f1; }
 .zk-tag.miss { color: #a4402f; border-color: #e6ada2; background: #fcefec; }
 .zk-tag.soft { color: var(--muted); border-color: #dccdb0; background: transparent; font-weight: 600; }
+/* Zlatá odpověď (párty/sólo) = špatně, ale za polovic bodů — okrová, ne červená. */
+.zk-tag.gold { color: #8a6418; border-color: #e3c47e; background: #fbf3de; }
+.zk-rev.gold .zk-revno { background: var(--ochre); }
+/* Tečka s barvou hráče u jména v párty — tatáž barva jako jeho praporek během hry. */
+.zk-tagdot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px;
+  vertical-align: 0; }
+/* Offline výsledek (.qz-end) nemá strop šířky jako online .zk-wrap — bez něj by se karty
+   na širokém monitoru roztáhly přes celou obrazovku a otázka by měla 150 znaků na řádek. */
+.qz-end > .zk-revlist { max-width: 640px; }
 .zk-revwhy { font-size: 13px; color: var(--muted); margin-top: -2px; }
 .zk-revwhy summary { cursor: pointer; font-weight: 700; color: var(--teal); width: fit-content; }
 .zk-revwhy p { margin: 6px 0 0; line-height: 1.55; }

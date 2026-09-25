@@ -101,7 +101,7 @@
   // (jen párty a jen na tabletu, viz .qz-rotbtn v quiz.css). Automatika podle strany hráče
   // i přepínač v nastavení byly 2026-09-15 zrušené — hráč chtěl otáčet sám.
   const S = { mode:"solo", order:[], idx:0, band:"dospeli", bandTouched:false, answered:false,
-              players:[], turn:0, round:1, totalRounds:8, qServed:0,
+              players:[], turn:0, round:1, totalRounds:8, qServed:0, log:[],
               voice:false, steal:false, rot:0,
               school:false, timer:0, saveId:null,
               qLimit:null, qLimitTouched:false, schoolLevel:3 };
@@ -206,6 +206,7 @@
       qLimit:S.qLimit, schoolLevel:S.schoolLevel,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
       turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, timer:S.timer||0,
+      log:S.log||[],
       players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, score:p.score })) };
   }
   function autosave(){
@@ -321,6 +322,9 @@
     // a renderQuestion() spadne na prázdnou obrazovku bez cesty ven. (2026-09-01)
     S.idx=Math.min(st.idx||0, Math.max(0, S.order.length-1));
     S.qServed=st.qServed||0; S.turn=st.turn||0; S.round=st.round||1; S.totalRounds=st.totalRounds||5;
+    // Záznam pro rozbor — hry uložené před 2026-09-26 ho nemají, rozbor pak ukáže jen to,
+    // co se odehrálo po obnovení (a když nic, vůbec se nevykreslí).
+    S.log=Array.isArray(st.log) ? st.log : [];
     // hlas i steal jsou dočasně schované z UI (viz renderSetup) — starší uložená hra s
     // voice:true/steal:true by jinak dál mluvila / nabízela krádež bodů, aniž by šel přepínač vypnout
     S.voice=false; S.steal=false; S.timer=st.timer||0; S.rot=0;
@@ -348,8 +352,20 @@
       if(left<=0){ clearTimer(); if(!S.answered) timeoutReveal(q); }
     }, 100);
   }
+  // Záznam pro rozbor na konci hry (2026-09-26). Klíčem je POŘADÍ otázky ve hře, ne push:
+  // obnovená hra otevře znovu tutéž otázku (uloží se až při vykreslení další) a zápis by se
+  // pak zdvojil. Ukládá se jen id a tip — text otázky se při vykreslení dohledá v S.order,
+  // ať uložená hra v localStorage nebobtná o celé otázky.
+  function zapisDoRozboru(q, pick, ok, gold){
+    if(!q) return;
+    if(!Array.isArray(S.log)) S.log=[];
+    const pos = S.mode==="party" ? S.qServed : S.idx;
+    S.log[pos] = { id:q.id, pick:(pick==null ? null : String(pick)), ok:!!ok, gold:!!gold,
+                   turn:(S.mode==="party" ? S.turn : 0) };
+  }
   function timeoutReveal(q){
     if(S.answered) return; S.answered=true;
+    zapisDoRozboru(q, null, false, false);
     const quipText=pick((data.fondy&&data.fondy.timeout)||["Čas vypršel!"]);
     say(quipText); if(S.voice) speakTTS("Čas vypršel! "+quipText);
     revealPic();
@@ -1252,7 +1268,7 @@
     const pool = filtered.length ? filtered : data.questions;
     const limit = Math.min(S.qLimit || pool.length, pool.length);
     S.order = bezKonfliktu(pool, limit);
-    S.idx=0; newSave();
+    S.idx=0; S.log=[]; newSave();
     const shell=document.getElementById("qz-shell"); shell.classList.add("qz-school"); shell.style.transform="";
     renderQuestion();
   }
@@ -1388,7 +1404,7 @@
     // nebo obnovou stavu. Prázdný fond by znamenal hru bez jediné otázky.
     if(!pool.length) return renderStart();
     const limit = Math.min(S.qLimit || pool.length, pool.length);
-    S.order=bezKonfliktu(pool, limit); S.idx=0; S.school=false; newSave();
+    S.order=bezKonfliktu(pool, limit); S.idx=0; S.log=[]; S.school=false; newSave();
     const shg=document.getElementById("qz-shell"); shg.classList.remove("qz-school"); shg.style.transform="";
     renderQuestion();
   }
@@ -1523,7 +1539,7 @@
     // Pojistka proti frontě plné `undefined` — viz prazdnaPasmaParty(). Sem se dá dojít
     // i z „Hrát znovu" na výsledkové obrazovce, kde žádná kontrola není.
     if(prazdnaPasmaParty().length) return renderSetup();
-    S.mode="party"; S.order=buildPartyOrder(); S.qServed=0; S.turn=0; S.round=1; S.rot=0; S.school=false; newSave();
+    S.mode="party"; S.order=buildPartyOrder(); S.qServed=0; S.turn=0; S.round=1; S.rot=0; S.log=[]; S.school=false; newSave();
     document.getElementById("qz-shell").classList.remove("qz-school");
     S.players.forEach(p=>{ p.score=0; });
     applyRotation();
@@ -1759,6 +1775,7 @@
     if(correct){ gained=base; quipText=resolveQuip(q.quip_correct,b); }
     else if(q.golden_wrong!=null && String(choice)===String(q.golden_wrong)){ gold=true; gained=Math.round(base/2); quipText=q.golden_quip; }
     else { const dq=q.distractor_quips&&q.distractor_quips[choice]; quipText = dq?resolveQuip(dq,b):resolveQuip(q.quip_wrong,b); }
+    zapisDoRozboru(q, choice, correct, gold);
     const skorePred = P.score;
     P.score+=gained; updateScorePill(S.turn, skorePred);
     // párty má vlastní praporek na hráče (updateScorePill výš); sólo/škola má jeden sdílený
@@ -1878,6 +1895,45 @@
     applyRotation();   // otočení zůstává; jen se přepočte zmenšení na výšku nové otázky
   }
 
+  // Rozbor po hře — stejné karty jako po online hře (online.js, showResult), aby oba světy
+  // vypadaly jako jedna appka: ilustrace, otázka, krátké štítky a vysvětlení pod „Proč?".
+  // V párty nese karta i jméno hráče, který na otázku odpovídal (barevná tečka jako
+  // u jeho praporku). Štítky nemají minulý čas s rodem — appka pohlaví hráčů nezná.
+  // Stojí POD tlačítky: po hře je hlavní akce „znovu" nebo „domů", rozbor je pro zvědavé
+  // a u dlouhé párty (12 kol × 6 hráčů) by jinak tlačítka odsunul o desítky obrazovek.
+  function rozborHtml(){
+    const zaznamy = (S.log||[]).filter(Boolean);
+    if(!zaznamy.length) return "";
+    const najdi = id => S.order.find(x=>x && x.id===id) || (data && data.questions.find(x=>x.id===id));
+    const party = S.mode==="party";
+    const tipLabel = party ? "Tip" : (S.school ? "Tip třídy" : "Tvůj tip");
+    let trefy=0;
+    const karty = zaznamy.map((e,i)=>{
+      const q = najdi(e.id); if(!q) return "";
+      if(e.ok) trefy++;
+      const stav = e.ok ? "ok" : (e.gold ? "gold" : "miss");
+      const hrac = party ? S.players[e.turn] : null;
+      const stitky =
+        (hrac ? `<span class="zk-tag soft"><i class="zk-tagdot" style="background:${esc(hrac.color)}"></i>${esc(hrac.name)}</span>` : "") +
+        `<span class="zk-tag ok">✓ ${esc(q.answer)}</span>` +
+        (e.pick==null ? `<span class="zk-tag miss">Čas vypršel</span>`
+          : !e.ok ? `<span class="zk-tag ${e.gold?"gold":"miss"}">${e.gold?"Zlatá odpověď":tipLabel}: ${esc(e.pick)}</span>` : "");
+      return `<article class="zk-rev ${stav}">
+        <div class="zk-revpic"><img src="img/${esc(q.id)}.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <span class="zk-revno" aria-label="${e.ok?"Správně":"Špatně"}">${e.ok?"✓":"✕"}</span></div>
+        <div class="zk-revtxt">
+          <p class="zk-revq"><span class="zk-revn">${i+1}.</span> ${esc(q.question)}</p>
+          <div class="zk-revtags">${stitky}</div>
+          ${q.explanation?`<details class="zk-revwhy"><summary>Proč?</summary><p>${esc(q.explanation)}</p></details>`:""}
+        </div></article>`;
+    }).join("");
+    // Souhrn v párty neříká „x z y správně" — mísí se v něm tahy všech hráčů a pořadí
+    // podle bodů je hned nad tím. Stačí, kolik otázek u stolu padlo.
+    const souhrn = party ? `${zaznamy.length} ${plur(zaznamy.length,"otázka","otázky","otázek")}`
+                         : `${trefy} z ${zaznamy.length} správně`;
+    return `<section class="zk-revlist"><h3>Rozbor <span class="zk-revsum">${souhrn}</span></h3>${karty}</section>`;
+  }
+
   function endCeremony(){
     stopTTS(); clearTimer(); clearSave(); releaseWake();
     S.rot=0; document.getElementById("qz-shell").style.transform="";
@@ -1905,6 +1961,7 @@
       <div class="qz-hlaska" style="max-width:520px"><div class="qz-hl">vyhlášení</div><div class="qz-ht">„${esc(vic)}“</div></div>
       <div class="qz-standings">${rows}</div>
       <div class="qz-endrow"><button class="qz-go" id="qz-again">Odveta ${handArrowSvg(false)}</button><button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button></div>
+      ${rozborHtml()}
     </div>`;
     body.querySelector("#qz-again").addEventListener("click", startParty);
     body.querySelector("#qz-home").addEventListener("click", close);
@@ -1919,12 +1976,13 @@
     body.innerHTML = `<div class="qz-screen qz-end">
       <img class="qz-endimg" src="assets/end-solo.jpg" alt="" onerror="this.style.display='none'">
       <h2>Výprava dokončena!</h2>
-      <div class="qz-endscore">${S.school?"Třída získala":"Získal(a) jsi"} ${ICO_STAR} <b>${score}</b></div>
+      <div class="qz-endscore">${S.school?"Třída získala":"Celkem máš"} ${ICO_STAR} <b>${score}</b></div>
       <p style="color:var(--muted)">Z ${S.order.length} otázek · Teoretické maximum ${max} bodů</p>
       <div class="qz-endrow">
         <button class="qz-go" id="qz-again">Hrát znovu ${handArrowSvg(false)}</button>
         <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>
       </div>
+      ${rozborHtml()}
     </div>`;
     // endGame() je společný pro sólo i školu, takže „Hrát znovu" musí vědět, odkud
     // se sem přišlo. Do 2026-09-01 volalo vždycky startGame(), což ze školní hry
