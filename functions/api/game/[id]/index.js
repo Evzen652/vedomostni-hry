@@ -65,6 +65,9 @@ export async function onRequestGet({ params, request, env }) {
     // neindexuje podle pozice, takže kratší pole nevadí.
     if (!q) return null;
     const item = {
+      // `id` kvůli ilustraci v rozboru (img/{id}.jpg). Hra je v tu chvíli odehraná,
+      // takže id už nic neprozradí — a správná odpověď jde v rozboru stejně vedle.
+      id: q.id,
       n, question: q.question, options: optionsFor(q, orders[n]),
       correct_index: correctIndex(orders[n]),
       pick: r ? r.pick : null, correct: r ? !!r.correct : false, points: r ? r.points : 0,

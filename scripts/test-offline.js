@@ -1050,6 +1050,20 @@ sekce("Výzvy podle přezdívky místo přátel");
   kontrola(!/\.zk-code\b/.test(SRC_CSS) && !/\.zk-unfriend\b/.test(SRC_CSS),
     "po přátelích zůstalo mrtvé CSS (.zk-code nebo .zk-unfriend)");
 
+  // Rozbor po hře (2026-09-26): karty s ilustrací, vysvětlení schované pod „Proč?".
+  // Dřív odstavec na otázku s celým vysvětlením — u deseti otázek zeď textu.
+  const rozbor = /var review = polozky\.map\(([\s\S]*?)\}\)\.join\(""\);/.exec(bez);
+  kontrola(rozbor && /class="zk-rev /.test(rozbor[1]) && /img\/' \+ esc\(it\.id\)/.test(rozbor[1]),
+    "rozbor po hře nekreslí karty s ilustrací");
+  kontrola(rozbor && /<details class="zk-revwhy">/.test(rozbor[1]),
+    "vysvětlení v rozboru není schované pod „Proč?“ — rozbor je zase zeď textu");
+  kontrola(!/nestihl jsi|trefil|minul/.test(rozbor ? rozbor[1] : ""),
+    "rozbor používá minulý čas s rodem (appka pohlaví hráče ani soupeře nezná)");
+  const hraSrv = fs.readFileSync("functions/api/game/[id]/index.js", "utf8");
+  kontrola(/id: q\.id/.test(hraSrv), "server neposílá v rozboru id otázky — ilustrace nemá z čeho vzniknout");
+  kontrola(/\.zk-revlist\s*\{[^}]*text-align:\s*left/.test(SRC_CSS),
+    "rozbor dědí vystředěný text z .qz-end — víceřádkový text na střed se čte špatně");
+
   for (const s of ["soukromi.html", "smazani-uctu.html", "podminky.html"]) {
     const text = fs.readFileSync(s, "utf8").replace(/<!--[\s\S]*?-->/g, "");
     kontrola(!/přátel|kód pro/i.test(text), s + " pořád mluví o přátelích nebo kódu pro ně");

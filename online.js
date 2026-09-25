@@ -1335,17 +1335,36 @@ window.ZKOnline = (function () {
           '<span class="qz-standscore">' + (p.score == null ? "—" : starScore(p.score)) + "</span></div>";
       }).join("");
 
-      var review = (g.review || []).map(function (it) {
+      // Rozbor jako karty s ilustrací (přání hráče 2026-09-26: „ilustrace a strukturovanější,
+      // příliš mnoho vět"). Dřív to byl odstavec na otázku: otázka, „Správně: …", tvůj tip,
+      // soupeř a celé vysvětlení za sebou — u deseti otázek zeď textu. Teď nese každá karta
+      // jen otázku a krátké štítky; vysvětlení je schované pod „Proč?" pro toho, koho zajímá.
+      // Štítky nemají minulý čas s rodem („nestihl jsi", „trefil") — appka pohlaví hráče
+      // ani soupeře nezná a soupeř-bot má jméno z mužské i ženské zásoby.
+      var polozky = g.review || [];
+      var trefy = polozky.filter(function (it) { return it.pick === it.correct_index; }).length;
+      var review = polozky.map(function (it, i) {
         var mine = it.pick === it.correct_index;
-        return '<div class="qz-standrow" style="align-items:flex-start;gap:.6rem">' +
-          '<span style="min-width:1.6em;font-weight:700;color:' + (mine ? "var(--ok,#4e9e6f)" : "var(--bad,#cf5f4e)") + '">' +
-          (mine ? "✓" : "✕") + "</span>" +
-          "<span><b>" + esc(it.question) + "</b><br>" +
-          "Správně: " + esc(it.options[it.correct_index]) +
-          (it.pick >= 0 && !mine ? " · tvůj tip: " + esc(it.options[it.pick]) : "") +
-          (it.pick === -1 ? " · nestihl jsi odpovědět" : "") +
-          (it.opponent ? " · soupeř: " + (it.opponent.correct ? "trefil" : "minul") : "") +
-          '<br><span class="qz-expl">' + esc(it.explanation || "") + "</span></span></div>";
+        var stitky =
+          '<span class="zk-tag ok">✓ ' + esc(it.options[it.correct_index]) + "</span>" +
+          (it.pick >= 0 && !mine ? '<span class="zk-tag miss">Tvůj tip: ' + esc(it.options[it.pick]) + "</span>" : "") +
+          (it.pick === -1 ? '<span class="zk-tag miss">Čas vypršel</span>' : "") +
+          (it.opponent ? '<span class="zk-tag soft">Soupeř: ' + (it.opponent.correct ? "Trefa" : "Vedle") + "</span>" : "");
+        // Obrázek je jen ozdoba navíc: když chybí, schová se a karta zůstane textová.
+        var pic = it.id
+          ? '<img src="img/' + esc(it.id) + '.jpg" alt="" loading="lazy" onerror="this.remove()">'
+          : "";
+        return '<article class="zk-rev ' + (mine ? "ok" : "miss") + '">' +
+          '<div class="zk-revpic">' + pic +
+            '<span class="zk-revno" aria-label="' + (mine ? "Správně" : "Špatně") + '">' + (mine ? "✓" : "✕") + "</span>" +
+          "</div>" +
+          '<div class="zk-revtxt">' +
+            '<p class="zk-revq"><span class="zk-revn">' + (i + 1) + ".</span> " + esc(it.question) + "</p>" +
+            '<div class="zk-revtags">' + stitky + "</div>" +
+            (it.explanation
+              ? '<details class="zk-revwhy"><summary>Proč?</summary><p>' + esc(it.explanation) + "</p></details>"
+              : "") +
+          "</div></article>";
       }).join("");
 
       var isTurnaj = mode === "turnaj" && tournamentId;
@@ -1369,7 +1388,10 @@ window.ZKOnline = (function () {
         '<div class="qz-endscore">' + starScore(g.me.score) + "</div>" +
         '<div class="zk-rowlist">' + rows + "</div>" +
         '<div class="qz-setnote">' + note + "</div>" +
-        (review ? '<h3 style="margin-top:1.2rem">Rozbor</h3><div class="zk-rowlist">' + review + "</div>" : "") +
+        (review
+          ? '<section class="zk-revlist"><h3>Rozbor <span class="zk-revsum">' + trefy + " z " + polozky.length +
+              " správně</span></h3>" + review + "</section>"
+          : "") +
         '<div class="qz-fbtns" style="margin-top:1.2rem">' + buttons + "</div></div>";
 
       on("zk-lobby", function () {

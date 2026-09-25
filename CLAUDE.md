@@ -81,6 +81,27 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-26 — Rozbor po online hře: karty s ilustrací a štítky místo odstavců.**
+  Hráč: *„rozbor by měl obsahovat ilustrace a být strukturovanější. příliš mnoho vět."*
+  Dřív byl každý řádek vystředěný odstavec: otázka, „Správně: …“, tip, soupeř a CELÉ
+  vysvětlení za sebou — u deseti otázek zeď textu, kterou nikdo nečetl.
+  - **Karta = ilustrace vlevo (132 px, na telefonu 96) + otázka + štítky.** Štítky:
+    zelený se správnou odpovědí, červený „Tvůj tip: …“ nebo „Čas vypršel“, tichý
+    „Soupeř: Trefa / Vedle“. Výsledek nese i odznak ✓/✕ v rohu ilustrace, takže barva
+    není jediný nosič informace. Nad kartami „Rozbor · 3 z 10 správně“.
+  - **Vysvětlení je pod nativním `<details>` „Proč?“** — kdo chce, rozbalí; klávesnice
+    i odečítač ho umí bez jediného řádku JS.
+  - **Server nově posílá v rozboru `id` otázky** (`game/[id]/index.js`), jinak by ilustrace
+    neměla z čeho vzniknout. Nic neprozradí: rozbor se vydá až po dohrání vlastní půlky
+    a správná odpověď v něm je stejně.
+  - **Text je zarovnaný vlevo, ačkoli `.qz-end` centruje** — víceřádkový text na střed
+    se čte špatně a štítky pod sebou skákaly.
+  - **Pryč minulý čas s rodem:** „nestihl jsi odpovědět“ → „Čas vypršel“, „soupeř trefil/
+    minul“ → „Trefa/Vedle“ (bot má jméno z mužské i ženské zásoby).
+  - Chybějící ilustrace se prostě odebere (`onerror="this.remove()"`), zůstane podklad
+    s odznakem. Ověřeno v prohlížeči na 322 a 1280 px: 10 karet, 10 ilustrací, nic
+    nepřetéká, 0 textů s malým písmenem. `test:offline` **891**, ověřeno mutací 5 z 5.
+
 - **2026-09-26 — PŘÁTELÉ S KÓDEM ZRUŠENI, NAHRADILY JE VÝZVY PODLE PŘEZDÍVKY (jako
   chess.com). Nepřijatá výzva NENÍ hra — vlastní tabulka `challenges`, hra vzniká až
   přijetím.**
