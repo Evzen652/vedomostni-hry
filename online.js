@@ -128,19 +128,21 @@ window.ZKOnline = (function () {
       ratingN: "Rating je tvoje číslo šikovnosti. Čím víc vyhraješ, tím výš poletí.",
     },
     // Puberťáci a Dospělí přepsáni 2026-09-15: registrace se na pásmo už neptá (nový
-    // profil je Dospělí), takže texty nesmí mluvit, jako by si ho hráč vybral, a musí
-    // říct, kde se přepíná. Dětské texty zůstávají kvůli starším účtům.
+    // profil je Dospělí), takže texty nesmí mluvit, jako by si ho hráč vybral.
+    // Zmínka „přepneš si v Profilu" z obou vypadla 2026-09-25, kdy ta volba z Profilu
+    // zmizela — text, který posílá hráče na tlačítko, co tam není, je horší než žádný.
+    // Dětské texty zůstávají kvůli starším účtům.
     starsi: {
       uvod: "dobře, že jsi tady.",
       pasmo: "Hraješ v lize <b>Puberťáci</b>: otázky, co se dají pochytit ve škole nebo na internetu, ne v encyklopedii.",
-      souperi: "Soupeři jsou taky puberťáci. Těžší otázky dospělých si můžeš zapnout v Profilu.",
+      souperi: "Soupeři jsou taky puberťáci — nikdo tu nemá náskok dvaceti let čtení encyklopedií.",
       rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
       ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
     },
     dospeli: {
       uvod: "vítej v aréně vědomostí. Držíme palce.",
       pasmo: "Hraješ v lize <b>Dospělí</b>: otázky bez zjednodušování. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
-      souperi: "Soupeři jsou taky dospělí. Kdo chce lehčí otázky, přepne si v Profilu na Puberťáky.",
+      souperi: "Soupeři jsou taky dospělí, takže výmluva na věk tady neplatí ani jedním směrem.",
       rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
       ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
     },
@@ -311,8 +313,8 @@ window.ZKOnline = (function () {
           "</div>" : "") +
         '<div class="zk-form">' +
           // Volba pásma („Kdo bude hrát?") z registrace zmizela 2026-09-15: po vyřazení dětí
-          // zbyly jen Puberťáci a Dospělí a hráč ji měl za zbytečnou. Nový profil začíná
-          // jako Dospělí, puberťácké pásmo se přepíná v Profilu (viz poznámka u souhlasu).
+          // zbyly jen Puberťáci a Dospělí a hráč ji měl za zbytečnou. Od 2026-09-25 se online
+          // na pásmo neptá NIKDE — každý nový profil je Dospělí a nedá se to přepnout.
           '<div class="zk-field" id="zk-nickwrap">' +
             '<label class="qz-fieldlabel" for="zk-nick">Jméno nebo přezdívka</label>' +
             '<input class="qz-pname-in" id="zk-nick" maxlength="20" autocomplete="username" placeholder="Jak ti mají říkat" value="' +
@@ -345,8 +347,7 @@ window.ZKOnline = (function () {
           // souhlas vyjadřuje, ne jen čte patičku. Server bez něj profil nezaloží (age13).
           (isReg
             ? '<label class="zk-agree"><input type="checkbox" id="zk-agree"> ' +
-                '<span>Je mi aspoň 13 let a souhlasím s podmínkami použití.</span></label>' +
-              '<div class="qz-setnote zk-mailnote">Hraješ mezi dospělými. Lehčí puberťácké pásmo si můžeš zapnout v Profilu.</div>'
+                '<span>Je mi aspoň 13 let a souhlasím s podmínkami použití.</span></label>'
             : "") +
           '<button class="qz-go" id="zk-go"' + (isReg ? " disabled" : "") + ">" +
             (isReg ? "Založit profil" : "Přihlásit se") + " " + handArrowSvg(false) + "</button>" +
@@ -452,11 +453,6 @@ window.ZKOnline = (function () {
     var m = S.me || {};
     var maDeti = m.band === "deti";
     var PASMA_T = { deti: "Děti", starsi: "Puberťáci", dospeli: "Dospělí" };
-    // Bez dětského pásma — do něj se od 2026-09-10 přejít nedá (viz auth/band.js).
-    var PASMA = [
-      { id: "starsi", t: "Puberťáci", fb: "🧑‍🎓" },
-      { id: "dospeli", t: "Dospělí", fb: "🧑" },
-    ];
     say(m.email
       ? "E-mail máš uložený. Když zapomeneš PIN, pošleme na něj odkaz."
       : "E-mail je nepovinný. Bez něj ale zapomenutý PIN nikdo neobnoví.");
@@ -503,27 +499,12 @@ window.ZKOnline = (function () {
         (m.email ? '<button type="button" class="zk-dangerlink" id="zk-edel">Smazat e-mail z profilu</button>' : "") +
       "</div>" +
 
-      // Pásmo šlo do 2026-08-31 zvolit jen při registraci a pak už nikdy změnit —
-      // kdo se seknul, musel založit nový účet. Není to tvrzení o věku (ověřit ho
-      // nejde), ale volba fondu otázek, takže není důvod ho zamykat napořád.
-      '<div class="zk-sect">' +
-        "<h3>Pásmo — jaké otázky chceš dostávat</h3>" +
-        '<div class="zk-sectnote">Obě pásma losují z obecného fondu, puberťáci z jeho ' +
-          "lehčí části. Hraješ vždycky jen proti lidem ze stejného pásma.</div>" +
-        '<div class="zk-bandpick" id="zk-accbands" role="group" aria-label="Věkové pásmo">' +
-          PASMA.map(function (b) {
-            var on = b.id === m.band;
-            return '<button type="button" class="zk-bandtile' + (on ? " on" : "") +
-              '" data-band="' + b.id + '" aria-pressed="' + (on ? "true" : "false") + '">' +
-              '<img src="assets/band-' + b.id + '.jpg" alt="" data-fb="' + b.fb + '">' +
-              '<span class="t">' + b.t + "</span></button>";
-          }).join("") +
-        "</div>" +
-        '<div class="qz-setnote" id="zk-bandnote">Každé pásmo má vlastní rating — ten ' +
-          "současný se nikam neztratí, ale v novém začínáš od začátku.</div>" +
-        '<button class="qz-go" id="zk-bandsave" disabled>Změnit pásmo ' + handArrowSvg(false) + '</button>' +
-      "</div>" +
-
+      // VOLBA PÁSMA TU BÝVALA A JE PRYČ (2026-09-25, přání hráče). Online se na pásmo
+      // neptá vůbec: registrace zakládá všechny jako „dospělé" (2026-09-15) a dětské
+      // pásmo online neexistuje (13+, 2026-09-10), takže ta dlaždice nabízela jedinou
+      // skutečnou alternativu — odejít do menšího fondu a začít s ratingem od nuly.
+      // Při dnešní velikosti základny je dělení hráčů na dvě fronty čistá ztráta.
+      // Pásma zůstávají v sólu a v párty, kde se volí v prohlížeči a s účtem nesouvisí.
       '<div class="zk-sect">' +
         "<h3>Přihlášení</h3>" +
         '<div class="zk-sectnote">Odhlášením se odpojíš jen z tohohle zařízení. Profil, rating i ' +
@@ -588,36 +569,6 @@ window.ZKOnline = (function () {
         // Druhý parametr renderAuth je hláška nad formulářem (jediné místo, kam se
         // po smazání dá něco napsat — profil, ze kterého se to dělalo, už neexistuje).
         renderAuth("register", "Profil je smazaný. Kdyby ses vrátil, začneš načisto.");
-      });
-    });
-
-    // Změna pásma. Tlačítko je disabled, dokud hráč neklikne na JINÉ pásmo, než
-    // ve kterém je — jinak by šlo „uložit" stav, který už platí, a hráč by čekal,
-    // že se něco stalo.
-    var accBands = body.querySelector("#zk-accbands");
-    var bandSave = body.querySelector("#zk-bandsave");
-    var bandNote = body.querySelector("#zk-bandnote");
-    var novePasmo = m.band;
-    accBands.querySelectorAll(".zk-bandtile").forEach(function (c) {
-      c.addEventListener("click", function () {
-        accBands.querySelectorAll(".zk-bandtile").forEach(function (x) {
-          x.classList.remove("on");
-          x.setAttribute("aria-pressed", "false");
-        });
-        c.classList.add("on");
-        c.setAttribute("aria-pressed", "true");
-        novePasmo = c.dataset.band;
-        bandSave.disabled = novePasmo === m.band;
-      });
-    });
-    bandSave.addEventListener("click", function () {
-      bandSave.disabled = true;
-      req("/auth/band", { method: "PUT", body: { band: novePasmo } }).then(function (r) {
-        if (r.status !== 200) return renderAccount((r.body && r.body.error) || "Nepovedlo se.");
-        refreshMe(function () {
-          renderAccount("", "Pásmo změněno na „" + (PASMA_T[novePasmo] || novePasmo) + "“."
-            + (r.body && r.body.nick !== m.nick ? " Nová přezdívka: " + r.body.nick + "." : ""));
-        });
       });
     });
 

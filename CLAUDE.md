@@ -81,6 +81,39 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-25 — Online se na pásmo NEPTÁ NIKDE. Volba Puberťáci/Dospělí zmizela
+  z Profilu; ruší to rozhodnutí z 2026-08-31, které ji tam dalo.**
+  Přání hráče („jen v onlinu odstraň ten výběr mezi puberťák a dospělý"). Rozhodnutí
+  z 2026-08-31 vzniklo ve světě, kde pásmo šlo zvolit při registraci a kdo se seknul,
+  musel založit nový profil — tehdy byla možnost přepnout jasné zlepšení. **Dvě pozdější
+  změny tomu ale podřízly nohy:** 2026-09-10 appka vyřadila děti (13+), a 2026-09-15 se
+  registrace přestala na pásmo ptát úplně (každý nový profil je Dospělí). Zbyla tak
+  dlaždice, jejíž jediný reálný smysl byl **odejít do menšího fondu a začít s ratingem
+  od nuly** — a při dnešní základně navíc rozdělovala hráče do dvou front, což je u lobby,
+  kde se dva lidé potkají jen stěží, čistá ztráta.
+  - **Pásma v sólu a v párty ZŮSTÁVAJÍ beze změny.** Ta se volí v prohlížeči
+    (`S.band` v `quiz.js`) a s účtem nesouvisí vůbec — tahle změna se jich netýká.
+  - **Nesahalo se na schéma ani na server.** `band` je v sedmi tabulkách a na 183
+    místech serveru (`ratings` ho má dokonce v primárním klíči), takže vytrhnout ho
+    by byla migrace produkční databáze kvůli kosmetice. Sloupec tedy zůstává, jen ho
+    nikdo nemění: registrace posílá `dospeli` a jiná cesta v appce není.
+  - **Endpoint `PUT /api/auth/band` ZŮSTAL, ale appka ho nevolá.** Je to jediné místo,
+    odkud šlo pásmo změnit; ponechán schválně jako záchrana pro účet, který v pásmu
+    uvázl (v produkci žádný takový není). Že ho klient nezavolá, hlídá test.
+  - **Past, na kterou se dalo naletět a která je tu ta podstatná: smazat dlaždice
+    NESTAČÍ.** Na zrušenou volbu odkazovaly ještě TŘI texty jinde — uvítání v lobby
+    u obou pásem („Kdo chce lehčí otázky, přepne si v Profilu na Puberťáky") a poznámka
+    pod souhlasem v registraci. Appka by vypadala funkčně a přitom slibovala tlačítko,
+    které nikde není. Nalezeno až průchodem v prohlížeči, ne grepem na kód.
+  - **`test:offline` 876 (+2):** Profil nemá `zk-accbands`/`zk-bandsave`, `online.js`
+    nevolá `/auth/band`, a nikde nezůstal text posílající hráče „přepnout si v Profilu".
+    **Ověřeno mutací 4 ze 4** (vrácení dlaždic, vrácení tlačítka, vrácení volání
+    endpointu, vrácení textu) — a první pokus o mutaci dlaždic se NEAPLIKOVAL kvůli
+    špatné kotvě, takže kontrola chvíli vypadala ověřeně, aniž by byla. **Mutace, která
+    se neaplikovala, není důkaz; skript to musí hlásit zvlášť.** Obnova bajtově shodná.
+  - Zastaralá kontrola z 2026-09-15 („registrace neříká, že puberťácké pásmo jde zapnout
+    v Profilu") **smazána** — hlídala přesně tu větu, která teď lže. `test:api` 167 beze změny.
+
 - **2026-09-25 — Podlaha fondu dorovnána podruhé: 50 nových otázek napříč 25 zeměmi,
   ať Maraton (12 kol) neopakuje otázky. Fond 3 742 → 3 792, všechny mají ilustraci.**
   Navazuje na první dorovnání z 2026-08-31 — appka od 15. 9. má delší párty (Maraton

@@ -623,8 +623,8 @@ for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
 // spadla (jen by se vrátily rozmazané pruhy), takže je hlídá test:
 const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
 
-// Registrace bez volby pásma (2026-09-15, přání hráče): nový profil je vždy Dospělí,
-// puberťácké pásmo se přepíná v Profilu. Tlačítko čeká jen na souhlas, ne na pásmo.
+// Registrace bez volby pásma (2026-09-15, přání hráče): nový profil je vždy Dospělí.
+// Tlačítko čeká jen na souhlas, ne na pásmo.
 {
   const bez = bezKomentaru(SRC_ONLINE);
   const zac = bez.indexOf("function renderAuth(");
@@ -635,8 +635,20 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
     "registrace neposílá pásmo dospeli — server by profil bez pásma odmítl");
   kontrola(!/!band\b/.test(auth),
     "tlačítko Založit profil pořád čeká na výběr pásma, který už v registraci není");
-  kontrola(/puberťácké pásmo si můžeš zapnout v Profilu/.test(auth),
-    "registrace neříká, že puberťácké pásmo jde zapnout v Profilu");
+}
+
+// ONLINE SE NA PÁSMO NEPTÁ NIKDE (2026-09-25, přání hráče). Volba Puberťáci/Dospělí
+// zmizela z Profilu, takže nesmí zůstat ani text, který na ni posílá — a to je přesně
+// ta část, co se dá rozbít potichu: smazat dlaždice a zapomenout na uvítání v lobby
+// vypadá funkčně, jen appka slibuje tlačítko, které nikde není. Hlídá se obojí zvlášť.
+{
+  const bez = bezKomentaru(SRC_ONLINE);
+  kontrola(!/zk-accbands|zk-bandsave/.test(bez),
+    "Profil má zase dlaždice pro výběr pásma");
+  kontrola(!/"\/auth\/band"/.test(bez),
+    "online.js zase volá /auth/band — pásmo se z appky měnit nemá");
+  kontrola(!/(zapnout|přepne\w*|přepíná) (si )?v Profilu/.test(bez),
+    "nějaký text pořád posílá hráče přepnout si pásmo v Profilu, kde už žádná volba není");
 }
 
 // Obnova PINu po chybném přihlášení (2026-09-15, přání hráče): pod hláškou je odkaz
