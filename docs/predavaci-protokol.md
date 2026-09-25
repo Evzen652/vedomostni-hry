@@ -56,8 +56,12 @@ centrálně jednou po dokončení všech paralelních zápisů.
 **Produkce je pořád na `0dfa574` (16. 9.).** Od té doby přibylo na větvi jen obsahové
 a UI: ilustrace (KOMPLETNÍ FOND, teď i stylově sjednocený), `irony_prompt` v datech,
 50 nových otázek, bublina hostitele (2×), vlajka na glóbu, `BEZ_KARET`, dokumentace
-a skripty — **žádná migrace databáze**. Nasazení je rozhodnutí hráče; kdyby padlo, stačí
-`db:sync` + `npm run deploy` podle nasazeni.md (kód i obsah se změnily, takže obojí).
+a skripty. **Od 26. 9. čeká na produkci JEDNA migrace:** `migrations/2026-09-26-vyzvy.sql`
+(výzvy podle přezdívky místo přátel). Musí proběhnout PŘED `npm run deploy`, jinak
+`/api/challenge` vrací „no such table". **Pozor, jako jediná mění existující řádky:**
+maže kódy pro přátele (`friend_code = NULL`) a obsah tabulky `friends` — funkce je
+zrušená a zásady ochrany údajů ji už nezmiňují (viz CLAUDE.md 2026-09-26). Nasazení
+je rozhodnutí hráče; pořadí migrace → `db:sync` → `npm run deploy` podle nasazeni.md.
 
 Ilustrace do UI (dlaždice, výsledkové obrazovky) jdou i bez klíče: hráč je vygeneruje
 v chatu Gemini a uloží do `D:\weigle\plocha\Kvíz_ILUSTRACE`, session je jen zmenší

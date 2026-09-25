@@ -18,6 +18,11 @@ export const REG_BANDS = ['starsi', 'dospeli'];
  * žije tady a nikde jinde. Změníš-li ho, změň i text zásad.
  */
 export const REG_WINDOW_MS = 60 * 60 * 1000;
+
+// Nepřijatá výzva podle přezdívky propadne po třech dnech (2026-09-26). Tady, ne
+// v challenge/index.js, protože ji maže i úklid v settle.js — a ten se veze na /api/me,
+// kam chodí každý hráč, takže zásady můžou poctivě psát „smaže se s provozem hry".
+export const VYZVA_PLATI_MS = 3 * 24 * 60 * 60 * 1000;
 // Validuje se PROTI TOMUHLE SEZNAMU, ne indexaci objektu. `TIME_CONTROLS["constructor"]`
 // vrací funkci z prototypu, takže kontrola `if (!tc)` takové jméno pustí dál — a u turnaje
 // se hodnota dokonce ULOŽÍ do databáze, čímž vznikne položka, která každému, kdo do ní
@@ -88,7 +93,7 @@ export function newId() {
  */
 
 /** Povolené sloupce, ať se do SQL nikdy nedostane cizí jméno. */
-const LIMIT_SLOUPCE = ['game_tries', 'tourney_tries', 'friend_tries'];
+const LIMIT_SLOUPCE = ['game_tries', 'tourney_tries', 'friend_tries', 'challenge_tries'];
 
 /** Limit vázaný na účet. Vrací true, když se akce vejde. */
 export async function limitUctu(env, userId, sloupec, max, windowMs) {

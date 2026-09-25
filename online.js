@@ -504,7 +504,7 @@ window.ZKOnline = (function () {
       // s odehranými hrami — tichý „účet je pryč" by lhal, protože hry zůstávají.
       '<div class="zk-sect">' +
         "<h3>Smazání profilu</h3>" +
-        '<div class="zk-sectnote">Zmizí přezdívka, e-mail, kód pro přátele, seznam přátel ' +
+        '<div class="zk-sectnote">Zmizí přezdívka, e-mail, výzvy ' +
           "i rating — profil tím zmizí ze žebříčků. Odehrané hry zůstanou soupeřům " +
           "v historii, ale už nepůjde poznat, že byly tvoje: budou vedené jako " +
           "„Smazaný hráč“. Vrátit to nejde a přihlásit se zpátky taky ne.</div>" +
@@ -548,7 +548,7 @@ window.ZKOnline = (function () {
       var pin = body.querySelector("#zk-delpin").value || "";
       if (!pin) return renderAccount("Napiš PIN, jinak profil smazat nejde.");
       if (!window.confirm("Opravdu smazat profil " + (m.nick || "") + "?\n\n" +
-          "Přezdívka, e-mail, přátelé i rating zmizí. Odehrané hry zůstanou soupeřům " +
+          "Přezdívka, e-mail, výzvy i rating zmizí. Odehrané hry zůstanou soupeřům " +
           "v historii jako „Smazaný hráč“. Vrátit to nejde.")) return;
       req("/me", { method: "DELETE", body: { pin: pin } }).then(function (r) {
         if (r.status !== 200) return renderAccount((r.body && r.body.error) || "Nepovedlo se.");
@@ -709,7 +709,7 @@ window.ZKOnline = (function () {
   // `msg` je chybová hláška, ale renderLobby se na šesti místech předává rovnou jako
   // klikací handler (`backBar("Zpět", renderLobby)`), takže dostane MouseEvent — a ten
   // by se přes esc() vykreslil jako červené „[object MouseEvent]". Ostatní obrazovky
-  // (renderAccount, renderTournaments, renderFriends) ten guard mají; tady chyběl.
+  // (renderAccount, renderTournaments, renderVyzvy) ten guard mají; tady chyběl.
   function renderLobby(msg) {
     if (typeof msg !== "string") msg = "";
     stopAll();
@@ -737,6 +737,10 @@ window.ZKOnline = (function () {
         '<p class="zk-wel-l">' + t.souperi + "</p>" +
         (ratingText ? '<p class="zk-wel-l">' + ratingText + "</p>" : "") +
       "</div>" +
+      // Příchozí výzvy a hry, kde je hráč na tahu. Dotahují se ASYNCHRONNĚ až po
+      // vykreslení, takže lobby kvůli nim na síť nečeká — a když nic není, zůstane
+      // místo prázdné a hráč bez aktivity nic navíc nevidí.
+      '<div id="zk-social"></div>' +
       // JEDNA hlavní akce — hráč přišel hrát, ne spravovat účet.
       // Popisek říká MECHANIKU, ne slib (sousední dlaždice taky: „Pět otázek, jeden
       // pokus"). Čísla musí sedět s TIME_CONTROLS.blesk ve functions/_lib/game.js —
@@ -759,7 +763,7 @@ window.ZKOnline = (function () {
       // utility — jen ikona a slovo, žádné popisky
       '<div class="zk-utils">' +
         utilTlacitko("zk-board", "Žebříček", ICO_BOARD) +
-        utilTlacitko("zk-friends", "Přátelé", ICO_FRIENDS) +
+        utilTlacitko("zk-vyzvy", "Výzvy", ICO_FRIENDS) +
         utilTlacitko("zk-account", "Profil", ICO_ACCOUNT) +
       "</div></div>";
 
@@ -768,8 +772,27 @@ window.ZKOnline = (function () {
     on("zk-daily", startDaily);
     on("zk-tourney", renderTournaments);
     on("zk-board", renderBoard);
-    on("zk-friends", renderFriends);
+    on("zk-vyzvy", renderVyzvy);
     on("zk-account", renderAccount);
+    nactiSocialni();
+  }
+
+  // Doplní do lobby příchozí výzvy a hry na tahu. Guard na `#zk-social` je nutný, ne
+  // opatrnický: odpověď může dorazit, až hráč z lobby odešel, a kreslit do odpojeného
+  // DOMu je přesně ta třída chyby, kvůli které appka 2026-08-30 padala (insertAdjacentHTML
+  // nad null).
+  function nactiSocialni() {
+    req("/challenge").then(function (r) {
+      var kde = body.querySelector("#zk-social");
+      if (!kde || r.status !== 200) return;
+      var prichozi = r.body.prichozi || [], naTahu = r.body.na_tahu || [];
+      if (!prichozi.length && !naTahu.length) return;
+      kde.className = "zk-social";
+      kde.innerHTML =
+        (naTahu.length ? '<div class="zk-rowlist">' + naTahu.map(radekNaTahu).join("") + "</div>" : "") +
+        (prichozi.length ? '<div class="zk-rowlist">' + prichozi.map(radekPrichozi).join("") + "</div>" : "");
+      napojVyzvy(kde, renderLobby);
+    });
   }
 
   // Obrázek dlaždice s emoji fallbackem — stejný vzor jako offline rozcestník v quiz.js,
@@ -868,9 +891,7 @@ window.ZKOnline = (function () {
   }
 
   // ---------------------------------------------------------------- souboj na odkaz
-  // `proKoho` je jen jméno do textu (výzva z Přátel) — API přímé vyzvání neumí,
-  // odkaz je pořád stejný, jen se hráči řekne, komu ho má poslat.
-  function createLink(withBot, proKoho) {
+  function createLink(withBot) {
     stopAll();
     req("/game", { method: "POST", body: { mode: "odkaz", time_control: "blesk" } }).then(function (r) {
       if (r.status !== 201) return renderLobby((r.body && r.body.error) || "Nepovedlo se.");
@@ -882,14 +903,15 @@ window.ZKOnline = (function () {
           beginGame(id, "odkaz", { nick: jmeno });
         });
       }
-      odkazNaHru(id, proKoho);
+      odkazNaHru(id, null);
     });
   }
 
   /**
    * Obrazovka „pošli odkaz a hraj". Vytažená z createLink, protože ji potřebuje i ODVETA:
    * ta soupeře sice zapíše do hry, ale nijak mu to neoznámí, takže bez odkazu by o ní
-   * nevěděl (2026-09-04). `proKoho` je jen jméno do textu — API přímé vyzvání neumí.
+   * nevěděl (2026-09-04). `proKoho` je jen jméno do textu (volá ho s ním odveta).
+   * Pro přímé vyzvání podle přezdívky je od 2026-09-26 samostatná cesta — viz výzvy.
    */
   function odkazNaHru(id, proKoho, nadpis) {
       var url = location.origin + location.pathname + "?duel=" + id;
@@ -1609,63 +1631,134 @@ window.ZKOnline = (function () {
     });
   }
 
-  // ---------------------------------------------------------------- přátelé
-  function renderFriends(msg) {
+  // ---------------------------------------------------------------- výzvy
+  // VÝZVY NAHRADILY PŘÁTELE S KÓDEM (2026-09-26, přání hráče). Přidat přítele nedávalo
+  // nic navíc: jediné tlačítko u něj založilo souboj na odkaz, který se stejně musel
+  // poslat ručně — tedy přesně to, co umí dlaždice „Souboj na odkaz". Teď se vyzývá
+  // přímo podle přezdívky jako na chess.com a vyzvanému se výzva ukáže v lobby.
+  //
+  // Hra NEVZNIKÁ výzvou, ale teprve přijetím (server: challenge/[id]/accept.js). Proto
+  // tu po odeslání výzvy nikam nejdeme — hrát se dá, až druhý přijme.
+
+  // Přijetí výzvy. Tlačítko se zablokuje hned: dvojklik by poslal dva požadavky
+  // a server by sice druhou hru nezaložil (DELETE-zámek), ale hráč by viděl chybu.
+  function prijmoutVyzvu(tlacitko, id, nick) {
+    tlacitko.disabled = true;
+    req("/challenge/" + id + "/accept", { method: "POST" }).then(function (r) {
+      if (r.status !== 201) return renderLobby((r.body && r.body.error) || "Výzvu se nepodařilo přijmout.");
+      beginGame(r.body.game_id, "odkaz", { nick: nick });
+    });
+  }
+
+  // Odmítnutí i zrušení je na serveru tatáž operace — výzva zmizí.
+  function smazatVyzvu(tlacitko, id, pak) {
+    tlacitko.disabled = true;
+    req("/challenge/" + id, { method: "DELETE" }).then(function (r) {
+      pak(r.status === 200 ? "" : (r.body && r.body.error) || "Nepovedlo se.");
+    });
+  }
+
+  // Řádek s příchozí výzvou — sdílí ho lobby i obrazovka výzev, ať vypadají stejně.
+  function radekPrichozi(c) {
+    return '<div class="qz-standrow"><span class="qz-standname"><b>' + esc(c.nick) + "</b> tě vyzývá</span>" +
+      '<button class="zk-challenge zk-vprijmout" data-id="' + esc(c.id) + '" data-nick="' + esc(c.nick) + '">Přijmout ' +
+        handArrowSvg(false) + "</button>" +
+      '<button class="zk-vsmazat" data-id="' + esc(c.id) + '" title="Odmítnout" aria-label="Odmítnout výzvu od ' +
+        esc(c.nick) + '">✕</button></div>';
+  }
+
+  // Hra, ve které je hráč na tahu. Bez tohohle by se vyzyvatel o přijaté výzvě nikdy
+  // nedozvěděl — lobby do 2026-09-26 neukazovalo hry čekající na hráče VŮBEC, takže
+  // svou půlku souboje neodehrál. Týkalo se to i obyčejného souboje na odkaz.
+  function radekNaTahu(g) {
+    // Bot se maskuje lidským jménem stejně jako ve hře a ve výsledku (klíčem je id hry,
+    // takže jméno sedí s tím, co hráč viděl při hraní). Syrová přezdívka by ho prozradila.
+    var jmeno = souperJmeno(g.souper, !!g.souper_bot, g.id);
+    return '<div class="qz-standrow"><span class="qz-standname">Hra s <b>' + esc(jmeno) + "</b></span>" +
+      '<button class="zk-challenge zk-vhrat" data-id="' + esc(g.id) + '" data-nick="' + esc(jmeno) + '">Hrát ' +
+        handArrowSvg(false) + "</button></div>";
+  }
+
+  function napojVyzvy(kde, obnov) {
+    kde.querySelectorAll(".zk-vprijmout").forEach(function (b) {
+      b.addEventListener("click", function () {
+        prijmoutVyzvu(b, b.getAttribute("data-id"), b.getAttribute("data-nick"));
+      });
+    });
+    kde.querySelectorAll(".zk-vsmazat").forEach(function (b) {
+      b.addEventListener("click", function () { smazatVyzvu(b, b.getAttribute("data-id"), obnov); });
+    });
+    kde.querySelectorAll(".zk-vhrat").forEach(function (b) {
+      b.addEventListener("click", function () {
+        beginGame(b.getAttribute("data-id"), "odkaz", { nick: b.getAttribute("data-nick") });
+      });
+    });
+  }
+
+  // `napsano` = přezdívka, kterou hráč napsal a server ji odmítl. Obrazovka se po odeslání
+  // kreslí celá znovu, takže bez tohohle by překlep v přezdívce smazal i ji — a psala by
+  // se znovu celá, ačkoli stačí opravit jedno písmeno.
+  function renderVyzvy(msg, napsano) {
     stopAll();
-    say("Přátelé se přidávají na kód — nedají se vyhledat podle přezdívky.");
-    req("/friends").then(function (r) {
-      // Výpadek se dřív tvářil jako prázdný seznam přátel. msg feeduje errBox níž.
-      if (r.status !== 200) msg = (r.body && r.body.error) || "Přátele se nepodařilo načíst, zkus to prosím znovu.";
+    say("Napiš přezdívku a pošli výzvu. Hrát se začne, až ji druhý přijme.");
+    req("/challenge").then(function (r) {
+      if (r.status !== 200) msg = (r.body && r.body.error) || "Výzvy se nepodařilo načíst, zkus to prosím znovu.";
       var d = r.body || {};
+      var prichozi = d.prichozi || [], odchozi = d.odchozi || [], nedavni = d.nedavni || [];
       body.innerHTML =
         '<div class="qz-screen qz-setup zk-wrap">' +
         backBar("Zpět", renderLobby) +
-        "<h2>Přátelé</h2>" +
+        "<h2>Výzvy</h2>" +
         errBox(typeof msg === "string" ? msg : "") +
+        (prichozi.length
+          ? '<h3 class="zk-vnadpis">Vyzvali tě</h3><div class="zk-rowlist">' +
+              prichozi.map(radekPrichozi).join("") + "</div>"
+          : "") +
         '<div class="qz-setcard zk-form">' +
-          '<div class="qz-fieldlabel">Tvůj kód — dej ho tomu, s kým chceš hrát</div>' +
-          '<div class="zk-code">' + esc(d.my_code || "—") + "</div>" +
-          '<div class="qz-fieldlabel" style="margin-top:1rem">Přidat podle kódu</div>' +
-          '<input class="qz-pname-in" id="zk-code" maxlength="6" autocomplete="off" placeholder="ABC123">' +
-          '<button class="qz-go" id="zk-addf">Přidat ' + handArrowSvg(false) + '</button>' +
+          '<label class="qz-fieldlabel" for="zk-vnick">Koho vyzveš</label>' +
+          '<input class="qz-pname-in" id="zk-vnick" maxlength="20" autocomplete="off" placeholder="Přezdívka hráče" value="' +
+            esc(napsano || "") + '">' +
+          '<button class="qz-go" id="zk-vposlat">Vyzvat ' + handArrowSvg(false) + "</button>" +
         "</div>" +
-        // U každého přítele je akce. Bez ní byl seznam slepá ulička: přátele šlo přidat,
-        // ale nedalo se s nimi nic dělat — jen se koukat na přezdívky.
-        ((d.friends || []).length
-          ? '<div class="zk-rowlist">' + d.friends.map(function (f) {
-              return '<div class="qz-standrow"><span class="qz-standname">' + esc(f.nick) + "</span>" +
-                '<button class="zk-challenge" data-nick="' + esc(f.nick) + '">Vyzvat ' + handArrowSvg(false) + '</button>' +
-                // Odebrat musí jít. Přidání je oboustranné a bez souhlasu druhé strany,
-                // takže bez tohohle zůstal kdokoli v seznamu napořád. (2026-09-01)
-                '<button class="zk-unfriend" data-id="' + esc(f.id) + '" data-nick="' + esc(f.nick) +
-                  '" title="Odebrat z přátel" aria-label="Odebrat ' + esc(f.nick) + ' z přátel">✕</button></div>';
-            }).join("") + "</div>"
-          : '<div class="qz-setnote">Zatím nikdo. Dej svůj kód kamarádovi — nebo si rovnou ' +
-            "založ souboj na odkaz a pošli mu ho.</div>") +
+        // Poslední soupeři z odehraných her — rychlá cesta ke hře s tím, s kým hraješ.
+        // Server z nich vyřazuje boty: v UI mají lidské jméno, ale výzvu nikdy nepřijmou.
+        (nedavni.length
+          ? '<h3 class="zk-vnadpis">Poslední soupeři</h3><div class="zk-rowlist">' +
+              nedavni.map(function (n) {
+                return '<div class="qz-standrow"><span class="qz-standname">' + esc(n.nick) + "</span>" +
+                  '<button class="zk-challenge zk-vznovu" data-nick="' + esc(n.nick) + '">Vyzvat ' +
+                    handArrowSvg(false) + "</button></div>";
+              }).join("") + "</div>"
+          : "") +
+        (odchozi.length
+          ? '<h3 class="zk-vnadpis">Čekají na odpověď</h3><div class="zk-rowlist">' +
+              odchozi.map(function (c) {
+                return '<div class="qz-standrow"><span class="qz-standname">' + esc(c.nick) + "</span>" +
+                  '<button class="zk-vsmazat" data-id="' + esc(c.id) + '" title="Zrušit výzvu" aria-label="Zrušit výzvu pro ' +
+                    esc(c.nick) + '">✕</button></div>';
+              }).join("") + "</div>"
+          : "") +
+        (!prichozi.length && !odchozi.length && !nedavni.length
+          ? '<div class="qz-setnote">Zatím nic. Až si s někým zahraješ, objeví se tu, ať ho můžeš vyzvat znovu.</div>'
+          : "") +
         "</div>";
 
-      body.querySelector("#zk-addf").addEventListener("click", function () {
-        var code = body.querySelector("#zk-code").value || "";
-        req("/friends", { method: "POST", body: { code: code } }).then(function (rr) {
-          renderFriends(rr.status === 201 ? "" : (rr.body && rr.body.error) || "Nepovedlo se.");
+      function poslat(nick, zPole) {
+        nick = (nick || "").trim();
+        if (!nick) return renderVyzvy("Napiš přezdívku hráče.");
+        req("/challenge", { method: "POST", body: { nick: nick } }).then(function (rr) {
+          if (rr.status === 201) return renderVyzvy("");
+          renderVyzvy((rr.body && rr.body.error) || "Výzvu se nepodařilo poslat.", zPole ? nick : "");
         });
+      }
+      var pole = body.querySelector("#zk-vnick");
+      if (napsano) { pole.focus(); pole.select(); }
+      body.querySelector("#zk-vposlat").addEventListener("click", function () { poslat(pole.value, true); });
+      pole.addEventListener("keydown", function (e) { if (e.key === "Enter") poslat(pole.value, true); });
+      body.querySelectorAll(".zk-vznovu").forEach(function (b) {
+        b.addEventListener("click", function () { b.disabled = true; poslat(b.getAttribute("data-nick")); });
       });
-      // Výzva recykluje souboj na odkaz — API na přímé vyzvání nemá endpoint, takže
-      // se založí hra s odkazem a hráči se rovnou ukáže, co má kamarádovi poslat.
-      body.querySelectorAll(".zk-challenge").forEach(function (b) {
-        b.addEventListener("click", function () { createLink(false, b.getAttribute("data-nick")); });
-      });
-      // Ptáme se schválně: odebrání je tiché a nevratné (zpátky jen přes kód).
-      body.querySelectorAll(".zk-unfriend").forEach(function (b) {
-        b.addEventListener("click", function () {
-          var nick = b.getAttribute("data-nick");
-          if (!confirm("Odebrat " + nick + " z přátel?\n\nZmizí i tobě z jeho seznamu. Zpátky jen přes kód.")) return;
-          req("/friends", { method: "DELETE", body: { id: b.getAttribute("data-id") } })
-            .then(function (rr) {
-              renderFriends(rr.status === 200 ? "" : (rr.body && rr.body.error) || "Nepovedlo se.");
-            });
-        });
-      });
+      napojVyzvy(body, renderVyzvy);
     });
   }
 

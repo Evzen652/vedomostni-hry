@@ -1176,18 +1176,37 @@
 .zk-radar span:nth-child(3) { animation-delay: .36s; }
 @keyframes zk-pulse { 0%, 100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }
 
-/* Výzva u přítele — seznam přátel byl do teď jen k prohlížení. */
+/* Akce v řádku výzvy — Přijmout, Hrát, Vyzvat. Od 2026-09-26 slouží výzvám podle
+   přezdívky; dřív to bylo „Vyzvat" u přítele, a přátelé zmizeli. */
 .zk-challenge { margin-left: auto; flex: none; background: none; border: 1.5px solid var(--teal);
   border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 12px; font-weight: 700;
   color: var(--teal); cursor: pointer; transition: background .12s; }
 .zk-challenge:hover { background: #e8f2f0; }
-/* Odebrání přítele. Schválně tiché a menší než „Vyzvat" — je to výjimečná akce,
-   ne rovnocenná nabídka. `margin-left` NEmá auto: to už si bere .zk-challenge,
-   která tím odsune obě tlačítka doprava jako dvojici. (2026-09-01) */
-.zk-unfriend { flex: none; margin-left: 6px; background: none; border: 1.5px solid transparent;
+.zk-challenge:disabled { opacity: .5; cursor: default; }
+/* Odmítnutí / zrušení výzvy. Schválně tiché a menší než hlavní akce — je to výjimečná
+   volba, ne rovnocenná nabídka. `margin-left` NEmá auto: to si bere .zk-challenge, která
+   tím odsune obě tlačítka doprava jako dvojici. V řádku bez .zk-challenge (odchozí
+   výzva má jen „✕") se odsune samo přes `margin-left: auto` níž. */
+.zk-vsmazat { flex: none; margin-left: 6px; background: none; border: 1.5px solid transparent;
   border-radius: 999px; width: 26px; height: 26px; line-height: 1; padding: 0; font: inherit;
   font-size: 13px; color: var(--muted); cursor: pointer; transition: color .12s, border-color .12s; }
-.zk-unfriend:hover { color: var(--bad); border-color: #eec7bf; }
+.zk-vsmazat:hover { color: var(--bad); border-color: #eec7bf; }
+.zk-vsmazat:disabled { opacity: .5; cursor: default; }
+.qz-standname + .zk-vsmazat { margin-left: auto; }
+
+/* Nadpisy skupin na obrazovce Výzvy. Mezera NAD nadpisem je větší než mezera mezi
+   nadpisem a jeho seznamem (.zk-rowlist má margin-top 10 px), takže nadpis se čte
+   jako součást skupiny pod sebou, ne té nad sebou — pravidlo o vzdušnosti v CLAUDE.md. */
+.zk-vnadpis { font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 800; color: var(--teal);
+  margin: 22px 0 0; text-align: left; width: 100%; }
+
+/* Příchozí výzvy a hry na tahu v lobby. PRÁZDNÝ blok musí z toku ÚPLNĚ VYPADNOUT:
+   lobby je sloupec s `gap: 18px`, takže i prázdný <div> by přidal mezeru navíc a hráči
+   bez výzev by se „Hrát teď" posunulo dolů — rozbilo by to změřený rytmus uvítání →
+   hlavní akce (34 px). Plný blok patří na stranu akcí („klikni"), ne k uvítání. */
+#zk-social:empty { display: none; }
+.zk-social { width: 100%; }
+.zk-social > .zk-rowlist:first-child { margin-top: 0; }
 
 /* Vlastní řádek v žebříčku. */
 .qz-standrow.zk-me { border-color: var(--teal); background: #eef6f4; }
@@ -1199,8 +1218,6 @@
   .zk-play .zk-ic { width: 48px; height: 48px; }
   .zk-play .d { display: none; }   /* na mobilu se vejde jen název, popisek by dlaždici roztrhal */
 }
-.zk-code { font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 800; letter-spacing: .22em;
-  color: var(--teal); text-align: center; padding: 6px 0 2px; }
 .zk-rowlist { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
 .zk-rowlist .qz-standrow { background: var(--paper2); border: 1.4px solid #dccdb0; border-radius: 11px;
   padding: 8px 11px; display: flex; align-items: center; gap: 10px; }

@@ -16,6 +16,7 @@ DROP TABLE IF EXISTS game_players;
 DROP TABLE IF EXISTS games;
 DROP TABLE IF EXISTS seen_questions;
 DROP TABLE IF EXISTS ratings;
+DROP TABLE IF EXISTS challenges;
 DROP TABLE IF EXISTS friends;
 DROP TABLE IF EXISTS queue;
 DROP TABLE IF EXISTS tournament_queue;
@@ -107,6 +108,10 @@ CREATE TABLE users (
   game_tries_at   INTEGER NOT NULL DEFAULT 0,
   tourney_tries    INTEGER NOT NULL DEFAULT 0,
   tourney_tries_at INTEGER NOT NULL DEFAULT 0,
+  -- Klouzavé okno na výzvy podle přezdívky (2026-09-26). Bez něj by šlo kohokoli
+  -- zasypat výzvami — přezdívka je veřejná (žebříček), takže cíl najde každý.
+  challenge_tries    INTEGER NOT NULL DEFAULT 0,
+  challenge_tries_at INTEGER NOT NULL DEFAULT 0,
   -- NEPOVINNÝ e-mail, jediné k čemu slouží je obnova zapomenutého PINu.
   -- Schválně BEZ UNIQUE: rodič musí smět mít stejný e-mail u víc dětí.
   -- U dětského pásma ho má vyplnit rodič (viz docs/online-rezim.md, sekce 5).
@@ -114,12 +119,31 @@ CREATE TABLE users (
 );
 
 -- Přátelství je oboustranné: ukládají se oba směry, ať se dá číst jedním dotazem.
+-- PŘÁTELÉ SE OD 2026-09-26 NEPOUŽÍVAJÍ — nahradily je výzvy podle přezdívky (níž).
+-- Tabulka i `users.friend_code` v schématu ZŮSTÁVAJÍ: na produkci v nich můžou být
+-- řádky a jejich smazání by byla destruktivní migrace bez jakéhokoli přínosu. Nikdo
+-- do nich nepíše ani z nich nečte; úklid při smazání profilu (me.js) je neškodný.
 CREATE TABLE friends (
   user_id    TEXT NOT NULL,
   friend_id  TEXT NOT NULL,
   created_at INTEGER NOT NULL,
   PRIMARY KEY (user_id, friend_id)
 );
+
+-- Výzvy podle přezdívky (2026-09-26). Proč vlastní tabulka a ne stav ve `games`:
+-- nepřijatá výzva NESMÍ být hrou. Jako řádek v `games` by ji potkal `expireStaleGames`
+-- a po 48 h vyrovnal — soupeři by naskočila hodnocená prohra za partii, kterou nikdy
+-- neviděl (otevřený nález u odvety). Hra tu vzniká teprve PŘIJETÍM.
+-- UNIQUE(from_user, to_user): jedna čekající výzva na dvojici.
+CREATE TABLE challenges (
+  id          TEXT PRIMARY KEY,
+  from_user   TEXT NOT NULL,
+  to_user     TEXT NOT NULL,
+  band        TEXT NOT NULL,
+  created_at  INTEGER NOT NULL,
+  UNIQUE (from_user, to_user)
+);
+CREATE INDEX idx_challenges_to ON challenges(to_user, created_at);
 
 -- Rating zvlášť za pásmo (různé fondy = neporovnatelné). Časová kontrola se nedělí.
 CREATE TABLE ratings (

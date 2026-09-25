@@ -1,5 +1,5 @@
 import { json, fail, newId, REG_BANDS, REG_WINDOW_MS, limitIp } from '../../_lib/game.js';
-import { hashPin, signToken, sessionSecret, validateNick, validatePin, friendCode, validateEmail, validateAvatar } from '../../_lib/auth.js';
+import { hashPin, signToken, sessionSecret, validateNick, validatePin, validateEmail, validateAvatar } from '../../_lib/auth.js';
 
 // Klouzavé okno na REGISTRACI, klíčované IP (2026-09-02) — v okamžiku volání ještě
 // neexistuje účet, na který by šlo pověsit sloupec jako u friend_tries/game_tries.
@@ -62,16 +62,18 @@ export async function onRequestPost({ request, env }) {
   const pin_hash = await hashPin(pinCheck.pin);
   const avatar = validateAvatar(body.avatar);
 
-  const code = friendCode();
+  // Kód pro přátele se od 2026-09-26 NEGENERUJE — přátele nahradily výzvy podle přezdívky
+  // a kód by byl uložený údaj bez jakéhokoli účelu (zásady ho proto už nezmiňují).
+  // Sloupec `friend_code` v schématu zůstává, jen je nově prázdný; UNIQUE víc NULL pustí.
   await env.DB.batch([
     // `users.email` je schválně bez UNIQUE (viz schema.sql): rodič musí smět mít
     // stejnou adresu u víc dětí.
-    env.DB.prepare(`INSERT INTO users (id, nick, nick_lower, avatar, pin_hash, band, created_at, friend_code, email)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
-      .bind(id, nick, nick.toLowerCase(), avatar, pin_hash, band, Date.now(), code, email),
+    env.DB.prepare(`INSERT INTO users (id, nick, nick_lower, avatar, pin_hash, band, created_at, email)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
+      .bind(id, nick, nick.toLowerCase(), avatar, pin_hash, band, Date.now(), email),
     env.DB.prepare('INSERT INTO ratings (user_id, band) VALUES (?, ?)').bind(id, band),
   ]);
 
   const token = await signToken(id, sessionSecret(env));
-  return json({ id, nick, avatar, band, token, friend_code: code }, 201);
+  return json({ id, nick, avatar, band, token }, 201);
 }

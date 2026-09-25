@@ -83,6 +83,9 @@ export async function onRequestDelete({ request, env }) {
       .bind('Smazaný hráč ' + znacka, 'deleted:' + me.id, await hashPin(nahodnyPin), ted, me.id),
     env.DB.prepare('DELETE FROM ratings WHERE user_id = ?').bind(me.id),
     env.DB.prepare('DELETE FROM friends WHERE user_id = ? OR friend_id = ?').bind(me.id, me.id),
+    // Výzvy (2026-09-26) — odeslané i přijaté. Zásady slibují, že se se smazáním profilu
+    // mažou, a náhrobek „Smazaný hráč" nemá komu výzvu posílat ani od koho ji přijmout.
+    env.DB.prepare('DELETE FROM challenges WHERE from_user = ? OR to_user = ?').bind(me.id, me.id),
     env.DB.prepare('DELETE FROM queue WHERE user_id = ?').bind(me.id),
     env.DB.prepare('DELETE FROM pin_resets WHERE user_id = ?').bind(me.id),
     env.DB.prepare('DELETE FROM seen_questions WHERE user_id = ?').bind(me.id),

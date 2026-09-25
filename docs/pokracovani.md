@@ -157,17 +157,17 @@ bod 0a fronty.
 
 ## 5. Produkce — co ji čeká
 
-**Nasazeno naposledy 2026-09-03**, takže produkce nemá nic z toho, co vzniklo potom.
+**Nasazeno naposledy 2026-09-16 (`0dfa574`)**, takže produkce nemá nic z toho, co vzniklo potom.
 Postup je v [docs/nasazeni.md](nasazeni.md), pořadí je závazné: migrace → obsah → kód.
 
-Migrace, které na produkci ještě NEBĚŽELY (spouštět po jedné, jsou přírůstkové):
+Migrace, které na produkci ještě NEBĚŽELY (migrace do 2026-09-07 doběhly 2026-09-08):
 
 ```
-migrations/2026-09-04-difficulty.sql          (pokud neproběhla už dřív)
-migrations/2026-09-06-online-only.sql
-migrations/2026-09-06-token-epoch.sql
-migrations/2026-09-07-smazani-uctu.sql
+migrations/2026-09-26-vyzvy.sql
 ```
+
+Jako jediná mění existující řádky: vymaže kódy pro přátele a obsah tabulky `friends`
+(funkce je zrušená, viz CLAUDE.md 2026-09-26). Schéma jen přidává.
 
 Bez nich nový kód spadne na „no such column". **Nikdy nepouštěj `db:init:remote`** —
 smazal by účty, rating i historii.

@@ -1,5 +1,5 @@
 import { glicko2 } from './glicko.js';
-import { REG_WINDOW_MS } from './game.js';
+import { REG_WINDOW_MS, VYZVA_PLATI_MS } from './game.js';
 import { tournamentStatus } from './tournament.js';
 
 /** Po jaké době se nedohraná hra uzavře sama. */
@@ -36,6 +36,11 @@ export async function expireStaleGames(env) {
   // kdežto registrace (druhý úklid, v limitIp) je vzácná.
   await env.DB.prepare('DELETE FROM reg_attempts WHERE tries_at <= ?')
     .bind(Date.now() - REG_WINDOW_MS).run();
+  // Propadlé výzvy (2026-09-26). Ze stejného důvodu tady a PŘED časným návratem: maže je
+  // i challenge/index.js, ale ten volá jen ten, kdo otevře výzvy nebo lobby — tohle
+  // běží při každém vstupu do lobby kohokoli, na čemž stojí formulace v zásadách.
+  await env.DB.prepare('DELETE FROM challenges WHERE created_at < ?')
+    .bind(Date.now() - VYZVA_PLATI_MS).run();
   const hranice = Date.now() - EXPIRE_MS;
   const stare = (await env.DB.prepare(
     `SELECT id FROM games WHERE status = 'open' AND created_at < ? LIMIT ?`)

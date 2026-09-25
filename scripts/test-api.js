@@ -444,51 +444,109 @@ async function playAll(token, gameId, total, ms = 2000, spravne = false) {
   // kdežto ve frontě sis vybral jen to, že chceš hrát. Kontrola výš (řádek s
   // „rating se proti botovi nehnul") tohle drží z druhé strany.
 
-  // ------------------------------------------------------------ přátelé a odveta
-  section('Přátelé a odveta');
-  const mineFriends = await api('/api/friends', { token: A.token });
-  ok(/^[A-Z0-9]{6}$/.test(mineFriends.body.my_code || ''),
-     'mám kód pro přidání do přátel: ' + mineFriends.body.my_code);
+  // ------------------------------------------------------------ výzvy a odveta
+  // Výzvy podle přezdívky nahradily 2026-09-26 přátele s kódem. Testy hlídají hlavně
+  // to, na čem stojí bezpečnost: NEPŘIJATÁ VÝZVA NESMÍ BÝT HROU. Kdyby byla, po 48 h
+  // by ji expireStaleGames vyrovnal a vyzvanému by naskočila hodnocená prohra za
+  // partii, kterou nikdy neviděl — otevřený nález z auditu u odvety.
+  section('Výzvy a odveta');
+  const hryB = async () => (await api('/api/me', { token: B.token })).body.history.length;
 
-  const bCode = (await api('/api/friends', { token: B.token })).body.my_code;
-  const addF = await api('/api/friends', { method: 'POST', token: A.token, body: { code: bCode } });
-  ok(addF.status === 201, 'přítel se přidá podle kódu');
+  const hryBPred = await hryB();
+  const vyzva = await api('/api/challenge', { method: 'POST', token: A.token, body: { nick: nickB } });
+  ok(vyzva.status === 201, 'vyzvat hráče podle přezdívky jde, dostal ' + vyzva.status);
+  ok(await hryB() === hryBPred, 'VÝZVA SAMA HRU NEZALOŽÍ — vyzvanému nepřibyla žádná hra');
 
-  const listA = await api('/api/friends', { token: A.token });
-  ok(listA.body.friends.some(f => f.nick === nickB), 'je v mém seznamu');
-  const listB = await api('/api/friends', { token: B.token });
-  ok(listB.body.friends.some(f => f.nick === nickA), 'a přátelství je oboustranné');
+  // Přezdívka se hledá bez ohledu na velikost písmen, jako při přihlášení.
+  const zBVelke = await api('/api/challenge', { method: 'POST', token: A.token,
+    body: { nick: nickB.toUpperCase() } });
+  ok(zBVelke.status === 409, 'stejného hráče podruhé vyzvat nejde (i jinak psaného), dostal ' + zBVelke.status);
 
-  const selfAdd = await api('/api/friends', {
-    method: 'POST', token: A.token, body: { code: mineFriends.body.my_code } });
-  ok(selfAdd.status === 400, 'vlastní kód neprojde, dostal ' + selfAdd.status);
-  const badCode = await api('/api/friends', { method: 'POST', token: A.token, body: { code: 'ZZZZZZ' } });
-  ok(badCode.status === 404, 'neexistující kód je 404, dostal ' + badCode.status);
+  const seznamB = (await api('/api/challenge', { token: B.token })).body;
+  const prichozi = seznamB.prichozi.find(c => c.nick === nickA);
+  ok(prichozi, 'vyzvaný výzvu vidí mezi příchozími');
+  ok((await api('/api/challenge', { token: A.token })).body.odchozi.some(c => c.nick === nickB),
+     'vyzyvatel ji vidí mezi odchozími');
 
-  // Kód je JEDINÁ ochrana dětí před oslovením cizím člověkem, ale prostor 31^6
-  // chrání konkrétní účet, ne populaci — útočníkovi stačí jakékoli dítě. Limit se
-  // proto počítá jen z NEÚSPĚŠNÝCH pokusů; kdo kód opravdu dostal, na něj nenarazí.
-  const hadac = (await api('/api/auth/register', { method: 'POST',
-    body: { nick: 'Hadac_' + uniq(), pin: '1234', band: 'dospeli' } })).body;
-  let posledni = null;
-  for (let i = 0; i < 12; i++) {
-    posledni = await api('/api/friends', { method: 'POST', token: hadac.token,
-      body: { code: 'QQQQQ' + String(i % 10) } });
+  const sebe = await api('/api/challenge', { method: 'POST', token: A.token, body: { nick: nickA } });
+  ok(sebe.status === 400, 'sám sebe vyzvat nejde, dostal ' + sebe.status);
+  const nikdo = await api('/api/challenge', { method: 'POST', token: A.token,
+    body: { nick: 'Nikdo_' + uniq() } });
+  ok(nikdo.status === 404, 'neexistující přezdívka je 404, dostal ' + nikdo.status);
+
+  // Výzva botovi MUSÍ vrátit totéž co neexistující hráč. Jinak by se zkoušením přezdívek
+  // dalo zjistit, které účty jsou boti — a tím že „živý" soupeř v rychlé hře bývá náhradník.
+  const nickBota = botGame.body.players.find(p => p.is_bot).nick;
+  const naBota = await api('/api/challenge', { method: 'POST', token: A.token, body: { nick: nickBota } });
+  ok(naBota.status === 404 && naBota.body.error === nikdo.body.error,
+     'výzva botovi vypadá přesně jako neexistující hráč, dostal ' + naBota.status);
+
+  // Přijmout smí jen vyzvaný. Vyzyvatel svou vlastní výzvu přijmout nemůže.
+  const cizi = await api(`/api/challenge/${prichozi.id}/accept`, { method: 'POST', token: A.token });
+  ok(cizi.status === 404, 'vyzyvatel vlastní výzvu přijmout nemůže, dostal ' + cizi.status);
+
+  const prijato = await api(`/api/challenge/${prichozi.id}/accept`, { method: 'POST', token: B.token });
+  ok(prijato.status === 201 && prijato.body.game_id, 'přijetím vznikne hra, dostal ' + prijato.status);
+  ok(await hryB() === hryBPred + 1, 'vyzvanému přibyla právě jedna hra');
+  const hraZVyzvy = (await api(`/api/game/${prijato.body.game_id}`, { token: B.token })).body;
+  ok(hraZVyzvy.rated === true, 'hra z výzvy je hodnocená — oba k ní dali souhlas');
+  // `|| []` není kosmetika: když přijetí selže, `game_id` chybí a odpověď hry je chyba
+  // bez `players`. Bez pojistky by test tady HAVAROVAL místo aby nahlásil chybu — a to
+  // se 2026-09-26 stalo při mutačním testu, který havárii omylem četl jako průchod.
+  ok((hraZVyzvy.players || []).length === 2, 'a hrají v ní oba');
+  // Dvojklik na „Přijmout" nesmí založit druhou hru — DELETE v accept.js je zámek.
+  const znovu = await api(`/api/challenge/${prichozi.id}/accept`, { method: 'POST', token: B.token });
+  ok(znovu.status === 404 || znovu.status === 409, 'druhé přijetí téže výzvy neprojde, dostal ' + znovu.status);
+  ok(await hryB() === hryBPred + 1, 'a druhá hra nevznikla');
+  ok(!(await api('/api/challenge', { token: B.token })).body.prichozi.some(c => c.nick === nickA),
+     'přijatá výzva ze seznamu zmizela');
+  // Vyzyvatel se o přijaté výzvě musí DOZVĚDĚT — do 2026-09-26 lobby hry čekající na
+  // hráče neukazovalo vůbec, takže by svou půlku nikdy neodehrál.
+  const naTahuA = (await api('/api/challenge', { token: A.token })).body.na_tahu || [];
+  ok(naTahuA.some(g => g.id === prijato.body.game_id && g.souper === nickB),
+     'vyzyvatel má přijatou hru v seznamu „jsi na tahu"');
+
+  // Odmítnutí: výzva zmizí a hra NEVZNIKNE.
+  await api('/api/challenge', { method: 'POST', token: A.token, body: { nick: nickB } });
+  const kOdmitnuti = (await api('/api/challenge', { token: B.token })).body.prichozi.find(c => c.nick === nickA);
+  const hryPredOdmitnutim = await hryB();
+  const odmitnuto = await api(`/api/challenge/${kOdmitnuti.id}`, { method: 'DELETE', token: B.token });
+  ok(odmitnuto.status === 200, 'výzvu jde odmítnout, dostal ' + odmitnuto.status);
+  ok(await hryB() === hryPredOdmitnutim, 'ODMÍTNUTÍM HRA NEVZNIKNE');
+  ok(!(await api('/api/challenge', { token: A.token })).body.odchozi.some(c => c.nick === nickB),
+     'odmítnutá výzva zmizela i vyzyvateli');
+
+  // Poslední soupeři: A a B spolu hráli, takže se tam objeví. Bot NESMÍ — v UI se
+  // kreslí lidským jménem, ale výzvu nikdy nepřijme, takže by na něj hráč čekal navždy.
+  const nedavniA = (await api('/api/challenge', { token: A.token })).body.nedavni;
+  ok(nedavniA.some(n => n.nick === nickB), 'soupeř z odehrané hry je mezi posledními');
+  ok(!nedavniA.some(n => n.nick === nickBota), 'bot mezi posledními soupeři není');
+
+  // Přezdívka je veřejná (žebříček), takže cíl najde každý — bez stropu by šlo kohokoli
+  // zasypat. Limit se počítá PŘED vyhledáním hráče, takže brzdí i zkoušení přezdívek.
+  const otrava = (await api('/api/auth/register', { method: 'POST',
+    body: { nick: 'Otrava_' + uniq(), pin: '1234', band: 'dospeli' } })).body;
+  let poslednVyzva = null;
+  for (let i = 0; i < 21; i++) {
+    poslednVyzva = await api('/api/challenge', { method: 'POST', token: otrava.token, body: { nick: nickB } });
   }
-  ok(posledni.status === 429, 'hádání kódu se po deseti pokusech zastaví, dostal ' + posledni.status);
-  // Platný kód po vyčerpání limitu taky neprojde — jinak by limit nechránil nic.
-  const poLimitu = await api('/api/friends', { method: 'POST', token: hadac.token, body: { code: bCode } });
-  ok(poLimitu.status === 429, 'ani platný kód po limitu neprojde, dostal ' + poLimitu.status);
+  ok(poslednVyzva.status === 429, 'po dvaceti výzvách za hodinu další neprojde, dostal ' + poslednVyzva.status);
 
-  // Odebrat přítele muselo jít: přidání je oboustranné a bez souhlasu druhé strany,
-  // takže bez DELETE zůstal kdokoli v seznamu napořád.
-  const bId = listA.body.friends.find(f => f.nick === nickB).id;
-  const odebr = await api('/api/friends', { method: 'DELETE', token: A.token, body: { id: bId } });
-  ok(odebr.status === 200, 'přítel se odebere, dostal ' + odebr.status);
-  ok(!(await api('/api/friends', { token: A.token })).body.friends.some(f => f.nick === nickB),
-     'a v mém seznamu už není');
-  ok(!(await api('/api/friends', { token: B.token })).body.friends.some(f => f.nick === nickA),
-     'zmizelo i v seznamu druhé strany');
+  // Přátelé s kódem jsou pryč i ze serveru, a registrace kód negeneruje.
+  ok((await api('/api/friends', { token: A.token })).status === 404,
+     'endpoint přátel už neexistuje');
+  ok(!('friend_code' in otrava), 'registrace už nevrací kód pro přátele');
+
+  // Smazání profilu maže i výzvy — zásady to slibují. `otrava` má čekající výzvu pro B.
+  // Hledá se podle ID, ne podle přezdívky: smazáním se přezdívka přepíše na „Smazaný
+  // hráč…", takže kontrola podle jména by prošla, i kdyby výzva zůstala viset.
+  const vyzvaOtravy = (await api('/api/challenge', { token: B.token })).body.prichozi
+    .find(c => c.nick.startsWith('Otrava_'));
+  ok(vyzvaOtravy, 'před smazáním B výzvu od mazaného hráče vidí');
+  await api('/api/me', { method: 'DELETE', token: otrava.token, body: { pin: '1234' } });
+  ok(!(await api('/api/challenge', { token: B.token })).body.prichozi
+       .some(c => vyzvaOtravy && c.id === vyzvaOtravy.id),
+     'SMAZÁNÍM PROFILU ZMIZELA I JEHO VÝZVA');
 
   // Odveta NESMÍ soupeři odepsat otázky, které nikdy neuvidí. Do 2026-09-01 mu
   // markSeen běžel rovnou při založení a bez limitu na počet odvet, takže mu šlo

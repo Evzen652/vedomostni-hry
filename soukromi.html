@@ -49,21 +49,22 @@
     <h2>Světová liga a profil</h2>
     <p>Pro hru proti ostatním si zakládáš profil. Ukládáme k němu:</p>
     <ul>
-      <li>Přezdívku. Vidí ji ostatní hráči — v soubojích, v žebříčku, v turnajích a mezi přáteli.</li>
+      <li>Přezdívku. Vidí ji ostatní hráči — v soubojích, v žebříčku a v turnajích. Kdo ji zná, může ti podle ní poslat výzvu na souboj; výzvu můžeš odmítnout.</li>
       <li>PIN, ale nikdy ne tak, jak ho píšeš. Máme jen jeho otisk (PBKDF2-SHA256 se solí), ze kterého se PIN zpátky získat nedá.</li>
       <li>E-mail, pokud ho vyplníš. Použijeme ho jedině k tomu, abychom ti poslali odkaz na obnovu zapomenutého PINu. Nikomu ho neukazujeme a nic dalšího na něj neposíláme.</li>
-      <li>Obtížnostní pásmo, obrázek profilu, kód pro přidávání přátel a datum založení.</li>
+      <li>Obtížnostní pásmo, obrázek profilu a datum založení.</li>
     </ul>
     <p>Když hraješ, ukládáme:</p>
     <ul>
       <li>Odehrané hry — tvé odpovědi, čas odpovědi a skóre. Z toho počítáme rating a pořadí v žebříčku.</li>
       <li>Seznam otázek, které už znáš, aby se ti v dalších hrách neopakovaly.</li>
-      <li>Přátele, které si přidáš, a turnaje, do kterých vstoupíš.</li>
+      <li>Výzvy, které pošleš nebo dostaneš — kdo koho vyzval a kdy. Mažeme je, jakmile výzvu přijmeš nebo odmítneš. Nevyřízená výzva po třech dnech propadne a smaže se automaticky s provozem hry.</li>
+      <li>Turnaje, do kterých vstoupíš.</li>
     </ul>
     <p>A pár údajů, které chrání tebe i hru:</p>
     <ul>
       <li>Počet neúspěšných pokusů o přihlášení, aby tvůj PIN nešlo uhodnout zkoušením.</li>
-      <li>Počítadla pro limity — kolik her, turnajů a pokusů o kód přítele proběhlo za poslední hodinu.</li>
+      <li>Počítadla pro limity — kolik her, turnajů a výzev proběhlo za poslední hodinu.</li>
       <li>IP adresu, ze které zakládáš profil. Slouží jen k tomu, aby nešlo hromadně zakládat profily. K profilu ji nevážeme a po hodině ji mažeme.</li>
     </ul>
 
@@ -94,7 +95,7 @@
     </ul>
 
     <h2>Smazání profilu</h2>
-    <p>Profil smažeš přímo ve hře, ve Světové lize v Profilu. Přezdívka, e-mail i kód pro přátele zmizí, PIN přestane fungovat a všechna přihlášení se okamžitě zruší. Smažeme rating, přátele a seznam otázek, které znáš.</p>
+    <p>Profil smažeš přímo ve hře, ve Světové lize v Profilu. Přezdívka i e-mail zmizí, PIN přestane fungovat a všechna přihlášení se okamžitě zruší. Smažeme rating, odeslané i přijaté výzvy a seznam otázek, které znáš.</p>
     <p>Odehrané hry zůstanou, ale už nebudou spojené s tebou — soupeř je u sebe uvidí jako hru se „Smazaným hráčem“. Jinak bychom ostatním hráčům mazali jejich vlastní historii. Podrobně to popisujeme na stránce <a href="smazani-uctu">Smazání profilu</a>.</p>
 
     <h2>Tvoje práva</h2>

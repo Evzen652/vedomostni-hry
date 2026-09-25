@@ -1012,6 +1012,52 @@ sekce("PWA: manifest, service worker a ikony");
   kontrola(/<meta name="theme-color"/.test(HRA), "hra.html nemá theme-color");
 }
 
+// ---- výzvy podle přezdívky místo přátel (2026-09-26) ----
+// Přátelé s kódem zmizeli a nahradily je výzvy. Hlídají se místa, kde by po nich
+// zůstala stopa, která by potichu lhala nebo rozbila rozvržení:
+//   · appka by volala endpoint, který už neexistuje,
+//   · právní stránky by dál tvrdily, že ukládáme přátele a kód pro ně — a jejich vlastní
+//     pravidlo říká, že každé tvrzení musí sedět na kód, jinak lžou,
+//   · prázdný blok výzev v lobby by přidal mezeru a posunul „Hrát teď" dolů.
+sekce("Výzvy podle přezdívky místo přátel");
+{
+  const bez = bezKomentaru(SRC_ONLINE);
+  kontrola(!/["']\/friends["']/.test(bez), "online.js pořád volá /friends, který už neexistuje");
+  kontrola(!/renderFriends/.test(bez), "online.js pořád obsahuje obrazovku přátel");
+  kontrola(/function renderVyzvy\(/.test(bez), "online.js nemá obrazovku výzev");
+  kontrola(/req\("\/challenge"/.test(bez), "online.js nevolá /challenge");
+  kontrola(/utilTlacitko\("zk-vyzvy", "Výzvy"/.test(bez), "v lobby není dlaždice Výzvy");
+  kontrola(!/"Přátelé"/.test(bez), "v online.js zůstal nápis Přátelé");
+
+  // Odpověď na výzvy může dorazit, až hráč z lobby odešel. Kreslit do odpojeného DOMu
+  // je přesně chyba, kvůli které appka 2026-08-30 padala (insertAdjacentHTML nad null).
+  const soc = /function nactiSocialni\(\)\s*\{([\s\S]*?)\n  \}/.exec(bez);
+  kontrola(soc && /querySelector\("#zk-social"\)/.test(soc[1]) && /if \(!kde/.test(soc[1]),
+    "nactiSocialni nekontroluje, jestli #zk-social ještě existuje — spadne po odchodu z lobby");
+
+  // Odmítnutá přezdívka (překlep) musí v poli zůstat. Obrazovka se po odeslání kreslí
+  // celá znovu, takže bez předání hodnoty by se psala celá znovu kvůli jednomu písmenu.
+  kontrola(/id="zk-vnick"[^\n]*value="'\s*\+\s*\n?\s*esc\(napsano/.test(bez),
+    "pole přezdívky ve výzvách po chybě nevrací, co hráč napsal");
+  kontrola(/renderVyzvy\([^;]*zPole \? nick : ""\)/.test(bez),
+    "odmítnutá výzva z pole nepředá napsanou přezdívku zpět do obrazovky");
+
+  // Prázdný blok výzev nesmí přidat mezeru do lobby (sloupec s gap: 18px).
+  kontrola(/#zk-social:empty\s*\{\s*display:\s*none/.test(SRC_CSS),
+    "prázdný #zk-social není skrytý — hráči bez výzev by se posunulo Hrát teď dolů");
+  // Mrtvé CSS po přátelích. Pravidlo bez jediného uživatele je to, na co appka
+  // doplatila 2026-09-04 u .qz-a.locked.
+  kontrola(!/\.zk-code\b/.test(SRC_CSS) && !/\.zk-unfriend\b/.test(SRC_CSS),
+    "po přátelích zůstalo mrtvé CSS (.zk-code nebo .zk-unfriend)");
+
+  for (const s of ["soukromi.html", "smazani-uctu.html", "podminky.html"]) {
+    const text = fs.readFileSync(s, "utf8").replace(/<!--[\s\S]*?-->/g, "");
+    kontrola(!/přátel|kód pro/i.test(text), s + " pořád mluví o přátelích nebo kódu pro ně");
+  }
+  const zasady = fs.readFileSync("soukromi.html", "utf8");
+  kontrola(/výzv/i.test(zasady), "zásady ochrany údajů nezmiňují výzvy, které appka nově ukládá");
+}
+
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

@@ -81,6 +81,85 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-26 — PŘÁTELÉ S KÓDEM ZRUŠENI, NAHRADILY JE VÝZVY PODLE PŘEZDÍVKY (jako
+  chess.com). Nepřijatá výzva NENÍ hra — vlastní tabulka `challenges`, hra vzniká až
+  přijetím.**
+  Hráč na obrazovce Přátel: *„tohle vůbec nechápu"*. Právem — **přidat přítele nedávalo
+  nic.** Jediné tlačítko u něj („Vyzvat") založilo souboj na odkaz, který se stejně musel
+  poslat ručně, tedy totéž co dlaždice „Souboj na odkaz". Seznam přátel nečetlo nic jiného
+  (párování, žebříček, turnaje). Kód místo přezdívky vznikl jako ochrana dětí před
+  vyhledáním cizím člověkem — jenže děti od 2026-09-10 profil nemají, takže důvod odpadl.
+  Hráč zvolil: **bez přátel, výzva podle přezdívky + poslední soupeři.**
+  - **Server:** `GET/POST /api/challenge` (seznam / vyzvi), `POST /api/challenge/:id/accept`
+    (TEPRVE TADY VZNIKÁ HRA, `mode='odkaz'`, `rated=1`), `DELETE /api/challenge/:id`
+    (odmítnout i zrušit — tatáž operace). `functions/api/friends.js` a `friendCode()` smazané,
+    registrace kód negeneruje. Migrace `migrations/2026-09-26-vyzvy.sql`.
+  - **PROČ VLASTNÍ TABULKA, NE STAV VE `games`:** výzva jako řádek v `games` by ji potkal
+    `expireStaleGames` a po 48 h vyrovnal — vyzvanému by naskočila **hodnocená prohra za
+    partii, kterou nikdy neviděl**. To je přesně otevřený nález z auditu u odvety (vkládá
+    soupeře bez jeho vědomí). Tady ta třída chyby padá **konstrukcí**, ne podmínkou, na kterou
+    by šlo zapomenout. `UNIQUE(from_user, to_user)` = jedna čekající výzva na dvojici.
+  - **PŘIJETÍ MÁ DELETE-ZÁMEK proti dvojkliku** (kdo výzvu smaže, ten ji přijal; stejný vzor
+    jako UPDATE-zámek v settle.js). **Mutací NEJDE dokázat** a je to v pořádku: postupné dvojí
+    přijetí zastaví už dřívější SELECT (výzva je pryč → 404), zámek chrání jen skutečný souběh,
+    a ten se přes lokální wrangler vynutit nedá (viz 2026-09-01). Test „druhé přijetí neprojde"
+    je kouřová zkouška sekvenčního případu, ne důkaz zámku.
+  - **Výzva botovi vrací PŘESNĚ TOTÉŽ co neexistující hráč** (stejný kód i text) — jinak by
+    se zkoušením přezdívek dalo zjistit, které účty jsou boti, a tím že „živý" soupeř v rychlé
+    hře bývá náhradník. Boti a náhrobky jsou vyřazení i z „posledních soupeřů" (v UI mají
+    lidské jméno, výzvu by ale nikdy nepřijali). Limit **20 výzev/h** (`challenge_tries`),
+    počítá se PŘED vyhledáním, takže brzdí i zkoušení přezdívek.
+  - **NALEZENO CESTOU A OPRAVENO: lobby vůbec neukazovalo hry, ve kterých je hráč na tahu.**
+    Historie z `/api/me` se v lobby nikde nevykreslovala. Bez toho by se vyzyvatel o přijaté
+    výzvě nikdy nedozvěděl a svou půlku neodehrál — **a totéž platilo odjakživa pro obyčejný
+    souboj na odkaz.** `GET /api/challenge` nově vrací `na_tahu` (hry na odkaz, kde hráči
+    zbývá jeho půlka) a lobby je ukáže spolu s příchozími výzvami v bloku `#zk-social`.
+    Bot se v tom seznamu maskuje lidským jménem přes `souperJmeno` (klíč = id hry, takže jméno
+    sedí s tím, co hráč viděl ve hře) — syrová přezdívka „Chytrá sova (ligový)" by ho prozradila.
+  - **Prázdný `#zk-social` musí z toku ÚPLNĚ vypadnout** (`:empty { display: none }`). Lobby
+    je sloupec s `gap: 18px`, takže i prázdný `<div>` by přidal mezeru a hráči bez výzev by se
+    „Hrát teď" posunulo dolů — rozbil by se změřený rytmus uvítání → hlavní akce.
+  - **Blok se dotahuje ASYNCHRONNĚ a kontroluje, že `#zk-social` pořád existuje** — odpověď
+    může dorazit po odchodu z lobby a kreslit do odpojeného DOMu je chyba, na kterou appka
+    padala 2026-08-30. Hlídá to test.
+  - **PRÁVNÍ STRÁNKY: přátelé byli na šesti místech** (zásady, smazání profilu, podmínky)
+    a zásady neříkaly, že appka nově ukládá, kdo koho vyzval, ani že přezdívka je dohledatelná
+    kýmkoli. Přepsáno. **Past, do které jsem cestou málem spadl dvakrát:** (1) „nevyřízené
+    mažeme nejpozději po třech dnech" NENÍ pravda — maže se až s dalším provozem (úklid v
+    `expireStaleGames` + v `/api/challenge`), takže formulace je stejná jako u IP adres:
+    „propadne a smaže se automaticky s provozem hry"; (2) „výzvy, které jsi poslal" je minulý
+    čas s rodem — přepsáno na „odeslané i přijaté výzvy".
+  - **MIGRACE UKLÍZÍ DATA ZRUŠENÉ FUNKCE** (`UPDATE users SET friend_code = NULL`,
+    `DELETE FROM friends`) — jediná část, která mění existující řádky. Důvod: zásady kód ani
+    přátele nezmiňují, takže by mlčely o uloženém údaji. Tabulka i sloupec zůstávají, jen
+    prázdné — mazat schéma na produkci kvůli úklidu nestojí za riziko. **Na produkci se to
+    spustí až při nasazení.** Smazání profilu nově maže i výzvy.
+  - **PAST V MÉM MUTAČNÍM SKRIPTU, která by tiše schovala chycenou mutaci:** první verze
+    soudila podle textu „NEPROŠLO" na stdout. Mutace „přijmout může i vyzyvatel" ale test
+    nechala **havarovat** (`hraZVyzvy.players.length` nad chybovou odpovědí) — ten vypíše
+    „Test spadl" na **stderr** a skončí kódem 1, skript to přečetl jako průchod. **Mutační
+    skript soudí podle NÁVRATOVÉHO KÓDU, ne podle textu.** Test navíc dostal `|| []`, ať
+    rozbitá odpověď dá čitelnou chybu místo havárie.
+  - **Past prostředí, znovu:** `wrangler d1 execute --local` se při běžícím dev serveru
+    **tiše zasekne** (první dva příkazy úklidu „proběhly" bez výstupu a nezměnily nic, třetí
+    visel přes minutu). Při lokálních SQL zásazích dev server zastavit — viz i 2026-09-03.
+  - **Ověřeno v prohlížeči se třemi profily:** vyzvaný vidí v lobby „X tě vyzývá“, přijetí
+    rovnou spustí hru, vyzyvatel pak v lobby vidí „Hra s …“ s tlačítkem Hrát; obrazovka
+    Výzvy ukazuje posledního soupeře i čekající výzvu. Naměřeno: blok výzev v lobby
+    přebírá mezeru 34 px pod uvítáním a k „Hrát teď“ má 18 px; nadpisy sekcí 34 nad / 22 pod.
+    Sken textových uzlů: 0 textů začínajících malým písmenem.
+  - **Nalezeno při tom ověřování: odmítnutá přezdívka zmizela z pole.** Obrazovka se po
+    odeslání kreslí celá znovu, takže kdo se v přezdívce překlepl, psal ji celou znovu.
+    Nově `renderVyzvy(msg, napsano)` vrátí text do pole a dá mu fokus — ale jen u výzvy
+    napsané do pole, ne u „Vyzvat“ z posledních soupeřů. Po úspěchu se pole vyprázdní.
+  - **Testy:** `test:api` **183** (friends −11, výzvy +27), `test:offline` **886**.
+    Mutace: server **5 z 6** (neprošel jen zámek — viz výš proč) + **3 z 3** pro na_tahu,
+    mazání se smazaným profilem a registraci bez kódu; klient **8 z 8** + **2 ze 2**
+    (přezdívka v poli po chybě). **Nepokryté:** úklid propadlých výzev podle stáří —
+    `test:api` pracuje jen přes HTTP a zpětně datovaný řádek nevyrobí.
+  - **Při nasazení:** nejdřív migrace (`--remote`), pak `npm run deploy` — bez migrace by
+    `/api/challenge` vracel chybu „no such table".
+
 - **2026-09-25 — Appka je PWA: manifest, service worker, ikony. POPRVÉ OPRAVDU FUNGUJE
   OFFLINE — ověřeno s vypnutým serverem, ne domněnkou.**
   Podmínka pro zabalení do Google Play (TWA chce platnou PWA) a zároveň splnění slibu,
