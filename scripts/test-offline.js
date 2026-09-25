@@ -443,8 +443,8 @@ kontrola(!SRC_ONLINE.includes("(bot)"), "online.js pořád někde kreslí štít
 
 // Uvítací texty lobby. Appka NEZNÁ POHLAVÍ hráče, takže v nich nesmí být minulý čas
 // s rodem („zapsal ses", „věděl jsi") — stejné pravidlo jako u `_verdikt` v fondy.json.
-// A protože se texty vybírají podle pásma, musí je mít všechna tři kompletní; chybějící
-// klíč by se projevil až „undefined" na obrazovce přihlášeného hráče.
+// Od 2026-09-25 je to JEDNA plochá sada, ne tři podle pásma (online se na pásmo neptá).
+// Kompletnost klíčů se hlídá dál: chybějící se projeví až „undefined" na obrazovce.
 const LOBBY_TEXTY = (() => {
   const m = /var\s+LOBBY_TEXTY\s*=/.exec(SRC_ONLINE);
   if (!m) throw new Error("v online.js chybí LOBBY_TEXTY");
@@ -455,25 +455,32 @@ const LOBBY_TEXTY = (() => {
   }
   return vm.runInNewContext("(" + SRC_ONLINE.slice(zac, i + 1) + ")");
 })();
-const KLICE = ["uvod", "pasmo", "souperi", "rating0", "ratingN"];
-for (const band of ["deti", "starsi", "dospeli"]) {
-  const t = LOBBY_TEXTY[band];
-  kontrola(t, "LOBBY_TEXTY nemá pásmo " + band + " — hráči by se ukázalo undefined");
-  for (const k of KLICE) kontrola(t && t[k], "LOBBY_TEXTY." + band + " nemá „" + k + "\"");
+const KLICE = ["uvod", "otazky", "souperi", "rating0", "ratingN"];
+{
+  const t = LOBBY_TEXTY;
+  // Sada je plochá — kdyby se sem někdo pokusil vrátit větvení podle pásma, klíče by
+  // seděly na vnořené objekty a kontrola níž by mlčela. Hlídá se to proto zvlášť.
+  kontrola(KLICE.every(k => typeof t[k] === "string"),
+    "LOBBY_TEXTY není plochá sada řetězců — vrátilo se větvení podle pásma?");
+  for (const k of KLICE) kontrola(t[k], "LOBBY_TEXTY nemá „" + k + "\"");
+  // Uvítání nesmí pojmenovávat pásmo: online ho hráč nevolí, nevidí a nezmění, takže
+  // věta „Hraješ v lize Dospělí" popisuje něco, s čím nemůže nic udělat (2026-09-25).
+  kontrola(!KLICE.some(k => /Puberťáci|Dospělí|pásm/i.test(t[k] || "")),
+    "uvítání v lobby zase mluví o pásmu, které si hráč online nevolí");
   for (const k of KLICE) {
-    const v = (t && t[k]) || "";
+    const v = t[k] || "";
     // 2. osoba minulého času: sloveso na -l/-la + „jsi"/„ses"/„sis"
     const rod = v.match(/\S*l[aoiy]?\s+(jsi|ses|sis)\b/i);
-    kontrola(!rod, "LOBBY_TEXTY." + band + "." + k + " má minulý čas s rodem: „" + (rod && rod[0]) + "\"",
+    kontrola(!rod, "LOBBY_TEXTY." + k + " má minulý čas s rodem: „" + (rod && rod[0]) + "\"",
       "appka nezná pohlaví hráče — přeformuluj do přítomného času");
     kontrola(!/^[a-záčďéěíňóřšťúůýž]/.test(v.replace(/^<[^>]+>/, "")) || k === "uvod",
-      "LOBBY_TEXTY." + band + "." + k + " začíná malým písmenem: „" + v.slice(0, 40) + "\"");
+      "LOBBY_TEXTY." + k + " začíná malým písmenem: „" + v.slice(0, 40) + "\"");
     // Bot se v uvítání NESLIBUJE. Je to náhradní řešení pro prázdnou frontu, ne důvod,
     // proč sem jít — kdo si přečte „když nikdo není online, nastoupí bot", tomu se
     // hrát nechce. Nabízí se až v čekárně, kde už hráč čeká a je to služba, ne slib
     // (viz `zk-bot` v startQueue). Stejné rozhodnutí jako u dlaždice Online 2026-08-31.
     kontrola(!/\bbot|\brobot/i.test(v),
-      "LOBBY_TEXTY." + band + "." + k + " slibuje bota: „" + v.slice(0, 60) + "\"",
+      "LOBBY_TEXTY." + k + " slibuje bota: „" + v.slice(0, 60) + "\"",
       "bota nabízej až v čekárně, ne v uvítání");
   }
 }

@@ -112,40 +112,28 @@ window.ZKOnline = (function () {
   }
 
   /* Uvítání v lobby. Dřív tu byl jen proužek „Kuba · PUBERŤÁCI · Rating 1500 · Zatím
-   * nezahráno" — z toho hráč nepoznal, co pásmo znamená, proti komu bude hrát ani co
-   * je rating. Tón se drží pásma stejně jako hlášky u otázek (CLAUDE.md 2026-08-15):
-   * děti nadšeně a bez sarkasmu, puberťáci s popichováním, dospělí se sarkasmem.
+   * nezahráno" — z toho hráč nepoznal, proti komu bude hrát ani co je rating.
+   *
+   * JEDNA SADA TEXTŮ, NE TŘI PODLE PÁSMA (2026-09-25). Do té doby se uvítání větvilo
+   * na děti/puberťáky/dospělé a každá verze začínala tím, v jaké lize hráč je. Online
+   * se ale na pásmo přestalo ptát úplně (viz zápis v CLAUDE.md), takže ta věta
+   * pojmenovávala něco, co hráč nevolí, nevidí a nemůže změnit — a u dvou zbylých
+   * pásem se navíc lišila jen nálepkou. Slot po ní nezmizel, jen říká to, co má:
+   * jaké otázky přijdou. Tón zůstal ten dospělý (sarkasmus, absurdní kontrast),
+   * protože online je od 2026-09-10 od 13 let.
    *
    * POZOR: v textech NESMÍ být minulý čas s rodem („zapsal ses", „věděl jsi") — appka
    * pohlaví hráče nezná. Stejné pravidlo jako u `_verdikt` v fondy.json.
    */
   var LOBBY_TEXTY = {
-    deti: {
-      uvod: "jsme rádi, že jsi tady!",
-      pasmo: "Tvoje pásmo je <b>Děti</b> — otázky jsou psané přímo pro tebe, žádné nudné letopočty.",
-      souperi: "Hraješ proti jiným dětem — dospělí mají svoji ligu, takže tady nikdo nemá náskok dvacet let.",
-      rating0: "Rating je tvoje číslo šikovnosti. Každý začíná na <b>1500</b> a s každou výhrou povyroste. Dokud nezahraješ, zůstane na startu.",
-      ratingN: "Rating je tvoje číslo šikovnosti. Čím víc vyhraješ, tím výš poletí.",
-    },
-    // Puberťáci a Dospělí přepsáni 2026-09-15: registrace se na pásmo už neptá (nový
-    // profil je Dospělí), takže texty nesmí mluvit, jako by si ho hráč vybral.
-    // Zmínka „přepneš si v Profilu" z obou vypadla 2026-09-25, kdy ta volba z Profilu
-    // zmizela — text, který posílá hráče na tlačítko, co tam není, je horší než žádný.
-    // Dětské texty zůstávají kvůli starším účtům.
-    starsi: {
-      uvod: "dobře, že jsi tady.",
-      pasmo: "Hraješ v lize <b>Puberťáci</b>: otázky, co se dají pochytit ve škole nebo na internetu, ne v encyklopedii.",
-      souperi: "Soupeři jsou taky puberťáci — nikdo tu nemá náskok dvaceti let čtení encyklopedií.",
-      rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
-      ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
-    },
-    dospeli: {
-      uvod: "vítej v aréně vědomostí. Držíme palce.",
-      pasmo: "Hraješ v lize <b>Dospělí</b>: otázky bez zjednodušování. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
-      souperi: "Soupeři jsou taky dospělí, takže výmluva na věk tady neplatí ani jedním směrem.",
-      rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
-      ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
-    },
+    uvod: "vítej v aréně vědomostí. Držíme palce.",
+    otazky: "Otázky jsou bez zjednodušování. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
+    // Pravdivé pro obě cesty: živého soupeře hledá match.js přes `ORDER BY ABS(rating - ?)`
+    // a náhradního vybírá podle ratingu taky. Schválně neslibuje živého člověka
+    // v reálném čase — to appka při dnešní základně splnit nedokáže (CLAUDE.md 2026-09-03).
+    souperi: "Soupeře párujeme podle ratingu, takže hraješ proti někomu, kdo je na tom podobně.",
+    rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
+    ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
   };
 
   function req(path, opts) {
@@ -730,7 +718,7 @@ window.ZKOnline = (function () {
     var v = vokativ(S.me.nick);
     say(v ? "Vítej zpátky, " + v + "." : "Vítej zpátky!");
     var hotovo = dailyHotovo();
-    var t = LOBBY_TEXTY[S.me.band] || LOBBY_TEXTY.dospeli;
+    var t = LOBBY_TEXTY;
     // Rating dává smysl teprve ve chvíli, kdy je z čeho ho počítat — do té doby se
     // vysvětluje, co to vlastně je, místo aby se ukázalo holé číslo bez kontextu.
     var ratingText = !r ? ""
@@ -747,7 +735,7 @@ window.ZKOnline = (function () {
       // nezahráno" — ten byl sice úsporný, ale hráč z něj nepoznal, co která věc znamená.
       '<div class="zk-welcome">' +
         '<p class="zk-wel-hi">' + pozdrav(S.me.nick, t.uvod) + "</p>" +
-        '<p class="zk-wel-l">' + t.pasmo + "</p>" +
+        '<p class="zk-wel-l">' + t.otazky + "</p>" +
         '<p class="zk-wel-l">' + t.souperi + "</p>" +
         (ratingText ? '<p class="zk-wel-l">' + ratingText + "</p>" : "") +
       "</div>" +

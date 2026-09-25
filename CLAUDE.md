@@ -112,6 +112,19 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     u obou pásem („Kdo chce lehčí otázky, přepne si v Profilu na Puberťáky") a poznámka
     pod souhlasem v registraci. Appka by vypadala funkčně a přitom slibovala tlačítko,
     které nikde není. Nalezeno až průchodem v prohlížeči, ne grepem na kód.
+  - **`LOBBY_TEXTY` je nově JEDNA plochá sada, ne tři podle pásma** (hráč vzápětí:
+    „tady není taky potřeba zmínka o dospělých"). Uvítání začínalo větou „Hraješ v lize
+    <b>Dospělí</b>…", tedy pojmenovávalo nastavení, které hráč online nevolí, nevidí
+    a nezmění — a mezi zbylými dvěma pásmy se lišilo jen nálepkou. Slot po ní nezmizel,
+    jen říká, jaké otázky přijdou. Věta o soupeři přešla z věku na **párování podle
+    ratingu**, což je ověřeně pravda pro obě cesty (`match.js` hledá živého přes
+    `ORDER BY ABS(rating - ?)`, náhradního vybírá podle ratingu taky) a neslibuje
+    živého člověka v reálném čase, což appka splnit nedokáže. Navíc to hezky uvozuje
+    následující větu o ratingu.
+  - **Počet kontrol KLESL (877 → 836) a je to v pořádku:** blok nad `LOBBY_TEXTY` běžel
+    třikrát, pro každé pásmo zvlášť (3 × 21 = 63), teď jednou (22). 877 − 41 = 836 sedí
+    na kus. **U poklesu počtu kontrol se to musí dopočítat** — jinak se nepozná rozdíl
+    mezi „zbytečné opakování zmizelo" a „kontrola tiše vypadla".
   - **`test:offline` 876 (+2):** Profil nemá `zk-accbands`/`zk-bandsave`, `online.js`
     nevolá `/auth/band`, a nikde nezůstal text posílající hráče „přepnout si v Profilu".
     **Ověřeno mutací 4 ze 4** (vrácení dlaždic, vrácení tlačítka, vrácení volání
