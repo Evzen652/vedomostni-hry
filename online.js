@@ -127,13 +127,12 @@ window.ZKOnline = (function () {
    */
   var LOBBY_TEXTY = {
     uvod: "vítej v aréně vědomostí. Držíme palce.",
-    otazky: "Otázky jsou bez zjednodušování. Spousta z nich vypadá jako samozřejmost, dokud na ně nedojde.",
     // Pravdivé pro obě cesty: živého soupeře hledá match.js přes `ORDER BY ABS(rating - ?)`
     // a náhradního vybírá podle ratingu taky. Schválně neslibuje živého člověka
     // v reálném čase — to appka při dnešní základně splnit nedokáže (CLAUDE.md 2026-09-03).
-    souperi: "Soupeře párujeme podle ratingu, takže hraješ proti někomu, kdo je na tom podobně.",
-    rating0: "Rating ukazuje, jak ti to jde. Začínáš na <b>1500</b> a po pár hrách se usadí tam, kam patříš.",
-    ratingN: "Rating ukazuje, jak ti to jde. Výhry ho zvedají, prohry srážejí.",
+    souperi: "Soupeře vybíráme podle ratingu, ať je hra vyrovnaná.",
+    rating0: "Rating začíná na <b>1500</b> a po pár hrách ukáže, jak ti to jde.",
+    ratingN: "Rating roste s výhrami a klesá s prohrami.",
   };
 
   function req(path, opts) {
@@ -735,7 +734,6 @@ window.ZKOnline = (function () {
       // nezahráno" — ten byl sice úsporný, ale hráč z něj nepoznal, co která věc znamená.
       '<div class="zk-welcome">' +
         '<p class="zk-wel-hi">' + pozdrav(S.me.nick, t.uvod) + "</p>" +
-        '<p class="zk-wel-l">' + t.otazky + "</p>" +
         '<p class="zk-wel-l">' + t.souperi + "</p>" +
         (ratingText ? '<p class="zk-wel-l">' + ratingText + "</p>" : "") +
       "</div>" +

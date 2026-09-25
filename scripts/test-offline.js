@@ -455,7 +455,7 @@ const LOBBY_TEXTY = (() => {
   }
   return vm.runInNewContext("(" + SRC_ONLINE.slice(zac, i + 1) + ")");
 })();
-const KLICE = ["uvod", "otazky", "souperi", "rating0", "ratingN"];
+const KLICE = ["uvod", "souperi", "rating0", "ratingN"];
 {
   const t = LOBBY_TEXTY;
   // Sada je plochá — kdyby se sem někdo pokusil vrátit větvení podle pásma, klíče by
