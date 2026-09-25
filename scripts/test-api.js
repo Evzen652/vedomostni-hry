@@ -450,7 +450,12 @@ async function playAll(token, gameId, total, ms = 2000, spravne = false) {
   // by ji expireStaleGames vyrovnal a vyzvanému by naskočila hodnocená prohra za
   // partii, kterou nikdy neviděl — otevřený nález z auditu u odvety.
   section('Výzvy a odveta');
-  const hryB = async () => (await api('/api/me', { token: B.token })).body.history.length;
+  // Počet her, které B PŘIBYLY od začátku téhle sekce. Ne délka historie: `/api/me` ji
+  // vrací jen do 20 her, takže od dvacáté hry by délka stála a kontroly „hra nevznikla"
+  // by tiše procházely vždycky. Nové hry jsou v historii nahoře, proto limit nevadí.
+  const hryBNaZacatku = new Set((await api('/api/me', { token: B.token })).body.history.map(h => h.id));
+  const hryB = async () => (await api('/api/me', { token: B.token })).body.history
+    .filter(h => !hryBNaZacatku.has(h.id)).length;
 
   const hryBPred = await hryB();
   const vyzva = await api('/api/challenge', { method: 'POST', token: A.token, body: { nick: nickB } });
@@ -461,6 +466,12 @@ async function playAll(token, gameId, total, ms = 2000, spravne = false) {
   const zBVelke = await api('/api/challenge', { method: 'POST', token: A.token,
     body: { nick: nickB.toUpperCase() } });
   ok(zBVelke.status === 409, 'stejného hráče podruhé vyzvat nejde (i jinak psaného), dostal ' + zBVelke.status);
+
+  // Vyzvaný nesmí poslat výzvu zpátky — vznikly by dvě čekající výzvy mezi toutéž dvojicí
+  // a každý by čekal na toho druhého. Stačí přijmout tu první.
+  const zpet = await api('/api/challenge', { method: 'POST', token: B.token, body: { nick: nickA } });
+  ok(zpet.status === 409 && /už vyzval/.test((zpet.body && zpet.body.error) || ''),
+     'VÝZVA ZPĚT TOMU, KDO MĚ UŽ VYZVAL, NEPROJDE (dostal ' + zpet.status + ')');
 
   const seznamB = (await api('/api/challenge', { token: B.token })).body;
   const prichozi = seznamB.prichozi.find(c => c.nick === nickA);
@@ -548,24 +559,29 @@ async function playAll(token, gameId, total, ms = 2000, spravne = false) {
        .some(c => vyzvaOtravy && c.id === vyzvaOtravy.id),
      'SMAZÁNÍM PROFILU ZMIZELA I JEHO VÝZVA');
 
-  // Odveta NESMÍ soupeři odepsat otázky, které nikdy neuvidí. Do 2026-09-01 mu
-  // markSeen běžel rovnou při založení a bez limitu na počet odvet, takže mu šlo
-  // ve smyčce vyprázdnit fond, dokud mu každá další hra nespadla na 503.
+  // ODVETA PROTI ČLOVĚKU JE OD 2026-09-26 VÝZVA, NE HRA. Do té doby server soupeře rovnou
+  // zapsal do nové hry, aniž by mu to oznámil (otevřený nález z auditu). Teď soupeř
+  // dostane výzvu v lobby a hra vznikne až přijetím — takže se mu ani neodepíšou otázky,
+  // což dřív hlídala samostatná kontrola markSeen.
+  // Případnou čekající výzvu A→B z předchozích kontrol nejdřív uklidit, ať odveta nenarazí
+  // na UNIQUE(from_user, to_user) z úplně jiného důvodu, než který se tu testuje.
+  for (const c of (await api('/api/challenge', { token: A.token })).body.odchozi || []) {
+    if (c.nick === B.nick) await api(`/api/challenge/${c.id}`, { method: 'DELETE', token: A.token });
+  }
+  const hryBPredOdvetou = await hryB();
   const seenPredOdvetou = (await api('/api/me', { token: B.token })).body.seen_questions;
-  const zkusebniOdveta = await api(`/api/game/${duel.body.id}/rematch`, { method: 'POST', token: A.token });
-  ok(zkusebniOdveta.status === 201, 'odveta se založí (kontrola markSeen)');
-  const seenPoOdvete = (await api('/api/me', { token: B.token })).body.seen_questions;
-  ok(seenPoOdvete === seenPredOdvetou,
-     'soupeři odveta neubrala otázky z fondu (' + seenPredOdvetou + ' → ' + seenPoOdvete + ')');
-  // Až když si otázku vyžádá, počítá se mu za viděnou.
-  await api(`/api/game/${zkusebniOdveta.body.id}/q/0`, { token: B.token });
-  ok((await api('/api/me', { token: B.token })).body.seen_questions === seenPredOdvetou + 1,
-     'ale po vyžádání otázky ano');
-
   const rematch = await api(`/api/game/${duel.body.id}/rematch`, { method: 'POST', token: A.token });
-  ok(rematch.status === 201, 'odveta se založí', JSON.stringify(rematch.body));
-  const rq = await api(`/api/game/${rematch.body.id}/q/0`, { token: B.token });
-  ok(rq.status === 200, 'soupeř je v odvetě rovnou, nemusí se připojovat');
+  ok(rematch.status === 201 && rematch.body.challenge === true && !rematch.body.id,
+     'odveta proti člověku pošle výzvu, ne hru', JSON.stringify(rematch.body));
+  ok(await hryB() === hryBPredOdvetou, 'ODVETA SOUPEŘE NEZAPSALA DO HRY, O KTERÉ NEVÍ');
+  ok((await api('/api/me', { token: B.token })).body.seen_questions === seenPredOdvetou,
+     'soupeři odveta neubrala otázky z fondu');
+  const odvetaUB = ((await api('/api/challenge', { token: B.token })).body.prichozi || [])
+    .find(c => c.nick === A.nick);
+  ok(!!odvetaUB, 'soupeř vidí odvetu jako příchozí výzvu');
+  const odvetaZnovu = await api(`/api/game/${duel.body.id}/rematch`, { method: 'POST', token: A.token });
+  ok(odvetaZnovu.status === 409, 'druhá odveta před odpovědí neprojde (jedna čekající výzva na dvojici)');
+  if (odvetaUB) await api(`/api/challenge/${odvetaUB.id}`, { method: 'DELETE', token: B.token });
 
   const botRematch = await api(`/api/game/${vsBot.body.id}/rematch`, { method: 'POST', token: A.token });
   ok(botRematch.status === 201 && typeof botRematch.body.bot_score === 'number',

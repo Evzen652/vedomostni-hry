@@ -81,6 +81,35 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-26 — Odveta proti člověku je výzva. Tím padá poslední otevřený nález z auditu
+  kolem odvety; plus vzájemná výzva, `join` do skončené hry a tři hlášky s rodem.**
+  - **`rematch.js` proti člověku hru nezakládá, ale pošle výzvu** (`{ challenge: true }`)
+    se stejným limitem a UNIQUE jako výzva podle přezdívky. Do té doby server soupeře
+    rovnou zapsal do nové hry bez jeho vědomí a klient to obcházel odkazem, který se
+    musel poslat ručně. Proti botovi se odveta hraje rovnou jako dřív. Kontrola
+    „odveta soupeři neodepíše otázky“ tím přestala být potřeba — hra do přijetí neexistuje.
+  - **`odkazNaHru` přišla o parametry `proKoho` a `nadpis`** — sloužily jen odvetě.
+  - **Vzájemná výzva se odmítá** (`vyzvalMeUz` v `_lib/game.js`, sdílí challenge i odveta):
+    kdo mě už vyzval, tomu výzvu zpátky neposílám — vznikly by dvě čekající výzvy mezi
+    toutéž dvojicí a každý by čekal na toho druhého. Hláška radí přijmout tu jeho.
+  - **Výzvy po odeslání potvrdí zeleně** „Výzva odeslaná hráči X. Hra začne, až ji přijme.“
+  - **`join.js` odmítne skončenou hru (410)**, ale až ZA větví pro hráče, který ve hře už
+    je (ten si výsledek zobrazí). Dřív šlo do expirované hry na odkaz vstoupit a hrát
+    naprázdno. **Přes HTTP se to otestovat nedá** (expirace je 48 h), hlídá to statická
+    kontrola pořadí v `test:offline`.
+  - **Tři texty s minulým časem v rodu, které nic nehlídalo:** „Vyhrál jsi!“ → „Výhra je
+    tvoje!“, „Přišel jsi z odkazu v e-mailu“ → „Odkaz z e-mailu platí“, „Co jsi hrál“ →
+    „Co se hrálo“ (rozehrané hry — zápis 2026-09-02 ten popisek ještě hájí, rozhodnutí
+    o popsaných řádcích platí, jen slovo je nové). Nová **obecná pojistka** v `test:offline`
+    hledá „…l jsi“ / „jsi …l“ v obou skriptech bez komentářů. **Past: `\b` v JS zná jen
+    ASCII** a v „přihlášený“ hlásil „Jsi přihl“ — konec slova hlídá lookahead na česká písmena.
+  - **Past v `test:api`: `/api/me` vrací historii jen do 20 her**, takže kontroly „vyzvanému
+    nepřibyla hra“ počítaly délku seznamu, který od dvacáté hry stojí, a procházely by
+    naslepo. Pomocník teď počítá hry, které od začátku sekce PŘIBYLY.
+  - `test:api` **184**, `test:offline` **907**; mutace 2 z 2 (odveta, join) a 4 ze 4
+    (vzájemná výzva, tři hlášky). Ověřeno v prohlížeči: odveta skončí na Výzvách se
+    zeleným potvrzením, výzva zpět hlásí „Tenhle hráč tě už vyzval…“ a jeho výzva je hned pod tím.
+
 - **2026-09-26 — Rozbor má i sólo, škola a párty (stejné karty jako online).**
   Na přání hráče hned po rozboru online. Offline hra si do teď odpovědi nepamatovala
   vůbec — jen skóre.

@@ -1,4 +1,4 @@
-import { json, fail, newId, limitUctu, VYZVA_PLATI_MS } from '../../_lib/game.js';
+import { json, fail, newId, limitUctu, VYZVA_PLATI_MS, vyzvalMeUz, HLASKA_VZAJEMNA } from '../../_lib/game.js';
 import { currentUser } from '../../_lib/auth.js';
 
 /**
@@ -102,6 +102,7 @@ export async function onRequestPost({ request, env }) {
   if (cil.id === me.id) return fail('sám sebe vyzvat nejde');
 
   await uklidProsle(env);
+  if (await vyzvalMeUz(env, me.id, cil.id)) return fail(HLASKA_VZAJEMNA, 409);
   try {
     await env.DB.prepare(
       'INSERT INTO challenges (id, from_user, to_user, band, created_at) VALUES (?, ?, ?, ?, ?)')

@@ -23,6 +23,11 @@ export async function onRequestPost({ params, request, env }) {
     return json({ id: game.id, already: true, total: JSON.parse(game.question_ids).length,
                   limit_s: game.limit_s, band: game.band });
   }
+  // Skončená hra (dohraná nebo vyrovnaná expirací po 48 h) už nového hráče nepřijme.
+  // Do 2026-09-26 šlo do expirované hry na odkaz vstoupit a odehrát ji — jenže vyrovnání
+  // už proběhlo, takže hráč hrál naprázdno a rating ani výsledek se nikdy nezapsal.
+  // Hráč, který ve hře už je, projde výš (`already`) a výsledek si zobrazí.
+  if (game.status !== 'open') return fail('tenhle souboj už skončil', 410);
   if (players.results.length >= 2) return fail('souboj už má oba hráče', 409);
   if (me.band !== game.band) {
     return fail('tenhle souboj je pro pásmo ' + game.band + ', ty hraješ ' + me.band, 409);

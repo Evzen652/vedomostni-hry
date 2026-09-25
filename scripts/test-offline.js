@@ -680,6 +680,20 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
   kontrola(!/Zapomněl jsem/.test(bez), "v online části je zase „Zapomněl jsem“ — minulý čas s rodem");
 }
 
+// Obecná pojistka proti minulému času s rodem v textech appky (2026-09-26). Kontroly výš
+// hlídají jednotlivé věty, jenže při průchodu se našly další tři, které nehlídalo nic:
+// „Vyhrál jsi!" (výsledek online hry), „Přišel jsi z odkazu" (obnova PINu) a „Co jsi hrál"
+// (rozehrané hry). Hledá se „…l jsi" a „jsi …l" v kódu bez komentářů — komentáře ty
+// staré věty schválně citují.
+for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
+  const bez = bezKomentaru(src);
+  // Konec slova hlídá lookahead, ne \b: `\b` v JS zná jen ASCII, takže v „přihlášený"
+  // viděl hranici slova mezi „l" a „á" a hlásil „Jsi přihl" jako minulý čas.
+  const P = "a-záčďéěíňóřšťúůýž";
+  const nalez = bez.match(new RegExp("[" + P + "]{2,}la? jsi(?![" + P + "])|(?<![" + P + "])jsi [" + P + "]{2,}la?(?![" + P + "])", "i"));
+  kontrola(!nalez, jmeno + " má v textu minulý čas s rodem: „" + (nalez && nalez[0]) + "“ — appka pohlaví hráče nezná");
+}
+
 // Délka párty (2026-09-15, přání hráče): Rychlá 5, Klasik 8, Maraton 12 kol. Výchozí je
 // Klasik — jinak by nastavení otevřelo s žádnou volbou vybranou.
 {
@@ -1063,6 +1077,19 @@ sekce("Výzvy podle přezdívky místo přátel");
   kontrola(/id: q\.id/.test(hraSrv), "server neposílá v rozboru id otázky — ilustrace nemá z čeho vzniknout");
   kontrola(/\.zk-revlist\s*\{[^}]*text-align:\s*left/.test(SRC_CSS),
     "rozbor dědí vystředěný text z .qz-end — víceřádkový text na střed se čte špatně");
+
+  // Odveta proti člověku je výzva (2026-09-26) — klient ji musí tak i zobrazit, ne čekat id hry.
+  kontrola(/rr\.body && rr\.body\.challenge\) return renderVyzvy\(/.test(bez),
+    "klient u odvety neumí výzvu — čekal by id hry, které server už neposílá");
+  kontrola(!/odkazNaHru\([^)]*,/.test(bez), "odkazNaHru se zase volá se jménem soupeře — odveta patří do výzev");
+  // join.js: do SKONČENÉ hry se nevstupuje. Přes HTTP to otestovat nejde (expirovaná hra
+  // na odkaz vznikne až po 48 h), proto aspoň statická pojistka, že kontrola existuje
+  // a stojí PŘED kapacitou, ale ZA větví `already` (hráč, co ve hře je, si výsledek zobrazí).
+  const joinSrc = fs.readFileSync("functions/api/game/[id]/join.js", "utf8");
+  const iAlready = joinSrc.indexOf("already: true"), iStatus = joinSrc.indexOf("game.status !== 'open'"),
+        iKapacita = joinSrc.indexOf("players.results.length >= 2");
+  kontrola(iStatus > iAlready && iStatus < iKapacita && iAlready > 0,
+    "join.js nekontroluje, že hra ještě běží — do expirované hry by šlo vstoupit a hrát naprázdno");
 
   // Rozbor i v sólu, škole a párty (2026-09-26). Odpověď se zapisuje KLÍČEM podle pořadí
   // otázky, ne pushem: obnovená hra otevře tutéž otázku znovu (uloží se až s další)

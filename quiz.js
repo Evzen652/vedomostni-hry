@@ -727,7 +727,7 @@
         return `<div class="qz-resume-item" role="button" tabindex="0" aria-label="Pokračovat ve hře: ${esc(s.coHral)}" data-resume="${id}">
           <img class="qz-resume-img" src="${s.obr}" alt="" onerror="this.style.visibility='hidden'">
           <span class="qz-resume-text">
-            ${radek("Co jsi hrál", s.coHral)}
+            ${radek("Co se hrálo", s.coHral)}
             ${radek("Úroveň obtížnosti", s.uroven)}
             ${radek("Kdy", s.kdy)}
           </span>

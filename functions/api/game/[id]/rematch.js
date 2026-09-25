@@ -1,17 +1,52 @@
-import { TIME_CONTROLS, shuffledOrder, json, fail, newId, limitUctu } from '../../../_lib/game.js';
+import { TIME_CONTROLS, shuffledOrder, json, fail, newId, limitUctu, vyzvalMeUz, HLASKA_VZAJEMNA } from '../../../_lib/game.js';
 import { currentUser } from '../../../_lib/auth.js';
 import { pickQuestions, markSeen } from '../../../_lib/pool.js';
 import { botPlay } from '../../../_lib/bot.js';
 
 /**
- * POST /api/game/:id/rematch — odveta se stejným soupeřem a nastavením.
+ * POST /api/game/:id/rematch — odveta se stejným soupeřem.
  *
- * Tady jsou oba hráči známí předem, takže se otázky losují z pravého průniku
- * neviděných obou — na rozdíl od prvního souboje na odkaz, kde soupeře ještě neznáme.
+ * Proti člověku vrací `{ challenge: true }` — pošle se výzva (viz níž). Proti botovi
+ * se hra založí a bot odehraje rovnou; otázky se losují z pravého průniku neviděných
+ * obou, protože oba hráči jsou známí předem.
  */
 export async function onRequestPost({ params, request, env }) {
   const me = await currentUser(request, env);
   if (!me) return fail('nepřihlášen', 401);
+
+  const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(params.id).first();
+  if (!game) return fail('hra nenalezena', 404);
+  if (game.status !== 'done') return fail('odveta až po dohrání', 409);
+
+  const players = (await env.DB.prepare(
+    `SELECT gp.user_id, u.is_bot, u.nick, u.deleted_at FROM game_players gp
+       JOIN users u ON u.id = gp.user_id WHERE gp.game_id = ?`).bind(params.id).all()).results;
+
+  if (!players.some(p => p.user_id === me.id)) return fail('v téhle hře jsi nehrál', 403);
+  const other = players.find(p => p.user_id !== me.id);
+  if (!other) return fail('sólo hra nemá odvetu');
+
+  // ODVETA PROTI ČLOVĚKU JE VÝZVA, NE HRA (2026-09-26). Do té doby server soupeře rovnou
+  // zapsal do nové hry, aniž by mu to jakkoli oznámil — otevřený nález z auditu: hráč
+  // odehrál partii, o které soupeř nevěděl, a klient to jen obcházel odkazem, který se
+  // musel poslat ručně. Teď soupeř dostane výzvu v lobby a hra vznikne až jeho přijetím
+  // (challenge/[id]/accept.js) — tatáž cesta jako výzva podle přezdívky, včetně toho,
+  // že nepřijatá výzva nikdy nezpůsobí hodnocenou prohru.
+  if (!other.is_bot) {
+    if (other.deleted_at) return fail('soupeř už profil nemá', 410);
+    const MAX_VYZEV = 20, OKNO = 60 * 60 * 1000;   // stejný strop jako challenge/index.js
+    if (!(await limitUctu(env, me.id, 'challenge_tries', MAX_VYZEV, OKNO)))
+      return fail('moc výzev za sebou, zkus to za hodinu', 429);
+    if (await vyzvalMeUz(env, me.id, other.user_id)) return fail(HLASKA_VZAJEMNA, 409);
+    try {
+      await env.DB.prepare(
+        'INSERT INTO challenges (id, from_user, to_user, band, created_at) VALUES (?, ?, ?, ?, ?)')
+        .bind(newId(), me.id, other.user_id, game.band, Date.now()).run();
+    } catch (e) {
+      return fail('tohohle hráče už vyzvaného máš, počkej na odpověď', 409);
+    }
+    return json({ challenge: true, vyzvan: other.nick }, 201);
+  }
 
   // Zakládání hry má limit na VŠECH čtyřech cestách, ne jen v api/game/index.js.
   // Do 2026-09-03 ho měla jen ta jedna, takže se dal obejít turnajovým botem: každé
@@ -21,18 +56,6 @@ export async function onRequestPost({ params, request, env }) {
   const MAX_HER = 30, OKNO_MS = 60 * 60 * 1000;
   if (!(await limitUctu(env, me.id, 'game_tries', MAX_HER, OKNO_MS)))
     return fail('příliš mnoho založených her, zkus to za chvíli', 429);
-
-  const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(params.id).first();
-  if (!game) return fail('hra nenalezena', 404);
-  if (game.status !== 'done') return fail('odveta až po dohrání', 409);
-
-  const players = (await env.DB.prepare(
-    `SELECT gp.user_id, u.is_bot FROM game_players gp JOIN users u ON u.id = gp.user_id
-      WHERE gp.game_id = ?`).bind(params.id).all()).results;
-
-  if (!players.some(p => p.user_id === me.id)) return fail('v téhle hře jsi nehrál', 403);
-  const other = players.find(p => p.user_id !== me.id);
-  if (!other) return fail('sólo hra nemá odvetu');
 
   const tcName = Object.keys(TIME_CONTROLS)
     .find(k => TIME_CONTROLS[k].count === JSON.parse(game.question_ids).length) || 'blesk';

@@ -23,6 +23,19 @@ export const REG_WINDOW_MS = 60 * 60 * 1000;
 // v challenge/index.js, protože ji maže i úklid v settle.js — a ten se veze na /api/me,
 // kam chodí každý hráč, takže zásady můžou poctivě psát „smaže se s provozem hry".
 export const VYZVA_PLATI_MS = 3 * 24 * 60 * 60 * 1000;
+
+/**
+ * Vyzval mě tenhle hráč už sám? Pak nemá smysl mu výzvu posílat zpátky — vznikly by dvě
+ * čekající výzvy mezi toutéž dvojicí a každý by čekal na toho druhého. Stačí přijmout
+ * tu jeho. Sdílí to výzva podle přezdívky (challenge/index.js) i odveta (rematch.js).
+ */
+export async function vyzvalMeUz(env, meId, jehoId) {
+  const r = await env.DB.prepare(
+    'SELECT id FROM challenges WHERE from_user = ? AND to_user = ? AND created_at >= ?')
+    .bind(jehoId, meId, Date.now() - VYZVA_PLATI_MS).first();
+  return !!r;
+}
+export const HLASKA_VZAJEMNA = 'tenhle hráč tě už vyzval, stačí jeho výzvu přijmout';
 // Validuje se PROTI TOMUHLE SEZNAMU, ne indexaci objektu. `TIME_CONTROLS["constructor"]`
 // vrací funkci z prototypu, takže kontrola `if (!tc)` takové jméno pustí dál — a u turnaje
 // se hodnota dokonce ULOŽÍ do databáze, čímž vznikne položka, která každému, kdo do ní

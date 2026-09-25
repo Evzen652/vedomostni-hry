@@ -206,8 +206,7 @@ pásma), postup je zdokumentovaný v CLAUDE.md 2026-09-25 a 2026-08-31.
 - Dlaždice kontinentů Severní Amerika, Jižní Amerika, Austrálie a Afrika se nedobarvovaly —
   sloužily jako barevný vzor při dobarvování ostatních. Kdyby se sjednocovalo dál, lokální skript na dobarvení (sytost
   jen u barevných míst, síla 0,25–1,0) je popsaný v CLAUDE.md pod 2026-09-15.
-- Výsledková obrazovka sóla píše „Získal(a) jsi" — tvar „(a)" projde kontrolou rodu,
-  ale čte se toporně. Kandidát na přepis bez rodu.
+- ~~„Získal(a) jsi" na výsledku sóla~~ — **hotovo 26. 9.** („Celkem máš").
 
 Pořadí dalších kroků je závazné — každý otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
@@ -226,16 +225,19 @@ pošty: Resend pustí odesílání po ověření vlastní domény, takže dokud 
 e-mail sbírá a slibuje odkaz na obnovu PINu, ale `mail.js` ho jen zaloguje. **Ten
 nepravdivý slib je skutečný dluh** — buď doménu koupit, nebo appce zakázat slibovat.
 
-**C. Instalovatelná appka** (krok 4, blokér obchodů)
-Manifest, service worker, ikony. Dnes appka nemá ani jedno.
+**C. Instalovatelná appka** — **HOTOVO 25. 9.** (manifest, service worker, ikony; appka
+poprvé funguje offline, viz CLAUDE.md).
 
 **D. Obaly, platby, provoz** (kroky 5–7)
-Pozor: 184 MB ilustrací se do mobilního balíčku nevejde, obal je musí brát z webu.
+Google Play jako první, přes TWA. Postup je rozepsaný v chatu z 25.–26. 9. a čeká na hráče:
+1) nasměrovat `cestokviz.cz` na Cloudflare Pages (zachovat MX záznamy pošty),
+2) sestavit balíček (PWABuilder), 3) nahrát do Play Console, 4) `/.well-known/assetlinks.json`
+s otiskem klíče **app signing** (ne upload klíče), 5) test a vydání.
+Pozor: ilustrace se do mobilního balíčku nevejdou, obal je musí brát z webu.
 
-**Otevřené drobnosti** (nízká priorita, všechny ověřené): odveta vloží soupeře bez jeho
-vědomí; odchod z čekárny křížkem nechá hráče ve frontě; `join.js` nekontroluje
-`game.status`; kontrast drobných textů a dotykové
-cíle pod 44 px.
+**Otevřené drobnosti:** kontrast drobných textů a dotykové cíle pod 44 px (plošná změna
+palety, patří hráči k rozhodnutí). Ostatní z auditu jsou pryč: odveta je výzva, `join.js`
+kontroluje stav hry (26. 9.) a odchod z čekárny křížkem opouští frontu (`opustFrontu`, 4. 9.).
 
 ---
 

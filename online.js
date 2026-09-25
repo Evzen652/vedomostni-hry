@@ -652,7 +652,7 @@ window.ZKOnline = (function () {
         '<img class="zk-authhero" src="' + AUTH_HERO + '" alt="" data-fb="hide">' +
         '<div class="zk-authtag">Obnova PINu</div>' +
         "<h2>Nový PIN</h2>" +
-        '<div class="zk-sub">Přišel jsi z odkazu v e-mailu. Zvol si nový PIN — starý přestane ' +
+        '<div class="zk-sub">Odkaz z e-mailu platí. Zvol si nový PIN — starý přestane ' +
           "platit a rovnou tě přihlásíme.</div>" +
         (typeof msg === "string" && msg ? '<div class="zk-autherr">' + errBox(msg) + "</div>" : "") +
         '<div class="zk-form">' +
@@ -903,29 +903,27 @@ window.ZKOnline = (function () {
           beginGame(id, "odkaz", { nick: jmeno });
         });
       }
-      odkazNaHru(id, null);
+      odkazNaHru(id);
     });
   }
 
   /**
-   * Obrazovka „pošli odkaz a hraj". Vytažená z createLink, protože ji potřebuje i ODVETA:
-   * ta soupeře sice zapíše do hry, ale nijak mu to neoznámí, takže bez odkazu by o ní
-   * nevěděl (2026-09-04). `proKoho` je jen jméno do textu (volá ho s ním odveta).
-   * Pro přímé vyzvání podle přezdívky je od 2026-09-26 samostatná cesta — viz výzvy.
+   * Obrazovka „pošli odkaz a hraj" u souboje na odkaz. Dřív ji sdílela i odveta proti
+   * člověku (jméno soupeře a nadpis „Odveta" byly parametry), jenže od 2026-09-26 je
+   * odveta i vyzvání podle přezdívky VÝZVA — soupeř se o ní dozví v lobby, odkaz netřeba.
    */
-  function odkazNaHru(id, proKoho, nadpis) {
+  function odkazNaHru(id) {
       var url = location.origin + location.pathname + "?duel=" + id;
-      say(proKoho ? "Pošli odkaz hráči " + proKoho + " a hraj." : "Pošli odkaz a hraj. Soupeř dostane stejné otázky.");
+      say("Pošli odkaz a hraj. Soupeř dostane stejné otázky.");
       // Pořadí akcí je schválně obrácené proti původnímu stavu: hrát se dá HNED,
       // čekání na kamaráda není podmínka. Kopírování odkazu je tichá vedlejší akce.
       body.innerHTML =
         '<div class="qz-screen qz-setup zk-wrap">' +
         backBar("Zpět", renderLobby) +
-        "<h2>" + esc(nadpis || "Souboj na odkaz") + "</h2>" +
+        "<h2>Souboj na odkaz</h2>" +
         '<div class="qz-setcard zk-form">' +
           '<button class="qz-go" id="zk-play">Zahrát si svoji půlku ' + handArrowSvg(false) + '</button>' +
           '<div class="qz-setnote" style="margin:.7rem 0 .2rem">' +
-            (proKoho ? "Odkaz pošli hráči <b>" + esc(proKoho) + "</b>. " : "") +
             "Soupeř dostane stejné otázky ve stejném pořadí. Jeho výsledek uvidíš, až dohrajete oba.</div>" +
           '<label class="qz-fieldlabel" for="zk-url">Odkaz pro soupeře</label>' +
           '<input class="qz-pname-in" id="zk-url" readonly value="' + esc(url) + '">' +
@@ -1319,7 +1317,8 @@ window.ZKOnline = (function () {
         (g.players.length > 1 && !g.players.every(function (p) { return p.done; }));
 
       var head;
-      if (g.result === "vyhra") { head = "Vyhrál jsi!"; }
+      // Bez minulého času s rodem („Vyhrál jsi!" platilo jen pro kluky) — appka pohlaví nezná.
+      if (g.result === "vyhra") { head = "Výhra je tvoje!"; }
       else if (g.result === "prohra") { head = "Tentokrát soupeř."; }
       else if (g.result === "remiza") { head = "Remíza."; }
       else if (waiting) { head = "Máš odehráno. Čeká se na soupeře."; }
@@ -1399,21 +1398,16 @@ window.ZKOnline = (function () {
       });
       on("zk-rematch", function () {
         req("/game/" + id + "/rematch", { method: "POST" }).then(function (rr) {
+          // Proti ČLOVĚKU je odveta od 2026-09-26 výzva: soupeř ji uvidí v lobby a hra
+          // vznikne až jeho přijetím. Do té doby server soupeře rovnou zapsal do hry, aniž
+          // by mu to oznámil, a klient to obcházel odkazem, který se musel poslat ručně.
+          // Výsledek (i chybu „už vyzvaného máš") ukazuje obrazovka Výzvy, kde je vidět,
+          // co čeká na odpověď.
+          if (rr.body && rr.body.challenge) return renderVyzvy("", "", vyzvaOdeslana(rr.body.vyzvan));
+          if (rr.status === 409 || rr.status === 429) return renderVyzvy(rr.body && rr.body.error);
           if (rr.status !== 201) return renderLobby((rr.body && rr.body.error) || "Odveta nešla založit.");
           // Proti botovi se hraje rovnou — ten už svou půlku odehrál při založení.
-          // Proti ČLOVĚKU se ale odveta chová jako souboj na odkaz, protože jím fakticky
-          // je: server soupeře zapíše do hry, ale nijak mu to neoznámí. Do 2026-09-04 se
-          // sem šlo rovnou do hry, takže hráč odehrál partii, o které soupeř nevěděl,
-          // a čekal na výsledek, který nemohl přijít. Odkaz je jediná cesta, jak se
-          // soupeř o odvetě dozví.
-          if (!rr.body.rated) return beginGame(rr.body.id, "odkaz", null);
-          // Jméno soupeře se odvozuje z id PŮVODNÍ hry (tam ho hráč viděl), ne z nové —
-          // jinak by mu odveta nabídla odkaz pro někoho, kdo se jmenuje jinak.
-          // Payload hráče nenese příznak „to jsem já", takže se soupeř pozná podle
-          // přezdívky (`nick_lower` je UNIQUE, takže je to spolehlivé).
-          var souper = g.players.filter(function (p) { return p.nick !== S.me.nick; })[0];
-          odkazNaHru(rr.body.id,
-            souper ? souperJmeno(souper.nick, souper.is_bot, id) : null, "Odveta");
+          beginGame(rr.body.id, "odkaz", null);
         });
       });
       on("zk-tnext", function () { tournamentPlay(tournamentId); });
@@ -1717,10 +1711,15 @@ window.ZKOnline = (function () {
     });
   }
 
+  function vyzvaOdeslana(nick) {
+    return "Výzva odeslaná" + (nick ? " hráči " + nick : "") + ". Hra začne, až ji přijme.";
+  }
   // `napsano` = přezdívka, kterou hráč napsal a server ji odmítl. Obrazovka se po odeslání
   // kreslí celá znovu, takže bez tohohle by překlep v přezdívce smazal i ji — a psala by
   // se znovu celá, ačkoli stačí opravit jedno písmeno.
-  function renderVyzvy(msg, napsano) {
+  // `hotovo` = potvrzení po odeslané výzvě (zelený rámeček, ne chybová hláška). Bez něj
+  // výzva jen tiše přibyla do seznamu „Čekají na odpověď" a hráč netušil, jestli prošla.
+  function renderVyzvy(msg, napsano, hotovo) {
     stopAll();
     say("Napiš přezdívku a pošli výzvu. Hrát se začne, až ji druhý přijme.");
     req("/challenge").then(function (r) {
@@ -1732,6 +1731,7 @@ window.ZKOnline = (function () {
         backBar("Zpět", renderLobby) +
         "<h2>Výzvy</h2>" +
         errBox(typeof msg === "string" ? msg : "") +
+        (typeof hotovo === "string" && hotovo ? '<div class="zk-okbox">' + esc(hotovo) + "</div>" : "") +
         (prichozi.length
           ? '<h3 class="zk-vnadpis">Vyzvali tě</h3><div class="zk-rowlist">' +
               prichozi.map(radekPrichozi).join("") + "</div>"
@@ -1769,7 +1769,7 @@ window.ZKOnline = (function () {
         nick = (nick || "").trim();
         if (!nick) return renderVyzvy("Napiš přezdívku hráče.");
         req("/challenge", { method: "POST", body: { nick: nick } }).then(function (rr) {
-          if (rr.status === 201) return renderVyzvy("");
+          if (rr.status === 201) return renderVyzvy("", "", vyzvaOdeslana(rr.body && rr.body.vyzvan));
           renderVyzvy((rr.body && rr.body.error) || "Výzvu se nepodařilo poslat.", zPole ? nick : "");
         });
       }
