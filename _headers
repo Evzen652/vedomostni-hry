@@ -30,3 +30,17 @@
   # HTTPS napevno. Pages sice na HTTP nesluchá, ale bez HSTS se dá první požadavek
   # z psané adresy odchytit dřív, než dojde na přesměrování.
   Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Service worker se NESMÍ dlouhodobě cachovat na úrovni HTTP (2026-09-25). Prohlížeč
+# podle něj pozná, že vyšla nová verze — kdyby mu ho proxy nebo cache podávaly starý,
+# appka by zůstala na staré skořápce a hráč by se z toho sám nedostal. Moderní
+# prohlížeče si sice `sw.js` po 24 hodinách vynutí čerstvý samy, ale spoléhat na to
+# jako na jedinou pojistku je zbytečné riziko.
+/sw.js
+  Cache-Control: no-cache
+  # Rozsah service workeru je dán jeho umístěním — z kořene obslouží celou appku.
+  Service-Worker-Allowed: /
+
+# Manifest se mění zřídka, ale když se změní (ikona, jméno), má se to projevit brzy.
+/manifest.json
+  Cache-Control: public, max-age=3600

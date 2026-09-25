@@ -6,6 +6,12 @@
 <title>Cestokvíz — vědomostní hra o zemích světa</title>
 <meta name="description" content="Cestokvíz je vědomostní hra o zemích světa — sólo, párty i školní režim, s hláškami a hlasem.">
 <link rel="stylesheet" href="quiz.css">
+<link rel="manifest" href="/manifest.json">
+<!-- Barva lišty systému. Je schválně TOTOŽNÁ se spodkem přechodu na pozadí appky
+     (`#quiz-root` jede z bílé do #fdf6e8), takže na telefonu nevznikne cizí barevný
+     pruh nad stránkou a appka působí jako jeden kus papíru. -->
+<meta name="theme-color" content="#fdf6e8">
+<link rel="apple-touch-icon" href="/assets/icon-192.png">
 </head>
 <body>
   <div id="quiz-root">
@@ -36,5 +42,20 @@
        čtvrtou dlaždici prostě nevykreslí a offline hra funguje dál. -->
   <script src="online.js"></script>
   <script src="quiz.js"></script>
+  <!-- Service worker (2026-09-25). Registruje se AŽ PO `load`, ne dřív: instalace
+       stahuje skořápku a na pomalé lince by soupeřila o pásmo s tím, co hráč právě
+       potřebuje vidět. Registrace navíc nesmí shodit hru, když ji prohlížeč odmítne
+       (starý prohlížeč, soukromé okno, vypnuté úložiště) — proto ten `catch`.
+       Soubor leží v kořeni schválně: rozsah service workeru je dán jeho umístěním,
+       takže odsud pokrývá i právní stránky. -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      addEventListener("load", function () {
+        navigator.serviceWorker.register("/sw.js").catch(function (e) {
+          console.warn("[sw] registrace neprošla, hra běží dál bez offline režimu", e);
+        });
+      });
+    }
+  </script>
 </body>
 </html>

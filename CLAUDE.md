@@ -81,6 +81,67 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-25 — Appka je PWA: manifest, service worker, ikony. POPRVÉ OPRAVDU FUNGUJE
+  OFFLINE — ověřeno s vypnutým serverem, ne domněnkou.**
+  Podmínka pro zabalení do Google Play (TWA chce platnou PWA) a zároveň splnění slibu,
+  který appka roky dávala a nedržela: „offline-first" tu odjakživa znamenalo *soběstačná*
+  (žádná runtime volání cizích API), ne *bez připojení* — service worker ani manifest
+  NIKDY neexistovaly (viz zápis 2026-08-28). Teď existují.
+  - **Nové soubory:** `manifest.json` (kořen), `sw.js` (kořen — jeho umístění určuje
+    rozsah, odjinud by neobsloužil celou appku), `assets/icon-{192,512}.png` a
+    `assets/icon-maskable-512.png` ze skriptu `scripts/gen-pwa-icons.js`. Všechno přidáno
+    do `SOUBORY` v `build-public.js` — bez toho by se to na web nedostalo (past 2026-08-25).
+  - **PROČ JE MASKABLE IKONA ZVLÁŠŤ:** Android ikonu ořízne do vlastního tvaru a na každém
+    telefonu do jiného. Bezpečná zóna je kruh o průměru 80 % obrázku, takže logo sedí
+    zmenšené na 78 % na ploše papíru — maska ukousne jen okraj podkladu, ne postavičku.
+    Barva podkladu se **vzorkuje z loga**, nepíše natvrdo: papír má přechody a pevné
+    „#f7efe0" by kolem zmenšeného loga udělalo viditelný rámeček.
+  - **STRATEGIE CACHOVÁNÍ — a proč zrovna takhle.** Špatně napsaný service worker umí
+    appku zamrazit na staré verzi a hráč se z toho sám nedostane (smazat cache přes
+    nastavení prohlížeče nikoho nenapadne). Všechno je proto stavěné tak, aby se to samo
+    spravilo:
+    · **skořápka** (HTML/JS/CSS/malé JSONy) jede `stale-while-revalidate` — podá se stará
+      verze a na pozadí se stáhne nová, takže po nasazení stačí appku otevřít dvakrát
+      a nic se nepovyšuje ručně. **To je ta pojistka proti zamrznutí.**
+    · **obrázky a data otázek** jedou `cache-first` — jsou velké a mění se zřídka.
+      ⚠ **PLATÍ SE ZA TO: po přegenerování ilustrací se MUSÍ zvednout `VERZE` v `sw.js`**,
+      jinak hráč s naplněnou cache uvidí starou. U tohohle projektu, kde se ilustrace
+      předělávají po dávkách, je to reálná past, ne teoretická.
+    · **`/api/` se necachuje VŮBEC.** Odpovědi jsou vázané na přihlášeného hráče a na stav
+      konkrétní partie — ze cache by podaly cizí data nebo rozbitou hru.
+    · **`skipWaiting()` se NEVOLÁ.** Vyměnit skripty pod rozehranou hrou je horší než
+      chvíli běžet na staré verzi.
+  - **Předcache se přidává po jednom, ne přes `addAll`.** Ten při jediném nedostupném
+    souboru odmítne celou instalaci a appka zůstane bez service workeru úplně — radši
+    neúplná cache než žádná. Cenou je, že překlep v cestě se nijak neprojeví, takže
+    `test:offline` kontroluje, že **každá cesta v `SKORAPKA` na disku existuje**.
+  - **Strop na obrázky 300 kusů (~66 MB).** Fond má přes 3 700 ilustrací po ~220 kB, tedy
+    skoro 800 MB — uložit všechno nejde. Maže se FIFO (Cache API vrací klíče v pořadí
+    vložení); pravé LRU by chtělo vlastní evidenci a u ilustrací to za tu složitost nestojí.
+  - **OVĚŘENO SKUTEČNÝM VYPNUTÍM SERVERU, ne dojmem.** Po naplnění cache byl dev server
+    zastaven (`netstat` potvrdil, že na portu nic neposlouchá, `curl` vracel HTTP 000)
+    a v prohlížeči pak prošla **celá hra**: rozcestník → Sólo → Česko → témata → pásmo →
+    počet → otázka se čtyřmi odpověďmi → odpověď → vysvětlení a body. Ilustrace, která
+    v cache nebyla, spadla na existující záložní stav s razítkem země (`qz-pic-broken`),
+    tedy žádný rozbitý obrázek. Cache po průchodu: skořápka 14, trvalé 34, obrázky 1.
+  - **PAST PROSTŘEDÍ, KTERÁ MĚ CESTOU SHODILA SERVER: `npm run build` se NESMÍ pouštět,
+    když běží `npm run dev`.** `wrangler pages dev .` obsluhuje a hlídá KOŘEN REPA a `dist/`
+    je uvnitř něj — build do něj nasype 4 058 souborů a 796 MB, odezvy se propadnou na
+    vteřiny a wrangler spadne s chybou. Projevilo se to jako „appka nenačítá otázky",
+    takže jsem to nejdřív hledal ve service workeru. **Když dev server začne vracet HTTP 000
+    nebo appce chybí data, ověř nejdřív `netstat`, jestli vůbec běží.** `dist/` je
+    gitignorovaný artefakt, takže se dá mezi buildy klidně smazat — dev server se tím
+    znatelně zrychlí.
+  - **`test:offline` 875 (+39), ověřeno mutací 10 z 10** (soubor vypadne ze `SOUBORY`,
+    `display` není `standalone`, zmizí maskable ikona, manifest ukazuje na neexistující
+    ikonu, v předcache je neexistující cesta, zmizí výjimka pro `/api/`, přibude
+    `skipWaiting`, `hra.html` přestane registrovat service worker nebo odkazovat na
+    manifest). `test:api` 167 beze změny. `_headers` nově parsuje 3 pravidla:
+    `sw.js` dostal `Cache-Control: no-cache`, aby se aktualizace propsaly.
+  - **ZBÝVÁ K VYDÁNÍ NA PLAY:** zabalit do TWA (Bubblewrap nebo PWABuilder), k tomu účet
+    v Play Console, podpisový klíč a `/.well-known/assetlinks.json` s jeho otiskem na
+    doméně, na kterou se appka naváže. Doména `cestokviz.cz` koupena 25. 9.
+
 - **2026-09-25 — APPKA SE JMENUJE CESTOKVÍZ. „Zeměkvíz" je na Google Play obsazený
   jinou českou appkou, takže pod ním vydat nejde.**
   Zjištěno při přípravě vydání: `play.google.com/store/apps/details?id=cz.zemekviz` je

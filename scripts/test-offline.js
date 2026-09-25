@@ -949,6 +949,69 @@ sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
   kontrola(/href="soukromi"/.test(SRC), "rozcestník v quiz.js neodkazuje na ochranu údajů");
 }
 
+// ---- PWA: manifest, service worker, ikony (2026-09-25) ----
+// Podmínka pro zabalení do Google Play a zároveň první verze, kdy appka opravdu funguje
+// offline. Hlídají se způsoby, jak by to potichu přestalo platit — appka by přitom
+// vypadala v pořádku, protože service worker se registruje tiše a chyba se neprojeví:
+//   · soubor chybí v SOUBORY v build-public.js, takže na web vůbec nedojde (2026-08-25),
+//   · v předcache je cesta k souboru, který neexistuje (instalace ho tiše přeskočí),
+//   · někdo nechá service worker cachovat /api/ a online hra začne podávat cizí data.
+sekce("PWA: manifest, service worker a ikony");
+{
+  const BUILD = fs.readFileSync(path.join("scripts", "build-public.js"), "utf8");
+  const sezn = /const SOUBORY\s*=\s*\[([\s\S]*?)\]/.exec(BUILD);
+  const vBuildu = sezn ? sezn[1] : "";
+  for (const s of ["manifest.json", "sw.js"]) {
+    kontrola(fs.existsSync(s), "chybí " + s);
+    kontrola(vBuildu.includes('"' + s + '"'),
+      s + " není v SOUBORY v build-public.js — na web se nedostane");
+  }
+
+  const MAN = JSON.parse(fs.readFileSync("manifest.json", "utf8"));
+  // `standalone` je to, co z webu dělá appku: bez něj se neotevře bez adresního řádku
+  // a Play by ji bral jako obalený web.
+  kontrola(MAN.display === "standalone", "manifest nemá display: standalone");
+  for (const k of ["name", "short_name", "start_url", "scope", "background_color", "theme_color"]) {
+    kontrola(MAN[k], "manifest nemá „" + k + "\"");
+  }
+  kontrola(MAN.name && MAN.name.includes("Cestokvíz"), "manifest nemá v názvu Cestokvíz");
+  const ikony = MAN.icons || [];
+  kontrola(ikony.some(i => i.sizes === "192x192"), "manifest nemá ikonu 192x192");
+  kontrola(ikony.some(i => i.sizes === "512x512" && i.purpose !== "maskable"),
+    "manifest nemá běžnou ikonu 512x512");
+  // Bez maskable verze Android ikonu ořízne do svého tvaru a hrdinovi zmizí ruce a nohy.
+  kontrola(ikony.some(i => i.purpose === "maskable"), "manifest nemá maskable ikonu");
+  for (const i of ikony) {
+    kontrola(fs.existsSync(i.src.replace(/^\//, "")), "manifest odkazuje na ikonu, která neexistuje: " + i.src);
+  }
+
+  const SRC_SW = fs.readFileSync("sw.js", "utf8");
+  const bezSW = bezKomentaru(SRC_SW);
+  // Předcache musí sedět na realitu. Instalace chybějící soubor jen přeskočí (schválně —
+  // radši neúplná cache než žádná), takže překlep v cestě se nijak neprojeví, jen appka
+  // offline tiše nepojede.
+  const mSkor = /const SKORAPKA\s*=\s*\[([\s\S]*?)\];/.exec(bezSW);
+  kontrola(mSkor, "v sw.js nejde najít seznam SKORAPKA");
+  const cesty = mSkor ? [...mSkor[1].matchAll(/"([^"]+)"/g)].map(x => x[1]) : [];
+  kontrola(cesty.length >= 5, "seznam SKORAPKA v sw.js je podezřele krátký");
+  for (const p of cesty) {
+    const soubor = p === "/hra" ? "hra.html" : p.replace(/^\//, "");
+    kontrola(fs.existsSync(soubor), "sw.js chce předcachovat " + p + ", ale " + soubor + " neexistuje");
+  }
+  // Online hra stojí na /api/ a odpovědi jsou vázané na přihlášeného hráče i na stav
+  // konkrétní partie — ze cache by podaly cizí data nebo rozbitou hru.
+  kontrola(/pathname\.startsWith\("\/api\/"\)/.test(bezSW),
+    "sw.js nemá výjimku pro /api/ — online hra by se cachovala");
+  // Výměna skriptů pod rozehranou hrou je horší než chvíli běžet na staré verzi.
+  kontrola(!/skipWaiting/.test(bezSW), "sw.js volá skipWaiting — vyměnil by kód pod rozehranou hrou");
+
+  const HRA = fs.readFileSync("hra.html", "utf8");
+  kontrola(/<link rel="manifest"/.test(HRA), "hra.html neodkazuje na manifest");
+  kontrola(/serviceWorker/.test(HRA) && /register\("\/sw\.js"\)/.test(HRA),
+    "hra.html neregistruje service worker");
+  kontrola(/<meta name="theme-color"/.test(HRA), "hra.html nemá theme-color");
+}
+
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

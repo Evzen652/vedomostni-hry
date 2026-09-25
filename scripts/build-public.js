@@ -19,8 +19,12 @@ const OUT = path.join(KOREN, "dist");
 // zůstane bez CSP — pravidla v něm se nikde jinde neuplatní. (2026-09-01)
 // Právní stránky (2026-09-10) jsou samostatné statické soubory BEZ JS — musí jít
 // otevřít i z obchodu s aplikacemi nebo z vyhledávače, bez spuštění hry.
+// `manifest.json` a `sw.js` MUSÍ ležet v kořeni nasazení. U service workeru to není
+// kosmetika: jeho rozsah je dán jeho umístěním, takže odjinud než z kořene by neobsloužil
+// celou appku. (2026-09-25)
 const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers",
-  "podminky.html", "soukromi.html", "smazani-uctu.html", "pravni.css"];
+  "podminky.html", "soukromi.html", "smazani-uctu.html", "pravni.css",
+  "manifest.json", "sw.js"];
 const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
 const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json", "data/konflikty.json"];
 
