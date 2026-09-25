@@ -17,7 +17,7 @@ konvence a všechna rozhodnutí v [CLAUDE.md](../CLAUDE.md).
 
 Zkopíruj do prvního vzkazu:
 
-> Pokračuju v projektu Zeměkvíz. Přečti si `docs/predavaci-protokol.md`, proveď převzetí
+> Pokračuju v projektu Cestokvíz. Přečti si `docs/predavaci-protokol.md`, proveď převzetí
 > podle bodu 2 a řekni mi, jestli stav sedí. Pracuje se na větvi `claude/pokracujeme-e79708`.
 
 **Pozor na worktree:** nová session často startuje v čerstvém worktree na jiné, starší větvi.
@@ -212,9 +212,15 @@ Pořadí dalších kroků je závazné — každý otevírá další. Plán cel�
 Otázka s `"online_only": true` se nekopíruje na web a online hra ji losuje přednostně.
 Dnes je jich nula. `npm run validate` to hlásí. Mechanismus je hotový (`npm run test:pool`).
 
-**B. Právní vrstva** (krok 3, blokér obou obchodů)
+**B. Právní vrstva** (krok 3)
 Stránky jsou napsané a **od 11. 9. nasazené vědomě** (viz CLAUDE.md), kontakt
-`ahoj@zemekviz.cz` ale pořád poštu nepřijímá — čeká na doménu.
+`ahoj@cestokviz.cz` ale pořád poštu nepřijímá — čeká na koupi domény.
+**POZOR, dřívější verze tohohle bodu tvrdila, že je to blokér obchodů — není.**
+Google Play chce veřejnou adresu se zásadami (stačí `…pages.dev/soukromi`) a kontaktní
+e-mail vývojáře, kterým může být jakákoli schránka. Doménu potřebuje až **odesílání**
+pošty: Resend pustí odesílání po ověření vlastní domény, takže dokud není, appka sice
+e-mail sbírá a slibuje odkaz na obnovu PINu, ale `mail.js` ho jen zaloguje. **Ten
+nepravdivý slib je skutečný dluh** — buď doménu koupit, nebo appce zakázat slibovat.
 
 **C. Instalovatelná appka** (krok 4, blokér obchodů)
 Manifest, service worker, ikony. Dnes appka nemá ani jedno.

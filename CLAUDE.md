@@ -81,6 +81,50 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-25 — APPKA SE JMENUJE CESTOKVÍZ. „Zeměkvíz" je na Google Play obsazený
+  jinou českou appkou, takže pod ním vydat nejde.**
+  Zjištěno při přípravě vydání: `play.google.com/store/apps/details?id=cz.zemekviz` je
+  **Zeměkvíz** od studia Czechia (autoři „Poznáš to?"), 4,6★, 1 770 recenzí, přes
+  10 000 stažení. Vydat druhou appku téhož jména ve stejné kategorii nejde kvůli pravidlu
+  o matoucí podobnosti a hlavně by to byl obchodní nesmysl — nová appka bez recenzí vedle
+  zavedené. `zemekviz.cz` je navíc taky obsazená (registrovaná 25. 8. 2026, tedy měsíc
+  před tímhle, soukromou osobou; zaparkovaná, bez webu i pošty).
+  - **Co se přejmenovalo:** viditelný název v `quiz.js` (nadpis rozcestníku), titulek
+    a popis v `hra.html`, tři právní stránky, předmět a tělo e-mailu v `mail.js`,
+    hlavička `online.js`. Kontakt `ahoj@zemekviz.cz` → `ahoj@cestokviz.cz` (34 záměn).
+  - **Co se přejmenovat NESMÍ a zůstalo `zemekviz`:** `database_name` v `wrangler.toml`
+    a `wrangler d1 execute zemekviz` v `package.json` a `scripts/sync-d1-questions.js`
+    (název databáze D1 — přejmenování je migrace produkčních dat), a `name`/`--project-name`
+    (projekt Cloudflare Pages — změna by přepsala adresu nasazení). Hráč ani jedno nevidí.
+  - **Proč zrovna Cestokvíz:** nese „kvíz", takže je hned jasné, co appka je, a jde
+    vyhledat. „Cesto-" sedí na identitu, kterou appka už má (cestovní deník, razítka
+    v pase, glóbus — lobby vítá „Pasy orazítkované, glóbus netrpělivý"). **A hlavně sedí
+    na OBSAH: z devíti témat jsou zeměpisná dvě**, zbytek je Jídlo, Jazyk & slova, Umění,
+    Sport, Kultura & tradice, Lidé, Historie — „Země-" ten fond podceňuje. Ověřeno volné
+    na Play („Žádné výsledky") i `cestokviz.cz`, `.com` a `.app`.
+  - **PRŮZKUM KONKURENCE, ať se nedělá znovu.** Ten obsazený Zeměkvíz **není hrozba**:
+    naposledy aktualizovaný **26. 3. 2023**, má „více než 150 hádanek" (náš fond 3 792,
+    tedy 25×) a je to **jiná mechanika** — ukáže fotku místa a hádáš název s nápovědou
+    odkrytí písmene, žádný výběr ze čtyř, žádné vysvětlení, žádný párty ani školní režim.
+    Širší kategorie („zeměpisný kvíz") má přes třicet appek, ale skoro všechny jsou
+    drilovací vlajky/mapy/hlavní města a většinou lokalizované zahraniční produkty.
+    **Nikdo nedělá psané otázky s vtipem, vysvětlením, malovanou ilustrací a k tomu párty
+    u jedné obrazovky, školu a online rating.** Mezera je široká, jméno byla jediná kolize.
+  - **POŘADÍ KONTROL JE OBRÁCENĚ, NEŽ SE NABÍZÍ: napřed Google Play, pak doména, pak
+    ochranná známka.** Strávil jsem dlouho hledáním volné domény pro jméno, které bylo
+    celou dobu obsazené na Play — a Play je ta tvrdší podmínka, protože tam appka míří.
+  - **PAST, KTERÁ MĚ DVAKRÁT SVEDLA: dostupnost domény se NEDÁ zjistit přes DNS.**
+    Kontrola „nemá NS záznamy, tedy je volná" označila za volné `stopar.cz` i `zemekviz.cz`
+    — obě jsou přitom registrované, jen zaparkované bez nastavených serverů. Spolehlivé je
+    `https://www.nic.cz/whois/domain/<domena>/` pro `.cz` (registrovaná vrátí detaily,
+    volná HTTP 404) a `https://rdap.org/domain/<domena>` pro generické koncovky.
+    **U rdap.org se MUSÍ ověřit, že tu koncovku vůbec pokrývá** — `.eu` a `.io` nepokrývá
+    a vrací 404 i pro `europa.eu` a `github.io`, tedy „volná" i u zjevně obsazených.
+    Ověřuje se to tak, že se stejnou metodou zkusí doména, o které je jisté, že existuje.
+  - **ZBÝVÁ:** logo je pořád žárovka — na Cestokvíz by seděl cestovatelský motiv, ale
+    vzhled je území hráče, takže jen nabídnuto. A kontakt `ahoj@cestokviz.cz` pořád
+    nepřijímá poštu, dokud se doména nekoupí.
+
 - **2026-09-25 — Online se na pásmo NEPTÁ NIKDE. Volba Puberťáci/Dospělí zmizela
   z Profilu; ruší to rozhodnutí z 2026-08-31, které ji tam dalo.**
   Přání hráče („jen v onlinu odstraň ten výběr mezi puberťák a dospělý"). Rozhodnutí

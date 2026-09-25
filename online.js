@@ -1,4 +1,4 @@
-/* Zeměkvíz — online režim (docs/online-rezim.md).
+/* Cestokvíz — online režim (docs/online-rezim.md).
  *
  * Samostatný modul: přebírá #qz-body a vrací ho zpátky přes onExit. Do quiz.js
  * kvůli tomu sahá jen jedna dlaždice na výběru režimu. Vzhled se nedělá znovu —

@@ -735,7 +735,7 @@
            literalu, takže v něm NESMÍ být zpětné apostrofy — ukončily by řetězec. -->
       <div class="qz-titlewrap">
         <div class="qz-globebg" id="qz-globebg"></div>
-        <h2>Zeměkvíz</h2>
+        <h2>Cestokvíz</h2>
       </div>
       <div class="qz-modes">
         <!-- Pořadí: Online první, Škola poslední (2026-08-31). Online je jediný režim,
