@@ -1465,5 +1465,93 @@
   "image_prompt": "Fotorealistický snímek bílého čápa stojícího ve velkém hnízdě na komíně tradičního alsaského hrázděného domu, 16:9",
   "about": "čápech v Alsasku",
   "irony_prompt": "A large white stork stands proudly centre-frame in an enormous nest built right on top of a half-timbered house's chimney, filling the frame, a tiny bundle-shaped nest lining visible beside it as if ready for a very special delivery. Smaller and subordinate: half-timbered Alsatian houses below; a church spire nearby; a second stork flying in to land. MOOD: charming, kid-friendly."
+ },
+ {
+  "id": "fr-s-okenko-nad-dvermi",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Francouzi říkají malému vyklápěcímu okýnku nad dveřmi „vasistas“. Odkud to slovo pochází?",
+  "answer": "Z německé otázky „Co je to?“",
+  "distractors": [
+   "Z latinského slova pro průvan",
+   "Ze jména sklenáře z Lyonu",
+   "Z italského výrazu pro výhled"
+  ],
+  "quip_correct": "Soused zpoza Rýna se přes okýnko zeptal, co to je, a Francouzi jeho otázku rovnou prohlásili za název. Diplomacie v praxi.",
+  "quip_wrong": "Latinský průvan, lyonský sklenář i italský výhled znějí vznešeně, ale pravda je prozaičtější. Stačil jeden zvědavý cizinec u okna.",
+  "explanation": "Slovo je zfrancouzštělé německé „Was ist das?“, které se podle tradice ozývalo od Němců zvědavě nahlížejících takovým okénkem.",
+  "about": "slově vasistas",
+  "more_fact": "Francouzština si z němčiny půjčila i „bretzel“ nebo „quiche“, které vzešlo z lotrinského nářečí příbuzného slovu Kuchen. Opačným směrem putovalo do němčiny třeba „Portemonnaie“ nebo „Trottoir“.",
+  "irony_prompt": "A small tilting transom window above an old Parisian door fills the frame, flipped open, with a curious moustached neighbour in a Bavarian felt hat poking his head through it and staring wide-eyed with raised eyebrows. Smaller and subordinate: a startled cat on the doorstep, a baguette leaning by the door, geranium pots on the windowsill. MOOD: comic, curious, sunny."
+ },
+ {
+  "id": "fr-s-vitr-udolim-rhony",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se jmenuje studený severní vítr, který se řítí údolím Rhôny ke Středozemnímu moři a o kterém Provensálci tvrdí, že dokáže přivést člověka k šílenství?",
+  "answer": "Mistral",
+  "distractors": [
+   "Sirocco",
+   "Bóra",
+   "Fén"
+  ],
+  "quip_correct": "Provence má modré nebe právě díky němu: vítr odfoukne každý mrak i každou myšlenku z hlavy. Za zářivé světlo, které milovali malíři, se platí nervy.",
+  "quip_wrong": "Sirocco je horké a přilétá ze Sahary, bóra fičí nad Jadranem a fén sestupuje z Alp. Údolí Rhôny si drží vlastní jméno pro ledovou smršť.",
+  "explanation": "Vítr dokáže foukat i přes 90 kilometrů za hodinu a vydržet několik dní, proto mají selské statky v Provenci okna hlavně na jih a cypřiše vysázené jako větrolam.",
+  "about": "mistralu",
+  "more_fact": "Suchý vítr vysušuje vinice i mokřady Camargue a pomáhá chránit révu před plísněmi. Van Gogh si v Arles kvůli němu přivazoval malířský stojan ke kolíkům zaraženým do země.",
+  "irony_prompt": "A giant puffy-cheeked personification of the north wind fills the frame, blowing furiously down a sunny Provençal valley so that every cypress tree bends sideways as if doing yoga. Smaller and subordinate: a painter clinging with one hand to an easel pegged into the ground, a straw hat flying away over lavender rows, a sheep with its wool blown into a mohawk. MOOD: wild, sunny, comic."
+ },
+ {
+  "id": "fr-s-revolucni-kalendar",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kolik dní měl týden v kalendáři, který zavedla Francouzská revoluce a který platil přes dvanáct let?",
+  "answer": "Deset",
+  "distractors": [
+   "Pět",
+   "Osm",
+   "Šest"
+  ],
+  "quip_correct": "Revoluce zrušila krále, šlechtu i neděli. Monarchii lid oželel, devět pracovních dnů v kuse už nesl hůř.",
+  "quip_wrong": "Pětidenní týden si později vyzkoušel Sovětský svaz a osmidenní tržní cyklus znali staří Římané. Francouzi šli metrickou cestou a všechno počítali v desítkách.",
+  "explanation": "Měsíce měly po třiceti dnech a jména podle počasí a přírody, třeba thermidor nebo brumaire, a zbylých pět či šest dní na konci roku se slavilo jako svátky.",
+  "about": "francouzském revolučním kalendáři",
+  "more_fact": "Místo světce dostal každý den patrona z přírody nebo hospodářství, například mrkev, krtka nebo trakař. Revoluce zkoušela zavést i desetinný čas se sto minutami v hodině, ten ale nevydržel ani dva roky.",
+  "irony_prompt": "A giant round wooden wheel divided into many equal pie slices fills the frame, each slice painted with a vegetable or a farm tool and nothing else, while an exhausted Parisian worker in a red cap stares at it counting on his fingers. Smaller and subordinate: a carrot wearing a tiny blue, white and red striped sash, a mole peeking from the ground, a wheelbarrow full of turnips. MOOD: comic, weary, playful."
+ },
+ {
+  "id": "fr-s-normanska-tapiserie",
+  "cc": "fr",
+  "country": "Francie",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč takzvaná tapiserie z Bayeux, dlouhý obrazový příběh o dobytí Anglie roku 1066, ve skutečnosti vůbec není tapiserie?",
+  "answer": "Je vyšívaná na plátně, ne tkaná",
+  "distractors": [
+   "Je malovaná na pergamenu",
+   "Je sešitá z barvených kůží",
+   "Je poskládaná z mozaiky"
+  ],
+  "quip_correct": "Tisíc let se jí říká špatně a nikdo se to neodvážil opravit. Francouzská pedanterie má zjevně výjimku pro Normany.",
+  "quip_wrong": "Pergamen, kůže i mozaika by se do tak dlouhého pásu špatně srolovaly. Tady pracovala jehla, ne tkalcovský stav.",
+  "explanation": "Pás dlouhý bezmála sedmdesát metrů vyšily vlněnými nitěmi pravděpodobně anglické švadleny, ačkoli oslavuje vítězství Normanů nad Angličany.",
+  "about": "tapiserii z Bayeux",
+  "more_fact": "Na výšivce je vidět i Halleyova kometa, která se nad Anglií objevila v roce 1066 a lidé ji brali jako zlé znamení. Mezi stovkami postav jsou jen tři ženy, zato přes dvě stě koní.",
+  "irony_prompt": "An immensely long embroidered cloth strip fills the frame, snaking in loops across a medieval hall like a giant ribbon, stitched only with tiny knights, boats and horses and nothing else, while a small team of cheerful seamstresses with needles runs out of room and keeps stitching onto the floor. Smaller and subordinate: a fiery comet stitched in gold thread, a cat tangled in a ball of yarn, a puzzled knight peeking at the back of the fabric. MOOD: playful, cozy, whimsical."
  }
 ]

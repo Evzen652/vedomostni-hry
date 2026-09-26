@@ -1003,5 +1003,93 @@
   "image_prompt": "Fotorealistický snímek bílých voňavých květů magnólie kvetoucích na jarní větvi proti modré obloze, 16:9",
   "about": "korejské magnólii (mokran)",
   "irony_prompt": "A single magnolia blossom fills the frame, its pale white petals unfurling wide and fragrant against a soft blurred green background, a few dewdrops clinging to the edges. Smaller and subordinate: a second bud just beginning to open on the same branch; a bee hovering near the center; a scattering of fallen petals below. MOOD: pure, fragrant, delicate."
+ },
+ {
+  "id": "kp-s-pyramidova-stavba",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je proslulá 330metrová stavba ve tvaru pyramidy Rjugjong v severokorejské metropoli?",
+  "answer": "Desítky let stojí nedokončená a prázdná",
+  "distractors": [
+   "Je nejvyšší stavbou celé Asie",
+   "Je postavená jen ze skla bez oceli",
+   "Stojí na vrcholu vyhaslé sopky"
+  ],
+  "quip_correct": "Nejvyšší prázdný hotel světa. Recepce čeká na prvního hosta skoro čtyřicet let.",
+  "quip_wrong": "Na asijský rekord nestačí, ocel v ní je a sopka pod ní taky není. Zato drží rekord v trpělivém čekání na otevření.",
+  "explanation": "Stavba hotelu se 105 podlažími začala roku 1987 a po rozpadu Sovětského svazu se na roky zastavila. Od roku 2018 se fasáda v noci rozsvěcuje světelnými obrazy, hosty ale zatím nepřijala.",
+  "about": "stavbě Rjugjong",
+  "more_fact": "Severokorejské úřady ji roky retušovaly z oficiálních fotografií města a americký časopis Esquire ji roku 2008 označil za nejhorší budovu v dějinách lidstva.",
+  "irony_prompt": "A colossal triangular concrete pyramid skyscraper fills the frame against a pale sky, with a lonely construction crane at its peak where a pigeon has built a cosy nest, and a single tiny doorman stands at the huge entrance waiting patiently with a bouquet of flowers. Smaller and subordinate: a spider web across the grand doors, a dusty luggage trolley, a tumbleweed rolling by. MOOD: cheerful, playful, gently absurd."
+ },
+ {
+  "id": "kp-s-symbol-budovani",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaké bájné zvíře je v Severní Koreji symbolem rychlého budování země?",
+  "answer": "Okřídlený kůň",
+  "distractors": [
+   "Devítiocasá liška",
+   "Nebeský drak",
+   "Bílý tygr"
+  ],
+  "quip_correct": "Když plánované hospodářství potřebuje rychlost, sáhne po pohádce. Dodávky cihel pak jedou na křídlech.",
+  "quip_wrong": "Liška, drak ani tygr nikdy nevozili cihly. Na plakáty se hodí tvor, který za den uběhne tisíc li.",
+  "explanation": "Podle legendy uběhl kůň Čchollima za jediný den tisíc li, tedy stovky kilometrů. Podle něj se jmenovalo hnutí z konce 50. let, které mělo zemi vybudovat rekordním tempem.",
+  "about": "bájném koni Čchollima",
+  "more_fact": "Obří bronzová socha okřídleného koně stojí na kopci Mansu v hlavním městě. Přezdívku Čchollima nese i severokorejská fotbalová reprezentace.",
+  "irony_prompt": "A magnificent winged horse fills the frame, galloping across the sky at tremendous speed with a pile of bricks, a shovel and a cement bucket strapped to its back, while a startled goose flaps hard trying to keep pace. Smaller and subordinate: tiny builders below waving hard hats, a small half-built house, clouds swirling in its wake. MOOD: cheerful, playful, energetic."
+ },
+ {
+  "id": "kp-s-zmizele-pismo",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které písmo zmizelo po roce 1949 ze severokorejských novin a knih, zatímco na jihu se občas používá dál?",
+  "answer": "Čínské znaky",
+  "distractors": [
+   "Ruská azbuka",
+   "Arabské číslice",
+   "Japonské slabiky"
+  ],
+  "quip_correct": "Radikální zjednodušení: jedno písmo, žádné výjimky a žádné luštění. Severokorejský sazeč si mohl oddechnout.",
+  "quip_wrong": "Azbuku Korejci nikdy nepřevzali, arabské číslice počítají na obou stranách hranice a japonské slabiky zmizely s koncem okupace. Tady šlo o mnohem starší dědictví.",
+  "explanation": "Z běžných tiskovin zmizely, ve školách se jich ale severokorejští studenti učí dodnes. Na jihu se občas objeví třeba v novinových titulcích nebo ve jménech.",
+  "about": "čínských znacích v Koreji",
+  "more_fact": "Korejská jména se tradičně skládají z čínských znaků, takže stejně vyslovené jméno může mít úplně jiný význam podle toho, jaké znaky pro dítě vybrali rodiče.",
+  "irony_prompt": "A cheerful Korean schoolboy with a tiny light satchel and a relieved grin fills the frame, skipping along a village path, while behind him an old scholar in a black horsehair hat staggers under an enormous wobbling tower of heavy lacquered brush boxes and inkstones. Smaller and subordinate: a magpie riding on top of the tower, a twisted pine tree, a girl beyond a low stone wall still carrying one small brush box. MOOD: cheerful, playful, light."
+ },
+ {
+  "id": "kp-s-fotbal-1966",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kterou fotbalovou velmoc vyřadila Severní Korea na mistrovství světa 1966 v Anglii?",
+  "answer": "Itálii",
+  "distractors": [
+   "Brazílii",
+   "Francii",
+   "Německo"
+  ],
+  "quip_correct": "Mistři obrany padli s týmem, o kterém skoro nikdo neslyšel. Na letišti v Janově pak rajčata létala rychleji než míč.",
+  "quip_wrong": "Brazílie, Francie i Německo měly v Anglii jiné starosti. Nejbolestivější odchod zažili Italové a doma je čekali fanoušci se zeleninou.",
+  "explanation": "Rozhodující gól dal v Middlesbrough Pak Do-ik a Severní Korea postoupila jako první asijský tým do čtvrtfinále. Italské hráče pak doma vítali rozzlobení fanoušci shnilými rajčaty.",
+  "about": "mistrovství světa 1966",
+  "more_fact": "Ve čtvrtfinále vedli Korejci nad Portugalskem po 25 minutách 3:0. Pak se rozjel Eusébio, dal čtyři góly a Portugalsko vyhrálo 5:3.",
+  "irony_prompt": "A small jubilant football player in a completely plain solid red kit with no crest, no badge, no emblem leaps high above a muddy English pitch, and his joyful leap fills the frame, while a tall opponent in a completely plain solid blue kit with no crest, no badge, no emblem sits stunned on the grass. Smaller and subordinate: the ball nestled in the net, rain clouds parting into sunshine, a bewildered policeman in a tall helmet scratching his head. MOOD: cheerful, playful, triumphant."
  }
 ]

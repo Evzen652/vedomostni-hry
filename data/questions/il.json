@@ -995,5 +995,93 @@
   "more_fact": "Než se pomeranče vyvážely, balil je do papíru ručně celý zástup dělníků – jedna bedna jich mohla obsahovat i přes sto kusů. Dnes se stejná odrůda pěstuje i v jiných zemích, ale jméno Jaffa jí zůstalo.",
   "about": "pomerančích Jaffa",
   "irony_prompt": "A wooden crate overflowing with bright orange Jaffa oranges fills the frame, their thick dimpled peels glossy in warm sunlight. Smaller and subordinate: a few loose oranges rolled out onto a wooden dock; a coil of ship's rope; the blurred outline of a harbour and boats in the background. MOOD: sunny, fresh, cheerful."
+ },
+ {
+  "id": "il-s-hebrejske-ty",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co musí hebrejština vědět o člověku, se kterým mluvíš, aby mu vůbec mohla říct „ty“ nebo „miluješ“?",
+  "answer": "Jestli je to muž, nebo žena",
+  "distractors": [
+   "Jestli je starší, nebo mladší",
+   "Jestli je příbuzný, nebo cizí",
+   "Jestli je host, nebo hostitel"
+  ],
+  "quip_correct": "Hebrejská verze tohohle kvízu by se musela ptát na pohlaví hráče. Tahle naštěstí nemusí.",
+  "quip_wrong": "Věk, příbuzenství ani role u stolu hebrejskou gramatiku nezajímají. Ta se bez okolků ptá na jedinou věc.",
+  "explanation": "Muži se řekne atá, ženě at, a sloveso se mění i v přítomném čase: „miluješ“ zní k muži ohev, k ženě ohevet. Zvláštní tvary má i oslovení skupiny žen.",
+  "about": "hebrejské gramatice",
+  "more_fact": "Moderní hebrejština si pro nové věci často vypůjčila starobylá slova: elektřina se řekne chašmal, podle záhadného zářícího kovu z vidění proroka Ezechiela.",
+  "irony_prompt": "A cheerful Israeli waiter on a sunny seaside terrace fills the frame, holding two differently shaped coffee cups and hesitating comically in front of a customer whose face is completely hidden behind an enormous floppy sunhat, unsure which cup to serve. Smaller and subordinate: a seagull waiting for crumbs, a plate of hummus with a swirl of olive oil, a calm blue Mediterranean horizon. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "il-s-zimni-krmeni-ptaku",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč v údolí Chula na severu Izraele každou zimu rozhazují tuny kukuřice?",
+  "answer": "Aby jeřábi nesežrali úrodu na polích",
+  "distractors": [
+   "Aby do pastí nalákali divoká prasata",
+   "Na oslavu podzimního svátku sklizně",
+   "Aby kukuřice shnila na hnojivo"
+  ],
+  "quip_correct": "Nejštědřejší bufet široko daleko. Jeřábi mají oběd a farmáři klid.",
+  "quip_wrong": "Prasata v pastech ani slavnostní sklizeň to nejsou a hnojivo by vyšlo levněji. Ta kukuřice je úplatek pro opeřené hosty.",
+  "explanation": "V údolí přezimují desítky tisíc jeřábů popelavých a turisté je pozorují z tichých vozíků, které ptáky neplaší.",
+  "about": "jeřábech v údolí Chula",
+  "more_fact": "Údolí Chula bylo v 50. letech vysušeno kvůli zemědělské půdě a boji s malárií. Výsledkem byla ekologická pohroma, a tak v 90. letech část bažin zase zaplavili.",
+  "irony_prompt": "An enormous flock of grey cranes fills the frame, standing politely in a queue at a long wooden trough piled with golden corn kernels, while a grinning farmer pours more from a wheelbarrow like a generous host at a feast. Smaller and subordinate: a quiet electric cart full of tourists with binoculars, a tractor parked beside an untouched green field, a single crane wearing a napkin. MOOD: cheerful, playful, sunny winter morning."
+ },
+ {
+  "id": "il-s-den-smireni",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak vypadají izraelské silnice o svátku Jom kipur?",
+  "answer": "Auta stojí a po dálnicích jezdí děti na kolech",
+  "distractors": [
+   "Konají se na nich slavnostní vojenské přehlídky",
+   "Veřejná doprava jezdí celý den zdarma",
+   "Zaplní se rodinami mířícími k moři"
+  ],
+  "quip_correct": "Jediný den v roce, kdy je izraelská dálnice klidnější než dětské hřiště. A vlastně jím i je.",
+  "quip_wrong": "Přehlídky, jízda zdarma i výlet k moři by potřebovaly motor. Ten o Jom kipur mlčí a vládnou pedály.",
+  "explanation": "Jom kipur, Den smíření, je nejposvátnější den židovského roku: dospělí 25 hodin nejedí ani nepijí a vysílání přeruší i televize a rozhlas.",
+  "about": "svátku Jom kipur",
+  "more_fact": "Silnice nikdo úředně neuzavírá, prázdné jsou jen díky zvyku. Kdo projede autem, riskuje hlavně pohoršené pohledy; záchranky a policie přitom jezdí normálně.",
+  "irony_prompt": "A wide empty multi-lane highway fills the frame under a golden evening sky, taken over by cheerful children on bicycles, scooters and roller skates weaving between the painted lanes, while one lonely parked car looks on sheepishly from the shoulder. Smaller and subordinate: a grandfather in a white shirt strolling down the middle, a dog riding in a bicycle basket, a pigeon napping on the empty asphalt. MOOD: cheerful, playful, peaceful."
+ },
+ {
+  "id": "il-s-kocarkova-svacina",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Na co přišli vědci, když zkoumali izraelské děti, které už v kočárku chroupou křupky Bamba?",
+  "answer": "Mají mnohem méně alergií na arašídy",
+  "distractors": [
+   "Mají pevnější mléčné zuby",
+   "Dřív začínají mluvit v celých větách",
+   "Méně často trpí nadváhou"
+  ],
+  "quip_correct": "Vědecký průlom schovaný v sáčku od svačiny. Někdy stačí pozorně sledovat, co děti drobí po kočárku.",
+  "quip_wrong": "Zuby, řeč ani postava s tím nesouvisí. Ta nafouknutá tyčinka udělala víc pro alergologii než leckterá laboratoř.",
+  "explanation": "Pozorování vedlo ke studii LEAP z roku 2015, která potvrdila, že včasné podávání arašídů malým dětem alergii spíš předchází. Doporučení pro rodiče se pak změnila po celém světě.",
+  "about": "křupkách Bamba",
+  "more_fact": "Bamba se vyrábí od roku 1964 a v Izraeli ji zná prakticky každé dítě. Nejsou to brambůrky, ale kukuřičné křupky ochucené arašídovým máslem.",
+  "irony_prompt": "A giant golden stick-shaped puffed snack fills the frame, held up like a trophy by a beaming toddler in a pushchair, while a serious scientist in a lab coat kneels beside it peering through a magnifying glass in awe. Smaller and subordinate: crumbs scattered on the blanket, a pigeon hoping for leftovers, a calm baby sleeping in the next pushchair. MOOD: cheerful, playful, sunny."
  }
 ]

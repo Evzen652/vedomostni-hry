@@ -973,5 +973,93 @@
   "more_fact": "Kapustňáci se pohybují velmi pomalu a mají špatný zrak, takže se často spoléhají hlavně na citlivé vousky kolem tlamy, kterými nahmatávají potravu i překážky v kalné vodě.",
   "about": "africkém kapustňákovi",
   "irony_prompt": "A large gentle manatee fills the frame drifting just beneath the calm surface of a mangrove lagoon, munching on a trailing strand of water plants. Smaller and subordinate: a small fish nibbling near its rounded snout; sunlight filtering through the murky green water above; mangrove roots framing the edges of the lagoon. MOOD: peaceful, gentle, dreamy."
+ },
+ {
+  "id": "ga-s-masky-a-evropske-umeni",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Na kterého evropského malíře a jeho umělecký směr zapůsobily na počátku 20. století masky a sošky etnika Fang, jaké se tehdy dostaly do Paříže?",
+  "answer": "Na Pabla Picassa a kubismus",
+  "distractors": [
+   "Na Clauda Moneta a impresionismus",
+   "Na Salvadora Dalího a surrealismus",
+   "Na Gustava Klimta a secesi"
+  ],
+  "quip_correct": "Gabonský řezbář vytvořil masku pro obřad předků a o pár tisíc kilometrů dál z toho vznikl celý umělecký směr. Autorské honoráře se tehdy nevyplácely.",
+  "quip_wrong": "Monet byl tou dobou zahleděný do leknínů, Dalí byl ještě malé dítě a Klimt zlatil ve Vídni. Pařížským ateliérem, kde se africké tvary rozložily na kostky, prošel jen jeden z nich.",
+  "explanation": "Malíř vzpomínal, jak ho africké masky v pařížském etnografickém muzeu Trocadéro zasáhly v roce 1907, kdy dokončoval obraz Avignonské slečny.",
+  "about": "fangských maskách",
+  "more_fact": "Bílá maska ngil, kterou Fangové používali při obřadech tajného spolku hledajícího čarodějníky, se v roce 2006 vydražila v Paříži za téměř šest milionů eur a patří k nejdražším africkým artefaktům.",
+  "irony_prompt": "A tall elongated white wooden ceremonial mask with a serene heart-shaped face fills the frame, hanging on a Parisian studio wall, while a small easel painting beside it has broken its whole face into cubes and triangles in eager imitation. Smaller and subordinate: a scattered pile of paint tubes, a bowl of fruit also rearranged into cubes, a pigeon on the skylight looking confused. MOOD: witty, artistic, playful."
+ },
+ {
+  "id": "ga-s-zadost-z-roku-1958",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "O co v roce 1958 marně požádal Léon M'ba, budoucí první prezident této země, když se africké kolonie rozhodovaly o své budoucnosti?",
+  "answer": "Aby se Gabon stal francouzským departementem",
+  "distractors": [
+   "Aby Gabon připojili k Belgickému Kongu",
+   "Aby se Gabon sloučil s Kamerunem",
+   "Aby Libreville hostilo sídlo OSN"
+  ],
+  "quip_correct": "Kolonie, která chtěla být ještě o kus víc kolonií, a Paříž, která řekla ne. Dekolonizace umí napsat i takovou komedii.",
+  "quip_wrong": "Belgické Kongo, Kamerun i OSN byly ve hře leda v představách. Gabonský politik chtěl paradoxně opačný směr než většina Afriky – ještě těsnější pouto s Paříží.",
+  "explanation": "Francie žádost odmítla, M'ba přesto udržoval s Paříží tak úzké vztahy, že ho po převratu roku 1964 vrátili k moci francouzští výsadkáři.",
+  "about": "Léonu M'bovi",
+  "more_fact": "Francouzská armáda má v Libreville vojenský tábor dodnes a měnou země zůstává frank CFA, který byl dlouho pevně svázaný s francouzským frankem a dnes je navázaný na euro.",
+  "irony_prompt": "A small hopeful tropical parrot fills the frame, standing on a jungle branch and politely holding out a bouquet of orchids toward a tall, stiff, elegant cockerel in a bow tie, who turns his beak away with a dignified shrug. Smaller and subordinate: a gorilla watching the scene with arms folded, a baguette dangling from a liana, a curious monkey hanging upside down. MOOD: comic, bittersweet, tropical."
+ },
+ {
+  "id": "ga-s-hnizdiste-na-plazich",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Která mořská želva, největší žijící želva na světě, má na plážích Gabonu jedno z největších hnízdišť na Zemi?",
+  "answer": "Kožatka velká",
+  "distractors": [
+   "Kareta obecná",
+   "Kareta zelená",
+   "Kareta pravá"
+  ],
+  "quip_correct": "Želva velikosti malého auta připluje přes půl oceánu, jen aby snesla vejce do gabonského písku. Takovou dálku nevydrží ani leckterý charterový let.",
+  "quip_wrong": "Karety jsou na gabonských plážích k vidění také, ale proti rekordmance jsou to kapesní vydání. Ta nemá ani tvrdý krunýř – jen kožovitý hřbet.",
+  "explanation": "Kožatka může vážit přes půl tuny, potápí se víc než kilometr hluboko a živí se hlavně medúzami; v Gabonu hnízdí hlavně na plážích kolem Mayumby.",
+  "about": "kožatce velké",
+  "more_fact": "Samice kladou vejce v noci a jedno hnízdo může obsahovat kolem stovky vajec velikosti kulečníkové koule. Pohlaví mláďat určuje teplota písku – v teplejším se líhnou hlavně samičky.",
+  "irony_prompt": "An enormous leatherback sea turtle with a ridged dark leathery back fills the frame, hauling herself up a moonlit tropical beach with the determined, exhausted face of a traveller who has just crossed an ocean, a tiny travel suitcase strapped to her shell. Smaller and subordinate: a row of baby turtles doing warm-up stretches, a crab holding a small red torch, jungle palms at the edge of the sand. MOOD: heartwarming, comic, nocturnal."
+ },
+ {
+  "id": "ga-s-africky-pohar-2012",
+  "cc": "ga",
+  "country": "Gabon",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Se kterou zemí Gabon v roce 2012 společně pořádal fotbalový Africký pohár národů?",
+  "answer": "S Rovníkovou Guineou",
+  "distractors": [
+   "S Kamerunem",
+   "S Republikou Kongo",
+   "Se Senegalem"
+  ],
+  "quip_correct": "Dvě malé země se složily na jeden velký turnaj jako sousedé na společný gril. Finále se hrálo v gabonské metropoli a trofej si odvezla Zambie.",
+  "quip_wrong": "Kamerun i Senegal pořádaly turnaj v jiných letech samy a Kongo na svou šanci zatím čeká. Spoluhostitel byl tehdy na turnaji úplným nováčkem.",
+  "explanation": "Gabon pak turnaj uspořádal ještě jednou sám v roce 2017, kdy stadion v hlavním městě zažil i finále Kamerunu s Egyptem.",
+  "about": "Africkém poháru národů 2012",
+  "more_fact": "Rovníková Guinea zaskočila znovu v roce 2015, když na poslední chvíli převzala celý turnaj po Maroku, které se ho vzdalo kvůli obavám z eboly.",
+  "irony_prompt": "A single huge round black-and-white patched soccer ball fills the frame, carried joyfully above the heads of two neighbouring groups of dancing fans who each hold one side of it like a shared birthday cake, everyone dressed in completely plain solid colours with no crest, no badge, no emblem. Smaller and subordinate: a drummer on a stadium step, a parrot heading a tiny ball, fireworks bursting in green and yellow. MOOD: jubilant, festive, colourful."
  }
 ]

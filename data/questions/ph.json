@@ -957,5 +957,93 @@
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text -- garland of small white fragrant sampaguita flowers at a market stall",
   "about": "sampaguitě, národní květině Filipín",
   "irony_prompt": "A long garland of small white star-shaped jasmine flowers fills the frame being threaded by a flower seller's hands, the flowers glowing fresh and fragrant. Smaller and subordinate: more garlands hanging from her stall; a butterfly drawn to the scent; a church doorway behind. MOOD: fragrant, gentle, fresh."
+ },
+ {
+  "id": "ph-s-slovicka-po-a-opo",
+  "cc": "ph",
+  "country": "Filipíny",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "K čemu slouží ve filipínštině drobná slůvka „po“ a „opo“?",
+  "answer": "Vyjadřují úctu ke staršímu",
+  "distractors": [
+   "Označují otázku na konci věty",
+   "Rozlišují mužský a ženský rod",
+   "Nahrazují číslovky při počítání"
+  ],
+  "quip_correct": "Jazyk, ve kterém se dá být nezdvořilý i jedním chybějícím slovem. Babička to pozná dřív, než dopovíš větu.",
+  "quip_wrong": "Otázka, rod i počítání mají ve filipínštině jiné nástroje. Tohle slůvko je jazyková úklona – a bez ní se u rodinného stolu sedí o kus dál.",
+  "explanation": "„Opo“ je uctivé „ano“ a „po“ se vkládá do vět, když se mluví k rodičům, učitelům nebo cizím. K úctě patří i gesto mano, kdy si mladší přiloží ruku staršího na čelo.",
+  "about": "filipínské zdvořilosti",
+  "more_fact": "Filipínci oslovují starší sourozence zvláštními tituly: „kuya“ je starší bratr a „ate“ starší sestra. Stejně se ale oslovují i cizí lidé, třeba řidič nebo prodavačka na trhu.",
+  "irony_prompt": "A beaming Filipino grandmother fills the frame, seated like a queen in a rattan chair, while a polite teenage grandson in a plain t-shirt bows slightly and presses the back of her hand to his forehead. Smaller and subordinate: a younger cousin rushing in to wait for his turn; a rooster peeking through the doorway; a bowl of round tropical fruit on the side table. MOOD: warm, affectionate, gently funny."
+ },
+ {
+  "id": "ph-s-vojenska-hostina",
+  "cc": "ph",
+  "country": "Filipíny",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak probíhá filipínská hostina zvaná boodle fight, převzatá z armádních tradic?",
+  "answer": "Všichni jedí rukama z banánových listů",
+  "distractors": [
+   "Hosté soutěží, kdo sní nejpálivější jídlo",
+   "Každý donese jídlo a vymění ho se sousedem",
+   "Jídlo se v tichosti draží mezi stoly"
+  ],
+  "quip_correct": "Hostina bez příborů, talířů i nádobí na mytí. Filipínská armáda vymyslela dokonalou oslavu i dokonalou výmluvu pro myčku.",
+  "quip_wrong": "Pálivá soutěž, výměna ani dražba – tady se nesoutěží, tady se hromadně útočí. A povel k útoku zní přesně po vojensku.",
+  "explanation": "Rýže se nasype do dlouhého pásu na listy a navrch přijde maso, ryby a ovoce. Na povel se všichni pustí do jídla vestoje, bok po boku, bez ohledu na hodnost.",
+  "about": "hostině boodle fight",
+  "more_fact": "Jídlu rukama se ve filipínštině říká „kamayan“ podle slova „kamay“ (ruka). Sousto se nabírá konečky prstů a do úst se posune palcem – techniku se učí i turisté v restauracích.",
+  "irony_prompt": "One impossibly long table covered end to end with green banana leaves fills the frame, heaped with a long stripe of white rice, grilled fish, round tomatoes and slices of mango, while a jolly crowd of Filipino friends in plain t-shirts lean in eating joyfully with bare hands. Smaller and subordinate: a lonely fork lying unused on the floor; a cat sneaking a fish tail; a whole round watermelon at the end of the table. MOOD: festive, joyful, noisy."
+ },
+ {
+  "id": "ph-s-puvod-nazvu-souostrovi",
+  "cc": "ph",
+  "country": "Filipíny",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Po kom dostaly Filipíny jméno, když je roku 1543 pojmenoval mořeplavec Ruy López de Villalobos?",
+  "answer": "Po následníkovi španělského trůnu",
+  "distractors": [
+   "Po portugalském mořeplavci",
+   "Po náčelníkovi z ostrova Cebu",
+   "Po apoštolovi, patronovi výpravy"
+  ],
+  "quip_correct": "Celá země nese jméno prince, který ji nikdy neviděl. Pojmenovat souostroví po šéfovi je nejstarší forma podlézání.",
+  "quip_wrong": "Mořeplavec i místní náčelník by si to zasloužili víc, jenže koloniální pravidla byla jednoduchá: jméno dostal ten, komu patřila koruna.",
+  "explanation": "Budoucímu králi Filipu II. bylo tehdy šestnáct let. Villalobos původně pojmenoval jen ostrovy Leyte a Samar, jméno se teprve později rozšířilo na celé souostroví.",
+  "about": "názvu Filipín",
+  "more_fact": "Prezident Ferdinand Marcos v 70. letech podporoval přejmenování země na Maharlika podle vrstvy svobodných mužů předkoloniální společnosti. K nápadu se v roce 2019 vrátil i Rodrigo Duterte, bez úspěchu.",
+  "irony_prompt": "A pompous young prince in a ruff collar, seen from behind, fills the frame, standing on a palace balcony and holding a golden telescope pointed at a far-off cluster of green tropical islands, each one sprouting a tiny golden crown on its palm trees. Smaller and subordinate: a sailor on a ship below bowing deeply toward the balcony; a parrot perched on the telescope; seagulls circling the islands. MOOD: satirical, playful, sunny."
+ },
+ {
+  "id": "ph-s-sopka-v-albay",
+  "cc": "ph",
+  "country": "Filipíny",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je proslulá činná sopka Mayon v provincii Albay?",
+  "answer": "Téměř dokonale souměrným kuželem",
+  "distractors": [
+   "Chrlí v noci modře svítící lávu",
+   "Její svahy pokrývají rýžové terasy",
+   "Pod ní leží nejhlubší jeskyně Asie"
+  ],
+  "quip_correct": "Nejfotogeničtější hora Asie a zároveň jedna z nejvznětlivějších. Krása, která každých pár let vyžene místní z domovů.",
+  "quip_wrong": "Modrá láva patří indonéskému Ijenu, terasy horám na severu Luzonu. Mayon sází na geometrii – a na výbuchy.",
+  "explanation": "Mayon je nejaktivnější sopkou Filipín a od roku 1616 vybuchl víc než padesátkrát. Při erupci v roce 1814 zasypal město Cagsawa, z jehož kostela zbyla jen zvonice.",
+  "about": "sopce Mayon",
+  "more_fact": "Podle místní legendy vyrostla sopka nad hrobem krásné dívky Daragang Magayon. Mraky kolem vrcholu jsou prý polibky jejího milého, jehož jméno v místním jazyce znamená mrak.",
+  "irony_prompt": "A perfectly symmetrical cone-shaped volcano fills the frame, so neat and smooth it looks drawn with a compass, while a tiny puff of white smoke curls from its tip like a swirl of whipped cream. Smaller and subordinate: a farmer and his water buffalo posing proudly in the foreground; an old stone bell tower half buried in grey ash; a rainbow over the slope. MOOD: sunny, proud, playful."
  }
 ]

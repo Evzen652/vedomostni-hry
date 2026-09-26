@@ -886,5 +886,93 @@
   "image_prompt": "Fotorealistický snímek rodiny s malým vánočním stromkem grilující na sluncem zalité australské pláži, 16:9",
   "about": "vánocích v Austrálii",
   "irony_prompt": "A decorated Christmas tree fills the frame standing incongruously on a sun-drenched beach, tinsel glinting under a blazing midday sun, its base half-buried in warm sand instead of snow. Smaller and subordinate: a family unwrapping presents on beach towels nearby, sunglasses on; a barbecue smoking cheerfully just behind the tree; a seagull perched cheekily on one of the tree's baubles. MOOD: sunny, festive, playful."
+ },
+ {
+  "id": "au-s-volebni-vynalez",
+  "cc": "au",
+  "country": "Austrálie",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který volební vynález z Austrálie 50. let 19. století se v USA dodnes přezdívá „Australian ballot“?",
+  "answer": "Tajné hlasování s úředně tištěnými lístky",
+  "distractors": [
+   "Hlasování zvednutím ruky na shromáždění",
+   "Volba kandidátů losem z osudí",
+   "Sčítání hlasů pomocí barevných kuliček"
+  ],
+  "quip_correct": "Ano. Svět se od Australanů naučil volit potichu – což je vzhledem k pověsti Australanů docela slušná ironie.",
+  "quip_wrong": "Ruce nad hlavou, losování i kuličky znal už starověk – Austrálie přišla s tím, že do vaší volby nikomu nic není.",
+  "explanation": "Kolonie Victoria a Jižní Austrálie ho zavedly roku 1856; do té doby se v britském světě volilo nahlas a veřejně, takže šlo voliče snadno podplatit nebo zastrašit.",
+  "about": "tajném hlasování z Austrálie",
+  "more_fact": "Austrálie patří i k hrstce demokracií s povinnou volební účastí – kdo bez omluvy k urnám nepřijde, dostane pokutu, a účast tak pravidelně přesahuje 90 procent.",
+  "irony_prompt": "A tall wooden voting booth with a striped curtain fills the frame, where a relaxed Australian in shorts and flip-flops slips a plain folded paper into a box while shushing a nosy kangaroo that tries to peek over his shoulder. Smaller and subordinate: a kookaburra laughing on the booth roof, a sausage sizzling on a nearby grill, a queue of voters in sunhats. MOOD: sunny, cheeky, relaxed."
+ },
+ {
+  "id": "au-s-jazyk-v-ustave",
+  "cc": "au",
+  "country": "Austrálie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaký úřední jazyk má Austrálie stanovený ve své federální ústavě nebo zákoně?",
+  "answer": "Žádný – angličtina je úřední jen fakticky",
+  "distractors": [
+   "Angličtinu, výslovně od roku 1901",
+   "Angličtinu a jazyk warlpiri",
+   "Angličtinu a francouzštinu"
+  ],
+  "quip_correct": "Správně. Země, kde se odpoledne zkrátí na „arvo“, prostě nepotřebuje paragraf, aby jí bylo jasné, jak mluví.",
+  "quip_wrong": "Francouzštinu si nechala Kanada a warlpiri se mluví v poušti – jenže v australských zákonech nestojí ani ta angličtina.",
+  "explanation": "Ústava z roku 1901 jazyk vůbec neřeší – její autoři angličtinu brali jako samozřejmost, kterou netřeba zapisovat.",
+  "about": "úředním jazyce Austrálie",
+  "more_fact": "Na začátku kolonizace se na kontinentu mluvilo zhruba 250 domorodými jazyky; dnes se jich jako mateřština předává dětem jen asi tucet.",
+  "irony_prompt": "A giant old parchment scroll fills the frame, unrolled across a sunny beach and completely blank, while a puzzled koala in reading glasses searches every inch of it with a magnifying glass. Smaller and subordinate: a cockatoo squawking over its shoulder, a laid-back surfer shrugging, a crab scuttling across the parchment. MOOD: playful, puzzled, sunny."
+ },
+ {
+  "id": "au-s-obrana-samce-z-reky",
+  "cc": "au",
+  "country": "Austrálie",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se může bránit samec ptakopyska, což mezi savci skoro nenajdete?",
+  "answer": "Jedovatou ostruhou na zadních nohách",
+  "distractors": [
+   "Smradlavým výměškem z pachových žláz",
+   "Ostnatým ocasem jako rejnok",
+   "Ostrými trny v srsti jako ježek"
+  ],
+  "quip_correct": "Ano. Kachní zobák, bobří ocas, snáší vejce – a ještě kope jedem. Příroda tu zjevně vyklízela šuplík.",
+  "quip_wrong": "Smrad, ostny i ocas rejnoka by k té bizarní skládačce seděly, jenže zbraň nosí samec na patách.",
+  "explanation": "Jed produkují žlázy aktivní hlavně v období páření; člověka nezabije, ale bolest může trvat týdny a běžné léky na ni nezaberou.",
+  "about": "ptakopyskovi",
+  "more_fact": "Pod vodou ptakopysk zavírá oči, uši i nosní dírky a kořist hledá pomocí receptorů v zobáku, které zachytí slabé elektrické pole svalů korýšů.",
+  "irony_prompt": "A grumpy platypus fills the frame, standing on its hind legs in a boxing stance on a riverbank and proudly showing off a small sharp heel spur like a cowboy's spur, while a cocky crayfish backs away nervously. Smaller and subordinate: a wide-eyed kingfisher on a branch, ripples on a brown creek, a startled fisherman's hat floating by. MOOD: cheeky, playful, sunny."
+ },
+ {
+  "id": "au-s-opalove-mesto-v-pousti",
+  "cc": "au",
+  "country": "Austrálie",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kde bydlí velká část obyvatel opálového městečka Coober Pedy v Jižní Austrálii, aby unikla letnímu vedru?",
+  "answer": "V domech vykopaných pod zemí",
+  "distractors": [
+   "V domech na kůlech nad solným jezerem",
+   "V přestavěných železničních vagonech",
+   "V hausbótech na umělé laguně"
+  ],
+  "quip_correct": "Přesně. Kdo v poušti kope opály, vykope si rovnou i obývák – úspora práce po australsku.",
+  "quip_wrong": "Kůly, vagony i laguna vypadají svěže, jenže nejlíp chladí pořádná vrstva skály nad hlavou.",
+  "explanation": "Pod povrchem se teplota drží celoročně kolem 23 °C, zatímco venku v létě běžně přesahuje 40 °C; ve skále tu vznikly i kostely.",
+  "about": "městečku Coober Pedy",
+  "more_fact": "Coober Pedy dodává velkou část světové produkce drahých opálů a měsíční krajina z hald vytěžené hlíny posloužila jako kulisa několika sci-fi filmů.",
+  "irony_prompt": "A cosy underground living room carved into rosy sandstone fills the frame, with a family relaxing on a sofa sipping cold lemonade, while through a single ventilation shaft above a blazing desert sun glares down helplessly. Smaller and subordinate: a lizard in sunglasses peeking in, a glittering opal pebble on the coffee table, a kangaroo trying to squeeze down the shaft. MOOD: cool, cheeky, cosy."
  }
 ]

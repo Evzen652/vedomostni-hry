@@ -160,6 +160,22 @@ for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý 
       celkem++; if (q.online_only === true) serverovych++;
     }
   }
+  // ID SERVEROVÉ OTÁZKY NESMÍ PROZRADIT ODPOVĚĎ (2026-09-26). Online hra posílá id už
+  // během otázky (je z něj cesta k ilustraci img/{id}.jpg — vidí ji každý v síťovém
+  // provozu). U veřejné otázky to nevadí, text je stejně na webu; u serverové je id
+  // jediné, co jde vidět předem. Porovnávají se KMENY (prvních 5 písmen bez diakritiky),
+  // protože čeština ohýbá: odpověď „Karel IV.“ a slug „karla“ jsou totéž.
+  const bezDiakr = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const kmeny = s => bezDiakr(s).split(/[^a-z0-9]+/).filter(w => w.length >= 4).map(w => w.slice(0, 5));
+  for (const f of qFiles) {
+    for (const q of JSON.parse(fs.readFileSync(path.join(QDIR, f), "utf8"))) {
+      if (q.online_only !== true) continue;
+      const vId = new Set(kmeny(String(q.id).split("-").slice(2).join(" ")));
+      const prozrazeno = kmeny(q.answer).filter(k => vId.has(k));
+      if (prozrazeno.length) bad(q.id + ": serverová otázka má v id slovo z odpovědi („" +
+        prozrazeno.join("“, „") + "…“) — id vidí hráč už během otázky");
+    }
+  }
   const podil = celkem ? Math.round((serverovych / celkem) * 1000) / 10 : 0;
   if (!serverovych) {
     warn("serverový fond je PRÁZDNÝ — online hra losuje z otázek, jejichž odpovědi jsou " +

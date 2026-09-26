@@ -926,5 +926,93 @@
   "image_prompt": "Fotorealistický snímek hořící svíčky v okně tradičního irského domu za soumraku o Vánocích, teplé světlo dopadající na sklo, 16:9",
   "about": "irské vánoční svíčce v okně",
   "irony_prompt": "A single lit candle fills the frame standing in a small cottage window on a dark winter night, its flame doubled in the glass. Smaller and subordinate: a small child on tiptoe just lowering the taper; a snowy lane outside with a traveller approaching; holly on the sill. MOOD: warm, welcoming."
+ },
+ {
+  "id": "ie-s-kladna-odpoved",
+  "cc": "ie",
+  "country": "Irsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Irština nemá obyčejné slovo pro ano ani pro ne. Jak se tedy odpoví na otázku „Prší?“",
+  "answer": "Zopakuje se sloveso z otázky",
+  "distractors": [
+   "Slůvkem převzatým z latiny",
+   "Kývnutím hlavy beze slov",
+   "Zvláštní částicí na konci věty"
+  ],
+  "quip_correct": "Jazyk, ve kterém se nedá jen tak kývnout. Každá odpověď je celá věta a irský déšť se v ní ohlásí dvakrát.",
+  "quip_wrong": "Mniši latinu uměli, ale na ano ji nikdo nepotřeboval, a tiché kývnutí by v hlučné irské kuchyni nikdo nezaznamenal. Stačí otázku vrátit.",
+  "explanation": "Na „Prší?“ se odpoví „Prší.“ nebo „Neprší.“ Zvyk prosákl i do irské angličtiny, kde lidé místo yes často odpovídají „I am“ nebo „It is“.",
+  "about": "irštině",
+  "more_fact": "Irština patří mezi keltské jazyky a nejbližší příbuznou má ve skotské gaelštině. Obě mění počáteční hlásku slova podle toho, co stojí před ním, třeba po zájmenu můj.",
+  "irony_prompt": "Two cheerful Irish farmers in flat caps lean over a mossy stone wall that fills the frame; one points up at a grey cloud with a questioning look, and the other answers simply by pointing at the very same cloud with an identical mirror-image gesture. Smaller and subordinate: a sheep copying the gesture with its hoof, a light drizzle, a thermos cup steaming on the wall. MOOD: cheerful, playful, drizzly but sunny-hearted."
+ },
+ {
+  "id": "ie-s-pocatky-dublinu",
+  "cc": "ie",
+  "country": "Irsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kdo založil v 9. století osadu, ze které vyrostl Dublin?",
+  "answer": "Seveřané ze Skandinávie",
+  "distractors": [
+   "Římští legionáři",
+   "Normanští rytíři",
+   "Anglosaští kupci"
+  ],
+  "quip_correct": "Irská metropole začínala jako parkoviště pro dračí lodě. Hospody přišly až potom, zato vydržely.",
+  "quip_wrong": "Římané do Irska nikdy nedorazili, Normané přišli až o tři století později a Anglosasové měli dost starostí doma.",
+  "explanation": "Roku 841 tu zřídili opevněný přístav pro své lodě a pro obchod, mimo jiné i s otroky. Jméno města pochází z irského Dubh Linn, tedy Černá tůň.",
+  "about": "počátcích Dublinu",
+  "more_fact": "Vikingové založili i další irská přístavní města, třeba Waterford, Wexford a Limerick. Waterford se proto dodnes chlubí pověstí nejstaršího města v Irsku.",
+  "irony_prompt": "A towering longship with a carved dragon prow fills the frame, pulled up on a muddy riverbank beside a dark peaty pool, and its bearded crew in simple round iron helmets are cheerfully hammering the very first wooden hut of a future city. Smaller and subordinate: a curious local heron, a sailor measuring a plank with his axe handle, a seagull stealing a fish. MOOD: cheerful, playful, adventurous."
+ },
+ {
+  "id": "ie-s-chybejici-zvirata",
+  "cc": "ie",
+  "country": "Irsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Která skupina zvířat v irské divoké přírodě úplně chybí?",
+  "answer": "Hadi",
+  "distractors": [
+   "Ještěrky",
+   "Žáby",
+   "Netopýři"
+  ],
+  "quip_correct": "Svatý Patrik dostal zásluhy za práci, kterou za něj odvedla doba ledová. Učebnicový případ dobrého PR.",
+  "quip_wrong": "Ještěrky, žáby i netopýři tu v klidu žijí. Chybí jen tvorové bez nohou, kteří zmeškali poslední spoj z pevniny.",
+  "explanation": "Legenda tvrdí, že je z ostrova vyhnal svatý Patrik. Ve skutečnosti se sem po poslední době ledové nestihli dostat dřív, než moře ostrov odřízlo od pevniny.",
+  "about": "irské přírodě",
+  "more_fact": "Jediným původním irským plazem je ještěrka živorodá. Irsko nemá ani krtky, takže louky tu nejsou poseté hromádkami hlíny jako v Česku.",
+  "irony_prompt": "A smug bright green Irish meadow fills the frame, where a lizard, a frog and a bat enjoy a cheerful picnic on a checked blanket, while far out at sea a small rowing boat full of disappointed coiled serpents drifts away toward the horizon. Smaller and subordinate: a shepherd's crook leaning on a rock, a sheep chewing clover, a rainbow over the hills. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "ie-s-otocena-harfa",
+  "cc": "ie",
+  "country": "Irsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Harfa v irském státním znaku je natočená opačně, než na co jsou Irové zvyklí z hospod. Proč?",
+  "answer": "Pivovar si ji dřív zaregistroval jako známku",
+  "distractors": [
+   "Tak ji kreslili středověcí keltští bardi",
+   "Kvůli sporu s anglickou heraldikou",
+   "Na minci by se jinak nevešla koruna"
+  ],
+  "quip_correct": "Stát se musel uskromnit a vzít zrcadlovku. Na Smaragdovém ostrově má zkrátka půllitr přednost.",
+  "quip_wrong": "Bardi ani angličtí heraldici za to nemůžou. Stačil jeden podnikavý sládek, který byl na úřadě o pár desetiletí rychlejší.",
+  "explanation": "Předlohou státní harfy je nástroj ze 14. či 15. století, tradičně spojovaný s legendárním králem Brianem Ború. Harfa je irským symbolem už od 16. století.",
+  "about": "irské harfě",
+  "more_fact": "Irsko se chlubí tím, že je jediným státem na světě, jehož státním znakem je hudební nástroj. Harfa zdobí i irská eura a vlajku prezidenta republiky.",
+  "irony_prompt": "A golden Celtic harp fills the frame, standing on a stone plinth, and a proud Irish official in a bowler hat carefully turns it around to face the other way, glancing nervously at a foaming dark pint glass that watches smugly from a nearby windowsill. Smaller and subordinate: a large mirror reflecting the harp, a cat plucking one string, a shamrock in a small pot. MOOD: cheerful, playful, cheeky."
  }
 ]

@@ -1591,5 +1591,93 @@
   "about": "přezdívce Marťané pro maďarské vědce",
   "image_prompt": "painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text; four scientists at a chalkboard covered in equations under warm desk lamps",
   "irony_prompt": "Four scientists huddle around a chalkboard covered in equations under warm desk lamps, filling the frame, one of them gesturing upward toward a small glowing green planet visible faintly through the window as if to acknowledge the joke about their origin. Smaller and subordinate: scattered papers; a globe on a shelf; steaming cups of tea. MOOD: quietly clever, warm."
+ },
+ {
+  "id": "hu-s-poradi-na-vizitce",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se Maďaři představují v rodném jazyce — co vysloví jako první?",
+  "answer": "Příjmení, křestní jméno až za ním",
+  "distractors": [
+   "Křestní jméno, pak jméno po otci",
+   "Jméno rodné obce, pak své jméno",
+   "Přezdívku, úřední jméno jen na úřadě"
+  ],
+  "quip_correct": "Nejdřív rod, pak člověk. Maďarská gramatika má v hierarchii jasno a úřednická duše by plakala dojetím.",
+  "quip_wrong": "Otčestvo patří do ruských románů, obce do šlechtických přídomků a přezdívky do hospody. Maďar začíná tím, co by vyplnil do formuláře jako první.",
+  "explanation": "Stejně „od největšího“ píšou Maďaři i datum: rok, měsíc, den. Proto u nás mluvíme o Ferenci Lisztovi, ale doma mu Maďaři říkají Liszt Ferenc.",
+  "about": "maďarských jménech",
+  "more_fact": "Maďarština nerozlišuje rod ani u zájmen: jediné slovo ő znamená on i ona. Kdo se ji učí, aspoň nemusí řešit, jestli vypráví o sousedovi, nebo o sousedce.",
+  "irony_prompt": "A cheerful Hungarian gentleman in an embroidered folk waistcoat bows deeply to introduce himself, while a huge leafy family tree growing behind him fills the frame, its crown pushed proudly in front of his own small face, full of small painted oval faces of smiling relatives who clearly get introduced first. Smaller and subordinate: a puzzled foreign guest with an outstretched hand, a curly puli dog peeking from behind a chair, a cup of coffee on a lace doily. Warm, affectionate irony, not cynical. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "hu-s-vynalez-z-roku-1893",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co začal roku 1893 v maďarské metropoli nabízet předplatitelům vynálezce Tivadar Puskás, spolupracovník Thomase Edisona?",
+  "answer": "Zprávy a hudbu přenášené po telefonu",
+  "distractors": [
+   "Barevné fotografie na skleněných deskách",
+   "Elektrické osvětlení bytů na splátky",
+   "Promítání živých obrázků v kavárnách"
+  ],
+  "quip_correct": "Podcast s kabelem ve zdi. Maďaři si pouštěli zprávy do ucha dřív, než kdokoli vyslovil slovo rádio.",
+  "quip_wrong": "Barevné snímky, žárovky na splátky i pohyblivé obrázky zněly moderně, jenže maďarští předplatitelé v té době už poslouchali operu ze sluchátka.",
+  "explanation": "Služba se jmenovala Telefon Hírmondó a měla pevný denní program: burzu, zprávy i večerní přenosy z opery. Fungovala desítky let a v podstatě to byl rozhlas bez rádia.",
+  "about": "Tivadaru Puskásovi",
+  "more_fact": "Puskás pracoval v Edisonově laboratoři a Edison mu přisoudil nápad telefonní ústředny, přes kterou se hovory přepojují mezi mnoha účastníky najednou.",
+  "irony_prompt": "An elegant lady of the 1890s in a lace dress sits in her Budapest parlour holding an enormous brass telephone earpiece to her ear, and the earpiece with its long twisting cord fills the frame, while a tiny opera singer in full costume pops out of it mid-aria. Smaller and subordinate: a cat covering its ears with its paws, a maid tiptoeing past with a tray, a potted palm swaying to the music. MOOD: cheerful, playful, whimsical."
+ },
+ {
+  "id": "hu-s-plemeno-prasete",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím na první pohled zaskočí maďarské plemeno prasete mangalica?",
+  "answer": "Hustou kudrnatou srstí jako ovce",
+  "distractors": [
+   "Holou kůží bez jediné štětiny",
+   "Černobílými pruhy přes celý hřbet",
+   "Trpasličí velikostí domácí kočky"
+  ],
+  "quip_correct": "Prase v beránčím kožichu. Maďarská příroda se zjevně nedokázala rozhodnout mezi gulášem a svetrem.",
+  "quip_wrong": "Holé prase má každý statek, pruhy nosí zebra a kočičí rozměry mají chovatelé miniprasátek. Mangalica vypadá, že v zimě spí u ovcí.",
+  "explanation": "Plemeno vzniklo v 19. století pro drsné pastviny a jeho sádlo bylo tak ceněné, že se chovalo spíš kvůli tuku než kvůli masu.",
+  "about": "prasatech mangalica",
+  "more_fact": "Počátkem 90. let zbylo v Maďarsku posledních zhruba dvě stě mangalic. Roku 2004 je stát prohlásil za národní poklad a dnes se jich chovají opět tisíce.",
+  "irony_prompt": "A round, woolly Mangalica pig with a thick curly blond fleece fills the frame, standing proudly in a frosty Hungarian meadow while a confused sheep beside it anxiously checks its own coat. Smaller and subordinate: a shepherd holding shears and scratching his head, snowflakes settling on the curls, a little piglet in an equally curly coat. MOOD: cheerful, playful, wintry sunshine."
+ },
+ {
+  "id": "hu-s-korunovacni-klenot",
+  "cc": "hu",
+  "country": "Maďarsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Na vrcholu maďarské Svaté koruny, uložené dnes v budapešťském parlamentu, trůní křížek. Čím je nápadný?",
+  "answer": "Stojí viditelně nakřivo",
+  "distractors": [
+   "Je vyřezaný z černého ebenu",
+   "Je vykládaný baltským jantarem",
+   "Otáčí se kolem vlastní osy"
+  ],
+  "quip_correct": "Tisíc let tradice a nikdo nesehnal kladívko. Někdy je křivost prostě státotvorná.",
+  "quip_wrong": "Eben, jantar ani otočný mechanismus — koruna žádný luxus navíc nepotřebovala. Stačila jí jedna nešťastná nehoda s víkem schránky.",
+  "explanation": "Křížek se ohnul nejspíš při neopatrném zavření schránky v 17. století a narovnat ho už nikdo nechtěl. Nakloněný je dokonce i na maďarském státním znaku.",
+  "about": "Svaté koruně",
+  "more_fact": "Po druhé světové válce skončila koruna v rukou americké armády a léta ležela ve Fort Knoxu. Domů ji vrátila až americká delegace v lednu 1978.",
+  "irony_prompt": "A jewelled golden royal crown with enamel plaques fills the frame, resting on a velvet cushion, its little cross on top leaning jauntily sideways, while a prim museum guard tilts his own head to match the angle. Smaller and subordinate: a tiny hammer hidden guiltily behind the cushion, a carved wooden chest with its lid slightly ajar, a spider admiring the crooked cross. MOOD: cheerful, playful, affectionate."
  }
 ]

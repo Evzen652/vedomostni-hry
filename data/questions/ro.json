@@ -1083,5 +1083,93 @@
   "about": "Bukurešti",
   "more_fact": "Bukurešťský Vítězný oblouk (Arcul de Triumf) je skoro přesná kopie toho pařížského, jen o něco menší.",
   "irony_prompt": "A grand tree-lined boulevard fills the frame, ornate stone buildings with wrought-iron balconies and a triumphal arch rising at the far end. Smaller and subordinate: a small outdoor café table with two empty chairs; a bicycle leaning against a lamppost; pigeons pecking on the cobblestones. MOOD: elegant, charming, proud."
+ },
+ {
+  "id": "ro-s-solny-dul-turda",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co najdou návštěvníci na dně bývalého solného dolu Turda v Sedmihradsku?",
+  "answer": "Ruské kolo a jezírko s loďkami",
+  "distractors": [
+   "Podzemní vodopád slané vody",
+   "Zamrzlé kluziště pro bruslaře",
+   "Nádraží zubačky do hlubin"
+  ],
+  "quip_correct": "Víc než sto metrů pod zemí, a přesto lunapark. Rumuni pochopili, že nejlepší místo na zábavu je tam, kde nikdy neprší.",
+  "quip_wrong": "Vodopád, kluziště i vláček by byly působivé. Turda ale šla dál a do solné jeskyně nastěhovala pouťové atrakce.",
+  "explanation": "Sůl se tu těžila od středověku až do roku 1932. Za druhé světové války sloužily štoly jako protiletecký kryt a v roce 2010 se důl po přestavbě otevřel jako zábavní park.",
+  "about": "solném dole Turda",
+  "more_fact": "Vzduch v dole má celoročně kolem 12 °C a vysokou vlhkost se solnými částečkami, a tak sem jezdí i lidé s astmatem a nemocemi dýchacích cest na léčebné pobyty.",
+  "irony_prompt": "A cheerful illuminated Ferris wheel fills the frame deep inside an enormous cavern of glittering striped salt walls, its cabins full of waving visitors, while below it a still underground lake reflects tiny rowing boats. Smaller and subordinate: an old miner's helmet resting on a rock; a bat hanging upside down wearing a party hat; stalactites of white salt. MOOD: magical, playful, surprising."
+ },
+ {
+  "id": "ro-s-jeskyne-u-mangalie",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je výjimečná jeskyně Movile nedaleko černomořského letoviska Mangalia?",
+  "answer": "Miliony let byla odříznutá od světa",
+  "distractors": [
+   "Skrývá nejhlubší podzemní jezero Evropy",
+   "Žijí v ní netopýři velcí jako vrány",
+   "Její stěny tvoří čistý baltský jantar"
+  ],
+  "quip_correct": "Ekosystém, který se obešel bez slunce, návštěv i zpráv zvenku. Ráj introvertů s vlastním jídelníčkem.",
+  "quip_wrong": "Jezero, obří netopýři i jantar by se v průvodci vyjímali. Movile je ale zajímavá tím, co v ní chybělo – spojení se vším ostatním.",
+  "explanation": "Jeskyni objevili v roce 1986 při stavebním průzkumu. Místní život nestojí na slunečním světle, ale na bakteriích, které získávají energii ze sirovodíku.",
+  "about": "jeskyni Movile",
+  "more_fact": "Žije v ní kolem padesáti druhů bezobratlých a většina z nich se nikde jinde nevyskytuje – slepí pavouci, stonožky i pijavice. Dovnitř smí jen hrstka vědců ročně.",
+  "irony_prompt": "A pale, eyeless cave spider fills the frame, sitting contentedly in a dark underground grotto beside a softly glowing sulphur pool, wearing a tiny sleeping cap as if it has never once been disturbed. Smaller and subordinate: a startled scientist in a helmet peeking through a narrow crack above; a translucent leech floating in the water; a centipede lounging on a rock. MOOD: whimsical, cozy, cheerful."
+ },
+ {
+  "id": "ro-s-urcity-clen",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kam rumunština na rozdíl od italštiny, francouzštiny či španělštiny obvykle připojuje určitý člen?",
+  "answer": "Na konec podstatného jména",
+  "distractors": [
+   "Na začátek slovesa ve větě",
+   "Před jméno jako samostatné slovo",
+   "Nikam, určitý člen vůbec nemá"
+  ],
+  "quip_correct": "Latina oblečená po balkánsku: člen nosí vzadu, přehozený přes rameno. Románští bratranci se diví, sousedé chápavě mrkají.",
+  "quip_wrong": "Italové, Francouzi i Španělé dávají člen dopředu jako samostatné slůvko. Rumunština ho přilepila na konec – stejně jako bulharština za Dunajem.",
+  "explanation": "Z „lup“ (vlk) je „lupul“ (ten vlk) a z „casă“ (dům) „casa“. Stejně se chovají sousední bulharština a albánština, jde o jeden z rysů balkánského jazykového svazu.",
+  "about": "rumunském členu",
+  "more_fact": "Rumunština si z latiny uchovala i pádové koncovky, které ostatní velké románské jazyky ztratily, a má dokonce pátý pád pro oslovení – z „Ion“ je „Ioane!“.",
+  "irony_prompt": "A friendly grey wolf fills the frame, trotting proudly down a village road with a big red bow tied to the very tip of its tail, while a poodle, a cat and a donkey nearby stare at it in disbelief, each wearing its own bow on top of the head. Smaller and subordinate: a goat across the river winking with a bow on its tail too; a haystack; a painted wooden gate. MOOD: playful, comic, sunny."
+ },
+ {
+  "id": "ro-s-kysela-polevka",
+  "cc": "ro",
+  "country": "Rumunsko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Z čeho se vaří oblíbená rumunská kyselá polévka ciorbă de burtă?",
+  "answer": "Z hovězích dršťků",
+  "distractors": [
+   "Z uzených vepřových uší",
+   "Z jehněčích ledvinek",
+   "Z kuřecích srdíček"
+  ],
+  "quip_correct": "Polévka, kterou Rumuni doporučují na kocovinu – česnek, ocet a smetana jako chemický útok na včerejšek. Prý spolehlivý.",
+  "quip_wrong": "Uši, ledvinky i srdíčka jsou odvážné, ale rumunská klasika je ještě odvážnější. Česká kuchyně ji zná taky, jen bez takové parády.",
+  "explanation": "Kyselost jí dává ocet a zjemňuje ji zakysaná smetana se žloutky. Na stůl se nosí s česnekovou pastou mujdei a pálivou papričkou, do které se kouše mezi lžícemi.",
+  "about": "polévce ciorbă de burtă",
+  "more_fact": "Slovo „ciorbă“ pochází z turečtiny a v Rumunsku označuje celou rodinu kyselých polévek. Kyselost jim často dodává borș, kvašený nápoj z pšeničných otrub.",
+  "irony_prompt": "A giant steaming round bowl of pale creamy soup fills the frame, wide as a bathtub, with a sleepy man in pajamas soaking in it happily while clutching a long thin green chili pepper like a cigar. Smaller and subordinate: a small dish of white garlic paste beside the bowl; a crock of sour cream; a rooster crowing at the window. MOOD: cozy, comic, warm."
  }
 ]

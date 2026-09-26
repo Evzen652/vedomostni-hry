@@ -3275,5 +3275,93 @@
   "image_prompt": "Fotorealistický snímek robotického ramene vesmírné stanice s výhledem na Zemi z vesmíru, 16:9",
   "about": "kanadském robotickém rameni ve vesmíru (Canadarm)",
   "irony_prompt": "A long white robotic arm with elbow and wrist joints like a human arm fills the frame, reaching out of a spacecraft in orbit and gently handing a big satellite to an astronaut, like passing a present, with the blue Earth glowing below. Smaller and subordinate: a small red maple leaf on the arm; twinkling stars; a floating wrench. MOOD: amazing, cheerful, for children."
+ },
+ {
+  "id": "ca-s-quebecke-kleteni",
+  "cc": "ca",
+  "country": "Kanada",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Z čeho pocházejí nejhrubší quebecké nadávky jako „tabarnak“ nebo „câlice“?",
+  "answer": "Z názvů předmětů katolické bohoslužby",
+  "distractors": [
+   "Z kleteb anglických námořníků",
+   "Ze slov irokézských jazyků",
+   "Ze jmen britských guvernérů"
+  ],
+  "quip_correct": "Správně. Svatostánek, kalich, hostie – Quebečan si při kopnutí do stolu odříká půlku mše.",
+  "quip_wrong": "Námořníci, Irokézové i guvernéři by k nadávkám seděli, jenže quebecký vztek míří rovnou do sakristie.",
+  "explanation": "Říká se jim sacres a sílu získaly díky tomu, jak mocná byla v Quebecu katolická církev až do takzvané tiché revoluce v 60. letech.",
+  "about": "quebeckých nadávkách",
+  "more_fact": "Nadávky se dají řetězit a ohýbat jako běžná slova – z „câlice“ vzniklo třeba sloveso „câlisser“, které znamená zhruba praštit nebo vyhodit.",
+  "irony_prompt": "An ornate golden chalice fills the frame, leaping off a church altar in shock with wide cartoon eyes, as a red-faced Quebec lumberjack below stubs his toe on a log and fumes under a tiny storm cloud above his head. Smaller and subordinate: a startled beaver dropping a twig, a nun covering a choirboy's ears, snowflakes swirling. MOOD: comic, cheeky, wintry."
+ },
+ {
+  "id": "ca-s-whiskyova-valka-s-danskem",
+  "cc": "ca",
+  "country": "Kanada",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak roku 2022 skončila „whiskyová válka“, v níž si Kanada a Dánsko desítky let přetahovaly Hansův ostrov a nechávaly na něm láhve alkoholu?",
+  "answer": "Rozdělily si ho zhruba napůl",
+  "distractors": [
+   "Kanada ho od Dánska odkoupila",
+   "Připadl celý Grónsku",
+   "Rozhodl o něm soud v Haagu"
+  ],
+  "quip_correct": "Správně. Jediná válka, kde se místo střel vyměňovaly láhve – a skončila tím, že každý dostal půlku.",
+  "quip_wrong": "Koupě, soud i dar Grónsku by byly nudné – mírumilovní sousedé si to skalisko rozkrojili jako dort.",
+  "explanation": "Kanaďané na ostrově nechávali kanadskou whisky, Dánové dánský snaps; dohodou získaly obě země vzájemnou pozemní hranici, pro Kanadu teprve druhou po USA.",
+  "about": "Hansově ostrově",
+  "more_fact": "Hansův ostrov má jen něco přes kilometr čtvereční, nežije na něm nikdo a leží v Naresově průlivu mezi kanadským Ellesmerovým ostrovem a Grónskem.",
+  "irony_prompt": "A tiny bare rocky island fills the frame, sitting in an icy strait, with a polite Canadian mounted policeman in a red coat on one side and a cheerful Danish sailor on the other, clinking glasses across a neat chalk line drawn down its middle. Smaller and subordinate: a curious seal peeking out, two plain unmarked bottles on a rock, a gull perched between them. MOOD: friendly, frosty, playful."
+ },
+ {
+  "id": "ca-s-rekord-sladkych-vod",
+  "cc": "ca",
+  "country": "Kanada",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaká část všech jezer světa leží podle vědeckých odhadů na území Kanady?",
+  "answer": "Víc než polovina",
+  "distractors": [
+   "Zhruba desetina",
+   "Asi čtvrtina",
+   "Necelá třetina"
+  ],
+  "quip_correct": "Ano. Kanada má víc jezer než zbytek planety dohromady – a na většině z nich někdo čeká, až zamrzne, aby mohl hrát hokej.",
+  "quip_wrong": "Desetina, čtvrtina i třetina by byly slušné výsledky, jenže Kanada si tu drží většinu a nehodlá ji pustit.",
+  "explanation": "Odhad vychází z globální databáze jezer větších než deset hektarů; většinu prohlubní vyhloubily ledovce doby ledové.",
+  "about": "kanadských jezerech",
+  "more_fact": "Jen Ontario má podle odhadů přes čtvrt milionu jezer a chata u vody je tu tak samozřejmá, že kraji severně od Toronta se říká prostě cottage country.",
+  "irony_prompt": "A cheerful moose floating on an inflatable swim ring fills the frame, drifting on a sparkling lake while countless more lakes glitter across the forested land behind it like scattered mirrors all the way to the horizon. Smaller and subordinate: a loon wearing sunglasses, a canoe paddled by a beaver, a tiny wooden cabin on the shore. MOOD: sunny, relaxed, playful."
+ },
+ {
+  "id": "ca-s-lek-z-toronta-1921",
+  "cc": "ca",
+  "country": "Kanada",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaký lék izolovali roku 1921 na Torontské univerzitě Frederick Banting a Charles Best?",
+  "answer": "Inzulin",
+  "distractors": [
+   "Penicilin",
+   "Aspirin",
+   "Streptomycin"
+  ],
+  "quip_correct": "Správně. Dva mladí vědci, laboratoř na půjčku a málo peněz – a miliony diabetiků dostaly druhou šanci. Ne špatný semestr.",
+  "quip_wrong": "Penicilin je britský, aspirin německý a streptomycin americký – z Toronta přišel lék, bez kterého by cukrovka zůstala rozsudkem.",
+  "explanation": "Patent prodali univerzitě za symbolický dolar, aby lék nebyl drahý; Bantingovi se připisuje věta, že inzulin nepatří jemu, ale světu.",
+  "about": "objevu inzulinu",
+  "more_fact": "Prvním pacientem byl roku 1922 čtrnáctiletý Leonard Thompson, kterému lékaři dávali jen týdny života – s novou léčbou pak žil ještě třináct let.",
+  "irony_prompt": "A giant glass medicine vial glowing like a lantern fills the frame, held up triumphantly by two young 1920s scientists in white coats seen from behind, while a happy dog wags its tail at their feet and a sugar cube bows in defeat. Smaller and subordinate: a bubbling flask, a maple leaf drifting through an open window, a stethoscope curled on the bench. MOOD: hopeful, warm, playful."
  }
 ]

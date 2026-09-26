@@ -952,5 +952,93 @@
   "more_fact": "Měď je pro chilskou ekonomiku tak důležitá, že se jí přezdívá el sueldo de Chile, tedy chilská výplata. Peníze z jejího prodeje pomáhají platit i školy a nemocnice.",
   "about": "chilské mědi",
   "irony_prompt": "A colossal glinting mound of raw copper ore fills the frame piled high beside an open-pit mine, its reddish-orange chunks catching the desert sun. Smaller and subordinate: a tiny mining truck parked at the base, dwarfed by the pile; a coil of bright copper wire resting on top; distant terraced mine walls stepping down into the pit. MOOD: gritty, impressive, sun-baked."
+ },
+ {
+  "id": "cl-s-drobny-lesni-kopytnik",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se jmenuje drobný jelínek z deštných lesů jižního Chile, jehož rod patří k nejmenším jelenům světa?",
+  "answer": "Pudu",
+  "distractors": [
+   "Muntžak",
+   "Mazama",
+   "Kabar"
+  ],
+  "quip_correct": "Ano. Jelen do výšky kolena, který by se bez potíží vešel do přepravky pro kočku. Chile má zjevně slabost pro zdrobněliny.",
+  "quip_wrong": "Muntžak žije v Asii, mazamy v tropech a kabar není ani pravý jelen – chilský lilipután se jmenuje jinak.",
+  "explanation": "V kohoutku měří jen asi 35–45 centimetrů a váží kolem deseti kilogramů; samci nosí místo parohů jen krátké rovné růžky jako trny.",
+  "about": "jelínkovi pudu",
+  "more_fact": "Pudu jižní je ohrožený hlavně kácením lesů a toulavými psy; v Chile proto fungují záchranná centra, kde se osiřelá mláďata krmí z láhve a pak se vracejí do přírody.",
+  "irony_prompt": "A tiny knee-high deer with little spike antlers fills the frame, standing proudly on a mossy log in a lush green rainforest next to a giant rubber boot that towers over it like a building. Smaller and subordinate: a huge fern leaf used as an umbrella, a curious hummingbird, glistening raindrops. MOOD: sweet, whimsical, fresh."
+ },
+ {
+  "id": "cl-s-dul-san-jose-2010",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak skončil osud 33 horníků, které roku 2010 zavalilo přes 600 metrů pod zemí v chilském dole San José?",
+  "answer": "Po 69 dnech je všechny vytáhli živé",
+  "distractors": [
+   "Přežila jen menší část z nich",
+   "Vyhrabali se ven sami novou štolou",
+   "Vyvedla je ven stará zapomenutá šachta"
+  ],
+  "quip_correct": "Správně. Svět dva měsíce zadržoval dech a pak sledoval, jak jeden po druhém vyjíždějí v kapsli – nejlepší seriál roku bez jediného scenáristy.",
+  "quip_wrong": "Tragický konec ani útěk po vlastní ose se nekonal – k horníkům se musela provrtat záchranná šachta.",
+  "explanation": "Prvních 17 dní o nich nikdo nevěděl, dokud vrták nevynesl lístek se vzkazem, že je všech 33 v úkrytu v pořádku; ven je vytáhla úzká kapsle Fénix.",
+  "about": "záchraně chilských horníků",
+  "more_fact": "Než k nim vrt dopravil jídlo, přežívali horníci z nouzových zásob – každý dostal jednou za dva dny dvě lžičky tuňáka, doušek mléka a sušenku.",
+  "irony_prompt": "A slim bullet-shaped rescue capsule painted in plain white and red bands fills the frame, rising out of a narrow shaft into the desert night while a relieved miner in a helmet and dark glasses waves from inside to a cheering crowd with no flags anywhere. Smaller and subordinate: a joyful dog jumping, balloons floating up, stars over dusty hills. MOOD: joyful, relieved, triumphant."
+ },
+ {
+  "id": "cl-s-chilske-slovicko-z-anglictiny",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co znamená chilské slovíčko „¿cachai?“, kterým Chilané prokládají skoro každou druhou větu?",
+  "answer": "Chápeš?",
+  "distractors": [
+   "Máš čas?",
+   "Jdeme?",
+   "Kolik to stojí?"
+  ],
+  "quip_correct": "Cachai? Pak už vám v Santiagu chybí jen pisco sour a naučit se polykat půlku slabik.",
+  "quip_wrong": "Čas, odchod ani cena to nejsou – Chilan si tím jen ověřuje, že ho posloucháte, což u jeho tempa řeči dává smysl.",
+  "explanation": "Slovo vzniklo z anglického „catch“ ve smyslu pochopit a Chilané z něj udělali celé sloveso cachar – „cacho“ tedy znamená chápu.",
+  "about": "chilském slově cachai",
+  "more_fact": "Chilská španělština si po svém ohýbá i slovesa ve druhé osobě – místo „¿tú sabes?“ se na ulici řekne „¿tú sabís?“, což jinde v hispánském světě neuslyšíte.",
+  "irony_prompt": "A lively Chilean street vendor fills the frame mid-sentence in a whirlwind of gestures, leaning towards a dazed tourist while tapping his own temple knowingly and raising his eyebrows as if waiting for a nod. Smaller and subordinate: a steaming half-moon empanada in his other hand, a stray dog nodding along, colourful hillside houses of Valparaíso behind. MOOD: lively, cheeky, warm."
+ },
+ {
+  "id": "cl-s-podvecerni-hostina",
+  "cc": "cl",
+  "country": "Chile",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak Chilané říkají lehké podvečerní hostině s chlebem, sýrem a čajem, která u nich často nahrazuje večeři?",
+  "answer": "Once",
+  "distractors": [
+   "Siesta",
+   "Sobremesa",
+   "Almuerzo"
+  ],
+  "quip_correct": "Správně. „Jedenáctka“, která se jí v šest večer – Chilané si hodiny řídí podle žaludku, ne podle ciferníku.",
+  "quip_wrong": "Siesta je spánek, sobremesa povídání po jídle a almuerzo oběd – podvečerní čaj se v Chile jmenuje číslem.",
+  "explanation": "Once znamená španělsky jedenáct; podle oblíbené legendy šlo o krycí název pro aguardiente, pálenku, jejíž jméno má jedenáct písmen.",
+  "about": "chilské once",
+  "more_fact": "K once patří křupavý chléb marraqueta a Chilané patří k největším jedlíkům chleba na světě – v průměru ho sní kolem devadesáti kilogramů na osobu za rok.",
+  "irony_prompt": "A cosy family tea table fills the frame in golden early-evening light, laden with a basket of crusty round bread rolls, a teapot and a wedge of cheese, while a grandmother pours tea as the sun still shines high outside the window. Smaller and subordinate: a cat stealing a crumb, a steaming teacup, a sleepy dog under the table. MOOD: warm, cosy, gently absurd."
  }
 ]

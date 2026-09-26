@@ -928,5 +928,93 @@
   "about": "tchajwanském Národním palácovém muzeu",
   "more_fact": "Sbírka je tak rozsáhlá, že se v muzeu exponáty pravidelně obměňují — na leccos tak čekáte roky, než to uvidíte na vlastní oči.",
   "irony_prompt": "A long procession of wooden crates fills the frame, stacked high on the deck of an old cargo ship, roped down tightly against the open sea. Smaller and subordinate: a single crate cracked slightly open, a golden ornamental edge just visible inside; a lighthouse silhouette on a distant coastline; a sailor checking the ropes. MOOD: dramatic, momentous, quietly tense."
+ },
+ {
+  "id": "tw-s-portugalske-jmeno",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co znamená portugalské pojmenování Ilha Formosa, pod kterým Evropané Tchaj-wan po staletí znali?",
+  "answer": "Krásný ostrov",
+  "distractors": [
+   "Zelený ostrov",
+   "Vzdálený ostrov",
+   "Ostrov bouří"
+  ],
+  "quip_correct": "Námořníci propluli kolem, vydechli úžasem a pluli dál. Nejpovrchnější a zároveň nejtrefnější recenze v dějinách zeměpisu.",
+  "quip_wrong": "Zelený by seděl, vzdálený taky a bouře tu tajfuny obstarávají vydatně. Portugalci ale hodnotili čistě na první pohled – a byli nadšení.",
+  "explanation": "Jméno se v Evropě drželo až do 20. století a dodnes přežívá v názvech zvířat, například u formosanského makaka.",
+  "about": "jménu Formosa",
+  "more_fact": "Samo čínské jméno Tchaj-wan se podle jednoho z výkladů dá přeložit jako „terasovitá zátoka“ a původně označovalo jen malou oblast u dnešního Tchaj-nanu.",
+  "irony_prompt": "A lush mountainous green island fills the frame, rising from a sparkling blue sea, while a 16th-century sailing ship with plain white sails glides past and its bearded sailors lean over the rail with jaws dropped and little hearts floating above their heads. Smaller and subordinate: a leaping flying fish, a monkey waving from a cliff, puffy white clouds. MOOD: dreamy, cheerful, sunny."
+ },
+ {
+  "id": "tw-s-koxinguv-protivnik",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Koho vyhnal z Tchaj-wanu roku 1662 vojevůdce Koxinga (Čeng Čcheng-kung)?",
+  "answer": "Nizozemce",
+  "distractors": [
+   "Portugalce",
+   "Brity",
+   "Francouze"
+  ],
+  "quip_correct": "Obchodní společnost, která měla na všechno smlouvu, narazila na admirála, jenž smlouvy nečetl. Pevnost odešla i s účetními knihami.",
+  "quip_wrong": "Portugalci ostrov jen pojmenovali a pluli dál, Britové a Francouzi se v oblasti prosadili mnohem později. Koxinga obléhal pevnost Východoindické společnosti.",
+  "explanation": "Obléhání pevnosti Zeelandia u dnešního Tchaj-nanu trvalo devět měsíců a skončilo jednou z mála velkých porážek evropské koloniální mocnosti v tehdejší Asii.",
+  "about": "Koxingovi",
+  "more_fact": "Koxinga měl čínského otce a japonskou matku a na Tchaj-wanu je dodnes uctíván jako národní hrdina, v jehož chrámech se lidé modlí za úspěch.",
+  "irony_prompt": "A massive red-brick European fortress fills the frame on a sandy coast, its garrison in tall 17th-century hats marching out through the gate carrying tulips, round cheese wheels and a folded-up windmill, while a stern Chinese admiral seen from behind politely points them toward their ships. Smaller and subordinate: a war junk with plain red sails, a curious water buffalo, a seagull stealing a cheese. MOOD: comic, adventurous, bright."
+ },
+ {
+  "id": "tw-s-prezdivka-z-50-let",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jakou přezdívku si Tchaj-wan vysloužil v polovině 20. století, kdy patřil k největším vývozcům jistého hmyzu a obrázků z jeho křídel?",
+  "answer": "Království motýlů",
+  "distractors": [
+   "Říše medonosných včel",
+   "Ostrov obřích vážek",
+   "Země zpívajících cikád"
+  ],
+  "quip_correct": "Miliony křídel odcestovaly do světa jako suvenýry a obrázky. Obchodníci byli nadšení, hlavní aktéři už méně.",
+  "quip_wrong": "Včely, vážky i cikády na ostrově bzučí také, jenže do vitrín a rámečků se v celých bednách vyvážel jiný, barevnější hmyz.",
+  "explanation": "Na ostrově žije kolem 400 druhů motýlů a kvůli jarní migraci tmavě fialových motýlů se na dálnici v okrese Jün-lin dokonce uzavírá jeden jízdní pruh.",
+  "about": "tchajwanských motýlech",
+  "more_fact": "V městečku Pu-li ve středu ostrova vzniklo v 50. a 60. letech celé řemeslo, při kterém se z motýlích křídel skládaly mozaikové obrazy krajin.",
+  "irony_prompt": "A huge lush green island fills the frame covered by clouds of colourful butterflies, and on its highest peak sits one butterfly wearing a tiny golden crown on a leaf throne, receiving bows from a line of smaller butterflies. Smaller and subordinate: a car on a winding mountain road politely stopping to let a butterfly swarm cross, a curious monkey, a hibiscus flower. MOOD: magical, cheerful, sunny."
+ },
+ {
+  "id": "tw-s-velka-pout-z-dadzie",
+  "cc": "tw",
+  "country": "Tchaj-wan",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které bohyni patří každoroční devítidenní pouť z města Ta-ťia, jíž se účastní statisíce lidí?",
+  "answer": "Mazu, ochránkyni mořeplavců",
+  "distractors": [
+   "Kuan-jin, bohyni milosrdenství",
+   "Čchang-e, bohyni Měsíce",
+   "Nü-wa, stvořitelce lidí"
+  ],
+  "quip_correct": "Statisíce lidí jdou devět dní pěšky za bohyní moře – a moře přitom nechávají stranou. Víra tu vede spíš vnitrozemím.",
+  "quip_wrong": "Kuan-jin má na ostrově chrámů požehnaně a Čchang-e i Nü-wa své legendy také, ale pouť patří ochránkyni rybářů, kterou si osadníci přivezli přes úžinu.",
+  "explanation": "Poutníci doprovázejí nosítka se sochou bohyně na trase dlouhé přes 300 kilometrů a lidé se sklánějí k zemi, aby nosítka pro štěstí přešla přímo nad nimi.",
+  "about": "bohyni Mazu",
+  "more_fact": "Podle legendy byla Mazu skutečná dívka z ostrova Mej-čou v provincii Fu-ťien, která v 10. století zachraňovala rybáře z bouří a po smrti ji uctili jako bohyni.",
+  "irony_prompt": "A towering ornate golden palanquin carrying a serene goddess statue fills the frame, borne down a street by cheerful pilgrims in yellow vests, while a long row of devotees kneel low on the pavement so it passes right over them. Smaller and subordinate: puffs of firecracker smoke, a red paper lantern, a dog trotting alongside in a tiny yellow vest. MOOD: festive, joyful, colourful."
  }
 ]

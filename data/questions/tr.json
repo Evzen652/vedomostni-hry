@@ -1018,5 +1018,93 @@
   "more_fact": "Lokum se v Evropě rozšířil přes Anglii — první dovozci mu tam začali říkat turkish delight, tedy turecké potěšení, a to jméno mu zůstalo dodnes.",
   "about": "lokumu",
   "irony_prompt": "A generous heap of soft powdery-white cubes fills the frame, piled high on an ornate brass tray, each cube dusted so thickly with icing sugar it looks like fresh snow. Smaller and subordinate: a single cube with a bite taken out, revealing a blush-pink interior; a sprig of dried rose petals resting on the pile; a small pair of ornate tongs leaning against the tray. MOOD: cozy, sweet, inviting."
+ },
+ {
+  "id": "tr-s-zahradni-pavilon",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Turecké köşk původně označovalo otevřený zahradní pavilon. Které slovo, dnes známé hlavně z ulic, z něj vzniklo?",
+  "answer": "Kiosk",
+  "distractors": [
+   "Bufet",
+   "Trafika",
+   "Altán"
+  ],
+  "quip_correct": "Z palácové zahrady, kde se usrkával čaj s výhledem na moře, se stal stánek se žvýkačkami. Kariérní sestup nejvyšší rychlostí.",
+  "quip_wrong": "Bufet má francouzský původ, trafika italský a altán by k pavilonu seděl skoro dokonale – jenže jen významem, ne původem.",
+  "explanation": "Do evropských jazyků se slovo dostalo přes francouzské kiosque, když si šlechta v 17. a 18. století začala osmanské altánky napodobovat ve svých parcích.",
+  "about": "slově kiosk",
+  "more_fact": "Nejslavnější osmanský köşk, Bagdádský pavilon v istanbulském paláci Topkapı, dal postavit sultán Murad IV. na oslavu dobytí Bagdádu roku 1638.",
+  "irony_prompt": "An elegant tiled Ottoman garden pavilion with a domed roof fills the frame, but a sultan in a big turban sits inside it handing out chewing gum, sweets and bottles of water through a small window to a queue of modern commuters. Smaller and subordinate: a tulip bed in front, a pigeon waiting for crumbs, a steaming glass of tea on the sill. MOOD: playful, sunny, cheerful."
+ },
+ {
+  "id": "tr-s-objev-pri-oprave-domu",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co objevil roku 1963 obyvatel kappadockého Derinkuyu, když si při opravě domu probourával zeď?",
+  "answer": "Vchod do rozsáhlého podzemního města",
+  "distractors": [
+   "Poklad byzantských zlatých mincí",
+   "Hrobku chetitského krále se zlatem",
+   "Zasypaný chrám z římských dob"
+  ],
+  "quip_correct": "Chtěl si jen zvětšit obývák a získal celé město o několika patrech. Nejvelkorysejší přístavba v dějinách.",
+  "quip_wrong": "Zlaté mince ani královská hrobka by nebyly k zahození, ale za zdí čekalo něco mnohem většího – chodby, kaple a stáje hluboko v tufu.",
+  "explanation": "Podzemní prostory sahají do hloubky kolem 85 metrů a mohly pojmout tisíce lidí i s dobytkem; vchody se zevnitř zavíraly obřími kamennými koly.",
+  "about": "Derinkuyu",
+  "more_fact": "V Kappadokii se našly desítky dalších podobných úkrytů a Derinkuyu je dlouhou chodbou propojené se sousedním Kaymaklı, vzdáleným asi osm kilometrů.",
+  "irony_prompt": "A cross-section view of a cosy Cappadocian cave house fills the frame, where a surprised man with a hammer has just knocked a hole through his living-room wall and discovered behind and below it a vast many-storeyed underground town of tunnels, stairways, chapels and stables. Smaller and subordinate: his wife holding a tea tray in shock, a goat wandering down the stairs, a huge round stone door. MOOD: amazed, comic, warm lamplight."
+ },
+ {
+  "id": "tr-s-angorske-kozy",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaké vlákno dávají angorské kozy, pojmenované podle starého jména Ankary?",
+  "answer": "Mohér",
+  "distractors": [
+   "Kašmír",
+   "Alpaka",
+   "Merino"
+  ],
+  "quip_correct": "Koza s lesklou hřívou, za kterou by se nemusela stydět ani reklama na šampon. A ke kadeřníkovi chodí dvakrát do roka.",
+  "quip_wrong": "Kašmír dávají kozy z Himálaje, alpaka je samostatné zvíře z And a merino patří ovcím. Z Ankary pochází lesklé vlákno, které se skoro nemačká.",
+  "explanation": "Chov angorských koz si Anatolie dlouho střežila; do Jižní Afriky a Texasu se dostaly až v 19. století a dnešní tamní stáda jsou větší než turecká.",
+  "about": "angorských kozách",
+  "more_fact": "Slovo mohér se odvozuje z arabského „muchajjar“, tedy vybraná látka, a do evropských jazyků se dostalo přes italštinu a angličtinu.",
+  "irony_prompt": "A fluffy white Angora goat with long glossy silky ringlets fills the frame, sitting in a salon chair while a hairdresser blow-dries its curls to a dazzling shine like a shampoo commercial. Smaller and subordinate: soft skeins of yarn piled on the floor, a second goat waiting impatiently in curlers, a steaming glass of tea on the counter. MOOD: glamorous, playful, cheerful."
+ },
+ {
+  "id": "tr-s-tazna-zmrzlina",
+  "cc": "tr",
+  "country": "Turecko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co dává turecké zmrzlině z Kahramanmaraşe tak tuhou a tažnou konzistenci, že ji prodavači krájejí nožem?",
+  "answer": "Moučka z hlíz orchidejí (salep)",
+  "distractors": [
+   "Kozí sýr vmíchaný do mléka",
+   "Rýžová mouka a vaječné bílky",
+   "Pomalu vařený borovicový med"
+  ],
+  "quip_correct": "Dezert, který se nežvýká, ale přetahuje. Prodavač ho klidně pověsí na hák a zákazník pak zkoumá, jestli zmrzlinu jí, nebo s ní zápasí.",
+  "quip_wrong": "Kozí sýr, rýžová mouka i borovicový med by zmrzlinu leda zahustily, nožem by ji nikdo krájet nemusel. Tajemství se skrývá pod zemí – v hlízách jedné květiny.",
+  "explanation": "Kromě salepu se do ní přidává i mastix, pryskyřice ze stálezeleného keře řečíku, která jí dává jemnou pryskyřičnou vůni.",
+  "about": "turecké zmrzlině",
+  "more_fact": "Kvůli poptávce po salepu divoké orchideje v Turecku ubývají, a proto je jeho vývoz ze země zakázaný; pravou maraşskou zmrzlinu je tak jinde těžké napodobit.",
+  "irony_prompt": "A huge rolled log of stretchy white ice cream fills the frame, hanging from a butcher's hook while a grinning vendor in a red embroidered vest slices it with a long knife like salami. Smaller and subordinate: a child stretching a long elastic strand of ice cream from a cone, a pot of purple orchids on the counter, a puzzled cat. MOOD: playful, cheerful, sunny."
  }
 ]

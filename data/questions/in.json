@@ -909,5 +909,93 @@
   "more_fact": "Monzun postupuje napříč Indií jako vlna – nejdřív zasáhne jih poloostrova a teprve o pár týdnů později dorazí na sever země. Meteorologové jeho příchod sledují den po dni.",
   "about": "monzunu",
   "irony_prompt": "A narrow village street fills the frame, drenched in heavy grey monsoon rain, with wide puddles reflecting the sky. Smaller and subordinate: a bright yellow umbrella tilted against the wind; two children splashing barefoot through a puddle; strings of laundry swaying on a balcony above. MOOD: joyful, energetic, refreshing."
+ },
+ {
+  "id": "in-s-puvod-kosmetickeho-slova",
+  "cc": "in",
+  "country": "Indie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Z jakého hindského výrazu pochází mezinárodní slovo šampon?",
+  "answer": "Ze slovesa pro hnětení a masáž",
+  "distractors": [
+   "Z výrazu pro mýdlovou pěnu",
+   "Z názvu jasmínového oleje",
+   "Ze jména posvátného pramene"
+  ],
+  "quip_correct": "Každé ráno si tedy vtíráš do vlasů kus hindštiny. Sprcha jako jazykový kurz.",
+  "quip_wrong": "Pěna, jasmín i posvátné prameny voní krásně, jenže původně šlo o pořádné promačkání hlavy šikovnými prsty.",
+  "explanation": "Do Evropy přivezl „šamponování“ bengálský podnikatel Sake Dean Mahomed, který v anglickém Brightonu v 19. století provozoval lázně s masáží hlavy.",
+  "about": "slově šampon",
+  "more_fact": "Z indických jazyků pochází i další běžná slova, třeba pyžamo, bungalov nebo džungle. Hindské džangal přitom původně neznamenalo prales, ale suchou pustinu.",
+  "irony_prompt": "An elegant barber in a sunny Indian courtyard gives a joyful customer a vigorous head massage with ten nimble fingers, and the huge frothy cloud of bubbles rising above them fills the frame. Smaller and subordinate: a crow stealing a comb, a copper pot of warm water, a queue of amused neighbours waiting their turn. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "in-s-mosty-v-meghalaji",
+  "cc": "in",
+  "country": "Indie",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Z čeho jsou upletené lávky přes horské řeky v deštivém indickém státě Méghálaja?",
+  "answer": "Ze živých kořenů fíkovníků",
+  "distractors": [
+   "Z bambusu svázaného lýkem",
+   "Z ocelových lan po Britech",
+   "Z kamenných desek bez malty"
+  ],
+  "quip_correct": "Stavební povolení vydává příroda a údržbu dělá fotosyntéza. Stavbyvedoucí si může dát pár desetiletí volno.",
+  "quip_wrong": "Bambus shnije, ocel zrezaví a kameny odnese povodeň. Tohle stavivo roste dál a s každým lijákem je pevnější.",
+  "explanation": "Místní Khasiové navádějí vzdušné kořeny přes řeku podél bambusových tyčí; hotový most roste 15 až 30 let a pak vydrží staletí.",
+  "about": "kořenových mostech",
+  "more_fact": "Nedaleký Mawsynram patří k nejdeštivějším místům na Zemi, ročně tu spadne kolem 11 metrů srážek. Místní se chrání krytem z bambusu a listí, který nosí na zádech jako želví krunýř.",
+  "irony_prompt": "A thick living bridge woven from twisting tree roots fills the frame, arching over a misty jungle river, and a cheerful villager strolls across it carrying a bamboo pole while a small root curls up to tickle his ankle. Smaller and subordinate: a grandmother gently braiding a young root into the railing, a monkey napping on the handrail, rain dripping from giant leaves. MOOD: cheerful, playful, lush."
+ },
+ {
+  "id": "in-s-predchudce-sachu",
+  "cc": "in",
+  "country": "Indie",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co znamenal název staroindické hry čaturanga, ze které se vyvinuly šachy?",
+  "answer": "Čtyři složky vojska",
+  "distractors": [
+   "Čtyři světové strany",
+   "Souboj dvou králů",
+   "Hra mudrců a slonů"
+  ],
+  "quip_correct": "Šachy vznikly jako vojenské cvičení na stole. Generálové aspoň nemuseli krmit slony.",
+  "quip_wrong": "Světové strany a souboje králů zní vznešeně. Indové ale na desku prostě naskládali celou armádu.",
+  "explanation": "Těmi složkami byla pěchota, jízda, sloni a válečné vozy, tedy předchůdci pěšců, jezdců, střelců a věží. Hra se v Indii hrála nejpozději v 6. století.",
+  "about": "čaturanze",
+  "more_fact": "Z Indie se hra dostala do Persie jako šatrandž a odtud s Araby do Evropy. Perské šáh mát, tedy král je poražen, dalo vzniknout výrazu šach mat.",
+  "irony_prompt": "A carved wooden game board fills the frame, and on it tiny living foot soldiers, horsemen, grey elephants and wooden chariots march solemnly into battle formation while an Indian prince leans over it with his chin on his hands. Smaller and subordinate: a real elephant peeking jealously through the palace window, a parrot on the prince's shoulder, a brass tea cup. MOOD: cheerful, playful, regal."
+ },
+ {
+  "id": "in-s-den-voleb",
+  "cc": "in",
+  "country": "Indie",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co dostane každý Ind, který odvolí, aby nemohl volit podruhé?",
+  "answer": "Nesmyvatelnou značku inkoustem na nehet",
+  "distractors": [
+   "Kovový žeton s číslem obvodu",
+   "Náramek z posvátné bavlněné šňůrky",
+   "Tečku z rudého prášku na čelo"
+  ],
+  "quip_correct": "Fialový nehet jako potvrzení občanské ctnosti. Volební selfie má rovnou i usvědčující důkaz.",
+  "quip_wrong": "Žeton, náramek i tečka by šly sundat nebo smýt. Stát, kde volí skoro miliarda lidí, sází na něco, co za týden neoprchá.",
+  "explanation": "Inkoust obsahuje dusičnan stříbrný, který na světle ztmavne a vydrží na kůži i nehtu několik týdnů. Vyrábí ho jediná státní firma v Maisúru.",
+  "about": "indických volbách",
+  "more_fact": "Volební komise se řídí zásadou, že nikdo nemá mít k urně dál než dva kilometry. V národním parku v Gudžarátu proto zřizuje místnost kvůli jedinému voliči, knězi z lesního chrámu.",
+  "irony_prompt": "A proud Indian grandmother in a bright sari holds up her left index finger with a small dark violet stripe on the nail, and that raised finger fills the frame like a medal of honour, while a queue of cheerful voters behind her admires it. Smaller and subordinate: a tiny inkpot and a thin brush on a wooden table, a cow wandering past the queue, a boy imitating her with a felt-tip on his own finger. MOOD: cheerful, playful, proud."
  }
 ]

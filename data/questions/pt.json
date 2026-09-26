@@ -926,5 +926,93 @@
   "image_prompt": "Fotorealistický snímek futsalového zápasu ve sportovní hale, hráči v portugalských dresech honí malý lesklý míč na lesklé parketové podlaze, 16:9",
   "about": "portugalském futsalovém týmu",
   "irony_prompt": "A small heavy ball fills the frame pinned under a player's sole on a polished indoor court, the player's body twisted mid-feint. Smaller and subordinate: only four teammates and a goalkeeper on the whole court; a full-size outdoor pitch glimpsed through a doorway, looking enormous; a trophy on a bench. MOOD: tight, lightning-quick."
+ },
+ {
+  "id": "pt-s-japonske-slovo-pro-pecivo",
+  "cc": "pt",
+  "country": "Portugalsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak Japonci dodnes říkají chlebu – slovem, které si v 16. století vypůjčili od portugalských obchodníků?",
+  "answer": "Pan",
+  "distractors": [
+   "Mochi",
+   "Senbei",
+   "Udon"
+  ],
+  "quip_correct": "Portugalci připluli s křížem, mušketami a pekárnou. Nejlíp se v Japonsku ujala pekárna.",
+  "quip_wrong": "Mochi je rýžový koláček, senbei krekr a udon nudle – všechno japonské od kořínku. Chléb Japonci poznali až od Evropanů, a tak si vzali i jméno.",
+  "explanation": "Slovo vychází z portugalského „pão“. Z portugalštiny má japonština třeba i „tabako“ pro tabák nebo „botan“ pro knoflík.",
+  "about": "portugalských slovech v japonštině",
+  "more_fact": "Portugalci byli od roku 1543 prvními Evropany v Japonsku. Připisuje se jim i původ tempury: jezuité o postních dnech zvaných „têmporas“ jedli smaženou zeleninu a ryby.",
+  "irony_prompt": "A giant round crusty loaf of bread fills the frame, wearing a tiny samurai topknot and bowing politely on the deck of a sailing ship with plain white sails and no flags, while a group of curious Japanese townspeople in kimonos bow back to it on the pier. Smaller and subordinate: a sailor handing out round bread rolls; a cat stealing a crust; cherry blossoms drifting down. MOOD: whimsical, charming, sunny."
+ },
+ {
+  "id": "pt-s-kaple-v-evore",
+  "cc": "pt",
+  "country": "Portugalsko",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím jsou obložené stěny proslulé kaple u kostela svatého Františka v Évoře?",
+  "answer": "Lidskými kostmi a lebkami",
+  "distractors": [
+   "Zlatem z brazilských dolů",
+   "Mušlemi z atlantských pláží",
+   "Střepy čínského porcelánu"
+  ],
+  "quip_correct": "Interiér, na který by nestačil žádný katalog bytových dekorací. Františkáni tu pojali memento mori doslova a po tisících.",
+  "quip_wrong": "Brazilské zlato i čínský porcelán Portugalsko opravdu mělo, jenže tady mniši sáhli po materiálu, kterého bylo na přeplněných hřbitovech víc než dost.",
+  "explanation": "Kapli zbudovali františkáni v 16. století z ostatků asi pěti tisíc lidí. Nad vchodem stojí nápis: „My kosti, které jsme zde, čekáme na vaše.“",
+  "about": "kapli v Évoře",
+  "more_fact": "Podobné kostnice vznikly i jinde v Portugalsku, třeba ve Faru. Samotná Évora je díky římskému chrámu a středověkému centru na seznamu UNESCO od roku 1986.",
+  "irony_prompt": "A small whitewashed chapel interior fills the frame, its walls and arches decorated in elaborate cheerful patterns made of skulls and bones, while a jolly monk in a brown habit dusts a skull with a feather duster and whistles. Smaller and subordinate: a startled tourist peeking through the doorway; a skull wearing a tiny flower crown; a flickering candle. MOOD: darkly comic, cozy, playful."
+ },
+ {
+  "id": "pt-s-nejstarsi-aliance",
+  "cc": "pt",
+  "country": "Portugalsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "S kým má Portugalsko nejstarší dosud platnou alianci na světě?",
+  "answer": "S Anglií",
+  "distractors": [
+   "Se Španělskem",
+   "S Francií",
+   "S Nizozemskem"
+  ],
+  "quip_correct": "Svazek starý přes šest set padesát let, který přežil krále, republiky i fotbalová mistrovství. Nejdelší manželství evropské politiky.",
+  "quip_wrong": "Španělsko je soused, se kterým se Portugalsko o svou nezávislost naválčilo, a Francie v roce 1807 přitáhla s armádou. Věrný partner seděl za mořem.",
+  "explanation": "Smlouva byla uzavřena roku 1373 a potvrzena Windsorskou smlouvou roku 1386. Británie se na ni odvolala ještě za druhé světové války kvůli základnám na Azorách.",
+  "about": "anglo-portugalské alianci",
+  "more_fact": "Svazek zpečetil i sňatek Jana I. Portugalského s Filipou z Lancasteru, dcerou Jana z Gentu. Jejich děti se do dějin zapsaly jako „znamenitá generace“ portugalských princů.",
+  "irony_prompt": "Two very old knights fill the frame, sitting side by side on a park bench with long white beards and walking sticks, one in a plain green-and-red tunic and one in a plain white-and-red tunic with no crest, no badge, no emblem, still shaking hands firmly after centuries. Smaller and subordinate: cobwebs linking their elbows; a tiny sailing ship bobbing in a nearby fountain; a pigeon perched on a helmet. MOOD: warm, funny, affectionate."
+ },
+ {
+  "id": "pt-s-sendvic-z-porta",
+  "cc": "pt",
+  "country": "Portugalsko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se polévá francesinha, vydatný vrstvený sendvič z druhého největšího portugalského města?",
+  "answer": "Hustou omáčkou z piva a rajčat",
+  "distractors": [
+   "Horkou čokoládou se skořicí",
+   "Kokosovým mlékem s kari",
+   "Smetanou s mořskými plody"
+  ],
+  "quip_correct": "Sendvič, ke kterému je potřeba příbor, ubrousek a odpolední spánek. Kardiolog by ho zakázal, Portugalci ho milují.",
+  "quip_wrong": "Čokoláda, kokos i smetana by byly exotické, ale Portugalci sáhli po tom, co se v hospodě najde vždycky – a nalili to na maso.",
+  "explanation": "Mezi krajíci je šunka, uzenina a steak, navrchu rozpuštěný sýr a často sázené vejce. Podává se s hranolky, které se namáčejí v téže omáčce.",
+  "about": "sendviči francesinha",
+  "more_fact": "Podle místní legendy sendvič vymyslel v 50. letech navrátilec z Francie, který chtěl napodobit croque-monsieur. Jméno znamená „malá Francouzka“ a restaurace si recept omáčky přísně tají.",
+  "irony_prompt": "A towering layered sandwich fills the frame, stacked with ham, sausage and steak between thick square slices of bread, blanketed in melted cheese, topped with a fried egg and sitting in a lake of glossy orange-red sauce, while a tiny waiter dives into the sauce with a lifebuoy. Smaller and subordinate: a pile of stick-shaped fries soaking at the edge; a nervous fork fainting beside the plate; a tram passing the window. MOOD: indulgent, comic, warm."
  }
 ]

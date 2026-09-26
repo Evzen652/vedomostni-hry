@@ -902,5 +902,93 @@
   "more_fact": "V Japonsku dnes existují i kavárny s dalšími zvířaty – od sov přes ježky až po malé kozy. Nejstarší a pořád nejoblíbenější zůstává ale právě ta kočičí.",
   "about": "neko kavárnách",
   "irony_prompt": "A cozy café interior fills the frame with several sleepy cats draped across cushioned window seats and low tables. Smaller and subordinate: a steaming cup of coffee left untouched on a side table; a customer's hand gently offering a treat; a shelf of cat toys in the background. MOOD: cozy, soothing, charming."
+ },
+ {
+  "id": "jp-s-slovo-pro-pohromu",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co doslova znamená japonské slovo cunami, které převzal celý svět?",
+  "answer": "Vlna v přístavu",
+  "distractors": [
+   "Voda z hlubin moře",
+   "Hněv mořského draka",
+   "Bílá zeď z pěny"
+  ],
+  "quip_correct": "Etymologie jako z rybářské hospody: venku klid, doma katastrofa.",
+  "quip_wrong": "Draci ani hlubiny v tom nejsou a pěnová zeď je až výsledek. Japonci to pojmenovali podle místa, kde škoda bolí nejvíc.",
+  "explanation": "Název vymysleli rybáři, kteří na otevřeném moři vlnu skoro nepocítili a doma pak našli zpustošené pobřeží. Na volném oceánu je totiž nízká a zvedne se až u břehu.",
+  "about": "slově cunami",
+  "more_fact": "Japonské pobřeží lemují stovky starých kamenných stél, které varují před stavbou domů pod určitou výškou. Vesnice, které rady předků poslechly, přečkaly vlnu roku 2011 bez škod.",
+  "irony_prompt": "A tall curling ocean wave with a foamy crest fills the frame in the style of an old woodblock print, rearing up only as it reaches a tiny fishing harbour, while far out at sea a relaxed fisherman in his little boat sips tea, completely unaware. Smaller and subordinate: a row of harbour cats scampering uphill with fish in their mouths, a startled seagull, wooden boats bobbing. MOOD: cheerful, playful, whimsical."
+ },
+ {
+  "id": "jp-s-jeleni-v-nare",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co udělají krotcí jeleni v japonské Naře, když chtějí od turisty sušenku?",
+  "answer": "Ukloní se hlavou",
+  "distractors": [
+   "Postaví se na zadní nohy",
+   "Třikrát dupnou kopytem",
+   "Zazvoní na chrámový zvonec"
+  ],
+  "quip_correct": "Zdvořilost na úrovni, kterou by ocenil každý japonský úředník. Jen za ni chtějí platbu v sušenkách.",
+  "quip_wrong": "Na zadních panáčkuje pes a na zvon tahá mnich. Jelen v Naře ví, že v Japonsku se prosí úklonou.",
+  "explanation": "Jeleni sika jsou v Naře považovaní za posly bohů a volně se procházejí parkem i ulicemi. Pro turisty se prodávají zvláštní sušenky šika senbei, které lidem nechutnají.",
+  "about": "jelenech v Naře",
+  "more_fact": "Až do roku 1637 hrozil za zabití jelena v Naře trest smrti. Dnes jsou zvířata chráněná jako národní přírodní památka a v okolí parku jich žije přes tisíc.",
+  "irony_prompt": "A spotted sika deer bows deeply and politely to a delighted tourist, and the elegant bowing deer fills the frame on a gravel path beneath a vermilion temple gate, while the tourist bows back holding a stack of round flat crackers. Smaller and subordinate: a second deer sneakily nibbling the tourist's backpack, a monk trying not to laugh, cherry petals drifting. MOOD: cheerful, playful, springtime."
+ },
+ {
+  "id": "jp-s-obchod-v-dobe-izolace",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kterým Evropanům dovolil šógunát obchodovat s Japonskem během více než dvousetleté izolace?",
+  "answer": "Nizozemcům",
+  "distractors": [
+   "Portugalcům",
+   "Angličanům",
+   "Španělům"
+  ],
+  "quip_correct": "Protestantští kupci s pravidlem „žádné kázání, jen zboží“. Nejpřísnější obchodní podmínky raného novověku.",
+  "quip_wrong": "Portugalci a Španělé se až moc věnovali misiím a Angličané to vzdali sami. Zbyli ti, kteří chtěli jen prodávat.",
+  "explanation": "Směli sídlit jen na umělém ostrůvku Dedžima v přístavu Nagasaki, spojeném s pevninou jediným hlídaným mostem. Na rozdíl od katolíků nešířili křesťanství, jen obchodovali.",
+  "about": "japonské izolaci",
+  "more_fact": "Přes Dedžimu pronikala do Japonska evropská medicína, astronomie i anatomie. Japonci tomu vědění říkali rangaku, doslova nizozemské učení.",
+  "irony_prompt": "A tiny fan-shaped artificial island packed with tall gabled warehouses fills the frame, connected to a Japanese harbour town by one narrow guarded bridge, where a European merchant in a tall black hat bows awkwardly to a stern samurai guard. Smaller and subordinate: a sailing ship with plain white sails anchored nearby, crates of porcelain being stacked, a curious cat crossing the bridge without permission. MOOD: cheerful, playful, historical."
+ },
+ {
+  "id": "jp-s-oprava-rozbite-keramiky",
+  "cc": "jp",
+  "country": "Japonsko",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím japonští mistři technikou kincugi spojují střepy rozbité keramiky?",
+  "answer": "Lakem se zlatým práškem",
+  "distractors": [
+   "Rýžovou pastou s popelem",
+   "Včelím voskem a hedvábím",
+   "Roztaveným barevným sklem"
+  ],
+  "quip_correct": "Japonský přístup k rozbitému hrnku: nevyhazovat, ale pozlatit. Terapeut by k tomu měl co říct.",
+  "quip_wrong": "Rýže, vosk i sklo by praskliny schovaly. Kincugi je naopak předvádí jako šperk.",
+  "explanation": "Praskliny se nezakrývají, ale zvýrazní: spravená miska má být krásnější než nová. Vychází to z estetiky wabi-sabi, která si cení stop času a nedokonalosti.",
+  "about": "technice kincugi",
+  "more_fact": "Podle tradice vznikla kincugi v 15. století, když šógun Jošimasa poslal rozbitou čajovou misku do Číny na opravu a ta se vrátila stažená ošklivými kovovými sponami.",
+  "irony_prompt": "A cracked ceramic tea bowl mended with shining golden seams fills the frame, displayed on a silk cushion like a crown jewel, while its owner proudly polishes it and a brand-new flawless bowl on the shelf looks on in envy. Smaller and subordinate: a clumsy cat who clearly caused the accident, a tiny brush and golden dust, a steaming kettle. MOOD: cheerful, playful, serene."
  }
 ]

@@ -1530,5 +1530,93 @@
   "image_prompt": "Rozsáhlá modelová železnice s maličkými vláčky, budovami, horami a mrňavým letadélkem ve vzduchu v hale Miniatur Wunderland, painterly watercolor gouache illustration, aged vintage travel journal, muted desaturated ochre cream and soft teal palette, no text",
   "about": "Miniatur Wunderlandu, největší modelové železnici na světě",
   "irony_prompt": "A miniature world fills the frame — tiny houses, hills and a station — and above its little airport a real model aeroplane lifts off into the air on its own, while a giant human hand hovers, not daring to touch it. Smaller and subordinate: tiny passengers on a platform; a model train crossing a bridge; a visitor with his nose almost in the landscape. MOOD: amazing, playful, for children."
+ },
+ {
+  "id": "de-s-slovansky-mensinovy-jazyk",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který slovanský jazyk má v Německu status chráněného menšinového jazyka, takže v části Saska a Braniborska stojí na úřadech i nádražích dvojjazyčné názvy?",
+  "answer": "Lužická srbština",
+  "distractors": [
+   "Kašubština",
+   "Rusínština",
+   "Slovinština"
+  ],
+  "quip_correct": "Pár desítek tisíc mluvčích, dvojjazyčné cedule a tisíc let tvrdohlavosti. Germanizace to zkoušela dlouho a marně.",
+  "quip_wrong": "Kašubové bydlí u Gdaňsku, Rusíni v Karpatech a Slovinci pod Alpami – do Braniborska to měl každý z nich pěkně z ruky.",
+  "explanation": "Lužičtí Srbové mají dva spisovné jazyky, hornolužický kolem Budyšína a dolnolužický kolem Chotěbuzi, a ten horní je češtině překvapivě blízko.",
+  "about": "lužické srbštině",
+  "more_fact": "Lužičtí Srbové mají vlastní velikonoční zvyky: jízdní procesí mužů ve fracích a cylindrech na ozdobených koních a vajíčka zdobená voskem tak jemně, že se prodávají jako umělecká díla.",
+  "irony_prompt": "A proud horseman in a black tailcoat and tall top hat riding a flower-decorated horse fills the frame, greeting two villagers by doffing two identical top hats at once, one in each hand, as if speaking two languages with his hats. Smaller and subordinate: a wax-decorated Easter egg rolling along the path, a stork on a half-timbered roof, a small pond with a curious carp. MOOD: warm, playful, gently proud."
+ },
+ {
+  "id": "de-s-navrat-po-150-letech",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které velké zvíře se roku 2000 poprvé po zhruba 150 letech znovu rozmnožilo na německém území, a to na vojenském cvičišti v Sasku?",
+  "answer": "Vlk obecný",
+  "distractors": [
+   "Los evropský",
+   "Medvěd hnědý",
+   "Zubr evropský"
+  ],
+  "quip_correct": "Vojáci střílejí jen cvičně a nikdo tam neseká trávu – pro vlčí rodinu ideální chata. Zbytek republiky se s tím pořád smiřuje.",
+  "quip_wrong": "Huňatý host z Itálie se roku 2006 do Bavorska sice zatoulal, ale dlouho nepobyl, a los se ukáže jednou za čas jako turista z Polska. Zůstal jen ten, kdo si přivedl rodinu.",
+  "explanation": "Z první saské rodiny se vlci rozšířili po velké části země a dnes jich Německo eviduje přes dvě stě smeček.",
+  "about": "vlcích v Německu",
+  "more_fact": "Vlci si v Německu oblíbili hlavně vojenské prostory a vytěžené hnědouhelné doly, kde je klid a málo silnic. Jejich počty se sledují podle trusu, fotopastí i genetických vzorků.",
+  "irony_prompt": "A big grey wolf mother fills the frame, sitting proudly among soft sand dunes of an old military training ground, with a row of tiny wolf pups lined up beside her like recruits standing at attention. Smaller and subordinate: a rusty abandoned tank overgrown with heather used as a pup climbing frame, a puzzled deer peeking from pine trees, an old helmet repurposed as a water bowl. MOOD: cheerful, playful, affectionate."
+ },
+ {
+  "id": "de-s-obchodni-svaz-baltu",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který středověký svaz obchodních měst se nikdy formálně nerozpustil – jeho zástupci se jen roku 1669 naposledy sešli – a dodnes po něm nosí SPZ Hamburku a Brém písmeno H?",
+  "answer": "Hanza",
+  "distractors": [
+   "Rýnský spolek",
+   "Švábský spolek",
+   "Lombardská liga"
+  ],
+  "quip_correct": "Obchodní impérium bez armády, bez krále i bez sídla – a jako pomník mu zbylo písmenko na poznávací značce. Sic transit gloria mercatorum.",
+  "quip_wrong": "Švábský spolek hlídal mír na jihu, Rýnský spolek sloužil Napoleonovi a Lombardie leží v Itálii. Po Baltu se s nákladem sleďů plavil jen jeden.",
+  "explanation": "Lübeck, kdysi hlavní město celého svazu, si titul hanzovní město drží dodnes a jeho poznávací značky začínají písmeny HL.",
+  "about": "Hanze",
+  "more_fact": "Kupci svazu měli v Londýně vlastní opevněný areál Steelyard s vlastními zákony a sklady. Angličtí králové jim za půjčky dávali tak výhodná cla, že je domácí obchodníci nesnášeli.",
+  "irony_prompt": "A fat, jolly medieval merchant cog ship fills the frame, riding the waves with its round wooden belly stuffed so full of herring barrels that fish tails poke out of every gap, while its plump captain hugs a single enormous herring like treasure. Smaller and subordinate: seagulls stealing herring, a brick gabled warehouse on the quay, a cat asleep on a barrel. MOOD: jolly, cheeky, sunny."
+ },
+ {
+  "id": "de-s-prvni-skolni-den",
+  "cc": "de",
+  "country": "Německo",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co dostávají německé děti do rukou v den, kdy poprvé jdou do školy, a často je to skoro stejně velké jako ony samy?",
+  "answer": "Obří kornout se sladkostmi",
+  "distractors": [
+   "Dřevěný penál s pastelkami",
+   "Klíč od třídy na stuze",
+   "Sazenici stromu k zasazení"
+  ],
+  "quip_correct": "Německé školství začíná úplatkem v podobě cukru. Následujících dvanáct let pak už jen vybírá splátky.",
+  "quip_wrong": "Penál i stromek by byly pedagogicky hodnotnější, jenže tady rozhoduje tradice, a ta jednoznačně velí cukr. Klíč od třídy nedostane ani ředitel.",
+  "explanation": "Zvyk se objevil na počátku 19. století v Sasku a Durynsku, kde se dětem vyprávělo, že ve sklepě učitele roste strom, na kterém tyhle dárky dozrávají.",
+  "about": "kornoutech pro prvňáčky",
+  "more_fact": "Kornout plní rodiče nebo prarodiče a kromě bonbonů v něm bývají i pastelky a drobné hračky. Rozbalí se až po prvním vyučování, před kterým se celá rodina slavnostně fotí.",
+  "irony_prompt": "A tiny first-grader with a huge school backpack fills the frame, staggering proudly while hugging a giant cone-shaped paper container decorated with painted stars that is taller than the child, sweets spilling from its top. Smaller and subordinate: a proud grandmother wiping away a tear, a squirrel catching a falling candy, a plain wooden school door in the background. MOOD: joyful, sweet, playful."
  }
 ]

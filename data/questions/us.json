@@ -886,5 +886,93 @@
   "image_prompt": "Fotorealistický snímek barevného ohňostroje nad večerním americkým městem 4. července, s davem lidí sledujícím show, 16:9",
   "about": "Dni nezávislosti",
   "irony_prompt": "A brilliant burst of red, white and blue fireworks fills the frame exploding high above a packed evening picnic blanket scene, their glowing trails reflected in a nearby lake. Smaller and subordinate: a family cheering upward with sparklers held aloft; a picnic basket spilling watermelon slices onto the blanket; a dog covering its ears with its paws, unimpressed. MOOD: jubilant, dazzling, festive."
+ },
+ {
+  "id": "us-s-puvod-dvou-pismen",
+  "cc": "us",
+  "country": "USA",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Z čeho se podle převládajícího výkladu vyvinulo slovo OK, které se poprvé objevilo v bostonských novinách roku 1839?",
+  "answer": "Ze žertovné zkratky zkomoleného „oll korrect“",
+  "distractors": [
+   "Z telegrafní značky pro „vše přijato“",
+   "Z vojenského hlášení „0 killed“ (nula mrtvých)",
+   "Z německého „ohne Korrektur“ u tiskařů"
+  ],
+  "quip_correct": "Nejrozšířenější slovo planety vzniklo jako vtip o lidech, kteří neumějí psát. Ironie, kterou dnes potvrzuje každá esemeska.",
+  "quip_wrong": "Telegrafisté, vojáci i němečtí sazeči mají své zastánce, jenže pro žádnou z těch teorií se nenašel starší doklad. Boston tehdy prostě bavily schválně zkomolené zkratky.",
+  "explanation": "Z módy podobných zkratek jako OW („oll wright“) přežila jen tahle, hlavně díky volební kampani prezidenta Van Burena, přezdívaného Old Kinderhook.",
+  "about": "slově OK",
+  "more_fact": "Původ slova vystopoval v 60. letech lingvista Allen Walker Read, který jeho první výskyt našel v listu Boston Morning Post z 23. března 1839.",
+  "irony_prompt": "A giant cartoon hand making the round thumb-and-finger okay gesture fills the frame, rising above a 19th-century Boston street, while gentlemen in top hats below wink and chuckle together at the private joke. Smaller and subordinate: a paperboy holding a stack of completely blank sheets, a horse tipping its hat, a church spire. MOOD: cheerful, witty, sunny."
+ },
+ {
+  "id": "us-s-mesto-bez-rychleho-obcerstveni",
+  "cc": "us",
+  "country": "USA",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které hlavní město amerického státu jako jediné nemá ani jednu restauraci McDonald's?",
+  "answer": "Montpelier (Vermont)",
+  "distractors": [
+   "Juneau (Aljaška)",
+   "Pierre (Jižní Dakota)",
+   "Augusta (Maine)"
+  ],
+  "quip_correct": "Zhruba osm tisíc obyvatel a místo hamburgerů farmářské trhy. Tady si fast food musí nejdřív zasloužit.",
+  "quip_wrong": "Juneau, Pierre i Augusta jsou malá a odlehlá města, a přesto v nich zlaté oblouky svítí. Obejít se bez nich dokázalo jen nejmenší hlavní město ze všech.",
+  "explanation": "Vermont je navíc jedním z mála států, které zakazují velké reklamní billboardy, takže podél tamních silnic žádné nevyrůstají.",
+  "about": "Montpelieru",
+  "more_fact": "Vermont vyrábí nejvíc javorového sirupu ze všech amerických států – zhruba polovinu celé produkce USA; na jediný galon sirupu je přitom potřeba svařit kolem 40 galonů javorové mízy.",
+  "irony_prompt": "A charming small New England town green fills the frame, with a golden-domed capitol behind it and a stern cow in a plaid scarf standing guard at the edge of town, blocking a lost cartoon hamburger on little legs from sneaking in. Smaller and subordinate: a maple tree dripping syrup into a bucket, a basket of red apples, a skier waving. MOOD: cosy, cheerful, autumn colours."
+ },
+ {
+  "id": "us-s-nejdelsi-jeskyne",
+  "cc": "us",
+  "country": "USA",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Ve kterém státě USA leží Mamutí jeskyně, nejdelší známý jeskynní systém světa?",
+  "answer": "V Kentucky",
+  "distractors": [
+   "V Novém Mexiku",
+   "V Tennessee",
+   "V Missouri"
+  ],
+  "quip_correct": "Stát proslulý bourbonem a dostihovými koňmi skrývá pod zemí přes 680 kilometrů chodeb. Kdo hodnotí tenhle kraj, nesmí zapomenout na suterén.",
+  "quip_wrong": "Nové Mexiko má ohromující Carlsbadské jeskyně a Tennessee i Missouri se jeskyněmi taky chlubí, ale v délce chodeb nikdo nedohoní zemi bourbonu.",
+  "explanation": "Jméno nedostala podle mamutů, ale podle obřích rozměrů svých podzemních síní; kosti mamutů se v ní nenašly.",
+  "about": "Mamutí jeskyni",
+  "more_fact": "Roku 1842 v jeskyni krátce fungovala léčebna tuberkulózy: lékař věřil, že stálá teplota a vzduch nemocné vyléčí, pacientům se ale místo toho přitížilo.",
+  "irony_prompt": "An enormous cave entrance fills the frame, and inside it a hairy woolly mammoth wearing a miner's helmet with a lamp is lost and puzzled among endless branching tunnels, holding up a trailing ball of string. Smaller and subordinate: a bat pointing the wrong way, a racehorse peeking in from the sunlit meadow outside, glittering stalactites. MOOD: comic, adventurous, cheerful."
+ },
+ {
+  "id": "us-s-zrod-basketbalu",
+  "cc": "us",
+  "country": "USA",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co přibil tělocvikář James Naismith roku 1891 na zábradlí tělocvičny, když vymýšlel basketbal?",
+  "answer": "Dva koše na broskve",
+  "distractors": [
+   "Dvě vědra na uhlí",
+   "Dvě bedny od jablek",
+   "Dvě rybářské vrše"
+  ],
+  "quip_correct": "Koš bez díry ve dně znamenal, že po každém úspěšném hodu musel někdo lézt na žebřík. Nejdelší oddechové časy v dějinách sportu.",
+  "quip_wrong": "Vědra na uhlí by byla moc úzká, bedny od jablek hranaté a vrše by míč nepustily ven. Naismith sáhl po tom, co měl školník zrovna ve skladu – po obalech od ovoce.",
+  "explanation": "Naismith byl Kanaďan a hru vymyslel na škole YMCA ve Springfieldu v Massachusetts, aby studenty zabavil v zimě pod střechou; první zápas skončil 1:0.",
+  "about": "vzniku basketbalu",
+  "more_fact": "Otvor ve dně koše se prosadil až po letech a do té doby se míč vytahoval ručně nebo tyčí; Naismithova původní pravidla přitom zakazovala s míčem v rukou běhat.",
+  "irony_prompt": "A woven wooden peach basket nailed to a gym balcony railing fills the frame, a brown leather ball stuck inside it, while a janitor on a tall wobbly ladder reaches up to fish it out. Smaller and subordinate: players below in completely plain solid-coloured 1890s wool uniforms with no crest, no badge, no emblem waiting impatiently, a peach rolling across the wooden floor, a moustached coach seen from behind. MOOD: comic, nostalgic, cheerful."
  }
 ]

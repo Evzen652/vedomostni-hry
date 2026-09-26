@@ -905,5 +905,93 @@
   "more_fact": "Do Viktoriina jezera se vlévají stovky menších řek, ale vytéká z něj jen jedna jediná – Viktoriin Nil, který se dál na severu spojí s dalšími přítoky a stane se řekou Nil, jak ji známe.",
   "about": "Viktoriině jezeře",
   "irony_prompt": "A vast calm lake fills the frame, its surface stretching to the horizon under a bright sky, with a narrow wooden fishing boat drifting near the shore. Smaller and subordinate: a fisherman untangling a net at the boat's edge; a cluster of reeds along the muddy bank; distant green hills fading into haze. MOOD: peaceful, expansive, serene."
+ },
+ {
+  "id": "ke-s-svahilske-slovo-safari",
+  "cc": "ke",
+  "country": "Keňa",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co znamená svahilské slovo safari, které převzal celý svět?",
+  "answer": "Cesta",
+  "distractors": [
+   "Lov",
+   "Divočina",
+   "Stádo"
+  ],
+  "quip_correct": "Celý turistický průmysl stojí na slově, které znamená obyčejný výlet. Marketing je mocný čaroděj.",
+  "quip_wrong": "S puškou, divočinou ani stády to nemá nic společného. Kdo v Keni řekne safari, může mluvit i o jízdě autobusem na trh.",
+  "explanation": "Slovo přišlo do svahilštiny z arabského safar. Svahilština převzala z arabštiny spoustu slov, protože vznikla v obchodních přístavech na pobřeží.",
+  "about": "slově safari",
+  "more_fact": "Do angličtiny slovo dostali cestovatelé 19. století a zpopularizoval ho americký prezident Theodore Roosevelt, jehož africká výprava roku 1909 plnila noviny celé měsíce.",
+  "irony_prompt": "An overloaded rattling country bus fills the frame on a red dirt road across the savanna, its roof piled with bundles, chickens and a bicycle, while a giraffe leans down curiously to peer in through an open window. Smaller and subordinate: a smug tourist jeep stuck in the mud behind it, a zebra crossing the road unbothered, a baobab tree. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "ke-s-jezero-na-severu",
+  "cc": "ke",
+  "country": "Keňa",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč se keňskému pouštnímu jezeru Turkana přezdívá „Nefritové moře“?",
+  "answer": "Kvůli zelenkavé barvě vody, kterou dělají řasy",
+  "distractors": [
+   "Na jeho březích se těží drahý nefrit",
+   "Uprostřed leží ostrov ve tvaru nefritové sošky",
+   "Rybáři v něm loví vzácné zelené úhoře"
+  ],
+  "quip_correct": "Smaragd uprostřed vyprahlé pouště. Kdo by čekal, že nejlepšími malíři tu budou řasy?",
+  "quip_wrong": "Nefrit se tu netěží, sošky nikdo netesá a úhoři do pouště nepatří. Barvu jezeru dodávají mikroskopičtí obyvatelé.",
+  "explanation": "Turkana je největší stálé pouštní jezero na světě. Žádná řeka z něj neodtéká, a tak je jeho voda mírně slaná a zásaditá.",
+  "about": "jezeru Turkana",
+  "more_fact": "Na Středním ostrově uprostřed jezera hnízdí jedna z největších populací nilských krokodýlů v Africe. Ostrov je činná sopka s několika kráterovými jezírky.",
+  "irony_prompt": "A vast shimmering lake of bright jade-green water fills the frame, surrounded by dry brown desert hills, and a cheerful fisherman on a small raft holds up a fish in astonishment at the colour of the water around him. Smaller and subordinate: a crocodile sunbathing lazily on the shore, a camel drinking at the waterline, a pink flamingo checking its reflection. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "ke-s-zeleznice-do-vnitrozemi",
+  "cc": "ke",
+  "country": "Keňa",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak britští kritici přezdívali drahé železnici, kterou koncem 19. století stavěli z pobřeží do vnitrozemí k Ugandě?",
+  "answer": "Šílený expres",
+  "distractors": [
+   "Zlatý šíp savany",
+   "Královnin kočár",
+   "Sloní dráha"
+  ],
+  "quip_correct": "Parlament v Londýně ji odsuzoval a pak z jednoho depa vyrostla metropole. Šílenství s dobrou návratností.",
+  "quip_wrong": "Zlaté šípy a královské kočáry zní honosně, jenže kritici v Londýně si nebrali servítky: trať do neznáma pro ně byla čiré bláznovství.",
+  "explanation": "Anglicky Lunatic Express. Trať stála miliony liber a stavěly ji desetitisíce dělníků přivezených hlavně z Britské Indie; u jednoho z jejích skladišť pak vyrostlo dnešní hlavní město.",
+  "about": "Ugandské železnici",
+  "more_fact": "Stavbu roku 1898 na měsíce zastavili dva lvi u řeky Tsavo, kteří napadali tábory dělníků. Vycpaní dnes stojí ve Field Museum v Chicagu.",
+  "irony_prompt": "A small puffing steam locomotive with a single carriage fills the frame, chugging across the open savanna on a track that wiggles toward the far horizon, while a line of gentlemen in pith helmets on a distant hill throw up their arms in exasperation. Smaller and subordinate: two curious lions watching from the tall grass, an elephant stepping carefully over the rails, a giraffe using a pole as a scratching post. MOOD: cheerful, playful, adventurous."
+ },
+ {
+  "id": "ke-s-tanec-masajskych-valecniku",
+  "cc": "ke",
+  "country": "Keňa",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se předvádějí mladí masajští válečníci při tradičním tanci adumu?",
+  "answer": "Co nejvyššími skoky z místa",
+  "distractors": [
+   "Chůzí po rozžhavených uhlících",
+   "Točením hořícími pochodněmi",
+   "Bubnováním na lví kůži"
+  ],
+  "quip_correct": "Masajská verze pohovoru: kdo vyskočí výš, ten zaujme. Personalisté by mohli zvážit trampolínu.",
+  "quip_wrong": "Uhlíky a pochodně jsou číslo pro turistickou show a bubny tu nehrají. Masajové se předvádějí tím nejlepším, co mají — pružnými lýtky.",
+  "explanation": "Válečníci stojí v kruhu a vystupují do středu jeden po druhém. Ostatní je doprovázejí hlubokým hrdelním zpěvem, bez jediného hudebního nástroje.",
+  "about": "masajském tanci adumu",
+  "more_fact": "Adumu patří k obřadu eunoto, kterým mladí muži přecházejí ze stavu válečníků mezi dospělé. Matky jim při něm oholí dlouhé vlasy, obarvené okrovou hlinkou.",
+  "irony_prompt": "A tall young Maasai warrior in a vivid red checked cloth soars straight up in a spectacular vertical leap that fills the frame, his beaded collar flying, while his friends in a circle below crane their necks in admiration. Smaller and subordinate: a surprised giraffe meeting him at eye level, cattle watching from a thorn fence, a small boy practising tiny hops. MOOD: cheerful, playful, sunny."
  }
 ]

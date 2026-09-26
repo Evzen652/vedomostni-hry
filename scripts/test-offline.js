@@ -1078,6 +1078,18 @@ sekce("Výzvy podle přezdívky místo přátel");
   kontrola(/\.zk-revlist\s*\{[^}]*text-align:\s*left/.test(SRC_CSS),
     "rozbor dědí vystředěný text z .qz-end — víceřádkový text na střed se čte špatně");
 
+  // Online ilustrace se stahuje AŽ PO ODPOVĚDI (2026-09-26). Kreslí odpověď, takže
+  // přednačtená by šla otevřít ze síťového provozu — u serverových otázek jediná cesta.
+  kontrola(/window\.ZKPicframe\.html\(\{[\s\S]*?\}, true\)/.test(bez),
+    "online rám ilustraci přednačítá — šla by otevřít dřív, než hráč odpoví");
+  {
+    const bezQ2 = bezKomentaru(SRC);
+    kontrola(/odlozit \? "data-src" : "src"/.test(bezQ2), "ramHtml neumí odložit načtení ilustrace");
+    const rv = bezQ2.slice(bezQ2.indexOf("function revealPic("), bezQ2.indexOf("function wirePic("));
+    kontrola(/img\[data-src\]/.test(rv) && /im\.src=im\.getAttribute\("data-src"\)/.test(rv),
+      "revealPic odloženou ilustraci nenačte — online by po odpovědi zůstal jen záložní rám");
+  }
+
   // Odveta proti člověku je výzva (2026-09-26) — klient ji musí tak i zobrazit, ne čekat id hry.
   kontrola(/rr\.body && rr\.body\.challenge\) return renderVyzvy\(/.test(bez),
     "klient u odvety neumí výzvu — čekal by id hry, které server už neposílá");

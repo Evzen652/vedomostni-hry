@@ -211,9 +211,12 @@ pásma), postup je zdokumentovaný v CLAUDE.md 2026-09-25 a 2026-08-31.
 Pořadí dalších kroků je závazné — každý otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
 
-**A. Dopsat serverové otázky** (zbytek kroku 2)
+**A. Serverové otázky** — **ZALOŽENO 26. 9.: 220 otázek** (4 na zemi, pásmo dospělí).
 Otázka s `"online_only": true` se nekopíruje na web a online hra ji losuje přednostně.
-Dnes je jich nula. `npm run validate` to hlásí. Mechanismus je hotový (`npm run test:pool`).
+Jedna hra = 10 otázek, takže fond vystačí zhruba na 20 her na hráče, než se začne dobírat
+z veřejných. **Další dávky jsou průběžná práce** — zadání pro agenty (povinná pole,
+pravidla, pasti) je popsané v CLAUDE.md 2026-09-26; id nesmí obsahovat slovo z odpovědi
+(hlídá `validate`).
 
 **B. Právní vrstva** (krok 3)
 Stránky jsou napsané a **od 11. 9. nasazené vědomě** (viz CLAUDE.md), kontakt

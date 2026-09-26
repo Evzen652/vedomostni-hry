@@ -1,17 +1,17 @@
 {
- "datum": "2026-09-14",
+ "datum": "2026-09-26",
  "stat": {
   "obecny": {
-   "otazek": 2752,
-   "obrazek": 1901,
-   "irony_prompt": 1844,
-   "vice_o": 1927
+   "otazek": 2977,
+   "obrazek": 2757,
+   "irony_prompt": 2977,
+   "vice_o": 2152
   },
   "deti": {
-   "otazek": 990,
-   "obrazek": 634,
-   "irony_prompt": 660,
-   "vice_o": 290
+   "otazek": 1035,
+   "obrazek": 1035,
+   "irony_prompt": 1035,
+   "vice_o": 335
   }
  },
  "nalezy": {
@@ -119,6 +119,7 @@
    "mn-q-ulaanbaatar obsahuje odpověď „Ulánbátar“ z mn-t-hlavni-mesto",
    "nl-t-mata-hari obsahuje odpověď „Nizozemské“ z nl-t-nejvyssi-lide",
    "nl-a-coffeeshop-paradox obsahuje odpověď „Nizozemské“ z nl-t-nejvyssi-lide",
+   "nl-s-ctvrt-po-vesnici obsahuje odpověď „Nizozemské“ z nl-t-nejvyssi-lide",
    "no-t-pulnocni-slunce obsahuje odpověď „Nordkapp“ z no-t-nordkapp",
    "no-a-treska-rybolov obsahuje odpověď „Treska“ z no-t-torrfisk",
    "nz-q-all-blacks obsahuje odpověď „Ragbyový tým All Blacks“ z nz-q-haka",

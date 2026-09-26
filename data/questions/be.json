@@ -926,5 +926,93 @@
   "image_prompt": "Fotorealistický snímek maskovaného muže v kostýmu Gilla s pštrosími pery na hlavě, voskovou maskou a dřevěnými botami na karnevalu v belgickém městě Binche, 16:9",
   "about": "karnevalu v Binche a jeho Gillech",
   "irony_prompt": "A carnival figure fills the frame in a padded costume with bright heraldic patterns, an enormous tall headdress of white ostrich feathers and wooden clogs, tossing oranges from a wicker basket into the crowd. Smaller and subordinate: more feathered figures dancing behind him; spectators catching oranges; a drummer. MOOD: festive, exuberant, joyful."
+ },
+ {
+  "id": "be-s-surrealista-a-predmet",
+  "cc": "be",
+  "country": "Belgie",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaká věta stojí pod realisticky namalovaným předmětem na obraze Zrada obrazů od René Magritta?",
+  "answer": "„Tohle není dýmka“",
+  "distractors": [
+   "„Tohle není obraz“",
+   "„Tohle není umění“",
+   "„Tohle je jen sen“"
+  ],
+  "quip_correct": "Sedí. Belgičan namaloval dýmku, pod ni napsal, že to dýmka není – a měl pravdu. Zkuste si ji nacpat tabákem.",
+  "quip_wrong": "Obraz, umění i sen by zněly filozoficky, jenže Magritte to vzal doslova: namalovaná věc není věc sama.",
+  "explanation": "Plátno z let 1928–1929 visí v Los Angeles County Museum of Art a francouzská věta „Ceci n’est pas une pipe“ patří k nejcitovanějším v dějinách umění.",
+  "about": "obrazu Zrada obrazů",
+  "more_fact": "Magritte si léta přivydělával jako grafik tapetových vzorů a reklamních plakátů a v obleku s buřinkou vypadal spíš jako bankovní úředník než jako bohém.",
+  "irony_prompt": "A giant realistic smoking pipe fills the frame, floating in front of a soft blue sky with fluffy clouds, while a gentleman in a bowler hat seen only from behind scratches his head and the pipe proudly puffs a smoke ring curled into a question shape. Smaller and subordinate: a green apple hovering nearby, a pigeon wearing a tiny bowler hat, a plain empty picture frame. MOOD: witty, dreamy, playful."
+ },
+ {
+  "id": "be-s-cislovky-ve-valonsku",
+  "cc": "be",
+  "country": "Belgie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak Belgičané ve francouzštině říkají číslovce devadesát, zatímco Francouzi ji skládají z několika slov?",
+  "answer": "Nonante",
+  "distractors": [
+   "Quatre-vingt-dix",
+   "Huitante",
+   "Neufante"
+  ],
+  "quip_correct": "Trefa. Belgičan zaplatí nonante eur a je hotovo – Francouz mezitím teprve dopočítává čtyřikrát dvacet plus deset.",
+  "quip_wrong": "Quatre-vingt-dix je francouzská aritmetická rozcvička, huitante švýcarská osmdesátka a neufante neexistuje vůbec.",
+  "explanation": "Stejně prakticky to Belgičané řeší i u sedmdesátky, které říkají septante místo francouzského soixante-dix.",
+  "about": "belgické francouzštině",
+  "more_fact": "Belgičtí frankofonní mluvčí říkají snídani déjeuner, obědu dîner a večeři souper – tedy posunutě oproti Paříži, kde déjeuner znamená až oběd.",
+  "irony_prompt": "A cheerful Belgian waiter fills the frame, confidently fanning out a handful of golden fries like playing cards, while a flustered Parisian customer beside him counts frantically on an abacus with sweat on his brow. Smaller and subordinate: a steaming pot of mussels, a snail wearing a beret, a waffle rolling off the table. MOOD: playful, cheeky, warm."
+ },
+ {
+  "id": "be-s-spojeni-bruselu-s-mechelenem",
+  "cc": "be",
+  "country": "Belgie",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se do evropských dějin zapsalo spojení Bruselu s Mechelenem, slavnostně zahájené 5. května 1835?",
+  "answer": "Byla to první parní dráha pro cestující na evropské pevnině",
+  "distractors": [
+   "Bylo to první telegrafní vedení mezi dvěma městy Evropy",
+   "Byl to první plavební kanál pro parníky na evropské pevnině",
+   "Byla to první dlážděná silnice pro poštovní dostavníky"
+  ],
+  "quip_correct": "Přesně. Země velká tak akorát na jednu jízdenku rozjela kontinentální železnici jako první – asi aby ji stihla celou objet.",
+  "quip_wrong": "Telegraf, kanál i dostavníky zněly v roce 1835 moderně, jenže tady se poprvé na pevnině rozfuněla lokomotiva.",
+  "explanation": "Na trať dlouhou asi 20 kilometrů vyrazily při slavnostní jízdě tři anglické lokomotivy – La Flèche, Stephenson a L’Éléphant.",
+  "about": "první belgické železnici",
+  "more_fact": "Mladý stát stavěl železnice hlavně proto, aby spojil přístav v Antverpách s Porýním a obešel nizozemské vodní cesty; dnes má Belgie jednu z nejhustších sítí na světě.",
+  "irony_prompt": "A tiny puffing steam locomotive fills the frame, proudly pulling open wooden carriages packed with top-hatted gentlemen and ladies in bonnets clutching their hats as a gust of smoke blows past, a brass band marching alongside. Smaller and subordinate: a startled cow at the trackside, a horse-drawn coach being overtaken by a sulky coachman, fluttering plain ribbons. MOOD: festive, proud, playful."
+ },
+ {
+  "id": "be-s-strecha-belgie",
+  "cc": "be",
+  "country": "Belgie",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co si Belgičané nechali navršit na svém nejvyšším bodě Signal de Botrange, který měří jen 694 metrů?",
+  "answer": "Umělou mohylu, aby vrchol dosáhl 700 metrů",
+  "distractors": [
+   "Umělé jezero na zachytávání ranní mlhy",
+   "Stěnu pro horolezecký výcvik armády",
+   "Sklep na zrání sýrů z nedalekého Herve"
+  ],
+  "quip_correct": "Ano. Když příroda nedodá kulaté číslo, Belgičan si ho dosype lopatou. Šest metrů čisté hrdosti.",
+  "quip_wrong": "Jezero, stěna i sýrový sklep by se na tamních rašeliništích uživily, jenže Belgie potřebovala hlavně pár metrů navíc.",
+  "explanation": "Šestimetrovou mohylu navršili roku 1923; okolní rašeliniště Vysokých Fagen patří k nejdeštivějším a nejstudenějším místům země.",
+  "about": "nejvyšším bodě Belgie",
+  "more_fact": "Do roku 1920 ležel nejvyšší bod Belgie jinde – Botrange připadl zemi až po první světové válce, když Německo muselo postoupit kraj Eupen-Malmedy.",
+  "irony_prompt": "A small grassy mound fills the frame, rising from a misty moorland with a proud little stone path up its side, and a tiny Belgian hiker stands on its very top on tiptoe, stretching one arm up to add a final pinch of height, beaming. Smaller and subordinate: a surprised cloud at eye level, a heron in the bog below, a thermos of hot chocolate. MOOD: proud, playful, misty."
  }
 ]

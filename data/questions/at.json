@@ -1486,5 +1486,93 @@
   "image_prompt": "Fotorealistický snímek tmavě zeleného štýrského dýňového oleje nalévaného ze skleněné lahve na salát, detailní záběr, rustikální kuchyňský stůl, 16:9",
   "about": "štýrském dýňovém oleji",
   "irony_prompt": "A stream of oil so dark green it looks almost black fills the frame, being drizzled from a jug over a pale soup and a salad, catching an emerald shine where the light hits it. Smaller and subordinate: a heap of flat dark pumpkin seeds; a halved pumpkin; a farmer tasting from a spoon with satisfaction. MOOD: cosy, rich, for children."
+ },
+ {
+  "id": "at-s-pristupova-smlouva-eu",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co si Rakousko při vstupu do Evropské unie roku 1995 vymohlo zvláštním protokolem přístupové smlouvy?",
+  "answer": "Úřední uznání rakouských názvů potravin",
+  "distractors": [
+   "Trvalou výjimku ze zavedení eura",
+   "Vlastní evropskou normu pro výrobu piva",
+   "Ochranu vídeňštiny jako menšinového jazyka"
+  ],
+  "quip_correct": "Ano. Zatímco jiní vyjednávali o dotacích, Rakušané si pojistili, že meruňka zůstane Marille. Priority.",
+  "quip_wrong": "Euro mají Rakušané v peněžence, pivo si hlídají sami a vídeňština se bránit nemusí – bojovalo se o jídelní lístek.",
+  "explanation": "Protokol č. 10 vyjmenovává 23 výrazů – třeba Topfen, Marillen, Karfiol nebo Kren –, které smějí v unijních předpisech stát rovnocenně vedle německých tvarů.",
+  "about": "rakouských výrazech v unijním právu",
+  "more_fact": "Slovo Powidl na tom seznamu pochází z češtiny – vídeňská kuchyně si za staletí soužití od Čechů vypůjčila i Kolatschen, tedy koláče, a Buchteln, tedy buchty.",
+  "irony_prompt": "A stout Viennese grandmother in an apron fills the frame, standing defiantly in front of a towering stack of plain blank folders while hugging a basket of round orange apricots, a white cauliflower head and a bowl of fresh curd cheese like crown jewels. Smaller and subordinate: a flustered official in a grey suit, a runaway apricot rolling across the floor, a tiny eagle-shaped cookie. MOOD: cheeky, triumphant, cosy."
+ },
+ {
+  "id": "at-s-podzemi-u-werfenu",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je výjimečná jeskyně v pohoří Tennengebirge nad Werfenem v Salcbursku, kterou každé léto projdou desetitisíce turistů s lampičkami v rukou?",
+  "answer": "Je největší ledovou jeskyní na světě",
+  "distractors": [
+   "Je nejhlubší jeskyní v celých Alpách",
+   "Ukrývá největší podzemní jezero Evropy",
+   "Má nejdelší zpřístupněné chodby v Evropě"
+  ],
+  "quip_correct": "Přesně. Jediné místo v Rakousku, kde si v srpnu bez obav objednáte zimu – a nikdo vám k ní nevnutí štrúdl.",
+  "quip_wrong": "Hloubkou ani jezerem se tahle jeskyně nechlubí – venku je léto, uvnitř mrzne, a právě to je její vizitka.",
+  "explanation": "Jmenuje se Eisriesenwelt, tedy svět ledových obrů; z asi 42 kilometrů chodeb je ale led jen v prvním kilometru, dál je jeskyně suchá.",
+  "about": "jeskyni Eisriesenwelt",
+  "more_fact": "Led vzniká díky komínovému efektu: v zimě do jeskyně proudí mrazivý vzduch a na jaře v ní zamrzá tající voda, takže krápníky z ledu každý rok trochu mění tvar.",
+  "irony_prompt": "A towering frozen palace inside a mountain fills the frame, glittering blue columns and frozen waterfalls lit by a single swinging lamp, while a sunburnt tourist in shorts and flip-flops shivers dramatically among them. Smaller and subordinate: an icicle dripping on his nose, a guide wrapped in three scarves, a green summer meadow glowing through the cave mouth behind. MOOD: playful, chilly, sparkling."
+ },
+ {
+  "id": "at-s-videnska-herecka-vynalezkyne",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co kromě hollywoodských rolí vymyslela za druhé světové války vídeňská rodačka Hedy Lamarr?",
+  "answer": "Přeskakování frekvencí pro řízení torpéd",
+  "distractors": [
+   "Voděodolnou řasenku pro podvodní scény",
+   "Tlumič hluku pro filmové kamery",
+   "Skládací nosítka pro raněné vojáky"
+  ],
+  "quip_correct": "Přesně. Hollywood v ní viděl jen tvář, a ona mu mezitím pod nosem položila základ bezdrátového světa.",
+  "quip_wrong": "Řasenka, tlumič i nosítka zní jako logický tip pro filmovou hvězdu – přesně proto ji tehdy nikdo nebral vážně.",
+  "explanation": "Patent podala roku 1942 se skladatelem Georgem Antheilem, který přeskakování synchronizoval podobně jako mechanická piana s děrovanými pásy.",
+  "about": "Hedy Lamarr",
+  "more_fact": "Americké námořnictvo nápad tehdy uložilo do šuplíku a uznání se vynálezkyně dočkala až v roce 1997, kdy jí Electronic Frontier Foundation udělila cenu – bylo jí 82 let.",
+  "irony_prompt": "An elegant 1940s film star seen only from behind fills the frame, her glamorous evening gown trailing as she leans over a drafting table and conducts a swarm of tiny glowing radio waves that hop between piano keys like playful sparks. Smaller and subordinate: a surprised little toy torpedo, a grand piano with self-playing keys, a dazzled studio spotlight. MOOD: glamorous, clever, playful."
+ },
+ {
+  "id": "at-s-polarni-vyprava-1873",
+  "cc": "at",
+  "country": "Rakousko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které arktické souostroví objevila roku 1873 rakousko-uherská výprava, když se její loď nechala unášet ledem?",
+  "answer": "Země Františka Josefa",
+  "distractors": [
+   "Nové Sibiřské ostrovy",
+   "Souostroví Svalbard",
+   "Severní země"
+  ],
+  "quip_correct": "Přesně tak. Země bez moře poslala námořníky na sever a ti se vrátili s ostrovy pro císaře. Rakouská logika.",
+  "quip_wrong": "Svalbard, Sibiřské ostrovy i Severní zemi si zapsali jiní – rakouští polárníci pojmenovali svůj úlovek po šéfovi.",
+  "explanation": "Loď Tegetthoff zamrzla v ledu a skoro dva roky driftovala; posádka ji nakonec opustila a do bezpečí se probojovala se saněmi a čluny.",
+  "about": "rakousko-uherské polární výpravě",
+  "more_fact": "Velitel pozemní části výpravy Julius Payer byl zároveň nadaný malíř a zážitky z ledu později zachytil na obrovských plátnech, z nichž některá dnes visí ve vídeňském Vojenském historickém muzeu.",
+  "irony_prompt": "A proud wooden three-masted ship fills the frame, frozen solid into a vast sheet of Arctic ice, while its crew in stiff Austrian naval coats politely serve coffee and cake on the ice beside it as if at a Sunday picnic. Smaller and subordinate: a puzzled polar bear sniffing a slice of strudel, a walrus wearing a tiny bow tie, snowy islands on the horizon. MOOD: playful, frosty, absurdly elegant."
  }
 ]

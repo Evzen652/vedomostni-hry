@@ -1485,5 +1485,93 @@
   "image_prompt": "Fotorealistický snímek dětí hrajících florbal ve sportovní hale s hokejkami a děravým plastovým míčkem, 16:9",
   "about": "florbalu ve Švédsku",
   "irony_prompt": "A child in a school gym swings a lightweight hooked stick centre-frame, sending a small perforated plastic ball whizzing past a diving goalkeeper. Smaller and subordinate: teammates cheering from a bench; a gym wall with basketball hoops; scuffed floor markings. MOOD: energetic, kid-friendly."
+ },
+ {
+  "id": "se-s-nazev-wolframu",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Anglický název wolframu – tungsten – pochází ze švédštiny. Co doslova znamená?",
+  "answer": "Těžký kámen",
+  "distractors": [
+   "Šedý kov",
+   "Horský oheň",
+   "Tvrdá ruda"
+  ],
+  "quip_correct": "Švédi pojmenovali kov podle toho, jak moc se s ním nechce nosit. Poctivé geologické názvosloví bez jediné ozdoby.",
+  "quip_wrong": "Šedý kov i tvrdá ruda by seděly taky, jenže Švédům šlo o váhu. Horský oheň zní krásně, ale spíš jako jméno pro pálenku.",
+  "explanation": "Český název wolfram pochází z němčiny a podle tradice znamenal „vlčí pěna“, protože ruda s ním při tavení cínu „požírala“ kov jako vlk.",
+  "about": "wolframu",
+  "more_fact": "Wolfram má ze všech kovů nejvyšší bod tání, přes 3 400 °C, a proto se z něj desítky let vyráběla svítící vlákna klasických žárovek.",
+  "irony_prompt": "An enormous grey stone fills the frame, sitting on a small wooden sledge, while a tall blond man in a knitted Nordic sweater strains to pull it through the snow, red-faced, his hat flying off. Smaller and subordinate: a moose watching with its head tilted, a glowing old-fashioned light bulb hanging from a pine branch, a cup of coffee steaming on a rock. MOOD: cheerful, comic, crisp winter."
+ },
+ {
+  "id": "se-s-vesnice-prvku",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Která švédská vesnice nedaleko Stockholmu dala jméno hned čtyřem chemickým prvkům?",
+  "answer": "Ytterby",
+  "distractors": [
+   "Falun",
+   "Kiruna",
+   "Sigtuna"
+  ],
+  "quip_correct": "Jeden lom a z vesnice se stala stálice učebnic chemie. Většina obcí se musí spokojit s vlastní poutí.",
+  "quip_wrong": "Falun proslul mědí, Kiruna železnou rudou a Sigtuna vikingy – do periodické tabulky se ale dostala nenápadná osada u moře.",
+  "explanation": "Ytrium, terbium, erbium a yterbium se podařilo vydělit z nerostů z místního lomu, kde se jinak těžil živec pro výrobu porcelánu.",
+  "about": "Ytterby",
+  "more_fact": "Z nerostů téhož lomu vzešly i další prvky: holmium nese latinské jméno Stockholmu a thulium odkazuje k Thule, bájné nejsevernější zemi světa.",
+  "irony_prompt": "A small red wooden Swedish cottage fills the frame, with a bundle of glowing glass flasks sprouting from its chimney like smoke, each fizzing in a different colour, while a proud villager on the porch polishes a shiny beaker like a trophy. Smaller and subordinate: a tiny quarry with a pickaxe leaning on a rock, a curious hen, a scientist in a white coat peeking over the fence. MOOD: cheerful, whimsical, summer light."
+ },
+ {
+  "id": "se-s-korist-z-prahy",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který obří středověký rukopis odvezla švédská vojska z Prahy roku 1648, takže je dnes k vidění ve švédské Národní knihovně?",
+  "answer": "Ďáblova bible (Codex gigas)",
+  "distractors": [
+   "Vyšehradský kodex",
+   "Velislavova bible",
+   "Pasionál abatyše Kunhuty"
+  ],
+  "quip_correct": "Válečná kořist, kterou nešlo jen tak strčit do kapsy – váží kolem 75 kilogramů. Na odnos byla potřeba skoro celá četa.",
+  "quip_wrong": "Vyšehradský kodex, Velislavova bible i Pasionál zůstaly v Praze, i když by se jistě hodily taky. Švédové si vybrali největší kus – s čertem uvnitř.",
+  "explanation": "Rukopis vznikl na začátku 13. století v benediktinském klášteře v Podlažicích u Chrudimi a na jedné z jeho stránek je vyobrazen čert vysoký skoro půl metru.",
+  "about": "Ďáblově bibli",
+  "more_fact": "Legenda tvrdí, že ho mnich napsal za jedinou noc s pomocí ďábla. Rozbory písma přitom ukazují jedinou ruku, která na něm pracovala spíš dvacet let.",
+  "irony_prompt": "A colossal closed leather-bound medieval tome fills the frame, so heavy that a team of Swedish soldiers in 17th-century hats strain to carry it on poles like a sedan chair, while a small red devil with a pointed tail peeks cheekily out from between the shut covers and waves goodbye. Smaller and subordinate: Prague's spires fading behind them, a donkey refusing to help, a horse-drawn cart already sagging. MOOD: comic, adventurous, cheerful."
+ },
+ {
+  "id": "se-s-stary-klon-fulufjallet",
+  "cc": "se",
+  "country": "Švédsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaký strom je Old Tjikko ve švédském pohoří Fulufjället, jehož kořenový systém je podle měření starý přes 9 500 let?",
+  "answer": "Smrk ztepilý",
+  "distractors": [
+   "Borovice lesní",
+   "Bříza bělokorá",
+   "Jalovec obecný"
+  ],
+  "quip_correct": "Kmen vypadá na pár století, kořeny pamatují konec doby ledové. Učebnicový případ, kdy se nesoudí podle obalu.",
+  "quip_wrong": "Borovice i jalovec umějí žít dlouho a bříza je na severu všude, ale tady se pořád obnovuje tentýž jehličnan – ten, který v Česku zná každý z vánočních trhů.",
+  "explanation": "Nadzemní kmeny stromu žijí jen několik set let; když jeden odumře, vyroste z téhož kořene nový, a strom se tak obnovuje pořád dokola.",
+  "about": "stromu Old Tjikko",
+  "more_fact": "Jméno Old Tjikko dal stromu geograf Leif Kullman, který ho roku 2004 objevil, a to po svém zesnulém psovi; stáří určil radiokarbonovým rozborem zbytků dřeva pod stromem.",
+  "irony_prompt": "A small scraggly spruce tree fills the frame on a bare windswept mountain plateau, wearing tiny reading glasses and a knitted shawl, while beneath the ground a huge ancient root system spreads out like a grandfather's long beard. Smaller and subordinate: a woolly mammoth passing in the far misty background, a reindeer bowing respectfully, a birthday cake with far too many candles. MOOD: whimsical, warm, cheerful."
  }
 ]

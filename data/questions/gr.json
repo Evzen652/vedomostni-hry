@@ -1208,5 +1208,93 @@
   "image_prompt": "Fotorealistický snímek tradičního řeckého salátu horiatiki s rajčaty, okurkou, olivami a kouskem fety na talíři v taverně, 16:9",
   "about": "řeckém salátu horiatiki",
   "irony_prompt": "A colorful bowl of chunky tomatoes, cucumber, olives and a thick slab of feta fills the frame, a single wilted lettuce leaf comically tossed out and discarded on the table beside it. Smaller and subordinate: a drizzle of olive oil; a sprinkle of oregano; a delighted child pushing the lettuce further away. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "gr-s-souhlas-po-recku",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co znamená řecké slovo „ne“ (psáno ναι), které v Řecku spolehlivě mate české turisty?",
+  "answer": "Ano",
+  "distractors": [
+   "Ne",
+   "Možná",
+   "Děkuji"
+  ],
+  "quip_correct": "Čech řekne „ne“ a Řek slyší souhlas. Takhle se na dovolené omylem objednává třetí porce baklavy.",
+  "quip_wrong": "Kdyby to bylo tak prosté, nebylo by o čem mluvit. Řecké „ne“ je ta nejpozitivnější odpověď, jakou můžeš dostat – odmítnutí zní úplně jinak.",
+  "explanation": "Zápor se řekne „óchi“ a často ho doprovází pohyb hlavy nahoru se zvednutým obočím, který cizinci snadno přečtou jako kývnutí.",
+  "about": "řeckém slově ne",
+  "more_fact": "Slovo „óchi“ má v Řecku i vlastní státní svátek: 28. října se připomíná, jak premiér Metaxas roku 1940 odmítl Mussoliniho ultimátum vpustit do země italská vojska.",
+  "irony_prompt": "A beaming Greek waiter on a seaside terrace fills the frame, cheerfully nodding and piling a mountain of honey-drenched layered pastry onto a table in front of a panicked tourist who keeps shaking his head and waving his hands. Smaller and subordinate: a cat licking honey from a plate, blue-and-white chairs, a whitewashed wall covered in bougainvillea. MOOD: comic, sunny, warm."
+ },
+ {
+  "id": "gr-s-nalez-z-vraku-1901",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co v roce 1901 vylovili lovci mořských hub z antického vraku u ostrova Antikythéra, a vědci to pochopili až o desítky let později?",
+  "answer": "Starověký astronomický počítací stroj",
+  "distractors": [
+   "Nejstarší známý zámek na klíč",
+   "Bronzovou hudební skříňku",
+   "Navigační kompas s magnetkou"
+  ],
+  "quip_correct": "Staří Řekové sestrojili z ozubených koleček analogový počítač a pak ho nechali dva tisíce let ležet na dně moře. Zálohování dat nic moc.",
+  "quip_wrong": "Zámek, hudební skříňka i kompas by byly pěkné nálezy, ale nikdo by o nich nepsal vědecké práce ještě sto let po vylovení. Tenhle kus bronzu počítal nebe.",
+  "explanation": "Přístroj s desítkami bronzových ozubených kol předpovídal zatmění Slunce a Měsíce, polohy planet i termíny olympijských her.",
+  "about": "mechanismu z Antikythéry",
+  "more_fact": "Stejný vrak vydal i bronzovou sochu mladíka z Antikythéry, dnes chloubu athénského Národního archeologického muzea. Srovnatelně složité ozubené mechanismy se v Evropě objevily až se středověkými orloji.",
+  "irony_prompt": "A corroded green bronze box packed with intricate interlocking plain smooth gear wheels fills the frame, sitting on the sandy sea floor and projecting a tiny glowing sun, moon and planets above itself like a planetarium, while a bewildered octopus studies it through reading glasses. Smaller and subordinate: a sponge diver in an old brass helmet waving from above, a curious school of fish, an amphora half-buried in sand. MOOD: wondrous, playful, underwater."
+ },
+ {
+  "id": "gr-s-divoka-koza",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se jmenuje divoká koza se zahnutými rohy, která žije volně jen na největším řeckém ostrově a několika ostrůvcích kolem něj?",
+  "answer": "Kri-kri",
+  "distractors": [
+   "Kamzík",
+   "Muflon",
+   "Markhur"
+  ],
+  "quip_correct": "Skáče po skalách soutěsky, kterou turisté sestupují celý den s puchýři na patách. Pro ni je to ranní procházka před snídaní.",
+  "quip_wrong": "Kamzík žije v horách na pevnině, muflon se prohání po Kypru a markhur po Himálaji. Ostrovní horolezkyně je místní a jinde ji nepotkáš.",
+  "explanation": "Nejspíš jde o potomka koz, které na ostrov přivezli už minojští osadníci; zdivočela natolik, že se dnes chrání jako vzácný poddruh.",
+  "about": "kozách kri-kri",
+  "more_fact": "Kozy kri-kri šplhají po téměř svislých skalách a nejvíc jich žije v soutěsce Samaria a v Bílých horách. Ochránci přírody je v minulosti přesunuli i na ostrůvek Dia jako záložní populaci.",
+  "irony_prompt": "A proud wild goat with long, backward-curving ridged horns fills the frame, balancing effortlessly on the tip of a near-vertical limestone pinnacle above a deep gorge and casually munching a sprig of wild thyme, while exhausted hikers far below look up in disbelief. Smaller and subordinate: a kestrel hovering beside the goat, a lone cypress clinging to the rock, a tiny goat kid copying the pose. MOOD: triumphant, sunny, comic."
+ },
+ {
+  "id": "gr-s-tradicni-bile-vino",
+  "cc": "gr",
+  "country": "Řecko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je ochucené tradiční řecké bílé víno retsina, které cizinci buď milují, nebo nesnesou?",
+  "answer": "Pryskyřicí z borovice",
+  "distractors": [
+   "Anýzovým semínkem",
+   "Tymiánovým medem",
+   "Pomerančovou kůrou"
+  ],
+  "quip_correct": "Víno s vůní lesa, ve kterém právě někdo natíral plot. Řekové ho pijí dva tisíce let a cizincům tvrdí, že si zvyknou.",
+  "quip_wrong": "Anýz patří do ouza, tymiánový med do dezertů a pomerančová kůra do vánočního pečiva. Retsina voní spíš jako rozehřátý jehličnatý les.",
+  "explanation": "Zvyk pochází ze starověku, kdy se amfory těsnily pryskyřicí, aby víno nezkyslo; ta mu dala chuť, na kterou si Řekové zvykli natolik, že ji přidávají dodnes.",
+  "about": "retsině",
+  "more_fact": "Retsina se vyrábí hlavně z odrůdy savatiano v Attice a v EU má chráněné tradiční označení. Pije se vychlazená z malých sklenic, nejlépe k smaženým rybkám, olivám a venkovskému salátu.",
+  "irony_prompt": "A round-bellied copper jug of pale golden wine fills the frame, with a small pine tree growing cheerfully straight out of its spout and dripping amber resin into a round glass tumbler below, while a Greek grandfather sniffs it with deep contentment. Smaller and subordinate: a plate of small crispy fried fish, a bowl of round black olives, a cat eyeing the fish. MOOD: sunny, comic, convivial."
  }
 ]

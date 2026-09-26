@@ -1138,5 +1138,93 @@
   "image_prompt": "Fotorealistický snímek kvetoucího stromu ceibo s jasně červenými květy u argentinské řeky, 16:9",
   "about": "ceibu, argentinském národním stromu a květině",
   "irony_prompt": "A leafy tree covered in bright crimson flowers shaped like little curved beaks fills the frame, standing by a river bank. Smaller and subordinate: a hummingbird sipping from one of the red flowers; fallen red petals floating on the water; a child sitting in the shade. MOOD: vivid, warm, sunny."
+ },
+ {
+  "id": "ar-s-vyslovnost-porteno",
+  "cc": "ar",
+  "country": "Argentina",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak obyvatelé Buenos Aires vyslovují „ll“ a „y“ ve slovech jako „calle“ (ulice) nebo „yo“ (já)?",
+  "answer": "Jako „š“ nebo „ž“",
+  "distractors": [
+   "Jako měkké „ľ“",
+   "Jako české „j“",
+   "Jako „ch“"
+  ],
+  "quip_correct": "Trefa. Porteño řekne „kaše“ tam, kde zbytek hispánského světa řekne „kaje“ – a ještě se tváří, že divní jsou ti ostatní.",
+  "quip_wrong": "České „j“ by prošlo v Madridu nebo v Mexiku a měkké „ľ“ u dědečků v Andách, jenže Buenos Aires si tu hlásku přeladilo na šumění.",
+  "explanation": "Jazykovědci tomu říkají šeísmo; mladší generace během 20. století posunula původní znělé „ž“ ještě dál k neznělému „š“.",
+  "about": "výslovnosti v Buenos Aires",
+  "more_fact": "Za zpěvnou melodií rioplatské španělštiny stojí italští přistěhovalci – fonetici zjistili, že intonace porteños se nápadně podobá neapolštině, a ne španělštině ze Španělska.",
+  "irony_prompt": "A cheerful tango dancer in a red dress fills the frame on a Buenos Aires street, lips pursed as if hushing a whole theatre, and a soft swirl of wind from her mouth sweeps the hat off a startled passer-by. Smaller and subordinate: a street cat covering its ears, a laughing bandoneon player, colourful La Boca house fronts with plain unmarked walls. MOOD: playful, sunny, cheeky."
+ },
+ {
+  "id": "ar-s-vysokohorska-trat-salta",
+  "cc": "ar",
+  "country": "Argentina",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se přezdívá železnici ze Salty, jejíž vlaky vystoupají až do výšky přes 4 200 metrů nad mořem?",
+  "answer": "Vlak do oblak (Tren a las Nubes)",
+  "distractors": [
+   "Andský expres (Expreso Andino)",
+   "Kondorova dráha (Camino del Cóndor)",
+   "Stříbrná šipka (Flecha de Plata)"
+  ],
+  "quip_correct": "Sedí. Kdo nemá rád výšky, zůstane v Salte a zamává – vlak si ty mraky projede i bez něj.",
+  "quip_wrong": "Kondor by tam nahoře byl doma a expres zní vznešeně, jenže tahle trať si prostě zabrala celé nebe.",
+  "explanation": "Nejvyšším bodem cesty je ocelový viadukt La Polvorilla ve výšce asi 4 220 metrů, kde vlak zastaví a vydá se zpátky.",
+  "about": "Vlaku do oblak",
+  "more_fact": "Trať projektoval americký inženýr Richard Maury a stavba se s přestávkami táhla přes čtvrt století; místo tunelů si koleje pomáhají smyčkami a úvratěmi, kde vlak couvá.",
+  "irony_prompt": "A small red train fills the frame, chugging along a spindly steel viaduct so high above an Andean valley that fluffy white clouds drift straight through its open windows, one passenger politely shaking a cloud off his sleeve like a wet umbrella. Smaller and subordinate: a llama staring up from far below, a condor overtaking the train, a steward pouring hot tea. MOOD: airy, cheerful, dizzy fun."
+ },
+ {
+  "id": "ar-s-policejni-urednik-z-la-platy",
+  "cc": "ar",
+  "country": "Argentina",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se koncem 19. století proslavil policejní úředník Juan Vucetich z argentinské La Platy?",
+  "answer": "Zavedl identifikaci zločinců podle otisků prstů",
+  "distractors": [
+   "Zavedl první policejní fotografie zatčených",
+   "Založil první policejní jednotku se psy",
+   "Sestrojil první detektor lži pro výslechy"
+  ],
+  "quip_correct": "Přesně tak. V Argentině začali zločinci poprvé prohrávat kvůli vlastním bříškům prstů.",
+  "quip_wrong": "Fotky, psi i detektor lži přišli na scénu jinými dveřmi – Vucetichovi stačil inkoust a trocha trpělivosti.",
+  "explanation": "Roku 1892 jeho metoda poprvé v dějinách usvědčila vraha: krvavý otisk palce na dveřním rámu prozradil Francisku Rojasovou z Necocheje.",
+  "about": "Juanu Vucetichovi",
+  "more_fact": "Juan Vucetich se narodil jako Ivan Vučetić na dalmatském ostrově Hvar a do Argentiny se vystěhoval až jako mladý muž; jeho systém převzala policie po celé Latinské Americe.",
+  "irony_prompt": "A giant inked thumbprint fills the frame, pressed proudly onto a plain blank card like a royal seal, with a tiny moustached 1890s detective in a bowler hat peering at its swirling ridges through an oversized magnifying glass. Smaller and subordinate: a sheepish thief hiding his hands behind his back, an ink pad, a curious police dog. MOOD: playful, clever, cosy."
+ },
+ {
+  "id": "ar-s-snimek-el-apostol",
+  "cc": "ar",
+  "country": "Argentina",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se do dějin kinematografie zapsal argentinský snímek El Apóstol z roku 1917?",
+  "answer": "Byl to první celovečerní animovaný film na světě",
+  "distractors": [
+   "Byl to první barevný film Latinské Ameriky",
+   "Byl to první zvukový film v Jižní Americe",
+   "Byl to první film oceněný na festivalu v Cannes"
+  ],
+  "quip_correct": "Správně. Celý svět si myslí, že to začalo Sněhurkou – a Argentina se jen tiše usmívá nad dvacetiletým náskokem.",
+  "quip_wrong": "Barva, zvuk ani Cannes v roce 1917 nehrozily – tady šlo o tisíce ručně vystříhaných a nafocených políček.",
+  "explanation": "Film zesměšňoval tehdejšího argentinského prezidenta Hipólita Yrigoyena a animátor Quirino Cristiani ho rozpohyboval z vystříhaných papírových figurek.",
+  "about": "filmu El Apóstol",
+  "more_fact": "Z filmu se nezachovalo ani jediné políčko – poslední kopie shořela roku 1926 při požáru ve studiu producenta Federica Valleho, takže ho dnes známe jen z dobových popisů.",
+  "irony_prompt": "A lanky paper-cutout politician puppet fills the frame, dangling from strings and flailing theatrically, while giant hands with scissors snip at his coat tails in mid-gesture. Smaller and subordinate: a vintage hand-cranked film camera, paper scraps drifting like confetti, a proud little animator in a waistcoat. MOOD: playful, mischievous, handmade charm."
  }
 ]

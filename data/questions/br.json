@@ -918,5 +918,93 @@
   "more_fact": "Kávovník do Brazílie na počátku 18. století propašoval důstojník Francisco de Melo Palheta. Podle legendy mu sazenice tajně věnovala manželka francouzského guvernéra, protože jejich vývoz byl přísně zakázaný.",
   "about": "brazilské kávě",
   "irony_prompt": "An enormous steaming ceramic coffee cup fills the frame sitting on sun-baked red earth in the middle of a coffee plantation, dark coffee brimming right at its rim. Smaller and subordinate: neat rows of glossy-leafed coffee bushes stretching into misty hills behind it; a handful of ripe red coffee cherries scattered on the ground; a small tin scoop leaning against the cup's base. MOOD: warm, energizing, homely."
+ },
+ {
+  "id": "br-s-kralovsky-dvur-v-exilu",
+  "cc": "br",
+  "country": "Brazílie",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se Rio de Janeiro stalo v letech 1808–1821, když do něj před Napoleonem uprchl celý lisabonský královský dvůr?",
+  "answer": "Sídlem vlády celé portugalské říše",
+  "distractors": [
+   "Sídlem španělského místokrále pro Ameriku",
+   "Svobodným přístavem pod britskou správou",
+   "Hlavním městem brazilské republiky"
+  ],
+  "quip_correct": "Správně. Jediný případ, kdy kolonie hostila vlastní metropoli – a ta se z tropů zpátky do Evropy vůbec nehrnula.",
+  "quip_wrong": "Španělé, Britové ani republikáni tu tehdy nevládli – z Ria se velelo celému impériu až po Makao.",
+  "explanation": "Dvůr připlul s tisíci šlechticů a úředníků a roku 1815 povýšil Brazílii na království rovnocenné Portugalsku.",
+  "about": "portugalském dvoře v Riu",
+  "more_fact": "Když se král Jan VI. vrátil do Evropy, nechal v Riu syna Petra – a ten roku 1822 vyhlásil nezávislost Brazílie a stal se jejím prvním císařem.",
+  "irony_prompt": "An elegant European royal carriage stacked sky-high with trunks, framed paintings and powdered wigs fills the frame, rolling off a sailing ship onto a sunny tropical beach, where startled bewigged courtiers sweat in velvet coats among palm trees. Smaller and subordinate: a toucan stealing a wig, a monkey trying on a crown, Sugarloaf Mountain rising in the background. MOOD: comic, sunny, colourful."
+ },
+ {
+  "id": "br-s-puvod-jmena-zeme",
+  "cc": "br",
+  "country": "Brazílie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Podle čeho dostala Brazílie své jméno?",
+  "answer": "Po stromu, z jehož dřeva se dělalo červené barvivo",
+  "distractors": [
+   "Po domorodém slově pro nekonečný prales",
+   "Po jménu prvního portugalského guvernéra",
+   "Po řece, kterou Portugalci objevili jako první"
+  ],
+  "quip_correct": "Ano. Země velká jako kontinent nese jméno po zboží, které z ní vyváželi – obchodní logika, kterou ocení každý účetní.",
+  "quip_wrong": "Prales, guvernér i řeka zní vznešeně, jenže Brazílie dostala jméno po kmeni, který šel pod sekeru.",
+  "explanation": "Strom pau-brasil dostal jméno podle žhavě rudého dřeva (brasa znamená žhavé uhlí) a Evropa z něj vařila drahé barvivo na látky.",
+  "about": "původu jména Brazílie",
+  "more_fact": "Ze dřeva pau-brasil se dodnes vyrábějí nejlepší smyčce pro housle a violoncella; strom je ale po staletích těžby ohrožený a jeho obchod je přísně hlídaný.",
+  "irony_prompt": "A mighty tropical tree fills the frame, its trunk sawn open to reveal glowing ember-red wood, while a bewildered Portuguese sailor holds up a dripping crimson-dyed shirt and grins proudly. Smaller and subordinate: a violin bow tucked behind his ear, a parrot splashed pink, a sailing ship waiting in the bay. MOOD: bright, playful, adventurous."
+ },
+ {
+  "id": "br-s-jev-v-usti-amazonky",
+  "cc": "br",
+  "country": "Brazílie",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co je pororoca, kvůli které se do ústí Amazonky sjíždějí surfaři z celého světa?",
+  "answer": "Přílivová vlna valící se proti proudu řeky",
+  "distractors": [
+   "Sezónní povodeň, která zaplaví prales",
+   "Vír na soutoku dvou různobarevných řek",
+   "Obří vlna po sesuvu říčního břehu"
+  ],
+  "quip_correct": "Sedí. Jediná vlna, na které se dá surfovat půl hodiny v kuse – a navíc do vnitrozemí, kam oceán normálně nesmí.",
+  "quip_wrong": "Povodně, víry i sesuvy Amazonie zná, ale surfaři jezdí za vlnou, kterou oceán proti řece žene sám.",
+  "explanation": "Vzniká hlavně při silných přílivech kolem novu a úplňku, může být vysoká i několik metrů a proti proudu se valí desítky kilometrů.",
+  "about": "pororoce",
+  "more_fact": "Jméno pochází z jazyka tupí a volně znamená „velký rachot“ – vlnu je prý slyšet dlouhé minuty předtím, než se objeví za zákrutem řeky.",
+  "irony_prompt": "A tall brown river wave fills the frame, rolling the wrong way up a jungle river as a jubilant surfer rides it past startled monkeys and a toppling canoe. Smaller and subordinate: a sloth clinging to a branch with wide eyes, a pink river dolphin leaping beside the board, a fisherman clutching his hat. MOOD: wild, joyful, splashy."
+ },
+ {
+  "id": "br-s-pobrezni-pisecna-pustina",
+  "cc": "br",
+  "country": "Brazílie",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím jsou zvláštní Lençóis Maranhenses na severovýchodě Brazílie?",
+  "answer": "Mezi bílými dunami se po deštích tvoří modré laguny",
+  "distractors": [
+   "Z bílých skal tam vytékají teplé minerální prameny",
+   "Na útesech tam hnízdí největší kolonie plameňáků",
+   "Z mořského dna tam vystupují sopečné ostrůvky"
+  ],
+  "quip_correct": "Správně. Poušť, ve které se dá plavat – Brazílie prostě nesnese krajinu bez koupání.",
+  "quip_wrong": "Prameny, plameňáci ani sopky tu nejsou hlavní atrakcí – tahle „poušť“ má místo jedné oázy tisíce jezírek.",
+  "explanation": "Nejde o skutečnou poušť: ročně tu naprší přes metr srážek, jen voda v písku rychle mizí a laguny se ke konci roku zase ztrácejí.",
+  "about": "Lençóis Maranhenses",
+  "more_fact": "V lagunách žijí i ryby, přestože jezírka každý rok vyschnou – některé druhy přečkají sucho zahrabané v bahně a jikry jiných sem podle vědců zanášejí ptáci.",
+  "irony_prompt": "A sea of rolling snow-white sand dunes fills the frame, dotted with brilliant turquoise lagoons, and a camel wearing a rubber swim ring floats blissfully in one of them. Smaller and subordinate: a confused cactus holding a beach umbrella, a little fish jumping, a sunhat drifting on the water. MOOD: dreamy, sunny, playful."
  }
 ]

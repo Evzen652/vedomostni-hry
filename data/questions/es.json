@@ -1491,5 +1491,93 @@
   "image_prompt": "Fotorealistický snímek hudebníka hrajícího na akustickou kytaru během flamencového vystoupení ve Španělsku, 16:9",
   "about": "flamencové kytaře",
   "irony_prompt": "A classical guitar fills the frame leaning against a sunny whitewashed wall, its strings still vibrating from a final passionate chord. Smaller and subordinate: a delighted child clapping along nearby; a flamenco dancer's shadow cast on the wall; a potted geranium on the windowsill. MOOD: cheerful, passionate, sunny."
+ },
+ {
+  "id": "es-s-domluva-pres-rokle",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se tradičně domlouvají obyvatelé kanárského ostrova La Gomera přes hluboké rokle na vzdálenost několika kilometrů?",
+  "answer": "Hvízdanou řečí",
+  "distractors": [
+   "Kouřovými signály",
+   "Údery do bubnů",
+   "Záblesky zrcátek"
+  ],
+  "quip_correct": "Mobilní signál tam léta nebyl, ale pastýři ho vůbec nepotřebovali. Stačily jim prsty v puse a trpělivé ucho.",
+  "quip_wrong": "Kouř by rozfoukal atlantský vítr, bubny by spolkla ozvěna a zrcátka nesvítí v mlze. Přes údolí nejlépe doletí pořádné písknutí.",
+  "explanation": "Jmenuje se silbo gomero, převádí španělštinu do hvízdaných tónů a od roku 1999 se povinně učí na tamních základních školách.",
+  "about": "silbu gomero",
+  "more_fact": "Hvízdaná řeč rozlišuje jen dvě samohlásky a čtyři souhlásky, zbytek si posluchač domyslí z kontextu. UNESCO ji v roce 2009 zapsalo na seznam nehmotného kulturního dědictví lidstva.",
+  "irony_prompt": "A cheerful goat herder standing on the edge of a deep green ravine fills the frame, cheeks puffed and two fingers in the mouth, whistling so powerfully that the sound travels across the gorge as a visible swirling golden ribbon to a surprised neighbour on the opposite cliff. Smaller and subordinate: a goat covering its ears, a hawk surfing the golden ribbon, terraced fields dotted with palms. MOOD: playful, sunny, lively."
+ },
+ {
+  "id": "es-s-pokus-o-prevrat-1981",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kdo v noci na 24. února 1981 zastavil pokus o vojenský převrat, když se v televizním projevu v uniformě postavil za demokratickou ústavu?",
+  "answer": "Král Juan Carlos I.",
+  "distractors": [
+   "Premiér Adolfo Suárez",
+   "Socialista Felipe González",
+   "Předseda sněmovny Lavilla"
+  ],
+  "quip_correct": "Muž, kterého do čela státu vybral Franco, zachránil demokracii v přímém přenosu. Diktátor by se v hrobě obrátil – kdyby tam měl televizi.",
+  "quip_wrong": "Suárez i González seděli ve sněmovně jako rukojmí a Lavilla řídil schůzi, do které vtrhli ozbrojenci. Promluvit k národu z obrazovky mohl jen ten, koho armáda poslouchala.",
+  "explanation": "Podplukovník Tejero předtím s gardisty obsadil sněmovnu a střílel do stropu; projev přišel až po jedné v noci a puč se do rána rozpadl.",
+  "about": "pokusu o převrat v roce 1981",
+  "more_fact": "Díry po kulkách ve stropě sněmovny se nikdy nezaplnily a zůstaly tam jako připomínka. Španělé událost dodnes zkracují podle data jako 23-F a záběry z přímého přenosu zná prakticky každý.",
+  "irony_prompt": "A jolly golden royal crown fills the frame, perched on an old wooden microphone stand and gently shushing a line of toy soldiers with oversized helmets who are marching away sheepishly. Smaller and subordinate: a few plaster crumbs falling from a ceiling dotted with small holes, a sleepy cat on a red velvet chair, a vase of red carnations. MOOD: comic, reassuring, warm."
+ },
+ {
+  "id": "es-s-reka-v-andalusii",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč vědci z NASA opakovaně zkoumají řeku Río Tinto v Andalusii?",
+  "answer": "Její kyselá rudá voda připomíná Mars",
+  "distractors": [
+   "Každou noc v ní světélkují řasy",
+   "Je slanější než Mrtvé moře",
+   "Na jejím dně leží úlomky meteoritu"
+  ],
+  "quip_correct": "Tisíce let dolování udělaly z andaluské řeky kus jiné planety. Španělsko má vlastní Mars a nemuselo kvůli tomu nic vystřelit do vesmíru.",
+  "quip_wrong": "Světélkující řasy patří k jiným mořím, slanější než Mrtvé moře tu není nic a meteority padají jinde. NASA sem jezdí trénovat na planetu, kam zatím nikdo nedojel.",
+  "explanation": "Voda má pH kolem dvou a barví ji rozpuštěné železo z okolních ložisek, přesto v ní žijí mikroorganismy, které se bez kyslíku živí kovy.",
+  "about": "řece Río Tinto",
+  "more_fact": "Doly v okolí koupila roku 1873 britská společnost Rio Tinto, dnes jeden z největších těžařů světa. Její zaměstnanci pak v roce 1889 založili Recreativo Huelva, nejstarší fotbalový klub ve Španělsku.",
+  "irony_prompt": "A winding river of bright rust-red and orange water fills the frame, snaking through ochre hills, while a small astronaut in a plain white suit with no patches, no badge, no emblem kneels at the water's edge filling a test tube and waving happily as if on holiday on another planet. Smaller and subordinate: a puzzled goat watching, a tiny toy rover rolling over pebbles, a pale crescent moon in the afternoon sky. MOOD: whimsical, sunny, adventurous."
+ },
+ {
+  "id": "es-s-katalansky-betlem",
+  "cc": "es",
+  "country": "Španělsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaká nečekaná figurka se v Katalánsku tradičně schovává v každém pořádném vánočním betlému?",
+  "answer": "Pán na bobku, co si právě ulevuje",
+  "distractors": [
+   "Čert s pytlem uhlí na zádech",
+   "Tančící kostlivec s kytarou",
+   "Mnich popíjející z demižonu"
+  ],
+  "quip_correct": "Narození Spasitele a vedle v křoví soused se staženými kalhotami. Katalánci tomu říkají rovnováha vesmíru a kupují si ho i v podobě fotbalistů a politiků.",
+  "quip_wrong": "Čert, kostlivec i mnich s vínem by se ještě daly obhájit jako lidová tradice. Tady jde o figurku, kterou do betléma nikdo jiný na světě nedá.",
+  "explanation": "Figurka se jmenuje caganer a má zajišťovat úrodu, protože vrací zemi hnojivo; hledat ji v betlému je oblíbená hra dětí.",
+  "about": "katalánském caganerovi",
+  "more_fact": "Katalánské děti mají o Vánocích ještě jednoho oblíbence: poleno Tió de Nadal s namalovaným obličejem, které se krmí a pak se do něj tluče holí, aby „vykadilo“ dárky.",
+  "irony_prompt": "A traditional miniature nativity scene fills the frame, with the holy family, the ox and the donkey all glancing sideways in shared embarrassment at a tiny peasant figure in a red cap crouching behind a moss bush, trousers politely lowered and only his round bare bottom showing, looking utterly unbothered. Smaller and subordinate: a shepherd covering a lamb's eyes, a candle flame shaking with laughter, a wooden log with a painted smiling face and a red cap. MOOD: cheeky, festive, warm."
  }
 ]

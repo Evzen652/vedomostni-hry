@@ -1806,5 +1806,93 @@
   "image_prompt": "Fotorealistický snímek skupiny lidí hrajících bocce s kovovými koulemi v italském parku za slunečného odpoledne, 16:9",
   "about": "italské hře bocce",
   "irony_prompt": "A large metal bocce ball rolls dramatically across a sandy court, filling the frame as it curves in to nudge a tiny white target ball, with a cluster of other balls already scattered nearby from earlier throws. Smaller and subordinate: a park bench with onlookers; a shady tree overhead; a dog watching intently. MOOD: relaxed, sunny, kid-friendly."
+ },
+ {
+  "id": "it-s-financni-slovo",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Z jaké italské fráze pochází slovo bankrot, které dnes zná skoro celá Evropa?",
+  "answer": "Z výrazu pro rozlomenou lavici",
+  "distractors": [
+   "Z výrazu pro prázdnou pokladnu",
+   "Z výrazu pro potopenou loď",
+   "Z výrazu pro ztracenou minci"
+  ],
+  "quip_correct": "Finanční krach s truhlářskou tečkou. Kdo nesplácel, přišel i o nábytek.",
+  "quip_wrong": "Loď, pokladna i ztracená mince by k penězům seděly, jenže Italové trestali dlužníky tesařsky — rozbitým sezením.",
+  "explanation": "Italsky banca rotta. Středověcí směnárníci a bankéři obchodovali na lavicích a tomu, kdo nedostál závazkům, prý lavici veřejně rozbili.",
+  "about": "slově bankrot",
+  "more_fact": "Z italštiny pochází i další bankovní slovník: konto, saldo, netto, brutto i giro. Podvojné účetnictví poprvé tiskem popsal františkán Luca Pacioli roku 1494 v Benátkách.",
+  "irony_prompt": "A splintered wooden bench snapped clean in two fills the frame in a sunlit Renaissance piazza, and a sheepish moneylender in a velvet cap sits on the broken half with his coin purse turned inside out. Smaller and subordinate: a carpenter shaking his head with a saw, pigeons pecking at scattered coins, a smug rival moneylender polishing his own sturdy bench. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "it-s-sopka-na-ostrove",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč se sopce Stromboli u Sicílie přezdívá „maják Středomoří“?",
+  "answer": "Soptí téměř nepřetržitě už tisíce let",
+  "distractors": [
+   "Na vrcholu stojí nejstarší maják Evropy",
+   "Její svahy v noci světélkují řasami",
+   "Je vidět až z pobřeží Afriky"
+  ],
+  "quip_correct": "Nejspolehlivější osvětlení Tyrhénského moře a za elektřinu nikdo neplatí. Italská energetika by mohla závidět.",
+  "quip_wrong": "Žádný kamenný maják, žádné svítící řasy a Afrika je daleko. Stromboli si svítí sama, ohněm z vlastního hrdla.",
+  "explanation": "Menší výbuchy přicházejí každých pár minut až desítek minut a žhavé cákance jsou v noci vidět daleko z moře. Podle ní se tomuto typu činnosti říká strombolská erupce.",
+  "about": "sopce Stromboli",
+  "more_fact": "Na úpatí sopky žije jen pár stovek stálých obyvatel ve dvou vesnicích. Roku 1950 tu Roberto Rossellini natočil film Stromboli s Ingrid Bergmanovou.",
+  "irony_prompt": "A cone-shaped volcanic island rising from a dark night sea fills the frame, its summit puffing cheerful bursts of glowing sparks, while tiny fishing boats use its glow to steer safely home. Smaller and subordinate: a real lighthouse on a distant cape looking dim and jealous, a fisherman waving a lantern in thanks, dolphins leaping in the red glow. MOOD: cheerful, playful, warm night."
+ },
+ {
+  "id": "it-s-nestastne-cislo",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které číslo považují pověrčiví Italové za nešťastné, zatímco nad třináctkou jen mávnou rukou?",
+  "answer": "Sedmnáct",
+  "distractors": [
+   "Jedenáct",
+   "Devět",
+   "Dvanáct"
+  ],
+  "quip_correct": "Stačí přeskládat pár římských číslic a z čísla je náhrobek. Italská pověrčivost má klasické vzdělání.",
+  "quip_wrong": "Jedenáctka, devítka i tucet jsou Italům ukradené. Strach nahání číslo, které se v římském zápisu umí přeskládat v hrob.",
+  "explanation": "Římské XVII se dá přeskládat na VIXI, latinsky „žil jsem“, tedy „už jsem po smrti“. Třináctka naopak Italům často nosí štěstí.",
+  "about": "italských pověrách",
+  "more_fact": "Kvůli pověře prodával Renault svůj model R17 v Itálii jako R177 a letadla Alitalie neměla v kabině sedmnáctou řadu sedadel.",
+  "irony_prompt": "A nervous Italian grandmother in a floral apron fills the frame, clutching a red horn-shaped good-luck charm and eyeing a big birthday cake crowded with candles, while a black cat on the table receives a friendly scratch from her other hand. Smaller and subordinate: a grinning teenage grandson holding a match, a lemon tree in the courtyard, a pigeon peeking through the window. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "it-s-mesto-houslaru",
+  "cc": "it",
+  "country": "Itálie",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Ve kterém lombardském městě vyráběl Antonio Stradivari své slavné housle?",
+  "answer": "Cremona",
+  "distractors": [
+   "Mantova",
+   "Pavia",
+   "Bergamo"
+  ],
+  "quip_correct": "Město, kde je dřevo dražší než zlato, pokud z něj někdo vyřízl pořádné f-otvory.",
+  "quip_wrong": "Mantova má Gonzagy, Pavia univerzitu a Bergamo horní město. Nejslavnější housle světa mají ale jedinou rodnou adresu.",
+  "explanation": "Ve stejném městě pracovaly i houslařské rody Amatiů a Guarneriů. Dnes tam funguje přes sto houslařských dílen a tamní řemeslo je zapsané na seznamu UNESCO.",
+  "about": "Stradivariho houslích",
+  "more_fact": "Dochovalo se asi 650 Stradivariho nástrojů. Housle Lady Blunt se roku 2011 vydražily za téměř 16 milionů dolarů a výtěžek šel obětem zemětřesení v Japonsku.",
+  "irony_prompt": "A gleaming varnished violin fills the frame, lying in a velvet-lined case in a cosy Renaissance workshop, and an elderly luthier in a leather apron gazes at it with such love that a little halo of sawdust sparkles above his head. Smaller and subordinate: rows of unfinished violin bodies hanging on the wall, a cat sleeping in a pile of wood shavings, a pot of amber varnish. MOOD: cheerful, playful, warm."
  }
 ]

@@ -1496,5 +1496,93 @@
   "image_prompt": "Fotorealistický snímek dětí a vesničanů na břehu řeky na Slovensku, jak pouštějí po vodě slaměnou panenku ozdobenou stuhami při jarní tradici, 16:9",
   "about": "vynášení Moreny na jaře",
   "irony_prompt": "A straw doll decorated with colorful ribbons drifts gently down a river centre-frame, filling the frame, a group of cheerful children waving goodbye to it from the riverbank as winter floats away with it. Smaller and subordinate: budding trees along the bank; scattered flower petals in the water; a rustic wooden bridge. MOOD: joyful, kid-friendly."
+ },
+ {
+  "id": "sk-s-zradne-slovo",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co znamená slovenské slovo „pivnica“, které Čecha snadno svede na špatnou stopu?",
+  "answer": "Sklep",
+  "distractors": [
+   "Hospoda",
+   "Pivovar",
+   "Výčep"
+  ],
+  "quip_correct": "Čech hledá pivo, Slovák mu ukáže brambory a zavařeniny. Jazyková past s dokonalou kulisou.",
+  "quip_wrong": "Hospoda, pivovar i výčep – přesně tam, kam Čecha táhne srdce. Jenže na Slovensku se do pivnice chodí pro kompot, ne na desítku.",
+  "explanation": "Původně šlo o chladnou místnost na uskladnění nápojů; hospodě se dnes na Slovensku říká krčma nebo piváreň.",
+  "about": "slově pivnica",
+  "more_fact": "Podobných pastí je víc: slovenský „horký“ čaj neopaří, ale zhořkne, protože slovo znamená hořký, a „kapusta“ není kadeřávek, nýbrž obyčejné zelí.",
+  "irony_prompt": "A cool stone cellar fills the frame, its shelves packed with jars of pickles and jam and a big heap of potatoes, and in the middle stands a thirsty tourist holding an empty beer mug and staring around in disbelief. Smaller and subordinate: a smiling grandmother in a headscarf offering him a jar of plum compote, a spider in a web, a single bare bulb glowing. MOOD: comic, cosy, warm."
+ },
+ {
+  "id": "sk-s-film-1922",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Která slovenská šlechtická stavba si zahrála v německém němém hororu Upír Nosferatu z roku 1922?",
+  "answer": "Oravský hrad",
+  "distractors": [
+   "Spišský hrad",
+   "Trenčiansky hrad",
+   "Bojnický zámek"
+  ],
+  "quip_correct": "Hrad na skále nad řekou a mlha v ceně – lepší realitní nabídku si upír přát nemohl. Nájemné se prý platilo v krvi.",
+  "quip_wrong": "Spišský hrad dostal filmovou roli až později a Trenčín s Bojnicemi na svého upíra pořád čekají. Hrabě si vybral skalní ostroh nad Oravou.",
+  "explanation": "Hrad stojí na skalním útesu vysoko nad řekou a jeho nejstarší části pocházejí ze 13. století, kdy vznikl jako obrana po tatarském vpádu.",
+  "about": "Oravském hradu",
+  "more_fact": "Hrad ve filmu představoval sídlo hraběte Orloka, nikoli Drákuly: filmaři neměli práva k románu Brama Stokera, a tak postavy prostě přejmenovali.",
+  "irony_prompt": "A dramatic castle perched on a tall rocky cliff above a river fills the frame, and on its highest balcony a lanky pale vampire silhouette in a long black coat, seen from behind, carefully waters a pot of red geraniums. Smaller and subordinate: a vintage film camera on a tripod at the riverbank, bats hanging upside down on a laundry line, a thin crescent moon. MOOD: spooky but playful, cheerful, moonlit."
+ },
+ {
+  "id": "sk-s-dobsinska-1887",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co dostala Dobšinská ledová jeskyně roku 1887 jako vůbec první jeskyně v Evropě?",
+  "answer": "Elektrické osvětlení",
+  "distractors": [
+   "Podzemní lanovku",
+   "Vytápěnou čekárnu",
+   "Podzemní poštovnu"
+  ],
+  "quip_correct": "Zavést elektřinu do jeskyně plné ledu a vody – odvaha, nebo bezmezná důvěra v izolaci. Fungovalo to každopádně.",
+  "quip_wrong": "Lanovka ani pošta pod zemí nevznikly a vytápěná čekárna by v ledové jeskyni působila spíš jako provokace. Novinkou bylo něco, co svítí.",
+  "explanation": "Led v jeskyni tvoří vrstvu silnou přes 25 metrů a jeho objem se odhaduje na více než 110 000 krychlových metrů.",
+  "about": "Dobšinské ledové jeskyni",
+  "more_fact": "Jeskyni objevil roku 1870 důlní inženýr Eugen Ruffinyi, o rok později se otevřela veřejnosti a od roku 2000 je zapsaná na seznamu UNESCO.",
+  "irony_prompt": "A vast glittering ice cave fills the frame, its frozen waterfalls and ice columns lit up by a string of old-fashioned glowing bulbs, while a mustached 19th-century engineer in a fur coat proudly flips a big brass switch. Smaller and subordinate: a bat wearing tiny sunglasses against the sudden glare, a lady ice skating in a long dress, an oil lantern now looking useless. MOOD: magical, cheerful, sparkling."
+ },
+ {
+  "id": "sk-s-napoj-ze-salase",
+  "cc": "sk",
+  "country": "Slovensko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se jmenuje kyselkavý syrovátkový nápoj, který na salaši zbývá při výrobě ovčího sýra?",
+  "answer": "Žinčica",
+  "distractors": [
+   "Demänovka",
+   "Borovička",
+   "Hriatô"
+  ],
+  "quip_correct": "Odpadní produkt, který se pije s výrazem, jako by šlo o léčivý elixír. Bača nevyhodí nic, ani tekutinu.",
+  "quip_wrong": "Demänovka i borovička by bačovi rozhodně nevadily a hriatô v zimě zahřeje, jenže všechny obsahují alkohol. Tady jde o bílou tekutinu, která zbude po sýru.",
+  "explanation": "Vzniká zahřátím syrovátky, která zůstane po srážení ovčího mléka, obsahuje spoustu živých mléčných bakterií a pije se vychlazená i teplá.",
+  "about": "žinčici",
+  "more_fact": "Bačové na salaších dříve pili žinčicu celé léto místo vody a dnes ji některé slovenské mlékárny plní do lahví a prodávají v běžných obchodech.",
+  "irony_prompt": "A big round wooden jug overflowing with pale milky whey fills the frame, held up proudly by a moustached shepherd in a wide-brimmed hat outside a rustic mountain hut, while a round white block of sheep cheese beside it looks slightly jealous. Smaller and subordinate: a curious sheep sniffing the jug, a carved wooden cheese mould, green mountain peaks behind. MOOD: sunny, cheerful, rustic."
  }
 ]

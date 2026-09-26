@@ -1039,5 +1039,93 @@
   "about": "arabské kávě",
   "more_fact": "Nalévá se z dlouhé zobanaté konvice zvané dalla a hostitel dolévá hostům, dokud šálkem lehce nezakývou na znamení, že mají dost.",
   "irony_prompt": "A tall brass coffee pot with a long curved spout fills the frame, pouring golden cardamom-scented coffee into a small handleless cup. Smaller and subordinate: a plate of plump dates beside the cup; a second empty cup waiting nearby; wisps of steam rising into the air. MOOD: warm, welcoming, fragrant."
+ },
+ {
+  "id": "sa-s-stale-toky",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kolik stálých řek, které tečou po celý rok, má Saúdská Arábie?",
+  "answer": "Žádnou",
+  "distractors": [
+   "Jednu",
+   "Dvě",
+   "Tři"
+  ],
+  "quip_correct": "Země větší než Francie, Německo a Španělsko dohromady – a řeka ani jedna. Místní vodohospodáři mají nejklidnější práci na světě.",
+  "quip_wrong": "I jediná řeka by tu byla celostátní atrakce s vlastním muzeem. Ve skutečnosti vodu nesou jen vádí, vyschlá koryta, která se naplní leda po prudkém dešti.",
+  "explanation": "Pitnou vodu dnes země získává hlavně odsolováním mořské vody a patří k největším producentům odsolené vody na světě.",
+  "about": "saúdskoarabských řekách",
+  "more_fact": "Pod pouští leží obrovské zásoby takzvané fosilní vody staré desítky tisíc let. V 80. letech jimi země zavlažovala pšenici tak vydatně, že ji dokonce vyvážela.",
+  "irony_prompt": "An enormous sun-baked desert fills the frame, with a single dry winding riverbed of cracked sand snaking through it, and on its bank a lone fisherman sits on a folding stool patiently holding a rod over the dust. Smaller and subordinate: a camel peering into the empty bed with polite confusion, a tiny rain cloud far on the horizon, an empty bucket. MOOD: sunny, absurd, cheerful."
+ },
+ {
+  "id": "sa-s-jmeno-vnitrozemi",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co doslova znamená arabské jméno Nadžd, kterým se označuje rozlehlé vnitrozemí Arabského poloostrova?",
+  "answer": "Vysočina",
+  "distractors": [
+   "Rovina",
+   "Pustina",
+   "Oáza"
+  ],
+  "quip_correct": "Náhorní plošina uprostřed Arábie a jmenuje se Vysočina. Aspoň že by se tu Čech necítil úplně ztracený.",
+  "quip_wrong": "Rovina ani pustina to nejsou, i když krajina by tomu leckde nasvědčovala, a oáza by byla zbytečně optimistická. Jméno míří k nadmořské výšce.",
+  "explanation": "Nadžd je náhorní plošina, která leží většinou ve výšce 750 až 1 500 metrů nad mořem a směrem na východ se pozvolna svažuje.",
+  "about": "Nadždu",
+  "more_fact": "Z Nadždu pocházela řada koní, na nichž stojí chov arabského plnokrevníka; v 19. století pro ně do pouště jezdili nákupčí z evropských hřebčínů.",
+  "irony_prompt": "A broad rocky highland plateau fills the frame, with a cheerful hiker in shorts and a big backpack standing proudly on a modest ridge and planting his walking stick as if on a great summit, while below him the desert slopes gently away. Smaller and subordinate: a camel wearing hiking boots, a picnic blanket with a thermos, a hawk circling. MOOD: sunny, playful, warm."
+ },
+ {
+  "id": "sa-s-osmanska-trat",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kam vedla Hidžázská železnice, kterou Osmanská říše otevřela roku 1908?",
+  "answer": "Z Damašku do Medíny",
+  "distractors": [
+   "Z Bagdádu do Mekky",
+   "Z Káhiry do Janbu",
+   "Z Bejrútu do Taífu"
+  ],
+  "quip_correct": "Železnice pro poutníky, která nakonec proslula hlavně tím, kolik se z ní nadělalo šrotu. Kolejím se v poušti nikdy nedařilo.",
+  "quip_wrong": "Mekka konečnou nikdy nebyla, i když se s ní původně počítalo, a Bagdád ani Káhira na trase neleží. Vlaky dojely jen do druhého svatého města islámu a dál už ne.",
+  "explanation": "Za první světové války ji opakovaně vyhazovali do povětří arabští povstalci, k nimž se přidal i britský důstojník T. E. Lawrence, a provoz na jihu už nikdy neobnovili.",
+  "about": "Hidžázské železnici",
+  "more_fact": "Pouť z Damašku do Medíny trvala s karavanou kolem 40 dní, vlakem jen zhruba pět. Rezavé vagony a opuštěné stanice dodnes stojí v poušti nedaleko Hegry.",
+  "irony_prompt": "A rusty old steam locomotive fills the frame, half buried in golden desert sand, with a patient camel standing on its roof like a proud stationmaster while a pilgrim in white robes waits on a crumbling platform checking a pocket watch. Smaller and subordinate: a lizard sunbathing on the rails, bent tracks disappearing into the dunes, a single palm tree. MOOD: sunny, gently absurd, cheerful."
+ },
+ {
+  "id": "sa-s-skalni-utvar-al-ula",
+  "cc": "sa",
+  "country": "Saúdská Arábie",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kterému zvířeti se nápadně podobá proslulá pískovcová skála u města Al-Ula, po němž dostala i jméno?",
+  "answer": "Slonovi",
+  "distractors": [
+   "Velbloudovi",
+   "Sokolovi",
+   "Želvě"
+  ],
+  "quip_correct": "Příroda tu miliony let brousila pískovec jen proto, aby si turisté mohli vyfotit chobot. Trpělivost se vyplatila.",
+  "quip_wrong": "Velbloud by byl až moc samozřejmý, sokol příliš drobný a želva zase placatá. Skála má totiž chobot – a ten se jen tak nepřehlédne.",
+  "explanation": "Skála je vysoká kolem 50 metrů a oblouk mezi „tělem“ a zemí, který tvoří chobot, vyhloubila eroze větrem a vodou.",
+  "about": "Sloní skále",
+  "more_fact": "Oblast Al-Ula byla pro turisty desítky let skoro nepřístupná a naplno se otevřela až kolem roku 2019; v nedalekém kaňonu dnes stojí koncertní sál celý obložený zrcadly.",
+  "irony_prompt": "A giant red sandstone rock shaped just like an elephant fills the frame, with a long stone trunk curving down to the desert floor, and a tiny tourist standing under the trunk holding up a peanut hopefully. Smaller and subordinate: a camel staring at the rock with jealousy, a string of fairy lights along the sand, a starry dusk sky. MOOD: playful, warm, whimsical."
  }
 ]

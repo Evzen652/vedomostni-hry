@@ -926,5 +926,93 @@
   "image_prompt": "Fotorealistický snímek velké hořící vatry na břehu finského jezera za letního večera s lidmi v okolí, 16:9",
   "about": "letní slavnosti Juhannus",
   "irony_prompt": "A towering bonfire fills the frame blazing bright orange on a lakeshore at midnight, its light barely outshining the glowing golden sky behind it which refuses to go dark. Smaller and subordinate: a circle of people relaxing on logs around the fire, still wearing sunglasses despite the late hour; a rowing boat pulled up on the sand nearby; sparks drifting up to mix with the golden twilight. MOOD: festive, glowing, warm."
+ },
+ {
+  "id": "fi-s-finske-zajmeno",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se finské zájmeno třetí osoby „hän“ zásadně liší od toho českého?",
+  "answer": "Nerozlišuje mužský a ženský rod",
+  "distractors": [
+   "Používá se jen pro starší lidi",
+   "Smí se říkat jen o nepřítomných",
+   "Označuje zároveň i zvířata"
+  ],
+  "quip_correct": "Finština vyřešila genderovou debatu o několik tisíc let dřív, než vůbec začala. Muži i ženy v ní mlčí úplně stejně.",
+  "quip_wrong": "Starší lidé, nepřítomní ani zvířata tu zvláštní zacházení nemají. Hän je prostě člověk – a víc se o něm finština dozvědět nechce.",
+  "explanation": "Finština nemá mluvnický rod vůbec, takže se podle pohlaví nemění ani přídavná jména či slovesa; v hovoru navíc Finové o lidech běžně říkají „se“, tedy „to“.",
+  "about": "finských zájmenech",
+  "more_fact": "Finština si místo předložek vystačí s patnácti pády, takže „v domě“, „do domu“ i „z domu“ jsou jen různé koncovky slova talo. Budoucí čas nemá vůbec a vyjadřuje ho přítomným časem a souvislostí.",
+  "irony_prompt": "A single friendly round snowman with a carrot nose fills the frame, wearing a bow tie and a flowery skirt at the same time and looking perfectly content, while two old-fashioned gentlemen and two ladies beside it argue with raised eyebrows. Smaller and subordinate: a reindeer shrugging, a small wooden sauna puffing smoke from its chimney, pine trees dusted with snow. MOOD: witty, cozy, playful."
+ },
+ {
+  "id": "fi-s-predvecer-prvniho-maje",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co mladí Helsinčané o předvečeru 1. máje každý rok slavnostně nasazují bronzové soše mořské panny Havis Amanda?",
+  "answer": "Bílou studentskou čapku",
+  "distractors": [
+   "Věnec z březových větviček",
+   "Obří sluneční brýle",
+   "Rybářskou síť jako šaty"
+  ],
+  "quip_correct": "Nahá mořská panna dostane na hlavu symbol maturity a celé město to bere jako začátek jara. Finská logika: oblékání se začíná od hlavy.",
+  "quip_wrong": "Březové větvičky patří do sauny, sluneční brýle na finském jaře zatím nikdo nepotřebuje a síť by byla na veřejné soše trochu smělá. Helsinky volí akademickou eleganci.",
+  "explanation": "Sochu předtím studenti vydrhnou kartáči a mýdlem, a když pokrývka hlavy dosedne, propukne vappu – největší finská pouliční oslava roku.",
+  "about": "oslavách vappu",
+  "more_fact": "Bílou čapku s černým štítkem dostávají Finové při maturitě a nosí ji pak každý rok právě na vappu, klidně i v osmdesáti. K oslavám patří domácí medovina sima a smažené pečivo tippaleipä.",
+  "irony_prompt": "A graceful bronze mermaid fountain statue fills the frame, freshly scrubbed and sparkling, as a crisp white student cap with a black peak is lowered onto her head by a small crane while she winks. Smaller and subordinate: a cheering crowd in white caps below, balloons tied to a lamppost, a seagull wearing a matching tiny white cap. MOOD: festive, springy, cheeky."
+ },
+ {
+  "id": "fi-s-zapalne-lahve-zimni-valky",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak Finové v zimní válce posměšně pojmenovali improvizované zápalné láhve, kterými se bránili sovětským tankům?",
+  "answer": "Molotovovy koktejly",
+  "distractors": [
+   "Stalinovy svíčky",
+   "Berijovy lucerny",
+   "Vorošilovovy pochodně"
+  ],
+  "quip_correct": "Sovětský ministr tvrdil, že bombardéry shazují Finům chleba, tak mu Finové slušně nabídli něco k pití. Pohostinnost se zápalnou šňůrou.",
+  "quip_wrong": "Stalin, Berija i Vorošilov by si pojmenování zasloužili, ale Finové mířili na muže, který o bombách mluvil jako o humanitární pomoci. Ironie je v Karélii národní zbraň.",
+  "explanation": "Sovětské kazetové bomby Finové přezdívali Molotovovy košíky na chleba a lahve ve velkém plnil státní lihovar Alko, doplněné o zapalovací tyčinky.",
+  "about": "Molotovových koktejlech",
+  "more_fact": "Finští vojáci v bílých maskáčích se pohybovali na lyžích a ze zasněžených lesů přepadali dlouhé sovětské kolony, které rozdělili na menší obklíčené skupiny. Taktiku nazvali motti podle míry na naštípané dřevo.",
+  "irony_prompt": "A plump plain unmarked glass bottle with a rag tucked into its neck like a napkin fills the frame, dressed as a butler with a tiny bow tie and standing politely on a snowy tree stump, offering itself on a silver tray to a sulking toy tank sinking in a snowdrift. Smaller and subordinate: round bread loaves floating down from the sky on tiny parachutes, a skier in white camouflage waving from the forest, a curious squirrel. MOOD: darkly comic, wintry, cheeky."
+ },
+ {
+  "id": "fi-s-rostouci-uzemi",
+  "cc": "fi",
+  "country": "Finsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč Finsku každoročně přibude několik kilometrů čtverečních souše, aniž by kdokoli cokoli vysoušel nebo zasypával?",
+  "answer": "Pevnina se po ústupu ledovce stále zvedá",
+  "distractors": [
+   "Baltské moře pomalu vysychá",
+   "Podmořské sopky chrlí novou lávu",
+   "Zemětřesení vyzdvihují mořské dno"
+  ],
+  "quip_correct": "Finsko roste samo od sebe, bez války i bez nákupu pozemků. Takovou zahraniční politiku by mu leckdo záviděl.",
+  "quip_wrong": "Baltské moře nevysychá, sopky tu dávno spí a zemětřesení znají Finové hlavně ze zpráv. Za růstem stojí něco mnohem pomalejšího – a mnohem studenějšího.",
+  "explanation": "Kilometry silný ledový příkrov zemskou kůru stlačil a ta se od konce doby ledové pomalu vrací; v Kvarkenské úžině stoupá až o osm milimetrů ročně.",
+  "about": "zvedání finské pevniny",
+  "more_fact": "Souostroví Kvarken zapsalo UNESCO spolu se švédským Vysokým pobřežím jako místo, kde je vidět rodící se krajina. Staré lodní kůlny tam dnes stojí daleko od vody, protože moře před nimi ustupuje.",
+  "irony_prompt": "A small rocky Finnish island fills the frame, slowly rising out of the blue sea like a loaf of bread swelling in the oven, lifting a bewildered red wooden boathouse high and dry above the water. Smaller and subordinate: a fisherman on a ladder trying to reach his rowing boat far below, a seal sunbathing on freshly emerged rocks, pine trees stretching upward. MOOD: whimsical, calm, gently comic."
  }
 ]

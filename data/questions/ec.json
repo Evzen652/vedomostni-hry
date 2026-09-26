@@ -951,5 +951,93 @@
   "more_fact": "Místním lidem nadmořská výška nevadí — jejich těla jsou na ni zvyklá odmalička. Mají trochu víc červených krvinek, které lépe roznášejí kyslík v řidším vzduchu.",
   "about": "vysoko položeném Quitu",
   "irony_prompt": "A cheerful cartoonish tourist figure fills the frame standing on a mountaintop street gasping with wide eyes and puffed-out cheeks, suitcase dropped beside them, snow-capped volcanoes rising behind the rooftops. Smaller and subordinate: a local vendor calmly selling fruit nearby, completely unbothered; a small dog trotting past unfazed; thin wisps of cloud drifting at street level. MOOD: playful, comedic, breathless."
+ },
+ {
+  "id": "ec-s-vrchol-chimboraza",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je vrchol ekvádorské sopky Chimborazo výjimečný na celé planetě?",
+  "answer": "Je nejvzdálenějším bodem od středu Země",
+  "distractors": [
+   "Je nejvyšší činnou sopkou světa",
+   "Leží přesně na zemském rovníku",
+   "Je nejvyšší horou Jižní Ameriky"
+  ],
+  "quip_correct": "Everest je nad mořem o víc než dva kilometry vyšší, a stejně prohrál. Horolezci na něm celou dobu stáli na špatném vrcholu, jen o tom nevěděli.",
+  "quip_wrong": "Nejvyšší činný vulkán leží na hranici Chile a Argentiny, nejvyšší hora Jižní Ameriky kousek od ní a na rovník to má Chimborazo asi 160 kilometrů. Zvítězilo v disciplíně, o které nikdo nevěděl.",
+  "explanation": "Země je u rovníku vyboulená, takže vrchol Chimborazo leží od jejího středu zhruba o dva kilometry dál než vrchol Everestu.",
+  "about": "Chimborazu",
+  "more_fact": "Na svazích sopky žijí vikuně, které sem Ekvádor v 80. letech dovezl z Bolívie, Chile a Peru, protože tu dávno vymizely. Místní ledovec se po staletí sekal a na mezcích svážel do měst jako led na chlazení.",
+  "irony_prompt": "A huge snow-capped volcano fills the frame, puffing out its chest and standing on tiptoe on top of a bulging round planet, while a tiny distant mountain on the far side of the globe glares up at it in outrage. Smaller and subordinate: a slender vicuña grazing on the lower slopes, a climber planting a small plain solid yellow pennant on the summit, a curious condor circling. MOOD: cheeky, triumphant, sunny."
+ },
+ {
+  "id": "ec-s-mena-pred-dolarem",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se jmenovala ekvádorská měna, kterou země po těžké krizi v roce 2000 opustila a přešla na americký dolar?",
+  "answer": "Sucre",
+  "distractors": [
+   "Inti",
+   "Guaraní",
+   "Colón"
+  ],
+  "quip_correct": "Měna pojmenovaná po hrdinovi boje za nezávislost skončila výměnou za dolary Spojených států. Takhle vypadá nezávislost v praxi – i s cizími prezidenty v peněžence.",
+  "quip_wrong": "Inti měli sousedé v Peru, guaraní Paraguayci a colón Salvadorci, kteří mimochodem dolar přijali o rok později. Ekvádor v tom aspoň vedl.",
+  "explanation": "Měna nesla jméno generála Antonia José de Sucre a výměnný kurz se ustálil na 25 000 sucres za jeden dolar.",
+  "about": "ekvádorské měně",
+  "more_fact": "Kromě bankovek z USA razí Ekvádor vlastní centavos, které mají stejnou velikost i hodnotu jako americké mince a obíhají s nimi společně. Vlastní dolarové bankovky ale tisknout nesmí.",
+  "irony_prompt": "A dignified old-fashioned leather wallet with a curly moustache fills the frame, sadly waving goodbye with a tiny handkerchief as a flock of plain green paper rectangles, completely blank, flies in through the window like migrating birds. Smaller and subordinate: a hummingbird carrying a single shiny plain round coin, a stack of faded old paper gathering dust, a potted cactus shrugging. MOOD: bittersweet, comic, playful."
+ },
+ {
+  "id": "ec-s-slovo-pro-mimino",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak Ekvádorci v horách běžně říkají malému dítěti, slovem převzatým z kečuánštiny?",
+  "answer": "Guagua",
+  "distractors": [
+   "Chamaco",
+   "Pibe",
+   "Chaval"
+  ],
+  "quip_correct": "Na Kanárských ostrovech a na Kubě znamená stejné slovo autobus. Uřvané batole a přeplněná linka – podobnost možná není úplně náhodná.",
+  "quip_wrong": "Chamaco by se usmál Mexičan, pibe Argentinec a chaval Madriďan. V Quitu by na ně místní jen zdvořile a nechápavě kývli.",
+  "explanation": "Slovo pochází z kečuánského „wawa“ a v andských zemích se používá i láskyplně pro dospělé děti; na Dušičky se navíc pečou chlebové panenky se stejným jménem.",
+  "about": "ekvádorské španělštině",
+  "more_fact": "Ekvádorská španělština je plná kečuánských slov: „achachay“ je výkřik, když je zima, a „arrarray“, když něco pálí. Obojí zní tak výstižně, že je používají i lidé, kteří kečuánsky neumějí.",
+  "irony_prompt": "A chubby cheerful baby wrapped in a colourful woven Andean shawl fills the frame, sitting like a boss in the driver's seat of a tiny toy bus painted plain solid red and honking its horn, while a grandmother in a felt hat laughs beside it. Smaller and subordinate: a curious llama peering in, a rattle shaped like a corn cob, snowy volcano peaks in the distance. MOOD: joyful, playful, warm."
+ },
+ {
+  "id": "ec-s-dusickovy-napoj",
+  "cc": "ec",
+  "country": "Ekvádor",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaký hustý fialový nápoj z černé kukuřičné mouky, koření a ovoce pijí Ekvádorci tradičně kolem Dušiček?",
+  "answer": "Colada morada",
+  "distractors": [
+   "Chicha de jora",
+   "Canelazo",
+   "Té de guayusa"
+  ],
+  "quip_correct": "Nápoj barvy fialového inkoustu, podávaný na hřbitovní svátek, a chutná jako teplý ovocný dezert. Ekvádor umí truchlit se lžičkou v ruce.",
+  "quip_wrong": "Chicha de jora je kvašená a opojná, canelazo hřeje skořicí i pálenkou a guayusa je čaj z Amazonie. Fialovou barvu a hustotu pudinku nemá ani jeden.",
+  "explanation": "Do nápoje se vaří ananas, jahody, borůvky zvané mortiño a voňavé byliny jako citronová verbena či myrta, a pije se teplý i studený.",
+  "about": "colada morada",
+  "more_fact": "Na Dušičky chodí v Ekvádoru na hřbitovy celé rodiny, uklízejí hroby a jedí u nich společné jídlo. Typickou vůni dává nápoji kořeněné ishpingo podobné skořici, které roste v amazonských pralesích.",
+  "irony_prompt": "A tall cylindrical clay mug brimming with thick glossy deep-purple drink fills the frame, with round chunks of pineapple and whole strawberries bobbing on top, and a curl of steam rising in the shape of a friendly little ghost waving hello. Smaller and subordinate: a bowl of dark round berries, cinnamon sticks tied with string, a wreath of orange marigold flowers. MOOD: cozy, playful, festive."
  }
 ]

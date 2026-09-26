@@ -998,5 +998,93 @@
   "about": "pozemním hokeji",
   "more_fact": "Hraje se na menším hřišti s brankami jako fotbal, míček se pohání zahnutou holí po zemi — úplně jiná hra než ta s pálkou a wiketem, co dnes táhne davy nejvíc.",
   "irony_prompt": "A dusty outdoor hockey field fills the frame, a curved wooden hockey stick and a small hard ball caught mid-action in the foreground. Smaller and subordinate: a goal net in the distance; a few players blurred in motion; a stack of old trophies faintly visible on the sideline. MOOD: energetic, nostalgic, proud."
+ },
+ {
+  "id": "pk-s-hriste-v-prusmyku",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co se každé léto odehrává na průsmyku Shandur ve výšce přes 3 700 metrů mezi Čitrálem a Gilgitem?",
+  "answer": "Turnaj v jezdeckém pólu",
+  "distractors": [
+   "Závod jaků do prudkého kopce",
+   "Závod v běhu na lyžích",
+   "Turnaj v přetahování lanem"
+  ],
+  "quip_correct": "Koně, míček a řídký vzduch, ve kterém turista lapá po dechu i při chůzi. Tohle je sport pro plíce z oceli.",
+  "quip_wrong": "Jaci, lyže i přetahovaná by v téhle výšce dávaly smysl. Místní ale volí nejdražší a nejdivočejší hru – a hrají ji skoro bez pravidel.",
+  "explanation": "Proti sobě tu nastupují týmy z Čitrálu a Gilgitu a hraje se tradiční volnou formou s minimem pravidel. Hřiště bývá označováno za nejvýše položené pólové hřiště světa.",
+  "about": "turnaji na Shanduru",
+  "more_fact": "Pólo se v horských údolích severního Pákistánu hraje po staletí a místní mu říkají „hra králů“. Zápasy provází živá hudba bubnů a šalmají, která se zrychluje s každým gólem.",
+  "irony_prompt": "A galloping polo pony and its rider in completely plain solid colours with no crest, no badge, no emblem fill the frame, both gasping comically for air with puffed cheeks as they chase a small round ball across a high green meadow ringed by snowy peaks. Smaller and subordinate: a drummer playing wildly at the edge of the field; a yak watching unimpressed; a distant turquoise lake. MOOD: energetic, comic, bright."
+ },
+ {
+  "id": "pk-s-nahorni-plosina-deosai",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které zvíře je symbolem náhorní plošiny Deosai, které místní přezdívají „země obrů“?",
+  "answer": "Himálajský medvěd hnědý",
+  "distractors": [
+   "Tibetská antilopa čiru",
+   "Divoký dvouhrbý velbloud",
+   "Mongolský divoký kůň"
+  ],
+  "quip_correct": "Jedna z nejvyšších planin světa a hlavní hvězdou je chlupatý obr, který si tu dává svačinu ze svišťů. Příroda s humorem.",
+  "quip_wrong": "Antilopa, velbloud i divoký kůň by se na vysokou planinu hodili, ale Deosai patří někomu jinému – tomu, kvůli komu tu vznikl národní park.",
+  "explanation": "Národní park Deosai vznikl v roce 1993 hlavně kvůli ochraně poslední životaschopné populace tohoto medvěda v Pákistánu. Planina leží v průměru přes 4 000 metrů nad mořem.",
+  "about": "planině Deosai",
+  "more_fact": "V létě se Deosai promění v koberec divokých květin a motýlů, v zimě ji zavalí sníh tak, že je měsíce nedostupná. Žijí tu i sviště a lišky a nad planinou krouží orli skalní.",
+  "irony_prompt": "A big shaggy golden-brown bear fills the frame, sitting on its haunches in a vast flower-covered high meadow and peering hopefully into a marmot's burrow, while the marmot pops up from another hole behind him with a smug grin. Smaller and subordinate: snowy peaks on the horizon; a crystal-clear stream with round pebbles; a golden eagle gliding overhead. MOOD: playful, sunny, cheeky."
+ },
+ {
+  "id": "pk-s-puvod-jmena-jazyka",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co původně znamená samotné slovo „urdu“, podle kterého se jmenuje národní jazyk Pákistánu?",
+  "answer": "Vojenský tábor",
+  "distractors": [
+   "Řeč básníků",
+   "Mluva trhu",
+   "Hlas pouště"
+  ],
+  "quip_correct": "Národní jazyk pojmenovaný po kasárnách, a přitom v něm vznikla jedna z nejněžnějších milostných poezií světa. Voják s duší básníka.",
+  "quip_wrong": "Básníci, trh i poušť by se na jméno jazyka hodili líp. Jenže urdu se rodilo mezi vojáky mughalských armád, ne v čajovně.",
+  "explanation": "Slovo pochází z turkického „ordu“, odkud má čeština i „hordu“. Jazyk se formoval v ležení mughalských vojsk, kde se potkávali vojáci z celé říše.",
+  "about": "původu slova urdu",
+  "more_fact": "Urdu je národním jazykem Pákistánu, ale doma jím mluví jen menšina obyvatel – nejrozšířenější mateřštinou je paňdžábština. Urdu tak slouží hlavně jako společná řeč mezi národy země.",
+  "irony_prompt": "A grand Mughal army camp fills the frame, rows of striped canvas tents and patient elephants, and in its centre a lively crowd of soldiers from many lands chatting and gesturing while together weaving strips of many different fabrics into one bright shared carpet. Smaller and subordinate: a camel chewing lazily; a poet in a turban dreamily sniffing a rose; cooking pots steaming. MOOD: lively, warm, playful."
+ },
+ {
+  "id": "pk-s-pristav-gwadar",
+  "cc": "pk",
+  "country": "Pákistán",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Komu patřil přístav Gwadar u Arabského moře, než ho Pákistán roku 1958 koupil?",
+  "answer": "Ománu",
+  "distractors": [
+   "Íránu",
+   "Jemenu",
+   "Kuvajtu"
+  ],
+  "quip_correct": "Kus pobřeží od souseda přes moře. Pákistán si pořídil přístav stejně prozaicky, jako se kupuje chalupa – jen s víc nulami.",
+  "quip_wrong": "Írán je za humny, Jemen a Kuvajt taky v kraji, ale majitel byl jinde – ománští sultáni tu vládli bezmála dvě století.",
+  "explanation": "Chánát Kalát svěřil Gwadar roku 1783 ománskému princi, který se později stal sultánem, a přístav pak zůstal ománský. Převod na Pákistán zprostředkovala Británie.",
+  "about": "přístavu Gwadar",
+  "more_fact": "Dnes je Gwadar hlubokomořským přístavem, který buduje Čína jako součást ekonomického koridoru mezi oběma zeměmi. V Ománu přitom dodnes žije početná komunita Balúčů, jejichž předci sloužili v ománské armádě.",
+  "irony_prompt": "A small sun-baked harbour town on a hammerhead-shaped peninsula fills the frame, tied up with a giant red ribbon and bow like a birthday present, being carefully handed across a turquoise sea by a bearded ruler in a white robe and turban, seen from behind, to a delighted official in a plain grey suit. Smaller and subordinate: fishing boats bobbing in the harbour; a pelican carrying the end of the ribbon; seagulls cheering. MOOD: playful, sunny, cheeky."
  }
 ]

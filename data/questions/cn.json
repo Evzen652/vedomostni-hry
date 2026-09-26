@@ -840,5 +840,93 @@
   "about": "čínském vesmírném programu",
   "image_prompt": "Fotorealistický snímek čínské vesmírné stanice na oběžné dráze Země, hvězdné pozadí, 16:9",
   "irony_prompt": "A gleaming space station module fills the frame drifting serenely against the black backdrop of space, solar panels unfurled wide and catching brilliant sunlight. Smaller and subordinate: a small astronaut in a bulky white suit tethered nearby, adjusting an antenna; the curve of Earth glowing blue in the far background; a tiny docking capsule approaching from below. MOOD: triumphant, serene, historic."
+ },
+ {
+  "id": "cn-s-start-her-v-pekingu",
+  "cc": "cn",
+  "country": "Čína",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč olympijské hry v Pekingu začaly 8. 8. 2008 přesně v 8 hodin a 8 minut večer?",
+  "answer": "Osmička zní podobně jako slovo pro zbohatnutí",
+  "distractors": [
+   "Kvůli přímému přenosu do evropského poledne",
+   "Na počest Osmi nesmrtelných z taoismu",
+   "Tak to vyšlo podle lunárního kalendáře"
+  ],
+  "quip_correct": "Přesně. Když má číslo slibovat bohatství, dáte ho tam čtyřikrát – pojistka po čínsku.",
+  "quip_wrong": "Televize, taoističtí nesmrtelní ani lunární kalendář za tím nestáli – rozhodla výslovnost.",
+  "explanation": "Osm se řekne pa (bā) a zní blízko slabice fa (fā) z výrazu fācái, zbohatnout; za telefonní čísla plná osmiček se tu platí i miliony jüanů.",
+  "about": "šťastné osmičce v Číně",
+  "more_fact": "Opačnou pověst má čtyřka, jejíž výslovnost připomíná slovo smrt – v mnoha čínských výškových domech proto chybí čtvrté patro i tlačítko s tímhle číslem ve výtahu.",
+  "irony_prompt": "A huge glittering stadium fills the frame at night, bursting with fireworks, and a jolly golden lucky-cat figurine with one waving paw sits on its rim, grinning as round gold coins rain down from the sky. Smaller and subordinate: a panda juggling round red lanterns, a dragon dancer, swirling confetti. MOOD: festive, lucky, jubilant."
+ },
+ {
+  "id": "cn-s-nejstarsi-uziti-magnetu",
+  "cc": "cn",
+  "country": "Čína",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "K čemu sloužil nejstarší čínský kompas – lžíce z magnetovce na bronzové desce –, dřív než ho začali používat námořníci?",
+  "answer": "K věštění a hledání míst podle feng-šuej",
+  "distractors": [
+   "K odměřování času podle slunečního stínu",
+   "K vyznačování hranic císařských provincií",
+   "K vytyčování kanálů na rýžových polích"
+  ],
+  "quip_correct": "Správně. Nejdřív se s kompasem hledalo, kam postavit dědečkovi hrob, a teprve pak, kudy plout do Afriky. Priority jsou priority.",
+  "quip_wrong": "Čas, hranice ani rýžová pole to nebyly – lžíce na desce radila hlavně s osudem a se stavbami.",
+  "explanation": "Rukojeť lžíce se natáčela k jihu; k navigaci na moři se kompas prokazatelně používal až za dynastie Sung kolem přelomu 11. a 12. století.",
+  "about": "čínském kompasu",
+  "more_fact": "Čínské kompasy tradičně ukazovaly na jih, ne na sever – jih byl v čínském myšlení čestnou světovou stranou, k níž se obracel i císař sedící na trůnu.",
+  "irony_prompt": "A shiny spoon-shaped lodestone fills the frame, spinning on a smooth plain bronze plate, while a solemn ancient fortune-teller in flowing robes watches it intently to decide where a family should build their house, ignoring a sailor who tugs at his sleeve. Smaller and subordinate: a tiny toy junk boat, curling incense smoke, a curious cat batting at the spoon handle. MOOD: mystical, playful, warm."
+ },
+ {
+  "id": "cn-s-obr-horskych-potoku",
+  "cc": "cn",
+  "country": "Čína",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který živočich z čínských horských řek je největším obojživelníkem na světě?",
+  "answer": "Velemlok",
+  "distractors": [
+   "Axolotl",
+   "Macarát",
+   "Čolek"
+  ],
+  "quip_correct": "Ano. Mlok velký jako člověk, který navíc vydává zvuky jako plačící miminko. Evoluce měla zjevně volné odpoledne.",
+  "quip_wrong": "Axolotl se vejde do dlaně, macarát do jeskynní louže a čolek do tůňky – čínský obr potřebuje celou řeku.",
+  "explanation": "Může měřit přes 1,5 metru a vážit desítky kilogramů; dýchá převážně kůží, a proto žije jen v chladných tocích bohatých na kyslík.",
+  "about": "velemlokovi čínském",
+  "more_fact": "Kvůli lovu pro luxusní restaurace je ve volné přírodě kriticky ohrožený, zatímco na farmách jich žijí miliony – genetici navíc zjistili, že jde ve skutečnosti o několik různých druhů.",
+  "irony_prompt": "A giant wrinkly brown salamander as long as a grown man fills the frame, lounging in a clear mountain stream with a sleepy grin, while a tiny astonished fisherman holds up a hopelessly small fishing net beside it. Smaller and subordinate: a startled crab scuttling away, bamboo leaves drifting on the water, a misty karst peak behind. MOOD: whimsical, playful, fresh."
+ },
+ {
+  "id": "cn-s-zima-na-severovychode",
+  "cc": "cn",
+  "country": "Čína",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se každou zimu proslaví severočínské město Charbin?",
+  "answer": "Obřím festivalem soch a paláců z ledu",
+  "distractors": [
+   "Závody na jacích po zamrzlé řece",
+   "Horkými prameny, které nikdy nezamrzají",
+   "Pálením obřích slaměných draků"
+  ],
+  "quip_correct": "Správně. Když je venku minus třicet, Charbin se nenechá zahanbit a postaví si z mrazu rovnou celé město.",
+  "quip_wrong": "Jaci, prameny ani draci to nejsou – Charbinu stačí zamrzlá řeka, pila a pořádný mráz.",
+  "explanation": "Kvádry na stavby se řežou přímo ze zamrzlé řeky Sungari a sochy i celé hrady se v noci rozsvěcují barevnými světly zevnitř.",
+  "about": "zimním festivalu v Charbinu",
+  "more_fact": "Město vyrostlo kolem ruské železnice na počátku 20. století, a proto v něm stojí pravoslavná katedrála svaté Sofie a ulice s evropskými fasádami.",
+  "irony_prompt": "A towering glowing palace carved entirely from blocks of clear ice fills the frame, lit from inside in candy colours against a starry winter night, while a bundled-up visitor wrapped in five scarves happily licks an ice lolly. Smaller and subordinate: a penguin sliding down an ice slide, a snow dragon sculpture, steam rising from a hot bowl of noodles. MOOD: magical, frosty, playful."
  }
 ]

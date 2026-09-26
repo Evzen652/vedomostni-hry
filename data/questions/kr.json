@@ -995,5 +995,93 @@
   "about": "jihokorejské vlajce",
   "more_fact": "Jihokorejská vlajka se jmenuje Taegukgi a bílé pozadí na ní symbolizuje mír a čistotu. Korejci ji vyvěšují hlavně o státních svátcích, třeba 15. srpna na Den osvobození.",
   "irony_prompt": "A large round taegeuk emblem, its red and blue halves swirling together like two chasing raindrops, fills the frame spinning cheerfully on a tall wooden stick like a pinwheel toy. Smaller and subordinate: four short sets of black parallel bars floating near the corners like tiny flags; a child's hand gripping the stick from below; a clear blue sky background. MOOD: playful, spinning, joyful."
+ },
+ {
+  "id": "kr-s-tradicni-pocitani-veku",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kdy podle tradičního korejského počítání věku zestárne člověk o jeden rok?",
+  "answer": "Všichni naráz o Novém roce",
+  "distractors": [
+   "V den vlastních narozenin",
+   "O podzimním svátku sklizně",
+   "Na začátku školního roku"
+  ],
+  "quip_correct": "Hromadné narozeniny pro celý národ. Úspora na dortech musela být obrovská.",
+  "quip_wrong": "Vlastní narozeniny, sklizeň i školní rok by dávaly logiku. Korea ale stárla hromadně, jako celá třída při vysvědčení.",
+  "explanation": "Novorozenec byl navíc rovnou jednoletý, takže dítě narozené 31. prosince bylo o den později dvouleté. Od června 2023 proto úřady počítají věk jen od data narození.",
+  "about": "korejském počítání věku",
+  "more_fact": "Alkohol a cigarety se v Koreji dodnes řídí zvláštním ročníkovým věkem: kupovat je smí každý, komu v daném kalendářním roce bude devatenáct.",
+  "irony_prompt": "A giant festive round rice cake bristling with countless candles fills the frame, and all the residents of a Korean apartment block — grandparents, parents, babies and a dog — lean in together to blow them out at the same moment on a snowy morning. Smaller and subordinate: a newborn in a tiny hanbok already wearing a party hat, fireworks over the rooftops, a cat startled by the gust. MOOD: cheerful, playful, festive."
+ },
+ {
+  "id": "kr-s-prislovi-o-ostrove",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čeho má podle starého rčení ostrov Čedžu nadbytek?",
+  "answer": "Větru, kamenů a žen",
+  "distractors": [
+   "Deště, mlhy a hadů",
+   "Rýže, soli a ryb",
+   "Chrámů, mnichů a zvonů"
+  ],
+  "quip_correct": "Vítr, kámen a ženy. Poctivější popis ostrova nevymyslí žádná cestovka.",
+  "quip_wrong": "Hadi, mniši ani solná pole to nejsou. Čedžu si vystačí se živly a s ženami, se kterými se nevyplácí hádat.",
+  "explanation": "Vítr fouká od moře skoro pořád a sopečné kameny leží všude: domy i pole obepínají nízké zídky z černého pórovitého čediče.",
+  "about": "ostrově Čedžu",
+  "more_fact": "Symbolem ostrova jsou tolharubang, kamenní dědečci z pórovitého čediče s vypouklýma očima a rukama na břiše. Dřív stávali u městských bran jako strážci.",
+  "irony_prompt": "A windswept volcanic island landscape fills the frame, where a tall determined Korean grandmother stands firm and smiling against a howling wind that blows everyone else's hats away, surrounded by low walls of black porous stones. Smaller and subordinate: a stone grandfather statue with bulging eyes clutching his own head, tangerine trees bending sideways, a seagull flying backwards. MOOD: cheerful, playful, breezy."
+ },
+ {
+  "id": "kr-s-nejcastejsi-prijmeni",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jaká část obyvatel Jižní Koreje se jmenuje Kim?",
+  "answer": "Zhruba každý pátý",
+  "distractors": [
+   "Zhruba každý dvacátý",
+   "Zhruba každý druhý",
+   "Zhruba každý desátý"
+  ],
+  "quip_correct": "Stačí na přechodu zavolat „Kime!“ a otočí se půlka chodců. Telefonní seznam musí být tlustý jako cihla.",
+  "quip_wrong": "Každý druhý by byl přehnaný, desátý či dvacátý zase skromný. Jmenovce potkáš v Koreji v každé tramvaji.",
+  "explanation": "Kimové, Leeové a Parkové dohromady tvoří skoro polovinu obyvatel. Stejné jméno ale neznamená příbuzenství — rozhoduje rodový klan podle místa původu, třeba Kimové z Kimhe.",
+  "about": "korejských příjmeních",
+  "more_fact": "Korejský zákon dlouho zakazoval sňatek dvou lidí se stejným příjmením i rodovým klanem, i když spolu nebyli nijak příbuzní. Ústavní soud ho zrušil roku 1997.",
+  "irony_prompt": "A bustling pedestrian crossing in a big Korean city fills the frame, and when a cheerful delivery rider calls out one name, a huge crowd of passers-by all turn around at the same time with the same surprised face. Smaller and subordinate: a baby in a pram turning too, a pigeon turning as well, a street cat utterly unimpressed. MOOD: cheerful, playful, bustling."
+ },
+ {
+  "id": "kr-s-zelena-lahev",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je ve světovém měřítku výjimečná korejská pálenka soju značky Jinro?",
+  "answer": "Je nejprodávanější lihovinou světa",
+  "distractors": [
+   "Destiluje se jen z mořských řas",
+   "Zraje v zakopaných hliněných džbánech",
+   "Smí se nalévat jen o svátcích"
+  ],
+  "quip_correct": "Whisky a vodka mohou jít spát. Šampion světových prodejů vypadá jako lahev od limonády.",
+  "quip_wrong": "Řasy, zakopané džbány ani sváteční zákazy. Tajemství je prosté: Korejci ho pijí pořád.",
+  "explanation": "Soju mívá kolem 16 až 20 % alkoholu a v obchodě stojí málo víc než limonáda, takže ho Korejci pijí hlavně k jídlu.",
+  "about": "soju",
+  "more_fact": "Korejská etiketa pití je přísná: staršímu se nalévá oběma rukama a mladší se při pití odvrací hlavou stranou. Sám si nikdo nenalévá, vždy nalévá soused.",
+  "irony_prompt": "A small green cylinder-shaped glass bottle, completely plain and unmarked, fills the frame, standing on a low wooden table and wearing a tiny golden crown, while tall foreign whisky and vodka bottles bow to it in defeat. Smaller and subordinate: tiny shot glasses applauding, a sizzling grill with sliced pork, a grandfather pouring with both hands. MOOD: cheerful, playful, festive."
  }
 ]

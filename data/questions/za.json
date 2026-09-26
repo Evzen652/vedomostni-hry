@@ -863,5 +863,93 @@
   "about": "Stolové hoře",
   "more_fact": "Na vrchol Stolové hory vyváží turisty lanovka s kabinou, která se během jízdy celá pomalu otáčí, aby všichni viděli výhled dokola.",
   "irony_prompt": "A single massive flat-topped mountain fills the frame, its sheer rock face rising straight up above a coastal city sprawled below. Smaller and subordinate: a thick white cloud draped neatly across the very top of the mountain like a blanket; a small cable car dangling on a wire partway up the cliff; a lone seabird gliding past the peak. MOOD: majestic, awe-inspiring, calm."
+ },
+ {
+  "id": "za-s-narodni-kvetina",
+  "cc": "za",
+  "country": "Jihoafrická republika",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Která rostlina je národní květinou Jihoafrické republiky?",
+  "answer": "Protea královská",
+  "distractors": [
+   "Strelície královská",
+   "Agapantus africký",
+   "Aloe hřebenitá"
+  ],
+  "quip_correct": "Květ o průměru až třiceti centimetrů a jmenuje se po něm i národní kriketový tým. Jiné země mají za symbol lva, tady stačí kytka.",
+  "quip_wrong": "Strelície připomíná rajského ptáka a je taky jihoafrická, agapantus i aloe rostou po celém Kapsku – národním symbolem je ale obří, trochu pichlavá koruna.",
+  "explanation": "Proteje patří k nejstarším skupinám kvetoucích rostlin a jejich příbuzní rostou i v Austrálii, což připomíná dobu, kdy byly oba kontinenty součástí Gondwany.",
+  "about": "protei královské",
+  "more_fact": "Rod dostal jméno po řeckém bohu Próteovi, který uměl měnit podobu – proteje totiž mají tolik tvarů a barev, že je botanici dlouho nedokázali roztřídit.",
+  "irony_prompt": "A gigantic pink king protea flower with a crown of spiky petals fills the frame, sitting on a small throne like royalty, while a sunbird hovers beside it as a courtier and a lion lies at its feet looking rather jealous. Smaller and subordinate: a flat-topped mountain in the hazy distance, a bee carrying a tiny parasol, a dung beetle bowing. MOOD: regal, playful, sunny."
+ },
+ {
+  "id": "za-s-afrikanske-jmeno-hrabace",
+  "cc": "za",
+  "country": "Jihoafrická republika",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co doslova znamená afrikánský název hrabáče „aardvark“, který převzala i angličtina?",
+  "answer": "Zemní prase",
+  "distractors": [
+   "Noční mravenečník",
+   "Hrabavý pes",
+   "Pouštní medvěd"
+  ],
+  "quip_correct": "Osadníci uviděli zvíře s rypáčkem, které se hrabe v hlíně, a dlouho nepřemýšleli. Zoologie pro netrpělivé.",
+  "quip_wrong": "Mravenečníka trochu připomíná a hrabe jako pes, ale osadníci ho pojmenovali podle čenichu. S medvědem nemá společného vůbec nic.",
+  "explanation": "Hrabáč dokáže za jedinou noc spořádat desítky tisíc termitů a jeho opuštěné nory pak obsazují jiná zvířata, od prasat bradavičnatých po sovy.",
+  "about": "hrabáči",
+  "more_fact": "Hrabáč je jediným žijícím druhem celého svého řádu a kvůli dvojitému „aa“ na začátku stojí v anglických slovnících mezi úplně prvními hesly.",
+  "irony_prompt": "A long-eared aardvark with a piglike snout fills the frame, digging busily in the red African earth, while a baffled farmer in a wide straw hat holds up a pink pig beside it to compare their noses. Smaller and subordinate: a row of termite mounds, a warthog peeking from a burrow, a starry dusk sky. MOOD: comic, earthy, cheerful."
+ },
+ {
+  "id": "za-s-nadrazi-1893",
+  "cc": "za",
+  "country": "Jihoafrická republika",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Ve kterém městě byl roku 1893 vyhozen z vlaku mladý právník Mohandás Gándhí, což ho přivedlo k boji proti diskriminaci?",
+  "answer": "V Pietermaritzburgu",
+  "distractors": [
+   "V Bloemfonteinu",
+   "V Kimberley",
+   "V Port Elizabeth"
+  ],
+  "quip_correct": "Platná jízdenka do první třídy nestačila – a jeden horlivý železniční úředník tak nechtěně rozjel jedno z největších hnutí 20. století.",
+  "quip_wrong": "Bloemfontein, Kimberley i Port Elizabeth leží úplně jinde. Gándhí jel z Durbanu do vnitrozemí a vystoupit musel v hlavním městě tehdejšího Natalu.",
+  "explanation": "Noc pak strávil v mrazivé čekárně nádraží a později vzpomínal, že právě tehdy se rozhodl nespravedlnost nesnášet mlčky.",
+  "about": "Gándhím v Jižní Africe",
+  "more_fact": "V Jižní Africe Gándhí prožil přes dvacet let a vyzkoušel tu metodu nenásilného odporu, kterou později použil v Indii; ve městě dnes stojí jeho socha.",
+  "irony_prompt": "An old railway platform at night fills the frame, with a lone leather suitcase and a folded umbrella left standing on it under a warm gas lamp, while the train pulls away into the dark. Smaller and subordinate: frost glittering on a wooden bench, a moth circling the lamp, a single bright star rising over the hills. MOOD: quiet, hopeful, gently heartwarming."
+ },
+ {
+  "id": "za-s-durbanske-jidlo",
+  "cc": "za",
+  "country": "Jihoafrická republika",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co je durbanský pouliční pokrm bunny chow?",
+  "answer": "Vydlabaný bochník chleba plněný kari",
+  "distractors": [
+   "Králičí ragú dušené v tmavém pivu",
+   "Sladká kynutá buchta s meruňkami",
+   "Kukuřičná kaše s grilovanou klobásou"
+  ],
+  "quip_correct": "Talíř, který se nakonec sní. Myčky nádobí v Durbanu musí mít nejklidnější život na světě.",
+  "quip_wrong": "Po králíkovi tu není ani stopy, sladká buchta by kari nepřežila a kaše s klobásou je úplně jiná jihoafrická klasika. Tady je nádobím samotné pečivo.",
+  "explanation": "Pokrm vznikl mezi indickými přistěhovalci v Durbanu, kteří tam od 19. století pracovali hlavně na cukrových plantážích.",
+  "about": "bunny chow",
+  "more_fact": "Správně se jí rukama: vydlabaný kus střídky, který kuchař položí navrch jako víčko, poslouží jako lžíce na nabírání omáčky.",
+  "irony_prompt": "A tall rectangular loaf of white bread with its top cut off and hollowed out fills the frame, brimming with steaming orange curry, while a cheerful rabbit stands beside it with a napkin tucked under its chin, fork raised, clearly relieved that no rabbit is inside. Smaller and subordinate: the cut-off bread lid resting on top like a hat, a red chilli pepper, a sunny seafront in the background. MOOD: playful, sunny, cheerful."
  }
 ]

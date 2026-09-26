@@ -3566,5 +3566,93 @@
   "image_prompt": "Fotorealistický snímek naporcovaného vrstveného medového dortu medovik s viditelnými tenkými plátky a krémem, na porcelánovém talířku, 16:9",
   "about": "medoviku",
   "irony_prompt": "A tall round layered honey cake fills the frame — many thin golden cake layers stacked with white cream between them and dusted with crumbs on top — with a little bee sitting on top wearing a crown, while a surprised bear holds a spoon. Smaller and subordinate: a honey jar with a wooden dipper; a slice on a plate showing all the layers; a kitten sniffing the cream. MOOD: sweet, cheerful, for children."
+ },
+ {
+  "id": "ru-s-klaster-v-bilem-mori",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které souostroví v Bílém moři ukrývá starobylý klášter, v jehož zdech Sověti ve 20. letech zřídili jeden z prvních táborů pozdějšího gulagu?",
+  "answer": "Solovecké ostrovy",
+  "distractors": [
+   "Kurilské ostrovy",
+   "Komandorské ostrovy",
+   "Šantarské ostrovy"
+  ],
+  "quip_correct": "Klášter postavený pro ticho a rozjímání dostal nové nájemníky. Ticha tam zůstalo dost, rozjímání o poznání méně.",
+  "quip_wrong": "Kurily ani Komandory v Bílém moři nehledej – musely by kvůli tomu obeplout celou Sibiř. Bílé moře leží na evropském severu Ruska, hned vedle Karélie.",
+  "explanation": "Klášter založili mniši v 15. století a postupně z něj vyrostla pevnost, která za krymské války odolala i ostřelování britskými loděmi.",
+  "about": "Soloveckých ostrovech",
+  "more_fact": "Klášterní hradby jsou poskládané z obřích balvanů, z nichž některé váží přes pět tun, a mniši je na místo dopravili bez jakékoli těžké techniky.",
+  "irony_prompt": "A massive white-walled monastery built of giant grey boulders fills the frame on a small island rising from a cold silvery sea, its onion domes wrapped in a thick coil of barbed wire tied with a neat ribbon bow like an unwanted gift. Smaller and subordinate: a lone seagull perched on the wire looking unimpressed, an empty rowing boat drifting nearby, a few ice floes. MOOD: wry, gently absurd, softly humorous, pale northern light."
+ },
+ {
+  "id": "ru-s-opadavy-jehlicnan",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který jehličnatý strom, jenž na zimu shazuje jehlice, tvoří většinu lesů východní Sibiře?",
+  "answer": "Modřín",
+  "distractors": [
+   "Smrk",
+   "Borovice",
+   "Jedle"
+  ],
+  "quip_correct": "Strom, který na zimu všechno odhodí a doufá, že si toho nikdo nevšimne. Na Sibiři mimochodem ta nejrozumnější strategie.",
+  "quip_wrong": "Smrk, borovice i jedle drží jehličí celou zimu a na Sibiři za to platí omrzlinami. Tenhle strom radši shodí kabát a mrazy přes –60 °C přečká na holo.",
+  "explanation": "Sibiřské modříny snesou mrazy kolem –70 °C a rostou i na permafrostu, kde jim stačí tenká vrstva půdy, která v létě rozmrzne.",
+  "about": "sibiřském modřínu",
+  "more_fact": "Dřevo modřínu obsahuje tolik pryskyřice, že dlouho odolává vlhkosti i hnilobě, a proto se v Rusku odedávna používalo na stavbu lodí, mostů a železničních pražců.",
+  "irony_prompt": "One tall larch tree fills the frame in a snowy Siberian forest, completely bare of needles and standing proudly while a heap of its golden needles lies at its feet like a dropped coat; beside it smaller spruces sag and shiver under heavy snow. Smaller and subordinate: a fluffy squirrel in a knitted scarf, a frosty breath cloud, a pale winter sun. MOOD: cheerful, cheeky, crisp winter light."
+ },
+ {
+  "id": "ru-s-musorgskeho-cyklus",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čí posmrtná výstava obrazů a návrhů inspirovala Modesta Musorgského ke klavírnímu cyklu Obrázky z výstavy?",
+  "answer": "Viktora Hartmanna",
+  "distractors": [
+   "Ivana Ajvazovského",
+   "Isaaka Levitana",
+   "Vasilije Surikova"
+  ],
+  "quip_correct": "Projít galerií, prohlédnout si desítku obrázků a odejít s hotovou legendou klasické hudby. Běžný návštěvník si odnese leda magnetku.",
+  "quip_wrong": "Ajvazovskij by dodal vlny, Levitan mlžná jezera a Surikov davy v bahně. Musorgskij se ale procházel mezi kresbami a návrhy svého přítele architekta.",
+  "explanation": "Cyklus vznikl roku 1874 za pouhé tři týdny a mezi jednotlivými obrázky se vrací „Promenáda“, hudební portrét samotného skladatele, jak prochází sály.",
+  "about": "Obrázcích z výstavy",
+  "more_fact": "Nejslavnější orchestrální verzi Obrázků z výstavy nenapsal Rus, ale Francouz Maurice Ravel, a to roku 1922 na objednávku dirigenta Sergeje Kusevického.",
+  "irony_prompt": "A grand piano fills the frame in the middle of an art gallery, its lid open and a whole parade of small painted pictures climbing out of it and marching over the keys — a tiny hut on chicken legs, a golden gate, a little chick hatching from its shell. Smaller and subordinate: a bearded composer seen from behind strolling with his hands behind his back, empty gilded frames on the walls, a sleepy museum guard. MOOD: playful, whimsical, warm lamplight."
+ },
+ {
+  "id": "ru-s-puvod-slova-vokzal",
+  "cc": "ru",
+  "country": "Rusko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Ruské slovo „vokzal“ (nádraží) má podle nejrozšířenějšího výkladu anglické kořeny. V čem?",
+  "answer": "V názvu londýnských zahrad Vauxhall",
+  "distractors": [
+   "V příjmení anglického stavitele železnic",
+   "V anglickém označení zavazadlové haly",
+   "V názvu první anglické parní lokomotivy"
+  ],
+  "quip_correct": "Rusové si od Angličanů vypůjčili zábavní park a udělali z něj místo, kde se čeká na zpožděný vlak. Poetická spravedlnost.",
+  "quip_wrong": "Žádný inženýr, hala na kufry ani lokomotiva. Za vším stojí londýnský park s koncerty a ohňostroji – nádraží tedy začínalo jako zábava.",
+  "explanation": "U stanice v Pavlovsku u Petrohradu stál od konce 30. let 19. století hudební pavilon pojmenovaný podle londýnského vzoru a jeho jméno časem přešlo na nádraží samotné.",
+  "about": "slově vokzal",
+  "more_fact": "V pavlovském hudebním pavilonu léta koncertoval Johann Strauss mladší a Petrohradčané jezdili první ruskou železnicí do Pavlovsku často hlavně kvůli jeho valčíkům.",
+  "irony_prompt": "A grand festive music pavilion fills the frame, strung with glowing paper lanterns and fireworks bursting above it, while a puffing little green steam locomotive pulls right up to its dance floor as if it were a platform. Smaller and subordinate: waltzing couples in 19th-century dress stepping into the carriages, a violinist conducting with his bow, a porter carrying a tower of hatboxes. MOOD: festive, cheerful, sparkling evening."
  }
 ]

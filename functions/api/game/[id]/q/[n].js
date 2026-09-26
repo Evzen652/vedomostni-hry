@@ -55,6 +55,9 @@ export async function onRequestGet({ params, request, env }) {
     // ve veřejném data/questions/*.json šlo i bez ID. Tohle riziko je vědomě
     // tolerované (docs/online-rezim.md, Anti-cheat) — na rozdíl od odpovědi,
     // která tu být nesmí za žádnou cenu.
+    // U SERVEROVÉ otázky (online_only) je ale id jediné, co jde vidět předem — text
+    // na webu není. Proto id serverové otázky nesmí obsahovat slovo z odpovědi;
+    // hlídá to `npm run validate` jako CHYBU (2026-09-26).
     id: q.id,
     // `cc` je tu kvůli glóbu a vlajce v rámu u otázky (2026-09-03). Odvodit se dá
     // i z prefixu `id`, ale to je nepsaná dohoda o tvaru id — radši výslovně.

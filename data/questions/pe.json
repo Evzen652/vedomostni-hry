@@ -951,5 +951,93 @@
   "about": "Duhové hoře",
   "more_fact": "Hora leží ve výšce přes 5 000 metrů nad mořem, takže se k ní turisté musí vydat na několikahodinový pochod s aklimatizací na řídký vzduch.",
   "irony_prompt": "A dramatic mountain slope fills the frame, striped horizontally in bands of rust red, mustard yellow, lavender and turquoise like a painted rainbow across the rock. Smaller and subordinate: a thin trail of hikers as tiny dots near the base; a llama standing on a lower ridge; distant snow peaks in the background. MOOD: wondrous, vivid, jaw-dropping."
+ },
+ {
+  "id": "pe-s-udoli-supe",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je výjimečné archeologické naleziště Caral v údolí řeky Supe severně od Limy?",
+  "answer": "Patří k nejstarším městům obou Amerik",
+  "distractors": [
+   "Je to největší incké hradiště v Andách",
+   "Leží dnes celé pod hladinou oceánu",
+   "Ukrývalo největší zlatý poklad Inků"
+  ],
+  "quip_correct": "Když Egypťané stavěli pyramidy, v peruánské poušti už stálo město s náměstími. Dějepis tu musel posunout pár kapitol.",
+  "quip_wrong": "Incké hradby, zlato i potopené ruiny jsou peruánská klasika. Caral je ale starší než celá Incká říše – o celá čtyři tisíciletí.",
+  "explanation": "Město kultury Norte Chico vzkvétalo kolem roku 2600 př. n. l. a mělo pyramidové chrámy a kruhová zapuštěná náměstí. Archeologové v něm nenašli zbraně ani stopy válek.",
+  "about": "Caralu",
+  "more_fact": "Obyvatelé Caralu pěstovali bavlnu a vyměňovali ji s rybáři na pobřeží za ančovičky a mušle. Archeologové tam našli i desítky fléten vyřezaných z ptačích kostí.",
+  "irony_prompt": "A stepped sandstone pyramid temple in a dusty desert valley fills the frame, with a proud ancient builder in a cotton tunic standing on top and waving smugly toward a tiny distant silhouette of Egyptian pyramids on the horizon, as if boasting he was first. Smaller and subordinate: a round sunken plaza at the pyramid's foot; a musician playing a bone flute; a llama peeking around a wall. MOOD: cheeky, sunny, playful."
+ },
+ {
+  "id": "pe-s-pocasi-hlavniho-mesta",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč v Limě, ležící v tropech přímo u oceánu, téměř nikdy pořádně neprší?",
+  "answer": "Kvůli studenému mořskému proudu u pobřeží",
+  "distractors": [
+   "Město leží v kráteru dávno vyhaslé sopky",
+   "Nad pobřežím trvale visí prach z pouště",
+   "Tropické pasáty tam vanou pouze v noci"
+  ],
+  "quip_correct": "Desetimilionová metropole skoro bez deště. Deštník je v Limě hlavně suvenýr.",
+  "quip_wrong": "Sopečný kráter, prach i líné pasáty jsou vynalézavé teorie, ale viníkem je voda – ledová voda, která proudí od jihu podél celého pobřeží.",
+  "explanation": "Humboldtův proud ochlazuje spodní vrstvu vzduchu, nad kterou leží teplejší. Vzduch nemůže stoupat, a tak vzniká jen šedá oblačnost a mrholení zvané garúa.",
+  "about": "počasí v Limě",
+  "more_fact": "Studený proud vynáší k hladině živiny, a proto patří k nejbohatším lovištím ryb na světě. Peru díky němu loví obrovské množství ančoviček, z nichž se vyrábí rybí moučka.",
+  "irony_prompt": "A gloomy but good-natured grey cloud fills the frame, hovering low over a sunny coastal city of flat-roofed houses, squeezing itself with all its might like a sponge yet producing only a few tiny drops, while a frosty blue ocean current wearing a snowy scarf flows along the shore below. Smaller and subordinate: a local vendor using a closed umbrella as a walking stick; a pelican sunbathing on a rock; sand dunes behind the city. MOOD: comic, sunny, playful."
+ },
+ {
+  "id": "pe-s-zluta-limonada",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak si v Peru nakonec poradila Coca-Cola se žlutou limonádou Inca Kola, která ji doma dlouhá léta porážela v prodejích?",
+  "answer": "Koupila podíl ve firmě, která ji vyrábí",
+  "distractors": [
+   "Zažalovala ji kvůli podobnému jménu",
+   "Stáhla se z peruánského trhu úplně",
+   "Začala svou limonádu rozdávat zdarma"
+  ],
+  "quip_correct": "Když soupeře nejde porazit, koupí se. Kapitalismus v nejčistší, nejsladší a nejžlutější podobě.",
+  "quip_wrong": "Soud, útěk i dárky by byly dramatičtější. Obří nadnárodní značka ale udělala to nejpragmatičtější – otevřela peněženku.",
+  "explanation": "Obchod proběhl v roce 1999 a Coca-Cola tím získala i práva na značku mimo Peru. Inca Kola chutná sladce po žvýkačce a její příchuť se připisuje bylině hierba luisa.",
+  "about": "Inca Kole",
+  "more_fact": "Inca Kolu založila v roce 1935 v Limě rodina britských přistěhovalců Lindleyových. Peruánci ji rádi pijí k jídlu, třeba k pečenému kuřeti pollo a la brasa, a berou ji jako národní nápoj.",
+  "irony_prompt": "A giant glass bottle of bright golden-yellow soda fills the frame, smugly sitting on a throne of stacked crates, while a dark cola bottle in a business suit bows before it holding out a bulging briefcase of coins; both bottles completely plain and unmarked. Smaller and subordinate: a plate of roast chicken on the side; a llama sipping through a straw; confetti in the air. MOOD: satirical, festive, cheerful."
+ },
+ {
+  "id": "pe-s-andska-pout",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co tradičně snášeli z hor tanečníci ukuku při andské pouti Qoyllur Rit’i nedaleko Cusca?",
+  "answer": "Bloky ledovcového ledu na zádech",
+  "distractors": [
+   "Sochy svatých z horských jeskyní",
+   "Vaky léčivých horských bylin",
+   "Kamení na stavbu nové kaple"
+  ],
+  "quip_correct": "Lidé v kostýmech medvědů tančí v noci na ledovci a pak nesou do údolí kus mrazáku. Pouť, kterou by nevymyslel ani surrealista.",
+  "quip_wrong": "Sochy, byliny i kamení by dávaly smysl, jenže led ze svaté hory byl pro poutníky svěcenou vodou v pevném skupenství – a nosil se až domů.",
+  "explanation": "Tanečníci ukuku v kostýmech medvědů vystupují v noci až na ledovec hory Qullqipunku. Kvůli rychlému tání ledovců se dnes led už neodnáší.",
+  "about": "pouti Qoyllur Rit’i",
+  "more_fact": "Pouť se koná před svátkem Božího těla a každoročně přitahuje desetitisíce lidí z celých And. Spojuje katolickou úctu ke Kristu s mnohem starším uctíváním horských duchů apu. UNESCO ji zapsalo roku 2011.",
+  "irony_prompt": "A cheerful pilgrim in a shaggy bear costume with a knitted mask fills the frame, marching proudly down a steep snowy Andean slope with a huge glittering block of glacier ice strapped to his back like a backpack. Smaller and subordinate: a llama wearing woolly ear flaps following behind; a crowd of pilgrims with plain colorful ribbons in the valley below; snow peaks glowing at sunrise. MOOD: festive, joyful, adventurous."
  }
 ]

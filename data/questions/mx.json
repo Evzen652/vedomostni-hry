@@ -839,5 +839,93 @@
   "about": "zničené fresce Diega Rivery pro Rockefeller Center",
   "image_prompt": "Fotorealistický snímek rozlehlé barevné nástěnné malby s dělníky a stroji ve stylu Diega Rivery, 16:9",
   "irony_prompt": "A muralist fills the frame standing protectively in front of his own giant wall painting, arms spread wide to shield one particular unnamed leader's portrait from a group of workers already swinging sledgehammers at the plaster nearby. Smaller and subordinate: chunks of colorful plaster already crumbling to the floor; scaffolding pulled hastily away; a crowd of onlookers gathered outside the barricaded building. MOOD: defiant, tense, doomed."
+ },
+ {
+  "id": "mx-s-oblouk-studni-yucatan",
+  "cc": "mx",
+  "country": "Mexiko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co prozrazuje oblouk stovek cenot, který se táhne kolem města Mérida na poloostrově Yucatán?",
+  "answer": "Okraj kráteru po dopadu planetky",
+  "distractors": [
+   "Břeh dávno vyschlého vnitrozemského moře",
+   "Hranici mayské říše vytyčenou studnami",
+   "Linii zlomu mezi dvěma kontinenty"
+  ],
+  "quip_correct": "Dinosauři to odnesli, Mayové dostali pitnou vodu. Rozdělení kosmické smůly jak vystřižené z účetnictví.",
+  "quip_wrong": "Vyschlé moře i zlom znějí vědecky, ale studny do kruhu nepoložila ani voda, ani Mayové – ten kruh vyrazilo něco, co přiletělo z vesmíru.",
+  "explanation": "Kráter Chicxulub má v průměru asi 180 kilometrů a leží pohřbený pod vápencem. Rozlámané horniny na jeho okraji propouštějí vodu, a proto se studně propadají právě tam.",
+  "about": "cenotách na Yucatánu",
+  "more_fact": "Dopad před 66 miliony let se dnes spojuje s vymřením neptačích dinosaurů. Samotný kráter objevili koncem 70. let geofyzici státní ropné společnosti Pemex, kteří v oblasti hledali ložiska.",
+  "irony_prompt": "A giant glowing space rock with a sheepish, apologetic face fills the frame, hovering above a jungle-green peninsula where a perfect ring of round turquoise water holes glitters below it like a necklace. Smaller and subordinate: a relaxed Maya farmer happily lowering a clay jar into one of the pools; a tiny cartoon dinosaur tail vanishing off the edge of the scene; parrots perched on the rim of the ring. MOOD: cheerful, cheeky, sunny."
+ },
+ {
+  "id": "mx-s-mexicke-zdrobneni-casu",
+  "cc": "mx",
+  "country": "Mexiko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak dlouho v Mexiku trvá „ahorita“, zdrobnělina od slova „ahora“ (teď)?",
+  "answer": "Od chvilky až po neurčito",
+  "distractors": [
+   "Vždy nejvýš pět minut",
+   "Přesně do nejbližšího poledne",
+   "Až do zítřejšího rána"
+  ],
+  "quip_correct": "Jediná časová jednotka na světě, která se měří náladou. Švýcarští hodináři by z ní dostali vyrážku.",
+  "quip_wrong": "Pět minut, poledne, zítřek – to jsou sliby s pevným koncem. „Ahorita“ žádný konec nemá, jen dobrou vůli.",
+  "explanation": "Zdrobnělina tu čas nezkracuje, ale změkčuje: „ahorita“ může znamenat okamžitě, za hodinu i nikdy. Kdo to myslí opravdu hned, řekne raději „ahora mismo“.",
+  "about": "mexickém pojetí času",
+  "more_fact": "Mexická španělština zdrobňuje neobyčejně ochotně – nejen „ahorita“, ale i „cafecito“ nebo „tantito“ (trošičku). Zdrobnělina tu často nevyjadřuje velikost, ale zdvořilost a vlídnost.",
+  "irony_prompt": "A cheerful Mexican craftsman lounging in a colorful striped hammock fills the frame, waving one hand lazily with a huge relaxed grin while a stack of unfinished wooden chairs waits patiently beside him. Smaller and subordinate: a snail slowly crossing the sunny patio; a customer tapping one foot in the doorway; a sleepy dog snoozing under the hammock. MOOD: sunny, relaxed, playful."
+ },
+ {
+  "id": "mx-s-zaminka-intervence-1838",
+  "cc": "mx",
+  "country": "Mexiko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Záminkou první francouzské intervence v Mexiku roku 1838 byla i stížnost Francouze, jemuž vojáci zpustošili podnik v Tacubaye. Čím se živil?",
+  "answer": "Byl to cukrář",
+  "distractors": [
+   "Byl to vinař",
+   "Byl to kloboučník",
+   "Byl to hodinář"
+  ],
+  "quip_correct": "Válka kvůli zákuskům. Francie vyslala flotilu, protože někdo snědl dorty a nezaplatil. Diplomacie v nejsladší podobě.",
+  "quip_wrong": "Víno, klobouky i hodinky by zněly důstojněji, jenže historie má ráda trapnost: celý konflikt se dodnes jmenuje po pečivu.",
+  "explanation": "Pan Remontel žádal náhradu 60 000 pesos a Francie jeho stížnost přibalila k dalším nárokům svých občanů. Konflikt se proto přezdívá Cukrářská válka.",
+  "about": "Cukrářské válce",
+  "more_fact": "Francouzské lodě zablokovaly přístav Veracruz a ostřelovaly pevnost San Juan de Ulúa. Při obraně přišel generál Antonio López de Santa Anna o nohu a nechal ji později pohřbít s vojenskými poctami.",
+  "irony_prompt": "An indignant pastry chef in a tall white toque fills the frame, pointing dramatically at a trampled tray of round cream puffs and flat fruit tarts at his feet, while three stern warships with plain white sails and no flags loom on the sea behind him as if summoned by his complaint. Smaller and subordinate: a crumb-covered soldier tiptoeing away; a pigeon pecking at a spilled cake; a rolled scroll tied with ribbon in the chef's other hand. MOOD: comic, absurd, sunny."
+ },
+ {
+  "id": "mx-s-fantaskni-figurky",
+  "cc": "mx",
+  "country": "Mexiko",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak podle vyprávění vznikly alebrijes, pestrobarevné fantaskní figurky z papírmaše?",
+  "answer": "Z horečnatého snu jednoho řemeslníka",
+  "distractors": [
+   "Z aztéckých kodexů o dávných bozích",
+   "Z kostýmů pro karnevalový průvod",
+   "Z hraček španělských misionářů"
+  ],
+  "quip_correct": "Jiní si z horečky přinesou kašel, tenhle pán z ní přinesl celý umělecký obor. Pojišťovna by to nazvala rizikem, Mexiko tradicí.",
+  "quip_wrong": "Kodexy, karnevaly i misionáři působí vznešeně, jenže okřídleného jaguára s ještěrčím ocasem nevymyslí nikdo při zdravém rozumu.",
+  "explanation": "Kartonář Pedro Linares z Mexico City prý roku 1936 v horečkách viděl les podivných tvorů, kteří křičeli jediné slovo: „Alebrijes!“ Po uzdravení je začal vyrábět.",
+  "about": "alebrijích",
+  "more_fact": "Řezbáři z oaxackých vesnic San Martín Tilcajete a San Antonio Arrazola převzali nápad a vyřezávají alebrijes ze dřeva stromu copal. Pestré vzory na ně často malují celé rodiny.",
+  "irony_prompt": "A huge fantastical creature fills the frame: a winged jaguar with a lizard tail, rooster feet and zigzag stripes in hot pink, turquoise and lemon yellow, grinning proudly. Smaller and subordinate: a feverish craftsman seen from behind, sitting up in bed with a wet towel on his head, pointing at it in amazement; a bowl of paper paste on the nightstand; brushes drying in a jar. MOOD: whimsical, colorful, joyful."
  }
 ]

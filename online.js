@@ -992,10 +992,12 @@ window.ZKOnline = (function () {
    * tedy do Guinejského zálivu — přesně chyba, co se řešila 2026-08-29. */
   function picframe(q) {
     if (!window.ZKPicframe) return "";
+    // `true` = ilustraci stáhnout až po odpovědi. Kreslí odpověď, takže přednačtená by
+    // šla otevřít ze síťového provozu předem — u serverových otázek jediná cesta k odpovědi.
     return window.ZKPicframe.html({
       id: q.id, cc: q.cc || String(q.id || "").split("-")[0],
       country: q.country, section: q.section,
-    });
+    }, true);
   }
   function zapojPicframe(q) {
     if (!window.ZKPicframe) return;

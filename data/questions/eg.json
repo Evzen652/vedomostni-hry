@@ -886,5 +886,93 @@
   "image_prompt": "Fotorealistický snímek nilského krokodýla vyhřívajícího se na břehu řeky Nil s pootevřenou tlamou, 16:9",
   "about": "nilském krokodýlovi",
   "irony_prompt": "A large crocodile fills the frame gliding low through calm river water, only its ridged eyes and snout breaking the surface, ripples spreading out behind it. Smaller and subordinate: crumbling temple columns rising from the reeds on the riverbank; a heron standing frozen nearby, watching warily; sunlight glinting off the water's surface. MOOD: ancient, watchful, powerful."
+ },
+ {
+  "id": "eg-s-liturgicky-jazyk-krestanu",
+  "cc": "eg",
+  "country": "Egypt",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který jazyk, poslední vývojová fáze řeči faraonů, dodnes zní při bohoslužbách egyptských křesťanů?",
+  "answer": "Koptština",
+  "distractors": [
+   "Aramejština",
+   "Syrština",
+   "Nubijština"
+  ],
+  "quip_correct": "Jazyk stavitelů pyramid přežil v kostele – mezi lidmi, kteří na faraonské bohy nevěří ani trochu. Konzervace nejvyšší třídy.",
+  "quip_wrong": "Aramejsky mluvil Ježíš, syrsky se modlí křesťané v Sýrii a nubijsky se dodnes mluví na jihu u Asuánu. Do egyptské liturgie se ale nedostal ani jeden.",
+  "explanation": "Koptština se píše řeckou abecedou doplněnou o několik znaků převzatých z démotického písma a jako mluvený jazyk zanikla zhruba v 17. století.",
+  "about": "koptštině",
+  "more_fact": "Znalost koptštiny pomohla Champollionovi rozluštit hieroglyfy, protože díky ní pochopil, že některé znaky zapisují zvuky. Koptové tvoří odhadem kolem desetiny obyvatel Egypta.",
+  "irony_prompt": "A serene elderly priest in dark robes fills the frame, chanting joyfully with his head tilted back, and from his mouth float glowing golden sound ribbons that curl into tiny dancing pyramids and ibis birds. Smaller and subordinate: a bronze incense burner puffing curly smoke, a candle flame leaning in to listen, a cat asleep on a wooden pew. MOOD: warm, playful, gently mystical."
+ },
+ {
+  "id": "eg-s-udoli-u-fajjumu",
+  "cc": "eg",
+  "country": "Egypt",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co najdou návštěvníci v údolí uprostřed pouště nedaleko oázy Fajjúm, které UNESCO zapsalo mezi přírodní světové dědictví?",
+  "answer": "Zkameněliny pravěkých velryb se zadníma nohama",
+  "distractors": [
+   "Otisky dinosauřích stop v pískovci",
+   "Kráter po dopadu obřího meteoritu",
+   "Nejstarší palmovou oázu na světě"
+  ],
+  "quip_correct": "Velryby uprostřed Sahary – a ještě s nohama. Evoluce si tu zjevně nemohla vybrat, jestli chce na souš, nebo do moře.",
+  "quip_wrong": "Dinosauří stopy, kráter i palmy by se do pouště hodily líp, jenže tady před čtyřiceti miliony let šplouchalo moře. A v něm plavali tvorové, kteří ještě nezapomněli chodit.",
+  "explanation": "Údolí se arabsky jmenuje Wádí al-Hítán, tedy Údolí velryb, a kostry druhu Basilosaurus v něm leží přímo na povrchu i s drobnými kostmi zadních končetin.",
+  "about": "Údolí velryb",
+  "more_fact": "Kromě velryb se tu našly zuby žraloků, krunýře mořských želv a kosti sirén, předků dnešních kapustňáků a dugongů. Údolí navíc patří k nejlepším místům v Egyptě na pozorování hvězd.",
+  "irony_prompt": "A giant ancient whale skeleton fills the frame, lying across golden desert dunes and proudly showing off a pair of tiny, delicate back legs as if it had just finished a dance class. Smaller and subordinate: a camel staring at the whale in disbelief, a lizard wearing a snorkel mask on a rock, seashells scattered across the sand. MOOD: absurd, sunny, playful."
+ },
+ {
+  "id": "eg-s-zena-na-faraonskem-trunu",
+  "cc": "eg",
+  "country": "Egypt",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se na sochách a reliéfech často nechávala zobrazovat Hatšepsut, jedna z mála žen, které vládly Egyptu jako faraon?",
+  "answer": "S umělým vousem jako mužský vládce",
+  "distractors": [
+   "Se závojem přes celý obličej",
+   "Vždy jen zezadu, bez tváře",
+   "S kočičí hlavou bohyně Bastet"
+  ],
+  "quip_correct": "Faraon má mít vousy, tak si je obstarala. Když jde o trůn, móda není na pořadu jednání.",
+  "quip_wrong": "Závoj ani kočičí hlava by faraonskou autoritu nepodpořily a tvář schovaná zezadu je pro vládkyni, která se chce zapsat do dějin, dost nešťastná volba. Rozhodly doplňky.",
+  "explanation": "I faraoni-muži nosili falešný vous jen při obřadech jako znak božské moci, takže Hatšepsut převzala úplně stejný úřední doplněk.",
+  "about": "Hatšepsut",
+  "more_fact": "Její zádušní chrám v Dér el-Bahrí stoupá do skal po terasách a vypráví i o výpravě do země Punt, odkud lodě přivezly živé kadidlovníky. Nástupce Thutmose III. dal později mnoho jejích podob otlouct.",
+  "irony_prompt": "A regal ancient Egyptian queen, clearly a woman, seated on a golden throne fills the frame, calmly adjusting a long braided ceremonial false beard hooked over her ears as if it were a fashion accessory, while a servant holding a mirror stifles a giggle. Smaller and subordinate: a cat sniffing the beard suspiciously, two small incense trees in round pots, a sphinx statue giving an approving nod. MOOD: witty, regal, playful."
+ },
+ {
+  "id": "eg-s-jarni-svatek-pochoutka",
+  "cc": "eg",
+  "country": "Egypt",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jakou pochoutku jedí Egypťané na jarní svátek Šam an-Nasím, ačkoli úřady každý rok varují před otravami?",
+  "answer": "Nasolenou kvašenou rybu",
+  "distractors": [
+   "Pražené saranče se solí",
+   "Kvašené velbloudí mléko",
+   "Datle nakládané v octě"
+  ],
+  "quip_correct": "Svátek jarního vánku se slaví rybou, kterou je cítit na celou ulici. Egypťané tomu říkají tradice, lékaři sezóna.",
+  "quip_wrong": "Saranče, velbloudí mléko i datle v octě by lékaře nechaly spát klidně. Varování se týká jediné pochoutky – a ta se přesto jí po tisíciletí.",
+  "explanation": "Jmenuje se fesích a vyrábí se z cípalů, kteří se nechají vysušit na slunci a pak týdny kvasit v soli; špatně připravená ryba může způsobit botulismus.",
+  "about": "svátku Šam an-Nasím",
+  "more_fact": "Šam an-Nasím, doslova „vdechování vánku“, slaví muslimové i křesťané v pondělí po východních Velikonocích. Rodiny ho tráví venku v parcích a u Nilu s obarvenými vejci a zelenou cibulkou.",
+  "irony_prompt": "A flat oval silvery fish lying on a picnic cloth fills the frame, wearing a tiny clothespin on its own nose, while a family in the park leans back from it with watering eyes yet keeps reaching for another piece. Smaller and subordinate: a basket of brightly dyed eggs, bunches of green spring onions, a paper kite in the blue sky above the Nile. MOOD: comic, sunny, festive."
  }
 ]

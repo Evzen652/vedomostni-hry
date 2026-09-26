@@ -22429,5 +22429,93 @@
   "image_prompt": "Fotorealistický snímek muchomůrky červené s bílými tečkami na mechu v jehličnatém lese, přirozené světlo, bez lidí, 16:9",
   "about": "muchomůrce červené",
   "irony_prompt": "A massive mushroom with a bright red dome-shaped cap covered in raised white dots fills the centre of the frame. A cautious woodland snail wearing a makeshift protective suit of stitched leaves is carefully dusting one of the white dots with a tiny broom. Smaller and subordinate: a generic beetle holding its stomach in simulated horror while pointing at the red cap, and a crossed knife and fork made of twigs buried in the dirt to signify it is not a meal."
+ },
+ {
+  "id": "cz-s-vynalez-z-chrudimi",
+  "cc": "cz",
+  "country": "Česko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co si roku 1827 nechal patentovat lesník Josef Ressel, rodák z Chrudimi?",
+  "answer": "Lodní šroub",
+  "distractors": [
+   "Parní turbínu",
+   "Kormidelní převod",
+   "Potápěčský zvon"
+  ],
+  "quip_correct": "Ano. Lesník ze země bez moře vymyslel, čím se dodnes pohánějí zaoceánské lodě. Česká specialita: řešit problémy, které doma nemáme.",
+  "quip_wrong": "Turbínu, kormidlo i zvon vymysleli jiní – chrudimský rodák dal lodím to, co je tlačí kupředu.",
+  "explanation": "Zkušební parník Civetta s jeho vynálezem vyplul roku 1829 v Terstu, jenže praskla parní trubka a úřady další pokusy zakázaly.",
+  "about": "Josefu Resselovi",
+  "more_fact": "Ressel zůstal celý život hlavně lesníkem, zalesňoval vyprahlý Kras u Jadranu a zemřel v Lublani, kde mu dnes stejně jako v Chrudimi a ve Vídni stojí pomník.",
+  "irony_prompt": "A giant shiny bronze ship propeller fills the frame, carried proudly through a deep green forest by a cheerful 19th-century forester in a hunting hat, while startled deer and a boar stare at the strange metal flower. Smaller and subordinate: a tiny toy steamboat bobbing in a forest puddle, a woodpecker tapping the propeller, pine cones everywhere. MOOD: playful, proud, woodland charm."
+ },
+ {
+  "id": "cz-s-krusnohorske-mestecko",
+  "cc": "cz",
+  "country": "Česko",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Která krušnohorská obec je podle počtu obyvatel nejmenším městem Česka?",
+  "answer": "Přebuz",
+  "distractors": [
+   "Horní Blatná",
+   "Abertamy",
+   "Hora Svaté Kateřiny"
+  ],
+  "quip_correct": "Správně. Město, kde starosta může pozdravit každého občana jménem – a do oběda to má hotové.",
+  "quip_wrong": "Horní Blatná, Abertamy i Hora Svaté Kateřiny jsou taky malé, ale proti vítězi jsou to metropole.",
+  "explanation": "Žije tu necelá stovka lidí, přestože před druhou světovou válkou tu bydlelo přes tisíc obyvatel, převážně Němců; po válce se obec skoro vylidnila.",
+  "about": "nejmenším městě Česka",
+  "more_fact": "Obec leží ve výšce kolem 900 metrů a v okolních vřesovištích a rašeliništích přežívá vzácný tetřívek obecný, jeden z nejohroženějších ptáků Česka.",
+  "irony_prompt": "A tiny mountain town fills the frame, so small that its whole church, a handful of cottages and one bench fit on a single snowy hilltop, while a proud mayor in a sash shakes hands with the entire population lined up in one short row. Smaller and subordinate: a black grouse strutting in the heather, a dog standing in the row as if counted too, misty spruce forests around. MOOD: cosy, playful, gently ironic."
+ },
+ {
+  "id": "cz-s-brnensky-slang",
+  "cc": "cz",
+  "country": "Česko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se v brněnském slangu hantecu říká tramvaji?",
+  "answer": "Šalina",
+  "distractors": [
+   "Kodrcka",
+   "Plecháč",
+   "Drnkačka"
+  ],
+  "quip_correct": "Správně. Pražák nastoupí do tramvaje, Brňák do šaliny – a oba si myslí, že ten druhý mluví divně.",
+  "quip_wrong": "Kodrcka, plecháč i drnkačka zní uvěřitelně, jenže Brno si pro tramvaj vypůjčilo z němčiny něco elegantnějšího.",
+  "explanation": "Slovo vzniklo z německého „elektrische Linie“, tedy elektrická linka; hantec je směs češtiny, němčiny, jidiš a starého argotu.",
+  "about": "brněnském hantecu",
+  "more_fact": "Brno provozovalo koněspřežnou tramvaj už od roku 1869, tedy o šest let dřív než Praha, a patří tak k nejstarším tramvajovým městům střední Evropy.",
+  "irony_prompt": "A cheerful red tram seen exactly side-on fills the frame, its plain smooth unmarked paintwork gleaming as it rattles over cobblestones, while a local in a flat cap leans out of the window and winks at a baffled tourist on the pavement. Smaller and subordinate: a pigeon riding on the roof, a steaming cup of coffee on a window ledge, twin cathedral spires on a hill. MOOD: playful, cheeky, warm."
+ },
+ {
+  "id": "cz-s-rekordni-dira-na-prerovsku",
+  "cc": "cz",
+  "country": "Česko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je světově výjimečná Hranická propast na Přerovsku?",
+  "answer": "Je nejhlubší známou zatopenou propastí světa",
+  "distractors": [
+   "Je nejdelší průtočnou jeskyní střední Evropy",
+   "Má nejvyšší podzemní vodopád v Evropě",
+   "Skrývá největší krápníkový dóm střední Evropy"
+  ],
+  "quip_correct": "Ano. Zatímco svět honí rekordy v Himálaji, Česko má ten svůj schovaný pod hladinou u Hranic – a pořád mu nevidí na dno.",
+  "quip_wrong": "Průtočné jeskyně, vodopády i krápníkové dómy najdete jinde – tady jde čistě o hloubku pod vodou.",
+  "explanation": "Suchá část měří asi 69 metrů; pod hladinou jezírka dosáhla podvodní sonda v roce 2016 hloubky 404 metrů a skutečné dno zatím nikdo neviděl.",
+  "about": "Hranické propasti",
+  "more_fact": "Podle geologů ji na rozdíl od běžných krasových jeskyní nevyhloubil déšť prosakující shora, ale voda bohatá na oxid uhličitý, která stoupala z hlubin.",
+  "irony_prompt": "A dramatic limestone chasm with a small emerald-green lake at its bottom fills the frame, and a diver in plain unmarked gear dangles upside down over the water on a very long rope, peering with a tiny flashlight into bottomless darkness. Smaller and subordinate: a curious owl on the cliff edge, ferns hanging from the rock, a bored fish yawning below the surface. MOOD: mysterious, playful, adventurous."
  }
 ]

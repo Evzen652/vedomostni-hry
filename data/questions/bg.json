@@ -1199,5 +1199,93 @@
   "image_prompt": "Fotorealistický snímek zasněžené sjezdovky a lanovky v lyžařském středisku Bansko v bulharském pohoří Pirin, hory v pozadí, jasné zimní počasí, 16:9",
   "about": "bulharském lyžařském středisku Bansko",
   "irony_prompt": "A steep snowy ski slope fills the frame with a racer carving dramatically through gates at high speed, spray of snow flying up behind. Smaller and subordinate: cheering spectators lining the course; a chairlift climbing overhead; a scoreboard glowing dimly out of focus at the finish. MOOD: exhilarating, competitive."
+ },
+ {
+  "id": "bg-s-mluvnice-podstatnych-jmen",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kde stojí v bulharštině určitý člen, tedy obdoba anglického „the“?",
+  "answer": "Připojuje se na konec slova jako koncovka",
+  "distractors": [
+   "Stojí před slovem jako v angličtině",
+   "Bulharština ho nemá, stejně jako čeština",
+   "Používá se jen u vlastních jmen osob"
+  ],
+  "quip_correct": "Správně. Kniga je kniha, knigata je ta kniha – Bulhaři si ukazovátko lepí slovu rovnou na záda.",
+  "quip_wrong": "Před slovem ho mají Angličané, bez něj se obejde čeština – bulharština ho ale schovává úplně jinam.",
+  "explanation": "Stejný rys má i makedonština a rumunština; jazykovědci ho považují za jeden z typických znaků balkánského jazykového svazu.",
+  "about": "určitém členu v bulharštině",
+  "more_fact": "Bulharská slovesa navíc rozlišují, jestli mluvčí událost viděl na vlastní oči, nebo o ní jen slyšel – k tomu slouží zvláštní převyprávěcí tvary.",
+  "irony_prompt": "A plump round loaf of Bulgarian bread fills the frame, wearing a shiny little golden bow on its very back end like a crown put on backwards, while a proud baker points at that one loaf among a row of plain identical loaves. Smaller and subordinate: a confused English gentleman placing a crown on the front of his own loaf, a stork on a chimney, a jar of yogurt. MOOD: playful, warm, witty."
+ },
+ {
+  "id": "bg-s-letni-osvezeni",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co si Bulhaři v letních vedrech servírují pod názvem tarator?",
+  "answer": "Studenou polévku z jogurtu a okurek",
+  "distractors": [
+   "Hustý guláš z jehněčího a fazolí",
+   "Kynutou placku plněnou sýrem",
+   "Pečenou papriku plněnou rýží"
+  ],
+  "quip_correct": "Přesně. Polévka, kterou nemusíte ohřívat, ani když v Plovdivu padají teplotní rekordy – kuchyňská lenost v tom nejlepším smyslu.",
+  "quip_wrong": "Guláš, placka i plněná paprika by vás v červencovém žáru spíš uvařily – tarator se jí vychlazený a lžící.",
+  "explanation": "Do jogurtu zředěného vodou patří nakrájená okurka, česnek, kopr, vlašské ořechy a kapka oleje; v parnu se přihazují i kostky ledu.",
+  "about": "bulharském taratoru",
+  "more_fact": "Podobný pokrm znají Turci jako cacık a Řekové jako tzatziki, jenže tzatziki se maže na chléb – v Bulharsku se tarator jí z talíře lžící jako polévka.",
+  "irony_prompt": "A huge round ceramic bowl of chilled white yogurt soup fills the frame, bobbing with ice cubes, cucumber slices, sprigs of dill and walnut pieces, while a sunburnt grandfather in a straw hat dives into it like a swimming pool. Smaller and subordinate: a melting sun wiping its brow, a stork fanning itself with a wing, a floating wooden spoon used as a surfboard. MOOD: refreshing, playful, sunny."
+ },
+ {
+  "id": "bg-s-carska-kariera",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je v evropské politice výjimečný Simeon II., poslední bulharský panovník?",
+  "answer": "Z dětského cara se stal zvoleným premiérem",
+  "distractors": [
+   "Vládl nepřetržitě přes šedesát let",
+   "Stal se patriarchou bulharské církve",
+   "Vyhrál olympijskou medaili v zápase"
+  ],
+  "quip_correct": "Správně. Trůn v šesti letech, půl století exilu a nakonec premiérské křeslo – kariérní poradce by zbledl.",
+  "quip_wrong": "Šedesát let vlády, patriarší roucho i zápasnická medaile jsou pěkné pohádky – jenže skutečnost je ještě neuvěřitelnější.",
+  "explanation": "Na trůn usedl jako šestiletý roku 1943, po referendu o zrušení monarchie musel roku 1946 do exilu a premiérem byl v letech 2001–2005.",
+  "about": "Simeonu II.",
+  "more_fact": "V exilu vyrůstal hlavně ve Španělsku, kde se živil jako podnikatel; do Bulharska se poprvé po pádu komunismu podíval až v roce 1996.",
+  "irony_prompt": "A small boy's golden crown on a velvet cushion fills the frame, perched on the seat of a sleek modern office chair, while a grey-haired statesman seen only from behind places a tidy briefcase on the desk beside it. Smaller and subordinate: a little wooden toy horse on the floor, a potted palm, a stork peeking through the window. MOOD: whimsical, warm, gently ironic."
+ },
+ {
+  "id": "bg-s-sloupy-u-varny",
+  "cc": "bg",
+  "country": "Bulharsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se přezdívá poušti podobné oblasti u Varny, kde z písku trčí stovky přírodních sloupů vysokých až několik metrů?",
+  "answer": "Kamenný les",
+  "distractors": [
+   "Obří varhany",
+   "Zahrada titánů",
+   "Solné město"
+  ],
+  "quip_correct": "Ano. Les, ve kterém nic neroste, nic nešumí a nic neopadá – zato ho fotí každý, kdo míří k moři.",
+  "quip_wrong": "Varhany, titáni i solné město zní dramaticky, jenže sloupy tu stojí jako kmeny lesa, který zkameněl v pozoru.",
+  "explanation": "Bulharsky se místu říká Pobiti kamani, tedy „zatlučené kameny“; sloupy tu stojí v několika skupinách a nejvyšší měří kolem šesti metrů.",
+  "about": "přírodních sloupech u Varny",
+  "more_fact": "Vědci se dodnes přou, jak sloupy vznikly – jedna teorie mluví o zkamenělých korálech, jiná o metanu, který před miliony let stoupal mořským dnem a tmelil písek.",
+  "irony_prompt": "A forest of pale stone columns fills the frame, rising from golden sand like tree trunks, and a confused woodcutter stands among them scratching his head while holding an axe with a comically bent blade. Smaller and subordinate: a lizard sunbathing on a column top, a lost seagull, a picnic blanket. MOOD: playful, sunny, puzzled."
  }
 ]

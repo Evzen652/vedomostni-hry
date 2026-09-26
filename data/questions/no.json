@@ -948,5 +948,93 @@
   "about": "norských stavových kostelech",
   "more_fact": "Nejstarší dochovaný stavový kostel v Urnes je starý přes 850 let a je zapsaný na seznamu UNESCO — jeho vyřezávané dveře zdobí propletení hadi a draci ve stylu, který používali i staří Vikingové.",
   "irony_prompt": "A tall dark wooden stave church fills the frame, its steep stacked shingled roofs rising in tiers, each gable tipped with a carved dragon head snarling into the sky. Smaller and subordinate: a light dusting of snow along the roof edges; a single evergreen tree beside the entrance; soft grey morning light behind the silhouette. MOOD: mysterious, majestic, quietly magical."
+ },
+ {
+  "id": "no-s-vanocni-susena-ryba",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "V čem se v Norsku před vařením několik dní máčí sušená ryba na vánoční pokrm lutefisk?",
+  "answer": "V roztoku louhu",
+  "distractors": [
+   "V mořské vodě",
+   "V bylinné pálence",
+   "V kyselém mléce"
+  ],
+  "quip_correct": "Jídlo, jehož příprava sdílí chemii s čističem odpadů. Norové tomu říkají tradice, zbytek světa odvaha.",
+  "quip_wrong": "Mořská voda, pálenka i kyselé mléko by zněly jako rozumný kuchařský postup. Lutefisk ale rozum nepotřebuje – potřebuje žíravinu.",
+  "explanation": "Louh rybu nafoukne do rosolovité konzistence a pak se musí několik dní vymáčet v čisté vodě, jinak by byla nepoživatelná. Podává se se slaninou, hráškovou kaší a bramborami.",
+  "about": "lutefisku",
+  "more_fact": "Lutefisk je tak zásaditý, že na talíři dokáže zčernat stříbrné příbory, proto se k němu používá obyčejná ocel. Oblíbený je i mezi potomky skandinávských přistěhovalců v Minnesotě.",
+  "irony_prompt": "A giant trembling rectangular slab of glossy, jelly-like white fish fills the frame on a plain blue plate, wobbling so much that a brave Norwegian grandmother in a knitted sweater holds it steady with a fork and a determined grin. Smaller and subordinate: a bowl of mashed green peas; crispy strips of bacon; a nervous guest wearing safety goggles. MOOD: comic, cozy, wintry."
+ },
+ {
+  "id": "no-s-pravo-kazdeho-cloveka",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co v Norsku každému zaručuje staré obyčejové právo allemannsretten?",
+  "answer": "Pohyb i stanování na cizí neobdělané půdě",
+  "distractors": [
+   "Lov drobné zvěře bez loveckého lístku",
+   "Bezplatný nocleh v horských chatách",
+   "Vjezd autem na každou lesní cestu"
+  ],
+  "quip_correct": "Soukromý pozemek, a stan tam klidně postavíš. Norský statkář je asi jediný na světě, kdo místo policie přinese kávu.",
+  "quip_wrong": "Lov, chaty zadarmo i auto do lesa – to už by bylo moc. Norové rozdávají svobodu pěšky a s batohem, motor zůstává doma.",
+  "explanation": "Na jednom místě se smí tábořit až dvě noci bez svolení majitele, pokud stan stojí aspoň 150 metrů od obydlí. Sbírat se smějí i lesní plody a houby.",
+  "about": "norském právu volného pohybu",
+  "more_fact": "Od roku 1957 je právo zakotvené v zákoně o pobytu v přírodě. Souvisí s ním i norský pojem friluftsliv, život pod širým nebem, který děti poznávají už ve školce – klidně i v mrazu.",
+  "irony_prompt": "A bright orange tent pitched on a mossy hillside fills the frame, with a happy hiker waving from its doorway while a friendly farmer walks up from his red farmhouse in the distance carrying a steaming coffee pot to share. Smaller and subordinate: a bowl of wild blueberries on a rock; a curious sheep peering into the tent; a fjord glittering far below. MOOD: cheerful, welcoming, fresh."
+ },
+ {
+  "id": "no-s-slovo-ke-svacine",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co Norové označují jediným slovem „pålegg“?",
+  "answer": "Cokoli, co se dá položit na chleba",
+  "distractors": [
+   "Den volna po státním svátku",
+   "Vlněný svetr s vánočním vzorem",
+   "Ranní procházku před prací"
+  ],
+  "quip_correct": "Sýr, salám, sardinka i džem v jednom pytli. Norština šetří slovy tam, kde kuchyně šetří fantazií.",
+  "quip_wrong": "Svetr, volno i procházka jsou v Norsku posvátné, jenže tohle slovo patří do krabičky s obědem – a nic posvátnějšího Norsko nemá.",
+  "explanation": "Norská svačina matpakke bývá prostý otevřený chléb s tenkou vrstvou pålegg, zabalený do papíru. Mezi krajíce se vkládá speciální papírek, aby se neslepily.",
+  "about": "norské svačině",
+  "more_fact": "Ke krájení sýra na chleba slouží ostehøvel, hoblík na sýr, který si v roce 1925 nechal patentovat truhlář Thor Bjørklund z Lillehammeru. Dnes ho najdeš v kuchyních po celém světě.",
+  "irony_prompt": "One enormous open-faced slice of bread fills the frame on a kitchen table, piled impossibly high with cheese slices, salami, cucumber, jam and a curled sardine all at once, while a cheerful Norwegian boy in a woolly hat tries to fit it into a tiny plain lunchbox. Smaller and subordinate: a cheese slicer lying beside the bread; a patient cat eyeing the sardine; snowflakes at the window. MOOD: playful, cozy, funny."
+ },
+ {
+  "id": "no-s-sabotaz-1943",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co zničila skupina norských sabotérů v únoru 1943 v elektrárně Vemork u Rjukanu?",
+  "answer": "Zařízení na výrobu těžké vody",
+  "distractors": [
+   "Sklad zabaveného norského zlata",
+   "Loděnici pro německé ponorky",
+   "Radar protivzdušné obrany"
+  ],
+  "quip_correct": "Nacistický atomový program přibrzdili lyžaři bez jediného výstřelu. Nejlepší důkaz, že běžky jsou v Norsku zbraň.",
+  "quip_wrong": "Zlato, ponorky i radar zní jako lepší film. Skutečný cíl byl nenápadnější a nebezpečnější: voda, která vypadá obyčejně, ale váží víc.",
+  "explanation": "Těžká voda sloužila Němcům při pokusech s jaderným reaktorem. Komando se k elektrárně dostalo přes zamrzlou roklinu a nálože položilo, aniž by padl výstřel.",
+  "about": "sabotáži ve Vemorku",
+  "more_fact": "Zbytek zásob chtěli Němci o rok později odvézt trajektem přes jezero Tinnsjø, odboj ho ale potopil. Příběh se proslavil filmem Hrdinové z Telemarku s Kirkem Douglasem.",
+  "irony_prompt": "A massive snow-covered stone hydroelectric plant fills the frame, perched on the edge of a deep frozen gorge, while a row of skiers in white winter smocks glides silently away along the ridge, seen from behind. Smaller and subordinate: a single plain metal canister sliding comically down the snow; a startled owl on a pine branch; puffs of powder from their skis. MOOD: adventurous, clever, crisp."
  }
 ]

@@ -883,5 +883,93 @@
   "about": "plazu tuatara",
   "more_fact": "Na temeni hlavy má tuatara takzvané temenní oko, citlivé na světlo, které u dospělých jedinců zakrývá kůže a šupiny, ale u mláďat je slabě vidět.",
   "irony_prompt": "A tuatara reptile fills the frame basking on a mossy grey rock, its spiky crest running down its back and its calm ancient eye catching the light. Smaller and subordinate: a small fern frond curling nearby; a distant burrow entrance in the soft earth; warm afternoon sunlight glowing across the scene. MOOD: calm, ancient, quietly charming."
+ },
+ {
+  "id": "nz-s-kopec-u-porangahau",
+  "cc": "nz",
+  "country": "Nový Zéland",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je proslulý nenápadný kopec Taumata nedaleko vesnice Porangahau na Severním ostrově?",
+  "answer": "Má jedno z nejdelších místních jmen světa",
+  "distractors": [
+   "Leží přesně na 180. poledníku",
+   "Je nejstarší činnou sopkou Oceánie",
+   "Stojí na něm nejstarší strom Oceánie"
+  ],
+  "quip_correct": "Kopec vysoký tři sta metrů s názvem dlouhým přes osmdesát písmen. Poměr výšky a délky jména, který nemá obdoby.",
+  "quip_wrong": "Poledník, sopka i prastarý strom by se vešly na pohlednici. Tenhle kopec se na ni nevejde – jen jeho celý název by zabral zadní stranu.",
+  "explanation": "Maorský název Taumatawhakatangihangakoauau… má 85 písmen a vypráví o náčelníkovi Tamateovi, který tu na flétnu hrál své milované.",
+  "about": "kopci Taumata",
+  "more_fact": "Ceduli s celým názvem si turisté fotí tak často, že se stala atrakcí sama o sobě. Místní kopci říkají zkrátka Taumata a Guinnessova kniha ho vede jako rekordmana mezi zeměpisnými názvy.",
+  "irony_prompt": "A gentle grassy hill fills the frame, wrapped round and round from summit to base by one endlessly long plain white ribbon, completely blank, unrolling from a flute-playing figure seen from behind at the top. Smaller and subordinate: a tourist at the bottom tangled in the loose end of the ribbon; grazing sheep peeking through the loops; a kiwi bird tugging at the ribbon. MOOD: whimsical, playful, sunny."
+ },
+ {
+  "id": "nz-s-horsky-papousek",
+  "cc": "nz",
+  "country": "Nový Zéland",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím proslul kea, zvídavý horský papoušek z Jižních Alp, na tamních parkovištích?",
+  "answer": "Okusuje gumu a těsnění na autech",
+  "distractors": [
+   "Napodobuje zvuk motorové pily",
+   "Přes zimu spí zahrabaný ve sněhu",
+   "Hnízdí výhradně v kráterech sopek"
+  ],
+  "quip_correct": "Jediný pták, kvůli kterému by si autopůjčovna mohla účtovat příplatek za zvědavost. Chytrý, legrační a bez respektu k majetku.",
+  "quip_wrong": "Motorovou pilu umí napodobit australský lyrochvost, spánek ve sněhu ani sopky se keovi nekonají. Ten má na starosti stěrače.",
+  "explanation": "Kea je jediný papoušek na světě, který žije vysoko v horách nad hranicí lesa. Patří k nejinteligentnějším ptákům a v pokusech zvládá i úlohy na odhad pravděpodobnosti.",
+  "about": "papoušku kea",
+  "more_fact": "Kea patří mezi ohrožené druhy, ve volné přírodě jich žije jen několik tisíc. U horských silnic mu proto stavěli prolézačky, které ho měly odlákat od projíždějících aut.",
+  "irony_prompt": "A cheeky olive-green mountain parrot with flashes of orange under its wings fills the frame, perched on the roof of a small plain white car with no markings and gleefully pulling a long strip of black rubber seal out of the windscreen edge. Smaller and subordinate: a horrified tourist in hiking gear running up with arms raised; a second parrot chewing a wiper blade; snowy peaks behind. MOOD: mischievous, comic, bright."
+ },
+ {
+  "id": "nz-s-letni-obuv",
+  "cc": "nz",
+  "country": "Nový Zéland",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak Novozélanďané říkají gumovým žabkám na nohy?",
+  "answer": "Jandals",
+  "distractors": [
+   "Thongs",
+   "Slops",
+   "Flippers"
+  ],
+  "quip_correct": "Celý národ nosí v létě na nohou jazykový kompromis dvou kontinentů. A nikomu to nevadí.",
+  "quip_wrong": "„Thongs“ říkají Australané, kde si pod tím Evropan představí úplně jiné spodní prádlo, a „slops“ Jihoafričané. Novozélanďané mají vlastní.",
+  "explanation": "Slovo vzniklo spojením „Japanese sandals“. Jako obchodní značku ho v 50. letech zaregistroval Morris Yock z Aucklandu, o prvenství se ale vedou spory.",
+  "about": "novozélandských žabkách",
+  "more_fact": "Novozélandská angličtina má i další domácí slova: „chilly bin“ je chladicí box a „dairy“ malý obchůdek na rohu, i když mléko je tam jen jedno z mnoha druhů zboží.",
+  "irony_prompt": "A giant pair of bright blue rubber flip-flops fills the frame, standing upright on a sunny beach like two proud surfboards, with a cheerful barefoot family lounging on top of them as if they were deckchairs. Smaller and subordinate: a seagull stealing a flat thin potato chip; a plain white cooler box in the sand; a kiwi bird wearing tiny flip-flops. MOOD: summery, silly, joyful."
+ },
+ {
+  "id": "nz-s-portret-na-bankovce",
+  "cc": "nz",
+  "country": "Nový Zéland",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím byl výjimečný portrét horolezce Edmunda Hillaryho na novozélandské pětidolarovce vydané roku 1992?",
+  "answer": "Byl zobrazen ještě zaživa",
+  "distractors": [
+   "Byl nakreslen pouze zezadu",
+   "Měl na očích sluneční brýle",
+   "Vznikl podle kresby jeho dítěte"
+  ],
+  "quip_correct": "Většina lidí se na bankovky dostane až po smrti. Tenhle si mohl zaplatit čaj penězi s vlastním obličejem a ještě vrátit drobné.",
+  "quip_wrong": "Brýle, pohled zezadu i dětská kresba by byly roztomilé, jenže vtip je jinde: bankovka obvykle čeká, až její hrdina odejde. Tady nečekala.",
+  "explanation": "Vedle jeho tváře je na bankovce vrchol Aoraki/Mount Cook, na kterém trénoval, a traktor Ferguson, s nímž dojel k jižnímu pólu.",
+  "about": "Edmundu Hillarym",
+  "more_fact": "Za peníze a slávu z Everestu se pustil do stavby škol a nemocnic pro Šerpy v Nepálu a jeho nadace Himalayan Trust jich postavila desítky. Sám o sobě rád mluvil jako o obyčejném včelaři.",
+  "irony_prompt": "A cheerful elderly mountaineer seen from behind fills the frame, sitting on a snowy summit with a thermos and a teacup, while a giant plain green paper rectangle drifts past him on the wind carrying only a small painted snowy peak and a tiny red tractor, otherwise completely blank. Smaller and subordinate: a bumblebee circling his woolly hat; a curious parrot perched on his backpack; rocky ridges far below. MOOD: warm, playful, adventurous."
  }
 ]

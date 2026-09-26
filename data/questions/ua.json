@@ -1106,5 +1106,93 @@
   "about": "Hoverle",
   "more_fact": "Na vrchol Hoverly každoročně vystupují tisíce turistů — pěšina tam patří k nejfrekventovanějším horským trasám v celé zemi.",
   "irony_prompt": "A single rounded mountain peak fills the frame, its grassy summit rising above a sea of forested Carpathian ridges rolling into the distance. Smaller and subordinate: a small wooden trail marker post near the summit; a hiker's walking stick leaning against a rock; wisps of cloud drifting just below the peak. MOOD: fresh, adventurous, uplifting."
+ },
+ {
+  "id": "ua-s-vlecka-u-klevane",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co vytvořily stromy kolem průmyslové železniční vlečky u vesnice Klevaň?",
+  "answer": "Tunel ze zeleně, kterým projíždí vlak",
+  "distractors": [
+   "Most z propletených kořenů nad řekou",
+   "Bludiště z živých plotů pro turisty",
+   "Kruh z kmenů viditelný z letadla"
+  ],
+  "quip_correct": "Stačí pár desetiletí nechat stromy růst, a vlak jim sám vystřihne dokonalý oblouk. Nejlevnější zahradní architekt na světě.",
+  "quip_wrong": "Kořenový most ani bludiště by tu nedávaly smysl – koleje vedou k dřevozpracující továrně. Tvar krajině dal sám vlak, když si razil cestu větvemi.",
+  "explanation": "Místu se přezdívá Tunel lásky a podle místní pověry se splní přání páru, který jím projde, pokud má opravdu upřímné úmysly.",
+  "about": "Tunelu lásky",
+  "more_fact": "Po trati dodnes projíždí nákladní vlak s dřevem do továrny v nedalekém Oržívu a právě on udržuje klenbu větví pořád stejně vytvarovanou.",
+  "irony_prompt": "A long perfectly arched green tunnel of leafy trees fills the frame, with a little freight train chugging through it and trimming the leaves neatly like a hedge-cutter, while a pair of lovers stand beside the rails holding hands and dreamily ignoring it. Smaller and subordinate: a startled squirrel clinging to a branch, a heart-shaped bundle of leaves, dappled golden sunlight. MOOD: romantic, comic, warm."
+ },
+ {
+  "id": "ua-s-nazev-mesice",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který měsíc se ukrajinsky řekne „лютий“, tedy doslova „lítý, krutý“?",
+  "answer": "Únor",
+  "distractors": [
+   "Leden",
+   "Prosinec",
+   "Březen"
+  ],
+  "quip_correct": "Měsíc pojmenovaný rovnou podle nálady. Upřímnější kalendář by nevymyslel ani meteorolog.",
+  "quip_wrong": "Leden mrazí taky a prosinec je tmavý, ale nejkrutější jméno si ukrajinský kalendář schoval pro nejkratší měsíc. Březen je tam naopak „měsíc bříz“.",
+  "explanation": "Ukrajinština si stejně jako čeština ponechala slovanské názvy měsíců a listopad se v ní dokonce jmenuje úplně stejně jako u nás.",
+  "about": "ukrajinských názvech měsíců",
+  "more_fact": "Stejný kořen má i polský únor „luty“. Ruština naproti tomu přešla na latinské názvy jako „fevral“, takže se tam měsíce jmenují skoro jako v angličtině.",
+  "irony_prompt": "An enormous grumpy snowman with a fierce scowl fills the frame, stomping across a frozen village and blowing icy wind from puffed cheeks, while villagers in thick sheepskin coats huddle together shivering. Smaller and subordinate: a birch tree sprouting one hopeful tiny green bud, a cat curled on a warm stove seen through a window, frozen washing on a line. MOOD: comic, wintry, cheerful."
+ },
+ {
+  "id": "ua-s-stepni-rezervace",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Která rezervace na jihu Ukrajiny, kterou v 19. století založil statkář Friedrich Falz-Fein, je proslulá panenskou stepí a chovem Převalského koní?",
+  "answer": "Askanija-Nova",
+  "distractors": [
+   "Medobory",
+   "Synevyr",
+   "Roztoččja"
+  ],
+  "quip_correct": "Koně, kteří v přírodě skoro vymizeli, se zachraňovali v ohradě uprostřed stepi. Divokost se tu pěstovala pečlivě jako zahrádka.",
+  "quip_wrong": "Synevyr je horské jezero v Karpatech a Medobory i Roztoččja jsou kopce a lesy na západě. Za stepí a divokými koňmi je nutné vyrazit na daleký jih.",
+  "explanation": "Falz-Fein v ní založil už roku 1887 zoologickou zahradu a dovážel sem zebry, antilopy a bizony z celého světa.",
+  "about": "Askaniji-Nově",
+  "more_fact": "Step v rezervaci patří k posledním nikdy neoraným pastvinám Evropy; zbytek ukrajinských stepí lidé během posledních dvou století proměnili v pole.",
+  "irony_prompt": "A stocky wild dun-coloured horse with an upright spiky mane fills the frame on a vast golden grassland, looking proudly unimpressed, while a zebra and a bison stand behind it like confused exchange students. Smaller and subordinate: a 19th-century gentleman in a top hat holding a butterfly net, a skylark singing above, feather grass swaying. MOOD: sunny, playful, cheerful."
+ },
+ {
+  "id": "ua-s-dopis-kozaku",
+  "cc": "ua",
+  "country": "Ukrajina",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Komu podle legendy psali záporožští kozáci drzý dopis plný nadávek, který zvěčnil Ilja Repin na slavném obraze?",
+  "answer": "Tureckému sultánovi",
+  "distractors": [
+   "Ruskému carovi",
+   "Polskému králi",
+   "Krymskému chánovi"
+  ],
+  "quip_correct": "Diplomatická nóta, u které by každý zdvořilý obrat urazil pisatele. Kozáci tvrdili, že odpovídají věcně – jen trochu hlasitěji.",
+  "quip_wrong": "Car, polský král i krymský chán si od kozáků vyslechli své, ale tahle odpověď mířila do Istanbulu. Adresát předtím kozákům navrhl, ať se mu podrobí.",
+  "explanation": "Repin na obraze pracoval s přestávkami přes deset let, od roku 1880 do roku 1891, a hotové plátno koupil car Alexandr III.",
+  "about": "dopisu záporožských kozáků",
+  "more_fact": "Záporožská Sič byla kozácká pevnost na ostrovech Dněpru pod peřejemi, odtud jméno Záporoží, tedy doslova „kraj za peřejemi“.",
+  "irony_prompt": "A boisterous group of moustached Cossacks in wide trousers fills the frame around a rough wooden table, roaring with laughter as their scribe, seen from behind, scratches away with a quill on a long curling sheet turned away from us and completely blank on the side we see. Smaller and subordinate: a startled pigeon ready to carry the reply, a pot of steaming soup, a cat hiding under the bench. MOOD: rowdy, comic, cheerful."
  }
 ]

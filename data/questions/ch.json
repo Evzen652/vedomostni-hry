@@ -1407,5 +1407,93 @@
   "image_prompt": "Fotorealistický snímek kozorožce alpského s mohutnými zahnutými rohy stojícího na strmé skalní stěně ve švýcarských Alpách, v pozadí zasněžené vrcholky a modrá obloha, 16:9",
   "about": "kozorožci alpském",
   "irony_prompt": "A magnificent ibex with huge curved horns fills the frame standing impossibly balanced on a near-vertical rock face, a delighted child watching in wonder from a safe viewing trail far below. Smaller and subordinate: loose pebbles tumbling down the cliff; a soaring eagle overhead; alpine flowers growing in cracks. MOOD: cheerful, awe-struck, sunny."
+ },
+ {
+  "id": "ch-s-mezinarodni-zkratka-zeme",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč Švýcarsko používá na autech i v internetových adresách zkratku CH?",
+  "answer": "Podle latinského názvu Confoederatio Helvetica",
+  "distractors": [
+   "Podle rétorománského názvu země",
+   "Podle Churu, nejstaršího města země",
+   "Podle hesla prvních spojených kantonů"
+  ],
+  "quip_correct": "Správně. Země se čtyřmi jazyky se nedokázala shodnout na žádném z nich – tak si půjčila pátý, kterým nikdo nemluví.",
+  "quip_wrong": "Rétorománština, Chur i staré heslo by zněly švýcarsky, jenže smír mezi jazyky zajistila až mrtvá latina.",
+  "explanation": "Jméno Helvetia odkazuje na keltský kmen Helvetiů, který na území dnešního Švýcarska žil v době Julia Caesara.",
+  "about": "zkratce CH",
+  "more_fact": "Latinu nesou i švýcarské mince – místo názvu země na nich stojí jen „Helvetia“, a to právě proto, aby nebyl upřednostněn žádný z národních jazyků.",
+  "irony_prompt": "A calm, stately Roman-style goddess statue in a flowing toga fills the frame, holding up a plain red shield with a white cross, while four bickering villagers in different Alpine folk costumes argue at her feet and she simply shrugs. Smaller and subordinate: a cow with a big bell, a stack of cheese wheels, a curious eagle on a rock. MOOD: witty, calm, playful."
+ },
+ {
+  "id": "ch-s-alpsky-rekordman-ledu",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který z alpských ledovců je ze všech největší a nejdelší?",
+  "answer": "Velký Aletschský ledovec",
+  "distractors": [
+   "Ledovec Mer de Glace",
+   "Ledovec Pasterze",
+   "Rhônský ledovec"
+  ],
+  "quip_correct": "Ano. Dvě desítky kilometrů ledu v zemi, která jinak všechno měří na milimetry – tady si výjimečně nedala pozor.",
+  "quip_wrong": "Mer de Glace je francouzská chlouba, Pasterze rakouská a Rhônský ledovec švýcarský mladší bratr – ten největší ale teče od Jungfrau.",
+  "explanation": "Měří kolem 20 kilometrů a u Konkordiaplatzu je led silný přes 800 metrů; od poloviny 19. století ale ustoupil už o víc než tři kilometry.",
+  "about": "Aletschském ledovci",
+  "more_fact": "Oblast Jungfrau-Aletsch se roku 2001 stala prvním přírodním světovým dědictvím UNESCO v Alpách a glaciologové počítají s tím, že do konce století z velké části roztaje.",
+  "irony_prompt": "A colossal river of ice fills the frame, sweeping in a grand curve between snowy peaks like a frozen highway, with a tiny Swiss hiker at its edge gazing at it through a pocket telescope and looking slightly worried. Smaller and subordinate: a marmot sunbathing on a rock, a cow with a bell peering over a ridge, dark stripes of rock running along the ice. MOOD: grand, playful, fresh."
+ },
+ {
+  "id": "ch-s-inzenyr-a-pes-na-lovu",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co vynalezl švýcarský inženýr George de Mestral poté, co mu na psovi po procházce uvízly lopuchové ostny?",
+  "answer": "Suchý zip",
+  "distractors": [
+   "Zdrhovadlo",
+   "Patentku",
+   "Samolepicí pásku"
+  ],
+  "quip_correct": "Přesně. Kdo jiný než Švýcar by z otravné procházky vytěžil patent – a pes za to nedostal ani podíl.",
+  "quip_wrong": "Zdrhovadlo, patentka i lepicí páska drží taky, jenže lopuch naučil inženýra háčky a smyčky.",
+  "explanation": "Pod mikroskopem uviděl drobné háčky zachycené o smyčky v srsti; obchodní název Velcro vznikl z francouzských slov velours (samet) a crochet (háček).",
+  "about": "vynálezu suchého zipu",
+  "more_fact": "Od nápadu k patentu uběhlo skoro deset let, protože nikdo neuměl vyrobit dost pevné háčky; zlom přišel až s nylonem, ze kterého šly smyčky zpevnit a nastříhat.",
+  "irony_prompt": "A shaggy hunting dog fills the frame, its fur completely covered in spiky round burrs so it looks like a walking hedgehog, while a delighted Swiss engineer kneels beside it studying one burr through a big magnifying glass. Smaller and subordinate: a pair of shoes with a fuzzy strap, a surprised squirrel, snowy Alpine peaks. MOOD: playful, curious, sunny."
+ },
+ {
+  "id": "ch-s-zapas-v-pilinach",
+  "cc": "ch",
+  "country": "Švýcarsko",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co tradičně dostane nový král švýcarského zápasu Schwingen na velké federální slavnosti?",
+  "answer": "Živého býka",
+  "distractors": [
+   "Celoživotní zásobu sýra",
+   "Čestné občanství všech kantonů",
+   "Místo ve švýcarské vládě"
+  ],
+  "quip_correct": "Správně. Porazíte v pilinách obra z vedlejšího údolí a domů si odvedete tunu hovězího na provázku. Švýcarská skromnost v praxi.",
+  "quip_wrong": "Sýr, občanství i ministerské křeslo zní švýcarsky, jenže král zápasníků si domů odvádí dobytek.",
+  "explanation": "Zápasí se v kruhu vysypaném pilinami a soupeři se drží za krátké kalhoty z pytloviny; vyhrává, kdo protivníka položí na lopatky.",
+  "about": "švýcarském zápasu Schwingen",
+  "more_fact": "Zápasníci za vítězství nedostávají žádnou peněžní odměnu a sport zůstává amatérský – na federální slavnost se přesto sjíždí přes 50 000 diváků do arény postavené jen na jeden víkend.",
+  "irony_prompt": "A huge proud bull wearing a giant flower-decorated bell fills the frame, led by a beaming burly wrestler in plain linen shorts and a simple shirt in completely plain solid colours with no crest, no badge, no emblem, both standing in a ring of golden sawdust. Smaller and subordinate: a defeated opponent laughing as he brushes sawdust off his back, a yodeler in the crowd, a small child feeding the bull a daisy. MOOD: festive, proud, playful."
  }
 ]

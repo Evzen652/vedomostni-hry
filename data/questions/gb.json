@@ -1664,5 +1664,93 @@
   "image_prompt": "Fotorealistický snímek vlající waleské vlajky s červeným drakem na zeleno-bílém pozadí proti modré obloze, 16:9",
   "about": "waleské vlajce s červeným drakem",
   "irony_prompt": "A fierce red dragon fills the frame standing proudly on a flag with a green lower half and white upper half, wings spread wide as if guarding the whole banner by itself. Smaller and subordinate: rolling green Welsh hills behind; a castle silhouette; a soaring red kite bird. MOOD: proud, majestic, kid-friendly."
+ },
+ {
+  "id": "gb-s-keltsky-jazyk-1777",
+  "cc": "gb",
+  "country": "Spojené království",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který keltský jazyk podle tradice vymřel roku 1777 se smrtí rybářky Dolly Pentreath, a dnes ho nadšenci znovu učí i děti?",
+  "answer": "Kornština",
+  "distractors": [
+   "Manština",
+   "Kumbrijština",
+   "Skotská gaelština"
+  ],
+  "quip_correct": "Jazyk, který měl oficiálně zemřít, se dnes učí ve školkách a na silnicích visí dvojjazyčné cedule. Nejdelší klinická smrt v dějinách lingvistiky.",
+  "quip_wrong": "Manština vydržela na ostrově Man až do 20. století, kumbrijština zmizela už ve středověku a gaelština ve Skotsku žije dál. Rybářka z Mousehole patřila jinam.",
+  "explanation": "Dolly Pentreath z vesnice Mousehole se pokládá za poslední rodilou mluvčí, i když ji podle záznamů přežilo několik lidí, kteří kornsky ještě uměli.",
+  "about": "kornštině",
+  "more_fact": "UNESCO v roce 2010 změnilo status kornštiny z vymřelé na kriticky ohroženou. Místní jména v Cornwallu jsou jí plná: předpona „Tre-“ znamená usedlost a „Pen-“ vrchol nebo mys.",
+  "irony_prompt": "A cheerful old fisherwoman in a shawl and bonnet fills the frame, sitting on a harbour wall and delighted to see a crowd of tiny schoolchildren happily chattering back at her, while her clay pipe puffs out smoke rings shaped like little Celtic knots. Smaller and subordinate: a seagull stealing a crescent-shaped pastry, stacked lobster pots, a whitewashed cottage with a plain blue door. MOOD: warm, cheeky, heartwarming."
+ },
+ {
+  "id": "gb-s-jediny-jedovaty-had",
+  "cc": "gb",
+  "country": "Spojené království",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který jediný jedovatý had žije volně ve Velké Británii?",
+  "answer": "Zmije obecná",
+  "distractors": [
+   "Užovka hladká",
+   "Užovka obojková",
+   "Zmije růžkatá"
+  ],
+  "quip_correct": "Ostrov si vystačí s jediným jedovatým hadem, a přesto ho bere jako národní hrozbu. Každé jaro o něm noviny píšou, jako by šlo o kobru.",
+  "quip_wrong": "Obě užovky tu opravdu žijí, jenže jed nemají, a zmije růžkatá si vyhřívá růžek na Balkáně. Britský monopol na jed drží jen jeden druh.",
+  "explanation": "Poznáš ji podle tmavé klikaté čáry na hřbetě, zimu přečkává ve společných úkrytech a smrt po uštknutí je v celé zemi extrémně vzácná – poslední se udála v 70. letech 20. století.",
+  "about": "britské zmiji",
+  "more_fact": "Irsko žádné původní hady nemá; legenda to připisuje svatému Patrikovi, vědci spíš tomu, že se ostrov po době ledové oddělil od pevniny dřív, než se tam hadi stihli dostat.",
+  "irony_prompt": "A small grey-and-black zigzag-patterned viper fills the frame, coiled on a sunny heather moor and wearing a tiny bowler hat, looking terribly polite and slightly embarrassed while an entire English picnic party has fled their blanket in panic. Smaller and subordinate: an abandoned teapot and round scones on the blanket, a sheep calmly grazing nearby, a rabbit peeking out of a burrow. MOOD: comic, sunny, gently absurd."
+ },
+ {
+  "id": "gb-s-nejkratsi-valka",
+  "cc": "gb",
+  "country": "Spojené království",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak dlouho trvala anglo-zanzibarská válka z roku 1896, považovaná za nejkratší válku v dějinách?",
+  "answer": "Méně než hodinu",
+  "distractors": [
+   "Přesně jeden den",
+   "Necelé tři dny",
+   "Zhruba týden"
+  ],
+  "quip_correct": "Britské námořnictvo dobylo palác rychleji, než by v Londýně stihli uvařit a vypít odpolední čaj. Sultán mezitím prchl na německý konzulát.",
+  "quip_wrong": "Na den by si to rozložila válka se slušnou přípravou, na týden válka s obědovou pauzou. Tady stačilo pár salv a vlajka na paláci šla dolů.",
+  "explanation": "Střelba začala v devět ráno a skončila zhruba po 38 až 45 minutách; spor vznikl, když se trůnu po zesnulém sultánovi zmocnil uchazeč, kterého Britové neschválili.",
+  "about": "anglo-zanzibarské válce",
+  "more_fact": "Zanzibar pak musel Británii zaplatit náklady na střelivo, které bylo vypáleno proti němu. Jediná zanzibarská válečná loď, bývalá britská jachta Glasgow, skončila potopená v přístavu a její stěžně čouhaly z vody ještě roky.",
+  "irony_prompt": "A dainty porcelain teacup of steaming tea fills the frame, standing on a ship's railing beside a single biscuit still only half dunked, while far in the background one small puff of cannon smoke drifts over a white seaside palace. Smaller and subordinate: a seagull waving a white handkerchief like a surrender flag, a toppled wooden deck chair, a saucer with a slice of lemon. MOOD: dry humour, sunny, absurd."
+ },
+ {
+  "id": "gb-s-vanocni-divadelni-dama",
+  "cc": "gb",
+  "country": "Spojené království",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kdo tradičně hraje přehnaně nalíčenou „dámu“ ve vánočních pantomimách, které každou zimu plní britská divadla?",
+  "answer": "Muž v ženských šatech",
+  "distractors": [
+   "Nejmladší herečka souboru",
+   "Divák vylosovaný z hlediště",
+   "Loutka vedená ze zákulisí"
+  ],
+  "quip_correct": "Obří paruka, krinolína, knírek prosvítající pod pudrem – a celé hlediště šílí nadšením. Britská zdrženlivost má o Vánocích dovolenou.",
+  "quip_wrong": "Mladé herečky se v pantomimě převlékají spíš za chlapce a divák z hlediště se nanejvýš přidá k pokřikování. Dáma potřebuje hlas i ramena chlapa – v tom je celý vtip.",
+  "explanation": "Diváci do představení aktivně křičí – varují hrdinu větou „Je za tebou!“ nebo se s hercem přetahují „Ano, je!“ – „Ne, není!“, dokud někdo nepovolí.",
+  "about": "britské vánoční pantomimě",
+  "more_fact": "Pantomima vychází z italské commedie dell'arte a nejčastěji převypráví pohádky jako Popelka, Aladin nebo Jack a fazole. V roli dámy se objevili i slavní herci, kteří jinak hrají Shakespeara.",
+  "irony_prompt": "A towering pantomime dame fills the frame, a broad-shouldered burly man with a curly moustache wearing an enormous pink crinoline, a gigantic beehive wig and polka-dot bloomers, striking a glamorous pose on a theatre stage. Smaller and subordinate: a two-person cow costume peeking from the wings, a front-row audience roaring with laughter, confetti falling from above. MOOD: joyful, over-the-top, festive."
  }
 ]

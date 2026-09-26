@@ -1082,5 +1082,93 @@
   "about": "svátku Loi Krathong",
   "more_fact": "Krathong se tradičně plete z banánových listů a zdobí květinami, takže se po pár dnech ve vodě sám rozloží.",
   "irony_prompt": "A dark river surface fills the frame, dotted with dozens of small floating banana-leaf baskets each cradling a lit candle and fresh flowers, their glow reflecting on the water. Smaller and subordinate: a pair of hands gently releasing one more basket at the water's edge; distant silhouettes of temple spires on the riverbank; a few sky lanterns glowing faintly in the night sky above. MOOD: magical, serene, glowing."
+ },
+ {
+  "id": "th-s-prezdivka-cizincu",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Thajci říkají západním cizincům „farang“. Co dalšího toto slovo znamená?",
+  "answer": "Guavu",
+  "distractors": [
+   "Papáju",
+   "Mango",
+   "Rambutan"
+  ],
+  "quip_correct": "Turista přijde na trh a zjistí, že má stejné jméno jako ovoce v košíku. Obojí je prý zpočátku zelené a trochu tvrdé.",
+  "quip_wrong": "Mango i papája mají v thajštině vlastní jména a rambutan by k bledému cizinci barevně neseděl. Tohle ovoce do Thajska kdysi přivezli sami Evropané.",
+  "explanation": "Guavu do Thajska přivezli portugalští obchodníci, a tak dostala stejné jméno jako lidé, kteří ji přinesli.",
+  "about": "slově farang",
+  "more_fact": "Slovo farang se nejspíš vyvinulo z perského „farangí“, jak se na Blízkém východě kdysi říkalo Frankům, tedy obecně všem Evropanům.",
+  "irony_prompt": "A giant green guava fruit fills the frame on a market table, wearing a sunhat, sunglasses and a camera strap like a sunburnt tourist, while a smiling Thai fruit seller points from it to a real pink-faced backpacker standing beside it in the very same outfit. Smaller and subordinate: a three-wheeled motor rickshaw in the background, a pile of bananas, a stray cat napping. MOOD: playful, cheerful, bright tropical light."
+ },
+ {
+  "id": "th-s-cmelak-z-jeskyni",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který živočich z vápencových jeskyní západního Thajska, přezdívaný čmelák, patří k nejmenším savcům světa?",
+  "answer": "Netopýr",
+  "distractors": [
+   "Hraboš",
+   "Plch",
+   "Myšice"
+  ],
+  "quip_correct": "Váží asi tolik co dvě kancelářské sponky, a přesto létá. Většina lidí po obědě nezvládne ani vstát ze židle.",
+  "quip_wrong": "Hraboš, plch i myšice by se do soutěže o nejmenšího savce přihlásit mohli, jenže žádný z nich nelétá jeskyní. Tenhle drobeček má místo předních tlapek blány.",
+  "explanation": "Netopýr Kittiho váží kolem dvou gramů a objevil ho teprve roku 1974 thajský zoolog Kitti Thonglongya, po kterém nese jméno.",
+  "about": "netopýrovi Kittiho",
+  "more_fact": "Kvůli krátkému rypáčku připomínajícímu prasečí se mu anglicky říká i „hog-nosed bat“, tedy netopýr s prasečím nosem; žije jen v Thajsku a sousední Myanmě.",
+  "irony_prompt": "A tiny fluffy bat no bigger than a bumblebee fills the frame in close-up, hanging upside down from a limestone cave ceiling nose to nose with a real bumblebee, the two sizing each other up. Smaller and subordinate: a giant curious tourist eye peeking in with a flashlight, glittering stalactites, a drop of water about to fall. MOOD: cute, playful, glowing."
+ },
+ {
+  "id": "th-s-vychovatelka-u-dvora",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "U dvora kterého siamského krále působila vychovatelka Anna Leonowensová, předloha muzikálu Král a já?",
+  "answer": "Mongkut (Rama IV.)",
+  "distractors": [
+   "Nangklao (Rama III.)",
+   "Vajiravudh (Rama VI.)",
+   "Prajadhipok (Rama VII.)"
+  ],
+  "quip_correct": "Hollywood z něj udělal zpívajícího tyrana, přitom šlo o vzdělaného krále, který studoval latinu a astronomii. Muzikál má na pravdu vlastní rytmus.",
+  "quip_wrong": "Rama III. vládl dřív, než Anna připlula, a Rama VI. i VII. přišli až dávno po ní. Učila děti panovníka, který předtím strávil 27 let jako mnich.",
+  "explanation": "Král roku 1868 spolu s evropskými vědci přesně předpověděl úplné zatmění Slunce; na výpravě, odkud ho pozoroval, se ale nakazil malárií a zemřel.",
+  "about": "králi Mongkutovi",
+  "more_fact": "Thajsko muzikál i jeho filmové verze dlouho zakazovalo, protože podle něj zesměšňují krále; urážka panovníka je tam dodnes trestný čin.",
+  "irony_prompt": "A grand gilded royal throne room fills the frame, where a dignified king seen from behind gazes through a large brass telescope at a darkening sun, while a Victorian governess in a hoop skirt beside him teaches a row of royal children to waltz. Smaller and subordinate: a white elephant peeking through a window, a stack of closed leather-bound volumes, a parrot imitating the governess. MOOD: playful, elegant, warm golden light."
+ },
+ {
+  "id": "th-s-masky-phi-ta-khon",
+  "cc": "th",
+  "country": "Thajsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Z čeho se tradičně vyrábějí masky duchů na festivalu Phi Ta Khon ve městě Dan Sai?",
+  "answer": "Z kokosových palem a košíků na rýži",
+  "distractors": [
+   "Z banánových listů a hlíny",
+   "Z bambusu a buvolí kůže",
+   "Z papírmaše a včelího vosku"
+  ],
+  "quip_correct": "Přes rok kuchyňské náčiní, o svátcích strašidlo. Thajský košík na rýži má nejpestřejší kariéru v celé domácnosti.",
+  "quip_wrong": "Banánové listy by tanec nevydržely, buvolí kůže by strašila hlavně vahou a papírmaše je na venkov moc nóbl. Stačí to, co je po ruce na zahradě a v kuchyni.",
+  "explanation": "Festival připomíná legendu o duších, kteří vyšli z lesa doprovodit prince Vessantaru, Buddhu v jednom z předchozích životů, zpátky do města.",
+  "about": "festivalu Phi Ta Khon",
+  "more_fact": "Masky mají obří zahnuté nosy a pestré vzory, tanečníci k nim nosí cinkající zvonce a po skončení festivalu se masky tradičně házely do řeky.",
+  "irony_prompt": "A towering colourful ghost mask with a huge curved nose fills the frame, its hat clearly made from a woven rice-steaming basket, worn by a cheerful dancer in a patchwork costume ringing a cowbell. Smaller and subordinate: a surprised cook in the background searching her empty kitchen shelf for her missing basket, a scattering of sticky rice, bunting fluttering. MOOD: festive, colourful, joyful."
  }
 ]

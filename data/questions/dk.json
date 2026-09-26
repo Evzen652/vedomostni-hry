@@ -926,5 +926,93 @@
   "image_prompt": "Fotorealistický snímek skupiny otužilců skákajících do ledového moře na dánském pobřeží v zimě, v pozadí dřevěná sauna, 16:9",
   "about": "dánském zimním koupání",
   "irony_prompt": "A swimmer fills the frame launching off a wooden jetty into steel-grey winter sea, arms out, snow on the boards. Smaller and subordinate: others already in the water up to their necks, beaming; a thermometer showing a very low number; a wooden sauna hut with smoke curling from its pipe. MOOD: bracing, exhilarated, mad."
+ },
+ {
+  "id": "dk-s-danske-cislovky",
+  "cc": "dk",
+  "country": "Dánsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Dánské číslovky pro desítky od padesáti výš skrývají prastarý způsob počítání. Co doslova znamená „halvtreds“, dánsky padesát?",
+  "answer": "Dvě a půl dvacítky",
+  "distractors": [
+   "Polovina stovky",
+   "Pět plných hrstí",
+   "Deset pětek"
+  ],
+  "quip_correct": "Kdo se v Kodani ptá na cenu, potřebuje kalkulačku a pevné nervy. Dánové tvrdí, že je to logické – a nikdo z nich to neumí vysvětlit.",
+  "quip_wrong": "Polovina stovky by byla až moc rozumná a hrsti se v Dánsku počítají leda při krmení kachen. Dánové si místo toho vzali zlomky.",
+  "explanation": "Slovo je zkrácenina z „halvtredsindstyve“, doslova „půltřetí krát dvacet“; stejně vzniklo šedesát jako tři dvacítky a osmdesát jako čtyři.",
+  "about": "dánských číslovkách",
+  "more_fact": "Švédové i Norové počítají desítky pravidelně, takže dánské číslovky patří k oblíbeným terčům sousedských vtipů. Podobné počítání po dvacítkách zná i francouzština v čísle quatre-vingts.",
+  "irony_prompt": "A bewildered Danish apple seller fills the frame, standing behind a rustic wooden table and counting on the fingers of four hands borrowed from two giggling helpers, while a single shiny apple waits to be paid for. Smaller and subordinate: a patient customer holding out a few plain round coins, a cat balancing on a stack of round cheeses, a candlelit window. MOOD: playful, cozy, comically confused."
+ },
+ {
+  "id": "dk-s-zachrana-rijen-1943",
+  "cc": "dk",
+  "country": "Dánsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kam v říjnu 1943 během několika nocí převezli Dánové na rybářských lodích většinu svých židovských spoluobčanů, když se dozvěděli o chystaném zatýkání?",
+  "answer": "Do neutrálního Švédska",
+  "distractors": [
+   "Na Island",
+   "Do Anglie",
+   "Na Faerské ostrovy"
+  ],
+  "quip_correct": "Nacisté přišli zatýkat a našli prázdné byty. Takhle vypadá sabotáž, kterou provede celý národ s rybářskými čluny.",
+  "quip_wrong": "Island i Anglie ležely tak daleko, že by cestu nevydržely ani ty čluny. Stačilo přeplout úžinu, přes kterou dnes vlak přejede za pár minut.",
+  "explanation": "Zachránilo se tak přes sedm tisíc lidí; zhruba 470 zadržených nacisté odvlekli do Terezína, kde se dánské úřady o jejich osud vytrvale zajímaly.",
+  "about": "záchraně dánských Židů",
+  "more_fact": "Varování přinesl německý diplomat Georg Ferdinand Duckwitz, který chystaný zátah vyzradil dánským politikům. Izraelský památník Jad vašem ho později ocenil titulem Spravedlivý mezi národy.",
+  "irony_prompt": "A small sturdy wooden fishing boat fills the frame, gliding across a calm moonlit strait, its hull glowing warmly from a single lantern, while a flock of friendly seagulls escorts it like a guard of honour. Smaller and subordinate: a distant coastline with welcoming lit windows, a coil of rope on the deck, a lighthouse beam sweeping softly across the water. MOOD: hopeful, warm, quietly triumphant."
+ },
+ {
+  "id": "dk-s-kostel-v-pisecne-dune",
+  "cc": "dk",
+  "country": "Dánsko",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kostel svatého Vavřince u Skagenu zasypávala od 18. století putující písečná duna, až ho farníci roku 1795 museli opustit. Co z něj dodnes stojí?",
+  "answer": "Jen věž",
+  "distractors": [
+   "Jen oltář",
+   "Jen portál",
+   "Jen apsida"
+  ],
+  "quip_correct": "Víra ustoupila písku, ale věž zůstala, protože se hodila námořníkům. Pragmatismus přežil i vlastní kostel.",
+  "quip_wrong": "Oltář, portál i apsida skončily stejně jako zbytek stavby – rozebrané na stavební materiál. Písku odolala jen ta část, která byla k užitku i bez věřících.",
+  "explanation": "Loď kostela se rozebrala roku 1810 a bílá věž zůstala jako orientační bod pro lodě plující kolem nebezpečného mysu.",
+  "about": "zasypaném kostele u Skagenu",
+  "more_fact": "Nedaleko leží Råbjerg Mile, největší putující duna severní Evropy, která se každý rok posune o několik metrů k severovýchodu. Dánové ji schválně nechali volnou jako živou ukázku toho, co písek dokáže.",
+  "irony_prompt": "A tall whitewashed church tower fills the frame, standing alone and knee-deep in a golden sand dune, with sand pouring from its belfry openings like an hourglass while a sheepish sand drift curls around its base. Smaller and subordinate: a tiny sailing ship on the sea gratefully steering by the tower, a pair of beach sandals left at the tower door, marram grass waving in the wind. MOOD: whimsical, sunny, gently absurd."
+ },
+ {
+  "id": "dk-s-dvacate-pate-narozeniny",
+  "cc": "dk",
+  "country": "Dánsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím Dánové podle recesistické tradice zasypou kamaráda, který oslaví 25. narozeniny a pořád ještě nežije v manželství?",
+  "answer": "Mletou skořicí",
+  "distractors": [
+   "Hrubou solí",
+   "Rýžovou moukou",
+   "Kakaovým práškem"
+  ],
+  "quip_correct": "Aby nikdo netvrdil, že svobodný život nemá koření. Zbytek večera pak oslavenec voní jako vánoční cukroví.",
+  "quip_wrong": "Sůl by pálila v očích, mouka by z oslavence udělala strašidlo a kakao by se pletlo s dortem. Dánové si vybrali koření s vůní Vánoc.",
+  "explanation": "Kdo zůstane svobodný i do třicítky, dostane místo toho pepř a posměšnou přezdívku pebersvend nebo pebermø, tedy pepřový mládenec či pepřová panna.",
+  "about": "dánských narozeninových zvycích",
+  "more_fact": "Oslavence kamarádi často přivážou ke kandelábru nebo židli, postříkají vodou, aby koření lépe drželo, a pak na něj vysypou celé balíčky. Zvyk prý pochází od potulných obchodníků s kořením, kteří se nestihli oženit.",
+  "irony_prompt": "A laughing young adult loosely tied to a lamppost with party streamers fills the frame, completely covered head to toe in a cloud of warm brown cinnamon powder and sneezing happily while friends shake plain round tins over them. Smaller and subordinate: a dog licking cinnamon off the pavement, a small birthday cake with candles, colourful bunting overhead. MOOD: silly, festive, warm."
  }
 ]

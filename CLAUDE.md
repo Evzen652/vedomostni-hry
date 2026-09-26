@@ -81,6 +81,38 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-26 — SERVEROVÝ FOND ZALOŽEN: 220 otázek `online_only` (4 na každou z 55 zemí),
+  pásmo dospělí. Online hra je teď losuje přednostně — nová hra dostala 10 z 10 serverových.
+  A cestou dvě díry, kterými by šla odpověď serverové otázky zjistit předem.**
+  Krok A z protokolu. Do teď byl fond prázdný, takže hodnocená online hra losovala jen
+  z otázek, jejichž správné odpovědi jsou veřejně v `dist/data/questions`.
+  - **Proč dospělí:** online profil je od 2026-09-15 vždy „Dospělí“ a v D1 znamená pásmo
+    `dospeli` přesně `!kids && difficulty 3` (`band()` v `sync-d1-questions.js`).
+  - **Psalo 5 paralelních agentů** podle společného zadání (povinná pole, 9 platných sekcí,
+    pravidla o rodu, distraktorech a prozrazování, pasti ilustrací z tohoto souboru). Každý
+    si fond své země přečetl a sám našel a opravil 2–5 případů, kdy by nová otázka
+    prozradila odpověď existující (nebo naopak). **První pokus spadl celý na limit relace**
+    ještě před zápisem — repo zůstalo čisté a běh se jen zopakoval.
+  - **Ověřeno:** `validate` 0 chyb, `lint-irony` 0 chyb a 0 varování u nových id,
+    `audit:konzistence` přidal jediný (planý) nález, veřejný index dál 3 792 otázek, mapa
+    konfliktů 512 dvojic. Všech 220 jsem prošel ručně (otázka, odpověď, distraktory) a texty,
+    které agenti označili za nejisté, ověřil. Po `db:sync` lokálně 220 × `dospeli`
+    a čerstvá hra 10/10 z `-s-` id. `test:api` 184, `test:pool` 13.
+  - **DÍRA 1 — ID PROZRAZUJE ODPOVĚĎ.** Online hra posílá id už během otázky (cesta
+    k ilustraci). U veřejné otázky to nevadí, text je stejně na webu; u serverové je id
+    jediné, co jde vidět předem. **`validate` nově hlásí CHYBU, když id serverové otázky
+    obsahuje kmen slova z odpovědi** (prvních 5 písmen bez diakritiky — čeština ohýbá).
+    Ověřeno mutací (`ca-s-inzulin-z-toronta` → CHYBA). Agenti to měli v zadání a jeden id
+    kvůli tomu sám přejmenoval.
+  - **DÍRA 2 — ILUSTRACE SE STAHOVALA S OTÁZKOU.** Rám ji načítal hned (skrytou, aby se po
+    odpovědi ukázala bez čekání), jenže ilustrace kreslí ODPOVĚĎ a šla otevřít ze síťového
+    provozu. **Online ji teď stahuje až `revealPic()`** (`picframeHtml(q, odlozit)` →
+    `data-src`). Offline přednačítá dál — tam odpovědi v datech leží tak jako tak. Ověřeno
+    v prohlížeči: před odpovědí 0 požadavků na obrázek, po ní načtený a vidět.
+  - **Ilustrace ke všem 220 odeslány jednou dávkou** (~7 $); kontrola očima podle zavedeného
+    postupu (archy 3×3, rohy, výřezy) je další krok.
+  - **Při nasazení:** `db:sync --remote` (otázky jsou v D1), obrázky jdou s `npm run deploy`.
+
 - **2026-09-26 — Odveta proti člověku je výzva. Tím padá poslední otevřený nález z auditu
   kolem odvety; plus vzájemná výzva, `join` do skončené hry a tři hlášky s rodem.**
   - **`rematch.js` proti člověku hru nezakládá, ale pošle výzvu** (`{ challenge: true }`)

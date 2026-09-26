@@ -952,5 +952,93 @@
   "about": "plovoucích trzích v deltě Mekongu",
   "more_fact": "Někteří prodejci na trhu vaří a prodávají i teplá jídla přímo z malé lodní kuchyňky, takže se dá nasnídat přímo na vodě.",
   "irony_prompt": "A cluster of small wooden boats fills the frame, each piled high with colorful mounds of fruit — bright yellow pineapples, green melons, orange papayas — floating close together on calm river water. Smaller and subordinate: a tall bamboo pole rising from one boat with a single pineapple tied near its top, held high above the fruit piles; a conical hat resting on a boat's edge; morning mist drifting just above the water. MOOD: lively, colorful, bustling."
+ },
+ {
+  "id": "vn-s-francouzske-slovo",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Vietnamské slovo „bơ“ má francouzský původ. Kterou potravinu označovalo původně?",
+  "answer": "Máslo",
+  "distractors": [
+   "Sýr",
+   "Chléb",
+   "Cukr"
+  ],
+  "quip_correct": "Koloniální správa odešla, máslo zůstalo. Jazyk si z cizí nadvlády obvykle nechá to nejchutnější.",
+  "quip_wrong": "Sýr se vietnamsky řekne phô mai – taky z francouzštiny, jen z jiného slova – a chléb i cukr mají domácí jména. Tohle patří tomu, co se maže na bagetu.",
+  "explanation": "Na jihu Vietnamu se stejným slovem říká i avokádu, protože jeho dužina je měkká a mazlavá podobně jako máslo.",
+  "about": "slově bơ",
+  "more_fact": "Francouzština zanechala ve vietnamštině stovky slov: nádraží je „ga“ podle gare, káva „cà phê“ podle café a polévka „súp“ podle soupe.",
+  "irony_prompt": "A giant golden block of butter fills the frame, standing on a Vietnamese street-food cart like a proud guest of honour and wearing a tiny beret, while a cheerful cook spreads it thickly onto a crusty baguette. Smaller and subordinate: a halved avocado looking offended at sharing its name, a scooter zipping by, a glass of iced coffee. MOOD: sunny, playful, cheerful."
+ },
+ {
+  "id": "vn-s-vyvoz-koreni",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kterého koření je Vietnam největším vývozcem na světě?",
+  "answer": "Pepře",
+  "distractors": [
+   "Vanilky",
+   "Hřebíčku",
+   "Šafránu"
+  ],
+  "quip_correct": "Země, která koření vyváží po celých lodích, a polévku si přitom nejčastěji dochutí rybí omáčkou. Obchod je obchod.",
+  "quip_wrong": "Vanilka je doma hlavně na Madagaskaru, hřebíček v Indonésii a šafrán v Íránu. Vietnam vládne obyčejnému černému koření v kuličkách.",
+  "explanation": "Většina úrody pochází z Centrální vysočiny a jižních provincií a Vietnam dnes vypěstuje víc tohohle koření než kterákoli jiná země.",
+  "about": "vietnamském pepři",
+  "more_fact": "Ostrov Phú Quốc je proslulý pepřovými plantážemi, kde se popínavé rostliny pepře šplhají po vysokých dřevěných kůlech jako chmel.",
+  "irony_prompt": "A towering mountain of round black peppercorns fills the frame, spilling out of a farmer's cone-shaped straw hat onto a harbour dock, while a crane lifts a huge plain unmarked sack of them onto a plain unmarked cargo ship. Smaller and subordinate: a sailor mid-sneeze, green pepper vines climbing tall wooden poles in the background, a small cat sneezing too. MOOD: comic, sunny, cheerful."
+ },
+ {
+  "id": "vn-s-nejstarsi-narodni-park",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Který vietnamský národní park je v zemi nejstarší, vyhlášený už roku 1962?",
+  "answer": "Cuc Phuong",
+  "distractors": [
+   "Phong Nha-Ke Bang",
+   "Cat Tien",
+   "Ba Be"
+  ],
+  "quip_correct": "Chránit přírodu uprostřed let plných válek a chudoby – vietnamský smysl pro priority dokáže překvapit.",
+  "quip_wrong": "Phong Nha-Ke Bang proslul obřími jeskyněmi, Cat Tien vzácnou zvěří a Ba Be jezerem, jenže status národního parku získaly až v 90. letech nebo později.",
+  "explanation": "Park leží v krasových horách na severu země a funguje v něm záchranné centrum pro ohrožené primáty, například vzácné langury.",
+  "about": "národním parku Cuc Phuong",
+  "more_fact": "V parku roste obrovský strom, kterému se přezdívá Tisíciletý; měří kolem 45 metrů a jeho kmen by objalo jen několik lidí najednou.",
+  "irony_prompt": "An ancient giant rainforest tree with huge buttress roots fills the frame in a misty limestone jungle, wearing a plain gold medal on its bark like a proud veteran, while a family of black-and-white langur monkeys sits on its branches holding a small cake with one candle. Smaller and subordinate: a cloud of butterflies, a jagged limestone peak in the mist, a turtle carrying a tiny backpack. MOOD: cheerful, lush, whimsical."
+ },
+ {
+  "id": "vn-s-novorocni-kolac",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co podle tradice představuje čtvercový tvar koláče bánh chưng, který se připravuje na svátek Tet?",
+  "answer": "Zemi",
+  "distractors": [
+   "Rodinný dům",
+   "Vesnickou náves",
+   "Císařský palác"
+  ],
+  "quip_correct": "Kosmologie zabalená do listí a vařená půl dne. Vietnamci si na Nový rok dají doslova celý svět.",
+  "quip_wrong": "Dům, náves ani palác – legenda mířila výš. Čtverec zastupuje to, po čem chodíme, a kulatý koláč bánh giầy zase to, co máme nad hlavou.",
+  "explanation": "Podle legendy vymyslel koláč princ Lang Liêu, který neměl na drahé dary, a tak otci uvařil obyčejnou rýži – a právě tím získal trůn.",
+  "about": "koláči bánh chưng",
+  "more_fact": "Koláč se balí do listů rostliny dong, které mu dají zelenou barvu, a vaří se klidně deset až dvanáct hodin; rodiny u hrnce často bdí celou noc.",
+  "irony_prompt": "A large square green parcel cake wrapped in leaves and tied with bamboo strings fills the frame, sitting on a table like a tiny planet with miniature mountains, rivers and rice fields growing on its top, while a round white rice cake floats above it like a moon. Smaller and subordinate: a family peering in amazement, a big pot steaming over a fire, peach blossom branches. MOOD: festive, magical, cheerful."
  }
 ]

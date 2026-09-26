@@ -1550,14 +1550,20 @@
   // odpovědi stěhuje vysvětlení a tlačítka (`presunPodObrazek`). Obal je součástí
   // téhle funkce schválně — bere si ho i online část přes `ZKPicframe.html`, takže
   // obě půlky appky mají tutéž stavbu pravého sloupce a nemůžou se rozejít.
-  function picframeHtml(q){
-    return `<div class="qz-picwrap">${ramHtml(q)}<div class="qz-extra" id="qz-extra"></div></div>`;
+  // `odlozit` = ilustraci stáhnout až při odhalení (revealPic), ne s otázkou. Používá to
+  // ONLINE hra (2026-09-26): ilustrace kreslí ODPOVĚĎ, a kdyby se načetla hned, dala by
+  // se otevřít ze síťového provozu dřív, než hráč odpoví. U serverových otázek (online_only)
+  // je to jediná cesta k odpovědi předem, protože jejich text na webu není. Offline si
+  // obrázek dál přednačítá — tam odpovědi v datech leží tak jako tak a odhalení je plynulejší.
+  function picframeHtml(q, odlozit){
+    return `<div class="qz-picwrap">${ramHtml(q, odlozit)}<div class="qz-extra" id="qz-extra"></div></div>`;
   }
-  function ramHtml(q){
+  function ramHtml(q, odlozit){
     const country = esc(q.country||COUNTRY), section = esc(q.section||"");
+    const zdroj = `${odlozit ? "data-src" : "src"}="img/${esc(q.id)}.jpg"`;
     return `<div class="qz-picframe" id="qz-pic">
-      <img class="qz-picbg" id="qz-pic-bg" src="img/${esc(q.id)}.jpg" alt="" aria-hidden="true">
-      <img class="qz-pic" id="qz-pic-img" src="img/${esc(q.id)}.jpg" alt="">
+      <img class="qz-picbg" id="qz-pic-bg" ${zdroj} alt="" aria-hidden="true">
+      <img class="qz-pic" id="qz-pic-img" ${zdroj} alt="">
       <div class="qz-pic-fallback" id="qz-pic-fb">${flagStamp(q.cc,"qz-flagbig")}<span class="qz-pic-fb-text"><span class="country">${country}</span><span class="sec">${section}</span></span></div>
       <div class="qz-globewrap"><span class="qz-globe-stage"><span class="qz-medal" id="qz-medal"></span>${flagPinHtml(q.cc)}</span><span class="qz-globecap">${country}</span></div>
     </div>`;
@@ -1569,7 +1575,7 @@
   // stav (`S`, `data`) zůstává zavřený, jinak by se online mohl začít vázat na offline.
   // Obě části sdílí `#qz-body`, takže `body.querySelector` uvnitř funguje i odsud.
   window.ZKPicframe = {
-    html: q => picframeHtml(q),        // řetězec do innerHTML (obal + rám + prázdný blok)
+    html: (q, odlozit) => picframeHtml(q, odlozit),  // řetězec do innerHTML (obal + rám + prázdný blok)
     wire: () => wirePic(),             // navěsí onload/onerror u ilustrace
     globe: cc => mountGlobeMedal(cc),  // připne sdílený 3D glóbus a natočí na zemi
     reveal: () => revealPic(),         // po odpovědi odhalí ilustraci
@@ -1593,6 +1599,9 @@
   // odhalení fotky u odpovědi — fotka je odměna, ať ji není nutné hledat scrollem
   function revealPic(){
     const pic=body.querySelector("#qz-pic"); if(!pic) return;
+    // Odložená ilustrace (online, viz picframeHtml) se začne stahovat teprve teď.
+    // onload/onerror navěsil wirePic předem, takže po načtení naskočí sama.
+    pic.querySelectorAll("img[data-src]").forEach(im=>{ im.src=im.getAttribute("data-src"); im.removeAttribute("data-src"); });
     pic.classList.add("revealed");
     setTimeout(()=>pic.scrollIntoView({ behavior:"smooth", block:"nearest" }), 480);
   }

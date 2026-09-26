@@ -974,5 +974,93 @@
   "more_fact": "Rafflesie kvete jen na pár dní v roce a pak celá shnije. Její puch napodobuje rozkládající se maso schválně, aby přilákal masařky, které ji opylují místo včel.",
   "about": "rafflesii",
   "irony_prompt": "A gigantic reddish-brown five-petaled rafflesia flower fills the frame, sprawled open flat on the dark jungle floor, its surface covered in pale warty spots. Smaller and subordinate: a fly hovering just above one petal; a few fallen leaves scattered around its base; dense green jungle vines looping in the background. MOOD: strange, wonderfully gross, funny."
+ },
+ {
+  "id": "id-s-minuly-cas",
+  "cc": "id",
+  "country": "Indonésie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se v indonéštině pozná, že se něco odehrálo včera, a ne dnes?",
+  "answer": "Přidaným slůvkem, sloveso se nemění",
+  "distractors": [
+   "Změnou samohlásky uprostřed slovesa",
+   "Koncovkou podle osoby a čísla",
+   "Pomocným slovesem mít jako v angličtině"
+  ],
+  "quip_correct": "Gramatika bez časování. Indonéský student slaví, český jen tiše závidí.",
+  "quip_wrong": "Přehlásky patří němčině, koncovky češtině a „have done“ angličtině. Indonésan řekne „už jíst“ a všichni mu rozumějí.",
+  "explanation": "Minulost nese slovíčko sudah (už), budoucnost akan (bude), jinak zůstává sloveso pořád stejné. Indonéština nemá ani mluvnický rod.",
+  "about": "indonéských slovesech",
+  "more_fact": "Indonéština vyrostla z malajštiny, kterou po staletí používali obchodníci v přístavech souostroví. Za úřední jazyk ji zvolili i proto, že nepatřila žádnému velkému etniku, ani početným Jávancům.",
+  "irony_prompt": "A cheerful Indonesian cook in a batik shirt fills the frame, holding up one single identical bowl of fried rice to three customers seated in a row — a sleepy one in pyjamas at dawn, one in sunglasses at noon, one under a glowing paper lantern at night — all served in precisely the same way. Smaller and subordinate: a gecko on the wall, a scooter parked outside, steam curling from the bowl. MOOD: cheerful, playful, relaxed."
+ },
+ {
+  "id": "id-s-hranice-mezi-ostrovy",
+  "cc": "id",
+  "country": "Indonésie",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co odděluje neviditelná Wallaceova linie, která vede úžinou mezi Bali a Lombokem?",
+  "answer": "Asijskou a australskou zvířenu",
+  "distractors": [
+   "Dvě různá časová pásma",
+   "Oblast sopek a oblast bez sopek",
+   "Teplý a studený mořský proud"
+  ],
+  "quip_correct": "Pár desítek kilometrů vody a zvířata se tváří, že jde o jiný vesmír. Hraniční kontrola bez jediného celníka.",
+  "quip_wrong": "Hodinky přeřizovat nemusíš, sopky kouří na obou březích a proudy za nic nemůžou. Mění se hlavně osazenstvo stromů.",
+  "explanation": "Úžina je tak hluboká, že tudy nevedl pevninský most ani v době ledové, kdy moře opadlo. Na Bali proto žili tygři, kdežto hned za úžinou začínají kakaduové a dál na východě vačnatci.",
+  "about": "Wallaceově linii",
+  "more_fact": "Linie nese jméno Alfreda Russela Wallace, přírodovědce, který na souostroví přišel na evoluci přírodním výběrem nezávisle na Darwinovi a poslal mu o tom dopis z ostrova Ternate.",
+  "irony_prompt": "A narrow blue strait of sea fills the frame from top to bottom; on the left shore a monkey and a striped jungle cat stand at the waterline, on the right shore a white cockatoo and a small pouched marsupial stare back, both groups politely refusing to swim across. Smaller and subordinate: a fishing boat drifting in the middle, a volcano smoking on each shore, a crab shrugging on a rock. MOOD: cheerful, playful, sunny."
+ },
+ {
+  "id": "id-s-vzacna-kava",
+  "cc": "id",
+  "country": "Indonésie",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co je zvláštního na výrobě indonéské kávy kopi luwak?",
+  "answer": "Zrna nejdřív projdou trávením cibetky",
+  "distractors": [
+   "Zrna se praží v horkém sopečném popelu",
+   "Zrna sbírají vycvičení makakové",
+   "Zrna zrají v bambusu zakopaném v zemi"
+  ],
+  "quip_correct": "Nejdražší ranní šálek světa má za sebou cestu, o které se u snídaně raději nemluví.",
+  "quip_wrong": "Sopečný popel, opičí česáči i bambus zní romanticky. Skutečnost je prozaičtější a končí pod keřem.",
+  "explanation": "Zvíře si vybírá jen nejzralejší plody a trávicí enzymy prý zjemní hořkost. Kvůli poptávce ale vznikly farmy, kde se cibetky drží v klecích, a ochránci zvířat proto před kávou varují.",
+  "about": "kávě kopi luwak",
+  "more_fact": "Kávu na Jávu přivezli Nizozemci koncem 17. století a jméno ostrova se v angličtině ujalo jako slangové označení kávy vůbec — „a cup of java“.",
+  "irony_prompt": "A small round-eyed palm civet sits on a coffee branch holding a single oval red coffee cherry, and together they fill the frame, the civet looking like a smug gourmet sommelier. Smaller and subordinate: a farmer in a conical hat politely looking away, a tiny porcelain cup steaming on a leaf, a butterfly fanning its nose. MOOD: cheerful, playful, cheeky."
+ },
+ {
+  "id": "id-s-balijska-jmena",
+  "cc": "id",
+  "country": "Indonésie",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Podle čeho dostávají Balijci své první jméno, třeba Wayan, Made nebo Nyoman?",
+  "answer": "Podle pořadí narození mezi sourozenci",
+  "distractors": [
+   "Podle rýžového pole, které zdědí",
+   "Podle zvířete, které zrovna zakřičí",
+   "Podle vesnického chrámu, kam patří"
+  ],
+  "quip_correct": "Na tržišti stačí zavolat „Wayane!“ a otočí se půlka stánků. Evidence obyvatel s minimem fantazie.",
+  "quip_wrong": "Pole se dědí, chrámy se navštěvují a zvířata křičí, jak se jim zlíbí. Jméno určí prostě to, kolikátý sourozenec přijde na svět.",
+  "explanation": "Prvorozený je Wayan, druhý Made, třetí Nyoman a čtvrtý Ketut, bez ohledu na pohlaví. Páté dítě začíná pořadí znovu od Wayana.",
+  "about": "balijských jménech",
+  "more_fact": "Kasta se v balijských jménech projevuje také: potomci kněžské kasty mívají před jménem Ida Bagus nebo Ida Ayu, zatímco pořadová jména nosí hlavně prostí lidé.",
+  "irony_prompt": "A Balinese mother on a temple step proudly lines up her four children in a neat row by height, and the row fills the frame, each child holding a woven offering basket of a different size, the smallest one wobbling under a basket as big as himself. Smaller and subordinate: a rooster strutting past, frangipani blossoms on the step, a neighbour counting on her fingers. MOOD: cheerful, playful, warm."
  }
 ]

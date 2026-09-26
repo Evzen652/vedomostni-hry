@@ -1017,5 +1017,93 @@
   "about": "jeskyních Batu Caves",
   "more_fact": "V jeskyních i kolem schodů volně pobíhají opice makak jávský — jsou zvyklé na turisty a rády jim sáhnou do tašky, pokud v ní vidí něco k snědku.",
   "irony_prompt": "A dramatic staircase painted in bold rainbow stripes fills the frame, climbing steeply toward a dark cave mouth framed by towering limestone cliffs. Smaller and subordinate: a small mischievous monkey sitting on the handrail; a huge golden statue glinting at the base of the stairs; a few pigeons fluttering near the cave entrance. MOOD: vibrant, playful, adventurous."
+ },
+ {
+  "id": "my-s-vyber-panovnika",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak se v Malajsii vybírá král, oficiálně zvaný Yang di-Pertuan Agong?",
+  "answer": "Střídají se na pět let vládci devíti států",
+  "distractors": [
+   "Trůn dědí nejstarší syn zesnulého krále",
+   "Volí ho všichni občané v přímé volbě",
+   "Jmenuje ho parlament až do jeho smrti"
+  ],
+  "quip_correct": "Monarchie s rotačním rozpisem služeb. Kdo dnes nosí korunu, bude za pět let zase jen sultánem u sebe doma.",
+  "quip_wrong": "Dědictví po otci, lidové volby i doživotí – tři osvědčené recepty, a Malajsie si vymyslela čtvrtý: korunu, která obchází kolem stolu.",
+  "explanation": "Vládci devíti států, převážně sultáni, tvoří Konferenci vládců a krále volí tajným hlasováním. Guvernéři zbylých čtyř států v ní zasedají, ale krále volit nesmějí.",
+  "about": "malajsijském králi",
+  "more_fact": "V praxi jde skoro o pořadník: trůn obchází vládce v ustáleném pořadí a první kolo, zahájené roku 1957, se uzavřelo v 90. letech. Malajsie tak patří k mála volených monarchií světa.",
+  "irony_prompt": "A single ornate golden crown fills the frame, resting on a velvet cushion that is being passed hand to hand around a large round table by a circle of cheerful Malay rulers in colorful silk caps and sashes. Smaller and subordinate: the next ruler in line rubbing his hands eagerly; a cat watching from under the table; tropical palms through an arched window. MOOD: playful, festive, warm."
+ },
+ {
+  "id": "my-s-svetlusky-selangor",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím jsou proslulé světlušky na mangrovnících podél řeky Selangor?",
+  "answer": "Celé stromy blikají v jednom rytmu",
+  "distractors": [
+   "Svítí modře místo obvyklé žlutozelené",
+   "Rozsvěcují se jen za úplňku",
+   "Žijí a svítí pod vodní hladinou"
+  ],
+  "quip_correct": "Tisíce hmyzáků bez dirigenta a bez zkoušky, a přesto v taktu. Kdejaký pěvecký sbor by za to dal ruku.",
+  "quip_wrong": "Modrá barva, úplněk i podvodní život by stačily na pohádku, ale skutečnost je lepší: celý strom se rozsvěcuje a zhasíná na jediný povel.",
+  "explanation": "Samečci drobných brouků rodu Pteroptyx lákají blikáním samičky a navzájem se sladí, až strom svítí a zhasíná jako jedno světlo.",
+  "about": "synchronních světluškách",
+  "more_fact": "Mangrovy u vesnice Kampung Kuantan hostí jednu z největších kolonií synchronně blikajících světlušek na světě. Ohrožuje ji kácení mangrovů i světlo nových domů, které blikání ruší.",
+  "irony_prompt": "One large mangrove tree fills the frame at night, every branch glittering with tiny green-gold fireflies all lit at the same instant like a single string of party lights. Smaller and subordinate: a small wooden rowboat with two delighted silhouettes pointing upward; a curious crab on a mangrove root; ripples reflecting the glow. MOOD: magical, cheerful, enchanting."
+ },
+ {
+  "id": "my-s-caj-s-predstavenim",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co dělá prodavač s čajem teh tarik, než ho podá hostovi?",
+  "answer": "Přelévá ho z výšky mezi dvěma nádobami",
+  "distractors": [
+   "Nechá ho přes noc vychladnout v hlíně",
+   "Míchá ho dlouhou skořicovou tyčinkou",
+   "Ohřívá ho na rozpáleném říčním kameni"
+  ],
+  "quip_correct": "Čaj s akrobatickou vložkou. Kdo si objedná dva, dostane v podstatě cirkusové představení s mlékem.",
+  "quip_wrong": "Hlína, skořice i horký kámen zní jako lázeňský rituál, jenže tady jde o show – čaj letí vzduchem a nikdo se nesmí polít.",
+  "explanation": "Opakovaným přeléváním se nápoj z černého čaje a slazeného kondenzovaného mléka ochladí a nahoře vznikne hustá pěna. Malajské „tarik“ znamená „tažený“.",
+  "about": "čaji teh tarik",
+  "more_fact": "Teh tarik přinesli do Malajsie indičtí muslimští přistěhovalci a nejčastěji se pije v jídelnách mamak, které mívají otevřeno nonstop. Pořádají se i soutěže v nejdelším a nejefektnějším přelévání.",
+  "irony_prompt": "A grinning tea-maker fills the frame, arms stretched far apart overhead and below, pouring a long golden-brown ribbon of milky tea from one metal mug down into another in a dramatic arc, a tall cone-shaped cap of froth rising from the round lower mug. Smaller and subordinate: a wide-eyed customer ducking with his hands up; a stray cat watching the stream; a stack of plain glass cups on a counter. MOOD: lively, playful, warm."
+ },
+ {
+  "id": "my-s-slovo-pro-radeni",
+  "cc": "my",
+  "country": "Malajsie",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Které slovo, užívané v angličtině i v češtině pro nepříčetné zuřivé řádění, pochází z malajštiny?",
+  "answer": "Amok",
+  "distractors": [
+   "Berserk",
+   "Mánie",
+   "Rapl"
+  ],
+  "quip_correct": "Malajsie dala světu čaj s představením, badmintonové legendy a slovo pro chvíli, kdy někomu definitivně rupne v bedně. Velkorysá výměna.",
+  "quip_wrong": "Berserk je severský, mánie řecká a rapl německý. Malajština přispěla tím nejdivočejším – a Evropa si ho zamilovala.",
+  "explanation": "Malajské „amuk“ označovalo zuřivý útok a do Evropy ho z Malackého průlivu přivezli portugalští mořeplavci. V psychiatrii se o amoku dodnes mluví jako o kulturně podmíněném syndromu.",
+  "about": "slově amok",
+  "more_fact": "Z malajštiny se do angličtiny dostalo i „rattan“ z malajského „rotan“ nebo „gong“. Slovo „ketchup“ se naopak připisuje čínskému dialektu hokkien, jímž mluví i část malajsijských Číňanů.",
+  "irony_prompt": "A giant startled water buffalo fills the frame, charging wildly across a village square with a tangle of laundry and a woven basket stuck on its horns, dust flying everywhere. Smaller and subordinate: chickens leaping out of the way; a villager peeking from behind a plain wooden door; a toppled pile of round coconuts. MOOD: chaotic, comic, sunny."
  }
 ]

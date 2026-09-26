@@ -933,5 +933,93 @@
   "about": "dinosauřích nálezech v poušti Gobi",
   "more_fact": "Právě v mongolské Gobi paleontologové objevili slavnou zkamenělinu dvou zápasících dinosaurů — dravého velociraptora a rohatého protoceratopse, zamrzlé uprostřed souboje.",
   "irony_prompt": "A large fossilized dinosaur skeleton fills the frame, half-emerging from a golden sand dune with its curved ribs and long tail exposed to the sun. Smaller and subordinate: a cluster of round fossilized eggs nestled in a shallow sandy hollow nearby; a small paintbrush and soft-bristled tool resting beside the bones; distant flat desert horizon under a bright sky. MOOD: adventurous, sunny, wondrous."
+ },
+ {
+  "id": "mn-s-pozdrav-hosta",
+  "cc": "mn",
+  "country": "Mongolsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Na co se podle starého stepního zvyku zeptá mongolský host hned po pozdravu?",
+  "answer": "Jestli dobře tloustne dobytek",
+  "distractors": [
+   "Kolik synů má hostitel",
+   "Odkud dnes fouká vítr",
+   "Kdy se bude kočovat dál"
+  ],
+  "quip_correct": "Kde jinde se zdvořilost měří v kilogramech skopového? Stepní konverzace bez přetvářky.",
+  "quip_wrong": "Synové, vítr i kočování jsou důležité, ale v pozdravu mají přednost ovce, kozy a koně. Nejdřív stádo, pak lidé.",
+  "explanation": "Na stepi byla prosperita stáda nejdůležitější zprávou o celé rodině. Hostitel na oplátku odpoví, že zvířata jsou v pořádku, a zeptá se, jak se daří stádu hosta.",
+  "about": "mongolském pozdravu",
+  "more_fact": "Host má do jurty vstoupit bez šlápnutí na práh, protože by tím urazil hospodáře i dům. Uvnitř se chodí po směru hodinových ručiček.",
+  "irony_prompt": "A chubby, contented, fluffy sheep fills the frame, standing proudly in front of a round white felt yurt, while a smiling Mongolian visitor in a blue deel bows and politely admires its round belly and the herder beams with pride. Smaller and subordinate: a goat pushing forward to be admired too, a horse tied to a post, a steaming bowl of milk tea on a small table. MOOD: cheerful, playful, sunny steppe."
+ },
+ {
+  "id": "mn-s-stepni-pohroma",
+  "cc": "mn",
+  "country": "Mongolsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co Mongolové označují slovem dzud?",
+  "answer": "Krutou zimu, po níž hyne dobytek",
+  "distractors": [
+   "Jarní písečnou bouři z pouště",
+   "Záplavu z tajícího horského sněhu",
+   "Podzimní přesun stád na zimoviště"
+  ],
+  "quip_correct": "Když jazyk potřebuje zvláštní slovo pro zimu, je jasné, že obyčejná zima tu nestačí.",
+  "quip_wrong": "Písečné bouře i jarní záplavy na stepi znají a stěhovat se musí každý podzim. Nejhorší je ale zima, která pastvu zamkne pod led.",
+  "explanation": "Zmrzlá krusta nebo hluboký sníh zakryjí pastvu a zvířata nemají co žrát. Zima 2009–2010 připravila Mongolsko o víc než osm milionů kusů dobytka.",
+  "about": "zimě dzud",
+  "more_fact": "Po velkých dzudech se tisíce pastevců, kteří přišli o stáda, stěhují do jurtových čtvrtí na okraji hlavního města, kde se topí uhlím a zhoršuje se tak zimní smog.",
+  "irony_prompt": "A round white felt yurt half-buried in a huge snowdrift fills the frame under a pale icy sky, while a herder in a thick fur hat shares a warm blanket with a goat and a woolly sheep beside the smoking stove pipe. Smaller and subordinate: a horse wearing a knitted scarf, icicles on the door, a small dog curled on the herder's boots. MOOD: cosy, playful, warm-hearted despite the cold."
+ },
+ {
+  "id": "mn-s-doruceni-zprav",
+  "cc": "mn",
+  "country": "Mongolsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Jak Čingischánova říše doručovala zprávy napříč tisíci kilometrů?",
+  "answer": "Štafetou jezdců se stanicemi na přepřah",
+  "distractors": [
+   "Poštovními holuby z čínských chovů",
+   "Kouřovými signály z vrcholů kopců",
+   "Rytmem bubnů předávaným mezi tábory"
+  ],
+  "quip_correct": "Expresní kurýr 13. století, poháněný koňmi a otužilými zády. Sledování zásilky zajišťoval chán osobně.",
+  "quip_wrong": "Holuby, kouř i bubny by vítr nebo mlha snadno umlčely. Mongolové spoléhali na to, co uměli nejlíp.",
+  "explanation": "Síti se říkalo örtöö a stanice stály od sebe několik desítek kilometrů. Posel s kovovou destičkou zvanou paiza dostal na každé z nich čerstvého koně, jídlo i nocleh.",
+  "about": "mongolské štafetě örtöö",
+  "more_fact": "Podle Marka Pola urazili nejrychlejší poslové i několik set kilometrů za den. Nosili zvonečky, aby na další stanici měli koně připraveného dřív, než dorazili.",
+  "irony_prompt": "A galloping Mongol messenger in a flowing deel and a sturdy steppe horse fill the frame as he leaps mid-gallop onto a fresh horse held ready by a grinning station keeper beside a small round yurt. Smaller and subordinate: the tired first horse happily munching grass, jingling bells on the rider's belt, a marmot waving from its burrow. MOOD: cheerful, playful, energetic."
+ },
+ {
+  "id": "mn-s-zapasnici-v-cizine",
+  "cc": "mn",
+  "country": "Mongolsko",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Kterou cizí tradiční disciplínu po roce 2000 ovládli mongolští zápasníci?",
+  "answer": "Japonské sumó",
+  "distractors": [
+   "Turecký olejový zápas",
+   "Švýcarský zápas v pilinách",
+   "Americký profesionální wrestling"
+  ],
+  "quip_correct": "Stepní pastevci učí Japonce jejich vlastní národní sport. Diplomacie přes zadní pás.",
+  "quip_wrong": "Olej, piliny i showbyznys nechali Mongolové jiným. Zamířili rovnou do Tokia a obsadili nejvyšší patra žebříčku.",
+  "explanation": "Nejvyšší hodnost jokozuna od roku 2003 získala celá řada Mongolů a jeden z nich, Hakuhó, vyhrál rekordních 45 turnajů nejvyšší divize.",
+  "about": "mongolských zápasnících",
+  "more_fact": "Doma se zápasí bökh bez váhových kategorií i bez časového limitu. Vítěz po zápase předvádí tanec orla s pomalu rozpaženýma rukama.",
+  "irony_prompt": "A mighty sumo wrestler in a plain dark loincloth, with the broad cheerful face of a steppe herdsman, fills the frame as he stamps his foot in a round sand ring, while a small shaggy Mongolian horse peeks proudly over the edge of the ring. Smaller and subordinate: a flurry of thrown salt, a referee in a plain robe looking impressed, a small eagle perched on a lantern. MOOD: cheerful, playful, triumphant."
  }
 ]

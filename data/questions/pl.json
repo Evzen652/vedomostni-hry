@@ -1111,5 +1111,93 @@
   "image_prompt": "Fotorealistický snímek slavnostního momentu na polském stadionu, kde diváci s rukou na srdci zpívají státní hymnu, v pozadí vlaje polská bílo-červená vlajka, 16:9",
   "about": "polské státní hymně",
   "irony_prompt": "A single silver trumpet fills the frame raised triumphantly by an unseen player, a wisp of visible breath curling from its bell into cold morning air at a solemn outdoor ceremony. Smaller and subordinate: a folded flag resting on a nearby stand; a row of solemn figures standing at attention, blurred in the background; frost glinting on the grass underfoot. MOOD: solemn, stirring, proud."
+ },
+ {
+  "id": "pl-s-dokument-z-roku-1791",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím je v dějinách výjimečný polský dokument přijatý 3. května 1791?",
+  "answer": "Byl první moderní psanou ústavou Evropy",
+  "distractors": [
+   "Jako první zrušil šlechtické výsady",
+   "Přiznal ženám volební právo",
+   "Platil přes dvě stě let beze změny"
+  ],
+  "quip_correct": "Moderní ústava, na kterou sousedé zareagovali tím nejstarším argumentem – vojskem. Platila chvíli, slaví se dodnes.",
+  "quip_wrong": "Šlechtické výsady přežily, ženy si na volby počkaly do roku 1918 a o dvou stoletích platnosti nemůže být řeč. Polsko zazářilo jinak – papírem dřív než Francie.",
+  "explanation": "Na světě ji předběhla jen ústava Spojených států. Zavedla dělbu moci a zrušila liberum veto, kterým mohl jediný poslanec zablokovat celý sněm.",
+  "about": "Ústavě 3. května",
+  "more_fact": "Za komunismu byl svátek 3. května zrušen a oficiálně se obnovil až v roce 1990. Dnes je státním svátkem a slaví se vojenskými přehlídkami, koncerty a pikniky.",
+  "irony_prompt": "A giant rolled parchment scroll tied with a red ribbon and a wax seal fills the frame, being proudly carried like a trophy on the shoulders of a cheering crowd of 18th-century Polish nobles in sashes and fur hats, while two scowling neighbouring kings peek jealously over a hedge. Smaller and subordinate: a small dog in a tiny fur hat; tricorn hats tossed into the air; a baroque church dome behind. MOOD: celebratory, cheeky, bright."
+ },
+ {
+  "id": "pl-s-falesny-pritel-cechu",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Co najde Čech, který se v Polsku vydá do „sklepu“?",
+  "answer": "Obchod",
+  "distractors": [
+   "Vinný sklípek",
+   "Úschovnu zavazadel",
+   "Hospodu"
+  ],
+  "quip_correct": "Čech hledá brambory ve tmě, Polák mu u pokladny prodává rohlíky. Slovanská vzájemnost v praxi.",
+  "quip_wrong": "Víno, zavazadla i pivo by Čech ve sklepě čekal. Polský „sklep“ ale svítí, má pokladnu a otevírací dobu.",
+  "explanation": "Potraviny jsou polsky „sklep spożywczy“. Sklep v českém smyslu je naopak „piwnica“, odvozená od slova „piwo“ – místo, kde se kdysi skladovaly nápoje.",
+  "about": "polských zrádných slovech",
+  "more_fact": "Zrádných slov je víc: polské „szukać“ znamená hledat, „dywan“ je koberec a „czerstwy“ chléb je okoralý, tedy pravý opak českého čerstvého.",
+  "irony_prompt": "A puzzled Czech tourist holding an old lantern fills the frame, having just descended a narrow stone staircase expecting a dark cellar, and blinking in astonishment at a brightly lit room of shelves stacked with round loaves, apples and plain unmarked jars. Smaller and subordinate: a friendly Polish grocer waving from behind a wooden counter; a cat asleep on a sack of potatoes; a cobweb dangling uselessly from the lantern. MOOD: comic, bright, friendly."
+ },
+ {
+  "id": "pl-s-lesik-u-gryfina",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Čím se proslavil malý lesík u vesnice Nowe Czarnowo nedaleko Gryfina?",
+  "answer": "Kmeny borovic jsou u země zahnuté do oblouku",
+  "distractors": [
+   "Stromy v něm v noci slabě světélkují",
+   "Roste v něm jen jediný tisíciletý dub",
+   "Všechny stromy tam rostou přímo z vody"
+  ],
+  "quip_correct": "Stovky borovic, které vypadají, jako by se ukláněly publiku. Nikdo neví proč, a právě to z nich dělá hvězdy.",
+  "quip_wrong": "Světélkování, osamělý dub i stromy z vody by byly krásné, ale tenhle les má jinou zvláštnost: každý strom vypadá, že si sedl na bobek.",
+  "explanation": "Asi 400 borovic tu vysadili kolem roku 1930 a většina se u paty ohýbá k severu. Příčinu nikdo nezná – mluví se o záměrném tvarování dřeva, o těžkém sněhu i o pojezdu tanků.",
+  "about": "Křivém lese",
+  "more_fact": "Kmeny se asi 10 až 20 centimetrů nad zemí stočí zhruba o devadesát stupňů a po oblouku zase rostou kolmo vzhůru. Lesík je chráněný jako přírodní památka a láká fotografy z celé Evropy.",
+  "irony_prompt": "A grove of tall pine trees fills the frame, every trunk curving sharply sideways just above the ground before shooting straight up again, as if the whole forest were politely curtsying, while a baffled hiker kneels down to peer under the bends. Smaller and subordinate: a squirrel using one curved trunk as a slide; a second hiker trying to curtsy back; mushrooms on the mossy floor. MOOD: whimsical, funny, fresh."
+ },
+ {
+  "id": "pl-s-stedrovecerni-stul",
+  "cc": "pl",
+  "country": "Polsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "online_only": true,
+  "question": "Proč Poláci na Štědrý večer tradičně prostírají o talíř víc, než je u stolu lidí?",
+  "answer": "Pro nečekaného pocestného",
+  "distractors": [
+   "Pro faráře, který obchází domy",
+   "Pro nejmladší dítě v rodině",
+   "Pro svatého Mikuláše"
+  ],
+  "quip_correct": "Jediný večer v roce, kdy je cizí člověk za dveřmi vítanější než tchyně. Polská pohostinnost s rezervovaným místem.",
+  "quip_wrong": "Farář, dítě ani svatý Mikuláš – ten má svůj den už 6. prosince. Prázdný talíř čeká na někoho, koho nikdo nezval.",
+  "explanation": "K večeři se usedá, až na nebi vyjde první hvězda, a před jídlem se lámou tenké vánoční oplatky. Pod ubrus se dává trocha sena na připomínku betlémských jeslí.",
+  "about": "polské Wigilii",
+  "more_fact": "Na štědrovečerním stole bývá dvanáct postních jídel, mezi nimi červený boršč s taštičkami uszka, kapr a kutia z máku, pšenice a medu. Maso se ten večer tradičně nejí.",
+  "irony_prompt": "A long festive table fills the frame on Christmas Eve, laden with dishes, candles and a round crispy fish, with a whole family in cozy sweaters turning expectantly toward the front door, where one empty chair and a spare plate wait at the end. Smaller and subordinate: a wisp of hay peeking from under the white tablecloth; the first star twinkling in the window; a cat sitting politely on the empty chair. MOOD: warm, hopeful, gently funny."
  }
 ]
