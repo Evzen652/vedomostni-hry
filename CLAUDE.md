@@ -109,8 +109,23 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     provozu. **Online ji teď stahuje až `revealPic()`** (`picframeHtml(q, odlozit)` →
     `data-src`). Offline přednačítá dál — tam odpovědi v datech leží tak jako tak. Ověřeno
     v prohlížeči: před odpovědí 0 požadavků na obrázek, po ní načtený a vidět.
-  - **Ilustrace ke všem 220 odeslány jednou dávkou** (~7 $); kontrola očima podle zavedeného
-    postupu (archy 3×3, rohy, výřezy) je další krok.
+  - **Ilustrace: 220/220, všechny prošly kontrolou očima** (archy 3×3, arch rohů, výřezy).
+    První dávka ~7 $, opravy necelé 2 $. **Vad 22 z 220 (10 %)**, historický průměr:
+    - **10 podpisů/monogramů** — přeposlání; dva, co se vrátily podruhé, odříznuty `orez.js`.
+    - **Textové:** cedule s hangulem na bráně v Soulu a s japonskými znaky na toriiové bráně
+      (obojí bez zmínky v zadání — tradiční brána si o plaketu řekne sama), „YO“ na sklenici
+      jogurtu, nápisy na lahvích whisky a vodky (pojmenovaný druh lihoviny = etiketa),
+      písmo na víku klavíru.
+    - **Obrázek popíral odpověď:** kožatka nakreslená jako kareta se štíty (u kožatky je
+      pointa právě hladký kožnatý hřbet — pomohl popis „no separate plates“), zub vorvaně
+      vyšel jako tulipán, korfbalový koš s deskou (odpověď je „koš bez desky“), tým korfbalu
+      jen ze žen (odpověď je „smíšené týmy“ — holé „young men“ model přeskočil, pomohl
+      až popis vzhledu: vousy, krátké vlasy), rakousko-uherská loď se ŠVÝCARSKOU vlajkou
+      (vlajka ze scény úplně pryč).
+    - **Vkus:** helsinská socha mořské panny zepředu s odhalenými ňadry → pohled zezadu;
+      gulag na Soloveckých ostrovech jako vtip s mašlí na ostnatém drátu → střízlivá scéna
+      s plotem a strážní věží, MOOD „sombre“. **Citlivé téma nepatří do ironického gagu ani
+      jako vedlejší rekvizita.**
   - **Při nasazení:** `db:sync --remote` (otázky jsou v D1), obrázky jdou s `npm run deploy`.
 
 - **2026-09-26 — Odveta proti člověku je výzva. Tím padá poslední otevřený nález z auditu
