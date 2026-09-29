@@ -34,15 +34,24 @@ teprve pak cokoli ověřovat.
 **Všechno je commitnuté a pushnuté** — stačí `git pull`. Dev server na konci session
 neběží; to je normální stav mezi sezeními.
 
-**Produkce je pořád na `0dfa574` (16. 9.), na větvi je od té doby 73 commitů.** Nasazení je
-rozhodnutí hráče a čeká na něj. Pořadí podle [nasazeni.md](nasazeni.md):
-1. **migrace `migrations/2026-09-26-vyzvy.sql` `--remote`** — jediná čekající. **Jako jediná
-   mění existující řádky:** maže kódy pro přátele (`friend_code = NULL`) a obsah tabulky
-   `friends` (funkce je zrušená a zásady ji už nezmiňují). Bez ní `/api/challenge` vrací
-   „no such table“;
-2. **`db:sync --remote`** — pošle na produkci 220 serverových otázek a všechny změny textů
-   od 16. 9. (online hra čte otázky z D1);
-3. **`npm run deploy`** (obsahuje `--branch master`; předtím posunout `master`).
+**NASAZENO 29. 9. na `eb38f15`** (předtím `0dfa574` ze 16. 9., tedy 76 commitů najednou).
+Postup podle [nasazeni.md](nasazeni.md) proběhl celý: migrace výzev, `db:sync --remote`,
+`npm run deploy`. **Momentálně na produkci nic nečeká.**
+- **Stav produkce se zapsal PŘED i PO zásahu a sedí:** 1 živý hráč, 18 botů, 1 hra,
+  19 ratingů — beze změny. Otázek 3 742 → **4 012** (z toho 220 serverových), žádná otázka
+  nepřišla o svůj `rating`. Migrace výzev vynulovala jediný `friend_code`, který v produkci
+  byl, a `DELETE FROM friends` nesmazal nic (tabulka byla prázdná).
+- **Ověřeno na ostré adrese, ne podle výstupu deploye:** `quiz.js` i `online.js` jsou
+  bajtově shodné s repem, `/api/challenge` vrací **401 místo „no such table“** (tedy migrace
+  platí), `/api/leaderboard` bez přihlášení 401, `sw.js` i manifest 200, `CLAUDE.md` vrací
+  totéž co vymyšlená cesta (není venku). Rozcestník, registrace i sólo hra odehrány
+  v prohlížeči, konzole čistá.
+- **Neověřeno v produkci:** registrace a online duel. Založený účet by po sobě nechal
+  náhrobek „Smazaný hráč“, takže to kryje jen lokální `test:api` (184 kontrol).
+- **Past, na kterou se doplatilo:** `git fetch . HEAD:master` **selže ve worktree**, protože
+  `master` je checkoutnutý v hlavním repu („refusing to fetch into branch“). Postup z CLAUDE.md
+  2026-09-11 tedy odtud nefunguje; cesta je `git push origin HEAD:master` (odmítne cokoli
+  jiného než fast-forward) a pak v hlavním repu `git -C <repo> merge --ff-only origin/master`.
 
 **Co se na 26. 9. neověřovalo proti zdrojům:** fakta v serverových otázkách prošla ručně,
 ne rešerší. **Dvě místa, která si agenti sami označili, jsou ověřená 29. 9.:**
@@ -96,11 +105,12 @@ v [predani-ilustrace.md](predani-ilustrace.md), pasti v CLAUDE.md).
 |---|---|
 | Repo | `github.com/Evzen652/vedomostni-hry` |
 | Pracovní větev | `claude/pokracujeme-e79708` — poslední commit viz `git log` |
-| `master` | `0dfa574` (16. 9.) — pracovní větev je o 73 commitů napřed |
-| Produkce | `zemekviz.pages.dev`, nasazená z **`0dfa574`** 16. 9. (včetně `db:sync --remote`, viz CLAUDE.md) |
+| `master` | `eb38f15` (29. 9.) — srovnaný s pracovní větví |
+| Produkce | `zemekviz.pages.dev`, nasazená z **`eb38f15`** 29. 9. (včetně migrace výzev a `db:sync --remote`) |
 | Účtů v produkci | **1 živý hráč + 18 botů** — **nic se nesmí mazat** |
 
-**Co je na větvi a NENÍ na produkci:** zjistíš `git log --oneline 0dfa574..HEAD`.
+**Co je na větvi a NENÍ na produkci:** zjistíš `git log --oneline origin/master..HEAD`
+(po nasazení 29. 9. je to prázdné).
 Když mezi tím přibyly změny textů otázek, je při nasazení nutný `db:sync` (online hra
 čte otázky z D1). Pořadí a pasti v [nasazeni.md](nasazeni.md). Sloučení do `master`
 a nasazení jsou rozhodnutí hráče.
