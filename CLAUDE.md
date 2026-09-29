@@ -81,6 +81,30 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-29 — Utajit správné odpovědi ve veřejných datech NEJDE a nezkoušej to. Jediná
+  obrana hodnocené hry je serverový fond; levnější alternativa je detekce chování.**
+  Hráč se ptal, proč online hra nemůže brát otázky z offline části a jestli nejde ta data
+  ošetřit. Rozhodl **nic neměnit** — zápis je tu proto, aby se to příště neluštilo znovu.
+  - **Ověřeno živě na produkci, ne teoreticky:** `GET https://zemekviz.pages.dev/data/questions/cz.json`
+    vrátí bez přihlášení 200, 1 705 kB, 964 otázek — a správná odpověď je ve **vlastním poli**
+    `answer`, oddělená od `distractors`. Není co luštit, stačí číst.
+  - **Je to nutná podmínka offline hry, ne díra.** Sólo, párty i škola vyhodnocují odpověď
+    v `quiz.js` u hráče, takže ji musí mít u sebe. Kdo má prohlížeč, má jeho data.
+  - **Čtyři cesty prověřeny a všechny padají na totéž:** token/přihlášení k souboru (podvodník
+    je legitimní přihlášený hráč a offline hra účet nemá vůbec); šifrování (klíč musí být
+    ve veřejném `quiz.js`); **otisk (hash) místo odpovědi — jediná, co zní chytře, a rozbije
+    ji to, že možnosti jsou ČTYŘI**: útočník hashne všechny čtyři a porovná, sůl leží
+    ve stejném souboru; obfuskace (jen zdržení, postup čtení ukazuje zdroják hry).
+  - **Pátá cesta funguje, ale ruší offline:** servírovat otázky po jedné i offline hře.
+    Zamítnuto — offline běh je od 2026-09-25 (service worker) doložená vlastnost appky.
+  - **Rating je poctivý jen v té míře, v jaké je online fond serverový** (dnes 220 ze 4 012,
+    tedy ~20 her na hráče, pak se dobírá z veřejných). Cesta k poctivému žebříčku vede přes
+    psaní dalších dávek, ne přes šifrování.
+  - **NEPROVEDENÁ alternativa, kdyby na žebříčku začalo záležet dřív: detekce chování**
+    místo utajení, jako na šachových serverech. Je dostupná levně, protože **čas odpovědi
+    se od 2026-09-01 měří na SERVERU** — data tedy už jsou. Podezřelý účet by se nemusel
+    trestat, stačilo by ho nezahrnout do žebříčku. Třetí legitimní volba je přiznat v textu
+    appky, že na žebříčku tolik nezáleží.
 - **2026-09-26 — SERVEROVÝ FOND ZALOŽEN: 220 otázek `online_only` (4 na každou z 55 zemí),
   pásmo dospělí. Online hra je teď losuje přednostně — nová hra dostala 10 z 10 serverových.
   A cestou dvě díry, kterými by šla odpověď serverové otázky zjistit předem.**
