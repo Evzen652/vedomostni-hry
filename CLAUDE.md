@@ -81,6 +81,36 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-29 — Sdílený odkaz má konečně náhled. Veřejná adresa appky je JEDNA KONSTANTA
+  `WEB` v `build-public.js`, v HTML se píše `{{WEB}}`.**
+  Do teď byl odkaz v chatu i na sociální síti holý text, takže appku nikdo nepoznal —
+  a sdílení je přitom jediný kanál, který nestojí nic. První krok z revize 29. 9.
+  - **Adresa se mění na jednom místě.** Build dosadí `{{WEB}}` do všech HTML v `dist/`
+    (tedy i do `index.html`, který vzniká kopií `hra.html` — proto dosazení běží AŽ ZA ní)
+    a na konci ověří, že žádný nedosazený placeholder nezůstal. **Ta pojistka není
+    kosmetika:** zapomenutý `{{WEB}}` se projeví až tím, že odkaz nemá náhled, což se
+    na nasazení nepozná. Přechod na `cestokviz.cz` je změna jednoho řádku.
+  - **Lokálně placeholder ZŮSTÁVÁ** (dev servíruje živé soubory, ne `dist/`). Hře to
+    nevadí, značky čtou jen scrapery.
+  - **`og:image` musí být ABSOLUTNÍ URL** — relativní cestu scrapery neberou. Hlídá test.
+  - **`assets/og-cestokviz.jpg` (1200×630) je složený z `auth-hero.jpg`** skriptem přes
+    `sharp`. Dvě pasti, obě zaplacené: **barva papíru se NESMÍ vzorkovat z rohu ilustrace**
+    (má vinětaci, vyjde z toho khaki — vzorkuje se světlý pruh zevnitř a ještě se mixuje
+    s `--paper2` z palety), a **přechod do pozadí musí jít přes alfa masku `dest-in`**;
+    `multiply` obrázek ztmaví a vyrobí tvrdou svislou hranu přes celou výšku. Sharp navíc
+    neumí `composite` obrázku přesahujícího plátno, takže se výřez dělá předem.
+  - **Text v SVG drží Georgia, ne Fraunces** — systémový font sharp nestáhne. Vzhled se
+    proto ověřuje OKEM, ne tím, že skript doběhl; a ověřuje se i ZMENŠENINA na ~330 px,
+    protože v tak velkém náhledu se v chatu obrázek reálně zobrazí.
+  - **`test:offline` 925 kontrol (+15), ověřeno mutací 10 z 10.** Past při psaní: první
+    verze kontroly dosazení hledala pouhý výskyt `{{WEB}}` v `build-public.js` — jenže
+    ten tam zůstane i v kontrolní části, takže mutace „build přestal dosazovat“ prošla
+    nepovšimnuta. **Grep na výskyt řetězce, který je i ve vlastní pojistce, je slepý.**
+    Nově se hlídá konkrétní tvar nahrazení.
+  - **Cestou opraveno vlastní chybné ověření z téhož dne:** po nasazení jsem hlásil
+    „manifest 200“, jenže jsem sáhl na `/manifest.webmanifest`, což je SPA fallback.
+    Skutečný je `/manifest.json` a ten je v pořádku. Runbook to říká („kontroluj OBSAH,
+    ne stavový kód“) a stejně jsem do toho spadl.
 - **2026-09-29 — Utajit správné odpovědi ve veřejných datech NEJDE a nezkoušej to. Jediná
   obrana hodnocené hry je serverový fond; levnější alternativa je detekce chování.**
   Hráč se ptal, proč online hra nemůže brát otázky z offline části a jestli nejde ta data
