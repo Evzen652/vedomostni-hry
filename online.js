@@ -288,7 +288,7 @@ window.ZKOnline = (function () {
       '<div class="zk-authgrid">' +
       '<div class="zk-authside">' +
         '<img class="zk-authhero" src="' + AUTH_HERO + '" alt="" data-fb="hide">' +
-        '<div class="zk-authtag">Světová liga</div>' +
+        '<div class="zk-authtag">Světová online liga</div>' +
         "<h2>" + (isReg ? "Nový profil" : "Přihlášení") + "</h2>" +
         '<div class="zk-sub">' + esc(podtitul) + "</div>" +
       "</div>" +
@@ -727,8 +727,11 @@ window.ZKOnline = (function () {
 
     body.innerHTML =
       '<div class="qz-screen qz-modepick zk-wrap zk-lobby">' +
-      backBar("Zpět do hry", leave) +
-      "<h2>Světová liga</h2>" +
+      // Jen „Zpět“: `leave` vede na rozcestník režimů, ne do rozehrané hry, takže
+      // „Zpět do hry“ slibovalo něco jiného, než dělalo. Na právních stránkách ta
+      // formulace zůstává — ty stojí mimo appku a opravdu vedou zpátky do ní.
+      backBar("Zpět", leave) +
+      "<h2>Světová online liga</h2>" +
       errBox(msg) +
       // Uvítání místo dřívějšího proužku „Kuba · PUBERŤÁCI · Rating 1500 · Zatím
       // nezahráno" — ten byl sice úsporný, ale hráč z něj nepoznal, co která věc znamená.

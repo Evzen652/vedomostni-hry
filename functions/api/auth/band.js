@@ -35,7 +35,7 @@ export async function onRequestPut({ request, env }) {
   // Rovnost napřed: starší dětský účet, který si „uloží“ vlastní pásmo, nemá dostat
   // chybu, jen odpověď, že se nic nezměnilo.
   if (band === me.band) return json({ band, nick: me.nick, changed: false });
-  if (band === 'deti') return fail('do dětského pásma se přejít nedá — Světová liga je od 13 let');
+  if (band === 'deti') return fail('do dětského pásma se přejít nedá — Světová online liga je od 13 let');
   if (!REG_BANDS.includes(band)) return fail('neznámé pásmo');
 
   const nick = me.nick;
