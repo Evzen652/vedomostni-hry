@@ -1131,6 +1131,50 @@ sekce("Výzvy podle přezdívky místo přátel");
   kontrola(/výzv/i.test(zasady), "zásady ochrany údajů nezmiňují výzvy, které appka nově ukládá");
 }
 
+sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy");
+{
+  // Proč se to hlídá: bez těchhle značek je sdílený odkaz holý text. Ztratí se snadno —
+  // stačí přepsat hlavičku hra.html — a POZNÁ SE TO AŽ TÍM, že odkaz nemá náhled,
+  // tedy nikdy při běžném testování appky.
+  const HTML = fs.readFileSync("hra.html", "utf8");
+  for (const znacka of ["og:title", "og:description", "og:image", "og:url", "og:type",
+                        "twitter:card", "twitter:image"]) {
+    // Uvozovka je součástí vzoru, jinak by "og:image" prošlo i díky "og:image:width".
+    kontrola(HTML.includes('"' + znacka + '"'), "hra.html nemá značku " + znacka);
+  }
+  kontrola(/twitter:card"\s+content="summary_large_image"/.test(HTML),
+    "twitter:card není summary_large_image — náhled by byl malý čtverec, ne obrázek");
+
+  // Absolutní URL: relativní cestu scrapery neberou, takže náhled by zmizel.
+  const ogImg = /og:image"\s+content="([^"]+)"/.exec(HTML);
+  kontrola(ogImg && /^(\{\{WEB\}\}|https?:)/.test(ogImg[1]),
+    "og:image nemá absolutní URL ani placeholder {{WEB}}");
+
+  // Rozměry musí sedět na skutečný soubor, jinak si scraper obrázek ořízne jinak.
+  const cesta = ogImg ? ogImg[1].replace("{{WEB}}/", "") : "";
+  kontrola(cesta && fs.existsSync(cesta), "obrázek z og:image neexistuje: " + cesta);
+  const w = /og:image:width"\s+content="(\d+)"/.exec(HTML);
+  const h = /og:image:height"\s+content="(\d+)"/.exec(HTML);
+  kontrola(w && h && +w[1] === 1200 && +h[1] === 630,
+    "og:image nemá uvedené rozměry 1200x630");
+
+  // Dosazení adresy musí být v buildu, jinak by se {{WEB}} dostal na web tak, jak je.
+  const BUILD2 = fs.readFileSync(path.join("scripts", "build-public.js"), "utf8");
+  kontrola(/const WEB\s*=\s*"https?:\/\/[^"]+"/.test(BUILD2),
+    "build-public.js nemá konstantu WEB s adresou appky");
+  // Hlídá KONKRÉTNÍ TVAR dosazení, ne pouhý výskyt "{{WEB}}" v souboru. Grep na výskyt
+  // je slepý — ověřeno mutací: po odstranění nahrazení řetězec v kontrolní části zůstane
+  // a kontrola projde. Cena je, že přepis implementace na jiný tvar test shodí; to je
+  // schválně, protože tahle kontrola stojí mezi zapomenutým dosazením a odkazem bez náhledu.
+  kontrola(/\.split\("\{\{WEB\}\}"\)\.join\(WEB\)|\.replaceAll\("\{\{WEB\}\}",\s*WEB\)/.test(BUILD2),
+    "build-public.js nedosazuje {{WEB}} do HTML");
+  kontrola(/zůstal nedosazený/.test(BUILD2),
+    "build-public.js nekontroluje, že v dist nezůstal nedosazený {{WEB}}");
+
+  // Obrázek musí jít ven. assets/ se kopíruje celá složka, takže stačí ověřit, že v ní je.
+  kontrola(fs.existsSync(path.join("assets", "og-cestokviz.jpg")),
+    "chybí assets/og-cestokviz.jpg");
+}
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

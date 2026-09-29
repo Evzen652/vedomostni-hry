@@ -14,6 +14,11 @@ const path = require("path");
 const KOREN = process.cwd();
 const OUT = path.join(KOREN, "dist");
 
+// VEŘEJNÁ ADRESA APPKY — jediné místo, kde se mění při přechodu na vlastní doménu.
+// Dosazuje se za {{WEB}} v HTML (náhledy pro sdílení potřebují absolutní URL, relativní
+// cestu scrapery neberou). Bez koncového lomítka.
+const WEB = "https://zemekviz.pages.dev";
+
 // Co jde ven. Cokoli tu není, se na web nedostane.
 // `_headers` MUSÍ být v kořeni nasazené složky, jinak si ho Pages nevšimnou a appka
 // zůstane bez CSP — pravidla v něm se nikde jinde neuplatní. (2026-09-01)
@@ -86,5 +91,24 @@ if (fs.existsSync(QDIR)) {
 fs.copyFileSync(path.join(KOREN, "hra.html"), path.join(OUT, "index.html"));
 celkem++;
 
+// Dosazení adresy do HTML. Běží až tady, tedy i na index.html zkopírovaný o řádek výš.
+// Pojistka na konci je podstatná: zapomenutý {{WEB}} by se projevil až tím, že by odkaz
+// na sociální síti neměl náhled — a to se na nasazení nepozná.
+let dosazeno = 0;
+for (const f of fs.readdirSync(OUT).filter(f => f.endsWith(".html"))) {
+  const cesta = path.join(OUT, f);
+  const puvodni = fs.readFileSync(cesta, "utf8");
+  if (!puvodni.includes("{{WEB}}")) continue;
+  fs.writeFileSync(cesta, puvodni.split("{{WEB}}").join(WEB), "utf8");
+  dosazeno++;
+}
+for (const f of fs.readdirSync(OUT).filter(f => f.endsWith(".html"))) {
+  if (fs.readFileSync(path.join(OUT, f), "utf8").includes("{{WEB}}")) {
+    console.error("CHYBA: v dist/" + f + " zůstal nedosazený {{WEB}}");
+    process.exit(1);
+  }
+}
+
 console.log("dist/ hotov: " + celkem + " souborů" +
-  (vyhozeno ? " (serverových otázek vynecháno: " + vyhozeno + ")" : ""));
+  (vyhozeno ? " (serverových otázek vynecháno: " + vyhozeno + ")" : "") +
+  (dosazeno ? " · adresa " + WEB + " dosazena v " + dosazeno + " HTML" : ""));

@@ -4,7 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cestokvíz — vědomostní hra o zemích světa</title>
-<meta name="description" content="Cestokvíz je vědomostní hra o zemích světa — sólo, párty i školní režim, s hláškami a hlasem.">
+<meta name="description" content="4 012 otázek o 55 zemích, každá s vlastní malovanou ilustrací. Hraj sólo, s partou u stolu, ve škole, nebo online o rating.">
+
+<!-- NÁHLED PRO SDÍLENÍ. Bez těchhle značek je odkaz v chatu jen holý text, takže
+     appku nikdo nepozná a nikdo na ni neklikne — a sdílení je jediný kanál, který
+     nestojí nic. `og:image` MUSÍ být absolutní URL, relativní cestu scrapery neberou.
+     {{WEB}} dosazuje build (scripts/build-public.js, konstanta WEB) — doména se tedy
+     mění na JEDNOM místě. Lokálně placeholder zůstane; hře to nevadí, značky čtou
+     jen scrapery. Že v dist/ nezůstal, hlídá build sám. -->
+<link rel="canonical" href="{{WEB}}/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cestokvíz">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:url" content="{{WEB}}/">
+<meta property="og:title" content="Cestokvíz — vědomostní hra o zemích světa">
+<meta property="og:description" content="4 012 otázek o 55 zemích, každá s vlastní malovanou ilustrací. Hraj sólo, s partou u stolu, ve škole, nebo online o rating.">
+<meta property="og:image" content="{{WEB}}/assets/og-cestokviz.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Parta lidí piknikuje na vrcholu malovaného glóbu, vedle nápis Cestokvíz.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cestokvíz — vědomostní hra o zemích světa">
+<meta name="twitter:description" content="4 012 otázek o 55 zemích, každá s vlastní malovanou ilustrací. Hraj sólo, s partou u stolu, ve škole, nebo online o rating.">
+<meta name="twitter:image" content="{{WEB}}/assets/og-cestokviz.jpg">
+
 <link rel="stylesheet" href="quiz.css">
 <link rel="manifest" href="/manifest.json">
 <!-- Barva lišty systému. Je schválně TOTOŽNÁ se spodkem přechodu na pozadí appky
