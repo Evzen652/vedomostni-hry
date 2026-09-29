@@ -77,6 +77,35 @@ ověřovala se jen ta dvě označená, a JEDNO z nich bylo špatně. U dalších
 rešerše aspoň u tvrzení s letopočtem, rozměrem nebo přítomným časem („dodnes“, „roste“),
 protože přesně ta stárnou nebo se nafukují.
 
+### ROZDĚLANÉ 30. 9.: přechod na doménu cestokviz.cz
+
+**Appka pořád běží na `zemekviz.pages.dev`.** Doména `cestokviz.cz` je koupená u Thinline
+(registrátor REG-THINLINE, zapsaná 25. 9. 2026) a přechází na Cloudflare DNS. Stav:
+
+- **HOTOVO:** zóna `cestokviz.cz` přidaná do Cloudflare (Free), sken našel 2 A, 2 AAAA a
+  **2 MX**; čtyři parkovací záznamy na `91.239.200.85` smazané, **oba MX ponechané jako
+  DNS only** (`mx1d10.thinline.cz` prio 10, `mx1b20.thinline.cz` prio 20).
+- **HOTOVO:** v administraci Thinline spuštěná deaktivace DNSSEC.
+- **ČEKÁ SE:** DS záznam (keytag 41880, alg 13) je pořád v zóně `.cz`. Registr CZ.NIC už
+  keyset nemá — ověřeno přes RDAP — takže je to jen publikace. **Český hosting varuje,
+  že deaktivace může trvat až několik dní.**
+- **ZBÝVÁ, v tomhle pořadí:**
+  1. počkat, až DS zmizí: `Resolve-DnsName cestokviz.cz -Type DS -Server a.ns.nic.cz`
+     (musí se ptát PŘÍMO autoritativního serveru, resolver odpovídá z cache),
+  2. v `muj.cesky-hosting.cz` → doména → DNS změnit **NSSET** na `keaton.ns.cloudflare.com`
+     a `melinda.ns.cloudflare.com`,
+  3. po aktivaci zóny přidat v dashboardu Pages (projekt `zemekviz`) custom domain
+     `cestokviz.cz` i `www.cestokviz.cz` — **wrangler to neumí**, `pages domain` neexistuje,
+  4. přepnout konstantu `WEB` v `scripts/build-public.js` a nasadit,
+  5. ověřit: appka na nové adrese, platný certifikát, náhled pro sdílení na nové doméně
+     a **že MX pořád míří na Thinline** (pošta),
+  6. zapnout DNSSEC znovu, už v Cloudflare.
+
+**⚠ Nikdy nepřepínat nameservery, dokud je DS v zóně** — doména i pošta by se staly
+nedostupnými pro validující resolvery.
+
+**Otevřené:** jestli u Thinline existuje schránka `ahoj@cestokviz.cz`. Je uvedená
+v právních stránkách jako kontakt pro žádosti o výmaz, takže bez ní ten slib neplatí.
 **Nezodpovězená otázka na hráče:** mají příchozí výzvy v lobby (`#zk-social`) stát nad
 hrami, kde je hráč na tahu, nebo pod nimi? Dnes jsou výzvy první.
 
