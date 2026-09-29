@@ -455,7 +455,10 @@ const LOBBY_TEXTY = (() => {
   }
   return vm.runInNewContext("(" + SRC_ONLINE.slice(zac, i + 1) + ")");
 })();
-const KLICE = ["uvod", "souperi", "rating0", "ratingN"];
+// Od 2026-09-30 jen pozdrav a jedna hláška. Věty vysvětlující rating (`souperi`,
+// `rating0`, `ratingN`) vypadly — hráč je označil za informaci, která nikoho nezajímá;
+// rating vidí v Profilu a v Žebříčku. Kontroly níž platí na to, co v sadě zbylo.
+const KLICE = ["uvod", "hlaska"];
 {
   const t = LOBBY_TEXTY;
   // Sada je plochá — kdyby se sem někdo pokusil vrátit větvení podle pásma, klíče by

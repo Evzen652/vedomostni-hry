@@ -127,12 +127,13 @@ window.ZKOnline = (function () {
    */
   var LOBBY_TEXTY = {
     uvod: "vítej v aréně vědomostí. Držíme palce.",
-    // Pravdivé pro obě cesty: živého soupeře hledá match.js přes `ORDER BY ABS(rating - ?)`
-    // a náhradního vybírá podle ratingu taky. Schválně neslibuje živého člověka
-    // v reálném čase — to appka při dnešní základně splnit nedokáže (CLAUDE.md 2026-09-03).
-    souperi: "Soupeře vybíráme podle ratingu, ať je hra vyrovnaná.",
-    rating0: "Rating začíná na <b>1500</b> a po pár hrách ukáže, jak ti to jde.",
-    ratingN: "Rating roste s výhrami a klesá s prohrami.",
+    // JEN HLÁŠKA, ŽÁDNÉ VYSVĚTLOVÁNÍ RATINGU (2026-09-30). Do té doby tu stály dvě věty
+    // o tom, že soupeře vybíráme podle ratingu a že rating začíná na 1500 — hráč to
+    // označil za informaci, která nikoho nezajímá, a má pravdu: je to mechanika, ne
+    // důvod, proč sem člověk přišel. Rating vidí v Profilu a v Žebříčku, kde ho hledá.
+    // Tón je dospělý (online je od 13 let) a NESMÍ tu být minulý čas s rodem
+    // („prospal jsi“) — appka pohlaví hráče nezná, stejně jako u `_verdikt` ve fondy.json.
+    hlaska: "Tady se ukáže, co ze zeměpisu opravdu zbylo.",
   };
 
   function req(path, opts) {
@@ -713,17 +714,10 @@ window.ZKOnline = (function () {
   function renderLobby(msg) {
     if (typeof msg !== "string") msg = "";
     stopAll();
-    var r = (S.me.ratings || []).filter(function (x) { return x.band === S.me.band; })[0];
     var v = vokativ(S.me.nick);
     say(v ? "Vítej zpátky, " + v + "." : "Vítej zpátky!");
     var hotovo = dailyHotovo();
     var t = LOBBY_TEXTY;
-    // Rating dává smysl teprve ve chvíli, kdy je z čeho ho počítat — do té doby se
-    // vysvětluje, co to vlastně je, místo aby se ukázalo holé číslo bez kontextu.
-    var ratingText = !r ? ""
-      : r.games ? t.ratingN + " Po " + r.games + " " + plur(r.games, "hře", "hrách", "hrách") +
-                  " máš <b>" + r.rating + "</b>."
-                : t.rating0;
 
     body.innerHTML =
       '<div class="qz-screen qz-modepick zk-wrap zk-lobby">' +
@@ -737,8 +731,7 @@ window.ZKOnline = (function () {
       // nezahráno" — ten byl sice úsporný, ale hráč z něj nepoznal, co která věc znamená.
       '<div class="zk-welcome">' +
         '<p class="zk-wel-hi">' + pozdrav(S.me.nick, t.uvod) + "</p>" +
-        '<p class="zk-wel-l">' + t.souperi + "</p>" +
-        (ratingText ? '<p class="zk-wel-l">' + ratingText + "</p>" : "") +
+        '<p class="zk-wel-l">' + t.hlaska + "</p>" +
       "</div>" +
       // Příchozí výzvy a hry, kde je hráč na tahu. Dotahují se ASYNCHRONNĚ až po
       // vykreslení, takže lobby kvůli nim na síť nečeká — a když nic není, zůstane
