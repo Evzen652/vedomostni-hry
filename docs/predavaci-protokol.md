@@ -77,6 +77,37 @@ ověřovala se jen ta dvě označená, a JEDNO z nich bylo špatně. U dalších
 rešerše aspoň u tvrzení s letopočtem, rozměrem nebo přítomným časem („dodnes“, „roste“),
 protože přesně ta stárnou nebo se nafukují.
 
+### ROZDĚLANÉ 30. 9.: +40 otázek na každou zemi (2 200 celkem)
+
+Zadal hráč v noci 30. 9. s tím, že se má pracovat autonomně. **Fond 4 012 → cíl 6 212.**
+Dává to smysl hlavně proto, že **41 z 55 zemí má dnes pod 60 otázek** — u nich se fond
+prakticky zdvojnásobí a přestanou být přívěsky Česka (viz revize 29. 9.).
+
+**Rozhodnutí, která padla bez hráče** (spal):
+- **rozložení pásem 13 / 13 / 14** (děti / puberťáci / dospělí) na zemi — vyrovnává
+  dnešní nepoměr a zvedá podlahu 12 otázek na zemi × pásmo, která se opakovaně propadá,
+- **jen veřejné otázky**, žádné `online_only` — serverový fond má vlastní pravidla,
+- **`irony_prompt` se píše rovnou**, i když ilustrace zatím generovat nejde.
+
+**Postup:** jeden agent = jedna země, po vlnách (limit 20 souběžných). Každý dostane
+**kompletní výpis existujících otázek své země** (`scratchpad/kontext/<cc>.txt`), jinak
+duplikuje — past zaplacená v srpnu, kdy při 450 otázkách vzniklo 19 kolizí.
+
+**Přejímka `scratchpad/prijmi.js`** kontroluje dávku PŘED zápisem do fondu, protože
+`npm run validate` běží až nad fondem, tedy když je chyba uvnitř. Hlídá povinná pole,
+sekce ze seznamu, ASCII id, kolize id proti celému fondu, odpověď v zadání, malé písmeno,
+minulý čas s rodem včetně staženého tvaru („uhodls“), délku `more_fact` a to, jestli si
+`irony_prompt` neříká o text. Zapisuje jen země úplně bez chyb, ve formátu 1 mezera + CRLF.
+
+**⚠ BLOKÉR ILUSTRACÍ: `GEMINI_API_KEY` není v `.dev.vars` ani v prostředí.** Bez něj
+nejde vygenerovat nic, ani po dobití kreditu. Zadání k obrázkům se píšou rovnou, takže
+po doplnění klíče stačí spustit dávku po zemích. **2 200 ilustrací vyjde v batchi zhruba
+na 75 USD** a kontrola očima je práce na dny, ne na jednu noc — negenerovat naslepo.
+
+**Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
+proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,
+dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.
+
 ### ROZDĚLANÉ 30. 9.: přechod na doménu cestokviz.cz
 
 **Appka pořád běží na `zemekviz.pages.dev`.** Doména `cestokviz.cz` je koupená u Thinline
