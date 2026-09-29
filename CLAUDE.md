@@ -81,6 +81,29 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-09-30 — Dobarvení ilustrací je NOVĚ NÁSTROJ V REPU (`scripts/ilustrace/dobarvi.js`)
+  a bere zdroj Z GITU, ne z disku. Čtyři dlaždice online lobby dobarveny.**
+  Hráč: dlaždice Světové ligy jsou „příliš vybledlé“. Postup na dobarvení byl popsaný
+  v zápisu 2026-09-15, ale **skript ležel ve scratchpadu minulé session, takže se musel
+  psát znovu** — přesně ta past, kvůli které se 2026-09-13 stěhovaly nástroje na ilustrace
+  do repa. Teď je v repu i tenhle.
+  - **Zdroj se čte přes `git show HEAD:assets/x.jpg`, ne ze souboru na disku.** Dobarvit
+    už dobarvený JPEG je nevratná ztráta a zápis z 15. 9. před tím varuje slovy („dobarvuje
+    se vždy z ORIGINÁLU“) — jenže slovní varování nikdo při pátém spuštění nečte. Takhle
+    to nejde ani omylem, ať se skript pustí kolikrát chce. Cena: soubor musí být v HEAD,
+    necommitnutý nový obrázek skript odmítne.
+  - **PLEŤ SNÁŠÍ SATURACI HŮŘ NEŽ ZBYTEK PALETY a je to nový poznatek.** Při síle 0,7,
+    která u dlaždic témat i u glóbu a poháru vypadá dobře, byla ruka na `zk-daily`
+    (vějíř karet) **nepřirozeně oranžová**. Porovnání čtyř sil vedle sebe ukázalo, že
+    **0,4 zvýrazní pozadí a pleť nechá pletí**. Dlaždice proto nemají jednu sílu:
+    `zk-live`, `zk-link`, `zk-tourney` 0,7, **`zk-daily` 0,4**.
+  - **Papír se navzorkuje z rohů každé ilustrace zvlášť** (naměřeno 239–248 na červené),
+    protože pevná hodnota by u některé dobarvila i podklad. Hlášené „dotčeno 97–100 %
+    plochy“ NENÍ chyba: papírová textura je kousek od průměru rohů, takže dostane váhu
+    blízkou nule — ne přesnou nulu. Ověřeno okem, podklad nezežloutl.
+  - **Past zaplacená cestou: sharp načítá líně a nechá soubor otevřený.** Druhý běh nad
+    tímtéž náhledem spadl na „unable to open for write“. Řeší `fs.readFileSync` do bufferu.
+  - Ověřeno v prohlížeči na lokálním serveru (lobby po přihlášení), ne jen na archu.
 - **2026-09-29 — Sdílený odkaz má konečně náhled. Veřejná adresa appky je JEDNA KONSTANTA
   `WEB` v `build-public.js`, v HTML se píše `{{WEB}}`.**
   Do teď byl odkaz v chatu i na sociální síti holý text, takže appku nikdo nepoznal —
