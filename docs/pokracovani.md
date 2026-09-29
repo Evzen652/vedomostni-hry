@@ -4,7 +4,7 @@
 > práce (desítky zemí s ilustracemi, online režim, bezpečnostní audity…), které se
 > tenhle soubor nikdy nedozvěděl. Nespoléhej na čísla a stav popsaný níž.**
 > **Aktuální stav a fronta práce jsou v [predavaci-protokol.md](predavaci-protokol.md)**
-> (aktivně udržovaný, naposledy 24. 9. 2026) a v datovaném logu na konci
+> (aktivně udržovaný, naposledy 29. 9. 2026) a v datovaném logu na konci
 > [CLAUDE.md](../CLAUDE.md) („Systémová rozhodnutí"). Tenhle soubor zůstává jako
 > historický snímek toho, jak appka vypadala 7. 9., ne jako zdroj pravdy o dnešku.
 

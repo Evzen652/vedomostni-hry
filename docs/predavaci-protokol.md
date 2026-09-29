@@ -1,15 +1,20 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-25. 9. 2026** po session, která opravila drobný bug (bublina hostitele v párty), odhalila
-a uzavřela DRUHÝ ilustrační dluh (202 otázek mělo starou fotorealistickou ilustraci místo
-malované), opravila zbytečné 404 pro 6 zemí bez karet a podruhé dorovnala podlahu fondu
-na 12 otázek/pásmo (Maraton má od 15. 9. 12 kol) — 50 nových otázek napříč 25 zeměmi.
-Fond je teď **3 792 otázek, všechny s malovanou ilustrací, 0 chybí.**
+29. 9. 2026** po session z 26.–28. 9., která:
+- **zrušila přátele s kódem a nahradila je výzvami podle přezdívky** (vlastní tabulka
+  `challenges`, hra vzniká až přijetím; lobby nově ukazuje příchozí výzvy a hry na tahu),
+- **předělala odvetu proti člověku na výzvu** a odmítá vzájemnou výzvu,
+- **přidala rozbor po hře** (karty s ilustrací a štítky) do online i do sóla, školy a párty,
+- **založila serverový fond: 220 otázek `online_only`** (4 na zemi, pásmo dospělí), všechny
+  s ilustrací prošlou kontrolou očima, a zavřela dvě díry, kudy šlo odpověď zjistit předem
+  (id otázky a přednačtená ilustrace).
+
+Fond je teď **4 012 otázek: 3 792 veřejných + 220 serverových, všechny s malovanou ilustrací.**
 
 Tenhle soubor je **protokol**: co převzít, co ověřit, co je zakázané a co dělat
-v jakém pořadí. Popisný stav projektu je v [pokracovani.md](pokracovani.md),
-konvence a všechna rozhodnutí v [CLAUDE.md](../CLAUDE.md).
+v jakém pořadí. Konvence a všechna rozhodnutí (včetně podrobností k 26. 9.) jsou
+v [CLAUDE.md](../CLAUDE.md). [pokracovani.md](pokracovani.md) je jen historický snímek ze 7. 9.
 
 ---
 
@@ -24,52 +29,44 @@ Zkopíruj do prvního vzkazu:
 Nejdřív `git fetch` a posunout se na `origin/claude/pokracujeme-e79708` (fast-forward),
 teprve pak cokoli ověřovat.
 
-### Ilustrace k otázkám: HOTOVO NADRUHÉ. 3 792/3 792, 0 chybí, VŠECHNY malované.
+### Stav k 29. 9.
 
-24. 9. appka dosáhla „3742/3742 má obrázek" — jenže 25. 9. hráč ukázal screenshotem, že
-jedna otázka má pořád STAROU FOTOREALISTICKOU ilustraci, ne malovanou. Ukázalo se, že
-**202 otázek** (import z Hricka — Kanada 69, Česko 55, KLDR 23, Rusko 22, Polsko 15, zbytek
-roztroušeně) mělo `img/{id}.jpg` existující, ale bez `irony_prompt` — appka roky počítala
-„má soubor" za „hotovo", což byla mezera v kontrole, ne v obsahu. Přepsáno (6 paralelních
-agentů napsalo prompty, jedna velká dávka), zkontrolováno (21 vad z 202, opraveno), a hned
-za tím se dorovnala **podruhé i podlaha fondu** (12 otázek/pásmo kvůli Maratonu — 50 nových
-otázek, 25 zemí, 2 vady z 50). **Postup a všechny objevené pasti jsou v CLAUDE.md
-2026-09-25** (dvě dlouhé položky nahoře logu) — nové vzorce: špatné pohlaví reálné osoby,
-římské číslice místo arabských, halucinovaný švýcarský kříž na dresu/v davu (potvrzeno
-už 3×), slovo „taxi"/„sign" v zadání vyrobí čitelný nápis i přes výslovný zákaz.
+**Všechno je commitnuté a pushnuté** — stačí `git pull`. Dev server na konci session
+neběží; to je normální stav mezi sezeními.
 
-**Žádná další práce na ilustracích ani na podlaze fondu není naplánovaná.** Kdyby přibyla
-nová země/otázka, postup psaní zadání je v [predani-ilustrace.md](predani-ilustrace.md)
-bodu 5, nástroje v `scripts/ilustrace/`. **Past, na kterou appka narazila opakovaně:**
-`npm run build-index` (přepočet `data/questions-index.json` a `data/konflikty.json`)
-**nesmí běžet souběžně ve víc agentech/procesech** — přepisují stejný soubor; spouštět
-centrálně jednou po dokončení všech paralelních zápisů.
+**Produkce je pořád na `0dfa574` (16. 9.), na větvi je od té doby 73 commitů.** Nasazení je
+rozhodnutí hráče a čeká na něj. Pořadí podle [nasazeni.md](nasazeni.md):
+1. **migrace `migrations/2026-09-26-vyzvy.sql` `--remote`** — jediná čekající. **Jako jediná
+   mění existující řádky:** maže kódy pro přátele (`friend_code = NULL`) a obsah tabulky
+   `friends` (funkce je zrušená a zásady ji už nezmiňují). Bez ní `/api/challenge` vrací
+   „no such table“;
+2. **`db:sync --remote`** — pošle na produkci 220 serverových otázek a všechny změny textů
+   od 16. 9. (online hra čte otázky z D1);
+3. **`npm run deploy`** (obsahuje `--branch master`; předtím posunout `master`).
 
-**Tahle session navíc opravila dva drobné nálezy** (obojí hotové, commitnuté a pushnuté):
-- **Bublina hostitele v párty se dotýkala praporků hráčů** (0 px mezera) — mobilní oprava
-  z 24. 9. zvedla padding jen u `.qz-top` (sólo), ne u `.qz-scoreboard` (párty verze téže
-  věci). Viz CLAUDE.md 2026-09-24 (druhý zápis od vrchu).
-- **6 zemí bez `data/cards/{cc}.json`** (Belgie, Dánsko, Finsko, Irsko, Norsko, Portugalsko)
-  appka zbytečně stahovala při každém výběru víc zemí → 404 v konzoli. `quiz.js` má nový
-  `BEZ_KARET` seznam, `validate` hlídá, ať se nerozejde s realitou na disku.
+**Co se na 26. 9. neověřovalo proti zdrojům:** fakta v serverových otázkách prošla ručně,
+ne rešerší. Agenti sami označili dvě nejméně jistá místa k rychlému ověření — gabonskou
+žádost z roku 1958 a vietnamský „Tisíciletý strom“ (u pepře).
 
-**Produkce je pořád na `0dfa574` (16. 9.).** Od té doby přibylo na větvi jen obsahové
-a UI: ilustrace (KOMPLETNÍ FOND, teď i stylově sjednocený), `irony_prompt` v datech,
-50 nových otázek, bublina hostitele (2×), vlajka na glóbu, `BEZ_KARET`, dokumentace
-a skripty. **Od 26. 9. čeká na produkci JEDNA migrace:** `migrations/2026-09-26-vyzvy.sql`
-(výzvy podle přezdívky místo přátel). Musí proběhnout PŘED `npm run deploy`, jinak
-`/api/challenge` vrací „no such table". **Pozor, jako jediná mění existující řádky:**
-maže kódy pro přátele (`friend_code = NULL`) a obsah tabulky `friends` — funkce je
-zrušená a zásady ochrany údajů ji už nezmiňují (viz CLAUDE.md 2026-09-26). Nasazení
-je rozhodnutí hráče; pořadí migrace → `db:sync` → `npm run deploy` podle nasazeni.md.
+**Nezodpovězená otázka na hráče:** mají příchozí výzvy v lobby (`#zk-social`) stát nad
+hrami, kde je hráč na tahu, nebo pod nimi? Dnes jsou výzvy první.
 
 Ilustrace do UI (dlaždice, výsledkové obrazovky) jdou i bez klíče: hráč je vygeneruje
 v chatu Gemini a uloží do `D:\weigle\plocha\Kvíz_ILUSTRACE`, session je jen zmenší
-a napojí (postup viz CLAUDE.md, zápis 2026-09-15).
+a napojí (postup viz CLAUDE.md, zápis 2026-09-15). Ilustrace k otázkám jdou přes
+`scripts/batch-irony-images.js` a nástroje v `scripts/ilustrace/` (postup
+v [predani-ilustrace.md](predani-ilustrace.md), pasti v CLAUDE.md).
 
-**Všechno je commitnuté a pushnuté** — stačí `git pull`. **Dev server na konci session
-NEBĚŽÍ** (je potřeba ho po převzetí spustit znovu, viz bod 2/3 níž) — to je normální stav
-mezi sezeními, ne chyba.
+**Pasti, na které se v poslední session doplatilo** (podrobně v CLAUDE.md 2026-09-26):
+- `quiz.js` má **CRLF** — mutační skript musí mutovat LF kopii a zapisovat zpět s CRLF,
+  jinak se kotvy s `\n` tiše neaplikují. Mutace, která se neaplikovala, nic nedokazuje.
+- Mutační skript soudí podle **návratového kódu**, ne podle textu výstupu.
+- `wrangler d1 execute --local` se při běžícím dev serveru **tiše zasekne** — server zastavit.
+- `/api/me` vrací historii jen do 20 her; testy počítají hry **přibylé**, ne délku seznamu.
+- JS `\b` zná jen ASCII; konec českého slova hlídá lookahead na česká písmena.
+- `batch-irony-images.js submit --only` přeskočí otázku s existujícím `img/{id}.jpg` —
+  vadný obrázek nejdřív přesunout stranou. Čekání na dávku: `node scripts/ilustrace/cekej-davka.js`
+  jako jediný příkaz na pozadí (bez `&`).
 
 ---
 
@@ -79,7 +76,7 @@ mezi sezeními, ne chyba.
 |---|---|
 | Repo | `github.com/Evzen652/vedomostni-hry` |
 | Pracovní větev | `claude/pokracujeme-e79708` — poslední commit viz `git log` |
-| `master` | `0dfa574` (16. 9.) — srovnaný s pracovní větví k nasazení; další commity už jsou jen na větvi |
+| `master` | `0dfa574` (16. 9.) — pracovní větev je o 73 commitů napřed |
 | Produkce | `zemekviz.pages.dev`, nasazená z **`0dfa574`** 16. 9. (včetně `db:sync --remote`, viz CLAUDE.md) |
 | Účtů v produkci | **1 živý hráč + 18 botů** — **nic se nesmí mazat** |
 
@@ -116,7 +113,8 @@ GEMINI_API_KEY=<klíč z ai.studio, celý řádek>
 `batch-irony-images.js` neudělá nic. Klíč má hráč na `ai.studio/projects`; **nový formát
 nezačíná „AIza"**, skripty berou celý řádek. Do gitu se nikdy nesmí dostat.
 
-**2) Lokální databáze:** `npm run db:init` → v `questions` má být **3 792** otázek
+**2) Lokální databáze:** `npm run db:init` → v `questions` má být **4 012** otázek
+(3 792 veřejných + 220 serverových, z toho `band = 'dospeli'` u serverových)
 a **18** botů. Migrace se lokálně nepouštějí, `schema.sql` je má v sobě.
 
 **3) Server:** `npm run dev` (port 8788), nebo ve worktree konfigurace `kviz-online-worktree`
@@ -128,8 +126,8 @@ z `.claude/launch.json` (port **8790**, servíruje ze živých souborů worktree
 
 | Příkaz | Očekávaný výsledek |
 |---|---|
-| `npm run validate` | `CHYBY: žádné` (upozornění o chybějících fotkách jsou v pořádku) |
-| `npm run test:offline` | **874** kontrol (od 15. 9., přibyl fond `tie`, tlačítko „Otoč obrazovku", délky párty 5/8/12, registrace bez volby pásma a obnova PINu po chybném přihlášení) |
+| `npm run validate` | `CHYBY: žádné`, na konci „serverový fond: 220 z 4012 otázek“ (upozornění o chybějícím `image_prompt` jsou v pořádku — to je staré pole pro fotky) |
+| `npm run test:offline` | **910** kontrol (26. 9. přibyly výzvy, rozbor ve všech režimech, odveta jako výzva, odložená ilustrace online a obecná pojistka proti minulému času s rodem) |
 | `npm run test:pool` | 13 kontrol |
 | `npm run test:auth` | 12 kontrol |
 | `npm run test:ghost` | 67 kontrol |
@@ -142,7 +140,7 @@ z `.claude/launch.json` (port **8790**, servíruje ze živých souborů worktree
 Když spadne na chybějícím `sharp`, chybí `npm install`.
 
 **5) Testy proti serveru** (server musí běžet):
-`API_BASE="http://127.0.0.1:8788" npm run test:api` (ve worktree port 8790) → **167** kontrol.
+`API_BASE="http://127.0.0.1:8788" npm run test:api` (ve worktree port 8790) → **184** kontrol.
 Jedna kontrola („usazený hráč silou bota pohnul") je **nedeterministická**; když spadne
 jednou z několika běhů, není to regrese. Druhá taková („body z kola proti botovi se
 přičetly") padala v ~6 % běhů, protože testovací hráč tipoval vždy A — od 14. 9. v tom
@@ -211,7 +209,8 @@ pásma), postup je zdokumentovaný v CLAUDE.md 2026-09-25 a 2026-08-31.
 Pořadí dalších kroků je závazné — každý otevírá další. Plán celý viz artefakt
 „Zeměkvíz do obchodů" (odkaz má hráč v chatu).
 
-**A. Serverové otázky** — **ZALOŽENO 26. 9.: 220 otázek** (4 na zemi, pásmo dospělí).
+**A. Serverové otázky** — **ZALOŽENO 26. 9.: 220 otázek** (4 na zemi, pásmo dospělí), všechny
+s ilustrací po kontrole očima (22 vad z 220 opraveno). Na produkci se dostanou až `db:sync --remote`.
 Otázka s `"online_only": true` se nekopíruje na web a online hra ji losuje přednostně.
 Jedna hra = 10 otázek, takže fond vystačí zhruba na 20 her na hráče, než se začne dobírat
 z veřejných. **Další dávky jsou průběžná práce** — zadání pro agenty (povinná pole,
