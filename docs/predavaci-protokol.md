@@ -45,8 +45,28 @@ rozhodnutí hráče a čeká na něj. Pořadí podle [nasazeni.md](nasazeni.md):
 3. **`npm run deploy`** (obsahuje `--branch master`; předtím posunout `master`).
 
 **Co se na 26. 9. neověřovalo proti zdrojům:** fakta v serverových otázkách prošla ručně,
-ne rešerší. Agenti sami označili dvě nejméně jistá místa k rychlému ověření — gabonskou
-žádost z roku 1958 a vietnamský „Tisíciletý strom“ (u pepře).
+ne rešerší. **Dvě místa, která si agenti sami označili, jsou ověřená 29. 9.:**
+- **Gabon 1958 — platí.** V říjnu 1958, těsně po referendu o Francouzsko-africkém
+  společenství, poslala M'baova vláda přes Louise Sanmarca do Paříže žádost o status
+  francouzského departementu; Paříž ji odmítla. (Wikipedie datuje do listopadu 1959
+  M'baovo VEŘEJNÉ prohlášení, které Foccart označil za nemyslitelné — není to spor,
+  jsou to dvě události.) Výsadkáři ve vysvětlení sedí: 18.–19. 2. 1964, z Dakaru a Brazzaville.
+- **Vietnamský „Tisíciletý strom“ — BYL ŠPATNĚ, opraveno.** `more_fact` u
+  `vn-s-nejstarsi-narodni-park` tvrdil, že strom „roste“ a že „jeho kmen by objalo jen
+  několik lidí“. Strom **uschl** (Dân trí, 2023: zhruba pět let předtím, stářím) a k obejmutí
+  kmene je potřeba **kolem dvaceti lidí** (průměr ~5 m). Otázka sama je správná — Cúc Phương
+  je nejstarší národní park, vyhlášený 1962. Ověřena i otázka o pepři: Vietnam drží ~45 %
+  světového vývozu. **Při nasazení to chce `db:sync --remote`**, text otázky je v D1.
+
+**Zastarávající formulace, NEOPRAVENO** (na rozhodnutí hráče): `more_fact` u gabonské otázky
+říká „francouzská armáda má v Libreville vojenský tábor dodnes“. Formálně platí, ale Camp de
+Gaulle je od léta 2024 společně řízené výcvikové středisko a francouzských vojáků tam od
+července 2025 zůstalo kolem stovky (2023: 380). Věta zní silněji než skutečnost.
+
+**Poučení k postupu:** fakta v serverových otázkách nikdo proti zdrojům neprojel celá —
+ověřovala se jen ta dvě označená, a JEDNO z nich bylo špatně. U dalších dávek se vyplatí
+rešerše aspoň u tvrzení s letopočtem, rozměrem nebo přítomným časem („dodnes“, „roste“),
+protože přesně ta stárnou nebo se nafukují.
 
 **Nezodpovězená otázka na hráče:** mají příchozí výzvy v lobby (`#zk-social`) stát nad
 hrami, kde je hráč na tahu, nebo pod nimi? Dnes jsou výzvy první.
