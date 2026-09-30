@@ -115,6 +115,22 @@ na 75 USD** a kontrola očima je práce na dny, ne na jednu noc — negenerovat 
   až na validaci, s dvojnásobkem otázek uvnitř. Ověřeno, že k tomu u prvních tří zemí
   nedošlo (počet otázek = počet unikátních id).
 
+**PŘERUŠENO 30. 9. ve 2:30 — LIMIT RELACE, ne chyba.** Patnáct agentů spadlo naráz na
+`rate_limit 429` („session limit, resets 4:20am“). **Hotovo je 5 zemí z 55:** Austrálie,
+Čína, JAR, Brazílie a Egypt, tedy **+200 otázek** (fond 4 012 → **4 172**). Všechno je
+commitnuté a pushnuté; ztratila se jen rozdělaná práce agentů, kteří nestihli zapsat.
+
+- **Egypt dorazil doslova na hraně** — soubor byl na disku dřív, než agent spadl, takže
+  přejímka ho normálně zpracovala. **Proto se dodávky ukládají po zemích, ne najednou.**
+- **Zbývá 50 zemí.** Seznam v `scratchpad/kontext/_prehled.json` (stav PŘED dávkou);
+  hotové poznáš tak, že `data/questions/<cc>.json` má o 40 otázek víc.
+- **Postup pro pokračování je beze změny:** agent dostane jen krátký odkaz na
+  `scratchpad/ZADANI.md` + svůj kontextový soubor a cestu výstupu. Zadání drží všechna
+  pravidla i pasti, takže se do promptu nic opisovat nemusí.
+- **Limit relace je tvrdý strop tempa.** Pět zemí = zhruba 15 agentů × ~330 tisíc tokenů.
+  Další vlny je proto lepší pouštět po menších dávkách (5–8 zemí), ne po patnácti —
+  spadne-li vlna, přijde se o míň rozdělané práce.
+
 **Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
 proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,
 dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.
