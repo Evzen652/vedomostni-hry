@@ -131,6 +131,25 @@ commitnuté a pushnuté; ztratila se jen rozdělaná práce agentů, kteří nes
   Další vlny je proto lepší pouštět po menších dávkách (5–8 zemí), ne po patnácti —
   spadne-li vlna, přijde se o míň rozdělané práce.
 
+**PŘERUŠENO 30. 9. podruhé, opět LIMIT RELACE.** Druhá a třetí vlna doběhly celé
+(12 zemí, +480 otázek), čtvrtá vlna (Finsko, Irsko, Peru, Filipíny, Portugalsko,
+Vietnam) spadla na `rate_limit 429` ještě PŘED zápisem — ve scratchpadu `nove/`
+po ní nezůstalo nic, takže se nemá co zachraňovat, jen zopakovat.
+
+- **Hotovo je 18 zemí z 55:** Austrálie, Brazílie, Čína, Egypt, JAR (první vlna),
+  Indie, Japonsko, Keňa, Mexiko, Nový Zéland, USA (druhá vlna), Belgie, Chile,
+  Dánsko, Ekvádor, Fidži, Mongolsko, Tchaj-wan (třetí vlna).
+  Fond **3 792 → 4 732** (+940 otázek), vše commitnuté a pushnuté.
+- **Zbývá 37 zemí.** Seznam v `scratchpad/kontext/_prehled.json`, aktuální stav
+  podle počtu otázek v `data/questions/<cc>.json` (hotová země má 80+ — 40 starých
+  + 40 nových, u zemí s bohatším fondem víc).
+- **Postup je beze změny, jen vlny po šesti agentech, ne po patnácti** (poučení
+  z prvního přerušení 30. 9. v 2:30 platí i podruhé).
+- **Dva drobné nástroje se osvědčily a zůstávají v `prijmi.js`:**
+  `--jen cc,cc` pro cílený zápis jen vyjmenovaných zemí (když ostatní ještě běží),
+  a tvrdá kontrola přesně 40 otázek na dodávku (scratchpad je sdílený s agenty,
+  takže přejímka může soubor potkat rozepsaný).
+
 **Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
 proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,
 dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.
