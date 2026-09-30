@@ -104,6 +104,17 @@ nejde vygenerovat nic, ani po dobití kreditu. Zadání k obrázkům se píšou 
 po doplnění klíče stačí spustit dávku po zemích. **2 200 ilustrací vyjde v batchi zhruba
 na 75 USD** a kontrola očima je práce na dny, ne na jednu noc — negenerovat naslepo.
 
+**Dvě pasti přejímky, obě zaplacené hned v první vlně:**
+- **Agenti si práci dělí do pracovních souborů** (`part-a.json`, `_p1.json`) a nechávají
+  je ležet vedle hotové dodávky. Přejímka je četla jako finální a hlásila desítky
+  falešných chyb („cc je br, čekám part1“). Bere proto **jen soubory pojmenované
+  kódem země**; zadání agentům nově říká, ať části na konci slučí a smažou.
+- **Zapsaná dodávka se MUSÍ odsunout do `hotovo/`.** Agent ohlásí dokončení až poté,
+  co soubor zapsal, takže notifikace dorazí i pro zemi, kterou přejímka mezitím
+  zpracovala — a další běh s `--zapis` by ji přidal do fondu PODRUHÉ. Poznalo by se to
+  až na validaci, s dvojnásobkem otázek uvnitř. Ověřeno, že k tomu u prvních tří zemí
+  nedošlo (počet otázek = počet unikátních id).
+
 **Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
 proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,
 dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.
@@ -117,23 +128,30 @@ dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.
   **2 MX**; čtyři parkovací záznamy na `91.239.200.85` smazané, **oba MX ponechané jako
   DNS only** (`mx1d10.thinline.cz` prio 10, `mx1b20.thinline.cz` prio 20).
 - **HOTOVO:** v administraci Thinline spuštěná deaktivace DNSSEC.
-- **ČEKÁ SE:** DS záznam (keytag 41880, alg 13) je pořád v zóně `.cz`. Registr CZ.NIC už
-  keyset nemá — ověřeno přes RDAP — takže je to jen publikace. **Český hosting varuje,
-  že deaktivace může trvat až několik dní.**
-- **ZBÝVÁ, v tomhle pořadí:**
-  1. počkat, až DS zmizí: `Resolve-DnsName cestokviz.cz -Type DS -Server a.ns.nic.cz`
-     (musí se ptát PŘÍMO autoritativního serveru, resolver odpovídá z cache),
-  2. v `muj.cesky-hosting.cz` → doména → DNS změnit **NSSET** na `keaton.ns.cloudflare.com`
-     a `melinda.ns.cloudflare.com`,
-  3. po aktivaci zóny přidat v dashboardu Pages (projekt `zemekviz`) custom domain
-     `cestokviz.cz` i `www.cestokviz.cz` — **wrangler to neumí**, `pages domain` neexistuje,
-  4. přepnout konstantu `WEB` v `scripts/build-public.js` a nasadit,
-  5. ověřit: appka na nové adrese, platný certifikát, náhled pro sdílení na nové doméně
-     a **že MX pořád míří na Thinline** (pošta),
-  6. zapnout DNSSEC znovu, už v Cloudflare.
+- **HOTOVO 30. 9. v 02:04:** DNSSEC dokončil deaktivaci (DS zmizel ze zóny `.cz`, ověřeno
+  na dvou autoritativních serverech) a **delegace se překlopila na Cloudflare**.
+  `keaton.ns.cloudflare.com` + `melinda.ns.cloudflare.com` vrací 8.8.8.8 i 1.1.1.1.
+  **Pošta přechod přežila:** MX dál `mx1d10.thinline.cz` (10) a `mx1b20.thinline.cz` (20).
+  Nový NSSET v registru je `CH-251976-20260930010035`.
+  - **Varování Českého hostingu („změnu NS provést až 24 h po zahájení deaktivace“) bylo
+    v tu chvíli plané** — jejich administrace se řídí zahájením procesu, ne jeho koncem.
+    Rozhodující je DS záznam v zóně `.cz`, a ten byl pryč PŘED změnou NSSETu.
+- **ZBÝVÁ — a první krok musí udělat hráč:**
+  1. **Pages → projekt `zemekviz` → Custom domains → Set up a custom domain**, přidat
+     `cestokviz.cz` a `www.cestokviz.cz`. **Přes wrangler to nejde** (`pages domain`
+     neexistuje) a **ani přes API**: OAuth token wrangleru má scope jen na Pages,
+     dotaz na zóny vrací 403. Je to pár kliknutí v dashboardu.
+  2. přepnout konstantu `WEB` v `scripts/build-public.js` na `https://cestokviz.cz`
+     a nasadit (`npm run deploy`),
+  3. ověřit: appka na nové adrese, platný certifikát, náhled pro sdílení ukazuje na
+     novou doménu a **MX pořád míří na Thinline**,
+  4. zapnout DNSSEC znovu, už v Cloudflare (jedno tlačítko, DS se do registru nahlásí sám).
 
-**⚠ Nikdy nepřepínat nameservery, dokud je DS v zóně** — doména i pošta by se staly
-nedostupnými pro validující resolvery.
+  **Do doby, než proběhne krok 1, se konstanta `WEB` NEPŘEPÍNÁ** — `og:image` by ukazoval
+  na adresu, která ještě nic neservíruje, a odkaz by ztratil náhled.
+
+**⚠ Pravidlo, které platí i do budoucna:** nikdy nepřepínat nameservery, dokud je DS
+záznam v zóně — doména i pošta by se staly nedostupnými pro validující resolvery.
 
 **Otevřené:** jestli u Thinline existuje schránka `ahoj@cestokviz.cz`. Je uvedená
 v právních stránkách jako kontakt pro žádosti o výmaz, takže bez ní ten slib neplatí.
