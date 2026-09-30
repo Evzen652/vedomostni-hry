@@ -1003,7 +1003,6 @@
   "section": "Jazyk & slova",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Co musí hebrejština vědět o člověku, se kterým mluvíš, aby mu vůbec mohla říct „ty“ nebo „miluješ“?",
   "answer": "Jestli je to muž, nebo žena",
   "distractors": [
@@ -1016,7 +1015,8 @@
   "explanation": "Muži se řekne atá, ženě at, a sloveso se mění i v přítomném čase: „miluješ“ zní k muži ohev, k ženě ohevet. Zvláštní tvary má i oslovení skupiny žen.",
   "about": "hebrejské gramatice",
   "more_fact": "Moderní hebrejština si pro nové věci často vypůjčila starobylá slova: elektřina se řekne chašmal, podle záhadného zářícího kovu z vidění proroka Ezechiela.",
-  "irony_prompt": "A cheerful Israeli waiter on a sunny seaside terrace fills the frame, holding two differently shaped coffee cups and hesitating comically in front of a customer whose face is completely hidden behind an enormous floppy sunhat, unsure which cup to serve. Smaller and subordinate: a seagull waiting for crumbs, a plate of hummus with a swirl of olive oil, a calm blue Mediterranean horizon. MOOD: cheerful, playful, sunny."
+  "irony_prompt": "A cheerful Israeli waiter on a sunny seaside terrace fills the frame, holding two differently shaped coffee cups and hesitating comically in front of a customer whose face is completely hidden behind an enormous floppy sunhat, unsure which cup to serve. Smaller and subordinate: a seagull waiting for crumbs, a plate of hummus with a swirl of olive oil, a calm blue Mediterranean horizon. MOOD: cheerful, playful, sunny.",
+  "online_only": true
  },
  {
   "id": "il-s-zimni-krmeni-ptaku",
@@ -1025,7 +1025,6 @@
   "section": "Příroda",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Proč v údolí Chula na severu Izraele každou zimu rozhazují tuny kukuřice?",
   "answer": "Aby jeřábi nesežrali úrodu na polích",
   "distractors": [
@@ -1038,7 +1037,8 @@
   "explanation": "V údolí přezimují desítky tisíc jeřábů popelavých a turisté je pozorují z tichých vozíků, které ptáky neplaší.",
   "about": "jeřábech v údolí Chula",
   "more_fact": "Údolí Chula bylo v 50. letech vysušeno kvůli zemědělské půdě a boji s malárií. Výsledkem byla ekologická pohroma, a tak v 90. letech část bažin zase zaplavili.",
-  "irony_prompt": "An enormous flock of grey cranes fills the frame, standing politely in a queue at a long wooden trough piled with golden corn kernels, while a grinning farmer pours more from a wheelbarrow like a generous host at a feast. Smaller and subordinate: a quiet electric cart full of tourists with binoculars, a tractor parked beside an untouched green field, a single crane wearing a napkin. MOOD: cheerful, playful, sunny winter morning."
+  "irony_prompt": "An enormous flock of grey cranes fills the frame, standing politely in a queue at a long wooden trough piled with golden corn kernels, while a grinning farmer pours more from a wheelbarrow like a generous host at a feast. Smaller and subordinate: a quiet electric cart full of tourists with binoculars, a tractor parked beside an untouched green field, a single crane wearing a napkin. MOOD: cheerful, playful, sunny winter morning.",
+  "online_only": true
  },
  {
   "id": "il-s-den-smireni",
@@ -1047,7 +1047,6 @@
   "section": "Kultura & tradice",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Jak vypadají izraelské silnice o svátku Jom kipur?",
   "answer": "Auta stojí a po dálnicích jezdí děti na kolech",
   "distractors": [
@@ -1060,7 +1059,8 @@
   "explanation": "Jom kipur, Den smíření, je nejposvátnější den židovského roku: dospělí 25 hodin nejedí ani nepijí a vysílání přeruší i televize a rozhlas.",
   "about": "svátku Jom kipur",
   "more_fact": "Silnice nikdo úředně neuzavírá, prázdné jsou jen díky zvyku. Kdo projede autem, riskuje hlavně pohoršené pohledy; záchranky a policie přitom jezdí normálně.",
-  "irony_prompt": "A wide empty multi-lane highway fills the frame under a golden evening sky, taken over by cheerful children on bicycles, scooters and roller skates weaving between the painted lanes, while one lonely parked car looks on sheepishly from the shoulder. Smaller and subordinate: a grandfather in a white shirt strolling down the middle, a dog riding in a bicycle basket, a pigeon napping on the empty asphalt. MOOD: cheerful, playful, peaceful."
+  "irony_prompt": "A wide empty multi-lane highway fills the frame under a golden evening sky, taken over by cheerful children on bicycles, scooters and roller skates weaving between the painted lanes, while one lonely parked car looks on sheepishly from the shoulder. Smaller and subordinate: a grandfather in a white shirt strolling down the middle, a dog riding in a bicycle basket, a pigeon napping on the empty asphalt. MOOD: cheerful, playful, peaceful.",
+  "online_only": true
  },
  {
   "id": "il-s-kocarkova-svacina",
@@ -1069,7 +1069,6 @@
   "section": "Jídlo",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Na co přišli vědci, když zkoumali izraelské děti, které už v kočárku chroupou křupky Bamba?",
   "answer": "Mají mnohem méně alergií na arašídy",
   "distractors": [
@@ -1082,6 +1081,860 @@
   "explanation": "Pozorování vedlo ke studii LEAP z roku 2015, která potvrdila, že včasné podávání arašídů malým dětem alergii spíš předchází. Doporučení pro rodiče se pak změnila po celém světě.",
   "about": "křupkách Bamba",
   "more_fact": "Bamba se vyrábí od roku 1964 a v Izraeli ji zná prakticky každé dítě. Nejsou to brambůrky, ale kukuřičné křupky ochucené arašídovým máslem.",
-  "irony_prompt": "A giant golden stick-shaped puffed snack fills the frame, held up like a trophy by a beaming toddler in a pushchair, while a serious scientist in a lab coat kneels beside it peering through a magnifying glass in awe. Smaller and subordinate: crumbs scattered on the blanket, a pigeon hoping for leftovers, a calm baby sleeping in the next pushchair. MOOD: cheerful, playful, sunny."
+  "irony_prompt": "A giant golden stick-shaped puffed snack fills the frame, held up like a trophy by a beaming toddler in a pushchair, while a serious scientist in a lab coat kneels beside it peering through a magnifying glass in awe. Smaller and subordinate: crumbs scattered on the blanket, a pigeon hoping for leftovers, a calm baby sleeping in the next pushchair. MOOD: cheerful, playful, sunny.",
+  "online_only": true
+ },
+ {
+  "id": "il-k-timna-park",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se říká zvláštním skalním sloupům v parku Timna, které vytvaroval vítr a písek?",
+  "answer": "Šalamounovy sloupy",
+  "distractors": [
+   "Davidova brána",
+   "Mojžíšovy schody",
+   "Abrahámova věž"
+  ],
+  "quip_correct": "Ani sochař by to líp nevytesal, a přitom to udělal jen vítr.",
+  "quip_wrong": "Skoro. Jmenují se po králi Šalamounovi, ne po žádném z těchhle jmen.",
+  "explanation": "Sloupy vznikly erozí měkkého pískovce za miliony let, jméno dostaly podle biblického krále, i když s ním nemají nic společného.",
+  "about": "sloupech v Timně",
+  "more_fact": "V okolí sloupů se kdysi těžila měď — archeologové tu našli doklady těžby staré přes 6000 let, tedy z doby dávno před králem, po kterém se sloupy jmenují.",
+  "irony_prompt": "A towering natural sandstone pillar fills the frame, glowing warm orange-red, dominating the scene. Smaller and subordinate: a tiny hiker figure looking up in awe, a few scattered rust-colored rocks on the ground. MOOD: wondrous, warm, playful."
+ },
+ {
+  "id": "il-k-zahrady-hajfa",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak vypadají slavné schodovité zahrady ve městě Haifa, které se táhnou od úpatí hory až k moři?",
+  "answer": "Jako obří zelené schodiště se zlatou kopulí nahoře",
+  "distractors": [
+   "Jako bludiště z vysokých živých plotů",
+   "Jako plovoucí zahrada na hladině přístavu",
+   "Jako skleník plný kaktusů uprostřed města"
+  ],
+  "quip_correct": "Nejlepší výhled na moře má ze všech v Haifě asi zahradník.",
+  "quip_wrong": "Skoro to vidíš — je to devatenáct teras schodů se zlatou kopulí nahoře, ne tohle.",
+  "explanation": "Zahrady mají devatenáct teras a patří k nim i svatyně s pozlacenou kopulí, kterou je vidět z celého přístavu.",
+  "about": "zahradách v Haifě",
+  "more_fact": "Na založení a údržbu zahrad přispívají věřící baháʼí víry z celého světa dobrovolně — nikdo za práci v nich neplatí a vstup je pro návštěvníky zdarma.",
+  "irony_prompt": "A dazzling golden dome tops a cascade of perfectly manicured green terraces, filling the frame as it tumbles down a hillside toward a distant sea. Smaller and subordinate: neat rows of cypress trees, a few tiny visitors on a winding path. MOOD: majestic, serene, cheerful."
+ },
+ {
+  "id": "il-k-maly-pribuzny-slona",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaké zvíře velké jako králík žije na skalách u Mrtvého moře a je podle vědců nejbližší příbuzný slona?",
+  "answer": "Daman skalní",
+  "distractors": [
+   "Syslík pouštní",
+   "Křeček zlatý",
+   "Pišťucha horská"
+  ],
+  "quip_correct": "Vypadá jako chlupatá bramborová placka, ale rodokmen má jako šlechtic.",
+  "quip_wrong": "Blízko, ale ne úplně: jde o damana skalního, chlupatou kuličku, co je DNA sestřenicí slona.",
+  "explanation": "Daman nemá se slonem nic společného na pohled, ale mají podobně stavěné zuby a nohy — proto je věda řadí k příbuzným.",
+  "about": "damanech skalních",
+  "more_fact": "Damani žijí v tlupách a hlídkují po směnách — jeden vždycky sedí na vyvýšeném místě a hvízdáním varuje ostatní, když se blíží orel nebo liška.",
+  "irony_prompt": "A round furry rock hyrax perches on a sun-warmed boulder, fills the frame, alert and wide-eyed. Smaller and subordinate: a couple of tiny hyraxes peeking from a crevice below, dry desert scrubby plants. MOOD: cute, curious, warm."
+ },
+ {
+  "id": "il-k-jeruzalemske-udoli",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaká divoká zvířata s dlouhýma nohama potkáš přímo uprostřed Jeruzaléma, v Údolí gazel?",
+  "answer": "Gazely horské",
+  "distractors": [
+   "Divocí velbloudi",
+   "Antilopy losí",
+   "Divocí osli"
+  ],
+  "quip_correct": "Ne každé město má v parku volně pobíhající zvířata místo holubů.",
+  "quip_wrong": "Poskakují tam gazely horské, ne tahle zvířata.",
+  "explanation": "Údolí gazel je přírodní park přímo mezi domy, kde žije stádo divokých gazel, které si zvyklo na blízkost lidí.",
+  "about": "gazelách v Jeruzalémě",
+  "more_fact": "Údolí gazel vzniklo tak, že se ho radnice rozhodla nezastavět domy, ačkoli o pozemek byl kolem něj velký zájem developerů.",
+  "irony_prompt": "A graceful mountain gazelle with long slender legs fills the frame, standing alert on a grassy urban park slope. Smaller and subordinate: distant apartment building rooftops beyond the park, a bench, a few park trees. MOOD: peaceful, surprising, gentle."
+ },
+ {
+  "id": "il-k-purim-svatek",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co si o svátku Purim oblékají izraelské děti, podobně jako na Halloween?",
+  "answer": "Maškarní kostýmy",
+  "distractors": [
+   "Slavnostní bílé šaty",
+   "Teplé zimní kabáty",
+   "Sportovní dresy"
+  ],
+  "quip_correct": "Jeden den v roce může být princeznou, pirátem i mluvícím banánem úplně kdokoli.",
+  "quip_wrong": "Oblékají si maškarní kostýmy — tohle si nechávají na jiné příležitosti.",
+  "explanation": "O Purim si děti i dospělí oblékají kostýmy na počest staré historky, ve které se hlavní hrdinka Ester musela před králem přestrojit a skrýt svůj původ.",
+  "about": "svátku Purim",
+  "more_fact": "K Purimu patří i hlučné rolničky a řehtačky — děti s nimi dělají rámus pokaždé, když se při čtení příběhu vysloví jméno záporáka Hamana.",
+  "irony_prompt": "A child in a colorful homemade costume — a cape, a mask, a paper crown — fills the frame, laughing and mid-twirl. Smaller and subordinate: a few noisemaker rattles on the ground, confetti scattered nearby. MOOD: joyful, silly, festive."
+ },
+ {
+  "id": "il-k-novy-rok-prirody",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co dělají izraelské děti o svátku Tu bišvat, kterému se říká Nový rok stromů?",
+  "answer": "Sázejí nové stromky",
+  "distractors": [
+   "Pouštějí draky",
+   "Staví sněhuláky",
+   "Malují vajíčka"
+  ],
+  "quip_correct": "Zatímco jinde slaví nový rok ohňostrojem, tady ho slaví lopatou.",
+  "quip_wrong": "Tohle se k svátku nepojí — patří k němu sázení nové zeleně.",
+  "explanation": "O Tu bišvat se po celé zemi sází miliony nových stromů, nejčastěji borovic a dalších dřevin přizpůsobených suchému podnebí.",
+  "about": "svátku Tu bišvat",
+  "more_fact": "Svátek má kořeny v dávném zvyku počítat stáří ovocných stromů kvůli sklizni — dnes se z něj stal hlavně den výsadby nové zeleně do vyprahlé krajiny.",
+  "irony_prompt": "A child's small hands fill the frame, carefully patting soil around a freshly planted young sapling. Smaller and subordinate: a watering can nearby, a small pile of dark earth, a few other tiny saplings in the background. MOOD: hopeful, warm, gentle."
+ },
+ {
+  "id": "il-k-chagall-nemocnice",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím jsou výjimečná barevná okna, která namaloval umělec Marc Chagall pro nemocnici Hadasa?",
+  "answer": "Každé má jinou barvu a jiný izraelský kmen",
+  "distractors": [
+   "Jsou vyrobená z čistého zlata",
+   "Dají se rozsvítit jako obří lampy",
+   "Mění barvu podle počasí venku"
+  ],
+  "quip_correct": "Dvanáct oken, dvanáct barev, a ani jedno se nenudí stejným odstínem jako to vedle.",
+  "quip_wrong": "Zajímavé, ale skutečnost je jiná — každé z dvanácti má vlastní barvu a vlastní kmen.",
+  "explanation": "Okna zobrazují dvanáct biblických izraelských kmenů a každé má svou dominantní barvu a symboly zvířat či rostlin.",
+  "about": "Chagallových oknech",
+  "more_fact": "Marc Chagall prý o oknech řekl, že sklo mísí se slunečním světlem tak, jako by míchal barvy na paletě — okna proto vypadají jinak podle denní doby.",
+  "irony_prompt": "A tall stained-glass window fills the frame, glowing with vivid jewel-toned abstract shapes and animal silhouettes lit from behind by sunlight. Smaller and subordinate: a plain hospital hallway wall beside it, soft light beams on the floor. MOOD: radiant, magical, calm."
+ },
+ {
+  "id": "il-k-bojove-umeni",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje sebeobranný bojový styl, který vznikl v Izraeli a dnes ho cvičí armády po celém světě?",
+  "answer": "Krav maga",
+  "distractors": [
+   "Aikido",
+   "Kung-fu",
+   "Capoeira"
+  ],
+  "quip_correct": "Vymyšlený tak, aby fungoval i ve chvíli, kdy ti chybí čas na jakoukoli eleganci.",
+  "quip_wrong": "Jmenuje se krav maga — ostatní styly mají kořeny úplně jinde ve světě.",
+  "explanation": "Krav maga vznikla z potřeby rychlé a jednoduché obrany bez zbytečných ozdobných pohybů a dnes se učí i civilisté po celém světě.",
+  "about": "bojovém umění krav maga",
+  "more_fact": "Název v hebrejštině znamená jednoduše boj z blízka — styl totiž nemá žádná pravidla ani soutěžní podobu jako jiná bojová umění.",
+  "irony_prompt": "Two training figures in plain sportswear fill the frame mid-motion in a simple self-defense drill, dynamic and energetic. Smaller and subordinate: a bare gym mat floor, a water bottle in the corner. MOOD: energetic, determined, playful."
+ },
+ {
+  "id": "il-k-plazova-hra",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaká hra s dřevěnými pálkami a míčkem bez sítě se hraje na izraelských plážích tak často, že se jí říká národní plážový sport?",
+  "answer": "Matkot",
+  "distractors": [
+   "Petanque",
+   "Badminton",
+   "Ping-pong"
+  ],
+  "quip_correct": "Pravidla má jednoduchá — míček nesmí spadnout, a hotovo.",
+  "quip_wrong": "Na pláži se odbíjí matkot — tahle hra na písek tolik nepatří.",
+  "explanation": "Matkot se hraje bez sítě a bez počítání skóre — cílem je jen udržet míček ve hře co nejdéle, takže rallye dokážou trvat i desítky minut.",
+  "about": "matkotu",
+  "more_fact": "O letních víkendech bývají izraelské pláže tak zaplněné hráči matkotu, že úřady v některých úsecích hru omezují na vyhrazené hodiny kvůli bezpečí plavců.",
+  "irony_prompt": "A wooden beach paddle mid-swing fills the frame with a small ball frozen in motion beside it, bright beach light all around. Smaller and subordinate: bare sandy beach texture, a distant blurred shoreline. MOOD: playful, energetic, sunny."
+ },
+ {
+  "id": "il-k-slangove-slovo",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jaké krátké slovo používají mladí Izraelci pořád dokola, když chtějí říct, že je všechno super?",
+  "answer": "Sababa",
+  "distractors": [
+   "Jalla",
+   "Beseder",
+   "Ma nišma"
+  ],
+  "quip_correct": "Jedno slovo zvládne popsat náladu, počasí i celý víkend najednou.",
+  "quip_wrong": "Blízko, ale ne úplně — to slovo na super a v pohodě je sababa.",
+  "explanation": "Slovo pochází z arabštiny a do hebrejského slangu se dostalo tak důkladně, že ho dnes běžně používají i lidé, kteří arabsky vůbec neumí.",
+  "about": "slově sababa",
+  "more_fact": "Slovo se dá použít skoro na cokoli — jako odpověď na otázku, jako souhlas s plánem i jako pouhé přitakání v běžném rozhovoru.",
+  "irony_prompt": "A giant friendly thumbs-up hand gesture fills the frame, bold and cheerful against a warm sky. Smaller and subordinate: a few soft clouds, a small bird flying nearby. MOOD: cheerful, upbeat, warm."
+ },
+ {
+  "id": "il-k-burekas-napln",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Podle čeho poznají Izraelci, jakou náplň má slané pečivo burekas, aniž by se do něj museli zakousnout?",
+  "answer": "Podle tvaru",
+  "distractors": [
+   "Podle barvy obalu",
+   "Podle vůně",
+   "Podle velikosti"
+  ],
+  "quip_correct": "Trojúhelník, čtverec, půlměsíc — každý tvar je vlastně tajná zpráva o tom, co je uvnitř.",
+  "quip_wrong": "Prozradí to tvar pečiva, ne tohle.",
+  "explanation": "Burekas s bramborovou náplní bývají trojúhelníkové, se sýrem čtvercové a se špenátem třeba půlměsícovité — pekaři tvar dodržují, aby se náplně nepletly.",
+  "about": "pečivu burekas",
+  "more_fact": "Burekas pochází z osmanské kuchyně a do Izraele ho přinesli přistěhovalci z Turecka a Balkánu, odkud se tvarové rozlišování náplní dochovalo dodnes.",
+  "irony_prompt": "A golden flaky pastry triangle fills the frame, steam rising from its flaky crust, resting on plain wax paper. Smaller and subordinate: a few crumbs scattered around, a second pastry shape blurred in the background. MOOD: cozy, appetizing, warm."
+ },
+ {
+  "id": "il-k-halva-sladkost",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Z čeho se hlavně vyrábí sladká izraelská pochoutka chalva, kterou v obchodech často krájí z velkého kusu?",
+  "answer": "Ze sezamové pasty",
+  "distractors": [
+   "Z rozvařených datlí",
+   "Z mandlové mouky",
+   "Z medu a ovesných vloček"
+  ],
+  "quip_correct": "Vypadá jako sladký balvan, chutná jako sladký oblak.",
+  "quip_wrong": "Tahle surovina se do chalvy nedostane — vzniká ze sezamové pasty tahini.",
+  "explanation": "Chalva se vyrábí šleháním sezamové pasty tahini s karamelizovaným cukrem, díky čemuž vznikne charakteristická vláknitá, drobivá textura.",
+  "about": "chalvě",
+  "more_fact": "V izraelských obchodech bývá chalva naskládaná ve velkých barevných blocích a prodavač z ní ukrajuje přesně tolik, kolik si zákazník řekne, podobně jako u sýra.",
+  "irony_prompt": "A large block of crumbly pale halva fills the frame, its marbled swirled texture glistening slightly, resting on a plain wooden counter. Smaller and subordinate: a small knife beside it, a few loose crumbs. MOOD: cozy, tempting, warm."
+ },
+ {
+  "id": "il-k-den-nezavislosti-oslava",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co dělají izraelské rodiny nejčastěji o Dni nezávislosti, hned poté, co si ráno připomenou padlé vojáky?",
+  "answer": "Grilují si venku v parcích",
+  "distractors": [
+   "Pečou dorty ve tvaru vlajky",
+   "Pouštějí lampiony do nebe",
+   "Plavou hromadně v moři"
+  ],
+  "quip_correct": "Ráno vzpomínka, odpoledne kouř z grilu — obojí patří ke stejnému dni.",
+  "quip_wrong": "Hlavně grilují venku v parcích — na tohle ten den moc nevychází.",
+  "explanation": "Den nezávislosti následuje hned po Dni památky padlých, takže smutná a oslavná nálada se během čtyřiadvaceti hodin výrazně střídá.",
+  "about": "Dni nezávislosti",
+  "more_fact": "O Dni nezávislosti bývá kouře z grilů v parcích tolik, že ho jde vidět i na satelitních snímcích ovzduší nad izraelskými městy.",
+  "irony_prompt": "A sizzling backyard barbecue grill fills the frame, skewers of food smoking over glowing coals. Smaller and subordinate: a checkered picnic blanket nearby, a couple of small flags on sticks stuck in the grass. MOOD: festive, warm, cheerful."
+ },
+ {
+  "id": "il-t-eilat-mesto",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Místa",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Čím je pro Izraelce především město Eilat na jihu země?",
+  "answer": "Oblíbeným letoviskem u Rudého moře",
+  "distractors": [
+   "Hlavním přístavem pro export ropy",
+   "Centrem filmového průmyslu",
+   "Sídlem nejvyššího soudu"
+  ],
+  "quip_correct": "Na severu sníh, na jihu potápění s rybičkami — a obojí patří jedné zemi.",
+  "quip_wrong": "Eilat je hlavně letovisko u moře — o tomhle spíš neslyšíš.",
+  "explanation": "Eilat leží na pobřeží Rudého moře a díky celoročně teplému počasí a korálovým útesům je oblíbený jak u Izraelců, tak u zahraničních turistů.",
+  "about": "Eilatu",
+  "more_fact": "Eilat je jediné izraelské město u Rudého moře a zároveň jediné, kde funguje bezcelní nákup — obchody tu neplatí daň z přidané hodnoty.",
+  "irony_prompt": "A vibrant turquoise bay dotted with snorkelers fills the frame, sun sparkling on the water beside a rocky desert shoreline. Smaller and subordinate: a couple of beach umbrellas on the sand, distant hazy mountains across the bay. MOOD: sunny, relaxed, vibrant."
+ },
+ {
+  "id": "il-t-narodni-ptak",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Příroda",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak si Izraelci v roce 2008 veřejným hlasováním vybrali svého národního ptáka?",
+  "answer": "Zvítězil dudek chocholatý",
+  "distractors": [
+   "Zvítězil orel skalní",
+   "Zvítězil plameňák růžový",
+   "Zvítězil sokol stěhovavý"
+  ],
+  "quip_correct": "Vyhrál pták s chocholkou jako korunou — demokracie má někdy dobrý vkus.",
+  "quip_wrong": "Vyhrál dudek chocholatý, ne tenhle pták.",
+  "explanation": "Do ankety o národního ptáka se zapojily statisíce Izraelců a dudek chocholatý zvítězil díky své nápadné oranžové chocholce a zajímavému zpěvu.",
+  "about": "dudkovi chocholatém",
+  "more_fact": "Dudek se zmiňuje i v biblických textech a podle legendy prý sloužil jako posel mezi králem Šalamounem a královnou ze Sáby.",
+  "irony_prompt": "A hoopoe bird with its striking orange crest fully fanned out fills the frame, perched proudly on a bare branch. Smaller and subordinate: a few scattered feathers below, a soft blurred garden background. MOOD: proud, vibrant, cheerful."
+ },
+ {
+  "id": "il-t-herzl-novinar",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Lidé",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Čím se do dějin zapsal novinář Theodor Herzl, po kterém je pojmenovaná hora v Jeruzalémě?",
+  "answer": "Položil základy moderního politického sionismu",
+  "distractors": [
+   "Navrhl dnešní izraelskou vlajku",
+   "Založil první izraelskou univerzitu",
+   "Vynalezl moderní hebrejskou gramatiku"
+  ],
+  "quip_correct": "Novinářská kariéra ho nakonec zavedla mnohem dál, než kam sahá jakýkoli článek.",
+  "quip_wrong": "Herzl je spíš spojený s myšlenkou politického hnutí za židovský stát, ne s tímhle.",
+  "explanation": "Herzl v knize Židovský stát navrhl politické řešení v podobě samostatného státu a jeho myšlenky později vedly ke vzniku hnutí, které usilovalo o jeho vznik.",
+  "about": "Theodoru Herzlovi",
+  "more_fact": "Herzl svolal v roce 1897 v Basileji první velký kongres na toto téma, kam přijeli delegáti z celého světa, přestože sám v Palestině nikdy trvale nežil.",
+  "irony_prompt": "A dignified anonymous silhouette of a man with a full beard in formal 19th-century dress fills the frame, standing at a simple lectern. Smaller and subordinate: a plain gavel resting nearby, a few empty chairs in soft focus behind him. MOOD: solemn, historic, dignified."
+ },
+ {
+  "id": "il-t-peres-politik",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Lidé",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Co je na politické kariéře Šimona Perese neobvyklé — jaké funkce v izraelské politice zastával?",
+  "answer": "Byl prezidentem i premiérem a získal Nobelovu cenu míru",
+  "distractors": [
+   "Byl jediným izraelským králem dvacátého století",
+   "Odmítl kdykoli zastávat veřejnou funkci",
+   "Celou kariéru strávil jen jako starosta Tel Avivu"
+  ],
+  "quip_correct": "Kariéra jako žebřík — a on ho vylezl skoro celý, i s tou nejvyšší příčkou.",
+  "quip_wrong": "Peres zastával nejvyšší státní úřady a dostal Nobelovu cenu míru — tohle o něm neplatí.",
+  "explanation": "Peres získal Nobelovu cenu míru v roce 1994 za mírová jednání s Palestinci a později se stal i prezidentem Izraele, ačkoli premiérem byl už o desítky let dřív.",
+  "about": "Šimonu Peresovi",
+  "more_fact": "Peres byl v izraelské politice aktivní přes šest desetiletí a zastával téměř každou významnou vládní funkci, jakou izraelský politický systém nabízí.",
+  "irony_prompt": "An elegant golden medal on a ribbon fills the frame, resting on plain dark velvet fabric. Smaller and subordinate: a simple wooden desk edge visible below, soft warm lighting. MOOD: dignified, respectful, warm."
+ },
+ {
+  "id": "il-t-eurovize-vitezstvi",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Kolikrát Izrael za celou historii vyhrál soutěž Eurovision Song Contest?",
+  "answer": "Čtyřikrát",
+  "distractors": [
+   "Jednou",
+   "Šestkrát",
+   "Nikdy nevyhrál"
+  ],
+  "quip_correct": "Čtyři trofeje a pokaždé jiná show, kterou si ostatní země dlouho pamatovaly.",
+  "quip_wrong": "Izrael vyhrál čtyřikrát — s touhle možností se netrefuješ.",
+  "explanation": "Izrael vyhrál Eurovision poprvé v roce 1978 a naposledy v roce 2018 díky písničce Toy zpěvačky Netty, mezitím vyhrál ještě dvakrát v osmdesátých letech.",
+  "about": "izraelských vítězstvích na Eurovizi",
+  "more_fact": "V roce 1979 Izrael soutěž jako vítěz z předchozího roku i pořádal, ale termín kolidoval s Dnem památky padlých, takže se datum přesunulo.",
+  "irony_prompt": "A glittering microphone on a stand fills the frame, dramatic stage spotlights beaming down around it. Smaller and subordinate: a blurred audience silhouette in the background, scattered confetti on the floor. MOOD: glamorous, festive, triumphant."
+ },
+ {
+  "id": "il-t-skola-designu-1906",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Umění",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se jmenuje nejstarší a nejprestižnější izraelská škola umění a designu v Jeruzalémě?",
+  "answer": "Bezalelova akademie",
+  "distractors": [
+   "Weizmannova akademie",
+   "Herzlova konzervatoř",
+   "Ben Gurionova škola designu"
+  ],
+  "quip_correct": "Založená ještě předtím, než měla země vlastní jméno na mapě.",
+  "quip_wrong": "Jmenuje se jinak — po biblickém řemeslníkovi, ne po žádném z těchhle jmen.",
+  "explanation": "Školu založili v roce 1906, tedy ještě v době osmanské Palestiny, a pojmenovali ji po biblickém řemeslníkovi Becalelovi, který podle tradice stavěl Archu úmluvy.",
+  "about": "Bezalelově akademii",
+  "more_fact": "Mezi absolventy školy jsou designéři, kteří dnes navrhují izraelskou měnu, poštovní známky i vizuální styl řady světově známých značek.",
+  "irony_prompt": "A large artist's easel with a blank canvas fills the frame in a sunlit studio corner, paintbrushes standing in a jar beside it. Smaller and subordinate: a wooden stool, scattered paint tubes on a low table. MOOD: inspiring, creative, calm."
+ },
+ {
+  "id": "il-t-sportovni-vyjimka",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Proč izraelské fotbalové i basketbalové týmy soutěží v evropských ligách, přestože Izrael leží v Asii?",
+  "answer": "Asijské federace Izrael z politických důvodů dlouho odmítaly, proto přešel k evropským",
+  "distractors": [
+   "Vybral si to sám kvůli kratším letům na zápasy",
+   "Asijská federace tehdy ještě vůbec neexistovala",
+   "Hráči si to sami vyžádali kvůli platům"
+  ],
+  "quip_correct": "Geografie říká jeden díl světa, sportovní federace říká druhý — a vyhrála federace.",
+  "quip_wrong": "Důvod je odmítání ze strany asijských federací, ne tohle.",
+  "explanation": "Kvůli odmítání ze strany arabských a dalších asijských zemí Izrael v devadesátých letech přestoupil pod evropské sportovní federace, kde soutěží dodnes.",
+  "about": "začlenění izraelského sportu do Evropy",
+  "more_fact": "Podobný přesun se týká i dalších izraelských sportů, takže země jako jediná mimo svůj geografický díl světa běžně soutěží v soutěžích jiného kontinentu.",
+  "irony_prompt": "A soccer ball rests mid-bounce on a green pitch, filling the frame with dramatic motion blur. Smaller and subordinate: goalpost netting blurred in the background, faint stadium floodlights glowing. MOOD: dynamic, energetic, dramatic."
+ },
+ {
+  "id": "il-t-casspi-basketbal",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Sport",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Čím se zapsal do historie basketbalista Omri Casspi?",
+  "answer": "Byl prvním Izraelcem, který si zahrál v NBA",
+  "distractors": [
+   "Byl prvním Izraelcem, který trénoval reprezentaci USA",
+   "Vyhrál jako první Izraelec olympijské zlato v basketbalu",
+   "Založil první profesionální basketbalovou ligu v Izraeli"
+  ],
+  "quip_correct": "Jedna vstupenka do nejslavnější ligy světa, a najednou o Izraeli vědělo i publikum, co o něm nikdy neslyšelo.",
+  "quip_wrong": "Casspi je slavný tím, že byl první Izraelec v NBA — jinak to nebylo.",
+  "explanation": "Casspi debutoval v NBA v roce 2009 za Sacramento Kings a otevřel tím cestu dalším izraelským hráčům do nejsledovanější basketbalové ligy světa.",
+  "about": "Omri Casspim",
+  "more_fact": "Než odešel do USA, hrál Casspi za Maccabi Tel Aviv, tedy za tentýž klub, který má na kontě hned několik evropských basketbalových titulů.",
+  "irony_prompt": "A basketball mid-flight toward a hoop fills the frame against a plain gym backdrop, dynamic motion streaks trailing it. Smaller and subordinate: a blurred net swishing; bright overhead gym lights; a stray sneaker mark on the polished floor. MOOD: dynamic, triumphant, energetic."
+ },
+ {
+  "id": "il-t-mazal-tov",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Při jaké příležitosti Izraelci nejčastěji řeknou „mazal tov“?",
+  "answer": "Při gratulaci k radostné události, jako je svatba nebo narození dítěte",
+  "distractors": [
+   "Jako rozloučení na konci telefonátu",
+   "Jako omluvu za pozdní příchod",
+   "Jako pozdrav při setkání ráno"
+  ],
+  "quip_correct": "Dvě slova, co zvládnou nést radost ze svatby i z prvního miminkova zakřičení.",
+  "quip_wrong": "Tenhle výraz se používá při gratulaci k radostné příležitosti — ne v tomhle případě.",
+  "explanation": "Výraz doslova znamená dobré souhvězdí neboli dobrý osud a používá se univerzálně jako gratulace ke štěstí.",
+  "about": "výrazu mazal tov",
+  "more_fact": "Stejný výraz se běžně používá i v jidiš a je jedním z mála hebrejských slov, která pronikla i do běžné angličtiny v podobě mazel tov.",
+  "irony_prompt": "A pair of clinking champagne glasses fills the frame, catching warm golden light mid-toast. Smaller and subordinate: a few scattered rose petals on a table below, soft bokeh lights in the background. MOOD: celebratory, warm, joyful."
+ },
+ {
+  "id": "il-t-sabich-pita",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co typicky najdeš uvnitř izraelského sendviče sabich kromě smažené lilkové plátky?",
+  "answer": "Vařené vejce a bramborový salát",
+  "distractors": [
+   "Grilované kuřecí maso a hranolky",
+   "Uzený losos a smetanový sýr",
+   "Karamelizovanou cibuli a slaninu"
+  ],
+  "quip_correct": "Vegetariánský sendvič, který dokáže zasytit i pořádně hladového masožravce.",
+  "quip_wrong": "Uvnitř bývá hlavně vejce a bramborová příloha — tohle tam obvykle nenajdeš.",
+  "explanation": "Sabich vznikl jako snídaňové jídlo iráckých Židů a dnes je oblíbeným pouličním jídlem po celém Izraeli, typicky podávané v pitě.",
+  "about": "sendviči sabich",
+  "more_fact": "Sabich se tradičně jedl v sobotu dopoledne po šabatu, protože se dal připravit už v pátek a doma se v sobotu nevařilo.",
+  "irony_prompt": "A stuffed pita sandwich overflowing with fried eggplant slices and chopped salad fills the frame, held in two hands. Smaller and subordinate: a paper wrapper crinkled below, a few sesame seeds scattered on a table. MOOD: appetizing, casual, warm."
+ },
+ {
+  "id": "il-t-izraelsky-salat",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se připravuje tradiční izraelský salát, který se podává skoro ke každému jídlu?",
+  "answer": "Okurka a rajče se nakrájí na velmi drobné kostičky",
+  "distractors": [
+   "Zelenina se nastrouhá najemno jako na coleslaw",
+   "Rajčata se rozmixují do hladké omáčky",
+   "Okurky se nakrájí na tenké plátky"
+  ],
+  "quip_correct": "Čím menší kostičky, tím větší respekt souseda u stolu.",
+  "quip_wrong": "Jde hlavně o drobné kostičky okurky a rajčete, tohle ne.",
+  "explanation": "Malé pravidelné kostičky okurky a rajčete, často s olivovým olejem a citronem, dělají ze salátu základní přílohu skoro ke každému izraelskému jídlu.",
+  "about": "izraelském salátu",
+  "more_fact": "Přes svůj název má salát kořeny i v arabské a palestinské kuchyni, kde se podobná směs nakrájené zeleniny připravuje odnepaměti.",
+  "irony_prompt": "A bowl of finely diced cucumber and tomato salad fills the frame, glistening with a light dressing. Smaller and subordinate: a wedge of lemon beside the bowl, a sprig of parsley on top. MOOD: fresh, appetizing, vibrant."
+ },
+ {
+  "id": "il-t-valka-1967",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Proč se konflikt mezi Izraelem a sousedními arabskými zeměmi v roce 1967 nazývá šestidenní válka?",
+  "answer": "Boje trvaly celkem jen šest dní",
+  "distractors": [
+   "Bojovalo se šest dní v týdnu kromě soboty",
+   "Konflikt vypukl přesně šest let po vzniku státu",
+   "Do bojů se zapojilo šest armád najednou"
+  ],
+  "quip_correct": "Konflikt, který se do kalendáře vešel skoro jako pracovní týden.",
+  "quip_wrong": "Jmenuje se tak podle délky bojů, ne podle tohohle.",
+  "explanation": "Boje mezi Izraelem a koalicí sousedních zemí trvaly od 5. do 10. června 1967 a výrazně změnily hranice a území, která Izrael od té doby spravuje.",
+  "about": "šestidenní válce",
+  "more_fact": "Během konfliktu získal Izrael kontrolu nad rozsáhlými územími včetně Sinajského poloostrova, Golanských výšin a Západního břehu Jordánu.",
+  "irony_prompt": "An old-fashioned wall calendar page fills the frame, showing six days boldly circled in red on an otherwise plain grid. Smaller and subordinate: a pencil resting beside it, a cup of coffee gone cold nearby. MOOD: tense, historic, solemn."
+ },
+ {
+  "id": "il-t-rabin-osobnost",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Za co dostal izraelský premiér Jicchak Rabin v roce 1994 Nobelovu cenu míru?",
+  "answer": "Za mírová jednání s palestinskou stranou",
+  "distractors": [
+   "Za ukončení všech konfliktů v regionu natrvalo",
+   "Za sjednocení Jeruzaléma",
+   "Za založení Organizace spojených národů"
+  ],
+  "quip_correct": "Mírová cena za jednání, které se nikdy úplně nedovyjednalo do konce.",
+  "quip_wrong": "Cenu dostal za mírová jednání s palestinskou stranou, ne za tohle.",
+  "explanation": "Rabin cenu sdílel s Šimonem Peresem a Jásirem Arafatem za takzvané osloské dohody, které měly vést k trvalému míru v regionu.",
+  "about": "Jicchaku Rabinovi",
+  "more_fact": "Rabin byl v roce 1995 zastřelen na mírovém shromáždění v Tel Avivu izraelským extremistou, který s mírovým procesem nesouhlasil.",
+  "irony_prompt": "A simple olive branch rests across an open book page, filling the frame in soft warm light. Smaller and subordinate: a pair of reading glasses folded beside the book, a plain wooden table surface. MOOD: solemn, reflective, dignified."
+ },
+ {
+  "id": "il-q-hradby-jeruzalema",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Kdo nechal postavit dnešní mohutné hradby kolem Starého Města v Jeruzalémě?",
+  "answer": "Osmanský sultán Sulejman Nádherný",
+  "distractors": [
+   "Římský císař Hadrián",
+   "Byzantský císař Justinián",
+   "Britský mandátní správce"
+  ],
+  "quip_correct": "Impérium dávno zmizelo, kamenná hranice pořád drží, jako by o pádu říše nic netušila.",
+  "quip_wrong": "Hradby dal postavit sultán Sulejman Nádherný, zbytek jmen ho v tomhle nepředběhl.",
+  "explanation": "Hradby nechal postavit ve třicátých letech 16. století na místě starších opevnění, která byla v té době z velké části zchátralá.",
+  "about": "jeruzalémských hradbách",
+  "more_fact": "Stavba hradeb trvala přes čtyři roky a podle pověsti dal sultán popravit stavitele, protože zapomněli do hradeb zahrnout horu Sion.",
+  "irony_prompt": "A massive ancient stone city wall with crenellated battlements fills the frame under a warm golden sky. Smaller and subordinate: a lone weathered watchtower along the wall, a few scrubby plants growing from the stones. MOOD: majestic, timeless, solemn."
+ },
+ {
+  "id": "il-q-podzemni-jeskyne",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím jsou pozoruhodné tisíce podzemních jeskyní v lokalitě Bejt Guvrin?",
+  "answer": "Lidé je ručně vytesali do měkké horniny pro nejrůznější účely",
+  "distractors": [
+   "Vznikly přirozeně vymýváním vody za tisíce let",
+   "Vznikly jako důsledek starověkého zemětřesení",
+   "Jsou to pozůstatky sopečné činnosti"
+  ],
+  "quip_correct": "Podzemí plné komor, které si lidé vytesali sami — jako by se jim nechtělo bydlet nahoře na slunci.",
+  "quip_wrong": "Jsou ručně vytesané lidmi do měkké horniny, ne výsledkem tohohle.",
+  "explanation": "Sloužily v různých obdobích jako lomy, cisterny, hrobky, holubníky i úkryty a vytesávaly se do měkkého vápence po celá staletí.",
+  "about": "jeskyních v Bejt Guvrin",
+  "more_fact": "Lokalita je od roku 2014 na seznamu světového dědictví UNESCO pod přezdívkou Země tisíce jeskyní kvůli neobvyklé hustotě podzemních prostor.",
+  "irony_prompt": "A vast bell-shaped underground cave chamber fills the frame, soft light streaming down from a round opening high above. Smaller and subordinate: rough chisel marks on the pale stone walls, a small pile of rubble on the cave floor. MOOD: mysterious, awe-inspiring, calm."
+ },
+ {
+  "id": "il-q-boj-se-suchem",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je Izrael celosvětově výjimečný, pokud jde o využívání vody v zemědělství?",
+  "answer": "Recykluje naprostou většinu odpadní vody a znovu ji používá na zavlažování polí",
+  "distractors": [
+   "Jako jediná země na světě takovou vodu vůbec nepoužívá",
+   "Přebytečnou vodu vyváží tankery do sousedních zemí",
+   "Takovou vodu ukládá natrvalo do podzemních nádrží"
+  ],
+  "quip_correct": "Nejsušší země dokáže s vodou zacházet tak, že jí nakonec nechybí skoro nic.",
+  "quip_wrong": "Hlavně recykluje a znovu využívá tuhle vodu — tohle o ní neplatí.",
+  "explanation": "Izrael čistí a znovu používá přes devadesát procent odpadní vody, což je zdaleka nejvyšší podíl na světě, druhá země v žebříčku recykluje podstatně méně.",
+  "about": "recyklaci vody v Izraeli",
+  "more_fact": "Přebytečná vyčištěná voda se navíc vede stovky kilometrů potrubím až na jih země, aby pomohla zavlažovat i vyprahlé oblasti kolem Negevu.",
+  "irony_prompt": "A network of irrigation pipes fills the frame, water droplets glistening as they spray over rows of green crops in dry reddish soil. Smaller and subordinate: a distant water tower silhouette, a clear blue sky above. MOOD: ingenious, dry, hopeful."
+ },
+ {
+  "id": "il-q-udoli-chula-historie",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co se stalo s bažinami v údolí Chula poté, co je izraelští inženýři v padesátých letech vysušili kvůli zemědělské půdě?",
+  "answer": "Část území se kvůli ekologickým škodám musela později znovu uměle zaplavit",
+  "distractors": [
+   "Půda se ukázala jako nejúrodnější v celé zemi natrvalo",
+   "Bažiny se přirozeně obnovily samy během pár let",
+   "Území se změnilo v trvalou poušť bez rostlinstva"
+  ],
+  "quip_correct": "Vysušili bažinu, aby získali pole, a nakonec museli část vody navrátit zpátky — kruh se uzavřel.",
+  "quip_wrong": "Část plochy se musela znovu zaplavit kvůli škodám na přírodě, jinak to nedopadlo.",
+  "explanation": "Po vysušení se půda začala propadat a hořet, do ovzduší unikaly živiny a ubylo tažných ptáků, takže se část bažin v osmdesátých letech znovu zatopila jako přírodní rezervace.",
+  "about": "historii údolí Chula",
+  "more_fact": "Dnešní znovuzatopená rezervace v údolí Chula patří mezi nejvýznamnější evropsko-africké tahové zastávky ptáků na celém kontinentu.",
+  "irony_prompt": "A tranquil wetland reflects a soft golden sky, reeds filling the frame along the water's edge. Smaller and subordinate: a few distant water ripples, a single feather floating on the surface. MOOD: reflective, calm, restorative."
+ },
+ {
+  "id": "il-q-amos-oz-spisovatel",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je významný izraelský spisovatel Amos Oz, jehož knihy se přeložily do desítek jazyků?",
+  "answer": "Patřil k nejpřekládanějším izraelským autorům a byl kandidátem na Nobelovu cenu",
+  "distractors": [
+   "Byl jediným izraelským spisovatelem, co psal výhradně poezii",
+   "Stal se prvním izraelským laureátem Nobelovy ceny za literaturu",
+   "Psal knihy jen pro děti a mládež"
+  ],
+  "quip_correct": "Nobelovu cenu si nakonec neodnesl, ale čtenáře po celém světě přesvědčil bez ní.",
+  "quip_wrong": "Je slavný jako nejpřekládanější izraelský autor a kandidát na Nobelovu cenu, ne díky tomuhle.",
+  "explanation": "Amos Oz psal romány i esejistiku o izraelské společnosti a identitě a byl několikrát zmiňován jako kandidát na Nobelovu cenu, ačkoli ji nikdy nezískal.",
+  "about": "Amosu Ozovi",
+  "more_fact": "Oz vyrůstal v Jeruzalémě, ale jako mladík se rozhodl žít v kibucu a zemědělskou práci kombinoval s psaním po většinu svého raného života.",
+  "irony_prompt": "A closed hardcover book with a plain worn brown cover fills the frame, resting on a wooden desk. Smaller and subordinate: a pair of reading glasses folded beside it, a cup of tea steaming nearby. MOOD: contemplative, literary, warm."
+ },
+ {
+  "id": "il-q-shechtman-chemik",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Za jaký objev dostal izraelský vědec Daniel Shechtman v roce 2011 Nobelovu cenu za chemii?",
+  "answer": "Za objev kvazikrystalů",
+  "distractors": [
+   "Za objev nového chemického prvku",
+   "Za vynález plastů odolných vůči ohni",
+   "Za objev struktury DNA"
+  ],
+  "quip_correct": "Objevil strukturu, která podle tehdejších pravidel chemie prostě neměla existovat.",
+  "quip_wrong": "Dostal cenu za objev kvazikrystalů, ne za tohle.",
+  "explanation": "Shechtman objevil krystalickou strukturu s neperiodickým uspořádáním atomů, což odporovalo tehdejším učebnicím a zpočátku mu vědecká obec nevěřila.",
+  "about": "Danielu Shechtmanovi",
+  "more_fact": "Po zveřejnění objevu byl Shechtman léta terčem posměchu části vědecké komunity, než se jeho objev nakonec potvrdil a uznal jako průlomový.",
+  "irony_prompt": "A geometric crystal cluster with unusual angular facets fills the frame, catching light in sharp glints against a dark background. Smaller and subordinate: a simple lab beaker blurred nearby, a faint reflection on a dark tabletop. MOOD: fascinating, precise, quietly triumphant."
+ },
+ {
+  "id": "il-q-bar-micva-vek",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "V jakém věku se podle židovské tradice chlapec stává bar micva, tedy dospělým po náboženské stránce?",
+  "answer": "Ve třinácti letech",
+  "distractors": [
+   "V patnácti letech",
+   "V osmnácti letech",
+   "V šestnácti letech"
+  ],
+  "quip_correct": "Ve třinácti jsi podle tradice dospělý — ačkoli se stejnou pravděpodobností ještě zapomeneš na domácí úkol.",
+  "quip_wrong": "Stává se jím ve třinácti letech, ne v tomhle věku.",
+  "explanation": "Dívky se stávají bat micva o rok dřív, ve dvanácti letech, a od té chvíle jsou podle židovského práva zodpovědné za dodržování náboženských příkazů.",
+  "about": "bar micva",
+  "more_fact": "Oslava bar micva bývá spojená se čtením z Tóry v synagoze a následnou velkou rodinnou oslavou, která se často plánuje měsíce dopředu.",
+  "irony_prompt": "A traditional embroidered prayer shawl with fringed edges fills the frame, draped neatly over a wooden chair back. Smaller and subordinate: a simple silver cup on a nearby table, soft candlelight glow. MOOD: dignified, warm, ceremonial."
+ },
+ {
+  "id": "il-q-zidovske-truchleni",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jak dlouho podle židovské tradice trvá hlavní období truchlení zvané šiva po smrti blízkého příbuzného?",
+  "answer": "Sedm dní",
+  "distractors": [
+   "Tři dny",
+   "Třicet dní",
+   "Jeden rok"
+  ],
+  "quip_correct": "Jeden krátký úsek na to nejtěžší — a pak se svět, i když neochotně, musí zase roztočit dál.",
+  "quip_wrong": "Šiva trvá sedm dní, ne tuhle dobu.",
+  "explanation": "Po dobu šivy pozůstalí zůstávají doma, sedávají na nízkých stoličkách a přijímají návštěvy, které jim přicházejí vyjádřit soustrast.",
+  "about": "šivě",
+  "more_fact": "Slovo šiva v hebrejštině znamená přímo číslo sedm a po skončení tohoto období následují ještě další, postupně mírnější fáze truchlení.",
+  "irony_prompt": "A simple low wooden stool sits in a quiet room, filling the frame with soft afternoon light falling across it. Smaller and subordinate: a lit candle on a side table, a folded shawl draped over a chair. MOOD: solemn, quiet, respectful."
+ },
+ {
+  "id": "il-q-karavan-umelec",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je typická tvorba izraelského sochaře Daniho Karavana, který navrhoval díla i pro veřejné prostory v zahraničí?",
+  "answer": "Rozměrné environmentální sochy splývající s krajinou a okolním prostorem",
+  "distractors": [
+   "Drobné šperky vyráběné z ručně recyklovaných kovových odřezků",
+   "Přenosné loutky navrhované pro pouliční divadelní představení",
+   "Portrétní busty politiků vystavované ve vládních budovách"
+  ],
+  "quip_correct": "Jeho díla jsou tak velká, že si je člověk spíš prochází, než aby je jen obhlížel.",
+  "quip_wrong": "Je známý rozměrnými díly propojenými s krajinou, ne tímhle.",
+  "explanation": "Karavanova díla často propojují beton, kámen a přírodní prvky do rozsáhlých kompozic, které návštěvník prochází jako součást krajiny, ne jen sleduje zvenčí.",
+  "about": "Danim Karavanovi",
+  "more_fact": "Jedno z jeho nejznámějších děl stojí ve Francii jako památník filozofovi Walteru Benjaminovi a vede návštěvníka dolů skrz skálu až k moři.",
+  "irony_prompt": "A massive geometric concrete sculpture fills the frame, merging seamlessly into a rocky hillside landscape under open sky. Smaller and subordinate: a narrow stone pathway leading toward it, a few scattered pebbles. MOOD: monumental, contemplative, serene."
+ },
+ {
+  "id": "il-q-film-o-vzpominkach",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím byl mezinárodně pozoruhodný izraelský snímek Valčík s Bašírem z roku 2008?",
+  "answer": "Byl to animovaný celovečerní dokument, nominovaný na Oscara",
+  "distractors": [
+   "Byl to první izraelský snímek natočený výhradně v angličtině",
+   "Byl to první izraelský němý snímek od vzniku státu",
+   "Byl to muzikál natočený jako živá televizní show"
+  ],
+  "quip_correct": "Kreslený příběh, který místo pohádky řeší vzpomínky, jaké by si člověk radši nepamatoval.",
+  "quip_wrong": "Šlo o animovaný dokument nominovaný na Oscara, ne o tohle.",
+  "explanation": "Snímek kombinuje animaci s dokumentární formou a sleduje režisérovo pátrání po vlastních potlačených vzpomínkách na vojenskou službu, díky čemuž získal řadu mezinárodních ocenění.",
+  "about": "filmu Valčík s Bašírem",
+  "more_fact": "Byl prvním izraelským snímkem nominovaným na Oscara za nejlepší cizojazyčný počin po více než třiceti letech.",
+  "irony_prompt": "A film reel and a director's clapperboard fill the frame side by side on a plain dark studio floor. Smaller and subordinate: a folding director's chair blurred in the background, a soft spotlight beam crossing the floor. MOOD: dramatic, reflective, artistic."
+ },
+ {
+  "id": "il-q-gelfand-turnaj",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čeho dosáhl izraelský šachista Boris Gelfand v roce 2012?",
+  "answer": "Postoupil do finále o mistrovský titul světa v šachu",
+  "distractors": [
+   "Stal se prvním šachovým velmistrem v izraelské historii",
+   "Vyhrál mistrovství světa v šachu",
+   "Založil první profesionální šachovou ligu v Izraeli"
+  ],
+  "quip_correct": "O nejvyšší titul mu chyběl jen krůček — na šachovnici to je vlastně pořádná vzdálenost.",
+  "quip_wrong": "Postoupil do finále o mistrovský titul, dál se v tomhle roce nedostal.",
+  "explanation": "Gelfand prohrál finále s ruským šachistou Viswanathanem Anandem až v rychlostním rozhodování poté, co klasické partie skončily nerozhodně.",
+  "about": "Borisi Gelfandovi",
+  "more_fact": "Gelfand se do Izraele přistěhoval z tehdejšího Sovětského svazu už jako zkušený hráč a v nové zemi pokračoval v kariéře na nejvyšší světové úrovni.",
+  "irony_prompt": "A chessboard with an intense endgame position fills the frame, a single king piece standing alone near the board's edge under dramatic lighting. Smaller and subordinate: a ticking chess clock beside the board, a blurred hand resting near a piece. MOOD: tense, dramatic, focused."
+ },
+ {
+  "id": "il-q-ulpan-skola",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "K čemu slouží izraelské instituce zvané ulpan?",
+  "answer": "K intenzivní výuce hebrejštiny pro nově přistěhovalé",
+  "distractors": [
+   "K výcviku vojenských záloh",
+   "K registraci nemovitostí",
+   "K vydávání řidičských průkazů"
+  ],
+  "quip_correct": "Pár měsíců křiku, gest a slovníku, a najednou umíš objednat kávu i bez pantomimy.",
+  "quip_wrong": "Slouží k výuce hebrejštiny pro přistěhovalce, ne k tomuhle.",
+  "explanation": "Fungují od založení státu a pomáhají novým přistěhovalcům rychle zvládnout hebrejštinu, aby se mohli zapojit do běžného života a pracovního trhu.",
+  "about": "ulpanu",
+  "more_fact": "Slovo pochází z hebrejského kořene pro studium a stejným slovem se dnes označují i kurzy hebrejštiny nabízené online po celém světě.",
+  "irony_prompt": "A stack of well-worn notebooks tied with string fills the frame, resting on a plain classroom desk. Smaller and subordinate: a wooden pointer stick leaning against the desk, a few empty simple chairs facing forward. MOOD: encouraging, studious, warm."
+ },
+ {
+  "id": "il-q-golanske-hrozny",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím jsou dnes proslulé vinice na Golanských výšinách, které se v moderní době rozvinuly až od osmdesátých let?",
+  "answer": "Produkují vína, která pravidelně vyhrávají mezinárodní ocenění",
+  "distractors": [
+   "Jsou to jediné vinice na světě pěstující výhradně bílé hrozny",
+   "Produkují víno určené výhradně pro export do jediné země",
+   "Pěstuje se tam jen hroznové víno bez slupky"
+  ],
+  "quip_correct": "Region s bouřlivou historií si teď říká hlavně o pozornost degustátorů, ne generálů.",
+  "quip_wrong": "Hlavně sbírají mezinárodní ocenění, tohle o nich neplatí.",
+  "explanation": "Nadmořská výška a sopečná půda na Golanských výšinách se ukázaly jako ideální pro pěstování vína a místní produkce dnes patří k nejkvalitnějším v celém regionu.",
+  "about": "vinařství na Golanských výšinách",
+  "more_fact": "Region má dávnou vinařskou tradici už z biblických dob, ale moderní průmyslové vinařství tu vzniklo teprve s příchodem odborníků z Kalifornie.",
+  "irony_prompt": "A cluster of dark purple grapes on the vine fills the frame, morning dew glistening on their skin against a soft hillside backdrop. Smaller and subordinate: a few green vine leaves framing the edges, distant rolling hills blurred behind. MOOD: rich, serene, refined."
+ },
+ {
+  "id": "il-q-valka-jom-kipur",
+  "cc": "il",
+  "country": "Izrael",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co bylo pro Izrael obzvlášť šokující na začátku konfliktu v roce 1973, který se odehrál během svátku Jom kipur?",
+  "answer": "Náhlý společný útok Egypta a Sýrie přišel, když byla země kvůli svátku téměř ochromená",
+  "distractors": [
+   "Útok vedla spojenecká koalice deseti různých zemí najednou",
+   "Boje vypukly přesně o desáté výročí založení státu",
+   "Šlo o první konflikt v historii Izraele vůbec"
+  ],
+  "quip_correct": "Vybrat si jako datum útoku nejtišší den v celém izraelském kalendáři — to byl kalkul, co skoro vyšel.",
+  "quip_wrong": "Šokující bylo hlavně načasování útoku o Jom kipur, ne tohle.",
+  "explanation": "Během Jom kipur se běžný život v Izraeli téměř zastaví, což útočníkům dočasně usnadnilo postup, než se izraelská armáda stihla plně zmobilizovat.",
+  "about": "válce o Jom kipur",
+  "more_fact": "Konflikt nakonec vedl k dlouhým mírovým jednáním, jejichž výsledkem byla o několik let později mírová smlouva mezi Izraelem a Egyptem.",
+  "irony_prompt": "A quiet empty street stretches under a low golden evening sky, completely still and deserted, filling the frame. Smaller and subordinate: a single bicycle leaning against a wall, a distant streetlight just switching on. MOOD: tense, solemn, quiet."
  }
 ]

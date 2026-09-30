@@ -1003,7 +1003,6 @@
   "section": "Kultura & tradice",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Kdy podle tradičního korejského počítání věku zestárne člověk o jeden rok?",
   "answer": "Všichni naráz o Novém roce",
   "distractors": [
@@ -1016,7 +1015,8 @@
   "explanation": "Novorozenec byl navíc rovnou jednoletý, takže dítě narozené 31. prosince bylo o den později dvouleté. Od června 2023 proto úřady počítají věk jen od data narození.",
   "about": "korejském počítání věku",
   "more_fact": "Alkohol a cigarety se v Koreji dodnes řídí zvláštním ročníkovým věkem: kupovat je smí každý, komu v daném kalendářním roce bude devatenáct.",
-  "irony_prompt": "A giant festive round rice cake bristling with countless candles fills the frame, and all the residents of a Korean apartment block — grandparents, parents, babies and a dog — lean in together to blow them out at the same moment on a snowy morning. Smaller and subordinate: a newborn in a tiny hanbok already wearing a party hat, fireworks over the rooftops, a cat startled by the gust. MOOD: cheerful, playful, festive."
+  "irony_prompt": "A giant festive round rice cake bristling with countless candles fills the frame, and all the residents of a Korean apartment block — grandparents, parents, babies and a dog — lean in together to blow them out at the same moment on a snowy morning. Smaller and subordinate: a newborn in a tiny hanbok already wearing a party hat, fireworks over the rooftops, a cat startled by the gust. MOOD: cheerful, playful, festive.",
+  "online_only": true
  },
  {
   "id": "kr-s-prislovi-o-ostrove",
@@ -1025,7 +1025,6 @@
   "section": "Místa",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Čeho má podle starého rčení ostrov Čedžu nadbytek?",
   "answer": "Větru, kamenů a žen",
   "distractors": [
@@ -1038,7 +1037,8 @@
   "explanation": "Vítr fouká od moře skoro pořád a sopečné kameny leží všude: domy i pole obepínají nízké zídky z černého pórovitého čediče.",
   "about": "ostrově Čedžu",
   "more_fact": "Symbolem ostrova jsou tolharubang, kamenní dědečci z pórovitého čediče s vypouklýma očima a rukama na břiše. Dřív stávali u městských bran jako strážci.",
-  "irony_prompt": "A windswept volcanic island landscape fills the frame, where a tall determined Korean grandmother stands firm and smiling against a howling wind that blows everyone else's hats away, surrounded by low walls of black porous stones. Smaller and subordinate: a stone grandfather statue with bulging eyes clutching his own head, tangerine trees bending sideways, a seagull flying backwards. MOOD: cheerful, playful, breezy."
+  "irony_prompt": "A windswept volcanic island landscape fills the frame, where a tall determined Korean grandmother stands firm and smiling against a howling wind that blows everyone else's hats away, surrounded by low walls of black porous stones. Smaller and subordinate: a stone grandfather statue with bulging eyes clutching his own head, tangerine trees bending sideways, a seagull flying backwards. MOOD: cheerful, playful, breezy.",
+  "online_only": true
  },
  {
   "id": "kr-s-nejcastejsi-prijmeni",
@@ -1047,7 +1047,6 @@
   "section": "Lidé",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Jaká část obyvatel Jižní Koreje se jmenuje Kim?",
   "answer": "Zhruba každý pátý",
   "distractors": [
@@ -1060,7 +1059,8 @@
   "explanation": "Kimové, Leeové a Parkové dohromady tvoří skoro polovinu obyvatel. Stejné jméno ale neznamená příbuzenství — rozhoduje rodový klan podle místa původu, třeba Kimové z Kimhe.",
   "about": "korejských příjmeních",
   "more_fact": "Korejský zákon dlouho zakazoval sňatek dvou lidí se stejným příjmením i rodovým klanem, i když spolu nebyli nijak příbuzní. Ústavní soud ho zrušil roku 1997.",
-  "irony_prompt": "A bustling pedestrian crossing in a big Korean city fills the frame, and when a cheerful delivery rider calls out one name, a huge crowd of passers-by all turn around at the same time with the same surprised face; behind them plain modern buildings and a traditional tiled-roof gate, every facade completely bare and plain. Smaller and subordinate: a baby in a pram turning too, a pigeon turning as well, a street cat utterly unimpressed. MOOD: cheerful, playful, bustling."
+  "irony_prompt": "A bustling pedestrian crossing in a big Korean city fills the frame, and when a cheerful delivery rider calls out one name, a huge crowd of passers-by all turn around at the same time with the same surprised face; behind them plain modern buildings and a traditional tiled-roof gate, every facade completely bare and plain. Smaller and subordinate: a baby in a pram turning too, a pigeon turning as well, a street cat utterly unimpressed. MOOD: cheerful, playful, bustling.",
+  "online_only": true
  },
  {
   "id": "kr-s-zelena-lahev",
@@ -1069,7 +1069,6 @@
   "section": "Jídlo",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Čím je ve světovém měřítku výjimečná korejská pálenka soju značky Jinro?",
   "answer": "Je nejprodávanější lihovinou světa",
   "distractors": [
@@ -1082,6 +1081,860 @@
   "explanation": "Soju mívá kolem 16 až 20 % alkoholu a v obchodě stojí málo víc než limonáda, takže ho Korejci pijí hlavně k jídlu.",
   "about": "soju",
   "more_fact": "Korejská etiketa pití je přísná: staršímu se nalévá oběma rukama a mladší se při pití odvrací hlavou stranou. Sám si nikdo nenalévá, vždy nalévá soused.",
-  "irony_prompt": "A small green cylinder-shaped glass bottle, completely plain and unmarked, fills the frame, standing on a low wooden table and wearing a tiny golden crown, while a row of tall amber and clear glass bottles, all bare smooth glass with nothing stuck on them, bow to it in defeat. Smaller and subordinate: tiny shot glasses applauding, a sizzling grill with sliced pork, a grandfather pouring with both hands. MOOD: cheerful, playful, festive."
+  "irony_prompt": "A small green cylinder-shaped glass bottle, completely plain and unmarked, fills the frame, standing on a low wooden table and wearing a tiny golden crown, while a row of tall amber and clear glass bottles, all bare smooth glass with nothing stuck on them, bow to it in defeat. Smaller and subordinate: tiny shot glasses applauding, a sizzling grill with sliced pork, a grandfather pouring with both hands. MOOD: cheerful, playful, festive.",
+  "online_only": true
+ },
+ {
+  "id": "kr-k-hanok-dum",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Místa",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co je pro tradiční korejský dům hanok typické?",
+  "answer": "Střecha s ladně vyhnutými rohy",
+  "distractors": [
+   "Ploché skleněné stěny místo oken",
+   "Špičatá věž jako u hradu",
+   "Kulatá okna ve tvaru slunce"
+  ],
+  "quip_correct": "Přesně takhle to vidí i ptáci, když přeletí Soul.",
+  "quip_wrong": "Skleněné stěny, hradní věž ani kulatá okna k hanoku nepatří — hledej ladně vyhnuté rohy střechy.",
+  "explanation": "Zahnuté rohy střechy měly podle tradice odhánět zlé duchy a zároveň v zimě pouštět do domu víc slunce.",
+  "about": "hanoku",
+  "more_fact": "Střechu hanoku kryjí těžké pálené tašky zvané giwa, které dům v létě ochladí a v zimě v něm udrží teplo po celou noc.",
+  "irony_prompt": "A traditional Korean hanok roof with dramatically curved upward eaves fills the frame, painted in warm terracotta tones. A plump magpie is mid-slide down the curve of the eave as if it were a playground slide, wings out for balance. Smaller and subordinate: a wooden support beam visible under the eave; a scattering of autumn leaves on the tiles. MOOD: playful, cozy."
+ },
+ {
+  "id": "kr-t-gyeongju-mesto",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Proč se město Kjongdžu (Gyeongju) přezdívá „muzeum bez zdí“?",
+  "answer": "Protože je plné starověkých hrobek a chrámů přímo v ulicích",
+  "distractors": [
+   "Protože nemá jediné moderní muzeum",
+   "Protože celé město je jedna galerie moderního umění",
+   "Protože jeho ulice nesou jména slavných malířů"
+  ],
+  "quip_correct": "Zatímco jinde chodíš kolem obchodů, tady zakopneš o tisíc let starou hrobku.",
+  "quip_wrong": "Chybějící muzeum, galerie moderního umění ani jména malířů za tím nestojí — jde o hrobky a chrámy rovnou v ulicích.",
+  "explanation": "Kjongdžu bylo přes tisíc let hlavním městem království Silla, a proto se pod ním i kolem něj dochovaly stovky památek.",
+  "about": "Kjongdžu",
+  "more_fact": "V okolí Kjongdžu leží přes sto padesát královských mohyl a v jedné z nich se našla zlatá koruna stará přes tisíc pět set let.",
+  "irony_prompt": "An ancient grassy royal burial mound, shaped like a giant green dome, dominates and fills the frame, with modern glass shopfronts and streetlights peeking out just behind it as if the mound grew up right in the middle of downtown. Smaller and subordinate: a bicycle leaning against the base of the mound; a row of young trees along the street. MOOD: surreal, charming."
+ },
+ {
+  "id": "kr-t-sokkuram-chram",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Co ukrývá jeskynní svatyně Sokkuram (Seokguram) vytesaná do skály nad mořem?",
+  "answer": "Obří sochu Buddhy z kamene",
+  "distractors": [
+   "Sbírku starověkých mečů",
+   "Podzemní jezero s rybami",
+   "Freskovou mapu celé Koreje"
+  ],
+  "quip_correct": "Klidná tvář, co kouká na moře už přes tisíc let — chill level expert.",
+  "quip_wrong": "Meče, jezero s rybami ani fresková mapa tam nejsou — jen kamenná socha v naprostém klidu.",
+  "explanation": "Stavitelé socha umístili tak přesně, že první sluneční paprsky o slunovratu dopadají přímo na její čelo.",
+  "about": "Sokkuramu",
+  "more_fact": "Svatyně Sokkuram leží vysoko na hoře Tcheham a stavitelé ji postavili tak, aby socha hleděla přímo na moře na východě.",
+  "irony_prompt": "A massive serene stone Buddha statue sits cross-legged inside a dim rounded stone grotto, dominating and filling the frame, its face lit by a single shaft of golden sunrise light. Smaller and subordinate: rough carved stone wall panels around it; a small stone offering bowl at its feet. MOOD: serene, awe-inspiring."
+ },
+ {
+  "id": "kr-q-dmz-hranice",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím se paradoxně stala Demilitarizovaná zóna (DMZ) mezi Severní a Jižní Koreou?",
+  "answer": "Neúmyslnou přírodní rezervací plnou vzácných zvířat",
+  "distractors": [
+   "Oblíbeným turistickým golfovým hřištěm",
+   "Volně přístupným obchodním pásem",
+   "Testovacím polygonem pro nová auta"
+  ],
+  "quip_correct": "Nejpřísněji střežená hranice na světě se tak stala nejklidnější zoo na světě.",
+  "quip_wrong": "Golfové hřiště, obchodní pás ani testovací polygon tam nenajdeš — jen ticho, dráty a orly, kteří si nedělají starosti s politikou.",
+  "explanation": "Pás je široký přes čtyři kilometry a lidé do něj přes sedmdesát let prakticky nevstupovali, takže se tam vrátili i ohrožení jeřábi mandžuští.",
+  "about": "Demilitarizované zóně",
+  "more_fact": "V DMZ žije podle odhadů přes tři tisíce druhů rostlin a zvířat, včetně medvěda ušatého, kterého jinde v Koreji už desítky let nikdo nespatřil.",
+  "irony_prompt": "A lush green no-man's-land strip bordered by rusted barbed wire fences fills the frame, with a majestic red-crowned crane standing calmly in the tall grass at its center, wings relaxed. Smaller and subordinate: a faded watchtower far in the background; coils of wire along the fence line. MOOD: ironic, peaceful."
+ },
+ {
+  "id": "kr-q-lotte-mrakodrap",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jakou raritu nabízí vyhlídková plošina mrakodrapu Lotte World Tower v Soulu?",
+  "answer": "Průhlednou skleněnou podlahu vysoko nad ulicí",
+  "distractors": [
+   "Bazén na úplném vrcholu budovy",
+   "Pohyblivé schody až na střechu",
+   "Vlastní horskou dráhu kolem fasády"
+  ],
+  "quip_correct": "Kdo se bojí výšek, ať se dívá radši na strop.",
+  "quip_wrong": "Bazén na střeše, pohyblivé schody ani horská dráha tam nejsou — jen sklo, co vás donutí věřit vlastním nohám.",
+  "explanation": "Vyhlídka Seoul Sky leží ve výšce přes čtyři sta sedmdesát osm metrů a patří mezi nejvýše položené prosklené podlahy na světě.",
+  "about": "Lotte World Tower",
+  "more_fact": "Lotte World Tower má sto dvacet tři nadzemních pater a jeho výtahy patří mezi nejrychlejší na světě, na nejvyšší patro vyjedou za necelou minutu.",
+  "irony_prompt": "A see-through glass floor observation deck high above a glittering city skyline fills the frame, with one visitor's sneakers shown mid-step, hesitating nervously right at the edge of the glass panel. Smaller and subordinate: city rooftops far below through the glass; a safety railing along the deck's edge. MOOD: vertiginous, funny."
+ },
+ {
+  "id": "kr-k-ptak-zpravy",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Příroda",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje pták, kterého Korejci považují za posla dobrých zpráv a potkávají ho skoro na každém rohu?",
+  "answer": "Straka",
+  "distractors": [
+   "Vrabec",
+   "Holub",
+   "Špaček"
+  ],
+  "quip_correct": "Když straka zaklape, v Koreji se každý potěší — prý přináší dobré zprávy.",
+  "quip_wrong": "Ten pták na drátě nese jiné jméno — správně je to straka.",
+  "explanation": "Straka má v Koreji černobílé peří s modrozeleným leskem a hnízdí klidně i uprostřed rušných měst.",
+  "about": "strace",
+  "more_fact": "V mnoha korejských pověstech straka svým křikem oznamuje, že přijde milý host nebo dobrá zpráva, a proto ji lidé mají moc rádi.",
+  "irony_prompt": "A glossy black-and-white magpie fills the frame, perched proudly on a city lamppost, puffed up and looking extremely pleased with itself, beak wide open mid-chatter. Smaller and subordinate: a blurred busy street below; a small twig held in one claw. MOOD: cheerful, cheeky."
+ },
+ {
+  "id": "kr-k-cedzu-tunel",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Příroda",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Čím vznikly obří jeskyně na ostrově Čedžu, kterými se dá projít pěšky?",
+  "answer": "Prouděním roztavené lávy ze sopky",
+  "distractors": [
+   "Kopáním starověkých horníků",
+   "Tekoucí podzemní řekou",
+   "Vyhlodáním mořských vln"
+  ],
+  "quip_correct": "Láva si prostě prorazila cestu a nechala po sobě tunel na procházku.",
+  "quip_wrong": "Horníci, podzemní řeka ani mořské vlny tyhle jeskyně nevykopaly — za vším stojí žhavá tekutina ze sopky.",
+  "explanation": "Ostrov Čedžu je celý sopečného původu a jeho nejznámější jeskyně Mandžanggul měří přes sedm kilometrů.",
+  "about": "jeskyních na Čedžu",
+  "more_fact": "Uvnitř jeskynních tunelů na Čedžu je celoročně chladno a vlhko a žijí tam vzácní netopýři, kteří jinde na ostrově nejsou k vidění.",
+  "irony_prompt": "A dark cavernous tube-shaped tunnel with smooth rippled black rock walls fills the frame, stretching deep into the distance, lit by a single warm lantern glow near the entrance. Smaller and subordinate: a small bat clinging near the ceiling; a puddle reflecting the lantern light on the tunnel floor. MOOD: mysterious, cool."
+ },
+ {
+  "id": "kr-t-zensen-rostlina",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Příroda",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Proč korejský ženšen (insam) dostal jméno podle člověka?",
+  "answer": "Protože jeho kořen tvarem připomíná lidskou postavu s nohama",
+  "distractors": [
+   "Protože ho poprvé vypěstoval muž jménem Insam",
+   "Protože roste jen na místech, kde žili lidé",
+   "Protože jeho listy mají tvar lidské dlaně"
+  ],
+  "quip_correct": "Kořen, co vypadá jako mrňavý človíček zahrabaný v zemi — příroda má smysl pro humor.",
+  "quip_wrong": "Pěstitel jménem Insam, obydlená místa ani dlaňovité listy za tím nejsou — jde o podobu s lidskou postavou.",
+  "explanation": "Čím víc se kořen svým tvarem podobá člověku i s pažemi a nohama, tím vyšší má na trhu cenu.",
+  "about": "korejském ženšenu",
+  "more_fact": "Korejský ženšen se sklízí až po čtyřech až šesti letech růstu a v tradiční medicíně se používá už přes dva tisíce let.",
+  "irony_prompt": "A freshly dug pale forked root fills the frame on dark soil, its twisting shape uncannily resembling a tiny human figure with arms and legs outstretched. Smaller and subordinate: a wooden digging tool beside it; a few loose clumps of dark earth. MOOD: whimsical, earthy."
+ },
+ {
+  "id": "kr-q-upo-rekord",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je mokřad Upo v Jižní Koreji mimořádný?",
+  "answer": "Je jedním z nejstarších přírodních mokřadů na světě",
+  "distractors": [
+   "Je nejmenším mokřadem na světě",
+   "Vznikl uměle až v devadesátých letech",
+   "Je jediným slaným jezerem v Koreji"
+  ],
+  "quip_correct": "Zatímco lidstvo teprve objevovalo kolo, tenhle kus bažiny už klidně bublal.",
+  "quip_wrong": "Maličký, umělý ani slaný ten mokřad není — hlavně je pořádně starý.",
+  "explanation": "Ekosystém mokřadu se vyvíjí od doby dinosaurů a dodnes je domovem vzácných vodních ptáků a rostlin.",
+  "about": "mokřadu Upo",
+  "more_fact": "Mokřad Upo se rozkládá na ploše srovnatelné s desítkami fotbalových hřišť a na podzim tudy táhnou tisíce divokých hus a kachen.",
+  "irony_prompt": "A vast still wetland at dawn fills the frame, ancient gnarled reeds rising from misty water, with a single elegant heron standing motionless as if it has been there since prehistoric times. Smaller and subordinate: ripples spreading from a fish breaking the surface; distant low hills through the mist. MOOD: timeless, tranquil."
+ },
+ {
+  "id": "kr-k-admiral-flotila",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Lidé",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Čím proslul korejský admirál I Sun-sin (Yi Sun-sin) v bojích s japonskými loděmi?",
+  "answer": "Obrněnými loděmi ve tvaru želvy",
+  "distractors": [
+   "Balóny, které sestřeloval lukem",
+   "Ponorkami poháněnými pádly",
+   "Draky, co chrlily oheň na moři"
+  ],
+  "quip_correct": "Pomalé jako želva, ale skoro nezničitelné jako její krunýř.",
+  "quip_wrong": "Balóny, ponorky s pádly ani ohniví draci to nebyli — vsadil na obrněnou flotilu ve tvaru želvy.",
+  "explanation": "Na palubě měly nahoře pobité bodce a kryté dělo, takže na ně nepřátelé nemohli vylézt a naskočit.",
+  "about": "admirálovi I Sun-sinovi",
+  "more_fact": "I Sun-sin se svou flotilou nikdy neprohrál žádnou z více než deseti bitev proti mnohem početnějšímu japonskému loďstvu.",
+  "irony_prompt": "An armored turtle-shaped warship fills the frame, floating on choppy sea waves, its curved wooden back bristling with sharp metal spikes like a real turtle shell. Smaller and subordinate: cannon openings along its hull; a dragon-carved figurehead at the bow. MOOD: heroic, formidable."
+ },
+ {
+  "id": "kr-t-ban-ki-mun-osobnost",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Lidé",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Kdo byl Pan Ki-mun (Ban Ki-moon)?",
+  "answer": "Jihokorejský diplomat, generální tajemník OSN",
+  "distractors": [
+   "Jihokorejský prezident, co založil Samsung",
+   "Jihokorejský astronaut, první ve vesmíru",
+   "Jihokorejský fotbalista, kapitán reprezentace"
+  ],
+  "quip_correct": "Když celý svět řešil problém, u mikrofonu často stál zrovna on.",
+  "quip_wrong": "Samsung, vesmír ani fotbal s ním nemají nic společného — tenhle Korejec řídil místo toho celou OSN.",
+  "explanation": "Ve funkci působil od roku 2007 do roku 2016, tedy dvě celá funkční období.",
+  "about": "Pan Ki-munovi",
+  "more_fact": "Než se stal generálním tajemníkem OSN, pracoval Pan Ki-mun desítky let jako jihokorejský diplomat a ministr zahraničí.",
+  "irony_prompt": "A confident silhouette of a diplomat in a dark suit stands behind a plain podium, gesturing mid-speech with one hand raised, dominating and filling the frame. Smaller and subordinate: a glass of water on the podium; a row of empty chairs blurred in the background; soft stage lighting from above. MOOD: dignified, composed."
+ },
+ {
+  "id": "kr-q-samsung-pocatky",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím se zabývala firma, kterou založil I Pjong-čchol (Lee Byung-chul), předchůdce dnešního Samsungu?",
+  "answer": "Obchodem s potravinami a sušenými rybami",
+  "distractors": [
+   "Výrobou elektroniky a televizí",
+   "Stavbou lodí pro zahraniční armády",
+   "Těžbou zlata v horách"
+  ],
+  "quip_correct": "Od sušených ryb k chytrým telefonům — to je teda kariérní skok.",
+  "quip_wrong": "Elektronika, lodě pro armády ani zlato na začátku nebyly — jen obyčejný obchod s jídlem.",
+  "explanation": "Firmu založil v roce 1938 v Tegu jako malou obchodní společnost a teprve postupně se rozrostla do dnešního technologického gigantu.",
+  "about": "zakladateli Samsungu",
+  "more_fact": "Slovo Samsung znamená v korejštině doslova tři hvězdy a mělo vyjadřovat, že firma bude velká, mocná a bude trvat věčně.",
+  "irony_prompt": "A modest wooden trading shop from the 1930s fills the frame, its plank walls completely bare with no sign or nameplate of any kind, crates of dried fish and sacks of grain stacked neatly outside, with a gleaming modern smartphone glowing faintly on the counter inside as an anachronistic hint of the future. Smaller and subordinate: a bicycle leaning against the wall; a woven basket of vegetables. MOOD: nostalgic, ironic."
+ },
+ {
+  "id": "kr-q-kim-dae-jung-cena",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Za co obdržel bývalý jihokorejský prezident Kim Tä-džung (Kim Dae-jung) v roce 2000 Nobelovu cenu míru?",
+  "answer": "Za politiku sbližování se Severní Koreou",
+  "distractors": [
+   "Za ukončení korejské války mírovou smlouvou",
+   "Za sjednocení Severní a Jižní Koreje",
+   "Za zprostředkování míru na Blízkém východě"
+  ],
+  "quip_correct": "Cena za to, že se aspoň pokusil promluvit se sousedem, se kterým se ostatní nebaví.",
+  "quip_wrong": "Mírová smlouva, sjednocení ani Blízký východ s tím nesouvisí — cenu dostal za snahu o dialog se severním sousedem.",
+  "explanation": "Jeho přístup je známý jako sluneční politika a vedl mimo jiné k historickému setkání s vůdcem Severní Koreje v Pchjongjangu.",
+  "about": "Kim Tä-džungovi",
+  "more_fact": "Kim Tä-džung přežil v mládí několik pokusů o atentát a roky strávil v exilu nebo ve vězení, než se stal prezidentem.",
+  "irony_prompt": "An elderly statesman in a formal suit reaches across an empty table toward an unseen handshake, dominating and filling the frame, his expression warm and determined. Smaller and subordinate: two small blank table markers at the far ends of the table; a plain folder resting on the table; a warm lamp glow overhead. MOOD: hopeful, solemn."
+ },
+ {
+  "id": "kr-k-seollal-penize",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Kultura & tradice",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co dělají korejské děti o Novém roce (Seollal), aby dostaly peníze do hedvábného pytlíčku?",
+  "answer": "Hluboce se ukloní starším příbuzným",
+  "distractors": [
+   "Zazpívají píseň před celou rodinou",
+   "Namalují starším obrázek",
+   "Uvaří pro ně celý oběd"
+  ],
+  "quip_correct": "Jedna hluboká úklona a najednou máš plnou kapsu — lepší výdělek než brigáda.",
+  "quip_wrong": "Zpěv, obrázek ani vaření to nejsou — stačí pořádná úklona před starším příbuzným.",
+  "explanation": "Tahle úklona se jmenuje sebae a děti při ní popřejí starším hodně štěstí do nového roku.",
+  "about": "svátku Seollal",
+  "more_fact": "O Seollalu si Korejci oblékají tradiční oděv hanbok a společně jedí polévku tteokguk, po které prý všem přibude o rok.",
+  "irony_prompt": "A small child mid-bow performs a deep formal kneeling bow on a cushioned floor, dominating and filling the frame, one hand eagerly stretched toward a silk pouch held out by an elder just out of frame. Smaller and subordinate: a pair of small rubber shoes left neatly by the mat; a warm floor cushion pattern. MOOD: warm, funny."
+ },
+ {
+  "id": "kr-k-dokkaebi-postava",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Kultura & tradice",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co je dokkaebi z korejských pohádek?",
+  "answer": "Rohatý skřítek, který dělá lidem naschvály",
+  "distractors": [
+   "Malý dráček, co chrlí barevný dým",
+   "Vodní duch, co žije jen ve studnách",
+   "Neviditelný přízrak, co straší v lese"
+  ],
+  "quip_correct": "Naschvál sem, naschvál tam — tenhle skřítek se nudit nebude.",
+  "quip_wrong": "Dráček, vodní duch ani neviditelný přízrak to není — dokkaebi je rohatý šprýmař.",
+  "explanation": "Dokkaebi obvykle nosí kouzelnou kyjovou hůl, kterou si přivolává, co si zrovna zamane, ale nakonec bývá spíš neškodný.",
+  "about": "postavě dokkaebi",
+  "more_fact": "Podle pověstí dokkaebi rád vyzývá lidi na zápas nebo na hádanky a poraženého pak odmění nebo mu naopak provede žertík.",
+  "irony_prompt": "A mischievous horned goblin with wild spiky hair fills the frame, grinning widely and holding a carved wooden club above its head mid-swing, one eyebrow raised playfully. Smaller and subordinate: a scattering of acorns at its feet; a patch of moonlit grass behind it. MOOD: mischievous, funny."
+ },
+ {
+  "id": "kr-t-kpop-priprava",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co musí projít většina K-pop hvězd, než se poprvé postaví na pódium?",
+  "answer": "Roky přísného tréninku ve zpěvu, tanci a jazycích",
+  "distractors": [
+   "Jen jeden casting a hned natáčí klip",
+   "Studium na univerzitě s diplomem ze zpěvu",
+   "Soutěž jako v běžné talentové show"
+  ],
+  "quip_correct": "Než se objeví jediný klip, uplynou roky dřiny, o kterých fanoušci netuší.",
+  "quip_wrong": "Rychlý casting, univerzitní diplom ani talentová show to nejsou — jde se přes roky drilu jako takzvaný trainee.",
+  "explanation": "Nadějní zpěváci bývají v agenturách takzvaní trainees klidně i pět nebo víc let, než agentura rozhodne, že jsou připraveni debutovat.",
+  "about": "K-pop přípravě",
+  "more_fact": "Agentury vybírají nadějné zpěváky často už kolem dvanácti až patnácti let a denní rozvrh jim zabírá zpěv, tanec, jazyky i mediální trénink.",
+  "irony_prompt": "A determined teenage performer mid-dance-move fills the frame inside a bare mirrored practice room, drenched in sweat, one hand gripping a water bottle, the wall of mirrors reflecting endless copies of them. Smaller and subordinate: a pair of worn dance shoes on the floor; a water bottle tipped over nearby. MOOD: intense, determined."
+ },
+ {
+  "id": "kr-t-jjimjilbang-koreji",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co je jjimjilbang?",
+  "answer": "Veřejná lázeň a sauna otevřená nonstop pro celé rodiny",
+  "distractors": [
+   "Luxusní hotel jen pro novomanžele",
+   "Noční klub s karaoke místnostmi",
+   "Tradiční tržnice jen s oblečením"
+  ],
+  "quip_correct": "Kam jinam zajít v jednu v noci si dát pařenou sauna párty s celou rodinou?",
+  "quip_wrong": "Hotel pro novomanžele, noční klub ani tržnice to nejsou — jde o lázně, co nikdy nezavírají.",
+  "explanation": "Kromě saun tam bývají i odpočívárny se spaním, jídelny a herny, takže se tam dá strávit klidně celý den i noc.",
+  "about": "jjimjilbangu",
+  "more_fact": "Návštěvníci jjimjilbangu dostanou na vstupu jednotné oblečení a mezi jednotlivými saunami se prochází bosí po vyhřáté podlaze.",
+  "irony_prompt": "A cozy heated sauna room with a warm heated floor fills the frame, an entire extended family sprawled out asleep in matching pastel outfits, grandparents and kids alike snoring in a row. Smaller and subordinate: a stack of folded towels in the corner; a low wooden pillow beside one sleeper. MOOD: cozy, comical."
+ },
+ {
+  "id": "kr-q-nunchi-pojem",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co znamená korejský pojem nunči (nunchi)?",
+  "answer": "Rychle vycítit náladu a nevyřčené pocity druhých",
+  "distractors": [
+   "Schopnost zapamatovat si obličeje",
+   "Uměleckou techniku malby tuší",
+   "Zvláštní druh meditace vestoje"
+  ],
+  "quip_correct": "Superschopnost, kterou nejde naučit v kurzu — buď ji máš, nebo se trapně ptáš, proč všichni mlčí.",
+  "quip_wrong": "Malba tuší, meditace vestoje ani paměť na obličeje s tím nemají nic společného — jde o cit pro atmosféru v místnosti.",
+  "explanation": "Dobré nunchi se v Koreji cení skoro jako dovednost, pomáhá poznat, kdy mlčet, kdy promluvit a kdy z místnosti radši zmizet.",
+  "about": "korejském nunči",
+  "more_fact": "O nunchi vyšly v zahraničí i celé knihy, které ho označují za tajný klíč Korejců k úspěchu v práci i mezi přáteli.",
+  "irony_prompt": "A person sits frozen mid-sentence at a formal dinner table, eyes darting sideways to read the subtle tense expressions of everyone else around, dominating and filling the frame. Smaller and subordinate: an untouched cup of tea going cold; hands clasped nervously in their lap. MOOD: awkward, perceptive."
+ },
+ {
+  "id": "kr-k-buchaechum-tanec",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Umění",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co vytvářejí tanečnice tradičního korejského vějířového tance buchaechum pohybem vějířů?",
+  "answer": "Obrovské květiny a vlny",
+  "distractors": [
+   "Písmena korejské abecedy",
+   "Postavy zvířat ze zoo",
+   "Mapu Jižní Koreje"
+  ],
+  "quip_correct": "Desítky vějířů se zavlní a najednou je na jevišti celá zahrada.",
+  "quip_wrong": "Písmena, zvířata ze zoo ani mapa to nejsou — jen obří rozkvetlé květiny a vlnící se moře z hedvábí.",
+  "explanation": "Tanečnice v barevných hedvábných šatech pohybují vějíři jako jeden organismus, takže vzor plyne po celé skupině najednou.",
+  "about": "tanci buchaechum",
+  "more_fact": "Vějíře tanečnic bývají potažené jemným hedvábím a otevírají se do tvaru broskvového květu, který je pro tento tanec typický.",
+  "irony_prompt": "A row of dancers in colorful silk hanbok fan out dozens of pink fans in perfect unison, forming one giant blooming flower shape across the stage, dominating and filling the frame. Smaller and subordinate: the hem of flowing silk skirts swirling at the dancers' feet; soft stage lighting glow. MOOD: graceful, dazzling."
+ },
+ {
+  "id": "kr-t-gayageum-nastroj",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Umění",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Kolik strun má tradiční korejský strunný nástroj gayageum?",
+  "answer": "Dvanáct",
+  "distractors": [
+   "Šest",
+   "Osmnáct",
+   "Čtyři"
+  ],
+  "quip_correct": "Dvanáct strun a jedna trpělivost, dokud je nerozeznáš od sebe.",
+  "quip_wrong": "Ani šest, ani osmnáct, ani čtyři — přesně dvanáct strun natažených přes dřevěné tělo.",
+  "explanation": "Hráč sedí na zemi a nástroj má položený napříč přes klín, struny drnká prsty pravé ruky a levou rukou ladí tón.",
+  "about": "nástroji gayageum",
+  "more_fact": "Gayageum vznikl už v šestém století a dodnes ho korejští hudebníci používají jak v tradiční hudbě, tak i v moderních úpravách.",
+  "irony_prompt": "A long wooden zither instrument with exactly twelve taut strings fills the frame, resting across a musician's lap, fingers mid-pluck on the strings, the wood grain warm and polished. Smaller and subordinate: a small ivory tuning peg at one end; a folded cushion beneath the instrument. MOOD: elegant, meditative."
+ },
+ {
+  "id": "kr-q-parazit-uspech",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím se stal jihokorejský film Parazit (Parasite) v roce 2020?",
+  "answer": "Prvním neanglickým titulem, který získal Oscara za nejlepší film",
+  "distractors": [
+   "Prvním animovaným titulem s Oscarem za nejlepší film",
+   "Prvním korejským titulem uvedeným v kinech v USA",
+   "Nejdéle natáčeným titulem v historii Oscarů"
+  ],
+  "quip_correct": "Hollywood musel sundat klobouk před titulky v korejštině.",
+  "quip_wrong": "Animovaný, nejdéle natáčený, ani první v amerických kinech nebyl — šlo o jazykovou revoluci v cenách.",
+  "explanation": "Snímek režíroval Pon Džun-ho a kromě hlavní ceny získal na Oscarech celkem čtyři sošky, včetně režie a scénáře.",
+  "about": "Parazitu",
+  "more_fact": "Pon Džun-ho ve svém vítězném projevu na Oscarech řekl, že jakmile překonáte bariéru titulků, objevíte spoustu úžasných filmů.",
+  "irony_prompt": "A golden statuette trophy stands triumphantly on a modest kitchen table in a cramped semi-basement apartment, dominating and filling the frame, steam rising from a bowl of instant noodles beside it. Smaller and subordinate: a small window near the ceiling showing only feet walking past outside; a stack of moving boxes in the corner. MOOD: ironic, triumphant."
+ },
+ {
+  "id": "kr-q-squid-game-rekord",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím se stal seriál Hra na oliheň (Squid Game) krátce po uvedení v roce 2021?",
+  "answer": "Nejsledovanějším seriálem v historii Netflixu",
+  "distractors": [
+   "Prvním korejským seriálem vysílaným v televizi",
+   "Nejdražším seriálem, jaký kdy Netflix natočil",
+   "Prvním reality show formátem z Koreje"
+  ],
+  "quip_correct": "Nikdo nečekal, že se dětská honička rozjede po celém světě najednou.",
+  "quip_wrong": "Reality formát, nejdražší produkce ani televizní premiéra to nebyly — rekord padl v počtu diváků na jedné streamovací službě.",
+  "explanation": "Za první měsíc od premiéry ho zhlédlo přes sto milionů domácností po celém světě, což byl tehdy nový rekord streamovací služby.",
+  "about": "seriálu Hra na oliheň",
+  "more_fact": "Hry v seriálu jsou inspirované skutečnými korejskými dětskými hrami z dětství tvůrce, jako je honička s pokřikem o rozkvetlém ibišku.",
+  "irony_prompt": "A massive doll figure with a slowly rotating head towers ominously over a wide playground courtyard painted in pastel colors, dominating and filling the frame. Smaller and subordinate: scattered small pebbles across the ground; a faded chalk grid pattern painted on the pavement. MOOD: unsettling, darkly playful."
+ },
+ {
+  "id": "kr-t-son-heung-min-golden-boot",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Sport",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Čeho dosáhl fotbalista Son Hung-min (Son Heung-min) v sezoně 2021/22 jako první hráč z Asie?",
+  "answer": "Stal se nejlepším střelcem anglické Premier League",
+  "distractors": [
+   "Stal se nejmladším kapitánem v historii ligy",
+   "Vyhrál Zlatý míč pro nejlepšího hráče světa",
+   "Odehrál všechny zápasy sezony bez jediného střídání"
+  ],
+  "quip_correct": "Zatímco jiní snili o jednom gólu, on jich nastřílel tolik, že to stačilo na celou trofej.",
+  "quip_wrong": "Zlatý míč, nejmladší kapitán ani stoprocentní docházka to nebyly — šlo o korunu krále střelců.",
+  "explanation": "O gólovou korunu se tehdy podělil s Mohamedem Salahem, oba nastříleli dvacet tři branek.",
+  "about": "Son Hung-minovi",
+  "more_fact": "Son Hung-min se později stal i prvním asijským kapitánem, který zvedl nad hlavu anglický fotbalový pohár, a to s Tottenhamem.",
+  "irony_prompt": "A soccer player in a plain solid-colored jersey with no crest or marking of any kind leaps mid-celebration after scoring, arms wide, dominating and filling the frame against a blurred stadium crowd. Smaller and subordinate: a soccer ball resting in the back of a net behind him; confetti paper frozen mid-fall. MOOD: triumphant, electric."
+ },
+ {
+  "id": "kr-k-ssireum-souboj",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Sport",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak vyhrává zápasník v tradičním korejském zápase ssireum?",
+  "answer": "Povalí soupeře na písek úchopem za pás",
+  "distractors": [
+   "Vytlačí soupeře mimo kruh",
+   "Zvedne soupeře nad hlavu na deset vteřin",
+   "Sundá soupeři pásek jako první"
+  ],
+  "quip_correct": "Kdo skončí na zádech, ten platí kolo šťávy.",
+  "quip_wrong": "Vytlačit z kruhu, zvednout nad hlavu ani sundat pásek nestačí — musí soupeře povalit na zem.",
+  "explanation": "Zápasníci se drží navzájem za speciální pás omotaný kolem pasu a stehna, a právě z toho úchopu vychází celý souboj.",
+  "about": "zápasu ssireum",
+  "more_fact": "Vítěz velkého turnaje ssireum dostává tradičně jako trofej živého býka, který symbolizuje sílu, zdraví a bohatství pro celý rok.",
+  "irony_prompt": "Two wrestlers grip each other's thigh sashes in a sandy ring, frozen mid-throw, one lifted completely off the ground, dominating and filling the frame. Smaller and subordinate: scattered sand kicked up around their feet; a small trophy bull statue waiting at the ring's edge. MOOD: energetic, earthy."
+ },
+ {
+  "id": "kr-k-jegicagi-hra",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Sport",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co dělají korejské děti při tradiční hře jegichagi?",
+  "answer": "Kopou nohou do peříčkového míčku, aby nespadl na zem",
+  "distractors": [
+   "Házejí si kamínky do kruhu na zemi",
+   "Přeskakují dlouhé lano ve dvojicích",
+   "Honí se mezi nakreslenými čtverci"
+  ],
+  "quip_correct": "Míček dolů nesmí, noha nahoru musí — jednoduché jako facka.",
+  "quip_wrong": "Kamínky, skákací lano ani honička po čtvercích s tím nemají nic společného — jen kopání do peříčkového míčku.",
+  "explanation": "Míček se dělá z mince zabalené do papíru s třásněmi, které při kopání vlají ve vzduchu.",
+  "about": "hře jegichagi",
+  "more_fact": "Vyhrává ten, kdo udrží míček ve vzduchu nejvíc kopnutí za sebou, a zkušení hráči jich zvládnou stovky v kuse, aniž by míček spadl na zem.",
+  "irony_prompt": "A child mid-kick keeps a small tasseled paper shuttlecock hovering in the air with the side of one foot, arms out for balance, dominating and filling the frame. Smaller and subordinate: a second child watching eagerly nearby; a scattering of fallen autumn leaves on the pavement. MOOD: playful, energetic."
+ },
+ {
+  "id": "kr-q-kbo-fanousci",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co je typické pro zápasy korejské profesionální baseballové ligy KBO?",
+  "answer": "Organizované roztleskávačky a skandování po celý zápas",
+  "distractors": [
+   "Naprosté ticho diváků během celé hry",
+   "Přestávka na oběd uprostřed zápasu",
+   "Zákaz jídla a pití na tribunách"
+  ],
+  "quip_correct": "Kdo čekal tichý sport pro gentlemany, spletl si stadion.",
+  "quip_wrong": "Ticho, přestávka na oběd ani zákaz jídla — na KBO se naopak jí, pije a křičí od první do poslední směny.",
+  "explanation": "Každý tým má vlastní choreografie a písničky, které fanoušky vedou celým zápasem jako na koncertě.",
+  "about": "korejské baseballové lize",
+  "more_fact": "Na tribunách KBO si diváci běžně nosí vlastní jídlo a pití včetně smaženého kuřete, a mezi směnami se tancuje a zpívá.",
+  "irony_prompt": "An entire baseball stadium stand full of fans in matching team colors waves pom-poms and claps in perfect unison, led by energetic performers on a small platform, dominating and filling the frame. Smaller and subordinate: a fried chicken box balanced on a knee in the front row; confetti streamers in the air. MOOD: festive, electric."
+ },
+ {
+  "id": "kr-t-korejske-oslovovani",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jazyk & slova",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Co Korejci často přidávají za jméno člověka, aby vyjádřili úctu?",
+  "answer": "Zdvořilostní příponu jako -ssi nebo -nim",
+  "distractors": [
+   "Datum jeho narození",
+   "Jméno jeho rodného města",
+   "Titul podle výšky postavy"
+  ],
+  "quip_correct": "Přidej příponu a najednou zníš, jako bys toho člověka znal od malička — ale zdvořile.",
+  "quip_wrong": "Datum narození, rodné město ani výška s tím nemají nic společného — jde o přípony k jménu.",
+  "explanation": "Bez správné přípony může oslovení znít hrubě, zvlášť vůči starším nebo neznámým lidem.",
+  "about": "korejském oslovování",
+  "more_fact": "Jedna z přípon se přidává i za pracovní tituly, takže třeba učitel se osloví slovem, které v překladu znamená doslova ctěný učitel.",
+  "irony_prompt": "Two silhouetted figures bow to each other at deliberately different depths, one much deeper and more formal than the other, dominating and filling the frame, warm golden light between them. Smaller and subordinate: neatly pressed clothing folds; soft shadows on the ground. MOOD: polite, warm."
+ },
+ {
+  "id": "kr-t-hangul-tvar-pismen",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jazyk & slova",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Podle čeho navrhli tvůrci písma hangul tvar většiny souhlásek?",
+  "answer": "Podle postavení jazyka a rtů při vyslovení hlásky",
+  "distractors": [
+   "Podle tvaru čínských znaků",
+   "Podle postavení hvězd na obloze",
+   "Podle tvarů běžných nástrojů v kuchyni"
+  ],
+  "quip_correct": "Když vyslovíš hlásku, tvar písmene ti vlastně kreslí vlastní pusa.",
+  "quip_wrong": "Čínské znaky, hvězdy na obloze ani kuchyňské nástroje za tím nestojí — inspirací byl tvar úst a jazyka.",
+  "explanation": "Tvůrci tak vytvořili písmo, u kterého tvar písmene napovídá, jak má ústa a jazyk vypadat při jeho vyslovení.",
+  "about": "návrhu písma hangul",
+  "more_fact": "Základní souhlásky hangul vznikly jen z pěti jednoduchých tvarů, ze kterých se přidáváním čárek odvodily všechny ostatní.",
+  "irony_prompt": "A close-up side profile of a mouth mid-pronunciation fills the frame, tongue and lips captured in a clear deliberate shape, rendered like an anatomical diagram sketch. Smaller and subordinate: a faint curved arrow showing airflow direction; soft warm background shading. MOOD: clever, precise."
+ },
+ {
+  "id": "kr-q-konglish-vyznam",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co je konglish?",
+  "answer": "Anglická slova, která ale v angličtině vůbec neexistují",
+  "distractors": [
+   "Oficiální druhý úřední jazyk Jižní Koreje",
+   "Staré nářečí používané jen na venkově",
+   "Anglický překlad korejských přísloví"
+  ],
+  "quip_correct": "Rodilý mluvčí angličtiny se v Koreji občas tváří stejně zmateně jako turista bez mapy.",
+  "quip_wrong": "Úřední jazyk, staré nářečí ani překlad přísloví to není — je to angličtina, co si v Koreji začala žít vlastním životem.",
+  "explanation": "Příkladem je slovo pro mobilní telefon, které v korejštině doslova znamená ruční telefon, ale v angličtině samotné takhle nikdo neříká.",
+  "about": "konglish",
+  "more_fact": "Jedno konglish slovo znamená blízký tělesný kontakt mezi blízkými lidmi, třeba držení za ruce, a v angličtině vůbec neexistuje.",
+  "irony_prompt": "Two speech-bubble shaped clouds float above two people mid-conversation, one cloud shaped like a telephone handset and the other like a clenched fist, both left completely blank and smooth with no writing inside them, dominating and filling the frame. Smaller and subordinate: a confused raised eyebrow on one figure; soft pastel sky background. MOOD: comical, quirky."
+ },
+ {
+  "id": "kr-q-slovosled-sloveso",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Kde stojí sloveso v běžné korejské větě?",
+  "answer": "Úplně na konci věty",
+  "distractors": [
+   "Hned na samém začátku věty",
+   "Vždy hned za podmětem",
+   "Uprostřed mezi dvěma podstatnými jmény"
+  ],
+  "quip_correct": "V korejštině musíš vydržet napětí až do úplně poslední chvíle, než zjistíš, co se vlastně stalo.",
+  "quip_wrong": "Začátek věty, hned za podmětem ani střed mezi jmény to nejsou — čekání trvá až do úplného konce.",
+  "explanation": "Kvůli tomu je v korejské konverzaci docela běžné, že posluchač musí vyčkat na konec věty, než pochopí, o co vlastně jde.",
+  "about": "slovosledu v korejštině",
+  "more_fact": "Protože stojí na konci, dá se v korejštině věta často přerušit nebo obrátit celý její smysl úplně posledním použitým slovem.",
+  "irony_prompt": "A single wooden signpost arrow points dramatically downward at the very end of a long winding garden path, dominating and filling the frame, as if marking where all the meaning of a sentence finally lands. Smaller and subordinate: footprints trailing along the path; overgrown bushes lining the sides. MOOD: quirky, contemplative."
+ },
+ {
+  "id": "kr-k-samgjopsal-gril",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jídlo",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jí korejské grilované vepřové plátky samgyeopsal?",
+  "answer": "Zabalené i s omáčkou do listu salátu",
+  "distractors": [
+   "Napíchnuté na dřevěný špejli",
+   "Rozmixované do husté polévky",
+   "Vmačkané mezi dva rohlíky"
+  ],
+  "quip_correct": "List salátu jako talíř, ruce jako příbor — a najednou jíš jako profík.",
+  "quip_wrong": "Špejle, polévka ani rohlík se sem nehodí — vše se balí do jednoho listu.",
+  "explanation": "Maso se griluje přímo na stole a servíruje se spolu s nakládanou zeleninou a česnekem.",
+  "about": "samgyeopsalu",
+  "more_fact": "Samgyeopsal znamená doslova tři vrstvy tuku, podle toho, jak se v mase pravidelně střídají vrstvy libového masa a bílého sádla.",
+  "irony_prompt": "A pair of hands wraps sizzling grilled pork strips together with garlic and sauce inside a large lettuce leaf held like a taco, dominating and filling the frame. Smaller and subordinate: a smoking tabletop grill in the background; small metal side dishes of pickled vegetables. MOOD: hungry, cozy."
+ },
+ {
+  "id": "kr-k-bingsu-dezert",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jídlo",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co je korejský bingsu?",
+  "answer": "Hora jemně nastrouhaného ledu s ovocem navrch",
+  "distractors": [
+   "Teplá rýžová kaše s medem",
+   "Studená polévka z okurek",
+   "Zmrzlina na dřevěné tyčince"
+  ],
+  "quip_correct": "Kopec ledu tak velký, že se s ním musí bojovat dvěma lžičkami.",
+  "quip_wrong": "Teplá kaše, studená polévka ani tyčinková zmrzlina to nejsou — jde o horu najemno nastrouhaného ledu.",
+  "explanation": "Nejoblíbenější je bingsu s červenými fazolkami a kouskem rýžového koláčku, ale dnes existují i verze s kávou nebo čokoládou.",
+  "about": "korejském bingsu",
+  "more_fact": "Led na bingsu bývá zmražený přímo z mléka, takže je po nastrouhání nadýchaný a jemný jako sníh, ne tvrdý jako kostky do pití.",
+  "irony_prompt": "A towering mountain of finely shaved snow-white ice fills the frame, piled high in a wide bowl and topped with colorful fruit, two spoons sticking out of the peak like flags on a summit. Smaller and subordinate: condensed milk drizzling down the side; a small table fan blurred in the background. MOOD: playful, refreshing."
+ },
+ {
+  "id": "kr-t-teokbokki-ulice",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co je tteokbokki?",
+  "answer": "Pikantní rýžové válečky ve sladko-pálivé omáčce",
+  "distractors": [
+   "Studené rýžové kuličky v sójové omáčce",
+   "Smažené rýžové placky s medem",
+   "Rýžová polévka s mořskými řasami"
+  ],
+  "quip_correct": "Jedno sousto a paprika ti hned připomene, že jazyk taky umí cítit bolest.",
+  "quip_wrong": "Studené kuličky, smažené placky ani polévka s řasou — jde o pálivé válečky v červené omáčce z papriky.",
+  "explanation": "Tteokbokki patří mezi nejoblíbenější pouliční jídlo v Koreji a prodává se na malých stáncích na ulici.",
+  "about": "tteokbokki",
+  "more_fact": "Klasické tteokbokki se často doplňuje vařeným vejcem, plátky rybího koláče nebo sýrem, který se roztaví přímo v horké omáčce.",
+  "irony_prompt": "A pile of glossy cylindrical rice cakes glistens in thick bright red spicy sauce inside a wide pan, steam rising, dominating and filling the frame. Smaller and subordinate: a boiled egg half submerged in the sauce; wooden skewer sticks resting on the pan's edge. MOOD: fiery, tempting."
+ },
+ {
+  "id": "kr-t-chimaek-kombinace",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co znamená oblíbená korejská kombinace zvaná čchimek (chimaek)?",
+  "answer": "Smažené kuře k pivu",
+  "distractors": [
+   "Rýže zapitá zeleným čajem",
+   "Nudle s kimchi omáčkou",
+   "Grilované maso se sladkým vínem"
+  ],
+  "quip_correct": "Kuře a pivo dohromady — recept na dokonalý večer, který funguje úplně všude.",
+  "quip_wrong": "Rýže s čajem, nudle s kimchi ani víno s masem — jde prostě o smažené maso a chmelový nápoj.",
+  "explanation": "Slovo vzniklo spojením korejských výrazů pro kuře a pivo a nejoblíbenější je hlavně při sledování sportovních přenosů.",
+  "about": "čchimeku",
+  "more_fact": "Tahle kombinace se stala tak populární i díky korejským seriálům, po kterých po celém světě vzrostla poptávka po smaženém kuřeti.",
+  "irony_prompt": "A golden crispy piece of fried chicken clinks together with a frosty mug of beer in a mid-air toast, dominating and filling the frame, condensation dripping down the glass. Smaller and subordinate: a paper napkin crumpled on the table; a warm lamp glow in the background. MOOD: festive, satisfying."
+ },
+ {
+  "id": "kr-q-gochujang-cas",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je korejská pálivá pasta gochujang specifická kromě chuti?",
+  "answer": "Nechává se zrát celé roky jako víno",
+  "distractors": [
+   "Vyrábí se výhradně ze zeleného čaje",
+   "Musí se vždy sníst do jednoho týdne",
+   "Nesmí přijít do styku se solí"
+  ],
+  "quip_correct": "Zatímco víno zraje v sudu, tahle pasta si klidně odpočívá v hliněné nádobě na dvorku.",
+  "quip_wrong": "Zelený čaj, rychlá spotřeba ani zákaz soli s tím nemají nic společného — tahle pasta klidně stárne celé roky.",
+  "explanation": "Pasta se vyrábí z chilli papriky, fermentované sóji, lepkavé rýže a soli a čím déle zraje, tím je chuť hlubší a komplexnější.",
+  "about": "gochujangu",
+  "more_fact": "V tradičních domácnostech se tahle pasta nechávala dozrávat ve velkých hliněných nádobách na dvoře, kam dopadalo slunce po celý den.",
+  "irony_prompt": "A large round clay jar sits on a sunny courtyard, its lid tilted aside to reveal deep red paste inside, warm heat shimmer rising in the sunlight, dominating and filling the frame. Smaller and subordinate: a wooden ladle resting against the jar; a row of smaller matching jars blurred behind it. MOOD: earthy, rich."
+ },
+ {
+  "id": "kr-q-kwangdzu-povstani",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím bylo povstání v Kwangdžu v roce 1980 důležité pro Jižní Koreu?",
+  "answer": "Stalo se klíčovým momentem boje za demokracii v zemi",
+  "distractors": [
+   "Vedlo k okamžitému sjednocení se severem",
+   "Ukončilo korejskou válku příměřím",
+   "Zavedlo v zemi konstituční monarchii"
+  ],
+  "quip_correct": "Cena za demokracii nebyla malá, ale dnešní Jižní Korea na ni nezapomíná.",
+  "quip_wrong": "Sjednocení, konec války ani monarchie z toho nevzešly — zůstal především impuls k boji za demokracii.",
+  "explanation": "Vojenská vláda povstání tvrdě potlačila, ale o necelou dekádu později vedlo k jejímu pádu a zavedení přímých prezidentských voleb.",
+  "about": "povstání v Kwangdžu",
+  "more_fact": "Na počest obětí povstání v Kwangdžu vznikl v Jižní Koreji státní památný den, který se slaví každý rok osmnáctého května.",
+  "irony_prompt": "A single unlit candle stands at the center of an empty city square at dusk, dominating and filling the frame, its small flame flickering steadily despite the surrounding stillness. Smaller and subordinate: a few scattered fallen leaves on the pavement; distant building silhouettes fading into the dusk light. MOOD: solemn, resilient."
+ },
+ {
+  "id": "kr-t-korea-rozdelena",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Podél čeho byla Korea rozdělena na Severní a Jižní po konci druhé světové války?",
+  "answer": "Podél 38. rovnoběžky",
+  "distractors": [
+   "Podél pohoří Tchäbäk",
+   "Podél řeky Han",
+   "Podél starých hranic dynastie Joseon"
+  ],
+  "quip_correct": "Stačila jedna čára na mapě a dvě země, co si dodnes nerozumí.",
+  "quip_wrong": "Pohoří, řeka ani stará hranice dynastie s tím nemají nic společného — hranici určila rovnou zeměpisná rovnoběžka.",
+  "explanation": "Čáru narychlo navrhli američtí důstojníci jen podle mapy, bez ohledu na skutečné přírodní nebo etnické hranice.",
+  "about": "rozdělení Koreje",
+  "more_fact": "Dnešní hranice mezi Severní a Jižní Koreou už přesně nekopíruje původní čáru, protože se po korejské válce posunula.",
+  "irony_prompt": "A single straight dotted line cuts directly across a green mountainous landscape from one edge of the frame to the other, dominating and filling the frame, with noticeably different colored fields and rooftops on each side of the line. Smaller and subordinate: a small wooden fence post marking the line; scattered clouds casting shadows below. MOOD: stark, symbolic."
+ },
+ {
+  "id": "kr-k-gwangbokjeol-svatek",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Historie",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje korejský státní svátek Gwangbokjeol, kterým lidé slaví konec japonské nadvlády?",
+  "answer": "Den osvobození",
+  "distractors": [
+   "Den nezávislosti",
+   "Den sjednocení",
+   "Den národní hrdosti"
+  ],
+  "quip_correct": "Jeden název, ale radost, co se slaví po celé zemi vlaječkami v oknech.",
+  "quip_wrong": "Nezávislost, sjednocení ani hrdost to oficiálně není — jmenuje se to prostě podle osvobození.",
+  "explanation": "Svátek připadá na patnáctého srpna a ten samý den se slaví i založení Korejské republiky o tři roky později.",
+  "about": "svátku Gwangbokjeol",
+  "more_fact": "O tomto svátku visí na balkonech domů po celé Koreji jihokorejské vlajky a ve velkých městech se konají slavnostní ceremonie.",
+  "irony_prompt": "Countless small South Korean flags — white with a red-and-blue yin-yang circle and black bars in the corners — hang from apartment balconies stacked one above another up a tall building facade, dominating and filling the frame, fluttering gently in a warm breeze. Smaller and subordinate: a single open window with curtains billowing; a bird perched on a balcony railing. MOOD: festive, proud."
+ },
+ {
+  "id": "kr-q-korejske-setkani",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co umožňují vzácná setkání organizovaná mezi Severní a Jižní Koreou od dob korejské války?",
+  "answer": "Krátké shledání rodin rozdělených hranicí",
+  "distractors": [
+   "Volný obchod mezi oběma zeměmi",
+   "Společné vojenské přehlídky",
+   "Výměnné pobyty studentů"
+  ],
+  "quip_correct": "Pár hodin po desítkách let odloučení — víc čas prostě nedovolí.",
+  "quip_wrong": "Obchod, vojenské přehlídky ani výměnné pobyty se nekonají — jde jen o krátká shledání rozdělených příbuzných.",
+  "explanation": "Účastníci se po krátké chvíli musí zase rozloučit, protože hranice mezi oběma zeměmi zůstává uzavřená.",
+  "about": "setkáních rozdělených rodin",
+  "more_fact": "Kvůli vysokému věku mnoha žadatelů se čekací seznamy na tato setkání každým rokem zkracují, protože příbuzní umírají dřív, než na ně dojde řada.",
+  "irony_prompt": "Two elderly figures embrace tightly in the middle of a plain reception hall, both crying, surrounded by empty rows of folding chairs, dominating and filling the frame. Smaller and subordinate: a box of tissues on a nearby table; small name tags pinned to their chests, left blank and unreadable. MOOD: bittersweet, emotional."
+ },
+ {
+  "id": "kr-k-soul-1988",
+  "cc": "kr",
+  "country": "Jižní Korea",
+  "section": "Historie",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jakou velkou sportovní událost hostil Soul v roce 1988?",
+  "answer": "Letní olympijské hry",
+  "distractors": [
+   "Mistrovství světa ve fotbale",
+   "Zimní olympijské hry",
+   "Mistrovství světa v atletice"
+  ],
+  "quip_correct": "Celý svět se na pár týdnů díval na Soul — a Soul se předvedl.",
+  "quip_wrong": "Fotbalové mistrovství, zimní hry ani atletika to nebyly — Soul hostil letní olympiádu.",
+  "explanation": "Olympijské hry pomohly světu ukázat, jak moc se Jižní Korea po válce ekonomicky i společensky proměnila.",
+  "about": "olympiádě v Soulu",
+  "more_fact": "Maskotem soulské olympiády byl malý usměvavý tygr jménem Hodori, oblečený do pásu s tradičním korejským vzorem.",
+  "irony_prompt": "A small cartoonish tiger mascot wearing a traditional patterned sash runs triumphantly through an Olympic stadium entrance, dominating and filling the frame, five colorful rings glowing softly in the sky above. Smaller and subordinate: a cheering crowd blurred in the stands; a single dropped balloon on the track. MOOD: joyful, triumphant."
  }
 ]

@@ -1011,7 +1011,6 @@
   "section": "Místa",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Čím je proslulá 330metrová stavba ve tvaru pyramidy Rjugjong v severokorejské metropoli?",
   "answer": "Desítky let stojí nedokončená a prázdná",
   "distractors": [
@@ -1024,7 +1023,8 @@
   "explanation": "Stavba hotelu se 105 podlažími začala roku 1987 a po rozpadu Sovětského svazu se na roky zastavila. Od roku 2018 se fasáda v noci rozsvěcuje světelnými obrazy, hosty ale zatím nepřijala.",
   "about": "stavbě Rjugjong",
   "more_fact": "Severokorejské úřady ji roky retušovaly z oficiálních fotografií města a americký časopis Esquire ji roku 2008 označil za nejhorší budovu v dějinách lidstva.",
-  "irony_prompt": "A colossal triangular concrete pyramid skyscraper fills the frame against a pale sky, with a lonely construction crane at its peak where a pigeon has built a cosy nest, and a single tiny doorman stands at the huge entrance waiting patiently with a bouquet of flowers. Smaller and subordinate: a spider web across the grand doors, a dusty luggage trolley, a tumbleweed rolling by. MOOD: cheerful, playful, gently absurd."
+  "irony_prompt": "A colossal triangular concrete pyramid skyscraper fills the frame against a pale sky, with a lonely construction crane at its peak where a pigeon has built a cosy nest, and a single tiny doorman stands at the huge entrance waiting patiently with a bouquet of flowers. Smaller and subordinate: a spider web across the grand doors, a dusty luggage trolley, a tumbleweed rolling by. MOOD: cheerful, playful, gently absurd.",
+  "online_only": true
  },
  {
   "id": "kp-s-symbol-budovani",
@@ -1033,7 +1033,6 @@
   "section": "Kultura & tradice",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Jaké bájné zvíře je v Severní Koreji symbolem rychlého budování země?",
   "answer": "Okřídlený kůň",
   "distractors": [
@@ -1046,7 +1045,8 @@
   "explanation": "Podle legendy uběhl kůň Čchollima za jediný den tisíc li, tedy stovky kilometrů. Podle něj se jmenovalo hnutí z konce 50. let, které mělo zemi vybudovat rekordním tempem.",
   "about": "bájném koni Čchollima",
   "more_fact": "Obří bronzová socha okřídleného koně stojí na kopci Mansu v hlavním městě. Přezdívku Čchollima nese i severokorejská fotbalová reprezentace.",
-  "irony_prompt": "A magnificent winged horse fills the frame, galloping across the sky at tremendous speed with a pile of bricks, a shovel and a cement bucket strapped to its back, while a startled goose flaps hard trying to keep pace. Smaller and subordinate: tiny builders below waving hard hats, a small half-built house, clouds swirling in its wake. MOOD: cheerful, playful, energetic."
+  "irony_prompt": "A magnificent winged horse fills the frame, galloping across the sky at tremendous speed with a pile of bricks, a shovel and a cement bucket strapped to its back, while a startled goose flaps hard trying to keep pace. Smaller and subordinate: tiny builders below waving hard hats, a small half-built house, clouds swirling in its wake. MOOD: cheerful, playful, energetic.",
+  "online_only": true
  },
  {
   "id": "kp-s-zmizele-pismo",
@@ -1055,7 +1055,6 @@
   "section": "Jazyk & slova",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Které písmo zmizelo po roce 1949 ze severokorejských novin a knih, zatímco na jihu se občas používá dál?",
   "answer": "Čínské znaky",
   "distractors": [
@@ -1068,7 +1067,8 @@
   "explanation": "Z běžných tiskovin zmizely, ve školách se jich ale severokorejští studenti učí dodnes. Na jihu se občas objeví třeba v novinových titulcích nebo ve jménech.",
   "about": "čínských znacích v Koreji",
   "more_fact": "Korejská jména se tradičně skládají z čínských znaků, takže stejně vyslovené jméno může mít úplně jiný význam podle toho, jaké znaky pro dítě vybrali rodiče.",
-  "irony_prompt": "A cheerful Korean schoolboy with a tiny light satchel and a relieved grin fills the frame, skipping along a village path, while behind him an old scholar in a black horsehair hat staggers under an enormous wobbling tower of heavy lacquered brush boxes and inkstones. Smaller and subordinate: a magpie riding on top of the tower, a twisted pine tree, a girl beyond a low stone wall still carrying one small brush box. MOOD: cheerful, playful, light."
+  "irony_prompt": "A cheerful Korean schoolboy with a tiny light satchel and a relieved grin fills the frame, skipping along a village path, while behind him an old scholar in a black horsehair hat staggers under an enormous wobbling tower of heavy lacquered brush boxes and inkstones. Smaller and subordinate: a magpie riding on top of the tower, a twisted pine tree, a girl beyond a low stone wall still carrying one small brush box. MOOD: cheerful, playful, light.",
+  "online_only": true
  },
  {
   "id": "kp-s-fotbal-1966",
@@ -1077,7 +1077,6 @@
   "section": "Sport",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Kterou fotbalovou velmoc vyřadila Severní Korea na mistrovství světa 1966 v Anglii?",
   "answer": "Itálii",
   "distractors": [
@@ -1090,6 +1089,860 @@
   "explanation": "Rozhodující gól dal v Middlesbrough Pak Do-ik a Severní Korea postoupila jako první asijský tým do čtvrtfinále. Italské hráče pak doma vítali rozzlobení fanoušci shnilými rajčaty.",
   "about": "mistrovství světa 1966",
   "more_fact": "Ve čtvrtfinále vedli Korejci nad Portugalskem po 25 minutách 3:0. Pak se rozjel Eusébio, dal čtyři góly a Portugalsko vyhrálo 5:3.",
-  "irony_prompt": "A small jubilant football player in a completely plain solid red kit with no crest, no badge, no emblem leaps high above a muddy English pitch, and his joyful leap fills the frame, while a tall opponent in a completely plain solid blue kit with no crest, no badge, no emblem sits stunned on the grass. Smaller and subordinate: the ball nestled in the net, rain clouds parting into sunshine, a bewildered policeman in a tall helmet scratching his head. MOOD: cheerful, playful, triumphant."
+  "irony_prompt": "A small jubilant football player in a completely plain solid red kit with no crest, no badge, no emblem leaps high above a muddy English pitch, and his joyful leap fills the frame, while a tall opponent in a completely plain solid blue kit with no crest, no badge, no emblem sits stunned on the grass. Smaller and subordinate: the ball nestled in the net, rain clouds parting into sunshine, a bewildered policeman in a tall helmet scratching his head. MOOD: cheerful, playful, triumphant.",
+  "online_only": true
+ },
+ {
+  "id": "kp-t-vez-plamen-pchjongjang",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se v Pchjongjangu jmenuje 170 metrů vysoká věž ve tvaru hořícího plamene?",
+  "answer": "Věž Čučche",
+  "distractors": [
+   "Věž Republiky",
+   "Sloup Vítězství",
+   "Památník Budování"
+  ],
+  "quip_correct": "Vyšší než kostel, hrdější než leckterá vláda. Klasika.",
+  "quip_wrong": "Věž Republiky zní impozantně, ale tahle si říká po ideologii, ne po státním zřízení.",
+  "explanation": "Věž byla postavena v roce 1982 k 70. výročí narození Kim Il-Sunga a je vyskládaná z přesně 25 550 kamenných bloků — jednoho za každý den jeho dosavadního života.",
+  "about": "Věži Čučche",
+  "more_fact": "Na vyhlídkovou plošinu ve výšce 150 metrů jezdí výtah a cizinci se na ni podívají jen v doprovodu povoleného průvodce, nikdy sami.",
+  "irony_prompt": "A tall obelisk tower shaped like a giant stone flame fills the frame from top to bottom, its faceted red-tipped crown glowing warmly against the sky, completely blank and unmarked all the way down its granite shaft. Smaller and subordinate: a tiny tour guide waving a small group of visitors toward the entrance; a single elevator indicator light glowing at the base; pigeons circling near the flame-shaped top. MOOD: monumental, quietly absurd."
+ },
+ {
+  "id": "kp-t-velka-brana",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jaká pchjongjangská památka je inspirovaná pařížským Vítězným obloukem, ale je postavená vyšší?",
+  "answer": "Vítězný oblouk",
+  "distractors": [
+   "Brána Republiky",
+   "Oblouk Osvobození",
+   "Památník Hrdinů"
+  ],
+  "quip_correct": "Paříž má svůj oblouk už skoro dvě stě let. Pchjongjang na to řekl: dobře, ale vyšší.",
+  "quip_wrong": "Brána Republiky zní jako z jiné brožury — tahle stavba slaví vítězství, ne úřad.",
+  "explanation": "Oblouk byl postaven v roce 1982 na oslavu odboje proti japonské okupaci Koreje a je o víc než deset metrů vyšší než ten pařížský — rozdíl, který místní průvodci nikdy nezapomenou zmínit.",
+  "about": "pchjongjanském Vítězném oblouku",
+  "more_fact": "Klenba nese vytesané názvy dvou revolučních písní z třicátých let spolu s letopočty 1925 a 1945, tedy celou dobu, kterou oblouk připomíná.",
+  "irony_prompt": "A colossal triumphal stone arch fills the frame from edge to edge, its two thick pillars joined by a soaring curved top, its surface completely smooth plain grey granite. Smaller and subordinate: a tiny measuring tape stretched dramatically beside a much smaller toy model of a famous foreign arch for comparison; a single proud city official pointing upward with a satisfied grin; a few blurred cars passing beneath. MOOD: grandiose, comically competitive."
+ },
+ {
+  "id": "kp-k-mesto-s-plazemi",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Místa",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaké přímořské město v Severní Koreji je oblíbené kvůli svým pískovým plážím?",
+  "answer": "Wonsan",
+  "distractors": [
+   "Kaesong",
+   "Hamhung",
+   "Nampho"
+  ],
+  "quip_correct": "Bystrá hlava! Wonsan má pláž, palmy v mysli chybí, ale sluníčko svítí pořádně.",
+  "quip_wrong": "Kaesong je spíš o starých hradbách než o plavkách — na pláž se tam nejede.",
+  "explanation": "Wonsan leží na východním pobřeží a Severní Korea z něj dělá velké turistické středisko s hotely a plážemi pro zahraniční návštěvníky.",
+  "about": "Wonsanu",
+  "more_fact": "Pod horou poblíž města je i lyžařské středisko, takže si tu jde v zimě lyžovat a v létě plavat — jen ne ve stejný den.",
+  "irony_prompt": "A cheerful sandy beach scene fills the frame with a row of colorful striped beach umbrellas and calm turquoise water lapping the shore, completely blank stretch of sand with no flags and no markings anywhere. Smaller and subordinate: a single distant snow-capped mountain peak visible past the bay; a lone seagull mid-flight; a stack of folded beach towels. MOOD: sunny, cheerful, a little surreal."
+ },
+ {
+  "id": "kp-s-kumsusan",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co se nachází v Kumsuském paláci slunce v Pchjongjangu?",
+  "answer": "Skleněné rakve s tělem bývalých vůdců",
+  "distractors": [
+   "Největší knihovna země",
+   "Ústřední muzeum revoluce",
+   "Sídlo Nejvyššího lidového shromáždění"
+  ],
+  "quip_correct": "Být mrtvý ve Severní Koreji zjevně neznamená přestat pracovat na plný úvazek pro stát.",
+  "quip_wrong": "Knihovna by aspoň půjčovala knihy. Tady se nepůjčuje nic, jen se prohlíží.",
+  "explanation": "Bývalé sídlo vlády přestavěli po smrti Kim Il-Sunga na mauzoleum, kde jsou ve skleněných sarkofágech vystaveny i ostatky jeho syna Kim Čong-ila.",
+  "about": "Kumsuském paláci slunce",
+  "more_fact": "Návštěvníci musí projít dlouhými pohybujícími se chodníky a přísnou kontrolou oblečení — džíny a tenisky se u vchodu nepřipouští.",
+  "irony_prompt": "A vast solemn marble hall fills the frame, its polished floor stretching toward a raised platform framed by soft reverent lighting, completely bare walls with no portraits and no markings of any kind. Smaller and subordinate: a pair of white-gloved hands adjusting a velvet rope barrier; a row of neatly lined empty shoe-cleaning mats near the entrance; soft ambient light beams from above. MOOD: solemn, hushed, quietly strange."
+ },
+ {
+  "id": "kp-k-skalni-sedm-pokladu",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Místa",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje pohoří na severovýchodě Severní Koreje, které lidé kvůli skalním útvarům u moře přezdívají „Sedm pokladů“?",
+  "answer": "Pohoří Čchilbo",
+  "distractors": [
+   "Pohoří Rangnim",
+   "Pohoří Mjohjang",
+   "Pohoří Sobaek"
+  ],
+  "quip_correct": "Trefa do černého! Sedm pokladů a ani jeden se nedá odnést domů v kufru.",
+  "quip_wrong": "Rangnim je taky velké pohoří, ale slávu za skály u moře sbírá jinde.",
+  "explanation": "Pohoří se dělí na vnitřní, vnější a mořskou část a jeho ostré žulové věže a jezírka patří k nejfotografovanějším přírodním scenériím celé země.",
+  "about": "pohoří Čchilbo",
+  "more_fact": "Místní pověst říká, že sedm věží skal představuje sedm pokladů, které tam bohové kdysi zapomněli — proto se hory nikdy nesmí prodat.",
+  "irony_prompt": "A dramatic coastal mountain range fills the frame with jagged granite spires rising straight from crashing turquoise waves, completely bare rock faces with no carvings and no markings anywhere. Smaller and subordinate: a lone white crane perched on a narrow ledge; a small wooden fishing boat bobbing far below; wisps of morning mist curling between the peaks. MOOD: majestic, serene."
+ },
+ {
+  "id": "kp-t-cenna-korenova-rostlina",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Příroda",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jaká cenná léčivá rostlina roste divoce v severokorejských horách a je vyhledávaná už po staletí?",
+  "answer": "Ženšen",
+  "distractors": [
+   "Šafrán",
+   "Aloe vera",
+   "Kurkuma"
+  ],
+  "quip_correct": "Kořen, který lidi honí po horách celé století. Respekt si zaslouží i ta rostlina.",
+  "quip_wrong": "Šafrán roste jinde a hlídá si ho úplně jiná ekonomika koření.",
+  "explanation": "Divoce rostoucí korejský ženšen je vzácnější a dráž ceněný než pěstovaný, protože mu k dorůstání do plné síly trvá klidně desítky let.",
+  "about": "ženšenu",
+  "more_fact": "Sběratelé divokého ženšenu v horách mají vlastní tajný slovník značek, kterým si mezi sebou oznamují nalezená místa, aniž by je řekli nahlas.",
+  "irony_prompt": "A gnarled forked root fills the frame up close on a bed of dark forest soil, its pale twisting tendrils branching like tiny limbs, completely bare surface with no markings anywhere. Smaller and subordinate: a single wrinkled hand reaching in from the side to gently brush away soil; a small wicker basket resting nearby; dappled sunlight filtering through leaves above. MOOD: earthy, reverent."
+ },
+ {
+  "id": "kp-s-severovychodni-hranice",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Která řeka na severovýchodě tvoří část hranice Severní Koreje s Ruskem?",
+  "answer": "Řeka Tuman",
+  "distractors": [
+   "Řeka Amnok",
+   "Řeka Tedong",
+   "Řeka Čchongčchon"
+  ],
+  "quip_correct": "Nejkratší hranice s Ruskem na světě se počítá spíš v kilometrech než ve schůzkách.",
+  "quip_wrong": "Amnok hlídá hranici s Čínou, s Ruskem se vůbec nepotkává.",
+  "explanation": "Řeka teče převážně podél hranice s Čínou a jen v posledních pár kilometrech u ústí do moře se dotýká krátkého úseku s Ruskem.",
+  "about": "řece Tuman",
+  "more_fact": "Přes řeku vede jediný železniční most na hranici s Ruskem, po kterém jezdí jen pár vlaků týdně a hlavně náklad, ne cestující.",
+  "irony_prompt": "A wide muddy river fills the frame under a pale overcast sky, its slow current separating two starkly different riverbanks, completely bare shorelines with no fences and no markings visible. Smaller and subordinate: a single rusty railway bridge crossing far in the background; a lone heron wading in the shallows; a small fishing net drying on wooden poles. MOOD: quiet, liminal."
+ },
+ {
+  "id": "kp-s-klima",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jaké klima panuje ve vnitrozemí Severní Koreje?",
+  "answer": "Chladné kontinentální s velkými rozdíly mezi létem a zimou",
+  "distractors": [
+   "Tropické, vlhké po celý rok",
+   "Suché pouštní s minimem srážek",
+   "Mírné středomořské s teplými zimami"
+  ],
+  "quip_correct": "Léto vypaří trpělivost, zima vypaří teplo. Kontinentální klima nezná polovičatost.",
+  "quip_wrong": "Tropy by chtěly palmy a monzuny. Tady místo toho čeká sníh po kolena.",
+  "explanation": "Zatímco pobřeží zmírňuje moře, ve vnitrozemí a v horách klesají zimní teploty hluboko pod nulu a léta jsou naopak horká a vlhká díky monzunovým dešťům.",
+  "about": "klimatu Severní Koreje",
+  "more_fact": "Nejchladnější místo země leží u hranic s Čínou, kde teploty v lednu běžně padají pod minus dvacet stupňů i ve dne.",
+  "irony_prompt": "A dramatic split landscape fills the frame, one half showing a snow-blanketed mountain valley under grey winter sky, the other half blending into a lush green summer hillside under warm sunlight, completely bare of any markings. Smaller and subordinate: a single bare tree standing exactly on the seam between the two seasons; a small pile of snow slowly melting into a puddle; distant birds flying south. MOOD: contrasting, quietly dramatic."
+ },
+ {
+  "id": "kp-k-horske-zvire-s-rohy",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Příroda",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaké horské zvíře podobné koze s krátkými rohy žije ve skalách Severní Koreje?",
+  "answer": "Goral",
+  "distractors": [
+   "Kamzík",
+   "Muflon",
+   "Sob"
+  ],
+  "quip_correct": "Paráda, sedí to! Goral skáče po skalách, jako by gravitaci nikdy nepodepsal.",
+  "quip_wrong": "Sob patří někam k severnímu pólu, ne na korejské skály.",
+  "explanation": "Goral žije v malých stádech na těžko dostupných skalních svazích a je tak vzácný, že je v Severní Koreji chráněný jako přírodní památka.",
+  "about": "goralovi",
+  "more_fact": "Goral umí stát na kousku skály širokém jako lidská dlaň a vůbec ho to nerozhodí — na rozdíl od turistů, kteří se na něj snaží dívat.",
+  "irony_prompt": "A sturdy little goat-antelope fills the frame perched confidently on a narrow rocky ledge, its short curved horns and thick shaggy coat clearly visible against a steep cliff face, completely bare stone with no markings anywhere. Smaller and subordinate: a scattering of loose pebbles mid-tumble down the slope; a hardy pine clinging sideways from a crack; distant mountain ridges fading into mist. MOOD: sturdy, whimsical."
+ },
+ {
+  "id": "kp-s-tri-generace",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Kolik generací jedné rodiny se dosud vystřídalo ve vedení Severní Koreje od jejího založení?",
+  "answer": "Tři",
+  "distractors": [
+   "Dvě",
+   "Čtyři",
+   "Pět"
+  ],
+  "quip_correct": "Tři generace, jedna rodina, nula konkurzů na uvolněné místo.",
+  "quip_wrong": "Čtyři by znamenalo, že se to tam mezitím ještě jednou provalí. Zatím ne.",
+  "explanation": "Moc se v Severní Koreji dědí od otce na syna a pak na vnuka, což z vládnoucí rodiny dělá jednu z mála dynastií, které dnešní svět ve vedení státu ještě má.",
+  "about": "vedení Severní Koreje",
+  "more_fact": "Přechod moci se pokaždé odehrál až po smrti předchozího vůdce, nikdy ne formálním předáním za jeho života, a každý nástupce navíc pěstoval zjevnou podobnost s tím předchozím.",
+  "irony_prompt": "Three identical formal portrait frames of decreasing size fill the frame in a neat vertical row on a plain wall, each frame completely blank and empty with no faces and no markings inside. Smaller and subordinate: a small ornate picture hook above the topmost frame; a thin strip of fresh paint slightly brighter than the wall around them; a single dust cloth draped over a nearby ladder. MOOD: solemn, quietly ironic."
+ },
+ {
+  "id": "kp-t-korejsky-vek",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Lidé",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se v Koreji tradičně počítá věk člověka, na rozdíl od většiny světa?",
+  "answer": "Při narození je dítěti rok a všem přibude rok na Nový rok",
+  "distractors": [
+   "Věk se počítá od početí, ne od narození",
+   "Rok se přičítá až po dosažení plnoletosti",
+   "Věk se udává v měsících, ne v letech"
+  ],
+  "quip_correct": "Gratulace, o rok starší — a stačilo jen počkat na Nový rok.",
+  "quip_wrong": "Početí se v tomhle systému neřeší, tam by se to komplikovalo ještě víc.",
+  "explanation": "Podle tohoto systému může být novorozenec starý rok už první den života a hned 1. ledna mu přibude druhý, i kdyby se narodil 31. prosince.",
+  "about": "korejském počítání věku",
+  "more_fact": "Kvůli tomuto systému může být stejný člověk podle dvou počítání starý klidně o dva roky víc, než kolik mu skutečně je.",
+  "irony_prompt": "A calendar page fills the frame with one single square shaded in a warm color while the rest stay blank, a small unlit birthday candle standing propped beside it, the whole page completely blank otherwise with no markings of any kind. Smaller and subordinate: a second small candle already standing ready right next to the first; a pair of tiny mittens resting on the corner of the page; soft morning light spilling across the scene. MOOD: whimsical, cozy."
+ },
+ {
+  "id": "kp-k-poradi-oslovovani",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Lidé",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Co je u korejských jmen jinak než u českých?",
+  "answer": "Nejdřív se píše rodinné jméno, pak křestní",
+  "distractors": [
+   "Jméno se píše vždy velkými písmeny",
+   "Jméno se skládá jen z jednoho slova",
+   "Jméno se nikdy nepoužívá v každodenní řeči"
+  ],
+  "quip_correct": "Hop, a je to! V Koreji se rodina píše napřed, jako by chtěla mít poslední slovo.",
+  "quip_wrong": "Velká písmena by z toho udělaly nápis na tabuli, ne jméno.",
+  "explanation": "Třeba u jména Kim Čong-un je „Kim“ rodinné jméno a zbytek je křestní — přesně obráceně, než jak se jméno píše v Česku.",
+  "about": "korejských jménech",
+  "more_fact": "Rodinných jmen je v celé Koreji jen pár desítek, takže se jméno Kim, Lee nebo Pak dělí mezi obrovské množství nepříbuzných lidí.",
+  "irony_prompt": "Two simple wooden nameplates fill the frame stacked one above the other on a small desk, the top plate noticeably larger and sturdier than the smaller one resting beneath it, both completely blank and unmarked. Smaller and subordinate: a tiny potted plant beside the nameplates; a pair of reading glasses resting on the desk edge; warm desk-lamp light. MOOD: orderly, gently playful."
+ },
+ {
+  "id": "kp-k-vlasy-zenatych-muzu",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Lidé",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se v dávné Koreji poznalo, že je muž ženatý?",
+  "answer": "Podle vlasů stočených do drdolu na hlavě",
+  "distractors": [
+   "Podle prstenu na malíčku",
+   "Podle barevného pásku na klobouku",
+   "Podle vousů zastřižených do špičky"
+  ],
+  "quip_correct": "Bystrá hlava! Drdol jako svatební prsten, jen se nosí trochu výš.",
+  "quip_wrong": "Prsten na malíčku zní roztomile, ale ženáče v staré Koreji prozradil účes, ne šperk.",
+  "explanation": "Svobodní muži nosili vlasy spletené do copu, ale po svatbě si je stočili do drdolu na temeni hlavy a upevnili tradičním kloboukem.",
+  "about": "drdolu ženatých Korejců",
+  "more_fact": "Zvyk zmizel na konci 19. století, kdy nová nařízení přikázala mužům vlasy zastřihnout — tehdy spousta starších Korejců propukla v pláč.",
+  "irony_prompt": "A neat topknot of dark hair fills the frame, coiled tightly at the very top of a head and held in place by a simple horsehair band, completely bare of any hairpin decoration or markings. Smaller and subordinate: a small horsehair hat resting nearby ready to be placed over it; a wooden comb lying on a low table; soft candlelight glow. MOOD: dignified, tender."
+ },
+ {
+  "id": "kp-s-juche-kalendar",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Od kterého roku severokorejský kalendář čučche počítá svůj první rok?",
+  "answer": "Od roku 1912, kdy se narodil Kim Il-Sung",
+  "distractors": [
+   "Od roku 1945, kdy skončila japonská okupace",
+   "Od roku 1948, kdy vznikla Severní Korea",
+   "Od roku 1950, kdy začala korejská válka"
+  ],
+  "quip_correct": "Když si můžeš vybrat rok nula, proč ne rok narození vlastního zakladatele.",
+  "quip_wrong": "Rok 1945 osvobodil poloostrov od Japonska, ale kalendář slaví něco úplně jiného.",
+  "explanation": "Kalendář čučche se zavedl až v roce 1997 a používá se souběžně s gregoriánským — data se tak často píšou ve tvaru „rok čučche 113 (2024)“.",
+  "about": "kalendáři čučche",
+  "more_fact": "Podle tohoto systému neexistuje žádný „rok 0“ — hned po roce čučche 1 předchází takzvaný „rok před čučche 1“, tedy rok 1911.",
+  "irony_prompt": "Two calendar systems fill the frame side by side on a wall, one showing a thick stack of ordinary yellowed pages and the other a single fresh crisp page pinned neatly beside it, both completely blank with no markings visible anywhere. Smaller and subordinate: a small brass pin holding the fresh page in place; a thin ray of light crossing both calendars evenly; a windowsill plant nearby. MOOD: orderly, quietly wry."
+ },
+ {
+  "id": "kp-k-strazni-sloupy-vesnice",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Kultura & tradice",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaké dřevěné sloupy s vyřezanými tvářemi stávaly u vstupu do korejských vesnic a měly je chránit před zlými duchy?",
+  "answer": "Čangseung",
+  "distractors": [
+   "Totemy chrámů",
+   "Modlitební mlýnky",
+   "Kamenné lucerny"
+  ],
+  "quip_correct": "To bylo hned vidět! Vyřezaná tvář na kůlu jako vesnický vrátný, co nikdy nejde na pauzu.",
+  "quip_wrong": "Modlitební mlýnky se otáčejí a šeptají — tihle sloupoví strážci jen stojí a mlčí.",
+  "explanation": "Sloupy měly obvykle dvojici — jednu s mužskou a jednu se ženskou tváří — a stavěly se na okraj vesnice jako ochranné božstvo i ukazatel vzdálenosti.",
+  "about": "strážních sloupech čangseung",
+  "more_fact": "Výrazy tváří bývají schválně přehnané a děsivé, protože čím strašidelnější sloup, tím lépe měl odhánět zlé duchy.",
+  "irony_prompt": "A carved wooden totem pole fills the frame standing at the edge of a dirt path, its face exaggerated into a wide-eyed grimace with bulging carved eyebrows, completely bare wood grain elsewhere with no markings. Smaller and subordinate: a second shorter totem pole with a gentler carved expression standing just beside it; a scattering of fallen autumn leaves at its base; a curious sparrow perched on its shoulder. MOOD: whimsical, a little spooky."
+ },
+ {
+  "id": "kp-t-ondol",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak tradičně funguje korejský podlahový vytápěcí systém zvaný ondol?",
+  "answer": "Teplý vzduch a kouř z pece proudí pod podlahou",
+  "distractors": [
+   "Horká voda koluje v trubkách pod kachličkami",
+   "Elektrické dráty hřejí zespod podlahy",
+   "Sluneční kolektory na střeše hřejí kameny"
+  ],
+  "quip_correct": "Podlaha jako radiátor — geniální, pokud nevadí spát kousek od komína.",
+  "quip_wrong": "Trubky s vodou by potřebovaly potrubí, které stará Korea ještě neměla. Tady šlo o kouř, ne o kapaliny.",
+  "explanation": "Kouř z kuchyňské pece se vedl kanálky pod kamennou podlahou až ke komínu na druhém konci domu, takže se vařilo a vytápělo najednou z jediného ohně.",
+  "about": "podlahovém topení ondol",
+  "more_fact": "Systém je tak účinný, že se dodnes používá i v moderních korejských bytech, jen se pec nahradila kotlem s horkou vodou.",
+  "irony_prompt": "A cutaway cross-section of a traditional floor fills the frame, showing warm swirling air and gentle smoke curling through a winding channel beneath thick stone slabs, completely bare surfaces with no markings anywhere. Smaller and subordinate: a small pair of slippers resting on the warm floor above; a curled-up cat sleeping contentedly on the warmest spot; a single chimney puffing softly in the distance. MOOD: cozy, ingenious."
+ },
+ {
+  "id": "kp-t-symbol-vernosti-svatba",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Co si novomanželé při tradiční korejské svatbě symbolicky předávají jako znak věrnosti?",
+  "answer": "Vyřezávané dřevěné kachny nebo husy",
+  "distractors": [
+   "Vyšívaný pás z hedvábí",
+   "Pár stříbrných jídelních misek",
+   "Košík čerstvého ovoce"
+  ],
+  "quip_correct": "Kachny drží pár navždy — možná proto, že dřevěné se nikdy nerozvedou.",
+  "quip_wrong": "Hedvábný pás je krásný, ale věrnost si tu symbolizuje jinak — křídly, ne látkou.",
+  "explanation": "Ptáci jako husy se v přírodě páří na celý život, a proto se jejich vyřezávané figurky darují jako přání, aby manželství vydrželo stejně dlouho.",
+  "about": "svatebních dřevěných kachnách",
+  "more_fact": "Figurky si novomanželé po svatbě obvykle nechávají doma vystavené jako připomínku slibu, ne jako obyčejnou dekoraci.",
+  "irony_prompt": "A pair of carved wooden duck figurines fills the frame standing close together on a low ceremonial table, their simple smooth forms facing each other, completely bare wood with no painted patterns or markings. Smaller and subordinate: a small red ceremonial cloth draped loosely beneath them; a single unlit candle standing nearby; soft warm light from one side. MOOD: tender, ceremonial."
+ },
+ {
+  "id": "kp-s-obangsaek",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Kolik základních barev obsahuje tradiční korejská barevná symbolika obangsaek, používaná v jídle i oblečení?",
+  "answer": "Pět",
+  "distractors": [
+   "Tři",
+   "Čtyři",
+   "Šest"
+  ],
+  "quip_correct": "Pět barev, pět světových stran, nula prostoru pro fialovou.",
+  "quip_wrong": "Čtyři by fungovaly na čtverec, ale obangsaek počítá i se středem světa.",
+  "explanation": "Barvy (bílá, černá, modrá, červená, žlutá) odpovídají pěti světovým směrům a pěti prvkům a objevují se třeba na dětských pruhovaných rukávech hanboku.",
+  "about": "korejské barevné symbolice obangsaek",
+  "more_fact": "Stejná pětice barev se používá i při skládání korejského jídla na talíř — kuchař se snaží, aby na talíři byly zastoupeny všechny.",
+  "irony_prompt": "Five neatly arranged painted wooden blocks fill the frame in a tidy row, each block a different solid warm hue, their surfaces completely plain with no patterns or markings. Smaller and subordinate: a small ceramic bowl of rice sitting just beside the row with visible colorful vegetable strips arranged on top matching the blocks; a folded striped fabric swatch nearby; soft daylight. MOOD: harmonious, tidy."
+ },
+ {
+  "id": "kp-s-styl-plakatu-vudcu",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "V jakém uměleckém stylu jsou malovány severokorejské propagandistické plakáty s idealizovanými silnými postavami?",
+  "answer": "Socialistický realismus",
+  "distractors": [
+   "Abstraktní expresionismus",
+   "Kubismus",
+   "Impresionismus"
+  ],
+  "quip_correct": "Realismus tu znamená hlavně to, že realita se maluje o dost hezčí, než je.",
+  "quip_wrong": "Kubismus by z hrdiny udělal hranatou skládanku. Tady musí vypadat dokonale a celý.",
+  "explanation": "Styl vyžaduje hrdinné, svalnaté postavy v odhodlaných pózách, jasné barvy a téměř žádný stín pochybnosti — umělecká škola se tomu učí jako řemeslu.",
+  "about": "socialistickém realismu",
+  "more_fact": "Malby se často dělají obrovské, na celé stěny budov, a malíři je musí naplánovat v přesném měřítku, než vůbec vezmou do ruky štětec.",
+  "irony_prompt": "A giant mural fills the frame on the side of a tall building, depicting a heroic figure striding forward with an arm raised toward a bright horizon, painted in bold flat colors with dramatic confident lighting, completely blank sky behind it. Smaller and subordinate: a small scaffold platform with a lone painter's brush resting on it; a stack of paint buckets at the mural's base; a few scattered pigeons on a nearby ledge. MOOD: heroic, theatrically grand."
+ },
+ {
+  "id": "kp-s-mansudae-tovarna-na-umeni",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co je Mansudae Art Studio v Pchjongjangu?",
+  "answer": "Největší umělecký ateliér světa vyrábějící sochy a obrazy",
+  "distractors": [
+   "Nejstarší divadlo v zemi",
+   "Ústřední filmové studio armády",
+   "Muzeum moderního korejského malířství"
+  ],
+  "quip_correct": "Tisíce umělců pod jednou střechou a jediný klient, který si nikdy nestěžuje na cenu.",
+  "quip_wrong": "Filmové studio by potřebovalo kamery, tady se především tesá a maluje.",
+  "explanation": "Ateliér zaměstnává tisíce sochařů a malířů a vyrábí i monumentální sochy na export do zahraničí, včetně několika afrických států.",
+  "about": "ateliéru Mansudae",
+  "more_fact": "Práce na jedné velké bronzové soše tu běžně zvládne tým umělců za pár měsíců — u klasické evropské akademie by to trvalo roky.",
+  "irony_prompt": "A sprawling workshop hall fills the frame with dozens of half-finished bronze statue torsos standing in neat rows under bright overhead lighting, their surfaces completely bare and unmarked with no plaques anywhere. Smaller and subordinate: a small ladder propped against one statue's shoulder; scattered clay-dust footprints across the floor; a wheeled cart stacked with sculpting tools. MOOD: industrious, oddly whimsical."
+ },
+ {
+  "id": "kp-t-perletovy-lak",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Umění",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se jmenuje tradiční korejská řemeslná technika zdobení černého laku kousky perleti?",
+  "answer": "Nadžon čchilgi",
+  "distractors": [
+   "Zlacené řezbářství",
+   "Malovaná keramika",
+   "Tkaná výšivka"
+  ],
+  "quip_correct": "Perleť na černém laku svítí jako hvězdy na noční obloze — jen trvanlivější.",
+  "quip_wrong": "Tkaná výšivka pracuje s jehlou a nití, ne s lakem a perletí. Úplně jiný materiál v rukách.",
+  "explanation": "Umělci vyřezávají tenké plátky perlové ulity do drobných obrazců a zapouštějí je do vrstev černého laku na dřevěných krabičkách a truhlách.",
+  "about": "technice nadžon čchilgi",
+  "more_fact": "Jedna kvalitní lakovaná krabička může vyžadovat desítky vrstev laku a měsíce práce, než je hotová a vyleštěná.",
+  "irony_prompt": "A small black lacquered wooden box fills the frame, its lid inlaid with delicate shimmering mother-of-pearl shapes forming a simple floral pattern, the rest of the surface completely smooth and unmarked. Smaller and subordinate: a tiny carving tool resting beside it on a soft cloth; a scattering of unused pearl shell fragments; warm workshop lamp light. MOOD: delicate, meticulous."
+ },
+ {
+  "id": "kp-k-changgo",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Umění",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje tradiční korejský buben ve tvaru přesýpacích hodin, na který se hraje paličkami z obou stran?",
+  "answer": "Čanggo",
+  "distractors": [
+   "Kayagum",
+   "Piri",
+   "Taepyeongso"
+  ],
+  "quip_correct": "Bod pro tebe! Buben ve tvaru přesýpacích hodin — jako by čas sám chtěl tancovat.",
+  "quip_wrong": "Kayagum je citara se strunami, ne buben s paličkami. Zvuk úplně jiný.",
+  "explanation": "Jedna strana bubnu má vysoký tón a druhá nízký, takže hráč oběma paličkami mění rytmus i barvu zvuku zároveň.",
+  "about": "bubnu čanggo",
+  "more_fact": "Buben se často nosí zavěšený na popruhu přes ramena, takže s ním hráči tancují a bubnují najednou, a při rychlých písních zvládají paličkami hrát i s rukama křížem.",
+  "irony_prompt": "An hourglass-shaped drum fills the frame resting upright on a woven mat, its two curved drumheads facing left and right with a thick tension cord wrapped around its waist, completely bare skin heads with no painted patterns or markings. Smaller and subordinate: two curved wooden drumsticks laid crossed on top; a loose shoulder strap draped beside it; a single scattered flower petal on the mat. MOOD: rhythmic, cheerful."
+ },
+ {
+  "id": "kp-s-rocni-bezecky-zavod",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jaký mezinárodní běžecký závod se od roku 1981 každoročně běhá ulicemi Pchjongjangu a smí se na něj přihlásit i zahraniční turisté?",
+  "answer": "Pchjongjangský maraton",
+  "distractors": [
+   "Pchjongjangský triatlon",
+   "Korejský ultramaraton míru",
+   "Severokorejský cyklistický závod"
+  ],
+  "quip_correct": "Čtyřicet dva kilometrů přes hlavní město, které jinak zahraniční turisté vidí jen z okna autobusu.",
+  "quip_wrong": "Triatlon by chtěl kolo a bazén navíc — tady se běhá, plave se jen v peřejích nadšení.",
+  "explanation": "Závod vede kolem hlavních památek města a projet nebo proběhnout jeho trasou je jedna z mála příležitostí, kdy se cizinci mohou po Pchjongjangu pohybovat bez neustálého doprovodu.",
+  "about": "pchjongjangském maratonu",
+  "more_fact": "Kromě plné trasy se běhá i kratší desítka a půlmaraton, takže se může zúčastnit i běžec, který na celý maraton netrénoval.",
+  "irony_prompt": "A wide city avenue fills the frame lined with identical grey apartment blocks, a single runner's shadow stretching long across the empty road at dawn, completely bare walls with no banners, no finish line and no markings visible. Smaller and subordinate: a small discarded water cup rolling along the curb; a lone traffic officer standing perfectly still at an intersection; distant morning mist over rooftops. MOOD: quiet, determined."
+ },
+ {
+  "id": "kp-t-raketovy-sport-oblibeny",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Sport",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaký raketový sport je v Severní Koreji velmi populární a úspěšný i na mezinárodní úrovni?",
+  "answer": "Stolní tenis",
+  "distractors": [
+   "Tenis",
+   "Badminton",
+   "Squash"
+  ],
+  "quip_correct": "Malý míček, velké ambice — a stůl, který se vejde skoro kamkoli.",
+  "quip_wrong": "Tenis chce kurt a síť přes celé hřiště. Tady stačí jeden stůl a rychlé ruce.",
+  "explanation": "Severokorejští hráči a hráčky pravidelně sbírají medaile na mistrovstvích Asie a jednou dokonce nastoupili ve spojeném týmu s Jižní Koreou na mistrovství světa.",
+  "about": "stolním tenise",
+  "more_fact": "Spojený korejský tým ve stolním tenise vznikl v roce 1991 a hráčky společně tehdy dokázaly porazit i tehdy dominantní čínský tým.",
+  "irony_prompt": "A green table tennis table fills the frame from corner to corner, a small white ball frozen mid-bounce just above the net, completely bare tabletop with no lines drawn and no markings anywhere except its plain surface. Smaller and subordinate: two simple wooden paddles resting on opposite ends; a single ball rolling off the edge onto the floor; soft gymnasium lighting overhead. MOOD: energetic, playful."
+ },
+ {
+  "id": "kp-s-disciplina-male-delegace",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "V jaké olympijské disciplíně získává Severní Korea opakovaně medaile navzdory velmi malému počtu vyslaných sportovců?",
+  "answer": "Vzpírání",
+  "distractors": [
+   "Moderní gymnastika",
+   "Plavání",
+   "Šerm"
+  ],
+  "quip_correct": "Pár sportovců, pár činek, ale medaile váží stejně jako všude jinde.",
+  "quip_wrong": "Plavání by chtělo bazén a spoustu tréninkového času navíc. Tady jde hlavně o zvednutí, ne o vodu.",
+  "explanation": "Malí, ale velmi silní vzpěrači patří k mála disciplínám, kde země pravidelně útočí na stupně vítězů bez ohledu na velikost celé olympijské výpravy.",
+  "about": "severokorejském vzpírání",
+  "more_fact": "Někteří severokorejští vzpěrači drží dodnes světové rekordy ve své váhové kategorii, přestože trénují bez přístupu k moderním posilovnám na Západě.",
+  "irony_prompt": "A heavily loaded barbell fills the frame resting at ground level on a chalky gym floor, a pair of powerful straining arms gripping it mid-lift, completely bare weight plates with no numbers, stickers or markings visible. Smaller and subordinate: a small pile of white chalk dust scattered nearby; a folded towel draped over a bench; a single overhead spotlight beam. MOOD: intense, focused."
+ },
+ {
+  "id": "kp-k-skakani-na-prkne",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Sport",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaká tradiční korejská hra připomíná houpání na prkně, při kterém se dvě dívky navzájem vymrští vysoko do vzduchu?",
+  "answer": "Neoltwigi",
+  "distractors": [
+   "Jegi čagi",
+   "Yutnori",
+   "Ssirum"
+  ],
+  "quip_correct": "Paráda, sedí to! Žádné motory, jen dvě holky a prkno — a najednou letíš.",
+  "quip_wrong": "Ssirum je zápas v písku, ne let vzduchem na prkně. Úplně jiná hra.",
+  "explanation": "Dívky stojí na opačných koncích dlouhého dřevěného prkna položeného přes podložku a svým doskokem vymrští druhou hráčku vysoko nahoru.",
+  "about": "tradiční hře neoltwigi",
+  "more_fact": "Hra se hrávala hlavně o svátcích, kdy ženy jinak nemohly příliš vycházet z domu — díky skákání tak aspoň nakouknuly přes zahradní zeď.",
+  "irony_prompt": "A long wooden plank fills the frame balanced across a low rolled straw bundle like a seesaw, one end tipped high into the air mid-bounce with colorful skirt fabric fluttering, completely bare wood with no paint patterns or markings. Smaller and subordinate: a small pair of embroidered shoes left neatly at the plank's edge; a scattering of blossom petals drifting in the air; a low garden wall in the background. MOOD: joyful, bouncy."
+ },
+ {
+  "id": "kp-k-sloveso-na-konci",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jazyk & slova",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Kam se v korejské větě staví sloveso — na konec, nebo doprostřed jako v mnoha jiných jazycích?",
+  "answer": "Na konec věty",
+  "distractors": [
+   "Hned na první místo",
+   "Doprostřed věty",
+   "Sloveso se v korejštině vůbec nepoužívá"
+  ],
+  "quip_correct": "Trefa do černého! Korejština si sloveso schová na konec jako nejlepší kousek dortu.",
+  "quip_wrong": "Bez slovesa by věta nikam nedošla — a korejština ho má, jen úplně vzadu.",
+  "explanation": "Věta se skládá v pořadí podmět, předmět a teprve na konci sloveso, takže Korejec musí vyslechnout celou větu, než pochopí, co se vlastně stalo.",
+  "about": "korejském slovosledu",
+  "more_fact": "Kvůli tomuto pořadí se v hovorové korejštině dá uprostřed věty odmlčet a pak ji dokončit úplně jinak, aniž by to znělo nelogicky.",
+  "irony_prompt": "A simple wooden toy train fills the frame with three connected colorful cars rolling along a curved track, the last car noticeably larger and more decorated than the rest, completely bare of any lettering or markings. Smaller and subordinate: a small signal flag standing beside the track; a curious child's toy figure watching from the side; soft indoor play-room lighting. MOOD: playful, orderly."
+ },
+ {
+  "id": "kp-k-hangul-pismo-ve-blocich",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jazyk & slova",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Píšou se písmena hangul jednotlivě za sebou jako v naší abecedě, nebo se skládají jinak, po slabikách?",
+  "answer": "Poskládaná do čtverečkových slabik",
+  "distractors": [
+   "Jednotlivě za sebou jako u nás",
+   "Píšou se jen shora dolů, nikdy vedle sebe",
+   "Píšou se výhradně kruhovým písmem bez hran"
+  ],
+  "quip_correct": "Hop, a je to! Písmenka se v korejštině skládají jako puzzle do čtverečku, ne jako korálky na niti.",
+  "quip_wrong": "Shora dolů psaly dřív spíš čínské znaky. Hangul umí i to, ale nejčastěji jede v řádcích.",
+  "explanation": "Do jednoho čtverečku se vejdou dvě až čtyři písmenka najednou, takže slabika vypadá jako malý obrázek, ne jako řetězec písmen za sebou.",
+  "about": "zápisu písma hangul",
+  "more_fact": "Díky skládání do čtverečků vypadá napsaný hangul zdálky trochu jako čínské znaky, i když funguje úplně jinak — jako abeceda, ne jako obrázkové písmo.",
+  "irony_prompt": "A neat grid of small empty squares fills the frame like a simple puzzle board, a few squares filled with tiny abstract geometric shapes stacked neatly inside their borders, the rest completely blank with no letters or writing of any kind. Smaller and subordinate: a single wooden puzzle piece waiting beside the grid; a child's hand reaching to place it; warm tabletop lighting. MOOD: playful, orderly."
+ },
+ {
+  "id": "kp-s-pocet-pismen-hangul",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Kolik základních písmen — souhlásek a samohlásek — má korejská abeceda hangul?",
+  "answer": "24",
+  "distractors": [
+   "18",
+   "28",
+   "33"
+  ],
+  "quip_correct": "Čtyřiadvacet písmen a král, co si dal tu práci je všechny vymyslet za pár let. Slušný výkon.",
+  "quip_wrong": "Osmadvacet by sedělo spíš na jiné asijské abecedy. Hangul si vystačí s trochu skromnějším počtem.",
+  "explanation": "Čtrnáct souhlásek a deset samohlásek se navíc dá kombinovat do dalších složených znaků, takže s jádrem dvacet čtyři písmen zapíšeš celou moderní korejštinu.",
+  "about": "písmu hangul",
+  "more_fact": "Tvary souhlásek podle legendy napodobují postavení jazyka a pusy při jejich vyslovování — písmo tak mělo být snadné odvodit přímo z řeči.",
+  "irony_prompt": "A tidy row of simple geometric wooden blocks fills the frame, each block a different plain angular shape standing upright like tiny abstract sculptures, completely bare surfaces with no letters, numbers or markings of any kind. Smaller and subordinate: a small wooden crate holding a few spare blocks nearby; a ruler resting diagonally across the table edge; soft workshop light. MOOD: methodical, quietly elegant."
+ },
+ {
+  "id": "kp-t-prislovi-o-studni",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaké zvíře je hrdinou korejského přísloví o někom, kdo nezná svět mimo svůj domov?",
+  "answer": "Žába",
+  "distractors": [
+   "Krtek",
+   "Šnek",
+   "Sova"
+  ],
+  "quip_correct": "Žába ve studni má klidně celý svět — jen se nikdy nedostane ke zbytku té studny.",
+  "quip_wrong": "Krtek by si ve studni ani nevšiml, že něco chybí. Přísloví potřebuje tvora, co koukat umí, ale nechce.",
+  "explanation": "Přísloví popisuje žábu, která celý život žije na dně studny a myslí si, že kruh nebe nad ní je celá obloha — používá se o lidech s příliš úzkým rozhledem.",
+  "about": "korejském přísloví o žábě",
+  "more_fact": "Stejné přísloví se v podobné podobě používá i v Číně a Japonsku — žába ve studni je oblíbená metafora napříč celou východní Asií.",
+  "irony_prompt": "A small round frog fills the frame sitting at the very bottom of a deep circular stone well, looking up toward a tiny disc of bright sky far above, completely bare stone walls with no markings anywhere. Smaller and subordinate: a single drop of water frozen mid-fall from the well's rim; a strand of moss clinging to the wall; a faint ripple on the water surface below the frog. MOOD: whimsical, contemplative."
+ },
+ {
+  "id": "kp-k-kase-jatjuk-z-boru",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jídlo",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaké oříšky se používají na přípravu tradiční korejské kaše jatjuk?",
+  "answer": "Borové oříšky",
+  "distractors": [
+   "Lískové oříšky",
+   "Kešu oříšky",
+   "Vlašské oříšky"
+  ],
+  "quip_correct": "Paráda, sedí to! Kaše z borových oříšků — snídaně, po které se nechce ven z postele.",
+  "quip_wrong": "Kešu je spíš exotická dovážená pochoutka. Do husté kaše se tu drtí to, co roste přímo v horách.",
+  "explanation": "Oříšky se namočí, rozmixují s rýží na hladké mléčko a pak pomalu vaří do husté krémové kaše, kterou se v Koreji jí především jako posilující jídlo.",
+  "about": "korejské kaši jatjuk",
+  "more_fact": "Kaše se tradičně podává nemocným nebo starším lidem, protože je snadno stravitelná a považuje se za velmi výživnou.",
+  "irony_prompt": "A steaming bowl of thick pale creamy porridge fills the frame, its smooth surface dotted with a few whole small nuts scattered on top, completely plain bowl with no patterns or markings. Smaller and subordinate: a single wooden spoon resting across the rim; a small pile of shelled nuts beside the bowl; gentle rising steam. MOOD: warm, comforting."
+ },
+ {
+  "id": "kp-t-slazeny-rizovy-napoj",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jídlo",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se jmenuje tradiční sladký korejský nápoj vyrobený z fermentované rýže, který se často pije jako dezert?",
+  "answer": "Sikhje",
+  "distractors": [
+   "Makgeolli",
+   "Sujeonggwa",
+   "Boricha"
+  ],
+  "quip_correct": "Sladká rýže v tekuté podobě — dezert, který se dá pít brčkem.",
+  "quip_wrong": "Makgeolli je taky z rýže, ale je to nápoj pro dospělé, ne dětský dezert.",
+  "explanation": "Nápoj vzniká fermentací rýže s obilným sladem, takže z ní vznikne přirozeně sladká, lehce zrnitá tekutina bez jediné kapky alkoholu.",
+  "about": "korejském nápoji sikhje",
+  "more_fact": "V nápoji plavou i celá rýžová zrna, která se považují za nejlepší část a pijí se spolu s tekutinou, ne odlévají pryč.",
+  "irony_prompt": "A tall glass of pale golden liquid fills the frame, a few soft rice grains floating gently near the surface, condensation beading down the glass, its surface completely plain. Smaller and subordinate: a single ice cube dropping in mid-splash; a small ladle resting on a wooden tray nearby; soft warm kitchen light. MOOD: refreshing, homely."
+ },
+ {
+  "id": "kp-k-miska-rize-se-zeleninou",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jídlo",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje korejské jídlo, kde se v jedné míse smíchá rýže se zeleninou, masem a vejcem?",
+  "answer": "Bibimbap",
+  "distractors": [
+   "Tteokbokki",
+   "Japchae",
+   "Kimbap"
+  ],
+  "quip_correct": "Bod pro tebe! Všechno na jednu hromadu a pak to pořádně zamícháš — jídlo, co se dodělává až na talíři.",
+  "quip_wrong": "Kimbap se balí do řasy jako svitek. Tady se naopak všechno smíchá v jedné míse.",
+  "explanation": "Jídlo se servíruje s barevně rozdělenými přílohami po obvodu mísy a teprve jedlík je před jídlem promíchá dohromady.",
+  "about": "korejském bibimbapu",
+  "more_fact": "K bibimbapu se často podává i horká kamenná mísa, ve které se rýže na dně ještě dopéká do křupavé krusty, a k jídlu patří i lžička pálivé červené pasty na dochucení.",
+  "irony_prompt": "A round stone bowl fills the frame packed with neatly arranged wedges of colorful vegetables fanned out around a mound of plain rice in the center, completely bare bowl rim with no patterns or markings. Smaller and subordinate: a single pair of wooden chopsticks resting across the top; a small spoon tucked beside the bowl; gentle steam rising. MOOD: vibrant, inviting."
+ },
+ {
+  "id": "kp-t-cervena-chilli-pasta",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jídlo",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se jmenuje hustá červená korejská pasta z chilli papriček a fermentované sóje, kterou se dochucuje spousta jídel?",
+  "answer": "Kočhudžang",
+  "distractors": [
+   "Wasabi",
+   "Sriracha",
+   "Sambal"
+  ],
+  "quip_correct": "Jedna lžička a jídlo náhle dostane charakter, který předtím nemělo.",
+  "quip_wrong": "Wasabi je japonská záležitost a chutná úplně jinak — tady jde o sladší a hlubší pálivost.",
+  "explanation": "Pasta fermentuje měsíce až roky ve velkých hliněných nádobách na dvorech a čím déle zraje, tím hlubší a méně útočnou chuť má.",
+  "about": "kočhudžangu",
+  "more_fact": "Rodiny si dřív pastu vyráběly doma a předávaly si postup i samotnou zásobu z generace na generaci jako rodinné dědictví.",
+  "irony_prompt": "A large earthenware crock fills the frame with its heavy lid tilted open, revealing a smooth thick deep red paste packed inside up to the brim, completely plain clay surface with no writing or markings. Smaller and subordinate: a wooden paddle resting against the crock's side; a scattering of dried red chili pods nearby; warm afternoon sunlight. MOOD: rich, earthy."
+ },
+ {
+  "id": "kp-s-smazena-cibulova-placka",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jak se jmenuje korejská placka z mouky, vajec a jarní cibulky smažená na pánvi?",
+  "answer": "Pajon",
+  "distractors": [
+   "Jeon z cukety",
+   "Hotteok",
+   "Bindaetteok"
+  ],
+  "quip_correct": "Placka, co se hodí ke všemu — dešti, hádce o politice i obyčejné nudě.",
+  "quip_wrong": "Hotteok je sladká náplněná placka na dezert, ne slaná svačina k dešti.",
+  "explanation": "Placka se často servíruje právě za deštivého počasí, protože zvuk smažení připomíná bubnování dešťových kapek na střeše.",
+  "about": "korejské placce pajon",
+  "more_fact": "Existují desítky variant podle toho, co se do těsta přidá — od mořských plodů až po celé vepřové plátky, a k plackám se téměř vždy servíruje ostrá sójová omáčka na dochucení.",
+  "irony_prompt": "A wide round golden-brown pancake fills the frame sizzling in a flat pan, its surface studded with long green onion strips pressed flat into the batter, completely plain pan rim with no markings. Smaller and subordinate: a wooden spatula sliding beneath one edge; a small dish of dark dipping sauce waiting nearby; a light haze of cooking steam. MOOD: sizzling, homely."
+ },
+ {
+  "id": "kp-s-vznik-lidove-republiky",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Ve kterém roce byla založena Korejská lidově demokratická republika (Severní Korea)?",
+  "answer": "1948",
+  "distractors": [
+   "1945",
+   "1950",
+   "1953"
+  ],
+  "quip_correct": "1948 — rok, kdy poloostrov definitivně dostal dvě vlajky místo jedné.",
+  "quip_wrong": "1945 je konec japonské okupace, ne založení samotného státu — mezitím uběhly ještě tři roky.",
+  "explanation": "Stát vznikl pár týdnů po vyhlášení Korejské republiky na jihu, takže se rozdělení poloostrova na dva samostatné státy odehrálo prakticky ve stejném roce na obou stranách.",
+  "about": "vzniku Severní Koreje",
+  "more_fact": "Prvním vůdcem nového státu se stal Kim Il-Sung, který předtím bojoval jako partyzán proti japonské okupaci a vrátil se do Koreje se sovětskou podporou.",
+  "irony_prompt": "Two identical flagpoles fill the frame standing side by side on a bare open plaza, each holding a differently colored plain fabric banner fluttering gently, completely blank fabric with no emblems, no crests and no markings of any kind. Smaller and subordinate: a thin painted line dividing the plaza pavement exactly between the two poles; a single official-looking figure standing stiffly between them; a distant flock of birds crossing the sky. MOOD: formal, quietly tense."
+ },
+ {
+  "id": "kp-t-kolonialni-mocnost-asie",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Historie",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Která velmoc ovládala Korejský poloostrov jako svou kolonii od roku 1910 až do konce druhé světové války?",
+  "answer": "Japonsko",
+  "distractors": [
+   "Čína",
+   "Rusko",
+   "Spojené státy"
+  ],
+  "quip_correct": "Pětatřicet let pod cizí vlajkou — a hned po nich rozdělení na dvě další.",
+  "quip_wrong": "Rusko se do Koreje dostalo až později a jinak. Tahle kapitola patří jednoznačně jinému sousedovi.",
+  "explanation": "Okupace trvala pětatřicet let a skončila až porážkou Japonska ve druhé světové válce v roce 1945, po níž poloostrov okamžitě obsadily sovětské a americké jednotky.",
+  "about": "japonské okupaci Koreje",
+  "more_fact": "Během okupace museli Korejci přijímat japonská jména a ve školách se přestala vyučovat korejština — jazyk přežil hlavně díky domácí výuce.",
+  "irony_prompt": "A long stretch of an old railway track fills the frame cutting straight across a hilly landscape under a heavy grey sky, completely bare rail stones and wooden sleepers with no signs, no signals and no markings anywhere. Smaller and subordinate: a single rusted railway lantern hanging from a post; a few scattered gravel stones on the track bed; distant smoke rising from an unseen train. MOOD: somber, quietly historical."
+ },
+ {
+  "id": "kp-k-kogurjo-bojovnici-na-koni",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Historie",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Čím byli proslulí bojovníci starého korejského království Kogurjo?",
+  "answer": "Jízdní lukostřelbou",
+  "distractors": [
+   "Stavbou obrovských lodí",
+   "Chovem slonů do bitvy",
+   "Kováním brnění ze zlata"
+  ],
+  "quip_correct": "Trefa do černého! Šíp z koňského hřbetu — to chce nervy i rovnováhu zároveň.",
+  "quip_wrong": "Slony do bitvy vodili jinde v Asii. Kogurjští bojovníci vsadili na koně a luk.",
+  "explanation": "Bojovníci na koních uměli střílet přesně i v plném cvalu, což z nich dělalo obávanou jízdní sílu proti sousedním královstvím i cizím vetřelcům.",
+  "about": "starém království Kogurjo",
+  "more_fact": "Umění jízdní lukostřelby se dodnes připomíná na starých nástěnných malbách v hrobkách, kde jsou bojovníci zachyceni při plné rychlosti na koni.",
+  "irony_prompt": "A galloping horse fills the frame mid-stride across an open grassy plain, its rider leaning back with a drawn bow aimed skyward, both figure and horse rendered as simple silhouettes with no visible faces or markings. Smaller and subordinate: a small quiver of arrows strapped to the rider's back; a trailing cloud of dust behind the hooves; distant low hills on the horizon. MOOD: dynamic, heroic."
+ },
+ {
+  "id": "kp-s-vlajka-sjednoceni",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jak vypadá společná vlajka, kterou obě Koreje občas použily pro společné olympijské nebo sportovní týmy?",
+  "answer": "Modrá silueta celého poloostrova na bílém pozadí",
+  "distractors": [
+   "Zlatá hvězda mezi dvěma modrými pruhy",
+   "Červený kruh nad zeleným pohořím",
+   "Bílý drak na tmavě modrém poli"
+  ],
+  "quip_correct": "Jedna mapa, jedna barva, a najednou zmizí i ta čára uprostřed.",
+  "quip_wrong": "Hvězda mezi pruhy by šla spíš na nějakou úplně jinou národní vlajku — tahle je jednodušší a přímočařejší.",
+  "explanation": "Vlajka se poprvé použila v roce 1991 pro spojený tým na mistrovství světa ve stolním tenise a od té doby se objevila i na několika olympijských hrách.",
+  "about": "korejské sjednocovací vlajce",
+  "more_fact": "Vlajka nemá žádný oficiální status u žádné z obou vlád a používá se jen krátce a výhradně při konkrétních sportovních akcích.",
+  "irony_prompt": "A simple white flag fills the frame fluttering gently on a pole, bearing one plain solid blue silhouette shaped like a long narrow landmass stretching from top to bottom, completely blank fabric otherwise with no other emblems, stars or markings. Smaller and subordinate: a small flagpole rope tied in a neat knot at the base; two athletes' clasped hands raised just below the flag's edge, shown only from the wrist down; soft stadium light glow. MOOD: hopeful, ceremonial."
+ },
+ {
+  "id": "kp-t-cinska-intervence",
+  "cc": "kp",
+  "country": "Severní Korea",
+  "section": "Historie",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Která sousední velmoc vojensky zasáhla na straně Severní Koreje během korejské války?",
+  "answer": "Čína",
+  "distractors": [
+   "Rusko",
+   "Japonsko",
+   "Mongolsko"
+  ],
+  "quip_correct": "Miliony vojáků přes řeku, a fronta se najednou vrátila zpátky na jih.",
+  "quip_wrong": "Japonsko bylo v té době spíš pod dohledem USA, než aby samo posílalo armády přes hranice.",
+  "explanation": "Čínští dobrovolníci překročili hranici na podzim 1950 a zastavili postup jihokorejských a spojeneckých vojsk, čímž se fronta ustálila přibližně tam, kde je hranice dodnes.",
+  "about": "korejské válce",
+  "more_fact": "Číně se tehdy formálně říkalo, že jde jen o „dobrovolníky“, ne o pravidelnou armádu — i když bojovaly celé divize pod vlastním velením.",
+  "irony_prompt": "A wide frozen river fills the frame at dusk, countless small footprints and wheel tracks crossing its icy surface from one bank toward the other, completely bare banks with no flags, signs or markings anywhere. Smaller and subordinate: a single abandoned wooden cart wheel half-buried in snow near the bank; a thin plume of distant smoke rising beyond the treeline; a lone bird crossing the darkening sky. MOOD: tense, historical."
  }
 ]

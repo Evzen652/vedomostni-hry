@@ -960,7 +960,6 @@
   "section": "Jazyk & slova",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Vietnamské slovo „bơ“ má francouzský původ. Kterou potravinu označovalo původně?",
   "answer": "Máslo",
   "distractors": [
@@ -973,7 +972,8 @@
   "explanation": "Na jihu Vietnamu se stejným slovem říká i avokádu, protože jeho dužina je měkká a mazlavá podobně jako máslo.",
   "about": "slově bơ",
   "more_fact": "Francouzština zanechala ve vietnamštině stovky slov: nádraží je „ga“ podle gare, káva „cà phê“ podle café a polévka „súp“ podle soupe.",
-  "irony_prompt": "A giant golden block of butter fills the frame, standing on a Vietnamese street-food cart like a proud guest of honour and wearing a tiny beret, while a cheerful cook spreads it thickly onto a crusty baguette. Smaller and subordinate: a halved avocado looking offended at sharing its name, a scooter zipping by, a glass of iced coffee. MOOD: sunny, playful, cheerful."
+  "irony_prompt": "A giant golden block of butter fills the frame, standing on a Vietnamese street-food cart like a proud guest of honour and wearing a tiny beret, while a cheerful cook spreads it thickly onto a crusty baguette. Smaller and subordinate: a halved avocado looking offended at sharing its name, a scooter zipping by, a glass of iced coffee. MOOD: sunny, playful, cheerful.",
+  "online_only": true
  },
  {
   "id": "vn-s-vyvoz-koreni",
@@ -982,7 +982,6 @@
   "section": "Jídlo",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Kterého koření je Vietnam největším vývozcem na světě?",
   "answer": "Pepře",
   "distractors": [
@@ -995,7 +994,8 @@
   "explanation": "Většina úrody pochází z Centrální vysočiny a jižních provincií a Vietnam dnes vypěstuje víc tohohle koření než kterákoli jiná země.",
   "about": "vietnamském pepři",
   "more_fact": "Ostrov Phú Quốc je proslulý pepřovými plantážemi, kde se popínavé rostliny pepře šplhají po vysokých dřevěných kůlech jako chmel.",
-  "irony_prompt": "A towering mountain of round black peppercorns fills the frame, spilling out of a farmer's cone-shaped straw hat onto a harbour dock, while a crane lifts a huge plain unmarked sack of them onto a plain unmarked cargo ship. Smaller and subordinate: a sailor mid-sneeze, green pepper vines climbing tall wooden poles in the background, a small cat sneezing too. MOOD: comic, sunny, cheerful."
+  "irony_prompt": "A towering mountain of round black peppercorns fills the frame, spilling out of a farmer's cone-shaped straw hat onto a harbour dock, while a crane lifts a huge plain unmarked sack of them onto a plain unmarked cargo ship. Smaller and subordinate: a sailor mid-sneeze, green pepper vines climbing tall wooden poles in the background, a small cat sneezing too. MOOD: comic, sunny, cheerful.",
+  "online_only": true
  },
  {
   "id": "vn-s-nejstarsi-narodni-park",
@@ -1004,7 +1004,6 @@
   "section": "Příroda",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Který vietnamský národní park je v zemi nejstarší, vyhlášený už roku 1962?",
   "answer": "Cuc Phuong",
   "distractors": [
@@ -1017,7 +1016,8 @@
   "explanation": "Park leží v krasových horách na severu země a funguje v něm záchranné centrum pro ohrožené primáty, například vzácné langury.",
   "about": "národním parku Cuc Phuong",
   "more_fact": "Strom zvaný Tisíciletý tu měří kolem 45 metrů a na obejmutí kmene by bylo potřeba asi dvacet lidí. Stářím uschl, ale pořád stojí a chodí se na něj dívat.",
-  "irony_prompt": "An ancient giant rainforest tree with huge buttress roots fills the frame in a misty limestone jungle, wearing a plain gold medal on its bark like a proud veteran, while a family of black-and-white langur monkeys sits on its branches holding a small cake with one candle. Smaller and subordinate: a cloud of butterflies, a jagged limestone peak in the mist, a turtle carrying a tiny backpack. MOOD: cheerful, lush, whimsical."
+  "irony_prompt": "An ancient giant rainforest tree with huge buttress roots fills the frame in a misty limestone jungle, wearing a plain gold medal on its bark like a proud veteran, while a family of black-and-white langur monkeys sits on its branches holding a small cake with one candle. Smaller and subordinate: a cloud of butterflies, a jagged limestone peak in the mist, a turtle carrying a tiny backpack. MOOD: cheerful, lush, whimsical.",
+  "online_only": true
  },
  {
   "id": "vn-s-novorocni-kolac",
@@ -1026,7 +1026,6 @@
   "section": "Kultura & tradice",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Co podle tradice představuje čtvercový tvar koláče bánh chưng, který se připravuje na svátek Tet?",
   "answer": "Zemi",
   "distractors": [
@@ -1039,6 +1038,860 @@
   "explanation": "Podle legendy vymyslel koláč princ Lang Liêu, který neměl na drahé dary, a tak otci uvařil obyčejnou rýži – a právě tím získal trůn.",
   "about": "koláči bánh chưng",
   "more_fact": "Koláč se balí do listů rostliny dong, které mu dají zelenou barvu, a vaří se klidně deset až dvanáct hodin; rodiny u hrnce často bdí celou noc.",
-  "irony_prompt": "A large square green parcel cake wrapped in leaves and tied with bamboo strings fills the frame, sitting on a table like a tiny planet with miniature mountains, rivers and rice fields growing on its top, while a round white rice cake floats above it like a moon. Smaller and subordinate: a family peering in amazement, a big pot steaming over a fire, peach blossom branches. MOOD: festive, magical, cheerful."
+  "irony_prompt": "A large square green parcel cake wrapped in leaves and tied with bamboo strings fills the frame, sitting on a table like a tiny planet with miniature mountains, rivers and rice fields growing on its top, while a round white rice cake floats above it like a moon. Smaller and subordinate: a family peering in amazement, a big pot steaming over a fire, peach blossom branches. MOOD: festive, magical, cheerful.",
+  "online_only": true
+ },
+ {
+  "id": "vn-k-schovana-sit",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve Vietnamu lidé kdysi vlastníma rukama vyhrabali dlouhé podzemní chodby, kterými se dalo procházet i plazit. Jak se tahle podzemní síť jmenuje?",
+  "answer": "Tunely Cu Chi",
+  "distractors": [
+   "Jeskyně Phong Nha",
+   "Sklepení Hue",
+   "Chodby pod Hanojí"
+  ],
+  "quip_correct": "Paráda! Trefa přesně do zdi tunelu.",
+  "quip_wrong": "Ne, to se schovává jinde. Tahle síť chodeb je pod Cu Chi.",
+  "explanation": "Chodby se táhnou mnoho kilometrů pod zemí a sloužily venkovanům jako úkryt i tajná cesta.",
+  "about": "tunelech Cu Chi",
+  "more_fact": "Dnes si část tunelů můžeš prohlédnout jako turista – některé chodby se dokonce rozšířily, aby se do nich vešli i vyšší návštěvníci ze zahraničí.",
+  "irony_prompt": "A single round dark tunnel entrance hidden among dense green jungle leaves and ferns, fills the frame, entrance opening shaped like a small dark circle in the earth, warm sunbeam falling across the opening. Smaller and subordinate: a curious rabbit peeking out of a similar smaller hole nearby, a few fallen leaves scattered on the ground. MOOD: curious, adventurous, earthy."
+ },
+ {
+  "id": "vn-k-zlata-opicka",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na vietnamském ostrově Cat Ba žije vzácná opička se zlatavou hlavou, která se nenajde nikde jinde na světě. Jak se jí říká?",
+  "answer": "Langur ostrova Cat Ba",
+  "distractors": [
+   "Makak z Ha Long",
+   "Lemur z Mekongu",
+   "Gibon ze Sapy"
+  ],
+  "quip_correct": "Zlatá hlava, přesná odpověď.",
+  "quip_wrong": "Tahle opička žije jen na Cat Ba, ne tam, kam jsi ukázal.",
+  "explanation": "Na celém světě jich zbylo jen pár desítek, takže je to jedna z nejohroženějších opic planety.",
+  "about": "langurovi z ostrova Cat Ba",
+  "more_fact": "Languři tráví většinu času vysoko ve skalách a listoví, a i proto je tak těžké je spočítat nebo vůbec zahlédnout.",
+  "irony_prompt": "A single fluffy monkey with a strikingly golden-orange head and dark body, perched on a limestone rock ledge, fills the frame, looking curiously at the viewer. Smaller and subordinate: green jungle foliage draping down the rock, a small bird resting on a branch nearby. MOOD: charming, gentle, wild."
+ },
+ {
+  "id": "vn-k-podzimni-lampiony",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na podzim slaví vietnamské děti svátek s lampiony a sladkými koláčky plněnými například fazolovou pastou. Jak se tomu svátku říká?",
+  "answer": "Tet Trung Thu",
+  "distractors": [
+   "Tet Nguyen Dan",
+   "Svátek draka",
+   "Den lampionu"
+  ],
+  "quip_correct": "Koláček za správnou odpověď!",
+  "quip_wrong": "Blízko, ale tenhle svátek s lampiony se jmenuje jinak.",
+  "explanation": "Děti při něm chodí s lampiony ve tvaru zvířat nebo hvězd a někdy i s maskou lví tanečnice.",
+  "about": "svátku Tet Trung Thu",
+  "more_fact": "Svátek se slaví za úplňku uprostřed podzimu a kdysi měl rodičům připomenout, aby si i přes žně udělali čas na vlastní děti.",
+  "irony_prompt": "A single glowing paper lantern shaped like a bright star, fills the frame, warm orange light shining through its paper panels against a deep blue evening sky. Smaller and subordinate: a round pale mooncake resting on a small plate below, two smaller lanterns shaped like fish glowing softly in the background. MOOD: warm, festive, cozy."
+ },
+ {
+  "id": "vn-k-krupava-placka",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Vietnamská křupavá placka z rýžové mouky se plní masem, krevetami a klíčky a nakonec se složí na půl jako malý měsíček. Jak se jí říká?",
+  "answer": "Banh xeo",
+  "distractors": [
+   "Banh mi",
+   "Pho cuon",
+   "Nem ran"
+  ],
+  "quip_correct": "Křupavá trefa, rovnou do půlměsíce!",
+  "quip_wrong": "Tahle placka se jmenuje jinak – a je zlatá a křupavá.",
+  "explanation": "Placka praská, protože se smaží na velmi rozpálené pánvi a její název doslova znamená ‚sykot‘ podle zvuku při smažení.",
+  "about": "banh xeo",
+  "more_fact": "Kousky placky se obvykle nejedí rovnou, ale nejdřív se zabalí do listu salátu nebo bylinky a teprve pak namočí do omáčky.",
+  "irony_prompt": "A single golden crispy folded half-moon shaped pancake, fills the frame, resting on a plain banana leaf, steam rising gently from its crisp edges. Smaller and subordinate: a few fresh green herb leaves scattered beside it, a small bowl of pale dipping sauce nearby. MOOD: appetizing, warm, simple."
+ },
+ {
+  "id": "vn-k-bat-trang",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve vesnici Bat Trang blízko Hanoje už stovky let vyrábí řemeslníci ručně malované hrnčířské nádoby. Jakou barvu mají jejich nejznámější výrobky nejčastěji?",
+  "answer": "Modrobílou",
+  "distractors": [
+   "Červenozlatou",
+   "Černostříbrnou",
+   "Zelenohnědou"
+  ],
+  "quip_correct": "Modrobílá trefa rovnou z pece!",
+  "quip_wrong": "Zkus to jinou barvou – tahle vesnice maluje jinak.",
+  "explanation": "Řemeslníci nejprve vytvarují nádobu z hlíny, pak ji ručně namalují štětcem a teprve potom vypálí v peci.",
+  "about": "keramice z vesnice Bat Trang",
+  "more_fact": "Vesnice Bat Trang stojí na břehu Rudé řeky, protože loďmi se odtud dala hlína i hotové nádobí snadno dopravit do celé oblasti.",
+  "irony_prompt": "A single elegant blue-and-white ceramic vase with painted floral swirls, fills the frame, standing on a simple wooden shelf. Smaller and subordinate: a small paintbrush resting beside it, a plain round ceramic bowl nearby. MOOD: calm, traditional, delicate."
+ },
+ {
+  "id": "vn-k-zpivajici-papir",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Sport",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve vietnamských vesnicích se pořádají soutěže s velkými papírovými draky, kteří ve větru sami vydávají tichý zpěvavý zvuk. Čím to je?",
+  "answer": "Malou píšťalkou přivázanou k dracímu tělu",
+  "distractors": [
+   "Zvonečky na ocase draka",
+   "Bubínkem uvnitř draka",
+   "Píšťalkou v ruce toho, kdo drak pouští"
+  ],
+  "quip_correct": "Přesně tak, drak si zpívá sám!",
+  "quip_wrong": "Skoro, ale zvuk nevydává tohle – drak zpívá jinak.",
+  "explanation": "Vítr prohání vzduch skrz malou bambusovou píšťalku připevněnou na draku a ten pak nad vesnicí tiše hučí.",
+  "about": "vietnamských zpívajících dracích",
+  "more_fact": "Někteří draci jsou tak velcí, že je musí držet a pouštět několik lidí najednou, a létají klidně celý den nad polem.",
+  "irony_prompt": "A single enormous colorful kite shaped like a long diamond, fills the frame, soaring high against a bright blue sky with a few wispy clouds. Smaller and subordinate: a thin taut string trailing down and out of frame, a small bamboo whistle shape attached near its tail. MOOD: joyful, breezy, playful."
+ },
+ {
+  "id": "vn-k-tonove-znamenka",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Ve vietnamských slovech vidíš nad písmeny malé čárky, tečky a háčky. K čemu vietnamštině slouží?",
+  "answer": "Ukazují, jak se má slovo zpívavě vyslovit",
+  "distractors": [
+   "Označují, že je slovo v množném čísle",
+   "Ukazují, kde je slovo přejaté z jiného jazyka",
+   "Značí, jak staré slovo je"
+  ],
+  "quip_correct": "Přesně, ty značky zpívají celé slovo!",
+  "quip_wrong": "Ne, ty značky neříkají tohle – poslouchej, co dělají s hlasem.",
+  "explanation": "Stejné slovo napsané se stejnými písmeny, ale s jiným znamínkem nahoře, může znamenat úplně jinou věc.",
+  "about": "vietnamských tónových znaménkách",
+  "more_fact": "Ve vietnamském textu bývá znamínek tolik, že se stránka na první pohled hemží drobnými čárkami nad skoro každým slovem.",
+  "irony_prompt": "A single songbird perched on a bamboo branch with its beak open wide mid-song, fills the frame, throat puffed, head tilted back. Smaller and subordinate: a second smaller bird listening quietly on a lower branch, a few bamboo leaves swaying. MOOD: musical, lively, cheerful."
+ },
+ {
+  "id": "vn-k-zelene-schody",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "V horách kolem vesnice Sa Pa vypadají zelená rýžová pole jako obrovské schody vyřezané do svahu. Jak se takovým polím říká?",
+  "answer": "Terasovitá pole",
+  "distractors": [
+   "Plovoucí pole",
+   "Kobercová pole",
+   "Věžová pole"
+  ],
+  "quip_correct": "Přesně, schod za schodem až k oblakům!",
+  "quip_wrong": "Ne tak úplně – tahle pole vypadají jako schody, ne jako tohle.",
+  "explanation": "Voda z jednoho schodu pole přetéká do dalšího níž, takže se celý svah zavlažuje sám, schod po schodu.",
+  "about": "terasovitých polích v Sa Pa",
+  "more_fact": "Některá z těchto polí vytvářeli místní lidé motykou a ručně po mnoho generací, takže jsou stará stovky let.",
+  "irony_prompt": "A single vast green hillside carved into countless stair-like terraces, fills the frame, curving gracefully down a misty mountain slope, morning fog drifting low. Smaller and subordinate: a lone water buffalo grazing on one terrace, a thin winding dirt path along the edge. MOOD: serene, majestic, fresh."
+ },
+ {
+  "id": "vn-k-koreny-nad-vodou",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na úplném jihu Vietnamu, v Ca Mau, rostou stromy přímo ve slané mořské vodě a jejich kořeny vyčnívají nad hladinu jako pařáty. Jak se takovému lesu říká?",
+  "answer": "Mangrovový les",
+  "distractors": [
+   "Bambusový les",
+   "Korálový les",
+   "Palmový les"
+  ],
+  "quip_correct": "Přesně, kořeny jako pařáty a je to!",
+  "quip_wrong": "Ne, tenhle les se slanou vodou nebojí jinak – zkus mangrovník.",
+  "explanation": "Kořeny pomáhají stromu dýchat i v bahně bez kyslíku a zároveň chrání pobřeží před vlnami a bouřkami.",
+  "about": "mangrovových lesích Ca Mau",
+  "more_fact": "V mangrovovém bahně se schovávají krabi a malé ryby, které umí přežít i chvíli mimo vodu, dokud se hladina zase nezvedne.",
+  "irony_prompt": "A single gnarled mangrove tree with tall arching stilt-like roots rising out of calm shallow water, fills the frame, dense green leaves above. Smaller and subordinate: a small crab resting on one of the exposed roots, a tiny fish fin breaking the water surface nearby. MOOD: wild, peaceful, mysterious."
+ },
+ {
+  "id": "vn-k-obalka-se-stestim",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na vietnamský Nový rok dávají dospělí dětem peníze zabalené v malé papírové obálce jedné konkrétní barvy. Jaké barvy ta obálka je?",
+  "answer": "Červené",
+  "distractors": [
+   "Zlaté",
+   "Bílé",
+   "Zelené"
+  ],
+  "quip_correct": "Červená trefa, šťastný nový rok!",
+  "quip_wrong": "Ne tahle barva – zkus barvu, která má přinášet štěstí.",
+  "explanation": "Obálka se dětem dává hned po přání a tomu, kdo ji dostane, má podle tradice přinést do nového roku štěstí.",
+  "about": "červených obálkách s novoročními penízi",
+  "more_fact": "Obálky se často zdobí zlatými znaky nebo obrázky, a čím starší je člověk, který obálku dává, tím víc se to ve Vietnamu považuje za slušné.",
+  "irony_prompt": "A single small bright red paper envelope, fills the frame, resting on an open child's palm, soft golden light. Smaller and subordinate: a small blooming yellow flower branch in the background, a few scattered petals on a table. MOOD: cheerful, warm, festive."
+ },
+ {
+  "id": "vn-k-goi-cuon",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Vietnamské jarní závitky goi cuon se nesmaží, ale zabalí syrové do tenkého kulatého plátku. Z čeho je ten plátek, kterým se závitek obtočí?",
+  "answer": "Z rýžového papíru",
+  "distractors": [
+   "Z pšeničné placky",
+   "Z listu salátu",
+   "Z banánového listu"
+  ],
+  "quip_correct": "Přesně, rýžový papír a je to zabalené!",
+  "quip_wrong": "Skoro, ale obal je z něčeho jiného – zkus rýžový papír.",
+  "explanation": "Plátek rýžového papíru se před balením krátce namočí do vody, aby zvláčnil a dal se snadno stočit kolem náplně.",
+  "about": "vietnamských jarních závitcích goi cuon",
+  "more_fact": "Dovnitř se obvykle dává nudle, krevety nebo maso a čerstvé bylinky, takže každý závitek chutná trochu jinak.",
+  "irony_prompt": "A single translucent rolled spring roll, fills the frame, resting on a plain white plate, pink shrimp and green herbs visible faintly through its pale wrapping. Smaller and subordinate: a small bowl of dipping sauce beside it, a single mint leaf on the plate. MOOD: fresh, light, appetizing."
+ },
+ {
+  "id": "vn-k-tanec-se-zvirem",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na vietnamských svátcích tančí dva lidé schovaní pod barevnou látkou tak, aby vypadali jako jedno velké zvíře, co skáče a klape zubama. Jaké zvíře to představuje?",
+  "answer": "Lva",
+  "distractors": [
+   "Draka",
+   "Tygra",
+   "Slona"
+  ],
+  "quip_correct": "Přesně, dva tanečníci a jeden hlučný lev!",
+  "quip_wrong": "Ne tohle zvíře – zkus to, co má velkou klapající hlavu a skáče do rytmu bubnu.",
+  "explanation": "Tanec doprovázejí bubny a činely, protože hlasitý rachot má podle tradice zahnat zlé duchy.",
+  "about": "vietnamském tanci lva",
+  "more_fact": "Kostým lva má obvykle jasně červenou a zlatou barvu a jeho hlava bývá tak velká a těžká, že ji tanečník musí držet oběma rukama.",
+  "irony_prompt": "A single vibrant red-and-gold lion dance costume head with big round eyes and an open snapping mouth, fills the frame, mid-jump above a street. Smaller and subordinate: a small drum resting nearby, confetti-like paper scraps scattered on the ground. MOOD: energetic, colorful, festive."
+ },
+ {
+  "id": "vn-k-lac-long-quan",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Lidé",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Podle staré vietnamské pověsti se dračí král Lac Long Quan zamiloval do víly jménem Au Co a společně měli syny, ze kterých je dnes celý vietnamský národ. Co se pak s rodinou podle pověsti stalo?",
+  "answer": "Rozdělili se a půlka dětí odešla s matkou do hor, půlka s otcem k moři",
+  "distractors": [
+   "Celá rodina zůstala navždy spolu na jednom ostrově",
+   "Otec odešel sám a matka zůstala s dětmi v horách",
+   "Děti se proměnily v hejno ptáků a odletěly"
+  ],
+  "quip_correct": "Přesně, hory i moře mají podle pověsti svůj díl.",
+  "quip_wrong": "Ne takhle to podle pověsti skončilo – rodina se rozdělila jinak.",
+  "explanation": "Pověst tak podle tradice vysvětluje, proč mají horalé i lidé žijící u moře ve Vietnamu společné dávné předky.",
+  "about": "Lac Long Quanovi a Au Co",
+  "more_fact": "Vietnamci si díky téhle pověsti dodnes někdy říkají ‚děti draka a víly‘, i když jde jen o starou pohádku, ne o skutečnou historii.",
+  "irony_prompt": "A single pair of small paths diverging in a green landscape, one path winding up toward misty mountains, the other curving down toward a calm sea, fills the frame, seen from above. Smaller and subordinate: a tiny dragon-shaped cloud drifting above the mountain path, a single lotus flower floating near the sea path. MOOD: magical, gentle, wondrous."
+ },
+ {
+  "id": "vn-t-phong-nha",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Do jeskyně Phong Nha v národním parku Phong Nha-Ke Bang se návštěvníci dostanou přímo po řece, na lodi. Čím jeskyně kromě toho vyniká?",
+  "answer": "Patří mezi nejstarší velké krasové jeskyně v Asii",
+  "distractors": [
+   "Je jedinou jeskyní ve Vietnamu s podzemním jezerem",
+   "Je jedinou jeskyní v Asii bez netopýrů",
+   "Je nejhlubší jeskyní na světě"
+  ],
+  "quip_correct": "Přesně, stáří je tu ta hlavní trofej.",
+  "quip_wrong": "Ne tahle vlastnost – zkus to se stářím jeskyně.",
+  "explanation": "Řeka, která jeskyní protéká, ji po miliony let vymodelovala do současného tvaru a pořád ji dál pomalu opracovává.",
+  "about": "jeskyni Phong Nha",
+  "more_fact": "Celý národní park skrývá stovky jeskyní a chodeb, ale jen malá část z nich je dodnes prozkoumaná a zmapovaná.",
+  "irony_prompt": "A single small wooden boat gliding into a vast dark limestone cave mouth from a calm river, fills the frame, dramatic light streaming in from outside the cave entrance behind it. Smaller and subordinate: a lone paddler silhouette in the boat, jagged rock formations framing the cave opening above. MOOD: awe-inspiring, mysterious, serene."
+ },
+ {
+  "id": "vn-t-otacive-pocasi",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Příroda",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Vietnamské počasí řídí hlavně jeden jev, který se každý rok otočí a přinese buď suché, nebo naopak vytrvale deštivé měsíce. Jak se mu říká?",
+  "answer": "Monzun",
+  "distractors": [
+   "Golfský proud",
+   "Jetstream",
+   "El Niňo"
+  ],
+  "quip_correct": "Přesně, monzun si to tam otočí jako kalendář.",
+  "quip_wrong": "Ne tenhle jev – zkus to s pravidelně se otáčejícím větrem.",
+  "explanation": "Sever a jih země navíc tenhle jev zasahuje v jinou dobu, takže se prakticky nikdy nestane, že by celý Vietnam zažíval stejné počasí.",
+  "about": "vietnamských monzunech",
+  "more_fact": "Jev vzniká tím, že se pevnina a moře v různých ročních obdobích ohřívají a chladnou různě rychle, což roztáčí obrovské vzdušné proudy.",
+  "irony_prompt": "A single dramatic dark rain cloud pouring heavy rain over half of a green rice landscape, fills the frame, while the other half of the same field basks under clear golden sunlight, sharp visible divide between the two weather zones. Smaller and subordinate: a single distant palm tree bending slightly in the wind, a puddle reflecting the sky. MOOD: dramatic, dynamic, natural."
+ },
+ {
+  "id": "vn-t-quang-trung",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Lidé",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Vietnamský vojevůdce a císař Nguyen Hue, známý jako Quang Trung, roku 1789 překvapivě rychlým tažením porazil vojsko jiné velmoci. Které?",
+  "answer": "Čínské říše Čching",
+  "distractors": [
+   "Francouzského císařství",
+   "Siamského království",
+   "Japonského šógunátu"
+  ],
+  "quip_correct": "Přesně, Čching si tenkrát rychlost nenaplánovali.",
+  "quip_wrong": "Ne tahle velmoc – zkus to s čínskou dynastií Čching.",
+  "explanation": "Vojsko podle legendy urazilo stovky kilometrů v řádu dní, aby útočníky zaskočilo ještě během novoročních oslav.",
+  "about": "císaři Quang Trungovi",
+  "more_fact": "Quang Trung zemřel jen pár let po svém vítězství a jeho náhlá smrt zastavila plány na další reformy, které chtěl v zemi prosadit.",
+  "irony_prompt": "A single determined mounted general figure seen only from behind in silhouette, cloak billowing, riding forward across a misty battlefield hill at dawn, fills the frame. Smaller and subordinate: a distant line of upright spears standing in the mist, low fog swirling over the empty ground. MOOD: dramatic, heroic, solemn."
+ },
+ {
+  "id": "vn-t-ao-dai-skolni",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "V mnoha vietnamských středních školách nosí dívky jako součást uniformy bílou verzi tradičního oděvu áo dài. Co si k ní obvykle obouvají?",
+  "answer": "Bílé sandály nebo baleríny",
+  "distractors": [
+   "Vysoké kožené holínky",
+   "Dřevěné sandály na vysokém klínu",
+   "Sportovní tenisky s vysokou podrážkou"
+  ],
+  "quip_correct": "Přesně, jednoduché a bílé, jako celá uniforma.",
+  "quip_wrong": "Ne tahle obuv – k bílému áo dài se hodí něco jednoduššího.",
+  "explanation": "Bílá barva uniformy má symbolizovat čistotu a nevinnost studentského věku, proto ji nosí právě dívky na středních školách.",
+  "about": "školním áo dài",
+  "more_fact": "Mimo školu se áo dài dnes nosí hlavně na svátky nebo významné události, v běžném dni ho většina lidí vymění za pohodlnější oblečení.",
+  "irony_prompt": "A single flowing white traditional long tunic dress on an invisible mannequin form, fills the frame, fabric gently swaying as if caught by a breeze, soft morning light. Smaller and subordinate: a pair of simple white flat sandals placed neatly below it, a bicycle wheel visible at the very edge of frame. MOOD: graceful, fresh, youthful."
+ },
+ {
+  "id": "vn-t-dan-bau",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Umění",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Vietnamský hudební nástroj dan bau má jen jednu jedinou strunu, a přesto z něj hráč vyloudí bohatou škálu tónů. Čím to dosahuje?",
+  "answer": "Ohýbáním tyčky připevněné ke struně",
+  "distractors": [
+   "Přidržováním prstů na hmatníku jako u kytary",
+   "Foukáním do dutého těla nástroje",
+   "Otáčením malého kolečka pod strunou"
+  ],
+  "quip_correct": "Přesně, jedna struna a spousta triků s tyčkou.",
+  "quip_wrong": "Ne tenhle způsob – zkus to s ohýbáním té tyčky.",
+  "explanation": "Ohýbáním tyčky se mění napětí struny, takže nástroj umí i tóny, které plynule sklouznou nahoru a dolů, podobně jako lidský hlas.",
+  "about": "nástroji dan bau",
+  "more_fact": "Nástroj se dřív používal hlavně k doprovodu zpěvu slepých pouličních vypravěčů, protože jeho zvuk připomíná tesknou lidskou melodii.",
+  "irony_prompt": "A single long wooden single-stringed instrument resting horizontally, fills the frame, one taut string running its length with a thin curved rod rising from one end. Smaller and subordinate: a small carved gourd resonator at one tip, a faint soft warm spotlight glow. MOOD: soulful, elegant, quiet."
+ },
+ {
+  "id": "vn-t-fotbal-mania",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Sport",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Když vietnamský fotbalový národní tým vyhraje důležitý zápas, co se typicky odehrává v ulicích velkých měst hned potom?",
+  "answer": "Tisíce lidí vyjedou na motorkách do ulic a slaví s vlajkami",
+  "distractors": [
+   "Obchody zavřou na celý následující den",
+   "Vyhlásí se státní svátek na uctění hráčů",
+   "Lidé zůstávají doma a slaví jen v rodinném kruhu"
+  ],
+  "quip_correct": "Přesně, motorky, klaksony a vlajky všude.",
+  "quip_wrong": "Ne tahle reakce – zkus to s davem na motorkách v ulicích.",
+  "explanation": "Ulice bývají tak narvané motorkami a houkajícími klaksony, že se auty prakticky nedá projet celé hodiny po zápase.",
+  "about": "vietnamské fotbalové vášni",
+  "more_fact": "Fotbal je ve Vietnamu zdaleka nejsledovanější sport a i malé dětské týmy z vesnic dokážou naplnit hřiště nadšenými diváky.",
+  "irony_prompt": "A single jubilant crowd riding motorbikes packed closely together down a city street at night, fills the frame, waving small plain red-and-yellow flags high above their heads, headlights glowing. Smaller and subordinate: confetti-like paper scraps floating in the air, a string of colorful string lights overhead. MOOD: jubilant, electric, festive."
+ },
+ {
+  "id": "vn-t-slovo-ty-podle-vztahu",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jazyk & slova",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Ve vietnamštině se místo slova „ty“ často používá slovo podle toho, v jakém vztahu a věku je mluvčí k druhému člověku. Co to v praxi znamená?",
+  "answer": "Starší sestru osloví jinak než třeba strýce nebo kamaráda",
+  "distractors": [
+   "Každý člověk má ve vietnamštině svoje vlastní jedinečné jméno pro ‚ty‘",
+   "Slovo ‚ty‘ se ve vietnamštině vůbec nepoužívá",
+   "Slovo ‚ty‘ se mění jen podle toho, jak je věta dlouhá"
+  ],
+  "quip_correct": "Přesně, oslovení je celá rodinná mapa.",
+  "quip_wrong": "Ne tak úplně – zkus to s rozdílem podle věku a vztahu.",
+  "explanation": "Tahle slova původně znamenají skutečné rodinné vztahy jako ‚starší sestra‘ nebo ‚strýc‘, a teprve druhotně nahrazují obyčejné ‚ty‘.",
+  "about": "vietnamském oslovování podle věku",
+  "more_fact": "Cizinec, který se vietnamštinu učí, si musí nejdřív odhadnout věk a vztah k druhému člověku, a teprve pak vybrat správné slovo pro oslovení.",
+  "irony_prompt": "A single warm family dinner table scene viewed from above, fills the frame, showing hands of different ages reaching toward shared dishes of food, arranged by seating in a clear age order around the table. Smaller and subordinate: a pair of chopsticks resting on each small plate, steam rising gently from a central bowl. MOOD: warm, familial, cozy."
+ },
+ {
+  "id": "vn-t-bun-cha",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Hanojská polévka bun cha se od slavnější pho liší hlavně tím, že maso se nevaří ve vývaru, ale jinak. Jak?",
+  "answer": "Griluje se nad žhavým uhlím",
+  "distractors": [
+   "Smaží se na hluboké pánvi v oleji",
+   "Peče se dlouho v hliněné peci",
+   "Marinuje se syrové a jí se bez ohně"
+  ],
+  "quip_correct": "Přesně, uhlí a kouř dělají tu chuť.",
+  "quip_wrong": "Ne takhle – to maso se připravuje nad žhavým uhlím.",
+  "explanation": "Grilované maso se navíc nepolévá vývarem jako u pho, ale namáčí do samostatné misky se sladkokyselou omáčkou.",
+  "about": "polévce bun cha",
+  "more_fact": "Jeden bývalý americký prezident si tohle jídlo v Hanoji dal osobně s televizním kuchařem u nízkého plastového stolku na ulici.",
+  "irony_prompt": "A single sizzling grill rack with skewered pieces of pork over glowing red charcoal, fills the frame, thin wisps of smoke curling upward. Smaller and subordinate: a small bowl of pale dipping broth beside the grill, a few fresh herb leaves scattered nearby. MOOD: smoky, appetizing, rustic."
+ },
+ {
+  "id": "vn-t-zenevske-dohody",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Po porážce Francouzů u Dien Bien Phu podepsaly velmoci roku 1954 dohody, které Vietnam rozdělily na dvě části. Podle čeho byla hranice vedena?",
+  "answer": "Podle 17. rovnoběžky",
+  "distractors": [
+   "Podle toku řeky Mekong",
+   "Podle bývalé francouzsko-čínské hranice",
+   "Podle pohoří uprostřed země"
+  ],
+  "quip_correct": "Přesně, čára na mapě, žádná řeka ani hora.",
+  "quip_wrong": "Ne podle tohoto – hranici vedla rovná zeměpisná čára.",
+  "explanation": "Dohody měly rozdělení označit jen jako dočasné do budoucích voleb, ty se ale nikdy neuskutečnily a rozdělení vydrželo o dvě desetiletí déle.",
+  "about": "Ženevských dohodách z roku 1954",
+  "more_fact": "Kolem hranice vznikla odzbrojená pásová zóna, kterou po další dvě desetiletí hlídaly jednotky z obou rozdělených částí země.",
+  "irony_prompt": "A single thin straight line drawn across a simple green map-like landscape from left to right, fills the frame, splitting the land visibly into two subtly different shades of green. Smaller and subordinate: a lone small bird flying across the dividing line, a winding river crossing underneath it at an angle. MOOD: solemn, quiet, symbolic."
+ },
+ {
+  "id": "vn-t-mramorove-hory",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Poblíž Da Nangu stojí pětice vápencových a mramorových kopců, uvnitř kterých se skrývají jeskyně s buddhistickými svatyněmi. Podle čeho jsou tyto kopce pojmenované?",
+  "answer": "Podle pěti základních živlů",
+  "distractors": [
+   "Podle pěti vietnamských dynastií",
+   "Podle pěti barev vietnamské vlajky",
+   "Podle pěti řek, které se tam setkávají"
+  ],
+  "quip_correct": "Přesně, kov, dřevo, voda, oheň a země.",
+  "quip_wrong": "Ne podle tohoto – zkus to s pěti živly.",
+  "explanation": "Každý z pěti kopců nese jméno jednoho živlu – třeba kov, dřevo, voda, oheň nebo země – podle staré čínské filozofie.",
+  "about": "Mramorových horách u Da Nangu",
+  "more_fact": "Uvnitř kopců vedou úzké schody a tunely až k jeskynním svatyním, ze kterých je vidět daleko na moře i na celé město.",
+  "irony_prompt": "A single tall craggy marble hill with a dark cave opening near its base, fills the frame, a narrow stone stairway carved into its side leading upward, tropical trees at its foot. Smaller and subordinate: a faint golden statue silhouette glimpsed deep inside the cave opening, a bird circling near the peak. MOOD: mystical, grand, serene."
+ },
+ {
+  "id": "vn-t-barvy-noveho-roku",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Na severu Vietnamu si lidé na Nový rok Tet zdobí dům větvičkami jednoho květu, na jihu zase většinou jiného. Jaký květ je typický pro sever?",
+  "answer": "Růžový broskvoňový květ",
+  "distractors": [
+   "Žlutý květ mai",
+   "Bílý květ lotosu",
+   "Červený květ hibiškusu"
+  ],
+  "quip_correct": "Přesně, na severu kvete růžová broskvoň.",
+  "quip_wrong": "Ne tenhle květ – na severu kvete něco jiného.",
+  "explanation": "Na jihu země se naopak zdobí větvičkami žlutého květu mai, protože žlutá barva má na jihu přinášet bohatství a štěstí.",
+  "about": "novoročních květinách na Tet",
+  "more_fact": "Těsně před svátkem bývají tržnice s těmito rozkvetlými větvičkami tak narvané, že si lidé raději kupují celý stromek už několik dní předem.",
+  "irony_prompt": "A single blooming pink peach blossom branch standing in a tall simple vase, fills the frame, delicate pink petals catching warm light. Smaller and subordinate: a few loose fallen petals scattered on the floor nearby, a small orange citrus fruit resting at the base of the vase. MOOD: festive, delicate, hopeful."
+ },
+ {
+  "id": "vn-t-souboj-buvolu",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Ve městě Do Son se každý rok konají slavnosti, při kterých proti sobě soutěží vybraní vodní buvoli. Co se stane s vítězným buvolem po skončení souboje?",
+  "answer": "Podle tradice se z něj připraví obětní maso",
+  "distractors": [
+   "Stane se maskotem města na celý další rok",
+   "Dostane zlatý věnec a žije dál jako oslavovaná hvězda",
+   "Vrátí se ke svému chovateli a dál pracuje na poli"
+  ],
+  "quip_correct": "Přesně, vítězství tu končí smutně poeticky.",
+  "quip_wrong": "Ne takhle – osud vítězného buvola je jiný.",
+  "explanation": "Maso z vítězného buvola se podle staré tradice rozdělí mezi obyvatele města, protože má přinést celé komunitě štěstí a dobrou úrodu.",
+  "about": "slavnostech souboje buvolů v Do Son",
+  "more_fact": "Buvoli se na souboj cvičí a speciálně krmí celý rok předem, a chovatelé jim před slavností pilují rohy do špičky.",
+  "irony_prompt": "A single powerful water buffalo standing proudly in a wide dusty arena, fills the frame, muscular build, head held high, morning light on its dark hide. Smaller and subordinate: a simple woven rope halter draped over a fence post nearby, a small blurred crowd of distant spectators at the arena edge. MOOD: proud, earthy, ceremonial."
+ },
+ {
+  "id": "vn-t-quan-ho",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Umění",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Tradiční severovietnamský zpěv quan ho se obvykle zpívá ve dvou skupinách, které si odpovídají jedna druhé. Z koho se tyto skupiny obvykle skládají?",
+  "answer": "Z mladých mužů a žen z různých vesnic",
+  "distractors": [
+   "Jen z profesionálních zpěváků z Hanoje",
+   "Jen z mnichů z místního chrámu",
+   "Jen ze starších obyvatel jedné vesnice"
+  ],
+  "quip_correct": "Přesně, chlapci proti dívkám, vesnice proti vesnici.",
+  "quip_wrong": "Ne tihle zpěváci – zkus to s mladými z různých vesnic.",
+  "explanation": "Skupiny si zpěvem odpovídají bez doprovodu nástrojů a texty jsou často jemně flirtovní, i když melodie zní velmi zdrženlivě.",
+  "about": "zpěvu quan ho",
+  "more_fact": "Zpěváci se při quan ho obvykle oblékají do tradičních vesnických oděvů a zpěv je zapsaný na seznamu nehmotného kulturního dědictví UNESCO.",
+  "irony_prompt": "A single pair of young singers facing each other across a narrow flower-covered boat, fills the frame, mid-song, mouths open, dressed in simple traditional fabric. Smaller and subordinate: a few lotus flowers floating on the calm water around the boat, a folded fan resting on the boat's edge. MOOD: lyrical, gentle, romantic."
+ },
+ {
+  "id": "vn-q-con-dao",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Ostrovy Con Dao sloužily za francouzské kolonizace a pak i později k jednomu konkrétnímu účelu, kvůli kterému jsou dnes místem památníků. Jakému?",
+  "answer": "Byly vězeňskou kolonií pro politické vězně",
+  "distractors": [
+   "Byly karanténní stanicí pro nemocné námořníky",
+   "Byly vojenskou základnou bez jediného vězně",
+   "Byly experimentální zemědělskou kolonií"
+  ],
+  "quip_correct": "Přesně, ráj na pohled, vězení v realitě.",
+  "quip_wrong": "Ne tenhle účel – ostrovy sloužily jako vězeňská kolonie.",
+  "explanation": "Dnes jsou ostrovy naopak vyhlášené jako jedna z nejkrásnějších a nejklidnějších přírodních destinací v zemi, s korálovými útesy a prázdnými plážemi.",
+  "about": "ostrovech Con Dao",
+  "more_fact": "Bývalé vězeňské cely jsou dnes otevřené jako muzeum a připomínka, součástí prohlídky jsou i dřívější izolační kobky.",
+  "irony_prompt": "A single weathered old stone building facade with rows of small barred window openings, fills the frame, moss and vines slowly growing across its aged walls, dramatic low sunset light. Smaller and subordinate: a single wildflower growing from a crack near the base, a butterfly resting on the windowsill. MOOD: sombre, quiet, reflective."
+ },
+ {
+  "id": "vn-q-tajfuny",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Vietnamské pobřeží leží přímo v cestě tichomořských tajfunů, které se sem valí z moře skoro každý rok. Ve kterém ročním období tajfuny nejčastěji přichází?",
+  "answer": "Na konci léta a na podzim",
+  "distractors": [
+   "Během celé zimy",
+   "Výhradně na začátku léta",
+   "Rovnoměrně po celý rok"
+  ],
+  "quip_correct": "Přesně, podzim je pro pobřeží zkouška nervů.",
+  "quip_wrong": "Ne tohle období – zkus konec léta a podzim.",
+  "explanation": "Tajfuny se rodí nad teplým tichomořským oceánem a k pobřeží dorazí až poté, co se voda přes léto dostatečně prohřeje.",
+  "about": "vietnamských tajfunech",
+  "more_fact": "Nejvíc tajfunů obvykle zasahuje střední a severní pobřeží, zatímco jižní delta Mekongu bývá vůči nim o něco chráněnější.",
+  "irony_prompt": "A single massive swirling cloud formation viewed from above like a spiral, fills the frame, dark grey and white tones, ocean waves visible faintly beneath its edge. Smaller and subordinate: a thin curving coastline visible at the very edge of frame, a few scattered fishing boats already pulled onto the shore. MOOD: dramatic, powerful, tense."
+ },
+ {
+  "id": "vn-q-nguyen-du",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Básník Nguyen Du je autorem díla Truyen Kieu, které Vietnamci dodnes považují za svůj největší literární klenot. O čem to dílo vypráví?",
+  "answer": "O osudech ženy, která se obětuje pro svou rodinu a prochází řadou neštěstí",
+  "distractors": [
+   "O vzniku vietnamského národa z draka a víly",
+   "O životě samotného císaře, který dílo objednal",
+   "O válečném tažení proti sousední říši"
+  ],
+  "quip_correct": "Přesně, tahle hrdinka si prošla skoro vším.",
+  "quip_wrong": "Ne tenhle příběh – zkus to s ženou, co se obětuje pro rodinu.",
+  "explanation": "Báseň má přes tři tisíce veršů a Vietnamci z ní dodnes citují celé úryvky stejně přirozeně, jako by šlo o lidová přísloví.",
+  "about": "díle Truyen Kieu",
+  "more_fact": "Někteří Vietnamci dílo dokonce používají k věštění – naslepo otevřou knihu a z veršů na té stránce si vykládají svou budoucnost.",
+  "irony_prompt": "A single old leather-bound book lying closed on a wooden desk, its cover plain and unmarked, fills the frame, a single delicate flower petal resting on top, soft candlelight glow. Smaller and subordinate: a plain inkwell and quill resting beside it, a faint moon visible through a window in the background. MOOD: melancholic, poetic, reflective."
+ },
+ {
+  "id": "vn-q-betel",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Vietnamské přísloví říká, že „kousek betelu je začátek každého rozhovoru“. K jaké příležitosti se žvýkání betelové směsi tradičně nejvíc váže?",
+  "answer": "K svatebním obřadům",
+  "distractors": [
+   "K narozeninovým oslavám dětí",
+   "K pohřebním obřadům",
+   "K oslavě dokončení stavby domu"
+  ],
+  "quip_correct": "Přesně, betel a svatba patří k sobě.",
+  "quip_wrong": "Ne tahle příležitost – betel patří hlavně ke svatbě.",
+  "explanation": "Ženich tradičně přináší nevěstě dary právě s betelovými listy a arekovými oříšky jako symbol dohodnutého manželství.",
+  "about": "vietnamské tradici žvýkání betelu",
+  "more_fact": "Žvýkání směsi listu, oříšku a vápna zbarvuje sliny i zuby do syté červené a starším generacím to bylo dřív považováno za znak krásy.",
+  "irony_prompt": "A single small woven basket filled with fresh green heart-shaped leaves and small round nuts, fills the frame, resting on a red ceremonial cloth. Smaller and subordinate: a small dish of white paste beside the basket, a single red thread tied loosely around the basket's handle. MOOD: ceremonial, warm, traditional."
+ },
+ {
+  "id": "vn-q-ca-tru",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Starobylý vietnamský zpěv ca tru dnes UNESCO vede na seznamu dědictví, které je v jaké situaci?",
+  "answer": "V ohrožení a potřebuje naléhavou ochranu",
+  "distractors": [
+   "V naprostém bezpečí a bez jakéhokoli rizika",
+   "Ve fázi rychlého rozmachu po celé zemi",
+   "Ve stavu úplného zapomnění bez jediného žijícího zpěváka"
+  ],
+  "quip_correct": "Přesně, na seznamu ohrožených, ne zapomenutých.",
+  "quip_wrong": "Ne tahle situace – ca tru je označené jako ohrožené.",
+  "explanation": "Málo zbylých mistrů umí složitou techniku zpěvu i hru na loutnu dan day, a mladí lidé se tomuto náročnému umění dnes věnují jen zřídka.",
+  "about": "zpěvu ca tru",
+  "more_fact": "Zpěv se dřív provozoval hlavně v soukromých salonech pro bohaté patrony a zvládnutí jediné skladby mohlo zpěvačce zabrat celé roky výcviku.",
+  "irony_prompt": "A single elegant wooden lute with a long thin neck resting upright against a plain dark wooden chair, fills the frame, a soft spotlight glow. Smaller and subordinate: a small pair of wooden clapper sticks resting on the chair's seat, a single flickering candle nearby. MOOD: nostalgic, elegant, quiet."
+ },
+ {
+  "id": "vn-q-dau-vat",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Tradiční vietnamské zápasnictví dau vat se koná hlavně během jara na vesnických slavnostech. Jak zápasník tehdy jasně zvítězí?",
+  "answer": "Když donutí soupeře dotknout se zády nebo oběma lopatkami země",
+  "distractors": [
+   "Když soupeře vytlačí za hranici kruhu",
+   "Když soupeře udrží v držení déle než minutu",
+   "Když soupeř třikrát zvedne ruku na znamení vzdání"
+  ],
+  "quip_correct": "Přesně, záda na zem a je hotovo.",
+  "quip_wrong": "Ne takhle – vítězství přijde, až se soupeř dotkne zády země.",
+  "explanation": "Zápasy se konají na hliněné ploše bosýma nohama a diváci kolem tvoří hustý kruh, který funguje jako přirozené hranice ringu.",
+  "about": "tradičním zápasnictví dau vat",
+  "more_fact": "Slavnosti se zápasnictvím se často konají hned po sklizni, protože podle tradice má silný a úspěšný zápasník přinést vesnici do dalšího roku hojnost.",
+  "irony_prompt": "A single pair of strong bare feet firmly planted in packed earth mid-stance, fills the frame, dust rising faintly around the ankles, warm afternoon light. Smaller and subordinate: a simple woven rope circle marking a ring on the ground, a small drum resting just outside the circle. MOOD: earthy, tense, traditional."
+ },
+ {
+  "id": "vn-q-chu-nom",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Než se Vietnam přeorientoval na latinku, používal po staletí vlastní složité písmo odvozené z čínských znaků. Proč se ho nakonec ve 20. století téměř úplně vzdal?",
+  "answer": "Bylo příliš složité a málokdo se ho uměl naučit",
+  "distractors": [
+   "Bylo úředně zakázáno sousední Čínou",
+   "Neumělo zapsat vietnamské tóny",
+   "Zmizelo náhle při požáru královské knihovny"
+  ],
+  "quip_correct": "Přesně, složitost sama sebe odepsala.",
+  "quip_wrong": "Ne tenhle důvod – zkus to se složitostí písma.",
+  "explanation": "Nové latinkové písmo se dalo naučit za pár týdnů, takže rychle vytlačilo systém, který zvládala číst jen vzdělaná elita.",
+  "about": "starém vietnamském písmu chu nom",
+  "more_fact": "Dnes umí staré písmo přečíst jen malá skupina odborníků, takže velká část staré vietnamské literatury čeká na moderní přepis do latinky.",
+  "irony_prompt": "A single thick ornate antique book with a heavy carved wooden cover, its cover plain and unmarked, fills the frame, resting closed on a wooden table, dust motes visible in a warm light beam. Smaller and subordinate: a slim plain small notebook resting beside it for contrast, a single feather quill resting across both. MOOD: nostalgic, scholarly, fading."
+ },
+ {
+  "id": "vn-q-durian-zakaz",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Ovoce durian mají někteří Vietnamci v oblibě, jiní ho nesnesou zdaleka. Kvůli čemu bývá ve vietnamských autobusech, vlacích i letadlech zakázané?",
+  "answer": "Kvůli jeho pronikavému zápachu",
+  "distractors": [
+   "Kvůli jeho velké váze a ostrým bodlinám",
+   "Kvůli riziku, že se uvnitř dopravního prostředku rychle zkazí",
+   "Kvůli tomu, že se považuje za luxusní a drahé zboží"
+  ],
+  "quip_correct": "Přesně, ten zápach nezastaví žádná přepážka.",
+  "quip_wrong": "Ne tenhle důvod – problém je v jeho zápachu.",
+  "explanation": "Zápach je tak silný a vytrvalý, že se podle mnoha cestujících vsákne i do čalounění sedadel a vydrží tam celé dny.",
+  "about": "zákazu durianu v dopravních prostředcích",
+  "more_fact": "Přitom mnoho lidí jeho vůni přirovnává k jemně sladké smetaně, takže popularita ovoce zůstává i přes jeho pověstný odpudivý zápach vysoká.",
+  "irony_prompt": "A single large oval spiky durian fruit resting alone on a plain wooden bench inside an otherwise empty bus, fills the frame, thick green thorny rind catching dim window light. Smaller and subordinate: a small open window letting in a faint breeze, a single fly hovering nearby. MOOD: comedic, absurd, deadpan."
+ },
+ {
+  "id": "vn-q-doi-moi",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Roku 1986 zahájil Vietnam soubor ekonomických reforem známý jako Doi Moi. Co bylo jejich hlavním cílem?",
+  "answer": "Otevřít centrálně plánovanou ekonomiku tržním prvkům a zahraničním investicím",
+  "distractors": [
+   "Zcela zrušit veškeré soukromé vlastnictví půdy",
+   "Uzavřít zemi vůči jakémukoli zahraničnímu obchodu",
+   "Přejít zpátky na čistě zemědělskou ekonomiku bez průmyslu"
+  ],
+  "quip_correct": "Přesně, otevřít dveře trhu a světu.",
+  "quip_wrong": "Ne tenhle cíl – reformy naopak otevřely zemi trhu.",
+  "explanation": "Reformy nastartovaly desetiletí rychlého hospodářského růstu a Vietnam se z jedné z nejchudších zemí posunul mezi rychle rostoucí ekonomiky Asie.",
+  "about": "reformách Doi Moi",
+  "more_fact": "Slovo doi moi doslova znamená ‚obnova‘ a zavedení reforem přišlo jen několik let po podobných změnách, které v té době zkoušely i jiné socialistické země.",
+  "irony_prompt": "A single old rusted padlock hanging open and unlocked on a tall iron gate, fills the frame, bright sunlight streaming through the now-open gap beside it. Smaller and subordinate: a small potted plant with new green shoots growing just inside the gate, a paper kite visible flying in the distant sky beyond. MOOD: hopeful, symbolic, bright."
+ },
+ {
+  "id": "vn-q-ha-long-legenda",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Podle legendy vznikl záliv Ha Long tak, že bohové na pobřeží poslali draka, aby zemi ochránil před nepřáteli. Co drak podle pověsti po bitvě udělal?",
+  "answer": "Ponořil se do moře a zanechal po sobě tisíce ostrůvků z drahokamů a žvárů",
+  "distractors": [
+   "Odletěl zpátky k bohům a zálivem nikdy víc neprošel",
+   "Usnul navěky na vrcholu nejvyššího ostrova",
+   "Proměnil se v kámen uprostřed zálivu"
+  ],
+  "quip_correct": "Přesně, drak se potopil a zůstal záliv plný ostrůvků.",
+  "quip_wrong": "Ne takhle to podle pověsti skončilo – drak se ponořil do moře.",
+  "explanation": "Název Ha Long se doslova překládá jako ‚klesající drak‘ a legenda dodnes vysvětluje, proč je v zálivu tolik roztroušených vápencových ostrůvků.",
+  "about": "draku ze zálivu Ha Long",
+  "more_fact": "Podobná pověst existuje i pro sousední záliv Bai Tu Long, kde měla podle legendy zůstat drakova mláďata, která pomáhala matce v boji.",
+  "irony_prompt": "A single massive serpentine dragon shape made entirely of jagged limestone rock formations rising from calm turquoise water, fills the frame, mist swirling around its rocky curves at dawn. Smaller and subordinate: a tiny wooden boat sailing near its base for scale, a single seabird flying past. MOOD: majestic, mythical, serene."
+ },
+ {
+  "id": "vn-q-biodiverzita",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Vietnam zabírá jen necelé jedno procento rozlohy celé planety, přesto hostí nápadně vysoký podíl světové biodiverzity. Kolik druhů rostlin a živočichů se odhadem nachází právě tady?",
+  "answer": "Přibližně desetina všech světových druhů",
+  "distractors": [
+   "Necelé jedno procento všech světových druhů",
+   "Přesně polovina všech světových druhů",
+   "Zhruba tři čtvrtiny všech světových druhů"
+  ],
+  "quip_correct": "Přesně, desetina planety na pár procentech mapy.",
+  "quip_wrong": "Ne tento podíl – zkus to s desetinou všech druhů.",
+  "explanation": "Za tou hustotou stojí kombinace hor, tropických lesů, mokřadů i dlouhého pobřeží, které vedle sebe nabízí spoustu různých prostředí k životu.",
+  "about": "biodiverzitě Vietnamu",
+  "more_fact": "Nové druhy se ve vietnamských horách a lesích objevují i v posledních letech, včetně savců, o kterých vědci dlouho ani nevěděli, že existují.",
+  "irony_prompt": "A single dense tangled tropical forest canopy viewed from below, fills the frame, countless overlapping green leaves of wildly different shapes and sizes, dappled sunlight breaking through. Smaller and subordinate: a single colorful butterfly resting on a leaf, a thin vine hanging down through the canopy gap. MOOD: lush, vibrant, teeming."
+ },
+ {
+  "id": "vn-q-ho-chi-minh-prezdivky",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Ho Chi Minh za svůj život použil podle historiků desítky různých jmen a přezdívek. Proč jich potřeboval tolik?",
+  "answer": "Kvůli konspirační práci a skrývání se před úřady během let v emigraci",
+  "distractors": [
+   "Kvůli rodinné tradici, která vyžadovala nové jméno při každém výročí",
+   "Kvůli sázce s přáteli, kdo vymyslí víc jmen",
+   "Kvůli náboženskému obřadu spojenému s jeho narozením"
+  ],
+  "quip_correct": "Přesně, tolik jmen, kolik bylo potřeba schovat se.",
+  "quip_wrong": "Ne tenhle důvod – jména sloužila ke skrývání se před úřady.",
+  "explanation": "Jméno, pod kterým je dnes nejznámější, znamená zhruba ‚ten, kdo nese osvícení‘, a přijal ho až v pozdějších letech svého života, ne od narození.",
+  "about": "přezdívkách Ho Chi Minha",
+  "more_fact": "Historikové dodnes nejsou jednotní ve výčtu všech jmen, protože část dokumentů z let jeho cest po zahraničí se buď ztratila, nebo nikdy nebyla veřejně dostupná.",
+  "irony_prompt": "A single weathered leather travel suitcase covered in old faded blank luggage tags of many different shapes and colors, fills the frame, resting alone on a train platform. Smaller and subordinate: a single pocket watch resting on top of the suitcase, steam drifting faintly in the background. MOOD: mysterious, nostalgic, restless."
+ },
+ {
+  "id": "vn-q-tri-nalety-rise",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Ve 13. století se dynastie Tran musela třikrát postavit na odpor mocné říši, která v té době dobyla většinu Asie. Které říši?",
+  "answer": "Mongolské říši",
+  "distractors": [
+   "Čínské říši Sung",
+   "Khmérské říši",
+   "Japonskému šógunátu"
+  ],
+  "quip_correct": "Přesně, Mongolům se tady nepodařilo ani jednou.",
+  "quip_wrong": "Ne tahle říše – zkus to s Mongoly.",
+  "explanation": "Vojevůdce Tran Hung Dao při jednom z tažení použil trik s naostřenými kůly zapuštěnými do dna řeky, na kterých nepřátelská flotila při odlivu ztroskotala.",
+  "about": "invazích do Vietnamu ve 13. století",
+  "more_fact": "Mongolská říše se v té době rozkládala od Číny až po východní Evropu, takže neúspěch u Vietnamu patřil k jejím výjimečným prohrám.",
+  "irony_prompt": "A single calm river surface with rows of sharpened wooden stakes just barely visible beneath the clear shallow water, fills the frame, soft morning light reflecting off the ripples. Smaller and subordinate: a single reed growing at the water's edge, a distant empty riverbank in soft focus. MOOD: solemn, quiet, strategic."
+ },
+ {
+  "id": "vn-q-silnejsi-zrnka",
+  "cc": "vn",
+  "country": "Vietnam",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Vietnam je po Brazílii druhým největším vývozcem kávy na světě, pěstuje ale převážně jinou odrůdu, než jakou má většina světové produkce. Kterou?",
+  "answer": "Odrůdu Robusta",
+  "distractors": [
+   "Odrůdu Arabica",
+   "Odrůdu Liberica",
+   "Zcela vlastní, nikde jinde nepěstovanou odrůdu"
+  ],
+  "quip_correct": "Přesně, silná a hořká, taková je vietnamská volba.",
+  "quip_wrong": "Ne tahle odrůda – zkus tu silnější a hořčejší z obou.",
+  "explanation": "Tahle odrůda má víc kofeinu a hořčí, silnější chuť než ta rozšířenější ve světě, a navíc lépe snáší horké a vlhké podnebí vietnamských vysočin.",
+  "about": "vietnamské odrůdě kávy Robusta",
+  "more_fact": "Zrna se často praží déle a tmavěji než u konkurenční odrůdy, což ve vietnamské kávě ještě zvýrazní její typickou hořkost.",
+  "irony_prompt": "A single burlap sack overflowing with raw green coffee beans, fills the frame, tipped slightly on its side, warm morning light catching individual beans spilling onto a wooden floor. Smaller and subordinate: a small metal scoop resting in the beans, a single dried coffee cherry pod nearby. MOOD: earthy, rich, industrious."
  }
 ]

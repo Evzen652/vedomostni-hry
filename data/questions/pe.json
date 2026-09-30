@@ -959,7 +959,6 @@
   "section": "Historie",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Čím je výjimečné archeologické naleziště Caral v údolí řeky Supe severně od Limy?",
   "answer": "Patří k nejstarším městům obou Amerik",
   "distractors": [
@@ -972,7 +971,8 @@
   "explanation": "Město kultury Norte Chico vzkvétalo kolem roku 2600 př. n. l. a mělo pyramidové chrámy a kruhová zapuštěná náměstí. Archeologové v něm nenašli zbraně ani stopy válek.",
   "about": "Caralu",
   "more_fact": "Obyvatelé Caralu pěstovali bavlnu a vyměňovali ji s rybáři na pobřeží za ančovičky a mušle. Archeologové tam našli i desítky fléten vyřezaných z ptačích kostí.",
-  "irony_prompt": "A stepped sandstone pyramid temple in a dusty desert valley fills the frame, with a proud ancient builder in a cotton tunic standing on top and waving smugly toward a tiny distant silhouette of Egyptian pyramids on the horizon, as if boasting he was first. Smaller and subordinate: a round sunken plaza at the pyramid's foot; a musician playing a bone flute; a llama peeking around a wall. MOOD: cheeky, sunny, playful."
+  "irony_prompt": "A stepped sandstone pyramid temple in a dusty desert valley fills the frame, with a proud ancient builder in a cotton tunic standing on top and waving smugly toward a tiny distant silhouette of Egyptian pyramids on the horizon, as if boasting he was first. Smaller and subordinate: a round sunken plaza at the pyramid's foot; a musician playing a bone flute; a llama peeking around a wall. MOOD: cheeky, sunny, playful.",
+  "online_only": true
  },
  {
   "id": "pe-s-pocasi-hlavniho-mesta",
@@ -981,7 +981,6 @@
   "section": "Příroda",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Proč v Limě, ležící v tropech přímo u oceánu, téměř nikdy pořádně neprší?",
   "answer": "Kvůli studenému mořskému proudu u pobřeží",
   "distractors": [
@@ -994,7 +993,8 @@
   "explanation": "Humboldtův proud ochlazuje spodní vrstvu vzduchu, nad kterou leží teplejší. Vzduch nemůže stoupat, a tak vzniká jen šedá oblačnost a mrholení zvané garúa.",
   "about": "počasí v Limě",
   "more_fact": "Studený proud vynáší k hladině živiny, a proto patří k nejbohatším lovištím ryb na světě. Peru díky němu loví obrovské množství ančoviček, z nichž se vyrábí rybí moučka.",
-  "irony_prompt": "A gloomy but good-natured grey cloud fills the frame, hovering low over a sunny coastal city of flat-roofed houses, squeezing itself with all its might like a sponge yet producing only a few tiny drops, while a frosty blue ocean current wearing a snowy scarf flows along the shore below. Smaller and subordinate: a local vendor using a closed umbrella as a walking stick; a pelican sunbathing on a rock; sand dunes behind the city. MOOD: comic, sunny, playful."
+  "irony_prompt": "A gloomy but good-natured grey cloud fills the frame, hovering low over a sunny coastal city of flat-roofed houses, squeezing itself with all its might like a sponge yet producing only a few tiny drops, while a frosty blue ocean current wearing a snowy scarf flows along the shore below. Smaller and subordinate: a local vendor using a closed umbrella as a walking stick; a pelican sunbathing on a rock; sand dunes behind the city. MOOD: comic, sunny, playful.",
+  "online_only": true
  },
  {
   "id": "pe-s-zluta-limonada",
@@ -1003,7 +1003,6 @@
   "section": "Jídlo",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Jak si v Peru nakonec poradila Coca-Cola se žlutou limonádou Inca Kola, která ji doma dlouhá léta porážela v prodejích?",
   "answer": "Koupila podíl ve firmě, která ji vyrábí",
   "distractors": [
@@ -1016,7 +1015,8 @@
   "explanation": "Obchod proběhl v roce 1999 a Coca-Cola tím získala i práva na značku mimo Peru. Inca Kola chutná sladce po žvýkačce a její příchuť se připisuje bylině hierba luisa.",
   "about": "Inca Kole",
   "more_fact": "Inca Kolu založila v roce 1935 v Limě rodina britských přistěhovalců Lindleyových. Peruánci ji rádi pijí k jídlu, třeba k pečenému kuřeti pollo a la brasa, a berou ji jako národní nápoj.",
-  "irony_prompt": "A giant glass bottle of bright golden-yellow soda fills the frame, smugly sitting on a throne of stacked crates, while a dark cola bottle in a business suit bows before it holding out a bulging briefcase of coins; both bottles completely plain and unmarked. Smaller and subordinate: a plate of roast chicken on the side; a llama sipping through a straw; confetti in the air. MOOD: satirical, festive, cheerful."
+  "irony_prompt": "A giant glass bottle of bright golden-yellow soda fills the frame, smugly sitting on a throne of stacked crates, while a dark cola bottle in a business suit bows before it holding out a bulging briefcase of coins; both bottles completely plain and unmarked. Smaller and subordinate: a plate of roast chicken on the side; a llama sipping through a straw; confetti in the air. MOOD: satirical, festive, cheerful.",
+  "online_only": true
  },
  {
   "id": "pe-s-andska-pout",
@@ -1025,7 +1025,6 @@
   "section": "Kultura & tradice",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Co tradičně snášeli z hor tanečníci ukuku při andské pouti Qoyllur Rit’i nedaleko Cusca?",
   "answer": "Bloky ledovcového ledu na zádech",
   "distractors": [
@@ -1038,6 +1037,860 @@
   "explanation": "Tanečníci ukuku v kostýmech medvědů vystupují v noci až na ledovec hory Qullqipunku. Kvůli rychlému tání ledovců se dnes led už neodnáší.",
   "about": "pouti Qoyllur Rit’i",
   "more_fact": "Pouť se koná před svátkem Božího těla a každoročně přitahuje desetitisíce lidí z celých And. Spojuje katolickou úctu ke Kristu s mnohem starším uctíváním horských duchů apu. UNESCO ji zapsalo roku 2011.",
-  "irony_prompt": "A cheerful pilgrim in a shaggy bear costume with a knitted mask fills the frame, marching proudly down a steep snowy Andean slope with a huge glittering block of glacier ice strapped to his back like a backpack. Smaller and subordinate: a llama wearing woolly ear flaps following behind; a crowd of pilgrims with plain colorful ribbons in the valley below; snow peaks glowing at sunrise. MOOD: festive, joyful, adventurous."
+  "irony_prompt": "A cheerful pilgrim in a shaggy bear costume with a knitted mask fills the frame, marching proudly down a steep snowy Andean slope with a huge glittering block of glacier ice strapped to his back like a backpack. Smaller and subordinate: a llama wearing woolly ear flaps following behind; a crowd of pilgrims with plain colorful ribbons in the valley below; snow peaks glowing at sunrise. MOOD: festive, joyful, adventurous.",
+  "online_only": true
+ },
+ {
+  "id": "pe-k-jedinecny-savec-hor",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Který medvěd je jediným druhem medvěda, co žije v celé Jižní Americe, i vysoko v peruánských Andách?",
+  "answer": "Andský medvěd",
+  "distractors": [
+   "Medvěd grizzly",
+   "Ledový medvěd",
+   "Medvěd baribal"
+  ],
+  "quip_correct": "Bystrý pohled! Tenhle medvěd je v Jižní Americe jediný svého druhu.",
+  "quip_wrong": "Skoro. Ten medvěd žije jinde — v Jižní Americe je jenom jeden jediný druh.",
+  "explanation": "Kolem očí má světlé skvrny, které vypadají jako brýle, a proto se mu přezdívá brýlatý medvěd.",
+  "about": "andském medvědovi",
+  "more_fact": "Andský medvěd umí šplhat po stromech a v korunách si staví hnízdo z větví, kde pak celé dny odpočívá a láduje se ovocem.",
+  "irony_prompt": "A single South American Andean bear fills the frame, perched high in a leafy tree, wearing round pale patches of fur around its eyes that look exactly like a pair of spectacles, munching on a piece of fruit with a content expression. Smaller and subordinate: a rough nest of woven branches beneath it, jagged grey Andean mountain peaks far in the background, a small green parrot watching from a nearby branch. MOOD: cozy, whimsical."
+ },
+ {
+  "id": "pe-k-raj-lachtanu-a-tucnaku",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Na kterých peruánských ostrovech potkáš spolu lachtany, tučňáky i tisíce mořských ptáků?",
+  "answer": "Na Ballestas ostrovech",
+  "distractors": [
+   "Na Galapágách",
+   "Na Velikonočním ostrově",
+   "Na Falklandských ostrovech"
+  ],
+  "quip_correct": "Přesně tam! Malé ostrovy, ale nabité zvířaty.",
+  "quip_wrong": "Zvířata tam jsou, ale jinde. Hledej menší ostrovy blízko peruánského pobřeží.",
+  "explanation": "Těmto ostrovům se přezdívá „ostrovy chudáka“, protože nabízí podobná zvířata jako slavné Galapágy, jen blíž a levněji.",
+  "about": "Ballestas ostrovech",
+  "more_fact": "K ostrovům se dá dostat jen lodí a na pevninu se nevystupuje — chrání se tak hnízdiště tisíců ptáků žijících jen na skalách.",
+  "irony_prompt": "A single rocky island fills the frame, packed edge to edge with a huge sea lion lounging proudly on the top rock and dozens of penguins and seabirds crowded around it like it's throwing a party. Smaller and subordinate: a small wooden tour boat bobbing at a respectful distance, bright blue ocean water, a pelican mid-flight overhead. MOOD: playful, lively."
+ },
+ {
+  "id": "pe-k-hunate-zvire-na-vlnu",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje huňaté horské zvíře z Peru, které se chová hlavně pro jeho teplou měkkou vlnu?",
+  "answer": "Alpaka",
+  "distractors": [
+   "Ovce",
+   "Koza andská",
+   "Jak"
+  ],
+  "quip_correct": "Přesně, huňatá kamarádka z Andů!",
+  "quip_wrong": "Blízko, ale ne úplně. Hledej zvíře z rodiny velbloudů, ne ovci ani kozu.",
+  "explanation": "Alpaka je příbuzná lamy, ale je menší a její vlna je jemnější a hřejivější.",
+  "about": "alpace",
+  "more_fact": "Vlna alpaky je uvnitř dutá, takže hřeje víc, než by se dalo čekat, a přitom je lehká jako péřová bunda.",
+  "irony_prompt": "A single fluffy alpaca fills the frame, standing proudly with an enormous poofy coat of wool that makes it look twice its real size, tilting its head with a curious expression. Smaller and subordinate: a pair of scissors and a basket of wool resting nearby, jagged mountain peaks in the far background, a tiny hummingbird hovering near a flower. MOOD: charming, cozy."
+ },
+ {
+  "id": "pe-k-mesto-z-hlineny-cihel",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje staré peruánské město, které je největším na světě postaveným celé z nepálených hliněných cihel?",
+  "answer": "Chan Chan",
+  "distractors": [
+   "Machu Picchu",
+   "Cusco",
+   "Caral"
+  ],
+  "quip_correct": "Přesně, obrovské hliněné město!",
+  "quip_wrong": "Tohle místo je taky slavné, ale není z hliněných cihel jako to, na které se ptáme.",
+  "explanation": "Postavil ho starobylý národ Chimú a ve svých nejlepších letech bylo obydlené desetitisíci lidmi.",
+  "about": "Chan Chanu",
+  "more_fact": "Zdi Chan Chanu byly kdysi zdobené vyřezávanými vzory ryb, ptáků a vln, protože Chimú žili hlavně z moře a rybaření.",
+  "irony_prompt": "A single massive adobe mud-brick wall fills the frame, towering and endless, its surface covered in deeply carved patterns of fish and waves, dominating the desert scene. Smaller and subordinate: a narrow sandy alley winding between more mud walls, a small lizard sunning on a warm brick, distant hazy hills. MOOD: ancient, grand."
+ },
+ {
+  "id": "pe-k-mesto-bez-silnice",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje velké peruánské město v amazonském pralese, do kterého nevede žádná silnice?",
+  "answer": "Iquitos",
+  "distractors": [
+   "Lima",
+   "Cusco",
+   "Arequipa"
+  ],
+  "quip_correct": "Přesně tak — a jinak se tam než letadlem nebo lodí nedostaneš!",
+  "quip_wrong": "Tohle město silnici má. Hledej město hluboko v amazonském pralese.",
+  "explanation": "Do tohoto města se lidé dopravují jen letadlem nebo po řece lodí, protože hustý prales kolem silnici nedovolí.",
+  "about": "Iquitosu",
+  "more_fact": "Iquitos leží na břehu Amazonky a je největším městem světa, kam se nedá přijet po zemi žádným autem.",
+  "irony_prompt": "A single riverboat overflowing with passengers, crates and chickens fills the frame, chugging along a wide brown river through dense green jungle, clearly the only way in or out of town. Smaller and subordinate: a row of stilted wooden houses along the riverbank, a colorful parrot perched on the boat's railing, thick jungle canopy behind. MOOD: adventurous, bustling."
+ },
+ {
+  "id": "pe-k-barevna-poust-pri-mori",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jakou neobvyklou barvu má slavná pláž v peruánské pouštní oblasti Paracas?",
+  "answer": "Červenou",
+  "distractors": [
+   "Modrou",
+   "Černou",
+   "Zelenou"
+  ],
+  "quip_correct": "Přesně, jako by ji někdo natřel!",
+  "quip_wrong": "Skoro trefa, ale barva pláže je jiná — a je vážně nečekaná.",
+  "explanation": "Barvu dávají pláži drobné kousky rudého kamene granátu, které se tam po staletí drolí z okolních skal.",
+  "about": "barevné pláži v Paracasu",
+  "more_fact": "Kousek od barevné pláže žije v poušti Paracas i velká kolonie lachtanů a ptáků, kteří hnízdí na blízkých skalních ostrovech.",
+  "irony_prompt": "A single stretch of vividly red-tinted sand fills the frame, sweeping dramatically toward blue ocean waves, its color as bold and improbable as spilled paint. Smaller and subordinate: a lone seabird standing on the red sand, distant dry beige cliffs, a smooth pale rock formation. MOOD: surprising, vivid."
+ },
+ {
+  "id": "pe-k-tanec-s-ostrym-doprovodem",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím si tanečníci doprovázejí slavný peruánský „tanec s nůžkami“ (danza de las tijeras)?",
+  "answer": "Cvakáním kovových nůžek v rytmu",
+  "distractors": [
+   "Bubínky uvázanými na kotnících",
+   "Dřevěnými tyčkami",
+   "Zvonečky na prstech"
+  ],
+  "quip_correct": "Přesně, cvak cvak a do rytmu!",
+  "quip_wrong": "Blízko, rytmus tam je, ale nástroj je jiný — a je překvapivě nebezpečný.",
+  "explanation": "Tanečníci drží v jedné ruce dvě samostatné kovové čepele a cvakají jimi jako nůžkami po celou dobu tance.",
+  "about": "tanci s nůžkami",
+  "more_fact": "Tanečníci k tanci s nůžkami často přidávají i akrobatické kousky, třeba skoky přes ohnivé plameny nebo chůzi po ostrých předmětech.",
+  "irony_prompt": "A single dancer fills the frame mid-leap, arm raised high, gripping two separate curved metal blades clicked together like giant scissors, face full of fierce concentration. Smaller and subordinate: a small huddle of musicians with a harp and violin off to the side, a patterned woven poncho draped over a nearby chair, dusty village square ground. MOOD: energetic, dramatic."
+ },
+ {
+  "id": "pe-k-most-ktery-vznika-znovu-kazdy-rok",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Z čeho je postavený starý peruánský visutý most Q'eswachaka, který se každý rok znovu upletou?",
+  "answer": "Z upletené trávy",
+  "distractors": [
+   "Z kovových lan",
+   "Z dřevěných prken",
+   "Z kamenných kvádrů"
+  ],
+  "quip_correct": "Přesně, celý most jen z trávy a šikovných rukou!",
+  "quip_wrong": "Materiál je jiný. Tenhle most nedrží kov ani dřevo, ale upletená rostlina.",
+  "explanation": "Most postavili už Inkové a místní vesnice ho dodnes každý rok společně rozeberou a upletou znovu nanovo.",
+  "about": "mostu Q'eswachaka",
+  "more_fact": "Stavba nového mostu Q'eswachaka trvá jen tři dny a zúčastní se jí stovky lidí z okolních vesnic najednou.",
+  "irony_prompt": "A single rope bridge woven entirely from golden dried grass fibers fills the frame, stretching dramatically across a deep rocky gorge, its braided strands thick and intricate. Smaller and subordinate: a small group of villagers on the far side pulling a new grass rope taut, a fast river far below, distant Andean peaks. MOOD: impressive, communal."
+ },
+ {
+  "id": "pe-k-grilovane-spizy-na-ulici",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Z jaké části krávy se v Peru dělá oblíbená pouliční pochoutka anticuchos?",
+  "answer": "Ze srdce",
+  "distractors": [
+   "Z jazyka",
+   "Z ledvin",
+   "Z plic"
+  ],
+  "quip_correct": "Přesně, srdce na grilu — a chutná to skvěle!",
+  "quip_wrong": "Není to tahle část. Hledej orgán, který v hrudi bije.",
+  "explanation": "Kousky se marinují v koření a česneku a pak grilují na tyčce nad žhavým uhlím přímo na ulici.",
+  "about": "anticuchos",
+  "more_fact": "Anticuchos se prodávají na peruánských ulicích už od dob kolonie a dnes je najdeš na grilu skoro na každém rohu.",
+  "irony_prompt": "A single skewer loaded with charred, marinated meat chunks fills the frame, sizzling dramatically over glowing charcoal, smoke curling upward. Smaller and subordinate: a battered metal grill cart on wheels, a small bowl of golden dipping sauce, a string of colorful lights strung overhead in the evening street. MOOD: appetizing, smoky."
+ },
+ {
+  "id": "pe-k-plnena-paprika-z-hor",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Co je hlavní nádivkou peruánského pokrmu rocoto relleno, kterou se paprika plní?",
+  "answer": "Mleté maso se zeleninou",
+  "distractors": [
+   "Jen rýže",
+   "Čokoláda",
+   "Sladké ovoce"
+  ],
+  "quip_correct": "Přesně, chutná paprika s masovou nádivkou!",
+  "quip_wrong": "Skoro, ale nádivka je jiná — a je vydatnější, než by sis myslel.",
+  "explanation": "Paprika rocoto je navíc jedna z nejostřejších na světě, takže i ta nádivka uvnitř pořádně hřeje.",
+  "about": "rocoto relleno",
+  "more_fact": "Paprika rocoto zvenku vypadá jako sladká paprika, ale svou palčivostí se blíží nejostřejším chilli papričkám na světě.",
+  "irony_prompt": "A single stuffed red pepper fills the frame, sitting proudly on a plate with its top sliced off to reveal a generous mound of savory filling spilling out, steam rising from it. Smaller and subordinate: a wooden dining table with a simple woven placemat, a small pitcher of water nearby, a few scattered herb leaves. MOOD: warm, inviting."
+ },
+ {
+  "id": "pe-k-hrnce-ktere-se-na-tebe-divaji",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak staří obyvatelé Peru zdobili keramiku kultury Moche, kterou po nich archeologové nacházejí?",
+  "answer": "Tvarovali ji do podoby zvířat a lidských obličejů",
+  "distractors": [
+   "Malovali na ni jen jednoduché pruhy",
+   "Nechávali ji úplně hladkou",
+   "Zdobili ji výhradně zlatem"
+  ],
+  "quip_correct": "Přesně, hrnec, co se na tebe dívá!",
+  "quip_wrong": "Blízko, ale zdobení bylo mnohem výraznější — nádoby měly doslova tvář.",
+  "explanation": "Kultura Moche žila na severním pobřeží Peru dávno před Inky a její keramika patří k nejpropracovanější v celé Americe.",
+  "about": "keramice kultury Moche",
+  "more_fact": "Řemeslníci kultury Moche dokázali stejnou formu použít vícekrát, takže vyráběli podobné nádoby i ve větším množství najednou.",
+  "irony_prompt": "A single ceramic vessel shaped like a grinning human face fills the frame, its clay surface polished and expressive, sitting on a simple stone shelf. Smaller and subordinate: a scattering of clay tools and a small brush nearby, a woven reed mat beneath the shelf, warm desert light streaming in. MOOD: curious, ancient."
+ },
+ {
+  "id": "pe-k-sperky-tenke-jako-vlasek",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Umění",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Čím jsou proslulí řemeslníci z peruánského města Catacaos?",
+  "answer": "Jemnou stříbrnou filigránovou prací",
+  "distractors": [
+   "Výrobou dřevěných hraček",
+   "Tkaním koberců z ovčí vlny",
+   "Malováním na hedvábí"
+  ],
+  "quip_correct": "Přesně, stříbro tenké jako vlásky!",
+  "quip_wrong": "Blízko, ale materiál i technika jsou jiné — jde o kov splétaný do tenkých vzorů.",
+  "explanation": "Filigránová práce spočívá v tom, že se tenké drátky ohýbají a spájí do složitých vzorů připomínajících krajku.",
+  "about": "stříbrném filigránu z Catacaos",
+  "more_fact": "Šperky z Catacaos se dědí v rodinách řemeslníků z generace na generaci, a mnohé vzory zůstávají tajemstvím jediné rodiny.",
+  "irony_prompt": "A single ornate silver filigree earring fills the frame, its delicate wire strands twisted into intricate swirling patterns like fine lace, gleaming under warm light. Smaller and subordinate: a small wooden workbench with tiny pliers and coils of thin silver wire, a soft cloth beneath, a single candle flame nearby. MOOD: delicate, elegant."
+ },
+ {
+  "id": "pe-k-nejvyssi-hora-peru",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Místa",
+  "difficulty": 1,
+  "kids": true,
+  "type": "choice",
+  "question": "Jak se jmenuje nejvyšší hora Peru, která je zároveň nejvyšší tropickou horou na světě?",
+  "answer": "Huascarán",
+  "distractors": [
+   "Machu Picchu",
+   "Misti",
+   "Alpamayo"
+  ],
+  "quip_correct": "Přesně, střecha tropického světa!",
+  "quip_wrong": "Tahle hora je taky slavná, ale výškou na tu hledanou nestačí.",
+  "explanation": "Huascarán má dva vrcholy pokryté ledovci a i v horkém tropickém pásu na něm leží sníh po celý rok.",
+  "about": "hoře Huascarán",
+  "more_fact": "Kolem Huascaránu je vyhlášený národní park plný ledovcových jezer s vodou barvy tyrkysu, kam se sjíždějí horolezci z celého světa.",
+  "irony_prompt": "A single snow-capped twin-peaked mountain fills the frame, towering dramatically above a green valley, its glacier gleaming bright white against a deep blue sky. Smaller and subordinate: a turquoise glacial lake nestled at its base, a small herd of grazing llamas on a distant slope, a few hardy mountain flowers in the foreground. MOOD: majestic, serene."
+ },
+ {
+  "id": "pe-t-vitezka-na-vlnach",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Sport",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "V jakém sportu se peruánská sportovkyně Sofía Mulánovich stala v roce 2004 mistryní světa?",
+  "answer": "V surfování",
+  "distractors": [
+   "V plavání",
+   "Ve veslování",
+   "V potápění"
+  ],
+  "quip_correct": "Vlna pokořena, titul doma.",
+  "quip_wrong": "Skoro, ale ten sport se odehrává na prkně nad vlnami, ne pod vodou ani na lodi.",
+  "explanation": "Byla první Jihoameričankou, která vyhrála mistrovství světa v ženském profesionálním surfování.",
+  "about": "Sofíi Mulánovich",
+  "more_fact": "Peruánské pobřeží má díky Humboldtovu proudu skvělé podmínky pro vlnobití a přitahuje surfaře z celého světa.",
+  "irony_prompt": "A single silhouette of a female surfer fills the frame, crouched low and perfectly balanced atop a massive curling ocean wave, arms outstretched, board slicing through the spray. Smaller and subordinate: a golden trophy resting in the wet sand at the shoreline, a row of colorful surfboards stuck upright in the beach, distant cliffs along the coast. MOOD: triumphant, exhilarating."
+ },
+ {
+  "id": "pe-t-kucharuv-velky-pocin",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Lidé",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Čím se zapsal peruánský kuchař Gastón Acurio do historie své země?",
+  "answer": "Pozdvihl peruánskou kuchyni na světově uznávanou",
+  "distractors": [
+   "Vyhrál olympijskou medaili v běhu",
+   "Objevil nové inské naleziště",
+   "Stal se prezidentem Peru"
+  ],
+  "quip_correct": "Přesně, z peruánského jídla udělal světovou hvězdu.",
+  "quip_wrong": "Skoro, ale jeho velký čin se odehrál v kuchyni, ne na stadionu ani v politice.",
+  "explanation": "Otevřel restaurace po celém světě a přesvědčil miliony lidí, že peruánská kuchyně patří mezi nejlepší na planetě.",
+  "about": "Gastónu Acuriovi",
+  "more_fact": "Gastón Acurio založil i nadaci, která učí vařit mladé lidi z chudých čtvrtí a pomáhá jim najít práci v gastronomii.",
+  "irony_prompt": "A single chef in a crisp white uniform fills the frame, triumphantly holding up a sizzling pan of colorful food above his head like a trophy, grinning widely. Smaller and subordinate: a row of small tasting plates arranged on a counter, a stack of folded white chef aprons nearby, a blurred busy restaurant kitchen in the background. MOOD: proud, celebratory."
+ },
+ {
+  "id": "pe-t-golovy-rekord-v-bundeslize",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Čím je peruánský fotbalista Claudio Pizarro rekordmanem v německé Bundeslize?",
+  "answer": "Je nejlepším cizím střelcem v historii ligy",
+  "distractors": [
+   "Odehrál nejvíc zápasů za jeden klub",
+   "Dostal nejvíc červených karet",
+   "Byl nejmladším kapitánem ligy"
+  ],
+  "quip_correct": "Přesně, gólová sbírka, kterou žádný cizinec nepředčil.",
+  "quip_wrong": "Skoro, ale jeho rekord se počítá v gólech, ne v kartách ani v letech.",
+  "explanation": "Pizarro hrál v Bundeslize přes dvacet let a za tu dobu nasbíral víc branek než jakýkoli jiný zahraniční hráč.",
+  "about": "Claudiu Pizarrovi",
+  "more_fact": "Pizarro odehrál v Bundeslize svůj poslední zápas, když mu bylo přes čtyřicet let, což je v profesionálním fotbale vzácnost.",
+  "irony_prompt": "A single soccer player fills the frame mid-celebration after scoring, arms spread wide, jersey damp with sweat, joyful expression, ball still rolling into the net behind him. Smaller and subordinate: a blurred cheering crowd in the stands, a line of teammates running to join him, green pitch grass beneath. MOOD: jubilant, energetic."
+ },
+ {
+  "id": "pe-t-oblibeny-studeny-napoj",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jídlo",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Z jaké neobvykle zbarvené kukuřice se v Peru vaří oblíbený nápoj chicha morada?",
+  "answer": "Z fialové kukuřice",
+  "distractors": [
+   "Ze žluté kukuřice",
+   "Z bílé kukuřice",
+   "Z červené kukuřice"
+  ],
+  "quip_correct": "Přesně, fialová kukuřice v hrnci a skvělý nápoj na stole.",
+  "quip_wrong": "Skoro, ale barva kukuřice je jiná — a je opravdu neobvyklá.",
+  "explanation": "Nápoj se vaří s kousky ovoce, skořicí a hřebíčkem a podává se studený, obvykle bez alkoholu.",
+  "about": "nápoji chicha morada",
+  "more_fact": "Tahle kukuřice se v Peru pěstuje odjakživa a kromě nápoje se z ní vyrábí i dezerty, barevné želé a dokonce zmrzlina.",
+  "irony_prompt": "A single tall glass filled with deep purple liquid fills the frame, condensation beading on its sides, a slice of fresh fruit perched on the rim. Smaller and subordinate: a few dried purple corn cobs scattered on a wooden table nearby, a cinnamon stick resting beside the glass, warm afternoon light. MOOD: refreshing, vibrant."
+ },
+ {
+  "id": "pe-t-koktejl-s-pusenkovou-penou",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jídlo",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Co dává peruánskému koktejlu pisco sour jeho typickou hustou pěnu navrchu?",
+  "answer": "Rozšlehaný vaječný bílek",
+  "distractors": [
+   "Šlehačka",
+   "Kokosové mléko",
+   "Prášek do pečiva"
+  ],
+  "quip_correct": "Přesně, bílek rozšlehaný do pěny, a pěna je tady!",
+  "quip_wrong": "Skoro, ale ta pěna vzniká z úplně jiné ingredience — a je to obyčejná věc z kuchyně.",
+  "explanation": "Koktejl se dělá z hroznového destilátu pisco, citronu, sirupu a ledu, a právě tahle ingredience ho spojí do husté pěny.",
+  "about": "koktejlu pisco sour",
+  "more_fact": "Pisco sour má v Peru vlastní svátek, který se slaví každou první sobotu v únoru, a barmani tehdy soutěží o nejlepší přípravu.",
+  "irony_prompt": "A single elegant cocktail glass fills the frame, topped with a thick creamy white foam and a few dark drops of aromatic bitters swirled decoratively on top. Smaller and subordinate: a small dish of lime wedges beside the glass, a cocktail shaker resting nearby, soft warm bar lighting. MOOD: sophisticated, inviting."
+ },
+ {
+  "id": "pe-t-predchudce-inkove-moci",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se jmenovala mocná říše, která v peruánských Andách vládla ještě dřív, než vznikla říše Inků?",
+  "answer": "Říše Wari",
+  "distractors": [
+   "Říše Chimú",
+   "Říše Moche",
+   "Říše Chachapoya"
+  ],
+  "quip_correct": "Přesně, tahle říše razila cestu, po které později šli Inkové.",
+  "quip_wrong": "Tahle říše taky existovala, ale předchůdcem Inků v horách byla jiná.",
+  "explanation": "Vybudovali už staletí před Inky rozsáhlou síť cest a měst, kterou Inkové později jen převzali a rozšířili.",
+  "about": "říši Wari",
+  "more_fact": "Hlavní město říše Wari mělo v době svého vrcholu desítky tisíc obyvatel, což z něj dělalo jedno z největších měst tehdejší Ameriky.",
+  "irony_prompt": "A single massive ancient stone terrace wall fills the frame, stretching in tiers up a dry Andean hillside, clearly built long before any later structure nearby. Smaller and subordinate: a narrow dirt path winding between the terraces, a hardy cactus growing from a crack in the stone, distant brown mountains. MOOD: ancient, imposing."
+ },
+ {
+  "id": "pe-t-prudka-rozsedlina-s-kondory",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Čím je pozoruhodný peruánský kaňon Colca, kterým prolétávají hejna kondorů?",
+  "answer": "Patří k nejhlubším kaňonům na světě",
+  "distractors": [
+   "Je úplně plochý a mělký",
+   "Je nejdelší řekou Jižní Ameriky",
+   "Je uprostřed pralesa"
+  ],
+  "quip_correct": "Přesně, hloubka, ze které se točí hlava.",
+  "quip_wrong": "Skoro, ale to, čím je tenhle kaňon výjimečný, je jiná vlastnost — a souvisí to s jeho hloubkou.",
+  "explanation": "Na některých místech je víc než dvakrát hlubší než slavný Grand Canyon v USA.",
+  "about": "kaňonu Colca",
+  "more_fact": "Ranní vzdušné proudy nad kaňonem Colca využívají andští kondoři k tomu, aby se vznesli téměř bez mávnutí křídel.",
+  "irony_prompt": "A single enormous canyon fills the frame, its walls plunging dramatically thousands of meters down in layered rock, a lone condor gliding along its rim with wings spread wide. Smaller and subordinate: a small hiking trail carved into the cliffside, a scattering of hardy shrubs clinging to the rock, distant terraced fields far below. MOOD: awe-inspiring, vast."
+ },
+ {
+  "id": "pe-t-pevnost-lidu-z-mraku",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Místa",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jak se jmenuje rozsáhlá kamenná pevnost lidu Chachapoya, kterým se přezdívalo „lidé mraků“?",
+  "answer": "Kuélap",
+  "distractors": [
+   "Machu Picchu",
+   "Sacsayhuamán",
+   "Chan Chan"
+  ],
+  "quip_correct": "Přesně, pevnost schovaná vysoko v mracích.",
+  "quip_wrong": "Tahle pevnost je taky slavná, ale s lidem mraků nemá co dělat.",
+  "explanation": "Stojí na hřebeni vysoko v horách severního Peru a obklopují ji zdi vyšší, než jaké má Machu Picchu.",
+  "about": "pevnosti Kuélap",
+  "more_fact": "Objevili ji archeologové teprve v 19. století, přestože je podle odhadů starší než slavné Machu Picchu.",
+  "irony_prompt": "A single colossal curved stone wall fills the frame, towering high along a misty mountain ridge, dense fog swirling around its base. Smaller and subordinate: a narrow stone stairway leading up through a gap in the wall, a few round stone hut foundations visible atop the ridge, thick cloud forest below. MOOD: mysterious, imposing."
+ },
+ {
+  "id": "pe-t-zeme-plna-operenych-hostu",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Čím vyniká Peru mezi zeměmi světa, pokud jde o ptáky?",
+  "answer": "Má jednu z nejvyšších pestrostí ptačích druhů na světě",
+  "distractors": [
+   "Patří mezi země s nejmenší ptačí rozmanitostí na světě",
+   "Ptačí druhy má srovnatelné s malými evropskými zeměmi",
+   "Druhů ptáků má jen pár desítek"
+  ],
+  "quip_correct": "Přesně, kam se podíváš, tam nový druh.",
+  "quip_wrong": "To rozhodně ne — Peru je pravý opak, ptačí ráj s ohromnou pestrostí druhů.",
+  "explanation": "Kombinace pouště, hor, pralesa a pobřeží dává v Peru domov ptákům od kolibříků až po kondory.",
+  "about": "ptačí rozmanitosti Peru",
+  "more_fact": "Peruánští ornitologové dokázali za jediný den napozorovat na jednom místě stovky různých druhů najednou.",
+  "irony_prompt": "A single vividly colored hummingbird fills the frame, hovering mid-flight with wings a blur, its iridescent feathers catching the light. Smaller and subordinate: a distant silhouette of a soaring condor high above, a small perched toucan on a branch in the corner, lush green foliage background. MOOD: vibrant, lively."
+ },
+ {
+  "id": "pe-t-slovo-pro-teplou-pokryvku",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Které běžné slovo pro teplou přehozenou pokrývku pochází z kečuánštiny a rozšířilo se odsud do celého světa?",
+  "answer": "Poncho",
+  "distractors": [
+   "Svetr",
+   "Šátek",
+   "Plášť"
+  ],
+  "quip_correct": "Přesně, kečuánské slovo, které oblékl celý svět.",
+  "quip_wrong": "Tohle slovo taky zná celý svět, ale nepochází z kečuánštiny jako to hledané.",
+  "explanation": "Je to jednoduchý kus látky s otvorem pro hlavu, který nosili Inkové dávno předtím, než ho převzala móda.",
+  "about": "slovu poncho",
+  "more_fact": "Kečuánština dala světu i slova jako „kondor“ nebo „kokain“, ačkoliv jejich původní kečuánský význam byl trochu jiný.",
+  "irony_prompt": "A single colorful woven poncho fills the frame, draped dramatically over a wooden hanger, its bold striped pattern bright against a plain wall. Smaller and subordinate: a small ball of alpaca wool yarn resting on a stool nearby, a wooden weaving loom partly visible in the corner, warm afternoon light. MOOD: warm, folkloric."
+ },
+ {
+  "id": "pe-t-basnik-ktery-zlomil-pravidla",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Umění",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Čím je peruánský básník César Vallejo považován za jednu z nejvýraznějších postav latinskoamerické poezie?",
+  "answer": "Přinesl do poezie novátorský, temný a experimentální jazyk",
+  "distractors": [
+   "Psal výhradně vesele laděné básně pro děti",
+   "Byl jediným peruánským malířem 20. století",
+   "Skládal opery pro evropská divadla"
+  ],
+  "quip_correct": "Přesně, jazyk plný zlomů a temných obrazů, který nikdo předtím nezkusil.",
+  "quip_wrong": "Skoro, ale jeho výjimečnost se týká úplně jiné oblasti — poezie, a navíc dost temné.",
+  "explanation": "Jeho sbírky jako Trilce zlomily tradiční pravidla španělské poezie a inspirovaly generace básníků po celé Latinské Americe.",
+  "about": "Césaru Vallejovi",
+  "more_fact": "César Vallejo zemřel v Paříži v chudobě a slávy se mu dostalo teprve po smrti, kdy ho svět objevil jako jednoho z největších básníků kontinentu.",
+  "irony_prompt": "A single silhouette of a solitary figure fills the frame, sitting hunched at a small round café table by a rain-streaked window, one hand resting thoughtfully on their chin, a single candle flickering nearby. Smaller and subordinate: a plain closed notebook resting on the table, an empty coffee cup beside it, blurred grey Paris rooftops through the window. MOOD: melancholic, poetic."
+ },
+ {
+  "id": "pe-t-karneval-v-severnich-horach",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Které peruánské město v severních horách je proslulé jedním z nejveselejších karnevalů celé Jižní Ameriky?",
+  "answer": "Cajamarca",
+  "distractors": [
+   "Trujillo",
+   "Arequipa",
+   "Puno"
+  ],
+  "quip_correct": "Přesně, týden plný barev, vody a tance.",
+  "quip_wrong": "Tohle město slaví taky bohatě, ale slavný karneval patří jinému peruánskému horskému městu.",
+  "explanation": "Během karnevalu se na ulicích lidé polévají vodou a barevnými pěnami a celé město tancuje dny v kuse.",
+  "about": "karnevalu v Cajamarce",
+  "more_fact": "Karneval v Cajamarce začíná tradičně „pohřbem“ veselé loutky, která symbolizuje konec oslav do dalšího roku.",
+  "irony_prompt": "A single joyful crowd of dancers fills the frame, soaked head to toe in colorful water and foam, arms raised high mid-celebration under bright sunshine. Smaller and subordinate: a small brass band playing off to the side, strings of colorful paper streamers overhead, a water bucket tipped over in the foreground. MOOD: festive, joyful."
+ },
+ {
+  "id": "pe-t-posledni-velky-stret-nezavislosti",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Jakou bitvou z roku 1824 bylo nakonec definitivně zpečetěno vítězství v peruánské válce za nezávislost na Španělsku?",
+  "answer": "Bitvou u Ayacucha",
+  "distractors": [
+   "Bitvou u Limy",
+   "Bitvou u Cusca",
+   "Bitvou u Arequipy"
+  ],
+  "quip_correct": "Přesně, poslední velká bitva, po které Španělsko v Jižní Americe skončilo.",
+  "quip_wrong": "Tahle bitva se taky v dějinách Peru odehrála, ale rozhodující byla jiná.",
+  "explanation": "Po tomhle vítězství ztratilo Španělsko poslední pevnou oporu na jihoamerické pevnině.",
+  "about": "bitvě u Ayacucha",
+  "more_fact": "Vítězné jednotky u Ayacucha vedl generál Antonio José de Sucre, blízký spolubojovník Simóna Bolívara.",
+  "irony_prompt": "A single dramatic hillside battlefield fills the frame at dawn, a lone weathered flag standing upright planted firmly in the ground amid scattered abandoned equipment, morning mist rolling across the grass. Smaller and subordinate: a distant row of hills under soft pink sky, a single riderless horse grazing calmly nearby, scattered rocks on the slope. MOOD: solemn, historic."
+ },
+ {
+  "id": "pe-d-ztracene-uzemi-po-valce",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "O co přišlo Peru po prohrané válce o Pacifik (1879–1883) s Chile?",
+  "answer": "O jižní provincie bohaté na ložiska ledku",
+  "distractors": [
+   "O celé své přístavy na severu země",
+   "O celé Amazonské pobřeží",
+   "O hlavní město natrvalo"
+  ],
+  "quip_correct": "Ztracené nerosty, ztracené území — Chile odešlo s bohatou kořistí.",
+  "quip_wrong": "Škoda vznikla, ale jinde a jiného rázu — šlo o jižní území s cenným nerostným bohatstvím.",
+  "explanation": "Spor vyvolaly právě bohaté zásoby ledku a guana, o které se obě země i s Bolívií přetahovaly.",
+  "about": "válce o Pacifik",
+  "more_fact": "Spor o přesnou hranici mezi Peru a Chile kvůli téhle válce definitivně urovnal až Haagský soud v roce 2014.",
+  "irony_prompt": "A single old weathered border marker post fills the frame, standing alone on a vast dry desert plain under a harsh sun, its surface completely blank and unmarked from decades of wind erosion. Smaller and subordinate: cracked barren earth stretching to the horizon, a single rusted abandoned cart wheel half-buried in sand, distant low hills. MOOD: stark, somber."
+ },
+ {
+  "id": "pe-d-zlata-era-plna-stinu",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co přinesl na počátku 20. století do amazonského města Iquitos kaučukový boom?",
+  "answer": "Obrovský zisk pro majitele plantáží a zároveň těžké vykořisťování domorodých pracovníků",
+  "distractors": [
+   "Jen krátký a brzy zapomenutý hospodářský rozmach bez trvalých stop",
+   "Klidný příliv evropských přírodovědců a jejich vědeckých expedic",
+   "Rychlou stavbu železnic a silnic po celé peruánské Amazonii"
+  ],
+  "quip_correct": "Zlaté časy pro pár lidí, temné časy pro mnohem víc lidí.",
+  "quip_wrong": "Boom vážně nastal, ale jeho dopad byl jiný — zisk na jedné straně a utrpení na druhé.",
+  "explanation": "Bohatství z kaučuku si tehdy v Iquitosu stavělo domy dovezené přímo z Evropy, zatímco domorodé obyvatelstvo bylo nuceno k otrocké práci.",
+  "about": "kaučukovém boomu v Iquitosu",
+  "more_fact": "Po vynálezu levnější plantážní produkce kaučuku v Asii boom v Amazonii rychle zkolaboval a Iquitos upadl na desítky let do zapomnění.",
+  "irony_prompt": "A single ornate European-style mansion facade fills the frame, incongruously grand and gilded, standing amid the dense green Amazon jungle that presses in around it. Smaller and subordinate: a narrow overgrown path leading away from the house, a rusting piece of old machinery half swallowed by vines, thick humid jungle canopy overhead. MOOD: eerie, ironic."
+ },
+ {
+  "id": "pe-d-vzpoura-jejiz-jmeno-nesl-posledni-inka",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co se stalo s vůdcem největšího domorodého povstání v koloniálním Peru z roku 1780, Túpacem Amaru II.?",
+  "answer": "Byl zajat a popraven",
+  "distractors": [
+   "Uprchl a založil vlastní samostatný stát",
+   "Byl omilostněn a stal se guvernérem",
+   "Zemřel přirozenou smrtí ve vysokém věku"
+  ],
+  "quip_correct": "Povstání potlačeno, vůdce popraven — koloniální moc si nedala pokoj.",
+  "quip_wrong": "Osud vzbouřeného vůdce byl mnohem tvrdší než to, co navrhuješ.",
+  "explanation": "Povstání neslo jméno posledního inckého vládce a na dlouhá desetiletí předznamenalo pozdější boj za nezávislost celého kontinentu.",
+  "about": "povstání Túpaca Amaru II.",
+  "more_fact": "Jméno Túpac Amaru si o dvě století později vypůjčila i partyzánská skupina v sousední Bolívii jako odkaz na dávný boj proti nadvládě.",
+  "irony_prompt": "A single ornate empty colonial-era throne chair fills the frame, sitting abandoned in a dim stone chamber, a single shaft of light cutting across its dusty velvet seat. Smaller and subordinate: a plain unmarked ceremonial rope coiled on the floor nearby, cracked stone walls, a lone candle burned down to a stub. MOOD: somber, historic."
+ },
+ {
+  "id": "pe-d-umeni-na-pomezi-dvou-kultur",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je pozoruhodná koloniální peruánská Cuzká malířská škola (Escuela Cuzqueña)?",
+  "answer": "Spojovala evropské malířské techniky s domorodými andskými motivy",
+  "distractors": [
+   "Malovala výhradně abstraktní geometrické vzory",
+   "Odmítala jakékoli náboženské motivy",
+   "Používala jen černobílé provedení"
+  ],
+  "quip_correct": "Evropský štětec, andská duše — kombinace, která vydržela staletí.",
+  "quip_wrong": "Skoro, ale to, co dělá tuhle školu výjimečnou, je přesně ono spojení dvou světů.",
+  "explanation": "Malíři této školy často zdobili andělská roucha andskými vzory nebo malovali domorodé rostliny a zvířata do biblických scén.",
+  "about": "Cuzké malířské škole",
+  "more_fact": "Většina obrazů Cuzké školy zůstala bez podpisu autora, protože malíři byli považováni spíš za řemeslníky než za umělce.",
+  "irony_prompt": "A single ornate gilded religious painting fills the frame in a heavy carved wooden frame, its central figure draped in robes patterned with distinctly Andean geometric motifs rather than European floral designs. Smaller and subordinate: a dim church interior wall behind it, a single flickering candle in an iron holder, worn stone floor tiles. MOOD: reverent, ornate."
+ },
+ {
+  "id": "pe-d-mala-rybka-velkeho-vyznamu",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Příroda",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Proč je peruánský rybolov drobné rybky sardele (anchoveta) mimořádně citlivý na jev El Niño?",
+  "answer": "Teplý proud odežene studenou živinami bohatou vodu, ve které sardele žijí",
+  "distractors": [
+   "Sardele naopak s teplým proudem množství vždy zvýší",
+   "Sardele na teplotu vody nijak nereagují",
+   "Jev ovlivňuje jen mořský led v Antarktidě"
+  ],
+  "quip_correct": "Teplá voda přijde, ryby zmizí — a s nimi i příjmy celého odvětví.",
+  "quip_wrong": "Je to přesně naopak, než navrhuješ — teplý proud sardelím škodí, protože jim vezme studenou živnou vodu.",
+  "explanation": "Tenhle rybolov je co do objemu úlovku největším rybolovem jednoho druhu na celém světě.",
+  "about": "peruánském rybolovu sardele",
+  "more_fact": "Z peruánských sardelí se z velké části vyrábí rybí moučka, kterou se krmí hospodářská zvířata po celém světě.",
+  "irony_prompt": "A single massive fishing net fills the frame, bulging and overflowing with countless small silvery fish, hauled up dramatically against a backdrop of grey ocean waves. Smaller and subordinate: a weathered fishing boat hull visible at the edge, a flock of hungry seabirds circling above, distant foggy coastline. MOOD: dramatic, abundant."
+ },
+ {
+  "id": "pe-d-festival-kde-nebe-potka-zem",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co symbolizuje tradiční andský festival Yawar Fiesta, při kterém je kondor přivázán na hřbet býka?",
+  "answer": "Symbolický souboj domorodé Ameriky (kondor) se Španělskem (býk)",
+  "distractors": [
+   "Oslavu spřátelení dvou zvířecích druhů",
+   "Náboženský obřad na počest boha deště",
+   "Soutěž místních chovatelů dobytka"
+  ],
+  "quip_correct": "Kondor nahoře, býk dole — stará křivda oblečená do festivalu.",
+  "quip_wrong": "Zvířata na festivalu jsou skutečně dvě, ale jejich role má mnohem hlubší, symbolický smysl.",
+  "explanation": "Festival se dodnes slaví v horských vesnicích jako připomínka koloniální minulosti, zvíře samotné se po obřadu nechá bez zranění odletět.",
+  "about": "festivalu Yawar Fiesta",
+  "more_fact": "Podobné symbolické souboje popsal i peruánský spisovatel José María Arguedas ve svých románech o životě v Andách.",
+  "irony_prompt": "A single majestic condor fills the frame, wings spread wide as it rises from atop a bull's back in a dusty mountain arena, feathers ruffled with motion. Smaller and subordinate: a ring of onlookers seated on a distant earthen embankment, a cluster of colorful ponchos draped over a nearby fence rail, dry Andean hills beyond. MOOD: dramatic, symbolic."
+ },
+ {
+  "id": "pe-d-prvni-lok-nepatri-tobe",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co se v Peru tradičně dělá s prvními kapkami nápoje chicha de jora, než se vypije?",
+  "answer": "Vylijí se na zem jako obětina pro Pachamamu",
+  "distractors": [
+   "Vylijí se zpátky do sudu",
+   "Vypijí se jako první přípitek hostiteli",
+   "Nalijí se do posvátné keramické nádoby k uschování"
+  ],
+  "quip_correct": "Přesně, první přípitek patří zemi, teprve pak lidem.",
+  "quip_wrong": "Skoro, ale ten první lok míří jinam — rovnou na zem, jako dar pro Matku zemi.",
+  "explanation": "Pachamama je v andské tradici bohyně země a plodnosti, a tohle gesto je poděkováním za úrodu.",
+  "about": "obřadu s chichou de jora",
+  "more_fact": "Chicha de jora se vaří z kukuřice, která se předtím nechá naklíčit a poté nakvasit, což jí dává mírně kyselou chuť.",
+  "irony_prompt": "A single terracotta jug tilted mid-pour fills the frame, a thin golden stream of liquid splashing onto bare dark soil in a ceremonial gesture. Smaller and subordinate: a woven blanket spread on the ground nearby with small dried leaves scattered as offerings, distant Andean farmland terraces, soft early morning light. MOOD: reverent, earthy."
+ },
+ {
+  "id": "pe-d-svetice-ktera-otevrela-dvere",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je výjimečná peruánská Santa Rosa de Lima v dějinách katolické církve?",
+  "answer": "Byla první svatořečenou osobou z celé Ameriky",
+  "distractors": [
+   "Byla první ženou zvolenou papežem",
+   "Založila první univerzitu v Jižní Americe",
+   "Byla poslední inckou vládkyní"
+  ],
+  "quip_correct": "Přesně, první svatá z celého nového kontinentu.",
+  "quip_wrong": "Skoro, ale její prvenství se váže k úplně jiné věci.",
+  "explanation": "Žila v 16. a 17. století a dodnes je patronkou Limy i celého Peru.",
+  "about": "Santě Rose de Lima",
+  "more_fact": "Podle legendy odmítala nápadníky tím, že si úmyslně poškodila obličej, aby o svou krásu přišla a mohla se plně věnovat modlitbám.",
+  "irony_prompt": "A single ornate carved wooden religious statue fills the frame, standing serenely in a shadowy stone church niche, a simple ring of dried roses resting at its base. Smaller and subordinate: a handful of lit candles flickering on a nearby ledge, worn stone church floor tiles, soft light filtering through a high window. MOOD: reverent, quiet."
+ },
+ {
+  "id": "pe-d-bojovnice-ktera-sdilela-jeho-osud",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jaký osud potkal Micaelu Bastidas, klíčovou spolubojovnici a manželku povstalce Túpaca Amaru II.?",
+  "answer": "Byla zajata a popravena společně s ním",
+  "distractors": [
+   "Uprchla do exilu a dožila v klidu",
+   "Byla omilostněna kvůli svému postavení",
+   "Stala se po povstání guvernérkou"
+  ],
+  "quip_correct": "Bojovala po jeho boku, sdílela i ten nejhorší konec.",
+  "quip_wrong": "Její osud byl bohužel mnohem tvrdší, než navrhuješ — koloniální moc nikoho neušetřila.",
+  "explanation": "Byla ve skutečnosti hlavní organizátorkou povstání a její vojenské schopnosti historikové dnes hodnotí výš než schopnosti jejího manžela.",
+  "about": "Micaele Bastidas",
+  "more_fact": "Dnes patří v Peru mezi nejuznávanější ženské postavy v boji proti koloniální nadvládě a nese po ní jméno i nejedna škola.",
+  "irony_prompt": "A single plain weathered iron shackle fills the frame, resting open on a worn stone ledge, a single wilted red flower placed beside it. Smaller and subordinate: a cracked adobe wall in the background, a distant view of Andean hills through a narrow window, soft fading evening light. MOOD: somber, solemn."
+ },
+ {
+  "id": "pe-d-slovo-pro-ptaci-hnojivo",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Které kečuánské slovo pro cenné ptačí hnojivo vstoupilo v 19. století do mezinárodního obchodu a do světových jazyků?",
+  "answer": "Guano",
+  "distractors": [
+   "Pisco",
+   "Chacra",
+   "Huaca"
+  ],
+  "quip_correct": "Přesně, ptačí trus se stal slovem, které znal celý svět obchodu.",
+  "quip_wrong": "Tohle slovo je taky kečuánského původu, ale netýká se ptačího hnojiva.",
+  "explanation": "Z peruánských ostrovů bylo v 19. století tak ceněné hnojivo, že o jeho těžbu a export se vedly i mezinárodní spory.",
+  "about": "slovu guano",
+  "more_fact": "Období největšího rozmachu obchodu s guanem se v Peru přezdívá „guanová éra“ a přineslo zemi na čas obrovské bohatství.",
+  "irony_prompt": "A single steep rocky island cliff fills the frame, thickly coated from top to bottom in pale chalky white deposits, thousands of seabirds perched densely across every ledge. Smaller and subordinate: an old wooden loading chute reaching down toward the sea, a small anchored ship far below, hazy coastal light. MOOD: striking, industrious."
+ },
+ {
+  "id": "pe-d-dezert-s-romantickym-jmenem",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Podle čeho je pojmenovaný peruánský dezert suspiro a la limeña?",
+  "answer": "Podle vzdechu",
+  "distractors": [
+   "Podle úsměvu",
+   "Podle objetí",
+   "Podle polibku"
+  ],
+  "quip_correct": "Přesně, dezert tak jemný, že si o něm povzdechneš.",
+  "quip_wrong": "Romantické gesto to je, ale jiné — jméno dezertu patří jinému, tiššímu projevu citu.",
+  "explanation": "Jméno „vzdech limské dámy“ dostal kvůli své lehké, vzdušné konzistenci z karamelizovaného kondenzovaného mléka a pusinky.",
+  "about": "dezertu suspiro a la limeña",
+  "more_fact": "Podle legendy vznikl tak, že básník poprosil svou ženu, ať pro nový dezert vymyslí jméno, co zní jako láska sama.",
+  "irony_prompt": "A single elegant glass dessert cup fills the frame, filled with smooth caramel-colored cream topped with a delicate swirl of light meringue, a fine dusting of cinnamon on top. Smaller and subordinate: a small silver spoon resting beside the cup, a simple lace tablecloth corner visible, soft warm candlelight. MOOD: elegant, romantic."
+ },
+ {
+  "id": "pe-d-koren-z-nejvyssich-vysek",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "V jaké extrémní výšce se v peruánských Andách pěstuje ceněný kořen maca, považovaný za superpotravinu?",
+  "answer": "Přes 4 000 metrů nad mořem",
+  "distractors": [
+   "Jen na úrovni moře",
+   "V hloubce amazonského pralesa",
+   "Pod hladinou jezera Titicaca"
+  ],
+  "quip_correct": "Přesně, kořen, kterému nevadí ani řídký horský vzduch.",
+  "quip_wrong": "Skoro, ale tahle rostlina roste v úplně jiných podmínkách — vysoko v chladných horách.",
+  "explanation": "Patří mezi málo rostlin, které dokážou přežít mráz, silný vítr a intenzivní sluneční záření zároveň ve vysokých Andách.",
+  "about": "kořeni maca",
+  "more_fact": "Práškovou macu si dnes mísí do smoothies lidé po celém světě, ačkoli v Peru se tradičně jedla spíš uvařená jako kaše.",
+  "irony_prompt": "A single knobbly beige root vegetable fills the frame, resting on rough burlap sacking, its surface dusty from high-altitude soil. Smaller and subordinate: a small wooden bowl of the same roots nearby, a distant snow-dusted mountain peak visible through a gap in fabric, thin cold mountain light. MOOD: earthy, hardy."
+ },
+ {
+  "id": "pe-d-pest-ktera-otevrela-cestu",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Čím je peruánská boxerka Kina Malpartida výjimečná v historii peruánského sportu?",
+  "answer": "Stala se první peruánskou mistryní světa v profesionálním boxu",
+  "distractors": [
+   "Stala se první peruánskou olympijskou vítězkou v atletice",
+   "Stala se první ženou v čele peruánského fotbalového svazu",
+   "Stala se první peruánskou vítězkou tenisového grandslamu"
+  ],
+  "quip_correct": "Přesně, první peruánský titul mistryně světa v ringu.",
+  "quip_wrong": "Skoro, ale jejím prvenstvím je ring, ne atletická dráha, fotbalová kancelář ani tenisový kurt.",
+  "explanation": "Kina Malpartida před boxerskou kariérou studovala ekonomii a k profesionálnímu boxu se dostala až v dospělosti.",
+  "about": "Kině Malpartida",
+  "more_fact": "Po skončení kariéry se věnuje i ochraně životního prostředí a veřejné osvětě o ohroženém amazonském pralese a jeho zvířatech.",
+  "irony_prompt": "A single raised boxing glove fills the frame, fist triumphantly punching upward against bright arena lights, motion blur trailing behind it. Smaller and subordinate: a blurred cheering crowd rising from seats in the background, a corner stool and water bottle just visible at ring's edge, ropes crossing the lower frame. MOOD: triumphant, fierce."
+ },
+ {
+  "id": "pe-d-inckou-sestra-ukryta-v-horach",
+  "cc": "pe",
+  "country": "Peru",
+  "section": "Místa",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Co je zvláštní na peruánských ruinách Choquequirao, kterým se přezdívá „sestra Machu Picchu“?",
+  "answer": "Jsou dodnes z velké části neprozkoumané a dostupné jen po několikadenním pěším treku",
+  "distractors": [
+   "Jsou plně vykopané a spojené silnicí s Cuscem",
+   "Leží přímo ve středu hlavního města Limy",
+   "Byly úplně zničeny a dnes z nich nezbylo nic"
+  ],
+  "quip_correct": "Přesně, sestra Machu Picchu, ke které se musí dojít po svých.",
+  "quip_wrong": "Skoro, ale výjimečnost tohohle místa je jiná — je to místo skoro netknuté a těžko dostupné.",
+  "explanation": "Podle odhadů archeologů je odkryto jen kolem třiceti procent celého rozsáhlého komplexu.",
+  "about": "ruinách Choquequirao",
+  "more_fact": "Cesta k nim trvá pěšky obvykle čtyři dny tam a zpět, takže na rozdíl od Machu Picchu tam nehrozí davy turistů.",
+  "irony_prompt": "A single terraced stone ruin complex fills the frame, perched dramatically on a remote misty mountain ridge with no roads or crowds in sight, wild grass growing between ancient stone walls. Smaller and subordinate: a narrow steep dirt trail switchbacking up toward it, a solitary hiker's backpack resting on a rock, deep green valley plunging below. MOOD: remote, majestic."
  }
 ]

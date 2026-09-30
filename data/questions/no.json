@@ -956,7 +956,6 @@
   "section": "Jídlo",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "V čem se v Norsku před vařením několik dní máčí sušená ryba na vánoční pokrm lutefisk?",
   "answer": "V roztoku louhu",
   "distractors": [
@@ -969,7 +968,8 @@
   "explanation": "Louh rybu nafoukne do rosolovité konzistence a pak se musí několik dní vymáčet v čisté vodě, jinak by byla nepoživatelná. Podává se se slaninou, hráškovou kaší a bramborami.",
   "about": "lutefisku",
   "more_fact": "Lutefisk je tak zásaditý, že na talíři dokáže zčernat stříbrné příbory, proto se k němu používá obyčejná ocel. Oblíbený je i mezi potomky skandinávských přistěhovalců v Minnesotě.",
-  "irony_prompt": "A giant trembling rectangular slab of glossy, jelly-like white fish fills the frame on a plain blue plate, wobbling so much that a brave Norwegian grandmother in a knitted sweater holds it steady with a fork and a determined grin. Smaller and subordinate: a bowl of mashed green peas; crispy strips of bacon; a nervous guest wearing safety goggles. MOOD: comic, cozy, wintry."
+  "irony_prompt": "A giant trembling rectangular slab of glossy, jelly-like white fish fills the frame on a plain blue plate, wobbling so much that a brave Norwegian grandmother in a knitted sweater holds it steady with a fork and a determined grin. Smaller and subordinate: a bowl of mashed green peas; crispy strips of bacon; a nervous guest wearing safety goggles. MOOD: comic, cozy, wintry.",
+  "online_only": true
  },
  {
   "id": "no-s-pravo-kazdeho-cloveka",
@@ -978,7 +978,6 @@
   "section": "Kultura & tradice",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Co v Norsku každému zaručuje staré obyčejové právo allemannsretten?",
   "answer": "Pohyb i stanování na cizí neobdělané půdě",
   "distractors": [
@@ -991,7 +990,8 @@
   "explanation": "Na jednom místě se smí tábořit až dvě noci bez svolení majitele, pokud stan stojí aspoň 150 metrů od obydlí. Sbírat se smějí i lesní plody a houby.",
   "about": "norském právu volného pohybu",
   "more_fact": "Od roku 1957 je právo zakotvené v zákoně o pobytu v přírodě. Souvisí s ním i norský pojem friluftsliv, život pod širým nebem, který děti poznávají už ve školce – klidně i v mrazu.",
-  "irony_prompt": "A bright orange tent pitched on a mossy hillside fills the frame, with a happy hiker waving from its doorway while a friendly farmer walks up from his red farmhouse in the distance carrying a steaming coffee pot to share. Smaller and subordinate: a bowl of wild blueberries on a rock; a curious sheep peering into the tent; a fjord glittering far below. MOOD: cheerful, welcoming, fresh."
+  "irony_prompt": "A bright orange tent pitched on a mossy hillside fills the frame, with a happy hiker waving from its doorway while a friendly farmer walks up from his red farmhouse in the distance carrying a steaming coffee pot to share. Smaller and subordinate: a bowl of wild blueberries on a rock; a curious sheep peering into the tent; a fjord glittering far below. MOOD: cheerful, welcoming, fresh.",
+  "online_only": true
  },
  {
   "id": "no-s-slovo-ke-svacine",
@@ -1000,7 +1000,6 @@
   "section": "Jazyk & slova",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Co Norové označují jediným slovem „pålegg“?",
   "answer": "Cokoli, co se dá položit na chleba",
   "distractors": [
@@ -1013,7 +1012,8 @@
   "explanation": "Norská svačina matpakke bývá prostý otevřený chléb s tenkou vrstvou pålegg, zabalený do papíru. Mezi krajíce se vkládá speciální papírek, aby se neslepily.",
   "about": "norské svačině",
   "more_fact": "Ke krájení sýra na chleba slouží ostehøvel, hoblík na sýr, který si v roce 1925 nechal patentovat truhlář Thor Bjørklund z Lillehammeru. Dnes ho najdeš v kuchyních po celém světě.",
-  "irony_prompt": "One enormous open-faced slice of bread fills the frame on a kitchen table, piled impossibly high with cheese slices, salami, cucumber, jam and a curled sardine all at once, while a cheerful Norwegian boy in a woolly hat tries to fit it into a tiny plain lunchbox. Smaller and subordinate: a cheese slicer lying beside the bread; a patient cat eyeing the sardine; snowflakes at the window. MOOD: playful, cozy, funny."
+  "irony_prompt": "One enormous open-faced slice of bread fills the frame on a kitchen table, piled impossibly high with cheese slices, salami, cucumber, jam and a curled sardine all at once, while a cheerful Norwegian boy in a woolly hat tries to fit it into a tiny plain lunchbox. Smaller and subordinate: a cheese slicer lying beside the bread; a patient cat eyeing the sardine; snowflakes at the window. MOOD: playful, cozy, funny.",
+  "online_only": true
  },
  {
   "id": "no-s-sabotaz-1943",
@@ -1022,7 +1022,6 @@
   "section": "Historie",
   "difficulty": 3,
   "type": "choice",
-  "online_only": true,
   "question": "Co zničila skupina norských sabotérů v únoru 1943 v elektrárně Vemork u Rjukanu?",
   "answer": "Zařízení na výrobu těžké vody",
   "distractors": [
@@ -1035,6 +1034,860 @@
   "explanation": "Těžká voda sloužila Němcům při pokusech s jaderným reaktorem. Komando se k elektrárně dostalo přes zamrzlou roklinu a nálože položilo, aniž by padl výstřel.",
   "about": "sabotáži ve Vemorku",
   "more_fact": "Zbytek zásob chtěli Němci o rok později odvézt trajektem přes jezero Tinnsjø, odboj ho ale potopil. Příběh se proslavil filmem Hrdinové z Telemarku s Kirkem Douglasem.",
-  "irony_prompt": "A massive snow-covered stone hydroelectric plant fills the frame, perched on the edge of a deep frozen gorge, while a row of skiers in white winter smocks glides silently away along the ridge, seen from behind. Smaller and subordinate: a single plain metal canister sliding comically down the snow; a startled owl on a pine branch; puffs of powder from their skis. MOOD: adventurous, clever, crisp."
+  "irony_prompt": "A massive snow-covered stone hydroelectric plant fills the frame, perched on the edge of a deep frozen gorge, while a row of skiers in white winter smocks glides silently away along the ridge, seen from behind. Smaller and subordinate: a single plain metal canister sliding comically down the snow; a startled owl on a pine branch; puffs of powder from their skis. MOOD: adventurous, clever, crisp.",
+  "online_only": true
+ },
+ {
+  "id": "no-k-papuchalk",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Příroda",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje mořský pták s pestrobarevným zobákem, který hnízdí v obřích koloniích na norských ostrovech?",
+  "answer": "Papuchalk",
+  "distractors": [
+   "Tučňák",
+   "Pelikán",
+   "Albatros"
+  ],
+  "quip_correct": "Bod pro tebe! Ten zobák vypadá jako namalovaný klaunem.",
+  "quip_wrong": "Tučňáci žijí na jižní polokouli, a navíc neumí létat — tenhle pták ano.",
+  "explanation": "Papuchalci tráví většinu roku na širém moři a na souš přilétají jen hnízdit, vždy do stejné nory ve skále.",
+  "about": "papuchalcích",
+  "more_fact": "Jeden pár papuchalků snáší ročně jen jedno vejce a o mládě se stará celé léto v úzké noře vyhrabané ve skalní stěně.",
+  "irony_prompt": "A single puffin with an oversized colorful striped beak fills the frame, standing proudly on a rocky cliff edge like a tiny self-important mascot. Smaller and subordinate: a few other puffins as small distant silhouettes on the cliff below, wispy sea fog, tufts of grass. MOOD: charming, comical, proud."
+ },
+ {
+  "id": "no-k-lesni-kocka",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Příroda",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje norské plemeno kočky s hustou huňatou srstí, o kterém pověsti říkaly, že táhne vůz bohyně Freyji?",
+  "answer": "Norská lesní kočka",
+  "distractors": [
+   "Sibiřská kočka",
+   "Kočka mainská mývalí",
+   "Norská horská kočka"
+  ],
+  "quip_correct": "Trefa do černého! Ta srst jí sluší i v pořádné zimě.",
+  "quip_wrong": "Blízko, ale správné jméno nese přímo Norsko, ne jinou zemi.",
+  "explanation": "Norská lesní kočka má dvouvrstvou srst a vodoodpudivou podsadu, takže jí nevadí ani sníh, ani déšť.",
+  "about": "norské lesní kočce",
+  "more_fact": "Norská lesní kočka umí díky silným drápům šplhat po kmenech stromů hlavou dolů, což většina koček nezvládne.",
+  "irony_prompt": "A single fluffy long-haired cat with a huge ruff of fur fills the frame, sitting regally on a mossy rock in a pine forest, tail wrapped neatly around its paws. Smaller and subordinate: a tiny toy wooden cart behind it, pine trees, soft forest light. MOOD: majestic, cozy, playful."
+ },
+ {
+  "id": "no-k-kosatky-fjord",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Příroda",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaké velké černobílé mořské šelmy se každou zimu sjíždějí do norských fjordů lovit hejna sleďů?",
+  "answer": "Kosatky",
+  "distractors": [
+   "Plejtváci",
+   "Narvalové",
+   "Lachtani"
+  ],
+  "quip_correct": "Paráda, sedí to! Sledi nemají proti tak sehranému hejnu kosatek šanci.",
+  "quip_wrong": "Ti taky žijí v severních mořích, ale nemají tu typickou černobílou barvu ani tak ostré zuby.",
+  "explanation": "Kosatky loví sledě technikou zvanou karusel — nadhánějí hejno k hladině a pak ho omráčí silnými údery ocasní ploutve.",
+  "about": "kosatkách ve fjordech",
+  "more_fact": "Za kosatkami do norských fjordů v zimě míří i velryby plejtvák keporkak, protože se přiživují na hejnech sleďů také.",
+  "irony_prompt": "A single huge black-and-white orca fills the frame, breaching halfway out of dark fjord water with a spray of droplets frozen mid-air. Smaller and subordinate: steep snowy mountainsides in the background, a scatter of silvery fish, faint northern winter light. MOOD: powerful, dramatic, thrilling."
+ },
+ {
+  "id": "no-k-pizmon-dovrefjell",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Příroda",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "V pohoří Dovrefjell žije chlupaté zvíře s mohutnými zahnutými rohy, které vypadá jako přeživší z doby ledové. Jak se jmenuje?",
+  "answer": "Pižmoň",
+  "distractors": [
+   "Zubr",
+   "Jak",
+   "Kamzík"
+  ],
+  "quip_correct": "Hop, a je to! Ta huňatá srst vypadá jako rozcuchaný koberec s rohy.",
+  "quip_wrong": "Ten žije spíš na stepích a horách jinde ve světě, v Norsku ho ve stádech nepotkáš.",
+  "explanation": "Pižmoň má dvouvrstvou srst zvanou qiviut, která je jemnější a teplejší než ovčí vlna a chrání ho i při mrazech pod −40 °C.",
+  "about": "pižmoních na Dovrefjell",
+  "more_fact": "Když pižmoně ohrozí vlk, stádo se semkne do kruhu s mláďaty uprostřed a rohy namíří ven jako živá hradba.",
+  "irony_prompt": "A single shaggy musk ox with huge curved horns and a thick wind-blown coat fills the frame, standing solidly on a rocky windswept plateau. Smaller and subordinate: patchy snow on the ground, low grey mountains in the distance, a few tufts of blowing fur. MOOD: rugged, stoic, ancient."
+ },
+ {
+  "id": "no-k-kralovska-garda",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Před královským palácem v Oslu denně slavnostně střídají stráž vojáci ve vysokých černých čepicích. Jak se tahle jednotka jmenuje?",
+  "answer": "Královská garda",
+  "distractors": [
+   "Palácová policie",
+   "Vikingská hlídka",
+   "Hraniční stráž"
+  ],
+  "quip_correct": "Bystrá hlava! A vydrží stát bez hnutí i v pořádné zimě.",
+  "quip_wrong": "Zní to podobně, ale tahle jednotka má oficiálně úplně jiné jméno.",
+  "explanation": "Vojáci královské gardy musí projít výcvikem, ve kterém se učí zůstat naprosto nehybní i s turisty fotícími se přímo vedle nich.",
+  "about": "královské gardě",
+  "more_fact": "Královská garda v Oslu funguje zároveň jako běžná vojenská jednotka — mladí vojáci u ní mohou plnit i svou základní vojenskou službu.",
+  "irony_prompt": "A single tall guard in a dark uniform and tall fur cap fills the frame, standing perfectly still at rigid attention in front of a grand palace entrance. Smaller and subordinate: a couple of tiny distant tourists with cameras, palace columns, soft grey daylight. MOOD: solemn, proud, quietly comical."
+ },
+ {
+  "id": "no-k-rybi-tuk",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jídlo",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Norské děti odjakživa dostávaly na lžíci nechutnou, ale zdravou tekutinu plnou vitamínu D. Z čeho se lisuje?",
+  "answer": "Z tresčích jater",
+  "distractors": [
+   "Ze lněných semínek",
+   "Z lososí kůže",
+   "Z mořských řas"
+  ],
+  "quip_correct": "Trefa do černého! Rybí tuk je slavný přesně pro tu odpornou vůni a skvělé vitamíny.",
+  "quip_wrong": "Chutná to trochu jako z moře, ale nejde o řasy ani semínka.",
+  "explanation": "Kvůli slabému norskému slunci v zimě dětem hrozil nedostatek vitamínu D, a lžička rybího tuku denně tomu měla zabránit.",
+  "about": "rybím tuku",
+  "more_fact": "Dřív se rybí tuk vařil přímo z jater tresek na lodích a jeho zápach byl tak silný, že prosákl celými rybářskými vesnicemi.",
+  "irony_prompt": "A single old-fashioned glass spoon brimming with golden-amber oil fills the frame, held up against soft window light. Smaller and subordinate: a plain wooden kitchen table blurred behind it, a simple glass bottle, morning light. MOOD: nostalgic, slightly comical, wholesome."
+ },
+ {
+  "id": "no-k-kvikk-lunsj",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jídlo",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jakou čokoládovou tyčinku berou Norové na výlety do hor tak často, že se jí přezdívá „turistická svačina“?",
+  "answer": "Kvikk Lunsj",
+  "distractors": [
+   "Freia Melkesjokolade",
+   "Nidar Stratos",
+   "Firkløver"
+  ],
+  "quip_correct": "To bylo hned vidět! Bez ní prý žádná norská víkendová túra do hor nezačíná.",
+  "quip_wrong": "Blízko — je to taky oblíbená norská sladkost, ale s horami ji nikdo tolik nespojuje.",
+  "explanation": "Kvikk Lunsj má tvar oplatky v čokoládě rozdělené na čtyři proužky, které se dají snadno rozlomit prsty bez nože.",
+  "about": "tyčince Kvikk Lunsj",
+  "more_fact": "Prodej tyčinek Kvikk Lunsj v Norsku každoročně prudce stoupá v době jarních prázdnin, kdy tisíce lidí vyráží lyžovat do hor.",
+  "irony_prompt": "A single chocolate-coated wafer bar broken into segments fills the frame, resting on a flat grey rock with a mountain backdrop. Smaller and subordinate: a pair of ski poles leaning nearby, patchy snow, bright alpine sunlight. MOOD: cheerful, energetic, wholesome."
+ },
+ {
+  "id": "no-k-preikestolen",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje obří plochá skalní plošina vysoko nad fjordem, kam turisté chodí fotit si nohy visící nad propastí?",
+  "answer": "Preikestolen",
+  "distractors": [
+   "Trolltunga",
+   "Kjeragbolten",
+   "Besseggen"
+  ],
+  "quip_correct": "Paráda, sedí to! Z téhle plošiny je výhled na fjord skoro 600 metrů dolů.",
+  "quip_wrong": "Taky slavné norské skalní místo, ale jiného tvaru — tohle je čtvercová plošina, ne jazyk skály.",
+  "explanation": "Preikestolen vznikl před tisíci lety popraskáním skály podél ledem rozšířených puklin a jeho plošina je skoro dokonale rovná.",
+  "about": "Preikestolenu",
+  "more_fact": "Na Preikestolen vede pěší výstup, který trvá zhruba dvě hodiny a patří mezi nejnavštěvovanější turistické trasy v celém Norsku.",
+  "irony_prompt": "A single massive flat rectangular rock plateau fills the frame, jutting dramatically out over a deep blue fjord far below. Smaller and subordinate: tiny distant hikers near its edge, steep cliff walls, a faint mountain range on the horizon. MOOD: awe-inspiring, dizzying, majestic."
+ },
+ {
+  "id": "no-k-trollstigen",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje norská horská silnice s jedenácti ostrými zatáčkami, jejíž název v překladu znamená „trollí schody“?",
+  "answer": "Trollstigen",
+  "distractors": [
+   "Trollveggen",
+   "Trollfjord",
+   "Trollhaugen"
+  ],
+  "quip_correct": "Bod pro tebe! Autobusy se v těch zatáčkách musí otáčet skoro na místě.",
+  "quip_wrong": "Podobné jméno, ale to označuje spíš skálu nebo fjord, ne klikatou silnici.",
+  "explanation": "Silnice Trollstigen vede podél prudkého vodopádu a je tak strmá, že se přes zimu úplně zavírá kvůli sněhu a lavinám.",
+  "about": "silnici Trollstigen",
+  "more_fact": "Nejprudší úsek silnice Trollstigen má sklon skoro deset procent a nákladní auta delší než dvanáct metrů tudy vůbec nesmí.",
+  "irony_prompt": "A single narrow mountain road with eleven sharp hairpin turns fills the frame, zigzagging dramatically down a steep green valley. Smaller and subordinate: a tiny car rounding one bend, a thin waterfall beside the road, jagged peaks above. MOOD: dizzying, adventurous, epic."
+ },
+ {
+  "id": "no-k-farikal",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jídlo",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jaké tradiční norské jídlo se vaří celé hodiny z kusů skopového masa, hlávkového zelí a celých zrnek pepře?",
+  "answer": "Fårikål",
+  "distractors": [
+   "Lutefisk",
+   "Rakfisk",
+   "Kjøttkaker"
+  ],
+  "quip_correct": "Trefa do černého! Fårikål se považuje skoro za norské národní jídlo.",
+  "quip_wrong": "Taky staré norské jídlo, ale žádné skopové ani zelí v něm nehledej.",
+  "explanation": "Fårikål se vaří v jednom hrnci na vrstvy — maso, zelí, sůl a pepř — a na Norský den fårikålu se podává po celé zemi.",
+  "about": "fårikålu",
+  "more_fact": "Fårikål se tradičně vaří v jediném velkém hrnci celý den a nejlepší je prý druhý den po uvaření, když se chutě spojí.",
+  "irony_prompt": "A single large steaming pot filled with layers of chunky meat and pale cabbage wedges fills the frame, whole black peppercorns scattered visibly on top. Smaller and subordinate: a simple wooden ladle resting on the rim, soft kitchen steam, a plain wooden table. MOOD: hearty, cozy, homely."
+ },
+ {
+  "id": "no-k-sedm-sester",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se podle staré pověsti jmenují vodopády padající do Geirangerfjordu, pojmenované po sedmi sestrách?",
+  "answer": "Sedm sester",
+  "distractors": [
+   "Sedm trpaslíků",
+   "Sedm slz",
+   "Sedm mostů"
+  ],
+  "quip_correct": "Hop, a je to! Proti nim stojí na druhé straně fjordu vodopád jménem Nápadník.",
+  "quip_wrong": "Hezký nápad, ale pověst mluví o sourozenkyních, ne o trpaslících ani o slzách.",
+  "explanation": "Podle pověsti tančí sedm vodopádů-sester v proudech vody, zatímco vodopád Nápadník na protější straně fjordu se jim marně dvoří.",
+  "about": "vodopádech Sedm sester",
+  "more_fact": "Sedm sester tvoří ve skutečnosti sedm samostatných proudů vody padajících vedle sebe ze stejné skalní stěny do Geirangerfjordu.",
+  "irony_prompt": "A single tall cliff face fills the frame with seven separate slender waterfalls streaming down it side by side into a deep green fjord. Smaller and subordinate: a small cruise boat far below for scale, steep forested cliffs, soft misty light. MOOD: enchanting, graceful, fairy-tale."
+ },
+ {
+  "id": "no-k-kjeragbolten",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "V horách Kjerag uvízl mezi dvěma skalními stěnami obrovský kulatý balvan přímo nad hlubokou propastí. Co s ním odvážní turisté dělají?",
+  "answer": "Stoupnou si na něj",
+  "distractors": [
+   "Odkutálí ho dál",
+   "Namalují na něj obrázek",
+   "Postaví na něm stan"
+  ],
+  "quip_correct": "Bystrá hlava! Pod balvanem je propast hluboká přes 900 metrů.",
+  "quip_wrong": "To by dalo pořádnou práci — balvan váží tolik, že ho nepohne ani parta silných turistů.",
+  "explanation": "Balvan se do štěrbiny mezi skalami zaklínil už v době ledové, když ho tam zanesl ustupující ledovec.",
+  "about": "balvanu Kjeragbolten",
+  "more_fact": "K balvanu Kjeragbolten vede několikahodinová náročná túra s lany na pomoc přes nejstrmější úseky skal.",
+  "irony_prompt": "A single round boulder wedged tightly between two sheer cliff walls fills the frame, seen from a distance with a deep misty chasm below. Smaller and subordinate: faint outlines of distant mountain ridges, wisps of cloud drifting through the gap, cool grey light. MOOD: vertiginous, wondrous, epic."
+ },
+ {
+  "id": "no-k-bezecke-lyzovani",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Sport",
+  "kids": true,
+  "difficulty": 1,
+  "type": "choice",
+  "question": "V Norsku se žertem říká, že se děti rodí rovnou s lyžemi na nohou. Jaký zimní sport se tam učí odmalička úplně samozřejmě?",
+  "answer": "Běžecké lyžování",
+  "distractors": [
+   "Krasobruslení",
+   "Sáňkování",
+   "Curling"
+  ],
+  "quip_correct": "Hop, a je to! V Norsku se běžkuje do školky i do obchodu, ne jen na závodech.",
+  "quip_wrong": "Taky oblíbená zimní zábava, ale tahle věta se v Norsku váže hlavně k lyžím pod nohama.",
+  "explanation": "Norské slovo pro běžecké lyžování zní langrenn a malé děti se s ním seznamují často dřív, než se pořádně naučí chodit po rovině.",
+  "about": "běžeckém lyžování v Norsku",
+  "more_fact": "V norštině existuje slovo „skiglede“, které doslova znamená radost z lyžování — pro Nory je to skoro stejně důležité jako výhra v závodě.",
+  "irony_prompt": "A single small child on tiny cross-country skis fills the frame, mid-stride and grinning on a snowy trail through pine trees. Smaller and subordinate: a snow-covered fence in the background, light falling snow, cheerful winter light. MOOD: joyful, energetic, wholesome."
+ },
+ {
+  "id": "no-t-solskjaer-gol",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Který norský fotbalista vstřelil v nastaveném čase finále Ligy mistrů 1999 vítězný gól za Manchester United?",
+  "answer": "Ole Gunnar Solskjær",
+  "distractors": [
+   "Erling Haaland",
+   "Martin Ødegaard",
+   "John Carew"
+  ],
+  "quip_correct": "Ten gól se dodnes přehrává jako důkaz, že se sedačka na lavičce nevyplácí jen k sezení.",
+  "quip_wrong": "Skvělý norský fotbalista, jen o pár let mladší než ten, co tehdy skóroval v poslední minutě.",
+  "explanation": "Solskjær vstoupil do zápasu až jako střídající hráč v druhém poločase a rozhodující gól dal doslova v poslední minutě nastavení.",
+  "about": "Ole Gunnaru Solskjærovi",
+  "more_fact": "Solskjær se v Manchesteru United po skončení hráčské kariéry sám na pár let stal trenérem klubu, u kterého jako hráč prožil triumfy.",
+  "irony_prompt": "A single football player mid-slide-celebration fills the frame, generic anonymous silhouette with arms wide open on green grass under bright stadium floodlights. Smaller and subordinate: a blurred crowd of tiny distant fans, a football rolling nearby, confetti in the air. MOOD: triumphant, electric, dramatic."
+ },
+ {
+  "id": "no-t-magnus-carlsen",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Lidé",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Který Nor patřil dlouhá léta mezi nejlepší šachisty světa a několikrát obhájil titul mistra světa v šachu?",
+  "answer": "Magnus Carlsen",
+  "distractors": [
+   "Garri Kasparov",
+   "Anatolij Karpov",
+   "Vladimir Kramnik"
+  ],
+  "quip_correct": "Cool postřeh — ten hraje šach tak rychle, že soupeřům stačí i pár vteřin na tah.",
+  "quip_wrong": "Slavný šachový velmistr, jenže z úplně jiné země než z Norska.",
+  "explanation": "Carlsen se stal mistrem světa už ve dvaadvaceti letech a dlouhodobě vede i celosvětový žebříček šachistů podle ratingu.",
+  "about": "Magnusu Carlsenovi",
+  "more_fact": "Carlsen se v roce 2023 vzdal obhajoby titulu mistra světa v klasickém formátu dobrovolně — řekl, že ho to už dál nebaví.",
+  "irony_prompt": "A single oversized wooden chess king piece fills the frame, dramatically lit and slightly tilted on a chessboard as if mid-battle. Smaller and subordinate: a blurred hand hovering nearby, other chess pieces softly out of focus, a ticking chess clock. MOOD: tense, focused, quietly dramatic."
+ },
+ {
+  "id": "no-t-aha-take-on-me",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Umění",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Která norská kapela nazpívala hit „Take On Me“ a proslavila se i kresleným klipem v černobílém komiksovém stylu?",
+  "answer": "A-ha",
+  "distractors": [
+   "Roxette",
+   "Ace of Base",
+   "ABBA"
+  ],
+  "quip_correct": "Podpich na místě — ten falzet ve skladbě si dodnes nikdo netroufne zazpívat na karaoke bez trapasu.",
+  "quip_wrong": "Taky skandinávská hudební legenda, jen ze sousední země a s jinými hity.",
+  "explanation": "Klip k „Take On Me“ míchal živě natočené scény s ručně kreslenou animací, na které tehdy pracovaly stovky kreslených snímků.",
+  "about": "kapele a-ha",
+  "more_fact": "Skladba „Take On Me“ se poprvé nahrála už v roce 1984, ale úspěch přišla až o rok později s úplně novým klipem.",
+  "irony_prompt": "A single pencil-sketch style animated figure bursts dramatically through a torn comic-book page, fills the frame mid-motion. Smaller and subordinate: scattered loose pencil lines around the edges, a faint music staff pattern in the background, soft warm light. MOOD: nostalgic, dramatic, dreamy."
+ },
+ {
+  "id": "no-t-galdhopiggen",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje nejvyšší hora Norska a zároveň celé severní Evropy?",
+  "answer": "Galdhøpiggen",
+  "distractors": [
+   "Glittertind",
+   "Snøhetta",
+   "Store Skagastølstind"
+  ],
+  "quip_correct": "Cool postřeh — sousední vrchol jí co do výšky dýchá skoro na paty.",
+  "quip_wrong": "Taky vysoký norský vrchol, a dokonce se s tím správným léta přel o titul nejvyššího — nakonec ale prohrál o pár metrů.",
+  "explanation": "O tom, který vrchol je vyšší, se dlouho vedly spory, protože druhý v pořadí má na vrcholu ledovcovou čepici, jejíž výška kolísá podle ročního období.",
+  "about": "hoře Galdhøpiggen",
+  "more_fact": "Na vrchol Galdhøpiggen vede běžná turistická trasa bez potřeby horolezecké výbavy a v létě ho zvládnou zdatní pěší turisté za jeden den.",
+  "irony_prompt": "A single sharp snow-capped mountain peak fills the frame, rising dramatically above a sea of lower grey ridges under a clear sky. Smaller and subordinate: a thin hiking trail visible on a lower slope, tiny distant hikers, wisps of cloud. MOOD: majestic, crisp, triumphant."
+ },
+ {
+  "id": "no-t-sognefjord",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Místa",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se jmenuje nejdelší a nejhlubší norský fjord, přezdívaný „král fjordů“?",
+  "answer": "Sognefjord",
+  "distractors": [
+   "Hardangerfjord",
+   "Nordfjord",
+   "Oslofjord"
+  ],
+  "quip_correct": "Cool postřeh — je tak hluboký, že by se do něj schovala i pořádně vysoká hora.",
+  "quip_wrong": "Taky slavný a krásný norský fjord, jen o pár desítek kilometrů kratší a mělčí.",
+  "explanation": "Sognefjord se táhne do vnitrozemí přes 200 kilometrů a na svém nejhlubším místě klesá skoro kilometr pod hladinu moře.",
+  "about": "Sognefjordu",
+  "more_fact": "Z hlavního toku Sognefjordu odbočuje úzký boční fjord Nærøyfjord, tak úzký a strmý, že je zapsaný na seznamu UNESCO.",
+  "irony_prompt": "A single enormous fjord fills the frame, a long ribbon of deep blue-green water winding between towering steep mountain walls. Smaller and subordinate: a tiny ferry boat far below for scale, scattered snow patches on peaks, soft hazy light. MOOD: vast, serene, majestic."
+ },
+ {
+  "id": "no-t-sonja-henie",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Norská krasobruslařka a trojnásobná olympijská vítězka se po skončení sportovní kariéry přestěhovala do Hollywoodu a stala se čím?",
+  "answer": "Filmovou hvězdou",
+  "distractors": [
+   "Módní návrhářkou",
+   "Zpěvačkou",
+   "Producentkou reklam"
+  ],
+  "quip_correct": "Podpich na místě — ze zamrzlého kluziště rovnou na filmové plátno, to se jen tak nevidí.",
+  "quip_wrong": "Zajímavá kariéra, jenže tahle krasobruslařka se proslavila přímo na filmovém plátně, ne za kamerou nebo u šicího stroje.",
+  "explanation": "Sonja Henie hrála v desítkách hollywoodských filmů a patřila ve své době k nejlépe placeným hercům v celém Spojených státech.",
+  "about": "Sonje Henie",
+  "more_fact": "Henie svými filmy pomohla v USA popularizovat krasobruslení natolik, že se v té době začaly stavět veřejné kluziště ve velkých městech.",
+  "irony_prompt": "A single glamorous ice skater mid-spin fills the frame, anonymous silhouette in a sparkling short dress on a floodlit ice rink. Smaller and subordinate: a faint row of old cinema spotlights in the background, scattered ice shavings, warm golden stage light. MOOD: glamorous, dazzling, theatrical."
+ },
+ {
+  "id": "no-t-telemark-lyzovani",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Podle kterého norského kraje se jmenuje sjezdová technika lyžování s pokrčeným kolenem a patou volně nad lyží?",
+  "answer": "Telemark",
+  "distractors": [
+   "Hordaland",
+   "Finnmark",
+   "Østfold"
+  ],
+  "quip_correct": "Cool postřeh — tahle technika je starší než moderní sjezdové vázání.",
+  "quip_wrong": "Taky norský kraj, ale sjezdová technika se jmenuje po úplně jiném regionu.",
+  "explanation": "Telemarkská technika se poznává podle typického pokleku na jedno koleno při zatáčení, vázání totiž drží patu volně, ne pevně jako klasické sjezdovky.",
+  "about": "telemarkském lyžování",
+  "more_fact": "Telemarkská technika lyžování vznikla v Norsku už v devatenáctém století a dnes ji sportovci znovu oživují jako alternativu k běžnému sjezdu.",
+  "irony_prompt": "A single skier mid-turn in a deep kneeling telemark stance fills the frame, one knee dropped low, carving through fresh powder snow. Smaller and subordinate: a spray of snow trailing behind, distant snowy pine trees, bright winter sunlight. MOOD: dynamic, graceful, exhilarating."
+ },
+ {
+  "id": "no-t-bunad-17-maj",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Na norský národní svátek 17. května si Norové oblékají slavnostní tradiční lidový kroj. Jak se mu říká?",
+  "answer": "Bunad",
+  "distractors": [
+   "Vikingský plášť",
+   "Sámský oděv",
+   "Slavnostní uniforma"
+  ],
+  "quip_correct": "Cool postřeh — každý region Norska má svůj vlastní vzor výšivek a barev.",
+  "quip_wrong": "Zajímavý oděv, ale tenhle konkrétní slavnostní kroj Norů má jiné jméno.",
+  "explanation": "Bunad se dědí v rodinách z generace na generaci a podle jeho vzoru a výšivky se dá poznat, ze které oblasti Norska nositel pochází.",
+  "about": "kroji bunad",
+  "more_fact": "Jeden pořádně ušitý bunad se šije ručně i celé měsíce a jeho cena se v přepočtu může vyšplhat na desítky tisíc korun.",
+  "irony_prompt": "A single ornately embroidered folk costume with a decorative vest fills the frame, displayed proudly on an anonymous figure walking in a parade. Smaller and subordinate: small Norwegian flags held by blurred figures nearby, bright spring sunshine, distant colorful houses. MOOD: festive, proud, joyful."
+ },
+ {
+  "id": "no-t-trygve-lie",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Lidé",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Kdo se stal historicky prvním generálním tajemníkem Organizace spojených národů, a byl to Nor?",
+  "answer": "Trygve Lie",
+  "distractors": [
+   "Dag Hammarskjöld",
+   "U Thant",
+   "Kofi Annan"
+  ],
+  "quip_correct": "Cool postřeh — první šéf OSN musel budovat pravidla úplně od nuly, bez žádného vzoru.",
+  "quip_wrong": "Taky patřil mezi generální tajemníky OSN, jen o pár let nebo desetiletí později.",
+  "explanation": "Trygve Lie vedl OSN v jejích prvních letech po druhé světové válce a čelil hned na začátku napětí studené války mezi velmocemi.",
+  "about": "Trygve Lie",
+  "more_fact": "Trygve Lie byl před kariérou v OSN norským ministrem zahraničí a během druhé světové války působil v norské exilové vládě v Londýně.",
+  "irony_prompt": "A single anonymous silhouette figure in a dark suit stands behind a tall podium fills the frame, facing a huge blank world map mounted on the wall behind. Smaller and subordinate: empty rows of delegate chairs in soft blur, a simple microphone, cool formal lighting. MOOD: solemn, historic, dignified."
+ },
+ {
+  "id": "no-t-kontiki-vor",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Norský dobrodruh Thor Heyerdahl přeplul roku 1947 Tichý oceán na jednoduchém balzovém voru. Jak se ten vor jmenoval?",
+  "answer": "Kon-Tiki",
+  "distractors": [
+   "Fram",
+   "Gjøa",
+   "Ra"
+  ],
+  "quip_correct": "Cool postřeh — plavba trvala přes tři měsíce a vor poháněl jen vítr a proud.",
+  "quip_wrong": "Taky slavné norské plavidlo, jen z jiné výpravy a postavené z úplně jiného materiálu.",
+  "explanation": "Heyerdahl chtěl dokázat, že první obyvatelé Polynésie mohli připlout ze Jižní Ameriky, a tak postavil vor jen z balzových kmenů, lan a plachty.",
+  "about": "voru Kon-Tiki",
+  "more_fact": "Vor Kon-Tiki proplul přes osm tisíc kilometrů a nakonec ztroskotal na korálovém útesu poblíž ostrovů Tuamotu ve Francouzské Polynésii.",
+  "irony_prompt": "A single simple wooden balsa-log raft with a plain square sail fills the frame, drifting across an endless open ocean under a huge sky. Smaller and subordinate: gentle ocean waves, a few seabirds circling above, a coil of rope on the deck. MOOD: adventurous, vast, hopeful."
+ },
+ {
+  "id": "no-t-zoh-medaile",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Sport",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Která země má na svém kontě historicky nejvíc medailí ze zimních olympijských her ze všech zemí světa?",
+  "answer": "Norsko",
+  "distractors": [
+   "Spojené státy",
+   "Německo",
+   "Rusko"
+  ],
+  "quip_correct": "Cool postřeh — v zemi, kde se lyžuje do školky, to snad ani jinak dopadnout nemohlo.",
+  "quip_wrong": "Silná zimní sportovní velmoc, ale v historickém součtu medailí na zimní vede jiná, menší severská země.",
+  "explanation": "Norsko si drží prvenství hlavně díky běžeckému lyžování a biatlonu, kde už desítky let sbírá medaile v obou disciplínách pravidelně.",
+  "about": "norských medailích ze zimních olympiád",
+  "more_fact": "Na zimních olympijských hrách v Pekingu 2022 vybojovalo Norsko dokonce víc zlatých medailí než kterákoli jiná země v historii jedněch her.",
+  "irony_prompt": "A single podium with three steps fills the frame, all three step heights stacked unusually equal and each draped with a plain red cloth, empty of any people. Smaller and subordinate: scattered snowflakes drifting down, a blurred stadium crowd far in the background, soft floodlight glow. MOOD: triumphant, proud, quietly funny."
+ },
+ {
+  "id": "no-t-koselig-slovo",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jazyk & slova",
+  "difficulty": 1,
+  "type": "choice",
+  "question": "Jak se norsky řekne pocit útulna a pohody, podobný dánskému slovu „hygge“?",
+  "answer": "Koselig",
+  "distractors": [
+   "Friluftsliv",
+   "Dugnad",
+   "Kjærlighet"
+  ],
+  "quip_correct": "Cool postřeh — deka, svíčka a horký nápoj, a je to hotové.",
+  "quip_wrong": "Taky výstižné norské slovo, ale znamená něco úplně jiného než útulno.",
+  "explanation": "Slovo koselig se dá použít skoro na cokoli útulného — na svetr, na kavárnu, na večer s přáteli i na celý domov.",
+  "about": "slově koselig",
+  "more_fact": "Podobná slova pro útulnou pohodu má i švédština („mysigt“) a němčina („gemütlich“) — severské a germánské jazyky si tenhle pocit cení stejně.",
+  "irony_prompt": "A single lit candle on a windowsill fills the frame, warm glowing flame against a dark snowy evening visible through the glass. Smaller and subordinate: a soft knitted blanket draped nearby, a steaming mug out of focus, faint falling snow outside. MOOD: cozy, warm, peaceful."
+ },
+ {
+  "id": "no-t-harald-sjednoceni",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 2,
+  "type": "choice",
+  "question": "Který král podle tradice kolem roku 872 poprvé sjednotil roztříštěné norské kraje pod jednu vládu?",
+  "answer": "Harald I. Krásnovlasý",
+  "distractors": [
+   "Olav Svatý",
+   "Sverre Sigurdsson",
+   "Magnus Bosý"
+  ],
+  "quip_correct": "Cool postřeh — prý si nechal narůst vlasy až do sjednocení celé země, pak se konečně ostříhal.",
+  "quip_wrong": "Taky významný norský vládce z dávné historie, jen o pár století pozdější.",
+  "explanation": "Podle staré ságy Harald slíbil, že se nenechá ostříhat ani umýt, dokud nesjednotí celé Norsko pod jedinou korunu — a nakonec to prý dokázal.",
+  "about": "Haraldu Krásnovlasém",
+  "more_fact": "Po sjednocení Norska mnoho poražených místních náčelníků raději z vlastní vůle odplulo osídlit vzdálený Island, než aby se podřídili novému králi.",
+  "irony_prompt": "A single Viking-era king figure with dramatically long wild hair fills the frame, standing proudly on a rocky coastal outcrop, cloak flowing in the wind. Smaller and subordinate: longships resting on the shore far below, distant fjord mountains, moody overcast sky. MOOD: legendary, bold, windswept."
+ },
+ {
+  "id": "no-a-munch-kradez",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "V roce 2004 ukradli ozbrojení lupiči z osloské galerie za bílého dne slavný obraz Edvarda Muncha. Co se s obrazem stalo o dva roky později?",
+  "answer": "Byl nalezen a vrácen",
+  "distractors": [
+   "Zůstal navždy ztracen",
+   "Byl zničen při požáru",
+   "Skončil v soukromé sbírce v cizině"
+  ],
+  "quip_correct": "Umění ve stylu drama plus komedie — muzeum si aspoň oddechlo dřív, než čekalo.",
+  "quip_wrong": "Zajímavá teorie, jenže tenhle případ dopadl nakonec spíš šťastně než tragicky.",
+  "explanation": "Obraz se při krádeži i pozdějším ukrývání poškodil, takže restaurátoři ho po nalezení museli ještě roky opravovat, než se mohl znovu vystavit.",
+  "about": "krádeži Munchova obrazu",
+  "more_fact": "Muzeum kvůli krádeži zpřísnilo zabezpečení natolik, že dnes visí nejcennější Munchova díla za neprůstřelným sklem a pod nepřetržitým dohledem kamer.",
+  "irony_prompt": "A single empty ornate picture frame hangs crookedly fills the frame on a plain gallery wall, faint dust outline where a canvas used to be. Smaller and subordinate: a toppled velvet rope stand nearby, scattered broken glass on the floor, dim gallery spotlight. MOOD: dramatic, tense, quietly ironic."
+ },
+ {
+  "id": "no-a-knut-hamsun-nobel",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Který norský spisovatel získal v roce 1920 Nobelovu cenu za literaturu za román Požehnání země?",
+  "answer": "Knut Hamsun",
+  "distractors": [
+   "Henrik Ibsen",
+   "Bjørnstjerne Bjørnson",
+   "Sigrid Undset"
+  ],
+  "quip_correct": "Sarkasmus na místě — porota očividně milovala i knihy o obyčejném dřině na půdě.",
+  "quip_wrong": "Taky velké jméno norské literatury, jen s Nobelovou cenou za literaturu z jiného roku, nebo bez ní vůbec.",
+  "explanation": "Požehnání země vypráví o drsném životě rolnické rodiny budující si hospodářství uprostřed norské divočiny, bez jediné zkratky.",
+  "about": "Knutu Hamsunovi",
+  "more_fact": "Hamsun psal nejdřív bez valného úspěchu a k psaní se dostal i přes období, kdy si na živobytí musel vydělávat jako dělník a tramvajový průvodčí v Americe.",
+  "irony_prompt": "A single old leather-bound book lies closed fills the frame on bare wooden farmland soil, its cover completely blank and unmarked. Smaller and subordinate: a plain wooden hoe leaning nearby, a distant plowed field, soft low evening light. MOOD: earthy, contemplative, quietly dignified."
+ },
+ {
+  "id": "no-a-opera-strecha",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Umění",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Novou osloskou operu architekti navrhli tak, aby se po její šikmé bílé střeše dalo co dělat?",
+  "answer": "Vyjít pěšky nahoru",
+  "distractors": [
+   "Pouštět draky",
+   "Grilovat o svátcích",
+   "Sledovat přistávající letadla"
+  ],
+  "quip_correct": "Sarkasmus na místě — kde jinde na světě má opera vlastní veřejný kopec?",
+  "quip_wrong": "Zábavná představa, jenže budova byla navržená hlavně k tomu, aby po ní lidé mohli obyčejně chodit.",
+  "explanation": "Šikmá střecha opery v Oslu se svažuje přímo do vody fjordu a má připomínat plovoucí kru ledu vystupující z moře.",
+  "about": "osloské opeře",
+  "more_fact": "Fasáda opery je obložená bílým mramorem a žulou, takže se v létě na svažitou střechu chodí opalovat i místní lidé, ne jen turisté.",
+  "irony_prompt": "A single vast sloping white marble roof fills the frame, rising at a gentle angle straight out of dark fjord water toward the sky. Smaller and subordinate: a few tiny anonymous figures walking up the slope, calm harbor water, soft overcast daylight. MOOD: sleek, serene, quietly grand."
+ },
+ {
+  "id": "no-a-jantelov",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Nepsaný skandinávský společenský kodex zvaný Jantelov přikazuje hlavně co?",
+  "answer": "Nevyvyšovat se nad ostatní",
+  "distractors": [
+   "Vždy říkat otevřeně pravdu",
+   "Šetřit co nejvíc peněz",
+   "Pracovat déle než ostatní"
+  ],
+  "quip_correct": "Sarkasmus na místě — chlubit se úspěchem je tu skoro horší prohřešek než ho vůbec nemít.",
+  "quip_wrong": "Zní to jako rozumná ctnost, jenže Jantelov míří jinam — přímo proti vyvyšování se nad druhé.",
+  "explanation": "Jantelov vzniklo jako soubor deseti pravidel v norsko-dánském románu z třicátých let dvacátého století a odtud se rozšířilo do běžné řeči o skandinávské kultuře.",
+  "about": "Jantelovu",
+  "more_fact": "Jantelov se dnes v Norsku i Dánsku často zmiňuje s nadsázkou — lidé si z přehnané skromnosti sami dělají legraci v běžných rozhovorech.",
+  "irony_prompt": "A single tall wooden signpost stands alone fills the frame in an open snowy field, its surface completely blank and unmarked with no words. Smaller and subordinate: a row of identical small houses in the far distance, flat white snow, pale overcast sky. MOOD: dry, deadpan, quietly humorous."
+ },
+ {
+  "id": "no-a-svalbard-smlouva",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Díky mezinárodní smlouvě z roku 1920 mohou na souostroví Svalbard žít a pracovat bez víza kdo?",
+  "answer": "Občané jakékoli smluvní země",
+  "distractors": [
+   "Jen občané severských zemí",
+   "Jen vědci se schváleným grantem",
+   "Jen zaměstnanci norské vlády"
+  ],
+  "quip_correct": "Sarkasmus na místě — stačí sbalit kufry a snést tamní věčný mráz.",
+  "quip_wrong": "Znělo by to logicky, ale smlouva je mnohem velkorysejší, než tahle omezená skupina lidí.",
+  "explanation": "Svalbardská smlouva zároveň Norsku přiznala svrchovanost nad souostrovím, ale s podmínkou, že tam nesmí stavět vojenské základny.",
+  "about": "Svalbardské smlouvě",
+  "more_fact": "Díky svalbardské smlouvě na souostroví dnes žije i početná komunita z Ruska, která tam desítky let těží uhlí ve vlastní osadě.",
+  "irony_prompt": "A single weathered wooden border-style post stands fills the frame in a vast snowy Arctic landscape, completely blank and unmarked with no sign attached. Smaller and subordinate: a scatter of small colorful distant houses, jagged snow-covered peaks, pale Arctic light. MOOD: stark, open, quietly surprising."
+ },
+ {
+  "id": "no-a-eu-referendum",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Kultura & tradice",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Norsko dvakrát v referendu odmítlo vstup do Evropské unie. Jak je přesto se společným trhem EU úzce propojené?",
+  "answer": "Přes Evropský hospodářský prostor",
+  "distractors": [
+   "Přes celní unii se Švédskem",
+   "Přes přidružené členství v NATO",
+   "Vůbec propojené není"
+  ],
+  "quip_correct": "Sarkasmus na místě — dvakrát řeklo EU ne, a stejně se řídí většinou jejích pravidel.",
+  "quip_wrong": "NATO je pro Norsko taky důležité spojenectví, ale se společným trhem EU to přímo nesouvisí.",
+  "explanation": "Přes Evropský hospodářský prostor přejímá Norsko velkou část unijní legislativy o volném pohybu zboží, služeb a lidí, aniž by mělo hlasovací právo v Bruselu.",
+  "about": "Evropském hospodářském prostoru",
+  "more_fact": "Norové odmítli vstup do EU v referendech v letech 1972 a 1994, pokaždé rozdílem jen pár procentních bodů.",
+  "irony_prompt": "A single tall wooden flagpole with a completely blank plain fabric flag fills the frame, standing at a quiet border crossing at dusk. Smaller and subordinate: a simple striped gate barrier raised upward, empty road stretching into the distance, cool evening light. MOOD: dry, ambiguous, quietly ironic."
+ },
+ {
+  "id": "no-a-quisling-slovo",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jméno norského kolaboranta Vidkuna Quislinga zlidovělo v mnoha jazycích jako obecné synonymum pro koho?",
+  "answer": "Zrádce",
+  "distractors": [
+   "Diktátora",
+   "Špiona",
+   "Dezertéra"
+  ],
+  "quip_correct": "Sarkasmus na místě — málokdo dokáže vlastní příjmení proměnit v mezinárodní nadávku.",
+  "quip_wrong": "Blízký pojem, ale slovo quisling se v jazycích ustálilo přesně pro jeden konkrétní typ postavy.",
+  "explanation": "Quisling za druhé světové války vedl norskou loutkovou vládu spolupracující s nacistickým Německem a po válce byl za velezradu popraven.",
+  "about": "slově quisling",
+  "more_fact": "Slovo „quisling“ se objevilo v anglických slovnících už v roce 1940, tedy ještě v průběhu samotné druhé světové války.",
+  "irony_prompt": "A dark silhouette in a long coat shakes hands with an unseen figure through a half-open door, his other hand hidden behind his back, a single house key passing secretly between their palms. Smaller and subordinate: a second, ordinary door standing shut and untouched nearby; a lone streetlamp glowing outside; long shadows stretching across the floor. MOOD: dry, wry, quietly serious."
+ },
+ {
+  "id": "no-a-utepils",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jazyk & slova",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Jak Norové říkají tomu prvnímu pivu vypitému venku na sluníčku, jakmile po dlouhé tmavé zimě konečně pořádně vysvitne slunce?",
+  "answer": "Utepils",
+  "distractors": [
+   "Kveldsmat",
+   "Peis-kos",
+   "Fredagskos"
+  ],
+  "quip_correct": "Sarkasmus na místě — po půl roce tmy si Norové to jedno pivo na sluníčku fakt zaslouží.",
+  "quip_wrong": "Taky hezké norské slovo pro pohodu, ale s tím prvním pivem na sluníčku nemá nic společného.",
+  "explanation": "Slovo utepils se skládá ze slov „ute“ (venku) a „pils“ (světlé pivo) a používá se přesně pro tu chvíli, kdy člověk poprvé v roce sedí s pivem venku.",
+  "about": "slově utepils",
+  "more_fact": "Norské zprávy o počasí na jaře občas přímo hlásí, že nastal „ideální den na utepils“, jakmile teplota konečně vyleze nad deset stupňů.",
+  "irony_prompt": "A single tall glass of pale golden beer sits on an outdoor wooden table fills the frame, sunlight sparkling through condensation on the glass. Smaller and subordinate: a plain wooden chair nearby, soft blurred greenery, warm spring sunshine. MOOD: relieved, sunny, satisfied."
+ },
+ {
+  "id": "no-a-okupace-exil",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Když v dubnu 1940 napadlo Norsko nacistické Německo, král Haakon VII. odmítl kapitulovat a udělal co?",
+  "answer": "Odešel s vládou do exilu v Londýně",
+  "distractors": [
+   "Podepsal spolupráci s okupanty",
+   "Abdikoval ve prospěch syna",
+   "Zůstal v Oslu jako symbolický panovník"
+  ],
+  "quip_correct": "Sarkasmus na místě — vládnout z druhého konce Evropy přes rádio rozhodně nebyl komfort.",
+  "quip_wrong": "Přesně tohle král odmítl udělat, a právě proto se stal symbolem norského odporu.",
+  "explanation": "Král Haakon VII. z Londýna po celou válku vysílal rozhlasové projevy, které v okupovaném Norsku poslouchali lidé tajně a se zvýšeným rizikem.",
+  "about": "králi Haakonovi VII. za války",
+  "more_fact": "Písmeno „H7“ se za okupace stalo tajným symbolem odporu — lidé ho malovali na zdi a nosili na oblečení jako výraz věrnosti králi v exilu.",
+  "irony_prompt": "A single ornate empty wooden throne fills the frame, standing alone in an otherwise bare formal room lit by a single tall window. Smaller and subordinate: a folded plain overcoat draped over the armrest, a closed suitcase on the floor nearby, cool grey light. MOOD: solemn, resolute, quietly defiant."
+ },
+ {
+  "id": "no-a-volebni-pravo-zeny",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Norsko se v roce 1913 stalo první plně suverénní zemí světa, která ženám přiznala co?",
+  "answer": "Všeobecné volební právo",
+  "distractors": [
+   "Právo vlastnit majetek",
+   "Právo na rozvod",
+   "Právo studovat na vysoké škole"
+  ],
+  "quip_correct": "Sarkasmus na místě — jiné evropské země na to čekaly ještě celé desítky let.",
+  "quip_wrong": "Důležitá věc, ale v tomhle konkrétním prvenství z roku 1913 šlo přímo o hlasovací lístek u voleb.",
+  "explanation": "Před rokem 1913 mohly v Norsku volit jen ženy splňující majetkovou podmínku, teprve tehdy dostaly volební právo úplně všechny ženy stejně jako muži.",
+  "about": "norském volebním právu žen",
+  "more_fact": "Na Novém Zélandu dostaly ženy volební právo už v roce 1893, ale Nový Zéland tehdy ještě nebyl plně svrchovaným státem jako Norsko v roce 1913.",
+  "irony_prompt": "A single simple wooden ballot box fills the frame, its slot open and a plain folded paper ballot half-inserted into it. Smaller and subordinate: a queue of anonymous silhouette figures waiting behind, muted daylight through tall windows, soft wood-paneled hall. MOOD: quietly historic, dignified, hopeful."
+ },
+ {
+  "id": "no-a-varazska-garda",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Historie",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Skandinávští bojovníci, včetně Norů, sloužili ve středověku jako proslulá elitní osobní stráž kterého vládce?",
+  "answer": "Byzantského císaře",
+  "distractors": [
+   "Francouzského krále",
+   "Papeže v Římě",
+   "Kyjevského knížete"
+  ],
+  "quip_correct": "Sarkasmus na místě — vikingský bojovník jako tělesný strážce v Konstantinopoli, to je pořádná kariéra z fjordu.",
+  "quip_wrong": "Přes tohle území vedla důležitá obchodní cesta Varjagů, ale jejich nejslavnější elitní jednotka sloužila mnohem dál na jihu.",
+  "explanation": "Této jednotce se říkalo Varjažská garda a skandinávští válečníci se do Konstantinopole dostávali po řekách přes dnešní Rusko a Ukrajinu.",
+  "about": "Varjažské gardě",
+  "more_fact": "Členové Varjažské gardy byli proslulí svou věrností a obrovskými sekerami, kterými se lišili od zbytku byzantské armády.",
+  "irony_prompt": "A single tall warrior with a huge double-bladed axe fills the frame, standing guard beside an ornate golden palace doorway, cloak draped over armor. Smaller and subordinate: tall marble columns in soft blur, a faint mosaic floor pattern, warm torchlight glow. MOOD: imposing, exotic, proud."
+ },
+ {
+  "id": "no-a-nansenuv-pas",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Lidé",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Norský polárník a pozdější nositel Nobelovy ceny míru vymyslel po první světové válce speciální cestovní doklad pro lidi bez státní příslušnosti. Jak se mu říkalo?",
+  "answer": "Nansenův pas",
+  "distractors": [
+   "Nansenovo vízum",
+   "Nansenova listina",
+   "Nansenova karta"
+  ],
+  "quip_correct": "Sarkasmus na místě — polárník, co nejdřív dobyl led, pak zachraňoval lidi bez domova papírováním.",
+  "quip_wrong": "Zní to podobně, ale oficiální jméno dokladu bylo přímo spojené s Nansenovým vlastním příjmením jako pas.",
+  "explanation": "Fridtjof Nansen navrhl tento doklad pro statisíce uprchlíků a lidí bez občanství po první světové válce a ruské revoluci, a desítky zemí ho uznávaly jako platný.",
+  "about": "Nansenově pasu",
+  "more_fact": "Než se Nansen věnoval pomoci uprchlíkům, proslavil se jako polárník — jeho loď Fram se nechala záměrně zamrznout v ledu, aby s ním driftovala k severnímu pólu.",
+  "irony_prompt": "A single simple grey cardboard travel document lies closed fills the frame on a plain wooden table, its cover completely blank and unmarked. Smaller and subordinate: a pair of worn leather gloves resting beside it, a faint map outline blurred in the background, soft muted light. MOOD: solemn, compassionate, quietly hopeful."
+ },
+ {
+  "id": "no-a-zoh-hostitel",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Sport",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Norsko hostilo zimní olympijské hry dvakrát. Ve kterých dvou městech?",
+  "answer": "Oslo a Lillehammer",
+  "distractors": [
+   "Oslo a Bergen",
+   "Lillehammer a Tromsø",
+   "Bergen a Trondheim"
+  ],
+  "quip_correct": "Sarkasmus na místě — proč jezdit pro zimní hry jinam, když doma má Norsko sněhu habaděj.",
+  "quip_wrong": "Krásné norské město, ale zimní olympiáda se tam nikdy nekonala — hostitelská města jsou jiná dvě.",
+  "explanation": "Mezi hrami v Oslu 1952 a Lillehammeru 1994 uplynulo přes čtyřicet let, a obě olympiády se dodnes řadí k divácky nejúspěšnějším v historii zimních her.",
+  "about": "zimních olympiádách v Norsku",
+  "more_fact": "Olympiáda v Lillehammeru 1994 se konala jen dva roky po té předchozí v Albertville, protože se tehdy měnil kalendář střídání letních a zimních her.",
+  "irony_prompt": "A single tall Olympic-style torch stand fills the frame, its flame unlit, standing in deep snow against a plain grey sky. Smaller and subordinate: a row of small distant national flags on poles, footprints in the snow leading toward it, cold pale light. MOOD: quiet, anticipatory, understated."
+ },
+ {
+  "id": "no-a-akvavit-zrani",
+  "cc": "no",
+  "country": "Norsko",
+  "section": "Jídlo",
+  "difficulty": 3,
+  "type": "choice",
+  "question": "Tradiční norský lihovina akvavit prý chutná nejlíp, když projde zvláštním způsobem zrání. Jakým?",
+  "answer": "Plavbou na lodi přes rovník",
+  "distractors": [
+   "Zráním v ledovcové jeskyni",
+   "Zakopáním hluboko v zemi",
+   "Zráním v komíně udírny"
+  ],
+  "quip_correct": "Sarkasmus na místě — houpání lodi a změny teploty prý udělají s chutí víc než roky v tichém sklepě.",
+  "quip_wrong": "Zajímavá představa, ale skutečný recept na zrání téhle lihoviny se odehrává na širém moři, ne pod zemí.",
+  "explanation": "Sudy s akvavitem na obchodních lodích putují přes rovník k jižní polokouli a zpátky, a houpání spolu s teplotními výkyvy má prý chuť lihoviny jemně zaoblit.",
+  "about": "akvavitu",
+  "more_fact": "Akvavit se tradičně kořenil semínky kmínu a kopru, a v Norsku ho lidé nejčastěji pijí vychlazený k vánočnímu jídlu fårikål nebo lutefisk.",
+  "irony_prompt": "A single row of wooden barrels fills the frame, stacked in the hold of an old cargo ship, their surfaces completely bare with no marks of any kind. Smaller and subordinate: a coiled thick rope nearby, a porthole letting in a shaft of ocean light, gentle creaking shadows. MOOD: salty, weathered, quietly whimsical."
  }
 ]
