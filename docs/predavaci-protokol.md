@@ -150,6 +150,43 @@ po ní nezůstalo nic, takže se nemá co zachraňovat, jen zopakovat.
   a tvrdá kontrola přesně 40 otázek na dodávku (scratchpad je sdílený s agenty,
   takže přejímka může soubor potkat rozepsaný).
 
+**HOTOVO 30. 9. odpoledne: 30 ZEMÍ Z 55, cíl dávky dosažen.** Fond 3 792 → **5 212**
+otázek (+1 420), serverový fond beze změny na **220** (4 na zemi × 55 zemí). Vše
+commitnuté a pushnuté na `claude/pokracujeme-e79708` až po `8863d7b`.
+
+- **Hotové země:** Austrálie, Brazílie, Čína, Egypt, JAR (vlna 1) · Indie, Japonsko,
+  Keňa, Mexiko, Nový Zéland, USA (vlna 2) · Belgie, Chile, Dánsko, Ekvádor, Fidži,
+  Mongolsko, Tchaj-wan (vlna 3) · Finsko, Filipíny, Irsko, Portugalsko (vlna 4) ·
+  Gabon, Indonésie, Izrael, Jižní Korea, Norsko, Peru, Severní Korea, Vietnam (vlna 5).
+- **Zbývá 25 zemí** (dopočet: 55 − 30 = 25, seznam pod 80 otázek v souboru má jen 21 —
+  4 mají fond bohatší než 80 už z dřívějška a nejsou hotové; ověř přes
+  `scratchpad/kontext/_prehled.json`, ne jen podle počtu): Pákistán, Malajsie, Turecko,
+  Saúdská Arábie, Rumunsko, Thajsko, Polsko, Ukrajina, Argentina, Bulharsko, Řecko,
+  Švýcarsko, Nizozemsko, Francie, Slovensko, Rakousko, Španělsko, Švédsko, Německo,
+  Maďarsko, Spojené království + 4 další ze seznamu.
+- **DVĚ TVRDÉ PASTI ZAPLACENÉ TÉHLE DÁVKOU, ať se nehoní znovu:**
+  1. **Agent, co píše 40 otázek najednou, umí spadnout na limitu délky odpovědi**
+     (64000 tokenů) — stalo se to Peru a Vietnamu i Indonésii. Řešení: zadat mu
+     výslovně „piš po skupinách po 10 a zapisuj přírůstkově (Write, pak Edit/append),
+     ne jeden obrovský finální výstup“ a „odpověz mi krátce, bez vypsaných promptů“.
+     Po druhém běhu s touhle instrukcí to prošlo vždycky.
+  2. **„-s-“ otázky s `online_only: true` v kontextovém souboru země NEJSOU nový bug
+     agentů — je to PŮVODNÍ serverový fond z 26. 9.**, který si agenti správně
+     nevšímali (nezopakovali). Vypadá to jako podezřelý vzorec (přesně 4 na každou
+     zemi, div dělaný sedmi agenty najednou), ale je to tak schválně. **Nesahej na
+     `online_only` u „-s-“ otázek, dokud neověříš proti stavu PŘED kampaní**
+     (`git show 94e1301:data/questions/<cc>.json`) — jinak vyrobíš přesně tu chybu,
+     kterou jsem si sám udělal a musel vzápětí opravovat (28 otázek, 7 zemí).
+- **`prijmi.js` má dvě opravené slepé kontroly** (dominanta chytala jen „fills the
+  frame“, ne průběhový tvar „filling“ ani „in the centre of the frame“; riziko textu
+  chytalo „texture“ jako „text“) a dvě nové pojistky: tvrdá kontrola přesně 40 otázek
+  na dodávku (scratchpad je sdílený s agenty, dodávka může být zastižena rozepsaná)
+  a přepínač `--jen cc,cc` pro cílený zápis.
+- **Postup pro pokračování beze změny:** agent dostane odkaz na `scratchpad/ZADANI.md`
+  + svůj `kontext/<cc>.txt` + cestu výstupu, vlny po 6 zemích. Po každé vlně: `prijmi.js`
+  (ruční kontrola varování, ne jen chyb — několik skutečných nálezů bylo jen ve
+  varováních), `dokonci.ps1`, ověřit `serverovych` v `stav fondu` zůstává 220, commit, push.
+
 **Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
 proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,
 dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.
