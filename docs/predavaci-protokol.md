@@ -203,6 +203,16 @@ jen historie — stav je tenhle.
      žádné. Pořadí a pasti v `docs/nasazeni.md`. Po syncu ověřit `--check --remote`
      a že serverových je stále 220.
   3. **Zvednout `VERZE` v `sw.js`**, až přibudou obrázky (cache-first u obrázků).
+  4. **PŘED generováním obrázků projít prompty, které `npm run lint-irony` hlásí** — u nových
+     otázek je to **86 promptů** (85× „jídlo bez zjevného popisu TVARU“, 3× „nepojmenovaná
+     dominanta“), seznam je v `docs/lint-irony-nove-prompty.txt`. 0 chyb. Jídlo bez tvaru je
+     zdokumentovaná past (omáčka → zmrzlina), proto se tvar píše do PRVNÍ věty promptu.
+  5. **Rizikové slovo v promptu se opravovalo i po commitu vln.** `prijmi.js` měl výjimku „je-li
+     v promptu `blank`/`bare`/`unmarked`, zápor je v pořádku“, která pustila `plaque`, `banner`,
+     `signs`, `written`, `writing`, `scoreboard`, `signpost` v záporu — přesně tu zdokumentovanou
+     past. Dodatečně opraveno **26 promptů** (slovo pryč, plocha popsaná kladně), skenem
+     nad všemi 2 200 novými. Zbývají jen neškodná „board“ (prkénko, šachovnice) a záměrné
+     písmeno „I“ u `tr-k-dve-i-abeceda`. **Kdyby se přejímka použila znovu, výjimku zrušit.**
 - **POUČENÍ Z TÉHLE KAMPANĚ, AŤ SE NEHONÍ ZNOVU:**
   1. **Agent píšící 40 otázek naráz umí spadnout na limitu délky odpovědi** (64 000
      tokenů). Pomohlo zadat „po skupinách po 10, přírůstkově, odpověz krátce“.
