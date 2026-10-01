@@ -187,6 +187,44 @@ commitnuté a pushnuté na `claude/pokracujeme-e79708` až po `8863d7b`.
   (ruční kontrola varování, ne jen chyb — několik skutečných nálezů bylo jen ve
   varováních), `dokonci.ps1`, ověřit `serverovych` v `stav fondu` zůstává 220, commit, push.
 
+**KAMPAŇ DOKONČENA 1. 10.: 55 ZEMÍ Z 55, +2 200 OTÁZEK (40 na zemi).** Fond 4 012 →
+**6 212** (veřejných 5 992, serverových **220** beze změny). Commitnuto a pushnuto na
+`claude/pokracujeme-e79708` až po `9680c63`. Předchozí tři zápisy o přerušeních výš jsou
+jen historie — stav je tenhle.
+
+- **CO ZBÝVÁ (a čeká na hráče, nic z toho nebylo spuštěno):**
+  1. **Ilustrace: všech 2 200 nových otázek je bez obrázku** (`img/<id>.jpg` chybí),
+     `irony_prompt` mají všechny napsané a prošly kontrolou. Generuje se
+     `node scripts/batch-irony-images.js submit --cc <cc>` (dávka ~50 % ceny, řádově desítky
+     dolarů za celek); `.dev.vars` teď řádek `GEMINI_API_KEY` obsahuje, ale **neověřeno, že
+     klíč platí a má kredit**. Po vygenerování projít obrázky očima (postup a pasti výš
+     v `CLAUDE.md`, nástroje v `scripts/ilustrace/`). Odhad míry vad ~10 %.
+  2. **Nasazení:** `db:sync --remote` (otázky jsou v D1), pak `npm run deploy`; migrace
+     žádné. Pořadí a pasti v `docs/nasazeni.md`. Po syncu ověřit `--check --remote`
+     a že serverových je stále 220.
+  3. **Zvednout `VERZE` v `sw.js`**, až přibudou obrázky (cache-first u obrázků).
+- **POUČENÍ Z TÉHLE KAMPANĚ, AŤ SE NEHONÍ ZNOVU:**
+  1. **Agent píšící 40 otázek naráz umí spadnout na limitu délky odpovědi** (64 000
+     tokenů). Pomohlo zadat „po skupinách po 10, přírůstkově, odpověz krátce“.
+  2. **Výpadek sítě (`ENOTFOUND`) shodí VŠECHNY běžící agenty naráz** a nic po nich
+     nezůstane. Není to chyba práce; ověřit síť (`curl`), `nove/` prázdná → spustit znovu.
+  3. **„-s-“ otázky s `online_only: true` jsou PŮVODNÍ serverový fond** (4 na zemi),
+     ne bug agentů. Omylem se jim `online_only` sebral a musel se vracet (git show 94e1301).
+  4. **Agent nahlásí i fakta „z paměti neověřeno“ — to je nejcennější část jeho hlášení.**
+     Ověřit je vždycky. Našly se tak dvě skutečné chyby: Švédsko tvrdilo, že PewDiePie
+     přišel o první místo až 2024 kvůli MrBeastovi (T-Series ho předběhl už 2019), a
+     Saúdská Arábie slučovala žraloka obrovského a velrybího jako synonyma (stejná záměna
+     jako u filipínského `ph-k-zralok`).
+  5. **Kontrola varování, ne jen chyb.** Většina skutečných nálezů (scoreboard, banner,
+     „labels“ v záporu, odpověď delší než distraktory) byla jen ve varováních `prijmi.js`.
+     Varování „id obsahuje slovo z odpovědi“ je u VEŘEJNÝCH otázek šum.
+  6. **Kontrola „odpověď v zadání“ chytá i věci, co nejsou chyba:** „v hlavni“ je správný
+     6. pád od „hlaveň“, ne chybějící diakritika.
+- **`scratchpad/` (mimo repo, ztratí se s počítačem):** `ZADANI.md`, `prijmi.js`,
+  `dokonci.ps1`, `priprav-kontext.js`, `kontext/`. Kdyby se kampaň opakovala pro další
+  dávku, je potřeba je obnovit — **zvaž přesun `prijmi.js` a `ZADANI.md` do
+  `scripts/obsah/`**, stejně jako se 13. 9. stěhovaly nástroje na ilustrace.
+
 **Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
 proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,
 dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.

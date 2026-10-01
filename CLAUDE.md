@@ -81,6 +81,25 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-01 — KAMPAŇ „40 OTÁZEK NA KAŽDOU ZEMI“ DOKONČENA: 55 zemí, +2 200 otázek.**
+  Fond 4 012 → **6 212** (serverový fond beze změny 220). Hráč ji zadal jako „zcela autonomně,
+  bez mého příkazu“; běželo to v devíti vlnách po 5–8 agentech, každý psal jednu zemi podle
+  `ZADANI.md` a kontextového souboru s výpisem existujících otázek.
+  - **Nově je pro každou zemi 40 otázek v pásmech 13/13/14** (děti / puberťáci / dospělí),
+    všechny s `more_fact` a `irony_prompt`. **Všech 2 200 je BEZ OBRÁZKU** — generování
+    ilustrací čeká na hráče (náklad a kredit). Fond se tím neporušil: `validate` 0 chyb,
+    `test:offline` 917, mapa konfliktů 762 dvojic, serverových pořád 220.
+  - **Dvě zaplacené pasti:** (1) **`online_only: true` u „-s-“ otázek je PŮVODNÍ serverový
+    fond, ne bug agentů** — omylem se jim sebral a musel se vrátit podle
+    `git show 94e1301`; před zásahem do `online_only` vždy porovnat se stavem PŘED kampaní.
+    (2) **Agent nahlásí fakta „z paměti neověřená“ — ta se musí ověřit**, našly se tak dvě
+    skutečné chyby (PewDiePie × T-Series 2019, žralok obrovský × velrybí).
+  - **Provozní:** agent s 40 otázkami naráz umí spadnout na limitu délky odpovědi (zadat
+    „po 10, přírůstkově, odpověz krátce“); výpadek sítě shodí všechny agenty naráz a nic
+    po nich nezůstane (ověřit `curl`, spustit znovu).
+  - **Podrobnosti, seznam hotových zemí, co zbývá (ilustrace → nasazení) a poučení:**
+    [docs/predavaci-protokol.md](docs/predavaci-protokol.md). Nástroje kampaně (`prijmi.js`,
+    `ZADANI.md`) žijí jen ve scratchpadu mimo repo — kdyby se opakovala, přesunout do repa.
 - **2026-09-30 — Dobarvení ilustrací je NOVĚ NÁSTROJ V REPU (`scripts/ilustrace/dobarvi.js`)
   a bere zdroj Z GITU, ne z disku. Čtyři dlaždice online lobby dobarveny.**
   Hráč: dlaždice Světové ligy jsou „příliš vybledlé“. Postup na dobarvení byl popsaný
