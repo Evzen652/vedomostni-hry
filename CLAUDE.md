@@ -81,6 +81,18 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-03 — DLAŽDICE SE KRESLÍ Z NÁHLEDŮ 320 px (`assets/male/`), ne z 512px originálů.**
+  Hráč: výběr zemí se „hodně dlouho načítá“. Naměřeno na ostré adrese: 56 vlajek = **3,5 MB**
+  (512×512, ~62 kB), kreslí se ale nejvýš na 128–160 CSS px. Po změně **1,06 MB**; všech 82
+  dlaždic (vlajky, kontinenty, témata, režimy, pásma, zkratka Česko) 5,3 → 1,7 MB. Nasazení `8c7825b8`.
+  - **Originály se NEMĚNÍ a zůstávají zdrojem pravdy** (dobarvi.js, split-flag-grid.ps1 míří na ně).
+    `male()` v quiz.js přemapuje cestu jen u vyjmenovaných rodin; mimo ně vrací cestu beze změny.
+  - **Po každé změně nebo přidání ilustrace dlaždice: `npm run nahledy`.** Náhled nese v EXIF otisk
+    originálu a `validate` hlásí CHYBĚJÍCÍ i ZASTARALÝ náhled jako CHYBU (ověřeno mutací) — jinak by
+    se přegenerovaná ilustrace na webu tiše neukázala.
+  - **Neřešeno:** `zk-*` (online lobby) a `end-*` — jiné velikosti zobrazení, zatím nehlášeno.
+  - **Past znovu:** heredoc v Bashi spolkl zpětná lomítka v regexu (`assets/` → `assets/`, kód
+    nešel zparsovat). Regex bez lomítek: `assets[/]…[.]jpg`.
 - **2026-10-03 — VLASTNÍ DOMÉNA `cestokviz.cz` BĚŽÍ; `WEB` přepnuto a nasazeno (bez nových otázek).**
   Hráč v dashboardu Pages přidal doménu (stav Active, SSL enabled; `CNAME @ → zemekviz.pages.dev`
   vytvořil dashboard sám, protože zóna je ve stejném účtu jako projekt). `WEB` v
