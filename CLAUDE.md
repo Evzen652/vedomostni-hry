@@ -81,6 +81,20 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-02 — NOVÉ OTÁZKY SE NENASAZUJÍ, DOKUD NEMAJÍ OBRÁZKY (rozhodl hráč). Web a Google Play
+  pokračují BEZ nich.** Appka je celá malovaná a otázka bez ilustrace padá na záložní razítko
+  země — 2 200 takových najednou by byla viditelná díra.
+  - **PAST: `build-public.js` kopíruje do nasazení CELOU složku `data/questions`** (a `db:sync
+    --remote` zapisuje celý fond do D1). Jakékoli nasazení z větve `claude/pokracujeme-e79708` by
+    nové otázky vyneslo na web, i kdyby se měnilo úplně něco jiného. Proto se **práce na webu
+    a Google Play dělá na větvi založené na `master`** (produkční kód a produkční obsah) a
+    nasazuje se z ní; obsahová větev se spojí a nasadí až s ilustracemi. **`db:sync --remote`
+    se do té doby nespouští.**
+  - **Pořadí vydání:** doména `cestokviz.cz` v dashboardu Pages (jen hráč; DNS už míří na
+    Cloudflare a pošta přežila, ale apex nemá záznam na web) → `WEB` v `build-public.js` →
+    nasazení → DNSSEC → balíček TWA, účet v Play Console, `/.well-known/assetlinks.json`.
+  - **Stav 2. 10.:** `nslookup`: NS `keaton`/`melinda.ns.cloudflare.com`, MX `thinline.cz`,
+    apex bez A/CNAME, `https://cestokviz.cz` neodpovídá. Detaily v protokolu, bod F.
 - **2026-10-01 — KAMPAŇ „40 OTÁZEK NA KAŽDOU ZEMI“ DOKONČENA: 55 zemí, +2 200 otázek.**
   Fond 4 012 → **6 212** (serverový fond beze změny 220). Hráč ji zadal jako „zcela autonomně,
   bez mého příkazu“; běželo to v devíti vlnách po 5–8 agentech, každý psal jednu zemi podle

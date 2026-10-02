@@ -72,6 +72,11 @@ pustit, **dev server při tom nesmí běžet souběžně s `npm run build`** (pa
 
 **4. Fronta práce — v tomto pořadí**
 
+> **ROZHODNUTÍ HRÁČE 2. 10.: nové otázky se NENASAZUJÍ, dokud nemají ilustrace.** Body D níže
+> (nasazení otázek) je proto ODLOŽENO do dokončení bodů B a C. Web a Google Play pokračují bez
+> nových otázek — viz bod F. Pozor, past: build kopíruje celé `data/questions`, takže jakékoli
+> nasazení z této větve by nové otázky vyneslo (podrobně v bodě F).
+
 **A. Prompty k ilustracím — HOTOVO 2. 10.** `npm run lint-irony`: 0 chyb. Všech 86 nových promptů
 s varováním je projito očima ([lint-irony-nove-prompty.txt](lint-irony-nove-prompty.txt)). Opraveno: 3×
 dominanta, `ph-k-fialova-hlizka` (kreslil zmrzlinu místo hlízy ube — ilustrace má kreslit ODPOVĚĎ)
@@ -99,7 +104,7 @@ a v kampani opravené (26 promptů s rizikovým slovem, viz zápis 2026-10-01).
 **C. Po obrázcích zvýšit `VERZE` v `sw.js`** (obrázky jsou cache-first, hráč s naplněnou cache
 by jinak viděl staré), commit a push.
 
-**D. Nasazení** přesně podle [nasazeni.md](nasazeni.md): migrace žádné (schéma beze změny), pak
+**D. Nasazení nových otázek — ODLOŽENO do ilustrací (rozhodnutí 2. 10.)**, až budou hotové, přesně podle [nasazeni.md](nasazeni.md): migrace žádné (schéma beze změny), pak
 `db:sync --check --remote` → `db:sync` → `wrangler d1 execute zemekviz --remote
 --file=data/d1-sync.sql` → posunout `master` (`git push origin HEAD:master`, ve worktree ne
 `git fetch . …`) → `npm run deploy` (`--branch master` už je ve skriptu). **Stav produkce zapsat
@@ -113,6 +118,27 @@ nejsou přidané `cestokviz.cz` ani `www.cestokviz.cz`; to musí udělat hráč*
 to nemá práva). Doména 2. 10. z tohoto počítače neodpovídala. Po přidání: přepnout `WEB` v
 `scripts/build-public.js` na `https://cestokviz.cz`, nasadit, ověřit certifikát a náhled pro
 sdílení a zapnout DNSSEC v Cloudflare (podrobnosti níže v zápisu z 30. 9.).
+
+**F. Web a Google Play BEZ nových otázek** (běží souběžně s B, nezávisle na ilustracích)
+- **Větev:** práce se dělá na větvi založené na `master` (např. `claude/web-play`), ne na této.
+  Nasazuje se z ní — build vezme to, co je v checkoutu, takže nové otázky se na web nedostanou.
+  Obsahovou větev `claude/pokracujeme-e79708` spojit a nasadit až s obrázky (konflikty čekej
+  jen v dokumentaci, kód se nepřekrývá).
+- **F1. Doména (jen hráč):** dashboard Cloudflare → Workers & Pages → projekt `zemekviz` →
+  Custom domains → Set up → `cestokviz.cz` a pak `www.cestokviz.cz`. Zóna je už na Cloudflare,
+  takže DNS záznamy vytvoří dashboard sám. **Pošta se nesmí dotknout** (MX na Thinline zůstává).
+  Ověření: `nslookup cestokviz.cz` vrátí adresy, `https://cestokviz.cz` načte hru s platným
+  certifikátem, `https://cestokviz.cz/manifest.json` vrací manifest (ne SPA fallback).
+- **F2. Přepnout `WEB`** v `scripts/build-public.js` na `https://cestokviz.cz`, nasadit
+  (`npm run deploy`), ověřit náhled pro sdílení a **teprve potom zapnout DNSSEC** v Cloudflare.
+- **F3. Google Play (TWA):** podklady k vydání (texty listingu, grafika 1024×500, snímky
+  obrazovky, ikona 512 už je) se dají připravit hned; zbytek čeká na doménu: účet Play Console
+  (poplatek, ověření identity — hráč), balíček přes PWABuilder, `/.well-known/assetlinks.json`
+  s otiskem klíče **app signing** (ne upload klíče; musí se dostat do `build-public.js`, jinak se
+  na web nenasadí), interní testování, vydání. Ilustrace se do balíčku nevejdou, obal je
+  bere z webu — nová verze obrázků se tedy do appky v Play dostane nasazením webu.
+- Právní stránky a zásady jsou nasazené; kontakt `ahoj@cestokviz.cz` je třeba ověřit, že
+  skutečně přijímá poštu (Google Play chce kontaktní e-mail vývojáře).
 
 **5. Tvrdá pravidla, která tuhle kampaň stála nejvíc**
 - **`online_only: true` u otázek s `-s-` v id je PŮVODNÍ serverový fond (4 na zemi, 220
