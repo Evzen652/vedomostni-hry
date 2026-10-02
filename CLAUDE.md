@@ -81,6 +81,17 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-03 — „Pokračuj“ na výběru kontinentu/zemí/témat PLAVE u spodní hrany, ale jen když
+  je povolené** (`.qz-sec-confirm:has(.qz-btn-start:not(:disabled))`, nasazení `0ca1eb60`). Hráč
+  tlačítko pod 23–56 dlaždicemi neviděl. **Ruší to rozhodnutí z 13. 8.** („napevno v toku“), které
+  vzniklo, protože tehdejší sticky lišta měla bílý podklad přes celou šířku a karty se o ni ostře
+  usekávaly. Teď místo podkladu běží přechod do `#fdf6e8` (konec gradientu stránky) a kontejner
+  má `pointer-events: none` (jen tlačítko `auto`), takže kliknutí na kartu pod přechodem projde.
+  Ověřeno měřením: před výběrem tlačítko na 1 438 px (mimo okno 914), po výběru 854–900 px, na
+  konci stránky stojí pod poslední řadou. Hlídá `test:offline` (923).
+- **2026-10-03 — Párty: praporky hráčů jsou MŘÍŽKA, ne flex-wrap** (`--cols` z `topHtml`: 2–4 v řadě,
+  5 a 6 po třech, telefon po dvou). `flex: 1` roztáhl neúplný řádek, takže u 5 hráčů byly 3 malé
+  a 2 velké praporky. Nasazení `ee4f95c7`.
 - **2026-10-03 — DLAŽDICE SE KRESLÍ Z NÁHLEDŮ 320 px (`assets/male/`), ne z 512px originálů.**
   Hráč: výběr zemí se „hodně dlouho načítá“. Naměřeno na ostré adrese: 56 vlajek = **3,5 MB**
   (512×512, ~62 kB), kreslí se ale nejvýš na 128–160 CSS px. Po změně **1,06 MB**; všech 82
