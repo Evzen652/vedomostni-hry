@@ -689,9 +689,20 @@
   background: rgba(42,127,127,.62); align-items: center; justify-content: center; color: #fff; }
 .qz-tile.sel .qz-tile-check { display: flex; }
 .qz-tile-check svg { width: 46px; height: 36px; }
-/* Tlačítko sedí napevno v toku pod dlaždicemi a roluje s nimi — dřív bylo sticky
-   u spodní hrany a při rolování přejíždělo přes karty. */
+/* „Pokračuj“ PLAVE u spodní hrany okna, ale JEN KDYŽ JE CO POTVRDIT (2026-10-03, hráč: „nevidím
+   tlačítko pokračuj a musím sjet“ — výběr zemí má 23–56 dlaždic a tlačítko bylo pod nimi).
+   Dokud je zašedlé, sedí v toku pod dlaždicemi jako dřív — na zablokované tlačítko nemá
+   smysl upozorňovat přes celou obrazovku. 13. 8. se plovoucí lišta ZRUŠILA, protože měla
+   bílý podklad přes celou šířku a karty se o ni při rolování ostře usekávaly; tady místo
+   podkladu běží PŘECHOD do barvy papíru u spodní hrany (#fdf6e8, konec gradientu stránky),
+   takže karty pod tlačítkem vyblednou. Na konci stránky sticky prvek stojí na svém místě
+   v toku, takže poslední řadu karet nezakryje. `:has()` bez podpory = chování jako dřív. */
 .qz-sec-confirm { width: 100%; max-width: 760px; display: flex; justify-content: center; padding: 18px 0 8px; }
+.qz-sec-confirm:has(.qz-btn-start:not(:disabled)) { position: sticky; bottom: 0; z-index: 2;
+  padding: 34px 0 calc(14px + env(safe-area-inset-bottom, 0px)); max-width: none; pointer-events: none;
+  background: linear-gradient(180deg, rgba(253,246,232,0) 0%, rgba(253,246,232,.92) 48%, #fdf6e8 100%); }
+/* pointer-events: přechod je průhledný nahoře, takže by bez toho kradl kliknutí kartám pod ním */
+.qz-sec-confirm .qz-btn-start { pointer-events: auto; }
 .qz-btn-start { background: var(--coral); color: #fffdf6; border: none; border-radius: 16px; padding: 12px 28px;
   font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
   box-shadow: 0 4px 0 #b1543f, 0 8px 18px rgba(226,114,91,.3); transition: transform .14s, box-shadow .14s; }

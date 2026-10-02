@@ -964,6 +964,10 @@ sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
   kontrola(/href="smazani-uctu"/.test(SRC_ONLINE),
     "profil v online.js neodkazuje na stránku o smazání");
   kontrola(/href="soukromi"/.test(SRC), "rozcestník v quiz.js neodkazuje na ochranu údajů");
+  kontrola(/[.]qz-sec-confirm:has[(][.]qz-btn-start:not[(]:disabled[)][)] [{][^}]*position: sticky/.test(SRC_CSS),
+    "Pokračuj na výběru zemí neplave u spodní hrany — při 23–56 dlaždicích je pod okrajem okna");
+  kontrola(/[.]qz-sec-confirm [.]qz-btn-start [{] pointer-events: auto/.test(SRC_CSS),
+    "plovoucí Pokračuj nemá pointer-events: auto — přechod pod ním by spolkl kliknutí i na tlačítko");
   kontrola(/[.]qz-scoreboard [{][^}]*display: grid/.test(SRC_CSS),
     "praporky hráčů v párty nejsou mřížka — flex-wrap roztáhne neúplný řádek (5 hráčů = 3 malé + 2 velké)");
   kontrola(/class="qz-scoreboard" style="--cols:/.test(SRC), "topHtml nenastavuje počet sloupců praporků (--cols)");
