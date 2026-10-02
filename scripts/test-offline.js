@@ -964,6 +964,10 @@ sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
   kontrola(/href="smazani-uctu"/.test(SRC_ONLINE),
     "profil v online.js neodkazuje na stránku o smazání");
   kontrola(/href="soukromi"/.test(SRC), "rozcestník v quiz.js neodkazuje na ochranu údajů");
+  kontrola(/<form class="zk-form" id="zk-authform"/.test(SRC_ONLINE) && /zk-authform"[)][.]addEventListener[(]"submit"/.test(SRC_ONLINE),
+    "přihlášení není <form> se submit — správce hesel by jméno a PIN nenabídl uložit");
+  kontrola(/nabidniUlozeni[(]nick, pin[)]/.test(SRC_ONLINE) && /new window[.]PasswordCredential/.test(SRC_ONLINE),
+    "po přihlášení se prohlížeči nenabízí uložení jména a PINu (PasswordCredential)");
   kontrola(fs.existsSync(path.join(process.cwd(), "favicon.ico")) && vBuildu.includes('"favicon.ico"'),
     "favicon.ico chybí nebo není v SOUBORY — /favicon.ico by vracel SPA fallback (HTML) a záložka by neměla ikonu");
   for (const s of ["hra.html", "podminky.html", "soukromi.html", "smazani-uctu.html"])

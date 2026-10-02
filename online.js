@@ -299,7 +299,10 @@ window.ZKOnline = (function () {
         (msg ? '<div class="zk-autherr">' + errBox(msg) +
           (isReg ? "" : '<button type="button" class="zk-linkbtn zk-errforgot" id="zk-errforgot">Obnovit PIN e-mailem</button>') +
           "</div>" : "") +
-        '<div class="zk-form">' +
+        // Skutečný <form> (2026-10-03, hráč: „bylo by fajn, aby si to pamatovalo“). Bez něj
+        // správce hesel v prohlížeči nepozná, že jde o přihlášení, a jméno s PINem nenabídne
+        // uložit. Odeslání řeší posluchač `submit` níž (preventDefault — stránka se nepřenačte).
+        '<form class="zk-form" id="zk-authform" novalidate>' +
           // Volba pásma („Kdo bude hrát?") z registrace zmizela 2026-09-15: po vyřazení dětí
           // zbyly jen Puberťáci a Dospělí a hráč ji měl za zbytečnou. Od 2026-09-25 se online
           // na pásmo neptá NIKDE — každý nový profil je Dospělí a nedá se to přepnout.
@@ -339,7 +342,7 @@ window.ZKOnline = (function () {
             : "") +
           '<button class="qz-go" id="zk-go"' + (isReg ? " disabled" : "") + ">" +
             (isReg ? "Založit profil" : "Přihlásit se") + " " + handArrowSvg(false) + "</button>" +
-        "</div>" +
+        "</form>" +
         // Appka hráče OSLOVUJE, neodbavuje ho. Původní „Už tu hráče máš?" znělo
         // jako formulář na úřadě; tohle je otázka, kterou by položil člověk.
         '<div class="zk-authfoot">' +
@@ -387,12 +390,8 @@ window.ZKOnline = (function () {
     body.querySelector("#zk-switch").addEventListener("click", function () {
       renderAuth(isReg ? "login" : "register");
     });
-    // Enter ve formuláři odesílá — jinak by hráč musel po PINu ještě trefit tlačítko.
-    body.querySelectorAll(".zk-authcard .qz-pname-in").forEach(function (inp) {
-      inp.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" && !goBtn.disabled) goBtn.click();
-      });
-    });
+    // Enter odesílá formulář sám (implicitní odeslání <form>) a se zablokovaným tlačítkem
+    // neodešle — dřív to dělal ruční posluchač keydown, který by teď odeslal dvakrát.
     // Po chybě kurzor rovnou do PINu (ten se maže), jinak fokus jen na velkém
     // displeji — na mobilu by hned po otevření vyskočila klávesnice přes půl obrazovky.
     if (msg) {
@@ -400,7 +399,9 @@ window.ZKOnline = (function () {
     } else if (!isReg && window.matchMedia && window.matchMedia("(min-width: 900px)").matches) {
       body.querySelector("#zk-nick").focus();
     }
-    goBtn.addEventListener("click", function () {
+    body.querySelector("#zk-authform").addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (goBtn.disabled) return;
       var nick = (body.querySelector("#zk-nick") || {}).value || "";
       var pin = body.querySelector("#zk-pin").value || "";
       var path = isReg ? "/auth/register" : "/auth/login";
@@ -416,6 +417,7 @@ window.ZKOnline = (function () {
         }
         token.set(r.body.token);
         S.me = r.body;
+        nabidniUlozeni(nick, pin);
         refreshMe(function () {
           var duel = pendingDuel();
           if (duel) return joinFromLink(duel);
@@ -423,6 +425,19 @@ window.ZKOnline = (function () {
         });
       });
     });
+  }
+
+  // Výslovná nabídka „Uložit heslo?“ (Credential Management API — Chrome, Edge, Android).
+  // Spoléhat jen na detekci formuláře nestačí: po odeslání se obrazovka překreslí přes
+  // innerHTML a prohlížeč to nemusí poznat jako úspěšné přihlášení. Kde API není (Firefox,
+  // Safari), zbývá detekce <form>. Selhání se tiše ignoruje — přihlášení už proběhlo.
+  function nabidniUlozeni(nick, pin) {
+    try {
+      if (window.PasswordCredential && navigator.credentials && navigator.credentials.store) {
+        navigator.credentials.store(new window.PasswordCredential({ id: nick, password: pin, name: nick }))
+          .catch(function () {});
+      }
+    } catch (e) {}
   }
 
   // ---------------------------------------------------------------- účet
