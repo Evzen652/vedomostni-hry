@@ -972,7 +972,7 @@ sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
     "praporky hráčů v párty nejsou mřížka — flex-wrap roztáhne neúplný řádek (5 hráčů = 3 malé + 2 velké)");
   kontrola(/class="qz-scoreboard" style="--cols:/.test(SRC), "topHtml nenastavuje počet sloupců praporků (--cols)");
   kontrola(/href="smazani-uctu"/.test(SRC), "rozcestník v quiz.js neodkazuje na smazání profilu");
-  kontrola(/class="qz-modesub">Zeměpisný kvíz/.test(SRC), "rozcestník nemá podtitulek, který říká, že jde o zeměpisný kvíz");
+  kontrola(/class="qz-modesub">Tisíce otázek/.test(SRC), "rozcestník nemá podtitulek, který říká, o čem kvíz je");
 }
 
 // ---- PWA: manifest, service worker, ikony (2026-09-25) ----
