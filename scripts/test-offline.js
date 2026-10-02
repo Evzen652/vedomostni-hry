@@ -964,6 +964,8 @@ sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
   kontrola(/href="smazani-uctu"/.test(SRC_ONLINE),
     "profil v online.js neodkazuje na stránku o smazání");
   kontrola(/href="soukromi"/.test(SRC), "rozcestník v quiz.js neodkazuje na ochranu údajů");
+  kontrola(/href="smazani-uctu"/.test(SRC), "rozcestník v quiz.js neodkazuje na smazání profilu");
+  kontrola(/class="qz-modesub">Zeměpisný kvíz/.test(SRC), "rozcestník nemá podtitulek, který říká, že jde o zeměpisný kvíz");
 }
 
 // ---- PWA: manifest, service worker, ikony (2026-09-25) ----
