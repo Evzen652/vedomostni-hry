@@ -81,6 +81,13 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-03 — Přihlášení do online ligy je skutečný `<form>` a po úspěchu volá
+  `navigator.credentials.store(PasswordCredential)`** (nasazení `95122ffc`). Hráč chtěl, aby si appka
+  jméno a PIN pamatovala. Přihlášení si pamatuje odjakživa (token 90 dní v localStorage) — hráč viděl
+  formulář, protože **localStorage je vázaný na ADRESU: na `cestokviz.cz` je každý prohlížeč nový**,
+  přihlášení ze `zemekviz.pages.dev` se nepřenese. Bez `<form>` ale správce hesel nenabízel uložení.
+  Enter teď odesílá formulář sám (implicitní odeslání; se zablokovaným tlačítkem ne) — ruční
+  `keydown` posluchač zmizel, jinak by se odesílalo dvakrát. Ověřeno v prohlížeči se simulovaným API.
 - **2026-10-03 — Rozcestník: nové texty (vybral hráč) a favikona.**
   - Podtitulek „Tisíce otázek o 55 zemích světa. Od Bajkalu po Shakespeara. Každý týden přidáváme
     nové.“ Slovo **„zeměpisný“ hráč vyřadil** (z devíti témat jsou zeměpisná dvě) a **humor se v textu
