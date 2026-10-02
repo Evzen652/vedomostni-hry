@@ -759,9 +759,10 @@
         <h2>Cestokvíz</h2>
       </div>
       <!-- Podtitulek (2026-10-03): rozcestník je zároveň titulní stránka webu, a bez něj
-           nikde na obrazovce nestálo, že jde o zeměpisný kvíz — jen jméno a obrázky.
+           nikde na obrazovce nestálo, o čem kvíz je — jen jméno a obrázky. Slovo „zeměpisný“
+           hráč 3. 10. vyřadil: z devíti témat jsou zeměpisná jen dvě.
            Je MIMO .qz-titlewrap, jinak by se glóbus centroval na nadpis i s ním. -->
-      <p class="qz-modesub">Zeměpisný kvíz s&nbsp;humorem. Tisíce otázek o&nbsp;55 zemích světa.</p>
+      <p class="qz-modesub">Tisíce otázek o&nbsp;55 zemích světa. Od Bajkalu po Shakespeara. Každý týden přidáváme nové.</p>
       <div class="qz-modes">
         <!-- Pořadí: Online první, Škola poslední (2026-08-31). Online je jediný režim,
              kde na hráče někdo čeká, takže patří dopředu; škola je nejužší případ užití.
