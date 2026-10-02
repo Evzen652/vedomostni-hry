@@ -29,7 +29,7 @@ const WEB = "https://cestokviz.cz";
 // celou appku. (2026-09-25)
 const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers",
   "podminky.html", "soukromi.html", "smazani-uctu.html", "pravni.css",
-  "manifest.json", "sw.js"];
+  "manifest.json", "sw.js", "favicon.ico"];
 const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
 const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json", "data/konflikty.json"];
 
