@@ -1639,7 +1639,11 @@
         <span class="qz-pav" style="background:${p.color}">${esc(inicial(p.name))}</span>
         <span class="qz-plmeta"><span class="qz-plname">${esc(p.name)}</span>${i===S.turn?'<span class="qz-plturn">Na tahu</span>':""}</span>
         <span class="qz-plscore" data-score="${i}">${p.score}</span></div>`).join("");
-      return `<div class="qz-scoreboard">${pills}</div>
+      // Počet sloupců určuje JS, ne flex-wrap (2026-10-03): `flex: 1` se zalamováním
+      // roztáhl každý řádek zvlášť, takže u pěti hráčů byly tři praporky malé a dva
+      // velké. Mřížka drží všechny stejně široké; 5 a 6 hráčů jde po třech (3+2, 3+3).
+      const sloupce = S.players.length <= 4 ? S.players.length : 3;
+      return `<div class="qz-scoreboard" style="--cols:${sloupce}">${pills}</div>
         <div class="qz-subtop"><span class="qz-progress">Kolo ${S.round}/${S.totalRounds} · otázka ${n}</span>
           <button class="qz-rotbtn" id="qz-rot" type="button">Otoč obrazovku</button></div>`;
     }

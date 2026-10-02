@@ -767,8 +767,12 @@
 /* Stejný nedostatek jako `.qz-top` (58px), ale tady je to VIDĚT: hráčský praporek 1
    začíná u LEVÉHO okraje, přesně tam, kde je i hostitel — takže se bublina a praporek
    reálně dotýkaly (nahlášeno hráčem přes screenshot, změřeno 0px mezera). */
-.qz-scoreboard { display: flex; gap: 8px; padding: 76px 16px 0; flex-wrap: wrap; position: relative; z-index: 3; }
-.qz-pl { flex: 1; min-width: 120px; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px; padding: 7px 10px;
+/* Mřížka, ne flex-wrap: praporky musí být STEJNĚ ŠIROKÉ i v neúplném řádku (5 hráčů = 3+2),
+   jinak se poslední řádek roztáhne a čte se, jako by ti dva byli důležitější. --cols nastaví
+   topHtml(); na telefonu jsou vždy dva sloupce (tři by měly ~100 px a jméno by se nevešlo). */
+.qz-scoreboard { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 8px; padding: 76px 16px 0; position: relative; z-index: 3; }
+@media (max-width: 520px) { .qz-scoreboard { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.qz-pl { min-width: 0; background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 13px; padding: 7px 10px;
   display: flex; align-items: center; gap: 8px; opacity: .72; box-shadow: 0 3px 0 #e3d5b8; font-family: inherit; color: var(--ink); }
 .qz-pl.active { opacity: 1; border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); }
 /* min-width: 0 je tu nutnost, ne kosmetika: flex položka se defaultně nesmrskne pod šířku
