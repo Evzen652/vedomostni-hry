@@ -28,3 +28,6 @@ data/d1-sync.sql
 
 # pracovní archy a výřezy ke kontrole ilustrací (scripts/ilustrace/*)
 .ilustrace/
+
+# pracovní složka psaní otázek po dávkách (scripts/obsah/*) — na této větvi nástroje nejsou, ale složka vznikla v checkoutu
+.obsah/

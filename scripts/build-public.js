@@ -17,7 +17,7 @@ const OUT = path.join(KOREN, "dist");
 // VEŘEJNÁ ADRESA APPKY — jediné místo, kde se mění při přechodu na vlastní doménu.
 // Dosazuje se za {{WEB}} v HTML (náhledy pro sdílení potřebují absolutní URL, relativní
 // cestu scrapery neberou). Bez koncového lomítka.
-const WEB = "https://zemekviz.pages.dev";
+const WEB = "https://cestokviz.cz";
 
 // Co jde ven. Cokoli tu není, se na web nedostane.
 // `_headers` MUSÍ být v kořeni nasazené složky, jinak si ho Pages nevšimnou a appka
