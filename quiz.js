@@ -753,6 +753,10 @@
         <div class="qz-globebg" id="qz-globebg"></div>
         <h2>Cestokvíz</h2>
       </div>
+      <!-- Podtitulek (2026-10-03): rozcestník je zároveň titulní stránka webu, a bez něj
+           nikde na obrazovce nestálo, že jde o zeměpisný kvíz — jen jméno a obrázky.
+           Je MIMO .qz-titlewrap, jinak by se glóbus centroval na nadpis i s ním. -->
+      <p class="qz-modesub">Zeměpisný kvíz s&nbsp;humorem. Tisíce otázek o&nbsp;55 zemích světa.</p>
       <div class="qz-modes">
         <!-- Pořadí: Online první, Škola poslední (2026-08-31). Online je jediný režim,
              kde na hráče někdo čeká, takže patří dopředu; škola je nejužší případ užití.
@@ -767,7 +771,7 @@
       <!-- Právní odkazy (2026-09-10) i pro hráče bez profilu: offline hra taky ukládá
            do prohlížeče rozehrané hry a jména. Ve stejné kartě — z rozcestníku se nic
            neztratí a stránky mají vlastní Zpět do hry. -->
-      <div class="qz-legalfoot"><a href="podminky">Podmínky použití</a> · <a href="soukromi">Ochrana údajů</a></div>
+      <div class="qz-legalfoot"><a href="podminky">Podmínky použití</a> · <a href="soukromi">Ochrana údajů</a> · <a href="smazani-uctu">Smazání profilu</a></div>
     </div>`;
     body.querySelector("#qz-mode-solo").addEventListener("click", () => beginPick("solo"));
     body.querySelector("#qz-mode-party").addEventListener("click", () => beginPick("party"));

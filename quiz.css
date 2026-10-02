@@ -617,7 +617,15 @@
   border-radius: 50%; overflow: hidden; opacity: .28; pointer-events: none; z-index: 0;
   box-shadow: inset -18px -14px 40px rgba(20,50,60,.35); }
 .qz-globebg canvas { width: 100% !important; height: 100% !important; display: block; }
-.qz-modepick h2, .qz-modes, .qz-resume-open { position: relative; z-index: 1; }
+.qz-modepick h2, .qz-modes, .qz-resume-open, .qz-modesub { position: relative; z-index: 1; }
+/* Podtitulek patří k nadpisu (užší mezera nad ním), od dlaždic ho dělí víc vzduchu —
+   jedna hodnota gap (18 px) by nadpis, podtitulek a karty slila do jednoho bloku.
+   Záporný okraj −44 px NENÍ magické číslo: h2 má výchozí okraj prohlížeče 0,83 em
+   (36,5 px při 44 px písma) a ten leží UVNITŘ .qz-titlewrap, takže mezi písmem nadpisu
+   a podtitulkem by bylo 36 + 18 px. Nadpisu okraj ubrat nejde — glóbus se centruje
+   na obal a po jeho zmenšení by vyjel nad horní okraj obrazovky. Výsledek: nadpis →
+   podtitulek ~10 px, podtitulek → dlaždice 34 px (rytmus jako v lobby). */
+.qz-modesub { margin: -44px 0 16px; max-width: 30em; font-size: 16px; line-height: 1.5; color: var(--muted); }
 
 /* výběr tématu: kontinent → země → sekce */
 .qz-pick { align-items: center; text-align: center; gap: 12px; padding: 70px 22px 20px; }
