@@ -81,6 +81,19 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-03 — VLASTNÍ DOMÉNA `cestokviz.cz` BĚŽÍ; `WEB` přepnuto a nasazeno (bez nových otázek).**
+  Hráč v dashboardu Pages přidal doménu (stav Active, SSL enabled; `CNAME @ → zemekviz.pages.dev`
+  vytvořil dashboard sám, protože zóna je ve stejném účtu jako projekt). `WEB` v
+  `build-public.js` → `https://cestokviz.cz`, `master` posunut na `3028f62`, nasazení `90bbd12c`
+  (předchozí `d1ad786b` pro návrat). Ověřeno na obsahu obou adres, ne na stavovém kódu.
+  - **Nové otázky zůstaly venku:** nasazeno z `master` (3 792 veřejných v indexu), obsahová větev se
+    do `master` NESLOUČILA. Čistý commit jen se třemi soubory (ne z větve `claude/web-play`, ta má
+    omylem commitnutou složku `.obsah/` a je zastaralá).
+  - **Zbývá:** `www.cestokviz.cz` (nepovinné), DNSSEC (Cloudflare + DS u registrátora), pak Google Play
+    (docs/google-play-podklady.md). Detaily v protokolu, bod F.
+  - **Pasti:** v novém menu Cloudflare je Workers & Pages pod **Compute**; po přidání domény si místní
+    DNS krátce pamatuje „neexistuje“ (curl 000), ověřuj `nslookup … 8.8.8.8` a pak počkej; při psaní
+    shellových příkazů se zpětné apostrofy uvnitř uvozovek VYKONAJÍ (`\`soubor\`` spustí soubor).
 - **2026-10-02 — NOVÉ OTÁZKY SE NENASAZUJÍ, DOKUD NEMAJÍ OBRÁZKY (rozhodl hráč). Web a Google Play
   pokračují BEZ nich.** Appka je celá malovaná a otázka bez ilustrace padá na záložní razítko
   země — 2 200 takových najednou by byla viditelná díra.

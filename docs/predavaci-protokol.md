@@ -37,8 +37,9 @@ teprve pak cokoli ověřovat.
 **Jednou větou:** kampaň „40 otázek na každou zemi“ je hotová a pushnutá (55 zemí, fond 4 012 →
 **6 212**), ale **nic z ní není nasazené a žádná z 2 200 nových otázek nemá ilustraci.** Kód
 aplikace se v kampani nezměnil (jen generovaný `functions/_lib/konflikty.js`), takže nasazení
-je čistě obsahové. `master` (= produkce, `5c28dea`) je o dvacet a víc commitů za větví; ty
-commity jsou jen data, dokumentace a nástroje.
+je čistě obsahové. `master` (= produkce, `3028f62`, nasazení `90bbd12c`) je o dvacet a víc commitů za touhle větví;
+ty commity jsou jen data, dokumentace a nástroje. **3. 10. se `master` sloučil do této větve**
+(merge `dd015e9`), takže i nasazení odsud už používá doménu `cestokviz.cz`.
 
 **1. Převzetí na novém počítači**
 
@@ -112,25 +113,30 @@ PŘED i PO** (naposledy 1 lidský hráč, 18 botů, 1 hra, 19 ratingů) a ověř
 otázek je pořád 220**. Ověřuj OBSAH na ostré adrese, ne stavový kód (SPA fallback vrací 200
 na cokoli). **`npm run db:init:remote` se nikdy nespouští.**
 
-**E. Vlastní doména `cestokviz.cz`** — delegace je od 30. 9. přepnutá na Cloudflare a pošta ji
-přežila (MX na Thinline), ale **v dashboardu Pages (projekt `zemekviz` → Custom domains) ještě
-nejsou přidané `cestokviz.cz` ani `www.cestokviz.cz`; to musí udělat hráč** (wrangler ani API na
-to nemá práva). Doména 2. 10. z tohoto počítače neodpovídala. Po přidání: přepnout `WEB` v
-`scripts/build-public.js` na `https://cestokviz.cz`, nasadit, ověřit certifikát a náhled pro
-sdílení a zapnout DNSSEC v Cloudflare (podrobnosti níže v zápisu z 30. 9.).
+**E. Vlastní doména `cestokviz.cz` — HOTOVO 3. 10.** (připojena, `WEB` přepnuto, nasazeno; podrobnosti
+v bodě F1–F2). Zbývá nepovinné `www` a DNSSEC.
 
 **F. Web a Google Play BEZ nových otázek** (běží souběžně s B, nezávisle na ilustracích)
 - **Větev:** práce se dělá na větvi založené na `master` (např. `claude/web-play`), ne na této.
   Nasazuje se z ní — build vezme to, co je v checkoutu, takže nové otázky se na web nedostanou.
   Obsahovou větev `claude/pokracujeme-e79708` spojit a nasadit až s obrázky (konflikty čekej
   jen v dokumentaci, kód se nepřekrývá).
-- **F1. Doména (jen hráč):** dashboard Cloudflare → Workers & Pages → projekt `zemekviz` →
-  Custom domains → Set up → `cestokviz.cz` a pak `www.cestokviz.cz`. Zóna je už na Cloudflare,
-  takže DNS záznamy vytvoří dashboard sám. **Pošta se nesmí dotknout** (MX na Thinline zůstává).
-  Ověření: `nslookup cestokviz.cz` vrátí adresy, `https://cestokviz.cz` načte hru s platným
-  certifikátem, `https://cestokviz.cz/manifest.json` vrací manifest (ne SPA fallback).
-- **F2. Přepnout `WEB`** v `scripts/build-public.js` na `https://cestokviz.cz`, nasadit
-  (`npm run deploy`), ověřit náhled pro sdílení a **teprve potom zapnout DNSSEC** v Cloudflare.
+- **F1. Doména — HOTOVO 3. 10.** V Cloudflare (Workers & Pages → `zemekviz` → Custom domains)
+  přidána `cestokviz.cz`: stav **Active**, **SSL enabled**, záznam `CNAME @ → zemekviz.pages.dev`
+  vytvořil dashboard sám. **Zbývá `www.cestokviz.cz`** (nepovinné, `www` dnes neexistuje:
+  `Non-existent domain`) — stejný postup: Set up a custom domain → `www.cestokviz.cz` → Continue
+  → Activate domain. Pošta (MX na Thinline) je nedotčená. **Past v menu:** nové menu dashboardu
+  nemá samostatné „Workers & Pages“, je pod **Compute**; přímý odkaz je
+  `https://dash.cloudflare.com/3005fa92056c05be6e87ea85a5df5ab9/pages/view/zemekviz`.
+  **Past při ověřování:** tenhle počítač si krátce pamatoval „doména neexistuje“ a `curl` vracel 000,
+  i když `nslookup … 8.8.8.8` už adresy dával; ověřuj přímo a pak počkej.
+- **F2. `WEB` přepnuto a nasazeno — HOTOVO 3. 10.** `scripts/build-public.js` → `https://cestokviz.cz`,
+  commit `3028f62` na `master`, `npm run deploy` → **nasazení `90bbd12c`**. Ověřeno na obou adresách
+  (`cestokviz.cz` i `zemekviz.pages.dev`): `og:url`/`og:image`/`canonical` míří na `cestokviz.cz`,
+  žádný nedosazený `{{WEB}}`, `manifest.json` je skutečný manifest, `/api/leaderboard` 401, součet
+  v indexu 3 792 (nové otázky venku nejsou). **Předchozí nasazení pro návrat: `d1ad786b` (`5c28dea`).**
+  `zemekviz.pages.dev` dál funguje a servíruje totéž. **Zbývá zapnout DNSSEC** v Cloudflare
+  (DNS → Settings → DNSSEC → Enable; DS záznam se pak musí vložit u registrátora — viz zápis 30. 9.).
 - **F3. Google Play (TWA):** podklady k vydání (texty listingu, grafika 1024×500, snímky
   obrazovky, ikona 512 už je) se dají připravit hned; zbytek čeká na doménu: účet Play Console
   (poplatek, ověření identity — hráč), balíček přes PWABuilder, `/.well-known/assetlinks.json`
