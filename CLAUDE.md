@@ -81,6 +81,18 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-03 — Rozcestník: nové texty (vybral hráč) a favikona.**
+  - Podtitulek „Tisíce otázek o 55 zemích světa. Od Bajkalu po Shakespeara. Každý týden přidáváme
+    nové.“ Slovo **„zeměpisný“ hráč vyřadil** (z devíti témat jsou zeměpisná dvě) a **humor se v textu
+    nejmenuje** — na ten má hráč přijít sám. Dvojice „Od X po Y“ nesmí začínat stejným písmenem.
+    ⚠ **„Každý týden přidáváme nové“ je SLIB** — dnes za ním žádná týdenní dávka není (2 200 otázek
+    čeká na ilustrace); kdo nasazuje, ať ho drží, nebo text změní.
+  - Popisky režimů: Sólo „Kdo neví, kde leží Fidži, nemusí se nikomu přiznávat.“, Párty „Tablet
+    doprostřed stolu, 2 až 6 hráčů. Kdo prohraje, myje nádobí.“, Škola „Promítni na tabuli a nech
+    třídu hádat. Zeměpis, při kterém nikdo nespí.“ Hráč odmítá obecné pointy („Vyhrává ten chytrej“).
+  - **Favikona** `favicon.ico` (16/32/48, `scripts/gen-favicon.js`) z VÝŘEZU hlavy žárovky — celá
+    ikona je v 16 px nečitelná. Do teď stránka žádnou neměla a `/favicon.ico` vracel SPA fallback.
+    V `SOUBORY` build-public.js a odkazovaná ze všech čtyř HTML (hlídá test:offline, 928).
 - **2026-10-03 — „Pokračuj“ na výběru kontinentu/zemí/témat PLAVE u spodní hrany, ale jen když
   je povolené** (`.qz-sec-confirm:has(.qz-btn-start:not(:disabled))`, nasazení `0ca1eb60`). Hráč
   tlačítko pod 23–56 dlaždicemi neviděl. **Ruší to rozhodnutí z 13. 8.** („napevno v toku“), které
