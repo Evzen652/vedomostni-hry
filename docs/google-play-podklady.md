@@ -4,11 +4,11 @@ Koncept z 2. 10. 2026. Texty a odpovědi vycházejí z toho, co appka **opravdu 
 ochrany údajů na `/soukromi`, `docs/online-rezim.md`). Co je potřeba ověřit nebo rozhodnout,
 je označené **⚠**. Pořadí vydání a technický postup jsou v `docs/predavaci-protokol.md`, bod F.
 
-> **Větev  vznikla ze  (4 012 otázek) schválně:** nové otázky z kampaně 30. 9.–1. 10.
-> leží na větvi  a **nesmí se dostat do nasazení z téhle větve**, dokud nemají
-> obrázky (rozhodnutí hráče 2. 10.;  kopíruje celé ). Plán a past jsou
-> v , bod F, na obsahové větvi. **Před každým nasazením z téhle větve ověř,
-> že  má součet 4 012.**
+> **Větev `claude/web-play` vznikla ze `master` (4 012 otázek) schválně:** nové otázky z kampaně
+> 30. 9.–1. 10. leží na větvi `claude/pokracujeme-e79708` a **nesmí se dostat do nasazení z téhle
+> větve**, dokud nemají obrázky (rozhodnutí hráče 2. 10.; `build-public.js` kopíruje celé
+> `data/questions`). Plán a past jsou v `docs/predavaci-protokol.md`, bod F, na obsahové větvi.
+> **Před každým nasazením z téhle větve ověř, že `data/questions-index.json` má součet 4 012.**
 >
 > **Pozor, platí do dokončení ilustrací:** v listingu neslibuj počet otázek vyšší než ten, který
 > je nasazený (k 2. 10. **4 012**). Nové otázky se nenasazují, dokud nemají obrázky.
