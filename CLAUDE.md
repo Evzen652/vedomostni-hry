@@ -63,7 +63,7 @@ při psaní nového CSS s tím počítej.
 
 ## ⇢ ZAČNI TADY, KDYŽ POKRAČUJEŠ PO PŘESTÁVCE
 
-1. **[docs/predavaci-protokol.md](docs/predavaci-protokol.md)** — co převzít, co ověřit
+1. **[docs/predavaci-protokol.md](docs/predavaci-protokol.md)** — **nejdřív blok „Předání na druhý počítač“ (stav k 2. 10.)**: co převzít, co ověřit
    (s očekávanými čísly, ať se pozná rozdíl mezi „jiné prostředí" a „regrese"), tvrdá
    pravidla a fronta práce. **Proveď převzetí podle bodu 2, než začneš cokoli měnit.**
 2. **[docs/pokracovani.md](docs/pokracovani.md)** — popisný stav: co je hotové, jak
@@ -99,7 +99,7 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     po nich nezůstane (ověřit `curl`, spustit znovu).
   - **Podrobnosti, seznam hotových zemí, co zbývá (ilustrace → nasazení) a poučení:**
     [docs/predavaci-protokol.md](docs/predavaci-protokol.md). Nástroje kampaně (`prijmi.js`,
-    `ZADANI.md`) žijí jen ve scratchpadu mimo repo — kdyby se opakovala, přesunout do repa.
+    `ZADANI.md`) jsou od 2. 10. V REPU: `scripts/obsah/` (+ `README.md` s postupem a pastmi).
 - **2026-09-30 — Dobarvení ilustrací je NOVĚ NÁSTROJ V REPU (`scripts/ilustrace/dobarvi.js`)
   a bere zdroj Z GITU, ne z disku. Čtyři dlaždice online lobby dobarveny.**
   Hráč: dlaždice Světové ligy jsou „příliš vybledlé“. Postup na dobarvení byl popsaný

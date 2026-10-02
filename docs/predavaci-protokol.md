@@ -1,7 +1,8 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-29. 9. 2026** po session z 26.–28. 9., která:
+2. 10. 2026** — hlavní blok „Předání na druhý počítač“ je hned pod prvním vzkazem v bodě 0.
+Starší session z 26.–28. 9. mimo jiné:
 - **zrušila přátele s kódem a nahradila je výzvami podle přezdívky** (vlastní tabulka
   `challenges`, hra vzniká až přijetím; lobby nově ukazuje příchozí výzvy a hry na tahu),
 - **předělala odvetu proti člověku na výzvu** a odmítá vzájemnou výzvu,
@@ -10,7 +11,9 @@ Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **nap
   s ilustrací prošlou kontrolou očima, a zavřela dvě díry, kudy šlo odpověď zjistit předem
   (id otázky a přednačtená ilustrace).
 
-Fond je teď **4 012 otázek: 3 792 veřejných + 220 serverových, všechny s malovanou ilustrací.**
+Fond je teď **6 212 otázek: 5 992 veřejných + 220 serverových.** Z toho **2 200 nových
+(kampaň 30. 9.–1. 10.: 40 na každou z 55 zemí) je BEZ ilustrace a NENASAZENÝCH.**
+(Do 29. 9. bylo 4 012 otázek, všechny s malovanou ilustrací.)
 
 Tenhle soubor je **protokol**: co převzít, co ověřit, co je zakázané a co dělat
 v jakém pořadí. Konvence a všechna rozhodnutí (včetně podrobností k 26. 9.) jsou
@@ -29,7 +32,104 @@ Zkopíruj do prvního vzkazu:
 Nejdřív `git fetch` a posunout se na `origin/claude/pokracujeme-e79708` (fast-forward),
 teprve pak cokoli ověřovat.
 
-### Stav k 29. 9.
+### ⇢ PŘEDÁNÍ NA DRUHÝ POČÍTAČ — stav k 2. 10. 2026 (čti TOHLE jako první)
+
+**Jednou větou:** kampaň „40 otázek na každou zemi“ je hotová a pushnutá (55 zemí, fond 4 012 →
+**6 212**), ale **nic z ní není nasazené a žádná z 2 200 nových otázek nemá ilustraci.** Kód
+aplikace se v kampani nezměnil (jen generovaný `functions/_lib/konflikty.js`), takže nasazení
+je čistě obsahové. `master` (= produkce, `5c28dea`) je o dvacet a víc commitů za větví; ty
+commity jsou jen data, dokumentace a nástroje.
+
+**1. Převzetí na novém počítači**
+
+```bash
+git clone https://github.com/Evzen652/vedomostni-hry.git && cd vedomostni-hry   # nebo jen `git fetch`
+git checkout claude/pokracujeme-e79708 && git pull
+npm install
+```
+
+**2. Lokální tajemství — NEJSOU v gitu, musí se založit ručně**
+- Zkopíruj `.dev.vars.example` na `.dev.vars` (řádek `ALLOW_DEV_SECRET=1` je nutný, jinak lokální
+  server odmítne podepisovat tokeny a registrace padá na 500).
+- **`GEMINI_API_KEY=`** doplň vlastním klíčem z ai.studio (formát `AQ.…`). Nikdy ho necommituj.
+  Na prvním počítači řádek v `.dev.vars` byl, ale **neověřeno, že klíč platí a má kredit** —
+  první neúspěšný požadavek to ukáže (429 = bez kreditu).
+- `.batch-irony.json` (stav dávky ilustrací) je taky jen na jednom stroji a nejde do gitu. **Dávku
+  odeslanou na jednom počítači nevyzvedneš na druhém**, dokud ten soubor nezkopíruješ.
+
+**3. Ověř, že stav sedí (očekávaná čísla)**
+
+```bash
+npm run validate                      # CHYBY: žádné; „serverový fond: 220 z 6212“
+npm run test:offline                  # VŠE V POŘÁDKU: 917 kontrol
+node scripts/obsah/test-prijmi.js     # VŠE OK: 8 z 8
+node scripts/obsah/dokonci.js         # exit 0; build-index nic nezmění (git status zůstane čistý)
+```
+
+Lokální API testy (`npm run db:init`, `npm run dev`, `npm run test:api`) naposledy prošly 184
+kontrol; tuhle kampaň se nespouštěly, protože se nezměnil žádný kód ani schéma. Pokud je chceš
+pustit, **dev server při tom nesmí běžet souběžně s `npm run build`** (past z 2026-09-25).
+
+**4. Fronta práce — v tomto pořadí**
+
+**A. Prompty k ilustracím (než se utratí cent).** `npm run lint-irony` dává **0 chyb a 187
+varování**, z toho **86 patří novým otázkám** (85× „jídlo bez zjevného popisu TVARU“, 3×
+„nepojmenovaná dominanta“). Seznam id je v [lint-irony-nove-prompty.txt](lint-irony-nove-prompty.txt).
+Projít očima a do PRVNÍ věty promptu dopsat tvar jídla (`stick-shaped`, `round flat discs`…):
+jídlo bez tvaru je zdokumentovaná past (omáčka → zmrzlina).
+
+**B. Ilustrace — všech 2 200 nových otázek je bez `img/<id>.jpg`.** `irony_prompt` mají napsané
+a v kampani opravené (26 promptů s rizikovým slovem, viz zápis 2026-10-01).
+- **Náklad:** dávkou ~$0,034 za obrázek, tedy **~$75** za všechno. **Rozpočet potvrď s hráčem,
+  nespouštěj to sám.**
+- **Velikost:** ~220 kB na obrázek → **+~490 MB**. `img/` má dnes 4 039 souborů a 844 MB, po
+  doplnění ~1,3 GB. GitHub doporučuje repo pod 1 GB; limit Pages je 20 000 souborů (6 200 je v
+  pořádku). Kdyby velikost začala vadit, cesta ven je Cloudflare R2 (zápis 2026-08-28).
+- **Postup:** nejdřív zkušební dávka JEDNÉ země, očima zkontrolovat, teprve pak zbytek.
+  ```bash
+  node scripts/batch-irony-images.js submit --cc <cc>   # pak `status`, po doběhnutí `fetch` (do 24 h)
+  ```
+- **Kontrola očima je povinná** (archy 3×3 `scripts/ilustrace/archy.js`, arch rohů `rohy.js`,
+  zvětšený výřez `vyrez.js`). Historická míra vad je ~10 %; opravy přes `submit --only id,id`
+  (starý obrázek nejdřív přesunout stranou, jinak ho `submit` přeskočí). Pasti (podpis v rohu,
+  text na dresech, vlajky, jídlo bez tvaru, reálné osoby) jsou v CLAUDE.md, sekce „Ilustrace“
+  a zápisy 2026-09-12 až 09-25.
+
+**C. Po obrázcích zvýšit `VERZE` v `sw.js`** (obrázky jsou cache-first, hráč s naplněnou cache
+by jinak viděl staré), commit a push.
+
+**D. Nasazení** přesně podle [nasazeni.md](nasazeni.md): migrace žádné (schéma beze změny), pak
+`db:sync --check --remote` → `db:sync` → `wrangler d1 execute zemekviz --remote
+--file=data/d1-sync.sql` → posunout `master` (`git push origin HEAD:master`, ve worktree ne
+`git fetch . …`) → `npm run deploy` (`--branch master` už je ve skriptu). **Stav produkce zapsat
+PŘED i PO** (naposledy 1 lidský hráč, 18 botů, 1 hra, 19 ratingů) a ověřit, že **serverových
+otázek je pořád 220**. Ověřuj OBSAH na ostré adrese, ne stavový kód (SPA fallback vrací 200
+na cokoli). **`npm run db:init:remote` se nikdy nespouští.**
+
+**E. Vlastní doména `cestokviz.cz`** — delegace je od 30. 9. přepnutá na Cloudflare a pošta ji
+přežila (MX na Thinline), ale **v dashboardu Pages (projekt `zemekviz` → Custom domains) ještě
+nejsou přidané `cestokviz.cz` ani `www.cestokviz.cz`; to musí udělat hráč** (wrangler ani API na
+to nemá práva). Doména 2. 10. z tohoto počítače neodpovídala. Po přidání: přepnout `WEB` v
+`scripts/build-public.js` na `https://cestokviz.cz`, nasadit, ověřit certifikát a náhled pro
+sdílení a zapnout DNSSEC v Cloudflare (podrobnosti níže v zápisu z 30. 9.).
+
+**5. Tvrdá pravidla, která tuhle kampaň stála nejvíc**
+- **`online_only: true` u otázek s `-s-` v id je PŮVODNÍ serverový fond (4 na zemi, 220
+  celkem), ne chyba.** Nesahej na něj bez porovnání se stavem před zásahem.
+- **Rizikové slovo v `irony_prompt` je past i v záporu** (`banner`, `plaque`, `sign`, `written`,
+  `writing`, `scoreboard`…). Plochu popiš kladně („smooth and completely bare“).
+- **Fakta, která agent hlásí jako „z paměti neověřená“, se ověřují vždy** — dvě skutečné chyby
+  kampaně se našly právě tak.
+- Zbytek tvrdých pravidel je v sekci „3. Tvrdá pravidla“ níže a v CLAUDE.md.
+
+**6. Další dávka otázek** (kdyby bylo potřeba dopsat další země nebo další dávku): nástroje a
+celý postup jsou v [`scripts/obsah/README.md`](../scripts/obsah/README.md).
+
+**7. Co čeká na rozhodnutí hráče:** rozpočet na ilustrace (bod B), přidání domény v dashboardu
+(bod E) a produktové body z revize 29. 9. (sdílení výsledku s obrázkem hráč 29. 9. zamítl;
+monetizace a růst počtu hráčů zůstávají otevřené — viz sekce „4. Fronta práce“ a „5. Rozhodnutí, která čekají na hráče“ níže).
+
+### Stav k 29. 9. (historie — nasazení, které proběhlo; pro souvislosti)
 
 **Všechno je commitnuté a pushnuté** — stačí `git pull`. Dev server na konci session
 neběží; to je normální stav mezi sezeními.
@@ -230,10 +330,11 @@ jen historie — stav je tenhle.
      Varování „id obsahuje slovo z odpovědi“ je u VEŘEJNÝCH otázek šum.
   6. **Kontrola „odpověď v zadání“ chytá i věci, co nejsou chyba:** „v hlavni“ je správný
      6. pád od „hlaveň“, ne chybějící diakritika.
-- **`scratchpad/` (mimo repo, ztratí se s počítačem):** `ZADANI.md`, `prijmi.js`,
-  `dokonci.ps1`, `priprav-kontext.js`, `kontext/`. Kdyby se kampaň opakovala pro další
-  dávku, je potřeba je obnovit — **zvaž přesun `prijmi.js` a `ZADANI.md` do
-  `scripts/obsah/`**, stejně jako se 13. 9. stěhovaly nástroje na ilustrace.
+- **Nástroje kampaně jsou od 2. 10. V REPU: `scripts/obsah/`** (`ZADANI.md`, `prijmi.js`,
+  `priprav-kontext.js`, `dokonci.js`, `test-prijmi.js`, `README.md`); pracovní složka
+  `.obsah/` je gitignorovaná. Přejímka má navíc opravené slepé kontroly (rizikové slovo i v
+  záporu, „tys“, příznak `online_only` na nové otázce) — **postup a pasti viz
+  `scripts/obsah/README.md`**.
 
 **Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
 proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,

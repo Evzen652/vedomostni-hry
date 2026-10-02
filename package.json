@@ -33,7 +33,10 @@
     "deploy": "npm run build && wrangler pages deploy dist --project-name zemekviz --branch master",
     "build": "node scripts/build-public.js",
     "build-index": "node scripts/build-question-index.js && node scripts/build-konflikty.js",
-    "db:sync": "node scripts/sync-d1-questions.js"
+    "db:sync": "node scripts/sync-d1-questions.js",
+    "obsah:kontext": "node scripts/obsah/priprav-kontext.js",
+    "obsah:prijmi": "node scripts/obsah/prijmi.js",
+    "obsah:dokonci": "node scripts/obsah/dokonci.js"
   },
   "devDependencies": {
     "sharp": "^0.35.2",
