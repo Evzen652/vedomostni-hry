@@ -70,7 +70,12 @@
   // ne <img src="assets/country-null.jpg"> — to dělalo zbytečné 404 na školní i párty
   // obrazovce. Guard je tady, ať se nemusí hlídat na sedmi volajících místech. Escape cc
   // je jen pojistka: dnes je to vždy dvoupísmenný kód z řízené sady.
-  function flagStamp(cc, cls){ if(!cc) return ""; return `<img class="${cls||"qz-stamp"}" src="assets/country-${esc(cc)}.jpg" alt="" onerror="this.style.display='none'">`; }
+  // Ilustrace dlaždic se kreslí přes NÁHLED 320 px z assets/male/ (2026-10-03): originály
+  // mají 512 px, kreslí se ale nejvýš na 160 px, a výběr zemí tak stahoval 3,5 MB vlajek.
+  // Náhledy vyrábí `npm run nahledy`, zastaralé hlásí validate. Mimo vyjmenované rodiny
+  // (a u čehokoli, co není cesta do assets/) vrací cestu beze změny.
+  function male(p){ return /^assets[/](country|cont|section|mode|band|jump)-[a-z0-9-]+[.]jpg$/.test(p||"") ? "assets/male/" + p.slice(7) : p; }
+  function flagStamp(cc, cls){ if(!cc) return ""; return `<img class="${cls||"qz-stamp"}" src="${male("assets/country-"+esc(cc)+".jpg")}" alt="" onerror="this.style.display='none'">`; }
   // Na glóbu je místo holé tečky ZAPÍCHNUTÁ VLAJKA (přání hráče 2026-09-24 — "ten
   // glóbus je nudnej"). Recykluje se tatáž ironická vlajka jako na dlaždici výběru
   // země (assets/country-{cc}.jpg u flagStamp výš), takže je to gag zadarmo, ne nový
@@ -87,7 +92,7 @@
       <span class="qz-flagpin-dot"></span>
       <span class="qz-flagpin-impact"></span>
       <span class="qz-flagpin-pole"><span class="qz-flagpin-fly">
-        <img class="qz-flagpin-flag" src="assets/country-${esc(cc)}.jpg" alt="" onerror="this.removeAttribute('src')">
+        <img class="qz-flagpin-flag" src="${male("assets/country-"+esc(cc)+".jpg")}" alt="" onerror="this.removeAttribute('src')">
       </span></span>
     </span>`;
   }
@@ -725,7 +730,7 @@
         const faces = s.party ? `<span class="qz-resume-faces">${(saves[id].meta.players||[]).map(p=>
             `<span class="qz-face" style="background:${p.color}">${esc(inicial(p.name))}</span>`).join("")}</span>` : "";
         return `<div class="qz-resume-item" role="button" tabindex="0" aria-label="Pokračovat ve hře: ${esc(s.coHral)}" data-resume="${id}">
-          <img class="qz-resume-img" src="${s.obr}" alt="" onerror="this.style.visibility='hidden'">
+          <img class="qz-resume-img" src="${male(s.obr)}" alt="" onerror="this.style.visibility='hidden'">
           <span class="qz-resume-text">
             ${radek("Co se hrálo", s.coHral)}
             ${radek("Úroveň obtížnosti", s.uroven)}
@@ -762,10 +767,10 @@
              kde na hráče někdo čeká, takže patří dopředu; škola je nejužší případ užití.
              Bot se v popisku NEZMIŇUJE — je to náhradní řešení pro prázdnou frontu,
              ne důvod, proč sem jít. -->
-        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Světová online liga</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>` : ""}
-        <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Nikdo nezmerčí, kde máš slabá místa...</div></button>
-        <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Pro 2 až 6 hráčů. Vyhrává ten chytrej.</div></button>
-        <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Třída hádá. Aspoň jeden musí něco vědět...</div></button>
+        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Světová online liga</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>` : ""}
+        <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/male/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Nikdo nezmerčí, kde máš slabá místa...</div></button>
+        <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/male/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Pro 2 až 6 hráčů. Vyhrává ten chytrej.</div></button>
+        <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/male/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Třída hádá. Aspoň jeden musí něco vědět...</div></button>
       </div>
       ${resumeBtn}${resumeModal}
       <!-- Právní odkazy (2026-09-10) i pro hráče bez profilu: offline hra taky ukládá
@@ -1008,7 +1013,7 @@
     const soon = o.soon ? " soon" : "";
     const sel = o.sel ? " sel" : "";
     const icInner = o.img
-      ? `<img class="ic-img" src="${o.img}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${o.ic}</span>`
+      ? `<img class="ic-img" src="${male(o.img)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${o.ic}</span>`
       : o.ic;
     const check = o.selectable ? `<span class="qz-tile-check">${checkSvg()}</span>` : "";
     return `<button class="qz-tile${soon}${sel}" ${o.attr||""} ${o.soon?"disabled":""}>

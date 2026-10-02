@@ -207,6 +207,25 @@ for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý 
 }
 
 // ---- výstup ----
+// NÁHLEDY DLAŽDIC (2026-10-03): appka kreslí dlaždice z assets/male/ (320 px), ne z originálů
+// (512 px). Chybějící náhled = dlaždice spadne na emoji; ZASTARALÝ náhled = přegenerovaná
+// ilustrace se na webu vůbec neukáže, a to se nikde jinde nepozná. Náhled nese v EXIF
+// otisk originálu, takže se porovná bez sharpu. Oprava obojího: npm run nahledy.
+{
+  const crypto = require("crypto");
+  const RODINY = /^(country|cont|section|mode|band|jump)-[a-z0-9-]+[.]jpg$/;
+  const zdroje = fs.readdirSync(P("assets")).filter(f => RODINY.test(f));
+  const chybi = [], stare = [];
+  for (const f of zdroje) {
+    const cil = P("assets", "male", f);
+    if (!fs.existsSync(cil)) { chybi.push(f); continue; }
+    const o = "zdroj-sha1:" + crypto.createHash("sha1").update(fs.readFileSync(P("assets", f))).digest("hex");
+    if (!fs.readFileSync(cil).includes(o)) stare.push(f);
+  }
+  if (chybi.length) bad(`chybí náhled v assets/male/ (${chybi.length}): ${chybi.slice(0, 6).join(", ")} — spusť npm run nahledy`);
+  if (stare.length) bad(`zastaralý náhled v assets/male/ (${stare.length}): ${stare.slice(0, 6).join(", ")} — spusť npm run nahledy`);
+}
+
 console.log(`Zkontrolováno: ${qCount} otázek v ${qFiles.length} souboru/ech, ${cardIds.size} karet, ${imgs.length} obrázků.\n`);
 if (problems.length) { console.log(`CHYBY (${problems.length}):`); problems.forEach(p => console.log("  ✗ " + p)); }
 else console.log("CHYBY: žádné");
