@@ -72,11 +72,12 @@ pustit, **dev server při tom nesmí běžet souběžně s `npm run build`** (pa
 
 **4. Fronta práce — v tomto pořadí**
 
-**A. Prompty k ilustracím (než se utratí cent).** `npm run lint-irony` dává **0 chyb a 187
-varování**, z toho **86 patří novým otázkám** (85× „jídlo bez zjevného popisu TVARU“, 3×
-„nepojmenovaná dominanta“). Seznam id je v [lint-irony-nove-prompty.txt](lint-irony-nove-prompty.txt).
-Projít očima a do PRVNÍ věty promptu dopsat tvar jídla (`stick-shaped`, `round flat discs`…):
-jídlo bez tvaru je zdokumentovaná past (omáčka → zmrzlina).
+**A. Prompty k ilustracím — HOTOVO 2. 10.** `npm run lint-irony`: 0 chyb. Všech 86 nových promptů
+s varováním je projito očima ([lint-irony-nove-prompty.txt](lint-irony-nove-prompty.txt)). Opraveno: 3×
+dominanta, `ph-k-fialova-hlizka` (kreslil zmrzlinu místo hlízy ube — ilustrace má kreslit ODPOVĚĎ)
+a `pe-d-koren-z-nejvyssich-vysek` (dvojznačný tvar kořene). Zbylých 84 varování „jídlo bez zjevného
+tvaru“ je jen mezera ve slovníku lintu (nezná bowl/glass/jar/pot/pie…); první věta je u všech
+konkrétní, takže jsou zkontrolovaná a **nepřecházej je znovu**.
 
 **B. Ilustrace — všech 2 200 nových otázek je bez `img/<id>.jpg`.** `irony_prompt` mají napsané
 a v kampani opravené (26 promptů s rizikovým slovem, viz zápis 2026-10-01).

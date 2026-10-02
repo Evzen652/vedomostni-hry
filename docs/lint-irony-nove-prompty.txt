@@ -1,5 +1,9 @@
 Prompty nových otázek (kampaň 40 na zemi, 1. 10. 2026), u kterých lint-irony hlásí varování.
-Před generováním obrázků je projít očima a opravit (85× jídlo bez zjevného tvaru v první větě, 3× nepojmenovaná dominanta).
+STAV 2. 10.: všech 86 PROJITO OČIMA. Tři varování o dominantě a dva prompty s problémem
+(ph-k-fialova-hlizka kreslil zmrzlinu místo hlízy ube, pe-d-koren-z-nejvyssich-vysek měl dvojznačný tvar kořene)
+jsou opravené. Zbylých 84 varování „jídlo bez zjevného popisu TVARU“ je jen proto, že slovník lintu nezná slova
+jako bowl/glass/jar/pot/plate/pie/wheel; první věta promptu je u všech konkrétní a pozná se z ní, co jídlo je. Beru je jako
+ZKONTROLOVANÁ (stejně jako 101 takových varování ve starém fondu). Neprocházet znovu.
 
 ar-t-modre-hrozny-z-mendozy
 ar-a-hrnec-na-narodni-svatek
@@ -52,10 +56,8 @@ my-t-cendol
 my-a-nasi-kandar
 nl-k-kolac-s-mrizkou
 no-k-rybi-tuk
-no-a-quisling-slovo
 pe-k-grilovane-spizy-na-ulici
 pe-d-dezert-s-romantickym-jmenem
-pe-d-koren-z-nejvyssich-vysek
 ph-k-fialova-hlizka
 ph-t-sisig
 ph-s-balut
