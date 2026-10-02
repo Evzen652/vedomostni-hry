@@ -91,6 +91,12 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     omylem commitnutou složku `.obsah/` a je zastaralá).
   - **Zbývá:** `www.cestokviz.cz` (nepovinné), DNSSEC (Cloudflare + DS u registrátora), pak Google Play
     (docs/google-play-podklady.md). Detaily v protokolu, bod F.
+  - **Samostatný landing NEVZNIKL — rozcestník jím je** (rozhodl hráč 3. 10.). Google Play landing
+    nevyžaduje (povinné jsou jen `/soukromi` a `/smazani-uctu`) a náhled sdílení nesou značky v hlavičce.
+    Rozcestník dostal podtitulek „Zeměpisný kvíz s humorem. Tisíce otázek o 55 zemích světa.“ a v
+    patičce odkaz „Smazání profilu“ (`0a6c7c5`, nasazení `a3aac298`). **Past při ověřování: service
+    worker podává starou skořápku** — po úpravě `quiz.js`/`quiz.css` v prohlížeči nejdřív odregistrovat
+    SW a smazat cache, jinak se měří minulá verze (stalo se dvakrát za sebou).
   - **Pasti:** v novém menu Cloudflare je Workers & Pages pod **Compute**; po přidání domény si místní
     DNS krátce pamatuje „neexistuje“ (curl 000), ověřuj `nslookup … 8.8.8.8` a pak počkej; při psaní
     shellových příkazů se zpětné apostrofy uvnitř uvozovek VYKONAJÍ (`\`soubor\`` spustí soubor).
