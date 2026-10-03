@@ -979,7 +979,7 @@ sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
   kontrola(fs.existsSync(path.join(process.cwd(), "favicon.ico")) && vBuildu.includes('"favicon.ico"'),
     "favicon.ico chybí nebo není v SOUBORY — /favicon.ico by vracel SPA fallback (HTML) a záložka by neměla ikonu");
   for (const s of ["hra.html", "podminky.html", "soukromi.html", "smazani-uctu.html"])
-    kontrola(/<link rel="icon" href="[/]favicon[.]ico"/.test(fs.readFileSync(path.join(process.cwd(), s), "utf8")), s + " neodkazuje na favicon.ico");
+    kontrola(/<link rel="icon" href="[/]favicon[.]ico([?]v=[0-9]+)?"/.test(fs.readFileSync(path.join(process.cwd(), s), "utf8")), s + " neodkazuje na favicon.ico");
   kontrola(/[.]qz-sec-confirm:has[(][.]qz-btn-start:not[(]:disabled[)][)] [{][^}]*position: sticky/.test(SRC_CSS),
     "Pokračuj na výběru zemí neplave u spodní hrany — při 23–56 dlaždicích je pod okrajem okna");
   kontrola(/[.]qz-sec-confirm [.]qz-btn-start [{] pointer-events: auto/.test(SRC_CSS),
