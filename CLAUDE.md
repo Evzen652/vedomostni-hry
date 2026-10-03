@@ -81,6 +81,16 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-03 — `zemekviz.pages.dev` SE TRVALE PŘESMĚROVÁVÁ na `cestokviz.cz`** (rozhodl hráč;
+  `functions/_middleware.js`, nasazení `4e3a1936`). GET/HEAD 301, ostatní 308 (301 by z POST udělal GET).
+  Cesta i parametry se zachovávají, takže staré pozvánky `?duel=` fungují.
+  - **Jen přesná shoda hostitele** — náhledy nasazení `xxxx.zemekviz.pages.dev` zůstávají funkční.
+    **Po nasazení se proto obsah ověřuje na `cestokviz.cz` a na náhledové adrese z výpisu deploye**,
+    ne na `zemekviz.pages.dev` (ta vrací už jen 301).
+  - **`/sw.js` staré adresy se NEPŘESMĚROVÁVÁ, ale vrací úklidový worker** (smaže cache, odregistruje
+    se, znovu načte karty). Prohlížeč neumí aktualizovat service worker přes přesměrování — bez
+    toho by na staré adrese navždy zůstal starý worker s cache.
+  - Ověřeno přímým voláním middleware (7 případů) i na ostrých adresách po nasazení.
 - **2026-10-03 — Přihlášení do online ligy je skutečný `<form>` a po úspěchu volá
   `navigator.credentials.store(PasswordCredential)`** (nasazení `95122ffc`). Hráč chtěl, aby si appka
   jméno a PIN pamatovala. Přihlášení si pamatuje odjakživa (token 90 dní v localStorage) — hráč viděl
