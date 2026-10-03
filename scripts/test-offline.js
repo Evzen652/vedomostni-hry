@@ -964,6 +964,14 @@ sekce("Právní stránky: existují, jdou na web a appka na ně odkazuje");
   kontrola(/href="smazani-uctu"/.test(SRC_ONLINE),
     "profil v online.js neodkazuje na stránku o smazání");
   kontrola(/href="soukromi"/.test(SRC), "rozcestník v quiz.js neodkazuje na ochranu údajů");
+  {
+    const MW = fs.readFileSync(path.join(process.cwd(), "functions", "_middleware.js"), "utf8");
+    kontrola(/url[.]hostname !== STARA_ADRESA/.test(MW) && /STARA_ADRESA = .zemekviz[.]pages[.]dev./.test(MW),
+      "middleware nepřesměrovává PŘESNĚ zemekviz.pages.dev (náhledy nasazení musí zůstat funkční)");
+    kontrola(/url[.]pathname === .[/]sw[.]js./.test(MW) && /registration[.]unregister[(][)]/.test(MW),
+      "stará adresa nesmí /sw.js přesměrovat — service worker se přes přesměrování neaktualizuje a zůstal by navždy");
+    kontrola(/const jinam = presmerovani[(]request[)]/.test(MW), "onRequest nevolá presmerovani() — stará adresa by se nepřesměrovala");
+  }
   kontrola(/<form class="zk-form" id="zk-authform"/.test(SRC_ONLINE) && /zk-authform"[)][.]addEventListener[(]"submit"/.test(SRC_ONLINE),
     "přihlášení není <form> se submit — správce hesel by jméno a PIN nenabídl uložit");
   kontrola(/nabidniUlozeni[(]nick, pin[)]/.test(SRC_ONLINE) && /new window[.]PasswordCredential/.test(SRC_ONLINE),
