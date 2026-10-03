@@ -1,19 +1,27 @@
-// Favikona: favicon.ico (16, 32, 48 px) z assets/icon-512.png.
-// Spuštění: node scripts/gen-favicon.js   (po změně loga)
+// Favikona: favicon.ico (16, 32, 48 px) z jednoduché předlohy SVG níž.
+// Spuštění: node scripts/gen-favicon.js
 //
-// PROČ (2026-10-03): stránka neměla <link rel="icon"> a /favicon.ico vracel SPA fallback
-// (HTML s kódem 200), takže záložka v prohlížeči neměla ikonu vůbec.
-// Z ikony se VYŘEZÁVÁ hlava žárovky: celá ikona má kolem postavičky hodně papíru
-// a v 16 px z ní zbyla nečitelná skvrna. Výřez vybraný okem ze tří variant.
+// HISTORIE (2026-10-03): stránka do té doby favikonu neměla vůbec (/favicon.ico vracel SPA
+// fallback). První verze byla výřez hlavy žárovky z loga — hráč: „moc složitá a není vidět“.
+// Akvarel má v 16 px příliš detailů a na pruhu záložek splyne. Ze čtyř plochých variant
+// (C, glóbus, špendlík, glóbus se špendlíkem) hráč vybral C: nejlíp vidět na světlém
+// i tmavém pruhu. Glóbus vypadá v 16 px jako výchozí ikona „web“ prohlížeče.
+//
+// Barvy jsou z palety appky (quiz.css: --teal, --coral, --paper2). Plochý tvar je tu
+// výjimka z „appka je celá malovaná“ — ve 16 px malba nevynikne.
 // ICO obsahuje PNG obrázky (umí to každý dnešní prohlížeč), skládá se ručně — sharp ICO neumí.
 const fs = require("fs"), path = require("path");
 const sharp = require("sharp");
 const KOREN = path.resolve(__dirname, "..");
-const VYREZ = { left: 115, top: 15, width: 290, height: 290 };
 const VELIKOSTI = [16, 32, 48];
+const SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256">
+  <rect width="64" height="64" rx="14" fill="#2a7f7f"/>
+  <path d="M44 20 A17 17 0 1 0 44 44" fill="none" stroke="#fffaf0" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="47" cy="32" r="5" fill="#e2725b"/>
+</svg>`;
 
 (async () => {
-  const zaklad = await sharp(fs.readFileSync(path.join(KOREN, "assets", "icon-512.png"))).extract(VYREZ).toBuffer();
+  const zaklad = await sharp(Buffer.from(SVG)).png().toBuffer();
   const pngs = [];
   for (const s of VELIKOSTI) pngs.push(await sharp(zaklad).resize(s, s).png({ compressionLevel: 9 }).toBuffer());
   const hlava = Buffer.alloc(6 + 16 * pngs.length);
