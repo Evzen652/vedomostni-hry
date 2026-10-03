@@ -107,8 +107,10 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   - Popisky režimů: Sólo „Kdo neví, kde leží Fidži, nemusí se nikomu přiznávat.“, Párty „Tablet
     doprostřed stolu, 2 až 6 hráčů. Kdo prohraje, myje nádobí.“, Škola „Promítni na tabuli a nech
     třídu hádat. Zeměpis, při kterém nikdo nespí.“ Hráč odmítá obecné pointy („Vyhrává ten chytrej“).
-  - **Favikona** `favicon.ico` (16/32/48, `scripts/gen-favicon.js`) z VÝŘEZU hlavy žárovky — celá
-    ikona je v 16 px nečitelná. Do teď stránka žádnou neměla a `/favicon.ico` vracel SPA fallback.
+  - **Favikona** `favicon.ico` (16/32/48, `scripts/gen-favicon.js`) je PLOCHÉ „C“ na tealovém čtverci
+    s korálovou tečkou (vybral hráč ze 4 variant). První verze — výřez akvarelové žárovky — byla
+    v 16 px „moc složitá a není vidět“; glóbus zamítnut, v 16 px vypadá jako výchozí ikona „web“.
+    Po změně ikony zvednout `?v=N` v odkazech (prohlížeče favikony drží v cache dlouho). Do teď stránka žádnou neměla a `/favicon.ico` vracel SPA fallback.
     V `SOUBORY` build-public.js a odkazovaná ze všech čtyř HTML (hlídá test:offline, 928).
 - **2026-10-03 — „Pokračuj“ na výběru kontinentu/zemí/témat PLAVE u spodní hrany, ale jen když
   je povolené** (`.qz-sec-confirm:has(.qz-btn-start:not(:disabled))`, nasazení `0ca1eb60`). Hráč
