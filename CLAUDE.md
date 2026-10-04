@@ -63,7 +63,7 @@ při psaní nového CSS s tím počítej.
 
 ## ⇢ ZAČNI TADY, KDYŽ POKRAČUJEŠ PO PŘESTÁVCE
 
-1. **[docs/predavaci-protokol.md](docs/predavaci-protokol.md)** — **nejdřív blok „Předání na druhý počítač“ (stav k 2. 10.)**: co převzít, co ověřit
+1. **[docs/predavaci-protokol.md](docs/predavaci-protokol.md)** — **nejdřív blok „Předání na druhý počítač“ (stav k 4. 10.)**: co převzít, co ověřit
    (s očekávanými čísly, ať se pozná rozdíl mezi „jiné prostředí" a „regrese"), tvrdá
    pravidla a fronta práce. **Proveď převzetí podle bodu 2, než začneš cokoli měnit.**
 2. **[docs/pokracovani.md](docs/pokracovani.md)** — popisný stav: co je hotové, jak

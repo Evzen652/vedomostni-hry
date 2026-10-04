@@ -1,7 +1,7 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-2. 10. 2026** — hlavní blok „Předání na druhý počítač“ je hned pod prvním vzkazem v bodě 0.
+4. 10. 2026** — hlavní blok „Předání na druhý počítač“ je hned pod prvním vzkazem v bodě 0.
 Starší session z 26.–28. 9. mimo jiné:
 - **zrušila přátele s kódem a nahradila je výzvami podle přezdívky** (vlastní tabulka
   `challenges`, hra vzniká až přijetím; lobby nově ukazuje příchozí výzvy a hry na tahu),
@@ -32,7 +32,91 @@ Zkopíruj do prvního vzkazu:
 Nejdřív `git fetch` a posunout se na `origin/claude/pokracujeme-e79708` (fast-forward),
 teprve pak cokoli ověřovat.
 
-### ⇢ PŘEDÁNÍ NA DRUHÝ POČÍTAČ — stav k 2. 10. 2026 (čti TOHLE jako první)
+### ⇢ PŘEDÁNÍ NA DRUHÝ POČÍTAČ — stav k 4. 10. 2026 (čti TOHLE jako první)
+
+**Jednou větou:** 3.–4. 10. se ladil a nasazoval WEB (rozcestník, rychlost, párty, přihlášení,
+přesměrování staré adresy, favikona) — pokaždé z čisté větve založené na `master`, **bez nových
+otázek**. Kampaň 2 200 otázek (bez ilustrací) dál čeká na obrázky; **nic z ní na webu není.**
+
+**1. Větve a produkce**
+- **`master` = produkce = `0533bb1`, nasazení `69a613f9`** (předchozí pro návrat `4e3a1936`).
+- **Pracovní větev `claude/pokracujeme-e79708`** = `master` + kampaň otázek + dokumentace. Kód se od
+  `master` liší JEN generovaným `functions/_lib/konflikty.js` (ověřeno `git diff origin/master`).
+  4. 10. na ni převinuta větev z prvního počítače (`claude/pokracujeme-e79708-338c64`, fast-forward).
+- **Index otázek:** na pracovní větvi **5 992** veřejných, na `master` **3 792**. Tohle číslo
+  rozhoduje, jestli by nasazení vyneslo nové otázky — kontroluj ho v `dist/` před každým deployem.
+- Lokální `master` v hlavní složce repa prvního počítače byl zastaralý (`eb38f15`) — na nic se
+  nespoléhej bez `git fetch`.
+
+**2. Převzetí na druhém počítači**
+```bash
+git fetch && git checkout claude/pokracujeme-e79708 && git pull   # nebo git clone …
+npm install
+```
+`.dev.vars` (ze `.dev.vars.example`, `ALLOW_DEV_SECRET=1`, případně `GEMINI_API_KEY=`) není v gitu.
+
+**3. Očekávaná čísla na pracovní větvi**
+```bash
+npm run validate                    # CHYBY: žádné; 6212 otázek, „serverový fond: 220 z 6212“
+npm run test:offline                # VŠE V POŘÁDKU: 933 kontrol
+node scripts/obsah/test-prijmi.js   # VSE OK: 8 z 8
+```
+Na `master` je `test:offline` taky 933 a `validate` hlásí 4 012 otázek.
+
+**4. Jak se teď nasazuje změna webu (osvědčeno 3. 10. sedmkrát za sebou)**
+1. `git fetch && git worktree add -b claude/web-<co> <cesta> origin/master` — čistý checkout produkce.
+2. Úprava → `node --check` → `npm run test:offline` → ověření v prohlížeči (statický server nad
+   worktree). **Před měřením odregistrovat service worker a smazat cache**, jinak prohlížeč podá
+   minulou verzi (stalo se několikrát).
+3. Commit → `npm run predeploy` → `git push origin claude/web-<co>:master`.
+4. `npm run build` → **v `dist/data/questions-index.json` musí být 3 792** → `wrangler pages deploy
+   dist --project-name zemekviz --branch master --commit-hash <sha>`. (Worktree nemá `node_modules`;
+   wrangler/sharp se dají vzít z hlavního checkoutu přes cestu / `NODE_PATH`, nebo `npm install`.)
+5. Ověřit OBSAH na `cestokviz.cz` a na náhledové adrese z výpisu deploye — **`zemekviz.pages.dev`
+   už jen přesměrovává (301)**. Po nasazení počkat ~20 s, první dotazy vrací starou verzi.
+6. Smazat worktree, do pracovní větve `git merge origin/master`, push.
+
+**5. Hotovo a nasazeno 3.–4. 10.** (podrobnosti a pasti v CLAUDE.md, zápisy 2026-10-03)
+- Rozcestník: podtitulek „Tisíce otázek o 55 zemích světa. Od Bajkalu po Shakespeara. Každý týden
+  přidáváme nové.“, nové popisky Sólo / Párty / Škola, v patičce „Smazání profilu“. Samostatný
+  landing NEVZNIKL — rozcestník jím je (rozhodl hráč).
+- Rychlost: dlaždice z náhledů 320 px v `assets/male/` (výběr zemí 3,5 → 1,1 MB). **Po změně
+  ilustrace dlaždice `npm run nahledy`**, jinak `validate` hlásí chybu.
+- Párty: praporky hráčů v mřížce se stejnými sloupci. Výběr zemí/témat: „Pokračuj“ plave u spodní
+  hrany, jakmile je co potvrdit.
+- Online liga: přihlášení je `<form>` a nabízí prohlížeči uložení jména a PINu.
+- `zemekviz.pages.dev` → 301 na `cestokviz.cz` (`functions/_middleware.js`, s úklidovým SW).
+- Favikona: ploché „C“ na tealovém čtverci (`scripts/gen-favicon.js`, odkaz s `?v=2`).
+
+**6. Fronta práce — v tomto pořadí**
+1. **Lobby Světové online ligy — ČEKÁ NA ODPOVĚĎ HRÁČE, nic se nezačalo.** Hráč: „celý tenhle
+   vizuál je oproti ostatnímu dost chudý“. Navrženo: glóbus za nadpisem (jako rozcestník), „Hrát
+   teď“ s ilustrací ~140 px a výraznější kartou, tři dlaždice ve stylu rozcestníku (~110 px, dnes
+   ~64 px), uvítání na střed (dnes vlevo pod vycentrovaným nadpisem), na desktopu sloupec ~860 px
+   (dnes 640), a Žebříček/Výzvy/Profil buď jako **malované ikony** (stupně vítězů, rukavice, pas —
+   3 obrázky z Gemini, ~10–20 ¢, **potvrdit**) nebo jako tichý textový řádek. Hráč se neozval,
+   kterou variantu ikon chce. **Postavit lokálně, poslat snímky před/po, nasadit až po souhlasu**
+   (vzhled je území hráče).
+2. **Ilustrace 2 200 otázek → `VERZE` v `sw.js` → nasazení obsahu** — body B, C, D v bloku
+   „Předání stav k 2. 10.“ níže platí beze změny (rozpočet ~$75 potvrdit s hráčem).
+3. **Slib „Každý týden přidáváme nové“** v podtitulku: po ilustracích vydávat nové otázky po
+   týdenních dávkách (2 200 vystačí na dlouho), nebo text změnit. Dnes za ním nic není.
+4. DNSSEC (Cloudflare + DS u registrátora), nepovinně `www.cestokviz.cz`.
+5. Google Play: `docs/google-play-podklady.md` cituje staré texty režimů — srovnat s novými
+   popisky; pak účet Play Console (hráč), PWABuilder, `assetlinks.json` (bod F3 níže).
+6. Drobnost: náhledy i pro `zk-*` (lobby) a `end-*` — jiné velikosti zobrazení, zatím nehlášeno.
+   Pokud se dělá bod 1, řeší se tam rovnou.
+
+**7. Pasti zaplacené 3.–4. 10.**
+- Service worker podává starou skořápku i při ověřování v prohlížeči — odregistrovat a smazat cache.
+- Heredoc v Bashi spolyká zpětná lomítka v regexech; skripty s `\` psát nástrojem Write, regex
+  bez lomítek (`[/]`, `[.]`).
+- `quiz.js`, `online.js`, `quiz.css`, `functions/*.js` mají v pracovní kopii CRLF — úpravy přes
+  LF kopii a zpět. `grep` na češtinu v odpovědi `curl` na Windows lže (kódování) — kontrolovat Node.
+- `wrangler` hned po deployi pár vteřin vrací starou verzi — počkat, ne opravovat.
+
+
+### Předání stav k 2. 10. 2026 (historie — kampaň otázek; fronta B–D níže PLATÍ dál)
 
 **Jednou větou:** kampaň „40 otázek na každou zemi“ je hotová a pushnutá (55 zemí, fond 4 012 →
 **6 212**), ale **nic z ní není nasazené a žádná z 2 200 nových otázek nemá ilustraci.** Kód
