@@ -106,7 +106,7 @@ export function newId() {
  */
 
 /** Povolené sloupce, ať se do SQL nikdy nedostane cizí jméno. */
-const LIMIT_SLOUPCE = ['game_tries', 'tourney_tries', 'friend_tries', 'challenge_tries'];
+const LIMIT_SLOUPCE = ['game_tries', 'tourney_tries', 'friend_tries', 'challenge_tries', 'party_tries'];
 
 /** Limit vázaný na účet. Vrací true, když se akce vejde. */
 export async function limitUctu(env, userId, sloupec, max, windowMs) {

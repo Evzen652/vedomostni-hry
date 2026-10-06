@@ -92,8 +92,10 @@ export async function onRequestPost({ request, env }) {
     return fail('moc výzev za sebou, zkus to za hodinu', 429);
 
   const cil = await env.DB
-    .prepare('SELECT id, nick, is_bot, deleted_at FROM users WHERE nick_lower = ?')
+    .prepare('SELECT id, nick, is_bot, is_guest, deleted_at FROM users WHERE nick_lower = ?')
     .bind(nick.toLowerCase()).first();
+  // Host z turnaje pro partu taky — profil nemá a výzvu by nikdy neviděl.
+  if (cil && cil.is_guest) return fail('takového hráče nenacházíme', 404);
 
   // Bot i smazaný profil vrací TOTÉŽ co neexistující hráč. Jinak by šlo zkoušením
   // přezdívek zjistit, které účty jsou boti — a tím prozradit, že „živý" soupeř

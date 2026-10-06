@@ -1,6 +1,7 @@
 import { glicko2 } from './glicko.js';
 import { REG_WINDOW_MS, VYZVA_PLATI_MS } from './game.js';
 import { tournamentStatus } from './tournament.js';
+import { uklidPart } from './parta.js';
 
 /** Po jaké době se nedohraná hra uzavře sama. */
 const EXPIRE_MS = 48 * 60 * 60 * 1000;
@@ -41,6 +42,8 @@ export async function expireStaleGames(env) {
   // běží při každém vstupu do lobby kohokoli, na čemž stojí formulace v zásadách.
   await env.DB.prepare('DELETE FROM challenges WHERE created_at < ?')
     .bind(Date.now() - VYZVA_PLATI_MS).run();
+  // Turnaje pro partu 30 dní po konci i s hosty (2026-10-05). Taky PŘED časným návratem.
+  await uklidPart(env);
   const hranice = Date.now() - EXPIRE_MS;
   const stare = (await env.DB.prepare(
     `SELECT id FROM games WHERE status = 'open' AND created_at < ? LIMIT ?`)
@@ -105,7 +108,7 @@ export async function settleIfDone(env, gameId) {
     .prepare('SELECT * FROM game_players WHERE game_id = ? ORDER BY slot').bind(gameId).all()).results;
 
   // Sólo hra končí sama; souboj až když dohráli oba.
-  const expect = game.mode === 'solo' || game.mode === 'daily' ? 1 : 2;
+  const expect = game.mode === 'solo' || game.mode === 'daily' || game.mode === 'parta' ? 1 : 2;
   if (players.length < expect || players.some(p => !p.finished_at)) return null;
 
   // Přepnutí na 'done' je ZÁROVEŇ zámek. Kontrola na řádku 15 je jen levná zkratka —

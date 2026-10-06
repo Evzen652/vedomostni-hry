@@ -4,6 +4,8 @@
 -- POZOR: každá nová tabulka musí přibýt i sem. Když se na to zapomene, skript
 -- spadne v půlce na „table X already exists" a databáze zůstane rozestavěná —
 -- s částí tabulek starých a částí nových.
+DROP TABLE IF EXISTS party_players;
+DROP TABLE IF EXISTS parties;
 DROP TABLE IF EXISTS reg_attempts;
 DROP TABLE IF EXISTS pin_resets;
 -- q_served a replay_answers sem přibyly 2026-09-04, o dost později než tabulky samy:
@@ -115,7 +117,12 @@ CREATE TABLE users (
   -- NEPOVINNÝ e-mail, jediné k čemu slouží je obnova zapomenutého PINu.
   -- Schválně BEZ UNIQUE: rodič musí smět mít stejný e-mail u víc dětí.
   -- U dětského pásma ho má vyplnit rodič (viz docs/online-rezim.md, sekce 5).
-  email        TEXT
+  email        TEXT,
+  -- Host z turnaje pro partu (2026-10-05): hraje jen tam, bez profilu a ratingu.
+  -- currentUser() ho bez výslovného povolení nikam jinam nepustí.
+  is_guest       INTEGER NOT NULL DEFAULT 0,
+  party_tries    INTEGER NOT NULL DEFAULT 0,
+  party_tries_at INTEGER NOT NULL DEFAULT 0
 );
 
 -- Přátelství je oboustranné: ukládají se oba směry, ať se dá číst jedním dotazem.
@@ -135,6 +142,31 @@ CREATE TABLE friends (
 -- a po 48 h vyrovnal — soupeři by naskočila hodnocená prohra za partii, kterou nikdy
 -- neviděl (otevřený nález u odvety). Hra tu vzniká teprve PŘIJETÍM.
 -- UNIQUE(from_user, to_user): jedna čekající výzva na dvojici.
+-- Turnaj pro partu (2026-10-05) — viz migrations/2026-10-05-parta.sql.
+CREATE TABLE parties (
+  id           TEXT PRIMARY KEY,
+  name         TEXT NOT NULL,
+  owner_id     TEXT NOT NULL,
+  band         TEXT NOT NULL,
+  limit_s      INTEGER NOT NULL,
+  question_ids TEXT NOT NULL,
+  orders       TEXT NOT NULL,
+  starts_at    INTEGER NOT NULL,
+  ends_at      INTEGER NOT NULL,
+  created_at   INTEGER NOT NULL
+);
+CREATE INDEX idx_parties_end ON parties(ends_at);
+CREATE TABLE party_players (
+  party_id   TEXT NOT NULL,
+  user_id    TEXT NOT NULL,
+  name       TEXT NOT NULL,
+  name_lower TEXT NOT NULL,
+  game_id    TEXT,
+  joined_at  INTEGER NOT NULL,
+  PRIMARY KEY (party_id, user_id),
+  UNIQUE (party_id, name_lower)
+);
+
 CREATE TABLE challenges (
   id          TEXT PRIMARY KEY,
   from_user   TEXT NOT NULL,
@@ -187,7 +219,8 @@ CREATE TABLE games (
   status       TEXT NOT NULL DEFAULT 'open',   -- open | done
   rated        INTEGER NOT NULL DEFAULT 0,
   daily_date   TEXT,                             -- u režimu daily
-  tournament_id TEXT                             -- u režimu turnaj
+  tournament_id TEXT,                            -- u režimu turnaj
+  party_id     TEXT                              -- u režimu parta (turnaj pro partu)
 );
 
 -- Jeden řádek na účastníka. Sólo hra má jednoho, souboj dva.

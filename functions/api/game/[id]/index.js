@@ -8,7 +8,7 @@ import { currentUser } from '../../../_lib/auth.js';
  * stačilo by u souboje na odkaz počkat a hrát s informací navíc.
  */
 export async function onRequestGet({ params, request, env }) {
-  const me = await currentUser(request, env);
+  const me = await currentUser(request, env, { host: true });   // host z turnaje pro partu tu hraje
   if (!me) return fail('nepřihlášen', 401);
 
   const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(params.id).first();
@@ -24,7 +24,7 @@ export async function onRequestGet({ params, request, env }) {
 
   const ids = JSON.parse(game.question_ids);
   const orders = JSON.parse(game.orders);
-  const expect = game.mode === 'solo' || game.mode === 'daily' ? 1 : 2;
+  const expect = game.mode === 'solo' || game.mode === 'daily' || game.mode === 'parta' ? 1 : 2;
   const allDone = players.length >= expect && players.every(p => p.finished_at);
 
   const out = {

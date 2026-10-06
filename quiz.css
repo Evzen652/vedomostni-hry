@@ -1143,7 +1143,9 @@
    Text je vlevo, ne na střed: jsou to celé věty a ty se na střed čtou hůř. */
 /* margin-bottom navíc k základní mezeře: přechod „čti" → „klikni" je největší hranice
    na téhle obrazovce, takže musí být větší než mezera mezi dvěma kartami hraní. */
-.zk-welcome { width: 100%; box-sizing: border-box; text-align: left; padding: 2px 4px; margin-bottom: 16px; }
+/* Na střed od 2026-10-05: nadpis nad ním je vycentrovaný a uvítání vlevo pod ním
+   vypadalo jako odtržené. Jsou to dvě krátké věty, takže čtení na střed nevadí. */
+.zk-welcome { width: 100%; max-width: 34em; box-sizing: border-box; text-align: center; padding: 2px 4px; margin: 0 auto 16px; }
 .zk-wel-hi { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 18px; color: var(--teal);
   margin: 0 0 12px; line-height: 1.35; }
 .zk-wel-l { font-size: 13px; line-height: 1.6; color: var(--muted); margin: 0 0 9px; }
@@ -1155,24 +1157,32 @@
   background: var(--paper2); border: 2px solid var(--teal); border-radius: 18px; padding: 18px 20px;
   cursor: pointer; font: inherit; color: inherit; box-shadow: 0 4px 0 #bcd8d4; transition: transform .12s, box-shadow .12s; }
 .zk-hero:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #bcd8d4; }
-.zk-hero .zk-ic { width: 72px; height: 72px; flex: none; }
-.zk-herotext { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.zk-herotext .t { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 800; color: var(--teal); }
-.zk-herotext .d { font-size: 13px; color: var(--muted); line-height: 1.35; }
+/* Ilustrace 120 px (bylo 72): na rozcestníku mají karty obrázek ~130 px a lobby
+   s poloviční velikostí vypadalo proti nim chudě. Soubor má 512 px, takže stačí i retině. */
+/* margin: 0 je nutné: společné .zk-ic má `margin: 0 auto` (centrování v dlaždicích)
+   a ve vodorovném flexu by si auto okraje rozebraly volné místo — obrázek pak stál
+   odtržený uprostřed karty, daleko od textu. */
+.zk-hero .zk-ic { width: 120px; height: 120px; flex: none; margin: 0; }
+.zk-herotext { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.zk-herotext .t { font-family: 'Nunito', sans-serif; font-size: 28px; font-weight: 800; color: var(--teal); }
+.zk-herotext .d { font-size: 14.5px; color: var(--muted); line-height: 1.4; }
 .zk-heroarrow { margin-left: auto; font-size: 22px; color: var(--teal); flex: none; }
 
 /* tři další způsoby hry — auto-fit, takže na úzkém displeji spadnou pod sebe samy */
 /* width:100% je nutnost, ne pojistka: rodič (.qz-modepick) je svislý flex s align-items:center,
    takže se potomek bez šířky smrskne na obsah. U proužku utilit to bylo vidět — tlačítka
    vyšla nestejně široká (57/50/36 px) podle délky slova místo na třetiny. */
-.zk-plays { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; }
+/* Čtyři dlaždice od 2026-10-05 (přibyl Turnaj pro partu). Na užším displeji 2×2 —
+   čtyři vedle sebe by na telefonu měly po ~75 px a název by se lámal po slovech. */
+.zk-plays { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: 100%; }
+@media (max-width: 720px) { .zk-plays { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .zk-play { display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 15px 10px 14px;
   background: var(--paper2); border: 2px solid #dccdb0; border-radius: 16px; cursor: pointer;
   font: inherit; color: inherit; text-align: center; box-shadow: 0 4px 0 #e3d5b8; transition: transform .12s, box-shadow .12s; }
 .zk-play:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; }
-.zk-play .zk-ic { width: 56px; height: 56px; }
-.zk-play .t { font-family: 'Nunito', sans-serif; font-size: 14.5px; font-weight: 800; line-height: 1.2; }
-.zk-play .d { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
+.zk-play .zk-ic { width: 100px; height: 100px; }
+.zk-play .t { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; line-height: 1.2; margin-top: 3px; }
+.zk-play .d { font-size: 12.5px; color: var(--muted); line-height: 1.35; }
 
 /* společný rám ilustrace (stejný „nalepený obrázek" jako u offline dlaždic) */
 .zk-ic { display: block; position: relative; border-radius: 14px; overflow: hidden; margin: 0 auto;
@@ -1183,12 +1193,52 @@
 /* utility: ikona + slovo, žádné popisky — nemají soupeřit s hraním */
 /* margin-top navíc k základní mezeře: tady končí hraní a začínají utility, což je jiná
    vrstva — bez toho by „Žebříček" vypadal jako čtvrtý způsob hry. */
-.zk-utils { display: flex; gap: 10px; margin-top: 12px; width: 100%; }
-.zk-util { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 6px;
-  background: none; border: 1.5px solid #e3d5b8; border-radius: 13px; cursor: pointer;
-  font: inherit; font-size: 12px; font-weight: 700; color: var(--teal); transition: background .12s, border-color .12s; }
-.zk-util:hover { background: var(--paper2); border-color: #dccdb0; }
-.zk-util svg { width: 21px; height: 21px; display: block; }
+/* Od 2026-10-05 TICHÝ ŘÁDEK, ne tři rámečky: rámečky pod dlaždicemi hraní vypadaly jako
+   čtvrtý až šestý způsob hry. (Alternativa: malované ikony z Gemini — zatím nevybráno.) */
+.zk-utils { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 22px; margin-top: 12px; width: 100%; }
+.zk-util { display: flex; align-items: center; gap: 7px; padding: 8px 10px;
+  background: none; border: none; border-radius: 10px; cursor: pointer;
+  font: inherit; font-size: 14px; font-weight: 700; color: var(--teal); transition: background .12s; }
+.zk-util:hover { background: var(--paper2); }
+.zk-util svg { width: 18px; height: 18px; display: block; }
+/* Na desktopu širší sloupec (bylo 640 px všude): tři dlaždice se stovkovými obrázky
+   a popisky by se do 592 px obsahu tlačily. Na mobilu se nic nemění. */
+@media (min-width: 900px) {
+  .zk-wrap.zk-lobby { max-width: 860px; }
+}
+
+/* ---- turnaj pro partu (2026-10-05) ----------------------------------------
+   Rytmus podle pravidla o vzdušnosti: titulek turnaje patří k nadpisu (těsně),
+   čas pod ním taky, k hlavní akci je větší skok a k pořadí ještě větší. */
+.zk-partalead { font-size: 14.5px; line-height: 1.6; color: var(--muted); text-align: center;
+  max-width: 34em; margin: 0 auto 10px; }
+.zk-partaform { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+.zk-partaform .qz-fieldlabel { margin: 8px 0 0; }
+.zk-partaform .qz-pname-in { flex: none; width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 15px; }
+.zk-partaform .qz-bands { flex-wrap: wrap; }
+.zk-partaform .qz-go { align-self: center; margin-top: 8px; }
+.zk-pshrnuti { margin: 6px 0 0; font-size: 14px; line-height: 1.7; color: var(--muted); text-align: center; }
+.zk-pshrnuti b { color: var(--ink); }
+.zk-parta { gap: 0; }
+.zk-ptitle { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+  margin-top: 6px; }
+.zk-parta h2 { margin: 4px 0 8px; }
+.zk-pcas { font-size: 14px; line-height: 1.6; color: var(--muted); text-align: center; }
+.zk-pcas b { color: var(--ink); }
+.zk-pakce { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; margin-top: 30px; }
+.zk-pinvite { min-width: 220px; }
+.zk-pguest { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 360px; text-align: left; }
+.zk-pguest .qz-pname-in { flex: none; width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 15px; }
+.zk-pguest .qz-go { align-self: center; }
+.zk-pguest .zk-agree { margin: 4px 0 4px; }
+.zk-psharebox { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.zk-psharebox .qz-chip { text-decoration: none; font-weight: 700; font-size: 14px; }
+.zk-plink { margin-top: 8px; font-size: 12.5px; color: var(--muted); text-align: center; word-break: break-all; }
+.zk-parta .zk-vnadpis { margin-top: 38px; text-align: center; }
+.zk-parta .zk-rowlist { width: 100%; }
+.zk-ptag { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; background: #e8f2f0;
+  color: var(--teal); font-size: 11px; font-weight: 800; vertical-align: 1px; }
+.zk-pwait { color: var(--muted); font-size: 13px; font-weight: 600; }
 
 /* Čekání na soupeře: tři tepající tečky. Bez nich byla čekárna statický text s rostoucím
    číslem a působila, jako by se appka zasekla. */
@@ -1236,10 +1286,10 @@
 
 @media (max-width: 480px) {
   .zk-hero { gap: 11px; padding: 12px 13px; }
-  .zk-hero .zk-ic { width: 60px; height: 60px; }
-  .zk-herotext .t { font-size: 19px; }
-  .zk-play .zk-ic { width: 48px; height: 48px; }
-  .zk-play .d { display: none; }   /* na mobilu se vejde jen název, popisek by dlaždici roztrhal */
+  .zk-hero .zk-ic { width: 80px; height: 80px; }
+  .zk-herotext .t { font-size: 21px; }
+  .zk-play .zk-ic { width: 66px; height: 66px; }
+  /* Popisek dlaždic na mobilu zůstává: od 2026-10-05 jsou dlaždice 2×2 (~160 px), ne 3 vedle sebe. */
 }
 .zk-rowlist { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
 .zk-rowlist .qz-standrow { background: var(--paper2); border: 1.4px solid #dccdb0; border-radius: 11px;
