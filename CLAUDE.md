@@ -84,8 +84,15 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 - **2026-10-06 — Správná odpověď už nevyčnívá délkou: 778 otázkám prodlouženy distraktory.
   NASAZENO 2026-10-06** spolu s turnajem pro partu (zápis níž). Na produkci jde jen 721
   z nich, zbylých 57 patří k nenasazené kampani; produkce po nasazení 38,4 %.
-  **Hráčův vlastní příklad (`sa-q-raha-moharrak`) opravený NENÍ** — odpověď je tam 1,3×
-  delší, tedy pod zvolenou hranicí 1,5. Druhé kolo s hranicí 1,3 by vzalo ~680 dalších.
+  > **DRUHÉ KOLO TÝŽ DEN (hráč: „pusť druhé kolo s hranicí 1,3“): dalších 679 otázek,
+  > nasazeno (`master` `f0ed856`, nasazení `d00d6de2`, na web 570 z nich). Nejdelší
+  > možnost je teď správná u 24,0 % fondu a 24,2 % produkce — tedy na úrovni náhody.**
+  > Hráčův příklad (Moharraková) opravený je. Cestou opravena i SPRÁVNÁ odpověď u
+  > `cz-q-bobr-navrat` („Většinou se sám rozšířil…“ — v Litovelském Pomoraví ho vysadili)
+  > a další pravdivé distraktory (Krpálek, Krýzův betlém, Janáček, Roland Garros…).
+  > **Hranice 1,3 je konečná:** níž by šlo už o odpovědi delší o pár znaků, kde se délka
+  > nedá „přečíst“, a hrozil by opačný vzorec. Nový obsah ať se píše rovnou podle `ZADANI.md`
+  > (aspoň jeden distraktor stejně dlouhý jako odpověď).
   Hráč: *„ta nejdelší odpověď je v 99 % případů správně“*.
   Změřeno: nejdelší byla správná u **54,9 %** fondu (starý fond 56 %, dospělí 61 %),
   náhoda je 25 %. Hráč zvolil opravit jen nejkřiklavější: otázky, kde je odpověď víc
