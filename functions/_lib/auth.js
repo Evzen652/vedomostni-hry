@@ -80,8 +80,15 @@ export async function verifyToken(token, secret) {
   return { uid, epoch };
 }
 
-/** Vytáhne přihlášeného hráče z hlavičky Authorization nebo cookie. */
-export async function currentUser(request, env) {
+/**
+ * Vytáhne přihlášeného hráče z hlavičky Authorization nebo cookie.
+ *
+ * HOST Z TURNAJE PRO PARTU (`is_guest`, 2026-10-05) se vrací JEN s `{ host: true }`.
+ * Výchozí je odmítnutí, takže každý endpoint, který na hosta nemyslí (fronta, výzvy,
+ * žebříček, profil…), ho bere jako nepřihlášeného. Povoleno je to jen tam, kudy host
+ * hraje: turnaj pro partu a otázky/odpovědi/rozbor jeho vlastní hry.
+ */
+export async function currentUser(request, env, opts) {
   const auth = request.headers.get('authorization') || '';
   let token = auth.startsWith('Bearer ') ? auth.slice(7) : null;
   if (!token) {
@@ -92,7 +99,7 @@ export async function currentUser(request, env) {
   const overeny = await verifyToken(token, sessionSecret(env));
   if (!overeny) return null;
   const user = await env.DB.prepare(
-    'SELECT id, nick, avatar, band, is_bot, email, token_epoch, deleted_at FROM users WHERE id = ?')
+    'SELECT id, nick, avatar, band, is_bot, is_guest, email, token_epoch, deleted_at FROM users WHERE id = ?')
     .bind(overeny.uid).first();
   if (!user) return null;
   // Smazaný profil je náhrobek kvůli cizí historii (viz DELETE /api/me), ne účet.
@@ -102,6 +109,7 @@ export async function currentUser(request, env) {
   if (user.deleted_at) return null;
   // Účet mezitím zneplatnil starší přihlášení (dnes se to děje při obnově PINu).
   if ((user.token_epoch || 0) !== overeny.epoch) return null;
+  if (user.is_guest && !(opts && opts.host)) return null;
   return user;
 }
 

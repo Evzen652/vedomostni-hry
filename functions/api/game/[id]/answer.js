@@ -9,7 +9,7 @@ import { settleIfDone } from '../../../_lib/settle.js';
  * jinak by šlo tipnout, přečíst si správnou možnost z odpovědi a zkusit to znovu.
  */
 export async function onRequestPost({ params, request, env }) {
-  const me = await currentUser(request, env);
+  const me = await currentUser(request, env, { host: true });   // host z turnaje pro partu tu hraje
   if (!me) return fail('nepřihlášen', 401);
 
   let body;

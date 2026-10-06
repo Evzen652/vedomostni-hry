@@ -10,7 +10,7 @@ import { markSeen } from '../../../../_lib/pool.js';
  * otevřít devtools a hra by nebyla hra (docs/online-rezim.md, Anti-cheat).
  */
 export async function onRequestGet({ params, request, env }) {
-  const me = await currentUser(request, env);
+  const me = await currentUser(request, env, { host: true });   // host z turnaje pro partu tu hraje
   if (!me) return fail('nepřihlášen', 401);
 
   const game = await env.DB.prepare('SELECT * FROM games WHERE id = ?').bind(params.id).first();

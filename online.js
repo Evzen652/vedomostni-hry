@@ -68,8 +68,16 @@ window.ZKOnline = (function () {
     var el = document.getElementById("qz-host-bubble");
     if (el) { el.textContent = t || ""; el.style.display = t ? "" : "none"; }
   }
+  // Token HOSTA z turnaje pro partu (2026-10-05). Když je nastavený, `req()` posílá jeho,
+  // ne hlavní přihlášení — host tak hraje, aniž by se na zařízení přepsal čí profil.
+  // Nastavuje ho jen renderParta(); každý odchod z turnaje ho nuluje (opustPartu, open,
+  // renderLobby), jinak by lobby volalo /me s hostovským tokenem.
+  var hostToken = null;
   var token = {
-    get: function () { try { return localStorage.getItem(TOKEN_KEY); } catch (e) { return null; } },
+    get: function () {
+      if (hostToken) return hostToken;
+      try { return localStorage.getItem(TOKEN_KEY); } catch (e) { return null; }
+    },
     // `zk_seen` přežije i odhlášení: rozlišuje „na tomhle zařízení už někdo hrál"
     // od „úplně nový hráč". Podle toho se volí výchozí obrazovka (přihlášení vs. registrace).
     set: function (t) { try { localStorage.setItem(TOKEN_KEY, t); localStorage.setItem("zk_seen", "1"); } catch (e) {} },
@@ -237,8 +245,12 @@ window.ZKOnline = (function () {
     body = document.getElementById("qz-body");
     exitCb = onExit;
     stopAll();
+    hostToken = null;
     var obnova = pendingReset();
     if (obnova) return renderResetPin(obnova);
+    // Pozvánka do turnaje pro partu jde PŘED kontrolou přihlášení: pozvaný profil mít nemusí.
+    var parta = pendingParta();
+    if (parta) return renderParta(parta);
     if (!token.get()) return renderAuth();
     return req("/me").then(function (r) {
       if (r.status !== 200) { token.clear(); return renderAuth(); }
@@ -419,6 +431,8 @@ window.ZKOnline = (function () {
         S.me = r.body;
         nabidniUlozeni(nick, pin);
         refreshMe(function () {
+          var parta = pendingParta();
+          if (parta) return renderParta(parta);
           var duel = pendingDuel();
           if (duel) return joinFromLink(duel);
           renderLobby();
@@ -729,6 +743,7 @@ window.ZKOnline = (function () {
   function renderLobby(msg) {
     if (typeof msg !== "string") msg = "";
     stopAll();
+    hostToken = null;
     var v = vokativ(S.me.nick);
     say(v ? "Vítej zpátky, " + v + "." : "Vítej zpátky!");
     var hotovo = dailyHotovo();
@@ -740,7 +755,11 @@ window.ZKOnline = (function () {
       // „Zpět do hry“ slibovalo něco jiného, než dělalo. Na právních stránkách ta
       // formulace zůstává — ty stojí mimo appku a opravdu vedou zpátky do ní.
       backBar("Zpět", leave) +
-      "<h2>Světová online liga</h2>" +
+      // Glóbus za nadpisem jako na rozcestníku (2026-10-05) — bez něj byla lobby
+      // proti ostatním obrazovkám „dost chudá“ (hráč). Obal a třídy jsou TYTÉŽ jako
+      // v quiz.js, takže glóbus se centruje na nadpis stejným pravidlem.
+      '<div class="qz-titlewrap"><div class="qz-globebg" id="qz-globebg"></div>' +
+      "<h2>Světová online liga</h2></div>" +
       errBox(msg) +
       // Uvítání místo dřívějšího proužku „Kuba · PUBERŤÁCI · Rating 1500 · Zatím
       // nezahráno" — ten byl sice úsporný, ale hráč z něj nepoznal, co která věc znamená.
@@ -770,8 +789,10 @@ window.ZKOnline = (function () {
         hraciDlazdice("zk-daily", "Denní pětka", hotovo ? "Dnes hotovo ✓" : "Pět otázek, jeden pokus", "🗓") +
         hraciDlazdice("zk-link", "Souboj na odkaz", "Pošli odkaz kamarádovi", "✉") +
         hraciDlazdice("zk-tourney", "Turnaj", "Co nejvíc kol za daný čas", "🏆") +
+        // Turnaj pro partu (2026-10-05): kamarádi z odkazu, i bez profilu.
+        hraciDlazdice("zk-parta", "Turnaj pro partu", "Pozvi kamarády, každý hraje z domova", "👥") +
       "</div>" +
-      // utility — jen ikona a slovo, žádné popisky
+      // utility — tichý řádek s drobnou ikonou, bez rámečků: nemají soupeřit s hraním
       '<div class="zk-utils">' +
         utilTlacitko("zk-board", "Žebříček", ICO_BOARD) +
         utilTlacitko("zk-vyzvy", "Výzvy", ICO_FRIENDS) +
@@ -782,9 +803,11 @@ window.ZKOnline = (function () {
     on("zk-link", createLink);
     on("zk-daily", startDaily);
     on("zk-tourney", renderTournaments);
+    on("zk-parta", function () { renderPartaNew(); });
     on("zk-board", renderBoard);
     on("zk-vyzvy", renderVyzvy);
     on("zk-account", renderAccount);
+    if (window.ZKGlobe) ZKGlobe.bg();
     nactiSocialni();
   }
 
@@ -983,7 +1006,7 @@ window.ZKOnline = (function () {
     stopAll();
     S.game = { id: id, mode: mode, n: 0, opponent: opponent, score: 0, tournamentId: tournamentId || null };
     req("/game/" + id).then(function (r) {
-      if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Hra se nenačetla.");
+      if (r.status !== 200) return zpetDoOnline((r.body && r.body.error) || "Hra se nenačetla.");
       S.game.total = r.body.total;
       S.game.n = r.body.me.answered;
       S.game.score = r.body.me.score;
@@ -1048,7 +1071,7 @@ window.ZKOnline = (function () {
     if (g.n >= g.total) return showResult(g.id, g.mode, g.tournamentId);
 
     req("/game/" + g.id + "/q/" + g.n).then(function (r) {
-      if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Otázka se nenačetla.");
+      if (r.status !== 200) return zpetDoOnline((r.body && r.body.error) || "Otázka se nenačetla.");
       var q = r.body;
       say("Tak schválně…");
       body.innerHTML =
@@ -1223,7 +1246,7 @@ window.ZKOnline = (function () {
     odesliOdpoved("/game/" + S.game.id + "/answer", {
       method: "POST", body: { n: q.n, pick: pick, ms: Math.round(ms) },
     }).then(function (r) {
-      if (r.status !== 200) return renderLobby((r.body && r.body.error) || "Odpověď neprošla.");
+      if (r.status !== 200) return zpetDoOnline((r.body && r.body.error) || "Odpověď neprošla.");
       var a = r.body;
       S.game.score = a.score;
       S.game.n = a.answered;
@@ -1276,7 +1299,7 @@ window.ZKOnline = (function () {
         // zrušil (komentář u .qz-quipbox v quiz.css — „moc oddělených boxů"), a `.qz-hlaska`
         // navíc nemá vlastní font-size, takže online hláška běžela na zděděných 16 px místo
         // clamp(16px, 2.1vw, 20px). Uvozovky patří k citaci stejně jako offline.
-        '<div class="qz-quipbox"><div class="qz-ht">„' + esc(hlaska) + "\"</div></div>" +
+        '<div class="qz-quipbox"><div class="qz-ht">„' + esc(hlaska) + "“</div></div>" +
         '<div class="qz-frow"><div class="qz-expl">' + esc(a.explanation || "") + "</div>" +
         '<div class="qz-fbtns">' + more +
         '<button class="qz-next" id="zk-next">' +
@@ -1323,7 +1346,7 @@ window.ZKOnline = (function () {
   function showResult(id, mode, tournamentId) {
     stopAll();
     req("/game/" + id).then(function (r) {
-      if (r.status !== 200) return renderLobby("Výsledek se nenačetl.");
+      if (r.status !== 200) return zpetDoOnline("Výsledek se nenačetl.", mode === "parta" ? tournamentId : null);
       var g = r.body;
       if (mode === "daily") oznacDailyHotovo();   // razítko pro dlaždici v lobby
       var waiting = g.waiting_for_opponent ||
@@ -1338,7 +1361,10 @@ window.ZKOnline = (function () {
       else { head = "Dohráno."; }
       say(head);
 
-      var rows = g.players.map(function (p) {
+      var isParta = mode === "parta" && tournamentId;
+      // V turnaji pro partu je ve hře jen sám hráč — a host má technickou přezdívku
+      // `host:…`, takže řádek se jménem se nekreslí. Pořadí je v přehledu turnaje.
+      var rows = isParta ? "" : g.players.map(function (p) {
         return '<div class="qz-standrow"><span class="qz-standname">' +
           // Klíč jména je `id` z parametru, NE S.game.id: sem se dá dojít i cestou, která
           // beginGame() nikdy nevolala (denní pětka už odehraná → startDaily jde rovnou
@@ -1380,14 +1406,17 @@ window.ZKOnline = (function () {
       }).join("");
 
       var isTurnaj = mode === "turnaj" && tournamentId;
-      var note = isTurnaj ? "Turnajové kolo — body se přičetly do žebříčku turnaje."
+      var note = isParta ? "Turnaj pro partu — jak si vedeš proti ostatním, ukáže pořadí."
+        : isTurnaj ? "Turnajové kolo — body se přičetly do žebříčku turnaje."
         : !g.rated ? "Nehodnocená hra."
         : waiting ? "Hodnocená hra — rating se přepočítá, až dohrajete oba."
         : "Hodnocená hra — rating se přepočítal.";
       // Pořadí obrácené: v turnaji jde o to odehrát co nejvíc kol, takže „Další kolo" je
       // hlavní akce a odchod do přehledu ta tichá. Dřív to bylo naopak — pokračovat
       // ve hře vypadalo slabší než z turnaje odejít.
-      var buttons = isTurnaj
+      var buttons = isParta
+        ? '<button class="qz-next" id="zk-ptable">Pořadí turnaje ' + handArrowSvg(false) + '</button>'
+        : isTurnaj
         ? '<button class="qz-more" id="zk-tback">Zpět do turnaje</button>' +
           '<button class="qz-next" id="zk-tnext">Další kolo ' + handArrowSvg(false) + '</button>'
         : (g.status === "done" && g.players.length > 1
@@ -1398,7 +1427,7 @@ window.ZKOnline = (function () {
         '<div class="qz-screen qz-end zk-wrap">' +
         "<h2>" + esc(head) + "</h2>" +
         '<div class="qz-endscore">' + starScore(g.me.score) + "</div>" +
-        '<div class="zk-rowlist">' + rows + "</div>" +
+        (rows ? '<div class="zk-rowlist">' + rows + "</div>" : "") +
         '<div class="qz-setnote">' + note + "</div>" +
         (review
           ? '<section class="zk-revlist"><h3>Rozbor <span class="zk-revsum">' + trefy + " z " + polozky.length +
@@ -1424,9 +1453,323 @@ window.ZKOnline = (function () {
         });
       });
       on("zk-tnext", function () { tournamentPlay(tournamentId); });
+      on("zk-ptable", function () { renderParta(tournamentId); });
       on("zk-tback", function () { renderTournament(tournamentId); });
     });
   }
+
+  // ---------------------------------------------------------------- turnaj pro partu
+  // (2026-10-05, přání hráče) Zakladatel pozve kamarády odkazem, všichni hrají STEJNÝCH
+  // deset otázek online, každý kdy chce v okně od–do, a porovná se pořadí. Pozvaný
+  // nemusí mít profil: napíše jméno a hraje jako HOST. Hostův token se drží zvlášť pro
+  // každý turnaj (`zk_parta_<id>`) a do req() se podstrkuje přes `hostToken`.
+  //
+  // Pozvánka je JEDNO tlačítko bez kopírování (přání hráče): na telefonu otevře systémové
+  // sdílení (WhatsApp, SMS, Messenger…), na počítači nabídne e-mail a WhatsApp
+  // s předvyplněnou zprávou. Nic se neposílá z našeho serveru — pošta zatím nefunguje.
+  function pendingParta() {
+    return new URLSearchParams(location.search).get("parta");
+  }
+  function partaToken(id, nastav) {
+    var k = "zk_parta_" + id;
+    try {
+      if (nastav) localStorage.setItem(k, nastav);
+      return localStorage.getItem(k);
+    } catch (e) { return nastav || null; }
+  }
+  function partaOdkaz(id) { return location.origin + "/hra?parta=" + encodeURIComponent(id); }
+
+  // Odchod z turnaje: zapomenout hostovský token a parametr v adrese, jinak by obnovení
+  // stránky vracelo zpátky do turnaje a lobby volalo /me s tokenem hosta.
+  function opustPartu() {
+    stopAll();
+    hostToken = null;
+    if (pendingParta()) history.replaceState(null, "", location.pathname);
+    // Hráč s profilem jde do lobby, host (nebo kdo profil na zařízení nemá) na rozcestník.
+    if (!token.get()) return leave();
+    refreshMe(renderLobby);
+  }
+
+  // Chyba uprostřed hry: hráč turnaje pro partu se vrací do turnaje, ne do lobby.
+  function zpetDoOnline(msg, partaId) {
+    var pid = partaId || (S.game && S.game.mode === "parta" && S.game.tournamentId);
+    if (pid) return renderParta(pid, msg);
+    renderLobby(msg);
+  }
+
+  function velkym(t) { t = String(t); return t.charAt(0).toUpperCase() + t.slice(1); }
+  // „dnes v 18:30“ / „zítra v 9:05“ / „12. 10. v 18:30“. Malým písmenem, protože se to
+  // skládá do vět; za dvojtečkou se nasazuje velké přes velkym().
+  function kdy(ts) {
+    var d = new Date(ts), dnes = new Date(), zitra = new Date();
+    zitra.setDate(zitra.getDate() + 1);
+    var hm = d.getHours() + ":" + ("0" + d.getMinutes()).slice(-2);
+    if (d.toDateString() === dnes.toDateString()) return "dnes v " + hm;
+    if (d.toDateString() === zitra.toDateString()) return "zítra v " + hm;
+    return d.getDate() + ". " + (d.getMonth() + 1) + ". v " + hm;
+  }
+  // Hodnota pro <input type="datetime-local"> v místním čase.
+  function prodatum(ts) {
+    var d = new Date(ts), dv = function (n) { return ("0" + n).slice(-2); };
+    return d.getFullYear() + "-" + dv(d.getMonth() + 1) + "-" + dv(d.getDate()) + "T" + dv(d.getHours()) + ":" + dv(d.getMinutes());
+  }
+
+  var PARTA_DELKY = [
+    { h: 1, t: "Hodina" }, { h: 24, t: "Den" }, { h: 72, t: "3 dny" }, { h: 168, t: "Týden" },
+  ];
+
+  function renderPartaNew(msg, stav) {
+    stopAll();
+    hostToken = null;
+    stav = stav || { delka: 24, pozdeji: false, start: "", name: "" };
+    say("Pozvi partu. Každý odehraje stejné otázky, kdy se mu to hodí.");
+    body.innerHTML =
+      '<div class="qz-screen qz-setup zk-wrap zk-partanew">' +
+      backBar("Zpět", renderLobby) +
+      "<h2>Turnaj pro partu</h2>" +
+      '<p class="zk-partalead">Pošleš kamarádům odkaz a každý odehraje stejných deset otázek, ' +
+        "kdy se mu to hodí. Profil k tomu nepotřebují. Kdo nasbírá nejvíc bodů, vyhrává.</p>" +
+      errBox(msg) +
+      '<div class="qz-setcard zk-form zk-partaform">' +
+        '<label class="qz-fieldlabel" for="zk-pname">Název turnaje</label>' +
+        '<input class="qz-pname-in" id="zk-pname" maxlength="40" autocomplete="off" placeholder="Turnaj ' +
+          esc(S.me.nick) + '" value="' + esc(stav.name) + '">' +
+        '<div class="qz-fieldlabel">Kdy začne</div>' +
+        '<div class="qz-bands" id="zk-pstart">' +
+          '<button type="button" class="qz-chip' + (stav.pozdeji ? "" : " on") + '" data-pozdeji="0">Hned</button>' +
+          '<button type="button" class="qz-chip' + (stav.pozdeji ? " on" : "") + '" data-pozdeji="1">Později</button>' +
+        "</div>" +
+        '<input type="datetime-local" class="qz-pname-in zk-pwhen" id="zk-pstartat"' +
+          (stav.pozdeji ? "" : " hidden") + ' value="' + esc(stav.start) + '">' +
+        '<div class="qz-fieldlabel">Jak dlouho se dá hrát</div>' +
+        '<div class="qz-bands" id="zk-pdelka">' + PARTA_DELKY.map(function (d) {
+          return '<button type="button" class="qz-chip' + (d.h === stav.delka ? " on" : "") + '" data-h="' + d.h + '">' + d.t + "</button>";
+        }).join("") + "</div>" +
+        '<p class="zk-pshrnuti" id="zk-pshrnuti"></p>' +
+        '<button class="qz-go" id="zk-pcreate">Založit a pozvat ' + handArrowSvg(false) + "</button>" +
+      "</div></div>";
+
+    var startEl = body.querySelector("#zk-pstartat");
+    function zacatek() {
+      if (!stav.pozdeji) return Date.now();
+      var t = new Date(startEl.value).getTime();
+      return isFinite(t) ? t : NaN;
+    }
+    function shrn() {
+      var z = zacatek();
+      var el = body.querySelector("#zk-pshrnuti");
+      if (!isFinite(z)) { el.textContent = "Vyber, kdy turnaj začne."; return; }
+      el.innerHTML = "Začátek: <b>" + (stav.pozdeji ? esc(velkym(kdy(z))) : "Hned") + "</b><br>" +
+        "Konec: <b>" + esc(velkym(kdy(z + stav.delka * 3600000))) + "</b>";
+    }
+    body.querySelectorAll("#zk-pstart .qz-chip").forEach(function (b) {
+      b.addEventListener("click", function () {
+        stav.pozdeji = b.dataset.pozdeji === "1";
+        body.querySelectorAll("#zk-pstart .qz-chip").forEach(function (x) { x.classList.toggle("on", x === b); });
+        startEl.hidden = !stav.pozdeji;
+        // Výchozí „později“ je příští celá hodina — ať hráč nezačíná od prázdného pole.
+        if (stav.pozdeji && !startEl.value) {
+          var d = new Date(Date.now() + 3600000); d.setMinutes(0, 0, 0);
+          startEl.value = prodatum(d.getTime());
+        }
+        shrn();
+      });
+    });
+    startEl.addEventListener("input", shrn);
+    body.querySelectorAll("#zk-pdelka .qz-chip").forEach(function (b) {
+      b.addEventListener("click", function () {
+        stav.delka = Number(b.dataset.h);
+        body.querySelectorAll("#zk-pdelka .qz-chip").forEach(function (x) { x.classList.toggle("on", x === b); });
+        shrn();
+      });
+    });
+    shrn();
+
+    body.querySelector("#zk-pcreate").addEventListener("click", function () {
+      var tl = this;
+      stav.name = body.querySelector("#zk-pname").value.trim();
+      stav.start = startEl.value;
+      var z = zacatek();
+      if (!isFinite(z)) return renderPartaNew("Vyber, kdy turnaj začne.", stav);
+      tl.disabled = true;
+      var data = { ends_at: z + stav.delka * 3600000 };
+      if (stav.pozdeji) data.starts_at = z;
+      if (stav.name) data.name = stav.name;
+      req("/parta", { method: "POST", body: data }).then(function (r) {
+        if (r.status !== 201) return renderPartaNew((r.body && r.body.error) || "Turnaj se nepodařilo založit.", stav);
+        renderParta(r.body.id, "", true);
+      });
+    });
+  }
+
+  function renderParta(id, msg, pozvatHned) {
+    stopAll();
+    if (pendingParta() !== id) history.replaceState(null, "", location.pathname + "?parta=" + encodeURIComponent(id));
+    hostToken = partaToken(id) || null;
+    req("/parta/" + id).then(function (r) {
+      if (r.status !== 200) {
+        say("Tenhle turnaj tu není.");
+        body.innerHTML = '<div class="qz-screen qz-end zk-wrap">' + backBar("Zpět", opustPartu) +
+          "<h2>Turnaj nenalezen</h2>" +
+          errBox((r.body && r.body.error) || "Turnaj se nenačetl.") +
+          '<div class="qz-setnote">Možná už skončil a smazal se, nebo je odkaz neúplný.</div></div>';
+        return;
+      }
+      var p = r.body;
+      var ja = p.me;
+      say(p.status === "hotovo" ? "Turnaj skončil. Tady je pořadí."
+        : !ja ? "Někdo tě zve do turnaje. Napiš jméno a hraj."
+        : ja.done ? "Máš odehráno. Uvidíme, co ostatní."
+        : p.status === "planovany" ? "Turnaj ještě nezačal."
+        : "Deset otázek, dvacet vteřin na každou. Hodně štěstí.");
+
+      // Pořadí: dohraní s body (a pořadím), pak rozehraní, pak kdo ještě nezačal.
+      var poradi = 0;
+      var rows = p.players.map(function (h) {
+        var cislo = h.done ? (++poradi) + "." : "";
+        // Bez minulého času s rodem („nehrál“) — appka pohlaví hráčů nezná.
+        var vpravo = h.done ? starScore(h.score) : h.playing ? "Rozehráno" : "Ještě nezačato";
+        return '<div class="qz-standrow' + (h.me ? " zk-me" : "") + (h.done && poradi === 1 ? " win" : "") + '">' +
+          '<span class="qz-rank">' + cislo + "</span>" +
+          '<span class="qz-standname">' + esc(h.name) + (h.name === p.owner ? ' <span class="zk-ptag">Pořadatel</span>' : "") + "</span>" +
+          '<span class="qz-standscore' + (h.done ? "" : " zk-pwait") + '">' + vpravo + "</span></div>";
+      }).join("");
+
+      var cas = '<div class="zk-pcas">' +
+        (p.status === "planovany" ? "Začíná " + esc(kdy(p.starts_at)) + ", konec " + esc(kdy(p.ends_at))
+          : p.status === "bezi" ? "Hraje se do " + esc(kdy(p.ends_at))
+          : "Turnaj skončil " + esc(kdy(p.ends_at))) +
+        " · " + p.total + " otázek, " + p.limit_s + " s na každou</div>";
+
+      // Hlavní akce podle toho, kdo se dívá.
+      var akce = "";
+      if (!ja) {
+        if (p.status === "hotovo") {
+          akce = '<div class="qz-setnote">Turnaj už skončil, přidat se nejde.</div>';
+        } else if (p.account) {
+          akce = '<button class="qz-go" id="zk-pjoin">Přidat se jako ' + esc(p.account.nick) + " " + handArrowSvg(false) + "</button>";
+        } else {
+          akce =
+            '<form class="zk-pguest" id="zk-pguest" autocomplete="off">' +
+              '<label class="qz-fieldlabel" for="zk-gname">Tvoje jméno</label>' +
+              '<input class="qz-pname-in" id="zk-gname" maxlength="20" placeholder="Např. Jana">' +
+              '<label class="zk-agree"><input type="checkbox" id="zk-gagree"> ' +
+                '<span>Je mi aspoň 13 let a souhlasím s <a href="podminky.html" target="_blank" rel="noopener">podmínkami použití</a>.</span></label>' +
+              '<button class="qz-go" id="zk-gjoin" disabled>' +
+                (p.status === "bezi" ? "Hrát" : "Přidat se") + " " + handArrowSvg(false) + "</button>" +
+            "</form>" +
+            '<button type="button" class="zk-linkbtn" id="zk-plogin">Mám profil, přihlásím se</button>';
+        }
+      } else if (ja.done) {
+        akce = '<button class="qz-more" id="zk-presult">Moje odpovědi</button>';
+      } else if (p.status === "planovany") {
+        akce = '<div class="qz-setnote">Turnaj začne ' + esc(kdy(p.starts_at)) +
+          ". Pak se sem vrať přes stejný odkaz.</div>";
+      } else if (p.status === "bezi" || ja.game_id) {
+        akce = '<button class="qz-go" id="zk-pplay">' + (ja.game_id ? "Pokračovat ve hře" : "Hrát") + " " +
+          handArrowSvg(false) + "</button>";
+      } else {
+        akce = '<div class="qz-setnote">Turnaj skončil dřív, než se hra rozjela.</div>';
+      }
+      var pozvat = ja && p.status !== "hotovo"
+        ? '<button class="qz-more zk-pinvite" id="zk-pinvite">Pozvat kamarády</button><div id="zk-pshare"></div>'
+        : "";
+
+      body.innerHTML =
+        '<div class="qz-screen qz-end zk-wrap zk-parta">' +
+        backBar("Zpět", opustPartu) +
+        '<div class="zk-ptitle">Turnaj pro partu</div>' +
+        "<h2>" + esc(p.name) + "</h2>" +
+        cas +
+        errBox(msg) +
+        '<div class="zk-pakce">' + akce + pozvat + "</div>" +
+        '<h3 class="zk-vnadpis">Pořadí</h3>' +
+        '<div class="zk-rowlist">' + rows + "</div>" +
+        "</div>";
+
+      on("zk-pjoin", function () { partaPridat(id, {}); });
+      on("zk-pplay", function () { partaHraj(id); });
+      on("zk-presult", function () {
+        S.game = { mode: "parta", tournamentId: id };
+        showResult(ja.game_id, "parta", id);
+      });
+      on("zk-plogin", function () { hostToken = null; renderAuth("login"); });
+      on("zk-pinvite", function () { partaPozvat(p, body.querySelector("#zk-pshare")); });
+
+      var form = body.querySelector("#zk-pguest");
+      if (form) {
+        var jm = body.querySelector("#zk-gname"), sou = body.querySelector("#zk-gagree"), tl = body.querySelector("#zk-gjoin");
+        var hlidej = function () { tl.disabled = !(sou.checked && jm.value.trim().length >= 2); };
+        jm.addEventListener("input", hlidej);
+        sou.addEventListener("change", hlidej);
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (tl.disabled) return;
+          tl.disabled = true;
+          partaPridat(id, { name: jm.value.trim(), age13: true });
+        });
+      }
+      if (pozvatHned && ja) partaPozvat(p, body.querySelector("#zk-pshare"));
+
+      // Pořadí se samo obnovuje, ať je vidět, jak dohrávají ostatní. Jen pro účastníky —
+      // pozvanému by překreslení smazalo rozepsané jméno.
+      if (ja && p.status !== "hotovo") {
+        poll = setInterval(function () {
+          if (!body.querySelector(".zk-parta") || body.querySelector("#zk-pshare a, #zk-pshare button")) return;
+          renderParta(id);
+        }, 30000);
+      }
+    });
+  }
+
+  function partaPridat(id, data) {
+    req("/parta/" + id + "/join", { method: "POST", body: data }).then(function (r) {
+      if (r.status !== 200 && r.status !== 201) return renderParta(id, (r.body && r.body.error) || "Přidat se nepovedlo.");
+      if (r.body.token) { partaToken(id, r.body.token); hostToken = r.body.token; }
+      // Když turnaj běží, jde se rovnou hrát — kvůli tomu sem pozvaný přišel.
+      req("/parta/" + id).then(function (d) {
+        if (d.status === 200 && d.body.status === "bezi") return partaHraj(id);
+        renderParta(id);
+      });
+    });
+  }
+
+  function partaHraj(id) {
+    stopAll();
+    req("/parta/" + id + "/play", { method: "POST" }).then(function (r) {
+      if (r.status !== 200 && r.status !== 201) return renderParta(id, (r.body && r.body.error) || "Hra se nespustila.");
+      beginGame(r.body.game_id, "parta", null, id);
+    });
+  }
+
+  function partaPozvat(p, kde) {
+    var url = partaOdkaz(p.id);
+    var text = "Pojď si zahrát Cestokvíz! Turnaj „" + p.name + "“: deset otázek o zemích světa, " +
+      "každý hraje, kdy se mu to hodí. Konec " + kdy(p.ends_at) + ".";
+    // Na telefonu systémové sdílení (WhatsApp, SMS, Messenger…). Na počítači ho schválně
+    // nepoužíváme: dialog sdílení ve Windows je těžkopádný a lidé ho neznají.
+    var dotyk = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+    if (dotyk && navigator.share) {
+      navigator.share({ title: "Cestokvíz", text: text, url: url }).catch(function () {});
+      return;
+    }
+    if (!kde) return;
+    var zprava = text + "\n\n" + url;
+    kde.innerHTML =
+      '<div class="zk-psharebox">' +
+        '<a class="qz-chip" href="mailto:?subject=' + encodeURIComponent("Turnaj v Cestokvízu: " + p.name) +
+          "&amp;body=" + encodeURIComponent(zprava) + '">E-mailem</a>' +
+        '<a class="qz-chip" href="https://wa.me/?text=' + encodeURIComponent(zprava) + '" target="_blank" rel="noopener">WhatsApp</a>' +
+        '<button type="button" class="qz-chip" id="zk-pcopy">Zkopírovat odkaz</button>' +
+      "</div>" +
+      '<div class="zk-plink">' + esc(url) + "</div>";
+    var kopie = kde.querySelector("#zk-pcopy");
+    kopie.addEventListener("click", function () {
+      var hotovo = function () { kopie.textContent = "Zkopírováno"; };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(hotovo, function () {});
+    });
+  }
+
 
   // ---------------------------------------------------------------- turnaj (aréna)
   function statusLabel(t) {

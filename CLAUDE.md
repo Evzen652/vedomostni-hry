@@ -63,7 +63,7 @@ při psaní nového CSS s tím počítej.
 
 ## ⇢ ZAČNI TADY, KDYŽ POKRAČUJEŠ PO PŘESTÁVCE
 
-1. **[docs/predavaci-protokol.md](docs/predavaci-protokol.md)** — co převzít, co ověřit
+1. **[docs/predavaci-protokol.md](docs/predavaci-protokol.md)** — **nejdřív blok „Předání na druhý počítač“ (stav k 4. 10.)**: co převzít, co ověřit
    (s očekávanými čísly, ať se pozná rozdíl mezi „jiné prostředí" a „regrese"), tvrdá
    pravidla a fronta práce. **Proveď převzetí podle bodu 2, než začneš cokoli měnit.**
 2. **[docs/pokracovani.md](docs/pokracovani.md)** — popisný stav: co je hotové, jak
@@ -81,6 +81,172 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-06 — Správná odpověď už nevyčnívá délkou: 778 otázkám prodlouženy distraktory.
+  NECOMMITNUTO / NENASAZENO.** Hráč: *„ta nejdelší odpověď je v 99 % případů správně“*.
+  Změřeno: nejdelší byla správná u **54,9 %** fondu (starý fond 56 %, dospělí 61 %),
+  náhoda je 25 %. Hráč zvolil opravit jen nejkřiklavější: otázky, kde je odpověď víc
+  než **1,5×** delší než nejdelší distraktor. Po opravě **34,9 %** (děti 26,7 %, dospělí
+  41,6 %) a žádná otázka nad 1,5×. Správné odpovědi se NEZKRACOVALY (pravidlo 2026-09-11).
+  - **Neopravovat všechny „nejdelší“:** kdyby u každé otázky byl distraktor delší než
+    odpověď, vznikne opačný vzorec („nejdelší nikdy není správně“). Cíl je náhoda, ne nula.
+  - **Psalo 13 agentů po 60 otázkách. Past: první kolo (12 agentů po 120) spadlo CELÉ na
+    „no progress for 600 s“** — agent psal výstup jedním obřím zápisem a ten trval přes
+    10 minut. Zabralo **zapisovat průběžně po 15 otázkách do vlastních souborů**.
+  - **Kontrola nebyla jen délka:** agenti sami vyměnili pravdivé distraktory ve starých
+    datech (soby na Svalbardu, Kalmycko jako poušť Evropy, SSSR v Mnichově, živá zvířata
+    E. Holuba…); ručně jsem vyměnil další 4 sporné (Klimt, pho, UNESCO sklářství, Bismarck)
+    a opravil otázku `cz-q-krkonose-prvni-narodni-park` — první národní park v Československu
+    byl Tatranský (1949), Krkonoše jsou první na území dnešního Česka.
+  - **Typografie:** nové distraktory měly rovné apostrofy a spojovník — sjednoceno na „…“ a –.
+  - **Past při ověřování: `git stash` kvůli srovnání auditu selhal při `pop`**, protože audit
+    mezitím přepsal svůj výstup `data/audit-konzistence.json`. Nic se neztratilo, ale
+    **srovnání „před/po“ se dělá v odděleném `git worktree`, ne přes stash.**
+  - Ověřeno: `validate` 0 chyb, `test:offline` 933, audit konzistence beze změny (jediný nový
+    nález „hlavni“ je planý — správný tvar od „hlaveň“). **Při nasazení nutný
+    `db:sync --remote`** (distraktory jsou v D1) a týká se to i veřejných otázek z `master`.
+
+- **2026-10-05 — TURNAJ PRO PARTU: kamarádi z odkazu, stejné otázky online, i BEZ PROFILU
+  (host). Plus nový vzhled lobby. Postaveno a ověřeno lokálně, NECOMMITNUTO / NENASAZENO.**
+  Přání hráče: „parta lidí si udělá svůj turnaj… nebudou hrát u jednoho tabletu, ale online.
+  Ani nemusejí být přihlášení. Pošle jim mail nebo zprávu.“ Hráč zvolil: stejná sada otázek,
+  každý hraje kdy chce v okně od–do; pozvaný jen napíše jméno; pozvánka bez kopírování.
+  - **Vzor denní pětky, ne aréna:** `parties` drží jednu sadu (10 otázek, 20 s), každý hráč
+    má vlastní hru `mode='parta'` s její kopií (`games.party_id`). Aréna páruje hráče proti
+    sobě, a parta, která nehraje současně, by neměla s kým.
+  - **HOST = řádek v `users` s `is_guest = 1`**, technická přezdívka `host:<id>`, náhodný PIN,
+    žádný rating. Jen proto, aby celý herní stroj (čas na serveru, odpovědi, rozbor) fungoval
+    beze změny. **`currentUser()` hosta vrací JEN s `{ host: true }`** — výchozí je odmítnutí,
+    takže každý endpoint, který na hosta nemyslí, ho bere jako nepřihlášeného. Povoleno:
+    `api/parta/*` a `game/:id` + `q` + `answer`. Login a výzvy hosta navíc výslovně odmítají.
+  - **Id turnaje je zároveň pozvánka** → `partaId()` z `crypto.getRandomValues` (60 bitů),
+    ne `newId()` (z větší části čas).
+  - **Klient:** hostův token v `localStorage` `zk_parta_<id>`, do `req()` ho podstrkuje
+    `hostToken` — hlavní přihlášení na zařízení se nepřepíše. `hostToken` nuluje open(),
+    renderLobby() a opustPartu(), jinak by lobby volalo /me s tokenem hosta. Odkaz
+    `/hra?parta=<id>` vede do turnaje PŘED kontrolou přihlášení.
+  - **Pozvánka:** na dotykovém zařízení `navigator.share` (WhatsApp, SMS…), na počítači
+    tlačítka E-mailem (`mailto:`), WhatsApp (`wa.me`) a Zkopírovat odkaz. Nic se neposílá
+    z našeho serveru (pošta pořád nejede).
+  - **Úklid 30 dní po konci** (`uklidPart` v `expireStaleGames`): turnaj, jeho hry i hosté.
+    Ověřeno posunutím konce do minulosti. Zásady (`soukromi.html`) nově popisují hosta.
+  - **Lobby (tentýž den):** glóbus za nadpisem (`window.ZKGlobe`), ilustrace 120/100 px,
+    uvítání na střed, sloupec 860 px od 900 px šířky, Žebříček/Výzvy/Profil jako tichý
+    řádek (malované ikony jsou alternativa, nevybráno), dlaždice hraní 4 → 2×2 pod 720 px.
+    Nová ilustrace `assets/zk-parta.jpg` (papírová vlaštovka, Gemini, prompt v
+    `data/ui-irony-prompts.json`).
+  - **Ověřeno:** `test:api` 184, `test:offline` 933, `test:expire/ghost/pool/auth` beze změny,
+    nový **`npm run test:parta` 17 kontrol** (host nesmí na /me, do fronty, zakládat ani se
+    přihlásit…); v prohlížeči celý tok zakladatel → host bez profilu → 10 otázek → pořadí.
+  - **PŘI NASAZENÍ:** nejdřív `migrations/2026-10-05-parta.sql --remote`, pak kód — bez
+    migrace by `currentUser` padal na neznámém sloupci `is_guest` a s ním CELÉ online API.
+    Nasazovat z čisté kopie `master` (postup v protokolu), ať nevyjdou otázky bez obrázků.
+
+- **2026-10-03 — `zemekviz.pages.dev` SE TRVALE PŘESMĚROVÁVÁ na `cestokviz.cz`** (rozhodl hráč;
+  `functions/_middleware.js`, nasazení `4e3a1936`). GET/HEAD 301, ostatní 308 (301 by z POST udělal GET).
+  Cesta i parametry se zachovávají, takže staré pozvánky `?duel=` fungují.
+  - **Jen přesná shoda hostitele** — náhledy nasazení `xxxx.zemekviz.pages.dev` zůstávají funkční.
+    **Po nasazení se proto obsah ověřuje na `cestokviz.cz` a na náhledové adrese z výpisu deploye**,
+    ne na `zemekviz.pages.dev` (ta vrací už jen 301).
+  - **`/sw.js` staré adresy se NEPŘESMĚROVÁVÁ, ale vrací úklidový worker** (smaže cache, odregistruje
+    se, znovu načte karty). Prohlížeč neumí aktualizovat service worker přes přesměrování — bez
+    toho by na staré adrese navždy zůstal starý worker s cache.
+  - Ověřeno přímým voláním middleware (7 případů) i na ostrých adresách po nasazení.
+- **2026-10-03 — Přihlášení do online ligy je skutečný `<form>` a po úspěchu volá
+  `navigator.credentials.store(PasswordCredential)`** (nasazení `95122ffc`). Hráč chtěl, aby si appka
+  jméno a PIN pamatovala. Přihlášení si pamatuje odjakživa (token 90 dní v localStorage) — hráč viděl
+  formulář, protože **localStorage je vázaný na ADRESU: na `cestokviz.cz` je každý prohlížeč nový**,
+  přihlášení ze `zemekviz.pages.dev` se nepřenese. Bez `<form>` ale správce hesel nenabízel uložení.
+  Enter teď odesílá formulář sám (implicitní odeslání; se zablokovaným tlačítkem ne) — ruční
+  `keydown` posluchač zmizel, jinak by se odesílalo dvakrát. Ověřeno v prohlížeči se simulovaným API.
+- **2026-10-03 — Rozcestník: nové texty (vybral hráč) a favikona.**
+  - Podtitulek „Tisíce otázek o 55 zemích světa. Od Bajkalu po Shakespeara. Každý týden přidáváme
+    nové.“ Slovo **„zeměpisný“ hráč vyřadil** (z devíti témat jsou zeměpisná dvě) a **humor se v textu
+    nejmenuje** — na ten má hráč přijít sám. Dvojice „Od X po Y“ nesmí začínat stejným písmenem.
+    ⚠ **„Každý týden přidáváme nové“ je SLIB** — dnes za ním žádná týdenní dávka není (2 200 otázek
+    čeká na ilustrace); kdo nasazuje, ať ho drží, nebo text změní.
+  - Popisky režimů: Sólo „Kdo neví, kde leží Fidži, nemusí se nikomu přiznávat.“, Párty „Tablet
+    doprostřed stolu, 2 až 6 hráčů. Kdo prohraje, myje nádobí.“, Škola „Promítni na tabuli a nech
+    třídu hádat. Zeměpis, při kterém nikdo nespí.“ Hráč odmítá obecné pointy („Vyhrává ten chytrej“).
+  - **Favikona** `favicon.ico` (16/32/48, `scripts/gen-favicon.js`) je PLOCHÉ „C“ na tealovém čtverci
+    s korálovou tečkou (vybral hráč ze 4 variant). První verze — výřez akvarelové žárovky — byla
+    v 16 px „moc složitá a není vidět“; glóbus zamítnut, v 16 px vypadá jako výchozí ikona „web“.
+    Po změně ikony zvednout `?v=N` v odkazech (prohlížeče favikony drží v cache dlouho). Do teď stránka žádnou neměla a `/favicon.ico` vracel SPA fallback.
+    V `SOUBORY` build-public.js a odkazovaná ze všech čtyř HTML (hlídá test:offline, 928).
+- **2026-10-03 — „Pokračuj“ na výběru kontinentu/zemí/témat PLAVE u spodní hrany, ale jen když
+  je povolené** (`.qz-sec-confirm:has(.qz-btn-start:not(:disabled))`, nasazení `0ca1eb60`). Hráč
+  tlačítko pod 23–56 dlaždicemi neviděl. **Ruší to rozhodnutí z 13. 8.** („napevno v toku“), které
+  vzniklo, protože tehdejší sticky lišta měla bílý podklad přes celou šířku a karty se o ni ostře
+  usekávaly. Teď místo podkladu běží přechod do `#fdf6e8` (konec gradientu stránky) a kontejner
+  má `pointer-events: none` (jen tlačítko `auto`), takže kliknutí na kartu pod přechodem projde.
+  Ověřeno měřením: před výběrem tlačítko na 1 438 px (mimo okno 914), po výběru 854–900 px, na
+  konci stránky stojí pod poslední řadou. Hlídá `test:offline` (923).
+- **2026-10-03 — Párty: praporky hráčů jsou MŘÍŽKA, ne flex-wrap** (`--cols` z `topHtml`: 2–4 v řadě,
+  5 a 6 po třech, telefon po dvou). `flex: 1` roztáhl neúplný řádek, takže u 5 hráčů byly 3 malé
+  a 2 velké praporky. Nasazení `ee4f95c7`.
+- **2026-10-03 — DLAŽDICE SE KRESLÍ Z NÁHLEDŮ 320 px (`assets/male/`), ne z 512px originálů.**
+  Hráč: výběr zemí se „hodně dlouho načítá“. Naměřeno na ostré adrese: 56 vlajek = **3,5 MB**
+  (512×512, ~62 kB), kreslí se ale nejvýš na 128–160 CSS px. Po změně **1,06 MB**; všech 82
+  dlaždic (vlajky, kontinenty, témata, režimy, pásma, zkratka Česko) 5,3 → 1,7 MB. Nasazení `8c7825b8`.
+  - **Originály se NEMĚNÍ a zůstávají zdrojem pravdy** (dobarvi.js, split-flag-grid.ps1 míří na ně).
+    `male()` v quiz.js přemapuje cestu jen u vyjmenovaných rodin; mimo ně vrací cestu beze změny.
+  - **Po každé změně nebo přidání ilustrace dlaždice: `npm run nahledy`.** Náhled nese v EXIF otisk
+    originálu a `validate` hlásí CHYBĚJÍCÍ i ZASTARALÝ náhled jako CHYBU (ověřeno mutací) — jinak by
+    se přegenerovaná ilustrace na webu tiše neukázala.
+  - **Neřešeno:** `zk-*` (online lobby) a `end-*` — jiné velikosti zobrazení, zatím nehlášeno.
+  - **Past znovu:** heredoc v Bashi spolkl zpětná lomítka v regexu (`assets/` → `assets/`, kód
+    nešel zparsovat). Regex bez lomítek: `assets[/]…[.]jpg`.
+- **2026-10-03 — VLASTNÍ DOMÉNA `cestokviz.cz` BĚŽÍ; `WEB` přepnuto a nasazeno (bez nových otázek).**
+  Hráč v dashboardu Pages přidal doménu (stav Active, SSL enabled; `CNAME @ → zemekviz.pages.dev`
+  vytvořil dashboard sám, protože zóna je ve stejném účtu jako projekt). `WEB` v
+  `build-public.js` → `https://cestokviz.cz`, `master` posunut na `3028f62`, nasazení `90bbd12c`
+  (předchozí `d1ad786b` pro návrat). Ověřeno na obsahu obou adres, ne na stavovém kódu.
+  - **Nové otázky zůstaly venku:** nasazeno z `master` (3 792 veřejných v indexu), obsahová větev se
+    do `master` NESLOUČILA. Čistý commit jen se třemi soubory (ne z větve `claude/web-play`, ta má
+    omylem commitnutou složku `.obsah/` a je zastaralá).
+  - **Zbývá:** `www.cestokviz.cz` (nepovinné), DNSSEC (Cloudflare + DS u registrátora), pak Google Play
+    (docs/google-play-podklady.md). Detaily v protokolu, bod F.
+  - **Samostatný landing NEVZNIKL — rozcestník jím je** (rozhodl hráč 3. 10.). Google Play landing
+    nevyžaduje (povinné jsou jen `/soukromi` a `/smazani-uctu`) a náhled sdílení nesou značky v hlavičce.
+    Rozcestník dostal podtitulek „Zeměpisný kvíz s humorem. Tisíce otázek o 55 zemích světa.“ a v
+    patičce odkaz „Smazání profilu“ (`0a6c7c5`, nasazení `a3aac298`). **Past při ověřování: service
+    worker podává starou skořápku** — po úpravě `quiz.js`/`quiz.css` v prohlížeči nejdřív odregistrovat
+    SW a smazat cache, jinak se měří minulá verze (stalo se dvakrát za sebou).
+  - **Pasti:** v novém menu Cloudflare je Workers & Pages pod **Compute**; po přidání domény si místní
+    DNS krátce pamatuje „neexistuje“ (curl 000), ověřuj `nslookup … 8.8.8.8` a pak počkej; při psaní
+    shellových příkazů se zpětné apostrofy uvnitř uvozovek VYKONAJÍ (`\`soubor\`` spustí soubor).
+- **2026-10-02 — NOVÉ OTÁZKY SE NENASAZUJÍ, DOKUD NEMAJÍ OBRÁZKY (rozhodl hráč). Web a Google Play
+  pokračují BEZ nich.** Appka je celá malovaná a otázka bez ilustrace padá na záložní razítko
+  země — 2 200 takových najednou by byla viditelná díra.
+  - **PAST: `build-public.js` kopíruje do nasazení CELOU složku `data/questions`** (a `db:sync
+    --remote` zapisuje celý fond do D1). Jakékoli nasazení z větve `claude/pokracujeme-e79708` by
+    nové otázky vyneslo na web, i kdyby se měnilo úplně něco jiného. Proto se **práce na webu
+    a Google Play dělá na větvi založené na `master`** (produkční kód a produkční obsah) a
+    nasazuje se z ní; obsahová větev se spojí a nasadí až s ilustracemi. **`db:sync --remote`
+    se do té doby nespouští.**
+  - **Pořadí vydání:** doména `cestokviz.cz` v dashboardu Pages (jen hráč; DNS už míří na
+    Cloudflare a pošta přežila, ale apex nemá záznam na web) → `WEB` v `build-public.js` →
+    nasazení → DNSSEC → balíček TWA, účet v Play Console, `/.well-known/assetlinks.json`.
+  - **Stav 2. 10.:** `nslookup`: NS `keaton`/`melinda.ns.cloudflare.com`, MX `thinline.cz`,
+    apex bez A/CNAME, `https://cestokviz.cz` neodpovídá. Detaily v protokolu, bod F.
+- **2026-10-01 — KAMPAŇ „40 OTÁZEK NA KAŽDOU ZEMI“ DOKONČENA: 55 zemí, +2 200 otázek.**
+  Fond 4 012 → **6 212** (serverový fond beze změny 220). Hráč ji zadal jako „zcela autonomně,
+  bez mého příkazu“; běželo to v devíti vlnách po 5–8 agentech, každý psal jednu zemi podle
+  `ZADANI.md` a kontextového souboru s výpisem existujících otázek.
+  - **Nově je pro každou zemi 40 otázek v pásmech 13/13/14** (děti / puberťáci / dospělí),
+    všechny s `more_fact` a `irony_prompt`. **Všech 2 200 je BEZ OBRÁZKU** — generování
+    ilustrací čeká na hráče (náklad a kredit). Fond se tím neporušil: `validate` 0 chyb,
+    `test:offline` 917, mapa konfliktů 762 dvojic, serverových pořád 220.
+  - **Dvě zaplacené pasti:** (1) **`online_only: true` u „-s-“ otázek je PŮVODNÍ serverový
+    fond, ne bug agentů** — omylem se jim sebral a musel se vrátit podle
+    `git show 94e1301`; před zásahem do `online_only` vždy porovnat se stavem PŘED kampaní.
+    (2) **Agent nahlásí fakta „z paměti neověřená“ — ta se musí ověřit**, našly se tak dvě
+    skutečné chyby (PewDiePie × T-Series 2019, žralok obrovský × velrybí).
+  - **Provozní:** agent s 40 otázkami naráz umí spadnout na limitu délky odpovědi (zadat
+    „po 10, přírůstkově, odpověz krátce“); výpadek sítě shodí všechny agenty naráz a nic
+    po nich nezůstane (ověřit `curl`, spustit znovu).
+  - **Podrobnosti, seznam hotových zemí, co zbývá (ilustrace → nasazení) a poučení:**
+    [docs/predavaci-protokol.md](docs/predavaci-protokol.md). Nástroje kampaně (`prijmi.js`,
+    `ZADANI.md`) jsou od 2. 10. V REPU: `scripts/obsah/` (+ `README.md` s postupem a pastmi).
 - **2026-09-30 — Dobarvení ilustrací je NOVĚ NÁSTROJ V REPU (`scripts/ilustrace/dobarvi.js`)
   a bere zdroj Z GITU, ne z disku. Čtyři dlaždice online lobby dobarveny.**
   Hráč: dlaždice Světové ligy jsou „příliš vybledlé“. Postup na dobarvení byl popsaný

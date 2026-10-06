@@ -645,7 +645,7 @@
   function open(){ ensureData().then(()=>{
     document.body.style.overflow="hidden"; root.classList.remove("qz-hidden");
     const _p = new URLSearchParams(location.search);
-    if((_p.get("duel") || _p.get("obnova")) && window.ZKOnline){
+    if((_p.get("duel") || _p.get("obnova") || _p.get("parta")) && window.ZKOnline){
       showHomeBtn(true); window.ZKOnline.open(renderModePick); return;
     }
     renderModePick();
@@ -1584,6 +1584,8 @@
   // Vystavují se SCHVÁLNĚ jen čtyři funkce kolem `.qz-picframe`, ne vnitřek hry:
   // stav (`S`, `data`) zůstává zavřený, jinak by se online mohl začít vázat na offline.
   // Obě části sdílí `#qz-body`, takže `body.querySelector` uvnitř funguje i odsud.
+  // Klidově se točící glóbus za nadpisem — rozcestník a od 2026-10-05 i online lobby.
+  window.ZKGlobe = { bg: () => mountGlobeBg() };
   window.ZKPicframe = {
     html: (q, odlozit) => picframeHtml(q, odlozit),  // řetězec do innerHTML (obal + rám + prázdný blok)
     wire: () => wirePic(),             // navěsí onload/onerror u ilustrace

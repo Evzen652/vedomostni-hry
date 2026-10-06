@@ -23,7 +23,8 @@ export async function onRequestPost({ request, env }) {
   // takže se sem přihlášení nedostane ani omylem. Žádný test na ni proto nesáhne
   // (ověřeno mutací — vypnutí téhle podmínky testy nechytí). Je tu jako druhá linie
   // pro případ, že by někdy přibyla jiná cesta k účtu než přezdívka + PIN.
-  if (!user || user.is_bot || user.deleted_at) return fail('přezdívka nebo PIN nesedí', 401);
+  // Host z turnaje pro partu (`host:…`, náhodný PIN) se přihlásit nedá stejně jako náhrobek.
+  if (!user || user.is_bot || user.deleted_at || user.is_guest) return fail('přezdívka nebo PIN nesedí', 401);
 
   if (user.locked_until > Date.now()) {
     const min = Math.ceil((user.locked_until - Date.now()) / 60000);

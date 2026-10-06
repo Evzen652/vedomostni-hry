@@ -89,6 +89,10 @@ export async function onRequestDelete({ request, env }) {
     env.DB.prepare('DELETE FROM queue WHERE user_id = ?').bind(me.id),
     env.DB.prepare('DELETE FROM pin_resets WHERE user_id = ?').bind(me.id),
     env.DB.prepare('DELETE FROM seen_questions WHERE user_id = ?').bind(me.id),
+    // Jméno v turnajích pro partu (2026-10-05) — ostatním zůstane pořadí, ne přezdívka.
+    // NA KONCI SCHVÁLNĚ, ať se neposunou indexy, ze kterých se níž skládá `odstraneno`.
+    env.DB.prepare('UPDATE party_players SET name = ?, name_lower = ? WHERE user_id = ?')
+      .bind('Smazaný hráč ' + znacka, 'deleted:' + me.id, me.id),
   ]);
 
   // Co se doopravdy smazalo, se vrací SCHVÁLNĚ. Není to ozdoba: bez toho se ta část
