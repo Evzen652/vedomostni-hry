@@ -81,6 +81,66 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-06 — Správná odpověď už nevyčnívá délkou: 778 otázkám prodlouženy distraktory.
+  NECOMMITNUTO / NENASAZENO.** Hráč: *„ta nejdelší odpověď je v 99 % případů správně“*.
+  Změřeno: nejdelší byla správná u **54,9 %** fondu (starý fond 56 %, dospělí 61 %),
+  náhoda je 25 %. Hráč zvolil opravit jen nejkřiklavější: otázky, kde je odpověď víc
+  než **1,5×** delší než nejdelší distraktor. Po opravě **34,9 %** (děti 26,7 %, dospělí
+  41,6 %) a žádná otázka nad 1,5×. Správné odpovědi se NEZKRACOVALY (pravidlo 2026-09-11).
+  - **Neopravovat všechny „nejdelší“:** kdyby u každé otázky byl distraktor delší než
+    odpověď, vznikne opačný vzorec („nejdelší nikdy není správně“). Cíl je náhoda, ne nula.
+  - **Psalo 13 agentů po 60 otázkách. Past: první kolo (12 agentů po 120) spadlo CELÉ na
+    „no progress for 600 s“** — agent psal výstup jedním obřím zápisem a ten trval přes
+    10 minut. Zabralo **zapisovat průběžně po 15 otázkách do vlastních souborů**.
+  - **Kontrola nebyla jen délka:** agenti sami vyměnili pravdivé distraktory ve starých
+    datech (soby na Svalbardu, Kalmycko jako poušť Evropy, SSSR v Mnichově, živá zvířata
+    E. Holuba…); ručně jsem vyměnil další 4 sporné (Klimt, pho, UNESCO sklářství, Bismarck)
+    a opravil otázku `cz-q-krkonose-prvni-narodni-park` — první národní park v Československu
+    byl Tatranský (1949), Krkonoše jsou první na území dnešního Česka.
+  - **Typografie:** nové distraktory měly rovné apostrofy a spojovník — sjednoceno na „…“ a –.
+  - **Past při ověřování: `git stash` kvůli srovnání auditu selhal při `pop`**, protože audit
+    mezitím přepsal svůj výstup `data/audit-konzistence.json`. Nic se neztratilo, ale
+    **srovnání „před/po“ se dělá v odděleném `git worktree`, ne přes stash.**
+  - Ověřeno: `validate` 0 chyb, `test:offline` 933, audit konzistence beze změny (jediný nový
+    nález „hlavni“ je planý — správný tvar od „hlaveň“). **Při nasazení nutný
+    `db:sync --remote`** (distraktory jsou v D1) a týká se to i veřejných otázek z `master`.
+
+- **2026-10-05 — TURNAJ PRO PARTU: kamarádi z odkazu, stejné otázky online, i BEZ PROFILU
+  (host). Plus nový vzhled lobby. Postaveno a ověřeno lokálně, NECOMMITNUTO / NENASAZENO.**
+  Přání hráče: „parta lidí si udělá svůj turnaj… nebudou hrát u jednoho tabletu, ale online.
+  Ani nemusejí být přihlášení. Pošle jim mail nebo zprávu.“ Hráč zvolil: stejná sada otázek,
+  každý hraje kdy chce v okně od–do; pozvaný jen napíše jméno; pozvánka bez kopírování.
+  - **Vzor denní pětky, ne aréna:** `parties` drží jednu sadu (10 otázek, 20 s), každý hráč
+    má vlastní hru `mode='parta'` s její kopií (`games.party_id`). Aréna páruje hráče proti
+    sobě, a parta, která nehraje současně, by neměla s kým.
+  - **HOST = řádek v `users` s `is_guest = 1`**, technická přezdívka `host:<id>`, náhodný PIN,
+    žádný rating. Jen proto, aby celý herní stroj (čas na serveru, odpovědi, rozbor) fungoval
+    beze změny. **`currentUser()` hosta vrací JEN s `{ host: true }`** — výchozí je odmítnutí,
+    takže každý endpoint, který na hosta nemyslí, ho bere jako nepřihlášeného. Povoleno:
+    `api/parta/*` a `game/:id` + `q` + `answer`. Login a výzvy hosta navíc výslovně odmítají.
+  - **Id turnaje je zároveň pozvánka** → `partaId()` z `crypto.getRandomValues` (60 bitů),
+    ne `newId()` (z větší části čas).
+  - **Klient:** hostův token v `localStorage` `zk_parta_<id>`, do `req()` ho podstrkuje
+    `hostToken` — hlavní přihlášení na zařízení se nepřepíše. `hostToken` nuluje open(),
+    renderLobby() a opustPartu(), jinak by lobby volalo /me s tokenem hosta. Odkaz
+    `/hra?parta=<id>` vede do turnaje PŘED kontrolou přihlášení.
+  - **Pozvánka:** na dotykovém zařízení `navigator.share` (WhatsApp, SMS…), na počítači
+    tlačítka E-mailem (`mailto:`), WhatsApp (`wa.me`) a Zkopírovat odkaz. Nic se neposílá
+    z našeho serveru (pošta pořád nejede).
+  - **Úklid 30 dní po konci** (`uklidPart` v `expireStaleGames`): turnaj, jeho hry i hosté.
+    Ověřeno posunutím konce do minulosti. Zásady (`soukromi.html`) nově popisují hosta.
+  - **Lobby (tentýž den):** glóbus za nadpisem (`window.ZKGlobe`), ilustrace 120/100 px,
+    uvítání na střed, sloupec 860 px od 900 px šířky, Žebříček/Výzvy/Profil jako tichý
+    řádek (malované ikony jsou alternativa, nevybráno), dlaždice hraní 4 → 2×2 pod 720 px.
+    Nová ilustrace `assets/zk-parta.jpg` (papírová vlaštovka, Gemini, prompt v
+    `data/ui-irony-prompts.json`).
+  - **Ověřeno:** `test:api` 184, `test:offline` 933, `test:expire/ghost/pool/auth` beze změny,
+    nový **`npm run test:parta` 17 kontrol** (host nesmí na /me, do fronty, zakládat ani se
+    přihlásit…); v prohlížeči celý tok zakladatel → host bez profilu → 10 otázek → pořadí.
+  - **PŘI NASAZENÍ:** nejdřív `migrations/2026-10-05-parta.sql --remote`, pak kód — bez
+    migrace by `currentUser` padal na neznámém sloupci `is_guest` a s ním CELÉ online API.
+    Nasazovat z čisté kopie `master` (postup v protokolu), ať nevyjdou otázky bez obrázků.
+
 - **2026-10-03 — `zemekviz.pages.dev` SE TRVALE PŘESMĚROVÁVÁ na `cestokviz.cz`** (rozhodl hráč;
   `functions/_middleware.js`, nasazení `4e3a1936`). GET/HEAD 301, ostatní 308 (301 by z POST udělal GET).
   Cesta i parametry se zachovávají, takže staré pozvánky `?duel=` fungují.
