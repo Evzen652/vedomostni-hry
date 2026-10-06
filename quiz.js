@@ -763,6 +763,16 @@
            hráč 3. 10. vyřadil: z devíti témat jsou zeměpisná jen dvě.
            Je MIMO .qz-titlewrap, jinak by se glóbus centroval na nadpis i s ním. -->
       <p class="qz-modesub">Tisíce otázek o&nbsp;55 zemích světa. Od Bajkalu po Shakespeara. Každý týden přidáváme nové.</p>
+      <!-- Rychlá hra (2026-10-07, přání hráče: „abych nemusel vše proklikávat“): jedno
+           klepnutí = 10 otázek z náhodných zemí a všech témat. Pásmo si pamatuje
+           z poslední sólo hry (rychlaPasmo); „Změnit“ ho přepne bez opuštění rozcestníku. -->
+      <div class="qz-quick">
+        <button class="qz-go qz-quickgo" id="qz-quick">Rychlá hra ${handArrowSvg(false)}</button>
+        <p class="qz-quicknote">10 otázek z&nbsp;celého světa · <b id="qz-quickband">${esc(velke(BAND_NAMES[rychlaPasmo()]))}</b> · <button type="button" class="qz-quickchange" id="qz-quickchange">Změnit</button></p>
+        <div class="qz-quickbands" id="qz-quickbands" hidden>
+          ${["deti","starsi","dospeli"].map(b => `<button type="button" class="qz-chip${b===rychlaPasmo()?" on":""}" data-qband="${b}">${esc(velke(BAND_NAMES[b]))}</button>`).join("")}
+        </div>
+      </div>
       <div class="qz-modes">
         <!-- Pořadí: Online první, Škola poslední (2026-08-31). Online je jediný režim,
              kde na hráče někdo čeká, takže patří dopředu; škola je nejužší případ užití.
@@ -779,6 +789,16 @@
            neztratí a stránky mají vlastní Zpět do hry. -->
       <div class="qz-legalfoot"><a href="podminky">Podmínky použití</a> · <a href="soukromi">Ochrana údajů</a> · <a href="smazani-uctu">Smazání profilu</a></div>
     </div>`;
+    body.querySelector("#qz-quick").addEventListener("click", e => rychlaHra(e.currentTarget));
+    body.querySelector("#qz-quickchange").addEventListener("click", () => {
+      const box = body.querySelector("#qz-quickbands"); box.hidden = !box.hidden;
+    });
+    body.querySelectorAll("[data-qband]").forEach(b => b.addEventListener("click", () => {
+      ulozRychlePasmo(b.dataset.qband);
+      body.querySelectorAll("[data-qband]").forEach(x => x.classList.toggle("on", x === b));
+      body.querySelector("#qz-quickband").textContent = velke(BAND_NAMES[b.dataset.qband]);
+      body.querySelector("#qz-quickbands").hidden = true;
+    }));
     body.querySelector("#qz-mode-solo").addEventListener("click", () => beginPick("solo"));
     body.querySelector("#qz-mode-party").addEventListener("click", () => beginPick("party"));
     body.querySelector("#qz-mode-school").addEventListener("click", () => beginPick("school"));
@@ -1399,8 +1419,40 @@
     body.querySelector("#qz-start-go").addEventListener("click", startGame);
   }
 
+  // ---- rychlá hra (2026-10-07) ----
+  // Pásmo rychlé hry = poslední pásmo sóla. Klíč je zvlášť (ne celý stav), ať ho nepřepíše
+  // párty ani škola — ty mají pásmo u hráče, resp. vlastní úroveň.
+  const RYCHLA_KEY = "zk_rychla_pasmo";
+  const RYCHLA_ZEMI = 10, RYCHLA_OTAZEK = 10;
+  function rychlaPasmo(){
+    try { const b = localStorage.getItem(RYCHLA_KEY); if(BAND_NAMES[b]) return b; } catch(e){}
+    return "dospeli";
+  }
+  function ulozRychlePasmo(b){ try { localStorage.setItem(RYCHLA_KEY, b); } catch(e){} }
+  // Stahuje se jen RYCHLA_ZEMI náhodných zemí, ne celý fond (55 souborů, ~5 MB) — jinak by
+  // „rychlá“ hra na mobilních datech čekala déle než ruční výběr jedné země. Každá země
+  // má v každém pásmu aspoň 12 otázek (podlaha fondu), takže deset zemí stačí vždycky.
+  async function rychlaHra(btn){
+    if(btn){ btn.disabled = true; btn.textContent = "Chystám otázky…"; }
+    const ccs = shuffle(Object.keys(COUNTRY_BY_CC).filter(cc => pocetProCc(cc) > 0)).slice(0, RYCHLA_ZEMI);
+    S.pickMode = "solo";
+    S.sel = { conts: [...new Set(ccs.map(cc => COUNTRY_CONT[cc]))], section: "__all__" };
+    await selectCountries(ccs);
+    S.sel.section = "__all__";
+    applyPool();
+    S.band = rychlaPasmo(); S.bandTouched = true;
+    S.qLimit = RYCHLA_OTAZEK; S.qLimitTouched = true;
+    showHomeBtn(true);
+    S.rychlaStart = true;
+    startGame();
+  }
+
   function startGame(){
     S.mode="solo";
+    // Rychlá hra se pozná podle příznaku z rychlaHra(); ruční start ho shodí. „Hrát znovu“
+    // pak u rychlé hry losuje nové země, u ruční výpravy zopakuje tutéž volbu.
+    S.rychla = !!S.rychlaStart; S.rychlaStart = false;
+    ulozRychlePasmo(S.band);
     // Časomíru nabízí JEN párty setup, ale S.timer je globální stav — bez tohohle
     // resetu si hráč odnesl „svižný · 15 s" z párty do sóla i do školy a neměl ho
     // kde vypnout, protože ani jedna z těch obrazovek přepínač nemá. Ve škole navíc
@@ -2014,7 +2066,7 @@
     // udělalo sólo pro dospělé: zahodila se úroveň, „Třída" se přejmenovala na „Ty"
     // a zmizela třída qz-school, takže se uprostřed promítání zmenšil text.
     body.querySelector("#qz-again").addEventListener("click", function () {
-      if (S.school) startSchool(S.schoolLevel); else startGame();
+      if (S.school) startSchool(S.schoolLevel); else if (S.rychla) rychlaHra(this); else startGame();
     });
     body.querySelector("#qz-home").addEventListener("click", close);
   }

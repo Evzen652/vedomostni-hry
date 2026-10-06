@@ -1203,6 +1203,20 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
   kontrola(fs.existsSync(path.join("assets", "og-cestokviz.jpg")),
     "chybí assets/og-cestokviz.jpg");
 }
+// ---------------------------------------------------------------- rychlá hra (2026-10-07)
+// Přání hráče: hrát jedním klepnutím z rozcestníku. Hlídá se, že tlačítko na rozcestníku
+// je, je napojené, stahuje jen pár zemí (ne celý fond) a „Hrát znovu“ po ní losuje znovu.
+{
+  console.log("\nRychlá hra na rozcestníku");
+  const Q = fs.readFileSync(path.join(process.cwd(), "quiz.js"), "utf8").replace(/\r\n/g, "\n");
+  const pick = Q.slice(Q.indexOf("function renderModePick("), Q.indexOf("function beginPick("));
+  kontrola(/id="qz-quick"/.test(pick), "rozcestník nemá tlačítko Rychlá hra (id=\"qz-quick\")");
+  kontrola(/#qz-quick"\)\.addEventListener\("click",[^)]*rychlaHra\(/.test(pick), "tlačítko Rychlá hra není napojené na rychlaHra()");
+  const rh = Q.slice(Q.indexOf("async function rychlaHra("), Q.indexOf("function startGame("));
+  kontrola(/\.slice\(0,\s*RYCHLA_ZEMI\)/.test(rh) && /RYCHLA_ZEMI\s*=\s*\d+/.test(Q),
+    "rychlaHra() nestahuje jen omezený počet zemí — na mobilu by čekala na celý fond");
+  kontrola(/S\.rychla\)\s*rychlaHra\(/.test(Q), "„Hrát znovu“ po rychlé hře nelosuje nové země");
+}
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
 process.exit(chyb ? 1 : 0);

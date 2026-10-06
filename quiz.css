@@ -626,6 +626,19 @@
    na obal a po jeho zmenšení by vyjel nad horní okraj obrazovky. Výsledek: nadpis →
    podtitulek ~10 px, podtitulek → dlaždice 34 px (rytmus jako v lobby). */
 .qz-modesub { margin: -44px 0 16px; max-width: 30em; font-size: 16px; line-height: 1.5; color: var(--muted); }
+/* Rychlá hra (2026-10-07): jedna silná akce mezi podtitulkem a režimy. Tlačítko a popisek
+   pod ním jsou jedna skupina (8 px), k dlaždicím režimů je víc vzduchu (margin-bottom),
+   ať se „Rychlá hra“ nečte jako pátý režim. */
+.qz-quick { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center;
+  gap: 8px; margin: -4px 0 16px; }
+.qz-quickgo { display: inline-flex; align-items: center; gap: 10px; }
+.qz-quicknote { margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted); }
+.qz-quicknote b { color: var(--ink); font-weight: 700; }
+.qz-quickchange { background: none; border: 0; padding: 2px 0; font: inherit; font-weight: 700; color: var(--teal);
+  cursor: pointer; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(42,127,127,.35); }
+.qz-quickchange:hover { text-decoration-color: var(--teal); }
+.qz-quickbands { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.qz-quickbands[hidden] { display: none; }
 
 /* výběr tématu: kontinent → země → sekce */
 .qz-pick { align-items: center; text-align: center; gap: 12px; padding: 70px 22px 20px; }

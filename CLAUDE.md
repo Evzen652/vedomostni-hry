@@ -81,6 +81,21 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-07 — Rychlá hra na rozcestníku: jedno klepnutí = 10 otázek z 10 náhodných zemí,
+  všechna témata.** Přání hráče: *„hned na úvodní straně chybí nějaká rychlá hra, abych
+  nemusel vše proklikávat“*. Tlačítko `#qz-quick` pod podtitulkem, pod ním tichý řádek
+  „10 otázek z celého světa · Dospělí · Změnit“.
+  - **Pásmo si pamatuje poslední sólo** (vybral hráč) — klíč `zk_rychla_pasmo`, zapisuje ho
+    `startGame()` i volba „Změnit“. Poprvé Dospělí.
+  - **Stahuje jen `RYCHLA_ZEMI` = 10 zemí, ne celý fond** (55 souborů, ~5 MB). Naměřeno
+    370 ms do první otázky lokálně. Podlaha fondu (12 otázek na zemi × pásmo) zaručuje,
+    že 10 zemí stačí i dětem.
+  - **Jde přes stejné funkce jako ruční výběr** (`selectCountries` → `applyPool` → `startGame`),
+    takže rozehrané hry, rozbor i ukládání fungují beze změny. „Hrát znovu“ po rychlé hře
+    losuje nové země (`S.rychla`), po ruční výpravě opakuje tutéž volbu.
+  - Rytmus změřený: podtitulek → tlačítko 30 px, tlačítko → popisek 8, popisek → režimy 34.
+  - `test:offline` 937 (+4), ověřeno mutací.
+
 - **2026-10-06 — Správná odpověď už nevyčnívá délkou: 778 otázkám prodlouženy distraktory.
   NASAZENO 2026-10-06** spolu s turnajem pro partu (zápis níž). Na produkci jde jen 721
   z nich, zbylých 57 patří k nenasazené kampani; produkce po nasazení 38,4 %.
