@@ -81,8 +81,34 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-07 — Rychlá hra na rozcestníku: jedno klepnutí = 10 otázek z 10 náhodných zemí,
+  všechna témata.** Přání hráče: *„hned na úvodní straně chybí nějaká rychlá hra, abych
+  nemusel vše proklikávat“*. Tlačítko `#qz-quick` pod podtitulkem, pod ním tichý řádek
+  „10 otázek z celého světa · Dospělí · Změnit“.
+  - **Pásmo si pamatuje poslední sólo** (vybral hráč) — klíč `zk_rychla_pasmo`, zapisuje ho
+    `startGame()` i volba „Změnit“. Poprvé Dospělí.
+  - **Stahuje jen `RYCHLA_ZEMI` = 10 zemí, ne celý fond** (55 souborů, ~5 MB). Naměřeno
+    370 ms do první otázky lokálně. Podlaha fondu (12 otázek na zemi × pásmo) zaručuje,
+    že 10 zemí stačí i dětem.
+  - **Jde přes stejné funkce jako ruční výběr** (`selectCountries` → `applyPool` → `startGame`),
+    takže rozehrané hry, rozbor i ukládání fungují beze změny. „Hrát znovu“ po rychlé hře
+    losuje nové země (`S.rychla`), po ruční výpravě opakuje tutéž volbu.
+  - Rytmus změřený: podtitulek → tlačítko 30 px, tlačítko → popisek 8, popisek → režimy 34.
+  - `test:offline` 937 (+4), ověřeno mutací.
+
 - **2026-10-06 — Správná odpověď už nevyčnívá délkou: 778 otázkám prodlouženy distraktory.
-  NECOMMITNUTO / NENASAZENO.** Hráč: *„ta nejdelší odpověď je v 99 % případů správně“*.
+  NASAZENO 2026-10-06** spolu s turnajem pro partu (zápis níž). Na produkci jde jen 721
+  z nich, zbylých 57 patří k nenasazené kampani; produkce po nasazení 38,4 %.
+  > **DRUHÉ KOLO TÝŽ DEN (hráč: „pusť druhé kolo s hranicí 1,3“): dalších 679 otázek,
+  > nasazeno (`master` `f0ed856`, nasazení `d00d6de2`, na web 570 z nich). Nejdelší
+  > možnost je teď správná u 24,0 % fondu a 24,2 % produkce — tedy na úrovni náhody.**
+  > Hráčův příklad (Moharraková) opravený je. Cestou opravena i SPRÁVNÁ odpověď u
+  > `cz-q-bobr-navrat` („Většinou se sám rozšířil…“ — v Litovelském Pomoraví ho vysadili)
+  > a další pravdivé distraktory (Krpálek, Krýzův betlém, Janáček, Roland Garros…).
+  > **Hranice 1,3 je konečná:** níž by šlo už o odpovědi delší o pár znaků, kde se délka
+  > nedá „přečíst“, a hrozil by opačný vzorec. Nový obsah ať se píše rovnou podle `ZADANI.md`
+  > (aspoň jeden distraktor stejně dlouhý jako odpověď).
+  Hráč: *„ta nejdelší odpověď je v 99 % případů správně“*.
   Změřeno: nejdelší byla správná u **54,9 %** fondu (starý fond 56 %, dospělí 61 %),
   náhoda je 25 %. Hráč zvolil opravit jen nejkřiklavější: otázky, kde je odpověď víc
   než **1,5×** delší než nejdelší distraktor. Po opravě **34,9 %** (děti 26,7 %, dospělí
@@ -106,7 +132,11 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     `db:sync --remote`** (distraktory jsou v D1) a týká se to i veřejných otázek z `master`.
 
 - **2026-10-05 — TURNAJ PRO PARTU: kamarádi z odkazu, stejné otázky online, i BEZ PROFILU
-  (host). Plus nový vzhled lobby. Postaveno a ověřeno lokálně, NECOMMITNUTO / NENASAZENO.**
+  (host). Plus nový vzhled lobby. NASAZENO 2026-10-06: `master` = `69ecd11`, nasazení
+  `55cdbf0b`, migrace `2026-10-05-parta.sql` na produkci proběhla (stav před i po: 3 lidé,
+  18 botů, 2 hry, 21 ratingů, 4 012 otázek). Ověřeno na `cestokviz.cz` obsahem souborů,
+  API a neexistující pozvánkou. NEOVĚŘENO v produkci: založení turnaje a hra hosta
+  (vytvořilo by ostrá data) — lokálně to kryje `test:parta` a průchod v prohlížeči.**
   Přání hráče: „parta lidí si udělá svůj turnaj… nebudou hrát u jednoho tabletu, ale online.
   Ani nemusejí být přihlášení. Pošle jim mail nebo zprávu.“ Hráč zvolil: stejná sada otázek,
   každý hraje kdy chce v okně od–do; pozvaný jen napíše jméno; pozvánka bez kopírování.
