@@ -82,7 +82,11 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
 - **2026-10-06 — Správná odpověď už nevyčnívá délkou: 778 otázkám prodlouženy distraktory.
-  NECOMMITNUTO / NENASAZENO.** Hráč: *„ta nejdelší odpověď je v 99 % případů správně“*.
+  NASAZENO 2026-10-06** spolu s turnajem pro partu (zápis níž). Na produkci jde jen 721
+  z nich, zbylých 57 patří k nenasazené kampani; produkce po nasazení 38,4 %.
+  **Hráčův vlastní příklad (`sa-q-raha-moharrak`) opravený NENÍ** — odpověď je tam 1,3×
+  delší, tedy pod zvolenou hranicí 1,5. Druhé kolo s hranicí 1,3 by vzalo ~680 dalších.
+  Hráč: *„ta nejdelší odpověď je v 99 % případů správně“*.
   Změřeno: nejdelší byla správná u **54,9 %** fondu (starý fond 56 %, dospělí 61 %),
   náhoda je 25 %. Hráč zvolil opravit jen nejkřiklavější: otázky, kde je odpověď víc
   než **1,5×** delší než nejdelší distraktor. Po opravě **34,9 %** (děti 26,7 %, dospělí
@@ -106,7 +110,11 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     `db:sync --remote`** (distraktory jsou v D1) a týká se to i veřejných otázek z `master`.
 
 - **2026-10-05 — TURNAJ PRO PARTU: kamarádi z odkazu, stejné otázky online, i BEZ PROFILU
-  (host). Plus nový vzhled lobby. Postaveno a ověřeno lokálně, NECOMMITNUTO / NENASAZENO.**
+  (host). Plus nový vzhled lobby. NASAZENO 2026-10-06: `master` = `69ecd11`, nasazení
+  `55cdbf0b`, migrace `2026-10-05-parta.sql` na produkci proběhla (stav před i po: 3 lidé,
+  18 botů, 2 hry, 21 ratingů, 4 012 otázek). Ověřeno na `cestokviz.cz` obsahem souborů,
+  API a neexistující pozvánkou. NEOVĚŘENO v produkci: založení turnaje a hra hosta
+  (vytvořilo by ostrá data) — lokálně to kryje `test:parta` a průchod v prohlížeči.**
   Přání hráče: „parta lidí si udělá svůj turnaj… nebudou hrát u jednoho tabletu, ale online.
   Ani nemusejí být přihlášení. Pošle jim mail nebo zprávu.“ Hráč zvolil: stejná sada otázek,
   každý hraje kdy chce v okně od–do; pozvaný jen napíše jméno; pozvánka bez kopírování.
