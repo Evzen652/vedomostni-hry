@@ -101,9 +101,9 @@
   "question": "Odkud byl slyšet výbuch sopky Krakatoa v roce 1883?",
   "answer": "Až na ostrově Rodrigues, 4800 kilometrů daleko",
   "distractors": [
-   "Jen v okruhu 50 kilometrů od sopky",
-   "Nebyl slyšet vůbec, jen viděn",
-   "Jen v sousední Malajsii"
+   "Jen v okruhu 50 kilometrů od sopky na Jávě",
+   "Až na Havajských ostrovech, 11 000 kilometrů daleko",
+   "Jen na Sumatře a Jávě, nikde dál v Indonésii"
   ],
   "quip_correct": "Přesná trefa, žádná náhoda. 4800 kilometrů — lidé na Rodriguesu slyšeli hřmění a nevěděli odkud. Nebylo jak to zjistit; internet měl přijít o dalších 120 let.",
   "quip_wrong": "Sebevědomé, a liché. Ten výbuch se nesl mnohem dál, než sis představoval.",
@@ -124,9 +124,9 @@
   "question": "Co znamená ohrožení orangutanů na Borneu a Sumatře především?",
   "answer": "Ve volné přírodě jich zbývá dohromady méně než 120 000",
   "distractors": [
-   "Žijí jich tam miliony bez ohrožení",
-   "Jsou už zcela vyhynulí ve volné přírodě",
-   "Počty rostou díky plantážím palmy olejné"
+   "Ve volné přírodě jich žijí miliony a ohrožení vůbec nejsou",
+   "Ve volné přírodě už úplně vyhynuli, žijí jen v zoo",
+   "Jejich počty rychle rostou díky plantážím palmy olejné"
   ],
   "quip_correct": "Máš to — přesně, i když to není radostná přesnost. Méně než 120 000 ve volné přírodě — a počet padá s každým dalším vykapaným hektarem palmové plantáže.",
   "quip_wrong": "Skvělý příběh, škoda že vymyšlený. Realita orangutanů je mnohem chmurnější.",
@@ -170,9 +170,9 @@
   "question": "Co udělala Raden Ajeng Kartini v roce 1903?",
   "answer": "Otevřela první školu pro domorodé indonéské dívky",
   "distractors": [
-   "Stala se první ministryní Indonésie",
-   "Napsala první indonéskou ústavu",
-   "Vedla vojenské povstání"
+   "Stala se první ministryní nezávislé Indonésie",
+   "Napsala první ústavu pro budoucí nezávislou Indonésii",
+   "Vedla na Jávě vojenské povstání proti Nizozemcům"
   ],
   "quip_correct": "Škola na otcově pozemku jen pro dívky — v roce 1903 to byl na Jávě odvážnější čin než leckterá bitva.",
   "quip_wrong": "Trefa vedle mísy. Kartini se zapsala do historie úplně jiným činem.",
@@ -561,9 +561,9 @@
   "question": "Co ovládla nizozemská Východoindická společnost VOC na ostrovech Banda?",
   "answer": "Úplný monopol na muškátový oříšek",
   "distractors": [
-   "Monopol na výrobu hedvábí",
-   "Monopol na těžbu zlata",
-   "Monopol na kávu"
+   "Úplný monopol na výrobu hedvábí",
+   "Úplný monopol na těžbu zlata",
+   "Úplný monopol na pěstování čajovníku"
   ],
   "quip_correct": "Bod pro tebe, tentokrát zcela po zásluze. Kdo ovládl pár sopečných ostrůvků, ovládl cenu koření na celém světovém trhu. Geopolitika jako kulinářský thriller.",
   "quip_wrong": "Elegantní omyl. VOC na ostrovech Banda ovládla úplně jiné koření.",
@@ -607,9 +607,9 @@
   "question": "Jaká území ovládala jávská říše Majapahit na vrcholu své moci?",
   "answer": "Od dnešní Malajsie přes Sumatru a Borneo až po Bali",
   "distractors": [
-   "Jen ostrov Jáva a nic víc",
-   "Celou pevninskou jihovýchodní Asii",
-   "Jen okolí dnešní Jakarty"
+   "Jen ostrov Jáva a pár malých ostrůvků kolem něj",
+   "Celou pevninskou jihovýchodní Asii až po dnešní Čínu",
+   "Jen okolí dnešní Jakarty a západní část Jávy"
   ],
   "quip_correct": "Trefa. Říše, která ovládala půl souostroví, a dnes ji připomínají hlavně názvy ulic.",
   "quip_wrong": "Věrohodně znělo, věrohodně selhalo. Majapahit ovládal úplně jiné území, než sis myslel.",
@@ -898,9 +898,9 @@
   "question": "Jak se na indonéskou látku batik dostane vzor, ještě než se látka obarví?",
   "answer": "Nakreslí se horkým voskem",
   "distractors": [
-   "Vyšije se nití",
-   "Nalepí se papírem",
-   "Vypálí se žehličkou"
+   "Vyšije se barevnou nití",
+   "Nalepí se tenkým papírem",
+   "Vypálí se horkou žehličkou"
   ],
   "quip_correct": "Bystrá hlava! Kreslí se voskem, který na sebe barvu prostě nepustí.",
   "quip_wrong": "Nit ani papír by v barvicí lázni nevydržely. Tajemství je v tom, že vosk barvu odpuzuje.",
@@ -1206,9 +1206,9 @@
   "question": "Z čeho se dříve vyráběl míč na sepak takraw, indonéskou nožní odbíjenou?",
   "answer": "Z pletené ratanové třtiny",
   "distractors": [
-   "Z nafukovací gumy",
-   "Z tvrdé kůže",
-   "Z lehkého korku"
+   "Z nafukovací gumové duše",
+   "Z tvrdé sešívané buvolí kůže",
+   "Z lehkého lisovaného korku"
   ],
   "quip_correct": "Ano, ratan se plete do kuličky jako košík — a pak se do ní kope.",
   "quip_wrong": "Takový materiál by na hřišti dlouho nevydržel. Původní míč se pletl z rostlinných vláken.",
@@ -1823,7 +1823,7 @@
   "distractors": [
    "Batakové",
    "Dajakové",
-   "Bugisové"
+   "Makassarové"
   ],
   "quip_correct": "Přesně, Minangkabau — rod, dům i pole patří ženám, muži se spíš přiženují.",
   "quip_wrong": "Tohle etnikum dědí jinak. To, co dědí majetek po matce, ne po otci, se jmenuje jinak.",
@@ -1884,9 +1884,9 @@
   "question": "Jak se jmenuje sulaweské endemické prase se zahnutými kly, které mu prorůstají nahoru skrz čenich a vytáčejí se až nad hlavu?",
   "answer": "Babirusa",
   "distractors": [
-   "Anoa",
-   "Kuskus",
-   "Varan"
+   "Pekari",
+   "Štětkoun",
+   "Kapibara"
   ],
   "quip_correct": "Přesně, babirusa — kel, co roste tak dlouho, že si nakonec musí najít cestu skrz vlastní obličej.",
   "quip_wrong": "Tohle zvíře má kly jinak. Ten sulaweský prasovitý zvláštník s kly prorůstajícími čenichem se jmenuje jinak.",

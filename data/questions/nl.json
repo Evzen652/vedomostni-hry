@@ -262,9 +262,9 @@
   "question": "Kdy se smí odstartovat bruslařský závod Elfstedentocht?",
   "answer": "Jen když je led po celé trase silný alespoň 15 centimetrů",
   "distractors": [
-   "Vždy přesně 1. ledna, bez ohledu na počasí",
-   "Jen když sněží, aby byl led vidět",
-   "Kdykoli o víkendu v zimních měsících"
+   "Vždy přesně 1. ledna, bez ohledu na počasí a stav ledu",
+   "Jen když sněží, aby byla trasa na ledě dobře vidět",
+   "Kdykoli o víkendu, pokud teplota klesne pod nulu aspoň na den"
   ],
   "quip_correct": "O síle ledu tu nerozhoduje kalendář, jen teploměr a trpělivost celého národa.",
   "quip_wrong": "Kreativní tip, ale ne tenhle — o startu nerozhoduje víkend ani sníh, jedině teploměr a silný led.",
@@ -423,9 +423,9 @@
   "question": "Z jakého nizozemského slova pochází anglické boss?",
   "answer": "Z baas, což znamenalo mistr nebo vedoucí",
   "distractors": [
-   "Z boot, což znamenalo loď",
-   "Z brood, což znamenalo chléb",
-   "Z boom, což znamenalo strom"
+   "Z boot, což znamenalo loď nebo člun",
+   "Z broeder, což znamenalo bratr nebo druh",
+   "Z bos, což znamenalo les nebo houští"
   ],
   "quip_correct": "Ani stopa náhody, jen přesná znalost. Slovo, které dnes křičí šéfové po celém světě, si Amerika vypůjčila od nizozemských námořníků.",
   "quip_wrong": "Loď, chleba, strom — anglické boss si nevypůjčilo od žádného z nich.",
@@ -607,9 +607,9 @@
   "question": "Jaký byl cíl spojenecké operace Market Garden v roce 1944?",
   "answer": "Získat mosty přes nizozemské řeky až po Arnhem a otevřít cestu do Německa",
   "distractors": [
-   "Osvobodit Amsterodam výsadkem ze vzduchu",
-   "Zničit nizozemské přístavy dřív, než je obsadí Němci",
-   "Evakuovat civilisty z jihu země do Británie"
+   "Osvobodit Amsterodam rozsáhlým výsadkem ze vzduchu ještě před Vánoci",
+   "Zničit nizozemské přístavy dřív, než je stihnou využít německá vojska",
+   "Evakuovat civilisty z jihu země přes Severní moře do bezpečí ve Velké Británii"
   ],
   "quip_correct": "Zaslouženě bod, ne díky štěstí. Plán počítal s bleskovým průlomem — realita mu dala jen zpoždění a ztráty.",
   "quip_wrong": "Osvobodit Amsterodam ze vzduchu nebylo cílem — spojenci mířili na mosty až k Arnhemu.",
@@ -737,9 +737,9 @@
   "question": "Nizozemci milují syrovou rybu zvanou maatjes haring. S čím se tradičně posype, než ji chytneš za ocas a celou spustíš do pusy?",
   "answer": "S jemně nakrájenou cibulí",
   "distractors": [
-   "Se šlehačkou",
-   "S jahodovým džemem",
-   "S mletou skořicí"
+   "Se sladkou šlehačkou",
+   "S lžičkou jahodového džemu",
+   "S mletou skořicí a cukrem"
   ],
   "quip_correct": "Jupí, správně! Bez cibule by ten slaneček vypadal, jako by zapomněl doplněk ke svému nejlepšímu kostýmu.",
   "quip_wrong": "Tentokrát to nevyšlo — šlehačka ani džem k rybě nepatří, sledě si žádají mnohem ostřejší doprovod, čerstvě nakrájenou cibuli.",
@@ -759,7 +759,7 @@
   "question": "Dříve bývaly mrkve fialové, žluté nebo bílé. Nizozemští pěstitelé v 17. století vyšlechtili mrkev v barvě svého královského rodu. Jaká barva mrkve díky nim vládne světu?",
   "answer": "Oranžová",
   "distractors": [
-   "Modrá",
+   "Tyrkysová",
    "Zelená",
    "Růžová"
   ],
@@ -931,9 +931,9 @@
   "question": "Hlavním městem Nizozemska je ústavně Amsterodam. Kde ale sídlí vláda, parlament i samotný král?",
   "answer": "V Hagu (Den Haag)",
   "distractors": [
-   "V Utrechtu",
-   "V Rotterdamu",
-   "V Eindhovenu"
+   "V Utrechtu (Utrecht)",
+   "V Leidenu (Leiden)",
+   "V Delftu (Delft)"
   ],
   "quip_correct": "Amsterodam má párty a turisty, Haag má kravaty a paragrafy.",
   "quip_wrong": "Rotterdam staví mrakodrapy, Utrecht má věž — vláda a král ale sídlí jinde, v Haagu.",
@@ -994,9 +994,9 @@
   "question": "Zatímco většina nizozemských měst sází na historické domky u kanálů, Rotterdam je plný moderní architektury a mrakodrapů. Co bylo hlavní příčinou?",
   "answer": "Centrum města bylo za druhé světové války téměř zničeno bombardováním",
   "distractors": [
-   "Staré domy zničila epidemie dřevokazného hmyzu",
-   "Obyvatelé se rozhodli zbourat minulost v hlasování",
-   "Město smetla obrovská povodeň v roce 1953"
+   "Staré domy v centru zničila epidemie dřevokazného hmyzu v 19. století",
+   "Obyvatelé se v hlasování rozhodli zbourat starou zástavbu u kanálů",
+   "Historické centrum města smetla obrovská povodeň v zimě roku 1953"
   ],
   "quip_correct": "Bod si zasloužíš, a to poctivě. Z tragédie vyrostla architektura budoucnosti — žluté krychlové domy jsou toho důkazem.",
   "quip_wrong": "Žádný hmyz, žádné referendum — za moderní tvář Rotterdamu může bombardování za druhé světové.",
@@ -1162,9 +1162,9 @@
   "question": "Historické domy v Amsterodamu se často naklánějí dopředu nebo do stran. Není to estetický záměr. Co způsobuje pohyb stavení?",
   "answer": "Dřevěné kůly v bahnitém podloží časem hnijí — dům se pak nakloní",
   "distractors": [
-   "Lehká zemětřesení z těžby zemního plynu",
-   "Silné západní vichřice z Severního moře",
-   "Hmotnost masivních zvedacích háků na střechách"
+   "Lehká zemětřesení způsobená těžbou zemního plynu na severu země",
+   "Silné západní vichřice ze Severního moře, které domy postupně ohýbají",
+   "Hmotnost masivních zvedacích háků a kladek na střechách domů"
   ],
   "quip_correct": "Město doslova stojí na tisících smrkových kůlů zatlučených do bláta pod hladinou.",
   "quip_wrong": "Vichřice ani zvedací háky za to nemohou — domy se naklánějí, protože dřevěné kůly pod nimi časem prohnijí.",
@@ -1183,9 +1183,9 @@
   "question": "V roce 1960 navrhl Alfred Heineken speciální hranatou pivní láhev nazvanou WOBO. K čemu měla po vypití piva sloužit?",
   "answer": "Jako stavební cihla pro chudinské domy v rozvojových zemích",
   "distractors": [
-   "Jako plovák do záchranných vest",
-   "Jako hudební nástroj pro pouliční muzikanty",
-   "Jako chladicí prvek do domácích ledniček"
+   "Jako plovák do záchranných vest pro rybáře v Severním moři",
+   "Jako hudební nástroj pro pouliční muzikanty v Amsterodamu",
+   "Jako chladicí prvek do domácích ledniček bez elektrického proudu"
   ],
   "quip_correct": "Bez okolků — máš pravdu. Vypij pivo, postav dům. Heineken o třicet let předběhl recyklaci — ale dodavatelé nestíhali.",
   "quip_wrong": "Žádný hudební nástroj ani chladicí prvek — Heineken chtěl z prázdné láhve rovnou postavit dům.",
@@ -1293,9 +1293,9 @@
   "question": "Podle výzkumů jsou lidé které národnosti v průměru nejvyšší na světě?",
   "answer": "Nizozemské",
   "distractors": [
-   "Švédské",
-   "Německé",
-   "Dánské"
+   "Australské",
+   "Islandské",
+   "Kanadské"
   ],
   "quip_correct": "Bystře vytipováno — ve dveřích vlaku se přikrčí i vysoký cizinec, Nizozemci vedou žebříček výšky bez konkurence.",
   "quip_wrong": "Blízko severu, ale vedle — v žebříčku výšky vedou právě Nizozemci.",
@@ -1337,9 +1337,9 @@
   "question": "Kdy se nizozemský král oficiálně omluvil za roli Nizozemska v transatlantickém obchodu s otroky?",
   "answer": "Až v roce 2023 — přesně 150 let po skutečném konci nucené práce v koloniích",
   "distractors": [
-   "V roce 1863, hned po přijetí zákona o zrušení otroctví",
-   "Nikdy se oficiálně neomluvil, jen soukromě litoval",
-   "V roce 1945, hned po druhé světové válce"
+   "Už v roce 1863 — hned po přijetí zákona o zrušení otroctví v koloniích",
+   "Nikdy se oficiálně neomluvil, lítost vyjádřil jen v soukromém dopise",
+   "Až v roce 1975 — přesně při vyhlášení nezávislosti své bývalé kolonie Surinamu"
   ],
   "quip_correct": "Suverénní trefa. Zlaté věky amsterodamských kupeckých paláců stavěly peníze z otroctví. Omluva na sebe nechala čekat rovných sto padesát let.",
   "quip_wrong": "Ani hned po zrušení zákonem, ani po válce — na formální omluvu čekalo Nizozemsko až do roku 2023.",
