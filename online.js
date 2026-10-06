@@ -1611,7 +1611,9 @@ window.ZKOnline = (function () {
         say("Tenhle turnaj tu není.");
         body.innerHTML = '<div class="qz-screen qz-end zk-wrap">' + backBar("Zpět", opustPartu) +
           "<h2>Turnaj nenalezen</h2>" +
-          errBox((r.body && r.body.error) || "Turnaj se nenačetl.") +
+          // U 404 hláška serveru („turnaj nenalezen“) jen opakuje nadpis — ukáže se
+          // jen u jiné chyby (výpadek sítě, chyba serveru), kde nese novou informaci.
+          (r.status === 404 ? "" : errBox((r.body && r.body.error) || "Turnaj se nenačetl.")) +
           '<div class="qz-setnote">Možná už skončil a smazal se, nebo je odkaz neúplný.</div></div>';
         return;
       }

@@ -377,9 +377,9 @@
   "question": "Co umožnilo rakousko-uherské vyrovnání z roku 1867?",
   "answer": "Vznik dvou formálně samostatných částí monarchie se společným panovníkem",
   "distractors": [
-   "Úplné sjednocení Rakouska a Uher do jednoho státu",
-   "Rozpad monarchie na čtyři samostatné státy",
-   "Zrušení habsburské dynastie"
+   "Úplné sjednocení Rakouska a Uher do jednoho státu s jedinou vládou",
+   "Rozpad monarchie na čtyři samostatné státy bez společného panovníka",
+   "Zrušení habsburské dynastie a vznik dvou republik se společnou armádou a měnou"
   ],
   "quip_correct": "Dvě vlády, jeden panovník, jedna adresa – na papíře rovnocenné, v praxi věčný spor o to, čí hlavní město je hlavnější.",
   "quip_wrong": "Ne tentokrát — vyrovnání šlo jinou cestou než úplné sjednocení nebo rozpad.",
@@ -400,9 +400,9 @@
   "question": "Kde konkrétně překročila německá vojska hranice při anšlusu roku 1938?",
   "answer": "V Braunau am Inn, rodném městě Adolfa Hitlera",
   "distractors": [
-   "Ve Vídni, přímo v hlavním městě",
-   "V Salcburku",
-   "V Innsbrucku"
+   "Ve Vídni, přímo v hlavním městě Rakouska",
+   "V Innsbrucku, hlavním městě spolkové země Tyrolsko",
+   "V Grazu, druhém největším městě Rakouska"
   ],
   "quip_correct": "Trefeno bez okolků, přesně podle faktů — vstoupili přes Braunau am Inn, rodné město jejich vůdce. Symbolika, která se nenaplánuje.",
   "quip_wrong": "Tentokrát mimo — symbolika vstupu mířila přesně jinam, než tipuješ.",
@@ -801,9 +801,9 @@
   "question": "Vídeňské kavárny jsou na seznamu UNESCO. Co je na nich zvláštního oproti běžné kavárně?",
   "answer": "Hosté mohou sedět celé hodiny u jedné kávy bez tlaku číšníka",
   "distractors": [
-   "Podávají výhradně tureckou kávu bez cukru",
-   "Jsou otevřené jen ráno, odpoledne se zavírají",
-   "Vstup je zdarma, platí se jen za jídlo"
+   "Podávají výhradně tureckou kávu bez cukru a bez mléka",
+   "Jsou otevřené jen ráno, odpoledne se kvůli siestě zavírají",
+   "Vstup je zdarma, platí se jen za jídlo, nikoli za samotnou kávu"
   ],
   "quip_correct": "No jasně, kdo jiný by to tipnul — vídeňská kavárna: objednáš jednu kávu, přineseš si noviny, sedíš tři hodiny, a číšník tě nevyhazuje.",
   "quip_wrong": "Tvoje logika se tentokrát vydala jinam — vídeňská kavárna funguje jinak.",
@@ -906,9 +906,9 @@
   "question": "Sigmund Freud uprchl z Vídně v roce 1938 do Londýna. Co bylo paradoxní na jeho situaci při odjezdu?",
   "answer": "Gestapo ho propustilo, protože byl světově slavný — útěk mu zaplatila princezna Marie Bonaparte",
   "distractors": [
-   "Odmítl emigrovat, dokud nezískal povolení pro celou svoji knihovnu",
-   "Odjel jako poslední ze své rodiny, protože nevěřil, že je v ohrožení",
-   "Byl propuštěn výměnou za to, že veřejně poděkoval nacistickému režimu"
+   "Odmítl emigrovat, dokud mu úřady nepovolily odvézt celou knihovnu — trvalo to celé dva roky",
+   "Odjel tajně v převleku za katolického kněze, protože mu gestapo vycestování z Rakouska výslovně zakázalo",
+   "Byl propuštěn až poté, co přepsal všechny své knihy do podoby schválené nacistickým režimem"
   ],
   "quip_correct": "Trefeno — někdo si dělal domácí úkoly pořádně. Světová sláva jako záchranná vesta: Gestapo ho propustilo, protože si ho nemohlo dovolit uvěznit. Čtyři sestry zůstaly a zahynuly.",
   "quip_wrong": "Odvážná teorie, bohužel nesprávná — Freudův útěk měl úplně jiný scénář.",
@@ -927,9 +927,9 @@
   "question": "Ötzi, ledovcová mumie nalezená roku 1991 na rakousko-italské hranici, odhalila šokující detail. Co zjistili vědci?",
   "answer": "Byl zavražděn — šíp v zádech mu proťal tepnu; nejde o nehodu ani oběť počasí",
   "distractors": [
-   "Zemřel vyčerpáním při přechodu hor v zimní bouři",
-   "Zahynul při pádu do ledové trhliny, kde zamrzl",
-   "Byl rituálně obětován — na těle jsou stopy ceremonií"
+   "Zemřel vyčerpáním a podchlazením při přechodu hor v náhlé zimní sněhové bouři",
+   "Zahynul při pádu do hluboké ledové trhliny, kde ho led na tisíce let uzavřel",
+   "Byl rituálně obětován — na těle jsou stopy ceremonií a v žaludku omamné byliny"
   ],
   "quip_correct": "Šíp zezadu, přetnutá tepna, krátce po jídle – nejstarší nevyřešená vražda v Evropě čeká na pachatele už pět tisíc let.",
   "quip_wrong": "Trefa vedle mísy — Ötziho smrt byla mnohem násilnější, než tipuješ.",
@@ -1138,9 +1138,9 @@
   "question": "Ve vídeňském parku Prater stojí přes sto let obrovské kolo, na které lidé nastupují do kabinek a vyhlídkově se svezou vysoko nad město. Jak se takové atrakci říká?",
   "answer": "Vyhlídkové (ruské) kolo",
   "distractors": [
-   "Horská dráha",
-   "Kolotoč s koníky",
-   "Skluzavka do vody"
+   "Horská dráha s vozíky",
+   "Kolotoč s dřevěnými koníky",
+   "Skluzavka do bazénu s vodou"
   ],
   "quip_correct": "Bystrá hlava! To kolo se točí od roku 1897 a pořád vozí lidi na stejný výhled jako jejich pradědečky.",
   "quip_wrong": "Blízko, ale ne — horská dráha ani skluzavka to nejsou, v Prateru se točí obrovské vyhlídkové kolo vysoko nad městem.",
@@ -1429,9 +1429,9 @@
   "question": "Podle staré pověsti dostala rakouská červeno-bílo-červená vlajka barvy od pláště jednoho vévody. Jak se to prý stalo?",
   "answer": "Plášť měl od krve z bitvy celý červený, jen pod opaskem zůstal bílý pruh",
   "distractors": [
-   "Vévoda si vlajku namaloval podle barev západu slunce",
-   "Barvy vylosovali šlechtici na hostině",
-   "Vlajku ušili z kusů dvou sousedních praporů"
+   "Vévoda si vlajku nechal namalovat podle barev západu slunce nad Dunajem",
+   "Barvy vylosovali šlechtici na hostině, každý z nich tahal jednu stuhu",
+   "Vlajku ušili z kusů dvou sousedních praporů, které vévoda ukořistil v bitvě"
   ],
   "quip_correct": "Legenda spojila krev z bitvy s čistotou pod páskem – drsný začátek pro barvy, co skončily i na dresech fotbalistů.",
   "quip_wrong": "Žádné losování ani malování západu slunce — pověst je o dost krvavější, doslova.",

@@ -32,9 +32,9 @@
   "question": "Jaká rostlinka s trojlístkem je oblíbeným symbolem Irska?",
   "answer": "Jetel (trojlístek, „shamrock“)",
   "distractors": [
-   "Čtyřlístek (pro štěstí)",
-   "Kopřiva (pálivá bylina)",
-   "Vřes (fialový keřík)"
+   "Čtyřlístek (lístek pro štěstí)",
+   "Kopřiva (pálivá zelená bylina)",
+   "Vřes (fialový keřík na kopcích)"
   ],
   "quip_correct": "Trefa — jetel! Irové nosí trojlístek na klopě, žádný čtyřlístek schovaný v kapse pro štěstí.",
   "quip_wrong": "Čtyřlístek si nech na štěstí jindy. Irský symbol má lístky jen tři a roste všude po trávnících.",
@@ -252,9 +252,9 @@
   "question": "Jaký je podle irské ústavy první úřední jazyk Irska — a v čem je to paradox?",
   "answer": "Irština, kterou přitom denně mluví jen malá menšina obyvatel",
   "distractors": [
-   "Angličtina, což nikoho nepřekvapuje",
-   "Latina, kterou dnes nemluví skoro nikdo",
-   "Skotská gaelština, jazyk sousedního ostrova"
+   "Angličtina, kterou přitom úřady nikde v Irsku nepoužívají",
+   "Latina, kterou dnes v Irsku nemluví vůbec skoro nikdo",
+   "Skotská gaelština, kterou se přitom mluví jen na sousedním ostrově"
   ],
   "quip_correct": "Sedí to do puntíku. Na papíře úřední jazyk číslo jedna. V obchodě, hospodě i na ulici ho ale uslyšíš málokdy — tam vládne angličtina.",
   "quip_wrong": "Angličtina by možná sedla k realitě ulice, ale ústava dává přednost jinému jazyku; latina ani skotská gaelština v ní nefigurují vůbec — první úřední jazyk je jazyk samotných Irů, i když ho denně mluví jen menšina.",
@@ -296,9 +296,9 @@
   "question": "Která stará irská stavba z kamene je starší než egyptské pyramidy?",
   "answer": "Pohřební mohyla Newgrange",
   "distractors": [
-   "Hrad Blarney",
-   "Katedrála v Dublinu",
-   "Věž v Corku"
+   "Kamenný hrad Blarney Castle",
+   "Katedrála svatého Patrika",
+   "Kruhová věž v Glendalough"
   ],
   "quip_correct": "Než Egypťané položili první kámen pyramidy, tahle mohyla už stála stovky let.",
   "quip_wrong": "Hrad, katedrála i věž jsou v Irsku mladí nováčci — hledáš mnohem staršího pamětníka, co pamatuje dobu před pyramidami.",
@@ -428,9 +428,9 @@
   "question": "Co je na irském národním rugbyovém týmu neobvyklé ve srovnání s většinou ostatních sportů?",
   "answer": "Reprezentuje dohromady celý ostrov, včetně Severního Irska",
   "distractors": [
-   "Smí nastoupit jen hráči narození v Dublinu",
-   "Hraje se v něm bez rozhodčího",
-   "Střídá trenéra po každém jednotlivém zápase"
+   "Smí za něj nastoupit jen hráči narození přímo v Dublinu",
+   "Hraje se v něm úplně bez rozhodčího, spory řeší oba kapitáni",
+   "Střídá hlavního trenéra po každém jednotlivém zápase"
   ],
   "quip_correct": "Na hřišti spolu hrají hráči ze dvou různých států pod jednou vlajkovou kombinací.",
   "quip_wrong": "Rodiště v Dublinu, hra bez rozhodčího ani střídání trenéra s tím nemají nic společného — zvláštnost týmu je v tom, koho všechno smí zvát pod jeden dres.",
@@ -516,9 +516,9 @@
   "question": "Co označuje termín „keltský tygr“ v souvislosti s irskou ekonomikou?",
   "answer": "Prudký hospodářský růst Irska v 90. a na počátku 2000. let",
   "distractors": [
-   "Vzácný živočišný druh chráněný jen v Irsku",
-   "Irský název pro keltské bojové umění",
-   "Přezdívku irské fotbalové reprezentace"
+   "Vzácnou divokou kočku, chráněnou jen v irských lesích",
+   "Irský název pro staré keltské bojové umění s meči",
+   "Přezdívku úspěšné irské fotbalové reprezentace z let 1990–2002"
   ],
   "quip_correct": "Země, co dřív vyvážela hlavně vlastní lidi, najednou začala vyvážet software a farmaceutika — a ekonomika vystřelila jako tygr.",
   "quip_wrong": "Žádné zvíře v rezervaci, bojové umění ani fotbalová přezdívka za tím není — jde o hospodářský slovník, ne o zoologii nebo sport.",
@@ -538,9 +538,9 @@
   "question": "Jak se jmenuje dohoda z roku 1998, která ukončila desetiletí trvající násilný konflikt v Severním Irsku?",
   "answer": "Velkopáteční dohoda (Good Friday Agreement)",
   "distractors": [
-   "Dublinský pakt (Dublin Pact)",
-   "Belfastský mír z roku 1922",
-   "Smlouva z Corku (Treaty of Cork)"
+   "Dublinská dohoda (Dublin Peace Accord)",
+   "Belfastský mír z roku 1922 (Ulster Peace Treaty)",
+   "Smlouva z Corku (Cork Settlement Treaty)"
   ],
   "quip_correct": "Podepsaná na Velký pátek, a od té doby drží mír, který ještě pár let předtím vypadal nedosažitelně.",
   "quip_wrong": "Dublinský pakt, Belfastský mír 1922 ani smlouva z Corku v učebnicích nefigurují — hledáš dohodu pojmenovanou podle křesťanského svátku, na který ji podepsali.",
@@ -736,9 +736,9 @@
   "question": "Ve které kanadské provincii je irský vliv na místní přízvuk tak silný, že tamní angličtina zní cizincům skoro irsky?",
   "answer": "Newfoundland a Labrador",
   "distractors": [
-   "Ontario",
    "Britská Kolumbie",
-   "Québec"
+   "Severozápadní teritoria",
+   "Saskatchewan"
   ],
   "quip_correct": "Na druhé straně Atlantiku tenhle přízvuk splete nejednoho turistu, co čeká typickou kanadskou angličtinu.",
   "quip_wrong": "Québec mluví hlavně francouzsky, Ontario a Britská Kolumbie zase irský přízvuk nemají — hledej provincii, kam se Irové stěhovali po celé generace.",
@@ -960,9 +960,9 @@
   "question": "Kdo založil v 9. století osadu, ze které vyrostl Dublin?",
   "answer": "Seveřané ze Skandinávie",
   "distractors": [
-   "Římští legionáři",
-   "Normanští rytíři",
-   "Anglosaští kupci"
+   "Legionáři z Římské říše",
+   "Normanští rytíři z Francie",
+   "Anglosaští kupci z Wessexu"
   ],
   "quip_correct": "Irská metropole začínala jako parkoviště pro dračí lodě. Hospody přišly až potom, zato vydržely.",
   "quip_wrong": "Římané do Irska nikdy nedorazili, Normané přišli až o tři století později a Anglosasové měli dost starostí doma.",
