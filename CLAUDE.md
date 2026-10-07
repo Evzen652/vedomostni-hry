@@ -83,9 +83,21 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
 - **2026-10-07 — Ilustrace kampaně (2 200 otázek): jedou autonomně po dávkách ~210 kusů,
   vždy 5 zemí abecedně + opravy z předchozí kontroly. ROZPRACOVÁNO, NENASAZENO.**
-  Hráč: *„pokračuj autonomně až do vyčerpání kreditu“*. Stav: dávky 1 a 2 hotové
-  a zkontrolované (`c69f752`, `6091fb2`), dávka 3 (cz, de, dk, ec, eg + 16 oprav) běží,
-  dávka 4 (es, fi, fj, fr, ga + 7 oprav) má seznam ve scratchpadu. Bez ilustrace zbývá 1 823.
+  Hráč: *„pokračuj autonomně až do vyčerpání kreditu“*. **KREDIT DOŠEL 2026-10-07**
+  (402 „prepayment credits are depleted“) po dávce 3. Dávky 1–3 hotové a zkontrolované.
+  **Bez ilustrace zbývá 1 618.** Další dávka je připravená (218 id: es, fi, fj, fr, ga
+  + opravy z dávek 2 a 3 + 4 obrázky, které v dávce 3 vyšly „bez výsledku“) v
+  `.ilustrace/dalsi-davka.txt` (gitignorované, jen na tomhle disku). Po dobití:
+  `node scripts/batch-irony-images.js submit --only "$(cat .ilustrace/dalsi-davka.txt)"`.
+  Kdyby soubor chyběl: stačí vzít 5 dalších zemí abecedně — `submit` přeskočí, co obrázek má,
+  a vadné obrázky jsou z `img/` odložené, takže se vygenerují znovu.
+  - **Dávka 3: 21 vad z 212.** 9 podpisů u kraje **odříznuto `orez.js 690`** (kredit
+    nestojí, ověřeno archem rohů). **Nová vada: DÁNSKÁ VLAJKA VYCHÁZÍ JAKO ŠVÝCARSKÁ**
+    (3× u Dánska, 1× u Egypta, kde vlajka nebyla vůbec potřeba) — „red flag with a white
+    cross“ model kreslí jako čtverec s křížem uprostřed. Nutné popsat obdélník
+    a severský kříž posunutý k žerdi s rameny až k okrajům; kde vlajka není nutná, pryč.
+    Dál „taxi“ (znovu nápis TAXI), kompasová růžice (písmena N/W/E/S) a nástěnný kalendář
+    (čísla a dny) — kalendář nahrazen dvěma stoly, prvním sklizeným a druhým prostřeným.
   - **Vady: dávka 1 16 ze 192, dávka 2 7 ze 208** — převážně podpisy. Nové poznatky:
     komiksová postava jmenovaná jen popisem (Mafalda: „velká kulatá hlava, černé mikádo
     s mašlí“) vyjde jako ta postava → scéna bez lidí; „high and dry“ se propsalo jako
