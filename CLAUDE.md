@@ -81,6 +81,23 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-07 — Ilustrace kampaně (2 200 otázek): jedou autonomně po dávkách ~210 kusů,
+  vždy 5 zemí abecedně + opravy z předchozí kontroly. ROZPRACOVÁNO, NENASAZENO.**
+  Hráč: *„pokračuj autonomně až do vyčerpání kreditu“*. Stav: dávky 1 a 2 hotové
+  a zkontrolované (`c69f752`, `6091fb2`), dávka 3 (cz, de, dk, ec, eg + 16 oprav) běží,
+  dávka 4 (es, fi, fj, fr, ga + 7 oprav) má seznam ve scratchpadu. Bez ilustrace zbývá 1 823.
+  - **Vady: dávka 1 16 ze 192, dávka 2 7 ze 208** — převážně podpisy. Nové poznatky:
+    komiksová postava jmenovaná jen popisem (Mafalda: „velká kulatá hlava, černé mikádo
+    s mašlí“) vyjde jako ta postava → scéna bez lidí; „high and dry“ se propsalo jako
+    popisek u loďky (idiom = text); „leather footballs“ u Charlese Millera dalo ragbyové
+    míče (znovu: psát „round black-and-white patched soccer football“); kompas nese „N“
+    a čísla → nahradit dalekohledem; korouhev na střeše dostala písmena.
+  - **84 jídel dostalo popis TVARU** (varování `lint-irony`) před první dávkou.
+  - **Dávka 3 běží přes 3 h** — `cekej-davka.js` končí po 90 min, pouští se znovu;
+    batch API slibuje do 24 h.
+  - **Po dokončení:** zvednout `VERZE` v `sw.js`, `build-index`, sloučit do `master`,
+    `db:sync --remote` a nasadit — teprve tehdy smí kampaň na web (rozhodnutí 2. 10.).
+
 - **2026-10-07 — Rychlá hra na rozcestníku: jedno klepnutí = 10 otázek z 10 náhodných zemí,
   všechna témata.** Přání hráče: *„hned na úvodní straně chybí nějaká rychlá hra, abych
   nemusel vše proklikávat“*. Tlačítko `#qz-quick` pod podtitulkem, pod ním tichý řádek
