@@ -1504,16 +1504,23 @@
       <h2>${esc(kdo)} tě vyzývá!</h2>
       <p class="qz-vyzvatext">Dostaneš ${order.length} ${plur(order.length,"stejnou otázku","stejné otázky","stejných otázek")} ve stejném pořadí.
         Laťka je <b>${v.s}&nbsp;z&nbsp;${v.q.length}</b> správně.</p>
+      ${window.ZKOnline ? `<p class="qz-vyzvap">Na přijetí potřebuješ profil ve Světové lize. Stačí přezdívka a PIN.</p>` : ""}
       <div class="qz-endrow">
         <button class="qz-go" id="qz-vyzvago">Přijmout výzvu ${handArrowSvg(false)}</button>
         <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>
       </div>
     </div>`;
-    body.querySelector("#qz-vyzvago").addEventListener("click", () => {
+    const zahraj = () => {
       S.band = v.b; S.bandTouched = true; S.qLimit = order.length;
       S.vyzvaStart = { n:v.n, s:v.s, total:v.q.length };
       S.pevnePoradi = order;
       startGame();
+    };
+    // Výzva se přijímá jen s profilem (hráč 2026-10-13: „chci, aby ho to nutilo si jej
+    // založit“). Kdo je přihlášený, hraje hned; „Zpět“ z přihlášení vrátí na tuhle obrazovku.
+    body.querySelector("#qz-vyzvago").addEventListener("click", () => {
+      if(window.ZKOnline && ZKOnline.vyzadejProfil) ZKOnline.vyzadejProfil(kdo, zahraj, () => otevriVyzvu(kod));
+      else zahraj();
     });
     body.querySelector("#qz-home").addEventListener("click", close);
   }
@@ -2178,7 +2185,7 @@
     // Ve škole se výzva nenabízí — hraje celá třída u tabule, ne jeden člověk.
     const vyzvaBox = S.school ? "" : `<div class="qz-vyzvabox">
         <div class="qz-vyzvah">${S.vyzva ? "Pošli odvetu" : "Vyzvi kamaráda"}</div>
-        <p class="qz-vyzvap">Pošli dál stejných ${n} ${plur(n,"otázku","otázky","otázek")} a uvidíte, kdo z vás ví víc. Profil není potřeba.</p>
+        <p class="qz-vyzvap">Pošli dál stejných ${n} ${plur(n,"otázku","otázky","otázek")} a uvidíte, kdo z vás ví víc. Kamarád si na přijetí založí profil ve Světové lize.</p>
         <div class="qz-vyzvaform">
           <input class="qz-pname-in" id="qz-vyzvajm" maxlength="20" autocomplete="off" aria-label="Tvoje jméno" placeholder="Tvoje jméno (nepovinné)" value="${esc(jmeno)}">
           <button class="qz-next" id="qz-vyzvapos">Poslat výzvu ${handArrowSvg(false)}</button>

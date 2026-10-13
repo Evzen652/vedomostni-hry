@@ -246,6 +246,7 @@ window.ZKOnline = (function () {
     exitCb = onExit;
     stopAll();
     hostToken = null;
+    poPrihlaseni = null; duvodPrihlaseni = null;
     var obnova = pendingReset();
     if (obnova) return renderResetPin(obnova);
     // Pozvánka do turnaje pro partu jde PŘED kontrolou přihlášení: pozvaný profil mít nemusí.
@@ -261,7 +262,27 @@ window.ZKOnline = (function () {
     });
   }
 
+  // Výzva kamaráda (quiz.js, ?vyzva=) se smí přijmout jen s profilem — hráč to tak chtěl
+  // (2026-10-13), ať odkaz od kamaráda přivádí lidi do Světové ligy. Hra sama ale běží
+  // offline v quiz.js, takže tady se jen přihlásí a předá řízení zpátky (`hotovo`).
+  var poPrihlaseni = null, duvodPrihlaseni = null;
+  function vyzadejProfil(kdo, hotovo, zpet) {
+    body = document.getElementById("qz-body");
+    exitCb = zpet;
+    stopAll();
+    hostToken = null;
+    var pokracuj = function () { poPrihlaseni = null; duvodPrihlaseni = null; hotovo(); };
+    var prihlasit = function () { poPrihlaseni = pokracuj; duvodPrihlaseni = kdo; renderAuth(); };
+    if (!token.get()) return prihlasit();
+    return req("/me").then(function (r) {
+      if (r.status !== 200) { token.clear(); return prihlasit(); }
+      S.me = r.body;
+      pokracuj();
+    });
+  }
+
   function leave() {
+    poPrihlaseni = null; duvodPrihlaseni = null;
     stopAll();
     if (exitCb) exitCb();
   }
@@ -278,13 +299,18 @@ window.ZKOnline = (function () {
     stav = stav || {};
     stopAll();
     var vyzva = !!pendingDuel();
-    say(vyzva
+    var kamarad = duvodPrihlaseni;
+    say(kamarad
+      ? kamarad + " tě vyzývá. Založ si profil a jdeme na to."
+      : vyzva
       ? "Někdo tě vyzval na souboj. Přihlas se a jdeme na to."
       : mode === "register"
         ? "Založ si profil — stačí přezdívka a PIN, ať se ti počítá rating."
         : "Online hraní chce jméno. Stačí přezdívka a PIN.");
     var isReg = mode === "register";
-    var podtitul = vyzva
+    var podtitul = kamarad
+      ? "Na přijetí výzvy potřebuješ profil. Stačí přezdívka a PIN, souboj pak začne hned."
+      : vyzva
       ? "Někdo tě vyzval na souboj — přihlas se a jde se hrát."
       : isReg
         ? "Stačí přezdívka a PIN. E-mail je nepovinný — je jen pro případ, že PIN zapomeneš."
@@ -431,6 +457,7 @@ window.ZKOnline = (function () {
         S.me = r.body;
         nabidniUlozeni(nick, pin);
         refreshMe(function () {
+          if (poPrihlaseni) return poPrihlaseni();
           var parta = pendingParta();
           if (parta) return renderParta(parta);
           var duel = pendingDuel();
@@ -2148,5 +2175,5 @@ window.ZKOnline = (function () {
   // spolehlivější než `beforeunload` (ten na mobilech často neproběhne vůbec).
   window.addEventListener("pagehide", function () { opustFrontu(true); });
 
-  return { open: open, stopAll: stopAll, leaveQueue: opustFrontu };
+  return { open: open, stopAll: stopAll, leaveQueue: opustFrontu, vyzadejProfil: vyzadejProfil };
 })();

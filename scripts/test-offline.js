@@ -1260,6 +1260,12 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
     kontrola(/vyzva:\s*S\.vyzva/.test(telo("serializeState")) && /S\.vyzva\s*=\s*st\.vyzva/.test(telo("resumeSave")),
       "výzva se neukládá s rozehranou hrou — po obnovení by zmizelo srovnání");
     kontrola(/správně<\/div>/.test(telo("endGame")), "výsledek sóla neukazuje počet správných jako hlavní číslo");
+    // Přijetí výzvy chce profil (hráč 2026-10-13) — přes přihlášení z online.js.
+    const O = fs.readFileSync(path.join(process.cwd(), "online.js"), "utf8").replace(/\r\n/g, "\n");
+    kontrola(/ZKOnline\.vyzadejProfil\(/.test(telo("otevriVyzvu")), "přijetí výzvy nejde přes přihlášení (ZKOnline.vyzadejProfil)");
+    kontrola(/vyzadejProfil:\s*vyzadejProfil/.test(O), "online.js neexportuje vyzadejProfil");
+    kontrola(/refreshMe\(function \(\) \{\s*if \(poPrihlaseni\) return poPrihlaseni\(\);/.test(O),
+      "po přihlášení se výzva nespustí — online.js skončí v lobby");
   }
 }
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"

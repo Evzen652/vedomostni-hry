@@ -81,6 +81,17 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-13 — Výzvu kamaráda jde PŘIJMOUT JEN S PROFILEM ve Světové lize** (hráč: *„chci,
+  aby ho to nutilo si jej založit“*). Odkaz od kamaráda tak přivádí lidi do online části.
+  Odesílatel profil mít nemusí (posílá ze sóla). Hra sama běží dál offline v `quiz.js`.
+  - **`ZKOnline.vyzadejProfil(kdo, hotovo, zpet)`** v `online.js`: přihlášený hraje hned,
+    jinak `renderAuth` s vlastním textem („Evžen tě vyzývá. Založ si profil…“) a po úspěchu
+    `poPrihlaseni()` místo lobby. „Zpět“ vrátí na úvod výzvy. `open()` a `leave()` stav
+    nulují, ať pozdější vstup do ligy neskončí ve staré výzvě.
+  - Úvod výzvy i výsledek sóla to říkají předem. Ověřeno v prohlížeči: odhlášený →
+    registrace → otázka 1/10 je tatáž jako u odesílatele; přihlášený → rovnou hra.
+    `test:offline` 951, mutace chycena.
+
 - **2026-10-13 — Výsledek sóla ukazuje „X z N správně“ jako hlavní číslo a nabízí VÝZVU
   KAMARÁDOVI: odkaz se stejnými otázkami, bez serveru a bez profilu.** Hráč: *„1600 bodů
   z xy mi nic neříká… na této stránce by měla být možnost poslat někomu, abysme se poměřili“*.
