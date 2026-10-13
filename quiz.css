@@ -430,6 +430,29 @@
 /* z holého čísla je věta — 52 px by přeteklo, korálová zůstává jako akcent proti tyrkysovému nadpisu */
 .qz-endscore { font-family: 'Nunito', sans-serif; font-size: clamp(24px, 4vw, 34px); font-weight: 700; color: var(--coral); }
 .qz-endrow { display: flex; gap: 12px; }
+/* Výsledek sóla (2026-10-13): hlavní je počet správných, body jen tichý řádek pod tím.
+   Mezery dělají skupiny: skóre + body těsně, srovnání a výzva jako samostatné bloky. */
+.qz-endscore b { font-weight: 800; }
+.qz-endbody { margin-top: -10px; color: var(--muted); font-size: 15px; display: inline-flex; align-items: center; gap: 6px; }
+.qz-vyzvasrov { display: flex; gap: 14px; margin-top: 14px; }
+.qz-vyzvasrov > div { min-width: 132px; padding: 12px 18px; border-radius: 14px; background: #fffaf0; border: 1.5px solid #e6d7b8;
+  display: flex; flex-direction: column; gap: 2px; }
+.qz-vyzvasrov > div.lepsi { border-color: var(--teal); background: #eef6f3; }
+.qz-vyzvasrov span { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.qz-vyzvasrov b { font-family: 'Nunito', sans-serif; font-size: 24px; color: var(--ink); }
+.qz-vyzvaverdikt { margin-top: -4px; font-weight: 700; color: var(--teal); }
+.qz-vyzvabox { width: min(520px, 100%); margin: 18px 0 8px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.qz-vyzvah { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 800; color: var(--ink); }
+.qz-vyzvap { color: var(--muted); line-height: 1.6; max-width: 440px; }
+.qz-vyzvaform { display: flex; gap: 10px; width: 100%; max-width: 440px; margin-top: 4px; }
+.qz-vyzvaform .qz-pname-in { font-size: 15px; padding: 10px 12px; }
+.qz-vyzvaform .qz-next { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+#qz-vyzvakde:empty { display: none; }
+.qz-vyzvatext { max-width: 460px; line-height: 1.6; color: var(--ink); font-size: 17px; }
+@media (max-width: 520px) {
+  .qz-vyzvaform { flex-direction: column; }
+  .qz-vyzvasrov > div { min-width: 0; flex: 1; }
+}
 /* Ilustrace nad výsledkem — rámeček jako u dlaždic rozcestníku (.qz-mode .ic-img), jen větší.
    Margin navíc dělá z obrázku vlastní skupinu nad nadpisem (pravidlo o vzdušnosti). */
 .qz-endimg { width: min(220px, 52vw); height: auto; aspect-ratio: 1 / 1; object-fit: cover;

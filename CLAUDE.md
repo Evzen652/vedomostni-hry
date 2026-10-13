@@ -81,6 +81,31 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-13 — Výsledek sóla ukazuje „X z N správně“ jako hlavní číslo a nabízí VÝZVU
+  KAMARÁDOVI: odkaz se stejnými otázkami, bez serveru a bez profilu.** Hráč: *„1600 bodů
+  z xy mi nic neříká… na této stránce by měla být možnost poslat někomu, abysme se poměřili“*.
+  - **Body jsou tichý řádek pod počtem správných** (`★ 550 bodů z 2300 možných`).
+  - **Výzva = `/hra?vyzva=<base64url JSON {v,q:[id],s,n,b}>`** (`kodVyzvy`/`dekodujVyzvu`).
+    Nic se neukládá na server, takže funguje i offline část a nepotřebuje D1 ani migraci.
+    Dekódování je obranné: id jen `[a-z0-9-]`, nejvýš 50, skóre se ořízne do počtu otázek,
+    jméno na 20 znaků, neznámé pásmo → dospělí, rozbitý kód → `null`. Jméno jde do HTML
+    jen přes `esc()`.
+  - **Kamarád hraje tytéž otázky VE STEJNÉM POŘADÍ** — `S.pevnePoradi` obchází
+    `bezKonfliktu` (pořadí už jednou prošlo výběrem u odesílatele). Otázka, která mezitím
+    z fondu zmizela, se tiše vynechá a srovnává se z menšího počtu.
+  - **Výsledek výzvy porovná „Ty × jméno“** a řekne Výhra/Remíza/odvetu; výzva se ukládá
+    s rozehranou hrou (`serializeState` → `vyzva`), jinak by se po obnovení srovnání ztratilo.
+    „Hrát znovu“ po výzvě spustí rychlou hru, ne tutéž sadu znovu (odpovědi už zná).
+  - **Sdílení stejné jako u party:** dotykové zařízení `navigator.share`, počítač E-mailem /
+    WhatsApp / Zkopírovat. Jméno se pamatuje v `zk_vyzva_jmeno` — **doplněno do zásad
+    (`soukromi.html`) spolu s dříve zapomenutým `zk_rychla_pasmo`**.
+  - **Cestou: sólo už nebere hlášku z fondu `victory`.** Ten patří vítězi párty, takže hostitel
+    gratuloval „Vítěz! Přijměte korunu“ i při 1 z 10. Nově `hlaskaVysledku()` podle podílu
+    správných (4 pásma po dvou hláškách).
+  - Ověřeno v prohlížeči celým kolem: hra → odkaz → otevření jako kamarád (tytéž otázky, první
+    shodná) → srovnání „3 z 10 × 1 z 10, Výhra! Máš o 2 otázky víc než Evžen.“ Sken malých
+    písmen: jediný nález planý (text za tučným číslem). `test:offline` 948, ověřeno mutací 3 z 3.
+
 - **2026-10-13 — OTÁZKA BEZ ILUSTRACE SE NEHRAJE NIKDE — ani lokálně, ani na webu, ani online.**
   Hráč narazil lokálně na švédskou otázku z kampaně s razítkem místo obrázku: *„tyhle otázky
   jsem nechtěl zařadit… až budou mít ilustraci“*. Do teď to hlídalo jen to, že se kampaň

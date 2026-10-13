@@ -211,7 +211,7 @@
       qLimit:S.qLimit, schoolLevel:S.schoolLevel,
       orderIds:S.order.map(q=>q.id), idx:S.idx, qServed:S.qServed,
       turn:S.turn, round:S.round, totalRounds:S.totalRounds, voice:S.voice, steal:S.steal, timer:S.timer||0,
-      log:S.log||[],
+      log:S.log||[], vyzva:S.vyzva||null,
       players:S.players.map(p=>({ name:p.name, band:p.band, color:p.color, score:p.score })) };
   }
   function autosave(){
@@ -330,6 +330,7 @@
     // Záznam pro rozbor — hry uložené před 2026-09-26 ho nemají, rozbor pak ukáže jen to,
     // co se odehrálo po obnovení (a když nic, vůbec se nevykreslí).
     S.log=Array.isArray(st.log) ? st.log : [];
+    S.vyzva=st.vyzva||null;
     // hlas i steal jsou dočasně schované z UI (viz renderSetup) — starší uložená hra s
     // voice:true/steal:true by jinak dál mluvila / nabízela krádež bodů, aniž by šel přepínač vypnout
     S.voice=false; S.steal=false; S.timer=st.timer||0; S.rot=0;
@@ -650,6 +651,8 @@
   function open(){ ensureData().then(()=>{
     document.body.style.overflow="hidden"; root.classList.remove("qz-hidden");
     const _p = new URLSearchParams(location.search);
+    // Výzva od kamaráda (?vyzva=…) jede celá v prohlížeči, bez serveru a bez profilu.
+    if(_p.get("vyzva")){ showHomeBtn(true); otevriVyzvu(_p.get("vyzva")); return; }
     if((_p.get("duel") || _p.get("obnova") || _p.get("parta")) && window.ZKOnline){
       showHomeBtn(true); window.ZKOnline.open(renderModePick); return;
     }
@@ -1452,11 +1455,98 @@
     startGame();
   }
 
+  // ---- výzva kamarádovi (2026-10-13) ----
+  // Hráč: „na této stránce by měla být možnost poslat někomu, abychom se poměřili“.
+  // Celé to jede BEZ SERVERU: odkaz nese seznam otázek, počet správných odpovědí
+  // vyzyvatele, jeho (nepovinné) jméno a pásmo. Kamarád dostane přesně tytéž otázky ve
+  // stejném pořadí a na konci uvidí srovnání. Opačným směrem výsledek nedojde — na to
+  // je online Turnaj pro partu; tady odpověď kamarád pošle zpátky jako novou výzvu.
+  const VYZVA_JMENO_KEY = "zk_vyzva_jmeno";
+  function b64url(s){ return btoa(unescape(encodeURIComponent(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); }
+  function zB64url(s){ s = s.replace(/-/g,"+").replace(/_/g,"/"); while(s.length % 4) s += "="; return decodeURIComponent(escape(atob(s))); }
+  function kodVyzvy(ids, spravne, jmeno, band){
+    return b64url(JSON.stringify({ v:1, q:ids, s:spravne, n:jmeno||"", b:band }));
+  }
+  // Odkaz může kdokoli přepsat, takže se nic z něj nebere naslepo: id jen v povoleném tvaru,
+  // skóre ořezané do počtu otázek, jméno zkrácené (a při vykreslení escapované).
+  function dekodujVyzvu(kod){
+    try {
+      const v = JSON.parse(zB64url(String(kod)));
+      if(!v || !Array.isArray(v.q)) return null;
+      const q = v.q.filter(id => typeof id === "string" && /^[a-z0-9-]+$/.test(id)).slice(0, 50);
+      if(!q.length) return null;
+      return { q, s:Math.max(0, Math.min(q.length, Math.floor(Number(v.s)) || 0)),
+               n:String(v.n || "").trim().slice(0, 20), b:BAND_NAMES[v.b] ? v.b : "dospeli" };
+    } catch(e){ return null; }
+  }
+  function kdoVyzval(v){ return v && v.n ? velke(v.n) : "Kamarád"; }
+
+  async function otevriVyzvu(kod){
+    // Parametr z adresy pryč hned: „Domů“ a obnovení stránky nesmí výzvu spouštět znovu.
+    try { history.replaceState(null, "", location.pathname); } catch(e){}
+    const v = dekodujVyzvu(kod);
+    if(!v){ renderModePick(); say("Tenhle odkaz na výzvu je poškozený. Zahraj si aspoň rychlou hru!"); return; }
+    const ccs = [...new Set(v.q.map(id => id.split("-")[0]).filter(cc => COUNTRY_BY_CC[cc]))];
+    S.pickMode = "solo";
+    S.sel = { conts:[...new Set(ccs.map(cc => COUNTRY_CONT[cc]))], section:"__all__" };
+    await selectCountries(ccs);
+    S.sel.section = "__all__";
+    applyPool();
+    // Otázka, která mezitím z fondu zmizela (nebo ještě nemá ilustraci), se prostě vynechá.
+    const podleId = {};
+    ccs.forEach(cc => (data.qByCc[cc] || []).forEach(q => { podleId[q.id] = q; }));
+    const order = v.q.map(id => podleId[id]).filter(Boolean);
+    if(!order.length){ renderModePick(); say("Otázky z téhle výzvy už ve hře nejsou. Zkus rychlou hru!"); return; }
+    const kdo = kdoVyzval(v);
+    say(kdo + " tě vyzývá na souboj. Tak ukaž, co umíš!");
+    body.innerHTML = `<div class="qz-screen qz-end qz-vyzvaintro">
+      <img class="qz-endimg" src="assets/end-solo.jpg" alt="" onerror="this.style.display='none'">
+      <h2>${esc(kdo)} tě vyzývá!</h2>
+      <p class="qz-vyzvatext">Dostaneš ${order.length} ${plur(order.length,"stejnou otázku","stejné otázky","stejných otázek")} ve stejném pořadí.
+        Laťka je <b>${v.s}&nbsp;z&nbsp;${v.q.length}</b> správně.</p>
+      <div class="qz-endrow">
+        <button class="qz-go" id="qz-vyzvago">Přijmout výzvu ${handArrowSvg(false)}</button>
+        <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>
+      </div>
+    </div>`;
+    body.querySelector("#qz-vyzvago").addEventListener("click", () => {
+      S.band = v.b; S.bandTouched = true; S.qLimit = order.length;
+      S.vyzvaStart = { n:v.n, s:v.s, total:v.q.length };
+      S.pevnePoradi = order;
+      startGame();
+    });
+    body.querySelector("#qz-home").addEventListener("click", close);
+  }
+
+  // Sdílení stejně jako u Turnaje pro partu: na telefonu systémový dialog (WhatsApp, SMS…),
+  // na počítači tlačítka. Nic se neposílá z našeho serveru.
+  function posliVyzvu(kde, jmeno, spravne){
+    const url = location.origin + "/hra?vyzva=" + kodVyzvy(S.order.map(q => q.id), spravne, jmeno, S.band);
+    const n = S.order.length;
+    const text = (jmeno ? velke(jmeno) + ": " : "") + `Mám ${spravne} z ${n} v Cestokvízu. Dáš víc? Stejné otázky na tebe čekají tady:`;
+    const dotyk = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+    if(dotyk && navigator.share){ navigator.share({ title:"Cestokvíz", text, url }).catch(() => {}); return; }
+    const zprava = text + "\n\n" + url;
+    kde.innerHTML = `<div class="zk-psharebox">
+        <a class="qz-chip" href="mailto:?subject=${encodeURIComponent("Výzva v Cestokvízu")}&amp;body=${encodeURIComponent(zprava)}">E-mailem</a>
+        <a class="qz-chip" href="https://wa.me/?text=${encodeURIComponent(zprava)}" target="_blank" rel="noopener">WhatsApp</a>
+        <button type="button" class="qz-chip" id="qz-vyzvacopy">Zkopírovat odkaz</button>
+      </div>
+      <div class="zk-plink">${esc(url)}</div>`;
+    const kopie = kde.querySelector("#qz-vyzvacopy");
+    kopie.addEventListener("click", () => {
+      if(navigator.clipboard) navigator.clipboard.writeText(url).then(() => { kopie.textContent = "Zkopírováno"; }, () => {});
+    });
+  }
+
   function startGame(){
     S.mode="solo";
     // Rychlá hra se pozná podle příznaku z rychlaHra(); ruční start ho shodí. „Hrát znovu“
     // pak u rychlé hry losuje nové země, u ruční výpravy zopakuje tutéž volbu.
     S.rychla = !!S.rychlaStart; S.rychlaStart = false;
+    // Výzva od kamaráda přináší hotové pořadí otázek (otevriVyzvu); ruční start ho shodí.
+    S.vyzva = S.vyzvaStart || null; S.vyzvaStart = null;
+    const pevne = S.pevnePoradi; S.pevnePoradi = null;
     ulozRychlePasmo(S.band);
     // Časomíru nabízí JEN párty setup, ale S.timer je globální stav — bez tohohle
     // resetu si hráč odnesl „svižný · 15 s" z párty do sóla i do školy a neměl ho
@@ -1469,9 +1559,9 @@
     const pool = bandPool(S.band);
     // Pojistka: tlačítko je při prázdném fondu disabled, ale sem se dá dojít i klávesnicí
     // nebo obnovou stavu. Prázdný fond by znamenal hru bez jediné otázky.
-    if(!pool.length) return renderStart();
+    if(!pool.length && !pevne) return renderStart();
     const limit = Math.min(S.qLimit || pool.length, pool.length);
-    S.order=bezKonfliktu(pool, limit); S.idx=0; S.log=[]; S.school=false; newSave();
+    S.order=pevne || bezKonfliktu(pool, limit); S.idx=0; S.log=[]; S.school=false; newSave();
     const shg=document.getElementById("qz-shell"); shg.classList.remove("qz-school"); shg.style.transform="";
     renderQuestion();
   }
@@ -2049,17 +2139,60 @@
     body.querySelector("#qz-home").addEventListener("click", close);
   }
 
+  // Bez minulého času s rodem — appka pohlaví hráče nezná.
+  function hlaskaVysledku(spravne, n){
+    const p = n ? spravne / n : 0;
+    if (p >= 0.9) return pick(["Skoro všechno! Tohle je výkon na zarámování.", "Glóbus smeká. Tady už není co dodat."]);
+    if (p >= 0.7) return pick(["Pěkná výprava. Pár zastávek ještě čeká na objevení.", "Silný výkon. Mapa světa má z tebe radost."]);
+    if (p >= 0.4) return pick(["Půl na půl. Svět je velký a otázky zlomyslné.", "Slušný základ. Příště to bude ještě lepší."]);
+    return pick(["Svět je plný překvapení. Tak co, ještě jednou?", "Tohle byla zahřívací výprava. Další kolo?"]);
+  }
+
   function endGame(){
     stopTTS(); clearTimer(); clearSave(); releaseWake();
     const max=S.order.reduce((s,q)=>s+(q.difficulty||1)*100,0);
     const score=cur().score;
-    const vic = data.fondy && data.fondy.victory ? pick(resolveQuip(data.fondy.victory, S.band)) : "Dohráno!";
+    // Hlavní číslo je POČET SPRÁVNÝCH, ne body (hráč 2026-10-13: „1600 bodů z xy mi vlastně
+    // nic neříká“). Body zůstávají jako tichý řádek pod tím.
+    const n = S.order.length;
+    const spravne = (S.log || []).filter(e => e && e.ok).length;
+    // Hostitel reaguje na výsledek. Dřív bral fond `victory` (ten patří vítězi párty),
+    // takže gratuloval ke koruně i při 1 z 10 — vedle velkého „1 z 10“ to byl nesmysl.
+    const vic = hlaskaVysledku(spravne, n);
     say(vic); if(S.voice) speakTTS(vic);
+    // Srovnání s kamarádem, který výzvu poslal. Minulý čas s rodem tu být nesmí — appka
+    // pohlaví vyzyvatele nezná.
+    let srovnani = "";
+    if(S.vyzva && !S.school){
+      const kdo = kdoVyzval(S.vyzva), d = spravne - S.vyzva.s;
+      const o = Math.abs(d) + " " + plur(Math.abs(d), "otázku", "otázky", "otázek");
+      const verdikt = d > 0 ? `Výhra! Máš o ${o} víc než ${esc(kdo)}.`
+        : d < 0 ? `${esc(kdo)} vede o ${o}. Chce to odvetu.`
+        : "Remíza! Stejný počet správných odpovědí.";
+      srovnani = `<div class="qz-vyzvasrov">
+          <div class="qz-vyzvaja${d >= 0 ? " lepsi" : ""}"><span>Ty</span><b>${spravne} z ${n}</b></div>
+          <div class="qz-vyzvaon${d <= 0 ? " lepsi" : ""}"><span>${esc(kdo)}</span><b>${S.vyzva.s} z ${S.vyzva.total}</b></div>
+        </div>
+        <p class="qz-vyzvaverdikt">${verdikt}</p>`;
+    }
+    let jmeno = ""; try { jmeno = localStorage.getItem(VYZVA_JMENO_KEY) || ""; } catch(e){}
+    // Ve škole se výzva nenabízí — hraje celá třída u tabule, ne jeden člověk.
+    const vyzvaBox = S.school ? "" : `<div class="qz-vyzvabox">
+        <div class="qz-vyzvah">${S.vyzva ? "Pošli odvetu" : "Vyzvi kamaráda"}</div>
+        <p class="qz-vyzvap">Pošli dál stejných ${n} ${plur(n,"otázku","otázky","otázek")} a uvidíte, kdo z vás ví víc. Profil není potřeba.</p>
+        <div class="qz-vyzvaform">
+          <input class="qz-pname-in" id="qz-vyzvajm" maxlength="20" autocomplete="off" aria-label="Tvoje jméno" placeholder="Tvoje jméno (nepovinné)" value="${esc(jmeno)}">
+          <button class="qz-next" id="qz-vyzvapos">Poslat výzvu ${handArrowSvg(false)}</button>
+        </div>
+        <div id="qz-vyzvakde"></div>
+      </div>`;
     body.innerHTML = `<div class="qz-screen qz-end">
       <img class="qz-endimg" src="assets/end-solo.jpg" alt="" onerror="this.style.display='none'">
       <h2>Výprava dokončena!</h2>
-      <div class="qz-endscore">${S.school?"Třída získala":"Celkem máš"} ${ICO_STAR} <b>${score}</b></div>
-      <p style="color:var(--muted)">Z ${S.order.length} otázek · Teoretické maximum ${max} bodů</p>
+      <div class="qz-endscore">${S.school?"Třída: ":""}<b>${spravne} z ${n}</b> správně</div>
+      <p class="qz-endbody">${ICO_STAR} ${score} ${plur(score,"bod","body","bodů")} z ${max} možných</p>
+      ${srovnani}
+      ${vyzvaBox}
       <div class="qz-endrow">
         <button class="qz-go" id="qz-again">Hrát znovu ${handArrowSvg(false)}</button>
         <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>
@@ -2071,7 +2204,14 @@
     // udělalo sólo pro dospělé: zahodila se úroveň, „Třída" se přejmenovala na „Ty"
     // a zmizela třída qz-school, takže se uprostřed promítání zmenšil text.
     body.querySelector("#qz-again").addEventListener("click", function () {
-      if (S.school) startSchool(S.schoolLevel); else if (S.rychla) rychlaHra(this); else startGame();
+      // Po výzvě by „znovu“ jen přehrálo tytéž otázky se známými odpověďmi — losuje se rychlá hra.
+      if (S.school) startSchool(S.schoolLevel); else if (S.rychla || S.vyzva) rychlaHra(this); else startGame();
+    });
+    const posli = body.querySelector("#qz-vyzvapos");
+    if (posli) posli.addEventListener("click", () => {
+      const jm = body.querySelector("#qz-vyzvajm").value.trim().slice(0, 20);
+      try { localStorage.setItem(VYZVA_JMENO_KEY, jm); } catch(e){}
+      posliVyzvu(body.querySelector("#qz-vyzvakde"), jm, spravne);
     });
     body.querySelector("#qz-home").addEventListener("click", close);
   }

@@ -276,7 +276,8 @@ sekce("Výběr: otázky ve hře si navzájem neprozrazují odpověď");
     return SRC.slice(zac, i + 1);
   };
   for (const f of ["startGame", "startSchool"])
-    kontrola(/S\.order\s*=\s*bezKonfliktu\(/.test(telo(f)), f + " nelosuje přes bezKonfliktu — otázky si můžou prozradit odpověď");
+    // `pevne ||` je hotové pořadí z výzvy kamaráda (2026-10-13) — losuje se jen bez něj.
+    kontrola(/S\.order\s*=\s*(?:pevne\s*\|\|\s*)?bezKonfliktu\(/.test(telo(f)), f + " nelosuje přes bezKonfliktu — otázky si můžou prozradit odpověď");
   kontrola(telo("ensureQuestionsFor").includes('"data/konflikty.json"'), "ensureQuestionsFor nestahuje data/konflikty.json");
   // Otázky bez ilustrace se nehrají (2026-10-13): klient je vyřadí podle seznamu,
   // build je nepustí na web. Bez jednoho z toho by se lokálně nebo na webu objevily.
@@ -1224,7 +1225,42 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
   const rh = Q.slice(Q.indexOf("async function rychlaHra("), Q.indexOf("function startGame("));
   kontrola(/\.slice\(0,\s*RYCHLA_ZEMI\)/.test(rh) && /RYCHLA_ZEMI\s*=\s*\d+/.test(Q),
     "rychlaHra() nestahuje jen omezený počet zemí — na mobilu by čekala na celý fond");
-  kontrola(/S\.rychla\)\s*rychlaHra\(/.test(Q), "„Hrát znovu“ po rychlé hře nelosuje nové země");
+  kontrola(/S\.rychla(?:\s*\|\|\s*S\.vyzva)?\)\s*rychlaHra\(/.test(Q), "„Hrát znovu“ po rychlé hře nelosuje nové země");
+
+  // ---- Výzva kamarádovi (2026-10-13): odkaz nese otázky a skóre, kamarád hraje tytéž.
+  {
+    const ctx = { BAND_NAMES: { deti: "děti", starsi: "puberťáci", dospeli: "dospělí" }, btoa, atob, unescape, escape,
+                  encodeURIComponent, decodeURIComponent, JSON, Math, Number, String, Array };
+    const src = ["b64url", "zB64url", "kodVyzvy", "dekodujVyzvu"].map(f => {
+      const i = Q.indexOf("function " + f + "(");
+      let j = Q.indexOf("\n  function ", i + 10);
+      const k = Q.indexOf("\n  async function ", i + 10);
+      if (k > -1 && k < j) j = k;
+      return Q.slice(i, j);
+    }).join("\n");
+    vm.createContext(ctx); vm.runInContext(src, ctx);
+    const telo = jmeno => {
+      const zac = Q.indexOf("function " + jmeno + "(");
+      let h = 0, i = Q.indexOf("{", zac);
+      for (; i < Q.length; i++) { if (Q[i] === "{") h++; else if (Q[i] === "}" && !--h) break; }
+      return Q.slice(zac, i + 1);
+    };
+    const ids = ["se-a-prvni-na-svete", "cz-k-kral-hub"];
+    const v = ctx.dekodujVyzvu(ctx.kodVyzvy(ids, 1, "Evžen", "starsi"));
+    kontrola(v && JSON.stringify(v.q) === JSON.stringify(ids) && v.s === 1 && v.n === "Evžen" && v.b === "starsi",
+      "výzva: odkaz se nerozbalí zpět na stejné otázky, skóre, jméno a pásmo", JSON.stringify(v));
+    const kod = ctx.kodVyzvy(ids, 1, "Evžen", "starsi");
+    kontrola(/^[A-Za-z0-9_-]+$/.test(kod), "výzva: kód odkazu obsahuje znaky, které do adresy nepatří", kod);
+    const zly = ctx.dekodujVyzvu(ctx.kodVyzvy(["<script>", "ok-id"], 99, "x".repeat(80), "hacker"));
+    kontrola(zly && zly.q.length === 1 && zly.s === 1 && zly.n.length === 20 && zly.b === "dospeli",
+      "výzva: podvržený odkaz projde bez ořezání (id, skóre, jméno, pásmo)", JSON.stringify(zly));
+    kontrola(ctx.dekodujVyzvu("nesmysl!!") === null, "výzva: poškozený odkaz nevrací null");
+    kontrola(/_p\.get\("vyzva"\)/.test(Q) && /otevriVyzvu\(/.test(telo("open")), "open() neotevírá výzvu z odkazu ?vyzva=");
+    kontrola(/S\.order\s*=\s*pevne\s*\|\|/.test(telo("startGame")), "startGame nepoužije pořadí otázek z výzvy");
+    kontrola(/vyzva:\s*S\.vyzva/.test(telo("serializeState")) && /S\.vyzva\s*=\s*st\.vyzva/.test(telo("resumeSave")),
+      "výzva se neukládá s rozehranou hrou — po obnovení by zmizelo srovnání");
+    kontrola(/správně<\/div>/.test(telo("endGame")), "výsledek sóla neukazuje počet správných jako hlavní číslo");
+  }
 }
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));
