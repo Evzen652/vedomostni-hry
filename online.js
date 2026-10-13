@@ -246,7 +246,6 @@ window.ZKOnline = (function () {
     exitCb = onExit;
     stopAll();
     hostToken = null;
-    poPrihlaseni = null; duvodPrihlaseni = null;
     var obnova = pendingReset();
     if (obnova) return renderResetPin(obnova);
     // Pozvánka do turnaje pro partu jde PŘED kontrolou přihlášení: pozvaný profil mít nemusí.
@@ -262,24 +261,23 @@ window.ZKOnline = (function () {
     });
   }
 
-  // Výzva kamaráda (quiz.js, ?vyzva=) se smí přijmout jen s profilem — hráč to tak chtěl
-  // (2026-10-13), ať odkaz od kamaráda přivádí lidi do Světové ligy. Hra sama ale běží
-  // offline v quiz.js, takže tady se jen přihlásí a předá řízení zpátky (`hotovo`).
-  var poPrihlaseni = null, duvodPrihlaseni = null;
-  // `texty` = { say, podtitul } pro obrazovku přihlášení; `hotovo` dostane přezdívku.
-  function vyzadejProfil(texty, hotovo, zpet) {
-    body = document.getElementById("qz-body");
-    exitCb = zpet;
-    stopAll();
-    hostToken = null;
-    var pokracuj = function () { poPrihlaseni = null; duvodPrihlaseni = null; hotovo(S.me && S.me.nick); };
-    var prihlasit = function () { poPrihlaseni = pokracuj; duvodPrihlaseni = texty; renderAuth(); };
-    if (!token.get()) return prihlasit();
-    return req("/me").then(function (r) {
-      if (r.status !== 200) { token.clear(); return prihlasit(); }
-      S.me = r.body;
-      pokracuj();
-    });
+  // Výzva kamaráda (quiz.js, ?vyzva=) chce profil u odesílatele i u příjemce (hráč
+  // 2026-10-13). Profil se zakládá PŘÍMO V BLOKU VÝZVY, ne na obrazovce ligy — hráč
+  // nechtěl „nikam odcházet“. Nejdřív registrace; když přezdívka existuje (409), zkusí
+  // se přihlášení se stejným PINem. Vrací { nick } nebo { error }.
+  function zalozNeboPrihlas(nick, pin) {
+    return req("/auth/register", { method: "POST", body: { band: "dospeli", nick: nick, pin: pin, age13: true } })
+      .then(function (r) {
+        if (r.status === 409) return req("/auth/login", { method: "POST", body: { nick: nick, pin: pin } });
+        return r;
+      })
+      .then(function (r) {
+        if (r.status !== 200 && r.status !== 201) return { error: (r.body && r.body.error) || "Nepovedlo se." };
+        token.set(r.body.token);
+        S.me = r.body;
+        nabidniUlozeni(nick, pin);
+        return { nick: (r.body && r.body.nick) || nick };
+      });
   }
 
   // Kdo je na tomhle zařízení přihlášený (přezdívka), nebo null. Bez překreslování obrazovky —
@@ -295,7 +293,6 @@ window.ZKOnline = (function () {
   }
 
   function leave() {
-    poPrihlaseni = null; duvodPrihlaseni = null;
     stopAll();
     if (exitCb) exitCb();
   }
@@ -312,18 +309,13 @@ window.ZKOnline = (function () {
     stav = stav || {};
     stopAll();
     var vyzva = !!pendingDuel();
-    var kamarad = duvodPrihlaseni;
-    say(kamarad
-      ? kamarad.say
-      : vyzva
+    say(vyzva
       ? "Někdo tě vyzval na souboj. Přihlas se a jdeme na to."
       : mode === "register"
         ? "Založ si profil — stačí přezdívka a PIN, ať se ti počítá rating."
         : "Online hraní chce jméno. Stačí přezdívka a PIN.");
     var isReg = mode === "register";
-    var podtitul = kamarad
-      ? kamarad.podtitul
-      : vyzva
+    var podtitul = vyzva
       ? "Někdo tě vyzval na souboj — přihlas se a jde se hrát."
       : isReg
         ? "Stačí přezdívka a PIN. E-mail je nepovinný — je jen pro případ, že PIN zapomeneš."
@@ -470,7 +462,6 @@ window.ZKOnline = (function () {
         S.me = r.body;
         nabidniUlozeni(nick, pin);
         refreshMe(function () {
-          if (poPrihlaseni) return poPrihlaseni();
           var parta = pendingParta();
           if (parta) return renderParta(parta);
           var duel = pendingDuel();
@@ -2188,5 +2179,5 @@ window.ZKOnline = (function () {
   // spolehlivější než `beforeunload` (ten na mobilech často neproběhne vůbec).
   window.addEventListener("pagehide", function () { opustFrontu(true); });
 
-  return { open: open, stopAll: stopAll, leaveQueue: opustFrontu, vyzadejProfil: vyzadejProfil, kdoJsem: kdoJsem };
+  return { open: open, stopAll: stopAll, leaveQueue: opustFrontu, zalozNeboPrihlas: zalozNeboPrihlas, kdoJsem: kdoJsem };
 })();

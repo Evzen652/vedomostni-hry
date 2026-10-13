@@ -1260,15 +1260,16 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
     kontrola(/vyzva:\s*S\.vyzva/.test(telo("serializeState")) && /S\.vyzva\s*=\s*st\.vyzva/.test(telo("resumeSave")),
       "výzva se neukládá s rozehranou hrou — po obnovení by zmizelo srovnání");
     kontrola(/správně<\/div>/.test(telo("endGame")), "výsledek sóla neukazuje počet správných jako hlavní číslo");
-    // Přijetí výzvy chce profil (hráč 2026-10-13) — přes přihlášení z online.js.
+    // Výzvu posílá i přijímá jen hráč s profilem (hráč 2026-10-13) a profil se zakládá
+    // přímo v bloku výzvy (profilVeVyzve), ne na obrazovce ligy.
     const O = fs.readFileSync(path.join(process.cwd(), "online.js"), "utf8").replace(/\r\n/g, "\n");
-    kontrola(/ZKOnline\.vyzadejProfil\(/.test(telo("otevriVyzvu")), "přijetí výzvy nejde přes přihlášení (ZKOnline.vyzadejProfil)");
-    kontrola(/vyzadejProfil:\s*vyzadejProfil/.test(O), "online.js neexportuje vyzadejProfil");
-    // I odesílatel musí mít profil a odkaz nese jeho přezdívku, ne volně psané jméno.
-    kontrola(/ZKOnline\.vyzadejProfil\(/.test(telo("endGame")), "poslání výzvy nejde přes přihlášení");
+    kontrola(/profilVeVyzve\(/.test(telo("otevriVyzvu")), "přijetí výzvy nechce profil (profilVeVyzve)");
+    kontrola(/profilVeVyzve\(/.test(telo("endGame")), "poslání výzvy nechce profil (profilVeVyzve)");
+    kontrola(/zalozNeboPrihlas:\s*zalozNeboPrihlas/.test(O) && /kdoJsem:\s*kdoJsem/.test(O), "online.js neexportuje zalozNeboPrihlas/kdoJsem");
+    kontrola(/status === 409\) return req\("\/auth\/login"/.test(O), "známá přezdívka se v bloku výzvy nepřihlásí (chybí přechod 409 → login)");
     kontrola(!/qz-vyzvajm/.test(Q), "výsledek sóla má pořád volné pole na jméno místo přezdívky z profilu");
-    kontrola(/refreshMe\(function \(\) \{\s*if \(poPrihlaseni\) return poPrihlaseni\(\);/.test(O),
-      "po přihlášení se výzva nespustí — online.js skončí v lobby");
+    kontrola(!/Světové lize/.test(telo("endGame")) && !/Světové lize/.test(telo("otevriVyzvu")),
+      "výzva zase posílá hráče do Světové ligy (hráč: „nechci nikam odcházet“)");
   }
 }
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"

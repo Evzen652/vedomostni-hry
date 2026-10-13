@@ -87,16 +87,19 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   > **Hned potom i ODESÍLATEL** (hráč: *„ať to musí mít i ten, kdo výzvu posílá“*). Pole na
   > jméno zmizelo, odkaz nese přezdívku z profilu a klíč `zk_vyzva_jmeno` je pryč (i ze zásad).
   > Výsledek se přes `ZKOnline.kdoJsem()` ptá DOPŘEDU, kdo je přihlášený: `navigator.share`
-  > musí běžet přímo v kliknutí, po čekání na síť ho prohlížeč odmítne. Nepřihlášený projde
-  > přihlášením a vrátí se na `endGame({ posli: přezdívka })` s otevřeným sdílením (na telefonu
-  > tlačítko „Sdílet výzvu“ — z téhož důvodu). `vyzadejProfil` bere texty `{ say, podtitul }`.
-  - **`ZKOnline.vyzadejProfil(kdo, hotovo, zpet)`** v `online.js`: přihlášený hraje hned,
-    jinak `renderAuth` s vlastním textem („Evžen tě vyzývá. Založ si profil…“) a po úspěchu
-    `poPrihlaseni()` místo lobby. „Zpět“ vrátí na úvod výzvy. `open()` a `leave()` stav
-    nulují, ať pozdější vstup do ligy neskončí ve staré výzvě.
-  - Úvod výzvy i výsledek sóla to říkají předem. Ověřeno v prohlížeči: odhlášený →
-    registrace → otázka 1/10 je tatáž jako u odesílatele; přihlášený → rovnou hra.
-    `test:offline` 951, mutace chycena.
+  > musí běžet přímo v kliknutí, po čekání na síť ho prohlížeč odmítne. Po založení profilu
+  > (čekání na síť) proto telefon dostane tlačítko „Sdílet výzvu“ místo rovnou sdílení.
+  - **PROFIL SE ZAKLÁDÁ PŘÍMO V BLOKU VÝZVY, ne na obrazovce ligy** (hráč na první verzi:
+    *„nechci nikam odcházet. vymysli to jinak“*). Přechod na přihlašovací obrazovku
+    (`vyzadejProfil`) i věta „Výzvy jdou přes profil ve Světové lize“ jsou PRYČ — nevracet.
+  - **`profilVeVyzve(el, btn, hotovo)`** v `quiz.js` (výsledek sóla i úvod výzvy):
+    přihlášený vidí „Pod přezdívkou X“, ostatní přezdívku + PIN + souhlas 13+; hlavní tlačítko
+    je do vyplnění zablokované. **`ZKOnline.zalozNeboPrihlas`**: registrace, a při 409 (přezdívka
+    existuje) přihlášení se stejným PINem — „nová přezdívka založí profil, známá tě přihlásí“.
+    Špatný PIN u známé přezdívky vrátí „Přezdívka nebo PIN nesedí“.
+  - Ověřeno v prohlížeči: odesílatel bez profilu → formulář → sdílení s přezdívkou v textu;
+    známá přezdívka se správným PINem přihlásí; příjemce bez profilu → formulář na úvodu →
+    otázka 1/10 tatáž jako u odesílatele. `test:offline` 954.
 
 - **2026-10-13 — Výsledek sóla ukazuje „X z N správně“ jako hlavní číslo a nabízí VÝZVU
   KAMARÁDOVI: odkaz se stejnými otázkami, bez serveru a bez profilu.** Hráč: *„1600 bodů

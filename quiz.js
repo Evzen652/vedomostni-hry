@@ -1503,7 +1503,7 @@
       <h2>${esc(kdo)} tě vyzývá!</h2>
       <p class="qz-vyzvatext">Dostaneš ${order.length} ${plur(order.length,"stejnou otázku","stejné otázky","stejných otázek")} ve stejném pořadí.
         Laťka je <b>${v.s}&nbsp;z&nbsp;${v.q.length}</b> správně.</p>
-      ${window.ZKOnline ? `<p class="qz-vyzvap">Na přijetí potřebuješ profil ve Světové lize. Stačí přezdívka a PIN.</p>` : ""}
+      <div class="qz-vyzvaform" id="qz-vyzvaprof"></div>
       <div class="qz-endrow">
         <button class="qz-go" id="qz-vyzvago">Přijmout výzvu ${handArrowSvg(false)}</button>
         <button class="qz-chip" id="qz-home">Domů ${handArrowSvg(false)}</button>
@@ -1516,14 +1516,52 @@
       startGame();
     };
     // Výzva se přijímá jen s profilem (hráč 2026-10-13: „chci, aby ho to nutilo si jej
-    // založit“). Kdo je přihlášený, hraje hned; „Zpět“ z přihlášení vrátí na tuhle obrazovku.
-    body.querySelector("#qz-vyzvago").addEventListener("click", () => {
-      if(window.ZKOnline && ZKOnline.vyzadejProfil) ZKOnline.vyzadejProfil({ say: kdo + " tě vyzývá. Založ si profil a jdeme na to.",
-        podtitul: "Na přijetí výzvy potřebuješ profil. Stačí přezdívka a PIN, souboj pak začne hned." },
-        zahraj, () => otevriVyzvu(kod));
-      else zahraj();
-    });
+    // založit“). Profil se zakládá přímo tady, nikam se neodchází.
+    profilVeVyzve(body.querySelector("#qz-vyzvaprof"), body.querySelector("#qz-vyzvago"), () => zahraj());
     body.querySelector("#qz-home").addEventListener("click", close);
+  }
+
+  // Profil pro výzvu PŘÍMO NA MÍSTĚ (hráč 2026-10-13: „nechci nikam odcházet“). Přihlášený
+  // vidí jen „Pod přezdívkou X“; ostatní vyplní přezdívku a PIN — nová přezdívka založí
+  // profil, existující přihlásí (ZKOnline.zalozNeboPrihlas). `btn` je hlavní akce obrazovky:
+  // dokud formulář není vyplněný, je zablokovaná. `hotovo(nick, gesto)` — `gesto` říká, že
+  // se volá přímo z kliknutí (navigator.share po čekání na síť prohlížeč odmítne).
+  function profilVeVyzve(el, btn, hotovo){
+    const O = window.ZKOnline;
+    if(!O || !O.kdoJsem || !O.zalozNeboPrihlas){ btn.addEventListener("click", () => hotovo("", true)); return; }
+    let nick = null;
+    btn.disabled = true;
+    const prihlasen = n => {
+      nick = n; btn.disabled = false;
+      el.innerHTML = `<p class="qz-vyzvatiche">Pod přezdívkou <b>${esc(n)}</b></p>`;
+    };
+    btn.addEventListener("click", () => {
+      if(nick) return hotovo(nick, true);
+      const n = el.querySelector("#qz-vpnick").value.trim(), p = el.querySelector("#qz-vppin").value.trim();
+      const chyba = el.querySelector(".qz-vyzvachyba");
+      btn.disabled = true; chyba.textContent = "";
+      O.zalozNeboPrihlas(n, p).then(r => {
+        if(!el.isConnected) return;
+        if(r.error){ chyba.textContent = velke(r.error); btn.disabled = false; return; }
+        prihlasen(r.nick); hotovo(r.nick, false);
+      });
+    });
+    O.kdoJsem().then(n => {
+      if(!el.isConnected) return;
+      if(n) return prihlasen(n);
+      el.innerHTML = `<div class="qz-vyzvapole">
+          <input class="qz-pname-in" id="qz-vpnick" maxlength="20" autocomplete="username" aria-label="Přezdívka" placeholder="Přezdívka">
+          <input class="qz-pname-in" id="qz-vppin" type="password" inputmode="numeric" maxlength="8" autocomplete="current-password" aria-label="PIN" placeholder="PIN (4 až 8 číslic)">
+        </div>
+        <label class="qz-vyzvasouhlas"><input type="checkbox" id="qz-vpok"> Je mi aspoň 13 let a souhlasím s <a href="/podminky" target="_blank" rel="noopener">Podmínkami použití</a>.</label>
+        <p class="qz-vyzvatiche">Nová přezdívka založí profil, známá tě přihlásí.</p>
+        <p class="qz-vyzvachyba" role="alert"></p>`;
+      const stav = () => {
+        btn.disabled = !(el.querySelector("#qz-vpnick").value.trim() && /^[0-9]{4,8}$/.test(el.querySelector("#qz-vppin").value.trim()) && el.querySelector("#qz-vpok").checked);
+      };
+      el.querySelectorAll("input").forEach(i => i.addEventListener("input", stav));
+      el.querySelector("#qz-vpok").addEventListener("change", stav);
+    });
   }
 
   // Sdílení stejně jako u Turnaje pro partu: na telefonu systémový dialog (WhatsApp, SMS…),
@@ -2162,10 +2200,7 @@
     return pick(["Svět je plný překvapení. Tak co, ještě jednou?", "Tohle byla zahřívací výprava. Další kolo?"]);
   }
 
-  // `po.posli` = přezdívka čerstvě přihlášeného odesílatele: výsledek se vykreslí znovu
-  // a rovnou s nabídkou sdílení.
-  function endGame(po){
-    po = po || {};
+  function endGame(){
     stopTTS(); clearTimer(); clearSave(); releaseWake();
     const max=S.order.reduce((s,q)=>s+(q.difficulty||1)*100,0);
     const score=cur().score;
@@ -2195,10 +2230,9 @@
     // Ve škole se výzva nenabízí — hraje celá třída u tabule, ne jeden člověk.
     const vyzvaBox = S.school ? "" : `<div class="qz-vyzvabox">
         <div class="qz-vyzvah">${S.vyzva ? "Pošli odvetu" : "Vyzvi kamaráda"}</div>
-        <p class="qz-vyzvap">Pošli dál stejných ${n} ${plur(n,"otázku","otázky","otázek")} a uvidíte, kdo z vás ví víc. Výzvy jdou přes profil ve Světové lize, u tebe i u kamaráda.</p>
-        <div class="qz-vyzvaform">
-          <button class="qz-next" id="qz-vyzvapos">Poslat výzvu ${handArrowSvg(false)}</button>
-        </div>
+        <p class="qz-vyzvap">Pošli dál stejných ${n} ${plur(n,"otázku","otázky","otázek")} a uvidíte, kdo z vás ví víc.</p>
+        <div class="qz-vyzvaform" id="qz-vyzvaprof"></div>
+        <button class="qz-next qz-vyzvapos" id="qz-vyzvapos">Poslat výzvu ${handArrowSvg(false)}</button>
         <div id="qz-vyzvakde"></div>
       </div>`;
     body.innerHTML = `<div class="qz-screen qz-end">
@@ -2222,19 +2256,10 @@
       // Po výzvě by „znovu“ jen přehrálo tytéž otázky se známými odpověďmi — losuje se rychlá hra.
       if (S.school) startSchool(S.schoolLevel); else if (S.rychla || S.vyzva) rychlaHra(this); else startGame();
     });
-    // Výzvu posílá jen hráč s profilem (hráč 2026-10-13) a nese jeho přezdívku. Kdo je
-    // přihlášený, se zjistí DOPŘEDU, aby sdílení proběhlo přímo v rámci kliknutí.
+    // Výzvu posílá jen hráč s profilem (hráč 2026-10-13) a nese jeho přezdívku.
     const posli = body.querySelector("#qz-vyzvapos");
-    let prezdivka = po.posli || null;
-    if (posli && !prezdivka && window.ZKOnline && ZKOnline.kdoJsem) ZKOnline.kdoJsem().then(n => { prezdivka = n; });
-    if (posli) posli.addEventListener("click", () => {
-      const kde = body.querySelector("#qz-vyzvakde");
-      if (prezdivka || !(window.ZKOnline && ZKOnline.vyzadejProfil)) return posliVyzvu(kde, prezdivka || "", spravne);
-      ZKOnline.vyzadejProfil({ say: "Výzvu pošleš pod svou přezdívkou. Založ si profil, nebo se přihlas.",
-          podtitul: "Výzvu kamarádovi posíláš pod svou přezdívkou ze Světové ligy. Stačí přezdívka a PIN, pak se vrátíš ke svému výsledku." },
-        nick => endGame({ posli: nick }), () => endGame());
-    });
-    if (po.posli && posli){ say("Profil máš. Teď už jen poslat výzvu!"); posliVyzvu(body.querySelector("#qz-vyzvakde"), po.posli, spravne, true); }
+    if (posli) profilVeVyzve(body.querySelector("#qz-vyzvaprof"), posli,
+      (nick, gesto) => posliVyzvu(body.querySelector("#qz-vyzvakde"), nick, spravne, !gesto));
     body.querySelector("#qz-home").addEventListener("click", close);
   }
 

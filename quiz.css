@@ -442,19 +442,31 @@
 .qz-vyzvasrov b { font-family: 'Nunito', sans-serif; font-size: 24px; color: var(--ink); }
 .qz-vyzvaverdikt { margin-top: -4px; font-weight: 700; color: var(--teal); }
 .qz-vyzvabox { width: min(520px, 100%); margin: 22px 0 30px; display: flex; flex-direction: column; align-items: center; gap: 0; }
-/* Rytmus bloku: nadpis → text 10, text → formulář 22, formulář → sdílení 20. */
+/* Rytmus bloku: nadpis → text 10, text → profil 22, profil → tlačítko 18, → sdílení 20.
+   Profil (přezdívka + PIN) se vyplňuje přímo tady — hráč nechtěl odcházet na obrazovku ligy. */
 .qz-vyzvabox > .qz-vyzvap { margin: 10px 0 0; }
 .qz-vyzvabox > .qz-vyzvaform { margin-top: 22px; }
+.qz-vyzvabox > .qz-vyzvapos { margin-top: 18px; }
 .qz-vyzvabox > #qz-vyzvakde { margin-top: 20px; }
 .qz-vyzvah { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 800; color: var(--ink); }
 .qz-vyzvap { color: var(--muted); line-height: 1.6; max-width: 440px; }
-.qz-vyzvaform { display: flex; justify-content: center; gap: 10px; width: 100%; max-width: 440px; }
-.qz-vyzvaform .qz-pname-in { font-size: 15px; padding: 10px 12px; }
-.qz-vyzvaform .qz-next { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.qz-vyzvaform { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 440px; }
+.qz-vyzvaform:empty { display: none; }
+.qz-vyzvapole { display: flex; gap: 10px; width: 100%; }
+.qz-vyzvapole .qz-pname-in { flex: 1; min-width: 0; font-size: 15px; padding: 10px 12px; }
+.qz-vyzvasouhlas { font-size: 14px; color: var(--ink); line-height: 1.5; text-align: left; }
+.qz-vyzvasouhlas input { margin-right: 6px; vertical-align: -2px; }
+.qz-vyzvasouhlas a { color: var(--teal); }
+.qz-vyzvatiche { margin: 0; font-size: 13px; color: var(--muted); }
+.qz-vyzvachyba { margin: 0; font-size: 14px; color: var(--bad); font-weight: 700; }
+.qz-vyzvachyba:empty { display: none; }
+.qz-vyzvapos { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.qz-vyzvapos:disabled { opacity: .45; cursor: not-allowed; }
+.qz-vyzvaintro .qz-vyzvaform { margin: 4px 0 6px; }
 #qz-vyzvakde:empty { display: none; }
 .qz-vyzvatext { max-width: 460px; line-height: 1.6; color: var(--ink); font-size: 17px; }
 @media (max-width: 520px) {
-  .qz-vyzvaform { flex-direction: column; }
+  .qz-vyzvapole { flex-direction: column; }
   .qz-vyzvasrov > div { min-width: 0; flex: 1; }
 }
 /* Ilustrace nad výsledkem — rámeček jako u dlaždic rozcestníku (.qz-mode .ic-img), jen větší.
