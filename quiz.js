@@ -1531,8 +1531,7 @@
         <a class="qz-chip" href="mailto:?subject=${encodeURIComponent("Výzva v Cestokvízu")}&amp;body=${encodeURIComponent(zprava)}">E-mailem</a>
         <a class="qz-chip" href="https://wa.me/?text=${encodeURIComponent(zprava)}" target="_blank" rel="noopener">WhatsApp</a>
         <button type="button" class="qz-chip" id="qz-vyzvacopy">Zkopírovat odkaz</button>
-      </div>
-      <div class="zk-plink">${esc(url)}</div>`;
+      </div>`;
     const kopie = kde.querySelector("#qz-vyzvacopy");
     kopie.addEventListener("click", () => {
       if(navigator.clipboard) navigator.clipboard.writeText(url).then(() => { kopie.textContent = "Zkopírováno"; }, () => {});
