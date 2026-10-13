@@ -100,6 +100,12 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     pod ní jako flex se zalamováním (mřížka 2×2 by trojici rozdělila 2+1 i na desktopu).
     Karty `.qz-mode` mají obsah odshora — jinak u sousedních karet s různě dlouhým popiskem
     nesedí obrázky ani nadpisy (naměřeno 10 px rozdílu).
+  - **Tentýž den i Rychlá hra je KARTA mezi režimy** (offline mřížka 2×2: Rychlá hra, Sólo,
+    Párty, Škola; ilustrace letícího kufru se suvenýry `assets/mode-quick.jpg`, prompt
+    v `ui-irony-prompts.json`). Gemini dalo 16:9, čtverec je výřez s doplněnou oblohou
+    nahoře (jinak by se uřízlo sombrero nebo Eiffelovka). Karta je `div role=button`, protože
+    uvnitř je „Změnit“ a volba pásma — **`box-sizing: border-box` a `color: ButtonText`
+    nutné**, jinak div vyjde o 48 px širší a s hnědým písmem než tlačítka vedle.
   - Ověřeno v prohlížeči na 1280 a 375 px: obě dlaždice vedou kam mají, odhlášený projde
     registrací rovnou do hry, Domů i Profil z rozcestníku, nic nepřetéká, 0 textů malým
     písmenem. `test:offline` 958.

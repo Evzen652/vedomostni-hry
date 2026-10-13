@@ -1221,7 +1221,10 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
   const Q = fs.readFileSync(path.join(process.cwd(), "quiz.js"), "utf8").replace(/\r\n/g, "\n");
   const pick = Q.slice(Q.indexOf("function renderModePick("), Q.indexOf("function beginPick("));
   kontrola(/id="qz-quick"/.test(pick), "rozcestník nemá tlačítko Rychlá hra (id=\"qz-quick\")");
-  kontrola(/#qz-quick"\)\.addEventListener\("click",[^)]*rychlaHra\(/.test(pick), "tlačítko Rychlá hra není napojené na rychlaHra()");
+  // Od 2026-10-13 je Rychlá hra karta (div role=button) s volbou pásma uvnitř.
+  kontrola(/quick\.addEventListener\("click",[^\n]*rychlaHra\(quick\)/.test(pick) && /quick\.addEventListener\("keydown"/.test(pick),
+    "karta Rychlá hra není napojená na rychlaHra() (klik i klávesnice)");
+  kontrola(/qz-mode-quick" id="qz-quick" role="button" tabindex="0"/.test(pick), "karta Rychlá hra není ovladatelná klávesnicí (role/tabindex)");
   const rh = Q.slice(Q.indexOf("async function rychlaHra("), Q.indexOf("function startGame("));
   kontrola(/\.slice\(0,\s*RYCHLA_ZEMI\)/.test(rh) && /RYCHLA_ZEMI\s*=\s*\d+/.test(Q),
     "rychlaHra() nestahuje jen omezený počet zemí — na mobilu by čekala na celý fond");

@@ -771,16 +771,6 @@
            hráč 3. 10. vyřadil: z devíti témat jsou zeměpisná jen dvě.
            Je MIMO .qz-titlewrap, jinak by se glóbus centroval na nadpis i s ním. -->
       <p class="qz-modesub">Tisíce otázek o&nbsp;55 zemích světa. Od Bajkalu po Shakespeara. Každý týden přidáváme nové.</p>
-      <!-- Rychlá hra (2026-10-07, přání hráče: „abych nemusel vše proklikávat“): jedno
-           klepnutí = 10 otázek z náhodných zemí a všech témat. Pásmo si pamatuje
-           z poslední sólo hry (rychlaPasmo); „Změnit“ ho přepne bez opuštění rozcestníku. -->
-      <div class="qz-quick">
-        <button class="qz-go qz-quickgo" id="qz-quick">Rychlá hra ${handArrowSvg(false)}</button>
-        <p class="qz-quicknote">10 otázek z&nbsp;celého světa · <b id="qz-quickband">${esc(velke(BAND_NAMES[rychlaPasmo()]))}</b> · <button type="button" class="qz-quickchange" id="qz-quickchange">Změnit</button></p>
-        <div class="qz-quickbands" id="qz-quickbands" hidden>
-          ${["deti","starsi","dospeli"].map(b => `<button type="button" class="qz-chip${b===rychlaPasmo()?" on":""}" data-qband="${b}">${esc(velke(BAND_NAMES[b]))}</button>`).join("")}
-        </div>
-      </div>
       <!-- Online je od 2026-10-13 přímo tady, ve dvou dlaždicích, a lobby s pěti dlaždicemi
            je schované (hráč: „ja tu obrazovku vlastně nechápu“). Online souboj vede po
            přihlášení rovnou do hledání soupeře. Dvojice stojí nad trojicí offline režimů
@@ -791,6 +781,17 @@
       </div>
       <div class="qz-onlinerow" id="qz-onlinerow"></div>` : ""}
       <div class="qz-modes qz-modes-offline">
+        <!-- Rychlá hra (2026-10-07, přání hráče: „abych nemusel vše proklikávat“): jedno
+             klepnutí = 10 otázek z náhodných zemí a všech témat. Od 2026-10-13 je to karta
+             jako ostatní režimy (ilustrace letícího kufru). Je to div s role=button, ne
+             button: uvnitř je „Změnit“ a volba pásma, a tlačítko v tlačítku HTML nedovolí.
+             Pásmo si pamatuje z poslední sólo hry (rychlaPasmo). -->
+        <div class="qz-mode qz-mode-quick" id="qz-quick" role="button" tabindex="0"><div class="ic"><img class="ic-img" src="assets/male/mode-quick.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Rychlá hra</div><div class="d">Deset otázek z&nbsp;celého světa. Bez vybírání, rovnou do toho.</div>
+          <p class="qz-quicknote"><b id="qz-quickband">${esc(velke(BAND_NAMES[rychlaPasmo()]))}</b> · <button type="button" class="qz-quickchange" id="qz-quickchange">Změnit</button></p>
+          <div class="qz-quickbands" id="qz-quickbands" hidden>
+            ${["deti","starsi","dospeli"].map(b => `<button type="button" class="qz-chip${b===rychlaPasmo()?" on":""}" data-qband="${b}">${esc(velke(BAND_NAMES[b]))}</button>`).join("")}
+          </div>
+        </div>
         <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/male/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Kdo neví, kde leží Fidži, nemusí se nikomu přiznávat.</div></button>
         <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/male/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Tablet doprostřed stolu, 2 až 6 hráčů. Kdo prohraje, myje nádobí.</div></button>
         <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/male/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Promítni na tabuli a nech třídu hádat. Zeměpis, při kterém nikdo nespí.</div></button>
@@ -801,7 +802,12 @@
            neztratí a stránky mají vlastní Zpět do hry. -->
       <div class="qz-legalfoot"><a href="podminky">Podmínky použití</a> · <a href="soukromi">Ochrana údajů</a> · <a href="smazani-uctu">Smazání profilu</a></div>
     </div>`;
-    body.querySelector("#qz-quick").addEventListener("click", e => rychlaHra(e.currentTarget));
+    // Klik do volby pásma kartu nespouští — jen samotná karta.
+    const quick = body.querySelector("#qz-quick");
+    quick.addEventListener("click", e => { if(!e.target.closest(".qz-quicknote, .qz-quickbands")) rychlaHra(quick); });
+    quick.addEventListener("keydown", e => {
+      if(e.target === quick && (e.key === "Enter" || e.key === " ")){ e.preventDefault(); rychlaHra(quick); }
+    });
     body.querySelector("#qz-quickchange").addEventListener("click", () => {
       const box = body.querySelector("#qz-quickbands"); box.hidden = !box.hidden;
     });
@@ -1456,7 +1462,10 @@
   // „rychlá“ hra na mobilních datech čekala déle než ruční výběr jedné země. Každá země
   // má v každém pásmu aspoň 12 otázek (podlaha fondu), takže deset zemí stačí vždycky.
   async function rychlaHra(btn){
-    if(btn){ btn.disabled = true; btn.textContent = "Chystám otázky…"; }
+    // U karty se přepíše jen nadpis (.t), jinak by zmizel obrázek i volba pásma.
+    // Karta je div, `disabled` ji nezablokuje — dvojklik by hru rozjel dvakrát.
+    if(btn && btn.dataset.busy) return;
+    if(btn){ btn.dataset.busy = "1"; btn.disabled = true; (btn.querySelector(".t") || btn).textContent = "Chystám otázky…"; }
     const ccs = shuffle(Object.keys(COUNTRY_BY_CC).filter(cc => pocetProCc(cc) > 0)).slice(0, RYCHLA_ZEMI);
     S.pickMode = "solo";
     S.sel = { conts: [...new Set(ccs.map(cc => COUNTRY_CONT[cc]))], section: "__all__" };
