@@ -581,7 +581,7 @@
    = 456 px se na telefon nevejde. (2026-08-31) */
 .qz-modes { display: grid; grid-template-columns: 1fr; gap: 16px; justify-content: center; }
 @media (min-width: 560px) { .qz-modes { grid-template-columns: repeat(2, auto); } }
-/* Od 2026-10-13 dvě skupiny: nahoře online dvojice, pod ní offline 2×2 (Rychlá hra, Sólo,
+/* Od 2026-10-13 dvě skupiny: nahoře Rychlá hra + Online souboj, pod nimi 2×2 (Turnaj pro partu, Sólo,
    Párty, Škola). Mezi skupinami víc místa než uvnitř (18 + 16 = 34 proti 16). */
 .qz-modes-offline { margin-top: 16px; }
 .qz-onlinerow { position: relative; z-index: 1; margin-top: -6px; font-size: 14px; color: var(--muted); }

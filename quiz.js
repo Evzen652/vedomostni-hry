@@ -771,16 +771,12 @@
            hráč 3. 10. vyřadil: z devíti témat jsou zeměpisná jen dvě.
            Je MIMO .qz-titlewrap, jinak by se glóbus centroval na nadpis i s ním. -->
       <p class="qz-modesub">Tisíce otázek o&nbsp;55 zemích světa. Od Bajkalu po Shakespeara. Každý týden přidáváme nové.</p>
-      <!-- Online je od 2026-10-13 přímo tady, ve dvou dlaždicích, a lobby s pěti dlaždicemi
-           je schované (hráč: „ja tu obrazovku vlastně nechápu“). Online souboj vede po
-           přihlášení rovnou do hledání soupeře. Dvojice stojí nad trojicí offline režimů
-           jako vlastní skupina. Bot se v popisku NEZMIŇUJE (2026-08-31). -->
-      ${window.ZKOnline ? `<div class="qz-modes qz-modes-online">
-        <button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Online souboj</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>
-        <button class="qz-mode" id="qz-mode-parta"><div class="ic"><img class="ic-img" src="assets/zk-parta.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Turnaj pro partu</div><div class="d">Pošli kamarádům odkaz. Každý hraje stejné otázky, kdy se mu hodí.</div></button>
-      </div>
-      <div class="qz-onlinerow" id="qz-onlinerow"></div>` : ""}
-      <div class="qz-modes qz-modes-offline">
+      <!-- Nahoře Rychlá hra a Online souboj (hráč 2026-10-13: „dej rychlou hru úplně nahoru,
+           vedle ní bude on line souboj“) — dvě nejrychlejší cesty do hry. Pod nimi řádek
+           Žebříček · Výzvy · Profil a mřížka 2×2 se zbytkem režimů. Online je od 2026-10-13
+           přímo tady a lobby je schované (hráč: „ja tu obrazovku vlastně nechápu“). Bot se
+           v popisku NEZMIŇUJE (2026-08-31). -->
+      <div class="qz-modes qz-modes-top">
         <!-- Rychlá hra (2026-10-07, přání hráče: „abych nemusel vše proklikávat“): jedno
              klepnutí = 10 otázek z náhodných zemí a všech témat. Od 2026-10-13 je to karta
              jako ostatní režimy (ilustrace letícího kufru). Je to div s role=button, ne
@@ -792,6 +788,11 @@
             ${["deti","starsi","dospeli"].map(b => `<button type="button" class="qz-chip${b===rychlaPasmo()?" on":""}" data-qband="${b}">${esc(velke(BAND_NAMES[b]))}</button>`).join("")}
           </div>
         </div>
+        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Online souboj</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>` : ""}
+      </div>
+      ${window.ZKOnline ? `<div class="qz-onlinerow" id="qz-onlinerow"></div>` : ""}
+      <div class="qz-modes qz-modes-offline">
+        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-parta"><div class="ic"><img class="ic-img" src="assets/zk-parta.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Turnaj pro partu</div><div class="d">Pošli kamarádům odkaz. Každý hraje stejné otázky, kdy se mu hodí.</div></button>` : ""}
         <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/male/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Kdo neví, kde leží Fidži, nemusí se nikomu přiznávat.</div></button>
         <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/male/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Tablet doprostřed stolu, 2 až 6 hráčů. Kdo prohraje, myje nádobí.</div></button>
         <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/male/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Promítni na tabuli a nech třídu hádat. Zeměpis, při kterém nikdo nespí.</div></button>
