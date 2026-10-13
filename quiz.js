@@ -781,12 +781,16 @@
           ${["deti","starsi","dospeli"].map(b => `<button type="button" class="qz-chip${b===rychlaPasmo()?" on":""}" data-qband="${b}">${esc(velke(BAND_NAMES[b]))}</button>`).join("")}
         </div>
       </div>
-      <div class="qz-modes">
-        <!-- Pořadí: Online první, Škola poslední (2026-08-31). Online je jediný režim,
-             kde na hráče někdo čeká, takže patří dopředu; škola je nejužší případ užití.
-             Bot se v popisku NEZMIŇUJE — je to náhradní řešení pro prázdnou frontu,
-             ne důvod, proč sem jít. -->
-        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Světová online liga</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>` : ""}
+      <!-- Online je od 2026-10-13 přímo tady, ve dvou dlaždicích, a lobby s pěti dlaždicemi
+           je schované (hráč: „ja tu obrazovku vlastně nechápu“). Online souboj vede po
+           přihlášení rovnou do hledání soupeře. Dvojice stojí nad trojicí offline režimů
+           jako vlastní skupina. Bot se v popisku NEZMIŇUJE (2026-08-31). -->
+      ${window.ZKOnline ? `<div class="qz-modes qz-modes-online">
+        <button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Online souboj</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>
+        <button class="qz-mode" id="qz-mode-parta"><div class="ic"><img class="ic-img" src="assets/zk-parta.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Turnaj pro partu</div><div class="d">Pošli kamarádům odkaz. Každý hraje stejné otázky, kdy se mu hodí.</div></button>
+      </div>
+      <div class="qz-onlinerow" id="qz-onlinerow"></div>` : ""}
+      <div class="qz-modes qz-modes-offline">
         <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/male/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Sólo jízda</div><div class="d">Kdo neví, kde leží Fidži, nemusí se nikomu přiznávat.</div></button>
         <button class="qz-mode" id="qz-mode-party"><div class="ic"><img class="ic-img" src="assets/male/mode-party.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Párty souboj</div><div class="d">Tablet doprostřed stolu, 2 až 6 hráčů. Kdo prohraje, myje nádobí.</div></button>
         <button class="qz-mode" id="qz-mode-school"><div class="ic"><img class="ic-img" src="assets/male/mode-school.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SCHOOL}</span></div><div class="t">Škola hrou</div><div class="d">Promítni na tabuli a nech třídu hádat. Zeměpis, při kterém nikdo nespí.</div></button>
@@ -811,8 +815,19 @@
     body.querySelector("#qz-mode-party").addEventListener("click", () => beginPick("party"));
     body.querySelector("#qz-mode-school").addEventListener("click", () => beginPick("school"));
     // Online si přebírá #qz-body sám a vrátí ho zpátky přes callback (viz online.js).
+    const doOnline = kam => { showHomeBtn(true); window.ZKOnline.open(renderModePick, kam); };
     const onlineBtn = body.querySelector("#qz-mode-online");
-    if(onlineBtn) onlineBtn.addEventListener("click", () => { showHomeBtn(true); window.ZKOnline.open(renderModePick); });
+    if(onlineBtn) onlineBtn.addEventListener("click", () => doOnline("hrat"));
+    const partaBtn = body.querySelector("#qz-mode-parta");
+    if(partaBtn) partaBtn.addEventListener("click", () => doOnline("parta"));
+    // Žebříček, výzvy a profil jen pro přihlášené — profil musí zůstat dostupný kvůli
+    // smazání účtu. Dotahuje se asynchronně; guard na odpojený řádek je nutný.
+    const onlineRow = body.querySelector("#qz-onlinerow");
+    if(onlineRow && window.ZKOnline.kdoJsem) window.ZKOnline.kdoJsem().then(nick => {
+      if(!nick || !onlineRow.isConnected) return;
+      onlineRow.innerHTML = `<button type="button" data-kam="zebricek">Žebříček</button> · <button type="button" data-kam="vyzvy">Výzvy</button> · <button type="button" data-kam="profil">Profil ${esc(nick)}</button>`;
+      onlineRow.querySelectorAll("[data-kam]").forEach(x => x.addEventListener("click", () => doOnline(x.dataset.kam)));
+    });
     const openBtn = body.querySelector("#qz-resume-open");
     const modal = body.querySelector("#qz-resume-modal");
     if(openBtn && modal){

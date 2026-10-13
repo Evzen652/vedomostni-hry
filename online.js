@@ -241,9 +241,12 @@ window.ZKOnline = (function () {
     return new URLSearchParams(location.search).get("duel");
   }
 
-  function open(onExit) {
+  // `kam` = kam hráč z rozcestníku míří ("hrat", "parta", "zebricek", "vyzvy", "profil").
+  // Lobby je od 2026-10-13 schované (LOBBY_SKRYTE), takže po přihlášení se jde rovnou sem.
+  function open(onExit, kam) {
     body = document.getElementById("qz-body");
     exitCb = onExit;
+    cil = kam || null;
     stopAll();
     hostToken = null;
     var obnova = pendingReset();
@@ -771,8 +774,32 @@ window.ZKOnline = (function () {
   // klikací handler (`backBar("Zpět", renderLobby)`), takže dostane MouseEvent — a ten
   // by se přes esc() vykreslil jako červené „[object MouseEvent]". Ostatní obrazovky
   // (renderAccount, renderTournaments, renderVyzvy) ten guard mají; tady chyběl.
+  // LOBBY JE SCHOVANÉ (hráč 2026-10-13: „ja tu obrazovku vlastně nechápu“). Na rozcestníku
+  // jsou místo něj dvě dlaždice — Online proti soupeřům a Turnaj pro partu — a tichý řádek
+  // Žebříček · Výzvy · Profil. Denní pětka, Souboj na odkaz a Turnaj z appky zmizely, ale
+  // kód i server zůstávají: návrat je `LOBBY_SKRYTE = false`. Všech ~30 míst, která
+  // „vracejí do lobby“, tak místo toho vede tam, kam hráč mířil, nebo na rozcestník.
+  var LOBBY_SKRYTE = true;
+  var cil = null;
+  var CILE = {
+    hrat: function () { startQueue(); },
+    parta: function () { renderPartaNew(); },
+    zebricek: function () { renderBoard(); },
+    vyzvy: function () { renderVyzvy(); },
+    profil: function () { renderAccount(); },
+  };
+
   function renderLobby(msg) {
     if (typeof msg !== "string") msg = "";
+    if (LOBBY_SKRYTE) {
+      var c = cil; cil = null;
+      if (c && CILE[c]) return CILE[c]();
+      stopAll();
+      hostToken = null;
+      leave();
+      if (msg) say(msg.charAt(0).toUpperCase() + msg.slice(1));
+      return;
+    }
     stopAll();
     hostToken = null;
     var v = vokativ(S.me.nick);
@@ -1452,7 +1479,8 @@ window.ZKOnline = (function () {
           '<button class="qz-next" id="zk-tnext">Další kolo ' + handArrowSvg(false) + '</button>'
         : (g.status === "done" && g.players.length > 1
             ? '<button class="qz-more" id="zk-rematch">Odveta</button>' : "") +
-          '<button class="qz-next" id="zk-lobby">Zpět do online ' + handArrowSvg(false) + '</button>';
+          '<button class="qz-more" id="zk-lobby">Domů</button>' +
+          '<button class="qz-next" id="zk-again">Hrát znovu ' + handArrowSvg(false) + '</button>';
 
       body.innerHTML =
         '<div class="qz-screen qz-end zk-wrap">' +
@@ -1469,6 +1497,7 @@ window.ZKOnline = (function () {
       on("zk-lobby", function () {
         refreshMe(renderLobby);
       });
+      on("zk-again", startQueue);
       on("zk-rematch", function () {
         req("/game/" + id + "/rematch", { method: "POST" }).then(function (rr) {
           // Proti ČLOVĚKU je odveta od 2026-09-26 výzva: soupeř ji uvidí v lobby a hra

@@ -81,6 +81,29 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-13 — ONLINE LOBBY SCHOVANÉ. Na rozcestníku jsou rovnou dvě dlaždice: Online
+  souboj a Turnaj pro partu.** Hráč o lobby: *„ja tu obrazovku vlastně nechápu“* — pět dlaždic,
+  z nich tři skoro totéž („pošli odkaz, kamarád hraje stejné otázky“). Smysl mu dávalo jen
+  online proti soupeřům a turnaj pro partu, a chtěl je přímo na úvodní straně.
+  - **Rozhodl: Denní pětka, Souboj na odkaz a Turnaj SCHOVAT** (kód i server zůstávají)
+    a Online souboj vede **rovnou do hledání soupeře**.
+  - **`LOBBY_SKRYTE = true` v `online.js`.** Na lobby vede ~30 míst; místo přepisování
+    každého z nich `renderLobby()` při schovaném lobby spustí cíl z rozcestníku
+    (`ZKOnline.open(zpet, kam)`, `kam` = hrat / parta / zebricek / vyzvy / profil, tabulka
+    `CILE`), nebo vrátí na rozcestník (a případnou hlášku řekne hostitel). Funguje to i po
+    přihlášení/registraci, protože ta končí voláním `renderLobby`. **Návrat lobby = jedna
+    konstanta na `false`.**
+  - **Přihlášený hráč má pod online dvojicí tichý řádek Žebříček · Výzvy · Profil X**
+    (`ZKOnline.kdoJsem()`, asynchronně). Profil musí zůstat dostupný kvůli smazání účtu.
+  - **Výsledek online souboje: „Domů“ a „Hrát znovu“** místo „Zpět do online“.
+  - Rozcestník má dvě skupiny: online dvojice nahoře, offline trojice (Sólo, Párty, Škola)
+    pod ní jako flex se zalamováním (mřížka 2×2 by trojici rozdělila 2+1 i na desktopu).
+    Karty `.qz-mode` mají obsah odshora — jinak u sousedních karet s různě dlouhým popiskem
+    nesedí obrázky ani nadpisy (naměřeno 10 px rozdílu).
+  - Ověřeno v prohlížeči na 1280 a 375 px: obě dlaždice vedou kam mají, odhlášený projde
+    registrací rovnou do hry, Domů i Profil z rozcestníku, nic nepřetéká, 0 textů malým
+    písmenem. `test:offline` 958.
+
 - **2026-10-13 — Výzvu kamaráda jde PŘIJMOUT JEN S PROFILEM ve Světové lize** (hráč: *„chci,
   aby ho to nutilo si jej založit“*). Odkaz od kamaráda tak přivádí lidi do online části.
   Hra sama běží dál offline v `quiz.js`.

@@ -1268,6 +1268,12 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
     kontrola(/zalozNeboPrihlas:\s*zalozNeboPrihlas/.test(O) && /kdoJsem:\s*kdoJsem/.test(O), "online.js neexportuje zalozNeboPrihlas/kdoJsem");
     kontrola(/status === 409\) return req\("\/auth\/login"/.test(O), "známá přezdívka se v bloku výzvy nepřihlásí (chybí přechod 409 → login)");
     kontrola(!/qz-vyzvajm/.test(Q), "výsledek sóla má pořád volné pole na jméno místo přezdívky z profilu");
+    // Online na rozcestníku (2026-10-13): dvě dlaždice místo lobby, lobby schované konstantou.
+    const pick = telo("renderModePick");
+    kontrola(/id="qz-mode-online"/.test(pick) && /id="qz-mode-parta"/.test(pick), "rozcestník nemá dlaždice Online souboj a Turnaj pro partu");
+    kontrola(/doOnline\("hrat"\)/.test(pick) && /doOnline\("parta"\)/.test(pick), "online dlaždice nevedou rovnou do hry / do turnaje pro partu");
+    kontrola(/data-kam="profil"/.test(pick), "přihlášený hráč nemá z rozcestníku cestu do Profilu (smazání účtu musí být dostupné)");
+    kontrola(/var LOBBY_SKRYTE = true;/.test(O) && /if \(LOBBY_SKRYTE\)/.test(O), "lobby online části je zase vidět");
     kontrola(!/Světové lize/.test(telo("endGame")) && !/Světové lize/.test(telo("otevriVyzvu")),
       "výzva zase posílá hráče do Světové ligy (hráč: „nechci nikam odcházet“)");
   }
