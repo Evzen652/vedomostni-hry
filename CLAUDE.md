@@ -83,7 +83,13 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
 - **2026-10-13 — Výzvu kamaráda jde PŘIJMOUT JEN S PROFILEM ve Světové lize** (hráč: *„chci,
   aby ho to nutilo si jej založit“*). Odkaz od kamaráda tak přivádí lidi do online části.
-  Odesílatel profil mít nemusí (posílá ze sóla). Hra sama běží dál offline v `quiz.js`.
+  Hra sama běží dál offline v `quiz.js`.
+  > **Hned potom i ODESÍLATEL** (hráč: *„ať to musí mít i ten, kdo výzvu posílá“*). Pole na
+  > jméno zmizelo, odkaz nese přezdívku z profilu a klíč `zk_vyzva_jmeno` je pryč (i ze zásad).
+  > Výsledek se přes `ZKOnline.kdoJsem()` ptá DOPŘEDU, kdo je přihlášený: `navigator.share`
+  > musí běžet přímo v kliknutí, po čekání na síť ho prohlížeč odmítne. Nepřihlášený projde
+  > přihlášením a vrátí se na `endGame({ posli: přezdívka })` s otevřeným sdílením (na telefonu
+  > tlačítko „Sdílet výzvu“ — z téhož důvodu). `vyzadejProfil` bere texty `{ say, podtitul }`.
   - **`ZKOnline.vyzadejProfil(kdo, hotovo, zpet)`** v `online.js`: přihlášený hraje hned,
     jinak `renderAuth` s vlastním textem („Evžen tě vyzývá. Založ si profil…“) a po úspěchu
     `poPrihlaseni()` místo lobby. „Zpět“ vrátí na úvod výzvy. `open()` a `leave()` stav

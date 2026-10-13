@@ -448,7 +448,7 @@
 .qz-vyzvabox > #qz-vyzvakde { margin-top: 20px; }
 .qz-vyzvah { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 800; color: var(--ink); }
 .qz-vyzvap { color: var(--muted); line-height: 1.6; max-width: 440px; }
-.qz-vyzvaform { display: flex; gap: 10px; width: 100%; max-width: 440px; }
+.qz-vyzvaform { display: flex; justify-content: center; gap: 10px; width: 100%; max-width: 440px; }
 .qz-vyzvaform .qz-pname-in { font-size: 15px; padding: 10px 12px; }
 .qz-vyzvaform .qz-next { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
 #qz-vyzvakde:empty { display: none; }

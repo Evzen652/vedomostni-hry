@@ -266,19 +266,32 @@ window.ZKOnline = (function () {
   // (2026-10-13), ať odkaz od kamaráda přivádí lidi do Světové ligy. Hra sama ale běží
   // offline v quiz.js, takže tady se jen přihlásí a předá řízení zpátky (`hotovo`).
   var poPrihlaseni = null, duvodPrihlaseni = null;
-  function vyzadejProfil(kdo, hotovo, zpet) {
+  // `texty` = { say, podtitul } pro obrazovku přihlášení; `hotovo` dostane přezdívku.
+  function vyzadejProfil(texty, hotovo, zpet) {
     body = document.getElementById("qz-body");
     exitCb = zpet;
     stopAll();
     hostToken = null;
-    var pokracuj = function () { poPrihlaseni = null; duvodPrihlaseni = null; hotovo(); };
-    var prihlasit = function () { poPrihlaseni = pokracuj; duvodPrihlaseni = kdo; renderAuth(); };
+    var pokracuj = function () { poPrihlaseni = null; duvodPrihlaseni = null; hotovo(S.me && S.me.nick); };
+    var prihlasit = function () { poPrihlaseni = pokracuj; duvodPrihlaseni = texty; renderAuth(); };
     if (!token.get()) return prihlasit();
     return req("/me").then(function (r) {
       if (r.status !== 200) { token.clear(); return prihlasit(); }
       S.me = r.body;
       pokracuj();
     });
+  }
+
+  // Kdo je na tomhle zařízení přihlášený (přezdívka), nebo null. Bez překreslování obrazovky —
+  // výsledek sóla se ptá dopředu, ať „Poslat výzvu“ sdílí hned v rámci kliknutí
+  // (navigator.share po čekání na síť prohlížeč odmítne, chce čerstvé gesto).
+  function kdoJsem() {
+    if (!token.get()) return Promise.resolve(null);
+    return req("/me").then(function (r) {
+      if (r.status !== 200) return null;
+      S.me = r.body;
+      return r.body.nick || null;
+    }, function () { return null; });
   }
 
   function leave() {
@@ -301,7 +314,7 @@ window.ZKOnline = (function () {
     var vyzva = !!pendingDuel();
     var kamarad = duvodPrihlaseni;
     say(kamarad
-      ? kamarad + " tě vyzývá. Založ si profil a jdeme na to."
+      ? kamarad.say
       : vyzva
       ? "Někdo tě vyzval na souboj. Přihlas se a jdeme na to."
       : mode === "register"
@@ -309,7 +322,7 @@ window.ZKOnline = (function () {
         : "Online hraní chce jméno. Stačí přezdívka a PIN.");
     var isReg = mode === "register";
     var podtitul = kamarad
-      ? "Na přijetí výzvy potřebuješ profil. Stačí přezdívka a PIN, souboj pak začne hned."
+      ? kamarad.podtitul
       : vyzva
       ? "Někdo tě vyzval na souboj — přihlas se a jde se hrát."
       : isReg
@@ -2175,5 +2188,5 @@ window.ZKOnline = (function () {
   // spolehlivější než `beforeunload` (ten na mobilech často neproběhne vůbec).
   window.addEventListener("pagehide", function () { opustFrontu(true); });
 
-  return { open: open, stopAll: stopAll, leaveQueue: opustFrontu, vyzadejProfil: vyzadejProfil };
+  return { open: open, stopAll: stopAll, leaveQueue: opustFrontu, vyzadejProfil: vyzadejProfil, kdoJsem: kdoJsem };
 })();

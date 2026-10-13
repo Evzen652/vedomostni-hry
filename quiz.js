@@ -1461,7 +1461,6 @@
   // vyzyvatele, jeho (nepovinné) jméno a pásmo. Kamarád dostane přesně tytéž otázky ve
   // stejném pořadí a na konci uvidí srovnání. Opačným směrem výsledek nedojde — na to
   // je online Turnaj pro partu; tady odpověď kamarád pošle zpátky jako novou výzvu.
-  const VYZVA_JMENO_KEY = "zk_vyzva_jmeno";
   function b64url(s){ return btoa(unescape(encodeURIComponent(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); }
   function zB64url(s){ s = s.replace(/-/g,"+").replace(/_/g,"/"); while(s.length % 4) s += "="; return decodeURIComponent(escape(atob(s))); }
   function kodVyzvy(ids, spravne, jmeno, band){
@@ -1519,7 +1518,9 @@
     // Výzva se přijímá jen s profilem (hráč 2026-10-13: „chci, aby ho to nutilo si jej
     // založit“). Kdo je přihlášený, hraje hned; „Zpět“ z přihlášení vrátí na tuhle obrazovku.
     body.querySelector("#qz-vyzvago").addEventListener("click", () => {
-      if(window.ZKOnline && ZKOnline.vyzadejProfil) ZKOnline.vyzadejProfil(kdo, zahraj, () => otevriVyzvu(kod));
+      if(window.ZKOnline && ZKOnline.vyzadejProfil) ZKOnline.vyzadejProfil({ say: kdo + " tě vyzývá. Založ si profil a jdeme na to.",
+        podtitul: "Na přijetí výzvy potřebuješ profil. Stačí přezdívka a PIN, souboj pak začne hned." },
+        zahraj, () => otevriVyzvu(kod));
       else zahraj();
     });
     body.querySelector("#qz-home").addEventListener("click", close);
@@ -1527,12 +1528,19 @@
 
   // Sdílení stejně jako u Turnaje pro partu: na telefonu systémový dialog (WhatsApp, SMS…),
   // na počítači tlačítka. Nic se neposílá z našeho serveru.
-  function posliVyzvu(kde, jmeno, spravne){
+  // `bezGesta`: volá se po přihlášení, tedy ne přímo z kliknutí — navigator.share by prohlížeč
+  // odmítl, takže se na telefonu nabídne tlačítko, které sdílí až na další klepnutí.
+  function posliVyzvu(kde, jmeno, spravne, bezGesta){
     const url = location.origin + "/hra?vyzva=" + kodVyzvy(S.order.map(q => q.id), spravne, jmeno, S.band);
     const n = S.order.length;
     const text = (jmeno ? velke(jmeno) + ": " : "") + `Mám ${spravne} z ${n} v Cestokvízu. Dáš víc? Stejné otázky na tebe čekají tady:`;
     const dotyk = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
-    if(dotyk && navigator.share){ navigator.share({ title:"Cestokvíz", text, url }).catch(() => {}); return; }
+    if(dotyk && navigator.share){
+      if(!bezGesta){ navigator.share({ title:"Cestokvíz", text, url }).catch(() => {}); return; }
+      kde.innerHTML = `<div class="zk-psharebox"><button type="button" class="qz-chip" id="qz-vyzvasdil">Sdílet výzvu</button></div>`;
+      kde.querySelector("#qz-vyzvasdil").addEventListener("click", () => navigator.share({ title:"Cestokvíz", text, url }).catch(() => {}));
+      return;
+    }
     const zprava = text + "\n\n" + url;
     kde.innerHTML = `<div class="zk-psharebox">
         <a class="qz-chip" href="mailto:?subject=${encodeURIComponent("Výzva v Cestokvízu")}&amp;body=${encodeURIComponent(zprava)}">E-mailem</a>
@@ -2154,7 +2162,10 @@
     return pick(["Svět je plný překvapení. Tak co, ještě jednou?", "Tohle byla zahřívací výprava. Další kolo?"]);
   }
 
-  function endGame(){
+  // `po.posli` = přezdívka čerstvě přihlášeného odesílatele: výsledek se vykreslí znovu
+  // a rovnou s nabídkou sdílení.
+  function endGame(po){
+    po = po || {};
     stopTTS(); clearTimer(); clearSave(); releaseWake();
     const max=S.order.reduce((s,q)=>s+(q.difficulty||1)*100,0);
     const score=cur().score;
@@ -2181,13 +2192,11 @@
         </div>
         <p class="qz-vyzvaverdikt">${verdikt}</p>`;
     }
-    let jmeno = ""; try { jmeno = localStorage.getItem(VYZVA_JMENO_KEY) || ""; } catch(e){}
     // Ve škole se výzva nenabízí — hraje celá třída u tabule, ne jeden člověk.
     const vyzvaBox = S.school ? "" : `<div class="qz-vyzvabox">
         <div class="qz-vyzvah">${S.vyzva ? "Pošli odvetu" : "Vyzvi kamaráda"}</div>
-        <p class="qz-vyzvap">Pošli dál stejných ${n} ${plur(n,"otázku","otázky","otázek")} a uvidíte, kdo z vás ví víc. Kamarád si na přijetí založí profil ve Světové lize.</p>
+        <p class="qz-vyzvap">Pošli dál stejných ${n} ${plur(n,"otázku","otázky","otázek")} a uvidíte, kdo z vás ví víc. Výzvy jdou přes profil ve Světové lize, u tebe i u kamaráda.</p>
         <div class="qz-vyzvaform">
-          <input class="qz-pname-in" id="qz-vyzvajm" maxlength="20" autocomplete="off" aria-label="Tvoje jméno" placeholder="Tvoje jméno (nepovinné)" value="${esc(jmeno)}">
           <button class="qz-next" id="qz-vyzvapos">Poslat výzvu ${handArrowSvg(false)}</button>
         </div>
         <div id="qz-vyzvakde"></div>
@@ -2213,12 +2222,19 @@
       // Po výzvě by „znovu“ jen přehrálo tytéž otázky se známými odpověďmi — losuje se rychlá hra.
       if (S.school) startSchool(S.schoolLevel); else if (S.rychla || S.vyzva) rychlaHra(this); else startGame();
     });
+    // Výzvu posílá jen hráč s profilem (hráč 2026-10-13) a nese jeho přezdívku. Kdo je
+    // přihlášený, se zjistí DOPŘEDU, aby sdílení proběhlo přímo v rámci kliknutí.
     const posli = body.querySelector("#qz-vyzvapos");
+    let prezdivka = po.posli || null;
+    if (posli && !prezdivka && window.ZKOnline && ZKOnline.kdoJsem) ZKOnline.kdoJsem().then(n => { prezdivka = n; });
     if (posli) posli.addEventListener("click", () => {
-      const jm = body.querySelector("#qz-vyzvajm").value.trim().slice(0, 20);
-      try { localStorage.setItem(VYZVA_JMENO_KEY, jm); } catch(e){}
-      posliVyzvu(body.querySelector("#qz-vyzvakde"), jm, spravne);
+      const kde = body.querySelector("#qz-vyzvakde");
+      if (prezdivka || !(window.ZKOnline && ZKOnline.vyzadejProfil)) return posliVyzvu(kde, prezdivka || "", spravne);
+      ZKOnline.vyzadejProfil({ say: "Výzvu pošleš pod svou přezdívkou. Založ si profil, nebo se přihlas.",
+          podtitul: "Výzvu kamarádovi posíláš pod svou přezdívkou ze Světové ligy. Stačí přezdívka a PIN, pak se vrátíš ke svému výsledku." },
+        nick => endGame({ posli: nick }), () => endGame());
     });
+    if (po.posli && posli){ say("Profil máš. Teď už jen poslat výzvu!"); posliVyzvu(body.querySelector("#qz-vyzvakde"), po.posli, spravne, true); }
     body.querySelector("#qz-home").addEventListener("click", close);
   }
 

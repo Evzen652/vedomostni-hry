@@ -1264,6 +1264,9 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
     const O = fs.readFileSync(path.join(process.cwd(), "online.js"), "utf8").replace(/\r\n/g, "\n");
     kontrola(/ZKOnline\.vyzadejProfil\(/.test(telo("otevriVyzvu")), "přijetí výzvy nejde přes přihlášení (ZKOnline.vyzadejProfil)");
     kontrola(/vyzadejProfil:\s*vyzadejProfil/.test(O), "online.js neexportuje vyzadejProfil");
+    // I odesílatel musí mít profil a odkaz nese jeho přezdívku, ne volně psané jméno.
+    kontrola(/ZKOnline\.vyzadejProfil\(/.test(telo("endGame")), "poslání výzvy nejde přes přihlášení");
+    kontrola(!/qz-vyzvajm/.test(Q), "výsledek sóla má pořád volné pole na jméno místo přezdívky z profilu");
     kontrola(/refreshMe\(function \(\) \{\s*if \(poPrihlaseni\) return poPrihlaseni\(\);/.test(O),
       "po přihlášení se výzva nespustí — online.js skončí v lobby");
   }
