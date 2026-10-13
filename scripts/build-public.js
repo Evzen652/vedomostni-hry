@@ -31,7 +31,7 @@ const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js",
   "podminky.html", "soukromi.html", "smazani-uctu.html", "pravni.css",
   "manifest.json", "sw.js", "favicon.ico"];
 const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
-const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json", "data/konflikty.json"];
+const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json", "data/konflikty.json", "data/bez-ilustrace.json"];
 
 function kopiruj(zdroj, cil) {
   fs.mkdirSync(path.dirname(cil), { recursive: true });
@@ -69,6 +69,7 @@ for (const s of SLOZKY) celkem += kopirujStrom(s);
 //
 // Index počtů se musí přepočítat ZE ZBYLÝCH otázek, jinak by dlaždice offline hry
 // slibovaly víc, než kolik jich appka doopravdy má.
+const { hratelnaOffline } = require("./hratelne.js");
 let vyhozeno = 0;
 const indexDist = {};
 const QDIR = path.join(OUT, "data", "questions");
@@ -76,7 +77,8 @@ if (fs.existsSync(QDIR)) {
   for (const f of fs.readdirSync(QDIR).filter(f => f.endsWith(".json"))) {
     const cesta = path.join(QDIR, f);
     const qs = JSON.parse(fs.readFileSync(cesta, "utf8"));
-    const verejne = qs.filter(q => q.online_only !== true);
+    // Bez ilustrace ven nejde ani veřejná otázka (2026-10-13, scripts/hratelne.js).
+    const verejne = qs.filter(hratelnaOffline);
     vyhozeno += qs.length - verejne.length;
     indexDist[f.replace(/\.json$/, "")] = verejne.length;
     // Formát fondu je 1 mezera + CRLF (CLAUDE.md) — dist není místo, kde to měnit.

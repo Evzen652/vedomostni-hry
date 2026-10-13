@@ -584,15 +584,20 @@
     // S první zemí přijde i mapa otázek, které si navzájem prozrazují odpověď (viz
     // bezKonfliktu). Při startu ne — rychlý start stojí na dvou souborech. Když se
     // nestáhne, hraje se jako dřív, jen bez téhle ohleduplnosti.
-    const [konflikty, ...nactene] = await Promise.all([
+    // Se stejnou první zemí přijde i seznam otázek BEZ ILUSTRACE (2026-10-13): ty se
+    // nehrají nikde, dokud obrázek nedostanou. Na webu je build-public.js z dat vyhazuje
+    // sám, lokálně se ale servíruje kořen repa, kde v datech jsou.
+    const [konflikty, bezIlustrace, ...nactene] = await Promise.all([
       data.konflikty || fetch("data/konflikty.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
+      data.bezIlustrace || fetch("data/bez-ilustrace.json").then(r=>r.ok?r.json():[]).then(a=>new Set(a)).catch(()=>new Set()),
       ...chybi.map(cc => fetch(`data/questions/${cc}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]))]);
     data.konflikty = konflikty;
+    data.bezIlustrace = bezIlustrace;
     // `online_only` se odfiltruje i tady, i když je build-public.js z veřejných dat
     // vyhazuje: v lokálním vývoji se servíruje kořen repa, kde JSOU, a offline hra
     // by je jinak nabízela — tedy jinak než nasazená appka. Druhá pojistka stojí nic.
     chybi.forEach((cc,i) => {
-      data.qByCc[cc] = (nactene[i] || []).filter(q => q.online_only !== true);
+      data.qByCc[cc] = (nactene[i] || []).filter(q => q.online_only !== true && !bezIlustrace.has(q.id));
     });
   }
   // dostupnost otázek

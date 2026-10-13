@@ -81,6 +81,22 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-13 — OTÁZKA BEZ ILUSTRACE SE NEHRAJE NIKDE — ani lokálně, ani na webu, ani online.**
+  Hráč narazil lokálně na švédskou otázku z kampaně s razítkem místo obrázku: *„tyhle otázky
+  jsem nechtěl zařadit… až budou mít ilustraci“*. Do teď to hlídalo jen to, že se kampaň
+  nesloučila do `master` — pracovní větev je ale nabízela.
+  - **Pravidlo žije na JEDNOM místě: `scripts/hratelne.js`** (`maIlustraci`, `hratelnaOffline`
+    = ne serverová a existuje `img/{id}.jpg`). Používá ho index počtů, `build-public.js`
+    (na web jde jen hratelné) i `sync-d1-questions.js` (bez obrázku do D1 nejde).
+  - **Klient: `npm run build-index` nově píše i `data/bez-ilustrace.json`** (seznam id)
+    a `ensureQuestionsFor` je po stažení země vyřadí. Je v `SKORAPKA` service workeru
+    a v `JEDNOTLIVE` buildu. Zastaralý seznam hlásí `validate` jako CHYBU.
+  - **Po každé dávce ilustrací tedy `npm run build-index`** — otázky se zařadí samy, po
+    jedné, jak dostávají obrázky. Kampaň tím přestává být „všechno, nebo nic“: na web by
+    šlo nasadit i zčásti hotovou, ilustrované otázky by vyšly a zbytek ne.
+  - Stav: mimo hru 1 618 otázek. `test:offline` 940 (+2, ověřeno mutací), `validate` 0 chyb.
+    Ověřeno v prohlížeči: rychlá hra přes 10 zemí, 10 otázek s ilustrací, žádná ze seznamu.
+
 - **2026-10-07 — Ilustrace kampaně (2 200 otázek): jedou autonomně po dávkách ~210 kusů,
   vždy 5 zemí abecedně + opravy z předchozí kontroly. ROZPRACOVÁNO, NENASAZENO.**
   Hráč: *„pokračuj autonomně až do vyčerpání kreditu“*. **KREDIT DOŠEL 2026-10-07**

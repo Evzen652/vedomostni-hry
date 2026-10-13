@@ -278,6 +278,15 @@ sekce("Výběr: otázky ve hře si navzájem neprozrazují odpověď");
   for (const f of ["startGame", "startSchool"])
     kontrola(/S\.order\s*=\s*bezKonfliktu\(/.test(telo(f)), f + " nelosuje přes bezKonfliktu — otázky si můžou prozradit odpověď");
   kontrola(telo("ensureQuestionsFor").includes('"data/konflikty.json"'), "ensureQuestionsFor nestahuje data/konflikty.json");
+  // Otázky bez ilustrace se nehrají (2026-10-13): klient je vyřadí podle seznamu,
+  // build je nepustí na web. Bez jednoho z toho by se lokálně nebo na webu objevily.
+  kontrola(telo("ensureQuestionsFor").includes('"data/bez-ilustrace.json"') && /bezIlustrace\.has\(q\.id\)/.test(telo("ensureQuestionsFor")),
+    "ensureQuestionsFor nevyřazuje otázky bez ilustrace");
+  {
+    const bp = fs.readFileSync(path.join(process.cwd(), "scripts", "build-public.js"), "utf8");
+    kontrola(/qs\.filter\(hratelnaOffline\)/.test(bp) && bp.includes('"data/bez-ilustrace.json"'),
+      "build-public.js pouští na web otázky bez ilustrace nebo nekopíruje data/bez-ilustrace.json");
+  }
   kontrola(fs.readFileSync(path.join(process.cwd(), "scripts", "build-public.js"), "utf8").includes('"data/konflikty.json"'),
     "build-public.js nekopíruje data/konflikty.json do dist/ — nasazená hra by mapu neměla");
 

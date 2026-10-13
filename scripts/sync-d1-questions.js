@@ -60,11 +60,15 @@ const SLOUPCE = ["id", "cc", "country", "band", "section", "question", "answer",
 const rows = [];
 const videna = new Set();
 let preskoceno = 0;
+let bezObrazku = 0;
+const { maIlustraci } = require("./hratelne.js");
 
 for (const file of fs.readdirSync(SRC).filter(f => f.endsWith(".json"))) {
   for (const q of JSON.parse(fs.readFileSync(path.join(SRC, file), "utf8"))) {
     if (videna.has(q.id)) { preskoceno++; continue; }
     if (!Array.isArray(q.distractors) || q.distractors.length !== 3) { preskoceno++; continue; }
+    // Bez ilustrace do databáze nejde — online by ji jinak losoval (2026-10-13).
+    if (!maIlustraci(q)) { bezObrazku++; continue; }
     videna.add(q.id);
     rows.push("(" + [
       sql(q.id), sql(q.cc), sql(q.country), sql(band(q)), sql(q.section),
@@ -125,7 +129,8 @@ if (process.argv.includes("--check")) {
 
 fs.writeFileSync(OUT, out.join("\n\n") + "\n", "utf8");
 console.log("zapsáno " + rows.length + " otázek do " + path.relative(process.cwd(), OUT) +
-  " (" + out.length + " příkazů" + (preskoceno ? ", přeskočeno " + preskoceno : "") + ")");
+  " (" + out.length + " příkazů" + (preskoceno ? ", přeskočeno " + preskoceno : "") +
+  (bezObrazku ? ", bez ilustrace vynecháno " + bezObrazku : "") + ")");
 console.log("\nlokálně:  npx wrangler d1 execute zemekviz --local  --file=data/d1-sync.sql");
 console.log("produkce: npx wrangler d1 execute zemekviz --remote --file=data/d1-sync.sql");
 console.log("kontrola: npm run db:sync -- --check");
