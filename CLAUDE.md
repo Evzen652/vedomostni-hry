@@ -120,6 +120,13 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     jedné, jak dostávají obrázky. Kampaň tím přestává být „všechno, nebo nic“: na web by
     šlo nasadit i zčásti hotovou, ilustrované otázky by vyšly a zbytek ne.
   - Stav: mimo hru 1 618 otázek. `test:offline` 940 (+2, ověřeno mutací), `validate` 0 chyb.
+  - **Hráč pak otázku bez obrázku viděl DÁL (gabonská `ga-q-siroka-rodina`) — vinu nesl
+    service worker, ne filtr.** Server i `quiz.js` byly správně; Chrome hráče ale podával
+    starý `quiz.js` z cache (stale-while-revalidate). **Na localhostu se proto service worker
+    neregistruje a `hra.html` starý odregistruje, smaže `cestokviz-*` cache a jednou znovu
+    načte** (navigace jde ze sítě, takže nová `hra.html` dorazí i přes starý worker). Ověřeno
+    v prohlížeči: zaregistrovaný worker s cache → po načtení 0 registrací, 0 cache.
+    Offline běh se tím lokálně testovat nedá; na to je náhledové nasazení.
     Ověřeno v prohlížeči: rychlá hra přes 10 zemí, 10 otázek s ilustrací, žádná ze seznamu.
 
 - **2026-10-07 — Ilustrace kampaně (2 200 otázek): jedou autonomně po dávkách ~210 kusů,
