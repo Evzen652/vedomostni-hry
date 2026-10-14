@@ -57,6 +57,7 @@ const SKORAPKA = [
   "/data/fondy.json",
   "/data/questions-index.json",
   "/data/konflikty.json",
+  "/data/bez-ilustrace.json",
 ];
 
 self.addEventListener("install", (e) => {

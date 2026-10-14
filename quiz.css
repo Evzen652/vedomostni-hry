@@ -430,6 +430,45 @@
 /* z holého čísla je věta — 52 px by přeteklo, korálová zůstává jako akcent proti tyrkysovému nadpisu */
 .qz-endscore { font-family: 'Nunito', sans-serif; font-size: clamp(24px, 4vw, 34px); font-weight: 700; color: var(--coral); }
 .qz-endrow { display: flex; gap: 12px; }
+/* Výsledek sóla (2026-10-13): hlavní je počet správných, body jen tichý řádek pod tím.
+   Mezery dělají skupiny: skóre + body těsně, srovnání a výzva jako samostatné bloky. */
+.qz-endscore b { font-weight: 800; }
+.qz-endbody { margin-top: -10px; color: var(--muted); font-size: 15px; display: inline-flex; align-items: center; gap: 6px; }
+.qz-vyzvasrov { display: flex; gap: 14px; margin-top: 14px; }
+.qz-vyzvasrov > div { min-width: 132px; padding: 12px 18px; border-radius: 14px; background: #fffaf0; border: 1.5px solid #e6d7b8;
+  display: flex; flex-direction: column; gap: 2px; }
+.qz-vyzvasrov > div.lepsi { border-color: var(--teal); background: #eef6f3; }
+.qz-vyzvasrov span { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.qz-vyzvasrov b { font-family: 'Nunito', sans-serif; font-size: 24px; color: var(--ink); }
+.qz-vyzvaverdikt { margin-top: -4px; font-weight: 700; color: var(--teal); }
+.qz-vyzvabox { width: min(520px, 100%); margin: 22px 0 30px; display: flex; flex-direction: column; align-items: center; gap: 0; }
+/* Rytmus bloku: nadpis → text 10, text → profil 22, profil → tlačítko 18, → sdílení 20.
+   Profil (přezdívka + PIN) se vyplňuje přímo tady — hráč nechtěl odcházet na obrazovku ligy. */
+.qz-vyzvabox > .qz-vyzvap { margin: 10px 0 0; }
+.qz-vyzvabox > .qz-vyzvaform { margin-top: 22px; }
+.qz-vyzvabox > .qz-vyzvapos { margin-top: 18px; }
+.qz-vyzvabox > #qz-vyzvakde { margin-top: 20px; }
+.qz-vyzvah { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 800; color: var(--ink); }
+.qz-vyzvap { color: var(--muted); line-height: 1.6; max-width: 440px; }
+.qz-vyzvaform { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 440px; }
+.qz-vyzvaform:empty { display: none; }
+.qz-vyzvapole { display: flex; gap: 10px; width: 100%; }
+.qz-vyzvapole .qz-pname-in { flex: 1; min-width: 0; font-size: 15px; padding: 10px 12px; }
+.qz-vyzvasouhlas { font-size: 14px; color: var(--ink); line-height: 1.5; text-align: left; }
+.qz-vyzvasouhlas input { margin-right: 6px; vertical-align: -2px; }
+.qz-vyzvasouhlas a { color: var(--teal); }
+.qz-vyzvatiche { margin: 0; font-size: 13px; color: var(--muted); }
+.qz-vyzvachyba { margin: 0; font-size: 14px; color: var(--bad); font-weight: 700; }
+.qz-vyzvachyba:empty { display: none; }
+.qz-vyzvapos { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.qz-vyzvapos:disabled { opacity: .45; cursor: not-allowed; }
+.qz-vyzvaintro .qz-vyzvaform { margin: 4px 0 6px; }
+#qz-vyzvakde:empty { display: none; }
+.qz-vyzvatext { max-width: 460px; line-height: 1.6; color: var(--ink); font-size: 17px; }
+@media (max-width: 520px) {
+  .qz-vyzvapole { flex-direction: column; }
+  .qz-vyzvasrov > div { min-width: 0; flex: 1; }
+}
 /* Ilustrace nad výsledkem — rámeček jako u dlaždic rozcestníku (.qz-mode .ic-img), jen větší.
    Margin navíc dělá z obrázku vlastní skupinu nad nadpisem (pravidlo o vzdušnosti). */
 .qz-endimg { width: min(220px, 52vw); height: auto; aspect-ratio: 1 / 1; object-fit: cover;
@@ -542,9 +581,20 @@
    = 456 px se na telefon nevejde. (2026-08-31) */
 .qz-modes { display: grid; grid-template-columns: 1fr; gap: 16px; justify-content: center; }
 @media (min-width: 560px) { .qz-modes { grid-template-columns: repeat(2, auto); } }
+/* Od 2026-10-13 dvě skupiny: nahoře Rychlá hra + Online souboj, pod nimi 2×2 (Turnaj pro partu, Sólo,
+   Párty, Škola). Mezi skupinami víc místa než uvnitř (18 + 16 = 34 proti 16). */
+.qz-modes-offline { margin-top: 16px; }
+.qz-onlinerow { position: relative; z-index: 1; margin-top: -6px; font-size: 14px; color: var(--muted); }
+.qz-onlinerow:empty { display: none; }
+.qz-onlinerow button { background: none; border: 0; padding: 4px 2px; font: inherit; color: var(--teal); font-weight: 700; cursor: pointer; }
+.qz-onlinerow button:hover { text-decoration: underline; }
 .qz-mode { width: 220px; background: var(--paper2); border: 2px solid #dccdb0; border-radius: 18px; padding: 22px 18px; cursor: pointer;
   box-shadow: 0 4px 0 #e3d5b8; font-family: inherit; text-align: center; transition: transform .12s, box-shadow .12s; }
 .qz-mode:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; }
+/* Obsah karty odshora: tlačítko jinak centruje svisle, a u sousedních karet s různě
+   dlouhým popiskem pak obrázky i nadpisy nesedí v jedné řadě. */
+.qz-mode { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; box-sizing: border-box; }
+/* box-sizing: tlačítka ho mají výchozí, karta Rychlé hry je div — bez toho vyšla o okraje a odsazení širší (338 proti 290 px). */
 .qz-mode .ic { display: flex; align-items: center; justify-content: center; margin-bottom: 6px; }
 .qz-mode .ic-img { width: 96px; height: 96px; object-fit: cover; border-radius: 14px; border: 3px solid #fffdf6; outline: 2px solid #e3d5b8;
   box-shadow: 0 5px 14px rgba(120,90,50,.28); display: block; transition: transform .15s; }
@@ -626,13 +676,11 @@
    na obal a po jeho zmenšení by vyjel nad horní okraj obrazovky. Výsledek: nadpis →
    podtitulek ~10 px, podtitulek → dlaždice 34 px (rytmus jako v lobby). */
 .qz-modesub { margin: -44px 0 16px; max-width: 30em; font-size: 16px; line-height: 1.5; color: var(--muted); }
-/* Rychlá hra (2026-10-07): jedna silná akce mezi podtitulkem a režimy. Tlačítko a popisek
-   pod ním jsou jedna skupina (8 px), k dlaždicím režimů je víc vzduchu (margin-bottom),
-   ať se „Rychlá hra“ nečte jako pátý režim. */
-.qz-quick { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center;
-  gap: 8px; margin: -4px 0 16px; }
-.qz-quickgo { display: inline-flex; align-items: center; gap: 10px; }
-.qz-quicknote { margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted); }
+/* Rychlá hra je od 2026-10-13 karta mezi režimy; pásmo a „Změnit“ jsou její spodní řádek. */
+.qz-quicknote { margin: 8px 0 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.qz-mode-quick .qz-quickbands { margin-top: 8px; }
+/* Barva písma jako u tlačítek (ButtonText): div by jinak zdědil hnědou stránky a nadpis by byl světlejší než u sousedních karet. */
+.qz-mode-quick { color: ButtonText; }
 .qz-quicknote b { color: var(--ink); font-weight: 700; }
 .qz-quickchange { background: none; border: 0; padding: 2px 0; font: inherit; font-weight: 700; color: var(--teal);
   cursor: pointer; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(42,127,127,.35); }

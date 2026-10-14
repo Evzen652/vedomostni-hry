@@ -133,6 +133,15 @@ for (const f of imgs) if (!known.has(path.basename(f, ".jpg"))) warn(`osiřelý 
         (rozdily.length > 5 ? ", …" : "") + ") — spusť `npm run build-index`");
     }
   }
+  // Seznam otázek bez ilustrace (2026-10-13) je taky generovaný. Zastaralý by buď pustil
+  // do hry otázku bez obrázku, nebo naopak držel venku otázku, která ho už má.
+  const { bezIlustrace } = require("./build-question-index.js");
+  const cestaBez = P("data/bez-ilustrace.json");
+  if (!fs.existsSync(cestaBez)) {
+    bad("chybí data/bez-ilustrace.json — spusť `npm run build-index`");
+  } else if (JSON.stringify(JSON.parse(fs.readFileSync(cestaBez, "utf8"))) !== JSON.stringify(bezIlustrace())) {
+    bad("data/bez-ilustrace.json je zastaralý — spusť `npm run build-index`");
+  }
 }
 
 // Mapa otázek, které si navzájem prozrazují odpověď (data/konflikty.json pro offline hru,

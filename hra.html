@@ -74,7 +74,19 @@
        Soubor leží v kořeni schválně: rozsah service workeru je dán jeho umístěním,
        takže odsud pokrývá i právní stránky. -->
   <script>
-    if ("serviceWorker" in navigator) {
+    // Na localhostu se service worker NEREGISTRUJE a starý se odklidí. Při vývoji podával
+    // z cache minulou verzi quiz.js (stale-while-revalidate), takže se změny projevily až
+    // napodruhé — hráč 2026-10-13 kvůli tomu viděl otázky, které nová verze už vyřazuje.
+    var mistni = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+    if (mistni && "serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (regs) {
+        if (!regs.length) return;
+        Promise.all(regs.map(function (r) { return r.unregister(); }))
+          .then(function () { return window.caches ? caches.keys() : []; })
+          .then(function (k) { return Promise.all(k.map(function (n) { return caches.delete(n); })); })
+          .then(function () { location.reload(); });
+      });
+    } else if ("serviceWorker" in navigator) {
       addEventListener("load", function () {
         navigator.serviceWorker.register("/sw.js").catch(function (e) {
           console.warn("[sw] registrace neprošla, hra běží dál bez offline režimu", e);

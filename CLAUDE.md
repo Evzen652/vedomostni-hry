@@ -81,6 +81,141 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-14 — Názvy dlaždic na rozcestníku jsou POKYNY K AKCI** (hráč: *„chybí pokyn k akci…
+  chci hrát.., hrej“*): Hraj hned, Vyzvi soupeře online (hráč: ať je slyšet, že jde o online), Pozvi partu, Hraj sólo, Hrajte u stolu, Hrajte
+  ve třídě. Mění se JEN `.t` na rozcestníku — jinde (drobečky, rozehrané hry, lobby) zůstávají
+  jména režimů. **„Hraj sám“ ne** (rod), proto „Hraj sólo“. Množné „Hrajte“ u párty a školy
+  schválně: hraje víc lidí naráz. `test:offline` 959, v prohlížeči 0 textů malým písmenem.
+
+- **2026-10-13 — ONLINE LOBBY SCHOVANÉ. Na rozcestníku jsou rovnou dvě dlaždice: Online
+  souboj a Turnaj pro partu.** Hráč o lobby: *„ja tu obrazovku vlastně nechápu“* — pět dlaždic,
+  z nich tři skoro totéž („pošli odkaz, kamarád hraje stejné otázky“). Smysl mu dávalo jen
+  online proti soupeřům a turnaj pro partu, a chtěl je přímo na úvodní straně.
+  - **Rozhodl: Denní pětka, Souboj na odkaz a Turnaj SCHOVAT** (kód i server zůstávají)
+    a Online souboj vede **rovnou do hledání soupeře**.
+  - **`LOBBY_SKRYTE = true` v `online.js`.** Na lobby vede ~30 míst; místo přepisování
+    každého z nich `renderLobby()` při schovaném lobby spustí cíl z rozcestníku
+    (`ZKOnline.open(zpet, kam)`, `kam` = hrat / parta / zebricek / vyzvy / profil, tabulka
+    `CILE`), nebo vrátí na rozcestník (a případnou hlášku řekne hostitel). Funguje to i po
+    přihlášení/registraci, protože ta končí voláním `renderLobby`. **Návrat lobby = jedna
+    konstanta na `false`.**
+  - **Přihlášený hráč má pod online dvojicí tichý řádek Žebříček · Výzvy · Profil X**
+    (`ZKOnline.kdoJsem()`, asynchronně). Profil musí zůstat dostupný kvůli smazání účtu.
+  - **Výsledek online souboje: „Domů“ a „Hrát znovu“** místo „Zpět do online“.
+  - Rozcestník má dvě skupiny: online dvojice nahoře, offline trojice (Sólo, Párty, Škola)
+    pod ní jako flex se zalamováním (mřížka 2×2 by trojici rozdělila 2+1 i na desktopu).
+    Karty `.qz-mode` mají obsah odshora — jinak u sousedních karet s různě dlouhým popiskem
+    nesedí obrázky ani nadpisy (naměřeno 10 px rozdílu).
+  - **Pořadí (hráč: „dej rychlou hru úplně nahoru, vedle ní bude on line souboj“):** nahoře
+    Rychlá hra + Online souboj, pod nimi řádek Žebříček · Výzvy · Profil, pak 2×2 Turnaj pro
+    partu, Sólo, Párty, Škola.
+  - **Tentýž den i Rychlá hra je KARTA mezi režimy** (nejdřív v offline mřížce 2×2: Rychlá hra, Sólo,
+    Párty, Škola; ilustrace letícího kufru se suvenýry `assets/mode-quick.jpg`, prompt
+    v `ui-irony-prompts.json`). Gemini dalo 16:9, čtverec je výřez s doplněnou oblohou
+    nahoře (jinak by se uřízlo sombrero nebo Eiffelovka). Karta je `div role=button`, protože
+    uvnitř je „Změnit“ a volba pásma — **`box-sizing: border-box` a `color: ButtonText`
+    nutné**, jinak div vyjde o 48 px širší a s hnědým písmem než tlačítka vedle.
+  - Ověřeno v prohlížeči na 1280 a 375 px: obě dlaždice vedou kam mají, odhlášený projde
+    registrací rovnou do hry, Domů i Profil z rozcestníku, nic nepřetéká, 0 textů malým
+    písmenem. `test:offline` 958.
+
+- **2026-10-13 — Výzvu kamaráda jde PŘIJMOUT JEN S PROFILEM ve Světové lize** (hráč: *„chci,
+  aby ho to nutilo si jej založit“*). Odkaz od kamaráda tak přivádí lidi do online části.
+  Hra sama běží dál offline v `quiz.js`.
+  > **Hned potom i ODESÍLATEL** (hráč: *„ať to musí mít i ten, kdo výzvu posílá“*). Pole na
+  > jméno zmizelo, odkaz nese přezdívku z profilu a klíč `zk_vyzva_jmeno` je pryč (i ze zásad).
+  > Výsledek se přes `ZKOnline.kdoJsem()` ptá DOPŘEDU, kdo je přihlášený: `navigator.share`
+  > musí běžet přímo v kliknutí, po čekání na síť ho prohlížeč odmítne. Po založení profilu
+  > (čekání na síť) proto telefon dostane tlačítko „Sdílet výzvu“ místo rovnou sdílení.
+  - **PROFIL SE ZAKLÁDÁ PŘÍMO V BLOKU VÝZVY, ne na obrazovce ligy** (hráč na první verzi:
+    *„nechci nikam odcházet. vymysli to jinak“*). Přechod na přihlašovací obrazovku
+    (`vyzadejProfil`) i věta „Výzvy jdou přes profil ve Světové lize“ jsou PRYČ — nevracet.
+  - **`profilVeVyzve(el, btn, hotovo)`** v `quiz.js` (výsledek sóla i úvod výzvy):
+    přihlášený vidí „Pod přezdívkou X“, ostatní přezdívku + PIN + souhlas 13+; hlavní tlačítko
+    je do vyplnění zablokované. **`ZKOnline.zalozNeboPrihlas`**: registrace, a při 409 (přezdívka
+    existuje) přihlášení se stejným PINem — „nová přezdívka založí profil, známá tě přihlásí“.
+    Špatný PIN u známé přezdívky vrátí „Přezdívka nebo PIN nesedí“.
+  - Ověřeno v prohlížeči: odesílatel bez profilu → formulář → sdílení s přezdívkou v textu;
+    známá přezdívka se správným PINem přihlásí; příjemce bez profilu → formulář na úvodu →
+    otázka 1/10 tatáž jako u odesílatele. `test:offline` 954.
+
+- **2026-10-13 — Výsledek sóla ukazuje „X z N správně“ jako hlavní číslo a nabízí VÝZVU
+  KAMARÁDOVI: odkaz se stejnými otázkami, bez serveru a bez profilu.** Hráč: *„1600 bodů
+  z xy mi nic neříká… na této stránce by měla být možnost poslat někomu, abysme se poměřili“*.
+  - **Body jsou tichý řádek pod počtem správných** (`★ 550 bodů z 2300 možných`).
+  - **Výzva = `/hra?vyzva=<base64url JSON {v,q:[id],s,n,b}>`** (`kodVyzvy`/`dekodujVyzvu`).
+    Nic se neukládá na server, takže funguje i offline část a nepotřebuje D1 ani migraci.
+    Dekódování je obranné: id jen `[a-z0-9-]`, nejvýš 50, skóre se ořízne do počtu otázek,
+    jméno na 20 znaků, neznámé pásmo → dospělí, rozbitý kód → `null`. Jméno jde do HTML
+    jen přes `esc()`.
+  - **Kamarád hraje tytéž otázky VE STEJNÉM POŘADÍ** — `S.pevnePoradi` obchází
+    `bezKonfliktu` (pořadí už jednou prošlo výběrem u odesílatele). Otázka, která mezitím
+    z fondu zmizela, se tiše vynechá a srovnává se z menšího počtu.
+  - **Výsledek výzvy porovná „Ty × jméno“** a řekne Výhra/Remíza/odvetu; výzva se ukládá
+    s rozehranou hrou (`serializeState` → `vyzva`), jinak by se po obnovení srovnání ztratilo.
+    „Hrát znovu“ po výzvě spustí rychlou hru, ne tutéž sadu znovu (odpovědi už zná).
+  - **Sdílení stejné jako u party:** dotykové zařízení `navigator.share`, počítač E-mailem /
+    WhatsApp / Zkopírovat. Jméno se pamatuje v `zk_vyzva_jmeno` — **doplněno do zásad
+    (`soukromi.html`) spolu s dříve zapomenutým `zk_rychla_pasmo`**.
+  - **Cestou: sólo už nebere hlášku z fondu `victory`.** Ten patří vítězi párty, takže hostitel
+    gratuloval „Vítěz! Přijměte korunu“ i při 1 z 10. Nově `hlaskaVysledku()` podle podílu
+    správných (4 pásma po dvou hláškách).
+  - Ověřeno v prohlížeči celým kolem: hra → odkaz → otevření jako kamarád (tytéž otázky, první
+    shodná) → srovnání „3 z 10 × 1 z 10, Výhra! Máš o 2 otázky víc než Evžen.“ Sken malých
+    písmen: jediný nález planý (text za tučným číslem). `test:offline` 948, ověřeno mutací 3 z 3.
+
+- **2026-10-13 — OTÁZKA BEZ ILUSTRACE SE NEHRAJE NIKDE — ani lokálně, ani na webu, ani online.**
+  Hráč narazil lokálně na švédskou otázku z kampaně s razítkem místo obrázku: *„tyhle otázky
+  jsem nechtěl zařadit… až budou mít ilustraci“*. Do teď to hlídalo jen to, že se kampaň
+  nesloučila do `master` — pracovní větev je ale nabízela.
+  - **Pravidlo žije na JEDNOM místě: `scripts/hratelne.js`** (`maIlustraci`, `hratelnaOffline`
+    = ne serverová a existuje `img/{id}.jpg`). Používá ho index počtů, `build-public.js`
+    (na web jde jen hratelné) i `sync-d1-questions.js` (bez obrázku do D1 nejde).
+  - **Klient: `npm run build-index` nově píše i `data/bez-ilustrace.json`** (seznam id)
+    a `ensureQuestionsFor` je po stažení země vyřadí. Je v `SKORAPKA` service workeru
+    a v `JEDNOTLIVE` buildu. Zastaralý seznam hlásí `validate` jako CHYBU.
+  - **Po každé dávce ilustrací tedy `npm run build-index`** — otázky se zařadí samy, po
+    jedné, jak dostávají obrázky. Kampaň tím přestává být „všechno, nebo nic“: na web by
+    šlo nasadit i zčásti hotovou, ilustrované otázky by vyšly a zbytek ne.
+  - Stav: mimo hru 1 618 otázek. `test:offline` 940 (+2, ověřeno mutací), `validate` 0 chyb.
+  - **Hráč pak otázku bez obrázku viděl DÁL (gabonská `ga-q-siroka-rodina`) — vinu nesl
+    service worker, ne filtr.** Server i `quiz.js` byly správně; Chrome hráče ale podával
+    starý `quiz.js` z cache (stale-while-revalidate). **Na localhostu se proto service worker
+    neregistruje a `hra.html` starý odregistruje, smaže `cestokviz-*` cache a jednou znovu
+    načte** (navigace jde ze sítě, takže nová `hra.html` dorazí i přes starý worker). Ověřeno
+    v prohlížeči: zaregistrovaný worker s cache → po načtení 0 registrací, 0 cache.
+    Offline běh se tím lokálně testovat nedá; na to je náhledové nasazení.
+    Ověřeno v prohlížeči: rychlá hra přes 10 zemí, 10 otázek s ilustrací, žádná ze seznamu.
+
+- **2026-10-07 — Ilustrace kampaně (2 200 otázek): jedou autonomně po dávkách ~210 kusů,
+  vždy 5 zemí abecedně + opravy z předchozí kontroly. ROZPRACOVÁNO, NENASAZENO.**
+  Hráč: *„pokračuj autonomně až do vyčerpání kreditu“*. **KREDIT DOŠEL 2026-10-07**
+  (402 „prepayment credits are depleted“) po dávce 3. Dávky 1–3 hotové a zkontrolované.
+  **Bez ilustrace zbývá 1 618.** Další dávka je připravená (218 id: es, fi, fj, fr, ga
+  + opravy z dávek 2 a 3 + 4 obrázky, které v dávce 3 vyšly „bez výsledku“) v
+  `.ilustrace/dalsi-davka.txt` (gitignorované, jen na tomhle disku). Po dobití:
+  `node scripts/batch-irony-images.js submit --only "$(cat .ilustrace/dalsi-davka.txt)"`.
+  Kdyby soubor chyběl: stačí vzít 5 dalších zemí abecedně — `submit` přeskočí, co obrázek má,
+  a vadné obrázky jsou z `img/` odložené, takže se vygenerují znovu.
+  - **Dávka 3: 21 vad z 212.** 9 podpisů u kraje **odříznuto `orez.js 690`** (kredit
+    nestojí, ověřeno archem rohů). **Nová vada: DÁNSKÁ VLAJKA VYCHÁZÍ JAKO ŠVÝCARSKÁ**
+    (3× u Dánska, 1× u Egypta, kde vlajka nebyla vůbec potřeba) — „red flag with a white
+    cross“ model kreslí jako čtverec s křížem uprostřed. Nutné popsat obdélník
+    a severský kříž posunutý k žerdi s rameny až k okrajům; kde vlajka není nutná, pryč.
+    Dál „taxi“ (znovu nápis TAXI), kompasová růžice (písmena N/W/E/S) a nástěnný kalendář
+    (čísla a dny) — kalendář nahrazen dvěma stoly, prvním sklizeným a druhým prostřeným.
+  - **Vady: dávka 1 16 ze 192, dávka 2 7 ze 208** — převážně podpisy. Nové poznatky:
+    komiksová postava jmenovaná jen popisem (Mafalda: „velká kulatá hlava, černé mikádo
+    s mašlí“) vyjde jako ta postava → scéna bez lidí; „high and dry“ se propsalo jako
+    popisek u loďky (idiom = text); „leather footballs“ u Charlese Millera dalo ragbyové
+    míče (znovu: psát „round black-and-white patched soccer football“); kompas nese „N“
+    a čísla → nahradit dalekohledem; korouhev na střeše dostala písmena.
+  - **84 jídel dostalo popis TVARU** (varování `lint-irony`) před první dávkou.
+  - **Dávka 3 běží přes 3 h** — `cekej-davka.js` končí po 90 min, pouští se znovu;
+    batch API slibuje do 24 h.
+  - **Po dokončení:** zvednout `VERZE` v `sw.js`, `build-index`, sloučit do `master`,
+    `db:sync --remote` a nasadit — teprve tehdy smí kampaň na web (rozhodnutí 2. 10.).
+
 - **2026-10-07 — Rychlá hra na rozcestníku: jedno klepnutí = 10 otázek z 10 náhodných zemí,
   všechna témata.** Přání hráče: *„hned na úvodní straně chybí nějaká rychlá hra, abych
   nemusel vše proklikávat“*. Tlačítko `#qz-quick` pod podtitulkem, pod ním tichý řádek

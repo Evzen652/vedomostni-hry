@@ -276,8 +276,18 @@ sekce("Výběr: otázky ve hře si navzájem neprozrazují odpověď");
     return SRC.slice(zac, i + 1);
   };
   for (const f of ["startGame", "startSchool"])
-    kontrola(/S\.order\s*=\s*bezKonfliktu\(/.test(telo(f)), f + " nelosuje přes bezKonfliktu — otázky si můžou prozradit odpověď");
+    // `pevne ||` je hotové pořadí z výzvy kamaráda (2026-10-13) — losuje se jen bez něj.
+    kontrola(/S\.order\s*=\s*(?:pevne\s*\|\|\s*)?bezKonfliktu\(/.test(telo(f)), f + " nelosuje přes bezKonfliktu — otázky si můžou prozradit odpověď");
   kontrola(telo("ensureQuestionsFor").includes('"data/konflikty.json"'), "ensureQuestionsFor nestahuje data/konflikty.json");
+  // Otázky bez ilustrace se nehrají (2026-10-13): klient je vyřadí podle seznamu,
+  // build je nepustí na web. Bez jednoho z toho by se lokálně nebo na webu objevily.
+  kontrola(telo("ensureQuestionsFor").includes('"data/bez-ilustrace.json"') && /bezIlustrace\.has\(q\.id\)/.test(telo("ensureQuestionsFor")),
+    "ensureQuestionsFor nevyřazuje otázky bez ilustrace");
+  {
+    const bp = fs.readFileSync(path.join(process.cwd(), "scripts", "build-public.js"), "utf8");
+    kontrola(/qs\.filter\(hratelnaOffline\)/.test(bp) && bp.includes('"data/bez-ilustrace.json"'),
+      "build-public.js pouští na web otázky bez ilustrace nebo nekopíruje data/bez-ilustrace.json");
+  }
   kontrola(fs.readFileSync(path.join(process.cwd(), "scripts", "build-public.js"), "utf8").includes('"data/konflikty.json"'),
     "build-public.js nekopíruje data/konflikty.json do dist/ — nasazená hra by mapu neměla");
 
@@ -1211,11 +1221,65 @@ sekce("Náhled pro sdílení: značky v hlavičce, obrázek a dosazení adresy")
   const Q = fs.readFileSync(path.join(process.cwd(), "quiz.js"), "utf8").replace(/\r\n/g, "\n");
   const pick = Q.slice(Q.indexOf("function renderModePick("), Q.indexOf("function beginPick("));
   kontrola(/id="qz-quick"/.test(pick), "rozcestník nemá tlačítko Rychlá hra (id=\"qz-quick\")");
-  kontrola(/#qz-quick"\)\.addEventListener\("click",[^)]*rychlaHra\(/.test(pick), "tlačítko Rychlá hra není napojené na rychlaHra()");
+  // Od 2026-10-13 je Rychlá hra karta (div role=button) s volbou pásma uvnitř.
+  kontrola(/quick\.addEventListener\("click",[^\n]*rychlaHra\(quick\)/.test(pick) && /quick\.addEventListener\("keydown"/.test(pick),
+    "karta Rychlá hra není napojená na rychlaHra() (klik i klávesnice)");
+  kontrola(/qz-mode-quick" id="qz-quick" role="button" tabindex="0"/.test(pick), "karta Rychlá hra není ovladatelná klávesnicí (role/tabindex)");
   const rh = Q.slice(Q.indexOf("async function rychlaHra("), Q.indexOf("function startGame("));
   kontrola(/\.slice\(0,\s*RYCHLA_ZEMI\)/.test(rh) && /RYCHLA_ZEMI\s*=\s*\d+/.test(Q),
     "rychlaHra() nestahuje jen omezený počet zemí — na mobilu by čekala na celý fond");
-  kontrola(/S\.rychla\)\s*rychlaHra\(/.test(Q), "„Hrát znovu“ po rychlé hře nelosuje nové země");
+  kontrola(/S\.rychla(?:\s*\|\|\s*S\.vyzva)?\)\s*rychlaHra\(/.test(Q), "„Hrát znovu“ po rychlé hře nelosuje nové země");
+
+  // ---- Výzva kamarádovi (2026-10-13): odkaz nese otázky a skóre, kamarád hraje tytéž.
+  {
+    const ctx = { BAND_NAMES: { deti: "děti", starsi: "puberťáci", dospeli: "dospělí" }, btoa, atob, unescape, escape,
+                  encodeURIComponent, decodeURIComponent, JSON, Math, Number, String, Array };
+    const src = ["b64url", "zB64url", "kodVyzvy", "dekodujVyzvu"].map(f => {
+      const i = Q.indexOf("function " + f + "(");
+      let j = Q.indexOf("\n  function ", i + 10);
+      const k = Q.indexOf("\n  async function ", i + 10);
+      if (k > -1 && k < j) j = k;
+      return Q.slice(i, j);
+    }).join("\n");
+    vm.createContext(ctx); vm.runInContext(src, ctx);
+    const telo = jmeno => {
+      const zac = Q.indexOf("function " + jmeno + "(");
+      let h = 0, i = Q.indexOf("{", zac);
+      for (; i < Q.length; i++) { if (Q[i] === "{") h++; else if (Q[i] === "}" && !--h) break; }
+      return Q.slice(zac, i + 1);
+    };
+    const ids = ["se-a-prvni-na-svete", "cz-k-kral-hub"];
+    const v = ctx.dekodujVyzvu(ctx.kodVyzvy(ids, 1, "Evžen", "starsi"));
+    kontrola(v && JSON.stringify(v.q) === JSON.stringify(ids) && v.s === 1 && v.n === "Evžen" && v.b === "starsi",
+      "výzva: odkaz se nerozbalí zpět na stejné otázky, skóre, jméno a pásmo", JSON.stringify(v));
+    const kod = ctx.kodVyzvy(ids, 1, "Evžen", "starsi");
+    kontrola(/^[A-Za-z0-9_-]+$/.test(kod), "výzva: kód odkazu obsahuje znaky, které do adresy nepatří", kod);
+    const zly = ctx.dekodujVyzvu(ctx.kodVyzvy(["<script>", "ok-id"], 99, "x".repeat(80), "hacker"));
+    kontrola(zly && zly.q.length === 1 && zly.s === 1 && zly.n.length === 20 && zly.b === "dospeli",
+      "výzva: podvržený odkaz projde bez ořezání (id, skóre, jméno, pásmo)", JSON.stringify(zly));
+    kontrola(ctx.dekodujVyzvu("nesmysl!!") === null, "výzva: poškozený odkaz nevrací null");
+    kontrola(/_p\.get\("vyzva"\)/.test(Q) && /otevriVyzvu\(/.test(telo("open")), "open() neotevírá výzvu z odkazu ?vyzva=");
+    kontrola(/S\.order\s*=\s*pevne\s*\|\|/.test(telo("startGame")), "startGame nepoužije pořadí otázek z výzvy");
+    kontrola(/vyzva:\s*S\.vyzva/.test(telo("serializeState")) && /S\.vyzva\s*=\s*st\.vyzva/.test(telo("resumeSave")),
+      "výzva se neukládá s rozehranou hrou — po obnovení by zmizelo srovnání");
+    kontrola(/správně<\/div>/.test(telo("endGame")), "výsledek sóla neukazuje počet správných jako hlavní číslo");
+    // Výzvu posílá i přijímá jen hráč s profilem (hráč 2026-10-13) a profil se zakládá
+    // přímo v bloku výzvy (profilVeVyzve), ne na obrazovce ligy.
+    const O = fs.readFileSync(path.join(process.cwd(), "online.js"), "utf8").replace(/\r\n/g, "\n");
+    kontrola(/profilVeVyzve\(/.test(telo("otevriVyzvu")), "přijetí výzvy nechce profil (profilVeVyzve)");
+    kontrola(/profilVeVyzve\(/.test(telo("endGame")), "poslání výzvy nechce profil (profilVeVyzve)");
+    kontrola(/zalozNeboPrihlas:\s*zalozNeboPrihlas/.test(O) && /kdoJsem:\s*kdoJsem/.test(O), "online.js neexportuje zalozNeboPrihlas/kdoJsem");
+    kontrola(/status === 409\) return req\("\/auth\/login"/.test(O), "známá přezdívka se v bloku výzvy nepřihlásí (chybí přechod 409 → login)");
+    kontrola(!/qz-vyzvajm/.test(Q), "výsledek sóla má pořád volné pole na jméno místo přezdívky z profilu");
+    // Online na rozcestníku (2026-10-13): dvě dlaždice místo lobby, lobby schované konstantou.
+    const pick = telo("renderModePick");
+    kontrola(/id="qz-mode-online"/.test(pick) && /id="qz-mode-parta"/.test(pick), "rozcestník nemá dlaždice Online souboj a Turnaj pro partu");
+    kontrola(/doOnline\("hrat"\)/.test(pick) && /doOnline\("parta"\)/.test(pick), "online dlaždice nevedou rovnou do hry / do turnaje pro partu");
+    kontrola(/data-kam="profil"/.test(pick), "přihlášený hráč nemá z rozcestníku cestu do Profilu (smazání účtu musí být dostupné)");
+    kontrola(/var LOBBY_SKRYTE = true;/.test(O) && /if \(LOBBY_SKRYTE\)/.test(O), "lobby online části je zase vidět");
+    kontrola(!/Světové lize/.test(telo("endGame")) && !/Světové lize/.test(telo("otevriVyzvu")),
+      "výzva zase posílá hráče do Světové ligy (hráč: „nechci nikam odcházet“)");
+  }
 }
 console.log("\n" + (chyb ? "NEPROŠLO: " + chyb + " chyb, " + ok + " v pořádku"
                          : "VŠE V POŘÁDKU: " + ok + " kontrol"));

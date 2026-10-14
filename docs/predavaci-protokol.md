@@ -1,7 +1,8 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-29. 9. 2026** po session z 26.–28. 9., která:
+4. 10. 2026** — hlavní blok „Předání na druhý počítač“ je hned pod prvním vzkazem v bodě 0.
+Starší session z 26.–28. 9. mimo jiné:
 - **zrušila přátele s kódem a nahradila je výzvami podle přezdívky** (vlastní tabulka
   `challenges`, hra vzniká až přijetím; lobby nově ukazuje příchozí výzvy a hry na tahu),
 - **předělala odvetu proti člověku na výzvu** a odmítá vzájemnou výzvu,
@@ -10,7 +11,9 @@ Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **nap
   s ilustrací prošlou kontrolou očima, a zavřela dvě díry, kudy šlo odpověď zjistit předem
   (id otázky a přednačtená ilustrace).
 
-Fond je teď **4 012 otázek: 3 792 veřejných + 220 serverových, všechny s malovanou ilustrací.**
+Fond je teď **6 212 otázek: 5 992 veřejných + 220 serverových.** Z toho **2 200 nových
+(kampaň 30. 9.–1. 10.: 40 na každou z 55 zemí) je BEZ ilustrace a NENASAZENÝCH.**
+(Do 29. 9. bylo 4 012 otázek, všechny s malovanou ilustrací.)
 
 Tenhle soubor je **protokol**: co převzít, co ověřit, co je zakázané a co dělat
 v jakém pořadí. Konvence a všechna rozhodnutí (včetně podrobností k 26. 9.) jsou
@@ -29,7 +32,221 @@ Zkopíruj do prvního vzkazu:
 Nejdřív `git fetch` a posunout se na `origin/claude/pokracujeme-e79708` (fast-forward),
 teprve pak cokoli ověřovat.
 
-### Stav k 29. 9.
+### ⇢ PŘEDÁNÍ NA DRUHÝ POČÍTAČ — stav k 4. 10. 2026 (čti TOHLE jako první)
+
+**Jednou větou:** 3.–4. 10. se ladil a nasazoval WEB (rozcestník, rychlost, párty, přihlášení,
+přesměrování staré adresy, favikona) — pokaždé z čisté větve založené na `master`, **bez nových
+otázek**. Kampaň 2 200 otázek (bez ilustrací) dál čeká na obrázky; **nic z ní na webu není.**
+
+**1. Větve a produkce**
+- **`master` = produkce = `0533bb1`, nasazení `69a613f9`** (předchozí pro návrat `4e3a1936`).
+- **Pracovní větev `claude/pokracujeme-e79708`** = `master` + kampaň otázek + dokumentace. Kód se od
+  `master` liší JEN generovaným `functions/_lib/konflikty.js` (ověřeno `git diff origin/master`).
+  4. 10. na ni převinuta větev z prvního počítače (`claude/pokracujeme-e79708-338c64`, fast-forward).
+- **Index otázek:** na pracovní větvi **5 992** veřejných, na `master` **3 792**. Tohle číslo
+  rozhoduje, jestli by nasazení vyneslo nové otázky — kontroluj ho v `dist/` před každým deployem.
+- Lokální `master` v hlavní složce repa prvního počítače byl zastaralý (`eb38f15`) — na nic se
+  nespoléhej bez `git fetch`.
+
+**2. Převzetí na druhém počítači**
+```bash
+git fetch && git checkout claude/pokracujeme-e79708 && git pull   # nebo git clone …
+npm install
+```
+`.dev.vars` (ze `.dev.vars.example`, `ALLOW_DEV_SECRET=1`, případně `GEMINI_API_KEY=`) není v gitu.
+
+**3. Očekávaná čísla na pracovní větvi**
+```bash
+npm run validate                    # CHYBY: žádné; 6212 otázek, „serverový fond: 220 z 6212“
+npm run test:offline                # VŠE V POŘÁDKU: 933 kontrol
+node scripts/obsah/test-prijmi.js   # VSE OK: 8 z 8
+```
+Na `master` je `test:offline` taky 933 a `validate` hlásí 4 012 otázek.
+
+**4. Jak se teď nasazuje změna webu (osvědčeno 3. 10. sedmkrát za sebou)**
+1. `git fetch && git worktree add -b claude/web-<co> <cesta> origin/master` — čistý checkout produkce.
+2. Úprava → `node --check` → `npm run test:offline` → ověření v prohlížeči (statický server nad
+   worktree). **Před měřením odregistrovat service worker a smazat cache**, jinak prohlížeč podá
+   minulou verzi (stalo se několikrát).
+3. Commit → `npm run predeploy` → `git push origin claude/web-<co>:master`.
+4. `npm run build` → **v `dist/data/questions-index.json` musí být 3 792** → `wrangler pages deploy
+   dist --project-name zemekviz --branch master --commit-hash <sha>`. (Worktree nemá `node_modules`;
+   wrangler/sharp se dají vzít z hlavního checkoutu přes cestu / `NODE_PATH`, nebo `npm install`.)
+5. Ověřit OBSAH na `cestokviz.cz` a na náhledové adrese z výpisu deploye — **`zemekviz.pages.dev`
+   už jen přesměrovává (301)**. Po nasazení počkat ~20 s, první dotazy vrací starou verzi.
+6. Smazat worktree, do pracovní větve `git merge origin/master`, push.
+
+**5. Hotovo a nasazeno 3.–4. 10.** (podrobnosti a pasti v CLAUDE.md, zápisy 2026-10-03)
+- Rozcestník: podtitulek „Tisíce otázek o 55 zemích světa. Od Bajkalu po Shakespeara. Každý týden
+  přidáváme nové.“, nové popisky Sólo / Párty / Škola, v patičce „Smazání profilu“. Samostatný
+  landing NEVZNIKL — rozcestník jím je (rozhodl hráč).
+- Rychlost: dlaždice z náhledů 320 px v `assets/male/` (výběr zemí 3,5 → 1,1 MB). **Po změně
+  ilustrace dlaždice `npm run nahledy`**, jinak `validate` hlásí chybu.
+- Párty: praporky hráčů v mřížce se stejnými sloupci. Výběr zemí/témat: „Pokračuj“ plave u spodní
+  hrany, jakmile je co potvrdit.
+- Online liga: přihlášení je `<form>` a nabízí prohlížeči uložení jména a PINu.
+- `zemekviz.pages.dev` → 301 na `cestokviz.cz` (`functions/_middleware.js`, s úklidovým SW).
+- Favikona: ploché „C“ na tealovém čtverci (`scripts/gen-favicon.js`, odkaz s `?v=2`).
+
+**6. Fronta práce — v tomto pořadí**
+1. **Lobby Světové online ligy — ČEKÁ NA ODPOVĚĎ HRÁČE, nic se nezačalo.** Hráč: „celý tenhle
+   vizuál je oproti ostatnímu dost chudý“. Navrženo: glóbus za nadpisem (jako rozcestník), „Hrát
+   teď“ s ilustrací ~140 px a výraznější kartou, tři dlaždice ve stylu rozcestníku (~110 px, dnes
+   ~64 px), uvítání na střed (dnes vlevo pod vycentrovaným nadpisem), na desktopu sloupec ~860 px
+   (dnes 640), a Žebříček/Výzvy/Profil buď jako **malované ikony** (stupně vítězů, rukavice, pas —
+   3 obrázky z Gemini, ~10–20 ¢, **potvrdit**) nebo jako tichý textový řádek. Hráč se neozval,
+   kterou variantu ikon chce. **Postavit lokálně, poslat snímky před/po, nasadit až po souhlasu**
+   (vzhled je území hráče).
+2. **Ilustrace 2 200 otázek → `VERZE` v `sw.js` → nasazení obsahu** — body B, C, D v bloku
+   „Předání stav k 2. 10.“ níže platí beze změny (rozpočet ~$75 potvrdit s hráčem).
+3. **Slib „Každý týden přidáváme nové“** v podtitulku: po ilustracích vydávat nové otázky po
+   týdenních dávkách (2 200 vystačí na dlouho), nebo text změnit. Dnes za ním nic není.
+4. DNSSEC (Cloudflare + DS u registrátora), nepovinně `www.cestokviz.cz`.
+5. Google Play: `docs/google-play-podklady.md` cituje staré texty režimů — srovnat s novými
+   popisky; pak účet Play Console (hráč), PWABuilder, `assetlinks.json` (bod F3 níže).
+6. Drobnost: náhledy i pro `zk-*` (lobby) a `end-*` — jiné velikosti zobrazení, zatím nehlášeno.
+   Pokud se dělá bod 1, řeší se tam rovnou.
+
+**7. Pasti zaplacené 3.–4. 10.**
+- Service worker podává starou skořápku i při ověřování v prohlížeči — odregistrovat a smazat cache.
+- Heredoc v Bashi spolyká zpětná lomítka v regexech; skripty s `\` psát nástrojem Write, regex
+  bez lomítek (`[/]`, `[.]`).
+- `quiz.js`, `online.js`, `quiz.css`, `functions/*.js` mají v pracovní kopii CRLF — úpravy přes
+  LF kopii a zpět. `grep` na češtinu v odpovědi `curl` na Windows lže (kódování) — kontrolovat Node.
+- `wrangler` hned po deployi pár vteřin vrací starou verzi — počkat, ne opravovat.
+
+
+### Předání stav k 2. 10. 2026 (historie — kampaň otázek; fronta B–D níže PLATÍ dál)
+
+**Jednou větou:** kampaň „40 otázek na každou zemi“ je hotová a pushnutá (55 zemí, fond 4 012 →
+**6 212**), ale **nic z ní není nasazené a žádná z 2 200 nových otázek nemá ilustraci.** Kód
+aplikace se v kampani nezměnil (jen generovaný `functions/_lib/konflikty.js`), takže nasazení
+je čistě obsahové. `master` (= produkce, `3028f62`, nasazení `90bbd12c`) je o dvacet a víc commitů za touhle větví;
+ty commity jsou jen data, dokumentace a nástroje. **3. 10. se `master` sloučil do této větve**
+(merge `dd015e9`), takže i nasazení odsud už používá doménu `cestokviz.cz`.
+
+**1. Převzetí na novém počítači**
+
+```bash
+git clone https://github.com/Evzen652/vedomostni-hry.git && cd vedomostni-hry   # nebo jen `git fetch`
+git checkout claude/pokracujeme-e79708 && git pull
+npm install
+```
+
+**2. Lokální tajemství — NEJSOU v gitu, musí se založit ručně**
+- Zkopíruj `.dev.vars.example` na `.dev.vars` (řádek `ALLOW_DEV_SECRET=1` je nutný, jinak lokální
+  server odmítne podepisovat tokeny a registrace padá na 500).
+- **`GEMINI_API_KEY=`** doplň vlastním klíčem z ai.studio (formát `AQ.…`). Nikdy ho necommituj.
+  Na prvním počítači řádek v `.dev.vars` byl, ale **neověřeno, že klíč platí a má kredit** —
+  první neúspěšný požadavek to ukáže (429 = bez kreditu).
+- `.batch-irony.json` (stav dávky ilustrací) je taky jen na jednom stroji a nejde do gitu. **Dávku
+  odeslanou na jednom počítači nevyzvedneš na druhém**, dokud ten soubor nezkopíruješ.
+
+**3. Ověř, že stav sedí (očekávaná čísla)**
+
+```bash
+npm run validate                      # CHYBY: žádné; „serverový fond: 220 z 6212“
+npm run test:offline                  # VŠE V POŘÁDKU: 917 kontrol
+node scripts/obsah/test-prijmi.js     # VŠE OK: 8 z 8
+node scripts/obsah/dokonci.js         # exit 0; build-index nic nezmění (git status zůstane čistý)
+```
+
+Lokální API testy (`npm run db:init`, `npm run dev`, `npm run test:api`) naposledy prošly 184
+kontrol; tuhle kampaň se nespouštěly, protože se nezměnil žádný kód ani schéma. Pokud je chceš
+pustit, **dev server při tom nesmí běžet souběžně s `npm run build`** (past z 2026-09-25).
+
+**4. Fronta práce — v tomto pořadí**
+
+> **ROZHODNUTÍ HRÁČE 2. 10.: nové otázky se NENASAZUJÍ, dokud nemají ilustrace.** Body D níže
+> (nasazení otázek) je proto ODLOŽENO do dokončení bodů B a C. Web a Google Play pokračují bez
+> nových otázek — viz bod F. Pozor, past: build kopíruje celé `data/questions`, takže jakékoli
+> nasazení z této větve by nové otázky vyneslo (podrobně v bodě F).
+
+**A. Prompty k ilustracím — HOTOVO 2. 10.** `npm run lint-irony`: 0 chyb. Všech 86 nových promptů
+s varováním je projito očima ([lint-irony-nove-prompty.txt](lint-irony-nove-prompty.txt)). Opraveno: 3×
+dominanta, `ph-k-fialova-hlizka` (kreslil zmrzlinu místo hlízy ube — ilustrace má kreslit ODPOVĚĎ)
+a `pe-d-koren-z-nejvyssich-vysek` (dvojznačný tvar kořene). Zbylých 84 varování „jídlo bez zjevného
+tvaru“ je jen mezera ve slovníku lintu (nezná bowl/glass/jar/pot/pie…); první věta je u všech
+konkrétní, takže jsou zkontrolovaná a **nepřecházej je znovu**.
+
+**B. Ilustrace — všech 2 200 nových otázek je bez `img/<id>.jpg`.** `irony_prompt` mají napsané
+a v kampani opravené (26 promptů s rizikovým slovem, viz zápis 2026-10-01).
+- **Náklad:** dávkou ~$0,034 za obrázek, tedy **~$75** za všechno. **Rozpočet potvrď s hráčem,
+  nespouštěj to sám.**
+- **Velikost:** ~220 kB na obrázek → **+~490 MB**. `img/` má dnes 4 039 souborů a 844 MB, po
+  doplnění ~1,3 GB. GitHub doporučuje repo pod 1 GB; limit Pages je 20 000 souborů (6 200 je v
+  pořádku). Kdyby velikost začala vadit, cesta ven je Cloudflare R2 (zápis 2026-08-28).
+- **Postup:** nejdřív zkušební dávka JEDNÉ země, očima zkontrolovat, teprve pak zbytek.
+  ```bash
+  node scripts/batch-irony-images.js submit --cc <cc>   # pak `status`, po doběhnutí `fetch` (do 24 h)
+  ```
+- **Kontrola očima je povinná** (archy 3×3 `scripts/ilustrace/archy.js`, arch rohů `rohy.js`,
+  zvětšený výřez `vyrez.js`). Historická míra vad je ~10 %; opravy přes `submit --only id,id`
+  (starý obrázek nejdřív přesunout stranou, jinak ho `submit` přeskočí). Pasti (podpis v rohu,
+  text na dresech, vlajky, jídlo bez tvaru, reálné osoby) jsou v CLAUDE.md, sekce „Ilustrace“
+  a zápisy 2026-09-12 až 09-25.
+
+**C. Po obrázcích zvýšit `VERZE` v `sw.js`** (obrázky jsou cache-first, hráč s naplněnou cache
+by jinak viděl staré), commit a push.
+
+**D. Nasazení nových otázek — ODLOŽENO do ilustrací (rozhodnutí 2. 10.)**, až budou hotové, přesně podle [nasazeni.md](nasazeni.md): migrace žádné (schéma beze změny), pak
+`db:sync --check --remote` → `db:sync` → `wrangler d1 execute zemekviz --remote
+--file=data/d1-sync.sql` → posunout `master` (`git push origin HEAD:master`, ve worktree ne
+`git fetch . …`) → `npm run deploy` (`--branch master` už je ve skriptu). **Stav produkce zapsat
+PŘED i PO** (naposledy 1 lidský hráč, 18 botů, 1 hra, 19 ratingů) a ověřit, že **serverových
+otázek je pořád 220**. Ověřuj OBSAH na ostré adrese, ne stavový kód (SPA fallback vrací 200
+na cokoli). **`npm run db:init:remote` se nikdy nespouští.**
+
+**E. Vlastní doména `cestokviz.cz` — HOTOVO 3. 10.** (připojena, `WEB` přepnuto, nasazeno; podrobnosti
+v bodě F1–F2). Zbývá nepovinné `www` a DNSSEC.
+
+**F. Web a Google Play BEZ nových otázek** (běží souběžně s B, nezávisle na ilustracích)
+- **Větev:** práce se dělá na větvi založené na `master` (např. `claude/web-play`), ne na této.
+  Nasazuje se z ní — build vezme to, co je v checkoutu, takže nové otázky se na web nedostanou.
+  Obsahovou větev `claude/pokracujeme-e79708` spojit a nasadit až s obrázky (konflikty čekej
+  jen v dokumentaci, kód se nepřekrývá).
+- **F1. Doména — HOTOVO 3. 10.** V Cloudflare (Workers & Pages → `zemekviz` → Custom domains)
+  přidána `cestokviz.cz`: stav **Active**, **SSL enabled**, záznam `CNAME @ → zemekviz.pages.dev`
+  vytvořil dashboard sám. **Zbývá `www.cestokviz.cz`** (nepovinné, `www` dnes neexistuje:
+  `Non-existent domain`) — stejný postup: Set up a custom domain → `www.cestokviz.cz` → Continue
+  → Activate domain. Pošta (MX na Thinline) je nedotčená. **Past v menu:** nové menu dashboardu
+  nemá samostatné „Workers & Pages“, je pod **Compute**; přímý odkaz je
+  `https://dash.cloudflare.com/3005fa92056c05be6e87ea85a5df5ab9/pages/view/zemekviz`.
+  **Past při ověřování:** tenhle počítač si krátce pamatoval „doména neexistuje“ a `curl` vracel 000,
+  i když `nslookup … 8.8.8.8` už adresy dával; ověřuj přímo a pak počkej.
+- **F2. `WEB` přepnuto a nasazeno — HOTOVO 3. 10.** `scripts/build-public.js` → `https://cestokviz.cz`,
+  commit `3028f62` na `master`, `npm run deploy` → **nasazení `90bbd12c`**. Ověřeno na obou adresách
+  (`cestokviz.cz` i `zemekviz.pages.dev`): `og:url`/`og:image`/`canonical` míří na `cestokviz.cz`,
+  žádný nedosazený `{{WEB}}`, `manifest.json` je skutečný manifest, `/api/leaderboard` 401, součet
+  v indexu 3 792 (nové otázky venku nejsou). **Předchozí nasazení pro návrat: `d1ad786b` (`5c28dea`).**
+  `zemekviz.pages.dev` dál funguje a servíruje totéž. **Zbývá zapnout DNSSEC** v Cloudflare
+  (DNS → Settings → DNSSEC → Enable; DS záznam se pak musí vložit u registrátora — viz zápis 30. 9.).
+- **F3. Google Play (TWA):** podklady k vydání (texty listingu, grafika 1024×500, snímky
+  obrazovky, ikona 512 už je) se dají připravit hned; zbytek čeká na doménu: účet Play Console
+  (poplatek, ověření identity — hráč), balíček přes PWABuilder, `/.well-known/assetlinks.json`
+  s otiskem klíče **app signing** (ne upload klíče; musí se dostat do `build-public.js`, jinak se
+  na web nenasadí), interní testování, vydání. Ilustrace se do balíčku nevejdou, obal je
+  bere z webu — nová verze obrázků se tedy do appky v Play dostane nasazením webu.
+- Právní stránky a zásady jsou nasazené; kontakt `ahoj@cestokviz.cz` je třeba ověřit, že
+  skutečně přijímá poštu (Google Play chce kontaktní e-mail vývojáře).
+
+**5. Tvrdá pravidla, která tuhle kampaň stála nejvíc**
+- **`online_only: true` u otázek s `-s-` v id je PŮVODNÍ serverový fond (4 na zemi, 220
+  celkem), ne chyba.** Nesahej na něj bez porovnání se stavem před zásahem.
+- **Rizikové slovo v `irony_prompt` je past i v záporu** (`banner`, `plaque`, `sign`, `written`,
+  `writing`, `scoreboard`…). Plochu popiš kladně („smooth and completely bare“).
+- **Fakta, která agent hlásí jako „z paměti neověřená“, se ověřují vždy** — dvě skutečné chyby
+  kampaně se našly právě tak.
+- Zbytek tvrdých pravidel je v sekci „3. Tvrdá pravidla“ níže a v CLAUDE.md.
+
+**6. Další dávka otázek** (kdyby bylo potřeba dopsat další země nebo další dávku): nástroje a
+celý postup jsou v [`scripts/obsah/README.md`](../scripts/obsah/README.md).
+
+**7. Co čeká na rozhodnutí hráče:** rozpočet na ilustrace (bod B), přidání domény v dashboardu
+(bod E) a produktové body z revize 29. 9. (sdílení výsledku s obrázkem hráč 29. 9. zamítl;
+monetizace a růst počtu hráčů zůstávají otevřené — viz sekce „4. Fronta práce“ a „5. Rozhodnutí, která čekají na hráče“ níže).
+
+### Stav k 29. 9. (historie — nasazení, které proběhlo; pro souvislosti)
 
 **Všechno je commitnuté a pushnuté** — stačí `git pull`. Dev server na konci session
 neběží; to je normální stav mezi sezeními.
@@ -77,6 +294,169 @@ ověřovala se jen ta dvě označená, a JEDNO z nich bylo špatně. U dalších
 rešerše aspoň u tvrzení s letopočtem, rozměrem nebo přítomným časem („dodnes“, „roste“),
 protože přesně ta stárnou nebo se nafukují.
 
+### ROZDĚLANÉ 30. 9.: +40 otázek na každou zemi (2 200 celkem)
+
+Zadal hráč v noci 30. 9. s tím, že se má pracovat autonomně. **Fond 4 012 → cíl 6 212.**
+Dává to smysl hlavně proto, že **41 z 55 zemí má dnes pod 60 otázek** — u nich se fond
+prakticky zdvojnásobí a přestanou být přívěsky Česka (viz revize 29. 9.).
+
+**Rozhodnutí, která padla bez hráče** (spal):
+- **rozložení pásem 13 / 13 / 14** (děti / puberťáci / dospělí) na zemi — vyrovnává
+  dnešní nepoměr a zvedá podlahu 12 otázek na zemi × pásmo, která se opakovaně propadá,
+- **jen veřejné otázky**, žádné `online_only` — serverový fond má vlastní pravidla,
+- **`irony_prompt` se píše rovnou**, i když ilustrace zatím generovat nejde.
+
+**Postup:** jeden agent = jedna země, po vlnách (limit 20 souběžných). Každý dostane
+**kompletní výpis existujících otázek své země** (`scratchpad/kontext/<cc>.txt`), jinak
+duplikuje — past zaplacená v srpnu, kdy při 450 otázkách vzniklo 19 kolizí.
+
+**Přejímka `scratchpad/prijmi.js`** kontroluje dávku PŘED zápisem do fondu, protože
+`npm run validate` běží až nad fondem, tedy když je chyba uvnitř. Hlídá povinná pole,
+sekce ze seznamu, ASCII id, kolize id proti celému fondu, odpověď v zadání, malé písmeno,
+minulý čas s rodem včetně staženého tvaru („uhodls“), délku `more_fact` a to, jestli si
+`irony_prompt` neříká o text. Zapisuje jen země úplně bez chyb, ve formátu 1 mezera + CRLF.
+
+**⚠ BLOKÉR ILUSTRACÍ: `GEMINI_API_KEY` není v `.dev.vars` ani v prostředí.** Bez něj
+nejde vygenerovat nic, ani po dobití kreditu. Zadání k obrázkům se píšou rovnou, takže
+po doplnění klíče stačí spustit dávku po zemích. **2 200 ilustrací vyjde v batchi zhruba
+na 75 USD** a kontrola očima je práce na dny, ne na jednu noc — negenerovat naslepo.
+
+**Dvě pasti přejímky, obě zaplacené hned v první vlně:**
+- **Agenti si práci dělí do pracovních souborů** (`part-a.json`, `_p1.json`) a nechávají
+  je ležet vedle hotové dodávky. Přejímka je četla jako finální a hlásila desítky
+  falešných chyb („cc je br, čekám part1“). Bere proto **jen soubory pojmenované
+  kódem země**; zadání agentům nově říká, ať části na konci slučí a smažou.
+- **Zapsaná dodávka se MUSÍ odsunout do `hotovo/`.** Agent ohlásí dokončení až poté,
+  co soubor zapsal, takže notifikace dorazí i pro zemi, kterou přejímka mezitím
+  zpracovala — a další běh s `--zapis` by ji přidal do fondu PODRUHÉ. Poznalo by se to
+  až na validaci, s dvojnásobkem otázek uvnitř. Ověřeno, že k tomu u prvních tří zemí
+  nedošlo (počet otázek = počet unikátních id).
+
+**PŘERUŠENO 30. 9. ve 2:30 — LIMIT RELACE, ne chyba.** Patnáct agentů spadlo naráz na
+`rate_limit 429` („session limit, resets 4:20am“). **Hotovo je 5 zemí z 55:** Austrálie,
+Čína, JAR, Brazílie a Egypt, tedy **+200 otázek** (fond 4 012 → **4 172**). Všechno je
+commitnuté a pushnuté; ztratila se jen rozdělaná práce agentů, kteří nestihli zapsat.
+
+- **Egypt dorazil doslova na hraně** — soubor byl na disku dřív, než agent spadl, takže
+  přejímka ho normálně zpracovala. **Proto se dodávky ukládají po zemích, ne najednou.**
+- **Zbývá 50 zemí.** Seznam v `scratchpad/kontext/_prehled.json` (stav PŘED dávkou);
+  hotové poznáš tak, že `data/questions/<cc>.json` má o 40 otázek víc.
+- **Postup pro pokračování je beze změny:** agent dostane jen krátký odkaz na
+  `scratchpad/ZADANI.md` + svůj kontextový soubor a cestu výstupu. Zadání drží všechna
+  pravidla i pasti, takže se do promptu nic opisovat nemusí.
+- **Limit relace je tvrdý strop tempa.** Pět zemí = zhruba 15 agentů × ~330 tisíc tokenů.
+  Další vlny je proto lepší pouštět po menších dávkách (5–8 zemí), ne po patnácti —
+  spadne-li vlna, přijde se o míň rozdělané práce.
+
+**PŘERUŠENO 30. 9. podruhé, opět LIMIT RELACE.** Druhá a třetí vlna doběhly celé
+(12 zemí, +480 otázek), čtvrtá vlna (Finsko, Irsko, Peru, Filipíny, Portugalsko,
+Vietnam) spadla na `rate_limit 429` ještě PŘED zápisem — ve scratchpadu `nove/`
+po ní nezůstalo nic, takže se nemá co zachraňovat, jen zopakovat.
+
+- **Hotovo je 18 zemí z 55:** Austrálie, Brazílie, Čína, Egypt, JAR (první vlna),
+  Indie, Japonsko, Keňa, Mexiko, Nový Zéland, USA (druhá vlna), Belgie, Chile,
+  Dánsko, Ekvádor, Fidži, Mongolsko, Tchaj-wan (třetí vlna).
+  Fond **3 792 → 4 732** (+940 otázek), vše commitnuté a pushnuté.
+- **Zbývá 37 zemí.** Seznam v `scratchpad/kontext/_prehled.json`, aktuální stav
+  podle počtu otázek v `data/questions/<cc>.json` (hotová země má 80+ — 40 starých
+  + 40 nových, u zemí s bohatším fondem víc).
+- **Postup je beze změny, jen vlny po šesti agentech, ne po patnácti** (poučení
+  z prvního přerušení 30. 9. v 2:30 platí i podruhé).
+- **Dva drobné nástroje se osvědčily a zůstávají v `prijmi.js`:**
+  `--jen cc,cc` pro cílený zápis jen vyjmenovaných zemí (když ostatní ještě běží),
+  a tvrdá kontrola přesně 40 otázek na dodávku (scratchpad je sdílený s agenty,
+  takže přejímka může soubor potkat rozepsaný).
+
+**HOTOVO 30. 9. odpoledne: 30 ZEMÍ Z 55, cíl dávky dosažen.** Fond 3 792 → **5 212**
+otázek (+1 420), serverový fond beze změny na **220** (4 na zemi × 55 zemí). Vše
+commitnuté a pushnuté na `claude/pokracujeme-e79708` až po `8863d7b`.
+
+- **Hotové země:** Austrálie, Brazílie, Čína, Egypt, JAR (vlna 1) · Indie, Japonsko,
+  Keňa, Mexiko, Nový Zéland, USA (vlna 2) · Belgie, Chile, Dánsko, Ekvádor, Fidži,
+  Mongolsko, Tchaj-wan (vlna 3) · Finsko, Filipíny, Irsko, Portugalsko (vlna 4) ·
+  Gabon, Indonésie, Izrael, Jižní Korea, Norsko, Peru, Severní Korea, Vietnam (vlna 5).
+- **Zbývá 25 zemí** (dopočet: 55 − 30 = 25, seznam pod 80 otázek v souboru má jen 21 —
+  4 mají fond bohatší než 80 už z dřívějška a nejsou hotové; ověř přes
+  `scratchpad/kontext/_prehled.json`, ne jen podle počtu): Pákistán, Malajsie, Turecko,
+  Saúdská Arábie, Rumunsko, Thajsko, Polsko, Ukrajina, Argentina, Bulharsko, Řecko,
+  Švýcarsko, Nizozemsko, Francie, Slovensko, Rakousko, Španělsko, Švédsko, Německo,
+  Maďarsko, Spojené království + 4 další ze seznamu.
+- **DVĚ TVRDÉ PASTI ZAPLACENÉ TÉHLE DÁVKOU, ať se nehoní znovu:**
+  1. **Agent, co píše 40 otázek najednou, umí spadnout na limitu délky odpovědi**
+     (64000 tokenů) — stalo se to Peru a Vietnamu i Indonésii. Řešení: zadat mu
+     výslovně „piš po skupinách po 10 a zapisuj přírůstkově (Write, pak Edit/append),
+     ne jeden obrovský finální výstup“ a „odpověz mi krátce, bez vypsaných promptů“.
+     Po druhém běhu s touhle instrukcí to prošlo vždycky.
+  2. **„-s-“ otázky s `online_only: true` v kontextovém souboru země NEJSOU nový bug
+     agentů — je to PŮVODNÍ serverový fond z 26. 9.**, který si agenti správně
+     nevšímali (nezopakovali). Vypadá to jako podezřelý vzorec (přesně 4 na každou
+     zemi, div dělaný sedmi agenty najednou), ale je to tak schválně. **Nesahej na
+     `online_only` u „-s-“ otázek, dokud neověříš proti stavu PŘED kampaní**
+     (`git show 94e1301:data/questions/<cc>.json`) — jinak vyrobíš přesně tu chybu,
+     kterou jsem si sám udělal a musel vzápětí opravovat (28 otázek, 7 zemí).
+- **`prijmi.js` má dvě opravené slepé kontroly** (dominanta chytala jen „fills the
+  frame“, ne průběhový tvar „filling“ ani „in the centre of the frame“; riziko textu
+  chytalo „texture“ jako „text“) a dvě nové pojistky: tvrdá kontrola přesně 40 otázek
+  na dodávku (scratchpad je sdílený s agenty, dodávka může být zastižena rozepsaná)
+  a přepínač `--jen cc,cc` pro cílený zápis.
+- **Postup pro pokračování beze změny:** agent dostane odkaz na `scratchpad/ZADANI.md`
+  + svůj `kontext/<cc>.txt` + cestu výstupu, vlny po 6 zemích. Po každé vlně: `prijmi.js`
+  (ruční kontrola varování, ne jen chyb — několik skutečných nálezů bylo jen ve
+  varováních), `dokonci.ps1`, ověřit `serverovych` v `stav fondu` zůstává 220, commit, push.
+
+**KAMPAŇ DOKONČENA 1. 10.: 55 ZEMÍ Z 55, +2 200 OTÁZEK (40 na zemi).** Fond 4 012 →
+**6 212** (veřejných 5 992, serverových **220** beze změny). Commitnuto a pushnuto na
+`claude/pokracujeme-e79708` až po `9680c63`. Předchozí tři zápisy o přerušeních výš jsou
+jen historie — stav je tenhle.
+
+- **CO ZBÝVÁ (a čeká na hráče, nic z toho nebylo spuštěno):**
+  1. **Ilustrace: všech 2 200 nových otázek je bez obrázku** (`img/<id>.jpg` chybí),
+     `irony_prompt` mají všechny napsané a prošly kontrolou. Generuje se
+     `node scripts/batch-irony-images.js submit --cc <cc>` (dávka ~50 % ceny, řádově desítky
+     dolarů za celek); `.dev.vars` teď řádek `GEMINI_API_KEY` obsahuje, ale **neověřeno, že
+     klíč platí a má kredit**. Po vygenerování projít obrázky očima (postup a pasti výš
+     v `CLAUDE.md`, nástroje v `scripts/ilustrace/`). Odhad míry vad ~10 %.
+  2. **Nasazení:** `db:sync --remote` (otázky jsou v D1), pak `npm run deploy`; migrace
+     žádné. Pořadí a pasti v `docs/nasazeni.md`. Po syncu ověřit `--check --remote`
+     a že serverových je stále 220.
+  3. **Zvednout `VERZE` v `sw.js`**, až přibudou obrázky (cache-first u obrázků).
+  4. **PŘED generováním obrázků projít prompty, které `npm run lint-irony` hlásí** — u nových
+     otázek je to **86 promptů** (85× „jídlo bez zjevného popisu TVARU“, 3× „nepojmenovaná
+     dominanta“), seznam je v `docs/lint-irony-nove-prompty.txt`. 0 chyb. Jídlo bez tvaru je
+     zdokumentovaná past (omáčka → zmrzlina), proto se tvar píše do PRVNÍ věty promptu.
+  5. **Rizikové slovo v promptu se opravovalo i po commitu vln.** `prijmi.js` měl výjimku „je-li
+     v promptu `blank`/`bare`/`unmarked`, zápor je v pořádku“, která pustila `plaque`, `banner`,
+     `signs`, `written`, `writing`, `scoreboard`, `signpost` v záporu — přesně tu zdokumentovanou
+     past. Dodatečně opraveno **26 promptů** (slovo pryč, plocha popsaná kladně), skenem
+     nad všemi 2 200 novými. Zbývají jen neškodná „board“ (prkénko, šachovnice) a záměrné
+     písmeno „I“ u `tr-k-dve-i-abeceda`. **Kdyby se přejímka použila znovu, výjimku zrušit.**
+- **POUČENÍ Z TÉHLE KAMPANĚ, AŤ SE NEHONÍ ZNOVU:**
+  1. **Agent píšící 40 otázek naráz umí spadnout na limitu délky odpovědi** (64 000
+     tokenů). Pomohlo zadat „po skupinách po 10, přírůstkově, odpověz krátce“.
+  2. **Výpadek sítě (`ENOTFOUND`) shodí VŠECHNY běžící agenty naráz** a nic po nich
+     nezůstane. Není to chyba práce; ověřit síť (`curl`), `nove/` prázdná → spustit znovu.
+  3. **„-s-“ otázky s `online_only: true` jsou PŮVODNÍ serverový fond** (4 na zemi),
+     ne bug agentů. Omylem se jim `online_only` sebral a musel se vracet (git show 94e1301).
+  4. **Agent nahlásí i fakta „z paměti neověřeno“ — to je nejcennější část jeho hlášení.**
+     Ověřit je vždycky. Našly se tak dvě skutečné chyby: Švédsko tvrdilo, že PewDiePie
+     přišel o první místo až 2024 kvůli MrBeastovi (T-Series ho předběhl už 2019), a
+     Saúdská Arábie slučovala žraloka obrovského a velrybího jako synonyma (stejná záměna
+     jako u filipínského `ph-k-zralok`).
+  5. **Kontrola varování, ne jen chyb.** Většina skutečných nálezů (scoreboard, banner,
+     „labels“ v záporu, odpověď delší než distraktory) byla jen ve varováních `prijmi.js`.
+     Varování „id obsahuje slovo z odpovědi“ je u VEŘEJNÝCH otázek šum.
+  6. **Kontrola „odpověď v zadání“ chytá i věci, co nejsou chyba:** „v hlavni“ je správný
+     6. pád od „hlaveň“, ne chybějící diakritika.
+- **Nástroje kampaně jsou od 2. 10. V REPU: `scripts/obsah/`** (`ZADANI.md`, `prijmi.js`,
+  `priprav-kontext.js`, `dokonci.js`, `test-prijmi.js`, `README.md`); pracovní složka
+  `.obsah/` je gitignorovaná. Přejímka má navíc opravené slepé kontroly (rizikové slovo i v
+  záporu, „tys“, příznak `online_only` na nové otázce) — **postup a pasti viz
+  `scripts/obsah/README.md`**.
+
+**Stav a co dělat dál:** hotové země poznáš podle počtu v `data/questions/<cc>.json`
+proti `scratchpad/kontext/_prehled.json` (ten drží stav PŘED dávkou). Co se nestihlo,
+dopíše se stejným postupem; prompt pro agenta je v historii session z 30. 9.
+
 ### ROZDĚLANÉ 30. 9.: přechod na doménu cestokviz.cz
 
 **Appka pořád běží na `zemekviz.pages.dev`.** Doména `cestokviz.cz` je koupená u Thinline
@@ -86,23 +466,30 @@ protože přesně ta stárnou nebo se nafukují.
   **2 MX**; čtyři parkovací záznamy na `91.239.200.85` smazané, **oba MX ponechané jako
   DNS only** (`mx1d10.thinline.cz` prio 10, `mx1b20.thinline.cz` prio 20).
 - **HOTOVO:** v administraci Thinline spuštěná deaktivace DNSSEC.
-- **ČEKÁ SE:** DS záznam (keytag 41880, alg 13) je pořád v zóně `.cz`. Registr CZ.NIC už
-  keyset nemá — ověřeno přes RDAP — takže je to jen publikace. **Český hosting varuje,
-  že deaktivace může trvat až několik dní.**
-- **ZBÝVÁ, v tomhle pořadí:**
-  1. počkat, až DS zmizí: `Resolve-DnsName cestokviz.cz -Type DS -Server a.ns.nic.cz`
-     (musí se ptát PŘÍMO autoritativního serveru, resolver odpovídá z cache),
-  2. v `muj.cesky-hosting.cz` → doména → DNS změnit **NSSET** na `keaton.ns.cloudflare.com`
-     a `melinda.ns.cloudflare.com`,
-  3. po aktivaci zóny přidat v dashboardu Pages (projekt `zemekviz`) custom domain
-     `cestokviz.cz` i `www.cestokviz.cz` — **wrangler to neumí**, `pages domain` neexistuje,
-  4. přepnout konstantu `WEB` v `scripts/build-public.js` a nasadit,
-  5. ověřit: appka na nové adrese, platný certifikát, náhled pro sdílení na nové doméně
-     a **že MX pořád míří na Thinline** (pošta),
-  6. zapnout DNSSEC znovu, už v Cloudflare.
+- **HOTOVO 30. 9. v 02:04:** DNSSEC dokončil deaktivaci (DS zmizel ze zóny `.cz`, ověřeno
+  na dvou autoritativních serverech) a **delegace se překlopila na Cloudflare**.
+  `keaton.ns.cloudflare.com` + `melinda.ns.cloudflare.com` vrací 8.8.8.8 i 1.1.1.1.
+  **Pošta přechod přežila:** MX dál `mx1d10.thinline.cz` (10) a `mx1b20.thinline.cz` (20).
+  Nový NSSET v registru je `CH-251976-20260930010035`.
+  - **Varování Českého hostingu („změnu NS provést až 24 h po zahájení deaktivace“) bylo
+    v tu chvíli plané** — jejich administrace se řídí zahájením procesu, ne jeho koncem.
+    Rozhodující je DS záznam v zóně `.cz`, a ten byl pryč PŘED změnou NSSETu.
+- **ZBÝVÁ — a první krok musí udělat hráč:**
+  1. **Pages → projekt `zemekviz` → Custom domains → Set up a custom domain**, přidat
+     `cestokviz.cz` a `www.cestokviz.cz`. **Přes wrangler to nejde** (`pages domain`
+     neexistuje) a **ani přes API**: OAuth token wrangleru má scope jen na Pages,
+     dotaz na zóny vrací 403. Je to pár kliknutí v dashboardu.
+  2. přepnout konstantu `WEB` v `scripts/build-public.js` na `https://cestokviz.cz`
+     a nasadit (`npm run deploy`),
+  3. ověřit: appka na nové adrese, platný certifikát, náhled pro sdílení ukazuje na
+     novou doménu a **MX pořád míří na Thinline**,
+  4. zapnout DNSSEC znovu, už v Cloudflare (jedno tlačítko, DS se do registru nahlásí sám).
 
-**⚠ Nikdy nepřepínat nameservery, dokud je DS v zóně** — doména i pošta by se staly
-nedostupnými pro validující resolvery.
+  **Do doby, než proběhne krok 1, se konstanta `WEB` NEPŘEPÍNÁ** — `og:image` by ukazoval
+  na adresu, která ještě nic neservíruje, a odkaz by ztratil náhled.
+
+**⚠ Pravidlo, které platí i do budoucna:** nikdy nepřepínat nameservery, dokud je DS
+záznam v zóně — doména i pošta by se staly nedostupnými pro validující resolvery.
 
 **Otevřené:** jestli u Thinline existuje schránka `ahoj@cestokviz.cz`. Je uvedená
 v právních stránkách jako kontakt pro žádosti o výmaz, takže bez ní ten slib neplatí.
