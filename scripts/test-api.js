@@ -367,6 +367,9 @@ async function playAll(token, gameId, total, ms = 2000, spravne = false) {
   ok(board.status === 200 && board.body.kind === 'rating', 'žebříček ratingu se vrátí');
   ok(Array.isArray(board.body.rows), 'obsahuje seznam');
   ok(board.body.rows.every(r => !r.is_bot), 'boti v žebříčku nejsou');
+  // Fiktivní hráči (2026-10-14), ať žebříček nepůsobí prázdně — aspoň 30, seřazení.
+  ok(board.body.rows.length >= 30, 'žebříček má aspoň 30 řádků, má ' + board.body.rows.length);
+  ok(board.body.rows.every((r, i, a) => i === 0 || a[i - 1].rating >= r.rating), 'žebříček je seřazený podle ratingu');
 
   // ------------------------------------------------------------ živý duel
   section('Živý duel a párování');

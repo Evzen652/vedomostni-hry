@@ -81,6 +81,16 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-14 — Žebříček: 30 FIKTIVNÍCH HRÁČŮ a „Jak se sem dostaneš“** (hráč: *„dej tam aspoň
+  30 fiktivních osob, ať to nepůsobí prázdně… nikde není řečeno, jak se tam člověk dostane“*).
+  - **Fiktivní hráči NEJSOU účty** — žijí v `functions/_lib/zebricek-osoby.js` a `leaderboard.js`
+    je přimíchá ke skutečným podle ratingu (1288–1884, nový hráč s 1500 padne doprostřed).
+    Rating se den ode dne hýbe o ±20 a hry přibývají, ale deterministicky podle data. Real hráč
+    se stejnou přezdívkou má přednost. **Zrušení = smazat soubor a jeden řádek, v DB nic není.**
+  - **Blok „Jak se sem dostaneš“ stojí NAD seznamem** (pod třiceti řádky by ho nikdo nenašel),
+    jen dokud tam hráč není, s tlačítkem „Vyzvi soupeře online“ rovnou do hry.
+  - Z odpovědi zmizely `wins/draws/losses` (klient je nečetl, fiktivní je nemají).
+  - `test:api` 186 (+2: aspoň 30 řádků, seřazeno). Ověřeno v prohlížeči, 0 textů malým.
 - **2026-10-14 — NASAZENO: `master` = `2a62586`, nasazení `f5bd35ea`.** Výzva kamarádovi s profilem,
   online souboj a turnaj na rozcestníku (lobby schované), Rychlá hra jako karta, názvy jako pokyny,
   filtr otázek bez ilustrace, localhost bez SW. **Bez nových otázek:** produkční kopie vznikla
