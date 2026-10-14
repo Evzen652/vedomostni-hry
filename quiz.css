@@ -584,10 +584,18 @@
 /* Od 2026-10-13 dvě skupiny: nahoře Rychlá hra + Online souboj, pod nimi 2×2 (Turnaj pro partu, Sólo,
    Párty, Škola). Mezi skupinami víc místa než uvnitř (18 + 16 = 34 proti 16). */
 .qz-modes-offline { margin-top: 16px; }
-.qz-onlinerow { position: relative; z-index: 1; margin-top: -6px; font-size: 14px; color: var(--muted); }
-.qz-onlinerow:empty { display: none; }
-.qz-onlinerow button { background: none; border: 0; padding: 4px 2px; font: inherit; color: var(--teal); font-weight: 700; cursor: pointer; }
-.qz-onlinerow button:hover { text-decoration: underline; }
+/* Horní menu rozcestníku (2026-10-14): Žebříček · Výzvy · profil vpravo nahoře, v rohu
+   naproti hostitelovi. Pod 768 px je hostitelova bublina přes celou šířku, takže menu
+   jde do toku nad nadpis. */
+.qz-topmenu { position: absolute; top: 22px; right: 24px; z-index: 3; display: flex; align-items: center; gap: 4px; }
+.qz-topmenu:empty { display: none; }
+.qz-topmenu button { background: none; border: 0; padding: 8px 12px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 700; color: var(--teal); cursor: pointer; }
+.qz-topmenu button:hover { background: rgba(47,125,120,.08); }
+.qz-topmenu .qz-topme { border: 1.5px solid rgba(47,125,120,.45); background: var(--paper2); max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 767px) {
+  .qz-topmenu { position: relative; top: auto; right: auto; justify-content: center; flex-wrap: wrap; margin: 48px 0 -4px; }
+  .qz-topmenu button { font-size: 14px; padding: 6px 10px; }
+}
 .qz-mode { width: 220px; background: var(--paper2); border: 2px solid #dccdb0; border-radius: 18px; padding: 22px 18px; cursor: pointer;
   box-shadow: 0 4px 0 #e3d5b8; font-family: inherit; text-align: center; transition: transform .12s, box-shadow .12s; }
 .qz-mode:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #e3d5b8; }

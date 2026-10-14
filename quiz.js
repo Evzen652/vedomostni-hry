@@ -762,6 +762,9 @@
            na mobilu sesunul za první kartu. Uvnitř obalu se centruje na nadpis sám
            a žádné číslo se ladit nemusí. POZOR: tenhle komentář je uvnitř template
            literalu, takže v něm NESMÍ být zpětné apostrofy — ukončily by řetězec. -->
+      <!-- Horní menu (2026-10-14, hráč: Žebříček · Výzvy · Profil „by mělo být v nějakém horním menu“).
+           Plní se asynchronně podle přihlášení; nepřihlášenému nabídne „Profil“ (vede na přihlášení / nový profil). -->
+      ${window.ZKOnline ? `<nav class="qz-topmenu" id="qz-onlinerow" aria-label="Online"></nav>` : ""}
       <div class="qz-titlewrap">
         <div class="qz-globebg" id="qz-globebg"></div>
         <h2>Cestokvíz</h2>
@@ -790,7 +793,6 @@
         </div>
         ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Vyzvi soupeře online</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>` : ""}
       </div>
-      ${window.ZKOnline ? `<div class="qz-onlinerow" id="qz-onlinerow"></div>` : ""}
       <div class="qz-modes qz-modes-offline">
         ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-parta"><div class="ic"><img class="ic-img" src="assets/zk-parta.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_PARTY}</span></div><div class="t">Pozvi partu</div><div class="d">Pošli kamarádům odkaz. Každý hraje stejné otázky, kdy se mu hodí.</div></button>` : ""}
         <button class="qz-mode" id="qz-mode-solo"><div class="ic"><img class="ic-img" src="assets/male/mode-solo.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Vyber si země</div><div class="d">Země, témata i obtížnost podle tebe.</div></button>
@@ -831,9 +833,11 @@
     // smazání účtu. Dotahuje se asynchronně; guard na odpojený řádek je nutný.
     const onlineRow = body.querySelector("#qz-onlinerow");
     if(onlineRow && window.ZKOnline.kdoJsem) window.ZKOnline.kdoJsem().then(nick => {
-      if(!nick || !onlineRow.isConnected) return;
-      onlineRow.innerHTML = `<button type="button" data-kam="zebricek">Žebříček</button> · <button type="button" data-kam="vyzvy">Výzvy</button> · <button type="button" data-kam="profil">Profil ${esc(nick)}</button>`;
-      onlineRow.querySelectorAll("[data-kam]").forEach(x => x.addEventListener("click", () => doOnline(x.dataset.kam)));
+      if(!onlineRow.isConnected) return;
+      onlineRow.innerHTML = nick
+        ? `<button type="button" data-kam="zebricek">Žebříček</button><button type="button" data-kam="vyzvy">Výzvy</button><button type="button" class="qz-topme" data-kam="profil">${esc(nick)}</button>`
+        : `<button type="button" class="qz-topme" data-kam="">Profil</button>`;
+      onlineRow.querySelectorAll("[data-kam]").forEach(x => x.addEventListener("click", () => doOnline(x.dataset.kam || undefined)));
     });
     const openBtn = body.querySelector("#qz-resume-open");
     const modal = body.querySelector("#qz-resume-modal");

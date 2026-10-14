@@ -81,6 +81,11 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-14 — Žebříček · Výzvy · profil jsou HORNÍ MENU rozcestníku** (hráč: „mělo by to být
+  v nějakém horním menu“), ne tichý řádek mezi kartami. `.qz-topmenu` vpravo nahoře naproti
+  hostitelovi; profil je pilulka s přezdívkou, nepřihlášený vidí jen „Profil“ (vede na přihlášení
+  nebo nový profil). **Pod 768 px jde menu do toku pod bublinu (`margin-top: 48px`)** —
+  bublina je tam přes celou šířku a na 375 px má tři řádky (naměřeno: spodek 81, menu od 92).
 - **2026-10-14 — Žebříček: 30 FIKTIVNÍCH HRÁČŮ a „Jak se sem dostaneš“** (hráč: *„dej tam aspoň
   30 fiktivních osob, ať to nepůsobí prázdně… nikde není řečeno, jak se tam člověk dostane“*).
   - **Fiktivní hráči NEJSOU účty** — žijí v `functions/_lib/zebricek-osoby.js` a `leaderboard.js`
