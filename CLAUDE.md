@@ -90,7 +90,7 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
   `/api/leaderboard` 401, nová ilustrace 200. **Past: první stažení hned po deployi vrátilo
   STARÝ quiz.js** — počkat ~20 s, jak říká protokol, jinak to vypadá na neúspěšné nasazení.
 - **2026-10-14 — Názvy dlaždic na rozcestníku jsou POKYNY K AKCI** (hráč: *„chybí pokyn k akci…
-  chci hrát.., hrej“*): Hraj hned, Vyzvi soupeře online (hráč: ať je slyšet, že jde o online), Pozvi partu, Hraj sólo, Hrajte u stolu, Hrajte
+  chci hrát.., hrej“*): Hraj hned, Vyzvi soupeře online (hráč: ať je slyšet, že jde o online), Pozvi partu, Vyber si země (původně „Hraj sólo“ — hráč: skoro totéž co Hraj hned, podstatné je, že si vybíráš), Hrajte u stolu, Hrajte
   ve třídě. Mění se JEN `.t` na rozcestníku — jinde (drobečky, rozehrané hry, lobby) zůstávají
   jména režimů. **„Hraj sám“ ne** (rod), proto „Hraj sólo“. Množné „Hrajte“ u párty a školy
   schválně: hraje víc lidí naráz. `test:offline` 959, v prohlížeči 0 textů malým písmenem.
