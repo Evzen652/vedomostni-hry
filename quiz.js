@@ -783,7 +783,7 @@
              button: uvnitř je „Změnit“ a volba pásma, a tlačítko v tlačítku HTML nedovolí.
              Pásmo si pamatuje z poslední sólo hry (rychlaPasmo). -->
         <div class="qz-mode qz-mode-quick" id="qz-quick" role="button" tabindex="0"><div class="ic"><img class="ic-img" src="assets/male/mode-quick.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Hraj hned</div><div class="d">Deset otázek z&nbsp;celého světa. Bez vybírání, rovnou do toho.</div>
-          <p class="qz-quicknote"><b id="qz-quickband">${esc(velke(BAND_NAMES[rychlaPasmo()]))}</b> · <button type="button" class="qz-quickchange" id="qz-quickchange">Změnit</button></p>
+          <p class="qz-quicknote">Úroveň: <b id="qz-quickband">${esc(velke(BAND_NAMES[rychlaPasmo()]))}</b> · <button type="button" class="qz-quickchange" id="qz-quickchange">Změnit</button></p>
           <div class="qz-quickbands" id="qz-quickbands" hidden>
             ${["deti","starsi","dospeli"].map(b => `<button type="button" class="qz-chip${b===rychlaPasmo()?" on":""}" data-qband="${b}">${esc(velke(BAND_NAMES[b]))}</button>`).join("")}
           </div>
