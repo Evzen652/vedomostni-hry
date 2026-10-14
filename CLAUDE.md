@@ -82,7 +82,7 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
 - **2026-10-14 — Názvy dlaždic na rozcestníku jsou POKYNY K AKCI** (hráč: *„chybí pokyn k akci…
-  chci hrát.., hrej“*): Hraj hned, Vyzvi soupeře, Pozvi partu, Hraj sólo, Hrajte u stolu, Hrajte
+  chci hrát.., hrej“*): Hraj hned, Vyzvi soupeře online (hráč: ať je slyšet, že jde o online), Pozvi partu, Hraj sólo, Hrajte u stolu, Hrajte
   ve třídě. Mění se JEN `.t` na rozcestníku — jinde (drobečky, rozehrané hry, lobby) zůstávají
   jména režimů. **„Hraj sám“ ne** (rod), proto „Hraj sólo“. Množné „Hrajte“ u párty a školy
   schválně: hraje víc lidí naráz. `test:offline` 959, v prohlížeči 0 textů malým písmenem.

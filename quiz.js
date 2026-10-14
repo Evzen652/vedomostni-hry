@@ -788,7 +788,7 @@
             ${["deti","starsi","dospeli"].map(b => `<button type="button" class="qz-chip${b===rychlaPasmo()?" on":""}" data-qband="${b}">${esc(velke(BAND_NAMES[b]))}</button>`).join("")}
           </div>
         </div>
-        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Vyzvi soupeře</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>` : ""}
+        ${window.ZKOnline ? `<button class="qz-mode" id="qz-mode-online"><div class="ic"><img class="ic-img" src="assets/male/mode-online.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="ic-fb" style="display:none">${ICO_SOLO}</span></div><div class="t">Vyzvi soupeře online</div><div class="d">Utkej se s celým světem. Nebo aspoň s Pepou z Kolína.</div></button>` : ""}
       </div>
       ${window.ZKOnline ? `<div class="qz-onlinerow" id="qz-onlinerow"></div>` : ""}
       <div class="qz-modes qz-modes-offline">
