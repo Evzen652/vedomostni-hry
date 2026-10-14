@@ -81,6 +81,14 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-10-14 — NASAZENO: `master` = `2a62586`, nasazení `f5bd35ea`.** Výzva kamarádovi s profilem,
+  online souboj a turnaj na rozcestníku (lobby schované), Rychlá hra jako karta, názvy jako pokyny,
+  filtr otázek bez ilustrace, localhost bez SW. **Bez nových otázek:** produkční kopie vznikla
+  z `origin/master` + kódové soubory z pracovní větve, `build-index` nad produkčními daty
+  (index 3 792, `bez-ilustrace.json` prázdné, mapa konfliktů beze změny). Migrace ani `db:sync`
+  nebyly potřeba (server se nezměnil). Ověřeno na `cestokviz.cz`: `quiz.js` shodný (bez CR),
+  `/api/leaderboard` 401, nová ilustrace 200. **Past: první stažení hned po deployi vrátilo
+  STARÝ quiz.js** — počkat ~20 s, jak říká protokol, jinak to vypadá na neúspěšné nasazení.
 - **2026-10-14 — Názvy dlaždic na rozcestníku jsou POKYNY K AKCI** (hráč: *„chybí pokyn k akci…
   chci hrát.., hrej“*): Hraj hned, Vyzvi soupeře online (hráč: ať je slyšet, že jde o online), Pozvi partu, Hraj sólo, Hrajte u stolu, Hrajte
   ve třídě. Mění se JEN `.t` na rozcestníku — jinde (drobečky, rozehrané hry, lobby) zůstávají
