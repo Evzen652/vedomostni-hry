@@ -2047,6 +2047,15 @@ window.ZKOnline = (function () {
         '<div class="qz-screen qz-end zk-wrap">' +
         backBar("Zpět", renderLobby) +
         "<h2>Žebříček</h2>" +
+        // Jak se sem dostat — hráč 2026-10-14: „nikde není řečeno, jak se tam člověk dostane“.
+        // Stojí NAD seznamem (pod třiceti řádky by ho nikdo nenašel) a jen dokud hráč
+        // v žebříčku není; rovnou nabídne cestu do hry.
+        (rows.some(function (x) { return x.nick === S.me.nick; }) ? "" :
+          '<div class="zk-boardhow">' +
+          "<p><b>Jak se sem dostaneš:</b> Hraj online souboje. Výhra ti rating zvedne, " +
+          "prohra sníží. Po páté hře, jakmile se rating usadí (většinou do deseti her), " +
+          "se tu objevíš na místě, které ti patří.</p>" +
+          '<button class="qz-go" id="zk-boardplay">Vyzvi soupeře online ' + handArrowSvg(false) + "</button></div>") +
         // Vlastní řádek se zvýrazní — bez toho se hráč v žebříčku nenajde a seznam
         // mu neříká vůbec nic o něm samotném.
         (rows.length
@@ -2055,13 +2064,11 @@ window.ZKOnline = (function () {
               return '<div class="qz-standrow' + (ja ? " zk-me" : "") + '"><span class="qz-rank">' + x.rank + ".</span>" +
                 '<span class="qz-standname">' + esc(x.nick) + (ja ? " <b>· to jsi ty</b>" : "") + "</span>" +
                 '<span class="qz-standscore">' + x.rating + "</span></div>";
-            }).join("") + "</div>" +
-            (rows.some(function (x) { return x.nick === S.me.nick; }) ? "" :
-              '<div class="qz-setnote">Ty tu ještě nejsi — do žebříčku se počítá od páté ' +
-              "hodnocené hry, dokud je rating nejistý.</div>")
-          : '<div class="qz-setnote">Zatím tu nikdo není. Do žebříčku se počítá od páté hodnocené hry, ' +
-            "dokud je rating nejistý, na přední příčky nepatří.</div>") +
+            }).join("") + "</div>"
+          : "") +
         "</div>";
+      var hrat = body.querySelector("#zk-boardplay");
+      if (hrat) hrat.addEventListener("click", function () { startQueue(); });
     });
   }
 

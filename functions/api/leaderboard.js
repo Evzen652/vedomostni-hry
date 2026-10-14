@@ -1,5 +1,6 @@
 import { BANDS, json, fail } from '../_lib/game.js';
 import { currentUser } from '../_lib/auth.js';
+import { fiktivniHraci } from '../_lib/zebricek-osoby.js';
 
 /**
  * GET /api/leaderboard?band=dospeli[&daily=1]
@@ -49,12 +50,19 @@ export async function onRequestGet({ request, env }) {
       WHERE r.band = ? AND r.games >= 5 AND r.rd < 150 AND u.is_bot = 0
       ORDER BY r.rating DESC LIMIT 50`).bind(band).all()).results;
 
+  // Ke skutečným hráčům se přimíchají fiktivní (_lib/zebricek-osoby.js), ať žebříček
+  // nepůsobí prázdně. Real hráč se přezdívkou shodný s fiktivním má přednost.
+  const skutecne = new Set(rows.map(r => r.nick.toLowerCase()));
+  const vse = rows.map(r => ({ nick: r.nick, avatar: r.avatar, rating: r.rating, games: r.games }))
+    .concat(fiktivniHraci().filter(f => !skutecne.has(f.nick.toLowerCase())))
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 50);
+
   return json({
     kind: 'rating', band,
-    rows: rows.map((r, i) => ({
+    rows: vse.map((r, i) => ({
       rank: i + 1, nick: r.nick, avatar: r.avatar,
       rating: Math.round(r.rating), games: r.games,
-      wins: r.wins, draws: r.draws, losses: r.losses,
     })),
   });
 }

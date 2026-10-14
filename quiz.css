@@ -1651,3 +1651,8 @@
   .zk-sect h3 { font-size: 15px; }
   .zk-sectnote { font-size: 12px; }
 }
+
+/* Žebříček: „Jak se sem dostaneš“ nad seznamem (2026-10-14). Próza bez rámečku,
+   tlačítko je jediná silná věc; seznam pod tím odsazený jako další skupina. */
+.zk-boardhow { display: flex; flex-direction: column; align-items: center; gap: 16px; margin: 6px auto 30px; max-width: 520px; }
+.zk-boardhow p { margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--ink); text-align: center; }
