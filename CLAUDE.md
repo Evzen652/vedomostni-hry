@@ -120,6 +120,37 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     3. **Databáze jen přírůstkově:** kvíz přidává tabulky, nic nemaže ani nepřejmenovává.
        Při návratu se do `dist/` zase nahrají `data/questions/` (build to musí umět podle přepínače).
     Nejrychlejší nouzový návrat: v Cloudflare Pages „Rollback“ na nasazení `a160095f`.
+  - **POSTAVENO TÝŽ DEN (lokálně, NENASAZENO):**
+    - **Server `functions/_lib/kviz.js` + `functions/api/kviz/`** (`GET /kviz`, `/:id/prihlasit`,
+      `/:id/q/:n`, `/:id/odpoved`, `/:id/odhaleni/:n`, `/:id/poradi`). Průběh je čistá funkce
+      `casy(k, n)` — **její kopie je i v `kviz.js`, mění se obě.** Kvíz se zakládá sám při prvním
+      `GET /kviz` (id `kRRRRMMDDHHmm` z pražského času, `INSERT OR IGNORE`). Termíny v `TERMINY`.
+      Otázky: jen nepoužité (`kviz_pouzite`), bez vzájemného prozrazování, večer od lehčích k těžším.
+    - **Odpověď NEŘÍKÁ, jestli byla správná**; to až `odhaleni` po uzávěrce + 1,5 s pro všechny.
+      Pořadí se vydá jen v přestávce a po konci (během kola by skóre prozradilo trefy).
+      Čas se měří od OTEVŘENÍ otázky, ne od jejího stažení.
+    - **`/api/kviz/dev` jen s `ALLOW_DEV_SECRET`** (lokálně): kvíz za N vteřin s krátkým tempem.
+    - **Klient `kviz.js`** (`window.ZKKviz`, přepínač `var AKTIVNI = true`): úvod s odpočtem,
+      přihláškou (přezdívka + PIN + 13+ přímo na místě), kalendářem `.ics` a sbírkou; čekárna
+      od T−15 min; otázka s rámem a glóbem; odhalení s „Správně X z Y hráčů“; přestávka
+      s pořadím; vyhlášení. Při návratu do záložky se večer dopočítá z času znovu (Chrome
+      ve skryté záložce brzdí časovače až na 1×/min — viděno při zkoušce).
+    - **`build-public.js` čte `AKTIVNI` z `kviz.js`**: při true se `data/questions` a `data/cards`
+      na web nenahrávají. `quiz.js` při AKTIVNI místo rozcestníku volá `ZKKviz.open()`; projde
+      jen odkaz na obnovu PINu. `sw.js` VERZE v2 (+ `kviz.js` ve skořápce).
+    - **Testy:** `npm run test:kviz` 27 kontrol (celý zkrácený večer ~40 s), `test:offline` 965
+      (kviz.js přidán do kontrol šipek, rodu a komentářů v šabloně), `test:api` 186 beze změny.
+      Ověřeno v prohlížeči celým zkušebním večerem (2 kola × 3 otázky): přihláška, čekárna,
+      tip, odhalení, přestávka, vyhlášení; 375 px bez přetečení, sken malých písmen jen planý.
+    - **ZÁTĚŽ SE LOKÁLNĚ ZMĚŘIT NEDÁ.** Lokální wrangler na Windows padá („Network connection
+      lost“) už při ~60–100 souběžných požadavcích — i na STARÉM `/api/leaderboard`, takže to
+      není chyba kvízu. Lokální D1 navíc zpracovává požadavky po jednom (~150 ms). `npm run
+      zatez:kviz` proto ověřuje jen logiku a počet požadavků (~130 na hráče za 40 otázek).
+      **Před prvním ostrým večerem otestovat na Cloudflare** (oddělená testovací D1, ne produkce).
+      Klient má proti náporu rozptyl 0–600 ms při stahování otázky (stojí nejvýš ~2 body).
+    - **Při nasazení:** nejdřív `migrations/2026-11-05-kviz.sql --remote`, pak obsah (`db:sync`
+      kampaně s ilustracemi, fond 4 594), pak kód. Nasazuje se z PRACOVNÍ větve, ne z produkční
+      kopie — kvíz potřebuje fond s kampaní.
 
 - **2026-10-14 — Žebříček · Výzvy · profil jsou HORNÍ MENU rozcestníku** (hráč: „mělo by to být
   v nějakém horním menu“), ne tichý řádek mezi kartami. `.qz-topmenu` vpravo nahoře naproti

@@ -28,7 +28,7 @@
  */
 
 // Zvedni při nasazení, které mění skořápku nebo obrázky. Staré cache se pak samy smažou.
-const VERZE = "v1";
+const VERZE = "v2";
 
 const C_SKORAPKA = "cestokviz-skorapka-" + VERZE;
 const C_TRVALE = "cestokviz-trvale-" + VERZE;
@@ -47,6 +47,7 @@ const SKORAPKA = [
   "/quiz.css",
   "/quiz.js",
   "/online.js",
+  "/kviz.js",
   "/manifest.json",
   "/assets/three.min.js",
   "/assets/fonts/nunito-latin.woff2",

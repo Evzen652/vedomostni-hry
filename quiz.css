@@ -1664,3 +1664,60 @@
    tlačítko je jediná silná věc; seznam pod tím odsazený jako další skupina. */
 .zk-boardhow { display: flex; flex-direction: column; align-items: center; gap: 16px; margin: 6px auto 30px; max-width: 520px; }
 .zk-boardhow p { margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--ink); text-align: center; }
+
+/* ===================================================================== živý kvíz
+   (2026-11-05, kviz.js). Recykluje .qz-modepick, .qz-end, .qz-play a .qz-standings;
+   tady je jen to, co kvíz má navíc. Rytmus podle pravidla o vzdušnosti (CLAUDE.md):
+   uvnitř skupiny malé mezery, mezi skupinami velké. */
+.kz-domu { gap: 0; }
+.kz-domu .qz-modesub { margin-bottom: 30px; }
+.kz-karta { position: relative; z-index: 1; width: min(520px, 100%); box-sizing: border-box;
+  background: var(--paper2); border: 1.6px solid #dccdb0; border-radius: 18px; box-shadow: 0 4px 0 #e3d5b8;
+  padding: 26px 24px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.kz-stitek { margin: 0 0 6px; font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); }
+.kz-datum { margin: 0; font-family: 'Nunito', sans-serif; font-size: 24px; font-weight: 750; color: var(--ink); line-height: 1.25; }
+.kz-odpocet { margin: 6px 0 0; font-size: 16px; color: var(--coral); font-weight: 700; }
+.kz-fakta { list-style: none; padding: 0; margin: 22px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px;
+  font-size: 14.5px; color: var(--muted); }
+.kz-fakta b { color: var(--ink); }
+.kz-pocet { margin: 14px 0 0; font-size: 14px; color: var(--muted); }
+.kz-prihlaska { width: 100%; margin-top: 26px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.kz-prihlaska .qz-go { margin-top: 4px; }
+.kz-tichy { margin: 0; font-size: 14px; line-height: 1.6; color: var(--muted); }
+.kz-ok { margin: 0; font-size: 16px; color: var(--ok); font-weight: 700; }
+.kz-ok b { color: var(--ink); }
+.kz-akce { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.kz-minule { position: relative; z-index: 1; margin: 26px 0 0; font-size: 14.5px; line-height: 1.6; color: var(--muted); max-width: 30em; }
+.kz-minule b { color: var(--ink); }
+
+/* Sbírka „pro dobrou věc" — klidný tón, žádná ironie: proto bez ilustrace a bez vtipu. */
+.kz-charita { position: relative; z-index: 1; width: min(520px, 100%); box-sizing: border-box; margin-top: 18px;
+  border: 1.6px dashed #c9b994; border-radius: 16px; padding: 18px 22px; text-align: center; background: #fffdf8; }
+.kz-charita h3 { margin: 2px 0 8px; font-family: 'Nunito', sans-serif; font-size: 18px; color: var(--ink); }
+.kz-charita p { margin: 0 0 10px; font-size: 14.5px; line-height: 1.6; color: var(--ink); }
+.kz-charita .kz-tichy { margin: 10px 0 0; font-size: 12.5px; color: var(--muted); }
+.kz-charitalink { display: inline-block; font-weight: 700; color: var(--teal); }
+
+/* Čekárna, přestávka, vyhlášení */
+.kz-wrap { gap: 0; }
+.kz-wrap h2 { margin: 0 0 22px; }
+.kz-velkycas { margin: 4px 0 0; font-family: 'Nunito', sans-serif; font-size: clamp(54px, 12vw, 88px); font-weight: 800;
+  color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; }
+.kz-cekarna .kz-pocet { margin-top: 18px; font-size: 15px; }
+.kz-cekarna .kz-fakta { margin-top: 30px; flex-direction: column; gap: 8px; }
+.kz-wrap .qz-standings { margin: 0 auto; }
+.kz-wrap #kz-poradi { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.kz-wrap > .kz-odpocet { margin-top: 30px; }
+.kz-wrap > .kz-tichy { margin-top: 18px; }
+.kz-wrap > .qz-go { margin-top: 30px; }
+
+/* Hra: tip čeká na odhalení — výrazný, ale ještě ne zelený ani červený. */
+.qz-a.kz-tip { border-color: var(--teal); box-shadow: 0 3px 0 var(--teal); background: #eef6f4; }
+.qz-a.kz-tip small { background: var(--teal); color: #fff; border-radius: 6px; padding: 1px 6px; width: auto; height: auto; }
+.kz-stav { margin: 10px 0 0; font-size: 14px; color: var(--muted); text-align: center; min-height: 1.5em; }
+.kz-podil { display: block; margin-top: 8px; font-weight: 700; color: var(--teal); }
+.kz-dalsi { margin: 0; font-size: 14px; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
+@media (max-width: 520px) {
+  .kz-karta { padding: 22px 16px 20px; }
+  .kz-datum { font-size: 21px; }
+}

@@ -651,6 +651,9 @@
   function open(){ ensureData().then(()=>{
     document.body.style.overflow="hidden"; root.classList.remove("qz-hidden");
     const _p = new URLSearchParams(location.search);
+    // ŽIVÝ KVÍZ (2026-11-05): když je zapnutý (kviz.js, AKTIVNI), appka JE kvíz a ostatní
+    // vstupy (výzva, souboj, turnaj pro partu) se schovají. Projde jen obnova PINu z e-mailu.
+    if(window.ZKKviz && ZKKviz.aktivni && !_p.get("obnova")){ renderModePick(); return; }
     // Výzva od kamaráda (?vyzva=…) jede celá v prohlížeči, bez serveru a bez profilu.
     if(_p.get("vyzva")){ showHomeBtn(true); otevriVyzvu(_p.get("vyzva")); return; }
     if((_p.get("duel") || _p.get("obnova") || _p.get("parta")) && window.ZKOnline){
@@ -671,6 +674,7 @@
   // se nikdy nedozvěděl. `stopAll()` zastaví jen časovače, řádek ve frontě neruší.
   function close(){ stopTTS(); clearTimer(); releaseWake();
     if(window.ZKOnline){ if(ZKOnline.stopAll) ZKOnline.stopAll(); if(ZKOnline.leaveQueue) ZKOnline.leaveQueue(); }
+    if(window.ZKKviz && ZKKviz.stop) ZKKviz.stop();
     document.getElementById("qz-shell").classList.remove("qz-school");
     renderModePick(); }
 
@@ -720,6 +724,8 @@
 
   // ---- výběr režimu ----
   function renderModePick(){
+    // Živý kvíz místo rozcestníku (2026-11-05). Návrat k původní verzi: AKTIVNI = false v kviz.js.
+    if(window.ZKKviz && ZKKviz.aktivni){ showHomeBtn(false); document.getElementById("qz-shell").style.transform=""; ZKKviz.open(); return; }
     say("Vítejte, cestovatelé! Pasy orazítkované, glóbus netrpělivý — co si dnes zahrajeme?");
     showHomeBtn(false);
     document.getElementById("qz-shell").style.transform="";

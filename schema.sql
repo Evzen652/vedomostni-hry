@@ -4,6 +4,11 @@
 -- POZOR: každá nová tabulka musí přibýt i sem. Když se na to zapomene, skript
 -- spadne v půlce na „table X already exists" a databáze zůstane rozestavěná —
 -- s částí tabulek starých a částí nových.
+-- Živý kvíz (2026-11-05), viz migrations/2026-11-05-kviz.sql.
+DROP TABLE IF EXISTS kviz_pouzite;
+DROP TABLE IF EXISTS kviz_odpovedi;
+DROP TABLE IF EXISTS kviz_hraci;
+DROP TABLE IF EXISTS kvizy;
 DROP TABLE IF EXISTS party_players;
 DROP TABLE IF EXISTS parties;
 DROP TABLE IF EXISTS reg_attempts;
@@ -371,3 +376,57 @@ CREATE TABLE pin_resets (
   created_at INTEGER NOT NULL
 );
 CREATE INDEX idx_pin_resets_user ON pin_resets(user_id, created_at);
+
+-- ---------------------------------------------------------------- živý kvíz
+-- (2026-11-05) Totéž co migrations/2026-11-05-kviz.sql — při změně uprav oboje.
+-- Jeden večer. Průběh je čistá funkce `starts_at` a čtyř délek (kviz.js → casy()),
+-- takže se nikde neukládá „aktuální otázka". `konec_at` je odvozený, uložený kvůli dotazu.
+CREATE TABLE kvizy (
+  id           TEXT PRIMARY KEY,
+  starts_at    INTEGER NOT NULL,
+  konec_at     INTEGER NOT NULL,
+  kol          INTEGER NOT NULL,
+  na_kolo      INTEGER NOT NULL,
+  limit_s      INTEGER NOT NULL,
+  odhaleni_s   INTEGER NOT NULL,
+  prestavka_s  INTEGER NOT NULL,
+  question_ids TEXT NOT NULL,
+  orders       TEXT NOT NULL,
+  -- Sbírka do přestávek („pro dobrou věc"): JSON {nazev, text, url}, jinak NULL.
+  charita      TEXT,
+  created_at   INTEGER NOT NULL
+);
+CREATE INDEX idx_kvizy_konec ON kvizy(konec_at);
+
+-- Kdo se do večera přihlásil. `score` a `spravne` se navyšují s každou odpovědí.
+-- `zdroj` = odkud hráč přišel (`?zdroj=fb-streda` v odkazu z reklamy) — bez sledovacího pixelu.
+CREATE TABLE kviz_hraci (
+  kviz_id      TEXT NOT NULL,
+  user_id      TEXT NOT NULL,
+  score        INTEGER NOT NULL DEFAULT 0,
+  spravne      INTEGER NOT NULL DEFAULT 0,
+  zdroj        TEXT,
+  prihlasen_at INTEGER NOT NULL,
+  PRIMARY KEY (kviz_id, user_id)
+);
+CREATE INDEX idx_kviz_hraci_score ON kviz_hraci(kviz_id, score);
+
+-- Odpovědi. PK zaručuje jednu odpověď na otázku i při dvojkliku nebo opakování po výpadku sítě.
+CREATE TABLE kviz_odpovedi (
+  kviz_id  TEXT NOT NULL,
+  user_id  TEXT NOT NULL,
+  q_index  INTEGER NOT NULL,
+  pick     INTEGER NOT NULL,
+  ms       INTEGER NOT NULL,
+  correct  INTEGER NOT NULL,
+  points   INTEGER NOT NULL,
+  PRIMARY KEY (kviz_id, user_id, q_index)
+);
+CREATE INDEX idx_kviz_odp_q ON kviz_odpovedi(kviz_id, q_index);
+
+-- Otázka, která jednou padla v kvízu, se do dalšího nevrací (a později se uvolní do archivu).
+CREATE TABLE kviz_pouzite (
+  question_id TEXT PRIMARY KEY,
+  kviz_id     TEXT NOT NULL,
+  pouzito_at  INTEGER NOT NULL
+);

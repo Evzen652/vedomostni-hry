@@ -27,10 +27,15 @@ const WEB = "https://cestokviz.cz";
 // `manifest.json` a `sw.js` MUSÍ ležet v kořeni nasazení. U service workeru to není
 // kosmetika: jeho rozsah je dán jeho umístěním, takže odjinud než z kořene by neobsloužil
 // celou appku. (2026-09-25)
-const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "_headers",
+const SOUBORY = ["hra.html", "landing.html", "quiz.js", "quiz.css", "online.js", "kviz.js", "_headers",
   "podminky.html", "soukromi.html", "smazani-uctu.html", "pravni.css",
   "manifest.json", "sw.js", "favicon.ico"];
-const SLOZKY = ["assets", "img", "data/questions", "data/cards"];
+// ŽIVÝ KVÍZ (2026-11-05): když je v kviz.js zapnutý přepínač AKTIVNI, appka je jen kvíz
+// a sólo/párty/škola jsou schované. Jejich data (data/questions se SPRÁVNÝMI ODPOVĚĎMI
+// a data/cards) se pak na web NENAHRÁVAJÍ — kvíz bere otázky ze serveru po jedné, takže
+// odpovědi nejsou veřejně ke stažení. Návrat k původní verzi: AKTIVNI = false a nový build.
+const KVIZ_AKTIVNI = /var AKTIVNI = true;/.test(fs.readFileSync(path.join(KOREN, "kviz.js"), "utf8"));
+const SLOZKY = KVIZ_AKTIVNI ? ["assets", "img"] : ["assets", "img", "data/questions", "data/cards"];
 const JEDNOTLIVE = ["data/fondy.json", "data/questions-index.json", "data/konflikty.json", "data/bez-ilustrace.json"];
 
 function kopiruj(zdroj, cil) {
@@ -113,4 +118,5 @@ for (const f of fs.readdirSync(OUT).filter(f => f.endsWith(".html"))) {
 
 console.log("dist/ hotov: " + celkem + " souborů" +
   (vyhozeno ? " (serverových otázek vynecháno: " + vyhozeno + ")" : "") +
+  (KVIZ_AKTIVNI ? " · REŽIM ŽIVÝ KVÍZ: data/questions a data/cards se nenahrávají" : "") +
   (dosazeno ? " · adresa " + WEB + " dosazena v " + dosazeno + " HTML" : ""));

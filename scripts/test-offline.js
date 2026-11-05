@@ -24,6 +24,8 @@ const SRC = fs.readFileSync(path.join(process.cwd(), "quiz.js"), "utf8");
 // Online klient se sem přidal 2026-09-02 kvůli vokativ(). `sim-online` testuje model
 // ratingu a `test:api` server — samotný online.js do té doby nekontroloval nikdo.
 const SRC_ONLINE = fs.readFileSync(path.join(process.cwd(), "online.js"), "utf8");
+// Živý kvíz (2026-11-05) — stejná pravidla UI jako online.js (šipky, rod, komentáře v šabloně).
+const SRC_KVIZ = fs.readFileSync(path.join(process.cwd(), "kviz.js"), "utf8");
 
 /** Vytáhne `const NAME = …;` ze zdroje a vyhodnotí. Pro jednořádkové i víceřádkové literály. */
 function konstanta(jmeno) {
@@ -77,7 +79,7 @@ const sekce = t => console.log("\n" + t);
 // apostrof (`hintAkce`), ten utnul řetězec a appka se nevykreslila vůbec, zatímco test
 // hlásil 819 kontrol v pořádku. `new Function` soubor jen zparsuje, nespustí — nesahá
 // tedy na DOM, kterého se quiz.js dotýká hned na šestém řádku.
-for (const [jmeno, zdroj] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
+for (const [jmeno, zdroj] of [["quiz.js", SRC], ["online.js", SRC_ONLINE], ["kviz.js", SRC_KVIZ]]) {
   let chyba = null;
   try { new Function(zdroj); } catch (e) { chyba = e.message; }
   kontrola(!chyba, jmeno + " není platný JavaScript — appka se v prohlížeči nevykreslí", chyba);
@@ -621,7 +623,7 @@ function komentarVSablone(src) {
 const bezKomentaru = (src) => src
   .replace(/\/\*[\s\S]*?\*\//g, "")
   .replace(/(^|[^:])\/\/[^\n]*/g, "$1");
-for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
+for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE], ["kviz.js", SRC_KVIZ]]) {
   kontrola(/handArrowSvg/.test(src), jmeno + " nemá malovanou šipku handArrowSvg");
   const zbyle = (bezKomentaru(src).match(/[←→]/g) || []).length;
   kontrola(zbyle === 0,
@@ -698,7 +700,7 @@ const SRC_CSS = fs.readFileSync(path.join(process.cwd(), "quiz.css"), "utf8");
 // „Vyhrál jsi!" (výsledek online hry), „Přišel jsi z odkazu" (obnova PINu) a „Co jsi hrál"
 // (rozehrané hry). Hledá se „…l jsi" a „jsi …l" v kódu bez komentářů — komentáře ty
 // staré věty schválně citují.
-for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE]]) {
+for (const [jmeno, src] of [["quiz.js", SRC], ["online.js", SRC_ONLINE], ["kviz.js", SRC_KVIZ]]) {
   const bez = bezKomentaru(src);
   // Konec slova hlídá lookahead, ne \b: `\b` v JS zná jen ASCII, takže v „přihlášený"
   // viděl hranici slova mezi „l" a „á" a hlásil „Jsi přihl" jako minulý čas.
