@@ -81,6 +81,37 @@ jsou rozhodnutí hráče. **Po nasazení se hned vrať na pracovní větev**, ji
 
 Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
 
+- **2026-11-05 — SMĚR: CESTOKVÍZ JAKO ŽIVÝ „HOSPODSKÝ KVÍZ“ ve dvou pevných termínech týdně.
+  Ostatní režimy (sólo, párty, škola, online liga) se SKRYJÍ, ne smažou.** Hráč: *„zkusil bych
+  to celé strašně zjednodušit… v neděli a středu bych na fb vyhlásil, že v 19.00 začíná kvíz“*.
+  Nápad zatím ve fázi plánu, nic se nestavělo.
+  - **Formát:** 40 otázek ve 4 kolech po 10, na čas, přestávka s průběžnou tabulkou mezi koly,
+    na konci vyhlášení vítěze. Účast s registrací (dnešní profil přezdívka + PIN).
+  - **Výhra je jen sláva a vyhlášení, ŽÁDNÁ věcná cena** — tím odpadají pravidla soutěže o ceny
+    a podvádění je nepříjemnost, ne problém.
+  - **Fond: všechny otázky s ilustrací (4 594 = 3 792 původních + 220 serverových + 582
+    z kampaně, roste s ilustracemi).** Hráč vědomě přijal, že veřejné odpovědi jdou stáhnout.
+  - **Týmy se neřeší:** přezdívka může být jeden člověk i celá rodina.
+  - **Středa „pro dobrou věc“:** v přestávkách případ z Donia + QR kód a odkaz. Dar NESMÍ
+    ovlivnit soutěž (body ani výhodu) a text sbírky má klidný tón, ne ironii appky.
+  - **Proč:** Cestokvíz zatím nikdo nehrál (v produkci 1 lidský účet). Pevný čas soustředí
+    hráče do jedné hodiny a řeší prázdnou appku, kvůli které vznikli boti a fiktivní žebříček.
+  - **Technika: kvíz řídí HODINY ze serveru, ne dotazování po 2 s** jako živý duel — sto hráčů
+    by za večer jinak přetáhlo denní limit 100 000 požadavků bezplatného Cloudflare.
+  - **Tempo (odsouhlaseno): 30 s na odpověď, ~12 s odhalení (odpověď, ilustrace, vysvětlení,
+    „Více o…“), přestávka ~4 min → večer ~45 min.** Otázka skončí DŘÍV, když už odpověděli všichni
+    (s ukazatelem „Odpovědělo X z Y“). Hráč 20 s odmítl jako krátké.
+  - **Odpovědi přestanou být veřejné:** se skrytým sólem/párty/školou se `data/questions/` na web
+    nenahrává, kvíz bere otázky jen ze serveru po jedné. Tím je fond 4 594 prakticky neveřejný.
+  - **Později ARCHIV:** použitá otázka se do živého kvízu nevrací a po večeru se uvolní do „Zahraj
+    si středeční kvíz“ (stejná sada a pořadí, srovnání „byl bys 4. z 23“, do výsledků se nezapisuje).
+    V první verzi jen ukládat, které otázky kdy padly. ~80 otázek týdně → zásoba ~57 týdnů.
+  - **Propagace placenou reklamou na FB.** Proto v první verzi: zdroj registrace z parametru
+    `?zdroj=…` (BEZ Meta pixelu — chtěl by změnu zásad, cookie lištu a CSP) a „Přidat do kalendáře“
+    (`.ics`) jako připomínka, protože pošta nejede. K tomu FB událost na každý večer.
+  - **Čas začátku je konstanta.** Doporučeno první týdny porovnat 19:00 a 20:00 (cílovka jsou
+    hlavně dospělí, 19:00 koliduje s večeří a dětmi). Před veřejným spuštěním zkušební večer se známými.
+
 - **2026-10-14 — Žebříček · Výzvy · profil jsou HORNÍ MENU rozcestníku** (hráč: „mělo by to být
   v nějakém horním menu“), ne tichý řádek mezi kartami. `.qz-topmenu` vpravo nahoře naproti
   hostitelovi; profil je pilulka s přezdívkou, nepřihlášený vidí jen „Profil“ (vede na přihlášení
