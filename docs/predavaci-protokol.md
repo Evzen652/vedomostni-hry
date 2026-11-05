@@ -1,7 +1,7 @@
 # Předávací protokol
 
 Pro novou session (i na jiném počítači). Sepsáno **7. září 2026**, **naposledy aktualizováno
-4. 10. 2026** — hlavní blok „Předání na druhý počítač“ je hned pod prvním vzkazem v bodě 0.
+5. 11. 2026** — hlavní blok „Předání na druhý počítač“ (stav k 5. 11.) je hned pod prvním vzkazem v bodě 0.
 Starší session z 26.–28. 9. mimo jiné:
 - **zrušila přátele s kódem a nahradila je výzvami podle přezdívky** (vlastní tabulka
   `challenges`, hra vzniká až přijetím; lobby nově ukazuje příchozí výzvy a hry na tahu),
@@ -32,7 +32,97 @@ Zkopíruj do prvního vzkazu:
 Nejdřív `git fetch` a posunout se na `origin/claude/pokracujeme-e79708` (fast-forward),
 teprve pak cokoli ověřovat.
 
-### ⇢ PŘEDÁNÍ NA DRUHÝ POČÍTAČ — stav k 4. 10. 2026 (čti TOHLE jako první)
+### ⇢ PŘEDÁNÍ NA DRUHÝ POČÍTAČ — stav k 5. 11. 2026 (čti TOHLE jako první)
+
+Poslední práce proběhla **13.–14. 10.** Rozhodnutí z té doby jsou v [CLAUDE.md](../CLAUDE.md)
+pod daty 2026-10-13 a 2026-10-14, tady je jen to, co je potřeba k převzetí.
+
+**Jednou větou:** přestavěl se rozcestník a sólo dostalo výzvu kamarádovi. Na úvodní stránce
+jsou rovnou online souboj a turnaj pro partu, lobby je schované, Rychlá hra je karta, názvy dlaždic
+jsou pokyny a Žebříček · Výzvy · Profil tvoří horní menu. Výsledek sóla nabízí výzvu kamarádovi
+se stejnými otázkami (obě strany potřebují profil, zakládá se přímo v bloku výzvy). Žebříček má
+30 fiktivních hráčů. Otázky bez ilustrace se nikde nehrají. **Všechno je nasazené kromě horního
+menu (commit `fd902ab`), to čeká na „nasaď“ od hráče.**
+
+**1. Větve a produkce**
+- **`master` = produkce = `c265050`, nasazení `a160095f`** na `cestokviz.cz`.
+- **Pracovní větev `claude/pokracujeme-e79708`** = kód + kampaň 2 200 otázek. **Do `master` se
+  neslučuje** a `master` se neslučuje do ní. Nasazuje se „čistou produkční kopií“ (bod 4).
+- **Kampaň na webu NENÍ.** 582 jejích otázek už ilustraci má (index pracovní větve 4 374 proti
+  3 792 na produkci), ale rozhodnutí z 2. 10. („nové otázky až s obrázky“) platí, dokud ho hráč
+  nezmění. Díky filtru `bez-ilustrace.json` by šlo nasadit i jen ilustrovanou část — **to je
+  rozhodnutí hráče, ne moje.**
+
+**2. Převzetí**
+```bash
+git fetch && git checkout claude/pokracujeme-e79708 && git pull
+npm install
+```
+- `.dev.vars` není v gitu: zkopírovat z `.dev.vars.example`, nastavit `ALLOW_DEV_SECRET=1`
+  a případně `GEMINI_API_KEY=` (klíč má hráč, do chatu ani do gitu nepatří).
+- Na novém stroji je lokální D1 prázdná: `npm run db:init` (destruktivní jen lokálně, do
+  produkce nesahá — **NIKDY `db:init:remote`**).
+- Dev server: `npm run dev` (port 8788), v appce Claude preview `kviz-online`. Hra je na
+  `http://localhost:8788/hra`. **Na localhostu se service worker neregistruje** (hra.html starý
+  odregistruje), takže změny jsou vidět hned, ale offline běh lokálně otestovat nejde.
+
+**3. Očekávaná čísla na pracovní větvi**
+| Kontrola | Čekej |
+|---|---|
+| `npm run validate` | CHYBY: žádné; 6 212 otázek; serverový fond 220 |
+| `data/questions-index.json` (součet) | 4 374 |
+| `data/bez-ilustrace.json` | 1 618 id |
+| `node scripts/test-offline.js` | 959 kontrol |
+| `npm run test:api` (běžící dev server, po `db:init`) | 186 kontrol |
+Jiná čísla po čistém klonu = nejdřív podezírej prostředí (chybějící `.dev.vars`, prázdná D1,
+dev server neběží), teprve potom regresi.
+
+**4. Nasazení bez obsahu kampaně (postup ze 13.–14. 10., pětkrát po sobě bez chyby)**
+```bash
+git fetch origin
+git worktree add ../kviz-nasazeni origin/master -b nasazeni-X
+cd ../kviz-nasazeni
+git checkout claude/pokracujeme-e79708 -- quiz.js quiz.css online.js   # JEN kódové soubory, které se změnily
+cmd //c "mklink /J node_modules ..\\kviz\\node_modules"               # kopie node_modules trvá minuty
+# když se změnilo něco, co čte index/konflikty: npm run build-index → index 3 792, bez-ilustrace []
+git commit -am "Nasazeni: …" && git push origin HEAD:master
+CLOUDFLARE_ACCOUNT_ID=3005fa92056c05be6e87ea85a5df5ab9 npm run deploy
+```
+- **Nikdy nebrat z pracovní větve `data/questions/`, `img/` ani generované soubory**
+  (`questions-index.json`, `konflikty.json`, `bez-ilustrace.json`, `functions/_lib/konflikty.js`) —
+  ty se v kopii přegenerují nad produkčními daty.
+- Seznam souborů, které se liší, dá `git diff --name-only origin/master claude/pokracujeme-e79708`
+  bez `data/questions/` a `img/`.
+- **Po nasazení počkat ~20 s** a ověřit OBSAH na `https://cestokviz.cz/quiz.js?cb=…` (první dotaz
+  vrací starou verzi). Pak `cmd //c "rmdir ..\\kviz-nasazeni\\node_modules"`, `git worktree remove
+  --force ../kviz-nasazeni`, `git branch -D nasazeni-X` a zapsat nasazení do CLAUDE.md.
+- Migrace od 6. 10. žádné. Kdyby přibyla, pořadí migrace → obsah → kód podle [nasazeni.md](nasazeni.md).
+
+**5. Fronta práce**
+1. **Horní menu rozcestníku (`fd902ab`)** — hotové a ověřené lokálně, čeká na „nasaď“.
+2. **Ilustrace kampaně: 1 618 otázek bez obrázku.** Čeká na dobití kreditu Gemini. Další dávka
+   (218 id: es, fi, fj, fr, ga + opravy z dávek 2 a 3) je **nově v gitu**:
+   `node scripts/batch-irony-images.js submit --only "$(cat docs/ilustrace-dalsi-davka.txt)"`.
+   Pak kontrola očima (`scripts/ilustrace/`, archy 3×3 + arch rohů + výřezy), `npm run build-index`,
+   commit. Pasti z dávek 1–3 jsou v CLAUDE.md pod 2026-10-07 (dánská vlajka jako švýcarská, taxi,
+   kompas, kalendář).
+3. **Kampaň na web** — až hráč rozhodne (celá, nebo po ilustrovaných částech). Pak zvednout `VERZE`
+   v `sw.js`, `db:sync --remote` a nasadit už z pracovní větve.
+4. **Otevřené, k rozhodnutí hráče:** smazat fiktivní hráče ze žebříčku, až bude dost skutečných
+   (`functions/_lib/zebricek-osoby.js` + jeden řádek v `leaderboard.js`); slib „Každý týden
+   přidáváme nové“ na rozcestníku; pošta `ahoj@cestokviz.cz` (Resend) kvůli obnově PINu; Google
+   Play (TWA, [google-play-podklady.md](google-play-podklady.md)).
+
+**6. Pasti z poslední session**
+- `navigator.share` musí běžet přímo v kliknutí; po čekání na síť ho prohlížeč odmítne (proto
+  tlačítko „Sdílet výzvu“ po založení profilu).
+- Panel prohlížeče se zúží na mobilní šířku, takže rozcestník tam vypadá jako telefon. Desktop
+  ověřuj přes `resize_window` 1280×800.
+- Lokální testovací profily (`Zeb…`, `Sam`…) jsou jen v lokální D1, na produkci nic nevzniklo.
+
+---
+
+### Předání stav k 4. 10. 2026 (historie — čti až po bloku 5. 11.)
 
 **Jednou větou:** 3.–4. 10. se ladil a nasazoval WEB (rozcestník, rychlost, párty, přihlášení,
 přesměrování staré adresy, favikona) — pokaždé z čisté větve založené na `master`, **bez nových
