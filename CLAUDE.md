@@ -111,6 +111,15 @@ Nejnovější nahoře. Formát: **datum — název** + jednou větou co a proč.
     (`.ics`) jako připomínka, protože pošta nejede. K tomu FB událost na každý večer.
   - **Čas začátku je konstanta.** Doporučeno první týdny porovnat 19:00 a 20:00 (cílovka jsou
     hlavně dospělí, 19:00 koliduje s večeří a dětmi). Před veřejným spuštěním zkušební večer se známými.
+  - **NÁVRAT K PŮVODNÍ VERZI MUSÍ ZŮSTAT MOŽNÝ (hráč výslovně).** Tři pojistky, žádnou neruš:
+    1. **Značky v gitu:** `puvodni-produkce` (= `c265050`, nasazení `a160095f`) a
+       `puvodni-pracovni` (= `71b8c57`, i s horním menu a kampaní). Nikdy je nepřesouvat.
+    2. **Přepínač režimu v kódu** (jedna konstanta, vzor `LOBBY_SKRYTE`): kvíz ×
+       původní rozcestník. Původní režimy se jen schovají, kód zůstává funkční a testy
+       (`test:offline`, `test:api`) se pro ně dál pouštějí.
+    3. **Databáze jen přírůstkově:** kvíz přidává tabulky, nic nemaže ani nepřejmenovává.
+       Při návratu se do `dist/` zase nahrají `data/questions/` (build to musí umět podle přepínače).
+    Nejrychlejší nouzový návrat: v Cloudflare Pages „Rollback“ na nasazení `a160095f`.
 
 - **2026-10-14 — Žebříček · Výzvy · profil jsou HORNÍ MENU rozcestníku** (hráč: „mělo by to být
   v nějakém horním menu“), ne tichý řádek mezi kartami. `.qz-topmenu` vpravo nahoře naproti
