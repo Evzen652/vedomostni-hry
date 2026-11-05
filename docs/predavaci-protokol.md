@@ -102,7 +102,8 @@ CLOUDFLARE_ACCOUNT_ID=3005fa92056c05be6e87ea85a5df5ab9 npm run deploy
 1. **Horní menu rozcestníku (`fd902ab`)** — hotové a ověřené lokálně, čeká na „nasaď“.
 2. **Ilustrace kampaně: 1 618 otázek bez obrázku.** Čeká na dobití kreditu Gemini. Další dávka
    (218 id: es, fi, fj, fr, ga + opravy z dávek 2 a 3) je **nově v gitu**:
-   `node scripts/batch-irony-images.js submit --only "$(cat docs/ilustrace-dalsi-davka.txt)"`.
+   `node scripts/batch-irony-images.js submit --only "$(tr -d '
+' < docs/ilustrace-dalsi-davka.txt)"`.
    Pak kontrola očima (`scripts/ilustrace/`, archy 3×3 + arch rohů + výřezy), `npm run build-index`,
    commit. Pasti z dávek 1–3 jsou v CLAUDE.md pod 2026-10-07 (dánská vlajka jako švýcarská, taxi,
    kompas, kalendář).
